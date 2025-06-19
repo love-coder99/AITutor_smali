@@ -1,0 +1,685 @@
+.class public Lcom/applovin/impl/sdk/c$a;
+.super Ljava/lang/Object;
+.source "SourceFile"
+
+# interfaces
+.implements Lcom/applovin/impl/hh;
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Lcom/applovin/impl/sdk/c;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x9
+    name = "a"
+.end annotation
+
+
+# instance fields
+.field private final a:Ljava/lang/String;
+
+.field private final b:Lcom/applovin/sdk/AppLovinAdType;
+
+.field private final c:Z
+
+.field private final d:J
+
+
+# direct methods
+.method public constructor <init>(Ljava/lang/String;Lcom/applovin/sdk/AppLovinAdType;ZJ)V
+    .locals 0
+
+    .line 1
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    .line 2
+    .line 3
+    .line 4
+    iput-object p1, p0, Lcom/applovin/impl/sdk/c$a;->a:Ljava/lang/String;
+
+    .line 5
+    .line 6
+    iput-object p2, p0, Lcom/applovin/impl/sdk/c$a;->b:Lcom/applovin/sdk/AppLovinAdType;
+
+    .line 7
+    .line 8
+    iput-boolean p3, p0, Lcom/applovin/impl/sdk/c$a;->c:Z
+
+    .line 9
+    .line 10
+    iput-wide p4, p0, Lcom/applovin/impl/sdk/c$a;->d:J
+
+    .line 11
+    .line 12
+    return-void
+.end method
+
+.method public static a(Lcom/applovin/impl/sdk/ad/b;)Lcom/applovin/impl/sdk/c$a;
+    .locals 2
+
+    const-wide/16 v0, 0x0
+
+    .line 2
+    invoke-static {p0, v0, v1}, Lcom/applovin/impl/sdk/c$a;->a(Lcom/applovin/impl/sdk/ad/b;J)Lcom/applovin/impl/sdk/c$a;
+
+    move-result-object p0
+
+    return-object p0
+.end method
+
+.method public static a(Lcom/applovin/impl/sdk/ad/b;J)Lcom/applovin/impl/sdk/c$a;
+    .locals 7
+
+    if-nez p0, :cond_0
+
+    const/4 p0, 0x0
+
+    return-object p0
+
+    .line 3
+    :cond_0
+    invoke-virtual {p0}, Lcom/applovin/impl/sdk/ad/b;->I()Ljava/lang/String;
+
+    move-result-object v0
+
+    invoke-static {v0}, Lcom/applovin/impl/sdk/utils/StringUtils;->isValidString(Ljava/lang/String;)Z
+
+    move-result v0
+
+    if-eqz v0, :cond_1
+
+    invoke-virtual {p0}, Lcom/applovin/impl/sdk/ad/b;->I()Ljava/lang/String;
+
+    move-result-object v0
+
+    :goto_0
+    move-object v2, v0
+
+    goto :goto_1
+
+    :cond_1
+    invoke-static {}, Ljava/util/UUID;->randomUUID()Ljava/util/UUID;
+
+    move-result-object v0
+
+    invoke-virtual {v0}, Ljava/util/UUID;->toString()Ljava/lang/String;
+
+    move-result-object v0
+
+    goto :goto_0
+
+    .line 4
+    :goto_1
+    invoke-virtual {p0}, Lcom/applovin/impl/sdk/ad/AppLovinAdImpl;->getType()Lcom/applovin/sdk/AppLovinAdType;
+
+    move-result-object v3
+
+    .line 5
+    instance-of v4, p0, Lcom/applovin/impl/sdk/ad/a;
+
+    .line 6
+    new-instance p0, Lcom/applovin/impl/sdk/c$a;
+
+    invoke-static {}, Landroid/os/SystemClock;->elapsedRealtime()J
+
+    move-result-wide v0
+
+    add-long v5, v0, p1
+
+    move-object v1, p0
+
+    invoke-direct/range {v1 .. v6}, Lcom/applovin/impl/sdk/c$a;-><init>(Ljava/lang/String;Lcom/applovin/sdk/AppLovinAdType;ZJ)V
+
+    return-object p0
+.end method
+
+.method public static a(Lorg/json/JSONObject;Lcom/applovin/impl/sdk/j;)Lcom/applovin/impl/sdk/c$a;
+    .locals 7
+
+    const-string p1, "id"
+
+    const-string v0, ""
+
+    .line 7
+    invoke-static {p0, p1, v0}, Lcom/applovin/impl/sdk/utils/JsonUtils;->getString(Lorg/json/JSONObject;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v2
+
+    const-string p1, "type"
+
+    .line 8
+    invoke-static {p0, p1, v0}, Lcom/applovin/impl/sdk/utils/JsonUtils;->getString(Lorg/json/JSONObject;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object p1
+
+    const-string v0, "is_ad_server_ad"
+
+    const/4 v1, 0x0
+
+    .line 9
+    invoke-static {p0, v0, v1}, Lcom/applovin/impl/sdk/utils/JsonUtils;->getBoolean(Lorg/json/JSONObject;Ljava/lang/String;Ljava/lang/Boolean;)Ljava/lang/Boolean;
+
+    move-result-object v0
+
+    const-string v3, "expiry_time_millis"
+
+    const-wide/16 v4, 0x0
+
+    .line 10
+    invoke-static {p0, v3, v4, v5}, Lcom/applovin/impl/sdk/utils/JsonUtils;->getLong(Lorg/json/JSONObject;Ljava/lang/String;J)J
+
+    move-result-wide v5
+
+    .line 11
+    invoke-static {v2}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
+
+    move-result p0
+
+    if-nez p0, :cond_1
+
+    invoke-static {p1}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
+
+    move-result p0
+
+    if-nez p0, :cond_1
+
+    if-nez v0, :cond_0
+
+    goto :goto_0
+
+    .line 12
+    :cond_0
+    new-instance p0, Lcom/applovin/impl/sdk/c$a;
+
+    invoke-static {p1}, Lcom/applovin/sdk/AppLovinAdType;->fromString(Ljava/lang/String;)Lcom/applovin/sdk/AppLovinAdType;
+
+    move-result-object v3
+
+    invoke-virtual {v0}, Ljava/lang/Boolean;->booleanValue()Z
+
+    move-result v4
+
+    move-object v1, p0
+
+    invoke-direct/range {v1 .. v6}, Lcom/applovin/impl/sdk/c$a;-><init>(Ljava/lang/String;Lcom/applovin/sdk/AppLovinAdType;ZJ)V
+
+    return-object p0
+
+    :cond_1
+    :goto_0
+    return-object v1
+.end method
+
+
+# virtual methods
+.method public a()Lorg/json/JSONObject;
+    .locals 4
+
+    .line 13
+    new-instance v0, Lorg/json/JSONObject;
+
+    invoke-direct {v0}, Lorg/json/JSONObject;-><init>()V
+
+    iget-object v1, p0, Lcom/applovin/impl/sdk/c$a;->a:Ljava/lang/String;
+
+    const-string v2, "id"
+
+    .line 14
+    invoke-static {v0, v2, v1}, Lcom/applovin/impl/sdk/utils/JsonUtils;->putString(Lorg/json/JSONObject;Ljava/lang/String;Ljava/lang/String;)V
+
+    iget-object v1, p0, Lcom/applovin/impl/sdk/c$a;->b:Lcom/applovin/sdk/AppLovinAdType;
+
+    .line 15
+    invoke-virtual {v1}, Lcom/applovin/sdk/AppLovinAdType;->toString()Ljava/lang/String;
+
+    move-result-object v1
+
+    const-string v2, "type"
+
+    invoke-static {v0, v2, v1}, Lcom/applovin/impl/sdk/utils/JsonUtils;->putString(Lorg/json/JSONObject;Ljava/lang/String;Ljava/lang/String;)V
+
+    iget-boolean v1, p0, Lcom/applovin/impl/sdk/c$a;->c:Z
+
+    const-string v2, "is_ad_server_ad"
+
+    .line 16
+    invoke-static {v0, v2, v1}, Lcom/applovin/impl/sdk/utils/JsonUtils;->putBoolean(Lorg/json/JSONObject;Ljava/lang/String;Z)V
+
+    iget-wide v1, p0, Lcom/applovin/impl/sdk/c$a;->d:J
+
+    const-string v3, "expiry_time_millis"
+
+    .line 17
+    invoke-static {v0, v3, v1, v2}, Lcom/applovin/impl/sdk/utils/JsonUtils;->putLong(Lorg/json/JSONObject;Ljava/lang/String;J)V
+
+    return-object v0
+.end method
+
+.method public a(Ljava/lang/Object;)Z
+    .locals 0
+
+    .line 1
+    instance-of p1, p1, Lcom/applovin/impl/sdk/c$a;
+
+    return p1
+.end method
+
+.method public b()J
+    .locals 2
+
+    iget-wide v0, p0, Lcom/applovin/impl/sdk/c$a;->d:J
+
+    return-wide v0
+.end method
+
+.method public c()Ljava/lang/String;
+    .locals 2
+
+    .line 1
+    new-instance v0, Ljava/lang/StringBuilder;
+
+    .line 2
+    .line 3
+    invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
+
+    .line 4
+    .line 5
+    .line 6
+    iget-object v1, p0, Lcom/applovin/impl/sdk/c$a;->a:Ljava/lang/String;
+
+    .line 7
+    .line 8
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 9
+    .line 10
+    .line 11
+    const-string v1, "_"
+
+    .line 12
+    .line 13
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 14
+    .line 15
+    .line 16
+    iget-object v1, p0, Lcom/applovin/impl/sdk/c$a;->b:Lcom/applovin/sdk/AppLovinAdType;
+
+    .line 17
+    .line 18
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+
+    .line 19
+    .line 20
+    .line 21
+    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    .line 22
+    .line 23
+    .line 24
+    move-result-object v0
+
+    .line 25
+    return-object v0
+.end method
+
+.method public d()Ljava/lang/String;
+    .locals 1
+
+    iget-object v0, p0, Lcom/applovin/impl/sdk/c$a;->a:Ljava/lang/String;
+
+    return-object v0
+.end method
+
+.method public e()Lcom/applovin/sdk/AppLovinAdType;
+    .locals 1
+
+    iget-object v0, p0, Lcom/applovin/impl/sdk/c$a;->b:Lcom/applovin/sdk/AppLovinAdType;
+
+    return-object v0
+.end method
+
+.method public equals(Ljava/lang/Object;)Z
+    .locals 4
+
+    .line 1
+    const/4 v0, 0x1
+
+    .line 2
+    if-ne p1, p0, :cond_0
+
+    .line 3
+    .line 4
+    return v0
+
+    .line 5
+    :cond_0
+    instance-of v1, p1, Lcom/applovin/impl/sdk/c$a;
+
+    .line 6
+    .line 7
+    const/4 v2, 0x0
+
+    .line 8
+    if-nez v1, :cond_1
+
+    .line 9
+    .line 10
+    return v2
+
+    .line 11
+    :cond_1
+    check-cast p1, Lcom/applovin/impl/sdk/c$a;
+
+    .line 12
+    .line 13
+    invoke-virtual {p1, p0}, Lcom/applovin/impl/sdk/c$a;->a(Ljava/lang/Object;)Z
+
+    .line 14
+    .line 15
+    .line 16
+    move-result v1
+
+    .line 17
+    if-nez v1, :cond_2
+
+    .line 18
+    .line 19
+    return v2
+
+    .line 20
+    :cond_2
+    invoke-virtual {p0}, Lcom/applovin/impl/sdk/c$a;->d()Ljava/lang/String;
+
+    .line 21
+    .line 22
+    .line 23
+    move-result-object v1
+
+    .line 24
+    invoke-virtual {p1}, Lcom/applovin/impl/sdk/c$a;->d()Ljava/lang/String;
+
+    .line 25
+    .line 26
+    .line 27
+    move-result-object v3
+
+    .line 28
+    if-nez v1, :cond_3
+
+    .line 29
+    .line 30
+    if-eqz v3, :cond_4
+
+    .line 31
+    .line 32
+    goto :goto_0
+
+    .line 33
+    :cond_3
+    invoke-virtual {v1, v3}, Ljava/lang/Object;->equals(Ljava/lang/Object;)Z
+
+    .line 34
+    .line 35
+    .line 36
+    move-result v1
+
+    .line 37
+    if-nez v1, :cond_4
+
+    .line 38
+    .line 39
+    :goto_0
+    return v2
+
+    .line 40
+    :cond_4
+    invoke-virtual {p0}, Lcom/applovin/impl/sdk/c$a;->e()Lcom/applovin/sdk/AppLovinAdType;
+
+    .line 41
+    .line 42
+    .line 43
+    move-result-object v1
+
+    .line 44
+    invoke-virtual {p1}, Lcom/applovin/impl/sdk/c$a;->e()Lcom/applovin/sdk/AppLovinAdType;
+
+    .line 45
+    .line 46
+    .line 47
+    move-result-object p1
+
+    .line 48
+    if-nez v1, :cond_5
+
+    .line 49
+    .line 50
+    if-eqz p1, :cond_6
+
+    .line 51
+    .line 52
+    goto :goto_1
+
+    .line 53
+    :cond_5
+    invoke-virtual {v1, p1}, Ljava/lang/Object;->equals(Ljava/lang/Object;)Z
+
+    .line 54
+    .line 55
+    .line 56
+    move-result p1
+
+    .line 57
+    if-nez p1, :cond_6
+
+    .line 58
+    .line 59
+    :goto_1
+    return v2
+
+    .line 60
+    :cond_6
+    return v0
+.end method
+
+.method public f()Z
+    .locals 1
+
+    iget-boolean v0, p0, Lcom/applovin/impl/sdk/c$a;->c:Z
+
+    return v0
+.end method
+
+.method public hashCode()I
+    .locals 3
+
+    .line 1
+    invoke-virtual {p0}, Lcom/applovin/impl/sdk/c$a;->d()Ljava/lang/String;
+
+    .line 2
+    .line 3
+    .line 4
+    move-result-object v0
+
+    .line 5
+    const/16 v1, 0x2b
+
+    .line 6
+    .line 7
+    if-nez v0, :cond_0
+
+    .line 8
+    .line 9
+    const/16 v0, 0x2b
+
+    .line 10
+    .line 11
+    goto :goto_0
+
+    .line 12
+    :cond_0
+    invoke-virtual {v0}, Ljava/lang/Object;->hashCode()I
+
+    .line 13
+    .line 14
+    .line 15
+    move-result v0
+
+    .line 16
+    :goto_0
+    add-int/lit8 v0, v0, 0x3b
+
+    .line 17
+    .line 18
+    invoke-virtual {p0}, Lcom/applovin/impl/sdk/c$a;->e()Lcom/applovin/sdk/AppLovinAdType;
+
+    .line 19
+    .line 20
+    .line 21
+    move-result-object v2
+
+    .line 22
+    mul-int/lit8 v0, v0, 0x3b
+
+    .line 23
+    .line 24
+    if-nez v2, :cond_1
+
+    .line 25
+    .line 26
+    goto :goto_1
+
+    .line 27
+    :cond_1
+    invoke-virtual {v2}, Ljava/lang/Object;->hashCode()I
+
+    .line 28
+    .line 29
+    .line 30
+    move-result v1
+
+    .line 31
+    :goto_1
+    add-int/2addr v0, v1
+
+    .line 32
+    return v0
+.end method
+
+.method public toString()Ljava/lang/String;
+    .locals 3
+
+    .line 1
+    new-instance v0, Ljava/lang/StringBuilder;
+
+    .line 2
+    .line 3
+    const-string v1, "AdPersistenceFileService.PersistedAdFilePath(id="
+
+    .line 4
+    .line 5
+    invoke-direct {v0, v1}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+
+    .line 6
+    .line 7
+    .line 8
+    invoke-virtual {p0}, Lcom/applovin/impl/sdk/c$a;->d()Ljava/lang/String;
+
+    .line 9
+    .line 10
+    .line 11
+    move-result-object v1
+
+    .line 12
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 13
+    .line 14
+    .line 15
+    const-string v1, ", type="
+
+    .line 16
+    .line 17
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 18
+    .line 19
+    .line 20
+    invoke-virtual {p0}, Lcom/applovin/impl/sdk/c$a;->e()Lcom/applovin/sdk/AppLovinAdType;
+
+    .line 21
+    .line 22
+    .line 23
+    move-result-object v1
+
+    .line 24
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+
+    .line 25
+    .line 26
+    .line 27
+    const-string v1, ", isAdServerAd="
+
+    .line 28
+    .line 29
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 30
+    .line 31
+    .line 32
+    invoke-virtual {p0}, Lcom/applovin/impl/sdk/c$a;->f()Z
+
+    .line 33
+    .line 34
+    .line 35
+    move-result v1
+
+    .line 36
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
+
+    .line 37
+    .line 38
+    .line 39
+    const-string v1, ", expiryTimeMillis="
+
+    .line 40
+    .line 41
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 42
+    .line 43
+    .line 44
+    invoke-virtual {p0}, Lcom/applovin/impl/sdk/c$a;->b()J
+
+    .line 45
+    .line 46
+    .line 47
+    move-result-wide v1
+
+    .line 48
+    invoke-virtual {v0, v1, v2}, Ljava/lang/StringBuilder;->append(J)Ljava/lang/StringBuilder;
+
+    .line 49
+    .line 50
+    .line 51
+    const-string v1, ")"
+
+    .line 52
+    .line 53
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 54
+    .line 55
+    .line 56
+    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    .line 57
+    .line 58
+    .line 59
+    move-result-object v0
+
+    .line 60
+    return-object v0
+.end method

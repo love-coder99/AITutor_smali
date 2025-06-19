@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:paddingLeft="@dimen/file_chooser_item_horizontal_padding" android:paddingTop="@dimen/file_chooser_item_vertical_padding" android:paddingRight="@dimen/file_chooser_item_horizontal_padding" android:paddingBottom="@dimen/file_chooser_item_vertical_padding" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/file_chooser_item_icon_margin_end" android:src="@drawable/icon_folder_dark" android:layout_alignParentLeft="true" android:layout_centerVertical="true" android:layout_marginEnd="@dimen/file_chooser_item_icon_margin_end" android:layout_alignParentStart="true" />
+    <TextView android:textColor="?android:textColorPrimary" android:gravity="start|center" android:id="@id/name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toRightOf="@id/icon" android:layout_centerVertical="true" android:layout_toEndOf="@id/icon" />
+</RelativeLayout>

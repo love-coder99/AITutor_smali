@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<inset android:drawable="@drawable/bg_custom_ripple_radius_8" android:inset="@dimen/_8dp"
+  xmlns:android="http://schemas.android.com/apk/res/android" />

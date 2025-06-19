@@ -1,0 +1,22 @@
+.class public interface abstract Lcom/bytedance/sdk/openadsdk/core/widget/om$NOt;
+.super Ljava/lang/Object;
+.source "SourceFile"
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Lcom/bytedance/sdk/openadsdk/core/widget/om;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x609
+    name = "NOt"
+.end annotation
+
+
+# virtual methods
+.method public abstract ZH()V
+.end method
+
+.method public abstract aT()Z
+.end method
