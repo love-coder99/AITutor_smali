@@ -204,9 +204,9 @@
 .method public a()V
     .locals 3
 
+    .line 1
     iget-object v0, p0, Lcom/applovin/impl/wn;->a:Lcom/applovin/impl/sdk/j;
 
-    .line 12
     sget-object v1, Lcom/applovin/impl/uj;->J:Lcom/applovin/impl/uj;
 
     sget-object v2, Ljava/lang/Boolean;->TRUE:Ljava/lang/Boolean;
@@ -219,14 +219,14 @@
 .method public a(Ljava/lang/String;)V
     .locals 1
 
-    .line 13
+    .line 2
     invoke-static {p1}, Lcom/applovin/impl/sdk/utils/StringUtils;->isValidString(Ljava/lang/String;)Z
 
     move-result v0
 
     if-eqz v0, :cond_0
 
-    .line 14
+    .line 3
     invoke-static {p1}, Ljava/util/Collections;->singletonList(Ljava/lang/Object;)Ljava/util/List;
 
     move-result-object p1
@@ -238,7 +238,7 @@
     :cond_0
     const/4 p1, 0x0
 
-    .line 15
+    .line 4
     invoke-virtual {p0, p1}, Lcom/applovin/impl/wn;->a(Ljava/util/List;)V
 
     :goto_0
@@ -250,6 +250,7 @@
 
     if-nez p1, :cond_0
 
+    .line 5
     iget-object v0, p0, Lcom/applovin/impl/wn;->c:Ljava/util/List;
 
     if-nez v0, :cond_0
@@ -259,9 +260,9 @@
     :cond_0
     if-eqz p1, :cond_1
 
+    .line 6
     iget-object v0, p0, Lcom/applovin/impl/wn;->c:Ljava/util/List;
 
-    .line 16
     invoke-interface {p1, v0}, Ljava/util/List;->equals(Ljava/lang/Object;)Z
 
     move-result v0
@@ -270,10 +271,11 @@
 
     return-void
 
+    .line 7
     :cond_1
     iput-object p1, p0, Lcom/applovin/impl/wn;->c:Ljava/util/List;
 
-    .line 17
+    .line 8
     invoke-direct {p0}, Lcom/applovin/impl/wn;->e()V
 
     return-void
@@ -282,33 +284,35 @@
 .method public a(Lorg/json/JSONObject;)V
     .locals 3
 
+    .line 9
     iget-boolean v0, p0, Lcom/applovin/impl/wn;->b:Z
 
     if-eqz v0, :cond_0
 
     return-void
 
+    .line 10
     :cond_0
     const-string v0, "test_mode_idfas"
 
-    .line 1
-    invoke-static {p1, v0}, Landroidx/compose/foundation/text/modifiers/f;->v(Lorg/json/JSONObject;Ljava/lang/String;)Lorg/json/JSONArray;
+    .line 11
+    invoke-static {v0, p1}, Lcom/android/billingclient/api/a;->h(Ljava/lang/String;Lorg/json/JSONObject;)Lorg/json/JSONArray;
 
     move-result-object p1
 
+    .line 12
     iget-object v0, p0, Lcom/applovin/impl/wn;->a:Lcom/applovin/impl/sdk/j;
 
-    .line 2
     invoke-virtual {v0}, Lcom/applovin/impl/sdk/j;->x()Lcom/applovin/impl/sdk/k;
 
     move-result-object v0
 
-    .line 3
+    .line 13
     invoke-virtual {v0}, Lcom/applovin/impl/sdk/k;->M()Z
 
     move-result v1
 
-    .line 4
+    .line 14
     invoke-virtual {v0}, Lcom/applovin/impl/sdk/k;->f()Lcom/applovin/impl/l0$a;
 
     move-result-object v2
@@ -317,14 +321,14 @@
 
     move-result-object v2
 
-    .line 5
+    .line 15
     invoke-virtual {v0}, Lcom/applovin/impl/sdk/k;->C()Lcom/applovin/impl/sdk/k$b;
 
     move-result-object v0
 
     if-eqz v0, :cond_1
 
-    .line 6
+    .line 16
     iget-object v0, v0, Lcom/applovin/impl/sdk/k$b;->a:Ljava/lang/String;
 
     goto :goto_0
@@ -335,14 +339,14 @@
     :goto_0
     if-nez v1, :cond_3
 
-    .line 7
+    .line 17
     invoke-static {v2, p1}, Lcom/applovin/impl/sdk/utils/JsonUtils;->containsCaseInsensitiveString(Ljava/lang/String;Lorg/json/JSONArray;)Z
 
     move-result v1
 
     if-nez v1, :cond_3
 
-    .line 8
+    .line 18
     invoke-static {v0, p1}, Lcom/applovin/impl/sdk/utils/JsonUtils;->containsCaseInsensitiveString(Ljava/lang/String;Lorg/json/JSONArray;)Z
 
     move-result p1
@@ -360,6 +364,7 @@
     :goto_1
     const/4 p1, 0x1
 
+    .line 19
     :goto_2
     iput-boolean p1, p0, Lcom/applovin/impl/wn;->b:Z
 
@@ -369,16 +374,22 @@
 .method public b()Ljava/util/List;
     .locals 1
 
+    .line 1
     iget-object v0, p0, Lcom/applovin/impl/wn;->c:Ljava/util/List;
 
+    .line 2
+    .line 3
     return-object v0
 .end method
 
 .method public c()Z
     .locals 1
 
+    .line 1
     iget-boolean v0, p0, Lcom/applovin/impl/wn;->b:Z
 
+    .line 2
+    .line 3
     return v0
 .end method
 

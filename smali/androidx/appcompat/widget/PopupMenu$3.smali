@@ -37,7 +37,7 @@
 
 
 # virtual methods
-.method public getPopup()Landroidx/appcompat/view/menu/f0;
+.method public getPopup()Landroidx/appcompat/view/menu/D;
     .locals 1
 
     .line 1
@@ -45,11 +45,11 @@
 
     .line 2
     .line 3
-    iget-object v0, v0, Landroidx/appcompat/widget/PopupMenu;->mPopup:Landroidx/appcompat/view/menu/z;
+    iget-object v0, v0, Landroidx/appcompat/widget/PopupMenu;->mPopup:Landroidx/appcompat/view/menu/x;
 
     .line 4
     .line 5
-    invoke-virtual {v0}, Landroidx/appcompat/view/menu/z;->getPopup()Landroidx/appcompat/view/menu/x;
+    invoke-virtual {v0}, Landroidx/appcompat/view/menu/x;->getPopup()Landroidx/appcompat/view/menu/v;
 
     .line 6
     .line 7

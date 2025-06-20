@@ -3,14 +3,14 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lzh/a;
+.implements Lka/a;
 
 
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "Lkotlin/jvm/internal/Lambda;",
-        "Lzh/a;"
+        "Lka/a;"
     }
 .end annotation
 
@@ -34,14 +34,14 @@
 
 
 # instance fields
-.field final synthetic this$0:Landroidx/compose/ui/text/input/l0;
+.field final synthetic this$0:Landroidx/compose/ui/text/input/G;
 
 
 # direct methods
-.method public constructor <init>(Landroidx/compose/ui/text/input/l0;)V
+.method public constructor <init>(Landroidx/compose/ui/text/input/G;)V
     .locals 0
 
-    iput-object p1, p0, Landroidx/compose/ui/text/input/TextInputServiceAndroid$baseInputConnection$2;->this$0:Landroidx/compose/ui/text/input/l0;
+    iput-object p1, p0, Landroidx/compose/ui/text/input/TextInputServiceAndroid$baseInputConnection$2;->this$0:Landroidx/compose/ui/text/input/G;
 
     const/4 p1, 0x0
 
@@ -58,10 +58,10 @@
     .line 2
     new-instance v0, Landroid/view/inputmethod/BaseInputConnection;
 
-    iget-object v1, p0, Landroidx/compose/ui/text/input/TextInputServiceAndroid$baseInputConnection$2;->this$0:Landroidx/compose/ui/text/input/l0;
+    iget-object v1, p0, Landroidx/compose/ui/text/input/TextInputServiceAndroid$baseInputConnection$2;->this$0:Landroidx/compose/ui/text/input/G;
 
     .line 3
-    iget-object v1, v1, Landroidx/compose/ui/text/input/l0;->a:Landroid/view/View;
+    iget-object v1, v1, Landroidx/compose/ui/text/input/G;->a:Landroid/view/View;
 
     const/4 v2, 0x0
 

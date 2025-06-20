@@ -17,7 +17,7 @@
     .line 4
     .line 5
     .line 6
-    invoke-interface {p0, v0}, Landroidx/compose/ui/o;->e(Landroidx/compose/ui/o;)Landroidx/compose/ui/o;
+    invoke-interface {p0, v0}, Landroidx/compose/ui/o;->g(Landroidx/compose/ui/o;)Landroidx/compose/ui/o;
 
     .line 7
     .line 8

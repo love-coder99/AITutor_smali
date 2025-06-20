@@ -3,14 +3,14 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lzh/a;
+.implements Lka/a;
 
 
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "Lkotlin/jvm/internal/Lambda;",
-        "Lzh/a;"
+        "Lka/a;"
     }
 .end annotation
 
@@ -60,14 +60,14 @@
 .method public final invoke()Landroid/graphics/Shader;
     .locals 3
 
+    .line 2
     iget-object v0, p0, Landroidx/compose/ui/text/platform/AndroidTextPaint$setBrush$1;->$brush:Landroidx/compose/ui/graphics/r;
 
-    .line 2
-    check-cast v0, Landroidx/compose/ui/graphics/x0;
+    check-cast v0, Landroidx/compose/ui/graphics/X;
 
     iget-wide v1, p0, Landroidx/compose/ui/text/platform/AndroidTextPaint$setBrush$1;->$size:J
 
-    invoke-virtual {v0, v1, v2}, Landroidx/compose/ui/graphics/x0;->b(J)Landroid/graphics/Shader;
+    invoke-virtual {v0, v1, v2}, Landroidx/compose/ui/graphics/X;->b(J)Landroid/graphics/Shader;
 
     move-result-object v0
 

@@ -3,14 +3,14 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lzh/c;
+.implements Lka/c;
 
 
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "Lkotlin/jvm/internal/Lambda;",
-        "Lzh/c;"
+        "Lka/c;"
     }
 .end annotation
 
@@ -19,10 +19,10 @@
         "\u0000\u000c\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0008\u0003\u0010\u0004\u001a\u00020\u0001*\u00020\u0000H\n\u00a2\u0006\u0004\u0008\u0002\u0010\u0003"
     }
     d2 = {
-        "Landroidx/compose/runtime/p0;",
-        "Landroidx/compose/runtime/o0;",
+        "Landroidx/compose/runtime/H;",
+        "Landroidx/compose/runtime/G;",
         "invoke",
-        "(Landroidx/compose/runtime/p0;)Landroidx/compose/runtime/o0;",
+        "(Landroidx/compose/runtime/H;)Landroidx/compose/runtime/G;",
         "<anonymous>"
     }
     k = 0x3
@@ -35,14 +35,14 @@
 
 
 # instance fields
-.field final synthetic $dialog:Landroidx/compose/ui/window/n;
+.field final synthetic $dialog:Landroidx/compose/ui/window/m;
 
 
 # direct methods
-.method public constructor <init>(Landroidx/compose/ui/window/n;)V
+.method public constructor <init>(Landroidx/compose/ui/window/m;)V
     .locals 0
 
-    iput-object p1, p0, Landroidx/compose/ui/window/AndroidDialog_androidKt$Dialog$1$1;->$dialog:Landroidx/compose/ui/window/n;
+    iput-object p1, p0, Landroidx/compose/ui/window/AndroidDialog_androidKt$Dialog$1$1;->$dialog:Landroidx/compose/ui/window/m;
 
     const/4 p1, 0x1
 
@@ -53,22 +53,23 @@
 
 
 # virtual methods
-.method public final invoke(Landroidx/compose/runtime/p0;)Landroidx/compose/runtime/o0;
+.method public final invoke(Landroidx/compose/runtime/H;)Landroidx/compose/runtime/G;
     .locals 2
 
-    iget-object p1, p0, Landroidx/compose/ui/window/AndroidDialog_androidKt$Dialog$1$1;->$dialog:Landroidx/compose/ui/window/n;
-
     .line 2
+    iget-object p1, p0, Landroidx/compose/ui/window/AndroidDialog_androidKt$Dialog$1$1;->$dialog:Landroidx/compose/ui/window/m;
+
     invoke-virtual {p1}, Landroid/app/Dialog;->show()V
 
-    iget-object p1, p0, Landroidx/compose/ui/window/AndroidDialog_androidKt$Dialog$1$1;->$dialog:Landroidx/compose/ui/window/n;
-
     .line 3
-    new-instance v0, Landroidx/activity/compose/c;
+    iget-object p1, p0, Landroidx/compose/ui/window/AndroidDialog_androidKt$Dialog$1$1;->$dialog:Landroidx/compose/ui/window/m;
 
-    const/16 v1, 0x8
+    .line 4
+    new-instance v0, Landroidx/activity/compose/b;
 
-    invoke-direct {v0, p1, v1}, Landroidx/activity/compose/c;-><init>(Ljava/lang/Object;I)V
+    const/16 v1, 0x9
+
+    invoke-direct {v0, p1, v1}, Landroidx/activity/compose/b;-><init>(Ljava/lang/Object;I)V
 
     return-object v0
 .end method
@@ -77,9 +78,9 @@
     .locals 0
 
     .line 1
-    check-cast p1, Landroidx/compose/runtime/p0;
+    check-cast p1, Landroidx/compose/runtime/H;
 
-    invoke-virtual {p0, p1}, Landroidx/compose/ui/window/AndroidDialog_androidKt$Dialog$1$1;->invoke(Landroidx/compose/runtime/p0;)Landroidx/compose/runtime/o0;
+    invoke-virtual {p0, p1}, Landroidx/compose/ui/window/AndroidDialog_androidKt$Dialog$1$1;->invoke(Landroidx/compose/runtime/H;)Landroidx/compose/runtime/G;
 
     move-result-object p1
 

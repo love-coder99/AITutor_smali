@@ -3,14 +3,14 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lzh/c;
+.implements Lka/c;
 
 
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "Lkotlin/jvm/internal/Lambda;",
-        "Lzh/c;"
+        "Lka/c;"
     }
 .end annotation
 
@@ -19,11 +19,11 @@
         "\u0000\u000e\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u000b\n\u0002\u0008\u0003\u0010\u0005\u001a\u00020\u00022\u0006\u0010\u0001\u001a\u00020\u0000H\n\u00a2\u0006\u0004\u0008\u0003\u0010\u0004"
     }
     d2 = {
-        "Landroidx/compose/ui/node/x1;",
+        "Landroidx/compose/ui/node/r0;",
         "node",
         "",
         "invoke",
-        "(Landroidx/compose/ui/node/x1;)Ljava/lang/Boolean;",
+        "(Landroidx/compose/ui/node/r0;)Ljava/lang/Boolean;",
         "<anonymous>"
     }
     k = 0x3
@@ -54,22 +54,22 @@
 
 
 # virtual methods
-.method public final invoke(Landroidx/compose/ui/node/x1;)Ljava/lang/Boolean;
+.method public final invoke(Landroidx/compose/ui/node/r0;)Ljava/lang/Boolean;
     .locals 3
 
+    .line 2
     iget-object v0, p0, Landroidx/compose/foundation/ClickableKt$hasScrollableContainer$1;->$hasScrollable:Lkotlin/jvm/internal/Ref$BooleanRef;
 
-    .line 2
     iget-boolean v1, v0, Lkotlin/jvm/internal/Ref$BooleanRef;->element:Z
 
     const/4 v2, 0x1
 
     if-nez v1, :cond_1
 
-    check-cast p1, Landroidx/compose/foundation/gestures/b0;
+    check-cast p1, Landroidx/compose/foundation/gestures/D;
 
     .line 3
-    iget-boolean p1, p1, Landroidx/compose/foundation/gestures/b0;->p:Z
+    iget-boolean p1, p1, Landroidx/compose/foundation/gestures/D;->p:Z
 
     if-eqz p1, :cond_0
 
@@ -102,9 +102,9 @@
     .locals 0
 
     .line 1
-    check-cast p1, Landroidx/compose/ui/node/x1;
+    check-cast p1, Landroidx/compose/ui/node/r0;
 
-    invoke-virtual {p0, p1}, Landroidx/compose/foundation/ClickableKt$hasScrollableContainer$1;->invoke(Landroidx/compose/ui/node/x1;)Ljava/lang/Boolean;
+    invoke-virtual {p0, p1}, Landroidx/compose/foundation/ClickableKt$hasScrollableContainer$1;->invoke(Landroidx/compose/ui/node/r0;)Ljava/lang/Boolean;
 
     move-result-object p1
 

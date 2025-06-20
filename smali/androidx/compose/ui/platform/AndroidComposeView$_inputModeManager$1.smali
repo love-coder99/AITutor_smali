@@ -3,14 +3,14 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lzh/c;
+.implements Lka/c;
 
 
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "Lkotlin/jvm/internal/Lambda;",
-        "Lzh/c;"
+        "Lka/c;"
     }
 .end annotation
 
@@ -19,7 +19,7 @@
         "\u0000\u000e\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u000b\n\u0002\u0008\u0003\u0010\u0005\u001a\u00020\u00022\u0006\u0010\u0001\u001a\u00020\u0000H\n\u00a2\u0006\u0004\u0008\u0003\u0010\u0004"
     }
     d2 = {
-        "Ls1/a;",
+        "Lw0/a;",
         "it",
         "",
         "invoke-iuPiT84",
@@ -36,14 +36,14 @@
 
 
 # instance fields
-.field final synthetic this$0:Landroidx/compose/ui/platform/r;
+.field final synthetic this$0:Landroidx/compose/ui/platform/o;
 
 
 # direct methods
-.method public constructor <init>(Landroidx/compose/ui/platform/r;)V
+.method public constructor <init>(Landroidx/compose/ui/platform/o;)V
     .locals 0
 
-    iput-object p1, p0, Landroidx/compose/ui/platform/AndroidComposeView$_inputModeManager$1;->this$0:Landroidx/compose/ui/platform/r;
+    iput-object p1, p0, Landroidx/compose/ui/platform/AndroidComposeView$_inputModeManager$1;->this$0:Landroidx/compose/ui/platform/o;
 
     const/4 p1, 0x1
 
@@ -58,11 +58,11 @@
     .locals 0
 
     .line 1
-    check-cast p1, Ls1/a;
+    check-cast p1, Lw0/a;
 
     .line 2
     .line 3
-    iget p1, p1, Ls1/a;->a:I
+    iget p1, p1, Lw0/a;->a:I
 
     .line 4
     .line 5
@@ -88,7 +88,7 @@
 
     .line 3
     .line 4
-    iget-object p1, p0, Landroidx/compose/ui/platform/AndroidComposeView$_inputModeManager$1;->this$0:Landroidx/compose/ui/platform/r;
+    iget-object p1, p0, Landroidx/compose/ui/platform/AndroidComposeView$_inputModeManager$1;->this$0:Landroidx/compose/ui/platform/o;
 
     .line 5
     .line 6
@@ -111,7 +111,7 @@
 
     .line 13
     .line 14
-    iget-object p1, p0, Landroidx/compose/ui/platform/AndroidComposeView$_inputModeManager$1;->this$0:Landroidx/compose/ui/platform/r;
+    iget-object p1, p0, Landroidx/compose/ui/platform/AndroidComposeView$_inputModeManager$1;->this$0:Landroidx/compose/ui/platform/o;
 
     .line 15
     .line 16
@@ -127,7 +127,7 @@
 
     .line 21
     .line 22
-    iget-object p1, p0, Landroidx/compose/ui/platform/AndroidComposeView$_inputModeManager$1;->this$0:Landroidx/compose/ui/platform/r;
+    iget-object p1, p0, Landroidx/compose/ui/platform/AndroidComposeView$_inputModeManager$1;->this$0:Landroidx/compose/ui/platform/o;
 
     .line 23
     .line 24

@@ -47,9 +47,9 @@
 .method public a(JLcom/applovin/impl/ah;)V
     .locals 1
 
+    .line 1
     iget-object v0, p0, Lcom/applovin/impl/nj;->b:[Lcom/applovin/impl/qo;
 
-    .line 1
     invoke-static {p1, p2, p3, v0}, Lcom/applovin/impl/c3;->a(JLcom/applovin/impl/ah;[Lcom/applovin/impl/qo;)V
 
     return-void
@@ -62,10 +62,10 @@
 
     const/4 v1, 0x0
 
+    .line 2
     :goto_0
     iget-object v2, p0, Lcom/applovin/impl/nj;->b:[Lcom/applovin/impl/qo;
 
-    .line 2
     array-length v2, v2
 
     if-ge v1, v2, :cond_3
@@ -84,9 +84,9 @@
 
     move-result-object v2
 
+    .line 5
     iget-object v3, p0, Lcom/applovin/impl/nj;->a:Ljava/util/List;
 
-    .line 5
     invoke-interface {v3, v1}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
     move-result-object v3
@@ -96,18 +96,18 @@
     .line 6
     iget-object v4, v3, Lcom/applovin/impl/e9;->m:Ljava/lang/String;
 
+    .line 7
     const-string v5, "application/cea-608"
 
-    .line 7
     invoke-virtual {v5, v4}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
     move-result v5
 
     if-nez v5, :cond_1
 
+    .line 8
     const-string v5, "application/cea-708"
 
-    .line 8
     invoke-virtual {v5, v4}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
     move-result v5
@@ -206,9 +206,9 @@
     .line 20
     invoke-interface {v2, v3}, Lcom/applovin/impl/qo;->a(Lcom/applovin/impl/e9;)V
 
+    .line 21
     iget-object v3, p0, Lcom/applovin/impl/nj;->b:[Lcom/applovin/impl/qo;
 
-    .line 21
     aput-object v2, v3, v1
 
     add-int/lit8 v1, v1, 0x1

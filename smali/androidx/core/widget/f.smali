@@ -4,7 +4,7 @@
 
 
 # direct methods
-.method public static a(Landroid/view/View;F)V
+.method public static a(Landroidx/core/widget/NestedScrollView;F)V
     .locals 0
 
     .line 1

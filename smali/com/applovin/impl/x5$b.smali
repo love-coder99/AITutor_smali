@@ -228,7 +228,10 @@
 .method public b(Z)Lcom/applovin/impl/x5$b;
     .locals 0
 
+    .line 1
     iput-boolean p1, p0, Lcom/applovin/impl/x5$b;->f:Z
 
+    .line 2
+    .line 3
     return-object p0
 .end method

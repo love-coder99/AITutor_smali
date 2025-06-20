@@ -24,14 +24,14 @@
 
 
 # virtual methods
-.method public final zza(Lcom/google/android/gms/internal/play_billing/w5;)Ljava/lang/Object;
+.method public final zza(Lcom/google/android/gms/internal/play_billing/d2;)Ljava/lang/Object;
     .locals 2
 
     iget-object v0, p0, Lcom/android/billingclient/api/zzbs;->zza:Lcom/android/billingclient/api/zzcc;
 
     iget v1, p0, Lcom/android/billingclient/api/zzbs;->zzb:I
 
-    invoke-virtual {v0, v1, p1}, Lcom/android/billingclient/api/zzcc;->zzaI(ILcom/google/android/gms/internal/play_billing/w5;)Ljava/lang/Object;
+    invoke-virtual {v0, v1, p1}, Lcom/android/billingclient/api/zzcc;->zzaI(ILcom/google/android/gms/internal/play_billing/d2;)Ljava/lang/Object;
 
     move-result-object p1
 

@@ -4,17 +4,7 @@
 
 
 # annotations
-.annotation runtime Lkotlin/Metadata;
-    k = 0x3
-    mv = {
-        0x1,
-        0x9,
-        0x0
-    }
-    xi = 0x30
-.end annotation
-
-.annotation runtime Lth/c;
+.annotation runtime Lca/c;
     c = "coil.RealImageLoader"
     f = "RealImageLoader.kt"
     l = {
@@ -23,6 +13,16 @@
         0xb2
     }
     m = "executeMain"
+.end annotation
+
+.annotation runtime Lkotlin/Metadata;
+    k = 0x3
+    mv = {
+        0x1,
+        0x9,
+        0x0
+    }
+    xi = 0x30
 .end annotation
 
 
@@ -86,7 +86,7 @@
 
     const/4 v1, 0x0
 
-    invoke-static {p1, v0, v1, p0}, Lcoil/i;->a(Lcoil/i;Ln5/i;ILkotlin/coroutines/Continuation;)Ljava/lang/Object;
+    invoke-static {p1, v0, v1, p0}, Lcoil/i;->a(Lcoil/i;LH2/h;ILkotlin/coroutines/jvm/internal/ContinuationImpl;)Ljava/lang/Object;
 
     move-result-object p1
 

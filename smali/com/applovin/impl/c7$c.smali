@@ -19,7 +19,7 @@
     .locals 0
 
     .line 1
-    invoke-static {p0}, Landroidx/compose/ui/platform/r2;->A(Ljava/lang/Object;)Z
+    invoke-static {p0}, Lc3/A;->z(Ljava/lang/Throwable;)Z
 
     .line 2
     .line 3

@@ -6,11 +6,11 @@
 # instance fields
 .field public final a:Ljava/lang/String;
 
-.field public final b:Lqh/b;
+.field public final b:LX9/b;
 
 
 # direct methods
-.method public constructor <init>(Ljava/lang/String;Lqh/b;)V
+.method public constructor <init>(Ljava/lang/String;LX9/b;)V
     .locals 0
 
     .line 1
@@ -23,7 +23,7 @@
 
     .line 5
     .line 6
-    iput-object p2, p0, Landroidx/compose/ui/semantics/a;->b:Lqh/b;
+    iput-object p2, p0, Landroidx/compose/ui/semantics/a;->b:LX9/b;
 
     .line 7
     .line 8
@@ -74,7 +74,7 @@
 
     .line 16
     .line 17
-    invoke-static {v3, v1}, Lrb/h;->d(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v3, v1}, Lkotlin/jvm/internal/h;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     .line 18
     .line 19
@@ -90,15 +90,15 @@
 
     .line 24
     :cond_2
-    iget-object v1, p0, Landroidx/compose/ui/semantics/a;->b:Lqh/b;
+    iget-object v1, p0, Landroidx/compose/ui/semantics/a;->b:LX9/b;
 
     .line 25
     .line 26
-    iget-object p1, p1, Landroidx/compose/ui/semantics/a;->b:Lqh/b;
+    iget-object p1, p1, Landroidx/compose/ui/semantics/a;->b:LX9/b;
 
     .line 27
     .line 28
-    invoke-static {v1, p1}, Lrb/h;->d(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v1, p1}, Lkotlin/jvm/internal/h;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     .line 29
     .line 30
@@ -152,7 +152,7 @@
 
     .line 13
     .line 14
-    iget-object v2, p0, Landroidx/compose/ui/semantics/a;->b:Lqh/b;
+    iget-object v2, p0, Landroidx/compose/ui/semantics/a;->b:LX9/b;
 
     .line 15
     .line 16
@@ -210,7 +210,7 @@
     .line 16
     .line 17
     .line 18
-    iget-object v1, p0, Landroidx/compose/ui/semantics/a;->b:Lqh/b;
+    iget-object v1, p0, Landroidx/compose/ui/semantics/a;->b:LX9/b;
 
     .line 19
     .line 20

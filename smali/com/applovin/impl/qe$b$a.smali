@@ -54,9 +54,9 @@
 .method public a(Lcom/applovin/mediation/MaxDebuggerUnifiedFlowActivity;)V
     .locals 1
 
+    .line 2
     iget-object v0, p0, Lcom/applovin/impl/qe$b$a;->a:Lcom/applovin/impl/qe$b;
 
-    .line 2
     iget-object v0, v0, Lcom/applovin/impl/qe$b;->b:Lcom/applovin/impl/qe;
 
     invoke-static {v0}, Lcom/applovin/impl/qe;->b(Lcom/applovin/impl/qe;)Lcom/applovin/impl/se;

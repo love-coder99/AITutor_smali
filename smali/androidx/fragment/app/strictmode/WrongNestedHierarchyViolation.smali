@@ -89,7 +89,7 @@
 
     .line 25
     .line 26
-    invoke-static {v0, p3, v1}, Lj0/d;->m(Ljava/lang/StringBuilder;ILjava/lang/String;)Ljava/lang/String;
+    invoke-static {p3, v1, v0}, LB/u;->o(ILjava/lang/String;Ljava/lang/StringBuilder;)Ljava/lang/String;
 
     .line 27
     .line 28
@@ -118,15 +118,21 @@
 .method public final getContainerId()I
     .locals 1
 
+    .line 1
     iget v0, p0, Landroidx/fragment/app/strictmode/WrongNestedHierarchyViolation;->containerId:I
 
+    .line 2
+    .line 3
     return v0
 .end method
 
 .method public final getExpectedParentFragment()Landroidx/fragment/app/Fragment;
     .locals 1
 
+    .line 1
     iget-object v0, p0, Landroidx/fragment/app/strictmode/WrongNestedHierarchyViolation;->expectedParentFragment:Landroidx/fragment/app/Fragment;
 
+    .line 2
+    .line 3
     return-object v0
 .end method

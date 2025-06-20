@@ -3,25 +3,35 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lzh/e;
+.implements Lka/e;
 
 
 # annotations
+.annotation runtime Lca/c;
+    c = "androidx.compose.ui.window.AndroidPopup_androidKt$Popup$5$1"
+    f = "AndroidPopup.android.kt"
+    l = {
+        0x179
+    }
+    m = "invokeSuspend"
+.end annotation
+
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "Lkotlin/coroutines/jvm/internal/SuspendLambda;",
-        "Lzh/e;"
+        "Lka/e;"
     }
 .end annotation
 
 .annotation runtime Lkotlin/Metadata;
     d1 = {
-        "\u0000\n\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\u0010\u0002\u001a\u00020\u0001*\u00020\u0000H\u008a@"
+        "\u0000\u000c\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0008\u0002\u0010\u0002\u001a\u00020\u0001*\u00020\u0000H\u008a@\u00a2\u0006\u0004\u0008\u0002\u0010\u0003"
     }
     d2 = {
-        "Lkotlinx/coroutines/w;",
-        "Lqh/r;",
-        "<anonymous>"
+        "Lkotlinx/coroutines/u;",
+        "LX9/j;",
+        "<anonymous>",
+        "(Lkotlinx/coroutines/u;)V"
     }
     k = 0x3
     mv = {
@@ -31,18 +41,9 @@
     }
 .end annotation
 
-.annotation runtime Lth/c;
-    c = "androidx.compose.ui.window.AndroidPopup_androidKt$Popup$5$1"
-    f = "AndroidPopup.android.kt"
-    l = {
-        0x179
-    }
-    m = "invokeSuspend"
-.end annotation
-
 
 # instance fields
-.field final synthetic $popupLayout:Landroidx/compose/ui/window/q;
+.field final synthetic $popupLayout:Landroidx/compose/ui/window/o;
 
 .field private synthetic L$0:Ljava/lang/Object;
 
@@ -50,12 +51,12 @@
 
 
 # direct methods
-.method public constructor <init>(Landroidx/compose/ui/window/q;Lkotlin/coroutines/Continuation;)V
+.method public constructor <init>(Landroidx/compose/ui/window/o;Lkotlin/coroutines/Continuation;)V
     .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
-            "Landroidx/compose/ui/window/q;",
+            "Landroidx/compose/ui/window/o;",
             "Lkotlin/coroutines/Continuation<",
             "-",
             "Landroidx/compose/ui/window/AndroidPopup_androidKt$Popup$5$1;",
@@ -63,7 +64,7 @@
         }
     .end annotation
 
-    iput-object p1, p0, Landroidx/compose/ui/window/AndroidPopup_androidKt$Popup$5$1;->$popupLayout:Landroidx/compose/ui/window/q;
+    iput-object p1, p0, Landroidx/compose/ui/window/AndroidPopup_androidKt$Popup$5$1;->$popupLayout:Landroidx/compose/ui/window/o;
 
     const/4 p1, 0x2
 
@@ -83,16 +84,16 @@
             "Lkotlin/coroutines/Continuation<",
             "*>;)",
             "Lkotlin/coroutines/Continuation<",
-            "Lqh/r;",
+            "LX9/j;",
             ">;"
         }
     .end annotation
 
     new-instance v0, Landroidx/compose/ui/window/AndroidPopup_androidKt$Popup$5$1;
 
-    iget-object v1, p0, Landroidx/compose/ui/window/AndroidPopup_androidKt$Popup$5$1;->$popupLayout:Landroidx/compose/ui/window/q;
+    iget-object v1, p0, Landroidx/compose/ui/window/AndroidPopup_androidKt$Popup$5$1;->$popupLayout:Landroidx/compose/ui/window/o;
 
-    invoke-direct {v0, v1, p2}, Landroidx/compose/ui/window/AndroidPopup_androidKt$Popup$5$1;-><init>(Landroidx/compose/ui/window/q;Lkotlin/coroutines/Continuation;)V
+    invoke-direct {v0, v1, p2}, Landroidx/compose/ui/window/AndroidPopup_androidKt$Popup$5$1;-><init>(Landroidx/compose/ui/window/o;Lkotlin/coroutines/Continuation;)V
 
     iput-object p1, v0, Landroidx/compose/ui/window/AndroidPopup_androidKt$Popup$5$1;->L$0:Ljava/lang/Object;
 
@@ -103,26 +104,26 @@
     .locals 0
 
     .line 1
-    check-cast p1, Lkotlinx/coroutines/w;
+    check-cast p1, Lkotlinx/coroutines/u;
 
     check-cast p2, Lkotlin/coroutines/Continuation;
 
-    invoke-virtual {p0, p1, p2}, Landroidx/compose/ui/window/AndroidPopup_androidKt$Popup$5$1;->invoke(Lkotlinx/coroutines/w;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
+    invoke-virtual {p0, p1, p2}, Landroidx/compose/ui/window/AndroidPopup_androidKt$Popup$5$1;->invoke(Lkotlinx/coroutines/u;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
 
     move-result-object p1
 
     return-object p1
 .end method
 
-.method public final invoke(Lkotlinx/coroutines/w;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
+.method public final invoke(Lkotlinx/coroutines/u;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
     .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
-            "Lkotlinx/coroutines/w;",
+            "Lkotlinx/coroutines/u;",
             "Lkotlin/coroutines/Continuation<",
             "-",
-            "Lqh/r;",
+            "LX9/j;",
             ">;)",
             "Ljava/lang/Object;"
         }
@@ -135,7 +136,7 @@
 
     check-cast p1, Landroidx/compose/ui/window/AndroidPopup_androidKt$Popup$5$1;
 
-    sget-object p2, Lqh/r;->a:Lqh/r;
+    sget-object p2, LX9/j;->a:LX9/j;
 
     invoke-virtual {p1, p2}, Landroidx/compose/ui/window/AndroidPopup_androidKt$Popup$5$1;->invokeSuspend(Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -145,7 +146,7 @@
 .end method
 
 .method public final invokeSuspend(Ljava/lang/Object;)Ljava/lang/Object;
-    .locals 9
+    .locals 8
 
     .line 1
     sget-object v0, Lkotlin/coroutines/intrinsics/CoroutineSingletons;->COROUTINE_SUSPENDED:Lkotlin/coroutines/intrinsics/CoroutineSingletons;
@@ -171,7 +172,7 @@
 
     .line 11
     .line 12
-    check-cast v1, Lkotlinx/coroutines/w;
+    check-cast v1, Lkotlinx/coroutines/u;
 
     .line 13
     .line 14
@@ -180,190 +181,196 @@
     .line 15
     .line 16
     .line 17
-    move-object p1, p0
-
-    .line 18
     goto :goto_1
 
-    .line 19
+    .line 18
     :cond_0
     new-instance p1, Ljava/lang/IllegalStateException;
 
+    .line 19
     .line 20
-    .line 21
     const-string v0, "call to \'resume\' before \'invoke\' with coroutine"
 
+    .line 21
     .line 22
-    .line 23
     invoke-direct {p1, v0}, Ljava/lang/IllegalStateException;-><init>(Ljava/lang/String;)V
 
+    .line 23
     .line 24
     .line 25
-    .line 26
     throw p1
 
-    .line 27
+    .line 26
     :cond_1
     invoke-static {p1}, Lkotlin/b;->a(Ljava/lang/Object;)V
 
+    .line 27
     .line 28
     .line 29
-    .line 30
     iget-object p1, p0, Landroidx/compose/ui/window/AndroidPopup_androidKt$Popup$5$1;->L$0:Ljava/lang/Object;
 
+    .line 30
     .line 31
-    .line 32
-    check-cast p1, Lkotlinx/coroutines/w;
+    check-cast p1, Lkotlinx/coroutines/u;
 
+    .line 32
     .line 33
-    .line 34
     move-object v1, p1
 
-    .line 35
-    move-object p1, p0
-
-    .line 36
+    .line 34
     :cond_2
     :goto_0
-    invoke-static {v1}, Lrb/h;->C(Lkotlinx/coroutines/w;)Z
+    invoke-static {v1}, Lkotlinx/coroutines/w;->t(Lkotlinx/coroutines/u;)Z
 
+    .line 35
+    .line 36
     .line 37
-    .line 38
-    .line 39
-    move-result v3
+    move-result p1
 
+    .line 38
+    if-eqz p1, :cond_6
+
+    .line 39
     .line 40
-    if-eqz v3, :cond_5
+    sget-object p1, Landroidx/compose/ui/window/AndroidPopup_androidKt$Popup$5$1$1;->INSTANCE:Landroidx/compose/ui/window/AndroidPopup_androidKt$Popup$5$1$1;
 
     .line 41
     .line 42
-    sget-object v3, Landroidx/compose/ui/window/AndroidPopup_androidKt$Popup$5$1$1;->INSTANCE:Landroidx/compose/ui/window/AndroidPopup_androidKt$Popup$5$1$1;
+    iput-object v1, p0, Landroidx/compose/ui/window/AndroidPopup_androidKt$Popup$5$1;->L$0:Ljava/lang/Object;
 
     .line 43
     .line 44
-    iput-object v1, p1, Landroidx/compose/ui/window/AndroidPopup_androidKt$Popup$5$1;->L$0:Ljava/lang/Object;
+    iput v2, p0, Landroidx/compose/ui/window/AndroidPopup_androidKt$Popup$5$1;->label:I
 
     .line 45
     .line 46
-    iput v2, p1, Landroidx/compose/ui/window/AndroidPopup_androidKt$Popup$5$1;->label:I
+    invoke-interface {p0}, Lkotlin/coroutines/Continuation;->getContext()Lba/g;
 
     .line 47
     .line 48
-    invoke-interface {p1}, Lkotlin/coroutines/Continuation;->getContext()Lkotlin/coroutines/i;
-
     .line 49
-    .line 50
-    .line 51
-    move-result-object v4
+    move-result-object v3
 
+    .line 50
+    sget-object v4, Landroidx/compose/ui/platform/i0;->b:Landroidx/compose/ui/platform/i0;
+
+    .line 51
     .line 52
-    sget-object v5, Landroidx/compose/ui/platform/s1;->b:Landroidx/compose/ui/platform/s1;
+    invoke-interface {v3, v4}, Lba/g;->get(Lba/f;)Lba/e;
 
     .line 53
     .line 54
-    invoke-interface {v4, v5}, Lkotlin/coroutines/i;->get(Lkotlin/coroutines/h;)Lkotlin/coroutines/g;
-
     .line 55
-    .line 56
-    .line 57
-    move-result-object v4
+    move-result-object v3
 
+    .line 56
+    if-nez v3, :cond_5
+
+    .line 57
     .line 58
-    invoke-static {v4}, Landroid/support/v4/media/session/a;->Q(Lkotlin/coroutines/g;)V
+    invoke-interface {p0}, Lkotlin/coroutines/Continuation;->getContext()Lba/g;
 
     .line 59
     .line 60
     .line 61
-    invoke-interface {p1}, Lkotlin/coroutines/Continuation;->getContext()Lkotlin/coroutines/i;
-
-    .line 62
-    .line 63
-    .line 64
-    move-result-object v4
-
-    .line 65
-    invoke-static {v4}, Lcom/google/android/gms/internal/consent_sdk/w;->m(Lkotlin/coroutines/i;)Landroidx/compose/runtime/c1;
-
-    .line 66
-    .line 67
-    .line 68
-    move-result-object v4
-
-    .line 69
-    invoke-interface {v4, v3, p1}, Landroidx/compose/runtime/c1;->c(Lzh/c;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
-
-    .line 70
-    .line 71
-    .line 72
     move-result-object v3
 
+    .line 62
+    invoke-static {v3}, Landroidx/compose/runtime/o;->M(Lba/g;)Landroidx/compose/runtime/U;
+
+    .line 63
+    .line 64
+    .line 65
+    move-result-object v3
+
+    .line 66
+    invoke-interface {v3, p1, p0}, Landroidx/compose/runtime/U;->s(Lka/c;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
+
+    .line 67
+    .line 68
+    .line 69
+    move-result-object p1
+
+    .line 70
+    if-ne p1, v0, :cond_3
+
+    .line 71
+    .line 72
+    return-object v0
+
     .line 73
-    if-ne v3, v0, :cond_3
+    :cond_3
+    :goto_1
+    iget-object p1, p0, Landroidx/compose/ui/window/AndroidPopup_androidKt$Popup$5$1;->$popupLayout:Landroidx/compose/ui/window/o;
 
     .line 74
     .line 75
-    return-object v0
+    iget-object v3, p1, Landroidx/compose/ui/window/o;->C:[I
 
     .line 76
-    :cond_3
-    :goto_1
-    iget-object v3, p1, Landroidx/compose/ui/window/AndroidPopup_androidKt$Popup$5$1;->$popupLayout:Landroidx/compose/ui/window/q;
-
     .line 77
+    const/4 v4, 0x0
+
     .line 78
-    iget-object v4, v3, Landroidx/compose/ui/window/q;->C:[I
+    aget v5, v3, v4
 
     .line 79
     .line 80
-    const/4 v5, 0x0
+    aget v6, v3, v2
 
     .line 81
-    aget v6, v4, v5
-
     .line 82
+    iget-object v7, p1, Landroidx/compose/ui/window/o;->n:Landroid/view/View;
+
     .line 83
-    aget v7, v4, v2
-
     .line 84
-    .line 85
-    iget-object v8, v3, Landroidx/compose/ui/window/q;->n:Landroid/view/View;
+    invoke-virtual {v7, v3}, Landroid/view/View;->getLocationOnScreen([I)V
 
+    .line 85
     .line 86
     .line 87
-    invoke-virtual {v8, v4}, Landroid/view/View;->getLocationOnScreen([I)V
+    aget v4, v3, v4
 
     .line 88
     .line 89
+    if-ne v5, v4, :cond_4
+
     .line 90
-    aget v5, v4, v5
-
     .line 91
+    aget v3, v3, v2
+
     .line 92
-    if-ne v6, v5, :cond_4
-
     .line 93
+    if-eq v6, v3, :cond_2
+
     .line 94
-    aget v4, v4, v2
-
     .line 95
-    .line 96
-    if-eq v7, v4, :cond_2
+    :cond_4
+    invoke-virtual {p1}, Landroidx/compose/ui/window/o;->l()V
 
+    .line 96
     .line 97
     .line 98
-    :cond_4
-    invoke-virtual {v3}, Landroidx/compose/ui/window/q;->k()V
-
-    .line 99
-    .line 100
-    .line 101
     goto :goto_0
 
-    .line 102
+    .line 99
     :cond_5
-    sget-object p1, Lqh/r;->a:Lqh/r;
+    new-instance p1, Ljava/lang/ClassCastException;
 
+    .line 100
+    .line 101
+    invoke-direct {p1}, Ljava/lang/ClassCastException;-><init>()V
+
+    .line 102
     .line 103
     .line 104
+    throw p1
+
+    .line 105
+    :cond_6
+    sget-object p1, LX9/j;->a:LX9/j;
+
+    .line 106
+    .line 107
     return-object p1
 .end method

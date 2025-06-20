@@ -53,11 +53,11 @@
     .line 6
     .line 7
     :cond_0
-    and-int/lit8 v0, p4, 0x2
+    and-int/lit8 p4, p4, 0x2
 
     .line 8
     .line 9
-    if-eqz v0, :cond_1
+    if-eqz p4, :cond_1
 
     .line 10
     .line 11
@@ -66,33 +66,20 @@
     .line 12
     .line 13
     :cond_1
-    and-int/lit8 p4, p4, 0x4
+    invoke-virtual {p0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
     .line 14
     .line 15
-    if-eqz p4, :cond_2
-
     .line 16
-    .line 17
-    iget-boolean p3, p0, Landroidx/compose/foundation/text/selection/i;->c:Z
-
-    .line 18
-    .line 19
-    :cond_2
-    invoke-virtual {p0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
-
-    .line 20
-    .line 21
-    .line 22
     new-instance p0, Landroidx/compose/foundation/text/selection/i;
 
-    .line 23
-    .line 24
+    .line 17
+    .line 18
     invoke-direct {p0, p1, p2, p3}, Landroidx/compose/foundation/text/selection/i;-><init>(Landroidx/compose/foundation/text/selection/h;Landroidx/compose/foundation/text/selection/h;Z)V
 
-    .line 25
-    .line 26
-    .line 27
+    .line 19
+    .line 20
+    .line 21
     return-object p0
 .end method
 
@@ -123,7 +110,7 @@
 
     iget-object v3, p0, Landroidx/compose/foundation/text/selection/i;->a:Landroidx/compose/foundation/text/selection/h;
 
-    invoke-static {v3, v1}, Lrb/h;->d(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v3, v1}, Lkotlin/jvm/internal/h;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result v1
 
@@ -136,7 +123,7 @@
 
     iget-object v3, p1, Landroidx/compose/foundation/text/selection/i;->b:Landroidx/compose/foundation/text/selection/h;
 
-    invoke-static {v1, v3}, Lrb/h;->d(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v1, v3}, Lkotlin/jvm/internal/h;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result v1
 
@@ -160,38 +147,66 @@
 .method public final hashCode()I
     .locals 2
 
+    .line 1
     iget-object v0, p0, Landroidx/compose/foundation/text/selection/i;->a:Landroidx/compose/foundation/text/selection/h;
 
+    .line 2
+    .line 3
     invoke-virtual {v0}, Landroidx/compose/foundation/text/selection/h;->hashCode()I
 
+    .line 4
+    .line 5
+    .line 6
     move-result v0
 
+    .line 7
     mul-int/lit8 v0, v0, 0x1f
 
+    .line 8
+    .line 9
     iget-object v1, p0, Landroidx/compose/foundation/text/selection/i;->b:Landroidx/compose/foundation/text/selection/h;
 
+    .line 10
+    .line 11
     invoke-virtual {v1}, Landroidx/compose/foundation/text/selection/h;->hashCode()I
 
+    .line 12
+    .line 13
+    .line 14
     move-result v1
 
+    .line 15
     add-int/2addr v1, v0
 
+    .line 16
     mul-int/lit8 v1, v1, 0x1f
 
+    .line 17
+    .line 18
     iget-boolean v0, p0, Landroidx/compose/foundation/text/selection/i;->c:Z
 
+    .line 19
+    .line 20
     if-eqz v0, :cond_0
 
+    .line 21
+    .line 22
     const/16 v0, 0x4cf
 
+    .line 23
+    .line 24
     goto :goto_0
 
+    .line 25
     :cond_0
     const/16 v0, 0x4d5
 
+    .line 26
+    .line 27
     :goto_0
     add-int/2addr v1, v0
 
+    .line 28
     return v1
 .end method
 
@@ -256,7 +271,7 @@
 
     .line 31
     .line 32
-    invoke-static {v0, v1, v2}, Landroid/support/v4/media/session/a;->J(Ljava/lang/StringBuilder;ZC)Ljava/lang/String;
+    invoke-static {v0, v1, v2}, Landroidx/appcompat/view/menu/F;->I(Ljava/lang/StringBuilder;ZC)Ljava/lang/String;
 
     .line 33
     .line 34

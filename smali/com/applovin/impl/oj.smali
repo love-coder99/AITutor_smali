@@ -160,10 +160,10 @@
 .method private a(Landroid/hardware/Sensor;)V
     .locals 4
 
+    .line 4
     :try_start_0
     iget-object v0, p0, Lcom/applovin/impl/oj;->c:Landroid/hardware/SensorManager;
 
-    .line 3
     sget-object v1, Ljava/util/concurrent/TimeUnit;->MILLISECONDS:Ljava/util/concurrent/TimeUnit;
 
     iget v2, p0, Lcom/applovin/impl/oj;->a:I
@@ -185,9 +185,9 @@
     :catchall_0
     move-exception p1
 
+    .line 5
     iget-object v0, p0, Lcom/applovin/impl/oj;->g:Lcom/applovin/impl/sdk/j;
 
-    .line 4
     invoke-virtual {v0}, Lcom/applovin/impl/sdk/j;->I()Lcom/applovin/impl/sdk/n;
 
     invoke-static {}, Lcom/applovin/impl/sdk/n;->a()Z
@@ -218,6 +218,7 @@
 .method public a()F
     .locals 2
 
+    .line 1
     iget-object v0, p0, Lcom/applovin/impl/oj;->h:[F
 
     if-nez v0, :cond_0
@@ -229,7 +230,7 @@
     :cond_0
     const/4 v1, 0x2
 
-    .line 1
+    .line 2
     aget v0, v0, v1
 
     const v1, 0x411cf5c3    # 9.81f
@@ -238,7 +239,7 @@
 
     float-to-double v0, v0
 
-    .line 2
+    .line 3
     invoke-static {v0, v1}, Ljava/lang/Math;->acos(D)D
 
     move-result-wide v0
@@ -255,8 +256,11 @@
 .method public b()F
     .locals 1
 
+    .line 1
     iget v0, p0, Lcom/applovin/impl/oj;->i:F
 
+    .line 2
+    .line 3
     return v0
 .end method
 

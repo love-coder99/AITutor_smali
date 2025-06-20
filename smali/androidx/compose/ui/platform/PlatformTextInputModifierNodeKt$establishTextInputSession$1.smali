@@ -4,6 +4,15 @@
 
 
 # annotations
+.annotation runtime Lca/c;
+    c = "androidx.compose.ui.platform.PlatformTextInputModifierNodeKt"
+    f = "PlatformTextInputModifierNode.kt"
+    l = {
+        0x8f
+    }
+    m = "establishTextInputSession"
+.end annotation
+
 .annotation runtime Lkotlin/Metadata;
     k = 0x3
     mv = {
@@ -12,15 +21,6 @@
         0x0
     }
     xi = 0x30
-.end annotation
-
-.annotation runtime Lth/c;
-    c = "androidx.compose.ui.platform.PlatformTextInputModifierNodeKt"
-    f = "PlatformTextInputModifierNode.kt"
-    l = {
-        0x8f
-    }
-    m = "establishTextInputSession"
 .end annotation
 
 
@@ -65,7 +65,7 @@
 
     const/4 p1, 0x0
 
-    invoke-static {p1, p1, p0}, Landroidx/compose/ui/platform/c2;->a(Landroidx/compose/foundation/text/input/internal/o;Lzh/e;Lkotlin/coroutines/Continuation;)Lkotlin/coroutines/intrinsics/CoroutineSingletons;
+    invoke-static {p1, p1, p0}, Landroidx/compose/ui/platform/s0;->a(Landroidx/compose/foundation/text/input/internal/o;Lka/e;Lkotlin/coroutines/jvm/internal/ContinuationImpl;)Lkotlin/coroutines/intrinsics/CoroutineSingletons;
 
     move-result-object p1
 

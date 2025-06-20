@@ -14,6 +14,8 @@
 
 .method public static getAdditionalConsentStatus(I)Ljava/lang/Boolean;
     .locals 1
+    .annotation build Landroidx/annotation/Nullable;
+    .end annotation
 
     .line 1
     sget-object v0, Lcom/applovin/impl/sdk/j;->u0:Lcom/applovin/impl/sdk/j;
@@ -65,6 +67,8 @@
 
 .method public static getPurposeConsentStatus(I)Ljava/lang/Boolean;
     .locals 1
+    .annotation build Landroidx/annotation/Nullable;
+    .end annotation
 
     .line 1
     sget-object v0, Lcom/applovin/impl/sdk/j;->u0:Lcom/applovin/impl/sdk/j;
@@ -116,6 +120,8 @@
 
 .method public static getSpecialFeatureOptInStatus(I)Ljava/lang/Boolean;
     .locals 1
+    .annotation build Landroidx/annotation/Nullable;
+    .end annotation
 
     .line 1
     sget-object v0, Lcom/applovin/impl/sdk/j;->u0:Lcom/applovin/impl/sdk/j;
@@ -167,6 +173,8 @@
 
 .method public static getTcfVendorConsentStatus(I)Ljava/lang/Boolean;
     .locals 1
+    .annotation build Landroidx/annotation/Nullable;
+    .end annotation
 
     .line 1
     sget-object v0, Lcom/applovin/impl/sdk/j;->u0:Lcom/applovin/impl/sdk/j;

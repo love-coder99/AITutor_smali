@@ -45,6 +45,8 @@
 # virtual methods
 .method public final a(Ljava/lang/String;)Ljava/lang/Object;
     .locals 1
+    .annotation build Landroidx/annotation/Nullable;
+    .end annotation
 
     .line 1
     const-string v0, "md5"

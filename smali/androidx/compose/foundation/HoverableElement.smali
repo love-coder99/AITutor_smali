@@ -1,12 +1,12 @@
 .class final Landroidx/compose/foundation/HoverableElement;
-.super Landroidx/compose/ui/node/w0;
+.super Landroidx/compose/ui/node/V;
 .source "SourceFile"
 
 
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
-        "Landroidx/compose/ui/node/w0;"
+        "Landroidx/compose/ui/node/V;"
     }
 .end annotation
 
@@ -16,8 +16,8 @@
     }
     d2 = {
         "Landroidx/compose/foundation/HoverableElement;",
-        "Landroidx/compose/ui/node/w0;",
-        "Landroidx/compose/foundation/b0;",
+        "Landroidx/compose/ui/node/V;",
+        "Landroidx/compose/foundation/z;",
         "foundation_release"
     }
     k = 0x1
@@ -26,11 +26,12 @@
         0x8,
         0x0
     }
+    xi = 0x30
 .end annotation
 
 
 # instance fields
-.field public final c:Landroidx/compose/foundation/interaction/l;
+.field public final a:Landroidx/compose/foundation/interaction/l;
 
 
 # direct methods
@@ -43,7 +44,7 @@
     .line 2
     .line 3
     .line 4
-    iput-object p1, p0, Landroidx/compose/foundation/HoverableElement;->c:Landroidx/compose/foundation/interaction/l;
+    iput-object p1, p0, Landroidx/compose/foundation/HoverableElement;->a:Landroidx/compose/foundation/interaction/l;
 
     .line 5
     .line 6
@@ -86,15 +87,15 @@
 
     .line 12
     .line 13
-    iget-object p1, p1, Landroidx/compose/foundation/HoverableElement;->c:Landroidx/compose/foundation/interaction/l;
+    iget-object p1, p1, Landroidx/compose/foundation/HoverableElement;->a:Landroidx/compose/foundation/interaction/l;
 
     .line 14
     .line 15
-    iget-object v1, p0, Landroidx/compose/foundation/HoverableElement;->c:Landroidx/compose/foundation/interaction/l;
+    iget-object v1, p0, Landroidx/compose/foundation/HoverableElement;->a:Landroidx/compose/foundation/interaction/l;
 
     .line 16
     .line 17
-    invoke-static {p1, v1}, Lrb/h;->d(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {p1, v1}, Lkotlin/jvm/internal/h;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     .line 18
     .line 19
@@ -117,7 +118,7 @@
     .locals 1
 
     .line 1
-    iget-object v0, p0, Landroidx/compose/foundation/HoverableElement;->c:Landroidx/compose/foundation/interaction/l;
+    iget-object v0, p0, Landroidx/compose/foundation/HoverableElement;->a:Landroidx/compose/foundation/interaction/l;
 
     .line 2
     .line 3
@@ -140,7 +141,7 @@
     .locals 2
 
     .line 1
-    new-instance v0, Landroidx/compose/foundation/b0;
+    new-instance v0, Landroidx/compose/foundation/z;
 
     .line 2
     .line 3
@@ -149,11 +150,11 @@
     .line 4
     .line 5
     .line 6
-    iget-object v1, p0, Landroidx/compose/foundation/HoverableElement;->c:Landroidx/compose/foundation/interaction/l;
+    iget-object v1, p0, Landroidx/compose/foundation/HoverableElement;->a:Landroidx/compose/foundation/interaction/l;
 
     .line 7
     .line 8
-    iput-object v1, v0, Landroidx/compose/foundation/b0;->p:Landroidx/compose/foundation/interaction/l;
+    iput-object v1, v0, Landroidx/compose/foundation/z;->p:Landroidx/compose/foundation/interaction/l;
 
     .line 9
     .line 10
@@ -164,19 +165,19 @@
     .locals 2
 
     .line 1
-    check-cast p1, Landroidx/compose/foundation/b0;
+    check-cast p1, Landroidx/compose/foundation/z;
 
     .line 2
     .line 3
-    iget-object v0, p1, Landroidx/compose/foundation/b0;->p:Landroidx/compose/foundation/interaction/l;
+    iget-object v0, p1, Landroidx/compose/foundation/z;->p:Landroidx/compose/foundation/interaction/l;
 
     .line 4
     .line 5
-    iget-object v1, p0, Landroidx/compose/foundation/HoverableElement;->c:Landroidx/compose/foundation/interaction/l;
+    iget-object v1, p0, Landroidx/compose/foundation/HoverableElement;->a:Landroidx/compose/foundation/interaction/l;
 
     .line 6
     .line 7
-    invoke-static {v0, v1}, Lrb/h;->d(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v0, v1}, Lkotlin/jvm/internal/h;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     .line 8
     .line 9
@@ -188,12 +189,12 @@
 
     .line 12
     .line 13
-    invoke-virtual {p1}, Landroidx/compose/foundation/b0;->C0()V
+    invoke-virtual {p1}, Landroidx/compose/foundation/z;->A0()V
 
     .line 14
     .line 15
     .line 16
-    iput-object v1, p1, Landroidx/compose/foundation/b0;->p:Landroidx/compose/foundation/interaction/l;
+    iput-object v1, p1, Landroidx/compose/foundation/z;->p:Landroidx/compose/foundation/interaction/l;
 
     .line 17
     .line 18

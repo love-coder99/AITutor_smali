@@ -20,7 +20,7 @@
     const/4 v0, 0x0
 
     .line 5
-    invoke-static {v0}, Ly/f;->A(I)Landroidx/compose/runtime/ParcelableSnapshotMutableIntState;
+    invoke-static {v0}, Landroidx/compose/runtime/o;->Q(I)Landroidx/compose/runtime/ParcelableSnapshotMutableIntState;
 
     .line 6
     .line 7

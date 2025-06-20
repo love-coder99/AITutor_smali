@@ -32,11 +32,11 @@
     return-void
 .end method
 
-.method public static a(Ly/o1;[B)Ly/a1;
+.method public static a(LB/i0;[B)LB/V;
     .locals 2
 
     .line 1
-    invoke-virtual {p0}, Ly/o1;->c()I
+    invoke-virtual {p0}, LB/i0;->f()I
 
     .line 2
     .line 3
@@ -63,7 +63,7 @@
 
     .line 12
     :goto_0
-    invoke-static {v0}, Le3/b;->a(Z)V
+    invoke-static {v0}, Lf4/g;->e(Z)V
 
     .line 13
     .line 14
@@ -73,7 +73,7 @@
     .line 16
     .line 17
     .line 18
-    invoke-virtual {p0}, Ly/o1;->h()Landroid/view/Surface;
+    invoke-virtual {p0}, LB/i0;->j()Landroid/view/Surface;
 
     .line 19
     .line 20
@@ -102,7 +102,7 @@
 
     .line 32
     .line 33
-    invoke-static {v0}, Lcom/facebook/appevents/g;->i(Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v0}, Landroidx/work/B;->k(Ljava/lang/String;)Ljava/lang/String;
 
     .line 34
     .line 35
@@ -114,7 +114,7 @@
 
     .line 38
     :cond_1
-    invoke-virtual {p0}, Ly/o1;->b()Ly/a1;
+    invoke-virtual {p0}, LB/i0;->b()LB/V;
 
     .line 39
     .line 40
@@ -126,7 +126,7 @@
 
     .line 43
     .line 44
-    invoke-static {v0}, Lcom/facebook/appevents/g;->i(Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v0}, Landroidx/work/B;->k(Ljava/lang/String;)Ljava/lang/String;
 
     .line 45
     .line 46
@@ -135,11 +135,11 @@
     return-object p0
 .end method
 
-.method public static b(Ly/a1;)Landroid/graphics/Bitmap;
+.method public static b(LB/V;)Landroid/graphics/Bitmap;
     .locals 14
 
     .line 1
-    invoke-interface {p0}, Ly/a1;->getFormat()I
+    invoke-interface {p0}, LB/V;->getFormat()I
 
     .line 2
     .line 3
@@ -155,7 +155,7 @@
 
     .line 8
     .line 9
-    invoke-interface {p0}, Ly/a1;->getWidth()I
+    invoke-interface {p0}, LB/V;->getWidth()I
 
     .line 10
     .line 11
@@ -163,7 +163,7 @@
     move-result v12
 
     .line 13
-    invoke-interface {p0}, Ly/a1;->getHeight()I
+    invoke-interface {p0}, LB/V;->getHeight()I
 
     .line 14
     .line 15
@@ -171,7 +171,7 @@
     move-result v13
 
     .line 17
-    invoke-interface {p0}, Ly/a1;->B()[Ly/z0;
+    invoke-interface {p0}, LB/V;->B()[Lb8/c;
 
     .line 18
     .line 19
@@ -186,7 +186,7 @@
 
     .line 23
     .line 24
-    invoke-interface {v0}, Ly/z0;->a()I
+    invoke-virtual {v0}, Lb8/c;->X()I
 
     .line 25
     .line 26
@@ -194,7 +194,7 @@
     move-result v3
 
     .line 28
-    invoke-interface {p0}, Ly/a1;->B()[Ly/z0;
+    invoke-interface {p0}, LB/V;->B()[Lb8/c;
 
     .line 29
     .line 30
@@ -209,7 +209,7 @@
 
     .line 34
     .line 35
-    invoke-interface {v0}, Ly/z0;->a()I
+    invoke-virtual {v0}, Lb8/c;->X()I
 
     .line 36
     .line 37
@@ -217,7 +217,7 @@
     move-result v5
 
     .line 39
-    invoke-interface {p0}, Ly/a1;->B()[Ly/z0;
+    invoke-interface {p0}, LB/V;->B()[Lb8/c;
 
     .line 40
     .line 41
@@ -232,7 +232,7 @@
 
     .line 45
     .line 46
-    invoke-interface {v0}, Ly/z0;->a()I
+    invoke-virtual {v0}, Lb8/c;->X()I
 
     .line 47
     .line 48
@@ -240,7 +240,7 @@
     move-result v7
 
     .line 50
-    invoke-interface {p0}, Ly/a1;->B()[Ly/z0;
+    invoke-interface {p0}, LB/V;->B()[Lb8/c;
 
     .line 51
     .line 52
@@ -252,7 +252,7 @@
 
     .line 55
     .line 56
-    invoke-interface {v0}, Ly/z0;->b()I
+    invoke-virtual {v0}, Lb8/c;->V()I
 
     .line 57
     .line 58
@@ -260,7 +260,7 @@
     move-result v8
 
     .line 60
-    invoke-interface {p0}, Ly/a1;->B()[Ly/z0;
+    invoke-interface {p0}, LB/V;->B()[Lb8/c;
 
     .line 61
     .line 62
@@ -272,7 +272,7 @@
 
     .line 65
     .line 66
-    invoke-interface {v0}, Ly/z0;->b()I
+    invoke-virtual {v0}, Lb8/c;->V()I
 
     .line 67
     .line 68
@@ -280,7 +280,7 @@
     move-result v9
 
     .line 70
-    invoke-interface {p0}, Ly/a1;->getWidth()I
+    invoke-interface {p0}, LB/V;->getWidth()I
 
     .line 71
     .line 72
@@ -288,7 +288,7 @@
     move-result v0
 
     .line 74
-    invoke-interface {p0}, Ly/a1;->getHeight()I
+    invoke-interface {p0}, LB/V;->getHeight()I
 
     .line 75
     .line 76
@@ -316,7 +316,7 @@
     move-result v11
 
     .line 88
-    invoke-interface {p0}, Ly/a1;->B()[Ly/z0;
+    invoke-interface {p0}, LB/V;->B()[Lb8/c;
 
     .line 89
     .line 90
@@ -328,7 +328,7 @@
 
     .line 93
     .line 94
-    invoke-interface {v1}, Ly/z0;->z()Ljava/nio/ByteBuffer;
+    invoke-virtual {v1}, Lb8/c;->N()Ljava/nio/ByteBuffer;
 
     .line 95
     .line 96
@@ -336,7 +336,7 @@
     move-result-object v1
 
     .line 98
-    invoke-interface {p0}, Ly/a1;->B()[Ly/z0;
+    invoke-interface {p0}, LB/V;->B()[Lb8/c;
 
     .line 99
     .line 100
@@ -348,7 +348,7 @@
 
     .line 103
     .line 104
-    invoke-interface {v2}, Ly/z0;->z()Ljava/nio/ByteBuffer;
+    invoke-virtual {v2}, Lb8/c;->N()Ljava/nio/ByteBuffer;
 
     .line 105
     .line 106
@@ -356,7 +356,7 @@
     move-result-object v6
 
     .line 108
-    invoke-interface {p0}, Ly/a1;->B()[Ly/z0;
+    invoke-interface {p0}, LB/V;->B()[Lb8/c;
 
     .line 109
     .line 110
@@ -368,7 +368,7 @@
 
     .line 113
     .line 114
-    invoke-interface {p0}, Ly/z0;->z()Ljava/nio/ByteBuffer;
+    invoke-virtual {p0}, Lb8/c;->N()Ljava/nio/ByteBuffer;
 
     .line 115
     .line 116
@@ -437,15 +437,15 @@
     throw p0
 .end method
 
-.method public static c(Ly/a1;Ly/o1;Ljava/nio/ByteBuffer;IZ)Ly/n0;
-    .locals 23
+.method public static c(LB/V;Landroidx/camera/core/impl/W;Ljava/nio/ByteBuffer;IZ)LB/K;
+    .locals 19
 
     .line 1
     move/from16 v15, p3
 
     .line 2
     .line 3
-    invoke-static/range {p0 .. p0}, Landroidx/camera/core/ImageProcessingUtil;->f(Ly/a1;)Z
+    invoke-interface/range {p0 .. p0}, LB/V;->getFormat()I
 
     .line 4
     .line 5
@@ -453,533 +453,500 @@
     move-result v0
 
     .line 7
-    const/16 v16, 0x0
+    const/16 v1, 0x23
 
     .line 8
     .line 9
-    const-string v17, "ImageProcessingUtil"
+    if-ne v0, v1, :cond_0
 
     .line 10
     .line 11
-    if-nez v0, :cond_0
+    invoke-interface/range {p0 .. p0}, LB/V;->B()[Lb8/c;
 
     .line 12
     .line 13
-    invoke-static/range {v17 .. v17}, Lcom/facebook/appevents/g;->i(Ljava/lang/String;)Ljava/lang/String;
-
     .line 14
+    move-result-object v0
+
     .line 15
+    array-length v0, v0
+
     .line 16
-    return-object v16
+    const/4 v1, 0x3
 
     .line 17
-    :cond_0
-    invoke-static {}, Ljava/lang/System;->currentTimeMillis()J
+    if-ne v0, v1, :cond_0
 
     .line 18
     .line 19
+    const/4 v0, 0x1
+
     .line 20
-    move-result-wide v18
-
-    .line 21
-    if-eqz v15, :cond_2
-
-    .line 22
-    .line 23
-    const/16 v0, 0x5a
-
-    .line 24
-    .line 25
-    if-eq v15, v0, :cond_2
-
-    .line 26
-    .line 27
-    const/16 v0, 0xb4
-
-    .line 28
-    .line 29
-    if-eq v15, v0, :cond_2
-
-    .line 30
-    .line 31
-    const/16 v0, 0x10e
-
-    .line 32
-    .line 33
-    if-ne v15, v0, :cond_1
-
-    .line 34
-    .line 35
     goto :goto_0
 
-    .line 36
-    :cond_1
-    invoke-static/range {v17 .. v17}, Lcom/facebook/appevents/g;->i(Ljava/lang/String;)Ljava/lang/String;
+    .line 21
+    :cond_0
+    const/4 v0, 0x0
 
-    .line 37
-    .line 38
-    .line 39
+    .line 22
+    :goto_0
+    const/16 v16, 0x0
+
+    .line 23
+    .line 24
+    const-string v17, "ImageProcessingUtil"
+
+    .line 25
+    .line 26
+    if-nez v0, :cond_1
+
+    .line 27
+    .line 28
+    invoke-static/range {v17 .. v17}, Landroidx/work/B;->k(Ljava/lang/String;)Ljava/lang/String;
+
+    .line 29
+    .line 30
+    .line 31
     return-object v16
 
-    .line 40
-    :cond_2
-    :goto_0
-    invoke-virtual/range {p1 .. p1}, Ly/o1;->h()Landroid/view/Surface;
+    .line 32
+    :cond_1
+    invoke-static {}, Ljava/lang/System;->currentTimeMillis()J
 
+    .line 33
+    .line 34
+    .line 35
+    if-eqz v15, :cond_3
+
+    .line 36
+    .line 37
+    const/16 v0, 0x5a
+
+    .line 38
+    .line 39
+    if-eq v15, v0, :cond_3
+
+    .line 40
     .line 41
+    const/16 v0, 0xb4
+
     .line 42
     .line 43
-    move-result-object v8
+    if-eq v15, v0, :cond_3
 
     .line 44
-    invoke-interface/range {p0 .. p0}, Ly/a1;->getWidth()I
-
     .line 45
+    const/16 v0, 0x10e
+
     .line 46
     .line 47
-    move-result v10
+    if-ne v15, v0, :cond_2
 
     .line 48
-    invoke-interface/range {p0 .. p0}, Ly/a1;->getHeight()I
-
     .line 49
+    goto :goto_1
+
     .line 50
+    :cond_2
+    invoke-static/range {v17 .. v17}, Landroidx/work/B;->k(Ljava/lang/String;)Ljava/lang/String;
+
     .line 51
-    move-result v11
-
     .line 52
-    invoke-interface/range {p0 .. p0}, Ly/a1;->B()[Ly/z0;
-
     .line 53
+    return-object v16
+
     .line 54
+    :cond_3
+    :goto_1
+    invoke-interface/range {p1 .. p1}, Landroidx/camera/core/impl/W;->j()Landroid/view/Surface;
+
     .line 55
-    move-result-object v0
-
     .line 56
-    const/4 v14, 0x0
-
     .line 57
-    aget-object v0, v0, v14
+    move-result-object v8
 
     .line 58
-    .line 59
-    invoke-interface {v0}, Ly/z0;->a()I
+    invoke-interface/range {p0 .. p0}, LB/V;->getWidth()I
 
+    .line 59
     .line 60
     .line 61
+    move-result v10
+
     .line 62
-    move-result v1
+    invoke-interface/range {p0 .. p0}, LB/V;->getHeight()I
 
     .line 63
-    invoke-interface/range {p0 .. p0}, Ly/a1;->B()[Ly/z0;
-
     .line 64
     .line 65
+    move-result v11
+
     .line 66
-    move-result-object v0
+    invoke-interface/range {p0 .. p0}, LB/V;->B()[Lb8/c;
 
     .line 67
-    const/16 v20, 0x1
-
     .line 68
     .line 69
-    aget-object v0, v0, v20
+    move-result-object v0
 
     .line 70
+    const/4 v1, 0x0
+
     .line 71
-    invoke-interface {v0}, Ly/z0;->a()I
+    aget-object v0, v0, v1
 
     .line 72
     .line 73
+    invoke-virtual {v0}, Lb8/c;->X()I
+
     .line 74
-    move-result v3
-
     .line 75
-    invoke-interface/range {p0 .. p0}, Ly/a1;->B()[Ly/z0;
-
     .line 76
+    move-result v2
+
     .line 77
+    invoke-interface/range {p0 .. p0}, LB/V;->B()[Lb8/c;
+
     .line 78
-    move-result-object v0
-
     .line 79
-    const/4 v13, 0x2
-
     .line 80
-    aget-object v0, v0, v13
+    move-result-object v0
 
     .line 81
-    .line 82
-    invoke-interface {v0}, Ly/z0;->a()I
+    const/16 v18, 0x1
 
+    .line 82
     .line 83
+    aget-object v0, v0, v18
+
     .line 84
     .line 85
-    move-result v5
+    invoke-virtual {v0}, Lb8/c;->X()I
 
     .line 86
-    invoke-interface/range {p0 .. p0}, Ly/a1;->B()[Ly/z0;
-
     .line 87
     .line 88
+    move-result v3
+
     .line 89
-    move-result-object v0
+    invoke-interface/range {p0 .. p0}, LB/V;->B()[Lb8/c;
 
     .line 90
-    aget-object v0, v0, v14
-
     .line 91
     .line 92
-    invoke-interface {v0}, Ly/z0;->b()I
+    move-result-object v0
 
     .line 93
-    .line 94
-    .line 95
-    move-result v6
+    const/4 v4, 0x2
 
+    .line 94
+    aget-object v0, v0, v4
+
+    .line 95
     .line 96
-    invoke-interface/range {p0 .. p0}, Ly/a1;->B()[Ly/z0;
+    invoke-virtual {v0}, Lb8/c;->X()I
 
     .line 97
     .line 98
     .line 99
-    move-result-object v0
+    move-result v5
 
     .line 100
-    aget-object v0, v0, v20
+    invoke-interface/range {p0 .. p0}, LB/V;->B()[Lb8/c;
 
     .line 101
     .line 102
-    invoke-interface {v0}, Ly/z0;->b()I
-
     .line 103
-    .line 104
-    .line 105
-    move-result v7
+    move-result-object v0
 
+    .line 104
+    aget-object v0, v0, v1
+
+    .line 105
     .line 106
-    if-eqz p4, :cond_3
+    invoke-virtual {v0}, Lb8/c;->V()I
 
     .line 107
     .line 108
-    move v12, v6
-
     .line 109
-    goto :goto_1
+    move-result v6
 
     .line 110
-    :cond_3
-    const/4 v12, 0x0
+    invoke-interface/range {p0 .. p0}, LB/V;->B()[Lb8/c;
 
     .line 111
-    :goto_1
-    if-eqz p4, :cond_4
-
     .line 112
     .line 113
-    move/from16 v21, v7
+    move-result-object v0
 
     .line 114
-    .line 115
-    goto :goto_2
+    aget-object v0, v0, v18
 
+    .line 115
     .line 116
-    :cond_4
-    const/16 v21, 0x0
+    invoke-virtual {v0}, Lb8/c;->V()I
 
     .line 117
     .line 118
-    :goto_2
-    if-eqz p4, :cond_5
-
     .line 119
+    move-result v7
+
     .line 120
-    move/from16 v22, v7
+    if-eqz p4, :cond_4
 
     .line 121
     .line 122
-    goto :goto_3
+    move v12, v6
 
     .line 123
-    :cond_5
-    const/16 v22, 0x0
+    goto :goto_2
 
     .line 124
+    :cond_4
+    const/4 v12, 0x0
+
     .line 125
-    :goto_3
-    invoke-interface/range {p0 .. p0}, Ly/a1;->B()[Ly/z0;
+    :goto_2
+    if-eqz p4, :cond_5
 
     .line 126
     .line 127
+    move v13, v7
+
     .line 128
-    move-result-object v0
+    goto :goto_3
 
     .line 129
-    aget-object v0, v0, v14
+    :cond_5
+    const/4 v13, 0x0
 
     .line 130
-    .line 131
-    invoke-interface {v0}, Ly/z0;->z()Ljava/nio/ByteBuffer;
+    :goto_3
+    if-eqz p4, :cond_6
 
+    .line 131
     .line 132
+    move v14, v7
+
     .line 133
+    goto :goto_4
+
     .line 134
-    move-result-object v0
+    :cond_6
+    const/4 v14, 0x0
 
     .line 135
-    invoke-interface/range {p0 .. p0}, Ly/a1;->B()[Ly/z0;
+    :goto_4
+    invoke-interface/range {p0 .. p0}, LB/V;->B()[Lb8/c;
 
     .line 136
     .line 137
     .line 138
-    move-result-object v2
+    move-result-object v0
 
     .line 139
-    aget-object v2, v2, v20
+    aget-object v0, v0, v1
 
     .line 140
     .line 141
-    invoke-interface {v2}, Ly/z0;->z()Ljava/nio/ByteBuffer;
+    invoke-virtual {v0}, Lb8/c;->N()Ljava/nio/ByteBuffer;
 
     .line 142
     .line 143
     .line 144
-    move-result-object v2
+    move-result-object v0
 
     .line 145
-    invoke-interface/range {p0 .. p0}, Ly/a1;->B()[Ly/z0;
+    invoke-interface/range {p0 .. p0}, LB/V;->B()[Lb8/c;
 
     .line 146
     .line 147
     .line 148
-    move-result-object v4
+    move-result-object v1
 
     .line 149
-    aget-object v4, v4, v13
+    aget-object v1, v1, v18
 
     .line 150
     .line 151
-    invoke-interface {v4}, Ly/z0;->z()Ljava/nio/ByteBuffer;
+    invoke-virtual {v1}, Lb8/c;->N()Ljava/nio/ByteBuffer;
 
     .line 152
     .line 153
     .line 154
-    move-result-object v4
+    move-result-object v9
 
     .line 155
-    move-object/from16 v9, p2
+    invoke-interface/range {p0 .. p0}, LB/V;->B()[Lb8/c;
 
     .line 156
     .line 157
-    move/from16 v13, v21
-
     .line 158
+    move-result-object v1
+
     .line 159
-    move/from16 v14, v22
+    aget-object v1, v1, v4
 
     .line 160
     .line 161
-    move/from16 v15, p3
+    invoke-virtual {v1}, Lb8/c;->N()Ljava/nio/ByteBuffer;
 
     .line 162
     .line 163
-    invoke-static/range {v0 .. v15}, Landroidx/camera/core/ImageProcessingUtil;->nativeConvertAndroid420ToABGR(Ljava/nio/ByteBuffer;ILjava/nio/ByteBuffer;ILjava/nio/ByteBuffer;IIILandroid/view/Surface;Ljava/nio/ByteBuffer;IIIIII)I
-
     .line 164
+    move-result-object v4
+
     .line 165
+    move v1, v2
+
     .line 166
-    move-result v0
+    move-object v2, v9
 
     .line 167
-    if-eqz v0, :cond_6
+    move-object/from16 v9, p2
 
     .line 168
     .line 169
-    sget-object v0, Landroidx/camera/core/ImageProcessingUtil$Result;->ERROR_CONVERSION:Landroidx/camera/core/ImageProcessingUtil$Result;
+    move/from16 v15, p3
 
     .line 170
     .line 171
-    goto :goto_4
+    invoke-static/range {v0 .. v15}, Landroidx/camera/core/ImageProcessingUtil;->nativeConvertAndroid420ToABGR(Ljava/nio/ByteBuffer;ILjava/nio/ByteBuffer;ILjava/nio/ByteBuffer;IIILandroid/view/Surface;Ljava/nio/ByteBuffer;IIIIII)I
 
     .line 172
-    :cond_6
-    sget-object v0, Landroidx/camera/core/ImageProcessingUtil$Result;->SUCCESS:Landroidx/camera/core/ImageProcessingUtil$Result;
-
     .line 173
     .line 174
-    :goto_4
-    sget-object v1, Landroidx/camera/core/ImageProcessingUtil$Result;->ERROR_CONVERSION:Landroidx/camera/core/ImageProcessingUtil$Result;
+    move-result v0
 
     .line 175
+    if-eqz v0, :cond_7
+
     .line 176
-    if-ne v0, v1, :cond_7
-
     .line 177
+    sget-object v0, Landroidx/camera/core/ImageProcessingUtil$Result;->ERROR_CONVERSION:Landroidx/camera/core/ImageProcessingUtil$Result;
+
     .line 178
-    invoke-static/range {v17 .. v17}, Lcom/facebook/appevents/g;->i(Ljava/lang/String;)Ljava/lang/String;
-
     .line 179
-    .line 180
-    .line 181
-    return-object v16
+    goto :goto_5
 
-    .line 182
+    .line 180
     :cond_7
-    const-string v0, "MH"
+    sget-object v0, Landroidx/camera/core/ImageProcessingUtil$Result;->SUCCESS:Landroidx/camera/core/ImageProcessingUtil$Result;
+
+    .line 181
+    .line 182
+    :goto_5
+    sget-object v1, Landroidx/camera/core/ImageProcessingUtil$Result;->ERROR_CONVERSION:Landroidx/camera/core/ImageProcessingUtil$Result;
 
     .line 183
     .line 184
-    const/4 v1, 0x3
+    if-ne v0, v1, :cond_8
 
     .line 185
-    invoke-static {v0, v1}, Landroid/util/Log;->isLoggable(Ljava/lang/String;I)Z
-
     .line 186
+    invoke-static/range {v17 .. v17}, Landroidx/work/B;->k(Ljava/lang/String;)Ljava/lang/String;
+
     .line 187
     .line 188
-    move-result v0
-
     .line 189
-    if-eqz v0, :cond_8
+    return-object v16
 
     .line 190
-    .line 191
-    sget-object v0, Ljava/util/Locale;->US:Ljava/util/Locale;
+    :cond_8
+    const-string v0, "MH"
 
+    .line 191
     .line 192
+    const/4 v1, 0x3
+
     .line 193
-    const/4 v1, 0x2
+    invoke-static {v0, v1}, Landroid/util/Log;->isLoggable(Ljava/lang/String;I)Z
 
     .line 194
-    new-array v1, v1, [Ljava/lang/Object;
-
     .line 195
     .line 196
-    invoke-static {}, Ljava/lang/System;->currentTimeMillis()J
+    move-result v0
 
     .line 197
+    if-eqz v0, :cond_9
+
     .line 198
     .line 199
-    move-result-wide v2
+    sget-object v0, Ljava/util/Locale;->US:Ljava/util/Locale;
 
     .line 200
-    sub-long v2, v2, v18
-
     .line 201
-    .line 202
-    invoke-static {v2, v3}, Ljava/lang/Long;->valueOf(J)Ljava/lang/Long;
+    invoke-static {}, Ljava/lang/System;->currentTimeMillis()J
 
+    .line 202
     .line 203
     .line 204
+    invoke-static/range {v17 .. v17}, Landroidx/work/B;->k(Ljava/lang/String;)Ljava/lang/String;
+
     .line 205
-    move-result-object v2
-
     .line 206
-    const/4 v3, 0x0
-
     .line 207
-    aput-object v2, v1, v3
+    sget v0, Landroidx/camera/core/ImageProcessingUtil;->a:I
 
     .line 208
     .line 209
-    sget v2, Landroidx/camera/core/ImageProcessingUtil;->a:I
+    add-int/lit8 v0, v0, 0x1
 
     .line 210
     .line 211
-    invoke-static {v2}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+    sput v0, Landroidx/camera/core/ImageProcessingUtil;->a:I
 
     .line 212
     .line 213
+    :cond_9
+    invoke-interface/range {p1 .. p1}, Landroidx/camera/core/impl/W;->b()LB/V;
+
     .line 214
-    move-result-object v2
-
     .line 215
-    aput-object v2, v1, v20
-
     .line 216
+    move-result-object v0
+
     .line 217
-    const-string v2, "Image processing performance profiling, duration: [%d], image count: %d"
+    if-nez v0, :cond_a
 
     .line 218
     .line 219
-    invoke-static {v0, v2, v1}, Ljava/lang/String;->format(Ljava/util/Locale;Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;
+    invoke-static/range {v17 .. v17}, Landroidx/work/B;->k(Ljava/lang/String;)Ljava/lang/String;
 
     .line 220
     .line 221
     .line 222
-    invoke-static/range {v17 .. v17}, Lcom/facebook/appevents/g;->i(Ljava/lang/String;)Ljava/lang/String;
+    return-object v16
 
     .line 223
+    :cond_a
+    new-instance v1, LB/K;
+
     .line 224
     .line 225
-    sget v0, Landroidx/camera/core/ImageProcessingUtil;->a:I
+    invoke-direct {v1, v0}, LB/K;-><init>(LB/V;)V
 
     .line 226
     .line 227
-    add-int/lit8 v0, v0, 0x1
-
     .line 228
+    new-instance v2, LB/J;
+
     .line 229
-    sput v0, Landroidx/camera/core/ImageProcessingUtil;->a:I
-
     .line 230
-    .line 231
-    goto :goto_5
+    move-object/from16 v3, p0
 
+    .line 231
     .line 232
-    :cond_8
-    const/4 v3, 0x0
+    invoke-direct {v2, v0, v3}, LB/J;-><init>(LB/V;LB/V;)V
 
     .line 233
-    :goto_5
-    invoke-virtual/range {p1 .. p1}, Ly/o1;->b()Ly/a1;
-
     .line 234
     .line 235
+    invoke-virtual {v1, v2}, LB/A;->b(LB/z;)V
+
     .line 236
-    move-result-object v0
-
     .line 237
-    if-nez v0, :cond_9
-
     .line 238
-    .line 239
-    invoke-static/range {v17 .. v17}, Lcom/facebook/appevents/g;->i(Ljava/lang/String;)Ljava/lang/String;
-
-    .line 240
-    .line 241
-    .line 242
-    return-object v16
-
-    .line 243
-    :cond_9
-    new-instance v1, Ly/n0;
-
-    .line 244
-    .line 245
-    invoke-direct {v1, v0}, Ly/n0;-><init>(Ly/a1;)V
-
-    .line 246
-    .line 247
-    .line 248
-    new-instance v2, Ly/y0;
-
-    .line 249
-    .line 250
-    move-object/from16 v4, p0
-
-    .line 251
-    .line 252
-    invoke-direct {v2, v0, v4, v3}, Ly/y0;-><init>(Ly/a1;Ly/a1;I)V
-
-    .line 253
-    .line 254
-    .line 255
-    invoke-virtual {v1, v2}, Ly/c0;->a(Ly/b0;)V
-
-    .line 256
-    .line 257
-    .line 258
     return-object v1
 .end method
 
@@ -1079,59 +1046,7 @@
     return-void
 .end method
 
-.method public static f(Ly/a1;)Z
-    .locals 2
-
-    .line 1
-    invoke-interface {p0}, Ly/a1;->getFormat()I
-
-    .line 2
-    .line 3
-    .line 4
-    move-result v0
-
-    .line 5
-    const/16 v1, 0x23
-
-    .line 6
-    .line 7
-    if-ne v0, v1, :cond_0
-
-    .line 8
-    .line 9
-    invoke-interface {p0}, Ly/a1;->B()[Ly/z0;
-
-    .line 10
-    .line 11
-    .line 12
-    move-result-object p0
-
-    .line 13
-    array-length p0, p0
-
-    .line 14
-    const/4 v0, 0x3
-
-    .line 15
-    if-ne p0, v0, :cond_0
-
-    .line 16
-    .line 17
-    const/4 p0, 0x1
-
-    .line 18
-    goto :goto_0
-
-    .line 19
-    :cond_0
-    const/4 p0, 0x0
-
-    .line 20
-    :goto_0
-    return p0
-.end method
-
-.method public static g([BLandroid/view/Surface;)V
+.method public static f([BLandroid/view/Surface;)V
     .locals 0
 
     .line 1
@@ -1156,7 +1071,7 @@
 
     .line 11
     .line 12
-    invoke-static {p0}, Lcom/facebook/appevents/g;->i(Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {p0}, Landroidx/work/B;->k(Ljava/lang/String;)Ljava/lang/String;
 
     .line 13
     .line 14
@@ -1166,13 +1081,57 @@
 .end method
 
 .method private static native nativeConvertAndroid420ToABGR(Ljava/nio/ByteBuffer;ILjava/nio/ByteBuffer;ILjava/nio/ByteBuffer;IIILandroid/view/Surface;Ljava/nio/ByteBuffer;IIIIII)I
+    .param p0    # Ljava/nio/ByteBuffer;
+        .annotation build Landroidx/annotation/NonNull;
+        .end annotation
+    .end param
+    .param p2    # Ljava/nio/ByteBuffer;
+        .annotation build Landroidx/annotation/NonNull;
+        .end annotation
+    .end param
+    .param p4    # Ljava/nio/ByteBuffer;
+        .annotation build Landroidx/annotation/NonNull;
+        .end annotation
+    .end param
+    .param p8    # Landroid/view/Surface;
+        .annotation build Landroidx/annotation/Nullable;
+        .end annotation
+    .end param
+    .param p9    # Ljava/nio/ByteBuffer;
+        .annotation build Landroidx/annotation/Nullable;
+        .end annotation
+    .end param
 .end method
 
 .method private static native nativeConvertAndroid420ToBitmap(Ljava/nio/ByteBuffer;ILjava/nio/ByteBuffer;ILjava/nio/ByteBuffer;IIILandroid/graphics/Bitmap;III)I
+    .param p0    # Ljava/nio/ByteBuffer;
+        .annotation build Landroidx/annotation/NonNull;
+        .end annotation
+    .end param
+    .param p2    # Ljava/nio/ByteBuffer;
+        .annotation build Landroidx/annotation/NonNull;
+        .end annotation
+    .end param
+    .param p4    # Ljava/nio/ByteBuffer;
+        .annotation build Landroidx/annotation/NonNull;
+        .end annotation
+    .end param
+    .param p8    # Landroid/graphics/Bitmap;
+        .annotation build Landroidx/annotation/NonNull;
+        .end annotation
+    .end param
 .end method
 
 .method private static native nativeCopyBetweenByteBufferAndBitmap(Landroid/graphics/Bitmap;Ljava/nio/ByteBuffer;IIIIZ)I
 .end method
 
 .method private static native nativeWriteJpegToSurface([BLandroid/view/Surface;)I
+    .param p0    # [B
+        .annotation build Landroidx/annotation/NonNull;
+        .end annotation
+    .end param
+    .param p1    # Landroid/view/Surface;
+        .annotation build Landroidx/annotation/NonNull;
+        .end annotation
+    .end param
 .end method

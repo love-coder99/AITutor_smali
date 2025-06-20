@@ -1,227 +1,123 @@
-.class public final Landroidx/compose/ui/platform/y0;
+.class public abstract synthetic Landroidx/compose/ui/platform/Y0;
 .super Ljava/lang/Object;
 .source "SourceFile"
 
-# interfaces
-.implements Landroidx/compose/ui/platform/x2;
 
-
-# instance fields
-.field public final a:Landroid/view/ViewConfiguration;
+# static fields
+.field public static final synthetic a:[I
 
 
 # direct methods
-.method public constructor <init>(Landroid/view/ViewConfiguration;)V
-    .locals 0
+.method static constructor <clinit>()V
+    .locals 3
 
-    .line 1
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    invoke-static {}, Landroidx/lifecycle/Lifecycle$Event;->values()[Landroidx/lifecycle/Lifecycle$Event;
 
-    .line 2
-    .line 3
-    .line 4
-    iput-object p1, p0, Landroidx/compose/ui/platform/y0;->a:Landroid/view/ViewConfiguration;
+    move-result-object v0
 
-    .line 5
-    .line 6
+    array-length v0, v0
+
+    new-array v0, v0, [I
+
+    :try_start_0
+    sget-object v1, Landroidx/lifecycle/Lifecycle$Event;->ON_CREATE:Landroidx/lifecycle/Lifecycle$Event;
+
+    invoke-virtual {v1}, Ljava/lang/Enum;->ordinal()I
+
+    move-result v1
+
+    const/4 v2, 0x1
+
+    aput v2, v0, v1
+    :try_end_0
+    .catch Ljava/lang/NoSuchFieldError; {:try_start_0 .. :try_end_0} :catch_0
+
+    :catch_0
+    :try_start_1
+    sget-object v1, Landroidx/lifecycle/Lifecycle$Event;->ON_START:Landroidx/lifecycle/Lifecycle$Event;
+
+    invoke-virtual {v1}, Ljava/lang/Enum;->ordinal()I
+
+    move-result v1
+
+    const/4 v2, 0x2
+
+    aput v2, v0, v1
+    :try_end_1
+    .catch Ljava/lang/NoSuchFieldError; {:try_start_1 .. :try_end_1} :catch_1
+
+    :catch_1
+    :try_start_2
+    sget-object v1, Landroidx/lifecycle/Lifecycle$Event;->ON_STOP:Landroidx/lifecycle/Lifecycle$Event;
+
+    invoke-virtual {v1}, Ljava/lang/Enum;->ordinal()I
+
+    move-result v1
+
+    const/4 v2, 0x3
+
+    aput v2, v0, v1
+    :try_end_2
+    .catch Ljava/lang/NoSuchFieldError; {:try_start_2 .. :try_end_2} :catch_2
+
+    :catch_2
+    :try_start_3
+    sget-object v1, Landroidx/lifecycle/Lifecycle$Event;->ON_DESTROY:Landroidx/lifecycle/Lifecycle$Event;
+
+    invoke-virtual {v1}, Ljava/lang/Enum;->ordinal()I
+
+    move-result v1
+
+    const/4 v2, 0x4
+
+    aput v2, v0, v1
+    :try_end_3
+    .catch Ljava/lang/NoSuchFieldError; {:try_start_3 .. :try_end_3} :catch_3
+
+    :catch_3
+    :try_start_4
+    sget-object v1, Landroidx/lifecycle/Lifecycle$Event;->ON_PAUSE:Landroidx/lifecycle/Lifecycle$Event;
+
+    invoke-virtual {v1}, Ljava/lang/Enum;->ordinal()I
+
+    move-result v1
+
+    const/4 v2, 0x5
+
+    aput v2, v0, v1
+    :try_end_4
+    .catch Ljava/lang/NoSuchFieldError; {:try_start_4 .. :try_end_4} :catch_4
+
+    :catch_4
+    :try_start_5
+    sget-object v1, Landroidx/lifecycle/Lifecycle$Event;->ON_RESUME:Landroidx/lifecycle/Lifecycle$Event;
+
+    invoke-virtual {v1}, Ljava/lang/Enum;->ordinal()I
+
+    move-result v1
+
+    const/4 v2, 0x6
+
+    aput v2, v0, v1
+    :try_end_5
+    .catch Ljava/lang/NoSuchFieldError; {:try_start_5 .. :try_end_5} :catch_5
+
+    :catch_5
+    :try_start_6
+    sget-object v1, Landroidx/lifecycle/Lifecycle$Event;->ON_ANY:Landroidx/lifecycle/Lifecycle$Event;
+
+    invoke-virtual {v1}, Ljava/lang/Enum;->ordinal()I
+
+    move-result v1
+
+    const/4 v2, 0x7
+
+    aput v2, v0, v1
+    :try_end_6
+    .catch Ljava/lang/NoSuchFieldError; {:try_start_6 .. :try_end_6} :catch_6
+
+    :catch_6
+    sput-object v0, Landroidx/compose/ui/platform/Y0;->a:[I
+
     return-void
-.end method
-
-
-# virtual methods
-.method public final a()J
-    .locals 2
-
-    .line 1
-    invoke-static {}, Landroid/view/ViewConfiguration;->getDoubleTapTimeout()I
-
-    .line 2
-    .line 3
-    .line 4
-    move-result v0
-
-    .line 5
-    int-to-long v0, v0
-
-    .line 6
-    return-wide v0
-.end method
-
-.method public final b()V
-    .locals 0
-
-    .line 1
-    return-void
-.end method
-
-.method public final c()J
-    .locals 2
-
-    .line 1
-    invoke-static {}, Landroid/view/ViewConfiguration;->getLongPressTimeout()I
-
-    .line 2
-    .line 3
-    .line 4
-    move-result v0
-
-    .line 5
-    int-to-long v0, v0
-
-    .line 6
-    return-wide v0
-.end method
-
-.method public final d()F
-    .locals 2
-
-    .line 1
-    sget v0, Landroid/os/Build$VERSION;->SDK_INT:I
-
-    .line 2
-    .line 3
-    const/16 v1, 0x22
-
-    .line 4
-    .line 5
-    if-lt v0, v1, :cond_0
-
-    .line 6
-    .line 7
-    sget-object v0, Landroidx/compose/ui/platform/z0;->a:Landroidx/compose/ui/platform/z0;
-
-    .line 8
-    .line 9
-    iget-object v1, p0, Landroidx/compose/ui/platform/y0;->a:Landroid/view/ViewConfiguration;
-
-    .line 10
-    .line 11
-    invoke-virtual {v0, v1}, Landroidx/compose/ui/platform/z0;->b(Landroid/view/ViewConfiguration;)F
-
-    .line 12
-    .line 13
-    .line 14
-    move-result v0
-
-    .line 15
-    goto :goto_0
-
-    .line 16
-    :cond_0
-    const/high16 v0, 0x40000000    # 2.0f
-
-    .line 17
-    .line 18
-    :goto_0
-    return v0
-.end method
-
-.method public final e()J
-    .locals 2
-
-    .line 1
-    const/16 v0, 0x30
-
-    .line 2
-    .line 3
-    int-to-float v0, v0
-
-    .line 4
-    invoke-static {v0, v0}, Lkotlin/jvm/internal/g;->a(FF)J
-
-    .line 5
-    .line 6
-    .line 7
-    move-result-wide v0
-
-    .line 8
-    return-wide v0
-.end method
-
-.method public final f()F
-    .locals 1
-
-    .line 1
-    iget-object v0, p0, Landroidx/compose/ui/platform/y0;->a:Landroid/view/ViewConfiguration;
-
-    .line 2
-    .line 3
-    invoke-virtual {v0}, Landroid/view/ViewConfiguration;->getScaledMaximumFlingVelocity()I
-
-    .line 4
-    .line 5
-    .line 6
-    move-result v0
-
-    .line 7
-    int-to-float v0, v0
-
-    .line 8
-    return v0
-.end method
-
-.method public final g()F
-    .locals 1
-
-    .line 1
-    iget-object v0, p0, Landroidx/compose/ui/platform/y0;->a:Landroid/view/ViewConfiguration;
-
-    .line 2
-    .line 3
-    invoke-virtual {v0}, Landroid/view/ViewConfiguration;->getScaledTouchSlop()I
-
-    .line 4
-    .line 5
-    .line 6
-    move-result v0
-
-    .line 7
-    int-to-float v0, v0
-
-    .line 8
-    return v0
-.end method
-
-.method public final h()F
-    .locals 2
-
-    .line 1
-    sget v0, Landroid/os/Build$VERSION;->SDK_INT:I
-
-    .line 2
-    .line 3
-    const/16 v1, 0x22
-
-    .line 4
-    .line 5
-    if-lt v0, v1, :cond_0
-
-    .line 6
-    .line 7
-    sget-object v0, Landroidx/compose/ui/platform/z0;->a:Landroidx/compose/ui/platform/z0;
-
-    .line 8
-    .line 9
-    iget-object v1, p0, Landroidx/compose/ui/platform/y0;->a:Landroid/view/ViewConfiguration;
-
-    .line 10
-    .line 11
-    invoke-virtual {v0, v1}, Landroidx/compose/ui/platform/z0;->a(Landroid/view/ViewConfiguration;)F
-
-    .line 12
-    .line 13
-    .line 14
-    move-result v0
-
-    .line 15
-    goto :goto_0
-
-    .line 16
-    :cond_0
-    const/high16 v0, 0x41800000    # 16.0f
-
-    .line 17
-    .line 18
-    :goto_0
-    return v0
 .end method

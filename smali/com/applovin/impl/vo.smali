@@ -34,9 +34,9 @@
 .method public final a()Lcom/applovin/impl/y1;
     .locals 1
 
+    .line 1
     iget-object v0, p0, Lcom/applovin/impl/vo;->b:Lcom/applovin/impl/y1;
 
-    .line 2
     invoke-static {v0}, Lcom/applovin/impl/b1;->a(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object v0
@@ -49,9 +49,10 @@
 .method public final a(Lcom/applovin/impl/vo$a;Lcom/applovin/impl/y1;)V
     .locals 0
 
-    .line 1
+    .line 2
     iput-object p1, p0, Lcom/applovin/impl/vo;->a:Lcom/applovin/impl/vo$a;
 
+    .line 3
     iput-object p2, p0, Lcom/applovin/impl/vo;->b:Lcom/applovin/impl/y1;
 
     return-void

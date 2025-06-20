@@ -34,20 +34,29 @@
 .field private detailMessage:Ljava/lang/String;
 
 .field private exception:Ljava/lang/Exception;
+    .annotation build Landroidx/annotation/Nullable;
+    .end annotation
+.end field
 
-.field private key:Lx5/b;
+.field private key:LT2/d;
 
 
 # direct methods
 .method static constructor <clinit>()V
     .locals 1
 
+    .line 1
     const/4 v0, 0x0
 
+    .line 2
     new-array v0, v0, [Ljava/lang/StackTraceElement;
 
+    .line 3
+    .line 4
     sput-object v0, Lcom/bumptech/glide/load/engine/GlideException;->b:[Ljava/lang/StackTraceElement;
 
+    .line 5
+    .line 6
     return-void
 .end method
 
@@ -92,13 +101,15 @@
     .line 3
     invoke-direct {p0}, Ljava/lang/Exception;-><init>()V
 
+    .line 4
     iput-object p1, p0, Lcom/bumptech/glide/load/engine/GlideException;->detailMessage:Ljava/lang/String;
 
+    .line 5
     sget-object p1, Lcom/bumptech/glide/load/engine/GlideException;->b:[Ljava/lang/StackTraceElement;
 
-    .line 4
     invoke-virtual {p0, p1}, Ljava/lang/Throwable;->setStackTrace([Ljava/lang/StackTraceElement;)V
 
+    .line 6
     iput-object p2, p0, Lcom/bumptech/glide/load/engine/GlideException;->causes:Ljava/util/List;
 
     return-void
@@ -179,12 +190,12 @@
     return-void
 .end method
 
-.method public static b(Ljava/util/List;Ly5/a;)V
+.method public static b(Ljava/util/List;LV2/n;)V
     .locals 0
 
     .line 1
     :try_start_0
-    invoke-static {p0, p1}, Lcom/bumptech/glide/load/engine/GlideException;->c(Ljava/util/List;Ly5/a;)V
+    invoke-static {p0, p1}, Lcom/bumptech/glide/load/engine/GlideException;->c(Ljava/util/List;LV2/n;)V
     :try_end_0
     .catch Ljava/io/IOException; {:try_start_0 .. :try_end_0} :catch_0
 
@@ -210,7 +221,7 @@
     throw p1
 .end method
 
-.method public static c(Ljava/util/List;Ly5/a;)V
+.method public static c(Ljava/util/List;LV2/n;)V
     .locals 4
 
     .line 1
@@ -234,7 +245,7 @@
 
     .line 9
     .line 10
-    invoke-virtual {p1, v2}, Ly5/a;->append(Ljava/lang/CharSequence;)Ljava/lang/Appendable;
+    invoke-virtual {p1, v2}, LV2/n;->append(Ljava/lang/CharSequence;)Ljava/lang/Appendable;
 
     .line 11
     .line 12
@@ -251,7 +262,7 @@
     move-result-object v3
 
     .line 19
-    invoke-virtual {p1, v3}, Ly5/a;->append(Ljava/lang/CharSequence;)Ljava/lang/Appendable;
+    invoke-virtual {p1, v3}, LV2/n;->append(Ljava/lang/CharSequence;)Ljava/lang/Appendable;
 
     .line 20
     .line 21
@@ -329,16 +340,16 @@
     move-result-object v1
 
     .line 61
-    new-instance v3, Ly5/a;
+    new-instance v3, LV2/n;
 
     .line 62
     .line 63
-    invoke-direct {v3, p1}, Ly5/a;-><init>(Ljava/lang/Appendable;)V
+    invoke-direct {v3, p1}, LV2/n;-><init>(Ljava/lang/Appendable;)V
 
     .line 64
     .line 65
     .line 66
-    invoke-static {v1, v3}, Lcom/bumptech/glide/load/engine/GlideException;->b(Ljava/util/List;Ly5/a;)V
+    invoke-static {v1, v3}, Lcom/bumptech/glide/load/engine/GlideException;->b(Ljava/util/List;LV2/n;)V
 
     .line 67
     .line 68
@@ -466,8 +477,11 @@
         }
     .end annotation
 
+    .line 1
     iget-object v0, p0, Lcom/bumptech/glide/load/engine/GlideException;->causes:Ljava/util/List;
 
+    .line 2
+    .line 3
     return-object v0
 .end method
 
@@ -501,11 +515,11 @@
 
     .line 14
     .line 15
-    const-string v2, ", "
+    const-string v2, ""
 
     .line 16
     .line 17
-    const-string v3, ""
+    const-string v3, ", "
 
     .line 18
     .line 19
@@ -517,7 +531,7 @@
 
     .line 22
     .line 23
-    invoke-direct {v1, v2}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+    invoke-direct {v1, v3}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
 
     .line 24
     .line 25
@@ -543,7 +557,7 @@
 
     .line 36
     :cond_0
-    move-object v1, v3
+    move-object v1, v2
 
     .line 37
     :goto_0
@@ -564,16 +578,16 @@
 
     .line 45
     .line 46
-    invoke-direct {v1, v2}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+    invoke-direct {v1, v3}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
 
     .line 47
     .line 48
     .line 49
-    iget-object v2, p0, Lcom/bumptech/glide/load/engine/GlideException;->dataSource:Lcom/bumptech/glide/load/DataSource;
+    iget-object v4, p0, Lcom/bumptech/glide/load/engine/GlideException;->dataSource:Lcom/bumptech/glide/load/DataSource;
 
     .line 50
     .line 51
-    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+    invoke-virtual {v1, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 
     .line 52
     .line 53
@@ -590,7 +604,7 @@
 
     .line 59
     :cond_1
-    move-object v1, v3
+    move-object v1, v2
 
     .line 60
     :goto_1
@@ -599,80 +613,78 @@
     .line 61
     .line 62
     .line 63
-    invoke-virtual {v0, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    iget-object v1, p0, Lcom/bumptech/glide/load/engine/GlideException;->key:LT2/d;
 
     .line 64
     .line 65
-    .line 66
-    invoke-virtual {p0}, Lcom/bumptech/glide/load/engine/GlideException;->getRootCauses()Ljava/util/List;
+    if-eqz v1, :cond_2
 
+    .line 66
     .line 67
+    new-instance v1, Ljava/lang/StringBuilder;
+
     .line 68
     .line 69
-    move-result-object v1
+    invoke-direct {v1, v3}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
 
     .line 70
-    invoke-interface {v1}, Ljava/util/List;->isEmpty()Z
-
     .line 71
     .line 72
-    .line 73
-    move-result v2
+    iget-object v2, p0, Lcom/bumptech/glide/load/engine/GlideException;->key:LT2/d;
 
+    .line 73
     .line 74
-    if-eqz v2, :cond_2
+    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 
     .line 75
     .line 76
-    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
     .line 77
+    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
     .line 78
     .line 79
-    move-result-object v0
-
     .line 80
-    return-object v0
+    move-result-object v2
 
     .line 81
     :cond_2
-    invoke-interface {v1}, Ljava/util/List;->size()I
+    invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     .line 82
     .line 83
     .line 84
-    move-result v2
+    invoke-virtual {p0}, Lcom/bumptech/glide/load/engine/GlideException;->getRootCauses()Ljava/util/List;
 
     .line 85
-    const/4 v3, 0x1
-
     .line 86
-    if-ne v2, v3, :cond_3
-
     .line 87
+    move-result-object v1
+
     .line 88
-    const-string v2, "\nThere was 1 root cause:"
+    invoke-interface {v1}, Ljava/util/List;->isEmpty()Z
 
     .line 89
     .line 90
-    invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
     .line 91
-    .line 92
-    .line 93
-    goto :goto_2
+    move-result v2
 
+    .line 92
+    if-eqz v2, :cond_3
+
+    .line 93
     .line 94
-    :cond_3
-    const-string v2, "\nThere were "
+    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
     .line 95
     .line 96
-    invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
     .line 97
+    move-result-object v0
+
     .line 98
+    return-object v0
+
     .line 99
+    :cond_3
     invoke-interface {v1}, Ljava/util/List;->size()I
 
     .line 100
@@ -681,12 +693,14 @@
     move-result v2
 
     .line 103
-    invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+    const/4 v3, 0x1
 
     .line 104
+    if-ne v2, v3, :cond_4
+
     .line 105
     .line 106
-    const-string v2, " root causes:"
+    const-string v2, "\nThere was 1 root cause:"
 
     .line 107
     .line 108
@@ -695,130 +709,170 @@
     .line 109
     .line 110
     .line 111
-    :goto_2
-    invoke-interface {v1}, Ljava/util/List;->iterator()Ljava/util/Iterator;
+    goto :goto_2
 
     .line 112
+    :cond_4
+    const-string v2, "\nThere were "
+
     .line 113
     .line 114
-    move-result-object v1
+    invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     .line 115
-    :goto_3
-    invoke-interface {v1}, Ljava/util/Iterator;->hasNext()Z
-
     .line 116
     .line 117
+    invoke-interface {v1}, Ljava/util/List;->size()I
+
     .line 118
+    .line 119
+    .line 120
     move-result v2
 
-    .line 119
-    if-eqz v2, :cond_4
-
-    .line 120
     .line 121
-    invoke-interface {v1}, Ljava/util/Iterator;->next()Ljava/lang/Object;
+    invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
     .line 122
     .line 123
     .line 124
-    move-result-object v2
+    const-string v2, " root causes:"
 
     .line 125
-    check-cast v2, Ljava/lang/Throwable;
-
     .line 126
-    .line 127
-    const/16 v3, 0xa
+    invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    .line 127
     .line 128
     .line 129
-    invoke-virtual {v0, v3}, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
+    :goto_2
+    invoke-interface {v1}, Ljava/util/List;->iterator()Ljava/util/Iterator;
 
     .line 130
     .line 131
     .line 132
-    invoke-virtual {v2}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+    move-result-object v1
 
     .line 133
+    :goto_3
+    invoke-interface {v1}, Ljava/util/Iterator;->hasNext()Z
+
     .line 134
     .line 135
-    move-result-object v3
-
     .line 136
-    invoke-virtual {v3}, Ljava/lang/Class;->getName()Ljava/lang/String;
+    move-result v2
 
     .line 137
+    if-eqz v2, :cond_5
+
     .line 138
     .line 139
-    move-result-object v3
+    invoke-interface {v1}, Ljava/util/Iterator;->next()Ljava/lang/Object;
 
     .line 140
-    invoke-virtual {v0, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
     .line 141
     .line 142
+    move-result-object v2
+
     .line 143
-    const/16 v3, 0x28
+    check-cast v2, Ljava/lang/Throwable;
 
     .line 144
     .line 145
-    invoke-virtual {v0, v3}, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
+    const/16 v3, 0xa
 
     .line 146
     .line 147
-    .line 148
-    invoke-virtual {v2}, Ljava/lang/Throwable;->getMessage()Ljava/lang/String;
+    invoke-virtual {v0, v3}, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
 
+    .line 148
     .line 149
     .line 150
+    invoke-virtual {v2}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
     .line 151
-    move-result-object v2
-
     .line 152
-    invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
     .line 153
-    .line 154
-    .line 155
-    const/16 v2, 0x29
+    move-result-object v3
 
+    .line 154
+    invoke-virtual {v3}, Ljava/lang/Class;->getName()Ljava/lang/String;
+
+    .line 155
     .line 156
     .line 157
-    invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
+    move-result-object v3
 
     .line 158
+    invoke-virtual {v0, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
     .line 159
     .line 160
-    goto :goto_3
-
     .line 161
-    :cond_4
-    const-string v1, "\n call GlideException#logRootCauses(String) for more detail"
+    const/16 v3, 0x28
 
     .line 162
     .line 163
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v0, v3}, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
 
     .line 164
     .line 165
     .line 166
-    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    invoke-virtual {v2}, Ljava/lang/Throwable;->getMessage()Ljava/lang/String;
 
     .line 167
     .line 168
     .line 169
-    move-result-object v0
+    move-result-object v2
 
     .line 170
+    invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 171
+    .line 172
+    .line 173
+    const/16 v2, 0x29
+
+    .line 174
+    .line 175
+    invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
+
+    .line 176
+    .line 177
+    .line 178
+    goto :goto_3
+
+    .line 179
+    :cond_5
+    const-string v1, "\n call GlideException#logRootCauses(String) for more detail"
+
+    .line 180
+    .line 181
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 182
+    .line 183
+    .line 184
+    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    .line 185
+    .line 186
+    .line 187
+    move-result-object v0
+
+    .line 188
     return-object v0
 .end method
 
 .method public getOrigin()Ljava/lang/Exception;
     .locals 1
+    .annotation build Landroidx/annotation/Nullable;
+    .end annotation
 
+    .line 1
     iget-object v0, p0, Lcom/bumptech/glide/load/engine/GlideException;->exception:Ljava/lang/Exception;
 
+    .line 2
+    .line 3
     return-object v0
 .end method
 
@@ -908,9 +962,9 @@
 .method public printStackTrace()V
     .locals 1
 
+    .line 1
     sget-object v0, Ljava/lang/System;->err:Ljava/io/PrintStream;
 
-    .line 1
     invoke-virtual {p0, v0}, Lcom/bumptech/glide/load/engine/GlideException;->printStackTrace(Ljava/io/PrintStream;)V
 
     return-void
@@ -927,11 +981,11 @@
 
     move-result-object v0
 
-    new-instance v1, Ly5/a;
+    new-instance v1, LV2/n;
 
-    invoke-direct {v1, p1}, Ly5/a;-><init>(Ljava/lang/Appendable;)V
+    invoke-direct {v1, p1}, LV2/n;-><init>(Ljava/lang/Appendable;)V
 
-    invoke-static {v0, v1}, Lcom/bumptech/glide/load/engine/GlideException;->b(Ljava/util/List;Ly5/a;)V
+    invoke-static {v0, v1}, Lcom/bumptech/glide/load/engine/GlideException;->b(Ljava/util/List;LV2/n;)V
 
     return-void
 .end method
@@ -947,41 +1001,45 @@
 
     move-result-object v0
 
-    new-instance v1, Ly5/a;
+    new-instance v1, LV2/n;
 
-    invoke-direct {v1, p1}, Ly5/a;-><init>(Ljava/lang/Appendable;)V
+    invoke-direct {v1, p1}, LV2/n;-><init>(Ljava/lang/Appendable;)V
 
-    invoke-static {v0, v1}, Lcom/bumptech/glide/load/engine/GlideException;->b(Ljava/util/List;Ly5/a;)V
+    invoke-static {v0, v1}, Lcom/bumptech/glide/load/engine/GlideException;->b(Ljava/util/List;LV2/n;)V
 
     return-void
 .end method
 
-.method public setLoggingDetails(Lx5/b;Lcom/bumptech/glide/load/DataSource;)V
+.method public setLoggingDetails(LT2/d;Lcom/bumptech/glide/load/DataSource;)V
     .locals 1
 
     const/4 v0, 0x0
 
-    .line 2
-    invoke-virtual {p0, p1, p2, v0}, Lcom/bumptech/glide/load/engine/GlideException;->setLoggingDetails(Lx5/b;Lcom/bumptech/glide/load/DataSource;Ljava/lang/Class;)V
+    .line 1
+    invoke-virtual {p0, p1, p2, v0}, Lcom/bumptech/glide/load/engine/GlideException;->setLoggingDetails(LT2/d;Lcom/bumptech/glide/load/DataSource;Ljava/lang/Class;)V
 
     return-void
 .end method
 
-.method public setLoggingDetails(Lx5/b;Lcom/bumptech/glide/load/DataSource;Ljava/lang/Class;)V
+.method public setLoggingDetails(LT2/d;Lcom/bumptech/glide/load/DataSource;Ljava/lang/Class;)V
     .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
-            "Lx5/b;",
+            "LT2/d;",
             "Lcom/bumptech/glide/load/DataSource;",
             "Ljava/lang/Class<",
             "*>;)V"
         }
     .end annotation
 
-    .line 1
+    .line 2
+    iput-object p1, p0, Lcom/bumptech/glide/load/engine/GlideException;->key:LT2/d;
+
+    .line 3
     iput-object p2, p0, Lcom/bumptech/glide/load/engine/GlideException;->dataSource:Lcom/bumptech/glide/load/DataSource;
 
+    .line 4
     iput-object p3, p0, Lcom/bumptech/glide/load/engine/GlideException;->dataClass:Ljava/lang/Class;
 
     return-void
@@ -989,8 +1047,15 @@
 
 .method public setOrigin(Ljava/lang/Exception;)V
     .locals 0
+    .param p1    # Ljava/lang/Exception;
+        .annotation build Landroidx/annotation/Nullable;
+        .end annotation
+    .end param
 
+    .line 1
     iput-object p1, p0, Lcom/bumptech/glide/load/engine/GlideException;->exception:Ljava/lang/Exception;
 
+    .line 2
+    .line 3
     return-void
 .end method

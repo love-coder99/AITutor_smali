@@ -4,22 +4,23 @@
 
 # interfaces
 .implements Landroidx/compose/ui/node/i;
-.implements Landroidx/compose/ui/node/p;
+.implements Landroidx/compose/ui/node/n;
 .implements Landroidx/compose/foundation/text/input/internal/r;
+.implements Landroidx/compose/ui/node/j;
 
 
 # instance fields
 .field public p:Landroidx/compose/foundation/text/input/internal/s;
 
-.field public q:Landroidx/compose/foundation/text/t;
+.field public q:Landroidx/compose/foundation/text/s;
 
-.field public r:Landroidx/compose/foundation/text/selection/a0;
+.field public r:Landroidx/compose/foundation/text/selection/x;
 
 .field public final s:Landroidx/compose/runtime/ParcelableSnapshotMutableState;
 
 
 # direct methods
-.method public constructor <init>(Landroidx/compose/foundation/text/input/internal/s;Landroidx/compose/foundation/text/t;Landroidx/compose/foundation/text/selection/a0;)V
+.method public constructor <init>(Landroidx/compose/foundation/text/input/internal/s;Landroidx/compose/foundation/text/s;Landroidx/compose/foundation/text/selection/x;)V
     .locals 0
 
     .line 1
@@ -32,22 +33,22 @@
 
     .line 5
     .line 6
-    iput-object p2, p0, Landroidx/compose/foundation/text/input/internal/o;->q:Landroidx/compose/foundation/text/t;
+    iput-object p2, p0, Landroidx/compose/foundation/text/input/internal/o;->q:Landroidx/compose/foundation/text/s;
 
     .line 7
     .line 8
-    iput-object p3, p0, Landroidx/compose/foundation/text/input/internal/o;->r:Landroidx/compose/foundation/text/selection/a0;
+    iput-object p3, p0, Landroidx/compose/foundation/text/input/internal/o;->r:Landroidx/compose/foundation/text/selection/x;
 
     .line 9
     .line 10
-    sget-object p1, Landroidx/compose/runtime/g3;->a:Landroidx/compose/runtime/g3;
+    sget-object p1, Landroidx/compose/runtime/T;->h:Landroidx/compose/runtime/T;
 
     .line 11
     .line 12
     const/4 p2, 0x0
 
     .line 13
-    invoke-static {p2, p1}, Lma/a;->Z(Ljava/lang/Object;Landroidx/compose/runtime/u2;)Landroidx/compose/runtime/ParcelableSnapshotMutableState;
+    invoke-static {p2, p1}, Landroidx/compose/runtime/o;->R(Ljava/lang/Object;Landroidx/compose/runtime/A0;)Landroidx/compose/runtime/ParcelableSnapshotMutableState;
 
     .line 14
     .line 15
@@ -64,7 +65,7 @@
 
 
 # virtual methods
-.method public final m0(Landroidx/compose/ui/node/e1;)V
+.method public final k0(Landroidx/compose/ui/node/a0;)V
     .locals 1
 
     .line 1
@@ -72,7 +73,7 @@
 
     .line 2
     .line 3
-    invoke-virtual {v0, p1}, Landroidx/compose/runtime/t2;->setValue(Ljava/lang/Object;)V
+    invoke-virtual {v0, p1}, Landroidx/compose/runtime/ParcelableSnapshotMutableState;->setValue(Ljava/lang/Object;)V
 
     .line 4
     .line 5
@@ -80,7 +81,7 @@
     return-void
 .end method
 
-.method public final s0()V
+.method public final q0()V
     .locals 2
 
     .line 1
@@ -88,7 +89,7 @@
 
     .line 2
     .line 3
-    iget-object v1, v0, Landroidx/compose/foundation/text/input/internal/s;->a:Landroidx/compose/foundation/text/input/internal/r;
+    iget-object v1, v0, Landroidx/compose/foundation/text/input/internal/s;->a:Landroidx/compose/foundation/text/input/internal/o;
 
     .line 4
     .line 5
@@ -96,7 +97,7 @@
 
     .line 6
     .line 7
-    iput-object p0, v0, Landroidx/compose/foundation/text/input/internal/s;->a:Landroidx/compose/foundation/text/input/internal/r;
+    iput-object p0, v0, Landroidx/compose/foundation/text/input/internal/s;->a:Landroidx/compose/foundation/text/input/internal/o;
 
     .line 8
     .line 9
@@ -112,23 +113,15 @@
 
     .line 13
     .line 14
-    invoke-virtual {v1}, Ljava/lang/Object;->toString()Ljava/lang/String;
+    invoke-direct {v0, v1}, Ljava/lang/IllegalStateException;-><init>(Ljava/lang/String;)V
 
     .line 15
     .line 16
     .line 17
-    move-result-object v1
-
-    .line 18
-    invoke-direct {v0, v1}, Ljava/lang/IllegalStateException;-><init>(Ljava/lang/String;)V
-
-    .line 19
-    .line 20
-    .line 21
     throw v0
 .end method
 
-.method public final t0()V
+.method public final r0()V
     .locals 1
 
     .line 1
@@ -136,7 +129,7 @@
 
     .line 2
     .line 3
-    invoke-virtual {v0, p0}, Landroidx/compose/foundation/text/input/internal/s;->i(Landroidx/compose/foundation/text/input/internal/r;)V
+    invoke-virtual {v0, p0}, Landroidx/compose/foundation/text/input/internal/s;->i(Landroidx/compose/foundation/text/input/internal/o;)V
 
     .line 4
     .line 5

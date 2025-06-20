@@ -1,5 +1,5 @@
 .class public final Landroidx/compose/ui/graphics/vector/i;
-.super Landroidx/compose/ui/graphics/vector/b0;
+.super Landroidx/compose/ui/graphics/vector/z;
 .source "SourceFile"
 
 
@@ -10,59 +10,56 @@
 
 .field public final e:F
 
-.field public final f:Z
+.field public final f:F
 
-.field public final g:Z
+.field public final g:F
 
 .field public final h:F
 
-.field public final i:F
-
 
 # direct methods
-.method public constructor <init>(FFFZZFF)V
-    .locals 2
+.method public constructor <init>(FFFFFF)V
+    .locals 3
 
     .line 1
-    const/4 v0, 0x3
+    const/4 v0, 0x1
 
     .line 2
     const/4 v1, 0x0
 
     .line 3
-    invoke-direct {p0, v1, v1, v0}, Landroidx/compose/ui/graphics/vector/b0;-><init>(ZZI)V
+    const/4 v2, 0x2
 
     .line 4
+    invoke-direct {p0, v2, v0, v1}, Landroidx/compose/ui/graphics/vector/z;-><init>(IZZ)V
+
     .line 5
     .line 6
+    .line 7
     iput p1, p0, Landroidx/compose/ui/graphics/vector/i;->c:F
 
-    .line 7
     .line 8
+    .line 9
     iput p2, p0, Landroidx/compose/ui/graphics/vector/i;->d:F
 
-    .line 9
     .line 10
+    .line 11
     iput p3, p0, Landroidx/compose/ui/graphics/vector/i;->e:F
 
-    .line 11
     .line 12
-    iput-boolean p4, p0, Landroidx/compose/ui/graphics/vector/i;->f:Z
-
     .line 13
-    .line 14
-    iput-boolean p5, p0, Landroidx/compose/ui/graphics/vector/i;->g:Z
+    iput p4, p0, Landroidx/compose/ui/graphics/vector/i;->f:F
 
+    .line 14
     .line 15
+    iput p5, p0, Landroidx/compose/ui/graphics/vector/i;->g:F
+
     .line 16
+    .line 17
     iput p6, p0, Landroidx/compose/ui/graphics/vector/i;->h:F
 
-    .line 17
     .line 18
-    iput p7, p0, Landroidx/compose/ui/graphics/vector/i;->i:F
-
     .line 19
-    .line 20
     return-void
 .end method
 
@@ -128,55 +125,50 @@
     return v2
 
     :cond_4
-    iget-boolean v1, p0, Landroidx/compose/ui/graphics/vector/i;->f:Z
+    iget v1, p0, Landroidx/compose/ui/graphics/vector/i;->f:F
 
-    iget-boolean v3, p1, Landroidx/compose/ui/graphics/vector/i;->f:Z
+    iget v3, p1, Landroidx/compose/ui/graphics/vector/i;->f:F
 
-    if-eq v1, v3, :cond_5
+    invoke-static {v1, v3}, Ljava/lang/Float;->compare(FF)I
+
+    move-result v1
+
+    if-eqz v1, :cond_5
 
     return v2
 
     :cond_5
-    iget-boolean v1, p0, Landroidx/compose/ui/graphics/vector/i;->g:Z
+    iget v1, p0, Landroidx/compose/ui/graphics/vector/i;->g:F
 
-    iget-boolean v3, p1, Landroidx/compose/ui/graphics/vector/i;->g:Z
+    iget v3, p1, Landroidx/compose/ui/graphics/vector/i;->g:F
 
-    if-eq v1, v3, :cond_6
+    invoke-static {v1, v3}, Ljava/lang/Float;->compare(FF)I
+
+    move-result v1
+
+    if-eqz v1, :cond_6
 
     return v2
 
     :cond_6
     iget v1, p0, Landroidx/compose/ui/graphics/vector/i;->h:F
 
-    iget v3, p1, Landroidx/compose/ui/graphics/vector/i;->h:F
-
-    invoke-static {v1, v3}, Ljava/lang/Float;->compare(FF)I
-
-    move-result v1
-
-    if-eqz v1, :cond_7
-
-    return v2
-
-    :cond_7
-    iget v1, p0, Landroidx/compose/ui/graphics/vector/i;->i:F
-
-    iget p1, p1, Landroidx/compose/ui/graphics/vector/i;->i:F
+    iget p1, p1, Landroidx/compose/ui/graphics/vector/i;->h:F
 
     invoke-static {v1, p1}, Ljava/lang/Float;->compare(FF)I
 
     move-result p1
 
-    if-eqz p1, :cond_8
+    if-eqz p1, :cond_7
 
     return v2
 
-    :cond_8
+    :cond_7
     return v0
 .end method
 
 .method public final hashCode()I
-    .locals 5
+    .locals 3
 
     .line 1
     iget v0, p0, Landroidx/compose/ui/graphics/vector/i;->c:F
@@ -203,7 +195,7 @@
 
     .line 12
     .line 13
-    invoke-static {v2, v0, v1}, Landroid/support/v4/media/session/a;->x(FII)I
+    invoke-static {v2, v0, v1}, Landroidx/appcompat/view/menu/F;->v(FII)I
 
     .line 14
     .line 15
@@ -215,7 +207,7 @@
 
     .line 18
     .line 19
-    invoke-static {v2, v0, v1}, Landroid/support/v4/media/session/a;->x(FII)I
+    invoke-static {v2, v0, v1}, Landroidx/appcompat/view/menu/F;->v(FII)I
 
     .line 20
     .line 21
@@ -223,89 +215,45 @@
     move-result v0
 
     .line 23
-    const/16 v2, 0x4d5
+    iget v2, p0, Landroidx/compose/ui/graphics/vector/i;->f:F
 
     .line 24
     .line 25
-    const/16 v3, 0x4cf
+    invoke-static {v2, v0, v1}, Landroidx/appcompat/view/menu/F;->v(FII)I
 
     .line 26
     .line 27
-    iget-boolean v4, p0, Landroidx/compose/ui/graphics/vector/i;->f:Z
-
     .line 28
+    move-result v0
+
     .line 29
-    if-eqz v4, :cond_0
+    iget v2, p0, Landroidx/compose/ui/graphics/vector/i;->g:F
 
     .line 30
     .line 31
-    const/16 v4, 0x4cf
+    invoke-static {v2, v0, v1}, Landroidx/appcompat/view/menu/F;->v(FII)I
 
     .line 32
     .line 33
-    goto :goto_0
-
     .line 34
-    :cond_0
-    const/16 v4, 0x4d5
+    move-result v0
 
     .line 35
-    .line 36
-    :goto_0
-    add-int/2addr v0, v4
+    iget v1, p0, Landroidx/compose/ui/graphics/vector/i;->h:F
 
+    .line 36
     .line 37
-    mul-int/lit8 v0, v0, 0x1f
+    invoke-static {v1}, Ljava/lang/Float;->floatToIntBits(F)I
 
     .line 38
     .line 39
-    iget-boolean v4, p0, Landroidx/compose/ui/graphics/vector/i;->g:Z
-
     .line 40
-    .line 41
-    if-eqz v4, :cond_1
-
-    .line 42
-    .line 43
-    const/16 v2, 0x4cf
-
-    .line 44
-    .line 45
-    :cond_1
-    add-int/2addr v0, v2
-
-    .line 46
-    mul-int/lit8 v0, v0, 0x1f
-
-    .line 47
-    .line 48
-    iget v2, p0, Landroidx/compose/ui/graphics/vector/i;->h:F
-
-    .line 49
-    .line 50
-    invoke-static {v2, v0, v1}, Landroid/support/v4/media/session/a;->x(FII)I
-
-    .line 51
-    .line 52
-    .line 53
-    move-result v0
-
-    .line 54
-    iget v1, p0, Landroidx/compose/ui/graphics/vector/i;->i:F
-
-    .line 55
-    .line 56
-    invoke-static {v1}, Ljava/lang/Float;->floatToIntBits(F)I
-
-    .line 57
-    .line 58
-    .line 59
     move-result v1
 
-    .line 60
+    .line 41
     add-int/2addr v1, v0
 
-    .line 61
+    .line 42
     return v1
 .end method
 
@@ -317,7 +265,7 @@
 
     .line 2
     .line 3
-    const-string v1, "ArcTo(horizontalEllipseRadius="
+    const-string v1, "CurveTo(x1="
 
     .line 4
     .line 5
@@ -335,7 +283,7 @@
     .line 11
     .line 12
     .line 13
-    const-string v1, ", verticalEllipseRadius="
+    const-string v1, ", y1="
 
     .line 14
     .line 15
@@ -353,7 +301,7 @@
     .line 21
     .line 22
     .line 23
-    const-string v1, ", theta="
+    const-string v1, ", x2="
 
     .line 24
     .line 25
@@ -371,7 +319,7 @@
     .line 31
     .line 32
     .line 33
-    const-string v1, ", isMoreThanHalf="
+    const-string v1, ", y2="
 
     .line 34
     .line 35
@@ -380,16 +328,16 @@
     .line 36
     .line 37
     .line 38
-    iget-boolean v1, p0, Landroidx/compose/ui/graphics/vector/i;->f:Z
+    iget v1, p0, Landroidx/compose/ui/graphics/vector/i;->f:F
 
     .line 39
     .line 40
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(F)Ljava/lang/StringBuilder;
 
     .line 41
     .line 42
     .line 43
-    const-string v1, ", isPositiveArc="
+    const-string v1, ", x3="
 
     .line 44
     .line 45
@@ -398,16 +346,16 @@
     .line 46
     .line 47
     .line 48
-    iget-boolean v1, p0, Landroidx/compose/ui/graphics/vector/i;->g:Z
+    iget v1, p0, Landroidx/compose/ui/graphics/vector/i;->g:F
 
     .line 49
     .line 50
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(F)Ljava/lang/StringBuilder;
 
     .line 51
     .line 52
     .line 53
-    const-string v1, ", arcStartX="
+    const-string v1, ", y3="
 
     .line 54
     .line 55
@@ -420,35 +368,17 @@
 
     .line 59
     .line 60
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(F)Ljava/lang/StringBuilder;
+    const/16 v2, 0x29
 
     .line 61
     .line 62
-    .line 63
-    const-string v1, ", arcStartY="
+    invoke-static {v0, v1, v2}, Landroidx/appcompat/view/menu/F;->G(Ljava/lang/StringBuilder;FC)Ljava/lang/String;
 
+    .line 63
     .line 64
     .line 65
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    .line 66
-    .line 67
-    .line 68
-    iget v1, p0, Landroidx/compose/ui/graphics/vector/i;->i:F
-
-    .line 69
-    .line 70
-    const/16 v2, 0x29
-
-    .line 71
-    .line 72
-    invoke-static {v0, v1, v2}, Landroid/support/v4/media/session/a;->E(Ljava/lang/StringBuilder;FC)Ljava/lang/String;
-
-    .line 73
-    .line 74
-    .line 75
     move-result-object v0
 
-    .line 76
+    .line 66
     return-object v0
 .end method

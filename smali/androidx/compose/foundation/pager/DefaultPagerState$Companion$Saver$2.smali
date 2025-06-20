@@ -3,14 +3,14 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lzh/c;
+.implements Lka/c;
 
 
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "Lkotlin/jvm/internal/Lambda;",
-        "Lzh/c;"
+        "Lka/c;"
     }
 .end annotation
 
@@ -113,7 +113,7 @@
     invoke-direct {v3, p1}, Landroidx/compose/foundation/pager/DefaultPagerState$Companion$Saver$2$1;-><init>(Ljava/util/List;)V
 
     .line 6
-    invoke-direct {v0, v1, v2, v3}, Landroidx/compose/foundation/pager/b;-><init>(IFLzh/a;)V
+    invoke-direct {v0, v1, v2, v3}, Landroidx/compose/foundation/pager/b;-><init>(IFLka/a;)V
 
     return-object v0
 .end method

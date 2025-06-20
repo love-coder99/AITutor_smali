@@ -1,10 +1,10 @@
-.class public final Lz1/e;
+.class public final LZ1/E;
 .super Ljava/lang/Object;
 .source "SourceFile"
 
 
-# static fields
-.field public static final a:Lz1/e;
+# instance fields
+.field public final a:Landroid/content/Context;
 
 
 # direct methods
@@ -12,44 +12,30 @@
     .locals 1
 
     .line 1
-    new-instance v0, Lz1/e;
+    new-instance v0, Ljava/lang/ThreadLocal;
 
     .line 2
     .line 3
-    invoke-direct {v0}, Ljava/lang/Object;-><init>()V
+    invoke-direct {v0}, Ljava/lang/ThreadLocal;-><init>()V
 
     .line 4
     .line 5
     .line 6
-    sput-object v0, Lz1/e;->a:Lz1/e;
-
-    .line 7
-    .line 8
     return-void
 .end method
 
-
-# virtual methods
-.method public final a(Landroid/graphics/Canvas;Ljava/lang/CharSequence;IIIIFFZLandroid/graphics/Paint;)V
+.method public constructor <init>(Landroid/content/Context;)V
     .locals 0
 
     .line 1
-    invoke-static/range {p1 .. p10}, Lw4/d;->e(Landroid/graphics/Canvas;Ljava/lang/CharSequence;IIIIFFZLandroid/graphics/Paint;)V
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 2
     .line 3
     .line 4
-    return-void
-.end method
+    iput-object p1, p0, LZ1/E;->a:Landroid/content/Context;
 
-.method public final b(Landroid/graphics/Canvas;[CIIIIFFZLandroid/graphics/Paint;)V
-    .locals 0
-
-    .line 1
-    invoke-static/range {p1 .. p10}, Lw4/d;->f(Landroid/graphics/Canvas;[CIIIIFFZLandroid/graphics/Paint;)V
-
-    .line 2
-    .line 3
-    .line 4
+    .line 5
+    .line 6
     return-void
 .end method

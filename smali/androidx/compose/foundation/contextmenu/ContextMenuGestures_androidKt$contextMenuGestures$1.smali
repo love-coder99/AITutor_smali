@@ -3,25 +3,35 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lzh/e;
+.implements Lka/e;
 
 
 # annotations
+.annotation runtime Lca/c;
+    c = "androidx.compose.foundation.contextmenu.ContextMenuGestures_androidKt$contextMenuGestures$1"
+    f = "ContextMenuGestures.android.kt"
+    l = {
+        0x2c
+    }
+    m = "invokeSuspend"
+.end annotation
+
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "Lkotlin/coroutines/jvm/internal/SuspendLambda;",
-        "Lzh/e;"
+        "Lka/e;"
     }
 .end annotation
 
 .annotation runtime Lkotlin/Metadata;
     d1 = {
-        "\u0000\n\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\u0010\u0002\u001a\u00020\u0001*\u00020\u0000H\u008a@"
+        "\u0000\u000c\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0008\u0002\u0010\u0002\u001a\u00020\u0001*\u00020\u0000H\u008a@\u00a2\u0006\u0004\u0008\u0002\u0010\u0003"
     }
     d2 = {
-        "Landroidx/compose/ui/input/pointer/x;",
-        "Lqh/r;",
-        "<anonymous>"
+        "Landroidx/compose/ui/input/pointer/r;",
+        "LX9/j;",
+        "<anonymous>",
+        "(Landroidx/compose/ui/input/pointer/r;)V"
     }
     k = 0x3
     mv = {
@@ -29,15 +39,6 @@
         0x8,
         0x0
     }
-.end annotation
-
-.annotation runtime Lth/c;
-    c = "androidx.compose.foundation.contextmenu.ContextMenuGestures_androidKt$contextMenuGestures$1"
-    f = "ContextMenuGestures.android.kt"
-    l = {
-        0x2c
-    }
-    m = "invokeSuspend"
 .end annotation
 
 
@@ -83,7 +84,7 @@
             "Lkotlin/coroutines/Continuation<",
             "*>;)",
             "Lkotlin/coroutines/Continuation<",
-            "Lqh/r;",
+            "LX9/j;",
             ">;"
         }
     .end annotation
@@ -99,15 +100,15 @@
     return-object v0
 .end method
 
-.method public final invoke(Landroidx/compose/ui/input/pointer/x;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
+.method public final invoke(Landroidx/compose/ui/input/pointer/r;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
     .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
-            "Landroidx/compose/ui/input/pointer/x;",
+            "Landroidx/compose/ui/input/pointer/r;",
             "Lkotlin/coroutines/Continuation<",
             "-",
-            "Lqh/r;",
+            "LX9/j;",
             ">;)",
             "Ljava/lang/Object;"
         }
@@ -120,7 +121,7 @@
 
     check-cast p1, Landroidx/compose/foundation/contextmenu/ContextMenuGestures_androidKt$contextMenuGestures$1;
 
-    sget-object p2, Lqh/r;->a:Lqh/r;
+    sget-object p2, LX9/j;->a:LX9/j;
 
     invoke-virtual {p1, p2}, Landroidx/compose/foundation/contextmenu/ContextMenuGestures_androidKt$contextMenuGestures$1;->invokeSuspend(Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -133,11 +134,11 @@
     .locals 0
 
     .line 2
-    check-cast p1, Landroidx/compose/ui/input/pointer/x;
+    check-cast p1, Landroidx/compose/ui/input/pointer/r;
 
     check-cast p2, Lkotlin/coroutines/Continuation;
 
-    invoke-virtual {p0, p1, p2}, Landroidx/compose/foundation/contextmenu/ContextMenuGestures_androidKt$contextMenuGestures$1;->invoke(Landroidx/compose/ui/input/pointer/x;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
+    invoke-virtual {p0, p1, p2}, Landroidx/compose/foundation/contextmenu/ContextMenuGestures_androidKt$contextMenuGestures$1;->invoke(Landroidx/compose/ui/input/pointer/r;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
 
     move-result-object p1
 
@@ -156,7 +157,7 @@
 
     .line 4
     .line 5
-    sget-object v2, Lqh/r;->a:Lqh/r;
+    sget-object v2, LX9/j;->a:LX9/j;
 
     .line 6
     .line 7
@@ -206,7 +207,7 @@
 
     .line 28
     .line 29
-    check-cast p1, Landroidx/compose/ui/input/pointer/x;
+    check-cast p1, Landroidx/compose/ui/input/pointer/r;
 
     .line 30
     .line 31
@@ -234,12 +235,12 @@
     const/4 v4, 0x0
 
     .line 43
-    invoke-direct {v3, v1, v4}, Landroidx/compose/foundation/contextmenu/ContextMenuGestures_androidKt$onRightClickDown$2;-><init>(Lzh/c;Lkotlin/coroutines/Continuation;)V
+    invoke-direct {v3, v1, v4}, Landroidx/compose/foundation/contextmenu/ContextMenuGestures_androidKt$onRightClickDown$2;-><init>(Lka/c;Lkotlin/coroutines/Continuation;)V
 
     .line 44
     .line 45
     .line 46
-    invoke-static {p1, v3, p0}, Landroidx/compose/foundation/gestures/w;->b(Landroidx/compose/ui/input/pointer/x;Lzh/e;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
+    invoke-static {p1, v3, p0}, Landroidx/compose/foundation/gestures/y;->b(Landroidx/compose/ui/input/pointer/r;Lka/e;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
 
     .line 47
     .line 48

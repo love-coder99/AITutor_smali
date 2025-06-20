@@ -3,14 +3,14 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lzh/a;
+.implements Lka/a;
 
 
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "Lkotlin/jvm/internal/Lambda;",
-        "Lzh/a;"
+        "Lka/a;"
     }
 .end annotation
 
@@ -37,22 +37,22 @@
 # instance fields
 .field final synthetic $focusRequester:Landroidx/compose/ui/focus/q;
 
-.field final synthetic $imeOptions:Landroidx/compose/ui/text/input/o;
+.field final synthetic $imeOptions:Landroidx/compose/ui/text/input/m;
 
 .field final synthetic $legacyTextInputServiceAdapter:Landroidx/compose/foundation/text/input/internal/s;
 
-.field final synthetic $state:Landroidx/compose/foundation/text/t;
+.field final synthetic $state:Landroidx/compose/foundation/text/s;
 
 
 # direct methods
-.method public constructor <init>(Landroidx/compose/foundation/text/t;Landroidx/compose/ui/focus/q;Landroidx/compose/ui/text/input/o;Landroidx/compose/foundation/text/input/internal/s;)V
+.method public constructor <init>(Landroidx/compose/foundation/text/s;Landroidx/compose/ui/focus/q;Landroidx/compose/ui/text/input/m;Landroidx/compose/foundation/text/input/internal/s;)V
     .locals 0
 
-    iput-object p1, p0, Landroidx/compose/foundation/text/CoreTextFieldKt$CoreTextField$stylusHandwritingModifier$1$1;->$state:Landroidx/compose/foundation/text/t;
+    iput-object p1, p0, Landroidx/compose/foundation/text/CoreTextFieldKt$CoreTextField$stylusHandwritingModifier$1$1;->$state:Landroidx/compose/foundation/text/s;
 
     iput-object p2, p0, Landroidx/compose/foundation/text/CoreTextFieldKt$CoreTextField$stylusHandwritingModifier$1$1;->$focusRequester:Landroidx/compose/ui/focus/q;
 
-    iput-object p3, p0, Landroidx/compose/foundation/text/CoreTextFieldKt$CoreTextField$stylusHandwritingModifier$1$1;->$imeOptions:Landroidx/compose/ui/text/input/o;
+    iput-object p3, p0, Landroidx/compose/foundation/text/CoreTextFieldKt$CoreTextField$stylusHandwritingModifier$1$1;->$imeOptions:Landroidx/compose/ui/text/input/m;
 
     iput-object p4, p0, Landroidx/compose/foundation/text/CoreTextFieldKt$CoreTextField$stylusHandwritingModifier$1$1;->$legacyTextInputServiceAdapter:Landroidx/compose/foundation/text/input/internal/s;
 
@@ -68,67 +68,72 @@
 .method public final invoke()Ljava/lang/Boolean;
     .locals 2
 
-    iget-object v0, p0, Landroidx/compose/foundation/text/CoreTextFieldKt$CoreTextField$stylusHandwritingModifier$1$1;->$state:Landroidx/compose/foundation/text/t;
-
     .line 2
-    invoke-virtual {v0}, Landroidx/compose/foundation/text/t;->b()Z
+    iget-object v0, p0, Landroidx/compose/foundation/text/CoreTextFieldKt$CoreTextField$stylusHandwritingModifier$1$1;->$state:Landroidx/compose/foundation/text/s;
+
+    invoke-virtual {v0}, Landroidx/compose/foundation/text/s;->b()Z
 
     move-result v0
 
     if-nez v0, :cond_0
 
+    .line 3
     iget-object v0, p0, Landroidx/compose/foundation/text/CoreTextFieldKt$CoreTextField$stylusHandwritingModifier$1$1;->$focusRequester:Landroidx/compose/ui/focus/q;
 
-    .line 3
+    .line 4
     invoke-virtual {v0}, Landroidx/compose/ui/focus/q;->b()V
 
+    .line 5
     :cond_0
-    iget-object v0, p0, Landroidx/compose/foundation/text/CoreTextFieldKt$CoreTextField$stylusHandwritingModifier$1$1;->$imeOptions:Landroidx/compose/ui/text/input/o;
+    iget-object v0, p0, Landroidx/compose/foundation/text/CoreTextFieldKt$CoreTextField$stylusHandwritingModifier$1$1;->$imeOptions:Landroidx/compose/ui/text/input/m;
 
-    .line 4
-    iget v0, v0, Landroidx/compose/ui/text/input/o;->d:I
+    .line 6
+    iget v0, v0, Landroidx/compose/ui/text/input/m;->d:I
 
     const/4 v1, 0x7
 
-    .line 5
-    invoke-static {v0, v1}, Landroidx/compose/ui/text/input/s;->a(II)Z
+    .line 7
+    invoke-static {v0, v1}, Landroidx/compose/ui/text/input/p;->a(II)Z
 
     move-result v0
 
     if-nez v0, :cond_1
 
-    iget-object v0, p0, Landroidx/compose/foundation/text/CoreTextFieldKt$CoreTextField$stylusHandwritingModifier$1$1;->$imeOptions:Landroidx/compose/ui/text/input/o;
+    .line 8
+    iget-object v0, p0, Landroidx/compose/foundation/text/CoreTextFieldKt$CoreTextField$stylusHandwritingModifier$1$1;->$imeOptions:Landroidx/compose/ui/text/input/m;
 
-    .line 6
-    iget v0, v0, Landroidx/compose/ui/text/input/o;->d:I
+    .line 9
+    iget v0, v0, Landroidx/compose/ui/text/input/m;->d:I
 
     const/16 v1, 0x8
 
-    .line 7
-    invoke-static {v0, v1}, Landroidx/compose/ui/text/input/s;->a(II)Z
+    .line 10
+    invoke-static {v0, v1}, Landroidx/compose/ui/text/input/p;->a(II)Z
 
     move-result v0
 
     if-nez v0, :cond_1
 
+    .line 11
     iget-object v0, p0, Landroidx/compose/foundation/text/CoreTextFieldKt$CoreTextField$stylusHandwritingModifier$1$1;->$legacyTextInputServiceAdapter:Landroidx/compose/foundation/text/input/internal/s;
 
     check-cast v0, Landroidx/compose/foundation/text/input/internal/b;
 
-    .line 8
-    invoke-virtual {v0}, Landroidx/compose/foundation/text/input/internal/b;->j()Lkotlinx/coroutines/flow/e0;
+    .line 12
+    invoke-virtual {v0}, Landroidx/compose/foundation/text/input/internal/b;->j()Lkotlinx/coroutines/flow/C;
 
     move-result-object v0
 
     if-eqz v0, :cond_1
 
-    sget-object v1, Lqh/r;->a:Lqh/r;
+    .line 13
+    sget-object v1, LX9/j;->a:LX9/j;
 
-    check-cast v0, Lkotlinx/coroutines/flow/m0;
+    check-cast v0, Lkotlinx/coroutines/flow/K;
 
-    .line 9
-    invoke-virtual {v0, v1}, Lkotlinx/coroutines/flow/m0;->d(Ljava/lang/Object;)Z
+    invoke-virtual {v0, v1}, Lkotlinx/coroutines/flow/K;->d(Ljava/lang/Object;)Z
 
+    .line 14
     :cond_1
     sget-object v0, Ljava/lang/Boolean;->TRUE:Ljava/lang/Boolean;
 

@@ -7,17 +7,17 @@
 
 
 # instance fields
-.field public final b:Landroidx/compose/ui/graphics/x0;
+.field public final b:Landroidx/compose/ui/graphics/X;
 
 .field public final c:F
 
 .field public final d:Landroidx/compose/runtime/ParcelableSnapshotMutableState;
 
-.field public final f:Landroidx/compose/runtime/k0;
+.field public final f:Landroidx/compose/runtime/E;
 
 
 # direct methods
-.method public constructor <init>(Landroidx/compose/ui/graphics/x0;F)V
+.method public constructor <init>(Landroidx/compose/ui/graphics/X;F)V
     .locals 2
 
     .line 1
@@ -26,7 +26,7 @@
     .line 2
     .line 3
     .line 4
-    iput-object p1, p0, Landroidx/compose/ui/text/platform/style/b;->b:Landroidx/compose/ui/graphics/x0;
+    iput-object p1, p0, Landroidx/compose/ui/text/platform/style/b;->b:Landroidx/compose/ui/graphics/X;
 
     .line 5
     .line 6
@@ -34,7 +34,7 @@
 
     .line 7
     .line 8
-    new-instance p1, Ln1/g;
+    new-instance p1, Lr0/f;
 
     .line 9
     .line 10
@@ -45,16 +45,16 @@
     .line 13
     .line 14
     .line 15
-    invoke-direct {p1, v0, v1}, Ln1/g;-><init>(J)V
+    invoke-direct {p1, v0, v1}, Lr0/f;-><init>(J)V
 
     .line 16
     .line 17
     .line 18
-    sget-object p2, Landroidx/compose/runtime/g3;->a:Landroidx/compose/runtime/g3;
+    sget-object p2, Landroidx/compose/runtime/T;->h:Landroidx/compose/runtime/T;
 
     .line 19
     .line 20
-    invoke-static {p1, p2}, Lma/a;->Z(Ljava/lang/Object;Landroidx/compose/runtime/u2;)Landroidx/compose/runtime/ParcelableSnapshotMutableState;
+    invoke-static {p1, p2}, Landroidx/compose/runtime/o;->R(Ljava/lang/Object;Landroidx/compose/runtime/A0;)Landroidx/compose/runtime/ParcelableSnapshotMutableState;
 
     .line 21
     .line 22
@@ -75,7 +75,7 @@
     .line 29
     .line 30
     .line 31
-    invoke-static {p1}, Lma/a;->C(Lzh/a;)Landroidx/compose/runtime/k0;
+    invoke-static {p1}, Landroidx/compose/runtime/o;->I(Lka/a;)Landroidx/compose/runtime/E;
 
     .line 32
     .line 33
@@ -83,7 +83,7 @@
     move-result-object p1
 
     .line 35
-    iput-object p1, p0, Landroidx/compose/ui/text/platform/style/b;->f:Landroidx/compose/runtime/k0;
+    iput-object p1, p0, Landroidx/compose/ui/text/platform/style/b;->f:Landroidx/compose/runtime/E;
 
     .line 36
     .line 37
@@ -100,16 +100,16 @@
 
     .line 2
     .line 3
-    invoke-static {p1, v0}, Lb0/h;->V(Landroid/text/TextPaint;F)V
+    invoke-static {p1, v0}, Landroidx/compose/ui/text/platform/h;->b(Landroid/text/TextPaint;F)V
 
     .line 4
     .line 5
     .line 6
-    iget-object v0, p0, Landroidx/compose/ui/text/platform/style/b;->f:Landroidx/compose/runtime/k0;
+    iget-object v0, p0, Landroidx/compose/ui/text/platform/style/b;->f:Landroidx/compose/runtime/E;
 
     .line 7
     .line 8
-    invoke-virtual {v0}, Landroidx/compose/runtime/k0;->getValue()Ljava/lang/Object;
+    invoke-virtual {v0}, Landroidx/compose/runtime/E;->getValue()Ljava/lang/Object;
 
     .line 9
     .line 10

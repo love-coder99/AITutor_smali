@@ -70,9 +70,9 @@
 .method public a([BII)I
     .locals 2
 
+    .line 8
     iget-object v0, p0, Lcom/applovin/impl/fl;->a:Lcom/applovin/impl/h5;
 
-    .line 8
     invoke-interface {v0, p1, p2, p3}, Lcom/applovin/impl/f5;->a([BII)I
 
     move-result p1
@@ -81,6 +81,7 @@
 
     if-eq p1, p2, :cond_0
 
+    .line 9
     iget-wide p2, p0, Lcom/applovin/impl/fl;->b:J
 
     int-to-long v0, p1
@@ -108,9 +109,9 @@
 
     iput-object v0, p0, Lcom/applovin/impl/fl;->d:Ljava/util/Map;
 
+    .line 5
     iget-object v0, p0, Lcom/applovin/impl/fl;->a:Lcom/applovin/impl/h5;
 
-    .line 5
     invoke-interface {v0, p1}, Lcom/applovin/impl/h5;->a(Lcom/applovin/impl/k5;)J
 
     move-result-wide v0
@@ -144,9 +145,9 @@
     .line 1
     invoke-static {p1}, Lcom/applovin/impl/b1;->a(Ljava/lang/Object;)Ljava/lang/Object;
 
+    .line 2
     iget-object v0, p0, Lcom/applovin/impl/fl;->a:Lcom/applovin/impl/h5;
 
-    .line 2
     invoke-interface {v0, p1}, Lcom/applovin/impl/h5;->a(Lcom/applovin/impl/xo;)V
 
     return-void
@@ -209,23 +210,32 @@
 .method public g()J
     .locals 2
 
+    .line 1
     iget-wide v0, p0, Lcom/applovin/impl/fl;->b:J
 
+    .line 2
+    .line 3
     return-wide v0
 .end method
 
 .method public h()Landroid/net/Uri;
     .locals 1
 
+    .line 1
     iget-object v0, p0, Lcom/applovin/impl/fl;->c:Landroid/net/Uri;
 
+    .line 2
+    .line 3
     return-object v0
 .end method
 
 .method public i()Ljava/util/Map;
     .locals 1
 
+    .line 1
     iget-object v0, p0, Lcom/applovin/impl/fl;->d:Ljava/util/Map;
 
+    .line 2
+    .line 3
     return-object v0
 .end method

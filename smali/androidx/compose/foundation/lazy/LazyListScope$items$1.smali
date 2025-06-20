@@ -3,7 +3,7 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lzh/c;
+.implements Lka/c;
 
 
 # annotations

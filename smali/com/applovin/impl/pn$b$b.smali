@@ -54,9 +54,9 @@
 .method public a(Lcom/applovin/mediation/MaxDebuggerCmpNetworksListActivity;)V
     .locals 8
 
+    .line 2
     iget-object v0, p0, Lcom/applovin/impl/pn$b$b;->a:Lcom/applovin/impl/pn$b;
 
-    .line 2
     iget-object v0, v0, Lcom/applovin/impl/pn$b;->c:Lcom/applovin/impl/pn;
 
     invoke-static {v0}, Lcom/applovin/impl/pn;->c(Lcom/applovin/impl/pn;)Ljava/util/List;

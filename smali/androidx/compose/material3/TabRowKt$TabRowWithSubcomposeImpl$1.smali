@@ -3,14 +3,14 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lzh/e;
+.implements Lka/e;
 
 
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "Lkotlin/jvm/internal/Lambda;",
-        "Lzh/e;"
+        "Lka/e;"
     }
 .end annotation
 
@@ -19,9 +19,9 @@
         "\u0000\u0008\n\u0002\u0018\u0002\n\u0002\u0008\u0003\u0010\u0003\u001a\u00020\u0000H\u000b\u00a2\u0006\u0004\u0008\u0001\u0010\u0002"
     }
     d2 = {
-        "Lqh/r;",
+        "LX9/j;",
         "invoke",
-        "(Landroidx/compose/runtime/l;I)V",
+        "(Landroidx/compose/runtime/j;I)V",
         "<anonymous>"
     }
     k = 0x3
@@ -34,55 +34,65 @@
 
 
 # instance fields
-.field final synthetic $divider:Lzh/e;
+.field final synthetic $divider:Lka/e;
     .annotation system Ldalvik/annotation/Signature;
         value = {
-            "Lzh/e;"
+            "Lka/e;"
         }
     .end annotation
 .end field
 
-.field final synthetic $indicator:Lzh/f;
+.field final synthetic $indicator:Lka/f;
     .annotation system Ldalvik/annotation/Signature;
         value = {
-            "Lzh/f;"
+            "Lka/f;"
         }
     .end annotation
 .end field
 
-.field final synthetic $tabs:Lzh/e;
+.field final synthetic $tabs:Lka/e;
     .annotation system Ldalvik/annotation/Signature;
         value = {
-            "Lzh/e;"
+            "Lka/e;"
         }
     .end annotation
 .end field
 
 
 # direct methods
-.method public constructor <init>(Lzh/e;Lzh/e;Lzh/f;)V
+.method public constructor <init>(Lka/e;Lka/e;Lka/f;)V
     .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
-            "Lzh/e;",
-            "Lzh/e;",
-            "Lzh/f;",
+            "Lka/e;",
+            "Lka/e;",
+            "Lka/f;",
             ")V"
         }
     .end annotation
 
     .line 1
-    iput-object p1, p0, Landroidx/compose/material3/TabRowKt$TabRowWithSubcomposeImpl$1;->$tabs:Lzh/e;
+    iput-object p1, p0, Landroidx/compose/material3/TabRowKt$TabRowWithSubcomposeImpl$1;->$tabs:Lka/e;
 
-    iput-object p2, p0, Landroidx/compose/material3/TabRowKt$TabRowWithSubcomposeImpl$1;->$divider:Lzh/e;
+    .line 2
+    .line 3
+    iput-object p2, p0, Landroidx/compose/material3/TabRowKt$TabRowWithSubcomposeImpl$1;->$divider:Lka/e;
 
-    iput-object p3, p0, Landroidx/compose/material3/TabRowKt$TabRowWithSubcomposeImpl$1;->$indicator:Lzh/f;
+    .line 4
+    .line 5
+    iput-object p3, p0, Landroidx/compose/material3/TabRowKt$TabRowWithSubcomposeImpl$1;->$indicator:Lka/f;
 
+    .line 6
+    .line 7
     const/4 p1, 0x2
 
+    .line 8
     invoke-direct {p0, p1}, Lkotlin/jvm/internal/Lambda;-><init>(I)V
 
+    .line 9
+    .line 10
+    .line 11
     return-void
 .end method
 
@@ -92,7 +102,7 @@
     .locals 0
 
     .line 1
-    check-cast p1, Landroidx/compose/runtime/l;
+    check-cast p1, Landroidx/compose/runtime/j;
 
     check-cast p2, Ljava/lang/Number;
 
@@ -100,14 +110,14 @@
 
     move-result p2
 
-    invoke-virtual {p0, p1, p2}, Landroidx/compose/material3/TabRowKt$TabRowWithSubcomposeImpl$1;->invoke(Landroidx/compose/runtime/l;I)V
+    invoke-virtual {p0, p1, p2}, Landroidx/compose/material3/TabRowKt$TabRowWithSubcomposeImpl$1;->invoke(Landroidx/compose/runtime/j;I)V
 
-    sget-object p1, Lqh/r;->a:Lqh/r;
+    sget-object p1, LX9/j;->a:LX9/j;
 
     return-object p1
 .end method
 
-.method public final invoke(Landroidx/compose/runtime/l;I)V
+.method public final invoke(Landroidx/compose/runtime/j;I)V
     .locals 5
 
     and-int/lit8 p2, p2, 0x3
@@ -116,12 +126,12 @@
 
     if-ne p2, v0, :cond_1
 
+    .line 2
     move-object p2, p1
 
-    check-cast p2, Landroidx/compose/runtime/p;
+    check-cast p2, Landroidx/compose/runtime/n;
 
-    .line 2
-    invoke-virtual {p2}, Landroidx/compose/runtime/p;->y()Z
+    invoke-virtual {p2}, Landroidx/compose/runtime/n;->x()Z
 
     move-result v0
 
@@ -131,75 +141,76 @@
 
     .line 3
     :cond_0
-    invoke-virtual {p2}, Landroidx/compose/runtime/p;->N()V
+    invoke-virtual {p2}, Landroidx/compose/runtime/n;->L()V
 
     goto :goto_1
 
     .line 4
     :cond_1
     :goto_0
-    sget-object p2, Landroidx/compose/foundation/layout/y0;->a:Landroidx/compose/foundation/layout/FillElement;
-
-    iget-object v0, p0, Landroidx/compose/material3/TabRowKt$TabRowWithSubcomposeImpl$1;->$tabs:Lzh/e;
-
-    check-cast p1, Landroidx/compose/runtime/p;
+    sget-object p2, Landroidx/compose/foundation/layout/W;->a:Landroidx/compose/foundation/layout/FillElement;
 
     .line 5
-    invoke-virtual {p1, v0}, Landroidx/compose/runtime/p;->g(Ljava/lang/Object;)Z
+    iget-object v0, p0, Landroidx/compose/material3/TabRowKt$TabRowWithSubcomposeImpl$1;->$tabs:Lka/e;
+
+    check-cast p1, Landroidx/compose/runtime/n;
+
+    invoke-virtual {p1, v0}, Landroidx/compose/runtime/n;->f(Ljava/lang/Object;)Z
 
     move-result v0
 
-    iget-object v1, p0, Landroidx/compose/material3/TabRowKt$TabRowWithSubcomposeImpl$1;->$divider:Lzh/e;
+    iget-object v1, p0, Landroidx/compose/material3/TabRowKt$TabRowWithSubcomposeImpl$1;->$divider:Lka/e;
 
-    invoke-virtual {p1, v1}, Landroidx/compose/runtime/p;->g(Ljava/lang/Object;)Z
-
-    move-result v1
-
-    or-int/2addr v0, v1
-
-    iget-object v1, p0, Landroidx/compose/material3/TabRowKt$TabRowWithSubcomposeImpl$1;->$indicator:Lzh/f;
-
-    invoke-virtual {p1, v1}, Landroidx/compose/runtime/p;->g(Ljava/lang/Object;)Z
+    invoke-virtual {p1, v1}, Landroidx/compose/runtime/n;->f(Ljava/lang/Object;)Z
 
     move-result v1
 
     or-int/2addr v0, v1
 
-    iget-object v1, p0, Landroidx/compose/material3/TabRowKt$TabRowWithSubcomposeImpl$1;->$tabs:Lzh/e;
+    iget-object v1, p0, Landroidx/compose/material3/TabRowKt$TabRowWithSubcomposeImpl$1;->$indicator:Lka/f;
 
-    iget-object v2, p0, Landroidx/compose/material3/TabRowKt$TabRowWithSubcomposeImpl$1;->$divider:Lzh/e;
+    invoke-virtual {p1, v1}, Landroidx/compose/runtime/n;->f(Ljava/lang/Object;)Z
 
-    iget-object v3, p0, Landroidx/compose/material3/TabRowKt$TabRowWithSubcomposeImpl$1;->$indicator:Lzh/f;
+    move-result v1
+
+    or-int/2addr v0, v1
+
+    iget-object v1, p0, Landroidx/compose/material3/TabRowKt$TabRowWithSubcomposeImpl$1;->$tabs:Lka/e;
+
+    iget-object v2, p0, Landroidx/compose/material3/TabRowKt$TabRowWithSubcomposeImpl$1;->$divider:Lka/e;
+
+    iget-object v3, p0, Landroidx/compose/material3/TabRowKt$TabRowWithSubcomposeImpl$1;->$indicator:Lka/f;
 
     .line 6
-    invoke-virtual {p1}, Landroidx/compose/runtime/p;->I()Ljava/lang/Object;
+    invoke-virtual {p1}, Landroidx/compose/runtime/n;->G()Ljava/lang/Object;
 
     move-result-object v4
 
     if-nez v0, :cond_2
 
-    sget-object v0, Landroidx/compose/runtime/k;->b:Lxd/e;
+    .line 7
+    sget-object v0, Landroidx/compose/runtime/i;->a:Landroidx/compose/runtime/T;
 
     if-ne v4, v0, :cond_3
 
-    .line 7
+    .line 8
     :cond_2
     new-instance v4, Landroidx/compose/material3/TabRowKt$TabRowWithSubcomposeImpl$1$1$1;
 
-    invoke-direct {v4, v1, v2, v3}, Landroidx/compose/material3/TabRowKt$TabRowWithSubcomposeImpl$1$1$1;-><init>(Lzh/e;Lzh/e;Lzh/f;)V
-
-    .line 8
-    invoke-virtual {p1, v4}, Landroidx/compose/runtime/p;->d0(Ljava/lang/Object;)V
+    invoke-direct {v4, v1, v2, v3}, Landroidx/compose/material3/TabRowKt$TabRowWithSubcomposeImpl$1$1$1;-><init>(Lka/e;Lka/e;Lka/f;)V
 
     .line 9
+    invoke-virtual {p1, v4}, Landroidx/compose/runtime/n;->b0(Ljava/lang/Object;)V
+
+    .line 10
     :cond_3
-    check-cast v4, Lzh/e;
+    check-cast v4, Lka/e;
 
     const/4 v0, 0x6
 
     const/4 v1, 0x0
 
-    invoke-static {v0, v1, p1, p2, v4}, Landroidx/compose/ui/layout/t;->c(IILandroidx/compose/runtime/l;Landroidx/compose/ui/o;Lzh/e;)V
+    invoke-static {v0, v1, p1, p2, v4}, Landroidx/compose/ui/layout/q;->c(IILandroidx/compose/runtime/j;Landroidx/compose/ui/o;Lka/e;)V
 
     :goto_1
     return-void

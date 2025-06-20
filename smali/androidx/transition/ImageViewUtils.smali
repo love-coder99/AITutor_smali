@@ -23,13 +23,25 @@
 .method private constructor <init>()V
     .locals 0
 
+    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
+    .line 2
+    .line 3
+    .line 4
     return-void
 .end method
 
 .method public static animateTransform(Landroid/widget/ImageView;Landroid/graphics/Matrix;)V
     .locals 3
+    .param p0    # Landroid/widget/ImageView;
+        .annotation build Landroidx/annotation/NonNull;
+        .end annotation
+    .end param
+    .param p1    # Landroid/graphics/Matrix;
+        .annotation build Landroidx/annotation/Nullable;
+        .end annotation
+    .end param
 
     .line 1
     sget v0, Landroid/os/Build$VERSION;->SDK_INT:I
@@ -210,6 +222,14 @@
 
 .method private static hiddenAnimateTransform(Landroid/widget/ImageView;Landroid/graphics/Matrix;)V
     .locals 1
+    .param p0    # Landroid/widget/ImageView;
+        .annotation build Landroidx/annotation/NonNull;
+        .end annotation
+    .end param
+    .param p1    # Landroid/graphics/Matrix;
+        .annotation build Landroidx/annotation/Nullable;
+        .end annotation
+    .end param
 
     .line 1
     sget-boolean v0, Landroidx/transition/ImageViewUtils;->sTryHiddenAnimateTransform:Z

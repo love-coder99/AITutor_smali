@@ -226,7 +226,7 @@
     move-result-object v2
 
     .line 36
-    sget v3, Lg/a;->actionModeShareDrawable:I
+    sget v3, Li/a;->actionModeShareDrawable:I
 
     .line 37
     .line 38
@@ -246,7 +246,7 @@
 
     .line 45
     .line 46
-    invoke-static {v2, v1}, La0/r;->o(Landroid/content/Context;I)Landroid/graphics/drawable/Drawable;
+    invoke-static {v2, v1}, Lcom/google/android/gms/internal/measurement/Q1;->l(Landroid/content/Context;I)Landroid/graphics/drawable/Drawable;
 
     .line 47
     .line 48
@@ -264,7 +264,7 @@
     .line 54
     .line 55
     .line 56
-    sget v1, Lg/h;->abc_shareactionprovider_share_with_application:I
+    sget v1, Li/h;->abc_shareactionprovider_share_with_application:I
 
     .line 57
     .line 58
@@ -273,7 +273,7 @@
     .line 59
     .line 60
     .line 61
-    sget v1, Lg/h;->abc_shareactionprovider_share_with:I
+    sget v1, Li/h;->abc_shareactionprovider_share_with:I
 
     .line 62
     .line 63
@@ -418,7 +418,7 @@
 
     .line 63
     .line 64
-    sget v6, Lg/h;->abc_activity_chooser_view_see_all:I
+    sget v6, Li/h;->abc_activity_chooser_view_see_all:I
 
     .line 65
     .line 66

@@ -1,93 +1,206 @@
-.class public final Landroidx/compose/material3/w;
-.super Landroidx/compose/ui/node/k;
+.class public final Landroidx/compose/material3/W;
+.super Landroid/view/ViewOutlineProvider;
 .source "SourceFile"
-
-# interfaces
-.implements Landroidx/compose/ui/node/i;
-.implements Landroidx/compose/ui/node/h1;
 
 
 # instance fields
-.field public final r:Landroidx/compose/foundation/interaction/k;
-
-.field public final s:Z
-
-.field public final t:F
-
-.field public final u:Landroidx/compose/ui/graphics/y;
-
-.field public v:Landroidx/compose/material/ripple/p;
+.field public final synthetic a:I
 
 
 # direct methods
-.method public constructor <init>(Landroidx/compose/foundation/interaction/k;ZFLandroidx/compose/material/e;)V
+.method public synthetic constructor <init>(I)V
     .locals 0
 
     .line 1
-    invoke-direct {p0}, Landroidx/compose/ui/node/k;-><init>()V
+    iput p1, p0, Landroidx/compose/material3/W;->a:I
 
-    .line 2
-    .line 3
-    .line 4
-    iput-object p1, p0, Landroidx/compose/material3/w;->r:Landroidx/compose/foundation/interaction/k;
+    invoke-direct {p0}, Landroid/view/ViewOutlineProvider;-><init>()V
 
-    .line 5
-    .line 6
-    iput-boolean p2, p0, Landroidx/compose/material3/w;->s:Z
-
-    .line 7
-    .line 8
-    iput p3, p0, Landroidx/compose/material3/w;->t:F
-
-    .line 9
-    .line 10
-    iput-object p4, p0, Landroidx/compose/material3/w;->u:Landroidx/compose/ui/graphics/y;
-
-    .line 11
-    .line 12
     return-void
 .end method
 
 
 # virtual methods
-.method public final Y()V
-    .locals 1
+.method public final getOutline(Landroid/view/View;Landroid/graphics/Outline;)V
+    .locals 2
 
     .line 1
-    new-instance v0, Landroidx/compose/material3/DelegatingThemeAwareRippleNode$updateConfiguration$1;
+    iget v0, p0, Landroidx/compose/material3/W;->a:I
 
     .line 2
     .line 3
-    invoke-direct {v0, p0}, Landroidx/compose/material3/DelegatingThemeAwareRippleNode$updateConfiguration$1;-><init>(Landroidx/compose/material3/w;)V
+    packed-switch v0, :pswitch_data_0
 
     .line 4
     .line 5
     .line 6
-    invoke-static {p0, v0}, Lcom/google/android/play/core/appupdate/b;->J(Landroidx/compose/ui/n;Lzh/a;)V
+    invoke-virtual {p1}, Landroid/view/View;->getWidth()I
 
     .line 7
     .line 8
     .line 9
+    move-result v0
+
+    .line 10
+    invoke-virtual {p1}, Landroid/view/View;->getHeight()I
+
+    .line 11
+    .line 12
+    .line 13
+    move-result p1
+
+    .line 14
+    const/4 v1, 0x0
+
+    .line 15
+    invoke-virtual {p2, v1, v1, v0, p1}, Landroid/graphics/Outline;->setRect(IIII)V
+
+    .line 16
+    .line 17
+    .line 18
+    const/4 p1, 0x0
+
+    .line 19
+    invoke-virtual {p2, p1}, Landroid/graphics/Outline;->setAlpha(F)V
+
+    .line 20
+    .line 21
+    .line 22
     return-void
-.end method
 
-.method public final s0()V
-    .locals 1
+    .line 23
+    :pswitch_0
+    invoke-virtual {p1}, Landroid/view/View;->getWidth()I
 
-    .line 1
-    new-instance v0, Landroidx/compose/material3/DelegatingThemeAwareRippleNode$updateConfiguration$1;
+    .line 24
+    .line 25
+    .line 26
+    move-result v0
 
-    .line 2
-    .line 3
-    invoke-direct {v0, p0}, Landroidx/compose/material3/DelegatingThemeAwareRippleNode$updateConfiguration$1;-><init>(Landroidx/compose/material3/w;)V
+    .line 27
+    invoke-virtual {p1}, Landroid/view/View;->getHeight()I
 
-    .line 4
-    .line 5
-    .line 6
-    invoke-static {p0, v0}, Lcom/google/android/play/core/appupdate/b;->J(Landroidx/compose/ui/n;Lzh/a;)V
+    .line 28
+    .line 29
+    .line 30
+    move-result p1
 
-    .line 7
-    .line 8
-    .line 9
+    .line 31
+    const/4 v1, 0x0
+
+    .line 32
+    invoke-virtual {p2, v1, v1, v0, p1}, Landroid/graphics/Outline;->setRect(IIII)V
+
+    .line 33
+    .line 34
+    .line 35
+    const/4 p1, 0x0
+
+    .line 36
+    invoke-virtual {p2, p1}, Landroid/graphics/Outline;->setAlpha(F)V
+
+    .line 37
+    .line 38
+    .line 39
     return-void
+
+    .line 40
+    :pswitch_1
+    check-cast p1, Landroidx/compose/ui/platform/O0;
+
+    .line 41
+    .line 42
+    iget-object p1, p1, Landroidx/compose/ui/platform/O0;->g:Landroidx/compose/ui/platform/q0;
+
+    .line 43
+    .line 44
+    invoke-virtual {p1}, Landroidx/compose/ui/platform/q0;->b()Landroid/graphics/Outline;
+
+    .line 45
+    .line 46
+    .line 47
+    move-result-object p1
+
+    .line 48
+    invoke-virtual {p2, p1}, Landroid/graphics/Outline;->set(Landroid/graphics/Outline;)V
+
+    .line 49
+    .line 50
+    .line 51
+    return-void
+
+    .line 52
+    :pswitch_2
+    instance-of v0, p1, Landroidx/compose/ui/graphics/layer/p;
+
+    .line 53
+    .line 54
+    if-eqz v0, :cond_0
+
+    .line 55
+    .line 56
+    check-cast p1, Landroidx/compose/ui/graphics/layer/p;
+
+    .line 57
+    .line 58
+    iget-object p1, p1, Landroidx/compose/ui/graphics/layer/p;->g:Landroid/graphics/Outline;
+
+    .line 59
+    .line 60
+    if-eqz p1, :cond_0
+
+    .line 61
+    .line 62
+    invoke-virtual {p2, p1}, Landroid/graphics/Outline;->set(Landroid/graphics/Outline;)V
+
+    .line 63
+    .line 64
+    .line 65
+    :cond_0
+    return-void
+
+    .line 66
+    :pswitch_3
+    invoke-virtual {p1}, Landroid/view/View;->getWidth()I
+
+    .line 67
+    .line 68
+    .line 69
+    move-result v0
+
+    .line 70
+    invoke-virtual {p1}, Landroid/view/View;->getHeight()I
+
+    .line 71
+    .line 72
+    .line 73
+    move-result p1
+
+    .line 74
+    const/4 v1, 0x0
+
+    .line 75
+    invoke-virtual {p2, v1, v1, v0, p1}, Landroid/graphics/Outline;->setRect(IIII)V
+
+    .line 76
+    .line 77
+    .line 78
+    const/4 p1, 0x0
+
+    .line 79
+    invoke-virtual {p2, p1}, Landroid/graphics/Outline;->setAlpha(F)V
+
+    .line 80
+    .line 81
+    .line 82
+    return-void
+
+    .line 83
+    :pswitch_data_0
+    .packed-switch 0x0
+        :pswitch_3
+        :pswitch_2
+        :pswitch_1
+        :pswitch_0
+    .end packed-switch
 .end method

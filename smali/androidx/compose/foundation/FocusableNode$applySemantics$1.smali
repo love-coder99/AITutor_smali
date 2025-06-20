@@ -3,14 +3,14 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lzh/a;
+.implements Lka/a;
 
 
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "Lkotlin/jvm/internal/Lambda;",
-        "Lzh/a;"
+        "Lka/a;"
     }
 .end annotation
 
@@ -35,14 +35,14 @@
 
 
 # instance fields
-.field final synthetic this$0:Landroidx/compose/foundation/w;
+.field final synthetic this$0:Landroidx/compose/foundation/u;
 
 
 # direct methods
-.method public constructor <init>(Landroidx/compose/foundation/w;)V
+.method public constructor <init>(Landroidx/compose/foundation/u;)V
     .locals 0
 
-    iput-object p1, p0, Landroidx/compose/foundation/FocusableNode$applySemantics$1;->this$0:Landroidx/compose/foundation/w;
+    iput-object p1, p0, Landroidx/compose/foundation/FocusableNode$applySemantics$1;->this$0:Landroidx/compose/foundation/u;
 
     const/4 p1, 0x0
 
@@ -56,10 +56,10 @@
 .method public final invoke()Ljava/lang/Boolean;
     .locals 1
 
-    iget-object v0, p0, Landroidx/compose/foundation/FocusableNode$applySemantics$1;->this$0:Landroidx/compose/foundation/w;
-
     .line 2
-    invoke-static {v0}, Landroidx/compose/ui/focus/a;->D(Landroidx/compose/foundation/w;)Z
+    iget-object v0, p0, Landroidx/compose/foundation/FocusableNode$applySemantics$1;->this$0:Landroidx/compose/foundation/u;
+
+    invoke-static {v0}, Landroidx/compose/ui/focus/a;->D(Landroidx/compose/ui/focus/r;)Z
 
     move-result v0
 

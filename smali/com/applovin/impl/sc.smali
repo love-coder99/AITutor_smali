@@ -73,7 +73,7 @@
     move-result v9
 
     .line 6
-    invoke-static {v9}, Lcom/applovin/impl/hw;->d(I)I
+    invoke-static {v9}, Lcom/applovin/impl/X2;->d(I)I
 
     move-result v9
 

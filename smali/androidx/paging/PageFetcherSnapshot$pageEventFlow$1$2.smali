@@ -3,10 +3,19 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lzh/e;
+.implements Lka/e;
 
 
 # annotations
+.annotation runtime Lca/c;
+    c = "androidx.paging.PageFetcherSnapshot$pageEventFlow$1$2"
+    f = "PageFetcherSnapshot.kt"
+    l = {
+        0x5b
+    }
+    m = "invokeSuspend"
+.end annotation
+
 .annotation system Ldalvik/annotation/EnclosingMethod;
     value = Landroidx/paging/PageFetcherSnapshot$pageEventFlow$1;->invokeSuspend(Ljava/lang/Object;)Ljava/lang/Object;
 .end annotation
@@ -19,21 +28,22 @@
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "Lkotlin/coroutines/jvm/internal/SuspendLambda;",
-        "Lzh/e;"
+        "Lka/e;"
     }
 .end annotation
 
 .annotation runtime Lkotlin/Metadata;
     d1 = {
-        "\u0000\u0012\n\u0002\u0010\u0000\n\u0002\u0008\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\u0010\u0005\u001a\u00020\u0004\"\u0008\u0008\u0000\u0010\u0001*\u00020\u0000\"\u0008\u0008\u0001\u0010\u0002*\u00020\u0000*\u00020\u0003H\u008a@"
+        "\u0000\u0014\n\u0002\u0010\u0000\n\u0002\u0008\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0008\u0002\u0010\u0005\u001a\u00020\u0004\"\u0008\u0008\u0000\u0010\u0001*\u00020\u0000\"\u0008\u0008\u0001\u0010\u0002*\u00020\u0000*\u00020\u0003H\u008a@\u00a2\u0006\u0004\u0008\u0005\u0010\u0006"
     }
     d2 = {
         "",
         "Key",
         "Value",
-        "Lkotlinx/coroutines/w;",
-        "Lqh/r;",
-        "<anonymous>"
+        "Lkotlinx/coroutines/u;",
+        "LX9/j;",
+        "<anonymous>",
+        "(Lkotlinx/coroutines/u;)V"
     }
     k = 0x3
     mv = {
@@ -43,44 +53,35 @@
     }
 .end annotation
 
-.annotation runtime Lth/c;
-    c = "androidx.paging.PageFetcherSnapshot$pageEventFlow$1$2"
-    f = "PageFetcherSnapshot.kt"
-    l = {
-        0x5b
-    }
-    m = "invokeSuspend"
-.end annotation
-
 
 # instance fields
-.field final synthetic $$this$cancelableChannelFlow:Landroidx/paging/a2;
+.field final synthetic $$this$cancelableChannelFlow:Landroidx/paging/C0;
     .annotation system Ldalvik/annotation/Signature;
         value = {
-            "Landroidx/paging/a2;"
+            "Landroidx/paging/C0;"
         }
     .end annotation
 .end field
 
 .field label:I
 
-.field final synthetic this$0:Landroidx/paging/w0;
+.field final synthetic this$0:Landroidx/paging/W;
     .annotation system Ldalvik/annotation/Signature;
         value = {
-            "Landroidx/paging/w0;"
+            "Landroidx/paging/W;"
         }
     .end annotation
 .end field
 
 
 # direct methods
-.method public constructor <init>(Landroidx/paging/w0;Landroidx/paging/a2;Lkotlin/coroutines/Continuation;)V
+.method public constructor <init>(Landroidx/paging/W;Landroidx/paging/C0;Lkotlin/coroutines/Continuation;)V
     .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
-            "Landroidx/paging/w0;",
-            "Landroidx/paging/a2;",
+            "Landroidx/paging/W;",
+            "Landroidx/paging/C0;",
             "Lkotlin/coroutines/Continuation<",
             "-",
             "Landroidx/paging/PageFetcherSnapshot$pageEventFlow$1$2;",
@@ -88,9 +89,9 @@
         }
     .end annotation
 
-    iput-object p1, p0, Landroidx/paging/PageFetcherSnapshot$pageEventFlow$1$2;->this$0:Landroidx/paging/w0;
+    iput-object p1, p0, Landroidx/paging/PageFetcherSnapshot$pageEventFlow$1$2;->this$0:Landroidx/paging/W;
 
-    iput-object p2, p0, Landroidx/paging/PageFetcherSnapshot$pageEventFlow$1$2;->$$this$cancelableChannelFlow:Landroidx/paging/a2;
+    iput-object p2, p0, Landroidx/paging/PageFetcherSnapshot$pageEventFlow$1$2;->$$this$cancelableChannelFlow:Landroidx/paging/C0;
 
     const/4 p1, 0x2
 
@@ -110,18 +111,18 @@
             "Lkotlin/coroutines/Continuation<",
             "*>;)",
             "Lkotlin/coroutines/Continuation<",
-            "Lqh/r;",
+            "LX9/j;",
             ">;"
         }
     .end annotation
 
     new-instance p1, Landroidx/paging/PageFetcherSnapshot$pageEventFlow$1$2;
 
-    iget-object v0, p0, Landroidx/paging/PageFetcherSnapshot$pageEventFlow$1$2;->this$0:Landroidx/paging/w0;
+    iget-object v0, p0, Landroidx/paging/PageFetcherSnapshot$pageEventFlow$1$2;->this$0:Landroidx/paging/W;
 
-    iget-object v1, p0, Landroidx/paging/PageFetcherSnapshot$pageEventFlow$1$2;->$$this$cancelableChannelFlow:Landroidx/paging/a2;
+    iget-object v1, p0, Landroidx/paging/PageFetcherSnapshot$pageEventFlow$1$2;->$$this$cancelableChannelFlow:Landroidx/paging/C0;
 
-    invoke-direct {p1, v0, v1, p2}, Landroidx/paging/PageFetcherSnapshot$pageEventFlow$1$2;-><init>(Landroidx/paging/w0;Landroidx/paging/a2;Lkotlin/coroutines/Continuation;)V
+    invoke-direct {p1, v0, v1, p2}, Landroidx/paging/PageFetcherSnapshot$pageEventFlow$1$2;-><init>(Landroidx/paging/W;Landroidx/paging/C0;Lkotlin/coroutines/Continuation;)V
 
     return-object p1
 .end method
@@ -130,26 +131,26 @@
     .locals 0
 
     .line 1
-    check-cast p1, Lkotlinx/coroutines/w;
+    check-cast p1, Lkotlinx/coroutines/u;
 
     check-cast p2, Lkotlin/coroutines/Continuation;
 
-    invoke-virtual {p0, p1, p2}, Landroidx/paging/PageFetcherSnapshot$pageEventFlow$1$2;->invoke(Lkotlinx/coroutines/w;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
+    invoke-virtual {p0, p1, p2}, Landroidx/paging/PageFetcherSnapshot$pageEventFlow$1$2;->invoke(Lkotlinx/coroutines/u;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
 
     move-result-object p1
 
     return-object p1
 .end method
 
-.method public final invoke(Lkotlinx/coroutines/w;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
+.method public final invoke(Lkotlinx/coroutines/u;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
     .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
-            "Lkotlinx/coroutines/w;",
+            "Lkotlinx/coroutines/u;",
             "Lkotlin/coroutines/Continuation<",
             "-",
-            "Lqh/r;",
+            "LX9/j;",
             ">;)",
             "Ljava/lang/Object;"
         }
@@ -162,7 +163,7 @@
 
     check-cast p1, Landroidx/paging/PageFetcherSnapshot$pageEventFlow$1$2;
 
-    sget-object p2, Lqh/r;->a:Lqh/r;
+    sget-object p2, LX9/j;->a:LX9/j;
 
     invoke-virtual {p1, p2}, Landroidx/paging/PageFetcherSnapshot$pageEventFlow$1$2;->invokeSuspend(Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -225,15 +226,15 @@
     .line 23
     .line 24
     .line 25
-    iget-object p1, p0, Landroidx/paging/PageFetcherSnapshot$pageEventFlow$1$2;->this$0:Landroidx/paging/w0;
+    iget-object p1, p0, Landroidx/paging/PageFetcherSnapshot$pageEventFlow$1$2;->this$0:Landroidx/paging/W;
 
     .line 26
     .line 27
-    iget-object p1, p1, Landroidx/paging/w0;->h:Lkotlinx/coroutines/channels/b;
+    iget-object p1, p1, Landroidx/paging/W;->h:Lkotlinx/coroutines/channels/b;
 
     .line 28
     .line 29
-    invoke-static {p1}, Lkotlinx/coroutines/flow/j;->k(Lkotlinx/coroutines/channels/e;)Lkotlinx/coroutines/flow/c;
+    invoke-static {p1}, Lkotlinx/coroutines/flow/h;->j(Lkotlinx/coroutines/channels/o;)Lkotlinx/coroutines/flow/c;
 
     .line 30
     .line 31
@@ -241,15 +242,15 @@
     move-result-object p1
 
     .line 33
-    new-instance v1, Landroidx/paging/t0;
+    new-instance v1, Landroidx/paging/S;
 
     .line 34
     .line 35
-    iget-object v3, p0, Landroidx/paging/PageFetcherSnapshot$pageEventFlow$1$2;->$$this$cancelableChannelFlow:Landroidx/paging/a2;
+    iget-object v3, p0, Landroidx/paging/PageFetcherSnapshot$pageEventFlow$1$2;->$$this$cancelableChannelFlow:Landroidx/paging/C0;
 
     .line 36
     .line 37
-    invoke-direct {v1, v3}, Landroidx/paging/t0;-><init>(Landroidx/paging/a2;)V
+    invoke-direct {v1, v3}, Landroidx/paging/S;-><init>(Landroidx/paging/C0;)V
 
     .line 38
     .line 39
@@ -258,7 +259,7 @@
 
     .line 41
     .line 42
-    invoke-virtual {p1, v1, p0}, Lkotlinx/coroutines/flow/c;->b(Lkotlinx/coroutines/flow/i;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
+    invoke-virtual {p1, v1, p0}, Lkotlinx/coroutines/flow/c;->b(Lkotlinx/coroutines/flow/g;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
 
     .line 43
     .line 44
@@ -275,7 +276,7 @@
     .line 49
     :cond_2
     :goto_0
-    sget-object p1, Lqh/r;->a:Lqh/r;
+    sget-object p1, LX9/j;->a:LX9/j;
 
     .line 50
     .line 51

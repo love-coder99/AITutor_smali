@@ -44,24 +44,33 @@
 .method public setAdClickListener(Lcom/applovin/sdk/AppLovinAdClickListener;)V
     .locals 0
 
+    .line 1
     iput-object p1, p0, Lcom/applovin/impl/adview/AppLovinRewardedInterstitialAd;->c:Lcom/applovin/sdk/AppLovinAdClickListener;
 
+    .line 2
+    .line 3
     return-void
 .end method
 
 .method public setAdDisplayListener(Lcom/applovin/sdk/AppLovinAdDisplayListener;)V
     .locals 0
 
+    .line 1
     iput-object p1, p0, Lcom/applovin/impl/adview/AppLovinRewardedInterstitialAd;->b:Lcom/applovin/sdk/AppLovinAdDisplayListener;
 
+    .line 2
+    .line 3
     return-void
 .end method
 
 .method public setAdVideoPlaybackListener(Lcom/applovin/sdk/AppLovinAdVideoPlaybackListener;)V
     .locals 0
 
+    .line 1
     iput-object p1, p0, Lcom/applovin/impl/adview/AppLovinRewardedInterstitialAd;->d:Lcom/applovin/sdk/AppLovinAdVideoPlaybackListener;
 
+    .line 2
+    .line 3
     return-void
 .end method
 
@@ -105,7 +114,10 @@
 .method public toString()Ljava/lang/String;
     .locals 1
 
+    .line 1
     const-string v0, "AppLovinRewardedInterstitialAd{}"
 
+    .line 2
+    .line 3
     return-object v0
 .end method

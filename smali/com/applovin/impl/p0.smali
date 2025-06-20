@@ -1,190 +1,272 @@
-.class public Lcom/applovin/impl/p0;
+.class public final synthetic Lcom/applovin/impl/P0;
 .super Ljava/lang/Object;
 .source "SourceFile"
 
-
-# annotations
-.annotation system Ldalvik/annotation/MemberClasses;
-    value = {
-        Lcom/applovin/impl/p0$a;
-    }
-.end annotation
+# interfaces
+.implements Ljava/lang/Runnable;
 
 
 # instance fields
-.field private final a:Ljava/lang/String;
+.field public final synthetic b:I
 
-.field private final b:Lcom/amazon/device/ads/DTBAdSize;
+.field public final synthetic c:Ljava/lang/Object;
 
 
 # direct methods
-.method public constructor <init>(Ljava/lang/String;Lorg/json/JSONObject;Lcom/applovin/mediation/MaxAdFormat;)V
-    .locals 2
-
-    .line 1
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
-
-    .line 2
-    .line 3
-    .line 4
-    iput-object p1, p0, Lcom/applovin/impl/p0;->a:Ljava/lang/String;
-
-    .line 5
-    .line 6
-    invoke-direct {p0, p3}, Lcom/applovin/impl/p0;->a(Lcom/applovin/mediation/MaxAdFormat;)Lcom/applovin/impl/p0$a;
-
-    .line 7
-    .line 8
-    .line 9
-    move-result-object v0
-
-    .line 10
-    invoke-virtual {v0}, Ljava/lang/Enum;->ordinal()I
-
-    .line 11
-    .line 12
-    .line 13
-    move-result v0
-
-    .line 14
-    const-string v1, "type"
-
-    .line 15
-    .line 16
-    invoke-static {p2, v1, v0}, Lcom/applovin/impl/sdk/utils/JsonUtils;->getInt(Lorg/json/JSONObject;Ljava/lang/String;I)I
-
-    .line 17
-    .line 18
-    .line 19
-    move-result p2
-
-    .line 20
-    invoke-direct {p0, p2, p3, p1}, Lcom/applovin/impl/p0;->a(ILcom/applovin/mediation/MaxAdFormat;Ljava/lang/String;)Lcom/amazon/device/ads/DTBAdSize;
-
-    .line 21
-    .line 22
-    .line 23
-    move-result-object p1
-
-    .line 24
-    iput-object p1, p0, Lcom/applovin/impl/p0;->b:Lcom/amazon/device/ads/DTBAdSize;
-
-    .line 25
-    .line 26
-    return-void
-.end method
-
-.method private a(ILcom/applovin/mediation/MaxAdFormat;Ljava/lang/String;)Lcom/amazon/device/ads/DTBAdSize;
-    .locals 1
-
-    .line 3
-    :try_start_0
-    sget-object v0, Lcom/applovin/impl/p0$a;->a:Lcom/applovin/impl/p0$a;
-
-    invoke-virtual {v0}, Ljava/lang/Enum;->ordinal()I
-
-    move-result v0
-
-    if-ne v0, p1, :cond_0
-
-    .line 4
-    new-instance p1, Lcom/amazon/device/ads/DTBAdSize$DTBVideo;
-
-    const/16 p2, 0x140
-
-    const/16 v0, 0x1e0
-
-    invoke-direct {p1, p2, v0, p3}, Lcom/amazon/device/ads/DTBAdSize$DTBVideo;-><init>(IILjava/lang/String;)V
-
-    return-object p1
-
-    .line 5
-    :cond_0
-    sget-object v0, Lcom/applovin/impl/p0$a;->b:Lcom/applovin/impl/p0$a;
-
-    invoke-virtual {v0}, Ljava/lang/Enum;->ordinal()I
-
-    move-result v0
-
-    if-ne v0, p1, :cond_1
-
-    .line 6
-    new-instance p1, Lcom/amazon/device/ads/DTBAdSize;
-
-    invoke-virtual {p2}, Lcom/applovin/mediation/MaxAdFormat;->getSize()Lcom/applovin/sdk/AppLovinSdkUtils$Size;
-
-    move-result-object v0
-
-    invoke-virtual {v0}, Lcom/applovin/sdk/AppLovinSdkUtils$Size;->getWidth()I
-
-    move-result v0
-
-    invoke-virtual {p2}, Lcom/applovin/mediation/MaxAdFormat;->getSize()Lcom/applovin/sdk/AppLovinSdkUtils$Size;
-
-    move-result-object p2
-
-    invoke-virtual {p2}, Lcom/applovin/sdk/AppLovinSdkUtils$Size;->getHeight()I
-
-    move-result p2
-
-    invoke-direct {p1, v0, p2, p3}, Lcom/amazon/device/ads/DTBAdSize;-><init>(IILjava/lang/String;)V
-
-    return-object p1
-
-    .line 7
-    :cond_1
-    sget-object p2, Lcom/applovin/impl/p0$a;->c:Lcom/applovin/impl/p0$a;
-
-    invoke-virtual {p2}, Ljava/lang/Enum;->ordinal()I
-
-    move-result p2
-
-    if-ne p2, p1, :cond_2
-
-    .line 8
-    new-instance p1, Lcom/amazon/device/ads/DTBAdSize$DTBInterstitialAdSize;
-
-    invoke-direct {p1, p3}, Lcom/amazon/device/ads/DTBAdSize$DTBInterstitialAdSize;-><init>(Ljava/lang/String;)V
-    :try_end_0
-    .catchall {:try_start_0 .. :try_end_0} :catchall_0
-
-    return-object p1
-
-    :catchall_0
-    :cond_2
-    const/4 p1, 0x0
-
-    return-object p1
-.end method
-
-.method private a(Lcom/applovin/mediation/MaxAdFormat;)Lcom/applovin/impl/p0$a;
+.method public synthetic constructor <init>(Ljava/lang/Object;I)V
     .locals 0
 
-    .line 2
-    invoke-virtual {p1}, Lcom/applovin/mediation/MaxAdFormat;->isAdViewAd()Z
+    .line 1
+    iput p2, p0, Lcom/applovin/impl/P0;->b:I
 
-    move-result p1
+    iput-object p1, p0, Lcom/applovin/impl/P0;->c:Ljava/lang/Object;
 
-    if-eqz p1, :cond_0
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    sget-object p1, Lcom/applovin/impl/p0$a;->b:Lcom/applovin/impl/p0$a;
-
-    goto :goto_0
-
-    :cond_0
-    sget-object p1, Lcom/applovin/impl/p0$a;->c:Lcom/applovin/impl/p0$a;
-
-    :goto_0
-    return-object p1
+    return-void
 .end method
 
 
 # virtual methods
-.method public a()Lcom/amazon/device/ads/DTBAdSize;
+.method public final run()V
     .locals 1
 
     .line 1
-    iget-object v0, p0, Lcom/applovin/impl/p0;->b:Lcom/amazon/device/ads/DTBAdSize;
+    iget v0, p0, Lcom/applovin/impl/P0;->b:I
 
-    return-object v0
+    packed-switch v0, :pswitch_data_0
+
+    iget-object v0, p0, Lcom/applovin/impl/P0;->c:Ljava/lang/Object;
+
+    check-cast v0, Lcom/applovin/impl/xm;
+
+    invoke-static {v0}, Lcom/applovin/impl/xm;->h(Lcom/applovin/impl/xm;)V
+
+    return-void
+
+    :pswitch_0
+    iget-object v0, p0, Lcom/applovin/impl/P0;->c:Ljava/lang/Object;
+
+    check-cast v0, Lcom/applovin/impl/wm;
+
+    invoke-static {v0}, Lcom/applovin/impl/wm;->l(Lcom/applovin/impl/wm;)V
+
+    return-void
+
+    :pswitch_1
+    iget-object v0, p0, Lcom/applovin/impl/P0;->c:Ljava/lang/Object;
+
+    check-cast v0, Lcom/applovin/impl/w4;
+
+    invoke-virtual {v0}, Lcom/applovin/impl/dc;->notifyDataSetChanged()V
+
+    return-void
+
+    :pswitch_2
+    iget-object v0, p0, Lcom/applovin/impl/P0;->c:Ljava/lang/Object;
+
+    check-cast v0, Lcom/applovin/impl/vm;
+
+    invoke-static {v0}, Lcom/applovin/impl/vm;->e(Lcom/applovin/impl/vm;)V
+
+    return-void
+
+    :pswitch_3
+    iget-object v0, p0, Lcom/applovin/impl/P0;->c:Ljava/lang/Object;
+
+    check-cast v0, Landroid/content/SharedPreferences$Editor;
+
+    invoke-interface {v0}, Landroid/content/SharedPreferences$Editor;->commit()Z
+
+    return-void
+
+    :pswitch_4
+    iget-object v0, p0, Lcom/applovin/impl/P0;->c:Ljava/lang/Object;
+
+    check-cast v0, Lcom/applovin/impl/o;
+
+    invoke-virtual {v0}, Lcom/applovin/impl/o;->b()V
+
+    return-void
+
+    :pswitch_5
+    iget-object v0, p0, Lcom/applovin/impl/P0;->c:Ljava/lang/Object;
+
+    check-cast v0, Lcom/applovin/impl/u0;
+
+    invoke-static {v0}, Lcom/applovin/impl/u0;->k(Lcom/applovin/impl/u0;)V
+
+    return-void
+
+    :pswitch_6
+    iget-object v0, p0, Lcom/applovin/impl/P0;->c:Ljava/lang/Object;
+
+    check-cast v0, Lcom/applovin/impl/se;
+
+    invoke-virtual {v0}, Lcom/applovin/impl/dc;->notifyDataSetChanged()V
+
+    return-void
+
+    :pswitch_7
+    iget-object v0, p0, Lcom/applovin/impl/P0;->c:Ljava/lang/Object;
+
+    check-cast v0, Lcom/applovin/impl/rk;
+
+    invoke-static {v0}, Lcom/applovin/impl/rk;->a(Lcom/applovin/impl/rk;)V
+
+    return-void
+
+    :pswitch_8
+    iget-object v0, p0, Lcom/applovin/impl/P0;->c:Ljava/lang/Object;
+
+    check-cast v0, Lcom/applovin/impl/r0;
+
+    invoke-static {v0}, Lcom/applovin/impl/r0;->P(Lcom/applovin/impl/r0;)V
+
+    return-void
+
+    :pswitch_9
+    iget-object v0, p0, Lcom/applovin/impl/P0;->c:Ljava/lang/Object;
+
+    check-cast v0, Lcom/applovin/impl/o9;
+
+    invoke-static {v0}, Lcom/applovin/impl/o9;->e(Lcom/applovin/impl/o9;)V
+
+    return-void
+
+    :pswitch_a
+    iget-object v0, p0, Lcom/applovin/impl/P0;->c:Ljava/lang/Object;
+
+    check-cast v0, Lcom/applovin/impl/hl;
+
+    invoke-static {v0}, Lcom/applovin/impl/hl;->b(Lcom/applovin/impl/hl;)V
+
+    return-void
+
+    :pswitch_b
+    iget-object v0, p0, Lcom/applovin/impl/P0;->c:Ljava/lang/Object;
+
+    check-cast v0, Landroid/media/MediaCodec;
+
+    invoke-virtual {v0}, Landroid/media/MediaCodec;->start()V
+
+    return-void
+
+    :pswitch_c
+    iget-object v0, p0, Lcom/applovin/impl/P0;->c:Ljava/lang/Object;
+
+    check-cast v0, Landroid/content/Context;
+
+    invoke-static {v0}, Lcom/applovin/impl/e5;->c(Landroid/content/Context;)V
+
+    return-void
+
+    :pswitch_d
+    iget-object v0, p0, Lcom/applovin/impl/P0;->c:Ljava/lang/Object;
+
+    check-cast v0, Lcom/applovin/impl/dc;
+
+    invoke-virtual {v0}, Lcom/applovin/impl/dc;->notifyDataSetChanged()V
+
+    return-void
+
+    :pswitch_e
+    iget-object v0, p0, Lcom/applovin/impl/P0;->c:Ljava/lang/Object;
+
+    check-cast v0, Lcom/applovin/impl/ca;
+
+    invoke-static {v0}, Lcom/applovin/impl/ca;->a(Lcom/applovin/impl/ca;)V
+
+    return-void
+
+    :pswitch_f
+    iget-object v0, p0, Lcom/applovin/impl/P0;->c:Ljava/lang/Object;
+
+    check-cast v0, Lcom/applovin/impl/bm;
+
+    invoke-static {v0}, Lcom/applovin/impl/bm;->e(Lcom/applovin/impl/bm;)V
+
+    return-void
+
+    :pswitch_10
+    iget-object v0, p0, Lcom/applovin/impl/P0;->c:Ljava/lang/Object;
+
+    check-cast v0, Lcom/applovin/impl/w5;
+
+    invoke-static {v0}, Lcom/applovin/impl/x5$h;->b(Lcom/applovin/impl/w5;)V
+
+    return-void
+
+    :pswitch_11
+    iget-object v0, p0, Lcom/applovin/impl/P0;->c:Ljava/lang/Object;
+
+    check-cast v0, Lcom/applovin/impl/x5$f;
+
+    invoke-static {v0}, Lcom/applovin/impl/x5$f;->a(Lcom/applovin/impl/x5$f;)V
+
+    return-void
+
+    :pswitch_12
+    iget-object v0, p0, Lcom/applovin/impl/P0;->c:Ljava/lang/Object;
+
+    check-cast v0, Lcom/applovin/impl/wm$b$a;
+
+    invoke-static {v0}, Lcom/applovin/impl/wm$b$a;->a(Lcom/applovin/impl/wm$b$a;)V
+
+    return-void
+
+    :pswitch_13
+    iget-object v0, p0, Lcom/applovin/impl/P0;->c:Ljava/lang/Object;
+
+    check-cast v0, Lcom/applovin/impl/o9$e;
+
+    invoke-static {v0}, Lcom/applovin/impl/o9$e;->a(Lcom/applovin/impl/o9$e;)V
+
+    return-void
+
+    :pswitch_14
+    iget-object v0, p0, Lcom/applovin/impl/P0;->c:Ljava/lang/Object;
+
+    check-cast v0, Lcom/applovin/impl/il;
+
+    invoke-static {v0}, Lcom/applovin/impl/il$c;->b(Lcom/applovin/impl/il;)V
+
+    return-void
+
+    :pswitch_15
+    iget-object v0, p0, Lcom/applovin/impl/P0;->c:Ljava/lang/Object;
+
+    check-cast v0, Lcom/applovin/impl/fm$c;
+
+    invoke-static {v0}, Lcom/applovin/impl/fm$c;->a(Lcom/applovin/impl/fm$c;)V
+
+    return-void
+
+    nop
+
+    :pswitch_data_0
+    .packed-switch 0x0
+        :pswitch_15
+        :pswitch_14
+        :pswitch_13
+        :pswitch_12
+        :pswitch_11
+        :pswitch_10
+        :pswitch_f
+        :pswitch_e
+        :pswitch_d
+        :pswitch_c
+        :pswitch_b
+        :pswitch_a
+        :pswitch_9
+        :pswitch_8
+        :pswitch_7
+        :pswitch_6
+        :pswitch_5
+        :pswitch_4
+        :pswitch_3
+        :pswitch_2
+        :pswitch_1
+        :pswitch_0
+    .end packed-switch
 .end method

@@ -3,14 +3,14 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lzh/a;
+.implements Lka/a;
 
 
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "Lkotlin/jvm/internal/Lambda;",
-        "Lzh/a;"
+        "Lka/a;"
     }
 .end annotation
 
@@ -60,15 +60,16 @@
 .method public final invoke()Ljava/lang/Integer;
     .locals 2
 
+    .line 2
     iget-object v0, p0, Landroidx/compose/foundation/text/selection/SelectionAdjustmentKt$updateSelectionBoundary$currentRawLine$2;->$info:Landroidx/compose/foundation/text/selection/g;
 
-    .line 2
-    iget-object v0, v0, Landroidx/compose/foundation/text/selection/g;->d:Landroidx/compose/ui/text/f0;
+    .line 3
+    iget-object v0, v0, Landroidx/compose/foundation/text/selection/g;->d:Landroidx/compose/ui/text/F;
 
+    .line 4
     iget v1, p0, Landroidx/compose/foundation/text/selection/SelectionAdjustmentKt$updateSelectionBoundary$currentRawLine$2;->$currentRawOffset:I
 
-    .line 3
-    invoke-virtual {v0, v1}, Landroidx/compose/ui/text/f0;->f(I)I
+    invoke-virtual {v0, v1}, Landroidx/compose/ui/text/F;->e(I)I
 
     move-result v0
 

@@ -1,266 +1,567 @@
-.class public final Lv2/m;
-.super Lv2/q;
+.class public final LV2/m;
+.super Ljava/lang/Object;
 .source "SourceFile"
+
+# interfaces
+.implements LV2/s;
 
 
 # instance fields
-.field public final synthetic k:I
+.field public final b:Z
+
+.field public final c:Z
+
+.field public final d:LV2/s;
+
+.field public final f:Lcom/bumptech/glide/load/engine/c;
+
+.field public final g:LV2/l;
+
+.field public h:I
+
+.field public i:Z
 
 
 # direct methods
-.method public synthetic constructor <init>(I)V
-    .locals 0
+.method public constructor <init>(LV2/s;ZZLV2/l;Lcom/bumptech/glide/load/engine/c;)V
+    .locals 1
 
     .line 1
-    iput p1, p0, Lv2/m;->k:I
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 2
     .line 3
-    invoke-direct {p0}, Lv2/q;-><init>()V
-
     .line 4
+    const-string v0, "Argument must not be null"
+
     .line 5
     .line 6
+    invoke-static {p1, v0}, Lp3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+
+    .line 7
+    .line 8
+    .line 9
+    iput-object p1, p0, LV2/m;->d:LV2/s;
+
+    .line 10
+    .line 11
+    iput-boolean p2, p0, LV2/m;->b:Z
+
+    .line 12
+    .line 13
+    iput-boolean p3, p0, LV2/m;->c:Z
+
+    .line 14
+    .line 15
+    iput-object p4, p0, LV2/m;->g:LV2/l;
+
+    .line 16
+    .line 17
+    invoke-static {p5, v0}, Lp3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+
+    .line 18
+    .line 19
+    .line 20
+    iput-object p5, p0, LV2/m;->f:Lcom/bumptech/glide/load/engine/c;
+
+    .line 21
+    .line 22
     return-void
 .end method
 
 
 # virtual methods
-.method public final f(FJLandroid/view/View;Ln2/f;)Z
+.method public final declared-synchronized a()V
+    .locals 2
+
+    .line 1
+    monitor-enter p0
+
+    .line 2
+    :try_start_0
+    iget v0, p0, LV2/m;->h:I
+
+    .line 3
+    .line 4
+    if-gtz v0, :cond_2
+
+    .line 5
+    .line 6
+    iget-boolean v0, p0, LV2/m;->i:Z
+
+    .line 7
+    .line 8
+    if-nez v0, :cond_1
+
+    .line 9
+    .line 10
+    const/4 v0, 0x1
+
+    .line 11
+    iput-boolean v0, p0, LV2/m;->i:Z
+
+    .line 12
+    .line 13
+    iget-boolean v0, p0, LV2/m;->c:Z
+
+    .line 14
+    .line 15
+    if-eqz v0, :cond_0
+
+    .line 16
+    .line 17
+    iget-object v0, p0, LV2/m;->d:LV2/s;
+
+    .line 18
+    .line 19
+    invoke-interface {v0}, LV2/s;->a()V
+    :try_end_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+
+    .line 20
+    .line 21
+    .line 22
+    goto :goto_0
+
+    .line 23
+    :catchall_0
+    move-exception v0
+
+    .line 24
+    goto :goto_1
+
+    .line 25
+    :cond_0
+    :goto_0
+    monitor-exit p0
+
+    .line 26
+    return-void
+
+    .line 27
+    :cond_1
+    :try_start_1
+    new-instance v0, Ljava/lang/IllegalStateException;
+
+    .line 28
+    .line 29
+    const-string v1, "Cannot recycle a resource that has already been recycled"
+
+    .line 30
+    .line 31
+    invoke-direct {v0, v1}, Ljava/lang/IllegalStateException;-><init>(Ljava/lang/String;)V
+
+    .line 32
+    .line 33
+    .line 34
+    throw v0
+
+    .line 35
+    :cond_2
+    new-instance v0, Ljava/lang/IllegalStateException;
+
+    .line 36
+    .line 37
+    const-string v1, "Cannot recycle a resource while it is still acquired"
+
+    .line 38
+    .line 39
+    invoke-direct {v0, v1}, Ljava/lang/IllegalStateException;-><init>(Ljava/lang/String;)V
+
+    .line 40
+    .line 41
+    .line 42
+    throw v0
+
+    .line 43
+    :goto_1
+    monitor-exit p0
+    :try_end_1
+    .catchall {:try_start_1 .. :try_end_1} :catchall_0
+
+    .line 44
+    throw v0
+.end method
+
+.method public final b()Ljava/lang/Class;
     .locals 1
 
     .line 1
-    iget v0, p0, Lv2/m;->k:I
+    iget-object v0, p0, LV2/m;->d:LV2/s;
 
     .line 2
     .line 3
-    packed-switch v0, :pswitch_data_0
+    invoke-interface {v0}, LV2/s;->b()Ljava/lang/Class;
 
     .line 4
     .line 5
     .line 6
-    invoke-virtual/range {p0 .. p5}, Lv2/q;->d(FJLandroid/view/View;Ln2/f;)F
+    move-result-object v0
+
+    .line 7
+    return-object v0
+.end method
+
+.method public final declared-synchronized c()V
+    .locals 2
+
+    .line 1
+    monitor-enter p0
+
+    .line 2
+    :try_start_0
+    iget-boolean v0, p0, LV2/m;->i:Z
+
+    .line 3
+    .line 4
+    if-nez v0, :cond_0
+
+    .line 5
+    .line 6
+    iget v0, p0, LV2/m;->h:I
 
     .line 7
     .line 8
-    .line 9
-    move-result p1
+    add-int/lit8 v0, v0, 0x1
 
+    .line 9
     .line 10
-    invoke-virtual {p4, p1}, Landroid/view/View;->setTranslationZ(F)V
+    iput v0, p0, LV2/m;->h:I
+    :try_end_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
     .line 11
     .line 12
+    monitor-exit p0
+
     .line 13
-    iget-boolean p1, p0, Ln2/q;->h:Z
+    return-void
 
     .line 14
+    :catchall_0
+    move-exception v0
+
     .line 15
-    return p1
+    goto :goto_0
 
     .line 16
-    :pswitch_0
-    invoke-virtual/range {p0 .. p5}, Lv2/q;->d(FJLandroid/view/View;Ln2/f;)F
+    :cond_0
+    :try_start_1
+    new-instance v0, Ljava/lang/IllegalStateException;
 
     .line 17
     .line 18
-    .line 19
-    move-result p1
+    const-string v1, "Cannot acquire a recycled resource"
 
+    .line 19
     .line 20
-    invoke-virtual {p4, p1}, Landroid/view/View;->setTranslationY(F)V
+    invoke-direct {v0, v1}, Ljava/lang/IllegalStateException;-><init>(Ljava/lang/String;)V
 
     .line 21
     .line 22
     .line 23
-    iget-boolean p1, p0, Ln2/q;->h:Z
+    throw v0
 
     .line 24
+    :goto_0
+    monitor-exit p0
+    :try_end_1
+    .catchall {:try_start_1 .. :try_end_1} :catchall_0
+
     .line 25
-    return p1
+    throw v0
+.end method
+
+.method public final d()V
+    .locals 2
+
+    .line 1
+    monitor-enter p0
+
+    .line 2
+    :try_start_0
+    iget v0, p0, LV2/m;->h:I
+
+    .line 3
+    .line 4
+    if-lez v0, :cond_2
+
+    .line 5
+    .line 6
+    const/4 v1, 0x1
+
+    .line 7
+    sub-int/2addr v0, v1
+
+    .line 8
+    iput v0, p0, LV2/m;->h:I
+
+    .line 9
+    .line 10
+    if-nez v0, :cond_0
+
+    .line 11
+    .line 12
+    goto :goto_0
+
+    .line 13
+    :cond_0
+    const/4 v1, 0x0
+
+    .line 14
+    :goto_0
+    monitor-exit p0
+    :try_end_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+
+    .line 15
+    if-eqz v1, :cond_1
+
+    .line 16
+    .line 17
+    iget-object v0, p0, LV2/m;->f:Lcom/bumptech/glide/load/engine/c;
+
+    .line 18
+    .line 19
+    iget-object v1, p0, LV2/m;->g:LV2/l;
+
+    .line 20
+    .line 21
+    invoke-virtual {v0, v1, p0}, Lcom/bumptech/glide/load/engine/c;->e(LV2/l;LV2/m;)V
+
+    .line 22
+    .line 23
+    .line 24
+    :cond_1
+    return-void
+
+    .line 25
+    :catchall_0
+    move-exception v0
 
     .line 26
-    :pswitch_1
-    invoke-virtual/range {p0 .. p5}, Lv2/q;->d(FJLandroid/view/View;Ln2/f;)F
+    goto :goto_1
+
+    .line 27
+    :cond_2
+    :try_start_1
+    new-instance v0, Ljava/lang/IllegalStateException;
+
+    .line 28
+    .line 29
+    const-string v1, "Cannot release a recycled or not yet acquired resource"
+
+    .line 30
+    .line 31
+    invoke-direct {v0, v1}, Ljava/lang/IllegalStateException;-><init>(Ljava/lang/String;)V
+
+    .line 32
+    .line 33
+    .line 34
+    throw v0
+
+    .line 35
+    :goto_1
+    monitor-exit p0
+    :try_end_1
+    .catchall {:try_start_1 .. :try_end_1} :catchall_0
+
+    .line 36
+    throw v0
+.end method
+
+.method public final get()Ljava/lang/Object;
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, LV2/m;->d:LV2/s;
+
+    .line 2
+    .line 3
+    invoke-interface {v0}, LV2/s;->get()Ljava/lang/Object;
+
+    .line 4
+    .line 5
+    .line 6
+    move-result-object v0
+
+    .line 7
+    return-object v0
+.end method
+
+.method public final getSize()I
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, LV2/m;->d:LV2/s;
+
+    .line 2
+    .line 3
+    invoke-interface {v0}, LV2/s;->getSize()I
+
+    .line 4
+    .line 5
+    .line 6
+    move-result v0
+
+    .line 7
+    return v0
+.end method
+
+.method public final declared-synchronized toString()Ljava/lang/String;
+    .locals 2
+
+    .line 1
+    const-string v0, "EngineResource{isMemoryCacheable="
+
+    .line 2
+    .line 3
+    monitor-enter p0
+
+    .line 4
+    :try_start_0
+    new-instance v1, Ljava/lang/StringBuilder;
+
+    .line 5
+    .line 6
+    invoke-direct {v1, v0}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+
+    .line 7
+    .line 8
+    .line 9
+    iget-boolean v0, p0, LV2/m;->b:Z
+
+    .line 10
+    .line 11
+    invoke-virtual {v1, v0}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
+
+    .line 12
+    .line 13
+    .line 14
+    const-string v0, ", listener="
+
+    .line 15
+    .line 16
+    invoke-virtual {v1, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 17
+    .line 18
+    .line 19
+    iget-object v0, p0, LV2/m;->f:Lcom/bumptech/glide/load/engine/c;
+
+    .line 20
+    .line 21
+    invoke-virtual {v1, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+
+    .line 22
+    .line 23
+    .line 24
+    const-string v0, ", key="
+
+    .line 25
+    .line 26
+    invoke-virtual {v1, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     .line 27
     .line 28
     .line 29
-    move-result p1
+    iget-object v0, p0, LV2/m;->g:LV2/l;
 
     .line 30
-    invoke-virtual {p4, p1}, Landroid/view/View;->setTranslationX(F)V
-
     .line 31
+    invoke-virtual {v1, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+
     .line 32
     .line 33
-    iget-boolean p1, p0, Ln2/q;->h:Z
-
     .line 34
-    .line 35
-    return p1
+    const-string v0, ", acquired="
 
+    .line 35
     .line 36
-    :pswitch_2
-    invoke-virtual/range {p0 .. p5}, Lv2/q;->d(FJLandroid/view/View;Ln2/f;)F
+    invoke-virtual {v1, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     .line 37
     .line 38
     .line 39
-    move-result p1
+    iget v0, p0, LV2/m;->h:I
 
     .line 40
-    invoke-virtual {p4, p1}, Landroid/view/View;->setScaleY(F)V
-
     .line 41
+    invoke-virtual {v1, v0}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+
     .line 42
     .line 43
-    iget-boolean p1, p0, Ln2/q;->h:Z
-
     .line 44
-    .line 45
-    return p1
+    const-string v0, ", isRecycled="
 
+    .line 45
     .line 46
-    :pswitch_3
-    invoke-virtual/range {p0 .. p5}, Lv2/q;->d(FJLandroid/view/View;Ln2/f;)F
+    invoke-virtual {v1, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     .line 47
     .line 48
     .line 49
-    move-result p1
+    iget-boolean v0, p0, LV2/m;->i:Z
 
     .line 50
-    invoke-virtual {p4, p1}, Landroid/view/View;->setScaleX(F)V
-
     .line 51
+    invoke-virtual {v1, v0}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
+
     .line 52
     .line 53
-    iget-boolean p1, p0, Ln2/q;->h:Z
-
     .line 54
-    .line 55
-    return p1
+    const-string v0, ", resource="
 
+    .line 55
     .line 56
-    :pswitch_4
-    invoke-virtual/range {p0 .. p5}, Lv2/q;->d(FJLandroid/view/View;Ln2/f;)F
+    invoke-virtual {v1, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     .line 57
     .line 58
     .line 59
-    move-result p1
+    iget-object v0, p0, LV2/m;->d:LV2/s;
 
     .line 60
-    invoke-virtual {p4, p1}, Landroid/view/View;->setRotationY(F)V
-
     .line 61
+    invoke-virtual {v1, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+
     .line 62
     .line 63
-    iget-boolean p1, p0, Ln2/q;->h:Z
-
     .line 64
-    .line 65
-    return p1
+    const/16 v0, 0x7d
 
+    .line 65
     .line 66
-    :pswitch_5
-    invoke-virtual/range {p0 .. p5}, Lv2/q;->d(FJLandroid/view/View;Ln2/f;)F
+    invoke-virtual {v1, v0}, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
 
     .line 67
     .line 68
     .line 69
-    move-result p1
+    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
     .line 70
-    invoke-virtual {p4, p1}, Landroid/view/View;->setRotationX(F)V
-
     .line 71
     .line 72
+    move-result-object v0
+    :try_end_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+
     .line 73
-    iget-boolean p1, p0, Ln2/q;->h:Z
+    monitor-exit p0
 
     .line 74
+    return-object v0
+
     .line 75
-    return p1
+    :catchall_0
+    move-exception v0
 
     .line 76
-    :pswitch_6
-    invoke-virtual/range {p0 .. p5}, Lv2/q;->d(FJLandroid/view/View;Ln2/f;)F
+    :try_start_1
+    monitor-exit p0
+    :try_end_1
+    .catchall {:try_start_1 .. :try_end_1} :catchall_0
 
     .line 77
-    .line 78
-    .line 79
-    move-result p1
-
-    .line 80
-    invoke-virtual {p4, p1}, Landroid/view/View;->setRotation(F)V
-
-    .line 81
-    .line 82
-    .line 83
-    iget-boolean p1, p0, Ln2/q;->h:Z
-
-    .line 84
-    .line 85
-    return p1
-
-    .line 86
-    :pswitch_7
-    invoke-virtual/range {p0 .. p5}, Lv2/q;->d(FJLandroid/view/View;Ln2/f;)F
-
-    .line 87
-    .line 88
-    .line 89
-    move-result p1
-
-    .line 90
-    invoke-virtual {p4, p1}, Landroid/view/View;->setElevation(F)V
-
-    .line 91
-    .line 92
-    .line 93
-    iget-boolean p1, p0, Ln2/q;->h:Z
-
-    .line 94
-    .line 95
-    return p1
-
-    .line 96
-    :pswitch_8
-    invoke-virtual/range {p0 .. p5}, Lv2/q;->d(FJLandroid/view/View;Ln2/f;)F
-
-    .line 97
-    .line 98
-    .line 99
-    move-result p1
-
-    .line 100
-    invoke-virtual {p4, p1}, Landroid/view/View;->setAlpha(F)V
-
-    .line 101
-    .line 102
-    .line 103
-    iget-boolean p1, p0, Ln2/q;->h:Z
-
-    .line 104
-    .line 105
-    return p1
-
-    .line 106
-    nop
-
-    .line 107
-    :pswitch_data_0
-    .packed-switch 0x0
-        :pswitch_8
-        :pswitch_7
-        :pswitch_6
-        :pswitch_5
-        :pswitch_4
-        :pswitch_3
-        :pswitch_2
-        :pswitch_1
-        :pswitch_0
-    .end packed-switch
+    throw v0
 .end method

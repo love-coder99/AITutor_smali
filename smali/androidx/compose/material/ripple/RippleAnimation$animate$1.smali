@@ -4,17 +4,7 @@
 
 
 # annotations
-.annotation runtime Lkotlin/Metadata;
-    k = 0x3
-    mv = {
-        0x1,
-        0x8,
-        0x0
-    }
-    xi = 0x30
-.end annotation
-
-.annotation runtime Lth/c;
+.annotation runtime Lca/c;
     c = "androidx.compose.material.ripple.RippleAnimation"
     f = "RippleAnimation.kt"
     l = {
@@ -25,6 +15,16 @@
     m = "animate"
 .end annotation
 
+.annotation runtime Lkotlin/Metadata;
+    k = 0x3
+    mv = {
+        0x1,
+        0x8,
+        0x0
+    }
+    xi = 0x30
+.end annotation
+
 
 # instance fields
 .field L$0:Ljava/lang/Object;
@@ -33,16 +33,16 @@
 
 .field synthetic result:Ljava/lang/Object;
 
-.field final synthetic this$0:Landroidx/compose/material/ripple/h;
+.field final synthetic this$0:Landroidx/compose/material/ripple/g;
 
 
 # direct methods
-.method public constructor <init>(Landroidx/compose/material/ripple/h;Lkotlin/coroutines/Continuation;)V
+.method public constructor <init>(Landroidx/compose/material/ripple/g;Lkotlin/coroutines/Continuation;)V
     .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
-            "Landroidx/compose/material/ripple/h;",
+            "Landroidx/compose/material/ripple/g;",
             "Lkotlin/coroutines/Continuation<",
             "-",
             "Landroidx/compose/material/ripple/RippleAnimation$animate$1;",
@@ -50,7 +50,7 @@
         }
     .end annotation
 
-    iput-object p1, p0, Landroidx/compose/material/ripple/RippleAnimation$animate$1;->this$0:Landroidx/compose/material/ripple/h;
+    iput-object p1, p0, Landroidx/compose/material/ripple/RippleAnimation$animate$1;->this$0:Landroidx/compose/material/ripple/g;
 
     invoke-direct {p0, p2}, Lkotlin/coroutines/jvm/internal/ContinuationImpl;-><init>(Lkotlin/coroutines/Continuation;)V
 
@@ -72,9 +72,9 @@
 
     iput p1, p0, Landroidx/compose/material/ripple/RippleAnimation$animate$1;->label:I
 
-    iget-object p1, p0, Landroidx/compose/material/ripple/RippleAnimation$animate$1;->this$0:Landroidx/compose/material/ripple/h;
+    iget-object p1, p0, Landroidx/compose/material/ripple/RippleAnimation$animate$1;->this$0:Landroidx/compose/material/ripple/g;
 
-    invoke-virtual {p1, p0}, Landroidx/compose/material/ripple/h;->a(Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
+    invoke-virtual {p1, p0}, Landroidx/compose/material/ripple/g;->a(Lkotlin/coroutines/jvm/internal/ContinuationImpl;)Ljava/lang/Object;
 
     move-result-object p1
 

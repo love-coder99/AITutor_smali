@@ -57,15 +57,17 @@
 .method public a(J)V
     .locals 0
 
+    .line 2
     iput-wide p1, p0, Lcom/applovin/impl/bl;->c:J
 
+    .line 3
     iget-boolean p1, p0, Lcom/applovin/impl/bl;->b:Z
 
     if-eqz p1, :cond_0
 
+    .line 4
     iget-object p1, p0, Lcom/applovin/impl/bl;->a:Lcom/applovin/impl/l3;
 
-    .line 2
     invoke-interface {p1}, Lcom/applovin/impl/l3;->c()J
 
     move-result-wide p1
@@ -79,17 +81,19 @@
 .method public a(Lcom/applovin/impl/ph;)V
     .locals 2
 
+    .line 5
     iget-boolean v0, p0, Lcom/applovin/impl/bl;->b:Z
 
     if-eqz v0, :cond_0
 
-    .line 3
+    .line 6
     invoke-virtual {p0}, Lcom/applovin/impl/bl;->p()J
 
     move-result-wide v0
 
     invoke-virtual {p0, v0, v1}, Lcom/applovin/impl/bl;->a(J)V
 
+    .line 7
     :cond_0
     iput-object p1, p0, Lcom/applovin/impl/bl;->f:Lcom/applovin/impl/ph;
 

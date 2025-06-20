@@ -66,13 +66,13 @@
 .method public a(Lcom/applovin/mediation/MaxDebuggerTcfStringActivity;)V
     .locals 3
 
+    .line 2
     iget-object v0, p0, Lcom/applovin/impl/pn$b$a;->a:Ljava/lang/String;
 
     iget-object v1, p0, Lcom/applovin/impl/pn$b$a;->b:Ljava/lang/String;
 
     iget-object v2, p0, Lcom/applovin/impl/pn$b$a;->c:Lcom/applovin/impl/pn$b;
 
-    .line 2
     iget-object v2, v2, Lcom/applovin/impl/pn$b;->b:Lcom/applovin/impl/sdk/j;
 
     invoke-virtual {p1, v0, v1, v2}, Lcom/applovin/impl/sn;->initialize(Ljava/lang/String;Ljava/lang/String;Lcom/applovin/impl/sdk/j;)V

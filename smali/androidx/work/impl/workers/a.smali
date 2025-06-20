@@ -3,20 +3,20 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lkotlinx/coroutines/flow/i;
+.implements Lkotlinx/coroutines/flow/g;
 
 
 # instance fields
-.field public final synthetic b:Lkotlinx/coroutines/flow/i;
+.field public final synthetic b:Lkotlinx/coroutines/flow/g;
 
 
 # direct methods
-.method public constructor <init>(Lkotlinx/coroutines/flow/i;)V
+.method public constructor <init>(Lkotlinx/coroutines/flow/g;)V
     .locals 0
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    iput-object p1, p0, Landroidx/work/impl/workers/a;->b:Lkotlinx/coroutines/flow/i;
+    iput-object p1, p0, Landroidx/work/impl/workers/a;->b:Lkotlinx/coroutines/flow/g;
 
     return-void
 .end method
@@ -145,11 +145,11 @@
 
     .line 56
     .line 57
-    iget-object p2, p0, Landroidx/work/impl/workers/a;->b:Lkotlinx/coroutines/flow/i;
+    iget-object p2, p0, Landroidx/work/impl/workers/a;->b:Lkotlinx/coroutines/flow/g;
 
     .line 58
     .line 59
-    invoke-interface {p2, p1, v0}, Lkotlinx/coroutines/flow/i;->emit(Ljava/lang/Object;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
+    invoke-interface {p2, p1, v0}, Lkotlinx/coroutines/flow/g;->emit(Ljava/lang/Object;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
 
     .line 60
     .line 61
@@ -166,7 +166,7 @@
     .line 66
     :cond_3
     :goto_1
-    sget-object p1, Lqh/r;->a:Lqh/r;
+    sget-object p1, LX9/j;->a:LX9/j;
 
     .line 67
     .line 68

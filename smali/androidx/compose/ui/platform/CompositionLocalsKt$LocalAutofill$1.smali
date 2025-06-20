@@ -3,14 +3,14 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lzh/a;
+.implements Lka/a;
 
 
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "Lkotlin/jvm/internal/Lambda;",
-        "Lzh/a;"
+        "Lka/a;"
     }
 .end annotation
 
@@ -19,9 +19,9 @@
         "\u0000\u0008\n\u0002\u0018\u0002\n\u0002\u0008\u0003\u0010\u0003\u001a\u0004\u0018\u00010\u0000H\n\u00a2\u0006\u0004\u0008\u0001\u0010\u0002"
     }
     d2 = {
-        "Lm1/b;",
+        "Lq0/b;",
         "invoke",
-        "()Lm1/b;",
+        "()Lq0/b;",
         "<anonymous>"
     }
     k = 0x3
@@ -65,18 +65,18 @@
 .method public bridge synthetic invoke()Ljava/lang/Object;
     .locals 1
 
-    .line 2
-    invoke-virtual {p0}, Landroidx/compose/ui/platform/CompositionLocalsKt$LocalAutofill$1;->invoke()Lm1/b;
+    .line 1
+    invoke-virtual {p0}, Landroidx/compose/ui/platform/CompositionLocalsKt$LocalAutofill$1;->invoke()Lq0/b;
 
     move-result-object v0
 
     return-object v0
 .end method
 
-.method public final invoke()Lm1/b;
+.method public final invoke()Lq0/b;
     .locals 1
 
-    .line 1
+    .line 2
     const/4 v0, 0x0
 
     return-object v0

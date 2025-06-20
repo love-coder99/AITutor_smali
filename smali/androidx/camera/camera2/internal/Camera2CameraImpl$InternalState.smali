@@ -42,273 +42,273 @@
     .locals 16
 
     .line 1
-    new-instance v0, Landroidx/camera/camera2/internal/Camera2CameraImpl$InternalState;
+    const/16 v0, 0x9
 
     .line 2
     .line 3
-    const-string v1, "RELEASED"
+    const/16 v1, 0x8
 
     .line 4
     .line 5
-    const/4 v2, 0x0
+    const/4 v2, 0x7
 
     .line 6
-    invoke-direct {v0, v1, v2}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
+    const/4 v3, 0x6
 
     .line 7
+    const/4 v4, 0x5
+
     .line 8
+    const/4 v5, 0x4
+
     .line 9
-    sput-object v0, Landroidx/camera/camera2/internal/Camera2CameraImpl$InternalState;->RELEASED:Landroidx/camera/camera2/internal/Camera2CameraImpl$InternalState;
+    const/4 v6, 0x3
 
     .line 10
+    const/4 v7, 0x2
+
     .line 11
-    new-instance v1, Landroidx/camera/camera2/internal/Camera2CameraImpl$InternalState;
+    const/4 v8, 0x1
 
     .line 12
+    const/4 v9, 0x0
+
     .line 13
-    const-string v3, "RELEASING"
+    new-instance v10, Landroidx/camera/camera2/internal/Camera2CameraImpl$InternalState;
 
     .line 14
     .line 15
-    const/4 v4, 0x1
+    const-string v11, "RELEASED"
 
     .line 16
-    invoke-direct {v1, v3, v4}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
-
     .line 17
+    invoke-direct {v10, v11, v9}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
+
     .line 18
     .line 19
-    sput-object v1, Landroidx/camera/camera2/internal/Camera2CameraImpl$InternalState;->RELEASING:Landroidx/camera/camera2/internal/Camera2CameraImpl$InternalState;
-
     .line 20
+    sput-object v10, Landroidx/camera/camera2/internal/Camera2CameraImpl$InternalState;->RELEASED:Landroidx/camera/camera2/internal/Camera2CameraImpl$InternalState;
+
     .line 21
-    new-instance v3, Landroidx/camera/camera2/internal/Camera2CameraImpl$InternalState;
-
     .line 22
+    new-instance v11, Landroidx/camera/camera2/internal/Camera2CameraImpl$InternalState;
+
     .line 23
-    const-string v5, "INITIALIZED"
-
     .line 24
-    .line 25
-    const/4 v6, 0x2
+    const-string v12, "RELEASING"
 
+    .line 25
     .line 26
-    invoke-direct {v3, v5, v6}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
+    invoke-direct {v11, v12, v8}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
 
     .line 27
     .line 28
     .line 29
-    sput-object v3, Landroidx/camera/camera2/internal/Camera2CameraImpl$InternalState;->INITIALIZED:Landroidx/camera/camera2/internal/Camera2CameraImpl$InternalState;
+    sput-object v11, Landroidx/camera/camera2/internal/Camera2CameraImpl$InternalState;->RELEASING:Landroidx/camera/camera2/internal/Camera2CameraImpl$InternalState;
 
     .line 30
     .line 31
-    new-instance v5, Landroidx/camera/camera2/internal/Camera2CameraImpl$InternalState;
+    new-instance v12, Landroidx/camera/camera2/internal/Camera2CameraImpl$InternalState;
 
     .line 32
     .line 33
-    const-string v7, "PENDING_OPEN"
+    const-string v13, "INITIALIZED"
 
     .line 34
     .line 35
-    const/4 v8, 0x3
+    invoke-direct {v12, v13, v7}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
 
     .line 36
-    invoke-direct {v5, v7, v8}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
-
     .line 37
     .line 38
+    sput-object v12, Landroidx/camera/camera2/internal/Camera2CameraImpl$InternalState;->INITIALIZED:Landroidx/camera/camera2/internal/Camera2CameraImpl$InternalState;
+
     .line 39
-    sput-object v5, Landroidx/camera/camera2/internal/Camera2CameraImpl$InternalState;->PENDING_OPEN:Landroidx/camera/camera2/internal/Camera2CameraImpl$InternalState;
-
     .line 40
+    new-instance v13, Landroidx/camera/camera2/internal/Camera2CameraImpl$InternalState;
+
     .line 41
-    new-instance v7, Landroidx/camera/camera2/internal/Camera2CameraImpl$InternalState;
-
     .line 42
+    const-string v14, "PENDING_OPEN"
+
     .line 43
-    const-string v9, "CLOSING"
-
     .line 44
+    invoke-direct {v13, v14, v6}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
+
     .line 45
-    const/4 v10, 0x4
-
     .line 46
-    invoke-direct {v7, v9, v10}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
-
     .line 47
+    sput-object v13, Landroidx/camera/camera2/internal/Camera2CameraImpl$InternalState;->PENDING_OPEN:Landroidx/camera/camera2/internal/Camera2CameraImpl$InternalState;
+
     .line 48
     .line 49
-    sput-object v7, Landroidx/camera/camera2/internal/Camera2CameraImpl$InternalState;->CLOSING:Landroidx/camera/camera2/internal/Camera2CameraImpl$InternalState;
+    new-instance v14, Landroidx/camera/camera2/internal/Camera2CameraImpl$InternalState;
 
     .line 50
     .line 51
-    new-instance v9, Landroidx/camera/camera2/internal/Camera2CameraImpl$InternalState;
+    const-string v15, "CLOSING"
 
     .line 52
     .line 53
-    const-string v11, "REOPENING_QUIRK"
+    invoke-direct {v14, v15, v5}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
 
     .line 54
     .line 55
-    const/4 v12, 0x5
-
     .line 56
-    invoke-direct {v9, v11, v12}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
+    sput-object v14, Landroidx/camera/camera2/internal/Camera2CameraImpl$InternalState;->CLOSING:Landroidx/camera/camera2/internal/Camera2CameraImpl$InternalState;
 
     .line 57
     .line 58
+    new-instance v15, Landroidx/camera/camera2/internal/Camera2CameraImpl$InternalState;
+
     .line 59
-    sput-object v9, Landroidx/camera/camera2/internal/Camera2CameraImpl$InternalState;->REOPENING_QUIRK:Landroidx/camera/camera2/internal/Camera2CameraImpl$InternalState;
-
     .line 60
+    const-string v5, "REOPENING_QUIRK"
+
     .line 61
-    new-instance v11, Landroidx/camera/camera2/internal/Camera2CameraImpl$InternalState;
-
     .line 62
-    .line 63
-    const-string v13, "REOPENING"
+    invoke-direct {v15, v5, v4}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
 
+    .line 63
     .line 64
     .line 65
-    const/4 v14, 0x6
+    sput-object v15, Landroidx/camera/camera2/internal/Camera2CameraImpl$InternalState;->REOPENING_QUIRK:Landroidx/camera/camera2/internal/Camera2CameraImpl$InternalState;
 
     .line 66
-    invoke-direct {v11, v13, v14}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
-
     .line 67
+    new-instance v5, Landroidx/camera/camera2/internal/Camera2CameraImpl$InternalState;
+
     .line 68
     .line 69
-    sput-object v11, Landroidx/camera/camera2/internal/Camera2CameraImpl$InternalState;->REOPENING:Landroidx/camera/camera2/internal/Camera2CameraImpl$InternalState;
+    const-string v4, "REOPENING"
 
     .line 70
     .line 71
-    new-instance v13, Landroidx/camera/camera2/internal/Camera2CameraImpl$InternalState;
+    invoke-direct {v5, v4, v3}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
 
     .line 72
     .line 73
-    const-string v15, "OPENING"
-
     .line 74
-    .line 75
-    const/4 v14, 0x7
+    sput-object v5, Landroidx/camera/camera2/internal/Camera2CameraImpl$InternalState;->REOPENING:Landroidx/camera/camera2/internal/Camera2CameraImpl$InternalState;
 
+    .line 75
     .line 76
-    invoke-direct {v13, v15, v14}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
+    new-instance v4, Landroidx/camera/camera2/internal/Camera2CameraImpl$InternalState;
 
     .line 77
     .line 78
+    const-string v3, "OPENING"
+
     .line 79
-    sput-object v13, Landroidx/camera/camera2/internal/Camera2CameraImpl$InternalState;->OPENING:Landroidx/camera/camera2/internal/Camera2CameraImpl$InternalState;
-
     .line 80
-    .line 81
-    new-instance v15, Landroidx/camera/camera2/internal/Camera2CameraImpl$InternalState;
+    invoke-direct {v4, v3, v2}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
 
+    .line 81
     .line 82
     .line 83
-    const-string v14, "OPENED"
+    sput-object v4, Landroidx/camera/camera2/internal/Camera2CameraImpl$InternalState;->OPENING:Landroidx/camera/camera2/internal/Camera2CameraImpl$InternalState;
 
     .line 84
     .line 85
-    const/16 v12, 0x8
+    new-instance v3, Landroidx/camera/camera2/internal/Camera2CameraImpl$InternalState;
 
     .line 86
     .line 87
-    invoke-direct {v15, v14, v12}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
+    const-string v2, "OPENED"
 
     .line 88
     .line 89
-    .line 90
-    sput-object v15, Landroidx/camera/camera2/internal/Camera2CameraImpl$InternalState;->OPENED:Landroidx/camera/camera2/internal/Camera2CameraImpl$InternalState;
+    invoke-direct {v3, v2, v1}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
 
+    .line 90
     .line 91
     .line 92
-    new-instance v14, Landroidx/camera/camera2/internal/Camera2CameraImpl$InternalState;
+    sput-object v3, Landroidx/camera/camera2/internal/Camera2CameraImpl$InternalState;->OPENED:Landroidx/camera/camera2/internal/Camera2CameraImpl$InternalState;
 
     .line 93
     .line 94
-    const-string v12, "CONFIGURED"
+    new-instance v2, Landroidx/camera/camera2/internal/Camera2CameraImpl$InternalState;
 
     .line 95
     .line 96
-    const/16 v10, 0x9
+    const-string v1, "CONFIGURED"
 
     .line 97
     .line 98
-    invoke-direct {v14, v12, v10}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
+    invoke-direct {v2, v1, v0}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
 
     .line 99
     .line 100
     .line 101
-    sput-object v14, Landroidx/camera/camera2/internal/Camera2CameraImpl$InternalState;->CONFIGURED:Landroidx/camera/camera2/internal/Camera2CameraImpl$InternalState;
+    sput-object v2, Landroidx/camera/camera2/internal/Camera2CameraImpl$InternalState;->CONFIGURED:Landroidx/camera/camera2/internal/Camera2CameraImpl$InternalState;
 
     .line 102
     .line 103
-    const/16 v12, 0xa
+    const/16 v1, 0xa
 
     .line 104
     .line 105
-    new-array v12, v12, [Landroidx/camera/camera2/internal/Camera2CameraImpl$InternalState;
+    new-array v1, v1, [Landroidx/camera/camera2/internal/Camera2CameraImpl$InternalState;
 
     .line 106
     .line 107
-    aput-object v0, v12, v2
+    aput-object v10, v1, v9
 
     .line 108
     .line 109
-    aput-object v1, v12, v4
+    aput-object v11, v1, v8
 
     .line 110
     .line 111
-    aput-object v3, v12, v6
+    aput-object v12, v1, v7
 
     .line 112
     .line 113
-    aput-object v5, v12, v8
+    aput-object v13, v1, v6
 
     .line 114
     .line 115
-    const/4 v0, 0x4
+    const/4 v6, 0x4
 
     .line 116
-    aput-object v7, v12, v0
+    aput-object v14, v1, v6
 
     .line 117
     .line 118
-    const/4 v0, 0x5
+    const/4 v6, 0x5
 
     .line 119
-    aput-object v9, v12, v0
+    aput-object v15, v1, v6
 
     .line 120
     .line 121
-    const/4 v0, 0x6
+    const/4 v6, 0x6
 
     .line 122
-    aput-object v11, v12, v0
+    aput-object v5, v1, v6
 
     .line 123
     .line 124
-    const/4 v0, 0x7
+    const/4 v5, 0x7
 
     .line 125
-    aput-object v13, v12, v0
+    aput-object v4, v1, v5
 
     .line 126
     .line 127
-    const/16 v0, 0x8
+    const/16 v4, 0x8
 
     .line 128
     .line 129
-    aput-object v15, v12, v0
+    aput-object v3, v1, v4
 
     .line 130
     .line 131
-    aput-object v14, v12, v10
+    aput-object v2, v1, v0
 
     .line 132
     .line 133
-    sput-object v12, Landroidx/camera/camera2/internal/Camera2CameraImpl$InternalState;->b:[Landroidx/camera/camera2/internal/Camera2CameraImpl$InternalState;
+    sput-object v1, Landroidx/camera/camera2/internal/Camera2CameraImpl$InternalState;->b:[Landroidx/camera/camera2/internal/Camera2CameraImpl$InternalState;
 
     .line 134
     .line 135

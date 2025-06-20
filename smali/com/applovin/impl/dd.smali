@@ -152,15 +152,15 @@
 .method public a()V
     .locals 3
 
+    .line 1
     iget-object v0, p0, Lcom/applovin/impl/dd;->f:Ljava/lang/Object;
 
-    .line 1
     monitor-enter v0
 
+    .line 2
     :try_start_0
     iget-object v1, p0, Lcom/applovin/impl/dd;->c:Ljava/util/Queue;
 
-    .line 2
     invoke-interface {v1}, Ljava/util/Collection;->iterator()Ljava/util/Iterator;
 
     move-result-object v1
@@ -188,10 +188,10 @@
 
     goto :goto_1
 
+    .line 4
     :cond_0
     iget-object v1, p0, Lcom/applovin/impl/dd;->c:Ljava/util/Queue;
 
-    .line 4
     invoke-interface {v1}, Ljava/util/Collection;->clear()V
 
     .line 5
@@ -211,9 +211,9 @@
 .method public a(Lcom/applovin/mediation/MaxAd;)V
     .locals 1
 
+    .line 7
     iget-object v0, p0, Lcom/applovin/impl/dd;->b:Lcom/applovin/mediation/nativeAds/MaxNativeAdLoader;
 
-    .line 7
     invoke-virtual {v0, p1}, Lcom/applovin/mediation/nativeAds/MaxNativeAdLoader;->destroy(Lcom/applovin/mediation/MaxAd;)V
 
     return-void
@@ -222,9 +222,9 @@
 .method public a(Lcom/applovin/mediation/nativeAds/MaxNativeAdView;Lcom/applovin/mediation/MaxAd;)Z
     .locals 1
 
+    .line 8
     iget-object v0, p0, Lcom/applovin/impl/dd;->b:Lcom/applovin/mediation/nativeAds/MaxNativeAdLoader;
 
-    .line 8
     invoke-virtual {v0, p1, p2}, Lcom/applovin/mediation/nativeAds/MaxNativeAdLoader;->render(Lcom/applovin/mediation/nativeAds/MaxNativeAdView;Lcom/applovin/mediation/MaxAd;)Z
 
     move-result p1

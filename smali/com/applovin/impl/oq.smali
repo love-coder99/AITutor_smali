@@ -42,14 +42,14 @@
 .method private static a(Lcom/applovin/impl/es;)J
     .locals 5
 
-    .line 30
+    .line 39
     invoke-virtual {p0}, Lcom/applovin/impl/es;->a()Ljava/util/Map;
 
     move-result-object p0
 
+    .line 40
     const-string v0, "bitrate"
 
-    .line 31
     invoke-interface {p0, v0}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object v0
@@ -68,10 +68,10 @@
 
     return-wide v3
 
+    .line 41
     :cond_0
     const-string v0, "minBitrate"
 
-    .line 32
     invoke-interface {p0, v0}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object v0
@@ -82,9 +82,9 @@
 
     move-result-wide v3
 
+    .line 42
     const-string v0, "maxBitrate"
 
-    .line 33
     invoke-interface {p0, v0}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object p0
@@ -99,7 +99,7 @@
 
     const-wide/16 v2, 0x2
 
-    .line 34
+    .line 43
     div-long/2addr v0, v2
 
     return-wide v0
@@ -108,43 +108,43 @@
 .method private static a(Ljava/lang/String;)Lcom/applovin/impl/oq$a;
     .locals 1
 
-    .line 35
+    .line 44
     invoke-static {p0}, Lcom/applovin/impl/sdk/utils/StringUtils;->isValidString(Ljava/lang/String;)Z
 
     move-result v0
 
     if-eqz v0, :cond_1
 
+    .line 45
     const-string v0, "progressive"
 
-    .line 36
     invoke-virtual {v0, p0}, Ljava/lang/String;->equalsIgnoreCase(Ljava/lang/String;)Z
 
     move-result v0
 
     if-eqz v0, :cond_0
 
-    .line 37
+    .line 46
     sget-object p0, Lcom/applovin/impl/oq$a;->a:Lcom/applovin/impl/oq$a;
 
     return-object p0
 
+    .line 47
     :cond_0
     const-string v0, "streaming"
 
-    .line 38
     invoke-virtual {v0, p0}, Ljava/lang/String;->equalsIgnoreCase(Ljava/lang/String;)Z
 
     move-result p0
 
     if-eqz p0, :cond_1
 
-    .line 39
+    .line 48
     sget-object p0, Lcom/applovin/impl/oq$a;->b:Lcom/applovin/impl/oq$a;
 
     return-object p0
 
-    .line 40
+    .line 49
     :cond_1
     sget-object p0, Lcom/applovin/impl/oq$a;->a:Lcom/applovin/impl/oq$a;
 
@@ -154,6 +154,7 @@
 .method public static a(Lcom/applovin/impl/es;Lcom/applovin/impl/sdk/j;)Lcom/applovin/impl/oq;
     .locals 5
 
+    .line 1
     const-string v0, "VastVideoFile"
 
     if-eqz p0, :cond_4
@@ -183,18 +184,20 @@
 
     invoke-direct {v2}, Lcom/applovin/impl/oq;-><init>()V
 
+    .line 6
     iput-object v1, v2, Lcom/applovin/impl/oq;->a:Landroid/net/Uri;
 
+    .line 7
     iput-object v1, v2, Lcom/applovin/impl/oq;->b:Landroid/net/Uri;
 
-    .line 6
+    .line 8
     invoke-static {p0}, Lcom/applovin/impl/oq;->a(Lcom/applovin/impl/es;)J
 
     move-result-wide v3
 
     iput-wide v3, v2, Lcom/applovin/impl/oq;->h:J
 
-    .line 7
+    .line 9
     invoke-virtual {p0}, Lcom/applovin/impl/es;->a()Ljava/util/Map;
 
     move-result-object v1
@@ -213,7 +216,7 @@
 
     iput-object v1, v2, Lcom/applovin/impl/oq;->c:Lcom/applovin/impl/oq$a;
 
-    .line 8
+    .line 10
     invoke-virtual {p0}, Lcom/applovin/impl/es;->a()Ljava/util/Map;
 
     move-result-object v1
@@ -232,7 +235,7 @@
 
     iput v1, v2, Lcom/applovin/impl/oq;->g:I
 
-    .line 9
+    .line 11
     invoke-virtual {p0}, Lcom/applovin/impl/es;->a()Ljava/util/Map;
 
     move-result-object v1
@@ -251,7 +254,7 @@
 
     iput v1, v2, Lcom/applovin/impl/oq;->f:I
 
-    .line 10
+    .line 12
     invoke-virtual {p0}, Lcom/applovin/impl/es;->a()Ljava/util/Map;
 
     move-result-object p0
@@ -279,7 +282,7 @@
 
     goto :goto_0
 
-    .line 11
+    .line 13
     :cond_0
     invoke-virtual {p1}, Lcom/applovin/impl/sdk/j;->I()Lcom/applovin/impl/sdk/n;
 
@@ -301,7 +304,7 @@
 
     goto :goto_1
 
-    .line 12
+    .line 14
     :goto_0
     invoke-virtual {p1}, Lcom/applovin/impl/sdk/j;->I()Lcom/applovin/impl/sdk/n;
 
@@ -319,7 +322,7 @@
 
     invoke-virtual {v1, v0, v2, p0}, Lcom/applovin/impl/sdk/n;->a(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)V
 
-    .line 13
+    .line 15
     :cond_1
     invoke-virtual {p1}, Lcom/applovin/impl/sdk/j;->D()Lcom/applovin/impl/la;
 
@@ -333,7 +336,7 @@
 
     return-object p0
 
-    .line 14
+    .line 16
     :cond_3
     new-instance p0, Ljava/lang/IllegalArgumentException;
 
@@ -343,7 +346,7 @@
 
     throw p0
 
-    .line 15
+    .line 17
     :cond_4
     new-instance p0, Ljava/lang/IllegalArgumentException;
 
@@ -363,15 +366,15 @@
 
     return-object p1
 
+    .line 18
     :cond_0
     const-string v0, "source_video_uri"
 
-    .line 16
     invoke-static {p0, v0, p1}, Lcom/applovin/impl/sdk/utils/JsonUtils;->getString(Lorg/json/JSONObject;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v0
 
-    .line 17
+    .line 19
     invoke-static {v0}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
 
     move-result v1
@@ -380,20 +383,20 @@
 
     return-object p1
 
-    .line 18
+    .line 20
     :cond_1
     invoke-static {v0}, Landroid/net/Uri;->parse(Ljava/lang/String;)Landroid/net/Uri;
 
     move-result-object v1
 
+    .line 21
     const-string v2, "video_uri"
 
-    .line 19
     invoke-static {p0, v2, p1}, Lcom/applovin/impl/sdk/utils/JsonUtils;->getString(Lorg/json/JSONObject;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v2
 
-    .line 20
+    .line 22
     invoke-static {v2}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
 
     move-result v2
@@ -402,20 +405,20 @@
 
     return-object p1
 
-    .line 21
+    .line 23
     :cond_2
     invoke-static {v0}, Landroid/net/Uri;->parse(Ljava/lang/String;)Landroid/net/Uri;
 
     move-result-object v0
 
+    .line 24
     const-string v2, "file_type"
 
-    .line 22
     invoke-static {p0, v2, p1}, Lcom/applovin/impl/sdk/utils/JsonUtils;->getString(Lorg/json/JSONObject;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v2
 
-    .line 23
+    .line 25
     invoke-static {v2}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
 
     move-result v3
@@ -424,7 +427,7 @@
 
     return-object p1
 
-    .line 24
+    .line 26
     :cond_3
     sget-object p1, Lcom/applovin/impl/oq$a;->a:Lcom/applovin/impl/oq$a;
 
@@ -438,53 +441,60 @@
 
     move-result-object p1
 
-    .line 25
+    .line 27
     invoke-static {p1}, Lcom/applovin/impl/oq$a;->valueOf(Ljava/lang/String;)Lcom/applovin/impl/oq$a;
 
     move-result-object p1
 
+    .line 28
     const-string v3, "width"
 
     const/4 v4, 0x0
 
-    .line 26
     invoke-static {p0, v3, v4}, Lcom/applovin/impl/sdk/utils/JsonUtils;->getInt(Lorg/json/JSONObject;Ljava/lang/String;I)I
 
     move-result v3
 
+    .line 29
     const-string v5, "height"
 
-    .line 27
     invoke-static {p0, v5, v4}, Lcom/applovin/impl/sdk/utils/JsonUtils;->getInt(Lorg/json/JSONObject;Ljava/lang/String;I)I
 
     move-result v5
 
+    .line 30
     const-string v6, "bitrate"
 
-    .line 28
     invoke-static {p0, v6, v4}, Lcom/applovin/impl/sdk/utils/JsonUtils;->getInt(Lorg/json/JSONObject;Ljava/lang/String;I)I
 
     move-result p0
 
-    .line 29
+    .line 31
     new-instance v4, Lcom/applovin/impl/oq;
 
     invoke-direct {v4}, Lcom/applovin/impl/oq;-><init>()V
 
+    .line 32
     iput-object v1, v4, Lcom/applovin/impl/oq;->a:Landroid/net/Uri;
 
+    .line 33
     iput-object v0, v4, Lcom/applovin/impl/oq;->b:Landroid/net/Uri;
 
+    .line 34
     iput-object p1, v4, Lcom/applovin/impl/oq;->c:Lcom/applovin/impl/oq$a;
 
+    .line 35
     iput-object v2, v4, Lcom/applovin/impl/oq;->d:Ljava/lang/String;
 
+    .line 36
     iput v3, v4, Lcom/applovin/impl/oq;->f:I
 
+    .line 37
     iput v5, v4, Lcom/applovin/impl/oq;->g:I
 
     int-to-long p0, p0
 
+    .line 38
     iput-wide p0, v4, Lcom/applovin/impl/oq;->h:J
 
     return-object v4
@@ -495,16 +505,17 @@
 .method public a()Lorg/json/JSONObject;
     .locals 4
 
-    .line 41
+    .line 51
     new-instance v0, Lorg/json/JSONObject;
 
     invoke-direct {v0}, Lorg/json/JSONObject;-><init>()V
 
+    .line 52
     iget-object v1, p0, Lcom/applovin/impl/oq;->a:Landroid/net/Uri;
 
     if-eqz v1, :cond_0
 
-    .line 42
+    .line 53
     invoke-virtual {v1}, Landroid/net/Uri;->toString()Ljava/lang/String;
 
     move-result-object v1
@@ -513,12 +524,13 @@
 
     invoke-static {v0, v2, v1}, Lcom/applovin/impl/sdk/utils/JsonUtils;->putString(Lorg/json/JSONObject;Ljava/lang/String;Ljava/lang/String;)V
 
+    .line 54
     :cond_0
     iget-object v1, p0, Lcom/applovin/impl/oq;->b:Landroid/net/Uri;
 
     if-eqz v1, :cond_1
 
-    .line 43
+    .line 55
     invoke-virtual {v1}, Landroid/net/Uri;->toString()Ljava/lang/String;
 
     move-result-object v1
@@ -527,6 +539,7 @@
 
     invoke-static {v0, v2, v1}, Lcom/applovin/impl/sdk/utils/JsonUtils;->putString(Lorg/json/JSONObject;Ljava/lang/String;Ljava/lang/String;)V
 
+    .line 56
     :cond_1
     iget-object v1, p0, Lcom/applovin/impl/oq;->c:Lcom/applovin/impl/oq$a;
 
@@ -536,44 +549,43 @@
 
     goto :goto_0
 
-    .line 44
     :cond_2
     invoke-virtual {v1}, Ljava/lang/Object;->toString()Ljava/lang/String;
 
     move-result-object v1
 
+    .line 57
     :goto_0
     const-string v2, "delivery_type"
 
-    .line 45
     invoke-static {v0, v2, v1}, Lcom/applovin/impl/sdk/utils/JsonUtils;->putString(Lorg/json/JSONObject;Ljava/lang/String;Ljava/lang/String;)V
 
+    .line 58
     iget-object v1, p0, Lcom/applovin/impl/oq;->d:Ljava/lang/String;
 
     const-string v2, "file_type"
 
-    .line 46
     invoke-static {v0, v2, v1}, Lcom/applovin/impl/sdk/utils/JsonUtils;->putString(Lorg/json/JSONObject;Ljava/lang/String;Ljava/lang/String;)V
 
+    .line 59
     iget v1, p0, Lcom/applovin/impl/oq;->f:I
 
     const-string v2, "width"
 
-    .line 47
     invoke-static {v0, v2, v1}, Lcom/applovin/impl/sdk/utils/JsonUtils;->putInt(Lorg/json/JSONObject;Ljava/lang/String;I)V
 
+    .line 60
     iget v1, p0, Lcom/applovin/impl/oq;->g:I
 
     const-string v2, "height"
 
-    .line 48
     invoke-static {v0, v2, v1}, Lcom/applovin/impl/sdk/utils/JsonUtils;->putInt(Lorg/json/JSONObject;Ljava/lang/String;I)V
 
+    .line 61
     iget-wide v1, p0, Lcom/applovin/impl/oq;->h:J
 
     const-string v3, "bitrate"
 
-    .line 49
     invoke-static {v0, v3, v1, v2}, Lcom/applovin/impl/sdk/utils/JsonUtils;->putLong(Lorg/json/JSONObject;Ljava/lang/String;J)V
 
     return-object v0
@@ -582,7 +594,7 @@
 .method public a(Landroid/net/Uri;)V
     .locals 0
 
-    .line 1
+    .line 50
     iput-object p1, p0, Lcom/applovin/impl/oq;->b:Landroid/net/Uri;
 
     return-void
@@ -591,32 +603,44 @@
 .method public b()J
     .locals 2
 
+    .line 1
     iget-wide v0, p0, Lcom/applovin/impl/oq;->h:J
 
+    .line 2
+    .line 3
     return-wide v0
 .end method
 
 .method public c()Ljava/lang/String;
     .locals 1
 
+    .line 1
     iget-object v0, p0, Lcom/applovin/impl/oq;->d:Ljava/lang/String;
 
+    .line 2
+    .line 3
     return-object v0
 .end method
 
 .method public d()Landroid/net/Uri;
     .locals 1
 
+    .line 1
     iget-object v0, p0, Lcom/applovin/impl/oq;->a:Landroid/net/Uri;
 
+    .line 2
+    .line 3
     return-object v0
 .end method
 
 .method public e()Landroid/net/Uri;
     .locals 1
 
+    .line 1
     iget-object v0, p0, Lcom/applovin/impl/oq;->b:Landroid/net/Uri;
 
+    .line 2
+    .line 3
     return-object v0
 .end method
 

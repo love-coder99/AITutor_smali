@@ -4,6 +4,16 @@
 
 
 # annotations
+.annotation runtime Lca/c;
+    c = "androidx.compose.ui.text.font.AndroidFontLoader"
+    f = "AndroidFontLoader.android.kt"
+    l = {
+        0x39,
+        0x3a
+    }
+    m = "awaitLoad"
+.end annotation
+
 .annotation runtime Lkotlin/Metadata;
     k = 0x3
     mv = {
@@ -12,16 +22,6 @@
         0x0
     }
     xi = 0x30
-.end annotation
-
-.annotation runtime Lth/c;
-    c = "androidx.compose.ui.text.font.AndroidFontLoader"
-    f = "AndroidFontLoader.android.kt"
-    l = {
-        0x39,
-        0x3a
-    }
-    m = "awaitLoad"
 .end annotation
 
 
@@ -77,7 +77,7 @@
 
     const/4 v0, 0x0
 
-    invoke-virtual {p1, v0, p0}, Landroidx/compose/ui/text/font/a;->a(Landroidx/compose/ui/text/font/k;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
+    invoke-virtual {p1, v0, p0}, Landroidx/compose/ui/text/font/a;->a(Landroidx/compose/ui/text/font/i;Lkotlin/coroutines/jvm/internal/ContinuationImpl;)Ljava/lang/Object;
 
     move-result-object p1
 

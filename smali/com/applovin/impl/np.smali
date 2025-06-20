@@ -64,14 +64,15 @@
     .line 3
     invoke-direct {p0, v0}, Lcom/applovin/impl/a2;-><init>(Z)V
 
+    .line 4
     iput p2, p0, Lcom/applovin/impl/np;->e:I
 
-    .line 4
+    .line 5
     new-array p2, p1, [B
 
     iput-object p2, p0, Lcom/applovin/impl/np;->f:[B
 
-    .line 5
+    .line 6
     new-instance v0, Ljava/net/DatagramPacket;
 
     const/4 v1, 0x0
@@ -94,32 +95,33 @@
 
     return p1
 
+    .line 17
     :cond_0
     iget v0, p0, Lcom/applovin/impl/np;->n:I
 
     if-nez v0, :cond_1
 
+    .line 18
     :try_start_0
     iget-object v0, p0, Lcom/applovin/impl/np;->i:Ljava/net/DatagramSocket;
 
     iget-object v1, p0, Lcom/applovin/impl/np;->g:Ljava/net/DatagramPacket;
 
-    .line 15
     invoke-virtual {v0, v1}, Ljava/net/DatagramSocket;->receive(Ljava/net/DatagramPacket;)V
     :try_end_0
     .catch Ljava/net/SocketTimeoutException; {:try_start_0 .. :try_end_0} :catch_1
     .catch Ljava/io/IOException; {:try_start_0 .. :try_end_0} :catch_0
 
+    .line 19
     iget-object v0, p0, Lcom/applovin/impl/np;->g:Ljava/net/DatagramPacket;
 
-    .line 16
     invoke-virtual {v0}, Ljava/net/DatagramPacket;->getLength()I
 
     move-result v0
 
     iput v0, p0, Lcom/applovin/impl/np;->n:I
 
-    .line 17
+    .line 20
     invoke-virtual {p0, v0}, Lcom/applovin/impl/a2;->d(I)V
 
     goto :goto_2
@@ -134,7 +136,7 @@
 
     goto :goto_1
 
-    .line 18
+    .line 21
     :goto_0
     new-instance p2, Lcom/applovin/impl/np$a;
 
@@ -144,7 +146,7 @@
 
     throw p2
 
-    .line 19
+    .line 22
     :goto_1
     new-instance p2, Lcom/applovin/impl/np$a;
 
@@ -154,11 +156,11 @@
 
     throw p2
 
+    .line 23
     :cond_1
     :goto_2
     iget-object v0, p0, Lcom/applovin/impl/np;->g:Ljava/net/DatagramPacket;
 
-    .line 20
     invoke-virtual {v0}, Ljava/net/DatagramPacket;->getLength()I
 
     move-result v0
@@ -167,16 +169,17 @@
 
     sub-int/2addr v0, v1
 
-    .line 21
+    .line 24
     invoke-static {v1, p3}, Ljava/lang/Math;->min(II)I
 
     move-result p3
 
+    .line 25
     iget-object v1, p0, Lcom/applovin/impl/np;->f:[B
 
-    .line 22
     invoke-static {v1, v0, p1, p2, p3}, Ljava/lang/System;->arraycopy(Ljava/lang/Object;ILjava/lang/Object;II)V
 
+    .line 26
     iget p1, p0, Lcom/applovin/impl/np;->n:I
 
     sub-int/2addr p1, p3
@@ -199,9 +202,9 @@
 
     move-result-object v0
 
+    .line 3
     iget-object v1, p0, Lcom/applovin/impl/np;->h:Landroid/net/Uri;
 
-    .line 3
     invoke-virtual {v1}, Landroid/net/Uri;->getPort()I
 
     move-result v1
@@ -226,9 +229,9 @@
 
     iput-object v0, p0, Lcom/applovin/impl/np;->l:Ljava/net/InetSocketAddress;
 
+    .line 7
     iget-object v0, p0, Lcom/applovin/impl/np;->k:Ljava/net/InetAddress;
 
-    .line 7
     invoke-virtual {v0}, Ljava/net/InetAddress;->isMulticastAddress()Z
 
     move-result v0
@@ -244,11 +247,12 @@
 
     iput-object v0, p0, Lcom/applovin/impl/np;->j:Ljava/net/MulticastSocket;
 
+    .line 9
     iget-object v1, p0, Lcom/applovin/impl/np;->k:Ljava/net/InetAddress;
 
-    .line 9
     invoke-virtual {v0, v1}, Ljava/net/MulticastSocket;->joinGroup(Ljava/net/InetAddress;)V
 
+    .line 10
     iget-object v0, p0, Lcom/applovin/impl/np;->j:Ljava/net/MulticastSocket;
 
     iput-object v0, p0, Lcom/applovin/impl/np;->i:Ljava/net/DatagramSocket;
@@ -265,7 +269,7 @@
 
     goto :goto_2
 
-    .line 10
+    .line 11
     :cond_0
     new-instance v0, Ljava/net/DatagramSocket;
 
@@ -275,12 +279,12 @@
 
     iput-object v0, p0, Lcom/applovin/impl/np;->i:Ljava/net/DatagramSocket;
 
+    .line 12
     :goto_0
     iget-object v0, p0, Lcom/applovin/impl/np;->i:Ljava/net/DatagramSocket;
 
     iget v1, p0, Lcom/applovin/impl/np;->e:I
 
-    .line 11
     invoke-virtual {v0, v1}, Ljava/net/DatagramSocket;->setSoTimeout(I)V
     :try_end_0
     .catch Ljava/lang/SecurityException; {:try_start_0 .. :try_end_0} :catch_1
@@ -288,16 +292,17 @@
 
     const/4 v0, 0x1
 
+    .line 13
     iput-boolean v0, p0, Lcom/applovin/impl/np;->m:Z
 
-    .line 12
+    .line 14
     invoke-virtual {p0, p1}, Lcom/applovin/impl/a2;->c(Lcom/applovin/impl/k5;)V
 
     const-wide/16 v0, -0x1
 
     return-wide v0
 
-    .line 13
+    .line 15
     :goto_1
     new-instance v0, Lcom/applovin/impl/np$a;
 
@@ -307,7 +312,7 @@
 
     throw v0
 
-    .line 14
+    .line 16
     :goto_2
     new-instance v0, Lcom/applovin/impl/np$a;
 
@@ -321,8 +326,11 @@
 .method public c()Landroid/net/Uri;
     .locals 1
 
+    .line 1
     iget-object v0, p0, Lcom/applovin/impl/np;->h:Landroid/net/Uri;
 
+    .line 2
+    .line 3
     return-object v0
 .end method
 

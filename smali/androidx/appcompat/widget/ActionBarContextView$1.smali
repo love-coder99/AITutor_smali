@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Landroidx/appcompat/widget/ActionBarContextView;->initForMode(Lk/c;)V
+    value = Landroidx/appcompat/widget/ActionBarContextView;->initForMode(Ln/a;)V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -20,11 +20,11 @@
 # instance fields
 .field final synthetic this$0:Landroidx/appcompat/widget/ActionBarContextView;
 
-.field final synthetic val$mode:Lk/c;
+.field final synthetic val$mode:Ln/a;
 
 
 # direct methods
-.method public constructor <init>(Landroidx/appcompat/widget/ActionBarContextView;Lk/c;)V
+.method public constructor <init>(Landroidx/appcompat/widget/ActionBarContextView;Ln/a;)V
     .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -37,7 +37,7 @@
 
     .line 2
     .line 3
-    iput-object p2, p0, Landroidx/appcompat/widget/ActionBarContextView$1;->val$mode:Lk/c;
+    iput-object p2, p0, Landroidx/appcompat/widget/ActionBarContextView$1;->val$mode:Ln/a;
 
     .line 4
     .line 5
@@ -55,11 +55,11 @@
     .locals 0
 
     .line 1
-    iget-object p1, p0, Landroidx/appcompat/widget/ActionBarContextView$1;->val$mode:Lk/c;
+    iget-object p1, p0, Landroidx/appcompat/widget/ActionBarContextView$1;->val$mode:Ln/a;
 
     .line 2
     .line 3
-    invoke-virtual {p1}, Lk/c;->a()V
+    invoke-virtual {p1}, Ln/a;->a()V
 
     .line 4
     .line 5

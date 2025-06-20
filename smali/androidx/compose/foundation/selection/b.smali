@@ -8,7 +8,7 @@
 
 
 # virtual methods
-.method public final D0(Landroidx/compose/ui/semantics/j;)V
+.method public final B0(Landroidx/compose/ui/semantics/j;)V
     .locals 4
 
     .line 1
@@ -16,15 +16,15 @@
 
     .line 2
     .line 3
-    sget-object v1, Landroidx/compose/ui/semantics/s;->a:[Lgi/r;
+    sget-object v1, Landroidx/compose/ui/semantics/r;->a:[Lra/r;
 
     .line 4
     .line 5
-    sget-object v1, Landroidx/compose/ui/semantics/q;->B:Landroidx/compose/ui/semantics/t;
+    sget-object v1, Landroidx/compose/ui/semantics/p;->B:Landroidx/compose/ui/semantics/s;
 
     .line 6
     .line 7
-    sget-object v2, Landroidx/compose/ui/semantics/s;->a:[Lgi/r;
+    sget-object v2, Landroidx/compose/ui/semantics/r;->a:[Lra/r;
 
     .line 8
     .line 9
@@ -44,10 +44,15 @@
     move-result-object v0
 
     .line 17
-    invoke-virtual {v1, p1, v0}, Landroidx/compose/ui/semantics/t;->a(Landroidx/compose/ui/semantics/u;Ljava/lang/Object;)V
+    invoke-virtual {v1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
     .line 18
     .line 19
     .line 20
+    invoke-virtual {p1, v1, v0}, Landroidx/compose/ui/semantics/j;->c(Landroidx/compose/ui/semantics/s;Ljava/lang/Object;)V
+
+    .line 21
+    .line 22
+    .line 23
     return-void
 .end method

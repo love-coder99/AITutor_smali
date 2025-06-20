@@ -69,11 +69,11 @@
 .method private a(Ljava/util/List;)V
     .locals 8
 
+    .line 31
     iget-boolean v0, p0, Lcom/applovin/impl/sdk/network/c;->k:Z
 
     if-eqz v0, :cond_0
 
-    .line 31
     invoke-interface {p1}, Ljava/util/List;->isEmpty()Z
 
     move-result v0
@@ -82,6 +82,7 @@
 
     return-void
 
+    .line 32
     :cond_0
     iget-object v0, p0, Lcom/applovin/impl/sdk/network/c;->j:Ljava/util/concurrent/atomic/AtomicBoolean;
 
@@ -89,7 +90,6 @@
 
     const/4 v2, 0x1
 
-    .line 32
     invoke-virtual {v0, v1, v2}, Ljava/util/concurrent/atomic/AtomicBoolean;->compareAndSet(ZZ)Z
 
     move-result v0
@@ -154,9 +154,9 @@
 
     invoke-static {v4, v3, v5}, Lcom/applovin/impl/sdk/n;->c(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)V
 
+    .line 37
     iget-object v3, p0, Lcom/applovin/impl/yl;->a:Lcom/applovin/impl/sdk/j;
 
-    .line 37
     invoke-virtual {v3}, Lcom/applovin/impl/sdk/j;->D()Lcom/applovin/impl/la;
 
     move-result-object v3
@@ -174,9 +174,9 @@
 
     invoke-direct {p1}, Lorg/json/JSONObject;-><init>()V
 
+    .line 39
     const-string v3, "pb"
 
-    .line 39
     invoke-virtual {p1, v3, v0}, Lorg/json/JSONObject;->put(Ljava/lang/String;Ljava/lang/Object;)Lorg/json/JSONObject;
 
     .line 40
@@ -195,16 +195,16 @@
 
     invoke-direct {v3, p1}, Ljava/io/ByteArrayInputStream;-><init>([B)V
 
+    .line 42
     iget-object p1, p0, Lcom/applovin/impl/yl;->a:Lcom/applovin/impl/sdk/j;
 
-    .line 42
     invoke-virtual {p1}, Lcom/applovin/impl/sdk/j;->A()Lcom/applovin/impl/sdk/l;
 
     move-result-object p1
 
+    .line 43
     const-string v5, "persistent_postback_cache.json"
 
-    .line 43
     invoke-static {}, Lcom/applovin/impl/sdk/j;->m()Landroid/content/Context;
 
     move-result-object v6
@@ -274,9 +274,9 @@
 
     invoke-static {v4, v0, p1}, Lcom/applovin/impl/sdk/n;->c(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)V
 
+    .line 48
     iget-object v0, p0, Lcom/applovin/impl/yl;->a:Lcom/applovin/impl/sdk/j;
 
-    .line 48
     invoke-virtual {v0}, Lcom/applovin/impl/sdk/j;->D()Lcom/applovin/impl/la;
 
     move-result-object v0
@@ -285,11 +285,11 @@
 
     invoke-virtual {v0, v4, v2, p1}, Lcom/applovin/impl/la;->a(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)V
 
+    .line 49
     :cond_4
     :goto_2
     iget-object p1, p0, Lcom/applovin/impl/sdk/network/c;->j:Ljava/util/concurrent/atomic/AtomicBoolean;
 
-    .line 49
     invoke-virtual {p1, v1}, Ljava/util/concurrent/atomic/AtomicBoolean;->set(Z)V
 
     return-void
@@ -300,18 +300,18 @@
 .method public a(I)Ljava/util/List;
     .locals 13
 
+    .line 1
     const-string v0, "removeAfterDeserializationFail"
 
     const-string v1, "Deserializing "
 
-    .line 1
     new-instance v2, Ljava/util/ArrayList;
 
     invoke-direct {v2}, Ljava/util/ArrayList;-><init>()V
 
+    .line 2
     iget-object v3, p0, Lcom/applovin/impl/yl;->a:Lcom/applovin/impl/sdk/j;
 
-    .line 2
     invoke-virtual {v3}, Lcom/applovin/impl/sdk/j;->A()Lcom/applovin/impl/sdk/l;
 
     move-result-object v3
@@ -331,9 +331,9 @@
 
     if-nez v4, :cond_0
 
+    .line 4
     const-string p1, "Postbacks queue file does not exist."
 
-    .line 4
     invoke-static {v6, p1}, Lcom/applovin/impl/sdk/n;->h(Ljava/lang/String;Ljava/lang/String;)V
 
     return-object v2
@@ -360,9 +360,9 @@
 
     if-eqz v7, :cond_1
 
+    .line 8
     const-string p1, "Postbacks queue file has no content."
 
-    .line 8
     invoke-static {v6, p1}, Lcom/applovin/impl/sdk/n;->h(Ljava/lang/String;Ljava/lang/String;)V
 
     return-object v2
@@ -378,9 +378,9 @@
 
     invoke-direct {v9, v5}, Lorg/json/JSONObject;-><init>(Ljava/lang/String;)V
 
+    .line 10
     const-string v5, "pb"
 
-    .line 10
     invoke-virtual {v9, v5}, Lorg/json/JSONObject;->getJSONArray(Ljava/lang/String;)Lorg/json/JSONArray;
 
     move-result-object v5
@@ -434,9 +434,9 @@
 
     invoke-virtual {v2, v1}, Ljava/util/ArrayList;->ensureCapacity(I)V
 
+    .line 13
     iget-object v1, p0, Lcom/applovin/impl/yl;->a:Lcom/applovin/impl/sdk/j;
 
-    .line 13
     sget-object v9, Lcom/applovin/impl/sj;->L2:Lcom/applovin/impl/sj;
 
     invoke-virtual {v1, v9}, Lcom/applovin/impl/sdk/j;->a(Lcom/applovin/impl/sj;)Ljava/lang/Object;
@@ -519,16 +519,16 @@
 
     goto :goto_3
 
+    .line 20
     :goto_2
     :try_start_2
     const-string v11, "Unable to deserialize postback from json"
 
-    .line 20
     invoke-static {v6, v11, v10}, Lcom/applovin/impl/sdk/n;->c(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)V
 
+    .line 21
     iget-object v11, p0, Lcom/applovin/impl/yl;->a:Lcom/applovin/impl/sdk/j;
 
-    .line 21
     invoke-virtual {v11}, Lcom/applovin/impl/sdk/j;->D()Lcom/applovin/impl/la;
 
     move-result-object v11
@@ -580,19 +580,19 @@
 
     goto :goto_5
 
+    .line 23
     :goto_4
     :try_start_3
     const-string v1, "Failed to load postback queue"
 
-    .line 23
     invoke-static {v6, v1, p1}, Lcom/applovin/impl/sdk/n;->c(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)V
     :try_end_3
     .catchall {:try_start_3 .. :try_end_3} :catchall_3
 
+    .line 24
     :try_start_4
     iget-object v1, p0, Lcom/applovin/impl/yl;->a:Lcom/applovin/impl/sdk/j;
 
-    .line 24
     invoke-virtual {v1}, Lcom/applovin/impl/sdk/j;->D()Lcom/applovin/impl/la;
 
     move-result-object v1
@@ -603,9 +603,9 @@
     :try_end_4
     .catchall {:try_start_4 .. :try_end_4} :catchall_2
 
+    .line 25
     iget-object p1, p0, Lcom/applovin/impl/yl;->a:Lcom/applovin/impl/sdk/j;
 
-    .line 25
     sget-object v1, Lcom/applovin/impl/sj;->M0:Lcom/applovin/impl/sj;
 
     invoke-virtual {p1, v1}, Lcom/applovin/impl/sdk/j;->a(Lcom/applovin/impl/sj;)Ljava/lang/Object;
@@ -647,9 +647,9 @@
     :goto_6
     if-eqz v7, :cond_6
 
+    .line 28
     iget-object v1, p0, Lcom/applovin/impl/yl;->a:Lcom/applovin/impl/sdk/j;
 
-    .line 28
     sget-object v2, Lcom/applovin/impl/sj;->M0:Lcom/applovin/impl/sj;
 
     invoke-virtual {v1, v2}, Lcom/applovin/impl/sdk/j;->a(Lcom/applovin/impl/sj;)Ljava/lang/Object;

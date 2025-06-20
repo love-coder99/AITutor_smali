@@ -3,14 +3,14 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lzh/c;
+.implements Lka/c;
 
 
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "Lkotlin/jvm/internal/Lambda;",
-        "Lzh/c;"
+        "Lka/c;"
     }
 .end annotation
 
@@ -19,10 +19,10 @@
         "\u0000\u000c\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0008\u0003\u0010\u0004\u001a\u00020\u0001*\u00020\u0000H\n\u00a2\u0006\u0004\u0008\u0002\u0010\u0003"
     }
     d2 = {
-        "Lo1/e;",
-        "Lqh/r;",
+        "Ls0/c;",
+        "LX9/j;",
         "invoke",
-        "(Lo1/e;)V",
+        "(Ls0/c;)V",
         "<anonymous>"
     }
     k = 0x3
@@ -35,33 +35,39 @@
 
 
 # instance fields
-.field final synthetic $block:Lzh/c;
+.field final synthetic $block:Lka/c;
     .annotation system Ldalvik/annotation/Signature;
         value = {
-            "Lzh/c;"
+            "Lka/c;"
         }
     .end annotation
 .end field
 
 
 # direct methods
-.method public constructor <init>(Lzh/c;)V
+.method public constructor <init>(Lka/c;)V
     .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
-            "Lzh/c;",
+            "Lka/c;",
             ")V"
         }
     .end annotation
 
     .line 1
-    iput-object p1, p0, Landroidx/compose/ui/draw/CacheDrawScope$onDrawBehind$1;->$block:Lzh/c;
+    iput-object p1, p0, Landroidx/compose/ui/draw/CacheDrawScope$onDrawBehind$1;->$block:Lka/c;
 
+    .line 2
+    .line 3
     const/4 p1, 0x1
 
+    .line 4
     invoke-direct {p0, p1}, Lkotlin/jvm/internal/Lambda;-><init>(I)V
 
+    .line 5
+    .line 6
+    .line 7
     return-void
 .end method
 
@@ -71,27 +77,27 @@
     .locals 0
 
     .line 1
-    check-cast p1, Lo1/e;
+    check-cast p1, Ls0/c;
 
-    invoke-virtual {p0, p1}, Landroidx/compose/ui/draw/CacheDrawScope$onDrawBehind$1;->invoke(Lo1/e;)V
+    invoke-virtual {p0, p1}, Landroidx/compose/ui/draw/CacheDrawScope$onDrawBehind$1;->invoke(Ls0/c;)V
 
-    sget-object p1, Lqh/r;->a:Lqh/r;
+    sget-object p1, LX9/j;->a:LX9/j;
 
     return-object p1
 .end method
 
-.method public final invoke(Lo1/e;)V
+.method public final invoke(Ls0/c;)V
     .locals 1
 
-    iget-object v0, p0, Landroidx/compose/ui/draw/CacheDrawScope$onDrawBehind$1;->$block:Lzh/c;
-
     .line 2
-    invoke-interface {v0, p1}, Lzh/c;->invoke(Ljava/lang/Object;)Ljava/lang/Object;
+    iget-object v0, p0, Landroidx/compose/ui/draw/CacheDrawScope$onDrawBehind$1;->$block:Lka/c;
 
-    check-cast p1, Landroidx/compose/ui/node/g0;
+    invoke-interface {v0, p1}, Lka/c;->invoke(Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 3
-    invoke-virtual {p1}, Landroidx/compose/ui/node/g0;->b()V
+    check-cast p1, Landroidx/compose/ui/node/E;
+
+    invoke-virtual {p1}, Landroidx/compose/ui/node/E;->a()V
 
     return-void
 .end method

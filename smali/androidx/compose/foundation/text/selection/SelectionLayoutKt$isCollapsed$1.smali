@@ -3,14 +3,14 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lzh/c;
+.implements Lka/c;
 
 
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "Lkotlin/jvm/internal/Lambda;",
-        "Lzh/c;"
+        "Lka/c;"
     }
 .end annotation
 
@@ -21,7 +21,7 @@
     d2 = {
         "Landroidx/compose/foundation/text/selection/g;",
         "it",
-        "Lqh/r;",
+        "LX9/j;",
         "invoke",
         "(Landroidx/compose/foundation/text/selection/g;)V",
         "<anonymous>"
@@ -62,7 +62,7 @@
 
     invoke-virtual {p0, p1}, Landroidx/compose/foundation/text/selection/SelectionLayoutKt$isCollapsed$1;->invoke(Landroidx/compose/foundation/text/selection/g;)V
 
-    sget-object p1, Lqh/r;->a:Lqh/r;
+    sget-object p1, LX9/j;->a:LX9/j;
 
     return-object p1
 .end method
@@ -71,16 +71,16 @@
     .locals 1
 
     .line 1
-    iget-object p1, p1, Landroidx/compose/foundation/text/selection/g;->d:Landroidx/compose/ui/text/f0;
+    iget-object p1, p1, Landroidx/compose/foundation/text/selection/g;->d:Landroidx/compose/ui/text/F;
 
     .line 2
-    iget-object p1, p1, Landroidx/compose/ui/text/f0;->a:Landroidx/compose/ui/text/e0;
+    iget-object p1, p1, Landroidx/compose/ui/text/F;->a:Landroidx/compose/ui/text/E;
 
     .line 3
-    iget-object p1, p1, Landroidx/compose/ui/text/e0;->a:Landroidx/compose/ui/text/f;
+    iget-object p1, p1, Landroidx/compose/ui/text/E;->a:Landroidx/compose/ui/text/g;
 
     .line 4
-    iget-object p1, p1, Landroidx/compose/ui/text/f;->b:Ljava/lang/String;
+    iget-object p1, p1, Landroidx/compose/ui/text/g;->b:Ljava/lang/String;
 
     .line 5
     invoke-virtual {p1}, Ljava/lang/String;->length()I
@@ -89,11 +89,11 @@
 
     if-lez p1, :cond_0
 
+    .line 6
     iget-object p1, p0, Landroidx/compose/foundation/text/selection/SelectionLayoutKt$isCollapsed$1;->$allTextsEmpty:Lkotlin/jvm/internal/Ref$BooleanRef;
 
     const/4 v0, 0x0
 
-    .line 6
     iput-boolean v0, p1, Lkotlin/jvm/internal/Ref$BooleanRef;->element:Z
 
     :cond_0

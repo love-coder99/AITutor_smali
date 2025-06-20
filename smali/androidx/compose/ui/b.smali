@@ -3,7 +3,7 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lkotlin/coroutines/h;
+.implements Lba/f;
 
 
 # static fields

@@ -171,11 +171,11 @@
 .method private c(Ljava/io/File;)V
     .locals 11
 
+    .line 9
     const-string v0, ""
 
     const-string v1, " "
 
-    .line 6
     invoke-virtual {p1}, Ljava/io/File;->exists()Z
 
     move-result v2
@@ -197,7 +197,7 @@
     :cond_0
     const/4 v2, 0x0
 
-    .line 7
+    .line 10
     :try_start_0
     new-instance v3, Ljava/io/BufferedReader;
 
@@ -213,7 +213,7 @@
 
     const/4 v2, 0x0
 
-    .line 8
+    .line 11
     :goto_0
     :try_start_1
     invoke-virtual {v3}, Ljava/io/BufferedReader;->readLine()Ljava/lang/String;
@@ -226,6 +226,7 @@
 
     if-ge v2, v5, :cond_a
 
+    .line 12
     iget-object v5, p0, Lcom/apm/insight/nativecrash/c;->a:Ljava/lang/String;
 
     const/4 v6, 0x3
@@ -240,21 +241,20 @@
 
     const-string v5, "pid: "
 
-    .line 9
     invoke-virtual {v4, v5}, Ljava/lang/String;->startsWith(Ljava/lang/String;)Z
 
     move-result v5
 
     if-eqz v5, :cond_1
 
+    .line 13
     sget-object v5, Lcom/apm/insight/nativecrash/c;->i:Ljava/util/regex/Pattern;
 
-    .line 10
     invoke-virtual {v5, v4}, Ljava/util/regex/Pattern;->matcher(Ljava/lang/CharSequence;)Ljava/util/regex/Matcher;
 
     move-result-object v4
 
-    .line 11
+    .line 14
     invoke-virtual {v4}, Ljava/util/regex/Matcher;->find()Z
 
     move-result v5
@@ -267,28 +267,28 @@
 
     if-ne v5, v8, :cond_9
 
-    .line 12
+    .line 15
     invoke-virtual {v4, v9}, Ljava/util/regex/Matcher;->group(I)Ljava/lang/String;
 
     move-result-object v5
 
     iput-object v5, p0, Lcom/apm/insight/nativecrash/c;->a:Ljava/lang/String;
 
-    .line 13
+    .line 16
     invoke-virtual {v4, v7}, Ljava/util/regex/Matcher;->group(I)Ljava/lang/String;
 
     move-result-object v5
 
     iput-object v5, p0, Lcom/apm/insight/nativecrash/c;->b:Ljava/lang/String;
 
-    .line 14
+    .line 17
     invoke-virtual {v4, v6}, Ljava/util/regex/Matcher;->group(I)Ljava/lang/String;
 
     move-result-object v5
 
     iput-object v5, p0, Lcom/apm/insight/nativecrash/c;->d:Ljava/lang/String;
 
-    .line 15
+    .line 18
     invoke-virtual {v4, v8}, Ljava/util/regex/Matcher;->group(I)Ljava/lang/String;
 
     move-result-object v4
@@ -304,6 +304,7 @@
 
     goto/16 :goto_4
 
+    .line 19
     :cond_1
     iget-object v5, p0, Lcom/apm/insight/nativecrash/c;->e:Ljava/lang/String;
     :try_end_1
@@ -316,21 +317,20 @@
     :try_start_2
     const-string v5, "signal "
 
-    .line 16
     invoke-virtual {v4, v5}, Ljava/lang/String;->startsWith(Ljava/lang/String;)Z
 
     move-result v5
 
     if-eqz v5, :cond_3
 
+    .line 20
     sget-object v5, Lcom/apm/insight/nativecrash/c;->j:Ljava/util/regex/Pattern;
 
-    .line 17
     invoke-virtual {v5, v4}, Ljava/util/regex/Pattern;->matcher(Ljava/lang/CharSequence;)Ljava/util/regex/Matcher;
 
     move-result-object v4
 
-    .line 18
+    .line 21
     invoke-virtual {v4}, Ljava/util/regex/Matcher;->find()Z
 
     move-result v5
@@ -343,7 +343,7 @@
 
     if-ne v5, v6, :cond_9
 
-    .line 19
+    .line 22
     invoke-virtual {v4, v9}, Ljava/util/regex/Matcher;->group(I)Ljava/lang/String;
 
     move-result-object v5
@@ -352,7 +352,7 @@
 
     move-result-object v5
 
-    .line 20
+    .line 23
     invoke-virtual {v4, v7}, Ljava/util/regex/Matcher;->group(I)Ljava/lang/String;
 
     move-result-object v4
@@ -361,16 +361,16 @@
 
     move-result-object v4
 
+    .line 24
     const-string v6, "frompid"
 
-    .line 21
     invoke-virtual {v4, v6}, Ljava/lang/String;->indexOf(Ljava/lang/String;)I
 
     move-result v6
 
     if-lez v6, :cond_2
 
-    .line 22
+    .line 25
     new-instance v7, Ljava/lang/StringBuilder;
 
     invoke-direct {v7}, Ljava/lang/StringBuilder;-><init>()V
@@ -389,7 +389,7 @@
 
     move-result-object v4
 
-    .line 23
+    .line 26
     :cond_2
     new-instance v6, Ljava/lang/StringBuilder;
 
@@ -415,6 +415,7 @@
 
     goto/16 :goto_3
 
+    .line 27
     :cond_3
     iget-object v5, p0, Lcom/apm/insight/nativecrash/c;->f:Ljava/lang/String;
 
@@ -422,21 +423,20 @@
 
     const-string v5, "Abort "
 
-    .line 24
     invoke-virtual {v4, v5}, Ljava/lang/String;->startsWith(Ljava/lang/String;)Z
 
     move-result v5
 
     if-eqz v5, :cond_4
 
+    .line 28
     sget-object v5, Lcom/apm/insight/nativecrash/c;->k:Ljava/util/regex/Pattern;
 
-    .line 25
     invoke-virtual {v5, v4}, Ljava/util/regex/Pattern;->matcher(Ljava/lang/CharSequence;)Ljava/util/regex/Matcher;
 
     move-result-object v4
 
-    .line 26
+    .line 29
     invoke-virtual {v4}, Ljava/util/regex/Matcher;->find()Z
 
     move-result v5
@@ -449,7 +449,7 @@
 
     if-ne v5, v9, :cond_9
 
-    .line 27
+    .line 30
     new-instance v5, Ljava/lang/StringBuilder;
 
     const-string v6, "abort message: "
@@ -472,6 +472,7 @@
 
     goto/16 :goto_3
 
+    .line 31
     :cond_4
     iget-object v5, p0, Lcom/apm/insight/nativecrash/c;->f:Ljava/lang/String;
 
@@ -479,21 +480,20 @@
 
     const-string v5, "Crash "
 
-    .line 28
     invoke-virtual {v4, v5}, Ljava/lang/String;->startsWith(Ljava/lang/String;)Z
 
     move-result v5
 
     if-eqz v5, :cond_5
 
+    .line 32
     sget-object v5, Lcom/apm/insight/nativecrash/c;->l:Ljava/util/regex/Pattern;
 
-    .line 29
     invoke-virtual {v5, v4}, Ljava/util/regex/Pattern;->matcher(Ljava/lang/CharSequence;)Ljava/util/regex/Matcher;
 
     move-result-object v4
 
-    .line 30
+    .line 33
     invoke-virtual {v4}, Ljava/util/regex/Matcher;->find()Z
 
     move-result v5
@@ -506,7 +506,7 @@
 
     if-ne v5, v9, :cond_9
 
-    .line 31
+    .line 34
     new-instance v5, Ljava/lang/StringBuilder;
 
     const-string v6, "crash message: "
@@ -529,6 +529,7 @@
 
     goto/16 :goto_3
 
+    .line 35
     :cond_5
     iget-object v5, p0, Lcom/apm/insight/nativecrash/c;->g:Ljava/lang/String;
 
@@ -536,19 +537,18 @@
 
     const-string v5, "backtrace:"
 
-    .line 32
     invoke-virtual {v4, v5}, Ljava/lang/String;->startsWith(Ljava/lang/String;)Z
 
     move-result v5
 
     if-eqz v5, :cond_7
 
-    .line 33
+    .line 36
     new-instance v4, Ljava/lang/StringBuilder;
 
     invoke-direct {v4}, Ljava/lang/StringBuilder;-><init>()V
 
-    .line 34
+    .line 37
     :goto_1
     invoke-virtual {v3}, Ljava/io/BufferedReader;->readLine()Ljava/lang/String;
 
@@ -556,16 +556,16 @@
 
     if-eqz v5, :cond_6
 
+    .line 38
     const-string v6, "    #"
 
-    .line 35
     invoke-virtual {v5, v6}, Ljava/lang/String;->startsWith(Ljava/lang/String;)Z
 
     move-result v6
 
     if-eqz v6, :cond_6
 
-    .line 36
+    .line 39
     invoke-virtual {v5, v8}, Ljava/lang/String;->substring(I)Ljava/lang/String;
 
     move-result-object v5
@@ -581,7 +581,7 @@
     :cond_6
     add-int/lit8 v2, v2, 0x1
 
-    .line 37
+    .line 40
     invoke-virtual {v4}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
     move-result-object v4
@@ -590,10 +590,10 @@
 
     goto :goto_3
 
+    .line 41
     :cond_7
     iget-object v5, p0, Lcom/apm/insight/nativecrash/c;->h:Ljava/util/Map;
 
-    .line 38
     invoke-interface {v5}, Ljava/util/Map;->isEmpty()Z
 
     move-result v5
@@ -608,7 +608,7 @@
 
     if-eqz v4, :cond_9
 
-    .line 39
+    .line 42
     :cond_8
     :goto_2
     invoke-virtual {v3}, Ljava/io/BufferedReader;->readLine()Ljava/lang/String;
@@ -617,56 +617,56 @@
 
     if-eqz p1, :cond_a
 
+    .line 43
     const-string v0, "BuildId:"
 
-    .line 40
     invoke-virtual {p1, v0}, Ljava/lang/String;->contains(Ljava/lang/CharSequence;)Z
 
     move-result v0
 
     if-eqz v0, :cond_a
 
+    .line 44
     sget-object v0, Lcom/apm/insight/nativecrash/c;->m:Ljava/util/regex/Pattern;
 
-    .line 41
     invoke-virtual {v0, p1}, Ljava/util/regex/Pattern;->matcher(Ljava/lang/CharSequence;)Ljava/util/regex/Matcher;
 
     move-result-object p1
 
-    .line 42
+    .line 45
     invoke-virtual {p1}, Ljava/util/regex/Matcher;->find()Z
 
     move-result v0
 
     if-eqz v0, :cond_8
 
-    .line 43
+    .line 46
     invoke-virtual {p1, v9}, Ljava/util/regex/Matcher;->group(I)Ljava/lang/String;
 
     move-result-object v0
 
-    .line 44
+    .line 47
     invoke-virtual {p1, v7}, Ljava/util/regex/Matcher;->group(I)Ljava/lang/String;
 
     move-result-object v1
 
-    .line 45
+    .line 48
     invoke-virtual {p1, v6}, Ljava/util/regex/Matcher;->group(I)Ljava/lang/String;
 
     move-result-object p1
 
+    .line 49
     const-string v2, "data"
 
-    .line 46
     invoke-virtual {v0, v2}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
     move-result v0
 
     if-eqz v0, :cond_8
 
+    .line 50
     iget-object v0, p0, Lcom/apm/insight/nativecrash/c;->h:Ljava/util/Map;
 
-    .line 47
     invoke-interface {v0, v1, p1}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
     :try_end_2
     .catchall {:try_start_2 .. :try_end_2} :catchall_0
@@ -679,7 +679,7 @@
 
     goto/16 :goto_0
 
-    .line 48
+    .line 51
     :cond_a
     invoke-static {v3}, Lcom/apm/insight/a;->a(Ljava/io/Closeable;)V
 
@@ -688,19 +688,19 @@
     :catchall_1
     move-exception p1
 
-    .line 49
+    .line 52
     :goto_4
     :try_start_3
     invoke-static {}, Lcom/apm/insight/c;->a()Lcom/apm/insight/b/a;
 
     const-string v0, "NPTH_CATCH"
 
-    .line 50
+    .line 53
     invoke-static {p1, v0}, Lcom/apm/insight/runtime/k;->a(Ljava/lang/Throwable;Ljava/lang/String;)V
     :try_end_3
     .catchall {:try_start_3 .. :try_end_3} :catchall_2
 
-    .line 51
+    .line 54
     invoke-static {v2}, Lcom/apm/insight/a;->a(Ljava/io/Closeable;)V
 
     return-void
@@ -823,30 +823,33 @@
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
 
+    .line 2
     iget-object v1, p0, Lcom/apm/insight/nativecrash/c;->e:Ljava/lang/String;
 
     if-eqz v1, :cond_0
 
-    .line 2
+    .line 3
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    .line 4
     :cond_0
     iget-object v1, p0, Lcom/apm/insight/nativecrash/c;->f:Ljava/lang/String;
 
     if-eqz v1, :cond_1
 
-    .line 3
+    .line 5
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    .line 6
     :cond_1
     iget-object v1, p0, Lcom/apm/insight/nativecrash/c;->g:Ljava/lang/String;
 
     if-eqz v1, :cond_2
 
-    .line 4
+    .line 7
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    .line 5
+    .line 8
     :cond_2
     invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 

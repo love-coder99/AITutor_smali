@@ -1,12 +1,12 @@
 .class final Landroidx/compose/foundation/ClickableElement;
-.super Landroidx/compose/ui/node/w0;
+.super Landroidx/compose/ui/node/V;
 .source "SourceFile"
 
 
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
-        "Landroidx/compose/ui/node/w0;"
+        "Landroidx/compose/ui/node/V;"
     }
 .end annotation
 
@@ -16,7 +16,7 @@
     }
     d2 = {
         "Landroidx/compose/foundation/ClickableElement;",
-        "Landroidx/compose/ui/node/w0;",
+        "Landroidx/compose/ui/node/V;",
         "Landroidx/compose/foundation/i;",
         "foundation_release"
     }
@@ -26,25 +26,26 @@
         0x8,
         0x0
     }
+    xi = 0x30
 .end annotation
 
 
 # instance fields
-.field public final c:Landroidx/compose/foundation/interaction/l;
+.field public final a:Landroidx/compose/foundation/interaction/l;
 
-.field public final d:Landroidx/compose/foundation/i0;
+.field public final b:Landroidx/compose/foundation/G;
 
-.field public final e:Z
+.field public final c:Z
 
-.field public final f:Ljava/lang/String;
+.field public final d:Ljava/lang/String;
 
-.field public final g:Landroidx/compose/ui/semantics/g;
+.field public final e:Landroidx/compose/ui/semantics/g;
 
-.field public final h:Lzh/a;
+.field public final f:Lka/a;
 
 
 # direct methods
-.method public constructor <init>(Landroidx/compose/foundation/interaction/l;Landroidx/compose/foundation/i0;ZLjava/lang/String;Landroidx/compose/ui/semantics/g;Lzh/a;)V
+.method public constructor <init>(Landroidx/compose/foundation/interaction/l;Landroidx/compose/foundation/G;ZLjava/lang/String;Landroidx/compose/ui/semantics/g;Lka/a;)V
     .locals 0
 
     .line 1
@@ -53,27 +54,27 @@
     .line 2
     .line 3
     .line 4
-    iput-object p1, p0, Landroidx/compose/foundation/ClickableElement;->c:Landroidx/compose/foundation/interaction/l;
+    iput-object p1, p0, Landroidx/compose/foundation/ClickableElement;->a:Landroidx/compose/foundation/interaction/l;
 
     .line 5
     .line 6
-    iput-object p2, p0, Landroidx/compose/foundation/ClickableElement;->d:Landroidx/compose/foundation/i0;
+    iput-object p2, p0, Landroidx/compose/foundation/ClickableElement;->b:Landroidx/compose/foundation/G;
 
     .line 7
     .line 8
-    iput-boolean p3, p0, Landroidx/compose/foundation/ClickableElement;->e:Z
+    iput-boolean p3, p0, Landroidx/compose/foundation/ClickableElement;->c:Z
 
     .line 9
     .line 10
-    iput-object p4, p0, Landroidx/compose/foundation/ClickableElement;->f:Ljava/lang/String;
+    iput-object p4, p0, Landroidx/compose/foundation/ClickableElement;->d:Ljava/lang/String;
 
     .line 11
     .line 12
-    iput-object p5, p0, Landroidx/compose/foundation/ClickableElement;->g:Landroidx/compose/ui/semantics/g;
+    iput-object p5, p0, Landroidx/compose/foundation/ClickableElement;->e:Landroidx/compose/ui/semantics/g;
 
     .line 13
     .line 14
-    iput-object p6, p0, Landroidx/compose/foundation/ClickableElement;->h:Lzh/a;
+    iput-object p6, p0, Landroidx/compose/foundation/ClickableElement;->f:Lka/a;
 
     .line 15
     .line 16
@@ -132,15 +133,15 @@
 
     .line 19
     .line 20
-    iget-object v2, p0, Landroidx/compose/foundation/ClickableElement;->c:Landroidx/compose/foundation/interaction/l;
+    iget-object v2, p0, Landroidx/compose/foundation/ClickableElement;->a:Landroidx/compose/foundation/interaction/l;
 
     .line 21
     .line 22
-    iget-object v3, p1, Landroidx/compose/foundation/ClickableElement;->c:Landroidx/compose/foundation/interaction/l;
+    iget-object v3, p1, Landroidx/compose/foundation/ClickableElement;->a:Landroidx/compose/foundation/interaction/l;
 
     .line 23
     .line 24
-    invoke-static {v2, v3}, Lrb/h;->d(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v2, v3}, Lkotlin/jvm/internal/h;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     .line 25
     .line 26
@@ -156,15 +157,15 @@
 
     .line 31
     :cond_3
-    iget-object v2, p0, Landroidx/compose/foundation/ClickableElement;->d:Landroidx/compose/foundation/i0;
+    iget-object v2, p0, Landroidx/compose/foundation/ClickableElement;->b:Landroidx/compose/foundation/G;
 
     .line 32
     .line 33
-    iget-object v3, p1, Landroidx/compose/foundation/ClickableElement;->d:Landroidx/compose/foundation/i0;
+    iget-object v3, p1, Landroidx/compose/foundation/ClickableElement;->b:Landroidx/compose/foundation/G;
 
     .line 34
     .line 35
-    invoke-static {v2, v3}, Lrb/h;->d(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v2, v3}, Lkotlin/jvm/internal/h;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     .line 36
     .line 37
@@ -180,11 +181,11 @@
 
     .line 42
     :cond_4
-    iget-boolean v2, p0, Landroidx/compose/foundation/ClickableElement;->e:Z
+    iget-boolean v2, p0, Landroidx/compose/foundation/ClickableElement;->c:Z
 
     .line 43
     .line 44
-    iget-boolean v3, p1, Landroidx/compose/foundation/ClickableElement;->e:Z
+    iget-boolean v3, p1, Landroidx/compose/foundation/ClickableElement;->c:Z
 
     .line 45
     .line 46
@@ -196,15 +197,15 @@
 
     .line 49
     :cond_5
-    iget-object v2, p0, Landroidx/compose/foundation/ClickableElement;->f:Ljava/lang/String;
+    iget-object v2, p0, Landroidx/compose/foundation/ClickableElement;->d:Ljava/lang/String;
 
     .line 50
     .line 51
-    iget-object v3, p1, Landroidx/compose/foundation/ClickableElement;->f:Ljava/lang/String;
+    iget-object v3, p1, Landroidx/compose/foundation/ClickableElement;->d:Ljava/lang/String;
 
     .line 52
     .line 53
-    invoke-static {v2, v3}, Lrb/h;->d(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v2, v3}, Lkotlin/jvm/internal/h;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     .line 54
     .line 55
@@ -220,15 +221,15 @@
 
     .line 60
     :cond_6
-    iget-object v2, p0, Landroidx/compose/foundation/ClickableElement;->g:Landroidx/compose/ui/semantics/g;
+    iget-object v2, p0, Landroidx/compose/foundation/ClickableElement;->e:Landroidx/compose/ui/semantics/g;
 
     .line 61
     .line 62
-    iget-object v3, p1, Landroidx/compose/foundation/ClickableElement;->g:Landroidx/compose/ui/semantics/g;
+    iget-object v3, p1, Landroidx/compose/foundation/ClickableElement;->e:Landroidx/compose/ui/semantics/g;
 
     .line 63
     .line 64
-    invoke-static {v2, v3}, Lrb/h;->d(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v2, v3}, Lkotlin/jvm/internal/h;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     .line 65
     .line 66
@@ -244,11 +245,11 @@
 
     .line 71
     :cond_7
-    iget-object v2, p0, Landroidx/compose/foundation/ClickableElement;->h:Lzh/a;
+    iget-object v2, p0, Landroidx/compose/foundation/ClickableElement;->f:Lka/a;
 
     .line 72
     .line 73
-    iget-object p1, p1, Landroidx/compose/foundation/ClickableElement;->h:Lzh/a;
+    iget-object p1, p1, Landroidx/compose/foundation/ClickableElement;->f:Lka/a;
 
     .line 74
     .line 75
@@ -270,7 +271,7 @@
     const/4 v0, 0x0
 
     .line 2
-    iget-object v1, p0, Landroidx/compose/foundation/ClickableElement;->c:Landroidx/compose/foundation/interaction/l;
+    iget-object v1, p0, Landroidx/compose/foundation/ClickableElement;->a:Landroidx/compose/foundation/interaction/l;
 
     .line 3
     .line 4
@@ -298,7 +299,7 @@
 
     .line 13
     .line 14
-    iget-object v2, p0, Landroidx/compose/foundation/ClickableElement;->d:Landroidx/compose/foundation/i0;
+    iget-object v2, p0, Landroidx/compose/foundation/ClickableElement;->b:Landroidx/compose/foundation/G;
 
     .line 15
     .line 16
@@ -329,7 +330,7 @@
 
     .line 26
     .line 27
-    iget-boolean v2, p0, Landroidx/compose/foundation/ClickableElement;->e:Z
+    iget-boolean v2, p0, Landroidx/compose/foundation/ClickableElement;->c:Z
 
     .line 28
     .line 29
@@ -357,7 +358,7 @@
 
     .line 38
     .line 39
-    iget-object v2, p0, Landroidx/compose/foundation/ClickableElement;->f:Ljava/lang/String;
+    iget-object v2, p0, Landroidx/compose/foundation/ClickableElement;->d:Ljava/lang/String;
 
     .line 40
     .line 41
@@ -388,7 +389,7 @@
 
     .line 51
     .line 52
-    iget-object v2, p0, Landroidx/compose/foundation/ClickableElement;->g:Landroidx/compose/ui/semantics/g;
+    iget-object v2, p0, Landroidx/compose/foundation/ClickableElement;->e:Landroidx/compose/ui/semantics/g;
 
     .line 53
     .line 54
@@ -408,7 +409,7 @@
 
     .line 60
     .line 61
-    iget-object v0, p0, Landroidx/compose/foundation/ClickableElement;->h:Lzh/a;
+    iget-object v0, p0, Landroidx/compose/foundation/ClickableElement;->f:Lka/a;
 
     .line 62
     .line 63
@@ -434,34 +435,34 @@
 
     .line 2
     .line 3
-    iget-object v1, p0, Landroidx/compose/foundation/ClickableElement;->c:Landroidx/compose/foundation/interaction/l;
+    iget-boolean v3, p0, Landroidx/compose/foundation/ClickableElement;->c:Z
 
     .line 4
     .line 5
-    iget-object v2, p0, Landroidx/compose/foundation/ClickableElement;->d:Landroidx/compose/foundation/i0;
+    iget-object v4, p0, Landroidx/compose/foundation/ClickableElement;->d:Ljava/lang/String;
 
     .line 6
     .line 7
-    iget-boolean v3, p0, Landroidx/compose/foundation/ClickableElement;->e:Z
+    iget-object v1, p0, Landroidx/compose/foundation/ClickableElement;->a:Landroidx/compose/foundation/interaction/l;
 
     .line 8
     .line 9
-    iget-object v4, p0, Landroidx/compose/foundation/ClickableElement;->f:Ljava/lang/String;
+    iget-object v2, p0, Landroidx/compose/foundation/ClickableElement;->b:Landroidx/compose/foundation/G;
 
     .line 10
     .line 11
-    iget-object v5, p0, Landroidx/compose/foundation/ClickableElement;->g:Landroidx/compose/ui/semantics/g;
+    iget-object v5, p0, Landroidx/compose/foundation/ClickableElement;->e:Landroidx/compose/ui/semantics/g;
 
     .line 12
     .line 13
-    iget-object v6, p0, Landroidx/compose/foundation/ClickableElement;->h:Lzh/a;
+    iget-object v6, p0, Landroidx/compose/foundation/ClickableElement;->f:Lka/a;
 
     .line 14
     .line 15
     move-object v0, v7
 
     .line 16
-    invoke-direct/range {v0 .. v6}, Landroidx/compose/foundation/a;-><init>(Landroidx/compose/foundation/interaction/l;Landroidx/compose/foundation/i0;ZLjava/lang/String;Landroidx/compose/ui/semantics/g;Lzh/a;)V
+    invoke-direct/range {v0 .. v6}, Landroidx/compose/foundation/a;-><init>(Landroidx/compose/foundation/interaction/l;Landroidx/compose/foundation/G;ZLjava/lang/String;Landroidx/compose/ui/semantics/g;Lka/a;)V
 
     .line 17
     .line 18
@@ -480,31 +481,31 @@
 
     .line 3
     .line 4
-    iget-object v1, p0, Landroidx/compose/foundation/ClickableElement;->c:Landroidx/compose/foundation/interaction/l;
+    iget-object v5, p0, Landroidx/compose/foundation/ClickableElement;->e:Landroidx/compose/ui/semantics/g;
 
     .line 5
     .line 6
-    iget-object v2, p0, Landroidx/compose/foundation/ClickableElement;->d:Landroidx/compose/foundation/i0;
+    iget-object v6, p0, Landroidx/compose/foundation/ClickableElement;->f:Lka/a;
 
     .line 7
     .line 8
-    iget-boolean v3, p0, Landroidx/compose/foundation/ClickableElement;->e:Z
+    iget-object v1, p0, Landroidx/compose/foundation/ClickableElement;->a:Landroidx/compose/foundation/interaction/l;
 
     .line 9
     .line 10
-    iget-object v4, p0, Landroidx/compose/foundation/ClickableElement;->f:Ljava/lang/String;
+    iget-object v2, p0, Landroidx/compose/foundation/ClickableElement;->b:Landroidx/compose/foundation/G;
 
     .line 11
     .line 12
-    iget-object v5, p0, Landroidx/compose/foundation/ClickableElement;->g:Landroidx/compose/ui/semantics/g;
+    iget-boolean v3, p0, Landroidx/compose/foundation/ClickableElement;->c:Z
 
     .line 13
     .line 14
-    iget-object v6, p0, Landroidx/compose/foundation/ClickableElement;->h:Lzh/a;
+    iget-object v4, p0, Landroidx/compose/foundation/ClickableElement;->d:Ljava/lang/String;
 
     .line 15
     .line 16
-    invoke-virtual/range {v0 .. v6}, Landroidx/compose/foundation/a;->H0(Landroidx/compose/foundation/interaction/l;Landroidx/compose/foundation/i0;ZLjava/lang/String;Landroidx/compose/ui/semantics/g;Lzh/a;)V
+    invoke-virtual/range {v0 .. v6}, Landroidx/compose/foundation/a;->F0(Landroidx/compose/foundation/interaction/l;Landroidx/compose/foundation/G;ZLjava/lang/String;Landroidx/compose/ui/semantics/g;Lka/a;)V
 
     .line 17
     .line 18

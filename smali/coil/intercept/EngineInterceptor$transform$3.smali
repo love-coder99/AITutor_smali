@@ -3,25 +3,35 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lzh/e;
+.implements Lka/e;
 
 
 # annotations
+.annotation runtime Lca/c;
+    c = "coil.intercept.EngineInterceptor$transform$3"
+    f = "EngineInterceptor.kt"
+    l = {
+        0xf6
+    }
+    m = "invokeSuspend"
+.end annotation
+
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "Lkotlin/coroutines/jvm/internal/SuspendLambda;",
-        "Lzh/e;"
+        "Lka/e;"
     }
 .end annotation
 
 .annotation runtime Lkotlin/Metadata;
     d1 = {
-        "\u0000\n\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\u0010\u0002\u001a\u00020\u0001*\u00020\u0000H\u008a@"
+        "\u0000\u000c\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0008\u0002\u0010\u0002\u001a\u00020\u0001*\u00020\u0000H\u008a@\u00a2\u0006\u0004\u0008\u0002\u0010\u0003"
     }
     d2 = {
-        "Lkotlinx/coroutines/w;",
+        "Lkotlinx/coroutines/u;",
         "Lcoil/intercept/a;",
-        "<anonymous>"
+        "<anonymous>",
+        "(Lkotlinx/coroutines/u;)Lcoil/intercept/a;"
     }
     k = 0x3
     mv = {
@@ -31,22 +41,13 @@
     }
 .end annotation
 
-.annotation runtime Lth/c;
-    c = "coil.intercept.EngineInterceptor$transform$3"
-    f = "EngineInterceptor.kt"
-    l = {
-        0xf6
-    }
-    m = "invokeSuspend"
-.end annotation
-
 
 # instance fields
-.field final synthetic $eventListener:Lcoil/e;
+.field final synthetic $eventListener:Lcoil/d;
 
-.field final synthetic $options:Ln5/l;
+.field final synthetic $options:LH2/k;
 
-.field final synthetic $request:Ln5/i;
+.field final synthetic $request:LH2/h;
 
 .field final synthetic $result:Lcoil/intercept/a;
 
@@ -76,19 +77,19 @@
 
 
 # direct methods
-.method public constructor <init>(Lcoil/intercept/b;Lcoil/intercept/a;Ln5/l;Ljava/util/List;Lcoil/e;Ln5/i;Lkotlin/coroutines/Continuation;)V
+.method public constructor <init>(Lcoil/intercept/b;Lcoil/intercept/a;LH2/k;Ljava/util/List;Lcoil/d;LH2/h;Lkotlin/coroutines/Continuation;)V
     .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
             "Lcoil/intercept/b;",
             "Lcoil/intercept/a;",
-            "Ln5/l;",
+            "LH2/k;",
             "Ljava/util/List<",
             "Ljava/lang/Object;",
             ">;",
-            "Lcoil/e;",
-            "Ln5/i;",
+            "Lcoil/d;",
+            "LH2/h;",
             "Lkotlin/coroutines/Continuation<",
             "-",
             "Lcoil/intercept/EngineInterceptor$transform$3;",
@@ -99,20 +100,36 @@
     .line 1
     iput-object p1, p0, Lcoil/intercept/EngineInterceptor$transform$3;->this$0:Lcoil/intercept/b;
 
+    .line 2
+    .line 3
     iput-object p2, p0, Lcoil/intercept/EngineInterceptor$transform$3;->$result:Lcoil/intercept/a;
 
-    iput-object p3, p0, Lcoil/intercept/EngineInterceptor$transform$3;->$options:Ln5/l;
+    .line 4
+    .line 5
+    iput-object p3, p0, Lcoil/intercept/EngineInterceptor$transform$3;->$options:LH2/k;
 
+    .line 6
+    .line 7
     iput-object p4, p0, Lcoil/intercept/EngineInterceptor$transform$3;->$transformations:Ljava/util/List;
 
-    iput-object p5, p0, Lcoil/intercept/EngineInterceptor$transform$3;->$eventListener:Lcoil/e;
+    .line 8
+    .line 9
+    iput-object p5, p0, Lcoil/intercept/EngineInterceptor$transform$3;->$eventListener:Lcoil/d;
 
-    iput-object p6, p0, Lcoil/intercept/EngineInterceptor$transform$3;->$request:Ln5/i;
+    .line 10
+    .line 11
+    iput-object p6, p0, Lcoil/intercept/EngineInterceptor$transform$3;->$request:LH2/h;
 
+    .line 12
+    .line 13
     const/4 p1, 0x2
 
+    .line 14
     invoke-direct {p0, p1, p7}, Lkotlin/coroutines/jvm/internal/SuspendLambda;-><init>(ILkotlin/coroutines/Continuation;)V
 
+    .line 15
+    .line 16
+    .line 17
     return-void
 .end method
 
@@ -127,7 +144,7 @@
             "Lkotlin/coroutines/Continuation<",
             "*>;)",
             "Lkotlin/coroutines/Continuation<",
-            "Lqh/r;",
+            "LX9/j;",
             ">;"
         }
     .end annotation
@@ -138,19 +155,19 @@
 
     iget-object v2, p0, Lcoil/intercept/EngineInterceptor$transform$3;->$result:Lcoil/intercept/a;
 
-    iget-object v3, p0, Lcoil/intercept/EngineInterceptor$transform$3;->$options:Ln5/l;
+    iget-object v3, p0, Lcoil/intercept/EngineInterceptor$transform$3;->$options:LH2/k;
 
     iget-object v4, p0, Lcoil/intercept/EngineInterceptor$transform$3;->$transformations:Ljava/util/List;
 
-    iget-object v5, p0, Lcoil/intercept/EngineInterceptor$transform$3;->$eventListener:Lcoil/e;
+    iget-object v5, p0, Lcoil/intercept/EngineInterceptor$transform$3;->$eventListener:Lcoil/d;
 
-    iget-object v6, p0, Lcoil/intercept/EngineInterceptor$transform$3;->$request:Ln5/i;
+    iget-object v6, p0, Lcoil/intercept/EngineInterceptor$transform$3;->$request:LH2/h;
 
     move-object v0, v8
 
     move-object v7, p2
 
-    invoke-direct/range {v0 .. v7}, Lcoil/intercept/EngineInterceptor$transform$3;-><init>(Lcoil/intercept/b;Lcoil/intercept/a;Ln5/l;Ljava/util/List;Lcoil/e;Ln5/i;Lkotlin/coroutines/Continuation;)V
+    invoke-direct/range {v0 .. v7}, Lcoil/intercept/EngineInterceptor$transform$3;-><init>(Lcoil/intercept/b;Lcoil/intercept/a;LH2/k;Ljava/util/List;Lcoil/d;LH2/h;Lkotlin/coroutines/Continuation;)V
 
     iput-object p1, v8, Lcoil/intercept/EngineInterceptor$transform$3;->L$0:Ljava/lang/Object;
 
@@ -161,23 +178,23 @@
     .locals 0
 
     .line 1
-    check-cast p1, Lkotlinx/coroutines/w;
+    check-cast p1, Lkotlinx/coroutines/u;
 
     check-cast p2, Lkotlin/coroutines/Continuation;
 
-    invoke-virtual {p0, p1, p2}, Lcoil/intercept/EngineInterceptor$transform$3;->invoke(Lkotlinx/coroutines/w;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
+    invoke-virtual {p0, p1, p2}, Lcoil/intercept/EngineInterceptor$transform$3;->invoke(Lkotlinx/coroutines/u;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
 
     move-result-object p1
 
     return-object p1
 .end method
 
-.method public final invoke(Lkotlinx/coroutines/w;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
+.method public final invoke(Lkotlinx/coroutines/u;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
     .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
-            "Lkotlinx/coroutines/w;",
+            "Lkotlinx/coroutines/u;",
             "Lkotlin/coroutines/Continuation<",
             "-",
             "Lcoil/intercept/a;",
@@ -193,7 +210,7 @@
 
     check-cast p1, Lcoil/intercept/EngineInterceptor$transform$3;
 
-    sget-object p2, Lqh/r;->a:Lqh/r;
+    sget-object p2, LX9/j;->a:LX9/j;
 
     invoke-virtual {p1, p2}, Lcoil/intercept/EngineInterceptor$transform$3;->invokeSuspend(Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -237,7 +254,7 @@
 
     .line 15
     .line 16
-    check-cast v3, Ln5/l;
+    check-cast v3, LH2/k;
 
     .line 17
     .line 18
@@ -253,7 +270,7 @@
 
     .line 23
     .line 24
-    check-cast v5, Lkotlinx/coroutines/w;
+    check-cast v5, Lkotlinx/coroutines/u;
 
     .line 25
     .line 26
@@ -266,7 +283,7 @@
 
     .line 30
     .line 31
-    invoke-interface {v5}, Lkotlinx/coroutines/w;->n()Lkotlin/coroutines/i;
+    invoke-interface {v5}, Lkotlinx/coroutines/u;->u()Lba/g;
 
     .line 32
     .line 33
@@ -274,7 +291,7 @@
     move-result-object v6
 
     .line 35
-    invoke-static {v6}, Lrb/h;->q(Lkotlin/coroutines/i;)V
+    invoke-static {v6}, Lkotlinx/coroutines/w;->j(Lba/g;)V
 
     .line 36
     .line 37
@@ -315,7 +332,7 @@
     move-object v5, p1
 
     .line 54
-    check-cast v5, Lkotlinx/coroutines/w;
+    check-cast v5, Lkotlinx/coroutines/u;
 
     .line 55
     .line 56
@@ -331,7 +348,7 @@
 
     .line 61
     .line 62
-    iget-object v2, p0, Lcoil/intercept/EngineInterceptor$transform$3;->$options:Ln5/l;
+    iget-object v2, p0, Lcoil/intercept/EngineInterceptor$transform$3;->$options:LH2/k;
 
     .line 63
     .line 64
@@ -384,7 +401,7 @@
 
     .line 87
     .line 88
-    invoke-static {v4, v3}, Lkotlin/collections/q;->P([Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v4, v3}, LY9/o;->E([Ljava/lang/Object;Ljava/lang/Object;)Z
 
     .line 89
     .line 90
@@ -400,23 +417,23 @@
 
     .line 95
     :cond_3
-    iget-object p1, v2, Ln5/l;->b:Landroid/graphics/Bitmap$Config;
+    iget-object p1, v2, LH2/k;->b:Landroid/graphics/Bitmap$Config;
 
     .line 96
     .line 97
-    iget-object v3, v2, Ln5/l;->d:Lo5/e;
+    iget-object v3, v2, LH2/k;->d:LI2/e;
 
     .line 98
     .line 99
-    iget-object v4, v2, Ln5/l;->e:Lcoil/size/Scale;
+    iget-object v4, v2, LH2/k;->e:Lcoil/size/Scale;
 
     .line 100
     .line 101
-    iget-boolean v2, v2, Ln5/l;->f:Z
+    iget-boolean v2, v2, LH2/k;->f:Z
 
     .line 102
     .line 103
-    invoke-static {v0, p1, v3, v4, v2}, Lcoil/util/c;->b(Landroid/graphics/drawable/Drawable;Landroid/graphics/Bitmap$Config;Lo5/e;Lcoil/size/Scale;Z)Landroid/graphics/Bitmap;
+    invoke-static {v0, p1, v3, v4, v2}, Lcoil/util/c;->b(Landroid/graphics/drawable/Drawable;Landroid/graphics/Bitmap$Config;LI2/e;Lcoil/size/Scale;Z)Landroid/graphics/Bitmap;
 
     .line 104
     .line 105
@@ -425,7 +442,7 @@
 
     .line 107
     :goto_0
-    iget-object v0, p0, Lcoil/intercept/EngineInterceptor$transform$3;->$eventListener:Lcoil/e;
+    iget-object v0, p0, Lcoil/intercept/EngineInterceptor$transform$3;->$eventListener:Lcoil/d;
 
     .line 108
     .line 109
@@ -438,7 +455,7 @@
 
     .line 113
     .line 114
-    iget-object v3, p0, Lcoil/intercept/EngineInterceptor$transform$3;->$options:Ln5/l;
+    iget-object v3, p0, Lcoil/intercept/EngineInterceptor$transform$3;->$options:LH2/k;
 
     .line 115
     .line 116
@@ -458,7 +475,7 @@
 
     .line 122
     .line 123
-    iget-object v0, p0, Lcoil/intercept/EngineInterceptor$transform$3;->$eventListener:Lcoil/e;
+    iget-object v0, p0, Lcoil/intercept/EngineInterceptor$transform$3;->$eventListener:Lcoil/d;
 
     .line 124
     .line 125
@@ -471,11 +488,11 @@
 
     .line 129
     .line 130
-    iget-object v1, p0, Lcoil/intercept/EngineInterceptor$transform$3;->$request:Ln5/i;
+    iget-object v1, p0, Lcoil/intercept/EngineInterceptor$transform$3;->$request:LH2/h;
 
     .line 131
     .line 132
-    iget-object v1, v1, Ln5/i;->a:Landroid/content/Context;
+    iget-object v1, v1, LH2/h;->a:Landroid/content/Context;
 
     .line 133
     .line 134
@@ -529,41 +546,53 @@
     move-result-object p1
 
     .line 159
-    invoke-static {p1}, Landroid/support/v4/media/session/a;->P(Ljava/lang/Object;)V
+    if-nez p1, :cond_5
 
     .line 160
     .line 161
-    .line 162
-    iget-object p1, v3, Ln5/l;->d:Lo5/e;
+    iget-object p1, v3, LH2/k;->d:LI2/e;
 
+    .line 162
     .line 163
-    .line 164
     iput-object v5, p0, Lcoil/intercept/EngineInterceptor$transform$3;->L$0:Ljava/lang/Object;
 
+    .line 164
     .line 165
-    .line 166
     iput-object v4, p0, Lcoil/intercept/EngineInterceptor$transform$3;->L$1:Ljava/lang/Object;
 
+    .line 166
     .line 167
-    .line 168
     iput-object v3, p0, Lcoil/intercept/EngineInterceptor$transform$3;->L$2:Ljava/lang/Object;
 
+    .line 168
     .line 169
-    .line 170
     iput v2, p0, Lcoil/intercept/EngineInterceptor$transform$3;->I$0:I
 
+    .line 170
     .line 171
-    .line 172
     iput v0, p0, Lcoil/intercept/EngineInterceptor$transform$3;->I$1:I
 
+    .line 172
     .line 173
-    .line 174
     iput v1, p0, Lcoil/intercept/EngineInterceptor$transform$3;->label:I
 
+    .line 174
     .line 175
-    .line 176
     const/4 p1, 0x0
 
+    .line 176
+    throw p1
+
     .line 177
+    :cond_5
+    new-instance p1, Ljava/lang/ClassCastException;
+
+    .line 178
+    .line 179
+    invoke-direct {p1}, Ljava/lang/ClassCastException;-><init>()V
+
+    .line 180
+    .line 181
+    .line 182
     throw p1
 .end method

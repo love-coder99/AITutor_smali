@@ -18,22 +18,23 @@
     .locals 2
 
     .line 1
-    new-instance v0, Lcom/applovin/impl/bt;
+    new-instance v0, Lcom/applovin/impl/T;
 
     .line 2
     .line 3
-    const/4 v1, 0x7
+    const/16 v1, 0x8
 
     .line 4
-    invoke-direct {v0, v1}, Lcom/applovin/impl/bt;-><init>(I)V
-
     .line 5
+    invoke-direct {v0, v1}, Lcom/applovin/impl/T;-><init>(I)V
+
     .line 6
     .line 7
+    .line 8
     sput-object v0, Lcom/applovin/impl/cl;->d:Lcom/applovin/impl/o2$a;
 
-    .line 8
     .line 9
+    .line 10
     return-void
 .end method
 
@@ -52,16 +53,18 @@
     :cond_0
     const/4 v0, 0x0
 
+    .line 2
     :goto_0
     const-string v1, "maxStars must be a positive integer"
 
-    .line 2
     invoke-static {v0, v1}, Lcom/applovin/impl/b1;->a(ZLjava/lang/Object;)V
 
+    .line 3
     iput p1, p0, Lcom/applovin/impl/cl;->b:I
 
     const/high16 p1, -0x40800000    # -1.0f
 
+    .line 4
     iput p1, p0, Lcom/applovin/impl/cl;->c:F
 
     return-void
@@ -70,12 +73,12 @@
 .method public constructor <init>(IF)V
     .locals 4
 
-    .line 3
+    .line 5
     invoke-direct {p0}, Lcom/applovin/impl/ki;-><init>()V
 
-    const/4 v0, 0x1
+    const/4 v0, 0x0
 
-    const/4 v1, 0x0
+    const/4 v1, 0x1
 
     if-lez p1, :cond_0
 
@@ -86,10 +89,10 @@
     :cond_0
     const/4 v2, 0x0
 
+    .line 6
     :goto_0
     const-string v3, "maxStars must be a positive integer"
 
-    .line 4
     invoke-static {v2, v3}, Lcom/applovin/impl/b1;->a(ZLjava/lang/Object;)V
 
     const/4 v2, 0x0
@@ -104,19 +107,18 @@
 
     if-gtz v2, :cond_1
 
-    goto :goto_1
+    const/4 v0, 0x1
 
+    .line 7
     :cond_1
-    const/4 v0, 0x0
-
-    :goto_1
     const-string v1, "starRating is out of range [0, maxStars]"
 
-    .line 5
     invoke-static {v0, v1}, Lcom/applovin/impl/b1;->a(ZLjava/lang/Object;)V
 
+    .line 8
     iput p1, p0, Lcom/applovin/impl/cl;->b:I
 
+    .line 9
     iput p2, p0, Lcom/applovin/impl/cl;->c:F
 
     return-void

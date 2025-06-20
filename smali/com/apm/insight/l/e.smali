@@ -22,6 +22,10 @@
 # direct methods
 .method public constructor <init>(Ljava/io/OutputStream;Ljava/security/MessageDigest;Lcom/apm/insight/l/e$a;)V
     .locals 0
+    .param p1    # Ljava/io/OutputStream;
+        .annotation build Landroidx/annotation/NonNull;
+        .end annotation
+    .end param
 
     .line 1
     invoke-direct {p0, p1}, Ljava/io/PrintWriter;-><init>(Ljava/io/OutputStream;)V
@@ -69,16 +73,17 @@
 .method public final write(I)V
     .locals 1
 
-    .line 3
+    .line 4
     invoke-super {p0, p1}, Ljava/io/PrintWriter;->write(I)V
 
+    .line 5
     iget-object v0, p0, Lcom/apm/insight/l/e;->a:Ljava/security/MessageDigest;
 
     if-eqz v0, :cond_0
 
     int-to-byte p1, p1
 
-    .line 4
+    .line 6
     invoke-virtual {v0, p1}, Ljava/security/MessageDigest;->update(B)V
 
     :cond_0
@@ -87,10 +92,15 @@
 
 .method public final write(Ljava/lang/String;II)V
     .locals 2
+    .param p1    # Ljava/lang/String;
+        .annotation build Landroidx/annotation/NonNull;
+        .end annotation
+    .end param
 
-    .line 5
+    .line 7
     invoke-super {p0, p1, p2, p3}, Ljava/io/PrintWriter;->write(Ljava/lang/String;II)V
 
+    .line 8
     iget-object v0, p0, Lcom/apm/insight/l/e;->a:Ljava/security/MessageDigest;
 
     if-eqz v0, :cond_1
@@ -99,13 +109,13 @@
 
     if-eqz v0, :cond_0
 
-    .line 6
     invoke-virtual {v0, p1}, Lcom/apm/insight/l/e$a;->a(Ljava/lang/String;)Z
 
     move-result v0
 
     if-eqz v0, :cond_1
 
+    .line 9
     :cond_0
     iget-object v0, p0, Lcom/apm/insight/l/e;->a:Ljava/security/MessageDigest;
 
@@ -113,7 +123,6 @@
 
     add-int/2addr p3, p2
 
-    .line 7
     invoke-static {p1, p2, p3}, Ljava/nio/CharBuffer;->wrap(Ljava/lang/CharSequence;II)Ljava/nio/CharBuffer;
 
     move-result-object p1
@@ -134,17 +143,22 @@
 
 .method public final write([CII)V
     .locals 0
+    .param p1    # [C
+        .annotation build Landroidx/annotation/NonNull;
+        .end annotation
+    .end param
 
     .line 1
     invoke-super {p0, p1, p2, p3}, Ljava/io/PrintWriter;->write([CII)V
 
+    .line 2
     iget-object p2, p0, Lcom/apm/insight/l/e;->a:Ljava/security/MessageDigest;
 
     if-eqz p2, :cond_0
 
+    .line 3
     iget-object p3, p0, Lcom/apm/insight/l/e;->b:Ljava/nio/charset/Charset;
 
-    .line 2
     invoke-static {p1}, Ljava/nio/CharBuffer;->wrap([C)Ljava/nio/CharBuffer;
 
     move-result-object p1

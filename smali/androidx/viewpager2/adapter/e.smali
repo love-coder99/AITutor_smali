@@ -1,5 +1,5 @@
 .class public final Landroidx/viewpager2/adapter/e;
-.super Landroidx/viewpager2/widget/j;
+.super Landroidx/viewpager2/widget/i;
 .source "SourceFile"
 
 
@@ -13,12 +13,12 @@
 .method public constructor <init>()V
     .locals 2
 
-    .line 1
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
-
     const/4 v0, 0x1
 
     iput v0, p0, Landroidx/viewpager2/adapter/e;->a:I
+
+    .line 1
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 2
     new-instance v0, Ljava/util/ArrayList;
@@ -35,13 +35,14 @@
 .method public constructor <init>(Landroidx/viewpager2/adapter/h;)V
     .locals 1
 
-    .line 3
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
-
     const/4 v0, 0x0
 
     iput v0, p0, Landroidx/viewpager2/adapter/e;->a:I
 
+    .line 3
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    .line 4
     iput-object p1, p0, Landroidx/viewpager2/adapter/e;->b:Ljava/lang/Object;
 
     return-void
@@ -57,21 +58,21 @@
 
     .line 2
     .line 3
-    iget-object v1, p0, Landroidx/viewpager2/adapter/e;->b:Ljava/lang/Object;
+    packed-switch v0, :pswitch_data_0
 
     .line 4
     .line 5
-    packed-switch v0, :pswitch_data_0
-
     .line 6
+    :try_start_0
+    iget-object v0, p0, Landroidx/viewpager2/adapter/e;->b:Ljava/lang/Object;
+
     .line 7
     .line 8
-    :try_start_0
-    check-cast v1, Ljava/util/List;
+    check-cast v0, Ljava/util/ArrayList;
 
     .line 9
     .line 10
-    invoke-interface {v1}, Ljava/util/List;->iterator()Ljava/util/Iterator;
+    invoke-virtual {v0}, Ljava/util/ArrayList;->iterator()Ljava/util/Iterator;
 
     .line 11
     .line 12
@@ -100,11 +101,11 @@
     move-result-object v1
 
     .line 24
-    check-cast v1, Landroidx/viewpager2/widget/j;
+    check-cast v1, Landroidx/viewpager2/widget/i;
 
     .line 25
     .line 26
-    invoke-virtual {v1, p1}, Landroidx/viewpager2/widget/j;->a(I)V
+    invoke-virtual {v1, p1}, Landroidx/viewpager2/widget/i;->a(I)V
     :try_end_0
     .catch Ljava/util/ConcurrentModificationException; {:try_start_0 .. :try_end_0} :catch_0
 
@@ -143,31 +144,35 @@
 
     .line 41
     :pswitch_0
-    check-cast v1, Landroidx/viewpager2/adapter/h;
+    iget-object p1, p0, Landroidx/viewpager2/adapter/e;->b:Ljava/lang/Object;
 
     .line 42
     .line 43
-    const/4 p1, 0x0
+    check-cast p1, Landroidx/viewpager2/adapter/h;
 
     .line 44
-    invoke-virtual {v1, p1}, Landroidx/viewpager2/adapter/h;->b(Z)V
-
     .line 45
+    const/4 v0, 0x0
+
     .line 46
+    invoke-virtual {p1, v0}, Landroidx/viewpager2/adapter/h;->b(Z)V
+
     .line 47
+    .line 48
+    .line 49
     return-void
 
-    .line 48
+    .line 50
     nop
 
-    .line 49
+    .line 51
     :pswitch_data_0
     .packed-switch 0x0
         :pswitch_0
     .end packed-switch
 .end method
 
-.method public final b(IFI)V
+.method public b(IFI)V
     .locals 2
 
     .line 1
@@ -189,11 +194,11 @@
 
     .line 8
     .line 9
-    check-cast v0, Ljava/util/List;
+    check-cast v0, Ljava/util/ArrayList;
 
     .line 10
     .line 11
-    invoke-interface {v0}, Ljava/util/List;->iterator()Ljava/util/Iterator;
+    invoke-virtual {v0}, Ljava/util/ArrayList;->iterator()Ljava/util/Iterator;
 
     .line 12
     .line 13
@@ -222,11 +227,11 @@
     move-result-object v1
 
     .line 25
-    check-cast v1, Landroidx/viewpager2/widget/j;
+    check-cast v1, Landroidx/viewpager2/widget/i;
 
     .line 26
     .line 27
-    invoke-virtual {v1, p1, p2, p3}, Landroidx/viewpager2/widget/j;->b(IFI)V
+    invoke-virtual {v1, p1, p2, p3}, Landroidx/viewpager2/widget/i;->b(IFI)V
     :try_end_0
     .catch Ljava/util/ConcurrentModificationException; {:try_start_0 .. :try_end_0} :catch_0
 
@@ -281,21 +286,21 @@
 
     .line 2
     .line 3
-    iget-object v1, p0, Landroidx/viewpager2/adapter/e;->b:Ljava/lang/Object;
+    packed-switch v0, :pswitch_data_0
 
     .line 4
     .line 5
-    packed-switch v0, :pswitch_data_0
-
     .line 6
+    :try_start_0
+    iget-object v0, p0, Landroidx/viewpager2/adapter/e;->b:Ljava/lang/Object;
+
     .line 7
     .line 8
-    :try_start_0
-    check-cast v1, Ljava/util/List;
+    check-cast v0, Ljava/util/ArrayList;
 
     .line 9
     .line 10
-    invoke-interface {v1}, Ljava/util/List;->iterator()Ljava/util/Iterator;
+    invoke-virtual {v0}, Ljava/util/ArrayList;->iterator()Ljava/util/Iterator;
 
     .line 11
     .line 12
@@ -324,11 +329,11 @@
     move-result-object v1
 
     .line 24
-    check-cast v1, Landroidx/viewpager2/widget/j;
+    check-cast v1, Landroidx/viewpager2/widget/i;
 
     .line 25
     .line 26
-    invoke-virtual {v1, p1}, Landroidx/viewpager2/widget/j;->c(I)V
+    invoke-virtual {v1, p1}, Landroidx/viewpager2/widget/i;->c(I)V
     :try_end_0
     .catch Ljava/util/ConcurrentModificationException; {:try_start_0 .. :try_end_0} :catch_0
 
@@ -367,24 +372,28 @@
 
     .line 41
     :pswitch_0
-    check-cast v1, Landroidx/viewpager2/adapter/h;
+    iget-object p1, p0, Landroidx/viewpager2/adapter/e;->b:Ljava/lang/Object;
 
     .line 42
     .line 43
-    const/4 p1, 0x0
+    check-cast p1, Landroidx/viewpager2/adapter/h;
 
     .line 44
-    invoke-virtual {v1, p1}, Landroidx/viewpager2/adapter/h;->b(Z)V
-
     .line 45
+    const/4 v0, 0x0
+
     .line 46
+    invoke-virtual {p1, v0}, Landroidx/viewpager2/adapter/h;->b(Z)V
+
     .line 47
+    .line 48
+    .line 49
     return-void
 
-    .line 48
+    .line 50
     nop
 
-    .line 49
+    .line 51
     :pswitch_data_0
     .packed-switch 0x0
         :pswitch_0

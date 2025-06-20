@@ -3,14 +3,14 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lzh/c;
+.implements Lka/c;
 
 
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "Lkotlin/jvm/internal/Lambda;",
-        "Lzh/c;"
+        "Lka/c;"
     }
 .end annotation
 
@@ -20,10 +20,10 @@
     }
     d2 = {
         "T",
-        "Landroidx/compose/runtime/p0;",
-        "Landroidx/compose/runtime/o0;",
+        "Landroidx/compose/runtime/H;",
+        "Landroidx/compose/runtime/G;",
         "invoke",
-        "(Landroidx/compose/runtime/p0;)Landroidx/compose/runtime/o0;",
+        "(Landroidx/compose/runtime/H;)Landroidx/compose/runtime/G;",
         "<anonymous>"
     }
     k = 0x3
@@ -36,27 +36,27 @@
 
 
 # instance fields
-.field final synthetic $transition:Landroidx/compose/animation/core/e1;
+.field final synthetic $transition:Landroidx/compose/animation/core/Z;
     .annotation system Ldalvik/annotation/Signature;
         value = {
-            "Landroidx/compose/animation/core/e1;"
+            "Landroidx/compose/animation/core/Z;"
         }
     .end annotation
 .end field
 
 
 # direct methods
-.method public constructor <init>(Landroidx/compose/animation/core/e1;)V
+.method public constructor <init>(Landroidx/compose/animation/core/Z;)V
     .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
-            "Landroidx/compose/animation/core/e1;",
+            "Landroidx/compose/animation/core/Z;",
             ")V"
         }
     .end annotation
 
-    iput-object p1, p0, Landroidx/compose/animation/core/TransitionKt$updateTransition$1$1;->$transition:Landroidx/compose/animation/core/e1;
+    iput-object p1, p0, Landroidx/compose/animation/core/TransitionKt$updateTransition$1$1;->$transition:Landroidx/compose/animation/core/Z;
 
     const/4 p1, 0x1
 
@@ -67,17 +67,18 @@
 
 
 # virtual methods
-.method public final invoke(Landroidx/compose/runtime/p0;)Landroidx/compose/runtime/o0;
+.method public final invoke(Landroidx/compose/runtime/H;)Landroidx/compose/runtime/G;
     .locals 2
 
-    iget-object p1, p0, Landroidx/compose/animation/core/TransitionKt$updateTransition$1$1;->$transition:Landroidx/compose/animation/core/e1;
-
     .line 2
-    new-instance v0, Landroidx/compose/animation/core/f1;
+    iget-object p1, p0, Landroidx/compose/animation/core/TransitionKt$updateTransition$1$1;->$transition:Landroidx/compose/animation/core/Z;
+
+    .line 3
+    new-instance v0, Landroidx/compose/animation/core/a0;
 
     const/4 v1, 0x1
 
-    invoke-direct {v0, p1, v1}, Landroidx/compose/animation/core/f1;-><init>(Landroidx/compose/animation/core/e1;I)V
+    invoke-direct {v0, p1, v1}, Landroidx/compose/animation/core/a0;-><init>(Landroidx/compose/animation/core/Z;I)V
 
     return-object v0
 .end method
@@ -86,9 +87,9 @@
     .locals 0
 
     .line 1
-    check-cast p1, Landroidx/compose/runtime/p0;
+    check-cast p1, Landroidx/compose/runtime/H;
 
-    invoke-virtual {p0, p1}, Landroidx/compose/animation/core/TransitionKt$updateTransition$1$1;->invoke(Landroidx/compose/runtime/p0;)Landroidx/compose/runtime/o0;
+    invoke-virtual {p0, p1}, Landroidx/compose/animation/core/TransitionKt$updateTransition$1$1;->invoke(Landroidx/compose/runtime/H;)Landroidx/compose/runtime/G;
 
     move-result-object p1
 

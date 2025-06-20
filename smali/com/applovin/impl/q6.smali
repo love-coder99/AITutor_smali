@@ -41,22 +41,23 @@
 
     .line 8
     .line 9
-    new-instance v0, Lcom/applovin/impl/vu;
+    new-instance v0, Lcom/applovin/impl/M1;
 
     .line 10
     .line 11
-    const/4 v1, 0x7
+    const/16 v1, 0x8
 
     .line 12
-    invoke-direct {v0, v1}, Lcom/applovin/impl/vu;-><init>(I)V
-
     .line 13
+    invoke-direct {v0, v1}, Lcom/applovin/impl/M1;-><init>(I)V
+
     .line 14
     .line 15
+    .line 16
     sput-object v0, Lcom/applovin/impl/q6;->f:Lcom/applovin/impl/o2$a;
 
-    .line 16
     .line 17
+    .line 18
     return-void
 .end method
 
@@ -239,21 +240,36 @@
 .method public hashCode()I
     .locals 2
 
+    .line 1
     iget v0, p0, Lcom/applovin/impl/q6;->a:I
 
+    .line 2
+    .line 3
     add-int/lit16 v0, v0, 0x20f
 
+    .line 4
+    .line 5
     mul-int/lit8 v0, v0, 0x1f
 
+    .line 6
+    .line 7
     iget v1, p0, Lcom/applovin/impl/q6;->b:I
 
+    .line 8
+    .line 9
     add-int/2addr v0, v1
 
+    .line 10
     mul-int/lit8 v0, v0, 0x1f
 
+    .line 11
+    .line 12
     iget v1, p0, Lcom/applovin/impl/q6;->c:I
 
+    .line 13
+    .line 14
     add-int/2addr v0, v1
 
+    .line 15
     return v0
 .end method

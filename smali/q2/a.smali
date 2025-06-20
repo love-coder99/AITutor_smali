@@ -1,436 +1,574 @@
-.class public final Lq2/a;
-.super Lp2/g;
+.class public final LQ2/a;
+.super Ljava/lang/Object;
 .source "SourceFile"
+
+# interfaces
+.implements Landroid/content/ServiceConnection;
 
 
 # instance fields
-.field public final synthetic n0:I
+.field public final synthetic b:I
 
-.field public final o0:F
+.field public final c:Ljava/lang/Object;
+
+.field public final d:Ljava/lang/Object;
 
 
 # direct methods
-.method public constructor <init>(Lp2/i;I)V
+.method public constructor <init>()V
     .locals 2
 
-    .line 1
-    iput p2, p0, Lq2/a;->n0:I
+    const/4 v0, 0x2
+
+    iput v0, p0, LQ2/a;->b:I
 
     .line 2
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
     .line 3
-    const/4 v0, 0x1
+    new-instance v0, Ljava/util/concurrent/atomic/AtomicBoolean;
+
+    const/4 v1, 0x0
+
+    invoke-direct {v0, v1}, Ljava/util/concurrent/atomic/AtomicBoolean;-><init>(Z)V
+
+    iput-object v0, p0, LQ2/a;->c:Ljava/lang/Object;
 
     .line 4
-    const/high16 v1, 0x3f000000    # 0.5f
+    new-instance v0, Ljava/util/concurrent/LinkedBlockingDeque;
 
-    .line 5
-    .line 6
-    if-eq p2, v0, :cond_0
+    invoke-direct {v0}, Ljava/util/concurrent/LinkedBlockingDeque;-><init>()V
 
-    .line 7
-    .line 8
-    sget-object p2, Landroidx/constraintlayout/core/state/State$Helper;->ALIGN_VERTICALLY:Landroidx/constraintlayout/core/state/State$Helper;
+    iput-object v0, p0, LQ2/a;->d:Ljava/lang/Object;
 
-    .line 9
-    .line 10
-    invoke-direct {p0, p1, p2}, Lp2/g;-><init>(Lp2/i;Landroidx/constraintlayout/core/state/State$Helper;)V
-
-    .line 11
-    .line 12
-    .line 13
-    iput v1, p0, Lq2/a;->o0:F
-
-    .line 14
-    .line 15
     return-void
+.end method
 
-    .line 16
-    :cond_0
-    sget-object p2, Landroidx/constraintlayout/core/state/State$Helper;->ALIGN_VERTICALLY:Landroidx/constraintlayout/core/state/State$Helper;
+.method public synthetic constructor <init>(Ljava/lang/Object;ILjava/lang/Object;)V
+    .locals 0
 
-    .line 17
-    .line 18
-    invoke-direct {p0, p1, p2}, Lp2/g;-><init>(Lp2/i;Landroidx/constraintlayout/core/state/State$Helper;)V
+    .line 1
+    iput p2, p0, LQ2/a;->b:I
 
-    .line 19
-    .line 20
-    .line 21
-    iput v1, p0, Lq2/a;->o0:F
+    iput-object p1, p0, LQ2/a;->d:Ljava/lang/Object;
 
-    .line 22
-    .line 23
+    iput-object p3, p0, LQ2/a;->c:Ljava/lang/Object;
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    return-void
+.end method
+
+.method private final b(Landroid/content/ComponentName;)V
+    .locals 0
+
+    .line 1
     return-void
 .end method
 
 
 # virtual methods
-.method public final apply()V
-    .locals 6
+.method public a()Landroid/os/IBinder;
+    .locals 2
 
     .line 1
-    iget-object v0, p0, Lp2/g;->m0:Ljava/util/ArrayList;
+    iget-object v0, p0, LQ2/a;->c:Ljava/lang/Object;
 
     .line 2
     .line 3
-    iget v1, p0, Lq2/a;->n0:I
+    check-cast v0, Ljava/util/concurrent/atomic/AtomicBoolean;
 
     .line 4
     .line 5
-    const/high16 v2, 0x3f000000    # 0.5f
+    const/4 v1, 0x1
 
     .line 6
-    .line 7
-    iget-object v3, p0, Lp2/g;->k0:Lp2/i;
+    invoke-virtual {v0, v1, v1}, Ljava/util/concurrent/atomic/AtomicBoolean;->compareAndSet(ZZ)Z
 
+    .line 7
     .line 8
     .line 9
-    packed-switch v1, :pswitch_data_0
+    move-result v0
 
     .line 10
+    if-nez v0, :cond_0
+
     .line 11
     .line 12
-    invoke-virtual {v0}, Ljava/util/ArrayList;->iterator()Ljava/util/Iterator;
+    iget-object v0, p0, LQ2/a;->d:Ljava/lang/Object;
 
     .line 13
     .line 14
-    .line 15
-    move-result-object v0
+    check-cast v0, Ljava/util/concurrent/LinkedBlockingDeque;
 
+    .line 15
     .line 16
-    :cond_0
-    :goto_0
-    invoke-interface {v0}, Ljava/util/Iterator;->hasNext()Z
+    invoke-virtual {v0}, Ljava/util/concurrent/LinkedBlockingDeque;->take()Ljava/lang/Object;
 
     .line 17
     .line 18
     .line 19
-    move-result v1
+    move-result-object v0
 
     .line 20
-    if-eqz v1, :cond_5
+    check-cast v0, Landroid/os/IBinder;
 
     .line 21
     .line 22
-    invoke-interface {v0}, Ljava/util/Iterator;->next()Ljava/lang/Object;
+    return-object v0
+
+    .line 23
+    :cond_0
+    new-instance v0, Ljava/lang/IllegalStateException;
+
+    .line 24
+    .line 25
+    const-string v1, "Binder already consumed"
+
+    .line 26
+    .line 27
+    invoke-direct {v0, v1}, Ljava/lang/IllegalStateException;-><init>(Ljava/lang/String;)V
+
+    .line 28
+    .line 29
+    .line 30
+    throw v0
+.end method
+
+.method public final onServiceConnected(Landroid/content/ComponentName;Landroid/os/IBinder;)V
+    .locals 3
+
+    .line 1
+    const-string p1, "com.google.android.finsky.externalreferrer.IGetInstallReferrerService"
+
+    .line 2
+    .line 3
+    iget-object v0, p0, LQ2/a;->d:Ljava/lang/Object;
+
+    .line 4
+    .line 5
+    iget v1, p0, LQ2/a;->b:I
+
+    .line 6
+    .line 7
+    packed-switch v1, :pswitch_data_0
+
+    .line 8
+    .line 9
+    .line 10
+    if-eqz p2, :cond_0
+
+    .line 11
+    .line 12
+    :try_start_0
+    check-cast v0, Ljava/util/concurrent/LinkedBlockingDeque;
+
+    .line 13
+    .line 14
+    invoke-virtual {v0, p2}, Ljava/util/concurrent/LinkedBlockingDeque;->put(Ljava/lang/Object;)V
+    :try_end_0
+    .catch Ljava/lang/InterruptedException; {:try_start_0 .. :try_end_0} :catch_0
+
+    .line 15
+    .line 16
+    .line 17
+    :catch_0
+    :cond_0
+    return-void
+
+    .line 18
+    :pswitch_0
+    check-cast v0, Lb6/X;
+
+    .line 19
+    .line 20
+    if-eqz p2, :cond_3
+
+    .line 21
+    .line 22
+    :try_start_1
+    sget v1, Lcom/google/android/gms/internal/measurement/A;->b:I
 
     .line 23
     .line 24
+    invoke-interface {p2, p1}, Landroid/os/IBinder;->queryLocalInterface(Ljava/lang/String;)Landroid/os/IInterface;
+
     .line 25
-    move-result-object v1
-
     .line 26
-    invoke-virtual {v3, v1}, Lp2/i;->b(Ljava/lang/Object;)Lp2/b;
-
     .line 27
-    .line 28
-    .line 29
     move-result-object v1
 
+    .line 28
+    instance-of v2, v1, Lcom/google/android/gms/internal/measurement/B;
+
+    .line 29
     .line 30
-    invoke-virtual {v1}, Lp2/b;->h()V
+    if-eqz v2, :cond_1
 
     .line 31
     .line 32
-    .line 33
-    iget-object v4, p0, Lp2/b;->R:Ljava/lang/Object;
+    check-cast v1, Lcom/google/android/gms/internal/measurement/B;
 
+    .line 33
     .line 34
+    goto :goto_0
+
     .line 35
-    if-eqz v4, :cond_1
+    :cond_1
+    new-instance v1, Lcom/google/android/gms/internal/measurement/z;
 
     .line 36
     .line 37
-    invoke-virtual {v1, v4}, Lp2/b;->p(Ljava/lang/Object;)V
+    const/4 v2, 0x3
 
     .line 38
+    invoke-direct {v1, p2, p1, v2}, LS5/a;-><init>(Landroid/os/IBinder;Ljava/lang/String;I)V
+
     .line 39
     .line 40
-    goto :goto_1
-
     .line 41
-    :cond_1
-    iget-object v4, p0, Lp2/b;->S:Ljava/lang/Object;
+    :goto_0
+    if-nez v1, :cond_2
 
     .line 42
     .line 43
-    if-eqz v4, :cond_2
+    iget-object p1, v0, Lb6/X;->b:Lb6/f0;
 
     .line 44
     .line 45
-    sget-object v5, Landroidx/constraintlayout/core/state/State$Constraint;->TOP_TO_BOTTOM:Landroidx/constraintlayout/core/state/State$Constraint;
+    iget-object p1, p1, Lb6/f0;->k:Lb6/O;
 
     .line 46
     .line 47
-    iput-object v5, v1, Lp2/b;->d0:Landroidx/constraintlayout/core/state/State$Constraint;
+    invoke-static {p1}, Lb6/f0;->g(Lb6/m0;)V
 
     .line 48
     .line 49
-    iput-object v4, v1, Lp2/b;->S:Ljava/lang/Object;
-
     .line 50
-    .line 51
-    goto :goto_1
+    iget-object p1, p1, Lb6/O;->l:Lb6/M;
 
+    .line 51
     .line 52
-    :cond_2
-    sget-object v4, Lp2/i;->k:Ljava/lang/Integer;
+    const-string p2, "Install Referrer Service implementation was not found"
 
     .line 53
     .line 54
-    invoke-virtual {v1, v4}, Lp2/b;->p(Ljava/lang/Object;)V
+    invoke-virtual {p1, p2}, Lb6/M;->e(Ljava/lang/String;)V
 
     .line 55
     .line 56
     .line 57
-    :goto_1
-    iget-object v4, p0, Lp2/b;->U:Ljava/lang/Object;
+    goto :goto_2
 
     .line 58
+    :catch_1
+    move-exception p1
+
     .line 59
-    if-eqz v4, :cond_3
+    goto :goto_1
 
     .line 60
+    :cond_2
+    iget-object p1, v0, Lb6/X;->b:Lb6/f0;
+
     .line 61
-    sget-object v5, Landroidx/constraintlayout/core/state/State$Constraint;->BOTTOM_TO_TOP:Landroidx/constraintlayout/core/state/State$Constraint;
-
     .line 62
+    iget-object p2, p1, Lb6/f0;->k:Lb6/O;
+
     .line 63
-    iput-object v5, v1, Lp2/b;->d0:Landroidx/constraintlayout/core/state/State$Constraint;
-
     .line 64
-    .line 65
-    iput-object v4, v1, Lp2/b;->U:Ljava/lang/Object;
+    invoke-static {p2}, Lb6/f0;->g(Lb6/m0;)V
 
+    .line 65
     .line 66
     .line 67
-    goto :goto_2
+    iget-object p2, p2, Lb6/O;->q:Lb6/M;
 
     .line 68
-    :cond_3
-    iget-object v4, p0, Lp2/b;->V:Ljava/lang/Object;
-
     .line 69
+    const-string v2, "Install Referrer Service connected"
+
     .line 70
-    if-eqz v4, :cond_4
-
     .line 71
-    .line 72
-    invoke-virtual {v1, v4}, Lp2/b;->e(Ljava/lang/Object;)V
+    invoke-virtual {p2, v2}, Lb6/M;->e(Ljava/lang/String;)V
 
+    .line 72
     .line 73
     .line 74
-    .line 75
-    goto :goto_2
+    iget-object p1, p1, Lb6/f0;->l:Lb6/d0;
 
+    .line 75
     .line 76
-    :cond_4
-    sget-object v4, Lp2/i;->k:Ljava/lang/Integer;
+    invoke-static {p1}, Lb6/f0;->g(Lb6/m0;)V
 
     .line 77
     .line 78
-    invoke-virtual {v1, v4}, Lp2/b;->e(Ljava/lang/Object;)V
-
     .line 79
+    new-instance p2, LG/l;
+
     .line 80
     .line 81
-    :goto_2
-    iget v4, p0, Lq2/a;->o0:F
+    invoke-direct {p2, p0, v1, p0}, LG/l;-><init>(LQ2/a;Lcom/google/android/gms/internal/measurement/B;LQ2/a;)V
 
     .line 82
     .line 83
-    cmpl-float v5, v4, v2
-
     .line 84
-    .line 85
-    if-eqz v5, :cond_0
+    invoke-virtual {p1, p2}, Lb6/d0;->b0(Ljava/lang/Runnable;)V
+    :try_end_1
+    .catch Ljava/lang/RuntimeException; {:try_start_1 .. :try_end_1} :catch_1
 
+    .line 85
     .line 86
     .line 87
-    iput v4, v1, Lp2/b;->i:F
+    goto :goto_2
 
     .line 88
-    .line 89
-    goto :goto_0
+    :goto_1
+    iget-object p2, v0, Lb6/X;->b:Lb6/f0;
 
+    .line 89
     .line 90
-    :cond_5
-    return-void
+    iget-object p2, p2, Lb6/f0;->k:Lb6/O;
 
     .line 91
-    :pswitch_0
-    invoke-virtual {v0}, Ljava/util/ArrayList;->iterator()Ljava/util/Iterator;
-
     .line 92
+    invoke-static {p2}, Lb6/f0;->g(Lb6/m0;)V
+
     .line 93
     .line 94
-    move-result-object v0
-
     .line 95
-    :cond_6
-    :goto_3
-    invoke-interface {v0}, Ljava/util/Iterator;->hasNext()Z
+    const-string v0, "Exception occurred while calling Install Referrer API"
 
     .line 96
     .line 97
-    .line 98
-    move-result v1
+    iget-object p2, p2, Lb6/O;->l:Lb6/M;
 
+    .line 98
     .line 99
-    if-eqz v1, :cond_b
+    invoke-virtual {p2, p1, v0}, Lb6/M;->f(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 100
     .line 101
-    invoke-interface {v0}, Ljava/util/Iterator;->next()Ljava/lang/Object;
-
     .line 102
-    .line 103
-    .line 104
-    move-result-object v1
+    goto :goto_2
 
+    .line 103
+    :cond_3
+    iget-object p1, v0, Lb6/X;->b:Lb6/f0;
+
+    .line 104
     .line 105
-    invoke-virtual {v3, v1}, Lp2/i;->b(Ljava/lang/Object;)Lp2/b;
+    iget-object p1, p1, Lb6/f0;->k:Lb6/O;
 
     .line 106
     .line 107
+    invoke-static {p1}, Lb6/f0;->g(Lb6/m0;)V
+
     .line 108
-    move-result-object v1
-
     .line 109
-    invoke-virtual {v1}, Lp2/b;->g()V
-
     .line 110
+    const-string p2, "Install Referrer connection returned with null binder"
+
     .line 111
     .line 112
-    iget-object v4, p0, Lp2/b;->N:Ljava/lang/Object;
+    iget-object p1, p1, Lb6/O;->l:Lb6/M;
 
     .line 113
     .line 114
-    if-eqz v4, :cond_7
+    invoke-virtual {p1, p2}, Lb6/M;->e(Ljava/lang/String;)V
 
     .line 115
     .line 116
-    invoke-virtual {v1, v4}, Lp2/b;->o(Ljava/lang/Object;)V
-
     .line 117
-    .line 118
-    .line 119
-    goto :goto_4
+    :goto_2
+    return-void
 
+    .line 118
+    :pswitch_1
+    sget v1, La5/b;->b:I
+
+    .line 119
     .line 120
-    :cond_7
-    iget-object v4, p0, Lp2/b;->O:Ljava/lang/Object;
+    if-nez p2, :cond_4
 
     .line 121
     .line 122
-    if-eqz v4, :cond_8
+    const/4 p1, 0x0
 
     .line 123
+    goto :goto_3
+
     .line 124
-    sget-object v5, Landroidx/constraintlayout/core/state/State$Constraint;->START_TO_END:Landroidx/constraintlayout/core/state/State$Constraint;
+    :cond_4
+    invoke-interface {p2, p1}, Landroid/os/IBinder;->queryLocalInterface(Ljava/lang/String;)Landroid/os/IInterface;
 
     .line 125
     .line 126
-    iput-object v5, v1, Lp2/b;->d0:Landroidx/constraintlayout/core/state/State$Constraint;
-
     .line 127
+    move-result-object p1
+
     .line 128
-    iput-object v4, v1, Lp2/b;->O:Ljava/lang/Object;
+    if-eqz p1, :cond_5
 
     .line 129
     .line 130
-    goto :goto_4
+    instance-of v1, p1, La5/c;
 
     .line 131
-    :cond_8
-    sget-object v4, Lp2/i;->k:Ljava/lang/Integer;
-
     .line 132
-    .line 133
-    invoke-virtual {v1, v4}, Lp2/b;->o(Ljava/lang/Object;)V
+    if-eqz v1, :cond_5
 
+    .line 133
     .line 134
+    check-cast p1, La5/c;
+
     .line 135
     .line 136
-    :goto_4
-    iget-object v4, p0, Lp2/b;->P:Ljava/lang/Object;
+    goto :goto_3
 
     .line 137
+    :cond_5
+    new-instance p1, La5/a;
+
     .line 138
-    if-eqz v4, :cond_9
-
     .line 139
-    .line 140
-    sget-object v5, Landroidx/constraintlayout/core/state/State$Constraint;->END_TO_START:Landroidx/constraintlayout/core/state/State$Constraint;
+    invoke-direct {p1}, Ljava/lang/Object;-><init>()V
 
+    .line 140
     .line 141
     .line 142
-    iput-object v5, v1, Lp2/b;->d0:Landroidx/constraintlayout/core/state/State$Constraint;
+    iput-object p2, p1, La5/a;->b:Landroid/os/IBinder;
 
     .line 143
     .line 144
-    iput-object v4, v1, Lp2/b;->P:Ljava/lang/Object;
+    :goto_3
+    check-cast v0, LQ2/b;
 
     .line 145
     .line 146
-    goto :goto_5
+    iput-object p1, v0, LQ2/b;->c:La5/c;
 
     .line 147
-    :cond_9
-    iget-object v4, p0, Lp2/b;->Q:Ljava/lang/Object;
-
     .line 148
+    const/4 p1, 0x2
+
     .line 149
-    if-eqz v4, :cond_a
+    iput p1, v0, LQ2/b;->a:I
 
     .line 150
     .line 151
-    invoke-virtual {v1, v4}, Lp2/b;->i(Ljava/lang/Object;)V
+    iget-object p1, p0, LQ2/a;->c:Ljava/lang/Object;
 
     .line 152
     .line 153
-    .line 154
-    goto :goto_5
+    check-cast p1, Landroidx/core/view/K;
 
+    .line 154
     .line 155
-    :cond_a
-    sget-object v4, Lp2/i;->k:Ljava/lang/Integer;
+    const/4 p2, 0x0
 
     .line 156
-    .line 157
-    invoke-virtual {v1, v4}, Lp2/b;->i(Ljava/lang/Object;)V
+    invoke-virtual {p1, p2}, Landroidx/core/view/K;->h(I)V
 
+    .line 157
     .line 158
     .line 159
-    .line 160
-    :goto_5
-    iget v4, p0, Lq2/a;->o0:F
-
-    .line 161
-    .line 162
-    cmpl-float v5, v4, v2
-
-    .line 163
-    .line 164
-    if-eqz v5, :cond_6
-
-    .line 165
-    .line 166
-    iput v4, v1, Lp2/b;->h:F
-
-    .line 167
-    .line 168
-    goto :goto_3
-
-    .line 169
-    :cond_b
     return-void
 
-    .line 170
+    .line 160
     nop
 
-    .line 171
+    .line 161
     :pswitch_data_0
     .packed-switch 0x0
+        :pswitch_1
+        :pswitch_0
+    .end packed-switch
+.end method
+
+.method public final onServiceDisconnected(Landroid/content/ComponentName;)V
+    .locals 1
+
+    .line 1
+    iget p1, p0, LQ2/a;->b:I
+
+    .line 2
+    .line 3
+    packed-switch p1, :pswitch_data_0
+
+    .line 4
+    .line 5
+    .line 6
+    return-void
+
+    .line 7
+    :pswitch_0
+    iget-object p1, p0, LQ2/a;->d:Ljava/lang/Object;
+
+    .line 8
+    .line 9
+    check-cast p1, Lb6/X;
+
+    .line 10
+    .line 11
+    iget-object p1, p1, Lb6/X;->b:Lb6/f0;
+
+    .line 12
+    .line 13
+    iget-object p1, p1, Lb6/f0;->k:Lb6/O;
+
+    .line 14
+    .line 15
+    invoke-static {p1}, Lb6/f0;->g(Lb6/m0;)V
+
+    .line 16
+    .line 17
+    .line 18
+    const-string v0, "Install Referrer Service disconnected"
+
+    .line 19
+    .line 20
+    iget-object p1, p1, Lb6/O;->q:Lb6/M;
+
+    .line 21
+    .line 22
+    invoke-virtual {p1, v0}, Lb6/M;->e(Ljava/lang/String;)V
+
+    .line 23
+    .line 24
+    .line 25
+    return-void
+
+    .line 26
+    :pswitch_1
+    const/4 p1, 0x0
+
+    .line 27
+    iget-object v0, p0, LQ2/a;->d:Ljava/lang/Object;
+
+    .line 28
+    .line 29
+    check-cast v0, LQ2/b;
+
+    .line 30
+    .line 31
+    iput-object p1, v0, LQ2/b;->c:La5/c;
+
+    .line 32
+    .line 33
+    const/4 p1, 0x0
+
+    .line 34
+    iput p1, v0, LQ2/b;->a:I
+
+    .line 35
+    .line 36
+    return-void
+
+    .line 37
+    :pswitch_data_0
+    .packed-switch 0x0
+        :pswitch_1
         :pswitch_0
     .end packed-switch
 .end method

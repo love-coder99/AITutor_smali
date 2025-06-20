@@ -18,13 +18,29 @@
 .method private constructor <init>()V
     .locals 0
 
+    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
+    .line 2
+    .line 3
+    .line 4
     return-void
 .end method
 
 .method public static onDropForTextView(Landroid/view/DragEvent;Landroid/widget/TextView;Landroid/app/Activity;)Z
     .locals 2
+    .param p0    # Landroid/view/DragEvent;
+        .annotation build Landroidx/annotation/NonNull;
+        .end annotation
+    .end param
+    .param p1    # Landroid/widget/TextView;
+        .annotation build Landroidx/annotation/NonNull;
+        .end annotation
+    .end param
+    .param p2    # Landroid/app/Activity;
+        .annotation build Landroidx/annotation/NonNull;
+        .end annotation
+    .end param
 
     .line 1
     invoke-virtual {p2, p0}, Landroid/app/Activity;->requestDragAndDropPermissions(Landroid/view/DragEvent;)Landroid/view/DragAndDropPermissions;
@@ -102,11 +118,11 @@
 
     .line 38
     .line 39
-    new-instance p2, Landroidx/core/view/g;
+    new-instance p2, LQ/d;
 
     .line 40
     .line 41
-    invoke-direct {p2, p0, v1}, Landroidx/core/view/g;-><init>(Landroid/content/ClipData;I)V
+    invoke-direct {p2, p0, v1}, LQ/d;-><init>(Landroid/content/ClipData;I)V
 
     .line 42
     .line 43
@@ -115,56 +131,76 @@
 
     .line 45
     :cond_0
-    new-instance p2, Landroidx/core/view/i;
+    new-instance p2, Landroidx/core/view/g;
 
     .line 46
     .line 47
-    invoke-direct {p2, p0, v1}, Landroidx/core/view/i;-><init>(Landroid/content/ClipData;I)V
+    invoke-direct {p2}, Landroidx/core/view/g;-><init>()V
 
     .line 48
     .line 49
     .line 50
-    :goto_0
-    invoke-interface {p2}, Landroidx/core/view/h;->build()Landroidx/core/view/k;
+    iput-object p0, p2, Landroidx/core/view/g;->c:Landroid/content/ClipData;
 
     .line 51
     .line 52
-    .line 53
-    move-result-object p0
+    iput v1, p2, Landroidx/core/view/g;->d:I
 
+    .line 53
     .line 54
-    invoke-static {p1, p0}, Landroidx/core/view/y0;->o(Landroid/view/View;Landroidx/core/view/k;)Landroidx/core/view/k;
-    :try_end_0
-    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+    :goto_0
+    invoke-interface {p2}, Landroidx/core/view/f;->build()Landroidx/core/view/j;
 
     .line 55
     .line 56
     .line 57
-    invoke-virtual {p1}, Landroid/widget/TextView;->endBatchEdit()V
+    move-result-object p0
 
     .line 58
+    invoke-static {p1, p0}, Landroidx/core/view/e0;->o(Landroid/view/View;Landroidx/core/view/j;)Landroidx/core/view/j;
+    :try_end_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+
     .line 59
     .line 60
-    const/4 p0, 0x1
-
     .line 61
-    return p0
+    invoke-virtual {p1}, Landroid/widget/TextView;->endBatchEdit()V
 
     .line 62
+    .line 63
+    .line 64
+    const/4 p0, 0x1
+
+    .line 65
+    return p0
+
+    .line 66
     :catchall_0
     move-exception p0
 
-    .line 63
+    .line 67
     invoke-virtual {p1}, Landroid/widget/TextView;->endBatchEdit()V
 
-    .line 64
-    .line 65
-    .line 66
+    .line 68
+    .line 69
+    .line 70
     throw p0
 .end method
 
 .method public static onDropForView(Landroid/view/DragEvent;Landroid/view/View;Landroid/app/Activity;)Z
     .locals 2
+    .param p0    # Landroid/view/DragEvent;
+        .annotation build Landroidx/annotation/NonNull;
+        .end annotation
+    .end param
+    .param p1    # Landroid/view/View;
+        .annotation build Landroidx/annotation/NonNull;
+        .end annotation
+    .end param
+    .param p2    # Landroid/app/Activity;
+        .annotation build Landroidx/annotation/NonNull;
+        .end annotation
+    .end param
 
     .line 1
     invoke-virtual {p2, p0}, Landroid/app/Activity;->requestDragAndDropPermissions(Landroid/view/DragEvent;)Landroid/view/DragAndDropPermissions;
@@ -195,11 +231,11 @@
 
     .line 14
     .line 15
-    new-instance p2, Landroidx/core/view/g;
+    new-instance p2, LQ/d;
 
     .line 16
     .line 17
-    invoke-direct {p2, p0, v1}, Landroidx/core/view/g;-><init>(Landroid/content/ClipData;I)V
+    invoke-direct {p2, p0, v1}, LQ/d;-><init>(Landroid/content/ClipData;I)V
 
     .line 18
     .line 19
@@ -208,31 +244,39 @@
 
     .line 21
     :cond_0
-    new-instance p2, Landroidx/core/view/i;
+    new-instance p2, Landroidx/core/view/g;
 
     .line 22
     .line 23
-    invoke-direct {p2, p0, v1}, Landroidx/core/view/i;-><init>(Landroid/content/ClipData;I)V
+    invoke-direct {p2}, Landroidx/core/view/g;-><init>()V
 
     .line 24
     .line 25
     .line 26
-    :goto_0
-    invoke-interface {p2}, Landroidx/core/view/h;->build()Landroidx/core/view/k;
+    iput-object p0, p2, Landroidx/core/view/g;->c:Landroid/content/ClipData;
 
     .line 27
     .line 28
-    .line 29
-    move-result-object p0
+    iput v1, p2, Landroidx/core/view/g;->d:I
 
+    .line 29
     .line 30
-    invoke-static {p1, p0}, Landroidx/core/view/y0;->o(Landroid/view/View;Landroidx/core/view/k;)Landroidx/core/view/k;
+    :goto_0
+    invoke-interface {p2}, Landroidx/core/view/f;->build()Landroidx/core/view/j;
 
     .line 31
     .line 32
     .line 33
-    const/4 p0, 0x1
+    move-result-object p0
 
     .line 34
+    invoke-static {p1, p0}, Landroidx/core/view/e0;->o(Landroid/view/View;Landroidx/core/view/j;)Landroidx/core/view/j;
+
+    .line 35
+    .line 36
+    .line 37
+    const/4 p0, 0x1
+
+    .line 38
     return p0
 .end method

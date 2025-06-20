@@ -34,10 +34,19 @@
 .field private final zzh:Ljava/lang/String;
 
 .field private final zzi:Ljava/lang/String;
+    .annotation build Landroidx/annotation/Nullable;
+    .end annotation
+.end field
 
 .field private final zzj:Ljava/util/List;
+    .annotation build Landroidx/annotation/Nullable;
+    .end annotation
+.end field
 
 .field private final zzk:Ljava/util/List;
+    .annotation build Landroidx/annotation/Nullable;
+    .end annotation
+.end field
 
 
 # direct methods
@@ -537,6 +546,10 @@
 # virtual methods
 .method public equals(Ljava/lang/Object;)Z
     .locals 1
+    .param p1    # Ljava/lang/Object;
+        .annotation build Landroidx/annotation/Nullable;
+        .end annotation
+    .end param
 
     .line 1
     if-ne p0, p1, :cond_0
@@ -590,6 +603,8 @@
 
 .method public getDescription()Ljava/lang/String;
     .locals 1
+    .annotation build Landroidx/annotation/NonNull;
+    .end annotation
 
     iget-object v0, p0, Lcom/android/billingclient/api/ProductDetails;->zzg:Ljava/lang/String;
 
@@ -598,6 +613,8 @@
 
 .method public getName()Ljava/lang/String;
     .locals 1
+    .annotation build Landroidx/annotation/NonNull;
+    .end annotation
 
     iget-object v0, p0, Lcom/android/billingclient/api/ProductDetails;->zzf:Ljava/lang/String;
 
@@ -606,6 +623,8 @@
 
 .method public getOneTimePurchaseOfferDetails()Lcom/android/billingclient/api/ProductDetails$OneTimePurchaseOfferDetails;
     .locals 2
+    .annotation build Landroidx/annotation/Nullable;
+    .end annotation
 
     .line 1
     iget-object v0, p0, Lcom/android/billingclient/api/ProductDetails;->zzk:Ljava/util/List;
@@ -659,6 +678,8 @@
 
 .method public getProductId()Ljava/lang/String;
     .locals 1
+    .annotation build Landroidx/annotation/NonNull;
+    .end annotation
 
     iget-object v0, p0, Lcom/android/billingclient/api/ProductDetails;->zzc:Ljava/lang/String;
 
@@ -667,6 +688,8 @@
 
 .method public getProductType()Ljava/lang/String;
     .locals 1
+    .annotation build Landroidx/annotation/NonNull;
+    .end annotation
 
     iget-object v0, p0, Lcom/android/billingclient/api/ProductDetails;->zzd:Ljava/lang/String;
 
@@ -675,6 +698,9 @@
 
 .method public getSubscriptionOfferDetails()Ljava/util/List;
     .locals 1
+    .annotation build Landroidx/annotation/Nullable;
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "()",
@@ -691,6 +717,8 @@
 
 .method public getTitle()Ljava/lang/String;
     .locals 1
+    .annotation build Landroidx/annotation/NonNull;
+    .end annotation
 
     iget-object v0, p0, Lcom/android/billingclient/api/ProductDetails;->zze:Ljava/lang/String;
 
@@ -718,6 +746,8 @@
 
 .method public toString()Ljava/lang/String;
     .locals 6
+    .annotation build Landroidx/annotation/NonNull;
+    .end annotation
 
     .line 1
     iget-object v0, p0, Lcom/android/billingclient/api/ProductDetails;->zzj:Ljava/util/List;
@@ -769,7 +799,7 @@
 
     .line 25
     .line 26
-    invoke-static {v2, v3, v4, v1, v5}, Lj0/d;->z(Ljava/lang/StringBuilder;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v2, v3, v4, v1, v5}, LB/u;->G(Ljava/lang/StringBuilder;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
 
     .line 27
     .line 28
@@ -873,6 +903,8 @@
 
 .method public final zza()Ljava/lang/String;
     .locals 2
+    .annotation build Landroidx/annotation/NonNull;
+    .end annotation
 
     .line 1
     iget-object v0, p0, Lcom/android/billingclient/api/ProductDetails;->zzb:Lorg/json/JSONObject;
@@ -904,6 +936,8 @@
 
 .method public zzc()Ljava/lang/String;
     .locals 1
+    .annotation build Landroidx/annotation/Nullable;
+    .end annotation
 
     iget-object v0, p0, Lcom/android/billingclient/api/ProductDetails;->zzi:Ljava/lang/String;
 
@@ -912,6 +946,8 @@
 
 .method public final zzd()Ljava/util/List;
     .locals 1
+    .annotation build Landroidx/annotation/Nullable;
+    .end annotation
 
     iget-object v0, p0, Lcom/android/billingclient/api/ProductDetails;->zzk:Ljava/util/List;
 

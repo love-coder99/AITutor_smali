@@ -3,14 +3,14 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lzh/c;
+.implements Lka/c;
 
 
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "Lkotlin/jvm/internal/Lambda;",
-        "Lzh/c;"
+        "Lka/c;"
     }
 .end annotation
 
@@ -22,7 +22,7 @@
         "R",
         "",
         "it",
-        "Lqh/r;",
+        "LX9/j;",
         "invoke",
         "(Ljava/lang/Throwable;)V",
         "<anonymous>"
@@ -63,7 +63,7 @@
 
     invoke-virtual {p0, p1}, Landroidx/compose/runtime/DefaultChoreographerFrameClock$withFrameNanos$2$1;->invoke(Ljava/lang/Throwable;)V
 
-    sget-object p1, Lqh/r;->a:Lqh/r;
+    sget-object p1, LX9/j;->a:LX9/j;
 
     return-object p1
 .end method
@@ -72,11 +72,11 @@
     .locals 1
 
     .line 1
-    sget-object p1, Landroidx/compose/runtime/i0;->c:Landroid/view/Choreographer;
-
-    iget-object v0, p0, Landroidx/compose/runtime/DefaultChoreographerFrameClock$withFrameNanos$2$1;->$callback:Landroid/view/Choreographer$FrameCallback;
+    sget-object p1, Landroidx/compose/runtime/C;->c:Landroid/view/Choreographer;
 
     .line 2
+    iget-object v0, p0, Landroidx/compose/runtime/DefaultChoreographerFrameClock$withFrameNanos$2$1;->$callback:Landroid/view/Choreographer$FrameCallback;
+
     invoke-virtual {p1, v0}, Landroid/view/Choreographer;->removeFrameCallback(Landroid/view/Choreographer$FrameCallback;)V
 
     return-void

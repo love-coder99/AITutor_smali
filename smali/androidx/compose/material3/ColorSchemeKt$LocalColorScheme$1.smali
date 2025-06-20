@@ -3,14 +3,14 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lzh/a;
+.implements Lka/a;
 
 
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "Lkotlin/jvm/internal/Lambda;",
-        "Lzh/a;"
+        "Lka/a;"
     }
 .end annotation
 
@@ -19,9 +19,9 @@
         "\u0000\u0008\n\u0002\u0018\u0002\n\u0002\u0008\u0003\u0010\u0003\u001a\u00020\u0000H\n\u00a2\u0006\u0004\u0008\u0001\u0010\u0002"
     }
     d2 = {
-        "Landroidx/compose/material3/n;",
+        "Landroidx/compose/material3/p;",
         "invoke",
-        "()Landroidx/compose/material3/n;",
+        "()Landroidx/compose/material3/p;",
         "<anonymous>"
     }
     k = 0x3
@@ -62,8 +62,12 @@
 
 
 # virtual methods
-.method public final invoke()Landroidx/compose/material3/n;
+.method public final invoke()Landroidx/compose/material3/p;
     .locals 66
+
+    const-wide/16 v62, 0x0
+
+    const/16 v64, -0x1
 
     const-wide/16 v0, 0x0
 
@@ -127,14 +131,10 @@
 
     const-wide/16 v60, 0x0
 
-    const-wide/16 v62, 0x0
-
-    const/16 v64, -0x1
-
     const/16 v65, 0xf
 
     .line 1
-    invoke-static/range {v0 .. v65}, Landroidx/compose/material3/p;->f(JJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJII)Landroidx/compose/material3/n;
+    invoke-static/range {v0 .. v65}, Landroidx/compose/material3/r;->f(JJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJII)Landroidx/compose/material3/p;
 
     move-result-object v0
 
@@ -145,7 +145,7 @@
     .locals 1
 
     .line 2
-    invoke-virtual {p0}, Landroidx/compose/material3/ColorSchemeKt$LocalColorScheme$1;->invoke()Landroidx/compose/material3/n;
+    invoke-virtual {p0}, Landroidx/compose/material3/ColorSchemeKt$LocalColorScheme$1;->invoke()Landroidx/compose/material3/p;
 
     move-result-object v0
 

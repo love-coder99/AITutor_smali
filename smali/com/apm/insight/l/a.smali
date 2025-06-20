@@ -133,119 +133,121 @@
 .method public static a(Landroid/content/Context;Lorg/json/JSONObject;)V
     .locals 11
 
+    .line 12
     const-string v0, "filters"
 
     const-string v1, "summary.graphics"
 
-    .line 12
+    .line 13
     :try_start_0
     new-instance v2, Landroid/os/Debug$MemoryInfo;
 
     invoke-direct {v2}, Landroid/os/Debug$MemoryInfo;-><init>()V
 
-    .line 13
+    .line 14
     invoke-static {v2}, Landroid/os/Debug;->getMemoryInfo(Landroid/os/Debug$MemoryInfo;)V
 
-    .line 14
+    .line 15
     new-instance v3, Lorg/json/JSONObject;
 
     invoke-direct {v3}, Lorg/json/JSONObject;-><init>()V
 
+    .line 16
     const-string v4, "dalvikPrivateDirty"
 
     iget v5, v2, Landroid/os/Debug$MemoryInfo;->dalvikPrivateDirty:I
 
-    .line 15
     invoke-static {v5}, Lcom/apm/insight/l/a;->a(I)J
 
     move-result-wide v5
 
     invoke-virtual {v3, v4, v5, v6}, Lorg/json/JSONObject;->put(Ljava/lang/String;J)Lorg/json/JSONObject;
 
+    .line 17
     const-string v4, "dalvikPss"
 
     iget v5, v2, Landroid/os/Debug$MemoryInfo;->dalvikPss:I
 
-    .line 16
     invoke-static {v5}, Lcom/apm/insight/l/a;->a(I)J
 
     move-result-wide v5
 
     invoke-virtual {v3, v4, v5, v6}, Lorg/json/JSONObject;->put(Ljava/lang/String;J)Lorg/json/JSONObject;
 
+    .line 18
     const-string v4, "dalvikSharedDirty"
 
     iget v5, v2, Landroid/os/Debug$MemoryInfo;->dalvikSharedDirty:I
 
-    .line 17
     invoke-static {v5}, Lcom/apm/insight/l/a;->a(I)J
 
     move-result-wide v5
 
     invoke-virtual {v3, v4, v5, v6}, Lorg/json/JSONObject;->put(Ljava/lang/String;J)Lorg/json/JSONObject;
 
+    .line 19
     const-string v4, "nativePrivateDirty"
 
     iget v5, v2, Landroid/os/Debug$MemoryInfo;->nativePrivateDirty:I
 
-    .line 18
     invoke-static {v5}, Lcom/apm/insight/l/a;->a(I)J
 
     move-result-wide v5
 
     invoke-virtual {v3, v4, v5, v6}, Lorg/json/JSONObject;->put(Ljava/lang/String;J)Lorg/json/JSONObject;
 
+    .line 20
     const-string v4, "nativePss"
 
     iget v5, v2, Landroid/os/Debug$MemoryInfo;->nativePss:I
 
-    .line 19
     invoke-static {v5}, Lcom/apm/insight/l/a;->a(I)J
 
     move-result-wide v5
 
     invoke-virtual {v3, v4, v5, v6}, Lorg/json/JSONObject;->put(Ljava/lang/String;J)Lorg/json/JSONObject;
 
+    .line 21
     const-string v4, "nativeSharedDirty"
 
     iget v5, v2, Landroid/os/Debug$MemoryInfo;->nativeSharedDirty:I
 
-    .line 20
     invoke-static {v5}, Lcom/apm/insight/l/a;->a(I)J
 
     move-result-wide v5
 
     invoke-virtual {v3, v4, v5, v6}, Lorg/json/JSONObject;->put(Ljava/lang/String;J)Lorg/json/JSONObject;
 
+    .line 22
     const-string v4, "otherPrivateDirty"
 
     iget v5, v2, Landroid/os/Debug$MemoryInfo;->otherPrivateDirty:I
 
-    .line 21
     invoke-static {v5}, Lcom/apm/insight/l/a;->a(I)J
 
     move-result-wide v5
 
     invoke-virtual {v3, v4, v5, v6}, Lorg/json/JSONObject;->put(Ljava/lang/String;J)Lorg/json/JSONObject;
 
+    .line 23
     const-string v4, "otherPss"
 
     iget v5, v2, Landroid/os/Debug$MemoryInfo;->otherPss:I
 
-    .line 22
     invoke-static {v5}, Lcom/apm/insight/l/a;->a(I)J
 
     move-result-wide v5
 
     invoke-virtual {v3, v4, v5, v6}, Lorg/json/JSONObject;->put(Ljava/lang/String;J)Lorg/json/JSONObject;
 
+    .line 24
     const-string v4, "otherSharedDirty"
 
     iget v5, v2, Landroid/os/Debug$MemoryInfo;->otherSharedDirty:I
 
-    .line 23
     invoke-virtual {v3, v4, v5}, Lorg/json/JSONObject;->put(Ljava/lang/String;I)Lorg/json/JSONObject;
 
+    .line 25
     sget v4, Landroid/os/Build$VERSION;->SDK_INT:I
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_1
@@ -254,20 +256,20 @@
 
     if-lt v4, v5, :cond_0
 
-    .line 24
+    .line 26
     :try_start_1
-    invoke-static {v2}, Landroidx/compose/ui/platform/r2;->p(Landroid/os/Debug$MemoryInfo;)Ljava/lang/String;
+    invoke-static {v2}, Lc3/A;->o(Landroid/os/Debug$MemoryInfo;)Ljava/lang/String;
 
     move-result-object v4
 
-    .line 25
+    .line 27
     invoke-static {v4}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
 
     move-result v5
 
     if-nez v5, :cond_0
 
-    .line 26
+    .line 28
     invoke-static {v4}, Ljava/lang/Integer;->parseInt(Ljava/lang/String;)I
 
     move-result v4
@@ -280,30 +282,30 @@
     :try_end_1
     .catchall {:try_start_1 .. :try_end_1} :catchall_0
 
+    .line 29
     :catchall_0
     :cond_0
     :try_start_2
     const-string v1, "totalPrivateClean"
 
-    .line 27
     invoke-static {v2}, Lcom/apm/insight/l/c;->a(Landroid/os/Debug$MemoryInfo;)I
 
     move-result v4
 
     invoke-virtual {v3, v1, v4}, Lorg/json/JSONObject;->put(Ljava/lang/String;I)Lorg/json/JSONObject;
 
+    .line 30
     const-string v1, "totalPrivateDirty"
 
-    .line 28
     invoke-virtual {v2}, Landroid/os/Debug$MemoryInfo;->getTotalPrivateDirty()I
 
     move-result v4
 
     invoke-virtual {v3, v1, v4}, Lorg/json/JSONObject;->put(Ljava/lang/String;I)Lorg/json/JSONObject;
 
+    .line 31
     const-string v1, "totalPss"
 
-    .line 29
     invoke-virtual {v2}, Landroid/os/Debug$MemoryInfo;->getTotalPss()I
 
     move-result v4
@@ -314,18 +316,18 @@
 
     invoke-virtual {v3, v1, v4, v5}, Lorg/json/JSONObject;->put(Ljava/lang/String;J)Lorg/json/JSONObject;
 
+    .line 32
     const-string v1, "totalSharedClean"
 
-    .line 30
     invoke-static {v2}, Lcom/apm/insight/l/c;->b(Landroid/os/Debug$MemoryInfo;)I
 
     move-result v4
 
     invoke-virtual {v3, v1, v4}, Lorg/json/JSONObject;->put(Ljava/lang/String;I)Lorg/json/JSONObject;
 
+    .line 33
     const-string v1, "totalSharedDirty"
 
-    .line 31
     invoke-virtual {v2}, Landroid/os/Debug$MemoryInfo;->getTotalSharedDirty()I
 
     move-result v4
@@ -336,9 +338,9 @@
 
     invoke-virtual {v3, v1, v4, v5}, Lorg/json/JSONObject;->put(Ljava/lang/String;J)Lorg/json/JSONObject;
 
+    .line 34
     const-string v1, "totalSwappablePss"
 
-    .line 32
     invoke-static {v2}, Lcom/apm/insight/l/c;->c(Landroid/os/Debug$MemoryInfo;)I
 
     move-result v2
@@ -349,14 +351,14 @@
 
     invoke-virtual {v3, v1, v4, v5}, Lorg/json/JSONObject;->put(Ljava/lang/String;J)Lorg/json/JSONObject;
 
+    .line 35
     const-string v1, "memory_info"
 
-    .line 33
     invoke-virtual {p1, v1, v3}, Lorg/json/JSONObject;->put(Ljava/lang/String;Ljava/lang/Object;)Lorg/json/JSONObject;
 
+    .line 36
     const-string v1, "activity"
 
-    .line 34
     invoke-virtual {p0, v1}, Landroid/content/Context;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
 
     move-result-object p0
@@ -365,65 +367,66 @@
 
     if-eqz p0, :cond_1
 
-    .line 35
+    .line 37
     new-instance v1, Lorg/json/JSONObject;
 
     invoke-direct {v1}, Lorg/json/JSONObject;-><init>()V
 
-    .line 36
+    .line 38
     new-instance v2, Landroid/app/ActivityManager$MemoryInfo;
 
     invoke-direct {v2}, Landroid/app/ActivityManager$MemoryInfo;-><init>()V
 
-    .line 37
+    .line 39
     invoke-virtual {p0, v2}, Landroid/app/ActivityManager;->getMemoryInfo(Landroid/app/ActivityManager$MemoryInfo;)V
 
+    .line 40
     const-string v3, "availMem"
 
     iget-wide v4, v2, Landroid/app/ActivityManager$MemoryInfo;->availMem:J
 
-    .line 38
     invoke-virtual {v1, v3, v4, v5}, Lorg/json/JSONObject;->put(Ljava/lang/String;J)Lorg/json/JSONObject;
 
+    .line 41
     const-string v3, "lowMemory"
 
     iget-boolean v4, v2, Landroid/app/ActivityManager$MemoryInfo;->lowMemory:Z
 
-    .line 39
     invoke-virtual {v1, v3, v4}, Lorg/json/JSONObject;->put(Ljava/lang/String;Z)Lorg/json/JSONObject;
 
+    .line 42
     const-string v3, "threshold"
 
     iget-wide v4, v2, Landroid/app/ActivityManager$MemoryInfo;->threshold:J
 
-    .line 40
     invoke-virtual {v1, v3, v4, v5}, Lorg/json/JSONObject;->put(Ljava/lang/String;J)Lorg/json/JSONObject;
 
+    .line 43
     const-string v3, "totalMem"
 
-    .line 41
     invoke-static {v2}, Lcom/apm/insight/l/i;->a(Landroid/app/ActivityManager$MemoryInfo;)J
 
     move-result-wide v4
 
     invoke-virtual {v1, v3, v4, v5}, Lorg/json/JSONObject;->put(Ljava/lang/String;J)Lorg/json/JSONObject;
 
+    .line 44
     const-string v2, "sys_memory_info"
 
-    .line 42
     invoke-virtual {p1, v2, v1}, Lorg/json/JSONObject;->put(Ljava/lang/String;Ljava/lang/Object;)Lorg/json/JSONObject;
 
-    .line 43
+    .line 45
     :cond_1
     new-instance v1, Lorg/json/JSONObject;
 
     invoke-direct {v1}, Lorg/json/JSONObject;-><init>()V
 
-    .line 44
+    .line 46
     invoke-static {}, Landroid/os/Debug;->getNativeHeapAllocatedSize()J
 
     move-result-wide v2
 
+    .line 47
     const-string v4, "native_heap_leak"
 
     const-wide/32 v5, 0xc800000
@@ -443,7 +446,6 @@
     :cond_2
     const/4 v2, 0x0
 
-    .line 45
     :goto_0
     invoke-static {v2}, Ljava/lang/String;->valueOf(Z)Ljava/lang/String;
 
@@ -451,68 +453,69 @@
 
     invoke-static {p1, v0, v4, v2}, Lcom/apm/insight/entity/a;->a(Lorg/json/JSONObject;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
 
+    .line 48
     const-string v2, "native_heap_size"
 
-    .line 46
     invoke-static {}, Landroid/os/Debug;->getNativeHeapSize()J
 
     move-result-wide v3
 
     invoke-virtual {v1, v2, v3, v4}, Lorg/json/JSONObject;->put(Ljava/lang/String;J)Lorg/json/JSONObject;
 
+    .line 49
     const-string v2, "native_heap_alloc_size"
 
-    .line 47
     invoke-static {}, Landroid/os/Debug;->getNativeHeapAllocatedSize()J
 
     move-result-wide v3
 
     invoke-virtual {v1, v2, v3, v4}, Lorg/json/JSONObject;->put(Ljava/lang/String;J)Lorg/json/JSONObject;
 
+    .line 50
     const-string v2, "native_heap_free_size"
 
-    .line 48
     invoke-static {}, Landroid/os/Debug;->getNativeHeapFreeSize()J
 
     move-result-wide v3
 
     invoke-virtual {v1, v2, v3, v4}, Lorg/json/JSONObject;->put(Ljava/lang/String;J)Lorg/json/JSONObject;
 
-    .line 49
+    .line 51
     invoke-static {}, Ljava/lang/Runtime;->getRuntime()Ljava/lang/Runtime;
 
     move-result-object v2
 
-    .line 50
+    .line 52
     invoke-virtual {v2}, Ljava/lang/Runtime;->maxMemory()J
 
     move-result-wide v3
 
-    .line 51
+    .line 53
     invoke-virtual {v2}, Ljava/lang/Runtime;->freeMemory()J
 
     move-result-wide v5
 
-    .line 52
+    .line 54
     invoke-virtual {v2}, Ljava/lang/Runtime;->totalMemory()J
 
     move-result-wide v9
 
+    .line 55
     const-string v2, "max_memory"
 
-    .line 53
     invoke-virtual {v1, v2, v3, v4}, Lorg/json/JSONObject;->put(Ljava/lang/String;J)Lorg/json/JSONObject;
 
+    .line 56
     const-string v2, "free_memory"
 
-    .line 54
     invoke-virtual {v1, v2, v5, v6}, Lorg/json/JSONObject;->put(Ljava/lang/String;J)Lorg/json/JSONObject;
 
+    .line 57
     const-string v2, "total_memory"
 
-    .line 55
     invoke-virtual {v1, v2, v9, v10}, Lorg/json/JSONObject;->put(Ljava/lang/String;J)Lorg/json/JSONObject;
 
+    .line 58
     const-string v2, "java_heap_leak"
 
     sub-long/2addr v9, v5
@@ -531,7 +534,6 @@
 
     const/4 v7, 0x1
 
-    .line 56
     :cond_3
     invoke-static {v7}, Ljava/lang/String;->valueOf(Z)Ljava/lang/String;
 
@@ -541,28 +543,28 @@
 
     if-eqz p0, :cond_4
 
+    .line 59
     const-string v0, "memory_class"
 
-    .line 57
     invoke-virtual {p0}, Landroid/app/ActivityManager;->getMemoryClass()I
 
     move-result v2
 
     invoke-virtual {v1, v0, v2}, Lorg/json/JSONObject;->put(Ljava/lang/String;I)Lorg/json/JSONObject;
 
+    .line 60
     const-string v0, "large_memory_class"
 
-    .line 58
     invoke-virtual {p0}, Landroid/app/ActivityManager;->getLargeMemoryClass()I
 
     move-result p0
 
     invoke-virtual {v1, v0, p0}, Lorg/json/JSONObject;->put(Ljava/lang/String;I)Lorg/json/JSONObject;
 
+    .line 61
     :cond_4
     const-string p0, "app_memory_info"
 
-    .line 59
     invoke-virtual {p1, p0, v1}, Lorg/json/JSONObject;->put(Ljava/lang/String;Ljava/lang/Object;)Lorg/json/JSONObject;
     :try_end_2
     .catchall {:try_start_2 .. :try_end_2} :catchall_1
@@ -574,7 +576,7 @@
 .method public static a(Ljava/lang/String;)V
     .locals 0
 
-    .line 2
+    .line 4
     sput-object p0, Lcom/apm/insight/l/a;->a:Ljava/lang/String;
 
     return-void
@@ -585,7 +587,7 @@
 
     if-nez p0, :cond_0
 
-    .line 3
+    .line 2
     invoke-static {}, Lcom/apm/insight/runtime/a/b;->d()Lcom/apm/insight/runtime/a/b;
 
     move-result-object p0
@@ -596,7 +598,7 @@
 
     return p0
 
-    .line 4
+    .line 3
     :cond_0
     invoke-static {}, Lcom/apm/insight/runtime/a/b;->d()Lcom/apm/insight/runtime/a/b;
 

@@ -8,6 +8,9 @@
 
 # instance fields
 .field private adLoadFailureInfo:Ljava/lang/String;
+    .annotation build Landroidx/annotation/Nullable;
+    .end annotation
+.end field
 
 .field private final errorCode:I
 
@@ -28,9 +31,9 @@
 .method public constructor <init>(I)V
     .locals 1
 
+    .line 1
     const-string v0, ""
 
-    .line 1
     invoke-direct {p0, p1, v0}, Lcom/applovin/impl/mediation/MaxErrorImpl;-><init>(ILjava/lang/String;)V
 
     return-void
@@ -41,9 +44,9 @@
 
     const/4 v0, -0x1
 
+    .line 3
     const-string v1, ""
 
-    .line 3
     invoke-direct {p0, p1, p2, v0, v1}, Lcom/applovin/impl/mediation/MaxErrorImpl;-><init>(ILjava/lang/String;ILjava/lang/String;)V
 
     return-void
@@ -55,18 +58,20 @@
     .line 4
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
+    .line 5
     iput p1, p0, Lcom/applovin/impl/mediation/MaxErrorImpl;->errorCode:I
 
-    .line 5
+    .line 6
     invoke-static {p2}, Lcom/applovin/impl/sdk/utils/StringUtils;->emptyIfNull(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object p1
 
     iput-object p1, p0, Lcom/applovin/impl/mediation/MaxErrorImpl;->errorMessage:Ljava/lang/String;
 
+    .line 7
     iput p3, p0, Lcom/applovin/impl/mediation/MaxErrorImpl;->mediatedNetworkErrorCode:I
 
-    .line 6
+    .line 8
     invoke-static {p4}, Lcom/applovin/impl/sdk/utils/StringUtils;->emptyIfNull(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object p1
@@ -91,118 +96,176 @@
 # virtual methods
 .method public getAdLoadFailureInfo()Ljava/lang/String;
     .locals 1
+    .annotation build Landroidx/annotation/Nullable;
+    .end annotation
 
+    .line 1
     iget-object v0, p0, Lcom/applovin/impl/mediation/MaxErrorImpl;->adLoadFailureInfo:Ljava/lang/String;
 
+    .line 2
+    .line 3
     return-object v0
 .end method
 
 .method public getCode()I
     .locals 1
 
+    .line 1
     iget v0, p0, Lcom/applovin/impl/mediation/MaxErrorImpl;->errorCode:I
 
+    .line 2
+    .line 3
     return v0
 .end method
 
 .method public getErrorCode()I
     .locals 1
 
+    .line 1
     iget v0, p0, Lcom/applovin/impl/mediation/MaxErrorImpl;->errorCode:I
 
+    .line 2
+    .line 3
     return v0
 .end method
 
 .method public getErrorMessage()Ljava/lang/String;
     .locals 1
 
+    .line 1
     iget-object v0, p0, Lcom/applovin/impl/mediation/MaxErrorImpl;->errorMessage:Ljava/lang/String;
 
+    .line 2
+    .line 3
     return-object v0
 .end method
 
 .method public getLoadTag()Ljava/lang/String;
     .locals 1
+    .annotation build Landroidx/annotation/Nullable;
+    .end annotation
 
+    .line 1
     iget-object v0, p0, Lcom/applovin/impl/mediation/MaxErrorImpl;->loadTag:Ljava/lang/String;
 
+    .line 2
+    .line 3
     return-object v0
 .end method
 
 .method public getMediatedNetworkErrorCode()I
     .locals 1
 
+    .line 1
     iget v0, p0, Lcom/applovin/impl/mediation/MaxErrorImpl;->mediatedNetworkErrorCode:I
 
+    .line 2
+    .line 3
     return v0
 .end method
 
 .method public getMediatedNetworkErrorMessage()Ljava/lang/String;
     .locals 1
 
+    .line 1
     iget-object v0, p0, Lcom/applovin/impl/mediation/MaxErrorImpl;->mediatedNetworkErrorMessage:Ljava/lang/String;
 
+    .line 2
+    .line 3
     return-object v0
 .end method
 
 .method public getMessage()Ljava/lang/String;
     .locals 1
 
+    .line 1
     iget-object v0, p0, Lcom/applovin/impl/mediation/MaxErrorImpl;->errorMessage:Ljava/lang/String;
 
+    .line 2
+    .line 3
     return-object v0
 .end method
 
 .method public getRequestLatencyMillis()J
     .locals 2
 
+    .line 1
     iget-wide v0, p0, Lcom/applovin/impl/mediation/MaxErrorImpl;->requestLatencyMillis:J
 
+    .line 2
+    .line 3
     return-wide v0
 .end method
 
 .method public getWaterfall()Lcom/applovin/mediation/MaxAdWaterfallInfo;
     .locals 1
+    .annotation build Landroidx/annotation/Nullable;
+    .end annotation
 
+    .line 1
     iget-object v0, p0, Lcom/applovin/impl/mediation/MaxErrorImpl;->waterfall:Lcom/applovin/mediation/MaxAdWaterfallInfo;
 
+    .line 2
+    .line 3
     return-object v0
 .end method
 
 .method public setAdLoadFailureInfo(Ljava/lang/String;)V
     .locals 0
+    .param p1    # Ljava/lang/String;
+        .annotation build Landroidx/annotation/Nullable;
+        .end annotation
+    .end param
 
+    .line 1
     iput-object p1, p0, Lcom/applovin/impl/mediation/MaxErrorImpl;->adLoadFailureInfo:Ljava/lang/String;
 
+    .line 2
+    .line 3
     return-void
 .end method
 
 .method public setLoadTag(Ljava/lang/String;)V
     .locals 0
+    .param p1    # Ljava/lang/String;
+        .annotation build Landroidx/annotation/Nullable;
+        .end annotation
+    .end param
 
+    .line 1
     iput-object p1, p0, Lcom/applovin/impl/mediation/MaxErrorImpl;->loadTag:Ljava/lang/String;
 
+    .line 2
+    .line 3
     return-void
 .end method
 
 .method public setRequestLatencyMillis(J)V
     .locals 0
 
+    .line 1
     iput-wide p1, p0, Lcom/applovin/impl/mediation/MaxErrorImpl;->requestLatencyMillis:J
 
+    .line 2
+    .line 3
     return-void
 .end method
 
 .method public setWaterfall(Lcom/applovin/mediation/MaxAdWaterfallInfo;)V
     .locals 0
 
+    .line 1
     iput-object p1, p0, Lcom/applovin/impl/mediation/MaxErrorImpl;->waterfall:Lcom/applovin/mediation/MaxAdWaterfallInfo;
 
+    .line 2
+    .line 3
     return-void
 .end method
 
 .method public toString()Ljava/lang/String;
     .locals 2
+    .annotation build Landroidx/annotation/NonNull;
+    .end annotation
 
     .line 1
     new-instance v0, Ljava/lang/StringBuilder;

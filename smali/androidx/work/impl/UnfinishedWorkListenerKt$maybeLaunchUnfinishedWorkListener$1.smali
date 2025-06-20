@@ -3,29 +3,39 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lzh/g;
+.implements Lka/g;
 
 
 # annotations
+.annotation runtime Lca/c;
+    c = "androidx.work.impl.UnfinishedWorkListenerKt$maybeLaunchUnfinishedWorkListener$1"
+    f = "UnfinishedWorkListener.kt"
+    l = {
+        0x3b
+    }
+    m = "invokeSuspend"
+.end annotation
+
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "Lkotlin/coroutines/jvm/internal/SuspendLambda;",
-        "Lzh/g;"
+        "Lka/g;"
     }
 .end annotation
 
 .annotation runtime Lkotlin/Metadata;
     d1 = {
-        "\u0000\u0016\n\u0002\u0018\u0002\n\u0002\u0010\u000b\n\u0002\u0010\u0003\n\u0000\n\u0002\u0010\t\n\u0002\u0008\u0002\u0010\u0006\u001a\u00020\u0001*\u0008\u0012\u0004\u0012\u00020\u00010\u00002\u0006\u0010\u0003\u001a\u00020\u00022\u0006\u0010\u0005\u001a\u00020\u0004H\u008a@"
+        "\u0000\u0016\n\u0002\u0018\u0002\n\u0002\u0010\u000b\n\u0002\u0010\u0003\n\u0000\n\u0002\u0010\t\n\u0002\u0008\u0003\u0010\u0006\u001a\u00020\u0001*\u0008\u0012\u0004\u0012\u00020\u00010\u00002\u0006\u0010\u0003\u001a\u00020\u00022\u0006\u0010\u0005\u001a\u00020\u0004H\u008a@\u00a2\u0006\u0004\u0008\u0006\u0010\u0007"
     }
     d2 = {
-        "Lkotlinx/coroutines/flow/i;",
+        "Lkotlinx/coroutines/flow/g;",
         "",
         "",
         "throwable",
         "",
         "attempt",
-        "<anonymous>"
+        "<anonymous>",
+        "(Lkotlinx/coroutines/flow/g;Ljava/lang/Throwable;J)Z"
     }
     k = 0x3
     mv = {
@@ -33,15 +43,6 @@
         0x8,
         0x0
     }
-.end annotation
-
-.annotation runtime Lth/c;
-    c = "androidx.work.impl.UnfinishedWorkListenerKt$maybeLaunchUnfinishedWorkListener$1"
-    f = "UnfinishedWorkListener.kt"
-    l = {
-        0x3b
-    }
-    m = "invokeSuspend"
 .end annotation
 
 
@@ -81,7 +82,7 @@
     .line 1
     move-object v1, p1
 
-    check-cast v1, Lkotlinx/coroutines/flow/i;
+    check-cast v1, Lkotlinx/coroutines/flow/g;
 
     move-object v2, p2
 
@@ -99,19 +100,19 @@
 
     move-object v0, p0
 
-    invoke-virtual/range {v0 .. v5}, Landroidx/work/impl/UnfinishedWorkListenerKt$maybeLaunchUnfinishedWorkListener$1;->invoke(Lkotlinx/coroutines/flow/i;Ljava/lang/Throwable;JLkotlin/coroutines/Continuation;)Ljava/lang/Object;
+    invoke-virtual/range {v0 .. v5}, Landroidx/work/impl/UnfinishedWorkListenerKt$maybeLaunchUnfinishedWorkListener$1;->invoke(Lkotlinx/coroutines/flow/g;Ljava/lang/Throwable;JLkotlin/coroutines/Continuation;)Ljava/lang/Object;
 
     move-result-object p1
 
     return-object p1
 .end method
 
-.method public final invoke(Lkotlinx/coroutines/flow/i;Ljava/lang/Throwable;JLkotlin/coroutines/Continuation;)Ljava/lang/Object;
+.method public final invoke(Lkotlinx/coroutines/flow/g;Ljava/lang/Throwable;JLkotlin/coroutines/Continuation;)Ljava/lang/Object;
     .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
-            "Lkotlinx/coroutines/flow/i;",
+            "Lkotlinx/coroutines/flow/g;",
             "Ljava/lang/Throwable;",
             "J",
             "Lkotlin/coroutines/Continuation<",
@@ -131,7 +132,7 @@
 
     iput-wide p3, p1, Landroidx/work/impl/UnfinishedWorkListenerKt$maybeLaunchUnfinishedWorkListener$1;->J$0:J
 
-    sget-object p2, Lqh/r;->a:Lqh/r;
+    sget-object p2, LX9/j;->a:LX9/j;
 
     invoke-virtual {p1, p2}, Landroidx/work/impl/UnfinishedWorkListenerKt$maybeLaunchUnfinishedWorkListener$1;->invokeSuspend(Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -206,7 +207,7 @@
 
     .line 30
     .line 31
-    invoke-static {}, Landroidx/work/u;->a()Landroidx/work/u;
+    invoke-static {}, Landroidx/work/A;->a()Landroidx/work/A;
 
     .line 32
     .line 33
@@ -214,7 +215,7 @@
     move-result-object p1
 
     .line 35
-    sget v1, Landroidx/work/impl/y;->b:I
+    sget v1, Landroidx/work/impl/j;->b:I
 
     .line 36
     .line 37
@@ -234,7 +235,7 @@
 
     .line 44
     .line 45
-    sget-wide v5, Landroidx/work/impl/y;->a:J
+    sget-wide v5, Landroidx/work/impl/j;->a:J
 
     .line 46
     .line 47
@@ -250,7 +251,7 @@
 
     .line 52
     .line 53
-    invoke-static {v3, v4, p0}, Lf7/l;->g(JLkotlin/coroutines/Continuation;)Ljava/lang/Object;
+    invoke-static {v3, v4, p0}, Lkotlinx/coroutines/w;->i(JLkotlin/coroutines/Continuation;)Ljava/lang/Object;
 
     .line 54
     .line 55

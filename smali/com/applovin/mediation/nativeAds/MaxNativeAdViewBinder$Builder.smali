@@ -64,30 +64,43 @@
 
     const/4 v0, -0x1
 
+    .line 4
     iput v0, p0, Lcom/applovin/mediation/nativeAds/MaxNativeAdViewBinder$Builder;->c:I
 
+    .line 5
     iput v0, p0, Lcom/applovin/mediation/nativeAds/MaxNativeAdViewBinder$Builder;->d:I
 
+    .line 6
     iput v0, p0, Lcom/applovin/mediation/nativeAds/MaxNativeAdViewBinder$Builder;->e:I
 
+    .line 7
     iput v0, p0, Lcom/applovin/mediation/nativeAds/MaxNativeAdViewBinder$Builder;->f:I
 
+    .line 8
     iput v0, p0, Lcom/applovin/mediation/nativeAds/MaxNativeAdViewBinder$Builder;->g:I
 
+    .line 9
     iput v0, p0, Lcom/applovin/mediation/nativeAds/MaxNativeAdViewBinder$Builder;->h:I
 
+    .line 10
     iput v0, p0, Lcom/applovin/mediation/nativeAds/MaxNativeAdViewBinder$Builder;->i:I
 
+    .line 11
     iput v0, p0, Lcom/applovin/mediation/nativeAds/MaxNativeAdViewBinder$Builder;->j:I
 
+    .line 12
     iput v0, p0, Lcom/applovin/mediation/nativeAds/MaxNativeAdViewBinder$Builder;->k:I
 
+    .line 13
     iput v0, p0, Lcom/applovin/mediation/nativeAds/MaxNativeAdViewBinder$Builder;->l:I
 
+    .line 14
     iput v0, p0, Lcom/applovin/mediation/nativeAds/MaxNativeAdViewBinder$Builder;->m:I
 
+    .line 15
     iput p1, p0, Lcom/applovin/mediation/nativeAds/MaxNativeAdViewBinder$Builder;->b:I
 
+    .line 16
     iput-object p2, p0, Lcom/applovin/mediation/nativeAds/MaxNativeAdViewBinder$Builder;->a:Landroid/view/View;
 
     return-void
@@ -193,24 +206,33 @@
 .method public setAdvertiserTextViewId(I)Lcom/applovin/mediation/nativeAds/MaxNativeAdViewBinder$Builder;
     .locals 0
 
+    .line 1
     iput p1, p0, Lcom/applovin/mediation/nativeAds/MaxNativeAdViewBinder$Builder;->d:I
 
+    .line 2
+    .line 3
     return-object p0
 .end method
 
 .method public setBodyTextViewId(I)Lcom/applovin/mediation/nativeAds/MaxNativeAdViewBinder$Builder;
     .locals 0
 
+    .line 1
     iput p1, p0, Lcom/applovin/mediation/nativeAds/MaxNativeAdViewBinder$Builder;->e:I
 
+    .line 2
+    .line 3
     return-object p0
 .end method
 
 .method public setCallToActionButtonId(I)Lcom/applovin/mediation/nativeAds/MaxNativeAdViewBinder$Builder;
     .locals 0
 
+    .line 1
     iput p1, p0, Lcom/applovin/mediation/nativeAds/MaxNativeAdViewBinder$Builder;->m:I
 
+    .line 2
+    .line 3
     return-object p0
 .end method
 
@@ -219,16 +241,22 @@
     .annotation runtime Ljava/lang/Deprecated;
     .end annotation
 
+    .line 1
     iput p1, p0, Lcom/applovin/mediation/nativeAds/MaxNativeAdViewBinder$Builder;->g:I
 
+    .line 2
+    .line 3
     return-object p0
 .end method
 
 .method public setIconImageViewId(I)Lcom/applovin/mediation/nativeAds/MaxNativeAdViewBinder$Builder;
     .locals 0
 
+    .line 1
     iput p1, p0, Lcom/applovin/mediation/nativeAds/MaxNativeAdViewBinder$Builder;->f:I
 
+    .line 2
+    .line 3
     return-object p0
 .end method
 
@@ -237,16 +265,22 @@
     .annotation runtime Ljava/lang/Deprecated;
     .end annotation
 
+    .line 1
     iput p1, p0, Lcom/applovin/mediation/nativeAds/MaxNativeAdViewBinder$Builder;->l:I
 
+    .line 2
+    .line 3
     return-object p0
 .end method
 
 .method public setMediaContentViewGroupId(I)Lcom/applovin/mediation/nativeAds/MaxNativeAdViewBinder$Builder;
     .locals 0
 
+    .line 1
     iput p1, p0, Lcom/applovin/mediation/nativeAds/MaxNativeAdViewBinder$Builder;->k:I
 
+    .line 2
+    .line 3
     return-object p0
 .end method
 
@@ -255,39 +289,54 @@
     .annotation runtime Ljava/lang/Deprecated;
     .end annotation
 
+    .line 1
     iput p1, p0, Lcom/applovin/mediation/nativeAds/MaxNativeAdViewBinder$Builder;->i:I
 
+    .line 2
+    .line 3
     return-object p0
 .end method
 
 .method public setOptionsContentViewGroupId(I)Lcom/applovin/mediation/nativeAds/MaxNativeAdViewBinder$Builder;
     .locals 0
 
+    .line 1
     iput p1, p0, Lcom/applovin/mediation/nativeAds/MaxNativeAdViewBinder$Builder;->h:I
 
+    .line 2
+    .line 3
     return-object p0
 .end method
 
 .method public setStarRatingContentViewGroupId(I)Lcom/applovin/mediation/nativeAds/MaxNativeAdViewBinder$Builder;
     .locals 0
 
+    .line 1
     iput p1, p0, Lcom/applovin/mediation/nativeAds/MaxNativeAdViewBinder$Builder;->j:I
 
+    .line 2
+    .line 3
     return-object p0
 .end method
 
 .method public setTemplateType(Ljava/lang/String;)Lcom/applovin/mediation/nativeAds/MaxNativeAdViewBinder$Builder;
     .locals 0
 
+    .line 1
     iput-object p1, p0, Lcom/applovin/mediation/nativeAds/MaxNativeAdViewBinder$Builder;->n:Ljava/lang/String;
 
+    .line 2
+    .line 3
     return-object p0
 .end method
 
 .method public setTitleTextViewId(I)Lcom/applovin/mediation/nativeAds/MaxNativeAdViewBinder$Builder;
     .locals 0
 
+    .line 1
     iput p1, p0, Lcom/applovin/mediation/nativeAds/MaxNativeAdViewBinder$Builder;->c:I
 
+    .line 2
+    .line 3
     return-object p0
 .end method

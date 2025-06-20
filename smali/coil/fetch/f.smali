@@ -4,5 +4,5 @@
 
 
 # virtual methods
-.method public abstract a(Ljava/lang/Object;Ln5/l;Lcoil/g;)Lcoil/fetch/g;
+.method public abstract a(Ljava/lang/Object;LH2/k;)Lcoil/fetch/g;
 .end method

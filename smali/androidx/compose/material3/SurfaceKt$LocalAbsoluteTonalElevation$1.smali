@@ -3,14 +3,14 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lzh/a;
+.implements Lka/a;
 
 
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "Lkotlin/jvm/internal/Lambda;",
-        "Lzh/a;"
+        "Lka/a;"
     }
 .end annotation
 
@@ -19,7 +19,7 @@
         "\u0000\u0008\n\u0002\u0018\u0002\n\u0002\u0008\u0003\u0010\u0003\u001a\u00020\u0000H\n\u00a2\u0006\u0004\u0008\u0001\u0010\u0002"
     }
     d2 = {
-        "Lh2/e;",
+        "LM0/e;",
         "invoke-D9Ej5fM",
         "()F",
         "<anonymous>"
@@ -74,11 +74,11 @@
     move-result v0
 
     .line 5
-    new-instance v1, Lh2/e;
+    new-instance v1, LM0/e;
 
     .line 6
     .line 7
-    invoke-direct {v1, v0}, Lh2/e;-><init>(F)V
+    invoke-direct {v1, v0}, LM0/e;-><init>(F)V
 
     .line 8
     .line 9

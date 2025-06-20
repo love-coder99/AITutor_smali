@@ -1,67 +1,82 @@
-.class public abstract synthetic Landroidx/compose/ui/platform/c0;
+.class public final Landroidx/compose/ui/platform/C0;
 .super Ljava/lang/Object;
 .source "SourceFile"
 
+# interfaces
+.implements Landroidx/compose/ui/node/j0;
 
-# static fields
-.field public static final synthetic a:[I
+
+# instance fields
+.field public final b:I
+
+.field public final c:Ljava/util/ArrayList;
+
+.field public d:Ljava/lang/Float;
+
+.field public f:Ljava/lang/Float;
+
+.field public g:Landroidx/compose/ui/semantics/h;
+
+.field public h:Landroidx/compose/ui/semantics/h;
 
 
 # direct methods
-.method static constructor <clinit>()V
-    .locals 3
+.method public constructor <init>(ILjava/util/ArrayList;)V
+    .locals 0
 
-    invoke-static {}, Landroidx/compose/ui/state/ToggleableState;->values()[Landroidx/compose/ui/state/ToggleableState;
+    .line 1
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    move-result-object v0
+    .line 2
+    .line 3
+    .line 4
+    iput p1, p0, Landroidx/compose/ui/platform/C0;->b:I
 
-    array-length v0, v0
+    .line 5
+    .line 6
+    iput-object p2, p0, Landroidx/compose/ui/platform/C0;->c:Ljava/util/ArrayList;
 
-    new-array v0, v0, [I
+    .line 7
+    .line 8
+    const/4 p1, 0x0
 
-    :try_start_0
-    sget-object v1, Landroidx/compose/ui/state/ToggleableState;->On:Landroidx/compose/ui/state/ToggleableState;
+    .line 9
+    iput-object p1, p0, Landroidx/compose/ui/platform/C0;->d:Ljava/lang/Float;
 
-    invoke-virtual {v1}, Ljava/lang/Enum;->ordinal()I
+    .line 10
+    .line 11
+    iput-object p1, p0, Landroidx/compose/ui/platform/C0;->f:Ljava/lang/Float;
 
-    move-result v1
+    .line 12
+    .line 13
+    iput-object p1, p0, Landroidx/compose/ui/platform/C0;->g:Landroidx/compose/ui/semantics/h;
 
-    const/4 v2, 0x1
+    .line 14
+    .line 15
+    iput-object p1, p0, Landroidx/compose/ui/platform/C0;->h:Landroidx/compose/ui/semantics/h;
 
-    aput v2, v0, v1
-    :try_end_0
-    .catch Ljava/lang/NoSuchFieldError; {:try_start_0 .. :try_end_0} :catch_0
-
-    :catch_0
-    :try_start_1
-    sget-object v1, Landroidx/compose/ui/state/ToggleableState;->Off:Landroidx/compose/ui/state/ToggleableState;
-
-    invoke-virtual {v1}, Ljava/lang/Enum;->ordinal()I
-
-    move-result v1
-
-    const/4 v2, 0x2
-
-    aput v2, v0, v1
-    :try_end_1
-    .catch Ljava/lang/NoSuchFieldError; {:try_start_1 .. :try_end_1} :catch_1
-
-    :catch_1
-    :try_start_2
-    sget-object v1, Landroidx/compose/ui/state/ToggleableState;->Indeterminate:Landroidx/compose/ui/state/ToggleableState;
-
-    invoke-virtual {v1}, Ljava/lang/Enum;->ordinal()I
-
-    move-result v1
-
-    const/4 v2, 0x3
-
-    aput v2, v0, v1
-    :try_end_2
-    .catch Ljava/lang/NoSuchFieldError; {:try_start_2 .. :try_end_2} :catch_2
-
-    :catch_2
-    sput-object v0, Landroidx/compose/ui/platform/c0;->a:[I
-
+    .line 16
+    .line 17
     return-void
+.end method
+
+
+# virtual methods
+.method public final r()Z
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, Landroidx/compose/ui/platform/C0;->c:Ljava/util/ArrayList;
+
+    .line 2
+    .line 3
+    invoke-virtual {v0, p0}, Ljava/util/ArrayList;->contains(Ljava/lang/Object;)Z
+
+    .line 4
+    .line 5
+    .line 6
+    move-result v0
+
+    .line 7
+    return v0
 .end method

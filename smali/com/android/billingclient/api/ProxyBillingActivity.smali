@@ -3,6 +3,15 @@
 .source "SourceFile"
 
 
+# annotations
+.annotation build Lcom/android/billingclient/api/zzl;
+.end annotation
+
+.annotation build Lcom/google/android/apps/common/proguard/UsedByReflection;
+    value = "PlatformActivityProxy"
+.end annotation
+
+
 # static fields
 .field private static final KEY_ACTIVITY_CODE:Ljava/lang/String; = "activity_code"
 
@@ -25,10 +34,16 @@
 .field private activityCode:I
 
 .field private inAppMessageResultReceiver:Landroid/os/ResultReceiver;
+    .annotation build Landroidx/annotation/Nullable;
+    .end annotation
+.end field
 
 .field private isFlowFromFirstPartyClient:Z
 
 .field private priceChangeResultReceiver:Landroid/os/ResultReceiver;
+    .annotation build Landroidx/annotation/Nullable;
+    .end annotation
+.end field
 
 .field private sendCancelledBroadcastIfFinished:Z
 
@@ -141,6 +156,12 @@
 # virtual methods
 .method public onActivityResult(IILandroid/content/Intent;)V
     .locals 6
+    .param p3    # Landroid/content/Intent;
+        .annotation build Landroidx/annotation/Nullable;
+        .end annotation
+    .end param
+    .annotation build Lcom/android/billingclient/api/zzl;
+    .end annotation
 
     .line 1
     invoke-super {p0, p1, p2, p3}, Landroid/app/Activity;->onActivityResult(IILandroid/content/Intent;)V
@@ -182,7 +203,7 @@
 
     .line 18
     .line 19
-    sget p1, Lcom/google/android/gms/internal/play_billing/h1;->a:I
+    sget p1, Lcom/google/android/gms/internal/play_billing/i0;->a:I
 
     .line 20
     .line 21
@@ -262,7 +283,7 @@
     .line 53
     .line 54
     :cond_4
-    sget p1, Lcom/google/android/gms/internal/play_billing/h1;->a:I
+    sget p1, Lcom/google/android/gms/internal/play_billing/i0;->a:I
 
     .line 55
     .line 56
@@ -276,7 +297,7 @@
 
     .line 59
     .line 60
-    invoke-static {v0, p3}, Lcom/google/android/gms/internal/play_billing/h1;->e(Ljava/lang/String;Landroid/content/Intent;)Lcom/android/billingclient/api/BillingResult;
+    invoke-static {v0, p3}, Lcom/google/android/gms/internal/play_billing/i0;->e(Ljava/lang/String;Landroid/content/Intent;)Lcom/android/billingclient/api/BillingResult;
 
     .line 61
     .line 62
@@ -507,7 +528,7 @@
     const/4 v5, 0x2
 
     .line 171
-    invoke-static {v4, v5, p3}, Lcom/android/billingclient/api/zzcg;->zzb(IILcom/android/billingclient/api/BillingResult;)Lcom/google/android/gms/internal/play_billing/p4;
+    invoke-static {v4, v5, p3}, Lcom/android/billingclient/api/zzcg;->zzb(IILcom/android/billingclient/api/BillingResult;)Lcom/google/android/gms/internal/play_billing/C1;
 
     .line 172
     .line 173
@@ -515,7 +536,7 @@
     move-result-object p3
 
     .line 175
-    invoke-virtual {p3}, Lcom/google/android/gms/internal/play_billing/l2;->b()[B
+    invoke-virtual {p3}, Lcom/google/android/gms/internal/play_billing/K0;->b()[B
 
     .line 176
     .line 177
@@ -588,6 +609,12 @@
 
 .method public onCreate(Landroid/os/Bundle;)V
     .locals 14
+    .param p1    # Landroid/os/Bundle;
+        .annotation build Landroidx/annotation/Nullable;
+        .end annotation
+    .end param
+    .annotation build Lcom/android/billingclient/api/zzl;
+    .end annotation
 
     .line 1
     invoke-super {p0, p1}, Landroid/app/Activity;->onCreate(Landroid/os/Bundle;)V
@@ -626,7 +653,7 @@
 
     .line 18
     .line 19
-    invoke-static {v1, p1}, Lcom/google/android/gms/internal/play_billing/h1;->h(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v1, p1}, Lcom/google/android/gms/internal/play_billing/i0;->h(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 20
     .line 21
@@ -924,13 +951,13 @@
     .line 161
     .line 162
     .line 163
-    const/4 v11, 0x0
-
-    .line 164
     const/4 v12, 0x0
 
-    .line 165
+    .line 164
     const/4 v13, 0x0
+
+    .line 165
+    const/4 v11, 0x0
 
     .line 166
     move-object v7, p0
@@ -950,7 +977,7 @@
     nop
 
     .line 172
-    sget p1, Lcom/google/android/gms/internal/play_billing/h1;->a:I
+    sget p1, Lcom/google/android/gms/internal/play_billing/i0;->a:I
 
     .line 173
     .line 174
@@ -1062,7 +1089,7 @@
 
     .line 226
     .line 227
-    invoke-static {v1, v6}, Lcom/google/android/gms/internal/play_billing/h1;->h(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v1, v6}, Lcom/google/android/gms/internal/play_billing/i0;->h(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 228
     .line 229
@@ -1178,6 +1205,8 @@
 
 .method public onDestroy()V
     .locals 3
+    .annotation build Lcom/android/billingclient/api/zzl;
+    .end annotation
 
     .line 1
     invoke-super {p0}, Landroid/app/Activity;->onDestroy()V
@@ -1289,6 +1318,12 @@
 
 .method public onSaveInstanceState(Landroid/os/Bundle;)V
     .locals 2
+    .param p1    # Landroid/os/Bundle;
+        .annotation build Landroidx/annotation/NonNull;
+        .end annotation
+    .end param
+    .annotation build Lcom/android/billingclient/api/zzl;
+    .end annotation
 
     .line 1
     invoke-super {p0, p1}, Landroid/app/Activity;->onSaveInstanceState(Landroid/os/Bundle;)V

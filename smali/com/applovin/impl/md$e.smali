@@ -21,6 +21,7 @@
 .method private constructor <init>()V
     .locals 0
 
+    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -29,7 +30,7 @@
 .method public synthetic constructor <init>(Lcom/applovin/impl/md$a;)V
     .locals 0
 
-    .line 1
+    .line 2
     invoke-direct {p0}, Lcom/applovin/impl/md$e;-><init>()V
 
     return-void
@@ -80,18 +81,18 @@
 .method public b(Ljava/lang/String;Ljava/lang/String;Landroid/media/MediaCodecInfo$CodecCapabilities;)Z
     .locals 0
 
+    .line 2
     const-string p3, "secure-playback"
 
-    .line 2
     invoke-virtual {p3, p1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
     move-result p1
 
     if-eqz p1, :cond_0
 
+    .line 3
     const-string p1, "video/avc"
 
-    .line 3
     invoke-virtual {p1, p2}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
     move-result p1

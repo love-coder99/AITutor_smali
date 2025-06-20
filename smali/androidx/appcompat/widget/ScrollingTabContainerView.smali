@@ -72,6 +72,10 @@
 
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 3
+    .param p1    # Landroid/content/Context;
+        .annotation build Landroidx/annotation/NonNull;
+        .end annotation
+    .end param
 
     .line 1
     invoke-direct {p0, p1}, Landroid/widget/HorizontalScrollView;-><init>(Landroid/content/Context;)V
@@ -100,88 +104,87 @@
     .line 13
     .line 14
     .line 15
-    new-instance v0, Lk/a;
+    invoke-static {p1}, LN5/b;->e(Landroid/content/Context;)LN5/b;
 
     .line 16
     .line 17
-    invoke-direct {v0, p1}, Lk/a;-><init>(Landroid/content/Context;)V
-
     .line 18
-    .line 19
-    .line 20
-    invoke-virtual {v0}, Lk/a;->g()I
+    move-result-object p1
 
+    .line 19
+    invoke-virtual {p1}, LN5/b;->i()I
+
+    .line 20
     .line 21
     .line 22
+    move-result v0
+
     .line 23
-    move-result p1
+    invoke-virtual {p0, v0}, Landroidx/appcompat/widget/ScrollingTabContainerView;->setContentHeight(I)V
 
     .line 24
-    invoke-virtual {p0, p1}, Landroidx/appcompat/widget/ScrollingTabContainerView;->setContentHeight(I)V
-
     .line 25
     .line 26
-    .line 27
-    iget-object p1, v0, Lk/a;->b:Landroid/content/Context;
+    iget-object p1, p1, LN5/b;->c:Landroid/content/Context;
 
+    .line 27
     .line 28
-    .line 29
     invoke-virtual {p1}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
 
+    .line 29
     .line 30
     .line 31
-    .line 32
     move-result-object p1
+
+    .line 32
+    sget v0, Li/d;->abc_action_bar_stacked_tab_max_width:I
 
     .line 33
-    sget v0, Lg/d;->abc_action_bar_stacked_tab_max_width:I
-
     .line 34
-    .line 35
     invoke-virtual {p1, v0}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
 
+    .line 35
     .line 36
     .line 37
-    .line 38
     move-result p1
 
-    .line 39
+    .line 38
     iput p1, p0, Landroidx/appcompat/widget/ScrollingTabContainerView;->mStackedTabMaxWidth:I
 
+    .line 39
     .line 40
-    .line 41
     invoke-direct {p0}, Landroidx/appcompat/widget/ScrollingTabContainerView;->createTabLayout()Landroidx/appcompat/widget/LinearLayoutCompat;
 
+    .line 41
     .line 42
     .line 43
-    .line 44
     move-result-object p1
 
-    .line 45
+    .line 44
     iput-object p1, p0, Landroidx/appcompat/widget/ScrollingTabContainerView;->mTabLayout:Landroidx/appcompat/widget/LinearLayoutCompat;
 
+    .line 45
     .line 46
-    .line 47
     new-instance v0, Landroid/view/ViewGroup$LayoutParams;
 
+    .line 47
     .line 48
-    .line 49
     const/4 v1, -0x2
 
-    .line 50
+    .line 49
     const/4 v2, -0x1
 
-    .line 51
+    .line 50
     invoke-direct {v0, v1, v2}, Landroid/view/ViewGroup$LayoutParams;-><init>(II)V
 
+    .line 51
     .line 52
     .line 53
-    .line 54
     invoke-virtual {p0, p1, v0}, Landroid/view/ViewGroup;->addView(Landroid/view/View;Landroid/view/ViewGroup$LayoutParams;)V
 
+    .line 54
     .line 55
     .line 56
-    .line 57
     return-void
 .end method
 
@@ -204,7 +207,7 @@
     const/4 v2, 0x0
 
     .line 8
-    sget v3, Lg/a;->actionDropDownStyle:I
+    sget v3, Li/a;->actionDropDownStyle:I
 
     .line 9
     .line 10
@@ -260,7 +263,7 @@
     const/4 v2, 0x0
 
     .line 8
-    sget v3, Lg/a;->actionBarTabBarStyle:I
+    sget v3, Li/a;->actionBarTabBarStyle:I
 
     .line 9
     .line 10
@@ -576,14 +579,14 @@
 
     const/4 v0, 0x0
 
-    .line 6
+    .line 8
     invoke-virtual {p0, p1, v0}, Landroidx/appcompat/widget/ScrollingTabContainerView;->createTabView(Landroidx/appcompat/app/b;Z)Landroidx/appcompat/widget/ScrollingTabContainerView$TabView;
 
     move-result-object p1
 
+    .line 9
     iget-object v1, p0, Landroidx/appcompat/widget/ScrollingTabContainerView;->mTabLayout:Landroidx/appcompat/widget/LinearLayoutCompat;
 
-    .line 7
     new-instance v2, Landroidx/appcompat/widget/LinearLayoutCompat$LayoutParams;
 
     const/4 v3, -0x1
@@ -594,11 +597,12 @@
 
     invoke-virtual {v1, p1, p2, v2}, Landroid/view/ViewGroup;->addView(Landroid/view/View;ILandroid/view/ViewGroup$LayoutParams;)V
 
+    .line 10
     iget-object p2, p0, Landroidx/appcompat/widget/ScrollingTabContainerView;->mTabSpinner:Landroid/widget/Spinner;
 
     if-eqz p2, :cond_0
 
-    .line 8
+    .line 11
     invoke-virtual {p2}, Landroid/widget/AbsSpinner;->getAdapter()Landroid/widget/SpinnerAdapter;
 
     move-result-object p2
@@ -612,15 +616,16 @@
 
     const/4 p2, 0x1
 
-    .line 9
+    .line 12
     invoke-virtual {p1, p2}, Landroidx/appcompat/widget/ScrollingTabContainerView$TabView;->setSelected(Z)V
 
+    .line 13
     :cond_1
     iget-boolean p1, p0, Landroidx/appcompat/widget/ScrollingTabContainerView;->mAllowCollapse:Z
 
     if-eqz p1, :cond_2
 
-    .line 10
+    .line 14
     invoke-virtual {p0}, Landroid/view/View;->requestLayout()V
 
     :cond_2
@@ -637,9 +642,9 @@
 
     move-result-object p1
 
+    .line 2
     iget-object v1, p0, Landroidx/appcompat/widget/ScrollingTabContainerView;->mTabLayout:Landroidx/appcompat/widget/LinearLayoutCompat;
 
-    .line 2
     new-instance v2, Landroidx/appcompat/widget/LinearLayoutCompat$LayoutParams;
 
     const/4 v3, -0x1
@@ -650,11 +655,12 @@
 
     invoke-virtual {v1, p1, v2}, Landroid/view/ViewGroup;->addView(Landroid/view/View;Landroid/view/ViewGroup$LayoutParams;)V
 
+    .line 3
     iget-object v0, p0, Landroidx/appcompat/widget/ScrollingTabContainerView;->mTabSpinner:Landroid/widget/Spinner;
 
     if-eqz v0, :cond_0
 
-    .line 3
+    .line 4
     invoke-virtual {v0}, Landroid/widget/AbsSpinner;->getAdapter()Landroid/widget/SpinnerAdapter;
 
     move-result-object v0
@@ -668,15 +674,16 @@
 
     const/4 p2, 0x1
 
-    .line 4
+    .line 5
     invoke-virtual {p1, p2}, Landroidx/appcompat/widget/ScrollingTabContainerView$TabView;->setSelected(Z)V
 
+    .line 6
     :cond_1
     iget-boolean p1, p0, Landroidx/appcompat/widget/ScrollingTabContainerView;->mAllowCollapse:Z
 
     if-eqz p1, :cond_2
 
-    .line 5
+    .line 7
     invoke-virtual {p0}, Landroid/view/View;->requestLayout()V
 
     :cond_2
@@ -1041,56 +1048,55 @@
     move-result-object p1
 
     .line 8
-    new-instance v0, Lk/a;
+    invoke-static {p1}, LN5/b;->e(Landroid/content/Context;)LN5/b;
 
     .line 9
     .line 10
-    invoke-direct {v0, p1}, Lk/a;-><init>(Landroid/content/Context;)V
-
     .line 11
-    .line 12
-    .line 13
-    invoke-virtual {v0}, Lk/a;->g()I
-
-    .line 14
-    .line 15
-    .line 16
-    move-result p1
-
-    .line 17
-    invoke-virtual {p0, p1}, Landroidx/appcompat/widget/ScrollingTabContainerView;->setContentHeight(I)V
-
-    .line 18
-    .line 19
-    .line 20
-    iget-object p1, v0, Lk/a;->b:Landroid/content/Context;
-
-    .line 21
-    .line 22
-    invoke-virtual {p1}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
-
-    .line 23
-    .line 24
-    .line 25
     move-result-object p1
 
-    .line 26
-    sget v0, Lg/d;->abc_action_bar_stacked_tab_max_width:I
+    .line 12
+    invoke-virtual {p1}, LN5/b;->i()I
 
+    .line 13
+    .line 14
+    .line 15
+    move-result v0
+
+    .line 16
+    invoke-virtual {p0, v0}, Landroidx/appcompat/widget/ScrollingTabContainerView;->setContentHeight(I)V
+
+    .line 17
+    .line 18
+    .line 19
+    iget-object p1, p1, LN5/b;->c:Landroid/content/Context;
+
+    .line 20
+    .line 21
+    invoke-virtual {p1}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
+
+    .line 22
+    .line 23
+    .line 24
+    move-result-object p1
+
+    .line 25
+    sget v0, Li/d;->abc_action_bar_stacked_tab_max_width:I
+
+    .line 26
     .line 27
-    .line 28
     invoke-virtual {p1, v0}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
 
+    .line 28
     .line 29
     .line 30
-    .line 31
     move-result p1
 
-    .line 32
+    .line 31
     iput p1, p0, Landroidx/appcompat/widget/ScrollingTabContainerView;->mStackedTabMaxWidth:I
 
+    .line 32
     .line 33
-    .line 34
     return-void
 .end method
 
@@ -1556,8 +1562,11 @@
 .method public setAllowCollapse(Z)V
     .locals 0
 
+    .line 1
     iput-boolean p1, p0, Landroidx/appcompat/widget/ScrollingTabContainerView;->mAllowCollapse:Z
 
+    .line 2
+    .line 3
     return-void
 .end method
 

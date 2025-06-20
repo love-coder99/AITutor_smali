@@ -53,7 +53,7 @@
 
     .line 10
     .line 11
-    invoke-static {}, Landroidx/compose/foundation/text/modifiers/f;->t()Ljava/util/Map;
+    invoke-static {}, Landroidx/compose/runtime/a0;->v()Ljava/util/Map;
 
     .line 12
     .line 13
@@ -251,15 +251,15 @@
 .method private a(Lcom/applovin/impl/h0;)Lcom/applovin/impl/sdk/AppLovinAdServiceImpl$d;
     .locals 3
 
+    .line 54
     iget-object v0, p0, Lcom/applovin/impl/sdk/AppLovinAdServiceImpl;->d:Ljava/lang/Object;
 
-    .line 53
     monitor-enter v0
 
+    .line 55
     :try_start_0
     iget-object v1, p0, Lcom/applovin/impl/sdk/AppLovinAdServiceImpl;->c:Ljava/util/Map;
 
-    .line 54
     invoke-interface {v1, p1}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object v1
@@ -268,16 +268,16 @@
 
     if-nez v1, :cond_0
 
-    .line 55
+    .line 56
     new-instance v1, Lcom/applovin/impl/sdk/AppLovinAdServiceImpl$d;
 
     const/4 v2, 0x0
 
     invoke-direct {v1, v2}, Lcom/applovin/impl/sdk/AppLovinAdServiceImpl$d;-><init>(Lcom/applovin/impl/sdk/AppLovinAdServiceImpl$a;)V
 
+    .line 57
     iget-object v2, p0, Lcom/applovin/impl/sdk/AppLovinAdServiceImpl;->c:Ljava/util/Map;
 
-    .line 56
     invoke-interface {v2, p1, v1}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     goto :goto_0
@@ -287,14 +287,14 @@
 
     goto :goto_1
 
-    .line 57
+    .line 58
     :cond_0
     :goto_0
     monitor-exit v0
 
     return-object v1
 
-    .line 58
+    .line 59
     :goto_1
     monitor-exit v0
     :try_end_0
@@ -306,7 +306,7 @@
 .method public static synthetic a(Lcom/applovin/impl/sdk/AppLovinAdServiceImpl;)Lcom/applovin/impl/sdk/j;
     .locals 0
 
-    .line 59
+    .line 60
     iget-object p0, p0, Lcom/applovin/impl/sdk/AppLovinAdServiceImpl;->a:Lcom/applovin/impl/sdk/j;
 
     return-object p0
@@ -317,7 +317,7 @@
 
     const/4 v0, 0x0
 
-    .line 81
+    .line 82
     :try_start_0
     invoke-static {p1}, Lcom/applovin/impl/sdk/utils/StringUtils;->isValidString(Ljava/lang/String;)Z
 
@@ -334,20 +334,20 @@
     :cond_0
     const/4 p4, 0x0
 
-    .line 82
+    .line 83
     :cond_1
     invoke-static {p1}, Landroid/net/Uri;->parse(Ljava/lang/String;)Landroid/net/Uri;
 
     move-result-object v1
 
-    .line 83
+    .line 84
     invoke-virtual {v1}, Landroid/net/Uri;->buildUpon()Landroid/net/Uri$Builder;
 
     move-result-object v1
 
     const-string v2, "et_s"
 
-    .line 84
+    .line 85
     invoke-static {p2, p3}, Ljava/lang/Long;->toString(J)Ljava/lang/String;
 
     move-result-object p2
@@ -358,7 +358,7 @@
 
     const-string p3, "pv"
 
-    .line 85
+    .line 86
     invoke-static {p4}, Ljava/lang/Integer;->toString(I)Ljava/lang/String;
 
     move-result-object p4
@@ -369,14 +369,14 @@
 
     const-string p3, "vid_ts"
 
-    .line 86
+    .line 87
     invoke-virtual {p2, p3, p5}, Landroid/net/Uri$Builder;->appendQueryParameter(Ljava/lang/String;Ljava/lang/String;)Landroid/net/Uri$Builder;
 
     move-result-object p2
 
     const-string p3, "uvs"
 
-    .line 87
+    .line 88
     invoke-static {p6}, Ljava/lang/Boolean;->toString(Z)Ljava/lang/String;
 
     move-result-object p4
@@ -385,12 +385,12 @@
 
     move-result-object p2
 
-    .line 88
+    .line 89
     invoke-virtual {p2}, Landroid/net/Uri$Builder;->build()Landroid/net/Uri;
 
     move-result-object p2
 
-    .line 89
+    .line 90
     invoke-virtual {p2}, Landroid/net/Uri;->toString()Ljava/lang/String;
 
     move-result-object p1
@@ -407,7 +407,7 @@
     :cond_2
     return-object v0
 
-    .line 90
+    .line 91
     :goto_0
     invoke-static {}, Lcom/applovin/impl/sdk/n;->a()Z
 
@@ -433,10 +433,10 @@
 
     invoke-virtual {p3, p4, p1, p2}, Lcom/applovin/impl/sdk/n;->a(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)V
 
+    .line 92
     :cond_3
     iget-object p1, p0, Lcom/applovin/impl/sdk/AppLovinAdServiceImpl;->a:Lcom/applovin/impl/sdk/j;
 
-    .line 91
     invoke-virtual {p1}, Lcom/applovin/impl/sdk/j;->D()Lcom/applovin/impl/la;
 
     move-result-object p1
@@ -451,14 +451,14 @@
 .method private a(Ljava/lang/String;JJLjava/util/List;ZI)Ljava/lang/String;
     .locals 1
 
-    .line 128
+    .line 129
     invoke-static {p1}, Lcom/applovin/impl/sdk/utils/StringUtils;->isValidString(Ljava/lang/String;)Z
 
     move-result v0
 
     if-eqz v0, :cond_2
 
-    .line 129
+    .line 130
     invoke-static {p1}, Landroid/net/Uri;->parse(Ljava/lang/String;)Landroid/net/Uri;
 
     move-result-object p1
@@ -467,7 +467,7 @@
 
     move-result-object p1
 
-    .line 130
+    .line 131
     invoke-static {p2, p3}, Ljava/lang/Long;->toString(J)Ljava/lang/String;
 
     move-result-object p2
@@ -478,7 +478,7 @@
 
     move-result-object p1
 
-    .line 131
+    .line 132
     invoke-static {p4, p5}, Ljava/lang/Long;->toString(J)Ljava/lang/String;
 
     move-result-object p2
@@ -491,14 +491,14 @@
 
     if-eqz p6, :cond_0
 
-    .line 132
+    .line 133
     invoke-interface {p6}, Ljava/util/List;->size()I
 
     move-result p2
 
     if-lez p2, :cond_0
 
-    .line 133
+    .line 134
     invoke-virtual {p6}, Ljava/lang/Object;->toString()Ljava/lang/String;
 
     move-result-object p2
@@ -507,13 +507,13 @@
 
     invoke-virtual {p1, p3, p2}, Landroid/net/Uri$Builder;->appendQueryParameter(Ljava/lang/String;Ljava/lang/String;)Landroid/net/Uri$Builder;
 
-    .line 134
+    .line 135
     :cond_0
     sget p2, Lcom/applovin/impl/sdk/h;->i:I
 
     if-eq p8, p2, :cond_1
 
-    .line 135
+    .line 136
     invoke-static {p7}, Ljava/lang/Boolean;->toString(Z)Ljava/lang/String;
 
     move-result-object p2
@@ -522,7 +522,7 @@
 
     invoke-virtual {p1, p3, p2}, Landroid/net/Uri$Builder;->appendQueryParameter(Ljava/lang/String;Ljava/lang/String;)Landroid/net/Uri$Builder;
 
-    .line 136
+    .line 137
     invoke-static {p8}, Lcom/applovin/impl/sdk/h;->a(I)Z
 
     move-result p2
@@ -535,7 +535,7 @@
 
     invoke-virtual {p1, p3, p2}, Landroid/net/Uri$Builder;->appendQueryParameter(Ljava/lang/String;Ljava/lang/String;)Landroid/net/Uri$Builder;
 
-    .line 137
+    .line 138
     :cond_1
     invoke-virtual {p1}, Landroid/net/Uri$Builder;->build()Landroid/net/Uri;
 
@@ -556,12 +556,12 @@
 .method private a(Landroid/net/Uri;Ljava/lang/String;)Ljava/util/List;
     .locals 6
 
-    .line 122
+    .line 123
     invoke-virtual {p1, p2}, Landroid/net/Uri;->getQueryParameters(Ljava/lang/String;)Ljava/util/List;
 
     move-result-object p1
 
-    .line 123
+    .line 124
     new-instance v0, Ljava/util/ArrayList;
 
     invoke-interface {p1}, Ljava/util/List;->size()I
@@ -570,7 +570,7 @@
 
     invoke-direct {v0, v1}, Ljava/util/ArrayList;-><init>(I)V
 
-    .line 124
+    .line 125
     invoke-interface {p1}, Ljava/util/List;->iterator()Ljava/util/Iterator;
 
     move-result-object p1
@@ -588,7 +588,7 @@
 
     check-cast v1, Ljava/lang/String;
 
-    .line 125
+    .line 126
     :try_start_0
     invoke-static {v1}, Landroid/net/Uri;->parse(Ljava/lang/String;)Landroid/net/Uri;
 
@@ -603,9 +603,9 @@
     :catchall_0
     move-exception v1
 
+    .line 127
     iget-object v2, p0, Lcom/applovin/impl/sdk/AppLovinAdServiceImpl;->a:Lcom/applovin/impl/sdk/j;
 
-    .line 126
     invoke-virtual {v2}, Lcom/applovin/impl/sdk/j;->I()Lcom/applovin/impl/sdk/n;
 
     invoke-static {}, Lcom/applovin/impl/sdk/n;->a()Z
@@ -636,10 +636,10 @@
 
     invoke-virtual {v2, v3, v4}, Lcom/applovin/impl/sdk/n;->k(Ljava/lang/String;Ljava/lang/String;)V
 
+    .line 128
     :cond_0
     iget-object v2, p0, Lcom/applovin/impl/sdk/AppLovinAdServiceImpl;->a:Lcom/applovin/impl/sdk/j;
 
-    .line 127
     invoke-virtual {v2}, Lcom/applovin/impl/sdk/j;->D()Lcom/applovin/impl/la;
 
     move-result-object v2
@@ -657,7 +657,7 @@
 .method private a()V
     .locals 5
 
-    .line 138
+    .line 139
     invoke-static {}, Lcom/applovin/impl/sdk/n;->a()Z
 
     move-result v0
@@ -672,10 +672,10 @@
 
     invoke-virtual {v0, v1, v2}, Lcom/applovin/impl/sdk/n;->a(Ljava/lang/String;Ljava/lang/String;)V
 
+    .line 140
     :cond_0
     iget-object v0, p0, Lcom/applovin/impl/sdk/AppLovinAdServiceImpl;->a:Lcom/applovin/impl/sdk/j;
 
-    .line 139
     sget-object v2, Lcom/applovin/impl/uj;->P:Lcom/applovin/impl/uj;
 
     invoke-virtual {v0, v2}, Lcom/applovin/impl/sdk/j;->b(Lcom/applovin/impl/uj;)Ljava/lang/Object;
@@ -684,7 +684,7 @@
 
     check-cast v0, Ljava/lang/String;
 
-    .line 140
+    .line 141
     invoke-static {v0}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
 
     move-result v2
@@ -693,7 +693,7 @@
 
     if-eqz v2, :cond_2
 
-    .line 141
+    .line 142
     invoke-static {}, Lcom/applovin/impl/sdk/n;->a()Z
 
     move-result v0
@@ -711,7 +711,7 @@
 
     goto :goto_0
 
-    .line 142
+    .line 143
     :cond_2
     new-instance v2, Lorg/json/JSONObject;
 
@@ -721,15 +721,15 @@
 
     move-result-object v0
 
-    .line 143
+    .line 144
     invoke-static {v0}, Lcom/applovin/impl/sdk/utils/JsonUtils;->tryToStringMap(Lorg/json/JSONObject;)Ljava/util/Map;
 
     move-result-object v0
 
+    .line 145
     :goto_0
     iget-object v2, p0, Lcom/applovin/impl/sdk/AppLovinAdServiceImpl;->a:Lcom/applovin/impl/sdk/j;
 
-    .line 144
     invoke-virtual {v2}, Lcom/applovin/impl/sdk/j;->D()Lcom/applovin/impl/la;
 
     move-result-object v2
@@ -738,9 +738,9 @@
 
     invoke-virtual {v2, v4, v0}, Lcom/applovin/impl/la;->a(Lcom/applovin/impl/ka;Ljava/util/Map;)V
 
+    .line 146
     iget-object v0, p0, Lcom/applovin/impl/sdk/AppLovinAdServiceImpl;->a:Lcom/applovin/impl/sdk/j;
 
-    .line 145
     sget-object v2, Lcom/applovin/impl/uj;->O:Lcom/applovin/impl/uj;
 
     invoke-virtual {v0, v2}, Lcom/applovin/impl/sdk/j;->b(Lcom/applovin/impl/uj;)Ljava/lang/Object;
@@ -751,28 +751,28 @@
 
     if-eqz v0, :cond_4
 
-    .line 146
+    .line 147
     invoke-static {v0, v3}, Lcom/applovin/impl/sdk/utils/JsonUtils;->jsonObjectFromJsonString(Ljava/lang/String;Lorg/json/JSONObject;)Lorg/json/JSONObject;
 
     move-result-object v0
 
+    .line 148
     const-string v1, "app_killed_postback_url"
 
-    .line 147
     invoke-static {v0, v1, v3}, Lcom/applovin/impl/sdk/utils/JsonUtils;->getString(Lorg/json/JSONObject;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v1
 
+    .line 149
     const-string v2, "app_killed_postback_backup_url"
 
-    .line 148
     invoke-static {v0, v2, v3}, Lcom/applovin/impl/sdk/utils/JsonUtils;->getString(Lorg/json/JSONObject;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v0
 
+    .line 150
     iget-object v2, p0, Lcom/applovin/impl/sdk/AppLovinAdServiceImpl;->a:Lcom/applovin/impl/sdk/j;
 
-    .line 149
     sget-object v3, Lcom/applovin/impl/uj;->N:Lcom/applovin/impl/uj;
 
     invoke-virtual {v2, v3}, Lcom/applovin/impl/sdk/j;->b(Lcom/applovin/impl/uj;)Ljava/lang/Object;
@@ -783,7 +783,7 @@
 
     if-eqz v2, :cond_3
 
-    .line 150
+    .line 151
     invoke-static {v2}, Ljava/lang/String;->valueOf(Ljava/lang/Object;)Ljava/lang/String;
 
     move-result-object v3
@@ -794,7 +794,7 @@
 
     move-result-object v1
 
-    .line 151
+    .line 152
     invoke-static {v2}, Ljava/lang/String;->valueOf(Ljava/lang/Object;)Ljava/lang/String;
 
     move-result-object v2
@@ -803,18 +803,18 @@
 
     move-result-object v0
 
-    .line 152
+    .line 153
     :cond_3
     new-instance v2, Lcom/applovin/impl/s;
 
     invoke-direct {v2, v1, v0}, Lcom/applovin/impl/s;-><init>(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 153
+    .line 154
     invoke-direct {p0, v2}, Lcom/applovin/impl/sdk/AppLovinAdServiceImpl;->a(Lcom/applovin/impl/s;)V
 
     goto :goto_1
 
-    .line 154
+    .line 155
     :cond_4
     invoke-static {}, Lcom/applovin/impl/sdk/n;->a()Z
 
@@ -836,23 +836,23 @@
 .method private a(Landroid/net/Uri;Lcom/applovin/impl/sdk/ad/b;Lcom/applovin/adview/AppLovinAdView;Lcom/applovin/impl/adview/a;Landroid/content/Context;)V
     .locals 1
 
+    .line 93
     iget-object v0, p0, Lcom/applovin/impl/sdk/AppLovinAdServiceImpl;->a:Lcom/applovin/impl/sdk/j;
 
-    .line 92
     invoke-static {p1, p5, v0}, Lcom/applovin/impl/tp;->a(Landroid/net/Uri;Landroid/content/Context;Lcom/applovin/impl/sdk/j;)Z
 
     move-result p1
 
     if-eqz p1, :cond_0
 
-    .line 93
+    .line 94
     invoke-virtual {p4}, Lcom/applovin/impl/adview/a;->e()Lcom/applovin/adview/AppLovinAdViewEventListener;
 
     move-result-object p1
 
     invoke-static {p1, p2, p3}, Lcom/applovin/impl/fc;->b(Lcom/applovin/adview/AppLovinAdViewEventListener;Lcom/applovin/sdk/AppLovinAd;Lcom/applovin/adview/AppLovinAdView;)V
 
-    .line 94
+    .line 95
     :cond_0
     invoke-virtual {p4}, Lcom/applovin/impl/adview/a;->x()V
 
@@ -870,7 +870,7 @@
 
     if-eqz v0, :cond_3
 
-    .line 105
+    .line 106
     invoke-virtual {p1}, Landroid/net/Uri;->getQuery()Ljava/lang/String;
 
     move-result-object v2
@@ -881,30 +881,30 @@
 
     if-eqz v2, :cond_3
 
+    .line 107
     const-string v2, "primaryUrl"
 
-    .line 106
     invoke-direct {p0, p1, v2}, Lcom/applovin/impl/sdk/AppLovinAdServiceImpl;->b(Landroid/net/Uri;Ljava/lang/String;)Landroid/net/Uri;
 
     move-result-object v2
 
+    .line 108
     const-string v3, "primaryTrackingUrl"
 
-    .line 107
     invoke-direct {p0, p1, v3}, Lcom/applovin/impl/sdk/AppLovinAdServiceImpl;->a(Landroid/net/Uri;Ljava/lang/String;)Ljava/util/List;
 
     move-result-object v3
 
+    .line 109
     const-string v4, "fallbackUrl"
 
-    .line 108
     invoke-direct {p0, p1, v4}, Lcom/applovin/impl/sdk/AppLovinAdServiceImpl;->b(Landroid/net/Uri;Ljava/lang/String;)Landroid/net/Uri;
 
     move-result-object v10
 
+    .line 110
     const-string v4, "fallbackTrackingUrl"
 
-    .line 109
     invoke-direct {p0, p1, v4}, Lcom/applovin/impl/sdk/AppLovinAdServiceImpl;->a(Landroid/net/Uri;Ljava/lang/String;)Ljava/util/List;
 
     move-result-object v11
@@ -913,7 +913,7 @@
 
     if-nez v10, :cond_1
 
-    .line 110
+    .line 111
     invoke-virtual/range {p6 .. p6}, Lcom/applovin/impl/sdk/j;->I()Lcom/applovin/impl/sdk/n;
 
     invoke-static {}, Lcom/applovin/impl/sdk/n;->a()Z
@@ -933,6 +933,7 @@
     :cond_0
     return-void
 
+    .line 112
     :cond_1
     const-string v4, "primary"
 
@@ -952,13 +953,13 @@
 
     move-object/from16 v8, p6
 
-    .line 111
     invoke-direct/range {v0 .. v8}, Lcom/applovin/impl/sdk/AppLovinAdServiceImpl;->a(Landroid/net/Uri;Ljava/lang/String;Ljava/util/List;Lcom/applovin/impl/sdk/ad/b;Lcom/applovin/adview/AppLovinAdView;Lcom/applovin/impl/adview/a;Landroid/content/Context;Lcom/applovin/impl/sdk/j;)Z
 
     move-result v0
 
     if-nez v0, :cond_2
 
+    .line 113
     const-string v2, "backup"
 
     move-object v0, p0
@@ -977,18 +978,17 @@
 
     move-object/from16 v8, p6
 
-    .line 112
     invoke-direct/range {v0 .. v8}, Lcom/applovin/impl/sdk/AppLovinAdServiceImpl;->a(Landroid/net/Uri;Ljava/lang/String;Ljava/util/List;Lcom/applovin/impl/sdk/ad/b;Lcom/applovin/adview/AppLovinAdView;Lcom/applovin/impl/adview/a;Landroid/content/Context;Lcom/applovin/impl/sdk/j;)Z
 
     :cond_2
     if-eqz p4, :cond_4
 
-    .line 113
+    .line 114
     invoke-virtual/range {p4 .. p4}, Lcom/applovin/impl/adview/a;->x()V
 
     goto :goto_0
 
-    .line 114
+    .line 115
     :cond_3
     invoke-virtual/range {p6 .. p6}, Lcom/applovin/impl/sdk/j;->I()Lcom/applovin/impl/sdk/n;
 
@@ -1014,7 +1014,7 @@
 .method private a(Landroid/net/Uri;Lcom/applovin/impl/sdk/ad/b;Lcom/applovin/impl/adview/a;Lcom/applovin/impl/o9;)V
     .locals 4
 
-    .line 97
+    .line 98
     invoke-static {}, Lcom/applovin/impl/sdk/n;->a()Z
 
     move-result v0
@@ -1039,7 +1039,7 @@
 
     invoke-virtual {v0, v1, v2}, Lcom/applovin/impl/sdk/n;->a(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 98
+    .line 99
     :cond_0
     invoke-virtual {p1}, Landroid/net/Uri;->toString()Ljava/lang/String;
 
@@ -1049,9 +1049,9 @@
 
     invoke-virtual {p2, v0, p1}, Lcom/applovin/impl/sdk/ad/AppLovinAdImpl;->setMaxAdValue(Ljava/lang/String;Ljava/lang/Object;)V
 
+    .line 100
     iget-object p1, p0, Lcom/applovin/impl/sdk/AppLovinAdServiceImpl;->a:Lcom/applovin/impl/sdk/j;
 
-    .line 99
     invoke-virtual {p1}, Lcom/applovin/impl/sdk/j;->f0()Lcom/applovin/sdk/AppLovinSdkSettings;
 
     move-result-object p1
@@ -1068,7 +1068,7 @@
 
     check-cast p1, Ljava/lang/String;
 
-    .line 100
+    .line 101
     invoke-static {p1}, Lcom/applovin/impl/sdk/utils/StringUtils;->isValidString(Ljava/lang/String;)Z
 
     move-result v0
@@ -1083,14 +1083,12 @@
 
     if-eqz p4, :cond_1
 
-    .line 101
+    .line 102
     new-instance p1, Lcom/applovin/impl/sdk/t;
 
-    const/4 p2, 0x2
+    const/4 p2, 0x1
 
     invoke-direct {p1, p0, p2, p4}, Lcom/applovin/impl/sdk/t;-><init>(Ljava/lang/Object;ILjava/lang/Object;)V
-
-    const/4 p2, 0x1
 
     invoke-static {p2, p1}, Lcom/applovin/sdk/AppLovinSdkUtils;->runOnUiThread(ZLjava/lang/Runnable;)V
 
@@ -1099,7 +1097,7 @@
     :cond_1
     if-eqz p3, :cond_3
 
-    .line 102
+    .line 103
     invoke-virtual {p2}, Lcom/applovin/impl/sdk/ad/AppLovinAdImpl;->getSize()Lcom/applovin/sdk/AppLovinAdSize;
 
     move-result-object p1
@@ -1110,7 +1108,7 @@
 
     if-nez p1, :cond_3
 
-    .line 103
+    .line 104
     invoke-static {}, Lcom/applovin/impl/sdk/n;->a()Z
 
     move-result p1
@@ -1123,7 +1121,7 @@
 
     invoke-virtual {p1, v1, p2}, Lcom/applovin/impl/sdk/n;->a(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 104
+    .line 105
     :cond_2
     invoke-virtual {p3}, Lcom/applovin/impl/adview/a;->z()V
 
@@ -1135,9 +1133,9 @@
 .method private a(Lcom/applovin/impl/h0;Lcom/applovin/impl/sdk/AppLovinAdServiceImpl$c;)V
     .locals 4
 
+    .line 3
     iget-object v0, p0, Lcom/applovin/impl/sdk/AppLovinAdServiceImpl;->a:Lcom/applovin/impl/sdk/j;
 
-    .line 2
     invoke-virtual {v0}, Lcom/applovin/impl/sdk/j;->h()Lcom/applovin/impl/sdk/e;
 
     move-result-object v0
@@ -1148,14 +1146,14 @@
 
     if-eqz v0, :cond_1
 
-    .line 3
+    .line 4
     invoke-virtual {v0}, Lcom/applovin/impl/sdk/ad/AppLovinAdImpl;->isExpired()Z
 
     move-result v1
 
     if-nez v1, :cond_1
 
-    .line 4
+    .line 5
     invoke-static {}, Lcom/applovin/impl/sdk/n;->a()Z
 
     move-result v1
@@ -1186,21 +1184,21 @@
 
     invoke-virtual {v1, v2, p1}, Lcom/applovin/impl/sdk/n;->a(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 5
+    .line 6
     :cond_0
     invoke-virtual {p2, v0}, Lcom/applovin/impl/sdk/AppLovinAdServiceImpl$c;->adReceived(Lcom/applovin/sdk/AppLovinAd;)V
 
     goto :goto_0
 
-    .line 6
+    .line 7
     :cond_1
     invoke-virtual {p1}, Lcom/applovin/impl/h0;->d()Lcom/applovin/mediation/MaxAdFormat;
 
     move-result-object v0
 
+    .line 8
     iget-object v1, p0, Lcom/applovin/impl/sdk/AppLovinAdServiceImpl;->a:Lcom/applovin/impl/sdk/j;
 
-    .line 7
     sget-object v2, Lcom/applovin/impl/sj;->Y0:Lcom/applovin/impl/sj;
 
     invoke-virtual {v1, v2}, Lcom/applovin/impl/sdk/j;->a(Lcom/applovin/impl/sj;)Ljava/lang/Object;
@@ -1223,9 +1221,9 @@
 
     if-eqz v0, :cond_2
 
+    .line 9
     iget-object v0, p0, Lcom/applovin/impl/sdk/AppLovinAdServiceImpl;->a:Lcom/applovin/impl/sdk/j;
 
-    .line 8
     invoke-virtual {v0}, Lcom/applovin/impl/sdk/j;->g()Lcom/applovin/impl/sdk/d;
 
     move-result-object v0
@@ -1238,7 +1236,7 @@
 
     goto :goto_0
 
-    .line 9
+    .line 10
     :cond_2
     new-instance v0, Lcom/applovin/impl/om;
 
@@ -1246,7 +1244,7 @@
 
     invoke-direct {v0, p1, p2, v1}, Lcom/applovin/impl/om;-><init>(Lcom/applovin/impl/h0;Lcom/applovin/sdk/AppLovinAdLoadListener;Lcom/applovin/impl/sdk/j;)V
 
-    .line 10
+    .line 11
     invoke-direct {p0, v0}, Lcom/applovin/impl/sdk/AppLovinAdServiceImpl;->a(Lcom/applovin/impl/yl;)V
 
     :goto_0
@@ -1260,9 +1258,9 @@
 
     if-eqz p2, :cond_3
 
+    .line 25
     iget-object v0, p0, Lcom/applovin/impl/sdk/AppLovinAdServiceImpl;->a:Lcom/applovin/impl/sdk/j;
 
-    .line 24
     invoke-virtual {v0}, Lcom/applovin/impl/sdk/j;->I()Lcom/applovin/impl/sdk/n;
 
     invoke-static {}, Lcom/applovin/impl/sdk/n;->a()Z
@@ -1297,41 +1295,41 @@
 
     invoke-virtual {v0, v2, v1}, Lcom/applovin/impl/sdk/n;->a(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 25
+    .line 26
     :cond_0
     invoke-direct {p0, p1}, Lcom/applovin/impl/sdk/AppLovinAdServiceImpl;->a(Lcom/applovin/impl/h0;)Lcom/applovin/impl/sdk/AppLovinAdServiceImpl$d;
 
     move-result-object v0
 
-    .line 26
+    .line 27
     iget-object v1, v0, Lcom/applovin/impl/sdk/AppLovinAdServiceImpl$d;->a:Ljava/lang/Object;
 
     monitor-enter v1
 
-    .line 27
+    .line 28
     :try_start_0
     iget-object v2, v0, Lcom/applovin/impl/sdk/AppLovinAdServiceImpl$d;->d:Ljava/util/Collection;
 
     invoke-interface {v2, p2}, Ljava/util/Collection;->add(Ljava/lang/Object;)Z
 
-    .line 28
+    .line 29
     iget-boolean p2, v0, Lcom/applovin/impl/sdk/AppLovinAdServiceImpl$d;->b:Z
 
     if-nez p2, :cond_1
 
     const/4 p2, 0x1
 
-    .line 29
+    .line 30
     iput-boolean p2, v0, Lcom/applovin/impl/sdk/AppLovinAdServiceImpl$d;->b:Z
 
-    .line 30
+    .line 31
     new-instance p2, Lcom/applovin/impl/sdk/AppLovinAdServiceImpl$c;
 
     const/4 v2, 0x0
 
     invoke-direct {p2, p0, v0, v2}, Lcom/applovin/impl/sdk/AppLovinAdServiceImpl$c;-><init>(Lcom/applovin/impl/sdk/AppLovinAdServiceImpl;Lcom/applovin/impl/sdk/AppLovinAdServiceImpl$d;Lcom/applovin/impl/sdk/AppLovinAdServiceImpl$a;)V
 
-    .line 31
+    .line 32
     invoke-direct {p0, p1, p2}, Lcom/applovin/impl/sdk/AppLovinAdServiceImpl;->a(Lcom/applovin/impl/h0;Lcom/applovin/impl/sdk/AppLovinAdServiceImpl$c;)V
 
     goto :goto_0
@@ -1341,7 +1339,7 @@
 
     goto :goto_1
 
-    .line 32
+    .line 33
     :cond_1
     invoke-static {}, Lcom/applovin/impl/sdk/n;->a()Z
 
@@ -1357,14 +1355,14 @@
 
     invoke-virtual {p1, p2, v0}, Lcom/applovin/impl/sdk/n;->a(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 33
+    .line 34
     :cond_2
     :goto_0
     monitor-exit v1
 
     return-void
 
-    .line 34
+    .line 35
     :goto_1
     monitor-exit v1
     :try_end_0
@@ -1372,7 +1370,7 @@
 
     throw p1
 
-    .line 35
+    .line 36
     :cond_3
     new-instance p1, Ljava/lang/IllegalArgumentException;
 
@@ -1382,7 +1380,7 @@
 
     throw p1
 
-    .line 36
+    .line 37
     :cond_4
     new-instance p1, Ljava/lang/IllegalArgumentException;
 
@@ -1398,7 +1396,7 @@
 
     if-eqz p1, :cond_1
 
-    .line 14
+    .line 15
     invoke-static {}, Lcom/applovin/impl/sdk/n;->a()Z
 
     move-result v0
@@ -1413,7 +1411,7 @@
 
     invoke-virtual {v0, v1, v2}, Lcom/applovin/impl/sdk/n;->a(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 15
+    .line 16
     :cond_0
     invoke-virtual {p1}, Lcom/applovin/impl/o9;->f()V
 
@@ -1424,7 +1422,7 @@
 .method private a(Lcom/applovin/impl/s;)V
     .locals 4
 
-    .line 41
+    .line 42
     invoke-virtual {p1}, Lcom/applovin/impl/s;->c()Ljava/lang/String;
 
     move-result-object v0
@@ -1435,12 +1433,12 @@
 
     if-eqz v0, :cond_1
 
-    .line 42
+    .line 43
     invoke-virtual {p1}, Lcom/applovin/impl/s;->c()Ljava/lang/String;
 
     move-result-object v0
 
-    .line 43
+    .line 44
     invoke-virtual {p1}, Lcom/applovin/impl/s;->a()Ljava/lang/String;
 
     move-result-object v1
@@ -1460,10 +1458,10 @@
     :cond_0
     const/4 v1, 0x0
 
+    .line 45
     :goto_0
     iget-object v2, p0, Lcom/applovin/impl/sdk/AppLovinAdServiceImpl;->a:Lcom/applovin/impl/sdk/j;
 
-    .line 44
     invoke-virtual {v2}, Lcom/applovin/impl/sdk/j;->W()Lcom/applovin/impl/sdk/network/b;
 
     move-result-object v2
@@ -1472,17 +1470,17 @@
 
     move-result-object v3
 
-    .line 45
+    .line 46
     invoke-virtual {v3, v0}, Lcom/applovin/impl/sdk/network/d$b;->d(Ljava/lang/String;)Lcom/applovin/impl/sdk/network/d$b;
 
     move-result-object v0
 
-    .line 46
+    .line 47
     invoke-virtual {v0, v1}, Lcom/applovin/impl/sdk/network/d$b;->a(Ljava/lang/String;)Lcom/applovin/impl/sdk/network/d$b;
 
     move-result-object v0
 
-    .line 47
+    .line 48
     invoke-virtual {p1}, Lcom/applovin/impl/s;->b()Ljava/util/Map;
 
     move-result-object v1
@@ -1493,12 +1491,12 @@
 
     const/4 v1, 0x0
 
-    .line 48
+    .line 49
     invoke-virtual {v0, v1}, Lcom/applovin/impl/sdk/network/d$b;->a(Z)Lcom/applovin/impl/sdk/network/d$b;
 
     move-result-object v0
 
-    .line 49
+    .line 50
     invoke-virtual {p1}, Lcom/applovin/impl/s;->d()Z
 
     move-result p1
@@ -1507,17 +1505,17 @@
 
     move-result-object p1
 
-    .line 50
+    .line 51
     invoke-virtual {p1}, Lcom/applovin/impl/sdk/network/d$b;->a()Lcom/applovin/impl/sdk/network/d;
 
     move-result-object p1
 
-    .line 51
+    .line 52
     invoke-virtual {v2, p1}, Lcom/applovin/impl/sdk/network/b;->e(Lcom/applovin/impl/sdk/network/d;)V
 
     goto :goto_1
 
-    .line 52
+    .line 53
     :cond_1
     invoke-static {}, Lcom/applovin/impl/sdk/n;->a()Z
 
@@ -1543,7 +1541,7 @@
 
     if-eqz p3, :cond_0
 
-    .line 11
+    .line 12
     new-instance p2, Lcom/applovin/impl/sdk/t;
 
     const/4 v0, 0x0
@@ -1554,7 +1552,7 @@
 
     goto :goto_0
 
-    .line 12
+    .line 13
     :cond_0
     new-instance p3, Lcom/applovin/impl/om;
 
@@ -1562,7 +1560,7 @@
 
     invoke-direct {p3, p2, p1, v0}, Lcom/applovin/impl/om;-><init>(Lcom/applovin/impl/h0;Lcom/applovin/sdk/AppLovinAdLoadListener;Lcom/applovin/impl/sdk/j;)V
 
-    .line 13
+    .line 14
     invoke-direct {p0, p3}, Lcom/applovin/impl/sdk/AppLovinAdServiceImpl;->a(Lcom/applovin/impl/yl;)V
 
     :goto_0
@@ -1572,8 +1570,17 @@
 .method private static synthetic a(Lcom/applovin/impl/sdk/AppLovinAdServiceImpl$c;Lcom/applovin/impl/sdk/ad/b;)V
     .locals 0
 
-    .line 155
+    .line 156
     invoke-virtual {p0, p1}, Lcom/applovin/impl/sdk/AppLovinAdServiceImpl$c;->adReceived(Lcom/applovin/sdk/AppLovinAd;)V
+
+    return-void
+.end method
+
+.method public static synthetic a(Lcom/applovin/impl/sdk/AppLovinAdServiceImpl;Lcom/applovin/impl/o9;)V
+    .locals 0
+
+    .line 1
+    invoke-direct {p0, p1}, Lcom/applovin/impl/sdk/AppLovinAdServiceImpl;->a(Lcom/applovin/impl/o9;)V
 
     return-void
 .end method
@@ -1581,7 +1588,7 @@
 .method public static synthetic a(Lcom/applovin/impl/sdk/AppLovinAdServiceImpl;Lcom/applovin/impl/sdk/AppLovinError;Lcom/applovin/sdk/AppLovinAdLoadListener;)V
     .locals 0
 
-    .line 62
+    .line 63
     invoke-direct {p0, p1, p2}, Lcom/applovin/impl/sdk/AppLovinAdServiceImpl;->b(Lcom/applovin/impl/sdk/AppLovinError;Lcom/applovin/sdk/AppLovinAdLoadListener;)V
 
     return-void
@@ -1590,7 +1597,7 @@
 .method public static synthetic a(Lcom/applovin/impl/sdk/AppLovinAdServiceImpl;Lcom/applovin/impl/sdk/ad/b;Landroid/net/Uri;Lcom/applovin/impl/o9;Landroid/content/Context;)V
     .locals 0
 
-    .line 1
+    .line 2
     invoke-direct {p0, p1, p2, p3, p4}, Lcom/applovin/impl/sdk/AppLovinAdServiceImpl;->a(Lcom/applovin/impl/sdk/ad/b;Landroid/net/Uri;Lcom/applovin/impl/o9;Landroid/content/Context;)V
 
     return-void
@@ -1599,7 +1606,7 @@
 .method public static synthetic a(Lcom/applovin/impl/sdk/AppLovinAdServiceImpl;Lcom/applovin/impl/sdk/ad/b;Lcom/applovin/adview/AppLovinAdView;Lcom/applovin/impl/adview/a;Landroid/net/Uri;)V
     .locals 0
 
-    .line 60
+    .line 61
     invoke-direct {p0, p1, p2, p3, p4}, Lcom/applovin/impl/sdk/AppLovinAdServiceImpl;->a(Lcom/applovin/impl/sdk/ad/b;Lcom/applovin/adview/AppLovinAdView;Lcom/applovin/impl/adview/a;Landroid/net/Uri;)V
 
     return-void
@@ -1608,7 +1615,7 @@
 .method public static synthetic a(Lcom/applovin/impl/sdk/AppLovinAdServiceImpl;Lcom/applovin/sdk/AppLovinAd;Lcom/applovin/sdk/AppLovinAdLoadListener;)V
     .locals 0
 
-    .line 61
+    .line 62
     invoke-direct {p0, p1, p2}, Lcom/applovin/impl/sdk/AppLovinAdServiceImpl;->a(Lcom/applovin/sdk/AppLovinAd;Lcom/applovin/sdk/AppLovinAdLoadListener;)V
 
     return-void
@@ -1617,7 +1624,7 @@
 .method private synthetic a(Lcom/applovin/impl/sdk/AppLovinError;Lcom/applovin/sdk/AppLovinAdLoadListener;)V
     .locals 2
 
-    .line 68
+    .line 69
     :try_start_0
     invoke-direct {p0, p1, p2}, Lcom/applovin/impl/sdk/AppLovinAdServiceImpl;->c(Lcom/applovin/impl/sdk/AppLovinError;Lcom/applovin/sdk/AppLovinAdLoadListener;)V
     :try_end_0
@@ -1628,14 +1635,14 @@
     :catchall_0
     move-exception p1
 
+    .line 70
     const-string v0, "Unable to notify listener about ad load failure"
 
     const-string v1, "AppLovinAdService"
 
-    .line 69
     invoke-static {v1, v0, p1}, Lcom/applovin/impl/sdk/n;->c(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)V
 
-    .line 70
+    .line 71
     instance-of p2, p2, Lcom/applovin/impl/qb;
 
     if-eqz p2, :cond_0
@@ -1654,9 +1661,9 @@
 
     move-result-object p2
 
+    .line 72
     iget-object v0, p0, Lcom/applovin/impl/sdk/AppLovinAdServiceImpl;->a:Lcom/applovin/impl/sdk/j;
 
-    .line 71
     invoke-virtual {v0}, Lcom/applovin/impl/sdk/j;->D()Lcom/applovin/impl/la;
 
     move-result-object v0
@@ -1670,7 +1677,7 @@
 .method private a(Lcom/applovin/impl/sdk/ad/b;Landroid/net/Uri;Lcom/applovin/impl/o9;Landroid/content/Context;)V
     .locals 7
 
-    .line 19
+    .line 20
     invoke-virtual {p2}, Landroid/net/Uri;->getScheme()Ljava/lang/String;
 
     move-result-object v0
@@ -1683,12 +1690,12 @@
 
     const/4 p4, 0x0
 
-    .line 20
+    .line 21
     invoke-direct {p0, p2, p1, p4, p3}, Lcom/applovin/impl/sdk/AppLovinAdServiceImpl;->a(Landroid/net/Uri;Lcom/applovin/impl/sdk/ad/b;Lcom/applovin/impl/adview/a;Lcom/applovin/impl/o9;)V
 
     goto :goto_0
 
-    .line 21
+    .line 22
     :cond_0
     invoke-static {p2}, Lcom/applovin/impl/tp;->b(Landroid/net/Uri;)Z
 
@@ -1696,6 +1703,7 @@
 
     if-eqz p3, :cond_1
 
+    .line 23
     iget-object v6, p0, Lcom/applovin/impl/sdk/AppLovinAdServiceImpl;->a:Lcom/applovin/impl/sdk/j;
 
     const/4 v3, 0x0
@@ -1710,15 +1718,14 @@
 
     move-object v5, p4
 
-    .line 22
     invoke-direct/range {v0 .. v6}, Lcom/applovin/impl/sdk/AppLovinAdServiceImpl;->a(Landroid/net/Uri;Lcom/applovin/impl/sdk/ad/b;Lcom/applovin/adview/AppLovinAdView;Lcom/applovin/impl/adview/a;Landroid/content/Context;Lcom/applovin/impl/sdk/j;)V
 
     goto :goto_0
 
+    .line 24
     :cond_1
     iget-object p1, p0, Lcom/applovin/impl/sdk/AppLovinAdServiceImpl;->a:Lcom/applovin/impl/sdk/j;
 
-    .line 23
     invoke-static {p2, p4, p1}, Lcom/applovin/impl/tp;->a(Landroid/net/Uri;Landroid/content/Context;Lcom/applovin/impl/sdk/j;)Z
 
     :goto_0
@@ -1728,9 +1735,9 @@
 .method private a(Lcom/applovin/impl/sdk/ad/b;Lcom/applovin/adview/AppLovinAdView;Lcom/applovin/impl/adview/a;Landroid/net/Uri;)V
     .locals 8
 
+    .line 73
     iget-object v0, p0, Lcom/applovin/impl/sdk/AppLovinAdServiceImpl;->a:Lcom/applovin/impl/sdk/j;
 
-    .line 72
     sget-object v1, Lcom/applovin/impl/sj;->B:Lcom/applovin/impl/sj;
 
     invoke-virtual {v0, v1}, Lcom/applovin/impl/sdk/j;->a(Lcom/applovin/impl/sj;)Ljava/lang/Object;
@@ -1745,9 +1752,9 @@
 
     if-eqz v0, :cond_1
 
+    .line 74
     iget-object v0, p0, Lcom/applovin/impl/sdk/AppLovinAdServiceImpl;->a:Lcom/applovin/impl/sdk/j;
 
-    .line 73
     invoke-static {p2, v0}, Lcom/applovin/impl/zq;->a(Landroid/view/View;Lcom/applovin/impl/sdk/j;)Landroid/app/Activity;
 
     move-result-object v0
@@ -1759,7 +1766,7 @@
 
     goto :goto_1
 
-    .line 74
+    .line 75
     :cond_0
     invoke-virtual {p2}, Landroid/view/View;->getContext()Landroid/content/Context;
 
@@ -1767,7 +1774,7 @@
 
     goto :goto_0
 
-    .line 75
+    .line 76
     :cond_1
     invoke-virtual {p2}, Landroid/view/View;->getContext()Landroid/content/Context;
 
@@ -1775,7 +1782,7 @@
 
     goto :goto_0
 
-    .line 76
+    .line 77
     :goto_1
     invoke-virtual {p4}, Landroid/net/Uri;->getScheme()Ljava/lang/String;
 
@@ -1789,12 +1796,12 @@
 
     const/4 p2, 0x0
 
-    .line 77
+    .line 78
     invoke-direct {p0, p4, p1, p3, p2}, Lcom/applovin/impl/sdk/AppLovinAdServiceImpl;->a(Landroid/net/Uri;Lcom/applovin/impl/sdk/ad/b;Lcom/applovin/impl/adview/a;Lcom/applovin/impl/o9;)V
 
     goto :goto_2
 
-    .line 78
+    .line 79
     :cond_2
     invoke-static {p4}, Lcom/applovin/impl/tp;->b(Landroid/net/Uri;)Z
 
@@ -1802,6 +1809,7 @@
 
     if-eqz v0, :cond_3
 
+    .line 80
     iget-object v7, p0, Lcom/applovin/impl/sdk/AppLovinAdServiceImpl;->a:Lcom/applovin/impl/sdk/j;
 
     move-object v1, p0
@@ -1814,7 +1822,6 @@
 
     move-object v5, p3
 
-    .line 79
     invoke-direct/range {v1 .. v7}, Lcom/applovin/impl/sdk/AppLovinAdServiceImpl;->a(Landroid/net/Uri;Lcom/applovin/impl/sdk/ad/b;Lcom/applovin/adview/AppLovinAdView;Lcom/applovin/impl/adview/a;Landroid/content/Context;Lcom/applovin/impl/sdk/j;)V
 
     goto :goto_2
@@ -1830,7 +1837,7 @@
 
     move-object v5, p3
 
-    .line 80
+    .line 81
     invoke-direct/range {v1 .. v6}, Lcom/applovin/impl/sdk/AppLovinAdServiceImpl;->a(Landroid/net/Uri;Lcom/applovin/impl/sdk/ad/b;Lcom/applovin/adview/AppLovinAdView;Lcom/applovin/impl/adview/a;Landroid/content/Context;)V
 
     :goto_2
@@ -1840,31 +1847,31 @@
 .method private a(Lcom/applovin/impl/yl;)V
     .locals 2
 
+    .line 38
     iget-object v0, p0, Lcom/applovin/impl/sdk/AppLovinAdServiceImpl;->a:Lcom/applovin/impl/sdk/j;
 
-    .line 37
     invoke-virtual {v0}, Lcom/applovin/impl/sdk/j;->s0()Z
 
     move-result v0
 
     if-nez v0, :cond_0
 
+    .line 39
     const-string v0, "AppLovinSdk"
 
     const-string v1, "Attempted to load ad before SDK initialization. Please wait until after the SDK has initialized, e.g. AppLovinSdk.initializeSdk(Context, SdkInitializationListener)."
 
-    .line 38
     invoke-static {v0, v1}, Lcom/applovin/impl/sdk/n;->j(Ljava/lang/String;Ljava/lang/String;)V
 
+    .line 40
     :cond_0
     iget-object v0, p0, Lcom/applovin/impl/sdk/AppLovinAdServiceImpl;->a:Lcom/applovin/impl/sdk/j;
 
-    .line 39
     invoke-virtual {v0}, Lcom/applovin/impl/sdk/j;->c()V
 
+    .line 41
     iget-object v0, p0, Lcom/applovin/impl/sdk/AppLovinAdServiceImpl;->a:Lcom/applovin/impl/sdk/j;
 
-    .line 40
     invoke-virtual {v0}, Lcom/applovin/impl/sdk/j;->i0()Lcom/applovin/impl/tm;
 
     move-result-object v0
@@ -1877,12 +1884,14 @@
 .end method
 
 .method private a(Lcom/applovin/sdk/AppLovinAd;Lcom/applovin/sdk/AppLovinAdLoadListener;)V
-    .locals 1
+    .locals 2
 
-    .line 64
+    .line 65
     new-instance v0, Lcom/applovin/impl/sdk/s;
 
-    invoke-direct {v0, p0, p1, p2}, Lcom/applovin/impl/sdk/s;-><init>(Lcom/applovin/impl/sdk/AppLovinAdServiceImpl;Lcom/applovin/sdk/AppLovinAd;Lcom/applovin/sdk/AppLovinAdLoadListener;)V
+    const/4 v1, 0x0
+
+    invoke-direct {v0, p0, v1, p2, p1}, Lcom/applovin/impl/sdk/s;-><init>(Ljava/lang/Object;ILjava/lang/Object;Ljava/lang/Object;)V
 
     const/4 p1, 0x1
 
@@ -1894,7 +1903,7 @@
 .method private static synthetic a(Lcom/applovin/sdk/AppLovinAdLoadListener;Lcom/applovin/impl/sdk/ad/b;)V
     .locals 0
 
-    .line 63
+    .line 64
     invoke-interface {p0, p1}, Lcom/applovin/sdk/AppLovinAdLoadListener;->adReceived(Lcom/applovin/sdk/AppLovinAd;)V
 
     return-void
@@ -1903,7 +1912,7 @@
 .method private synthetic a(Lcom/applovin/sdk/AppLovinAdLoadListener;Lcom/applovin/sdk/AppLovinAd;)V
     .locals 2
 
-    .line 65
+    .line 66
     :try_start_0
     invoke-interface {p1, p2}, Lcom/applovin/sdk/AppLovinAdLoadListener;->adReceived(Lcom/applovin/sdk/AppLovinAd;)V
     :try_end_0
@@ -1914,16 +1923,16 @@
     :catchall_0
     move-exception p1
 
+    .line 67
     const-string p2, "Unable to notify listener about a newly loaded ad"
 
     const-string v0, "AppLovinAdService"
 
-    .line 66
     invoke-static {v0, p2, p1}, Lcom/applovin/impl/sdk/n;->c(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)V
 
+    .line 68
     iget-object p2, p0, Lcom/applovin/impl/sdk/AppLovinAdServiceImpl;->a:Lcom/applovin/impl/sdk/j;
 
-    .line 67
     invoke-virtual {p2}, Lcom/applovin/impl/sdk/j;->D()Lcom/applovin/impl/la;
 
     move-result-object p2
@@ -1941,10 +1950,10 @@
 
     if-eqz p4, :cond_0
 
-    .line 16
+    .line 17
     new-instance p2, Lcom/applovin/impl/sdk/t;
 
-    const/4 p3, 0x1
+    const/4 p3, 0x2
 
     invoke-direct {p2, p1, p3, p4}, Lcom/applovin/impl/sdk/t;-><init>(Ljava/lang/Object;ILjava/lang/Object;)V
 
@@ -1952,7 +1961,7 @@
 
     goto :goto_0
 
-    .line 17
+    .line 18
     :cond_0
     new-instance p4, Lcom/applovin/impl/um;
 
@@ -1960,7 +1969,7 @@
 
     invoke-direct {p4, p2, p3, p1, v0}, Lcom/applovin/impl/um;-><init>(Lorg/json/JSONObject;Lcom/applovin/impl/h0;Lcom/applovin/sdk/AppLovinAdLoadListener;Lcom/applovin/impl/sdk/j;)V
 
-    .line 18
+    .line 19
     invoke-direct {p0, p4}, Lcom/applovin/impl/sdk/AppLovinAdServiceImpl;->a(Lcom/applovin/impl/yl;)V
 
     :goto_0
@@ -1970,7 +1979,7 @@
 .method private a(Landroid/net/Uri;Ljava/lang/String;Ljava/util/List;Lcom/applovin/impl/sdk/ad/b;Lcom/applovin/adview/AppLovinAdView;Lcom/applovin/impl/adview/a;Landroid/content/Context;Lcom/applovin/impl/sdk/j;)Z
     .locals 4
 
-    .line 115
+    .line 116
     invoke-virtual {p8}, Lcom/applovin/impl/sdk/j;->I()Lcom/applovin/impl/sdk/n;
 
     invoke-static {}, Lcom/applovin/impl/sdk/n;->a()Z
@@ -2005,7 +2014,7 @@
 
     invoke-virtual {v0, v1, p2}, Lcom/applovin/impl/sdk/n;->a(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 116
+    .line 117
     :cond_0
     invoke-static {p1, p7, p8}, Lcom/applovin/impl/tp;->a(Landroid/net/Uri;Landroid/content/Context;Lcom/applovin/impl/sdk/j;)Z
 
@@ -2013,7 +2022,7 @@
 
     if-eqz p1, :cond_3
 
-    .line 117
+    .line 118
     invoke-virtual {p8}, Lcom/applovin/impl/sdk/j;->I()Lcom/applovin/impl/sdk/n;
 
     invoke-static {}, Lcom/applovin/impl/sdk/n;->a()Z
@@ -2040,7 +2049,7 @@
 
     invoke-virtual {p2, v1, p7}, Lcom/applovin/impl/sdk/n;->a(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 118
+    .line 119
     :cond_1
     invoke-interface {p3}, Ljava/util/List;->iterator()Ljava/util/Iterator;
 
@@ -2059,7 +2068,7 @@
 
     check-cast p3, Landroid/net/Uri;
 
-    .line 119
+    .line 120
     invoke-virtual {p8}, Lcom/applovin/impl/sdk/j;->X()Lcom/applovin/impl/sdk/network/PostbackServiceImpl;
 
     move-result-object p7
@@ -2077,7 +2086,7 @@
     :cond_2
     if-eqz p6, :cond_4
 
-    .line 120
+    .line 121
     invoke-virtual {p6}, Lcom/applovin/impl/adview/a;->e()Lcom/applovin/adview/AppLovinAdViewEventListener;
 
     move-result-object p2
@@ -2086,7 +2095,7 @@
 
     goto :goto_1
 
-    .line 121
+    .line 122
     :cond_3
     invoke-virtual {p8}, Lcom/applovin/impl/sdk/j;->I()Lcom/applovin/impl/sdk/n;
 
@@ -2112,9 +2121,9 @@
 .method private a(Ljava/lang/String;)Z
     .locals 2
 
+    .line 96
     iget-object v0, p0, Lcom/applovin/impl/sdk/AppLovinAdServiceImpl;->a:Lcom/applovin/impl/sdk/j;
 
-    .line 95
     invoke-virtual {v0}, Lcom/applovin/impl/sdk/j;->f0()Lcom/applovin/sdk/AppLovinSdkSettings;
 
     move-result-object v0
@@ -2131,7 +2140,7 @@
 
     check-cast v0, Ljava/lang/String;
 
-    .line 96
+    .line 97
     invoke-static {v0}, Lcom/applovin/impl/sdk/utils/StringUtils;->isValidString(Ljava/lang/String;)Z
 
     move-result v1
@@ -2181,9 +2190,9 @@
     :catchall_0
     move-exception p1
 
+    .line 5
     iget-object v0, p0, Lcom/applovin/impl/sdk/AppLovinAdServiceImpl;->a:Lcom/applovin/impl/sdk/j;
 
-    .line 5
     invoke-virtual {v0}, Lcom/applovin/impl/sdk/j;->I()Lcom/applovin/impl/sdk/n;
 
     invoke-static {}, Lcom/applovin/impl/sdk/n;->a()Z
@@ -2214,10 +2223,10 @@
 
     invoke-virtual {v0, v1, p2}, Lcom/applovin/impl/sdk/n;->k(Ljava/lang/String;Ljava/lang/String;)V
 
+    .line 6
     :cond_0
     iget-object p2, p0, Lcom/applovin/impl/sdk/AppLovinAdServiceImpl;->a:Lcom/applovin/impl/sdk/j;
 
-    .line 6
     invoke-virtual {p2}, Lcom/applovin/impl/sdk/j;->D()Lcom/applovin/impl/la;
 
     move-result-object p2
@@ -2240,24 +2249,22 @@
     return-object p0
 .end method
 
-.method public static synthetic b(Lcom/applovin/impl/sdk/AppLovinAdServiceImpl$c;Lcom/applovin/impl/sdk/ad/b;)V
+.method public static synthetic b(Lcom/applovin/impl/sdk/AppLovinAdServiceImpl;Lcom/applovin/impl/sdk/AppLovinAdServiceImpl$c;Lcom/applovin/impl/h0;Lcom/applovin/impl/sdk/ad/b;)V
     .locals 0
 
     .line 1
-    invoke-static {p0, p1}, Lcom/applovin/impl/sdk/AppLovinAdServiceImpl;->a(Lcom/applovin/impl/sdk/AppLovinAdServiceImpl$c;Lcom/applovin/impl/sdk/ad/b;)V
+    invoke-direct {p0, p1, p2, p3}, Lcom/applovin/impl/sdk/AppLovinAdServiceImpl;->a(Lcom/applovin/impl/sdk/AppLovinAdServiceImpl$c;Lcom/applovin/impl/h0;Lcom/applovin/impl/sdk/ad/b;)V
 
     return-void
 .end method
 
 .method private b(Lcom/applovin/impl/sdk/AppLovinError;Lcom/applovin/sdk/AppLovinAdLoadListener;)V
-    .locals 2
+    .locals 1
 
     .line 3
     new-instance v0, Lcom/applovin/impl/sdk/s;
 
-    const/4 v1, 0x0
-
-    invoke-direct {v0, p0, v1, p1, p2}, Lcom/applovin/impl/sdk/s;-><init>(Ljava/lang/Object;ILjava/lang/Object;Ljava/lang/Object;)V
+    invoke-direct {v0, p0, p1, p2}, Lcom/applovin/impl/sdk/s;-><init>(Lcom/applovin/impl/sdk/AppLovinAdServiceImpl;Lcom/applovin/impl/sdk/AppLovinError;Lcom/applovin/sdk/AppLovinAdLoadListener;)V
 
     const/4 p1, 0x1
 
@@ -2269,6 +2276,7 @@
 .method private b()Z
     .locals 5
 
+    .line 7
     sget v0, Landroid/os/Build$VERSION;->SDK_INT:I
 
     const/16 v1, 0x1e
@@ -2279,43 +2287,43 @@
 
     return v2
 
-    .line 7
+    .line 8
     :cond_0
     invoke-static {}, Lcom/applovin/impl/sdk/j;->m()Landroid/content/Context;
 
     move-result-object v0
 
+    .line 9
     const-string v1, "activity"
 
-    .line 8
     invoke-virtual {v0, v1}, Landroid/content/Context;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
 
     move-result-object v1
 
     check-cast v1, Landroid/app/ActivityManager;
 
-    .line 9
+    .line 10
     invoke-virtual {v0}, Landroid/content/Context;->getPackageName()Ljava/lang/String;
 
     move-result-object v0
 
-    invoke-static {v1, v0}, Landroidx/core/view/b2;->o(Landroid/app/ActivityManager;Ljava/lang/String;)Ljava/util/List;
+    invoke-static {v1, v0}, Landroidx/core/view/H0;->k(Landroid/app/ActivityManager;Ljava/lang/String;)Ljava/util/List;
 
     move-result-object v0
 
     const/4 v1, 0x0
 
-    .line 10
+    .line 11
     invoke-interface {v0, v1}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
     move-result-object v0
 
-    invoke-static {v0}, Landroidx/core/view/b2;->e(Ljava/lang/Object;)Landroid/app/ApplicationExitInfo;
+    invoke-static {v0}, Landroidx/core/view/H0;->e(Ljava/lang/Object;)Landroid/app/ApplicationExitInfo;
 
     move-result-object v0
 
-    .line 11
-    invoke-static {v0}, Landroidx/core/view/b2;->b(Landroid/app/ApplicationExitInfo;)I
+    .line 12
+    invoke-static {v0}, Landroidx/core/view/H0;->b(Landroid/app/ApplicationExitInfo;)I
 
     move-result v3
 
@@ -2323,7 +2331,7 @@
 
     if-eq v3, v4, :cond_2
 
-    invoke-static {v0}, Landroidx/core/view/b2;->b(Landroid/app/ApplicationExitInfo;)I
+    invoke-static {v0}, Landroidx/core/view/H0;->b(Landroid/app/ApplicationExitInfo;)I
 
     move-result v0
 
@@ -2377,16 +2385,7 @@
     return-void
 .end method
 
-.method public static synthetic d(Lcom/applovin/sdk/AppLovinAdLoadListener;Lcom/applovin/impl/sdk/ad/b;)V
-    .locals 0
-
-    .line 1
-    invoke-static {p0, p1}, Lcom/applovin/impl/sdk/AppLovinAdServiceImpl;->a(Lcom/applovin/sdk/AppLovinAdLoadListener;Lcom/applovin/impl/sdk/ad/b;)V
-
-    return-void
-.end method
-
-.method public static synthetic e(Lcom/applovin/impl/sdk/AppLovinAdServiceImpl;Lcom/applovin/sdk/AppLovinAdLoadListener;Lorg/json/JSONObject;Lcom/applovin/impl/h0;Lcom/applovin/impl/sdk/ad/b;)V
+.method public static synthetic d(Lcom/applovin/impl/sdk/AppLovinAdServiceImpl;Lcom/applovin/sdk/AppLovinAdLoadListener;Lorg/json/JSONObject;Lcom/applovin/impl/h0;Lcom/applovin/impl/sdk/ad/b;)V
     .locals 0
 
     .line 1
@@ -2395,25 +2394,25 @@
     return-void
 .end method
 
-.method public static synthetic f(Lcom/applovin/impl/sdk/AppLovinAdServiceImpl;Lcom/applovin/impl/sdk/AppLovinAdServiceImpl$c;Lcom/applovin/impl/h0;Lcom/applovin/impl/sdk/ad/b;)V
+.method public static synthetic e(Lcom/applovin/impl/sdk/AppLovinAdServiceImpl$c;Lcom/applovin/impl/sdk/ad/b;)V
     .locals 0
 
     .line 1
-    invoke-direct {p0, p1, p2, p3}, Lcom/applovin/impl/sdk/AppLovinAdServiceImpl;->a(Lcom/applovin/impl/sdk/AppLovinAdServiceImpl$c;Lcom/applovin/impl/h0;Lcom/applovin/impl/sdk/ad/b;)V
+    invoke-static {p0, p1}, Lcom/applovin/impl/sdk/AppLovinAdServiceImpl;->a(Lcom/applovin/impl/sdk/AppLovinAdServiceImpl$c;Lcom/applovin/impl/sdk/ad/b;)V
 
     return-void
 .end method
 
-.method public static synthetic g(Lcom/applovin/impl/sdk/AppLovinAdServiceImpl;Lcom/applovin/impl/o9;)V
+.method public static synthetic f(Lcom/applovin/sdk/AppLovinAdLoadListener;Lcom/applovin/impl/sdk/ad/b;)V
     .locals 0
 
     .line 1
-    invoke-direct {p0, p1}, Lcom/applovin/impl/sdk/AppLovinAdServiceImpl;->a(Lcom/applovin/impl/o9;)V
+    invoke-static {p0, p1}, Lcom/applovin/impl/sdk/AppLovinAdServiceImpl;->a(Lcom/applovin/sdk/AppLovinAdLoadListener;Lcom/applovin/impl/sdk/ad/b;)V
 
     return-void
 .end method
 
-.method public static synthetic h(Lcom/applovin/impl/sdk/AppLovinAdServiceImpl;Lcom/applovin/sdk/AppLovinAd;Lcom/applovin/sdk/AppLovinAdLoadListener;)V
+.method public static synthetic g(Lcom/applovin/impl/sdk/AppLovinAdServiceImpl;Lcom/applovin/sdk/AppLovinAd;Lcom/applovin/sdk/AppLovinAdLoadListener;)V
     .locals 0
 
     .line 1
@@ -3288,11 +3287,11 @@
     move-result-object v1
 
     .line 200
-    new-instance v2, Ls/o2;
+    new-instance v2, Landroidx/fragment/app/e;
 
     .line 201
     .line 202
-    invoke-direct {v2, p0, p2, p1, v0}, Ls/o2;-><init>(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)V
+    invoke-direct {v2, p0, p2, p1, v0}, Landroidx/fragment/app/e;-><init>(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)V
 
     .line 203
     .line 204
@@ -4268,6 +4267,8 @@
 
 .method public toString()Ljava/lang/String;
     .locals 2
+    .annotation build Landroidx/annotation/NonNull;
+    .end annotation
 
     .line 1
     new-instance v0, Ljava/lang/StringBuilder;
@@ -4314,6 +4315,14 @@
 
 .method public trackAndLaunchClick(Lcom/applovin/impl/sdk/ad/b;Lcom/applovin/adview/AppLovinAdView;Lcom/applovin/impl/adview/a;Landroid/net/Uri;Landroid/view/MotionEvent;ZLandroid/os/Bundle;)V
     .locals 6
+    .param p5    # Landroid/view/MotionEvent;
+        .annotation build Landroidx/annotation/Nullable;
+        .end annotation
+    .end param
+    .param p7    # Landroid/os/Bundle;
+        .annotation build Landroidx/annotation/Nullable;
+        .end annotation
+    .end param
 
     .line 1
     const-string v0, "AppLovinAdService"
@@ -4644,6 +4653,10 @@
 
 .method public trackAndLaunchVideoClick(Lcom/applovin/impl/sdk/ad/b;Landroid/net/Uri;Landroid/view/MotionEvent;Landroid/os/Bundle;Lcom/applovin/impl/o9;Landroid/content/Context;)V
     .locals 7
+    .param p4    # Landroid/os/Bundle;
+        .annotation build Landroidx/annotation/Nullable;
+        .end annotation
+    .end param
 
     .line 1
     const-string v0, "AppLovinAdService"

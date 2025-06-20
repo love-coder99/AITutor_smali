@@ -216,9 +216,17 @@
 
 .method public static checkAppCompatTheme(Landroid/view/View;Landroid/content/Context;)V
     .locals 1
+    .param p0    # Landroid/view/View;
+        .annotation build Landroidx/annotation/NonNull;
+        .end annotation
+    .end param
+    .param p1    # Landroid/content/Context;
+        .annotation build Landroidx/annotation/NonNull;
+        .end annotation
+    .end param
 
     .line 1
-    sget-object v0, Lg/j;->AppCompatTheme:[I
+    sget-object v0, Li/j;->AppCompatTheme:[I
 
     .line 2
     .line 3
@@ -231,7 +239,7 @@
 
     .line 7
     :try_start_0
-    sget v0, Lg/j;->AppCompatTheme_windowActionBar:I
+    sget v0, Li/j;->AppCompatTheme_windowActionBar:I
 
     .line 8
     .line 9
@@ -293,6 +301,8 @@
 
 .method public static createDisabledStateList(II)Landroid/content/res/ColorStateList;
     .locals 4
+    .annotation build Landroidx/annotation/NonNull;
+    .end annotation
 
     .line 1
     const/4 v0, 0x2
@@ -350,6 +360,10 @@
 
 .method public static getDisabledThemeAttrColor(Landroid/content/Context;I)I
     .locals 4
+    .param p0    # Landroid/content/Context;
+        .annotation build Landroidx/annotation/NonNull;
+        .end annotation
+    .end param
 
     .line 1
     invoke-static {p0, p1}, Landroidx/appcompat/widget/ThemeUtils;->getThemeAttrColorStateList(Landroid/content/Context;I)Landroid/content/res/ColorStateList;
@@ -450,12 +464,16 @@
 
 .method public static getThemeAttrColor(Landroid/content/Context;I)I
     .locals 2
+    .param p0    # Landroid/content/Context;
+        .annotation build Landroidx/annotation/NonNull;
+        .end annotation
+    .end param
 
+    .line 1
     sget-object v0, Landroidx/appcompat/widget/ThemeUtils;->TEMP_ARRAY:[I
 
     const/4 v1, 0x0
 
-    .line 1
     aput p1, v0, v1
 
     const/4 p1, 0x0
@@ -489,6 +507,10 @@
 
 .method public static getThemeAttrColor(Landroid/content/Context;IF)I
     .locals 0
+    .param p0    # Landroid/content/Context;
+        .annotation build Landroidx/annotation/NonNull;
+        .end annotation
+    .end param
 
     .line 6
     invoke-static {p0, p1}, Landroidx/appcompat/widget/ThemeUtils;->getThemeAttrColor(Landroid/content/Context;I)I
@@ -509,7 +531,7 @@
 
     move-result p1
 
-    invoke-static {p0, p1}, Lf3/a;->e(II)I
+    invoke-static {p0, p1}, Ll1/b;->e(II)I
 
     move-result p0
 
@@ -518,6 +540,12 @@
 
 .method public static getThemeAttrColorStateList(Landroid/content/Context;I)Landroid/content/res/ColorStateList;
     .locals 2
+    .param p0    # Landroid/content/Context;
+        .annotation build Landroidx/annotation/NonNull;
+        .end annotation
+    .end param
+    .annotation build Landroidx/annotation/Nullable;
+    .end annotation
 
     .line 1
     sget-object v0, Landroidx/appcompat/widget/ThemeUtils;->TEMP_ARRAY:[I

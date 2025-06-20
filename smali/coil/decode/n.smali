@@ -7,8 +7,8 @@
 
 
 # virtual methods
-.method public abstract a()Lcoil/decode/o;
+.method public abstract b()Lcoil/decode/o;
 .end method
 
-.method public abstract b()Lxi/i;
+.method public abstract d()LIa/k;
 .end method

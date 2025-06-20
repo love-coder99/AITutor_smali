@@ -57,12 +57,14 @@
 .method private a()V
     .locals 2
 
+    .line 8
     iget-object v0, p0, Lcom/applovin/impl/cs;->b:Landroid/net/wifi/WifiManager$WifiLock;
 
     if-nez v0, :cond_0
 
     return-void
 
+    .line 9
     :cond_0
     iget-boolean v1, p0, Lcom/applovin/impl/cs;->c:Z
 
@@ -72,12 +74,12 @@
 
     if-eqz v1, :cond_1
 
-    .line 5
+    .line 10
     invoke-virtual {v0}, Landroid/net/wifi/WifiManager$WifiLock;->acquire()V
 
     goto :goto_0
 
-    .line 6
+    .line 11
     :cond_1
     invoke-virtual {v0}, Landroid/net/wifi/WifiManager$WifiLock;->release()V
 
@@ -92,19 +94,21 @@
 
     if-eqz p1, :cond_1
 
+    .line 1
     iget-object v0, p0, Lcom/applovin/impl/cs;->b:Landroid/net/wifi/WifiManager$WifiLock;
 
     if-nez v0, :cond_1
 
+    .line 2
     iget-object v0, p0, Lcom/applovin/impl/cs;->a:Landroid/net/wifi/WifiManager;
 
     if-nez v0, :cond_0
 
+    .line 3
     const-string p1, "WifiLockManager"
 
     const-string v0, "WifiManager is null, therefore not creating the WifiLock."
 
-    .line 1
     invoke-static {p1, v0}, Lcom/applovin/impl/oc;->d(Ljava/lang/String;Ljava/lang/String;)V
 
     return-void
@@ -112,9 +116,9 @@
     :cond_0
     const/4 v1, 0x3
 
+    .line 4
     const-string v2, "ExoPlayer:WifiLockManager"
 
-    .line 2
     invoke-virtual {v0, v1, v2}, Landroid/net/wifi/WifiManager;->createWifiLock(ILjava/lang/String;)Landroid/net/wifi/WifiManager$WifiLock;
 
     move-result-object v0
@@ -123,13 +127,14 @@
 
     const/4 v1, 0x0
 
-    .line 3
+    .line 5
     invoke-virtual {v0, v1}, Landroid/net/wifi/WifiManager$WifiLock;->setReferenceCounted(Z)V
 
+    .line 6
     :cond_1
     iput-boolean p1, p0, Lcom/applovin/impl/cs;->c:Z
 
-    .line 4
+    .line 7
     invoke-direct {p0}, Lcom/applovin/impl/cs;->a()V
 
     return-void

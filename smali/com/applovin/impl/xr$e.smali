@@ -175,7 +175,7 @@
 
     return p1
 
-    .line 11
+    .line 12
     :cond_0
     new-instance p1, Ljava/lang/IllegalStateException;
 
@@ -236,30 +236,31 @@
 
     if-eq p0, v0, :cond_0
 
+    .line 2
     const-string v0, "Unknown textAlignment: "
 
     const-string v1, "WebvttCueParser"
 
-    .line 2
-    invoke-static {v0, p0, v1}, Landroidx/compose/foundation/text/modifiers/f;->z(Ljava/lang/String;ILjava/lang/String;)V
+    .line 3
+    invoke-static {p0, v0, v1}, Lcom/android/billingclient/api/a;->m(ILjava/lang/String;Ljava/lang/String;)V
 
     const/4 p0, 0x0
 
     return-object p0
 
-    .line 3
+    .line 4
     :cond_0
     sget-object p0, Landroid/text/Layout$Alignment;->ALIGN_OPPOSITE:Landroid/text/Layout$Alignment;
 
     return-object p0
 
-    .line 4
+    .line 5
     :cond_1
     sget-object p0, Landroid/text/Layout$Alignment;->ALIGN_CENTER:Landroid/text/Layout$Alignment;
 
     return-object p0
 
-    .line 5
+    .line 6
     :cond_2
     sget-object p0, Landroid/text/Layout$Alignment;->ALIGN_NORMAL:Landroid/text/Layout$Alignment;
 
@@ -330,7 +331,7 @@
 .method public a()Lcom/applovin/impl/wr;
     .locals 7
 
-    .line 12
+    .line 13
     new-instance v6, Lcom/applovin/impl/wr;
 
     invoke-virtual {p0}, Lcom/applovin/impl/xr$e;->b()Lcom/applovin/impl/a5$b;
@@ -355,6 +356,7 @@
 .method public b()Lcom/applovin/impl/a5$b;
     .locals 5
 
+    .line 2
     iget v0, p0, Lcom/applovin/impl/xr$e;->h:F
 
     const v1, -0x800001
@@ -368,11 +370,11 @@
     :cond_0
     iget v0, p0, Lcom/applovin/impl/xr$e;->d:I
 
-    .line 2
     invoke-static {v0}, Lcom/applovin/impl/xr$e;->b(I)F
 
     move-result v0
 
+    .line 3
     :goto_0
     iget v1, p0, Lcom/applovin/impl/xr$e;->i:I
 
@@ -382,15 +384,15 @@
 
     goto :goto_1
 
+    .line 4
     :cond_1
     iget v1, p0, Lcom/applovin/impl/xr$e;->d:I
 
-    .line 3
     invoke-static {v1}, Lcom/applovin/impl/xr$e;->c(I)I
 
     move-result v1
 
-    .line 4
+    .line 5
     :goto_1
     new-instance v2, Lcom/applovin/impl/a5$b;
 
@@ -398,7 +400,7 @@
 
     iget v3, p0, Lcom/applovin/impl/xr$e;->d:I
 
-    .line 5
+    .line 6
     invoke-static {v3}, Lcom/applovin/impl/xr$e;->a(I)Landroid/text/Layout$Alignment;
 
     move-result-object v3
@@ -411,7 +413,7 @@
 
     iget v4, p0, Lcom/applovin/impl/xr$e;->f:I
 
-    .line 6
+    .line 7
     invoke-static {v3, v4}, Lcom/applovin/impl/xr$e;->a(FI)F
 
     move-result v3
@@ -424,24 +426,24 @@
 
     iget v3, p0, Lcom/applovin/impl/xr$e;->g:I
 
-    .line 7
+    .line 8
     invoke-virtual {v2, v3}, Lcom/applovin/impl/a5$b;->a(I)Lcom/applovin/impl/a5$b;
 
     move-result-object v2
 
-    .line 8
+    .line 9
     invoke-virtual {v2, v0}, Lcom/applovin/impl/a5$b;->b(F)Lcom/applovin/impl/a5$b;
 
     move-result-object v2
 
-    .line 9
+    .line 10
     invoke-virtual {v2, v1}, Lcom/applovin/impl/a5$b;->b(I)Lcom/applovin/impl/a5$b;
 
     move-result-object v2
 
     iget v3, p0, Lcom/applovin/impl/xr$e;->j:F
 
-    .line 10
+    .line 11
     invoke-static {v1, v0}, Lcom/applovin/impl/xr$e;->a(IF)F
 
     move-result v0
@@ -456,16 +458,17 @@
 
     iget v1, p0, Lcom/applovin/impl/xr$e;->k:I
 
-    .line 11
+    .line 12
     invoke-virtual {v0, v1}, Lcom/applovin/impl/a5$b;->c(I)Lcom/applovin/impl/a5$b;
 
     move-result-object v0
 
+    .line 13
     iget-object v1, p0, Lcom/applovin/impl/xr$e;->c:Ljava/lang/CharSequence;
 
     if-eqz v1, :cond_2
 
-    .line 12
+    .line 14
     invoke-virtual {v0, v1}, Lcom/applovin/impl/a5$b;->a(Ljava/lang/CharSequence;)Lcom/applovin/impl/a5$b;
 
     :cond_2

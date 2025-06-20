@@ -8,7 +8,7 @@
 
 .field public final h:Landroidx/compose/ui/graphics/painter/b;
 
-.field public final i:Landroidx/compose/ui/layout/j;
+.field public final i:Landroidx/compose/ui/layout/h;
 
 .field public final j:I
 
@@ -28,7 +28,7 @@
 
 
 # direct methods
-.method public constructor <init>(Landroidx/compose/ui/graphics/painter/b;Landroidx/compose/ui/graphics/painter/b;Landroidx/compose/ui/layout/j;IZZ)V
+.method public constructor <init>(Landroidx/compose/ui/graphics/painter/b;Landroidx/compose/ui/graphics/painter/b;Landroidx/compose/ui/layout/h;IZZ)V
     .locals 0
 
     .line 1
@@ -45,7 +45,7 @@
 
     .line 7
     .line 8
-    iput-object p3, p0, Lcoil/compose/r;->i:Landroidx/compose/ui/layout/j;
+    iput-object p3, p0, Lcoil/compose/r;->i:Landroidx/compose/ui/layout/h;
 
     .line 9
     .line 10
@@ -64,7 +64,7 @@
     const/4 p1, 0x0
 
     .line 17
-    invoke-static {p1}, Ly/f;->A(I)Landroidx/compose/runtime/ParcelableSnapshotMutableIntState;
+    invoke-static {p1}, Landroidx/compose/runtime/o;->Q(I)Landroidx/compose/runtime/ParcelableSnapshotMutableIntState;
 
     .line 18
     .line 19
@@ -88,7 +88,7 @@
 
     .line 28
     .line 29
-    invoke-static {p1}, Laf/g0;->C(F)Landroidx/compose/runtime/ParcelableSnapshotMutableFloatState;
+    invoke-static {p1}, Landroidx/compose/runtime/o;->P(F)Landroidx/compose/runtime/ParcelableSnapshotMutableFloatState;
 
     .line 30
     .line 31
@@ -100,14 +100,14 @@
 
     .line 34
     .line 35
-    sget-object p1, Landroidx/compose/runtime/g3;->a:Landroidx/compose/runtime/g3;
+    sget-object p1, Landroidx/compose/runtime/T;->h:Landroidx/compose/runtime/T;
 
     .line 36
     .line 37
     const/4 p2, 0x0
 
     .line 38
-    invoke-static {p2, p1}, Lma/a;->Z(Ljava/lang/Object;Landroidx/compose/runtime/u2;)Landroidx/compose/runtime/ParcelableSnapshotMutableState;
+    invoke-static {p2, p1}, Landroidx/compose/runtime/o;->R(Ljava/lang/Object;Landroidx/compose/runtime/A0;)Landroidx/compose/runtime/ParcelableSnapshotMutableState;
 
     .line 39
     .line 40
@@ -132,7 +132,7 @@
 
     .line 2
     .line 3
-    invoke-virtual {v0, p1}, Landroidx/compose/runtime/n2;->l(F)V
+    invoke-virtual {v0, p1}, Landroidx/compose/runtime/ParcelableSnapshotMutableFloatState;->l(F)V
 
     .line 4
     .line 5
@@ -140,7 +140,7 @@
     return-void
 .end method
 
-.method public final d(Landroidx/compose/ui/graphics/x;)V
+.method public final e(Landroidx/compose/ui/graphics/x;)V
     .locals 1
 
     .line 1
@@ -148,7 +148,7 @@
 
     .line 2
     .line 3
-    invoke-virtual {v0, p1}, Landroidx/compose/runtime/t2;->setValue(Ljava/lang/Object;)V
+    invoke-virtual {v0, p1}, Landroidx/compose/runtime/ParcelableSnapshotMutableState;->setValue(Ljava/lang/Object;)V
 
     .line 4
     .line 5
@@ -257,7 +257,7 @@
 
     .line 43
     .line 44
-    invoke-static {v3, v4}, Ln1/g;->d(J)F
+    invoke-static {v3, v4}, Lr0/f;->d(J)F
 
     .line 45
     .line 46
@@ -265,7 +265,7 @@
     move-result v0
 
     .line 48
-    invoke-static {v1, v2}, Ln1/g;->d(J)F
+    invoke-static {v1, v2}, Lr0/f;->d(J)F
 
     .line 49
     .line 50
@@ -281,7 +281,7 @@
     move-result v0
 
     .line 56
-    invoke-static {v3, v4}, Ln1/g;->b(J)F
+    invoke-static {v3, v4}, Lr0/f;->b(J)F
 
     .line 57
     .line 58
@@ -289,7 +289,7 @@
     move-result v3
 
     .line 60
-    invoke-static {v1, v2}, Ln1/g;->b(J)F
+    invoke-static {v1, v2}, Lr0/f;->b(J)F
 
     .line 61
     .line 62
@@ -305,7 +305,7 @@
     move-result v1
 
     .line 68
-    invoke-static {v0, v1}, Lma/a;->b(FF)J
+    invoke-static {v0, v1}, Lx7/c;->c(FF)J
 
     .line 69
     .line 70
@@ -351,7 +351,7 @@
     return-wide v3
 .end method
 
-.method public final i(Lo1/h;)V
+.method public final i(Ls0/e;)V
     .locals 9
 
     .line 1
@@ -371,7 +371,7 @@
 
     .line 8
     .line 9
-    invoke-virtual {v1}, Landroidx/compose/runtime/n2;->k()F
+    invoke-virtual {v1}, Landroidx/compose/runtime/ParcelableSnapshotMutableFloatState;->k()F
 
     .line 10
     .line 11
@@ -379,7 +379,7 @@
     move-result v0
 
     .line 13
-    invoke-virtual {p0, p1, v2, v0}, Lcoil/compose/r;->j(Lo1/h;Landroidx/compose/ui/graphics/painter/b;F)V
+    invoke-virtual {p0, p1, v2, v0}, Lcoil/compose/r;->j(Ls0/e;Landroidx/compose/ui/graphics/painter/b;F)V
 
     .line 14
     .line 15
@@ -444,7 +444,7 @@
 
     .line 41
     .line 42
-    invoke-static {v0, v3, v4}, Lma/a;->p(FFF)F
+    invoke-static {v0, v3, v4}, Landroid/support/v4/media/session/a;->i(FFF)F
 
     .line 43
     .line 44
@@ -452,7 +452,7 @@
     move-result v3
 
     .line 46
-    invoke-virtual {v1}, Landroidx/compose/runtime/n2;->k()F
+    invoke-virtual {v1}, Landroidx/compose/runtime/ParcelableSnapshotMutableFloatState;->k()F
 
     .line 47
     .line 48
@@ -472,7 +472,7 @@
 
     .line 55
     .line 56
-    invoke-virtual {v1}, Landroidx/compose/runtime/n2;->k()F
+    invoke-virtual {v1}, Landroidx/compose/runtime/ParcelableSnapshotMutableFloatState;->k()F
 
     .line 57
     .line 58
@@ -487,7 +487,7 @@
 
     .line 62
     :cond_2
-    invoke-virtual {v1}, Landroidx/compose/runtime/n2;->k()F
+    invoke-virtual {v1}, Landroidx/compose/runtime/ParcelableSnapshotMutableFloatState;->k()F
 
     .line 63
     .line 64
@@ -526,12 +526,12 @@
 
     .line 77
     .line 78
-    invoke-virtual {p0, p1, v0, v1}, Lcoil/compose/r;->j(Lo1/h;Landroidx/compose/ui/graphics/painter/b;F)V
+    invoke-virtual {p0, p1, v0, v1}, Lcoil/compose/r;->j(Ls0/e;Landroidx/compose/ui/graphics/painter/b;F)V
 
     .line 79
     .line 80
     .line 81
-    invoke-virtual {p0, p1, v2, v5}, Lcoil/compose/r;->j(Lo1/h;Landroidx/compose/ui/graphics/painter/b;F)V
+    invoke-virtual {p0, p1, v2, v5}, Lcoil/compose/r;->j(Ls0/e;Landroidx/compose/ui/graphics/painter/b;F)V
 
     .line 82
     .line 83
@@ -559,7 +559,7 @@
 
     .line 93
     .line 94
-    invoke-virtual {p1}, Landroidx/compose/runtime/p2;->k()I
+    invoke-virtual {p1}, Landroidx/compose/runtime/ParcelableSnapshotMutableIntState;->k()I
 
     .line 95
     .line 96
@@ -570,7 +570,7 @@
     add-int/2addr v0, v3
 
     .line 99
-    invoke-virtual {p1, v0}, Landroidx/compose/runtime/p2;->l(I)V
+    invoke-virtual {p1, v0}, Landroidx/compose/runtime/ParcelableSnapshotMutableIntState;->l(I)V
 
     .line 100
     .line 101
@@ -579,7 +579,7 @@
     return-void
 .end method
 
-.method public final j(Lo1/h;Landroidx/compose/ui/graphics/painter/b;F)V
+.method public final j(Ls0/e;Landroidx/compose/ui/graphics/painter/b;F)V
     .locals 12
 
     .line 1
@@ -603,7 +603,7 @@
     .line 9
     .line 10
     :cond_0
-    invoke-interface {p1}, Lo1/h;->e()J
+    invoke-interface {p1}, Ls0/e;->g()J
 
     .line 11
     .line 12
@@ -638,7 +638,7 @@
 
     .line 28
     :cond_1
-    invoke-static {v2, v3}, Ln1/g;->e(J)Z
+    invoke-static {v2, v3}, Lr0/f;->e(J)Z
 
     .line 29
     .line 30
@@ -670,7 +670,7 @@
 
     .line 41
     :cond_3
-    invoke-static {v0, v1}, Ln1/g;->e(J)Z
+    invoke-static {v0, v1}, Lr0/f;->e(J)Z
 
     .line 42
     .line 43
@@ -687,11 +687,11 @@
 
     .line 48
     :cond_4
-    iget-object v6, p0, Lcoil/compose/r;->i:Landroidx/compose/ui/layout/j;
+    iget-object v6, p0, Lcoil/compose/r;->i:Landroidx/compose/ui/layout/h;
 
     .line 49
     .line 50
-    invoke-interface {v6, v2, v3, v0, v1}, Landroidx/compose/ui/layout/j;->a(JJ)J
+    invoke-interface {v6, v2, v3, v0, v1}, Landroidx/compose/ui/layout/h;->a(JJ)J
 
     .line 51
     .line 52
@@ -699,7 +699,7 @@
     move-result-wide v6
 
     .line 54
-    invoke-static {v2, v3, v6, v7}, Landroidx/compose/ui/layout/t;->p(JJ)J
+    invoke-static {v2, v3, v6, v7}, Landroidx/compose/ui/layout/q;->p(JJ)J
 
     .line 55
     .line 56
@@ -727,7 +727,7 @@
 
     .line 66
     :cond_5
-    invoke-static {v0, v1}, Ln1/g;->e(J)Z
+    invoke-static {v0, v1}, Lr0/f;->e(J)Z
 
     .line 67
     .line 68
@@ -740,7 +740,7 @@
     .line 71
     .line 72
     :goto_3
-    invoke-virtual {v2}, Landroidx/compose/runtime/t2;->getValue()Ljava/lang/Object;
+    invoke-virtual {v2}, Landroidx/compose/runtime/ParcelableSnapshotMutableState;->getValue()Ljava/lang/Object;
 
     .line 73
     .line 74
@@ -764,7 +764,7 @@
     move v10, p3
 
     .line 82
-    invoke-virtual/range {v6 .. v11}, Landroidx/compose/ui/graphics/painter/b;->g(Lo1/h;JFLandroidx/compose/ui/graphics/x;)V
+    invoke-virtual/range {v6 .. v11}, Landroidx/compose/ui/graphics/painter/b;->g(Ls0/e;JFLandroidx/compose/ui/graphics/x;)V
 
     .line 83
     .line 84
@@ -773,7 +773,7 @@
 
     .line 86
     :cond_6
-    invoke-static {v0, v1}, Ln1/g;->d(J)F
+    invoke-static {v0, v1}, Lr0/f;->d(J)F
 
     .line 87
     .line 88
@@ -781,7 +781,7 @@
     move-result v3
 
     .line 90
-    invoke-static {v8, v9}, Ln1/g;->d(J)F
+    invoke-static {v8, v9}, Lr0/f;->d(J)F
 
     .line 91
     .line 92
@@ -801,7 +801,7 @@
     div-float/2addr v3, v4
 
     .line 98
-    invoke-static {v0, v1}, Ln1/g;->b(J)F
+    invoke-static {v0, v1}, Lr0/f;->b(J)F
 
     .line 99
     .line 100
@@ -809,7 +809,7 @@
     move-result v0
 
     .line 102
-    invoke-static {v8, v9}, Ln1/g;->b(J)F
+    invoke-static {v8, v9}, Lr0/f;->b(J)F
 
     .line 103
     .line 104
@@ -823,7 +823,7 @@
     div-float/2addr v0, v4
 
     .line 108
-    invoke-interface {p1}, Lo1/h;->U()Lo1/b;
+    invoke-interface {p1}, Ls0/e;->U()Lcom/google/android/gms/internal/measurement/c;
 
     .line 109
     .line 110
@@ -831,67 +831,75 @@
     move-result-object v1
 
     .line 112
-    iget-object v1, v1, Lo1/b;->a:Lo1/d;
+    iget-object v1, v1, Lcom/google/android/gms/internal/measurement/c;->c:Ljava/lang/Object;
 
     .line 113
     .line 114
-    invoke-virtual {v1, v3, v0, v3, v0}, Lo1/d;->a(FFFF)V
+    check-cast v1, Lcom/google/android/play/core/integrity/h;
 
     .line 115
     .line 116
-    .line 117
-    invoke-virtual {v2}, Landroidx/compose/runtime/t2;->getValue()Ljava/lang/Object;
+    invoke-virtual {v1, v3, v0, v3, v0}, Lcom/google/android/play/core/integrity/h;->j(FFFF)V
 
+    .line 117
     .line 118
     .line 119
+    invoke-virtual {v2}, Landroidx/compose/runtime/ParcelableSnapshotMutableState;->getValue()Ljava/lang/Object;
+
     .line 120
+    .line 121
+    .line 122
     move-result-object v1
 
-    .line 121
+    .line 123
     move-object v11, v1
 
-    .line 122
+    .line 124
     check-cast v11, Landroidx/compose/ui/graphics/x;
 
-    .line 123
-    .line 124
+    .line 125
+    .line 126
     move-object v6, p2
 
-    .line 125
+    .line 127
     move-object v7, p1
 
-    .line 126
+    .line 128
     move v10, p3
 
-    .line 127
-    invoke-virtual/range {v6 .. v11}, Landroidx/compose/ui/graphics/painter/b;->g(Lo1/h;JFLandroidx/compose/ui/graphics/x;)V
-
-    .line 128
     .line 129
-    .line 130
-    invoke-interface {p1}, Lo1/h;->U()Lo1/b;
+    invoke-virtual/range {v6 .. v11}, Landroidx/compose/ui/graphics/painter/b;->g(Ls0/e;JFLandroidx/compose/ui/graphics/x;)V
 
+    .line 130
     .line 131
     .line 132
+    invoke-interface {p1}, Ls0/e;->U()Lcom/google/android/gms/internal/measurement/c;
+
     .line 133
+    .line 134
+    .line 135
     move-result-object p1
 
-    .line 134
-    iget-object p1, p1, Lo1/b;->a:Lo1/d;
-
-    .line 135
     .line 136
-    neg-float p2, v3
+    iget-object p1, p1, Lcom/google/android/gms/internal/measurement/c;->c:Ljava/lang/Object;
 
     .line 137
-    neg-float p3, v0
-
     .line 138
-    invoke-virtual {p1, p2, p3, p2, p3}, Lo1/d;->a(FFFF)V
+    check-cast p1, Lcom/google/android/play/core/integrity/h;
 
     .line 139
     .line 140
+    neg-float p2, v3
+
     .line 141
+    neg-float p3, v0
+
+    .line 142
+    invoke-virtual {p1, p2, p3, p2, p3}, Lcom/google/android/play/core/integrity/h;->j(FFFF)V
+
+    .line 143
+    .line 144
+    .line 145
     :cond_7
     :goto_4
     return-void

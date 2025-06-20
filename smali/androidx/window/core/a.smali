@@ -2,9 +2,6 @@
 .super Ljava/lang/Object;
 .source "SourceFile"
 
-# interfaces
-.implements Landroidx/window/core/e;
-
 
 # static fields
 .field public static final a:Landroidx/window/core/a;
@@ -29,4 +26,24 @@
     .line 7
     .line 8
     return-void
+.end method
+
+.method public static a(Ljava/lang/Object;Landroidx/window/core/SpecificationComputer$VerificationMode;)Landroidx/window/core/f;
+    .locals 2
+
+    .line 1
+    sget-object v0, Landroidx/window/core/a;->a:Landroidx/window/core/a;
+
+    .line 2
+    .line 3
+    new-instance v1, Landroidx/window/core/f;
+
+    .line 4
+    .line 5
+    invoke-direct {v1, p0, p1, v0}, Landroidx/window/core/f;-><init>(Ljava/lang/Object;Landroidx/window/core/SpecificationComputer$VerificationMode;Landroidx/window/core/a;)V
+
+    .line 6
+    .line 7
+    .line 8
+    return-object v1
 .end method

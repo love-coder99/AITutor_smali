@@ -51,11 +51,11 @@
     .locals 2
 
     .line 2
-    new-instance v0, Lcom/applovin/impl/is;
+    new-instance v0, Lcom/applovin/impl/A;
 
     const/4 v1, 0x5
 
-    invoke-direct {v0, p2, v1}, Lcom/applovin/impl/is;-><init>(Ljava/lang/Object;I)V
+    invoke-direct {v0, p2, v1}, Lcom/applovin/impl/A;-><init>(Ljava/lang/Object;I)V
 
     invoke-direct {p0, p1, v0}, Lcom/applovin/impl/bi$b;-><init>(Lcom/applovin/impl/h5$a;Lcom/applovin/impl/zh$a;)V
 
@@ -68,18 +68,20 @@
     .line 3
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
+    .line 4
     iput-object p1, p0, Lcom/applovin/impl/bi$b;->a:Lcom/applovin/impl/h5$a;
 
+    .line 5
     iput-object p2, p0, Lcom/applovin/impl/bi$b;->b:Lcom/applovin/impl/zh$a;
 
-    .line 4
+    .line 6
     new-instance p1, Lcom/applovin/impl/y5;
 
     invoke-direct {p1}, Lcom/applovin/impl/y5;-><init>()V
 
     iput-object p1, p0, Lcom/applovin/impl/bi$b;->c:Lcom/applovin/impl/b7;
 
-    .line 5
+    .line 7
     new-instance p1, Lcom/applovin/impl/f6;
 
     invoke-direct {p1}, Lcom/applovin/impl/f6;-><init>()V
@@ -88,6 +90,7 @@
 
     const/high16 p1, 0x100000
 
+    .line 8
     iput p1, p0, Lcom/applovin/impl/bi$b;->e:I
 
     return-void

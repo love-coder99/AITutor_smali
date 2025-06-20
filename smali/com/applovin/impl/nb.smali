@@ -165,15 +165,17 @@
 .method public a()V
     .locals 2
 
-    .line 1
     const/4 v0, 0x0
 
+    .line 6
     iput v0, p0, Lcom/applovin/impl/nb;->a:I
 
     const/4 v1, -0x1
 
+    .line 7
     iput v1, p0, Lcom/applovin/impl/nb;->b:I
 
+    .line 8
     iput v0, p0, Lcom/applovin/impl/nb;->c:I
 
     return-void
@@ -182,18 +184,19 @@
 .method public a(I)V
     .locals 2
 
+    .line 1
     iget v0, p0, Lcom/applovin/impl/nb;->c:I
 
     iget-object v1, p0, Lcom/applovin/impl/nb;->d:[I
 
-    .line 2
     array-length v1, v1
 
     if-ne v0, v1, :cond_0
 
-    .line 3
+    .line 2
     invoke-direct {p0}, Lcom/applovin/impl/nb;->b()V
 
+    .line 3
     :cond_0
     iget v0, p0, Lcom/applovin/impl/nb;->b:I
 
@@ -205,11 +208,12 @@
 
     iput v0, p0, Lcom/applovin/impl/nb;->b:I
 
+    .line 4
     iget-object v1, p0, Lcom/applovin/impl/nb;->d:[I
 
-    .line 4
     aput p1, v1, v0
 
+    .line 5
     iget p1, p0, Lcom/applovin/impl/nb;->c:I
 
     add-int/lit8 p1, p1, 0x1
@@ -222,17 +226,25 @@
 .method public c()Z
     .locals 1
 
+    .line 1
     iget v0, p0, Lcom/applovin/impl/nb;->c:I
 
+    .line 2
+    .line 3
     if-nez v0, :cond_0
 
+    .line 4
+    .line 5
     const/4 v0, 0x1
 
+    .line 6
     goto :goto_0
 
+    .line 7
     :cond_0
     const/4 v0, 0x0
 
+    .line 8
     :goto_0
     return v0
 .end method

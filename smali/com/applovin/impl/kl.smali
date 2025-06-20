@@ -38,9 +38,9 @@
 .method public a()I
     .locals 1
 
+    .line 4
     iget-object v0, p0, Lcom/applovin/impl/kl;->b:[J
 
-    .line 4
     array-length v0, v0
 
     return v0
@@ -49,18 +49,18 @@
 .method public a(J)I
     .locals 2
 
+    .line 5
     iget-object v0, p0, Lcom/applovin/impl/kl;->b:[J
 
     const/4 v1, 0x0
 
-    .line 5
     invoke-static {v0, p1, p2, v1, v1}, Lcom/applovin/impl/xp;->a([JJZZ)I
 
     move-result p1
 
+    .line 6
     iget-object p2, p0, Lcom/applovin/impl/kl;->b:[J
 
-    .line 6
     array-length p2, p2
 
     if-ge p1, p2, :cond_0
@@ -94,9 +94,9 @@
     :goto_0
     invoke-static {v2}, Lcom/applovin/impl/b1;->a(Z)V
 
+    .line 2
     iget-object v2, p0, Lcom/applovin/impl/kl;->b:[J
 
-    .line 2
     array-length v2, v2
 
     if-ge p1, v2, :cond_1
@@ -106,9 +106,9 @@
     :cond_1
     invoke-static {v0}, Lcom/applovin/impl/b1;->a(Z)V
 
+    .line 3
     iget-object v0, p0, Lcom/applovin/impl/kl;->b:[J
 
-    .line 3
     aget-wide v1, v0, p1
 
     return-wide v1

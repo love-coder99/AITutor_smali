@@ -3,7 +3,7 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lzh/c;
+.implements Lka/c;
 
 
 # annotations
@@ -19,7 +19,7 @@
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "Lkotlin/jvm/internal/Lambda;",
-        "Lzh/c;"
+        "Lka/c;"
     }
 .end annotation
 
@@ -29,9 +29,9 @@
     }
     d2 = {
         "Landroidx/compose/animation/core/a;",
-        "Lh2/h;",
-        "Landroidx/compose/animation/core/j;",
-        "Lqh/r;",
+        "LM0/h;",
+        "Landroidx/compose/animation/core/i;",
+        "LX9/j;",
         "invoke",
         "(Landroidx/compose/animation/core/a;)V",
         "<anonymous>"
@@ -76,7 +76,7 @@
 
     invoke-virtual {p0, p1}, Landroidx/compose/foundation/lazy/layout/LazyLayoutItemAnimation$animatePlacementDelta$1$1;->invoke(Landroidx/compose/animation/core/a;)V
 
-    sget-object p1, Lqh/r;->a:Lqh/r;
+    sget-object p1, LX9/j;->a:LX9/j;
 
     return-object p1
 .end method
@@ -91,22 +91,22 @@
         }
     .end annotation
 
+    .line 2
     iget-object v0, p0, Landroidx/compose/foundation/lazy/layout/LazyLayoutItemAnimation$animatePlacementDelta$1$1;->this$0:Landroidx/compose/foundation/lazy/layout/s;
 
-    .line 2
     invoke-virtual {p1}, Landroidx/compose/animation/core/a;->d()Ljava/lang/Object;
 
     move-result-object p1
 
-    check-cast p1, Lh2/h;
+    check-cast p1, LM0/h;
 
     .line 3
-    iget-wide v1, p1, Lh2/h;->a:J
-
-    iget-wide v3, p0, Landroidx/compose/foundation/lazy/layout/LazyLayoutItemAnimation$animatePlacementDelta$1$1;->$animationTarget:J
+    iget-wide v1, p1, LM0/h;->a:J
 
     .line 4
-    invoke-static {v1, v2, v3, v4}, Lh2/h;->c(JJ)J
+    iget-wide v3, p0, Landroidx/compose/foundation/lazy/layout/LazyLayoutItemAnimation$animatePlacementDelta$1$1;->$animationTarget:J
+
+    invoke-static {v1, v2, v3, v4}, LM0/h;->c(JJ)J
 
     move-result-wide v1
 
@@ -115,13 +115,14 @@
     .line 5
     invoke-virtual {v0, v1, v2}, Landroidx/compose/foundation/lazy/layout/s;->h(J)V
 
+    .line 6
     iget-object p1, p0, Landroidx/compose/foundation/lazy/layout/LazyLayoutItemAnimation$animatePlacementDelta$1$1;->this$0:Landroidx/compose/foundation/lazy/layout/s;
 
-    .line 6
-    iget-object p1, p1, Landroidx/compose/foundation/lazy/layout/s;->c:Lzh/a;
-
     .line 7
-    invoke-interface {p1}, Lzh/a;->invoke()Ljava/lang/Object;
+    iget-object p1, p1, Landroidx/compose/foundation/lazy/layout/s;->c:Lka/a;
+
+    .line 8
+    invoke-interface {p1}, Lka/a;->invoke()Ljava/lang/Object;
 
     return-void
 .end method

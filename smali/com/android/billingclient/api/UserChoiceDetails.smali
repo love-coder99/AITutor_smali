@@ -4,6 +4,9 @@
 
 
 # annotations
+.annotation build Lcom/android/billingclient/api/zzk;
+.end annotation
+
 .annotation system Ldalvik/annotation/MemberClasses;
     value = {
         Lcom/android/billingclient/api/UserChoiceDetails$Product;
@@ -88,6 +91,10 @@
 
 .method private static toProductList(Lorg/json/JSONArray;)Ljava/util/List;
     .locals 5
+    .param p0    # Lorg/json/JSONArray;
+        .annotation build Landroidx/annotation/Nullable;
+        .end annotation
+    .end param
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -174,6 +181,8 @@
 # virtual methods
 .method public getExternalTransactionToken()Ljava/lang/String;
     .locals 2
+    .annotation build Landroidx/annotation/NonNull;
+    .end annotation
 
     .line 1
     iget-object v0, p0, Lcom/android/billingclient/api/UserChoiceDetails;->mParsedJson:Lorg/json/JSONObject;
@@ -197,6 +206,8 @@
 
 .method public getOriginalExternalTransactionId()Ljava/lang/String;
     .locals 2
+    .annotation build Landroidx/annotation/Nullable;
+    .end annotation
 
     .line 1
     iget-object v0, p0, Lcom/android/billingclient/api/UserChoiceDetails;->mParsedJson:Lorg/json/JSONObject;
@@ -236,6 +247,9 @@
 
 .method public getProducts()Ljava/util/List;
     .locals 1
+    .annotation build Landroidx/annotation/NonNull;
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "()",

@@ -3,7 +3,7 @@
 .source "SourceFile"
 
 # interfaces
-.implements Landroidx/camera/core/impl/o1;
+.implements Landroidx/camera/core/impl/i0;
 
 
 # static fields
@@ -110,7 +110,11 @@
 .method public constructor <init>()V
     .locals 0
 
+    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
+    .line 2
+    .line 3
+    .line 4
     return-void
 .end method

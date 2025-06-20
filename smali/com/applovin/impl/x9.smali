@@ -21,9 +21,9 @@
 .method public a(Landroid/widget/ImageView;Lcom/applovin/impl/adview/g;Lcom/applovin/impl/adview/g;Lcom/applovin/impl/o;Lcom/applovin/impl/adview/k;Lcom/applovin/adview/AppLovinAdView;Landroid/view/ViewGroup;)V
     .locals 3
 
+    .line 2
     iget-object v0, p0, Lcom/applovin/impl/n9;->d:Landroid/view/ViewGroup;
 
-    .line 2
     invoke-virtual {v0, p6}, Landroid/view/ViewGroup;->addView(Landroid/view/View;)V
 
     const/4 p6, 0x5
@@ -32,9 +32,9 @@
 
     if-eqz p2, :cond_1
 
+    .line 3
     iget-object v1, p0, Lcom/applovin/impl/n9;->c:Lcom/applovin/impl/sdk/ad/b;
 
-    .line 3
     invoke-virtual {v1}, Lcom/applovin/impl/sdk/ad/b;->I0()Z
 
     move-result v1
@@ -51,9 +51,9 @@
     :goto_0
     or-int/lit8 v1, v1, 0x30
 
+    .line 4
     iget-object v2, p0, Lcom/applovin/impl/n9;->c:Lcom/applovin/impl/sdk/ad/b;
 
-    .line 4
     invoke-virtual {v2}, Lcom/applovin/impl/sdk/ad/b;->l()Lcom/applovin/impl/sdk/ad/b$d;
 
     move-result-object v2
@@ -63,9 +63,9 @@
     :cond_1
     if-eqz p3, :cond_3
 
+    .line 5
     iget-object p2, p0, Lcom/applovin/impl/n9;->c:Lcom/applovin/impl/sdk/ad/b;
 
-    .line 5
     invoke-virtual {p2}, Lcom/applovin/impl/sdk/ad/b;->A0()Z
 
     move-result p2
@@ -77,9 +77,9 @@
     :cond_2
     or-int/lit8 p2, p6, 0x30
 
+    .line 6
     iget-object p6, p0, Lcom/applovin/impl/n9;->c:Lcom/applovin/impl/sdk/ad/b;
 
-    .line 6
     invoke-virtual {p6}, Lcom/applovin/impl/sdk/ad/b;->l()Lcom/applovin/impl/sdk/ad/b$d;
 
     move-result-object p6
@@ -89,11 +89,11 @@
     :cond_3
     if-eqz p1, :cond_4
 
+    .line 7
     iget-object p2, p0, Lcom/applovin/impl/n9;->b:Landroid/app/Activity;
 
     iget-object p3, p0, Lcom/applovin/impl/n9;->a:Lcom/applovin/impl/sdk/j;
 
-    .line 7
     sget-object p6, Lcom/applovin/impl/sj;->q2:Lcom/applovin/impl/sj;
 
     invoke-virtual {p3, p6}, Lcom/applovin/impl/sdk/j;->a(Lcom/applovin/impl/sj;)Ljava/lang/Object;
@@ -129,11 +129,11 @@
 
     invoke-direct {p3, p2, p2, p6}, Landroid/widget/FrameLayout$LayoutParams;-><init>(III)V
 
+    .line 9
     iget-object p2, p0, Lcom/applovin/impl/n9;->b:Landroid/app/Activity;
 
     iget-object p6, p0, Lcom/applovin/impl/n9;->a:Lcom/applovin/impl/sdk/j;
 
-    .line 9
     sget-object v0, Lcom/applovin/impl/sj;->r2:Lcom/applovin/impl/sj;
 
     invoke-virtual {p6, v0}, Lcom/applovin/impl/sdk/j;->a(Lcom/applovin/impl/sj;)Ljava/lang/Object;
@@ -153,27 +153,27 @@
     .line 10
     invoke-virtual {p3, p2, p2, p2, p2}, Landroid/view/ViewGroup$MarginLayoutParams;->setMargins(IIII)V
 
+    .line 11
     iget-object p2, p0, Lcom/applovin/impl/n9;->d:Landroid/view/ViewGroup;
 
-    .line 11
     invoke-virtual {p2, p1, p3}, Landroid/view/ViewGroup;->addView(Landroid/view/View;Landroid/view/ViewGroup$LayoutParams;)V
 
     :cond_4
     if-eqz p4, :cond_5
 
+    .line 12
     iget-object p1, p0, Lcom/applovin/impl/n9;->d:Landroid/view/ViewGroup;
 
     iget-object p2, p0, Lcom/applovin/impl/n9;->e:Landroid/widget/FrameLayout$LayoutParams;
 
-    .line 12
     invoke-virtual {p1, p4, p2}, Landroid/view/ViewGroup;->addView(Landroid/view/View;Landroid/view/ViewGroup$LayoutParams;)V
 
     :cond_5
     if-eqz p5, :cond_6
 
+    .line 13
     iget-object p1, p0, Lcom/applovin/impl/n9;->d:Landroid/view/ViewGroup;
 
-    .line 13
     new-instance p2, Landroid/view/ViewGroup$LayoutParams;
 
     const/4 p3, -0x1
@@ -185,19 +185,19 @@
     :cond_6
     if-eqz p7, :cond_7
 
+    .line 14
     iget-object p1, p0, Lcom/applovin/impl/n9;->d:Landroid/view/ViewGroup;
 
-    .line 14
     invoke-virtual {p7, p1}, Landroid/view/ViewGroup;->addView(Landroid/view/View;)V
 
     goto :goto_1
 
+    .line 15
     :cond_7
     iget-object p1, p0, Lcom/applovin/impl/n9;->b:Landroid/app/Activity;
 
     iget-object p2, p0, Lcom/applovin/impl/n9;->d:Landroid/view/ViewGroup;
 
-    .line 15
     invoke-virtual {p1, p2}, Landroid/app/Activity;->setContentView(Landroid/view/View;)V
 
     :goto_1

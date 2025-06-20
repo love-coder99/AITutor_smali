@@ -28,7 +28,7 @@
     return-void
 .end method
 
-.method private final C(Landroidx/compose/foundation/text/t;Landroid/view/inputmethod/SelectGesture;Landroidx/compose/foundation/text/selection/a0;)V
+.method private final C(Landroidx/compose/foundation/text/s;Landroid/view/inputmethod/SelectGesture;Landroidx/compose/foundation/text/selection/x;)V
     .locals 3
 
     .line 1
@@ -36,7 +36,7 @@
 
     .line 2
     .line 3
-    invoke-static {p2}, Landroidx/compose/foundation/text/input/internal/j;->p(Landroid/view/inputmethod/SelectGesture;)Landroid/graphics/RectF;
+    invoke-static {p2}, Landroidx/compose/foundation/text/input/internal/i;->p(Landroid/view/inputmethod/SelectGesture;)Landroid/graphics/RectF;
 
     .line 4
     .line 5
@@ -44,7 +44,7 @@
     move-result-object v0
 
     .line 7
-    invoke-static {v0}, Landroidx/compose/ui/graphics/f0;->I(Landroid/graphics/RectF;)Ln1/e;
+    invoke-static {v0}, Landroidx/compose/ui/graphics/G;->I(Landroid/graphics/RectF;)Lr0/d;
 
     .line 8
     .line 9
@@ -52,7 +52,7 @@
     move-result-object v0
 
     .line 11
-    invoke-static {p2}, Landroidx/compose/foundation/text/input/internal/j;->d(Landroid/view/inputmethod/SelectGesture;)I
+    invoke-static {p2}, Landroidx/compose/foundation/text/input/internal/i;->d(Landroid/view/inputmethod/SelectGesture;)I
 
     .line 12
     .line 13
@@ -68,7 +68,7 @@
     move-result p2
 
     .line 19
-    invoke-static {p1, v0, p2}, Landroidx/compose/foundation/text/input/internal/p;->f(Landroidx/compose/foundation/text/t;Ln1/e;I)J
+    invoke-static {p1, v0, p2}, Landroidx/compose/foundation/text/input/internal/p;->f(Landroidx/compose/foundation/text/s;Lr0/d;I)J
 
     .line 20
     .line 21
@@ -76,7 +76,7 @@
     move-result-wide p1
 
     .line 23
-    iget-object v0, p3, Landroidx/compose/foundation/text/selection/a0;->d:Landroidx/compose/foundation/text/t;
+    iget-object v0, p3, Landroidx/compose/foundation/text/selection/x;->d:Landroidx/compose/foundation/text/s;
 
     .line 24
     .line 25
@@ -88,13 +88,13 @@
 
     .line 28
     :cond_0
-    invoke-virtual {v0, p1, p2}, Landroidx/compose/foundation/text/t;->g(J)V
+    invoke-virtual {v0, p1, p2}, Landroidx/compose/foundation/text/s;->f(J)V
 
     .line 29
     .line 30
     .line 31
     :goto_0
-    iget-object v0, p3, Landroidx/compose/foundation/text/selection/a0;->d:Landroidx/compose/foundation/text/t;
+    iget-object v0, p3, Landroidx/compose/foundation/text/selection/x;->d:Landroidx/compose/foundation/text/s;
 
     .line 32
     .line 33
@@ -106,17 +106,17 @@
 
     .line 36
     :cond_1
-    sget-wide v1, Landroidx/compose/ui/text/h0;->b:J
+    sget-wide v1, Landroidx/compose/ui/text/H;->b:J
 
     .line 37
     .line 38
-    invoke-virtual {v0, v1, v2}, Landroidx/compose/foundation/text/t;->f(J)V
+    invoke-virtual {v0, v1, v2}, Landroidx/compose/foundation/text/s;->e(J)V
 
     .line 39
     .line 40
     .line 41
     :goto_1
-    invoke-static {p1, p2}, Landroidx/compose/ui/text/h0;->b(J)Z
+    invoke-static {p1, p2}, Landroidx/compose/ui/text/H;->b(J)Z
 
     .line 42
     .line 43
@@ -131,7 +131,7 @@
     const/4 p1, 0x0
 
     .line 48
-    invoke-virtual {p3, p1}, Landroidx/compose/foundation/text/selection/a0;->u(Z)V
+    invoke-virtual {p3, p1}, Landroidx/compose/foundation/text/selection/x;->q(Z)V
 
     .line 49
     .line 50
@@ -140,7 +140,7 @@
 
     .line 52
     .line 53
-    invoke-virtual {p3, p1}, Landroidx/compose/foundation/text/selection/a0;->r(Landroidx/compose/foundation/text/HandleState;)V
+    invoke-virtual {p3, p1}, Landroidx/compose/foundation/text/selection/x;->o(Landroidx/compose/foundation/text/HandleState;)V
 
     .line 54
     .line 55
@@ -149,11 +149,11 @@
     return-void
 .end method
 
-.method private final D(Landroidx/compose/foundation/text/input/internal/z;Landroid/view/inputmethod/SelectGesture;Landroidx/compose/foundation/text/input/internal/y;)V
+.method private final D(Landroidx/compose/foundation/text/input/internal/y;Landroid/view/inputmethod/SelectGesture;Landroidx/compose/foundation/text/input/internal/x;)V
     .locals 0
 
     .line 1
-    invoke-static {p2}, Landroidx/compose/foundation/text/input/internal/j;->p(Landroid/view/inputmethod/SelectGesture;)Landroid/graphics/RectF;
+    invoke-static {p2}, Landroidx/compose/foundation/text/input/internal/i;->p(Landroid/view/inputmethod/SelectGesture;)Landroid/graphics/RectF;
 
     .line 2
     .line 3
@@ -161,12 +161,12 @@
     move-result-object p1
 
     .line 5
-    invoke-static {p1}, Landroidx/compose/ui/graphics/f0;->I(Landroid/graphics/RectF;)Ln1/e;
+    invoke-static {p1}, Landroidx/compose/ui/graphics/G;->I(Landroid/graphics/RectF;)Lr0/d;
 
     .line 6
     .line 7
     .line 8
-    invoke-static {p2}, Landroidx/compose/foundation/text/input/internal/j;->d(Landroid/view/inputmethod/SelectGesture;)I
+    invoke-static {p2}, Landroidx/compose/foundation/text/input/internal/i;->d(Landroid/view/inputmethod/SelectGesture;)I
 
     .line 9
     .line 10
@@ -185,7 +185,7 @@
     throw p1
 .end method
 
-.method private final E(Landroidx/compose/foundation/text/t;Landroid/view/inputmethod/SelectRangeGesture;Landroidx/compose/foundation/text/selection/a0;)V
+.method private final E(Landroidx/compose/foundation/text/s;Landroid/view/inputmethod/SelectRangeGesture;Landroidx/compose/foundation/text/selection/x;)V
     .locals 3
 
     .line 1
@@ -193,7 +193,7 @@
 
     .line 2
     .line 3
-    invoke-static {p2}, Landroidx/compose/foundation/text/input/internal/j;->q(Landroid/view/inputmethod/SelectRangeGesture;)Landroid/graphics/RectF;
+    invoke-static {p2}, LE0/a;->c(Landroid/view/inputmethod/SelectRangeGesture;)Landroid/graphics/RectF;
 
     .line 4
     .line 5
@@ -201,7 +201,7 @@
     move-result-object v0
 
     .line 7
-    invoke-static {v0}, Landroidx/compose/ui/graphics/f0;->I(Landroid/graphics/RectF;)Ln1/e;
+    invoke-static {v0}, Landroidx/compose/ui/graphics/G;->I(Landroid/graphics/RectF;)Lr0/d;
 
     .line 8
     .line 9
@@ -209,7 +209,7 @@
     move-result-object v0
 
     .line 11
-    invoke-static {p2}, Landroidx/compose/foundation/text/input/internal/j;->D(Landroid/view/inputmethod/SelectRangeGesture;)Landroid/graphics/RectF;
+    invoke-static {p2}, LE0/a;->s(Landroid/view/inputmethod/SelectRangeGesture;)Landroid/graphics/RectF;
 
     .line 12
     .line 13
@@ -217,7 +217,7 @@
     move-result-object v1
 
     .line 15
-    invoke-static {v1}, Landroidx/compose/ui/graphics/f0;->I(Landroid/graphics/RectF;)Ln1/e;
+    invoke-static {v1}, Landroidx/compose/ui/graphics/G;->I(Landroid/graphics/RectF;)Lr0/d;
 
     .line 16
     .line 17
@@ -225,7 +225,7 @@
     move-result-object v1
 
     .line 19
-    invoke-static {p2}, Landroidx/compose/foundation/text/input/internal/j;->e(Landroid/view/inputmethod/SelectRangeGesture;)I
+    invoke-static {p2}, Landroidx/compose/foundation/text/input/internal/i;->e(Landroid/view/inputmethod/SelectRangeGesture;)I
 
     .line 20
     .line 21
@@ -241,7 +241,7 @@
     move-result p2
 
     .line 27
-    invoke-static {p1, v0, v1, p2}, Landroidx/compose/foundation/text/input/internal/p;->a(Landroidx/compose/foundation/text/t;Ln1/e;Ln1/e;I)J
+    invoke-static {p1, v0, v1, p2}, Landroidx/compose/foundation/text/input/internal/p;->a(Landroidx/compose/foundation/text/s;Lr0/d;Lr0/d;I)J
 
     .line 28
     .line 29
@@ -249,7 +249,7 @@
     move-result-wide p1
 
     .line 31
-    iget-object v0, p3, Landroidx/compose/foundation/text/selection/a0;->d:Landroidx/compose/foundation/text/t;
+    iget-object v0, p3, Landroidx/compose/foundation/text/selection/x;->d:Landroidx/compose/foundation/text/s;
 
     .line 32
     .line 33
@@ -261,13 +261,13 @@
 
     .line 36
     :cond_0
-    invoke-virtual {v0, p1, p2}, Landroidx/compose/foundation/text/t;->g(J)V
+    invoke-virtual {v0, p1, p2}, Landroidx/compose/foundation/text/s;->f(J)V
 
     .line 37
     .line 38
     .line 39
     :goto_0
-    iget-object v0, p3, Landroidx/compose/foundation/text/selection/a0;->d:Landroidx/compose/foundation/text/t;
+    iget-object v0, p3, Landroidx/compose/foundation/text/selection/x;->d:Landroidx/compose/foundation/text/s;
 
     .line 40
     .line 41
@@ -279,17 +279,17 @@
 
     .line 44
     :cond_1
-    sget-wide v1, Landroidx/compose/ui/text/h0;->b:J
+    sget-wide v1, Landroidx/compose/ui/text/H;->b:J
 
     .line 45
     .line 46
-    invoke-virtual {v0, v1, v2}, Landroidx/compose/foundation/text/t;->f(J)V
+    invoke-virtual {v0, v1, v2}, Landroidx/compose/foundation/text/s;->e(J)V
 
     .line 47
     .line 48
     .line 49
     :goto_1
-    invoke-static {p1, p2}, Landroidx/compose/ui/text/h0;->b(J)Z
+    invoke-static {p1, p2}, Landroidx/compose/ui/text/H;->b(J)Z
 
     .line 50
     .line 51
@@ -304,7 +304,7 @@
     const/4 p1, 0x0
 
     .line 56
-    invoke-virtual {p3, p1}, Landroidx/compose/foundation/text/selection/a0;->u(Z)V
+    invoke-virtual {p3, p1}, Landroidx/compose/foundation/text/selection/x;->q(Z)V
 
     .line 57
     .line 58
@@ -313,7 +313,7 @@
 
     .line 60
     .line 61
-    invoke-virtual {p3, p1}, Landroidx/compose/foundation/text/selection/a0;->r(Landroidx/compose/foundation/text/HandleState;)V
+    invoke-virtual {p3, p1}, Landroidx/compose/foundation/text/selection/x;->o(Landroidx/compose/foundation/text/HandleState;)V
 
     .line 62
     .line 63
@@ -322,11 +322,11 @@
     return-void
 .end method
 
-.method private final F(Landroidx/compose/foundation/text/input/internal/z;Landroid/view/inputmethod/SelectRangeGesture;Landroidx/compose/foundation/text/input/internal/y;)V
+.method private final F(Landroidx/compose/foundation/text/input/internal/y;Landroid/view/inputmethod/SelectRangeGesture;Landroidx/compose/foundation/text/input/internal/x;)V
     .locals 0
 
     .line 1
-    invoke-static {p2}, Landroidx/compose/foundation/text/input/internal/j;->q(Landroid/view/inputmethod/SelectRangeGesture;)Landroid/graphics/RectF;
+    invoke-static {p2}, LE0/a;->c(Landroid/view/inputmethod/SelectRangeGesture;)Landroid/graphics/RectF;
 
     .line 2
     .line 3
@@ -334,12 +334,12 @@
     move-result-object p1
 
     .line 5
-    invoke-static {p1}, Landroidx/compose/ui/graphics/f0;->I(Landroid/graphics/RectF;)Ln1/e;
+    invoke-static {p1}, Landroidx/compose/ui/graphics/G;->I(Landroid/graphics/RectF;)Lr0/d;
 
     .line 6
     .line 7
     .line 8
-    invoke-static {p2}, Landroidx/compose/foundation/text/input/internal/j;->D(Landroid/view/inputmethod/SelectRangeGesture;)Landroid/graphics/RectF;
+    invoke-static {p2}, LE0/a;->s(Landroid/view/inputmethod/SelectRangeGesture;)Landroid/graphics/RectF;
 
     .line 9
     .line 10
@@ -347,12 +347,12 @@
     move-result-object p1
 
     .line 12
-    invoke-static {p1}, Landroidx/compose/ui/graphics/f0;->I(Landroid/graphics/RectF;)Ln1/e;
+    invoke-static {p1}, Landroidx/compose/ui/graphics/G;->I(Landroid/graphics/RectF;)Lr0/d;
 
     .line 13
     .line 14
     .line 15
-    invoke-static {p2}, Landroidx/compose/foundation/text/input/internal/j;->e(Landroid/view/inputmethod/SelectRangeGesture;)I
+    invoke-static {p2}, Landroidx/compose/foundation/text/input/internal/i;->e(Landroid/view/inputmethod/SelectRangeGesture;)I
 
     .line 16
     .line 17
@@ -385,7 +385,7 @@
     return v0
 .end method
 
-.method private final a(Landroidx/compose/foundation/text/input/internal/z;Landroid/view/inputmethod/HandwritingGesture;)I
+.method private final a(Landroidx/compose/foundation/text/input/internal/y;Landroid/view/inputmethod/HandwritingGesture;)I
     .locals 0
 
     .line 1
@@ -395,19 +395,19 @@
     throw p1
 .end method
 
-.method private final b(Landroid/view/inputmethod/HandwritingGesture;Lzh/c;)I
+.method private final b(Landroid/view/inputmethod/HandwritingGesture;Lka/c;)I
     .locals 2
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
             "Landroid/view/inputmethod/HandwritingGesture;",
-            "Lzh/c;",
+            "Lka/c;",
             ")I"
         }
     .end annotation
 
     .line 1
-    invoke-static {p1}, Landroidx/compose/foundation/text/input/internal/j;->t(Landroid/view/inputmethod/HandwritingGesture;)Ljava/lang/String;
+    invoke-static {p1}, Landroidx/compose/foundation/text/input/internal/i;->u(Landroid/view/inputmethod/HandwritingGesture;)Ljava/lang/String;
 
     .line 2
     .line 3
@@ -438,7 +438,7 @@
     .line 13
     .line 14
     .line 15
-    invoke-interface {p2, v0}, Lzh/c;->invoke(Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-interface {p2, v0}, Lka/c;->invoke(Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 16
     .line 17
@@ -449,21 +449,21 @@
     return p1
 .end method
 
-.method private final c(Landroidx/compose/foundation/text/t;Landroid/view/inputmethod/DeleteGesture;Landroidx/compose/ui/text/f;Lzh/c;)I
+.method private final c(Landroidx/compose/foundation/text/s;Landroid/view/inputmethod/DeleteGesture;Landroidx/compose/ui/text/g;Lka/c;)I
     .locals 8
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
-            "Landroidx/compose/foundation/text/t;",
+            "Landroidx/compose/foundation/text/s;",
             "Landroid/view/inputmethod/DeleteGesture;",
-            "Landroidx/compose/ui/text/f;",
-            "Lzh/c;",
+            "Landroidx/compose/ui/text/g;",
+            "Lka/c;",
             ")I"
         }
     .end annotation
 
     .line 1
-    invoke-static {p2}, Landroidx/camera/camera2/internal/compat/l;->a(Landroid/view/inputmethod/DeleteGesture;)I
+    invoke-static {p2}, LE0/a;->a(Landroid/view/inputmethod/DeleteGesture;)I
 
     .line 2
     .line 3
@@ -479,7 +479,7 @@
     move-result v0
 
     .line 9
-    invoke-static {p2}, Landroidx/camera/camera2/internal/compat/l;->d(Landroid/view/inputmethod/DeleteGesture;)Landroid/graphics/RectF;
+    invoke-static {p2}, LE0/a;->b(Landroid/view/inputmethod/DeleteGesture;)Landroid/graphics/RectF;
 
     .line 10
     .line 11
@@ -487,7 +487,7 @@
     move-result-object v1
 
     .line 13
-    invoke-static {v1}, Landroidx/compose/ui/graphics/f0;->I(Landroid/graphics/RectF;)Ln1/e;
+    invoke-static {v1}, Landroidx/compose/ui/graphics/G;->I(Landroid/graphics/RectF;)Lr0/d;
 
     .line 14
     .line 15
@@ -495,7 +495,7 @@
     move-result-object v1
 
     .line 17
-    invoke-static {p1, v1, v0}, Landroidx/compose/foundation/text/input/internal/p;->f(Landroidx/compose/foundation/text/t;Ln1/e;I)J
+    invoke-static {p1, v1, v0}, Landroidx/compose/foundation/text/input/internal/p;->f(Landroidx/compose/foundation/text/s;Lr0/d;I)J
 
     .line 18
     .line 19
@@ -503,7 +503,7 @@
     move-result-wide v3
 
     .line 21
-    invoke-static {v3, v4}, Landroidx/compose/ui/text/h0;->b(J)Z
+    invoke-static {v3, v4}, Landroidx/compose/ui/text/H;->b(J)Z
 
     .line 22
     .line 23
@@ -519,7 +519,7 @@
 
     .line 28
     .line 29
-    invoke-static {p2}, Landroidx/compose/foundation/text/input/internal/j;->r(Ljava/lang/Object;)Landroid/view/inputmethod/HandwritingGesture;
+    invoke-static {p2}, Landroidx/compose/foundation/text/input/internal/i;->q(Ljava/lang/Object;)Landroid/view/inputmethod/HandwritingGesture;
 
     .line 30
     .line 31
@@ -527,7 +527,7 @@
     move-result-object p2
 
     .line 33
-    invoke-direct {p1, p2, p4}, Landroidx/compose/foundation/text/input/internal/HandwritingGestureApi34;->b(Landroid/view/inputmethod/HandwritingGesture;Lzh/c;)I
+    invoke-direct {p1, p2, p4}, Landroidx/compose/foundation/text/input/internal/HandwritingGestureApi34;->b(Landroid/view/inputmethod/HandwritingGesture;Lka/c;)I
 
     .line 34
     .line 35
@@ -569,7 +569,7 @@
     move-object v7, p4
 
     .line 48
-    invoke-direct/range {v2 .. v7}, Landroidx/compose/foundation/text/input/internal/HandwritingGestureApi34;->h(JLandroidx/compose/ui/text/f;ZLzh/c;)V
+    invoke-direct/range {v2 .. v7}, Landroidx/compose/foundation/text/input/internal/HandwritingGestureApi34;->h(JLandroidx/compose/ui/text/g;ZLka/c;)V
 
     .line 49
     .line 50
@@ -577,11 +577,11 @@
     return p1
 .end method
 
-.method private final d(Landroidx/compose/foundation/text/input/internal/z;Landroid/view/inputmethod/DeleteGesture;Landroidx/compose/foundation/text/input/internal/y;)I
+.method private final d(Landroidx/compose/foundation/text/input/internal/y;Landroid/view/inputmethod/DeleteGesture;Landroidx/compose/foundation/text/input/internal/x;)I
     .locals 0
 
     .line 1
-    invoke-static {p2}, Landroidx/camera/camera2/internal/compat/l;->a(Landroid/view/inputmethod/DeleteGesture;)I
+    invoke-static {p2}, LE0/a;->a(Landroid/view/inputmethod/DeleteGesture;)I
 
     .line 2
     .line 3
@@ -594,7 +594,7 @@
     .line 6
     .line 7
     .line 8
-    invoke-static {p2}, Landroidx/camera/camera2/internal/compat/l;->d(Landroid/view/inputmethod/DeleteGesture;)Landroid/graphics/RectF;
+    invoke-static {p2}, LE0/a;->b(Landroid/view/inputmethod/DeleteGesture;)Landroid/graphics/RectF;
 
     .line 9
     .line 10
@@ -602,7 +602,7 @@
     move-result-object p1
 
     .line 12
-    invoke-static {p1}, Landroidx/compose/ui/graphics/f0;->I(Landroid/graphics/RectF;)Ln1/e;
+    invoke-static {p1}, Landroidx/compose/ui/graphics/G;->I(Landroid/graphics/RectF;)Lr0/d;
 
     .line 13
     .line 14
@@ -613,21 +613,21 @@
     throw p1
 .end method
 
-.method private final e(Landroidx/compose/foundation/text/t;Landroid/view/inputmethod/DeleteRangeGesture;Landroidx/compose/ui/text/f;Lzh/c;)I
+.method private final e(Landroidx/compose/foundation/text/s;Landroid/view/inputmethod/DeleteRangeGesture;Landroidx/compose/ui/text/g;Lka/c;)I
     .locals 9
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
-            "Landroidx/compose/foundation/text/t;",
+            "Landroidx/compose/foundation/text/s;",
             "Landroid/view/inputmethod/DeleteRangeGesture;",
-            "Landroidx/compose/ui/text/f;",
-            "Lzh/c;",
+            "Landroidx/compose/ui/text/g;",
+            "Lka/c;",
             ")I"
         }
     .end annotation
 
     .line 1
-    invoke-static {p2}, Landroidx/compose/foundation/text/input/internal/j;->c(Landroid/view/inputmethod/DeleteRangeGesture;)I
+    invoke-static {p2}, Landroidx/compose/foundation/text/input/internal/i;->c(Landroid/view/inputmethod/DeleteRangeGesture;)I
 
     .line 2
     .line 3
@@ -643,7 +643,7 @@
     move-result v0
 
     .line 9
-    invoke-static {p2}, Landroidx/camera/camera2/internal/compat/l;->e(Landroid/view/inputmethod/DeleteRangeGesture;)Landroid/graphics/RectF;
+    invoke-static {p2}, Landroidx/compose/foundation/text/input/internal/i;->o(Landroid/view/inputmethod/DeleteRangeGesture;)Landroid/graphics/RectF;
 
     .line 10
     .line 11
@@ -651,7 +651,7 @@
     move-result-object v1
 
     .line 13
-    invoke-static {v1}, Landroidx/compose/ui/graphics/f0;->I(Landroid/graphics/RectF;)Ln1/e;
+    invoke-static {v1}, Landroidx/compose/ui/graphics/G;->I(Landroid/graphics/RectF;)Lr0/d;
 
     .line 14
     .line 15
@@ -659,7 +659,7 @@
     move-result-object v1
 
     .line 17
-    invoke-static {p2}, Landroidx/compose/foundation/text/input/internal/j;->o(Landroid/view/inputmethod/DeleteRangeGesture;)Landroid/graphics/RectF;
+    invoke-static {p2}, Landroidx/compose/foundation/text/input/internal/i;->D(Landroid/view/inputmethod/DeleteRangeGesture;)Landroid/graphics/RectF;
 
     .line 18
     .line 19
@@ -667,7 +667,7 @@
     move-result-object v2
 
     .line 21
-    invoke-static {v2}, Landroidx/compose/ui/graphics/f0;->I(Landroid/graphics/RectF;)Ln1/e;
+    invoke-static {v2}, Landroidx/compose/ui/graphics/G;->I(Landroid/graphics/RectF;)Lr0/d;
 
     .line 22
     .line 23
@@ -675,7 +675,7 @@
     move-result-object v2
 
     .line 25
-    invoke-static {p1, v1, v2, v0}, Landroidx/compose/foundation/text/input/internal/p;->a(Landroidx/compose/foundation/text/t;Ln1/e;Ln1/e;I)J
+    invoke-static {p1, v1, v2, v0}, Landroidx/compose/foundation/text/input/internal/p;->a(Landroidx/compose/foundation/text/s;Lr0/d;Lr0/d;I)J
 
     .line 26
     .line 27
@@ -683,7 +683,7 @@
     move-result-wide v4
 
     .line 29
-    invoke-static {v4, v5}, Landroidx/compose/ui/text/h0;->b(J)Z
+    invoke-static {v4, v5}, Landroidx/compose/ui/text/H;->b(J)Z
 
     .line 30
     .line 31
@@ -699,7 +699,7 @@
 
     .line 36
     .line 37
-    invoke-static {p2}, Landroidx/compose/foundation/text/input/internal/j;->r(Ljava/lang/Object;)Landroid/view/inputmethod/HandwritingGesture;
+    invoke-static {p2}, Landroidx/compose/foundation/text/input/internal/i;->q(Ljava/lang/Object;)Landroid/view/inputmethod/HandwritingGesture;
 
     .line 38
     .line 39
@@ -707,7 +707,7 @@
     move-result-object p2
 
     .line 41
-    invoke-direct {p1, p2, p4}, Landroidx/compose/foundation/text/input/internal/HandwritingGestureApi34;->b(Landroid/view/inputmethod/HandwritingGesture;Lzh/c;)I
+    invoke-direct {p1, p2, p4}, Landroidx/compose/foundation/text/input/internal/HandwritingGestureApi34;->b(Landroid/view/inputmethod/HandwritingGesture;Lka/c;)I
 
     .line 42
     .line 43
@@ -749,7 +749,7 @@
     move-object v8, p4
 
     .line 56
-    invoke-direct/range {v3 .. v8}, Landroidx/compose/foundation/text/input/internal/HandwritingGestureApi34;->h(JLandroidx/compose/ui/text/f;ZLzh/c;)V
+    invoke-direct/range {v3 .. v8}, Landroidx/compose/foundation/text/input/internal/HandwritingGestureApi34;->h(JLandroidx/compose/ui/text/g;ZLka/c;)V
 
     .line 57
     .line 58
@@ -757,11 +757,11 @@
     return p1
 .end method
 
-.method private final f(Landroidx/compose/foundation/text/input/internal/z;Landroid/view/inputmethod/DeleteRangeGesture;Landroidx/compose/foundation/text/input/internal/y;)I
+.method private final f(Landroidx/compose/foundation/text/input/internal/y;Landroid/view/inputmethod/DeleteRangeGesture;Landroidx/compose/foundation/text/input/internal/x;)I
     .locals 0
 
     .line 1
-    invoke-static {p2}, Landroidx/compose/foundation/text/input/internal/j;->c(Landroid/view/inputmethod/DeleteRangeGesture;)I
+    invoke-static {p2}, Landroidx/compose/foundation/text/input/internal/i;->c(Landroid/view/inputmethod/DeleteRangeGesture;)I
 
     .line 2
     .line 3
@@ -774,7 +774,7 @@
     .line 6
     .line 7
     .line 8
-    invoke-static {p2}, Landroidx/camera/camera2/internal/compat/l;->e(Landroid/view/inputmethod/DeleteRangeGesture;)Landroid/graphics/RectF;
+    invoke-static {p2}, Landroidx/compose/foundation/text/input/internal/i;->o(Landroid/view/inputmethod/DeleteRangeGesture;)Landroid/graphics/RectF;
 
     .line 9
     .line 10
@@ -782,12 +782,12 @@
     move-result-object p1
 
     .line 12
-    invoke-static {p1}, Landroidx/compose/ui/graphics/f0;->I(Landroid/graphics/RectF;)Ln1/e;
+    invoke-static {p1}, Landroidx/compose/ui/graphics/G;->I(Landroid/graphics/RectF;)Lr0/d;
 
     .line 13
     .line 14
     .line 15
-    invoke-static {p2}, Landroidx/compose/foundation/text/input/internal/j;->o(Landroid/view/inputmethod/DeleteRangeGesture;)Landroid/graphics/RectF;
+    invoke-static {p2}, Landroidx/compose/foundation/text/input/internal/i;->D(Landroid/view/inputmethod/DeleteRangeGesture;)Landroid/graphics/RectF;
 
     .line 16
     .line 17
@@ -795,7 +795,7 @@
     move-result-object p1
 
     .line 19
-    invoke-static {p1}, Landroidx/compose/ui/graphics/f0;->I(Landroid/graphics/RectF;)Ln1/e;
+    invoke-static {p1}, Landroidx/compose/ui/graphics/G;->I(Landroid/graphics/RectF;)Lr0/d;
 
     .line 20
     .line 21
@@ -806,7 +806,7 @@
     throw p1
 .end method
 
-.method private final g(Landroidx/compose/foundation/text/input/internal/z;JZ)V
+.method private final g(Landroidx/compose/foundation/text/input/internal/y;JZ)V
     .locals 0
 
     .line 1
@@ -824,353 +824,361 @@
     throw p1
 .end method
 
-.method private final h(JLandroidx/compose/ui/text/f;ZLzh/c;)V
-    .locals 6
+.method private final h(JLandroidx/compose/ui/text/g;ZLka/c;)V
+    .locals 7
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(J",
-            "Landroidx/compose/ui/text/f;",
+            "Landroidx/compose/ui/text/g;",
             "Z",
-            "Lzh/c;",
+            "Lka/c;",
             ")V"
         }
     .end annotation
 
     .line 1
-    const-wide v0, 0xffffffffL
+    const/4 v0, 0x0
 
     .line 2
+    const-wide v1, 0xffffffffL
+
     .line 3
     .line 4
     .line 5
     .line 6
+    .line 7
     if-eqz p4, :cond_7
 
-    .line 7
     .line 8
-    sget p4, Landroidx/compose/ui/text/h0;->c:I
-
     .line 9
+    sget p4, Landroidx/compose/ui/text/H;->c:I
+
     .line 10
+    .line 11
     const/16 p4, 0x20
 
-    .line 11
     .line 12
-    shr-long v2, p1, p4
-
     .line 13
-    .line 14
-    long-to-int p4, v2
+    shr-long v3, p1, p4
 
+    .line 14
     .line 15
-    and-long v2, p1, v0
+    long-to-int p4, v3
 
     .line 16
-    .line 17
-    long-to-int v3, v2
+    and-long v3, p1, v1
 
+    .line 17
     .line 18
-    const/16 v2, 0xa
+    long-to-int v4, v3
 
     .line 19
+    const/16 v3, 0xa
+
     .line 20
+    .line 21
     if-lez p4, :cond_0
 
-    .line 21
     .line 22
+    .line 23
     invoke-static {p3, p4}, Ljava/lang/Character;->codePointBefore(Ljava/lang/CharSequence;I)I
 
-    .line 23
     .line 24
     .line 25
-    move-result v4
-
     .line 26
-    goto :goto_0
+    move-result v5
 
     .line 27
-    :cond_0
-    const/16 v4, 0xa
+    goto :goto_0
 
     .line 28
-    .line 29
-    :goto_0
-    invoke-virtual {p3}, Landroidx/compose/ui/text/f;->length()I
+    :cond_0
+    const/16 v5, 0xa
 
+    .line 29
     .line 30
+    :goto_0
+    iget-object v6, p3, Landroidx/compose/ui/text/g;->b:Ljava/lang/String;
+
     .line 31
     .line 32
-    move-result v5
+    invoke-virtual {v6}, Ljava/lang/String;->length()I
 
     .line 33
-    if-ge v3, v5, :cond_1
-
     .line 34
     .line 35
-    invoke-static {p3, v3}, Ljava/lang/Character;->codePointAt(Ljava/lang/CharSequence;I)I
+    move-result v6
 
     .line 36
+    if-ge v4, v6, :cond_1
+
     .line 37
     .line 38
-    move-result v2
+    invoke-static {p3, v4}, Ljava/lang/Character;->codePointAt(Ljava/lang/CharSequence;I)I
 
     .line 39
-    :cond_1
-    invoke-static {v4}, Landroidx/compose/foundation/text/input/internal/p;->i(I)Z
-
     .line 40
     .line 41
+    move-result v3
+
     .line 42
-    move-result v5
+    :cond_1
+    invoke-static {v5}, Landroidx/compose/foundation/text/input/internal/p;->i(I)Z
 
     .line 43
-    if-eqz v5, :cond_4
-
     .line 44
     .line 45
-    invoke-static {v2}, Landroidx/compose/foundation/text/input/internal/p;->h(I)Z
+    move-result v6
 
     .line 46
+    if-eqz v6, :cond_4
+
     .line 47
     .line 48
-    move-result v5
+    invoke-static {v3}, Landroidx/compose/foundation/text/input/internal/p;->h(I)Z
 
     .line 49
-    if-nez v5, :cond_2
-
     .line 50
     .line 51
-    invoke-static {v2}, Landroidx/compose/foundation/text/input/internal/p;->g(I)Z
+    move-result v6
 
     .line 52
+    if-nez v6, :cond_2
+
     .line 53
     .line 54
-    move-result v5
+    invoke-static {v3}, Landroidx/compose/foundation/text/input/internal/p;->g(I)Z
 
     .line 55
-    if-eqz v5, :cond_4
-
     .line 56
     .line 57
-    :cond_2
-    invoke-static {v4}, Ljava/lang/Character;->charCount(I)I
+    move-result v6
 
     .line 58
+    if-eqz v6, :cond_4
+
     .line 59
     .line 60
-    move-result p1
+    :cond_2
+    invoke-static {v5}, Ljava/lang/Character;->charCount(I)I
 
     .line 61
+    .line 62
+    .line 63
+    move-result p1
+
+    .line 64
     sub-int/2addr p4, p1
 
-    .line 62
+    .line 65
     if-eqz p4, :cond_3
 
-    .line 63
-    .line 64
-    invoke-static {p3, p4}, Ljava/lang/Character;->codePointBefore(Ljava/lang/CharSequence;I)I
-
-    .line 65
     .line 66
     .line 67
-    move-result v4
+    invoke-static {p3, p4}, Ljava/lang/Character;->codePointBefore(Ljava/lang/CharSequence;I)I
 
     .line 68
-    invoke-static {v4}, Landroidx/compose/foundation/text/input/internal/p;->i(I)Z
-
     .line 69
     .line 70
+    move-result v5
+
     .line 71
-    move-result p1
+    invoke-static {v5}, Landroidx/compose/foundation/text/input/internal/p;->i(I)Z
 
     .line 72
-    if-nez p1, :cond_2
-
     .line 73
     .line 74
-    :cond_3
-    invoke-static {p4, v3}, Lh5/f;->a(II)J
+    move-result p1
 
     .line 75
+    if-nez p1, :cond_2
+
     .line 76
     .line 77
-    move-result-wide p1
+    :cond_3
+    invoke-static {p4, v4}, Landroidx/compose/ui/text/K;->b(II)J
 
     .line 78
-    goto :goto_1
-
     .line 79
-    :cond_4
-    invoke-static {v2}, Landroidx/compose/foundation/text/input/internal/p;->i(I)Z
-
     .line 80
-    .line 81
-    .line 82
-    move-result v5
-
-    .line 83
-    if-eqz v5, :cond_7
-
-    .line 84
-    .line 85
-    invoke-static {v4}, Landroidx/compose/foundation/text/input/internal/p;->h(I)Z
-
-    .line 86
-    .line 87
-    .line 88
-    move-result v5
-
-    .line 89
-    if-nez v5, :cond_5
-
-    .line 90
-    .line 91
-    invoke-static {v4}, Landroidx/compose/foundation/text/input/internal/p;->g(I)Z
-
-    .line 92
-    .line 93
-    .line 94
-    move-result v4
-
-    .line 95
-    if-eqz v4, :cond_7
-
-    .line 96
-    .line 97
-    :cond_5
-    invoke-static {v2}, Ljava/lang/Character;->charCount(I)I
-
-    .line 98
-    .line 99
-    .line 100
-    move-result p1
-
-    .line 101
-    add-int/2addr v3, p1
-
-    .line 102
-    invoke-virtual {p3}, Landroidx/compose/ui/text/f;->length()I
-
-    .line 103
-    .line 104
-    .line 105
-    move-result p1
-
-    .line 106
-    if-eq v3, p1, :cond_6
-
-    .line 107
-    .line 108
-    invoke-static {p3, v3}, Ljava/lang/Character;->codePointAt(Ljava/lang/CharSequence;I)I
-
-    .line 109
-    .line 110
-    .line 111
-    move-result v2
-
-    .line 112
-    invoke-static {v2}, Landroidx/compose/foundation/text/input/internal/p;->i(I)Z
-
-    .line 113
-    .line 114
-    .line 115
-    move-result p1
-
-    .line 116
-    if-nez p1, :cond_5
-
-    .line 117
-    .line 118
-    :cond_6
-    invoke-static {p4, v3}, Lh5/f;->a(II)J
-
-    .line 119
-    .line 120
-    .line 121
     move-result-wide p1
 
-    .line 122
-    :cond_7
-    :goto_1
-    const/4 p3, 0x2
+    .line 81
+    goto :goto_1
 
+    .line 82
+    :cond_4
+    invoke-static {v3}, Landroidx/compose/foundation/text/input/internal/p;->i(I)Z
+
+    .line 83
+    .line 84
+    .line 85
+    move-result v6
+
+    .line 86
+    if-eqz v6, :cond_7
+
+    .line 87
+    .line 88
+    invoke-static {v5}, Landroidx/compose/foundation/text/input/internal/p;->h(I)Z
+
+    .line 89
+    .line 90
+    .line 91
+    move-result v6
+
+    .line 92
+    if-nez v6, :cond_5
+
+    .line 93
+    .line 94
+    invoke-static {v5}, Landroidx/compose/foundation/text/input/internal/p;->g(I)Z
+
+    .line 95
+    .line 96
+    .line 97
+    move-result v5
+
+    .line 98
+    if-eqz v5, :cond_7
+
+    .line 99
+    .line 100
+    :cond_5
+    invoke-static {v3}, Ljava/lang/Character;->charCount(I)I
+
+    .line 101
+    .line 102
+    .line 103
+    move-result p1
+
+    .line 104
+    add-int/2addr v4, p1
+
+    .line 105
+    iget-object p1, p3, Landroidx/compose/ui/text/g;->b:Ljava/lang/String;
+
+    .line 106
+    .line 107
+    invoke-virtual {p1}, Ljava/lang/String;->length()I
+
+    .line 108
+    .line 109
+    .line 110
+    move-result p1
+
+    .line 111
+    if-eq v4, p1, :cond_6
+
+    .line 112
+    .line 113
+    invoke-static {p3, v4}, Ljava/lang/Character;->codePointAt(Ljava/lang/CharSequence;I)I
+
+    .line 114
+    .line 115
+    .line 116
+    move-result v3
+
+    .line 117
+    invoke-static {v3}, Landroidx/compose/foundation/text/input/internal/p;->i(I)Z
+
+    .line 118
+    .line 119
+    .line 120
+    move-result p1
+
+    .line 121
+    if-nez p1, :cond_5
+
+    .line 122
     .line 123
-    new-array p3, p3, [Landroidx/compose/ui/text/input/h;
+    :cond_6
+    invoke-static {p4, v4}, Landroidx/compose/ui/text/K;->b(II)J
 
     .line 124
     .line 125
-    new-instance p4, Landroidx/compose/ui/text/input/g0;
-
     .line 126
+    move-result-wide p1
+
     .line 127
-    and-long/2addr v0, p1
+    :cond_7
+    :goto_1
+    new-instance p3, Landroidx/compose/ui/text/input/B;
 
     .line 128
-    long-to-int v1, v0
-
     .line 129
-    invoke-direct {p4, v1, v1}, Landroidx/compose/ui/text/input/g0;-><init>(II)V
+    and-long/2addr v1, p1
 
     .line 130
+    long-to-int p4, v1
+
     .line 131
+    invoke-direct {p3, p4, p4}, Landroidx/compose/ui/text/input/B;-><init>(II)V
+
     .line 132
-    const/4 v0, 0x0
-
     .line 133
-    aput-object p4, p3, v0
-
     .line 134
-    .line 135
-    invoke-static {p1, p2}, Landroidx/compose/ui/text/h0;->c(J)I
+    invoke-static {p1, p2}, Landroidx/compose/ui/text/H;->c(J)I
 
+    .line 135
     .line 136
     .line 137
-    .line 138
     move-result p1
 
-    .line 139
+    .line 138
     new-instance p2, Landroidx/compose/ui/text/input/f;
 
+    .line 139
     .line 140
-    .line 141
     invoke-direct {p2, p1, v0}, Landroidx/compose/ui/text/input/f;-><init>(II)V
 
+    .line 141
     .line 142
     .line 143
+    const/4 p1, 0x2
+
     .line 144
-    const/4 p1, 0x1
+    new-array p1, p1, [Landroidx/compose/ui/text/input/h;
 
     .line 145
-    aput-object p2, p3, p1
-
     .line 146
-    .line 147
-    new-instance p1, Landroidx/compose/foundation/text/input/internal/l;
+    aput-object p3, p1, v0
 
+    .line 147
     .line 148
+    const/4 p3, 0x1
+
     .line 149
-    invoke-direct {p1, p3}, Landroidx/compose/foundation/text/input/internal/l;-><init>([Landroidx/compose/ui/text/input/h;)V
+    aput-object p2, p1, p3
 
     .line 150
     .line 151
-    .line 152
-    invoke-interface {p5, p1}, Lzh/c;->invoke(Ljava/lang/Object;)Ljava/lang/Object;
+    new-instance p2, Landroidx/compose/foundation/text/input/internal/l;
 
+    .line 152
     .line 153
+    invoke-direct {p2, p1}, Landroidx/compose/foundation/text/input/internal/l;-><init>([Landroidx/compose/ui/text/input/h;)V
+
     .line 154
     .line 155
+    .line 156
+    invoke-interface {p5, p2}, Lka/c;->invoke(Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 157
+    .line 158
+    .line 159
     return-void
 .end method
 
-.method private final k(Landroidx/compose/foundation/text/t;Landroid/view/inputmethod/InsertGesture;Landroidx/compose/ui/platform/x2;Lzh/c;)I
+.method private final k(Landroidx/compose/foundation/text/s;Landroid/view/inputmethod/InsertGesture;Landroidx/compose/ui/platform/M0;Lka/c;)I
     .locals 6
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
-            "Landroidx/compose/foundation/text/t;",
+            "Landroidx/compose/foundation/text/s;",
             "Landroid/view/inputmethod/InsertGesture;",
-            "Landroidx/compose/ui/platform/x2;",
-            "Lzh/c;",
+            "Landroidx/compose/ui/platform/M0;",
+            "Lka/c;",
             ")I"
         }
     .end annotation
@@ -1180,7 +1188,7 @@
 
     .line 2
     .line 3
-    invoke-static {p2}, Landroidx/compose/foundation/text/input/internal/j;->r(Ljava/lang/Object;)Landroid/view/inputmethod/HandwritingGesture;
+    invoke-static {p2}, Landroidx/compose/foundation/text/input/internal/i;->q(Ljava/lang/Object;)Landroid/view/inputmethod/HandwritingGesture;
 
     .line 4
     .line 5
@@ -1188,7 +1196,7 @@
     move-result-object p1
 
     .line 7
-    invoke-direct {p0, p1, p4}, Landroidx/compose/foundation/text/input/internal/HandwritingGestureApi34;->b(Landroid/view/inputmethod/HandwritingGesture;Lzh/c;)I
+    invoke-direct {p0, p1, p4}, Landroidx/compose/foundation/text/input/internal/HandwritingGestureApi34;->b(Landroid/view/inputmethod/HandwritingGesture;Lka/c;)I
 
     .line 8
     .line 9
@@ -1200,7 +1208,7 @@
 
     .line 12
     :cond_0
-    invoke-static {p2}, Landroidx/camera/camera2/internal/compat/l;->b(Landroid/view/inputmethod/InsertGesture;)Landroid/graphics/PointF;
+    invoke-static {p2}, Landroidx/compose/foundation/text/input/internal/i;->l(Landroid/view/inputmethod/InsertGesture;)Landroid/graphics/PointF;
 
     .line 13
     .line 14
@@ -1216,7 +1224,7 @@
 
     .line 19
     .line 20
-    invoke-static {v1, v0}, La0/r;->b(FF)J
+    invoke-static {v1, v0}, Lcom/bumptech/glide/c;->b(FF)J
 
     .line 21
     .line 22
@@ -1224,7 +1232,7 @@
     move-result-wide v0
 
     .line 24
-    invoke-virtual {p1}, Landroidx/compose/foundation/text/t;->d()Landroidx/compose/foundation/text/i0;
+    invoke-virtual {p1}, Landroidx/compose/foundation/text/s;->d()Landroidx/compose/foundation/text/J;
 
     .line 25
     .line 26
@@ -1242,7 +1250,7 @@
 
     .line 31
     .line 32
-    iget-object v2, v2, Landroidx/compose/foundation/text/i0;->a:Landroidx/compose/ui/text/f0;
+    iget-object v2, v2, Landroidx/compose/foundation/text/J;->a:Landroidx/compose/ui/text/F;
 
     .line 33
     .line 34
@@ -1250,183 +1258,179 @@
 
     .line 35
     .line 36
-    iget-object v2, v2, Landroidx/compose/ui/text/f0;->b:Landroidx/compose/ui/text/l;
+    iget-object v2, v2, Landroidx/compose/ui/text/F;->b:Landroidx/compose/ui/text/m;
 
     .line 37
     .line 38
-    if-eqz v2, :cond_2
+    invoke-virtual {p1}, Landroidx/compose/foundation/text/s;->c()Landroidx/compose/ui/layout/p;
 
     .line 39
     .line 40
-    invoke-virtual {p1}, Landroidx/compose/foundation/text/t;->c()Landroidx/compose/ui/layout/s;
-
     .line 41
-    .line 42
-    .line 43
     move-result-object v5
 
-    .line 44
+    .line 42
     if-eqz v5, :cond_2
+
+    .line 43
+    .line 44
+    invoke-interface {v5, v0, v1}, Landroidx/compose/ui/layout/p;->B(J)J
 
     .line 45
     .line 46
-    invoke-interface {v5, v0, v1}, Landroidx/compose/ui/layout/s;->J(J)J
-
     .line 47
-    .line 48
-    .line 49
     move-result-wide v0
 
-    .line 50
-    invoke-static {v2, v0, v1, p3}, Landroidx/compose/foundation/text/input/internal/p;->e(Landroidx/compose/ui/text/l;JLandroidx/compose/ui/platform/x2;)I
+    .line 48
+    invoke-static {v2, v0, v1, p3}, Landroidx/compose/foundation/text/input/internal/p;->e(Landroidx/compose/ui/text/m;JLandroidx/compose/ui/platform/M0;)I
 
+    .line 49
+    .line 50
     .line 51
-    .line 52
-    .line 53
     move-result p3
 
-    .line 54
+    .line 52
     if-ne p3, v4, :cond_1
 
-    .line 55
-    .line 56
+    .line 53
+    .line 54
     goto :goto_0
 
-    .line 57
+    .line 55
     :cond_1
-    invoke-virtual {v2, p3}, Landroidx/compose/ui/text/l;->d(I)F
+    invoke-virtual {v2, p3}, Landroidx/compose/ui/text/m;->d(I)F
 
+    .line 56
+    .line 57
     .line 58
-    .line 59
-    .line 60
     move-result v5
 
-    .line 61
-    invoke-virtual {v2, p3}, Landroidx/compose/ui/text/l;->b(I)F
+    .line 59
+    invoke-virtual {v2, p3}, Landroidx/compose/ui/text/m;->b(I)F
 
+    .line 60
+    .line 61
     .line 62
-    .line 63
-    .line 64
     move-result p3
 
-    .line 65
+    .line 63
     add-float/2addr p3, v5
 
-    .line 66
+    .line 64
     const/high16 v5, 0x40000000    # 2.0f
 
-    .line 67
-    .line 68
+    .line 65
+    .line 66
     div-float/2addr p3, v5
 
-    .line 69
-    invoke-static {v0, v1, p3, v3}, Ln1/c;->a(JFI)J
+    .line 67
+    invoke-static {v0, v1, v3, p3}, Lr0/c;->a(JIF)J
 
+    .line 68
+    .line 69
     .line 70
-    .line 71
-    .line 72
     move-result-wide v0
 
-    .line 73
-    invoke-virtual {v2, v0, v1}, Landroidx/compose/ui/text/l;->e(J)I
+    .line 71
+    invoke-virtual {v2, v0, v1}, Landroidx/compose/ui/text/m;->e(J)I
 
+    .line 72
+    .line 73
     .line 74
-    .line 75
-    .line 76
     move-result p3
 
-    .line 77
+    .line 75
     goto :goto_1
 
-    .line 78
+    .line 76
     :cond_2
     :goto_0
     const/4 p3, -0x1
 
-    .line 79
+    .line 77
     :goto_1
     if-eq p3, v4, :cond_4
 
+    .line 78
+    .line 79
+    invoke-virtual {p1}, Landroidx/compose/foundation/text/s;->d()Landroidx/compose/foundation/text/J;
+
     .line 80
     .line 81
-    invoke-virtual {p1}, Landroidx/compose/foundation/text/t;->d()Landroidx/compose/foundation/text/i0;
-
     .line 82
-    .line 83
-    .line 84
     move-result-object p1
 
-    .line 85
+    .line 83
     if-eqz p1, :cond_3
+
+    .line 84
+    .line 85
+    iget-object p1, p1, Landroidx/compose/foundation/text/J;->a:Landroidx/compose/ui/text/F;
 
     .line 86
     .line 87
-    iget-object p1, p1, Landroidx/compose/foundation/text/i0;->a:Landroidx/compose/ui/text/f0;
+    if-eqz p1, :cond_3
 
     .line 88
     .line 89
-    if-eqz p1, :cond_3
+    invoke-static {p1, p3}, Landroidx/compose/foundation/text/input/internal/p;->b(Landroidx/compose/ui/text/F;I)Z
 
     .line 90
     .line 91
-    invoke-static {p1, p3}, Landroidx/compose/foundation/text/input/internal/p;->b(Landroidx/compose/ui/text/f0;I)Z
-
     .line 92
-    .line 93
-    .line 94
     move-result p1
 
-    .line 95
+    .line 93
     if-ne p1, v3, :cond_3
 
-    .line 96
-    .line 97
+    .line 94
+    .line 95
     goto :goto_2
 
-    .line 98
+    .line 96
     :cond_3
-    invoke-static {p2}, Landroidx/compose/foundation/text/input/internal/j;->u(Landroid/view/inputmethod/InsertGesture;)Ljava/lang/String;
+    invoke-static {p2}, Landroidx/compose/foundation/text/input/internal/i;->v(Landroid/view/inputmethod/InsertGesture;)Ljava/lang/String;
 
+    .line 97
+    .line 98
     .line 99
-    .line 100
-    .line 101
     move-result-object p1
 
-    .line 102
-    invoke-direct {p0, p3, p1, p4}, Landroidx/compose/foundation/text/input/internal/HandwritingGestureApi34;->m(ILjava/lang/String;Lzh/c;)V
+    .line 100
+    invoke-direct {p0, p3, p1, p4}, Landroidx/compose/foundation/text/input/internal/HandwritingGestureApi34;->m(ILjava/lang/String;Lka/c;)V
 
+    .line 101
+    .line 102
     .line 103
-    .line 104
-    .line 105
     return v3
 
-    .line 106
+    .line 104
     :cond_4
     :goto_2
-    invoke-static {p2}, Landroidx/compose/foundation/text/input/internal/j;->r(Ljava/lang/Object;)Landroid/view/inputmethod/HandwritingGesture;
+    invoke-static {p2}, Landroidx/compose/foundation/text/input/internal/i;->q(Ljava/lang/Object;)Landroid/view/inputmethod/HandwritingGesture;
 
+    .line 105
+    .line 106
     .line 107
-    .line 108
-    .line 109
     move-result-object p1
 
-    .line 110
-    invoke-direct {p0, p1, p4}, Landroidx/compose/foundation/text/input/internal/HandwritingGestureApi34;->b(Landroid/view/inputmethod/HandwritingGesture;Lzh/c;)I
+    .line 108
+    invoke-direct {p0, p1, p4}, Landroidx/compose/foundation/text/input/internal/HandwritingGestureApi34;->b(Landroid/view/inputmethod/HandwritingGesture;Lka/c;)I
 
+    .line 109
+    .line 110
     .line 111
-    .line 112
-    .line 113
     move-result p1
 
-    .line 114
+    .line 112
     return p1
 .end method
 
-.method private final l(Landroidx/compose/foundation/text/input/internal/z;Landroid/view/inputmethod/InsertGesture;Landroidx/compose/foundation/text/input/internal/y;Landroidx/compose/ui/platform/x2;)I
+.method private final l(Landroidx/compose/foundation/text/input/internal/y;Landroid/view/inputmethod/InsertGesture;Landroidx/compose/foundation/text/input/internal/x;Landroidx/compose/ui/platform/M0;)I
     .locals 0
 
     .line 1
-    invoke-static {p2}, Landroidx/camera/camera2/internal/compat/l;->b(Landroid/view/inputmethod/InsertGesture;)Landroid/graphics/PointF;
+    invoke-static {p2}, Landroidx/compose/foundation/text/input/internal/i;->l(Landroid/view/inputmethod/InsertGesture;)Landroid/graphics/PointF;
 
     .line 2
     .line 3
@@ -1442,7 +1446,7 @@
 
     .line 8
     .line 9
-    invoke-static {p2, p1}, La0/r;->b(FF)J
+    invoke-static {p2, p1}, Lcom/bumptech/glide/c;->b(FF)J
 
     .line 10
     .line 11
@@ -1453,54 +1457,54 @@
     throw p1
 .end method
 
-.method private final m(ILjava/lang/String;Lzh/c;)V
-    .locals 2
+.method private final m(ILjava/lang/String;Lka/c;)V
+    .locals 3
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(I",
             "Ljava/lang/String;",
-            "Lzh/c;",
+            "Lka/c;",
             ")V"
         }
     .end annotation
 
     .line 1
-    const/4 v0, 0x2
+    new-instance v0, Landroidx/compose/ui/text/input/B;
 
     .line 2
-    new-array v0, v0, [Landroidx/compose/ui/text/input/h;
-
     .line 3
-    .line 4
-    new-instance v1, Landroidx/compose/ui/text/input/g0;
+    invoke-direct {v0, p1, p1}, Landroidx/compose/ui/text/input/B;-><init>(II)V
 
+    .line 4
     .line 5
     .line 6
-    invoke-direct {v1, p1, p1}, Landroidx/compose/ui/text/input/g0;-><init>(II)V
+    new-instance p1, Landroidx/compose/ui/text/input/a;
 
     .line 7
     .line 8
-    .line 9
-    const/4 p1, 0x0
-
-    .line 10
-    aput-object v1, v0, p1
-
-    .line 11
-    .line 12
-    new-instance p1, Landroidx/compose/ui/text/input/a;
-
-    .line 13
-    .line 14
     const/4 v1, 0x1
 
-    .line 15
+    .line 9
     invoke-direct {p1, p2, v1}, Landroidx/compose/ui/text/input/a;-><init>(Ljava/lang/String;I)V
 
+    .line 10
+    .line 11
+    .line 12
+    const/4 p2, 0x2
+
+    .line 13
+    new-array p2, p2, [Landroidx/compose/ui/text/input/h;
+
+    .line 14
+    .line 15
+    const/4 v2, 0x0
+
     .line 16
+    aput-object v0, p2, v2
+
     .line 17
     .line 18
-    aput-object p1, v0, v1
+    aput-object p1, p2, v1
 
     .line 19
     .line 20
@@ -1508,12 +1512,12 @@
 
     .line 21
     .line 22
-    invoke-direct {p1, v0}, Landroidx/compose/foundation/text/input/internal/l;-><init>([Landroidx/compose/ui/text/input/h;)V
+    invoke-direct {p1, p2}, Landroidx/compose/foundation/text/input/internal/l;-><init>([Landroidx/compose/ui/text/input/h;)V
 
     .line 23
     .line 24
     .line 25
-    invoke-interface {p3, p1}, Lzh/c;->invoke(Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-interface {p3, p1}, Lka/c;->invoke(Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 26
     .line 27
@@ -1521,16 +1525,16 @@
     return-void
 .end method
 
-.method private final n(Landroidx/compose/foundation/text/t;Landroid/view/inputmethod/JoinOrSplitGesture;Landroidx/compose/ui/text/f;Landroidx/compose/ui/platform/x2;Lzh/c;)I
+.method private final n(Landroidx/compose/foundation/text/s;Landroid/view/inputmethod/JoinOrSplitGesture;Landroidx/compose/ui/text/g;Landroidx/compose/ui/platform/M0;Lka/c;)I
     .locals 10
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
-            "Landroidx/compose/foundation/text/t;",
+            "Landroidx/compose/foundation/text/s;",
             "Landroid/view/inputmethod/JoinOrSplitGesture;",
-            "Landroidx/compose/ui/text/f;",
-            "Landroidx/compose/ui/platform/x2;",
-            "Lzh/c;",
+            "Landroidx/compose/ui/text/g;",
+            "Landroidx/compose/ui/platform/M0;",
+            "Lka/c;",
             ")I"
         }
     .end annotation
@@ -1540,7 +1544,7 @@
 
     .line 2
     .line 3
-    invoke-static {p2}, Landroidx/compose/foundation/text/input/internal/j;->r(Ljava/lang/Object;)Landroid/view/inputmethod/HandwritingGesture;
+    invoke-static {p2}, Landroidx/compose/foundation/text/input/internal/i;->q(Ljava/lang/Object;)Landroid/view/inputmethod/HandwritingGesture;
 
     .line 4
     .line 5
@@ -1548,7 +1552,7 @@
     move-result-object p1
 
     .line 7
-    invoke-direct {p0, p1, p5}, Landroidx/compose/foundation/text/input/internal/HandwritingGestureApi34;->b(Landroid/view/inputmethod/HandwritingGesture;Lzh/c;)I
+    invoke-direct {p0, p1, p5}, Landroidx/compose/foundation/text/input/internal/HandwritingGestureApi34;->b(Landroid/view/inputmethod/HandwritingGesture;Lka/c;)I
 
     .line 8
     .line 9
@@ -1560,7 +1564,7 @@
 
     .line 12
     :cond_0
-    invoke-static {p2}, Landroidx/compose/foundation/text/input/internal/j;->n(Landroid/view/inputmethod/JoinOrSplitGesture;)Landroid/graphics/PointF;
+    invoke-static {p2}, Landroidx/compose/foundation/text/input/internal/i;->m(Landroid/view/inputmethod/JoinOrSplitGesture;)Landroid/graphics/PointF;
 
     .line 13
     .line 14
@@ -1576,7 +1580,7 @@
 
     .line 19
     .line 20
-    invoke-static {v1, v0}, La0/r;->b(FF)J
+    invoke-static {v1, v0}, Lcom/bumptech/glide/c;->b(FF)J
 
     .line 21
     .line 22
@@ -1584,7 +1588,7 @@
     move-result-wide v0
 
     .line 24
-    invoke-virtual {p1}, Landroidx/compose/foundation/text/t;->d()Landroidx/compose/foundation/text/i0;
+    invoke-virtual {p1}, Landroidx/compose/foundation/text/s;->d()Landroidx/compose/foundation/text/J;
 
     .line 25
     .line 26
@@ -1602,7 +1606,7 @@
 
     .line 31
     .line 32
-    iget-object v2, v2, Landroidx/compose/foundation/text/i0;->a:Landroidx/compose/ui/text/f0;
+    iget-object v2, v2, Landroidx/compose/foundation/text/J;->a:Landroidx/compose/ui/text/F;
 
     .line 33
     .line 34
@@ -1610,190 +1614,190 @@
 
     .line 35
     .line 36
-    iget-object v2, v2, Landroidx/compose/ui/text/f0;->b:Landroidx/compose/ui/text/l;
+    iget-object v2, v2, Landroidx/compose/ui/text/F;->b:Landroidx/compose/ui/text/m;
 
     .line 37
     .line 38
-    if-eqz v2, :cond_2
+    invoke-virtual {p1}, Landroidx/compose/foundation/text/s;->c()Landroidx/compose/ui/layout/p;
 
     .line 39
     .line 40
-    invoke-virtual {p1}, Landroidx/compose/foundation/text/t;->c()Landroidx/compose/ui/layout/s;
-
     .line 41
-    .line 42
-    .line 43
     move-result-object v5
 
-    .line 44
+    .line 42
     if-eqz v5, :cond_2
+
+    .line 43
+    .line 44
+    invoke-interface {v5, v0, v1}, Landroidx/compose/ui/layout/p;->B(J)J
 
     .line 45
     .line 46
-    invoke-interface {v5, v0, v1}, Landroidx/compose/ui/layout/s;->J(J)J
-
     .line 47
-    .line 48
-    .line 49
     move-result-wide v0
 
-    .line 50
-    invoke-static {v2, v0, v1, p4}, Landroidx/compose/foundation/text/input/internal/p;->e(Landroidx/compose/ui/text/l;JLandroidx/compose/ui/platform/x2;)I
+    .line 48
+    invoke-static {v2, v0, v1, p4}, Landroidx/compose/foundation/text/input/internal/p;->e(Landroidx/compose/ui/text/m;JLandroidx/compose/ui/platform/M0;)I
 
+    .line 49
+    .line 50
     .line 51
-    .line 52
-    .line 53
     move-result p4
 
-    .line 54
+    .line 52
     if-ne p4, v4, :cond_1
 
-    .line 55
-    .line 56
+    .line 53
+    .line 54
     goto :goto_0
 
-    .line 57
+    .line 55
     :cond_1
-    invoke-virtual {v2, p4}, Landroidx/compose/ui/text/l;->d(I)F
+    invoke-virtual {v2, p4}, Landroidx/compose/ui/text/m;->d(I)F
 
+    .line 56
+    .line 57
     .line 58
-    .line 59
-    .line 60
     move-result v5
 
-    .line 61
-    invoke-virtual {v2, p4}, Landroidx/compose/ui/text/l;->b(I)F
+    .line 59
+    invoke-virtual {v2, p4}, Landroidx/compose/ui/text/m;->b(I)F
 
+    .line 60
+    .line 61
     .line 62
-    .line 63
-    .line 64
     move-result p4
 
-    .line 65
+    .line 63
     add-float/2addr p4, v5
 
-    .line 66
+    .line 64
     const/high16 v5, 0x40000000    # 2.0f
 
-    .line 67
-    .line 68
+    .line 65
+    .line 66
     div-float/2addr p4, v5
 
-    .line 69
-    invoke-static {v0, v1, p4, v3}, Ln1/c;->a(JFI)J
+    .line 67
+    invoke-static {v0, v1, v3, p4}, Lr0/c;->a(JIF)J
 
+    .line 68
+    .line 69
     .line 70
-    .line 71
-    .line 72
     move-result-wide v0
 
-    .line 73
-    invoke-virtual {v2, v0, v1}, Landroidx/compose/ui/text/l;->e(J)I
+    .line 71
+    invoke-virtual {v2, v0, v1}, Landroidx/compose/ui/text/m;->e(J)I
 
+    .line 72
+    .line 73
     .line 74
-    .line 75
-    .line 76
     move-result p4
 
-    .line 77
+    .line 75
     goto :goto_1
 
-    .line 78
+    .line 76
     :cond_2
     :goto_0
     const/4 p4, -0x1
 
-    .line 79
+    .line 77
     :goto_1
     if-eq p4, v4, :cond_9
 
+    .line 78
+    .line 79
+    invoke-virtual {p1}, Landroidx/compose/foundation/text/s;->d()Landroidx/compose/foundation/text/J;
+
     .line 80
     .line 81
-    invoke-virtual {p1}, Landroidx/compose/foundation/text/t;->d()Landroidx/compose/foundation/text/i0;
-
     .line 82
-    .line 83
-    .line 84
     move-result-object p1
 
-    .line 85
+    .line 83
     if-eqz p1, :cond_3
+
+    .line 84
+    .line 85
+    iget-object p1, p1, Landroidx/compose/foundation/text/J;->a:Landroidx/compose/ui/text/F;
 
     .line 86
     .line 87
-    iget-object p1, p1, Landroidx/compose/foundation/text/i0;->a:Landroidx/compose/ui/text/f0;
+    if-eqz p1, :cond_3
 
     .line 88
     .line 89
-    if-eqz p1, :cond_3
+    invoke-static {p1, p4}, Landroidx/compose/foundation/text/input/internal/p;->b(Landroidx/compose/ui/text/F;I)Z
 
     .line 90
     .line 91
-    invoke-static {p1, p4}, Landroidx/compose/foundation/text/input/internal/p;->b(Landroidx/compose/ui/text/f0;I)Z
-
     .line 92
-    .line 93
-    .line 94
     move-result p1
 
-    .line 95
+    .line 93
     if-ne p1, v3, :cond_3
 
-    .line 96
-    .line 97
+    .line 94
+    .line 95
     goto :goto_6
 
-    .line 98
+    .line 96
     :cond_3
     move p1, p4
 
-    .line 99
+    .line 97
     :goto_2
     if-lez p1, :cond_5
 
-    .line 100
-    .line 101
+    .line 98
+    .line 99
     invoke-static {p3, p1}, Ljava/lang/Character;->codePointBefore(Ljava/lang/CharSequence;I)I
 
+    .line 100
+    .line 101
     .line 102
-    .line 103
-    .line 104
     move-result p2
 
-    .line 105
+    .line 103
     invoke-static {p2}, Landroidx/compose/foundation/text/input/internal/p;->h(I)Z
 
+    .line 104
+    .line 105
     .line 106
-    .line 107
-    .line 108
     move-result v0
 
-    .line 109
+    .line 107
     if-nez v0, :cond_4
 
-    .line 110
-    .line 111
+    .line 108
+    .line 109
     goto :goto_3
 
-    .line 112
+    .line 110
     :cond_4
     invoke-static {p2}, Ljava/lang/Character;->charCount(I)I
 
+    .line 111
+    .line 112
     .line 113
-    .line 114
-    .line 115
     move-result p2
 
-    .line 116
+    .line 114
     sub-int/2addr p1, p2
 
-    .line 117
+    .line 115
     goto :goto_2
 
-    .line 118
+    .line 116
     :cond_5
     :goto_3
-    invoke-virtual {p3}, Landroidx/compose/ui/text/f;->length()I
+    iget-object p2, p3, Landroidx/compose/ui/text/g;->b:Ljava/lang/String;
+
+    .line 117
+    .line 118
+    invoke-virtual {p2}, Ljava/lang/String;->length()I
 
     .line 119
     .line 120
@@ -1845,7 +1849,7 @@
     .line 141
     :cond_7
     :goto_4
-    invoke-static {p1, p4}, Lh5/f;->a(II)J
+    invoke-static {p1, p4}, Landroidx/compose/ui/text/K;->b(II)J
 
     .line 142
     .line 143
@@ -1853,7 +1857,7 @@
     move-result-wide v5
 
     .line 145
-    invoke-static {v5, v6}, Landroidx/compose/ui/text/h0;->b(J)Z
+    invoke-static {v5, v6}, Landroidx/compose/ui/text/H;->b(J)Z
 
     .line 146
     .line 147
@@ -1880,7 +1884,7 @@
 
     .line 157
     .line 158
-    invoke-direct {p0, p2, p1, p5}, Landroidx/compose/foundation/text/input/internal/HandwritingGestureApi34;->m(ILjava/lang/String;Lzh/c;)V
+    invoke-direct {p0, p2, p1, p5}, Landroidx/compose/foundation/text/input/internal/HandwritingGestureApi34;->m(ILjava/lang/String;Lka/c;)V
 
     .line 159
     .line 160
@@ -1901,7 +1905,7 @@
     move-object v9, p5
 
     .line 166
-    invoke-direct/range {v4 .. v9}, Landroidx/compose/foundation/text/input/internal/HandwritingGestureApi34;->h(JLandroidx/compose/ui/text/f;ZLzh/c;)V
+    invoke-direct/range {v4 .. v9}, Landroidx/compose/foundation/text/input/internal/HandwritingGestureApi34;->h(JLandroidx/compose/ui/text/g;ZLka/c;)V
 
     .line 167
     .line 168
@@ -1912,7 +1916,7 @@
     .line 170
     :cond_9
     :goto_6
-    invoke-static {p2}, Landroidx/compose/foundation/text/input/internal/j;->r(Ljava/lang/Object;)Landroid/view/inputmethod/HandwritingGesture;
+    invoke-static {p2}, Landroidx/compose/foundation/text/input/internal/i;->q(Ljava/lang/Object;)Landroid/view/inputmethod/HandwritingGesture;
 
     .line 171
     .line 172
@@ -1920,7 +1924,7 @@
     move-result-object p1
 
     .line 174
-    invoke-direct {p0, p1, p5}, Landroidx/compose/foundation/text/input/internal/HandwritingGestureApi34;->b(Landroid/view/inputmethod/HandwritingGesture;Lzh/c;)I
+    invoke-direct {p0, p1, p5}, Landroidx/compose/foundation/text/input/internal/HandwritingGestureApi34;->b(Landroid/view/inputmethod/HandwritingGesture;Lka/c;)I
 
     .line 175
     .line 176
@@ -1931,7 +1935,7 @@
     return p1
 .end method
 
-.method private final o(Landroidx/compose/foundation/text/input/internal/z;Landroid/view/inputmethod/JoinOrSplitGesture;Landroidx/compose/foundation/text/input/internal/y;Landroidx/compose/ui/platform/x2;)I
+.method private final o(Landroidx/compose/foundation/text/input/internal/y;Landroid/view/inputmethod/JoinOrSplitGesture;Landroidx/compose/foundation/text/input/internal/x;Landroidx/compose/ui/platform/M0;)I
     .locals 0
 
     .line 1
@@ -1941,16 +1945,16 @@
     throw p1
 .end method
 
-.method private final p(Landroidx/compose/foundation/text/t;Landroid/view/inputmethod/RemoveSpaceGesture;Landroidx/compose/ui/text/f;Landroidx/compose/ui/platform/x2;Lzh/c;)I
-    .locals 14
+.method private final p(Landroidx/compose/foundation/text/s;Landroid/view/inputmethod/RemoveSpaceGesture;Landroidx/compose/ui/text/g;Landroidx/compose/ui/platform/M0;Lka/c;)I
+    .locals 15
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
-            "Landroidx/compose/foundation/text/t;",
+            "Landroidx/compose/foundation/text/s;",
             "Landroid/view/inputmethod/RemoveSpaceGesture;",
-            "Landroidx/compose/ui/text/f;",
-            "Landroidx/compose/ui/platform/x2;",
-            "Lzh/c;",
+            "Landroidx/compose/ui/text/g;",
+            "Landroidx/compose/ui/platform/M0;",
+            "Lka/c;",
             ")I"
         }
     .end annotation
@@ -1964,571 +1968,567 @@
 
     .line 4
     .line 5
-    invoke-virtual {p1}, Landroidx/compose/foundation/text/t;->d()Landroidx/compose/foundation/text/i0;
+    const/4 v2, 0x1
 
     .line 6
+    const/4 v3, 0x0
+
     .line 7
+    const/4 v4, 0x2
+
     .line 8
-    move-result-object v2
+    invoke-virtual/range {p1 .. p1}, Landroidx/compose/foundation/text/s;->d()Landroidx/compose/foundation/text/J;
 
     .line 9
-    if-eqz v2, :cond_0
-
     .line 10
     .line 11
-    iget-object v2, v2, Landroidx/compose/foundation/text/i0;->a:Landroidx/compose/ui/text/f0;
-
-    .line 12
-    .line 13
-    goto :goto_0
-
-    .line 14
-    :cond_0
-    const/4 v2, 0x0
-
-    .line 15
-    :goto_0
-    invoke-static/range {p2 .. p2}, Landroidx/camera/camera2/internal/compat/l;->c(Landroid/view/inputmethod/RemoveSpaceGesture;)Landroid/graphics/PointF;
-
-    .line 16
-    .line 17
-    .line 18
-    move-result-object v3
-
-    .line 19
-    iget v4, v3, Landroid/graphics/PointF;->x:F
-
-    .line 20
-    .line 21
-    iget v3, v3, Landroid/graphics/PointF;->y:F
-
-    .line 22
-    .line 23
-    invoke-static {v4, v3}, La0/r;->b(FF)J
-
-    .line 24
-    .line 25
-    .line 26
-    move-result-wide v3
-
-    .line 27
-    invoke-static/range {p2 .. p2}, Landroidx/camera/camera2/internal/compat/l;->s(Landroid/view/inputmethod/RemoveSpaceGesture;)Landroid/graphics/PointF;
-
-    .line 28
-    .line 29
-    .line 30
     move-result-object v5
 
-    .line 31
-    iget v6, v5, Landroid/graphics/PointF;->x:F
+    .line 12
+    if-eqz v5, :cond_0
 
+    .line 13
+    .line 14
+    iget-object v5, v5, Landroidx/compose/foundation/text/J;->a:Landroidx/compose/ui/text/F;
+
+    .line 15
+    .line 16
+    goto :goto_0
+
+    .line 17
+    :cond_0
+    const/4 v5, 0x0
+
+    .line 18
+    :goto_0
+    invoke-static/range {p2 .. p2}, Landroidx/compose/foundation/text/input/internal/i;->n(Landroid/view/inputmethod/RemoveSpaceGesture;)Landroid/graphics/PointF;
+
+    .line 19
+    .line 20
+    .line 21
+    move-result-object v6
+
+    .line 22
+    iget v7, v6, Landroid/graphics/PointF;->x:F
+
+    .line 23
+    .line 24
+    iget v6, v6, Landroid/graphics/PointF;->y:F
+
+    .line 25
+    .line 26
+    invoke-static {v7, v6}, Lcom/bumptech/glide/c;->b(FF)J
+
+    .line 27
+    .line 28
+    .line 29
+    move-result-wide v6
+
+    .line 30
+    invoke-static/range {p2 .. p2}, Landroidx/compose/foundation/text/input/internal/i;->C(Landroid/view/inputmethod/RemoveSpaceGesture;)Landroid/graphics/PointF;
+
+    .line 31
     .line 32
     .line 33
-    iget v5, v5, Landroid/graphics/PointF;->y:F
+    move-result-object v8
 
     .line 34
-    .line 35
-    invoke-static {v6, v5}, La0/r;->b(FF)J
+    iget v9, v8, Landroid/graphics/PointF;->x:F
 
+    .line 35
     .line 36
+    iget v8, v8, Landroid/graphics/PointF;->y:F
+
     .line 37
     .line 38
-    move-result-wide v5
+    invoke-static {v9, v8}, Lcom/bumptech/glide/c;->b(FF)J
 
     .line 39
-    invoke-virtual {p1}, Landroidx/compose/foundation/text/t;->c()Landroidx/compose/ui/layout/s;
-
     .line 40
     .line 41
+    move-result-wide v8
+
     .line 42
-    move-result-object v7
+    invoke-virtual/range {p1 .. p1}, Landroidx/compose/foundation/text/s;->c()Landroidx/compose/ui/layout/p;
 
     .line 43
-    const/4 v8, 0x0
-
     .line 44
-    const/4 v9, 0x2
-
     .line 45
-    const/4 v10, -0x1
+    move-result-object v10
 
     .line 46
-    if-eqz v2, :cond_5
+    const/4 v11, -0x1
 
     .line 47
-    .line 48
-    if-nez v7, :cond_1
+    if-eqz v5, :cond_5
 
+    .line 48
     .line 49
+    if-nez v10, :cond_1
+
     .line 50
+    .line 51
     goto :goto_2
 
-    .line 51
-    :cond_1
-    invoke-interface {v7, v3, v4}, Landroidx/compose/ui/layout/s;->J(J)J
-
     .line 52
+    :cond_1
+    invoke-interface {v10, v6, v7}, Landroidx/compose/ui/layout/p;->B(J)J
+
     .line 53
     .line 54
-    move-result-wide v3
-
     .line 55
-    invoke-interface {v7, v5, v6}, Landroidx/compose/ui/layout/s;->J(J)J
+    move-result-wide v6
 
     .line 56
+    invoke-interface {v10, v8, v9}, Landroidx/compose/ui/layout/p;->B(J)J
+
     .line 57
     .line 58
-    move-result-wide v5
-
     .line 59
-    iget-object v2, v2, Landroidx/compose/ui/text/f0;->b:Landroidx/compose/ui/text/l;
+    move-result-wide v8
 
     .line 60
-    .line 61
-    invoke-static {v2, v3, v4, v0}, Landroidx/compose/foundation/text/input/internal/p;->e(Landroidx/compose/ui/text/l;JLandroidx/compose/ui/platform/x2;)I
+    iget-object v5, v5, Landroidx/compose/ui/text/F;->b:Landroidx/compose/ui/text/m;
 
+    .line 61
     .line 62
+    invoke-static {v5, v6, v7, v0}, Landroidx/compose/foundation/text/input/internal/p;->e(Landroidx/compose/ui/text/m;JLandroidx/compose/ui/platform/M0;)I
+
     .line 63
     .line 64
-    move-result v7
-
     .line 65
-    invoke-static {v2, v5, v6, v0}, Landroidx/compose/foundation/text/input/internal/p;->e(Landroidx/compose/ui/text/l;JLandroidx/compose/ui/platform/x2;)I
+    move-result v10
 
     .line 66
+    invoke-static {v5, v8, v9, v0}, Landroidx/compose/foundation/text/input/internal/p;->e(Landroidx/compose/ui/text/m;JLandroidx/compose/ui/platform/M0;)I
+
     .line 67
     .line 68
-    move-result v0
-
     .line 69
-    if-ne v7, v10, :cond_2
+    move-result v0
 
     .line 70
+    if-ne v10, v11, :cond_2
+
     .line 71
-    if-ne v0, v10, :cond_4
-
     .line 72
+    if-ne v0, v11, :cond_4
+
     .line 73
-    sget-wide v2, Landroidx/compose/ui/text/h0;->b:J
-
     .line 74
-    .line 75
-    goto :goto_3
+    sget-wide v5, Landroidx/compose/ui/text/H;->b:J
 
+    .line 75
     .line 76
-    :cond_2
-    if-ne v0, v10, :cond_3
+    goto :goto_3
 
     .line 77
+    :cond_2
+    if-ne v0, v11, :cond_3
+
     .line 78
+    .line 79
     goto :goto_1
 
-    .line 79
-    :cond_3
-    invoke-static {v7, v0}, Ljava/lang/Math;->min(II)I
-
     .line 80
+    :cond_3
+    invoke-static {v10, v0}, Ljava/lang/Math;->min(II)I
+
     .line 81
     .line 82
-    move-result v7
-
     .line 83
-    :goto_1
-    move v0, v7
+    move-result v10
 
     .line 84
-    :cond_4
-    invoke-virtual {v2, v0}, Landroidx/compose/ui/text/l;->d(I)F
+    :goto_1
+    move v0, v10
 
     .line 85
+    :cond_4
+    invoke-virtual {v5, v0}, Landroidx/compose/ui/text/m;->d(I)F
+
     .line 86
     .line 87
-    move-result v7
-
     .line 88
-    invoke-virtual {v2, v0}, Landroidx/compose/ui/text/l;->b(I)F
+    move-result v10
 
     .line 89
+    invoke-virtual {v5, v0}, Landroidx/compose/ui/text/m;->b(I)F
+
     .line 90
     .line 91
-    move-result v0
-
     .line 92
-    add-float/2addr v0, v7
+    move-result v0
 
     .line 93
-    int-to-float v7, v9
+    add-float/2addr v0, v10
 
     .line 94
-    div-float/2addr v0, v7
+    int-to-float v10, v4
 
     .line 95
-    new-instance v7, Ln1/e;
+    div-float/2addr v0, v10
 
     .line 96
-    .line 97
-    invoke-static {v3, v4}, Ln1/c;->d(J)F
+    new-instance v10, Lr0/d;
 
+    .line 97
     .line 98
+    invoke-static {v6, v7}, Lr0/c;->d(J)F
+
     .line 99
     .line 100
-    move-result v11
-
     .line 101
-    invoke-static {v5, v6}, Ln1/c;->d(J)F
-
-    .line 102
-    .line 103
-    .line 104
     move-result v12
 
+    .line 102
+    invoke-static {v8, v9}, Lr0/c;->d(J)F
+
+    .line 103
+    .line 104
     .line 105
-    invoke-static {v11, v12}, Ljava/lang/Math;->min(FF)F
+    move-result v13
 
     .line 106
+    invoke-static {v12, v13}, Ljava/lang/Math;->min(FF)F
+
     .line 107
     .line 108
-    move-result v11
-
     .line 109
-    const v12, 0x3dcccccd    # 0.1f
+    move-result v12
 
     .line 110
+    const v13, 0x3dcccccd    # 0.1f
+
     .line 111
     .line 112
-    sub-float v13, v0, v12
-
     .line 113
-    .line 114
-    invoke-static {v3, v4}, Ln1/c;->d(J)F
+    sub-float v14, v0, v13
 
+    .line 114
     .line 115
+    invoke-static {v6, v7}, Lr0/c;->d(J)F
+
     .line 116
     .line 117
-    move-result v3
-
     .line 118
-    invoke-static {v5, v6}, Ln1/c;->d(J)F
+    move-result v6
 
     .line 119
+    invoke-static {v8, v9}, Lr0/c;->d(J)F
+
     .line 120
     .line 121
-    move-result v4
-
     .line 122
-    invoke-static {v3, v4}, Ljava/lang/Math;->max(FF)F
+    move-result v7
 
     .line 123
+    invoke-static {v6, v7}, Ljava/lang/Math;->max(FF)F
+
     .line 124
     .line 125
-    move-result v3
-
     .line 126
-    add-float/2addr v0, v12
+    move-result v6
 
     .line 127
-    invoke-direct {v7, v11, v13, v3, v0}, Ln1/e;-><init>(FFFF)V
+    add-float/2addr v0, v13
 
     .line 128
+    invoke-direct {v10, v12, v14, v6, v0}, Lr0/d;-><init>(FFFF)V
+
     .line 129
     .line 130
-    sget-object v0, Landroidx/compose/ui/text/c0;->a:Lcom/google/android/material/internal/i;
-
     .line 131
-    .line 132
-    invoke-virtual {v2, v7, v8, v0}, Landroidx/compose/ui/text/l;->f(Ln1/e;ILcom/google/android/material/internal/i;)J
+    sget-object v0, Landroidx/compose/ui/text/C;->a:LC7/q;
 
+    .line 132
     .line 133
+    invoke-virtual {v5, v10, v3, v0}, Landroidx/compose/ui/text/m;->f(Lr0/d;ILandroidx/compose/ui/text/D;)J
+
     .line 134
     .line 135
-    move-result-wide v2
-
     .line 136
-    goto :goto_3
+    move-result-wide v5
 
     .line 137
-    :cond_5
-    :goto_2
-    sget-wide v2, Landroidx/compose/ui/text/h0;->b:J
+    goto :goto_3
 
     .line 138
-    .line 139
-    :goto_3
-    invoke-static {v2, v3}, Landroidx/compose/ui/text/h0;->b(J)Z
+    :cond_5
+    :goto_2
+    sget-wide v5, Landroidx/compose/ui/text/H;->b:J
 
+    .line 139
     .line 140
+    :goto_3
+    invoke-static {v5, v6}, Landroidx/compose/ui/text/H;->b(J)Z
+
     .line 141
     .line 142
-    move-result v0
-
     .line 143
-    if-eqz v0, :cond_6
+    move-result v0
 
     .line 144
+    if-eqz v0, :cond_6
+
     .line 145
+    .line 146
     sget-object v0, Landroidx/compose/foundation/text/input/internal/HandwritingGestureApi34;->a:Landroidx/compose/foundation/text/input/internal/HandwritingGestureApi34;
 
-    .line 146
     .line 147
-    invoke-static/range {p2 .. p2}, Landroidx/compose/foundation/text/input/internal/j;->r(Ljava/lang/Object;)Landroid/view/inputmethod/HandwritingGesture;
-
     .line 148
+    invoke-static/range {p2 .. p2}, Landroidx/compose/foundation/text/input/internal/i;->q(Ljava/lang/Object;)Landroid/view/inputmethod/HandwritingGesture;
+
     .line 149
     .line 150
+    .line 151
     move-result-object v2
 
-    .line 151
-    invoke-direct {v0, v2, v1}, Landroidx/compose/foundation/text/input/internal/HandwritingGestureApi34;->b(Landroid/view/inputmethod/HandwritingGesture;Lzh/c;)I
-
     .line 152
+    invoke-direct {v0, v2, v1}, Landroidx/compose/foundation/text/input/internal/HandwritingGestureApi34;->b(Landroid/view/inputmethod/HandwritingGesture;Lka/c;)I
+
     .line 153
     .line 154
+    .line 155
     move-result v0
 
-    .line 155
+    .line 156
     return v0
 
-    .line 156
+    .line 157
     :cond_6
     new-instance v0, Lkotlin/jvm/internal/Ref$IntRef;
 
-    .line 157
     .line 158
+    .line 159
     invoke-direct {v0}, Lkotlin/jvm/internal/Ref$IntRef;-><init>()V
 
-    .line 159
     .line 160
     .line 161
-    iput v10, v0, Lkotlin/jvm/internal/Ref$IntRef;->element:I
-
     .line 162
+    iput v11, v0, Lkotlin/jvm/internal/Ref$IntRef;->element:I
+
     .line 163
-    new-instance v4, Lkotlin/jvm/internal/Ref$IntRef;
-
     .line 164
-    .line 165
-    invoke-direct {v4}, Lkotlin/jvm/internal/Ref$IntRef;-><init>()V
+    new-instance v7, Lkotlin/jvm/internal/Ref$IntRef;
 
+    .line 165
     .line 166
+    invoke-direct {v7}, Lkotlin/jvm/internal/Ref$IntRef;-><init>()V
+
     .line 167
     .line 168
-    iput v10, v4, Lkotlin/jvm/internal/Ref$IntRef;->element:I
-
     .line 169
-    .line 170
-    invoke-static {v2, v3}, Landroidx/compose/ui/text/h0;->e(J)I
+    iput v11, v7, Lkotlin/jvm/internal/Ref$IntRef;->element:I
 
+    .line 170
     .line 171
+    invoke-static {v5, v6}, Landroidx/compose/ui/text/H;->e(J)I
+
     .line 172
     .line 173
-    move-result v5
-
     .line 174
-    invoke-static {v2, v3}, Landroidx/compose/ui/text/h0;->d(J)I
+    move-result v8
 
     .line 175
+    invoke-static {v5, v6}, Landroidx/compose/ui/text/H;->d(J)I
+
     .line 176
     .line 177
-    move-result v6
-
     .line 178
-    move-object/from16 v7, p3
+    move-result v9
 
     .line 179
-    .line 180
-    invoke-virtual {v7, v5, v6}, Landroidx/compose/ui/text/f;->subSequence(II)Ljava/lang/CharSequence;
+    move-object/from16 v10, p3
 
+    .line 180
     .line 181
+    invoke-virtual {v10, v8, v9}, Landroidx/compose/ui/text/g;->c(II)Landroidx/compose/ui/text/g;
+
     .line 182
     .line 183
-    move-result-object v5
-
     .line 184
-    invoke-virtual {v5}, Ljava/lang/Object;->toString()Ljava/lang/String;
+    move-result-object v8
 
     .line 185
+    new-instance v9, Lkotlin/text/Regex;
+
     .line 186
     .line 187
-    move-result-object v5
+    const-string v10, "\\s+"
 
     .line 188
-    new-instance v6, Lkotlin/text/Regex;
-
     .line 189
-    .line 190
-    const-string v7, "\\s+"
+    invoke-direct {v9, v10}, Lkotlin/text/Regex;-><init>(Ljava/lang/String;)V
 
+    .line 190
     .line 191
     .line 192
-    invoke-direct {v6, v7}, Lkotlin/text/Regex;-><init>(Ljava/lang/String;)V
+    new-instance v10, Landroidx/compose/foundation/text/input/internal/HandwritingGestureApi34$performRemoveSpaceGesture$newText$2;
 
     .line 193
     .line 194
-    .line 195
-    new-instance v7, Landroidx/compose/foundation/text/input/internal/HandwritingGestureApi34$performRemoveSpaceGesture$newText$2;
+    invoke-direct {v10, v0, v7}, Landroidx/compose/foundation/text/input/internal/HandwritingGestureApi34$performRemoveSpaceGesture$newText$2;-><init>(Lkotlin/jvm/internal/Ref$IntRef;Lkotlin/jvm/internal/Ref$IntRef;)V
 
+    .line 195
     .line 196
     .line 197
-    invoke-direct {v7, v0, v4}, Landroidx/compose/foundation/text/input/internal/HandwritingGestureApi34$performRemoveSpaceGesture$newText$2;-><init>(Lkotlin/jvm/internal/Ref$IntRef;Lkotlin/jvm/internal/Ref$IntRef;)V
+    iget-object v8, v8, Landroidx/compose/ui/text/g;->b:Ljava/lang/String;
 
     .line 198
     .line 199
-    .line 200
-    invoke-virtual {v6, v5, v7}, Lkotlin/text/Regex;->replace(Ljava/lang/CharSequence;Lzh/c;)Ljava/lang/String;
+    invoke-virtual {v9, v8, v10}, Lkotlin/text/Regex;->replace(Ljava/lang/CharSequence;Lka/c;)Ljava/lang/String;
 
+    .line 200
     .line 201
     .line 202
-    .line 203
-    move-result-object v5
+    move-result-object v8
 
-    .line 204
+    .line 203
     iget v0, v0, Lkotlin/jvm/internal/Ref$IntRef;->element:I
 
+    .line 204
     .line 205
+    if-eq v0, v11, :cond_8
+
     .line 206
-    if-eq v0, v10, :cond_8
-
     .line 207
+    iget v9, v7, Lkotlin/jvm/internal/Ref$IntRef;->element:I
+
     .line 208
-    iget v6, v4, Lkotlin/jvm/internal/Ref$IntRef;->element:I
-
     .line 209
-    .line 210
-    if-ne v6, v10, :cond_7
+    if-ne v9, v11, :cond_7
 
+    .line 210
     .line 211
-    .line 212
     goto :goto_4
 
-    .line 213
+    .line 212
     :cond_7
-    const/16 v7, 0x20
+    const/16 v10, 0x20
 
+    .line 213
     .line 214
-    .line 215
-    shr-long v10, v2, v7
+    shr-long v10, v5, v10
 
+    .line 215
     .line 216
+    long-to-int v11, v10
+
     .line 217
-    long-to-int v7, v10
+    add-int v10, v11, v0
 
     .line 218
-    add-int v10, v7, v0
-
     .line 219
+    add-int/2addr v11, v9
+
     .line 220
-    add-int/2addr v7, v6
+    invoke-virtual {v8}, Ljava/lang/String;->length()I
 
     .line 221
-    invoke-virtual {v5}, Ljava/lang/String;->length()I
-
     .line 222
     .line 223
+    move-result v9
+
     .line 224
-    move-result v6
+    invoke-static {v5, v6}, Landroidx/compose/ui/text/H;->c(J)I
 
     .line 225
-    invoke-static {v2, v3}, Landroidx/compose/ui/text/h0;->c(J)I
-
     .line 226
     .line 227
+    move-result v5
+
     .line 228
-    move-result v2
+    iget v6, v7, Lkotlin/jvm/internal/Ref$IntRef;->element:I
 
     .line 229
-    iget v3, v4, Lkotlin/jvm/internal/Ref$IntRef;->element:I
-
     .line 230
+    sub-int/2addr v5, v6
+
     .line 231
-    sub-int/2addr v2, v3
+    sub-int/2addr v9, v5
 
     .line 232
-    sub-int/2addr v6, v2
+    invoke-virtual {v8, v0, v9}, Ljava/lang/String;->substring(II)Ljava/lang/String;
 
     .line 233
-    invoke-virtual {v5, v0, v6}, Ljava/lang/String;->substring(II)Ljava/lang/String;
-
     .line 234
     .line 235
-    .line 236
     move-result-object v0
 
+    .line 236
+    new-instance v5, Landroidx/compose/ui/text/input/B;
+
     .line 237
-    new-array v2, v9, [Landroidx/compose/ui/text/input/h;
-
     .line 238
-    .line 239
-    new-instance v3, Landroidx/compose/ui/text/input/g0;
+    invoke-direct {v5, v10, v11}, Landroidx/compose/ui/text/input/B;-><init>(II)V
 
+    .line 239
     .line 240
     .line 241
-    invoke-direct {v3, v10, v7}, Landroidx/compose/ui/text/input/g0;-><init>(II)V
+    new-instance v6, Landroidx/compose/ui/text/input/a;
 
     .line 242
     .line 243
-    .line 244
-    aput-object v3, v2, v8
+    invoke-direct {v6, v0, v2}, Landroidx/compose/ui/text/input/a;-><init>(Ljava/lang/String;I)V
 
+    .line 244
     .line 245
     .line 246
-    new-instance v3, Landroidx/compose/ui/text/input/a;
+    new-array v0, v4, [Landroidx/compose/ui/text/input/h;
 
     .line 247
     .line 248
-    const/4 v4, 0x1
+    aput-object v5, v0, v3
 
     .line 249
-    invoke-direct {v3, v0, v4}, Landroidx/compose/ui/text/input/a;-><init>(Ljava/lang/String;I)V
-
     .line 250
+    aput-object v6, v0, v2
+
     .line 251
     .line 252
-    aput-object v3, v2, v4
+    new-instance v3, Landroidx/compose/foundation/text/input/internal/l;
 
     .line 253
     .line 254
-    new-instance v0, Landroidx/compose/foundation/text/input/internal/l;
+    invoke-direct {v3, v0}, Landroidx/compose/foundation/text/input/internal/l;-><init>([Landroidx/compose/ui/text/input/h;)V
 
     .line 255
     .line 256
-    invoke-direct {v0, v2}, Landroidx/compose/foundation/text/input/internal/l;-><init>([Landroidx/compose/ui/text/input/h;)V
-
     .line 257
+    invoke-interface {v1, v3}, Lka/c;->invoke(Ljava/lang/Object;)Ljava/lang/Object;
+
     .line 258
     .line 259
-    invoke-interface {v1, v0}, Lzh/c;->invoke(Ljava/lang/Object;)Ljava/lang/Object;
-
     .line 260
-    .line 261
-    .line 262
-    return v4
+    return v2
 
-    .line 263
+    .line 261
     :cond_8
     :goto_4
-    invoke-static/range {p2 .. p2}, Landroidx/compose/foundation/text/input/internal/j;->r(Ljava/lang/Object;)Landroid/view/inputmethod/HandwritingGesture;
+    invoke-static/range {p2 .. p2}, Landroidx/compose/foundation/text/input/internal/i;->q(Ljava/lang/Object;)Landroid/view/inputmethod/HandwritingGesture;
 
+    .line 262
+    .line 263
     .line 264
-    .line 265
-    .line 266
     move-result-object v0
 
-    .line 267
+    .line 265
     move-object v2, p0
 
-    .line 268
-    invoke-direct {p0, v0, v1}, Landroidx/compose/foundation/text/input/internal/HandwritingGestureApi34;->b(Landroid/view/inputmethod/HandwritingGesture;Lzh/c;)I
+    .line 266
+    invoke-direct {p0, v0, v1}, Landroidx/compose/foundation/text/input/internal/HandwritingGestureApi34;->b(Landroid/view/inputmethod/HandwritingGesture;Lka/c;)I
 
+    .line 267
+    .line 268
     .line 269
-    .line 270
-    .line 271
     move-result v0
 
-    .line 272
+    .line 270
     return v0
 .end method
 
-.method private final q(Landroidx/compose/foundation/text/input/internal/z;Landroid/view/inputmethod/RemoveSpaceGesture;Landroidx/compose/foundation/text/input/internal/y;Landroidx/compose/ui/platform/x2;)I
+.method private final q(Landroidx/compose/foundation/text/input/internal/y;Landroid/view/inputmethod/RemoveSpaceGesture;Landroidx/compose/foundation/text/input/internal/x;Landroidx/compose/ui/platform/M0;)I
     .locals 0
 
     .line 1
@@ -2538,21 +2538,21 @@
     throw p1
 .end method
 
-.method private final r(Landroidx/compose/foundation/text/t;Landroid/view/inputmethod/SelectGesture;Landroidx/compose/foundation/text/selection/a0;Lzh/c;)I
+.method private final r(Landroidx/compose/foundation/text/s;Landroid/view/inputmethod/SelectGesture;Landroidx/compose/foundation/text/selection/x;Lka/c;)I
     .locals 2
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
-            "Landroidx/compose/foundation/text/t;",
+            "Landroidx/compose/foundation/text/s;",
             "Landroid/view/inputmethod/SelectGesture;",
-            "Landroidx/compose/foundation/text/selection/a0;",
-            "Lzh/c;",
+            "Landroidx/compose/foundation/text/selection/x;",
+            "Lka/c;",
             ")I"
         }
     .end annotation
 
     .line 1
-    invoke-static {p2}, Landroidx/compose/foundation/text/input/internal/j;->p(Landroid/view/inputmethod/SelectGesture;)Landroid/graphics/RectF;
+    invoke-static {p2}, Landroidx/compose/foundation/text/input/internal/i;->p(Landroid/view/inputmethod/SelectGesture;)Landroid/graphics/RectF;
 
     .line 2
     .line 3
@@ -2560,7 +2560,7 @@
     move-result-object v0
 
     .line 5
-    invoke-static {v0}, Landroidx/compose/ui/graphics/f0;->I(Landroid/graphics/RectF;)Ln1/e;
+    invoke-static {v0}, Landroidx/compose/ui/graphics/G;->I(Landroid/graphics/RectF;)Lr0/d;
 
     .line 6
     .line 7
@@ -2568,7 +2568,7 @@
     move-result-object v0
 
     .line 9
-    invoke-static {p2}, Landroidx/compose/foundation/text/input/internal/j;->d(Landroid/view/inputmethod/SelectGesture;)I
+    invoke-static {p2}, Landroidx/compose/foundation/text/input/internal/i;->d(Landroid/view/inputmethod/SelectGesture;)I
 
     .line 10
     .line 11
@@ -2584,7 +2584,7 @@
     move-result v1
 
     .line 17
-    invoke-static {p1, v0, v1}, Landroidx/compose/foundation/text/input/internal/p;->f(Landroidx/compose/foundation/text/t;Ln1/e;I)J
+    invoke-static {p1, v0, v1}, Landroidx/compose/foundation/text/input/internal/p;->f(Landroidx/compose/foundation/text/s;Lr0/d;I)J
 
     .line 18
     .line 19
@@ -2592,7 +2592,7 @@
     move-result-wide v0
 
     .line 21
-    invoke-static {v0, v1}, Landroidx/compose/ui/text/h0;->b(J)Z
+    invoke-static {v0, v1}, Landroidx/compose/ui/text/H;->b(J)Z
 
     .line 22
     .line 23
@@ -2608,7 +2608,7 @@
 
     .line 28
     .line 29
-    invoke-static {p2}, Landroidx/compose/foundation/text/input/internal/j;->r(Ljava/lang/Object;)Landroid/view/inputmethod/HandwritingGesture;
+    invoke-static {p2}, Landroidx/compose/foundation/text/input/internal/i;->q(Ljava/lang/Object;)Landroid/view/inputmethod/HandwritingGesture;
 
     .line 30
     .line 31
@@ -2616,7 +2616,7 @@
     move-result-object p2
 
     .line 33
-    invoke-direct {p1, p2, p4}, Landroidx/compose/foundation/text/input/internal/HandwritingGestureApi34;->b(Landroid/view/inputmethod/HandwritingGesture;Lzh/c;)I
+    invoke-direct {p1, p2, p4}, Landroidx/compose/foundation/text/input/internal/HandwritingGestureApi34;->b(Landroid/view/inputmethod/HandwritingGesture;Lka/c;)I
 
     .line 34
     .line 35
@@ -2628,7 +2628,7 @@
 
     .line 38
     :cond_0
-    invoke-direct {p0, v0, v1, p3, p4}, Landroidx/compose/foundation/text/input/internal/HandwritingGestureApi34;->v(JLandroidx/compose/foundation/text/selection/a0;Lzh/c;)V
+    invoke-direct {p0, v0, v1, p3, p4}, Landroidx/compose/foundation/text/input/internal/HandwritingGestureApi34;->v(JLandroidx/compose/foundation/text/selection/x;Lka/c;)V
 
     .line 39
     .line 40
@@ -2639,11 +2639,11 @@
     return p1
 .end method
 
-.method private final s(Landroidx/compose/foundation/text/input/internal/z;Landroid/view/inputmethod/SelectGesture;Landroidx/compose/foundation/text/input/internal/y;)I
+.method private final s(Landroidx/compose/foundation/text/input/internal/y;Landroid/view/inputmethod/SelectGesture;Landroidx/compose/foundation/text/input/internal/x;)I
     .locals 0
 
     .line 1
-    invoke-static {p2}, Landroidx/compose/foundation/text/input/internal/j;->p(Landroid/view/inputmethod/SelectGesture;)Landroid/graphics/RectF;
+    invoke-static {p2}, Landroidx/compose/foundation/text/input/internal/i;->p(Landroid/view/inputmethod/SelectGesture;)Landroid/graphics/RectF;
 
     .line 2
     .line 3
@@ -2651,12 +2651,12 @@
     move-result-object p1
 
     .line 5
-    invoke-static {p1}, Landroidx/compose/ui/graphics/f0;->I(Landroid/graphics/RectF;)Ln1/e;
+    invoke-static {p1}, Landroidx/compose/ui/graphics/G;->I(Landroid/graphics/RectF;)Lr0/d;
 
     .line 6
     .line 7
     .line 8
-    invoke-static {p2}, Landroidx/compose/foundation/text/input/internal/j;->d(Landroid/view/inputmethod/SelectGesture;)I
+    invoke-static {p2}, Landroidx/compose/foundation/text/input/internal/i;->d(Landroid/view/inputmethod/SelectGesture;)I
 
     .line 9
     .line 10
@@ -2675,21 +2675,21 @@
     throw p1
 .end method
 
-.method private final t(Landroidx/compose/foundation/text/t;Landroid/view/inputmethod/SelectRangeGesture;Landroidx/compose/foundation/text/selection/a0;Lzh/c;)I
+.method private final t(Landroidx/compose/foundation/text/s;Landroid/view/inputmethod/SelectRangeGesture;Landroidx/compose/foundation/text/selection/x;Lka/c;)I
     .locals 3
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
-            "Landroidx/compose/foundation/text/t;",
+            "Landroidx/compose/foundation/text/s;",
             "Landroid/view/inputmethod/SelectRangeGesture;",
-            "Landroidx/compose/foundation/text/selection/a0;",
-            "Lzh/c;",
+            "Landroidx/compose/foundation/text/selection/x;",
+            "Lka/c;",
             ")I"
         }
     .end annotation
 
     .line 1
-    invoke-static {p2}, Landroidx/compose/foundation/text/input/internal/j;->q(Landroid/view/inputmethod/SelectRangeGesture;)Landroid/graphics/RectF;
+    invoke-static {p2}, LE0/a;->c(Landroid/view/inputmethod/SelectRangeGesture;)Landroid/graphics/RectF;
 
     .line 2
     .line 3
@@ -2697,7 +2697,7 @@
     move-result-object v0
 
     .line 5
-    invoke-static {v0}, Landroidx/compose/ui/graphics/f0;->I(Landroid/graphics/RectF;)Ln1/e;
+    invoke-static {v0}, Landroidx/compose/ui/graphics/G;->I(Landroid/graphics/RectF;)Lr0/d;
 
     .line 6
     .line 7
@@ -2705,7 +2705,7 @@
     move-result-object v0
 
     .line 9
-    invoke-static {p2}, Landroidx/compose/foundation/text/input/internal/j;->D(Landroid/view/inputmethod/SelectRangeGesture;)Landroid/graphics/RectF;
+    invoke-static {p2}, LE0/a;->s(Landroid/view/inputmethod/SelectRangeGesture;)Landroid/graphics/RectF;
 
     .line 10
     .line 11
@@ -2713,7 +2713,7 @@
     move-result-object v1
 
     .line 13
-    invoke-static {v1}, Landroidx/compose/ui/graphics/f0;->I(Landroid/graphics/RectF;)Ln1/e;
+    invoke-static {v1}, Landroidx/compose/ui/graphics/G;->I(Landroid/graphics/RectF;)Lr0/d;
 
     .line 14
     .line 15
@@ -2721,7 +2721,7 @@
     move-result-object v1
 
     .line 17
-    invoke-static {p2}, Landroidx/compose/foundation/text/input/internal/j;->e(Landroid/view/inputmethod/SelectRangeGesture;)I
+    invoke-static {p2}, Landroidx/compose/foundation/text/input/internal/i;->e(Landroid/view/inputmethod/SelectRangeGesture;)I
 
     .line 18
     .line 19
@@ -2737,7 +2737,7 @@
     move-result v2
 
     .line 25
-    invoke-static {p1, v0, v1, v2}, Landroidx/compose/foundation/text/input/internal/p;->a(Landroidx/compose/foundation/text/t;Ln1/e;Ln1/e;I)J
+    invoke-static {p1, v0, v1, v2}, Landroidx/compose/foundation/text/input/internal/p;->a(Landroidx/compose/foundation/text/s;Lr0/d;Lr0/d;I)J
 
     .line 26
     .line 27
@@ -2745,7 +2745,7 @@
     move-result-wide v0
 
     .line 29
-    invoke-static {v0, v1}, Landroidx/compose/ui/text/h0;->b(J)Z
+    invoke-static {v0, v1}, Landroidx/compose/ui/text/H;->b(J)Z
 
     .line 30
     .line 31
@@ -2761,7 +2761,7 @@
 
     .line 36
     .line 37
-    invoke-static {p2}, Landroidx/compose/foundation/text/input/internal/j;->r(Ljava/lang/Object;)Landroid/view/inputmethod/HandwritingGesture;
+    invoke-static {p2}, Landroidx/compose/foundation/text/input/internal/i;->q(Ljava/lang/Object;)Landroid/view/inputmethod/HandwritingGesture;
 
     .line 38
     .line 39
@@ -2769,7 +2769,7 @@
     move-result-object p2
 
     .line 41
-    invoke-direct {p1, p2, p4}, Landroidx/compose/foundation/text/input/internal/HandwritingGestureApi34;->b(Landroid/view/inputmethod/HandwritingGesture;Lzh/c;)I
+    invoke-direct {p1, p2, p4}, Landroidx/compose/foundation/text/input/internal/HandwritingGestureApi34;->b(Landroid/view/inputmethod/HandwritingGesture;Lka/c;)I
 
     .line 42
     .line 43
@@ -2781,7 +2781,7 @@
 
     .line 46
     :cond_0
-    invoke-direct {p0, v0, v1, p3, p4}, Landroidx/compose/foundation/text/input/internal/HandwritingGestureApi34;->v(JLandroidx/compose/foundation/text/selection/a0;Lzh/c;)V
+    invoke-direct {p0, v0, v1, p3, p4}, Landroidx/compose/foundation/text/input/internal/HandwritingGestureApi34;->v(JLandroidx/compose/foundation/text/selection/x;Lka/c;)V
 
     .line 47
     .line 48
@@ -2792,11 +2792,11 @@
     return p1
 .end method
 
-.method private final u(Landroidx/compose/foundation/text/input/internal/z;Landroid/view/inputmethod/SelectRangeGesture;Landroidx/compose/foundation/text/input/internal/y;)I
+.method private final u(Landroidx/compose/foundation/text/input/internal/y;Landroid/view/inputmethod/SelectRangeGesture;Landroidx/compose/foundation/text/input/internal/x;)I
     .locals 0
 
     .line 1
-    invoke-static {p2}, Landroidx/compose/foundation/text/input/internal/j;->q(Landroid/view/inputmethod/SelectRangeGesture;)Landroid/graphics/RectF;
+    invoke-static {p2}, LE0/a;->c(Landroid/view/inputmethod/SelectRangeGesture;)Landroid/graphics/RectF;
 
     .line 2
     .line 3
@@ -2804,12 +2804,12 @@
     move-result-object p1
 
     .line 5
-    invoke-static {p1}, Landroidx/compose/ui/graphics/f0;->I(Landroid/graphics/RectF;)Ln1/e;
+    invoke-static {p1}, Landroidx/compose/ui/graphics/G;->I(Landroid/graphics/RectF;)Lr0/d;
 
     .line 6
     .line 7
     .line 8
-    invoke-static {p2}, Landroidx/compose/foundation/text/input/internal/j;->D(Landroid/view/inputmethod/SelectRangeGesture;)Landroid/graphics/RectF;
+    invoke-static {p2}, LE0/a;->s(Landroid/view/inputmethod/SelectRangeGesture;)Landroid/graphics/RectF;
 
     .line 9
     .line 10
@@ -2817,12 +2817,12 @@
     move-result-object p1
 
     .line 12
-    invoke-static {p1}, Landroidx/compose/ui/graphics/f0;->I(Landroid/graphics/RectF;)Ln1/e;
+    invoke-static {p1}, Landroidx/compose/ui/graphics/G;->I(Landroid/graphics/RectF;)Lr0/d;
 
     .line 13
     .line 14
     .line 15
-    invoke-static {p2}, Landroidx/compose/foundation/text/input/internal/j;->e(Landroid/view/inputmethod/SelectRangeGesture;)I
+    invoke-static {p2}, Landroidx/compose/foundation/text/input/internal/i;->e(Landroid/view/inputmethod/SelectRangeGesture;)I
 
     .line 16
     .line 17
@@ -2841,23 +2841,23 @@
     throw p1
 .end method
 
-.method private final v(JLandroidx/compose/foundation/text/selection/a0;Lzh/c;)V
+.method private final v(JLandroidx/compose/foundation/text/selection/x;Lka/c;)V
     .locals 5
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(J",
-            "Landroidx/compose/foundation/text/selection/a0;",
-            "Lzh/c;",
+            "Landroidx/compose/foundation/text/selection/x;",
+            "Lka/c;",
             ")V"
         }
     .end annotation
 
     .line 1
-    new-instance v0, Landroidx/compose/ui/text/input/g0;
+    new-instance v0, Landroidx/compose/ui/text/input/B;
 
     .line 2
     .line 3
-    sget v1, Landroidx/compose/ui/text/h0;->c:I
+    sget v1, Landroidx/compose/ui/text/H;->c:I
 
     .line 4
     .line 5
@@ -2885,12 +2885,12 @@
     long-to-int p2, p1
 
     .line 17
-    invoke-direct {v0, v2, p2}, Landroidx/compose/ui/text/input/g0;-><init>(II)V
+    invoke-direct {v0, v2, p2}, Landroidx/compose/ui/text/input/B;-><init>(II)V
 
     .line 18
     .line 19
     .line 20
-    invoke-interface {p4, v0}, Lzh/c;->invoke(Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-interface {p4, v0}, Lka/c;->invoke(Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 21
     .line 22
@@ -2902,7 +2902,7 @@
     const/4 p1, 0x1
 
     .line 26
-    invoke-virtual {p3, p1}, Landroidx/compose/foundation/text/selection/a0;->h(Z)V
+    invoke-virtual {p3, p1}, Landroidx/compose/foundation/text/selection/x;->g(Z)V
 
     .line 27
     .line 28
@@ -2911,7 +2911,7 @@
     return-void
 .end method
 
-.method private final w(Landroidx/compose/foundation/text/t;Landroid/view/inputmethod/DeleteGesture;Landroidx/compose/foundation/text/selection/a0;)V
+.method private final w(Landroidx/compose/foundation/text/s;Landroid/view/inputmethod/DeleteGesture;Landroidx/compose/foundation/text/selection/x;)V
     .locals 3
 
     .line 1
@@ -2919,7 +2919,7 @@
 
     .line 2
     .line 3
-    invoke-static {p2}, Landroidx/camera/camera2/internal/compat/l;->d(Landroid/view/inputmethod/DeleteGesture;)Landroid/graphics/RectF;
+    invoke-static {p2}, LE0/a;->b(Landroid/view/inputmethod/DeleteGesture;)Landroid/graphics/RectF;
 
     .line 4
     .line 5
@@ -2927,7 +2927,7 @@
     move-result-object v0
 
     .line 7
-    invoke-static {v0}, Landroidx/compose/ui/graphics/f0;->I(Landroid/graphics/RectF;)Ln1/e;
+    invoke-static {v0}, Landroidx/compose/ui/graphics/G;->I(Landroid/graphics/RectF;)Lr0/d;
 
     .line 8
     .line 9
@@ -2935,7 +2935,7 @@
     move-result-object v0
 
     .line 11
-    invoke-static {p2}, Landroidx/camera/camera2/internal/compat/l;->a(Landroid/view/inputmethod/DeleteGesture;)I
+    invoke-static {p2}, LE0/a;->a(Landroid/view/inputmethod/DeleteGesture;)I
 
     .line 12
     .line 13
@@ -2951,7 +2951,7 @@
     move-result p2
 
     .line 19
-    invoke-static {p1, v0, p2}, Landroidx/compose/foundation/text/input/internal/p;->f(Landroidx/compose/foundation/text/t;Ln1/e;I)J
+    invoke-static {p1, v0, p2}, Landroidx/compose/foundation/text/input/internal/p;->f(Landroidx/compose/foundation/text/s;Lr0/d;I)J
 
     .line 20
     .line 21
@@ -2959,7 +2959,7 @@
     move-result-wide p1
 
     .line 23
-    iget-object v0, p3, Landroidx/compose/foundation/text/selection/a0;->d:Landroidx/compose/foundation/text/t;
+    iget-object v0, p3, Landroidx/compose/foundation/text/selection/x;->d:Landroidx/compose/foundation/text/s;
 
     .line 24
     .line 25
@@ -2971,13 +2971,13 @@
 
     .line 28
     :cond_0
-    invoke-virtual {v0, p1, p2}, Landroidx/compose/foundation/text/t;->f(J)V
+    invoke-virtual {v0, p1, p2}, Landroidx/compose/foundation/text/s;->e(J)V
 
     .line 29
     .line 30
     .line 31
     :goto_0
-    iget-object v0, p3, Landroidx/compose/foundation/text/selection/a0;->d:Landroidx/compose/foundation/text/t;
+    iget-object v0, p3, Landroidx/compose/foundation/text/selection/x;->d:Landroidx/compose/foundation/text/s;
 
     .line 32
     .line 33
@@ -2989,17 +2989,17 @@
 
     .line 36
     :cond_1
-    sget-wide v1, Landroidx/compose/ui/text/h0;->b:J
+    sget-wide v1, Landroidx/compose/ui/text/H;->b:J
 
     .line 37
     .line 38
-    invoke-virtual {v0, v1, v2}, Landroidx/compose/foundation/text/t;->g(J)V
+    invoke-virtual {v0, v1, v2}, Landroidx/compose/foundation/text/s;->f(J)V
 
     .line 39
     .line 40
     .line 41
     :goto_1
-    invoke-static {p1, p2}, Landroidx/compose/ui/text/h0;->b(J)Z
+    invoke-static {p1, p2}, Landroidx/compose/ui/text/H;->b(J)Z
 
     .line 42
     .line 43
@@ -3014,7 +3014,7 @@
     const/4 p1, 0x0
 
     .line 48
-    invoke-virtual {p3, p1}, Landroidx/compose/foundation/text/selection/a0;->u(Z)V
+    invoke-virtual {p3, p1}, Landroidx/compose/foundation/text/selection/x;->q(Z)V
 
     .line 49
     .line 50
@@ -3023,7 +3023,7 @@
 
     .line 52
     .line 53
-    invoke-virtual {p3, p1}, Landroidx/compose/foundation/text/selection/a0;->r(Landroidx/compose/foundation/text/HandleState;)V
+    invoke-virtual {p3, p1}, Landroidx/compose/foundation/text/selection/x;->o(Landroidx/compose/foundation/text/HandleState;)V
 
     .line 54
     .line 55
@@ -3032,11 +3032,11 @@
     return-void
 .end method
 
-.method private final x(Landroidx/compose/foundation/text/input/internal/z;Landroid/view/inputmethod/DeleteGesture;Landroidx/compose/foundation/text/input/internal/y;)V
+.method private final x(Landroidx/compose/foundation/text/input/internal/y;Landroid/view/inputmethod/DeleteGesture;Landroidx/compose/foundation/text/input/internal/x;)V
     .locals 0
 
     .line 1
-    invoke-static {p2}, Landroidx/camera/camera2/internal/compat/l;->d(Landroid/view/inputmethod/DeleteGesture;)Landroid/graphics/RectF;
+    invoke-static {p2}, LE0/a;->b(Landroid/view/inputmethod/DeleteGesture;)Landroid/graphics/RectF;
 
     .line 2
     .line 3
@@ -3044,12 +3044,12 @@
     move-result-object p1
 
     .line 5
-    invoke-static {p1}, Landroidx/compose/ui/graphics/f0;->I(Landroid/graphics/RectF;)Ln1/e;
+    invoke-static {p1}, Landroidx/compose/ui/graphics/G;->I(Landroid/graphics/RectF;)Lr0/d;
 
     .line 6
     .line 7
     .line 8
-    invoke-static {p2}, Landroidx/camera/camera2/internal/compat/l;->a(Landroid/view/inputmethod/DeleteGesture;)I
+    invoke-static {p2}, LE0/a;->a(Landroid/view/inputmethod/DeleteGesture;)I
 
     .line 9
     .line 10
@@ -3068,7 +3068,7 @@
     throw p1
 .end method
 
-.method private final y(Landroidx/compose/foundation/text/t;Landroid/view/inputmethod/DeleteRangeGesture;Landroidx/compose/foundation/text/selection/a0;)V
+.method private final y(Landroidx/compose/foundation/text/s;Landroid/view/inputmethod/DeleteRangeGesture;Landroidx/compose/foundation/text/selection/x;)V
     .locals 3
 
     .line 1
@@ -3076,7 +3076,7 @@
 
     .line 2
     .line 3
-    invoke-static {p2}, Landroidx/camera/camera2/internal/compat/l;->e(Landroid/view/inputmethod/DeleteRangeGesture;)Landroid/graphics/RectF;
+    invoke-static {p2}, Landroidx/compose/foundation/text/input/internal/i;->o(Landroid/view/inputmethod/DeleteRangeGesture;)Landroid/graphics/RectF;
 
     .line 4
     .line 5
@@ -3084,7 +3084,7 @@
     move-result-object v0
 
     .line 7
-    invoke-static {v0}, Landroidx/compose/ui/graphics/f0;->I(Landroid/graphics/RectF;)Ln1/e;
+    invoke-static {v0}, Landroidx/compose/ui/graphics/G;->I(Landroid/graphics/RectF;)Lr0/d;
 
     .line 8
     .line 9
@@ -3092,7 +3092,7 @@
     move-result-object v0
 
     .line 11
-    invoke-static {p2}, Landroidx/compose/foundation/text/input/internal/j;->o(Landroid/view/inputmethod/DeleteRangeGesture;)Landroid/graphics/RectF;
+    invoke-static {p2}, Landroidx/compose/foundation/text/input/internal/i;->D(Landroid/view/inputmethod/DeleteRangeGesture;)Landroid/graphics/RectF;
 
     .line 12
     .line 13
@@ -3100,7 +3100,7 @@
     move-result-object v1
 
     .line 15
-    invoke-static {v1}, Landroidx/compose/ui/graphics/f0;->I(Landroid/graphics/RectF;)Ln1/e;
+    invoke-static {v1}, Landroidx/compose/ui/graphics/G;->I(Landroid/graphics/RectF;)Lr0/d;
 
     .line 16
     .line 17
@@ -3108,7 +3108,7 @@
     move-result-object v1
 
     .line 19
-    invoke-static {p2}, Landroidx/compose/foundation/text/input/internal/j;->c(Landroid/view/inputmethod/DeleteRangeGesture;)I
+    invoke-static {p2}, Landroidx/compose/foundation/text/input/internal/i;->c(Landroid/view/inputmethod/DeleteRangeGesture;)I
 
     .line 20
     .line 21
@@ -3124,7 +3124,7 @@
     move-result p2
 
     .line 27
-    invoke-static {p1, v0, v1, p2}, Landroidx/compose/foundation/text/input/internal/p;->a(Landroidx/compose/foundation/text/t;Ln1/e;Ln1/e;I)J
+    invoke-static {p1, v0, v1, p2}, Landroidx/compose/foundation/text/input/internal/p;->a(Landroidx/compose/foundation/text/s;Lr0/d;Lr0/d;I)J
 
     .line 28
     .line 29
@@ -3132,7 +3132,7 @@
     move-result-wide p1
 
     .line 31
-    iget-object v0, p3, Landroidx/compose/foundation/text/selection/a0;->d:Landroidx/compose/foundation/text/t;
+    iget-object v0, p3, Landroidx/compose/foundation/text/selection/x;->d:Landroidx/compose/foundation/text/s;
 
     .line 32
     .line 33
@@ -3144,13 +3144,13 @@
 
     .line 36
     :cond_0
-    invoke-virtual {v0, p1, p2}, Landroidx/compose/foundation/text/t;->f(J)V
+    invoke-virtual {v0, p1, p2}, Landroidx/compose/foundation/text/s;->e(J)V
 
     .line 37
     .line 38
     .line 39
     :goto_0
-    iget-object v0, p3, Landroidx/compose/foundation/text/selection/a0;->d:Landroidx/compose/foundation/text/t;
+    iget-object v0, p3, Landroidx/compose/foundation/text/selection/x;->d:Landroidx/compose/foundation/text/s;
 
     .line 40
     .line 41
@@ -3162,17 +3162,17 @@
 
     .line 44
     :cond_1
-    sget-wide v1, Landroidx/compose/ui/text/h0;->b:J
+    sget-wide v1, Landroidx/compose/ui/text/H;->b:J
 
     .line 45
     .line 46
-    invoke-virtual {v0, v1, v2}, Landroidx/compose/foundation/text/t;->g(J)V
+    invoke-virtual {v0, v1, v2}, Landroidx/compose/foundation/text/s;->f(J)V
 
     .line 47
     .line 48
     .line 49
     :goto_1
-    invoke-static {p1, p2}, Landroidx/compose/ui/text/h0;->b(J)Z
+    invoke-static {p1, p2}, Landroidx/compose/ui/text/H;->b(J)Z
 
     .line 50
     .line 51
@@ -3187,7 +3187,7 @@
     const/4 p1, 0x0
 
     .line 56
-    invoke-virtual {p3, p1}, Landroidx/compose/foundation/text/selection/a0;->u(Z)V
+    invoke-virtual {p3, p1}, Landroidx/compose/foundation/text/selection/x;->q(Z)V
 
     .line 57
     .line 58
@@ -3196,7 +3196,7 @@
 
     .line 60
     .line 61
-    invoke-virtual {p3, p1}, Landroidx/compose/foundation/text/selection/a0;->r(Landroidx/compose/foundation/text/HandleState;)V
+    invoke-virtual {p3, p1}, Landroidx/compose/foundation/text/selection/x;->o(Landroidx/compose/foundation/text/HandleState;)V
 
     .line 62
     .line 63
@@ -3205,11 +3205,11 @@
     return-void
 .end method
 
-.method private final z(Landroidx/compose/foundation/text/input/internal/z;Landroid/view/inputmethod/DeleteRangeGesture;Landroidx/compose/foundation/text/input/internal/y;)V
+.method private final z(Landroidx/compose/foundation/text/input/internal/y;Landroid/view/inputmethod/DeleteRangeGesture;Landroidx/compose/foundation/text/input/internal/x;)V
     .locals 0
 
     .line 1
-    invoke-static {p2}, Landroidx/camera/camera2/internal/compat/l;->e(Landroid/view/inputmethod/DeleteRangeGesture;)Landroid/graphics/RectF;
+    invoke-static {p2}, Landroidx/compose/foundation/text/input/internal/i;->o(Landroid/view/inputmethod/DeleteRangeGesture;)Landroid/graphics/RectF;
 
     .line 2
     .line 3
@@ -3217,12 +3217,12 @@
     move-result-object p1
 
     .line 5
-    invoke-static {p1}, Landroidx/compose/ui/graphics/f0;->I(Landroid/graphics/RectF;)Ln1/e;
+    invoke-static {p1}, Landroidx/compose/ui/graphics/G;->I(Landroid/graphics/RectF;)Lr0/d;
 
     .line 6
     .line 7
     .line 8
-    invoke-static {p2}, Landroidx/compose/foundation/text/input/internal/j;->o(Landroid/view/inputmethod/DeleteRangeGesture;)Landroid/graphics/RectF;
+    invoke-static {p2}, Landroidx/compose/foundation/text/input/internal/i;->D(Landroid/view/inputmethod/DeleteRangeGesture;)Landroid/graphics/RectF;
 
     .line 9
     .line 10
@@ -3230,12 +3230,12 @@
     move-result-object p1
 
     .line 12
-    invoke-static {p1}, Landroidx/compose/ui/graphics/f0;->I(Landroid/graphics/RectF;)Ln1/e;
+    invoke-static {p1}, Landroidx/compose/ui/graphics/G;->I(Landroid/graphics/RectF;)Lr0/d;
 
     .line 13
     .line 14
     .line 15
-    invoke-static {p2}, Landroidx/compose/foundation/text/input/internal/j;->c(Landroid/view/inputmethod/DeleteRangeGesture;)I
+    invoke-static {p2}, Landroidx/compose/foundation/text/input/internal/i;->c(Landroid/view/inputmethod/DeleteRangeGesture;)I
 
     .line 16
     .line 17
@@ -3256,11 +3256,11 @@
 
 
 # virtual methods
-.method public final A(Landroidx/compose/foundation/text/t;Landroid/view/inputmethod/PreviewableHandwritingGesture;Landroidx/compose/foundation/text/selection/a0;Landroid/os/CancellationSignal;)Z
+.method public final A(Landroidx/compose/foundation/text/s;Landroid/view/inputmethod/PreviewableHandwritingGesture;Landroidx/compose/foundation/text/selection/x;Landroid/os/CancellationSignal;)Z
     .locals 3
 
     .line 1
-    iget-object v0, p1, Landroidx/compose/foundation/text/t;->j:Landroidx/compose/ui/text/f;
+    iget-object v0, p1, Landroidx/compose/foundation/text/s;->j:Landroidx/compose/ui/text/g;
 
     .line 2
     .line 3
@@ -3275,7 +3275,7 @@
 
     .line 7
     :cond_0
-    invoke-virtual {p1}, Landroidx/compose/foundation/text/t;->d()Landroidx/compose/foundation/text/i0;
+    invoke-virtual {p1}, Landroidx/compose/foundation/text/s;->d()Landroidx/compose/foundation/text/J;
 
     .line 8
     .line 9
@@ -3287,7 +3287,7 @@
 
     .line 12
     .line 13
-    iget-object v2, v2, Landroidx/compose/foundation/text/i0;->a:Landroidx/compose/ui/text/f0;
+    iget-object v2, v2, Landroidx/compose/foundation/text/J;->a:Landroidx/compose/ui/text/F;
 
     .line 14
     .line 15
@@ -3295,7 +3295,7 @@
 
     .line 16
     .line 17
-    iget-object v2, v2, Landroidx/compose/ui/text/f0;->a:Landroidx/compose/ui/text/e0;
+    iget-object v2, v2, Landroidx/compose/ui/text/F;->a:Landroidx/compose/ui/text/E;
 
     .line 18
     .line 19
@@ -3303,7 +3303,7 @@
 
     .line 20
     .line 21
-    iget-object v2, v2, Landroidx/compose/ui/text/e0;->a:Landroidx/compose/ui/text/f;
+    iget-object v2, v2, Landroidx/compose/ui/text/E;->a:Landroidx/compose/ui/text/g;
 
     .line 22
     .line 23
@@ -3315,7 +3315,7 @@
 
     .line 25
     :goto_0
-    invoke-static {v0, v2}, Lrb/h;->d(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-virtual {v0, v2}, Landroidx/compose/ui/text/g;->equals(Ljava/lang/Object;)Z
 
     .line 26
     .line 27
@@ -3331,7 +3331,7 @@
 
     .line 32
     :cond_2
-    invoke-static {p2}, Landroidx/compose/foundation/text/input/internal/j;->A(Ljava/lang/Object;)Z
+    invoke-static {p2}, Landroidx/compose/foundation/text/input/internal/i;->A(Ljava/lang/Object;)Z
 
     .line 33
     .line 34
@@ -3343,7 +3343,7 @@
 
     .line 37
     .line 38
-    invoke-static {p2}, Landroidx/camera/camera2/internal/compat/l;->l(Ljava/lang/Object;)Landroid/view/inputmethod/SelectGesture;
+    invoke-static {p2}, Landroidx/compose/foundation/text/input/internal/i;->s(Ljava/lang/Object;)Landroid/view/inputmethod/SelectGesture;
 
     .line 39
     .line 40
@@ -3351,7 +3351,7 @@
     move-result-object p2
 
     .line 42
-    invoke-direct {p0, p1, p2, p3}, Landroidx/compose/foundation/text/input/internal/HandwritingGestureApi34;->C(Landroidx/compose/foundation/text/t;Landroid/view/inputmethod/SelectGesture;Landroidx/compose/foundation/text/selection/a0;)V
+    invoke-direct {p0, p1, p2, p3}, Landroidx/compose/foundation/text/input/internal/HandwritingGestureApi34;->C(Landroidx/compose/foundation/text/s;Landroid/view/inputmethod/SelectGesture;Landroidx/compose/foundation/text/selection/x;)V
 
     .line 43
     .line 44
@@ -3360,7 +3360,7 @@
 
     .line 46
     :cond_3
-    invoke-static {p2}, Landroidx/camera/camera2/internal/compat/l;->r(Ljava/lang/Object;)Z
+    invoke-static {p2}, LE0/a;->q(Ljava/lang/Object;)Z
 
     .line 47
     .line 48
@@ -3372,7 +3372,7 @@
 
     .line 51
     .line 52
-    invoke-static {p2}, Landroidx/camera/camera2/internal/compat/l;->g(Ljava/lang/Object;)Landroid/view/inputmethod/DeleteGesture;
+    invoke-static {p2}, LE0/a;->g(Ljava/lang/Object;)Landroid/view/inputmethod/DeleteGesture;
 
     .line 53
     .line 54
@@ -3380,7 +3380,7 @@
     move-result-object p2
 
     .line 56
-    invoke-direct {p0, p1, p2, p3}, Landroidx/compose/foundation/text/input/internal/HandwritingGestureApi34;->w(Landroidx/compose/foundation/text/t;Landroid/view/inputmethod/DeleteGesture;Landroidx/compose/foundation/text/selection/a0;)V
+    invoke-direct {p0, p1, p2, p3}, Landroidx/compose/foundation/text/input/internal/HandwritingGestureApi34;->w(Landroidx/compose/foundation/text/s;Landroid/view/inputmethod/DeleteGesture;Landroidx/compose/foundation/text/selection/x;)V
 
     .line 57
     .line 58
@@ -3389,7 +3389,7 @@
 
     .line 60
     :cond_4
-    invoke-static {p2}, Landroidx/camera/camera2/internal/compat/l;->u(Ljava/lang/Object;)Z
+    invoke-static {p2}, LE0/a;->u(Ljava/lang/Object;)Z
 
     .line 61
     .line 62
@@ -3401,7 +3401,7 @@
 
     .line 65
     .line 66
-    invoke-static {p2}, Landroidx/camera/camera2/internal/compat/l;->m(Ljava/lang/Object;)Landroid/view/inputmethod/SelectRangeGesture;
+    invoke-static {p2}, LE0/a;->k(Ljava/lang/Object;)Landroid/view/inputmethod/SelectRangeGesture;
 
     .line 67
     .line 68
@@ -3409,7 +3409,7 @@
     move-result-object p2
 
     .line 70
-    invoke-direct {p0, p1, p2, p3}, Landroidx/compose/foundation/text/input/internal/HandwritingGestureApi34;->E(Landroidx/compose/foundation/text/t;Landroid/view/inputmethod/SelectRangeGesture;Landroidx/compose/foundation/text/selection/a0;)V
+    invoke-direct {p0, p1, p2, p3}, Landroidx/compose/foundation/text/input/internal/HandwritingGestureApi34;->E(Landroidx/compose/foundation/text/s;Landroid/view/inputmethod/SelectRangeGesture;Landroidx/compose/foundation/text/selection/x;)V
 
     .line 71
     .line 72
@@ -3418,7 +3418,7 @@
 
     .line 74
     :cond_5
-    invoke-static {p2}, Landroidx/camera/camera2/internal/compat/l;->w(Ljava/lang/Object;)Z
+    invoke-static {p2}, LE0/a;->w(Ljava/lang/Object;)Z
 
     .line 75
     .line 76
@@ -3430,7 +3430,7 @@
 
     .line 79
     .line 80
-    invoke-static {p2}, Landroidx/camera/camera2/internal/compat/l;->h(Ljava/lang/Object;)Landroid/view/inputmethod/DeleteRangeGesture;
+    invoke-static {p2}, LE0/a;->h(Ljava/lang/Object;)Landroid/view/inputmethod/DeleteRangeGesture;
 
     .line 81
     .line 82
@@ -3438,46 +3438,49 @@
     move-result-object p2
 
     .line 84
-    invoke-direct {p0, p1, p2, p3}, Landroidx/compose/foundation/text/input/internal/HandwritingGestureApi34;->y(Landroidx/compose/foundation/text/t;Landroid/view/inputmethod/DeleteRangeGesture;Landroidx/compose/foundation/text/selection/a0;)V
+    invoke-direct {p0, p1, p2, p3}, Landroidx/compose/foundation/text/input/internal/HandwritingGestureApi34;->y(Landroidx/compose/foundation/text/s;Landroid/view/inputmethod/DeleteRangeGesture;Landroidx/compose/foundation/text/selection/x;)V
 
     .line 85
     .line 86
     .line 87
     :goto_1
-    const/4 p1, 0x1
-
-    .line 88
     if-eqz p4, :cond_6
 
+    .line 88
     .line 89
-    .line 90
-    new-instance p2, Landroidx/compose/foundation/text/input/internal/k;
+    new-instance p1, Landroidx/compose/foundation/text/input/internal/j;
 
+    .line 90
     .line 91
+    const/4 p2, 0x0
+
     .line 92
-    invoke-direct {p2, p3, p1}, Landroidx/compose/foundation/text/input/internal/k;-><init>(Ljava/lang/Object;I)V
+    invoke-direct {p1, p3, p2}, Landroidx/compose/foundation/text/input/internal/j;-><init>(Ljava/lang/Object;I)V
 
     .line 93
     .line 94
     .line 95
-    invoke-virtual {p4, p2}, Landroid/os/CancellationSignal;->setOnCancelListener(Landroid/os/CancellationSignal$OnCancelListener;)V
+    invoke-virtual {p4, p1}, Landroid/os/CancellationSignal;->setOnCancelListener(Landroid/os/CancellationSignal$OnCancelListener;)V
 
     .line 96
     .line 97
     .line 98
     :cond_6
-    return p1
+    const/4 p1, 0x1
 
     .line 99
+    return p1
+
+    .line 100
     :cond_7
     return v1
 .end method
 
-.method public final B(Landroidx/compose/foundation/text/input/internal/z;Landroid/view/inputmethod/PreviewableHandwritingGesture;Landroidx/compose/foundation/text/input/internal/y;Landroid/os/CancellationSignal;)Z
-    .locals 2
+.method public final B(Landroidx/compose/foundation/text/input/internal/y;Landroid/view/inputmethod/PreviewableHandwritingGesture;Landroidx/compose/foundation/text/input/internal/x;Landroid/os/CancellationSignal;)Z
+    .locals 1
 
     .line 1
-    invoke-static {p2}, Landroidx/compose/foundation/text/input/internal/j;->A(Ljava/lang/Object;)Z
+    invoke-static {p2}, Landroidx/compose/foundation/text/input/internal/i;->A(Ljava/lang/Object;)Z
 
     .line 2
     .line 3
@@ -3485,159 +3488,159 @@
     move-result v0
 
     .line 5
-    const/4 v1, 0x0
-
-    .line 6
     if-eqz v0, :cond_0
 
+    .line 6
     .line 7
-    .line 8
-    invoke-static {p2}, Landroidx/camera/camera2/internal/compat/l;->l(Ljava/lang/Object;)Landroid/view/inputmethod/SelectGesture;
+    invoke-static {p2}, Landroidx/compose/foundation/text/input/internal/i;->s(Ljava/lang/Object;)Landroid/view/inputmethod/SelectGesture;
 
+    .line 8
     .line 9
     .line 10
-    .line 11
     move-result-object p2
+
+    .line 11
+    invoke-direct {p0, p1, p2, p3}, Landroidx/compose/foundation/text/input/internal/HandwritingGestureApi34;->D(Landroidx/compose/foundation/text/input/internal/y;Landroid/view/inputmethod/SelectGesture;Landroidx/compose/foundation/text/input/internal/x;)V
 
     .line 12
-    invoke-direct {p0, p1, p2, p3}, Landroidx/compose/foundation/text/input/internal/HandwritingGestureApi34;->D(Landroidx/compose/foundation/text/input/internal/z;Landroid/view/inputmethod/SelectGesture;Landroidx/compose/foundation/text/input/internal/y;)V
-
     .line 13
     .line 14
-    .line 15
     goto :goto_0
+
+    .line 15
+    :cond_0
+    invoke-static {p2}, LE0/a;->q(Ljava/lang/Object;)Z
 
     .line 16
-    :cond_0
-    invoke-static {p2}, Landroidx/camera/camera2/internal/compat/l;->r(Ljava/lang/Object;)Z
-
     .line 17
     .line 18
-    .line 19
     move-result v0
 
-    .line 20
+    .line 19
     if-eqz v0, :cond_1
 
+    .line 20
     .line 21
-    .line 22
-    invoke-static {p2}, Landroidx/camera/camera2/internal/compat/l;->g(Ljava/lang/Object;)Landroid/view/inputmethod/DeleteGesture;
+    invoke-static {p2}, LE0/a;->g(Ljava/lang/Object;)Landroid/view/inputmethod/DeleteGesture;
 
+    .line 22
     .line 23
     .line 24
-    .line 25
     move-result-object p2
+
+    .line 25
+    invoke-direct {p0, p1, p2, p3}, Landroidx/compose/foundation/text/input/internal/HandwritingGestureApi34;->x(Landroidx/compose/foundation/text/input/internal/y;Landroid/view/inputmethod/DeleteGesture;Landroidx/compose/foundation/text/input/internal/x;)V
 
     .line 26
-    invoke-direct {p0, p1, p2, p3}, Landroidx/compose/foundation/text/input/internal/HandwritingGestureApi34;->x(Landroidx/compose/foundation/text/input/internal/z;Landroid/view/inputmethod/DeleteGesture;Landroidx/compose/foundation/text/input/internal/y;)V
-
     .line 27
     .line 28
-    .line 29
     goto :goto_0
+
+    .line 29
+    :cond_1
+    invoke-static {p2}, LE0/a;->u(Ljava/lang/Object;)Z
 
     .line 30
-    :cond_1
-    invoke-static {p2}, Landroidx/camera/camera2/internal/compat/l;->u(Ljava/lang/Object;)Z
-
     .line 31
     .line 32
-    .line 33
     move-result v0
 
-    .line 34
+    .line 33
     if-eqz v0, :cond_2
 
+    .line 34
     .line 35
-    .line 36
-    invoke-static {p2}, Landroidx/camera/camera2/internal/compat/l;->m(Ljava/lang/Object;)Landroid/view/inputmethod/SelectRangeGesture;
+    invoke-static {p2}, LE0/a;->k(Ljava/lang/Object;)Landroid/view/inputmethod/SelectRangeGesture;
 
+    .line 36
     .line 37
     .line 38
-    .line 39
     move-result-object p2
+
+    .line 39
+    invoke-direct {p0, p1, p2, p3}, Landroidx/compose/foundation/text/input/internal/HandwritingGestureApi34;->F(Landroidx/compose/foundation/text/input/internal/y;Landroid/view/inputmethod/SelectRangeGesture;Landroidx/compose/foundation/text/input/internal/x;)V
 
     .line 40
-    invoke-direct {p0, p1, p2, p3}, Landroidx/compose/foundation/text/input/internal/HandwritingGestureApi34;->F(Landroidx/compose/foundation/text/input/internal/z;Landroid/view/inputmethod/SelectRangeGesture;Landroidx/compose/foundation/text/input/internal/y;)V
-
     .line 41
     .line 42
-    .line 43
     goto :goto_0
 
-    .line 44
+    .line 43
     :cond_2
-    invoke-static {p2}, Landroidx/camera/camera2/internal/compat/l;->w(Ljava/lang/Object;)Z
+    invoke-static {p2}, LE0/a;->w(Ljava/lang/Object;)Z
 
+    .line 44
     .line 45
     .line 46
-    .line 47
     move-result v0
 
-    .line 48
+    .line 47
     if-eqz v0, :cond_4
 
+    .line 48
     .line 49
-    .line 50
-    invoke-static {p2}, Landroidx/camera/camera2/internal/compat/l;->h(Ljava/lang/Object;)Landroid/view/inputmethod/DeleteRangeGesture;
+    invoke-static {p2}, LE0/a;->h(Ljava/lang/Object;)Landroid/view/inputmethod/DeleteRangeGesture;
 
+    .line 50
     .line 51
     .line 52
-    .line 53
     move-result-object p2
 
-    .line 54
-    invoke-direct {p0, p1, p2, p3}, Landroidx/compose/foundation/text/input/internal/HandwritingGestureApi34;->z(Landroidx/compose/foundation/text/input/internal/z;Landroid/view/inputmethod/DeleteRangeGesture;Landroidx/compose/foundation/text/input/internal/y;)V
+    .line 53
+    invoke-direct {p0, p1, p2, p3}, Landroidx/compose/foundation/text/input/internal/HandwritingGestureApi34;->z(Landroidx/compose/foundation/text/input/internal/y;Landroid/view/inputmethod/DeleteRangeGesture;Landroidx/compose/foundation/text/input/internal/x;)V
 
+    .line 54
     .line 55
     .line 56
-    .line 57
     :goto_0
     if-eqz p4, :cond_3
 
+    .line 57
     .line 58
+    new-instance p1, Landroidx/compose/foundation/text/input/internal/k;
+
     .line 59
-    new-instance p2, Landroidx/compose/foundation/text/input/internal/k;
-
     .line 60
-    .line 61
-    invoke-direct {p2, p1, v1}, Landroidx/compose/foundation/text/input/internal/k;-><init>(Ljava/lang/Object;I)V
+    invoke-direct {p1}, Ljava/lang/Object;-><init>()V
 
+    .line 61
     .line 62
     .line 63
-    .line 64
-    invoke-virtual {p4, p2}, Landroid/os/CancellationSignal;->setOnCancelListener(Landroid/os/CancellationSignal$OnCancelListener;)V
+    invoke-virtual {p4, p1}, Landroid/os/CancellationSignal;->setOnCancelListener(Landroid/os/CancellationSignal$OnCancelListener;)V
 
+    .line 64
     .line 65
     .line 66
-    .line 67
     :cond_3
     const/4 p1, 0x1
 
-    .line 68
+    .line 67
     return p1
 
-    .line 69
+    .line 68
     :cond_4
-    return v1
+    const/4 p1, 0x0
+
+    .line 69
+    return p1
 .end method
 
-.method public final i(Landroidx/compose/foundation/text/t;Landroid/view/inputmethod/HandwritingGesture;Landroidx/compose/foundation/text/selection/a0;Landroidx/compose/ui/platform/x2;Lzh/c;)I
+.method public final i(Landroidx/compose/foundation/text/s;Landroid/view/inputmethod/HandwritingGesture;Landroidx/compose/foundation/text/selection/x;Landroidx/compose/ui/platform/M0;Lka/c;)I
     .locals 6
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
-            "Landroidx/compose/foundation/text/t;",
+            "Landroidx/compose/foundation/text/s;",
             "Landroid/view/inputmethod/HandwritingGesture;",
-            "Landroidx/compose/foundation/text/selection/a0;",
-            "Landroidx/compose/ui/platform/x2;",
-            "Lzh/c;",
+            "Landroidx/compose/foundation/text/selection/x;",
+            "Landroidx/compose/ui/platform/M0;",
+            "Lka/c;",
             ")I"
         }
     .end annotation
 
     .line 1
-    iget-object v3, p1, Landroidx/compose/foundation/text/t;->j:Landroidx/compose/ui/text/f;
+    iget-object v3, p1, Landroidx/compose/foundation/text/s;->j:Landroidx/compose/ui/text/g;
 
     .line 2
     .line 3
@@ -3652,7 +3655,7 @@
 
     .line 7
     :cond_0
-    invoke-virtual {p1}, Landroidx/compose/foundation/text/t;->d()Landroidx/compose/foundation/text/i0;
+    invoke-virtual {p1}, Landroidx/compose/foundation/text/s;->d()Landroidx/compose/foundation/text/J;
 
     .line 8
     .line 9
@@ -3664,7 +3667,7 @@
 
     .line 12
     .line 13
-    iget-object v1, v1, Landroidx/compose/foundation/text/i0;->a:Landroidx/compose/ui/text/f0;
+    iget-object v1, v1, Landroidx/compose/foundation/text/J;->a:Landroidx/compose/ui/text/F;
 
     .line 14
     .line 15
@@ -3672,7 +3675,7 @@
 
     .line 16
     .line 17
-    iget-object v1, v1, Landroidx/compose/ui/text/f0;->a:Landroidx/compose/ui/text/e0;
+    iget-object v1, v1, Landroidx/compose/ui/text/F;->a:Landroidx/compose/ui/text/E;
 
     .line 18
     .line 19
@@ -3680,7 +3683,7 @@
 
     .line 20
     .line 21
-    iget-object v1, v1, Landroidx/compose/ui/text/e0;->a:Landroidx/compose/ui/text/f;
+    iget-object v1, v1, Landroidx/compose/ui/text/E;->a:Landroidx/compose/ui/text/g;
 
     .line 22
     .line 23
@@ -3692,7 +3695,7 @@
 
     .line 25
     :goto_0
-    invoke-static {v3, v1}, Lrb/h;->d(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-virtual {v3, v1}, Landroidx/compose/ui/text/g;->equals(Ljava/lang/Object;)Z
 
     .line 26
     .line 27
@@ -3708,7 +3711,7 @@
 
     .line 32
     :cond_2
-    invoke-static {p2}, Landroidx/compose/foundation/text/input/internal/j;->A(Ljava/lang/Object;)Z
+    invoke-static {p2}, Landroidx/compose/foundation/text/input/internal/i;->A(Ljava/lang/Object;)Z
 
     .line 33
     .line 34
@@ -3720,7 +3723,7 @@
 
     .line 37
     .line 38
-    invoke-static {p2}, Landroidx/camera/camera2/internal/compat/l;->l(Ljava/lang/Object;)Landroid/view/inputmethod/SelectGesture;
+    invoke-static {p2}, Landroidx/compose/foundation/text/input/internal/i;->s(Ljava/lang/Object;)Landroid/view/inputmethod/SelectGesture;
 
     .line 39
     .line 40
@@ -3728,7 +3731,7 @@
     move-result-object p2
 
     .line 42
-    invoke-direct {p0, p1, p2, p3, p5}, Landroidx/compose/foundation/text/input/internal/HandwritingGestureApi34;->r(Landroidx/compose/foundation/text/t;Landroid/view/inputmethod/SelectGesture;Landroidx/compose/foundation/text/selection/a0;Lzh/c;)I
+    invoke-direct {p0, p1, p2, p3, p5}, Landroidx/compose/foundation/text/input/internal/HandwritingGestureApi34;->r(Landroidx/compose/foundation/text/s;Landroid/view/inputmethod/SelectGesture;Landroidx/compose/foundation/text/selection/x;Lka/c;)I
 
     .line 43
     .line 44
@@ -3741,7 +3744,7 @@
     .line 47
     .line 48
     :cond_3
-    invoke-static {p2}, Landroidx/camera/camera2/internal/compat/l;->r(Ljava/lang/Object;)Z
+    invoke-static {p2}, LE0/a;->q(Ljava/lang/Object;)Z
 
     .line 49
     .line 50
@@ -3753,7 +3756,7 @@
 
     .line 53
     .line 54
-    invoke-static {p2}, Landroidx/camera/camera2/internal/compat/l;->g(Ljava/lang/Object;)Landroid/view/inputmethod/DeleteGesture;
+    invoke-static {p2}, LE0/a;->g(Ljava/lang/Object;)Landroid/view/inputmethod/DeleteGesture;
 
     .line 55
     .line 56
@@ -3761,7 +3764,7 @@
     move-result-object p2
 
     .line 58
-    invoke-direct {p0, p1, p2, v3, p5}, Landroidx/compose/foundation/text/input/internal/HandwritingGestureApi34;->c(Landroidx/compose/foundation/text/t;Landroid/view/inputmethod/DeleteGesture;Landroidx/compose/ui/text/f;Lzh/c;)I
+    invoke-direct {p0, p1, p2, v3, p5}, Landroidx/compose/foundation/text/input/internal/HandwritingGestureApi34;->c(Landroidx/compose/foundation/text/s;Landroid/view/inputmethod/DeleteGesture;Landroidx/compose/ui/text/g;Lka/c;)I
 
     .line 59
     .line 60
@@ -3773,7 +3776,7 @@
 
     .line 63
     :cond_4
-    invoke-static {p2}, Landroidx/camera/camera2/internal/compat/l;->u(Ljava/lang/Object;)Z
+    invoke-static {p2}, LE0/a;->u(Ljava/lang/Object;)Z
 
     .line 64
     .line 65
@@ -3785,7 +3788,7 @@
 
     .line 68
     .line 69
-    invoke-static {p2}, Landroidx/camera/camera2/internal/compat/l;->m(Ljava/lang/Object;)Landroid/view/inputmethod/SelectRangeGesture;
+    invoke-static {p2}, LE0/a;->k(Ljava/lang/Object;)Landroid/view/inputmethod/SelectRangeGesture;
 
     .line 70
     .line 71
@@ -3793,7 +3796,7 @@
     move-result-object p2
 
     .line 73
-    invoke-direct {p0, p1, p2, p3, p5}, Landroidx/compose/foundation/text/input/internal/HandwritingGestureApi34;->t(Landroidx/compose/foundation/text/t;Landroid/view/inputmethod/SelectRangeGesture;Landroidx/compose/foundation/text/selection/a0;Lzh/c;)I
+    invoke-direct {p0, p1, p2, p3, p5}, Landroidx/compose/foundation/text/input/internal/HandwritingGestureApi34;->t(Landroidx/compose/foundation/text/s;Landroid/view/inputmethod/SelectRangeGesture;Landroidx/compose/foundation/text/selection/x;Lka/c;)I
 
     .line 74
     .line 75
@@ -3805,7 +3808,7 @@
 
     .line 78
     :cond_5
-    invoke-static {p2}, Landroidx/camera/camera2/internal/compat/l;->w(Ljava/lang/Object;)Z
+    invoke-static {p2}, LE0/a;->w(Ljava/lang/Object;)Z
 
     .line 79
     .line 80
@@ -3817,7 +3820,7 @@
 
     .line 83
     .line 84
-    invoke-static {p2}, Landroidx/camera/camera2/internal/compat/l;->h(Ljava/lang/Object;)Landroid/view/inputmethod/DeleteRangeGesture;
+    invoke-static {p2}, LE0/a;->h(Ljava/lang/Object;)Landroid/view/inputmethod/DeleteRangeGesture;
 
     .line 85
     .line 86
@@ -3825,7 +3828,7 @@
     move-result-object p2
 
     .line 88
-    invoke-direct {p0, p1, p2, v3, p5}, Landroidx/compose/foundation/text/input/internal/HandwritingGestureApi34;->e(Landroidx/compose/foundation/text/t;Landroid/view/inputmethod/DeleteRangeGesture;Landroidx/compose/ui/text/f;Lzh/c;)I
+    invoke-direct {p0, p1, p2, v3, p5}, Landroidx/compose/foundation/text/input/internal/HandwritingGestureApi34;->e(Landroidx/compose/foundation/text/s;Landroid/view/inputmethod/DeleteRangeGesture;Landroidx/compose/ui/text/g;Lka/c;)I
 
     .line 89
     .line 90
@@ -3837,7 +3840,7 @@
 
     .line 93
     :cond_6
-    invoke-static {p2}, Landroidx/camera/camera2/internal/compat/l;->C(Ljava/lang/Object;)Z
+    invoke-static {p2}, LE0/a;->C(Ljava/lang/Object;)Z
 
     .line 94
     .line 95
@@ -3849,7 +3852,7 @@
 
     .line 98
     .line 99
-    invoke-static {p2}, Landroidx/camera/camera2/internal/compat/l;->j(Ljava/lang/Object;)Landroid/view/inputmethod/JoinOrSplitGesture;
+    invoke-static {p2}, Landroidx/compose/foundation/text/input/internal/i;->r(Ljava/lang/Object;)Landroid/view/inputmethod/JoinOrSplitGesture;
 
     .line 100
     .line 101
@@ -3869,7 +3872,7 @@
     move-object v5, p5
 
     .line 107
-    invoke-direct/range {v0 .. v5}, Landroidx/compose/foundation/text/input/internal/HandwritingGestureApi34;->n(Landroidx/compose/foundation/text/t;Landroid/view/inputmethod/JoinOrSplitGesture;Landroidx/compose/ui/text/f;Landroidx/compose/ui/platform/x2;Lzh/c;)I
+    invoke-direct/range {v0 .. v5}, Landroidx/compose/foundation/text/input/internal/HandwritingGestureApi34;->n(Landroidx/compose/foundation/text/s;Landroid/view/inputmethod/JoinOrSplitGesture;Landroidx/compose/ui/text/g;Landroidx/compose/ui/platform/M0;Lka/c;)I
 
     .line 108
     .line 109
@@ -3881,7 +3884,7 @@
 
     .line 112
     :cond_7
-    invoke-static {p2}, Landroidx/camera/camera2/internal/compat/l;->y(Ljava/lang/Object;)Z
+    invoke-static {p2}, LE0/a;->y(Ljava/lang/Object;)Z
 
     .line 113
     .line 114
@@ -3893,7 +3896,7 @@
 
     .line 117
     .line 118
-    invoke-static {p2}, Landroidx/camera/camera2/internal/compat/l;->i(Ljava/lang/Object;)Landroid/view/inputmethod/InsertGesture;
+    invoke-static {p2}, LE0/a;->i(Ljava/lang/Object;)Landroid/view/inputmethod/InsertGesture;
 
     .line 119
     .line 120
@@ -3901,7 +3904,7 @@
     move-result-object p2
 
     .line 122
-    invoke-direct {p0, p1, p2, p4, p5}, Landroidx/compose/foundation/text/input/internal/HandwritingGestureApi34;->k(Landroidx/compose/foundation/text/t;Landroid/view/inputmethod/InsertGesture;Landroidx/compose/ui/platform/x2;Lzh/c;)I
+    invoke-direct {p0, p1, p2, p4, p5}, Landroidx/compose/foundation/text/input/internal/HandwritingGestureApi34;->k(Landroidx/compose/foundation/text/s;Landroid/view/inputmethod/InsertGesture;Landroidx/compose/ui/platform/M0;Lka/c;)I
 
     .line 123
     .line 124
@@ -3913,7 +3916,7 @@
 
     .line 127
     :cond_8
-    invoke-static {p2}, Landroidx/camera/camera2/internal/compat/l;->A(Ljava/lang/Object;)Z
+    invoke-static {p2}, LE0/a;->A(Ljava/lang/Object;)Z
 
     .line 128
     .line 129
@@ -3925,7 +3928,7 @@
 
     .line 132
     .line 133
-    invoke-static {p2}, Landroidx/camera/camera2/internal/compat/l;->k(Ljava/lang/Object;)Landroid/view/inputmethod/RemoveSpaceGesture;
+    invoke-static {p2}, LE0/a;->j(Ljava/lang/Object;)Landroid/view/inputmethod/RemoveSpaceGesture;
 
     .line 134
     .line 135
@@ -3945,7 +3948,7 @@
     move-object v5, p5
 
     .line 141
-    invoke-direct/range {v0 .. v5}, Landroidx/compose/foundation/text/input/internal/HandwritingGestureApi34;->p(Landroidx/compose/foundation/text/t;Landroid/view/inputmethod/RemoveSpaceGesture;Landroidx/compose/ui/text/f;Landroidx/compose/ui/platform/x2;Lzh/c;)I
+    invoke-direct/range {v0 .. v5}, Landroidx/compose/foundation/text/input/internal/HandwritingGestureApi34;->p(Landroidx/compose/foundation/text/s;Landroid/view/inputmethod/RemoveSpaceGesture;Landroidx/compose/ui/text/g;Landroidx/compose/ui/platform/M0;Lka/c;)I
 
     .line 142
     .line 143
@@ -3964,11 +3967,11 @@
     return p1
 .end method
 
-.method public final j(Landroidx/compose/foundation/text/input/internal/z;Landroid/view/inputmethod/HandwritingGesture;Landroidx/compose/foundation/text/input/internal/y;Landroidx/compose/ui/platform/x2;)I
+.method public final j(Landroidx/compose/foundation/text/input/internal/y;Landroid/view/inputmethod/HandwritingGesture;Landroidx/compose/foundation/text/input/internal/x;Landroidx/compose/ui/platform/M0;)I
     .locals 1
 
     .line 1
-    invoke-static {p2}, Landroidx/compose/foundation/text/input/internal/j;->A(Ljava/lang/Object;)Z
+    invoke-static {p2}, Landroidx/compose/foundation/text/input/internal/i;->A(Ljava/lang/Object;)Z
 
     .line 2
     .line 3
@@ -3980,7 +3983,7 @@
 
     .line 6
     .line 7
-    invoke-static {p2}, Landroidx/camera/camera2/internal/compat/l;->l(Ljava/lang/Object;)Landroid/view/inputmethod/SelectGesture;
+    invoke-static {p2}, Landroidx/compose/foundation/text/input/internal/i;->s(Ljava/lang/Object;)Landroid/view/inputmethod/SelectGesture;
 
     .line 8
     .line 9
@@ -3988,7 +3991,7 @@
     move-result-object p2
 
     .line 11
-    invoke-direct {p0, p1, p2, p3}, Landroidx/compose/foundation/text/input/internal/HandwritingGestureApi34;->s(Landroidx/compose/foundation/text/input/internal/z;Landroid/view/inputmethod/SelectGesture;Landroidx/compose/foundation/text/input/internal/y;)I
+    invoke-direct {p0, p1, p2, p3}, Landroidx/compose/foundation/text/input/internal/HandwritingGestureApi34;->s(Landroidx/compose/foundation/text/input/internal/y;Landroid/view/inputmethod/SelectGesture;Landroidx/compose/foundation/text/input/internal/x;)I
 
     .line 12
     .line 13
@@ -4000,7 +4003,7 @@
 
     .line 16
     :cond_0
-    invoke-static {p2}, Landroidx/camera/camera2/internal/compat/l;->r(Ljava/lang/Object;)Z
+    invoke-static {p2}, LE0/a;->q(Ljava/lang/Object;)Z
 
     .line 17
     .line 18
@@ -4012,7 +4015,7 @@
 
     .line 21
     .line 22
-    invoke-static {p2}, Landroidx/camera/camera2/internal/compat/l;->g(Ljava/lang/Object;)Landroid/view/inputmethod/DeleteGesture;
+    invoke-static {p2}, LE0/a;->g(Ljava/lang/Object;)Landroid/view/inputmethod/DeleteGesture;
 
     .line 23
     .line 24
@@ -4020,7 +4023,7 @@
     move-result-object p2
 
     .line 26
-    invoke-direct {p0, p1, p2, p3}, Landroidx/compose/foundation/text/input/internal/HandwritingGestureApi34;->d(Landroidx/compose/foundation/text/input/internal/z;Landroid/view/inputmethod/DeleteGesture;Landroidx/compose/foundation/text/input/internal/y;)I
+    invoke-direct {p0, p1, p2, p3}, Landroidx/compose/foundation/text/input/internal/HandwritingGestureApi34;->d(Landroidx/compose/foundation/text/input/internal/y;Landroid/view/inputmethod/DeleteGesture;Landroidx/compose/foundation/text/input/internal/x;)I
 
     .line 27
     .line 28
@@ -4032,7 +4035,7 @@
 
     .line 31
     :cond_1
-    invoke-static {p2}, Landroidx/camera/camera2/internal/compat/l;->u(Ljava/lang/Object;)Z
+    invoke-static {p2}, LE0/a;->u(Ljava/lang/Object;)Z
 
     .line 32
     .line 33
@@ -4044,7 +4047,7 @@
 
     .line 36
     .line 37
-    invoke-static {p2}, Landroidx/camera/camera2/internal/compat/l;->m(Ljava/lang/Object;)Landroid/view/inputmethod/SelectRangeGesture;
+    invoke-static {p2}, LE0/a;->k(Ljava/lang/Object;)Landroid/view/inputmethod/SelectRangeGesture;
 
     .line 38
     .line 39
@@ -4052,7 +4055,7 @@
     move-result-object p2
 
     .line 41
-    invoke-direct {p0, p1, p2, p3}, Landroidx/compose/foundation/text/input/internal/HandwritingGestureApi34;->u(Landroidx/compose/foundation/text/input/internal/z;Landroid/view/inputmethod/SelectRangeGesture;Landroidx/compose/foundation/text/input/internal/y;)I
+    invoke-direct {p0, p1, p2, p3}, Landroidx/compose/foundation/text/input/internal/HandwritingGestureApi34;->u(Landroidx/compose/foundation/text/input/internal/y;Landroid/view/inputmethod/SelectRangeGesture;Landroidx/compose/foundation/text/input/internal/x;)I
 
     .line 42
     .line 43
@@ -4064,7 +4067,7 @@
 
     .line 46
     :cond_2
-    invoke-static {p2}, Landroidx/camera/camera2/internal/compat/l;->w(Ljava/lang/Object;)Z
+    invoke-static {p2}, LE0/a;->w(Ljava/lang/Object;)Z
 
     .line 47
     .line 48
@@ -4076,7 +4079,7 @@
 
     .line 51
     .line 52
-    invoke-static {p2}, Landroidx/camera/camera2/internal/compat/l;->h(Ljava/lang/Object;)Landroid/view/inputmethod/DeleteRangeGesture;
+    invoke-static {p2}, LE0/a;->h(Ljava/lang/Object;)Landroid/view/inputmethod/DeleteRangeGesture;
 
     .line 53
     .line 54
@@ -4084,7 +4087,7 @@
     move-result-object p2
 
     .line 56
-    invoke-direct {p0, p1, p2, p3}, Landroidx/compose/foundation/text/input/internal/HandwritingGestureApi34;->f(Landroidx/compose/foundation/text/input/internal/z;Landroid/view/inputmethod/DeleteRangeGesture;Landroidx/compose/foundation/text/input/internal/y;)I
+    invoke-direct {p0, p1, p2, p3}, Landroidx/compose/foundation/text/input/internal/HandwritingGestureApi34;->f(Landroidx/compose/foundation/text/input/internal/y;Landroid/view/inputmethod/DeleteRangeGesture;Landroidx/compose/foundation/text/input/internal/x;)I
 
     .line 57
     .line 58
@@ -4096,7 +4099,7 @@
 
     .line 61
     :cond_3
-    invoke-static {p2}, Landroidx/camera/camera2/internal/compat/l;->C(Ljava/lang/Object;)Z
+    invoke-static {p2}, LE0/a;->C(Ljava/lang/Object;)Z
 
     .line 62
     .line 63
@@ -4108,7 +4111,7 @@
 
     .line 66
     .line 67
-    invoke-static {p2}, Landroidx/camera/camera2/internal/compat/l;->j(Ljava/lang/Object;)Landroid/view/inputmethod/JoinOrSplitGesture;
+    invoke-static {p2}, Landroidx/compose/foundation/text/input/internal/i;->r(Ljava/lang/Object;)Landroid/view/inputmethod/JoinOrSplitGesture;
 
     .line 68
     .line 69
@@ -4116,7 +4119,7 @@
     move-result-object p2
 
     .line 71
-    invoke-direct {p0, p1, p2, p3, p4}, Landroidx/compose/foundation/text/input/internal/HandwritingGestureApi34;->o(Landroidx/compose/foundation/text/input/internal/z;Landroid/view/inputmethod/JoinOrSplitGesture;Landroidx/compose/foundation/text/input/internal/y;Landroidx/compose/ui/platform/x2;)I
+    invoke-direct {p0, p1, p2, p3, p4}, Landroidx/compose/foundation/text/input/internal/HandwritingGestureApi34;->o(Landroidx/compose/foundation/text/input/internal/y;Landroid/view/inputmethod/JoinOrSplitGesture;Landroidx/compose/foundation/text/input/internal/x;Landroidx/compose/ui/platform/M0;)I
 
     .line 72
     .line 73
@@ -4128,7 +4131,7 @@
 
     .line 76
     :cond_4
-    invoke-static {p2}, Landroidx/camera/camera2/internal/compat/l;->y(Ljava/lang/Object;)Z
+    invoke-static {p2}, LE0/a;->y(Ljava/lang/Object;)Z
 
     .line 77
     .line 78
@@ -4140,7 +4143,7 @@
 
     .line 81
     .line 82
-    invoke-static {p2}, Landroidx/camera/camera2/internal/compat/l;->i(Ljava/lang/Object;)Landroid/view/inputmethod/InsertGesture;
+    invoke-static {p2}, LE0/a;->i(Ljava/lang/Object;)Landroid/view/inputmethod/InsertGesture;
 
     .line 83
     .line 84
@@ -4148,7 +4151,7 @@
     move-result-object p2
 
     .line 86
-    invoke-direct {p0, p1, p2, p3, p4}, Landroidx/compose/foundation/text/input/internal/HandwritingGestureApi34;->l(Landroidx/compose/foundation/text/input/internal/z;Landroid/view/inputmethod/InsertGesture;Landroidx/compose/foundation/text/input/internal/y;Landroidx/compose/ui/platform/x2;)I
+    invoke-direct {p0, p1, p2, p3, p4}, Landroidx/compose/foundation/text/input/internal/HandwritingGestureApi34;->l(Landroidx/compose/foundation/text/input/internal/y;Landroid/view/inputmethod/InsertGesture;Landroidx/compose/foundation/text/input/internal/x;Landroidx/compose/ui/platform/M0;)I
 
     .line 87
     .line 88
@@ -4160,7 +4163,7 @@
 
     .line 91
     :cond_5
-    invoke-static {p2}, Landroidx/camera/camera2/internal/compat/l;->A(Ljava/lang/Object;)Z
+    invoke-static {p2}, LE0/a;->A(Ljava/lang/Object;)Z
 
     .line 92
     .line 93
@@ -4172,7 +4175,7 @@
 
     .line 96
     .line 97
-    invoke-static {p2}, Landroidx/camera/camera2/internal/compat/l;->k(Ljava/lang/Object;)Landroid/view/inputmethod/RemoveSpaceGesture;
+    invoke-static {p2}, LE0/a;->j(Ljava/lang/Object;)Landroid/view/inputmethod/RemoveSpaceGesture;
 
     .line 98
     .line 99
@@ -4180,7 +4183,7 @@
     move-result-object p2
 
     .line 101
-    invoke-direct {p0, p1, p2, p3, p4}, Landroidx/compose/foundation/text/input/internal/HandwritingGestureApi34;->q(Landroidx/compose/foundation/text/input/internal/z;Landroid/view/inputmethod/RemoveSpaceGesture;Landroidx/compose/foundation/text/input/internal/y;Landroidx/compose/ui/platform/x2;)I
+    invoke-direct {p0, p1, p2, p3, p4}, Landroidx/compose/foundation/text/input/internal/HandwritingGestureApi34;->q(Landroidx/compose/foundation/text/input/internal/y;Landroid/view/inputmethod/RemoveSpaceGesture;Landroidx/compose/foundation/text/input/internal/x;Landroidx/compose/ui/platform/M0;)I
 
     .line 102
     .line 103

@@ -53,7 +53,7 @@
 
     .line 10
     .line 11
-    invoke-static {p1, p2}, Landroid/support/v4/media/c;->A(Landroid/text/StaticLayout$Builder;Landroid/text/TextDirectionHeuristic;)V
+    invoke-static {p1, p2}, Landroidx/appcompat/widget/a;->z(Landroid/text/StaticLayout$Builder;Landroid/text/TextDirectionHeuristic;)V
 
     .line 12
     .line 13

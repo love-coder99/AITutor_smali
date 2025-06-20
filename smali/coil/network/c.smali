@@ -4,13 +4,13 @@
 
 
 # instance fields
-.field public final a:Ly/r0;
+.field public final a:Lv/Y;
 
 .field public final b:Lcoil/network/a;
 
 
 # direct methods
-.method public constructor <init>(Ly/r0;Lcoil/network/a;)V
+.method public constructor <init>(Lv/Y;Lcoil/network/a;)V
     .locals 0
 
     .line 1
@@ -19,7 +19,7 @@
     .line 2
     .line 3
     .line 4
-    iput-object p1, p0, Lcoil/network/c;->a:Ly/r0;
+    iput-object p1, p0, Lcoil/network/c;->a:Lv/Y;
 
     .line 5
     .line 6

@@ -3,14 +3,14 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lzh/a;
+.implements Lka/a;
 
 
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "Lkotlin/jvm/internal/Lambda;",
-        "Lzh/a;"
+        "Lka/a;"
     }
 .end annotation
 
@@ -20,9 +20,9 @@
     }
     d2 = {
         "T",
-        "Landroidx/compose/animation/core/m;",
+        "Landroidx/compose/animation/core/l;",
         "V",
-        "Lqh/r;",
+        "LX9/j;",
         "invoke",
         "()V",
         "<anonymous>"
@@ -85,7 +85,7 @@
     .line 1
     invoke-virtual {p0}, Landroidx/compose/animation/core/AnimateAsStateKt$animateValueAsState$2$1;->invoke()V
 
-    sget-object v0, Lqh/r;->a:Lqh/r;
+    sget-object v0, LX9/j;->a:LX9/j;
 
     return-object v0
 .end method
@@ -93,12 +93,12 @@
 .method public final invoke()V
     .locals 2
 
+    .line 2
     iget-object v0, p0, Landroidx/compose/animation/core/AnimateAsStateKt$animateValueAsState$2$1;->$channel:Lkotlinx/coroutines/channels/e;
 
     iget-object v1, p0, Landroidx/compose/animation/core/AnimateAsStateKt$animateValueAsState$2$1;->$targetValue:Ljava/lang/Object;
 
-    .line 2
-    invoke-interface {v0, v1}, Lkotlinx/coroutines/channels/p;->o(Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-interface {v0, v1}, Lkotlinx/coroutines/channels/p;->l(Ljava/lang/Object;)Ljava/lang/Object;
 
     return-void
 .end method

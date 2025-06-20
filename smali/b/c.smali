@@ -1,43 +1,12 @@
-.class public interface abstract Lb/c;
+.class public interface abstract annotation LB/C;
 .super Ljava/lang/Object;
 .source "SourceFile"
 
 # interfaces
-.implements Landroid/os/IInterface;
+.implements Ljava/lang/annotation/Annotation;
 
 
-# static fields
-.field public static final F8:Ljava/lang/String;
-
-
-# direct methods
-.method static constructor <clinit>()V
-    .locals 3
-
-    .line 1
-    const/16 v0, 0x24
-
-    .line 2
-    .line 3
-    const/16 v1, 0x2e
-
-    .line 4
-    .line 5
-    const-string v2, "android$support$v4$app$INotificationSideChannel"
-
-    .line 6
-    .line 7
-    invoke-virtual {v2, v0, v1}, Ljava/lang/String;->replace(CC)Ljava/lang/String;
-
-    .line 8
-    .line 9
-    .line 10
-    move-result-object v0
-
-    .line 11
-    sput-object v0, Lb/c;->F8:Ljava/lang/String;
-
-    .line 12
-    .line 13
-    return-void
-.end method
+# annotations
+.annotation runtime Ljava/lang/annotation/Retention;
+    value = .enum Ljava/lang/annotation/RetentionPolicy;->SOURCE:Ljava/lang/annotation/RetentionPolicy;
+.end annotation

@@ -39,14 +39,15 @@
     </string-array>
     <string-array name="languages_label">
         <item>English</item>
+        <item>French</item>
+        <item>German</item>
+        <item>Spanish</item>
+        <item>Portuguese</item>
         <item>Vietnamese</item>
         <item>Chinese</item>
         <item>Hindi</item>
-        <item>Portuguese</item>
         <item>Indonesia</item>
-        <item>Spanish</item>
         <item>Japanese</item>
-        <item>French</item>
         <item>Nederlands</item>
         <item>Filipino</item>
         <item>Schwiizerdütsch</item>

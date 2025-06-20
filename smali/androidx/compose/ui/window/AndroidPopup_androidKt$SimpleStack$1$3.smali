@@ -3,14 +3,14 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lzh/c;
+.implements Lka/c;
 
 
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "Lkotlin/jvm/internal/Lambda;",
-        "Lzh/c;"
+        "Lka/c;"
     }
 .end annotation
 
@@ -19,10 +19,10 @@
         "\u0000\u000c\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0008\u0003\u0010\u0004\u001a\u00020\u0001*\u00020\u0000H\n\u00a2\u0006\u0004\u0008\u0002\u0010\u0003"
     }
     d2 = {
-        "Landroidx/compose/ui/layout/z0;",
-        "Lqh/r;",
+        "Landroidx/compose/ui/layout/W;",
+        "LX9/j;",
         "invoke",
-        "(Landroidx/compose/ui/layout/z0;)V",
+        "(Landroidx/compose/ui/layout/W;)V",
         "<anonymous>"
     }
     k = 0x3
@@ -39,7 +39,7 @@
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/List<",
-            "Landroidx/compose/ui/layout/a1;",
+            "Landroidx/compose/ui/layout/X;",
             ">;"
         }
     .end annotation
@@ -54,7 +54,7 @@
             "(",
             "Ljava/util/List<",
             "+",
-            "Landroidx/compose/ui/layout/a1;",
+            "Landroidx/compose/ui/layout/X;",
             ">;)V"
         }
     .end annotation
@@ -74,22 +74,22 @@
     .locals 0
 
     .line 1
-    check-cast p1, Landroidx/compose/ui/layout/z0;
+    check-cast p1, Landroidx/compose/ui/layout/W;
 
-    invoke-virtual {p0, p1}, Landroidx/compose/ui/window/AndroidPopup_androidKt$SimpleStack$1$3;->invoke(Landroidx/compose/ui/layout/z0;)V
+    invoke-virtual {p0, p1}, Landroidx/compose/ui/window/AndroidPopup_androidKt$SimpleStack$1$3;->invoke(Landroidx/compose/ui/layout/W;)V
 
-    sget-object p1, Lqh/r;->a:Lqh/r;
+    sget-object p1, LX9/j;->a:LX9/j;
 
     return-object p1
 .end method
 
-.method public final invoke(Landroidx/compose/ui/layout/z0;)V
+.method public final invoke(Landroidx/compose/ui/layout/W;)V
     .locals 4
 
+    .line 2
     iget-object v0, p0, Landroidx/compose/ui/window/AndroidPopup_androidKt$SimpleStack$1$3;->$placeables:Ljava/util/List;
 
-    .line 2
-    invoke-static {v0}, Lma/a;->I(Ljava/util/List;)I
+    invoke-static {v0}, LY9/r;->y(Ljava/util/List;)I
 
     move-result v0
 
@@ -99,18 +99,18 @@
 
     const/4 v2, 0x0
 
+    .line 3
     :goto_0
     iget-object v3, p0, Landroidx/compose/ui/window/AndroidPopup_androidKt$SimpleStack$1$3;->$placeables:Ljava/util/List;
 
-    .line 3
     invoke-interface {v3, v2}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
     move-result-object v3
 
-    check-cast v3, Landroidx/compose/ui/layout/a1;
+    check-cast v3, Landroidx/compose/ui/layout/X;
 
     .line 4
-    invoke-static {p1, v3, v1, v1}, Landroidx/compose/ui/layout/z0;->f(Landroidx/compose/ui/layout/z0;Landroidx/compose/ui/layout/a1;II)V
+    invoke-static {p1, v3, v1, v1}, Landroidx/compose/ui/layout/W;->f(Landroidx/compose/ui/layout/W;Landroidx/compose/ui/layout/X;II)V
 
     if-eq v2, v0, :cond_0
 

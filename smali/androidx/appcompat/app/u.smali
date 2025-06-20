@@ -3,22 +3,16 @@
 .source "SourceFile"
 
 # interfaces
-.implements Ljava/util/concurrent/Executor;
+.implements Landroidx/appcompat/widget/ContentFrameLayout$OnAttachListener;
 
 
 # instance fields
-.field public final b:Ljava/lang/Object;
-
-.field public final c:Ljava/util/ArrayDeque;
-
-.field public final d:Ljava/util/concurrent/Executor;
-
-.field public f:Ljava/lang/Runnable;
+.field public final synthetic a:Landroidx/appcompat/app/F;
 
 
 # direct methods
-.method public constructor <init>(Landroidx/appcompat/app/v;)V
-    .locals 1
+.method public constructor <init>(Landroidx/appcompat/app/F;)V
+    .locals 0
 
     .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -26,182 +20,151 @@
     .line 2
     .line 3
     .line 4
-    new-instance v0, Ljava/lang/Object;
+    iput-object p1, p0, Landroidx/appcompat/app/u;->a:Landroidx/appcompat/app/F;
 
     .line 5
     .line 6
-    invoke-direct {v0}, Ljava/lang/Object;-><init>()V
-
-    .line 7
-    .line 8
-    .line 9
-    iput-object v0, p0, Landroidx/appcompat/app/u;->b:Ljava/lang/Object;
-
-    .line 10
-    .line 11
-    new-instance v0, Ljava/util/ArrayDeque;
-
-    .line 12
-    .line 13
-    invoke-direct {v0}, Ljava/util/ArrayDeque;-><init>()V
-
-    .line 14
-    .line 15
-    .line 16
-    iput-object v0, p0, Landroidx/appcompat/app/u;->c:Ljava/util/ArrayDeque;
-
-    .line 17
-    .line 18
-    iput-object p1, p0, Landroidx/appcompat/app/u;->d:Ljava/util/concurrent/Executor;
-
-    .line 19
-    .line 20
     return-void
 .end method
 
 
 # virtual methods
-.method public final a()V
+.method public final onAttachedFromWindow()V
+    .locals 0
+
+    return-void
+.end method
+
+.method public final onDetachedFromWindow()V
     .locals 3
 
     .line 1
-    iget-object v0, p0, Landroidx/appcompat/app/u;->b:Ljava/lang/Object;
+    iget-object v0, p0, Landroidx/appcompat/app/u;->a:Landroidx/appcompat/app/F;
 
     .line 2
     .line 3
-    monitor-enter v0
+    iget-object v1, v0, Landroidx/appcompat/app/F;->t:Landroidx/appcompat/widget/DecorContentParent;
 
     .line 4
-    :try_start_0
-    iget-object v1, p0, Landroidx/appcompat/app/u;->c:Ljava/util/ArrayDeque;
-
     .line 5
-    .line 6
-    invoke-virtual {v1}, Ljava/util/ArrayDeque;->poll()Ljava/lang/Object;
-
-    .line 7
-    .line 8
-    .line 9
-    move-result-object v1
-
-    .line 10
-    check-cast v1, Ljava/lang/Runnable;
-
-    .line 11
-    .line 12
-    iput-object v1, p0, Landroidx/appcompat/app/u;->f:Ljava/lang/Runnable;
-
-    .line 13
-    .line 14
     if-eqz v1, :cond_0
 
-    .line 15
-    .line 16
-    iget-object v2, p0, Landroidx/appcompat/app/u;->d:Ljava/util/concurrent/Executor;
-
-    .line 17
-    .line 18
-    invoke-interface {v2, v1}, Ljava/util/concurrent/Executor;->execute(Ljava/lang/Runnable;)V
-
-    .line 19
-    .line 20
-    .line 21
-    goto :goto_0
-
-    .line 22
-    :catchall_0
-    move-exception v1
-
-    .line 23
-    goto :goto_1
-
-    .line 24
-    :cond_0
-    :goto_0
-    monitor-exit v0
-
-    .line 25
-    return-void
-
-    .line 26
-    :goto_1
-    monitor-exit v0
-    :try_end_0
-    .catchall {:try_start_0 .. :try_end_0} :catchall_0
-
-    .line 27
-    throw v1
-.end method
-
-.method public final execute(Ljava/lang/Runnable;)V
-    .locals 4
-
-    .line 1
-    iget-object v0, p0, Landroidx/appcompat/app/u;->b:Ljava/lang/Object;
-
-    .line 2
-    .line 3
-    monitor-enter v0
-
-    .line 4
-    :try_start_0
-    iget-object v1, p0, Landroidx/appcompat/app/u;->c:Ljava/util/ArrayDeque;
-
-    .line 5
     .line 6
-    new-instance v2, Landroidx/appcompat/app/t;
-
     .line 7
+    invoke-interface {v1}, Landroidx/appcompat/widget/DecorContentParent;->dismissPopups()V
+
     .line 8
-    const/4 v3, 0x0
-
     .line 9
-    invoke-direct {v2, p0, v3, p1}, Landroidx/appcompat/app/t;-><init>(Ljava/lang/Object;ILjava/lang/Object;)V
-
     .line 10
+    :cond_0
+    iget-object v1, v0, Landroidx/appcompat/app/F;->y:Landroid/widget/PopupWindow;
+
     .line 11
     .line 12
-    invoke-virtual {v1, v2}, Ljava/util/ArrayDeque;->add(Ljava/lang/Object;)Z
+    if-eqz v1, :cond_2
 
     .line 13
     .line 14
+    iget-object v1, v0, Landroidx/appcompat/app/F;->n:Landroid/view/Window;
+
     .line 15
-    iget-object p1, p0, Landroidx/appcompat/app/u;->f:Ljava/lang/Runnable;
-
     .line 16
-    .line 17
-    if-nez p1, :cond_0
+    invoke-virtual {v1}, Landroid/view/Window;->getDecorView()Landroid/view/View;
 
+    .line 17
     .line 18
     .line 19
-    invoke-virtual {p0}, Landroidx/appcompat/app/u;->a()V
+    move-result-object v1
 
     .line 20
+    iget-object v2, v0, Landroidx/appcompat/app/F;->z:Landroidx/appcompat/app/s;
+
     .line 21
     .line 22
-    goto :goto_0
+    invoke-virtual {v1, v2}, Landroid/view/View;->removeCallbacks(Ljava/lang/Runnable;)Z
 
     .line 23
-    :catchall_0
-    move-exception p1
-
     .line 24
-    goto :goto_1
-
     .line 25
-    :cond_0
-    :goto_0
-    monitor-exit v0
+    iget-object v1, v0, Landroidx/appcompat/app/F;->y:Landroid/widget/PopupWindow;
 
     .line 26
-    return-void
-
     .line 27
-    :goto_1
-    monitor-exit v0
-    :try_end_0
-    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+    invoke-virtual {v1}, Landroid/widget/PopupWindow;->isShowing()Z
 
     .line 28
-    throw p1
+    .line 29
+    .line 30
+    move-result v1
+
+    .line 31
+    if-eqz v1, :cond_1
+
+    .line 32
+    .line 33
+    :try_start_0
+    iget-object v1, v0, Landroidx/appcompat/app/F;->y:Landroid/widget/PopupWindow;
+
+    .line 34
+    .line 35
+    invoke-virtual {v1}, Landroid/widget/PopupWindow;->dismiss()V
+    :try_end_0
+    .catch Ljava/lang/IllegalArgumentException; {:try_start_0 .. :try_end_0} :catch_0
+
+    .line 36
+    .line 37
+    .line 38
+    :catch_0
+    :cond_1
+    const/4 v1, 0x0
+
+    .line 39
+    iput-object v1, v0, Landroidx/appcompat/app/F;->y:Landroid/widget/PopupWindow;
+
+    .line 40
+    .line 41
+    :cond_2
+    iget-object v1, v0, Landroidx/appcompat/app/F;->A:Landroidx/core/view/k0;
+
+    .line 42
+    .line 43
+    if-eqz v1, :cond_3
+
+    .line 44
+    .line 45
+    invoke-virtual {v1}, Landroidx/core/view/k0;->b()V
+
+    .line 46
+    .line 47
+    .line 48
+    :cond_3
+    const/4 v1, 0x0
+
+    .line 49
+    invoke-virtual {v0, v1}, Landroidx/appcompat/app/F;->C(I)Landroidx/appcompat/app/E;
+
+    .line 50
+    .line 51
+    .line 52
+    move-result-object v0
+
+    .line 53
+    iget-object v0, v0, Landroidx/appcompat/app/E;->h:Landroidx/appcompat/view/menu/n;
+
+    .line 54
+    .line 55
+    if-eqz v0, :cond_4
+
+    .line 56
+    .line 57
+    const/4 v1, 0x1
+
+    .line 58
+    invoke-virtual {v0, v1}, Landroidx/appcompat/view/menu/n;->c(Z)V
+
+    .line 59
+    .line 60
+    .line 61
+    :cond_4
+    return-void
 .end method

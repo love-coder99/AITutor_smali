@@ -3,14 +3,14 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lzh/a;
+.implements Lka/a;
 
 
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "Lkotlin/jvm/internal/Lambda;",
-        "Lzh/a;"
+        "Lka/a;"
     }
 .end annotation
 
@@ -19,9 +19,9 @@
         "\u0000\u0008\n\u0002\u0018\u0002\n\u0002\u0008\u0003\u0010\u0003\u001a\u00020\u0000H\n\u00a2\u0006\u0004\u0008\u0001\u0010\u0002"
     }
     d2 = {
-        "Landroidx/compose/foundation/text/selection/e0;",
+        "Landroidx/compose/foundation/text/selection/B;",
         "invoke",
-        "()Landroidx/compose/foundation/text/selection/e0;",
+        "()Landroidx/compose/foundation/text/selection/B;",
         "<anonymous>"
     }
     k = 0x3
@@ -34,14 +34,14 @@
 
 
 # instance fields
-.field final synthetic this$0:Landroidx/compose/material3/r1;
+.field final synthetic this$0:Landroidx/compose/material3/N0;
 
 
 # direct methods
-.method public constructor <init>(Landroidx/compose/material3/r1;)V
+.method public constructor <init>(Landroidx/compose/material3/N0;)V
     .locals 0
 
-    iput-object p1, p0, Landroidx/compose/material3/TextFieldColors$copy$11;->this$0:Landroidx/compose/material3/r1;
+    iput-object p1, p0, Landroidx/compose/material3/TextFieldColors$copy$11;->this$0:Landroidx/compose/material3/N0;
 
     const/4 p1, 0x0
 
@@ -52,13 +52,14 @@
 
 
 # virtual methods
-.method public final invoke()Landroidx/compose/foundation/text/selection/e0;
+.method public final invoke()Landroidx/compose/foundation/text/selection/B;
     .locals 1
 
-    iget-object v0, p0, Landroidx/compose/material3/TextFieldColors$copy$11;->this$0:Landroidx/compose/material3/r1;
-
     .line 1
-    iget-object v0, v0, Landroidx/compose/material3/r1;->k:Landroidx/compose/foundation/text/selection/e0;
+    iget-object v0, p0, Landroidx/compose/material3/TextFieldColors$copy$11;->this$0:Landroidx/compose/material3/N0;
+
+    .line 2
+    iget-object v0, v0, Landroidx/compose/material3/N0;->k:Landroidx/compose/foundation/text/selection/B;
 
     return-object v0
 .end method
@@ -66,8 +67,8 @@
 .method public bridge synthetic invoke()Ljava/lang/Object;
     .locals 1
 
-    .line 2
-    invoke-virtual {p0}, Landroidx/compose/material3/TextFieldColors$copy$11;->invoke()Landroidx/compose/foundation/text/selection/e0;
+    .line 3
+    invoke-virtual {p0}, Landroidx/compose/material3/TextFieldColors$copy$11;->invoke()Landroidx/compose/foundation/text/selection/B;
 
     move-result-object v0
 

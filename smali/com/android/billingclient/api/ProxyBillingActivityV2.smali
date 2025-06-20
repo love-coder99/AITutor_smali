@@ -1,16 +1,28 @@
 .class public Lcom/android/billingclient/api/ProxyBillingActivityV2;
-.super Landroidx/activity/s;
+.super Landroidx/activity/o;
 .source "SourceFile"
 
 
-# instance fields
-.field private zza:Le/b;
+# annotations
+.annotation build Lcom/google/android/apps/common/proguard/UsedByReflection;
+    value = "PlatformActivityProxy"
+.end annotation
 
-.field private zzb:Le/b;
+
+# instance fields
+.field private zza:Lg/b;
+
+.field private zzb:Lg/b;
 
 .field private zzc:Landroid/os/ResultReceiver;
+    .annotation build Landroidx/annotation/Nullable;
+    .end annotation
+.end field
 
 .field private zzd:Landroid/os/ResultReceiver;
+    .annotation build Landroidx/annotation/Nullable;
+    .end annotation
+.end field
 
 
 # direct methods
@@ -18,7 +30,7 @@
     .locals 0
 
     .line 1
-    invoke-direct {p0}, Landroidx/activity/s;-><init>()V
+    invoke-direct {p0}, Landroidx/activity/o;-><init>()V
 
     .line 2
     .line 3
@@ -30,369 +42,383 @@
 # virtual methods
 .method public final onCreate(Landroid/os/Bundle;)V
     .locals 5
+    .param p1    # Landroid/os/Bundle;
+        .annotation build Landroidx/annotation/Nullable;
+        .end annotation
+    .end param
 
     .line 1
-    invoke-super {p0, p1}, Landroidx/activity/s;->onCreate(Landroid/os/Bundle;)V
+    invoke-super {p0, p1}, Landroidx/activity/o;->onCreate(Landroid/os/Bundle;)V
 
     .line 2
     .line 3
     .line 4
-    new-instance v0, Lf/j;
+    new-instance v0, Landroidx/fragment/app/U;
 
     .line 5
     .line 6
-    invoke-direct {v0}, Ljava/lang/Object;-><init>()V
+    const/4 v1, 0x6
 
     .line 7
+    invoke-direct {v0, v1}, Landroidx/fragment/app/U;-><init>(I)V
+
     .line 8
     .line 9
+    .line 10
     new-instance v1, Lcom/android/billingclient/api/zzct;
 
-    .line 10
     .line 11
+    .line 12
     invoke-direct {v1, p0}, Lcom/android/billingclient/api/zzct;-><init>(Lcom/android/billingclient/api/ProxyBillingActivityV2;)V
 
-    .line 12
     .line 13
     .line 14
-    invoke-virtual {p0, v0, v1}, Landroidx/activity/s;->registerForActivityResult(Lf/a;Le/a;)Le/b;
-
     .line 15
+    invoke-virtual {p0, v0, v1}, Landroidx/activity/o;->registerForActivityResult(Lh/a;Lg/a;)Lg/b;
+
     .line 16
     .line 17
+    .line 18
     move-result-object v0
 
-    .line 18
-    iput-object v0, p0, Lcom/android/billingclient/api/ProxyBillingActivityV2;->zza:Le/b;
-
     .line 19
+    iput-object v0, p0, Lcom/android/billingclient/api/ProxyBillingActivityV2;->zza:Lg/b;
+
     .line 20
-    new-instance v0, Lf/j;
-
     .line 21
+    new-instance v0, Landroidx/fragment/app/U;
+
     .line 22
-    invoke-direct {v0}, Ljava/lang/Object;-><init>()V
-
     .line 23
-    .line 24
-    .line 25
-    new-instance v1, Lcom/android/billingclient/api/zzcu;
+    const/4 v1, 0x6
 
+    .line 24
+    invoke-direct {v0, v1}, Landroidx/fragment/app/U;-><init>(I)V
+
+    .line 25
     .line 26
     .line 27
-    invoke-direct {v1, p0}, Lcom/android/billingclient/api/zzcu;-><init>(Lcom/android/billingclient/api/ProxyBillingActivityV2;)V
+    new-instance v1, Lcom/android/billingclient/api/zzcu;
 
     .line 28
     .line 29
-    .line 30
-    invoke-virtual {p0, v0, v1}, Landroidx/activity/s;->registerForActivityResult(Lf/a;Le/a;)Le/b;
+    invoke-direct {v1, p0}, Lcom/android/billingclient/api/zzcu;-><init>(Lcom/android/billingclient/api/ProxyBillingActivityV2;)V
 
+    .line 30
     .line 31
     .line 32
+    invoke-virtual {p0, v0, v1}, Landroidx/activity/o;->registerForActivityResult(Lh/a;Lg/a;)Lg/b;
+
     .line 33
+    .line 34
+    .line 35
     move-result-object v0
 
-    .line 34
-    iput-object v0, p0, Lcom/android/billingclient/api/ProxyBillingActivityV2;->zzb:Le/b;
-
-    .line 35
     .line 36
-    const-string v0, "external_payment_dialog_result_receiver"
+    iput-object v0, p0, Lcom/android/billingclient/api/ProxyBillingActivityV2;->zzb:Lg/b;
 
     .line 37
     .line 38
-    const-string v1, "alternative_billing_only_dialog_result_receiver"
+    const-string v0, "external_payment_dialog_result_receiver"
 
     .line 39
     .line 40
-    if-nez p1, :cond_1
+    const-string v1, "alternative_billing_only_dialog_result_receiver"
 
     .line 41
     .line 42
-    const-string p1, "ProxyBillingActivityV2"
+    if-nez p1, :cond_1
 
     .line 43
     .line 44
-    const-string v2, "Launching Play Store billing dialog"
+    const-string p1, "ProxyBillingActivityV2"
 
     .line 45
     .line 46
-    invoke-static {p1, v2}, Lcom/google/android/gms/internal/play_billing/h1;->h(Ljava/lang/String;Ljava/lang/String;)V
+    const-string v2, "Launching Play Store billing dialog"
 
     .line 47
     .line 48
-    .line 49
-    invoke-virtual {p0}, Landroid/app/Activity;->getIntent()Landroid/content/Intent;
+    invoke-static {p1, v2}, Lcom/google/android/gms/internal/play_billing/i0;->h(Ljava/lang/String;Ljava/lang/String;)V
 
+    .line 49
     .line 50
     .line 51
+    invoke-virtual {p0}, Landroid/app/Activity;->getIntent()Landroid/content/Intent;
+
     .line 52
+    .line 53
+    .line 54
     move-result-object p1
 
-    .line 53
-    const-string v2, "ALTERNATIVE_BILLING_ONLY_DIALOG_INTENT"
-
-    .line 54
     .line 55
-    invoke-virtual {p1, v2}, Landroid/content/Intent;->hasExtra(Ljava/lang/String;)Z
+    const-string v2, "ALTERNATIVE_BILLING_ONLY_DIALOG_INTENT"
 
     .line 56
     .line 57
+    invoke-virtual {p1, v2}, Landroid/content/Intent;->hasExtra(Ljava/lang/String;)Z
+
     .line 58
+    .line 59
+    .line 60
     move-result p1
 
-    .line 59
+    .line 61
     const/4 v3, 0x0
 
-    .line 60
+    .line 62
     const/4 v4, 0x0
 
-    .line 61
-    if-eqz p1, :cond_0
-
-    .line 62
     .line 63
-    invoke-virtual {p0}, Landroid/app/Activity;->getIntent()Landroid/content/Intent;
+    if-eqz p1, :cond_0
 
     .line 64
     .line 65
+    invoke-virtual {p0}, Landroid/app/Activity;->getIntent()Landroid/content/Intent;
+
     .line 66
+    .line 67
+    .line 68
     move-result-object p1
 
-    .line 67
+    .line 69
     invoke-virtual {p1, v2}, Landroid/content/Intent;->getParcelableExtra(Ljava/lang/String;)Landroid/os/Parcelable;
 
-    .line 68
-    .line 69
     .line 70
+    .line 71
+    .line 72
     move-result-object p1
 
-    .line 71
-    check-cast p1, Landroid/app/PendingIntent;
-
-    .line 72
     .line 73
-    invoke-virtual {p0}, Landroid/app/Activity;->getIntent()Landroid/content/Intent;
+    check-cast p1, Landroid/app/PendingIntent;
 
     .line 74
     .line 75
+    invoke-virtual {p0}, Landroid/app/Activity;->getIntent()Landroid/content/Intent;
+
     .line 76
+    .line 77
+    .line 78
     move-result-object v0
 
-    .line 77
+    .line 79
     invoke-virtual {v0, v1}, Landroid/content/Intent;->getParcelableExtra(Ljava/lang/String;)Landroid/os/Parcelable;
 
-    .line 78
-    .line 79
     .line 80
+    .line 81
+    .line 82
     move-result-object v0
 
-    .line 81
-    check-cast v0, Landroid/os/ResultReceiver;
-
-    .line 82
     .line 83
-    iput-object v0, p0, Lcom/android/billingclient/api/ProxyBillingActivityV2;->zzc:Landroid/os/ResultReceiver;
+    check-cast v0, Landroid/os/ResultReceiver;
 
     .line 84
     .line 85
-    iget-object v0, p0, Lcom/android/billingclient/api/ProxyBillingActivityV2;->zza:Le/b;
+    iput-object v0, p0, Lcom/android/billingclient/api/ProxyBillingActivityV2;->zzc:Landroid/os/ResultReceiver;
 
     .line 86
     .line 87
-    invoke-virtual {p1}, Landroid/app/PendingIntent;->getIntentSender()Landroid/content/IntentSender;
+    iget-object v0, p0, Lcom/android/billingclient/api/ProxyBillingActivityV2;->zza:Lg/b;
 
     .line 88
     .line 89
+    invoke-virtual {p1}, Landroid/app/PendingIntent;->getIntentSender()Landroid/content/IntentSender;
+
     .line 90
+    .line 91
+    .line 92
     move-result-object p1
 
-    .line 91
-    new-instance v1, Landroidx/activity/result/IntentSenderRequest;
-
-    .line 92
     .line 93
-    invoke-direct {v1, p1, v3, v4, v4}, Landroidx/activity/result/IntentSenderRequest;-><init>(Landroid/content/IntentSender;Landroid/content/Intent;II)V
+    new-instance v1, Landroidx/activity/result/IntentSenderRequest;
 
     .line 94
     .line 95
-    .line 96
-    invoke-virtual {v0, v1}, Le/b;->a(Ljava/lang/Object;)V
+    invoke-direct {v1, p1, v3, v4, v4}, Landroidx/activity/result/IntentSenderRequest;-><init>(Landroid/content/IntentSender;Landroid/content/Intent;II)V
 
+    .line 96
     .line 97
     .line 98
+    invoke-virtual {v0, v1}, Lg/b;->a(Ljava/lang/Object;)V
+
     .line 99
+    .line 100
+    .line 101
     return-void
 
-    .line 100
+    .line 102
     :cond_0
     invoke-virtual {p0}, Landroid/app/Activity;->getIntent()Landroid/content/Intent;
 
-    .line 101
-    .line 102
     .line 103
+    .line 104
+    .line 105
     move-result-object p1
 
-    .line 104
-    const-string v1, "external_payment_dialog_pending_intent"
-
-    .line 105
     .line 106
-    invoke-virtual {p1, v1}, Landroid/content/Intent;->hasExtra(Ljava/lang/String;)Z
+    const-string v1, "external_payment_dialog_pending_intent"
 
     .line 107
     .line 108
+    invoke-virtual {p1, v1}, Landroid/content/Intent;->hasExtra(Ljava/lang/String;)Z
+
     .line 109
+    .line 110
+    .line 111
     move-result p1
 
-    .line 110
-    if-eqz p1, :cond_3
-
-    .line 111
     .line 112
-    invoke-virtual {p0}, Landroid/app/Activity;->getIntent()Landroid/content/Intent;
+    if-eqz p1, :cond_3
 
     .line 113
     .line 114
+    invoke-virtual {p0}, Landroid/app/Activity;->getIntent()Landroid/content/Intent;
+
     .line 115
+    .line 116
+    .line 117
     move-result-object p1
 
-    .line 116
+    .line 118
     invoke-virtual {p1, v1}, Landroid/content/Intent;->getParcelableExtra(Ljava/lang/String;)Landroid/os/Parcelable;
 
-    .line 117
-    .line 118
     .line 119
+    .line 120
+    .line 121
     move-result-object p1
 
-    .line 120
-    check-cast p1, Landroid/app/PendingIntent;
-
-    .line 121
     .line 122
-    invoke-virtual {p0}, Landroid/app/Activity;->getIntent()Landroid/content/Intent;
+    check-cast p1, Landroid/app/PendingIntent;
 
     .line 123
     .line 124
+    invoke-virtual {p0}, Landroid/app/Activity;->getIntent()Landroid/content/Intent;
+
     .line 125
+    .line 126
+    .line 127
     move-result-object v1
 
-    .line 126
+    .line 128
     invoke-virtual {v1, v0}, Landroid/content/Intent;->getParcelableExtra(Ljava/lang/String;)Landroid/os/Parcelable;
 
-    .line 127
-    .line 128
     .line 129
+    .line 130
+    .line 131
     move-result-object v0
 
-    .line 130
-    check-cast v0, Landroid/os/ResultReceiver;
-
-    .line 131
     .line 132
-    iput-object v0, p0, Lcom/android/billingclient/api/ProxyBillingActivityV2;->zzd:Landroid/os/ResultReceiver;
+    check-cast v0, Landroid/os/ResultReceiver;
 
     .line 133
     .line 134
-    iget-object v0, p0, Lcom/android/billingclient/api/ProxyBillingActivityV2;->zzb:Le/b;
+    iput-object v0, p0, Lcom/android/billingclient/api/ProxyBillingActivityV2;->zzd:Landroid/os/ResultReceiver;
 
     .line 135
     .line 136
-    invoke-virtual {p1}, Landroid/app/PendingIntent;->getIntentSender()Landroid/content/IntentSender;
+    iget-object v0, p0, Lcom/android/billingclient/api/ProxyBillingActivityV2;->zzb:Lg/b;
 
     .line 137
     .line 138
+    invoke-virtual {p1}, Landroid/app/PendingIntent;->getIntentSender()Landroid/content/IntentSender;
+
     .line 139
+    .line 140
+    .line 141
     move-result-object p1
 
-    .line 140
-    new-instance v1, Landroidx/activity/result/IntentSenderRequest;
-
-    .line 141
     .line 142
-    invoke-direct {v1, p1, v3, v4, v4}, Landroidx/activity/result/IntentSenderRequest;-><init>(Landroid/content/IntentSender;Landroid/content/Intent;II)V
+    new-instance v1, Landroidx/activity/result/IntentSenderRequest;
 
     .line 143
     .line 144
-    .line 145
-    invoke-virtual {v0, v1}, Le/b;->a(Ljava/lang/Object;)V
+    invoke-direct {v1, p1, v3, v4, v4}, Landroidx/activity/result/IntentSenderRequest;-><init>(Landroid/content/IntentSender;Landroid/content/Intent;II)V
 
+    .line 145
     .line 146
     .line 147
+    invoke-virtual {v0, v1}, Lg/b;->a(Ljava/lang/Object;)V
+
     .line 148
+    .line 149
+    .line 150
     return-void
 
-    .line 149
+    .line 151
     :cond_1
     invoke-virtual {p1, v1}, Landroid/os/BaseBundle;->containsKey(Ljava/lang/String;)Z
 
-    .line 150
-    .line 151
     .line 152
+    .line 153
+    .line 154
     move-result v2
 
-    .line 153
-    if-eqz v2, :cond_2
-
-    .line 154
     .line 155
-    invoke-virtual {p1, v1}, Landroid/os/Bundle;->getParcelable(Ljava/lang/String;)Landroid/os/Parcelable;
+    if-eqz v2, :cond_2
 
     .line 156
     .line 157
+    invoke-virtual {p1, v1}, Landroid/os/Bundle;->getParcelable(Ljava/lang/String;)Landroid/os/Parcelable;
+
     .line 158
+    .line 159
+    .line 160
     move-result-object p1
 
-    .line 159
-    check-cast p1, Landroid/os/ResultReceiver;
-
-    .line 160
     .line 161
-    iput-object p1, p0, Lcom/android/billingclient/api/ProxyBillingActivityV2;->zzc:Landroid/os/ResultReceiver;
+    check-cast p1, Landroid/os/ResultReceiver;
 
     .line 162
     .line 163
-    return-void
+    iput-object p1, p0, Lcom/android/billingclient/api/ProxyBillingActivityV2;->zzc:Landroid/os/ResultReceiver;
 
     .line 164
+    .line 165
+    return-void
+
+    .line 166
     :cond_2
     invoke-virtual {p1, v0}, Landroid/os/BaseBundle;->containsKey(Ljava/lang/String;)Z
 
-    .line 165
-    .line 166
     .line 167
+    .line 168
+    .line 169
     move-result v1
 
-    .line 168
-    if-eqz v1, :cond_3
-
-    .line 169
     .line 170
-    invoke-virtual {p1, v0}, Landroid/os/Bundle;->getParcelable(Ljava/lang/String;)Landroid/os/Parcelable;
+    if-eqz v1, :cond_3
 
     .line 171
     .line 172
+    invoke-virtual {p1, v0}, Landroid/os/Bundle;->getParcelable(Ljava/lang/String;)Landroid/os/Parcelable;
+
     .line 173
+    .line 174
+    .line 175
     move-result-object p1
 
-    .line 174
-    check-cast p1, Landroid/os/ResultReceiver;
-
-    .line 175
     .line 176
-    iput-object p1, p0, Lcom/android/billingclient/api/ProxyBillingActivityV2;->zzd:Landroid/os/ResultReceiver;
+    check-cast p1, Landroid/os/ResultReceiver;
 
     .line 177
     .line 178
+    iput-object p1, p0, Lcom/android/billingclient/api/ProxyBillingActivityV2;->zzd:Landroid/os/ResultReceiver;
+
+    .line 179
+    .line 180
     :cond_3
     return-void
 .end method
 
 .method public final onSaveInstanceState(Landroid/os/Bundle;)V
     .locals 2
+    .param p1    # Landroid/os/Bundle;
+        .annotation build Landroidx/annotation/NonNull;
+        .end annotation
+    .end param
 
     .line 1
-    invoke-super {p0, p1}, Landroidx/activity/s;->onSaveInstanceState(Landroid/os/Bundle;)V
+    invoke-super {p0, p1}, Landroidx/activity/o;->onSaveInstanceState(Landroid/os/Bundle;)V
 
     .line 2
     .line 3
@@ -448,7 +474,7 @@
 
     .line 4
     .line 5
-    invoke-static {v1, v0}, Lcom/google/android/gms/internal/play_billing/h1;->e(Ljava/lang/String;Landroid/content/Intent;)Lcom/android/billingclient/api/BillingResult;
+    invoke-static {v1, v0}, Lcom/google/android/gms/internal/play_billing/i0;->e(Ljava/lang/String;Landroid/content/Intent;)Lcom/android/billingclient/api/BillingResult;
 
     .line 6
     .line 7
@@ -525,7 +551,7 @@
 
     .line 4
     .line 5
-    invoke-static {v1, v0}, Lcom/google/android/gms/internal/play_billing/h1;->e(Ljava/lang/String;Landroid/content/Intent;)Lcom/android/billingclient/api/BillingResult;
+    invoke-static {v1, v0}, Lcom/google/android/gms/internal/play_billing/i0;->e(Ljava/lang/String;Landroid/content/Intent;)Lcom/android/billingclient/api/BillingResult;
 
     .line 6
     .line 7
@@ -591,57 +617,43 @@
     .line 34
     .line 35
     :cond_2
-    const/4 v0, 0x2
+    new-instance v0, Ljava/lang/StringBuilder;
 
     .line 36
-    new-array v0, v0, [Ljava/lang/Object;
-
     .line 37
-    .line 38
-    invoke-static {p1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+    const-string v2, "External offer dialog finished with resultCode: "
 
+    .line 38
     .line 39
+    invoke-direct {v0, v2}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+
     .line 40
     .line 41
-    move-result-object p1
-
     .line 42
-    const/4 v2, 0x0
+    invoke-virtual {v0, p1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
     .line 43
-    aput-object p1, v0, v2
-
     .line 44
     .line 45
-    const/4 p1, 0x1
+    const-string p1, " and billing\'s responseCode: "
 
     .line 46
-    invoke-static {v1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
-
     .line 47
+    invoke-virtual {v0, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
     .line 48
     .line 49
-    move-result-object v1
-
     .line 50
-    aput-object v1, v0, p1
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
     .line 51
     .line 52
-    const-string p1, "External offer dialog finished with resultCode: %s and billing\'s responseCode: %s"
-
     .line 53
-    .line 54
-    invoke-static {p1, v0}, Ljava/lang/String;->format(Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;
-
-    .line 55
-    .line 56
-    .line 57
     :cond_3
     invoke-virtual {p0}, Landroid/app/Activity;->finish()V
 
-    .line 58
-    .line 59
-    .line 60
+    .line 54
+    .line 55
+    .line 56
     return-void
 .end method

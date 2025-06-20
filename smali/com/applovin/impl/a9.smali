@@ -22,6 +22,7 @@
     .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
+    .line 2
     iput-object p1, p0, Lcom/applovin/impl/a9;->a:Landroid/util/SparseBooleanArray;
 
     return-void
@@ -30,7 +31,7 @@
 .method public synthetic constructor <init>(Landroid/util/SparseBooleanArray;Lcom/applovin/impl/a9$a;)V
     .locals 0
 
-    .line 2
+    .line 3
     invoke-direct {p0, p1}, Lcom/applovin/impl/a9;-><init>(Landroid/util/SparseBooleanArray;)V
 
     return-void
@@ -41,9 +42,9 @@
 .method public a()I
     .locals 1
 
+    .line 4
     iget-object v0, p0, Lcom/applovin/impl/a9;->a:Landroid/util/SparseBooleanArray;
 
-    .line 4
     invoke-virtual {v0}, Landroid/util/SparseBooleanArray;->size()I
 
     move-result v0
@@ -54,9 +55,9 @@
 .method public a(I)Z
     .locals 1
 
+    .line 1
     iget-object v0, p0, Lcom/applovin/impl/a9;->a:Landroid/util/SparseBooleanArray;
 
-    .line 1
     invoke-virtual {v0, p1}, Landroid/util/SparseBooleanArray;->get(I)Z
 
     move-result p1

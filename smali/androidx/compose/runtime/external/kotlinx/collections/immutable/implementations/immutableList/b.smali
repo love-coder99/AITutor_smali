@@ -1,41 +1,25 @@
 .class public abstract Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableList/b;
-.super Lkotlin/collections/f;
+.super LY9/g;
 .source "SourceFile"
 
 # interfaces
-.implements Lh1/c;
+.implements Ljava/util/List;
+.implements Ljava/util/Collection;
+.implements Lla/a;
 
 
 # virtual methods
-.method public final a(Ljava/util/Collection;)Lh1/c;
-    .locals 1
-
-    .line 1
-    new-instance v0, Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableList/AbstractPersistentList$removeAll$1;
-
-    .line 2
-    .line 3
-    invoke-direct {v0, p1}, Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableList/AbstractPersistentList$removeAll$1;-><init>(Ljava/util/Collection;)V
-
-    .line 4
-    .line 5
-    .line 6
-    invoke-interface {p0, v0}, Lh1/c;->W(Lzh/c;)Lh1/c;
-
-    .line 7
-    .line 8
-    .line 9
-    move-result-object p1
-
-    .line 10
-    return-object p1
+.method public abstract a(ILjava/lang/Object;)Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableList/b;
 .end method
 
-.method public addAll(Ljava/util/Collection;)Lh1/c;
+.method public abstract b(Ljava/lang/Object;)Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableList/b;
+.end method
+
+.method public c(Ljava/util/Collection;)Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableList/b;
     .locals 1
 
     .line 1
-    invoke-interface {p0}, Lh1/c;->u()Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableList/f;
+    invoke-virtual {p0}, Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableList/b;->e()Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableList/f;
 
     .line 2
     .line 3
@@ -48,7 +32,7 @@
     .line 6
     .line 7
     .line 8
-    invoke-virtual {v0}, Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableList/f;->a()Lh1/c;
+    invoke-virtual {v0}, Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableList/f;->a()Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableList/b;
 
     .line 9
     .line 10
@@ -63,7 +47,7 @@
     .locals 1
 
     .line 1
-    invoke-virtual {p0, p1}, Lkotlin/collections/f;->indexOf(Ljava/lang/Object;)I
+    invoke-virtual {p0, p1}, LY9/g;->indexOf(Ljava/lang/Object;)I
 
     .line 2
     .line 3
@@ -183,6 +167,36 @@
     return v1
 .end method
 
+.method public abstract e()Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableList/f;
+.end method
+
+.method public final g(Ljava/util/Collection;)Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableList/b;
+    .locals 1
+
+    .line 1
+    new-instance v0, Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableList/AbstractPersistentList$removeAll$1;
+
+    .line 2
+    .line 3
+    invoke-direct {v0, p1}, Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableList/AbstractPersistentList$removeAll$1;-><init>(Ljava/util/Collection;)V
+
+    .line 4
+    .line 5
+    .line 6
+    invoke-virtual {p0, v0}, Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableList/b;->h(Lka/c;)Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableList/b;
+
+    .line 7
+    .line 8
+    .line 9
+    move-result-object p1
+
+    .line 10
+    return-object p1
+.end method
+
+.method public abstract h(Lka/c;)Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableList/b;
+.end method
+
 .method public final iterator()Ljava/util/Iterator;
     .locals 1
 
@@ -190,7 +204,7 @@
     const/4 v0, 0x0
 
     .line 2
-    invoke-virtual {p0, v0}, Lkotlin/collections/f;->listIterator(I)Ljava/util/ListIterator;
+    invoke-virtual {p0, v0}, LY9/g;->listIterator(I)Ljava/util/ListIterator;
 
     .line 3
     .line 4
@@ -199,6 +213,9 @@
 
     .line 6
     return-object v0
+.end method
+
+.method public abstract l(I)Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableList/b;
 .end method
 
 .method public final listIterator()Ljava/util/ListIterator;
@@ -208,7 +225,7 @@
     const/4 v0, 0x0
 
     .line 2
-    invoke-virtual {p0, v0}, Lkotlin/collections/f;->listIterator(I)Ljava/util/ListIterator;
+    invoke-virtual {p0, v0}, LY9/g;->listIterator(I)Ljava/util/ListIterator;
 
     .line 3
     .line 4
@@ -219,15 +236,18 @@
     return-object v0
 .end method
 
+.method public abstract m(ILjava/lang/Object;)Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableList/b;
+.end method
+
 .method public final subList(II)Ljava/util/List;
     .locals 1
 
     .line 1
-    new-instance v0, Lh1/a;
+    new-instance v0, Ll0/a;
 
     .line 2
     .line 3
-    invoke-direct {v0, p0, p1, p2}, Lh1/a;-><init>(Lh1/b;II)V
+    invoke-direct {v0, p0, p1, p2}, Ll0/a;-><init>(Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableList/b;II)V
 
     .line 4
     .line 5

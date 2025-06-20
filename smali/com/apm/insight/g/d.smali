@@ -41,9 +41,9 @@
 .method public final a(JLjava/lang/Thread;Ljava/lang/Throwable;Ljava/lang/String;Ljava/lang/String;Z)V
     .locals 16
 
+    .line 2
     const-string v0, "crash_cost"
 
-    .line 2
     new-instance v11, Ljava/io/File;
 
     move-object/from16 v12, p0
@@ -116,12 +116,12 @@
 
     sub-long v2, v2, p1
 
+    .line 9
     :try_start_0
     const-string v4, "crash_type"
 
     const-string v5, "normal"
 
-    .line 9
     invoke-virtual {v1, v4, v5}, Lcom/apm/insight/entity/a;->a(Ljava/lang/String;Ljava/lang/String;)Lcom/apm/insight/entity/a;
 
     .line 10

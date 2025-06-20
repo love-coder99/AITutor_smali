@@ -3,14 +3,14 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lzh/c;
+.implements Lka/c;
 
 
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "Lkotlin/jvm/internal/Lambda;",
-        "Lzh/c;"
+        "Lka/c;"
     }
 .end annotation
 
@@ -19,10 +19,10 @@
         "\u0000\u0008\n\u0002\u0018\u0002\n\u0002\u0008\u0004\u0010\u0004\u001a\u00020\u00002\u0006\u0010\u0001\u001a\u00020\u0000H\n\u00a2\u0006\u0004\u0008\u0002\u0010\u0003"
     }
     d2 = {
-        "Landroidx/compose/ui/text/input/c0;",
+        "Landroidx/compose/ui/text/input/x;",
         "it",
         "invoke",
-        "(Landroidx/compose/ui/text/input/c0;)Landroidx/compose/ui/text/input/c0;",
+        "(Landroidx/compose/ui/text/input/x;)Landroidx/compose/ui/text/input/x;",
         "<anonymous>"
     }
     k = 0x3
@@ -63,7 +63,7 @@
 
 
 # virtual methods
-.method public final invoke(Landroidx/compose/ui/text/input/c0;)Landroidx/compose/ui/text/input/c0;
+.method public final invoke(Landroidx/compose/ui/text/input/x;)Landroidx/compose/ui/text/input/x;
     .locals 0
 
     .line 1
@@ -74,9 +74,9 @@
     .locals 0
 
     .line 2
-    check-cast p1, Landroidx/compose/ui/text/input/c0;
+    check-cast p1, Landroidx/compose/ui/text/input/x;
 
-    invoke-virtual {p0, p1}, Landroidx/compose/ui/platform/AndroidComposeView_androidKt$platformTextInputServiceInterceptor$1;->invoke(Landroidx/compose/ui/text/input/c0;)Landroidx/compose/ui/text/input/c0;
+    invoke-virtual {p0, p1}, Landroidx/compose/ui/platform/AndroidComposeView_androidKt$platformTextInputServiceInterceptor$1;->invoke(Landroidx/compose/ui/text/input/x;)Landroidx/compose/ui/text/input/x;
 
     move-result-object p1
 

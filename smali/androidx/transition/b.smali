@@ -1,33 +1,29 @@
-.class public final synthetic Landroidx/transition/b;
+.class public abstract synthetic Landroidx/transition/b;
 .super Ljava/lang/Object;
 .source "SourceFile"
 
 
-# instance fields
-.field public final synthetic a:Landroidx/transition/Transition$SeekController;
-
-
 # direct methods
-.method public synthetic constructor <init>(Landroidx/transition/Transition$SeekController;)V
+.method public static a(Landroidx/transition/Transition$TransitionListener;Landroidx/transition/Transition;Z)V
     .locals 0
 
     .line 1
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    invoke-interface {p0, p1}, Landroidx/transition/Transition$TransitionListener;->onTransitionEnd(Landroidx/transition/Transition;)V
 
-    iput-object p1, p0, Landroidx/transition/b;->a:Landroidx/transition/Transition$SeekController;
-
+    .line 2
+    .line 3
+    .line 4
     return-void
 .end method
 
-
-# virtual methods
-.method public final a(Lw3/h;FF)V
-    .locals 1
+.method public static b(Landroidx/transition/Transition$TransitionListener;Landroidx/transition/Transition;Z)V
+    .locals 0
 
     .line 1
-    iget-object v0, p0, Landroidx/transition/b;->a:Landroidx/transition/Transition$SeekController;
+    invoke-interface {p0, p1}, Landroidx/transition/Transition$TransitionListener;->onTransitionStart(Landroidx/transition/Transition;)V
 
-    invoke-static {v0, p1, p2, p3}, Landroidx/transition/Transition$SeekController;->a(Landroidx/transition/Transition$SeekController;Lw3/h;FF)V
-
+    .line 2
+    .line 3
+    .line 4
     return-void
 .end method

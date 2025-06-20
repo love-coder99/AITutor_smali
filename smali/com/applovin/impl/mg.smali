@@ -69,10 +69,10 @@
 .method public a(Landroid/webkit/WebView;)Lcom/iab/omid/library/applovin/adsession/AdSessionContext;
     .locals 4
 
+    .line 3
     :try_start_0
     iget-object v0, p0, Lcom/applovin/impl/lg;->a:Lcom/applovin/impl/sdk/AppLovinAdBase;
 
-    .line 3
     invoke-virtual {v0}, Lcom/applovin/impl/sdk/AppLovinAdBase;->getOpenMeasurementVerificationScriptResources()Ljava/util/List;
 
     move-result-object v0
@@ -83,9 +83,9 @@
 
     if-lez v0, :cond_0
 
+    .line 4
     iget-object p1, p0, Lcom/applovin/impl/lg;->b:Lcom/applovin/impl/sdk/j;
 
-    .line 4
     invoke-virtual {p1}, Lcom/applovin/impl/sdk/j;->V()Lcom/applovin/impl/pg;
 
     move-result-object p1
@@ -138,10 +138,10 @@
 
     goto :goto_0
 
+    .line 10
     :cond_0
     iget-object v0, p0, Lcom/applovin/impl/lg;->b:Lcom/applovin/impl/sdk/j;
 
-    .line 10
     invoke-virtual {v0}, Lcom/applovin/impl/sdk/j;->V()Lcom/applovin/impl/pg;
 
     move-result-object v0

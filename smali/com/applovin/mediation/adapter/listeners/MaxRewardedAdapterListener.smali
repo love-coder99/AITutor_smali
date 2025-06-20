@@ -11,24 +11,40 @@
 .end method
 
 .method public abstract onRewardedAdClicked(Landroid/os/Bundle;)V
+    .param p1    # Landroid/os/Bundle;
+        .annotation build Landroidx/annotation/Nullable;
+        .end annotation
+    .end param
 .end method
 
 .method public abstract onRewardedAdDisplayFailed(Lcom/applovin/mediation/adapter/MaxAdapterError;)V
 .end method
 
 .method public abstract onRewardedAdDisplayFailed(Lcom/applovin/mediation/adapter/MaxAdapterError;Landroid/os/Bundle;)V
+    .param p2    # Landroid/os/Bundle;
+        .annotation build Landroidx/annotation/Nullable;
+        .end annotation
+    .end param
 .end method
 
 .method public abstract onRewardedAdDisplayed()V
 .end method
 
 .method public abstract onRewardedAdDisplayed(Landroid/os/Bundle;)V
+    .param p1    # Landroid/os/Bundle;
+        .annotation build Landroidx/annotation/Nullable;
+        .end annotation
+    .end param
 .end method
 
 .method public abstract onRewardedAdHidden()V
 .end method
 
 .method public abstract onRewardedAdHidden(Landroid/os/Bundle;)V
+    .param p1    # Landroid/os/Bundle;
+        .annotation build Landroidx/annotation/Nullable;
+        .end annotation
+    .end param
 .end method
 
 .method public abstract onRewardedAdLoadFailed(Lcom/applovin/mediation/adapter/MaxAdapterError;)V
@@ -38,10 +54,18 @@
 .end method
 
 .method public abstract onRewardedAdLoaded(Landroid/os/Bundle;)V
+    .param p1    # Landroid/os/Bundle;
+        .annotation build Landroidx/annotation/Nullable;
+        .end annotation
+    .end param
 .end method
 
 .method public abstract onUserRewarded(Lcom/applovin/mediation/MaxReward;)V
 .end method
 
 .method public abstract onUserRewarded(Lcom/applovin/mediation/MaxReward;Landroid/os/Bundle;)V
+    .param p2    # Landroid/os/Bundle;
+        .annotation build Landroidx/annotation/Nullable;
+        .end annotation
+    .end param
 .end method

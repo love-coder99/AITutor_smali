@@ -3,12 +3,12 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lzh/e;
+.implements Lka/e;
 
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Landroidx/compose/material3/TabRowKt$TabRowWithSubcomposeImpl$1;->invoke(Landroidx/compose/runtime/l;I)V
+    value = Landroidx/compose/material3/TabRowKt$TabRowWithSubcomposeImpl$1;->invoke(Landroidx/compose/runtime/j;I)V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -19,7 +19,7 @@
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "Lkotlin/jvm/internal/Lambda;",
-        "Lzh/e;"
+        "Lka/e;"
     }
 .end annotation
 
@@ -28,12 +28,12 @@
         "\u0000\u0012\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0008\u0003\u0010\u0006\u001a\u00020\u0003*\u00020\u00002\u0006\u0010\u0002\u001a\u00020\u0001H\n\u00a2\u0006\u0004\u0008\u0004\u0010\u0005"
     }
     d2 = {
-        "Landroidx/compose/ui/layout/i1;",
-        "Lh2/a;",
+        "Landroidx/compose/ui/layout/e0;",
+        "LM0/a;",
         "constraints",
-        "Landroidx/compose/ui/layout/n0;",
+        "Landroidx/compose/ui/layout/K;",
         "invoke-0kLqBqw",
-        "(Landroidx/compose/ui/layout/i1;J)Landroidx/compose/ui/layout/n0;",
+        "(Landroidx/compose/ui/layout/e0;J)Landroidx/compose/ui/layout/K;",
         "<anonymous>"
     }
     k = 0x3
@@ -46,55 +46,65 @@
 
 
 # instance fields
-.field final synthetic $divider:Lzh/e;
+.field final synthetic $divider:Lka/e;
     .annotation system Ldalvik/annotation/Signature;
         value = {
-            "Lzh/e;"
+            "Lka/e;"
         }
     .end annotation
 .end field
 
-.field final synthetic $indicator:Lzh/f;
+.field final synthetic $indicator:Lka/f;
     .annotation system Ldalvik/annotation/Signature;
         value = {
-            "Lzh/f;"
+            "Lka/f;"
         }
     .end annotation
 .end field
 
-.field final synthetic $tabs:Lzh/e;
+.field final synthetic $tabs:Lka/e;
     .annotation system Ldalvik/annotation/Signature;
         value = {
-            "Lzh/e;"
+            "Lka/e;"
         }
     .end annotation
 .end field
 
 
 # direct methods
-.method public constructor <init>(Lzh/e;Lzh/e;Lzh/f;)V
+.method public constructor <init>(Lka/e;Lka/e;Lka/f;)V
     .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
-            "Lzh/e;",
-            "Lzh/e;",
-            "Lzh/f;",
+            "Lka/e;",
+            "Lka/e;",
+            "Lka/f;",
             ")V"
         }
     .end annotation
 
     .line 1
-    iput-object p1, p0, Landroidx/compose/material3/TabRowKt$TabRowWithSubcomposeImpl$1$1$1;->$tabs:Lzh/e;
+    iput-object p1, p0, Landroidx/compose/material3/TabRowKt$TabRowWithSubcomposeImpl$1$1$1;->$tabs:Lka/e;
 
-    iput-object p2, p0, Landroidx/compose/material3/TabRowKt$TabRowWithSubcomposeImpl$1$1$1;->$divider:Lzh/e;
+    .line 2
+    .line 3
+    iput-object p2, p0, Landroidx/compose/material3/TabRowKt$TabRowWithSubcomposeImpl$1$1$1;->$divider:Lka/e;
 
-    iput-object p3, p0, Landroidx/compose/material3/TabRowKt$TabRowWithSubcomposeImpl$1$1$1;->$indicator:Lzh/f;
+    .line 4
+    .line 5
+    iput-object p3, p0, Landroidx/compose/material3/TabRowKt$TabRowWithSubcomposeImpl$1$1$1;->$indicator:Lka/f;
 
+    .line 6
+    .line 7
     const/4 p1, 0x2
 
+    .line 8
     invoke-direct {p0, p1}, Lkotlin/jvm/internal/Lambda;-><init>(I)V
 
+    .line 9
+    .line 10
+    .line 11
     return-void
 .end method
 
@@ -104,19 +114,19 @@
     .locals 2
 
     .line 1
-    check-cast p1, Landroidx/compose/ui/layout/i1;
+    check-cast p1, Landroidx/compose/ui/layout/e0;
 
     .line 2
     .line 3
-    check-cast p2, Lh2/a;
+    check-cast p2, LM0/a;
 
     .line 4
     .line 5
-    iget-wide v0, p2, Lh2/a;->a:J
+    iget-wide v0, p2, LM0/a;->a:J
 
     .line 6
     .line 7
-    invoke-virtual {p0, p1, v0, v1}, Landroidx/compose/material3/TabRowKt$TabRowWithSubcomposeImpl$1$1$1;->invoke-0kLqBqw(Landroidx/compose/ui/layout/i1;J)Landroidx/compose/ui/layout/n0;
+    invoke-virtual {p0, p1, v0, v1}, Landroidx/compose/material3/TabRowKt$TabRowWithSubcomposeImpl$1$1$1;->invoke-0kLqBqw(Landroidx/compose/ui/layout/e0;J)Landroidx/compose/ui/layout/K;
 
     .line 8
     .line 9
@@ -127,7 +137,7 @@
     return-object p1
 .end method
 
-.method public final invoke-0kLqBqw(Landroidx/compose/ui/layout/i1;J)Landroidx/compose/ui/layout/n0;
+.method public final invoke-0kLqBqw(Landroidx/compose/ui/layout/e0;J)Landroidx/compose/ui/layout/K;
     .locals 16
 
     .line 1
@@ -139,7 +149,7 @@
 
     .line 4
     .line 5
-    invoke-static/range {p2 .. p3}, Lh2/a;->i(J)I
+    invoke-static/range {p2 .. p3}, LM0/a;->i(J)I
 
     .line 6
     .line 7
@@ -151,11 +161,11 @@
 
     .line 10
     .line 11
-    iget-object v2, v0, Landroidx/compose/material3/TabRowKt$TabRowWithSubcomposeImpl$1$1$1;->$tabs:Lzh/e;
+    iget-object v2, v0, Landroidx/compose/material3/TabRowKt$TabRowWithSubcomposeImpl$1$1$1;->$tabs:Lka/e;
 
     .line 12
     .line 13
-    invoke-interface {v12, v1, v2}, Landroidx/compose/ui/layout/i1;->a0(Ljava/lang/Object;Lzh/e;)Ljava/util/List;
+    invoke-interface {v12, v1, v2}, Landroidx/compose/ui/layout/e0;->X(Ljava/lang/Object;Lka/e;)Ljava/util/List;
 
     .line 14
     .line 15
@@ -228,7 +238,7 @@
     move-result-object v8
 
     .line 48
-    check-cast v8, Landroidx/compose/ui/layout/l0;
+    check-cast v8, Landroidx/compose/ui/layout/I;
 
     .line 49
     .line 50
@@ -244,7 +254,7 @@
 
     .line 55
     .line 56
-    invoke-interface {v8, v9}, Landroidx/compose/ui/layout/o;->c(I)I
+    invoke-interface {v8, v9}, Landroidx/compose/ui/layout/l;->c(I)I
 
     .line 57
     .line 58
@@ -325,7 +335,7 @@
     move-result-object v6
 
     .line 95
-    check-cast v6, Landroidx/compose/ui/layout/l0;
+    check-cast v6, Landroidx/compose/ui/layout/I;
 
     .line 96
     .line 97
@@ -333,7 +343,7 @@
 
     .line 98
     .line 99
-    invoke-static {v7, v7, v14, v14}, Lh2/a;->a(IIII)J
+    invoke-static {v7, v7, v14, v14}, LM0/a;->a(IIII)J
 
     .line 100
     .line 101
@@ -347,7 +357,7 @@
     move-object v9, v4
 
     .line 105
-    invoke-static/range {v6 .. v11}, Landroid/support/v4/media/session/a;->z(Landroidx/compose/ui/layout/l0;JLjava/util/ArrayList;II)I
+    invoke-static/range {v6 .. v11}, Landroidx/appcompat/view/menu/F;->z(Landroidx/compose/ui/layout/I;JLjava/util/ArrayList;II)I
 
     .line 106
     .line 107
@@ -381,11 +391,11 @@
     move-result-object v6
 
     .line 121
-    check-cast v6, Landroidx/compose/ui/layout/l0;
+    check-cast v6, Landroidx/compose/ui/layout/I;
 
     .line 122
     .line 123
-    invoke-interface {v6, v14}, Landroidx/compose/ui/layout/o;->w(I)I
+    invoke-interface {v6, v14}, Landroidx/compose/ui/layout/l;->s(I)I
 
     .line 124
     .line 125
@@ -405,7 +415,7 @@
     move-result v6
 
     .line 133
-    invoke-interface {v12, v6}, Lh2/b;->K(I)F
+    invoke-interface {v12, v6}, LM0/b;->H(I)F
 
     .line 134
     .line 135
@@ -413,7 +423,7 @@
     move-result v6
 
     .line 137
-    sget v7, Landroidx/compose/material3/l1;->c:F
+    sget v7, Landroidx/compose/material3/H0;->c:F
 
     .line 138
     .line 139
@@ -430,11 +440,11 @@
     sub-float/2addr v6, v7
 
     .line 144
-    new-instance v7, Lh2/e;
+    new-instance v7, LM0/e;
 
     .line 145
     .line 146
-    invoke-direct {v7, v6}, Lh2/e;-><init>(F)V
+    invoke-direct {v7, v6}, LM0/e;-><init>(F)V
 
     .line 147
     .line 148
@@ -446,16 +456,16 @@
     int-to-float v6, v6
 
     .line 152
-    new-instance v8, Lh2/e;
+    new-instance v8, LM0/e;
 
     .line 153
     .line 154
-    invoke-direct {v8, v6}, Lh2/e;-><init>(F)V
+    invoke-direct {v8, v6}, LM0/e;-><init>(F)V
 
     .line 155
     .line 156
     .line 157
-    invoke-virtual {v7, v8}, Lh2/e;->compareTo(Ljava/lang/Object;)I
+    invoke-virtual {v7, v8}, LM0/e;->compareTo(Ljava/lang/Object;)I
 
     .line 158
     .line 159
@@ -475,7 +485,7 @@
 
     .line 165
     :goto_3
-    new-instance v6, Landroidx/compose/material3/m1;
+    new-instance v6, Landroidx/compose/material3/I0;
 
     .line 166
     .line 167
@@ -483,7 +493,7 @@
 
     .line 168
     .line 169
-    invoke-interface {v12, v8}, Lh2/b;->K(I)F
+    invoke-interface {v12, v8}, LM0/b;->H(I)F
 
     .line 170
     .line 171
@@ -502,7 +512,7 @@
 
     .line 177
     .line 178
-    invoke-interface {v12, v9}, Lh2/b;->K(I)F
+    invoke-interface {v12, v9}, LM0/b;->H(I)F
 
     .line 179
     .line 180
@@ -510,11 +520,11 @@
     move-result v9
 
     .line 182
-    iget v7, v7, Lh2/e;->b:F
+    iget v7, v7, LM0/e;->b:F
 
     .line 183
     .line 184
-    invoke-direct {v6, v8, v9, v7}, Landroidx/compose/material3/m1;-><init>(FFF)V
+    invoke-direct {v6, v8, v9, v7}, Landroidx/compose/material3/I0;-><init>(FFF)V
 
     .line 185
     .line 186
@@ -536,11 +546,11 @@
 
     .line 194
     .line 195
-    iget-object v6, v0, Landroidx/compose/material3/TabRowKt$TabRowWithSubcomposeImpl$1$1$1;->$divider:Lzh/e;
+    iget-object v6, v0, Landroidx/compose/material3/TabRowKt$TabRowWithSubcomposeImpl$1$1$1;->$divider:Lka/e;
 
     .line 196
     .line 197
-    iget-object v9, v0, Landroidx/compose/material3/TabRowKt$TabRowWithSubcomposeImpl$1$1$1;->$indicator:Lzh/f;
+    iget-object v9, v0, Landroidx/compose/material3/TabRowKt$TabRowWithSubcomposeImpl$1$1$1;->$indicator:Lka/f;
 
     .line 198
     .line 199
@@ -567,12 +577,12 @@
     move v11, v13
 
     .line 208
-    invoke-direct/range {v1 .. v11}, Landroidx/compose/material3/TabRowKt$TabRowWithSubcomposeImpl$1$1$1$1;-><init>(Ljava/util/List;Landroidx/compose/ui/layout/i1;Lzh/e;Lkotlin/jvm/internal/Ref$IntRef;JILzh/f;Ljava/util/List;I)V
+    invoke-direct/range {v1 .. v11}, Landroidx/compose/material3/TabRowKt$TabRowWithSubcomposeImpl$1$1$1$1;-><init>(Ljava/util/List;Landroidx/compose/ui/layout/e0;Lka/e;Lkotlin/jvm/internal/Ref$IntRef;JILka/f;Ljava/util/List;I)V
 
     .line 209
     .line 210
     .line 211
-    invoke-static {v12, v13, v14, v15}, Landroidx/compose/ui/layout/x;->i(Landroidx/compose/ui/layout/o0;IILzh/c;)Landroidx/compose/ui/layout/n0;
+    invoke-static {v12, v13, v14, v15}, Landroidx/compose/ui/layout/u;->i(Landroidx/compose/ui/layout/L;IILka/c;)Landroidx/compose/ui/layout/K;
 
     .line 212
     .line 213

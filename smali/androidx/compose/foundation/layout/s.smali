@@ -1,10 +1,10 @@
-.class public abstract Landroidx/compose/foundation/layout/s;
+.class public abstract Landroidx/compose/foundation/layout/S;
 .super Ljava/lang/Object;
 .source "SourceFile"
 
 
 # static fields
-.field public static final a:Landroidx/compose/foundation/layout/t;
+.field public static final a:Landroidx/compose/foundation/layout/T;
 
 
 # direct methods
@@ -12,39 +12,39 @@
     .locals 3
 
     .line 1
-    new-instance v0, Landroidx/compose/foundation/layout/t;
+    new-instance v0, Landroidx/compose/foundation/layout/T;
 
     .line 2
     .line 3
-    sget-object v1, Landroidx/compose/foundation/layout/j;->c:Landroidx/compose/foundation/layout/e;
+    sget-object v1, Landroidx/compose/foundation/layout/g;->a:Landroidx/compose/foundation/layout/d0;
 
     .line 4
     .line 5
-    sget-object v2, Landroidx/compose/ui/b;->o:Landroidx/compose/ui/g;
+    sget-object v2, Landroidx/compose/ui/b;->l:Landroidx/compose/ui/h;
 
     .line 6
     .line 7
-    invoke-direct {v0, v1, v2}, Landroidx/compose/foundation/layout/t;-><init>(Landroidx/compose/foundation/layout/i;Landroidx/compose/ui/g;)V
+    invoke-direct {v0, v1, v2}, Landroidx/compose/foundation/layout/T;-><init>(Landroidx/compose/foundation/layout/d;Landroidx/compose/ui/h;)V
 
     .line 8
     .line 9
     .line 10
-    sput-object v0, Landroidx/compose/foundation/layout/s;->a:Landroidx/compose/foundation/layout/t;
+    sput-object v0, Landroidx/compose/foundation/layout/S;->a:Landroidx/compose/foundation/layout/T;
 
     .line 11
     .line 12
     return-void
 .end method
 
-.method public static final a(Landroidx/compose/foundation/layout/i;Landroidx/compose/ui/g;Landroidx/compose/runtime/l;I)Landroidx/compose/foundation/layout/t;
+.method public static final a(Landroidx/compose/foundation/layout/d;Landroidx/compose/ui/h;Landroidx/compose/runtime/j;I)Landroidx/compose/foundation/layout/T;
     .locals 5
 
     .line 1
-    sget-object v0, Landroidx/compose/foundation/layout/j;->c:Landroidx/compose/foundation/layout/e;
+    sget-object v0, Landroidx/compose/foundation/layout/g;->a:Landroidx/compose/foundation/layout/d0;
 
     .line 2
     .line 3
-    invoke-static {p0, v0}, Lrb/h;->d(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {p0, v0}, Lkotlin/jvm/internal/h;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     .line 4
     .line 5
@@ -59,11 +59,11 @@
 
     .line 9
     .line 10
-    sget-object v0, Landroidx/compose/ui/b;->o:Landroidx/compose/ui/g;
+    sget-object v0, Landroidx/compose/ui/b;->l:Landroidx/compose/ui/h;
 
     .line 11
     .line 12
-    invoke-static {p1, v0}, Lrb/h;->d(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {p1, v0}, Lkotlin/jvm/internal/h;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     .line 13
     .line 14
@@ -75,26 +75,26 @@
 
     .line 17
     .line 18
-    check-cast p2, Landroidx/compose/runtime/p;
+    check-cast p2, Landroidx/compose/runtime/n;
 
     .line 19
     .line 20
-    const p0, 0x149ef7e8
+    const p0, -0x329bf545    # -2.3911928E8f
 
     .line 21
     .line 22
     .line 23
-    invoke-virtual {p2, p0}, Landroidx/compose/runtime/p;->T(I)V
+    invoke-virtual {p2, p0}, Landroidx/compose/runtime/n;->R(I)V
 
     .line 24
     .line 25
     .line 26
-    invoke-virtual {p2, v1}, Landroidx/compose/runtime/p;->q(Z)V
+    invoke-virtual {p2, v1}, Landroidx/compose/runtime/n;->p(Z)V
 
     .line 27
     .line 28
     .line 29
-    sget-object p0, Landroidx/compose/foundation/layout/s;->a:Landroidx/compose/foundation/layout/t;
+    sget-object p0, Landroidx/compose/foundation/layout/S;->a:Landroidx/compose/foundation/layout/T;
 
     .line 30
     .line 31
@@ -102,16 +102,16 @@
 
     .line 32
     :cond_0
-    check-cast p2, Landroidx/compose/runtime/p;
+    check-cast p2, Landroidx/compose/runtime/n;
 
     .line 33
     .line 34
-    const v0, 0x149fca3f
+    const v0, -0x329b2e8e
 
     .line 35
     .line 36
     .line 37
-    invoke-virtual {p2, v0}, Landroidx/compose/runtime/p;->T(I)V
+    invoke-virtual {p2, v0}, Landroidx/compose/runtime/n;->R(I)V
 
     .line 38
     .line 39
@@ -134,7 +134,7 @@
 
     .line 47
     .line 48
-    invoke-virtual {p2, p0}, Landroidx/compose/runtime/p;->g(Ljava/lang/Object;)Z
+    invoke-virtual {p2, p0}, Landroidx/compose/runtime/n;->f(Ljava/lang/Object;)Z
 
     .line 49
     .line 50
@@ -183,7 +183,7 @@
 
     .line 68
     .line 69
-    invoke-virtual {p2, p1}, Landroidx/compose/runtime/p;->g(Ljava/lang/Object;)Z
+    invoke-virtual {p2, p1}, Landroidx/compose/runtime/n;->f(Ljava/lang/Object;)Z
 
     .line 70
     .line 71
@@ -217,7 +217,7 @@
 
     .line 82
     .line 83
-    invoke-virtual {p2}, Landroidx/compose/runtime/p;->I()Ljava/lang/Object;
+    invoke-virtual {p2}, Landroidx/compose/runtime/n;->G()Ljava/lang/Object;
 
     .line 84
     .line 85
@@ -229,7 +229,7 @@
 
     .line 88
     .line 89
-    sget-object p3, Landroidx/compose/runtime/k;->b:Lxd/e;
+    sget-object p3, Landroidx/compose/runtime/i;->a:Landroidx/compose/runtime/T;
 
     .line 90
     .line 91
@@ -238,16 +238,16 @@
     .line 92
     .line 93
     :cond_7
-    new-instance v0, Landroidx/compose/foundation/layout/t;
+    new-instance v0, Landroidx/compose/foundation/layout/T;
 
     .line 94
     .line 95
-    invoke-direct {v0, p0, p1}, Landroidx/compose/foundation/layout/t;-><init>(Landroidx/compose/foundation/layout/i;Landroidx/compose/ui/g;)V
+    invoke-direct {v0, p0, p1}, Landroidx/compose/foundation/layout/T;-><init>(Landroidx/compose/foundation/layout/d;Landroidx/compose/ui/h;)V
 
     .line 96
     .line 97
     .line 98
-    invoke-virtual {p2, v0}, Landroidx/compose/runtime/p;->d0(Ljava/lang/Object;)V
+    invoke-virtual {p2, v0}, Landroidx/compose/runtime/n;->b0(Ljava/lang/Object;)V
 
     .line 99
     .line 100
@@ -256,11 +256,11 @@
     move-object p0, v0
 
     .line 102
-    check-cast p0, Landroidx/compose/foundation/layout/t;
+    check-cast p0, Landroidx/compose/foundation/layout/T;
 
     .line 103
     .line 104
-    invoke-virtual {p2, v1}, Landroidx/compose/runtime/p;->q(Z)V
+    invoke-virtual {p2, v1}, Landroidx/compose/runtime/n;->p(Z)V
 
     .line 105
     .line 106

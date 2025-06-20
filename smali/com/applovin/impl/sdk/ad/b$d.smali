@@ -32,9 +32,9 @@
 .method private constructor <init>(Lcom/applovin/impl/sdk/ad/b;)V
     .locals 3
 
+    .line 2
     iput-object p1, p0, Lcom/applovin/impl/sdk/ad/b$d;->f:Lcom/applovin/impl/sdk/ad/b;
 
-    .line 2
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 3

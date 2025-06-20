@@ -32,6 +32,9 @@
 .field private volatile zzh:Lcom/android/billingclient/api/UserChoiceBillingListener;
 
 .field private volatile zzi:Ljava/util/concurrent/ExecutorService;
+    .annotation build Landroidx/annotation/Nullable;
+    .end annotation
+.end field
 
 .field private volatile zzj:Z
 
@@ -117,7 +120,7 @@
 
     .line 29
     :catch_0
-    sget v1, Lcom/google/android/gms/internal/play_billing/h1;->a:I
+    sget v1, Lcom/google/android/gms/internal/play_billing/i0;->a:I
 
     .line 30
     .line 31
@@ -128,6 +131,8 @@
 # virtual methods
 .method public build()Lcom/android/billingclient/api/BillingClient;
     .locals 18
+    .annotation build Landroidx/annotation/NonNull;
+    .end annotation
 
     .line 1
     move-object/from16 v0, p0
@@ -328,16 +333,16 @@
 
     .line 96
     .line 97
-    const/4 v3, 0x0
-
-    .line 98
-    const/4 v7, 0x0
-
-    .line 99
     const/4 v8, 0x0
 
-    .line 100
+    .line 98
     const/4 v9, 0x0
+
+    .line 99
+    const/4 v3, 0x0
+
+    .line 100
+    const/4 v7, 0x0
 
     .line 101
     move-object v2, v1
@@ -356,16 +361,16 @@
 
     .line 107
     .line 108
-    const/4 v3, 0x0
-
-    .line 109
-    const/4 v7, 0x0
-
-    .line 110
     const/4 v8, 0x0
 
-    .line 111
+    .line 109
     const/4 v9, 0x0
+
+    .line 110
+    const/4 v3, 0x0
+
+    .line 111
+    const/4 v7, 0x0
 
     .line 112
     move-object v2, v1
@@ -412,16 +417,16 @@
 
     .line 132
     .line 133
-    const/4 v11, 0x0
-
-    .line 134
     const/16 v16, 0x0
 
+    .line 134
     .line 135
-    .line 136
     const/16 v17, 0x0
 
+    .line 136
     .line 137
+    const/4 v11, 0x0
+
     .line 138
     move-object v10, v2
 
@@ -439,16 +444,16 @@
 
     .line 144
     .line 145
-    const/4 v11, 0x0
-
-    .line 146
     const/16 v16, 0x0
 
+    .line 146
     .line 147
-    .line 148
     const/16 v17, 0x0
 
+    .line 148
     .line 149
+    const/4 v11, 0x0
+
     .line 150
     move-object v10, v2
 
@@ -486,16 +491,16 @@
 
     .line 166
     .line 167
-    const/4 v4, 0x0
-
-    .line 168
-    const/4 v7, 0x0
-
-    .line 169
     const/4 v8, 0x0
 
-    .line 170
+    .line 168
     const/4 v9, 0x0
+
+    .line 169
+    const/4 v4, 0x0
+
+    .line 170
+    const/4 v7, 0x0
 
     .line 171
     move-object v3, v2
@@ -514,16 +519,16 @@
 
     .line 177
     .line 178
-    const/4 v4, 0x0
-
-    .line 179
-    const/4 v7, 0x0
-
-    .line 180
     const/4 v8, 0x0
 
-    .line 181
+    .line 179
     const/4 v9, 0x0
+
+    .line 180
+    const/4 v4, 0x0
+
+    .line 181
+    const/4 v7, 0x0
 
     .line 182
     move-object v3, v2
@@ -574,6 +579,11 @@
 
 .method public enableAlternativeBillingOnly()Lcom/android/billingclient/api/BillingClient$Builder;
     .locals 1
+    .annotation build Landroidx/annotation/NonNull;
+    .end annotation
+
+    .annotation build Lcom/android/billingclient/api/zzf;
+    .end annotation
 
     const/4 v0, 0x1
 
@@ -584,6 +594,11 @@
 
 .method public enableExternalOffer()Lcom/android/billingclient/api/BillingClient$Builder;
     .locals 1
+    .annotation build Landroidx/annotation/NonNull;
+    .end annotation
+
+    .annotation build Lcom/android/billingclient/api/zzg;
+    .end annotation
 
     const/4 v0, 0x1
 
@@ -594,6 +609,9 @@
 
 .method public enablePendingPurchases()Lcom/android/billingclient/api/BillingClient$Builder;
     .locals 1
+    .annotation build Landroidx/annotation/NonNull;
+    .end annotation
+
     .annotation runtime Ljava/lang/Deprecated;
     .end annotation
 
@@ -616,6 +634,15 @@
 
 .method public enablePendingPurchases(Lcom/android/billingclient/api/PendingPurchasesParams;)Lcom/android/billingclient/api/BillingClient$Builder;
     .locals 0
+    .param p1    # Lcom/android/billingclient/api/PendingPurchasesParams;
+        .annotation build Landroidx/annotation/NonNull;
+        .end annotation
+    .end param
+    .annotation build Landroidx/annotation/NonNull;
+    .end annotation
+
+    .annotation build Lcom/android/billingclient/api/zzj;
+    .end annotation
 
     .line 1
     iput-object p1, p0, Lcom/android/billingclient/api/BillingClient$Builder;->zzb:Lcom/android/billingclient/api/PendingPurchasesParams;
@@ -625,6 +652,15 @@
 
 .method public enableUserChoiceBilling(Lcom/android/billingclient/api/UserChoiceBillingListener;)Lcom/android/billingclient/api/BillingClient$Builder;
     .locals 0
+    .param p1    # Lcom/android/billingclient/api/UserChoiceBillingListener;
+        .annotation build Landroidx/annotation/NonNull;
+        .end annotation
+    .end param
+    .annotation build Landroidx/annotation/NonNull;
+    .end annotation
+
+    .annotation build Lcom/android/billingclient/api/zzk;
+    .end annotation
 
     iput-object p1, p0, Lcom/android/billingclient/api/BillingClient$Builder;->zzh:Lcom/android/billingclient/api/UserChoiceBillingListener;
 
@@ -633,6 +669,12 @@
 
 .method public setListener(Lcom/android/billingclient/api/PurchasesUpdatedListener;)Lcom/android/billingclient/api/BillingClient$Builder;
     .locals 0
+    .param p1    # Lcom/android/billingclient/api/PurchasesUpdatedListener;
+        .annotation build Landroidx/annotation/NonNull;
+        .end annotation
+    .end param
+    .annotation build Landroidx/annotation/NonNull;
+    .end annotation
 
     iput-object p1, p0, Lcom/android/billingclient/api/BillingClient$Builder;->zzd:Lcom/android/billingclient/api/PurchasesUpdatedListener;
 

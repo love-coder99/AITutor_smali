@@ -3,27 +3,37 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lzh/e;
+.implements Lka/e;
 
 
 # annotations
+.annotation runtime Lca/c;
+    c = "androidx.compose.animation.AnimatedVisibilityKt$AnimatedEnterExitImpl$shouldDisposeAfterExit$2$1"
+    f = "AnimatedVisibility.kt"
+    l = {
+        0x2f4
+    }
+    m = "invokeSuspend"
+.end annotation
+
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "Lkotlin/coroutines/jvm/internal/SuspendLambda;",
-        "Lzh/e;"
+        "Lka/e;"
     }
 .end annotation
 
 .annotation runtime Lkotlin/Metadata;
     d1 = {
-        "\u0000\u0010\n\u0000\n\u0002\u0018\u0002\n\u0002\u0010\u000b\n\u0002\u0018\u0002\n\u0000\u0010\u0004\u001a\u00020\u0003\"\u0004\u0008\u0000\u0010\u0000*\u0008\u0012\u0004\u0012\u00020\u00020\u0001H\u008a@"
+        "\u0000\u0012\n\u0000\n\u0002\u0018\u0002\n\u0002\u0010\u000b\n\u0002\u0018\u0002\n\u0002\u0008\u0002\u0010\u0004\u001a\u00020\u0003\"\u0004\u0008\u0000\u0010\u0000*\u0008\u0012\u0004\u0012\u00020\u00020\u0001H\u008a@\u00a2\u0006\u0004\u0008\u0004\u0010\u0005"
     }
     d2 = {
         "T",
-        "Landroidx/compose/runtime/s1;",
+        "Landroidx/compose/runtime/h0;",
         "",
-        "Lqh/r;",
-        "<anonymous>"
+        "LX9/j;",
+        "<anonymous>",
+        "(Landroidx/compose/runtime/h0;)V"
     }
     k = 0x3
     mv = {
@@ -33,29 +43,20 @@
     }
 .end annotation
 
-.annotation runtime Lth/c;
-    c = "androidx.compose.animation.AnimatedVisibilityKt$AnimatedEnterExitImpl$shouldDisposeAfterExit$2$1"
-    f = "AnimatedVisibility.kt"
-    l = {
-        0x2f4
-    }
-    m = "invokeSuspend"
-.end annotation
-
 
 # instance fields
-.field final synthetic $childTransition:Landroidx/compose/animation/core/e1;
+.field final synthetic $childTransition:Landroidx/compose/animation/core/Z;
     .annotation system Ldalvik/annotation/Signature;
         value = {
-            "Landroidx/compose/animation/core/e1;"
+            "Landroidx/compose/animation/core/Z;"
         }
     .end annotation
 .end field
 
-.field final synthetic $shouldDisposeBlockUpdated$delegate:Landroidx/compose/runtime/d3;
+.field final synthetic $shouldDisposeBlockUpdated$delegate:Landroidx/compose/runtime/H0;
     .annotation system Ldalvik/annotation/Signature;
         value = {
-            "Landroidx/compose/runtime/d3;"
+            "Landroidx/compose/runtime/H0;"
         }
     .end annotation
 .end field
@@ -66,13 +67,13 @@
 
 
 # direct methods
-.method public constructor <init>(Landroidx/compose/animation/core/e1;Landroidx/compose/runtime/d3;Lkotlin/coroutines/Continuation;)V
+.method public constructor <init>(Landroidx/compose/animation/core/Z;Landroidx/compose/runtime/H0;Lkotlin/coroutines/Continuation;)V
     .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
-            "Landroidx/compose/animation/core/e1;",
-            "Landroidx/compose/runtime/d3;",
+            "Landroidx/compose/animation/core/Z;",
+            "Landroidx/compose/runtime/H0;",
             "Lkotlin/coroutines/Continuation<",
             "-",
             "Landroidx/compose/animation/AnimatedVisibilityKt$AnimatedEnterExitImpl$shouldDisposeAfterExit$2$1;",
@@ -80,9 +81,9 @@
         }
     .end annotation
 
-    iput-object p1, p0, Landroidx/compose/animation/AnimatedVisibilityKt$AnimatedEnterExitImpl$shouldDisposeAfterExit$2$1;->$childTransition:Landroidx/compose/animation/core/e1;
+    iput-object p1, p0, Landroidx/compose/animation/AnimatedVisibilityKt$AnimatedEnterExitImpl$shouldDisposeAfterExit$2$1;->$childTransition:Landroidx/compose/animation/core/Z;
 
-    iput-object p2, p0, Landroidx/compose/animation/AnimatedVisibilityKt$AnimatedEnterExitImpl$shouldDisposeAfterExit$2$1;->$shouldDisposeBlockUpdated$delegate:Landroidx/compose/runtime/d3;
+    iput-object p2, p0, Landroidx/compose/animation/AnimatedVisibilityKt$AnimatedEnterExitImpl$shouldDisposeAfterExit$2$1;->$shouldDisposeBlockUpdated$delegate:Landroidx/compose/runtime/H0;
 
     const/4 p1, 0x2
 
@@ -102,33 +103,33 @@
             "Lkotlin/coroutines/Continuation<",
             "*>;)",
             "Lkotlin/coroutines/Continuation<",
-            "Lqh/r;",
+            "LX9/j;",
             ">;"
         }
     .end annotation
 
     new-instance v0, Landroidx/compose/animation/AnimatedVisibilityKt$AnimatedEnterExitImpl$shouldDisposeAfterExit$2$1;
 
-    iget-object v1, p0, Landroidx/compose/animation/AnimatedVisibilityKt$AnimatedEnterExitImpl$shouldDisposeAfterExit$2$1;->$childTransition:Landroidx/compose/animation/core/e1;
+    iget-object v1, p0, Landroidx/compose/animation/AnimatedVisibilityKt$AnimatedEnterExitImpl$shouldDisposeAfterExit$2$1;->$childTransition:Landroidx/compose/animation/core/Z;
 
-    iget-object v2, p0, Landroidx/compose/animation/AnimatedVisibilityKt$AnimatedEnterExitImpl$shouldDisposeAfterExit$2$1;->$shouldDisposeBlockUpdated$delegate:Landroidx/compose/runtime/d3;
+    iget-object v2, p0, Landroidx/compose/animation/AnimatedVisibilityKt$AnimatedEnterExitImpl$shouldDisposeAfterExit$2$1;->$shouldDisposeBlockUpdated$delegate:Landroidx/compose/runtime/H0;
 
-    invoke-direct {v0, v1, v2, p2}, Landroidx/compose/animation/AnimatedVisibilityKt$AnimatedEnterExitImpl$shouldDisposeAfterExit$2$1;-><init>(Landroidx/compose/animation/core/e1;Landroidx/compose/runtime/d3;Lkotlin/coroutines/Continuation;)V
+    invoke-direct {v0, v1, v2, p2}, Landroidx/compose/animation/AnimatedVisibilityKt$AnimatedEnterExitImpl$shouldDisposeAfterExit$2$1;-><init>(Landroidx/compose/animation/core/Z;Landroidx/compose/runtime/H0;Lkotlin/coroutines/Continuation;)V
 
     iput-object p1, v0, Landroidx/compose/animation/AnimatedVisibilityKt$AnimatedEnterExitImpl$shouldDisposeAfterExit$2$1;->L$0:Ljava/lang/Object;
 
     return-object v0
 .end method
 
-.method public final invoke(Landroidx/compose/runtime/s1;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
+.method public final invoke(Landroidx/compose/runtime/h0;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
     .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
-            "Landroidx/compose/runtime/s1;",
+            "Landroidx/compose/runtime/h0;",
             "Lkotlin/coroutines/Continuation<",
             "-",
-            "Lqh/r;",
+            "LX9/j;",
             ">;)",
             "Ljava/lang/Object;"
         }
@@ -141,7 +142,7 @@
 
     check-cast p1, Landroidx/compose/animation/AnimatedVisibilityKt$AnimatedEnterExitImpl$shouldDisposeAfterExit$2$1;
 
-    sget-object p2, Lqh/r;->a:Lqh/r;
+    sget-object p2, LX9/j;->a:LX9/j;
 
     invoke-virtual {p1, p2}, Landroidx/compose/animation/AnimatedVisibilityKt$AnimatedEnterExitImpl$shouldDisposeAfterExit$2$1;->invokeSuspend(Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -154,11 +155,11 @@
     .locals 0
 
     .line 2
-    check-cast p1, Landroidx/compose/runtime/s1;
+    check-cast p1, Landroidx/compose/runtime/h0;
 
     check-cast p2, Lkotlin/coroutines/Continuation;
 
-    invoke-virtual {p0, p1, p2}, Landroidx/compose/animation/AnimatedVisibilityKt$AnimatedEnterExitImpl$shouldDisposeAfterExit$2$1;->invoke(Landroidx/compose/runtime/s1;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
+    invoke-virtual {p0, p1, p2}, Landroidx/compose/animation/AnimatedVisibilityKt$AnimatedEnterExitImpl$shouldDisposeAfterExit$2$1;->invoke(Landroidx/compose/runtime/h0;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
 
     move-result-object p1
 
@@ -223,7 +224,7 @@
 
     .line 26
     .line 27
-    check-cast p1, Landroidx/compose/runtime/s1;
+    check-cast p1, Landroidx/compose/runtime/h0;
 
     .line 28
     .line 29
@@ -231,16 +232,16 @@
 
     .line 30
     .line 31
-    iget-object v3, p0, Landroidx/compose/animation/AnimatedVisibilityKt$AnimatedEnterExitImpl$shouldDisposeAfterExit$2$1;->$childTransition:Landroidx/compose/animation/core/e1;
+    iget-object v3, p0, Landroidx/compose/animation/AnimatedVisibilityKt$AnimatedEnterExitImpl$shouldDisposeAfterExit$2$1;->$childTransition:Landroidx/compose/animation/core/Z;
 
     .line 32
     .line 33
-    invoke-direct {v1, v3}, Landroidx/compose/animation/AnimatedVisibilityKt$AnimatedEnterExitImpl$shouldDisposeAfterExit$2$1$1;-><init>(Landroidx/compose/animation/core/e1;)V
+    invoke-direct {v1, v3}, Landroidx/compose/animation/AnimatedVisibilityKt$AnimatedEnterExitImpl$shouldDisposeAfterExit$2$1$1;-><init>(Landroidx/compose/animation/core/Z;)V
 
     .line 34
     .line 35
     .line 36
-    invoke-static {v1}, Landroidx/compose/runtime/q;->y(Lzh/a;)Lkotlinx/coroutines/flow/i0;
+    invoke-static {v1}, Landroidx/compose/runtime/o;->b0(Lka/a;)Lkotlinx/coroutines/flow/G;
 
     .line 37
     .line 38
@@ -248,22 +249,22 @@
     move-result-object v1
 
     .line 40
-    new-instance v3, Landroidx/compose/animation/m;
+    new-instance v3, Landroidx/compose/animation/l;
 
     .line 41
     .line 42
-    iget-object v4, p0, Landroidx/compose/animation/AnimatedVisibilityKt$AnimatedEnterExitImpl$shouldDisposeAfterExit$2$1;->$childTransition:Landroidx/compose/animation/core/e1;
+    iget-object v4, p0, Landroidx/compose/animation/AnimatedVisibilityKt$AnimatedEnterExitImpl$shouldDisposeAfterExit$2$1;->$childTransition:Landroidx/compose/animation/core/Z;
 
     .line 43
     .line 44
-    iget-object v5, p0, Landroidx/compose/animation/AnimatedVisibilityKt$AnimatedEnterExitImpl$shouldDisposeAfterExit$2$1;->$shouldDisposeBlockUpdated$delegate:Landroidx/compose/runtime/d3;
+    iget-object v5, p0, Landroidx/compose/animation/AnimatedVisibilityKt$AnimatedEnterExitImpl$shouldDisposeAfterExit$2$1;->$shouldDisposeBlockUpdated$delegate:Landroidx/compose/runtime/H0;
 
     .line 45
     .line 46
     const/4 v6, 0x0
 
     .line 47
-    invoke-direct {v3, p1, v4, v5, v6}, Landroidx/compose/animation/m;-><init>(Ljava/lang/Object;Ljava/lang/Object;Landroidx/compose/runtime/d3;I)V
+    invoke-direct {v3, p1, v6, v4, v5}, Landroidx/compose/animation/l;-><init>(Ljava/lang/Object;ILjava/lang/Object;Ljava/lang/Object;)V
 
     .line 48
     .line 49
@@ -272,7 +273,7 @@
 
     .line 51
     .line 52
-    invoke-virtual {v1, v3, p0}, Lkotlinx/coroutines/flow/a;->b(Lkotlinx/coroutines/flow/i;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
+    invoke-virtual {v1, v3, p0}, Lkotlinx/coroutines/flow/a;->b(Lkotlinx/coroutines/flow/g;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
 
     .line 53
     .line 54
@@ -289,7 +290,7 @@
     .line 59
     :cond_2
     :goto_0
-    sget-object p1, Lqh/r;->a:Lqh/r;
+    sget-object p1, LX9/j;->a:LX9/j;
 
     .line 60
     .line 61

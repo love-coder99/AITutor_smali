@@ -4,8 +4,8 @@
 
 
 # virtual methods
-.method public abstract e(Ljava/lang/Object;Lzh/e;Landroidx/compose/runtime/l;I)V
+.method public abstract d(Ljava/lang/Object;)V
 .end method
 
-.method public abstract f(Ljava/lang/Object;)V
+.method public abstract e(Ljava/lang/Object;Lka/e;Landroidx/compose/runtime/j;I)V
 .end method

@@ -36,39 +36,39 @@
 .method private a(I)V
     .locals 3
 
-    .line 3
+    .line 4
     new-instance v0, Landroid/widget/TextView;
 
     invoke-direct {v0, p0}, Landroid/widget/TextView;-><init>(Landroid/content/Context;)V
 
     const/16 v1, 0x11
 
-    .line 4
+    .line 5
     invoke-virtual {v0, v1}, Landroid/widget/TextView;->setGravity(I)V
 
     const/high16 v2, 0x41900000    # 18.0f
 
-    .line 5
+    .line 6
     invoke-virtual {v0, v2}, Landroid/widget/TextView;->setTextSize(F)V
 
-    .line 6
+    .line 7
     invoke-virtual {v0, p1}, Landroid/widget/TextView;->setText(I)V
 
-    .line 7
+    .line 8
     new-instance p1, Landroid/widget/FrameLayout$LayoutParams;
 
     const/4 v2, -0x1
 
     invoke-direct {p1, v2, v2, v1}, Landroid/widget/FrameLayout$LayoutParams;-><init>(III)V
 
+    .line 9
     iget-object v1, p0, Lcom/applovin/impl/v4;->b:Landroid/widget/FrameLayout;
 
-    .line 8
     invoke-virtual {v1, v0, p1}, Landroid/view/ViewGroup;->addView(Landroid/view/View;Landroid/view/ViewGroup$LayoutParams;)V
 
+    .line 10
     iget-object p1, p0, Lcom/applovin/impl/v4;->b:Landroid/widget/FrameLayout;
 
-    .line 9
     invoke-virtual {p1, v0}, Landroid/view/ViewGroup;->bringChildToFront(Landroid/view/View;)V
 
     return-void
@@ -79,9 +79,10 @@
 .method public a(Lcom/applovin/impl/w4;Lcom/applovin/impl/q;)V
     .locals 1
 
+    .line 2
     iput-object p1, p0, Lcom/applovin/impl/v4;->a:Lcom/applovin/impl/w4;
 
-    .line 2
+    .line 3
     new-instance v0, Lcom/applovin/impl/v4$a;
 
     invoke-direct {v0, p0, p2}, Lcom/applovin/impl/v4$a;-><init>(Lcom/applovin/impl/v4;Lcom/applovin/impl/q;)V

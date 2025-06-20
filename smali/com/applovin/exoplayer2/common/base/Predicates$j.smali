@@ -55,9 +55,9 @@
 .method public apply(Ljava/lang/Class;)Z
     .locals 1
 
+    .line 2
     iget-object v0, p0, Lcom/applovin/exoplayer2/common/base/Predicates$j;->a:Ljava/lang/Class;
 
-    .line 2
     invoke-virtual {v0, p1}, Ljava/lang/Class;->isAssignableFrom(Ljava/lang/Class;)Z
 
     move-result p1

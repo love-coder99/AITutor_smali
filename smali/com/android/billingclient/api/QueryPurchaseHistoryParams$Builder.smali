@@ -31,6 +31,7 @@
 .method public synthetic constructor <init>(Lcom/android/billingclient/api/zzda;)V
     .locals 0
 
+    .line 2
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -48,6 +49,8 @@
 # virtual methods
 .method public build()Lcom/android/billingclient/api/QueryPurchaseHistoryParams;
     .locals 2
+    .annotation build Landroidx/annotation/NonNull;
+    .end annotation
 
     .line 1
     iget-object v0, p0, Lcom/android/billingclient/api/QueryPurchaseHistoryParams$Builder;->zza:Ljava/lang/String;
@@ -92,6 +95,12 @@
 
 .method public setProductType(Ljava/lang/String;)Lcom/android/billingclient/api/QueryPurchaseHistoryParams$Builder;
     .locals 0
+    .param p1    # Ljava/lang/String;
+        .annotation build Landroidx/annotation/NonNull;
+        .end annotation
+    .end param
+    .annotation build Landroidx/annotation/NonNull;
+    .end annotation
 
     iput-object p1, p0, Lcom/android/billingclient/api/QueryPurchaseHistoryParams$Builder;->zza:Ljava/lang/String;
 

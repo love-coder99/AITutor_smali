@@ -30,9 +30,10 @@
     .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
+    .line 2
     iput-object p1, p0, Lcom/applovin/impl/gi$b;->a:Lcom/applovin/impl/ho;
 
-    .line 2
+    .line 3
     new-instance p1, Lcom/applovin/impl/ah;
 
     invoke-direct {p1}, Lcom/applovin/impl/ah;-><init>()V
@@ -45,7 +46,7 @@
 .method public synthetic constructor <init>(Lcom/applovin/impl/ho;Lcom/applovin/impl/gi$a;)V
     .locals 0
 
-    .line 3
+    .line 4
     invoke-direct {p0, p1}, Lcom/applovin/impl/gi$b;-><init>(Lcom/applovin/impl/ho;)V
 
     return-void
@@ -109,9 +110,9 @@
 
     if-eqz v0, :cond_4
 
+    .line 7
     iget-object v0, p0, Lcom/applovin/impl/gi$b;->a:Lcom/applovin/impl/ho;
 
-    .line 7
     invoke-virtual {v0, v6, v7}, Lcom/applovin/impl/ho;->b(J)J
 
     move-result-wide v6
@@ -434,14 +435,14 @@
 
     long-to-int v1, v0
 
+    .line 19
     iget-object v0, p0, Lcom/applovin/impl/gi$b;->b:Lcom/applovin/impl/ah;
 
-    .line 19
     invoke-virtual {v0, v1}, Lcom/applovin/impl/ah;->d(I)V
 
+    .line 20
     iget-object v0, p0, Lcom/applovin/impl/gi$b;->b:Lcom/applovin/impl/ah;
 
-    .line 20
     invoke-virtual {v0}, Lcom/applovin/impl/ah;->c()[B
 
     move-result-object v0
@@ -450,13 +451,13 @@
 
     invoke-interface {p1, v0, v2, v1}, Lcom/applovin/impl/k8;->c([BII)V
 
+    .line 21
     iget-object v1, p0, Lcom/applovin/impl/gi$b;->b:Lcom/applovin/impl/ah;
 
     move-object v0, p0
 
     move-wide v2, p2
 
-    .line 21
     invoke-direct/range {v0 .. v5}, Lcom/applovin/impl/gi$b;->a(Lcom/applovin/impl/ah;JJ)Lcom/applovin/impl/i2$e;
 
     move-result-object p1
@@ -467,9 +468,9 @@
 .method public a()V
     .locals 2
 
+    .line 1
     iget-object v0, p0, Lcom/applovin/impl/gi$b;->b:Lcom/applovin/impl/ah;
 
-    .line 1
     sget-object v1, Lcom/applovin/impl/xp;->f:[B
 
     invoke-virtual {v0, v1}, Lcom/applovin/impl/ah;->a([B)V

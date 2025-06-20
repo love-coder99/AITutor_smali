@@ -58,9 +58,9 @@
 
     move-result-object v0
 
+    .line 2
     iget-object v1, p0, Lcom/applovin/impl/f$b;->d:Lcom/applovin/impl/f;
 
-    .line 2
     invoke-interface {p1}, Ljava/util/Map$Entry;->getValue()Ljava/lang/Object;
 
     move-result-object p1
@@ -220,9 +220,9 @@
 .method public get(Ljava/lang/Object;)Ljava/util/Collection;
     .locals 2
 
+    .line 2
     iget-object v0, p0, Lcom/applovin/impl/f$b;->c:Ljava/util/Map;
 
-    .line 2
     invoke-static {v0, p1}, Lcom/applovin/impl/uc;->c(Ljava/util/Map;Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object v0
@@ -235,10 +235,10 @@
 
     return-object p1
 
+    .line 3
     :cond_0
     iget-object v1, p0, Lcom/applovin/impl/f$b;->d:Lcom/applovin/impl/f;
 
-    .line 3
     invoke-virtual {v1, p1, v0}, Lcom/applovin/impl/f;->a(Ljava/lang/Object;Ljava/util/Collection;)Ljava/util/Collection;
 
     move-result-object p1
@@ -298,9 +298,9 @@
 .method public remove(Ljava/lang/Object;)Ljava/util/Collection;
     .locals 3
 
+    .line 2
     iget-object v0, p0, Lcom/applovin/impl/f$b;->c:Ljava/util/Map;
 
-    .line 2
     invoke-interface {v0, p1}, Ljava/util/Map;->remove(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object p1
@@ -313,10 +313,10 @@
 
     return-object p1
 
+    .line 3
     :cond_0
     iget-object v0, p0, Lcom/applovin/impl/f$b;->d:Lcom/applovin/impl/f;
 
-    .line 3
     invoke-virtual {v0}, Lcom/applovin/impl/f;->g()Ljava/util/Collection;
 
     move-result-object v0
@@ -324,9 +324,9 @@
     .line 4
     invoke-interface {v0, p1}, Ljava/util/Collection;->addAll(Ljava/util/Collection;)Z
 
+    .line 5
     iget-object v1, p0, Lcom/applovin/impl/f$b;->d:Lcom/applovin/impl/f;
 
-    .line 5
     invoke-interface {p1}, Ljava/util/Collection;->size()I
 
     move-result v2

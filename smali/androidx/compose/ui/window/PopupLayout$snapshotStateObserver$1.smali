@@ -3,14 +3,14 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lzh/c;
+.implements Lka/c;
 
 
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "Lkotlin/jvm/internal/Lambda;",
-        "Lzh/c;"
+        "Lka/c;"
     }
 .end annotation
 
@@ -20,10 +20,10 @@
     }
     d2 = {
         "Lkotlin/Function0;",
-        "Lqh/r;",
+        "LX9/j;",
         "command",
         "invoke",
-        "(Lzh/a;)V",
+        "(Lka/a;)V",
         "<anonymous>"
     }
     k = 0x3
@@ -36,14 +36,14 @@
 
 
 # instance fields
-.field final synthetic this$0:Landroidx/compose/ui/window/q;
+.field final synthetic this$0:Landroidx/compose/ui/window/o;
 
 
 # direct methods
-.method public constructor <init>(Landroidx/compose/ui/window/q;)V
+.method public constructor <init>(Landroidx/compose/ui/window/o;)V
     .locals 0
 
-    iput-object p1, p0, Landroidx/compose/ui/window/PopupLayout$snapshotStateObserver$1;->this$0:Landroidx/compose/ui/window/q;
+    iput-object p1, p0, Landroidx/compose/ui/window/PopupLayout$snapshotStateObserver$1;->this$0:Landroidx/compose/ui/window/o;
 
     const/4 p1, 0x1
 
@@ -58,28 +58,28 @@
     .locals 0
 
     .line 1
-    check-cast p1, Lzh/a;
+    check-cast p1, Lka/a;
 
-    invoke-virtual {p0, p1}, Landroidx/compose/ui/window/PopupLayout$snapshotStateObserver$1;->invoke(Lzh/a;)V
+    invoke-virtual {p0, p1}, Landroidx/compose/ui/window/PopupLayout$snapshotStateObserver$1;->invoke(Lka/a;)V
 
-    sget-object p1, Lqh/r;->a:Lqh/r;
+    sget-object p1, LX9/j;->a:LX9/j;
 
     return-object p1
 .end method
 
-.method public final invoke(Lzh/a;)V
-    .locals 2
+.method public final invoke(Lka/a;)V
+    .locals 3
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
-            "Lzh/a;",
+            "Lka/a;",
             ")V"
         }
     .end annotation
 
-    iget-object v0, p0, Landroidx/compose/ui/window/PopupLayout$snapshotStateObserver$1;->this$0:Landroidx/compose/ui/window/q;
-
     .line 2
+    iget-object v0, p0, Landroidx/compose/ui/window/PopupLayout$snapshotStateObserver$1;->this$0:Landroidx/compose/ui/window/o;
+
     invoke-virtual {v0}, Landroid/view/View;->getHandler()Landroid/os/Handler;
 
     move-result-object v0
@@ -103,23 +103,25 @@
     if-ne v0, v1, :cond_1
 
     .line 3
-    invoke-interface {p1}, Lzh/a;->invoke()Ljava/lang/Object;
+    invoke-interface {p1}, Lka/a;->invoke()Ljava/lang/Object;
 
     goto :goto_1
 
-    :cond_1
-    iget-object v0, p0, Landroidx/compose/ui/window/PopupLayout$snapshotStateObserver$1;->this$0:Landroidx/compose/ui/window/q;
-
     .line 4
+    :cond_1
+    iget-object v0, p0, Landroidx/compose/ui/window/PopupLayout$snapshotStateObserver$1;->this$0:Landroidx/compose/ui/window/o;
+
     invoke-virtual {v0}, Landroid/view/View;->getHandler()Landroid/os/Handler;
 
     move-result-object v0
 
     if-eqz v0, :cond_2
 
-    new-instance v1, Landroidx/compose/ui/window/p;
+    new-instance v1, Landroidx/compose/ui/platform/n;
 
-    invoke-direct {v1, p1}, Landroidx/compose/ui/window/p;-><init>(Lzh/a;)V
+    const/4 v2, 0x1
+
+    invoke-direct {v1, v2, p1}, Landroidx/compose/ui/platform/n;-><init>(ILka/a;)V
 
     invoke-virtual {v0, v1}, Landroid/os/Handler;->post(Ljava/lang/Runnable;)Z
 

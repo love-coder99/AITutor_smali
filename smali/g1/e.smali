@@ -1,270 +1,169 @@
-.class public final Lg1/e;
-.super Lg1/j0;
+.class public final LG1/e;
+.super Ljava/lang/Object;
 .source "SourceFile"
 
 
-# static fields
-.field public static final c:Lg1/e;
+# instance fields
+.field public a:F
 
-
-# direct methods
-.method static constructor <clinit>()V
-    .locals 4
-
-    .line 1
-    new-instance v0, Lg1/e;
-
-    .line 2
-    .line 3
-    const/4 v1, 0x2
-
-    .line 4
-    const/4 v2, 0x1
-
-    .line 5
-    const/4 v3, 0x0
-
-    .line 6
-    invoke-direct {v0, v3, v1, v2}, Lg1/j0;-><init>(III)V
-
-    .line 7
-    .line 8
-    .line 9
-    sput-object v0, Lg1/e;->c:Lg1/e;
-
-    .line 10
-    .line 11
-    return-void
-.end method
+.field public b:F
 
 
 # virtual methods
-.method public final a(Lg1/k0;Landroidx/compose/runtime/e;Landroidx/compose/runtime/j2;Landroidx/compose/runtime/u;)V
-    .locals 4
+.method public a(F)Landroidx/compose/animation/E;
+    .locals 9
 
     .line 1
-    const/4 p2, 0x0
+    invoke-virtual {p0, p1}, LG1/e;->b(F)D
 
     .line 2
-    invoke-virtual {p1, p2}, Lg1/k0;->b(I)Ljava/lang/Object;
-
     .line 3
     .line 4
+    move-result-wide v0
+
     .line 5
-    move-result-object p2
+    sget v2, Landroidx/compose/animation/F;->a:F
 
     .line 6
-    check-cast p2, Landroidx/compose/runtime/c;
-
     .line 7
+    float-to-double v2, v2
+
     .line 8
-    const/4 v0, 0x1
+    const-wide/high16 v4, 0x3ff0000000000000L    # 1.0
 
     .line 9
-    invoke-virtual {p1, v0}, Lg1/k0;->b(I)Ljava/lang/Object;
-
     .line 10
+    sub-double v4, v2, v4
+
     .line 11
     .line 12
-    move-result-object p1
+    new-instance v6, Landroidx/compose/animation/E;
 
     .line 13
-    instance-of v1, p1, Landroidx/compose/runtime/d2;
-
     .line 14
+    iget v7, p0, LG1/e;->a:F
+
     .line 15
-    if-eqz v1, :cond_0
-
     .line 16
-    .line 17
-    move-object v1, p1
+    iget v8, p0, LG1/e;->b:F
 
+    .line 17
     .line 18
-    check-cast v1, Landroidx/compose/runtime/d2;
+    mul-float v7, v7, v8
 
     .line 19
     .line 20
-    iget-object v1, v1, Landroidx/compose/runtime/d2;->a:Landroidx/compose/runtime/c2;
+    float-to-double v7, v7
 
     .line 21
+    div-double/2addr v2, v4
+
     .line 22
-    iget-object p4, p4, Landroidx/compose/runtime/u;->b:Ljava/util/ArrayList;
+    mul-double v2, v2, v0
 
     .line 23
     .line 24
-    invoke-virtual {p4, v1}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
+    invoke-static {v2, v3}, Ljava/lang/Math;->exp(D)D
 
     .line 25
     .line 26
     .line 27
-    :cond_0
-    iget p4, p3, Landroidx/compose/runtime/j2;->n:I
+    move-result-wide v2
 
     .line 28
-    .line 29
-    if-nez p4, :cond_2
+    mul-double v2, v2, v7
 
+    .line 29
     .line 30
+    double-to-float v2, v2
+
     .line 31
-    iget p4, p3, Landroidx/compose/runtime/j2;->i:I
+    div-double/2addr v0, v4
 
     .line 32
-    .line 33
-    iget v1, p3, Landroidx/compose/runtime/j2;->j:I
+    invoke-static {v0, v1}, Ljava/lang/Math;->exp(D)D
 
+    .line 33
     .line 34
     .line 35
-    invoke-virtual {p3, p2}, Landroidx/compose/runtime/j2;->c(Landroidx/compose/runtime/c;)I
+    move-result-wide v0
 
     .line 36
+    const-wide v3, 0x408f400000000000L    # 1000.0
+
     .line 37
     .line 38
-    move-result p2
-
     .line 39
-    iget-object v2, p3, Landroidx/compose/runtime/j2;->b:[I
-
     .line 40
     .line 41
-    add-int/lit8 v3, p2, 0x1
+    mul-double v0, v0, v3
 
     .line 42
     .line 43
-    invoke-virtual {p3, v3}, Landroidx/compose/runtime/j2;->p(I)I
+    double-to-long v0, v0
 
     .line 44
+    invoke-direct {v6, p1, v2, v0, v1}, Landroidx/compose/animation/E;-><init>(FFJ)V
+
     .line 45
     .line 46
-    move-result v3
-
     .line 47
-    invoke-virtual {p3, v3, v2}, Landroidx/compose/runtime/j2;->f(I[I)I
-
-    .line 48
-    .line 49
-    .line 50
-    move-result v2
-
-    .line 51
-    iput v2, p3, Landroidx/compose/runtime/j2;->i:I
-
-    .line 52
-    .line 53
-    iput v2, p3, Landroidx/compose/runtime/j2;->j:I
-
-    .line 54
-    .line 55
-    invoke-virtual {p3, v0, p2}, Landroidx/compose/runtime/j2;->t(II)V
-
-    .line 56
-    .line 57
-    .line 58
-    if-lt p4, v2, :cond_1
-
-    .line 59
-    .line 60
-    add-int/lit8 p4, p4, 0x1
-
-    .line 61
-    .line 62
-    add-int/lit8 v1, v1, 0x1
-
-    .line 63
-    .line 64
-    :cond_1
-    iget-object p2, p3, Landroidx/compose/runtime/j2;->c:[Ljava/lang/Object;
-
-    .line 65
-    .line 66
-    aput-object p1, p2, v2
-
-    .line 67
-    .line 68
-    iput p4, p3, Landroidx/compose/runtime/j2;->i:I
-
-    .line 69
-    .line 70
-    iput v1, p3, Landroidx/compose/runtime/j2;->j:I
-
-    .line 71
-    .line 72
-    return-void
-
-    .line 73
-    :cond_2
-    const-string p1, "Can only append a slot if not current inserting"
-
-    .line 74
-    .line 75
-    invoke-static {p1}, Landroidx/compose/runtime/q;->l(Ljava/lang/String;)V
-
-    .line 76
-    .line 77
-    .line 78
-    const/4 p1, 0x0
-
-    .line 79
-    throw p1
+    return-object v6
 .end method
 
-.method public final c(I)Ljava/lang/String;
-    .locals 1
+.method public b(F)D
+    .locals 5
 
     .line 1
-    const/4 v0, 0x0
+    sget-object v0, Landroidx/compose/animation/b;->a:[F
 
     .line 2
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/g;->h(II)Z
-
     .line 3
+    iget v0, p0, LG1/e;->a:F
+
     .line 4
     .line 5
-    move-result v0
+    iget v1, p0, LG1/e;->b:F
 
     .line 6
-    if-eqz v0, :cond_0
-
     .line 7
+    mul-float v0, v0, v1
+
     .line 8
-    const-string p1, "anchor"
-
     .line 9
+    const v1, 0x3eb33333    # 0.35f
+
     .line 10
-    goto :goto_0
-
     .line 11
-    :cond_0
-    const/4 v0, 0x1
-
     .line 12
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/g;->h(II)Z
+    invoke-static {p1}, Ljava/lang/Math;->abs(F)F
 
     .line 13
     .line 14
     .line 15
-    move-result v0
+    move-result p1
 
     .line 16
-    if-eqz v0, :cond_1
+    mul-float p1, p1, v1
 
     .line 17
     .line 18
-    const-string p1, "value"
+    float-to-double v1, p1
 
     .line 19
+    float-to-double v3, v0
+
     .line 20
-    goto :goto_0
+    div-double/2addr v1, v3
 
     .line 21
-    :cond_1
-    invoke-super {p0, p1}, Lg1/j0;->c(I)Ljava/lang/String;
+    invoke-static {v1, v2}, Ljava/lang/Math;->log(D)D
 
     .line 22
     .line 23
     .line 24
-    move-result-object p1
+    move-result-wide v0
 
     .line 25
-    :goto_0
-    return-object p1
+    return-wide v0
 .end method

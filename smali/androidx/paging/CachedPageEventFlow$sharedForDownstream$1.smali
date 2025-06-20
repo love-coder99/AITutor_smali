@@ -3,39 +3,11 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lzh/e;
+.implements Lka/e;
 
 
 # annotations
-.annotation system Ldalvik/annotation/Signature;
-    value = {
-        "Lkotlin/coroutines/jvm/internal/SuspendLambda;",
-        "Lzh/e;"
-    }
-.end annotation
-
-.annotation runtime Lkotlin/Metadata;
-    d1 = {
-        "\u0000\u0018\n\u0002\u0010\u0000\n\u0000\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\u0010\u0006\u001a\u00020\u0005\"\u0008\u0008\u0000\u0010\u0001*\u00020\u0000*\u0016\u0012\u0012\u0012\u0010\u0012\n\u0012\u0008\u0012\u0004\u0012\u00028\u00000\u0004\u0018\u00010\u00030\u0002H\u008a@"
-    }
-    d2 = {
-        "",
-        "T",
-        "Lkotlinx/coroutines/flow/i;",
-        "Lkotlin/collections/y;",
-        "Landroidx/paging/l0;",
-        "Lqh/r;",
-        "<anonymous>"
-    }
-    k = 0x3
-    mv = {
-        0x1,
-        0x8,
-        0x0
-    }
-.end annotation
-
-.annotation runtime Lth/c;
+.annotation runtime Lca/c;
     c = "androidx.paging.CachedPageEventFlow$sharedForDownstream$1"
     f = "CachedPageEventFlow.kt"
     l = {
@@ -43,6 +15,35 @@
         0x43
     }
     m = "invokeSuspend"
+.end annotation
+
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "Lkotlin/coroutines/jvm/internal/SuspendLambda;",
+        "Lka/e;"
+    }
+.end annotation
+
+.annotation runtime Lkotlin/Metadata;
+    d1 = {
+        "\u0000\u001a\n\u0002\u0010\u0000\n\u0000\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0008\u0002\u0010\u0006\u001a\u00020\u0005\"\u0008\u0008\u0000\u0010\u0001*\u00020\u0000*\u0016\u0012\u0012\u0012\u0010\u0012\n\u0012\u0008\u0012\u0004\u0012\u00028\u00000\u0004\u0018\u00010\u00030\u0002H\u008a@\u00a2\u0006\u0004\u0008\u0006\u0010\u0007"
+    }
+    d2 = {
+        "",
+        "T",
+        "Lkotlinx/coroutines/flow/g;",
+        "LY9/z;",
+        "Landroidx/paging/J;",
+        "LX9/j;",
+        "<anonymous>",
+        "(Lkotlinx/coroutines/flow/g;)V"
+    }
+    k = 0x3
+    mv = {
+        0x1,
+        0x8,
+        0x0
+    }
 .end annotation
 
 
@@ -96,7 +97,7 @@
             "Lkotlin/coroutines/Continuation<",
             "*>;)",
             "Lkotlin/coroutines/Continuation<",
-            "Lqh/r;",
+            "LX9/j;",
             ">;"
         }
     .end annotation
@@ -116,26 +117,26 @@
     .locals 0
 
     .line 1
-    check-cast p1, Lkotlinx/coroutines/flow/i;
+    check-cast p1, Lkotlinx/coroutines/flow/g;
 
     check-cast p2, Lkotlin/coroutines/Continuation;
 
-    invoke-virtual {p0, p1, p2}, Landroidx/paging/CachedPageEventFlow$sharedForDownstream$1;->invoke(Lkotlinx/coroutines/flow/i;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
+    invoke-virtual {p0, p1, p2}, Landroidx/paging/CachedPageEventFlow$sharedForDownstream$1;->invoke(Lkotlinx/coroutines/flow/g;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
 
     move-result-object p1
 
     return-object p1
 .end method
 
-.method public final invoke(Lkotlinx/coroutines/flow/i;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
+.method public final invoke(Lkotlinx/coroutines/flow/g;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
     .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
-            "Lkotlinx/coroutines/flow/i;",
+            "Lkotlinx/coroutines/flow/g;",
             "Lkotlin/coroutines/Continuation<",
             "-",
-            "Lqh/r;",
+            "LX9/j;",
             ">;)",
             "Ljava/lang/Object;"
         }
@@ -148,7 +149,7 @@
 
     check-cast p1, Landroidx/paging/CachedPageEventFlow$sharedForDownstream$1;
 
-    sget-object p2, Lqh/r;->a:Lqh/r;
+    sget-object p2, LX9/j;->a:LX9/j;
 
     invoke-virtual {p1, p2}, Landroidx/paging/CachedPageEventFlow$sharedForDownstream$1;->invokeSuspend(Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -158,7 +159,7 @@
 .end method
 
 .method public final invokeSuspend(Ljava/lang/Object;)Ljava/lang/Object;
-    .locals 5
+    .locals 4
 
     .line 1
     sget-object v0, Lkotlin/coroutines/intrinsics/CoroutineSingletons;->COROUTINE_SUSPENDED:Lkotlin/coroutines/intrinsics/CoroutineSingletons;
@@ -199,7 +200,7 @@
 
     .line 18
     .line 19
-    check-cast v3, Lkotlinx/coroutines/flow/i;
+    check-cast v3, Lkotlinx/coroutines/flow/g;
 
     .line 20
     .line 21
@@ -233,7 +234,7 @@
 
     .line 34
     .line 35
-    check-cast v1, Lkotlinx/coroutines/flow/i;
+    check-cast v1, Lkotlinx/coroutines/flow/g;
 
     .line 36
     .line 37
@@ -258,7 +259,7 @@
     move-object v1, p1
 
     .line 47
-    check-cast v1, Lkotlinx/coroutines/flow/i;
+    check-cast v1, Lkotlinx/coroutines/flow/g;
 
     .line 48
     .line 49
@@ -266,7 +267,7 @@
 
     .line 50
     .line 51
-    iget-object p1, p1, Landroidx/paging/d;->a:Landroidx/paging/k;
+    iget-object p1, p1, Landroidx/paging/d;->a:Landroidx/paging/l;
 
     .line 52
     .line 53
@@ -278,7 +279,7 @@
 
     .line 56
     .line 57
-    invoke-virtual {p1, p0}, Landroidx/paging/k;->a(Lkotlin/coroutines/Continuation;)Ljava/io/Serializable;
+    invoke-virtual {p1, p0}, Landroidx/paging/l;->a(Lkotlin/coroutines/jvm/internal/ContinuationImpl;)Ljava/io/Serializable;
 
     .line 58
     .line 59
@@ -303,93 +304,86 @@
 
     .line 67
     .line 68
-    iget-object v3, v3, Landroidx/paging/d;->d:Lkotlinx/coroutines/q1;
+    iget-object v3, v3, Landroidx/paging/d;->d:Lkotlinx/coroutines/r0;
 
     .line 69
     .line 70
-    invoke-virtual {v3}, Lkotlinx/coroutines/h1;->start()Z
+    invoke-virtual {v3}, Lkotlinx/coroutines/i0;->start()Z
 
     .line 71
     .line 72
     .line 73
-    check-cast p1, Ljava/lang/Iterable;
+    invoke-interface {p1}, Ljava/lang/Iterable;->iterator()Ljava/util/Iterator;
 
     .line 74
     .line 75
-    invoke-interface {p1}, Ljava/lang/Iterable;->iterator()Ljava/util/Iterator;
-
     .line 76
-    .line 77
-    .line 78
     move-result-object p1
 
-    .line 79
+    .line 77
     move-object v3, v1
 
-    .line 80
+    .line 78
     move-object v1, p1
 
-    .line 81
-    :goto_1
-    move-object p1, p0
-
-    .line 82
+    .line 79
     :cond_4
+    :goto_1
     invoke-interface {v1}, Ljava/util/Iterator;->hasNext()Z
 
+    .line 80
+    .line 81
+    .line 82
+    move-result p1
+
     .line 83
+    if-eqz p1, :cond_5
+
     .line 84
     .line 85
-    move-result v4
-
-    .line 86
-    if-eqz v4, :cond_5
-
-    .line 87
-    .line 88
     invoke-interface {v1}, Ljava/util/Iterator;->next()Ljava/lang/Object;
 
+    .line 86
+    .line 87
+    .line 88
+    move-result-object p1
+
     .line 89
+    check-cast p1, LY9/z;
+
     .line 90
     .line 91
-    move-result-object v4
+    iput-object v3, p0, Landroidx/paging/CachedPageEventFlow$sharedForDownstream$1;->L$0:Ljava/lang/Object;
 
     .line 92
-    check-cast v4, Lkotlin/collections/y;
-
     .line 93
+    iput-object v1, p0, Landroidx/paging/CachedPageEventFlow$sharedForDownstream$1;->L$1:Ljava/lang/Object;
+
     .line 94
-    iput-object v3, p1, Landroidx/paging/CachedPageEventFlow$sharedForDownstream$1;->L$0:Ljava/lang/Object;
-
     .line 95
+    iput v2, p0, Landroidx/paging/CachedPageEventFlow$sharedForDownstream$1;->label:I
+
     .line 96
-    iput-object v1, p1, Landroidx/paging/CachedPageEventFlow$sharedForDownstream$1;->L$1:Ljava/lang/Object;
-
     .line 97
-    .line 98
-    iput v2, p1, Landroidx/paging/CachedPageEventFlow$sharedForDownstream$1;->label:I
+    invoke-interface {v3, p1, p0}, Lkotlinx/coroutines/flow/g;->emit(Ljava/lang/Object;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
 
+    .line 98
     .line 99
     .line 100
-    invoke-interface {v3, v4, p1}, Lkotlinx/coroutines/flow/i;->emit(Ljava/lang/Object;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
+    move-result-object p1
 
     .line 101
+    if-ne p1, v0, :cond_4
+
     .line 102
     .line 103
-    move-result-object v4
+    return-object v0
 
     .line 104
-    if-ne v4, v0, :cond_4
+    :cond_5
+    sget-object p1, LX9/j;->a:LX9/j;
 
     .line 105
     .line 106
-    return-object v0
-
-    .line 107
-    :cond_5
-    sget-object p1, Lqh/r;->a:Lqh/r;
-
-    .line 108
-    .line 109
     return-object p1
 .end method

@@ -7,7 +7,7 @@
 
 
 # instance fields
-.field public final synthetic b:Landroidx/camera/camera2/internal/compat/e;
+.field public final synthetic b:Landroidx/camera/camera2/internal/compat/d;
 
 .field public final synthetic c:Landroid/hardware/camera2/CameraCaptureSession;
 
@@ -17,13 +17,13 @@
 
 
 # direct methods
-.method public synthetic constructor <init>(Landroidx/camera/camera2/internal/compat/e;Landroid/hardware/camera2/CameraCaptureSession;IJ)V
+.method public synthetic constructor <init>(Landroidx/camera/camera2/internal/compat/d;Landroid/hardware/camera2/CameraCaptureSession;IJ)V
     .locals 0
 
     .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    iput-object p1, p0, Landroidx/camera/camera2/internal/compat/b;->b:Landroidx/camera/camera2/internal/compat/e;
+    iput-object p1, p0, Landroidx/camera/camera2/internal/compat/b;->b:Landroidx/camera/camera2/internal/compat/d;
 
     iput-object p2, p0, Landroidx/camera/camera2/internal/compat/b;->c:Landroid/hardware/camera2/CameraCaptureSession;
 
@@ -40,11 +40,11 @@
     .locals 5
 
     .line 1
-    iget-object v0, p0, Landroidx/camera/camera2/internal/compat/b;->b:Landroidx/camera/camera2/internal/compat/e;
+    iget-object v0, p0, Landroidx/camera/camera2/internal/compat/b;->b:Landroidx/camera/camera2/internal/compat/d;
 
     .line 2
     .line 3
-    iget-object v0, v0, Landroidx/camera/camera2/internal/compat/e;->b:Ljava/lang/Object;
+    iget-object v0, v0, Landroidx/camera/camera2/internal/compat/d;->c:Ljava/lang/Object;
 
     .line 4
     .line 5

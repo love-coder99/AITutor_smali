@@ -3,10 +3,19 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lzh/e;
+.implements Lka/e;
 
 
 # annotations
+.annotation runtime Lca/c;
+    c = "androidx.compose.animation.core.AnimateAsStateKt$animateValueAsState$3$1$1"
+    f = "AnimateAsState.kt"
+    l = {
+        0x1ac
+    }
+    m = "invokeSuspend"
+.end annotation
+
 .annotation system Ldalvik/annotation/EnclosingMethod;
     value = Landroidx/compose/animation/core/AnimateAsStateKt$animateValueAsState$3$1;->invokeSuspend(Ljava/lang/Object;)Ljava/lang/Object;
 .end annotation
@@ -19,21 +28,22 @@
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "Lkotlin/coroutines/jvm/internal/SuspendLambda;",
-        "Lzh/e;"
+        "Lka/e;"
     }
 .end annotation
 
 .annotation runtime Lkotlin/Metadata;
     d1 = {
-        "\u0000\u0012\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\u0010\u0005\u001a\u00020\u0004\"\u0004\u0008\u0000\u0010\u0000\"\u0008\u0008\u0001\u0010\u0002*\u00020\u0001*\u00020\u0003H\u008a@"
+        "\u0000\u0014\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0008\u0002\u0010\u0005\u001a\u00020\u0004\"\u0004\u0008\u0000\u0010\u0000\"\u0008\u0008\u0001\u0010\u0002*\u00020\u0001*\u00020\u0003H\u008a@\u00a2\u0006\u0004\u0008\u0005\u0010\u0006"
     }
     d2 = {
         "T",
-        "Landroidx/compose/animation/core/m;",
+        "Landroidx/compose/animation/core/l;",
         "V",
-        "Lkotlinx/coroutines/w;",
-        "Lqh/r;",
-        "<anonymous>"
+        "Lkotlinx/coroutines/u;",
+        "LX9/j;",
+        "<anonymous>",
+        "(Lkotlinx/coroutines/u;)V"
     }
     k = 0x3
     mv = {
@@ -43,21 +53,12 @@
     }
 .end annotation
 
-.annotation runtime Lth/c;
-    c = "androidx.compose.animation.core.AnimateAsStateKt$animateValueAsState$3$1$1"
-    f = "AnimateAsState.kt"
-    l = {
-        0x1ac
-    }
-    m = "invokeSuspend"
-.end annotation
-
 
 # instance fields
-.field final synthetic $animSpec$delegate:Landroidx/compose/runtime/d3;
+.field final synthetic $animSpec$delegate:Landroidx/compose/runtime/H0;
     .annotation system Ldalvik/annotation/Signature;
         value = {
-            "Landroidx/compose/runtime/d3;"
+            "Landroidx/compose/runtime/H0;"
         }
     .end annotation
 .end field
@@ -70,10 +71,10 @@
     .end annotation
 .end field
 
-.field final synthetic $listener$delegate:Landroidx/compose/runtime/d3;
+.field final synthetic $listener$delegate:Landroidx/compose/runtime/H0;
     .annotation system Ldalvik/annotation/Signature;
         value = {
-            "Landroidx/compose/runtime/d3;"
+            "Landroidx/compose/runtime/H0;"
         }
     .end annotation
 .end field
@@ -90,15 +91,15 @@
 
 
 # direct methods
-.method public constructor <init>(Ljava/lang/Object;Landroidx/compose/animation/core/a;Landroidx/compose/runtime/d3;Landroidx/compose/runtime/d3;Lkotlin/coroutines/Continuation;)V
+.method public constructor <init>(Ljava/lang/Object;Landroidx/compose/animation/core/a;Landroidx/compose/runtime/H0;Landroidx/compose/runtime/H0;Lkotlin/coroutines/Continuation;)V
     .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
             "Ljava/lang/Object;",
             "Landroidx/compose/animation/core/a;",
-            "Landroidx/compose/runtime/d3;",
-            "Landroidx/compose/runtime/d3;",
+            "Landroidx/compose/runtime/H0;",
+            "Landroidx/compose/runtime/H0;",
             "Lkotlin/coroutines/Continuation<",
             "-",
             "Landroidx/compose/animation/core/AnimateAsStateKt$animateValueAsState$3$1$1;",
@@ -110,9 +111,9 @@
 
     iput-object p2, p0, Landroidx/compose/animation/core/AnimateAsStateKt$animateValueAsState$3$1$1;->$animatable:Landroidx/compose/animation/core/a;
 
-    iput-object p3, p0, Landroidx/compose/animation/core/AnimateAsStateKt$animateValueAsState$3$1$1;->$animSpec$delegate:Landroidx/compose/runtime/d3;
+    iput-object p3, p0, Landroidx/compose/animation/core/AnimateAsStateKt$animateValueAsState$3$1$1;->$animSpec$delegate:Landroidx/compose/runtime/H0;
 
-    iput-object p4, p0, Landroidx/compose/animation/core/AnimateAsStateKt$animateValueAsState$3$1$1;->$listener$delegate:Landroidx/compose/runtime/d3;
+    iput-object p4, p0, Landroidx/compose/animation/core/AnimateAsStateKt$animateValueAsState$3$1$1;->$listener$delegate:Landroidx/compose/runtime/H0;
 
     const/4 p1, 0x2
 
@@ -132,7 +133,7 @@
             "Lkotlin/coroutines/Continuation<",
             "*>;)",
             "Lkotlin/coroutines/Continuation<",
-            "Lqh/r;",
+            "LX9/j;",
             ">;"
         }
     .end annotation
@@ -143,15 +144,15 @@
 
     iget-object v2, p0, Landroidx/compose/animation/core/AnimateAsStateKt$animateValueAsState$3$1$1;->$animatable:Landroidx/compose/animation/core/a;
 
-    iget-object v3, p0, Landroidx/compose/animation/core/AnimateAsStateKt$animateValueAsState$3$1$1;->$animSpec$delegate:Landroidx/compose/runtime/d3;
+    iget-object v3, p0, Landroidx/compose/animation/core/AnimateAsStateKt$animateValueAsState$3$1$1;->$animSpec$delegate:Landroidx/compose/runtime/H0;
 
-    iget-object v4, p0, Landroidx/compose/animation/core/AnimateAsStateKt$animateValueAsState$3$1$1;->$listener$delegate:Landroidx/compose/runtime/d3;
+    iget-object v4, p0, Landroidx/compose/animation/core/AnimateAsStateKt$animateValueAsState$3$1$1;->$listener$delegate:Landroidx/compose/runtime/H0;
 
     move-object v0, p1
 
     move-object v5, p2
 
-    invoke-direct/range {v0 .. v5}, Landroidx/compose/animation/core/AnimateAsStateKt$animateValueAsState$3$1$1;-><init>(Ljava/lang/Object;Landroidx/compose/animation/core/a;Landroidx/compose/runtime/d3;Landroidx/compose/runtime/d3;Lkotlin/coroutines/Continuation;)V
+    invoke-direct/range {v0 .. v5}, Landroidx/compose/animation/core/AnimateAsStateKt$animateValueAsState$3$1$1;-><init>(Ljava/lang/Object;Landroidx/compose/animation/core/a;Landroidx/compose/runtime/H0;Landroidx/compose/runtime/H0;Lkotlin/coroutines/Continuation;)V
 
     return-object p1
 .end method
@@ -160,26 +161,26 @@
     .locals 0
 
     .line 1
-    check-cast p1, Lkotlinx/coroutines/w;
+    check-cast p1, Lkotlinx/coroutines/u;
 
     check-cast p2, Lkotlin/coroutines/Continuation;
 
-    invoke-virtual {p0, p1, p2}, Landroidx/compose/animation/core/AnimateAsStateKt$animateValueAsState$3$1$1;->invoke(Lkotlinx/coroutines/w;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
+    invoke-virtual {p0, p1, p2}, Landroidx/compose/animation/core/AnimateAsStateKt$animateValueAsState$3$1$1;->invoke(Lkotlinx/coroutines/u;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
 
     move-result-object p1
 
     return-object p1
 .end method
 
-.method public final invoke(Lkotlinx/coroutines/w;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
+.method public final invoke(Lkotlinx/coroutines/u;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
     .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
-            "Lkotlinx/coroutines/w;",
+            "Lkotlinx/coroutines/u;",
             "Lkotlin/coroutines/Continuation<",
             "-",
-            "Lqh/r;",
+            "LX9/j;",
             ">;)",
             "Ljava/lang/Object;"
         }
@@ -192,7 +193,7 @@
 
     check-cast p1, Landroidx/compose/animation/core/AnimateAsStateKt$animateValueAsState$3$1$1;
 
-    sget-object p2, Lqh/r;->a:Lqh/r;
+    sget-object p2, LX9/j;->a:LX9/j;
 
     invoke-virtual {p1, p2}, Landroidx/compose/animation/core/AnimateAsStateKt$animateValueAsState$3$1$1;->invokeSuspend(Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -267,7 +268,7 @@
 
     .line 30
     .line 31
-    invoke-virtual {v1}, Landroidx/compose/runtime/t2;->getValue()Ljava/lang/Object;
+    invoke-virtual {v1}, Landroidx/compose/runtime/ParcelableSnapshotMutableState;->getValue()Ljava/lang/Object;
 
     .line 32
     .line 33
@@ -275,7 +276,7 @@
     move-result-object v1
 
     .line 35
-    invoke-static {p1, v1}, Lrb/h;->d(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {p1, v1}, Lkotlin/jvm/internal/h;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     .line 36
     .line 37
@@ -295,15 +296,15 @@
 
     .line 44
     .line 45
-    iget-object p1, p0, Landroidx/compose/animation/core/AnimateAsStateKt$animateValueAsState$3$1$1;->$animSpec$delegate:Landroidx/compose/runtime/d3;
+    iget-object p1, p0, Landroidx/compose/animation/core/AnimateAsStateKt$animateValueAsState$3$1$1;->$animSpec$delegate:Landroidx/compose/runtime/H0;
 
     .line 46
     .line 47
-    sget-object v1, Landroidx/compose/animation/core/c;->a:Landroidx/compose/animation/core/u0;
+    sget-object v1, Landroidx/compose/animation/core/c;->a:Landroidx/compose/animation/core/O;
 
     .line 48
     .line 49
-    invoke-interface {p1}, Landroidx/compose/runtime/d3;->getValue()Ljava/lang/Object;
+    invoke-interface {p1}, Landroidx/compose/runtime/H0;->getValue()Ljava/lang/Object;
 
     .line 50
     .line 51
@@ -314,25 +315,25 @@
     move-object v5, p1
 
     .line 54
-    check-cast v5, Landroidx/compose/animation/core/g;
+    check-cast v5, Landroidx/compose/animation/core/f;
 
     .line 55
     .line 56
-    const/4 v6, 0x0
+    iput v2, p0, Landroidx/compose/animation/core/AnimateAsStateKt$animateValueAsState$3$1$1;->label:I
 
     .line 57
-    const/16 v8, 0xc
-
     .line 58
+    const/4 v6, 0x0
+
     .line 59
-    iput v2, p0, Landroidx/compose/animation/core/AnimateAsStateKt$animateValueAsState$3$1$1;->label:I
+    const/16 v8, 0xc
 
     .line 60
     .line 61
     move-object v7, p0
 
     .line 62
-    invoke-static/range {v3 .. v8}, Landroidx/compose/animation/core/a;->c(Landroidx/compose/animation/core/a;Ljava/lang/Object;Landroidx/compose/animation/core/g;Lzh/c;Lkotlin/coroutines/Continuation;I)Ljava/lang/Object;
+    invoke-static/range {v3 .. v8}, Landroidx/compose/animation/core/a;->c(Landroidx/compose/animation/core/a;Ljava/lang/Object;Landroidx/compose/animation/core/f;Lka/c;Lkotlin/coroutines/Continuation;I)Ljava/lang/Object;
 
     .line 63
     .line 64
@@ -349,15 +350,15 @@
     .line 69
     :cond_2
     :goto_0
-    iget-object p1, p0, Landroidx/compose/animation/core/AnimateAsStateKt$animateValueAsState$3$1$1;->$listener$delegate:Landroidx/compose/runtime/d3;
+    iget-object p1, p0, Landroidx/compose/animation/core/AnimateAsStateKt$animateValueAsState$3$1$1;->$listener$delegate:Landroidx/compose/runtime/H0;
 
     .line 70
     .line 71
-    sget-object v0, Landroidx/compose/animation/core/c;->a:Landroidx/compose/animation/core/u0;
+    sget-object v0, Landroidx/compose/animation/core/c;->a:Landroidx/compose/animation/core/O;
 
     .line 72
     .line 73
-    invoke-interface {p1}, Landroidx/compose/runtime/d3;->getValue()Ljava/lang/Object;
+    invoke-interface {p1}, Landroidx/compose/runtime/H0;->getValue()Ljava/lang/Object;
 
     .line 74
     .line 75
@@ -365,7 +366,7 @@
     move-result-object p1
 
     .line 77
-    check-cast p1, Lzh/c;
+    check-cast p1, Lka/c;
 
     .line 78
     .line 79
@@ -385,13 +386,13 @@
     move-result-object v0
 
     .line 87
-    invoke-interface {p1, v0}, Lzh/c;->invoke(Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-interface {p1, v0}, Lka/c;->invoke(Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 88
     .line 89
     .line 90
     :cond_3
-    sget-object p1, Lqh/r;->a:Lqh/r;
+    sget-object p1, LX9/j;->a:LX9/j;
 
     .line 91
     .line 92

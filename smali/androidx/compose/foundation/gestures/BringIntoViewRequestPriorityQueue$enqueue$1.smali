@@ -3,14 +3,14 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lzh/c;
+.implements Lka/c;
 
 
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "Lkotlin/jvm/internal/Lambda;",
-        "Lzh/c;"
+        "Lka/c;"
     }
 .end annotation
 
@@ -21,7 +21,7 @@
     d2 = {
         "",
         "it",
-        "Lqh/r;",
+        "LX9/j;",
         "invoke",
         "(Ljava/lang/Throwable;)V",
         "<anonymous>"
@@ -61,12 +61,12 @@
 .method public bridge synthetic invoke(Ljava/lang/Object;)Ljava/lang/Object;
     .locals 0
 
-    .line 3
+    .line 1
     check-cast p1, Ljava/lang/Throwable;
 
     invoke-virtual {p0, p1}, Landroidx/compose/foundation/gestures/BringIntoViewRequestPriorityQueue$enqueue$1;->invoke(Ljava/lang/Throwable;)V
 
-    sget-object p1, Lqh/r;->a:Lqh/r;
+    sget-object p1, LX9/j;->a:LX9/j;
 
     return-object p1
 .end method
@@ -74,15 +74,16 @@
 .method public final invoke(Ljava/lang/Throwable;)V
     .locals 1
 
+    .line 2
     iget-object p1, p0, Landroidx/compose/foundation/gestures/BringIntoViewRequestPriorityQueue$enqueue$1;->this$0:Landroidx/compose/foundation/gestures/b;
 
-    .line 1
-    iget-object p1, p1, Landroidx/compose/foundation/gestures/b;->a:Landroidx/compose/runtime/collection/e;
+    .line 3
+    iget-object p1, p1, Landroidx/compose/foundation/gestures/b;->a:Landroidx/compose/runtime/collection/d;
 
+    .line 4
     iget-object v0, p0, Landroidx/compose/foundation/gestures/BringIntoViewRequestPriorityQueue$enqueue$1;->$request:Landroidx/compose/foundation/gestures/h;
 
-    .line 2
-    invoke-virtual {p1, v0}, Landroidx/compose/runtime/collection/e;->p(Ljava/lang/Object;)Z
+    invoke-virtual {p1, v0}, Landroidx/compose/runtime/collection/d;->p(Ljava/lang/Object;)Z
 
     return-void
 .end method

@@ -81,10 +81,10 @@
     :cond_0
     return v2
 
+    .line 4
     :cond_1
     iget-wide v0, p0, Lcom/applovin/impl/o5;->f:J
 
-    .line 4
     iget-wide v4, p1, Lcom/applovin/impl/o5;->f:J
 
     sub-long/2addr v0, v4
@@ -95,9 +95,9 @@
 
     if-nez v6, :cond_2
 
+    .line 5
     iget-wide v0, p0, Lcom/applovin/impl/a3$b;->k:J
 
-    .line 5
     iget-wide v6, p1, Lcom/applovin/impl/a3$b;->k:J
 
     sub-long/2addr v0, v6

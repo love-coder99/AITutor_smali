@@ -4,7 +4,7 @@
 
 
 # static fields
-.field public static final a:Lzh/c;
+.field public static final a:Lka/c;
 
 
 # direct methods
@@ -16,7 +16,7 @@
 
     .line 2
     .line 3
-    sput-object v0, Landroidx/compose/foundation/text/input/internal/t;->a:Lzh/c;
+    sput-object v0, Landroidx/compose/foundation/text/input/internal/t;->a:Lka/c;
 
     .line 4
     .line 5

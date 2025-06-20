@@ -127,9 +127,9 @@
 .method public a()I
     .locals 1
 
+    .line 10
     iget-object v0, p0, Lcom/applovin/impl/fo$c;->d:Lcom/applovin/impl/db;
 
-    .line 10
     invoke-virtual {v0}, Ljava/util/AbstractCollection;->size()I
 
     move-result v0
@@ -174,11 +174,11 @@
     :cond_2
     if-eqz p3, :cond_3
 
+    .line 5
     iget-object p2, p0, Lcom/applovin/impl/fo$c;->f:[I
 
     iget-object p3, p0, Lcom/applovin/impl/fo$c;->g:[I
 
-    .line 5
     aget p1, p3, p1
 
     add-int/2addr p1, v0
@@ -224,9 +224,9 @@
 
     if-eqz p1, :cond_1
 
+    .line 2
     iget-object p1, p0, Lcom/applovin/impl/fo$c;->f:[I
 
-    .line 2
     aget v0, p1, v0
 
     :cond_1
@@ -236,9 +236,9 @@
 .method public a(ILcom/applovin/impl/fo$b;Z)Lcom/applovin/impl/fo$b;
     .locals 10
 
+    .line 6
     iget-object p3, p0, Lcom/applovin/impl/fo$c;->d:Lcom/applovin/impl/db;
 
-    .line 6
     invoke-interface {p3, p1}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
     move-result-object p1
@@ -280,11 +280,11 @@
 
     move-object/from16 v13, p0
 
+    .line 11
     iget-object v1, v13, Lcom/applovin/impl/fo$c;->c:Lcom/applovin/impl/db;
 
     move/from16 v2, p1
 
-    .line 11
     invoke-interface {v1, v2}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
     move-result-object v1
@@ -365,9 +365,9 @@
 .method public b()I
     .locals 1
 
+    .line 7
     iget-object v0, p0, Lcom/applovin/impl/fo$c;->c:Lcom/applovin/impl/db;
 
-    .line 7
     invoke-virtual {v0}, Ljava/util/AbstractCollection;->size()I
 
     move-result v0
@@ -412,11 +412,11 @@
     :cond_2
     if-eqz p3, :cond_3
 
+    .line 6
     iget-object p2, p0, Lcom/applovin/impl/fo$c;->f:[I
 
     iget-object p3, p0, Lcom/applovin/impl/fo$c;->g:[I
 
-    .line 6
     aget p1, p3, p1
 
     sub-int/2addr p1, v0
@@ -449,9 +449,9 @@
     :cond_0
     if-eqz p1, :cond_1
 
+    .line 2
     iget-object p1, p0, Lcom/applovin/impl/fo$c;->f:[I
 
-    .line 2
     invoke-virtual {p0}, Lcom/applovin/impl/fo$c;->b()I
 
     move-result v0

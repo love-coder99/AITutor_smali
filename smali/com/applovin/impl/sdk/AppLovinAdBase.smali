@@ -9,20 +9,32 @@
 
 # instance fields
 .field protected final adObject:Lorg/json/JSONObject;
+    .annotation build Landroidx/annotation/Nullable;
+    .end annotation
+.end field
 
 .field protected final adObjectLock:Ljava/lang/Object;
 
 .field private final createdAtMillis:J
 
 .field protected final fullResponse:Lorg/json/JSONObject;
+    .annotation build Landroidx/annotation/Nullable;
+    .end annotation
+.end field
 
 .field protected final fullResponseLock:Ljava/lang/Object;
 
 .field protected final sdk:Lcom/applovin/impl/sdk/j;
 
 .field protected final synchronizedAdObject:Lcom/applovin/impl/tl;
+    .annotation build Landroidx/annotation/Nullable;
+    .end annotation
+.end field
 
 .field protected final synchronizedFullResponse:Lcom/applovin/impl/tl;
+    .annotation build Landroidx/annotation/Nullable;
+    .end annotation
+.end field
 
 
 # direct methods
@@ -583,8 +595,11 @@
 .method public getCreatedAtMillis()J
     .locals 2
 
+    .line 1
     iget-wide v0, p0, Lcom/applovin/impl/sdk/AppLovinAdBase;->createdAtMillis:J
 
+    .line 2
+    .line 3
     return-wide v0
 .end method
 
@@ -1127,6 +1142,8 @@
 .end method
 
 .method public abstract synthetic getOpenMeasurementContentUrl()Ljava/lang/String;
+    .annotation build Landroidx/annotation/Nullable;
+    .end annotation
 .end method
 
 .method public abstract synthetic getOpenMeasurementCustomReferenceData()Ljava/lang/String;
@@ -1138,8 +1155,11 @@
 .method public getSdk()Lcom/applovin/impl/sdk/j;
     .locals 1
 
+    .line 1
     iget-object v0, p0, Lcom/applovin/impl/sdk/AppLovinAdBase;->sdk:Lcom/applovin/impl/sdk/j;
 
+    .line 2
+    .line 3
     return-object v0
 .end method
 

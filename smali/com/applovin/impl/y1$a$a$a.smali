@@ -46,7 +46,7 @@
 .method public static synthetic a(Lcom/applovin/impl/y1$a$a$a;)Lcom/applovin/impl/y1$a;
     .locals 0
 
-    .line 2
+    .line 1
     iget-object p0, p0, Lcom/applovin/impl/y1$a$a$a;->b:Lcom/applovin/impl/y1$a;
 
     return-object p0
@@ -79,9 +79,9 @@
 .method public a()V
     .locals 1
 
-    .line 1
     const/4 v0, 0x1
 
+    .line 2
     iput-boolean v0, p0, Lcom/applovin/impl/y1$a$a$a;->c:Z
 
     return-void

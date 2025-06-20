@@ -130,9 +130,14 @@
 .method public hashCode()I
     .locals 1
 
+    .line 1
     iget-boolean v0, p0, Lcom/applovin/impl/si;->a:Z
 
+    .line 2
+    .line 3
     xor-int/lit8 v0, v0, 0x1
 
+    .line 4
+    .line 5
     return v0
 .end method

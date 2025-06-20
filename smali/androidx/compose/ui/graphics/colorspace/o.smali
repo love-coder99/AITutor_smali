@@ -3,161 +3,154 @@
 .source "SourceFile"
 
 # interfaces
-.implements Landroidx/compose/ui/graphics/colorspace/j;
+.implements Landroidx/compose/ui/graphics/colorspace/i;
 
 
 # instance fields
 .field public final synthetic b:I
 
-.field public final synthetic c:Landroidx/compose/ui/graphics/colorspace/r;
+.field public final synthetic c:Landroidx/compose/ui/graphics/colorspace/q;
 
 
 # direct methods
-.method public synthetic constructor <init>(Landroidx/compose/ui/graphics/colorspace/r;I)V
+.method public synthetic constructor <init>(Landroidx/compose/ui/graphics/colorspace/q;I)V
     .locals 0
 
     .line 1
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
-
-    .line 2
-    .line 3
-    .line 4
     iput p2, p0, Landroidx/compose/ui/graphics/colorspace/o;->b:I
 
-    .line 5
-    .line 6
-    iput-object p1, p0, Landroidx/compose/ui/graphics/colorspace/o;->c:Landroidx/compose/ui/graphics/colorspace/r;
+    iput-object p1, p0, Landroidx/compose/ui/graphics/colorspace/o;->c:Landroidx/compose/ui/graphics/colorspace/q;
 
-    .line 7
-    .line 8
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
     return-void
 .end method
 
 
 # virtual methods
-.method public final a(D)D
-    .locals 10
+.method public final f(D)D
+    .locals 8
 
     .line 1
-    const-wide/high16 v0, 0x3ff0000000000000L    # 1.0
+    iget v0, p0, Landroidx/compose/ui/graphics/colorspace/o;->b:I
 
     .line 2
     .line 3
-    iget v2, p0, Landroidx/compose/ui/graphics/colorspace/o;->b:I
+    packed-switch v0, :pswitch_data_0
 
     .line 4
     .line 5
-    iget-object v3, p0, Landroidx/compose/ui/graphics/colorspace/o;->c:Landroidx/compose/ui/graphics/colorspace/r;
-
     .line 6
-    .line 7
-    packed-switch v2, :pswitch_data_0
+    iget-object v0, p0, Landroidx/compose/ui/graphics/colorspace/o;->c:Landroidx/compose/ui/graphics/colorspace/q;
 
+    .line 7
     .line 8
+    iget-wide v1, v0, Landroidx/compose/ui/graphics/colorspace/q;->b:D
+
     .line 9
     .line 10
-    iget-wide v0, v3, Landroidx/compose/ui/graphics/colorspace/r;->b:D
+    iget-wide v3, v0, Landroidx/compose/ui/graphics/colorspace/q;->e:D
 
     .line 11
     .line 12
-    iget-wide v4, v3, Landroidx/compose/ui/graphics/colorspace/r;->e:D
+    cmpl-double v5, p1, v3
 
     .line 13
     .line 14
-    cmpl-double v2, p1, v4
+    if-ltz v5, :cond_0
 
     .line 15
     .line 16
-    if-ltz v2, :cond_0
+    mul-double v1, v1, p1
 
     .line 17
     .line 18
-    mul-double v0, v0, p1
+    iget-wide p1, v0, Landroidx/compose/ui/graphics/colorspace/q;->c:D
 
     .line 19
     .line 20
-    iget-wide p1, v3, Landroidx/compose/ui/graphics/colorspace/r;->c:D
+    add-double/2addr v1, p1
 
     .line 21
-    .line 22
-    add-double/2addr v0, p1
+    iget-wide p1, v0, Landroidx/compose/ui/graphics/colorspace/q;->a:D
 
+    .line 22
     .line 23
-    iget-wide p1, v3, Landroidx/compose/ui/graphics/colorspace/r;->a:D
+    invoke-static {v1, v2, p1, p2}, Ljava/lang/Math;->pow(DD)D
 
     .line 24
     .line 25
-    invoke-static {v0, v1, p1, p2}, Ljava/lang/Math;->pow(DD)D
-
     .line 26
-    .line 27
-    .line 28
     move-result-wide p1
 
-    .line 29
-    iget-wide v0, v3, Landroidx/compose/ui/graphics/colorspace/r;->f:D
+    .line 27
+    iget-wide v0, v0, Landroidx/compose/ui/graphics/colorspace/q;->f:D
 
-    .line 30
-    .line 31
+    .line 28
+    .line 29
     add-double/2addr p1, v0
 
-    .line 32
+    .line 30
     goto :goto_0
 
-    .line 33
+    .line 31
     :cond_0
-    iget-wide v0, v3, Landroidx/compose/ui/graphics/colorspace/r;->d:D
+    iget-wide v1, v0, Landroidx/compose/ui/graphics/colorspace/q;->d:D
+
+    .line 32
+    .line 33
+    mul-double v1, v1, p1
 
     .line 34
     .line 35
-    mul-double v0, v0, p1
+    iget-wide p1, v0, Landroidx/compose/ui/graphics/colorspace/q;->g:D
 
     .line 36
     .line 37
-    iget-wide p1, v3, Landroidx/compose/ui/graphics/colorspace/r;->g:D
+    add-double/2addr p1, v1
 
     .line 38
-    .line 39
-    add-double/2addr p1, v0
-
-    .line 40
     :goto_0
     return-wide p1
 
-    .line 41
+    .line 39
     :pswitch_0
-    iget-wide v0, v3, Landroidx/compose/ui/graphics/colorspace/r;->b:D
+    iget-object v0, p0, Landroidx/compose/ui/graphics/colorspace/o;->c:Landroidx/compose/ui/graphics/colorspace/q;
+
+    .line 40
+    .line 41
+    iget-wide v1, v0, Landroidx/compose/ui/graphics/colorspace/q;->e:D
 
     .line 42
     .line 43
-    iget-wide v4, v3, Landroidx/compose/ui/graphics/colorspace/r;->e:D
+    cmpl-double v3, p1, v1
 
     .line 44
     .line 45
-    cmpl-double v2, p1, v4
+    if-ltz v3, :cond_1
 
     .line 46
     .line 47
-    if-ltz v2, :cond_1
+    iget-wide v1, v0, Landroidx/compose/ui/graphics/colorspace/q;->b:D
 
     .line 48
     .line 49
-    mul-double v0, v0, p1
+    mul-double v1, v1, p1
 
     .line 50
     .line 51
-    iget-wide p1, v3, Landroidx/compose/ui/graphics/colorspace/r;->c:D
+    iget-wide p1, v0, Landroidx/compose/ui/graphics/colorspace/q;->c:D
 
     .line 52
     .line 53
-    add-double/2addr v0, p1
+    add-double/2addr v1, p1
 
     .line 54
-    iget-wide p1, v3, Landroidx/compose/ui/graphics/colorspace/r;->a:D
+    iget-wide p1, v0, Landroidx/compose/ui/graphics/colorspace/q;->a:D
 
     .line 55
     .line 56
-    invoke-static {v0, v1, p1, p2}, Ljava/lang/Math;->pow(DD)D
+    invoke-static {v1, v2, p1, p2}, Ljava/lang/Math;->pow(DD)D
 
     .line 57
     .line 58
@@ -169,7 +162,7 @@
 
     .line 61
     :cond_1
-    iget-wide v0, v3, Landroidx/compose/ui/graphics/colorspace/r;->d:D
+    iget-wide v0, v0, Landroidx/compose/ui/graphics/colorspace/q;->d:D
 
     .line 62
     .line 63
@@ -182,144 +175,160 @@
 
     .line 66
     :pswitch_1
-    iget-wide v4, v3, Landroidx/compose/ui/graphics/colorspace/r;->b:D
+    iget-object v0, p0, Landroidx/compose/ui/graphics/colorspace/o;->c:Landroidx/compose/ui/graphics/colorspace/q;
 
     .line 67
     .line 68
-    iget-wide v6, v3, Landroidx/compose/ui/graphics/colorspace/r;->e:D
+    iget-wide v1, v0, Landroidx/compose/ui/graphics/colorspace/q;->b:D
 
     .line 69
     .line 70
-    iget-wide v8, v3, Landroidx/compose/ui/graphics/colorspace/r;->d:D
+    iget-wide v3, v0, Landroidx/compose/ui/graphics/colorspace/q;->e:D
 
     .line 71
     .line 72
-    mul-double v6, v6, v8
+    iget-wide v5, v0, Landroidx/compose/ui/graphics/colorspace/q;->d:D
 
     .line 73
     .line 74
-    cmpl-double v2, p1, v6
+    mul-double v3, v3, v5
 
     .line 75
     .line 76
-    if-ltz v2, :cond_2
+    cmpl-double v7, p1, v3
 
     .line 77
     .line 78
-    iget-wide v6, v3, Landroidx/compose/ui/graphics/colorspace/r;->f:D
+    if-ltz v7, :cond_2
 
     .line 79
     .line 80
-    sub-double/2addr p1, v6
+    iget-wide v3, v0, Landroidx/compose/ui/graphics/colorspace/q;->f:D
 
     .line 81
-    iget-wide v6, v3, Landroidx/compose/ui/graphics/colorspace/r;->a:D
-
     .line 82
+    sub-double/2addr p1, v3
+
     .line 83
-    div-double/2addr v0, v6
+    const-wide/high16 v3, 0x3ff0000000000000L    # 1.0
 
     .line 84
-    invoke-static {p1, p2, v0, v1}, Ljava/lang/Math;->pow(DD)D
-
     .line 85
+    iget-wide v5, v0, Landroidx/compose/ui/graphics/colorspace/q;->a:D
+
     .line 86
     .line 87
-    move-result-wide p1
+    div-double/2addr v3, v5
 
     .line 88
-    iget-wide v0, v3, Landroidx/compose/ui/graphics/colorspace/r;->c:D
+    invoke-static {p1, p2, v3, v4}, Ljava/lang/Math;->pow(DD)D
 
     .line 89
     .line 90
-    sub-double/2addr p1, v0
-
     .line 91
-    div-double/2addr p1, v4
+    move-result-wide p1
 
     .line 92
-    goto :goto_2
+    iget-wide v3, v0, Landroidx/compose/ui/graphics/colorspace/q;->c:D
 
     .line 93
-    :cond_2
-    iget-wide v0, v3, Landroidx/compose/ui/graphics/colorspace/r;->g:D
-
     .line 94
+    sub-double/2addr p1, v3
+
     .line 95
-    sub-double/2addr p1, v0
+    div-double/2addr p1, v1
 
     .line 96
-    div-double/2addr p1, v8
+    goto :goto_2
 
     .line 97
+    :cond_2
+    iget-wide v0, v0, Landroidx/compose/ui/graphics/colorspace/q;->g:D
+
+    .line 98
+    .line 99
+    sub-double/2addr p1, v0
+
+    .line 100
+    div-double/2addr p1, v5
+
+    .line 101
     :goto_2
     return-wide p1
 
-    .line 98
-    :pswitch_2
-    iget-wide v4, v3, Landroidx/compose/ui/graphics/colorspace/r;->b:D
-
-    .line 99
-    .line 100
-    iget-wide v6, v3, Landroidx/compose/ui/graphics/colorspace/r;->e:D
-
-    .line 101
     .line 102
-    iget-wide v8, v3, Landroidx/compose/ui/graphics/colorspace/r;->d:D
+    :pswitch_2
+    iget-object v0, p0, Landroidx/compose/ui/graphics/colorspace/o;->c:Landroidx/compose/ui/graphics/colorspace/q;
 
     .line 103
     .line 104
-    mul-double v6, v6, v8
+    iget-wide v1, v0, Landroidx/compose/ui/graphics/colorspace/q;->e:D
 
     .line 105
     .line 106
-    cmpl-double v2, p1, v6
+    iget-wide v3, v0, Landroidx/compose/ui/graphics/colorspace/q;->d:D
 
     .line 107
     .line 108
-    if-ltz v2, :cond_3
+    mul-double v1, v1, v3
 
     .line 109
     .line 110
-    iget-wide v6, v3, Landroidx/compose/ui/graphics/colorspace/r;->a:D
+    cmpl-double v5, p1, v1
 
     .line 111
     .line 112
-    div-double/2addr v0, v6
+    if-ltz v5, :cond_3
 
     .line 113
-    invoke-static {p1, p2, v0, v1}, Ljava/lang/Math;->pow(DD)D
-
     .line 114
+    const-wide/high16 v1, 0x3ff0000000000000L    # 1.0
+
     .line 115
     .line 116
-    move-result-wide p1
+    iget-wide v3, v0, Landroidx/compose/ui/graphics/colorspace/q;->a:D
 
     .line 117
-    iget-wide v0, v3, Landroidx/compose/ui/graphics/colorspace/r;->c:D
-
     .line 118
+    div-double/2addr v1, v3
+
     .line 119
-    sub-double/2addr p1, v0
+    invoke-static {p1, p2, v1, v2}, Ljava/lang/Math;->pow(DD)D
 
     .line 120
-    div-double/2addr p1, v4
-
     .line 121
-    goto :goto_3
-
     .line 122
-    :cond_3
-    div-double/2addr p1, v8
+    move-result-wide p1
 
     .line 123
+    iget-wide v1, v0, Landroidx/compose/ui/graphics/colorspace/q;->c:D
+
+    .line 124
+    .line 125
+    sub-double/2addr p1, v1
+
+    .line 126
+    iget-wide v0, v0, Landroidx/compose/ui/graphics/colorspace/q;->b:D
+
+    .line 127
+    .line 128
+    div-double/2addr p1, v0
+
+    .line 129
+    goto :goto_3
+
+    .line 130
+    :cond_3
+    div-double/2addr p1, v3
+
+    .line 131
     :goto_3
     return-wide p1
 
-    .line 124
+    .line 132
     nop
 
-    .line 125
+    .line 133
     :pswitch_data_0
     .packed-switch 0x0
         :pswitch_2

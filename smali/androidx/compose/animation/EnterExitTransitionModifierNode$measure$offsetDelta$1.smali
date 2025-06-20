@@ -3,14 +3,14 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lzh/c;
+.implements Lka/c;
 
 
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "Lkotlin/jvm/internal/Lambda;",
-        "Lzh/c;"
+        "Lka/c;"
     }
 .end annotation
 
@@ -19,12 +19,12 @@
         "\u0000\u0014\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0008\u0003\u0010\u0006\u001a\u0008\u0012\u0004\u0012\u00020\u00030\u0002*\u0008\u0012\u0004\u0012\u00020\u00010\u0000H\n\u00a2\u0006\u0004\u0008\u0004\u0010\u0005"
     }
     d2 = {
-        "Landroidx/compose/animation/core/a1;",
+        "Landroidx/compose/animation/core/V;",
         "Landroidx/compose/animation/EnterExitState;",
-        "Landroidx/compose/animation/core/z;",
-        "Lh2/h;",
+        "Landroidx/compose/animation/core/w;",
+        "LM0/h;",
         "invoke",
-        "(Landroidx/compose/animation/core/a1;)Landroidx/compose/animation/core/z;",
+        "(Landroidx/compose/animation/core/V;)Landroidx/compose/animation/core/w;",
         "<anonymous>"
     }
     k = 0x3
@@ -65,19 +65,19 @@
 
 
 # virtual methods
-.method public final invoke(Landroidx/compose/animation/core/a1;)Landroidx/compose/animation/core/z;
+.method public final invoke(Landroidx/compose/animation/core/V;)Landroidx/compose/animation/core/w;
     .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
-            "Landroidx/compose/animation/core/a1;",
+            "Landroidx/compose/animation/core/V;",
             ")",
-            "Landroidx/compose/animation/core/z;"
+            "Landroidx/compose/animation/core/w;"
         }
     .end annotation
 
     .line 1
-    sget-object p1, Landroidx/compose/animation/x;->c:Landroidx/compose/animation/core/u0;
+    sget-object p1, Landroidx/compose/animation/w;->c:Landroidx/compose/animation/core/O;
 
     return-object p1
 .end method
@@ -86,9 +86,9 @@
     .locals 0
 
     .line 2
-    check-cast p1, Landroidx/compose/animation/core/a1;
+    check-cast p1, Landroidx/compose/animation/core/V;
 
-    invoke-virtual {p0, p1}, Landroidx/compose/animation/EnterExitTransitionModifierNode$measure$offsetDelta$1;->invoke(Landroidx/compose/animation/core/a1;)Landroidx/compose/animation/core/z;
+    invoke-virtual {p0, p1}, Landroidx/compose/animation/EnterExitTransitionModifierNode$measure$offsetDelta$1;->invoke(Landroidx/compose/animation/core/V;)Landroidx/compose/animation/core/w;
 
     move-result-object p1
 

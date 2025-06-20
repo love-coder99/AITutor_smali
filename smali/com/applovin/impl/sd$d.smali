@@ -38,15 +38,15 @@
     .locals 2
 
     .line 1
-    new-instance v0, Lcom/applovin/impl/vu;
+    new-instance v0, Lcom/applovin/impl/M1;
 
     .line 2
     .line 3
-    const/16 v1, 0xd
+    const/16 v1, 0xe
 
     .line 4
     .line 5
-    invoke-direct {v0, v1}, Lcom/applovin/impl/vu;-><init>(I)V
+    invoke-direct {v0, v1}, Lcom/applovin/impl/M1;-><init>(I)V
 
     .line 6
     .line 7
@@ -64,14 +64,19 @@
     .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
+    .line 2
     iput-wide p1, p0, Lcom/applovin/impl/sd$d;->a:J
 
+    .line 3
     iput-wide p3, p0, Lcom/applovin/impl/sd$d;->b:J
 
+    .line 4
     iput-boolean p5, p0, Lcom/applovin/impl/sd$d;->c:Z
 
+    .line 5
     iput-boolean p6, p0, Lcom/applovin/impl/sd$d;->d:Z
 
+    .line 6
     iput-boolean p7, p0, Lcom/applovin/impl/sd$d;->f:Z
 
     return-void
@@ -80,7 +85,7 @@
 .method public synthetic constructor <init>(JJZZZLcom/applovin/impl/sd$a;)V
     .locals 0
 
-    .line 2
+    .line 7
     invoke-direct/range {p0 .. p7}, Lcom/applovin/impl/sd$d;-><init>(JJZZZ)V
 
     return-void
@@ -301,45 +306,79 @@
 .method public hashCode()I
     .locals 7
 
+    .line 1
     iget-wide v0, p0, Lcom/applovin/impl/sd$d;->a:J
 
+    .line 2
+    .line 3
     const/16 v2, 0x20
 
+    .line 4
+    .line 5
     ushr-long v3, v0, v2
 
+    .line 6
+    .line 7
     xor-long/2addr v0, v3
 
+    .line 8
     long-to-int v1, v0
 
+    .line 9
     mul-int/lit8 v1, v1, 0x1f
 
+    .line 10
+    .line 11
     iget-wide v3, p0, Lcom/applovin/impl/sd$d;->b:J
 
+    .line 12
+    .line 13
     ushr-long v5, v3, v2
 
+    .line 14
+    .line 15
     xor-long v2, v3, v5
 
+    .line 16
+    .line 17
     long-to-int v0, v2
 
+    .line 18
     add-int/2addr v1, v0
 
+    .line 19
     mul-int/lit8 v1, v1, 0x1f
 
+    .line 20
+    .line 21
     iget-boolean v0, p0, Lcom/applovin/impl/sd$d;->c:Z
 
+    .line 22
+    .line 23
     add-int/2addr v1, v0
 
+    .line 24
     mul-int/lit8 v1, v1, 0x1f
 
+    .line 25
+    .line 26
     iget-boolean v0, p0, Lcom/applovin/impl/sd$d;->d:Z
 
+    .line 27
+    .line 28
     add-int/2addr v1, v0
 
+    .line 29
     mul-int/lit8 v1, v1, 0x1f
 
+    .line 30
+    .line 31
     iget-boolean v0, p0, Lcom/applovin/impl/sd$d;->f:Z
 
+    .line 32
+    .line 33
     add-int/2addr v1, v0
 
+    .line 34
     return v1
 .end method

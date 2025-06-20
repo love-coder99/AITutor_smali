@@ -3,14 +3,14 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lzh/a;
+.implements Lka/a;
 
 
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "Lkotlin/jvm/internal/Lambda;",
-        "Lzh/a;"
+        "Lka/a;"
     }
 .end annotation
 
@@ -19,9 +19,9 @@
         "\u0000\u000e\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0008\u0003\u0010\u0005\u001a\u00020\u0002\"\u0008\u0008\u0000\u0010\u0001*\u00020\u0000H\n\u00a2\u0006\u0004\u0008\u0003\u0010\u0004"
     }
     d2 = {
-        "Landroidx/compose/foundation/lazy/layout/g0;",
+        "Landroidx/compose/foundation/lazy/layout/F;",
         "T",
-        "Lqh/r;",
+        "LX9/j;",
         "invoke",
         "()V",
         "<anonymous>"
@@ -70,10 +70,10 @@
 .method public bridge synthetic invoke()Ljava/lang/Object;
     .locals 1
 
-    .line 3
+    .line 4
     invoke-virtual {p0}, Landroidx/compose/foundation/lazy/layout/LazyLayoutItemAnimator$ItemInfo$updateAnimation$1$animation$1;->invoke()V
 
-    sget-object v0, Lqh/r;->a:Lqh/r;
+    sget-object v0, LX9/j;->a:LX9/j;
 
     return-object v0
 .end method
@@ -81,15 +81,16 @@
 .method public final invoke()V
     .locals 1
 
+    .line 1
     iget-object v0, p0, Landroidx/compose/foundation/lazy/layout/LazyLayoutItemAnimator$ItemInfo$updateAnimation$1$animation$1;->this$0:Landroidx/compose/foundation/lazy/layout/x;
 
-    .line 1
-    iget-object v0, v0, Landroidx/compose/foundation/lazy/layout/x;->j:Landroidx/compose/ui/node/o;
+    .line 2
+    iget-object v0, v0, Landroidx/compose/foundation/lazy/layout/x;->j:Landroidx/compose/foundation/lazy/layout/u;
 
     if-eqz v0, :cond_0
 
-    .line 2
-    invoke-static {v0}, Lcom/google/android/play/core/appupdate/b;->A(Landroidx/compose/ui/node/o;)V
+    .line 3
+    invoke-static {v0}, LE/p;->v(Landroidx/compose/ui/node/m;)V
 
     :cond_0
     return-void

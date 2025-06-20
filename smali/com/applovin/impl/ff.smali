@@ -90,6 +90,7 @@
 
     const-wide p1, -0x7fffffffffffffffL    # -4.9E-324
 
+    .line 7
     iput-wide p1, p0, Lcom/applovin/impl/ff;->v:J
 
     return-void
@@ -98,13 +99,14 @@
 .method private a(Lcom/applovin/impl/af;)V
     .locals 2
 
+    .line 14
     iget-object v0, p0, Lcom/applovin/impl/ff;->p:Landroid/os/Handler;
 
     if-eqz v0, :cond_0
 
     const/4 v1, 0x0
 
-    .line 14
+    .line 15
     invoke-virtual {v0, v1, p1}, Landroid/os/Handler;->obtainMessage(ILjava/lang/Object;)Landroid/os/Message;
 
     move-result-object p1
@@ -113,7 +115,7 @@
 
     goto :goto_0
 
-    .line 15
+    .line 16
     :cond_0
     invoke-direct {p0, p1}, Lcom/applovin/impl/ff;->b(Lcom/applovin/impl/af;)V
 
@@ -126,7 +128,7 @@
 
     const/4 v0, 0x0
 
-    .line 2
+    .line 1
     :goto_0
     invoke-virtual {p1}, Lcom/applovin/impl/af;->c()I
 
@@ -134,7 +136,7 @@
 
     if-ge v0, v1, :cond_2
 
-    .line 3
+    .line 2
     invoke-virtual {p1, v0}, Lcom/applovin/impl/af;->a(I)Lcom/applovin/impl/af$b;
 
     move-result-object v1
@@ -145,15 +147,16 @@
 
     if-eqz v1, :cond_0
 
+    .line 3
     iget-object v2, p0, Lcom/applovin/impl/ff;->n:Lcom/applovin/impl/cf;
 
-    .line 4
     invoke-interface {v2, v1}, Lcom/applovin/impl/cf;->a(Lcom/applovin/impl/e9;)Z
 
     move-result v2
 
     if-eqz v2, :cond_0
 
+    .line 4
     iget-object v2, p0, Lcom/applovin/impl/ff;->n:Lcom/applovin/impl/cf;
 
     .line 5
@@ -176,21 +179,21 @@
 
     check-cast v2, [B
 
+    .line 7
     iget-object v3, p0, Lcom/applovin/impl/ff;->q:Lcom/applovin/impl/df;
 
-    .line 7
     invoke-virtual {v3}, Lcom/applovin/impl/o5;->b()V
 
+    .line 8
     iget-object v3, p0, Lcom/applovin/impl/ff;->q:Lcom/applovin/impl/df;
 
-    .line 8
     array-length v4, v2
 
     invoke-virtual {v3, v4}, Lcom/applovin/impl/o5;->g(I)V
 
+    .line 9
     iget-object v3, p0, Lcom/applovin/impl/ff;->q:Lcom/applovin/impl/df;
 
-    .line 9
     iget-object v3, v3, Lcom/applovin/impl/o5;->c:Ljava/nio/ByteBuffer;
 
     invoke-static {v3}, Lcom/applovin/impl/xp;->a(Ljava/lang/Object;)Ljava/lang/Object;
@@ -201,14 +204,14 @@
 
     invoke-virtual {v3, v2}, Ljava/nio/ByteBuffer;->put([B)Ljava/nio/ByteBuffer;
 
+    .line 10
     iget-object v2, p0, Lcom/applovin/impl/ff;->q:Lcom/applovin/impl/df;
 
-    .line 10
     invoke-virtual {v2}, Lcom/applovin/impl/o5;->g()V
 
+    .line 11
     iget-object v2, p0, Lcom/applovin/impl/ff;->q:Lcom/applovin/impl/df;
 
-    .line 11
     invoke-interface {v1, v2}, Lcom/applovin/impl/bf;->a(Lcom/applovin/impl/df;)Lcom/applovin/impl/af;
 
     move-result-object v1
@@ -257,6 +260,7 @@
 .method private c(J)Z
     .locals 5
 
+    .line 2
     iget-object v0, p0, Lcom/applovin/impl/ff;->w:Lcom/applovin/impl/af;
 
     const/4 v1, 0x1
@@ -269,15 +273,17 @@
 
     if-gtz v4, :cond_0
 
-    .line 2
+    .line 3
     invoke-direct {p0, v0}, Lcom/applovin/impl/ff;->a(Lcom/applovin/impl/af;)V
 
     const/4 p1, 0x0
 
+    .line 4
     iput-object p1, p0, Lcom/applovin/impl/ff;->w:Lcom/applovin/impl/af;
 
     const-wide p1, -0x7fffffffffffffffL    # -4.9E-324
 
+    .line 5
     iput-wide p1, p0, Lcom/applovin/impl/ff;->v:J
 
     const/4 p1, 0x1
@@ -287,6 +293,7 @@
     :cond_0
     const/4 p1, 0x0
 
+    .line 6
     :goto_0
     iget-boolean p2, p0, Lcom/applovin/impl/ff;->s:Z
 
@@ -296,6 +303,7 @@
 
     if-nez p2, :cond_1
 
+    .line 7
     iput-boolean v1, p0, Lcom/applovin/impl/ff;->t:Z
 
     :cond_1
@@ -541,16 +549,16 @@
 .method public a(Lcom/applovin/impl/e9;)I
     .locals 1
 
+    .line 24
     iget-object v0, p0, Lcom/applovin/impl/ff;->n:Lcom/applovin/impl/cf;
 
-    .line 19
     invoke-interface {v0, p1}, Lcom/applovin/impl/cf;->a(Lcom/applovin/impl/e9;)Z
 
     move-result v0
 
     if-eqz v0, :cond_1
 
-    .line 20
+    .line 25
     iget p1, p1, Lcom/applovin/impl/e9;->F:I
 
     if-nez p1, :cond_0
@@ -562,9 +570,9 @@
     :cond_0
     const/4 p1, 0x2
 
-    .line 21
+    .line 26
     :goto_0
-    invoke-static {p1}, Lcom/applovin/impl/hw;->a(I)I
+    invoke-static {p1}, Lcom/applovin/impl/X2;->a(I)I
 
     move-result p1
 
@@ -573,8 +581,8 @@
     :cond_1
     const/4 p1, 0x0
 
-    .line 22
-    invoke-static {p1}, Lcom/applovin/impl/hw;->a(I)I
+    .line 27
+    invoke-static {p1}, Lcom/applovin/impl/X2;->a(I)I
 
     move-result p1
 
@@ -589,10 +597,10 @@
     :goto_0
     if-eqz p3, :cond_0
 
-    .line 17
+    .line 22
     invoke-direct {p0}, Lcom/applovin/impl/ff;->z()V
 
-    .line 18
+    .line 23
     invoke-direct {p0, p1, p2}, Lcom/applovin/impl/ff;->c(J)Z
 
     move-result p3
@@ -606,19 +614,22 @@
 .method public a(JZ)V
     .locals 0
 
-    .line 1
     const/4 p1, 0x0
 
+    .line 17
     iput-object p1, p0, Lcom/applovin/impl/ff;->w:Lcom/applovin/impl/af;
 
     const-wide p1, -0x7fffffffffffffffL    # -4.9E-324
 
+    .line 18
     iput-wide p1, p0, Lcom/applovin/impl/ff;->v:J
 
     const/4 p1, 0x0
 
+    .line 19
     iput-boolean p1, p0, Lcom/applovin/impl/ff;->s:Z
 
+    .line 20
     iput-boolean p1, p0, Lcom/applovin/impl/ff;->t:Z
 
     return-void
@@ -627,11 +638,11 @@
 .method public a([Lcom/applovin/impl/e9;JJ)V
     .locals 0
 
+    .line 21
     iget-object p2, p0, Lcom/applovin/impl/ff;->n:Lcom/applovin/impl/cf;
 
     const/4 p3, 0x0
 
-    .line 16
     aget-object p1, p1, p3
 
     invoke-interface {p2, p1}, Lcom/applovin/impl/cf;->b(Lcom/applovin/impl/e9;)Lcom/applovin/impl/bf;
@@ -663,8 +674,11 @@
 .method public getName()Ljava/lang/String;
     .locals 1
 
+    .line 1
     const-string v0, "MetadataRenderer"
 
+    .line 2
+    .line 3
     return-object v0
 .end method
 
@@ -715,15 +729,28 @@
 .method public v()V
     .locals 3
 
+    .line 1
     const/4 v0, 0x0
 
+    .line 2
     iput-object v0, p0, Lcom/applovin/impl/ff;->w:Lcom/applovin/impl/af;
 
+    .line 3
+    .line 4
     const-wide v1, -0x7fffffffffffffffL    # -4.9E-324
 
+    .line 5
+    .line 6
+    .line 7
+    .line 8
+    .line 9
     iput-wide v1, p0, Lcom/applovin/impl/ff;->v:J
 
+    .line 10
+    .line 11
     iput-object v0, p0, Lcom/applovin/impl/ff;->r:Lcom/applovin/impl/bf;
 
+    .line 12
+    .line 13
     return-void
 .end method

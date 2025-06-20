@@ -3,10 +3,19 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lzh/e;
+.implements Lka/e;
 
 
 # annotations
+.annotation runtime Lca/c;
+    c = "androidx.paging.FlowExtKt$simpleTransformLatest$1$1"
+    f = "FlowExt.kt"
+    l = {
+        0x59
+    }
+    m = "invokeSuspend"
+.end annotation
+
 .annotation system Ldalvik/annotation/EnclosingMethod;
     value = Landroidx/paging/FlowExtKt$simpleTransformLatest$1;->invokeSuspend(Ljava/lang/Object;)Ljava/lang/Object;
 .end annotation
@@ -19,7 +28,7 @@
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "Lkotlin/coroutines/jvm/internal/SuspendLambda;",
-        "Lzh/e;"
+        "Lka/e;"
     }
 .end annotation
 
@@ -31,7 +40,7 @@
         "T",
         "R",
         "value",
-        "Lqh/r;",
+        "LX9/j;",
         "<anonymous>"
     }
     k = 0x3
@@ -42,29 +51,20 @@
     }
 .end annotation
 
-.annotation runtime Lth/c;
-    c = "androidx.paging.FlowExtKt$simpleTransformLatest$1$1"
-    f = "FlowExt.kt"
-    l = {
-        0x59
-    }
-    m = "invokeSuspend"
-.end annotation
-
 
 # instance fields
-.field final synthetic $collector:Landroidx/paging/g;
+.field final synthetic $collector:Landroidx/paging/h;
     .annotation system Ldalvik/annotation/Signature;
         value = {
-            "Landroidx/paging/g;"
+            "Landroidx/paging/h;"
         }
     .end annotation
 .end field
 
-.field final synthetic $transform:Lzh/f;
+.field final synthetic $transform:Lka/f;
     .annotation system Ldalvik/annotation/Signature;
         value = {
-            "Lzh/f;"
+            "Lka/f;"
         }
     .end annotation
 .end field
@@ -75,13 +75,13 @@
 
 
 # direct methods
-.method public constructor <init>(Lzh/f;Landroidx/paging/g;Lkotlin/coroutines/Continuation;)V
+.method public constructor <init>(Lka/f;Landroidx/paging/h;Lkotlin/coroutines/Continuation;)V
     .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
-            "Lzh/f;",
-            "Landroidx/paging/g;",
+            "Lka/f;",
+            "Landroidx/paging/h;",
             "Lkotlin/coroutines/Continuation<",
             "-",
             "Landroidx/paging/FlowExtKt$simpleTransformLatest$1$1;",
@@ -90,14 +90,22 @@
     .end annotation
 
     .line 1
-    iput-object p1, p0, Landroidx/paging/FlowExtKt$simpleTransformLatest$1$1;->$transform:Lzh/f;
+    iput-object p1, p0, Landroidx/paging/FlowExtKt$simpleTransformLatest$1$1;->$transform:Lka/f;
 
-    iput-object p2, p0, Landroidx/paging/FlowExtKt$simpleTransformLatest$1$1;->$collector:Landroidx/paging/g;
+    .line 2
+    .line 3
+    iput-object p2, p0, Landroidx/paging/FlowExtKt$simpleTransformLatest$1$1;->$collector:Landroidx/paging/h;
 
+    .line 4
+    .line 5
     const/4 p1, 0x2
 
+    .line 6
     invoke-direct {p0, p1, p3}, Lkotlin/coroutines/jvm/internal/SuspendLambda;-><init>(ILkotlin/coroutines/Continuation;)V
 
+    .line 7
+    .line 8
+    .line 9
     return-void
 .end method
 
@@ -112,18 +120,18 @@
             "Lkotlin/coroutines/Continuation<",
             "*>;)",
             "Lkotlin/coroutines/Continuation<",
-            "Lqh/r;",
+            "LX9/j;",
             ">;"
         }
     .end annotation
 
     new-instance v0, Landroidx/paging/FlowExtKt$simpleTransformLatest$1$1;
 
-    iget-object v1, p0, Landroidx/paging/FlowExtKt$simpleTransformLatest$1$1;->$transform:Lzh/f;
+    iget-object v1, p0, Landroidx/paging/FlowExtKt$simpleTransformLatest$1$1;->$transform:Lka/f;
 
-    iget-object v2, p0, Landroidx/paging/FlowExtKt$simpleTransformLatest$1$1;->$collector:Landroidx/paging/g;
+    iget-object v2, p0, Landroidx/paging/FlowExtKt$simpleTransformLatest$1$1;->$collector:Landroidx/paging/h;
 
-    invoke-direct {v0, v1, v2, p2}, Landroidx/paging/FlowExtKt$simpleTransformLatest$1$1;-><init>(Lzh/f;Landroidx/paging/g;Lkotlin/coroutines/Continuation;)V
+    invoke-direct {v0, v1, v2, p2}, Landroidx/paging/FlowExtKt$simpleTransformLatest$1$1;-><init>(Lka/f;Landroidx/paging/h;Lkotlin/coroutines/Continuation;)V
 
     iput-object p1, v0, Landroidx/paging/FlowExtKt$simpleTransformLatest$1$1;->L$0:Ljava/lang/Object;
 
@@ -151,7 +159,7 @@
             "Ljava/lang/Object;",
             "Lkotlin/coroutines/Continuation<",
             "-",
-            "Lqh/r;",
+            "LX9/j;",
             ">;)",
             "Ljava/lang/Object;"
         }
@@ -164,7 +172,7 @@
 
     check-cast p1, Landroidx/paging/FlowExtKt$simpleTransformLatest$1$1;
 
-    sget-object p2, Lqh/r;->a:Lqh/r;
+    sget-object p2, LX9/j;->a:LX9/j;
 
     invoke-virtual {p1, p2}, Landroidx/paging/FlowExtKt$simpleTransformLatest$1$1;->invokeSuspend(Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -231,11 +239,11 @@
 
     .line 26
     .line 27
-    iget-object v1, p0, Landroidx/paging/FlowExtKt$simpleTransformLatest$1$1;->$transform:Lzh/f;
+    iget-object v1, p0, Landroidx/paging/FlowExtKt$simpleTransformLatest$1$1;->$transform:Lka/f;
 
     .line 28
     .line 29
-    iget-object v3, p0, Landroidx/paging/FlowExtKt$simpleTransformLatest$1$1;->$collector:Landroidx/paging/g;
+    iget-object v3, p0, Landroidx/paging/FlowExtKt$simpleTransformLatest$1$1;->$collector:Landroidx/paging/h;
 
     .line 30
     .line 31
@@ -243,7 +251,7 @@
 
     .line 32
     .line 33
-    invoke-interface {v1, v3, p1, p0}, Lzh/f;->invoke(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-interface {v1, v3, p1, p0}, Lka/f;->invoke(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 34
     .line 35
@@ -260,7 +268,7 @@
     .line 40
     :cond_2
     :goto_0
-    sget-object p1, Lqh/r;->a:Lqh/r;
+    sget-object p1, LX9/j;->a:LX9/j;
 
     .line 41
     .line 42

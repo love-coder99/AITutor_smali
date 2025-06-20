@@ -105,14 +105,14 @@
 .method public a(J)V
     .locals 7
 
+    .line 2
     iget-object v0, p0, Lcom/applovin/impl/q8;->a:Lcom/applovin/impl/q8$a;
 
-    .line 2
     invoke-virtual {v0, p1, p2}, Lcom/applovin/impl/q8$a;->b(J)V
 
+    .line 3
     iget-object v0, p0, Lcom/applovin/impl/q8;->a:Lcom/applovin/impl/q8$a;
 
-    .line 3
     invoke-virtual {v0}, Lcom/applovin/impl/q8$a;->d()Z
 
     move-result v0
@@ -127,10 +127,12 @@
 
     if-nez v0, :cond_0
 
+    .line 4
     iput-boolean v2, p0, Lcom/applovin/impl/q8;->c:Z
 
     goto :goto_0
 
+    .line 5
     :cond_0
     iget-wide v3, p0, Lcom/applovin/impl/q8;->e:J
 
@@ -140,40 +142,42 @@
 
     if-eqz v0, :cond_3
 
+    .line 6
     iget-boolean v0, p0, Lcom/applovin/impl/q8;->c:Z
 
     if-eqz v0, :cond_1
 
     iget-object v0, p0, Lcom/applovin/impl/q8;->b:Lcom/applovin/impl/q8$a;
 
-    .line 4
     invoke-virtual {v0}, Lcom/applovin/impl/q8$a;->c()Z
 
     move-result v0
 
     if-eqz v0, :cond_2
 
+    .line 7
     :cond_1
     iget-object v0, p0, Lcom/applovin/impl/q8;->b:Lcom/applovin/impl/q8$a;
 
-    .line 5
     invoke-virtual {v0}, Lcom/applovin/impl/q8$a;->e()V
 
+    .line 8
     iget-object v0, p0, Lcom/applovin/impl/q8;->b:Lcom/applovin/impl/q8$a;
 
     iget-wide v3, p0, Lcom/applovin/impl/q8;->e:J
 
-    .line 6
     invoke-virtual {v0, v3, v4}, Lcom/applovin/impl/q8$a;->b(J)V
 
+    .line 9
     :cond_2
     iput-boolean v1, p0, Lcom/applovin/impl/q8;->c:Z
 
+    .line 10
     iget-object v0, p0, Lcom/applovin/impl/q8;->b:Lcom/applovin/impl/q8$a;
 
-    .line 7
     invoke-virtual {v0, p1, p2}, Lcom/applovin/impl/q8$a;->b(J)V
 
+    .line 11
     :cond_3
     :goto_0
     iget-boolean v0, p0, Lcom/applovin/impl/q8;->c:Z
@@ -182,31 +186,36 @@
 
     iget-object v0, p0, Lcom/applovin/impl/q8;->b:Lcom/applovin/impl/q8$a;
 
-    .line 8
     invoke-virtual {v0}, Lcom/applovin/impl/q8$a;->d()Z
 
     move-result v0
 
     if-eqz v0, :cond_4
 
+    .line 12
     iget-object v0, p0, Lcom/applovin/impl/q8;->a:Lcom/applovin/impl/q8$a;
 
+    .line 13
     iget-object v3, p0, Lcom/applovin/impl/q8;->b:Lcom/applovin/impl/q8$a;
 
     iput-object v3, p0, Lcom/applovin/impl/q8;->a:Lcom/applovin/impl/q8$a;
 
+    .line 14
     iput-object v0, p0, Lcom/applovin/impl/q8;->b:Lcom/applovin/impl/q8$a;
 
+    .line 15
     iput-boolean v2, p0, Lcom/applovin/impl/q8;->c:Z
 
+    .line 16
     iput-boolean v2, p0, Lcom/applovin/impl/q8;->d:Z
 
+    .line 17
     :cond_4
     iput-wide p1, p0, Lcom/applovin/impl/q8;->e:J
 
+    .line 18
     iget-object p1, p0, Lcom/applovin/impl/q8;->a:Lcom/applovin/impl/q8$a;
 
-    .line 9
     invoke-virtual {p1}, Lcom/applovin/impl/q8$a;->d()Z
 
     move-result p1
@@ -285,8 +294,11 @@
 .method public c()I
     .locals 1
 
+    .line 1
     iget v0, p0, Lcom/applovin/impl/q8;->f:I
 
+    .line 2
+    .line 3
     return v0
 .end method
 

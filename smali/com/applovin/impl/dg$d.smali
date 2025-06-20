@@ -107,8 +107,11 @@
 .method public b()I
     .locals 1
 
+    .line 1
     iget v0, p0, Lcom/applovin/impl/dg$d;->a:I
 
+    .line 2
+    .line 3
     return v0
 .end method
 
@@ -161,15 +164,21 @@
 .method public e()J
     .locals 2
 
+    .line 1
     iget-wide v0, p0, Lcom/applovin/impl/dg$d;->d:J
 
+    .line 2
+    .line 3
     return-wide v0
 .end method
 
 .method public f()[B
     .locals 1
 
+    .line 1
     iget-object v0, p0, Lcom/applovin/impl/dg$d;->c:[B
 
+    .line 2
+    .line 3
     return-object v0
 .end method

@@ -1,252 +1,144 @@
-.class abstract Lcom/applovin/impl/i3;
+.class public final synthetic Lcom/applovin/impl/I3;
 .super Ljava/lang/Object;
 .source "SourceFile"
 
+# interfaces
+.implements Ljava/lang/Runnable;
+
+
+# instance fields
+.field public final synthetic b:I
+
+.field public final synthetic c:Ljava/lang/Object;
+
+.field public final synthetic d:Ljava/lang/Object;
+
 
 # direct methods
-.method private static a(Ljava/lang/String;)Ljava/lang/String;
-    .locals 2
-
-    const/16 v0, 0x2b
-
-    const/16 v1, 0x2d
+.method public synthetic constructor <init>(Ljava/lang/Object;ILjava/lang/Object;)V
+    .locals 0
 
     .line 1
-    invoke-virtual {p0, v0, v1}, Ljava/lang/String;->replace(CC)Ljava/lang/String;
+    iput p2, p0, Lcom/applovin/impl/I3;->b:I
 
-    move-result-object p0
+    iput-object p1, p0, Lcom/applovin/impl/I3;->c:Ljava/lang/Object;
 
-    const/16 v0, 0x2f
+    iput-object p3, p0, Lcom/applovin/impl/I3;->d:Ljava/lang/Object;
 
-    const/16 v1, 0x5f
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    invoke-virtual {p0, v0, v1}, Ljava/lang/String;->replace(CC)Ljava/lang/String;
-
-    move-result-object p0
-
-    return-object p0
+    return-void
 .end method
 
-.method public static a([B)[B
+
+# virtual methods
+.method public final run()V
     .locals 2
-
-    .line 2
-    sget v0, Lcom/applovin/impl/xp;->a:I
-
-    const/16 v1, 0x1b
-
-    if-lt v0, v1, :cond_0
-
-    return-object p0
-
-    .line 3
-    :cond_0
-    invoke-static {p0}, Lcom/applovin/impl/xp;->a([B)Ljava/lang/String;
-
-    move-result-object p0
-
-    .line 4
-    invoke-static {p0}, Lcom/applovin/impl/i3;->a(Ljava/lang/String;)Ljava/lang/String;
-
-    move-result-object p0
-
-    invoke-static {p0}, Lcom/applovin/impl/xp;->c(Ljava/lang/String;)[B
-
-    move-result-object p0
-
-    return-object p0
-.end method
-
-.method private static b(Ljava/lang/String;)Ljava/lang/String;
-    .locals 2
-
-    const/16 v0, 0x2d
-
-    const/16 v1, 0x2b
 
     .line 1
-    invoke-virtual {p0, v0, v1}, Ljava/lang/String;->replace(CC)Ljava/lang/String;
+    iget v0, p0, Lcom/applovin/impl/I3;->b:I
 
-    move-result-object p0
+    packed-switch v0, :pswitch_data_0
 
-    const/16 v0, 0x5f
+    iget-object v0, p0, Lcom/applovin/impl/I3;->c:Ljava/lang/Object;
 
-    const/16 v1, 0x2f
+    check-cast v0, Landroid/content/Context;
 
-    invoke-virtual {p0, v0, v1}, Ljava/lang/String;->replace(CC)Ljava/lang/String;
+    iget-object v1, p0, Lcom/applovin/impl/I3;->d:Ljava/lang/Object;
 
-    move-result-object p0
+    check-cast v1, Ljava/lang/String;
 
-    return-object p0
-.end method
+    invoke-static {v0, v1}, Lcom/applovin/impl/yp;->c(Landroid/content/Context;Ljava/lang/String;)V
 
-.method public static b([B)[B
-    .locals 5
+    return-void
 
-    .line 2
-    sget v0, Lcom/applovin/impl/xp;->a:I
+    :pswitch_0
+    iget-object v0, p0, Lcom/applovin/impl/I3;->d:Ljava/lang/Object;
 
-    const/16 v1, 0x1b
+    check-cast v0, Lcom/applovin/impl/mediation/MaxErrorImpl;
 
-    if-lt v0, v1, :cond_0
+    iget-object v1, p0, Lcom/applovin/impl/I3;->c:Ljava/lang/Object;
 
-    return-object p0
+    check-cast v1, Lcom/applovin/impl/xm;
 
-    .line 3
-    :cond_0
-    :try_start_0
-    new-instance v0, Lorg/json/JSONObject;
+    invoke-static {v1, v0}, Lcom/applovin/impl/xm;->e(Lcom/applovin/impl/xm;Lcom/applovin/impl/mediation/MaxErrorImpl;)V
 
-    invoke-static {p0}, Lcom/applovin/impl/xp;->a([B)Ljava/lang/String;
+    return-void
 
-    move-result-object v1
+    :pswitch_1
+    iget-object v0, p0, Lcom/applovin/impl/I3;->c:Ljava/lang/Object;
 
-    invoke-direct {v0, v1}, Lorg/json/JSONObject;-><init>(Ljava/lang/String;)V
+    check-cast v0, Lcom/applovin/impl/wq$a;
 
-    .line 4
-    new-instance v1, Ljava/lang/StringBuilder;
+    iget-object v1, p0, Lcom/applovin/impl/I3;->d:Ljava/lang/Object;
 
-    const-string v2, "{\"keys\":["
+    check-cast v1, Ljava/lang/String;
 
-    invoke-direct {v1, v2}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+    invoke-static {v0, v1}, Lcom/applovin/impl/wq$a;->g(Lcom/applovin/impl/wq$a;Ljava/lang/String;)V
 
-    const-string v2, "keys"
+    return-void
 
-    .line 5
-    invoke-virtual {v0, v2}, Lorg/json/JSONObject;->getJSONArray(Ljava/lang/String;)Lorg/json/JSONArray;
+    :pswitch_2
+    iget-object v0, p0, Lcom/applovin/impl/I3;->c:Ljava/lang/Object;
 
-    move-result-object v0
+    check-cast v0, Lcom/applovin/impl/wq$a;
 
-    const/4 v2, 0x0
+    iget-object v1, p0, Lcom/applovin/impl/I3;->d:Ljava/lang/Object;
 
-    .line 6
-    :goto_0
-    invoke-virtual {v0}, Lorg/json/JSONArray;->length()I
+    check-cast v1, Ljava/lang/Exception;
 
-    move-result v3
+    invoke-static {v0, v1}, Lcom/applovin/impl/wq$a;->a(Lcom/applovin/impl/wq$a;Ljava/lang/Exception;)V
 
-    if-ge v2, v3, :cond_2
+    return-void
 
-    if-eqz v2, :cond_1
+    :pswitch_3
+    iget-object v0, p0, Lcom/applovin/impl/I3;->c:Ljava/lang/Object;
 
-    const-string v3, ","
+    check-cast v0, Lcom/applovin/impl/wq$a;
 
-    .line 7
-    invoke-virtual {v1, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    iget-object v1, p0, Lcom/applovin/impl/I3;->d:Ljava/lang/Object;
 
-    goto :goto_1
+    check-cast v1, Lcom/applovin/impl/xq;
 
-    :catch_0
-    move-exception v0
+    invoke-static {v0, v1}, Lcom/applovin/impl/wq$a;->h(Lcom/applovin/impl/wq$a;Lcom/applovin/impl/xq;)V
 
-    goto :goto_2
+    return-void
 
-    .line 8
-    :cond_1
-    :goto_1
-    invoke-virtual {v0, v2}, Lorg/json/JSONArray;->getJSONObject(I)Lorg/json/JSONObject;
+    :pswitch_4
+    iget-object v0, p0, Lcom/applovin/impl/I3;->d:Ljava/lang/Object;
 
-    move-result-object v3
+    check-cast v0, Lcom/applovin/impl/mediation/MaxErrorImpl;
 
-    const-string v4, "{\"k\":\""
+    iget-object v1, p0, Lcom/applovin/impl/I3;->c:Ljava/lang/Object;
 
-    .line 9
-    invoke-virtual {v1, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    check-cast v1, Lcom/applovin/impl/wm;
 
-    const-string v4, "k"
+    invoke-static {v1, v0}, Lcom/applovin/impl/wm;->m(Lcom/applovin/impl/wm;Lcom/applovin/impl/mediation/MaxErrorImpl;)V
 
-    .line 10
-    invoke-virtual {v3, v4}, Lorg/json/JSONObject;->getString(Ljava/lang/String;)Ljava/lang/String;
+    return-void
 
-    move-result-object v4
+    :pswitch_5
+    iget-object v0, p0, Lcom/applovin/impl/I3;->c:Ljava/lang/Object;
 
-    invoke-static {v4}, Lcom/applovin/impl/i3;->b(Ljava/lang/String;)Ljava/lang/String;
+    check-cast v0, Lcom/applovin/impl/u9;
 
-    move-result-object v4
+    iget-object v1, p0, Lcom/applovin/impl/I3;->d:Ljava/lang/Object;
 
-    invoke-virtual {v1, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    check-cast v1, Ljava/lang/String;
 
-    const-string v4, "\",\"kid\":\""
+    invoke-static {v0, v1}, Lcom/applovin/impl/u9;->J(Lcom/applovin/impl/u9;Ljava/lang/String;)V
 
-    .line 11
-    invoke-virtual {v1, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    return-void
 
-    const-string v4, "kid"
+    nop
 
-    .line 12
-    invoke-virtual {v3, v4}, Lorg/json/JSONObject;->getString(Ljava/lang/String;)Ljava/lang/String;
-
-    move-result-object v4
-
-    invoke-static {v4}, Lcom/applovin/impl/i3;->b(Ljava/lang/String;)Ljava/lang/String;
-
-    move-result-object v4
-
-    invoke-virtual {v1, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    const-string v4, "\",\"kty\":\""
-
-    .line 13
-    invoke-virtual {v1, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    const-string v4, "kty"
-
-    .line 14
-    invoke-virtual {v3, v4}, Lorg/json/JSONObject;->getString(Ljava/lang/String;)Ljava/lang/String;
-
-    move-result-object v3
-
-    invoke-virtual {v1, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    const-string v3, "\"}"
-
-    .line 15
-    invoke-virtual {v1, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    add-int/lit8 v2, v2, 0x1
-
-    goto :goto_0
-
-    :cond_2
-    const-string v0, "]}"
-
-    .line 16
-    invoke-virtual {v1, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    .line 17
-    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object v0
-
-    invoke-static {v0}, Lcom/applovin/impl/xp;->c(Ljava/lang/String;)[B
-
-    move-result-object p0
-    :try_end_0
-    .catch Lorg/json/JSONException; {:try_start_0 .. :try_end_0} :catch_0
-
-    return-object p0
-
-    .line 18
-    :goto_2
-    new-instance v1, Ljava/lang/StringBuilder;
-
-    const-string v2, "Failed to adjust response data: "
-
-    invoke-direct {v1, v2}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
-
-    invoke-static {p0}, Lcom/applovin/impl/xp;->a([B)Ljava/lang/String;
-
-    move-result-object v2
-
-    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object v1
-
-    const-string v2, "ClearKeyUtil"
-
-    invoke-static {v2, v1, v0}, Lcom/applovin/impl/oc;->a(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)V
-
-    return-object p0
+    :pswitch_data_0
+    .packed-switch 0x0
+        :pswitch_5
+        :pswitch_4
+        :pswitch_3
+        :pswitch_2
+        :pswitch_1
+        :pswitch_0
+    .end packed-switch
 .end method

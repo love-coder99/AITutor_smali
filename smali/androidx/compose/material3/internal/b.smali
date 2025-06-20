@@ -1,322 +1,285 @@
-.class public abstract Landroidx/compose/material3/internal/b;
+.class public final Landroidx/compose/material3/internal/b;
 .super Ljava/lang/Object;
 .source "SourceFile"
 
+# interfaces
+.implements Lkotlinx/coroutines/flow/g;
 
-# static fields
-.field public static final a:Landroidx/compose/animation/core/i1;
 
-.field public static final b:Landroidx/compose/animation/core/i1;
+# instance fields
+.field public final synthetic b:Lkotlin/jvm/internal/Ref$ObjectRef;
 
-.field public static final c:Landroidx/compose/animation/core/i1;
+.field public final synthetic c:Lkotlinx/coroutines/u;
+
+.field public final synthetic d:Lka/e;
 
 
 # direct methods
-.method static constructor <clinit>()V
-    .locals 5
+.method public constructor <init>(Lkotlin/jvm/internal/Ref$ObjectRef;Lkotlinx/coroutines/u;Lka/e;)V
+    .locals 0
 
     .line 1
-    new-instance v0, Landroidx/compose/animation/core/r;
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 2
     .line 3
-    const v1, 0x3ecccccd    # 0.4f
-
     .line 4
+    iput-object p1, p0, Landroidx/compose/material3/internal/b;->b:Lkotlin/jvm/internal/Ref$ObjectRef;
+
     .line 5
     .line 6
-    const/4 v2, 0x0
+    iput-object p2, p0, Landroidx/compose/material3/internal/b;->c:Lkotlinx/coroutines/u;
 
     .line 7
-    const v3, 0x3f19999a    # 0.6f
-
     .line 8
+    iput-object p3, p0, Landroidx/compose/material3/internal/b;->d:Lka/e;
+
     .line 9
     .line 10
-    const/high16 v4, 0x3f800000    # 1.0f
-
-    .line 11
-    .line 12
-    invoke-direct {v0, v1, v2, v3, v4}, Landroidx/compose/animation/core/r;-><init>(FFFF)V
-
-    .line 13
-    .line 14
-    .line 15
-    new-instance v1, Landroidx/compose/animation/core/i1;
-
-    .line 16
-    .line 17
-    sget-object v2, Landroidx/compose/animation/core/y;->a:Landroidx/compose/animation/core/r;
-
-    .line 18
-    .line 19
-    const/16 v3, 0x78
-
-    .line 20
-    .line 21
-    const/4 v4, 0x2
-
-    .line 22
-    invoke-direct {v1, v3, v2, v4}, Landroidx/compose/animation/core/i1;-><init>(ILandroidx/compose/animation/core/v;I)V
-
-    .line 23
-    .line 24
-    .line 25
-    sput-object v1, Landroidx/compose/material3/internal/b;->a:Landroidx/compose/animation/core/i1;
-
-    .line 26
-    .line 27
-    new-instance v1, Landroidx/compose/animation/core/i1;
-
-    .line 28
-    .line 29
-    const/16 v2, 0x96
-
-    .line 30
-    .line 31
-    invoke-direct {v1, v2, v0, v4}, Landroidx/compose/animation/core/i1;-><init>(ILandroidx/compose/animation/core/v;I)V
-
-    .line 32
-    .line 33
-    .line 34
-    sput-object v1, Landroidx/compose/material3/internal/b;->b:Landroidx/compose/animation/core/i1;
-
-    .line 35
-    .line 36
-    new-instance v1, Landroidx/compose/animation/core/i1;
-
-    .line 37
-    .line 38
-    invoke-direct {v1, v3, v0, v4}, Landroidx/compose/animation/core/i1;-><init>(ILandroidx/compose/animation/core/v;I)V
-
-    .line 39
-    .line 40
-    .line 41
-    sput-object v1, Landroidx/compose/material3/internal/b;->c:Landroidx/compose/animation/core/i1;
-
-    .line 42
-    .line 43
     return-void
 .end method
 
-.method public static final a(Landroidx/compose/animation/core/a;FLandroidx/compose/foundation/interaction/j;Landroidx/compose/foundation/interaction/j;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
-    .locals 7
+
+# virtual methods
+.method public final emit(Ljava/lang/Object;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
+    .locals 6
 
     .line 1
-    const/4 v0, 0x0
+    instance-of v0, p2, Landroidx/compose/material3/internal/AnchoredDraggableKt$restartable$2$1$emit$1;
 
     .line 2
-    if-eqz p3, :cond_4
-
     .line 3
-    .line 4
-    instance-of p2, p3, Landroidx/compose/foundation/interaction/o;
+    if-eqz v0, :cond_0
 
+    .line 4
     .line 5
+    move-object v0, p2
+
     .line 6
-    sget-object v1, Landroidx/compose/material3/internal/b;->a:Landroidx/compose/animation/core/i1;
+    check-cast v0, Landroidx/compose/material3/internal/AnchoredDraggableKt$restartable$2$1$emit$1;
 
     .line 7
     .line 8
-    if-eqz p2, :cond_0
+    iget v1, v0, Landroidx/compose/material3/internal/AnchoredDraggableKt$restartable$2$1$emit$1;->label:I
 
     .line 9
     .line 10
-    :goto_0
-    move-object v0, v1
+    const/high16 v2, -0x80000000
 
     .line 11
-    goto :goto_1
-
     .line 12
-    :cond_0
-    instance-of p2, p3, Landroidx/compose/foundation/interaction/b;
+    and-int v3, v1, v2
 
     .line 13
     .line 14
-    if-eqz p2, :cond_1
+    if-eqz v3, :cond_0
 
     .line 15
     .line 16
-    goto :goto_0
+    sub-int/2addr v1, v2
 
     .line 17
-    :cond_1
-    instance-of p2, p3, Landroidx/compose/foundation/interaction/h;
+    iput v1, v0, Landroidx/compose/material3/internal/AnchoredDraggableKt$restartable$2$1$emit$1;->label:I
 
     .line 18
     .line 19
-    if-eqz p2, :cond_2
-
-    .line 20
-    .line 21
     goto :goto_0
 
+    .line 20
+    :cond_0
+    new-instance v0, Landroidx/compose/material3/internal/AnchoredDraggableKt$restartable$2$1$emit$1;
+
+    .line 21
     .line 22
-    :cond_2
-    instance-of p2, p3, Landroidx/compose/foundation/interaction/d;
+    invoke-direct {v0, p0, p2}, Landroidx/compose/material3/internal/AnchoredDraggableKt$restartable$2$1$emit$1;-><init>(Landroidx/compose/material3/internal/b;Lkotlin/coroutines/Continuation;)V
 
     .line 23
     .line 24
-    if-eqz p2, :cond_3
-
     .line 25
-    .line 26
-    goto :goto_0
+    :goto_0
+    iget-object p2, v0, Landroidx/compose/material3/internal/AnchoredDraggableKt$restartable$2$1$emit$1;->result:Ljava/lang/Object;
 
+    .line 26
     .line 27
-    :cond_3
-    :goto_1
-    move-object v3, v0
+    sget-object v1, Lkotlin/coroutines/intrinsics/CoroutineSingletons;->COROUTINE_SUSPENDED:Lkotlin/coroutines/intrinsics/CoroutineSingletons;
 
     .line 28
-    goto :goto_3
-
     .line 29
-    :cond_4
-    if-eqz p2, :cond_3
+    iget v2, v0, Landroidx/compose/material3/internal/AnchoredDraggableKt$restartable$2$1$emit$1;->label:I
 
     .line 30
     .line 31
-    instance-of p3, p2, Landroidx/compose/foundation/interaction/o;
+    const/4 v3, 0x1
 
     .line 32
+    if-eqz v2, :cond_2
+
     .line 33
-    sget-object v1, Landroidx/compose/material3/internal/b;->b:Landroidx/compose/animation/core/i1;
-
     .line 34
+    if-ne v2, v3, :cond_1
+
     .line 35
-    if-eqz p3, :cond_5
-
     .line 36
-    .line 37
-    :goto_2
-    goto :goto_0
+    iget-object p1, v0, Landroidx/compose/material3/internal/AnchoredDraggableKt$restartable$2$1$emit$1;->L$2:Ljava/lang/Object;
 
+    .line 37
     .line 38
-    :cond_5
-    instance-of p3, p2, Landroidx/compose/foundation/interaction/b;
+    check-cast p1, Lkotlinx/coroutines/a0;
 
     .line 39
     .line 40
-    if-eqz p3, :cond_6
+    iget-object p1, v0, Landroidx/compose/material3/internal/AnchoredDraggableKt$restartable$2$1$emit$1;->L$1:Ljava/lang/Object;
 
     .line 41
     .line 42
-    goto :goto_2
+    iget-object v0, v0, Landroidx/compose/material3/internal/AnchoredDraggableKt$restartable$2$1$emit$1;->L$0:Ljava/lang/Object;
 
     .line 43
-    :cond_6
-    instance-of p3, p2, Landroidx/compose/foundation/interaction/h;
-
     .line 44
+    check-cast v0, Landroidx/compose/material3/internal/b;
+
     .line 45
-    if-eqz p3, :cond_7
-
     .line 46
-    .line 47
-    sget-object v0, Landroidx/compose/material3/internal/b;->c:Landroidx/compose/animation/core/i1;
+    invoke-static {p2}, Lkotlin/b;->a(Ljava/lang/Object;)V
 
+    .line 47
     .line 48
     .line 49
     goto :goto_1
 
     .line 50
-    :cond_7
-    instance-of p2, p2, Landroidx/compose/foundation/interaction/d;
+    :cond_1
+    new-instance p1, Ljava/lang/IllegalStateException;
 
     .line 51
     .line 52
-    if-eqz p2, :cond_3
+    const-string p2, "call to \'resume\' before \'invoke\' with coroutine"
 
     .line 53
     .line 54
-    goto :goto_2
+    invoke-direct {p1, p2}, Ljava/lang/IllegalStateException;-><init>(Ljava/lang/String;)V
 
     .line 55
-    :goto_3
-    sget-object p2, Lqh/r;->a:Lqh/r;
-
     .line 56
     .line 57
-    if-eqz v3, :cond_9
+    throw p1
 
     .line 58
-    .line 59
-    new-instance v2, Lh2/e;
+    :cond_2
+    invoke-static {p2}, Lkotlin/b;->a(Ljava/lang/Object;)V
 
+    .line 59
     .line 60
     .line 61
-    invoke-direct {v2, p1}, Lh2/e;-><init>(F)V
+    iget-object p2, p0, Landroidx/compose/material3/internal/b;->b:Lkotlin/jvm/internal/Ref$ObjectRef;
 
     .line 62
     .line 63
-    .line 64
-    const/4 v4, 0x0
+    iget-object p2, p2, Lkotlin/jvm/internal/Ref$ObjectRef;->element:Ljava/lang/Object;
 
+    .line 64
     .line 65
-    const/16 v6, 0xc
+    check-cast p2, Lkotlinx/coroutines/a0;
 
     .line 66
     .line 67
-    move-object v1, p0
+    if-eqz p2, :cond_3
 
     .line 68
-    move-object v5, p4
-
     .line 69
-    invoke-static/range {v1 .. v6}, Landroidx/compose/animation/core/a;->c(Landroidx/compose/animation/core/a;Ljava/lang/Object;Landroidx/compose/animation/core/g;Lzh/c;Lkotlin/coroutines/Continuation;I)Ljava/lang/Object;
+    new-instance v2, Landroidx/compose/material3/internal/AnchoredDragFinishedSignal;
 
     .line 70
     .line 71
+    invoke-direct {v2}, Landroidx/compose/material3/internal/AnchoredDragFinishedSignal;-><init>()V
+
     .line 72
-    move-result-object p0
-
     .line 73
-    sget-object p1, Lkotlin/coroutines/intrinsics/CoroutineSingletons;->COROUTINE_SUSPENDED:Lkotlin/coroutines/intrinsics/CoroutineSingletons;
-
     .line 74
-    .line 75
-    if-ne p0, p1, :cond_8
+    invoke-interface {p2, v2}, Lkotlinx/coroutines/a0;->b(Ljava/util/concurrent/CancellationException;)V
 
+    .line 75
     .line 76
     .line 77
-    return-object p0
+    iput-object p0, v0, Landroidx/compose/material3/internal/AnchoredDraggableKt$restartable$2$1$emit$1;->L$0:Ljava/lang/Object;
 
     .line 78
-    :cond_8
-    return-object p2
-
     .line 79
-    :cond_9
-    new-instance p3, Lh2/e;
+    iput-object p1, v0, Landroidx/compose/material3/internal/AnchoredDraggableKt$restartable$2$1$emit$1;->L$1:Ljava/lang/Object;
 
     .line 80
     .line 81
-    invoke-direct {p3, p1}, Lh2/e;-><init>(F)V
+    iput-object p2, v0, Landroidx/compose/material3/internal/AnchoredDraggableKt$restartable$2$1$emit$1;->L$2:Ljava/lang/Object;
 
     .line 82
     .line 83
-    .line 84
-    invoke-virtual {p0, p3, p4}, Landroidx/compose/animation/core/a;->e(Ljava/lang/Object;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
+    iput v3, v0, Landroidx/compose/material3/internal/AnchoredDraggableKt$restartable$2$1$emit$1;->label:I
 
+    .line 84
     .line 85
+    invoke-interface {p2, v0}, Lkotlinx/coroutines/a0;->i(Lkotlin/coroutines/jvm/internal/ContinuationImpl;)Ljava/lang/Object;
+
     .line 86
     .line 87
-    move-result-object p0
-
     .line 88
-    sget-object p1, Lkotlin/coroutines/intrinsics/CoroutineSingletons;->COROUTINE_SUSPENDED:Lkotlin/coroutines/intrinsics/CoroutineSingletons;
+    move-result-object p2
 
     .line 89
-    .line 90
-    if-ne p0, p1, :cond_a
+    if-ne p2, v1, :cond_3
 
+    .line 90
     .line 91
+    return-object v1
+
     .line 92
-    return-object p0
+    :cond_3
+    move-object v0, p0
 
     .line 93
-    :cond_a
-    return-object p2
+    :goto_1
+    iget-object p2, v0, Landroidx/compose/material3/internal/b;->b:Lkotlin/jvm/internal/Ref$ObjectRef;
+
+    .line 94
+    .line 95
+    sget-object v1, Lkotlinx/coroutines/CoroutineStart;->UNDISPATCHED:Lkotlinx/coroutines/CoroutineStart;
+
+    .line 96
+    .line 97
+    new-instance v2, Landroidx/compose/material3/internal/AnchoredDraggableKt$restartable$2$1$2;
+
+    .line 98
+    .line 99
+    iget-object v4, v0, Landroidx/compose/material3/internal/b;->d:Lka/e;
+
+    .line 100
+    .line 101
+    iget-object v0, v0, Landroidx/compose/material3/internal/b;->c:Lkotlinx/coroutines/u;
+
+    .line 102
+    .line 103
+    const/4 v5, 0x0
+
+    .line 104
+    invoke-direct {v2, v4, p1, v0, v5}, Landroidx/compose/material3/internal/AnchoredDraggableKt$restartable$2$1$2;-><init>(Lka/e;Ljava/lang/Object;Lkotlinx/coroutines/u;Lkotlin/coroutines/Continuation;)V
+
+    .line 105
+    .line 106
+    .line 107
+    invoke-static {v0, v5, v1, v2, v3}, Lkotlinx/coroutines/w;->w(Lkotlinx/coroutines/u;Lba/g;Lkotlinx/coroutines/CoroutineStart;Lka/e;I)Lkotlinx/coroutines/r0;
+
+    .line 108
+    .line 109
+    .line 110
+    move-result-object p1
+
+    .line 111
+    iput-object p1, p2, Lkotlin/jvm/internal/Ref$ObjectRef;->element:Ljava/lang/Object;
+
+    .line 112
+    .line 113
+    sget-object p1, LX9/j;->a:LX9/j;
+
+    .line 114
+    .line 115
+    return-object p1
 .end method

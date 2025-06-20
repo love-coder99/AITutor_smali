@@ -43,7 +43,7 @@
 .method public a()Lcom/applovin/impl/sdk/nativeAd/AppLovinNativeAdImpl;
     .locals 1
 
-    .line 1
+    .line 2
     iget-object v0, p0, Lcom/applovin/impl/sdk/nativeAd/AppLovinNativeAdImpl$b;->a:Lcom/applovin/impl/sdk/nativeAd/AppLovinNativeAdImpl;
 
     return-object v0
@@ -52,7 +52,7 @@
 .method public a(Ljava/lang/Object;)Z
     .locals 0
 
-    .line 2
+    .line 1
     instance-of p1, p1, Lcom/applovin/impl/sdk/nativeAd/AppLovinNativeAdImpl$b;
 
     return p1

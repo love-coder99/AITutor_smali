@@ -77,11 +77,11 @@
 .method private a()V
     .locals 5
 
+    .line 3
     iget-object v0, p0, Lcom/applovin/adview/AppLovinFullscreenActivity;->a:Lcom/applovin/impl/sdk/j;
 
     if-eqz v0, :cond_3
 
-    .line 3
     sget-object v1, Lcom/applovin/impl/sj;->g2:Lcom/applovin/impl/sj;
 
     invoke-virtual {v0, v1}, Lcom/applovin/impl/sdk/j;->a(Lcom/applovin/impl/sj;)Ljava/lang/Object;
@@ -98,12 +98,12 @@
 
     goto :goto_0
 
+    .line 4
     :cond_0
     sget-object v0, Lcom/applovin/adview/AppLovinFullscreenActivity;->parentInterstitialWrapper:Lcom/applovin/impl/sb;
 
     if-eqz v0, :cond_3
 
-    .line 4
     invoke-virtual {v0}, Lcom/applovin/impl/sb;->f()Lcom/applovin/impl/sdk/ad/b;
 
     move-result-object v0
@@ -112,10 +112,10 @@
 
     goto :goto_0
 
+    .line 5
     :cond_1
     sget-object v0, Lcom/applovin/adview/AppLovinFullscreenActivity;->parentInterstitialWrapper:Lcom/applovin/impl/sb;
 
-    .line 5
     invoke-virtual {v0}, Lcom/applovin/impl/sb;->f()Lcom/applovin/impl/sdk/ad/b;
 
     move-result-object v0
@@ -172,9 +172,9 @@
 
     move-result-object v1
 
+    .line 13
     iget-object v2, p0, Lcom/applovin/adview/AppLovinFullscreenActivity;->a:Lcom/applovin/impl/sdk/j;
 
-    .line 13
     invoke-virtual {v2}, Lcom/applovin/impl/sdk/j;->h0()Lcom/applovin/impl/vj;
 
     move-result-object v2
@@ -183,9 +183,9 @@
 
     invoke-virtual {v2, v3, v1}, Lcom/applovin/impl/vj;->b(Lcom/applovin/impl/uj;Ljava/lang/Object;)V
 
+    .line 14
     iget-object v1, p0, Lcom/applovin/adview/AppLovinFullscreenActivity;->a:Lcom/applovin/impl/sdk/j;
 
-    .line 14
     invoke-virtual {v1}, Lcom/applovin/impl/sdk/j;->h0()Lcom/applovin/impl/vj;
 
     move-result-object v1
@@ -213,9 +213,9 @@
 
     move-result-object v0
 
+    .line 16
     iget-object v1, p0, Lcom/applovin/adview/AppLovinFullscreenActivity;->a:Lcom/applovin/impl/sdk/j;
 
-    .line 16
     invoke-virtual {v1}, Lcom/applovin/impl/sdk/j;->h0()Lcom/applovin/impl/vj;
 
     move-result-object v1
@@ -229,11 +229,11 @@
     return-void
 .end method
 
-.method public static synthetic a(Lcom/applovin/adview/AppLovinFullscreenActivity;Ljava/lang/Long;)V
+.method public static synthetic a(Lcom/applovin/adview/AppLovinFullscreenActivity;)V
     .locals 0
 
     .line 1
-    invoke-direct {p0, p1}, Lcom/applovin/adview/AppLovinFullscreenActivity;->a(Ljava/lang/Long;)V
+    invoke-direct {p0}, Lcom/applovin/adview/AppLovinFullscreenActivity;->c()V
 
     return-void
 .end method
@@ -241,9 +241,9 @@
 .method private synthetic a(Ljava/lang/Long;)V
     .locals 4
 
+    .line 17
     iget-wide v0, p0, Lcom/applovin/adview/AppLovinFullscreenActivity;->i:J
 
-    .line 17
     invoke-virtual {p1}, Ljava/lang/Long;->longValue()J
 
     move-result-wide v2
@@ -252,9 +252,9 @@
 
     iput-wide v2, p0, Lcom/applovin/adview/AppLovinFullscreenActivity;->i:J
 
+    .line 18
     iget-object p1, p0, Lcom/applovin/adview/AppLovinFullscreenActivity;->a:Lcom/applovin/impl/sdk/j;
 
-    .line 18
     invoke-virtual {p1}, Lcom/applovin/impl/sdk/j;->h0()Lcom/applovin/impl/vj;
 
     move-result-object p1
@@ -275,11 +275,11 @@
 .method private b()V
     .locals 6
 
+    .line 2
     iget-object v0, p0, Lcom/applovin/adview/AppLovinFullscreenActivity;->a:Lcom/applovin/impl/sdk/j;
 
     if-eqz v0, :cond_1
 
-    .line 2
     sget-object v1, Lcom/applovin/impl/sj;->h2:Lcom/applovin/impl/sj;
 
     invoke-virtual {v0, v1}, Lcom/applovin/impl/sdk/j;->a(Lcom/applovin/impl/sj;)Ljava/lang/Object;
@@ -296,10 +296,10 @@
 
     goto :goto_0
 
+    .line 3
     :cond_0
     iget-object v0, p0, Lcom/applovin/adview/AppLovinFullscreenActivity;->a:Lcom/applovin/impl/sdk/j;
 
-    .line 3
     sget-object v1, Lcom/applovin/impl/sj;->i2:Lcom/applovin/impl/sj;
 
     invoke-virtual {v0, v1}, Lcom/applovin/impl/sdk/j;->a(Lcom/applovin/impl/sj;)Ljava/lang/Object;
@@ -315,11 +315,11 @@
 
     iget-object v3, p0, Lcom/applovin/adview/AppLovinFullscreenActivity;->a:Lcom/applovin/impl/sdk/j;
 
-    new-instance v4, Landroidx/fragment/app/c;
+    new-instance v4, Landroidx/camera/core/impl/Y;
 
-    const/16 v5, 0x8
+    const/4 v5, 0x6
 
-    invoke-direct {v4, p0, v5, v0}, Landroidx/fragment/app/c;-><init>(Ljava/lang/Object;ILjava/lang/Object;)V
+    invoke-direct {v4, p0, v5, v0}, Landroidx/camera/core/impl/Y;-><init>(Ljava/lang/Object;ILjava/lang/Object;)V
 
     const/4 v0, 0x1
 
@@ -334,11 +334,11 @@
     return-void
 .end method
 
-.method public static synthetic b(Lcom/applovin/adview/AppLovinFullscreenActivity;)V
+.method public static synthetic b(Lcom/applovin/adview/AppLovinFullscreenActivity;Ljava/lang/Long;)V
     .locals 0
 
     .line 1
-    invoke-direct {p0}, Lcom/applovin/adview/AppLovinFullscreenActivity;->c()V
+    invoke-direct {p0, p1}, Lcom/applovin/adview/AppLovinFullscreenActivity;->a(Ljava/lang/Long;)V
 
     return-void
 .end method
@@ -416,7 +416,7 @@
 
     .line 10
     .line 11
-    invoke-static {p0}, Landroidx/activity/t;->l(Landroid/app/Activity;)Landroid/window/OnBackInvokedDispatcher;
+    invoke-static {p0}, LE0/d;->p(Lcom/applovin/adview/AppLovinFullscreenActivity;)Landroid/window/OnBackInvokedDispatcher;
 
     .line 12
     .line 13
@@ -428,7 +428,7 @@
 
     .line 16
     .line 17
-    invoke-static {v0, v1}, Landroidx/activity/t;->w(Landroid/window/OnBackInvokedDispatcher;Landroid/window/OnBackInvokedCallback;)V
+    invoke-static {v0, v1}, LE0/d;->w(Landroid/window/OnBackInvokedDispatcher;Landroid/window/OnBackInvokedCallback;)V
 
     .line 18
     .line 19
@@ -481,6 +481,10 @@
 
 .method public onConfigurationChanged(Landroid/content/res/Configuration;)V
     .locals 1
+    .param p1    # Landroid/content/res/Configuration;
+        .annotation build Landroidx/annotation/NonNull;
+        .end annotation
+    .end param
 
     .line 1
     invoke-super {p0, p1}, Landroid/app/Activity;->onConfigurationChanged(Landroid/content/res/Configuration;)V
@@ -507,6 +511,10 @@
 
 .method public onCreate(Landroid/os/Bundle;)V
     .locals 9
+    .param p1    # Landroid/os/Bundle;
+        .annotation build Landroidx/annotation/Nullable;
+        .end annotation
+    .end param
 
     .line 1
     invoke-super {p0, p1}, Landroid/app/Activity;->onCreate(Landroid/os/Bundle;)V
@@ -866,279 +874,280 @@
 
     .line 179
     .line 180
-    new-instance v1, Lc3/a;
+    new-instance v1, Landroidx/activity/l;
 
     .line 181
     .line 182
-    const/4 v2, 0x6
+    const/16 v2, 0xd
 
     .line 183
-    invoke-direct {v1, p0, v2}, Lc3/a;-><init>(Ljava/lang/Object;I)V
-
     .line 184
+    invoke-direct {v1, p0, v2}, Landroidx/activity/l;-><init>(Ljava/lang/Object;I)V
+
     .line 185
     .line 186
+    .line 187
     invoke-direct {v0, v1}, Lcom/applovin/adview/AppLovinFullscreenActivity$b;-><init>(Ljava/lang/Runnable;)V
 
-    .line 187
     .line 188
     .line 189
+    .line 190
     iput-object v0, p0, Lcom/applovin/adview/AppLovinFullscreenActivity;->f:Lcom/applovin/adview/AppLovinFullscreenActivity$b;
 
-    .line 190
     .line 191
-    invoke-static {p0}, Landroidx/activity/t;->l(Landroid/app/Activity;)Landroid/window/OnBackInvokedDispatcher;
-
     .line 192
+    invoke-static {p0}, LE0/d;->p(Lcom/applovin/adview/AppLovinFullscreenActivity;)Landroid/window/OnBackInvokedDispatcher;
+
     .line 193
     .line 194
+    .line 195
     move-result-object v0
 
-    .line 195
+    .line 196
     iget-object v1, p0, Lcom/applovin/adview/AppLovinFullscreenActivity;->f:Lcom/applovin/adview/AppLovinFullscreenActivity$b;
 
-    .line 196
     .line 197
-    invoke-static {v0, v1}, Landroidx/activity/t;->D(Landroid/window/OnBackInvokedDispatcher;Landroid/window/OnBackInvokedCallback;)V
-
     .line 198
+    invoke-static {v0, v1}, LE0/d;->D(Landroid/window/OnBackInvokedDispatcher;Landroid/window/OnBackInvokedCallback;)V
+
     .line 199
     .line 200
+    .line 201
     :cond_3
     invoke-direct {p0}, Lcom/applovin/adview/AppLovinFullscreenActivity;->a()V
 
-    .line 201
     .line 202
     .line 203
+    .line 204
     invoke-direct {p0}, Lcom/applovin/adview/AppLovinFullscreenActivity;->b()V
 
-    .line 204
     .line 205
     .line 206
+    .line 207
     sget-object v0, Lcom/applovin/adview/AppLovinFullscreenActivity;->parentInterstitialWrapper:Lcom/applovin/impl/sb;
 
-    .line 207
     .line 208
+    .line 209
     if-eqz v0, :cond_4
 
-    .line 209
     .line 210
+    .line 211
     invoke-virtual {v0}, Lcom/applovin/impl/sb;->f()Lcom/applovin/impl/sdk/ad/b;
 
-    .line 211
     .line 212
     .line 213
+    .line 214
     move-result-object v1
 
-    .line 214
+    .line 215
     sget-object p1, Lcom/applovin/adview/AppLovinFullscreenActivity;->parentInterstitialWrapper:Lcom/applovin/impl/sb;
 
-    .line 215
     .line 216
+    .line 217
     invoke-virtual {p1}, Lcom/applovin/impl/sb;->b()Lcom/applovin/sdk/AppLovinAdClickListener;
 
-    .line 217
     .line 218
     .line 219
+    .line 220
     move-result-object v2
 
-    .line 220
+    .line 221
     sget-object p1, Lcom/applovin/adview/AppLovinFullscreenActivity;->parentInterstitialWrapper:Lcom/applovin/impl/sb;
 
-    .line 221
     .line 222
+    .line 223
     invoke-virtual {p1}, Lcom/applovin/impl/sb;->c()Lcom/applovin/sdk/AppLovinAdDisplayListener;
 
-    .line 223
     .line 224
     .line 225
+    .line 226
     move-result-object v3
 
-    .line 226
+    .line 227
     sget-object p1, Lcom/applovin/adview/AppLovinFullscreenActivity;->parentInterstitialWrapper:Lcom/applovin/impl/sb;
 
-    .line 227
     .line 228
+    .line 229
     invoke-virtual {p1}, Lcom/applovin/impl/sb;->d()Lcom/applovin/sdk/AppLovinAdVideoPlaybackListener;
 
-    .line 229
     .line 230
     .line 231
+    .line 232
     move-result-object v4
 
-    .line 232
+    .line 233
     sget-object p1, Lcom/applovin/adview/AppLovinFullscreenActivity;->parentInterstitialWrapper:Lcom/applovin/impl/sb;
 
-    .line 233
     .line 234
+    .line 235
     invoke-virtual {p1}, Lcom/applovin/impl/sb;->h()Ljava/util/Map;
 
-    .line 235
     .line 236
     .line 237
+    .line 238
     move-result-object v5
 
-    .line 238
+    .line 239
     iget-object v6, p0, Lcom/applovin/adview/AppLovinFullscreenActivity;->a:Lcom/applovin/impl/sdk/j;
 
-    .line 239
     .line 240
+    .line 241
     new-instance v8, Lcom/applovin/adview/AppLovinFullscreenActivity$a;
 
-    .line 241
     .line 242
+    .line 243
     invoke-direct {v8, p0}, Lcom/applovin/adview/AppLovinFullscreenActivity$a;-><init>(Lcom/applovin/adview/AppLovinFullscreenActivity;)V
 
-    .line 243
     .line 244
     .line 245
+    .line 246
     move-object v7, p0
 
-    .line 246
+    .line 247
     invoke-static/range {v1 .. v8}, Lcom/applovin/impl/o9;->a(Lcom/applovin/impl/sdk/ad/b;Lcom/applovin/sdk/AppLovinAdClickListener;Lcom/applovin/sdk/AppLovinAdDisplayListener;Lcom/applovin/sdk/AppLovinAdVideoPlaybackListener;Ljava/util/Map;Lcom/applovin/impl/sdk/j;Landroid/app/Activity;Lcom/applovin/impl/o9$d;)V
 
-    .line 247
     .line 248
     .line 249
+    .line 250
     goto :goto_1
 
-    .line 250
+    .line 251
     :cond_4
     new-instance v0, Landroid/content/Intent;
 
-    .line 251
     .line 252
+    .line 253
     const-class v1, Lcom/applovin/impl/adview/activity/FullscreenAdService;
 
-    .line 253
     .line 254
+    .line 255
     invoke-direct {v0, p0, v1}, Landroid/content/Intent;-><init>(Landroid/content/Context;Ljava/lang/Class;)V
 
-    .line 255
     .line 256
     .line 257
+    .line 258
     new-instance v1, Lcom/applovin/impl/adview/activity/a;
 
-    .line 258
     .line 259
+    .line 260
     iget-object v2, p0, Lcom/applovin/adview/AppLovinFullscreenActivity;->a:Lcom/applovin/impl/sdk/j;
 
-    .line 260
     .line 261
+    .line 262
     invoke-direct {v1, p0, v2}, Lcom/applovin/impl/adview/activity/a;-><init>(Lcom/applovin/adview/AppLovinFullscreenActivity;Lcom/applovin/impl/sdk/j;)V
 
-    .line 262
     .line 263
     .line 264
+    .line 265
     iput-object v1, p0, Lcom/applovin/adview/AppLovinFullscreenActivity;->d:Lcom/applovin/impl/adview/activity/a;
 
-    .line 265
     .line 266
+    .line 267
     invoke-virtual {p0, v0, v1, p1}, Landroid/content/Context;->bindService(Landroid/content/Intent;Landroid/content/ServiceConnection;I)Z
 
-    .line 267
     .line 268
     .line 269
+    .line 270
     invoke-static {}, Lcom/applovin/impl/z3;->j()Z
 
-    .line 270
     .line 271
     .line 272
-    move-result p1
-
     .line 273
-    if-eqz p1, :cond_6
+    move-result p1
 
     .line 274
+    if-eqz p1, :cond_6
+
     .line 275
+    .line 276
     iget-object p1, p0, Lcom/applovin/adview/AppLovinFullscreenActivity;->a:Lcom/applovin/impl/sdk/j;
 
-    .line 276
     .line 277
+    .line 278
     invoke-virtual {p1}, Lcom/applovin/impl/sdk/j;->f0()Lcom/applovin/sdk/AppLovinSdkSettings;
 
-    .line 278
     .line 279
     .line 280
-    move-result-object p1
-
     .line 281
-    invoke-virtual {p1}, Lcom/applovin/sdk/AppLovinSdkSettings;->getExtraParameters()Ljava/util/Map;
+    move-result-object p1
 
     .line 282
+    invoke-virtual {p1}, Lcom/applovin/sdk/AppLovinSdkSettings;->getExtraParameters()Ljava/util/Map;
+
     .line 283
     .line 284
-    move-result-object p1
-
     .line 285
-    const-string v0, "disable_set_data_dir_suffix"
+    move-result-object p1
 
     .line 286
+    const-string v0, "disable_set_data_dir_suffix"
+
     .line 287
+    .line 288
     invoke-interface {p1, v0}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 288
     .line 289
     .line 290
+    .line 291
     move-result-object p1
 
-    .line 291
+    .line 292
     check-cast p1, Ljava/lang/String;
 
-    .line 292
     .line 293
+    .line 294
     invoke-static {p1}, Lcom/applovin/impl/sdk/utils/StringUtils;->isValidString(Ljava/lang/String;)Z
 
-    .line 294
     .line 295
     .line 296
+    .line 297
     move-result v0
 
-    .line 297
+    .line 298
     if-eqz v0, :cond_5
 
-    .line 298
     .line 299
+    .line 300
     invoke-static {p1}, Ljava/lang/Boolean;->parseBoolean(Ljava/lang/String;)Z
 
-    .line 300
     .line 301
     .line 302
+    .line 303
     move-result p1
 
-    .line 303
+    .line 304
     if-eqz p1, :cond_5
 
-    .line 304
     .line 305
+    .line 306
     return-void
 
-    .line 306
+    .line 307
     :cond_5
     :try_start_1
     invoke-static {}, Landroid/os/Process;->myPid()I
 
-    .line 307
     .line 308
     .line 309
+    .line 310
     move-result p1
 
-    .line 310
+    .line 311
     invoke-static {p1}, Ljava/lang/String;->valueOf(I)Ljava/lang/String;
 
-    .line 311
     .line 312
     .line 313
+    .line 314
     move-result-object p1
 
-    .line 314
-    invoke-static {p1}, Landroidx/activity/z;->q(Ljava/lang/String;)V
+    .line 315
+    invoke-static {p1}, Ll5/J;->s(Ljava/lang/String;)V
     :try_end_1
     .catchall {:try_start_1 .. :try_end_1} :catchall_1
 
-    .line 315
     .line 316
     .line 317
+    .line 318
     :catchall_1
     :cond_6
     :goto_1
@@ -1656,8 +1665,15 @@
 
 .method public setPresenter(Lcom/applovin/impl/o9;)V
     .locals 0
+    .param p1    # Lcom/applovin/impl/o9;
+        .annotation build Landroidx/annotation/Nullable;
+        .end annotation
+    .end param
 
+    .line 1
     iput-object p1, p0, Lcom/applovin/adview/AppLovinFullscreenActivity;->b:Lcom/applovin/impl/o9;
 
+    .line 2
+    .line 3
     return-void
 .end method

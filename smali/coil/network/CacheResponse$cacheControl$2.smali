@@ -3,14 +3,14 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lzh/a;
+.implements Lka/a;
 
 
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "Lkotlin/jvm/internal/Lambda;",
-        "Lzh/a;"
+        "Lka/a;"
     }
 .end annotation
 
@@ -72,10 +72,10 @@
     iget-object v0, p0, Lcoil/network/CacheResponse$cacheControl$2;->this$0:Lcoil/network/a;
 
     .line 3
-    iget-object v0, v0, Lcoil/network/a;->f:Lokhttp3/t;
+    iget-object v0, v0, Lcoil/network/a;->f:Lokhttp3/o;
 
     .line 4
-    invoke-static {v0}, Lfi/h;->w(Lokhttp3/t;)Lokhttp3/c;
+    invoke-static {v0}, Lokhttp3/m;->i(Lokhttp3/o;)Lokhttp3/c;
 
     move-result-object v0
 

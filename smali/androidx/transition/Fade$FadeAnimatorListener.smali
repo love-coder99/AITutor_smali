@@ -82,33 +82,38 @@
 
 .method public onAnimationEnd(Landroid/animation/Animator;Z)V
     .locals 2
+    .param p1    # Landroid/animation/Animator;
+        .annotation build Landroidx/annotation/NonNull;
+        .end annotation
+    .end param
 
+    .line 2
     iget-boolean p1, p0, Landroidx/transition/Fade$FadeAnimatorListener;->mLayerTypeChanged:Z
 
     if-eqz p1, :cond_0
 
+    .line 3
     iget-object p1, p0, Landroidx/transition/Fade$FadeAnimatorListener;->mView:Landroid/view/View;
 
     const/4 v0, 0x0
 
     const/4 v1, 0x0
 
-    .line 2
     invoke-virtual {p1, v0, v1}, Landroid/view/View;->setLayerType(ILandroid/graphics/Paint;)V
 
     :cond_0
     if-nez p2, :cond_1
 
+    .line 4
     iget-object p1, p0, Landroidx/transition/Fade$FadeAnimatorListener;->mView:Landroid/view/View;
 
     const/high16 p2, 0x3f800000    # 1.0f
 
-    .line 3
     invoke-static {p1, p2}, Landroidx/transition/ViewUtils;->setTransitionAlpha(Landroid/view/View;F)V
 
+    .line 5
     iget-object p1, p0, Landroidx/transition/Fade$FadeAnimatorListener;->mView:Landroid/view/View;
 
-    .line 4
     invoke-static {p1}, Landroidx/transition/ViewUtils;->clearNonTransitionAlpha(Landroid/view/View;)V
 
     :cond_1
@@ -179,12 +184,20 @@
 
 .method public onTransitionCancel(Landroidx/transition/Transition;)V
     .locals 0
+    .param p1    # Landroidx/transition/Transition;
+        .annotation build Landroidx/annotation/NonNull;
+        .end annotation
+    .end param
 
     return-void
 .end method
 
 .method public onTransitionEnd(Landroidx/transition/Transition;)V
     .locals 0
+    .param p1    # Landroidx/transition/Transition;
+        .annotation build Landroidx/annotation/NonNull;
+        .end annotation
+    .end param
 
     .line 1
     return-void
@@ -194,13 +207,17 @@
     .locals 0
 
     .line 2
-    invoke-static {p0, p1, p2}, Landroidx/transition/c;->a(Landroidx/transition/Transition$TransitionListener;Landroidx/transition/Transition;Z)V
+    invoke-static {p0, p1, p2}, Landroidx/transition/b;->a(Landroidx/transition/Transition$TransitionListener;Landroidx/transition/Transition;Z)V
 
     return-void
 .end method
 
 .method public onTransitionPause(Landroidx/transition/Transition;)V
     .locals 2
+    .param p1    # Landroidx/transition/Transition;
+        .annotation build Landroidx/annotation/NonNull;
+        .end annotation
+    .end param
 
     .line 1
     iget-object p1, p0, Landroidx/transition/Fade$FadeAnimatorListener;->mView:Landroid/view/View;
@@ -265,6 +282,10 @@
 
 .method public onTransitionResume(Landroidx/transition/Transition;)V
     .locals 2
+    .param p1    # Landroidx/transition/Transition;
+        .annotation build Landroidx/annotation/NonNull;
+        .end annotation
+    .end param
 
     .line 1
     iget-object p1, p0, Landroidx/transition/Fade$FadeAnimatorListener;->mView:Landroid/view/View;
@@ -288,6 +309,10 @@
 
 .method public onTransitionStart(Landroidx/transition/Transition;)V
     .locals 0
+    .param p1    # Landroidx/transition/Transition;
+        .annotation build Landroidx/annotation/NonNull;
+        .end annotation
+    .end param
 
     .line 1
     return-void
@@ -295,6 +320,10 @@
 
 .method public onTransitionStart(Landroidx/transition/Transition;Z)V
     .locals 0
+    .param p1    # Landroidx/transition/Transition;
+        .annotation build Landroidx/annotation/NonNull;
+        .end annotation
+    .end param
 
     .line 2
     return-void

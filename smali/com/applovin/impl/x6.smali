@@ -102,11 +102,12 @@
     .line 5
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
+    .line 6
     iput-object p1, p0, Lcom/applovin/impl/x6;->c:Ljava/lang/String;
 
     if-eqz p2, :cond_0
 
-    .line 6
+    .line 7
     invoke-virtual {p3}, [Lcom/applovin/impl/x6$b;->clone()Ljava/lang/Object;
 
     move-result-object p1
@@ -115,15 +116,16 @@
 
     check-cast p3, [Lcom/applovin/impl/x6$b;
 
+    .line 8
     :cond_0
     iput-object p3, p0, Lcom/applovin/impl/x6;->a:[Lcom/applovin/impl/x6$b;
 
-    .line 7
+    .line 9
     array-length p1, p3
 
     iput p1, p0, Lcom/applovin/impl/x6;->d:I
 
-    .line 8
+    .line 10
     invoke-static {p3, p0}, Ljava/util/Arrays;->sort([Ljava/lang/Object;Ljava/util/Comparator;)V
 
     return-void
@@ -134,7 +136,7 @@
 
     const/4 v0, 0x1
 
-    .line 9
+    .line 11
     invoke-direct {p0, p1, v0, p2}, Lcom/applovin/impl/x6;-><init>(Ljava/lang/String;Z[Lcom/applovin/impl/x6$b;)V
 
     return-void
@@ -145,9 +147,9 @@
 
     const/4 v0, 0x0
 
+    .line 12
     new-array v1, v0, [Lcom/applovin/impl/x6$b;
 
-    .line 10
     invoke-interface {p1, v1}, Ljava/util/List;->toArray([Ljava/lang/Object;)[Ljava/lang/Object;
 
     move-result-object p1
@@ -166,7 +168,7 @@
 
     const/4 v0, 0x0
 
-    .line 11
+    .line 13
     invoke-direct {p0, v0, p1}, Lcom/applovin/impl/x6;-><init>(Ljava/lang/String;[Lcom/applovin/impl/x6$b;)V
 
     return-void
@@ -223,9 +225,9 @@
 .method public a(I)Lcom/applovin/impl/x6$b;
     .locals 1
 
+    .line 3
     iget-object v0, p0, Lcom/applovin/impl/x6;->a:[Lcom/applovin/impl/x6$b;
 
-    .line 3
     aget-object p1, v0, p1
 
     return-object p1
@@ -234,9 +236,9 @@
 .method public a(Ljava/lang/String;)Lcom/applovin/impl/x6;
     .locals 3
 
+    .line 1
     iget-object v0, p0, Lcom/applovin/impl/x6;->c:Ljava/lang/String;
 
-    .line 1
     invoke-static {v0, p1}, Lcom/applovin/impl/xp;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result v0

@@ -29,14 +29,14 @@
     .locals 2
 
     .line 1
-    new-instance v0, Landroid/support/v4/media/a;
+    new-instance v0, LX7/a;
 
     .line 2
     .line 3
-    const/4 v1, 0x4
+    const/4 v1, 0x6
 
     .line 4
-    invoke-direct {v0, v1}, Landroid/support/v4/media/a;-><init>(I)V
+    invoke-direct {v0, v1}, LX7/a;-><init>(I)V
 
     .line 5
     .line 6
@@ -145,7 +145,7 @@
 
     .line 21
     .line 22
-    invoke-static {v0, v1, v2, v3}, Landroid/support/v4/media/session/a;->G(Ljava/lang/StringBuilder;JLjava/lang/String;)Ljava/lang/String;
+    invoke-static {v1, v2, v3, v0}, LB/u;->q(JLjava/lang/String;Ljava/lang/StringBuilder;)Ljava/lang/String;
 
     .line 23
     .line 24

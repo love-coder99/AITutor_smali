@@ -64,7 +64,10 @@
 .method public final getStopReason()I
     .locals 1
 
+    .line 1
     iget v0, p0, Landroidx/work/impl/workers/ConstraintTrackingWorker$ConstraintUnsatisfiedException;->stopReason:I
 
+    .line 2
+    .line 3
     return v0
 .end method

@@ -79,18 +79,25 @@
     .line 4
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
+    .line 5
     iput-wide p1, p0, Lcom/applovin/impl/mc;->a:J
 
+    .line 6
     iput-object p3, p0, Lcom/applovin/impl/mc;->b:Lcom/applovin/impl/k5;
 
+    .line 7
     iput-object p4, p0, Lcom/applovin/impl/mc;->c:Landroid/net/Uri;
 
+    .line 8
     iput-object p5, p0, Lcom/applovin/impl/mc;->d:Ljava/util/Map;
 
+    .line 9
     iput-wide p6, p0, Lcom/applovin/impl/mc;->e:J
 
+    .line 10
     iput-wide p8, p0, Lcom/applovin/impl/mc;->f:J
 
+    .line 11
     iput-wide p10, p0, Lcom/applovin/impl/mc;->g:J
 
     return-void

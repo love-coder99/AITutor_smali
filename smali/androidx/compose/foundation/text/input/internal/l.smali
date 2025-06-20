@@ -29,7 +29,7 @@
 
 
 # virtual methods
-.method public final a(Landroidx/compose/ui/text/input/k;)V
+.method public final a(Landroidx/compose/ui/text/input/j;)V
     .locals 4
 
     .line 1
@@ -52,7 +52,7 @@
 
     .line 8
     .line 9
-    invoke-interface {v3, p1}, Landroidx/compose/ui/text/input/h;->a(Landroidx/compose/ui/text/input/k;)V
+    invoke-interface {v3, p1}, Landroidx/compose/ui/text/input/h;->a(Landroidx/compose/ui/text/input/j;)V
 
     .line 10
     .line 11

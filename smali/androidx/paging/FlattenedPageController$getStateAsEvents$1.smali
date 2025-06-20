@@ -4,6 +4,15 @@
 
 
 # annotations
+.annotation runtime Lca/c;
+    c = "androidx.paging.FlattenedPageController"
+    f = "CachedPageEventFlow.kt"
+    l = {
+        0x11f
+    }
+    m = "getStateAsEvents"
+.end annotation
+
 .annotation runtime Lkotlin/Metadata;
     k = 0x3
     mv = {
@@ -12,15 +21,6 @@
         0x0
     }
     xi = 0x30
-.end annotation
-
-.annotation runtime Lth/c;
-    c = "androidx.paging.FlattenedPageController"
-    f = "CachedPageEventFlow.kt"
-    l = {
-        0x11f
-    }
-    m = "getStateAsEvents"
 .end annotation
 
 
@@ -33,22 +33,22 @@
 
 .field synthetic result:Ljava/lang/Object;
 
-.field final synthetic this$0:Landroidx/paging/k;
+.field final synthetic this$0:Landroidx/paging/l;
     .annotation system Ldalvik/annotation/Signature;
         value = {
-            "Landroidx/paging/k;"
+            "Landroidx/paging/l;"
         }
     .end annotation
 .end field
 
 
 # direct methods
-.method public constructor <init>(Landroidx/paging/k;Lkotlin/coroutines/Continuation;)V
+.method public constructor <init>(Landroidx/paging/l;Lkotlin/coroutines/Continuation;)V
     .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
-            "Landroidx/paging/k;",
+            "Landroidx/paging/l;",
             "Lkotlin/coroutines/Continuation<",
             "-",
             "Landroidx/paging/FlattenedPageController$getStateAsEvents$1;",
@@ -56,7 +56,7 @@
         }
     .end annotation
 
-    iput-object p1, p0, Landroidx/paging/FlattenedPageController$getStateAsEvents$1;->this$0:Landroidx/paging/k;
+    iput-object p1, p0, Landroidx/paging/FlattenedPageController$getStateAsEvents$1;->this$0:Landroidx/paging/l;
 
     invoke-direct {p0, p2}, Lkotlin/coroutines/jvm/internal/ContinuationImpl;-><init>(Lkotlin/coroutines/Continuation;)V
 
@@ -78,9 +78,9 @@
 
     iput p1, p0, Landroidx/paging/FlattenedPageController$getStateAsEvents$1;->label:I
 
-    iget-object p1, p0, Landroidx/paging/FlattenedPageController$getStateAsEvents$1;->this$0:Landroidx/paging/k;
+    iget-object p1, p0, Landroidx/paging/FlattenedPageController$getStateAsEvents$1;->this$0:Landroidx/paging/l;
 
-    invoke-virtual {p1, p0}, Landroidx/paging/k;->a(Lkotlin/coroutines/Continuation;)Ljava/io/Serializable;
+    invoke-virtual {p1, p0}, Landroidx/paging/l;->a(Lkotlin/coroutines/jvm/internal/ContinuationImpl;)Ljava/io/Serializable;
 
     move-result-object p1
 

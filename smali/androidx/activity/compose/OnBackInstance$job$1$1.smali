@@ -3,10 +3,17 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lzh/f;
+.implements Lka/f;
 
 
 # annotations
+.annotation runtime Lca/c;
+    c = "androidx.activity.compose.OnBackInstance$job$1$1"
+    f = "PredictiveBackHandler.kt"
+    l = {}
+    m = "invokeSuspend"
+.end annotation
+
 .annotation system Ldalvik/annotation/EnclosingMethod;
     value = Landroidx/activity/compose/OnBackInstance$job$1;->invokeSuspend(Ljava/lang/Object;)Ljava/lang/Object;
 .end annotation
@@ -19,21 +26,22 @@
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "Lkotlin/coroutines/jvm/internal/SuspendLambda;",
-        "Lzh/f;"
+        "Lka/f;"
     }
 .end annotation
 
 .annotation runtime Lkotlin/Metadata;
     d1 = {
-        "\u0000\u0014\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0010\u0003\n\u0000\n\u0002\u0018\u0002\n\u0000\u0010\u0005\u001a\u00020\u0004*\u0008\u0012\u0004\u0012\u00020\u00010\u00002\u0008\u0010\u0003\u001a\u0004\u0018\u00010\u0002H\u008a@"
+        "\u0000\u0016\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0010\u0003\n\u0000\n\u0002\u0018\u0002\n\u0002\u0008\u0002\u0010\u0005\u001a\u00020\u0004*\u0008\u0012\u0004\u0012\u00020\u00010\u00002\u0008\u0010\u0003\u001a\u0004\u0018\u00010\u0002H\u008a@\u00a2\u0006\u0004\u0008\u0005\u0010\u0006"
     }
     d2 = {
-        "Lkotlinx/coroutines/flow/i;",
+        "Lkotlinx/coroutines/flow/g;",
         "Landroidx/activity/b;",
         "",
         "it",
-        "Lqh/r;",
-        "<anonymous>"
+        "LX9/j;",
+        "<anonymous>",
+        "(Lkotlinx/coroutines/flow/g;Ljava/lang/Throwable;)V"
     }
     k = 0x3
     mv = {
@@ -41,13 +49,6 @@
         0x8,
         0x0
     }
-.end annotation
-
-.annotation runtime Lth/c;
-    c = "androidx.activity.compose.OnBackInstance$job$1$1"
-    f = "PredictiveBackHandler.kt"
-    l = {}
-    m = "invokeSuspend"
 .end annotation
 
 
@@ -86,29 +87,29 @@
     .locals 0
 
     .line 1
-    check-cast p1, Lkotlinx/coroutines/flow/i;
+    check-cast p1, Lkotlinx/coroutines/flow/g;
 
     check-cast p2, Ljava/lang/Throwable;
 
     check-cast p3, Lkotlin/coroutines/Continuation;
 
-    invoke-virtual {p0, p1, p2, p3}, Landroidx/activity/compose/OnBackInstance$job$1$1;->invoke(Lkotlinx/coroutines/flow/i;Ljava/lang/Throwable;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
+    invoke-virtual {p0, p1, p2, p3}, Landroidx/activity/compose/OnBackInstance$job$1$1;->invoke(Lkotlinx/coroutines/flow/g;Ljava/lang/Throwable;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
 
     move-result-object p1
 
     return-object p1
 .end method
 
-.method public final invoke(Lkotlinx/coroutines/flow/i;Ljava/lang/Throwable;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
+.method public final invoke(Lkotlinx/coroutines/flow/g;Ljava/lang/Throwable;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
     .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
-            "Lkotlinx/coroutines/flow/i;",
+            "Lkotlinx/coroutines/flow/g;",
             "Ljava/lang/Throwable;",
             "Lkotlin/coroutines/Continuation<",
             "-",
-            "Lqh/r;",
+            "LX9/j;",
             ">;)",
             "Ljava/lang/Object;"
         }
@@ -121,7 +122,7 @@
 
     invoke-direct {p1, p2, p3}, Landroidx/activity/compose/OnBackInstance$job$1$1;-><init>(Lkotlin/jvm/internal/Ref$BooleanRef;Lkotlin/coroutines/Continuation;)V
 
-    sget-object p2, Lqh/r;->a:Lqh/r;
+    sget-object p2, LX9/j;->a:LX9/j;
 
     invoke-virtual {p1, p2}, Landroidx/activity/compose/OnBackInstance$job$1$1;->invokeSuspend(Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -162,7 +163,7 @@
 
     .line 14
     .line 15
-    sget-object p1, Lqh/r;->a:Lqh/r;
+    sget-object p1, LX9/j;->a:LX9/j;
 
     .line 16
     .line 17

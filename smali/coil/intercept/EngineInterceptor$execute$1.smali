@@ -4,17 +4,7 @@
 
 
 # annotations
-.annotation runtime Lkotlin/Metadata;
-    k = 0x3
-    mv = {
-        0x1,
-        0x9,
-        0x0
-    }
-    xi = 0x30
-.end annotation
-
-.annotation runtime Lth/c;
+.annotation runtime Lca/c;
     c = "coil.intercept.EngineInterceptor"
     f = "EngineInterceptor.kt"
     l = {
@@ -23,6 +13,16 @@
         0x94
     }
     m = "execute"
+.end annotation
+
+.annotation runtime Lkotlin/Metadata;
+    k = 0x3
+    mv = {
+        0x1,
+        0x9,
+        0x0
+    }
+    xi = 0x30
 .end annotation
 
 
@@ -98,7 +98,7 @@
 
     move-object v5, p0
 
-    invoke-static/range {v0 .. v5}, Lcoil/intercept/b;->b(Lcoil/intercept/b;Ln5/i;Ljava/lang/Object;Ln5/l;Lcoil/e;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
+    invoke-static/range {v0 .. v5}, Lcoil/intercept/b;->b(Lcoil/intercept/b;LH2/h;Ljava/lang/Object;LH2/k;Lcoil/d;Lkotlin/coroutines/jvm/internal/ContinuationImpl;)Ljava/lang/Object;
 
     move-result-object p1
 

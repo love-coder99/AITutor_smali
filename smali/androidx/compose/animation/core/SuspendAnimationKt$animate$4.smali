@@ -4,12 +4,22 @@
 
 
 # annotations
+.annotation runtime Lca/c;
+    c = "androidx.compose.animation.core.SuspendAnimationKt"
+    f = "SuspendAnimation.kt"
+    l = {
+        0xef,
+        0x116
+    }
+    m = "animate"
+.end annotation
+
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "<T:",
         "Ljava/lang/Object;",
         "V:",
-        "Landroidx/compose/animation/core/m;",
+        "Landroidx/compose/animation/core/l;",
         ">",
         "Lkotlin/coroutines/jvm/internal/ContinuationImpl;"
     }
@@ -23,16 +33,6 @@
         0x0
     }
     xi = 0x30
-.end annotation
-
-.annotation runtime Lth/c;
-    c = "androidx.compose.animation.core.SuspendAnimationKt"
-    f = "SuspendAnimation.kt"
-    l = {
-        0xef,
-        0x116
-    }
-    m = "animate"
 .end annotation
 
 
@@ -93,7 +93,7 @@
 
     move-object v5, p0
 
-    invoke-static/range {v0 .. v5}, Landroidx/compose/animation/core/b;->d(Landroidx/compose/animation/core/h;Landroidx/compose/animation/core/d;JLzh/c;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
+    invoke-static/range {v0 .. v5}, Landroidx/compose/animation/core/b;->d(Landroidx/compose/animation/core/g;Landroidx/compose/animation/core/d;JLka/c;Lkotlin/coroutines/jvm/internal/ContinuationImpl;)Ljava/lang/Object;
 
     move-result-object p1
 

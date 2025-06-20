@@ -104,11 +104,11 @@
 
     invoke-virtual {p1, v1, v0}, Lcom/apm/insight/entity/a;->a(Ljava/lang/String;Ljava/lang/Object;)V
 
+    .line 5
     :cond_0
     :try_start_0
     iget-object v0, p0, Lcom/apm/insight/runtime/a/c;->c:Lcom/apm/insight/ICommonParams;
 
-    .line 5
     invoke-interface {v0}, Lcom/apm/insight/ICommonParams;->getPluginInfo()Ljava/util/Map;
 
     move-result-object v0
@@ -184,7 +184,7 @@
 .end method
 
 .method private c(Lcom/apm/insight/entity/a;)Lcom/apm/insight/entity/a;
-    .locals 5
+    .locals 4
 
     .line 2
     invoke-static {}, Lcom/apm/insight/e;->g()Landroid/content/Context;
@@ -200,14 +200,14 @@
 
     if-nez v0, :cond_0
 
-    const-string v0, "remote_process"
-
     .line 4
     invoke-static {v1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
-    move-result-object v2
+    move-result-object v0
 
-    invoke-virtual {p1, v0, v2}, Lcom/apm/insight/entity/a;->a(Ljava/lang/String;Ljava/lang/Object;)V
+    const-string v2, "remote_process"
+
+    invoke-virtual {p1, v2, v0}, Lcom/apm/insight/entity/a;->a(Ljava/lang/String;Ljava/lang/Object;)V
 
     .line 5
     :cond_0
@@ -244,11 +244,11 @@
     .line 8
     invoke-virtual {p1, v0}, Lcom/apm/insight/entity/a;->a(Lcom/apm/insight/runtime/a/b;)Lcom/apm/insight/entity/a;
 
+    .line 9
     :cond_1
     :try_start_0
     iget-object v0, p0, Lcom/apm/insight/runtime/a/c;->c:Lcom/apm/insight/ICommonParams;
 
-    .line 9
     invoke-interface {v0}, Lcom/apm/insight/ICommonParams;->getPatchInfo()Ljava/util/List;
 
     move-result-object v0
@@ -262,31 +262,29 @@
     :catchall_0
     move-exception v0
 
-    :try_start_1
-    new-array v2, v1, [Ljava/lang/String;
-
     .line 10
-    new-instance v3, Ljava/lang/StringBuilder;
+    :try_start_1
+    new-instance v2, Ljava/lang/StringBuilder;
 
-    const-string v4, "Data fetch failed since source misstake:\n"
+    const-string v3, "Data fetch failed since source misstake:\n"
 
-    invoke-direct {v3, v4}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+    invoke-direct {v2, v3}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
 
     invoke-static {v0}, Lcom/apm/insight/l/m;->a(Ljava/lang/Throwable;)Ljava/lang/String;
 
     move-result-object v0
 
-    invoke-virtual {v3, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v2, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    invoke-virtual {v3}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    invoke-virtual {v2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
     move-result-object v0
 
-    const/4 v3, 0x0
+    filled-new-array {v0}, [Ljava/lang/String;
 
-    aput-object v0, v2, v3
+    move-result-object v0
 
-    invoke-static {v2}, Ljava/util/Arrays;->asList([Ljava/lang/Object;)Ljava/util/List;
+    invoke-static {v0}, Ljava/util/Arrays;->asList([Ljava/lang/Object;)Ljava/util/List;
 
     move-result-object v0
 
@@ -307,15 +305,15 @@
 
     if-eqz v0, :cond_2
 
+    .line 12
     const-string v2, "business"
 
-    .line 12
     invoke-virtual {p1, v2, v0}, Lcom/apm/insight/entity/a;->a(Ljava/lang/String;Ljava/lang/Object;)V
 
+    .line 13
     :cond_2
     iget-object v0, p0, Lcom/apm/insight/runtime/a/c;->b:Landroid/content/Context;
 
-    .line 13
     invoke-static {v0}, Lcom/apm/insight/l/a;->a(Landroid/content/Context;)Z
 
     move-result v0
@@ -390,6 +388,7 @@
 
     goto/16 :goto_7
 
+    .line 16
     :cond_2
     iget-object p1, p0, Lcom/apm/insight/runtime/a/c;->e:Lcom/apm/insight/runtime/a/d;
 
@@ -397,7 +396,6 @@
 
     goto :goto_0
 
-    .line 16
     :cond_3
     invoke-virtual {p1}, Lcom/apm/insight/runtime/a/d;->a()I
 
@@ -466,6 +464,7 @@
     .line 23
     invoke-virtual {p2, v3, v2}, Lcom/apm/insight/entity/a;->a(Ljava/lang/String;Ljava/lang/Object;)V
 
+    .line 24
     :cond_5
     const-string v3, "_"
 
@@ -475,7 +474,7 @@
 
     const/4 v5, 0x0
 
-    .line 24
+    .line 25
     :goto_1
     invoke-interface {p1}, Ljava/util/List;->size()I
 
@@ -483,7 +482,7 @@
 
     if-ge v5, v6, :cond_6
 
-    .line 25
+    .line 26
     :try_start_0
     invoke-interface {p1, v5}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
@@ -491,22 +490,22 @@
 
     check-cast v6, Lcom/apm/insight/AttachUserData;
 
-    .line 26
+    .line 27
     invoke-static {}, Landroid/os/SystemClock;->uptimeMillis()J
 
     move-result-wide v7
 
+    .line 28
     iget-object v9, p0, Lcom/apm/insight/runtime/a/c;->a:Lcom/apm/insight/CrashType;
 
-    .line 27
     invoke-interface {v6, v9}, Lcom/apm/insight/AttachUserData;->getUserData(Lcom/apm/insight/CrashType;)Ljava/util/Map;
 
     move-result-object v9
 
-    .line 28
+    .line 29
     invoke-static {v2, v9}, Lcom/apm/insight/entity/a;->a(Lorg/json/JSONObject;Ljava/util/Map;)V
 
-    .line 29
+    .line 30
     new-instance v9, Ljava/lang/StringBuilder;
 
     invoke-direct {v9, v4}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
@@ -533,7 +532,7 @@
 
     move-result-object v6
 
-    .line 30
+    .line 31
     invoke-static {}, Landroid/os/SystemClock;->uptimeMillis()J
 
     move-result-wide v9
@@ -544,7 +543,7 @@
 
     move-result-object v7
 
-    .line 31
+    .line 32
     invoke-virtual {v1, v6, v7}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
@@ -554,7 +553,7 @@
     :catchall_0
     move-exception v6
 
-    .line 32
+    .line 33
     invoke-static {v2, v6}, Lcom/apm/insight/entity/a;->a(Lorg/json/JSONObject;Ljava/lang/Throwable;)V
 
     :goto_2
@@ -562,11 +561,11 @@
 
     goto :goto_1
 
+    .line 34
     :cond_6
     :try_start_1
     const-string p1, "fd_count"
 
-    .line 33
     invoke-static {}, Lcom/apm/insight/a;->f()I
 
     move-result v5
@@ -580,7 +579,7 @@
     :catchall_1
     nop
 
-    .line 34
+    .line 35
     :goto_3
     invoke-static {}, Lcom/apm/insight/e;->b()Lcom/apm/insight/a;
 
@@ -594,7 +593,7 @@
 
     if-eqz p1, :cond_8
 
-    .line 35
+    .line 36
     invoke-virtual {p2}, Lcom/apm/insight/entity/a;->c()Lorg/json/JSONObject;
 
     move-result-object v5
@@ -607,15 +606,15 @@
 
     if-nez v5, :cond_7
 
-    .line 36
+    .line 37
     new-instance v5, Lorg/json/JSONObject;
 
     invoke-direct {v5}, Lorg/json/JSONObject;-><init>()V
 
-    .line 37
+    .line 38
     invoke-virtual {p2, v6, v5}, Lcom/apm/insight/entity/a;->a(Ljava/lang/String;Ljava/lang/Object;)V
 
-    .line 38
+    .line 39
     :cond_7
     :goto_4
     invoke-interface {p1}, Ljava/util/List;->size()I
@@ -624,7 +623,7 @@
 
     if-ge v0, v6, :cond_8
 
-    .line 39
+    .line 40
     :try_start_2
     invoke-interface {p1, v0}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
@@ -632,22 +631,22 @@
 
     check-cast v6, Lcom/apm/insight/AttachUserData;
 
-    .line 40
+    .line 41
     invoke-static {}, Landroid/os/SystemClock;->uptimeMillis()J
 
     move-result-wide v7
 
+    .line 42
     iget-object v9, p0, Lcom/apm/insight/runtime/a/c;->a:Lcom/apm/insight/CrashType;
 
-    .line 41
     invoke-interface {v6, v9}, Lcom/apm/insight/AttachUserData;->getUserData(Lcom/apm/insight/CrashType;)Ljava/util/Map;
 
     move-result-object v9
 
-    .line 42
+    .line 43
     invoke-static {v5, v9}, Lcom/apm/insight/entity/a;->a(Lorg/json/JSONObject;Ljava/util/Map;)V
 
-    .line 43
+    .line 44
     new-instance v9, Ljava/lang/StringBuilder;
 
     invoke-direct {v9, v4}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
@@ -674,7 +673,7 @@
 
     move-result-object v6
 
-    .line 44
+    .line 45
     invoke-static {}, Landroid/os/SystemClock;->uptimeMillis()J
 
     move-result-wide v9
@@ -685,7 +684,7 @@
 
     move-result-object v7
 
-    .line 45
+    .line 46
     invoke-virtual {v1, v6, v7}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
     :try_end_2
     .catchall {:try_start_2 .. :try_end_2} :catchall_2
@@ -695,7 +694,7 @@
     :catchall_2
     move-exception v6
 
-    .line 46
+    .line 47
     invoke-static {v5, v6}, Lcom/apm/insight/entity/a;->a(Lorg/json/JSONObject;Ljava/lang/Throwable;)V
 
     :goto_5
@@ -703,7 +702,7 @@
 
     goto :goto_4
 
-    .line 47
+    .line 48
     :cond_8
     invoke-virtual {v1}, Ljava/util/HashMap;->entrySet()Ljava/util/Set;
 
@@ -726,7 +725,7 @@
 
     check-cast v0, Ljava/util/Map$Entry;
 
-    .line 48
+    .line 49
     :try_start_3
     invoke-interface {v0}, Ljava/util/Map$Entry;->getKey()Ljava/lang/Object;
 
@@ -749,7 +748,7 @@
 
     goto :goto_6
 
-    .line 49
+    .line 50
     :cond_9
     invoke-direct {p0, p2}, Lcom/apm/insight/runtime/a/c;->b(Lcom/apm/insight/entity/a;)Lcom/apm/insight/entity/a;
 
@@ -767,6 +766,14 @@
 
 .method public final a(Lcom/apm/insight/entity/a;Lcom/apm/insight/runtime/a/c$a;Z)Lcom/apm/insight/entity/a;
     .locals 7
+    .param p1    # Lcom/apm/insight/entity/a;
+        .annotation build Landroidx/annotation/Nullable;
+        .end annotation
+    .end param
+    .param p2    # Lcom/apm/insight/runtime/a/c$a;
+        .annotation build Landroidx/annotation/Nullable;
+        .end annotation
+    .end param
 
     if-nez p1, :cond_0
 
@@ -861,10 +868,10 @@
 
     invoke-direct {v0}, Lcom/apm/insight/entity/a;-><init>()V
 
+    .line 11
     :cond_3
     const-string v4, "step_cost_"
 
-    .line 11
     invoke-static {v1}, Ljava/lang/String;->valueOf(I)Ljava/lang/String;
 
     move-result-object v5

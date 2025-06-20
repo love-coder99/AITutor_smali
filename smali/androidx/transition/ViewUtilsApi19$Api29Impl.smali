@@ -31,7 +31,7 @@
     .locals 0
 
     .line 1
-    invoke-static {p0}, Landroidx/core/view/r1;->a(Landroid/view/View;)F
+    invoke-static {p0}, Landroidx/compose/ui/platform/v0;->b(Landroid/view/View;)F
 
     .line 2
     .line 3
@@ -46,7 +46,7 @@
     .locals 0
 
     .line 1
-    invoke-static {p0, p1}, Landroidx/core/view/r1;->l(Landroid/view/View;F)V
+    invoke-static {p0, p1}, Landroidx/compose/ui/platform/v0;->m(Landroid/view/View;F)V
 
     .line 2
     .line 3

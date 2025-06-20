@@ -64,7 +64,7 @@
     .locals 1
 
     .line 1
-    sget-object v0, Landroidx/compose/ui/input/pointer/p;->c:[Ljava/lang/StackTraceElement;
+    sget-object v0, Landroidx/compose/ui/input/pointer/l;->c:[Ljava/lang/StackTraceElement;
 
     .line 2
     .line 3

@@ -40,7 +40,7 @@
 .method public a()I
     .locals 1
 
-    .line 1
+    .line 13
     iget v0, p0, Lcom/applovin/impl/qc;->a:I
 
     return v0
@@ -51,13 +51,14 @@
 
     if-ltz p1, :cond_0
 
+    .line 4
     iget v0, p0, Lcom/applovin/impl/qc;->a:I
 
     if-ge p1, v0, :cond_0
 
+    .line 5
     iget-object v0, p0, Lcom/applovin/impl/qc;->b:[J
 
-    .line 5
     aget-wide v1, v0, p1
 
     return-wide v1
@@ -71,13 +72,13 @@
     const-string v2, ", size is "
 
     .line 7
-    invoke-static {v1, p1, v2}, Lj0/d;->q(Ljava/lang/String;ILjava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-static {p1, v1, v2}, LB/u;->y(ILjava/lang/String;Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object p1
 
+    .line 8
     iget v1, p0, Lcom/applovin/impl/qc;->a:I
 
-    .line 8
     invoke-virtual {p1, v1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
     invoke-virtual {p1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
@@ -92,24 +93,25 @@
 .method public a(J)V
     .locals 3
 
+    .line 1
     iget v0, p0, Lcom/applovin/impl/qc;->a:I
 
     iget-object v1, p0, Lcom/applovin/impl/qc;->b:[J
 
-    .line 2
     array-length v2, v1
 
     if-ne v0, v2, :cond_0
 
     mul-int/lit8 v0, v0, 0x2
 
-    .line 3
+    .line 2
     invoke-static {v1, v0}, Ljava/util/Arrays;->copyOf([JI)[J
 
     move-result-object v0
 
     iput-object v0, p0, Lcom/applovin/impl/qc;->b:[J
 
+    .line 3
     :cond_0
     iget-object v0, p0, Lcom/applovin/impl/qc;->b:[J
 
@@ -119,7 +121,6 @@
 
     iput v2, p0, Lcom/applovin/impl/qc;->a:I
 
-    .line 4
     aput-wide p1, v0, v1
 
     return-void

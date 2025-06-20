@@ -3,14 +3,14 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lzh/c;
+.implements Lka/c;
 
 
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "Lkotlin/jvm/internal/Lambda;",
-        "Lzh/c;"
+        "Lka/c;"
     }
 .end annotation
 
@@ -37,27 +37,27 @@
 
 
 # instance fields
-.field final synthetic this$0:Landroidx/collection/l0;
+.field final synthetic this$0:Landroidx/collection/J;
     .annotation system Ldalvik/annotation/Signature;
         value = {
-            "Landroidx/collection/l0;"
+            "Landroidx/collection/J;"
         }
     .end annotation
 .end field
 
 
 # direct methods
-.method public constructor <init>(Landroidx/collection/l0;)V
+.method public constructor <init>(Landroidx/collection/J;)V
     .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
-            "Landroidx/collection/l0;",
+            "Landroidx/collection/J;",
             ")V"
         }
     .end annotation
 
-    iput-object p1, p0, Landroidx/collection/ScatterSet$toString$1;->this$0:Landroidx/collection/l0;
+    iput-object p1, p0, Landroidx/collection/ScatterSet$toString$1;->this$0:Landroidx/collection/J;
 
     const/4 p1, 0x1
 
@@ -79,15 +79,17 @@
         }
     .end annotation
 
-    iget-object v0, p0, Landroidx/collection/ScatterSet$toString$1;->this$0:Landroidx/collection/l0;
+    .line 2
+    iget-object v0, p0, Landroidx/collection/ScatterSet$toString$1;->this$0:Landroidx/collection/J;
 
     if-ne p1, v0, :cond_0
 
+    .line 3
     const-string p1, "(this)"
 
     goto :goto_0
 
-    .line 2
+    .line 4
     :cond_0
     invoke-static {p1}, Ljava/lang/String;->valueOf(Ljava/lang/Object;)Ljava/lang/String;
 

@@ -25,16 +25,17 @@
 
     if-nez v0, :cond_0
 
+    .line 4
     const-string v0, "\n  "
 
-    .line 4
-    invoke-static {p0, v0}, Lj0/d;->s(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/StringBuilder;
+    .line 5
+    invoke-static {p0, v0}, LB/u;->z(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object p0
 
+    .line 6
     const-string v1, "\n"
 
-    .line 5
     invoke-virtual {p1, v1, v0}, Ljava/lang/String;->replace(Ljava/lang/CharSequence;Ljava/lang/CharSequence;)Ljava/lang/String;
 
     move-result-object p1
@@ -62,7 +63,7 @@
 
     return-object p0
 
-    .line 11
+    .line 12
     :cond_0
     invoke-static {p0}, Lcom/applovin/impl/oc;->b(Ljava/lang/Throwable;)Z
 
@@ -70,23 +71,25 @@
 
     if-eqz v0, :cond_1
 
+    .line 13
     const-string p0, "UnknownHostException (no network)"
 
     return-object p0
 
+    .line 14
     :cond_1
     sget-boolean v0, Lcom/applovin/impl/oc;->b:Z
 
     if-nez v0, :cond_2
 
-    .line 12
+    .line 15
     invoke-virtual {p0}, Ljava/lang/Throwable;->getMessage()Ljava/lang/String;
 
     move-result-object p0
 
     return-object p0
 
-    .line 13
+    .line 16
     :cond_2
     invoke-static {p0}, Landroid/util/Log;->getStackTraceString(Ljava/lang/Throwable;)Ljava/lang/String;
 
@@ -117,7 +120,7 @@
 .method public static a(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)V
     .locals 0
 
-    .line 10
+    .line 11
     invoke-static {p1, p2}, Lcom/applovin/impl/oc;->a(Ljava/lang/String;Ljava/lang/Throwable;)Ljava/lang/String;
 
     move-result-object p1

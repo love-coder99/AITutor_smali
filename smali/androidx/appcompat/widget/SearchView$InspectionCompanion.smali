@@ -53,9 +53,13 @@
 # virtual methods
 .method public mapProperties(Landroid/view/inspector/PropertyMapper;)V
     .locals 1
+    .param p1    # Landroid/view/inspector/PropertyMapper;
+        .annotation build Landroidx/annotation/NonNull;
+        .end annotation
+    .end param
 
     .line 1
-    invoke-static {p1}, Landroidx/appcompat/widget/a;->t(Landroid/view/inspector/PropertyMapper;)I
+    invoke-static {p1}, Landroidx/appcompat/widget/b;->x(Landroid/view/inspector/PropertyMapper;)I
 
     .line 2
     .line 3
@@ -67,7 +71,7 @@
 
     .line 6
     .line 7
-    invoke-static {p1}, Landroidx/appcompat/widget/a;->v(Landroid/view/inspector/PropertyMapper;)I
+    invoke-static {p1}, Landroidx/appcompat/widget/c;->a(Landroid/view/inspector/PropertyMapper;)I
 
     .line 8
     .line 9
@@ -79,11 +83,11 @@
 
     .line 12
     .line 13
-    sget v0, Lg/a;->iconifiedByDefault:I
+    sget v0, Li/a;->iconifiedByDefault:I
 
     .line 14
     .line 15
-    invoke-static {p1, v0}, Landroidx/appcompat/widget/a;->s(Landroid/view/inspector/PropertyMapper;I)I
+    invoke-static {p1, v0}, Landroidx/appcompat/widget/c;->b(Landroid/view/inspector/PropertyMapper;I)I
 
     .line 16
     .line 17
@@ -95,11 +99,11 @@
 
     .line 20
     .line 21
-    sget v0, Lg/a;->queryHint:I
+    sget v0, Li/a;->queryHint:I
 
     .line 22
     .line 23
-    invoke-static {p1, v0}, Landroidx/appcompat/widget/a;->u(Landroid/view/inspector/PropertyMapper;I)I
+    invoke-static {p1, v0}, Landroidx/appcompat/widget/c;->f(Landroid/view/inspector/PropertyMapper;I)I
 
     .line 24
     .line 25
@@ -123,54 +127,63 @@
 
 .method public readProperties(Landroidx/appcompat/widget/SearchView;Landroid/view/inspector/PropertyReader;)V
     .locals 2
+    .param p1    # Landroidx/appcompat/widget/SearchView;
+        .annotation build Landroidx/annotation/NonNull;
+        .end annotation
+    .end param
+    .param p2    # Landroid/view/inspector/PropertyReader;
+        .annotation build Landroidx/annotation/NonNull;
+        .end annotation
+    .end param
 
+    .line 2
     iget-boolean v0, p0, Landroidx/appcompat/widget/SearchView$InspectionCompanion;->mPropertiesMapped:Z
 
     if-eqz v0, :cond_0
 
+    .line 3
     iget v0, p0, Landroidx/appcompat/widget/SearchView$InspectionCompanion;->mImeOptionsId:I
 
-    .line 2
     invoke-virtual {p1}, Landroidx/appcompat/widget/SearchView;->getImeOptions()I
 
     move-result v1
 
-    invoke-static {p2, v0, v1}, La2/c;->h(Landroid/view/inspector/PropertyReader;II)V
+    invoke-static {p2, v0, v1}, LC0/b;->q(Landroid/view/inspector/PropertyReader;II)V
 
+    .line 4
     iget v0, p0, Landroidx/appcompat/widget/SearchView$InspectionCompanion;->mMaxWidthId:I
 
-    .line 3
     invoke-virtual {p1}, Landroidx/appcompat/widget/SearchView;->getMaxWidth()I
 
     move-result v1
 
-    invoke-static {p2, v0, v1}, La2/c;->h(Landroid/view/inspector/PropertyReader;II)V
+    invoke-static {p2, v0, v1}, LC0/b;->q(Landroid/view/inspector/PropertyReader;II)V
 
+    .line 5
     iget v0, p0, Landroidx/appcompat/widget/SearchView$InspectionCompanion;->mIconifiedByDefaultId:I
 
-    .line 4
     invoke-virtual {p1}, Landroidx/appcompat/widget/SearchView;->isIconfiedByDefault()Z
 
     move-result v1
 
-    invoke-static {p2, v0, v1}, Landroidx/appcompat/widget/a;->j(Landroid/view/inspector/PropertyReader;IZ)V
+    invoke-static {p2, v0, v1}, Landroidx/appcompat/widget/b;->k(Landroid/view/inspector/PropertyReader;IZ)V
 
+    .line 6
     iget v0, p0, Landroidx/appcompat/widget/SearchView$InspectionCompanion;->mQueryHintId:I
 
-    .line 5
     invoke-virtual {p1}, Landroidx/appcompat/widget/SearchView;->getQueryHint()Ljava/lang/CharSequence;
 
     move-result-object p1
 
     check-cast p1, Ljava/lang/CharSequence;
 
-    invoke-static {p2, v0, p1}, Landroidx/appcompat/widget/a;->i(Landroid/view/inspector/PropertyReader;ILjava/lang/CharSequence;)V
+    invoke-static {p2, v0, p1}, Landroidx/appcompat/widget/b;->j(Landroid/view/inspector/PropertyReader;ILjava/lang/CharSequence;)V
 
     return-void
 
-    .line 6
+    .line 7
     :cond_0
-    invoke-static {}, La2/c;->f()Landroid/view/inspector/InspectionCompanion$UninitializedPropertyMapException;
+    invoke-static {}, LC0/b;->e()Landroid/view/inspector/InspectionCompanion$UninitializedPropertyMapException;
 
     move-result-object p1
 
@@ -179,6 +192,14 @@
 
 .method public bridge synthetic readProperties(Ljava/lang/Object;Landroid/view/inspector/PropertyReader;)V
     .locals 0
+    .param p1    # Ljava/lang/Object;
+        .annotation build Landroidx/annotation/NonNull;
+        .end annotation
+    .end param
+    .param p2    # Landroid/view/inspector/PropertyReader;
+        .annotation build Landroidx/annotation/NonNull;
+        .end annotation
+    .end param
 
     .line 1
     check-cast p1, Landroidx/appcompat/widget/SearchView;

@@ -6,11 +6,11 @@
 # instance fields
 .field public final a:Landroidx/compose/ui/graphics/painter/b;
 
-.field public final b:Ln5/o;
+.field public final b:LH2/n;
 
 
 # direct methods
-.method public constructor <init>(Landroidx/compose/ui/graphics/painter/b;Ln5/o;)V
+.method public constructor <init>(Landroidx/compose/ui/graphics/painter/b;LH2/n;)V
     .locals 0
 
     .line 1
@@ -23,7 +23,7 @@
 
     .line 5
     .line 6
-    iput-object p2, p0, Lcoil/compose/f;->b:Ln5/o;
+    iput-object p2, p0, Lcoil/compose/f;->b:LH2/n;
 
     .line 7
     .line 8
@@ -38,6 +38,8 @@
     .line 1
     iget-object v0, p0, Lcoil/compose/f;->a:Landroidx/compose/ui/graphics/painter/b;
 
+    .line 2
+    .line 3
     return-object v0
 .end method
 
@@ -66,7 +68,7 @@
 
     iget-object v3, p0, Lcoil/compose/f;->a:Landroidx/compose/ui/graphics/painter/b;
 
-    invoke-static {v3, v1}, Lrb/h;->d(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v3, v1}, Lkotlin/jvm/internal/h;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result v1
 
@@ -75,11 +77,11 @@
     return v2
 
     :cond_2
-    iget-object v1, p0, Lcoil/compose/f;->b:Ln5/o;
+    iget-object v1, p0, Lcoil/compose/f;->b:LH2/n;
 
-    iget-object p1, p1, Lcoil/compose/f;->b:Ln5/o;
+    iget-object p1, p1, Lcoil/compose/f;->b:LH2/n;
 
-    invoke-static {v1, p1}, Lrb/h;->d(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v1, p1}, Lkotlin/jvm/internal/h;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result p1
 
@@ -102,9 +104,9 @@
 
     mul-int/lit8 v0, v0, 0x1f
 
-    iget-object v1, p0, Lcoil/compose/f;->b:Ln5/o;
+    iget-object v1, p0, Lcoil/compose/f;->b:LH2/n;
 
-    invoke-virtual {v1}, Ln5/o;->hashCode()I
+    invoke-virtual {v1}, LH2/n;->hashCode()I
 
     move-result v1
 
@@ -130,7 +132,7 @@
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget-object v1, p0, Lcoil/compose/f;->b:Ln5/o;
+    iget-object v1, p0, Lcoil/compose/f;->b:LH2/n;
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 

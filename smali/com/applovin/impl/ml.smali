@@ -86,9 +86,9 @@
 .method public a()Lcom/applovin/communicator/AppLovinCommunicatorSubscriber;
     .locals 1
 
+    .line 1
     iget-object v0, p0, Lcom/applovin/impl/ml;->c:Ljava/lang/ref/WeakReference;
 
-    .line 2
     invoke-virtual {v0}, Ljava/lang/ref/Reference;->get()Ljava/lang/Object;
 
     move-result-object v0
@@ -101,7 +101,7 @@
 .method public a(Z)V
     .locals 0
 
-    .line 1
+    .line 2
     iput-boolean p1, p0, Lcom/applovin/impl/ml;->a:Z
 
     return-void
@@ -110,16 +110,22 @@
 .method public b()Ljava/lang/String;
     .locals 1
 
+    .line 1
     iget-object v0, p0, Lcom/applovin/impl/ml;->b:Ljava/lang/String;
 
+    .line 2
+    .line 3
     return-object v0
 .end method
 
 .method public c()Z
     .locals 1
 
+    .line 1
     iget-boolean v0, p0, Lcom/applovin/impl/ml;->a:Z
 
+    .line 2
+    .line 3
     return v0
 .end method
 

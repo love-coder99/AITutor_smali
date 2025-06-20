@@ -42,6 +42,7 @@
         0x8,
         0x0
     }
+    xi = 0x30
 .end annotation
 
 
@@ -81,441 +82,444 @@
 
 # direct methods
 .method static constructor <clinit>()V
-    .locals 18
+    .locals 17
 
     .line 1
-    new-instance v0, Landroidx/compose/material3/tokens/TypographyKeyTokens;
+    const/16 v1, 0xd
 
     .line 2
     .line 3
-    const-string v1, "BodyLarge"
+    const/16 v2, 0xc
 
     .line 4
     .line 5
-    const/4 v2, 0x0
+    const/16 v3, 0xb
 
     .line 6
-    invoke-direct {v0, v1, v2}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
-
     .line 7
+    const/16 v4, 0xa
+
     .line 8
     .line 9
-    sput-object v0, Landroidx/compose/material3/tokens/TypographyKeyTokens;->BodyLarge:Landroidx/compose/material3/tokens/TypographyKeyTokens;
+    const/16 v5, 0x9
 
     .line 10
     .line 11
-    new-instance v1, Landroidx/compose/material3/tokens/TypographyKeyTokens;
+    const/16 v6, 0x8
 
     .line 12
     .line 13
-    const-string v3, "BodyMedium"
+    const/4 v7, 0x7
 
     .line 14
+    const/4 v8, 0x6
+
     .line 15
-    const/4 v4, 0x1
+    const/4 v9, 0x5
 
     .line 16
-    invoke-direct {v1, v3, v4}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
+    const/4 v10, 0x4
 
     .line 17
+    const/4 v11, 0x3
+
     .line 18
+    const/4 v12, 0x2
+
     .line 19
-    sput-object v1, Landroidx/compose/material3/tokens/TypographyKeyTokens;->BodyMedium:Landroidx/compose/material3/tokens/TypographyKeyTokens;
+    const/4 v13, 0x1
 
     .line 20
+    const/4 v14, 0x0
+
     .line 21
-    new-instance v3, Landroidx/compose/material3/tokens/TypographyKeyTokens;
+    new-instance v15, Landroidx/compose/material3/tokens/TypographyKeyTokens;
 
     .line 22
     .line 23
-    const-string v5, "BodySmall"
+    const-string v0, "BodyLarge"
 
     .line 24
     .line 25
-    const/4 v6, 0x2
+    invoke-direct {v15, v0, v14}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
 
     .line 26
-    invoke-direct {v3, v5, v6}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
-
     .line 27
     .line 28
+    sput-object v15, Landroidx/compose/material3/tokens/TypographyKeyTokens;->BodyLarge:Landroidx/compose/material3/tokens/TypographyKeyTokens;
+
     .line 29
-    sput-object v3, Landroidx/compose/material3/tokens/TypographyKeyTokens;->BodySmall:Landroidx/compose/material3/tokens/TypographyKeyTokens;
-
     .line 30
+    new-instance v0, Landroidx/compose/material3/tokens/TypographyKeyTokens;
+
     .line 31
-    new-instance v5, Landroidx/compose/material3/tokens/TypographyKeyTokens;
-
     .line 32
+    const-string v14, "BodyMedium"
+
     .line 33
-    const-string v7, "DisplayLarge"
-
     .line 34
+    invoke-direct {v0, v14, v13}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
+
     .line 35
-    const/4 v8, 0x3
-
     .line 36
-    invoke-direct {v5, v7, v8}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
-
     .line 37
+    sput-object v0, Landroidx/compose/material3/tokens/TypographyKeyTokens;->BodyMedium:Landroidx/compose/material3/tokens/TypographyKeyTokens;
+
     .line 38
     .line 39
-    sput-object v5, Landroidx/compose/material3/tokens/TypographyKeyTokens;->DisplayLarge:Landroidx/compose/material3/tokens/TypographyKeyTokens;
+    new-instance v14, Landroidx/compose/material3/tokens/TypographyKeyTokens;
 
     .line 40
     .line 41
-    new-instance v7, Landroidx/compose/material3/tokens/TypographyKeyTokens;
+    const-string v13, "BodySmall"
 
     .line 42
     .line 43
-    const-string v9, "DisplayMedium"
+    invoke-direct {v14, v13, v12}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
 
     .line 44
     .line 45
-    const/4 v10, 0x4
-
     .line 46
-    invoke-direct {v7, v9, v10}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
+    sput-object v14, Landroidx/compose/material3/tokens/TypographyKeyTokens;->BodySmall:Landroidx/compose/material3/tokens/TypographyKeyTokens;
 
     .line 47
     .line 48
+    new-instance v13, Landroidx/compose/material3/tokens/TypographyKeyTokens;
+
     .line 49
-    sput-object v7, Landroidx/compose/material3/tokens/TypographyKeyTokens;->DisplayMedium:Landroidx/compose/material3/tokens/TypographyKeyTokens;
-
     .line 50
+    const-string v12, "DisplayLarge"
+
     .line 51
-    new-instance v9, Landroidx/compose/material3/tokens/TypographyKeyTokens;
-
     .line 52
-    .line 53
-    const-string v11, "DisplaySmall"
+    invoke-direct {v13, v12, v11}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
 
+    .line 53
     .line 54
     .line 55
-    const/4 v12, 0x5
+    sput-object v13, Landroidx/compose/material3/tokens/TypographyKeyTokens;->DisplayLarge:Landroidx/compose/material3/tokens/TypographyKeyTokens;
 
     .line 56
-    invoke-direct {v9, v11, v12}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
-
     .line 57
+    new-instance v12, Landroidx/compose/material3/tokens/TypographyKeyTokens;
+
     .line 58
     .line 59
-    sput-object v9, Landroidx/compose/material3/tokens/TypographyKeyTokens;->DisplaySmall:Landroidx/compose/material3/tokens/TypographyKeyTokens;
+    const-string v11, "DisplayMedium"
 
     .line 60
     .line 61
-    new-instance v11, Landroidx/compose/material3/tokens/TypographyKeyTokens;
+    invoke-direct {v12, v11, v10}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
 
     .line 62
     .line 63
-    const-string v13, "HeadlineLarge"
-
     .line 64
-    .line 65
-    const/4 v14, 0x6
+    sput-object v12, Landroidx/compose/material3/tokens/TypographyKeyTokens;->DisplayMedium:Landroidx/compose/material3/tokens/TypographyKeyTokens;
 
+    .line 65
     .line 66
-    invoke-direct {v11, v13, v14}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
+    new-instance v11, Landroidx/compose/material3/tokens/TypographyKeyTokens;
 
     .line 67
     .line 68
+    const-string v10, "DisplaySmall"
+
     .line 69
-    sput-object v11, Landroidx/compose/material3/tokens/TypographyKeyTokens;->HeadlineLarge:Landroidx/compose/material3/tokens/TypographyKeyTokens;
-
     .line 70
-    .line 71
-    new-instance v13, Landroidx/compose/material3/tokens/TypographyKeyTokens;
+    invoke-direct {v11, v10, v9}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
 
+    .line 71
     .line 72
     .line 73
-    const-string v15, "HeadlineMedium"
+    sput-object v11, Landroidx/compose/material3/tokens/TypographyKeyTokens;->DisplaySmall:Landroidx/compose/material3/tokens/TypographyKeyTokens;
 
     .line 74
     .line 75
-    const/4 v14, 0x7
+    new-instance v10, Landroidx/compose/material3/tokens/TypographyKeyTokens;
 
     .line 76
-    invoke-direct {v13, v15, v14}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
-
     .line 77
+    const-string v9, "HeadlineLarge"
+
     .line 78
     .line 79
-    sput-object v13, Landroidx/compose/material3/tokens/TypographyKeyTokens;->HeadlineMedium:Landroidx/compose/material3/tokens/TypographyKeyTokens;
+    invoke-direct {v10, v9, v8}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
 
     .line 80
     .line 81
-    new-instance v15, Landroidx/compose/material3/tokens/TypographyKeyTokens;
-
     .line 82
+    sput-object v10, Landroidx/compose/material3/tokens/TypographyKeyTokens;->HeadlineLarge:Landroidx/compose/material3/tokens/TypographyKeyTokens;
+
     .line 83
-    const-string v14, "HeadlineSmall"
-
     .line 84
+    new-instance v9, Landroidx/compose/material3/tokens/TypographyKeyTokens;
+
     .line 85
-    const/16 v12, 0x8
-
     .line 86
-    .line 87
-    invoke-direct {v15, v14, v12}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
+    const-string v8, "HeadlineMedium"
 
+    .line 87
     .line 88
+    invoke-direct {v9, v8, v7}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
+
     .line 89
     .line 90
-    sput-object v15, Landroidx/compose/material3/tokens/TypographyKeyTokens;->HeadlineSmall:Landroidx/compose/material3/tokens/TypographyKeyTokens;
-
     .line 91
+    sput-object v9, Landroidx/compose/material3/tokens/TypographyKeyTokens;->HeadlineMedium:Landroidx/compose/material3/tokens/TypographyKeyTokens;
+
     .line 92
-    new-instance v14, Landroidx/compose/material3/tokens/TypographyKeyTokens;
-
     .line 93
+    new-instance v8, Landroidx/compose/material3/tokens/TypographyKeyTokens;
+
     .line 94
-    const-string v12, "LabelLarge"
-
     .line 95
+    const-string v7, "HeadlineSmall"
+
     .line 96
-    const/16 v10, 0x9
-
     .line 97
-    .line 98
-    invoke-direct {v14, v12, v10}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
+    invoke-direct {v8, v7, v6}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
 
+    .line 98
     .line 99
     .line 100
+    sput-object v8, Landroidx/compose/material3/tokens/TypographyKeyTokens;->HeadlineSmall:Landroidx/compose/material3/tokens/TypographyKeyTokens;
+
     .line 101
-    sput-object v14, Landroidx/compose/material3/tokens/TypographyKeyTokens;->LabelLarge:Landroidx/compose/material3/tokens/TypographyKeyTokens;
-
     .line 102
+    new-instance v7, Landroidx/compose/material3/tokens/TypographyKeyTokens;
+
     .line 103
-    new-instance v12, Landroidx/compose/material3/tokens/TypographyKeyTokens;
-
     .line 104
+    const-string v6, "LabelLarge"
+
     .line 105
-    const-string v10, "LabelMedium"
-
     .line 106
-    .line 107
-    const/16 v8, 0xa
+    invoke-direct {v7, v6, v5}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
 
+    .line 107
     .line 108
     .line 109
-    invoke-direct {v12, v10, v8}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
+    sput-object v7, Landroidx/compose/material3/tokens/TypographyKeyTokens;->LabelLarge:Landroidx/compose/material3/tokens/TypographyKeyTokens;
 
     .line 110
     .line 111
+    new-instance v6, Landroidx/compose/material3/tokens/TypographyKeyTokens;
+
     .line 112
-    sput-object v12, Landroidx/compose/material3/tokens/TypographyKeyTokens;->LabelMedium:Landroidx/compose/material3/tokens/TypographyKeyTokens;
-
     .line 113
+    const-string v5, "LabelMedium"
+
     .line 114
-    new-instance v10, Landroidx/compose/material3/tokens/TypographyKeyTokens;
-
     .line 115
-    .line 116
-    const-string v8, "LabelSmall"
+    invoke-direct {v6, v5, v4}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
 
+    .line 116
     .line 117
     .line 118
-    const/16 v6, 0xb
+    sput-object v6, Landroidx/compose/material3/tokens/TypographyKeyTokens;->LabelMedium:Landroidx/compose/material3/tokens/TypographyKeyTokens;
 
     .line 119
     .line 120
-    invoke-direct {v10, v8, v6}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
+    new-instance v5, Landroidx/compose/material3/tokens/TypographyKeyTokens;
 
     .line 121
     .line 122
+    const-string v4, "LabelSmall"
+
     .line 123
-    sput-object v10, Landroidx/compose/material3/tokens/TypographyKeyTokens;->LabelSmall:Landroidx/compose/material3/tokens/TypographyKeyTokens;
-
     .line 124
-    .line 125
-    new-instance v8, Landroidx/compose/material3/tokens/TypographyKeyTokens;
+    invoke-direct {v5, v4, v3}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
 
+    .line 125
     .line 126
     .line 127
-    const-string v6, "TitleLarge"
+    sput-object v5, Landroidx/compose/material3/tokens/TypographyKeyTokens;->LabelSmall:Landroidx/compose/material3/tokens/TypographyKeyTokens;
 
     .line 128
     .line 129
-    const/16 v4, 0xc
+    new-instance v4, Landroidx/compose/material3/tokens/TypographyKeyTokens;
 
     .line 130
     .line 131
-    invoke-direct {v8, v6, v4}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
+    const-string v3, "TitleLarge"
 
     .line 132
     .line 133
-    .line 134
-    sput-object v8, Landroidx/compose/material3/tokens/TypographyKeyTokens;->TitleLarge:Landroidx/compose/material3/tokens/TypographyKeyTokens;
+    invoke-direct {v4, v3, v2}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
 
+    .line 134
     .line 135
     .line 136
-    new-instance v6, Landroidx/compose/material3/tokens/TypographyKeyTokens;
+    sput-object v4, Landroidx/compose/material3/tokens/TypographyKeyTokens;->TitleLarge:Landroidx/compose/material3/tokens/TypographyKeyTokens;
 
     .line 137
     .line 138
-    const-string v4, "TitleMedium"
+    new-instance v3, Landroidx/compose/material3/tokens/TypographyKeyTokens;
 
     .line 139
     .line 140
-    const/16 v2, 0xd
+    const-string v2, "TitleMedium"
 
     .line 141
     .line 142
-    invoke-direct {v6, v4, v2}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
+    invoke-direct {v3, v2, v1}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
 
     .line 143
     .line 144
     .line 145
-    sput-object v6, Landroidx/compose/material3/tokens/TypographyKeyTokens;->TitleMedium:Landroidx/compose/material3/tokens/TypographyKeyTokens;
+    sput-object v3, Landroidx/compose/material3/tokens/TypographyKeyTokens;->TitleMedium:Landroidx/compose/material3/tokens/TypographyKeyTokens;
 
     .line 146
     .line 147
-    new-instance v4, Landroidx/compose/material3/tokens/TypographyKeyTokens;
+    new-instance v2, Landroidx/compose/material3/tokens/TypographyKeyTokens;
 
     .line 148
     .line 149
-    const-string v2, "TitleSmall"
+    const-string v1, "TitleSmall"
 
     .line 150
     .line 151
-    move-object/from16 v17, v6
+    move-object/from16 v16, v3
 
     .line 152
     .line 153
-    const/16 v6, 0xe
+    const/16 v3, 0xe
 
     .line 154
     .line 155
-    invoke-direct {v4, v2, v6}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
+    invoke-direct {v2, v1, v3}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
 
     .line 156
     .line 157
     .line 158
-    sput-object v4, Landroidx/compose/material3/tokens/TypographyKeyTokens;->TitleSmall:Landroidx/compose/material3/tokens/TypographyKeyTokens;
+    sput-object v2, Landroidx/compose/material3/tokens/TypographyKeyTokens;->TitleSmall:Landroidx/compose/material3/tokens/TypographyKeyTokens;
 
     .line 159
     .line 160
-    const/16 v2, 0xf
+    const/16 v1, 0xf
 
     .line 161
     .line 162
-    new-array v2, v2, [Landroidx/compose/material3/tokens/TypographyKeyTokens;
+    new-array v1, v1, [Landroidx/compose/material3/tokens/TypographyKeyTokens;
 
     .line 163
     .line 164
-    const/16 v16, 0x0
+    const/4 v3, 0x0
 
     .line 165
-    .line 166
-    aput-object v0, v2, v16
+    aput-object v15, v1, v3
 
+    .line 166
     .line 167
+    const/4 v3, 0x1
+
     .line 168
-    const/4 v0, 0x1
+    aput-object v0, v1, v3
 
     .line 169
-    aput-object v1, v2, v0
-
     .line 170
-    .line 171
     const/4 v0, 0x2
 
-    .line 172
-    aput-object v3, v2, v0
+    .line 171
+    aput-object v14, v1, v0
 
+    .line 172
     .line 173
-    .line 174
     const/4 v0, 0x3
 
-    .line 175
-    aput-object v5, v2, v0
+    .line 174
+    aput-object v13, v1, v0
 
+    .line 175
     .line 176
-    .line 177
     const/4 v0, 0x4
 
-    .line 178
-    aput-object v7, v2, v0
+    .line 177
+    aput-object v12, v1, v0
 
+    .line 178
     .line 179
-    .line 180
     const/4 v0, 0x5
 
-    .line 181
-    aput-object v9, v2, v0
+    .line 180
+    aput-object v11, v1, v0
 
+    .line 181
     .line 182
-    .line 183
     const/4 v0, 0x6
 
-    .line 184
-    aput-object v11, v2, v0
+    .line 183
+    aput-object v10, v1, v0
 
+    .line 184
     .line 185
-    .line 186
     const/4 v0, 0x7
 
-    .line 187
-    aput-object v13, v2, v0
+    .line 186
+    aput-object v9, v1, v0
 
+    .line 187
     .line 188
-    .line 189
     const/16 v0, 0x8
 
+    .line 189
     .line 190
-    .line 191
-    aput-object v15, v2, v0
+    aput-object v8, v1, v0
 
+    .line 191
     .line 192
-    .line 193
     const/16 v0, 0x9
 
+    .line 193
     .line 194
-    .line 195
-    aput-object v14, v2, v0
+    aput-object v7, v1, v0
 
+    .line 195
     .line 196
-    .line 197
     const/16 v0, 0xa
 
+    .line 197
     .line 198
-    .line 199
-    aput-object v12, v2, v0
+    aput-object v6, v1, v0
 
+    .line 199
     .line 200
-    .line 201
     const/16 v0, 0xb
 
+    .line 201
     .line 202
-    .line 203
-    aput-object v10, v2, v0
+    aput-object v5, v1, v0
 
+    .line 203
     .line 204
-    .line 205
     const/16 v0, 0xc
 
+    .line 205
     .line 206
-    .line 207
-    aput-object v8, v2, v0
+    aput-object v4, v1, v0
 
+    .line 207
     .line 208
-    .line 209
     const/16 v0, 0xd
 
+    .line 209
     .line 210
+    aput-object v16, v1, v0
+
     .line 211
-    aput-object v17, v2, v0
-
     .line 212
+    const/16 v0, 0xe
+
     .line 213
-    aput-object v4, v2, v6
-
     .line 214
-    .line 215
-    sput-object v2, Landroidx/compose/material3/tokens/TypographyKeyTokens;->b:[Landroidx/compose/material3/tokens/TypographyKeyTokens;
+    aput-object v2, v1, v0
 
+    .line 215
     .line 216
+    sput-object v1, Landroidx/compose/material3/tokens/TypographyKeyTokens;->b:[Landroidx/compose/material3/tokens/TypographyKeyTokens;
+
     .line 217
+    .line 218
     return-void
 .end method
 

@@ -158,15 +158,17 @@
     .line 1
     invoke-direct {p0}, Landroidx/transition/Visibility;-><init>()V
 
+    .line 2
     sget-object v0, Landroidx/transition/Slide;->sCalculateBottom:Landroidx/transition/Slide$CalculateSlide;
 
     iput-object v0, p0, Landroidx/transition/Slide;->mSlideCalculator:Landroidx/transition/Slide$CalculateSlide;
 
     const/16 v0, 0x50
 
+    .line 3
     iput v0, p0, Landroidx/transition/Slide;->mSlideEdge:I
 
-    .line 2
+    .line 4
     invoke-virtual {p0, v0}, Landroidx/transition/Slide;->setSlideEdge(I)V
 
     return-void
@@ -175,18 +177,20 @@
 .method public constructor <init>(I)V
     .locals 1
 
-    .line 3
+    .line 5
     invoke-direct {p0}, Landroidx/transition/Visibility;-><init>()V
 
+    .line 6
     sget-object v0, Landroidx/transition/Slide;->sCalculateBottom:Landroidx/transition/Slide$CalculateSlide;
 
     iput-object v0, p0, Landroidx/transition/Slide;->mSlideCalculator:Landroidx/transition/Slide$CalculateSlide;
 
     const/16 v0, 0x50
 
+    .line 7
     iput v0, p0, Landroidx/transition/Slide;->mSlideEdge:I
 
-    .line 4
+    .line 8
     invoke-virtual {p0, p1}, Landroidx/transition/Slide;->setSlideEdge(I)V
 
     return-void
@@ -194,40 +198,50 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
     .locals 3
+    .param p1    # Landroid/content/Context;
+        .annotation build Landroidx/annotation/NonNull;
+        .end annotation
+    .end param
+    .param p2    # Landroid/util/AttributeSet;
+        .annotation build Landroidx/annotation/NonNull;
+        .end annotation
+    .end param
 
-    .line 5
+    .line 9
     invoke-direct {p0, p1, p2}, Landroidx/transition/Visibility;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
 
+    .line 10
     sget-object v0, Landroidx/transition/Slide;->sCalculateBottom:Landroidx/transition/Slide$CalculateSlide;
 
     iput-object v0, p0, Landroidx/transition/Slide;->mSlideCalculator:Landroidx/transition/Slide$CalculateSlide;
 
     const/16 v0, 0x50
 
+    .line 11
     iput v0, p0, Landroidx/transition/Slide;->mSlideEdge:I
 
+    .line 12
     sget-object v1, Landroidx/transition/Styleable;->SLIDE:[I
 
-    .line 6
     invoke-virtual {p1, p2, v1}, Landroid/content/Context;->obtainStyledAttributes(Landroid/util/AttributeSet;[I)Landroid/content/res/TypedArray;
 
     move-result-object p1
 
-    .line 7
+    .line 13
     check-cast p2, Lorg/xmlpull/v1/XmlPullParser;
 
     const-string v1, "slideEdge"
 
     const/4 v2, 0x0
 
-    invoke-static {p1, p2, v1, v2, v0}, Lnc/b;->m(Landroid/content/res/TypedArray;Lorg/xmlpull/v1/XmlPullParser;Ljava/lang/String;II)I
+    invoke-static {p1, p2, v1, v2, v0}, Lk1/a;->c(Landroid/content/res/TypedArray;Lorg/xmlpull/v1/XmlPullParser;Ljava/lang/String;II)I
 
     move-result p2
 
-    .line 8
+    .line 14
     invoke-virtual {p1}, Landroid/content/res/TypedArray;->recycle()V
 
-    .line 9
+    .line 15
     invoke-virtual {p0, p2}, Landroidx/transition/Slide;->setSlideEdge(I)V
 
     return-void
@@ -273,6 +287,10 @@
 # virtual methods
 .method public captureEndValues(Landroidx/transition/TransitionValues;)V
     .locals 0
+    .param p1    # Landroidx/transition/TransitionValues;
+        .annotation build Landroidx/annotation/NonNull;
+        .end annotation
+    .end param
 
     .line 1
     invoke-super {p0, p1}, Landroidx/transition/Visibility;->captureEndValues(Landroidx/transition/TransitionValues;)V
@@ -290,6 +308,10 @@
 
 .method public captureStartValues(Landroidx/transition/TransitionValues;)V
     .locals 0
+    .param p1    # Landroidx/transition/TransitionValues;
+        .annotation build Landroidx/annotation/NonNull;
+        .end annotation
+    .end param
 
     .line 1
     invoke-super {p0, p1}, Landroidx/transition/Visibility;->captureStartValues(Landroidx/transition/TransitionValues;)V
@@ -308,8 +330,11 @@
 .method public getSlideEdge()I
     .locals 1
 
+    .line 1
     iget v0, p0, Landroidx/transition/Slide;->mSlideEdge:I
 
+    .line 2
+    .line 3
     return v0
 .end method
 
@@ -323,6 +348,24 @@
 
 .method public onAppear(Landroid/view/ViewGroup;Landroid/view/View;Landroidx/transition/TransitionValues;Landroidx/transition/TransitionValues;)Landroid/animation/Animator;
     .locals 10
+    .param p1    # Landroid/view/ViewGroup;
+        .annotation build Landroidx/annotation/NonNull;
+        .end annotation
+    .end param
+    .param p2    # Landroid/view/View;
+        .annotation build Landroidx/annotation/NonNull;
+        .end annotation
+    .end param
+    .param p3    # Landroidx/transition/TransitionValues;
+        .annotation build Landroidx/annotation/Nullable;
+        .end annotation
+    .end param
+    .param p4    # Landroidx/transition/TransitionValues;
+        .annotation build Landroidx/annotation/Nullable;
+        .end annotation
+    .end param
+    .annotation build Landroidx/annotation/Nullable;
+    .end annotation
 
     .line 1
     if-nez p4, :cond_0
@@ -436,6 +479,24 @@
 
 .method public onDisappear(Landroid/view/ViewGroup;Landroid/view/View;Landroidx/transition/TransitionValues;Landroidx/transition/TransitionValues;)Landroid/animation/Animator;
     .locals 10
+    .param p1    # Landroid/view/ViewGroup;
+        .annotation build Landroidx/annotation/NonNull;
+        .end annotation
+    .end param
+    .param p2    # Landroid/view/View;
+        .annotation build Landroidx/annotation/NonNull;
+        .end annotation
+    .end param
+    .param p3    # Landroidx/transition/TransitionValues;
+        .annotation build Landroidx/annotation/Nullable;
+        .end annotation
+    .end param
+    .param p4    # Landroidx/transition/TransitionValues;
+        .annotation build Landroidx/annotation/Nullable;
+        .end annotation
+    .end param
+    .annotation build Landroidx/annotation/Nullable;
+    .end annotation
 
     .line 1
     if-nez p3, :cond_0

@@ -57,9 +57,10 @@
 
     if-nez v0, :cond_0
 
+    .line 3
     const-string v0, "core_exception_monitor"
 
-    .line 3
+    .line 4
     invoke-static {p0, p1, v0}, Lcom/apm/insight/f/b;->a(Ljava/lang/Throwable;Ljava/lang/String;Ljava/lang/String;)V
 
     :cond_0

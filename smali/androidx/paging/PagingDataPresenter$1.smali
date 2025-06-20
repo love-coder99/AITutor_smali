@@ -3,14 +3,14 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lzh/a;
+.implements Lka/a;
 
 
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "Lkotlin/jvm/internal/Lambda;",
-        "Lzh/a;"
+        "Lka/a;"
     }
 .end annotation
 
@@ -21,7 +21,7 @@
     d2 = {
         "",
         "T",
-        "Lqh/r;",
+        "LX9/j;",
         "invoke",
         "()V",
         "<anonymous>"
@@ -36,27 +36,27 @@
 
 
 # instance fields
-.field final synthetic this$0:Landroidx/paging/k1;
+.field final synthetic this$0:Landroidx/paging/m0;
     .annotation system Ldalvik/annotation/Signature;
         value = {
-            "Landroidx/paging/k1;"
+            "Landroidx/paging/m0;"
         }
     .end annotation
 .end field
 
 
 # direct methods
-.method public constructor <init>(Landroidx/paging/k1;)V
+.method public constructor <init>(Landroidx/paging/m0;)V
     .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
-            "Landroidx/paging/k1;",
+            "Landroidx/paging/m0;",
             ")V"
         }
     .end annotation
 
-    iput-object p1, p0, Landroidx/paging/PagingDataPresenter$1;->this$0:Landroidx/paging/k1;
+    iput-object p1, p0, Landroidx/paging/PagingDataPresenter$1;->this$0:Landroidx/paging/m0;
 
     const/4 p1, 0x0
 
@@ -70,10 +70,10 @@
 .method public bridge synthetic invoke()Ljava/lang/Object;
     .locals 1
 
-    .line 3
+    .line 1
     invoke-virtual {p0}, Landroidx/paging/PagingDataPresenter$1;->invoke()V
 
-    sget-object v0, Lqh/r;->a:Lqh/r;
+    sget-object v0, LX9/j;->a:LX9/j;
 
     return-object v0
 .end method
@@ -81,15 +81,16 @@
 .method public final invoke()V
     .locals 2
 
-    iget-object v0, p0, Landroidx/paging/PagingDataPresenter$1;->this$0:Landroidx/paging/k1;
-
-    .line 1
-    iget-object v0, v0, Landroidx/paging/k1;->k:Lkotlinx/coroutines/flow/m0;
-
-    sget-object v1, Lqh/r;->a:Lqh/r;
-
     .line 2
-    invoke-virtual {v0, v1}, Lkotlinx/coroutines/flow/m0;->d(Ljava/lang/Object;)Z
+    iget-object v0, p0, Landroidx/paging/PagingDataPresenter$1;->this$0:Landroidx/paging/m0;
+
+    .line 3
+    iget-object v0, v0, Landroidx/paging/m0;->l:Lkotlinx/coroutines/flow/K;
+
+    .line 4
+    sget-object v1, LX9/j;->a:LX9/j;
+
+    invoke-virtual {v0, v1}, Lkotlinx/coroutines/flow/K;->d(Ljava/lang/Object;)Z
 
     return-void
 .end method

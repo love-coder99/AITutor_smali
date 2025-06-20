@@ -3,28 +3,38 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lzh/e;
+.implements Lka/e;
 
 
 # annotations
+.annotation runtime Lca/c;
+    c = "androidx.paging.CachedPageEventFlow$downstreamFlow$1"
+    f = "CachedPageEventFlow.kt"
+    l = {
+        0x66
+    }
+    m = "invokeSuspend"
+.end annotation
+
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "Lkotlin/coroutines/jvm/internal/SuspendLambda;",
-        "Lzh/e;"
+        "Lka/e;"
     }
 .end annotation
 
 .annotation runtime Lkotlin/Metadata;
     d1 = {
-        "\u0000\u0014\n\u0002\u0010\u0000\n\u0000\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\u0010\u0005\u001a\u00020\u0004\"\u0008\u0008\u0000\u0010\u0001*\u00020\u0000*\u000e\u0012\n\u0012\u0008\u0012\u0004\u0012\u00028\u00000\u00030\u0002H\u008a@"
+        "\u0000\u0016\n\u0002\u0010\u0000\n\u0000\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0008\u0002\u0010\u0005\u001a\u00020\u0004\"\u0008\u0008\u0000\u0010\u0001*\u00020\u0000*\u000e\u0012\n\u0012\u0008\u0012\u0004\u0012\u00028\u00000\u00030\u0002H\u008a@\u00a2\u0006\u0004\u0008\u0005\u0010\u0006"
     }
     d2 = {
         "",
         "T",
-        "Lkotlinx/coroutines/flow/i;",
-        "Landroidx/paging/l0;",
-        "Lqh/r;",
-        "<anonymous>"
+        "Lkotlinx/coroutines/flow/g;",
+        "Landroidx/paging/J;",
+        "LX9/j;",
+        "<anonymous>",
+        "(Lkotlinx/coroutines/flow/g;)V"
     }
     k = 0x3
     mv = {
@@ -32,15 +42,6 @@
         0x8,
         0x0
     }
-.end annotation
-
-.annotation runtime Lth/c;
-    c = "androidx.paging.CachedPageEventFlow$downstreamFlow$1"
-    f = "CachedPageEventFlow.kt"
-    l = {
-        0x66
-    }
-    m = "invokeSuspend"
 .end annotation
 
 
@@ -92,7 +93,7 @@
             "Lkotlin/coroutines/Continuation<",
             "*>;)",
             "Lkotlin/coroutines/Continuation<",
-            "Lqh/r;",
+            "LX9/j;",
             ">;"
         }
     .end annotation
@@ -112,26 +113,26 @@
     .locals 0
 
     .line 1
-    check-cast p1, Lkotlinx/coroutines/flow/i;
+    check-cast p1, Lkotlinx/coroutines/flow/g;
 
     check-cast p2, Lkotlin/coroutines/Continuation;
 
-    invoke-virtual {p0, p1, p2}, Landroidx/paging/CachedPageEventFlow$downstreamFlow$1;->invoke(Lkotlinx/coroutines/flow/i;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
+    invoke-virtual {p0, p1, p2}, Landroidx/paging/CachedPageEventFlow$downstreamFlow$1;->invoke(Lkotlinx/coroutines/flow/g;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
 
     move-result-object p1
 
     return-object p1
 .end method
 
-.method public final invoke(Lkotlinx/coroutines/flow/i;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
+.method public final invoke(Lkotlinx/coroutines/flow/g;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
     .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
-            "Lkotlinx/coroutines/flow/i;",
+            "Lkotlinx/coroutines/flow/g;",
             "Lkotlin/coroutines/Continuation<",
             "-",
-            "Lqh/r;",
+            "LX9/j;",
             ">;)",
             "Ljava/lang/Object;"
         }
@@ -144,7 +145,7 @@
 
     check-cast p1, Landroidx/paging/CachedPageEventFlow$downstreamFlow$1;
 
-    sget-object p2, Lqh/r;->a:Lqh/r;
+    sget-object p2, LX9/j;->a:LX9/j;
 
     invoke-virtual {p1, p2}, Landroidx/paging/CachedPageEventFlow$downstreamFlow$1;->invokeSuspend(Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -211,7 +212,7 @@
 
     .line 26
     .line 27
-    check-cast p1, Lkotlinx/coroutines/flow/i;
+    check-cast p1, Lkotlinx/coroutines/flow/g;
 
     .line 28
     .line 29
@@ -236,7 +237,7 @@
 
     .line 39
     .line 40
-    iget-object v3, v3, Landroidx/paging/d;->c:Lkotlinx/coroutines/flow/y0;
+    iget-object v3, v3, Landroidx/paging/d;->c:Lkotlinx/coroutines/flow/W;
 
     .line 41
     .line 42
@@ -252,11 +253,11 @@
     .line 46
     .line 47
     .line 48
-    new-instance v5, Lkotlinx/coroutines/flow/u;
+    new-instance v5, Lkotlinx/coroutines/flow/s;
 
     .line 49
     .line 50
-    invoke-direct {v5, v4, v3}, Lkotlinx/coroutines/flow/u;-><init>(Lzh/e;Lkotlinx/coroutines/flow/y0;)V
+    invoke-direct {v5, v4, v3}, Lkotlinx/coroutines/flow/s;-><init>(Lka/e;Lkotlinx/coroutines/flow/f;)V
 
     .line 51
     .line 52
@@ -265,7 +266,7 @@
 
     .line 54
     .line 55
-    invoke-direct {v3, v1, p1}, Landroidx/paging/b;-><init>(Lkotlin/jvm/internal/Ref$IntRef;Lkotlinx/coroutines/flow/i;)V
+    invoke-direct {v3, v1, p1}, Landroidx/paging/b;-><init>(Lkotlin/jvm/internal/Ref$IntRef;Lkotlinx/coroutines/flow/g;)V
 
     .line 56
     .line 57
@@ -274,7 +275,7 @@
 
     .line 59
     .line 60
-    invoke-virtual {v5, v3, p0}, Lkotlinx/coroutines/flow/u;->b(Lkotlinx/coroutines/flow/i;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
+    invoke-virtual {v5, v3, p0}, Lkotlinx/coroutines/flow/s;->b(Lkotlinx/coroutines/flow/g;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
 
     .line 61
     .line 62
@@ -291,7 +292,7 @@
     .line 67
     :cond_2
     :goto_0
-    sget-object p1, Lqh/r;->a:Lqh/r;
+    sget-object p1, LX9/j;->a:LX9/j;
 
     .line 68
     .line 69

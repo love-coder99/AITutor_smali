@@ -59,6 +59,7 @@
 .method public a([BII)V
     .locals 3
 
+    .line 1
     iget-boolean v0, p0, Lcom/applovin/impl/xf;->b:Z
 
     if-nez v0, :cond_0
@@ -68,9 +69,9 @@
     :cond_0
     sub-int/2addr p3, p2
 
+    .line 2
     iget-object v0, p0, Lcom/applovin/impl/xf;->d:[B
 
-    .line 3
     array-length v1, v0
 
     iget v2, p0, Lcom/applovin/impl/xf;->e:I
@@ -81,21 +82,22 @@
 
     mul-int/lit8 v2, v2, 0x2
 
-    .line 4
+    .line 3
     invoke-static {v0, v2}, Ljava/util/Arrays;->copyOf([BI)[B
 
     move-result-object v0
 
     iput-object v0, p0, Lcom/applovin/impl/xf;->d:[B
 
+    .line 4
     :cond_1
     iget-object v0, p0, Lcom/applovin/impl/xf;->d:[B
 
     iget v1, p0, Lcom/applovin/impl/xf;->e:I
 
-    .line 5
     invoke-static {p1, p2, v0, v1, p3}, Ljava/lang/System;->arraycopy(Ljava/lang/Object;ILjava/lang/Object;II)V
 
+    .line 5
     iget p1, p0, Lcom/applovin/impl/xf;->e:I
 
     add-int/2addr p1, p3
@@ -108,7 +110,7 @@
 .method public a()Z
     .locals 1
 
-    .line 1
+    .line 10
     iget-boolean v0, p0, Lcom/applovin/impl/xf;->c:Z
 
     return v0
@@ -117,7 +119,7 @@
 .method public a(I)Z
     .locals 2
 
-    .line 2
+    .line 6
     iget-boolean v0, p0, Lcom/applovin/impl/xf;->b:Z
 
     const/4 v1, 0x0
@@ -126,6 +128,7 @@
 
     return v1
 
+    .line 7
     :cond_0
     iget v0, p0, Lcom/applovin/impl/xf;->e:I
 
@@ -133,10 +136,12 @@
 
     iput v0, p0, Lcom/applovin/impl/xf;->e:I
 
+    .line 8
     iput-boolean v1, p0, Lcom/applovin/impl/xf;->b:Z
 
     const/4 p1, 0x1
 
+    .line 9
     iput-boolean p1, p0, Lcom/applovin/impl/xf;->c:Z
 
     return p1
@@ -145,11 +150,12 @@
 .method public b()V
     .locals 1
 
-    .line 1
     const/4 v0, 0x0
 
+    .line 1
     iput-boolean v0, p0, Lcom/applovin/impl/xf;->b:Z
 
+    .line 2
     iput-boolean v0, p0, Lcom/applovin/impl/xf;->c:Z
 
     return-void
@@ -158,15 +164,16 @@
 .method public b(I)V
     .locals 3
 
+    .line 3
     iget-boolean v0, p0, Lcom/applovin/impl/xf;->b:Z
 
     const/4 v1, 0x1
 
     xor-int/2addr v0, v1
 
-    .line 2
     invoke-static {v0}, Lcom/applovin/impl/b1;->b(Z)V
 
+    .line 4
     iget v0, p0, Lcom/applovin/impl/xf;->a:I
 
     const/4 v2, 0x0
@@ -185,8 +192,10 @@
 
     const/4 p1, 0x3
 
+    .line 5
     iput p1, p0, Lcom/applovin/impl/xf;->e:I
 
+    .line 6
     iput-boolean v2, p0, Lcom/applovin/impl/xf;->c:Z
 
     :cond_1

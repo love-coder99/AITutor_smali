@@ -125,7 +125,7 @@
 
     .line 51
     .line 52
-    invoke-static {p1, p2}, Landroidx/compose/foundation/text/modifiers/f;->v(Lorg/json/JSONObject;Ljava/lang/String;)Lorg/json/JSONArray;
+    invoke-static {p2, p1}, Lcom/android/billingclient/api/a;->h(Ljava/lang/String;Lorg/json/JSONObject;)Lorg/json/JSONArray;
 
     .line 53
     .line 54
@@ -214,41 +214,58 @@
 .method public a()Lcom/applovin/impl/cg;
     .locals 1
 
+    .line 1
     iget-object v0, p0, Lcom/applovin/impl/ir;->b:Lcom/applovin/impl/cg;
 
+    .line 2
+    .line 3
     return-object v0
 .end method
 
 .method public b()Lcom/applovin/impl/ic;
     .locals 1
 
+    .line 1
     iget-object v0, p0, Lcom/applovin/impl/ir;->a:Lcom/applovin/impl/ic;
 
+    .line 2
+    .line 3
     return-object v0
 .end method
 
 .method public c()Ljava/util/List;
     .locals 1
 
+    .line 1
     iget-object v0, p0, Lcom/applovin/impl/ir;->c:Ljava/util/List;
 
+    .line 2
+    .line 3
     return-object v0
 .end method
 
 .method public d()Z
     .locals 1
 
+    .line 1
     iget-object v0, p0, Lcom/applovin/impl/ir;->b:Lcom/applovin/impl/cg;
 
+    .line 2
+    .line 3
     if-eqz v0, :cond_0
 
+    .line 4
+    .line 5
     const/4 v0, 0x1
 
+    .line 6
     goto :goto_0
 
+    .line 7
     :cond_0
     const/4 v0, 0x0
 
+    .line 8
     :goto_0
     return v0
 .end method

@@ -84,15 +84,15 @@
 .method public a()Ljava/util/Set;
     .locals 2
 
+    .line 13
     iget-object v0, p0, Lcom/applovin/impl/t4;->a:Ljava/lang/Object;
 
-    .line 13
     monitor-enter v0
 
+    .line 14
     :try_start_0
     iget-object v1, p0, Lcom/applovin/impl/t4;->c:Ljava/util/Set;
 
-    .line 14
     monitor-exit v0
 
     return-object v1
@@ -111,9 +111,9 @@
 .method public a(Ljava/lang/Object;)V
     .locals 4
 
+    .line 1
     iget-object v0, p0, Lcom/applovin/impl/t4;->a:Ljava/lang/Object;
 
-    .line 1
     monitor-enter v0
 
     .line 2
@@ -134,9 +134,9 @@
 
     iput-object v1, p0, Lcom/applovin/impl/t4;->d:Ljava/util/List;
 
+    .line 5
     iget-object v1, p0, Lcom/applovin/impl/t4;->b:Ljava/util/Map;
 
-    .line 5
     invoke-interface {v1, p1}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object v1
@@ -169,6 +169,7 @@
 
     goto :goto_1
 
+    .line 9
     :cond_0
     :goto_0
     iget-object v2, p0, Lcom/applovin/impl/t4;->b:Ljava/util/Map;
@@ -177,7 +178,6 @@
 
     if-eqz v1, :cond_1
 
-    .line 9
     invoke-virtual {v1}, Ljava/lang/Integer;->intValue()I
 
     move-result v1

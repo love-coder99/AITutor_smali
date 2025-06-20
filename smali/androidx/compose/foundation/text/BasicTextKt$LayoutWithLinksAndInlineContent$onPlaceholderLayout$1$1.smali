@@ -3,14 +3,14 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lzh/c;
+.implements Lka/c;
 
 
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "Lkotlin/jvm/internal/Lambda;",
-        "Lzh/c;"
+        "Lka/c;"
     }
 .end annotation
 
@@ -20,9 +20,9 @@
     }
     d2 = {
         "",
-        "Ln1/e;",
+        "Lr0/d;",
         "it",
-        "Lqh/r;",
+        "LX9/j;",
         "invoke",
         "(Ljava/util/List;)V",
         "<anonymous>"
@@ -37,27 +37,27 @@
 
 
 # instance fields
-.field final synthetic $measuredPlaceholderPositions:Landroidx/compose/runtime/j1;
+.field final synthetic $measuredPlaceholderPositions:Landroidx/compose/runtime/Z;
     .annotation system Ldalvik/annotation/Signature;
         value = {
-            "Landroidx/compose/runtime/j1;"
+            "Landroidx/compose/runtime/Z;"
         }
     .end annotation
 .end field
 
 
 # direct methods
-.method public constructor <init>(Landroidx/compose/runtime/j1;)V
+.method public constructor <init>(Landroidx/compose/runtime/Z;)V
     .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
-            "Landroidx/compose/runtime/j1;",
+            "Landroidx/compose/runtime/Z;",
             ")V"
         }
     .end annotation
 
-    iput-object p1, p0, Landroidx/compose/foundation/text/BasicTextKt$LayoutWithLinksAndInlineContent$onPlaceholderLayout$1$1;->$measuredPlaceholderPositions:Landroidx/compose/runtime/j1;
+    iput-object p1, p0, Landroidx/compose/foundation/text/BasicTextKt$LayoutWithLinksAndInlineContent$onPlaceholderLayout$1$1;->$measuredPlaceholderPositions:Landroidx/compose/runtime/Z;
 
     const/4 p1, 0x1
 
@@ -76,7 +76,7 @@
 
     invoke-virtual {p0, p1}, Landroidx/compose/foundation/text/BasicTextKt$LayoutWithLinksAndInlineContent$onPlaceholderLayout$1$1;->invoke(Ljava/util/List;)V
 
-    sget-object p1, Lqh/r;->a:Lqh/r;
+    sget-object p1, LX9/j;->a:LX9/j;
 
     return-object p1
 .end method
@@ -87,20 +87,20 @@
         value = {
             "(",
             "Ljava/util/List<",
-            "Ln1/e;",
+            "Lr0/d;",
             ">;)V"
         }
     .end annotation
 
-    iget-object v0, p0, Landroidx/compose/foundation/text/BasicTextKt$LayoutWithLinksAndInlineContent$onPlaceholderLayout$1$1;->$measuredPlaceholderPositions:Landroidx/compose/runtime/j1;
+    .line 2
+    iget-object v0, p0, Landroidx/compose/foundation/text/BasicTextKt$LayoutWithLinksAndInlineContent$onPlaceholderLayout$1$1;->$measuredPlaceholderPositions:Landroidx/compose/runtime/Z;
 
     if-nez v0, :cond_0
 
     goto :goto_0
 
-    .line 2
     :cond_0
-    invoke-interface {v0, p1}, Landroidx/compose/runtime/j1;->setValue(Ljava/lang/Object;)V
+    invoke-interface {v0, p1}, Landroidx/compose/runtime/Z;->setValue(Ljava/lang/Object;)V
 
     :goto_0
     return-void

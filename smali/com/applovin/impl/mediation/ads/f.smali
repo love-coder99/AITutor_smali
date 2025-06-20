@@ -7,75 +7,68 @@
 
 
 # instance fields
-.field public final synthetic a:I
+.field public final synthetic a:Lcom/applovin/impl/mediation/ads/MaxFullscreenAdImpl;
 
-.field public final synthetic b:Lcom/applovin/impl/mediation/ads/MaxFullscreenAdImpl;
+.field public final synthetic b:Ljava/lang/String;
 
 .field public final synthetic c:Ljava/lang/String;
 
+.field public final synthetic d:Landroid/app/Activity;
+
+.field public final synthetic e:Landroid/view/ViewGroup;
+
+.field public final synthetic f:Landroidx/lifecycle/r;
+
 
 # direct methods
-.method public synthetic constructor <init>(Lcom/applovin/impl/mediation/ads/MaxFullscreenAdImpl;Ljava/lang/String;I)V
+.method public synthetic constructor <init>(Lcom/applovin/impl/mediation/ads/MaxFullscreenAdImpl;Ljava/lang/String;Ljava/lang/String;Landroid/app/Activity;Landroid/view/ViewGroup;Landroidx/lifecycle/r;)V
     .locals 0
 
     .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 2
-    .line 3
-    .line 4
-    iput p3, p0, Lcom/applovin/impl/mediation/ads/f;->a:I
+    iput-object p1, p0, Lcom/applovin/impl/mediation/ads/f;->a:Lcom/applovin/impl/mediation/ads/MaxFullscreenAdImpl;
 
-    .line 5
-    .line 6
-    iput-object p1, p0, Lcom/applovin/impl/mediation/ads/f;->b:Lcom/applovin/impl/mediation/ads/MaxFullscreenAdImpl;
+    iput-object p2, p0, Lcom/applovin/impl/mediation/ads/f;->b:Ljava/lang/String;
 
-    .line 7
-    .line 8
-    iput-object p2, p0, Lcom/applovin/impl/mediation/ads/f;->c:Ljava/lang/String;
+    iput-object p3, p0, Lcom/applovin/impl/mediation/ads/f;->c:Ljava/lang/String;
 
-    .line 9
-    .line 10
+    iput-object p4, p0, Lcom/applovin/impl/mediation/ads/f;->d:Landroid/app/Activity;
+
+    iput-object p5, p0, Lcom/applovin/impl/mediation/ads/f;->e:Landroid/view/ViewGroup;
+
+    iput-object p6, p0, Lcom/applovin/impl/mediation/ads/f;->f:Landroidx/lifecycle/r;
+
     return-void
 .end method
 
 
 # virtual methods
 .method public final a()V
-    .locals 3
+    .locals 6
 
     .line 1
-    iget v0, p0, Lcom/applovin/impl/mediation/ads/f;->a:I
+    iget-object v4, p0, Lcom/applovin/impl/mediation/ads/f;->e:Landroid/view/ViewGroup;
 
-    iget-object v1, p0, Lcom/applovin/impl/mediation/ads/f;->c:Ljava/lang/String;
+    iget-object v5, p0, Lcom/applovin/impl/mediation/ads/f;->f:Landroidx/lifecycle/r;
 
-    iget-object v2, p0, Lcom/applovin/impl/mediation/ads/f;->b:Lcom/applovin/impl/mediation/ads/MaxFullscreenAdImpl;
+    iget-object v0, p0, Lcom/applovin/impl/mediation/ads/f;->a:Lcom/applovin/impl/mediation/ads/MaxFullscreenAdImpl;
 
-    packed-switch v0, :pswitch_data_0
+    iget-object v1, p0, Lcom/applovin/impl/mediation/ads/f;->b:Ljava/lang/String;
 
-    invoke-static {v2, v1}, Lcom/applovin/impl/mediation/ads/MaxFullscreenAdImpl;->n(Lcom/applovin/impl/mediation/ads/MaxFullscreenAdImpl;Ljava/lang/String;)V
+    iget-object v2, p0, Lcom/applovin/impl/mediation/ads/f;->c:Ljava/lang/String;
+
+    iget-object v3, p0, Lcom/applovin/impl/mediation/ads/f;->d:Landroid/app/Activity;
+
+    invoke-static/range {v0 .. v5}, Lcom/applovin/impl/mediation/ads/MaxFullscreenAdImpl;->c(Lcom/applovin/impl/mediation/ads/MaxFullscreenAdImpl;Ljava/lang/String;Ljava/lang/String;Landroid/app/Activity;Landroid/view/ViewGroup;Landroidx/lifecycle/r;)V
 
     return-void
-
-    :pswitch_0
-    invoke-static {v2, v1}, Lcom/applovin/impl/mediation/ads/MaxFullscreenAdImpl;->l(Lcom/applovin/impl/mediation/ads/MaxFullscreenAdImpl;Ljava/lang/String;)V
-
-    return-void
-
-    nop
-
-    :pswitch_data_0
-    .packed-switch 0x0
-        :pswitch_0
-    .end packed-switch
 .end method
 
 .method public final synthetic a(Lcom/applovin/mediation/MaxError;)V
-    .locals 1
+    .locals 0
 
     .line 2
-    iget v0, p0, Lcom/applovin/impl/mediation/ads/f;->a:I
-
     invoke-static {p0, p1}, Lcom/applovin/impl/mediation/ads/n;->a(Lcom/applovin/impl/mediation/ads/MaxFullscreenAdImpl$e;Lcom/applovin/mediation/MaxError;)V
 
     return-void

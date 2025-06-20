@@ -97,9 +97,9 @@
 
     move-result v0
 
-    const/4 v1, 0x1
+    const/4 v1, 0x0
 
-    const/4 v2, 0x0
+    const/4 v2, 0x1
 
     if-eqz v0, :cond_0
 
@@ -230,12 +230,9 @@
 
     if-eqz p1, :cond_5
 
-    goto :goto_5
+    const/4 v1, 0x1
 
     :cond_5
-    const/4 v1, 0x0
-
-    :goto_5
     iput-boolean v1, p0, Landroidx/fragment/app/FragmentState;->p:Z
 
     return-void

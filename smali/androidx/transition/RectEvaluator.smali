@@ -37,6 +37,7 @@
     .line 2
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
+    .line 3
     iput-object p1, p0, Landroidx/transition/RectEvaluator;->mRect:Landroid/graphics/Rect;
 
     return-void
@@ -107,21 +108,23 @@
 
     add-int/2addr p2, p1
 
+    .line 6
     iget-object p1, p0, Landroidx/transition/RectEvaluator;->mRect:Landroid/graphics/Rect;
 
     if-nez p1, :cond_0
 
-    .line 6
+    .line 7
     new-instance p1, Landroid/graphics/Rect;
 
     invoke-direct {p1, v0, v1, v2, p2}, Landroid/graphics/Rect;-><init>(IIII)V
 
     return-object p1
 
-    .line 7
+    .line 8
     :cond_0
     invoke-virtual {p1, v0, v1, v2, p2}, Landroid/graphics/Rect;->set(IIII)V
 
+    .line 9
     iget-object p1, p0, Landroidx/transition/RectEvaluator;->mRect:Landroid/graphics/Rect;
 
     return-object p1

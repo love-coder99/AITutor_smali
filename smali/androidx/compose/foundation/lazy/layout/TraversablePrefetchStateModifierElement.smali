@@ -1,12 +1,12 @@
 .class final Landroidx/compose/foundation/lazy/layout/TraversablePrefetchStateModifierElement;
-.super Landroidx/compose/ui/node/w0;
+.super Landroidx/compose/ui/node/V;
 .source "SourceFile"
 
 
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
-        "Landroidx/compose/ui/node/w0;"
+        "Landroidx/compose/ui/node/V;"
     }
 .end annotation
 
@@ -16,8 +16,8 @@
     }
     d2 = {
         "Landroidx/compose/foundation/lazy/layout/TraversablePrefetchStateModifierElement;",
-        "Landroidx/compose/ui/node/w0;",
-        "Landroidx/compose/foundation/lazy/layout/b1;",
+        "Landroidx/compose/ui/node/V;",
+        "Landroidx/compose/foundation/lazy/layout/Y;",
         "foundation_release"
     }
     k = 0x1
@@ -26,15 +26,16 @@
         0x8,
         0x0
     }
+    xi = 0x30
 .end annotation
 
 
 # instance fields
-.field public final c:Landroidx/compose/foundation/lazy/layout/n0;
+.field public final a:Landroidx/compose/foundation/lazy/layout/M;
 
 
 # direct methods
-.method public constructor <init>(Landroidx/compose/foundation/lazy/layout/n0;)V
+.method public constructor <init>(Landroidx/compose/foundation/lazy/layout/M;)V
     .locals 0
 
     .line 1
@@ -43,7 +44,7 @@
     .line 2
     .line 3
     .line 4
-    iput-object p1, p0, Landroidx/compose/foundation/lazy/layout/TraversablePrefetchStateModifierElement;->c:Landroidx/compose/foundation/lazy/layout/n0;
+    iput-object p1, p0, Landroidx/compose/foundation/lazy/layout/TraversablePrefetchStateModifierElement;->a:Landroidx/compose/foundation/lazy/layout/M;
 
     .line 5
     .line 6
@@ -73,11 +74,11 @@
     :cond_1
     check-cast p1, Landroidx/compose/foundation/lazy/layout/TraversablePrefetchStateModifierElement;
 
-    iget-object v1, p0, Landroidx/compose/foundation/lazy/layout/TraversablePrefetchStateModifierElement;->c:Landroidx/compose/foundation/lazy/layout/n0;
+    iget-object v1, p0, Landroidx/compose/foundation/lazy/layout/TraversablePrefetchStateModifierElement;->a:Landroidx/compose/foundation/lazy/layout/M;
 
-    iget-object p1, p1, Landroidx/compose/foundation/lazy/layout/TraversablePrefetchStateModifierElement;->c:Landroidx/compose/foundation/lazy/layout/n0;
+    iget-object p1, p1, Landroidx/compose/foundation/lazy/layout/TraversablePrefetchStateModifierElement;->a:Landroidx/compose/foundation/lazy/layout/M;
 
-    invoke-static {v1, p1}, Lrb/h;->d(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v1, p1}, Lkotlin/jvm/internal/h;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result p1
 
@@ -92,7 +93,7 @@
 .method public final hashCode()I
     .locals 1
 
-    iget-object v0, p0, Landroidx/compose/foundation/lazy/layout/TraversablePrefetchStateModifierElement;->c:Landroidx/compose/foundation/lazy/layout/n0;
+    iget-object v0, p0, Landroidx/compose/foundation/lazy/layout/TraversablePrefetchStateModifierElement;->a:Landroidx/compose/foundation/lazy/layout/M;
 
     invoke-virtual {v0}, Ljava/lang/Object;->hashCode()I
 
@@ -105,19 +106,23 @@
     .locals 2
 
     .line 1
-    new-instance v0, Landroidx/compose/foundation/lazy/layout/b1;
+    new-instance v0, Landroidx/compose/foundation/lazy/layout/Y;
 
     .line 2
     .line 3
-    iget-object v1, p0, Landroidx/compose/foundation/lazy/layout/TraversablePrefetchStateModifierElement;->c:Landroidx/compose/foundation/lazy/layout/n0;
+    invoke-direct {v0}, Landroidx/compose/ui/n;-><init>()V
 
     .line 4
     .line 5
-    invoke-direct {v0, v1}, Landroidx/compose/foundation/lazy/layout/b1;-><init>(Landroidx/compose/foundation/lazy/layout/n0;)V
-
     .line 6
+    iget-object v1, p0, Landroidx/compose/foundation/lazy/layout/TraversablePrefetchStateModifierElement;->a:Landroidx/compose/foundation/lazy/layout/M;
+
     .line 7
     .line 8
+    iput-object v1, v0, Landroidx/compose/foundation/lazy/layout/Y;->p:Landroidx/compose/foundation/lazy/layout/M;
+
+    .line 9
+    .line 10
     return-object v0
 .end method
 
@@ -125,15 +130,15 @@
     .locals 1
 
     .line 1
-    check-cast p1, Landroidx/compose/foundation/lazy/layout/b1;
+    check-cast p1, Landroidx/compose/foundation/lazy/layout/Y;
 
     .line 2
     .line 3
-    iget-object v0, p0, Landroidx/compose/foundation/lazy/layout/TraversablePrefetchStateModifierElement;->c:Landroidx/compose/foundation/lazy/layout/n0;
+    iget-object v0, p0, Landroidx/compose/foundation/lazy/layout/TraversablePrefetchStateModifierElement;->a:Landroidx/compose/foundation/lazy/layout/M;
 
     .line 4
     .line 5
-    iput-object v0, p1, Landroidx/compose/foundation/lazy/layout/b1;->p:Landroidx/compose/foundation/lazy/layout/n0;
+    iput-object v0, p1, Landroidx/compose/foundation/lazy/layout/Y;->p:Landroidx/compose/foundation/lazy/layout/M;
 
     .line 6
     .line 7
@@ -149,7 +154,7 @@
 
     invoke-direct {v0, v1}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
 
-    iget-object v1, p0, Landroidx/compose/foundation/lazy/layout/TraversablePrefetchStateModifierElement;->c:Landroidx/compose/foundation/lazy/layout/n0;
+    iget-object v1, p0, Landroidx/compose/foundation/lazy/layout/TraversablePrefetchStateModifierElement;->a:Landroidx/compose/foundation/lazy/layout/M;
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 

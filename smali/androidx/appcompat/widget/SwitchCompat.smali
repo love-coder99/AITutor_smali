@@ -47,8 +47,14 @@
 
 # instance fields
 .field private mAppCompatEmojiTextHelper:Landroidx/appcompat/widget/AppCompatEmojiTextHelper;
+    .annotation build Landroidx/annotation/NonNull;
+    .end annotation
+.end field
 
 .field private mEmojiCompatInitCallback:Landroidx/appcompat/widget/SwitchCompat$EmojiCompatInitCallback;
+    .annotation build Landroidx/annotation/Nullable;
+    .end annotation
+.end field
 
 .field private mEnforceSwitchWidth:Z
 
@@ -87,6 +93,9 @@
 .field private mSwitchTop:I
 
 .field private mSwitchTransformationMethod:Landroid/text/method/TransformationMethod;
+    .annotation build Landroidx/annotation/Nullable;
+    .end annotation
+.end field
 
 .field private mSwitchWidth:I
 
@@ -183,6 +192,10 @@
 
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 1
+    .param p1    # Landroid/content/Context;
+        .annotation build Landroidx/annotation/NonNull;
+        .end annotation
+    .end param
 
     const/4 v0, 0x0
 
@@ -194,10 +207,18 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
     .locals 1
-
-    sget v0, Lg/a;->switchStyle:I
+    .param p1    # Landroid/content/Context;
+        .annotation build Landroidx/annotation/NonNull;
+        .end annotation
+    .end param
+    .param p2    # Landroid/util/AttributeSet;
+        .annotation build Landroidx/annotation/Nullable;
+        .end annotation
+    .end param
 
     .line 2
+    sget v0, Li/a;->switchStyle:I
+
     invoke-direct {p0, p1, p2, v0}, Landroidx/appcompat/widget/SwitchCompat;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
 
     return-void
@@ -205,31 +226,47 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
     .locals 10
+    .param p1    # Landroid/content/Context;
+        .annotation build Landroidx/annotation/NonNull;
+        .end annotation
+    .end param
+    .param p2    # Landroid/util/AttributeSet;
+        .annotation build Landroidx/annotation/Nullable;
+        .end annotation
+    .end param
 
     .line 3
     invoke-direct {p0, p1, p2, p3}, Landroid/widget/CompoundButton;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
 
     const/4 v0, 0x0
 
+    .line 4
     iput-object v0, p0, Landroidx/appcompat/widget/SwitchCompat;->mThumbTintList:Landroid/content/res/ColorStateList;
 
+    .line 5
     iput-object v0, p0, Landroidx/appcompat/widget/SwitchCompat;->mThumbTintMode:Landroid/graphics/PorterDuff$Mode;
 
     const/4 v1, 0x0
 
+    .line 6
     iput-boolean v1, p0, Landroidx/appcompat/widget/SwitchCompat;->mHasThumbTint:Z
 
+    .line 7
     iput-boolean v1, p0, Landroidx/appcompat/widget/SwitchCompat;->mHasThumbTintMode:Z
 
+    .line 8
     iput-object v0, p0, Landroidx/appcompat/widget/SwitchCompat;->mTrackTintList:Landroid/content/res/ColorStateList;
 
+    .line 9
     iput-object v0, p0, Landroidx/appcompat/widget/SwitchCompat;->mTrackTintMode:Landroid/graphics/PorterDuff$Mode;
 
+    .line 10
     iput-boolean v1, p0, Landroidx/appcompat/widget/SwitchCompat;->mHasTrackTint:Z
 
+    .line 11
     iput-boolean v1, p0, Landroidx/appcompat/widget/SwitchCompat;->mHasTrackTintMode:Z
 
-    .line 4
+    .line 12
     invoke-static {}, Landroid/view/VelocityTracker;->obtain()Landroid/view/VelocityTracker;
 
     move-result-object v2
@@ -238,35 +275,36 @@
 
     const/4 v2, 0x1
 
+    .line 13
     iput-boolean v2, p0, Landroidx/appcompat/widget/SwitchCompat;->mEnforceSwitchWidth:Z
 
-    .line 5
+    .line 14
     new-instance v3, Landroid/graphics/Rect;
 
     invoke-direct {v3}, Landroid/graphics/Rect;-><init>()V
 
     iput-object v3, p0, Landroidx/appcompat/widget/SwitchCompat;->mTempRect:Landroid/graphics/Rect;
 
-    .line 6
+    .line 15
     invoke-virtual {p0}, Landroid/view/View;->getContext()Landroid/content/Context;
 
     move-result-object v3
 
     invoke-static {p0, v3}, Landroidx/appcompat/widget/ThemeUtils;->checkAppCompatTheme(Landroid/view/View;Landroid/content/Context;)V
 
-    .line 7
+    .line 16
     new-instance v3, Landroid/text/TextPaint;
 
     invoke-direct {v3, v2}, Landroid/text/TextPaint;-><init>(I)V
 
     iput-object v3, p0, Landroidx/appcompat/widget/SwitchCompat;->mTextPaint:Landroid/text/TextPaint;
 
-    .line 8
+    .line 17
     invoke-virtual {p0}, Landroid/view/View;->getResources()Landroid/content/res/Resources;
 
     move-result-object v4
 
-    .line 9
+    .line 18
     invoke-virtual {v4}, Landroid/content/res/Resources;->getDisplayMetrics()Landroid/util/DisplayMetrics;
 
     move-result-object v4
@@ -275,16 +313,17 @@
 
     iput v4, v3, Landroid/text/TextPaint;->density:F
 
-    sget-object v3, Lg/j;->SwitchCompat:[I
+    .line 19
+    sget-object v3, Li/j;->SwitchCompat:[I
 
-    .line 10
     invoke-static {p1, p2, v3, p3, v1}, Landroidx/appcompat/widget/TintTypedArray;->obtainStyledAttributes(Landroid/content/Context;Landroid/util/AttributeSet;[III)Landroidx/appcompat/widget/TintTypedArray;
 
     move-result-object v3
 
-    sget-object v6, Lg/j;->SwitchCompat:[I
+    .line 20
+    sget-object v6, Li/j;->SwitchCompat:[I
 
-    .line 11
+    .line 21
     invoke-virtual {v3}, Landroidx/appcompat/widget/TintTypedArray;->getWrappedTypeArray()Landroid/content/res/TypedArray;
 
     move-result-object v8
@@ -297,12 +336,12 @@
 
     move v9, p3
 
-    .line 12
-    invoke-static/range {v4 .. v9}, Landroidx/core/view/y0;->r(Landroid/view/View;Landroid/content/Context;[ILandroid/util/AttributeSet;Landroid/content/res/TypedArray;I)V
+    .line 22
+    invoke-static/range {v4 .. v9}, Landroidx/core/view/e0;->r(Landroid/view/View;Landroid/content/Context;[ILandroid/util/AttributeSet;Landroid/content/res/TypedArray;I)V
 
-    sget v4, Lg/j;->SwitchCompat_android_thumb:I
+    .line 23
+    sget v4, Li/j;->SwitchCompat_android_thumb:I
 
-    .line 13
     invoke-virtual {v3, v4}, Landroidx/appcompat/widget/TintTypedArray;->getDrawable(I)Landroid/graphics/drawable/Drawable;
 
     move-result-object v4
@@ -311,13 +350,13 @@
 
     if-eqz v4, :cond_0
 
-    .line 14
+    .line 24
     invoke-virtual {v4, p0}, Landroid/graphics/drawable/Drawable;->setCallback(Landroid/graphics/drawable/Drawable$Callback;)V
 
+    .line 25
     :cond_0
-    sget v4, Lg/j;->SwitchCompat_track:I
+    sget v4, Li/j;->SwitchCompat_track:I
 
-    .line 15
     invoke-virtual {v3, v4}, Landroidx/appcompat/widget/TintTypedArray;->getDrawable(I)Landroid/graphics/drawable/Drawable;
 
     move-result-object v4
@@ -326,109 +365,116 @@
 
     if-eqz v4, :cond_1
 
-    .line 16
+    .line 26
     invoke-virtual {v4, p0}, Landroid/graphics/drawable/Drawable;->setCallback(Landroid/graphics/drawable/Drawable$Callback;)V
 
+    .line 27
     :cond_1
-    sget v4, Lg/j;->SwitchCompat_android_textOn:I
+    sget v4, Li/j;->SwitchCompat_android_textOn:I
 
-    .line 17
     invoke-virtual {v3, v4}, Landroidx/appcompat/widget/TintTypedArray;->getText(I)Ljava/lang/CharSequence;
 
     move-result-object v4
 
     invoke-direct {p0, v4}, Landroidx/appcompat/widget/SwitchCompat;->setTextOnInternal(Ljava/lang/CharSequence;)V
 
-    sget v4, Lg/j;->SwitchCompat_android_textOff:I
+    .line 28
+    sget v4, Li/j;->SwitchCompat_android_textOff:I
 
-    .line 18
     invoke-virtual {v3, v4}, Landroidx/appcompat/widget/TintTypedArray;->getText(I)Ljava/lang/CharSequence;
 
     move-result-object v4
 
     invoke-direct {p0, v4}, Landroidx/appcompat/widget/SwitchCompat;->setTextOffInternal(Ljava/lang/CharSequence;)V
 
-    sget v4, Lg/j;->SwitchCompat_showText:I
+    .line 29
+    sget v4, Li/j;->SwitchCompat_showText:I
 
-    .line 19
     invoke-virtual {v3, v4, v2}, Landroidx/appcompat/widget/TintTypedArray;->getBoolean(IZ)Z
 
     move-result v4
 
     iput-boolean v4, p0, Landroidx/appcompat/widget/SwitchCompat;->mShowText:Z
 
-    sget v4, Lg/j;->SwitchCompat_thumbTextPadding:I
+    .line 30
+    sget v4, Li/j;->SwitchCompat_thumbTextPadding:I
 
-    .line 20
     invoke-virtual {v3, v4, v1}, Landroidx/appcompat/widget/TintTypedArray;->getDimensionPixelSize(II)I
 
     move-result v4
 
     iput v4, p0, Landroidx/appcompat/widget/SwitchCompat;->mThumbTextPadding:I
 
-    sget v4, Lg/j;->SwitchCompat_switchMinWidth:I
+    .line 31
+    sget v4, Li/j;->SwitchCompat_switchMinWidth:I
 
-    .line 21
     invoke-virtual {v3, v4, v1}, Landroidx/appcompat/widget/TintTypedArray;->getDimensionPixelSize(II)I
 
     move-result v4
 
     iput v4, p0, Landroidx/appcompat/widget/SwitchCompat;->mSwitchMinWidth:I
 
-    sget v4, Lg/j;->SwitchCompat_switchPadding:I
+    .line 32
+    sget v4, Li/j;->SwitchCompat_switchPadding:I
 
-    .line 22
     invoke-virtual {v3, v4, v1}, Landroidx/appcompat/widget/TintTypedArray;->getDimensionPixelSize(II)I
 
     move-result v4
 
     iput v4, p0, Landroidx/appcompat/widget/SwitchCompat;->mSwitchPadding:I
 
-    sget v4, Lg/j;->SwitchCompat_splitTrack:I
+    .line 33
+    sget v4, Li/j;->SwitchCompat_splitTrack:I
 
-    .line 23
     invoke-virtual {v3, v4, v1}, Landroidx/appcompat/widget/TintTypedArray;->getBoolean(IZ)Z
 
     move-result v4
 
     iput-boolean v4, p0, Landroidx/appcompat/widget/SwitchCompat;->mSplitTrack:Z
 
-    sget v4, Lg/j;->SwitchCompat_thumbTint:I
+    .line 34
+    sget v4, Li/j;->SwitchCompat_thumbTint:I
 
-    .line 24
     invoke-virtual {v3, v4}, Landroidx/appcompat/widget/TintTypedArray;->getColorStateList(I)Landroid/content/res/ColorStateList;
 
     move-result-object v4
 
     if-eqz v4, :cond_2
 
+    .line 35
     iput-object v4, p0, Landroidx/appcompat/widget/SwitchCompat;->mThumbTintList:Landroid/content/res/ColorStateList;
 
+    .line 36
     iput-boolean v2, p0, Landroidx/appcompat/widget/SwitchCompat;->mHasThumbTint:Z
 
+    .line 37
     :cond_2
-    sget v4, Lg/j;->SwitchCompat_thumbTintMode:I
+    sget v4, Li/j;->SwitchCompat_thumbTintMode:I
 
     const/4 v5, -0x1
 
-    .line 25
+    .line 38
     invoke-virtual {v3, v4, v5}, Landroidx/appcompat/widget/TintTypedArray;->getInt(II)I
 
     move-result v4
 
-    .line 26
+    .line 39
     invoke-static {v4, v0}, Landroidx/appcompat/widget/DrawableUtils;->parseTintMode(ILandroid/graphics/PorterDuff$Mode;)Landroid/graphics/PorterDuff$Mode;
 
     move-result-object v4
 
+    .line 40
     iget-object v6, p0, Landroidx/appcompat/widget/SwitchCompat;->mThumbTintMode:Landroid/graphics/PorterDuff$Mode;
 
     if-eq v6, v4, :cond_3
 
+    .line 41
     iput-object v4, p0, Landroidx/appcompat/widget/SwitchCompat;->mThumbTintMode:Landroid/graphics/PorterDuff$Mode;
 
+    .line 42
     iput-boolean v2, p0, Landroidx/appcompat/widget/SwitchCompat;->mHasThumbTintMode:Z
 
+    .line 43
     :cond_3
     iget-boolean v4, p0, Landroidx/appcompat/widget/SwitchCompat;->mHasThumbTint:Z
 
@@ -438,45 +484,52 @@
 
     if-eqz v4, :cond_5
 
-    .line 27
+    .line 44
     :cond_4
     invoke-direct {p0}, Landroidx/appcompat/widget/SwitchCompat;->applyThumbTint()V
 
+    .line 45
     :cond_5
-    sget v4, Lg/j;->SwitchCompat_trackTint:I
+    sget v4, Li/j;->SwitchCompat_trackTint:I
 
-    .line 28
     invoke-virtual {v3, v4}, Landroidx/appcompat/widget/TintTypedArray;->getColorStateList(I)Landroid/content/res/ColorStateList;
 
     move-result-object v4
 
     if-eqz v4, :cond_6
 
+    .line 46
     iput-object v4, p0, Landroidx/appcompat/widget/SwitchCompat;->mTrackTintList:Landroid/content/res/ColorStateList;
 
+    .line 47
     iput-boolean v2, p0, Landroidx/appcompat/widget/SwitchCompat;->mHasTrackTint:Z
 
+    .line 48
     :cond_6
-    sget v4, Lg/j;->SwitchCompat_trackTintMode:I
+    sget v4, Li/j;->SwitchCompat_trackTintMode:I
 
-    .line 29
+    .line 49
     invoke-virtual {v3, v4, v5}, Landroidx/appcompat/widget/TintTypedArray;->getInt(II)I
 
     move-result v4
 
-    .line 30
+    .line 50
     invoke-static {v4, v0}, Landroidx/appcompat/widget/DrawableUtils;->parseTintMode(ILandroid/graphics/PorterDuff$Mode;)Landroid/graphics/PorterDuff$Mode;
 
     move-result-object v0
 
+    .line 51
     iget-object v4, p0, Landroidx/appcompat/widget/SwitchCompat;->mTrackTintMode:Landroid/graphics/PorterDuff$Mode;
 
     if-eq v4, v0, :cond_7
 
+    .line 52
     iput-object v0, p0, Landroidx/appcompat/widget/SwitchCompat;->mTrackTintMode:Landroid/graphics/PorterDuff$Mode;
 
+    .line 53
     iput-boolean v2, p0, Landroidx/appcompat/widget/SwitchCompat;->mHasTrackTintMode:Z
 
+    .line 54
     :cond_7
     iget-boolean v0, p0, Landroidx/appcompat/widget/SwitchCompat;->mHasTrackTint:Z
 
@@ -486,24 +539,24 @@
 
     if-eqz v0, :cond_9
 
-    .line 31
+    .line 55
     :cond_8
     invoke-direct {p0}, Landroidx/appcompat/widget/SwitchCompat;->applyTrackTint()V
 
+    .line 56
     :cond_9
-    sget v0, Lg/j;->SwitchCompat_switchTextAppearance:I
+    sget v0, Li/j;->SwitchCompat_switchTextAppearance:I
 
-    .line 32
     invoke-virtual {v3, v0, v1}, Landroidx/appcompat/widget/TintTypedArray;->getResourceId(II)I
 
     move-result v0
 
     if-eqz v0, :cond_a
 
-    .line 33
+    .line 57
     invoke-virtual {p0, p1, v0}, Landroidx/appcompat/widget/SwitchCompat;->setSwitchTextAppearance(Landroid/content/Context;I)V
 
-    .line 34
+    .line 58
     :cond_a
     new-instance v0, Landroidx/appcompat/widget/AppCompatTextHelper;
 
@@ -511,43 +564,43 @@
 
     iput-object v0, p0, Landroidx/appcompat/widget/SwitchCompat;->mTextHelper:Landroidx/appcompat/widget/AppCompatTextHelper;
 
-    .line 35
+    .line 59
     invoke-virtual {v0, p2, p3}, Landroidx/appcompat/widget/AppCompatTextHelper;->loadFromAttributes(Landroid/util/AttributeSet;I)V
 
-    .line 36
+    .line 60
     invoke-virtual {v3}, Landroidx/appcompat/widget/TintTypedArray;->recycle()V
 
-    .line 37
+    .line 61
     invoke-static {p1}, Landroid/view/ViewConfiguration;->get(Landroid/content/Context;)Landroid/view/ViewConfiguration;
 
     move-result-object p1
 
-    .line 38
+    .line 62
     invoke-virtual {p1}, Landroid/view/ViewConfiguration;->getScaledTouchSlop()I
 
     move-result v0
 
     iput v0, p0, Landroidx/appcompat/widget/SwitchCompat;->mTouchSlop:I
 
-    .line 39
+    .line 63
     invoke-virtual {p1}, Landroid/view/ViewConfiguration;->getScaledMinimumFlingVelocity()I
 
     move-result p1
 
     iput p1, p0, Landroidx/appcompat/widget/SwitchCompat;->mMinFlingVelocity:I
 
-    .line 40
+    .line 64
     invoke-direct {p0}, Landroidx/appcompat/widget/SwitchCompat;->getEmojiTextViewHelper()Landroidx/appcompat/widget/AppCompatEmojiTextHelper;
 
     move-result-object p1
 
-    .line 41
+    .line 65
     invoke-virtual {p1, p2, p3}, Landroidx/appcompat/widget/AppCompatEmojiTextHelper;->loadFromAttributes(Landroid/util/AttributeSet;I)V
 
-    .line 42
+    .line 66
     invoke-virtual {p0}, Landroid/view/View;->refreshDrawableState()V
 
-    .line 43
+    .line 67
     invoke-virtual {p0}, Landroid/widget/CompoundButton;->isChecked()Z
 
     move-result p1
@@ -561,30 +614,30 @@
     .locals 4
 
     .line 1
-    if-eqz p1, :cond_0
+    const/4 v0, 0x1
 
     .line 2
+    if-eqz p1, :cond_0
+
     .line 3
+    .line 4
     const/high16 p1, 0x3f800000    # 1.0f
 
-    .line 4
     .line 5
+    .line 6
     goto :goto_0
 
-    .line 6
+    .line 7
     :cond_0
     const/4 p1, 0x0
 
-    .line 7
-    :goto_0
-    sget-object v0, Landroidx/appcompat/widget/SwitchCompat;->THUMB_POS:Landroid/util/Property;
-
     .line 8
-    .line 9
-    const/4 v1, 0x1
+    :goto_0
+    sget-object v1, Landroidx/appcompat/widget/SwitchCompat;->THUMB_POS:Landroid/util/Property;
 
+    .line 9
     .line 10
-    new-array v2, v1, [F
+    new-array v2, v0, [F
 
     .line 11
     .line 12
@@ -595,7 +648,7 @@
 
     .line 14
     .line 15
-    invoke-static {p0, v0, v2}, Landroid/animation/ObjectAnimator;->ofFloat(Ljava/lang/Object;Landroid/util/Property;[F)Landroid/animation/ObjectAnimator;
+    invoke-static {p0, v1, v2}, Landroid/animation/ObjectAnimator;->ofFloat(Ljava/lang/Object;Landroid/util/Property;[F)Landroid/animation/ObjectAnimator;
 
     .line 16
     .line 17
@@ -607,11 +660,11 @@
 
     .line 20
     .line 21
-    const-wide/16 v2, 0xfa
+    const-wide/16 v1, 0xfa
 
     .line 22
     .line 23
-    invoke-virtual {p1, v2, v3}, Landroid/animation/ObjectAnimator;->setDuration(J)Landroid/animation/ObjectAnimator;
+    invoke-virtual {p1, v1, v2}, Landroid/animation/ObjectAnimator;->setDuration(J)Landroid/animation/ObjectAnimator;
 
     .line 24
     .line 25
@@ -620,7 +673,7 @@
 
     .line 27
     .line 28
-    invoke-virtual {p1, v1}, Landroid/animation/ObjectAnimator;->setAutoCancel(Z)V
+    invoke-virtual {p1, v0}, Landroid/animation/ObjectAnimator;->setAutoCancel(Z)V
 
     .line 29
     .line 30
@@ -666,7 +719,7 @@
     .line 12
     .line 13
     :cond_0
-    invoke-static {v0}, Le3/b;->D(Landroid/graphics/drawable/Drawable;)Landroid/graphics/drawable/Drawable;
+    invoke-static {v0}, Lcom/facebook/appevents/cloudbridge/c;->w(Landroid/graphics/drawable/Drawable;)Landroid/graphics/drawable/Drawable;
 
     .line 14
     .line 15
@@ -792,7 +845,7 @@
     .line 12
     .line 13
     :cond_0
-    invoke-static {v0}, Le3/b;->D(Landroid/graphics/drawable/Drawable;)Landroid/graphics/drawable/Drawable;
+    invoke-static {v0}, Lcom/facebook/appevents/cloudbridge/c;->w(Landroid/graphics/drawable/Drawable;)Landroid/graphics/drawable/Drawable;
 
     .line 14
     .line 15
@@ -968,6 +1021,12 @@
 
 .method private doTransformForOnOffText(Ljava/lang/CharSequence;)Ljava/lang/CharSequence;
     .locals 2
+    .param p1    # Ljava/lang/CharSequence;
+        .annotation build Landroidx/annotation/Nullable;
+        .end annotation
+    .end param
+    .annotation build Landroidx/annotation/Nullable;
+    .end annotation
 
     .line 1
     invoke-direct {p0}, Landroidx/appcompat/widget/SwitchCompat;->getEmojiTextViewHelper()Landroidx/appcompat/widget/AppCompatEmojiTextHelper;
@@ -1008,6 +1067,8 @@
 
 .method private getEmojiTextViewHelper()Landroidx/appcompat/widget/AppCompatEmojiTextHelper;
     .locals 1
+    .annotation build Landroidx/annotation/NonNull;
+    .end annotation
 
     .line 1
     iget-object v0, p0, Landroidx/appcompat/widget/SwitchCompat;->mAppCompatEmojiTextHelper:Landroidx/appcompat/widget/AppCompatEmojiTextHelper;
@@ -1042,21 +1103,33 @@
 .method private getTargetCheckedState()Z
     .locals 2
 
+    .line 1
     iget v0, p0, Landroidx/appcompat/widget/SwitchCompat;->mThumbPosition:F
 
+    .line 2
+    .line 3
     const/high16 v1, 0x3f000000    # 0.5f
 
+    .line 4
+    .line 5
     cmpl-float v0, v0, v1
 
+    .line 6
+    .line 7
     if-lez v0, :cond_0
 
+    .line 8
+    .line 9
     const/4 v0, 0x1
 
+    .line 10
     goto :goto_0
 
+    .line 11
     :cond_0
     const/4 v0, 0x0
 
+    .line 12
     :goto_0
     return v0
 .end method
@@ -1423,15 +1496,15 @@
 
     .line 22
     .line 23
-    const/high16 v5, 0x3f800000    # 1.0f
-
-    .line 24
-    .line 25
     const/4 v6, 0x0
 
-    .line 26
+    .line 24
     const/4 v7, 0x1
 
+    .line 25
+    const/high16 v5, 0x3f800000    # 1.0f
+
+    .line 26
     .line 27
     move-object v0, v8
 
@@ -1448,18 +1521,18 @@
 .end method
 
 .method private setOffStateDescriptionOnRAndAbove()V
-    .locals 6
+    .locals 8
 
     .line 1
     sget v0, Landroid/os/Build$VERSION;->SDK_INT:I
 
     .line 2
     .line 3
-    const/16 v1, 0x1e
+    const/16 v5, 0x1e
 
     .line 4
     .line 5
-    if-lt v0, v1, :cond_1
+    if-lt v0, v5, :cond_1
 
     .line 6
     .line 7
@@ -1479,11 +1552,11 @@
     move-result-object v0
 
     .line 15
-    sget v2, Lg/h;->abc_capital_off:I
+    sget v1, Li/h;->abc_capital_off:I
 
     .line 16
     .line 17
-    invoke-virtual {v0, v2}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
+    invoke-virtual {v0, v1}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
     .line 18
     .line 19
@@ -1492,52 +1565,59 @@
 
     .line 21
     :cond_0
-    sget-object v2, Landroidx/core/view/y0;->a:Ljava/util/WeakHashMap;
+    sget-object v1, Landroidx/core/view/e0;->a:Ljava/util/WeakHashMap;
 
     .line 22
     .line 23
-    new-instance v2, Landroidx/core/view/k0;
+    new-instance v7, Landroidx/core/view/Q;
 
     .line 24
     .line 25
-    sget v3, Lb3/c;->tag_state_description:I
+    sget v2, Lg1/c;->tag_state_description:I
 
     .line 26
     .line 27
-    const/4 v4, 0x2
+    const-class v3, Ljava/lang/CharSequence;
 
     .line 28
-    const/16 v5, 0x40
-
     .line 29
-    .line 30
-    invoke-direct {v2, v3, v5, v1, v4}, Landroidx/core/view/k0;-><init>(IIII)V
+    const/16 v4, 0x40
 
+    .line 30
     .line 31
+    const/4 v6, 0x2
+
     .line 32
+    move-object v1, v7
+
     .line 33
-    invoke-virtual {v2, p0, v0}, Landroidx/core/view/m0;->g(Landroid/view/View;Ljava/lang/Object;)V
+    invoke-direct/range {v1 .. v6}, Landroidx/core/view/Q;-><init>(ILjava/lang/Class;III)V
 
     .line 34
     .line 35
     .line 36
+    invoke-virtual {v7, p0, v0}, LI1/c;->g(Landroid/view/View;Ljava/lang/Object;)V
+
+    .line 37
+    .line 38
+    .line 39
     :cond_1
     return-void
 .end method
 
 .method private setOnStateDescriptionOnRAndAbove()V
-    .locals 6
+    .locals 8
 
     .line 1
     sget v0, Landroid/os/Build$VERSION;->SDK_INT:I
 
     .line 2
     .line 3
-    const/16 v1, 0x1e
+    const/16 v5, 0x1e
 
     .line 4
     .line 5
-    if-lt v0, v1, :cond_1
+    if-lt v0, v5, :cond_1
 
     .line 6
     .line 7
@@ -1557,11 +1637,11 @@
     move-result-object v0
 
     .line 15
-    sget v2, Lg/h;->abc_capital_on:I
+    sget v1, Li/h;->abc_capital_on:I
 
     .line 16
     .line 17
-    invoke-virtual {v0, v2}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
+    invoke-virtual {v0, v1}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
     .line 18
     .line 19
@@ -1570,35 +1650,42 @@
 
     .line 21
     :cond_0
-    sget-object v2, Landroidx/core/view/y0;->a:Ljava/util/WeakHashMap;
+    sget-object v1, Landroidx/core/view/e0;->a:Ljava/util/WeakHashMap;
 
     .line 22
     .line 23
-    new-instance v2, Landroidx/core/view/k0;
+    new-instance v7, Landroidx/core/view/Q;
 
     .line 24
     .line 25
-    sget v3, Lb3/c;->tag_state_description:I
+    sget v2, Lg1/c;->tag_state_description:I
 
     .line 26
     .line 27
-    const/4 v4, 0x2
+    const-class v3, Ljava/lang/CharSequence;
 
     .line 28
-    const/16 v5, 0x40
-
     .line 29
-    .line 30
-    invoke-direct {v2, v3, v5, v1, v4}, Landroidx/core/view/k0;-><init>(IIII)V
+    const/16 v4, 0x40
 
+    .line 30
     .line 31
+    const/4 v6, 0x2
+
     .line 32
+    move-object v1, v7
+
     .line 33
-    invoke-virtual {v2, p0, v0}, Landroidx/core/view/m0;->g(Landroid/view/View;Ljava/lang/Object;)V
+    invoke-direct/range {v1 .. v6}, Landroidx/core/view/Q;-><init>(ILjava/lang/Class;III)V
 
     .line 34
     .line 35
     .line 36
+    invoke-virtual {v7, p0, v0}, LI1/c;->g(Landroid/view/View;Ljava/lang/Object;)V
+
+    .line 37
+    .line 38
+    .line 39
     :cond_1
     return-void
 .end method
@@ -1784,7 +1871,7 @@
 
     .line 14
     :cond_0
-    invoke-static {}, Lx3/l;->c()Z
+    invoke-static {}, LH1/j;->c()Z
 
     .line 15
     .line 16
@@ -1796,7 +1883,7 @@
 
     .line 19
     .line 20
-    invoke-static {}, Lx3/l;->a()Lx3/l;
+    invoke-static {}, LH1/j;->a()LH1/j;
 
     .line 21
     .line 22
@@ -1804,7 +1891,7 @@
     move-result-object v0
 
     .line 24
-    invoke-virtual {v0}, Lx3/l;->b()I
+    invoke-virtual {v0}, LH1/j;->b()I
 
     .line 25
     .line 26
@@ -1837,7 +1924,7 @@
 
     .line 39
     .line 40
-    invoke-virtual {v0, v1}, Lx3/l;->h(Lx3/j;)V
+    invoke-virtual {v0, v1}, LH1/j;->g(LH1/h;)V
 
     .line 41
     .line 42
@@ -2045,6 +2132,10 @@
 # virtual methods
 .method public draw(Landroid/graphics/Canvas;)V
     .locals 10
+    .param p1    # Landroid/graphics/Canvas;
+        .annotation build Landroidx/annotation/NonNull;
+        .end annotation
+    .end param
 
     .line 1
     iget-object v0, p0, Landroidx/appcompat/widget/SwitchCompat;->mTempRect:Landroid/graphics/Rect;
@@ -2593,6 +2684,8 @@
 
 .method public getCustomSelectionActionModeCallback()Landroid/view/ActionMode$Callback;
     .locals 1
+    .annotation build Landroidx/annotation/Nullable;
+    .end annotation
 
     .line 1
     invoke-super {p0}, Landroid/widget/CompoundButton;->getCustomSelectionActionModeCallback()Landroid/view/ActionMode$Callback;
@@ -2603,7 +2696,7 @@
     move-result-object v0
 
     .line 5
-    invoke-static {v0}, Le3/b;->C(Landroid/view/ActionMode$Callback;)Landroid/view/ActionMode$Callback;
+    invoke-static {v0}, LE/p;->Q(Landroid/view/ActionMode$Callback;)Landroid/view/ActionMode$Callback;
 
     .line 6
     .line 7
@@ -2617,112 +2710,162 @@
 .method public getShowText()Z
     .locals 1
 
+    .line 1
     iget-boolean v0, p0, Landroidx/appcompat/widget/SwitchCompat;->mShowText:Z
 
+    .line 2
+    .line 3
     return v0
 .end method
 
 .method public getSplitTrack()Z
     .locals 1
 
+    .line 1
     iget-boolean v0, p0, Landroidx/appcompat/widget/SwitchCompat;->mSplitTrack:Z
 
+    .line 2
+    .line 3
     return v0
 .end method
 
 .method public getSwitchMinWidth()I
     .locals 1
 
+    .line 1
     iget v0, p0, Landroidx/appcompat/widget/SwitchCompat;->mSwitchMinWidth:I
 
+    .line 2
+    .line 3
     return v0
 .end method
 
 .method public getSwitchPadding()I
     .locals 1
 
+    .line 1
     iget v0, p0, Landroidx/appcompat/widget/SwitchCompat;->mSwitchPadding:I
 
+    .line 2
+    .line 3
     return v0
 .end method
 
 .method public getTextOff()Ljava/lang/CharSequence;
     .locals 1
 
+    .line 1
     iget-object v0, p0, Landroidx/appcompat/widget/SwitchCompat;->mTextOff:Ljava/lang/CharSequence;
 
+    .line 2
+    .line 3
     return-object v0
 .end method
 
 .method public getTextOn()Ljava/lang/CharSequence;
     .locals 1
 
+    .line 1
     iget-object v0, p0, Landroidx/appcompat/widget/SwitchCompat;->mTextOn:Ljava/lang/CharSequence;
 
+    .line 2
+    .line 3
     return-object v0
 .end method
 
 .method public getThumbDrawable()Landroid/graphics/drawable/Drawable;
     .locals 1
 
+    .line 1
     iget-object v0, p0, Landroidx/appcompat/widget/SwitchCompat;->mThumbDrawable:Landroid/graphics/drawable/Drawable;
 
+    .line 2
+    .line 3
     return-object v0
 .end method
 
 .method public final getThumbPosition()F
     .locals 1
 
+    .line 1
     iget v0, p0, Landroidx/appcompat/widget/SwitchCompat;->mThumbPosition:F
 
+    .line 2
+    .line 3
     return v0
 .end method
 
 .method public getThumbTextPadding()I
     .locals 1
 
+    .line 1
     iget v0, p0, Landroidx/appcompat/widget/SwitchCompat;->mThumbTextPadding:I
 
+    .line 2
+    .line 3
     return v0
 .end method
 
 .method public getThumbTintList()Landroid/content/res/ColorStateList;
     .locals 1
+    .annotation build Landroidx/annotation/Nullable;
+    .end annotation
 
+    .line 1
     iget-object v0, p0, Landroidx/appcompat/widget/SwitchCompat;->mThumbTintList:Landroid/content/res/ColorStateList;
 
+    .line 2
+    .line 3
     return-object v0
 .end method
 
 .method public getThumbTintMode()Landroid/graphics/PorterDuff$Mode;
     .locals 1
+    .annotation build Landroidx/annotation/Nullable;
+    .end annotation
 
+    .line 1
     iget-object v0, p0, Landroidx/appcompat/widget/SwitchCompat;->mThumbTintMode:Landroid/graphics/PorterDuff$Mode;
 
+    .line 2
+    .line 3
     return-object v0
 .end method
 
 .method public getTrackDrawable()Landroid/graphics/drawable/Drawable;
     .locals 1
 
+    .line 1
     iget-object v0, p0, Landroidx/appcompat/widget/SwitchCompat;->mTrackDrawable:Landroid/graphics/drawable/Drawable;
 
+    .line 2
+    .line 3
     return-object v0
 .end method
 
 .method public getTrackTintList()Landroid/content/res/ColorStateList;
     .locals 1
+    .annotation build Landroidx/annotation/Nullable;
+    .end annotation
 
+    .line 1
     iget-object v0, p0, Landroidx/appcompat/widget/SwitchCompat;->mTrackTintList:Landroid/content/res/ColorStateList;
 
+    .line 2
+    .line 3
     return-object v0
 .end method
 
 .method public getTrackTintMode()Landroid/graphics/PorterDuff$Mode;
     .locals 1
+    .annotation build Landroidx/annotation/Nullable;
+    .end annotation
 
+    .line 1
     iget-object v0, p0, Landroidx/appcompat/widget/SwitchCompat;->mTrackTintMode:Landroid/graphics/PorterDuff$Mode;
 
+    .line 2
+    .line 3
     return-object v0
 .end method
 
@@ -4714,9 +4857,13 @@
 
 .method public setCustomSelectionActionModeCallback(Landroid/view/ActionMode$Callback;)V
     .locals 0
+    .param p1    # Landroid/view/ActionMode$Callback;
+        .annotation build Landroidx/annotation/Nullable;
+        .end annotation
+    .end param
 
     .line 1
-    invoke-static {p1, p0}, Le3/b;->E(Landroid/view/ActionMode$Callback;Landroid/widget/TextView;)Landroid/view/ActionMode$Callback;
+    invoke-static {p1, p0}, LE/p;->R(Landroid/view/ActionMode$Callback;Landroid/widget/TextView;)Landroid/view/ActionMode$Callback;
 
     .line 2
     .line 3
@@ -4793,6 +4940,10 @@
 
 .method public setFilters([Landroid/text/InputFilter;)V
     .locals 1
+    .param p1    # [Landroid/text/InputFilter;
+        .annotation build Landroidx/annotation/NonNull;
+        .end annotation
+    .end param
 
     .line 1
     invoke-direct {p0}, Landroidx/appcompat/widget/SwitchCompat;->getEmojiTextViewHelper()Landroidx/appcompat/widget/AppCompatEmojiTextHelper;
@@ -4905,7 +5056,7 @@
     .locals 3
 
     .line 1
-    sget-object v0, Lg/j;->TextAppearance:[I
+    sget-object v0, Li/j;->TextAppearance:[I
 
     .line 2
     .line 3
@@ -4917,7 +5068,7 @@
     move-result-object p1
 
     .line 7
-    sget p2, Lg/j;->TextAppearance_android_textColor:I
+    sget p2, Li/j;->TextAppearance_android_textColor:I
 
     .line 8
     .line 9
@@ -4954,7 +5105,7 @@
     .line 23
     .line 24
     :goto_0
-    sget p2, Lg/j;->TextAppearance_android_textSize:I
+    sget p2, Li/j;->TextAppearance_android_textSize:I
 
     .line 25
     .line 26
@@ -5011,7 +5162,7 @@
     .line 51
     .line 52
     :cond_1
-    sget p2, Lg/j;->TextAppearance_android_typeface:I
+    sget p2, Li/j;->TextAppearance_android_typeface:I
 
     .line 53
     .line 54
@@ -5026,7 +5177,7 @@
     move-result p2
 
     .line 59
-    sget v2, Lg/j;->TextAppearance_android_textStyle:I
+    sget v2, Li/j;->TextAppearance_android_textStyle:I
 
     .line 60
     .line 61
@@ -5043,7 +5194,7 @@
     .line 66
     .line 67
     .line 68
-    sget p2, Lg/j;->TextAppearance_textAllCaps:I
+    sget p2, Li/j;->TextAppearance_textAllCaps:I
 
     .line 69
     .line 70
@@ -5059,7 +5210,7 @@
 
     .line 75
     .line 76
-    new-instance p2, Lj/a;
+    new-instance p2, Lm/a;
 
     .line 77
     .line 78
@@ -5096,7 +5247,7 @@
 
     .line 94
     .line 95
-    iput-object v0, p2, Lj/a;->a:Ljava/util/Locale;
+    iput-object v0, p2, Lm/a;->a:Ljava/util/Locale;
 
     .line 96
     .line 97
@@ -5145,9 +5296,9 @@
 .method public setSwitchTypeface(Landroid/graphics/Typeface;)V
     .locals 1
 
+    .line 10
     iget-object v0, p0, Landroidx/appcompat/widget/SwitchCompat;->mTextPaint:Landroid/text/TextPaint;
 
-    .line 10
     invoke-virtual {v0}, Landroid/graphics/Paint;->getTypeface()Landroid/graphics/Typeface;
 
     move-result-object v0
@@ -5178,10 +5329,10 @@
 
     if-eqz p1, :cond_2
 
+    .line 12
     :cond_1
     iget-object v0, p0, Landroidx/appcompat/widget/SwitchCompat;->mTextPaint:Landroid/text/TextPaint;
 
-    .line 12
     invoke-virtual {v0, p1}, Landroid/graphics/Paint;->setTypeface(Landroid/graphics/Typeface;)Landroid/graphics/Typeface;
 
     .line 13
@@ -5239,6 +5390,7 @@
 
     and-int/2addr p1, p2
 
+    .line 5
     iget-object p2, p0, Landroidx/appcompat/widget/SwitchCompat;->mTextPaint:Landroid/text/TextPaint;
 
     and-int/lit8 v2, p1, 0x1
@@ -5247,10 +5399,10 @@
 
     const/4 v1, 0x1
 
-    .line 5
     :cond_2
     invoke-virtual {p2, v1}, Landroid/graphics/Paint;->setFakeBoldText(Z)V
 
+    .line 6
     iget-object p2, p0, Landroidx/appcompat/widget/SwitchCompat;->mTextPaint:Landroid/text/TextPaint;
 
     and-int/lit8 p1, p1, 0x2
@@ -5259,21 +5411,20 @@
 
     const/high16 v0, -0x41800000    # -0.25f
 
-    .line 6
     :cond_3
     invoke-virtual {p2, v0}, Landroid/graphics/Paint;->setTextSkewX(F)V
 
     goto :goto_2
 
+    .line 7
     :cond_4
     iget-object p2, p0, Landroidx/appcompat/widget/SwitchCompat;->mTextPaint:Landroid/text/TextPaint;
 
-    .line 7
     invoke-virtual {p2, v1}, Landroid/graphics/Paint;->setFakeBoldText(Z)V
 
+    .line 8
     iget-object p2, p0, Landroidx/appcompat/widget/SwitchCompat;->mTextPaint:Landroid/text/TextPaint;
 
-    .line 8
     invoke-virtual {p2, v0}, Landroid/graphics/Paint;->setTextSkewX(F)V
 
     .line 9
@@ -5424,7 +5575,7 @@
     move-result-object v0
 
     .line 5
-    invoke-static {v0, p1}, La0/r;->o(Landroid/content/Context;I)Landroid/graphics/drawable/Drawable;
+    invoke-static {v0, p1}, Lcom/google/android/gms/internal/measurement/Q1;->l(Landroid/content/Context;I)Landroid/graphics/drawable/Drawable;
 
     .line 6
     .line 7
@@ -5458,6 +5609,10 @@
 
 .method public setThumbTintList(Landroid/content/res/ColorStateList;)V
     .locals 0
+    .param p1    # Landroid/content/res/ColorStateList;
+        .annotation build Landroidx/annotation/Nullable;
+        .end annotation
+    .end param
 
     .line 1
     iput-object p1, p0, Landroidx/appcompat/widget/SwitchCompat;->mThumbTintList:Landroid/content/res/ColorStateList;
@@ -5481,6 +5636,10 @@
 
 .method public setThumbTintMode(Landroid/graphics/PorterDuff$Mode;)V
     .locals 0
+    .param p1    # Landroid/graphics/PorterDuff$Mode;
+        .annotation build Landroidx/annotation/Nullable;
+        .end annotation
+    .end param
 
     .line 1
     iput-object p1, p0, Landroidx/appcompat/widget/SwitchCompat;->mThumbTintMode:Landroid/graphics/PorterDuff$Mode;
@@ -5557,7 +5716,7 @@
     move-result-object v0
 
     .line 5
-    invoke-static {v0, p1}, La0/r;->o(Landroid/content/Context;I)Landroid/graphics/drawable/Drawable;
+    invoke-static {v0, p1}, Lcom/google/android/gms/internal/measurement/Q1;->l(Landroid/content/Context;I)Landroid/graphics/drawable/Drawable;
 
     .line 6
     .line 7
@@ -5575,6 +5734,10 @@
 
 .method public setTrackTintList(Landroid/content/res/ColorStateList;)V
     .locals 0
+    .param p1    # Landroid/content/res/ColorStateList;
+        .annotation build Landroidx/annotation/Nullable;
+        .end annotation
+    .end param
 
     .line 1
     iput-object p1, p0, Landroidx/appcompat/widget/SwitchCompat;->mTrackTintList:Landroid/content/res/ColorStateList;
@@ -5598,6 +5761,10 @@
 
 .method public setTrackTintMode(Landroid/graphics/PorterDuff$Mode;)V
     .locals 0
+    .param p1    # Landroid/graphics/PorterDuff$Mode;
+        .annotation build Landroidx/annotation/Nullable;
+        .end annotation
+    .end param
 
     .line 1
     iput-object p1, p0, Landroidx/appcompat/widget/SwitchCompat;->mTrackTintMode:Landroid/graphics/PorterDuff$Mode;
@@ -5645,6 +5812,10 @@
 
 .method public verifyDrawable(Landroid/graphics/drawable/Drawable;)Z
     .locals 1
+    .param p1    # Landroid/graphics/drawable/Drawable;
+        .annotation build Landroidx/annotation/NonNull;
+        .end annotation
+    .end param
 
     .line 1
     invoke-super {p0, p1}, Landroid/widget/CompoundButton;->verifyDrawable(Landroid/graphics/drawable/Drawable;)Z

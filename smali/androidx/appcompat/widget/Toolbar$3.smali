@@ -3,7 +3,7 @@
 .source "SourceFile"
 
 # interfaces
-.implements Landroidx/appcompat/view/menu/n;
+.implements Landroidx/appcompat/view/menu/l;
 
 
 # annotations
@@ -40,15 +40,23 @@
 
 
 # virtual methods
-.method public onMenuItemSelected(Landroidx/appcompat/view/menu/p;Landroid/view/MenuItem;)Z
+.method public onMenuItemSelected(Landroidx/appcompat/view/menu/n;Landroid/view/MenuItem;)Z
     .locals 1
+    .param p1    # Landroidx/appcompat/view/menu/n;
+        .annotation build Landroidx/annotation/NonNull;
+        .end annotation
+    .end param
+    .param p2    # Landroid/view/MenuItem;
+        .annotation build Landroidx/annotation/NonNull;
+        .end annotation
+    .end param
 
     .line 1
     iget-object v0, p0, Landroidx/appcompat/widget/Toolbar$3;->this$0:Landroidx/appcompat/widget/Toolbar;
 
     .line 2
     .line 3
-    iget-object v0, v0, Landroidx/appcompat/widget/Toolbar;->mMenuBuilderCallback:Landroidx/appcompat/view/menu/n;
+    iget-object v0, v0, Landroidx/appcompat/widget/Toolbar;->mMenuBuilderCallback:Landroidx/appcompat/view/menu/l;
 
     .line 4
     .line 5
@@ -56,7 +64,7 @@
 
     .line 6
     .line 7
-    invoke-interface {v0, p1, p2}, Landroidx/appcompat/view/menu/n;->onMenuItemSelected(Landroidx/appcompat/view/menu/p;Landroid/view/MenuItem;)Z
+    invoke-interface {v0, p1, p2}, Landroidx/appcompat/view/menu/l;->onMenuItemSelected(Landroidx/appcompat/view/menu/n;Landroid/view/MenuItem;)Z
 
     .line 8
     .line 9
@@ -82,8 +90,12 @@
     return p1
 .end method
 
-.method public onMenuModeChange(Landroidx/appcompat/view/menu/p;)V
+.method public onMenuModeChange(Landroidx/appcompat/view/menu/n;)V
     .locals 2
+    .param p1    # Landroidx/appcompat/view/menu/n;
+        .annotation build Landroidx/annotation/NonNull;
+        .end annotation
+    .end param
 
     .line 1
     iget-object v0, p0, Landroidx/appcompat/widget/Toolbar$3;->this$0:Landroidx/appcompat/widget/Toolbar;
@@ -147,19 +159,19 @@
     move-result-object v1
 
     .line 31
-    check-cast v1, Landroidx/core/view/t;
+    check-cast v1, Landroidx/core/view/u;
 
     .line 32
     .line 33
-    check-cast v1, Landroidx/fragment/app/p0;
+    check-cast v1, Landroidx/fragment/app/P;
 
     .line 34
     .line 35
-    iget-object v1, v1, Landroidx/fragment/app/p0;->a:Landroidx/fragment/app/v0;
+    iget-object v1, v1, Landroidx/fragment/app/P;->a:Landroidx/fragment/app/Y;
 
     .line 36
     .line 37
-    invoke-virtual {v1, p1}, Landroidx/fragment/app/v0;->s(Landroid/view/Menu;)Z
+    invoke-virtual {v1, p1}, Landroidx/fragment/app/Y;->s(Landroid/view/Menu;)Z
 
     .line 38
     .line 39
@@ -172,7 +184,7 @@
 
     .line 42
     .line 43
-    iget-object v0, v0, Landroidx/appcompat/widget/Toolbar;->mMenuBuilderCallback:Landroidx/appcompat/view/menu/n;
+    iget-object v0, v0, Landroidx/appcompat/widget/Toolbar;->mMenuBuilderCallback:Landroidx/appcompat/view/menu/l;
 
     .line 44
     .line 45
@@ -180,7 +192,7 @@
 
     .line 46
     .line 47
-    invoke-interface {v0, p1}, Landroidx/appcompat/view/menu/n;->onMenuModeChange(Landroidx/appcompat/view/menu/p;)V
+    invoke-interface {v0, p1}, Landroidx/appcompat/view/menu/l;->onMenuModeChange(Landroidx/appcompat/view/menu/n;)V
 
     .line 48
     .line 49

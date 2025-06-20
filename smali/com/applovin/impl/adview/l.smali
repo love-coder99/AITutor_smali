@@ -158,14 +158,14 @@
 
     .line 2
     .line 3
-    const-string v3, "text/html"
-
-    .line 4
-    .line 5
     const/4 v4, 0x0
 
-    .line 6
+    .line 4
     const-string v5, ""
+
+    .line 5
+    .line 6
+    const-string v3, "text/html"
 
     .line 7
     .line 8

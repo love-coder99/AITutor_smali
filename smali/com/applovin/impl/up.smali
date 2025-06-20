@@ -87,8 +87,10 @@
     .line 4
     invoke-direct {p0, p1}, Lcom/applovin/impl/xa;-><init>(Ljava/lang/String;)V
 
+    .line 5
     iput-object p2, p0, Lcom/applovin/impl/up;->b:Ljava/lang/String;
 
+    .line 6
     iput-object p3, p0, Lcom/applovin/impl/up;->c:Ljava/lang/String;
 
     return-void
@@ -234,7 +236,7 @@
 
     .line 6
     .line 7
-    invoke-static {v0, v1, v2}, Landroidx/compose/foundation/text/modifiers/f;->k(Ljava/lang/String;II)I
+    invoke-static {v1, v2, v0}, Landroidx/appcompat/view/menu/F;->y(IILjava/lang/String;)I
 
     .line 8
     .line 9

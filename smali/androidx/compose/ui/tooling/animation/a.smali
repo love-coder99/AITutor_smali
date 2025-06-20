@@ -7,15 +7,13 @@
 
 
 # static fields
-.field public static final d:Landroidx/compose/ui/text/input/j;
-
-.field public static final e:Z
+.field public static final d:Z
 
 
 # instance fields
-.field public final a:Landroidx/compose/ui/tooling/animation/r;
+.field public final a:Landroidx/compose/ui/tooling/animation/m;
 
-.field public final b:Landroidx/compose/animation/core/g;
+.field public final b:Landroidx/compose/animation/core/f;
 
 .field public final c:Landroidx/compose/animation/core/a;
 
@@ -25,97 +23,80 @@
     .locals 6
 
     .line 1
-    new-instance v0, Landroidx/compose/ui/text/input/j;
+    invoke-static {}, Landroidx/compose/animation/tooling/ComposeAnimationType;->values()[Landroidx/compose/animation/tooling/ComposeAnimationType;
 
     .line 2
     .line 3
-    const/16 v1, 0x9
-
     .line 4
-    .line 5
-    const/4 v2, 0x0
-
-    .line 6
-    invoke-direct {v0, v1, v2}, Landroidx/compose/ui/text/input/j;-><init>(II)V
-
-    .line 7
-    .line 8
-    .line 9
-    sput-object v0, Landroidx/compose/ui/tooling/animation/a;->d:Landroidx/compose/ui/text/input/j;
-
-    .line 10
-    .line 11
-    invoke-static {}, Landroidx/compose/animation/tooling/ComposeAnimationType;->values()[Landroidx/compose/animation/tooling/ComposeAnimationType;
-
-    .line 12
-    .line 13
-    .line 14
     move-result-object v0
 
-    .line 15
+    .line 5
     array-length v1, v0
 
-    .line 16
+    .line 6
+    const/4 v2, 0x0
+
+    .line 7
     const/4 v3, 0x0
 
-    .line 17
+    .line 8
     :goto_0
     if-ge v3, v1, :cond_1
 
-    .line 18
-    .line 19
+    .line 9
+    .line 10
     aget-object v4, v0, v3
 
-    .line 20
-    .line 21
+    .line 11
+    .line 12
     invoke-virtual {v4}, Landroidx/compose/animation/tooling/ComposeAnimationType;->name()Ljava/lang/String;
 
-    .line 22
-    .line 23
-    .line 24
+    .line 13
+    .line 14
+    .line 15
     move-result-object v4
 
-    .line 25
+    .line 16
     const-string v5, "ANIMATE_X_AS_STATE"
 
-    .line 26
-    .line 27
-    invoke-static {v4, v5}, Lrb/h;->d(Ljava/lang/Object;Ljava/lang/Object;)Z
+    .line 17
+    .line 18
+    invoke-static {v4, v5}, Lkotlin/jvm/internal/h;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
 
-    .line 28
-    .line 29
-    .line 30
+    .line 19
+    .line 20
+    .line 21
     move-result v4
 
-    .line 31
+    .line 22
     if-eqz v4, :cond_0
 
-    .line 32
-    .line 33
+    .line 23
+    .line 24
     const/4 v2, 0x1
 
-    .line 34
+    .line 25
     goto :goto_1
 
-    .line 35
+    .line 26
     :cond_0
     add-int/lit8 v3, v3, 0x1
 
-    .line 36
-    .line 37
+    .line 27
+    .line 28
     goto :goto_0
 
-    .line 38
+    .line 29
     :cond_1
     :goto_1
-    sput-boolean v2, Landroidx/compose/ui/tooling/animation/a;->e:Z
+    sput-boolean v2, Landroidx/compose/ui/tooling/animation/a;->d:Z
 
-    .line 39
-    .line 40
+    .line 30
+    .line 31
     return-void
 .end method
 
-.method public constructor <init>(Landroidx/compose/animation/core/a;Landroidx/compose/animation/core/g;Landroidx/compose/ui/tooling/animation/r;)V
+.method public constructor <init>(Landroidx/compose/animation/core/a;Landroidx/compose/animation/core/f;Landroidx/compose/ui/tooling/animation/m;)V
     .locals 0
 
     .line 1
@@ -124,11 +105,11 @@
     .line 2
     .line 3
     .line 4
-    iput-object p3, p0, Landroidx/compose/ui/tooling/animation/a;->a:Landroidx/compose/ui/tooling/animation/r;
+    iput-object p3, p0, Landroidx/compose/ui/tooling/animation/a;->a:Landroidx/compose/ui/tooling/animation/m;
 
     .line 5
     .line 6
-    iput-object p2, p0, Landroidx/compose/ui/tooling/animation/a;->b:Landroidx/compose/animation/core/g;
+    iput-object p2, p0, Landroidx/compose/ui/tooling/animation/a;->b:Landroidx/compose/animation/core/f;
 
     .line 7
     .line 8
@@ -168,7 +149,7 @@
 
     .line 25
     .line 26
-    invoke-static {p2}, Lkotlin/collections/q;->V([Ljava/lang/Object;)Ljava/util/Set;
+    invoke-static {p2}, LY9/o;->W([Ljava/lang/Object;)Ljava/util/Set;
 
     .line 27
     .line 28
@@ -181,7 +162,7 @@
     .line 31
     .line 32
     :cond_0
-    invoke-static {p1}, Lya/m1;->m(Ljava/lang/Object;)V
+    invoke-static {p1}, LE/p;->L(Ljava/lang/Object;)V
 
     .line 33
     .line 34

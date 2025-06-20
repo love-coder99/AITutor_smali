@@ -61,9 +61,9 @@
 .method public a(Lcom/applovin/impl/o9;)V
     .locals 4
 
+    .line 1
     iget-object v0, p0, Lcom/applovin/impl/sb$b;->a:Landroid/content/Context;
 
-    .line 1
     check-cast v0, Landroid/app/Activity;
 
     invoke-static {v0}, Lcom/applovin/impl/r;->a(Landroid/app/Activity;)Z
@@ -76,14 +76,14 @@
 
     if-eqz v0, :cond_0
 
+    .line 2
     const-string p1, "Failed to show interstitial: attempting to show ad when parent activity is finishing"
 
-    .line 2
     invoke-static {v1, p1}, Lcom/applovin/impl/sdk/n;->h(Ljava/lang/String;Ljava/lang/String;)V
 
+    .line 3
     iget-object v0, p0, Lcom/applovin/impl/sb$b;->d:Lcom/applovin/impl/sb;
 
-    .line 3
     invoke-static {v0}, Lcom/applovin/impl/sb;->a(Lcom/applovin/impl/sb;)Lcom/applovin/impl/sdk/ad/b;
 
     move-result-object v0
@@ -98,16 +98,16 @@
 
     return-void
 
+    .line 4
     :cond_0
     iget-object v0, p0, Lcom/applovin/impl/sb$b;->b:Lcom/applovin/adview/AppLovinFullscreenAdViewObserver;
 
-    .line 4
     invoke-virtual {v0, p1}, Lcom/applovin/adview/AppLovinFullscreenAdViewObserver;->setPresenter(Lcom/applovin/impl/o9;)V
 
+    .line 5
     :try_start_0
     iget-object v0, p0, Lcom/applovin/impl/sb$b;->c:Landroid/view/ViewGroup;
 
-    .line 5
     invoke-virtual {p1, v0}, Lcom/applovin/impl/o9;->a(Landroid/view/ViewGroup;)V
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
@@ -133,9 +133,9 @@
     .line 7
     invoke-static {v1, p1}, Lcom/applovin/impl/sdk/n;->h(Ljava/lang/String;Ljava/lang/String;)V
 
+    .line 8
     iget-object v0, p0, Lcom/applovin/impl/sb$b;->d:Lcom/applovin/impl/sb;
 
-    .line 8
     invoke-static {v0}, Lcom/applovin/impl/sb;->a(Lcom/applovin/impl/sb;)Lcom/applovin/impl/sdk/ad/b;
 
     move-result-object v0
@@ -155,9 +155,9 @@
 .method public a(Ljava/lang/String;Ljava/lang/Throwable;)V
     .locals 3
 
+    .line 9
     iget-object v0, p0, Lcom/applovin/impl/sb$b;->d:Lcom/applovin/impl/sb;
 
-    .line 9
     invoke-static {v0}, Lcom/applovin/impl/sb;->a(Lcom/applovin/impl/sb;)Lcom/applovin/impl/sdk/ad/b;
 
     move-result-object v0

@@ -3,14 +3,14 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lu4/b;
+.implements Lo2/b;
 
 
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "Ljava/lang/Object;",
-        "Lu4/b;"
+        "Lo2/b;"
     }
 .end annotation
 
@@ -19,8 +19,12 @@
 .method public constructor <init>()V
     .locals 0
 
+    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
+    .line 2
+    .line 3
+    .line 4
     return-void
 .end method
 
@@ -57,58 +61,66 @@
 
     .line 6
     .line 7
-    new-instance p1, Landroidx/work/f0;
+    new-instance p1, Lcom/facebook/E;
 
     .line 8
     .line 9
-    invoke-direct {p1}, Ljava/lang/Object;-><init>()V
+    const/16 v0, 0x9
 
     .line 10
     .line 11
+    invoke-direct {p1, v0}, Lcom/facebook/E;-><init>(I)V
+
     .line 12
+    .line 13
+    .line 14
     goto :goto_0
 
-    .line 13
+    .line 15
     :cond_0
     invoke-virtual {p1}, Landroid/content/Context;->getApplicationContext()Landroid/content/Context;
 
-    .line 14
-    .line 15
     .line 16
+    .line 17
+    .line 18
     move-result-object p1
 
-    .line 17
+    .line 19
     invoke-static {}, Landroid/view/Choreographer;->getInstance()Landroid/view/Choreographer;
 
-    .line 18
-    .line 19
     .line 20
+    .line 21
+    .line 22
     move-result-object v0
 
-    .line 21
-    new-instance v1, Ln4/e;
-
-    .line 22
     .line 23
-    invoke-direct {v1, p0, p1}, Ln4/e;-><init>(Landroidx/profileinstaller/ProfileInstallerInitializer;Landroid/content/Context;)V
+    new-instance v1, Ld2/e;
 
     .line 24
     .line 25
-    .line 26
-    invoke-virtual {v0, v1}, Landroid/view/Choreographer;->postFrameCallback(Landroid/view/Choreographer$FrameCallback;)V
+    invoke-direct {v1, p0, p1}, Ld2/e;-><init>(Landroidx/profileinstaller/ProfileInstallerInitializer;Landroid/content/Context;)V
 
+    .line 26
     .line 27
     .line 28
-    .line 29
-    new-instance p1, Landroidx/work/f0;
+    invoke-virtual {v0, v1}, Landroid/view/Choreographer;->postFrameCallback(Landroid/view/Choreographer$FrameCallback;)V
 
+    .line 29
     .line 30
     .line 31
-    invoke-direct {p1}, Ljava/lang/Object;-><init>()V
+    new-instance p1, Lcom/facebook/E;
 
     .line 32
     .line 33
+    const/16 v0, 0x9
+
     .line 34
+    .line 35
+    invoke-direct {p1, v0}, Lcom/facebook/E;-><init>(I)V
+
+    .line 36
+    .line 37
+    .line 38
     :goto_0
     return-object p1
 .end method

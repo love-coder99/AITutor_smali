@@ -15,9 +15,9 @@
 
 
 # static fields
-.field public static gma_ad_services_config:I = 0x7f160004
+.field public static gma_ad_services_config:I = 0x7f160005
 
-.field public static image_share_filepaths:I = 0x7f160005
+.field public static image_share_filepaths:I = 0x7f160006
 
 
 # direct methods

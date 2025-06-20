@@ -255,16 +255,17 @@
 
     if-eqz v2, :cond_7
 
+    .line 18
     const-string v2, "VBRI data size mismatch: "
 
     const-string v3, ", "
 
-    .line 18
-    invoke-static {v2, v0, v1, v3}, Lj0/d;->r(Ljava/lang/String;JLjava/lang/String;)Ljava/lang/StringBuilder;
+    .line 19
+    invoke-static {v2, v3, v0, v1}, Landroidx/compose/runtime/a0;->u(Ljava/lang/String;Ljava/lang/String;J)Ljava/lang/StringBuilder;
 
     move-result-object v0
 
-    .line 19
+    .line 20
     invoke-virtual {v0, v11, v12}, Ljava/lang/StringBuilder;->append(J)Ljava/lang/StringBuilder;
 
     invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
@@ -275,7 +276,7 @@
 
     invoke-static {v1, v0}, Lcom/applovin/impl/oc;->d(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 20
+    .line 21
     :cond_7
     new-instance v0, Lcom/applovin/impl/pq;
 
@@ -293,13 +294,13 @@
 .method public a(J)J
     .locals 3
 
+    .line 26
     iget-object v0, p0, Lcom/applovin/impl/pq;->a:[J
 
     iget-object v1, p0, Lcom/applovin/impl/pq;->b:[J
 
     const/4 v2, 0x1
 
-    .line 25
     invoke-static {v1, p1, p2, v2, v2}, Lcom/applovin/impl/xp;->b([JJZZ)I
 
     move-result p1
@@ -312,11 +313,11 @@
 .method public b(J)Lcom/applovin/impl/ij$a;
     .locals 8
 
+    .line 2
     iget-object v0, p0, Lcom/applovin/impl/pq;->a:[J
 
     const/4 v1, 0x1
 
-    .line 2
     invoke-static {v0, p1, p2, v1, v1}, Lcom/applovin/impl/xp;->b([JJZZ)I
 
     move-result v0
@@ -334,6 +335,7 @@
 
     invoke-direct {v2, v4, v5, v6, v7}, Lcom/applovin/impl/kj;-><init>(JJ)V
 
+    .line 4
     iget-wide v3, v2, Lcom/applovin/impl/kj;->a:J
 
     cmp-long v5, v3, p1
@@ -342,7 +344,6 @@
 
     iget-object p1, p0, Lcom/applovin/impl/pq;->a:[J
 
-    .line 4
     array-length p1, p1
 
     sub-int/2addr p1, v1
@@ -396,15 +397,21 @@
 .method public c()J
     .locals 2
 
+    .line 1
     iget-wide v0, p0, Lcom/applovin/impl/pq;->d:J
 
+    .line 2
+    .line 3
     return-wide v0
 .end method
 
 .method public d()J
     .locals 2
 
+    .line 1
     iget-wide v0, p0, Lcom/applovin/impl/pq;->c:J
 
+    .line 2
+    .line 3
     return-wide v0
 .end method

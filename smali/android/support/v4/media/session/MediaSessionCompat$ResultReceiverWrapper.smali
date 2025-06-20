@@ -27,14 +27,14 @@
     .locals 2
 
     .line 1
-    new-instance v0, Landroid/support/v4/media/a;
+    new-instance v0, LX7/a;
 
     .line 2
     .line 3
-    const/4 v1, 0x5
+    const/4 v1, 0x7
 
     .line 4
-    invoke-direct {v0, v1}, Landroid/support/v4/media/a;-><init>(I)V
+    invoke-direct {v0, v1}, LX7/a;-><init>(I)V
 
     .line 5
     .line 6

@@ -98,13 +98,14 @@
 .method private a()V
     .locals 1
 
+    .line 5
     iget-object v0, p0, Lcom/applovin/impl/privacy/cmp/CmpServiceImpl;->c:Lcom/applovin/impl/privacy/cmp/a;
 
     if-nez v0, :cond_0
 
     return-void
 
-    .line 3
+    .line 6
     :cond_0
     invoke-virtual {v0}, Lcom/applovin/impl/privacy/cmp/a;->a()V
 
@@ -114,18 +115,20 @@
 .method private a(Lcom/applovin/sdk/AppLovinCmpError;)V
     .locals 1
 
+    .line 2
     iget-object v0, p0, Lcom/applovin/impl/privacy/cmp/CmpServiceImpl;->d:Lcom/applovin/impl/privacy/cmp/CmpServiceImpl$d;
 
     if-nez v0, :cond_0
 
     return-void
 
-    .line 2
+    .line 3
     :cond_0
     invoke-interface {v0, p1}, Lcom/applovin/impl/privacy/cmp/CmpServiceImpl$d;->a(Lcom/applovin/sdk/AppLovinCmpError;)V
 
     const/4 p1, 0x0
 
+    .line 4
     iput-object p1, p0, Lcom/applovin/impl/privacy/cmp/CmpServiceImpl;->d:Lcom/applovin/impl/privacy/cmp/CmpServiceImpl$d;
 
     return-void
@@ -134,16 +137,16 @@
 .method private b()Lcom/applovin/impl/privacy/cmp/a;
     .locals 2
 
+    .line 5
     const-string v0, "com.google.android.ump.ConsentForm"
 
-    .line 3
     invoke-static {v0}, Lcom/applovin/impl/yp;->a(Ljava/lang/String;)Z
 
     move-result v0
 
     if-eqz v0, :cond_0
 
-    .line 4
+    .line 6
     new-instance v0, Lcom/applovin/impl/privacy/cmp/a;
 
     iget-object v1, p0, Lcom/applovin/impl/privacy/cmp/CmpServiceImpl;->a:Lcom/applovin/impl/sdk/j;
@@ -152,10 +155,10 @@
 
     return-object v0
 
+    .line 7
     :cond_0
     iget-object v0, p0, Lcom/applovin/impl/privacy/cmp/CmpServiceImpl;->a:Lcom/applovin/impl/sdk/j;
 
-    .line 5
     invoke-virtual {v0}, Lcom/applovin/impl/sdk/j;->u()Lcom/applovin/impl/h4;
 
     move-result-object v0
@@ -166,11 +169,11 @@
 
     if-eqz v0, :cond_1
 
+    .line 8
     const-string v0, "AppLovinSdk"
 
     const-string v1, "Could not load Google UMP. Please add the Google User Messaging Platform SDK into your application. Instructions can be found here: https://developers.applovin.com/en/android/overview/terms-and-privacy-policy-flow#enabling-google-ump"
 
-    .line 6
     invoke-static {v0, v1}, Lcom/applovin/impl/sdk/n;->h(Ljava/lang/String;Ljava/lang/String;)V
 
     :cond_1
@@ -191,18 +194,20 @@
 .method private b(Lcom/applovin/sdk/AppLovinCmpError;)V
     .locals 1
 
+    .line 2
     iget-object v0, p0, Lcom/applovin/impl/privacy/cmp/CmpServiceImpl;->e:Lcom/applovin/impl/privacy/cmp/CmpServiceImpl$e;
 
     if-nez v0, :cond_0
 
     return-void
 
-    .line 2
+    .line 3
     :cond_0
     invoke-interface {v0, p1}, Lcom/applovin/impl/privacy/cmp/CmpServiceImpl$e;->a(Lcom/applovin/sdk/AppLovinCmpError;)V
 
     const/4 p1, 0x0
 
+    .line 4
     iput-object p1, p0, Lcom/applovin/impl/privacy/cmp/CmpServiceImpl;->e:Lcom/applovin/impl/privacy/cmp/CmpServiceImpl$e;
 
     return-void
@@ -245,17 +250,25 @@
 .method public hasSupportedCmp()Z
     .locals 1
 
+    .line 1
     iget-object v0, p0, Lcom/applovin/impl/privacy/cmp/CmpServiceImpl;->c:Lcom/applovin/impl/privacy/cmp/a;
 
+    .line 2
+    .line 3
     if-eqz v0, :cond_0
 
+    .line 4
+    .line 5
     const/4 v0, 0x1
 
+    .line 6
     goto :goto_0
 
+    .line 7
     :cond_0
     const/4 v0, 0x0
 
+    .line 8
     :goto_0
     return v0
 .end method
@@ -471,6 +484,14 @@
 
 .method public showCmpForExistingUser(Landroid/app/Activity;Lcom/applovin/sdk/AppLovinCmpService$OnCompletedListener;)V
     .locals 3
+    .param p1    # Landroid/app/Activity;
+        .annotation build Landroidx/annotation/NonNull;
+        .end annotation
+    .end param
+    .param p2    # Lcom/applovin/sdk/AppLovinCmpService$OnCompletedListener;
+        .annotation build Landroidx/annotation/NonNull;
+        .end annotation
+    .end param
 
     .line 1
     iget-object v0, p0, Lcom/applovin/impl/privacy/cmp/CmpServiceImpl;->a:Lcom/applovin/impl/sdk/j;
@@ -627,8 +648,13 @@
 
 .method public toString()Ljava/lang/String;
     .locals 1
+    .annotation build Landroidx/annotation/NonNull;
+    .end annotation
 
+    .line 1
     const-string v0, "[CmpService]"
 
+    .line 2
+    .line 3
     return-object v0
 .end method

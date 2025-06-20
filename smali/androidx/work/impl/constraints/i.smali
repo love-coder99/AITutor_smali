@@ -4,211 +4,211 @@
 
 
 # instance fields
-.field public final a:Ljava/util/List;
+.field public final a:Ljava/util/ArrayList;
 
 
 # direct methods
-.method public constructor <init>(Lf5/m;)V
-    .locals 5
+.method public constructor <init>(Lz2/k;)V
+    .locals 14
 
     .line 1
-    const/16 v0, 0x8
+    const/4 v0, 0x3
 
     .line 2
+    const/4 v1, 0x2
+
     .line 3
-    new-array v0, v0, [Landroidx/work/impl/constraints/controllers/d;
+    const/4 v2, 0x4
 
     .line 4
+    const/4 v3, 0x1
+
     .line 5
-    new-instance v1, Landroidx/work/impl/constraints/controllers/c;
+    const/4 v4, 0x0
 
     .line 6
+    new-instance v5, Landroidx/work/impl/constraints/controllers/c;
+
     .line 7
-    iget-object v2, p1, Lf5/m;->b:Lf5/f;
-
     .line 8
-    .line 9
-    const/4 v3, 0x0
+    iget-object v6, p1, Lz2/k;->b:LZ1/z;
 
+    .line 9
     .line 10
-    invoke-direct {v1, v2, v3}, Landroidx/work/impl/constraints/controllers/c;-><init>(Lf5/f;I)V
+    invoke-direct {v5, v6, v4}, Landroidx/work/impl/constraints/controllers/c;-><init>(LZ1/z;I)V
 
     .line 11
     .line 12
     .line 13
-    aput-object v1, v0, v3
+    new-instance v6, Landroidx/work/impl/constraints/controllers/c;
 
     .line 14
     .line 15
-    new-instance v1, Landroidx/work/impl/constraints/controllers/c;
+    iget-object v7, p1, Lz2/k;->c:Lz2/a;
 
     .line 16
     .line 17
-    iget-object v2, p1, Lf5/m;->c:Lf5/a;
+    invoke-direct {v6, v7, v3}, Landroidx/work/impl/constraints/controllers/c;-><init>(LZ1/z;I)V
 
     .line 18
     .line 19
-    invoke-direct {v1, v2}, Landroidx/work/impl/constraints/controllers/c;-><init>(Lf5/a;)V
-
     .line 20
+    new-instance v7, Landroidx/work/impl/constraints/controllers/c;
+
     .line 21
     .line 22
-    const/4 v2, 0x1
+    iget-object v8, p1, Lz2/k;->e:LZ1/z;
 
     .line 23
-    aput-object v1, v0, v2
-
     .line 24
-    .line 25
-    new-instance v1, Landroidx/work/impl/constraints/controllers/c;
+    invoke-direct {v7, v8, v2}, Landroidx/work/impl/constraints/controllers/c;-><init>(LZ1/z;I)V
 
+    .line 25
     .line 26
     .line 27
-    iget-object v2, p1, Lf5/m;->e:Lf5/f;
+    new-instance v8, Landroidx/work/impl/constraints/controllers/c;
 
     .line 28
     .line 29
-    const/4 v3, 0x4
+    iget-object v9, p1, Lz2/k;->d:LZ1/z;
 
     .line 30
-    invoke-direct {v1, v2, v3}, Landroidx/work/impl/constraints/controllers/c;-><init>(Lf5/f;I)V
-
     .line 31
+    invoke-direct {v8, v9, v1}, Landroidx/work/impl/constraints/controllers/c;-><init>(LZ1/z;I)V
+
     .line 32
     .line 33
-    const/4 v2, 0x2
-
     .line 34
-    aput-object v1, v0, v2
+    new-instance v10, Landroidx/work/impl/constraints/controllers/c;
 
     .line 35
     .line 36
-    new-instance v1, Landroidx/work/impl/constraints/controllers/c;
+    invoke-direct {v10, v9, v0}, Landroidx/work/impl/constraints/controllers/c;-><init>(LZ1/z;I)V
 
     .line 37
     .line 38
-    iget-object v4, p1, Lf5/m;->d:Lf5/f;
-
     .line 39
-    .line 40
-    invoke-direct {v1, v4, v2}, Landroidx/work/impl/constraints/controllers/c;-><init>(Lf5/f;I)V
+    new-instance v11, Landroidx/work/impl/constraints/controllers/f;
 
+    .line 40
     .line 41
+    invoke-direct {v11, v9}, Landroidx/work/impl/constraints/controllers/b;-><init>(LZ1/z;)V
+
     .line 42
     .line 43
-    const/4 v2, 0x3
-
     .line 44
-    aput-object v1, v0, v2
+    new-instance v12, Landroidx/work/impl/constraints/controllers/e;
 
     .line 45
     .line 46
-    new-instance v1, Landroidx/work/impl/constraints/controllers/c;
+    invoke-direct {v12, v9}, Landroidx/work/impl/constraints/controllers/b;-><init>(LZ1/z;)V
 
     .line 47
     .line 48
-    invoke-direct {v1, v4, v2}, Landroidx/work/impl/constraints/controllers/c;-><init>(Lf5/f;I)V
-
     .line 49
+    sget v9, Landroid/os/Build$VERSION;->SDK_INT:I
+
     .line 50
     .line 51
-    aput-object v1, v0, v3
+    const/16 v13, 0x1c
 
     .line 52
     .line 53
-    new-instance v1, Landroidx/work/impl/constraints/controllers/f;
+    if-lt v9, v13, :cond_0
 
     .line 54
     .line 55
-    invoke-direct {v1, v4}, Landroidx/work/impl/constraints/controllers/b;-><init>(Lf5/f;)V
+    sget v9, Landroidx/work/impl/constraints/j;->a:I
 
     .line 56
     .line 57
-    .line 58
-    const/4 v2, 0x5
+    const-string v9, "connectivity"
 
+    .line 58
     .line 59
-    aput-object v1, v0, v2
+    iget-object p1, p1, Lz2/k;->a:Landroid/content/Context;
 
     .line 60
     .line 61
-    new-instance v1, Landroidx/work/impl/constraints/controllers/e;
+    invoke-virtual {p1, v9}, Landroid/content/Context;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
 
     .line 62
     .line 63
-    invoke-direct {v1, v4}, Landroidx/work/impl/constraints/controllers/b;-><init>(Lf5/f;)V
-
     .line 64
-    .line 65
-    .line 66
-    const/4 v2, 0x6
+    move-result-object p1
 
+    .line 65
+    check-cast p1, Landroid/net/ConnectivityManager;
+
+    .line 66
     .line 67
-    aput-object v1, v0, v2
+    new-instance v9, Landroidx/work/impl/constraints/e;
 
     .line 68
     .line 69
-    sget v1, Landroid/os/Build$VERSION;->SDK_INT:I
+    invoke-direct {v9, p1}, Landroidx/work/impl/constraints/e;-><init>(Landroid/net/ConnectivityManager;)V
 
     .line 70
     .line 71
-    const/16 v2, 0x1c
-
     .line 72
+    goto :goto_0
+
     .line 73
-    if-lt v1, v2, :cond_0
+    :cond_0
+    const/4 v9, 0x0
 
     .line 74
+    :goto_0
+    const/16 p1, 0x8
+
     .line 75
-    sget v1, Landroidx/work/impl/constraints/j;->b:I
-
     .line 76
+    new-array p1, p1, [Landroidx/work/impl/constraints/controllers/d;
+
     .line 77
-    const-string v1, "connectivity"
-
     .line 78
+    aput-object v5, p1, v4
+
     .line 79
-    iget-object p1, p1, Lf5/m;->a:Landroid/content/Context;
-
     .line 80
-    .line 81
-    invoke-virtual {p1, v1}, Landroid/content/Context;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
+    aput-object v6, p1, v3
 
+    .line 81
     .line 82
+    aput-object v7, p1, v1
+
     .line 83
     .line 84
-    move-result-object p1
+    aput-object v8, p1, v0
 
     .line 85
-    check-cast p1, Landroid/net/ConnectivityManager;
-
     .line 86
-    .line 87
-    new-instance v1, Landroidx/work/impl/constraints/e;
+    aput-object v10, p1, v2
 
+    .line 87
     .line 88
+    const/4 v0, 0x5
+
     .line 89
-    invoke-direct {v1, p1}, Landroidx/work/impl/constraints/e;-><init>(Landroid/net/ConnectivityManager;)V
+    aput-object v11, p1, v0
 
     .line 90
     .line 91
+    const/4 v0, 0x6
+
     .line 92
-    goto :goto_0
+    aput-object v12, p1, v0
 
     .line 93
-    :cond_0
-    const/4 v1, 0x0
-
     .line 94
-    :goto_0
-    const/4 p1, 0x7
+    const/4 v0, 0x7
 
     .line 95
-    aput-object v1, v0, p1
+    aput-object v9, p1, v0
 
     .line 96
     .line 97
-    invoke-static {v0}, Lkotlin/collections/q;->Q([Ljava/lang/Object;)Ljava/util/ArrayList;
+    invoke-static {p1}, LY9/o;->Q([Ljava/lang/Object;)Ljava/util/ArrayList;
 
     .line 98
     .line 99
@@ -221,7 +221,7 @@
     .line 102
     .line 103
     .line 104
-    iput-object p1, p0, Landroidx/work/impl/constraints/i;->a:Ljava/util/List;
+    iput-object p1, p0, Landroidx/work/impl/constraints/i;->a:Ljava/util/ArrayList;
 
     .line 105
     .line 106
@@ -230,356 +230,343 @@
 
 
 # virtual methods
-.method public final a(Lh5/q;)Z
-    .locals 8
+.method public final a(LB2/p;)Z
+    .locals 7
 
     .line 1
-    iget-object v0, p0, Landroidx/work/impl/constraints/i;->a:Ljava/util/List;
+    new-instance v6, Ljava/util/ArrayList;
 
     .line 2
     .line 3
-    check-cast v0, Ljava/lang/Iterable;
+    invoke-direct {v6}, Ljava/util/ArrayList;-><init>()V
 
     .line 4
     .line 5
-    new-instance v7, Ljava/util/ArrayList;
-
     .line 6
-    .line 7
-    invoke-direct {v7}, Ljava/util/ArrayList;-><init>()V
+    iget-object v0, p0, Landroidx/work/impl/constraints/i;->a:Ljava/util/ArrayList;
 
+    .line 7
     .line 8
+    invoke-virtual {v0}, Ljava/util/ArrayList;->iterator()Ljava/util/Iterator;
+
     .line 9
     .line 10
-    invoke-interface {v0}, Ljava/lang/Iterable;->iterator()Ljava/util/Iterator;
-
     .line 11
-    .line 12
-    .line 13
     move-result-object v0
 
-    .line 14
+    .line 12
     :cond_0
     :goto_0
     invoke-interface {v0}, Ljava/util/Iterator;->hasNext()Z
 
+    .line 13
+    .line 14
     .line 15
-    .line 16
-    .line 17
     move-result v1
 
-    .line 18
+    .line 16
     if-eqz v1, :cond_1
+
+    .line 17
+    .line 18
+    invoke-interface {v0}, Ljava/util/Iterator;->next()Ljava/lang/Object;
 
     .line 19
     .line 20
-    invoke-interface {v0}, Ljava/util/Iterator;->next()Ljava/lang/Object;
-
     .line 21
-    .line 22
-    .line 23
     move-result-object v1
 
-    .line 24
+    .line 22
     move-object v2, v1
 
-    .line 25
+    .line 23
     check-cast v2, Landroidx/work/impl/constraints/controllers/d;
+
+    .line 24
+    .line 25
+    invoke-interface {v2, p1}, Landroidx/work/impl/constraints/controllers/d;->b(LB2/p;)Z
 
     .line 26
     .line 27
-    invoke-interface {v2, p1}, Landroidx/work/impl/constraints/controllers/d;->b(Lh5/q;)Z
-
     .line 28
-    .line 29
-    .line 30
     move-result v2
 
-    .line 31
+    .line 29
     if-eqz v2, :cond_0
+
+    .line 30
+    .line 31
+    invoke-virtual {v6, v1}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
     .line 32
     .line 33
-    invoke-virtual {v7, v1}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
-
     .line 34
-    .line 35
-    .line 36
     goto :goto_0
 
-    .line 37
+    .line 35
     :cond_1
-    invoke-virtual {v7}, Ljava/util/ArrayList;->isEmpty()Z
+    invoke-virtual {v6}, Ljava/util/ArrayList;->isEmpty()Z
 
+    .line 36
+    .line 37
     .line 38
-    .line 39
-    .line 40
     move-result p1
 
+    .line 39
+    if-nez p1, :cond_2
+
+    .line 40
     .line 41
-    xor-int/lit8 p1, p1, 0x1
+    invoke-static {}, Landroidx/work/A;->a()Landroidx/work/A;
 
     .line 42
     .line 43
-    if-eqz p1, :cond_2
-
     .line 44
+    move-result-object p1
+
     .line 45
-    invoke-static {}, Landroidx/work/u;->a()Landroidx/work/u;
+    sget v0, Landroidx/work/impl/constraints/j;->a:I
 
     .line 46
     .line 47
+    sget-object v4, Landroidx/work/impl/constraints/WorkConstraintsTracker$areAllConstraintsMet$1;->INSTANCE:Landroidx/work/impl/constraints/WorkConstraintsTracker$areAllConstraintsMet$1;
+
     .line 48
-    move-result-object p1
-
     .line 49
-    sget v0, Landroidx/work/impl/constraints/j;->b:I
-
-    .line 50
-    .line 51
     const/4 v2, 0x0
 
-    .line 52
+    .line 50
     const/4 v3, 0x0
 
-    .line 53
-    const/4 v4, 0x0
+    .line 51
+    const/4 v1, 0x0
 
+    .line 52
+    const/16 v5, 0x1f
+
+    .line 53
     .line 54
-    sget-object v5, Landroidx/work/impl/constraints/WorkConstraintsTracker$areAllConstraintsMet$1;->INSTANCE:Landroidx/work/impl/constraints/WorkConstraintsTracker$areAllConstraintsMet$1;
+    move-object v0, v6
 
     .line 55
-    .line 56
-    const/16 v6, 0x1f
+    invoke-static/range {v0 .. v5}, LY9/q;->V(Ljava/lang/Iterable;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Lka/c;I)Ljava/lang/String;
 
+    .line 56
     .line 57
     .line 58
-    move-object v1, v7
-
-    .line 59
-    invoke-static/range {v1 .. v6}, Lkotlin/collections/w;->P0(Ljava/lang/Iterable;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Lzh/c;I)Ljava/lang/String;
-
-    .line 60
-    .line 61
-    .line 62
     invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
+    .line 59
+    .line 60
+    .line 61
+    :cond_2
+    invoke-virtual {v6}, Ljava/util/ArrayList;->isEmpty()Z
+
+    .line 62
     .line 63
     .line 64
-    .line 65
-    :cond_2
-    invoke-virtual {v7}, Ljava/util/ArrayList;->isEmpty()Z
-
-    .line 66
-    .line 67
-    .line 68
     move-result p1
 
-    .line 69
+    .line 65
     return p1
 .end method
 
-.method public final b(Lh5/q;)Lkotlinx/coroutines/flow/h;
+.method public final b(LB2/p;)Lkotlinx/coroutines/flow/f;
     .locals 4
 
     .line 1
-    iget-object v0, p0, Landroidx/work/impl/constraints/i;->a:Ljava/util/List;
+    new-instance v0, Ljava/util/ArrayList;
 
     .line 2
     .line 3
-    check-cast v0, Ljava/lang/Iterable;
+    invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
 
     .line 4
     .line 5
-    new-instance v1, Ljava/util/ArrayList;
-
     .line 6
-    .line 7
-    invoke-direct {v1}, Ljava/util/ArrayList;-><init>()V
+    iget-object v1, p0, Landroidx/work/impl/constraints/i;->a:Ljava/util/ArrayList;
 
+    .line 7
     .line 8
+    invoke-virtual {v1}, Ljava/util/ArrayList;->iterator()Ljava/util/Iterator;
+
     .line 9
     .line 10
-    invoke-interface {v0}, Ljava/lang/Iterable;->iterator()Ljava/util/Iterator;
-
     .line 11
-    .line 12
-    .line 13
-    move-result-object v0
+    move-result-object v1
 
-    .line 14
+    .line 12
     :cond_0
     :goto_0
-    invoke-interface {v0}, Ljava/util/Iterator;->hasNext()Z
+    invoke-interface {v1}, Ljava/util/Iterator;->hasNext()Z
 
+    .line 13
+    .line 14
     .line 15
-    .line 16
-    .line 17
     move-result v2
 
-    .line 18
+    .line 16
     if-eqz v2, :cond_1
+
+    .line 17
+    .line 18
+    invoke-interface {v1}, Ljava/util/Iterator;->next()Ljava/lang/Object;
 
     .line 19
     .line 20
-    invoke-interface {v0}, Ljava/util/Iterator;->next()Ljava/lang/Object;
-
     .line 21
-    .line 22
-    .line 23
     move-result-object v2
 
-    .line 24
+    .line 22
     move-object v3, v2
 
-    .line 25
+    .line 23
     check-cast v3, Landroidx/work/impl/constraints/controllers/d;
+
+    .line 24
+    .line 25
+    invoke-interface {v3, p1}, Landroidx/work/impl/constraints/controllers/d;->c(LB2/p;)Z
 
     .line 26
     .line 27
-    invoke-interface {v3, p1}, Landroidx/work/impl/constraints/controllers/d;->c(Lh5/q;)Z
-
     .line 28
-    .line 29
-    .line 30
     move-result v3
 
-    .line 31
+    .line 29
     if-eqz v3, :cond_0
+
+    .line 30
+    .line 31
+    invoke-virtual {v0, v2}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
     .line 32
     .line 33
-    invoke-virtual {v1, v2}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
-
     .line 34
-    .line 35
-    .line 36
     goto :goto_0
 
-    .line 37
+    .line 35
     :cond_1
-    new-instance v0, Ljava/util/ArrayList;
+    new-instance v1, Ljava/util/ArrayList;
+
+    .line 36
+    .line 37
+    const/16 v2, 0xa
 
     .line 38
     .line 39
-    const/16 v2, 0xa
+    invoke-static {v0, v2}, LY9/s;->D(Ljava/lang/Iterable;I)I
 
     .line 40
     .line 41
-    invoke-static {v1, v2}, Lkotlin/collections/r;->x0(Ljava/lang/Iterable;I)I
-
     .line 42
-    .line 43
-    .line 44
     move-result v2
 
-    .line 45
-    invoke-direct {v0, v2}, Ljava/util/ArrayList;-><init>(I)V
+    .line 43
+    invoke-direct {v1, v2}, Ljava/util/ArrayList;-><init>(I)V
 
+    .line 44
+    .line 45
     .line 46
+    invoke-virtual {v0}, Ljava/util/ArrayList;->iterator()Ljava/util/Iterator;
+
     .line 47
     .line 48
-    invoke-virtual {v1}, Ljava/util/ArrayList;->iterator()Ljava/util/Iterator;
-
     .line 49
+    move-result-object v0
+
     .line 50
-    .line 51
-    move-result-object v1
-
-    .line 52
     :goto_1
-    invoke-interface {v1}, Ljava/util/Iterator;->hasNext()Z
+    invoke-interface {v0}, Ljava/util/Iterator;->hasNext()Z
 
+    .line 51
+    .line 52
     .line 53
-    .line 54
-    .line 55
     move-result v2
 
-    .line 56
+    .line 54
     if-eqz v2, :cond_2
+
+    .line 55
+    .line 56
+    invoke-interface {v0}, Ljava/util/Iterator;->next()Ljava/lang/Object;
 
     .line 57
     .line 58
-    invoke-interface {v1}, Ljava/util/Iterator;->next()Ljava/lang/Object;
-
     .line 59
-    .line 60
-    .line 61
     move-result-object v2
 
-    .line 62
+    .line 60
     check-cast v2, Landroidx/work/impl/constraints/controllers/d;
+
+    .line 61
+    .line 62
+    iget-object v3, p1, LB2/p;->j:Landroidx/work/e;
 
     .line 63
     .line 64
-    iget-object v3, p1, Lh5/q;->j:Landroidx/work/f;
+    invoke-interface {v2, v3}, Landroidx/work/impl/constraints/controllers/d;->a(Landroidx/work/e;)Lkotlinx/coroutines/flow/b;
 
     .line 65
     .line 66
-    invoke-interface {v2, v3}, Landroidx/work/impl/constraints/controllers/d;->a(Landroidx/work/f;)Lkotlinx/coroutines/flow/b;
-
     .line 67
-    .line 68
-    .line 69
     move-result-object v2
 
-    .line 70
-    invoke-virtual {v0, v2}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
+    .line 68
+    invoke-virtual {v1, v2}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
+    .line 69
+    .line 70
     .line 71
-    .line 72
-    .line 73
     goto :goto_1
 
-    .line 74
+    .line 72
     :cond_2
-    invoke-static {v0}, Lkotlin/collections/w;->d1(Ljava/lang/Iterable;)Ljava/util/List;
+    invoke-static {v1}, LY9/q;->i0(Ljava/lang/Iterable;)Ljava/util/List;
 
+    .line 73
+    .line 74
     .line 75
-    .line 76
-    .line 77
     move-result-object p1
 
-    .line 78
-    check-cast p1, Ljava/util/Collection;
-
-    .line 79
-    .line 80
+    .line 76
     const/4 v0, 0x0
 
-    .line 81
-    new-array v1, v0, [Lkotlinx/coroutines/flow/h;
+    .line 77
+    new-array v0, v0, [Lkotlinx/coroutines/flow/f;
 
+    .line 78
+    .line 79
+    invoke-interface {p1, v0}, Ljava/util/Collection;->toArray([Ljava/lang/Object;)[Ljava/lang/Object;
+
+    .line 80
+    .line 81
     .line 82
+    move-result-object p1
+
     .line 83
-    invoke-interface {p1, v1}, Ljava/util/Collection;->toArray([Ljava/lang/Object;)[Ljava/lang/Object;
+    check-cast p1, [Lkotlinx/coroutines/flow/f;
 
     .line 84
     .line 85
-    .line 86
-    move-result-object p1
+    new-instance v0, Landroidx/datastore/core/l;
 
+    .line 86
     .line 87
-    check-cast p1, [Lkotlinx/coroutines/flow/h;
+    const/4 v1, 0x1
 
     .line 88
-    .line 89
-    new-instance v1, Landroidx/work/impl/constraints/h;
+    invoke-direct {v0, p1, v1}, Landroidx/datastore/core/l;-><init>(Ljava/lang/Object;I)V
 
+    .line 89
     .line 90
     .line 91
-    invoke-direct {v1, p1, v0}, Landroidx/work/impl/constraints/h;-><init>(Ljava/io/Serializable;I)V
+    invoke-static {v0}, Lkotlinx/coroutines/flow/h;->k(Lkotlinx/coroutines/flow/f;)Lkotlinx/coroutines/flow/f;
 
     .line 92
     .line 93
     .line 94
-    invoke-static {v1}, Lkotlinx/coroutines/flow/j;->l(Lkotlinx/coroutines/flow/h;)Lkotlinx/coroutines/flow/h;
-
-    .line 95
-    .line 96
-    .line 97
     move-result-object p1
 
-    .line 98
+    .line 95
     return-object p1
 .end method

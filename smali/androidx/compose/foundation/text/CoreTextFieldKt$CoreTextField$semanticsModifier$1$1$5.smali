@@ -3,12 +3,12 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lzh/a;
+.implements Lka/a;
 
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Landroidx/compose/foundation/text/CoreTextFieldKt$CoreTextField$semanticsModifier$1$1;->invoke(Landroidx/compose/ui/semantics/u;)V
+    value = Landroidx/compose/foundation/text/CoreTextFieldKt$CoreTextField$semanticsModifier$1$1;->invoke(Landroidx/compose/ui/semantics/t;)V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -19,7 +19,7 @@
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "Lkotlin/jvm/internal/Lambda;",
-        "Lzh/a;"
+        "Lka/a;"
     }
 .end annotation
 
@@ -44,18 +44,18 @@
 
 
 # instance fields
-.field final synthetic $imeOptions:Landroidx/compose/ui/text/input/o;
+.field final synthetic $imeOptions:Landroidx/compose/ui/text/input/m;
 
-.field final synthetic $state:Landroidx/compose/foundation/text/t;
+.field final synthetic $state:Landroidx/compose/foundation/text/s;
 
 
 # direct methods
-.method public constructor <init>(Landroidx/compose/foundation/text/t;Landroidx/compose/ui/text/input/o;)V
+.method public constructor <init>(Landroidx/compose/foundation/text/s;Landroidx/compose/ui/text/input/m;)V
     .locals 0
 
-    iput-object p1, p0, Landroidx/compose/foundation/text/CoreTextFieldKt$CoreTextField$semanticsModifier$1$1$5;->$state:Landroidx/compose/foundation/text/t;
+    iput-object p1, p0, Landroidx/compose/foundation/text/CoreTextFieldKt$CoreTextField$semanticsModifier$1$1$5;->$state:Landroidx/compose/foundation/text/s;
 
-    iput-object p2, p0, Landroidx/compose/foundation/text/CoreTextFieldKt$CoreTextField$semanticsModifier$1$1$5;->$imeOptions:Landroidx/compose/ui/text/input/o;
+    iput-object p2, p0, Landroidx/compose/foundation/text/CoreTextFieldKt$CoreTextField$semanticsModifier$1$1$5;->$imeOptions:Landroidx/compose/ui/text/input/m;
 
     const/4 p1, 0x0
 
@@ -69,24 +69,27 @@
 .method public final invoke()Ljava/lang/Boolean;
     .locals 3
 
-    iget-object v0, p0, Landroidx/compose/foundation/text/CoreTextFieldKt$CoreTextField$semanticsModifier$1$1$5;->$state:Landroidx/compose/foundation/text/t;
-
     .line 2
-    iget-object v0, v0, Landroidx/compose/foundation/text/t;->u:Lzh/c;
-
-    iget-object v1, p0, Landroidx/compose/foundation/text/CoreTextFieldKt$CoreTextField$semanticsModifier$1$1$5;->$imeOptions:Landroidx/compose/ui/text/input/o;
+    iget-object v0, p0, Landroidx/compose/foundation/text/CoreTextFieldKt$CoreTextField$semanticsModifier$1$1$5;->$state:Landroidx/compose/foundation/text/s;
 
     .line 3
-    iget v1, v1, Landroidx/compose/ui/text/input/o;->e:I
+    iget-object v0, v0, Landroidx/compose/foundation/text/s;->u:Lka/c;
 
     .line 4
-    new-instance v2, Landroidx/compose/ui/text/input/m;
-
-    invoke-direct {v2, v1}, Landroidx/compose/ui/text/input/m;-><init>(I)V
+    iget-object v1, p0, Landroidx/compose/foundation/text/CoreTextFieldKt$CoreTextField$semanticsModifier$1$1$5;->$imeOptions:Landroidx/compose/ui/text/input/m;
 
     .line 5
-    invoke-interface {v0, v2}, Lzh/c;->invoke(Ljava/lang/Object;)Ljava/lang/Object;
+    iget v1, v1, Landroidx/compose/ui/text/input/m;->e:I
 
+    .line 6
+    new-instance v2, Landroidx/compose/ui/text/input/l;
+
+    invoke-direct {v2, v1}, Landroidx/compose/ui/text/input/l;-><init>(I)V
+
+    .line 7
+    invoke-interface {v0, v2}, Lka/c;->invoke(Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 8
     sget-object v0, Ljava/lang/Boolean;->TRUE:Ljava/lang/Boolean;
 
     return-object v0

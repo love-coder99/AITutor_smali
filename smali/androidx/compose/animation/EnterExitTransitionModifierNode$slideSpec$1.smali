@@ -3,14 +3,14 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lzh/c;
+.implements Lka/c;
 
 
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "Lkotlin/jvm/internal/Lambda;",
-        "Lzh/c;"
+        "Lka/c;"
     }
 .end annotation
 
@@ -19,12 +19,12 @@
         "\u0000\u0014\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0008\u0003\u0010\u0006\u001a\u0008\u0012\u0004\u0012\u00020\u00030\u0002*\u0008\u0012\u0004\u0012\u00020\u00010\u0000H\n\u00a2\u0006\u0004\u0008\u0004\u0010\u0005"
     }
     d2 = {
-        "Landroidx/compose/animation/core/a1;",
+        "Landroidx/compose/animation/core/V;",
         "Landroidx/compose/animation/EnterExitState;",
-        "Landroidx/compose/animation/core/z;",
-        "Lh2/h;",
+        "Landroidx/compose/animation/core/w;",
+        "LM0/h;",
         "invoke",
-        "(Landroidx/compose/animation/core/a1;)Landroidx/compose/animation/core/z;",
+        "(Landroidx/compose/animation/core/V;)Landroidx/compose/animation/core/w;",
         "<anonymous>"
     }
     k = 0x3
@@ -37,14 +37,14 @@
 
 
 # instance fields
-.field final synthetic this$0:Landroidx/compose/animation/z;
+.field final synthetic this$0:Landroidx/compose/animation/y;
 
 
 # direct methods
-.method public constructor <init>(Landroidx/compose/animation/z;)V
+.method public constructor <init>(Landroidx/compose/animation/y;)V
     .locals 0
 
-    iput-object p1, p0, Landroidx/compose/animation/EnterExitTransitionModifierNode$slideSpec$1;->this$0:Landroidx/compose/animation/z;
+    iput-object p1, p0, Landroidx/compose/animation/EnterExitTransitionModifierNode$slideSpec$1;->this$0:Landroidx/compose/animation/y;
 
     const/4 p1, 0x1
 
@@ -55,77 +55,81 @@
 
 
 # virtual methods
-.method public final invoke(Landroidx/compose/animation/core/a1;)Landroidx/compose/animation/core/z;
+.method public final invoke(Landroidx/compose/animation/core/V;)Landroidx/compose/animation/core/w;
     .locals 2
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
-            "Landroidx/compose/animation/core/a1;",
+            "Landroidx/compose/animation/core/V;",
             ")",
-            "Landroidx/compose/animation/core/z;"
+            "Landroidx/compose/animation/core/w;"
         }
     .end annotation
 
+    .line 2
     sget-object v0, Landroidx/compose/animation/EnterExitState;->PreEnter:Landroidx/compose/animation/EnterExitState;
 
     sget-object v1, Landroidx/compose/animation/EnterExitState;->Visible:Landroidx/compose/animation/EnterExitState;
 
-    .line 2
-    invoke-interface {p1, v0, v1}, Landroidx/compose/animation/core/a1;->b(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-interface {p1, v0, v1}, Landroidx/compose/animation/core/V;->b(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result v0
 
     if-eqz v0, :cond_0
 
-    iget-object p1, p0, Landroidx/compose/animation/EnterExitTransitionModifierNode$slideSpec$1;->this$0:Landroidx/compose/animation/z;
-
     .line 3
-    iget-object p1, p1, Landroidx/compose/animation/z;->t:Landroidx/compose/animation/a0;
-
-    check-cast p1, Landroidx/compose/animation/b0;
+    iget-object p1, p0, Landroidx/compose/animation/EnterExitTransitionModifierNode$slideSpec$1;->this$0:Landroidx/compose/animation/y;
 
     .line 4
-    iget-object p1, p1, Landroidx/compose/animation/b0;->b:Landroidx/compose/animation/r0;
+    iget-object p1, p1, Landroidx/compose/animation/y;->s:Landroidx/compose/animation/z;
 
     .line 5
-    invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+    check-cast p1, Landroidx/compose/animation/A;
 
     .line 6
-    sget-object p1, Landroidx/compose/animation/x;->c:Landroidx/compose/animation/core/u0;
+    iget-object p1, p1, Landroidx/compose/animation/A;->b:Landroidx/compose/animation/L;
+
+    .line 7
+    invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    .line 8
+    sget-object p1, Landroidx/compose/animation/w;->c:Landroidx/compose/animation/core/O;
 
     goto :goto_0
 
+    .line 9
     :cond_0
     sget-object v0, Landroidx/compose/animation/EnterExitState;->PostExit:Landroidx/compose/animation/EnterExitState;
 
-    .line 7
-    invoke-interface {p1, v1, v0}, Landroidx/compose/animation/core/a1;->b(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-interface {p1, v1, v0}, Landroidx/compose/animation/core/V;->b(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result p1
 
     if-eqz p1, :cond_1
 
-    iget-object p1, p0, Landroidx/compose/animation/EnterExitTransitionModifierNode$slideSpec$1;->this$0:Landroidx/compose/animation/z;
-
-    .line 8
-    iget-object p1, p1, Landroidx/compose/animation/z;->u:Landroidx/compose/animation/c0;
-
-    check-cast p1, Landroidx/compose/animation/d0;
-
-    .line 9
-    iget-object p1, p1, Landroidx/compose/animation/d0;->c:Landroidx/compose/animation/r0;
-
     .line 10
-    invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+    iget-object p1, p0, Landroidx/compose/animation/EnterExitTransitionModifierNode$slideSpec$1;->this$0:Landroidx/compose/animation/y;
 
     .line 11
-    sget-object p1, Landroidx/compose/animation/x;->c:Landroidx/compose/animation/core/u0;
+    iget-object p1, p1, Landroidx/compose/animation/y;->t:Landroidx/compose/animation/B;
+
+    .line 12
+    check-cast p1, Landroidx/compose/animation/C;
+
+    .line 13
+    iget-object p1, p1, Landroidx/compose/animation/C;->c:Landroidx/compose/animation/L;
+
+    .line 14
+    invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    .line 15
+    sget-object p1, Landroidx/compose/animation/w;->c:Landroidx/compose/animation/core/O;
 
     goto :goto_0
 
-    .line 12
+    .line 16
     :cond_1
-    sget-object p1, Landroidx/compose/animation/x;->c:Landroidx/compose/animation/core/u0;
+    sget-object p1, Landroidx/compose/animation/w;->c:Landroidx/compose/animation/core/O;
 
     :goto_0
     return-object p1
@@ -135,9 +139,9 @@
     .locals 0
 
     .line 1
-    check-cast p1, Landroidx/compose/animation/core/a1;
+    check-cast p1, Landroidx/compose/animation/core/V;
 
-    invoke-virtual {p0, p1}, Landroidx/compose/animation/EnterExitTransitionModifierNode$slideSpec$1;->invoke(Landroidx/compose/animation/core/a1;)Landroidx/compose/animation/core/z;
+    invoke-virtual {p0, p1}, Landroidx/compose/animation/EnterExitTransitionModifierNode$slideSpec$1;->invoke(Landroidx/compose/animation/core/V;)Landroidx/compose/animation/core/w;
 
     move-result-object p1
 

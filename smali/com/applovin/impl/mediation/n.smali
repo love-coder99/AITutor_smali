@@ -19,56 +19,59 @@
     .locals 0
 
     .line 1
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
-
-    .line 2
-    .line 3
-    .line 4
     iput p3, p0, Lcom/applovin/impl/mediation/n;->b:I
 
-    .line 5
-    .line 6
     iput-object p1, p0, Lcom/applovin/impl/mediation/n;->c:Lcom/applovin/impl/mediation/g;
 
-    .line 7
-    .line 8
     iput-object p2, p0, Lcom/applovin/impl/mediation/n;->d:Landroid/app/Activity;
 
-    .line 9
-    .line 10
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
     return-void
 .end method
 
 
 # virtual methods
 .method public final run()V
-    .locals 3
+    .locals 2
 
     .line 1
     iget v0, p0, Lcom/applovin/impl/mediation/n;->b:I
 
-    iget-object v1, p0, Lcom/applovin/impl/mediation/n;->d:Landroid/app/Activity;
-
-    iget-object v2, p0, Lcom/applovin/impl/mediation/n;->c:Lcom/applovin/impl/mediation/g;
-
     packed-switch v0, :pswitch_data_0
 
-    invoke-static {v2, v1}, Lcom/applovin/impl/mediation/g;->u(Lcom/applovin/impl/mediation/g;Landroid/app/Activity;)V
+    iget-object v0, p0, Lcom/applovin/impl/mediation/n;->c:Lcom/applovin/impl/mediation/g;
+
+    iget-object v1, p0, Lcom/applovin/impl/mediation/n;->d:Landroid/app/Activity;
+
+    invoke-static {v0, v1}, Lcom/applovin/impl/mediation/g;->t(Lcom/applovin/impl/mediation/g;Landroid/app/Activity;)V
 
     return-void
 
     :pswitch_0
-    invoke-static {v2, v1}, Lcom/applovin/impl/mediation/g;->a(Lcom/applovin/impl/mediation/g;Landroid/app/Activity;)V
+    iget-object v0, p0, Lcom/applovin/impl/mediation/n;->c:Lcom/applovin/impl/mediation/g;
+
+    iget-object v1, p0, Lcom/applovin/impl/mediation/n;->d:Landroid/app/Activity;
+
+    invoke-static {v0, v1}, Lcom/applovin/impl/mediation/g;->v(Lcom/applovin/impl/mediation/g;Landroid/app/Activity;)V
 
     return-void
 
     :pswitch_1
-    invoke-static {v2, v1}, Lcom/applovin/impl/mediation/g;->v(Lcom/applovin/impl/mediation/g;Landroid/app/Activity;)V
+    iget-object v0, p0, Lcom/applovin/impl/mediation/n;->c:Lcom/applovin/impl/mediation/g;
+
+    iget-object v1, p0, Lcom/applovin/impl/mediation/n;->d:Landroid/app/Activity;
+
+    invoke-static {v0, v1}, Lcom/applovin/impl/mediation/g;->s(Lcom/applovin/impl/mediation/g;Landroid/app/Activity;)V
 
     return-void
 
     :pswitch_2
-    invoke-static {v2, v1}, Lcom/applovin/impl/mediation/g;->o(Lcom/applovin/impl/mediation/g;Landroid/app/Activity;)V
+    iget-object v0, p0, Lcom/applovin/impl/mediation/n;->c:Lcom/applovin/impl/mediation/g;
+
+    iget-object v1, p0, Lcom/applovin/impl/mediation/n;->d:Landroid/app/Activity;
+
+    invoke-static {v0, v1}, Lcom/applovin/impl/mediation/g;->w(Lcom/applovin/impl/mediation/g;Landroid/app/Activity;)V
 
     return-void
 

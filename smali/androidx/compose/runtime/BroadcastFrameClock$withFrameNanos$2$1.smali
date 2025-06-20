@@ -3,14 +3,14 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lzh/c;
+.implements Lka/c;
 
 
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "Lkotlin/jvm/internal/Lambda;",
-        "Lzh/c;"
+        "Lka/c;"
     }
 .end annotation
 
@@ -22,7 +22,7 @@
         "R",
         "",
         "it",
-        "Lqh/r;",
+        "LX9/j;",
         "invoke",
         "(Ljava/lang/Throwable;)V",
         "<anonymous>"
@@ -37,32 +37,32 @@
 
 
 # instance fields
-.field final synthetic $awaiter:Landroidx/compose/runtime/g;
+.field final synthetic $awaiter:Landroidx/compose/runtime/e;
     .annotation system Ldalvik/annotation/Signature;
         value = {
-            "Landroidx/compose/runtime/g;"
+            "Landroidx/compose/runtime/e;"
         }
     .end annotation
 .end field
 
-.field final synthetic this$0:Landroidx/compose/runtime/h;
+.field final synthetic this$0:Landroidx/compose/runtime/f;
 
 
 # direct methods
-.method public constructor <init>(Landroidx/compose/runtime/h;Landroidx/compose/runtime/g;)V
+.method public constructor <init>(Landroidx/compose/runtime/f;Landroidx/compose/runtime/e;)V
     .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
-            "Landroidx/compose/runtime/h;",
-            "Landroidx/compose/runtime/g;",
+            "Landroidx/compose/runtime/f;",
+            "Landroidx/compose/runtime/e;",
             ")V"
         }
     .end annotation
 
-    iput-object p1, p0, Landroidx/compose/runtime/BroadcastFrameClock$withFrameNanos$2$1;->this$0:Landroidx/compose/runtime/h;
+    iput-object p1, p0, Landroidx/compose/runtime/BroadcastFrameClock$withFrameNanos$2$1;->this$0:Landroidx/compose/runtime/f;
 
-    iput-object p2, p0, Landroidx/compose/runtime/BroadcastFrameClock$withFrameNanos$2$1;->$awaiter:Landroidx/compose/runtime/g;
+    iput-object p2, p0, Landroidx/compose/runtime/BroadcastFrameClock$withFrameNanos$2$1;->$awaiter:Landroidx/compose/runtime/e;
 
     const/4 p1, 0x1
 
@@ -76,12 +76,12 @@
 .method public bridge synthetic invoke(Ljava/lang/Object;)Ljava/lang/Object;
     .locals 0
 
-    .line 10
+    .line 1
     check-cast p1, Ljava/lang/Throwable;
 
     invoke-virtual {p0, p1}, Landroidx/compose/runtime/BroadcastFrameClock$withFrameNanos$2$1;->invoke(Ljava/lang/Throwable;)V
 
-    sget-object p1, Lqh/r;->a:Lqh/r;
+    sget-object p1, LX9/j;->a:LX9/j;
 
     return-object p1
 .end method
@@ -89,39 +89,41 @@
 .method public final invoke(Ljava/lang/Throwable;)V
     .locals 3
 
-    iget-object p1, p0, Landroidx/compose/runtime/BroadcastFrameClock$withFrameNanos$2$1;->this$0:Landroidx/compose/runtime/h;
-
-    .line 1
-    iget-object v0, p1, Landroidx/compose/runtime/h;->c:Ljava/lang/Object;
-
-    iget-object v1, p0, Landroidx/compose/runtime/BroadcastFrameClock$withFrameNanos$2$1;->$awaiter:Landroidx/compose/runtime/g;
-
     .line 2
-    monitor-enter v0
+    iget-object p1, p0, Landroidx/compose/runtime/BroadcastFrameClock$withFrameNanos$2$1;->this$0:Landroidx/compose/runtime/f;
 
     .line 3
-    :try_start_0
-    iget-object v2, p1, Landroidx/compose/runtime/h;->f:Ljava/util/List;
+    iget-object v0, p1, Landroidx/compose/runtime/f;->c:Ljava/lang/Object;
 
     .line 4
-    invoke-interface {v2, v1}, Ljava/util/List;->remove(Ljava/lang/Object;)Z
+    iget-object v1, p0, Landroidx/compose/runtime/BroadcastFrameClock$withFrameNanos$2$1;->$awaiter:Landroidx/compose/runtime/e;
 
     .line 5
-    iget-object v1, p1, Landroidx/compose/runtime/h;->f:Ljava/util/List;
+    monitor-enter v0
 
     .line 6
-    invoke-interface {v1}, Ljava/util/List;->isEmpty()Z
+    :try_start_0
+    iget-object v2, p1, Landroidx/compose/runtime/f;->f:Ljava/util/ArrayList;
+
+    .line 7
+    invoke-virtual {v2, v1}, Ljava/util/ArrayList;->remove(Ljava/lang/Object;)Z
+
+    .line 8
+    iget-object v1, p1, Landroidx/compose/runtime/f;->f:Ljava/util/ArrayList;
+
+    .line 9
+    invoke-virtual {v1}, Ljava/util/ArrayList;->isEmpty()Z
 
     move-result v1
 
     if-eqz v1, :cond_0
 
-    .line 7
-    iget-object p1, p1, Landroidx/compose/runtime/h;->h:Landroidx/compose/runtime/AtomicInt;
+    .line 10
+    iget-object p1, p1, Landroidx/compose/runtime/f;->h:Landroidx/compose/runtime/AtomicInt;
 
     const/4 v1, 0x0
 
-    .line 8
+    .line 11
     invoke-virtual {p1, v1}, Ljava/util/concurrent/atomic/AtomicInteger;->set(I)V
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
@@ -133,7 +135,7 @@
 
     goto :goto_1
 
-    .line 9
+    .line 12
     :cond_0
     :goto_0
     monitor-exit v0

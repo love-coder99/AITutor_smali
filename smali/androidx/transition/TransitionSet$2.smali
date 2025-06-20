@@ -39,6 +39,10 @@
 # virtual methods
 .method public onTransitionCancel(Landroidx/transition/Transition;)V
     .locals 2
+    .param p1    # Landroidx/transition/Transition;
+        .annotation build Landroidx/annotation/NonNull;
+        .end annotation
+    .end param
 
     .line 1
     iget-object v0, p0, Landroidx/transition/TransitionSet$2;->this$0:Landroidx/transition/TransitionSet;

@@ -7,7 +7,7 @@
 
 
 # instance fields
-.field public final a:Landroidx/compose/runtime/collection/e;
+.field public final a:Landroidx/compose/runtime/collection/d;
 
 
 # direct methods
@@ -20,7 +20,7 @@
     .line 2
     .line 3
     .line 4
-    new-instance v0, Landroidx/compose/runtime/collection/e;
+    new-instance v0, Landroidx/compose/runtime/collection/d;
 
     .line 5
     .line 6
@@ -32,12 +32,12 @@
 
     .line 9
     .line 10
-    invoke-direct {v0, v1}, Landroidx/compose/runtime/collection/e;-><init>([Ljava/lang/Object;)V
+    invoke-direct {v0, v1}, Landroidx/compose/runtime/collection/d;-><init>([Ljava/lang/Object;)V
 
     .line 11
     .line 12
     .line 13
-    iput-object v0, p0, Landroidx/compose/foundation/relocation/c;->a:Landroidx/compose/runtime/collection/e;
+    iput-object v0, p0, Landroidx/compose/foundation/relocation/c;->a:Landroidx/compose/runtime/collection/d;
 
     .line 14
     .line 15
@@ -46,7 +46,7 @@
 
 
 # virtual methods
-.method public final a(Ln1/e;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
+.method public final a(Lr0/d;Lkotlin/coroutines/jvm/internal/ContinuationImpl;)Ljava/lang/Object;
     .locals 6
 
     .line 1
@@ -145,7 +145,7 @@
 
     .line 45
     .line 46
-    check-cast v5, Ln1/e;
+    check-cast v5, Lr0/d;
 
     .line 47
     .line 48
@@ -183,11 +183,11 @@
     .line 62
     .line 63
     .line 64
-    iget-object p2, p0, Landroidx/compose/foundation/relocation/c;->a:Landroidx/compose/runtime/collection/e;
+    iget-object p2, p0, Landroidx/compose/foundation/relocation/c;->a:Landroidx/compose/runtime/collection/d;
 
     .line 65
     .line 66
-    iget v2, p2, Landroidx/compose/runtime/collection/e;->d:I
+    iget v2, p2, Landroidx/compose/runtime/collection/d;->d:I
 
     .line 67
     .line 68
@@ -195,7 +195,7 @@
 
     .line 69
     .line 70
-    iget-object p2, p2, Landroidx/compose/runtime/collection/e;->b:[Ljava/lang/Object;
+    iget-object p2, p2, Landroidx/compose/runtime/collection/d;->b:[Ljava/lang/Object;
 
     .line 71
     .line 72
@@ -240,7 +240,7 @@
 
     .line 89
     .line 90
-    invoke-static {v5, p2, v0}, Landroidx/compose/foundation/relocation/d;->b(Landroidx/compose/ui/n;Ln1/e;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
+    invoke-static {v5, p2, v0}, Landroidx/compose/foundation/relocation/d;->b(Landroidx/compose/ui/node/j;Lr0/d;Lkotlin/coroutines/jvm/internal/ContinuationImpl;)Ljava/lang/Object;
 
     .line 91
     .line 92
@@ -265,7 +265,7 @@
     .line 99
     .line 100
     :cond_5
-    sget-object p1, Lqh/r;->a:Lqh/r;
+    sget-object p1, LX9/j;->a:LX9/j;
 
     .line 101
     .line 102

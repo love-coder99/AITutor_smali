@@ -48,19 +48,11 @@
 
     .line 16
     .line 17
-    invoke-virtual {p2}, Ljava/lang/Object;->toString()Ljava/lang/String;
+    invoke-direct {p1, p2}, Ljava/lang/IllegalArgumentException;-><init>(Ljava/lang/String;)V
 
     .line 18
     .line 19
     .line 20
-    move-result-object p2
-
-    .line 21
-    invoke-direct {p1, p2}, Ljava/lang/IllegalArgumentException;-><init>(Ljava/lang/String;)V
-
-    .line 22
-    .line 23
-    .line 24
     throw p1
 .end method
 
@@ -91,10 +83,12 @@
     .line 1
     iget-wide v0, p0, Landroidx/compose/ui/text/style/c;->a:J
 
+    .line 2
+    .line 3
     return-wide v0
 .end method
 
-.method public final c(Lzh/a;)Landroidx/compose/ui/text/style/m;
+.method public final c(Lka/a;)Landroidx/compose/ui/text/style/m;
     .locals 1
 
     .line 1
@@ -102,7 +96,7 @@
 
     .line 2
     .line 3
-    invoke-static {p0, v0}, Lrb/h;->d(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-virtual {p0, v0}, Landroidx/compose/ui/text/style/c;->equals(Ljava/lang/Object;)Z
 
     .line 4
     .line 5
@@ -121,7 +115,7 @@
 
     .line 11
     :cond_0
-    invoke-interface {p1}, Lzh/a;->invoke()Ljava/lang/Object;
+    invoke-interface {p1}, Lka/a;->invoke()Ljava/lang/Object;
 
     .line 12
     .line 13

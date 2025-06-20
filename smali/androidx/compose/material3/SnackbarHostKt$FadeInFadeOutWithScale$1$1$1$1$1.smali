@@ -3,12 +3,12 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lzh/a;
+.implements Lka/a;
 
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Landroidx/compose/material3/SnackbarHostKt$FadeInFadeOutWithScale$1$1$1$1;->invoke(Landroidx/compose/ui/semantics/u;)V
+    value = Landroidx/compose/material3/SnackbarHostKt$FadeInFadeOutWithScale$1$1$1$1;->invoke(Landroidx/compose/ui/semantics/t;)V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -19,7 +19,7 @@
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "Lkotlin/jvm/internal/Lambda;",
-        "Lzh/a;"
+        "Lka/a;"
     }
 .end annotation
 
@@ -44,14 +44,14 @@
 
 
 # instance fields
-.field final synthetic $key:Landroidx/compose/material3/a1;
+.field final synthetic $key:Landroidx/compose/material3/w0;
 
 
 # direct methods
-.method public constructor <init>(Landroidx/compose/material3/a1;)V
+.method public constructor <init>(Landroidx/compose/material3/w0;)V
     .locals 0
 
-    iput-object p1, p0, Landroidx/compose/material3/SnackbarHostKt$FadeInFadeOutWithScale$1$1$1$1$1;->$key:Landroidx/compose/material3/a1;
+    iput-object p1, p0, Landroidx/compose/material3/SnackbarHostKt$FadeInFadeOutWithScale$1$1$1$1$1;->$key:Landroidx/compose/material3/w0;
 
     const/4 p1, 0x0
 
@@ -65,13 +65,14 @@
 .method public final invoke()Ljava/lang/Boolean;
     .locals 1
 
-    iget-object v0, p0, Landroidx/compose/material3/SnackbarHostKt$FadeInFadeOutWithScale$1$1$1$1$1;->$key:Landroidx/compose/material3/a1;
-
-    check-cast v0, Landroidx/compose/material3/c1;
-
     .line 2
-    invoke-virtual {v0}, Landroidx/compose/material3/c1;->a()V
+    iget-object v0, p0, Landroidx/compose/material3/SnackbarHostKt$FadeInFadeOutWithScale$1$1$1$1$1;->$key:Landroidx/compose/material3/w0;
 
+    check-cast v0, Landroidx/compose/material3/y0;
+
+    invoke-virtual {v0}, Landroidx/compose/material3/y0;->a()V
+
+    .line 3
     sget-object v0, Ljava/lang/Boolean;->TRUE:Ljava/lang/Boolean;
 
     return-object v0

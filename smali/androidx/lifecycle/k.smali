@@ -1,11 +1,8 @@
-.class public interface abstract Landroidx/lifecycle/k;
+.class public interface abstract Landroidx/lifecycle/K;
 .super Ljava/lang/Object;
 .source "SourceFile"
 
 
 # virtual methods
-.method public abstract getDefaultViewModelCreationExtras()Lh4/c;
-.end method
-
-.method public abstract getDefaultViewModelProviderFactory()Landroidx/lifecycle/g1;
+.method public abstract a(Ljava/lang/Object;)V
 .end method

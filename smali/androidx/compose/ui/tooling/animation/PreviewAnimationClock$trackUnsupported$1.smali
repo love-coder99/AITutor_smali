@@ -3,14 +3,14 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lzh/c;
+.implements Lka/c;
 
 
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "Lkotlin/jvm/internal/Lambda;",
-        "Lzh/c;"
+        "Lka/c;"
     }
 .end annotation
 
@@ -21,7 +21,7 @@
     d2 = {
         "",
         "it",
-        "Lqh/r;",
+        "LX9/j;",
         "invoke",
         "(Ljava/lang/Object;)V",
         "<anonymous>"
@@ -38,14 +38,14 @@
 # instance fields
 .field final synthetic $label:Ljava/lang/String;
 
-.field final synthetic this$0:Landroidx/compose/ui/tooling/animation/q;
+.field final synthetic this$0:Landroidx/compose/ui/tooling/animation/l;
 
 
 # direct methods
-.method public constructor <init>(Landroidx/compose/ui/tooling/animation/q;Ljava/lang/String;)V
+.method public constructor <init>(Landroidx/compose/ui/tooling/animation/l;Ljava/lang/String;)V
     .locals 0
 
-    iput-object p1, p0, Landroidx/compose/ui/tooling/animation/PreviewAnimationClock$trackUnsupported$1;->this$0:Landroidx/compose/ui/tooling/animation/q;
+    iput-object p1, p0, Landroidx/compose/ui/tooling/animation/PreviewAnimationClock$trackUnsupported$1;->this$0:Landroidx/compose/ui/tooling/animation/l;
 
     iput-object p2, p0, Landroidx/compose/ui/tooling/animation/PreviewAnimationClock$trackUnsupported$1;->$label:Ljava/lang/String;
 
@@ -61,10 +61,10 @@
 .method public bridge synthetic invoke(Ljava/lang/Object;)Ljava/lang/Object;
     .locals 0
 
-    .line 2
+    .line 1
     invoke-virtual {p0, p1}, Landroidx/compose/ui/tooling/animation/PreviewAnimationClock$trackUnsupported$1;->invoke(Ljava/lang/Object;)V
 
-    sget-object p1, Lqh/r;->a:Lqh/r;
+    sget-object p1, LX9/j;->a:LX9/j;
 
     return-object p1
 .end method
@@ -72,10 +72,11 @@
 .method public final invoke(Ljava/lang/Object;)V
     .locals 0
 
-    iget-object p1, p0, Landroidx/compose/ui/tooling/animation/PreviewAnimationClock$trackUnsupported$1;->this$0:Landroidx/compose/ui/tooling/animation/q;
+    .line 2
+    iget-object p1, p0, Landroidx/compose/ui/tooling/animation/PreviewAnimationClock$trackUnsupported$1;->this$0:Landroidx/compose/ui/tooling/animation/l;
 
-    .line 1
-    invoke-virtual {p1}, Landroidx/compose/ui/tooling/animation/q;->b()V
+    .line 3
+    invoke-virtual {p1}, Landroidx/compose/ui/tooling/animation/l;->b()V
 
     return-void
 .end method

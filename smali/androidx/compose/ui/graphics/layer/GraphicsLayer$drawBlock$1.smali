@@ -3,14 +3,14 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lzh/c;
+.implements Lka/c;
 
 
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "Lkotlin/jvm/internal/Lambda;",
-        "Lzh/c;"
+        "Lka/c;"
     }
 .end annotation
 
@@ -19,10 +19,10 @@
         "\u0000\u000c\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0008\u0003\u0010\u0004\u001a\u00020\u0001*\u00020\u0000H\n\u00a2\u0006\u0004\u0008\u0002\u0010\u0003"
     }
     d2 = {
-        "Lo1/h;",
-        "Lqh/r;",
+        "Ls0/e;",
+        "LX9/j;",
         "invoke",
-        "(Lo1/h;)V",
+        "(Ls0/e;)V",
         "<anonymous>"
     }
     k = 0x3
@@ -66,19 +66,19 @@
 .method public bridge synthetic invoke(Ljava/lang/Object;)Ljava/lang/Object;
     .locals 0
 
-    .line 2
-    check-cast p1, Lo1/h;
+    .line 1
+    check-cast p1, Ls0/e;
 
-    invoke-virtual {p0, p1}, Landroidx/compose/ui/graphics/layer/GraphicsLayer$drawBlock$1;->invoke(Lo1/h;)V
+    invoke-virtual {p0, p1}, Landroidx/compose/ui/graphics/layer/GraphicsLayer$drawBlock$1;->invoke(Ls0/e;)V
 
-    sget-object p1, Lqh/r;->a:Lqh/r;
+    sget-object p1, LX9/j;->a:LX9/j;
 
     return-object p1
 .end method
 
-.method public final invoke(Lo1/h;)V
+.method public final invoke(Ls0/e;)V
     .locals 0
 
-    .line 1
+    .line 2
     return-void
 .end method

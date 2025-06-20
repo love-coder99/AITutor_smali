@@ -29,10 +29,15 @@
 .method static constructor <clinit>()V
     .locals 1
 
+    .line 1
     sget-object v0, Landroidx/camera/view/PreviewView$ScaleType;->FILL_CENTER:Landroidx/camera/view/PreviewView$ScaleType;
 
+    .line 2
+    .line 3
     sput-object v0, Landroidx/camera/view/c;->i:Landroidx/camera/view/PreviewView$ScaleType;
 
+    .line 4
+    .line 5
     return-void
 .end method
 
@@ -99,7 +104,7 @@
     .line 26
     .line 27
     .line 28
-    invoke-virtual {p0, p2, p1}, Landroidx/camera/view/c;->c(ILandroid/util/Size;)Landroid/graphics/Matrix;
+    invoke-virtual {p0, p1, p2}, Landroidx/camera/view/c;->c(Landroid/util/Size;I)Landroid/graphics/Matrix;
 
     .line 29
     .line 30
@@ -199,7 +204,7 @@
 
     .line 2
     .line 3
-    invoke-static {v0}, La0/t;->c(I)Z
+    invoke-static {v0}, LE/q;->c(I)Z
 
     .line 4
     .line 5
@@ -284,7 +289,7 @@
     return-object v0
 .end method
 
-.method public final c(ILandroid/util/Size;)Landroid/graphics/Matrix;
+.method public final c(Landroid/util/Size;I)Landroid/graphics/Matrix;
     .locals 7
 
     .line 1
@@ -299,7 +304,7 @@
     const/4 v1, 0x0
 
     .line 6
-    invoke-static {v1, v0}, Le3/b;->f(Ljava/lang/String;Z)V
+    invoke-static {v1, v0}, Lf4/g;->l(Ljava/lang/String;Z)V
 
     .line 7
     .line 8
@@ -315,7 +320,7 @@
     const/4 v1, 0x1
 
     .line 14
-    invoke-static {p2, v1, v0}, La0/t;->d(Landroid/util/Size;ZLandroid/util/Size;)Z
+    invoke-static {p1, v1, v0}, LE/q;->d(Landroid/util/Size;ZLandroid/util/Size;)Z
 
     .line 15
     .line 16
@@ -330,11 +335,11 @@
 
     .line 20
     .line 21
-    new-instance p1, Landroid/graphics/RectF;
+    new-instance p2, Landroid/graphics/RectF;
 
     .line 22
     .line 23
-    invoke-virtual {p2}, Landroid/util/Size;->getWidth()I
+    invoke-virtual {p1}, Landroid/util/Size;->getWidth()I
 
     .line 24
     .line 25
@@ -345,18 +350,18 @@
     int-to-float v0, v0
 
     .line 28
-    invoke-virtual {p2}, Landroid/util/Size;->getHeight()I
+    invoke-virtual {p1}, Landroid/util/Size;->getHeight()I
 
     .line 29
     .line 30
     .line 31
-    move-result p2
+    move-result p1
 
     .line 32
-    int-to-float p2, p2
+    int-to-float p1, p1
 
     .line 33
-    invoke-direct {p1, v2, v2, v0, p2}, Landroid/graphics/RectF;-><init>(FFFF)V
+    invoke-direct {p2, v2, v2, v0, p1}, Landroid/graphics/RectF;-><init>(FFFF)V
 
     .line 34
     .line 35
@@ -370,7 +375,7 @@
 
     .line 39
     .line 40
-    invoke-virtual {p2}, Landroid/util/Size;->getWidth()I
+    invoke-virtual {p1}, Landroid/util/Size;->getWidth()I
 
     .line 41
     .line 42
@@ -381,7 +386,7 @@
     int-to-float v3, v3
 
     .line 45
-    invoke-virtual {p2}, Landroid/util/Size;->getHeight()I
+    invoke-virtual {p1}, Landroid/util/Size;->getHeight()I
 
     .line 46
     .line 47
@@ -479,7 +484,7 @@
 
     .line 94
     .line 95
-    invoke-static {v5}, Lcom/facebook/appevents/g;->i(Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v5}, Landroidx/work/B;->k(Ljava/lang/String;)Ljava/lang/String;
 
     .line 96
     .line 97
@@ -567,11 +572,11 @@
     .line 133
     .line 134
     .line 135
-    if-ne p1, v1, :cond_3
+    if-ne p2, v1, :cond_3
 
     .line 136
     .line 137
-    invoke-virtual {p2}, Landroid/util/Size;->getWidth()I
+    invoke-virtual {p1}, Landroid/util/Size;->getWidth()I
 
     .line 138
     .line 139
@@ -624,162 +629,162 @@
     .line 160
     .line 161
     .line 162
-    move-object p1, p2
-
-    .line 163
     goto :goto_3
 
-    .line 164
+    .line 163
     :cond_3
-    move-object p1, v4
+    move-object p2, v4
+
+    .line 164
+    :goto_3
+    new-instance p1, Landroid/graphics/RectF;
 
     .line 165
-    :goto_3
-    new-instance p2, Landroid/graphics/RectF;
-
     .line 166
-    .line 167
     iget-object v0, p0, Landroidx/camera/view/c;->b:Landroid/graphics/Rect;
 
+    .line 167
     .line 168
-    .line 169
-    invoke-direct {p2, v0}, Landroid/graphics/RectF;-><init>(Landroid/graphics/Rect;)V
+    invoke-direct {p1, v0}, Landroid/graphics/RectF;-><init>(Landroid/graphics/Rect;)V
 
+    .line 169
     .line 170
     .line 171
-    .line 172
     iget v0, p0, Landroidx/camera/view/c;->c:I
 
+    .line 172
     .line 173
-    .line 174
     const/4 v1, 0x0
 
-    .line 175
-    invoke-static {v0, p2, p1, v1}, La0/t;->a(ILandroid/graphics/RectF;Landroid/graphics/RectF;Z)Landroid/graphics/Matrix;
+    .line 174
+    invoke-static {p1, p2, v0, v1}, LE/q;->a(Landroid/graphics/RectF;Landroid/graphics/RectF;IZ)Landroid/graphics/Matrix;
 
+    .line 175
     .line 176
     .line 177
-    .line 178
     move-result-object p1
 
-    .line 179
+    .line 178
     iget-boolean p2, p0, Landroidx/camera/view/c;->f:Z
 
+    .line 179
     .line 180
-    .line 181
     if-eqz p2, :cond_5
 
+    .line 181
     .line 182
-    .line 183
     iget-boolean p2, p0, Landroidx/camera/view/c;->g:Z
 
+    .line 183
     .line 184
-    .line 185
     if-eqz p2, :cond_5
 
+    .line 185
     .line 186
-    .line 187
     iget p2, p0, Landroidx/camera/view/c;->c:I
 
+    .line 187
     .line 188
-    .line 189
-    invoke-static {p2}, La0/t;->c(I)Z
+    invoke-static {p2}, LE/q;->c(I)Z
 
+    .line 189
     .line 190
     .line 191
-    .line 192
     move-result p2
 
-    .line 193
+    .line 192
     const/high16 v0, -0x40800000    # -1.0f
 
+    .line 193
     .line 194
-    .line 195
     const/high16 v1, 0x3f800000    # 1.0f
 
+    .line 195
     .line 196
-    .line 197
     if-eqz p2, :cond_4
 
+    .line 197
     .line 198
-    .line 199
     iget-object p2, p0, Landroidx/camera/view/c;->b:Landroid/graphics/Rect;
 
+    .line 199
     .line 200
-    .line 201
     invoke-virtual {p2}, Landroid/graphics/Rect;->centerX()I
 
+    .line 201
     .line 202
     .line 203
-    .line 204
     move-result p2
 
-    .line 205
+    .line 204
     int-to-float p2, p2
 
-    .line 206
+    .line 205
     iget-object v2, p0, Landroidx/camera/view/c;->b:Landroid/graphics/Rect;
 
+    .line 206
     .line 207
-    .line 208
     invoke-virtual {v2}, Landroid/graphics/Rect;->centerY()I
 
+    .line 208
     .line 209
     .line 210
-    .line 211
     move-result v2
 
-    .line 212
+    .line 211
     int-to-float v2, v2
 
-    .line 213
+    .line 212
     invoke-virtual {p1, v1, v0, p2, v2}, Landroid/graphics/Matrix;->preScale(FFFF)Z
 
+    .line 213
     .line 214
     .line 215
-    .line 216
     goto :goto_4
 
-    .line 217
+    .line 216
     :cond_4
     iget-object p2, p0, Landroidx/camera/view/c;->b:Landroid/graphics/Rect;
 
+    .line 217
     .line 218
-    .line 219
     invoke-virtual {p2}, Landroid/graphics/Rect;->centerX()I
 
+    .line 219
     .line 220
     .line 221
-    .line 222
     move-result p2
 
-    .line 223
+    .line 222
     int-to-float p2, p2
 
-    .line 224
+    .line 223
     iget-object v2, p0, Landroidx/camera/view/c;->b:Landroid/graphics/Rect;
 
+    .line 224
     .line 225
-    .line 226
     invoke-virtual {v2}, Landroid/graphics/Rect;->centerY()I
 
+    .line 226
     .line 227
     .line 228
-    .line 229
     move-result v2
 
-    .line 230
+    .line 229
     int-to-float v2, v2
 
-    .line 231
+    .line 230
     invoke-virtual {p1, v0, v1, p2, v2}, Landroid/graphics/Matrix;->preScale(FFFF)Z
 
+    .line 231
     .line 232
     .line 233
-    .line 234
     :cond_5
     :goto_4
     return-object p1
+
+    .line 234
+    nop
 
     .line 235
     :pswitch_data_0
@@ -808,7 +813,7 @@
     const/4 v1, 0x0
 
     .line 6
-    invoke-static {v1, v0}, Le3/b;->f(Ljava/lang/String;Z)V
+    invoke-static {v1, v0}, Lf4/g;->l(Ljava/lang/String;Z)V
 
     .line 7
     .line 8
@@ -875,7 +880,7 @@
 
     .line 37
     .line 38
-    invoke-static {v1}, La0/r;->K(I)I
+    invoke-static {v1}, LE/p;->N(I)I
 
     .line 39
     .line 40
@@ -890,7 +895,7 @@
     const/4 v2, 0x0
 
     .line 44
-    invoke-static {v1, v0, v0, v2}, La0/t;->a(ILandroid/graphics/RectF;Landroid/graphics/RectF;Z)Landroid/graphics/Matrix;
+    invoke-static {v0, v0, v1, v2}, LE/q;->a(Landroid/graphics/RectF;Landroid/graphics/RectF;IZ)Landroid/graphics/Matrix;
 
     .line 45
     .line 46
@@ -901,7 +906,7 @@
     return-object v0
 .end method
 
-.method public final e(ILandroid/util/Size;)Landroid/graphics/RectF;
+.method public final e(Landroid/util/Size;I)Landroid/graphics/RectF;
     .locals 3
 
     .line 1
@@ -916,12 +921,12 @@
     const/4 v1, 0x0
 
     .line 6
-    invoke-static {v1, v0}, Le3/b;->f(Ljava/lang/String;Z)V
+    invoke-static {v1, v0}, Lf4/g;->l(Ljava/lang/String;Z)V
 
     .line 7
     .line 8
     .line 9
-    invoke-virtual {p0, p1, p2}, Landroidx/camera/view/c;->c(ILandroid/util/Size;)Landroid/graphics/Matrix;
+    invoke-virtual {p0, p1, p2}, Landroidx/camera/view/c;->c(Landroid/util/Size;I)Landroid/graphics/Matrix;
 
     .line 10
     .line 11
@@ -985,45 +990,72 @@
     .line 1
     iget-boolean v0, p0, Landroidx/camera/view/c;->g:Z
 
+    .line 2
+    .line 3
     const/4 v1, 0x1
 
+    .line 4
     const/4 v2, 0x0
 
+    .line 5
     if-eqz v0, :cond_1
 
+    .line 6
+    .line 7
     iget v0, p0, Landroidx/camera/view/c;->e:I
 
+    .line 8
+    .line 9
     const/4 v3, -0x1
 
+    .line 10
     if-eq v0, v3, :cond_0
 
+    .line 11
+    .line 12
     goto :goto_0
 
+    .line 13
     :cond_0
     const/4 v0, 0x0
 
+    .line 14
     goto :goto_1
 
+    .line 15
     :cond_1
     :goto_0
     const/4 v0, 0x1
 
+    .line 16
     :goto_1
     iget-object v3, p0, Landroidx/camera/view/c;->b:Landroid/graphics/Rect;
 
+    .line 17
+    .line 18
     if-eqz v3, :cond_2
 
+    .line 19
+    .line 20
     iget-object v3, p0, Landroidx/camera/view/c;->a:Landroid/util/Size;
 
+    .line 21
+    .line 22
     if-eqz v3, :cond_2
 
+    .line 23
+    .line 24
     if-eqz v0, :cond_2
 
+    .line 25
+    .line 26
     goto :goto_2
 
+    .line 27
     :cond_2
     const/4 v1, 0x0
 
+    .line 28
     :goto_2
     return v1
 .end method

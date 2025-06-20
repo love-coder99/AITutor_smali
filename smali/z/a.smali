@@ -1,223 +1,158 @@
-.class public final Lz/a;
+.class public final synthetic LZ/a;
 .super Ljava/lang/Object;
 .source "SourceFile"
 
+# interfaces
+.implements Lq/a;
+
 
 # instance fields
-.field public final a:Lh0/b;
+.field public final synthetic a:I
 
-.field public final b:I
+.field public final synthetic b:Ljava/lang/Object;
 
 
 # direct methods
-.method public constructor <init>(Lh0/b;I)V
+.method public synthetic constructor <init>(Ljava/lang/Object;I)V
     .locals 0
 
     .line 1
+    iput p2, p0, LZ/a;->a:I
+
+    iput-object p1, p0, LZ/a;->b:Ljava/lang/Object;
+
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 2
-    .line 3
-    .line 4
-    if-eqz p1, :cond_0
-
-    .line 5
-    .line 6
-    iput-object p1, p0, Lz/a;->a:Lh0/b;
-
-    .line 7
-    .line 8
-    iput p2, p0, Lz/a;->b:I
-
-    .line 9
-    .line 10
     return-void
-
-    .line 11
-    :cond_0
-    new-instance p1, Ljava/lang/NullPointerException;
-
-    .line 12
-    .line 13
-    const-string p2, "Null packet"
-
-    .line 14
-    .line 15
-    invoke-direct {p1, p2}, Ljava/lang/NullPointerException;-><init>(Ljava/lang/String;)V
-
-    .line 16
-    .line 17
-    .line 18
-    throw p1
 .end method
 
 
 # virtual methods
-.method public final equals(Ljava/lang/Object;)Z
-    .locals 4
+.method public final apply(Ljava/lang/Object;)Ljava/lang/Object;
+    .locals 1
 
     .line 1
-    const/4 v0, 0x1
+    iget v0, p0, LZ/a;->a:I
 
     .line 2
-    if-ne p1, p0, :cond_0
-
     .line 3
+    packed-switch v0, :pswitch_data_0
+
     .line 4
-    return v0
-
     .line 5
-    :cond_0
-    instance-of v1, p1, Lz/a;
-
     .line 6
-    .line 7
-    const/4 v2, 0x0
+    iget-object v0, p0, LZ/a;->b:Ljava/lang/Object;
 
+    .line 7
     .line 8
-    if-eqz v1, :cond_2
+    check-cast v0, Lcom/applovin/impl/sdk/ad/d;
 
     .line 9
     .line 10
-    check-cast p1, Lz/a;
+    check-cast p1, Lcom/applovin/impl/tl;
 
     .line 11
     .line 12
-    iget-object v1, p1, Lz/a;->a:Lh0/b;
+    invoke-static {v0, p1}, Lcom/applovin/impl/sdk/ad/b;->V(Lcom/applovin/impl/sdk/ad/d;Lcom/applovin/impl/tl;)Ljava/util/List;
 
     .line 13
     .line 14
-    iget-object v3, p0, Lz/a;->a:Lh0/b;
-
     .line 15
+    move-result-object p1
+
     .line 16
-    invoke-virtual {v3, v1}, Lh0/b;->equals(Ljava/lang/Object;)Z
+    return-object p1
 
     .line 17
+    :pswitch_0
+    iget-object v0, p0, LZ/a;->b:Ljava/lang/Object;
+
     .line 18
     .line 19
-    move-result v1
+    check-cast v0, Lka/c;
 
     .line 20
-    if-eqz v1, :cond_1
-
     .line 21
-    .line 22
-    iget v1, p0, Lz/a;->b:I
+    invoke-interface {v0, p1}, Lka/c;->invoke(Ljava/lang/Object;)Ljava/lang/Object;
 
+    .line 22
     .line 23
     .line 24
-    iget p1, p1, Lz/a;->b:I
+    move-result-object p1
 
     .line 25
-    .line 26
-    if-ne v1, p1, :cond_1
+    check-cast p1, Landroidx/camera/lifecycle/e;
 
+    .line 26
     .line 27
+    return-object p1
+
     .line 28
-    goto :goto_0
+    :pswitch_1
+    check-cast p1, Ljava/lang/Void;
 
     .line 29
-    :cond_1
-    const/4 v0, 0x0
-
     .line 30
-    :goto_0
-    return v0
+    sget-object p1, Landroidx/camera/view/PreviewView$StreamState;->STREAMING:Landroidx/camera/view/PreviewView$StreamState;
 
     .line 31
-    :cond_2
-    return v2
-.end method
+    .line 32
+    iget-object v0, p0, LZ/a;->b:Ljava/lang/Object;
 
-.method public final hashCode()I
-    .locals 2
+    .line 33
+    .line 34
+    check-cast v0, Landroidx/camera/view/a;
 
-    .line 1
-    iget-object v0, p0, Lz/a;->a:Lh0/b;
+    .line 35
+    .line 36
+    invoke-virtual {v0, p1}, Landroidx/camera/view/a;->c(Landroidx/camera/view/PreviewView$StreamState;)V
 
-    .line 2
-    .line 3
-    invoke-virtual {v0}, Lh0/b;->hashCode()I
+    .line 37
+    .line 38
+    .line 39
+    const/4 p1, 0x0
 
-    .line 4
-    .line 5
-    .line 6
-    move-result v0
+    .line 40
+    return-object p1
 
-    .line 7
-    const v1, 0xf4243
+    .line 41
+    :pswitch_2
+    check-cast p1, LZ/m;
 
-    .line 8
-    .line 9
-    .line 10
-    xor-int/2addr v0, v1
+    .line 42
+    .line 43
+    iget-object v0, p0, LZ/a;->b:Ljava/lang/Object;
 
-    .line 11
-    mul-int v0, v0, v1
+    .line 44
+    .line 45
+    check-cast v0, LZ/g;
 
-    .line 12
-    .line 13
-    iget v1, p0, Lz/a;->b:I
+    .line 46
+    .line 47
+    iput-object p1, v0, LZ/d;->l:LZ/m;
 
-    .line 14
-    .line 15
-    xor-int/2addr v0, v1
+    .line 48
+    .line 49
+    invoke-virtual {v0}, LZ/d;->o()V
 
-    .line 16
-    return v0
-.end method
+    .line 50
+    .line 51
+    .line 52
+    const/4 p1, 0x0
 
-.method public final toString()Ljava/lang/String;
-    .locals 3
+    .line 53
+    invoke-virtual {v0, p1}, LZ/d;->n(LR/o;)V
 
-    .line 1
-    new-instance v0, Ljava/lang/StringBuilder;
+    .line 54
+    .line 55
+    .line 56
+    return-object p1
 
-    .line 2
-    .line 3
-    const-string v1, "In{packet="
-
-    .line 4
-    .line 5
-    invoke-direct {v0, v1}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
-
-    .line 6
-    .line 7
-    .line 8
-    iget-object v1, p0, Lz/a;->a:Lh0/b;
-
-    .line 9
-    .line 10
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
-
-    .line 11
-    .line 12
-    .line 13
-    const-string v1, ", jpegQuality="
-
-    .line 14
-    .line 15
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    .line 16
-    .line 17
-    .line 18
-    iget v1, p0, Lz/a;->b:I
-
-    .line 19
-    .line 20
-    const-string v2, "}"
-
-    .line 21
-    .line 22
-    invoke-static {v0, v1, v2}, Lj0/d;->m(Ljava/lang/StringBuilder;ILjava/lang/String;)Ljava/lang/String;
-
-    .line 23
-    .line 24
-    .line 25
-    move-result-object v0
-
-    .line 26
-    return-object v0
+    .line 57
+    :pswitch_data_0
+    .packed-switch 0x0
+        :pswitch_2
+        :pswitch_1
+        :pswitch_0
+    .end packed-switch
 .end method

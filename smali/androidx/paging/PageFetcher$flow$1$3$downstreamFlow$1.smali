@@ -3,10 +3,17 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lzh/e;
+.implements Lka/e;
 
 
 # annotations
+.annotation runtime Lca/c;
+    c = "androidx.paging.PageFetcher$flow$1$3$downstreamFlow$1"
+    f = "PageFetcher.kt"
+    l = {}
+    m = "invokeSuspend"
+.end annotation
+
 .annotation system Ldalvik/annotation/EnclosingMethod;
     value = Landroidx/paging/PageFetcher$flow$1;->invokeSuspend(Ljava/lang/Object;)Ljava/lang/Object;
 .end annotation
@@ -19,22 +26,23 @@
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "Lkotlin/coroutines/jvm/internal/SuspendLambda;",
-        "Lzh/e;"
+        "Lka/e;"
     }
 .end annotation
 
 .annotation runtime Lkotlin/Metadata;
     d1 = {
-        "\u0000\u0014\n\u0002\u0010\u0000\n\u0002\u0008\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\u0010\u0006\u001a\u00020\u0005\"\u0008\u0008\u0000\u0010\u0001*\u00020\u0000\"\u0008\u0008\u0001\u0010\u0002*\u00020\u00002\u000c\u0010\u0004\u001a\u0008\u0012\u0004\u0012\u00028\u00010\u0003H\u008a@"
+        "\u0000\u0016\n\u0002\u0010\u0000\n\u0002\u0008\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0008\u0002\u0010\u0006\u001a\u00020\u0005\"\u0008\u0008\u0000\u0010\u0001*\u00020\u0000\"\u0008\u0008\u0001\u0010\u0002*\u00020\u00002\u000c\u0010\u0004\u001a\u0008\u0012\u0004\u0012\u00028\u00010\u0003H\u008a@\u00a2\u0006\u0004\u0008\u0006\u0010\u0007"
     }
     d2 = {
         "",
         "Key",
         "Value",
-        "Landroidx/paging/l0;",
+        "Landroidx/paging/J;",
         "it",
-        "Lqh/r;",
-        "<anonymous>"
+        "LX9/j;",
+        "<anonymous>",
+        "(Landroidx/paging/J;)V"
     }
     k = 0x3
     mv = {
@@ -42,13 +50,6 @@
         0x8,
         0x0
     }
-.end annotation
-
-.annotation runtime Lth/c;
-    c = "androidx.paging.PageFetcher$flow$1$3$downstreamFlow$1"
-    f = "PageFetcher.kt"
-    l = {}
-    m = "invokeSuspend"
 .end annotation
 
 
@@ -89,7 +90,7 @@
             "Lkotlin/coroutines/Continuation<",
             "*>;)",
             "Lkotlin/coroutines/Continuation<",
-            "Lqh/r;",
+            "LX9/j;",
             ">;"
         }
     .end annotation
@@ -103,15 +104,15 @@
     return-object v0
 .end method
 
-.method public final invoke(Landroidx/paging/l0;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
+.method public final invoke(Landroidx/paging/J;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
     .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
-            "Landroidx/paging/l0;",
+            "Landroidx/paging/J;",
             "Lkotlin/coroutines/Continuation<",
             "-",
-            "Lqh/r;",
+            "LX9/j;",
             ">;)",
             "Ljava/lang/Object;"
         }
@@ -124,7 +125,7 @@
 
     check-cast p1, Landroidx/paging/PageFetcher$flow$1$3$downstreamFlow$1;
 
-    sget-object p2, Lqh/r;->a:Lqh/r;
+    sget-object p2, LX9/j;->a:LX9/j;
 
     invoke-virtual {p1, p2}, Landroidx/paging/PageFetcher$flow$1$3$downstreamFlow$1;->invokeSuspend(Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -137,11 +138,11 @@
     .locals 0
 
     .line 2
-    check-cast p1, Landroidx/paging/l0;
+    check-cast p1, Landroidx/paging/J;
 
     check-cast p2, Lkotlin/coroutines/Continuation;
 
-    invoke-virtual {p0, p1, p2}, Landroidx/paging/PageFetcher$flow$1$3$downstreamFlow$1;->invoke(Landroidx/paging/l0;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
+    invoke-virtual {p0, p1, p2}, Landroidx/paging/PageFetcher$flow$1$3$downstreamFlow$1;->invoke(Landroidx/paging/J;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
 
     move-result-object p1
 
@@ -173,7 +174,7 @@
 
     .line 11
     .line 12
-    check-cast p1, Landroidx/paging/l0;
+    check-cast p1, Landroidx/paging/J;
 
     .line 13
     .line 14
@@ -219,45 +220,32 @@
 
     .line 31
     .line 32
-    new-instance v0, Ljava/lang/StringBuilder;
+    invoke-static {p1}, Ljava/util/Objects;->toString(Ljava/lang/Object;)Ljava/lang/String;
 
     .line 33
     .line 34
-    const-string v1, "Sent "
-
     .line 35
-    .line 36
-    invoke-direct {v0, v1}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
-
-    .line 37
-    .line 38
-    .line 39
-    invoke-virtual {v0, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
-
-    .line 40
-    .line 41
-    .line 42
     :cond_1
-    sget-object p1, Lqh/r;->a:Lqh/r;
+    sget-object p1, LX9/j;->a:LX9/j;
 
-    .line 43
-    .line 44
+    .line 36
+    .line 37
     return-object p1
 
-    .line 45
+    .line 38
     :cond_2
     new-instance p1, Ljava/lang/IllegalStateException;
 
-    .line 46
-    .line 47
+    .line 39
+    .line 40
     const-string v0, "call to \'resume\' before \'invoke\' with coroutine"
 
-    .line 48
-    .line 49
+    .line 41
+    .line 42
     invoke-direct {p1, v0}, Ljava/lang/IllegalStateException;-><init>(Ljava/lang/String;)V
 
-    .line 50
-    .line 51
-    .line 52
+    .line 43
+    .line 44
+    .line 45
     throw p1
 .end method

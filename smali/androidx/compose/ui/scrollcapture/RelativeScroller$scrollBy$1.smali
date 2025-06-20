@@ -4,6 +4,15 @@
 
 
 # annotations
+.annotation runtime Lca/c;
+    c = "androidx.compose.ui.scrollcapture.RelativeScroller"
+    f = "ComposeScrollCaptureCallback.android.kt"
+    l = {
+        0x132
+    }
+    m = "scrollBy"
+.end annotation
+
 .annotation runtime Lkotlin/Metadata;
     k = 0x3
     mv = {
@@ -14,15 +23,6 @@
     xi = 0x30
 .end annotation
 
-.annotation runtime Lth/c;
-    c = "androidx.compose.ui.scrollcapture.RelativeScroller"
-    f = "ComposeScrollCaptureCallback.android.kt"
-    l = {
-        0x132
-    }
-    m = "scrollBy"
-.end annotation
-
 
 # instance fields
 .field L$0:Ljava/lang/Object;
@@ -31,16 +31,16 @@
 
 .field synthetic result:Ljava/lang/Object;
 
-.field final synthetic this$0:Landroidx/compose/ui/scrollcapture/d;
+.field final synthetic this$0:Landroidx/compose/ui/scrollcapture/c;
 
 
 # direct methods
-.method public constructor <init>(Landroidx/compose/ui/scrollcapture/d;Lkotlin/coroutines/Continuation;)V
+.method public constructor <init>(Landroidx/compose/ui/scrollcapture/c;Lkotlin/coroutines/Continuation;)V
     .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
-            "Landroidx/compose/ui/scrollcapture/d;",
+            "Landroidx/compose/ui/scrollcapture/c;",
             "Lkotlin/coroutines/Continuation<",
             "-",
             "Landroidx/compose/ui/scrollcapture/RelativeScroller$scrollBy$1;",
@@ -48,7 +48,7 @@
         }
     .end annotation
 
-    iput-object p1, p0, Landroidx/compose/ui/scrollcapture/RelativeScroller$scrollBy$1;->this$0:Landroidx/compose/ui/scrollcapture/d;
+    iput-object p1, p0, Landroidx/compose/ui/scrollcapture/RelativeScroller$scrollBy$1;->this$0:Landroidx/compose/ui/scrollcapture/c;
 
     invoke-direct {p0, p2}, Lkotlin/coroutines/jvm/internal/ContinuationImpl;-><init>(Lkotlin/coroutines/Continuation;)V
 
@@ -80,14 +80,14 @@
 
     .line 9
     .line 10
-    iget-object p1, p0, Landroidx/compose/ui/scrollcapture/RelativeScroller$scrollBy$1;->this$0:Landroidx/compose/ui/scrollcapture/d;
+    iget-object p1, p0, Landroidx/compose/ui/scrollcapture/RelativeScroller$scrollBy$1;->this$0:Landroidx/compose/ui/scrollcapture/c;
 
     .line 11
     .line 12
     const/4 v0, 0x0
 
     .line 13
-    invoke-virtual {p1, v0, p0}, Landroidx/compose/ui/scrollcapture/d;->a(FLkotlin/coroutines/Continuation;)Ljava/lang/Object;
+    invoke-virtual {p1, v0, p0}, Landroidx/compose/ui/scrollcapture/c;->a(FLkotlin/coroutines/jvm/internal/ContinuationImpl;)Ljava/lang/Object;
 
     .line 14
     .line 15

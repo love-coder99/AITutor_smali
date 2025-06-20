@@ -3,25 +3,25 @@
 .source "SourceFile"
 
 # interfaces
-.implements Landroidx/camera/core/impl/k1;
+.implements Landroidx/camera/core/impl/e0;
 
 
 # instance fields
-.field public final a:Landroidx/camera/core/impl/x;
+.field public final a:Landroidx/camera/core/impl/w;
 
-.field public final b:Landroidx/lifecycle/i0;
+.field public final b:Landroidx/lifecycle/J;
 
 .field public c:Landroidx/camera/view/PreviewView$StreamState;
 
-.field public final d:Lv0/m;
+.field public final d:LZ/k;
 
-.field public e:Lc0/d;
+.field public e:LG/d;
 
 .field public f:Z
 
 
 # direct methods
-.method public constructor <init>(Landroidx/camera/core/impl/x;Landroidx/lifecycle/i0;Lv0/m;)V
+.method public constructor <init>(Landroidx/camera/core/impl/w;Landroidx/lifecycle/J;LZ/k;)V
     .locals 1
 
     .line 1
@@ -37,15 +37,15 @@
 
     .line 6
     .line 7
-    iput-object p1, p0, Landroidx/camera/view/a;->a:Landroidx/camera/core/impl/x;
+    iput-object p1, p0, Landroidx/camera/view/a;->a:Landroidx/camera/core/impl/w;
 
     .line 8
     .line 9
-    iput-object p2, p0, Landroidx/camera/view/a;->b:Landroidx/lifecycle/i0;
+    iput-object p2, p0, Landroidx/camera/view/a;->b:Landroidx/lifecycle/J;
 
     .line 10
     .line 11
-    iput-object p3, p0, Landroidx/camera/view/a;->d:Lv0/m;
+    iput-object p3, p0, Landroidx/camera/view/a;->d:LZ/k;
 
     .line 12
     .line 13
@@ -53,7 +53,7 @@
 
     .line 14
     :try_start_0
-    invoke-virtual {p2}, Landroidx/lifecycle/e0;->d()Ljava/lang/Object;
+    invoke-virtual {p2}, Landroidx/lifecycle/G;->d()Ljava/lang/Object;
 
     .line 15
     .line 16
@@ -93,7 +93,7 @@
     .locals 2
 
     .line 1
-    iget-object v0, p0, Landroidx/camera/view/a;->e:Lc0/d;
+    iget-object v0, p0, Landroidx/camera/view/a;->e:LG/d;
 
     .line 2
     .line 3
@@ -112,7 +112,7 @@
     const/4 v0, 0x0
 
     .line 10
-    iput-object v0, p0, Landroidx/camera/view/a;->e:Lc0/d;
+    iput-object v0, p0, Landroidx/camera/view/a;->e:LG/d;
 
     .line 11
     .line 12
@@ -130,7 +130,7 @@
 .end method
 
 .method public final b(Ljava/lang/Object;)V
-    .locals 5
+    .locals 7
 
     .line 1
     check-cast p1, Landroidx/camera/core/impl/CameraInternal$State;
@@ -215,196 +215,230 @@
     .line 39
     .line 40
     .line 41
-    new-instance p1, Ljava/util/ArrayList;
+    new-instance v2, Ljava/util/ArrayList;
 
     .line 42
     .line 43
-    invoke-direct {p1}, Ljava/util/ArrayList;-><init>()V
+    invoke-direct {v2}, Ljava/util/ArrayList;-><init>()V
 
     .line 44
     .line 45
     .line 46
-    new-instance v0, Lh0/d;
+    new-instance p1, LC7/n;
 
     .line 47
     .line 48
-    const/4 v1, 0x2
+    iget-object v3, p0, Landroidx/camera/view/a;->a:Landroidx/camera/core/impl/w;
 
     .line 49
-    iget-object v2, p0, Landroidx/camera/view/a;->a:Landroidx/camera/core/impl/x;
-
     .line 50
-    .line 51
-    invoke-direct {v0, p0, v1, v2, p1}, Lh0/d;-><init>(Ljava/lang/Object;ILjava/lang/Object;Ljava/lang/Object;)V
+    const/16 v0, 0x9
 
+    .line 51
     .line 52
+    invoke-direct {p1, p0, v0, v3, v2}, LC7/n;-><init>(Ljava/lang/Object;ILjava/lang/Object;Ljava/lang/Object;)V
+
     .line 53
     .line 54
-    invoke-static {v0}, Landroidx/concurrent/futures/l;->e(Landroidx/concurrent/futures/i;)Landroidx/concurrent/futures/k;
-
     .line 55
+    invoke-static {p1}, Landroidx/concurrent/futures/l;->e(Landroidx/concurrent/futures/i;)Landroidx/concurrent/futures/k;
+
     .line 56
     .line 57
-    move-result-object v0
-
     .line 58
-    invoke-static {v0}, Lc0/d;->c(Lcom/google/common/util/concurrent/c;)Lc0/d;
+    move-result-object p1
 
     .line 59
+    invoke-static {p1}, LG/d;->c(Lcom/google/common/util/concurrent/d;)LG/d;
+
     .line 60
     .line 61
-    move-result-object v0
-
     .line 62
-    new-instance v1, Lv0/h;
+    move-result-object p1
 
     .line 63
-    .line 64
-    invoke-direct {v1, p0}, Lv0/h;-><init>(Landroidx/camera/view/a;)V
+    new-instance v0, LB/Y;
 
+    .line 64
     .line 65
+    const/16 v1, 0x12
+
     .line 66
     .line 67
-    invoke-static {}, Lkotlin/jvm/internal/g;->f()Lb0/a;
+    invoke-direct {v0, p0, v1}, LB/Y;-><init>(Ljava/lang/Object;I)V
 
     .line 68
     .line 69
     .line 70
-    move-result-object v3
+    invoke-static {}, LX3/j;->j()LF/a;
 
     .line 71
-    invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
-
     .line 72
     .line 73
+    move-result-object v1
+
     .line 74
-    invoke-static {v0, v1, v3}, Lc0/l;->j(Lcom/google/common/util/concurrent/c;Lc0/a;Ljava/util/concurrent/Executor;)Lc0/b;
+    invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
     .line 75
     .line 76
     .line 77
-    move-result-object v0
+    invoke-static {p1, v0, v1}, LG/m;->i(Lcom/google/common/util/concurrent/d;LG/a;Ljava/util/concurrent/Executor;)LG/b;
 
     .line 78
-    new-instance v1, Lv0/a;
-
     .line 79
     .line 80
-    const/4 v3, 0x4
+    move-result-object p1
 
     .line 81
-    invoke-direct {v1, p0, v3}, Lv0/a;-><init>(Ljava/lang/Object;I)V
+    new-instance v0, LZ/a;
 
     .line 82
     .line 83
+    const/4 v1, 0x1
+
     .line 84
-    invoke-static {}, Lkotlin/jvm/internal/g;->f()Lb0/a;
+    invoke-direct {v0, p0, v1}, LZ/a;-><init>(Ljava/lang/Object;I)V
 
     .line 85
     .line 86
     .line 87
-    move-result-object v3
+    invoke-static {}, LX3/j;->j()LF/a;
 
     .line 88
-    new-instance v4, Lc0/k;
-
     .line 89
     .line 90
-    invoke-direct {v4, v1}, Lc0/k;-><init>(Ln/a;)V
+    move-result-object v1
 
     .line 91
+    new-instance v4, Lb8/c;
+
     .line 92
     .line 93
-    invoke-static {v0, v4, v3}, Lc0/l;->j(Lcom/google/common/util/concurrent/c;Lc0/a;Ljava/util/concurrent/Executor;)Lc0/b;
+    const/16 v5, 0xb
 
     .line 94
     .line 95
+    invoke-direct {v4, v0, v5}, Lb8/c;-><init>(Ljava/lang/Object;I)V
+
     .line 96
-    move-result-object v0
-
     .line 97
-    iput-object v0, p0, Landroidx/camera/view/a;->e:Lc0/d;
-
     .line 98
-    .line 99
-    new-instance v1, Lv0/i;
+    invoke-static {p1, v4, v1}, LG/m;->i(Lcom/google/common/util/concurrent/d;LG/a;Ljava/util/concurrent/Executor;)LG/b;
 
+    .line 99
     .line 100
     .line 101
-    invoke-direct {v1, p0, p1, v2}, Lv0/i;-><init>(Landroidx/camera/view/a;Ljava/util/ArrayList;Landroidx/camera/core/impl/x;)V
+    move-result-object p1
 
     .line 102
+    iput-object p1, p0, Landroidx/camera/view/a;->e:LG/d;
+
     .line 103
     .line 104
-    invoke-static {}, Lkotlin/jvm/internal/g;->f()Lb0/a;
+    new-instance v6, LB2/t;
 
     .line 105
     .line 106
-    .line 107
-    move-result-object p1
+    const/16 v5, 0x1b
 
+    .line 107
     .line 108
-    invoke-static {v0, v1, p1}, Lc0/l;->a(Lcom/google/common/util/concurrent/c;Lc0/c;Ljava/util/concurrent/Executor;)V
+    const/4 v4, 0x0
 
     .line 109
+    move-object v0, v6
+
     .line 110
+    move-object v1, p0
+
     .line 111
-    const/4 p1, 0x1
+    invoke-direct/range {v0 .. v5}, LB2/t;-><init>(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;ZI)V
 
     .line 112
-    iput-boolean p1, p0, Landroidx/camera/view/a;->f:Z
-
     .line 113
     .line 114
-    goto :goto_1
+    invoke-static {}, LX3/j;->j()LF/a;
 
     .line 115
+    .line 116
+    .line 117
+    move-result-object v0
+
+    .line 118
+    new-instance v1, LG/l;
+
+    .line 119
+    .line 120
+    const/4 v2, 0x0
+
+    .line 121
+    invoke-direct {v1, p1, v2, v6}, LG/l;-><init>(Ljava/lang/Object;ILjava/lang/Object;)V
+
+    .line 122
+    .line 123
+    .line 124
+    invoke-virtual {p1, v1, v0}, LG/d;->a(Ljava/lang/Runnable;Ljava/util/concurrent/Executor;)V
+
+    .line 125
+    .line 126
+    .line 127
+    const/4 p1, 0x1
+
+    .line 128
+    iput-boolean p1, p0, Landroidx/camera/view/a;->f:Z
+
+    .line 129
+    .line 130
+    goto :goto_1
+
+    .line 131
     :cond_2
     :goto_0
     sget-object p1, Landroidx/camera/view/PreviewView$StreamState;->IDLE:Landroidx/camera/view/PreviewView$StreamState;
 
-    .line 116
-    .line 117
-    invoke-virtual {p0, p1}, Landroidx/camera/view/a;->c(Landroidx/camera/view/PreviewView$StreamState;)V
-
-    .line 118
-    .line 119
-    .line 120
-    iget-boolean p1, p0, Landroidx/camera/view/a;->f:Z
-
-    .line 121
-    .line 122
-    if-eqz p1, :cond_3
-
-    .line 123
-    .line 124
-    const/4 p1, 0x0
-
-    .line 125
-    iput-boolean p1, p0, Landroidx/camera/view/a;->f:Z
-
-    .line 126
-    .line 127
-    iget-object v0, p0, Landroidx/camera/view/a;->e:Lc0/d;
-
-    .line 128
-    .line 129
-    if-eqz v0, :cond_3
-
-    .line 130
-    .line 131
-    invoke-interface {v0, p1}, Ljava/util/concurrent/Future;->cancel(Z)Z
-
     .line 132
     .line 133
+    invoke-virtual {p0, p1}, Landroidx/camera/view/a;->c(Landroidx/camera/view/PreviewView$StreamState;)V
+
     .line 134
+    .line 135
+    .line 136
+    iget-boolean p1, p0, Landroidx/camera/view/a;->f:Z
+
+    .line 137
+    .line 138
+    if-eqz p1, :cond_3
+
+    .line 139
+    .line 140
     const/4 p1, 0x0
 
-    .line 135
-    iput-object p1, p0, Landroidx/camera/view/a;->e:Lc0/d;
+    .line 141
+    iput-boolean p1, p0, Landroidx/camera/view/a;->f:Z
 
-    .line 136
-    .line 137
+    .line 142
+    .line 143
+    iget-object v0, p0, Landroidx/camera/view/a;->e:LG/d;
+
+    .line 144
+    .line 145
+    if-eqz v0, :cond_3
+
+    .line 146
+    .line 147
+    invoke-interface {v0, p1}, Ljava/util/concurrent/Future;->cancel(Z)Z
+
+    .line 148
+    .line 149
+    .line 150
+    const/4 p1, 0x0
+
+    .line 151
+    iput-object p1, p0, Landroidx/camera/view/a;->e:LG/d;
+
+    .line 152
+    .line 153
     :cond_3
     :goto_1
     return-void
@@ -466,16 +500,16 @@
     .line 20
     .line 21
     .line 22
-    invoke-static {v0}, Lcom/facebook/appevents/g;->i(Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v0}, Landroidx/work/B;->k(Ljava/lang/String;)Ljava/lang/String;
 
     .line 23
     .line 24
     .line 25
-    iget-object v0, p0, Landroidx/camera/view/a;->b:Landroidx/lifecycle/i0;
+    iget-object v0, p0, Landroidx/camera/view/a;->b:Landroidx/lifecycle/J;
 
     .line 26
     .line 27
-    invoke-virtual {v0, p1}, Landroidx/lifecycle/i0;->k(Ljava/lang/Object;)V
+    invoke-virtual {v0, p1}, Landroidx/lifecycle/J;->k(Ljava/lang/Object;)V
 
     .line 28
     .line 29

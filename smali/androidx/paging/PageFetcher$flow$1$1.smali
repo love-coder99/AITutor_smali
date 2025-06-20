@@ -3,10 +3,20 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lzh/e;
+.implements Lka/e;
 
 
 # annotations
+.annotation runtime Lca/c;
+    c = "androidx.paging.PageFetcher$flow$1$1"
+    f = "PageFetcher.kt"
+    l = {
+        0x3f,
+        0x3f
+    }
+    m = "invokeSuspend"
+.end annotation
+
 .annotation system Ldalvik/annotation/EnclosingMethod;
     value = Landroidx/paging/PageFetcher$flow$1;->invokeSuspend(Ljava/lang/Object;)Ljava/lang/Object;
 .end annotation
@@ -19,22 +29,23 @@
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "Lkotlin/coroutines/jvm/internal/SuspendLambda;",
-        "Lzh/e;"
+        "Lka/e;"
     }
 .end annotation
 
 .annotation runtime Lkotlin/Metadata;
     d1 = {
-        "\u0000\u0016\n\u0002\u0010\u0000\n\u0002\u0008\u0002\n\u0002\u0018\u0002\n\u0002\u0010\u000b\n\u0002\u0018\u0002\n\u0000\u0010\u0006\u001a\u00020\u0005\"\u0008\u0008\u0000\u0010\u0001*\u00020\u0000\"\u0008\u0008\u0001\u0010\u0002*\u00020\u0000*\u0008\u0012\u0004\u0012\u00020\u00040\u0003H\u008a@"
+        "\u0000\u0018\n\u0002\u0010\u0000\n\u0002\u0008\u0002\n\u0002\u0018\u0002\n\u0002\u0010\u000b\n\u0002\u0018\u0002\n\u0002\u0008\u0002\u0010\u0006\u001a\u00020\u0005\"\u0008\u0008\u0000\u0010\u0001*\u00020\u0000\"\u0008\u0008\u0001\u0010\u0002*\u00020\u0000*\u0008\u0012\u0004\u0012\u00020\u00040\u0003H\u008a@\u00a2\u0006\u0004\u0008\u0006\u0010\u0007"
     }
     d2 = {
         "",
         "Key",
         "Value",
-        "Lkotlinx/coroutines/flow/i;",
+        "Lkotlinx/coroutines/flow/g;",
         "",
-        "Lqh/r;",
-        "<anonymous>"
+        "LX9/j;",
+        "<anonymous>",
+        "(Lkotlinx/coroutines/flow/g;)V"
     }
     k = 0x3
     mv = {
@@ -44,22 +55,12 @@
     }
 .end annotation
 
-.annotation runtime Lth/c;
-    c = "androidx.paging.PageFetcher$flow$1$1"
-    f = "PageFetcher.kt"
-    l = {
-        0x3f,
-        0x3f
-    }
-    m = "invokeSuspend"
-.end annotation
-
 
 # instance fields
-.field final synthetic $remoteMediatorAccessor:Landroidx/paging/z1;
+.field final synthetic $remoteMediatorAccessor:Landroidx/paging/B0;
     .annotation system Ldalvik/annotation/Signature;
         value = {
-            "Landroidx/paging/z1;"
+            "Landroidx/paging/B0;"
         }
     .end annotation
 .end field
@@ -70,12 +71,12 @@
 
 
 # direct methods
-.method public constructor <init>(Landroidx/paging/z1;Lkotlin/coroutines/Continuation;)V
+.method public constructor <init>(Landroidx/paging/B0;Lkotlin/coroutines/Continuation;)V
     .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
-            "Landroidx/paging/z1;",
+            "Landroidx/paging/B0;",
             "Lkotlin/coroutines/Continuation<",
             "-",
             "Landroidx/paging/PageFetcher$flow$1$1;",
@@ -101,16 +102,16 @@
             "Lkotlin/coroutines/Continuation<",
             "*>;)",
             "Lkotlin/coroutines/Continuation<",
-            "Lqh/r;",
+            "LX9/j;",
             ">;"
         }
     .end annotation
 
     new-instance v0, Landroidx/paging/PageFetcher$flow$1$1;
 
-    iget-object v1, p0, Landroidx/paging/PageFetcher$flow$1$1;->$remoteMediatorAccessor:Landroidx/paging/z1;
+    iget-object v1, p0, Landroidx/paging/PageFetcher$flow$1$1;->$remoteMediatorAccessor:Landroidx/paging/B0;
 
-    invoke-direct {v0, v1, p2}, Landroidx/paging/PageFetcher$flow$1$1;-><init>(Landroidx/paging/z1;Lkotlin/coroutines/Continuation;)V
+    invoke-direct {v0, v1, p2}, Landroidx/paging/PageFetcher$flow$1$1;-><init>(Landroidx/paging/B0;Lkotlin/coroutines/Continuation;)V
 
     iput-object p1, v0, Landroidx/paging/PageFetcher$flow$1$1;->L$0:Ljava/lang/Object;
 
@@ -121,26 +122,26 @@
     .locals 0
 
     .line 1
-    check-cast p1, Lkotlinx/coroutines/flow/i;
+    check-cast p1, Lkotlinx/coroutines/flow/g;
 
     check-cast p2, Lkotlin/coroutines/Continuation;
 
-    invoke-virtual {p0, p1, p2}, Landroidx/paging/PageFetcher$flow$1$1;->invoke(Lkotlinx/coroutines/flow/i;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
+    invoke-virtual {p0, p1, p2}, Landroidx/paging/PageFetcher$flow$1$1;->invoke(Lkotlinx/coroutines/flow/g;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
 
     move-result-object p1
 
     return-object p1
 .end method
 
-.method public final invoke(Lkotlinx/coroutines/flow/i;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
+.method public final invoke(Lkotlinx/coroutines/flow/g;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
     .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
-            "Lkotlinx/coroutines/flow/i;",
+            "Lkotlinx/coroutines/flow/g;",
             "Lkotlin/coroutines/Continuation<",
             "-",
-            "Lqh/r;",
+            "LX9/j;",
             ">;)",
             "Ljava/lang/Object;"
         }
@@ -153,7 +154,7 @@
 
     check-cast p1, Landroidx/paging/PageFetcher$flow$1$1;
 
-    sget-object p2, Lqh/r;->a:Lqh/r;
+    sget-object p2, LX9/j;->a:LX9/j;
 
     invoke-virtual {p1, p2}, Landroidx/paging/PageFetcher$flow$1$1;->invokeSuspend(Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -225,7 +226,7 @@
 
     .line 27
     .line 28
-    check-cast v1, Lkotlinx/coroutines/flow/i;
+    check-cast v1, Lkotlinx/coroutines/flow/g;
 
     .line 29
     .line 30
@@ -254,7 +255,7 @@
     move-object v1, p1
 
     .line 42
-    check-cast v1, Lkotlinx/coroutines/flow/i;
+    check-cast v1, Lkotlinx/coroutines/flow/g;
 
     .line 43
     .line 44
@@ -294,7 +295,7 @@
 
     .line 58
     .line 59
-    invoke-interface {v1, p1, p0}, Lkotlinx/coroutines/flow/i;->emit(Ljava/lang/Object;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
+    invoke-interface {v1, p1, p0}, Lkotlinx/coroutines/flow/g;->emit(Ljava/lang/Object;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
 
     .line 60
     .line 61
@@ -311,7 +312,7 @@
     .line 66
     :cond_4
     :goto_2
-    sget-object p1, Lqh/r;->a:Lqh/r;
+    sget-object p1, LX9/j;->a:LX9/j;
 
     .line 67
     .line 68

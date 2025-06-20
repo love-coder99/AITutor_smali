@@ -85,9 +85,9 @@
 
     if-nez p0, :cond_0
 
+    .line 1
     sget-object p0, Lcom/applovin/impl/ni;->i:Lcom/applovin/impl/fb;
 
-    .line 1
     check-cast p0, Lcom/applovin/impl/ni;
 
     return-object p0
@@ -497,7 +497,10 @@
 .method public size()I
     .locals 1
 
+    .line 1
     iget v0, p0, Lcom/applovin/impl/ni;->h:I
 
+    .line 2
+    .line 3
     return v0
 .end method

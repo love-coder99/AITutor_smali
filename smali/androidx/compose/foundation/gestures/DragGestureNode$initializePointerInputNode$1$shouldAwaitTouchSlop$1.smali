@@ -3,7 +3,7 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lzh/a;
+.implements Lka/a;
 
 
 # annotations
@@ -19,7 +19,7 @@
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "Lkotlin/jvm/internal/Lambda;",
-        "Lzh/a;"
+        "Lka/a;"
     }
 .end annotation
 
@@ -65,10 +65,10 @@
 .method public final invoke()Ljava/lang/Boolean;
     .locals 1
 
+    .line 2
     iget-object v0, p0, Landroidx/compose/foundation/gestures/DragGestureNode$initializePointerInputNode$1$shouldAwaitTouchSlop$1;->this$0:Landroidx/compose/foundation/gestures/t;
 
-    .line 2
-    invoke-virtual {v0}, Landroidx/compose/foundation/gestures/t;->K0()Z
+    invoke-virtual {v0}, Landroidx/compose/foundation/gestures/t;->I0()Z
 
     move-result v0
 

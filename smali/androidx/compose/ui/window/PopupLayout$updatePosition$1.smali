@@ -3,14 +3,14 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lzh/a;
+.implements Lka/a;
 
 
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "Lkotlin/jvm/internal/Lambda;",
-        "Lzh/a;"
+        "Lka/a;"
     }
 .end annotation
 
@@ -19,7 +19,7 @@
         "\u0000\u0008\n\u0002\u0018\u0002\n\u0002\u0008\u0003\u0010\u0003\u001a\u00020\u0000H\n\u00a2\u0006\u0004\u0008\u0001\u0010\u0002"
     }
     d2 = {
-        "Lqh/r;",
+        "LX9/j;",
         "invoke",
         "()V",
         "<anonymous>"
@@ -34,7 +34,7 @@
 
 
 # instance fields
-.field final synthetic $parentBounds:Lh2/i;
+.field final synthetic $parentBounds:LM0/i;
 
 .field final synthetic $popupContentSize:J
 
@@ -42,28 +42,42 @@
 
 .field final synthetic $windowSize:J
 
-.field final synthetic this$0:Landroidx/compose/ui/window/q;
+.field final synthetic this$0:Landroidx/compose/ui/window/o;
 
 
 # direct methods
-.method public constructor <init>(Lkotlin/jvm/internal/Ref$LongRef;Landroidx/compose/ui/window/q;Lh2/i;JJ)V
+.method public constructor <init>(Lkotlin/jvm/internal/Ref$LongRef;Landroidx/compose/ui/window/o;LM0/i;JJ)V
     .locals 0
 
     .line 1
     iput-object p1, p0, Landroidx/compose/ui/window/PopupLayout$updatePosition$1;->$popupPosition:Lkotlin/jvm/internal/Ref$LongRef;
 
-    iput-object p2, p0, Landroidx/compose/ui/window/PopupLayout$updatePosition$1;->this$0:Landroidx/compose/ui/window/q;
+    .line 2
+    .line 3
+    iput-object p2, p0, Landroidx/compose/ui/window/PopupLayout$updatePosition$1;->this$0:Landroidx/compose/ui/window/o;
 
-    iput-object p3, p0, Landroidx/compose/ui/window/PopupLayout$updatePosition$1;->$parentBounds:Lh2/i;
+    .line 4
+    .line 5
+    iput-object p3, p0, Landroidx/compose/ui/window/PopupLayout$updatePosition$1;->$parentBounds:LM0/i;
 
+    .line 6
+    .line 7
     iput-wide p4, p0, Landroidx/compose/ui/window/PopupLayout$updatePosition$1;->$windowSize:J
 
+    .line 8
+    .line 9
     iput-wide p6, p0, Landroidx/compose/ui/window/PopupLayout$updatePosition$1;->$popupContentSize:J
 
+    .line 10
+    .line 11
     const/4 p1, 0x0
 
+    .line 12
     invoke-direct {p0, p1}, Lkotlin/jvm/internal/Lambda;-><init>(I)V
 
+    .line 13
+    .line 14
+    .line 15
     return-void
 .end method
 
@@ -75,7 +89,7 @@
     .line 1
     invoke-virtual {p0}, Landroidx/compose/ui/window/PopupLayout$updatePosition$1;->invoke()V
 
-    sget-object v0, Lqh/r;->a:Lqh/r;
+    sget-object v0, LX9/j;->a:LX9/j;
 
     return-object v0
 .end method
@@ -83,30 +97,33 @@
 .method public final invoke()V
     .locals 9
 
+    .line 2
     iget-object v0, p0, Landroidx/compose/ui/window/PopupLayout$updatePosition$1;->$popupPosition:Lkotlin/jvm/internal/Ref$LongRef;
 
-    iget-object v1, p0, Landroidx/compose/ui/window/PopupLayout$updatePosition$1;->this$0:Landroidx/compose/ui/window/q;
+    iget-object v1, p0, Landroidx/compose/ui/window/PopupLayout$updatePosition$1;->this$0:Landroidx/compose/ui/window/o;
 
-    .line 2
-    invoke-virtual {v1}, Landroidx/compose/ui/window/q;->getPositionProvider()Landroidx/compose/ui/window/t;
+    invoke-virtual {v1}, Landroidx/compose/ui/window/o;->getPositionProvider()Landroidx/compose/ui/window/r;
 
     move-result-object v2
 
-    iget-object v3, p0, Landroidx/compose/ui/window/PopupLayout$updatePosition$1;->$parentBounds:Lh2/i;
+    .line 3
+    iget-object v3, p0, Landroidx/compose/ui/window/PopupLayout$updatePosition$1;->$parentBounds:LM0/i;
 
+    .line 4
     iget-wide v4, p0, Landroidx/compose/ui/window/PopupLayout$updatePosition$1;->$windowSize:J
 
-    iget-object v1, p0, Landroidx/compose/ui/window/PopupLayout$updatePosition$1;->this$0:Landroidx/compose/ui/window/q;
+    .line 5
+    iget-object v1, p0, Landroidx/compose/ui/window/PopupLayout$updatePosition$1;->this$0:Landroidx/compose/ui/window/o;
 
-    .line 3
-    invoke-virtual {v1}, Landroidx/compose/ui/window/q;->getParentLayoutDirection()Landroidx/compose/ui/unit/LayoutDirection;
+    invoke-virtual {v1}, Landroidx/compose/ui/window/o;->getParentLayoutDirection()Landroidx/compose/ui/unit/LayoutDirection;
 
     move-result-object v6
 
+    .line 6
     iget-wide v7, p0, Landroidx/compose/ui/window/PopupLayout$updatePosition$1;->$popupContentSize:J
 
-    .line 4
-    invoke-interface/range {v2 .. v8}, Landroidx/compose/ui/window/t;->a(Lh2/i;JLandroidx/compose/ui/unit/LayoutDirection;J)J
+    .line 7
+    invoke-interface/range {v2 .. v8}, Landroidx/compose/ui/window/r;->a(LM0/i;JLandroidx/compose/ui/unit/LayoutDirection;J)J
 
     move-result-wide v1
 

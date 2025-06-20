@@ -47,14 +47,14 @@
 
     .line 2
     .line 3
-    const/4 v1, 0x0
+    const-string v1, "SCALAR"
 
     .line 4
-    const-string v2, "SCALAR"
-
     .line 5
+    const/4 v2, 0x0
+
     .line 6
-    invoke-direct {v0, v1, v2, v1}, Landroidx/datastore/preferences/protobuf/FieldType$Collection;-><init>(ILjava/lang/String;Z)V
+    invoke-direct {v0, v2, v1, v2}, Landroidx/datastore/preferences/protobuf/FieldType$Collection;-><init>(ILjava/lang/String;Z)V
 
     .line 7
     .line 8
@@ -63,90 +63,90 @@
 
     .line 10
     .line 11
-    new-instance v2, Landroidx/datastore/preferences/protobuf/FieldType$Collection;
+    new-instance v1, Landroidx/datastore/preferences/protobuf/FieldType$Collection;
 
     .line 12
     .line 13
-    const/4 v3, 0x1
+    const-string v3, "VECTOR"
 
     .line 14
-    const-string v4, "VECTOR"
-
     .line 15
+    const/4 v4, 0x1
+
     .line 16
-    invoke-direct {v2, v3, v4, v3}, Landroidx/datastore/preferences/protobuf/FieldType$Collection;-><init>(ILjava/lang/String;Z)V
+    invoke-direct {v1, v4, v3, v4}, Landroidx/datastore/preferences/protobuf/FieldType$Collection;-><init>(ILjava/lang/String;Z)V
 
     .line 17
     .line 18
     .line 19
-    sput-object v2, Landroidx/datastore/preferences/protobuf/FieldType$Collection;->VECTOR:Landroidx/datastore/preferences/protobuf/FieldType$Collection;
+    sput-object v1, Landroidx/datastore/preferences/protobuf/FieldType$Collection;->VECTOR:Landroidx/datastore/preferences/protobuf/FieldType$Collection;
 
     .line 20
     .line 21
-    new-instance v4, Landroidx/datastore/preferences/protobuf/FieldType$Collection;
+    new-instance v3, Landroidx/datastore/preferences/protobuf/FieldType$Collection;
 
     .line 22
     .line 23
-    const/4 v5, 0x2
+    const-string v5, "PACKED_VECTOR"
 
     .line 24
-    const-string v6, "PACKED_VECTOR"
-
     .line 25
+    const/4 v6, 0x2
+
     .line 26
-    invoke-direct {v4, v5, v6, v3}, Landroidx/datastore/preferences/protobuf/FieldType$Collection;-><init>(ILjava/lang/String;Z)V
+    invoke-direct {v3, v6, v5, v4}, Landroidx/datastore/preferences/protobuf/FieldType$Collection;-><init>(ILjava/lang/String;Z)V
 
     .line 27
     .line 28
     .line 29
-    sput-object v4, Landroidx/datastore/preferences/protobuf/FieldType$Collection;->PACKED_VECTOR:Landroidx/datastore/preferences/protobuf/FieldType$Collection;
+    sput-object v3, Landroidx/datastore/preferences/protobuf/FieldType$Collection;->PACKED_VECTOR:Landroidx/datastore/preferences/protobuf/FieldType$Collection;
 
     .line 30
     .line 31
-    new-instance v6, Landroidx/datastore/preferences/protobuf/FieldType$Collection;
+    new-instance v5, Landroidx/datastore/preferences/protobuf/FieldType$Collection;
 
     .line 32
     .line 33
-    const/4 v7, 0x3
+    const-string v7, "MAP"
 
     .line 34
-    const-string v8, "MAP"
-
     .line 35
+    const/4 v8, 0x3
+
     .line 36
-    invoke-direct {v6, v7, v8, v1}, Landroidx/datastore/preferences/protobuf/FieldType$Collection;-><init>(ILjava/lang/String;Z)V
+    invoke-direct {v5, v8, v7, v2}, Landroidx/datastore/preferences/protobuf/FieldType$Collection;-><init>(ILjava/lang/String;Z)V
 
     .line 37
     .line 38
     .line 39
-    sput-object v6, Landroidx/datastore/preferences/protobuf/FieldType$Collection;->MAP:Landroidx/datastore/preferences/protobuf/FieldType$Collection;
+    sput-object v5, Landroidx/datastore/preferences/protobuf/FieldType$Collection;->MAP:Landroidx/datastore/preferences/protobuf/FieldType$Collection;
 
     .line 40
     .line 41
-    const/4 v8, 0x4
+    const/4 v7, 0x4
 
     .line 42
-    new-array v8, v8, [Landroidx/datastore/preferences/protobuf/FieldType$Collection;
+    new-array v7, v7, [Landroidx/datastore/preferences/protobuf/FieldType$Collection;
 
     .line 43
     .line 44
-    aput-object v0, v8, v1
+    aput-object v0, v7, v2
 
     .line 45
     .line 46
-    aput-object v2, v8, v3
+    aput-object v1, v7, v4
 
     .line 47
     .line 48
-    aput-object v4, v8, v5
+    aput-object v3, v7, v6
 
     .line 49
     .line 50
-    aput-object v6, v8, v7
+    aput-object v5, v7, v8
 
     .line 51
     .line 52
-    sput-object v8, Landroidx/datastore/preferences/protobuf/FieldType$Collection;->b:[Landroidx/datastore/preferences/protobuf/FieldType$Collection;
+    sput-object v7, Landroidx/datastore/preferences/protobuf/FieldType$Collection;->b:[Landroidx/datastore/preferences/protobuf/FieldType$Collection;
 
     .line 53
     .line 54
@@ -220,7 +220,10 @@
 .method public isList()Z
     .locals 1
 
+    .line 1
     iget-boolean v0, p0, Landroidx/datastore/preferences/protobuf/FieldType$Collection;->isList:Z
 
+    .line 2
+    .line 3
     return v0
 .end method

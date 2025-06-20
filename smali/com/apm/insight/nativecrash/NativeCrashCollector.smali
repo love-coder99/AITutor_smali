@@ -111,6 +111,8 @@
 
 .method private static b(Ljava/lang/String;)Ljava/lang/String;
     .locals 6
+    .annotation build Landroidx/annotation/NonNull;
+    .end annotation
 
     .line 1
     invoke-static {p0}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
@@ -501,6 +503,8 @@
 
 .method public static onNativeCrash(Ljava/lang/String;)V
     .locals 11
+    .annotation build Landroidx/annotation/Keep;
+    .end annotation
 
     .line 1
     const-string v0, "crash_cost"

@@ -25,4 +25,6 @@
 .end method
 
 .method public abstract getWaterfall()Lcom/applovin/mediation/MaxAdWaterfallInfo;
+    .annotation build Landroidx/annotation/Nullable;
+    .end annotation
 .end method

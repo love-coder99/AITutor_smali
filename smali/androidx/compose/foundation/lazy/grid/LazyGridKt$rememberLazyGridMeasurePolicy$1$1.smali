@@ -3,14 +3,14 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lzh/e;
+.implements Lka/e;
 
 
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "Lkotlin/jvm/internal/Lambda;",
-        "Lzh/e;"
+        "Lka/e;"
     }
 .end annotation
 
@@ -19,12 +19,12 @@
         "\u0000\u0012\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0008\u0003\u0010\u0006\u001a\u00020\u0003*\u00020\u00002\u0006\u0010\u0002\u001a\u00020\u0001H\n\u00a2\u0006\u0004\u0008\u0004\u0010\u0005"
     }
     d2 = {
-        "Landroidx/compose/foundation/lazy/layout/e0;",
-        "Lh2/a;",
+        "Landroidx/compose/foundation/lazy/layout/D;",
+        "LM0/a;",
         "containerConstraints",
-        "Landroidx/compose/foundation/lazy/grid/s;",
+        "Landroidx/compose/foundation/lazy/grid/o;",
         "invoke-0kLqBqw",
-        "(Landroidx/compose/foundation/lazy/layout/e0;J)Landroidx/compose/foundation/lazy/grid/s;",
+        "(Landroidx/compose/foundation/lazy/layout/D;J)Landroidx/compose/foundation/lazy/grid/o;",
         "<anonymous>"
     }
     k = 0x3
@@ -37,78 +37,102 @@
 
 
 # instance fields
-.field final synthetic $contentPadding:Landroidx/compose/foundation/layout/p0;
+.field final synthetic $contentPadding:Landroidx/compose/foundation/layout/M;
 
-.field final synthetic $coroutineScope:Lkotlinx/coroutines/w;
+.field final synthetic $coroutineScope:Lkotlinx/coroutines/u;
 
-.field final synthetic $graphicsContext:Landroidx/compose/ui/graphics/e0;
+.field final synthetic $graphicsContext:Landroidx/compose/ui/graphics/F;
 
-.field final synthetic $horizontalArrangement:Landroidx/compose/foundation/layout/g;
+.field final synthetic $horizontalArrangement:Landroidx/compose/foundation/layout/d;
 
 .field final synthetic $isVertical:Z
 
-.field final synthetic $itemProviderLambda:Lzh/a;
+.field final synthetic $itemProviderLambda:Lka/a;
     .annotation system Ldalvik/annotation/Signature;
         value = {
-            "Lzh/a;"
+            "Lka/a;"
         }
     .end annotation
 .end field
 
 .field final synthetic $reverseLayout:Z
 
-.field final synthetic $slots:Landroidx/compose/foundation/lazy/grid/z;
+.field final synthetic $slots:Landroidx/compose/foundation/lazy/grid/t;
 
-.field final synthetic $state:Landroidx/compose/foundation/lazy/grid/f0;
+.field final synthetic $state:Landroidx/compose/foundation/lazy/grid/x;
 
-.field final synthetic $verticalArrangement:Landroidx/compose/foundation/layout/i;
+.field final synthetic $verticalArrangement:Landroidx/compose/foundation/layout/f;
 
 
 # direct methods
-.method public constructor <init>(Landroidx/compose/foundation/lazy/grid/f0;ZLandroidx/compose/foundation/layout/p0;ZLzh/a;Landroidx/compose/foundation/lazy/grid/z;Landroidx/compose/foundation/layout/i;Landroidx/compose/foundation/layout/g;Lkotlinx/coroutines/w;Landroidx/compose/ui/graphics/e0;)V
+.method public constructor <init>(Landroidx/compose/foundation/lazy/grid/x;ZLandroidx/compose/foundation/layout/M;ZLka/a;Landroidx/compose/foundation/lazy/grid/t;Landroidx/compose/foundation/layout/f;Landroidx/compose/foundation/layout/d;Lkotlinx/coroutines/u;Landroidx/compose/ui/graphics/F;)V
     .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
-            "Landroidx/compose/foundation/lazy/grid/f0;",
+            "Landroidx/compose/foundation/lazy/grid/x;",
             "Z",
-            "Landroidx/compose/foundation/layout/p0;",
+            "Landroidx/compose/foundation/layout/M;",
             "Z",
-            "Lzh/a;",
-            "Landroidx/compose/foundation/lazy/grid/z;",
-            "Landroidx/compose/foundation/layout/i;",
-            "Landroidx/compose/foundation/layout/g;",
-            "Lkotlinx/coroutines/w;",
-            "Landroidx/compose/ui/graphics/e0;",
+            "Lka/a;",
+            "Landroidx/compose/foundation/lazy/grid/t;",
+            "Landroidx/compose/foundation/layout/f;",
+            "Landroidx/compose/foundation/layout/d;",
+            "Lkotlinx/coroutines/u;",
+            "Landroidx/compose/ui/graphics/F;",
             ")V"
         }
     .end annotation
 
     .line 1
-    iput-object p1, p0, Landroidx/compose/foundation/lazy/grid/LazyGridKt$rememberLazyGridMeasurePolicy$1$1;->$state:Landroidx/compose/foundation/lazy/grid/f0;
+    iput-object p1, p0, Landroidx/compose/foundation/lazy/grid/LazyGridKt$rememberLazyGridMeasurePolicy$1$1;->$state:Landroidx/compose/foundation/lazy/grid/x;
 
+    .line 2
+    .line 3
     iput-boolean p2, p0, Landroidx/compose/foundation/lazy/grid/LazyGridKt$rememberLazyGridMeasurePolicy$1$1;->$isVertical:Z
 
-    iput-object p3, p0, Landroidx/compose/foundation/lazy/grid/LazyGridKt$rememberLazyGridMeasurePolicy$1$1;->$contentPadding:Landroidx/compose/foundation/layout/p0;
+    .line 4
+    .line 5
+    iput-object p3, p0, Landroidx/compose/foundation/lazy/grid/LazyGridKt$rememberLazyGridMeasurePolicy$1$1;->$contentPadding:Landroidx/compose/foundation/layout/M;
 
+    .line 6
+    .line 7
     iput-boolean p4, p0, Landroidx/compose/foundation/lazy/grid/LazyGridKt$rememberLazyGridMeasurePolicy$1$1;->$reverseLayout:Z
 
-    iput-object p5, p0, Landroidx/compose/foundation/lazy/grid/LazyGridKt$rememberLazyGridMeasurePolicy$1$1;->$itemProviderLambda:Lzh/a;
+    .line 8
+    .line 9
+    iput-object p5, p0, Landroidx/compose/foundation/lazy/grid/LazyGridKt$rememberLazyGridMeasurePolicy$1$1;->$itemProviderLambda:Lka/a;
 
-    iput-object p6, p0, Landroidx/compose/foundation/lazy/grid/LazyGridKt$rememberLazyGridMeasurePolicy$1$1;->$slots:Landroidx/compose/foundation/lazy/grid/z;
+    .line 10
+    .line 11
+    iput-object p6, p0, Landroidx/compose/foundation/lazy/grid/LazyGridKt$rememberLazyGridMeasurePolicy$1$1;->$slots:Landroidx/compose/foundation/lazy/grid/t;
 
-    iput-object p7, p0, Landroidx/compose/foundation/lazy/grid/LazyGridKt$rememberLazyGridMeasurePolicy$1$1;->$verticalArrangement:Landroidx/compose/foundation/layout/i;
+    .line 12
+    .line 13
+    iput-object p7, p0, Landroidx/compose/foundation/lazy/grid/LazyGridKt$rememberLazyGridMeasurePolicy$1$1;->$verticalArrangement:Landroidx/compose/foundation/layout/f;
 
-    iput-object p8, p0, Landroidx/compose/foundation/lazy/grid/LazyGridKt$rememberLazyGridMeasurePolicy$1$1;->$horizontalArrangement:Landroidx/compose/foundation/layout/g;
+    .line 14
+    .line 15
+    iput-object p8, p0, Landroidx/compose/foundation/lazy/grid/LazyGridKt$rememberLazyGridMeasurePolicy$1$1;->$horizontalArrangement:Landroidx/compose/foundation/layout/d;
 
-    iput-object p9, p0, Landroidx/compose/foundation/lazy/grid/LazyGridKt$rememberLazyGridMeasurePolicy$1$1;->$coroutineScope:Lkotlinx/coroutines/w;
+    .line 16
+    .line 17
+    iput-object p9, p0, Landroidx/compose/foundation/lazy/grid/LazyGridKt$rememberLazyGridMeasurePolicy$1$1;->$coroutineScope:Lkotlinx/coroutines/u;
 
-    iput-object p10, p0, Landroidx/compose/foundation/lazy/grid/LazyGridKt$rememberLazyGridMeasurePolicy$1$1;->$graphicsContext:Landroidx/compose/ui/graphics/e0;
+    .line 18
+    .line 19
+    iput-object p10, p0, Landroidx/compose/foundation/lazy/grid/LazyGridKt$rememberLazyGridMeasurePolicy$1$1;->$graphicsContext:Landroidx/compose/ui/graphics/F;
 
+    .line 20
+    .line 21
     const/4 p1, 0x2
 
+    .line 22
     invoke-direct {p0, p1}, Lkotlin/jvm/internal/Lambda;-><init>(I)V
 
+    .line 23
+    .line 24
+    .line 25
     return-void
 .end method
 
@@ -118,19 +142,19 @@
     .locals 2
 
     .line 1
-    check-cast p1, Landroidx/compose/foundation/lazy/layout/e0;
+    check-cast p1, Landroidx/compose/foundation/lazy/layout/D;
 
     .line 2
     .line 3
-    check-cast p2, Lh2/a;
+    check-cast p2, LM0/a;
 
     .line 4
     .line 5
-    iget-wide v0, p2, Lh2/a;->a:J
+    iget-wide v0, p2, LM0/a;->a:J
 
     .line 6
     .line 7
-    invoke-virtual {p0, p1, v0, v1}, Landroidx/compose/foundation/lazy/grid/LazyGridKt$rememberLazyGridMeasurePolicy$1$1;->invoke-0kLqBqw(Landroidx/compose/foundation/lazy/layout/e0;J)Landroidx/compose/foundation/lazy/grid/s;
+    invoke-virtual {p0, p1, v0, v1}, Landroidx/compose/foundation/lazy/grid/LazyGridKt$rememberLazyGridMeasurePolicy$1$1;->invoke-0kLqBqw(Landroidx/compose/foundation/lazy/layout/D;J)Landroidx/compose/foundation/lazy/grid/o;
 
     .line 8
     .line 9
@@ -141,8 +165,8 @@
     return-object p1
 .end method
 
-.method public final invoke-0kLqBqw(Landroidx/compose/foundation/lazy/layout/e0;J)Landroidx/compose/foundation/lazy/grid/s;
-    .locals 59
+.method public final invoke-0kLqBqw(Landroidx/compose/foundation/lazy/layout/D;J)Landroidx/compose/foundation/lazy/grid/o;
+    .locals 62
 
     .line 1
     move-object/from16 v1, p0
@@ -157,15 +181,15 @@
 
     .line 6
     .line 7
-    iget-object v2, v1, Landroidx/compose/foundation/lazy/grid/LazyGridKt$rememberLazyGridMeasurePolicy$1$1;->$state:Landroidx/compose/foundation/lazy/grid/f0;
+    iget-object v2, v1, Landroidx/compose/foundation/lazy/grid/LazyGridKt$rememberLazyGridMeasurePolicy$1$1;->$state:Landroidx/compose/foundation/lazy/grid/x;
 
     .line 8
     .line 9
-    iget-object v2, v2, Landroidx/compose/foundation/lazy/grid/f0;->q:Landroidx/compose/runtime/j1;
+    iget-object v2, v2, Landroidx/compose/foundation/lazy/grid/x;->q:Landroidx/compose/runtime/Z;
 
     .line 10
     .line 11
-    invoke-interface {v2}, Landroidx/compose/runtime/d3;->getValue()Ljava/lang/Object;
+    invoke-interface {v2}, Landroidx/compose/runtime/H0;->getValue()Ljava/lang/Object;
 
     .line 12
     .line 13
@@ -204,22 +228,22 @@
 
     .line 29
     .line 30
-    iget-object v2, v1, Landroidx/compose/foundation/lazy/grid/LazyGridKt$rememberLazyGridMeasurePolicy$1$1;->$contentPadding:Landroidx/compose/foundation/layout/p0;
+    iget-object v2, v1, Landroidx/compose/foundation/lazy/grid/LazyGridKt$rememberLazyGridMeasurePolicy$1$1;->$contentPadding:Landroidx/compose/foundation/layout/M;
 
     .line 31
     .line 32
     move-object v3, v0
 
     .line 33
-    check-cast v3, Landroidx/compose/foundation/lazy/layout/f0;
+    check-cast v3, Landroidx/compose/foundation/lazy/layout/E;
 
     .line 34
     .line 35
-    iget-object v4, v3, Landroidx/compose/foundation/lazy/layout/f0;->c:Landroidx/compose/ui/layout/i1;
+    iget-object v4, v3, Landroidx/compose/foundation/lazy/layout/E;->c:Landroidx/compose/ui/layout/e0;
 
     .line 36
     .line 37
-    invoke-interface {v4}, Landroidx/compose/ui/layout/p;->getLayoutDirection()Landroidx/compose/ui/unit/LayoutDirection;
+    invoke-interface {v4}, Landroidx/compose/ui/layout/m;->getLayoutDirection()Landroidx/compose/ui/unit/LayoutDirection;
 
     .line 38
     .line 39
@@ -227,7 +251,7 @@
     move-result-object v4
 
     .line 41
-    invoke-interface {v2, v4}, Landroidx/compose/foundation/layout/p0;->b(Landroidx/compose/ui/unit/LayoutDirection;)F
+    invoke-interface {v2, v4}, Landroidx/compose/foundation/layout/M;->b(Landroidx/compose/ui/unit/LayoutDirection;)F
 
     .line 42
     .line 43
@@ -235,11 +259,11 @@
     move-result v2
 
     .line 45
-    iget-object v3, v3, Landroidx/compose/foundation/lazy/layout/f0;->c:Landroidx/compose/ui/layout/i1;
+    iget-object v3, v3, Landroidx/compose/foundation/lazy/layout/E;->c:Landroidx/compose/ui/layout/e0;
 
     .line 46
     .line 47
-    invoke-interface {v3, v2}, Lh2/b;->c0(F)I
+    invoke-interface {v3, v2}, LM0/b;->b0(F)I
 
     .line 48
     .line 49
@@ -251,22 +275,22 @@
 
     .line 52
     :cond_1
-    iget-object v2, v1, Landroidx/compose/foundation/lazy/grid/LazyGridKt$rememberLazyGridMeasurePolicy$1$1;->$contentPadding:Landroidx/compose/foundation/layout/p0;
+    iget-object v2, v1, Landroidx/compose/foundation/lazy/grid/LazyGridKt$rememberLazyGridMeasurePolicy$1$1;->$contentPadding:Landroidx/compose/foundation/layout/M;
 
     .line 53
     .line 54
     move-object v3, v0
 
     .line 55
-    check-cast v3, Landroidx/compose/foundation/lazy/layout/f0;
+    check-cast v3, Landroidx/compose/foundation/lazy/layout/E;
 
     .line 56
     .line 57
-    iget-object v4, v3, Landroidx/compose/foundation/lazy/layout/f0;->c:Landroidx/compose/ui/layout/i1;
+    iget-object v4, v3, Landroidx/compose/foundation/lazy/layout/E;->c:Landroidx/compose/ui/layout/e0;
 
     .line 58
     .line 59
-    invoke-interface {v4}, Landroidx/compose/ui/layout/p;->getLayoutDirection()Landroidx/compose/ui/unit/LayoutDirection;
+    invoke-interface {v4}, Landroidx/compose/ui/layout/m;->getLayoutDirection()Landroidx/compose/ui/unit/LayoutDirection;
 
     .line 60
     .line 61
@@ -274,7 +298,7 @@
     move-result-object v4
 
     .line 63
-    invoke-static {v2, v4}, Landroidx/compose/foundation/layout/a;->i(Landroidx/compose/foundation/layout/p0;Landroidx/compose/ui/unit/LayoutDirection;)F
+    invoke-static {v2, v4}, Landroidx/compose/foundation/layout/a;->j(Landroidx/compose/foundation/layout/M;Landroidx/compose/ui/unit/LayoutDirection;)F
 
     .line 64
     .line 65
@@ -282,11 +306,11 @@
     move-result v2
 
     .line 67
-    iget-object v3, v3, Landroidx/compose/foundation/lazy/layout/f0;->c:Landroidx/compose/ui/layout/i1;
+    iget-object v3, v3, Landroidx/compose/foundation/lazy/layout/E;->c:Landroidx/compose/ui/layout/e0;
 
     .line 68
     .line 69
-    invoke-interface {v3, v2}, Lh2/b;->c0(F)I
+    invoke-interface {v3, v2}, LM0/b;->b0(F)I
 
     .line 70
     .line 71
@@ -303,22 +327,22 @@
 
     .line 76
     .line 77
-    iget-object v3, v1, Landroidx/compose/foundation/lazy/grid/LazyGridKt$rememberLazyGridMeasurePolicy$1$1;->$contentPadding:Landroidx/compose/foundation/layout/p0;
+    iget-object v3, v1, Landroidx/compose/foundation/lazy/grid/LazyGridKt$rememberLazyGridMeasurePolicy$1$1;->$contentPadding:Landroidx/compose/foundation/layout/M;
 
     .line 78
     .line 79
     move-object v4, v0
 
     .line 80
-    check-cast v4, Landroidx/compose/foundation/lazy/layout/f0;
+    check-cast v4, Landroidx/compose/foundation/lazy/layout/E;
 
     .line 81
     .line 82
-    iget-object v5, v4, Landroidx/compose/foundation/lazy/layout/f0;->c:Landroidx/compose/ui/layout/i1;
+    iget-object v5, v4, Landroidx/compose/foundation/lazy/layout/E;->c:Landroidx/compose/ui/layout/e0;
 
     .line 83
     .line 84
-    invoke-interface {v5}, Landroidx/compose/ui/layout/p;->getLayoutDirection()Landroidx/compose/ui/unit/LayoutDirection;
+    invoke-interface {v5}, Landroidx/compose/ui/layout/m;->getLayoutDirection()Landroidx/compose/ui/unit/LayoutDirection;
 
     .line 85
     .line 86
@@ -326,7 +350,7 @@
     move-result-object v5
 
     .line 88
-    invoke-interface {v3, v5}, Landroidx/compose/foundation/layout/p0;->c(Landroidx/compose/ui/unit/LayoutDirection;)F
+    invoke-interface {v3, v5}, Landroidx/compose/foundation/layout/M;->c(Landroidx/compose/ui/unit/LayoutDirection;)F
 
     .line 89
     .line 90
@@ -334,11 +358,11 @@
     move-result v3
 
     .line 92
-    iget-object v4, v4, Landroidx/compose/foundation/lazy/layout/f0;->c:Landroidx/compose/ui/layout/i1;
+    iget-object v4, v4, Landroidx/compose/foundation/lazy/layout/E;->c:Landroidx/compose/ui/layout/e0;
 
     .line 93
     .line 94
-    invoke-interface {v4, v3}, Lh2/b;->c0(F)I
+    invoke-interface {v4, v3}, LM0/b;->b0(F)I
 
     .line 95
     .line 96
@@ -350,22 +374,22 @@
 
     .line 99
     :cond_2
-    iget-object v3, v1, Landroidx/compose/foundation/lazy/grid/LazyGridKt$rememberLazyGridMeasurePolicy$1$1;->$contentPadding:Landroidx/compose/foundation/layout/p0;
+    iget-object v3, v1, Landroidx/compose/foundation/lazy/grid/LazyGridKt$rememberLazyGridMeasurePolicy$1$1;->$contentPadding:Landroidx/compose/foundation/layout/M;
 
     .line 100
     .line 101
     move-object v4, v0
 
     .line 102
-    check-cast v4, Landroidx/compose/foundation/lazy/layout/f0;
+    check-cast v4, Landroidx/compose/foundation/lazy/layout/E;
 
     .line 103
     .line 104
-    iget-object v5, v4, Landroidx/compose/foundation/lazy/layout/f0;->c:Landroidx/compose/ui/layout/i1;
+    iget-object v5, v4, Landroidx/compose/foundation/lazy/layout/E;->c:Landroidx/compose/ui/layout/e0;
 
     .line 105
     .line 106
-    invoke-interface {v5}, Landroidx/compose/ui/layout/p;->getLayoutDirection()Landroidx/compose/ui/unit/LayoutDirection;
+    invoke-interface {v5}, Landroidx/compose/ui/layout/m;->getLayoutDirection()Landroidx/compose/ui/unit/LayoutDirection;
 
     .line 107
     .line 108
@@ -373,7 +397,7 @@
     move-result-object v5
 
     .line 110
-    invoke-static {v3, v5}, Landroidx/compose/foundation/layout/a;->h(Landroidx/compose/foundation/layout/p0;Landroidx/compose/ui/unit/LayoutDirection;)F
+    invoke-static {v3, v5}, Landroidx/compose/foundation/layout/a;->i(Landroidx/compose/foundation/layout/M;Landroidx/compose/ui/unit/LayoutDirection;)F
 
     .line 111
     .line 112
@@ -381,11 +405,11 @@
     move-result v3
 
     .line 114
-    iget-object v4, v4, Landroidx/compose/foundation/lazy/layout/f0;->c:Landroidx/compose/ui/layout/i1;
+    iget-object v4, v4, Landroidx/compose/foundation/lazy/layout/E;->c:Landroidx/compose/ui/layout/e0;
 
     .line 115
     .line 116
-    invoke-interface {v4, v3}, Lh2/b;->c0(F)I
+    invoke-interface {v4, v3}, LM0/b;->b0(F)I
 
     .line 117
     .line 118
@@ -394,11 +418,11 @@
 
     .line 120
     :goto_2
-    iget-object v4, v1, Landroidx/compose/foundation/lazy/grid/LazyGridKt$rememberLazyGridMeasurePolicy$1$1;->$contentPadding:Landroidx/compose/foundation/layout/p0;
+    iget-object v4, v1, Landroidx/compose/foundation/lazy/grid/LazyGridKt$rememberLazyGridMeasurePolicy$1$1;->$contentPadding:Landroidx/compose/foundation/layout/M;
 
     .line 121
     .line 122
-    invoke-interface {v4}, Landroidx/compose/foundation/layout/p0;->d()F
+    invoke-interface {v4}, Landroidx/compose/foundation/layout/M;->d()F
 
     .line 123
     .line 124
@@ -409,15 +433,15 @@
     move-object v5, v0
 
     .line 127
-    check-cast v5, Landroidx/compose/foundation/lazy/layout/f0;
+    check-cast v5, Landroidx/compose/foundation/lazy/layout/E;
 
     .line 128
     .line 129
-    iget-object v6, v5, Landroidx/compose/foundation/lazy/layout/f0;->c:Landroidx/compose/ui/layout/i1;
+    iget-object v6, v5, Landroidx/compose/foundation/lazy/layout/E;->c:Landroidx/compose/ui/layout/e0;
 
     .line 130
     .line 131
-    invoke-interface {v6, v4}, Lh2/b;->c0(F)I
+    invoke-interface {v6, v4}, LM0/b;->b0(F)I
 
     .line 132
     .line 133
@@ -425,11 +449,11 @@
     move-result v4
 
     .line 135
-    iget-object v6, v1, Landroidx/compose/foundation/lazy/grid/LazyGridKt$rememberLazyGridMeasurePolicy$1$1;->$contentPadding:Landroidx/compose/foundation/layout/p0;
+    iget-object v6, v1, Landroidx/compose/foundation/lazy/grid/LazyGridKt$rememberLazyGridMeasurePolicy$1$1;->$contentPadding:Landroidx/compose/foundation/layout/M;
 
     .line 136
     .line 137
-    invoke-interface {v6}, Landroidx/compose/foundation/layout/p0;->a()F
+    invoke-interface {v6}, Landroidx/compose/foundation/layout/M;->a()F
 
     .line 138
     .line 139
@@ -437,11 +461,11 @@
     move-result v6
 
     .line 141
-    iget-object v7, v5, Landroidx/compose/foundation/lazy/layout/f0;->c:Landroidx/compose/ui/layout/i1;
+    iget-object v7, v5, Landroidx/compose/foundation/lazy/layout/E;->c:Landroidx/compose/ui/layout/e0;
 
     .line 142
     .line 143
-    invoke-interface {v7, v6}, Lh2/b;->c0(F)I
+    invoke-interface {v7, v6}, LM0/b;->b0(F)I
 
     .line 144
     .line 145
@@ -547,7 +571,7 @@
     neg-int v6, v15
 
     .line 187
-    invoke-static {v3, v6, v13, v14}, Lcom/google/android/gms/internal/consent_sdk/z;->q(IIJ)J
+    invoke-static {v3, v6, v13, v14}, LP5/f;->F(IIJ)J
 
     .line 188
     .line 189
@@ -555,11 +579,11 @@
     move-result-wide v9
 
     .line 191
-    iget-object v3, v1, Landroidx/compose/foundation/lazy/grid/LazyGridKt$rememberLazyGridMeasurePolicy$1$1;->$itemProviderLambda:Lzh/a;
+    iget-object v3, v1, Landroidx/compose/foundation/lazy/grid/LazyGridKt$rememberLazyGridMeasurePolicy$1$1;->$itemProviderLambda:Lka/a;
 
     .line 192
     .line 193
-    invoke-interface {v3}, Lzh/a;->invoke()Ljava/lang/Object;
+    invoke-interface {v3}, Lka/a;->invoke()Ljava/lang/Object;
 
     .line 194
     .line 195
@@ -570,4198 +594,4055 @@
     move-object v8, v3
 
     .line 198
-    check-cast v8, Landroidx/compose/foundation/lazy/grid/k;
+    check-cast v8, Landroidx/compose/foundation/lazy/grid/i;
 
     .line 199
     .line 200
-    move-object v3, v8
+    iget-object v3, v8, Landroidx/compose/foundation/lazy/grid/i;->b:Landroidx/compose/foundation/lazy/grid/h;
 
     .line 201
-    check-cast v3, Landroidx/compose/foundation/lazy/grid/l;
-
     .line 202
+    iget-object v6, v3, Landroidx/compose/foundation/lazy/grid/h;->b:Landroidx/compose/foundation/lazy/grid/w;
+
     .line 203
-    iget-object v6, v3, Landroidx/compose/foundation/lazy/grid/l;->b:Landroidx/compose/foundation/lazy/grid/i;
-
     .line 204
-    .line 205
-    iget-object v6, v6, Landroidx/compose/foundation/lazy/grid/i;->b:Landroidx/compose/foundation/lazy/grid/d0;
+    iget-object v3, v1, Landroidx/compose/foundation/lazy/grid/LazyGridKt$rememberLazyGridMeasurePolicy$1$1;->$slots:Landroidx/compose/foundation/lazy/grid/t;
 
+    .line 205
     .line 206
+    check-cast v3, Landroidx/compose/foundation/lazy/grid/d;
+
     .line 207
+    .line 208
     move-wide/from16 v16, v9
 
-    .line 208
     .line 209
-    iget-object v9, v1, Landroidx/compose/foundation/lazy/grid/LazyGridKt$rememberLazyGridMeasurePolicy$1$1;->$slots:Landroidx/compose/foundation/lazy/grid/z;
-
     .line 210
+    iget-object v9, v3, Landroidx/compose/foundation/lazy/grid/d;->d:Landroidx/compose/foundation/lazy/grid/s;
+
     .line 211
-    check-cast v9, Landroidx/compose/foundation/lazy/grid/e;
-
     .line 212
+    if-eqz v9, :cond_7
+
     .line 213
-    iget-object v10, v9, Landroidx/compose/foundation/lazy/grid/e;->d:Landroidx/compose/foundation/lazy/grid/y;
-
     .line 214
+    iget-wide v9, v3, Landroidx/compose/foundation/lazy/grid/d;->b:J
+
     .line 215
-    move/from16 v18, v11
-
     .line 216
-    .line 217
-    if-eqz v10, :cond_7
+    invoke-static {v9, v10, v13, v14}, LM0/a;->c(JJ)Z
 
+    .line 217
     .line 218
     .line 219
-    iget-wide v10, v9, Landroidx/compose/foundation/lazy/grid/e;->b:J
+    move-result v9
 
     .line 220
-    .line 221
-    invoke-static {v10, v11, v13, v14}, Lh2/a;->c(JJ)Z
+    if-eqz v9, :cond_7
 
+    .line 221
     .line 222
+    iget v9, v3, Landroidx/compose/foundation/lazy/grid/d;->c:F
+
     .line 223
     .line 224
-    move-result v10
+    iget-object v10, v5, Landroidx/compose/foundation/lazy/layout/E;->c:Landroidx/compose/ui/layout/e0;
 
     .line 225
-    if-eqz v10, :cond_7
-
     .line 226
-    .line 227
-    iget v10, v9, Landroidx/compose/foundation/lazy/grid/e;->c:F
+    invoke-interface {v10}, LM0/b;->b()F
 
+    .line 227
     .line 228
     .line 229
-    iget-object v11, v5, Landroidx/compose/foundation/lazy/layout/f0;->c:Landroidx/compose/ui/layout/i1;
+    move-result v10
 
     .line 230
-    .line 231
-    invoke-interface {v11}, Lh2/b;->a()F
+    cmpg-float v9, v9, v10
 
+    .line 231
     .line 232
+    if-nez v9, :cond_7
+
     .line 233
     .line 234
-    move-result v11
+    iget-object v3, v3, Landroidx/compose/foundation/lazy/grid/d;->d:Landroidx/compose/foundation/lazy/grid/s;
 
     .line 235
-    cmpg-float v10, v10, v11
-
     .line 236
+    move-object v10, v3
+
     .line 237
-    if-nez v10, :cond_7
+    goto :goto_5
 
     .line 238
+    :cond_7
+    iput-wide v13, v3, Landroidx/compose/foundation/lazy/grid/d;->b:J
+
     .line 239
-    iget-object v5, v9, Landroidx/compose/foundation/lazy/grid/e;->d:Landroidx/compose/foundation/lazy/grid/y;
-
     .line 240
-    .line 241
-    :goto_5
-    move-object v11, v5
+    iget-object v5, v5, Landroidx/compose/foundation/lazy/layout/E;->c:Landroidx/compose/ui/layout/e0;
 
+    .line 241
     .line 242
-    goto :goto_6
+    invoke-interface {v5}, LM0/b;->b()F
 
     .line 243
-    :cond_7
-    iput-wide v13, v9, Landroidx/compose/foundation/lazy/grid/e;->b:J
-
     .line 244
     .line 245
-    iget-object v5, v5, Landroidx/compose/foundation/lazy/layout/f0;->c:Landroidx/compose/ui/layout/i1;
-
-    .line 246
-    .line 247
-    invoke-interface {v5}, Lh2/b;->a()F
-
-    .line 248
-    .line 249
-    .line 250
     move-result v5
 
-    .line 251
-    iput v5, v9, Landroidx/compose/foundation/lazy/grid/e;->c:F
+    .line 246
+    iput v5, v3, Landroidx/compose/foundation/lazy/grid/d;->c:F
 
+    .line 247
+    .line 248
+    new-instance v5, LM0/a;
+
+    .line 249
+    .line 250
+    invoke-direct {v5, v13, v14}, LM0/a;-><init>(J)V
+
+    .line 251
     .line 252
     .line 253
-    new-instance v5, Lh2/a;
+    iget-object v9, v3, Landroidx/compose/foundation/lazy/grid/d;->a:Lka/e;
 
     .line 254
     .line 255
-    invoke-direct {v5, v13, v14}, Lh2/a;-><init>(J)V
+    invoke-interface {v9, v0, v5}, Lka/e;->invoke(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 256
     .line 257
     .line 258
-    iget-object v10, v9, Landroidx/compose/foundation/lazy/grid/e;->a:Lzh/e;
-
-    .line 259
-    .line 260
-    invoke-interface {v10, v0, v5}, Lzh/e;->invoke(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
-
-    .line 261
-    .line 262
-    .line 263
     move-result-object v5
 
+    .line 259
+    check-cast v5, Landroidx/compose/foundation/lazy/grid/s;
+
+    .line 260
+    .line 261
+    iput-object v5, v3, Landroidx/compose/foundation/lazy/grid/d;->d:Landroidx/compose/foundation/lazy/grid/s;
+
+    .line 262
+    .line 263
+    move-object v10, v5
+
     .line 264
-    check-cast v5, Landroidx/compose/foundation/lazy/grid/y;
+    :goto_5
+    iget-object v3, v10, Landroidx/compose/foundation/lazy/grid/s;->a:[I
 
     .line 265
     .line 266
-    iput-object v5, v9, Landroidx/compose/foundation/lazy/grid/e;->d:Landroidx/compose/foundation/lazy/grid/y;
+    array-length v9, v3
 
     .line 267
-    .line 268
-    goto :goto_5
+    iget v3, v6, Landroidx/compose/foundation/lazy/grid/w;->i:I
 
+    .line 268
     .line 269
-    :goto_6
-    iget-object v5, v11, Landroidx/compose/foundation/lazy/grid/y;->a:[I
+    const/4 v5, 0x0
 
     .line 270
-    .line 271
-    array-length v10, v5
+    if-eq v9, v3, :cond_8
 
+    .line 271
     .line 272
-    iget v5, v6, Landroidx/compose/foundation/lazy/grid/d0;->e:I
+    iput v9, v6, Landroidx/compose/foundation/lazy/grid/w;->i:I
 
     .line 273
     .line 274
-    const/16 v23, -0x1
+    iget-object v3, v6, Landroidx/compose/foundation/lazy/grid/w;->b:Ljava/util/ArrayList;
 
     .line 275
     .line 276
-    const/4 v9, 0x0
+    invoke-virtual {v3}, Ljava/util/ArrayList;->clear()V
 
     .line 277
-    if-eq v10, v5, :cond_8
-
     .line 278
     .line 279
-    iput v10, v6, Landroidx/compose/foundation/lazy/grid/d0;->e:I
+    move/from16 v19, v9
 
     .line 280
     .line 281
-    iget-object v5, v6, Landroidx/compose/foundation/lazy/grid/d0;->b:Ljava/util/ArrayList;
+    new-instance v9, Landroidx/compose/foundation/lazy/grid/u;
 
     .line 282
     .line 283
-    invoke-virtual {v5}, Ljava/util/ArrayList;->clear()V
+    invoke-direct {v9, v5, v5}, Landroidx/compose/foundation/lazy/grid/u;-><init>(II)V
 
     .line 284
     .line 285
     .line 286
-    move/from16 v19, v10
+    invoke-virtual {v3, v9}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
     .line 287
     .line 288
-    new-instance v10, Landroidx/compose/foundation/lazy/grid/a0;
-
     .line 289
-    .line 290
-    invoke-direct {v10, v9, v9}, Landroidx/compose/foundation/lazy/grid/a0;-><init>(II)V
+    iput v5, v6, Landroidx/compose/foundation/lazy/grid/w;->c:I
 
+    .line 290
     .line 291
+    iput v5, v6, Landroidx/compose/foundation/lazy/grid/w;->d:I
+
     .line 292
     .line 293
-    invoke-virtual {v5, v10}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
+    iput v5, v6, Landroidx/compose/foundation/lazy/grid/w;->e:I
 
     .line 294
     .line 295
+    const/4 v9, -0x1
+
     .line 296
-    invoke-virtual {v6}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+    iput v9, v6, Landroidx/compose/foundation/lazy/grid/w;->f:I
 
     .line 297
     .line 298
-    .line 299
-    invoke-virtual {v6}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+    iget-object v3, v6, Landroidx/compose/foundation/lazy/grid/w;->g:Ljava/util/ArrayList;
 
+    .line 299
     .line 300
+    invoke-virtual {v3}, Ljava/util/ArrayList;->clear()V
+
     .line 301
     .line 302
-    invoke-virtual {v6}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
-
     .line 303
+    goto :goto_6
+
     .line 304
+    :cond_8
+    move/from16 v19, v9
+
     .line 305
-    invoke-virtual {v6}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
-
     .line 306
+    const/4 v9, -0x1
+
     .line 307
+    :goto_6
+    iget-boolean v3, v1, Landroidx/compose/foundation/lazy/grid/LazyGridKt$rememberLazyGridMeasurePolicy$1$1;->$isVertical:Z
+
     .line 308
-    iget-object v5, v6, Landroidx/compose/foundation/lazy/grid/d0;->c:Ljava/util/ArrayList;
-
     .line 309
-    .line 310
-    invoke-virtual {v5}, Ljava/util/ArrayList;->clear()V
+    if-eqz v3, :cond_a
 
+    .line 310
     .line 311
+    iget-object v3, v1, Landroidx/compose/foundation/lazy/grid/LazyGridKt$rememberLazyGridMeasurePolicy$1$1;->$verticalArrangement:Landroidx/compose/foundation/layout/f;
+
     .line 312
     .line 313
-    goto :goto_7
+    if-eqz v3, :cond_9
 
     .line 314
-    :cond_8
-    move/from16 v19, v10
-
     .line 315
-    .line 316
-    :goto_7
-    iget-boolean v5, v1, Landroidx/compose/foundation/lazy/grid/LazyGridKt$rememberLazyGridMeasurePolicy$1$1;->$isVertical:Z
+    invoke-interface {v3}, Landroidx/compose/foundation/layout/f;->a()F
 
+    .line 316
     .line 317
     .line 318
-    if-eqz v5, :cond_a
+    move-result v3
 
     .line 319
+    goto :goto_7
+
     .line 320
-    iget-object v5, v1, Landroidx/compose/foundation/lazy/grid/LazyGridKt$rememberLazyGridMeasurePolicy$1$1;->$verticalArrangement:Landroidx/compose/foundation/layout/i;
+    :cond_9
+    new-instance v0, Ljava/lang/IllegalArgumentException;
 
     .line 321
     .line 322
-    if-eqz v5, :cond_9
+    const-string v2, "null verticalArrangement when isVertical == true"
 
     .line 323
     .line 324
-    invoke-interface {v5}, Landroidx/compose/foundation/layout/i;->a()F
+    invoke-direct {v0, v2}, Ljava/lang/IllegalArgumentException;-><init>(Ljava/lang/String;)V
 
     .line 325
     .line 326
     .line 327
-    move-result v5
-
-    .line 328
-    goto :goto_8
-
-    .line 329
-    :cond_9
-    new-instance v0, Ljava/lang/IllegalArgumentException;
-
-    .line 330
-    .line 331
-    const-string v2, "null verticalArrangement when isVertical == true"
-
-    .line 332
-    .line 333
-    invoke-virtual {v2}, Ljava/lang/Object;->toString()Ljava/lang/String;
-
-    .line 334
-    .line 335
-    .line 336
-    move-result-object v2
-
-    .line 337
-    invoke-direct {v0, v2}, Ljava/lang/IllegalArgumentException;-><init>(Ljava/lang/String;)V
-
-    .line 338
-    .line 339
-    .line 340
     throw v0
 
-    .line 341
+    .line 328
     :cond_a
-    iget-object v5, v1, Landroidx/compose/foundation/lazy/grid/LazyGridKt$rememberLazyGridMeasurePolicy$1$1;->$horizontalArrangement:Landroidx/compose/foundation/layout/g;
+    iget-object v3, v1, Landroidx/compose/foundation/lazy/grid/LazyGridKt$rememberLazyGridMeasurePolicy$1$1;->$horizontalArrangement:Landroidx/compose/foundation/layout/d;
 
-    .line 342
-    .line 343
-    if-eqz v5, :cond_60
+    .line 329
+    .line 330
+    if-eqz v3, :cond_5e
 
-    .line 344
-    .line 345
-    invoke-interface {v5}, Landroidx/compose/foundation/layout/g;->a()F
+    .line 331
+    .line 332
+    invoke-interface {v3}, Landroidx/compose/foundation/layout/d;->a()F
 
-    .line 346
-    .line 347
-    .line 348
-    move-result v5
+    .line 333
+    .line 334
+    .line 335
+    move-result v3
 
-    .line 349
-    :goto_8
-    invoke-interface {v7, v5}, Lh2/b;->c0(F)I
+    .line 336
+    :goto_7
+    invoke-interface {v7, v3}, LM0/b;->b0(F)I
 
-    .line 350
-    .line 351
-    .line 352
+    .line 337
+    .line 338
+    .line 339
     move-result v46
 
-    .line 353
-    iget-object v3, v3, Landroidx/compose/foundation/lazy/grid/l;->b:Landroidx/compose/foundation/lazy/grid/i;
+    .line 340
+    iget-object v3, v8, Landroidx/compose/foundation/lazy/grid/i;->b:Landroidx/compose/foundation/lazy/grid/h;
 
-    .line 354
-    .line 355
-    invoke-virtual {v3}, Landroidx/compose/foundation/lazy/grid/i;->j()Landroidx/compose/foundation/lazy/layout/s0;
+    .line 341
+    .line 342
+    invoke-virtual {v3}, Landroidx/compose/foundation/lazy/grid/h;->j()LBa/i;
 
-    .line 356
-    .line 357
-    .line 358
+    .line 343
+    .line 344
+    .line 345
     move-result-object v3
 
-    .line 359
-    iget v10, v3, Landroidx/compose/foundation/lazy/layout/s0;->b:I
+    .line 346
+    iget v7, v3, LBa/i;->b:I
 
-    .line 360
-    .line 361
+    .line 347
+    .line 348
     iget-boolean v3, v1, Landroidx/compose/foundation/lazy/grid/LazyGridKt$rememberLazyGridMeasurePolicy$1$1;->$isVertical:Z
 
-    .line 362
-    .line 363
+    .line 349
+    .line 350
     if-eqz v3, :cond_b
+
+    .line 351
+    .line 352
+    invoke-static/range {p2 .. p3}, LM0/a;->h(J)I
+
+    .line 353
+    .line 354
+    .line 355
+    move-result v3
+
+    .line 356
+    sub-int/2addr v3, v15
+
+    .line 357
+    goto :goto_8
+
+    .line 358
+    :cond_b
+    invoke-static/range {p2 .. p3}, LM0/a;->i(J)I
+
+    .line 359
+    .line 360
+    .line 361
+    move-result v3
+
+    .line 362
+    sub-int/2addr v3, v11
+
+    .line 363
+    :goto_8
+    iget-boolean v5, v1, Landroidx/compose/foundation/lazy/grid/LazyGridKt$rememberLazyGridMeasurePolicy$1$1;->$reverseLayout:Z
 
     .line 364
     .line 365
-    invoke-static/range {p2 .. p3}, Lh2/a;->h(J)I
+    if-eqz v5, :cond_f
 
     .line 366
     .line 367
-    .line 368
-    move-result v3
+    if-lez v3, :cond_c
 
+    .line 368
     .line 369
-    sub-int/2addr v3, v15
+    goto :goto_b
 
     .line 370
-    :goto_9
-    move v7, v3
+    :cond_c
+    iget-boolean v5, v1, Landroidx/compose/foundation/lazy/grid/LazyGridKt$rememberLazyGridMeasurePolicy$1$1;->$isVertical:Z
 
     .line 371
-    goto :goto_a
-
     .line 372
-    :cond_b
-    invoke-static/range {p2 .. p3}, Lh2/a;->i(J)I
+    if-eqz v5, :cond_d
 
     .line 373
     .line 374
+    goto :goto_9
+
     .line 375
-    move-result v3
+    :cond_d
+    add-int/2addr v2, v3
 
     .line 376
-    sub-int v3, v3, v18
+    :goto_9
+    if-eqz v5, :cond_e
 
     .line 377
     .line 378
-    goto :goto_9
+    add-int/2addr v4, v3
 
     .line 379
-    :goto_a
-    iget-boolean v3, v1, Landroidx/compose/foundation/lazy/grid/LazyGridKt$rememberLazyGridMeasurePolicy$1$1;->$reverseLayout:Z
+    :cond_e
+    invoke-static {v2, v4}, Landroid/support/v4/media/session/a;->a(II)J
 
     .line 380
     .line 381
-    if-eqz v3, :cond_f
-
     .line 382
+    move-result-wide v4
+
     .line 383
-    if-lez v7, :cond_c
+    :goto_a
+    move-wide/from16 v20, v4
 
     .line 384
     .line 385
-    goto :goto_d
+    goto :goto_c
 
     .line 386
-    :cond_c
-    iget-boolean v3, v1, Landroidx/compose/foundation/lazy/grid/LazyGridKt$rememberLazyGridMeasurePolicy$1$1;->$isVertical:Z
+    :cond_f
+    :goto_b
+    invoke-static {v2, v4}, Landroid/support/v4/media/session/a;->a(II)J
 
     .line 387
     .line 388
-    if-eqz v3, :cond_d
-
     .line 389
+    move-result-wide v4
+
     .line 390
-    goto :goto_b
+    goto :goto_a
 
     .line 391
-    :cond_d
-    add-int/2addr v2, v7
+    :goto_c
+    new-instance v5, Landroidx/compose/foundation/lazy/grid/m;
 
     .line 392
-    :goto_b
-    if-eqz v3, :cond_e
-
     .line 393
-    .line 394
-    add-int/2addr v4, v7
+    iget-object v4, v1, Landroidx/compose/foundation/lazy/grid/LazyGridKt$rememberLazyGridMeasurePolicy$1$1;->$state:Landroidx/compose/foundation/lazy/grid/x;
 
+    .line 394
     .line 395
-    :cond_e
-    invoke-static {v2, v4}, Ly/f;->a(II)J
+    iget-boolean v2, v1, Landroidx/compose/foundation/lazy/grid/LazyGridKt$rememberLazyGridMeasurePolicy$1$1;->$isVertical:Z
 
     .line 396
     .line 397
-    .line 398
-    move-result-wide v2
+    iget-boolean v9, v1, Landroidx/compose/foundation/lazy/grid/LazyGridKt$rememberLazyGridMeasurePolicy$1$1;->$reverseLayout:Z
 
+    .line 398
     .line 399
-    :goto_c
-    move-wide/from16 v20, v2
+    move/from16 v23, v2
 
     .line 400
     .line 401
-    goto :goto_e
+    move-object v2, v5
 
     .line 402
-    :cond_f
-    :goto_d
-    invoke-static {v2, v4}, Ly/f;->a(II)J
+    move v13, v3
 
     .line 403
+    move-object v3, v8
+
     .line 404
+    move-object v14, v4
+
     .line 405
-    move-result-wide v2
+    move-object/from16 v4, p1
 
     .line 406
-    goto :goto_c
-
     .line 407
-    :goto_e
-    new-instance v5, Landroidx/compose/foundation/lazy/grid/p;
+    move-object/from16 v37, v5
 
     .line 408
     .line 409
-    iget-object v4, v1, Landroidx/compose/foundation/lazy/grid/LazyGridKt$rememberLazyGridMeasurePolicy$1$1;->$state:Landroidx/compose/foundation/lazy/grid/f0;
+    const/4 v0, 0x0
 
     .line 410
+    const/16 v29, -0x1
+
     .line 411
-    iget-boolean v3, v1, Landroidx/compose/foundation/lazy/grid/LazyGridKt$rememberLazyGridMeasurePolicy$1$1;->$isVertical:Z
-
     .line 412
+    move/from16 v5, v46
+
     .line 413
-    iget-boolean v2, v1, Landroidx/compose/foundation/lazy/grid/LazyGridKt$rememberLazyGridMeasurePolicy$1$1;->$reverseLayout:Z
-
     .line 414
-    .line 415
-    move/from16 v22, v2
+    move-object/from16 v24, v6
 
+    .line 415
     .line 416
+    move-object v6, v14
+
     .line 417
-    move-object v2, v5
+    move v14, v7
 
     .line 418
-    move/from16 v24, v3
+    move/from16 v7, v23
 
     .line 419
     .line 420
-    move-object v3, v8
+    move-object v0, v8
 
     .line 421
-    move-object/from16 v25, v4
+    move v8, v9
 
     .line 422
+    move-wide/from16 v47, v16
+
     .line 423
-    move-object/from16 v4, p1
-
     .line 424
-    .line 425
-    move-object/from16 v26, v5
+    move/from16 v49, v19
 
+    .line 425
     .line 426
+    move v9, v12
+
     .line 427
-    move/from16 v5, v46
+    move-object/from16 v18, v10
 
     .line 428
     .line 429
-    move-object/from16 v27, v6
+    move/from16 v10, v30
 
     .line 430
     .line 431
-    move-object/from16 v6, v25
+    move/from16 v25, v11
 
     .line 432
     .line 433
-    move v13, v7
+    move/from16 v50, v13
 
     .line 434
-    move/from16 v7, v24
-
     .line 435
+    move v13, v12
+
     .line 436
-    move-object v14, v8
+    move-wide/from16 v11, v20
 
     .line 437
-    move/from16 v8, v22
-
     .line 438
-    .line 439
-    move-wide/from16 v28, v16
+    invoke-direct/range {v2 .. v12}, Landroidx/compose/foundation/lazy/grid/m;-><init>(Landroidx/compose/foundation/lazy/grid/i;Landroidx/compose/foundation/lazy/layout/D;ILandroidx/compose/foundation/lazy/grid/x;ZZIIJ)V
 
+    .line 439
     .line 440
     .line 441
-    const/4 v0, 0x0
+    new-instance v8, Landroidx/compose/foundation/lazy/grid/n;
 
     .line 442
-    move v9, v12
-
     .line 443
-    move/from16 v47, v10
+    move-object/from16 v16, v8
 
     .line 444
     .line 445
-    move/from16 v25, v19
+    move/from16 v17, v23
 
     .line 446
     .line 447
-    move/from16 v10, v30
+    move/from16 v19, v14
 
     .line 448
     .line 449
-    move v0, v12
+    move/from16 v20, v46
 
     .line 450
-    move/from16 v31, v18
-
     .line 451
+    move-object/from16 v21, v37
+
     .line 452
-    move-object/from16 v18, v11
-
     .line 453
+    move-object/from16 v22, v24
+
     .line 454
-    move-wide/from16 v11, v20
-
     .line 455
-    .line 456
-    invoke-direct/range {v2 .. v12}, Landroidx/compose/foundation/lazy/grid/p;-><init>(Landroidx/compose/foundation/lazy/grid/k;Landroidx/compose/foundation/lazy/layout/e0;ILandroidx/compose/foundation/lazy/grid/f0;ZZIIJ)V
+    invoke-direct/range {v16 .. v22}, Landroidx/compose/foundation/lazy/grid/n;-><init>(ZLandroidx/compose/foundation/lazy/grid/s;IILandroidx/compose/foundation/lazy/grid/m;Landroidx/compose/foundation/lazy/grid/w;)V
 
+    .line 456
     .line 457
     .line 458
+    new-instance v9, Landroidx/compose/foundation/lazy/grid/LazyGridKt$rememberLazyGridMeasurePolicy$1$1$prefetchInfoRetriever$1;
+
     .line 459
-    new-instance v8, Landroidx/compose/foundation/lazy/grid/q;
-
     .line 460
+    move-object/from16 v2, v24
+
     .line 461
-    move-object/from16 v16, v8
-
     .line 462
-    .line 463
-    move/from16 v17, v24
+    invoke-direct {v9, v2, v8}, Landroidx/compose/foundation/lazy/grid/LazyGridKt$rememberLazyGridMeasurePolicy$1$1$prefetchInfoRetriever$1;-><init>(Landroidx/compose/foundation/lazy/grid/w;Landroidx/compose/foundation/lazy/grid/n;)V
 
+    .line 463
     .line 464
     .line 465
-    move/from16 v19, v47
+    iget-object v3, v1, Landroidx/compose/foundation/lazy/grid/LazyGridKt$rememberLazyGridMeasurePolicy$1$1;->$state:Landroidx/compose/foundation/lazy/grid/x;
 
     .line 466
     .line 467
-    move/from16 v20, v46
+    invoke-static {}, Landroidx/compose/runtime/snapshots/o;->c()Landroidx/compose/runtime/snapshots/g;
 
     .line 468
     .line 469
-    move-object/from16 v21, v26
-
     .line 470
+    move-result-object v4
+
     .line 471
-    move-object/from16 v22, v27
+    if-eqz v4, :cond_10
 
     .line 472
     .line 473
-    invoke-direct/range {v16 .. v22}, Landroidx/compose/foundation/lazy/grid/q;-><init>(ZLandroidx/compose/foundation/lazy/grid/y;IILandroidx/compose/foundation/lazy/grid/p;Landroidx/compose/foundation/lazy/grid/d0;)V
+    invoke-virtual {v4}, Landroidx/compose/runtime/snapshots/g;->f()Lka/c;
 
     .line 474
     .line 475
     .line 476
-    new-instance v9, Landroidx/compose/foundation/lazy/grid/LazyGridKt$rememberLazyGridMeasurePolicy$1$1$prefetchInfoRetriever$1;
-
-    .line 477
-    .line 478
-    move-object/from16 v2, v27
-
-    .line 479
-    .line 480
-    invoke-direct {v9, v2, v8}, Landroidx/compose/foundation/lazy/grid/LazyGridKt$rememberLazyGridMeasurePolicy$1$1$prefetchInfoRetriever$1;-><init>(Landroidx/compose/foundation/lazy/grid/d0;Landroidx/compose/foundation/lazy/grid/q;)V
-
-    .line 481
-    .line 482
-    .line 483
-    iget-object v3, v1, Landroidx/compose/foundation/lazy/grid/LazyGridKt$rememberLazyGridMeasurePolicy$1$1;->$state:Landroidx/compose/foundation/lazy/grid/f0;
-
-    .line 484
-    .line 485
-    invoke-static {}, Lxd/e;->s()Landroidx/compose/runtime/snapshots/h;
-
-    .line 486
-    .line 487
-    .line 488
-    move-result-object v4
-
-    .line 489
-    if-eqz v4, :cond_10
-
-    .line 490
-    .line 491
-    invoke-virtual {v4}, Landroidx/compose/runtime/snapshots/h;->f()Lzh/c;
-
-    .line 492
-    .line 493
-    .line 494
     move-result-object v5
 
-    .line 495
-    goto :goto_f
+    .line 477
+    goto :goto_d
 
-    .line 496
+    .line 478
     :cond_10
     const/4 v5, 0x0
 
+    .line 479
+    :goto_d
+    invoke-static {v4}, Landroidx/compose/runtime/snapshots/o;->d(Landroidx/compose/runtime/snapshots/g;)Landroidx/compose/runtime/snapshots/g;
+
+    .line 480
+    .line 481
+    .line 482
+    move-result-object v6
+
+    .line 483
+    :try_start_0
+    iget-object v3, v3, Landroidx/compose/foundation/lazy/grid/x;->b:Landroidx/compose/foundation/lazy/m;
+
+    .line 484
+    .line 485
+    iget-object v7, v3, Landroidx/compose/foundation/lazy/m;->b:Landroidx/compose/runtime/ParcelableSnapshotMutableIntState;
+
+    .line 486
+    .line 487
+    invoke-virtual {v7}, Landroidx/compose/runtime/ParcelableSnapshotMutableIntState;->k()I
+
+    .line 488
+    .line 489
+    .line 490
+    move-result v7
+
+    .line 491
+    iget-object v11, v3, Landroidx/compose/foundation/lazy/m;->e:Ljava/lang/Object;
+
+    .line 492
+    .line 493
+    invoke-static {v0, v7, v11}, Landroidx/compose/foundation/lazy/layout/r;->h(Landroidx/compose/foundation/lazy/layout/A;ILjava/lang/Object;)I
+
+    .line 494
+    .line 495
+    .line 496
+    move-result v11
+
     .line 497
-    :goto_f
-    invoke-static {v4}, Lxd/e;->v(Landroidx/compose/runtime/snapshots/h;)Landroidx/compose/runtime/snapshots/h;
+    if-eq v7, v11, :cond_11
 
     .line 498
     .line 499
-    .line 500
-    move-result-object v6
+    iget-object v12, v3, Landroidx/compose/foundation/lazy/m;->b:Landroidx/compose/runtime/ParcelableSnapshotMutableIntState;
 
+    .line 500
     .line 501
-    :try_start_0
-    iget-object v3, v3, Landroidx/compose/foundation/lazy/grid/f0;->b:Landroidx/compose/foundation/lazy/grid/x;
+    invoke-virtual {v12, v11}, Landroidx/compose/runtime/ParcelableSnapshotMutableIntState;->l(I)V
 
     .line 502
     .line 503
-    iget-object v7, v3, Landroidx/compose/foundation/lazy/grid/x;->a:Landroidx/compose/runtime/ParcelableSnapshotMutableIntState;
-
     .line 504
-    .line 505
-    invoke-virtual {v7}, Landroidx/compose/runtime/p2;->k()I
+    iget-object v12, v3, Landroidx/compose/foundation/lazy/m;->f:Landroidx/compose/foundation/lazy/layout/H;
 
+    .line 505
     .line 506
+    invoke-virtual {v12, v7}, Landroidx/compose/foundation/lazy/layout/H;->a(I)V
+
     .line 507
     .line 508
-    move-result v7
-
     .line 509
-    iget-object v11, v3, Landroidx/compose/foundation/lazy/grid/x;->d:Ljava/lang/Object;
+    :cond_11
+    if-lt v11, v14, :cond_13
 
     .line 510
     .line 511
-    invoke-static {v14, v7, v11}, Landroidx/compose/foundation/lazy/layout/p;->h(Landroidx/compose/foundation/lazy/layout/a0;ILjava/lang/Object;)I
+    if-gtz v14, :cond_12
 
     .line 512
     .line 513
+    goto :goto_e
+
     .line 514
-    move-result v11
+    :cond_12
+    add-int/lit8 v7, v14, -0x1
 
     .line 515
-    if-eq v7, v11, :cond_11
-
     .line 516
-    .line 517
-    iget-object v12, v3, Landroidx/compose/foundation/lazy/grid/x;->a:Landroidx/compose/runtime/ParcelableSnapshotMutableIntState;
+    invoke-virtual {v2, v7}, Landroidx/compose/foundation/lazy/grid/w;->c(I)I
 
+    .line 517
     .line 518
     .line 519
-    invoke-virtual {v12, v11}, Landroidx/compose/runtime/p2;->l(I)V
-
-    .line 520
-    .line 521
-    .line 522
-    iget-object v12, v3, Landroidx/compose/foundation/lazy/grid/x;->e:Landroidx/compose/foundation/lazy/layout/i0;
-
-    .line 523
-    .line 524
-    invoke-virtual {v12, v7}, Landroidx/compose/foundation/lazy/layout/i0;->a(I)V
-
-    .line 525
-    .line 526
-    .line 527
-    :cond_11
-    move/from16 v12, v47
-
-    .line 528
-    .line 529
-    if-lt v11, v12, :cond_13
-
-    .line 530
-    .line 531
-    if-gtz v12, :cond_12
-
-    .line 532
-    .line 533
-    goto :goto_10
-
-    .line 534
-    :cond_12
-    add-int/lit8 v3, v12, -0x1
-
-    .line 535
-    .line 536
-    invoke-virtual {v2, v3}, Landroidx/compose/foundation/lazy/grid/d0;->b(I)I
-
-    .line 537
-    .line 538
-    .line 539
     move-result v2
 
-    .line 540
+    .line 520
     move v11, v2
 
-    .line 541
-    const/16 v16, 0x0
+    .line 521
+    const/4 v12, 0x0
 
-    .line 542
-    .line 543
-    goto :goto_11
+    .line 522
+    goto :goto_f
 
-    .line 544
+    .line 523
     :catchall_0
     move-exception v0
 
-    .line 545
-    goto/16 :goto_4c
+    .line 524
+    goto/16 :goto_47
 
-    .line 546
-    .line 547
+    .line 525
+    .line 526
     :cond_13
-    :goto_10
-    invoke-virtual {v2, v11}, Landroidx/compose/foundation/lazy/grid/d0;->b(I)I
+    :goto_e
+    invoke-virtual {v2, v11}, Landroidx/compose/foundation/lazy/grid/w;->c(I)I
 
-    .line 548
-    .line 549
-    .line 550
+    .line 527
+    .line 528
+    .line 529
     move-result v2
 
-    .line 551
-    iget-object v3, v3, Landroidx/compose/foundation/lazy/grid/x;->b:Landroidx/compose/runtime/ParcelableSnapshotMutableIntState;
+    .line 530
+    iget-object v3, v3, Landroidx/compose/foundation/lazy/m;->c:Landroidx/compose/runtime/ParcelableSnapshotMutableIntState;
 
-    .line 552
-    .line 553
-    invoke-virtual {v3}, Landroidx/compose/runtime/p2;->k()I
+    .line 531
+    .line 532
+    invoke-virtual {v3}, Landroidx/compose/runtime/ParcelableSnapshotMutableIntState;->k()I
 
-    .line 554
-    .line 555
-    .line 556
+    .line 533
+    .line 534
+    .line 535
     move-result v3
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    .line 557
+    .line 536
     move v11, v2
 
+    .line 537
+    move v12, v3
+
+    .line 538
+    :goto_f
+    invoke-static {v4, v6, v5}, Landroidx/compose/runtime/snapshots/o;->g(Landroidx/compose/runtime/snapshots/g;Landroidx/compose/runtime/snapshots/g;Lka/c;)V
+
+    .line 539
+    .line 540
+    .line 541
+    iget-object v2, v1, Landroidx/compose/foundation/lazy/grid/LazyGridKt$rememberLazyGridMeasurePolicy$1$1;->$state:Landroidx/compose/foundation/lazy/grid/x;
+
+    .line 542
+    .line 543
+    iget-object v3, v2, Landroidx/compose/foundation/lazy/grid/x;->o:Landroidx/compose/foundation/lazy/layout/J;
+
+    .line 544
+    .line 545
+    iget-object v2, v2, Landroidx/compose/foundation/lazy/grid/x;->l:Landroidx/compose/foundation/lazy/layout/j;
+
+    .line 546
+    .line 547
+    invoke-static {v0, v3, v2}, Landroidx/compose/foundation/lazy/layout/r;->f(Landroidx/compose/foundation/lazy/layout/A;Landroidx/compose/foundation/lazy/layout/J;Landroidx/compose/foundation/lazy/layout/j;)Ljava/util/List;
+
+    .line 548
+    .line 549
+    .line 550
+    move-result-object v7
+
+    .line 551
+    iget-object v6, v1, Landroidx/compose/foundation/lazy/grid/LazyGridKt$rememberLazyGridMeasurePolicy$1$1;->$state:Landroidx/compose/foundation/lazy/grid/x;
+
+    .line 552
+    .line 553
+    iget v4, v6, Landroidx/compose/foundation/lazy/grid/x;->e:F
+
+    .line 554
+    .line 555
+    iget-boolean v5, v1, Landroidx/compose/foundation/lazy/grid/LazyGridKt$rememberLazyGridMeasurePolicy$1$1;->$isVertical:Z
+
+    .line 556
+    .line 557
+    iget-object v3, v1, Landroidx/compose/foundation/lazy/grid/LazyGridKt$rememberLazyGridMeasurePolicy$1$1;->$verticalArrangement:Landroidx/compose/foundation/layout/f;
+
     .line 558
-    move/from16 v16, v3
-
     .line 559
-    .line 560
-    :goto_11
-    invoke-static {v4, v6, v5}, Lxd/e;->y(Landroidx/compose/runtime/snapshots/h;Landroidx/compose/runtime/snapshots/h;Lzh/c;)V
+    iget-object v2, v1, Landroidx/compose/foundation/lazy/grid/LazyGridKt$rememberLazyGridMeasurePolicy$1$1;->$horizontalArrangement:Landroidx/compose/foundation/layout/d;
 
+    .line 560
     .line 561
+    iget-boolean v10, v1, Landroidx/compose/foundation/lazy/grid/LazyGridKt$rememberLazyGridMeasurePolicy$1$1;->$reverseLayout:Z
+
     .line 562
     .line 563
-    iget-object v2, v1, Landroidx/compose/foundation/lazy/grid/LazyGridKt$rememberLazyGridMeasurePolicy$1$1;->$state:Landroidx/compose/foundation/lazy/grid/f0;
+    move/from16 v17, v10
 
     .line 564
     .line 565
-    iget-object v3, v2, Landroidx/compose/foundation/lazy/grid/f0;->o:Landroidx/compose/foundation/lazy/layout/k0;
+    iget-object v10, v1, Landroidx/compose/foundation/lazy/grid/LazyGridKt$rememberLazyGridMeasurePolicy$1$1;->$coroutineScope:Lkotlinx/coroutines/u;
 
     .line 566
     .line 567
-    iget-object v2, v2, Landroidx/compose/foundation/lazy/grid/f0;->l:Landroidx/compose/foundation/lazy/layout/j;
+    move-object/from16 v18, v8
 
     .line 568
     .line 569
-    invoke-static {v14, v3, v2}, Landroidx/compose/foundation/lazy/layout/p;->f(Landroidx/compose/foundation/lazy/layout/a0;Landroidx/compose/foundation/lazy/layout/k0;Landroidx/compose/foundation/lazy/layout/j;)Ljava/util/List;
+    iget-object v8, v1, Landroidx/compose/foundation/lazy/grid/LazyGridKt$rememberLazyGridMeasurePolicy$1$1;->$graphicsContext:Landroidx/compose/ui/graphics/F;
 
     .line 570
     .line 571
-    .line 572
-    move-result-object v7
+    new-instance v1, Landroidx/compose/foundation/lazy/grid/LazyGridKt$rememberLazyGridMeasurePolicy$1$1$measureResult$1;
 
+    .line 572
     .line 573
-    iget-object v6, v1, Landroidx/compose/foundation/lazy/grid/LazyGridKt$rememberLazyGridMeasurePolicy$1$1;->$state:Landroidx/compose/foundation/lazy/grid/f0;
+    move-object/from16 v19, v2
 
     .line 574
     .line 575
-    iget v4, v6, Landroidx/compose/foundation/lazy/grid/f0;->e:F
+    move-object v2, v1
 
     .line 576
+    move-object/from16 v51, v3
+
     .line 577
-    iget-object v5, v6, Landroidx/compose/foundation/lazy/grid/f0;->k:Landroidx/compose/foundation/lazy/layout/x;
-
     .line 578
+    move-object/from16 v3, p1
+
     .line 579
-    iget-boolean v3, v1, Landroidx/compose/foundation/lazy/grid/LazyGridKt$rememberLazyGridMeasurePolicy$1$1;->$isVertical:Z
-
     .line 580
+    move/from16 v20, v4
+
     .line 581
-    iget-object v2, v1, Landroidx/compose/foundation/lazy/grid/LazyGridKt$rememberLazyGridMeasurePolicy$1$1;->$verticalArrangement:Landroidx/compose/foundation/layout/i;
-
     .line 582
+    move/from16 v21, v5
+
     .line 583
-    iget-object v10, v1, Landroidx/compose/foundation/lazy/grid/LazyGridKt$rememberLazyGridMeasurePolicy$1$1;->$horizontalArrangement:Landroidx/compose/foundation/layout/g;
-
     .line 584
+    move-wide/from16 v4, p2
+
     .line 585
-    move-object/from16 v18, v10
-
     .line 586
-    .line 587
-    iget-boolean v10, v1, Landroidx/compose/foundation/lazy/grid/LazyGridKt$rememberLazyGridMeasurePolicy$1$1;->$reverseLayout:Z
+    move/from16 v22, v11
 
+    .line 587
     .line 588
+    move-object v11, v6
+
     .line 589
-    move/from16 v19, v10
+    move/from16 v6, v25
 
     .line 590
     .line 591
-    iget-object v10, v1, Landroidx/compose/foundation/lazy/grid/LazyGridKt$rememberLazyGridMeasurePolicy$1$1;->$coroutineScope:Lkotlinx/coroutines/w;
+    move-object/from16 p2, v7
 
     .line 592
     .line 593
-    move-object/from16 v20, v8
+    move v7, v15
 
     .line 594
-    .line 595
-    iget-object v8, v1, Landroidx/compose/foundation/lazy/grid/LazyGridKt$rememberLazyGridMeasurePolicy$1$1;->$graphicsContext:Landroidx/compose/ui/graphics/e0;
+    invoke-direct/range {v2 .. v7}, Landroidx/compose/foundation/lazy/grid/LazyGridKt$rememberLazyGridMeasurePolicy$1$1$measureResult$1;-><init>(Landroidx/compose/foundation/lazy/layout/D;JII)V
 
+    .line 595
     .line 596
     .line 597
-    new-instance v1, Landroidx/compose/foundation/lazy/grid/LazyGridKt$rememberLazyGridMeasurePolicy$1$1$measureResult$1;
+    if-ltz v13, :cond_5d
 
     .line 598
     .line 599
-    move-object/from16 v49, v2
+    if-ltz v30, :cond_5c
 
     .line 600
     .line 601
-    move-object v2, v1
+    iget-object v15, v11, Landroidx/compose/foundation/lazy/grid/x;->k:Landroidx/compose/foundation/lazy/layout/x;
 
     .line 602
-    move/from16 v21, v3
-
     .line 603
-    .line 604
-    move-object/from16 v3, p1
+    const-wide v52, 0xffffffffL
 
+    .line 604
     .line 605
     .line 606
-    move/from16 v22, v4
-
     .line 607
     .line 608
-    move-object/from16 v24, v5
+    const/16 v54, 0x20
 
     .line 609
     .line 610
-    move-wide/from16 v4, p2
+    const-wide/16 v6, 0x0
 
     .line 611
     .line 612
-    move-object/from16 v50, v6
+    if-gtz v14, :cond_16
 
     .line 613
     .line 614
-    move/from16 v6, v31
+    invoke-static/range {v47 .. v48}, LM0/a;->k(J)I
 
     .line 615
     .line 616
-    move-object/from16 p2, v7
-
     .line 617
+    move-result v2
+
     .line 618
-    move v7, v15
+    invoke-static/range {v47 .. v48}, LM0/a;->j(J)I
 
     .line 619
-    invoke-direct/range {v2 .. v7}, Landroidx/compose/foundation/lazy/grid/LazyGridKt$rememberLazyGridMeasurePolicy$1$1$measureResult$1;-><init>(Landroidx/compose/foundation/lazy/layout/e0;JII)V
-
     .line 620
     .line 621
+    move-result v3
+
     .line 622
-    if-ltz v0, :cond_5f
+    new-instance v35, Ljava/util/ArrayList;
 
     .line 623
     .line 624
-    if-ltz v30, :cond_5e
+    invoke-direct/range {v35 .. v35}, Ljava/util/ArrayList;-><init>()V
 
     .line 625
     .line 626
-    const-wide v51, 0xffffffffL
-
     .line 627
+    iget-object v0, v0, Landroidx/compose/foundation/lazy/grid/i;->c:Landroidx/compose/foundation/lazy/layout/S;
+
     .line 628
     .line 629
+    const/16 v42, 0x0
+
     .line 630
     .line 631
-    const/16 v15, 0x20
+    const/16 v43, 0x0
 
     .line 632
     .line 633
-    const-wide/16 v6, 0x0
+    const/16 v32, 0x0
 
     .line 634
     .line 635
-    if-gtz v12, :cond_16
+    const/16 v39, 0x0
 
     .line 636
     .line 637
-    invoke-static/range {v28 .. v29}, Lh2/a;->k(J)I
+    const/16 v41, 0x0
 
     .line 638
     .line 639
-    .line 640
-    move-result v2
+    move-object/from16 v31, v15
 
+    .line 640
     .line 641
-    invoke-static/range {v28 .. v29}, Lh2/a;->j(J)I
+    move/from16 v33, v2
 
     .line 642
     .line 643
-    .line 644
-    move-result v3
+    move/from16 v34, v3
 
+    .line 644
     .line 645
-    new-instance v35, Ljava/util/ArrayList;
+    move-object/from16 v36, v0
 
     .line 646
     .line 647
-    invoke-direct/range {v35 .. v35}, Ljava/util/ArrayList;-><init>()V
+    move/from16 v38, v21
 
     .line 648
     .line 649
-    .line 650
-    move-object v4, v14
+    move/from16 v40, v49
 
+    .line 650
     .line 651
-    check-cast v4, Landroidx/compose/foundation/lazy/grid/l;
+    move-object/from16 v44, v10
 
     .line 652
     .line 653
-    iget-object v4, v4, Landroidx/compose/foundation/lazy/grid/l;->c:Landroidx/compose/foundation/lazy/layout/d0;
+    move-object/from16 v45, v8
 
     .line 654
     .line 655
-    const/16 v32, 0x0
+    invoke-virtual/range {v31 .. v45}, Landroidx/compose/foundation/lazy/layout/x;->d(IIILjava/util/ArrayList;Landroidx/compose/foundation/lazy/layout/C;Landroidx/compose/foundation/lazy/layout/G;ZZIZIILkotlinx/coroutines/u;Landroidx/compose/ui/graphics/F;)V
 
     .line 656
     .line 657
-    const/16 v39, 0x0
-
     .line 658
-    .line 659
-    const/16 v41, 0x0
+    invoke-virtual {v15}, Landroidx/compose/foundation/lazy/layout/x;->b()J
 
+    .line 659
     .line 660
     .line 661
-    const/16 v42, 0x0
+    move-result-wide v4
 
     .line 662
-    .line 663
-    const/16 v43, 0x0
+    invoke-static {v4, v5, v6, v7}, LM0/j;->a(JJ)Z
 
+    .line 663
     .line 664
     .line 665
-    move-object/from16 v31, v24
+    move-result v0
 
     .line 666
+    if-nez v0, :cond_14
+
     .line 667
-    move/from16 v33, v2
-
     .line 668
-    .line 669
-    move/from16 v34, v3
+    shr-long v2, v4, v54
 
+    .line 669
     .line 670
+    long-to-int v0, v2
+
     .line 671
-    move-object/from16 v36, v4
+    move-wide/from16 v2, v47
 
     .line 672
     .line 673
-    move-object/from16 v37, v26
+    invoke-static {v0, v2, v3}, LP5/f;->i(IJ)I
 
     .line 674
     .line 675
-    move/from16 v38, v21
-
     .line 676
+    move-result v0
+
     .line 677
-    move/from16 v40, v25
+    and-long v4, v4, v52
 
     .line 678
     .line 679
-    move-object/from16 v44, v10
+    long-to-int v5, v4
 
     .line 680
-    .line 681
-    move-object/from16 v45, v8
+    invoke-static {v5, v2, v3}, LP5/f;->h(IJ)I
 
+    .line 681
     .line 682
     .line 683
-    invoke-virtual/range {v31 .. v45}, Landroidx/compose/foundation/lazy/layout/x;->d(IIILjava/util/ArrayList;Landroidx/compose/foundation/lazy/layout/d0;Landroidx/compose/foundation/lazy/layout/h0;ZZIZIILkotlinx/coroutines/w;Landroidx/compose/ui/graphics/e0;)V
-
-    .line 684
-    .line 685
-    .line 686
-    invoke-virtual/range {v24 .. v24}, Landroidx/compose/foundation/lazy/layout/x;->b()J
-
-    .line 687
-    .line 688
-    .line 689
-    move-result-wide v4
-
-    .line 690
-    invoke-static {v4, v5, v6, v7}, Lh2/j;->a(JJ)Z
-
-    .line 691
-    .line 692
-    .line 693
-    move-result v6
-
-    .line 694
-    if-nez v6, :cond_14
-
-    .line 695
-    .line 696
-    shr-long v2, v4, v15
-
-    .line 697
-    .line 698
-    long-to-int v3, v2
-
-    .line 699
-    move-wide/from16 v6, v28
-
-    .line 700
-    .line 701
-    invoke-static {v3, v6, v7}, Lcom/google/android/gms/internal/consent_sdk/z;->j(IJ)I
-
-    .line 702
-    .line 703
-    .line 704
-    move-result v2
-
-    .line 705
-    and-long v3, v4, v51
-
-    .line 706
-    .line 707
-    long-to-int v4, v3
-
-    .line 708
-    invoke-static {v4, v6, v7}, Lcom/google/android/gms/internal/consent_sdk/z;->i(IJ)I
-
-    .line 709
-    .line 710
-    .line 711
     move-result v3
 
-    .line 712
+    .line 684
+    move v2, v0
+
+    .line 685
     :cond_14
     invoke-static {v2}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
-    .line 713
-    .line 714
-    .line 715
+    .line 686
+    .line 687
+    .line 688
+    move-result-object v0
+
+    .line 689
+    invoke-static {v3}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    .line 690
+    .line 691
+    .line 692
     move-result-object v2
 
+    .line 693
+    sget-object v3, Landroidx/compose/foundation/lazy/grid/LazyGridMeasureKt$measureLazyGrid$3;->INSTANCE:Landroidx/compose/foundation/lazy/grid/LazyGridMeasureKt$measureLazyGrid$3;
+
+    .line 694
+    .line 695
+    invoke-interface {v1, v0, v2, v3}, Lka/f;->invoke(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 696
+    .line 697
+    .line 698
+    move-result-object v0
+
+    .line 699
+    check-cast v0, Landroidx/compose/ui/layout/K;
+
+    .line 700
+    .line 701
+    sget-object v25, Lkotlin/collections/EmptyList;->INSTANCE:Lkotlin/collections/EmptyList;
+
+    .line 702
+    .line 703
+    neg-int v1, v13
+
+    .line 704
+    add-int v27, v50, v30
+
+    .line 705
+    .line 706
+    if-eqz v21, :cond_15
+
+    .line 707
+    .line 708
+    sget-object v2, Landroidx/compose/foundation/gestures/Orientation;->Vertical:Landroidx/compose/foundation/gestures/Orientation;
+
+    .line 709
+    .line 710
+    :goto_10
+    move-object/from16 v29, v2
+
+    .line 711
+    .line 712
+    goto :goto_11
+
+    .line 713
+    :cond_15
+    sget-object v2, Landroidx/compose/foundation/gestures/Orientation;->Horizontal:Landroidx/compose/foundation/gestures/Orientation;
+
+    .line 714
+    .line 715
+    goto :goto_10
+
     .line 716
-    invoke-static {v3}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+    :goto_11
+    new-instance v2, Landroidx/compose/foundation/lazy/grid/o;
 
     .line 717
     .line 718
-    .line 719
-    move-result-object v3
+    const/16 v22, 0x0
 
+    .line 719
     .line 720
-    sget-object v4, Landroidx/compose/foundation/lazy/grid/LazyGridMeasureKt$measureLazyGrid$3;->INSTANCE:Landroidx/compose/foundation/lazy/grid/LazyGridMeasureKt$measureLazyGrid$3;
+    const/16 v28, 0x0
 
     .line 721
     .line 722
-    invoke-interface {v1, v2, v3, v4}, Lzh/f;->invoke(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    const/16 v17, 0x0
 
     .line 723
     .line 724
-    .line 725
-    move-result-object v1
+    const/16 v18, 0x0
 
+    .line 725
     .line 726
-    check-cast v1, Landroidx/compose/ui/layout/n0;
+    const/16 v19, 0x0
 
     .line 727
     .line 728
-    sget-object v2, Lkotlin/collections/EmptyList;->INSTANCE:Lkotlin/collections/EmptyList;
+    const/16 v20, 0x0
 
     .line 729
     .line 730
-    neg-int v0, v0
+    move-object/from16 v16, v2
 
     .line 731
-    add-int v27, v13, v30
-
     .line 732
+    move-object/from16 v21, v0
+
     .line 733
-    if-eqz v21, :cond_15
-
     .line 734
+    move/from16 v23, v49
+
     .line 735
-    sget-object v3, Landroidx/compose/foundation/gestures/Orientation;->Vertical:Landroidx/compose/foundation/gestures/Orientation;
-
     .line 736
+    move-object/from16 v24, v9
+
     .line 737
-    :goto_12
-    move-object/from16 v29, v3
-
     .line 738
-    .line 739
-    goto :goto_13
+    move/from16 v26, v1
 
+    .line 739
     .line 740
-    :cond_15
-    sget-object v3, Landroidx/compose/foundation/gestures/Orientation;->Horizontal:Landroidx/compose/foundation/gestures/Orientation;
+    move/from16 v31, v46
 
     .line 741
     .line 742
-    goto :goto_12
+    invoke-direct/range {v16 .. v31}, Landroidx/compose/foundation/lazy/grid/o;-><init>(Landroidx/compose/foundation/lazy/grid/q;IZFLandroidx/compose/ui/layout/K;ZILka/c;Ljava/util/List;IIILandroidx/compose/foundation/gestures/Orientation;II)V
 
     .line 743
-    :goto_13
-    new-instance v3, Landroidx/compose/foundation/lazy/grid/s;
-
     .line 744
     .line 745
-    const/16 v17, 0x0
+    move-object/from16 v1, p0
 
     .line 746
     .line 747
-    const/16 v18, 0x0
+    goto/16 :goto_46
 
     .line 748
     .line 749
-    const/16 v19, 0x0
+    :cond_16
+    move-wide/from16 v2, v47
 
     .line 750
     .line 751
-    const/16 v20, 0x0
+    invoke-static/range {v20 .. v20}, Ljava/lang/Math;->round(F)I
 
     .line 752
     .line 753
-    const/16 v22, 0x0
-
     .line 754
+    move-result v0
+
     .line 755
-    const/16 v28, 0x0
+    sub-int v5, v12, v0
 
     .line 756
     .line 757
-    move-object/from16 v16, v3
+    if-nez v22, :cond_17
 
     .line 758
     .line 759
-    move-object/from16 v21, v1
+    if-gez v5, :cond_17
 
     .line 760
     .line 761
-    move/from16 v23, v25
+    add-int/2addr v0, v5
 
     .line 762
+    const/4 v5, 0x0
+
     .line 763
-    move-object/from16 v24, v9
+    :cond_17
+    new-instance v12, LY9/n;
 
     .line 764
     .line 765
-    move-object/from16 v25, v2
+    invoke-direct {v12}, LY9/n;-><init>()V
 
     .line 766
     .line 767
-    move/from16 v26, v0
-
     .line 768
+    neg-int v4, v13
+
     .line 769
-    move/from16 v31, v46
+    if-gez v46, :cond_18
 
     .line 770
     .line 771
-    invoke-direct/range {v16 .. v31}, Landroidx/compose/foundation/lazy/grid/s;-><init>(Landroidx/compose/foundation/lazy/grid/v;IZFLandroidx/compose/ui/layout/n0;ZILzh/c;Ljava/util/List;IIILandroidx/compose/foundation/gestures/Orientation;II)V
+    move/from16 v23, v46
 
     .line 772
     .line 773
+    goto :goto_12
+
     .line 774
-    :goto_14
-    move-object/from16 v1, p0
+    :cond_18
+    const/16 v23, 0x0
 
     .line 775
     .line 776
-    goto/16 :goto_4b
+    :goto_12
+    add-int v6, v4, v23
 
     .line 777
     .line 778
-    :cond_16
-    move-wide/from16 v4, v28
+    add-int/2addr v5, v6
 
     .line 779
-    .line 780
-    invoke-static/range {v22 .. v22}, Ljava/lang/Math;->round(F)I
+    :goto_13
+    if-gez v5, :cond_19
 
+    .line 780
     .line 781
+    if-lez v22, :cond_19
+
     .line 782
     .line 783
-    move-result v2
+    add-int/lit8 v7, v22, -0x1
 
     .line 784
-    sub-int v3, v16, v2
-
     .line 785
+    move/from16 v33, v4
+
     .line 786
-    if-nez v11, :cond_17
-
     .line 787
+    move-object/from16 v47, v9
+
     .line 788
-    if-gez v3, :cond_17
-
     .line 789
-    .line 790
-    add-int/2addr v2, v3
+    move-object/from16 v4, v18
 
+    .line 790
     .line 791
-    const/4 v3, 0x0
+    invoke-virtual {v4, v7}, Landroidx/compose/foundation/lazy/grid/n;->b(I)Landroidx/compose/foundation/lazy/grid/q;
 
     .line 792
-    :cond_17
-    new-instance v14, Lkotlin/collections/n;
-
     .line 793
     .line 794
-    invoke-direct {v14}, Lkotlin/collections/n;-><init>()V
+    move-result-object v9
 
     .line 795
+    move/from16 p3, v7
+
     .line 796
     .line 797
-    neg-int v15, v0
+    const/4 v7, 0x0
 
     .line 798
-    if-gez v46, :cond_18
+    invoke-virtual {v12, v7, v9}, LY9/n;->add(ILjava/lang/Object;)V
 
     .line 799
     .line 800
-    move/from16 v16, v46
-
     .line 801
-    .line 802
-    goto :goto_15
+    iget v7, v9, Landroidx/compose/foundation/lazy/grid/q;->h:I
 
+    .line 802
     .line 803
-    :cond_18
-    const/16 v16, 0x0
+    add-int/2addr v5, v7
 
     .line 804
+    move/from16 v22, p3
+
     .line 805
-    :goto_15
-    add-int v6, v15, v16
-
     .line 806
-    .line 807
-    add-int/2addr v3, v6
+    move-object/from16 v18, v4
 
+    .line 807
     .line 808
-    :goto_16
-    if-gez v3, :cond_19
+    move/from16 v4, v33
 
     .line 809
     .line 810
-    if-lez v11, :cond_19
+    move-object/from16 v9, v47
 
     .line 811
     .line 812
-    add-int/lit8 v11, v11, -0x1
+    goto :goto_13
 
     .line 813
+    :cond_19
+    move/from16 v33, v4
+
     .line 814
-    move/from16 v29, v15
-
     .line 815
+    move-object/from16 v47, v9
+
     .line 816
-    move-object/from16 v7, v20
-
     .line 817
-    .line 818
-    invoke-virtual {v7, v11}, Landroidx/compose/foundation/lazy/grid/q;->b(I)Landroidx/compose/foundation/lazy/grid/v;
+    move-object/from16 v4, v18
 
+    .line 818
     .line 819
+    if-ge v5, v6, :cond_1a
+
     .line 820
     .line 821
-    move-result-object v15
+    add-int/2addr v0, v5
 
     .line 822
-    move/from16 v16, v11
+    move v5, v6
 
     .line 823
+    :cond_1a
+    sub-int/2addr v5, v6
+
     .line 824
-    const/4 v11, 0x0
+    add-int v9, v50, v30
 
     .line 825
-    invoke-virtual {v14, v11, v15}, Lkotlin/collections/n;->add(ILjava/lang/Object;)V
-
     .line 826
+    move/from16 p3, v9
+
     .line 827
     .line 828
-    iget v11, v15, Landroidx/compose/foundation/lazy/grid/v;->h:I
+    if-gez v9, :cond_1b
 
     .line 829
     .line 830
-    add-int/2addr v3, v11
+    const/4 v7, 0x0
 
     .line 831
-    move-object/from16 v20, v7
+    goto :goto_14
 
     .line 832
-    .line 833
-    move/from16 v11, v16
+    :cond_1b
+    move/from16 v7, p3
 
+    .line 833
     .line 834
+    :goto_14
+    neg-int v9, v5
+
     .line 835
-    move/from16 v15, v29
+    move-object/from16 v48, v1
 
     .line 836
     .line 837
-    goto :goto_16
+    move/from16 v23, v5
 
     .line 838
-    :cond_19
-    move/from16 v29, v15
-
     .line 839
+    move v5, v9
+
     .line 840
-    move-object/from16 v7, v20
+    move/from16 v24, v22
 
     .line 841
     .line 842
-    if-ge v3, v6, :cond_1a
+    const/4 v9, 0x0
 
     .line 843
-    .line 844
-    add-int/2addr v2, v3
+    const/16 v18, 0x0
 
+    .line 844
     .line 845
-    move v3, v6
+    :goto_15
+    invoke-virtual {v12}, LY9/j;->size()I
 
     .line 846
-    :cond_1a
-    sub-int/2addr v3, v6
-
     .line 847
-    add-int v15, v13, v30
-
     .line 848
+    move-result v1
+
     .line 849
-    move/from16 v16, v11
+    const/16 v55, 0x1
 
     .line 850
     .line 851
-    if-gez v15, :cond_1b
+    if-ge v9, v1, :cond_1d
 
     .line 852
     .line 853
-    move/from16 v47, v15
+    if-lt v5, v7, :cond_1c
 
     .line 854
     .line 855
-    const/4 v11, 0x0
+    invoke-virtual {v12, v9}, LY9/j;->remove(I)Ljava/lang/Object;
 
     .line 856
-    goto :goto_17
-
     .line 857
-    :cond_1b
-    move v11, v15
-
     .line 858
-    move/from16 v47, v11
+    const/16 v18, 0x1
 
     .line 859
     .line 860
-    :goto_17
-    neg-int v15, v3
+    goto :goto_15
 
     .line 861
-    move/from16 v31, v3
+    :cond_1c
+    add-int/lit8 v24, v24, 0x1
 
     .line 862
     .line 863
-    move-object/from16 v53, v9
+    invoke-virtual {v12, v9}, LY9/n;->get(I)Ljava/lang/Object;
 
     .line 864
     .line 865
-    move v3, v15
-
     .line 866
-    move/from16 v32, v16
+    move-result-object v1
 
     .line 867
-    .line 868
-    const/4 v15, 0x0
+    check-cast v1, Landroidx/compose/foundation/lazy/grid/q;
 
+    .line 868
     .line 869
-    const/16 v20, 0x0
+    iget v1, v1, Landroidx/compose/foundation/lazy/grid/q;->h:I
 
     .line 870
     .line 871
-    :goto_18
-    invoke-virtual {v14}, Lkotlin/collections/i;->size()I
+    add-int/2addr v5, v1
 
     .line 872
+    add-int/lit8 v9, v9, 0x1
+
     .line 873
     .line 874
-    move-result v9
+    goto :goto_15
 
     .line 875
-    const/16 v54, 0x1
+    :cond_1d
+    move/from16 v1, v18
 
     .line 876
     .line 877
-    if-ge v15, v9, :cond_1d
+    move/from16 v9, v24
 
     .line 878
     .line 879
-    if-lt v3, v11, :cond_1c
+    :goto_16
+    if-ge v9, v14, :cond_1f
 
     .line 880
     .line 881
-    invoke-virtual {v14, v15}, Lkotlin/collections/i;->remove(I)Ljava/lang/Object;
+    if-lt v5, v7, :cond_1e
 
     .line 882
     .line 883
+    if-lez v5, :cond_1e
+
     .line 884
-    const/16 v20, 0x1
-
     .line 885
+    invoke-virtual {v12}, LY9/n;->isEmpty()Z
+
     .line 886
-    goto :goto_18
-
     .line 887
-    :cond_1c
-    add-int/lit8 v32, v32, 0x1
-
     .line 888
+    move-result v18
+
     .line 889
-    invoke-virtual {v14, v15}, Lkotlin/collections/n;->get(I)Ljava/lang/Object;
+    if-eqz v18, :cond_1f
 
     .line 890
     .line 891
-    .line 892
-    move-result-object v9
+    :cond_1e
+    move/from16 v18, v7
 
+    .line 892
     .line 893
-    check-cast v9, Landroidx/compose/foundation/lazy/grid/v;
+    goto :goto_18
 
     .line 894
+    :cond_1f
+    move/from16 v56, v1
+
     .line 895
-    iget v9, v9, Landroidx/compose/foundation/lazy/grid/v;->h:I
-
     .line 896
-    .line 897
-    add-int/2addr v3, v9
+    move-object/from16 v57, v11
 
+    .line 897
     .line 898
-    add-int/lit8 v15, v15, 0x1
+    :goto_17
+    move/from16 v1, v50
 
     .line 899
     .line 900
-    goto :goto_18
+    goto :goto_1a
 
     .line 901
-    :cond_1d
-    move/from16 v55, v20
+    :goto_18
+    invoke-virtual {v4, v9}, Landroidx/compose/foundation/lazy/grid/n;->b(I)Landroidx/compose/foundation/lazy/grid/q;
 
     .line 902
     .line 903
-    move/from16 v9, v31
-
     .line 904
+    move-result-object v7
+
     .line 905
-    move/from16 v15, v32
+    move/from16 v56, v1
 
     .line 906
     .line 907
-    :goto_19
-    if-ge v15, v12, :cond_1f
+    iget-object v1, v7, Landroidx/compose/foundation/lazy/grid/q;->b:[Landroidx/compose/foundation/lazy/grid/p;
 
     .line 908
     .line 909
-    if-lt v3, v11, :cond_1e
+    move-object/from16 v57, v11
 
     .line 910
     .line 911
-    if-lez v3, :cond_1e
+    array-length v11, v1
 
     .line 912
+    if-nez v11, :cond_20
+
     .line 913
-    invoke-virtual {v14}, Lkotlin/collections/n;->isEmpty()Z
-
     .line 914
-    .line 915
-    .line 916
-    move-result v20
+    goto :goto_17
 
+    .line 915
+    :cond_20
+    iget v11, v7, Landroidx/compose/foundation/lazy/grid/q;->h:I
+
+    .line 916
     .line 917
-    if-eqz v20, :cond_1f
+    add-int/2addr v5, v11
 
     .line 918
+    move/from16 v24, v5
+
     .line 919
-    :cond_1e
-    move/from16 v20, v11
-
     .line 920
-    .line 921
-    goto :goto_1a
+    if-gt v5, v6, :cond_22
 
+    .line 921
     .line 922
-    :cond_1f
-    move-object/from16 v56, v1
+    array-length v5, v1
 
     .line 923
-    .line 924
-    move-object/from16 v45, v8
+    if-eqz v5, :cond_21
 
+    .line 924
     .line 925
+    array-length v5, v1
+
     .line 926
-    goto :goto_1c
+    add-int/lit8 v5, v5, -0x1
 
     .line 927
-    :goto_1a
-    invoke-virtual {v7, v15}, Landroidx/compose/foundation/lazy/grid/q;->b(I)Landroidx/compose/foundation/lazy/grid/v;
-
     .line 928
+    aget-object v1, v1, v5
+
     .line 929
     .line 930
-    move-result-object v11
+    iget v1, v1, Landroidx/compose/foundation/lazy/grid/p;->a:I
 
     .line 931
-    move-object/from16 v56, v1
-
     .line 932
+    add-int/lit8 v5, v14, -0x1
+
     .line 933
-    iget-object v1, v11, Landroidx/compose/foundation/lazy/grid/v;->b:[Landroidx/compose/foundation/lazy/grid/t;
-
     .line 934
+    if-eq v1, v5, :cond_22
+
     .line 935
-    move-object/from16 v45, v8
-
     .line 936
-    .line 937
-    array-length v8, v1
+    add-int/lit8 v1, v9, 0x1
 
+    .line 937
     .line 938
-    if-nez v8, :cond_20
+    sub-int v23, v23, v11
 
     .line 939
     .line 940
-    goto :goto_1c
+    move/from16 v22, v1
 
     .line 941
-    :cond_20
-    iget v8, v11, Landroidx/compose/foundation/lazy/grid/v;->h:I
-
     .line 942
+    const/4 v1, 0x1
+
     .line 943
-    add-int/2addr v3, v8
+    goto :goto_19
 
     .line 944
-    move/from16 v31, v3
-
-    .line 945
-    .line 946
-    if-gt v3, v6, :cond_22
-
-    .line 947
-    .line 948
-    array-length v3, v1
-
-    .line 949
-    if-eqz v3, :cond_21
-
-    .line 950
-    .line 951
-    array-length v3, v1
-
-    .line 952
-    add-int/lit8 v3, v3, -0x1
-
-    .line 953
-    .line 954
-    aget-object v1, v1, v3
-
-    .line 955
-    .line 956
-    iget v1, v1, Landroidx/compose/foundation/lazy/grid/t;->a:I
-
-    .line 957
-    .line 958
-    add-int/lit8 v3, v12, -0x1
-
-    .line 959
-    .line 960
-    if-eq v1, v3, :cond_22
-
-    .line 961
-    .line 962
-    add-int/lit8 v1, v15, 0x1
-
-    .line 963
-    .line 964
-    sub-int/2addr v9, v8
-
-    .line 965
-    move/from16 v16, v1
-
-    .line 966
-    .line 967
-    const/16 v55, 0x1
-
-    .line 968
-    .line 969
-    goto :goto_1b
-
-    .line 970
     :cond_21
     new-instance v0, Ljava/util/NoSuchElementException;
 
-    .line 971
-    .line 972
+    .line 945
+    .line 946
     const-string v1, "Array is empty."
 
-    .line 973
-    .line 974
+    .line 947
+    .line 948
     invoke-direct {v0, v1}, Ljava/util/NoSuchElementException;-><init>(Ljava/lang/String;)V
 
-    .line 975
-    .line 976
-    .line 977
+    .line 949
+    .line 950
+    .line 951
     throw v0
 
-    .line 978
+    .line 952
     :cond_22
-    invoke-virtual {v14, v11}, Lkotlin/collections/n;->addLast(Ljava/lang/Object;)V
+    invoke-virtual {v12, v7}, LY9/n;->addLast(Ljava/lang/Object;)V
 
+    .line 953
+    .line 954
+    .line 955
+    move/from16 v1, v56
+
+    .line 956
+    .line 957
+    :goto_19
+    add-int/lit8 v9, v9, 0x1
+
+    .line 958
+    .line 959
+    move/from16 v7, v18
+
+    .line 960
+    .line 961
+    move/from16 v5, v24
+
+    .line 962
+    .line 963
+    move-object/from16 v11, v57
+
+    .line 964
+    .line 965
+    goto :goto_16
+
+    .line 966
+    :goto_1a
+    if-ge v5, v1, :cond_25
+
+    .line 967
+    .line 968
+    sub-int v6, v1, v5
+
+    .line 969
+    .line 970
+    sub-int v23, v23, v6
+
+    .line 971
+    .line 972
+    add-int/2addr v5, v6
+
+    .line 973
+    move/from16 v7, v23
+
+    .line 974
+    .line 975
+    :goto_1b
+    if-ge v7, v13, :cond_23
+
+    .line 976
+    .line 977
+    if-lez v22, :cond_23
+
+    .line 978
     .line 979
+    add-int/lit8 v9, v22, -0x1
+
     .line 980
     .line 981
-    :goto_1b
-    add-int/lit8 v15, v15, 0x1
+    invoke-virtual {v4, v9}, Landroidx/compose/foundation/lazy/grid/n;->b(I)Landroidx/compose/foundation/lazy/grid/q;
 
     .line 982
     .line 983
-    move/from16 v11, v20
-
     .line 984
+    move-result-object v11
+
     .line 985
-    move/from16 v3, v31
+    move/from16 v18, v9
 
     .line 986
     .line 987
-    move-object/from16 v8, v45
+    const/4 v9, 0x0
 
     .line 988
-    .line 989
-    move-object/from16 v1, v56
+    invoke-virtual {v12, v9, v11}, LY9/n;->add(ILjava/lang/Object;)V
 
+    .line 989
     .line 990
     .line 991
-    goto :goto_19
+    iget v9, v11, Landroidx/compose/foundation/lazy/grid/q;->h:I
 
     .line 992
-    :goto_1c
-    if-ge v3, v13, :cond_24
-
     .line 993
+    add-int/2addr v7, v9
+
     .line 994
-    sub-int v1, v13, v3
+    move/from16 v22, v18
 
     .line 995
     .line 996
-    sub-int/2addr v9, v1
+    goto :goto_1b
 
     .line 997
-    add-int/2addr v3, v1
+    :cond_23
+    add-int/2addr v0, v6
 
     .line 998
-    :goto_1d
-    if-ge v9, v0, :cond_23
+    if-gez v7, :cond_24
 
     .line 999
     .line 1000
-    if-lez v16, :cond_23
+    add-int/2addr v0, v7
 
     .line 1001
+    add-int/2addr v5, v7
+
     .line 1002
-    add-int/lit8 v6, v16, -0x1
+    move v9, v5
 
     .line 1003
+    const/4 v5, 0x0
+
     .line 1004
-    invoke-virtual {v7, v6}, Landroidx/compose/foundation/lazy/grid/q;->b(I)Landroidx/compose/foundation/lazy/grid/v;
+    goto :goto_1c
 
     .line 1005
+    :cond_24
+    move v9, v5
+
     .line 1006
+    move v5, v7
+
     .line 1007
-    move-result-object v8
+    goto :goto_1c
 
     .line 1008
-    const/4 v11, 0x0
+    :cond_25
+    move v9, v5
 
     .line 1009
-    invoke-virtual {v14, v11, v8}, Lkotlin/collections/n;->add(ILjava/lang/Object;)V
+    move/from16 v5, v23
 
     .line 1010
     .line 1011
-    .line 1012
-    iget v8, v8, Landroidx/compose/foundation/lazy/grid/v;->h:I
+    :goto_1c
+    invoke-static/range {v20 .. v20}, Ljava/lang/Math;->round(F)I
 
+    .line 1012
     .line 1013
     .line 1014
-    add-int/2addr v9, v8
+    move-result v6
 
     .line 1015
-    move/from16 v16, v6
+    invoke-static {v6}, Ljava/lang/Integer;->signum(I)I
 
     .line 1016
     .line 1017
-    goto :goto_1d
-
     .line 1018
-    :cond_23
-    add-int/2addr v2, v1
+    move-result v6
 
     .line 1019
-    if-gez v9, :cond_24
+    invoke-static {v0}, Ljava/lang/Integer;->signum(I)I
 
     .line 1020
     .line 1021
-    add-int/2addr v2, v9
-
     .line 1022
-    add-int/2addr v3, v9
+    move-result v7
 
     .line 1023
-    move v1, v3
+    if-ne v6, v7, :cond_26
 
     .line 1024
-    const/4 v9, 0x0
-
     .line 1025
-    goto :goto_1e
+    invoke-static/range {v20 .. v20}, Ljava/lang/Math;->round(F)I
 
     .line 1026
-    :cond_24
-    move v1, v3
-
     .line 1027
-    :goto_1e
-    invoke-static/range {v22 .. v22}, Ljava/lang/Math;->round(F)I
-
     .line 1028
-    .line 1029
-    .line 1030
-    move-result v3
-
-    .line 1031
-    if-gez v3, :cond_25
-
-    .line 1032
-    .line 1033
-    const/4 v3, -0x1
-
-    .line 1034
-    goto :goto_1f
-
-    .line 1035
-    :cond_25
-    if-lez v3, :cond_26
-
-    .line 1036
-    .line 1037
-    const/4 v3, 0x1
-
-    .line 1038
-    goto :goto_1f
-
-    .line 1039
-    :cond_26
-    const/4 v3, 0x0
-
-    .line 1040
-    :goto_1f
-    if-gez v2, :cond_27
-
-    .line 1041
-    .line 1042
-    const/4 v6, -0x1
-
-    .line 1043
-    goto :goto_20
-
-    .line 1044
-    :cond_27
-    if-lez v2, :cond_28
-
-    .line 1045
-    .line 1046
-    const/4 v6, 0x1
-
-    .line 1047
-    goto :goto_20
-
-    .line 1048
-    :cond_28
-    const/4 v6, 0x0
-
-    .line 1049
-    :goto_20
-    if-ne v3, v6, :cond_29
-
-    .line 1050
-    .line 1051
-    invoke-static/range {v22 .. v22}, Ljava/lang/Math;->round(F)I
-
-    .line 1052
-    .line 1053
-    .line 1054
-    move-result v3
-
-    .line 1055
-    invoke-static {v3}, Ljava/lang/Math;->abs(I)I
-
-    .line 1056
-    .line 1057
-    .line 1058
-    move-result v3
-
-    .line 1059
-    invoke-static {v2}, Ljava/lang/Math;->abs(I)I
-
-    .line 1060
-    .line 1061
-    .line 1062
     move-result v6
 
+    .line 1029
+    invoke-static {v6}, Ljava/lang/Math;->abs(I)I
+
+    .line 1030
+    .line 1031
+    .line 1032
+    move-result v6
+
+    .line 1033
+    invoke-static {v0}, Ljava/lang/Math;->abs(I)I
+
+    .line 1034
+    .line 1035
+    .line 1036
+    move-result v7
+
+    .line 1037
+    if-lt v6, v7, :cond_26
+
+    .line 1038
+    .line 1039
+    int-to-float v0, v0
+
+    .line 1040
+    goto :goto_1d
+
+    .line 1041
+    :cond_26
+    move/from16 v0, v20
+
+    .line 1042
+    .line 1043
+    :goto_1d
+    if-ltz v5, :cond_5b
+
+    .line 1044
+    .line 1045
+    neg-int v6, v5
+
+    .line 1046
+    invoke-virtual {v12}, LY9/n;->first()Ljava/lang/Object;
+
+    .line 1047
+    .line 1048
+    .line 1049
+    move-result-object v7
+
+    .line 1050
+    check-cast v7, Landroidx/compose/foundation/lazy/grid/q;
+
+    .line 1051
+    .line 1052
+    iget-object v11, v7, Landroidx/compose/foundation/lazy/grid/q;->b:[Landroidx/compose/foundation/lazy/grid/p;
+
+    .line 1053
+    .line 1054
+    move/from16 v18, v5
+
+    .line 1055
+    .line 1056
+    array-length v5, v11
+
+    .line 1057
+    if-nez v5, :cond_27
+
+    .line 1058
+    .line 1059
+    const/4 v11, 0x0
+
+    .line 1060
+    goto :goto_1e
+
+    .line 1061
+    :cond_27
+    const/4 v5, 0x0
+
+    .line 1062
+    aget-object v11, v11, v5
+
     .line 1063
-    if-lt v3, v6, :cond_29
-
     .line 1064
-    .line 1065
-    int-to-float v2, v2
+    :goto_1e
+    if-eqz v11, :cond_28
 
+    .line 1065
     .line 1066
-    move v8, v2
+    iget v5, v11, Landroidx/compose/foundation/lazy/grid/p;->a:I
 
     .line 1067
-    goto :goto_21
-
     .line 1068
-    :cond_29
-    move/from16 v8, v22
+    move v11, v5
 
     .line 1069
+    goto :goto_1f
+
     .line 1070
-    :goto_21
-    if-ltz v9, :cond_5d
+    :cond_28
+    const/4 v11, 0x0
 
     .line 1071
+    :goto_1f
+    invoke-virtual {v12}, LY9/n;->e()Ljava/lang/Object;
+
     .line 1072
-    neg-int v2, v9
-
     .line 1073
-    invoke-virtual {v14}, Lkotlin/collections/n;->first()Ljava/lang/Object;
-
     .line 1074
-    .line 1075
-    .line 1076
-    move-result-object v3
+    move-result-object v5
 
+    .line 1075
+    check-cast v5, Landroidx/compose/foundation/lazy/grid/q;
+
+    .line 1076
     .line 1077
-    check-cast v3, Landroidx/compose/foundation/lazy/grid/v;
+    if-eqz v5, :cond_2a
 
     .line 1078
     .line 1079
-    iget-object v6, v3, Landroidx/compose/foundation/lazy/grid/v;->b:[Landroidx/compose/foundation/lazy/grid/t;
+    iget-object v5, v5, Landroidx/compose/foundation/lazy/grid/q;->b:[Landroidx/compose/foundation/lazy/grid/p;
 
     .line 1080
     .line 1081
-    array-length v11, v6
+    move-object/from16 v20, v7
 
     .line 1082
-    if-nez v11, :cond_2a
-
     .line 1083
+    array-length v7, v5
+
     .line 1084
-    const/4 v6, 0x0
+    if-nez v7, :cond_29
 
     .line 1085
-    goto :goto_22
-
     .line 1086
-    :cond_2a
-    const/4 v11, 0x0
+    const/4 v5, 0x0
 
     .line 1087
-    aget-object v6, v6, v11
+    goto :goto_20
 
     .line 1088
+    :cond_29
+    array-length v7, v5
+
     .line 1089
-    :goto_22
-    if-eqz v6, :cond_2b
+    add-int/lit8 v7, v7, -0x1
 
     .line 1090
     .line 1091
-    iget v6, v6, Landroidx/compose/foundation/lazy/grid/t;->a:I
+    aget-object v5, v5, v7
 
     .line 1092
     .line 1093
-    move v11, v6
+    :goto_20
+    if-eqz v5, :cond_2b
 
     .line 1094
-    goto :goto_23
-
     .line 1095
-    :cond_2b
-    const/4 v11, 0x0
+    iget v5, v5, Landroidx/compose/foundation/lazy/grid/p;->a:I
 
     .line 1096
-    :goto_23
-    invoke-virtual {v14}, Lkotlin/collections/n;->e()Ljava/lang/Object;
-
     .line 1097
+    move v7, v5
+
     .line 1098
+    goto :goto_21
+
     .line 1099
-    move-result-object v6
+    :cond_2a
+    move-object/from16 v20, v7
 
     .line 1100
-    check-cast v6, Landroidx/compose/foundation/lazy/grid/v;
-
     .line 1101
+    :cond_2b
+    const/4 v7, 0x0
+
     .line 1102
-    if-eqz v6, :cond_2d
+    :goto_21
+    invoke-interface/range {p2 .. p2}, Ljava/util/List;->size()I
 
     .line 1103
     .line 1104
-    iget-object v6, v6, Landroidx/compose/foundation/lazy/grid/v;->b:[Landroidx/compose/foundation/lazy/grid/t;
-
     .line 1105
+    move-result v5
+
     .line 1106
-    if-eqz v6, :cond_2d
+    move-object/from16 v45, v8
 
     .line 1107
     .line 1108
-    array-length v15, v6
+    move-object/from16 v44, v10
 
     .line 1109
-    if-nez v15, :cond_2c
-
     .line 1110
+    const/4 v8, 0x0
+
     .line 1111
-    const/4 v6, 0x0
+    const/16 v34, 0x0
 
     .line 1112
-    goto :goto_24
-
     .line 1113
-    :cond_2c
-    array-length v15, v6
+    :goto_22
+    iget-object v10, v4, Landroidx/compose/foundation/lazy/grid/n;->f:Landroidx/compose/foundation/lazy/grid/w;
 
     .line 1114
-    add-int/lit8 v15, v15, -0x1
-
     .line 1115
+    if-ge v8, v5, :cond_2e
+
     .line 1116
-    aget-object v6, v6, v15
-
     .line 1117
+    move/from16 v35, v5
+
     .line 1118
-    :goto_24
-    if-eqz v6, :cond_2d
-
     .line 1119
+    move-object/from16 v5, p2
+
     .line 1120
-    iget v6, v6, Landroidx/compose/foundation/lazy/grid/t;->a:I
-
     .line 1121
+    invoke-interface {v5, v8}, Ljava/util/List;->get(I)Ljava/lang/Object;
+
     .line 1122
-    move v15, v6
-
     .line 1123
-    goto :goto_25
-
     .line 1124
-    :cond_2d
-    const/4 v15, 0x0
+    move-result-object v22
 
     .line 1125
-    :goto_25
-    invoke-interface/range {p2 .. p2}, Ljava/util/List;->size()I
+    check-cast v22, Ljava/lang/Number;
 
     .line 1126
     .line 1127
-    .line 1128
-    move-result v6
+    move-object/from16 v50, v15
 
+    .line 1128
     .line 1129
-    move-object/from16 v16, v3
+    invoke-virtual/range {v22 .. v22}, Ljava/lang/Number;->intValue()I
 
     .line 1130
     .line 1131
-    move/from16 v22, v9
-
     .line 1132
+    move-result v15
+
     .line 1133
-    const/4 v3, 0x0
+    if-ltz v15, :cond_2d
 
     .line 1134
-    const/16 v20, 0x0
-
     .line 1135
+    if-ge v15, v11, :cond_2d
+
     .line 1136
-    :goto_26
-    iget-object v9, v7, Landroidx/compose/foundation/lazy/grid/q;->f:Landroidx/compose/foundation/lazy/grid/d0;
-
     .line 1137
+    move/from16 p2, v11
+
     .line 1138
-    if-ge v3, v6, :cond_30
-
     .line 1139
+    iget v11, v10, Landroidx/compose/foundation/lazy/grid/w;->i:I
+
     .line 1140
-    move/from16 v38, v6
-
     .line 1141
-    .line 1142
-    move-object/from16 v6, p2
+    invoke-virtual {v10, v15}, Landroidx/compose/foundation/lazy/grid/w;->e(I)I
 
+    .line 1142
     .line 1143
     .line 1144
-    invoke-interface {v6, v3}, Ljava/util/List;->get(I)Ljava/lang/Object;
+    move-result v10
 
     .line 1145
+    const/4 v11, 0x0
+
     .line 1146
+    invoke-virtual {v4, v11, v10}, Landroidx/compose/foundation/lazy/grid/n;->a(II)J
+
     .line 1147
-    move-result-object v31
-
     .line 1148
-    check-cast v31, Ljava/lang/Number;
-
     .line 1149
+    move-result-wide v26
+
     .line 1150
-    move-object/from16 v44, v10
+    move/from16 v58, v0
 
     .line 1151
     .line 1152
-    invoke-virtual/range {v31 .. v31}, Ljava/lang/Number;->intValue()I
+    move-object/from16 v11, v37
 
     .line 1153
     .line 1154
-    .line 1155
-    move-result v10
+    iget v0, v11, Landroidx/compose/foundation/lazy/grid/m;->c:I
 
+    .line 1155
     .line 1156
-    if-ltz v10, :cond_2f
+    const/16 v24, 0x0
 
     .line 1157
     .line 1158
-    if-ge v10, v11, :cond_2f
+    move-object/from16 v22, v11
 
     .line 1159
     .line 1160
-    move/from16 p2, v11
+    move/from16 v23, v15
 
     .line 1161
     .line 1162
-    iget v11, v9, Landroidx/compose/foundation/lazy/grid/d0;->e:I
+    move/from16 v25, v10
 
     .line 1163
     .line 1164
-    invoke-virtual {v9, v10}, Landroidx/compose/foundation/lazy/grid/d0;->d(I)I
+    move/from16 v28, v0
 
     .line 1165
     .line 1166
+    invoke-virtual/range {v22 .. v28}, Landroidx/compose/foundation/lazy/grid/m;->b(IIIJI)Landroidx/compose/foundation/lazy/grid/p;
+
     .line 1167
-    move-result v9
-
     .line 1168
-    const/4 v11, 0x0
-
     .line 1169
-    invoke-virtual {v7, v11, v9}, Landroidx/compose/foundation/lazy/grid/q;->a(II)J
+    move-result-object v0
 
     .line 1170
+    if-nez v34, :cond_2c
+
     .line 1171
     .line 1172
-    move-result-wide v35
+    new-instance v34, Ljava/util/ArrayList;
 
     .line 1173
-    const/16 v33, 0x0
-
     .line 1174
-    .line 1175
-    move-object/from16 v11, v26
+    invoke-direct/range {v34 .. v34}, Ljava/util/ArrayList;-><init>()V
 
+    .line 1175
     .line 1176
     .line 1177
-    move/from16 v26, v8
+    :cond_2c
+    move-object/from16 v10, v34
 
     .line 1178
     .line 1179
-    iget v8, v11, Landroidx/compose/foundation/lazy/grid/u;->c:I
+    invoke-interface {v10, v0}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
     .line 1180
     .line 1181
-    move-object/from16 v31, v11
-
     .line 1182
-    .line 1183
-    move/from16 v32, v10
+    move-object/from16 v34, v10
 
+    .line 1183
     .line 1184
+    goto :goto_23
+
     .line 1185
-    move/from16 v34, v9
+    :cond_2d
+    move/from16 v58, v0
 
     .line 1186
     .line 1187
-    move/from16 v37, v8
+    move/from16 p2, v11
 
     .line 1188
     .line 1189
-    invoke-virtual/range {v31 .. v37}, Landroidx/compose/foundation/lazy/grid/u;->b(IIIJI)Landroidx/compose/foundation/lazy/grid/t;
+    move-object/from16 v11, v37
 
     .line 1190
     .line 1191
-    .line 1192
-    move-result-object v8
+    :goto_23
+    add-int/lit8 v8, v8, 0x1
 
+    .line 1192
     .line 1193
-    if-nez v20, :cond_2e
+    move-object/from16 v37, v11
 
     .line 1194
     .line 1195
-    new-instance v20, Ljava/util/ArrayList;
+    move-object/from16 v15, v50
 
     .line 1196
     .line 1197
-    invoke-direct/range {v20 .. v20}, Ljava/util/ArrayList;-><init>()V
+    move/from16 v0, v58
 
     .line 1198
     .line 1199
+    move/from16 v11, p2
+
     .line 1200
-    :cond_2e
-    move-object/from16 v9, v20
-
     .line 1201
-    .line 1202
-    invoke-interface {v9, v8}, Ljava/util/List;->add(Ljava/lang/Object;)Z
+    move-object/from16 p2, v5
 
+    .line 1202
     .line 1203
+    move/from16 v5, v35
+
     .line 1204
     .line 1205
-    move-object/from16 v20, v9
+    goto :goto_22
 
     .line 1206
-    .line 1207
-    goto :goto_27
+    :cond_2e
+    move-object/from16 v5, p2
 
+    .line 1207
     .line 1208
-    :cond_2f
-    move/from16 p2, v11
+    move/from16 v58, v0
 
     .line 1209
     .line 1210
-    move-object/from16 v11, v26
+    move/from16 p2, v11
 
     .line 1211
     .line 1212
-    move/from16 v26, v8
+    move-object/from16 v50, v15
 
     .line 1213
     .line 1214
-    :goto_27
-    add-int/lit8 v3, v3, 0x1
+    move-object/from16 v11, v37
 
     .line 1215
     .line 1216
-    move/from16 v8, v26
+    if-nez v34, :cond_2f
 
     .line 1217
     .line 1218
-    move-object/from16 v10, v44
+    sget-object v34, Lkotlin/collections/EmptyList;->INSTANCE:Lkotlin/collections/EmptyList;
 
     .line 1219
     .line 1220
-    move-object/from16 v26, v11
+    :cond_2f
+    move-object/from16 v0, v34
 
     .line 1221
     .line 1222
-    move/from16 v11, p2
+    invoke-interface {v5}, Ljava/util/List;->size()I
 
     .line 1223
     .line 1224
-    move-object/from16 p2, v6
-
     .line 1225
+    move-result v8
+
     .line 1226
-    move/from16 v6, v38
+    const/4 v15, 0x0
 
     .line 1227
-    .line 1228
-    goto :goto_26
+    const/16 v16, 0x0
 
+    .line 1228
     .line 1229
-    :cond_30
-    move-object/from16 v6, p2
+    :goto_24
+    if-ge v15, v8, :cond_32
 
     .line 1230
     .line 1231
-    move-object/from16 v44, v10
+    invoke-interface {v5, v15}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
     .line 1232
     .line 1233
-    move/from16 p2, v11
-
     .line 1234
+    move-result-object v22
+
     .line 1235
-    move-object/from16 v11, v26
+    check-cast v22, Ljava/lang/Number;
 
     .line 1236
     .line 1237
-    move/from16 v26, v8
+    move-object/from16 v34, v5
 
     .line 1238
     .line 1239
-    if-nez v20, :cond_31
+    invoke-virtual/range {v22 .. v22}, Ljava/lang/Number;->intValue()I
 
     .line 1240
     .line 1241
-    sget-object v20, Lkotlin/collections/EmptyList;->INSTANCE:Lkotlin/collections/EmptyList;
-
     .line 1242
+    move-result v5
+
     .line 1243
-    :cond_31
-    move-object/from16 v8, v20
+    move/from16 v35, v8
 
     .line 1244
     .line 1245
-    invoke-interface {v6}, Ljava/util/List;->size()I
+    add-int/lit8 v8, v7, 0x1
 
     .line 1246
     .line 1247
-    .line 1248
-    move-result v3
+    if-gt v8, v5, :cond_31
 
+    .line 1248
     .line 1249
-    const/4 v10, 0x0
+    if-ge v5, v14, :cond_31
 
     .line 1250
-    const/16 v17, 0x0
-
     .line 1251
+    iget v8, v10, Landroidx/compose/foundation/lazy/grid/w;->i:I
+
     .line 1252
-    :goto_28
-    if-ge v10, v3, :cond_34
-
     .line 1253
-    .line 1254
-    invoke-interface {v6, v10}, Ljava/util/List;->get(I)Ljava/lang/Object;
+    invoke-virtual {v10, v5}, Landroidx/compose/foundation/lazy/grid/w;->e(I)I
 
+    .line 1254
     .line 1255
     .line 1256
+    move-result v8
+
     .line 1257
-    move-result-object v20
+    move/from16 v36, v7
 
     .line 1258
-    check-cast v20, Ljava/lang/Number;
-
     .line 1259
+    const/4 v7, 0x0
+
     .line 1260
-    move/from16 v38, v3
+    invoke-virtual {v4, v7, v8}, Landroidx/compose/foundation/lazy/grid/n;->a(II)J
 
     .line 1261
     .line 1262
-    invoke-virtual/range {v20 .. v20}, Ljava/lang/Number;->intValue()I
-
     .line 1263
-    .line 1264
-    .line 1265
-    move-result v3
+    move-result-wide v26
 
+    .line 1264
+    iget v7, v11, Landroidx/compose/foundation/lazy/grid/m;->c:I
+
+    .line 1265
     .line 1266
-    move-object/from16 v20, v6
+    const/16 v24, 0x0
 
     .line 1267
     .line 1268
-    add-int/lit8 v6, v15, 0x1
+    move-object/from16 v22, v11
 
     .line 1269
     .line 1270
-    if-gt v6, v3, :cond_33
+    move/from16 v23, v5
 
     .line 1271
     .line 1272
-    if-ge v3, v12, :cond_33
+    move/from16 v25, v8
 
     .line 1273
     .line 1274
-    iget v6, v9, Landroidx/compose/foundation/lazy/grid/d0;->e:I
+    move/from16 v28, v7
 
     .line 1275
     .line 1276
-    invoke-virtual {v9, v3}, Landroidx/compose/foundation/lazy/grid/d0;->d(I)I
+    invoke-virtual/range {v22 .. v28}, Landroidx/compose/foundation/lazy/grid/m;->b(IIIJI)Landroidx/compose/foundation/lazy/grid/p;
 
     .line 1277
     .line 1278
     .line 1279
-    move-result v6
+    move-result-object v5
 
     .line 1280
-    move-object/from16 v39, v9
+    if-nez v16, :cond_30
 
     .line 1281
     .line 1282
-    const/4 v9, 0x0
+    new-instance v16, Ljava/util/ArrayList;
 
     .line 1283
-    invoke-virtual {v7, v9, v6}, Landroidx/compose/foundation/lazy/grid/q;->a(II)J
-
     .line 1284
+    invoke-direct/range {v16 .. v16}, Ljava/util/ArrayList;-><init>()V
+
     .line 1285
     .line 1286
-    move-result-wide v35
-
     .line 1287
-    const/16 v33, 0x0
+    :cond_30
+    move-object/from16 v7, v16
 
     .line 1288
     .line 1289
-    iget v9, v11, Landroidx/compose/foundation/lazy/grid/u;->c:I
+    invoke-interface {v7, v5}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
     .line 1290
     .line 1291
-    move-object/from16 v31, v11
-
     .line 1292
-    .line 1293
-    move/from16 v32, v3
+    move-object/from16 v16, v7
 
+    .line 1293
     .line 1294
+    goto :goto_25
+
     .line 1295
-    move/from16 v34, v6
+    :cond_31
+    move/from16 v36, v7
 
     .line 1296
     .line 1297
-    move/from16 v37, v9
+    :goto_25
+    add-int/lit8 v15, v15, 0x1
 
     .line 1298
     .line 1299
-    invoke-virtual/range {v31 .. v37}, Landroidx/compose/foundation/lazy/grid/u;->b(IIIJI)Landroidx/compose/foundation/lazy/grid/t;
+    move-object/from16 v5, v34
 
     .line 1300
     .line 1301
-    .line 1302
-    move-result-object v3
+    move/from16 v8, v35
 
+    .line 1302
     .line 1303
-    if-nez v17, :cond_32
+    move/from16 v7, v36
 
     .line 1304
     .line 1305
-    new-instance v17, Ljava/util/ArrayList;
+    goto :goto_24
 
     .line 1306
-    .line 1307
-    invoke-direct/range {v17 .. v17}, Ljava/util/ArrayList;-><init>()V
+    :cond_32
+    move/from16 v36, v7
 
+    .line 1307
     .line 1308
+    if-nez v16, :cond_33
+
     .line 1309
     .line 1310
-    :cond_32
-    move-object/from16 v6, v17
+    sget-object v16, Lkotlin/collections/EmptyList;->INSTANCE:Lkotlin/collections/EmptyList;
 
     .line 1311
     .line 1312
-    invoke-interface {v6, v3}, Ljava/util/List;->add(Ljava/lang/Object;)Z
+    :cond_33
+    move-object/from16 v8, v16
 
     .line 1313
     .line 1314
+    if-gtz v13, :cond_34
+
     .line 1315
-    move-object/from16 v17, v6
-
     .line 1316
-    .line 1317
-    goto :goto_29
+    if-gez v46, :cond_36
 
+    .line 1317
     .line 1318
-    :cond_33
-    move-object/from16 v39, v9
+    :cond_34
+    invoke-virtual {v12}, LY9/j;->size()I
 
     .line 1319
     .line 1320
-    :goto_29
-    add-int/lit8 v10, v10, 0x1
-
     .line 1321
+    move-result v4
+
     .line 1322
-    move-object/from16 v6, v20
+    move/from16 v7, v18
 
     .line 1323
     .line 1324
-    move/from16 v3, v38
+    const/4 v5, 0x0
 
     .line 1325
+    :goto_26
+    if-ge v5, v4, :cond_35
+
     .line 1326
-    move-object/from16 v9, v39
-
     .line 1327
+    invoke-virtual {v12, v5}, LY9/n;->get(I)Ljava/lang/Object;
+
     .line 1328
-    goto :goto_28
-
     .line 1329
-    :cond_34
-    if-nez v17, :cond_35
-
     .line 1330
+    move-result-object v10
+
     .line 1331
-    sget-object v17, Lkotlin/collections/EmptyList;->INSTANCE:Lkotlin/collections/EmptyList;
+    check-cast v10, Landroidx/compose/foundation/lazy/grid/q;
 
     .line 1332
     .line 1333
-    :cond_35
-    move-object/from16 v9, v17
+    iget v10, v10, Landroidx/compose/foundation/lazy/grid/q;->h:I
 
     .line 1334
     .line 1335
-    if-gtz v0, :cond_37
+    if-eqz v7, :cond_35
 
     .line 1336
     .line 1337
-    if-gez v46, :cond_36
+    if-gt v10, v7, :cond_35
 
     .line 1338
     .line 1339
-    goto :goto_2a
+    invoke-static {v12}, LY9/r;->y(Ljava/util/List;)I
 
     .line 1340
-    :cond_36
-    move-object/from16 v17, v16
-
     .line 1341
     .line 1342
-    goto :goto_2c
+    move-result v13
 
     .line 1343
-    :cond_37
-    :goto_2a
-    invoke-virtual {v14}, Lkotlin/collections/i;->size()I
+    if-eq v5, v13, :cond_35
 
     .line 1344
     .line 1345
+    sub-int/2addr v7, v10
+
     .line 1346
-    move-result v0
+    add-int/lit8 v5, v5, 0x1
 
     .line 1347
-    move-object/from16 v3, v16
-
     .line 1348
-    .line 1349
-    move/from16 v7, v22
+    invoke-virtual {v12, v5}, LY9/n;->get(I)Ljava/lang/Object;
 
+    .line 1349
     .line 1350
     .line 1351
-    const/4 v6, 0x0
+    move-result-object v10
 
     .line 1352
-    :goto_2b
-    if-ge v6, v0, :cond_38
+    move-object/from16 v20, v10
 
     .line 1353
     .line 1354
-    invoke-virtual {v14, v6}, Lkotlin/collections/n;->get(I)Ljava/lang/Object;
+    check-cast v20, Landroidx/compose/foundation/lazy/grid/q;
 
     .line 1355
     .line 1356
+    goto :goto_26
+
     .line 1357
-    move-result-object v10
+    :cond_35
+    move/from16 v18, v7
 
     .line 1358
-    check-cast v10, Landroidx/compose/foundation/lazy/grid/v;
-
     .line 1359
+    :cond_36
+    if-eqz v21, :cond_37
+
     .line 1360
-    iget v10, v10, Landroidx/compose/foundation/lazy/grid/v;->h:I
-
     .line 1361
-    .line 1362
-    if-eqz v7, :cond_38
+    invoke-static {v2, v3}, LM0/a;->i(J)I
 
+    .line 1362
     .line 1363
     .line 1364
-    if-gt v10, v7, :cond_38
+    move-result v4
 
     .line 1365
+    :goto_27
+    move v10, v4
+
     .line 1366
-    move/from16 v16, v0
+    goto :goto_28
 
     .line 1367
-    .line 1368
-    invoke-static {v14}, Lma/a;->I(Ljava/util/List;)I
+    :cond_37
+    invoke-static {v9, v2, v3}, LP5/f;->i(IJ)I
 
+    .line 1368
     .line 1369
     .line 1370
+    move-result v4
+
     .line 1371
-    move-result v0
+    goto :goto_27
 
     .line 1372
-    if-eq v6, v0, :cond_38
+    :goto_28
+    if-eqz v21, :cond_38
 
     .line 1373
     .line 1374
-    sub-int/2addr v7, v10
+    invoke-static {v9, v2, v3}, LP5/f;->h(IJ)I
 
     .line 1375
-    add-int/lit8 v6, v6, 0x1
-
     .line 1376
     .line 1377
-    invoke-virtual {v14, v6}, Lkotlin/collections/n;->get(I)Ljava/lang/Object;
+    move-result v4
 
     .line 1378
+    :goto_29
+    move v13, v4
+
     .line 1379
+    goto :goto_2a
+
     .line 1380
-    move-result-object v0
+    :cond_38
+    invoke-static {v2, v3}, LM0/a;->h(J)I
 
     .line 1381
-    move-object v3, v0
-
     .line 1382
-    check-cast v3, Landroidx/compose/foundation/lazy/grid/v;
-
     .line 1383
+    move-result v4
+
     .line 1384
-    move/from16 v0, v16
+    goto :goto_29
 
     .line 1385
-    .line 1386
-    goto :goto_2b
-
-    .line 1387
-    :cond_38
-    move-object/from16 v17, v3
-
-    .line 1388
-    .line 1389
-    move/from16 v22, v7
-
-    .line 1390
-    .line 1391
-    :goto_2c
+    :goto_2a
     if-eqz v21, :cond_39
 
+    .line 1386
+    .line 1387
+    move v15, v13
+
+    .line 1388
+    goto :goto_2b
+
+    .line 1389
+    :cond_39
+    move v15, v10
+
+    .line 1390
+    :goto_2b
+    invoke-static {v15, v1}, Ljava/lang/Math;->min(II)I
+
+    .line 1391
     .line 1392
     .line 1393
-    invoke-static {v4, v5}, Lh2/a;->i(J)I
+    move-result v4
 
     .line 1394
+    if-ge v9, v4, :cond_3a
+
     .line 1395
     .line 1396
-    move-result v0
+    const/4 v5, 0x1
 
     .line 1397
-    goto :goto_2d
+    goto :goto_2c
 
     .line 1398
-    :cond_39
-    invoke-static {v1, v4, v5}, Lcom/google/android/gms/internal/consent_sdk/z;->j(IJ)I
+    :cond_3a
+    const/4 v5, 0x0
 
     .line 1399
+    :goto_2c
+    if-eqz v5, :cond_3c
+
     .line 1400
     .line 1401
-    move-result v0
+    if-nez v6, :cond_3b
 
     .line 1402
-    :goto_2d
-    if-eqz v21, :cond_3a
-
     .line 1403
+    goto :goto_2d
+
     .line 1404
-    invoke-static {v1, v4, v5}, Lcom/google/android/gms/internal/consent_sdk/z;->i(IJ)I
+    :cond_3b
+    new-instance v0, Ljava/lang/IllegalStateException;
 
     .line 1405
     .line 1406
-    .line 1407
-    move-result v3
+    const-string v1, "non-zero firstLineScrollOffset"
 
+    .line 1407
     .line 1408
-    :goto_2e
-    move v10, v3
+    invoke-direct {v0, v1}, Ljava/lang/IllegalStateException;-><init>(Ljava/lang/String;)V
 
     .line 1409
-    goto :goto_2f
-
     .line 1410
-    :cond_3a
-    invoke-static {v4, v5}, Lh2/a;->h(J)I
-
     .line 1411
+    throw v0
+
     .line 1412
+    :cond_3c
+    :goto_2d
+    invoke-interface {v12}, Ljava/util/List;->size()I
+
     .line 1413
-    move-result v3
-
     .line 1414
-    goto :goto_2e
-
     .line 1415
-    :goto_2f
-    if-eqz v21, :cond_3b
+    move-result v4
 
     .line 1416
-    .line 1417
-    move v7, v10
+    move-wide/from16 v22, v2
 
+    .line 1417
     .line 1418
-    goto :goto_30
+    const/4 v2, 0x0
 
     .line 1419
-    :cond_3b
-    move v7, v0
+    const/4 v7, 0x0
 
     .line 1420
-    :goto_30
-    invoke-static {v7, v13}, Ljava/lang/Math;->min(II)I
+    :goto_2e
+    if-ge v7, v4, :cond_3d
 
     .line 1421
     .line 1422
+    invoke-virtual {v12, v7}, LY9/n;->get(I)Ljava/lang/Object;
+
     .line 1423
-    move-result v3
-
     .line 1424
-    if-ge v1, v3, :cond_3c
-
     .line 1425
+    move-result-object v3
+
     .line 1426
-    const/4 v3, 0x1
+    check-cast v3, Landroidx/compose/foundation/lazy/grid/q;
 
     .line 1427
-    goto :goto_31
-
     .line 1428
-    :cond_3c
-    const/4 v3, 0x0
+    iget-object v3, v3, Landroidx/compose/foundation/lazy/grid/q;->b:[Landroidx/compose/foundation/lazy/grid/p;
 
     .line 1429
-    :goto_31
-    if-eqz v3, :cond_3e
-
     .line 1430
+    array-length v3, v3
+
     .line 1431
-    if-nez v2, :cond_3d
+    add-int/2addr v2, v3
 
     .line 1432
-    .line 1433
-    goto :goto_32
+    add-int/lit8 v7, v7, 0x1
 
+    .line 1433
     .line 1434
-    :cond_3d
-    new-instance v0, Ljava/lang/IllegalStateException;
+    goto :goto_2e
 
     .line 1435
+    :cond_3d
+    new-instance v7, Ljava/util/ArrayList;
+
     .line 1436
-    const-string v1, "non-zero firstLineScrollOffset"
-
     .line 1437
-    .line 1438
-    invoke-virtual {v1}, Ljava/lang/Object;->toString()Ljava/lang/String;
+    invoke-direct {v7, v2}, Ljava/util/ArrayList;-><init>(I)V
 
+    .line 1438
     .line 1439
     .line 1440
-    .line 1441
-    move-result-object v1
+    if-eqz v5, :cond_4c
 
+    .line 1441
     .line 1442
-    invoke-direct {v0, v1}, Ljava/lang/IllegalStateException;-><init>(Ljava/lang/String;)V
+    invoke-interface {v0}, Ljava/util/List;->isEmpty()Z
 
     .line 1443
     .line 1444
     .line 1445
-    throw v0
+    move-result v2
 
     .line 1446
-    :cond_3e
-    :goto_32
-    invoke-interface {v14}, Ljava/util/List;->size()I
+    if-eqz v2, :cond_4b
 
     .line 1447
     .line 1448
+    invoke-interface {v8}, Ljava/util/List;->isEmpty()Z
+
     .line 1449
-    move-result v6
-
     .line 1450
-    move/from16 v16, v2
-
     .line 1451
+    move-result v2
+
     .line 1452
-    move-wide/from16 v31, v4
+    if-eqz v2, :cond_4b
 
     .line 1453
     .line 1454
-    const/4 v2, 0x0
+    invoke-interface {v12}, Ljava/util/List;->size()I
 
     .line 1455
-    const/4 v4, 0x0
-
     .line 1456
-    :goto_33
-    if-ge v2, v6, :cond_3f
-
     .line 1457
+    move-result v6
+
     .line 1458
-    invoke-virtual {v14, v2}, Lkotlin/collections/n;->get(I)Ljava/lang/Object;
+    new-array v5, v6, [I
 
     .line 1459
     .line 1460
+    const/4 v2, 0x0
+
     .line 1461
-    move-result-object v5
+    :goto_2f
+    if-ge v2, v6, :cond_3f
 
     .line 1462
-    check-cast v5, Landroidx/compose/foundation/lazy/grid/v;
-
     .line 1463
-    .line 1464
-    iget-object v5, v5, Landroidx/compose/foundation/lazy/grid/v;->b:[Landroidx/compose/foundation/lazy/grid/t;
+    if-nez v17, :cond_3e
 
+    .line 1464
     .line 1465
+    move v3, v2
+
     .line 1466
-    array-length v5, v5
+    goto :goto_30
 
     .line 1467
-    add-int/2addr v4, v5
+    :cond_3e
+    sub-int v3, v6, v2
 
     .line 1468
-    add-int/lit8 v2, v2, 0x1
-
     .line 1469
-    .line 1470
-    goto :goto_33
+    add-int/lit8 v3, v3, -0x1
 
+    .line 1470
     .line 1471
-    :cond_3f
-    new-instance v6, Ljava/util/ArrayList;
+    :goto_30
+    invoke-virtual {v12, v3}, LY9/n;->get(I)Ljava/lang/Object;
 
     .line 1472
     .line 1473
-    invoke-direct {v6, v4}, Ljava/util/ArrayList;-><init>(I)V
-
     .line 1474
+    move-result-object v3
+
     .line 1475
+    check-cast v3, Landroidx/compose/foundation/lazy/grid/q;
+
     .line 1476
-    if-eqz v3, :cond_4e
-
     .line 1477
-    .line 1478
-    invoke-interface {v8}, Ljava/util/List;->isEmpty()Z
+    iget v3, v3, Landroidx/compose/foundation/lazy/grid/q;->g:I
 
+    .line 1478
     .line 1479
+    aput v3, v5, v2
+
     .line 1480
     .line 1481
-    move-result v2
+    add-int/lit8 v2, v2, 0x1
 
     .line 1482
-    if-eqz v2, :cond_4d
-
     .line 1483
+    goto :goto_2f
+
     .line 1484
-    invoke-interface {v9}, Ljava/util/List;->isEmpty()Z
+    :cond_3f
+    new-array v4, v6, [I
 
     .line 1485
     .line 1486
+    const/4 v2, 0x0
+
     .line 1487
-    move-result v2
+    :goto_31
+    if-ge v2, v6, :cond_40
 
     .line 1488
-    if-eqz v2, :cond_4d
-
     .line 1489
+    const/4 v3, 0x0
+
     .line 1490
-    invoke-interface {v14}, Ljava/util/List;->size()I
+    aput v3, v4, v2
 
     .line 1491
     .line 1492
-    .line 1493
-    move-result v5
+    add-int/lit8 v2, v2, 0x1
 
+    .line 1493
     .line 1494
-    new-array v4, v5, [I
+    goto :goto_31
 
     .line 1495
+    :cond_40
+    const/4 v3, 0x0
+
     .line 1496
-    const/4 v2, 0x0
+    if-eqz v21, :cond_42
 
     .line 1497
-    :goto_34
-    if-ge v2, v5, :cond_41
-
     .line 1498
+    move-object/from16 v2, v51
+
     .line 1499
-    if-nez v19, :cond_40
-
     .line 1500
-    .line 1501
-    move v3, v2
+    if-eqz v2, :cond_41
 
+    .line 1501
     .line 1502
-    goto :goto_35
+    move-object/from16 v3, p1
 
     .line 1503
-    :cond_40
-    sub-int v3, v5, v2
-
     .line 1504
-    .line 1505
-    add-int/lit8 v3, v3, -0x1
+    move/from16 v16, v1
 
+    .line 1505
     .line 1506
+    const/4 v1, 0x0
+
     .line 1507
-    :goto_35
-    invoke-virtual {v14, v3}, Lkotlin/collections/n;->get(I)Ljava/lang/Object;
+    invoke-interface {v2, v15, v3, v5, v4}, Landroidx/compose/foundation/layout/f;->b(ILandroidx/compose/ui/layout/L;[I[I)V
 
     .line 1508
     .line 1509
     .line 1510
-    move-result-object v3
+    move-object/from16 v19, v4
 
     .line 1511
-    check-cast v3, Landroidx/compose/foundation/lazy/grid/v;
-
     .line 1512
+    move-object v1, v7
+
     .line 1513
-    iget v3, v3, Landroidx/compose/foundation/lazy/grid/v;->g:I
+    move-wide/from16 v59, v22
 
     .line 1514
     .line 1515
-    aput v3, v4, v2
+    move/from16 v26, v33
 
     .line 1516
     .line 1517
-    add-int/lit8 v2, v2, 0x1
+    move/from16 v61, v36
 
     .line 1518
     .line 1519
-    goto :goto_34
+    move/from16 v22, v6
 
     .line 1520
-    :cond_41
-    new-array v3, v5, [I
-
     .line 1521
+    goto :goto_32
+
     .line 1522
-    const/4 v2, 0x0
+    :cond_41
+    new-instance v0, Ljava/lang/IllegalArgumentException;
 
     .line 1523
-    :goto_36
-    if-ge v2, v5, :cond_42
-
     .line 1524
+    const-string v1, "null verticalArrangement"
+
     .line 1525
-    const/16 v16, 0x0
-
     .line 1526
-    .line 1527
-    aput v16, v3, v2
+    invoke-direct {v0, v1}, Ljava/lang/IllegalArgumentException;-><init>(Ljava/lang/String;)V
 
+    .line 1527
     .line 1528
     .line 1529
-    add-int/lit8 v2, v2, 0x1
+    throw v0
 
     .line 1530
-    .line 1531
-    goto :goto_36
-
-    .line 1532
     :cond_42
-    const/16 v16, 0x0
+    move-object/from16 v3, p1
+
+    .line 1531
+    .line 1532
+    move/from16 v16, v1
 
     .line 1533
     .line 1534
-    if-eqz v21, :cond_44
+    const/4 v1, 0x0
 
     .line 1535
+    if-eqz v19, :cond_4a
+
     .line 1536
-    move-object/from16 v2, v49
-
     .line 1537
+    sget-object v24, Landroidx/compose/ui/unit/LayoutDirection;->Ltr:Landroidx/compose/ui/unit/LayoutDirection;
+
     .line 1538
-    if-eqz v2, :cond_43
-
     .line 1539
+    move-wide/from16 v59, v22
+
     .line 1540
-    move/from16 v20, v5
-
     .line 1541
+    move-object/from16 v2, v19
+
     .line 1542
-    move/from16 v48, v13
-
     .line 1543
-    .line 1544
-    const/4 v13, 0x0
+    move-object/from16 v3, p1
 
+    .line 1544
     .line 1545
-    move-object/from16 v5, p1
+    move-object/from16 v19, v4
 
     .line 1546
     .line 1547
-    invoke-interface {v2, v5, v7, v4, v3}, Landroidx/compose/foundation/layout/i;->b(Lh2/b;I[I[I)V
+    move/from16 v26, v33
 
     .line 1548
     .line 1549
+    move v4, v15
+
     .line 1550
-    move-object/from16 v18, v3
+    move/from16 v22, v6
 
     .line 1551
     .line 1552
-    move-object v13, v6
+    move-object/from16 v6, v24
 
     .line 1553
-    move/from16 v16, v7
-
     .line 1554
+    move-object v1, v7
+
     .line 1555
-    move-wide/from16 v57, v31
+    move/from16 v61, v36
 
     .line 1556
     .line 1557
-    goto :goto_37
+    move-object/from16 v7, v19
 
     .line 1558
-    :cond_43
-    new-instance v0, Ljava/lang/IllegalArgumentException;
-
     .line 1559
-    .line 1560
-    const-string v1, "null verticalArrangement"
+    invoke-interface/range {v2 .. v7}, Landroidx/compose/foundation/layout/d;->d(LM0/b;I[ILandroidx/compose/ui/unit/LayoutDirection;[I)V
 
+    .line 1560
     .line 1561
     .line 1562
-    invoke-virtual {v1}, Ljava/lang/Object;->toString()Ljava/lang/String;
+    :goto_32
+    if-eqz v17, :cond_43
 
     .line 1563
     .line 1564
+    invoke-static/range {v19 .. v19}, LY9/o;->R([I)Lqa/g;
+
     .line 1565
-    move-result-object v1
-
     .line 1566
-    invoke-direct {v0, v1}, Ljava/lang/IllegalArgumentException;-><init>(Ljava/lang/String;)V
-
     .line 1567
-    .line 1568
-    .line 1569
-    throw v0
+    move-result-object v2
 
+    .line 1568
+    iget v3, v2, Lqa/e;->d:I
+
+    .line 1569
     .line 1570
-    :cond_44
-    move/from16 v20, v5
+    neg-int v3, v3
 
     .line 1571
+    new-instance v4, Lqa/e;
+
     .line 1572
-    move/from16 v48, v13
-
     .line 1573
-    .line 1574
-    const/4 v13, 0x0
+    iget v5, v2, Lqa/e;->c:I
 
+    .line 1574
     .line 1575
-    move-object/from16 v5, p1
+    iget v2, v2, Lqa/e;->b:I
 
     .line 1576
     .line 1577
-    if-eqz v18, :cond_4c
+    invoke-direct {v4, v5, v2, v3}, Lqa/e;-><init>(III)V
 
     .line 1578
     .line 1579
-    sget-object v16, Landroidx/compose/ui/unit/LayoutDirection;->Ltr:Landroidx/compose/ui/unit/LayoutDirection;
-
     .line 1580
+    goto :goto_33
+
     .line 1581
-    move-object/from16 v2, v18
+    :cond_43
+    invoke-static/range {v19 .. v19}, LY9/o;->R([I)Lqa/g;
 
     .line 1582
     .line 1583
-    move-object/from16 v18, v3
-
     .line 1584
+    move-result-object v4
+
     .line 1585
-    move-object/from16 v3, p1
+    :goto_33
+    iget v2, v4, Lqa/e;->b:I
 
     .line 1586
     .line 1587
-    move-object v5, v4
+    iget v3, v4, Lqa/e;->c:I
 
     .line 1588
-    move-wide/from16 v57, v31
-
     .line 1589
-    .line 1590
-    move v4, v7
+    iget v4, v4, Lqa/e;->d:I
 
+    .line 1590
     .line 1591
-    move-object v13, v6
+    if-lez v4, :cond_44
 
     .line 1592
-    move-object/from16 v6, v16
-
     .line 1593
+    if-le v2, v3, :cond_45
+
     .line 1594
-    move/from16 v16, v7
-
     .line 1595
+    :cond_44
+    if-gez v4, :cond_49
+
     .line 1596
-    move-object/from16 v7, v18
-
     .line 1597
-    .line 1598
-    invoke-interface/range {v2 .. v7}, Landroidx/compose/foundation/layout/g;->c(Lh2/b;I[ILandroidx/compose/ui/unit/LayoutDirection;[I)V
+    if-gt v3, v2, :cond_49
 
+    .line 1598
     .line 1599
+    :cond_45
+    :goto_34
+    aget v5, v19, v2
+
     .line 1600
     .line 1601
-    :goto_37
-    if-eqz v19, :cond_45
+    if-nez v17, :cond_46
 
     .line 1602
     .line 1603
-    invoke-static/range {v18 .. v18}, Lkotlin/collections/q;->R([I)Lfi/g;
+    move v6, v2
 
     .line 1604
-    .line 1605
-    .line 1606
-    move-result-object v2
+    goto :goto_35
 
+    .line 1605
+    :cond_46
+    sub-int v6, v22, v2
+
+    .line 1606
     .line 1607
-    iget v3, v2, Lfi/e;->d:I
+    add-int/lit8 v6, v6, -0x1
 
     .line 1608
     .line 1609
-    neg-int v3, v3
+    :goto_35
+    invoke-virtual {v12, v6}, LY9/n;->get(I)Ljava/lang/Object;
 
     .line 1610
-    new-instance v4, Lfi/e;
-
     .line 1611
     .line 1612
-    iget v5, v2, Lfi/e;->c:I
+    move-result-object v6
 
     .line 1613
+    check-cast v6, Landroidx/compose/foundation/lazy/grid/q;
+
     .line 1614
-    iget v2, v2, Lfi/e;->b:I
-
     .line 1615
-    .line 1616
-    invoke-direct {v4, v5, v2, v3}, Lfi/e;-><init>(III)V
+    if-eqz v17, :cond_47
 
+    .line 1616
     .line 1617
+    sub-int v5, v15, v5
+
     .line 1618
     .line 1619
-    goto :goto_38
+    iget v7, v6, Landroidx/compose/foundation/lazy/grid/q;->g:I
 
     .line 1620
-    :cond_45
-    invoke-static/range {v18 .. v18}, Lkotlin/collections/q;->R([I)Lfi/g;
-
     .line 1621
+    sub-int/2addr v5, v7
+
     .line 1622
+    :cond_47
+    invoke-virtual {v6, v5, v10, v13}, Landroidx/compose/foundation/lazy/grid/q;->a(III)[Landroidx/compose/foundation/lazy/grid/p;
+
     .line 1623
-    move-result-object v4
-
     .line 1624
-    :goto_38
-    iget v2, v4, Lfi/e;->b:I
-
     .line 1625
+    move-result-object v5
+
     .line 1626
-    iget v3, v4, Lfi/e;->c:I
+    array-length v6, v5
 
     .line 1627
+    const/4 v7, 0x0
+
     .line 1628
-    iget v4, v4, Lfi/e;->d:I
+    :goto_36
+    if-ge v7, v6, :cond_48
 
     .line 1629
     .line 1630
-    if-lez v4, :cond_46
+    move/from16 v23, v6
 
     .line 1631
     .line 1632
-    if-le v2, v3, :cond_47
+    aget-object v6, v5, v7
 
     .line 1633
     .line 1634
-    :cond_46
-    if-gez v4, :cond_4b
+    invoke-virtual {v1, v6}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
     .line 1635
     .line 1636
-    if-gt v3, v2, :cond_4b
-
     .line 1637
+    add-int/lit8 v7, v7, 0x1
+
     .line 1638
-    :cond_47
-    :goto_39
-    aget v5, v18, v2
-
     .line 1639
-    .line 1640
-    if-nez v19, :cond_48
+    move/from16 v6, v23
 
+    .line 1640
     .line 1641
+    goto :goto_36
+
     .line 1642
-    move v6, v2
+    :cond_48
+    if-eq v2, v3, :cond_49
 
     .line 1643
-    goto :goto_3a
-
     .line 1644
-    :cond_48
-    sub-int v6, v20, v2
+    add-int/2addr v2, v4
 
     .line 1645
+    goto :goto_34
+
     .line 1646
-    add-int/lit8 v6, v6, -0x1
+    :cond_49
+    move/from16 v2, v58
 
     .line 1647
     .line 1648
-    :goto_3a
-    invoke-virtual {v14, v6}, Lkotlin/collections/n;->get(I)Ljava/lang/Object;
+    goto/16 :goto_3c
 
     .line 1649
     .line 1650
-    .line 1651
-    move-result-object v6
+    :cond_4a
+    new-instance v0, Ljava/lang/IllegalArgumentException;
 
+    .line 1651
     .line 1652
-    check-cast v6, Landroidx/compose/foundation/lazy/grid/v;
+    const-string v1, "null horizontalArrangement"
 
     .line 1653
     .line 1654
-    if-eqz v19, :cond_49
+    invoke-direct {v0, v1}, Ljava/lang/IllegalArgumentException;-><init>(Ljava/lang/String;)V
 
     .line 1655
     .line 1656
-    sub-int v7, v16, v5
-
     .line 1657
+    throw v0
+
     .line 1658
-    iget v5, v6, Landroidx/compose/foundation/lazy/grid/v;->g:I
+    :cond_4b
+    new-instance v0, Ljava/lang/IllegalArgumentException;
 
     .line 1659
     .line 1660
-    sub-int v5, v7, v5
+    const-string v1, "no items"
 
     .line 1661
     .line 1662
-    :cond_49
-    invoke-virtual {v6, v5, v0, v10}, Landroidx/compose/foundation/lazy/grid/v;->a(III)[Landroidx/compose/foundation/lazy/grid/t;
+    invoke-direct {v0, v1}, Ljava/lang/IllegalArgumentException;-><init>(Ljava/lang/String;)V
 
     .line 1663
     .line 1664
     .line 1665
-    move-result-object v5
+    throw v0
 
     .line 1666
-    array-length v6, v5
+    :cond_4c
+    move/from16 v16, v1
 
     .line 1667
-    const/4 v7, 0x0
-
     .line 1668
-    :goto_3b
-    if-ge v7, v6, :cond_4a
+    move-object v1, v7
 
     .line 1669
+    move-wide/from16 v59, v22
+
     .line 1670
-    move/from16 v23, v6
-
     .line 1671
+    move/from16 v26, v33
+
     .line 1672
-    aget-object v6, v5, v7
-
     .line 1673
-    .line 1674
-    invoke-virtual {v13, v6}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
+    move/from16 v61, v36
 
+    .line 1674
     .line 1675
+    invoke-interface {v0}, Ljava/util/List;->size()I
+
     .line 1676
     .line 1677
-    add-int/lit8 v7, v7, 0x1
-
     .line 1678
+    move-result v2
+
     .line 1679
-    move/from16 v6, v23
+    add-int/lit8 v2, v2, -0x1
 
     .line 1680
     .line 1681
-    goto :goto_3b
+    if-ltz v2, :cond_4e
 
     .line 1682
-    :cond_4a
-    if-eq v2, v3, :cond_4b
-
     .line 1683
+    move v3, v6
+
     .line 1684
-    add-int/2addr v2, v4
+    :goto_37
+    add-int/lit8 v4, v2, -0x1
 
     .line 1685
-    goto :goto_39
-
     .line 1686
-    :cond_4b
-    move/from16 v2, v26
+    invoke-interface {v0, v2}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
     .line 1687
     .line 1688
-    goto/16 :goto_41
-
     .line 1689
+    move-result-object v2
+
     .line 1690
-    :cond_4c
-    new-instance v0, Ljava/lang/IllegalArgumentException;
+    check-cast v2, Landroidx/compose/foundation/lazy/grid/p;
 
     .line 1691
     .line 1692
-    const-string v1, "null horizontalArrangement"
+    iget v5, v2, Landroidx/compose/foundation/lazy/grid/p;->q:I
 
     .line 1693
     .line 1694
-    invoke-virtual {v1}, Ljava/lang/Object;->toString()Ljava/lang/String;
+    sub-int/2addr v3, v5
 
     .line 1695
+    const/4 v5, 0x0
+
     .line 1696
+    invoke-virtual {v2, v3, v5, v10, v13}, Landroidx/compose/foundation/lazy/grid/p;->k(IIII)V
+
     .line 1697
-    move-result-object v1
-
     .line 1698
-    invoke-direct {v0, v1}, Ljava/lang/IllegalArgumentException;-><init>(Ljava/lang/String;)V
-
     .line 1699
+    invoke-virtual {v1, v2}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
+
     .line 1700
     .line 1701
-    throw v0
-
     .line 1702
-    :cond_4d
-    new-instance v0, Ljava/lang/IllegalArgumentException;
+    if-gez v4, :cond_4d
 
     .line 1703
     .line 1704
-    const-string v1, "no items"
+    goto :goto_38
 
     .line 1705
+    :cond_4d
+    move v2, v4
+
     .line 1706
-    invoke-virtual {v1}, Ljava/lang/Object;->toString()Ljava/lang/String;
+    goto :goto_37
 
     .line 1707
+    :cond_4e
+    :goto_38
+    invoke-interface {v12}, Ljava/util/List;->size()I
+
     .line 1708
     .line 1709
-    move-result-object v1
-
     .line 1710
-    invoke-direct {v0, v1}, Ljava/lang/IllegalArgumentException;-><init>(Ljava/lang/String;)V
+    move-result v2
 
     .line 1711
-    .line 1712
-    .line 1713
-    throw v0
+    const/4 v5, 0x0
 
+    .line 1712
+    :goto_39
+    if-ge v5, v2, :cond_50
+
+    .line 1713
     .line 1714
-    :cond_4e
-    move/from16 v48, v13
+    invoke-virtual {v12, v5}, LY9/n;->get(I)Ljava/lang/Object;
 
     .line 1715
     .line 1716
-    move-wide/from16 v57, v31
-
     .line 1717
+    move-result-object v3
+
     .line 1718
-    move-object v13, v6
+    check-cast v3, Landroidx/compose/foundation/lazy/grid/q;
 
     .line 1719
-    invoke-interface {v8}, Ljava/util/List;->size()I
-
     .line 1720
+    invoke-virtual {v3, v6, v10, v13}, Landroidx/compose/foundation/lazy/grid/q;->a(III)[Landroidx/compose/foundation/lazy/grid/p;
+
     .line 1721
     .line 1722
-    move-result v2
-
     .line 1723
-    add-int/lit8 v2, v2, -0x1
+    move-result-object v4
 
     .line 1724
+    array-length v7, v4
+
     .line 1725
-    if-ltz v2, :cond_50
+    const/4 v15, 0x0
 
     .line 1726
+    :goto_3a
+    if-ge v15, v7, :cond_4f
+
     .line 1727
-    move/from16 v3, v16
-
     .line 1728
+    move/from16 p1, v2
+
     .line 1729
-    :goto_3c
-    add-int/lit8 v4, v2, -0x1
-
     .line 1730
-    .line 1731
-    invoke-interface {v8, v2}, Ljava/util/List;->get(I)Ljava/lang/Object;
+    aget-object v2, v4, v15
 
+    .line 1731
     .line 1732
+    invoke-virtual {v1, v2}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
+
     .line 1733
     .line 1734
-    move-result-object v2
-
     .line 1735
-    check-cast v2, Landroidx/compose/foundation/lazy/grid/t;
+    add-int/lit8 v15, v15, 0x1
 
     .line 1736
     .line 1737
-    iget v5, v2, Landroidx/compose/foundation/lazy/grid/t;->q:I
+    move/from16 v2, p1
 
     .line 1738
     .line 1739
-    sub-int/2addr v3, v5
+    goto :goto_3a
 
     .line 1740
-    const/4 v5, 0x0
+    :cond_4f
+    move/from16 p1, v2
 
     .line 1741
-    invoke-virtual {v2, v3, v5, v0, v10}, Landroidx/compose/foundation/lazy/grid/t;->k(IIII)V
-
     .line 1742
+    iget v2, v3, Landroidx/compose/foundation/lazy/grid/q;->h:I
+
     .line 1743
     .line 1744
-    invoke-virtual {v13, v2}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
+    add-int/2addr v6, v2
 
     .line 1745
+    add-int/lit8 v5, v5, 0x1
+
     .line 1746
     .line 1747
-    if-gez v4, :cond_4f
+    move/from16 v2, p1
 
     .line 1748
     .line 1749
-    goto :goto_3d
+    goto :goto_39
 
     .line 1750
-    :cond_4f
-    move v2, v4
+    :cond_50
+    invoke-interface {v8}, Ljava/util/List;->size()I
 
     .line 1751
-    goto :goto_3c
-
     .line 1752
-    :cond_50
-    :goto_3d
-    invoke-interface {v14}, Ljava/util/List;->size()I
-
     .line 1753
-    .line 1754
-    .line 1755
     move-result v2
 
+    .line 1754
+    const/4 v5, 0x0
+
+    .line 1755
+    :goto_3b
+    if-ge v5, v2, :cond_49
+
     .line 1756
-    move/from16 v3, v16
-
     .line 1757
+    invoke-interface {v8, v5}, Ljava/util/List;->get(I)Ljava/lang/Object;
+
     .line 1758
-    const/4 v4, 0x0
-
     .line 1759
-    :goto_3e
-    if-ge v4, v2, :cond_52
-
     .line 1760
+    move-result-object v3
+
     .line 1761
-    invoke-virtual {v14, v4}, Lkotlin/collections/n;->get(I)Ljava/lang/Object;
+    check-cast v3, Landroidx/compose/foundation/lazy/grid/p;
 
     .line 1762
     .line 1763
+    const/4 v4, 0x0
+
     .line 1764
-    move-result-object v5
+    invoke-virtual {v3, v6, v4, v10, v13}, Landroidx/compose/foundation/lazy/grid/p;->k(IIII)V
 
     .line 1765
-    check-cast v5, Landroidx/compose/foundation/lazy/grid/v;
-
     .line 1766
     .line 1767
-    invoke-virtual {v5, v3, v0, v10}, Landroidx/compose/foundation/lazy/grid/v;->a(III)[Landroidx/compose/foundation/lazy/grid/t;
+    invoke-virtual {v1, v3}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
     .line 1768
     .line 1769
     .line 1770
-    move-result-object v6
+    iget v3, v3, Landroidx/compose/foundation/lazy/grid/p;->q:I
 
     .line 1771
-    array-length v7, v6
-
     .line 1772
-    move/from16 p1, v2
+    add-int/2addr v6, v3
 
     .line 1773
-    .line 1774
-    const/4 v2, 0x0
+    add-int/lit8 v5, v5, 0x1
 
+    .line 1774
     .line 1775
-    :goto_3f
-    if-ge v2, v7, :cond_51
+    goto :goto_3b
 
     .line 1776
+    :goto_3c
+    float-to-int v3, v2
+
     .line 1777
-    move/from16 v16, v7
+    iget-object v4, v11, Landroidx/compose/foundation/lazy/grid/m;->a:Landroidx/compose/foundation/lazy/grid/i;
 
     .line 1778
     .line 1779
-    aget-object v7, v6, v2
+    iget-object v4, v4, Landroidx/compose/foundation/lazy/grid/i;->c:Landroidx/compose/foundation/lazy/layout/S;
 
     .line 1780
     .line 1781
-    invoke-virtual {v13, v7}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
+    const/16 v39, 0x0
 
     .line 1782
     .line 1783
+    const/16 v41, 0x0
+
     .line 1784
-    add-int/lit8 v2, v2, 0x1
-
     .line 1785
+    move-object/from16 v31, v50
+
     .line 1786
-    move/from16 v7, v16
-
     .line 1787
-    .line 1788
-    goto :goto_3f
+    move/from16 v32, v3
 
+    .line 1788
     .line 1789
-    :cond_51
-    iget v2, v5, Landroidx/compose/foundation/lazy/grid/v;->h:I
+    move/from16 v33, v10
 
     .line 1790
     .line 1791
-    add-int/2addr v3, v2
+    move/from16 v34, v13
 
     .line 1792
-    add-int/lit8 v4, v4, 0x1
-
     .line 1793
+    move-object/from16 v35, v1
+
     .line 1794
-    move/from16 v2, p1
-
     .line 1795
-    .line 1796
-    goto :goto_3e
+    move-object/from16 v36, v4
 
+    .line 1796
     .line 1797
-    :cond_52
-    invoke-interface {v9}, Ljava/util/List;->size()I
+    move-object/from16 v37, v11
 
     .line 1798
     .line 1799
-    .line 1800
-    move-result v2
+    move/from16 v38, v21
 
+    .line 1800
     .line 1801
-    const/4 v4, 0x0
+    move/from16 v40, v49
 
     .line 1802
-    :goto_40
-    if-ge v4, v2, :cond_4b
-
     .line 1803
-    .line 1804
-    invoke-interface {v9, v4}, Ljava/util/List;->get(I)Ljava/lang/Object;
+    move/from16 v42, v18
 
+    .line 1804
     .line 1805
+    move/from16 v43, v9
+
     .line 1806
     .line 1807
-    move-result-object v5
+    invoke-virtual/range {v31 .. v45}, Landroidx/compose/foundation/lazy/layout/x;->d(IIILjava/util/ArrayList;Landroidx/compose/foundation/lazy/layout/C;Landroidx/compose/foundation/lazy/layout/G;ZZIZIILkotlinx/coroutines/u;Landroidx/compose/ui/graphics/F;)V
 
     .line 1808
-    check-cast v5, Landroidx/compose/foundation/lazy/grid/t;
-
     .line 1809
     .line 1810
-    const/4 v6, 0x0
+    invoke-virtual/range {v50 .. v50}, Landroidx/compose/foundation/lazy/layout/x;->b()J
 
     .line 1811
-    invoke-virtual {v5, v3, v6, v0, v10}, Landroidx/compose/foundation/lazy/grid/t;->k(IIII)V
-
     .line 1812
     .line 1813
+    move-result-wide v3
+
     .line 1814
-    invoke-virtual {v13, v5}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
+    const-wide/16 v5, 0x0
 
     .line 1815
     .line 1816
-    .line 1817
-    iget v5, v5, Landroidx/compose/foundation/lazy/grid/t;->q:I
+    invoke-static {v3, v4, v5, v6}, LM0/j;->a(JJ)Z
 
+    .line 1817
     .line 1818
     .line 1819
-    add-int/2addr v3, v5
+    move-result v5
 
     .line 1820
-    add-int/lit8 v4, v4, 0x1
+    if-nez v5, :cond_54
 
     .line 1821
     .line 1822
-    goto :goto_40
+    if-eqz v21, :cond_51
 
     .line 1823
-    :goto_41
-    float-to-int v3, v2
-
     .line 1824
-    iget-object v4, v11, Landroidx/compose/foundation/lazy/grid/u;->a:Landroidx/compose/foundation/lazy/grid/k;
+    move v5, v13
 
     .line 1825
+    goto :goto_3d
+
     .line 1826
-    check-cast v4, Landroidx/compose/foundation/lazy/grid/l;
+    :cond_51
+    move v5, v10
 
     .line 1827
-    .line 1828
-    iget-object v4, v4, Landroidx/compose/foundation/lazy/grid/l;->c:Landroidx/compose/foundation/lazy/layout/d0;
+    :goto_3d
+    shr-long v6, v3, v54
 
+    .line 1828
     .line 1829
+    long-to-int v7, v6
+
     .line 1830
-    const/16 v39, 0x0
+    invoke-static {v10, v7}, Ljava/lang/Math;->max(II)I
 
     .line 1831
     .line 1832
-    const/16 v41, 0x0
-
     .line 1833
+    move-result v6
+
     .line 1834
-    move-object/from16 v31, v24
+    move-wide/from16 v10, v59
 
     .line 1835
     .line 1836
-    move/from16 v32, v3
+    invoke-static {v6, v10, v11}, LP5/f;->i(IJ)I
 
     .line 1837
     .line 1838
-    move/from16 v33, v0
-
     .line 1839
+    move-result v6
+
     .line 1840
-    move/from16 v34, v10
+    and-long v3, v3, v52
 
     .line 1841
     .line 1842
-    move-object/from16 v35, v13
+    long-to-int v4, v3
 
     .line 1843
-    .line 1844
-    move-object/from16 v36, v4
+    invoke-static {v13, v4}, Ljava/lang/Math;->max(II)I
 
+    .line 1844
     .line 1845
     .line 1846
-    move-object/from16 v37, v11
+    move-result v3
 
     .line 1847
-    .line 1848
-    move/from16 v38, v21
+    invoke-static {v3, v10, v11}, LP5/f;->h(IJ)I
 
+    .line 1848
     .line 1849
     .line 1850
-    move/from16 v40, v25
+    move-result v13
 
     .line 1851
-    .line 1852
-    move/from16 v42, v22
+    if-eqz v21, :cond_52
 
+    .line 1852
     .line 1853
+    move v3, v13
+
     .line 1854
-    move/from16 v43, v1
+    goto :goto_3e
 
     .line 1855
+    :cond_52
+    move v3, v6
+
     .line 1856
-    invoke-virtual/range {v31 .. v45}, Landroidx/compose/foundation/lazy/layout/x;->d(IIILjava/util/ArrayList;Landroidx/compose/foundation/lazy/layout/d0;Landroidx/compose/foundation/lazy/layout/h0;ZZIZIILkotlinx/coroutines/w;Landroidx/compose/ui/graphics/e0;)V
+    :goto_3e
+    if-eq v3, v5, :cond_53
 
     .line 1857
     .line 1858
-    .line 1859
-    invoke-virtual/range {v24 .. v24}, Landroidx/compose/foundation/lazy/layout/x;->b()J
+    invoke-virtual {v1}, Ljava/util/ArrayList;->size()I
 
+    .line 1859
     .line 1860
     .line 1861
+    move-result v4
+
     .line 1862
-    move-result-wide v3
+    const/4 v5, 0x0
 
     .line 1863
-    const-wide/16 v5, 0x0
+    :goto_3f
+    if-ge v5, v4, :cond_53
 
     .line 1864
     .line 1865
-    invoke-static {v3, v4, v5, v6}, Lh2/j;->a(JJ)Z
+    invoke-virtual {v1, v5}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
 
     .line 1866
     .line 1867
     .line 1868
-    move-result v5
+    move-result-object v7
 
     .line 1869
-    if-nez v5, :cond_55
+    check-cast v7, Landroidx/compose/foundation/lazy/grid/p;
 
     .line 1870
     .line 1871
-    if-eqz v21, :cond_53
+    iput v3, v7, Landroidx/compose/foundation/lazy/grid/p;->r:I
 
     .line 1872
     .line 1873
-    move-object/from16 p3, v8
+    iget v10, v7, Landroidx/compose/foundation/lazy/grid/p;->h:I
 
     .line 1874
     .line 1875
-    move v6, v10
+    add-int/2addr v10, v3
 
     .line 1876
-    :goto_42
-    const/16 v5, 0x20
+    iput v10, v7, Landroidx/compose/foundation/lazy/grid/p;->t:I
 
     .line 1877
     .line 1878
-    goto :goto_43
+    add-int/lit8 v5, v5, 0x1
 
     .line 1879
-    :cond_53
-    move v6, v0
-
     .line 1880
-    move-object/from16 p3, v8
+    goto :goto_3f
 
     .line 1881
+    :cond_53
+    move v10, v6
+
     .line 1882
-    goto :goto_42
+    :cond_54
+    add-int/lit8 v7, v14, -0x1
 
     .line 1883
-    :goto_43
-    shr-long v7, v3, v5
-
     .line 1884
-    .line 1885
-    long-to-int v5, v7
+    move/from16 v5, v61
 
+    .line 1885
     .line 1886
-    invoke-static {v0, v5}, Ljava/lang/Math;->max(II)I
+    if-ne v5, v7, :cond_56
 
     .line 1887
     .line 1888
-    .line 1889
-    move-result v0
+    move/from16 v3, v16
 
+    .line 1889
     .line 1890
-    move-wide/from16 v7, v57
+    if-le v9, v3, :cond_55
 
     .line 1891
     .line 1892
-    invoke-static {v0, v7, v8}, Lcom/google/android/gms/internal/consent_sdk/z;->j(IJ)I
+    goto :goto_40
 
     .line 1893
+    :cond_55
+    const/16 v19, 0x0
+
     .line 1894
     .line 1895
-    move-result v0
+    goto :goto_41
 
     .line 1896
-    and-long v3, v3, v51
+    :cond_56
+    :goto_40
+    const/16 v19, 0x1
 
     .line 1897
     .line 1898
-    long-to-int v4, v3
+    :goto_41
+    invoke-static {v10}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
     .line 1899
-    invoke-static {v10, v4}, Ljava/lang/Math;->max(II)I
-
     .line 1900
     .line 1901
+    move-result-object v3
+
     .line 1902
-    move-result v3
+    invoke-static {v13}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
     .line 1903
-    invoke-static {v3, v7, v8}, Lcom/google/android/gms/internal/consent_sdk/z;->i(IJ)I
-
     .line 1904
     .line 1905
+    move-result-object v4
+
     .line 1906
-    move-result v10
+    new-instance v6, Landroidx/compose/foundation/lazy/grid/LazyGridMeasureKt$measureLazyGrid$6;
 
     .line 1907
-    if-eqz v21, :cond_54
-
     .line 1908
-    .line 1909
-    move v3, v10
+    move-object/from16 v7, v57
 
+    .line 1909
     .line 1910
-    goto :goto_44
+    iget-object v7, v7, Landroidx/compose/foundation/lazy/grid/x;->p:Landroidx/compose/runtime/Z;
 
     .line 1911
-    :cond_54
-    move v3, v0
-
     .line 1912
-    :goto_44
-    if-eq v3, v6, :cond_56
+    invoke-direct {v6, v1, v7}, Landroidx/compose/foundation/lazy/grid/LazyGridMeasureKt$measureLazyGrid$6;-><init>(Ljava/util/List;Landroidx/compose/runtime/Z;)V
 
     .line 1913
     .line 1914
-    invoke-virtual {v13}, Ljava/util/ArrayList;->size()I
-
     .line 1915
+    move-object/from16 v7, v48
+
     .line 1916
     .line 1917
-    move-result v4
+    invoke-interface {v7, v3, v4, v6}, Lka/f;->invoke(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 1918
-    const/4 v5, 0x0
-
     .line 1919
-    :goto_45
-    if-ge v5, v4, :cond_56
-
     .line 1920
+    move-result-object v3
+
     .line 1921
-    invoke-virtual {v13, v5}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
+    check-cast v3, Landroidx/compose/ui/layout/K;
 
     .line 1922
     .line 1923
+    invoke-interface {v0}, Ljava/util/List;->isEmpty()Z
+
     .line 1924
-    move-result-object v6
-
     .line 1925
-    check-cast v6, Landroidx/compose/foundation/lazy/grid/t;
-
     .line 1926
+    move-result v0
+
     .line 1927
-    iput v3, v6, Landroidx/compose/foundation/lazy/grid/t;->r:I
+    if-eqz v0, :cond_57
 
     .line 1928
     .line 1929
-    iget v7, v6, Landroidx/compose/foundation/lazy/grid/t;->h:I
+    invoke-interface {v8}, Ljava/util/List;->isEmpty()Z
 
     .line 1930
     .line 1931
-    add-int/2addr v7, v3
-
     .line 1932
-    iput v7, v6, Landroidx/compose/foundation/lazy/grid/t;->t:I
+    move-result v0
 
     .line 1933
+    if-eqz v0, :cond_57
+
     .line 1934
-    add-int/lit8 v5, v5, 0x1
-
     .line 1935
-    .line 1936
-    goto :goto_45
+    move-object/from16 v25, v1
 
+    .line 1936
     .line 1937
-    :cond_55
-    move-object/from16 p3, v8
+    goto :goto_43
 
     .line 1938
+    :cond_57
+    new-instance v0, Ljava/util/ArrayList;
+
     .line 1939
-    :cond_56
-    add-int/lit8 v3, v12, -0x1
-
     .line 1940
-    .line 1941
-    if-ne v15, v3, :cond_58
+    invoke-virtual {v1}, Ljava/util/ArrayList;->size()I
 
+    .line 1941
     .line 1942
     .line 1943
-    move/from16 v3, v48
+    move-result v4
 
     .line 1944
-    .line 1945
-    if-le v1, v3, :cond_57
+    invoke-direct {v0, v4}, Ljava/util/ArrayList;-><init>(I)V
 
+    .line 1945
     .line 1946
     .line 1947
-    goto :goto_46
+    invoke-virtual {v1}, Ljava/util/ArrayList;->size()I
 
     .line 1948
-    :cond_57
-    const/16 v19, 0x0
-
     .line 1949
     .line 1950
-    goto :goto_47
+    move-result v4
 
     .line 1951
-    :cond_58
-    :goto_46
-    const/16 v19, 0x1
+    const/4 v6, 0x0
 
     .line 1952
-    .line 1953
-    :goto_47
-    invoke-static {v0}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+    :goto_42
+    if-ge v6, v4, :cond_59
 
+    .line 1953
     .line 1954
+    invoke-virtual {v1, v6}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
+
     .line 1955
     .line 1956
-    move-result-object v0
-
     .line 1957
-    invoke-static {v10}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+    move-result-object v7
 
     .line 1958
-    .line 1959
-    .line 1960
-    move-result-object v1
+    move-object v8, v7
 
+    .line 1959
+    check-cast v8, Landroidx/compose/foundation/lazy/grid/p;
+
+    .line 1960
     .line 1961
-    new-instance v3, Landroidx/compose/foundation/lazy/grid/LazyGridMeasureKt$measureLazyGrid$6;
+    iget v8, v8, Landroidx/compose/foundation/lazy/grid/p;->a:I
 
     .line 1962
     .line 1963
-    move-object/from16 v4, v50
+    move/from16 v9, p2
 
     .line 1964
     .line 1965
-    iget-object v4, v4, Landroidx/compose/foundation/lazy/grid/f0;->p:Landroidx/compose/runtime/j1;
+    if-gt v9, v8, :cond_58
 
     .line 1966
     .line 1967
-    invoke-direct {v3, v13, v4}, Landroidx/compose/foundation/lazy/grid/LazyGridMeasureKt$measureLazyGrid$6;-><init>(Ljava/util/List;Landroidx/compose/runtime/j1;)V
+    if-gt v8, v5, :cond_58
 
     .line 1968
     .line 1969
-    .line 1970
-    move-object/from16 v4, v56
+    invoke-virtual {v0, v7}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
+    .line 1970
     .line 1971
     .line 1972
-    invoke-interface {v4, v0, v1, v3}, Lzh/f;->invoke(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    :cond_58
+    add-int/lit8 v6, v6, 0x1
 
     .line 1973
     .line 1974
-    .line 1975
-    move-result-object v0
+    move/from16 p2, v9
 
+    .line 1975
     .line 1976
-    check-cast v0, Landroidx/compose/ui/layout/n0;
+    goto :goto_42
 
     .line 1977
-    .line 1978
-    invoke-interface/range {p3 .. p3}, Ljava/util/List;->isEmpty()Z
+    :cond_59
+    move-object/from16 v25, v0
 
+    .line 1978
     .line 1979
+    :goto_43
+    if-eqz v21, :cond_5a
+
     .line 1980
     .line 1981
-    move-result v1
+    sget-object v0, Landroidx/compose/foundation/gestures/Orientation;->Vertical:Landroidx/compose/foundation/gestures/Orientation;
 
     .line 1982
-    if-eqz v1, :cond_59
-
     .line 1983
+    :goto_44
+    move-object/from16 v29, v0
+
     .line 1984
-    invoke-interface {v9}, Ljava/util/List;->isEmpty()Z
-
     .line 1985
-    .line 1986
-    .line 1987
-    move-result v1
+    goto :goto_45
 
+    .line 1986
+    :cond_5a
+    sget-object v0, Landroidx/compose/foundation/gestures/Orientation;->Horizontal:Landroidx/compose/foundation/gestures/Orientation;
+
+    .line 1987
     .line 1988
-    if-eqz v1, :cond_59
+    goto :goto_44
 
     .line 1989
-    .line 1990
-    goto :goto_49
+    :goto_45
+    new-instance v0, Landroidx/compose/foundation/lazy/grid/o;
 
+    .line 1990
     .line 1991
-    :cond_59
-    new-instance v1, Ljava/util/ArrayList;
+    move-object/from16 v16, v0
 
     .line 1992
     .line 1993
-    invoke-virtual {v13}, Ljava/util/ArrayList;->size()I
+    move-object/from16 v17, v20
 
     .line 1994
     .line 1995
-    .line 1996
-    move-result v3
+    move/from16 v20, v2
 
+    .line 1996
     .line 1997
-    invoke-direct {v1, v3}, Ljava/util/ArrayList;-><init>(I)V
+    move-object/from16 v21, v3
 
     .line 1998
     .line 1999
-    .line 2000
-    invoke-virtual {v13}, Ljava/util/ArrayList;->size()I
+    move/from16 v22, v56
 
+    .line 2000
     .line 2001
+    move/from16 v23, v49
+
     .line 2002
     .line 2003
-    move-result v3
+    move-object/from16 v24, v47
 
     .line 2004
-    const/4 v9, 0x0
-
     .line 2005
-    :goto_48
-    if-ge v9, v3, :cond_5b
+    move/from16 v27, p3
 
     .line 2006
     .line 2007
-    invoke-virtual {v13, v9}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
+    move/from16 v28, v14
 
     .line 2008
     .line 2009
-    .line 2010
-    move-result-object v4
+    move/from16 v31, v46
 
+    .line 2010
     .line 2011
-    move-object v5, v4
+    invoke-direct/range {v16 .. v31}, Landroidx/compose/foundation/lazy/grid/o;-><init>(Landroidx/compose/foundation/lazy/grid/q;IZFLandroidx/compose/ui/layout/K;ZILka/c;Ljava/util/List;IIILandroidx/compose/foundation/gestures/Orientation;II)V
 
     .line 2012
-    check-cast v5, Landroidx/compose/foundation/lazy/grid/t;
-
     .line 2013
     .line 2014
-    iget v5, v5, Landroidx/compose/foundation/lazy/grid/t;->a:I
+    move-object/from16 v1, p0
 
     .line 2015
     .line 2016
-    move/from16 v6, p2
+    move-object v2, v0
 
     .line 2017
-    .line 2018
-    if-gt v6, v5, :cond_5a
+    :goto_46
+    iget-object v0, v1, Landroidx/compose/foundation/lazy/grid/LazyGridKt$rememberLazyGridMeasurePolicy$1$1;->$state:Landroidx/compose/foundation/lazy/grid/x;
 
+    .line 2018
     .line 2019
+    const/4 v3, 0x0
+
     .line 2020
-    if-gt v5, v15, :cond_5a
+    invoke-virtual {v0, v2, v3}, Landroidx/compose/foundation/lazy/grid/x;->f(Landroidx/compose/foundation/lazy/grid/o;Z)V
 
     .line 2021
     .line 2022
-    invoke-virtual {v1, v4}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
-
     .line 2023
+    return-object v2
+
     .line 2024
-    .line 2025
-    :cond_5a
-    add-int/lit8 v9, v9, 0x1
-
-    .line 2026
-    .line 2027
-    move/from16 p2, v6
-
-    .line 2028
-    .line 2029
-    goto :goto_48
-
-    .line 2030
     :cond_5b
-    move-object v13, v1
+    move-object/from16 v1, p0
+
+    .line 2025
+    .line 2026
+    new-instance v0, Ljava/lang/IllegalArgumentException;
+
+    .line 2027
+    .line 2028
+    const-string v2, "negative initial offset"
+
+    .line 2029
+    .line 2030
+    invoke-direct {v0, v2}, Ljava/lang/IllegalArgumentException;-><init>(Ljava/lang/String;)V
 
     .line 2031
-    :goto_49
-    if-eqz v21, :cond_5c
-
     .line 2032
     .line 2033
-    sget-object v1, Landroidx/compose/foundation/gestures/Orientation;->Vertical:Landroidx/compose/foundation/gestures/Orientation;
+    throw v0
 
     .line 2034
-    .line 2035
-    goto :goto_4a
-
-    .line 2036
     :cond_5c
-    sget-object v1, Landroidx/compose/foundation/gestures/Orientation;->Horizontal:Landroidx/compose/foundation/gestures/Orientation;
+    move-object/from16 v1, p0
+
+    .line 2035
+    .line 2036
+    new-instance v0, Ljava/lang/IllegalArgumentException;
 
     .line 2037
     .line 2038
-    :goto_4a
-    new-instance v3, Landroidx/compose/foundation/lazy/grid/s;
+    const-string v2, "negative afterContentPadding"
 
     .line 2039
     .line 2040
-    move-object/from16 v16, v3
+    invoke-direct {v0, v2}, Ljava/lang/IllegalArgumentException;-><init>(Ljava/lang/String;)V
 
     .line 2041
     .line 2042
-    move/from16 v18, v22
-
     .line 2043
+    throw v0
+
     .line 2044
-    move/from16 v20, v2
-
-    .line 2045
-    .line 2046
-    move-object/from16 v21, v0
-
-    .line 2047
-    .line 2048
-    move/from16 v22, v55
-
-    .line 2049
-    .line 2050
-    move/from16 v23, v25
-
-    .line 2051
-    .line 2052
-    move-object/from16 v24, v53
-
-    .line 2053
-    .line 2054
-    move-object/from16 v25, v13
-
-    .line 2055
-    .line 2056
-    move/from16 v26, v29
-
-    .line 2057
-    .line 2058
-    move/from16 v27, v47
-
-    .line 2059
-    .line 2060
-    move/from16 v28, v12
-
-    .line 2061
-    .line 2062
-    move-object/from16 v29, v1
-
-    .line 2063
-    .line 2064
-    move/from16 v31, v46
-
-    .line 2065
-    .line 2066
-    invoke-direct/range {v16 .. v31}, Landroidx/compose/foundation/lazy/grid/s;-><init>(Landroidx/compose/foundation/lazy/grid/v;IZFLandroidx/compose/ui/layout/n0;ZILzh/c;Ljava/util/List;IIILandroidx/compose/foundation/gestures/Orientation;II)V
-
-    .line 2067
-    .line 2068
-    .line 2069
-    goto/16 :goto_14
-
-    .line 2070
-    .line 2071
-    :goto_4b
-    iget-object v0, v1, Landroidx/compose/foundation/lazy/grid/LazyGridKt$rememberLazyGridMeasurePolicy$1$1;->$state:Landroidx/compose/foundation/lazy/grid/f0;
-
-    .line 2072
-    .line 2073
-    const/4 v2, 0x0
-
-    .line 2074
-    invoke-virtual {v0, v3, v2}, Landroidx/compose/foundation/lazy/grid/f0;->f(Landroidx/compose/foundation/lazy/grid/s;Z)V
-
-    .line 2075
-    .line 2076
-    .line 2077
-    return-object v3
-
-    .line 2078
     :cond_5d
     move-object/from16 v1, p0
 
-    .line 2079
-    .line 2080
+    .line 2045
+    .line 2046
     new-instance v0, Ljava/lang/IllegalArgumentException;
 
-    .line 2081
-    .line 2082
-    const-string v2, "negative initial offset"
-
-    .line 2083
-    .line 2084
-    invoke-virtual {v2}, Ljava/lang/Object;->toString()Ljava/lang/String;
-
-    .line 2085
-    .line 2086
-    .line 2087
-    move-result-object v2
-
-    .line 2088
-    invoke-direct {v0, v2}, Ljava/lang/IllegalArgumentException;-><init>(Ljava/lang/String;)V
-
-    .line 2089
-    .line 2090
-    .line 2091
-    throw v0
-
-    .line 2092
-    :cond_5e
-    move-object/from16 v1, p0
-
-    .line 2093
-    .line 2094
-    new-instance v0, Ljava/lang/IllegalArgumentException;
-
-    .line 2095
-    .line 2096
-    const-string v2, "negative afterContentPadding"
-
-    .line 2097
-    .line 2098
-    invoke-virtual {v2}, Ljava/lang/Object;->toString()Ljava/lang/String;
-
-    .line 2099
-    .line 2100
-    .line 2101
-    move-result-object v2
-
-    .line 2102
-    invoke-direct {v0, v2}, Ljava/lang/IllegalArgumentException;-><init>(Ljava/lang/String;)V
-
-    .line 2103
-    .line 2104
-    .line 2105
-    throw v0
-
-    .line 2106
-    :cond_5f
-    move-object/from16 v1, p0
-
-    .line 2107
-    .line 2108
-    new-instance v0, Ljava/lang/IllegalArgumentException;
-
-    .line 2109
-    .line 2110
+    .line 2047
+    .line 2048
     const-string v2, "negative beforeContentPadding"
 
-    .line 2111
-    .line 2112
-    invoke-virtual {v2}, Ljava/lang/Object;->toString()Ljava/lang/String;
-
-    .line 2113
-    .line 2114
-    .line 2115
-    move-result-object v2
-
-    .line 2116
+    .line 2049
+    .line 2050
     invoke-direct {v0, v2}, Ljava/lang/IllegalArgumentException;-><init>(Ljava/lang/String;)V
 
-    .line 2117
-    .line 2118
-    .line 2119
+    .line 2051
+    .line 2052
+    .line 2053
     throw v0
 
-    .line 2120
-    :goto_4c
-    invoke-static {v4, v6, v5}, Lxd/e;->y(Landroidx/compose/runtime/snapshots/h;Landroidx/compose/runtime/snapshots/h;Lzh/c;)V
+    .line 2054
+    :goto_47
+    invoke-static {v4, v6, v5}, Landroidx/compose/runtime/snapshots/o;->g(Landroidx/compose/runtime/snapshots/g;Landroidx/compose/runtime/snapshots/g;Lka/c;)V
 
-    .line 2121
-    .line 2122
-    .line 2123
+    .line 2055
+    .line 2056
+    .line 2057
     throw v0
 
-    .line 2124
-    :cond_60
+    .line 2058
+    :cond_5e
     new-instance v0, Ljava/lang/IllegalArgumentException;
 
-    .line 2125
-    .line 2126
+    .line 2059
+    .line 2060
     const-string v2, "null horizontalArrangement when isVertical == false"
 
-    .line 2127
-    .line 2128
-    invoke-virtual {v2}, Ljava/lang/Object;->toString()Ljava/lang/String;
-
-    .line 2129
-    .line 2130
-    .line 2131
-    move-result-object v2
-
-    .line 2132
+    .line 2061
+    .line 2062
     invoke-direct {v0, v2}, Ljava/lang/IllegalArgumentException;-><init>(Ljava/lang/String;)V
 
-    .line 2133
-    .line 2134
-    .line 2135
+    .line 2063
+    .line 2064
+    .line 2065
     throw v0
 .end method

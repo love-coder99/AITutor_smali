@@ -3,14 +3,24 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lzh/e;
+.implements Lka/e;
 
 
 # annotations
+.annotation runtime Lca/c;
+    c = "androidx.compose.animation.core.MutatorMutex$mutate$2"
+    f = "InternalMutatorMutex.kt"
+    l = {
+        0xb2,
+        0x7e
+    }
+    m = "invokeSuspend"
+.end annotation
+
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "Lkotlin/coroutines/jvm/internal/SuspendLambda;",
-        "Lzh/e;"
+        "Lka/e;"
     }
 .end annotation
 
@@ -20,7 +30,7 @@
     }
     d2 = {
         "R",
-        "Lkotlinx/coroutines/w;",
+        "Lkotlinx/coroutines/u;",
         "<anonymous>"
     }
     k = 0x3
@@ -31,22 +41,12 @@
     }
 .end annotation
 
-.annotation runtime Lth/c;
-    c = "androidx.compose.animation.core.MutatorMutex$mutate$2"
-    f = "InternalMutatorMutex.kt"
-    l = {
-        0xb2,
-        0x7e
-    }
-    m = "invokeSuspend"
-.end annotation
-
 
 # instance fields
-.field final synthetic $block:Lzh/c;
+.field final synthetic $block:Lka/c;
     .annotation system Ldalvik/annotation/Signature;
         value = {
-            "Lzh/c;"
+            "Lka/c;"
         }
     .end annotation
 .end field
@@ -63,18 +63,18 @@
 
 .field label:I
 
-.field final synthetic this$0:Landroidx/compose/animation/core/p0;
+.field final synthetic this$0:Landroidx/compose/animation/core/J;
 
 
 # direct methods
-.method public constructor <init>(Landroidx/compose/animation/core/MutatePriority;Landroidx/compose/animation/core/p0;Lzh/c;Lkotlin/coroutines/Continuation;)V
+.method public constructor <init>(Landroidx/compose/animation/core/MutatePriority;Landroidx/compose/animation/core/J;Lka/c;Lkotlin/coroutines/Continuation;)V
     .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
             "Landroidx/compose/animation/core/MutatePriority;",
-            "Landroidx/compose/animation/core/p0;",
-            "Lzh/c;",
+            "Landroidx/compose/animation/core/J;",
+            "Lka/c;",
             "Lkotlin/coroutines/Continuation<",
             "-",
             "Landroidx/compose/animation/core/MutatorMutex$mutate$2;",
@@ -85,14 +85,24 @@
     .line 1
     iput-object p1, p0, Landroidx/compose/animation/core/MutatorMutex$mutate$2;->$priority:Landroidx/compose/animation/core/MutatePriority;
 
-    iput-object p2, p0, Landroidx/compose/animation/core/MutatorMutex$mutate$2;->this$0:Landroidx/compose/animation/core/p0;
+    .line 2
+    .line 3
+    iput-object p2, p0, Landroidx/compose/animation/core/MutatorMutex$mutate$2;->this$0:Landroidx/compose/animation/core/J;
 
-    iput-object p3, p0, Landroidx/compose/animation/core/MutatorMutex$mutate$2;->$block:Lzh/c;
+    .line 4
+    .line 5
+    iput-object p3, p0, Landroidx/compose/animation/core/MutatorMutex$mutate$2;->$block:Lka/c;
 
+    .line 6
+    .line 7
     const/4 p1, 0x2
 
+    .line 8
     invoke-direct {p0, p1, p4}, Lkotlin/coroutines/jvm/internal/SuspendLambda;-><init>(ILkotlin/coroutines/Continuation;)V
 
+    .line 9
+    .line 10
+    .line 11
     return-void
 .end method
 
@@ -107,7 +117,7 @@
             "Lkotlin/coroutines/Continuation<",
             "*>;)",
             "Lkotlin/coroutines/Continuation<",
-            "Lqh/r;",
+            "LX9/j;",
             ">;"
         }
     .end annotation
@@ -116,11 +126,11 @@
 
     iget-object v1, p0, Landroidx/compose/animation/core/MutatorMutex$mutate$2;->$priority:Landroidx/compose/animation/core/MutatePriority;
 
-    iget-object v2, p0, Landroidx/compose/animation/core/MutatorMutex$mutate$2;->this$0:Landroidx/compose/animation/core/p0;
+    iget-object v2, p0, Landroidx/compose/animation/core/MutatorMutex$mutate$2;->this$0:Landroidx/compose/animation/core/J;
 
-    iget-object v3, p0, Landroidx/compose/animation/core/MutatorMutex$mutate$2;->$block:Lzh/c;
+    iget-object v3, p0, Landroidx/compose/animation/core/MutatorMutex$mutate$2;->$block:Lka/c;
 
-    invoke-direct {v0, v1, v2, v3, p2}, Landroidx/compose/animation/core/MutatorMutex$mutate$2;-><init>(Landroidx/compose/animation/core/MutatePriority;Landroidx/compose/animation/core/p0;Lzh/c;Lkotlin/coroutines/Continuation;)V
+    invoke-direct {v0, v1, v2, v3, p2}, Landroidx/compose/animation/core/MutatorMutex$mutate$2;-><init>(Landroidx/compose/animation/core/MutatePriority;Landroidx/compose/animation/core/J;Lka/c;Lkotlin/coroutines/Continuation;)V
 
     iput-object p1, v0, Landroidx/compose/animation/core/MutatorMutex$mutate$2;->L$0:Ljava/lang/Object;
 
@@ -131,23 +141,23 @@
     .locals 0
 
     .line 1
-    check-cast p1, Lkotlinx/coroutines/w;
+    check-cast p1, Lkotlinx/coroutines/u;
 
     check-cast p2, Lkotlin/coroutines/Continuation;
 
-    invoke-virtual {p0, p1, p2}, Landroidx/compose/animation/core/MutatorMutex$mutate$2;->invoke(Lkotlinx/coroutines/w;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
+    invoke-virtual {p0, p1, p2}, Landroidx/compose/animation/core/MutatorMutex$mutate$2;->invoke(Lkotlinx/coroutines/u;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
 
     move-result-object p1
 
     return-object p1
 .end method
 
-.method public final invoke(Lkotlinx/coroutines/w;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
+.method public final invoke(Lkotlinx/coroutines/u;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
     .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
-            "Lkotlinx/coroutines/w;",
+            "Lkotlinx/coroutines/u;",
             "Lkotlin/coroutines/Continuation<",
             "Ljava/lang/Object;",
             ">;)",
@@ -162,7 +172,7 @@
 
     check-cast p1, Landroidx/compose/animation/core/MutatorMutex$mutate$2;
 
-    sget-object p2, Lqh/r;->a:Lqh/r;
+    sget-object p2, LX9/j;->a:LX9/j;
 
     invoke-virtual {p1, p2}, Landroidx/compose/animation/core/MutatorMutex$mutate$2;->invokeSuspend(Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -208,7 +218,7 @@
 
     .line 15
     .line 16
-    check-cast v0, Landroidx/compose/animation/core/p0;
+    check-cast v0, Landroidx/compose/animation/core/J;
 
     .line 17
     .line 18
@@ -224,7 +234,7 @@
 
     .line 23
     .line 24
-    check-cast v2, Landroidx/compose/animation/core/o0;
+    check-cast v2, Landroidx/compose/animation/core/I;
 
     .line 25
     .line 26
@@ -270,7 +280,7 @@
 
     .line 43
     .line 44
-    check-cast v1, Landroidx/compose/animation/core/p0;
+    check-cast v1, Landroidx/compose/animation/core/J;
 
     .line 45
     .line 46
@@ -278,7 +288,7 @@
 
     .line 47
     .line 48
-    check-cast v3, Lzh/c;
+    check-cast v3, Lka/c;
 
     .line 49
     .line 50
@@ -294,7 +304,7 @@
 
     .line 55
     .line 56
-    check-cast v6, Landroidx/compose/animation/core/o0;
+    check-cast v6, Landroidx/compose/animation/core/I;
 
     .line 57
     .line 58
@@ -323,11 +333,11 @@
 
     .line 68
     .line 69
-    check-cast p1, Lkotlinx/coroutines/w;
+    check-cast p1, Lkotlinx/coroutines/u;
 
     .line 70
     .line 71
-    new-instance v1, Landroidx/compose/animation/core/o0;
+    new-instance v1, Landroidx/compose/animation/core/I;
 
     .line 72
     .line 73
@@ -335,7 +345,7 @@
 
     .line 74
     .line 75
-    invoke-interface {p1}, Lkotlinx/coroutines/w;->n()Lkotlin/coroutines/i;
+    invoke-interface {p1}, Lkotlinx/coroutines/u;->u()Lba/g;
 
     .line 76
     .line 77
@@ -343,11 +353,11 @@
     move-result-object p1
 
     .line 79
-    sget-object v6, Lkotlinx/coroutines/u;->c:Lkotlinx/coroutines/u;
+    sget-object v6, Lkotlinx/coroutines/s;->c:Lkotlinx/coroutines/s;
 
     .line 80
     .line 81
-    invoke-interface {p1, v6}, Lkotlin/coroutines/i;->get(Lkotlin/coroutines/h;)Lkotlin/coroutines/g;
+    invoke-interface {p1, v6}, Lba/g;->get(Lba/f;)Lba/e;
 
     .line 82
     .line 83
@@ -355,21 +365,21 @@
     move-result-object p1
 
     .line 85
-    check-cast p1, Lkotlinx/coroutines/z0;
+    check-cast p1, Lkotlinx/coroutines/a0;
 
     .line 86
     .line 87
-    invoke-direct {v1, v5, p1}, Landroidx/compose/animation/core/o0;-><init>(Landroidx/compose/animation/core/MutatePriority;Lkotlinx/coroutines/z0;)V
+    invoke-direct {v1, v5, p1}, Landroidx/compose/animation/core/I;-><init>(Landroidx/compose/animation/core/MutatePriority;Lkotlinx/coroutines/a0;)V
 
     .line 88
     .line 89
     .line 90
-    iget-object p1, p0, Landroidx/compose/animation/core/MutatorMutex$mutate$2;->this$0:Landroidx/compose/animation/core/p0;
+    iget-object p1, p0, Landroidx/compose/animation/core/MutatorMutex$mutate$2;->this$0:Landroidx/compose/animation/core/J;
 
     .line 91
     .line 92
     :goto_1
-    iget-object v5, p1, Landroidx/compose/animation/core/p0;->a:Ljava/util/concurrent/atomic/AtomicReference;
+    iget-object v5, p1, Landroidx/compose/animation/core/J;->a:Ljava/util/concurrent/atomic/AtomicReference;
 
     .line 93
     .line 94
@@ -381,7 +391,7 @@
     move-result-object v6
 
     .line 98
-    check-cast v6, Landroidx/compose/animation/core/o0;
+    check-cast v6, Landroidx/compose/animation/core/I;
 
     .line 99
     .line 100
@@ -389,11 +399,11 @@
 
     .line 101
     .line 102
-    iget-object v7, v1, Landroidx/compose/animation/core/o0;->a:Landroidx/compose/animation/core/MutatePriority;
+    iget-object v7, v1, Landroidx/compose/animation/core/I;->a:Landroidx/compose/animation/core/MutatePriority;
 
     .line 103
     .line 104
-    iget-object v8, v6, Landroidx/compose/animation/core/o0;->a:Landroidx/compose/animation/core/MutatePriority;
+    iget-object v8, v6, Landroidx/compose/animation/core/I;->a:Landroidx/compose/animation/core/MutatePriority;
 
     .line 105
     .line 106
@@ -456,25 +466,25 @@
     .line 132
     .line 133
     .line 134
-    iget-object v5, v6, Landroidx/compose/animation/core/o0;->b:Lkotlinx/coroutines/z0;
+    iget-object v5, v6, Landroidx/compose/animation/core/I;->b:Lkotlinx/coroutines/a0;
 
     .line 135
     .line 136
-    invoke-interface {v5, p1}, Lkotlinx/coroutines/z0;->a(Ljava/util/concurrent/CancellationException;)V
+    invoke-interface {v5, p1}, Lkotlinx/coroutines/a0;->b(Ljava/util/concurrent/CancellationException;)V
 
     .line 137
     .line 138
     .line 139
     :cond_5
-    iget-object p1, p0, Landroidx/compose/animation/core/MutatorMutex$mutate$2;->this$0:Landroidx/compose/animation/core/p0;
+    iget-object p1, p0, Landroidx/compose/animation/core/MutatorMutex$mutate$2;->this$0:Landroidx/compose/animation/core/J;
 
     .line 140
     .line 141
-    iget-object v5, p1, Landroidx/compose/animation/core/p0;->b:Lkotlinx/coroutines/sync/c;
+    iget-object v5, p1, Landroidx/compose/animation/core/J;->b:Lkotlinx/coroutines/sync/c;
 
     .line 142
     .line 143
-    iget-object v6, p0, Landroidx/compose/animation/core/MutatorMutex$mutate$2;->$block:Lzh/c;
+    iget-object v6, p0, Landroidx/compose/animation/core/MutatorMutex$mutate$2;->$block:Lka/c;
 
     .line 144
     .line 145
@@ -498,7 +508,7 @@
 
     .line 154
     .line 155
-    invoke-virtual {v5, v4, p0}, Lkotlinx/coroutines/sync/c;->d(Ljava/lang/Object;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
+    invoke-virtual {v5, v4, p0}, Lkotlinx/coroutines/sync/c;->b(Ljava/lang/Object;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
 
     .line 156
     .line 157
@@ -545,7 +555,7 @@
 
     .line 174
     .line 175
-    invoke-interface {v3, p0}, Lzh/c;->invoke(Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-interface {v3, p0}, Lka/c;->invoke(Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 176
     .line 177
@@ -574,7 +584,7 @@
     .line 185
     :goto_4
     :try_start_2
-    iget-object v0, v0, Landroidx/compose/animation/core/p0;->a:Ljava/util/concurrent/atomic/AtomicReference;
+    iget-object v0, v0, Landroidx/compose/animation/core/J;->a:Ljava/util/concurrent/atomic/AtomicReference;
 
     .line 186
     .line 187
@@ -610,102 +620,94 @@
     .line 199
     .line 200
     :goto_5
-    check-cast v1, Lkotlinx/coroutines/sync/c;
+    invoke-interface {v1, v4}, Lkotlinx/coroutines/sync/a;->d(Ljava/lang/Object;)V
 
     .line 201
     .line 202
-    invoke-virtual {v1, v4}, Lkotlinx/coroutines/sync/c;->f(Ljava/lang/Object;)V
-
     .line 203
-    .line 204
-    .line 205
     return-object p1
 
-    .line 206
+    .line 204
     :catchall_1
     move-exception v0
 
-    .line 207
+    .line 205
     move-object v2, v6
 
-    .line 208
+    .line 206
     move-object v9, v0
 
-    .line 209
+    .line 207
     move-object v0, p1
 
-    .line 210
+    .line 208
     move-object p1, v9
 
-    .line 211
+    .line 209
     :goto_6
     :try_start_3
-    iget-object v0, v0, Landroidx/compose/animation/core/p0;->a:Ljava/util/concurrent/atomic/AtomicReference;
+    iget-object v0, v0, Landroidx/compose/animation/core/J;->a:Ljava/util/concurrent/atomic/AtomicReference;
 
-    .line 212
-    .line 213
+    .line 210
+    .line 211
     :goto_7
     invoke-virtual {v0, v2, v4}, Ljava/util/concurrent/atomic/AtomicReference;->compareAndSet(Ljava/lang/Object;Ljava/lang/Object;)Z
 
+    .line 212
+    .line 213
     .line 214
-    .line 215
-    .line 216
     move-result v3
 
-    .line 217
+    .line 215
     if-nez v3, :cond_a
+
+    .line 216
+    .line 217
+    invoke-virtual {v0}, Ljava/util/concurrent/atomic/AtomicReference;->get()Ljava/lang/Object;
 
     .line 218
     .line 219
-    invoke-virtual {v0}, Ljava/util/concurrent/atomic/AtomicReference;->get()Ljava/lang/Object;
-
     .line 220
-    .line 221
-    .line 222
     move-result-object v3
 
-    .line 223
+    .line 221
     if-ne v3, v2, :cond_a
 
-    .line 224
-    .line 225
+    .line 222
+    .line 223
     goto :goto_7
 
-    .line 226
+    .line 224
     :cond_a
     throw p1
     :try_end_3
     .catchall {:try_start_3 .. :try_end_3} :catchall_2
 
-    .line 227
+    .line 225
     :catchall_2
     move-exception p1
 
-    .line 228
-    check-cast v1, Lkotlinx/coroutines/sync/c;
+    .line 226
+    invoke-interface {v1, v4}, Lkotlinx/coroutines/sync/a;->d(Ljava/lang/Object;)V
 
+    .line 227
+    .line 228
     .line 229
+    throw p1
+
     .line 230
-    invoke-virtual {v1, v4}, Lkotlinx/coroutines/sync/c;->f(Ljava/lang/Object;)V
+    :cond_b
+    invoke-virtual {v5}, Ljava/util/concurrent/atomic/AtomicReference;->get()Ljava/lang/Object;
 
     .line 231
     .line 232
     .line 233
-    throw p1
+    move-result-object v7
 
     .line 234
-    :cond_b
-    invoke-virtual {v5}, Ljava/util/concurrent/atomic/AtomicReference;->get()Ljava/lang/Object;
+    if-eq v7, v6, :cond_4
 
     .line 235
     .line 236
-    .line 237
-    move-result-object v7
-
-    .line 238
-    if-eq v7, v6, :cond_4
-
-    .line 239
-    .line 240
     goto/16 :goto_1
 .end method

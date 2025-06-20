@@ -4,7 +4,7 @@
 
 
 # instance fields
-.field public final a:Lzh/c;
+.field public final a:Lka/c;
 
 .field public final b:Landroidx/compose/foundation/text/input/internal/m;
 
@@ -22,15 +22,15 @@
 
 .field public i:Z
 
-.field public j:Landroidx/compose/ui/text/input/h0;
+.field public j:Landroidx/compose/ui/text/input/C;
 
-.field public k:Landroidx/compose/ui/text/f0;
+.field public k:Landroidx/compose/ui/text/F;
 
-.field public l:Landroidx/compose/ui/text/input/a0;
+.field public l:Landroidx/compose/ui/text/input/w;
 
-.field public m:Ln1/e;
+.field public m:Lr0/d;
 
-.field public n:Ln1/e;
+.field public n:Lr0/d;
 
 .field public final o:Landroid/view/inputmethod/CursorAnchorInfo$Builder;
 
@@ -40,7 +40,7 @@
 
 
 # direct methods
-.method public constructor <init>(Lzh/c;Landroidx/compose/foundation/text/input/internal/m;)V
+.method public constructor <init>(Lka/c;Landroidx/compose/foundation/text/input/internal/m;)V
     .locals 0
 
     .line 1
@@ -49,7 +49,7 @@
     .line 2
     .line 3
     .line 4
-    iput-object p1, p0, Landroidx/compose/foundation/text/input/internal/q;->a:Lzh/c;
+    iput-object p1, p0, Landroidx/compose/foundation/text/input/internal/q;->a:Lka/c;
 
     .line 5
     .line 6
@@ -83,58 +83,32 @@
 
     .line 21
     .line 22
-    const/16 p1, 0x10
+    invoke-static {}, Landroidx/compose/ui/graphics/M;->a()[F
 
     .line 23
     .line 24
-    new-array p1, p1, [F
-
     .line 25
+    move-result-object p1
+
     .line 26
-    fill-array-data p1, :array_0
+    iput-object p1, p0, Landroidx/compose/foundation/text/input/internal/q;->p:[F
 
     .line 27
     .line 28
-    .line 29
-    iput-object p1, p0, Landroidx/compose/foundation/text/input/internal/q;->p:[F
-
-    .line 30
-    .line 31
     new-instance p1, Landroid/graphics/Matrix;
 
+    .line 29
+    .line 30
+    invoke-direct {p1}, Landroid/graphics/Matrix;-><init>()V
+
+    .line 31
     .line 32
     .line 33
-    invoke-direct {p1}, Landroid/graphics/Matrix;-><init>()V
+    iput-object p1, p0, Landroidx/compose/foundation/text/input/internal/q;->q:Landroid/graphics/Matrix;
 
     .line 34
     .line 35
-    .line 36
-    iput-object p1, p0, Landroidx/compose/foundation/text/input/internal/q;->q:Landroid/graphics/Matrix;
-
-    .line 37
-    .line 38
     return-void
-
-    .line 39
-    :array_0
-    .array-data 4
-        0x3f800000    # 1.0f
-        0x0
-        0x0
-        0x0
-        0x0
-        0x3f800000    # 1.0f
-        0x0
-        0x0
-        0x0
-        0x0
-        0x3f800000    # 1.0f
-        0x0
-        0x0
-        0x0
-        0x0
-        0x3f800000    # 1.0f
-    .end array-data
 .end method
 
 
@@ -179,7 +153,7 @@
 
     .line 18
     .line 19
-    iget-object v2, v0, Landroidx/compose/foundation/text/input/internal/q;->j:Landroidx/compose/ui/text/input/h0;
+    iget-object v2, v0, Landroidx/compose/foundation/text/input/internal/q;->j:Landroidx/compose/ui/text/input/C;
 
     .line 20
     .line 21
@@ -187,7 +161,7 @@
 
     .line 22
     .line 23
-    iget-object v2, v0, Landroidx/compose/foundation/text/input/internal/q;->l:Landroidx/compose/ui/text/input/a0;
+    iget-object v2, v0, Landroidx/compose/foundation/text/input/internal/q;->l:Landroidx/compose/ui/text/input/w;
 
     .line 24
     .line 25
@@ -195,7 +169,7 @@
 
     .line 26
     .line 27
-    iget-object v2, v0, Landroidx/compose/foundation/text/input/internal/q;->k:Landroidx/compose/ui/text/f0;
+    iget-object v2, v0, Landroidx/compose/foundation/text/input/internal/q;->k:Landroidx/compose/ui/text/F;
 
     .line 28
     .line 29
@@ -203,7 +177,7 @@
 
     .line 30
     .line 31
-    iget-object v2, v0, Landroidx/compose/foundation/text/input/internal/q;->m:Ln1/e;
+    iget-object v2, v0, Landroidx/compose/foundation/text/input/internal/q;->m:Lr0/d;
 
     .line 32
     .line 33
@@ -211,7 +185,7 @@
 
     .line 34
     .line 35
-    iget-object v2, v0, Landroidx/compose/foundation/text/input/internal/q;->n:Ln1/e;
+    iget-object v2, v0, Landroidx/compose/foundation/text/input/internal/q;->n:Lr0/d;
 
     .line 36
     .line 37
@@ -228,41 +202,41 @@
 
     .line 42
     .line 43
-    invoke-static {v2}, Landroidx/compose/ui/graphics/l0;->c([F)V
+    invoke-static {v2}, Landroidx/compose/ui/graphics/M;->d([F)V
 
     .line 44
     .line 45
     .line 46
-    new-instance v3, Landroidx/compose/ui/graphics/l0;
+    new-instance v3, Landroidx/compose/ui/graphics/M;
 
     .line 47
     .line 48
-    invoke-direct {v3, v2}, Landroidx/compose/ui/graphics/l0;-><init>([F)V
+    invoke-direct {v3, v2}, Landroidx/compose/ui/graphics/M;-><init>([F)V
 
     .line 49
     .line 50
     .line 51
-    iget-object v4, v0, Landroidx/compose/foundation/text/input/internal/q;->a:Lzh/c;
+    iget-object v4, v0, Landroidx/compose/foundation/text/input/internal/q;->a:Lka/c;
 
     .line 52
     .line 53
-    invoke-interface {v4, v3}, Lzh/c;->invoke(Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-interface {v4, v3}, Lka/c;->invoke(Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 54
     .line 55
     .line 56
-    iget-object v3, v0, Landroidx/compose/foundation/text/input/internal/q;->n:Ln1/e;
+    iget-object v3, v0, Landroidx/compose/foundation/text/input/internal/q;->n:Lr0/d;
 
     .line 57
     .line 58
-    iget v4, v3, Ln1/e;->a:F
+    iget v4, v3, Lr0/d;->a:F
 
     .line 59
     .line 60
     neg-float v4, v4
 
     .line 61
-    iget v3, v3, Ln1/e;->b:F
+    iget v3, v3, Lr0/d;->b:F
 
     .line 62
     .line 63
@@ -272,7 +246,7 @@
     const/4 v5, 0x0
 
     .line 65
-    invoke-static {v4, v3, v5, v2}, Landroidx/compose/ui/graphics/l0;->g(FFF[F)V
+    invoke-static {v4, v3, v5, v2}, Landroidx/compose/ui/graphics/M;->h(FFF[F)V
 
     .line 66
     .line 67
@@ -281,28 +255,28 @@
 
     .line 69
     .line 70
-    invoke-static {v3, v2}, Landroidx/compose/ui/graphics/f0;->z(Landroid/graphics/Matrix;[F)V
+    invoke-static {v3, v2}, Landroidx/compose/ui/graphics/G;->z(Landroid/graphics/Matrix;[F)V
 
     .line 71
     .line 72
     .line 73
-    iget-object v2, v0, Landroidx/compose/foundation/text/input/internal/q;->j:Landroidx/compose/ui/text/input/h0;
+    iget-object v2, v0, Landroidx/compose/foundation/text/input/internal/q;->j:Landroidx/compose/ui/text/input/C;
 
     .line 74
     .line 75
-    iget-object v4, v0, Landroidx/compose/foundation/text/input/internal/q;->l:Landroidx/compose/ui/text/input/a0;
+    iget-object v4, v0, Landroidx/compose/foundation/text/input/internal/q;->l:Landroidx/compose/ui/text/input/w;
 
     .line 76
     .line 77
-    iget-object v6, v0, Landroidx/compose/foundation/text/input/internal/q;->k:Landroidx/compose/ui/text/f0;
+    iget-object v6, v0, Landroidx/compose/foundation/text/input/internal/q;->k:Landroidx/compose/ui/text/F;
 
     .line 78
     .line 79
-    iget-object v7, v0, Landroidx/compose/foundation/text/input/internal/q;->m:Ln1/e;
+    iget-object v7, v0, Landroidx/compose/foundation/text/input/internal/q;->m:Lr0/d;
 
     .line 80
     .line 81
-    iget-object v8, v0, Landroidx/compose/foundation/text/input/internal/q;->n:Ln1/e;
+    iget-object v8, v0, Landroidx/compose/foundation/text/input/internal/q;->n:Lr0/d;
 
     .line 82
     .line 83
@@ -336,11 +310,11 @@
     .line 97
     .line 98
     .line 99
-    iget-wide v13, v2, Landroidx/compose/ui/text/input/h0;->b:J
+    iget-wide v13, v2, Landroidx/compose/ui/text/input/C;->b:J
 
     .line 100
     .line 101
-    invoke-static {v13, v14}, Landroidx/compose/ui/text/h0;->e(J)I
+    invoke-static {v13, v14}, Landroidx/compose/ui/text/H;->e(J)I
 
     .line 102
     .line 103
@@ -348,7 +322,7 @@
     move-result v3
 
     .line 105
-    invoke-static {v13, v14}, Landroidx/compose/ui/text/h0;->d(J)I
+    invoke-static {v13, v14}, Landroidx/compose/ui/text/H;->d(J)I
 
     .line 106
     .line 107
@@ -377,7 +351,7 @@
 
     .line 119
     :cond_1
-    invoke-interface {v4, v3}, Landroidx/compose/ui/text/input/a0;->c(I)I
+    invoke-interface {v4, v3}, Landroidx/compose/ui/text/input/w;->b(I)I
 
     .line 120
     .line 121
@@ -385,7 +359,7 @@
     move-result v3
 
     .line 123
-    invoke-virtual {v6, v3}, Landroidx/compose/ui/text/f0;->c(I)Ln1/e;
+    invoke-virtual {v6, v3}, Landroidx/compose/ui/text/F;->c(I)Lr0/d;
 
     .line 124
     .line 125
@@ -401,7 +375,7 @@
 
     .line 130
     .line 131
-    iget-wide v14, v6, Landroidx/compose/ui/text/f0;->c:J
+    iget-wide v14, v6, Landroidx/compose/ui/text/F;->c:J
 
     .line 132
     .line 133
@@ -415,11 +389,11 @@
     int-to-float v13, v14
 
     .line 137
-    iget v14, v9, Ln1/e;->a:F
+    iget v14, v9, Lr0/d;->a:F
 
     .line 138
     .line 139
-    invoke-static {v14, v5, v13}, Lma/a;->p(FFF)F
+    invoke-static {v14, v5, v13}, Landroid/support/v4/media/session/a;->i(FFF)F
 
     .line 140
     .line 141
@@ -427,11 +401,11 @@
     move-result v14
 
     .line 143
-    iget v5, v9, Ln1/e;->b:F
+    iget v5, v9, Lr0/d;->b:F
 
     .line 144
     .line 145
-    invoke-static {v7, v14, v5}, Landroidx/compose/foundation/text/input/internal/p;->d(Ln1/e;FF)Z
+    invoke-static {v7, v14, v5}, Landroidx/compose/foundation/text/input/internal/p;->d(Lr0/d;FF)Z
 
     .line 146
     .line 147
@@ -439,11 +413,11 @@
     move-result v5
 
     .line 149
-    iget v13, v9, Ln1/e;->d:F
+    iget v13, v9, Lr0/d;->d:F
 
     .line 150
     .line 151
-    invoke-static {v7, v14, v13}, Landroidx/compose/foundation/text/input/internal/p;->d(Ln1/e;FF)Z
+    invoke-static {v7, v14, v13}, Landroidx/compose/foundation/text/input/internal/p;->d(Lr0/d;FF)Z
 
     .line 152
     .line 153
@@ -451,7 +425,7 @@
     move-result v13
 
     .line 155
-    invoke-virtual {v6, v3}, Landroidx/compose/ui/text/f0;->a(I)Landroidx/compose/ui/text/style/ResolvedTextDirection;
+    invoke-virtual {v6, v3}, Landroidx/compose/ui/text/F;->a(I)Landroidx/compose/ui/text/style/ResolvedTextDirection;
 
     .line 156
     .line 157
@@ -537,11 +511,11 @@
     .line 188
     .line 189
     :goto_3
-    iget v15, v9, Ln1/e;->b:F
+    iget v15, v9, Lr0/d;->b:F
 
     .line 190
     .line 191
-    iget v3, v9, Ln1/e;->d:F
+    iget v3, v9, Lr0/d;->d:F
 
     .line 192
     .line 193
@@ -588,7 +562,7 @@
     const/4 v3, -0x1
 
     .line 211
-    iget-object v10, v2, Landroidx/compose/ui/text/input/h0;->c:Landroidx/compose/ui/text/h0;
+    iget-object v10, v2, Landroidx/compose/ui/text/input/C;->c:Landroidx/compose/ui/text/H;
 
     .line 212
     .line 213
@@ -596,11 +570,11 @@
 
     .line 214
     .line 215
-    iget-wide v13, v10, Landroidx/compose/ui/text/h0;->a:J
+    iget-wide v13, v10, Landroidx/compose/ui/text/H;->a:J
 
     .line 216
     .line 217
-    invoke-static {v13, v14}, Landroidx/compose/ui/text/h0;->e(J)I
+    invoke-static {v13, v14}, Landroidx/compose/ui/text/H;->e(J)I
 
     .line 218
     .line 219
@@ -620,11 +594,11 @@
 
     .line 224
     .line 225
-    iget-wide v14, v10, Landroidx/compose/ui/text/h0;->a:J
+    iget-wide v14, v10, Landroidx/compose/ui/text/H;->a:J
 
     .line 226
     .line 227
-    invoke-static {v14, v15}, Landroidx/compose/ui/text/h0;->d(J)I
+    invoke-static {v14, v15}, Landroidx/compose/ui/text/H;->d(J)I
 
     .line 228
     .line 229
@@ -641,11 +615,11 @@
 
     .line 234
     .line 235
-    iget-object v2, v2, Landroidx/compose/ui/text/input/h0;->a:Landroidx/compose/ui/text/f;
+    iget-object v2, v2, Landroidx/compose/ui/text/input/C;->a:Landroidx/compose/ui/text/g;
 
     .line 236
     .line 237
-    iget-object v2, v2, Landroidx/compose/ui/text/f;->b:Ljava/lang/String;
+    iget-object v2, v2, Landroidx/compose/ui/text/g;->b:Ljava/lang/String;
 
     .line 238
     .line 239
@@ -662,7 +636,7 @@
     .line 244
     .line 245
     .line 246
-    invoke-interface {v4, v13}, Landroidx/compose/ui/text/input/a0;->c(I)I
+    invoke-interface {v4, v13}, Landroidx/compose/ui/text/input/w;->b(I)I
 
     .line 247
     .line 248
@@ -670,7 +644,7 @@
     move-result v2
 
     .line 250
-    invoke-interface {v4, v3}, Landroidx/compose/ui/text/input/a0;->c(I)I
+    invoke-interface {v4, v3}, Landroidx/compose/ui/text/input/w;->b(I)I
 
     .line 251
     .line 252
@@ -694,7 +668,7 @@
 
     .line 261
     .line 262
-    invoke-static {v2, v10}, Lh5/f;->a(II)J
+    invoke-static {v2, v10}, Landroidx/compose/ui/text/K;->b(II)J
 
     .line 263
     .line 264
@@ -702,11 +676,11 @@
     move-result-wide v13
 
     .line 266
-    iget-object v10, v6, Landroidx/compose/ui/text/f0;->b:Landroidx/compose/ui/text/l;
+    iget-object v10, v6, Landroidx/compose/ui/text/F;->b:Landroidx/compose/ui/text/m;
 
     .line 267
     .line 268
-    invoke-virtual {v10, v13, v14, v15}, Landroidx/compose/ui/text/l;->a(J[F)V
+    invoke-virtual {v10, v13, v14, v15}, Landroidx/compose/ui/text/m;->a(J[F)V
 
     .line 269
     .line 270
@@ -720,7 +694,7 @@
 
     .line 274
     .line 275
-    invoke-interface {v4, v10}, Landroidx/compose/ui/text/input/a0;->c(I)I
+    invoke-interface {v4, v10}, Landroidx/compose/ui/text/input/w;->b(I)I
 
     .line 276
     .line 277
@@ -776,7 +750,7 @@
 
     .line 302
     .line 303
-    iget v4, v7, Ln1/e;->c:F
+    iget v4, v7, Lr0/d;->c:F
 
     .line 304
     .line 305
@@ -788,7 +762,7 @@
 
     .line 308
     .line 309
-    iget v4, v7, Ln1/e;->a:F
+    iget v4, v7, Lr0/d;->a:F
 
     .line 310
     .line 311
@@ -804,7 +778,7 @@
 
     .line 316
     :cond_b
-    iget v4, v7, Ln1/e;->d:F
+    iget v4, v7, Lr0/d;->d:F
 
     .line 317
     .line 318
@@ -816,7 +790,7 @@
 
     .line 321
     .line 322
-    iget v4, v7, Ln1/e;->b:F
+    iget v4, v7, Lr0/d;->b:F
 
     .line 323
     .line 324
@@ -844,7 +818,7 @@
 
     .line 332
     :goto_9
-    invoke-static {v7, v5, v2}, Landroidx/compose/foundation/text/input/internal/p;->d(Ln1/e;FF)Z
+    invoke-static {v7, v5, v2}, Landroidx/compose/foundation/text/input/internal/p;->d(Lr0/d;FF)Z
 
     .line 333
     .line 334
@@ -856,7 +830,7 @@
 
     .line 337
     .line 338
-    invoke-static {v7, v3, v14}, Landroidx/compose/foundation/text/input/internal/p;->d(Ln1/e;FF)Z
+    invoke-static {v7, v3, v14}, Landroidx/compose/foundation/text/input/internal/p;->d(Lr0/d;FF)Z
 
     .line 339
     .line 340
@@ -874,7 +848,7 @@
     .line 345
     .line 346
     :cond_f
-    invoke-virtual {v6, v13}, Landroidx/compose/ui/text/f0;->a(I)Landroidx/compose/ui/text/style/ResolvedTextDirection;
+    invoke-virtual {v6, v13}, Landroidx/compose/ui/text/F;->a(I)Landroidx/compose/ui/text/style/ResolvedTextDirection;
 
     .line 347
     .line 348
@@ -980,7 +954,7 @@
 
     .line 395
     .line 396
-    invoke-static {v9, v8}, Landroidx/compose/foundation/text/input/internal/e;->a(Landroid/view/inputmethod/CursorAnchorInfo$Builder;Ln1/e;)Landroid/view/inputmethod/CursorAnchorInfo$Builder;
+    invoke-static {v9, v8}, Landroidx/compose/foundation/text/input/internal/e;->a(Landroid/view/inputmethod/CursorAnchorInfo$Builder;Lr0/d;)Landroid/view/inputmethod/CursorAnchorInfo$Builder;
 
     .line 397
     .line 398
@@ -998,7 +972,7 @@
 
     .line 404
     .line 405
-    invoke-static {v9, v6, v7}, Landroidx/compose/foundation/text/input/internal/f;->a(Landroid/view/inputmethod/CursorAnchorInfo$Builder;Landroidx/compose/ui/text/f0;Ln1/e;)Landroid/view/inputmethod/CursorAnchorInfo$Builder;
+    invoke-static {v9, v6, v7}, Landroidx/compose/foundation/text/input/internal/f;->a(Landroid/view/inputmethod/CursorAnchorInfo$Builder;Landroidx/compose/ui/text/F;Lr0/d;)Landroid/view/inputmethod/CursorAnchorInfo$Builder;
 
     .line 406
     .line 407

@@ -3,7 +3,7 @@
 .source "SourceFile"
 
 # interfaces
-.implements Landroidx/lifecycle/v;
+.implements Landroidx/lifecycle/w;
 
 
 # instance fields
@@ -17,7 +17,7 @@
 
 
 # direct methods
-.method public constructor <init>(Landroidx/lifecycle/p;Lcom/applovin/impl/sb;Lcom/applovin/impl/sdk/j;)V
+.method public constructor <init>(Landroidx/lifecycle/r;Lcom/applovin/impl/sb;Lcom/applovin/impl/sdk/j;)V
     .locals 2
 
     .line 1
@@ -50,7 +50,7 @@
 
     .line 15
     .line 16
-    invoke-virtual {p1, p0}, Landroidx/lifecycle/p;->a(Landroidx/lifecycle/v;)V
+    invoke-virtual {p1, p0}, Landroidx/lifecycle/r;->a(Landroidx/lifecycle/w;)V
 
     .line 17
     .line 18
@@ -62,7 +62,7 @@
 # virtual methods
 .method public onDestroy()V
     .locals 2
-    .annotation runtime Landroidx/lifecycle/k0;
+    .annotation runtime Landroidx/lifecycle/L;
         value = .enum Landroidx/lifecycle/Lifecycle$Event;->ON_DESTROY:Landroidx/lifecycle/Lifecycle$Event;
     .end annotation
 
@@ -120,7 +120,7 @@
 
 .method public onPause()V
     .locals 1
-    .annotation runtime Landroidx/lifecycle/k0;
+    .annotation runtime Landroidx/lifecycle/L;
         value = .enum Landroidx/lifecycle/Lifecycle$Event;->ON_PAUSE:Landroidx/lifecycle/Lifecycle$Event;
     .end annotation
 
@@ -153,7 +153,7 @@
 
 .method public onResume()V
     .locals 3
-    .annotation runtime Landroidx/lifecycle/k0;
+    .annotation runtime Landroidx/lifecycle/L;
         value = .enum Landroidx/lifecycle/Lifecycle$Event;->ON_RESUME:Landroidx/lifecycle/Lifecycle$Event;
     .end annotation
 
@@ -213,7 +213,7 @@
 
 .method public onStop()V
     .locals 1
-    .annotation runtime Landroidx/lifecycle/k0;
+    .annotation runtime Landroidx/lifecycle/L;
         value = .enum Landroidx/lifecycle/Lifecycle$Event;->ON_STOP:Landroidx/lifecycle/Lifecycle$Event;
     .end annotation
 
@@ -238,7 +238,10 @@
 .method public setPresenter(Lcom/applovin/impl/o9;)V
     .locals 0
 
+    .line 1
     iput-object p1, p0, Lcom/applovin/adview/AppLovinFullscreenAdViewObserver;->c:Lcom/applovin/impl/o9;
 
+    .line 2
+    .line 3
     return-void
 .end method

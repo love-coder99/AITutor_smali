@@ -128,6 +128,7 @@
 .method public onAnimationEnd(Landroid/animation/Animator;Z)V
     .locals 3
 
+    .line 2
     iget-boolean p1, p0, Landroidx/transition/ChangeBounds$ClipListener;->mIsCanceled:Z
 
     if-eqz p1, :cond_0
@@ -139,6 +140,7 @@
 
     if-eqz p2, :cond_2
 
+    .line 3
     iget-boolean v0, p0, Landroidx/transition/ChangeBounds$ClipListener;->mStartClipIsNull:Z
 
     if-eqz v0, :cond_1
@@ -150,6 +152,7 @@
 
     goto :goto_0
 
+    .line 4
     :cond_2
     iget-boolean v0, p0, Landroidx/transition/ChangeBounds$ClipListener;->mEndClipIsNull:Z
 
@@ -160,14 +163,15 @@
     :cond_3
     iget-object p1, p0, Landroidx/transition/ChangeBounds$ClipListener;->mEndClip:Landroid/graphics/Rect;
 
+    .line 5
     :goto_0
     iget-object v0, p0, Landroidx/transition/ChangeBounds$ClipListener;->mView:Landroid/view/View;
 
-    .line 2
     invoke-virtual {v0, p1}, Landroid/view/View;->setClipBounds(Landroid/graphics/Rect;)V
 
     if-eqz p2, :cond_4
 
+    .line 6
     iget-object p1, p0, Landroidx/transition/ChangeBounds$ClipListener;->mView:Landroid/view/View;
 
     iget p2, p0, Landroidx/transition/ChangeBounds$ClipListener;->mStartLeft:I
@@ -178,11 +182,11 @@
 
     iget v2, p0, Landroidx/transition/ChangeBounds$ClipListener;->mStartBottom:I
 
-    .line 3
     invoke-static {p1, p2, v0, v1, v2}, Landroidx/transition/ViewUtils;->setLeftTopRightBottom(Landroid/view/View;IIII)V
 
     goto :goto_1
 
+    .line 7
     :cond_4
     iget-object p1, p0, Landroidx/transition/ChangeBounds$ClipListener;->mView:Landroid/view/View;
 
@@ -194,7 +198,6 @@
 
     iget v2, p0, Landroidx/transition/ChangeBounds$ClipListener;->mEndBottom:I
 
-    .line 4
     invoke-static {p1, p2, v0, v1, v2}, Landroidx/transition/ViewUtils;->setLeftTopRightBottom(Landroid/view/View;IIII)V
 
     :goto_1
@@ -215,6 +218,7 @@
 .method public onAnimationStart(Landroid/animation/Animator;Z)V
     .locals 4
 
+    .line 2
     iget p1, p0, Landroidx/transition/ChangeBounds$ClipListener;->mStartRight:I
 
     iget v0, p0, Landroidx/transition/ChangeBounds$ClipListener;->mStartLeft:I
@@ -227,11 +231,11 @@
 
     sub-int/2addr v0, v1
 
-    .line 2
     invoke-static {p1, v0}, Ljava/lang/Math;->max(II)I
 
     move-result p1
 
+    .line 3
     iget v0, p0, Landroidx/transition/ChangeBounds$ClipListener;->mStartBottom:I
 
     iget v1, p0, Landroidx/transition/ChangeBounds$ClipListener;->mStartTop:I
@@ -244,13 +248,13 @@
 
     sub-int/2addr v1, v2
 
-    .line 3
     invoke-static {v0, v1}, Ljava/lang/Math;->max(II)I
 
     move-result v0
 
     if-eqz p2, :cond_0
 
+    .line 4
     iget v1, p0, Landroidx/transition/ChangeBounds$ClipListener;->mEndLeft:I
 
     goto :goto_0
@@ -261,6 +265,7 @@
     :goto_0
     if-eqz p2, :cond_1
 
+    .line 5
     iget v2, p0, Landroidx/transition/ChangeBounds$ClipListener;->mEndTop:I
 
     goto :goto_1
@@ -268,6 +273,7 @@
     :cond_1
     iget v2, p0, Landroidx/transition/ChangeBounds$ClipListener;->mStartTop:I
 
+    .line 6
     :goto_1
     iget-object v3, p0, Landroidx/transition/ChangeBounds$ClipListener;->mView:Landroid/view/View;
 
@@ -275,11 +281,11 @@
 
     add-int/2addr v0, v2
 
-    .line 4
     invoke-static {v3, v1, v2, p1, v0}, Landroidx/transition/ViewUtils;->setLeftTopRightBottom(Landroid/view/View;IIII)V
 
     if-eqz p2, :cond_2
 
+    .line 7
     iget-object p1, p0, Landroidx/transition/ChangeBounds$ClipListener;->mEndClip:Landroid/graphics/Rect;
 
     goto :goto_2
@@ -287,10 +293,10 @@
     :cond_2
     iget-object p1, p0, Landroidx/transition/ChangeBounds$ClipListener;->mStartClip:Landroid/graphics/Rect;
 
+    .line 8
     :goto_2
     iget-object p2, p0, Landroidx/transition/ChangeBounds$ClipListener;->mView:Landroid/view/View;
 
-    .line 5
     invoke-virtual {p2, p1}, Landroid/view/View;->setClipBounds(Landroid/graphics/Rect;)V
 
     return-void
@@ -298,16 +304,28 @@
 
 .method public onTransitionCancel(Landroidx/transition/Transition;)V
     .locals 0
+    .param p1    # Landroidx/transition/Transition;
+        .annotation build Landroidx/annotation/NonNull;
+        .end annotation
+    .end param
 
+    .line 1
     const/4 p1, 0x1
 
+    .line 2
     iput-boolean p1, p0, Landroidx/transition/ChangeBounds$ClipListener;->mIsCanceled:Z
 
+    .line 3
+    .line 4
     return-void
 .end method
 
 .method public onTransitionEnd(Landroidx/transition/Transition;)V
     .locals 0
+    .param p1    # Landroidx/transition/Transition;
+        .annotation build Landroidx/annotation/NonNull;
+        .end annotation
+    .end param
 
     .line 1
     return-void
@@ -317,13 +335,17 @@
     .locals 0
 
     .line 2
-    invoke-static {p0, p1, p2}, Landroidx/transition/c;->a(Landroidx/transition/Transition$TransitionListener;Landroidx/transition/Transition;Z)V
+    invoke-static {p0, p1, p2}, Landroidx/transition/b;->a(Landroidx/transition/Transition$TransitionListener;Landroidx/transition/Transition;Z)V
 
     return-void
 .end method
 
 .method public onTransitionPause(Landroidx/transition/Transition;)V
     .locals 2
+    .param p1    # Landroidx/transition/Transition;
+        .annotation build Landroidx/annotation/NonNull;
+        .end annotation
+    .end param
 
     .line 1
     iget-object p1, p0, Landroidx/transition/ChangeBounds$ClipListener;->mView:Landroid/view/View;
@@ -385,6 +407,10 @@
 
 .method public onTransitionResume(Landroidx/transition/Transition;)V
     .locals 3
+    .param p1    # Landroidx/transition/Transition;
+        .annotation build Landroidx/annotation/NonNull;
+        .end annotation
+    .end param
 
     .line 1
     iget-object p1, p0, Landroidx/transition/ChangeBounds$ClipListener;->mView:Landroid/view/View;
@@ -437,6 +463,10 @@
 
 .method public onTransitionStart(Landroidx/transition/Transition;)V
     .locals 0
+    .param p1    # Landroidx/transition/Transition;
+        .annotation build Landroidx/annotation/NonNull;
+        .end annotation
+    .end param
 
     .line 1
     return-void
@@ -446,7 +476,7 @@
     .locals 0
 
     .line 2
-    invoke-static {p0, p1, p2}, Landroidx/transition/c;->b(Landroidx/transition/Transition$TransitionListener;Landroidx/transition/Transition;Z)V
+    invoke-static {p0, p1, p2}, Landroidx/transition/b;->b(Landroidx/transition/Transition$TransitionListener;Landroidx/transition/Transition;Z)V
 
     return-void
 .end method

@@ -1,628 +1,321 @@
-.class public final Landroidx/camera/video/f;
+.class public final synthetic Landroidx/camera/video/f;
 .super Ljava/lang/Object;
 .source "SourceFile"
 
 
 # instance fields
-.field public final a:Ljava/util/concurrent/Executor;
+.field public final synthetic a:Landroidx/camera/video/g;
 
-.field public final b:Ljava/util/concurrent/Executor;
+.field public final synthetic b:Landroidx/concurrent/futures/h;
 
-.field public final c:Lcom/google/android/material/internal/i;
-
-.field public d:Landroidx/camera/video/internal/encoder/e;
-
-.field public e:Landroid/view/Surface;
-
-.field public f:Ly/x1;
-
-.field public g:Ljava/util/concurrent/Executor;
-
-.field public h:Ls0/h;
-
-.field public i:Landroidx/camera/video/VideoEncoderSession$VideoEncoderState;
-
-.field public j:Lcom/google/common/util/concurrent/c;
-
-.field public k:Landroidx/concurrent/futures/h;
-
-.field public l:Lcom/google/common/util/concurrent/c;
-
-.field public m:Landroidx/concurrent/futures/h;
+.field public final synthetic c:LB/q0;
 
 
 # direct methods
-.method public constructor <init>(Lcom/google/android/material/internal/i;Landroidx/camera/core/impl/utils/executor/b;Ljava/util/concurrent/Executor;)V
-    .locals 4
+.method public synthetic constructor <init>(Landroidx/camera/video/g;Landroidx/concurrent/futures/h;LB/q0;)V
+    .locals 0
 
     .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 2
-    .line 3
-    .line 4
-    const/4 v0, 0x0
+    iput-object p1, p0, Landroidx/camera/video/f;->a:Landroidx/camera/video/g;
 
-    .line 5
-    iput-object v0, p0, Landroidx/camera/video/f;->d:Landroidx/camera/video/internal/encoder/e;
+    iput-object p2, p0, Landroidx/camera/video/f;->b:Landroidx/concurrent/futures/h;
 
-    .line 6
-    .line 7
-    iput-object v0, p0, Landroidx/camera/video/f;->e:Landroid/view/Surface;
+    iput-object p3, p0, Landroidx/camera/video/f;->c:LB/q0;
 
-    .line 8
-    .line 9
-    iput-object v0, p0, Landroidx/camera/video/f;->f:Ly/x1;
-
-    .line 10
-    .line 11
-    iput-object v0, p0, Landroidx/camera/video/f;->g:Ljava/util/concurrent/Executor;
-
-    .line 12
-    .line 13
-    iput-object v0, p0, Landroidx/camera/video/f;->h:Ls0/h;
-
-    .line 14
-    .line 15
-    sget-object v1, Landroidx/camera/video/VideoEncoderSession$VideoEncoderState;->NOT_INITIALIZED:Landroidx/camera/video/VideoEncoderSession$VideoEncoderState;
-
-    .line 16
-    .line 17
-    iput-object v1, p0, Landroidx/camera/video/f;->i:Landroidx/camera/video/VideoEncoderSession$VideoEncoderState;
-
-    .line 18
-    .line 19
-    new-instance v1, Ljava/lang/IllegalStateException;
-
-    .line 20
-    .line 21
-    const-string v2, "Cannot close the encoder before configuring."
-
-    .line 22
-    .line 23
-    invoke-direct {v1, v2}, Ljava/lang/IllegalStateException;-><init>(Ljava/lang/String;)V
-
-    .line 24
-    .line 25
-    .line 26
-    new-instance v3, Lc0/m;
-
-    .line 27
-    .line 28
-    invoke-direct {v3, v1}, Lc0/m;-><init>(Ljava/lang/Throwable;)V
-
-    .line 29
-    .line 30
-    .line 31
-    iput-object v3, p0, Landroidx/camera/video/f;->j:Lcom/google/common/util/concurrent/c;
-
-    .line 32
-    .line 33
-    iput-object v0, p0, Landroidx/camera/video/f;->k:Landroidx/concurrent/futures/h;
-
-    .line 34
-    .line 35
-    new-instance v1, Ljava/lang/IllegalStateException;
-
-    .line 36
-    .line 37
-    invoke-direct {v1, v2}, Ljava/lang/IllegalStateException;-><init>(Ljava/lang/String;)V
-
-    .line 38
-    .line 39
-    .line 40
-    new-instance v2, Lc0/m;
-
-    .line 41
-    .line 42
-    invoke-direct {v2, v1}, Lc0/m;-><init>(Ljava/lang/Throwable;)V
-
-    .line 43
-    .line 44
-    .line 45
-    iput-object v2, p0, Landroidx/camera/video/f;->l:Lcom/google/common/util/concurrent/c;
-
-    .line 46
-    .line 47
-    iput-object v0, p0, Landroidx/camera/video/f;->m:Landroidx/concurrent/futures/h;
-
-    .line 48
-    .line 49
-    iput-object p3, p0, Landroidx/camera/video/f;->a:Ljava/util/concurrent/Executor;
-
-    .line 50
-    .line 51
-    iput-object p2, p0, Landroidx/camera/video/f;->b:Ljava/util/concurrent/Executor;
-
-    .line 52
-    .line 53
-    iput-object p1, p0, Landroidx/camera/video/f;->c:Lcom/google/android/material/internal/i;
-
-    .line 54
-    .line 55
     return-void
 .end method
 
 
 # virtual methods
-.method public final a()V
-    .locals 3
+.method public final a(Landroid/view/Surface;)V
+    .locals 6
 
     .line 1
-    iget-object v0, p0, Landroidx/camera/video/f;->i:Landroidx/camera/video/VideoEncoderSession$VideoEncoderState;
+    iget-object v0, p0, Landroidx/camera/video/f;->a:Landroidx/camera/video/g;
 
     .line 2
     .line 3
-    invoke-virtual {v0}, Ljava/lang/Enum;->ordinal()I
+    iget-object v1, v0, Landroidx/camera/video/g;->i:Landroidx/camera/video/VideoEncoderSession$VideoEncoderState;
 
     .line 4
     .line 5
+    invoke-virtual {v1}, Ljava/lang/Enum;->ordinal()I
+
     .line 6
-    move-result v0
-
     .line 7
-    if-eqz v0, :cond_2
-
     .line 8
+    move-result v1
+
     .line 9
-    const/4 v1, 0x1
+    iget-object v2, p0, Landroidx/camera/video/f;->b:Landroidx/concurrent/futures/h;
 
     .line 10
-    if-eq v0, v1, :cond_2
-
     .line 11
+    const/4 v3, 0x0
+
     .line 12
-    const/4 v1, 0x2
+    const-string v4, "VideoEncoderSession"
 
     .line 13
-    const-string v2, "VideoEncoderSession"
-
     .line 14
-    .line 15
-    if-eq v0, v1, :cond_1
+    if-eqz v1, :cond_5
 
+    .line 15
     .line 16
+    const/4 v5, 0x1
+
     .line 17
-    const/4 v1, 0x3
+    if-eq v1, v5, :cond_3
 
     .line 18
-    if-eq v0, v1, :cond_1
-
     .line 19
+    const/4 v5, 0x2
+
     .line 20
-    const/4 v1, 0x4
+    if-eq v1, v5, :cond_5
 
     .line 21
-    if-ne v0, v1, :cond_0
-
     .line 22
+    const/4 v5, 0x3
+
     .line 23
-    invoke-static {v2}, Lcom/facebook/appevents/g;->i(Ljava/lang/String;)Ljava/lang/String;
+    if-eq v1, v5, :cond_1
 
     .line 24
     .line 25
+    const/4 p1, 0x4
+
     .line 26
-    goto :goto_0
+    if-ne v1, p1, :cond_0
 
     .line 27
-    :cond_0
-    new-instance v0, Ljava/lang/IllegalStateException;
-
     .line 28
+    goto :goto_0
+
     .line 29
-    new-instance v1, Ljava/lang/StringBuilder;
+    :cond_0
+    new-instance p1, Ljava/lang/IllegalStateException;
 
     .line 30
     .line 31
-    const-string v2, "State "
+    new-instance v1, Ljava/lang/StringBuilder;
 
     .line 32
     .line 33
-    invoke-direct {v1, v2}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+    const-string v2, "State "
 
     .line 34
     .line 35
-    .line 36
-    iget-object v2, p0, Landroidx/camera/video/f;->i:Landroidx/camera/video/VideoEncoderSession$VideoEncoderState;
+    invoke-direct {v1, v2}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
 
+    .line 36
     .line 37
     .line 38
-    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+    iget-object v0, v0, Landroidx/camera/video/g;->i:Landroidx/camera/video/VideoEncoderSession$VideoEncoderState;
 
     .line 39
     .line 40
-    .line 41
-    const-string v2, " is not handled"
+    invoke-virtual {v1, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 
+    .line 41
     .line 42
     .line 43
-    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    const-string v0, " is not handled"
 
     .line 44
     .line 45
+    invoke-virtual {v1, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
     .line 46
+    .line 47
+    .line 48
     invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    .line 47
-    .line 48
-    .line 49
-    move-result-object v1
-
-    .line 50
-    invoke-direct {v0, v1}, Ljava/lang/IllegalStateException;-><init>(Ljava/lang/String;)V
-
-    .line 51
-    .line 52
-    .line 53
-    throw v0
-
-    .line 54
-    :cond_1
-    iget-object v0, p0, Landroidx/camera/video/f;->i:Landroidx/camera/video/VideoEncoderSession$VideoEncoderState;
-
-    .line 55
-    .line 56
-    invoke-static {v0}, Ljava/util/Objects;->toString(Ljava/lang/Object;)Ljava/lang/String;
-
-    .line 57
-    .line 58
-    .line 59
-    invoke-static {v2}, Lcom/facebook/appevents/g;->i(Ljava/lang/String;)Ljava/lang/String;
-
-    .line 60
-    .line 61
-    .line 62
-    sget-object v0, Landroidx/camera/video/VideoEncoderSession$VideoEncoderState;->PENDING_RELEASE:Landroidx/camera/video/VideoEncoderSession$VideoEncoderState;
-
-    .line 63
-    .line 64
-    iput-object v0, p0, Landroidx/camera/video/f;->i:Landroidx/camera/video/VideoEncoderSession$VideoEncoderState;
-
-    .line 65
-    .line 66
-    goto :goto_0
-
-    .line 67
-    :cond_2
-    invoke-virtual {p0}, Landroidx/camera/video/f;->b()V
-
-    .line 68
-    .line 69
-    .line 70
-    :goto_0
-    return-void
-.end method
-
-.method public final b()V
-    .locals 4
-
-    .line 1
-    iget-object v0, p0, Landroidx/camera/video/f;->i:Landroidx/camera/video/VideoEncoderSession$VideoEncoderState;
-
-    .line 2
-    .line 3
-    invoke-virtual {v0}, Ljava/lang/Enum;->ordinal()I
-
-    .line 4
-    .line 5
-    .line 6
-    move-result v0
-
-    .line 7
-    if-eqz v0, :cond_3
-
-    .line 8
-    .line 9
-    const/4 v1, 0x2
-
-    .line 10
-    const/4 v2, 0x1
-
-    .line 11
-    const-string v3, "VideoEncoderSession"
-
-    .line 12
-    .line 13
-    if-eq v0, v2, :cond_1
-
-    .line 14
-    .line 15
-    if-eq v0, v1, :cond_1
-
-    .line 16
-    .line 17
-    const/4 v2, 0x3
-
-    .line 18
-    if-eq v0, v2, :cond_1
-
-    .line 19
-    .line 20
-    const/4 v1, 0x4
-
-    .line 21
-    if-ne v0, v1, :cond_0
-
-    .line 22
-    .line 23
-    iget-object v0, p0, Landroidx/camera/video/f;->i:Landroidx/camera/video/VideoEncoderSession$VideoEncoderState;
-
-    .line 24
-    .line 25
-    invoke-static {v0}, Ljava/util/Objects;->toString(Ljava/lang/Object;)Ljava/lang/String;
-
-    .line 26
-    .line 27
-    .line 28
-    invoke-static {v3}, Lcom/facebook/appevents/g;->i(Ljava/lang/String;)Ljava/lang/String;
-
-    .line 29
-    .line 30
-    .line 31
-    return-void
-
-    .line 32
-    :cond_0
-    new-instance v0, Ljava/lang/IllegalStateException;
-
-    .line 33
-    .line 34
-    new-instance v1, Ljava/lang/StringBuilder;
-
-    .line 35
-    .line 36
-    const-string v2, "State "
-
-    .line 37
-    .line 38
-    invoke-direct {v1, v2}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
-
-    .line 39
-    .line 40
-    .line 41
-    iget-object v2, p0, Landroidx/camera/video/f;->i:Landroidx/camera/video/VideoEncoderSession$VideoEncoderState;
-
-    .line 42
-    .line 43
-    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
-
-    .line 44
-    .line 45
-    .line 46
-    const-string v2, " is not handled"
-
-    .line 47
-    .line 48
-    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     .line 49
     .line 50
     .line 51
-    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    move-result-object v0
 
     .line 52
+    invoke-direct {p1, v0}, Ljava/lang/IllegalStateException;-><init>(Ljava/lang/String;)V
+
     .line 53
     .line 54
-    move-result-object v1
-
     .line 55
-    invoke-direct {v0, v1}, Ljava/lang/IllegalStateException;-><init>(Ljava/lang/String;)V
+    throw p1
 
     .line 56
+    :cond_1
+    iget-object v1, v0, Landroidx/camera/video/g;->h:LR/j;
+
     .line 57
     .line 58
-    throw v0
+    if-eqz v1, :cond_2
 
     .line 59
-    :cond_1
-    sget-object v0, Landroidx/camera/video/VideoEncoderSession$VideoEncoderState;->RELEASED:Landroidx/camera/video/VideoEncoderSession$VideoEncoderState;
-
     .line 60
+    iget-object v1, v0, Landroidx/camera/video/g;->g:Landroidx/camera/core/impl/utils/executor/b;
+
     .line 61
-    iput-object v0, p0, Landroidx/camera/video/f;->i:Landroidx/camera/video/VideoEncoderSession$VideoEncoderState;
-
     .line 62
+    if-eqz v1, :cond_2
+
     .line 63
-    iget-object v0, p0, Landroidx/camera/video/f;->m:Landroidx/concurrent/futures/h;
-
     .line 64
-    .line 65
-    iget-object v2, p0, Landroidx/camera/video/f;->d:Landroidx/camera/video/internal/encoder/e;
+    new-instance v2, LR/o;
 
+    .line 65
     .line 66
+    const/4 v3, 0x2
+
     .line 67
-    invoke-virtual {v0, v2}, Landroidx/concurrent/futures/h;->b(Ljava/lang/Object;)Z
+    invoke-direct {v2, v0, v3, p1}, LR/o;-><init>(Ljava/lang/Object;ILjava/lang/Object;)V
 
     .line 68
     .line 69
     .line 70
-    const/4 v0, 0x0
+    invoke-virtual {v1, v2}, Landroidx/camera/core/impl/utils/executor/b;->execute(Ljava/lang/Runnable;)V
 
     .line 71
-    iput-object v0, p0, Landroidx/camera/video/f;->f:Ly/x1;
-
     .line 72
     .line 73
-    iget-object v2, p0, Landroidx/camera/video/f;->d:Landroidx/camera/video/internal/encoder/e;
+    :cond_2
+    invoke-static {p1}, Ljava/util/Objects;->toString(Ljava/lang/Object;)Ljava/lang/String;
 
     .line 74
     .line 75
-    if-eqz v2, :cond_2
-
     .line 76
-    .line 77
-    invoke-static {v2}, Ljava/util/Objects;->toString(Ljava/lang/Object;)Ljava/lang/String;
+    invoke-static {v4}, Landroidx/work/B;->k(Ljava/lang/String;)Ljava/lang/String;
 
+    .line 77
     .line 78
     .line 79
+    goto :goto_1
+
     .line 80
-    invoke-static {v3}, Lcom/facebook/appevents/g;->i(Ljava/lang/String;)Ljava/lang/String;
+    :cond_3
+    iget-object v1, p0, Landroidx/camera/video/f;->c:LB/q0;
 
     .line 81
     .line 82
-    .line 83
-    iget-object v2, p0, Landroidx/camera/video/f;->d:Landroidx/camera/video/internal/encoder/e;
+    invoke-virtual {v1}, LB/q0;->a()Z
 
+    .line 83
     .line 84
     .line 85
-    invoke-virtual {v2}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+    move-result v5
 
     .line 86
+    if-eqz v5, :cond_4
+
     .line 87
     .line 88
-    new-instance v3, Landroidx/camera/video/internal/encoder/a;
+    const-string p1, "EMPTY"
 
     .line 89
     .line 90
-    invoke-direct {v3, v2, v1}, Landroidx/camera/video/internal/encoder/a;-><init>(Landroidx/camera/video/internal/encoder/e;I)V
+    invoke-static {v1, p1}, Ljava/util/Objects;->toString(Ljava/lang/Object;Ljava/lang/String;)Ljava/lang/String;
 
     .line 91
     .line 92
     .line 93
-    iget-object v1, v2, Landroidx/camera/video/internal/encoder/e;->h:Landroidx/camera/core/impl/utils/executor/b;
+    invoke-static {v4}, Landroidx/work/B;->k(Ljava/lang/String;)Ljava/lang/String;
 
     .line 94
     .line 95
-    invoke-virtual {v1, v3}, Landroidx/camera/core/impl/utils/executor/b;->execute(Ljava/lang/Runnable;)V
-
     .line 96
+    invoke-virtual {v2, v3}, Landroidx/concurrent/futures/h;->b(Ljava/lang/Object;)Z
+
     .line 97
     .line 98
-    iget-object v1, p0, Landroidx/camera/video/f;->d:Landroidx/camera/video/internal/encoder/e;
-
     .line 99
-    .line 100
-    iget-object v1, v1, Landroidx/camera/video/internal/encoder/e;->i:Lcom/google/common/util/concurrent/c;
+    invoke-virtual {v0}, Landroidx/camera/video/g;->a()V
 
+    .line 100
     .line 101
     .line 102
-    new-instance v2, Landroidx/camera/camera2/internal/b;
+    goto :goto_1
 
     .line 103
+    :cond_4
+    iput-object p1, v0, Landroidx/camera/video/g;->e:Landroid/view/Surface;
+
     .line 104
-    const/16 v3, 0x18
-
     .line 105
-    .line 106
-    invoke-direct {v2, p0, v3}, Landroidx/camera/camera2/internal/b;-><init>(Ljava/lang/Object;I)V
+    invoke-static {p1}, Ljava/util/Objects;->toString(Ljava/lang/Object;)Ljava/lang/String;
 
+    .line 106
     .line 107
     .line 108
-    .line 109
-    iget-object v3, p0, Landroidx/camera/video/f;->b:Ljava/util/concurrent/Executor;
+    invoke-static {v4}, Landroidx/work/B;->k(Ljava/lang/String;)Ljava/lang/String;
 
+    .line 109
     .line 110
     .line 111
-    invoke-interface {v1, v2, v3}, Lcom/google/common/util/concurrent/c;->a(Ljava/lang/Runnable;Ljava/util/concurrent/Executor;)V
+    new-instance v3, LM/r;
 
     .line 112
     .line 113
+    const/4 v4, 0x1
+
     .line 114
-    iput-object v0, p0, Landroidx/camera/video/f;->d:Landroidx/camera/video/internal/encoder/e;
+    invoke-direct {v3, v0, v4}, LM/r;-><init>(Ljava/lang/Object;I)V
 
     .line 115
     .line 116
-    goto :goto_0
-
     .line 117
-    :cond_2
-    invoke-static {v3}, Lcom/facebook/appevents/g;->i(Ljava/lang/String;)Ljava/lang/String;
+    iget-object v4, v0, Landroidx/camera/video/g;->b:Landroidx/camera/core/impl/utils/executor/b;
 
     .line 118
     .line 119
-    .line 120
-    iget-object v1, p0, Landroidx/camera/video/f;->k:Landroidx/concurrent/futures/h;
+    invoke-virtual {v1, p1, v4, v3}, LB/q0;->b(Landroid/view/Surface;Ljava/util/concurrent/Executor;Lu1/a;)V
 
+    .line 120
     .line 121
     .line 122
-    invoke-virtual {v1, v0}, Landroidx/concurrent/futures/h;->b(Ljava/lang/Object;)Z
+    sget-object p1, Landroidx/camera/video/VideoEncoderSession$VideoEncoderState;->READY:Landroidx/camera/video/VideoEncoderSession$VideoEncoderState;
 
     .line 123
     .line 124
-    .line 125
-    :goto_0
-    return-void
+    iput-object p1, v0, Landroidx/camera/video/g;->i:Landroidx/camera/video/VideoEncoderSession$VideoEncoderState;
 
+    .line 125
     .line 126
-    :cond_3
-    sget-object v0, Landroidx/camera/video/VideoEncoderSession$VideoEncoderState;->RELEASED:Landroidx/camera/video/VideoEncoderSession$VideoEncoderState;
+    iget-object p1, v0, Landroidx/camera/video/g;->d:Landroidx/camera/video/internal/encoder/e;
 
     .line 127
     .line 128
-    iput-object v0, p0, Landroidx/camera/video/f;->i:Landroidx/camera/video/VideoEncoderSession$VideoEncoderState;
+    invoke-virtual {v2, p1}, Landroidx/concurrent/futures/h;->b(Ljava/lang/Object;)Z
 
     .line 129
     .line 130
+    .line 131
+    goto :goto_1
+
+    .line 132
+    :cond_5
+    :goto_0
+    iget-object p1, v0, Landroidx/camera/video/g;->i:Landroidx/camera/video/VideoEncoderSession$VideoEncoderState;
+
+    .line 133
+    .line 134
+    invoke-static {p1}, Ljava/util/Objects;->toString(Ljava/lang/Object;)Ljava/lang/String;
+
+    .line 135
+    .line 136
+    .line 137
+    invoke-static {v4}, Landroidx/work/B;->k(Ljava/lang/String;)Ljava/lang/String;
+
+    .line 138
+    .line 139
+    .line 140
+    invoke-virtual {v2, v3}, Landroidx/concurrent/futures/h;->b(Ljava/lang/Object;)Z
+
+    .line 141
+    .line 142
+    .line 143
+    :goto_1
     return-void
-.end method
-
-.method public final toString()Ljava/lang/String;
-    .locals 3
-
-    .line 1
-    new-instance v0, Ljava/lang/StringBuilder;
-
-    .line 2
-    .line 3
-    const-string v1, "VideoEncoderSession@"
-
-    .line 4
-    .line 5
-    invoke-direct {v0, v1}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
-
-    .line 6
-    .line 7
-    .line 8
-    invoke-virtual {p0}, Ljava/lang/Object;->hashCode()I
-
-    .line 9
-    .line 10
-    .line 11
-    move-result v1
-
-    .line 12
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
-
-    .line 13
-    .line 14
-    .line 15
-    const-string v1, " for "
-
-    .line 16
-    .line 17
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    .line 18
-    .line 19
-    .line 20
-    iget-object v1, p0, Landroidx/camera/video/f;->f:Ly/x1;
-
-    .line 21
-    .line 22
-    const-string v2, "SURFACE_REQUEST_NOT_CONFIGURED"
-
-    .line 23
-    .line 24
-    invoke-static {v1, v2}, Ljava/util/Objects;->toString(Ljava/lang/Object;Ljava/lang/String;)Ljava/lang/String;
-
-    .line 25
-    .line 26
-    .line 27
-    move-result-object v1
-
-    .line 28
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    .line 29
-    .line 30
-    .line 31
-    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    .line 32
-    .line 33
-    .line 34
-    move-result-object v0
-
-    .line 35
-    return-object v0
 .end method

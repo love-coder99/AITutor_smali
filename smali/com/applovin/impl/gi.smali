@@ -49,19 +49,19 @@
 
     .line 17
     .line 18
-    const-wide/16 v5, 0x0
+    const-wide/16 v13, 0xbc
 
     .line 19
     .line 20
-    const-wide/16 v9, 0x0
+    const/16 v15, 0x3e8
 
     .line 21
     .line 22
-    const-wide/16 v13, 0xbc
+    const-wide/16 v5, 0x0
 
     .line 23
     .line 24
-    const/16 v15, 0x3e8
+    const-wide/16 v9, 0x0
 
     .line 25
     .line 26

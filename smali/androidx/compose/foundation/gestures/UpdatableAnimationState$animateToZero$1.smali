@@ -4,6 +4,16 @@
 
 
 # annotations
+.annotation runtime Lca/c;
+    c = "androidx.compose.foundation.gestures.UpdatableAnimationState"
+    f = "UpdatableAnimationState.kt"
+    l = {
+        0x65,
+        0x93
+    }
+    m = "animateToZero"
+.end annotation
+
 .annotation runtime Lkotlin/Metadata;
     k = 0x3
     mv = {
@@ -12,16 +22,6 @@
         0x0
     }
     xi = 0x30
-.end annotation
-
-.annotation runtime Lth/c;
-    c = "androidx.compose.foundation.gestures.UpdatableAnimationState"
-    f = "UpdatableAnimationState.kt"
-    l = {
-        0x65,
-        0x93
-    }
-    m = "animateToZero"
 .end annotation
 
 
@@ -38,16 +38,16 @@
 
 .field synthetic result:Ljava/lang/Object;
 
-.field final synthetic this$0:Landroidx/compose/foundation/gestures/q0;
+.field final synthetic this$0:Landroidx/compose/foundation/gestures/T;
 
 
 # direct methods
-.method public constructor <init>(Landroidx/compose/foundation/gestures/q0;Lkotlin/coroutines/Continuation;)V
+.method public constructor <init>(Landroidx/compose/foundation/gestures/T;Lkotlin/coroutines/Continuation;)V
     .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
-            "Landroidx/compose/foundation/gestures/q0;",
+            "Landroidx/compose/foundation/gestures/T;",
             "Lkotlin/coroutines/Continuation<",
             "-",
             "Landroidx/compose/foundation/gestures/UpdatableAnimationState$animateToZero$1;",
@@ -55,7 +55,7 @@
         }
     .end annotation
 
-    iput-object p1, p0, Landroidx/compose/foundation/gestures/UpdatableAnimationState$animateToZero$1;->this$0:Landroidx/compose/foundation/gestures/q0;
+    iput-object p1, p0, Landroidx/compose/foundation/gestures/UpdatableAnimationState$animateToZero$1;->this$0:Landroidx/compose/foundation/gestures/T;
 
     invoke-direct {p0, p2}, Lkotlin/coroutines/jvm/internal/ContinuationImpl;-><init>(Lkotlin/coroutines/Continuation;)V
 
@@ -77,11 +77,11 @@
 
     iput p1, p0, Landroidx/compose/foundation/gestures/UpdatableAnimationState$animateToZero$1;->label:I
 
-    iget-object p1, p0, Landroidx/compose/foundation/gestures/UpdatableAnimationState$animateToZero$1;->this$0:Landroidx/compose/foundation/gestures/q0;
+    iget-object p1, p0, Landroidx/compose/foundation/gestures/UpdatableAnimationState$animateToZero$1;->this$0:Landroidx/compose/foundation/gestures/T;
 
     const/4 v0, 0x0
 
-    invoke-virtual {p1, v0, v0, p0}, Landroidx/compose/foundation/gestures/q0;->a(Lzh/c;Lzh/a;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
+    invoke-virtual {p1, v0, v0, p0}, Landroidx/compose/foundation/gestures/T;->a(Lka/c;Lka/a;Lkotlin/coroutines/jvm/internal/ContinuationImpl;)Ljava/lang/Object;
 
     move-result-object p1
 

@@ -3,14 +3,14 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lzh/c;
+.implements Lka/c;
 
 
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "Lkotlin/jvm/internal/Lambda;",
-        "Lzh/c;"
+        "Lka/c;"
     }
 .end annotation
 
@@ -21,7 +21,7 @@
     d2 = {
         "Landroid/content/res/Configuration;",
         "it",
-        "Lqh/r;",
+        "LX9/j;",
         "invoke",
         "(Landroid/content/res/Configuration;)V",
         "<anonymous>"
@@ -36,27 +36,27 @@
 
 
 # instance fields
-.field final synthetic $configuration$delegate:Landroidx/compose/runtime/j1;
+.field final synthetic $configuration$delegate:Landroidx/compose/runtime/Z;
     .annotation system Ldalvik/annotation/Signature;
         value = {
-            "Landroidx/compose/runtime/j1;"
+            "Landroidx/compose/runtime/Z;"
         }
     .end annotation
 .end field
 
 
 # direct methods
-.method public constructor <init>(Landroidx/compose/runtime/j1;)V
+.method public constructor <init>(Landroidx/compose/runtime/Z;)V
     .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
-            "Landroidx/compose/runtime/j1;",
+            "Landroidx/compose/runtime/Z;",
             ")V"
         }
     .end annotation
 
-    iput-object p1, p0, Landroidx/compose/ui/platform/AndroidCompositionLocals_androidKt$ProvideAndroidCompositionLocals$1$1;->$configuration$delegate:Landroidx/compose/runtime/j1;
+    iput-object p1, p0, Landroidx/compose/ui/platform/AndroidCompositionLocals_androidKt$ProvideAndroidCompositionLocals$1$1;->$configuration$delegate:Landroidx/compose/runtime/Z;
 
     const/4 p1, 0x1
 
@@ -75,7 +75,7 @@
 
     invoke-virtual {p0, p1}, Landroidx/compose/ui/platform/AndroidCompositionLocals_androidKt$ProvideAndroidCompositionLocals$1$1;->invoke(Landroid/content/res/Configuration;)V
 
-    sget-object p1, Lqh/r;->a:Lqh/r;
+    sget-object p1, LX9/j;->a:LX9/j;
 
     return-object p1
 .end method
@@ -83,17 +83,17 @@
 .method public final invoke(Landroid/content/res/Configuration;)V
     .locals 2
 
-    iget-object v0, p0, Landroidx/compose/ui/platform/AndroidCompositionLocals_androidKt$ProvideAndroidCompositionLocals$1$1;->$configuration$delegate:Landroidx/compose/runtime/j1;
-
     .line 2
+    iget-object v0, p0, Landroidx/compose/ui/platform/AndroidCompositionLocals_androidKt$ProvideAndroidCompositionLocals$1$1;->$configuration$delegate:Landroidx/compose/runtime/Z;
+
     new-instance v1, Landroid/content/res/Configuration;
 
     invoke-direct {v1, p1}, Landroid/content/res/Configuration;-><init>(Landroid/content/res/Configuration;)V
 
-    sget-object p1, Landroidx/compose/ui/platform/AndroidCompositionLocals_androidKt;->a:Landroidx/compose/runtime/q0;
+    sget-object p1, Landroidx/compose/ui/platform/AndroidCompositionLocals_androidKt;->a:Landroidx/compose/runtime/x;
 
     .line 3
-    invoke-interface {v0, v1}, Landroidx/compose/runtime/j1;->setValue(Ljava/lang/Object;)V
+    invoke-interface {v0, v1}, Landroidx/compose/runtime/Z;->setValue(Ljava/lang/Object;)V
 
     return-void
 .end method

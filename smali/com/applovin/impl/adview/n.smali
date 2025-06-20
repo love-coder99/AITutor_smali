@@ -143,24 +143,38 @@
 .method public getCrossOffset()F
     .locals 2
 
+    .line 1
     iget v0, p0, Lcom/applovin/impl/adview/e;->a:F
 
+    .line 2
+    .line 3
     const/high16 v1, 0x41200000    # 10.0f
 
+    .line 4
+    .line 5
     mul-float v0, v0, v1
 
+    .line 6
+    .line 7
     return v0
 .end method
 
 .method public getInnerCircleOffset()F
     .locals 2
 
+    .line 1
     iget v0, p0, Lcom/applovin/impl/adview/e;->a:F
 
+    .line 2
+    .line 3
     const/high16 v1, 0x40000000    # 2.0f
 
+    .line 4
+    .line 5
     mul-float v0, v0, v1
 
+    .line 6
+    .line 7
     return v0
 .end method
 
@@ -193,12 +207,19 @@
 .method public getStrokeWidth()F
     .locals 2
 
+    .line 1
     iget v0, p0, Lcom/applovin/impl/adview/e;->a:F
 
+    .line 2
+    .line 3
     const/high16 v1, 0x40400000    # 3.0f
 
+    .line 4
+    .line 5
     mul-float v0, v0, v1
 
+    .line 6
+    .line 7
     return v0
 .end method
 

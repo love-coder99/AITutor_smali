@@ -26,62 +26,62 @@
     .locals 5
 
     .line 1
-    new-instance v0, Landroidx/camera/view/internal/ScreenFlashUiInfo$ProviderType;
+    const/4 v0, 0x1
 
     .line 2
+    const/4 v1, 0x0
+
     .line 3
-    const-string v1, "PREVIEW_VIEW"
+    new-instance v2, Landroidx/camera/view/internal/ScreenFlashUiInfo$ProviderType;
 
     .line 4
     .line 5
-    const/4 v2, 0x0
+    const-string v3, "PREVIEW_VIEW"
 
     .line 6
-    invoke-direct {v0, v1, v2}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
-
     .line 7
+    invoke-direct {v2, v3, v1}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
+
     .line 8
     .line 9
-    sput-object v0, Landroidx/camera/view/internal/ScreenFlashUiInfo$ProviderType;->PREVIEW_VIEW:Landroidx/camera/view/internal/ScreenFlashUiInfo$ProviderType;
-
     .line 10
+    sput-object v2, Landroidx/camera/view/internal/ScreenFlashUiInfo$ProviderType;->PREVIEW_VIEW:Landroidx/camera/view/internal/ScreenFlashUiInfo$ProviderType;
+
     .line 11
-    new-instance v1, Landroidx/camera/view/internal/ScreenFlashUiInfo$ProviderType;
-
     .line 12
+    new-instance v3, Landroidx/camera/view/internal/ScreenFlashUiInfo$ProviderType;
+
     .line 13
-    const-string v3, "SCREEN_FLASH_VIEW"
-
     .line 14
-    .line 15
-    const/4 v4, 0x1
+    const-string v4, "SCREEN_FLASH_VIEW"
 
+    .line 15
     .line 16
-    invoke-direct {v1, v3, v4}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
+    invoke-direct {v3, v4, v0}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
 
     .line 17
     .line 18
     .line 19
-    sput-object v1, Landroidx/camera/view/internal/ScreenFlashUiInfo$ProviderType;->SCREEN_FLASH_VIEW:Landroidx/camera/view/internal/ScreenFlashUiInfo$ProviderType;
+    sput-object v3, Landroidx/camera/view/internal/ScreenFlashUiInfo$ProviderType;->SCREEN_FLASH_VIEW:Landroidx/camera/view/internal/ScreenFlashUiInfo$ProviderType;
 
     .line 20
     .line 21
-    const/4 v3, 0x2
+    const/4 v4, 0x2
 
     .line 22
-    new-array v3, v3, [Landroidx/camera/view/internal/ScreenFlashUiInfo$ProviderType;
+    new-array v4, v4, [Landroidx/camera/view/internal/ScreenFlashUiInfo$ProviderType;
 
     .line 23
     .line 24
-    aput-object v0, v3, v2
+    aput-object v2, v4, v1
 
     .line 25
     .line 26
-    aput-object v1, v3, v4
+    aput-object v3, v4, v0
 
     .line 27
     .line 28
-    sput-object v3, Landroidx/camera/view/internal/ScreenFlashUiInfo$ProviderType;->b:[Landroidx/camera/view/internal/ScreenFlashUiInfo$ProviderType;
+    sput-object v4, Landroidx/camera/view/internal/ScreenFlashUiInfo$ProviderType;->b:[Landroidx/camera/view/internal/ScreenFlashUiInfo$ProviderType;
 
     .line 29
     .line 30

@@ -13,13 +13,23 @@
 
 # instance fields
 .field private mTextClassifier:Landroid/view/textclassifier/TextClassifier;
+    .annotation build Landroidx/annotation/Nullable;
+    .end annotation
+.end field
 
 .field private mTextView:Landroid/widget/TextView;
+    .annotation build Landroidx/annotation/NonNull;
+    .end annotation
+.end field
 
 
 # direct methods
 .method public constructor <init>(Landroid/widget/TextView;)V
     .locals 0
+    .param p1    # Landroid/widget/TextView;
+        .annotation build Landroidx/annotation/NonNull;
+        .end annotation
+    .end param
 
     .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -43,6 +53,8 @@
 # virtual methods
 .method public getTextClassifier()Landroid/view/textclassifier/TextClassifier;
     .locals 1
+    .annotation build Landroidx/annotation/NonNull;
+    .end annotation
 
     .line 1
     iget-object v0, p0, Landroidx/appcompat/widget/AppCompatTextClassifierHelper;->mTextClassifier:Landroid/view/textclassifier/TextClassifier;
@@ -71,8 +83,15 @@
 
 .method public setTextClassifier(Landroid/view/textclassifier/TextClassifier;)V
     .locals 0
+    .param p1    # Landroid/view/textclassifier/TextClassifier;
+        .annotation build Landroidx/annotation/Nullable;
+        .end annotation
+    .end param
 
+    .line 1
     iput-object p1, p0, Landroidx/appcompat/widget/AppCompatTextClassifierHelper;->mTextClassifier:Landroid/view/textclassifier/TextClassifier;
 
+    .line 2
+    .line 3
     return-void
 .end method

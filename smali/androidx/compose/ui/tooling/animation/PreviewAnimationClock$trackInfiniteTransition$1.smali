@@ -3,14 +3,14 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lzh/c;
+.implements Lka/c;
 
 
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "Lkotlin/jvm/internal/Lambda;",
-        "Lzh/c;"
+        "Lka/c;"
     }
 .end annotation
 
@@ -21,7 +21,7 @@
     d2 = {
         "",
         "it",
-        "Lqh/r;",
+        "LX9/j;",
         "invoke",
         "(Ljava/lang/Object;)V",
         "<anonymous>"
@@ -36,18 +36,18 @@
 
 
 # instance fields
-.field final synthetic $animation:Landroidx/compose/ui/tooling/animation/k;
+.field final synthetic $animation:Landroidx/compose/ui/tooling/animation/h;
 
-.field final synthetic this$0:Landroidx/compose/ui/tooling/animation/q;
+.field final synthetic this$0:Landroidx/compose/ui/tooling/animation/l;
 
 
 # direct methods
-.method public constructor <init>(Landroidx/compose/ui/tooling/animation/k;Landroidx/compose/ui/tooling/animation/q;)V
+.method public constructor <init>(Landroidx/compose/ui/tooling/animation/h;Landroidx/compose/ui/tooling/animation/l;)V
     .locals 0
 
-    iput-object p1, p0, Landroidx/compose/ui/tooling/animation/PreviewAnimationClock$trackInfiniteTransition$1;->$animation:Landroidx/compose/ui/tooling/animation/k;
+    iput-object p1, p0, Landroidx/compose/ui/tooling/animation/PreviewAnimationClock$trackInfiniteTransition$1;->$animation:Landroidx/compose/ui/tooling/animation/h;
 
-    iput-object p2, p0, Landroidx/compose/ui/tooling/animation/PreviewAnimationClock$trackInfiniteTransition$1;->this$0:Landroidx/compose/ui/tooling/animation/q;
+    iput-object p2, p0, Landroidx/compose/ui/tooling/animation/PreviewAnimationClock$trackInfiniteTransition$1;->this$0:Landroidx/compose/ui/tooling/animation/l;
 
     const/4 p1, 0x1
 
@@ -64,7 +64,7 @@
     .line 1
     invoke-virtual {p0, p1}, Landroidx/compose/ui/tooling/animation/PreviewAnimationClock$trackInfiniteTransition$1;->invoke(Ljava/lang/Object;)V
 
-    sget-object p1, Lqh/r;->a:Lqh/r;
+    sget-object p1, LX9/j;->a:LX9/j;
 
     return-object p1
 .end method
@@ -73,30 +73,30 @@
     .locals 4
 
     .line 2
-    sget-boolean p1, Landroidx/compose/ui/tooling/animation/p;->b:Z
+    sget-boolean p1, Landroidx/compose/ui/tooling/animation/k;->b:Z
 
-    iget-object p1, p0, Landroidx/compose/ui/tooling/animation/PreviewAnimationClock$trackInfiniteTransition$1;->$animation:Landroidx/compose/ui/tooling/animation/k;
+    iget-object p1, p0, Landroidx/compose/ui/tooling/animation/PreviewAnimationClock$trackInfiniteTransition$1;->$animation:Landroidx/compose/ui/tooling/animation/h;
 
-    invoke-static {p1}, Landroidx/compose/ui/text/input/n;->k(Landroidx/compose/ui/tooling/animation/k;)Landroidx/compose/ui/tooling/animation/p;
+    invoke-static {p1}, Lcom/google/android/play/core/appupdate/b;->j(Landroidx/compose/ui/tooling/animation/h;)Landroidx/compose/ui/tooling/animation/k;
 
     move-result-object p1
 
     if-eqz p1, :cond_0
 
-    iget-object v0, p0, Landroidx/compose/ui/tooling/animation/PreviewAnimationClock$trackInfiniteTransition$1;->this$0:Landroidx/compose/ui/tooling/animation/q;
+    iget-object v0, p0, Landroidx/compose/ui/tooling/animation/PreviewAnimationClock$trackInfiniteTransition$1;->this$0:Landroidx/compose/ui/tooling/animation/l;
 
     .line 3
-    invoke-virtual {v0}, Landroidx/compose/ui/tooling/animation/q;->f()Ljava/util/LinkedHashMap;
+    invoke-virtual {v0}, Landroidx/compose/ui/tooling/animation/l;->f()Ljava/util/LinkedHashMap;
 
     move-result-object v1
 
-    new-instance v2, Le2/d;
+    new-instance v2, LJ0/c;
 
     new-instance v3, Landroidx/compose/ui/tooling/animation/PreviewAnimationClock$trackInfiniteTransition$1$1$1;
 
-    invoke-direct {v3, v0}, Landroidx/compose/ui/tooling/animation/PreviewAnimationClock$trackInfiniteTransition$1$1$1;-><init>(Landroidx/compose/ui/tooling/animation/q;)V
+    invoke-direct {v3, v0}, Landroidx/compose/ui/tooling/animation/PreviewAnimationClock$trackInfiniteTransition$1$1$1;-><init>(Landroidx/compose/ui/tooling/animation/l;)V
 
-    invoke-direct {v2, p1, v3}, Le2/d;-><init>(Landroidx/compose/ui/tooling/animation/p;Lzh/a;)V
+    invoke-direct {v2, p1, v3}, LJ0/c;-><init>(Landroidx/compose/ui/tooling/animation/k;Lka/a;)V
 
     invoke-interface {v1, p1, v2}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 

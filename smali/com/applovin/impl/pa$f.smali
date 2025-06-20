@@ -114,7 +114,10 @@
 
     .line 26
     :goto_1
+    :try_start_1
     monitor-exit p0
+    :try_end_1
+    .catchall {:try_start_1 .. :try_end_1} :catchall_0
 
     .line 27
     throw v0

@@ -49,6 +49,10 @@
 
 .method public constructor <init>(Lcom/applovin/mediation/nativeAds/MaxNativeAd;Lcom/applovin/mediation/nativeAds/MaxNativeAdViewBinder;Landroid/content/Context;)V
     .locals 4
+    .param p1    # Lcom/applovin/mediation/nativeAds/MaxNativeAd;
+        .annotation build Landroidx/annotation/Nullable;
+        .end annotation
+    .end param
 
     .line 20
     invoke-direct {p0, p3}, Landroid/widget/FrameLayout;-><init>(Landroid/content/Context;)V
@@ -86,6 +90,7 @@
 
     if-eqz v3, :cond_2
 
+    .line 24
     iput-object v3, p0, Lcom/applovin/mediation/nativeAds/MaxNativeAdView;->a:Landroid/view/View;
 
     goto :goto_3
@@ -93,7 +98,7 @@
     :cond_2
     if-eqz v0, :cond_3
 
-    .line 24
+    .line 25
     iget-object v0, p2, Lcom/applovin/mediation/nativeAds/MaxNativeAdViewBinder;->templateType:Ljava/lang/String;
 
     invoke-direct {p0, v0, v2}, Lcom/applovin/mediation/nativeAds/MaxNativeAdView;->a(Ljava/lang/String;Lcom/applovin/mediation/MaxAdFormat;)I
@@ -102,30 +107,30 @@
 
     goto :goto_2
 
-    .line 25
+    .line 26
     :cond_3
     iget v0, p2, Lcom/applovin/mediation/nativeAds/MaxNativeAdViewBinder;->layoutResourceId:I
 
-    .line 26
+    .line 27
     :goto_2
     invoke-static {p3}, Landroid/view/LayoutInflater;->from(Landroid/content/Context;)Landroid/view/LayoutInflater;
 
     move-result-object p3
 
-    .line 27
+    .line 28
     invoke-virtual {p3, v0, p0, v1}, Landroid/view/LayoutInflater;->inflate(ILandroid/view/ViewGroup;Z)Landroid/view/View;
 
     move-result-object p3
 
     iput-object p3, p0, Lcom/applovin/mediation/nativeAds/MaxNativeAdView;->a:Landroid/view/View;
 
+    .line 29
     :goto_3
     iget-object p3, p0, Lcom/applovin/mediation/nativeAds/MaxNativeAdView;->a:Landroid/view/View;
 
-    .line 28
     invoke-virtual {p0, p3}, Landroid/view/ViewGroup;->addView(Landroid/view/View;)V
 
-    .line 29
+    .line 30
     iget p3, p2, Lcom/applovin/mediation/nativeAds/MaxNativeAdViewBinder;->titleTextViewId:I
 
     invoke-virtual {p0, p3}, Landroid/view/View;->findViewById(I)Landroid/view/View;
@@ -136,7 +141,7 @@
 
     iput-object p3, p0, Lcom/applovin/mediation/nativeAds/MaxNativeAdView;->b:Landroid/widget/TextView;
 
-    .line 30
+    .line 31
     iget p3, p2, Lcom/applovin/mediation/nativeAds/MaxNativeAdViewBinder;->advertiserTextViewId:I
 
     invoke-virtual {p0, p3}, Landroid/view/View;->findViewById(I)Landroid/view/View;
@@ -147,7 +152,7 @@
 
     iput-object p3, p0, Lcom/applovin/mediation/nativeAds/MaxNativeAdView;->c:Landroid/widget/TextView;
 
-    .line 31
+    .line 32
     iget p3, p2, Lcom/applovin/mediation/nativeAds/MaxNativeAdViewBinder;->bodyTextViewId:I
 
     invoke-virtual {p0, p3}, Landroid/view/View;->findViewById(I)Landroid/view/View;
@@ -158,7 +163,7 @@
 
     iput-object p3, p0, Lcom/applovin/mediation/nativeAds/MaxNativeAdView;->d:Landroid/widget/TextView;
 
-    .line 32
+    .line 33
     iget p3, p2, Lcom/applovin/mediation/nativeAds/MaxNativeAdViewBinder;->callToActionButtonId:I
 
     invoke-virtual {p0, p3}, Landroid/view/View;->findViewById(I)Landroid/view/View;
@@ -169,7 +174,7 @@
 
     iput-object p3, p0, Lcom/applovin/mediation/nativeAds/MaxNativeAdView;->f:Landroid/widget/Button;
 
-    .line 33
+    .line 34
     iget p3, p2, Lcom/applovin/mediation/nativeAds/MaxNativeAdViewBinder;->iconImageViewId:I
 
     invoke-virtual {p0, p3}, Landroid/view/View;->findViewById(I)Landroid/view/View;
@@ -180,7 +185,7 @@
 
     iput-object p3, p0, Lcom/applovin/mediation/nativeAds/MaxNativeAdView;->g:Landroid/widget/ImageView;
 
-    .line 34
+    .line 35
     iget p3, p2, Lcom/applovin/mediation/nativeAds/MaxNativeAdViewBinder;->iconContentViewId:I
 
     invoke-virtual {p0, p3}, Landroid/view/View;->findViewById(I)Landroid/view/View;
@@ -191,7 +196,7 @@
 
     iput-object p3, p0, Lcom/applovin/mediation/nativeAds/MaxNativeAdView;->h:Landroid/widget/FrameLayout;
 
-    .line 35
+    .line 36
     iget p3, p2, Lcom/applovin/mediation/nativeAds/MaxNativeAdViewBinder;->optionsContentViewGroupId:I
 
     invoke-virtual {p0, p3}, Landroid/view/View;->findViewById(I)Landroid/view/View;
@@ -202,7 +207,7 @@
 
     iput-object p3, p0, Lcom/applovin/mediation/nativeAds/MaxNativeAdView;->i:Landroid/view/ViewGroup;
 
-    .line 36
+    .line 37
     iget p3, p2, Lcom/applovin/mediation/nativeAds/MaxNativeAdViewBinder;->optionsContentFrameLayoutId:I
 
     invoke-virtual {p0, p3}, Landroid/view/View;->findViewById(I)Landroid/view/View;
@@ -213,7 +218,7 @@
 
     iput-object p3, p0, Lcom/applovin/mediation/nativeAds/MaxNativeAdView;->j:Landroid/widget/FrameLayout;
 
-    .line 37
+    .line 38
     iget p3, p2, Lcom/applovin/mediation/nativeAds/MaxNativeAdViewBinder;->starRatingContentViewGroupId:I
 
     invoke-virtual {p0, p3}, Landroid/view/View;->findViewById(I)Landroid/view/View;
@@ -224,7 +229,7 @@
 
     iput-object p3, p0, Lcom/applovin/mediation/nativeAds/MaxNativeAdView;->k:Landroid/view/ViewGroup;
 
-    .line 38
+    .line 39
     iget p3, p2, Lcom/applovin/mediation/nativeAds/MaxNativeAdViewBinder;->mediaContentViewGroupId:I
 
     invoke-virtual {p0, p3}, Landroid/view/View;->findViewById(I)Landroid/view/View;
@@ -235,7 +240,7 @@
 
     iput-object p3, p0, Lcom/applovin/mediation/nativeAds/MaxNativeAdView;->l:Landroid/view/ViewGroup;
 
-    .line 39
+    .line 40
     iget p2, p2, Lcom/applovin/mediation/nativeAds/MaxNativeAdViewBinder;->mediaContentFrameLayoutId:I
 
     invoke-virtual {p0, p2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
@@ -248,7 +253,7 @@
 
     if-eqz p1, :cond_4
 
-    .line 40
+    .line 41
     invoke-direct {p0, p1}, Lcom/applovin/mediation/nativeAds/MaxNativeAdView;->a(Lcom/applovin/mediation/nativeAds/MaxNativeAd;)V
 
     :cond_4
@@ -257,6 +262,14 @@
 
 .method public constructor <init>(Lcom/applovin/mediation/nativeAds/MaxNativeAd;Ljava/lang/String;Landroid/app/Activity;)V
     .locals 0
+    .param p1    # Lcom/applovin/mediation/nativeAds/MaxNativeAd;
+        .annotation build Landroidx/annotation/Nullable;
+        .end annotation
+    .end param
+    .param p2    # Ljava/lang/String;
+        .annotation build Landroidx/annotation/Nullable;
+        .end annotation
+    .end param
     .annotation runtime Ljava/lang/Deprecated;
     .end annotation
 
@@ -272,6 +285,14 @@
 
 .method public constructor <init>(Lcom/applovin/mediation/nativeAds/MaxNativeAd;Ljava/lang/String;Landroid/content/Context;)V
     .locals 2
+    .param p1    # Lcom/applovin/mediation/nativeAds/MaxNativeAd;
+        .annotation build Landroidx/annotation/Nullable;
+        .end annotation
+    .end param
+    .param p2    # Ljava/lang/String;
+        .annotation build Landroidx/annotation/Nullable;
+        .end annotation
+    .end param
 
     .line 4
     new-instance v0, Lcom/applovin/mediation/nativeAds/MaxNativeAdViewBinder$Builder;
@@ -403,72 +424,75 @@
 
     if-ne p2, v0, :cond_2
 
+    .line 3
     const-string p2, "small_template_1"
 
-    .line 3
     invoke-virtual {p2, p1}, Ljava/lang/String;->equalsIgnoreCase(Ljava/lang/String;)Z
 
     move-result p2
 
     if-eqz p2, :cond_0
 
+    .line 4
     sget p1, Lcom/applovin/sdk/R$layout;->max_native_ad_small_template_1:I
 
     return p1
 
+    .line 5
     :cond_0
     const-string p2, "medium_template_1"
 
-    .line 4
     invoke-virtual {p2, p1}, Ljava/lang/String;->equalsIgnoreCase(Ljava/lang/String;)Z
 
     move-result p2
 
     if-eqz p2, :cond_1
 
+    .line 6
     sget p1, Lcom/applovin/sdk/R$layout;->max_native_ad_medium_template_1:I
 
     return p1
 
-    .line 5
+    .line 7
     :cond_1
     new-instance p2, Ljava/lang/IllegalArgumentException;
 
     const-string v0, "Attempting to render MAX native ad with invalid format: "
 
-    .line 6
-    invoke-static {v0, p1}, Landroid/support/v4/media/session/a;->D(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+    .line 8
+    invoke-static {v0, p1}, LB/u;->t(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object p1
 
-    .line 7
+    .line 9
     invoke-direct {p2, p1}, Ljava/lang/IllegalArgumentException;-><init>(Ljava/lang/String;)V
 
     throw p2
 
-    .line 8
+    .line 10
     :cond_2
     sget-object v0, Lcom/applovin/mediation/MaxAdFormat;->BANNER:Lcom/applovin/mediation/MaxAdFormat;
 
     if-ne p2, v0, :cond_7
 
+    .line 11
     const-string p2, "vertical_banner_template"
 
-    .line 9
     invoke-virtual {p2, p1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
     move-result p2
 
     if-eqz p2, :cond_3
 
+    .line 12
     sget p1, Lcom/applovin/sdk/R$layout;->max_native_ad_vertical_banner_view:I
 
     return p1
 
+    .line 13
     :cond_3
     const-string p2, "media_banner_template"
 
-    .line 10
     invoke-virtual {p2, p1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
     move-result p2
@@ -485,66 +509,72 @@
 
     goto :goto_0
 
+    .line 14
     :cond_4
     const-string p2, "vertical_media_banner_template"
 
-    .line 11
     invoke-virtual {p2, p1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
     move-result p1
 
     if-eqz p1, :cond_5
 
+    .line 15
     sget p1, Lcom/applovin/sdk/R$layout;->max_native_ad_vertical_media_banner_view:I
 
     return p1
 
+    .line 16
     :cond_5
     sget p1, Lcom/applovin/sdk/R$layout;->max_native_ad_banner_view:I
 
     return p1
 
+    .line 17
     :cond_6
     :goto_0
     sget p1, Lcom/applovin/sdk/R$layout;->max_native_ad_media_banner_view:I
 
     return p1
 
-    .line 12
+    .line 18
     :cond_7
     sget-object v0, Lcom/applovin/mediation/MaxAdFormat;->LEADER:Lcom/applovin/mediation/MaxAdFormat;
 
     if-ne p2, v0, :cond_9
 
+    .line 19
     const-string p2, "vertical_leader_template"
 
-    .line 13
     invoke-virtual {p2, p1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
     move-result p1
 
     if-eqz p1, :cond_8
 
+    .line 20
     sget p1, Lcom/applovin/sdk/R$layout;->max_native_ad_vertical_leader_view:I
 
     return p1
 
+    .line 21
     :cond_8
     sget p1, Lcom/applovin/sdk/R$layout;->max_native_ad_leader_view:I
 
     return p1
 
-    .line 14
+    .line 22
     :cond_9
     sget-object p1, Lcom/applovin/mediation/MaxAdFormat;->MREC:Lcom/applovin/mediation/MaxAdFormat;
 
     if-ne p2, p1, :cond_a
 
+    .line 23
     sget p1, Lcom/applovin/sdk/R$layout;->max_native_ad_mrec_view:I
 
     return p1
 
-    .line 15
+    .line 24
     :cond_a
     new-instance p1, Ljava/lang/IllegalArgumentException;
 
@@ -570,7 +600,7 @@
 
     const/4 v0, 0x1
 
-    .line 66
+    .line 84
     invoke-virtual {p0, v0}, Landroid/view/View;->setSelected(Z)V
 
     return-void
@@ -579,22 +609,23 @@
 .method private a(Lcom/applovin/mediation/nativeAds/MaxNativeAd;)V
     .locals 6
 
+    .line 29
     iget-object v0, p0, Lcom/applovin/mediation/nativeAds/MaxNativeAdView;->b:Landroid/widget/TextView;
 
     const/16 v1, 0x8
 
     if-nez v0, :cond_0
 
+    .line 30
     const-string v0, "MaxNativeAdView"
 
     const-string v2, "Rendering template ad view without title text view"
 
-    .line 20
     invoke-static {v0, v2}, Lcom/applovin/impl/sdk/n;->j(Ljava/lang/String;Ljava/lang/String;)V
 
     goto :goto_0
 
-    .line 21
+    .line 31
     :cond_0
     invoke-virtual {p1}, Lcom/applovin/mediation/nativeAds/MaxNativeAd;->getTitle()Ljava/lang/String;
 
@@ -606,9 +637,9 @@
 
     if-eqz v0, :cond_1
 
+    .line 32
     iget-object v0, p0, Lcom/applovin/mediation/nativeAds/MaxNativeAdView;->b:Landroid/widget/TextView;
 
-    .line 22
     invoke-virtual {p1}, Lcom/applovin/mediation/nativeAds/MaxNativeAd;->getTitle()Ljava/lang/String;
 
     move-result-object v2
@@ -617,18 +648,19 @@
 
     goto :goto_0
 
+    .line 33
     :cond_1
     iget-object v0, p0, Lcom/applovin/mediation/nativeAds/MaxNativeAdView;->b:Landroid/widget/TextView;
 
-    .line 23
     invoke-virtual {v0, v1}, Landroid/view/View;->setVisibility(I)V
 
+    .line 34
     :goto_0
     iget-object v0, p0, Lcom/applovin/mediation/nativeAds/MaxNativeAdView;->c:Landroid/widget/TextView;
 
     if-eqz v0, :cond_3
 
-    .line 24
+    .line 35
     invoke-virtual {p1}, Lcom/applovin/mediation/nativeAds/MaxNativeAd;->getAdvertiser()Ljava/lang/String;
 
     move-result-object v0
@@ -639,9 +671,9 @@
 
     if-eqz v0, :cond_2
 
+    .line 36
     iget-object v0, p0, Lcom/applovin/mediation/nativeAds/MaxNativeAdView;->c:Landroid/widget/TextView;
 
-    .line 25
     invoke-virtual {p1}, Lcom/applovin/mediation/nativeAds/MaxNativeAd;->getAdvertiser()Ljava/lang/String;
 
     move-result-object v2
@@ -650,12 +682,13 @@
 
     goto :goto_1
 
+    .line 37
     :cond_2
     iget-object v0, p0, Lcom/applovin/mediation/nativeAds/MaxNativeAdView;->c:Landroid/widget/TextView;
 
-    .line 26
     invoke-virtual {v0, v1}, Landroid/view/View;->setVisibility(I)V
 
+    .line 38
     :cond_3
     :goto_1
     iget-object v0, p0, Lcom/applovin/mediation/nativeAds/MaxNativeAdView;->d:Landroid/widget/TextView;
@@ -664,7 +697,7 @@
 
     if-eqz v0, :cond_7
 
-    .line 27
+    .line 39
     invoke-virtual {p1}, Lcom/applovin/mediation/nativeAds/MaxNativeAd;->getBody()Ljava/lang/String;
 
     move-result-object v0
@@ -675,9 +708,9 @@
 
     if-eqz v0, :cond_4
 
+    .line 40
     iget-object v0, p0, Lcom/applovin/mediation/nativeAds/MaxNativeAdView;->d:Landroid/widget/TextView;
 
-    .line 28
     invoke-virtual {p1}, Lcom/applovin/mediation/nativeAds/MaxNativeAd;->getBody()Ljava/lang/String;
 
     move-result-object v3
@@ -686,7 +719,7 @@
 
     goto :goto_3
 
-    .line 29
+    .line 41
     :cond_4
     invoke-virtual {p1}, Lcom/applovin/mediation/nativeAds/MaxNativeAd;->getFormat()Lcom/applovin/mediation/MaxAdFormat;
 
@@ -706,28 +739,29 @@
 
     goto :goto_2
 
+    .line 42
     :cond_5
     iget-object v0, p0, Lcom/applovin/mediation/nativeAds/MaxNativeAdView;->d:Landroid/widget/TextView;
 
-    .line 30
     invoke-virtual {v0, v2}, Landroid/view/View;->setVisibility(I)V
 
     goto :goto_3
 
+    .line 43
     :cond_6
     :goto_2
     iget-object v0, p0, Lcom/applovin/mediation/nativeAds/MaxNativeAdView;->d:Landroid/widget/TextView;
 
-    .line 31
     invoke-virtual {v0, v1}, Landroid/view/View;->setVisibility(I)V
 
+    .line 44
     :cond_7
     :goto_3
     iget-object v0, p0, Lcom/applovin/mediation/nativeAds/MaxNativeAdView;->f:Landroid/widget/Button;
 
     if-eqz v0, :cond_b
 
-    .line 32
+    .line 45
     invoke-virtual {p1}, Lcom/applovin/mediation/nativeAds/MaxNativeAd;->getCallToAction()Ljava/lang/String;
 
     move-result-object v0
@@ -738,9 +772,9 @@
 
     if-eqz v0, :cond_8
 
+    .line 46
     iget-object v0, p0, Lcom/applovin/mediation/nativeAds/MaxNativeAdView;->f:Landroid/widget/Button;
 
-    .line 33
     invoke-virtual {p1}, Lcom/applovin/mediation/nativeAds/MaxNativeAd;->getCallToAction()Ljava/lang/String;
 
     move-result-object v2
@@ -749,7 +783,7 @@
 
     goto :goto_5
 
-    .line 34
+    .line 47
     :cond_8
     invoke-virtual {p1}, Lcom/applovin/mediation/nativeAds/MaxNativeAd;->getFormat()Lcom/applovin/mediation/MaxAdFormat;
 
@@ -769,33 +803,34 @@
 
     goto :goto_4
 
+    .line 48
     :cond_9
     iget-object v0, p0, Lcom/applovin/mediation/nativeAds/MaxNativeAdView;->f:Landroid/widget/Button;
 
-    .line 35
     invoke-virtual {v0, v2}, Landroid/view/View;->setVisibility(I)V
 
     goto :goto_5
 
+    .line 49
     :cond_a
     :goto_4
     iget-object v0, p0, Lcom/applovin/mediation/nativeAds/MaxNativeAdView;->f:Landroid/widget/Button;
 
-    .line 36
     invoke-virtual {v0, v1}, Landroid/view/View;->setVisibility(I)V
 
-    .line 37
+    .line 50
     :cond_b
     :goto_5
     invoke-virtual {p1}, Lcom/applovin/mediation/nativeAds/MaxNativeAd;->getIcon()Lcom/applovin/mediation/nativeAds/MaxNativeAd$MaxNativeAdImage;
 
     move-result-object v0
 
-    .line 38
+    .line 51
     invoke-virtual {p1}, Lcom/applovin/mediation/nativeAds/MaxNativeAd;->getIconView()Landroid/view/View;
 
     move-result-object v2
 
+    .line 52
     iget-object v3, p0, Lcom/applovin/mediation/nativeAds/MaxNativeAdView;->h:Landroid/widget/FrameLayout;
 
     const/4 v4, -0x1
@@ -804,20 +839,21 @@
 
     if-eqz v0, :cond_e
 
+    .line 53
     iget-object v5, p0, Lcom/applovin/mediation/nativeAds/MaxNativeAdView;->g:Landroid/widget/ImageView;
 
     if-eqz v5, :cond_e
 
-    .line 39
+    .line 54
     invoke-virtual {v0}, Lcom/applovin/mediation/nativeAds/MaxNativeAd$MaxNativeAdImage;->getDrawable()Landroid/graphics/drawable/Drawable;
 
     move-result-object v2
 
     if-eqz v2, :cond_c
 
+    .line 55
     iget-object v2, p0, Lcom/applovin/mediation/nativeAds/MaxNativeAdView;->g:Landroid/widget/ImageView;
 
-    .line 40
     invoke-virtual {v0}, Lcom/applovin/mediation/nativeAds/MaxNativeAd$MaxNativeAdImage;->getDrawable()Landroid/graphics/drawable/Drawable;
 
     move-result-object v0
@@ -826,7 +862,7 @@
 
     goto :goto_6
 
-    .line 41
+    .line 56
     :cond_c
     invoke-virtual {v0}, Lcom/applovin/mediation/nativeAds/MaxNativeAd$MaxNativeAdImage;->getUri()Landroid/net/Uri;
 
@@ -848,9 +884,9 @@
 
     if-eqz v2, :cond_d
 
+    .line 57
     iget-object v2, p0, Lcom/applovin/mediation/nativeAds/MaxNativeAdView;->g:Landroid/widget/ImageView;
 
-    .line 42
     invoke-virtual {v0}, Lcom/applovin/mediation/nativeAds/MaxNativeAd$MaxNativeAdImage;->getUri()Landroid/net/Uri;
 
     move-result-object v0
@@ -859,10 +895,10 @@
 
     goto :goto_6
 
+    .line 58
     :cond_d
     iget-object v0, p0, Lcom/applovin/mediation/nativeAds/MaxNativeAdView;->h:Landroid/widget/FrameLayout;
 
-    .line 43
     invoke-virtual {v0, v1}, Landroid/view/View;->setVisibility(I)V
 
     goto :goto_6
@@ -870,57 +906,58 @@
     :cond_e
     if-eqz v2, :cond_f
 
-    .line 44
+    .line 59
     new-instance v0, Landroid/widget/FrameLayout$LayoutParams;
 
     invoke-direct {v0, v4, v4}, Landroid/widget/FrameLayout$LayoutParams;-><init>(II)V
 
     invoke-virtual {v2, v0}, Landroid/view/View;->setLayoutParams(Landroid/view/ViewGroup$LayoutParams;)V
 
+    .line 60
     iget-object v0, p0, Lcom/applovin/mediation/nativeAds/MaxNativeAdView;->h:Landroid/widget/FrameLayout;
 
-    .line 45
     invoke-virtual {v0}, Landroid/view/ViewGroup;->removeAllViews()V
 
+    .line 61
     iget-object v0, p0, Lcom/applovin/mediation/nativeAds/MaxNativeAdView;->h:Landroid/widget/FrameLayout;
 
-    .line 46
     invoke-virtual {v0, v2}, Landroid/view/ViewGroup;->addView(Landroid/view/View;)V
 
     goto :goto_6
 
-    .line 47
+    .line 62
     :cond_f
     invoke-virtual {v3, v1}, Landroid/view/View;->setVisibility(I)V
 
-    .line 48
+    .line 63
     :cond_10
     :goto_6
     invoke-virtual {p1}, Lcom/applovin/mediation/nativeAds/MaxNativeAd;->getOptionsView()Landroid/view/View;
 
     move-result-object v0
 
+    .line 64
     iget-object v2, p0, Lcom/applovin/mediation/nativeAds/MaxNativeAdView;->j:Landroid/widget/FrameLayout;
 
     if-eqz v2, :cond_11
 
     if-eqz v0, :cond_11
 
-    .line 49
+    .line 65
     new-instance v2, Landroid/widget/FrameLayout$LayoutParams;
 
     invoke-direct {v2, v4, v4}, Landroid/widget/FrameLayout$LayoutParams;-><init>(II)V
 
     invoke-virtual {v0, v2}, Landroid/view/View;->setLayoutParams(Landroid/view/ViewGroup$LayoutParams;)V
 
+    .line 66
     iget-object v2, p0, Lcom/applovin/mediation/nativeAds/MaxNativeAdView;->j:Landroid/widget/FrameLayout;
 
-    .line 50
     invoke-virtual {v2, v0}, Landroid/view/ViewGroup;->addView(Landroid/view/View;)V
 
+    .line 67
     iget-object v0, p0, Lcom/applovin/mediation/nativeAds/MaxNativeAdView;->j:Landroid/widget/FrameLayout;
 
-    .line 51
     invoke-virtual {v0}, Landroid/view/View;->bringToFront()V
 
     goto :goto_7
@@ -928,37 +965,38 @@
     :cond_11
     if-eqz v2, :cond_12
 
-    .line 52
+    .line 68
     invoke-virtual {v2, v1}, Landroid/view/View;->setVisibility(I)V
 
-    .line 53
+    .line 69
     :cond_12
     :goto_7
     invoke-virtual {p1}, Lcom/applovin/mediation/nativeAds/MaxNativeAd;->getMediaView()Landroid/view/View;
 
     move-result-object v0
 
+    .line 70
     iget-object v2, p0, Lcom/applovin/mediation/nativeAds/MaxNativeAdView;->m:Landroid/widget/FrameLayout;
 
     if-eqz v2, :cond_14
 
     if-eqz v0, :cond_13
 
-    .line 54
+    .line 71
     new-instance v2, Landroid/widget/FrameLayout$LayoutParams;
 
     invoke-direct {v2, v4, v4}, Landroid/widget/FrameLayout$LayoutParams;-><init>(II)V
 
     invoke-virtual {v0, v2}, Landroid/view/View;->setLayoutParams(Landroid/view/ViewGroup$LayoutParams;)V
 
+    .line 72
     iget-object v2, p0, Lcom/applovin/mediation/nativeAds/MaxNativeAdView;->m:Landroid/widget/FrameLayout;
 
-    .line 55
     invoke-virtual {v2, v0}, Landroid/view/ViewGroup;->addView(Landroid/view/View;)V
 
     goto :goto_8
 
-    .line 56
+    .line 73
     :cond_13
     invoke-virtual {p1}, Lcom/applovin/mediation/nativeAds/MaxNativeAd;->getFormat()Lcom/applovin/mediation/MaxAdFormat;
 
@@ -968,30 +1006,31 @@
 
     if-ne v0, v2, :cond_14
 
+    .line 74
     iget-object v0, p0, Lcom/applovin/mediation/nativeAds/MaxNativeAdView;->m:Landroid/widget/FrameLayout;
 
-    .line 57
     invoke-virtual {v0, v1}, Landroid/view/View;->setVisibility(I)V
 
+    .line 75
     :cond_14
     :goto_8
     iget-object v0, p0, Lcom/applovin/mediation/nativeAds/MaxNativeAdView;->k:Landroid/view/ViewGroup;
 
     if-eqz v0, :cond_16
 
-    .line 58
+    .line 76
     invoke-virtual {p1}, Lcom/applovin/mediation/nativeAds/MaxNativeAd;->getStarRating()Ljava/lang/Double;
 
     move-result-object p1
 
     if-eqz p1, :cond_15
 
+    .line 77
     iget-object v0, p0, Lcom/applovin/mediation/nativeAds/MaxNativeAdView;->k:Landroid/view/ViewGroup;
 
-    .line 59
     invoke-virtual {v0}, Landroid/view/ViewGroup;->removeAllViews()V
 
-    .line 60
+    .line 78
     new-instance v0, Lcom/applovin/impl/sdk/nativeAd/AppLovinStarRatingView;
 
     invoke-virtual {p0}, Landroid/view/View;->getContext()Landroid/content/Context;
@@ -1000,37 +1039,37 @@
 
     invoke-direct {v0, p1, v1}, Lcom/applovin/impl/sdk/nativeAd/AppLovinStarRatingView;-><init>(Ljava/lang/Double;Landroid/content/Context;)V
 
-    .line 61
+    .line 79
     new-instance p1, Landroid/widget/FrameLayout$LayoutParams;
 
     invoke-direct {p1, v4, v4}, Landroid/widget/FrameLayout$LayoutParams;-><init>(II)V
 
     invoke-virtual {v0, p1}, Landroid/view/View;->setLayoutParams(Landroid/view/ViewGroup$LayoutParams;)V
 
+    .line 80
     iget-object p1, p0, Lcom/applovin/mediation/nativeAds/MaxNativeAdView;->k:Landroid/view/ViewGroup;
 
-    .line 62
     invoke-virtual {p1, v0}, Landroid/view/ViewGroup;->addView(Landroid/view/View;)V
 
     goto :goto_9
 
+    .line 81
     :cond_15
     iget-object p1, p0, Lcom/applovin/mediation/nativeAds/MaxNativeAdView;->k:Landroid/view/ViewGroup;
 
-    .line 63
     invoke-virtual {p1, v1}, Landroid/view/View;->setVisibility(I)V
 
-    .line 64
+    .line 82
     :cond_16
     :goto_9
     invoke-direct {p0}, Lcom/applovin/mediation/nativeAds/MaxNativeAdView;->b()V
 
-    .line 65
-    new-instance p1, Lc3/a;
+    .line 83
+    new-instance p1, Landroidx/activity/l;
 
-    const/16 v0, 0xc
+    const/16 v0, 0x13
 
-    invoke-direct {p1, p0, v0}, Lc3/a;-><init>(Ljava/lang/Object;I)V
+    invoke-direct {p1, p0, v0}, Landroidx/activity/l;-><init>(Ljava/lang/Object;I)V
 
     const-wide/16 v0, 0x7d0
 
@@ -1051,9 +1090,9 @@
 .method private b()V
     .locals 4
 
+    .line 2
     sget v0, Lcom/applovin/sdk/R$id;->applovin_native_inner_parent_layout:I
 
-    .line 2
     invoke-virtual {p0, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
     move-result-object v0
@@ -1117,33 +1156,47 @@
 # virtual methods
 .method public getAdViewTracker()Lcom/applovin/impl/mediation/ads/b;
     .locals 1
+    .annotation build Landroidx/annotation/Nullable;
+    .end annotation
 
+    .line 1
     iget-object v0, p0, Lcom/applovin/mediation/nativeAds/MaxNativeAdView;->n:Lcom/applovin/impl/mediation/ads/b;
 
+    .line 2
+    .line 3
     return-object v0
 .end method
 
 .method public getAdvertiserTextView()Landroid/widget/TextView;
     .locals 1
 
+    .line 1
     iget-object v0, p0, Lcom/applovin/mediation/nativeAds/MaxNativeAdView;->c:Landroid/widget/TextView;
 
+    .line 2
+    .line 3
     return-object v0
 .end method
 
 .method public getBodyTextView()Landroid/widget/TextView;
     .locals 1
 
+    .line 1
     iget-object v0, p0, Lcom/applovin/mediation/nativeAds/MaxNativeAdView;->d:Landroid/widget/TextView;
 
+    .line 2
+    .line 3
     return-object v0
 .end method
 
 .method public getCallToActionButton()Landroid/widget/Button;
     .locals 1
 
+    .line 1
     iget-object v0, p0, Lcom/applovin/mediation/nativeAds/MaxNativeAdView;->f:Landroid/widget/Button;
 
+    .line 2
+    .line 3
     return-object v0
 .end method
 
@@ -1249,24 +1302,33 @@
     .annotation runtime Ljava/lang/Deprecated;
     .end annotation
 
+    .line 1
     iget-object v0, p0, Lcom/applovin/mediation/nativeAds/MaxNativeAdView;->h:Landroid/widget/FrameLayout;
 
+    .line 2
+    .line 3
     return-object v0
 .end method
 
 .method public getIconImageView()Landroid/widget/ImageView;
     .locals 1
 
+    .line 1
     iget-object v0, p0, Lcom/applovin/mediation/nativeAds/MaxNativeAdView;->g:Landroid/widget/ImageView;
 
+    .line 2
+    .line 3
     return-object v0
 .end method
 
 .method public getMainView()Landroid/view/View;
     .locals 1
 
+    .line 1
     iget-object v0, p0, Lcom/applovin/mediation/nativeAds/MaxNativeAdView;->a:Landroid/view/View;
 
+    .line 2
+    .line 3
     return-object v0
 .end method
 
@@ -1275,23 +1337,34 @@
     .annotation runtime Ljava/lang/Deprecated;
     .end annotation
 
+    .line 1
     iget-object v0, p0, Lcom/applovin/mediation/nativeAds/MaxNativeAdView;->m:Landroid/widget/FrameLayout;
 
+    .line 2
+    .line 3
     return-object v0
 .end method
 
 .method public getMediaContentViewGroup()Landroid/view/ViewGroup;
     .locals 1
 
+    .line 1
     iget-object v0, p0, Lcom/applovin/mediation/nativeAds/MaxNativeAdView;->l:Landroid/view/ViewGroup;
 
+    .line 2
+    .line 3
     if-eqz v0, :cond_0
 
+    .line 4
+    .line 5
     goto :goto_0
 
+    .line 6
     :cond_0
     iget-object v0, p0, Lcom/applovin/mediation/nativeAds/MaxNativeAdView;->m:Landroid/widget/FrameLayout;
 
+    .line 7
+    .line 8
     :goto_0
     return-object v0
 .end method
@@ -1301,23 +1374,34 @@
     .annotation runtime Ljava/lang/Deprecated;
     .end annotation
 
+    .line 1
     iget-object v0, p0, Lcom/applovin/mediation/nativeAds/MaxNativeAdView;->j:Landroid/widget/FrameLayout;
 
+    .line 2
+    .line 3
     return-object v0
 .end method
 
 .method public getOptionsContentViewGroup()Landroid/view/ViewGroup;
     .locals 1
 
+    .line 1
     iget-object v0, p0, Lcom/applovin/mediation/nativeAds/MaxNativeAdView;->i:Landroid/view/ViewGroup;
 
+    .line 2
+    .line 3
     if-eqz v0, :cond_0
 
+    .line 4
+    .line 5
     goto :goto_0
 
+    .line 6
     :cond_0
     iget-object v0, p0, Lcom/applovin/mediation/nativeAds/MaxNativeAdView;->j:Landroid/widget/FrameLayout;
 
+    .line 7
+    .line 8
     :goto_0
     return-object v0
 .end method
@@ -1325,16 +1409,22 @@
 .method public getStarRatingContentViewGroup()Landroid/view/ViewGroup;
     .locals 1
 
+    .line 1
     iget-object v0, p0, Lcom/applovin/mediation/nativeAds/MaxNativeAdView;->k:Landroid/view/ViewGroup;
 
+    .line 2
+    .line 3
     return-object v0
 .end method
 
 .method public getTitleTextView()Landroid/widget/TextView;
     .locals 1
 
+    .line 1
     iget-object v0, p0, Lcom/applovin/mediation/nativeAds/MaxNativeAdView;->b:Landroid/widget/TextView;
 
+    .line 2
+    .line 3
     return-object v0
 .end method
 

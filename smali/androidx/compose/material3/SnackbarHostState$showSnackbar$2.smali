@@ -4,6 +4,16 @@
 
 
 # annotations
+.annotation runtime Lca/c;
+    c = "androidx.compose.material3.SnackbarHostState"
+    f = "SnackbarHost.kt"
+    l = {
+        0x1be,
+        0x1c1
+    }
+    m = "showSnackbar"
+.end annotation
+
 .annotation runtime Lkotlin/Metadata;
     k = 0x3
     mv = {
@@ -12,16 +22,6 @@
         0x0
     }
     xi = 0x30
-.end annotation
-
-.annotation runtime Lth/c;
-    c = "androidx.compose.material3.SnackbarHostState"
-    f = "SnackbarHost.kt"
-    l = {
-        0x1be,
-        0x1c1
-    }
-    m = "showSnackbar"
 .end annotation
 
 
@@ -38,16 +38,16 @@
 
 .field synthetic result:Ljava/lang/Object;
 
-.field final synthetic this$0:Landroidx/compose/material3/e1;
+.field final synthetic this$0:Landroidx/compose/material3/A0;
 
 
 # direct methods
-.method public constructor <init>(Landroidx/compose/material3/e1;Lkotlin/coroutines/Continuation;)V
+.method public constructor <init>(Landroidx/compose/material3/A0;Lkotlin/coroutines/Continuation;)V
     .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
-            "Landroidx/compose/material3/e1;",
+            "Landroidx/compose/material3/A0;",
             "Lkotlin/coroutines/Continuation<",
             "-",
             "Landroidx/compose/material3/SnackbarHostState$showSnackbar$2;",
@@ -55,7 +55,7 @@
         }
     .end annotation
 
-    iput-object p1, p0, Landroidx/compose/material3/SnackbarHostState$showSnackbar$2;->this$0:Landroidx/compose/material3/e1;
+    iput-object p1, p0, Landroidx/compose/material3/SnackbarHostState$showSnackbar$2;->this$0:Landroidx/compose/material3/A0;
 
     invoke-direct {p0, p2}, Lkotlin/coroutines/jvm/internal/ContinuationImpl;-><init>(Lkotlin/coroutines/Continuation;)V
 
@@ -77,11 +77,11 @@
 
     iput p1, p0, Landroidx/compose/material3/SnackbarHostState$showSnackbar$2;->label:I
 
-    iget-object p1, p0, Landroidx/compose/material3/SnackbarHostState$showSnackbar$2;->this$0:Landroidx/compose/material3/e1;
+    iget-object p1, p0, Landroidx/compose/material3/SnackbarHostState$showSnackbar$2;->this$0:Landroidx/compose/material3/A0;
 
     const/4 v0, 0x0
 
-    invoke-virtual {p1, v0, p0}, Landroidx/compose/material3/e1;->a(Landroidx/compose/material3/d1;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
+    invoke-virtual {p1, v0, p0}, Landroidx/compose/material3/A0;->a(Landroidx/compose/material3/z0;Lkotlin/coroutines/jvm/internal/ContinuationImpl;)Ljava/lang/Object;
 
     move-result-object p1
 

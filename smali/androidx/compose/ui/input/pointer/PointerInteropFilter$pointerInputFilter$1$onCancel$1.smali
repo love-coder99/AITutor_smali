@@ -3,14 +3,14 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lzh/c;
+.implements Lka/c;
 
 
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "Lkotlin/jvm/internal/Lambda;",
-        "Lzh/c;"
+        "Lka/c;"
     }
 .end annotation
 
@@ -21,7 +21,7 @@
     d2 = {
         "Landroid/view/MotionEvent;",
         "motionEvent",
-        "Lqh/r;",
+        "LX9/j;",
         "invoke",
         "(Landroid/view/MotionEvent;)V",
         "<anonymous>"
@@ -36,14 +36,14 @@
 
 
 # instance fields
-.field final synthetic this$0:Landroidx/compose/ui/input/pointer/z;
+.field final synthetic this$0:Landroidx/compose/ui/input/pointer/t;
 
 
 # direct methods
-.method public constructor <init>(Landroidx/compose/ui/input/pointer/z;)V
+.method public constructor <init>(Landroidx/compose/ui/input/pointer/t;)V
     .locals 0
 
-    iput-object p1, p0, Landroidx/compose/ui/input/pointer/PointerInteropFilter$pointerInputFilter$1$onCancel$1;->this$0:Landroidx/compose/ui/input/pointer/z;
+    iput-object p1, p0, Landroidx/compose/ui/input/pointer/PointerInteropFilter$pointerInputFilter$1$onCancel$1;->this$0:Landroidx/compose/ui/input/pointer/t;
 
     const/4 p1, 0x1
 
@@ -57,12 +57,12 @@
 .method public bridge synthetic invoke(Ljava/lang/Object;)Ljava/lang/Object;
     .locals 0
 
-    .line 3
+    .line 1
     check-cast p1, Landroid/view/MotionEvent;
 
     invoke-virtual {p0, p1}, Landroidx/compose/ui/input/pointer/PointerInteropFilter$pointerInputFilter$1$onCancel$1;->invoke(Landroid/view/MotionEvent;)V
 
-    sget-object p1, Lqh/r;->a:Lqh/r;
+    sget-object p1, LX9/j;->a:LX9/j;
 
     return-object p1
 .end method
@@ -70,10 +70,11 @@
 .method public final invoke(Landroid/view/MotionEvent;)V
     .locals 1
 
-    iget-object v0, p0, Landroidx/compose/ui/input/pointer/PointerInteropFilter$pointerInputFilter$1$onCancel$1;->this$0:Landroidx/compose/ui/input/pointer/z;
+    .line 2
+    iget-object v0, p0, Landroidx/compose/ui/input/pointer/PointerInteropFilter$pointerInputFilter$1$onCancel$1;->this$0:Landroidx/compose/ui/input/pointer/t;
 
-    .line 1
-    iget-object v0, v0, Landroidx/compose/ui/input/pointer/z;->c:Lzh/c;
+    .line 3
+    iget-object v0, v0, Landroidx/compose/ui/input/pointer/t;->a:Lka/c;
 
     if-eqz v0, :cond_0
 
@@ -82,9 +83,9 @@
     :cond_0
     const/4 v0, 0x0
 
-    .line 2
+    .line 4
     :goto_0
-    invoke-interface {v0, p1}, Lzh/c;->invoke(Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-interface {v0, p1}, Lka/c;->invoke(Ljava/lang/Object;)Ljava/lang/Object;
 
     return-void
 .end method

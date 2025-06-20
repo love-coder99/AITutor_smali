@@ -3,14 +3,14 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lzh/c;
+.implements Lka/c;
 
 
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "Lkotlin/jvm/internal/Lambda;",
-        "Lzh/c;"
+        "Lka/c;"
     }
 .end annotation
 
@@ -19,10 +19,10 @@
         "\u0000\u000c\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0008\u0003\u0010\u0004\u001a\u00020\u0001*\u00020\u0000H\n\u00a2\u0006\u0004\u0008\u0002\u0010\u0003"
     }
     d2 = {
-        "Landroidx/compose/ui/graphics/g0;",
-        "Lqh/r;",
+        "Landroidx/compose/ui/graphics/H;",
+        "LX9/j;",
         "invoke",
-        "(Landroidx/compose/ui/graphics/g0;)V",
+        "(Landroidx/compose/ui/graphics/H;)V",
         "<anonymous>"
     }
     k = 0x3
@@ -56,71 +56,77 @@
 .method public bridge synthetic invoke(Ljava/lang/Object;)Ljava/lang/Object;
     .locals 0
 
-    .line 12
-    check-cast p1, Landroidx/compose/ui/graphics/g0;
+    .line 1
+    check-cast p1, Landroidx/compose/ui/graphics/H;
 
-    invoke-virtual {p0, p1}, Landroidx/compose/ui/draw/ShadowGraphicsLayerElement$createBlock$1;->invoke(Landroidx/compose/ui/graphics/g0;)V
+    invoke-virtual {p0, p1}, Landroidx/compose/ui/draw/ShadowGraphicsLayerElement$createBlock$1;->invoke(Landroidx/compose/ui/graphics/H;)V
 
-    sget-object p1, Lqh/r;->a:Lqh/r;
+    sget-object p1, LX9/j;->a:LX9/j;
 
     return-object p1
 .end method
 
-.method public final invoke(Landroidx/compose/ui/graphics/g0;)V
+.method public final invoke(Landroidx/compose/ui/graphics/H;)V
     .locals 2
 
+    .line 2
     iget-object v0, p0, Landroidx/compose/ui/draw/ShadowGraphicsLayerElement$createBlock$1;->this$0:Landroidx/compose/ui/draw/ShadowGraphicsLayerElement;
 
-    .line 1
-    iget v0, v0, Landroidx/compose/ui/draw/ShadowGraphicsLayerElement;->c:F
+    .line 3
+    iget v0, v0, Landroidx/compose/ui/draw/ShadowGraphicsLayerElement;->a:F
 
+    .line 4
     move-object v1, p1
 
-    check-cast v1, Landroidx/compose/ui/graphics/w0;
+    check-cast v1, Landroidx/compose/ui/graphics/W;
 
-    .line 2
-    invoke-virtual {v1}, Landroidx/compose/ui/graphics/w0;->a()F
+    .line 5
+    invoke-virtual {v1}, Landroidx/compose/ui/graphics/W;->b()F
 
     move-result v1
 
     mul-float v1, v1, v0
 
-    check-cast p1, Landroidx/compose/ui/graphics/w0;
-
-    .line 3
-    invoke-virtual {p1, v1}, Landroidx/compose/ui/graphics/w0;->l(F)V
-
-    iget-object v0, p0, Landroidx/compose/ui/draw/ShadowGraphicsLayerElement$createBlock$1;->this$0:Landroidx/compose/ui/draw/ShadowGraphicsLayerElement;
-
-    .line 4
-    iget-object v0, v0, Landroidx/compose/ui/draw/ShadowGraphicsLayerElement;->d:Landroidx/compose/ui/graphics/z0;
-
-    .line 5
-    invoke-virtual {p1, v0}, Landroidx/compose/ui/graphics/w0;->m(Landroidx/compose/ui/graphics/z0;)V
-
-    iget-object v0, p0, Landroidx/compose/ui/draw/ShadowGraphicsLayerElement$createBlock$1;->this$0:Landroidx/compose/ui/draw/ShadowGraphicsLayerElement;
-
     .line 6
-    iget-boolean v0, v0, Landroidx/compose/ui/draw/ShadowGraphicsLayerElement;->e:Z
+    check-cast p1, Landroidx/compose/ui/graphics/W;
+
+    invoke-virtual {p1, v1}, Landroidx/compose/ui/graphics/W;->m(F)V
 
     .line 7
-    invoke-virtual {p1, v0}, Landroidx/compose/ui/graphics/w0;->d(Z)V
-
     iget-object v0, p0, Landroidx/compose/ui/draw/ShadowGraphicsLayerElement$createBlock$1;->this$0:Landroidx/compose/ui/draw/ShadowGraphicsLayerElement;
 
     .line 8
-    iget-wide v0, v0, Landroidx/compose/ui/draw/ShadowGraphicsLayerElement;->f:J
+    iget-object v0, v0, Landroidx/compose/ui/draw/ShadowGraphicsLayerElement;->b:Landroidx/compose/ui/graphics/Z;
 
     .line 9
-    invoke-virtual {p1, v0, v1}, Landroidx/compose/ui/graphics/w0;->c(J)V
-
-    iget-object v0, p0, Landroidx/compose/ui/draw/ShadowGraphicsLayerElement$createBlock$1;->this$0:Landroidx/compose/ui/draw/ShadowGraphicsLayerElement;
+    invoke-virtual {p1, v0}, Landroidx/compose/ui/graphics/W;->n(Landroidx/compose/ui/graphics/Z;)V
 
     .line 10
-    iget-wide v0, v0, Landroidx/compose/ui/draw/ShadowGraphicsLayerElement;->g:J
+    iget-object v0, p0, Landroidx/compose/ui/draw/ShadowGraphicsLayerElement$createBlock$1;->this$0:Landroidx/compose/ui/draw/ShadowGraphicsLayerElement;
 
     .line 11
-    invoke-virtual {p1, v0, v1}, Landroidx/compose/ui/graphics/w0;->p(J)V
+    iget-boolean v0, v0, Landroidx/compose/ui/draw/ShadowGraphicsLayerElement;->c:Z
+
+    .line 12
+    invoke-virtual {p1, v0}, Landroidx/compose/ui/graphics/W;->d(Z)V
+
+    .line 13
+    iget-object v0, p0, Landroidx/compose/ui/draw/ShadowGraphicsLayerElement$createBlock$1;->this$0:Landroidx/compose/ui/draw/ShadowGraphicsLayerElement;
+
+    .line 14
+    iget-wide v0, v0, Landroidx/compose/ui/draw/ShadowGraphicsLayerElement;->d:J
+
+    .line 15
+    invoke-virtual {p1, v0, v1}, Landroidx/compose/ui/graphics/W;->c(J)V
+
+    .line 16
+    iget-object v0, p0, Landroidx/compose/ui/draw/ShadowGraphicsLayerElement$createBlock$1;->this$0:Landroidx/compose/ui/draw/ShadowGraphicsLayerElement;
+
+    .line 17
+    iget-wide v0, v0, Landroidx/compose/ui/draw/ShadowGraphicsLayerElement;->e:J
+
+    .line 18
+    invoke-virtual {p1, v0, v1}, Landroidx/compose/ui/graphics/W;->p(J)V
 
     return-void
 .end method

@@ -38,9 +38,9 @@
 .method public a(Ljava/lang/String;)V
     .locals 0
 
-    .line 1
     const/4 p1, 0x1
 
+    .line 2
     iput-boolean p1, p0, Lcom/apm/insight/b/e;->c:Z
 
     return-void
@@ -49,7 +49,7 @@
 .method public a()Z
     .locals 1
 
-    .line 2
+    .line 1
     const/4 v0, 0x0
 
     return v0
@@ -58,9 +58,13 @@
 .method public b(Ljava/lang/String;)V
     .locals 0
 
+    .line 1
     const/4 p1, 0x0
 
+    .line 2
     iput-boolean p1, p0, Lcom/apm/insight/b/e;->c:Z
 
+    .line 3
+    .line 4
     return-void
 .end method

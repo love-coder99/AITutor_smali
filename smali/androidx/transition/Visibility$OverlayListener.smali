@@ -129,6 +129,10 @@
 
 .method public onAnimationEnd(Landroid/animation/Animator;Z)V
     .locals 0
+    .param p1    # Landroid/animation/Animator;
+        .annotation build Landroidx/annotation/NonNull;
+        .end annotation
+    .end param
 
     if-nez p2, :cond_0
 
@@ -227,6 +231,10 @@
 
 .method public onAnimationStart(Landroid/animation/Animator;Z)V
     .locals 1
+    .param p1    # Landroid/animation/Animator;
+        .annotation build Landroidx/annotation/NonNull;
+        .end annotation
+    .end param
 
     .line 1
     if-eqz p2, :cond_0
@@ -284,6 +292,10 @@
 
 .method public onTransitionCancel(Landroidx/transition/Transition;)V
     .locals 0
+    .param p1    # Landroidx/transition/Transition;
+        .annotation build Landroidx/annotation/NonNull;
+        .end annotation
+    .end param
 
     .line 1
     iget-boolean p1, p0, Landroidx/transition/Visibility$OverlayListener;->mHasOverlay:Z
@@ -305,6 +317,10 @@
 
 .method public onTransitionEnd(Landroidx/transition/Transition;)V
     .locals 0
+    .param p1    # Landroidx/transition/Transition;
+        .annotation build Landroidx/annotation/NonNull;
+        .end annotation
+    .end param
 
     .line 2
     invoke-virtual {p1, p0}, Landroidx/transition/Transition;->removeListener(Landroidx/transition/Transition$TransitionListener;)Landroidx/transition/Transition;
@@ -316,25 +332,37 @@
     .locals 0
 
     .line 1
-    invoke-static {p0, p1, p2}, Landroidx/transition/c;->a(Landroidx/transition/Transition$TransitionListener;Landroidx/transition/Transition;Z)V
+    invoke-static {p0, p1, p2}, Landroidx/transition/b;->a(Landroidx/transition/Transition$TransitionListener;Landroidx/transition/Transition;Z)V
 
     return-void
 .end method
 
 .method public onTransitionPause(Landroidx/transition/Transition;)V
     .locals 0
+    .param p1    # Landroidx/transition/Transition;
+        .annotation build Landroidx/annotation/NonNull;
+        .end annotation
+    .end param
 
     return-void
 .end method
 
 .method public onTransitionResume(Landroidx/transition/Transition;)V
     .locals 0
+    .param p1    # Landroidx/transition/Transition;
+        .annotation build Landroidx/annotation/NonNull;
+        .end annotation
+    .end param
 
     return-void
 .end method
 
 .method public onTransitionStart(Landroidx/transition/Transition;)V
     .locals 0
+    .param p1    # Landroidx/transition/Transition;
+        .annotation build Landroidx/annotation/NonNull;
+        .end annotation
+    .end param
 
     .line 1
     return-void
@@ -344,7 +372,7 @@
     .locals 0
 
     .line 2
-    invoke-static {p0, p1, p2}, Landroidx/transition/c;->b(Landroidx/transition/Transition$TransitionListener;Landroidx/transition/Transition;Z)V
+    invoke-static {p0, p1, p2}, Landroidx/transition/b;->b(Landroidx/transition/Transition$TransitionListener;Landroidx/transition/Transition;Z)V
 
     return-void
 .end method

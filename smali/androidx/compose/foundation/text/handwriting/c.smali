@@ -3,44 +3,44 @@
 .source "SourceFile"
 
 # interfaces
-.implements Landroidx/compose/ui/node/y;
+.implements Landroidx/compose/ui/node/v;
 
 
 # virtual methods
-.method public final synthetic b(Landroidx/compose/ui/layout/p;Landroidx/compose/ui/layout/o;I)I
+.method public final synthetic a(Landroidx/compose/ui/node/N;Landroidx/compose/ui/layout/l;I)I
     .locals 0
 
     .line 1
-    invoke-static {p0, p1, p2, p3}, Landroidx/compose/ui/node/x;->a(Landroidx/compose/ui/node/y;Landroidx/compose/ui/layout/p;Landroidx/compose/ui/layout/o;I)I
+    invoke-static {p0, p1, p2, p3}, Landroidx/compose/ui/node/u;->d(Landroidx/compose/ui/node/v;Landroidx/compose/ui/layout/m;Landroidx/compose/ui/layout/l;I)I
 
     move-result p1
 
     return p1
 .end method
 
-.method public final synthetic c(Landroidx/compose/ui/layout/p;Landroidx/compose/ui/layout/o;I)I
+.method public final synthetic c(Landroidx/compose/ui/node/N;Landroidx/compose/ui/layout/l;I)I
     .locals 0
 
     .line 1
-    invoke-static {p0, p1, p2, p3}, Landroidx/compose/ui/node/x;->d(Landroidx/compose/ui/node/y;Landroidx/compose/ui/layout/p;Landroidx/compose/ui/layout/o;I)I
+    invoke-static {p0, p1, p2, p3}, Landroidx/compose/ui/node/u;->c(Landroidx/compose/ui/node/v;Landroidx/compose/ui/layout/m;Landroidx/compose/ui/layout/l;I)I
 
     move-result p1
 
     return p1
 .end method
 
-.method public final synthetic d(Landroidx/compose/ui/layout/p;Landroidx/compose/ui/layout/o;I)I
+.method public final synthetic d(Landroidx/compose/ui/node/N;Landroidx/compose/ui/layout/l;I)I
     .locals 0
 
     .line 1
-    invoke-static {p0, p1, p2, p3}, Landroidx/compose/ui/node/x;->b(Landroidx/compose/ui/node/y;Landroidx/compose/ui/layout/p;Landroidx/compose/ui/layout/o;I)I
+    invoke-static {p0, p1, p2, p3}, Landroidx/compose/ui/node/u;->b(Landroidx/compose/ui/node/v;Landroidx/compose/ui/layout/m;Landroidx/compose/ui/layout/l;I)I
 
     move-result p1
 
     return p1
 .end method
 
-.method public final e0()Z
+.method public final d0()Z
     .locals 1
 
     .line 1
@@ -49,7 +49,18 @@
     return v0
 .end method
 
-.method public final f(Landroidx/compose/ui/layout/o0;Landroidx/compose/ui/layout/l0;J)Landroidx/compose/ui/layout/n0;
+.method public final synthetic e(Landroidx/compose/ui/node/N;Landroidx/compose/ui/layout/l;I)I
+    .locals 0
+
+    .line 1
+    invoke-static {p0, p1, p2, p3}, Landroidx/compose/ui/node/u;->a(Landroidx/compose/ui/node/v;Landroidx/compose/ui/layout/m;Landroidx/compose/ui/layout/l;I)I
+
+    move-result p1
+
+    return p1
+.end method
+
+.method public final h(Landroidx/compose/ui/layout/L;Landroidx/compose/ui/layout/I;J)Landroidx/compose/ui/layout/K;
     .locals 4
 
     .line 1
@@ -57,7 +68,7 @@
 
     .line 2
     .line 3
-    invoke-interface {p1, v0}, Lh2/b;->c0(F)I
+    invoke-interface {p1, v0}, LM0/b;->b0(F)I
 
     .line 4
     .line 5
@@ -69,7 +80,7 @@
 
     .line 8
     .line 9
-    invoke-interface {p1, v1}, Lh2/b;->c0(F)I
+    invoke-interface {p1, v1}, LM0/b;->b0(F)I
 
     .line 10
     .line 11
@@ -85,7 +96,7 @@
 
     .line 16
     .line 17
-    invoke-static {v2, v3, p3, p4}, Lcom/google/android/gms/internal/consent_sdk/z;->q(IIJ)J
+    invoke-static {v2, v3, p3, p4}, LP5/f;->F(IIJ)J
 
     .line 18
     .line 19
@@ -93,7 +104,7 @@
     move-result-wide p3
 
     .line 21
-    invoke-interface {p2, p3, p4}, Landroidx/compose/ui/layout/l0;->y(J)Landroidx/compose/ui/layout/a1;
+    invoke-interface {p2, p3, p4}, Landroidx/compose/ui/layout/I;->u(J)Landroidx/compose/ui/layout/X;
 
     .line 22
     .line 23
@@ -101,14 +112,14 @@
     move-result-object p2
 
     .line 25
-    iget p3, p2, Landroidx/compose/ui/layout/a1;->c:I
+    iget p3, p2, Landroidx/compose/ui/layout/X;->c:I
 
     .line 26
     .line 27
     sub-int/2addr p3, v3
 
     .line 28
-    iget p4, p2, Landroidx/compose/ui/layout/a1;->b:I
+    iget p4, p2, Landroidx/compose/ui/layout/X;->b:I
 
     .line 29
     .line 30
@@ -119,12 +130,12 @@
 
     .line 32
     .line 33
-    invoke-direct {v2, p2, v1, v0}, Landroidx/compose/foundation/text/handwriting/StylusHandwritingNodeWithNegativePadding$measure$1;-><init>(Landroidx/compose/ui/layout/a1;II)V
+    invoke-direct {v2, p2, v1, v0}, Landroidx/compose/foundation/text/handwriting/StylusHandwritingNodeWithNegativePadding$measure$1;-><init>(Landroidx/compose/ui/layout/X;II)V
 
     .line 34
     .line 35
     .line 36
-    invoke-static {p1, p4, p3, v2}, Landroidx/compose/ui/layout/x;->i(Landroidx/compose/ui/layout/o0;IILzh/c;)Landroidx/compose/ui/layout/n0;
+    invoke-static {p1, p4, p3, v2}, Landroidx/compose/ui/layout/u;->i(Landroidx/compose/ui/layout/L;IILka/c;)Landroidx/compose/ui/layout/K;
 
     .line 37
     .line 38
@@ -133,15 +144,4 @@
 
     .line 40
     return-object p1
-.end method
-
-.method public final synthetic h(Landroidx/compose/ui/layout/p;Landroidx/compose/ui/layout/o;I)I
-    .locals 0
-
-    .line 1
-    invoke-static {p0, p1, p2, p3}, Landroidx/compose/ui/node/x;->c(Landroidx/compose/ui/node/y;Landroidx/compose/ui/layout/p;Landroidx/compose/ui/layout/o;I)I
-
-    move-result p1
-
-    return p1
 .end method

@@ -3,7 +3,7 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lzh/c;
+.implements Lka/c;
 
 
 # annotations
@@ -19,7 +19,7 @@
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "Lkotlin/jvm/internal/Lambda;",
-        "Lzh/c;"
+        "Lka/c;"
     }
 .end annotation
 
@@ -30,7 +30,7 @@
     d2 = {
         "",
         "it",
-        "Lqh/r;",
+        "LX9/j;",
         "invoke",
         "(J)V",
         "<anonymous>"
@@ -45,42 +45,42 @@
 
 
 # instance fields
-.field final synthetic $$this$LaunchedEffect:Lkotlinx/coroutines/w;
+.field final synthetic $$this$LaunchedEffect:Lkotlinx/coroutines/u;
 
 .field final synthetic $durationScale:Lkotlin/jvm/internal/Ref$FloatRef;
 
-.field final synthetic $toolingOverride:Landroidx/compose/runtime/j1;
+.field final synthetic $toolingOverride:Landroidx/compose/runtime/Z;
     .annotation system Ldalvik/annotation/Signature;
         value = {
-            "Landroidx/compose/runtime/j1;"
+            "Landroidx/compose/runtime/Z;"
         }
     .end annotation
 .end field
 
-.field final synthetic this$0:Landroidx/compose/animation/core/g0;
+.field final synthetic this$0:Landroidx/compose/animation/core/C;
 
 
 # direct methods
-.method public constructor <init>(Landroidx/compose/runtime/j1;Landroidx/compose/animation/core/g0;Lkotlin/jvm/internal/Ref$FloatRef;Lkotlinx/coroutines/w;)V
+.method public constructor <init>(Landroidx/compose/runtime/Z;Landroidx/compose/animation/core/C;Lkotlin/jvm/internal/Ref$FloatRef;Lkotlinx/coroutines/u;)V
     .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
-            "Landroidx/compose/runtime/j1;",
-            "Landroidx/compose/animation/core/g0;",
+            "Landroidx/compose/runtime/Z;",
+            "Landroidx/compose/animation/core/C;",
             "Lkotlin/jvm/internal/Ref$FloatRef;",
-            "Lkotlinx/coroutines/w;",
+            "Lkotlinx/coroutines/u;",
             ")V"
         }
     .end annotation
 
-    iput-object p1, p0, Landroidx/compose/animation/core/InfiniteTransition$run$1$1$1;->$toolingOverride:Landroidx/compose/runtime/j1;
+    iput-object p1, p0, Landroidx/compose/animation/core/InfiniteTransition$run$1$1$1;->$toolingOverride:Landroidx/compose/runtime/Z;
 
-    iput-object p2, p0, Landroidx/compose/animation/core/InfiniteTransition$run$1$1$1;->this$0:Landroidx/compose/animation/core/g0;
+    iput-object p2, p0, Landroidx/compose/animation/core/InfiniteTransition$run$1$1$1;->this$0:Landroidx/compose/animation/core/C;
 
     iput-object p3, p0, Landroidx/compose/animation/core/InfiniteTransition$run$1$1$1;->$durationScale:Lkotlin/jvm/internal/Ref$FloatRef;
 
-    iput-object p4, p0, Landroidx/compose/animation/core/InfiniteTransition$run$1$1$1;->$$this$LaunchedEffect:Lkotlinx/coroutines/w;
+    iput-object p4, p0, Landroidx/compose/animation/core/InfiniteTransition$run$1$1$1;->$$this$LaunchedEffect:Lkotlinx/coroutines/u;
 
     const/4 p1, 0x1
 
@@ -103,7 +103,7 @@
 
     invoke-virtual {p0, v0, v1}, Landroidx/compose/animation/core/InfiniteTransition$run$1$1$1;->invoke(J)V
 
-    sget-object p1, Lqh/r;->a:Lqh/r;
+    sget-object p1, LX9/j;->a:LX9/j;
 
     return-object p1
 .end method
@@ -111,18 +111,18 @@
 .method public final invoke(J)V
     .locals 12
 
-    iget-object v0, p0, Landroidx/compose/animation/core/InfiniteTransition$run$1$1$1;->$toolingOverride:Landroidx/compose/runtime/j1;
-
     .line 2
-    invoke-interface {v0}, Landroidx/compose/runtime/d3;->getValue()Ljava/lang/Object;
+    iget-object v0, p0, Landroidx/compose/animation/core/InfiniteTransition$run$1$1$1;->$toolingOverride:Landroidx/compose/runtime/Z;
+
+    invoke-interface {v0}, Landroidx/compose/runtime/H0;->getValue()Ljava/lang/Object;
 
     move-result-object v0
 
-    check-cast v0, Landroidx/compose/runtime/d3;
+    check-cast v0, Landroidx/compose/runtime/H0;
 
     if-eqz v0, :cond_0
 
-    invoke-interface {v0}, Landroidx/compose/runtime/d3;->getValue()Ljava/lang/Object;
+    invoke-interface {v0}, Landroidx/compose/runtime/H0;->getValue()Ljava/lang/Object;
 
     move-result-object v0
 
@@ -137,11 +137,12 @@
     :cond_0
     move-wide v0, p1
 
-    :goto_0
-    iget-object v2, p0, Landroidx/compose/animation/core/InfiniteTransition$run$1$1$1;->this$0:Landroidx/compose/animation/core/g0;
-
     .line 3
-    iget-wide v2, v2, Landroidx/compose/animation/core/g0;->c:J
+    :goto_0
+    iget-object v2, p0, Landroidx/compose/animation/core/InfiniteTransition$run$1$1$1;->this$0:Landroidx/compose/animation/core/C;
+
+    .line 4
+    iget-wide v2, v2, Landroidx/compose/animation/core/C;->c:J
 
     const/4 v4, 0x1
 
@@ -153,18 +154,18 @@
 
     if-eqz v8, :cond_1
 
+    .line 5
     iget-object v2, p0, Landroidx/compose/animation/core/InfiniteTransition$run$1$1$1;->$durationScale:Lkotlin/jvm/internal/Ref$FloatRef;
 
-    .line 4
     iget v2, v2, Lkotlin/jvm/internal/Ref$FloatRef;->element:F
 
-    iget-object v3, p0, Landroidx/compose/animation/core/InfiniteTransition$run$1$1$1;->$$this$LaunchedEffect:Lkotlinx/coroutines/w;
+    iget-object v3, p0, Landroidx/compose/animation/core/InfiniteTransition$run$1$1$1;->$$this$LaunchedEffect:Lkotlinx/coroutines/u;
 
-    invoke-interface {v3}, Lkotlinx/coroutines/w;->n()Lkotlin/coroutines/i;
+    invoke-interface {v3}, Lkotlinx/coroutines/u;->u()Lba/g;
 
     move-result-object v3
 
-    invoke-static {v3}, Landroidx/compose/animation/core/b;->n(Lkotlin/coroutines/i;)F
+    invoke-static {v3}, Landroidx/compose/animation/core/b;->n(Lba/g;)F
 
     move-result v3
 
@@ -174,57 +175,59 @@
 
     goto :goto_1
 
-    :cond_1
-    iget-object v2, p0, Landroidx/compose/animation/core/InfiniteTransition$run$1$1$1;->this$0:Landroidx/compose/animation/core/g0;
-
-    .line 5
-    iput-wide p1, v2, Landroidx/compose/animation/core/g0;->c:J
-
     .line 6
-    iget-object p1, v2, Landroidx/compose/animation/core/g0;->a:Landroidx/compose/runtime/collection/e;
+    :cond_1
+    iget-object v2, p0, Landroidx/compose/animation/core/InfiniteTransition$run$1$1$1;->this$0:Landroidx/compose/animation/core/C;
 
-    iget p2, p1, Landroidx/compose/runtime/collection/e;->d:I
+    .line 7
+    iput-wide p1, v2, Landroidx/compose/animation/core/C;->c:J
+
+    .line 8
+    iget-object p1, v2, Landroidx/compose/animation/core/C;->a:Landroidx/compose/runtime/collection/d;
+
+    .line 9
+    iget p2, p1, Landroidx/compose/runtime/collection/d;->d:I
 
     if-lez p2, :cond_3
 
-    .line 7
-    iget-object p1, p1, Landroidx/compose/runtime/collection/e;->b:[Ljava/lang/Object;
+    .line 10
+    iget-object p1, p1, Landroidx/compose/runtime/collection/d;->b:[Ljava/lang/Object;
 
     const/4 v2, 0x0
 
-    .line 8
+    .line 11
     :cond_2
     aget-object v3, p1, v2
 
-    check-cast v3, Landroidx/compose/animation/core/f0;
+    check-cast v3, Landroidx/compose/animation/core/B;
 
-    .line 9
-    iput-boolean v4, v3, Landroidx/compose/animation/core/f0;->j:Z
+    .line 12
+    iput-boolean v4, v3, Landroidx/compose/animation/core/B;->j:Z
 
     add-int/lit8 v2, v2, 0x1
 
     if-lt v2, p2, :cond_2
 
+    .line 13
     :cond_3
     iget-object p1, p0, Landroidx/compose/animation/core/InfiniteTransition$run$1$1$1;->$durationScale:Lkotlin/jvm/internal/Ref$FloatRef;
 
-    iget-object p2, p0, Landroidx/compose/animation/core/InfiniteTransition$run$1$1$1;->$$this$LaunchedEffect:Lkotlinx/coroutines/w;
+    iget-object p2, p0, Landroidx/compose/animation/core/InfiniteTransition$run$1$1$1;->$$this$LaunchedEffect:Lkotlinx/coroutines/u;
 
-    .line 10
-    invoke-interface {p2}, Lkotlinx/coroutines/w;->n()Lkotlin/coroutines/i;
+    invoke-interface {p2}, Lkotlinx/coroutines/u;->u()Lba/g;
 
     move-result-object p2
 
-    invoke-static {p2}, Landroidx/compose/animation/core/b;->n(Lkotlin/coroutines/i;)F
+    invoke-static {p2}, Landroidx/compose/animation/core/b;->n(Lba/g;)F
 
     move-result p2
 
     iput p2, p1, Lkotlin/jvm/internal/Ref$FloatRef;->element:F
 
+    .line 14
     :goto_1
     iget-object p1, p0, Landroidx/compose/animation/core/InfiniteTransition$run$1$1$1;->$durationScale:Lkotlin/jvm/internal/Ref$FloatRef;
 
-    .line 11
     iget p1, p1, Lkotlin/jvm/internal/Ref$FloatRef;->element:F
 
     const/4 p2, 0x0
@@ -233,39 +236,40 @@
 
     if-nez p2, :cond_5
 
-    iget-object p1, p0, Landroidx/compose/animation/core/InfiniteTransition$run$1$1$1;->this$0:Landroidx/compose/animation/core/g0;
+    .line 15
+    iget-object p1, p0, Landroidx/compose/animation/core/InfiniteTransition$run$1$1$1;->this$0:Landroidx/compose/animation/core/C;
 
-    .line 12
-    iget-object p1, p1, Landroidx/compose/animation/core/g0;->a:Landroidx/compose/runtime/collection/e;
+    .line 16
+    iget-object p1, p1, Landroidx/compose/animation/core/C;->a:Landroidx/compose/runtime/collection/d;
 
-    .line 13
-    iget p2, p1, Landroidx/compose/runtime/collection/e;->d:I
+    .line 17
+    iget p2, p1, Landroidx/compose/runtime/collection/d;->d:I
 
     if-lez p2, :cond_b
 
-    .line 14
-    iget-object p1, p1, Landroidx/compose/runtime/collection/e;->b:[Ljava/lang/Object;
+    .line 18
+    iget-object p1, p1, Landroidx/compose/runtime/collection/d;->b:[Ljava/lang/Object;
 
-    .line 15
+    .line 19
     :cond_4
     aget-object v0, p1, v7
 
-    check-cast v0, Landroidx/compose/animation/core/f0;
-
-    .line 16
-    iget-object v1, v0, Landroidx/compose/animation/core/f0;->h:Landroidx/compose/animation/core/x0;
-
-    .line 17
-    iget-object v1, v1, Landroidx/compose/animation/core/x0;->c:Ljava/lang/Object;
-
-    .line 18
-    iget-object v2, v0, Landroidx/compose/animation/core/f0;->f:Landroidx/compose/runtime/ParcelableSnapshotMutableState;
-
-    .line 19
-    invoke-virtual {v2, v1}, Landroidx/compose/runtime/t2;->setValue(Ljava/lang/Object;)V
+    check-cast v0, Landroidx/compose/animation/core/B;
 
     .line 20
-    iput-boolean v4, v0, Landroidx/compose/animation/core/f0;->j:Z
+    iget-object v1, v0, Landroidx/compose/animation/core/B;->h:Landroidx/compose/animation/core/S;
+
+    .line 21
+    iget-object v1, v1, Landroidx/compose/animation/core/S;->c:Ljava/lang/Object;
+
+    .line 22
+    iget-object v2, v0, Landroidx/compose/animation/core/B;->f:Landroidx/compose/runtime/ParcelableSnapshotMutableState;
+
+    .line 23
+    invoke-virtual {v2, v1}, Landroidx/compose/runtime/ParcelableSnapshotMutableState;->setValue(Ljava/lang/Object;)V
+
+    .line 24
+    iput-boolean v4, v0, Landroidx/compose/animation/core/B;->j:Z
 
     add-int/lit8 v7, v7, 0x1
 
@@ -273,11 +277,12 @@
 
     goto :goto_3
 
+    .line 25
     :cond_5
-    iget-object p2, p0, Landroidx/compose/animation/core/InfiniteTransition$run$1$1$1;->this$0:Landroidx/compose/animation/core/g0;
+    iget-object p2, p0, Landroidx/compose/animation/core/InfiniteTransition$run$1$1$1;->this$0:Landroidx/compose/animation/core/C;
 
-    .line 21
-    iget-wide v2, p2, Landroidx/compose/animation/core/g0;->c:J
+    .line 26
+    iget-wide v2, p2, Landroidx/compose/animation/core/C;->c:J
 
     sub-long/2addr v0, v2
 
@@ -287,85 +292,87 @@
 
     float-to-long v0, v0
 
-    .line 22
-    iget-object p1, p2, Landroidx/compose/animation/core/g0;->a:Landroidx/compose/runtime/collection/e;
+    .line 27
+    iget-object p1, p2, Landroidx/compose/animation/core/C;->a:Landroidx/compose/runtime/collection/d;
 
-    iget v2, p1, Landroidx/compose/runtime/collection/e;->d:I
+    .line 28
+    iget v2, p1, Landroidx/compose/runtime/collection/d;->d:I
 
     if-lez v2, :cond_a
 
-    .line 23
-    iget-object p1, p1, Landroidx/compose/runtime/collection/e;->b:[Ljava/lang/Object;
+    .line 29
+    iget-object p1, p1, Landroidx/compose/runtime/collection/d;->b:[Ljava/lang/Object;
 
     const/4 v3, 0x0
 
     const/4 v5, 0x1
 
-    .line 24
+    .line 30
     :cond_6
     aget-object v6, p1, v3
 
-    check-cast v6, Landroidx/compose/animation/core/f0;
+    check-cast v6, Landroidx/compose/animation/core/B;
 
-    .line 25
-    iget-boolean v8, v6, Landroidx/compose/animation/core/f0;->i:Z
+    .line 31
+    iget-boolean v8, v6, Landroidx/compose/animation/core/B;->i:Z
 
     if-nez v8, :cond_8
 
-    .line 26
-    iget-object v8, v6, Landroidx/compose/animation/core/f0;->l:Landroidx/compose/animation/core/g0;
+    .line 32
+    iget-object v8, v6, Landroidx/compose/animation/core/B;->l:Landroidx/compose/animation/core/C;
 
-    iget-object v8, v8, Landroidx/compose/animation/core/g0;->b:Landroidx/compose/runtime/ParcelableSnapshotMutableState;
-
+    .line 33
     sget-object v9, Ljava/lang/Boolean;->FALSE:Ljava/lang/Boolean;
 
-    .line 27
-    invoke-virtual {v8, v9}, Landroidx/compose/runtime/t2;->setValue(Ljava/lang/Object;)V
+    .line 34
+    iget-object v8, v8, Landroidx/compose/animation/core/C;->b:Landroidx/compose/runtime/ParcelableSnapshotMutableState;
 
-    .line 28
-    iget-boolean v8, v6, Landroidx/compose/animation/core/f0;->j:Z
+    invoke-virtual {v8, v9}, Landroidx/compose/runtime/ParcelableSnapshotMutableState;->setValue(Ljava/lang/Object;)V
+
+    .line 35
+    iget-boolean v8, v6, Landroidx/compose/animation/core/B;->j:Z
 
     if-eqz v8, :cond_7
 
-    .line 29
-    iput-boolean v7, v6, Landroidx/compose/animation/core/f0;->j:Z
+    .line 36
+    iput-boolean v7, v6, Landroidx/compose/animation/core/B;->j:Z
 
-    .line 30
-    iput-wide v0, v6, Landroidx/compose/animation/core/f0;->k:J
+    .line 37
+    iput-wide v0, v6, Landroidx/compose/animation/core/B;->k:J
 
-    .line 31
+    .line 38
     :cond_7
-    iget-wide v8, v6, Landroidx/compose/animation/core/f0;->k:J
+    iget-wide v8, v6, Landroidx/compose/animation/core/B;->k:J
 
     sub-long v8, v0, v8
 
-    .line 32
-    iget-object v10, v6, Landroidx/compose/animation/core/f0;->h:Landroidx/compose/animation/core/x0;
+    .line 39
+    iget-object v10, v6, Landroidx/compose/animation/core/B;->h:Landroidx/compose/animation/core/S;
 
-    invoke-virtual {v10, v8, v9}, Landroidx/compose/animation/core/x0;->f(J)Ljava/lang/Object;
+    invoke-virtual {v10, v8, v9}, Landroidx/compose/animation/core/S;->f(J)Ljava/lang/Object;
 
     move-result-object v10
 
-    .line 33
-    iget-object v11, v6, Landroidx/compose/animation/core/f0;->f:Landroidx/compose/runtime/ParcelableSnapshotMutableState;
+    .line 40
+    iget-object v11, v6, Landroidx/compose/animation/core/B;->f:Landroidx/compose/runtime/ParcelableSnapshotMutableState;
 
-    .line 34
-    invoke-virtual {v11, v10}, Landroidx/compose/runtime/t2;->setValue(Ljava/lang/Object;)V
+    .line 41
+    invoke-virtual {v11, v10}, Landroidx/compose/runtime/ParcelableSnapshotMutableState;->setValue(Ljava/lang/Object;)V
 
-    .line 35
-    iget-object v10, v6, Landroidx/compose/animation/core/f0;->h:Landroidx/compose/animation/core/x0;
+    .line 42
+    iget-object v10, v6, Landroidx/compose/animation/core/B;->h:Landroidx/compose/animation/core/S;
 
     invoke-virtual {v10}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
-    invoke-static {v10, v8, v9}, Landroid/support/v4/media/session/a;->p(Landroidx/compose/animation/core/d;J)Z
+    invoke-static {v10, v8, v9}, Landroidx/appcompat/view/menu/F;->n(Landroidx/compose/animation/core/d;J)Z
 
     move-result v8
 
-    iput-boolean v8, v6, Landroidx/compose/animation/core/f0;->i:Z
+    iput-boolean v8, v6, Landroidx/compose/animation/core/B;->i:Z
 
-    .line 36
+    .line 43
     :cond_8
-    iget-boolean v6, v6, Landroidx/compose/animation/core/f0;->i:Z
+    iget-boolean v6, v6, Landroidx/compose/animation/core/B;->i:Z
 
     if-nez v6, :cond_9
 
@@ -384,15 +391,15 @@
     :goto_2
     xor-int/lit8 p1, v5, 0x1
 
-    .line 37
-    iget-object p2, p2, Landroidx/compose/animation/core/g0;->d:Landroidx/compose/runtime/ParcelableSnapshotMutableState;
-
+    .line 44
     invoke-static {p1}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
 
     move-result-object p1
 
-    .line 38
-    invoke-virtual {p2, p1}, Landroidx/compose/runtime/t2;->setValue(Ljava/lang/Object;)V
+    .line 45
+    iget-object p2, p2, Landroidx/compose/animation/core/C;->d:Landroidx/compose/runtime/ParcelableSnapshotMutableState;
+
+    invoke-virtual {p2, p1}, Landroidx/compose/runtime/ParcelableSnapshotMutableState;->setValue(Ljava/lang/Object;)V
 
     :cond_b
     :goto_3

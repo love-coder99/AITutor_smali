@@ -82,10 +82,10 @@
 
     invoke-virtual {p1, p4, p2}, Lcom/applovin/impl/sdk/n;->b(Ljava/lang/String;Ljava/lang/String;)V
 
+    .line 9
     :cond_0
     iget-object p1, p0, Lcom/applovin/impl/im$a;->n:Lcom/applovin/impl/im;
 
-    .line 9
     invoke-static {p1}, Lcom/applovin/impl/im;->b(Lcom/applovin/impl/im;)Lcom/applovin/impl/im$b;
 
     move-result-object p1
@@ -139,10 +139,10 @@
 
     invoke-virtual {p1, p2, p3}, Lcom/applovin/impl/sdk/n;->b(Ljava/lang/String;Ljava/lang/String;)V
 
+    .line 5
     :cond_0
     iget-object p1, p0, Lcom/applovin/impl/im$a;->n:Lcom/applovin/impl/im;
 
-    .line 5
     invoke-static {p1}, Lcom/applovin/impl/im;->b(Lcom/applovin/impl/im;)Lcom/applovin/impl/im$b;
 
     move-result-object p1
@@ -175,10 +175,10 @@
 
     invoke-virtual {p1, p3, v0}, Lcom/applovin/impl/sdk/n;->a(Ljava/lang/String;Ljava/lang/String;)V
 
+    .line 7
     :cond_2
     iget-object p1, p0, Lcom/applovin/impl/im$a;->n:Lcom/applovin/impl/im;
 
-    .line 7
     invoke-static {p1}, Lcom/applovin/impl/im;->b(Lcom/applovin/impl/im;)Lcom/applovin/impl/im$b;
 
     move-result-object p1

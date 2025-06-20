@@ -40,6 +40,7 @@
 .method private a()V
     .locals 2
 
+    .line 1
     iget v0, p0, Lcom/applovin/impl/cr;->c:I
 
     if-ltz v0, :cond_1
@@ -62,7 +63,6 @@
     :cond_1
     const/4 v0, 0x0
 
-    .line 1
     :goto_0
     invoke-static {v0}, Lcom/applovin/impl/b1;->b(Z)V
 
@@ -74,22 +74,23 @@
 .method public a(I)I
     .locals 6
 
+    .line 2
     iget v0, p0, Lcom/applovin/impl/cr;->c:I
 
+    .line 3
     iget v1, p0, Lcom/applovin/impl/cr;->d:I
 
     rsub-int/lit8 v1, v1, 0x8
 
-    .line 2
     invoke-static {p1, v1}, Ljava/lang/Math;->min(II)I
 
     move-result v1
 
+    .line 4
     iget-object v2, p0, Lcom/applovin/impl/cr;->a:[B
 
     add-int/lit8 v3, v0, 0x1
 
-    .line 3
     aget-byte v0, v2, v0
 
     const/16 v2, 0xff
@@ -109,11 +110,11 @@
     :goto_0
     if-ge v1, p1, :cond_0
 
+    .line 5
     iget-object v4, p0, Lcom/applovin/impl/cr;->a:[B
 
     add-int/lit8 v5, v3, 0x1
 
-    .line 4
     aget-byte v3, v4, v3
 
     and-int/2addr v3, v2
@@ -137,7 +138,7 @@
 
     and-int/2addr v0, v1
 
-    .line 5
+    .line 6
     invoke-virtual {p0, p1}, Lcom/applovin/impl/cr;->b(I)V
 
     return v0
@@ -164,12 +165,14 @@
     .line 2
     div-int/lit8 v0, p1, 0x8
 
+    .line 3
     iget v1, p0, Lcom/applovin/impl/cr;->c:I
 
     add-int/2addr v1, v0
 
     iput v1, p0, Lcom/applovin/impl/cr;->c:I
 
+    .line 4
     iget v2, p0, Lcom/applovin/impl/cr;->d:I
 
     mul-int/lit8 v0, v0, 0x8
@@ -186,13 +189,15 @@
 
     add-int/lit8 v1, v1, 0x1
 
+    .line 5
     iput v1, p0, Lcom/applovin/impl/cr;->c:I
 
     add-int/lit8 p1, p1, -0x8
 
+    .line 6
     iput p1, p0, Lcom/applovin/impl/cr;->d:I
 
-    .line 3
+    .line 7
     :cond_0
     invoke-direct {p0}, Lcom/applovin/impl/cr;->a()V
 

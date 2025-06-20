@@ -3,12 +3,12 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lzh/c;
+.implements Lka/c;
 
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Landroidx/compose/foundation/lazy/layout/LazyLayoutItemContentFactory$CachedItemContent$createContentLambda$1;->invoke(Landroidx/compose/runtime/l;I)V
+    value = Landroidx/compose/foundation/lazy/layout/LazyLayoutItemContentFactory$CachedItemContent$createContentLambda$1;->invoke(Landroidx/compose/runtime/j;I)V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -19,7 +19,7 @@
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "Lkotlin/jvm/internal/Lambda;",
-        "Lzh/c;"
+        "Lka/c;"
     }
 .end annotation
 
@@ -28,10 +28,10 @@
         "\u0000\u000c\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0008\u0003\u0010\u0004\u001a\u00020\u0001*\u00020\u0000H\n\u00a2\u0006\u0004\u0008\u0002\u0010\u0003"
     }
     d2 = {
-        "Landroidx/compose/runtime/p0;",
-        "Landroidx/compose/runtime/o0;",
+        "Landroidx/compose/runtime/H;",
+        "Landroidx/compose/runtime/G;",
         "invoke",
-        "(Landroidx/compose/runtime/p0;)Landroidx/compose/runtime/o0;",
+        "(Landroidx/compose/runtime/H;)Landroidx/compose/runtime/G;",
         "<anonymous>"
     }
     k = 0x3
@@ -62,17 +62,18 @@
 
 
 # virtual methods
-.method public final invoke(Landroidx/compose/runtime/p0;)Landroidx/compose/runtime/o0;
+.method public final invoke(Landroidx/compose/runtime/H;)Landroidx/compose/runtime/G;
     .locals 2
 
+    .line 2
     iget-object p1, p0, Landroidx/compose/foundation/lazy/layout/LazyLayoutItemContentFactory$CachedItemContent$createContentLambda$1$1$1;->this$0:Landroidx/compose/foundation/lazy/layout/y;
 
-    .line 2
-    new-instance v0, Landroidx/activity/compose/c;
+    .line 3
+    new-instance v0, Landroidx/activity/compose/b;
 
     const/4 v1, 0x3
 
-    invoke-direct {v0, p1, v1}, Landroidx/activity/compose/c;-><init>(Ljava/lang/Object;I)V
+    invoke-direct {v0, p1, v1}, Landroidx/activity/compose/b;-><init>(Ljava/lang/Object;I)V
 
     return-object v0
 .end method
@@ -81,9 +82,9 @@
     .locals 0
 
     .line 1
-    check-cast p1, Landroidx/compose/runtime/p0;
+    check-cast p1, Landroidx/compose/runtime/H;
 
-    invoke-virtual {p0, p1}, Landroidx/compose/foundation/lazy/layout/LazyLayoutItemContentFactory$CachedItemContent$createContentLambda$1$1$1;->invoke(Landroidx/compose/runtime/p0;)Landroidx/compose/runtime/o0;
+    invoke-virtual {p0, p1}, Landroidx/compose/foundation/lazy/layout/LazyLayoutItemContentFactory$CachedItemContent$createContentLambda$1$1$1;->invoke(Landroidx/compose/runtime/H;)Landroidx/compose/runtime/G;
 
     move-result-object p1
 

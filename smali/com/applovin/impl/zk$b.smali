@@ -51,21 +51,21 @@
 
     .line 8
     .line 9
-    const/4 v0, 0x1
+    const-string v0, "\\s*\\d+(?:\\.\\d+)?\\s*"
 
     .line 10
-    new-array v1, v0, [Ljava/lang/Object;
-
     .line 11
+    const/4 v1, 0x1
+
     .line 12
-    const/4 v2, 0x0
+    new-array v2, v1, [Ljava/lang/Object;
 
     .line 13
-    const-string v3, "\\s*\\d+(?:\\.\\d+)?\\s*"
-
     .line 14
+    const/4 v3, 0x0
+
     .line 15
-    aput-object v3, v1, v2
+    aput-object v0, v2, v3
 
     .line 16
     .line 17
@@ -73,39 +73,39 @@
 
     .line 18
     .line 19
-    invoke-static {v4, v1}, Lcom/applovin/impl/xp;->a(Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;
+    invoke-static {v4, v2}, Lcom/applovin/impl/xp;->a(Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;
 
     .line 20
     .line 21
     .line 22
-    move-result-object v1
+    move-result-object v2
 
     .line 23
-    invoke-static {v1}, Ljava/util/regex/Pattern;->compile(Ljava/lang/String;)Ljava/util/regex/Pattern;
+    invoke-static {v2}, Ljava/util/regex/Pattern;->compile(Ljava/lang/String;)Ljava/util/regex/Pattern;
 
     .line 24
     .line 25
     .line 26
-    move-result-object v1
+    move-result-object v2
 
     .line 27
-    sput-object v1, Lcom/applovin/impl/zk$b;->d:Ljava/util/regex/Pattern;
+    sput-object v2, Lcom/applovin/impl/zk$b;->d:Ljava/util/regex/Pattern;
 
     .line 28
     .line 29
-    new-array v0, v0, [Ljava/lang/Object;
+    new-array v1, v1, [Ljava/lang/Object;
 
     .line 30
     .line 31
-    aput-object v3, v0, v2
+    aput-object v0, v1, v3
 
     .line 32
     .line 33
-    const-string v1, "\\\\move\\(%1$s,%1$s,(%1$s),(%1$s)(?:,%1$s,%1$s)?\\)"
+    const-string v0, "\\\\move\\(%1$s,%1$s,(%1$s),(%1$s)(?:,%1$s,%1$s)?\\)"
 
     .line 34
     .line 35
-    invoke-static {v1, v0}, Lcom/applovin/impl/xp;->a(Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;
+    invoke-static {v0, v1}, Lcom/applovin/impl/xp;->a(Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;
 
     .line 36
     .line 37

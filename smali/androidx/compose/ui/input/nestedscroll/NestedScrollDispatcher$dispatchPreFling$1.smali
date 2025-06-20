@@ -4,6 +4,15 @@
 
 
 # annotations
+.annotation runtime Lca/c;
+    c = "androidx.compose.ui.input.nestedscroll.NestedScrollDispatcher"
+    f = "NestedScrollModifier.kt"
+    l = {
+        0xcb
+    }
+    m = "dispatchPreFling-QWom1Mo"
+.end annotation
+
 .annotation runtime Lkotlin/Metadata;
     k = 0x3
     mv = {
@@ -12,15 +21,6 @@
         0x0
     }
     xi = 0x30
-.end annotation
-
-.annotation runtime Lth/c;
-    c = "androidx.compose.ui.input.nestedscroll.NestedScrollDispatcher"
-    f = "NestedScrollModifier.kt"
-    l = {
-        0xcb
-    }
-    m = "dispatchPreFling-QWom1Mo"
 .end annotation
 
 
@@ -72,7 +72,7 @@
 
     const-wide/16 v0, 0x0
 
-    invoke-virtual {p1, v0, v1, p0}, Landroidx/compose/ui/input/nestedscroll/b;->b(JLkotlin/coroutines/Continuation;)Ljava/lang/Object;
+    invoke-virtual {p1, v0, v1, p0}, Landroidx/compose/ui/input/nestedscroll/b;->b(JLkotlin/coroutines/jvm/internal/ContinuationImpl;)Ljava/lang/Object;
 
     move-result-object p1
 

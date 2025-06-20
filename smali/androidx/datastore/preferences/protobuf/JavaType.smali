@@ -61,21 +61,21 @@
 
 # direct methods
 .method static constructor <clinit>()V
-    .locals 26
+    .locals 27
 
     .line 1
     new-instance v6, Landroidx/datastore/preferences/protobuf/JavaType;
 
     .line 2
     .line 3
-    const-string v1, "VOID"
-
-    .line 4
-    .line 5
     const/4 v2, 0x0
 
-    .line 6
+    .line 4
     const-class v3, Ljava/lang/Void;
+
+    .line 5
+    .line 6
+    const-string v1, "VOID"
 
     .line 7
     .line 8
@@ -102,434 +102,431 @@
 
     .line 18
     .line 19
-    const-string v8, "INT"
+    sget-object v1, Ljava/lang/Integer;->TYPE:Ljava/lang/Class;
 
     .line 20
     .line 21
-    const/4 v9, 0x1
+    invoke-static {v2}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
     .line 22
-    sget-object v13, Ljava/lang/Integer;->TYPE:Ljava/lang/Class;
-
     .line 23
     .line 24
-    const-class v11, Ljava/lang/Integer;
-
-    .line 25
-    .line 26
-    const/4 v1, 0x0
-
-    .line 27
-    invoke-static {v1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
-
-    .line 28
-    .line 29
-    .line 30
     move-result-object v12
 
-    .line 31
+    .line 25
+    const/4 v9, 0x1
+
+    .line 26
+    const-class v11, Ljava/lang/Integer;
+
+    .line 27
+    .line 28
+    const-string v8, "INT"
+
+    .line 29
+    .line 30
     move-object v7, v0
 
-    .line 32
-    move-object v10, v13
+    .line 31
+    move-object v10, v1
 
-    .line 33
+    .line 32
     invoke-direct/range {v7 .. v12}, Landroidx/datastore/preferences/protobuf/JavaType;-><init>(Ljava/lang/String;ILjava/lang/Class;Ljava/lang/Class;Ljava/io/Serializable;)V
 
+    .line 33
     .line 34
     .line 35
-    .line 36
     sput-object v0, Landroidx/datastore/preferences/protobuf/JavaType;->INT:Landroidx/datastore/preferences/protobuf/JavaType;
 
+    .line 36
     .line 37
+    new-instance v3, Landroidx/datastore/preferences/protobuf/JavaType;
+
     .line 38
-    new-instance v2, Landroidx/datastore/preferences/protobuf/JavaType;
-
     .line 39
+    sget-object v16, Ljava/lang/Long;->TYPE:Ljava/lang/Class;
+
     .line 40
-    const-string v15, "LONG"
-
     .line 41
+    const-wide/16 v4, 0x0
+
     .line 42
-    const/16 v16, 0x2
-
     .line 43
-    .line 44
-    sget-object v17, Ljava/lang/Long;->TYPE:Ljava/lang/Class;
+    invoke-static {v4, v5}, Ljava/lang/Long;->valueOf(J)Ljava/lang/Long;
 
+    .line 44
     .line 45
     .line 46
-    const-class v18, Ljava/lang/Long;
+    move-result-object v18
 
     .line 47
+    const/4 v15, 0x2
+
     .line 48
-    const-wide/16 v3, 0x0
+    const-class v17, Ljava/lang/Long;
 
     .line 49
     .line 50
-    invoke-static {v3, v4}, Ljava/lang/Long;->valueOf(J)Ljava/lang/Long;
+    const-string v14, "LONG"
 
     .line 51
     .line 52
+    move-object v13, v3
+
     .line 53
-    move-result-object v19
+    invoke-direct/range {v13 .. v18}, Landroidx/datastore/preferences/protobuf/JavaType;-><init>(Ljava/lang/String;ILjava/lang/Class;Ljava/lang/Class;Ljava/io/Serializable;)V
 
     .line 54
-    move-object v14, v2
-
     .line 55
-    invoke-direct/range {v14 .. v19}, Landroidx/datastore/preferences/protobuf/JavaType;-><init>(Ljava/lang/String;ILjava/lang/Class;Ljava/lang/Class;Ljava/io/Serializable;)V
-
     .line 56
+    sput-object v3, Landroidx/datastore/preferences/protobuf/JavaType;->LONG:Landroidx/datastore/preferences/protobuf/JavaType;
+
     .line 57
     .line 58
-    sput-object v2, Landroidx/datastore/preferences/protobuf/JavaType;->LONG:Landroidx/datastore/preferences/protobuf/JavaType;
+    new-instance v4, Landroidx/datastore/preferences/protobuf/JavaType;
 
     .line 59
     .line 60
-    new-instance v3, Landroidx/datastore/preferences/protobuf/JavaType;
+    sget-object v10, Ljava/lang/Float;->TYPE:Ljava/lang/Class;
 
     .line 61
     .line 62
-    const-string v8, "FLOAT"
+    const/4 v5, 0x0
 
     .line 63
+    invoke-static {v5}, Ljava/lang/Float;->valueOf(F)Ljava/lang/Float;
+
     .line 64
+    .line 65
+    .line 66
+    move-result-object v12
+
+    .line 67
     const/4 v9, 0x3
 
-    .line 65
-    sget-object v10, Ljava/lang/Float;->TYPE:Ljava/lang/Class;
-
-    .line 66
-    .line 67
+    .line 68
     const-class v11, Ljava/lang/Float;
 
-    .line 68
     .line 69
-    const/4 v4, 0x0
-
     .line 70
-    invoke-static {v4}, Ljava/lang/Float;->valueOf(F)Ljava/lang/Float;
+    const-string v8, "FLOAT"
 
     .line 71
     .line 72
+    move-object v7, v4
+
     .line 73
-    move-result-object v12
-
-    .line 74
-    move-object v7, v3
-
-    .line 75
     invoke-direct/range {v7 .. v12}, Landroidx/datastore/preferences/protobuf/JavaType;-><init>(Ljava/lang/String;ILjava/lang/Class;Ljava/lang/Class;Ljava/io/Serializable;)V
 
+    .line 74
+    .line 75
     .line 76
+    sput-object v4, Landroidx/datastore/preferences/protobuf/JavaType;->FLOAT:Landroidx/datastore/preferences/protobuf/JavaType;
+
     .line 77
     .line 78
-    sput-object v3, Landroidx/datastore/preferences/protobuf/JavaType;->FLOAT:Landroidx/datastore/preferences/protobuf/JavaType;
+    new-instance v5, Landroidx/datastore/preferences/protobuf/JavaType;
 
     .line 79
     .line 80
-    new-instance v4, Landroidx/datastore/preferences/protobuf/JavaType;
+    sget-object v16, Ljava/lang/Double;->TYPE:Ljava/lang/Class;
 
     .line 81
     .line 82
-    const-string v15, "DOUBLE"
+    const-wide/16 v7, 0x0
 
     .line 83
     .line 84
-    const/16 v16, 0x4
+    invoke-static {v7, v8}, Ljava/lang/Double;->valueOf(D)Ljava/lang/Double;
 
     .line 85
     .line 86
-    sget-object v17, Ljava/lang/Double;->TYPE:Ljava/lang/Class;
-
     .line 87
+    move-result-object v18
+
     .line 88
-    const-class v18, Ljava/lang/Double;
+    const/4 v15, 0x4
 
     .line 89
+    const-class v17, Ljava/lang/Double;
+
     .line 90
-    const-wide/16 v7, 0x0
-
     .line 91
+    const-string v14, "DOUBLE"
+
     .line 92
-    invoke-static {v7, v8}, Ljava/lang/Double;->valueOf(D)Ljava/lang/Double;
-
     .line 93
+    move-object v13, v5
+
     .line 94
+    invoke-direct/range {v13 .. v18}, Landroidx/datastore/preferences/protobuf/JavaType;-><init>(Ljava/lang/String;ILjava/lang/Class;Ljava/lang/Class;Ljava/io/Serializable;)V
+
     .line 95
-    move-result-object v19
-
     .line 96
-    move-object v14, v4
-
     .line 97
-    invoke-direct/range {v14 .. v19}, Landroidx/datastore/preferences/protobuf/JavaType;-><init>(Ljava/lang/String;ILjava/lang/Class;Ljava/lang/Class;Ljava/io/Serializable;)V
+    sput-object v5, Landroidx/datastore/preferences/protobuf/JavaType;->DOUBLE:Landroidx/datastore/preferences/protobuf/JavaType;
 
     .line 98
     .line 99
+    new-instance v13, Landroidx/datastore/preferences/protobuf/JavaType;
+
     .line 100
-    sput-object v4, Landroidx/datastore/preferences/protobuf/JavaType;->DOUBLE:Landroidx/datastore/preferences/protobuf/JavaType;
-
     .line 101
-    .line 102
-    new-instance v5, Landroidx/datastore/preferences/protobuf/JavaType;
-
-    .line 103
-    .line 104
-    const-string v8, "BOOLEAN"
-
-    .line 105
-    .line 106
-    const/4 v9, 0x5
-
-    .line 107
     sget-object v10, Ljava/lang/Boolean;->TYPE:Ljava/lang/Class;
 
-    .line 108
-    .line 109
+    .line 102
+    .line 103
+    sget-object v12, Ljava/lang/Boolean;->FALSE:Ljava/lang/Boolean;
+
+    .line 104
+    .line 105
+    const/4 v9, 0x5
+
+    .line 106
     const-class v11, Ljava/lang/Boolean;
 
+    .line 107
+    .line 108
+    const-string v8, "BOOLEAN"
+
+    .line 109
     .line 110
+    move-object v7, v13
+
     .line 111
-    sget-object v12, Ljava/lang/Boolean;->FALSE:Ljava/lang/Boolean;
+    invoke-direct/range {v7 .. v12}, Landroidx/datastore/preferences/protobuf/JavaType;-><init>(Ljava/lang/String;ILjava/lang/Class;Ljava/lang/Class;Ljava/io/Serializable;)V
 
     .line 112
     .line 113
-    move-object v7, v5
-
     .line 114
-    invoke-direct/range {v7 .. v12}, Landroidx/datastore/preferences/protobuf/JavaType;-><init>(Ljava/lang/String;ILjava/lang/Class;Ljava/lang/Class;Ljava/io/Serializable;)V
+    sput-object v13, Landroidx/datastore/preferences/protobuf/JavaType;->BOOLEAN:Landroidx/datastore/preferences/protobuf/JavaType;
 
     .line 115
     .line 116
+    new-instance v20, Landroidx/datastore/preferences/protobuf/JavaType;
+
     .line 117
-    sput-object v5, Landroidx/datastore/preferences/protobuf/JavaType;->BOOLEAN:Landroidx/datastore/preferences/protobuf/JavaType;
-
     .line 118
-    .line 119
-    new-instance v7, Landroidx/datastore/preferences/protobuf/JavaType;
-
-    .line 120
-    .line 121
-    const-string v15, "STRING"
-
-    .line 122
-    .line 123
     const/16 v16, 0x6
 
-    .line 124
-    .line 125
+    .line 119
+    .line 120
     const-class v17, Ljava/lang/String;
 
-    .line 126
-    .line 127
+    .line 121
+    .line 122
+    const-string v15, "STRING"
+
+    .line 123
+    .line 124
     const-class v18, Ljava/lang/String;
 
-    .line 128
-    .line 129
+    .line 125
+    .line 126
     const-string v19, ""
 
-    .line 130
-    .line 131
-    move-object v14, v7
+    .line 127
+    .line 128
+    move-object/from16 v14, v20
 
-    .line 132
+    .line 129
+    .line 130
     invoke-direct/range {v14 .. v19}, Landroidx/datastore/preferences/protobuf/JavaType;-><init>(Ljava/lang/String;ILjava/lang/Class;Ljava/lang/Class;Ljava/io/Serializable;)V
 
+    .line 131
+    .line 132
     .line 133
+    sput-object v20, Landroidx/datastore/preferences/protobuf/JavaType;->STRING:Landroidx/datastore/preferences/protobuf/JavaType;
+
     .line 134
     .line 135
-    sput-object v7, Landroidx/datastore/preferences/protobuf/JavaType;->STRING:Landroidx/datastore/preferences/protobuf/JavaType;
+    new-instance v14, Landroidx/datastore/preferences/protobuf/JavaType;
 
     .line 136
     .line 137
-    new-instance v8, Landroidx/datastore/preferences/protobuf/JavaType;
+    sget-object v12, Landroidx/datastore/preferences/protobuf/ByteString;->EMPTY:Landroidx/datastore/preferences/protobuf/ByteString;
 
     .line 138
     .line 139
-    const-string v21, "BYTE_STRING"
+    const/4 v9, 0x7
 
     .line 140
+    const-class v10, Landroidx/datastore/preferences/protobuf/ByteString;
+
     .line 141
-    const/16 v22, 0x7
-
     .line 142
+    const-string v8, "BYTE_STRING"
+
     .line 143
-    const-class v23, Landroidx/datastore/preferences/protobuf/ByteString;
-
     .line 144
-    .line 145
-    const-class v24, Landroidx/datastore/preferences/protobuf/ByteString;
+    const-class v11, Landroidx/datastore/preferences/protobuf/ByteString;
 
+    .line 145
     .line 146
+    move-object v7, v14
+
     .line 147
-    sget-object v25, Landroidx/datastore/preferences/protobuf/ByteString;->EMPTY:Landroidx/datastore/preferences/protobuf/ByteString;
+    invoke-direct/range {v7 .. v12}, Landroidx/datastore/preferences/protobuf/JavaType;-><init>(Ljava/lang/String;ILjava/lang/Class;Ljava/lang/Class;Ljava/io/Serializable;)V
 
     .line 148
     .line 149
-    move-object/from16 v20, v8
-
     .line 150
-    .line 151
-    invoke-direct/range {v20 .. v25}, Landroidx/datastore/preferences/protobuf/JavaType;-><init>(Ljava/lang/String;ILjava/lang/Class;Ljava/lang/Class;Ljava/io/Serializable;)V
+    sput-object v14, Landroidx/datastore/preferences/protobuf/JavaType;->BYTE_STRING:Landroidx/datastore/preferences/protobuf/JavaType;
 
+    .line 151
     .line 152
+    new-instance v15, Landroidx/datastore/preferences/protobuf/JavaType;
+
     .line 153
     .line 154
-    sput-object v8, Landroidx/datastore/preferences/protobuf/JavaType;->BYTE_STRING:Landroidx/datastore/preferences/protobuf/JavaType;
+    const-string v8, "ENUM"
 
     .line 155
     .line 156
-    new-instance v9, Landroidx/datastore/preferences/protobuf/JavaType;
+    const/16 v9, 0x8
 
     .line 157
     .line 158
-    const-string v11, "ENUM"
+    const-class v11, Ljava/lang/Integer;
 
     .line 159
     .line 160
-    const/16 v12, 0x8
+    const/4 v12, 0x0
 
     .line 161
+    move-object v7, v15
+
     .line 162
-    const-class v14, Ljava/lang/Integer;
+    move-object v10, v1
 
     .line 163
+    invoke-direct/range {v7 .. v12}, Landroidx/datastore/preferences/protobuf/JavaType;-><init>(Ljava/lang/String;ILjava/lang/Class;Ljava/lang/Class;Ljava/io/Serializable;)V
+
     .line 164
-    const/4 v15, 0x0
-
     .line 165
-    move-object v10, v9
-
     .line 166
-    invoke-direct/range {v10 .. v15}, Landroidx/datastore/preferences/protobuf/JavaType;-><init>(Ljava/lang/String;ILjava/lang/Class;Ljava/lang/Class;Ljava/io/Serializable;)V
+    sput-object v15, Landroidx/datastore/preferences/protobuf/JavaType;->ENUM:Landroidx/datastore/preferences/protobuf/JavaType;
 
     .line 167
     .line 168
+    new-instance v1, Landroidx/datastore/preferences/protobuf/JavaType;
+
     .line 169
-    sput-object v9, Landroidx/datastore/preferences/protobuf/JavaType;->ENUM:Landroidx/datastore/preferences/protobuf/JavaType;
-
     .line 170
+    const/16 v23, 0x9
+
     .line 171
-    new-instance v10, Landroidx/datastore/preferences/protobuf/JavaType;
-
     .line 172
+    const-class v24, Ljava/lang/Object;
+
     .line 173
-    const-string v17, "MESSAGE"
-
     .line 174
+    const-string v22, "MESSAGE"
+
     .line 175
-    const/16 v18, 0x9
-
     .line 176
+    const-class v25, Ljava/lang/Object;
+
     .line 177
-    const-class v19, Ljava/lang/Object;
-
     .line 178
+    const/16 v26, 0x0
+
     .line 179
-    const-class v20, Ljava/lang/Object;
-
     .line 180
+    move-object/from16 v21, v1
+
     .line 181
-    const/16 v21, 0x0
-
     .line 182
-    .line 183
-    move-object/from16 v16, v10
+    invoke-direct/range {v21 .. v26}, Landroidx/datastore/preferences/protobuf/JavaType;-><init>(Ljava/lang/String;ILjava/lang/Class;Ljava/lang/Class;Ljava/io/Serializable;)V
 
+    .line 183
     .line 184
     .line 185
-    invoke-direct/range {v16 .. v21}, Landroidx/datastore/preferences/protobuf/JavaType;-><init>(Ljava/lang/String;ILjava/lang/Class;Ljava/lang/Class;Ljava/io/Serializable;)V
+    sput-object v1, Landroidx/datastore/preferences/protobuf/JavaType;->MESSAGE:Landroidx/datastore/preferences/protobuf/JavaType;
 
     .line 186
     .line 187
+    const/16 v7, 0xa
+
     .line 188
-    sput-object v10, Landroidx/datastore/preferences/protobuf/JavaType;->MESSAGE:Landroidx/datastore/preferences/protobuf/JavaType;
-
     .line 189
+    new-array v7, v7, [Landroidx/datastore/preferences/protobuf/JavaType;
+
     .line 190
-    const/16 v11, 0xa
-
     .line 191
-    .line 192
-    new-array v11, v11, [Landroidx/datastore/preferences/protobuf/JavaType;
+    aput-object v6, v7, v2
 
+    .line 192
     .line 193
+    const/4 v2, 0x1
+
     .line 194
-    aput-object v6, v11, v1
+    aput-object v0, v7, v2
 
     .line 195
     .line 196
-    const/4 v1, 0x1
+    const/4 v0, 0x2
 
     .line 197
-    aput-object v0, v11, v1
+    aput-object v3, v7, v0
 
     .line 198
     .line 199
-    const/4 v0, 0x2
+    const/4 v0, 0x3
 
     .line 200
-    aput-object v2, v11, v0
+    aput-object v4, v7, v0
 
     .line 201
     .line 202
-    const/4 v0, 0x3
+    const/4 v0, 0x4
 
     .line 203
-    aput-object v3, v11, v0
+    aput-object v5, v7, v0
 
     .line 204
     .line 205
-    const/4 v0, 0x4
+    const/4 v0, 0x5
 
     .line 206
-    aput-object v4, v11, v0
+    aput-object v13, v7, v0
 
     .line 207
     .line 208
-    const/4 v0, 0x5
+    const/4 v0, 0x6
 
     .line 209
-    aput-object v5, v11, v0
+    aput-object v20, v7, v0
 
     .line 210
     .line 211
-    const/4 v0, 0x6
+    const/4 v0, 0x7
 
     .line 212
-    aput-object v7, v11, v0
+    aput-object v14, v7, v0
 
     .line 213
     .line 214
-    const/4 v0, 0x7
-
-    .line 215
-    aput-object v8, v11, v0
-
-    .line 216
-    .line 217
     const/16 v0, 0x8
 
-    .line 218
-    .line 219
-    aput-object v9, v11, v0
+    .line 215
+    .line 216
+    aput-object v15, v7, v0
 
-    .line 220
-    .line 221
+    .line 217
+    .line 218
     const/16 v0, 0x9
 
+    .line 219
+    .line 220
+    aput-object v1, v7, v0
+
+    .line 221
     .line 222
+    sput-object v7, Landroidx/datastore/preferences/protobuf/JavaType;->b:[Landroidx/datastore/preferences/protobuf/JavaType;
+
     .line 223
-    aput-object v10, v11, v0
-
     .line 224
-    .line 225
-    sput-object v11, Landroidx/datastore/preferences/protobuf/JavaType;->b:[Landroidx/datastore/preferences/protobuf/JavaType;
-
-    .line 226
-    .line 227
     return-void
 .end method
 
@@ -615,16 +612,22 @@
         }
     .end annotation
 
+    .line 1
     iget-object v0, p0, Landroidx/datastore/preferences/protobuf/JavaType;->boxedType:Ljava/lang/Class;
 
+    .line 2
+    .line 3
     return-object v0
 .end method
 
 .method public getDefaultDefault()Ljava/lang/Object;
     .locals 1
 
+    .line 1
     iget-object v0, p0, Landroidx/datastore/preferences/protobuf/JavaType;->defaultDefault:Ljava/lang/Object;
 
+    .line 2
+    .line 3
     return-object v0
 .end method
 
@@ -638,8 +641,11 @@
         }
     .end annotation
 
+    .line 1
     iget-object v0, p0, Landroidx/datastore/preferences/protobuf/JavaType;->type:Ljava/lang/Class;
 
+    .line 2
+    .line 3
     return-object v0
 .end method
 

@@ -2,110 +2,68 @@
 .super Ljava/lang/Object;
 .source "SourceFile"
 
+# interfaces
+.implements Landroid/view/ViewTreeObserver$OnDrawListener;
+
 
 # instance fields
-.field public a:Z
+.field public final synthetic b:Landroid/view/View;
 
-.field public b:Li3/c;
-
-.field public c:Z
+.field public final synthetic c:Li3/e;
 
 
-# virtual methods
-.method public final a(Li3/c;)V
-    .locals 1
+# direct methods
+.method public constructor <init>(Li3/e;Landroid/view/View;)V
+    .locals 0
 
     .line 1
-    monitor-enter p0
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 2
-    :catch_0
-    :goto_0
-    :try_start_0
-    iget-boolean v0, p0, Li3/d;->c:Z
-    :try_end_0
-    .catchall {:try_start_0 .. :try_end_0} :catchall_0
-
     .line 3
     .line 4
-    if-eqz v0, :cond_0
+    iput-object p1, p0, Li3/d;->c:Li3/e;
 
     .line 5
     .line 6
-    :try_start_1
-    invoke-virtual {p0}, Ljava/lang/Object;->wait()V
-    :try_end_1
-    .catch Ljava/lang/InterruptedException; {:try_start_1 .. :try_end_1} :catch_0
-    .catchall {:try_start_1 .. :try_end_1} :catchall_0
+    iput-object p2, p0, Li3/d;->b:Landroid/view/View;
 
     .line 7
     .line 8
+    return-void
+.end method
+
+
+# virtual methods
+.method public final onDraw()V
+    .locals 2
+
+    .line 1
+    new-instance v0, Lcom/google/android/gms/common/api/internal/o;
+
+    .line 2
+    .line 3
+    const/16 v1, 0x9
+
+    .line 4
+    .line 5
+    invoke-direct {v0, p0, v1, p0}, Lcom/google/android/gms/common/api/internal/o;-><init>(Ljava/lang/Object;ILjava/lang/Object;)V
+
+    .line 6
+    .line 7
+    .line 8
+    invoke-static {}, Lp3/l;->f()Landroid/os/Handler;
+
     .line 9
-    goto :goto_0
-
     .line 10
-    :cond_0
-    :try_start_2
-    iget-object v0, p0, Li3/d;->b:Li3/c;
-
     .line 11
+    move-result-object v1
+
     .line 12
-    if-ne v0, p1, :cond_1
+    invoke-virtual {v1, v0}, Landroid/os/Handler;->post(Ljava/lang/Runnable;)Z
 
     .line 13
     .line 14
-    monitor-exit p0
-
     .line 15
     return-void
-
-    .line 16
-    :catchall_0
-    move-exception p1
-
-    .line 17
-    goto :goto_1
-
-    .line 18
-    :cond_1
-    iput-object p1, p0, Li3/d;->b:Li3/c;
-
-    .line 19
-    .line 20
-    iget-boolean v0, p0, Li3/d;->a:Z
-
-    .line 21
-    .line 22
-    if-eqz v0, :cond_2
-
-    .line 23
-    .line 24
-    monitor-exit p0
-    :try_end_2
-    .catchall {:try_start_2 .. :try_end_2} :catchall_0
-
-    .line 25
-    invoke-interface {p1}, Li3/c;->onCancel()V
-
-    .line 26
-    .line 27
-    .line 28
-    return-void
-
-    .line 29
-    :cond_2
-    :try_start_3
-    monitor-exit p0
-
-    .line 30
-    return-void
-
-    .line 31
-    :goto_1
-    monitor-exit p0
-    :try_end_3
-    .catchall {:try_start_3 .. :try_end_3} :catchall_0
-
-    .line 32
-    throw p1
 .end method

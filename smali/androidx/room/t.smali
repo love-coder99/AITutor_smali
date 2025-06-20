@@ -1,55 +1,145 @@
 .class public final Landroidx/room/t;
-.super Landroid/os/RemoteCallbackList;
+.super LH1/g;
 .source "SourceFile"
 
 
-# instance fields
-.field public final synthetic a:Landroidx/room/MultiInstanceInvalidationService;
-
-
-# direct methods
-.method public constructor <init>(Landroidx/room/MultiInstanceInvalidationService;)V
-    .locals 0
-
-    .line 1
-    iput-object p1, p0, Landroidx/room/t;->a:Landroidx/room/MultiInstanceInvalidationService;
-
-    .line 2
-    .line 3
-    invoke-direct {p0}, Landroid/os/RemoteCallbackList;-><init>()V
-
-    .line 4
-    .line 5
-    .line 6
-    return-void
-.end method
-
-
 # virtual methods
-.method public final onCallbackDied(Landroid/os/IInterface;Ljava/lang/Object;)V
-    .locals 0
+.method public final a(Lk2/a;)V
+    .locals 1
 
     .line 1
-    check-cast p1, Landroidx/room/h;
+    new-instance p1, Ljava/lang/IllegalStateException;
 
     .line 2
     .line 3
-    iget-object p1, p0, Landroidx/room/t;->a:Landroidx/room/MultiInstanceInvalidationService;
+    const-string v0, "NOP delegate should never be called"
 
     .line 4
     .line 5
-    iget-object p1, p1, Landroidx/room/MultiInstanceInvalidationService;->c:Ljava/util/LinkedHashMap;
+    invoke-direct {p1, v0}, Ljava/lang/IllegalStateException;-><init>(Ljava/lang/String;)V
 
     .line 6
     .line 7
-    check-cast p2, Ljava/lang/Integer;
-
     .line 8
-    .line 9
-    invoke-interface {p1, p2}, Ljava/util/Map;->remove(Ljava/lang/Object;)Ljava/lang/Object;
+    throw p1
+.end method
 
-    .line 10
-    .line 11
-    .line 12
-    return-void
+.method public final c(Lk2/a;)V
+    .locals 1
+
+    .line 1
+    new-instance p1, Ljava/lang/IllegalStateException;
+
+    .line 2
+    .line 3
+    const-string v0, "NOP delegate should never be called"
+
+    .line 4
+    .line 5
+    invoke-direct {p1, v0}, Ljava/lang/IllegalStateException;-><init>(Ljava/lang/String;)V
+
+    .line 6
+    .line 7
+    .line 8
+    throw p1
+.end method
+
+.method public final s()V
+    .locals 2
+
+    .line 1
+    new-instance v0, Ljava/lang/IllegalStateException;
+
+    .line 2
+    .line 3
+    const-string v1, "NOP delegate should never be called"
+
+    .line 4
+    .line 5
+    invoke-direct {v0, v1}, Ljava/lang/IllegalStateException;-><init>(Ljava/lang/String;)V
+
+    .line 6
+    .line 7
+    .line 8
+    throw v0
+.end method
+
+.method public final t(Lk2/a;)V
+    .locals 1
+
+    .line 1
+    new-instance p1, Ljava/lang/IllegalStateException;
+
+    .line 2
+    .line 3
+    const-string v0, "NOP delegate should never be called"
+
+    .line 4
+    .line 5
+    invoke-direct {p1, v0}, Ljava/lang/IllegalStateException;-><init>(Ljava/lang/String;)V
+
+    .line 6
+    .line 7
+    .line 8
+    throw p1
+.end method
+
+.method public final u()V
+    .locals 2
+
+    .line 1
+    new-instance v0, Ljava/lang/IllegalStateException;
+
+    .line 2
+    .line 3
+    const-string v1, "NOP delegate should never be called"
+
+    .line 4
+    .line 5
+    invoke-direct {v0, v1}, Ljava/lang/IllegalStateException;-><init>(Ljava/lang/String;)V
+
+    .line 6
+    .line 7
+    .line 8
+    throw v0
+.end method
+
+.method public final v(Lk2/a;)V
+    .locals 1
+
+    .line 1
+    new-instance p1, Ljava/lang/IllegalStateException;
+
+    .line 2
+    .line 3
+    const-string v0, "NOP delegate should never be called"
+
+    .line 4
+    .line 5
+    invoke-direct {p1, v0}, Ljava/lang/IllegalStateException;-><init>(Ljava/lang/String;)V
+
+    .line 6
+    .line 7
+    .line 8
+    throw p1
+.end method
+
+.method public final w(Lk2/a;)LC5/F;
+    .locals 1
+
+    .line 1
+    new-instance p1, Ljava/lang/IllegalStateException;
+
+    .line 2
+    .line 3
+    const-string v0, "NOP delegate should never be called"
+
+    .line 4
+    .line 5
+    invoke-direct {p1, v0}, Ljava/lang/IllegalStateException;-><init>(Ljava/lang/String;)V
+
+    .line 6
+    .line 7
+    .line 8
+    throw p1
 .end method

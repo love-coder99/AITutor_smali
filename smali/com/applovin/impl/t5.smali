@@ -94,7 +94,7 @@
 .method public a()Z
     .locals 5
 
-    .line 1
+    .line 5
     iget-boolean v0, p0, Lcom/applovin/impl/t5;->c:Z
 
     if-eqz v0, :cond_1
@@ -125,7 +125,7 @@
 .method public a(Lcom/applovin/impl/qh;)Z
     .locals 0
 
-    .line 2
+    .line 1
     invoke-interface {p1}, Lcom/applovin/impl/qh;->u()V
 
     const/4 p1, 0x1
@@ -136,7 +136,7 @@
 .method public a(Lcom/applovin/impl/qh;I)Z
     .locals 0
 
-    .line 4
+    .line 3
     invoke-interface {p1, p2}, Lcom/applovin/impl/qh;->a(I)V
 
     const/4 p1, 0x1
@@ -147,7 +147,7 @@
 .method public a(Lcom/applovin/impl/qh;IJ)Z
     .locals 0
 
-    .line 3
+    .line 2
     invoke-interface {p1, p2, p3, p4}, Lcom/applovin/impl/qh;->a(IJ)V
 
     const/4 p1, 0x1
@@ -158,7 +158,7 @@
 .method public a(Lcom/applovin/impl/qh;Z)Z
     .locals 0
 
-    .line 5
+    .line 4
     invoke-interface {p1, p2}, Lcom/applovin/impl/qh;->b(Z)V
 
     const/4 p1, 0x1
@@ -169,7 +169,7 @@
 .method public b()Z
     .locals 5
 
-    .line 1
+    .line 3
     iget-boolean v0, p0, Lcom/applovin/impl/t5;->c:Z
 
     if-eqz v0, :cond_1
@@ -200,7 +200,7 @@
 .method public b(Lcom/applovin/impl/qh;)Z
     .locals 0
 
-    .line 2
+    .line 1
     invoke-interface {p1}, Lcom/applovin/impl/qh;->b()V
 
     const/4 p1, 0x1
@@ -211,7 +211,7 @@
 .method public b(Lcom/applovin/impl/qh;Z)Z
     .locals 0
 
-    .line 3
+    .line 2
     invoke-interface {p1, p2}, Lcom/applovin/impl/qh;->a(Z)V
 
     const/4 p1, 0x1

@@ -24,6 +24,9 @@
 .field private final zza:Lcom/android/billingclient/api/ProductDetails;
 
 .field private final zzb:Ljava/lang/String;
+    .annotation build Landroidx/annotation/Nullable;
+    .end annotation
+.end field
 
 
 # direct methods
@@ -49,6 +52,8 @@
 
 .method public static newBuilder()Lcom/android/billingclient/api/BillingFlowParams$ProductDetailsParams$Builder;
     .locals 2
+    .annotation build Landroidx/annotation/NonNull;
+    .end annotation
 
     new-instance v0, Lcom/android/billingclient/api/BillingFlowParams$ProductDetailsParams$Builder;
 
@@ -63,6 +68,8 @@
 # virtual methods
 .method public final zza()Lcom/android/billingclient/api/ProductDetails;
     .locals 1
+    .annotation build Landroidx/annotation/NonNull;
+    .end annotation
 
     iget-object v0, p0, Lcom/android/billingclient/api/BillingFlowParams$ProductDetailsParams;->zza:Lcom/android/billingclient/api/ProductDetails;
 
@@ -71,6 +78,8 @@
 
 .method public final zzb()Ljava/lang/String;
     .locals 1
+    .annotation build Landroidx/annotation/Nullable;
+    .end annotation
 
     iget-object v0, p0, Lcom/android/billingclient/api/BillingFlowParams$ProductDetailsParams;->zzb:Ljava/lang/String;
 

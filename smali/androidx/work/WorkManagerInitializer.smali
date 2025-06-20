@@ -3,14 +3,14 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lu4/b;
+.implements Lo2/b;
 
 
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "Ljava/lang/Object;",
-        "Lu4/b;"
+        "Lo2/b;"
     }
 .end annotation
 
@@ -24,7 +24,7 @@
 
     .line 2
     .line 3
-    invoke-static {v0}, Landroidx/work/u;->b(Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v0}, Landroidx/work/A;->b(Ljava/lang/String;)Ljava/lang/String;
 
     .line 4
     .line 5
@@ -35,8 +35,12 @@
 .method public constructor <init>()V
     .locals 0
 
+    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
+    .line 2
+    .line 3
+    .line 4
     return-void
 .end method
 
@@ -58,10 +62,10 @@
 .end method
 
 .method public final create(Landroid/content/Context;)Ljava/lang/Object;
-    .locals 2
+    .locals 3
 
     .line 1
-    invoke-static {}, Landroidx/work/u;->a()Landroidx/work/u;
+    invoke-static {}, Landroidx/work/A;->a()Landroidx/work/A;
 
     .line 2
     .line 3
@@ -74,36 +78,42 @@
     .line 6
     .line 7
     .line 8
-    new-instance v0, Landroidx/work/a;
+    new-instance v0, Landroidx/datastore/core/n;
 
     .line 9
     .line 10
-    invoke-direct {v0}, Ljava/lang/Object;-><init>()V
+    const/4 v1, 0x4
 
     .line 11
-    .line 12
-    .line 13
-    new-instance v1, Landroidx/work/c;
+    const/4 v2, 0x0
 
+    .line 12
+    invoke-direct {v0, v1, v2}, Landroidx/datastore/core/n;-><init>(IZ)V
+
+    .line 13
     .line 14
     .line 15
-    invoke-direct {v1, v0}, Landroidx/work/c;-><init>(Landroidx/work/a;)V
+    new-instance v1, Landroidx/work/b;
 
     .line 16
     .line 17
-    .line 18
-    invoke-static {p1, v1}, Landroidx/work/impl/i0;->h(Landroid/content/Context;Landroidx/work/c;)V
+    invoke-direct {v1, v0}, Landroidx/work/b;-><init>(Landroidx/datastore/core/n;)V
 
+    .line 18
     .line 19
     .line 20
-    .line 21
-    invoke-static {p1}, Landroidx/work/impl/i0;->g(Landroid/content/Context;)Landroidx/work/impl/i0;
+    invoke-static {p1, v1}, Landroidx/work/impl/n;->B(Landroid/content/Context;Landroidx/work/b;)V
 
+    .line 21
     .line 22
     .line 23
+    invoke-static {p1}, Landroidx/work/impl/n;->A(Landroid/content/Context;)Landroidx/work/impl/n;
+
     .line 24
+    .line 25
+    .line 26
     move-result-object p1
 
-    .line 25
+    .line 27
     return-object p1
 .end method

@@ -3,14 +3,14 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lzh/a;
+.implements Lka/a;
 
 
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "Lkotlin/jvm/internal/Lambda;",
-        "Lzh/a;"
+        "Lka/a;"
     }
 .end annotation
 
@@ -20,9 +20,9 @@
     }
     d2 = {
         "T",
-        "Landroidx/compose/animation/core/m;",
+        "Landroidx/compose/animation/core/l;",
         "V",
-        "Lqh/r;",
+        "LX9/j;",
         "invoke",
         "()V",
         "<anonymous>"
@@ -37,27 +37,27 @@
 
 
 # instance fields
-.field final synthetic $this_animate:Landroidx/compose/animation/core/h;
+.field final synthetic $this_animate:Landroidx/compose/animation/core/g;
     .annotation system Ldalvik/annotation/Signature;
         value = {
-            "Landroidx/compose/animation/core/h;"
+            "Landroidx/compose/animation/core/g;"
         }
     .end annotation
 .end field
 
 
 # direct methods
-.method public constructor <init>(Landroidx/compose/animation/core/h;)V
+.method public constructor <init>(Landroidx/compose/animation/core/g;)V
     .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
-            "Landroidx/compose/animation/core/h;",
+            "Landroidx/compose/animation/core/g;",
             ")V"
         }
     .end annotation
 
-    iput-object p1, p0, Landroidx/compose/animation/core/SuspendAnimationKt$animate$7;->$this_animate:Landroidx/compose/animation/core/h;
+    iput-object p1, p0, Landroidx/compose/animation/core/SuspendAnimationKt$animate$7;->$this_animate:Landroidx/compose/animation/core/g;
 
     const/4 p1, 0x0
 
@@ -71,10 +71,10 @@
 .method public bridge synthetic invoke()Ljava/lang/Object;
     .locals 1
 
-    .line 2
+    .line 3
     invoke-virtual {p0}, Landroidx/compose/animation/core/SuspendAnimationKt$animate$7;->invoke()V
 
-    sget-object v0, Lqh/r;->a:Lqh/r;
+    sget-object v0, LX9/j;->a:LX9/j;
 
     return-object v0
 .end method
@@ -82,12 +82,13 @@
 .method public final invoke()V
     .locals 2
 
-    iget-object v0, p0, Landroidx/compose/animation/core/SuspendAnimationKt$animate$7;->$this_animate:Landroidx/compose/animation/core/h;
+    .line 1
+    iget-object v0, p0, Landroidx/compose/animation/core/SuspendAnimationKt$animate$7;->$this_animate:Landroidx/compose/animation/core/g;
 
     const/4 v1, 0x0
 
-    .line 1
-    iput-boolean v1, v0, Landroidx/compose/animation/core/h;->h:Z
+    .line 2
+    iput-boolean v1, v0, Landroidx/compose/animation/core/g;->h:Z
 
     return-void
 .end method

@@ -3,7 +3,7 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lzh/c;
+.implements Lka/c;
 
 
 # annotations
@@ -19,7 +19,7 @@
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "Lkotlin/jvm/internal/Lambda;",
-        "Lzh/c;"
+        "Lka/c;"
     }
 .end annotation
 
@@ -28,12 +28,12 @@
         "\u0000\u0014\n\u0002\u0018\u0002\n\u0002\u0010\u0007\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0008\u0003\u0010\u0006\u001a\u00020\u0003*\u000e\u0012\u0004\u0012\u00020\u0001\u0012\u0004\u0012\u00020\u00020\u0000H\n\u00a2\u0006\u0004\u0008\u0004\u0010\u0005"
     }
     d2 = {
-        "Landroidx/compose/animation/core/f;",
+        "Landroidx/compose/animation/core/e;",
         "",
-        "Landroidx/compose/animation/core/i;",
-        "Lqh/r;",
+        "Landroidx/compose/animation/core/h;",
+        "LX9/j;",
         "invoke",
-        "(Landroidx/compose/animation/core/f;)V",
+        "(Landroidx/compose/animation/core/e;)V",
         "<anonymous>"
     }
     k = 0x3
@@ -48,7 +48,7 @@
 # instance fields
 .field final synthetic $lastValue:Lkotlin/jvm/internal/Ref$FloatRef;
 
-.field final synthetic $this_performFling:Landroidx/compose/foundation/gestures/a0;
+.field final synthetic $this_performFling:Landroidx/compose/foundation/gestures/C;
 
 .field final synthetic $velocityLeft:Lkotlin/jvm/internal/Ref$FloatRef;
 
@@ -56,12 +56,12 @@
 
 
 # direct methods
-.method public constructor <init>(Lkotlin/jvm/internal/Ref$FloatRef;Landroidx/compose/foundation/gestures/a0;Lkotlin/jvm/internal/Ref$FloatRef;Landroidx/compose/foundation/gestures/k;)V
+.method public constructor <init>(Lkotlin/jvm/internal/Ref$FloatRef;Landroidx/compose/foundation/gestures/C;Lkotlin/jvm/internal/Ref$FloatRef;Landroidx/compose/foundation/gestures/k;)V
     .locals 0
 
     iput-object p1, p0, Landroidx/compose/foundation/gestures/DefaultFlingBehavior$performFling$2$1;->$lastValue:Lkotlin/jvm/internal/Ref$FloatRef;
 
-    iput-object p2, p0, Landroidx/compose/foundation/gestures/DefaultFlingBehavior$performFling$2$1;->$this_performFling:Landroidx/compose/foundation/gestures/a0;
+    iput-object p2, p0, Landroidx/compose/foundation/gestures/DefaultFlingBehavior$performFling$2$1;->$this_performFling:Landroidx/compose/foundation/gestures/C;
 
     iput-object p3, p0, Landroidx/compose/foundation/gestures/DefaultFlingBehavior$performFling$2$1;->$velocityLeft:Lkotlin/jvm/internal/Ref$FloatRef;
 
@@ -79,31 +79,31 @@
 .method public bridge synthetic invoke(Ljava/lang/Object;)Ljava/lang/Object;
     .locals 0
 
-    .line 17
-    check-cast p1, Landroidx/compose/animation/core/f;
+    .line 20
+    check-cast p1, Landroidx/compose/animation/core/e;
 
-    invoke-virtual {p0, p1}, Landroidx/compose/foundation/gestures/DefaultFlingBehavior$performFling$2$1;->invoke(Landroidx/compose/animation/core/f;)V
+    invoke-virtual {p0, p1}, Landroidx/compose/foundation/gestures/DefaultFlingBehavior$performFling$2$1;->invoke(Landroidx/compose/animation/core/e;)V
 
-    sget-object p1, Lqh/r;->a:Lqh/r;
+    sget-object p1, LX9/j;->a:LX9/j;
 
     return-object p1
 .end method
 
-.method public final invoke(Landroidx/compose/animation/core/f;)V
+.method public final invoke(Landroidx/compose/animation/core/e;)V
     .locals 5
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
-            "Landroidx/compose/animation/core/f;",
+            "Landroidx/compose/animation/core/e;",
             ")V"
         }
     .end annotation
 
     .line 1
-    iget-object v0, p1, Landroidx/compose/animation/core/f;->e:Landroidx/compose/runtime/ParcelableSnapshotMutableState;
+    iget-object v0, p1, Landroidx/compose/animation/core/e;->e:Landroidx/compose/runtime/ParcelableSnapshotMutableState;
 
     .line 2
-    invoke-virtual {v0}, Landroidx/compose/runtime/t2;->getValue()Ljava/lang/Object;
+    invoke-virtual {v0}, Landroidx/compose/runtime/ParcelableSnapshotMutableState;->getValue()Ljava/lang/Object;
 
     move-result-object v0
 
@@ -120,24 +120,25 @@
 
     sub-float/2addr v0, v1
 
-    iget-object v1, p0, Landroidx/compose/foundation/gestures/DefaultFlingBehavior$performFling$2$1;->$this_performFling:Landroidx/compose/foundation/gestures/a0;
-
     .line 4
-    invoke-interface {v1, v0}, Landroidx/compose/foundation/gestures/a0;->a(F)F
+    iget-object v1, p0, Landroidx/compose/foundation/gestures/DefaultFlingBehavior$performFling$2$1;->$this_performFling:Landroidx/compose/foundation/gestures/C;
+
+    invoke-interface {v1, v0}, Landroidx/compose/foundation/gestures/C;->a(F)F
 
     move-result v1
 
+    .line 5
     iget-object v2, p0, Landroidx/compose/foundation/gestures/DefaultFlingBehavior$performFling$2$1;->$lastValue:Lkotlin/jvm/internal/Ref$FloatRef;
 
-    .line 5
-    iget-object v3, p1, Landroidx/compose/animation/core/f;->e:Landroidx/compose/runtime/ParcelableSnapshotMutableState;
-
     .line 6
-    invoke-virtual {v3}, Landroidx/compose/runtime/t2;->getValue()Ljava/lang/Object;
+    iget-object v3, p1, Landroidx/compose/animation/core/e;->e:Landroidx/compose/runtime/ParcelableSnapshotMutableState;
+
+    .line 7
+    invoke-virtual {v3}, Landroidx/compose/runtime/ParcelableSnapshotMutableState;->getValue()Ljava/lang/Object;
 
     move-result-object v3
 
-    .line 7
+    .line 8
     check-cast v3, Ljava/lang/Number;
 
     invoke-virtual {v3}, Ljava/lang/Number;->floatValue()F
@@ -146,24 +147,25 @@
 
     iput v3, v2, Lkotlin/jvm/internal/Ref$FloatRef;->element:F
 
+    .line 9
     iget-object v2, p0, Landroidx/compose/foundation/gestures/DefaultFlingBehavior$performFling$2$1;->$velocityLeft:Lkotlin/jvm/internal/Ref$FloatRef;
 
-    .line 8
-    iget-object v3, p1, Landroidx/compose/animation/core/f;->a:Landroidx/compose/animation/core/j1;
-
-    check-cast v3, Landroidx/compose/animation/core/k1;
-
-    .line 9
-    iget-object v3, v3, Landroidx/compose/animation/core/k1;->b:Lzh/c;
-
     .line 10
-    iget-object v4, p1, Landroidx/compose/animation/core/f;->f:Landroidx/compose/animation/core/m;
+    iget-object v3, p1, Landroidx/compose/animation/core/e;->a:Landroidx/compose/animation/core/e0;
 
-    invoke-interface {v3, v4}, Lzh/c;->invoke(Ljava/lang/Object;)Ljava/lang/Object;
+    check-cast v3, Landroidx/compose/animation/core/f0;
+
+    .line 11
+    iget-object v3, v3, Landroidx/compose/animation/core/f0;->b:Lka/c;
+
+    .line 12
+    iget-object v4, p1, Landroidx/compose/animation/core/e;->f:Landroidx/compose/animation/core/l;
+
+    invoke-interface {v3, v4}, Lka/c;->invoke(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object v3
 
-    .line 11
+    .line 13
     check-cast v3, Ljava/lang/Number;
 
     invoke-virtual {v3}, Ljava/lang/Number;->floatValue()F
@@ -174,7 +176,7 @@
 
     sub-float/2addr v0, v1
 
-    .line 12
+    .line 14
     invoke-static {v0}, Ljava/lang/Math;->abs(F)F
 
     move-result v0
@@ -185,23 +187,24 @@
 
     if-lez v0, :cond_0
 
-    .line 13
-    iget-object v0, p1, Landroidx/compose/animation/core/f;->i:Landroidx/compose/runtime/ParcelableSnapshotMutableState;
-
-    sget-object v1, Ljava/lang/Boolean;->FALSE:Ljava/lang/Boolean;
-
-    .line 14
-    invoke-virtual {v0, v1}, Landroidx/compose/runtime/t2;->setValue(Ljava/lang/Object;)V
-
     .line 15
-    iget-object p1, p1, Landroidx/compose/animation/core/f;->d:Lzh/a;
+    sget-object v0, Ljava/lang/Boolean;->FALSE:Ljava/lang/Boolean;
 
-    invoke-interface {p1}, Lzh/a;->invoke()Ljava/lang/Object;
+    .line 16
+    iget-object v1, p1, Landroidx/compose/animation/core/e;->i:Landroidx/compose/runtime/ParcelableSnapshotMutableState;
 
+    invoke-virtual {v1, v0}, Landroidx/compose/runtime/ParcelableSnapshotMutableState;->setValue(Ljava/lang/Object;)V
+
+    .line 17
+    iget-object p1, p1, Landroidx/compose/animation/core/e;->d:Lkotlin/jvm/internal/Lambda;
+
+    invoke-interface {p1}, Lka/a;->invoke()Ljava/lang/Object;
+
+    .line 18
     :cond_0
     iget-object p1, p0, Landroidx/compose/foundation/gestures/DefaultFlingBehavior$performFling$2$1;->this$0:Landroidx/compose/foundation/gestures/k;
 
-    .line 16
+    .line 19
     invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
     return-void

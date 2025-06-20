@@ -3,14 +3,14 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lzh/e;
+.implements Lka/e;
 
 
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "Lkotlin/jvm/internal/Lambda;",
-        "Lzh/e;"
+        "Lka/e;"
     }
 .end annotation
 
@@ -38,14 +38,14 @@
 
 
 # instance fields
-.field final synthetic this$0:Landroidx/compose/foundation/gestures/h0;
+.field final synthetic this$0:Landroidx/compose/foundation/gestures/J;
 
 
 # direct methods
-.method public constructor <init>(Landroidx/compose/foundation/gestures/h0;)V
+.method public constructor <init>(Landroidx/compose/foundation/gestures/J;)V
     .locals 0
 
-    iput-object p1, p0, Landroidx/compose/foundation/gestures/ScrollableNode$setScrollSemanticsActions$1;->this$0:Landroidx/compose/foundation/gestures/h0;
+    iput-object p1, p0, Landroidx/compose/foundation/gestures/ScrollableNode$setScrollSemanticsActions$1;->this$0:Landroidx/compose/foundation/gestures/J;
 
     const/4 p1, 0x2
 
@@ -59,25 +59,26 @@
 .method public final invoke(FF)Ljava/lang/Boolean;
     .locals 4
 
-    iget-object v0, p0, Landroidx/compose/foundation/gestures/ScrollableNode$setScrollSemanticsActions$1;->this$0:Landroidx/compose/foundation/gestures/h0;
-
     .line 2
-    invoke-virtual {v0}, Landroidx/compose/ui/n;->o0()Lkotlinx/coroutines/w;
+    iget-object v0, p0, Landroidx/compose/foundation/gestures/ScrollableNode$setScrollSemanticsActions$1;->this$0:Landroidx/compose/foundation/gestures/J;
+
+    invoke-virtual {v0}, Landroidx/compose/ui/n;->m0()Lkotlinx/coroutines/u;
 
     move-result-object v0
 
     new-instance v1, Landroidx/compose/foundation/gestures/ScrollableNode$setScrollSemanticsActions$1$1;
 
-    iget-object v2, p0, Landroidx/compose/foundation/gestures/ScrollableNode$setScrollSemanticsActions$1;->this$0:Landroidx/compose/foundation/gestures/h0;
+    iget-object v2, p0, Landroidx/compose/foundation/gestures/ScrollableNode$setScrollSemanticsActions$1;->this$0:Landroidx/compose/foundation/gestures/J;
 
     const/4 v3, 0x0
 
-    invoke-direct {v1, v2, p1, p2, v3}, Landroidx/compose/foundation/gestures/ScrollableNode$setScrollSemanticsActions$1$1;-><init>(Landroidx/compose/foundation/gestures/h0;FFLkotlin/coroutines/Continuation;)V
+    invoke-direct {v1, v2, p1, p2, v3}, Landroidx/compose/foundation/gestures/ScrollableNode$setScrollSemanticsActions$1$1;-><init>(Landroidx/compose/foundation/gestures/J;FFLkotlin/coroutines/Continuation;)V
 
     const/4 p1, 0x3
 
-    invoke-static {v0, v3, v3, v1, p1}, Lf7/l;->D(Lkotlinx/coroutines/w;Lkotlin/coroutines/g;Lkotlinx/coroutines/CoroutineStart;Lzh/e;I)Lkotlinx/coroutines/q1;
+    invoke-static {v0, v3, v3, v1, p1}, Lkotlinx/coroutines/w;->w(Lkotlinx/coroutines/u;Lba/g;Lkotlinx/coroutines/CoroutineStart;Lka/e;I)Lkotlinx/coroutines/r0;
 
+    .line 3
     sget-object p1, Ljava/lang/Boolean;->TRUE:Ljava/lang/Boolean;
 
     return-object p1

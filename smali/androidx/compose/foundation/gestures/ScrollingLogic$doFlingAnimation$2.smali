@@ -3,25 +3,35 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lzh/e;
+.implements Lka/e;
 
 
 # annotations
+.annotation runtime Lca/c;
+    c = "androidx.compose.foundation.gestures.ScrollingLogic$doFlingAnimation$2"
+    f = "Scrollable.kt"
+    l = {
+        0x30e
+    }
+    m = "invokeSuspend"
+.end annotation
+
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "Lkotlin/coroutines/jvm/internal/SuspendLambda;",
-        "Lzh/e;"
+        "Lka/e;"
     }
 .end annotation
 
 .annotation runtime Lkotlin/Metadata;
     d1 = {
-        "\u0000\n\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\u0010\u0002\u001a\u00020\u0001*\u00020\u0000H\u008a@"
+        "\u0000\u000c\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0008\u0002\u0010\u0002\u001a\u00020\u0001*\u00020\u0000H\u008a@\u00a2\u0006\u0004\u0008\u0002\u0010\u0003"
     }
     d2 = {
-        "Landroidx/compose/foundation/gestures/x;",
-        "Lqh/r;",
-        "<anonymous>"
+        "Landroidx/compose/foundation/gestures/z;",
+        "LX9/j;",
+        "<anonymous>",
+        "(Landroidx/compose/foundation/gestures/z;)V"
     }
     k = 0x3
     mv = {
@@ -29,15 +39,6 @@
         0x8,
         0x0
     }
-.end annotation
-
-.annotation runtime Lth/c;
-    c = "androidx.compose.foundation.gestures.ScrollingLogic$doFlingAnimation$2"
-    f = "Scrollable.kt"
-    l = {
-        0x30e
-    }
-    m = "invokeSuspend"
 .end annotation
 
 
@@ -56,16 +57,16 @@
 
 .field label:I
 
-.field final synthetic this$0:Landroidx/compose/foundation/gestures/l0;
+.field final synthetic this$0:Landroidx/compose/foundation/gestures/N;
 
 
 # direct methods
-.method public constructor <init>(Landroidx/compose/foundation/gestures/l0;Lkotlin/jvm/internal/Ref$LongRef;JLkotlin/coroutines/Continuation;)V
+.method public constructor <init>(Landroidx/compose/foundation/gestures/N;Lkotlin/jvm/internal/Ref$LongRef;JLkotlin/coroutines/Continuation;)V
     .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
-            "Landroidx/compose/foundation/gestures/l0;",
+            "Landroidx/compose/foundation/gestures/N;",
             "Lkotlin/jvm/internal/Ref$LongRef;",
             "J",
             "Lkotlin/coroutines/Continuation<",
@@ -75,7 +76,7 @@
         }
     .end annotation
 
-    iput-object p1, p0, Landroidx/compose/foundation/gestures/ScrollingLogic$doFlingAnimation$2;->this$0:Landroidx/compose/foundation/gestures/l0;
+    iput-object p1, p0, Landroidx/compose/foundation/gestures/ScrollingLogic$doFlingAnimation$2;->this$0:Landroidx/compose/foundation/gestures/N;
 
     iput-object p2, p0, Landroidx/compose/foundation/gestures/ScrollingLogic$doFlingAnimation$2;->$result:Lkotlin/jvm/internal/Ref$LongRef;
 
@@ -99,14 +100,14 @@
             "Lkotlin/coroutines/Continuation<",
             "*>;)",
             "Lkotlin/coroutines/Continuation<",
-            "Lqh/r;",
+            "LX9/j;",
             ">;"
         }
     .end annotation
 
     new-instance v6, Landroidx/compose/foundation/gestures/ScrollingLogic$doFlingAnimation$2;
 
-    iget-object v1, p0, Landroidx/compose/foundation/gestures/ScrollingLogic$doFlingAnimation$2;->this$0:Landroidx/compose/foundation/gestures/l0;
+    iget-object v1, p0, Landroidx/compose/foundation/gestures/ScrollingLogic$doFlingAnimation$2;->this$0:Landroidx/compose/foundation/gestures/N;
 
     iget-object v2, p0, Landroidx/compose/foundation/gestures/ScrollingLogic$doFlingAnimation$2;->$result:Lkotlin/jvm/internal/Ref$LongRef;
 
@@ -116,22 +117,22 @@
 
     move-object v5, p2
 
-    invoke-direct/range {v0 .. v5}, Landroidx/compose/foundation/gestures/ScrollingLogic$doFlingAnimation$2;-><init>(Landroidx/compose/foundation/gestures/l0;Lkotlin/jvm/internal/Ref$LongRef;JLkotlin/coroutines/Continuation;)V
+    invoke-direct/range {v0 .. v5}, Landroidx/compose/foundation/gestures/ScrollingLogic$doFlingAnimation$2;-><init>(Landroidx/compose/foundation/gestures/N;Lkotlin/jvm/internal/Ref$LongRef;JLkotlin/coroutines/Continuation;)V
 
     iput-object p1, v6, Landroidx/compose/foundation/gestures/ScrollingLogic$doFlingAnimation$2;->L$0:Ljava/lang/Object;
 
     return-object v6
 .end method
 
-.method public final invoke(Landroidx/compose/foundation/gestures/x;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
+.method public final invoke(Landroidx/compose/foundation/gestures/z;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
     .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
-            "Landroidx/compose/foundation/gestures/x;",
+            "Landroidx/compose/foundation/gestures/z;",
             "Lkotlin/coroutines/Continuation<",
             "-",
-            "Lqh/r;",
+            "LX9/j;",
             ">;)",
             "Ljava/lang/Object;"
         }
@@ -144,7 +145,7 @@
 
     check-cast p1, Landroidx/compose/foundation/gestures/ScrollingLogic$doFlingAnimation$2;
 
-    sget-object p2, Lqh/r;->a:Lqh/r;
+    sget-object p2, LX9/j;->a:LX9/j;
 
     invoke-virtual {p1, p2}, Landroidx/compose/foundation/gestures/ScrollingLogic$doFlingAnimation$2;->invokeSuspend(Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -157,11 +158,11 @@
     .locals 0
 
     .line 2
-    check-cast p1, Landroidx/compose/foundation/gestures/x;
+    check-cast p1, Landroidx/compose/foundation/gestures/z;
 
     check-cast p2, Lkotlin/coroutines/Continuation;
 
-    invoke-virtual {p0, p1, p2}, Landroidx/compose/foundation/gestures/ScrollingLogic$doFlingAnimation$2;->invoke(Landroidx/compose/foundation/gestures/x;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
+    invoke-virtual {p0, p1, p2}, Landroidx/compose/foundation/gestures/ScrollingLogic$doFlingAnimation$2;->invoke(Landroidx/compose/foundation/gestures/z;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
 
     move-result-object p1
 
@@ -207,7 +208,7 @@
 
     .line 17
     .line 18
-    check-cast v4, Landroidx/compose/foundation/gestures/l0;
+    check-cast v4, Landroidx/compose/foundation/gestures/N;
 
     .line 19
     .line 20
@@ -215,7 +216,7 @@
 
     .line 21
     .line 22
-    check-cast v5, Landroidx/compose/foundation/gestures/l0;
+    check-cast v5, Landroidx/compose/foundation/gestures/N;
 
     .line 23
     .line 24
@@ -254,19 +255,19 @@
 
     .line 40
     .line 41
-    check-cast p1, Landroidx/compose/foundation/gestures/x;
+    check-cast p1, Landroidx/compose/foundation/gestures/z;
 
     .line 42
     .line 43
-    new-instance v1, Landroidx/compose/foundation/gestures/j0;
+    new-instance v1, Landroidx/compose/foundation/gestures/L;
 
     .line 44
     .line 45
-    iget-object v4, p0, Landroidx/compose/foundation/gestures/ScrollingLogic$doFlingAnimation$2;->this$0:Landroidx/compose/foundation/gestures/l0;
+    iget-object v4, p0, Landroidx/compose/foundation/gestures/ScrollingLogic$doFlingAnimation$2;->this$0:Landroidx/compose/foundation/gestures/N;
 
     .line 46
     .line 47
-    invoke-direct {v1, p1, v4}, Landroidx/compose/foundation/gestures/j0;-><init>(Landroidx/compose/foundation/gestures/x;Landroidx/compose/foundation/gestures/l0;)V
+    invoke-direct {v1, p1, v4}, Landroidx/compose/foundation/gestures/L;-><init>(Landroidx/compose/foundation/gestures/z;Landroidx/compose/foundation/gestures/N;)V
 
     .line 48
     .line 49
@@ -279,7 +280,7 @@
 
     .line 53
     .line 54
-    iget-object p1, v4, Landroidx/compose/foundation/gestures/l0;->c:Landroidx/compose/foundation/gestures/v;
+    iget-object p1, v4, Landroidx/compose/foundation/gestures/N;->c:Landroidx/compose/foundation/gestures/x;
 
     .line 55
     .line 56
@@ -287,7 +288,7 @@
 
     .line 57
     .line 58
-    iget-object v9, v4, Landroidx/compose/foundation/gestures/l0;->d:Landroidx/compose/foundation/gestures/Orientation;
+    iget-object v9, v4, Landroidx/compose/foundation/gestures/N;->d:Landroidx/compose/foundation/gestures/Orientation;
 
     .line 59
     .line 60
@@ -299,7 +300,7 @@
 
     .line 63
     .line 64
-    invoke-static {v5, v6}, Lh2/n;->b(J)F
+    invoke-static {v5, v6}, LM0/n;->b(J)F
 
     .line 65
     .line 66
@@ -311,7 +312,7 @@
 
     .line 69
     :cond_2
-    invoke-static {v5, v6}, Lh2/n;->c(J)F
+    invoke-static {v5, v6}, LM0/n;->c(J)F
 
     .line 70
     .line 71
@@ -320,7 +321,7 @@
 
     .line 73
     :goto_0
-    invoke-virtual {v4, v5}, Landroidx/compose/foundation/gestures/l0;->c(F)F
+    invoke-virtual {v4, v5}, Landroidx/compose/foundation/gestures/N;->c(F)F
 
     .line 74
     .line 75
@@ -348,7 +349,7 @@
 
     .line 86
     .line 87
-    invoke-interface {p1, v1, v5, p0}, Landroidx/compose/foundation/gestures/v;->a(Landroidx/compose/foundation/gestures/j0;FLkotlin/coroutines/Continuation;)Ljava/lang/Object;
+    invoke-interface {p1, v1, v5, p0}, Landroidx/compose/foundation/gestures/x;->a(Landroidx/compose/foundation/gestures/L;FLkotlin/coroutines/Continuation;)Ljava/lang/Object;
 
     .line 88
     .line 89
@@ -383,7 +384,7 @@
     move-result p1
 
     .line 102
-    invoke-virtual {v5, p1}, Landroidx/compose/foundation/gestures/l0;->c(F)F
+    invoke-virtual {v5, p1}, Landroidx/compose/foundation/gestures/N;->c(F)F
 
     .line 103
     .line 104
@@ -391,7 +392,7 @@
     move-result p1
 
     .line 106
-    iget-object v4, v4, Landroidx/compose/foundation/gestures/l0;->d:Landroidx/compose/foundation/gestures/Orientation;
+    iget-object v4, v4, Landroidx/compose/foundation/gestures/N;->d:Landroidx/compose/foundation/gestures/Orientation;
 
     .line 107
     .line 108
@@ -409,7 +410,7 @@
     const/4 v2, 0x2
 
     .line 114
-    invoke-static {v0, v1, p1, v6, v2}, Lh2/n;->a(JFFI)J
+    invoke-static {p1, v6, v2, v0, v1}, LM0/n;->a(FFIJ)J
 
     .line 115
     .line 116
@@ -421,7 +422,7 @@
 
     .line 119
     :cond_4
-    invoke-static {v0, v1, v6, p1, v2}, Lh2/n;->a(JFFI)J
+    invoke-static {v6, p1, v2, v0, v1}, LM0/n;->a(FFIJ)J
 
     .line 120
     .line 121
@@ -434,7 +435,7 @@
 
     .line 124
     .line 125
-    sget-object p1, Lqh/r;->a:Lqh/r;
+    sget-object p1, LX9/j;->a:LX9/j;
 
     .line 126
     .line 127

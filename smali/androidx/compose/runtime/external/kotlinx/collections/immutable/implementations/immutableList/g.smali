@@ -6,7 +6,7 @@
 # instance fields
 .field public final d:[Ljava/lang/Object;
 
-.field public final f:Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableList/k;
+.field public final f:Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableList/j;
 
 
 # direct methods
@@ -39,16 +39,16 @@
 
     .line 13
     :cond_0
-    new-instance p4, Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableList/k;
+    new-instance p4, Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableList/j;
 
     .line 14
     .line 15
-    invoke-direct {p4, p1, p2, p3, p5}, Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableList/k;-><init>([Ljava/lang/Object;III)V
+    invoke-direct {p4, p1, p2, p3, p5}, Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableList/j;-><init>([Ljava/lang/Object;III)V
 
     .line 16
     .line 17
     .line 18
-    iput-object p4, p0, Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableList/g;->f:Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableList/k;
+    iput-object p4, p0, Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableList/g;->f:Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableList/j;
 
     .line 19
     .line 20
@@ -73,7 +73,7 @@
 
     .line 6
     .line 7
-    iget-object v0, p0, Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableList/g;->f:Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableList/k;
+    iget-object v0, p0, Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableList/g;->f:Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableList/j;
 
     .line 8
     .line 9
@@ -101,7 +101,7 @@
 
     .line 20
     .line 21
-    invoke-virtual {v0}, Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableList/k;->next()Ljava/lang/Object;
+    invoke-virtual {v0}, Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableList/j;->next()Ljava/lang/Object;
 
     .line 22
     .line 23
@@ -176,7 +176,7 @@
 
     .line 8
     .line 9
-    iget-object v1, p0, Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableList/g;->f:Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableList/k;
+    iget-object v1, p0, Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableList/g;->f:Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableList/j;
 
     .line 10
     .line 11
@@ -219,7 +219,7 @@
 
     .line 28
     .line 29
-    invoke-virtual {v1}, Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableList/k;->previous()Ljava/lang/Object;
+    invoke-virtual {v1}, Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableList/j;->previous()Ljava/lang/Object;
 
     .line 30
     .line 31

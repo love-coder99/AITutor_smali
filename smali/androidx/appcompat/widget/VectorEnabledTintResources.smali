@@ -24,6 +24,14 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;Landroid/content/res/Resources;)V
     .locals 0
+    .param p1    # Landroid/content/Context;
+        .annotation build Landroidx/annotation/NonNull;
+        .end annotation
+    .end param
+    .param p2    # Landroid/content/res/Resources;
+        .annotation build Landroidx/annotation/NonNull;
+        .end annotation
+    .end param
 
     .line 1
     invoke-direct {p0, p2}, Landroidx/appcompat/widget/ResourcesWrapper;-><init>(Landroid/content/res/Resources;)V
@@ -50,16 +58,22 @@
 .method public static isCompatVectorFromResourcesEnabled()Z
     .locals 1
 
+    .line 1
     sget-boolean v0, Landroidx/appcompat/widget/VectorEnabledTintResources;->sCompatVectorFromResourcesEnabled:Z
 
+    .line 2
+    .line 3
     return v0
 .end method
 
 .method public static setCompatVectorFromResourcesEnabled(Z)V
     .locals 0
 
+    .line 1
     sput-boolean p0, Landroidx/appcompat/widget/VectorEnabledTintResources;->sCompatVectorFromResourcesEnabled:Z
 
+    .line 2
+    .line 3
     return-void
 .end method
 
@@ -258,9 +272,9 @@
         }
     .end annotation
 
+    .line 2
     iget-object v0, p0, Landroidx/appcompat/widget/VectorEnabledTintResources;->mContextRef:Ljava/lang/ref/WeakReference;
 
-    .line 2
     invoke-virtual {v0}, Ljava/lang/ref/Reference;->get()Ljava/lang/Object;
 
     move-result-object v0

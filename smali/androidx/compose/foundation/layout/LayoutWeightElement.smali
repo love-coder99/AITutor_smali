@@ -1,12 +1,12 @@
 .class public final Landroidx/compose/foundation/layout/LayoutWeightElement;
-.super Landroidx/compose/ui/node/w0;
+.super Landroidx/compose/ui/node/V;
 .source "SourceFile"
 
 
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
-        "Landroidx/compose/ui/node/w0;"
+        "Landroidx/compose/ui/node/V;"
     }
 .end annotation
 
@@ -16,8 +16,8 @@
     }
     d2 = {
         "Landroidx/compose/foundation/layout/LayoutWeightElement;",
-        "Landroidx/compose/ui/node/w0;",
-        "Landroidx/compose/foundation/layout/k0;",
+        "Landroidx/compose/ui/node/V;",
+        "Landroidx/compose/foundation/layout/H;",
         "foundation-layout_release"
     }
     k = 0x1
@@ -26,13 +26,14 @@
         0x8,
         0x0
     }
+    xi = 0x30
 .end annotation
 
 
 # instance fields
-.field public final c:F
+.field public final a:F
 
-.field public final d:Z
+.field public final b:Z
 
 
 # direct methods
@@ -45,11 +46,11 @@
     .line 2
     .line 3
     .line 4
-    iput p1, p0, Landroidx/compose/foundation/layout/LayoutWeightElement;->c:F
+    iput p1, p0, Landroidx/compose/foundation/layout/LayoutWeightElement;->a:F
 
     .line 5
     .line 6
-    iput-boolean p2, p0, Landroidx/compose/foundation/layout/LayoutWeightElement;->d:Z
+    iput-boolean p2, p0, Landroidx/compose/foundation/layout/LayoutWeightElement;->b:Z
 
     .line 7
     .line 8
@@ -104,11 +105,11 @@
 
     .line 17
     :cond_2
-    iget v2, p0, Landroidx/compose/foundation/layout/LayoutWeightElement;->c:F
+    iget v2, p0, Landroidx/compose/foundation/layout/LayoutWeightElement;->a:F
 
     .line 18
     .line 19
-    iget v3, p1, Landroidx/compose/foundation/layout/LayoutWeightElement;->c:F
+    iget v3, p1, Landroidx/compose/foundation/layout/LayoutWeightElement;->a:F
 
     .line 20
     .line 21
@@ -120,11 +121,11 @@
 
     .line 24
     .line 25
-    iget-boolean v2, p0, Landroidx/compose/foundation/layout/LayoutWeightElement;->d:Z
+    iget-boolean v2, p0, Landroidx/compose/foundation/layout/LayoutWeightElement;->b:Z
 
     .line 26
     .line 27
-    iget-boolean p1, p1, Landroidx/compose/foundation/layout/LayoutWeightElement;->d:Z
+    iget-boolean p1, p1, Landroidx/compose/foundation/layout/LayoutWeightElement;->b:Z
 
     .line 28
     .line 29
@@ -147,7 +148,7 @@
     .locals 2
 
     .line 1
-    iget v0, p0, Landroidx/compose/foundation/layout/LayoutWeightElement;->c:F
+    iget v0, p0, Landroidx/compose/foundation/layout/LayoutWeightElement;->a:F
 
     .line 2
     .line 3
@@ -163,7 +164,7 @@
 
     .line 8
     .line 9
-    iget-boolean v1, p0, Landroidx/compose/foundation/layout/LayoutWeightElement;->d:Z
+    iget-boolean v1, p0, Landroidx/compose/foundation/layout/LayoutWeightElement;->b:Z
 
     .line 10
     .line 11
@@ -194,7 +195,7 @@
     .locals 2
 
     .line 1
-    new-instance v0, Landroidx/compose/foundation/layout/k0;
+    new-instance v0, Landroidx/compose/foundation/layout/H;
 
     .line 2
     .line 3
@@ -203,19 +204,19 @@
     .line 4
     .line 5
     .line 6
-    iget v1, p0, Landroidx/compose/foundation/layout/LayoutWeightElement;->c:F
+    iget v1, p0, Landroidx/compose/foundation/layout/LayoutWeightElement;->a:F
 
     .line 7
     .line 8
-    iput v1, v0, Landroidx/compose/foundation/layout/k0;->p:F
+    iput v1, v0, Landroidx/compose/foundation/layout/H;->p:F
 
     .line 9
     .line 10
-    iget-boolean v1, p0, Landroidx/compose/foundation/layout/LayoutWeightElement;->d:Z
+    iget-boolean v1, p0, Landroidx/compose/foundation/layout/LayoutWeightElement;->b:Z
 
     .line 11
     .line 12
-    iput-boolean v1, v0, Landroidx/compose/foundation/layout/k0;->q:Z
+    iput-boolean v1, v0, Landroidx/compose/foundation/layout/H;->q:Z
 
     .line 13
     .line 14
@@ -226,23 +227,23 @@
     .locals 1
 
     .line 1
-    check-cast p1, Landroidx/compose/foundation/layout/k0;
+    check-cast p1, Landroidx/compose/foundation/layout/H;
 
     .line 2
     .line 3
-    iget v0, p0, Landroidx/compose/foundation/layout/LayoutWeightElement;->c:F
+    iget v0, p0, Landroidx/compose/foundation/layout/LayoutWeightElement;->a:F
 
     .line 4
     .line 5
-    iput v0, p1, Landroidx/compose/foundation/layout/k0;->p:F
+    iput v0, p1, Landroidx/compose/foundation/layout/H;->p:F
 
     .line 6
     .line 7
-    iget-boolean v0, p0, Landroidx/compose/foundation/layout/LayoutWeightElement;->d:Z
+    iget-boolean v0, p0, Landroidx/compose/foundation/layout/LayoutWeightElement;->b:Z
 
     .line 8
     .line 9
-    iput-boolean v0, p1, Landroidx/compose/foundation/layout/k0;->q:Z
+    iput-boolean v0, p1, Landroidx/compose/foundation/layout/H;->q:Z
 
     .line 10
     .line 11

@@ -3,14 +3,14 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lzh/a;
+.implements Lka/a;
 
 
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "Lkotlin/jvm/internal/FunctionReferenceImpl;",
-        "Lzh/a;"
+        "Lka/a;"
     }
 .end annotation
 
@@ -29,15 +29,15 @@
 .method public constructor <init>(Ljava/lang/Object;)V
     .locals 7
 
-    const/4 v1, 0x0
-
-    const-class v3, Landroidx/compose/ui/platform/r;
-
-    const-string v4, "onFetchFocusRect"
-
     const-string v5, "onFetchFocusRect()Landroidx/compose/ui/geometry/Rect;"
 
     const/4 v6, 0x0
+
+    const/4 v1, 0x0
+
+    const-class v3, Landroidx/compose/ui/platform/o;
+
+    const-string v4, "onFetchFocusRect"
 
     move-object v0, p0
 
@@ -54,25 +54,25 @@
     .locals 1
 
     .line 1
-    invoke-virtual {p0}, Landroidx/compose/ui/platform/AndroidComposeView$focusOwner$5;->invoke()Ln1/e;
+    invoke-virtual {p0}, Landroidx/compose/ui/platform/AndroidComposeView$focusOwner$5;->invoke()Lr0/d;
 
     move-result-object v0
 
     return-object v0
 .end method
 
-.method public final invoke()Ln1/e;
+.method public final invoke()Lr0/d;
     .locals 2
 
+    .line 2
     iget-object v0, p0, Lkotlin/jvm/internal/CallableReference;->receiver:Ljava/lang/Object;
 
-    .line 2
-    check-cast v0, Landroidx/compose/ui/platform/r;
+    check-cast v0, Landroidx/compose/ui/platform/o;
 
-    sget-object v1, Landroidx/compose/ui/platform/r;->B0:Ljava/lang/Class;
+    sget-object v1, Landroidx/compose/ui/platform/o;->B0:Ljava/lang/Class;
 
     .line 3
-    invoke-virtual {v0}, Landroidx/compose/ui/platform/r;->w()Ln1/e;
+    invoke-virtual {v0}, Landroidx/compose/ui/platform/o;->w()Lr0/d;
 
     move-result-object v0
 

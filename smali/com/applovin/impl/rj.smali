@@ -64,14 +64,14 @@
 .method public static a(Ljava/util/Set;Ljava/util/Set;)Lcom/applovin/impl/rj$c;
     .locals 1
 
+    .line 6
     const-string v0, "set1"
 
-    .line 6
     invoke-static {p0, v0}, Lcom/applovin/exoplayer2/common/base/Preconditions;->checkNotNull(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
+    .line 7
     const-string v0, "set2"
 
-    .line 7
     invoke-static {p1, v0}, Lcom/applovin/exoplayer2/common/base/Preconditions;->checkNotNull(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 8

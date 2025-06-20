@@ -66,21 +66,33 @@
 .method public matches(C)Z
     .locals 1
 
+    .line 1
     iget-char v0, p0, Lcom/applovin/exoplayer2/common/base/CharMatcher$i;->a:C
 
+    .line 2
+    .line 3
     if-gt v0, p1, :cond_0
 
+    .line 4
+    .line 5
     iget-char v0, p0, Lcom/applovin/exoplayer2/common/base/CharMatcher$i;->b:C
 
+    .line 6
+    .line 7
     if-gt p1, v0, :cond_0
 
+    .line 8
+    .line 9
     const/4 p1, 0x1
 
+    .line 10
     goto :goto_0
 
+    .line 11
     :cond_0
     const/4 p1, 0x0
 
+    .line 12
     :goto_0
     return p1
 .end method

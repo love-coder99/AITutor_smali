@@ -80,16 +80,22 @@
     :goto_1
     invoke-static {v0}, Lcom/applovin/impl/b1;->a(Z)V
 
+    .line 3
     iput p1, p0, Lcom/applovin/impl/ua;->a:I
 
+    .line 4
     iput-object p2, p0, Lcom/applovin/impl/ua;->b:Ljava/lang/String;
 
+    .line 5
     iput-object p3, p0, Lcom/applovin/impl/ua;->c:Ljava/lang/String;
 
+    .line 6
     iput-object p4, p0, Lcom/applovin/impl/ua;->d:Ljava/lang/String;
 
+    .line 7
     iput-boolean p5, p0, Lcom/applovin/impl/ua;->f:Z
 
+    .line 8
     iput p6, p0, Lcom/applovin/impl/ua;->g:I
 
     return-void
@@ -98,45 +104,45 @@
 .method public constructor <init>(Landroid/os/Parcel;)V
     .locals 1
 
-    .line 3
+    .line 9
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 4
+    .line 10
     invoke-virtual {p1}, Landroid/os/Parcel;->readInt()I
 
     move-result v0
 
     iput v0, p0, Lcom/applovin/impl/ua;->a:I
 
-    .line 5
+    .line 11
     invoke-virtual {p1}, Landroid/os/Parcel;->readString()Ljava/lang/String;
 
     move-result-object v0
 
     iput-object v0, p0, Lcom/applovin/impl/ua;->b:Ljava/lang/String;
 
-    .line 6
+    .line 12
     invoke-virtual {p1}, Landroid/os/Parcel;->readString()Ljava/lang/String;
 
     move-result-object v0
 
     iput-object v0, p0, Lcom/applovin/impl/ua;->c:Ljava/lang/String;
 
-    .line 7
+    .line 13
     invoke-virtual {p1}, Landroid/os/Parcel;->readString()Ljava/lang/String;
 
     move-result-object v0
 
     iput-object v0, p0, Lcom/applovin/impl/ua;->d:Ljava/lang/String;
 
-    .line 8
+    .line 14
     invoke-static {p1}, Lcom/applovin/impl/xp;->a(Landroid/os/Parcel;)Z
 
     move-result v0
 
     iput-boolean v0, p0, Lcom/applovin/impl/ua;->f:Z
 
-    .line 9
+    .line 15
     invoke-virtual {p1}, Landroid/os/Parcel;->readInt()I
 
     move-result p1
@@ -149,13 +155,14 @@
 .method public static a(Ljava/util/Map;)Lcom/applovin/impl/ua;
     .locals 15
 
+    .line 3
     const-string v0, "Invalid metadata interval: "
 
     const-string v1, "Invalid bitrate: "
 
+    .line 4
     const-string v2, "icy-br"
 
-    .line 3
     invoke-interface {p0, v2}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object v2
@@ -172,14 +179,14 @@
 
     if-eqz v2, :cond_1
 
-    .line 4
+    .line 5
     invoke-interface {v2, v5}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
     move-result-object v2
 
     check-cast v2, Ljava/lang/String;
 
-    .line 5
+    .line 6
     :try_start_0
     invoke-static {v2}, Ljava/lang/Integer;->parseInt(Ljava/lang/String;)I
 
@@ -197,7 +204,7 @@
 
     goto :goto_0
 
-    .line 6
+    .line 7
     :cond_0
     :try_start_1
     new-instance v8, Ljava/lang/StringBuilder;
@@ -224,20 +231,21 @@
     :catch_0
     const/4 v7, -0x1
 
+    .line 8
     :catch_1
     const-string v1, "Invalid bitrate header: "
 
-    .line 7
-    invoke-static {v1, v2, v3}, Landroidx/compose/foundation/text/modifiers/f;->B(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
+    .line 9
+    invoke-static {v1, v2, v3}, Lcom/android/billingclient/api/a;->x(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
 
     move v9, v7
 
     const/4 v1, 0x0
 
+    .line 10
     :goto_0
     const-string v2, "icy-genre"
 
-    .line 8
     invoke-interface {p0, v2}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object v2
@@ -248,7 +256,7 @@
 
     if-eqz v2, :cond_2
 
-    .line 9
+    .line 11
     invoke-interface {v2, v5}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
     move-result-object v1
@@ -264,10 +272,10 @@
     :cond_2
     move-object v10, v7
 
+    .line 12
     :goto_1
     const-string v2, "icy-name"
 
-    .line 10
     invoke-interface {p0, v2}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object v2
@@ -276,7 +284,7 @@
 
     if-eqz v2, :cond_3
 
-    .line 11
+    .line 13
     invoke-interface {v2, v5}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
     move-result-object v1
@@ -292,10 +300,10 @@
     :cond_3
     move-object v11, v7
 
+    .line 14
     :goto_2
     const-string v2, "icy-url"
 
-    .line 12
     invoke-interface {p0, v2}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object v2
@@ -304,7 +312,7 @@
 
     if-eqz v2, :cond_4
 
-    .line 13
+    .line 15
     invoke-interface {v2, v5}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
     move-result-object v1
@@ -320,10 +328,10 @@
     :cond_4
     move-object v12, v7
 
+    .line 16
     :goto_3
     const-string v2, "icy-pub"
 
-    .line 14
     invoke-interface {p0, v2}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object v2
@@ -332,7 +340,7 @@
 
     if-eqz v2, :cond_5
 
-    .line 15
+    .line 17
     invoke-interface {v2, v5}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
     move-result-object v1
@@ -354,10 +362,10 @@
     :cond_5
     const/4 v13, 0x0
 
+    .line 18
     :goto_4
     const-string v2, "icy-metaint"
 
-    .line 16
     invoke-interface {p0, v2}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object p0
@@ -366,14 +374,14 @@
 
     if-eqz p0, :cond_7
 
-    .line 17
+    .line 19
     invoke-interface {p0, v5}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
     move-result-object p0
 
     check-cast p0, Ljava/lang/String;
 
-    .line 18
+    .line 20
     :try_start_2
     invoke-static {p0}, Ljava/lang/Integer;->parseInt(Ljava/lang/String;)I
 
@@ -387,7 +395,7 @@
 
     goto :goto_5
 
-    .line 19
+    .line 21
     :cond_6
     :try_start_3
     new-instance v4, Ljava/lang/StringBuilder;
@@ -414,9 +422,9 @@
     :catch_2
     move v6, v2
 
-    .line 20
+    .line 22
     :catch_3
-    invoke-static {v0, p0, v3}, Landroidx/compose/foundation/text/modifiers/f;->B(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v0, p0, v3}, Lcom/android/billingclient/api/a;->x(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
 
     move v4, v1
 
@@ -425,7 +433,7 @@
     :goto_5
     if-eqz v4, :cond_8
 
-    .line 21
+    .line 23
     new-instance v7, Lcom/applovin/impl/ua;
 
     move-object v8, v7
@@ -442,7 +450,7 @@
     .locals 0
 
     .line 1
-    invoke-static {p0, p1}, Lcom/applovin/impl/ns;->a(Lcom/applovin/impl/af$b;Lcom/applovin/impl/ud$b;)V
+    invoke-static {p0, p1}, Lcom/applovin/impl/F;->a(Lcom/applovin/impl/af$b;Lcom/applovin/impl/ud$b;)V
 
     return-void
 .end method
@@ -451,7 +459,7 @@
     .locals 1
 
     .line 2
-    invoke-static {p0}, Lcom/applovin/impl/ns;->b(Lcom/applovin/impl/af$b;)[B
+    invoke-static {p0}, Lcom/applovin/impl/F;->b(Lcom/applovin/impl/af$b;)[B
 
     move-result-object v0
 
@@ -462,7 +470,7 @@
     .locals 1
 
     .line 1
-    invoke-static {p0}, Lcom/applovin/impl/ns;->c(Lcom/applovin/impl/af$b;)Lcom/applovin/impl/e9;
+    invoke-static {p0}, Lcom/applovin/impl/F;->c(Lcom/applovin/impl/af$b;)Lcom/applovin/impl/e9;
 
     move-result-object v0
 

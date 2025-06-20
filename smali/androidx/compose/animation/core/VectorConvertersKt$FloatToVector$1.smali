@@ -3,14 +3,14 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lzh/c;
+.implements Lka/c;
 
 
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "Lkotlin/jvm/internal/Lambda;",
-        "Lzh/c;"
+        "Lka/c;"
     }
 .end annotation
 
@@ -21,9 +21,9 @@
     d2 = {
         "",
         "it",
-        "Landroidx/compose/animation/core/i;",
+        "Landroidx/compose/animation/core/h;",
         "invoke",
-        "(F)Landroidx/compose/animation/core/i;",
+        "(F)Landroidx/compose/animation/core/h;",
         "<anonymous>"
     }
     k = 0x3
@@ -64,13 +64,13 @@
 
 
 # virtual methods
-.method public final invoke(F)Landroidx/compose/animation/core/i;
+.method public final invoke(F)Landroidx/compose/animation/core/h;
     .locals 1
 
     .line 1
-    new-instance v0, Landroidx/compose/animation/core/i;
+    new-instance v0, Landroidx/compose/animation/core/h;
 
-    invoke-direct {v0, p1}, Landroidx/compose/animation/core/i;-><init>(F)V
+    invoke-direct {v0, p1}, Landroidx/compose/animation/core/h;-><init>(F)V
 
     return-object v0
 .end method
@@ -85,7 +85,7 @@
 
     move-result p1
 
-    invoke-virtual {p0, p1}, Landroidx/compose/animation/core/VectorConvertersKt$FloatToVector$1;->invoke(F)Landroidx/compose/animation/core/i;
+    invoke-virtual {p0, p1}, Landroidx/compose/animation/core/VectorConvertersKt$FloatToVector$1;->invoke(F)Landroidx/compose/animation/core/h;
 
     move-result-object p1
 

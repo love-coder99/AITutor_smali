@@ -31,6 +31,8 @@
 # virtual methods
 .method public getPath(FFFF)Landroid/graphics/Path;
     .locals 1
+    .annotation build Landroidx/annotation/NonNull;
+    .end annotation
 
     .line 1
     new-instance v0, Landroid/graphics/Path;

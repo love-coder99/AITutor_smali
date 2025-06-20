@@ -200,21 +200,21 @@
 .method private static a(Landroid/media/AudioManager;I)Z
     .locals 2
 
-    .line 5
+    .line 7
     sget v0, Lcom/applovin/impl/xp;->a:I
 
     const/16 v1, 0x17
 
     if-lt v0, v1, :cond_0
 
-    .line 6
-    invoke-static {p0, p1}, Landroidx/compose/ui/platform/r2;->z(Landroid/media/AudioManager;I)Z
+    .line 8
+    invoke-static {p0, p1}, Lc3/A;->y(Landroid/media/AudioManager;I)Z
 
     move-result p0
 
     return p0
 
-    .line 7
+    .line 9
     :cond_0
     invoke-static {p0, p1}, Lcom/applovin/impl/il;->b(Landroid/media/AudioManager;I)I
 
@@ -362,11 +362,11 @@
 .method public a()I
     .locals 2
 
+    .line 2
     iget-object v0, p0, Lcom/applovin/impl/il;->d:Landroid/media/AudioManager;
 
     iget v1, p0, Lcom/applovin/impl/il;->f:I
 
-    .line 2
     invoke-virtual {v0, v1}, Landroid/media/AudioManager;->getStreamMaxVolume(I)I
 
     move-result v0
@@ -377,21 +377,23 @@
 .method public a(I)V
     .locals 1
 
+    .line 3
     iget v0, p0, Lcom/applovin/impl/il;->f:I
 
     if-ne v0, p1, :cond_0
 
     return-void
 
+    .line 4
     :cond_0
     iput p1, p0, Lcom/applovin/impl/il;->f:I
 
-    .line 3
+    .line 5
     invoke-direct {p0}, Lcom/applovin/impl/il;->d()V
 
+    .line 6
     iget-object v0, p0, Lcom/applovin/impl/il;->c:Lcom/applovin/impl/il$b;
 
-    .line 4
     invoke-interface {v0, p1}, Lcom/applovin/impl/il$b;->d(I)V
 
     return-void
@@ -411,7 +413,7 @@
 
     iget v1, p0, Lcom/applovin/impl/il;->f:I
 
-    invoke-static {v0, v1}, Landroidx/activity/z;->a(Landroid/media/AudioManager;I)I
+    invoke-static {v0, v1}, Lb3/a;->c(Landroid/media/AudioManager;I)I
 
     move-result v0
 

@@ -3,14 +3,14 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lzh/c;
+.implements Lka/c;
 
 
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "Lkotlin/jvm/internal/Lambda;",
-        "Lzh/c;"
+        "Lka/c;"
     }
 .end annotation
 
@@ -19,10 +19,10 @@
         "\u0000\u000c\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0008\u0003\u0010\u0004\u001a\u00020\u0001*\u00020\u0000H\n\u00a2\u0006\u0004\u0008\u0002\u0010\u0003"
     }
     d2 = {
-        "Landroidx/compose/ui/layout/z0;",
-        "Lqh/r;",
+        "Landroidx/compose/ui/layout/W;",
+        "LX9/j;",
         "invoke",
-        "(Landroidx/compose/ui/layout/z0;)V",
+        "(Landroidx/compose/ui/layout/W;)V",
         "<anonymous>"
     }
     k = 0x3
@@ -35,62 +35,62 @@
 
 
 # instance fields
-.field final synthetic $containerPlaceable:Landroidx/compose/ui/layout/a1;
+.field final synthetic $containerPlaceable:Landroidx/compose/ui/layout/X;
 
-.field final synthetic $labelPlaceable:Landroidx/compose/ui/layout/a1;
+.field final synthetic $labelPlaceable:Landroidx/compose/ui/layout/X;
 
-.field final synthetic $leadingPlaceable:Landroidx/compose/ui/layout/a1;
+.field final synthetic $leadingPlaceable:Landroidx/compose/ui/layout/X;
 
-.field final synthetic $placeholderPlaceable:Landroidx/compose/ui/layout/a1;
+.field final synthetic $placeholderPlaceable:Landroidx/compose/ui/layout/X;
 
-.field final synthetic $prefixPlaceable:Landroidx/compose/ui/layout/a1;
+.field final synthetic $prefixPlaceable:Landroidx/compose/ui/layout/X;
 
-.field final synthetic $suffixPlaceable:Landroidx/compose/ui/layout/a1;
+.field final synthetic $suffixPlaceable:Landroidx/compose/ui/layout/X;
 
-.field final synthetic $supportingPlaceable:Landroidx/compose/ui/layout/a1;
+.field final synthetic $supportingPlaceable:Landroidx/compose/ui/layout/X;
 
-.field final synthetic $textFieldPlaceable:Landroidx/compose/ui/layout/a1;
+.field final synthetic $textFieldPlaceable:Landroidx/compose/ui/layout/X;
 
-.field final synthetic $this_measure:Landroidx/compose/ui/layout/o0;
+.field final synthetic $this_measure:Landroidx/compose/ui/layout/L;
 
 .field final synthetic $totalHeight:I
 
-.field final synthetic $trailingPlaceable:Landroidx/compose/ui/layout/a1;
+.field final synthetic $trailingPlaceable:Landroidx/compose/ui/layout/X;
 
 .field final synthetic $width:I
 
-.field final synthetic this$0:Landroidx/compose/material3/o0;
+.field final synthetic this$0:Landroidx/compose/material3/g0;
 
 
 # direct methods
-.method public constructor <init>(IILandroidx/compose/ui/layout/a1;Landroidx/compose/ui/layout/a1;Landroidx/compose/ui/layout/a1;Landroidx/compose/ui/layout/a1;Landroidx/compose/ui/layout/a1;Landroidx/compose/ui/layout/a1;Landroidx/compose/ui/layout/a1;Landroidx/compose/ui/layout/a1;Landroidx/compose/ui/layout/a1;Landroidx/compose/material3/o0;Landroidx/compose/ui/layout/o0;)V
+.method public constructor <init>(IILandroidx/compose/ui/layout/X;Landroidx/compose/ui/layout/X;Landroidx/compose/ui/layout/X;Landroidx/compose/ui/layout/X;Landroidx/compose/ui/layout/X;Landroidx/compose/ui/layout/X;Landroidx/compose/ui/layout/X;Landroidx/compose/ui/layout/X;Landroidx/compose/ui/layout/X;Landroidx/compose/material3/g0;Landroidx/compose/ui/layout/L;)V
     .locals 0
 
     iput p1, p0, Landroidx/compose/material3/OutlinedTextFieldMeasurePolicy$measure$1;->$totalHeight:I
 
     iput p2, p0, Landroidx/compose/material3/OutlinedTextFieldMeasurePolicy$measure$1;->$width:I
 
-    iput-object p3, p0, Landroidx/compose/material3/OutlinedTextFieldMeasurePolicy$measure$1;->$leadingPlaceable:Landroidx/compose/ui/layout/a1;
+    iput-object p3, p0, Landroidx/compose/material3/OutlinedTextFieldMeasurePolicy$measure$1;->$leadingPlaceable:Landroidx/compose/ui/layout/X;
 
-    iput-object p4, p0, Landroidx/compose/material3/OutlinedTextFieldMeasurePolicy$measure$1;->$trailingPlaceable:Landroidx/compose/ui/layout/a1;
+    iput-object p4, p0, Landroidx/compose/material3/OutlinedTextFieldMeasurePolicy$measure$1;->$trailingPlaceable:Landroidx/compose/ui/layout/X;
 
-    iput-object p5, p0, Landroidx/compose/material3/OutlinedTextFieldMeasurePolicy$measure$1;->$prefixPlaceable:Landroidx/compose/ui/layout/a1;
+    iput-object p5, p0, Landroidx/compose/material3/OutlinedTextFieldMeasurePolicy$measure$1;->$prefixPlaceable:Landroidx/compose/ui/layout/X;
 
-    iput-object p6, p0, Landroidx/compose/material3/OutlinedTextFieldMeasurePolicy$measure$1;->$suffixPlaceable:Landroidx/compose/ui/layout/a1;
+    iput-object p6, p0, Landroidx/compose/material3/OutlinedTextFieldMeasurePolicy$measure$1;->$suffixPlaceable:Landroidx/compose/ui/layout/X;
 
-    iput-object p7, p0, Landroidx/compose/material3/OutlinedTextFieldMeasurePolicy$measure$1;->$textFieldPlaceable:Landroidx/compose/ui/layout/a1;
+    iput-object p7, p0, Landroidx/compose/material3/OutlinedTextFieldMeasurePolicy$measure$1;->$textFieldPlaceable:Landroidx/compose/ui/layout/X;
 
-    iput-object p8, p0, Landroidx/compose/material3/OutlinedTextFieldMeasurePolicy$measure$1;->$labelPlaceable:Landroidx/compose/ui/layout/a1;
+    iput-object p8, p0, Landroidx/compose/material3/OutlinedTextFieldMeasurePolicy$measure$1;->$labelPlaceable:Landroidx/compose/ui/layout/X;
 
-    iput-object p9, p0, Landroidx/compose/material3/OutlinedTextFieldMeasurePolicy$measure$1;->$placeholderPlaceable:Landroidx/compose/ui/layout/a1;
+    iput-object p9, p0, Landroidx/compose/material3/OutlinedTextFieldMeasurePolicy$measure$1;->$placeholderPlaceable:Landroidx/compose/ui/layout/X;
 
-    iput-object p10, p0, Landroidx/compose/material3/OutlinedTextFieldMeasurePolicy$measure$1;->$containerPlaceable:Landroidx/compose/ui/layout/a1;
+    iput-object p10, p0, Landroidx/compose/material3/OutlinedTextFieldMeasurePolicy$measure$1;->$containerPlaceable:Landroidx/compose/ui/layout/X;
 
-    iput-object p11, p0, Landroidx/compose/material3/OutlinedTextFieldMeasurePolicy$measure$1;->$supportingPlaceable:Landroidx/compose/ui/layout/a1;
+    iput-object p11, p0, Landroidx/compose/material3/OutlinedTextFieldMeasurePolicy$measure$1;->$supportingPlaceable:Landroidx/compose/ui/layout/X;
 
-    iput-object p12, p0, Landroidx/compose/material3/OutlinedTextFieldMeasurePolicy$measure$1;->this$0:Landroidx/compose/material3/o0;
+    iput-object p12, p0, Landroidx/compose/material3/OutlinedTextFieldMeasurePolicy$measure$1;->this$0:Landroidx/compose/material3/g0;
 
-    iput-object p13, p0, Landroidx/compose/material3/OutlinedTextFieldMeasurePolicy$measure$1;->$this_measure:Landroidx/compose/ui/layout/o0;
+    iput-object p13, p0, Landroidx/compose/material3/OutlinedTextFieldMeasurePolicy$measure$1;->$this_measure:Landroidx/compose/ui/layout/L;
 
     const/4 p1, 0x1
 
@@ -104,75 +104,88 @@
 .method public bridge synthetic invoke(Ljava/lang/Object;)Ljava/lang/Object;
     .locals 0
 
-    .line 39
-    check-cast p1, Landroidx/compose/ui/layout/z0;
+    .line 1
+    check-cast p1, Landroidx/compose/ui/layout/W;
 
-    invoke-virtual {p0, p1}, Landroidx/compose/material3/OutlinedTextFieldMeasurePolicy$measure$1;->invoke(Landroidx/compose/ui/layout/z0;)V
+    invoke-virtual {p0, p1}, Landroidx/compose/material3/OutlinedTextFieldMeasurePolicy$measure$1;->invoke(Landroidx/compose/ui/layout/W;)V
 
-    sget-object p1, Lqh/r;->a:Lqh/r;
+    sget-object p1, LX9/j;->a:LX9/j;
 
     return-object p1
 .end method
 
-.method public final invoke(Landroidx/compose/ui/layout/z0;)V
+.method public final invoke(Landroidx/compose/ui/layout/W;)V
     .locals 21
 
     move-object/from16 v0, p0
 
     move-object/from16 v1, p1
 
+    .line 2
     iget v2, v0, Landroidx/compose/material3/OutlinedTextFieldMeasurePolicy$measure$1;->$totalHeight:I
 
+    .line 3
     iget v3, v0, Landroidx/compose/material3/OutlinedTextFieldMeasurePolicy$measure$1;->$width:I
 
-    iget-object v4, v0, Landroidx/compose/material3/OutlinedTextFieldMeasurePolicy$measure$1;->$leadingPlaceable:Landroidx/compose/ui/layout/a1;
+    .line 4
+    iget-object v4, v0, Landroidx/compose/material3/OutlinedTextFieldMeasurePolicy$measure$1;->$leadingPlaceable:Landroidx/compose/ui/layout/X;
 
-    iget-object v5, v0, Landroidx/compose/material3/OutlinedTextFieldMeasurePolicy$measure$1;->$trailingPlaceable:Landroidx/compose/ui/layout/a1;
+    .line 5
+    iget-object v5, v0, Landroidx/compose/material3/OutlinedTextFieldMeasurePolicy$measure$1;->$trailingPlaceable:Landroidx/compose/ui/layout/X;
 
-    iget-object v6, v0, Landroidx/compose/material3/OutlinedTextFieldMeasurePolicy$measure$1;->$prefixPlaceable:Landroidx/compose/ui/layout/a1;
+    .line 6
+    iget-object v6, v0, Landroidx/compose/material3/OutlinedTextFieldMeasurePolicy$measure$1;->$prefixPlaceable:Landroidx/compose/ui/layout/X;
 
-    iget-object v7, v0, Landroidx/compose/material3/OutlinedTextFieldMeasurePolicy$measure$1;->$suffixPlaceable:Landroidx/compose/ui/layout/a1;
+    .line 7
+    iget-object v7, v0, Landroidx/compose/material3/OutlinedTextFieldMeasurePolicy$measure$1;->$suffixPlaceable:Landroidx/compose/ui/layout/X;
 
-    iget-object v8, v0, Landroidx/compose/material3/OutlinedTextFieldMeasurePolicy$measure$1;->$textFieldPlaceable:Landroidx/compose/ui/layout/a1;
+    .line 8
+    iget-object v8, v0, Landroidx/compose/material3/OutlinedTextFieldMeasurePolicy$measure$1;->$textFieldPlaceable:Landroidx/compose/ui/layout/X;
 
-    iget-object v9, v0, Landroidx/compose/material3/OutlinedTextFieldMeasurePolicy$measure$1;->$labelPlaceable:Landroidx/compose/ui/layout/a1;
+    .line 9
+    iget-object v9, v0, Landroidx/compose/material3/OutlinedTextFieldMeasurePolicy$measure$1;->$labelPlaceable:Landroidx/compose/ui/layout/X;
 
-    iget-object v10, v0, Landroidx/compose/material3/OutlinedTextFieldMeasurePolicy$measure$1;->$placeholderPlaceable:Landroidx/compose/ui/layout/a1;
+    .line 10
+    iget-object v10, v0, Landroidx/compose/material3/OutlinedTextFieldMeasurePolicy$measure$1;->$placeholderPlaceable:Landroidx/compose/ui/layout/X;
 
-    iget-object v11, v0, Landroidx/compose/material3/OutlinedTextFieldMeasurePolicy$measure$1;->$containerPlaceable:Landroidx/compose/ui/layout/a1;
+    .line 11
+    iget-object v11, v0, Landroidx/compose/material3/OutlinedTextFieldMeasurePolicy$measure$1;->$containerPlaceable:Landroidx/compose/ui/layout/X;
 
-    iget-object v12, v0, Landroidx/compose/material3/OutlinedTextFieldMeasurePolicy$measure$1;->$supportingPlaceable:Landroidx/compose/ui/layout/a1;
+    .line 12
+    iget-object v12, v0, Landroidx/compose/material3/OutlinedTextFieldMeasurePolicy$measure$1;->$supportingPlaceable:Landroidx/compose/ui/layout/X;
 
-    iget-object v13, v0, Landroidx/compose/material3/OutlinedTextFieldMeasurePolicy$measure$1;->this$0:Landroidx/compose/material3/o0;
+    .line 13
+    iget-object v13, v0, Landroidx/compose/material3/OutlinedTextFieldMeasurePolicy$measure$1;->this$0:Landroidx/compose/material3/g0;
 
-    .line 1
-    iget v14, v13, Landroidx/compose/material3/o0;->c:F
+    .line 14
+    iget v14, v13, Landroidx/compose/material3/g0;->c:F
 
-    iget-object v15, v0, Landroidx/compose/material3/OutlinedTextFieldMeasurePolicy$measure$1;->$this_measure:Landroidx/compose/ui/layout/o0;
+    .line 15
+    iget-object v15, v0, Landroidx/compose/material3/OutlinedTextFieldMeasurePolicy$measure$1;->$this_measure:Landroidx/compose/ui/layout/L;
 
-    .line 2
-    invoke-interface {v15}, Lh2/b;->a()F
+    invoke-interface {v15}, LM0/b;->b()F
 
     move-result v15
 
     move/from16 v16, v3
 
-    iget-object v3, v0, Landroidx/compose/material3/OutlinedTextFieldMeasurePolicy$measure$1;->$this_measure:Landroidx/compose/ui/layout/o0;
+    .line 16
+    iget-object v3, v0, Landroidx/compose/material3/OutlinedTextFieldMeasurePolicy$measure$1;->$this_measure:Landroidx/compose/ui/layout/L;
 
-    .line 3
-    invoke-interface {v3}, Landroidx/compose/ui/layout/p;->getLayoutDirection()Landroidx/compose/ui/unit/LayoutDirection;
+    invoke-interface {v3}, Landroidx/compose/ui/layout/m;->getLayoutDirection()Landroidx/compose/ui/unit/LayoutDirection;
 
     move-result-object v3
 
     move-object/from16 v17, v5
 
-    iget-object v5, v0, Landroidx/compose/material3/OutlinedTextFieldMeasurePolicy$measure$1;->this$0:Landroidx/compose/material3/o0;
+    .line 17
+    iget-object v5, v0, Landroidx/compose/material3/OutlinedTextFieldMeasurePolicy$measure$1;->this$0:Landroidx/compose/material3/g0;
 
-    .line 4
-    iget-object v5, v5, Landroidx/compose/material3/o0;->d:Landroidx/compose/foundation/layout/p0;
+    .line 18
+    iget-object v5, v5, Landroidx/compose/material3/g0;->d:Landroidx/compose/foundation/layout/M;
 
-    .line 5
-    sget v18, Landroidx/compose/material3/n0;->a:F
+    .line 19
+    sget v18, Landroidx/compose/material3/f0;->a:F
 
     move-object/from16 v18, v7
 
@@ -180,40 +193,40 @@
 
     const-wide/16 v7, 0x0
 
-    .line 6
-    invoke-static {v1, v11, v7, v8}, Landroidx/compose/ui/layout/z0;->e(Landroidx/compose/ui/layout/z0;Landroidx/compose/ui/layout/a1;J)V
+    .line 20
+    invoke-static {v1, v11, v7, v8}, Landroidx/compose/ui/layout/W;->e(Landroidx/compose/ui/layout/W;Landroidx/compose/ui/layout/X;J)V
 
-    .line 7
-    invoke-static {v12}, Landroidx/compose/material3/internal/f;->g(Landroidx/compose/ui/layout/a1;)I
+    .line 21
+    invoke-static {v12}, Landroidx/compose/material3/internal/s;->g(Landroidx/compose/ui/layout/X;)I
 
     move-result v7
 
     sub-int/2addr v2, v7
 
-    .line 8
-    invoke-interface {v5}, Landroidx/compose/foundation/layout/p0;->d()F
+    .line 22
+    invoke-interface {v5}, Landroidx/compose/foundation/layout/M;->d()F
 
     move-result v7
 
     mul-float v7, v7, v15
 
-    invoke-static {v7}, Lf7/l;->I(F)I
+    invoke-static {v7}, Lma/a;->o(F)I
 
     move-result v7
 
-    .line 9
-    invoke-static {v5, v3}, Landroidx/compose/foundation/layout/a;->i(Landroidx/compose/foundation/layout/p0;Landroidx/compose/ui/unit/LayoutDirection;)F
+    .line 23
+    invoke-static {v5, v3}, Landroidx/compose/foundation/layout/a;->j(Landroidx/compose/foundation/layout/M;Landroidx/compose/ui/unit/LayoutDirection;)F
 
     move-result v3
 
     mul-float v3, v3, v15
 
-    invoke-static {v3}, Lf7/l;->I(F)I
+    invoke-static {v3}, Lma/a;->o(F)I
 
     move-result v3
 
-    .line 10
-    sget v5, Landroidx/compose/material3/internal/f;->c:F
+    .line 24
+    sget v5, Landroidx/compose/material3/internal/s;->c:F
 
     mul-float v5, v5, v15
 
@@ -223,8 +236,8 @@
 
     if-eqz v4, :cond_0
 
-    .line 11
-    iget v15, v4, Landroidx/compose/ui/layout/a1;->c:I
+    .line 25
+    iget v15, v4, Landroidx/compose/ui/layout/X;->c:I
 
     sub-int v15, v2, v15
 
@@ -240,26 +253,26 @@
 
     mul-float v11, v11, v15
 
-    .line 12
+    .line 26
     invoke-static {v11}, Ljava/lang/Math;->round(F)I
 
     move-result v11
 
     const/4 v15, 0x0
 
-    .line 13
-    invoke-static {v1, v4, v15, v11}, Landroidx/compose/ui/layout/z0;->f(Landroidx/compose/ui/layout/z0;Landroidx/compose/ui/layout/a1;II)V
+    .line 27
+    invoke-static {v1, v4, v15, v11}, Landroidx/compose/ui/layout/W;->f(Landroidx/compose/ui/layout/W;Landroidx/compose/ui/layout/X;II)V
 
-    .line 14
+    .line 28
     :cond_0
-    iget-boolean v11, v13, Landroidx/compose/material3/o0;->b:Z
+    iget-boolean v11, v13, Landroidx/compose/material3/g0;->b:Z
 
     if-eqz v9, :cond_3
 
     if-eqz v11, :cond_1
 
-    .line 15
-    iget v13, v9, Landroidx/compose/ui/layout/a1;->c:I
+    .line 29
+    iget v13, v9, Landroidx/compose/ui/layout/X;->c:I
 
     sub-int v13, v2, v13
 
@@ -277,7 +290,7 @@
 
     mul-float v15, v15, v13
 
-    .line 16
+    .line 30
     invoke-static {v15}, Ljava/lang/Math;->round(F)I
 
     move-result v13
@@ -287,16 +300,16 @@
     :cond_1
     move v13, v7
 
-    .line 17
+    .line 31
     :goto_0
-    iget v15, v9, Landroidx/compose/ui/layout/a1;->c:I
+    iget v15, v9, Landroidx/compose/ui/layout/X;->c:I
 
-    .line 18
+    .line 32
     div-int/lit8 v15, v15, 0x2
 
     neg-int v15, v15
 
-    invoke-static {v14, v13, v15}, Lb0/h;->S(FII)I
+    invoke-static {v14, v13, v15}, Ll8/H;->u(FII)I
 
     move-result v13
 
@@ -306,9 +319,9 @@
 
     goto :goto_1
 
-    .line 19
+    .line 33
     :cond_2
-    invoke-static {v4}, Landroidx/compose/material3/internal/f;->i(Landroidx/compose/ui/layout/a1;)I
+    invoke-static {v4}, Landroidx/compose/material3/internal/s;->i(Landroidx/compose/ui/layout/X;)I
 
     move-result v15
 
@@ -322,40 +335,40 @@
 
     mul-float v5, v5, v15
 
-    .line 20
+    .line 34
     :goto_1
-    invoke-static {v5}, Lf7/l;->I(F)I
+    invoke-static {v5}, Lma/a;->o(F)I
 
     move-result v5
 
     add-int/2addr v5, v3
 
-    .line 21
-    invoke-static {v1, v9, v5, v13}, Landroidx/compose/ui/layout/z0;->f(Landroidx/compose/ui/layout/z0;Landroidx/compose/ui/layout/a1;II)V
+    .line 35
+    invoke-static {v1, v9, v5, v13}, Landroidx/compose/ui/layout/W;->f(Landroidx/compose/ui/layout/W;Landroidx/compose/ui/layout/X;II)V
 
     :cond_3
     if-eqz v6, :cond_4
 
-    .line 22
-    invoke-static {v4}, Landroidx/compose/material3/internal/f;->i(Landroidx/compose/ui/layout/a1;)I
+    .line 36
+    invoke-static {v4}, Landroidx/compose/material3/internal/s;->i(Landroidx/compose/ui/layout/X;)I
 
     move-result v3
 
-    .line 23
-    invoke-static {v11, v2, v7, v9, v6}, Landroidx/compose/material3/n0;->f(ZIILandroidx/compose/ui/layout/a1;Landroidx/compose/ui/layout/a1;)I
+    .line 37
+    invoke-static {v11, v2, v7, v9, v6}, Landroidx/compose/material3/f0;->f(ZIILandroidx/compose/ui/layout/X;Landroidx/compose/ui/layout/X;)I
 
     move-result v5
 
-    .line 24
-    invoke-static {v1, v6, v3, v5}, Landroidx/compose/ui/layout/z0;->f(Landroidx/compose/ui/layout/z0;Landroidx/compose/ui/layout/a1;II)V
+    .line 38
+    invoke-static {v1, v6, v3, v5}, Landroidx/compose/ui/layout/W;->f(Landroidx/compose/ui/layout/W;Landroidx/compose/ui/layout/X;II)V
 
-    .line 25
+    .line 39
     :cond_4
-    invoke-static {v4}, Landroidx/compose/material3/internal/f;->i(Landroidx/compose/ui/layout/a1;)I
+    invoke-static {v4}, Landroidx/compose/material3/internal/s;->i(Landroidx/compose/ui/layout/X;)I
 
     move-result v3
 
-    invoke-static {v6}, Landroidx/compose/material3/internal/f;->i(Landroidx/compose/ui/layout/a1;)I
+    invoke-static {v6}, Landroidx/compose/material3/internal/s;->i(Landroidx/compose/ui/layout/X;)I
 
     move-result v4
 
@@ -363,29 +376,29 @@
 
     move-object/from16 v3, v19
 
-    .line 26
-    invoke-static {v11, v2, v7, v9, v3}, Landroidx/compose/material3/n0;->f(ZIILandroidx/compose/ui/layout/a1;Landroidx/compose/ui/layout/a1;)I
+    .line 40
+    invoke-static {v11, v2, v7, v9, v3}, Landroidx/compose/material3/f0;->f(ZIILandroidx/compose/ui/layout/X;Landroidx/compose/ui/layout/X;)I
 
     move-result v5
 
-    .line 27
-    invoke-static {v1, v3, v4, v5}, Landroidx/compose/ui/layout/z0;->f(Landroidx/compose/ui/layout/z0;Landroidx/compose/ui/layout/a1;II)V
+    .line 41
+    invoke-static {v1, v3, v4, v5}, Landroidx/compose/ui/layout/W;->f(Landroidx/compose/ui/layout/W;Landroidx/compose/ui/layout/X;II)V
 
     if-eqz v10, :cond_5
 
-    .line 28
-    invoke-static {v11, v2, v7, v9, v10}, Landroidx/compose/material3/n0;->f(ZIILandroidx/compose/ui/layout/a1;Landroidx/compose/ui/layout/a1;)I
+    .line 42
+    invoke-static {v11, v2, v7, v9, v10}, Landroidx/compose/material3/f0;->f(ZIILandroidx/compose/ui/layout/X;Landroidx/compose/ui/layout/X;)I
 
     move-result v3
 
-    .line 29
-    invoke-static {v1, v10, v4, v3}, Landroidx/compose/ui/layout/z0;->f(Landroidx/compose/ui/layout/z0;Landroidx/compose/ui/layout/a1;II)V
+    .line 43
+    invoke-static {v1, v10, v4, v3}, Landroidx/compose/ui/layout/W;->f(Landroidx/compose/ui/layout/W;Landroidx/compose/ui/layout/X;II)V
 
     :cond_5
     if-eqz v18, :cond_6
 
-    .line 30
-    invoke-static/range {v17 .. v17}, Landroidx/compose/material3/internal/f;->i(Landroidx/compose/ui/layout/a1;)I
+    .line 44
+    invoke-static/range {v17 .. v17}, Landroidx/compose/material3/internal/s;->i(Landroidx/compose/ui/layout/X;)I
 
     move-result v3
 
@@ -393,31 +406,31 @@
 
     move-object/from16 v4, v18
 
-    .line 31
-    iget v5, v4, Landroidx/compose/ui/layout/a1;->b:I
+    .line 45
+    iget v5, v4, Landroidx/compose/ui/layout/X;->b:I
 
     sub-int/2addr v3, v5
 
-    .line 32
-    invoke-static {v11, v2, v7, v9, v4}, Landroidx/compose/material3/n0;->f(ZIILandroidx/compose/ui/layout/a1;Landroidx/compose/ui/layout/a1;)I
+    .line 46
+    invoke-static {v11, v2, v7, v9, v4}, Landroidx/compose/material3/f0;->f(ZIILandroidx/compose/ui/layout/X;Landroidx/compose/ui/layout/X;)I
 
     move-result v5
 
-    .line 33
-    invoke-static {v1, v4, v3, v5}, Landroidx/compose/ui/layout/z0;->f(Landroidx/compose/ui/layout/z0;Landroidx/compose/ui/layout/a1;II)V
+    .line 47
+    invoke-static {v1, v4, v3, v5}, Landroidx/compose/ui/layout/W;->f(Landroidx/compose/ui/layout/W;Landroidx/compose/ui/layout/X;II)V
 
     :cond_6
     if-eqz v17, :cond_7
 
     move-object/from16 v3, v17
 
-    .line 34
-    iget v4, v3, Landroidx/compose/ui/layout/a1;->b:I
+    .line 48
+    iget v4, v3, Landroidx/compose/ui/layout/X;->b:I
 
     sub-int v4, v16, v4
 
-    .line 35
-    iget v5, v3, Landroidx/compose/ui/layout/a1;->c:I
+    .line 49
+    iget v5, v3, Landroidx/compose/ui/layout/X;->c:I
 
     sub-int v5, v2, v5
 
@@ -435,21 +448,21 @@
 
     mul-float v6, v6, v5
 
-    .line 36
+    .line 50
     invoke-static {v6}, Ljava/lang/Math;->round(F)I
 
     move-result v5
 
-    .line 37
-    invoke-static {v1, v3, v4, v5}, Landroidx/compose/ui/layout/z0;->f(Landroidx/compose/ui/layout/z0;Landroidx/compose/ui/layout/a1;II)V
+    .line 51
+    invoke-static {v1, v3, v4, v5}, Landroidx/compose/ui/layout/W;->f(Landroidx/compose/ui/layout/W;Landroidx/compose/ui/layout/X;II)V
 
     :cond_7
     if-eqz v12, :cond_8
 
     const/4 v3, 0x0
 
-    .line 38
-    invoke-static {v1, v12, v3, v2}, Landroidx/compose/ui/layout/z0;->f(Landroidx/compose/ui/layout/z0;Landroidx/compose/ui/layout/a1;II)V
+    .line 52
+    invoke-static {v1, v12, v3, v2}, Landroidx/compose/ui/layout/W;->f(Landroidx/compose/ui/layout/W;Landroidx/compose/ui/layout/X;II)V
 
     :cond_8
     return-void

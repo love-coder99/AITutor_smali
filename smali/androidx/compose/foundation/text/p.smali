@@ -1,293 +1,382 @@
-.class public final Landroidx/compose/foundation/text/p;
+.class public final Landroidx/compose/foundation/text/P;
 .super Ljava/lang/Object;
 .source "SourceFile"
 
 # interfaces
-.implements Landroidx/compose/foundation/text/n;
+.implements Landroidx/compose/ui/layout/v;
 
 
-# virtual methods
-.method public final b(Landroid/view/KeyEvent;)Landroidx/compose/foundation/text/KeyCommand;
-    .locals 6
+# instance fields
+.field public final a:Landroidx/compose/foundation/text/H;
+
+.field public final b:I
+
+.field public final c:Landroidx/compose/ui/text/input/K;
+
+.field public final d:Lka/a;
+
+
+# direct methods
+.method public constructor <init>(Landroidx/compose/foundation/text/H;ILandroidx/compose/ui/text/input/K;Lka/a;)V
+    .locals 0
 
     .line 1
-    invoke-virtual {p1}, Landroid/view/KeyEvent;->isShiftPressed()Z
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 2
     .line 3
     .line 4
-    move-result v0
+    iput-object p1, p0, Landroidx/compose/foundation/text/P;->a:Landroidx/compose/foundation/text/H;
 
     .line 5
-    const/4 v1, 0x0
-
     .line 6
-    if-eqz v0, :cond_3
+    iput p2, p0, Landroidx/compose/foundation/text/P;->b:I
 
     .line 7
     .line 8
-    invoke-virtual {p1}, Landroid/view/KeyEvent;->isAltPressed()Z
+    iput-object p3, p0, Landroidx/compose/foundation/text/P;->c:Landroidx/compose/ui/text/input/K;
 
     .line 9
     .line 10
-    .line 11
-    move-result v0
+    iput-object p4, p0, Landroidx/compose/foundation/text/P;->d:Lka/a;
 
+    .line 11
     .line 12
-    if-eqz v0, :cond_3
+    return-void
+.end method
+
+
+# virtual methods
+.method public final synthetic a(Landroidx/compose/ui/node/N;Landroidx/compose/ui/layout/l;I)I
+    .locals 0
+
+    .line 1
+    invoke-static {p0, p1, p2, p3}, Landroidx/compose/ui/layout/u;->g(Landroidx/compose/ui/layout/v;Landroidx/compose/ui/node/N;Landroidx/compose/ui/layout/l;I)I
+
+    move-result p1
+
+    return p1
+.end method
+
+.method public final synthetic b(Lka/c;)Z
+    .locals 0
+
+    .line 1
+    invoke-static {p0, p1}, Landroidx/compose/runtime/a0;->a(Landroidx/compose/ui/m;Lka/c;)Z
+
+    move-result p1
+
+    return p1
+.end method
+
+.method public final synthetic c(Landroidx/compose/ui/node/N;Landroidx/compose/ui/layout/l;I)I
+    .locals 0
+
+    .line 1
+    invoke-static {p0, p1, p2, p3}, Landroidx/compose/ui/layout/u;->e(Landroidx/compose/ui/layout/v;Landroidx/compose/ui/node/N;Landroidx/compose/ui/layout/l;I)I
+
+    move-result p1
+
+    return p1
+.end method
+
+.method public final synthetic d(Landroidx/compose/ui/node/N;Landroidx/compose/ui/layout/l;I)I
+    .locals 0
+
+    .line 1
+    invoke-static {p0, p1, p2, p3}, Landroidx/compose/ui/layout/u;->c(Landroidx/compose/ui/layout/v;Landroidx/compose/ui/node/N;Landroidx/compose/ui/layout/l;I)I
+
+    move-result p1
+
+    return p1
+.end method
+
+.method public final synthetic e(Landroidx/compose/ui/node/N;Landroidx/compose/ui/layout/l;I)I
+    .locals 0
+
+    .line 1
+    invoke-static {p0, p1, p2, p3}, Landroidx/compose/ui/layout/u;->a(Landroidx/compose/ui/layout/v;Landroidx/compose/ui/node/N;Landroidx/compose/ui/layout/l;I)I
+
+    move-result p1
+
+    return p1
+.end method
+
+.method public final equals(Ljava/lang/Object;)Z
+    .locals 4
+
+    const/4 v0, 0x1
+
+    if-ne p0, p1, :cond_0
+
+    return v0
+
+    :cond_0
+    instance-of v1, p1, Landroidx/compose/foundation/text/P;
+
+    const/4 v2, 0x0
+
+    if-nez v1, :cond_1
+
+    return v2
+
+    :cond_1
+    check-cast p1, Landroidx/compose/foundation/text/P;
+
+    iget-object v1, p1, Landroidx/compose/foundation/text/P;->a:Landroidx/compose/foundation/text/H;
+
+    iget-object v3, p0, Landroidx/compose/foundation/text/P;->a:Landroidx/compose/foundation/text/H;
+
+    invoke-static {v3, v1}, Lkotlin/jvm/internal/h;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
+
+    move-result v1
+
+    if-nez v1, :cond_2
+
+    return v2
+
+    :cond_2
+    iget v1, p0, Landroidx/compose/foundation/text/P;->b:I
+
+    iget v3, p1, Landroidx/compose/foundation/text/P;->b:I
+
+    if-eq v1, v3, :cond_3
+
+    return v2
+
+    :cond_3
+    iget-object v1, p0, Landroidx/compose/foundation/text/P;->c:Landroidx/compose/ui/text/input/K;
+
+    iget-object v3, p1, Landroidx/compose/foundation/text/P;->c:Landroidx/compose/ui/text/input/K;
+
+    invoke-static {v1, v3}, Lkotlin/jvm/internal/h;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
+
+    move-result v1
+
+    if-nez v1, :cond_4
+
+    return v2
+
+    :cond_4
+    iget-object v1, p0, Landroidx/compose/foundation/text/P;->d:Lka/a;
+
+    iget-object p1, p1, Landroidx/compose/foundation/text/P;->d:Lka/a;
+
+    invoke-static {v1, p1}, Lkotlin/jvm/internal/h;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
+
+    move-result p1
+
+    if-nez p1, :cond_5
+
+    return v2
+
+    :cond_5
+    return v0
+.end method
+
+.method public final synthetic g(Landroidx/compose/ui/o;)Landroidx/compose/ui/o;
+    .locals 0
+
+    .line 1
+    invoke-static {p0, p1}, Landroidx/compose/runtime/a0;->e(Landroidx/compose/ui/o;Landroidx/compose/ui/o;)Landroidx/compose/ui/o;
+
+    move-result-object p1
+
+    return-object p1
+.end method
+
+.method public final h(Landroidx/compose/ui/layout/L;Landroidx/compose/ui/layout/I;J)Landroidx/compose/ui/layout/K;
+    .locals 7
+
+    .line 1
+    const/4 v4, 0x0
+
+    .line 2
+    const v5, 0x7fffffff
+
+    .line 3
+    .line 4
+    .line 5
+    const/4 v2, 0x0
+
+    .line 6
+    const/4 v3, 0x0
+
+    .line 7
+    const/4 v6, 0x7
+
+    .line 8
+    move-wide v0, p3
+
+    .line 9
+    invoke-static/range {v0 .. v6}, LM0/a;->b(JIIIII)J
+
+    .line 10
+    .line 11
+    .line 12
+    move-result-wide v0
 
     .line 13
-    .line 14
-    invoke-virtual {p1}, Landroid/view/KeyEvent;->getKeyCode()I
+    invoke-interface {p2, v0, v1}, Landroidx/compose/ui/layout/I;->u(J)Landroidx/compose/ui/layout/X;
 
+    .line 14
     .line 15
     .line 16
+    move-result-object p2
+
     .line 17
-    move-result v0
+    iget v0, p2, Landroidx/compose/ui/layout/X;->c:I
 
     .line 18
-    invoke-static {v0}, Landroidx/compose/ui/input/key/a;->a(I)J
-
     .line 19
+    invoke-static {p3, p4}, LM0/a;->h(J)I
+
     .line 20
     .line 21
-    move-result-wide v2
-
     .line 22
-    sget-wide v4, Landroidx/compose/foundation/text/w;->i:J
+    move-result p3
 
     .line 23
-    .line 24
-    invoke-static {v2, v3, v4, v5}, Lt1/a;->a(JJ)Z
+    invoke-static {v0, p3}, Ljava/lang/Math;->min(II)I
 
+    .line 24
     .line 25
     .line 26
+    move-result p3
+
     .line 27
-    move-result v0
+    iget p4, p2, Landroidx/compose/ui/layout/X;->b:I
 
     .line 28
-    if-eqz v0, :cond_0
-
     .line 29
+    new-instance v0, Landroidx/compose/foundation/text/VerticalScrollLayoutModifier$measure$1;
+
     .line 30
-    sget-object v1, Landroidx/compose/foundation/text/KeyCommand;->SELECT_LINE_LEFT:Landroidx/compose/foundation/text/KeyCommand;
-
     .line 31
+    invoke-direct {v0, p1, p0, p2, p3}, Landroidx/compose/foundation/text/VerticalScrollLayoutModifier$measure$1;-><init>(Landroidx/compose/ui/layout/L;Landroidx/compose/foundation/text/P;Landroidx/compose/ui/layout/X;I)V
+
     .line 32
-    goto :goto_0
-
     .line 33
-    :cond_0
-    sget-wide v4, Landroidx/compose/foundation/text/w;->j:J
-
     .line 34
-    .line 35
-    invoke-static {v2, v3, v4, v5}, Lt1/a;->a(JJ)Z
+    invoke-static {p1, p4, p3, v0}, Landroidx/compose/ui/layout/u;->i(Landroidx/compose/ui/layout/L;IILka/c;)Landroidx/compose/ui/layout/K;
 
+    .line 35
     .line 36
     .line 37
+    move-result-object p1
+
     .line 38
+    return-object p1
+.end method
+
+.method public final hashCode()I
+    .locals 2
+
+    iget-object v0, p0, Landroidx/compose/foundation/text/P;->a:Landroidx/compose/foundation/text/H;
+
+    invoke-virtual {v0}, Ljava/lang/Object;->hashCode()I
+
     move-result v0
 
-    .line 39
-    if-eqz v0, :cond_1
+    mul-int/lit8 v0, v0, 0x1f
 
-    .line 40
-    .line 41
-    sget-object v1, Landroidx/compose/foundation/text/KeyCommand;->SELECT_LINE_RIGHT:Landroidx/compose/foundation/text/KeyCommand;
+    iget v1, p0, Landroidx/compose/foundation/text/P;->b:I
 
-    .line 42
-    .line 43
-    goto :goto_0
+    add-int/2addr v0, v1
 
-    .line 44
-    :cond_1
-    sget-wide v4, Landroidx/compose/foundation/text/w;->k:J
+    mul-int/lit8 v0, v0, 0x1f
 
-    .line 45
-    .line 46
-    invoke-static {v2, v3, v4, v5}, Lt1/a;->a(JJ)Z
+    iget-object v1, p0, Landroidx/compose/foundation/text/P;->c:Landroidx/compose/ui/text/input/K;
 
-    .line 47
-    .line 48
-    .line 49
+    invoke-virtual {v1}, Landroidx/compose/ui/text/input/K;->hashCode()I
+
+    move-result v1
+
+    add-int/2addr v1, v0
+
+    mul-int/lit8 v1, v1, 0x1f
+
+    iget-object v0, p0, Landroidx/compose/foundation/text/P;->d:Lka/a;
+
+    invoke-virtual {v0}, Ljava/lang/Object;->hashCode()I
+
     move-result v0
 
-    .line 50
-    if-eqz v0, :cond_2
+    add-int/2addr v0, v1
 
-    .line 51
-    .line 52
-    sget-object v1, Landroidx/compose/foundation/text/KeyCommand;->SELECT_HOME:Landroidx/compose/foundation/text/KeyCommand;
+    return v0
+.end method
 
-    .line 53
-    .line 54
-    goto :goto_0
+.method public final synthetic i(Lka/c;)Z
+    .locals 0
 
-    .line 55
-    :cond_2
-    sget-wide v4, Landroidx/compose/foundation/text/w;->l:J
+    .line 1
+    invoke-static {p0, p1}, Landroidx/compose/runtime/a0;->b(Landroidx/compose/ui/m;Lka/c;)Z
 
-    .line 56
-    .line 57
-    invoke-static {v2, v3, v4, v5}, Lt1/a;->a(JJ)Z
+    move-result p1
 
-    .line 58
-    .line 59
-    .line 60
-    move-result v0
+    return p1
+.end method
 
-    .line 61
-    if-eqz v0, :cond_7
+.method public final k(Ljava/lang/Object;Lka/e;)Ljava/lang/Object;
+    .locals 0
 
-    .line 62
-    .line 63
-    sget-object v1, Landroidx/compose/foundation/text/KeyCommand;->SELECT_END:Landroidx/compose/foundation/text/KeyCommand;
+    .line 1
+    invoke-interface {p2, p1, p0}, Lka/e;->invoke(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 64
-    .line 65
-    goto :goto_0
+    .line 2
+    .line 3
+    .line 4
+    move-result-object p1
 
-    .line 66
-    :cond_3
-    invoke-virtual {p1}, Landroid/view/KeyEvent;->isAltPressed()Z
+    .line 5
+    return-object p1
+.end method
 
-    .line 67
-    .line 68
-    .line 69
-    move-result v0
+.method public final toString()Ljava/lang/String;
+    .locals 2
 
-    .line 70
-    if-eqz v0, :cond_7
+    new-instance v0, Ljava/lang/StringBuilder;
 
-    .line 71
-    .line 72
-    invoke-virtual {p1}, Landroid/view/KeyEvent;->getKeyCode()I
+    const-string v1, "VerticalScrollLayoutModifier(scrollerPosition="
 
-    .line 73
-    .line 74
-    .line 75
-    move-result v0
+    invoke-direct {v0, v1}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
 
-    .line 76
-    invoke-static {v0}, Landroidx/compose/ui/input/key/a;->a(I)J
+    iget-object v1, p0, Landroidx/compose/foundation/text/P;->a:Landroidx/compose/foundation/text/H;
 
-    .line 77
-    .line 78
-    .line 79
-    move-result-wide v2
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 
-    .line 80
-    sget-wide v4, Landroidx/compose/foundation/text/w;->i:J
+    const-string v1, ", cursorOffset="
 
-    .line 81
-    .line 82
-    invoke-static {v2, v3, v4, v5}, Lt1/a;->a(JJ)Z
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    .line 83
-    .line 84
-    .line 85
-    move-result v0
+    iget v1, p0, Landroidx/compose/foundation/text/P;->b:I
 
-    .line 86
-    if-eqz v0, :cond_4
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
-    .line 87
-    .line 88
-    sget-object v1, Landroidx/compose/foundation/text/KeyCommand;->LINE_LEFT:Landroidx/compose/foundation/text/KeyCommand;
+    const-string v1, ", transformedText="
 
-    .line 89
-    .line 90
-    goto :goto_0
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    .line 91
-    :cond_4
-    sget-wide v4, Landroidx/compose/foundation/text/w;->j:J
+    iget-object v1, p0, Landroidx/compose/foundation/text/P;->c:Landroidx/compose/ui/text/input/K;
 
-    .line 92
-    .line 93
-    invoke-static {v2, v3, v4, v5}, Lt1/a;->a(JJ)Z
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 
-    .line 94
-    .line 95
-    .line 96
-    move-result v0
+    const-string v1, ", textLayoutResultProvider="
 
-    .line 97
-    if-eqz v0, :cond_5
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    .line 98
-    .line 99
-    sget-object v1, Landroidx/compose/foundation/text/KeyCommand;->LINE_RIGHT:Landroidx/compose/foundation/text/KeyCommand;
+    iget-object v1, p0, Landroidx/compose/foundation/text/P;->d:Lka/a;
 
-    .line 100
-    .line 101
-    goto :goto_0
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 
-    .line 102
-    :cond_5
-    sget-wide v4, Landroidx/compose/foundation/text/w;->k:J
+    const/16 v1, 0x29
 
-    .line 103
-    .line 104
-    invoke-static {v2, v3, v4, v5}, Lt1/a;->a(JJ)Z
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
 
-    .line 105
-    .line 106
-    .line 107
-    move-result v0
+    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
-    .line 108
-    if-eqz v0, :cond_6
+    move-result-object v0
 
-    .line 109
-    .line 110
-    sget-object v1, Landroidx/compose/foundation/text/KeyCommand;->HOME:Landroidx/compose/foundation/text/KeyCommand;
-
-    .line 111
-    .line 112
-    goto :goto_0
-
-    .line 113
-    :cond_6
-    sget-wide v4, Landroidx/compose/foundation/text/w;->l:J
-
-    .line 114
-    .line 115
-    invoke-static {v2, v3, v4, v5}, Lt1/a;->a(JJ)Z
-
-    .line 116
-    .line 117
-    .line 118
-    move-result v0
-
-    .line 119
-    if-eqz v0, :cond_7
-
-    .line 120
-    .line 121
-    sget-object v1, Landroidx/compose/foundation/text/KeyCommand;->END:Landroidx/compose/foundation/text/KeyCommand;
-
-    .line 122
-    .line 123
-    :cond_7
-    :goto_0
-    if-nez v1, :cond_8
-
-    .line 124
-    .line 125
-    sget-object v0, Landroidx/compose/foundation/text/o;->a:Landroidx/appcompat/app/y;
-
-    .line 126
-    .line 127
-    invoke-virtual {v0, p1}, Landroidx/appcompat/app/y;->b(Landroid/view/KeyEvent;)Landroidx/compose/foundation/text/KeyCommand;
-
-    .line 128
-    .line 129
-    .line 130
-    move-result-object v1
-
-    .line 131
-    :cond_8
-    return-object v1
+    return-object v0
 .end method

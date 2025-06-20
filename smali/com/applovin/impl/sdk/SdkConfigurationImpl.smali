@@ -15,6 +15,10 @@
 # direct methods
 .method public constructor <init>(Ljava/util/List;Lcom/applovin/impl/sdk/j;)V
     .locals 0
+    .param p1    # Ljava/util/List;
+        .annotation build Landroidx/annotation/Nullable;
+        .end annotation
+    .end param
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -285,6 +289,9 @@
 
 .method public getEnabledAmazonAdUnitIds()Ljava/util/List;
     .locals 1
+    .annotation build Landroidx/annotation/Nullable;
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "()",
@@ -294,8 +301,11 @@
         }
     .end annotation
 
+    .line 1
     iget-object v0, p0, Lcom/applovin/impl/sdk/SdkConfigurationImpl;->a:Ljava/util/List;
 
+    .line 2
+    .line 3
     return-object v0
 .end method
 
@@ -328,6 +338,8 @@
 
 .method public toString()Ljava/lang/String;
     .locals 2
+    .annotation build Landroidx/annotation/NonNull;
+    .end annotation
 
     .line 1
     new-instance v0, Ljava/lang/StringBuilder;

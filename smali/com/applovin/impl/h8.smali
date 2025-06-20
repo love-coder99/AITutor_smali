@@ -97,7 +97,7 @@
 
     .line 33
     .line 34
-    new-instance v4, Lcom/applovin/impl/is;
+    new-instance v4, Lcom/applovin/impl/A;
 
     .line 35
     .line 36
@@ -105,7 +105,7 @@
 
     .line 37
     .line 38
-    invoke-direct {v4, p0, v5}, Lcom/applovin/impl/is;-><init>(Ljava/lang/Object;I)V
+    invoke-direct {v4, p0, v5}, Lcom/applovin/impl/A;-><init>(Ljava/lang/Object;I)V
 
     .line 39
     .line 40
@@ -147,9 +147,9 @@
 .method private a(Lcom/applovin/impl/sl;)V
     .locals 3
 
+    .line 9
     iget-object v0, p0, Lcom/applovin/impl/h8;->c:Ljava/util/Deque;
 
-    .line 8
     invoke-interface {v0}, Ljava/util/Deque;->size()I
 
     move-result v0
@@ -170,9 +170,9 @@
     :goto_0
     invoke-static {v0}, Lcom/applovin/impl/b1;->b(Z)V
 
+    .line 10
     iget-object v0, p0, Lcom/applovin/impl/h8;->c:Ljava/util/Deque;
 
-    .line 9
     invoke-interface {v0, p1}, Ljava/util/Deque;->contains(Ljava/lang/Object;)Z
 
     move-result v0
@@ -181,12 +181,12 @@
 
     invoke-static {v0}, Lcom/applovin/impl/b1;->a(Z)V
 
-    .line 10
+    .line 11
     invoke-virtual {p1}, Lcom/applovin/impl/sl;->b()V
 
+    .line 12
     iget-object v0, p0, Lcom/applovin/impl/h8;->c:Ljava/util/Deque;
 
-    .line 11
     invoke-interface {v0, p1}, Ljava/util/Deque;->addFirst(Ljava/lang/Object;)V
 
     return-void
@@ -197,9 +197,9 @@
 .method public a()V
     .locals 1
 
-    .line 2
     const/4 v0, 0x1
 
+    .line 8
     iput-boolean v0, p0, Lcom/applovin/impl/h8;->e:Z
 
     return-void
@@ -208,22 +208,23 @@
 .method public a(J)V
     .locals 0
 
-    .line 3
+    .line 2
     return-void
 .end method
 
 .method public a(Lcom/applovin/impl/rl;)V
     .locals 3
 
+    .line 3
     iget-boolean v0, p0, Lcom/applovin/impl/h8;->e:Z
 
     const/4 v1, 0x1
 
     xor-int/2addr v0, v1
 
-    .line 4
     invoke-static {v0}, Lcom/applovin/impl/b1;->b(Z)V
 
+    .line 4
     iget v0, p0, Lcom/applovin/impl/h8;->d:I
 
     const/4 v2, 0x0
@@ -237,10 +238,10 @@
     :cond_0
     const/4 v0, 0x0
 
-    .line 5
     :goto_0
     invoke-static {v0}, Lcom/applovin/impl/b1;->b(Z)V
 
+    .line 5
     iget-object v0, p0, Lcom/applovin/impl/h8;->b:Lcom/applovin/impl/rl;
 
     if-ne v0, p1, :cond_1
@@ -250,12 +251,12 @@
     :cond_1
     const/4 v1, 0x0
 
-    .line 6
     :goto_1
     invoke-static {v1}, Lcom/applovin/impl/b1;->a(Z)V
 
     const/4 p1, 0x2
 
+    .line 6
     iput p1, p0, Lcom/applovin/impl/h8;->d:I
 
     return-void

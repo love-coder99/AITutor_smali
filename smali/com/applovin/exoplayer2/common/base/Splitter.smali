@@ -46,12 +46,16 @@
     .line 2
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
+    .line 3
     iput-object p1, p0, Lcom/applovin/exoplayer2/common/base/Splitter;->strategy:Lcom/applovin/exoplayer2/common/base/Splitter$e;
 
+    .line 4
     iput-boolean p2, p0, Lcom/applovin/exoplayer2/common/base/Splitter;->omitEmptyStrings:Z
 
+    .line 5
     iput-object p3, p0, Lcom/applovin/exoplayer2/common/base/Splitter;->trimmer:Lcom/applovin/exoplayer2/common/base/CharMatcher;
 
+    .line 6
     iput p4, p0, Lcom/applovin/exoplayer2/common/base/Splitter;->limit:I
 
     return-void

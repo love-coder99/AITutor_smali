@@ -34,6 +34,22 @@
 # virtual methods
 .method public createFromXmlInner(Landroid/content/Context;Lorg/xmlpull/v1/XmlPullParser;Landroid/util/AttributeSet;Landroid/content/res/Resources$Theme;)Landroid/graphics/drawable/Drawable;
     .locals 2
+    .param p1    # Landroid/content/Context;
+        .annotation build Landroidx/annotation/NonNull;
+        .end annotation
+    .end param
+    .param p2    # Lorg/xmlpull/v1/XmlPullParser;
+        .annotation build Landroidx/annotation/NonNull;
+        .end annotation
+    .end param
+    .param p3    # Landroid/util/AttributeSet;
+        .annotation build Landroidx/annotation/NonNull;
+        .end annotation
+    .end param
+    .param p4    # Landroid/content/res/Resources$Theme;
+        .annotation build Landroidx/annotation/Nullable;
+        .end annotation
+    .end param
 
     .line 1
     :try_start_0
@@ -45,16 +61,16 @@
     move-result-object v0
 
     .line 5
-    new-instance v1, Lw4/h;
+    new-instance v1, Lq2/d;
 
     .line 6
     .line 7
-    invoke-direct {v1, p1}, Lw4/h;-><init>(Landroid/content/Context;)V
+    invoke-direct {v1, p1}, Lq2/d;-><init>(Landroid/content/Context;)V
 
     .line 8
     .line 9
     .line 10
-    invoke-virtual {v1, v0, p2, p3, p4}, Lw4/h;->inflate(Landroid/content/res/Resources;Lorg/xmlpull/v1/XmlPullParser;Landroid/util/AttributeSet;Landroid/content/res/Resources$Theme;)V
+    invoke-virtual {v1, v0, p2, p3, p4}, Lq2/d;->inflate(Landroid/content/res/Resources;Lorg/xmlpull/v1/XmlPullParser;Landroid/util/AttributeSet;Landroid/content/res/Resources$Theme;)V
     :try_end_0
     .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
 

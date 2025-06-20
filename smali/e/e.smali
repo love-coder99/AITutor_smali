@@ -1,40 +1,77 @@
-.class public final Le/e;
+.class public abstract LE/e;
 .super Ljava/lang/Object;
 .source "SourceFile"
 
 
-# instance fields
-.field public final a:Landroidx/lifecycle/p;
-
-.field public final b:Ljava/util/ArrayList;
-
-
 # direct methods
-.method public constructor <init>(Landroidx/lifecycle/p;)V
+.method public static a(Landroid/content/Context;Ljava/lang/String;)Landroid/content/Context;
     .locals 0
 
     .line 1
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    invoke-virtual {p0, p1}, Landroid/content/Context;->createAttributionContext(Ljava/lang/String;)Landroid/content/Context;
 
     .line 2
     .line 3
     .line 4
-    iput-object p1, p0, Le/e;->a:Landroidx/lifecycle/p;
+    move-result-object p0
 
     .line 5
-    .line 6
-    new-instance p1, Ljava/util/ArrayList;
+    return-object p0
+.end method
 
-    .line 7
-    .line 8
-    invoke-direct {p1}, Ljava/util/ArrayList;-><init>()V
+.method public static b(Landroid/net/Uri;)Landroid/graphics/drawable/Icon;
+    .locals 0
 
-    .line 9
-    .line 10
-    .line 11
-    iput-object p1, p0, Le/e;->b:Ljava/util/ArrayList;
+    .line 1
+    invoke-static {p0}, Landroid/graphics/drawable/Icon;->createWithAdaptiveBitmapContentUri(Landroid/net/Uri;)Landroid/graphics/drawable/Icon;
 
-    .line 12
-    .line 13
+    .line 2
+    .line 3
+    .line 4
+    move-result-object p0
+
+    .line 5
+    return-object p0
+.end method
+
+.method public static c(Landroid/content/Context;)Ljava/lang/String;
+    .locals 0
+
+    .line 1
+    invoke-virtual {p0}, Landroid/content/Context;->getAttributionTag()Ljava/lang/String;
+
+    .line 2
+    .line 3
+    .line 4
+    move-result-object p0
+
+    .line 5
+    return-object p0
+.end method
+
+.method public static d(Landroid/view/accessibility/AccessibilityNodeInfo;)Ljava/lang/CharSequence;
+    .locals 0
+
+    .line 1
+    invoke-virtual {p0}, Landroid/view/accessibility/AccessibilityNodeInfo;->getStateDescription()Ljava/lang/CharSequence;
+
+    .line 2
+    .line 3
+    .line 4
+    move-result-object p0
+
+    .line 5
+    return-object p0
+.end method
+
+.method public static e(Landroid/view/accessibility/AccessibilityNodeInfo;Ljava/lang/CharSequence;)V
+    .locals 0
+
+    .line 1
+    invoke-virtual {p0, p1}, Landroid/view/accessibility/AccessibilityNodeInfo;->setStateDescription(Ljava/lang/CharSequence;)V
+
+    .line 2
+    .line 3
+    .line 4
     return-void
 .end method

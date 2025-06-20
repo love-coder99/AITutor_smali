@@ -94,9 +94,9 @@
 .method private a()V
     .locals 4
 
+    .line 3
     iget-object v0, p0, Lcom/applovin/impl/adview/activity/a;->c:Ljava/lang/ref/WeakReference;
 
-    .line 3
     invoke-virtual {v0}, Ljava/lang/ref/Reference;->get()Ljava/lang/Object;
 
     move-result-object v0
@@ -157,19 +157,19 @@
 .method private a(Ljava/lang/String;)V
     .locals 8
 
+    .line 7
     const-string v0, "No zone identifier found in ad response: "
 
-    .line 7
     :try_start_0
     new-instance v2, Lorg/json/JSONObject;
 
     invoke-direct {v2, p1}, Lorg/json/JSONObject;-><init>(Ljava/lang/String;)V
 
+    .line 8
     const-string v1, "zone_id"
 
     const-string v3, ""
 
-    .line 8
     invoke-static {v2, v1, v3}, Lcom/applovin/impl/sdk/utils/JsonUtils;->getString(Lorg/json/JSONObject;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v1
@@ -181,9 +181,9 @@
 
     if-nez v3, :cond_0
 
+    .line 10
     iget-object v0, p0, Lcom/applovin/impl/adview/activity/a;->a:Lcom/applovin/impl/sdk/j;
 
-    .line 10
     invoke-virtual {v0}, Lcom/applovin/impl/sdk/j;->i0()Lcom/applovin/impl/tm;
 
     move-result-object v0
@@ -194,13 +194,13 @@
 
     move-result-object v3
 
-    const/4 v4, 0x1
-
     new-instance v5, Lcom/applovin/impl/adview/activity/a$a;
 
     invoke-direct {v5, p0}, Lcom/applovin/impl/adview/activity/a$a;-><init>(Lcom/applovin/impl/adview/activity/a;)V
 
     iget-object v6, p0, Lcom/applovin/impl/adview/activity/a;->a:Lcom/applovin/impl/sdk/j;
+
+    const/4 v4, 0x1
 
     move-object v1, v7
 

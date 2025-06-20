@@ -6,23 +6,25 @@
 # annotations
 .annotation runtime Lkotlin/Metadata;
     d1 = {
-        "\u0000(\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0008\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0008\u0004\u0008&\u0018\u00002\u00020\u0001B\u0017\u0012\u0006\u0010\t\u001a\u00020\u0008\u0012\u0006\u0010\u000b\u001a\u00020\n\u00a2\u0006\u0004\u0008\u000c\u0010\rJ\u000c\u0010\u0004\u001a\u0008\u0012\u0004\u0012\u00020\u00030\u0002J\u000e\u0010\u0006\u001a\u0008\u0012\u0004\u0012\u00020\u00050\u0002H\u0016J\u0008\u0010\u0007\u001a\u00020\u0005H\u0017\u00a8\u0006\u000e"
+        "\u0000*\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0008\u0003\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0008\u0002\n\u0002\u0018\u0002\n\u0002\u0008\u0004\u0008&\u0018\u00002\u00020\u0001B\u0017\u0012\u0006\u0010\u0003\u001a\u00020\u0002\u0012\u0006\u0010\u0005\u001a\u00020\u0004\u00a2\u0006\u0004\u0008\u0006\u0010\u0007J\u0013\u0010\n\u001a\u0008\u0012\u0004\u0012\u00020\t0\u0008\u00a2\u0006\u0004\u0008\n\u0010\u000bJ\u0015\u0010\r\u001a\u0008\u0012\u0004\u0012\u00020\u000c0\u0008H\u0016\u00a2\u0006\u0004\u0008\r\u0010\u000bJ\u000f\u0010\u000e\u001a\u00020\u000cH\u0017\u00a2\u0006\u0004\u0008\u000e\u0010\u000f\u00a8\u0006\u0010"
     }
     d2 = {
         "Landroidx/work/Worker;",
         "Landroidx/work/t;",
-        "Lcom/google/common/util/concurrent/c;",
-        "Landroidx/work/s;",
-        "startWork",
-        "Landroidx/work/k;",
-        "getForegroundInfoAsync",
-        "getForegroundInfo",
         "Landroid/content/Context;",
         "context",
         "Landroidx/work/WorkerParameters;",
         "workerParams",
         "<init>",
         "(Landroid/content/Context;Landroidx/work/WorkerParameters;)V",
+        "Lcom/google/common/util/concurrent/d;",
+        "Landroidx/work/s;",
+        "startWork",
+        "()Lcom/google/common/util/concurrent/d;",
+        "Landroidx/work/j;",
+        "getForegroundInfoAsync",
+        "getForegroundInfo",
+        "()Landroidx/work/j;",
         "work-runtime_release"
     }
     k = 0x1
@@ -31,6 +33,7 @@
         0x8,
         0x0
     }
+    xi = 0x30
 .end annotation
 
 
@@ -52,7 +55,7 @@
 .method public abstract doWork()Landroidx/work/s;
 .end method
 
-.method public getForegroundInfo()Landroidx/work/k;
+.method public getForegroundInfo()Landroidx/work/j;
     .locals 2
 
     .line 1
@@ -72,12 +75,12 @@
     throw v0
 .end method
 
-.method public getForegroundInfoAsync()Lcom/google/common/util/concurrent/c;
-    .locals 4
+.method public getForegroundInfoAsync()Lcom/google/common/util/concurrent/d;
+    .locals 3
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "()",
-            "Lcom/google/common/util/concurrent/c;"
+            "Lcom/google/common/util/concurrent/d;"
         }
     .end annotation
 
@@ -99,36 +102,32 @@
     .line 8
     .line 9
     .line 10
-    new-instance v2, Ls/j0;
+    new-instance v2, LA/f;
 
     .line 11
     .line 12
-    const/16 v3, 0xd
+    invoke-direct {v2, v0, v1}, LA/f;-><init>(Ljava/util/concurrent/Executor;Lka/a;)V
 
     .line 13
     .line 14
-    invoke-direct {v2, v0, v3, v1}, Ls/j0;-><init>(Ljava/lang/Object;ILjava/lang/Object;)V
-
     .line 15
-    .line 16
-    .line 17
     invoke-static {v2}, Landroidx/concurrent/futures/l;->e(Landroidx/concurrent/futures/i;)Landroidx/concurrent/futures/k;
 
+    .line 16
+    .line 17
     .line 18
-    .line 19
-    .line 20
     move-result-object v0
 
-    .line 21
+    .line 19
     return-object v0
 .end method
 
-.method public final startWork()Lcom/google/common/util/concurrent/c;
-    .locals 4
+.method public final startWork()Lcom/google/common/util/concurrent/d;
+    .locals 3
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "()",
-            "Lcom/google/common/util/concurrent/c;"
+            "Lcom/google/common/util/concurrent/d;"
         }
     .end annotation
 
@@ -150,26 +149,22 @@
     .line 8
     .line 9
     .line 10
-    new-instance v2, Ls/j0;
+    new-instance v2, LA/f;
 
     .line 11
     .line 12
-    const/16 v3, 0xd
+    invoke-direct {v2, v0, v1}, LA/f;-><init>(Ljava/util/concurrent/Executor;Lka/a;)V
 
     .line 13
     .line 14
-    invoke-direct {v2, v0, v3, v1}, Ls/j0;-><init>(Ljava/lang/Object;ILjava/lang/Object;)V
-
     .line 15
-    .line 16
-    .line 17
     invoke-static {v2}, Landroidx/concurrent/futures/l;->e(Landroidx/concurrent/futures/i;)Landroidx/concurrent/futures/k;
 
+    .line 16
+    .line 17
     .line 18
-    .line 19
-    .line 20
     move-result-object v0
 
-    .line 21
+    .line 19
     return-object v0
 .end method

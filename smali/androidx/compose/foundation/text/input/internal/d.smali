@@ -34,7 +34,7 @@
     .locals 0
 
     .line 1
-    invoke-static {p1, p2}, Landroidx/activity/t;->t(Landroid/view/inputmethod/InputMethodManager;Landroid/view/View;)V
+    invoke-static {p1, p2}, LE0/d;->u(Landroid/view/inputmethod/InputMethodManager;Landroid/view/View;)V
 
     .line 2
     .line 3

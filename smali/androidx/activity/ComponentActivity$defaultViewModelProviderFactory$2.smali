@@ -3,14 +3,14 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lzh/a;
+.implements Lka/a;
 
 
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "Lkotlin/jvm/internal/Lambda;",
-        "Lzh/a;"
+        "Lka/a;"
     }
 .end annotation
 
@@ -19,9 +19,9 @@
         "\u0000\u0008\n\u0002\u0018\u0002\n\u0002\u0008\u0003\u0010\u0003\u001a\u00020\u0000H\n\u00a2\u0006\u0004\u0008\u0001\u0010\u0002"
     }
     d2 = {
-        "Landroidx/lifecycle/a1;",
+        "Landroidx/lifecycle/Z;",
         "invoke",
-        "()Landroidx/lifecycle/a1;",
+        "()Landroidx/lifecycle/Z;",
         "<anonymous>"
     }
     k = 0x3
@@ -34,14 +34,14 @@
 
 
 # instance fields
-.field final synthetic this$0:Landroidx/activity/s;
+.field final synthetic this$0:Landroidx/activity/o;
 
 
 # direct methods
-.method public constructor <init>(Landroidx/activity/s;)V
+.method public constructor <init>(Landroidx/activity/o;)V
     .locals 0
 
-    iput-object p1, p0, Landroidx/activity/ComponentActivity$defaultViewModelProviderFactory$2;->this$0:Landroidx/activity/s;
+    iput-object p1, p0, Landroidx/activity/ComponentActivity$defaultViewModelProviderFactory$2;->this$0:Landroidx/activity/o;
 
     const/4 p1, 0x0
 
@@ -52,29 +52,27 @@
 
 
 # virtual methods
-.method public final invoke()Landroidx/lifecycle/a1;
+.method public final invoke()Landroidx/lifecycle/Z;
     .locals 4
 
     .line 2
-    new-instance v0, Landroidx/lifecycle/a1;
+    new-instance v0, Landroidx/lifecycle/Z;
 
-    iget-object v1, p0, Landroidx/activity/ComponentActivity$defaultViewModelProviderFactory$2;->this$0:Landroidx/activity/s;
+    iget-object v1, p0, Landroidx/activity/ComponentActivity$defaultViewModelProviderFactory$2;->this$0:Landroidx/activity/o;
 
-    .line 3
     invoke-virtual {v1}, Landroid/app/Activity;->getApplication()Landroid/app/Application;
 
     move-result-object v1
 
-    iget-object v2, p0, Landroidx/activity/ComponentActivity$defaultViewModelProviderFactory$2;->this$0:Landroidx/activity/s;
+    iget-object v2, p0, Landroidx/activity/ComponentActivity$defaultViewModelProviderFactory$2;->this$0:Landroidx/activity/o;
 
-    .line 4
     invoke-virtual {v2}, Landroid/app/Activity;->getIntent()Landroid/content/Intent;
 
     move-result-object v3
 
     if-eqz v3, :cond_0
 
-    iget-object v3, p0, Landroidx/activity/ComponentActivity$defaultViewModelProviderFactory$2;->this$0:Landroidx/activity/s;
+    iget-object v3, p0, Landroidx/activity/ComponentActivity$defaultViewModelProviderFactory$2;->this$0:Landroidx/activity/o;
 
     invoke-virtual {v3}, Landroid/app/Activity;->getIntent()Landroid/content/Intent;
 
@@ -89,9 +87,8 @@
     :cond_0
     const/4 v3, 0x0
 
-    .line 5
     :goto_0
-    invoke-direct {v0, v1, v2, v3}, Landroidx/lifecycle/a1;-><init>(Landroid/app/Application;Lr4/g;Landroid/os/Bundle;)V
+    invoke-direct {v0, v1, v2, v3}, Landroidx/lifecycle/Z;-><init>(Landroid/app/Application;Lh2/g;Landroid/os/Bundle;)V
 
     return-object v0
 .end method
@@ -100,7 +97,7 @@
     .locals 1
 
     .line 1
-    invoke-virtual {p0}, Landroidx/activity/ComponentActivity$defaultViewModelProviderFactory$2;->invoke()Landroidx/lifecycle/a1;
+    invoke-virtual {p0}, Landroidx/activity/ComponentActivity$defaultViewModelProviderFactory$2;->invoke()Landroidx/lifecycle/Z;
 
     move-result-object v0
 

@@ -4,6 +4,15 @@
 
 
 # annotations
+.annotation runtime Lca/c;
+    c = "androidx.paging.FlattenedPageController"
+    f = "CachedPageEventFlow.kt"
+    l = {
+        0x11f
+    }
+    m = "record"
+.end annotation
+
 .annotation runtime Lkotlin/Metadata;
     k = 0x3
     mv = {
@@ -12,15 +21,6 @@
         0x0
     }
     xi = 0x30
-.end annotation
-
-.annotation runtime Lth/c;
-    c = "androidx.paging.FlattenedPageController"
-    f = "CachedPageEventFlow.kt"
-    l = {
-        0x11f
-    }
-    m = "record"
 .end annotation
 
 
@@ -35,22 +35,22 @@
 
 .field synthetic result:Ljava/lang/Object;
 
-.field final synthetic this$0:Landroidx/paging/k;
+.field final synthetic this$0:Landroidx/paging/l;
     .annotation system Ldalvik/annotation/Signature;
         value = {
-            "Landroidx/paging/k;"
+            "Landroidx/paging/l;"
         }
     .end annotation
 .end field
 
 
 # direct methods
-.method public constructor <init>(Landroidx/paging/k;Lkotlin/coroutines/Continuation;)V
+.method public constructor <init>(Landroidx/paging/l;Lkotlin/coroutines/Continuation;)V
     .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
-            "Landroidx/paging/k;",
+            "Landroidx/paging/l;",
             "Lkotlin/coroutines/Continuation<",
             "-",
             "Landroidx/paging/FlattenedPageController$record$1;",
@@ -58,7 +58,7 @@
         }
     .end annotation
 
-    iput-object p1, p0, Landroidx/paging/FlattenedPageController$record$1;->this$0:Landroidx/paging/k;
+    iput-object p1, p0, Landroidx/paging/FlattenedPageController$record$1;->this$0:Landroidx/paging/l;
 
     invoke-direct {p0, p2}, Lkotlin/coroutines/jvm/internal/ContinuationImpl;-><init>(Lkotlin/coroutines/Continuation;)V
 
@@ -80,11 +80,11 @@
 
     iput p1, p0, Landroidx/paging/FlattenedPageController$record$1;->label:I
 
-    iget-object p1, p0, Landroidx/paging/FlattenedPageController$record$1;->this$0:Landroidx/paging/k;
+    iget-object p1, p0, Landroidx/paging/FlattenedPageController$record$1;->this$0:Landroidx/paging/l;
 
     const/4 v0, 0x0
 
-    invoke-virtual {p1, v0, p0}, Landroidx/paging/k;->b(Lkotlin/collections/y;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
+    invoke-virtual {p1, v0, p0}, Landroidx/paging/l;->b(LY9/z;Lkotlin/coroutines/jvm/internal/ContinuationImpl;)Ljava/lang/Object;
 
     move-result-object p1
 

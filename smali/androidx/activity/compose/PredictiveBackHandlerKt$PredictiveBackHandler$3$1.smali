@@ -3,14 +3,14 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lzh/c;
+.implements Lka/c;
 
 
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "Lkotlin/jvm/internal/Lambda;",
-        "Lzh/c;"
+        "Lka/c;"
     }
 .end annotation
 
@@ -19,10 +19,10 @@
         "\u0000\u000c\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0008\u0003\u0010\u0004\u001a\u00020\u0001*\u00020\u0000H\n\u00a2\u0006\u0004\u0008\u0002\u0010\u0003"
     }
     d2 = {
-        "Landroidx/compose/runtime/p0;",
-        "Landroidx/compose/runtime/o0;",
+        "Landroidx/compose/runtime/H;",
+        "Landroidx/compose/runtime/G;",
         "invoke",
-        "(Landroidx/compose/runtime/p0;)Landroidx/compose/runtime/o0;",
+        "(Landroidx/compose/runtime/H;)Landroidx/compose/runtime/G;",
         "<anonymous>"
     }
     k = 0x3
@@ -37,18 +37,18 @@
 # instance fields
 .field final synthetic $backCallBack:Landroidx/activity/compose/k;
 
-.field final synthetic $backDispatcher:Landroidx/activity/p0;
+.field final synthetic $backDispatcher:Landroidx/activity/H;
 
-.field final synthetic $lifecycleOwner:Landroidx/lifecycle/w;
+.field final synthetic $lifecycleOwner:Landroidx/lifecycle/x;
 
 
 # direct methods
-.method public constructor <init>(Landroidx/activity/p0;Landroidx/lifecycle/w;Landroidx/activity/compose/k;)V
+.method public constructor <init>(Landroidx/activity/H;Landroidx/lifecycle/x;Landroidx/activity/compose/k;)V
     .locals 0
 
-    iput-object p1, p0, Landroidx/activity/compose/PredictiveBackHandlerKt$PredictiveBackHandler$3$1;->$backDispatcher:Landroidx/activity/p0;
+    iput-object p1, p0, Landroidx/activity/compose/PredictiveBackHandlerKt$PredictiveBackHandler$3$1;->$backDispatcher:Landroidx/activity/H;
 
-    iput-object p2, p0, Landroidx/activity/compose/PredictiveBackHandlerKt$PredictiveBackHandler$3$1;->$lifecycleOwner:Landroidx/lifecycle/w;
+    iput-object p2, p0, Landroidx/activity/compose/PredictiveBackHandlerKt$PredictiveBackHandler$3$1;->$lifecycleOwner:Landroidx/lifecycle/x;
 
     iput-object p3, p0, Landroidx/activity/compose/PredictiveBackHandlerKt$PredictiveBackHandler$3$1;->$backCallBack:Landroidx/activity/compose/k;
 
@@ -61,26 +61,27 @@
 
 
 # virtual methods
-.method public final invoke(Landroidx/compose/runtime/p0;)Landroidx/compose/runtime/o0;
+.method public final invoke(Landroidx/compose/runtime/H;)Landroidx/compose/runtime/G;
     .locals 2
 
-    iget-object p1, p0, Landroidx/activity/compose/PredictiveBackHandlerKt$PredictiveBackHandler$3$1;->$backDispatcher:Landroidx/activity/p0;
+    .line 2
+    iget-object p1, p0, Landroidx/activity/compose/PredictiveBackHandlerKt$PredictiveBackHandler$3$1;->$backDispatcher:Landroidx/activity/H;
 
-    iget-object v0, p0, Landroidx/activity/compose/PredictiveBackHandlerKt$PredictiveBackHandler$3$1;->$lifecycleOwner:Landroidx/lifecycle/w;
+    iget-object v0, p0, Landroidx/activity/compose/PredictiveBackHandlerKt$PredictiveBackHandler$3$1;->$lifecycleOwner:Landroidx/lifecycle/x;
 
     iget-object v1, p0, Landroidx/activity/compose/PredictiveBackHandlerKt$PredictiveBackHandler$3$1;->$backCallBack:Landroidx/activity/compose/k;
 
-    .line 2
-    invoke-virtual {p1, v0, v1}, Landroidx/activity/p0;->a(Landroidx/lifecycle/w;Landroidx/activity/i0;)V
-
-    iget-object p1, p0, Landroidx/activity/compose/PredictiveBackHandlerKt$PredictiveBackHandler$3$1;->$backCallBack:Landroidx/activity/compose/k;
+    invoke-virtual {p1, v0, v1}, Landroidx/activity/H;->a(Landroidx/lifecycle/x;Landroidx/activity/C;)V
 
     .line 3
-    new-instance v0, Landroidx/activity/compose/c;
+    iget-object p1, p0, Landroidx/activity/compose/PredictiveBackHandlerKt$PredictiveBackHandler$3$1;->$backCallBack:Landroidx/activity/compose/k;
+
+    .line 4
+    new-instance v0, Landroidx/activity/compose/b;
 
     const/4 v1, 0x2
 
-    invoke-direct {v0, p1, v1}, Landroidx/activity/compose/c;-><init>(Ljava/lang/Object;I)V
+    invoke-direct {v0, p1, v1}, Landroidx/activity/compose/b;-><init>(Ljava/lang/Object;I)V
 
     return-object v0
 .end method
@@ -89,9 +90,9 @@
     .locals 0
 
     .line 1
-    check-cast p1, Landroidx/compose/runtime/p0;
+    check-cast p1, Landroidx/compose/runtime/H;
 
-    invoke-virtual {p0, p1}, Landroidx/activity/compose/PredictiveBackHandlerKt$PredictiveBackHandler$3$1;->invoke(Landroidx/compose/runtime/p0;)Landroidx/compose/runtime/o0;
+    invoke-virtual {p0, p1}, Landroidx/activity/compose/PredictiveBackHandlerKt$PredictiveBackHandler$3$1;->invoke(Landroidx/compose/runtime/H;)Landroidx/compose/runtime/G;
 
     move-result-object p1
 

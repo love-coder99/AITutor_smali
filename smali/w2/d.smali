@@ -1,257 +1,206 @@
-.class public abstract Lw2/d;
+.class public final LW2/d;
 .super Ljava/lang/Object;
 .source "SourceFile"
 
+# interfaces
+.implements LW2/h;
 
-# static fields
-.field public static final a:Landroid/util/SparseIntArray;
+
+# instance fields
+.field public final a:LW2/e;
+
+.field public b:I
+
+.field public c:Ljava/lang/Class;
 
 
 # direct methods
-.method static constructor <clinit>()V
-    .locals 3
+.method public constructor <init>(LW2/e;)V
+    .locals 0
 
     .line 1
-    new-instance v0, Landroid/util/SparseIntArray;
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 2
     .line 3
-    invoke-direct {v0}, Landroid/util/SparseIntArray;-><init>()V
+    .line 4
+    iput-object p1, p0, LW2/d;->a:LW2/e;
+
+    .line 5
+    .line 6
+    return-void
+.end method
+
+
+# virtual methods
+.method public final a()V
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, LW2/d;->a:LW2/e;
+
+    .line 2
+    .line 3
+    invoke-virtual {v0, p0}, LO9/i0;->N(LW2/h;)V
 
     .line 4
     .line 5
     .line 6
-    sput-object v0, Lw2/d;->a:Landroid/util/SparseIntArray;
+    return-void
+.end method
+
+.method public final equals(Ljava/lang/Object;)Z
+    .locals 3
+
+    .line 1
+    instance-of v0, p1, LW2/d;
+
+    .line 2
+    .line 3
+    const/4 v1, 0x0
+
+    .line 4
+    if-eqz v0, :cond_0
+
+    .line 5
+    .line 6
+    check-cast p1, LW2/d;
 
     .line 7
     .line 8
-    sget v1, Ly2/r;->KeyAttribute_android_alpha:I
+    iget v0, p0, LW2/d;->b:I
 
     .line 9
     .line 10
-    const/4 v2, 0x1
+    iget v2, p1, LW2/d;->b:I
 
     .line 11
-    invoke-virtual {v0, v1, v2}, Landroid/util/SparseIntArray;->append(II)V
-
     .line 12
+    if-ne v0, v2, :cond_0
+
     .line 13
     .line 14
-    sget v1, Ly2/r;->KeyAttribute_android_elevation:I
+    iget-object v0, p0, LW2/d;->c:Ljava/lang/Class;
 
     .line 15
     .line 16
-    const/4 v2, 0x2
+    iget-object p1, p1, LW2/d;->c:Ljava/lang/Class;
 
     .line 17
-    invoke-virtual {v0, v1, v2}, Landroid/util/SparseIntArray;->append(II)V
-
     .line 18
+    if-ne v0, p1, :cond_0
+
     .line 19
     .line 20
-    sget v1, Ly2/r;->KeyAttribute_android_rotation:I
+    const/4 v1, 0x1
+
+    .line 21
+    :cond_0
+    return v1
+.end method
+
+.method public final hashCode()I
+    .locals 2
+
+    .line 1
+    iget v0, p0, LW2/d;->b:I
+
+    .line 2
+    .line 3
+    mul-int/lit8 v0, v0, 0x1f
+
+    .line 4
+    .line 5
+    iget-object v1, p0, LW2/d;->c:Ljava/lang/Class;
+
+    .line 6
+    .line 7
+    if-eqz v1, :cond_0
+
+    .line 8
+    .line 9
+    invoke-virtual {v1}, Ljava/lang/Object;->hashCode()I
+
+    .line 10
+    .line 11
+    .line 12
+    move-result v1
+
+    .line 13
+    goto :goto_0
+
+    .line 14
+    :cond_0
+    const/4 v1, 0x0
+
+    .line 15
+    :goto_0
+    add-int/2addr v0, v1
+
+    .line 16
+    return v0
+.end method
+
+.method public final toString()Ljava/lang/String;
+    .locals 2
+
+    .line 1
+    new-instance v0, Ljava/lang/StringBuilder;
+
+    .line 2
+    .line 3
+    const-string v1, "Key{size="
+
+    .line 4
+    .line 5
+    invoke-direct {v0, v1}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+
+    .line 6
+    .line 7
+    .line 8
+    iget v1, p0, LW2/d;->b:I
+
+    .line 9
+    .line 10
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+
+    .line 11
+    .line 12
+    .line 13
+    const-string v1, "array="
+
+    .line 14
+    .line 15
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 16
+    .line 17
+    .line 18
+    iget-object v1, p0, LW2/d;->c:Ljava/lang/Class;
+
+    .line 19
+    .line 20
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 
     .line 21
     .line 22
-    const/4 v2, 0x4
-
     .line 23
-    invoke-virtual {v0, v1, v2}, Landroid/util/SparseIntArray;->append(II)V
+    const/16 v1, 0x7d
 
     .line 24
     .line 25
-    .line 26
-    sget v1, Ly2/r;->KeyAttribute_android_rotationX:I
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
 
+    .line 26
     .line 27
     .line 28
-    const/4 v2, 0x5
+    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
     .line 29
-    invoke-virtual {v0, v1, v2}, Landroid/util/SparseIntArray;->append(II)V
-
     .line 30
     .line 31
+    move-result-object v0
+
     .line 32
-    sget v1, Ly2/r;->KeyAttribute_android_rotationY:I
-
-    .line 33
-    .line 34
-    const/4 v2, 0x6
-
-    .line 35
-    invoke-virtual {v0, v1, v2}, Landroid/util/SparseIntArray;->append(II)V
-
-    .line 36
-    .line 37
-    .line 38
-    sget v1, Ly2/r;->KeyAttribute_android_transformPivotX:I
-
-    .line 39
-    .line 40
-    const/16 v2, 0x13
-
-    .line 41
-    .line 42
-    invoke-virtual {v0, v1, v2}, Landroid/util/SparseIntArray;->append(II)V
-
-    .line 43
-    .line 44
-    .line 45
-    sget v1, Ly2/r;->KeyAttribute_android_transformPivotY:I
-
-    .line 46
-    .line 47
-    const/16 v2, 0x14
-
-    .line 48
-    .line 49
-    invoke-virtual {v0, v1, v2}, Landroid/util/SparseIntArray;->append(II)V
-
-    .line 50
-    .line 51
-    .line 52
-    sget v1, Ly2/r;->KeyAttribute_android_scaleX:I
-
-    .line 53
-    .line 54
-    const/4 v2, 0x7
-
-    .line 55
-    invoke-virtual {v0, v1, v2}, Landroid/util/SparseIntArray;->append(II)V
-
-    .line 56
-    .line 57
-    .line 58
-    sget v1, Ly2/r;->KeyAttribute_transitionPathRotate:I
-
-    .line 59
-    .line 60
-    const/16 v2, 0x8
-
-    .line 61
-    .line 62
-    invoke-virtual {v0, v1, v2}, Landroid/util/SparseIntArray;->append(II)V
-
-    .line 63
-    .line 64
-    .line 65
-    sget v1, Ly2/r;->KeyAttribute_transitionEasing:I
-
-    .line 66
-    .line 67
-    const/16 v2, 0x9
-
-    .line 68
-    .line 69
-    invoke-virtual {v0, v1, v2}, Landroid/util/SparseIntArray;->append(II)V
-
-    .line 70
-    .line 71
-    .line 72
-    sget v1, Ly2/r;->KeyAttribute_motionTarget:I
-
-    .line 73
-    .line 74
-    const/16 v2, 0xa
-
-    .line 75
-    .line 76
-    invoke-virtual {v0, v1, v2}, Landroid/util/SparseIntArray;->append(II)V
-
-    .line 77
-    .line 78
-    .line 79
-    sget v1, Ly2/r;->KeyAttribute_framePosition:I
-
-    .line 80
-    .line 81
-    const/16 v2, 0xc
-
-    .line 82
-    .line 83
-    invoke-virtual {v0, v1, v2}, Landroid/util/SparseIntArray;->append(II)V
-
-    .line 84
-    .line 85
-    .line 86
-    sget v1, Ly2/r;->KeyAttribute_curveFit:I
-
-    .line 87
-    .line 88
-    const/16 v2, 0xd
-
-    .line 89
-    .line 90
-    invoke-virtual {v0, v1, v2}, Landroid/util/SparseIntArray;->append(II)V
-
-    .line 91
-    .line 92
-    .line 93
-    sget v1, Ly2/r;->KeyAttribute_android_scaleY:I
-
-    .line 94
-    .line 95
-    const/16 v2, 0xe
-
-    .line 96
-    .line 97
-    invoke-virtual {v0, v1, v2}, Landroid/util/SparseIntArray;->append(II)V
-
-    .line 98
-    .line 99
-    .line 100
-    sget v1, Ly2/r;->KeyAttribute_android_translationX:I
-
-    .line 101
-    .line 102
-    const/16 v2, 0xf
-
-    .line 103
-    .line 104
-    invoke-virtual {v0, v1, v2}, Landroid/util/SparseIntArray;->append(II)V
-
-    .line 105
-    .line 106
-    .line 107
-    sget v1, Ly2/r;->KeyAttribute_android_translationY:I
-
-    .line 108
-    .line 109
-    const/16 v2, 0x10
-
-    .line 110
-    .line 111
-    invoke-virtual {v0, v1, v2}, Landroid/util/SparseIntArray;->append(II)V
-
-    .line 112
-    .line 113
-    .line 114
-    sget v1, Ly2/r;->KeyAttribute_android_translationZ:I
-
-    .line 115
-    .line 116
-    const/16 v2, 0x11
-
-    .line 117
-    .line 118
-    invoke-virtual {v0, v1, v2}, Landroid/util/SparseIntArray;->append(II)V
-
-    .line 119
-    .line 120
-    .line 121
-    sget v1, Ly2/r;->KeyAttribute_motionProgress:I
-
-    .line 122
-    .line 123
-    const/16 v2, 0x12
-
-    .line 124
-    .line 125
-    invoke-virtual {v0, v1, v2}, Landroid/util/SparseIntArray;->append(II)V
-
-    .line 126
-    .line 127
-    .line 128
-    return-void
+    return-object v0
 .end method

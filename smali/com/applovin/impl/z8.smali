@@ -44,38 +44,48 @@
     .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
+    .line 2
     iput p1, p0, Lcom/applovin/impl/z8;->a:I
 
+    .line 3
     iput p2, p0, Lcom/applovin/impl/z8;->b:I
 
+    .line 4
     iput p3, p0, Lcom/applovin/impl/z8;->c:I
 
+    .line 5
     iput p4, p0, Lcom/applovin/impl/z8;->d:I
 
+    .line 6
     iput p5, p0, Lcom/applovin/impl/z8;->e:I
 
-    .line 2
+    .line 7
     invoke-static {p5}, Lcom/applovin/impl/z8;->b(I)I
 
     move-result p1
 
     iput p1, p0, Lcom/applovin/impl/z8;->f:I
 
+    .line 8
     iput p6, p0, Lcom/applovin/impl/z8;->g:I
 
+    .line 9
     iput p7, p0, Lcom/applovin/impl/z8;->h:I
 
-    .line 3
+    .line 10
     invoke-static {p7}, Lcom/applovin/impl/z8;->a(I)I
 
     move-result p1
 
     iput p1, p0, Lcom/applovin/impl/z8;->i:I
 
+    .line 11
     iput-wide p8, p0, Lcom/applovin/impl/z8;->j:J
 
+    .line 12
     iput-object p10, p0, Lcom/applovin/impl/z8;->k:Lcom/applovin/impl/z8$a;
 
+    .line 13
     iput-object p11, p0, Lcom/applovin/impl/z8;->l:Lcom/applovin/impl/af;
 
     return-void
@@ -84,29 +94,29 @@
 .method public constructor <init>([BI)V
     .locals 1
 
-    .line 4
+    .line 14
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 5
+    .line 15
     new-instance v0, Lcom/applovin/impl/zg;
 
     invoke-direct {v0, p1}, Lcom/applovin/impl/zg;-><init>([B)V
 
     mul-int/lit8 p2, p2, 0x8
 
-    .line 6
+    .line 16
     invoke-virtual {v0, p2}, Lcom/applovin/impl/zg;->c(I)V
 
     const/16 p1, 0x10
 
-    .line 7
+    .line 17
     invoke-virtual {v0, p1}, Lcom/applovin/impl/zg;->a(I)I
 
     move-result p2
 
     iput p2, p0, Lcom/applovin/impl/z8;->a:I
 
-    .line 8
+    .line 18
     invoke-virtual {v0, p1}, Lcom/applovin/impl/zg;->a(I)I
 
     move-result p1
@@ -115,14 +125,14 @@
 
     const/16 p1, 0x18
 
-    .line 9
+    .line 19
     invoke-virtual {v0, p1}, Lcom/applovin/impl/zg;->a(I)I
 
     move-result p2
 
     iput p2, p0, Lcom/applovin/impl/z8;->c:I
 
-    .line 10
+    .line 20
     invoke-virtual {v0, p1}, Lcom/applovin/impl/zg;->a(I)I
 
     move-result p1
@@ -131,14 +141,14 @@
 
     const/16 p1, 0x14
 
-    .line 11
+    .line 21
     invoke-virtual {v0, p1}, Lcom/applovin/impl/zg;->a(I)I
 
     move-result p1
 
     iput p1, p0, Lcom/applovin/impl/z8;->e:I
 
-    .line 12
+    .line 22
     invoke-static {p1}, Lcom/applovin/impl/z8;->b(I)I
 
     move-result p1
@@ -147,7 +157,7 @@
 
     const/4 p1, 0x3
 
-    .line 13
+    .line 23
     invoke-virtual {v0, p1}, Lcom/applovin/impl/zg;->a(I)I
 
     move-result p1
@@ -158,7 +168,7 @@
 
     const/4 p1, 0x5
 
-    .line 14
+    .line 24
     invoke-virtual {v0, p1}, Lcom/applovin/impl/zg;->a(I)I
 
     move-result p1
@@ -167,7 +177,7 @@
 
     iput p1, p0, Lcom/applovin/impl/z8;->h:I
 
-    .line 15
+    .line 25
     invoke-static {p1}, Lcom/applovin/impl/z8;->a(I)I
 
     move-result p1
@@ -176,7 +186,7 @@
 
     const/16 p1, 0x24
 
-    .line 16
+    .line 26
     invoke-virtual {v0, p1}, Lcom/applovin/impl/zg;->b(I)J
 
     move-result-wide p1
@@ -185,8 +195,10 @@
 
     const/4 p1, 0x0
 
+    .line 27
     iput-object p1, p0, Lcom/applovin/impl/z8;->k:Lcom/applovin/impl/z8$a;
 
+    .line 28
     iput-object p1, p0, Lcom/applovin/impl/z8;->l:Lcom/applovin/impl/af;
 
     return-void
@@ -291,9 +303,9 @@
 
     check-cast v4, Ljava/lang/String;
 
+    .line 6
     const-string v5, "="
 
-    .line 6
     invoke-static {v4, v5}, Lcom/applovin/impl/xp;->b(Ljava/lang/String;Ljava/lang/String;)[Ljava/lang/String;
 
     move-result-object v5
@@ -305,16 +317,17 @@
 
     if-eq v6, v7, :cond_1
 
+    .line 8
     const-string v5, "Failed to parse Vorbis comment: "
 
     const-string v6, "FlacStreamMetadata"
 
-    .line 8
-    invoke-static {v5, v4, v6}, Landroidx/compose/foundation/text/modifiers/f;->B(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
+    .line 9
+    invoke-static {v5, v4, v6}, Lcom/android/billingclient/api/a;->x(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
 
     goto :goto_1
 
-    .line 9
+    .line 10
     :cond_1
     new-instance v4, Lcom/applovin/impl/dr;
 
@@ -326,7 +339,7 @@
 
     invoke-direct {v4, v6, v5}, Lcom/applovin/impl/dr;-><init>(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 10
+    .line 11
     invoke-virtual {v0, v4}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
     :goto_1
@@ -334,11 +347,11 @@
 
     goto :goto_0
 
-    .line 11
+    .line 12
     :cond_2
     invoke-virtual {v0, p1}, Ljava/util/ArrayList;->addAll(Ljava/util/Collection;)Z
 
-    .line 12
+    .line 13
     invoke-virtual {v0}, Ljava/util/ArrayList;->isEmpty()Z
 
     move-result p0
@@ -444,12 +457,14 @@
 .method public a()J
     .locals 4
 
+    .line 22
     iget v0, p0, Lcom/applovin/impl/z8;->d:I
 
     if-lez v0, :cond_0
 
     int-to-long v0, v0
 
+    .line 23
     iget v2, p0, Lcom/applovin/impl/z8;->c:I
 
     int-to-long v2, v2
@@ -458,7 +473,6 @@
 
     const-wide/16 v2, 0x2
 
-    .line 21
     div-long/2addr v0, v2
 
     const-wide/16 v2, 0x1
@@ -468,6 +482,7 @@
 
     goto :goto_2
 
+    .line 24
     :cond_0
     iget v0, p0, Lcom/applovin/impl/z8;->a:I
 
@@ -484,6 +499,7 @@
     :cond_1
     const-wide/16 v0, 0x1000
 
+    .line 25
     :goto_1
     iget v2, p0, Lcom/applovin/impl/z8;->g:I
 
@@ -499,7 +515,6 @@
 
     const-wide/16 v2, 0x8
 
-    .line 22
     div-long/2addr v0, v2
 
     const-wide/16 v2, 0x40
@@ -513,6 +528,7 @@
 .method public a(J)J
     .locals 8
 
+    .line 38
     iget v0, p0, Lcom/applovin/impl/z8;->e:I
 
     int-to-long v0, v0
@@ -521,9 +537,9 @@
 
     const-wide/32 v0, 0xf4240
 
-    .line 34
     div-long v2, p1, v0
 
+    .line 39
     iget-wide p1, p0, Lcom/applovin/impl/z8;->j:J
 
     const-wide/16 v0, 0x1
@@ -532,7 +548,6 @@
 
     const-wide/16 v4, 0x0
 
-    .line 35
     invoke-static/range {v2 .. v7}, Lcom/applovin/impl/xp;->b(JJJ)J
 
     move-result-wide p1
@@ -543,13 +558,13 @@
 .method public a(Lcom/applovin/impl/af;)Lcom/applovin/impl/af;
     .locals 1
 
+    .line 37
     iget-object v0, p0, Lcom/applovin/impl/z8;->l:Lcom/applovin/impl/af;
 
     if-nez v0, :cond_0
 
     goto :goto_0
 
-    .line 33
     :cond_0
     invoke-virtual {v0, p1}, Lcom/applovin/impl/af;->a(Lcom/applovin/impl/af;)Lcom/applovin/impl/af;
 
@@ -566,9 +581,10 @@
 
     const/16 v1, -0x80
 
-    .line 23
+    .line 26
     aput-byte v1, p1, v0
 
+    .line 27
     iget v0, p0, Lcom/applovin/impl/z8;->d:I
 
     if-lez v0, :cond_0
@@ -578,44 +594,44 @@
     :cond_0
     const/4 v0, -0x1
 
-    .line 24
+    .line 28
     :goto_0
     invoke-virtual {p0, p2}, Lcom/applovin/impl/z8;->a(Lcom/applovin/impl/af;)Lcom/applovin/impl/af;
 
     move-result-object p2
 
-    .line 25
+    .line 29
     new-instance v1, Lcom/applovin/impl/e9$b;
 
     invoke-direct {v1}, Lcom/applovin/impl/e9$b;-><init>()V
 
+    .line 30
     const-string v2, "audio/flac"
 
-    .line 26
     invoke-virtual {v1, v2}, Lcom/applovin/impl/e9$b;->f(Ljava/lang/String;)Lcom/applovin/impl/e9$b;
 
     move-result-object v1
 
-    .line 27
+    .line 31
     invoke-virtual {v1, v0}, Lcom/applovin/impl/e9$b;->i(I)Lcom/applovin/impl/e9$b;
 
     move-result-object v0
 
     iget v1, p0, Lcom/applovin/impl/z8;->g:I
 
-    .line 28
+    .line 32
     invoke-virtual {v0, v1}, Lcom/applovin/impl/e9$b;->c(I)Lcom/applovin/impl/e9$b;
 
     move-result-object v0
 
     iget v1, p0, Lcom/applovin/impl/z8;->e:I
 
-    .line 29
+    .line 33
     invoke-virtual {v0, v1}, Lcom/applovin/impl/e9$b;->n(I)Lcom/applovin/impl/e9$b;
 
     move-result-object v0
 
-    .line 30
+    .line 34
     invoke-static {p1}, Ljava/util/Collections;->singletonList(Ljava/lang/Object;)Ljava/util/List;
 
     move-result-object p1
@@ -624,12 +640,12 @@
 
     move-result-object p1
 
-    .line 31
+    .line 35
     invoke-virtual {p1, p2}, Lcom/applovin/impl/e9$b;->a(Lcom/applovin/impl/af;)Lcom/applovin/impl/e9$b;
 
     move-result-object p1
 
-    .line 32
+    .line 36
     invoke-virtual {p1}, Lcom/applovin/impl/e9$b;->a()Lcom/applovin/impl/e9;
 
     move-result-object p1
@@ -640,7 +656,7 @@
 .method public a(Lcom/applovin/impl/z8$a;)Lcom/applovin/impl/z8;
     .locals 13
 
-    .line 36
+    .line 40
     new-instance v12, Lcom/applovin/impl/z8;
 
     iget v1, p0, Lcom/applovin/impl/z8;->a:I
@@ -673,7 +689,7 @@
 .method public a(Ljava/util/List;)Lcom/applovin/impl/z8;
     .locals 12
 
-    .line 18
+    .line 19
     invoke-static {}, Ljava/util/Collections;->emptyList()Ljava/util/List;
 
     move-result-object v0
@@ -682,12 +698,12 @@
 
     move-result-object p1
 
-    .line 19
+    .line 20
     invoke-virtual {p0, p1}, Lcom/applovin/impl/z8;->a(Lcom/applovin/impl/af;)Lcom/applovin/impl/af;
 
     move-result-object v11
 
-    .line 20
+    .line 21
     new-instance p1, Lcom/applovin/impl/z8;
 
     iget v1, p0, Lcom/applovin/impl/z8;->a:I
@@ -718,6 +734,7 @@
 .method public b()J
     .locals 5
 
+    .line 5
     iget-wide v0, p0, Lcom/applovin/impl/z8;->j:J
 
     const-wide/16 v2, 0x0
@@ -739,7 +756,6 @@
 
     int-to-long v2, v2
 
-    .line 5
     div-long/2addr v0, v2
 
     :goto_0

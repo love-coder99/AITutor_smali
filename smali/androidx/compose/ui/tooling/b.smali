@@ -4,7 +4,7 @@
 
 
 # virtual methods
-.method public final b(ILf/a;Ljava/lang/Object;)V
+.method public final b(ILh/a;Ljava/lang/Object;)V
     .locals 0
 
     .line 1

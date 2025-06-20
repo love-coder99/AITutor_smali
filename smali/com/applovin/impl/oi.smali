@@ -35,16 +35,16 @@
 
     .line 5
     .line 6
-    const/4 v2, 0x0
-
-    .line 7
-    const/4 v3, 0x0
-
-    .line 8
     const/4 v4, 0x0
 
-    .line 9
+    .line 7
     const/4 v5, 0x0
+
+    .line 8
+    const/4 v2, 0x0
+
+    .line 9
+    const/4 v3, 0x0
 
     .line 10
     move-object v0, v6
@@ -129,16 +129,22 @@
 .method public b()[Ljava/lang/Object;
     .locals 1
 
+    .line 1
     iget-object v0, p0, Lcom/applovin/impl/oi;->c:[Ljava/lang/Object;
 
+    .line 2
+    .line 3
     return-object v0
 .end method
 
 .method public c()I
     .locals 1
 
+    .line 1
     iget v0, p0, Lcom/applovin/impl/oi;->h:I
 
+    .line 2
+    .line 3
     return v0
 .end method
 
@@ -274,8 +280,11 @@
 .method public hashCode()I
     .locals 1
 
+    .line 1
     iget v0, p0, Lcom/applovin/impl/oi;->g:I
 
+    .line 2
+    .line 3
     return v0
 .end method
 
@@ -308,7 +317,10 @@
 .method public size()I
     .locals 1
 
+    .line 1
     iget v0, p0, Lcom/applovin/impl/oi;->h:I
 
+    .line 2
+    .line 3
     return v0
 .end method

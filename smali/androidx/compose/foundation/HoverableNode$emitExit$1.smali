@@ -4,6 +4,15 @@
 
 
 # annotations
+.annotation runtime Lca/c;
+    c = "androidx.compose.foundation.HoverableNode"
+    f = "Hoverable.kt"
+    l = {
+        0x77
+    }
+    m = "emitExit"
+.end annotation
+
 .annotation runtime Lkotlin/Metadata;
     k = 0x3
     mv = {
@@ -14,15 +23,6 @@
     xi = 0x30
 .end annotation
 
-.annotation runtime Lth/c;
-    c = "androidx.compose.foundation.HoverableNode"
-    f = "Hoverable.kt"
-    l = {
-        0x77
-    }
-    m = "emitExit"
-.end annotation
-
 
 # instance fields
 .field L$0:Ljava/lang/Object;
@@ -31,16 +31,16 @@
 
 .field synthetic result:Ljava/lang/Object;
 
-.field final synthetic this$0:Landroidx/compose/foundation/b0;
+.field final synthetic this$0:Landroidx/compose/foundation/z;
 
 
 # direct methods
-.method public constructor <init>(Landroidx/compose/foundation/b0;Lkotlin/coroutines/Continuation;)V
+.method public constructor <init>(Landroidx/compose/foundation/z;Lkotlin/coroutines/Continuation;)V
     .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
-            "Landroidx/compose/foundation/b0;",
+            "Landroidx/compose/foundation/z;",
             "Lkotlin/coroutines/Continuation<",
             "-",
             "Landroidx/compose/foundation/HoverableNode$emitExit$1;",
@@ -48,7 +48,7 @@
         }
     .end annotation
 
-    iput-object p1, p0, Landroidx/compose/foundation/HoverableNode$emitExit$1;->this$0:Landroidx/compose/foundation/b0;
+    iput-object p1, p0, Landroidx/compose/foundation/HoverableNode$emitExit$1;->this$0:Landroidx/compose/foundation/z;
 
     invoke-direct {p0, p2}, Lkotlin/coroutines/jvm/internal/ContinuationImpl;-><init>(Lkotlin/coroutines/Continuation;)V
 
@@ -70,9 +70,9 @@
 
     iput p1, p0, Landroidx/compose/foundation/HoverableNode$emitExit$1;->label:I
 
-    iget-object p1, p0, Landroidx/compose/foundation/HoverableNode$emitExit$1;->this$0:Landroidx/compose/foundation/b0;
+    iget-object p1, p0, Landroidx/compose/foundation/HoverableNode$emitExit$1;->this$0:Landroidx/compose/foundation/z;
 
-    invoke-static {p1, p0}, Landroidx/compose/foundation/b0;->B0(Landroidx/compose/foundation/b0;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
+    invoke-static {p1, p0}, Landroidx/compose/foundation/z;->z0(Landroidx/compose/foundation/z;Lkotlin/coroutines/jvm/internal/ContinuationImpl;)Ljava/lang/Object;
 
     move-result-object p1
 

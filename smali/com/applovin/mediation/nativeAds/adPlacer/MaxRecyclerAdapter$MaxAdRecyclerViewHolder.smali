@@ -1,5 +1,5 @@
 .class public Lcom/applovin/mediation/nativeAds/adPlacer/MaxRecyclerAdapter$MaxAdRecyclerViewHolder;
-.super Landroidx/recyclerview/widget/h1;
+.super Landroidx/recyclerview/widget/c0;
 .source "SourceFile"
 
 
@@ -23,7 +23,7 @@
     .locals 1
 
     .line 1
-    invoke-direct {p0, p1}, Landroidx/recyclerview/widget/h1;-><init>(Landroid/view/View;)V
+    invoke-direct {p0, p1}, Landroidx/recyclerview/widget/c0;-><init>(Landroid/view/View;)V
 
     .line 2
     .line 3
@@ -56,7 +56,10 @@
 .method public getContainerView()Landroid/view/ViewGroup;
     .locals 1
 
+    .line 1
     iget-object v0, p0, Lcom/applovin/mediation/nativeAds/adPlacer/MaxRecyclerAdapter$MaxAdRecyclerViewHolder;->a:Landroid/view/ViewGroup;
 
+    .line 2
+    .line 3
     return-object v0
 .end method

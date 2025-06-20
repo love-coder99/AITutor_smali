@@ -1,97 +1,227 @@
-.class public abstract Landroidx/core/view/w0;
-.super Ljava/lang/Object;
+.class public Landroidx/core/view/w0;
+.super Landroidx/core/view/z0;
 .source "SourceFile"
 
 
+# instance fields
+.field public final c:Landroid/view/WindowInsets$Builder;
+
+
 # direct methods
-.method public static a(Landroid/view/View;)[Ljava/lang/String;
-    .locals 0
+.method public constructor <init>()V
+    .locals 1
 
     .line 1
-    invoke-virtual {p0}, Landroid/view/View;->getReceiveContentMimeTypes()[Ljava/lang/String;
+    invoke-direct {p0}, Landroidx/core/view/z0;-><init>()V
+
+    .line 2
+    invoke-static {}, Lcom/mbridge/msdk/thrid/okhttp/internal/platform/a;->f()Landroid/view/WindowInsets$Builder;
+
+    move-result-object v0
+
+    iput-object v0, p0, Landroidx/core/view/w0;->c:Landroid/view/WindowInsets$Builder;
+
+    return-void
+.end method
+
+.method public constructor <init>(Landroidx/core/view/K0;)V
+    .locals 0
+
+    .line 3
+    invoke-direct {p0, p1}, Landroidx/core/view/z0;-><init>(Landroidx/core/view/K0;)V
+
+    .line 4
+    invoke-virtual {p1}, Landroidx/core/view/K0;->g()Landroid/view/WindowInsets;
+
+    move-result-object p1
+
+    if-eqz p1, :cond_0
+
+    .line 5
+    invoke-static {p1}, Landroidx/compose/ui/platform/v0;->g(Landroid/view/WindowInsets;)Landroid/view/WindowInsets$Builder;
+
+    move-result-object p1
+
+    goto :goto_0
+
+    .line 6
+    :cond_0
+    invoke-static {}, Lcom/mbridge/msdk/thrid/okhttp/internal/platform/a;->f()Landroid/view/WindowInsets$Builder;
+
+    move-result-object p1
+
+    :goto_0
+    iput-object p1, p0, Landroidx/core/view/w0;->c:Landroid/view/WindowInsets$Builder;
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public b()Landroidx/core/view/K0;
+    .locals 3
+
+    .line 1
+    invoke-virtual {p0}, Landroidx/core/view/z0;->a()V
 
     .line 2
     .line 3
     .line 4
-    move-result-object p0
+    iget-object v0, p0, Landroidx/core/view/w0;->c:Landroid/view/WindowInsets$Builder;
 
     .line 5
-    return-object p0
+    .line 6
+    invoke-static {v0}, Lcom/mbridge/msdk/thrid/okhttp/internal/platform/a;->g(Landroid/view/WindowInsets$Builder;)Landroid/view/WindowInsets;
+
+    .line 7
+    .line 8
+    .line 9
+    move-result-object v0
+
+    .line 10
+    const/4 v1, 0x0
+
+    .line 11
+    invoke-static {v1, v0}, Landroidx/core/view/K0;->h(Landroid/view/View;Landroid/view/WindowInsets;)Landroidx/core/view/K0;
+
+    .line 12
+    .line 13
+    .line 14
+    move-result-object v0
+
+    .line 15
+    iget-object v1, p0, Landroidx/core/view/z0;->b:[Ll1/c;
+
+    .line 16
+    .line 17
+    iget-object v2, v0, Landroidx/core/view/K0;->a:Landroidx/core/view/G0;
+
+    .line 18
+    .line 19
+    invoke-virtual {v2, v1}, Landroidx/core/view/G0;->q([Ll1/c;)V
+
+    .line 20
+    .line 21
+    .line 22
+    return-object v0
 .end method
 
-.method public static b(Landroid/view/View;Landroidx/core/view/k;)Landroidx/core/view/k;
+.method public d(Ll1/c;)V
     .locals 1
 
     .line 1
-    iget-object v0, p1, Landroidx/core/view/k;->a:Landroidx/core/view/j;
+    iget-object v0, p0, Landroidx/core/view/w0;->c:Landroid/view/WindowInsets$Builder;
 
     .line 2
     .line 3
-    invoke-interface {v0}, Landroidx/core/view/j;->e()Landroid/view/ContentInfo;
+    invoke-virtual {p1}, Ll1/c;->e()Landroid/graphics/Insets;
 
     .line 4
     .line 5
     .line 6
-    move-result-object v0
+    move-result-object p1
 
     .line 7
-    invoke-static {v0}, Ljava/util/Objects;->requireNonNull(Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-static {v0, p1}, Landroidx/compose/ui/platform/v0;->C(Landroid/view/WindowInsets$Builder;Landroid/graphics/Insets;)V
 
     .line 8
     .line 9
     .line 10
-    invoke-static {v0}, Landroidx/compose/ui/contentcapture/a;->g(Ljava/lang/Object;)Landroid/view/ContentInfo;
+    return-void
+.end method
 
-    .line 11
-    .line 12
-    .line 13
-    move-result-object v0
+.method public e(Ll1/c;)V
+    .locals 1
 
-    .line 14
-    invoke-virtual {p0, v0}, Landroid/view/View;->performReceiveContent(Landroid/view/ContentInfo;)Landroid/view/ContentInfo;
+    .line 1
+    iget-object v0, p0, Landroidx/core/view/w0;->c:Landroid/view/WindowInsets$Builder;
 
-    .line 15
-    .line 16
-    .line 17
-    move-result-object p0
+    .line 2
+    .line 3
+    invoke-virtual {p1}, Ll1/c;->e()Landroid/graphics/Insets;
 
-    .line 18
-    if-nez p0, :cond_0
+    .line 4
+    .line 5
+    .line 6
+    move-result-object p1
 
-    .line 19
-    .line 20
-    const/4 p0, 0x0
+    .line 7
+    invoke-static {v0, p1}, Landroidx/compose/ui/platform/v0;->v(Landroid/view/WindowInsets$Builder;Landroid/graphics/Insets;)V
 
-    .line 21
-    return-object p0
+    .line 8
+    .line 9
+    .line 10
+    return-void
+.end method
 
-    .line 22
-    :cond_0
-    if-ne p0, v0, :cond_1
+.method public f(Ll1/c;)V
+    .locals 1
 
-    .line 23
-    .line 24
-    return-object p1
+    .line 1
+    iget-object v0, p0, Landroidx/core/view/w0;->c:Landroid/view/WindowInsets$Builder;
 
-    .line 25
-    :cond_1
-    new-instance p1, Landroidx/core/view/k;
+    .line 2
+    .line 3
+    invoke-virtual {p1}, Ll1/c;->e()Landroid/graphics/Insets;
 
-    .line 26
-    .line 27
-    new-instance v0, Landroidx/core/view/f;
+    .line 4
+    .line 5
+    .line 6
+    move-result-object p1
 
-    .line 28
-    .line 29
-    invoke-direct {v0, p0}, Landroidx/core/view/f;-><init>(Landroid/view/ContentInfo;)V
+    .line 7
+    invoke-static {v0, p1}, Landroidx/compose/ui/platform/v0;->z(Landroid/view/WindowInsets$Builder;Landroid/graphics/Insets;)V
 
-    .line 30
-    .line 31
-    .line 32
-    invoke-direct {p1, v0}, Landroidx/core/view/k;-><init>(Landroidx/core/view/j;)V
+    .line 8
+    .line 9
+    .line 10
+    return-void
+.end method
 
-    .line 33
-    .line 34
-    .line 35
-    return-object p1
+.method public g(Ll1/c;)V
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, Landroidx/core/view/w0;->c:Landroid/view/WindowInsets$Builder;
+
+    .line 2
+    .line 3
+    invoke-virtual {p1}, Ll1/c;->e()Landroid/graphics/Insets;
+
+    .line 4
+    .line 5
+    .line 6
+    move-result-object p1
+
+    .line 7
+    invoke-static {v0, p1}, Landroidx/compose/ui/platform/v0;->p(Landroid/view/WindowInsets$Builder;Landroid/graphics/Insets;)V
+
+    .line 8
+    .line 9
+    .line 10
+    return-void
+.end method
+
+.method public h(Ll1/c;)V
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, Landroidx/core/view/w0;->c:Landroid/view/WindowInsets$Builder;
+
+    .line 2
+    .line 3
+    invoke-virtual {p1}, Ll1/c;->e()Landroid/graphics/Insets;
+
+    .line 4
+    .line 5
+    .line 6
+    move-result-object p1
+
+    .line 7
+    invoke-static {v0, p1}, Landroidx/compose/ui/platform/v0;->D(Landroid/view/WindowInsets$Builder;Landroid/graphics/Insets;)V
+
+    .line 8
+    .line 9
+    .line 10
+    return-void
 .end method

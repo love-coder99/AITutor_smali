@@ -3,14 +3,14 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lzh/c;
+.implements Lka/c;
 
 
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "Lkotlin/jvm/internal/FunctionReferenceImpl;",
-        "Lzh/c;"
+        "Lka/c;"
     }
 .end annotation
 
@@ -45,15 +45,15 @@
 .method public constructor <init>()V
     .locals 6
 
+    const-string v4, "<init>(Landroid/view/View;)V"
+
+    const/4 v5, 0x0
+
     const/4 v1, 0x1
 
     const-class v2, Landroidx/compose/foundation/text/input/internal/n;
 
     const-string v3, "<init>"
-
-    const-string v4, "<init>(Landroid/view/View;)V"
-
-    const/4 v5, 0x0
 
     move-object v0, p0
 

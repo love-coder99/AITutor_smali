@@ -3,14 +3,23 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lzh/f;
+.implements Lka/f;
 
 
 # annotations
+.annotation runtime Lca/c;
+    c = "androidx.paging.CachedPagingDataKt$cachedIn$$inlined$simpleMapLatest$1"
+    f = "CachedPagingData.kt"
+    l = {
+        0x69
+    }
+    m = "invokeSuspend"
+.end annotation
+
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "Lkotlin/coroutines/jvm/internal/SuspendLambda;",
-        "Lzh/f;"
+        "Lka/f;"
     }
 .end annotation
 
@@ -21,9 +30,9 @@
     d2 = {
         "T",
         "R",
-        "Lkotlinx/coroutines/flow/i;",
+        "Lkotlinx/coroutines/flow/g;",
         "it",
-        "Lqh/r;",
+        "LX9/j;",
         "<anonymous>"
     }
     k = 0x3
@@ -34,18 +43,9 @@
     }
 .end annotation
 
-.annotation runtime Lth/c;
-    c = "androidx.paging.CachedPagingDataKt$cachedIn$$inlined$simpleMapLatest$1"
-    f = "CachedPagingData.kt"
-    l = {
-        0x69
-    }
-    m = "invokeSuspend"
-.end annotation
-
 
 # instance fields
-.field final synthetic $scope$inlined:Lkotlinx/coroutines/w;
+.field final synthetic $scope$inlined:Lkotlinx/coroutines/u;
 
 .field final synthetic $tracker$inlined:Landroidx/paging/a;
 
@@ -57,10 +57,10 @@
 
 
 # direct methods
-.method public constructor <init>(Lkotlin/coroutines/Continuation;Lkotlinx/coroutines/w;Landroidx/paging/a;)V
+.method public constructor <init>(Lkotlin/coroutines/Continuation;Lkotlinx/coroutines/u;Landroidx/paging/a;)V
     .locals 0
 
-    iput-object p2, p0, Landroidx/paging/CachedPagingDataKt$cachedIn$$inlined$simpleMapLatest$1;->$scope$inlined:Lkotlinx/coroutines/w;
+    iput-object p2, p0, Landroidx/paging/CachedPagingDataKt$cachedIn$$inlined$simpleMapLatest$1;->$scope$inlined:Lkotlinx/coroutines/u;
 
     const/4 p2, 0x3
 
@@ -75,27 +75,27 @@
     .locals 0
 
     .line 1
-    check-cast p1, Lkotlinx/coroutines/flow/i;
+    check-cast p1, Lkotlinx/coroutines/flow/g;
 
     check-cast p3, Lkotlin/coroutines/Continuation;
 
-    invoke-virtual {p0, p1, p2, p3}, Landroidx/paging/CachedPagingDataKt$cachedIn$$inlined$simpleMapLatest$1;->invoke(Lkotlinx/coroutines/flow/i;Ljava/lang/Object;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
+    invoke-virtual {p0, p1, p2, p3}, Landroidx/paging/CachedPagingDataKt$cachedIn$$inlined$simpleMapLatest$1;->invoke(Lkotlinx/coroutines/flow/g;Ljava/lang/Object;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
 
     move-result-object p1
 
     return-object p1
 .end method
 
-.method public final invoke(Lkotlinx/coroutines/flow/i;Ljava/lang/Object;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
+.method public final invoke(Lkotlinx/coroutines/flow/g;Ljava/lang/Object;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
     .locals 3
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
-            "Lkotlinx/coroutines/flow/i;",
-            "Landroidx/paging/e1;",
+            "Lkotlinx/coroutines/flow/g;",
+            "Landroidx/paging/f0;",
             "Lkotlin/coroutines/Continuation<",
             "-",
-            "Lqh/r;",
+            "LX9/j;",
             ">;)",
             "Ljava/lang/Object;"
         }
@@ -104,17 +104,17 @@
     .line 2
     new-instance v0, Landroidx/paging/CachedPagingDataKt$cachedIn$$inlined$simpleMapLatest$1;
 
-    iget-object v1, p0, Landroidx/paging/CachedPagingDataKt$cachedIn$$inlined$simpleMapLatest$1;->$scope$inlined:Lkotlinx/coroutines/w;
+    iget-object v1, p0, Landroidx/paging/CachedPagingDataKt$cachedIn$$inlined$simpleMapLatest$1;->$scope$inlined:Lkotlinx/coroutines/u;
 
     const/4 v2, 0x0
 
-    invoke-direct {v0, p3, v1, v2}, Landroidx/paging/CachedPagingDataKt$cachedIn$$inlined$simpleMapLatest$1;-><init>(Lkotlin/coroutines/Continuation;Lkotlinx/coroutines/w;Landroidx/paging/a;)V
+    invoke-direct {v0, p3, v1, v2}, Landroidx/paging/CachedPagingDataKt$cachedIn$$inlined$simpleMapLatest$1;-><init>(Lkotlin/coroutines/Continuation;Lkotlinx/coroutines/u;Landroidx/paging/a;)V
 
     iput-object p1, v0, Landroidx/paging/CachedPagingDataKt$cachedIn$$inlined$simpleMapLatest$1;->L$0:Ljava/lang/Object;
 
     iput-object p2, v0, Landroidx/paging/CachedPagingDataKt$cachedIn$$inlined$simpleMapLatest$1;->L$1:Ljava/lang/Object;
 
-    sget-object p1, Lqh/r;->a:Lqh/r;
+    sget-object p1, LX9/j;->a:LX9/j;
 
     invoke-virtual {v0, p1}, Landroidx/paging/CachedPagingDataKt$cachedIn$$inlined$simpleMapLatest$1;->invokeSuspend(Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -181,7 +181,7 @@
 
     .line 26
     .line 27
-    check-cast p1, Lkotlinx/coroutines/flow/i;
+    check-cast p1, Lkotlinx/coroutines/flow/g;
 
     .line 28
     .line 29
@@ -189,19 +189,19 @@
 
     .line 30
     .line 31
-    check-cast v1, Landroidx/paging/e1;
+    check-cast v1, Landroidx/paging/f0;
 
     .line 32
     .line 33
-    new-instance v3, Landroidx/paging/d0;
+    new-instance v3, Landroidx/paging/B;
 
     .line 34
     .line 35
-    iget-object v4, p0, Landroidx/paging/CachedPagingDataKt$cachedIn$$inlined$simpleMapLatest$1;->$scope$inlined:Lkotlinx/coroutines/w;
+    iget-object v4, p0, Landroidx/paging/CachedPagingDataKt$cachedIn$$inlined$simpleMapLatest$1;->$scope$inlined:Lkotlinx/coroutines/u;
 
     .line 36
     .line 37
-    invoke-direct {v3, v4, v1}, Landroidx/paging/d0;-><init>(Lkotlinx/coroutines/w;Landroidx/paging/e1;)V
+    invoke-direct {v3, v4, v1}, Landroidx/paging/B;-><init>(Lkotlinx/coroutines/u;Landroidx/paging/f0;)V
 
     .line 38
     .line 39
@@ -210,7 +210,7 @@
 
     .line 41
     .line 42
-    invoke-interface {p1, v3, p0}, Lkotlinx/coroutines/flow/i;->emit(Ljava/lang/Object;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
+    invoke-interface {p1, v3, p0}, Lkotlinx/coroutines/flow/g;->emit(Ljava/lang/Object;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
 
     .line 43
     .line 44
@@ -227,7 +227,7 @@
     .line 49
     :cond_2
     :goto_0
-    sget-object p1, Lqh/r;->a:Lqh/r;
+    sget-object p1, LX9/j;->a:LX9/j;
 
     .line 50
     .line 51

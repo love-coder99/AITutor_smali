@@ -3,7 +3,7 @@
 .source "SourceFile"
 
 # interfaces
-.implements Landroidx/appcompat/view/menu/n;
+.implements Landroidx/appcompat/view/menu/l;
 
 
 # annotations
@@ -40,8 +40,16 @@
 
 
 # virtual methods
-.method public onMenuItemSelected(Landroidx/appcompat/view/menu/p;Landroid/view/MenuItem;)Z
+.method public onMenuItemSelected(Landroidx/appcompat/view/menu/n;Landroid/view/MenuItem;)Z
     .locals 0
+    .param p1    # Landroidx/appcompat/view/menu/n;
+        .annotation build Landroidx/annotation/NonNull;
+        .end annotation
+    .end param
+    .param p2    # Landroid/view/MenuItem;
+        .annotation build Landroidx/annotation/NonNull;
+        .end annotation
+    .end param
 
     .line 1
     iget-object p1, p0, Landroidx/appcompat/widget/PopupMenu$1;->this$0:Landroidx/appcompat/widget/PopupMenu;
@@ -74,8 +82,12 @@
     return p1
 .end method
 
-.method public onMenuModeChange(Landroidx/appcompat/view/menu/p;)V
+.method public onMenuModeChange(Landroidx/appcompat/view/menu/n;)V
     .locals 0
+    .param p1    # Landroidx/appcompat/view/menu/n;
+        .annotation build Landroidx/annotation/NonNull;
+        .end annotation
+    .end param
 
     return-void
 .end method

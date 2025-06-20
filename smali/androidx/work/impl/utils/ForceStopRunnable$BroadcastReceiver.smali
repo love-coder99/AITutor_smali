@@ -12,7 +12,7 @@
 
     .line 2
     .line 3
-    invoke-static {v0}, Landroidx/work/u;->b(Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v0}, Landroidx/work/A;->b(Ljava/lang/String;)Ljava/lang/String;
 
     .line 4
     .line 5
@@ -66,7 +66,7 @@
 
     .line 14
     .line 15
-    invoke-static {}, Landroidx/work/u;->a()Landroidx/work/u;
+    invoke-static {}, Landroidx/work/A;->a()Landroidx/work/A;
 
     .line 16
     .line 17
@@ -79,7 +79,7 @@
     .line 20
     .line 21
     .line 22
-    invoke-static {p1}, Landroidx/work/impl/utils/f;->b(Landroid/content/Context;)V
+    invoke-static {p1}, Landroidx/work/impl/utils/e;->b(Landroid/content/Context;)V
 
     .line 23
     .line 24

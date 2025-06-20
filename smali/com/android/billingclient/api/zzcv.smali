@@ -5,6 +5,9 @@
 
 # instance fields
 .field private final zza:Ljava/util/List;
+    .annotation build Landroidx/annotation/Nullable;
+    .end annotation
+.end field
 
 .field private final zzb:Lcom/android/billingclient/api/BillingResult;
 
@@ -12,6 +15,10 @@
 # direct methods
 .method public constructor <init>(Lcom/android/billingclient/api/BillingResult;Ljava/util/List;)V
     .locals 0
+    .param p2    # Ljava/util/List;
+        .annotation build Landroidx/annotation/Nullable;
+        .end annotation
+    .end param
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -34,6 +41,8 @@
 
 .method public final zzb()Ljava/util/List;
     .locals 1
+    .annotation build Landroidx/annotation/Nullable;
+    .end annotation
 
     iget-object v0, p0, Lcom/android/billingclient/api/zzcv;->zza:Ljava/util/List;
 

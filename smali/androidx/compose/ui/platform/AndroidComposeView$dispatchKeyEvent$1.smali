@@ -3,14 +3,14 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lzh/a;
+.implements Lka/a;
 
 
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "Lkotlin/jvm/internal/Lambda;",
-        "Lzh/a;"
+        "Lka/a;"
     }
 .end annotation
 
@@ -37,14 +37,14 @@
 # instance fields
 .field final synthetic $event:Landroid/view/KeyEvent;
 
-.field final synthetic this$0:Landroidx/compose/ui/platform/r;
+.field final synthetic this$0:Landroidx/compose/ui/platform/o;
 
 
 # direct methods
-.method public constructor <init>(Landroidx/compose/ui/platform/r;Landroid/view/KeyEvent;)V
+.method public constructor <init>(Landroidx/compose/ui/platform/o;Landroid/view/KeyEvent;)V
     .locals 0
 
-    iput-object p1, p0, Landroidx/compose/ui/platform/AndroidComposeView$dispatchKeyEvent$1;->this$0:Landroidx/compose/ui/platform/r;
+    iput-object p1, p0, Landroidx/compose/ui/platform/AndroidComposeView$dispatchKeyEvent$1;->this$0:Landroidx/compose/ui/platform/o;
 
     iput-object p2, p0, Landroidx/compose/ui/platform/AndroidComposeView$dispatchKeyEvent$1;->$event:Landroid/view/KeyEvent;
 
@@ -60,12 +60,12 @@
 .method public final invoke()Ljava/lang/Boolean;
     .locals 2
 
-    iget-object v0, p0, Landroidx/compose/ui/platform/AndroidComposeView$dispatchKeyEvent$1;->this$0:Landroidx/compose/ui/platform/r;
+    .line 2
+    iget-object v0, p0, Landroidx/compose/ui/platform/AndroidComposeView$dispatchKeyEvent$1;->this$0:Landroidx/compose/ui/platform/o;
 
     iget-object v1, p0, Landroidx/compose/ui/platform/AndroidComposeView$dispatchKeyEvent$1;->$event:Landroid/view/KeyEvent;
 
-    .line 2
-    invoke-static {v0, v1}, Landroidx/compose/ui/platform/r;->b(Landroidx/compose/ui/platform/r;Landroid/view/KeyEvent;)Z
+    invoke-static {v0, v1}, Landroidx/compose/ui/platform/o;->c(Landroidx/compose/ui/platform/o;Landroid/view/KeyEvent;)Z
 
     move-result v0
 

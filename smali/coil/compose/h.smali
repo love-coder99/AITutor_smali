@@ -3,7 +3,7 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lkotlinx/coroutines/flow/i;
+.implements Lkotlinx/coroutines/flow/g;
 .implements Lkotlin/jvm/internal/d;
 
 
@@ -24,28 +24,44 @@
 
 
 # virtual methods
-.method public final b()Lqh/b;
+.method public final b()LX9/b;
     .locals 8
 
     .line 1
     new-instance v7, Lkotlin/jvm/internal/AdaptedFunctionReference;
 
-    const/4 v1, 0x2
-
-    iget-object v2, p0, Lcoil/compose/h;->b:Lcoil/compose/l;
-
-    const-class v3, Lcoil/compose/l;
-
-    const-string v4, "updateState"
-
+    .line 2
+    .line 3
     const-string v5, "updateState(Lcoil/compose/AsyncImagePainter$State;)V"
 
+    .line 4
+    .line 5
     const/4 v6, 0x4
 
+    .line 6
+    const/4 v1, 0x2
+
+    .line 7
+    iget-object v2, p0, Lcoil/compose/h;->b:Lcoil/compose/l;
+
+    .line 8
+    .line 9
+    const-class v3, Lcoil/compose/l;
+
+    .line 10
+    .line 11
+    const-string v4, "updateState"
+
+    .line 12
+    .line 13
     move-object v0, v7
 
+    .line 14
     invoke-direct/range {v0 .. v6}, Lkotlin/jvm/internal/AdaptedFunctionReference;-><init>(ILjava/lang/Object;Ljava/lang/Class;Ljava/lang/String;Ljava/lang/String;I)V
 
+    .line 15
+    .line 16
+    .line 17
     return-object v7
 .end method
 
@@ -81,7 +97,7 @@
 
     .line 14
     :cond_0
-    sget-object p1, Lqh/r;->a:Lqh/r;
+    sget-object p1, LX9/j;->a:LX9/j;
 
     .line 15
     .line 16
@@ -92,30 +108,54 @@
 .method public final equals(Ljava/lang/Object;)Z
     .locals 2
 
-    instance-of v0, p1, Lkotlinx/coroutines/flow/i;
+    .line 1
+    instance-of v0, p1, Lkotlinx/coroutines/flow/g;
 
+    .line 2
+    .line 3
     const/4 v1, 0x0
 
+    .line 4
     if-eqz v0, :cond_0
 
+    .line 5
+    .line 6
     instance-of v0, p1, Lkotlin/jvm/internal/d;
 
+    .line 7
+    .line 8
     if-eqz v0, :cond_0
 
-    invoke-virtual {p0}, Lcoil/compose/h;->b()Lqh/b;
+    .line 9
+    .line 10
+    invoke-virtual {p0}, Lcoil/compose/h;->b()LX9/b;
 
+    .line 11
+    .line 12
+    .line 13
     move-result-object v0
 
+    .line 14
     check-cast p1, Lkotlin/jvm/internal/d;
 
-    invoke-interface {p1}, Lkotlin/jvm/internal/d;->b()Lqh/b;
+    .line 15
+    .line 16
+    invoke-interface {p1}, Lkotlin/jvm/internal/d;->b()LX9/b;
 
+    .line 17
+    .line 18
+    .line 19
     move-result-object p1
 
-    invoke-static {v0, p1}, Lrb/h;->d(Ljava/lang/Object;Ljava/lang/Object;)Z
+    .line 20
+    invoke-virtual {v0, p1}, Ljava/lang/Object;->equals(Ljava/lang/Object;)Z
 
+    .line 21
+    .line 22
+    .line 23
     move-result v1
 
+    .line 24
     :cond_0
     return v1
 .end method
@@ -123,7 +163,7 @@
 .method public final hashCode()I
     .locals 1
 
-    invoke-virtual {p0}, Lcoil/compose/h;->b()Lqh/b;
+    invoke-virtual {p0}, Lcoil/compose/h;->b()LX9/b;
 
     move-result-object v0
 

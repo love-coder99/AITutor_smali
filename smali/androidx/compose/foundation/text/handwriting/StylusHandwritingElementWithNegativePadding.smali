@@ -1,12 +1,12 @@
 .class final Landroidx/compose/foundation/text/handwriting/StylusHandwritingElementWithNegativePadding;
-.super Landroidx/compose/ui/node/w0;
+.super Landroidx/compose/ui/node/V;
 .source "SourceFile"
 
 
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
-        "Landroidx/compose/ui/node/w0;"
+        "Landroidx/compose/ui/node/V;"
     }
 .end annotation
 
@@ -16,7 +16,7 @@
     }
     d2 = {
         "Landroidx/compose/foundation/text/handwriting/StylusHandwritingElementWithNegativePadding;",
-        "Landroidx/compose/ui/node/w0;",
+        "Landroidx/compose/ui/node/V;",
         "Landroidx/compose/foundation/text/handwriting/c;",
         "foundation_release"
     }
@@ -26,15 +26,16 @@
         0x8,
         0x0
     }
+    xi = 0x30
 .end annotation
 
 
 # instance fields
-.field public final c:Lzh/a;
+.field public final a:Lka/a;
 
 
 # direct methods
-.method public constructor <init>(Lzh/a;)V
+.method public constructor <init>(Lka/a;)V
     .locals 0
 
     .line 1
@@ -43,7 +44,7 @@
     .line 2
     .line 3
     .line 4
-    iput-object p1, p0, Landroidx/compose/foundation/text/handwriting/StylusHandwritingElementWithNegativePadding;->c:Lzh/a;
+    iput-object p1, p0, Landroidx/compose/foundation/text/handwriting/StylusHandwritingElementWithNegativePadding;->a:Lka/a;
 
     .line 5
     .line 6
@@ -73,11 +74,11 @@
     :cond_1
     check-cast p1, Landroidx/compose/foundation/text/handwriting/StylusHandwritingElementWithNegativePadding;
 
-    iget-object v1, p0, Landroidx/compose/foundation/text/handwriting/StylusHandwritingElementWithNegativePadding;->c:Lzh/a;
+    iget-object v1, p0, Landroidx/compose/foundation/text/handwriting/StylusHandwritingElementWithNegativePadding;->a:Lka/a;
 
-    iget-object p1, p1, Landroidx/compose/foundation/text/handwriting/StylusHandwritingElementWithNegativePadding;->c:Lzh/a;
+    iget-object p1, p1, Landroidx/compose/foundation/text/handwriting/StylusHandwritingElementWithNegativePadding;->a:Lka/a;
 
-    invoke-static {v1, p1}, Lrb/h;->d(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v1, p1}, Lkotlin/jvm/internal/h;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result p1
 
@@ -92,7 +93,7 @@
 .method public final hashCode()I
     .locals 1
 
-    iget-object v0, p0, Landroidx/compose/foundation/text/handwriting/StylusHandwritingElementWithNegativePadding;->c:Lzh/a;
+    iget-object v0, p0, Landroidx/compose/foundation/text/handwriting/StylusHandwritingElementWithNegativePadding;->a:Lka/a;
 
     invoke-virtual {v0}, Ljava/lang/Object;->hashCode()I
 
@@ -109,11 +110,11 @@
 
     .line 2
     .line 3
-    iget-object v1, p0, Landroidx/compose/foundation/text/handwriting/StylusHandwritingElementWithNegativePadding;->c:Lzh/a;
+    iget-object v1, p0, Landroidx/compose/foundation/text/handwriting/StylusHandwritingElementWithNegativePadding;->a:Lka/a;
 
     .line 4
     .line 5
-    invoke-direct {v0, v1}, Landroidx/compose/foundation/text/handwriting/b;-><init>(Lzh/a;)V
+    invoke-direct {v0, v1}, Landroidx/compose/foundation/text/handwriting/b;-><init>(Lka/a;)V
 
     .line 6
     .line 7
@@ -129,11 +130,11 @@
 
     .line 2
     .line 3
-    iget-object v0, p0, Landroidx/compose/foundation/text/handwriting/StylusHandwritingElementWithNegativePadding;->c:Lzh/a;
+    iget-object v0, p0, Landroidx/compose/foundation/text/handwriting/StylusHandwritingElementWithNegativePadding;->a:Lka/a;
 
     .line 4
     .line 5
-    iput-object v0, p1, Landroidx/compose/foundation/text/handwriting/b;->r:Lzh/a;
+    iput-object v0, p1, Landroidx/compose/foundation/text/handwriting/b;->r:Lka/a;
 
     .line 6
     .line 7
@@ -149,7 +150,7 @@
 
     invoke-direct {v0, v1}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
 
-    iget-object v1, p0, Landroidx/compose/foundation/text/handwriting/StylusHandwritingElementWithNegativePadding;->c:Lzh/a;
+    iget-object v1, p0, Landroidx/compose/foundation/text/handwriting/StylusHandwritingElementWithNegativePadding;->a:Lka/a;
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 

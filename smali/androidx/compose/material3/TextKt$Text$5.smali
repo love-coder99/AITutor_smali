@@ -3,14 +3,14 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lzh/e;
+.implements Lka/e;
 
 
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "Lkotlin/jvm/internal/Lambda;",
-        "Lzh/e;"
+        "Lka/e;"
     }
 .end annotation
 
@@ -34,13 +34,13 @@
 
 .field final synthetic $color:J
 
-.field final synthetic $fontFamily:Landroidx/compose/ui/text/font/m;
+.field final synthetic $fontFamily:Landroidx/compose/ui/text/font/k;
 
 .field final synthetic $fontSize:J
 
-.field final synthetic $fontStyle:Landroidx/compose/ui/text/font/s;
+.field final synthetic $fontStyle:Landroidx/compose/ui/text/font/q;
 
-.field final synthetic $fontWeight:Landroidx/compose/ui/text/font/w;
+.field final synthetic $fontWeight:Landroidx/compose/ui/text/font/u;
 
 .field final synthetic $inlineContent:Ljava/util/Map;
     .annotation system Ldalvik/annotation/Signature;
@@ -63,10 +63,10 @@
 
 .field final synthetic $modifier:Landroidx/compose/ui/o;
 
-.field final synthetic $onTextLayout:Lzh/c;
+.field final synthetic $onTextLayout:Lka/c;
     .annotation system Ldalvik/annotation/Signature;
         value = {
-            "Lzh/c;"
+            "Lka/c;"
         }
     .end annotation
 .end field
@@ -75,9 +75,9 @@
 
 .field final synthetic $softWrap:Z
 
-.field final synthetic $style:Landroidx/compose/ui/text/i0;
+.field final synthetic $style:Landroidx/compose/ui/text/I;
 
-.field final synthetic $text:Landroidx/compose/ui/text/f;
+.field final synthetic $text:Landroidx/compose/ui/text/g;
 
 .field final synthetic $textAlign:Landroidx/compose/ui/text/style/h;
 
@@ -85,17 +85,17 @@
 
 
 # direct methods
-.method public constructor <init>(Landroidx/compose/ui/text/f;Landroidx/compose/ui/o;JJLandroidx/compose/ui/text/font/s;Landroidx/compose/ui/text/font/w;Landroidx/compose/ui/text/font/m;JLandroidx/compose/ui/text/style/i;Landroidx/compose/ui/text/style/h;JIZIILjava/util/Map;Lzh/c;Landroidx/compose/ui/text/i0;III)V
+.method public constructor <init>(Landroidx/compose/ui/text/g;Landroidx/compose/ui/o;JJLandroidx/compose/ui/text/font/q;Landroidx/compose/ui/text/font/u;Landroidx/compose/ui/text/font/k;JLandroidx/compose/ui/text/style/i;Landroidx/compose/ui/text/style/h;JIZIILjava/util/Map;Lka/c;Landroidx/compose/ui/text/I;III)V
     .locals 3
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
-            "Landroidx/compose/ui/text/f;",
+            "Landroidx/compose/ui/text/g;",
             "Landroidx/compose/ui/o;",
             "JJ",
-            "Landroidx/compose/ui/text/font/s;",
-            "Landroidx/compose/ui/text/font/w;",
-            "Landroidx/compose/ui/text/font/m;",
+            "Landroidx/compose/ui/text/font/q;",
+            "Landroidx/compose/ui/text/font/u;",
+            "Landroidx/compose/ui/text/font/k;",
             "J",
             "Landroidx/compose/ui/text/style/i;",
             "Landroidx/compose/ui/text/style/h;",
@@ -104,8 +104,8 @@
             "Ljava/lang/String;",
             "Ljava/lang/Object;",
             ">;",
-            "Lzh/c;",
-            "Landroidx/compose/ui/text/i0;",
+            "Lka/c;",
+            "Landroidx/compose/ui/text/I;",
             "III)V"
         }
     .end annotation
@@ -113,94 +113,174 @@
     .line 1
     move-object v0, p0
 
+    .line 2
     move-object v1, p1
 
-    iput-object v1, v0, Landroidx/compose/material3/TextKt$Text$5;->$text:Landroidx/compose/ui/text/f;
+    .line 3
+    iput-object v1, v0, Landroidx/compose/material3/TextKt$Text$5;->$text:Landroidx/compose/ui/text/g;
 
+    .line 4
+    .line 5
     move-object v1, p2
 
+    .line 6
     iput-object v1, v0, Landroidx/compose/material3/TextKt$Text$5;->$modifier:Landroidx/compose/ui/o;
 
+    .line 7
+    .line 8
     move-wide v1, p3
 
+    .line 9
     iput-wide v1, v0, Landroidx/compose/material3/TextKt$Text$5;->$color:J
 
+    .line 10
+    .line 11
     move-wide v1, p5
 
+    .line 12
     iput-wide v1, v0, Landroidx/compose/material3/TextKt$Text$5;->$fontSize:J
 
+    .line 13
+    .line 14
     move-object v1, p7
 
-    iput-object v1, v0, Landroidx/compose/material3/TextKt$Text$5;->$fontStyle:Landroidx/compose/ui/text/font/s;
+    .line 15
+    iput-object v1, v0, Landroidx/compose/material3/TextKt$Text$5;->$fontStyle:Landroidx/compose/ui/text/font/q;
 
+    .line 16
+    .line 17
     move-object v1, p8
 
-    iput-object v1, v0, Landroidx/compose/material3/TextKt$Text$5;->$fontWeight:Landroidx/compose/ui/text/font/w;
+    .line 18
+    iput-object v1, v0, Landroidx/compose/material3/TextKt$Text$5;->$fontWeight:Landroidx/compose/ui/text/font/u;
 
+    .line 19
+    .line 20
     move-object v1, p9
 
-    iput-object v1, v0, Landroidx/compose/material3/TextKt$Text$5;->$fontFamily:Landroidx/compose/ui/text/font/m;
+    .line 21
+    iput-object v1, v0, Landroidx/compose/material3/TextKt$Text$5;->$fontFamily:Landroidx/compose/ui/text/font/k;
 
+    .line 22
+    .line 23
     move-wide v1, p10
 
+    .line 24
     iput-wide v1, v0, Landroidx/compose/material3/TextKt$Text$5;->$letterSpacing:J
 
+    .line 25
+    .line 26
     move-object v1, p12
 
+    .line 27
     iput-object v1, v0, Landroidx/compose/material3/TextKt$Text$5;->$textDecoration:Landroidx/compose/ui/text/style/i;
 
+    .line 28
+    .line 29
     move-object/from16 v1, p13
 
+    .line 30
+    .line 31
     iput-object v1, v0, Landroidx/compose/material3/TextKt$Text$5;->$textAlign:Landroidx/compose/ui/text/style/h;
 
+    .line 32
+    .line 33
     move-wide/from16 v1, p14
 
+    .line 34
+    .line 35
     iput-wide v1, v0, Landroidx/compose/material3/TextKt$Text$5;->$lineHeight:J
 
+    .line 36
+    .line 37
     move/from16 v1, p16
 
+    .line 38
+    .line 39
     iput v1, v0, Landroidx/compose/material3/TextKt$Text$5;->$overflow:I
 
+    .line 40
+    .line 41
     move/from16 v1, p17
 
+    .line 42
+    .line 43
     iput-boolean v1, v0, Landroidx/compose/material3/TextKt$Text$5;->$softWrap:Z
 
+    .line 44
+    .line 45
     move/from16 v1, p18
 
+    .line 46
+    .line 47
     iput v1, v0, Landroidx/compose/material3/TextKt$Text$5;->$maxLines:I
 
+    .line 48
+    .line 49
     move/from16 v1, p19
 
+    .line 50
+    .line 51
     iput v1, v0, Landroidx/compose/material3/TextKt$Text$5;->$minLines:I
 
+    .line 52
+    .line 53
     move-object/from16 v1, p20
 
+    .line 54
+    .line 55
     iput-object v1, v0, Landroidx/compose/material3/TextKt$Text$5;->$inlineContent:Ljava/util/Map;
 
+    .line 56
+    .line 57
     move-object/from16 v1, p21
 
-    iput-object v1, v0, Landroidx/compose/material3/TextKt$Text$5;->$onTextLayout:Lzh/c;
+    .line 58
+    .line 59
+    iput-object v1, v0, Landroidx/compose/material3/TextKt$Text$5;->$onTextLayout:Lka/c;
 
+    .line 60
+    .line 61
     move-object/from16 v1, p22
 
-    iput-object v1, v0, Landroidx/compose/material3/TextKt$Text$5;->$style:Landroidx/compose/ui/text/i0;
+    .line 62
+    .line 63
+    iput-object v1, v0, Landroidx/compose/material3/TextKt$Text$5;->$style:Landroidx/compose/ui/text/I;
 
+    .line 64
+    .line 65
     move/from16 v1, p23
 
+    .line 66
+    .line 67
     iput v1, v0, Landroidx/compose/material3/TextKt$Text$5;->$$changed:I
 
+    .line 68
+    .line 69
     move/from16 v1, p24
 
+    .line 70
+    .line 71
     iput v1, v0, Landroidx/compose/material3/TextKt$Text$5;->$$changed1:I
 
+    .line 72
+    .line 73
     move/from16 v1, p25
 
+    .line 74
+    .line 75
     iput v1, v0, Landroidx/compose/material3/TextKt$Text$5;->$$default:I
 
+    .line 76
+    .line 77
     const/4 v1, 0x2
 
+    .line 78
     invoke-direct {p0, v1}, Lkotlin/jvm/internal/Lambda;-><init>(I)V
 
+    .line 79
+    .line 80
+    .line 81
     return-void
 .end method
 
@@ -210,7 +290,7 @@
     .locals 0
 
     .line 1
-    check-cast p1, Landroidx/compose/runtime/l;
+    check-cast p1, Landroidx/compose/runtime/j;
 
     check-cast p2, Ljava/lang/Number;
 
@@ -218,14 +298,14 @@
 
     move-result p2
 
-    invoke-virtual {p0, p1, p2}, Landroidx/compose/material3/TextKt$Text$5;->invoke(Landroidx/compose/runtime/l;I)V
+    invoke-virtual {p0, p1, p2}, Landroidx/compose/material3/TextKt$Text$5;->invoke(Landroidx/compose/runtime/j;I)V
 
-    sget-object p1, Lqh/r;->a:Lqh/r;
+    sget-object p1, LX9/j;->a:LX9/j;
 
     return-object p1
 .end method
 
-.method public final invoke(Landroidx/compose/runtime/l;I)V
+.method public final invoke(Landroidx/compose/runtime/j;I)V
     .locals 27
 
     .line 2
@@ -233,7 +313,7 @@
 
     move-object/from16 v23, p1
 
-    iget-object v1, v0, Landroidx/compose/material3/TextKt$Text$5;->$text:Landroidx/compose/ui/text/f;
+    iget-object v1, v0, Landroidx/compose/material3/TextKt$Text$5;->$text:Landroidx/compose/ui/text/g;
 
     iget-object v2, v0, Landroidx/compose/material3/TextKt$Text$5;->$modifier:Landroidx/compose/ui/o;
 
@@ -241,11 +321,11 @@
 
     iget-wide v5, v0, Landroidx/compose/material3/TextKt$Text$5;->$fontSize:J
 
-    iget-object v7, v0, Landroidx/compose/material3/TextKt$Text$5;->$fontStyle:Landroidx/compose/ui/text/font/s;
+    iget-object v7, v0, Landroidx/compose/material3/TextKt$Text$5;->$fontStyle:Landroidx/compose/ui/text/font/q;
 
-    iget-object v8, v0, Landroidx/compose/material3/TextKt$Text$5;->$fontWeight:Landroidx/compose/ui/text/font/w;
+    iget-object v8, v0, Landroidx/compose/material3/TextKt$Text$5;->$fontWeight:Landroidx/compose/ui/text/font/u;
 
-    iget-object v9, v0, Landroidx/compose/material3/TextKt$Text$5;->$fontFamily:Landroidx/compose/ui/text/font/m;
+    iget-object v9, v0, Landroidx/compose/material3/TextKt$Text$5;->$fontFamily:Landroidx/compose/ui/text/font/k;
 
     iget-wide v10, v0, Landroidx/compose/material3/TextKt$Text$5;->$letterSpacing:J
 
@@ -277,11 +357,11 @@
 
     move-object/from16 v20, v1
 
-    iget-object v1, v0, Landroidx/compose/material3/TextKt$Text$5;->$onTextLayout:Lzh/c;
+    iget-object v1, v0, Landroidx/compose/material3/TextKt$Text$5;->$onTextLayout:Lka/c;
 
     move-object/from16 v21, v1
 
-    iget-object v1, v0, Landroidx/compose/material3/TextKt$Text$5;->$style:Landroidx/compose/ui/text/i0;
+    iget-object v1, v0, Landroidx/compose/material3/TextKt$Text$5;->$style:Landroidx/compose/ui/text/I;
 
     move-object/from16 v22, v1
 
@@ -289,13 +369,13 @@
 
     or-int/lit8 v1, v1, 0x1
 
-    invoke-static {v1}, Landroidx/compose/runtime/q;->A(I)I
+    invoke-static {v1}, Landroidx/compose/runtime/o;->f0(I)I
 
     move-result v24
 
     iget v1, v0, Landroidx/compose/material3/TextKt$Text$5;->$$changed1:I
 
-    invoke-static {v1}, Landroidx/compose/runtime/q;->A(I)I
+    invoke-static {v1}, Landroidx/compose/runtime/o;->f0(I)I
 
     move-result v25
 
@@ -305,7 +385,7 @@
 
     move-object/from16 v1, p1
 
-    invoke-static/range {v1 .. v26}, Landroidx/compose/material3/w1;->c(Landroidx/compose/ui/text/f;Landroidx/compose/ui/o;JJLandroidx/compose/ui/text/font/s;Landroidx/compose/ui/text/font/w;Landroidx/compose/ui/text/font/m;JLandroidx/compose/ui/text/style/i;Landroidx/compose/ui/text/style/h;JIZIILjava/util/Map;Lzh/c;Landroidx/compose/ui/text/i0;Landroidx/compose/runtime/l;III)V
+    invoke-static/range {v1 .. v26}, Landroidx/compose/material3/S0;->c(Landroidx/compose/ui/text/g;Landroidx/compose/ui/o;JJLandroidx/compose/ui/text/font/q;Landroidx/compose/ui/text/font/u;Landroidx/compose/ui/text/font/k;JLandroidx/compose/ui/text/style/i;Landroidx/compose/ui/text/style/h;JIZIILjava/util/Map;Lka/c;Landroidx/compose/ui/text/I;Landroidx/compose/runtime/j;III)V
 
     return-void
 .end method

@@ -96,23 +96,32 @@
 .method public b(I)Lcom/applovin/impl/l1$b;
     .locals 0
 
+    .line 1
     iput p1, p0, Lcom/applovin/impl/l1$b;->a:I
 
+    .line 2
+    .line 3
     return-object p0
 .end method
 
 .method public c(I)Lcom/applovin/impl/l1$b;
     .locals 0
 
+    .line 1
     iput p1, p0, Lcom/applovin/impl/l1$b;->b:I
 
+    .line 2
+    .line 3
     return-object p0
 .end method
 
 .method public d(I)Lcom/applovin/impl/l1$b;
     .locals 0
 
+    .line 1
     iput p1, p0, Lcom/applovin/impl/l1$b;->c:I
 
+    .line 2
+    .line 3
     return-object p0
 .end method

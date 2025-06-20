@@ -38,9 +38,9 @@
 .method public a()I
     .locals 1
 
+    .line 4
     iget-object v0, p0, Lcom/applovin/impl/al;->b:Ljava/util/List;
 
-    .line 4
     invoke-interface {v0}, Ljava/util/List;->size()I
 
     move-result v0
@@ -51,9 +51,9 @@
 .method public a(J)I
     .locals 1
 
+    .line 5
     iget-object v0, p0, Lcom/applovin/impl/al;->b:Ljava/util/List;
 
-    .line 5
     invoke-static {p1, p2}, Ljava/lang/Long;->valueOf(J)Ljava/lang/Long;
 
     move-result-object p1
@@ -64,9 +64,9 @@
 
     move-result p1
 
+    .line 6
     iget-object p2, p0, Lcom/applovin/impl/al;->b:Ljava/util/List;
 
-    .line 6
     invoke-interface {p2}, Ljava/util/List;->size()I
 
     move-result p2
@@ -102,9 +102,9 @@
     :goto_0
     invoke-static {v2}, Lcom/applovin/impl/b1;->a(Z)V
 
+    .line 2
     iget-object v2, p0, Lcom/applovin/impl/al;->b:Ljava/util/List;
 
-    .line 2
     invoke-interface {v2}, Ljava/util/List;->size()I
 
     move-result v2
@@ -116,9 +116,9 @@
     :cond_1
     invoke-static {v0}, Lcom/applovin/impl/b1;->a(Z)V
 
+    .line 3
     iget-object v0, p0, Lcom/applovin/impl/al;->b:Ljava/util/List;
 
-    .line 3
     invoke-interface {v0, p1}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
     move-result-object p1

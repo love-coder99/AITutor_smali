@@ -1,60 +1,157 @@
-.class public final synthetic Landroidx/core/view/e0;
-.super Ljava/lang/Object;
+.class public Landroidx/core/view/E0;
+.super Landroidx/core/view/D0;
 .source "SourceFile"
 
-# interfaces
-.implements Landroid/view/WindowInsetsController$OnControllableInsetsChangedListener;
 
-
-# instance fields
-.field public final synthetic a:Ljava/util/concurrent/atomic/AtomicBoolean;
+# static fields
+.field public static final r:Landroidx/core/view/K0;
 
 
 # direct methods
-.method public synthetic constructor <init>(Ljava/util/concurrent/atomic/AtomicBoolean;)V
+.method static constructor <clinit>()V
+    .locals 2
+
+    .line 1
+    invoke-static {}, LE0/j;->g()Landroid/view/WindowInsets;
+
+    .line 2
+    .line 3
+    .line 4
+    move-result-object v0
+
+    .line 5
+    const/4 v1, 0x0
+
+    .line 6
+    invoke-static {v1, v0}, Landroidx/core/view/K0;->h(Landroid/view/View;Landroid/view/WindowInsets;)Landroidx/core/view/K0;
+
+    .line 7
+    .line 8
+    .line 9
+    move-result-object v0
+
+    .line 10
+    sput-object v0, Landroidx/core/view/E0;->r:Landroidx/core/view/K0;
+
+    .line 11
+    .line 12
+    return-void
+.end method
+
+.method public constructor <init>(Landroidx/core/view/K0;Landroid/view/WindowInsets;)V
     .locals 0
 
     .line 1
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    invoke-direct {p0, p1, p2}, Landroidx/core/view/D0;-><init>(Landroidx/core/view/K0;Landroid/view/WindowInsets;)V
 
-    iput-object p1, p0, Landroidx/core/view/e0;->a:Ljava/util/concurrent/atomic/AtomicBoolean;
-
+    .line 2
+    .line 3
+    .line 4
     return-void
 .end method
 
 
 # virtual methods
-.method public final onControllableInsetsChanged(Landroid/view/WindowInsetsController;I)V
+.method public final d(Landroid/view/View;)V
     .locals 0
 
     .line 1
-    iget-object p1, p0, Landroidx/core/view/e0;->a:Ljava/util/concurrent/atomic/AtomicBoolean;
+    return-void
+.end method
+
+.method public f(I)Ll1/c;
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, Landroidx/core/view/A0;->c:Landroid/view/WindowInsets;
 
     .line 2
     .line 3
-    and-int/lit8 p2, p2, 0x8
+    invoke-static {p1}, Landroidx/core/view/I0;->a(I)I
 
     .line 4
     .line 5
-    if-eqz p2, :cond_0
-
     .line 6
+    move-result p1
+
     .line 7
-    const/4 p2, 0x1
+    invoke-static {v0, p1}, LE0/j;->e(Landroid/view/WindowInsets;I)Landroid/graphics/Insets;
 
     .line 8
-    goto :goto_0
-
     .line 9
-    :cond_0
-    const/4 p2, 0x0
-
     .line 10
-    :goto_0
-    invoke-virtual {p1, p2}, Ljava/util/concurrent/atomic/AtomicBoolean;->set(Z)V
+    move-result-object p1
 
     .line 11
+    invoke-static {p1}, Ll1/c;->d(Landroid/graphics/Insets;)Ll1/c;
+
     .line 12
     .line 13
-    return-void
+    .line 14
+    move-result-object p1
+
+    .line 15
+    return-object p1
+.end method
+
+.method public g(I)Ll1/c;
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, Landroidx/core/view/A0;->c:Landroid/view/WindowInsets;
+
+    .line 2
+    .line 3
+    invoke-static {p1}, Landroidx/core/view/I0;->a(I)I
+
+    .line 4
+    .line 5
+    .line 6
+    move-result p1
+
+    .line 7
+    invoke-static {v0, p1}, LE0/j;->y(Landroid/view/WindowInsets;I)Landroid/graphics/Insets;
+
+    .line 8
+    .line 9
+    .line 10
+    move-result-object p1
+
+    .line 11
+    invoke-static {p1}, Ll1/c;->d(Landroid/graphics/Insets;)Ll1/c;
+
+    .line 12
+    .line 13
+    .line 14
+    move-result-object p1
+
+    .line 15
+    return-object p1
+.end method
+
+.method public p(I)Z
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, Landroidx/core/view/A0;->c:Landroid/view/WindowInsets;
+
+    .line 2
+    .line 3
+    invoke-static {p1}, Landroidx/core/view/I0;->a(I)I
+
+    .line 4
+    .line 5
+    .line 6
+    move-result p1
+
+    .line 7
+    invoke-static {v0, p1}, LE0/j;->v(Landroid/view/WindowInsets;I)Z
+
+    .line 8
+    .line 9
+    .line 10
+    move-result p1
+
+    .line 11
+    return p1
 .end method

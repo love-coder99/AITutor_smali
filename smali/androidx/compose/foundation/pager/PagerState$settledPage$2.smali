@@ -3,14 +3,14 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lzh/a;
+.implements Lka/a;
 
 
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "Lkotlin/jvm/internal/Lambda;",
-        "Lzh/a;"
+        "Lka/a;"
     }
 .end annotation
 
@@ -35,14 +35,14 @@
 
 
 # instance fields
-.field final synthetic this$0:Landroidx/compose/foundation/pager/u;
+.field final synthetic this$0:Landroidx/compose/foundation/pager/o;
 
 
 # direct methods
-.method public constructor <init>(Landroidx/compose/foundation/pager/u;)V
+.method public constructor <init>(Landroidx/compose/foundation/pager/o;)V
     .locals 0
 
-    iput-object p1, p0, Landroidx/compose/foundation/pager/PagerState$settledPage$2;->this$0:Landroidx/compose/foundation/pager/u;
+    iput-object p1, p0, Landroidx/compose/foundation/pager/PagerState$settledPage$2;->this$0:Landroidx/compose/foundation/pager/o;
 
     const/4 p1, 0x0
 
@@ -56,35 +56,37 @@
 .method public final invoke()Ljava/lang/Integer;
     .locals 1
 
-    iget-object v0, p0, Landroidx/compose/foundation/pager/PagerState$settledPage$2;->this$0:Landroidx/compose/foundation/pager/u;
-
     .line 2
-    iget-object v0, v0, Landroidx/compose/foundation/pager/u;->j:Landroidx/compose/foundation/gestures/m;
+    iget-object v0, p0, Landroidx/compose/foundation/pager/PagerState$settledPage$2;->this$0:Landroidx/compose/foundation/pager/o;
 
     .line 3
+    iget-object v0, v0, Landroidx/compose/foundation/pager/o;->j:Landroidx/compose/foundation/gestures/m;
+
+    .line 4
     invoke-virtual {v0}, Landroidx/compose/foundation/gestures/m;->a()Z
 
     move-result v0
 
     if-eqz v0, :cond_0
 
-    iget-object v0, p0, Landroidx/compose/foundation/pager/PagerState$settledPage$2;->this$0:Landroidx/compose/foundation/pager/u;
-
-    .line 4
-    iget-object v0, v0, Landroidx/compose/foundation/pager/u;->s:Landroidx/compose/runtime/ParcelableSnapshotMutableIntState;
-
     .line 5
-    invoke-virtual {v0}, Landroidx/compose/runtime/p2;->k()I
+    iget-object v0, p0, Landroidx/compose/foundation/pager/PagerState$settledPage$2;->this$0:Landroidx/compose/foundation/pager/o;
+
+    .line 6
+    iget-object v0, v0, Landroidx/compose/foundation/pager/o;->s:Landroidx/compose/runtime/ParcelableSnapshotMutableIntState;
+
+    .line 7
+    invoke-virtual {v0}, Landroidx/compose/runtime/ParcelableSnapshotMutableIntState;->k()I
 
     move-result v0
 
     goto :goto_0
 
+    .line 8
     :cond_0
-    iget-object v0, p0, Landroidx/compose/foundation/pager/PagerState$settledPage$2;->this$0:Landroidx/compose/foundation/pager/u;
+    iget-object v0, p0, Landroidx/compose/foundation/pager/PagerState$settledPage$2;->this$0:Landroidx/compose/foundation/pager/o;
 
-    .line 6
-    invoke-virtual {v0}, Landroidx/compose/foundation/pager/u;->j()I
+    invoke-virtual {v0}, Landroidx/compose/foundation/pager/o;->j()I
 
     move-result v0
 

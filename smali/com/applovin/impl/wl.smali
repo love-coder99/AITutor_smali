@@ -66,9 +66,9 @@
 .method private static a()Lcom/applovin/impl/wl$b;
     .locals 3
 
+    .line 12
     sget-object v0, Lcom/applovin/impl/wl;->b:Ljava/util/List;
 
-    .line 12
     monitor-enter v0
 
     .line 13
@@ -133,9 +133,9 @@
 .method private static b(Lcom/applovin/impl/wl$b;)V
     .locals 3
 
+    .line 2
     sget-object v0, Lcom/applovin/impl/wl;->b:Ljava/util/List;
 
-    .line 2
     monitor-enter v0
 
     .line 3
@@ -244,9 +244,9 @@
 .method public a(Ljava/lang/Object;)V
     .locals 1
 
+    .line 4
     iget-object v0, p0, Lcom/applovin/impl/wl;->a:Landroid/os/Handler;
 
-    .line 4
     invoke-virtual {v0, p1}, Landroid/os/Handler;->removeCallbacksAndMessages(Ljava/lang/Object;)V
 
     return-void
@@ -255,9 +255,9 @@
 .method public a(I)Z
     .locals 1
 
+    .line 2
     iget-object v0, p0, Lcom/applovin/impl/wl;->a:Landroid/os/Handler;
 
-    .line 2
     invoke-virtual {v0, p1}, Landroid/os/Handler;->hasMessages(I)Z
 
     move-result p1
@@ -268,9 +268,9 @@
 .method public a(IJ)Z
     .locals 1
 
+    .line 5
     iget-object v0, p0, Lcom/applovin/impl/wl;->a:Landroid/os/Handler;
 
-    .line 5
     invoke-virtual {v0, p1, p2, p3}, Landroid/os/Handler;->sendEmptyMessageAtTime(IJ)Z
 
     move-result p1
@@ -296,9 +296,9 @@
 .method public a(Ljava/lang/Runnable;)Z
     .locals 1
 
+    .line 3
     iget-object v0, p0, Lcom/applovin/impl/wl;->a:Landroid/os/Handler;
 
-    .line 3
     invoke-virtual {v0, p1}, Landroid/os/Handler;->post(Ljava/lang/Runnable;)Z
 
     move-result p1
@@ -309,9 +309,9 @@
 .method public b(I)V
     .locals 1
 
+    .line 1
     iget-object v0, p0, Lcom/applovin/impl/wl;->a:Landroid/os/Handler;
 
-    .line 1
     invoke-virtual {v0, p1}, Landroid/os/Handler;->removeMessages(I)V
 
     return-void

@@ -45,9 +45,9 @@
 .method public constructor <init>(Landroid/os/Parcel;)V
     .locals 1
 
+    .line 1
     const-string v0, "PRIV"
 
-    .line 1
     invoke-direct {p0, v0}, Lcom/applovin/impl/xa;-><init>(Ljava/lang/String;)V
 
     .line 2
@@ -82,13 +82,15 @@
 .method public constructor <init>(Ljava/lang/String;[B)V
     .locals 1
 
+    .line 4
     const-string v0, "PRIV"
 
-    .line 4
     invoke-direct {p0, v0}, Lcom/applovin/impl/xa;-><init>(Ljava/lang/String;)V
 
+    .line 5
     iput-object p1, p0, Lcom/applovin/impl/vh;->b:Ljava/lang/String;
 
+    .line 6
     iput-object p2, p0, Lcom/applovin/impl/vh;->c:[B
 
     return-void

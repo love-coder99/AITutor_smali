@@ -3,14 +3,14 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lzh/e;
+.implements Lka/e;
 
 
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "Lkotlin/jvm/internal/Lambda;",
-        "Lzh/e;"
+        "Lka/e;"
     }
 .end annotation
 
@@ -19,13 +19,13 @@
         "\u0000\u0014\n\u0002\u0018\u0002\n\u0002\u0010 \n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\u0008\u0004\u0010\u0007\u001a\u0004\u0018\u00010\u0003*\u00020\u00002\u0014\u0010\u0004\u001a\u0010\u0012\u000c\u0012\n\u0012\u0006\u0008\u0001\u0012\u00020\u00030\u00020\u0001H\n\u00a2\u0006\u0004\u0008\u0005\u0010\u0006"
     }
     d2 = {
-        "Landroidx/compose/runtime/saveable/n;",
+        "Landroidx/compose/runtime/saveable/l;",
         "",
         "Landroidx/compose/ui/text/e;",
         "",
         "it",
         "invoke",
-        "(Landroidx/compose/runtime/saveable/n;Ljava/util/List;)Ljava/lang/Object;",
+        "(Landroidx/compose/runtime/saveable/l;Ljava/util/List;)Ljava/lang/Object;",
         "<anonymous>"
     }
     k = 0x3
@@ -66,12 +66,12 @@
 
 
 # virtual methods
-.method public final invoke(Landroidx/compose/runtime/saveable/n;Ljava/util/List;)Ljava/lang/Object;
+.method public final invoke(Landroidx/compose/runtime/saveable/l;Ljava/util/List;)Ljava/lang/Object;
     .locals 5
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
-            "Landroidx/compose/runtime/saveable/n;",
+            "Landroidx/compose/runtime/saveable/l;",
             "Ljava/util/List<",
             "+",
             "Landroidx/compose/ui/text/e;",
@@ -108,10 +108,10 @@
     check-cast v3, Landroidx/compose/ui/text/e;
 
     .line 6
-    sget-object v4, Landroidx/compose/ui/text/z;->c:Landroidx/compose/runtime/saveable/l;
+    sget-object v4, Landroidx/compose/ui/text/z;->c:LB2/c;
 
     .line 7
-    invoke-static {v3, v4, p1}, Landroidx/compose/ui/text/z;->a(Ljava/lang/Object;Landroidx/compose/runtime/saveable/k;Landroidx/compose/runtime/saveable/n;)Ljava/lang/Object;
+    invoke-static {v3, v4, p1}, Landroidx/compose/ui/text/z;->a(Ljava/lang/Object;Landroidx/compose/runtime/saveable/j;Landroidx/compose/runtime/saveable/l;)Ljava/lang/Object;
 
     move-result-object v3
 
@@ -130,11 +130,11 @@
     .locals 0
 
     .line 1
-    check-cast p1, Landroidx/compose/runtime/saveable/n;
+    check-cast p1, Landroidx/compose/runtime/saveable/l;
 
     check-cast p2, Ljava/util/List;
 
-    invoke-virtual {p0, p1, p2}, Landroidx/compose/ui/text/SaversKt$AnnotationRangeListSaver$1;->invoke(Landroidx/compose/runtime/saveable/n;Ljava/util/List;)Ljava/lang/Object;
+    invoke-virtual {p0, p1, p2}, Landroidx/compose/ui/text/SaversKt$AnnotationRangeListSaver$1;->invoke(Landroidx/compose/runtime/saveable/l;Ljava/util/List;)Ljava/lang/Object;
 
     move-result-object p1
 

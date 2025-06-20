@@ -3,14 +3,14 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lzh/a;
+.implements Lka/a;
 
 
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "Lkotlin/jvm/internal/Lambda;",
-        "Lzh/a;"
+        "Lka/a;"
     }
 .end annotation
 
@@ -19,9 +19,9 @@
         "\u0000\u0008\n\u0002\u0018\u0002\n\u0002\u0008\u0003\u0010\u0003\u001a\u00020\u0000H\n\u00a2\u0006\u0004\u0008\u0001\u0010\u0002"
     }
     d2 = {
-        "Lokhttp3/c0;",
+        "Lokhttp3/v;",
         "invoke",
-        "()Lokhttp3/c0;",
+        "()Lokhttp3/v;",
         "<anonymous>"
     }
     k = 0x3
@@ -66,20 +66,25 @@
     .locals 1
 
     .line 1
-    invoke-virtual {p0}, Lcoil/ImageLoader$Builder$build$3;->invoke()Lokhttp3/c0;
+    invoke-virtual {p0}, Lcoil/ImageLoader$Builder$build$3;->invoke()Lokhttp3/v;
 
     move-result-object v0
 
     return-object v0
 .end method
 
-.method public final invoke()Lokhttp3/c0;
-    .locals 1
+.method public final invoke()Lokhttp3/v;
+    .locals 2
 
     .line 2
-    new-instance v0, Lokhttp3/c0;
+    new-instance v0, Lokhttp3/v;
 
-    invoke-direct {v0}, Lokhttp3/c0;-><init>()V
+    .line 3
+    new-instance v1, Lokhttp3/u;
+
+    invoke-direct {v1}, Lokhttp3/u;-><init>()V
+
+    invoke-direct {v0, v1}, Lokhttp3/v;-><init>(Lokhttp3/u;)V
 
     return-object v0
 .end method

@@ -1,5 +1,5 @@
 .class public final Landroidx/databinding/b;
-.super Landroidx/databinding/h;
+.super Landroidx/databinding/g;
 .source "SourceFile"
 
 

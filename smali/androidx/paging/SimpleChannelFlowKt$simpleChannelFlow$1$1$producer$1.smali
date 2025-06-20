@@ -3,10 +3,19 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lzh/e;
+.implements Lka/e;
 
 
 # annotations
+.annotation runtime Lca/c;
+    c = "androidx.paging.SimpleChannelFlowKt$simpleChannelFlow$1$1$producer$1"
+    f = "SimpleChannelFlow.kt"
+    l = {
+        0x37
+    }
+    m = "invokeSuspend"
+.end annotation
+
 .annotation system Ldalvik/annotation/EnclosingMethod;
     value = Landroidx/paging/SimpleChannelFlowKt$simpleChannelFlow$1$1;->invokeSuspend(Ljava/lang/Object;)Ljava/lang/Object;
 .end annotation
@@ -19,19 +28,20 @@
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "Lkotlin/coroutines/jvm/internal/SuspendLambda;",
-        "Lzh/e;"
+        "Lka/e;"
     }
 .end annotation
 
 .annotation runtime Lkotlin/Metadata;
     d1 = {
-        "\u0000\u000c\n\u0000\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\u0010\u0003\u001a\u00020\u0002\"\u0004\u0008\u0000\u0010\u0000*\u00020\u0001H\u008a@"
+        "\u0000\u000e\n\u0000\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0008\u0002\u0010\u0003\u001a\u00020\u0002\"\u0004\u0008\u0000\u0010\u0000*\u00020\u0001H\u008a@\u00a2\u0006\u0004\u0008\u0003\u0010\u0004"
     }
     d2 = {
         "T",
-        "Lkotlinx/coroutines/w;",
-        "Lqh/r;",
-        "<anonymous>"
+        "Lkotlinx/coroutines/u;",
+        "LX9/j;",
+        "<anonymous>",
+        "(Lkotlinx/coroutines/u;)V"
     }
     k = 0x3
     mv = {
@@ -41,21 +51,12 @@
     }
 .end annotation
 
-.annotation runtime Lth/c;
-    c = "androidx.paging.SimpleChannelFlowKt$simpleChannelFlow$1$1$producer$1"
-    f = "SimpleChannelFlow.kt"
-    l = {
-        0x37
-    }
-    m = "invokeSuspend"
-.end annotation
-
 
 # instance fields
-.field final synthetic $block:Lzh/e;
+.field final synthetic $block:Lka/e;
     .annotation system Ldalvik/annotation/Signature;
         value = {
-            "Lzh/e;"
+            "Lka/e;"
         }
     .end annotation
 .end field
@@ -72,13 +73,13 @@
 
 
 # direct methods
-.method public constructor <init>(Lkotlinx/coroutines/channels/e;Lzh/e;Lkotlin/coroutines/Continuation;)V
+.method public constructor <init>(Lkotlinx/coroutines/channels/e;Lka/e;Lkotlin/coroutines/Continuation;)V
     .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
             "Lkotlinx/coroutines/channels/e;",
-            "Lzh/e;",
+            "Lka/e;",
             "Lkotlin/coroutines/Continuation<",
             "-",
             "Landroidx/paging/SimpleChannelFlowKt$simpleChannelFlow$1$1$producer$1;",
@@ -89,12 +90,20 @@
     .line 1
     iput-object p1, p0, Landroidx/paging/SimpleChannelFlowKt$simpleChannelFlow$1$1$producer$1;->$channel:Lkotlinx/coroutines/channels/e;
 
-    iput-object p2, p0, Landroidx/paging/SimpleChannelFlowKt$simpleChannelFlow$1$1$producer$1;->$block:Lzh/e;
+    .line 2
+    .line 3
+    iput-object p2, p0, Landroidx/paging/SimpleChannelFlowKt$simpleChannelFlow$1$1$producer$1;->$block:Lka/e;
 
+    .line 4
+    .line 5
     const/4 p1, 0x2
 
+    .line 6
     invoke-direct {p0, p1, p3}, Lkotlin/coroutines/jvm/internal/SuspendLambda;-><init>(ILkotlin/coroutines/Continuation;)V
 
+    .line 7
+    .line 8
+    .line 9
     return-void
 .end method
 
@@ -109,7 +118,7 @@
             "Lkotlin/coroutines/Continuation<",
             "*>;)",
             "Lkotlin/coroutines/Continuation<",
-            "Lqh/r;",
+            "LX9/j;",
             ">;"
         }
     .end annotation
@@ -118,9 +127,9 @@
 
     iget-object v0, p0, Landroidx/paging/SimpleChannelFlowKt$simpleChannelFlow$1$1$producer$1;->$channel:Lkotlinx/coroutines/channels/e;
 
-    iget-object v1, p0, Landroidx/paging/SimpleChannelFlowKt$simpleChannelFlow$1$1$producer$1;->$block:Lzh/e;
+    iget-object v1, p0, Landroidx/paging/SimpleChannelFlowKt$simpleChannelFlow$1$1$producer$1;->$block:Lka/e;
 
-    invoke-direct {p1, v0, v1, p2}, Landroidx/paging/SimpleChannelFlowKt$simpleChannelFlow$1$1$producer$1;-><init>(Lkotlinx/coroutines/channels/e;Lzh/e;Lkotlin/coroutines/Continuation;)V
+    invoke-direct {p1, v0, v1, p2}, Landroidx/paging/SimpleChannelFlowKt$simpleChannelFlow$1$1$producer$1;-><init>(Lkotlinx/coroutines/channels/e;Lka/e;Lkotlin/coroutines/Continuation;)V
 
     return-object p1
 .end method
@@ -129,26 +138,26 @@
     .locals 0
 
     .line 1
-    check-cast p1, Lkotlinx/coroutines/w;
+    check-cast p1, Lkotlinx/coroutines/u;
 
     check-cast p2, Lkotlin/coroutines/Continuation;
 
-    invoke-virtual {p0, p1, p2}, Landroidx/paging/SimpleChannelFlowKt$simpleChannelFlow$1$1$producer$1;->invoke(Lkotlinx/coroutines/w;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
+    invoke-virtual {p0, p1, p2}, Landroidx/paging/SimpleChannelFlowKt$simpleChannelFlow$1$1$producer$1;->invoke(Lkotlinx/coroutines/u;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
 
     move-result-object p1
 
     return-object p1
 .end method
 
-.method public final invoke(Lkotlinx/coroutines/w;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
+.method public final invoke(Lkotlinx/coroutines/u;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
     .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
-            "Lkotlinx/coroutines/w;",
+            "Lkotlinx/coroutines/u;",
             "Lkotlin/coroutines/Continuation<",
             "-",
-            "Lqh/r;",
+            "LX9/j;",
             ">;)",
             "Ljava/lang/Object;"
         }
@@ -161,7 +170,7 @@
 
     check-cast p1, Landroidx/paging/SimpleChannelFlowKt$simpleChannelFlow$1$1$producer$1;
 
-    sget-object p2, Lqh/r;->a:Lqh/r;
+    sget-object p2, LX9/j;->a:LX9/j;
 
     invoke-virtual {p1, p2}, Landroidx/paging/SimpleChannelFlowKt$simpleChannelFlow$1$1$producer$1;->invokeSuspend(Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -246,11 +255,11 @@
 
     .line 31
     .line 32
-    iget-object v4, p0, Landroidx/paging/SimpleChannelFlowKt$simpleChannelFlow$1$1$producer$1;->$block:Lzh/e;
+    iget-object v4, p0, Landroidx/paging/SimpleChannelFlowKt$simpleChannelFlow$1$1$producer$1;->$block:Lka/e;
 
     .line 33
     .line 34
-    invoke-direct {p1, v1, v4, v2}, Landroidx/paging/SimpleChannelFlowKt$simpleChannelFlow$1$1$producer$1$1;-><init>(Lkotlinx/coroutines/channels/e;Lzh/e;Lkotlin/coroutines/Continuation;)V
+    invoke-direct {p1, v1, v4, v2}, Landroidx/paging/SimpleChannelFlowKt$simpleChannelFlow$1$1$producer$1$1;-><init>(Lkotlinx/coroutines/channels/e;Lka/e;Lkotlin/coroutines/Continuation;)V
 
     .line 35
     .line 36
@@ -259,7 +268,7 @@
 
     .line 38
     .line 39
-    invoke-static {p1, p0}, Lrb/h;->k(Lzh/e;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
+    invoke-static {p1, p0}, Lkotlinx/coroutines/w;->h(Lka/e;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
 
     .line 40
     .line 41
@@ -280,7 +289,7 @@
 
     .line 47
     .line 48
-    invoke-interface {p1, v2}, Lkotlinx/coroutines/channels/p;->m(Ljava/lang/Throwable;)Z
+    invoke-interface {p1, v2}, Lkotlinx/coroutines/channels/p;->g(Ljava/lang/Throwable;)Z
     :try_end_1
     .catchall {:try_start_1 .. :try_end_1} :catchall_0
 
@@ -295,13 +304,13 @@
 
     .line 53
     .line 54
-    invoke-interface {v0, p1}, Lkotlinx/coroutines/channels/p;->m(Ljava/lang/Throwable;)Z
+    invoke-interface {v0, p1}, Lkotlinx/coroutines/channels/p;->g(Ljava/lang/Throwable;)Z
 
     .line 55
     .line 56
     .line 57
     :goto_2
-    sget-object p1, Lqh/r;->a:Lqh/r;
+    sget-object p1, LX9/j;->a:LX9/j;
 
     .line 58
     .line 59

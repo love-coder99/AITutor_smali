@@ -61,13 +61,13 @@
 .method public varargs doInBackground([Ljava/lang/Object;)Ljava/lang/Void;
     .locals 13
 
+    .line 2
     const-string v0, "historical-record"
 
     const-string v1, "historical-records"
 
     const/4 v2, 0x0
 
-    .line 2
     aget-object v3, p1, v2
 
     check-cast v3, Ljava/util/List;
@@ -81,10 +81,10 @@
 
     const/4 v5, 0x0
 
+    .line 4
     :try_start_0
     iget-object v6, p0, Landroidx/appcompat/widget/ActivityChooserModel$PersistHistoryAsyncTask;->this$0:Landroidx/appcompat/widget/ActivityChooserModel;
 
-    .line 4
     iget-object v6, v6, Landroidx/appcompat/widget/ActivityChooserModel;->mContext:Landroid/content/Context;
 
     invoke-virtual {v6, p1, v2}, Landroid/content/Context;->openFileOutput(Ljava/lang/String;I)Ljava/io/FileOutputStream;
@@ -102,11 +102,11 @@
     :try_start_1
     invoke-interface {v6, p1, v5}, Lorg/xmlpull/v1/XmlSerializer;->setOutput(Ljava/io/OutputStream;Ljava/lang/String;)V
 
+    .line 7
     const-string v7, "UTF-8"
 
     sget-object v8, Ljava/lang/Boolean;->TRUE:Ljava/lang/Boolean;
 
-    .line 7
     invoke-interface {v6, v7, v8}, Lorg/xmlpull/v1/XmlSerializer;->startDocument(Ljava/lang/String;Ljava/lang/Boolean;)V
 
     .line 8
@@ -132,9 +132,9 @@
     .line 11
     invoke-interface {v6, v5, v0}, Lorg/xmlpull/v1/XmlSerializer;->startTag(Ljava/lang/String;Ljava/lang/String;)Lorg/xmlpull/v1/XmlSerializer;
 
+    .line 12
     const-string v10, "activity"
 
-    .line 12
     iget-object v11, v9, Landroidx/appcompat/widget/ActivityChooserModel$HistoricalRecord;->activity:Landroid/content/ComponentName;
 
     .line 13
@@ -145,9 +145,9 @@
     .line 14
     invoke-interface {v6, v5, v10, v11}, Lorg/xmlpull/v1/XmlSerializer;->attribute(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Lorg/xmlpull/v1/XmlSerializer;
 
+    .line 15
     const-string v10, "time"
 
-    .line 15
     iget-wide v11, v9, Landroidx/appcompat/widget/ActivityChooserModel$HistoricalRecord;->time:J
 
     invoke-static {v11, v12}, Ljava/lang/String;->valueOf(J)Ljava/lang/String;
@@ -156,9 +156,9 @@
 
     invoke-interface {v6, v5, v10, v11}, Lorg/xmlpull/v1/XmlSerializer;->attribute(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Lorg/xmlpull/v1/XmlSerializer;
 
+    .line 16
     const-string v10, "weight"
 
-    .line 16
     iget v9, v9, Landroidx/appcompat/widget/ActivityChooserModel$HistoricalRecord;->weight:F
 
     invoke-static {v9}, Ljava/lang/String;->valueOf(F)Ljava/lang/String;
@@ -170,7 +170,7 @@
     .line 17
     invoke-interface {v6, v5, v0}, Lorg/xmlpull/v1/XmlSerializer;->endTag(Ljava/lang/String;Ljava/lang/String;)Lorg/xmlpull/v1/XmlSerializer;
 
-    add-int/lit8 v8, v8, 0x1
+    add-int/2addr v8, v4
 
     goto :goto_0
 
@@ -191,9 +191,9 @@
     .catch Ljava/io/IOException; {:try_start_1 .. :try_end_1} :catch_0
     .catchall {:try_start_1 .. :try_end_1} :catchall_0
 
+    .line 20
     iget-object v0, p0, Landroidx/appcompat/widget/ActivityChooserModel$PersistHistoryAsyncTask;->this$0:Landroidx/appcompat/widget/ActivityChooserModel;
 
-    .line 20
     iput-boolean v4, v0, Landroidx/appcompat/widget/ActivityChooserModel;->mCanReadHistoricalData:Z
 
     if-eqz p1, :cond_1

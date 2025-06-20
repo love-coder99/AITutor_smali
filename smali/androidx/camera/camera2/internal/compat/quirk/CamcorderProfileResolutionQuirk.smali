@@ -3,17 +3,17 @@
 .source "SourceFile"
 
 # interfaces
-.implements Landroidx/camera/core/impl/o1;
+.implements Landroidx/camera/core/impl/i0;
 
 
 # instance fields
-.field public final a:Landroidx/camera/camera2/internal/compat/z;
+.field public final a:Landroidx/appcompat/app/L;
 
 .field public b:Ljava/util/List;
 
 
 # direct methods
-.method public constructor <init>(Landroidx/camera/camera2/internal/compat/m;)V
+.method public constructor <init>(Landroidx/camera/camera2/internal/compat/j;)V
     .locals 1
 
     .line 1
@@ -29,7 +29,7 @@
 
     .line 6
     .line 7
-    invoke-virtual {p1}, Landroidx/camera/camera2/internal/compat/m;->b()Landroidx/camera/camera2/internal/compat/z;
+    invoke-virtual {p1}, Landroidx/camera/camera2/internal/compat/j;->b()Landroidx/appcompat/app/L;
 
     .line 8
     .line 9
@@ -37,7 +37,7 @@
     move-result-object p1
 
     .line 11
-    iput-object p1, p0, Landroidx/camera/camera2/internal/compat/quirk/CamcorderProfileResolutionQuirk;->a:Landroidx/camera/camera2/internal/compat/z;
+    iput-object p1, p0, Landroidx/camera/camera2/internal/compat/quirk/CamcorderProfileResolutionQuirk;->a:Landroidx/appcompat/app/L;
 
     .line 12
     .line 13

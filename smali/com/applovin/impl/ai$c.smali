@@ -58,11 +58,11 @@
 .method public a(J)I
     .locals 2
 
+    .line 4
     iget-object v0, p0, Lcom/applovin/impl/ai$c;->b:Lcom/applovin/impl/ai;
 
     iget v1, p0, Lcom/applovin/impl/ai$c;->a:I
 
-    .line 4
     invoke-virtual {v0, v1, p1, p2}, Lcom/applovin/impl/ai;->a(IJ)I
 
     move-result p1
@@ -73,11 +73,11 @@
 .method public a(Lcom/applovin/impl/f9;Lcom/applovin/impl/o5;I)I
     .locals 2
 
+    .line 3
     iget-object v0, p0, Lcom/applovin/impl/ai$c;->b:Lcom/applovin/impl/ai;
 
     iget v1, p0, Lcom/applovin/impl/ai$c;->a:I
 
-    .line 3
     invoke-virtual {v0, v1, p1, p2, p3}, Lcom/applovin/impl/ai;->a(ILcom/applovin/impl/f9;Lcom/applovin/impl/o5;I)I
 
     move-result p1
@@ -88,11 +88,11 @@
 .method public a()V
     .locals 2
 
+    .line 2
     iget-object v0, p0, Lcom/applovin/impl/ai$c;->b:Lcom/applovin/impl/ai;
 
     iget v1, p0, Lcom/applovin/impl/ai$c;->a:I
 
-    .line 2
     invoke-virtual {v0, v1}, Lcom/applovin/impl/ai;->d(I)V
 
     return-void

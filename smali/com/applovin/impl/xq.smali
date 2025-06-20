@@ -43,15 +43,15 @@
 
     .line 8
     .line 9
-    new-instance v0, Lcom/applovin/impl/vu;
+    new-instance v0, Lcom/applovin/impl/M1;
 
     .line 10
     .line 11
-    const/16 v1, 0x1a
+    const/16 v1, 0x1b
 
     .line 12
     .line 13
-    invoke-direct {v0, v1}, Lcom/applovin/impl/vu;-><init>(I)V
+    invoke-direct {v0, v1}, Lcom/applovin/impl/M1;-><init>(I)V
 
     .line 14
     .line 15
@@ -82,12 +82,16 @@
     .line 2
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
+    .line 3
     iput p1, p0, Lcom/applovin/impl/xq;->a:I
 
+    .line 4
     iput p2, p0, Lcom/applovin/impl/xq;->b:I
 
+    .line 5
     iput p3, p0, Lcom/applovin/impl/xq;->c:I
 
+    .line 6
     iput p4, p0, Lcom/applovin/impl/xq;->d:F
 
     return-void

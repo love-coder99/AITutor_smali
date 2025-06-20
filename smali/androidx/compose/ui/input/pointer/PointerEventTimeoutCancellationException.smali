@@ -46,7 +46,7 @@
 
     .line 4
     .line 5
-    invoke-static {v0, p1, p2, v1}, Lj0/d;->h(Ljava/lang/String;JLjava/lang/String;)Ljava/lang/String;
+    invoke-static {v0, v1, p1, p2}, Landroidx/compose/runtime/a0;->q(Ljava/lang/String;Ljava/lang/String;J)Ljava/lang/String;
 
     .line 6
     .line 7
@@ -68,7 +68,7 @@
     .locals 1
 
     .line 1
-    sget-object v0, Landroidx/compose/ui/input/pointer/p;->c:[Ljava/lang/StackTraceElement;
+    sget-object v0, Landroidx/compose/ui/input/pointer/l;->c:[Ljava/lang/StackTraceElement;
 
     .line 2
     .line 3

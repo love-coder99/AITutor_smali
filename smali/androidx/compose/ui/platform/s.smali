@@ -1,56 +1,46 @@
-.class public final synthetic Landroidx/compose/ui/platform/s;
+.class public final Landroidx/compose/ui/platform/S;
 .super Ljava/lang/Object;
 .source "SourceFile"
 
-# interfaces
-.implements Ljava/util/Comparator;
 
-
-# instance fields
-.field public final synthetic b:Lzh/e;
+# static fields
+.field public static final a:Landroidx/compose/ui/platform/S;
 
 
 # direct methods
-.method public synthetic constructor <init>(Lzh/e;)V
-    .locals 0
+.method static constructor <clinit>()V
+    .locals 1
 
     .line 1
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    new-instance v0, Landroidx/compose/ui/platform/S;
 
-    iput-object p1, p0, Landroidx/compose/ui/platform/s;->b:Lzh/e;
+    .line 2
+    .line 3
+    invoke-direct {v0}, Ljava/lang/Object;-><init>()V
 
+    .line 4
+    .line 5
+    .line 6
+    sput-object v0, Landroidx/compose/ui/platform/S;->a:Landroidx/compose/ui/platform/S;
+
+    .line 7
+    .line 8
     return-void
 .end method
 
 
 # virtual methods
-.method public final compare(Ljava/lang/Object;Ljava/lang/Object;)I
-    .locals 1
+.method public final a(Landroid/view/accessibility/AccessibilityManager;II)I
+    .locals 0
 
     .line 1
-    iget-object v0, p0, Landroidx/compose/ui/platform/s;->b:Lzh/e;
+    invoke-virtual {p1, p2, p3}, Landroid/view/accessibility/AccessibilityManager;->getRecommendedTimeoutMillis(II)I
 
     .line 2
     .line 3
-    invoke-interface {v0, p1, p2}, Lzh/e;->invoke(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
-
     .line 4
-    .line 5
-    .line 6
-    move-result-object p1
-
-    .line 7
-    check-cast p1, Ljava/lang/Number;
-
-    .line 8
-    .line 9
-    invoke-virtual {p1}, Ljava/lang/Number;->intValue()I
-
-    .line 10
-    .line 11
-    .line 12
     move-result p1
 
-    .line 13
+    .line 5
     return p1
 .end method

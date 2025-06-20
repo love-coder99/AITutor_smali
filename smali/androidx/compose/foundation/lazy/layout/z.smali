@@ -6,13 +6,13 @@
 # instance fields
 .field public final a:Landroidx/compose/runtime/saveable/c;
 
-.field public final b:Lzh/a;
+.field public final b:Lka/a;
 
 .field public final c:Ljava/util/LinkedHashMap;
 
 
 # direct methods
-.method public constructor <init>(Landroidx/compose/runtime/saveable/c;Lzh/a;)V
+.method public constructor <init>(Landroidx/compose/runtime/saveable/c;Lka/a;)V
     .locals 0
 
     .line 1
@@ -25,7 +25,7 @@
 
     .line 5
     .line 6
-    iput-object p2, p0, Landroidx/compose/foundation/lazy/layout/z;->b:Lzh/a;
+    iput-object p2, p0, Landroidx/compose/foundation/lazy/layout/z;->b:Lka/a;
 
     .line 7
     .line 8
@@ -47,7 +47,7 @@
 
 
 # virtual methods
-.method public final a(Ljava/lang/Object;ILjava/lang/Object;)Lzh/e;
+.method public final a(Ljava/lang/Object;ILjava/lang/Object;)Lka/e;
     .locals 5
 
     .line 1
@@ -91,7 +91,7 @@
 
     .line 20
     .line 21
-    invoke-static {v4, p3}, Lrb/h;->d(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v4, p3}, Lkotlin/jvm/internal/h;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     .line 22
     .line 23
@@ -103,7 +103,7 @@
 
     .line 26
     .line 27
-    iget-object p1, v1, Landroidx/compose/foundation/lazy/layout/y;->d:Lzh/e;
+    iget-object p1, v1, Landroidx/compose/foundation/lazy/layout/y;->d:Landroidx/compose/runtime/internal/a;
 
     .line 28
     .line 29
@@ -124,82 +124,74 @@
     .line 36
     .line 37
     .line 38
-    sget-object p2, Landroidx/compose/runtime/internal/c;->a:Ljava/lang/Object;
+    new-instance p2, Landroidx/compose/runtime/internal/a;
 
     .line 39
     .line 40
-    new-instance p2, Landroidx/compose/runtime/internal/b;
+    invoke-direct {p2, v3, p1, v2}, Landroidx/compose/runtime/internal/a;-><init>(ILjava/lang/Object;Z)V
 
     .line 41
     .line 42
-    invoke-direct {p2, v3, p1, v2}, Landroidx/compose/runtime/internal/b;-><init>(ILkotlin/jvm/internal/Lambda;Z)V
-
     .line 43
+    iput-object p2, v1, Landroidx/compose/foundation/lazy/layout/y;->d:Landroidx/compose/runtime/internal/a;
+
     .line 44
     .line 45
-    iput-object p2, v1, Landroidx/compose/foundation/lazy/layout/y;->d:Lzh/e;
-
-    .line 46
-    .line 47
     :goto_0
     move-object p1, p2
 
-    .line 48
+    .line 46
     goto :goto_1
 
-    .line 49
+    .line 47
     :cond_0
     new-instance v1, Landroidx/compose/foundation/lazy/layout/y;
 
-    .line 50
-    .line 51
+    .line 48
+    .line 49
     invoke-direct {v1, p0, p2, p1, p3}, Landroidx/compose/foundation/lazy/layout/y;-><init>(Landroidx/compose/foundation/lazy/layout/z;ILjava/lang/Object;Ljava/lang/Object;)V
 
+    .line 50
+    .line 51
     .line 52
-    .line 53
-    .line 54
     invoke-interface {v0, p1, v1}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
+    .line 53
+    .line 54
     .line 55
+    iget-object p1, v1, Landroidx/compose/foundation/lazy/layout/y;->d:Landroidx/compose/runtime/internal/a;
+
     .line 56
     .line 57
-    iget-object p1, v1, Landroidx/compose/foundation/lazy/layout/y;->d:Lzh/e;
+    if-nez p1, :cond_1
 
     .line 58
     .line 59
-    if-nez p1, :cond_1
+    new-instance p1, Landroidx/compose/foundation/lazy/layout/LazyLayoutItemContentFactory$CachedItemContent$createContentLambda$1;
 
     .line 60
     .line 61
-    new-instance p1, Landroidx/compose/foundation/lazy/layout/LazyLayoutItemContentFactory$CachedItemContent$createContentLambda$1;
+    invoke-direct {p1, p0, v1}, Landroidx/compose/foundation/lazy/layout/LazyLayoutItemContentFactory$CachedItemContent$createContentLambda$1;-><init>(Landroidx/compose/foundation/lazy/layout/z;Landroidx/compose/foundation/lazy/layout/y;)V
 
     .line 62
     .line 63
-    invoke-direct {p1, p0, v1}, Landroidx/compose/foundation/lazy/layout/LazyLayoutItemContentFactory$CachedItemContent$createContentLambda$1;-><init>(Landroidx/compose/foundation/lazy/layout/z;Landroidx/compose/foundation/lazy/layout/y;)V
-
     .line 64
+    new-instance p2, Landroidx/compose/runtime/internal/a;
+
     .line 65
     .line 66
-    sget-object p2, Landroidx/compose/runtime/internal/c;->a:Ljava/lang/Object;
+    invoke-direct {p2, v3, p1, v2}, Landroidx/compose/runtime/internal/a;-><init>(ILjava/lang/Object;Z)V
 
     .line 67
     .line 68
-    new-instance p2, Landroidx/compose/runtime/internal/b;
-
     .line 69
+    iput-object p2, v1, Landroidx/compose/foundation/lazy/layout/y;->d:Landroidx/compose/runtime/internal/a;
+
     .line 70
-    invoke-direct {p2, v3, p1, v2}, Landroidx/compose/runtime/internal/b;-><init>(ILkotlin/jvm/internal/Lambda;Z)V
-
     .line 71
-    .line 72
-    .line 73
-    iput-object p2, v1, Landroidx/compose/foundation/lazy/layout/y;->d:Lzh/e;
-
-    .line 74
-    .line 75
     goto :goto_0
 
-    .line 76
+    .line 72
     :cond_1
     :goto_1
     return-object p1
@@ -248,11 +240,11 @@
 
     .line 18
     :cond_1
-    iget-object v1, p0, Landroidx/compose/foundation/lazy/layout/z;->b:Lzh/a;
+    iget-object v1, p0, Landroidx/compose/foundation/lazy/layout/z;->b:Lka/a;
 
     .line 19
     .line 20
-    invoke-interface {v1}, Lzh/a;->invoke()Ljava/lang/Object;
+    invoke-interface {v1}, Lka/a;->invoke()Ljava/lang/Object;
 
     .line 21
     .line 22
@@ -260,11 +252,11 @@
     move-result-object v1
 
     .line 24
-    check-cast v1, Landroidx/compose/foundation/lazy/layout/a0;
+    check-cast v1, Landroidx/compose/foundation/lazy/layout/A;
 
     .line 25
     .line 26
-    invoke-interface {v1, p1}, Landroidx/compose/foundation/lazy/layout/a0;->b(Ljava/lang/Object;)I
+    invoke-interface {v1, p1}, Landroidx/compose/foundation/lazy/layout/A;->a(Ljava/lang/Object;)I
 
     .line 27
     .line 28
@@ -279,7 +271,7 @@
 
     .line 32
     .line 33
-    invoke-interface {v1, p1}, Landroidx/compose/foundation/lazy/layout/a0;->d(I)Ljava/lang/Object;
+    invoke-interface {v1, p1}, Landroidx/compose/foundation/lazy/layout/A;->d(I)Ljava/lang/Object;
 
     .line 34
     .line 35

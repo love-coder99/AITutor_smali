@@ -1,58 +1,63 @@
-.class public Landroidx/compose/foundation/i;
-.super Landroidx/compose/foundation/a;
+.class public abstract Landroidx/compose/foundation/I;
+.super Ljava/lang/Object;
 .source "SourceFile"
 
 
-# virtual methods
-.method public final E0(Landroidx/compose/ui/input/pointer/x;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
+# static fields
+.field public static final a:Landroidx/compose/ui/semantics/s;
+
+
+# direct methods
+.method static constructor <clinit>()V
     .locals 2
 
     .line 1
-    new-instance v0, Landroidx/compose/foundation/ClickableNode$clickPointerInput$2;
+    new-instance v0, Landroidx/compose/ui/semantics/s;
 
     .line 2
     .line 3
-    const/4 v1, 0x0
+    const-string v1, "MagnifierPositionInRoot"
 
     .line 4
-    invoke-direct {v0, p0, v1}, Landroidx/compose/foundation/ClickableNode$clickPointerInput$2;-><init>(Landroidx/compose/foundation/i;Lkotlin/coroutines/Continuation;)V
-
     .line 5
+    invoke-direct {v0, v1}, Landroidx/compose/ui/semantics/s;-><init>(Ljava/lang/String;)V
+
     .line 6
     .line 7
-    new-instance v1, Landroidx/compose/foundation/ClickableNode$clickPointerInput$3;
+    .line 8
+    sput-object v0, Landroidx/compose/foundation/I;->a:Landroidx/compose/ui/semantics/s;
+
+    .line 9
+    .line 10
+    return-void
+.end method
+
+.method public static a()Z
+    .locals 2
+
+    .line 1
+    sget v0, Landroid/os/Build$VERSION;->SDK_INT:I
+
+    .line 2
+    .line 3
+    const/16 v1, 0x1c
+
+    .line 4
+    .line 5
+    if-lt v0, v1, :cond_0
+
+    .line 6
+    .line 7
+    const/4 v0, 0x1
 
     .line 8
-    .line 9
-    invoke-direct {v1, p0}, Landroidx/compose/foundation/ClickableNode$clickPointerInput$3;-><init>(Landroidx/compose/foundation/i;)V
-
-    .line 10
-    .line 11
-    .line 12
-    invoke-static {p1, v0, v1, p2}, Landroidx/compose/foundation/gestures/m0;->d(Landroidx/compose/ui/input/pointer/x;Lzh/f;Lzh/c;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
-
-    .line 13
-    .line 14
-    .line 15
-    move-result-object p1
-
-    .line 16
-    sget-object p2, Lkotlin/coroutines/intrinsics/CoroutineSingletons;->COROUTINE_SUSPENDED:Lkotlin/coroutines/intrinsics/CoroutineSingletons;
-
-    .line 17
-    .line 18
-    if-ne p1, p2, :cond_0
-
-    .line 19
-    .line 20
     goto :goto_0
 
-    .line 21
+    .line 9
     :cond_0
-    sget-object p1, Lqh/r;->a:Lqh/r;
+    const/4 v0, 0x0
 
-    .line 22
-    .line 23
+    .line 10
     :goto_0
-    return-object p1
+    return v0
 .end method

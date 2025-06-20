@@ -8,7 +8,7 @@
 
 .field public b:Z
 
-.field public final c:Landroidx/compose/runtime/saveable/i;
+.field public final c:Landroidx/compose/runtime/saveable/h;
 
 
 # direct methods
@@ -57,20 +57,20 @@
     .line 20
     .line 21
     .line 22
-    sget-object p1, Landroidx/compose/runtime/saveable/j;->a:Landroidx/compose/runtime/e3;
+    sget-object p1, Landroidx/compose/runtime/saveable/i;->a:Landroidx/compose/runtime/I0;
 
     .line 23
     .line 24
-    new-instance p1, Landroidx/compose/runtime/saveable/i;
+    new-instance p1, Landroidx/compose/runtime/saveable/h;
 
     .line 25
     .line 26
-    invoke-direct {p1, p2, v0}, Landroidx/compose/runtime/saveable/i;-><init>(Ljava/util/Map;Lzh/c;)V
+    invoke-direct {p1, p2, v0}, Landroidx/compose/runtime/saveable/h;-><init>(Ljava/util/Map;Lka/c;)V
 
     .line 27
     .line 28
     .line 29
-    iput-object p1, p0, Landroidx/compose/runtime/saveable/d;->c:Landroidx/compose/runtime/saveable/i;
+    iput-object p1, p0, Landroidx/compose/runtime/saveable/d;->c:Landroidx/compose/runtime/saveable/h;
 
     .line 30
     .line 31

@@ -51,19 +51,24 @@
 .method public constructor <init>(III[I[I)V
     .locals 1
 
+    .line 1
     const-string v0, "MLLT"
 
-    .line 1
     invoke-direct {p0, v0}, Lcom/applovin/impl/xa;-><init>(Ljava/lang/String;)V
 
+    .line 2
     iput p1, p0, Lcom/applovin/impl/if;->b:I
 
+    .line 3
     iput p2, p0, Lcom/applovin/impl/if;->c:I
 
+    .line 4
     iput p3, p0, Lcom/applovin/impl/if;->d:I
 
+    .line 5
     iput-object p4, p0, Lcom/applovin/impl/if;->f:[I
 
+    .line 6
     iput-object p5, p0, Lcom/applovin/impl/if;->g:[I
 
     return-void
@@ -72,33 +77,33 @@
 .method public constructor <init>(Landroid/os/Parcel;)V
     .locals 1
 
+    .line 7
     const-string v0, "MLLT"
 
-    .line 2
     invoke-direct {p0, v0}, Lcom/applovin/impl/xa;-><init>(Ljava/lang/String;)V
 
-    .line 3
+    .line 8
     invoke-virtual {p1}, Landroid/os/Parcel;->readInt()I
 
     move-result v0
 
     iput v0, p0, Lcom/applovin/impl/if;->b:I
 
-    .line 4
+    .line 9
     invoke-virtual {p1}, Landroid/os/Parcel;->readInt()I
 
     move-result v0
 
     iput v0, p0, Lcom/applovin/impl/if;->c:I
 
-    .line 5
+    .line 10
     invoke-virtual {p1}, Landroid/os/Parcel;->readInt()I
 
     move-result v0
 
     iput v0, p0, Lcom/applovin/impl/if;->d:I
 
-    .line 6
+    .line 11
     invoke-virtual {p1}, Landroid/os/Parcel;->createIntArray()[I
 
     move-result-object v0
@@ -111,7 +116,7 @@
 
     iput-object v0, p0, Lcom/applovin/impl/if;->f:[I
 
-    .line 7
+    .line 12
     invoke-virtual {p1}, Landroid/os/Parcel;->createIntArray()[I
 
     move-result-object p1

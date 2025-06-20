@@ -458,14 +458,14 @@
     move-result-object v2
 
     .line 164
-    new-instance v3, Lcom/applovin/impl/ps;
+    new-instance v3, Lcom/applovin/impl/H;
 
     .line 165
     .line 166
     const/4 v4, 0x7
 
     .line 167
-    invoke-direct {v3, p0, v4, v1}, Lcom/applovin/impl/ps;-><init>(Ljava/lang/Object;ILjava/lang/Object;)V
+    invoke-direct {v3, p0, v4, v1}, Lcom/applovin/impl/H;-><init>(Ljava/lang/Object;ILjava/lang/Object;)V
 
     .line 168
     .line 169

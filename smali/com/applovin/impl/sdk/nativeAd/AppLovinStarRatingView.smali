@@ -942,22 +942,37 @@
 .method private getTotalHorizontalSpacing()D
     .locals 3
 
+    .line 1
     iget v0, p0, Lcom/applovin/impl/sdk/nativeAd/AppLovinStarRatingView;->paddingDp:F
 
+    .line 2
+    .line 3
     const/high16 v1, 0x40000000    # 2.0f
 
+    .line 4
+    .line 5
     mul-float v0, v0, v1
 
+    .line 6
+    .line 7
     iget v1, p0, Lcom/applovin/impl/sdk/nativeAd/AppLovinStarRatingView;->interStarsSpacingDp:F
 
+    .line 8
+    .line 9
     const/high16 v2, 0x40800000    # 4.0f
 
+    .line 10
+    .line 11
     mul-float v1, v1, v2
 
+    .line 12
+    .line 13
     add-float/2addr v1, v0
 
+    .line 14
     float-to-double v0, v1
 
+    .line 15
     return-wide v0
 .end method
 

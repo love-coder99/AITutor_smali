@@ -43,14 +43,14 @@
     .locals 0
 
     .line 9
-    invoke-static {p0, p1}, Lcom/applovin/impl/nu;->r(ILandroid/view/Display;)Landroid/view/RoundedCorner;
+    invoke-static {p0, p1}, Landroidx/core/view/h;->p(ILandroid/view/Display;)Landroid/view/RoundedCorner;
 
     move-result-object p0
 
     if-eqz p0, :cond_0
 
     .line 10
-    invoke-static {p0}, Lcom/applovin/impl/nu;->c(Landroid/view/RoundedCorner;)I
+    invoke-static {p0}, Landroidx/core/view/h;->d(Landroid/view/RoundedCorner;)I
 
     move-result p0
 
@@ -76,9 +76,9 @@
 
     invoke-static {v1}, Landroid/os/StrictMode;->setVmPolicy(Landroid/os/StrictMode$VmPolicy;)V
 
+    .line 3
     const-string v1, "window"
 
-    .line 3
     invoke-virtual {p0, v1}, Landroid/content/Context;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
 
     move-result-object p0
@@ -152,9 +152,9 @@
 
     invoke-static {v1}, Landroid/os/StrictMode;->setVmPolicy(Landroid/os/StrictMode$VmPolicy;)V
 
+    .line 14
     const-string v1, "window"
 
-    .line 14
     invoke-virtual {p0, v1}, Landroid/content/Context;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
 
     move-result-object p0
@@ -295,12 +295,12 @@
 .method public static b(Landroid/content/Context;)Landroid/graphics/Point;
     .locals 5
 
-    .line 2
+    .line 1
     invoke-static {p0}, Lcom/applovin/sdk/AppLovinSdkUtils;->getOrientation(Landroid/content/Context;)I
 
     move-result v0
 
-    .line 3
+    .line 2
     sget-object v1, Lcom/applovin/impl/sdk/j;->u0:Lcom/applovin/impl/sdk/j;
 
     if-eqz v1, :cond_1
@@ -330,7 +330,7 @@
     :goto_0
     const/4 v1, 0x1
 
-    .line 4
+    .line 3
     :goto_1
     invoke-static {p0}, Lcom/applovin/impl/z3;->c(Landroid/content/Context;)Z
 
@@ -340,10 +340,10 @@
 
     if-eqz v1, :cond_3
 
+    .line 4
     :cond_2
     sget-object v1, Lcom/applovin/impl/z3;->a:Ljava/util/Map;
 
-    .line 5
     invoke-static {v0}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
     move-result-object v2
@@ -366,7 +366,7 @@
 
     return-object p0
 
-    .line 6
+    .line 5
     :cond_3
     new-instance v1, Landroid/graphics/Point;
 
@@ -374,25 +374,27 @@
 
     const/16 v2, 0x1e0
 
+    .line 6
     iput v2, v1, Landroid/graphics/Point;->x:I
 
     const/16 v2, 0x140
 
+    .line 7
     iput v2, v1, Landroid/graphics/Point;->y:I
 
-    .line 7
+    .line 8
     invoke-static {}, Landroid/os/StrictMode;->getVmPolicy()Landroid/os/StrictMode$VmPolicy;
 
     move-result-object v2
 
-    .line 8
+    .line 9
     sget-object v3, Landroid/os/StrictMode$VmPolicy;->LAX:Landroid/os/StrictMode$VmPolicy;
 
     invoke-static {v3}, Landroid/os/StrictMode;->setVmPolicy(Landroid/os/StrictMode$VmPolicy;)V
 
+    .line 10
     const-string v3, "window"
 
-    .line 9
     invoke-virtual {p0, v3}, Landroid/content/Context;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
 
     move-result-object p0
@@ -401,29 +403,29 @@
 
     if-eqz p0, :cond_6
 
-    .line 10
+    .line 11
     invoke-interface {p0}, Landroid/view/WindowManager;->getDefaultDisplay()Landroid/view/Display;
 
     move-result-object v3
 
-    .line 11
+    .line 12
     invoke-static {}, Lcom/applovin/impl/z3;->b()Z
 
     move-result v4
 
     if-eqz v4, :cond_4
 
-    .line 12
-    invoke-static {p0}, Landroidx/core/view/b2;->u(Landroid/view/WindowManager;)Landroid/view/WindowMetrics;
-
-    move-result-object p0
-
     .line 13
-    invoke-static {p0}, Landroidx/core/view/b2;->g(Landroid/view/WindowMetrics;)Landroid/graphics/Rect;
+    invoke-static {p0}, Landroidx/core/view/H0;->r(Landroid/view/WindowManager;)Landroid/view/WindowMetrics;
 
     move-result-object p0
 
     .line 14
+    invoke-static {p0}, Landroidx/core/view/H0;->f(Landroid/view/WindowMetrics;)Landroid/graphics/Rect;
+
+    move-result-object p0
+
+    .line 15
     new-instance v1, Landroid/graphics/Point;
 
     invoke-virtual {p0}, Landroid/graphics/Rect;->width()I
@@ -438,7 +440,7 @@
 
     goto :goto_2
 
-    .line 15
+    .line 16
     :cond_4
     invoke-static {}, Lcom/applovin/impl/z3;->d()Z
 
@@ -446,23 +448,23 @@
 
     if-eqz p0, :cond_5
 
-    .line 16
+    .line 17
     invoke-virtual {v3, v1}, Landroid/view/Display;->getRealSize(Landroid/graphics/Point;)V
 
     goto :goto_2
 
-    .line 17
+    .line 18
     :cond_5
     invoke-virtual {v3, v1}, Landroid/view/Display;->getSize(Landroid/graphics/Point;)V
 
-    .line 18
+    .line 19
     :cond_6
     :goto_2
     invoke-static {v2}, Landroid/os/StrictMode;->setVmPolicy(Landroid/os/StrictMode$VmPolicy;)V
 
+    .line 20
     sget-object p0, Lcom/applovin/impl/z3;->a:Ljava/util/Map;
 
-    .line 19
     invoke-static {v0}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
     move-result-object v0
@@ -475,7 +477,7 @@
 .method public static b()Z
     .locals 2
 
-    .line 1
+    .line 21
     sget v0, Landroid/os/Build$VERSION;->SDK_INT:I
 
     const/16 v1, 0x1e
@@ -496,7 +498,7 @@
 .method public static c()Z
     .locals 2
 
-    .line 1
+    .line 4
     sget v0, Landroid/os/Build$VERSION;->SDK_INT:I
 
     const/16 v1, 0x22
@@ -517,21 +519,21 @@
 .method public static c(Landroid/content/Context;)Z
     .locals 2
 
-    .line 2
+    .line 1
     invoke-virtual {p0}, Landroid/content/Context;->getPackageManager()Landroid/content/pm/PackageManager;
 
     move-result-object p0
 
+    .line 2
     const-string v0, "android.hardware.type.foldable"
 
-    .line 3
     invoke-virtual {p0, v0}, Landroid/content/pm/PackageManager;->hasSystemFeature(Ljava/lang/String;)Z
 
     move-result v0
 
+    .line 3
     const-string v1, "android.hardware.sensor.hinge_angle"
 
-    .line 4
     invoke-virtual {p0, v1}, Landroid/content/pm/PackageManager;->hasSystemFeature(Ljava/lang/String;)Z
 
     move-result p0
@@ -582,19 +584,29 @@
 .method public static g()Z
     .locals 2
 
+    .line 1
     sget v0, Landroid/os/Build$VERSION;->SDK_INT:I
 
+    .line 2
+    .line 3
     const/16 v1, 0x17
 
+    .line 4
+    .line 5
     if-lt v0, v1, :cond_0
 
+    .line 6
+    .line 7
     const/4 v0, 0x1
 
+    .line 8
     goto :goto_0
 
+    .line 9
     :cond_0
     const/4 v0, 0x0
 
+    .line 10
     :goto_0
     return v0
 .end method
@@ -602,19 +614,29 @@
 .method public static h()Z
     .locals 2
 
+    .line 1
     sget v0, Landroid/os/Build$VERSION;->SDK_INT:I
 
+    .line 2
+    .line 3
     const/16 v1, 0x18
 
+    .line 4
+    .line 5
     if-lt v0, v1, :cond_0
 
+    .line 6
+    .line 7
     const/4 v0, 0x1
 
+    .line 8
     goto :goto_0
 
+    .line 9
     :cond_0
     const/4 v0, 0x0
 
+    .line 10
     :goto_0
     return v0
 .end method
@@ -622,19 +644,29 @@
 .method public static i()Z
     .locals 2
 
+    .line 1
     sget v0, Landroid/os/Build$VERSION;->SDK_INT:I
 
+    .line 2
+    .line 3
     const/16 v1, 0x1a
 
+    .line 4
+    .line 5
     if-lt v0, v1, :cond_0
 
+    .line 6
+    .line 7
     const/4 v0, 0x1
 
+    .line 8
     goto :goto_0
 
+    .line 9
     :cond_0
     const/4 v0, 0x0
 
+    .line 10
     :goto_0
     return v0
 .end method
@@ -642,19 +674,29 @@
 .method public static j()Z
     .locals 2
 
+    .line 1
     sget v0, Landroid/os/Build$VERSION;->SDK_INT:I
 
+    .line 2
+    .line 3
     const/16 v1, 0x1c
 
+    .line 4
+    .line 5
     if-lt v0, v1, :cond_0
 
+    .line 6
+    .line 7
     const/4 v0, 0x1
 
+    .line 8
     goto :goto_0
 
+    .line 9
     :cond_0
     const/4 v0, 0x0
 
+    .line 10
     :goto_0
     return v0
 .end method
@@ -662,19 +704,29 @@
 .method public static k()Z
     .locals 2
 
+    .line 1
     sget v0, Landroid/os/Build$VERSION;->SDK_INT:I
 
+    .line 2
+    .line 3
     const/16 v1, 0x1d
 
+    .line 4
+    .line 5
     if-lt v0, v1, :cond_0
 
+    .line 6
+    .line 7
     const/4 v0, 0x1
 
+    .line 8
     goto :goto_0
 
+    .line 9
     :cond_0
     const/4 v0, 0x0
 
+    .line 10
     :goto_0
     return v0
 .end method
@@ -682,19 +734,29 @@
 .method public static l()Z
     .locals 2
 
+    .line 1
     sget v0, Landroid/os/Build$VERSION;->SDK_INT:I
 
+    .line 2
+    .line 3
     const/16 v1, 0x21
 
+    .line 4
+    .line 5
     if-lt v0, v1, :cond_0
 
+    .line 6
+    .line 7
     const/4 v0, 0x1
 
+    .line 8
     goto :goto_0
 
+    .line 9
     :cond_0
     const/4 v0, 0x0
 
+    .line 10
     :goto_0
     return v0
 .end method
@@ -702,19 +764,29 @@
 .method public static m()Z
     .locals 2
 
+    .line 1
     sget v0, Landroid/os/Build$VERSION;->SDK_INT:I
 
+    .line 2
+    .line 3
     const/16 v1, 0x1f
 
+    .line 4
+    .line 5
     if-lt v0, v1, :cond_0
 
+    .line 6
+    .line 7
     const/4 v0, 0x1
 
+    .line 8
     goto :goto_0
 
+    .line 9
     :cond_0
     const/4 v0, 0x0
 
+    .line 10
     :goto_0
     return v0
 .end method

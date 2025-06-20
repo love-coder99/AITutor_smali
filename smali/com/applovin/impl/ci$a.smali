@@ -40,9 +40,9 @@
 .method public a()I
     .locals 1
 
+    .line 2
     iget-object v0, p0, Lcom/applovin/impl/ci$a;->a:[Lcom/applovin/impl/ci$b;
 
-    .line 2
     array-length v0, v0
 
     return v0
@@ -51,9 +51,9 @@
 .method public a(I)Lcom/applovin/impl/ci$b;
     .locals 1
 
+    .line 1
     iget-object v0, p0, Lcom/applovin/impl/ci$a;->a:[Lcom/applovin/impl/ci$b;
 
-    .line 1
     aget-object p1, v0, p1
 
     return-object p1

@@ -17,6 +17,14 @@
 .end method
 
 .method public abstract setExtraInfo(Ljava/lang/String;Ljava/lang/Object;)V
+    .param p1    # Ljava/lang/String;
+        .annotation build Landroidx/annotation/NonNull;
+        .end annotation
+    .end param
+    .param p2    # Ljava/lang/Object;
+        .annotation build Landroidx/annotation/Nullable;
+        .end annotation
+    .end param
 .end method
 
 .method public abstract show()V
@@ -25,5 +33,5 @@
 .method public abstract showAndRender(Lcom/applovin/sdk/AppLovinAd;)V
 .end method
 
-.method public abstract showAndRender(Lcom/applovin/sdk/AppLovinAd;Landroid/view/ViewGroup;Landroidx/lifecycle/p;)V
+.method public abstract showAndRender(Lcom/applovin/sdk/AppLovinAd;Landroid/view/ViewGroup;Landroidx/lifecycle/r;)V
 .end method

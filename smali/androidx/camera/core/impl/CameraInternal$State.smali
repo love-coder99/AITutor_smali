@@ -46,14 +46,14 @@
 
     .line 2
     .line 3
-    const/4 v1, 0x0
+    const-string v1, "RELEASED"
 
     .line 4
-    const-string v2, "RELEASED"
-
     .line 5
+    const/4 v2, 0x0
+
     .line 6
-    invoke-direct {v0, v1, v2, v1}, Landroidx/camera/core/impl/CameraInternal$State;-><init>(ILjava/lang/String;Z)V
+    invoke-direct {v0, v2, v1, v2}, Landroidx/camera/core/impl/CameraInternal$State;-><init>(ILjava/lang/String;Z)V
 
     .line 7
     .line 8
@@ -62,190 +62,190 @@
 
     .line 10
     .line 11
-    new-instance v2, Landroidx/camera/core/impl/CameraInternal$State;
+    new-instance v1, Landroidx/camera/core/impl/CameraInternal$State;
 
     .line 12
     .line 13
-    const/4 v3, 0x1
+    const-string v3, "RELEASING"
 
     .line 14
-    const-string v4, "RELEASING"
-
     .line 15
+    const/4 v4, 0x1
+
     .line 16
-    invoke-direct {v2, v3, v4, v3}, Landroidx/camera/core/impl/CameraInternal$State;-><init>(ILjava/lang/String;Z)V
+    invoke-direct {v1, v4, v3, v4}, Landroidx/camera/core/impl/CameraInternal$State;-><init>(ILjava/lang/String;Z)V
 
     .line 17
     .line 18
     .line 19
-    sput-object v2, Landroidx/camera/core/impl/CameraInternal$State;->RELEASING:Landroidx/camera/core/impl/CameraInternal$State;
+    sput-object v1, Landroidx/camera/core/impl/CameraInternal$State;->RELEASING:Landroidx/camera/core/impl/CameraInternal$State;
 
     .line 20
     .line 21
-    new-instance v4, Landroidx/camera/core/impl/CameraInternal$State;
+    new-instance v3, Landroidx/camera/core/impl/CameraInternal$State;
 
     .line 22
     .line 23
-    const/4 v5, 0x2
+    const-string v5, "CLOSED"
 
     .line 24
-    const-string v6, "CLOSED"
-
     .line 25
+    const/4 v6, 0x2
+
     .line 26
-    invoke-direct {v4, v5, v6, v1}, Landroidx/camera/core/impl/CameraInternal$State;-><init>(ILjava/lang/String;Z)V
+    invoke-direct {v3, v6, v5, v2}, Landroidx/camera/core/impl/CameraInternal$State;-><init>(ILjava/lang/String;Z)V
 
     .line 27
     .line 28
     .line 29
-    sput-object v4, Landroidx/camera/core/impl/CameraInternal$State;->CLOSED:Landroidx/camera/core/impl/CameraInternal$State;
+    sput-object v3, Landroidx/camera/core/impl/CameraInternal$State;->CLOSED:Landroidx/camera/core/impl/CameraInternal$State;
 
     .line 30
     .line 31
-    new-instance v6, Landroidx/camera/core/impl/CameraInternal$State;
+    new-instance v5, Landroidx/camera/core/impl/CameraInternal$State;
 
     .line 32
     .line 33
-    const/4 v7, 0x3
+    const-string v7, "PENDING_OPEN"
 
     .line 34
-    const-string v8, "PENDING_OPEN"
-
     .line 35
+    const/4 v8, 0x3
+
     .line 36
-    invoke-direct {v6, v7, v8, v1}, Landroidx/camera/core/impl/CameraInternal$State;-><init>(ILjava/lang/String;Z)V
+    invoke-direct {v5, v8, v7, v2}, Landroidx/camera/core/impl/CameraInternal$State;-><init>(ILjava/lang/String;Z)V
 
     .line 37
     .line 38
     .line 39
-    sput-object v6, Landroidx/camera/core/impl/CameraInternal$State;->PENDING_OPEN:Landroidx/camera/core/impl/CameraInternal$State;
+    sput-object v5, Landroidx/camera/core/impl/CameraInternal$State;->PENDING_OPEN:Landroidx/camera/core/impl/CameraInternal$State;
 
     .line 40
     .line 41
-    new-instance v8, Landroidx/camera/core/impl/CameraInternal$State;
+    new-instance v7, Landroidx/camera/core/impl/CameraInternal$State;
 
     .line 42
     .line 43
-    const/4 v9, 0x4
+    const-string v9, "CLOSING"
 
     .line 44
-    const-string v10, "CLOSING"
-
     .line 45
+    const/4 v10, 0x4
+
     .line 46
-    invoke-direct {v8, v9, v10, v3}, Landroidx/camera/core/impl/CameraInternal$State;-><init>(ILjava/lang/String;Z)V
+    invoke-direct {v7, v10, v9, v4}, Landroidx/camera/core/impl/CameraInternal$State;-><init>(ILjava/lang/String;Z)V
 
     .line 47
     .line 48
     .line 49
-    sput-object v8, Landroidx/camera/core/impl/CameraInternal$State;->CLOSING:Landroidx/camera/core/impl/CameraInternal$State;
+    sput-object v7, Landroidx/camera/core/impl/CameraInternal$State;->CLOSING:Landroidx/camera/core/impl/CameraInternal$State;
 
     .line 50
     .line 51
-    new-instance v10, Landroidx/camera/core/impl/CameraInternal$State;
+    new-instance v9, Landroidx/camera/core/impl/CameraInternal$State;
 
     .line 52
     .line 53
-    const/4 v11, 0x5
+    const-string v11, "OPENING"
 
     .line 54
-    const-string v12, "OPENING"
-
     .line 55
+    const/4 v12, 0x5
+
     .line 56
-    invoke-direct {v10, v11, v12, v3}, Landroidx/camera/core/impl/CameraInternal$State;-><init>(ILjava/lang/String;Z)V
+    invoke-direct {v9, v12, v11, v4}, Landroidx/camera/core/impl/CameraInternal$State;-><init>(ILjava/lang/String;Z)V
 
     .line 57
     .line 58
     .line 59
-    sput-object v10, Landroidx/camera/core/impl/CameraInternal$State;->OPENING:Landroidx/camera/core/impl/CameraInternal$State;
+    sput-object v9, Landroidx/camera/core/impl/CameraInternal$State;->OPENING:Landroidx/camera/core/impl/CameraInternal$State;
 
     .line 60
     .line 61
-    new-instance v12, Landroidx/camera/core/impl/CameraInternal$State;
+    new-instance v11, Landroidx/camera/core/impl/CameraInternal$State;
 
     .line 62
     .line 63
-    const/4 v13, 0x6
+    const-string v13, "OPEN"
 
     .line 64
-    const-string v14, "OPEN"
-
     .line 65
+    const/4 v14, 0x6
+
     .line 66
-    invoke-direct {v12, v13, v14, v3}, Landroidx/camera/core/impl/CameraInternal$State;-><init>(ILjava/lang/String;Z)V
+    invoke-direct {v11, v14, v13, v4}, Landroidx/camera/core/impl/CameraInternal$State;-><init>(ILjava/lang/String;Z)V
 
     .line 67
     .line 68
     .line 69
-    sput-object v12, Landroidx/camera/core/impl/CameraInternal$State;->OPEN:Landroidx/camera/core/impl/CameraInternal$State;
+    sput-object v11, Landroidx/camera/core/impl/CameraInternal$State;->OPEN:Landroidx/camera/core/impl/CameraInternal$State;
 
     .line 70
     .line 71
-    new-instance v14, Landroidx/camera/core/impl/CameraInternal$State;
+    new-instance v13, Landroidx/camera/core/impl/CameraInternal$State;
 
     .line 72
     .line 73
-    const/4 v15, 0x7
+    const-string v15, "CONFIGURED"
 
     .line 74
-    const-string v13, "CONFIGURED"
-
     .line 75
+    const/4 v14, 0x7
+
     .line 76
-    invoke-direct {v14, v15, v13, v3}, Landroidx/camera/core/impl/CameraInternal$State;-><init>(ILjava/lang/String;Z)V
+    invoke-direct {v13, v14, v15, v4}, Landroidx/camera/core/impl/CameraInternal$State;-><init>(ILjava/lang/String;Z)V
 
     .line 77
     .line 78
     .line 79
-    sput-object v14, Landroidx/camera/core/impl/CameraInternal$State;->CONFIGURED:Landroidx/camera/core/impl/CameraInternal$State;
+    sput-object v13, Landroidx/camera/core/impl/CameraInternal$State;->CONFIGURED:Landroidx/camera/core/impl/CameraInternal$State;
 
     .line 80
     .line 81
-    const/16 v13, 0x8
+    const/16 v15, 0x8
 
     .line 82
     .line 83
-    new-array v13, v13, [Landroidx/camera/core/impl/CameraInternal$State;
+    new-array v15, v15, [Landroidx/camera/core/impl/CameraInternal$State;
 
     .line 84
     .line 85
-    aput-object v0, v13, v1
+    aput-object v0, v15, v2
 
     .line 86
     .line 87
-    aput-object v2, v13, v3
+    aput-object v1, v15, v4
 
     .line 88
     .line 89
-    aput-object v4, v13, v5
+    aput-object v3, v15, v6
 
     .line 90
     .line 91
-    aput-object v6, v13, v7
+    aput-object v5, v15, v8
 
     .line 92
     .line 93
-    aput-object v8, v13, v9
+    aput-object v7, v15, v10
 
     .line 94
     .line 95
-    aput-object v10, v13, v11
+    aput-object v9, v15, v12
 
     .line 96
     .line 97
     const/4 v0, 0x6
 
     .line 98
-    aput-object v12, v13, v0
+    aput-object v11, v15, v0
 
     .line 99
     .line 100
-    aput-object v14, v13, v15
+    aput-object v13, v15, v14
 
     .line 101
     .line 102
-    sput-object v13, Landroidx/camera/core/impl/CameraInternal$State;->b:[Landroidx/camera/core/impl/CameraInternal$State;
+    sput-object v15, Landroidx/camera/core/impl/CameraInternal$State;->b:[Landroidx/camera/core/impl/CameraInternal$State;
 
     .line 103
     .line 104
@@ -319,7 +319,10 @@
 .method public holdsCameraSlot()Z
     .locals 1
 
+    .line 1
     iget-boolean v0, p0, Landroidx/camera/core/impl/CameraInternal$State;->mHoldsCameraSlot:Z
 
+    .line 2
+    .line 3
     return v0
 .end method

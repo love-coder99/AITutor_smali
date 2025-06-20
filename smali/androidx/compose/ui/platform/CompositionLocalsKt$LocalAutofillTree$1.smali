@@ -3,14 +3,14 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lzh/a;
+.implements Lka/a;
 
 
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "Lkotlin/jvm/internal/Lambda;",
-        "Lzh/a;"
+        "Lka/a;"
     }
 .end annotation
 
@@ -19,9 +19,9 @@
         "\u0000\u0008\n\u0002\u0018\u0002\n\u0002\u0008\u0003\u0010\u0003\u001a\u00020\u0000H\n\u00a2\u0006\u0004\u0008\u0001\u0010\u0002"
     }
     d2 = {
-        "Lm1/g;",
+        "Lq0/h;",
         "invoke",
-        "()Lm1/g;",
+        "()Lq0/h;",
         "<anonymous>"
     }
     k = 0x3
@@ -66,20 +66,20 @@
     .locals 1
 
     .line 1
-    invoke-virtual {p0}, Landroidx/compose/ui/platform/CompositionLocalsKt$LocalAutofillTree$1;->invoke()Lm1/g;
+    invoke-virtual {p0}, Landroidx/compose/ui/platform/CompositionLocalsKt$LocalAutofillTree$1;->invoke()Lq0/h;
 
     move-result-object v0
 
     return-object v0
 .end method
 
-.method public final invoke()Lm1/g;
+.method public final invoke()Lq0/h;
     .locals 1
 
+    .line 2
     const-string v0, "LocalAutofillTree"
 
-    .line 2
-    invoke-static {v0}, Landroidx/compose/ui/platform/i1;->b(Ljava/lang/String;)V
+    invoke-static {v0}, Landroidx/compose/ui/platform/Z;->b(Ljava/lang/String;)V
 
     const/4 v0, 0x0
 

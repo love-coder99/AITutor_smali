@@ -1,317 +1,131 @@
-.class public abstract synthetic Landroidx/compose/foundation/text/input/internal/j;
+.class public final synthetic Landroidx/compose/foundation/text/input/internal/j;
 .super Ljava/lang/Object;
 .source "SourceFile"
 
+# interfaces
+.implements Landroid/os/CancellationSignal$OnCancelListener;
+
+
+# instance fields
+.field public final synthetic a:I
+
+.field public final synthetic b:Ljava/lang/Object;
+
 
 # direct methods
-.method public static bridge synthetic A(Ljava/lang/Object;)Z
+.method public synthetic constructor <init>(Ljava/lang/Object;I)V
     .locals 0
 
     .line 1
-    instance-of p0, p0, Landroid/view/inputmethod/SelectGesture;
+    iput p2, p0, Landroidx/compose/foundation/text/input/internal/j;->a:I
 
-    return p0
-.end method
+    iput-object p1, p0, Landroidx/compose/foundation/text/input/internal/j;->b:Ljava/lang/Object;
 
-.method public static bridge synthetic B(Landroid/view/ViewConfiguration;)I
-    .locals 0
-
-    .line 1
-    invoke-virtual {p0}, Landroid/view/ViewConfiguration;->getScaledHandwritingSlop()I
-
-    move-result p0
-
-    return p0
-.end method
-
-.method public static bridge synthetic C(Landroid/adservices/topics/Topic;)J
-    .locals 2
-
-    .line 1
-    invoke-virtual {p0}, Landroid/adservices/topics/Topic;->getModelVersion()J
-
-    move-result-wide v0
-
-    return-wide v0
-.end method
-
-.method public static bridge synthetic D(Landroid/view/inputmethod/SelectRangeGesture;)Landroid/graphics/RectF;
-    .locals 0
-
-    .line 1
-    invoke-virtual {p0}, Landroid/view/inputmethod/SelectRangeGesture;->getSelectionEndArea()Landroid/graphics/RectF;
-
-    move-result-object p0
-
-    return-object p0
-.end method
-
-.method public static bridge synthetic a(Landroid/adservices/topics/Topic;)I
-    .locals 0
-
-    .line 1
-    invoke-virtual {p0}, Landroid/adservices/topics/Topic;->getTopicId()I
-
-    move-result p0
-
-    return p0
-.end method
-
-.method public static bridge synthetic b(Landroid/view/ViewConfiguration;)I
-    .locals 0
-
-    .line 1
-    invoke-virtual {p0}, Landroid/view/ViewConfiguration;->getScaledHandwritingGestureLineMargin()I
-
-    move-result p0
-
-    return p0
-.end method
-
-.method public static bridge synthetic c(Landroid/view/inputmethod/DeleteRangeGesture;)I
-    .locals 0
-
-    .line 1
-    invoke-virtual {p0}, Landroid/view/inputmethod/DeleteRangeGesture;->getGranularity()I
-
-    move-result p0
-
-    return p0
-.end method
-
-.method public static bridge synthetic d(Landroid/view/inputmethod/SelectGesture;)I
-    .locals 0
-
-    .line 1
-    invoke-virtual {p0}, Landroid/view/inputmethod/SelectGesture;->getGranularity()I
-
-    move-result p0
-
-    return p0
-.end method
-
-.method public static bridge synthetic e(Landroid/view/inputmethod/SelectRangeGesture;)I
-    .locals 0
-
-    .line 1
-    invoke-virtual {p0}, Landroid/view/inputmethod/SelectRangeGesture;->getGranularity()I
-
-    move-result p0
-
-    return p0
-.end method
-
-.method public static bridge synthetic f(Landroid/adservices/topics/Topic;)J
-    .locals 2
-
-    .line 1
-    invoke-virtual {p0}, Landroid/adservices/topics/Topic;->getTaxonomyVersion()J
-
-    move-result-wide v0
-
-    return-wide v0
-.end method
-
-.method public static synthetic g()Landroid/adservices/topics/GetTopicsRequest$Builder;
-    .locals 1
-
-    .line 1
-    new-instance v0, Landroid/adservices/topics/GetTopicsRequest$Builder;
-
-    invoke-direct {v0}, Landroid/adservices/topics/GetTopicsRequest$Builder;-><init>()V
-
-    return-object v0
-.end method
-
-.method public static bridge synthetic h(Landroid/adservices/topics/GetTopicsRequest$Builder;Ljava/lang/String;)Landroid/adservices/topics/GetTopicsRequest$Builder;
-    .locals 0
-
-    .line 1
-    invoke-virtual {p0, p1}, Landroid/adservices/topics/GetTopicsRequest$Builder;->setAdsSdkName(Ljava/lang/String;)Landroid/adservices/topics/GetTopicsRequest$Builder;
-
-    move-result-object p0
-
-    return-object p0
-.end method
-
-.method public static bridge synthetic i(Landroid/adservices/topics/GetTopicsRequest$Builder;Z)Landroid/adservices/topics/GetTopicsRequest$Builder;
-    .locals 0
-
-    .line 1
-    invoke-virtual {p0, p1}, Landroid/adservices/topics/GetTopicsRequest$Builder;->setShouldRecordObservation(Z)Landroid/adservices/topics/GetTopicsRequest$Builder;
-
-    move-result-object p0
-
-    return-object p0
-.end method
-
-.method public static bridge synthetic j(Landroid/adservices/topics/GetTopicsRequest$Builder;)Landroid/adservices/topics/GetTopicsRequest;
-    .locals 0
-
-    .line 1
-    invoke-virtual {p0}, Landroid/adservices/topics/GetTopicsRequest$Builder;->build()Landroid/adservices/topics/GetTopicsRequest;
-
-    move-result-object p0
-
-    return-object p0
-.end method
-
-.method public static bridge synthetic k(Ljava/lang/Object;)Landroid/adservices/topics/GetTopicsResponse;
-    .locals 0
-
-    .line 1
-    check-cast p0, Landroid/adservices/topics/GetTopicsResponse;
-
-    return-object p0
-.end method
-
-.method public static bridge synthetic l(Ljava/lang/Object;)Landroid/adservices/topics/Topic;
-    .locals 0
-
-    .line 1
-    check-cast p0, Landroid/adservices/topics/Topic;
-
-    return-object p0
-.end method
-
-.method public static bridge synthetic m(Ljava/lang/Object;)Landroid/adservices/topics/TopicsManager;
-    .locals 0
-
-    .line 1
-    check-cast p0, Landroid/adservices/topics/TopicsManager;
-
-    return-object p0
-.end method
-
-.method public static bridge synthetic n(Landroid/view/inputmethod/JoinOrSplitGesture;)Landroid/graphics/PointF;
-    .locals 0
-
-    .line 1
-    invoke-virtual {p0}, Landroid/view/inputmethod/JoinOrSplitGesture;->getJoinOrSplitPoint()Landroid/graphics/PointF;
-
-    move-result-object p0
-
-    return-object p0
-.end method
-
-.method public static bridge synthetic o(Landroid/view/inputmethod/DeleteRangeGesture;)Landroid/graphics/RectF;
-    .locals 0
-
-    .line 1
-    invoke-virtual {p0}, Landroid/view/inputmethod/DeleteRangeGesture;->getDeletionEndArea()Landroid/graphics/RectF;
-
-    move-result-object p0
-
-    return-object p0
-.end method
-
-.method public static bridge synthetic p(Landroid/view/inputmethod/SelectGesture;)Landroid/graphics/RectF;
-    .locals 0
-
-    .line 1
-    invoke-virtual {p0}, Landroid/view/inputmethod/SelectGesture;->getSelectionArea()Landroid/graphics/RectF;
-
-    move-result-object p0
-
-    return-object p0
-.end method
-
-.method public static bridge synthetic q(Landroid/view/inputmethod/SelectRangeGesture;)Landroid/graphics/RectF;
-    .locals 0
-
-    .line 1
-    invoke-virtual {p0}, Landroid/view/inputmethod/SelectRangeGesture;->getSelectionStartArea()Landroid/graphics/RectF;
-
-    move-result-object p0
-
-    return-object p0
-.end method
-
-.method public static bridge synthetic r(Ljava/lang/Object;)Landroid/view/inputmethod/HandwritingGesture;
-    .locals 0
-
-    .line 1
-    check-cast p0, Landroid/view/inputmethod/HandwritingGesture;
-
-    return-object p0
-.end method
-
-.method public static bridge synthetic s()Ljava/lang/Class;
-    .locals 1
-
-    .line 1
-    const-class v0, Landroid/adservices/topics/TopicsManager;
-
-    return-object v0
-.end method
-
-.method public static bridge synthetic t(Landroid/view/inputmethod/HandwritingGesture;)Ljava/lang/String;
-    .locals 0
-
-    .line 1
-    invoke-virtual {p0}, Landroid/view/inputmethod/HandwritingGesture;->getFallbackText()Ljava/lang/String;
-
-    move-result-object p0
-
-    return-object p0
-.end method
-
-.method public static bridge synthetic u(Landroid/view/inputmethod/InsertGesture;)Ljava/lang/String;
-    .locals 0
-
-    .line 1
-    invoke-virtual {p0}, Landroid/view/inputmethod/InsertGesture;->getTextToInsert()Ljava/lang/String;
-
-    move-result-object p0
-
-    return-object p0
-.end method
-
-.method public static bridge synthetic v(Landroid/adservices/topics/GetTopicsResponse;)Ljava/util/List;
-    .locals 0
-
-    .line 1
-    invoke-virtual {p0}, Landroid/adservices/topics/GetTopicsResponse;->getTopics()Ljava/util/List;
-
-    move-result-object p0
-
-    return-object p0
-.end method
-
-.method public static bridge synthetic w(Landroid/adservices/topics/TopicsManager;Landroid/adservices/topics/GetTopicsRequest;Ljava/util/concurrent/Executor;Landroid/os/OutcomeReceiver;)V
-    .locals 0
-
-    .line 1
-    invoke-virtual {p0, p1, p2, p3}, Landroid/adservices/topics/TopicsManager;->getTopics(Landroid/adservices/topics/GetTopicsRequest;Ljava/util/concurrent/Executor;Landroid/os/OutcomeReceiver;)V
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
 .end method
 
-.method public static bridge synthetic x(Landroid/adservices/topics/TopicsManager;Landroid/adservices/topics/GetTopicsRequest;Ll/a;Landroid/os/OutcomeReceiver;)V
-    .locals 0
+
+# virtual methods
+.method public final onCancel()V
+    .locals 4
 
     .line 1
-    invoke-virtual {p0, p1, p2, p3}, Landroid/adservices/topics/TopicsManager;->getTopics(Landroid/adservices/topics/GetTopicsRequest;Ljava/util/concurrent/Executor;Landroid/os/OutcomeReceiver;)V
+    iget v0, p0, Landroidx/compose/foundation/text/input/internal/j;->a:I
 
+    .line 2
+    .line 3
+    packed-switch v0, :pswitch_data_0
+
+    .line 4
+    .line 5
+    .line 6
+    iget-object v0, p0, Landroidx/compose/foundation/text/input/internal/j;->b:Ljava/lang/Object;
+
+    .line 7
+    .line 8
+    check-cast v0, Lkotlinx/coroutines/r0;
+
+    .line 9
+    .line 10
+    const/4 v1, 0x0
+
+    .line 11
+    invoke-virtual {v0, v1}, Lkotlinx/coroutines/i0;->b(Ljava/util/concurrent/CancellationException;)V
+
+    .line 12
+    .line 13
+    .line 14
     return-void
-.end method
 
-.method public static bridge synthetic y(Landroid/view/inputmethod/InputConnection;Landroid/view/inputmethod/HandwritingGesture;Ljava/util/concurrent/Executor;Ljava/util/function/IntConsumer;)V
-    .locals 0
+    .line 15
+    :pswitch_0
+    iget-object v0, p0, Landroidx/compose/foundation/text/input/internal/j;->b:Ljava/lang/Object;
 
-    .line 1
-    invoke-interface {p0, p1, p2, p3}, Landroid/view/inputmethod/InputConnection;->performHandwritingGesture(Landroid/view/inputmethod/HandwritingGesture;Ljava/util/concurrent/Executor;Ljava/util/function/IntConsumer;)V
+    .line 16
+    .line 17
+    check-cast v0, Landroidx/compose/foundation/text/selection/x;
 
+    .line 18
+    .line 19
+    if-eqz v0, :cond_2
+
+    .line 20
+    .line 21
+    iget-object v1, v0, Landroidx/compose/foundation/text/selection/x;->d:Landroidx/compose/foundation/text/s;
+
+    .line 22
+    .line 23
+    if-nez v1, :cond_0
+
+    .line 24
+    .line 25
+    goto :goto_0
+
+    .line 26
+    :cond_0
+    sget-wide v2, Landroidx/compose/ui/text/H;->b:J
+
+    .line 27
+    .line 28
+    invoke-virtual {v1, v2, v3}, Landroidx/compose/foundation/text/s;->e(J)V
+
+    .line 29
+    .line 30
+    .line 31
+    :goto_0
+    iget-object v0, v0, Landroidx/compose/foundation/text/selection/x;->d:Landroidx/compose/foundation/text/s;
+
+    .line 32
+    .line 33
+    if-nez v0, :cond_1
+
+    .line 34
+    .line 35
+    goto :goto_1
+
+    .line 36
+    :cond_1
+    sget-wide v1, Landroidx/compose/ui/text/H;->b:J
+
+    .line 37
+    .line 38
+    invoke-virtual {v0, v1, v2}, Landroidx/compose/foundation/text/s;->f(J)V
+
+    .line 39
+    .line 40
+    .line 41
+    :cond_2
+    :goto_1
     return-void
-.end method
 
-.method public static bridge synthetic z(Landroid/view/inputmethod/InputConnection;Landroid/view/inputmethod/PreviewableHandwritingGesture;Landroid/os/CancellationSignal;)Z
-    .locals 0
+    .line 42
+    nop
 
-    .line 1
-    invoke-interface {p0, p1, p2}, Landroid/view/inputmethod/InputConnection;->previewHandwritingGesture(Landroid/view/inputmethod/PreviewableHandwritingGesture;Landroid/os/CancellationSignal;)Z
-
-    move-result p0
-
-    return p0
+    .line 43
+    :pswitch_data_0
+    .packed-switch 0x0
+        :pswitch_0
+    .end packed-switch
 .end method

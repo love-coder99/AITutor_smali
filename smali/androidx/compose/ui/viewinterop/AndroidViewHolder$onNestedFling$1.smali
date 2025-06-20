@@ -3,35 +3,11 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lzh/e;
+.implements Lka/e;
 
 
 # annotations
-.annotation system Ldalvik/annotation/Signature;
-    value = {
-        "Lkotlin/coroutines/jvm/internal/SuspendLambda;",
-        "Lzh/e;"
-    }
-.end annotation
-
-.annotation runtime Lkotlin/Metadata;
-    d1 = {
-        "\u0000\n\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\u0010\u0002\u001a\u00020\u0001*\u00020\u0000H\u008a@"
-    }
-    d2 = {
-        "Lkotlinx/coroutines/w;",
-        "Lqh/r;",
-        "<anonymous>"
-    }
-    k = 0x3
-    mv = {
-        0x1,
-        0x8,
-        0x0
-    }
-.end annotation
-
-.annotation runtime Lth/c;
+.annotation runtime Lca/c;
     c = "androidx.compose.ui.viewinterop.AndroidViewHolder$onNestedFling$1"
     f = "AndroidViewHolder.android.kt"
     l = {
@@ -39,6 +15,31 @@
         0x23a
     }
     m = "invokeSuspend"
+.end annotation
+
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "Lkotlin/coroutines/jvm/internal/SuspendLambda;",
+        "Lka/e;"
+    }
+.end annotation
+
+.annotation runtime Lkotlin/Metadata;
+    d1 = {
+        "\u0000\u000c\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0008\u0002\u0010\u0002\u001a\u00020\u0001*\u00020\u0000H\u008a@\u00a2\u0006\u0004\u0008\u0002\u0010\u0003"
+    }
+    d2 = {
+        "Lkotlinx/coroutines/u;",
+        "LX9/j;",
+        "<anonymous>",
+        "(Lkotlinx/coroutines/u;)V"
+    }
+    k = 0x3
+    mv = {
+        0x1,
+        0x8,
+        0x0
+    }
 .end annotation
 
 
@@ -91,7 +92,7 @@
             "Lkotlin/coroutines/Continuation<",
             "*>;)",
             "Lkotlin/coroutines/Continuation<",
-            "Lqh/r;",
+            "LX9/j;",
             ">;"
         }
     .end annotation
@@ -117,26 +118,26 @@
     .locals 0
 
     .line 1
-    check-cast p1, Lkotlinx/coroutines/w;
+    check-cast p1, Lkotlinx/coroutines/u;
 
     check-cast p2, Lkotlin/coroutines/Continuation;
 
-    invoke-virtual {p0, p1, p2}, Landroidx/compose/ui/viewinterop/AndroidViewHolder$onNestedFling$1;->invoke(Lkotlinx/coroutines/w;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
+    invoke-virtual {p0, p1, p2}, Landroidx/compose/ui/viewinterop/AndroidViewHolder$onNestedFling$1;->invoke(Lkotlinx/coroutines/u;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
 
     move-result-object p1
 
     return-object p1
 .end method
 
-.method public final invoke(Lkotlinx/coroutines/w;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
+.method public final invoke(Lkotlinx/coroutines/u;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
     .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
-            "Lkotlinx/coroutines/w;",
+            "Lkotlinx/coroutines/u;",
             "Lkotlin/coroutines/Continuation<",
             "-",
-            "Lqh/r;",
+            "LX9/j;",
             ">;)",
             "Ljava/lang/Object;"
         }
@@ -149,7 +150,7 @@
 
     check-cast p1, Landroidx/compose/ui/viewinterop/AndroidViewHolder$onNestedFling$1;
 
-    sget-object p2, Lqh/r;->a:Lqh/r;
+    sget-object p2, LX9/j;->a:LX9/j;
 
     invoke-virtual {p1, p2}, Landroidx/compose/ui/viewinterop/AndroidViewHolder$onNestedFling$1;->invokeSuspend(Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -240,22 +241,22 @@
 
     .line 36
     .line 37
-    const-wide/16 v5, 0x0
+    iget-wide v7, p0, Landroidx/compose/ui/viewinterop/AndroidViewHolder$onNestedFling$1;->$viewVelocity:J
 
     .line 38
     .line 39
-    iget-wide v7, p0, Landroidx/compose/ui/viewinterop/AndroidViewHolder$onNestedFling$1;->$viewVelocity:J
+    iput v3, p0, Landroidx/compose/ui/viewinterop/AndroidViewHolder$onNestedFling$1;->label:I
 
     .line 40
     .line 41
-    iput v3, p0, Landroidx/compose/ui/viewinterop/AndroidViewHolder$onNestedFling$1;->label:I
+    const-wide/16 v5, 0x0
 
     .line 42
     .line 43
     move-object v9, p0
 
     .line 44
-    invoke-virtual/range {v4 .. v9}, Landroidx/compose/ui/input/nestedscroll/b;->a(JJLkotlin/coroutines/Continuation;)Ljava/lang/Object;
+    invoke-virtual/range {v4 .. v9}, Landroidx/compose/ui/input/nestedscroll/b;->a(JJLkotlin/coroutines/jvm/internal/ContinuationImpl;)Ljava/lang/Object;
 
     .line 45
     .line 46
@@ -283,18 +284,18 @@
 
     .line 56
     .line 57
-    const-wide/16 v6, 0x0
+    iput v2, p0, Landroidx/compose/ui/viewinterop/AndroidViewHolder$onNestedFling$1;->label:I
 
     .line 58
     .line 59
-    iput v2, p0, Landroidx/compose/ui/viewinterop/AndroidViewHolder$onNestedFling$1;->label:I
+    const-wide/16 v6, 0x0
 
     .line 60
     .line 61
     move-object v8, p0
 
     .line 62
-    invoke-virtual/range {v3 .. v8}, Landroidx/compose/ui/input/nestedscroll/b;->a(JJLkotlin/coroutines/Continuation;)Ljava/lang/Object;
+    invoke-virtual/range {v3 .. v8}, Landroidx/compose/ui/input/nestedscroll/b;->a(JJLkotlin/coroutines/jvm/internal/ContinuationImpl;)Ljava/lang/Object;
 
     .line 63
     .line 64
@@ -311,7 +312,7 @@
     .line 69
     :cond_4
     :goto_1
-    sget-object p1, Lqh/r;->a:Lqh/r;
+    sget-object p1, LX9/j;->a:LX9/j;
 
     .line 70
     .line 71

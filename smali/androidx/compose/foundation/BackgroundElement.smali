@@ -1,12 +1,12 @@
 .class final Landroidx/compose/foundation/BackgroundElement;
-.super Landroidx/compose/ui/node/w0;
+.super Landroidx/compose/ui/node/V;
 .source "SourceFile"
 
 
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
-        "Landroidx/compose/ui/node/w0;"
+        "Landroidx/compose/ui/node/V;"
     }
 .end annotation
 
@@ -16,7 +16,7 @@
     }
     d2 = {
         "Landroidx/compose/foundation/BackgroundElement;",
-        "Landroidx/compose/ui/node/w0;",
+        "Landroidx/compose/ui/node/V;",
         "Landroidx/compose/foundation/e;",
         "foundation_release"
     }
@@ -26,21 +26,22 @@
         0x8,
         0x0
     }
+    xi = 0x30
 .end annotation
 
 
 # instance fields
-.field public final c:J
+.field public final a:J
 
-.field public final d:Landroidx/compose/ui/graphics/r;
+.field public final b:Landroidx/compose/ui/graphics/r;
 
-.field public final e:F
+.field public final c:F
 
-.field public final f:Landroidx/compose/ui/graphics/z0;
+.field public final d:Landroidx/compose/ui/graphics/Z;
 
 
 # direct methods
-.method public constructor <init>(JLandroidx/compose/ui/graphics/k0;FLandroidx/compose/ui/graphics/z0;I)V
+.method public constructor <init>(JLandroidx/compose/ui/graphics/L;FLandroidx/compose/ui/graphics/Z;I)V
     .locals 1
 
     .line 1
@@ -74,19 +75,19 @@
     .line 13
     .line 14
     .line 15
-    iput-wide p1, p0, Landroidx/compose/foundation/BackgroundElement;->c:J
+    iput-wide p1, p0, Landroidx/compose/foundation/BackgroundElement;->a:J
 
     .line 16
     .line 17
-    iput-object p3, p0, Landroidx/compose/foundation/BackgroundElement;->d:Landroidx/compose/ui/graphics/r;
+    iput-object p3, p0, Landroidx/compose/foundation/BackgroundElement;->b:Landroidx/compose/ui/graphics/r;
 
     .line 18
     .line 19
-    iput p4, p0, Landroidx/compose/foundation/BackgroundElement;->e:F
+    iput p4, p0, Landroidx/compose/foundation/BackgroundElement;->c:F
 
     .line 20
     .line 21
-    iput-object p5, p0, Landroidx/compose/foundation/BackgroundElement;->f:Landroidx/compose/ui/graphics/z0;
+    iput-object p5, p0, Landroidx/compose/foundation/BackgroundElement;->d:Landroidx/compose/ui/graphics/Z;
 
     .line 22
     .line 23
@@ -130,11 +131,11 @@
 
     .line 13
     :cond_1
-    iget-wide v1, p0, Landroidx/compose/foundation/BackgroundElement;->c:J
+    iget-wide v1, p0, Landroidx/compose/foundation/BackgroundElement;->a:J
 
     .line 14
     .line 15
-    iget-wide v3, p1, Landroidx/compose/foundation/BackgroundElement;->c:J
+    iget-wide v3, p1, Landroidx/compose/foundation/BackgroundElement;->a:J
 
     .line 16
     .line 17
@@ -150,15 +151,15 @@
 
     .line 22
     .line 23
-    iget-object v1, p0, Landroidx/compose/foundation/BackgroundElement;->d:Landroidx/compose/ui/graphics/r;
+    iget-object v1, p0, Landroidx/compose/foundation/BackgroundElement;->b:Landroidx/compose/ui/graphics/r;
 
     .line 24
     .line 25
-    iget-object v2, p1, Landroidx/compose/foundation/BackgroundElement;->d:Landroidx/compose/ui/graphics/r;
+    iget-object v2, p1, Landroidx/compose/foundation/BackgroundElement;->b:Landroidx/compose/ui/graphics/r;
 
     .line 26
     .line 27
-    invoke-static {v1, v2}, Lrb/h;->d(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v1, v2}, Lkotlin/jvm/internal/h;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     .line 28
     .line 29
@@ -170,11 +171,11 @@
 
     .line 32
     .line 33
-    iget v1, p0, Landroidx/compose/foundation/BackgroundElement;->e:F
+    iget v1, p0, Landroidx/compose/foundation/BackgroundElement;->c:F
 
     .line 34
     .line 35
-    iget v2, p1, Landroidx/compose/foundation/BackgroundElement;->e:F
+    iget v2, p1, Landroidx/compose/foundation/BackgroundElement;->c:F
 
     .line 36
     .line 37
@@ -186,15 +187,15 @@
 
     .line 40
     .line 41
-    iget-object v1, p0, Landroidx/compose/foundation/BackgroundElement;->f:Landroidx/compose/ui/graphics/z0;
+    iget-object v1, p0, Landroidx/compose/foundation/BackgroundElement;->d:Landroidx/compose/ui/graphics/Z;
 
     .line 42
     .line 43
-    iget-object p1, p1, Landroidx/compose/foundation/BackgroundElement;->f:Landroidx/compose/ui/graphics/z0;
+    iget-object p1, p1, Landroidx/compose/foundation/BackgroundElement;->d:Landroidx/compose/ui/graphics/Z;
 
     .line 44
     .line 45
-    invoke-static {v1, p1}, Lrb/h;->d(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v1, p1}, Lkotlin/jvm/internal/h;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     .line 46
     .line 47
@@ -217,7 +218,7 @@
     .locals 3
 
     .line 1
-    iget-wide v0, p0, Landroidx/compose/foundation/BackgroundElement;->c:J
+    iget-wide v0, p0, Landroidx/compose/foundation/BackgroundElement;->a:J
 
     .line 2
     .line 3
@@ -237,7 +238,7 @@
 
     .line 10
     .line 11
-    iget-object v2, p0, Landroidx/compose/foundation/BackgroundElement;->d:Landroidx/compose/ui/graphics/r;
+    iget-object v2, p0, Landroidx/compose/foundation/BackgroundElement;->b:Landroidx/compose/ui/graphics/r;
 
     .line 12
     .line 13
@@ -268,11 +269,11 @@
 
     .line 23
     .line 24
-    iget v2, p0, Landroidx/compose/foundation/BackgroundElement;->e:F
+    iget v2, p0, Landroidx/compose/foundation/BackgroundElement;->c:F
 
     .line 25
     .line 26
-    invoke-static {v2, v0, v1}, Landroid/support/v4/media/session/a;->x(FII)I
+    invoke-static {v2, v0, v1}, Landroidx/appcompat/view/menu/F;->v(FII)I
 
     .line 27
     .line 28
@@ -280,7 +281,7 @@
     move-result v0
 
     .line 30
-    iget-object v1, p0, Landroidx/compose/foundation/BackgroundElement;->f:Landroidx/compose/ui/graphics/z0;
+    iget-object v1, p0, Landroidx/compose/foundation/BackgroundElement;->d:Landroidx/compose/ui/graphics/Z;
 
     .line 31
     .line 32
@@ -311,7 +312,7 @@
     .line 4
     .line 5
     .line 6
-    iget-wide v1, p0, Landroidx/compose/foundation/BackgroundElement;->c:J
+    iget-wide v1, p0, Landroidx/compose/foundation/BackgroundElement;->a:J
 
     .line 7
     .line 8
@@ -319,7 +320,7 @@
 
     .line 9
     .line 10
-    iget-object v1, p0, Landroidx/compose/foundation/BackgroundElement;->d:Landroidx/compose/ui/graphics/r;
+    iget-object v1, p0, Landroidx/compose/foundation/BackgroundElement;->b:Landroidx/compose/ui/graphics/r;
 
     .line 11
     .line 12
@@ -327,7 +328,7 @@
 
     .line 13
     .line 14
-    iget v1, p0, Landroidx/compose/foundation/BackgroundElement;->e:F
+    iget v1, p0, Landroidx/compose/foundation/BackgroundElement;->c:F
 
     .line 15
     .line 16
@@ -335,11 +336,11 @@
 
     .line 17
     .line 18
-    iget-object v1, p0, Landroidx/compose/foundation/BackgroundElement;->f:Landroidx/compose/ui/graphics/z0;
+    iget-object v1, p0, Landroidx/compose/foundation/BackgroundElement;->d:Landroidx/compose/ui/graphics/Z;
 
     .line 19
     .line 20
-    iput-object v1, v0, Landroidx/compose/foundation/e;->s:Landroidx/compose/ui/graphics/z0;
+    iput-object v1, v0, Landroidx/compose/foundation/e;->s:Landroidx/compose/ui/graphics/Z;
 
     .line 21
     .line 22
@@ -365,7 +366,7 @@
 
     .line 2
     .line 3
-    iget-wide v0, p0, Landroidx/compose/foundation/BackgroundElement;->c:J
+    iget-wide v0, p0, Landroidx/compose/foundation/BackgroundElement;->a:J
 
     .line 4
     .line 5
@@ -373,7 +374,7 @@
 
     .line 6
     .line 7
-    iget-object v0, p0, Landroidx/compose/foundation/BackgroundElement;->d:Landroidx/compose/ui/graphics/r;
+    iget-object v0, p0, Landroidx/compose/foundation/BackgroundElement;->b:Landroidx/compose/ui/graphics/r;
 
     .line 8
     .line 9
@@ -381,7 +382,7 @@
 
     .line 10
     .line 11
-    iget v0, p0, Landroidx/compose/foundation/BackgroundElement;->e:F
+    iget v0, p0, Landroidx/compose/foundation/BackgroundElement;->c:F
 
     .line 12
     .line 13
@@ -389,11 +390,11 @@
 
     .line 14
     .line 15
-    iget-object v0, p0, Landroidx/compose/foundation/BackgroundElement;->f:Landroidx/compose/ui/graphics/z0;
+    iget-object v0, p0, Landroidx/compose/foundation/BackgroundElement;->d:Landroidx/compose/ui/graphics/Z;
 
     .line 16
     .line 17
-    iput-object v0, p1, Landroidx/compose/foundation/e;->s:Landroidx/compose/ui/graphics/z0;
+    iput-object v0, p1, Landroidx/compose/foundation/e;->s:Landroidx/compose/ui/graphics/Z;
 
     .line 18
     .line 19

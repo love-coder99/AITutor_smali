@@ -159,6 +159,8 @@
 
 .method public static a(Ljava/lang/String;II)Ljava/io/File;
     .locals 5
+    .annotation build Landroidx/annotation/NonNull;
+    .end annotation
 
     .line 21
     new-instance v0, Ljava/io/File;
@@ -229,6 +231,8 @@
 
 .method public static varargs a(Lorg/json/JSONObject;[Ljava/lang/String;)Ljava/lang/String;
     .locals 3
+    .annotation build Landroidx/annotation/Nullable;
+    .end annotation
 
     .line 31
     invoke-static {p0, p1}, Lcom/apm/insight/a;->b(Lorg/json/JSONObject;[Ljava/lang/String;)Lorg/json/JSONObject;
@@ -281,6 +285,8 @@
 
 .method public static a([Ljava/lang/String;)Lorg/json/JSONArray;
     .locals 4
+    .annotation build Landroidx/annotation/Nullable;
+    .end annotation
 
     if-nez p0, :cond_0
 
@@ -318,11 +324,12 @@
 .method public static a(Lcom/apm/insight/entity/a;Lcom/apm/insight/entity/Header;Lcom/apm/insight/CrashType;)V
     .locals 7
 
+    .line 53
     const-string v0, "_"
 
     if-eqz p0, :cond_3
 
-    .line 53
+    .line 54
     invoke-virtual {p0}, Lcom/apm/insight/entity/a;->c()Lorg/json/JSONObject;
 
     move-result-object p0
@@ -333,15 +340,15 @@
 
     goto :goto_2
 
+    .line 55
     :cond_0
     const-string v1, "crash_time"
 
-    .line 54
     invoke-virtual {p0, v1}, Lorg/json/JSONObject;->optLong(Ljava/lang/String;)J
 
     move-result-wide v1
 
-    .line 55
+    .line 56
     invoke-static {}, Lcom/apm/insight/e;->c()Lcom/apm/insight/runtime/h;
 
     move-result-object v3
@@ -356,7 +363,7 @@
 
     if-lez v6, :cond_3
 
-    .line 56
+    .line 57
     invoke-virtual {p2}, Lcom/apm/insight/CrashType;->getName()Ljava/lang/String;
 
     move-result-object v4
@@ -367,7 +374,7 @@
 
     if-nez v4, :cond_3
 
-    .line 57
+    .line 58
     :try_start_0
     new-instance v4, Ljava/lang/StringBuilder;
 
@@ -391,11 +398,12 @@
     :try_end_0
     .catch Lorg/json/JSONException; {:try_start_0 .. :try_end_0} :catch_0
 
+    .line 59
     const-string v0, "unique_key"
 
     if-eqz p1, :cond_2
 
-    .line 58
+    .line 60
     :try_start_1
     invoke-virtual {p1}, Lcom/apm/insight/entity/Header;->f()Lorg/json/JSONObject;
 
@@ -403,7 +411,7 @@
 
     if-eqz p0, :cond_1
 
-    .line 59
+    .line 61
     invoke-virtual {p0, v0, p2}, Lorg/json/JSONObject;->put(Ljava/lang/String;Ljava/lang/Object;)Lorg/json/JSONObject;
 
     goto :goto_0
@@ -417,7 +425,7 @@
     :goto_0
     return-void
 
-    .line 60
+    .line 62
     :cond_2
     invoke-virtual {p0, v0, p2}, Lorg/json/JSONObject;->put(Ljava/lang/String;Ljava/lang/Object;)Lorg/json/JSONObject;
     :try_end_1
@@ -425,7 +433,7 @@
 
     return-void
 
-    .line 61
+    .line 63
     :goto_1
     invoke-virtual {p0}, Ljava/lang/Throwable;->printStackTrace()V
 
@@ -476,46 +484,46 @@
 .end method
 
 .method public static a(Ljava/lang/String;)V
-    .locals 2
+    .locals 4
 
-    const/4 v0, 0x4
-
-    new-array v0, v0, [Ljava/lang/Object;
-
-    const/4 v1, 0x0
-
-    aput-object p0, v0, v1
-
-    const/16 p0, 0x1ed
+    const/16 v0, 0x1ed
 
     .line 28
-    invoke-static {p0}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+    invoke-static {v0}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
-    move-result-object p0
+    move-result-object v0
 
-    const/4 v1, 0x1
+    const/4 v1, -0x1
 
-    aput-object p0, v0, v1
+    invoke-static {v1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
-    const/4 p0, -0x1
+    move-result-object v1
 
-    invoke-static {p0}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+    const/4 v2, 0x4
 
-    move-result-object p0
+    new-array v2, v2, [Ljava/lang/Object;
 
-    const/4 v1, 0x2
+    const/4 v3, 0x0
 
-    aput-object p0, v0, v1
+    aput-object p0, v2, v3
 
-    const/4 v1, 0x3
+    const/4 p0, 0x1
 
-    aput-object p0, v0, v1
+    aput-object v0, v2, p0
+
+    const/4 p0, 0x2
+
+    aput-object v1, v2, p0
+
+    const/4 p0, 0x3
+
+    aput-object v1, v2, p0
 
     const-string p0, "android.os.FileUtils"
 
-    const-string v1, "setPermissions"
+    const-string v0, "setPermissions"
 
-    invoke-static {p0, v1, v0}, Lcom/apm/insight/h/a;->a(Ljava/lang/String;Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-static {p0, v0, v2}, Lcom/apm/insight/h/a;->a(Ljava/lang/String;Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/Object;
 
     return-void
 .end method
@@ -794,14 +802,17 @@
 
 .method public static varargs b(Lorg/json/JSONObject;[Ljava/lang/String;)Lorg/json/JSONObject;
     .locals 4
+    .annotation build Landroidx/annotation/Nullable;
+    .end annotation
 
     const/4 v0, 0x0
 
+    .line 23
     const-string v1, "JSONUtil"
 
     if-nez p0, :cond_0
 
-    .line 23
+    .line 24
     new-instance p0, Ljava/lang/RuntimeException;
 
     invoke-direct {p0}, Ljava/lang/RuntimeException;-><init>()V
@@ -815,7 +826,7 @@
     :cond_0
     const/4 v2, 0x0
 
-    .line 24
+    .line 25
     :goto_0
     array-length v3, p1
 
@@ -823,7 +834,7 @@
 
     if-ge v2, v3, :cond_2
 
-    .line 25
+    .line 26
     aget-object v3, p1, v2
 
     invoke-virtual {p0, v3}, Lorg/json/JSONObject;->optJSONObject(Ljava/lang/String;)Lorg/json/JSONObject;
@@ -832,7 +843,7 @@
 
     if-nez p0, :cond_1
 
-    .line 26
+    .line 27
     new-instance p0, Ljava/lang/StringBuilder;
 
     const-string v3, "err get json: not found node:"
@@ -863,7 +874,7 @@
 .method public static b(Ljava/lang/Object;)V
     .locals 1
 
-    .line 27
+    .line 28
     invoke-static {}, Lcom/apm/insight/e;->i()Lcom/apm/insight/runtime/ConfigManager;
 
     move-result-object v0
@@ -874,7 +885,7 @@
 
     if-eqz v0, :cond_0
 
-    .line 28
+    .line 29
     invoke-static {p0}, Ljava/lang/String;->valueOf(Ljava/lang/Object;)Ljava/lang/String;
 
     :cond_0
@@ -884,7 +895,7 @@
 .method public static b(Ljava/lang/Throwable;)V
     .locals 0
 
-    .line 29
+    .line 30
     invoke-static {}, Lcom/apm/insight/e;->i()Lcom/apm/insight/runtime/ConfigManager;
 
     move-result-object p0
@@ -897,7 +908,7 @@
 .method public static b(Ljava/lang/String;)Z
     .locals 0
 
-    .line 30
+    .line 31
     :try_start_0
     invoke-static {p0}, Ljava/lang/System;->loadLibrary(Ljava/lang/String;)V
     :try_end_0
@@ -969,9 +980,9 @@
 
     move-result-object v5
 
+    .line 11
     const-string v6, "_"
 
-    .line 11
     invoke-virtual {v5, v6}, Ljava/lang/String;->split(Ljava/lang/String;)[Ljava/lang/String;
 
     move-result-object v5
@@ -1020,9 +1031,9 @@
 .method private c(Lcom/apm/insight/CrashType;Lcom/apm/insight/AttachUserData;)V
     .locals 2
 
+    .line 1
     iget-object v0, p0, Lcom/apm/insight/a;->a:Ljava/util/Map;
 
-    .line 1
     invoke-interface {v0, p1}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object v0
@@ -1034,17 +1045,17 @@
 
     invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
 
+    .line 3
     iget-object v1, p0, Lcom/apm/insight/a;->a:Ljava/util/Map;
 
-    .line 3
     invoke-interface {v1, p1, v0}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     goto :goto_0
 
+    .line 4
     :cond_0
     iget-object v0, p0, Lcom/apm/insight/a;->a:Ljava/util/Map;
 
-    .line 4
     invoke-interface {v0, p1}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object p1
@@ -1118,9 +1129,9 @@
 .method private d(Lcom/apm/insight/CrashType;Lcom/apm/insight/AttachUserData;)V
     .locals 2
 
+    .line 1
     iget-object v0, p0, Lcom/apm/insight/a;->b:Ljava/util/Map;
 
-    .line 1
     invoke-interface {v0, p1}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object v0
@@ -1132,17 +1143,17 @@
 
     invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
 
+    .line 3
     iget-object v1, p0, Lcom/apm/insight/a;->b:Ljava/util/Map;
 
-    .line 3
     invoke-interface {v1, p1, v0}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     goto :goto_0
 
+    .line 4
     :cond_0
     iget-object v0, p0, Lcom/apm/insight/a;->b:Ljava/util/Map;
 
-    .line 4
     invoke-interface {v0, p1}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object p1
@@ -1350,9 +1361,9 @@
 .method private e(Lcom/apm/insight/CrashType;Lcom/apm/insight/AttachUserData;)V
     .locals 1
 
+    .line 1
     iget-object v0, p0, Lcom/apm/insight/a;->a:Ljava/util/Map;
 
-    .line 1
     invoke-interface {v0, p1}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object p1
@@ -1419,9 +1430,9 @@
 .method private f(Lcom/apm/insight/CrashType;Lcom/apm/insight/AttachUserData;)V
     .locals 1
 
+    .line 1
     iget-object v0, p0, Lcom/apm/insight/a;->b:Ljava/util/Map;
 
-    .line 1
     invoke-interface {v0, p1}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object p1
@@ -1439,6 +1450,8 @@
 
 .method private static g()Ljava/io/File;
     .locals 3
+    .annotation build Landroidx/annotation/NonNull;
+    .end annotation
 
     .line 1
     new-instance v0, Ljava/io/File;
@@ -1526,6 +1539,8 @@
 
 .method private static h()Ljava/io/File;
     .locals 3
+    .annotation build Landroidx/annotation/NonNull;
+    .end annotation
 
     .line 1
     new-instance v0, Ljava/io/File;
@@ -1789,6 +1804,9 @@
 # virtual methods
 .method public final a(Lcom/apm/insight/CrashType;)Ljava/util/List;
     .locals 1
+    .annotation build Landroidx/annotation/Nullable;
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -1800,9 +1818,9 @@
         }
     .end annotation
 
+    .line 17
     iget-object v0, p0, Lcom/apm/insight/a;->a:Ljava/util/Map;
 
-    .line 19
     invoke-interface {v0, p1}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object p1
@@ -1824,7 +1842,7 @@
         }
     .end annotation
 
-    .line 1
+    .line 19
     iget-object v0, p0, Lcom/apm/insight/a;->c:Ljava/util/Map;
 
     return-object v0
@@ -1833,44 +1851,44 @@
 .method public final a(Lcom/apm/insight/AttachUserData;Lcom/apm/insight/CrashType;)V
     .locals 1
 
-    .line 3
+    .line 1
     sget-object v0, Lcom/apm/insight/CrashType;->ALL:Lcom/apm/insight/CrashType;
 
     if-ne p2, v0, :cond_0
 
-    .line 4
+    .line 2
     sget-object p2, Lcom/apm/insight/CrashType;->LAUNCH:Lcom/apm/insight/CrashType;
 
     invoke-direct {p0, p2, p1}, Lcom/apm/insight/a;->c(Lcom/apm/insight/CrashType;Lcom/apm/insight/AttachUserData;)V
 
-    .line 5
+    .line 3
     sget-object p2, Lcom/apm/insight/CrashType;->JAVA:Lcom/apm/insight/CrashType;
 
     invoke-direct {p0, p2, p1}, Lcom/apm/insight/a;->c(Lcom/apm/insight/CrashType;Lcom/apm/insight/AttachUserData;)V
 
-    .line 6
+    .line 4
     sget-object p2, Lcom/apm/insight/CrashType;->CUSTOM_JAVA:Lcom/apm/insight/CrashType;
 
     invoke-direct {p0, p2, p1}, Lcom/apm/insight/a;->c(Lcom/apm/insight/CrashType;Lcom/apm/insight/AttachUserData;)V
 
-    .line 7
+    .line 5
     sget-object p2, Lcom/apm/insight/CrashType;->NATIVE:Lcom/apm/insight/CrashType;
 
     invoke-direct {p0, p2, p1}, Lcom/apm/insight/a;->c(Lcom/apm/insight/CrashType;Lcom/apm/insight/AttachUserData;)V
 
-    .line 8
+    .line 6
     sget-object p2, Lcom/apm/insight/CrashType;->ANR:Lcom/apm/insight/CrashType;
 
     invoke-direct {p0, p2, p1}, Lcom/apm/insight/a;->c(Lcom/apm/insight/CrashType;Lcom/apm/insight/AttachUserData;)V
 
-    .line 9
+    .line 7
     sget-object p2, Lcom/apm/insight/CrashType;->DART:Lcom/apm/insight/CrashType;
 
     invoke-direct {p0, p2, p1}, Lcom/apm/insight/a;->c(Lcom/apm/insight/CrashType;Lcom/apm/insight/AttachUserData;)V
 
     return-void
 
-    .line 10
+    .line 8
     :cond_0
     invoke-direct {p0, p2, p1}, Lcom/apm/insight/a;->c(Lcom/apm/insight/CrashType;Lcom/apm/insight/AttachUserData;)V
 
@@ -1880,44 +1898,44 @@
 .method public final a(Lcom/apm/insight/CrashType;Lcom/apm/insight/AttachUserData;)V
     .locals 1
 
-    .line 11
+    .line 9
     sget-object v0, Lcom/apm/insight/CrashType;->ALL:Lcom/apm/insight/CrashType;
 
     if-ne p1, v0, :cond_0
 
-    .line 12
+    .line 10
     sget-object p1, Lcom/apm/insight/CrashType;->LAUNCH:Lcom/apm/insight/CrashType;
 
     invoke-direct {p0, p1, p2}, Lcom/apm/insight/a;->e(Lcom/apm/insight/CrashType;Lcom/apm/insight/AttachUserData;)V
 
-    .line 13
+    .line 11
     sget-object p1, Lcom/apm/insight/CrashType;->JAVA:Lcom/apm/insight/CrashType;
 
     invoke-direct {p0, p1, p2}, Lcom/apm/insight/a;->e(Lcom/apm/insight/CrashType;Lcom/apm/insight/AttachUserData;)V
 
-    .line 14
+    .line 12
     sget-object p1, Lcom/apm/insight/CrashType;->CUSTOM_JAVA:Lcom/apm/insight/CrashType;
 
     invoke-direct {p0, p1, p2}, Lcom/apm/insight/a;->e(Lcom/apm/insight/CrashType;Lcom/apm/insight/AttachUserData;)V
 
-    .line 15
+    .line 13
     sget-object p1, Lcom/apm/insight/CrashType;->NATIVE:Lcom/apm/insight/CrashType;
 
     invoke-direct {p0, p1, p2}, Lcom/apm/insight/a;->e(Lcom/apm/insight/CrashType;Lcom/apm/insight/AttachUserData;)V
 
-    .line 16
+    .line 14
     sget-object p1, Lcom/apm/insight/CrashType;->ANR:Lcom/apm/insight/CrashType;
 
     invoke-direct {p0, p1, p2}, Lcom/apm/insight/a;->e(Lcom/apm/insight/CrashType;Lcom/apm/insight/AttachUserData;)V
 
-    .line 17
+    .line 15
     sget-object p1, Lcom/apm/insight/CrashType;->DART:Lcom/apm/insight/CrashType;
 
     invoke-direct {p0, p1, p2}, Lcom/apm/insight/a;->e(Lcom/apm/insight/CrashType;Lcom/apm/insight/AttachUserData;)V
 
     return-void
 
-    .line 18
+    .line 16
     :cond_0
     invoke-direct {p0, p1, p2}, Lcom/apm/insight/a;->e(Lcom/apm/insight/CrashType;Lcom/apm/insight/AttachUserData;)V
 
@@ -1927,7 +1945,7 @@
 .method public final a(Lcom/apm/insight/ICrashFilter;)V
     .locals 0
 
-    .line 2
+    .line 20
     iput-object p1, p0, Lcom/apm/insight/a;->d:Lcom/apm/insight/ICrashFilter;
 
     return-void
@@ -1947,9 +1965,9 @@
         }
     .end annotation
 
+    .line 18
     iget-object v0, p0, Lcom/apm/insight/a;->c:Ljava/util/Map;
 
-    .line 20
     invoke-interface {v0, p1}, Ljava/util/Map;->putAll(Ljava/util/Map;)V
 
     return-void
@@ -1957,8 +1975,10 @@
 
 .method public final b()Lcom/apm/insight/ICrashFilter;
     .locals 1
+    .annotation build Landroidx/annotation/Nullable;
+    .end annotation
 
-    .line 1
+    .line 18
     iget-object v0, p0, Lcom/apm/insight/a;->d:Lcom/apm/insight/ICrashFilter;
 
     return-object v0
@@ -1966,6 +1986,9 @@
 
 .method public final b(Lcom/apm/insight/CrashType;)Ljava/util/List;
     .locals 1
+    .annotation build Landroidx/annotation/Nullable;
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -1977,9 +2000,9 @@
         }
     .end annotation
 
+    .line 17
     iget-object v0, p0, Lcom/apm/insight/a;->b:Ljava/util/Map;
 
-    .line 18
     invoke-interface {v0, p1}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object p1
@@ -1992,44 +2015,44 @@
 .method public final b(Lcom/apm/insight/AttachUserData;Lcom/apm/insight/CrashType;)V
     .locals 1
 
-    .line 2
+    .line 1
     sget-object v0, Lcom/apm/insight/CrashType;->ALL:Lcom/apm/insight/CrashType;
 
     if-ne p2, v0, :cond_0
 
-    .line 3
+    .line 2
     sget-object p2, Lcom/apm/insight/CrashType;->LAUNCH:Lcom/apm/insight/CrashType;
 
     invoke-direct {p0, p2, p1}, Lcom/apm/insight/a;->d(Lcom/apm/insight/CrashType;Lcom/apm/insight/AttachUserData;)V
 
-    .line 4
+    .line 3
     sget-object p2, Lcom/apm/insight/CrashType;->JAVA:Lcom/apm/insight/CrashType;
 
     invoke-direct {p0, p2, p1}, Lcom/apm/insight/a;->d(Lcom/apm/insight/CrashType;Lcom/apm/insight/AttachUserData;)V
 
-    .line 5
+    .line 4
     sget-object p2, Lcom/apm/insight/CrashType;->CUSTOM_JAVA:Lcom/apm/insight/CrashType;
 
     invoke-direct {p0, p2, p1}, Lcom/apm/insight/a;->d(Lcom/apm/insight/CrashType;Lcom/apm/insight/AttachUserData;)V
 
-    .line 6
+    .line 5
     sget-object p2, Lcom/apm/insight/CrashType;->NATIVE:Lcom/apm/insight/CrashType;
 
     invoke-direct {p0, p2, p1}, Lcom/apm/insight/a;->d(Lcom/apm/insight/CrashType;Lcom/apm/insight/AttachUserData;)V
 
-    .line 7
+    .line 6
     sget-object p2, Lcom/apm/insight/CrashType;->ANR:Lcom/apm/insight/CrashType;
 
     invoke-direct {p0, p2, p1}, Lcom/apm/insight/a;->d(Lcom/apm/insight/CrashType;Lcom/apm/insight/AttachUserData;)V
 
-    .line 8
+    .line 7
     sget-object p2, Lcom/apm/insight/CrashType;->DART:Lcom/apm/insight/CrashType;
 
     invoke-direct {p0, p2, p1}, Lcom/apm/insight/a;->d(Lcom/apm/insight/CrashType;Lcom/apm/insight/AttachUserData;)V
 
     return-void
 
-    .line 9
+    .line 8
     :cond_0
     invoke-direct {p0, p2, p1}, Lcom/apm/insight/a;->d(Lcom/apm/insight/CrashType;Lcom/apm/insight/AttachUserData;)V
 
@@ -2039,44 +2062,44 @@
 .method public final b(Lcom/apm/insight/CrashType;Lcom/apm/insight/AttachUserData;)V
     .locals 1
 
-    .line 10
+    .line 9
     sget-object v0, Lcom/apm/insight/CrashType;->ALL:Lcom/apm/insight/CrashType;
 
     if-ne p1, v0, :cond_0
 
-    .line 11
+    .line 10
     sget-object p1, Lcom/apm/insight/CrashType;->LAUNCH:Lcom/apm/insight/CrashType;
 
     invoke-direct {p0, p1, p2}, Lcom/apm/insight/a;->f(Lcom/apm/insight/CrashType;Lcom/apm/insight/AttachUserData;)V
 
-    .line 12
+    .line 11
     sget-object p1, Lcom/apm/insight/CrashType;->JAVA:Lcom/apm/insight/CrashType;
 
     invoke-direct {p0, p1, p2}, Lcom/apm/insight/a;->f(Lcom/apm/insight/CrashType;Lcom/apm/insight/AttachUserData;)V
 
-    .line 13
+    .line 12
     sget-object p1, Lcom/apm/insight/CrashType;->CUSTOM_JAVA:Lcom/apm/insight/CrashType;
 
     invoke-direct {p0, p1, p2}, Lcom/apm/insight/a;->f(Lcom/apm/insight/CrashType;Lcom/apm/insight/AttachUserData;)V
 
-    .line 14
+    .line 13
     sget-object p1, Lcom/apm/insight/CrashType;->NATIVE:Lcom/apm/insight/CrashType;
 
     invoke-direct {p0, p1, p2}, Lcom/apm/insight/a;->f(Lcom/apm/insight/CrashType;Lcom/apm/insight/AttachUserData;)V
 
-    .line 15
+    .line 14
     sget-object p1, Lcom/apm/insight/CrashType;->ANR:Lcom/apm/insight/CrashType;
 
     invoke-direct {p0, p1, p2}, Lcom/apm/insight/a;->f(Lcom/apm/insight/CrashType;Lcom/apm/insight/AttachUserData;)V
 
-    .line 16
+    .line 15
     sget-object p1, Lcom/apm/insight/CrashType;->DART:Lcom/apm/insight/CrashType;
 
     invoke-direct {p0, p1, p2}, Lcom/apm/insight/a;->f(Lcom/apm/insight/CrashType;Lcom/apm/insight/AttachUserData;)V
 
     return-void
 
-    .line 17
+    .line 16
     :cond_0
     invoke-direct {p0, p1, p2}, Lcom/apm/insight/a;->f(Lcom/apm/insight/CrashType;Lcom/apm/insight/AttachUserData;)V
 

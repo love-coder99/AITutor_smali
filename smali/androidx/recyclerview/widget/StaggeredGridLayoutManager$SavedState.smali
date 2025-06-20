@@ -42,7 +42,7 @@
 
 .field public h:[I
 
-.field public i:Ljava/util/List;
+.field public i:Ljava/util/ArrayList;
 
 .field public j:Z
 
@@ -56,7 +56,7 @@
     .locals 1
 
     .line 1
-    new-instance v0, Landroidx/recyclerview/widget/p1;
+    new-instance v0, Landroidx/recyclerview/widget/k0;
 
     .line 2
     .line 3
@@ -197,7 +197,7 @@
     .line 52
     .line 53
     .line 54
-    iget-object p2, p0, Landroidx/recyclerview/widget/StaggeredGridLayoutManager$SavedState;->i:Ljava/util/List;
+    iget-object p2, p0, Landroidx/recyclerview/widget/StaggeredGridLayoutManager$SavedState;->i:Ljava/util/ArrayList;
 
     .line 55
     .line 56

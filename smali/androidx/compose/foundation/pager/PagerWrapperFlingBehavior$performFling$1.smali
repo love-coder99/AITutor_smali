@@ -4,6 +4,15 @@
 
 
 # annotations
+.annotation runtime Lca/c;
+    c = "androidx.compose.foundation.pager.PagerWrapperFlingBehavior"
+    f = "LazyLayoutPager.kt"
+    l = {
+        0x17f
+    }
+    m = "performFling"
+.end annotation
+
 .annotation runtime Lkotlin/Metadata;
     k = 0x3
     mv = {
@@ -14,31 +23,22 @@
     xi = 0x30
 .end annotation
 
-.annotation runtime Lth/c;
-    c = "androidx.compose.foundation.pager.PagerWrapperFlingBehavior"
-    f = "LazyLayoutPager.kt"
-    l = {
-        0x17f
-    }
-    m = "performFling"
-.end annotation
-
 
 # instance fields
 .field label:I
 
 .field synthetic result:Ljava/lang/Object;
 
-.field final synthetic this$0:Landroidx/compose/foundation/pager/x;
+.field final synthetic this$0:Landroidx/compose/foundation/pager/r;
 
 
 # direct methods
-.method public constructor <init>(Landroidx/compose/foundation/pager/x;Lkotlin/coroutines/Continuation;)V
+.method public constructor <init>(Landroidx/compose/foundation/pager/r;Lkotlin/coroutines/Continuation;)V
     .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
-            "Landroidx/compose/foundation/pager/x;",
+            "Landroidx/compose/foundation/pager/r;",
             "Lkotlin/coroutines/Continuation<",
             "-",
             "Landroidx/compose/foundation/pager/PagerWrapperFlingBehavior$performFling$1;",
@@ -46,7 +46,7 @@
         }
     .end annotation
 
-    iput-object p1, p0, Landroidx/compose/foundation/pager/PagerWrapperFlingBehavior$performFling$1;->this$0:Landroidx/compose/foundation/pager/x;
+    iput-object p1, p0, Landroidx/compose/foundation/pager/PagerWrapperFlingBehavior$performFling$1;->this$0:Landroidx/compose/foundation/pager/r;
 
     invoke-direct {p0, p2}, Lkotlin/coroutines/jvm/internal/ContinuationImpl;-><init>(Lkotlin/coroutines/Continuation;)V
 
@@ -68,13 +68,13 @@
 
     iput p1, p0, Landroidx/compose/foundation/pager/PagerWrapperFlingBehavior$performFling$1;->label:I
 
-    iget-object p1, p0, Landroidx/compose/foundation/pager/PagerWrapperFlingBehavior$performFling$1;->this$0:Landroidx/compose/foundation/pager/x;
+    iget-object p1, p0, Landroidx/compose/foundation/pager/PagerWrapperFlingBehavior$performFling$1;->this$0:Landroidx/compose/foundation/pager/r;
 
     const/4 v0, 0x0
 
     const/4 v1, 0x0
 
-    invoke-virtual {p1, v0, v1, p0}, Landroidx/compose/foundation/pager/x;->a(Landroidx/compose/foundation/gestures/j0;FLkotlin/coroutines/Continuation;)Ljava/lang/Object;
+    invoke-virtual {p1, v0, v1, p0}, Landroidx/compose/foundation/pager/r;->a(Landroidx/compose/foundation/gestures/L;FLkotlin/coroutines/Continuation;)Ljava/lang/Object;
 
     move-result-object p1
 

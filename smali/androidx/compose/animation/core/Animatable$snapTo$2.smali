@@ -3,27 +3,35 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lzh/c;
+.implements Lka/c;
 
 
 # annotations
+.annotation runtime Lca/c;
+    c = "androidx.compose.animation.core.Animatable$snapTo$2"
+    f = "Animatable.kt"
+    l = {}
+    m = "invokeSuspend"
+.end annotation
+
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "Lkotlin/coroutines/jvm/internal/SuspendLambda;",
-        "Lzh/c;"
+        "Lka/c;"
     }
 .end annotation
 
 .annotation runtime Lkotlin/Metadata;
     d1 = {
-        "\u0000\u000e\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\u0010\u0004\u001a\u00020\u0003\"\u0004\u0008\u0000\u0010\u0000\"\u0008\u0008\u0001\u0010\u0002*\u00020\u0001H\u008a@"
+        "\u0000\u0010\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0008\u0002\u0010\u0004\u001a\u00020\u0003\"\u0004\u0008\u0000\u0010\u0000\"\u0008\u0008\u0001\u0010\u0002*\u00020\u0001H\u008a@\u00a2\u0006\u0004\u0008\u0004\u0010\u0005"
     }
     d2 = {
         "T",
-        "Landroidx/compose/animation/core/m;",
+        "Landroidx/compose/animation/core/l;",
         "V",
-        "Lqh/r;",
-        "<anonymous>"
+        "LX9/j;",
+        "<anonymous>",
+        "()V"
     }
     k = 0x3
     mv = {
@@ -31,13 +39,6 @@
         0x8,
         0x0
     }
-.end annotation
-
-.annotation runtime Lth/c;
-    c = "androidx.compose.animation.core.Animatable$snapTo$2"
-    f = "Animatable.kt"
-    l = {}
-    m = "invokeSuspend"
 .end annotation
 
 
@@ -97,7 +98,7 @@
             "Lkotlin/coroutines/Continuation<",
             "*>;)",
             "Lkotlin/coroutines/Continuation<",
-            "Lqh/r;",
+            "LX9/j;",
             ">;"
         }
     .end annotation
@@ -133,7 +134,7 @@
             "(",
             "Lkotlin/coroutines/Continuation<",
             "-",
-            "Lqh/r;",
+            "LX9/j;",
             ">;)",
             "Ljava/lang/Object;"
         }
@@ -146,7 +147,7 @@
 
     check-cast p1, Landroidx/compose/animation/core/Animatable$snapTo$2;
 
-    sget-object v0, Lqh/r;->a:Lqh/r;
+    sget-object v0, LX9/j;->a:LX9/j;
 
     invoke-virtual {p1, v0}, Landroidx/compose/animation/core/Animatable$snapTo$2;->invokeSuspend(Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -205,15 +206,15 @@
 
     .line 24
     .line 25
-    iget-object v0, v0, Landroidx/compose/animation/core/a;->c:Landroidx/compose/animation/core/h;
+    iget-object v0, v0, Landroidx/compose/animation/core/a;->c:Landroidx/compose/animation/core/g;
 
     .line 26
     .line 27
-    iget-object v0, v0, Landroidx/compose/animation/core/h;->c:Landroidx/compose/runtime/ParcelableSnapshotMutableState;
+    iget-object v0, v0, Landroidx/compose/animation/core/g;->c:Landroidx/compose/runtime/ParcelableSnapshotMutableState;
 
     .line 28
     .line 29
-    invoke-virtual {v0, p1}, Landroidx/compose/runtime/t2;->setValue(Ljava/lang/Object;)V
+    invoke-virtual {v0, p1}, Landroidx/compose/runtime/ParcelableSnapshotMutableState;->setValue(Ljava/lang/Object;)V
 
     .line 30
     .line 31
@@ -226,12 +227,12 @@
 
     .line 35
     .line 36
-    invoke-virtual {v0, p1}, Landroidx/compose/runtime/t2;->setValue(Ljava/lang/Object;)V
+    invoke-virtual {v0, p1}, Landroidx/compose/runtime/ParcelableSnapshotMutableState;->setValue(Ljava/lang/Object;)V
 
     .line 37
     .line 38
     .line 39
-    sget-object p1, Lqh/r;->a:Lqh/r;
+    sget-object p1, LX9/j;->a:LX9/j;
 
     .line 40
     .line 41

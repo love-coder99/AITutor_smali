@@ -3,14 +3,14 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lzh/c;
+.implements Lka/c;
 
 
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "Lkotlin/jvm/internal/Lambda;",
-        "Lzh/c;"
+        "Lka/c;"
     }
 .end annotation
 
@@ -21,12 +21,12 @@
     d2 = {
         "S",
         "T",
-        "Landroidx/compose/animation/core/m;",
+        "Landroidx/compose/animation/core/l;",
         "V",
-        "Landroidx/compose/runtime/p0;",
-        "Landroidx/compose/runtime/o0;",
+        "Landroidx/compose/runtime/H;",
+        "Landroidx/compose/runtime/G;",
         "invoke",
-        "(Landroidx/compose/runtime/p0;)Landroidx/compose/runtime/o0;",
+        "(Landroidx/compose/runtime/H;)Landroidx/compose/runtime/G;",
         "<anonymous>"
     }
     k = 0x3
@@ -39,38 +39,38 @@
 
 
 # instance fields
-.field final synthetic $this_createTransitionAnimation:Landroidx/compose/animation/core/e1;
+.field final synthetic $this_createTransitionAnimation:Landroidx/compose/animation/core/Z;
     .annotation system Ldalvik/annotation/Signature;
         value = {
-            "Landroidx/compose/animation/core/e1;"
+            "Landroidx/compose/animation/core/Z;"
         }
     .end annotation
 .end field
 
-.field final synthetic $transitionAnimation:Landroidx/compose/animation/core/c1;
+.field final synthetic $transitionAnimation:Landroidx/compose/animation/core/X;
     .annotation system Ldalvik/annotation/Signature;
         value = {
-            "Landroidx/compose/animation/core/c1;"
+            "Landroidx/compose/animation/core/X;"
         }
     .end annotation
 .end field
 
 
 # direct methods
-.method public constructor <init>(Landroidx/compose/animation/core/e1;Landroidx/compose/animation/core/c1;)V
+.method public constructor <init>(Landroidx/compose/animation/core/Z;Landroidx/compose/animation/core/X;)V
     .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
-            "Landroidx/compose/animation/core/e1;",
-            "Landroidx/compose/animation/core/c1;",
+            "Landroidx/compose/animation/core/Z;",
+            "Landroidx/compose/animation/core/X;",
             ")V"
         }
     .end annotation
 
-    iput-object p1, p0, Landroidx/compose/animation/core/TransitionKt$createTransitionAnimation$1$1;->$this_createTransitionAnimation:Landroidx/compose/animation/core/e1;
+    iput-object p1, p0, Landroidx/compose/animation/core/TransitionKt$createTransitionAnimation$1$1;->$this_createTransitionAnimation:Landroidx/compose/animation/core/Z;
 
-    iput-object p2, p0, Landroidx/compose/animation/core/TransitionKt$createTransitionAnimation$1$1;->$transitionAnimation:Landroidx/compose/animation/core/c1;
+    iput-object p2, p0, Landroidx/compose/animation/core/TransitionKt$createTransitionAnimation$1$1;->$transitionAnimation:Landroidx/compose/animation/core/X;
 
     const/4 p1, 0x1
 
@@ -81,29 +81,31 @@
 
 
 # virtual methods
-.method public final invoke(Landroidx/compose/runtime/p0;)Landroidx/compose/runtime/o0;
+.method public final invoke(Landroidx/compose/runtime/H;)Landroidx/compose/runtime/G;
     .locals 3
 
-    iget-object p1, p0, Landroidx/compose/animation/core/TransitionKt$createTransitionAnimation$1$1;->$this_createTransitionAnimation:Landroidx/compose/animation/core/e1;
-
-    iget-object v0, p0, Landroidx/compose/animation/core/TransitionKt$createTransitionAnimation$1$1;->$transitionAnimation:Landroidx/compose/animation/core/c1;
-
-    .line 1
-    iget-object p1, p1, Landroidx/compose/animation/core/e1;->i:Landroidx/compose/runtime/snapshots/p;
-
     .line 2
-    invoke-virtual {p1, v0}, Landroidx/compose/runtime/snapshots/p;->add(Ljava/lang/Object;)Z
+    iget-object p1, p0, Landroidx/compose/animation/core/TransitionKt$createTransitionAnimation$1$1;->$this_createTransitionAnimation:Landroidx/compose/animation/core/Z;
 
-    iget-object p1, p0, Landroidx/compose/animation/core/TransitionKt$createTransitionAnimation$1$1;->$this_createTransitionAnimation:Landroidx/compose/animation/core/e1;
-
-    iget-object v0, p0, Landroidx/compose/animation/core/TransitionKt$createTransitionAnimation$1$1;->$transitionAnimation:Landroidx/compose/animation/core/c1;
+    iget-object v0, p0, Landroidx/compose/animation/core/TransitionKt$createTransitionAnimation$1$1;->$transitionAnimation:Landroidx/compose/animation/core/X;
 
     .line 3
-    new-instance v1, Landroidx/compose/animation/core/h0;
+    iget-object p1, p1, Landroidx/compose/animation/core/Z;->i:Landroidx/compose/runtime/snapshots/n;
+
+    .line 4
+    invoke-virtual {p1, v0}, Landroidx/compose/runtime/snapshots/n;->add(Ljava/lang/Object;)Z
+
+    .line 5
+    iget-object p1, p0, Landroidx/compose/animation/core/TransitionKt$createTransitionAnimation$1$1;->$this_createTransitionAnimation:Landroidx/compose/animation/core/Z;
+
+    iget-object v0, p0, Landroidx/compose/animation/core/TransitionKt$createTransitionAnimation$1$1;->$transitionAnimation:Landroidx/compose/animation/core/X;
+
+    .line 6
+    new-instance v1, Landroidx/compose/animation/core/D;
 
     const/4 v2, 0x3
 
-    invoke-direct {v1, p1, v2, v0}, Landroidx/compose/animation/core/h0;-><init>(Ljava/lang/Object;ILjava/lang/Object;)V
+    invoke-direct {v1, p1, v2, v0}, Landroidx/compose/animation/core/D;-><init>(Ljava/lang/Object;ILjava/lang/Object;)V
 
     return-object v1
 .end method
@@ -111,10 +113,10 @@
 .method public bridge synthetic invoke(Ljava/lang/Object;)Ljava/lang/Object;
     .locals 0
 
-    .line 4
-    check-cast p1, Landroidx/compose/runtime/p0;
+    .line 1
+    check-cast p1, Landroidx/compose/runtime/H;
 
-    invoke-virtual {p0, p1}, Landroidx/compose/animation/core/TransitionKt$createTransitionAnimation$1$1;->invoke(Landroidx/compose/runtime/p0;)Landroidx/compose/runtime/o0;
+    invoke-virtual {p0, p1}, Landroidx/compose/animation/core/TransitionKt$createTransitionAnimation$1$1;->invoke(Landroidx/compose/runtime/H;)Landroidx/compose/runtime/G;
 
     move-result-object p1
 

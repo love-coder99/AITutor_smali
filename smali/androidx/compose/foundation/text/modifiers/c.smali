@@ -22,7 +22,7 @@
 
     .line 4
     .line 5
-    invoke-static {v1, v0}, Lkotlin/text/o;->l0(ILjava/lang/String;)Ljava/lang/String;
+    invoke-static {v0, v1}, Lkotlin/text/t;->R(Ljava/lang/String;I)Ljava/lang/String;
 
     .line 6
     .line 7

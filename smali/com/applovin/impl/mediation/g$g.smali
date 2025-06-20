@@ -24,9 +24,10 @@
 .method private constructor <init>(Lcom/applovin/impl/mediation/g;)V
     .locals 2
 
+    .line 2
     iput-object p1, p0, Lcom/applovin/impl/mediation/g$g;->i:Lcom/applovin/impl/mediation/g;
 
-    .line 2
+    .line 3
     invoke-static {p1}, Lcom/applovin/impl/mediation/g;->k(Lcom/applovin/impl/mediation/g;)Lcom/applovin/impl/sdk/j;
 
     move-result-object v0
@@ -35,7 +36,7 @@
 
     invoke-direct {p0, v1, v0}, Lcom/applovin/impl/yl;-><init>(Ljava/lang/String;Lcom/applovin/impl/sdk/j;)V
 
-    .line 3
+    .line 4
     new-instance v0, Ljava/lang/ref/WeakReference;
 
     invoke-static {p1}, Lcom/applovin/impl/mediation/g;->j(Lcom/applovin/impl/mediation/g;)Lcom/applovin/impl/mediation/g$d;

@@ -17,10 +17,16 @@
 .field protected adListener:Lcom/applovin/mediation/MaxAdListener;
 
 .field protected adReviewListener:Lcom/applovin/mediation/MaxAdReviewListener;
+    .annotation build Landroidx/annotation/Nullable;
+    .end annotation
+.end field
 
 .field protected final adUnitId:Ljava/lang/String;
 
 .field protected expirationListener:Lcom/applovin/mediation/MaxAdExpirationListener;
+    .annotation build Landroidx/annotation/Nullable;
+    .end annotation
+.end field
 
 .field protected final extraParameters:Ljava/util/Map;
     .annotation system Ldalvik/annotation/Signature;
@@ -47,8 +53,14 @@
 .field protected final logger:Lcom/applovin/impl/sdk/n;
 
 .field protected requestListener:Lcom/applovin/mediation/MaxAdRequestListener;
+    .annotation build Landroidx/annotation/Nullable;
+    .end annotation
+.end field
 
 .field protected revenueListener:Lcom/applovin/mediation/MaxAdRevenueListener;
+    .annotation build Landroidx/annotation/Nullable;
+    .end annotation
+.end field
 
 .field protected final sdk:Lcom/applovin/impl/sdk/j;
 
@@ -65,7 +77,7 @@
     .line 2
     .line 3
     .line 4
-    invoke-static {}, Landroidx/compose/foundation/text/modifiers/f;->t()Ljava/util/Map;
+    invoke-static {}, Landroidx/compose/runtime/a0;->v()Ljava/util/Map;
 
     .line 5
     .line 6
@@ -77,7 +89,7 @@
 
     .line 9
     .line 10
-    invoke-static {}, Landroidx/compose/foundation/text/modifiers/f;->t()Ljava/util/Map;
+    invoke-static {}, Landroidx/compose/runtime/a0;->v()Ljava/util/Map;
 
     .line 11
     .line 12
@@ -276,8 +288,11 @@
 .method public getAdUnitId()Ljava/lang/String;
     .locals 1
 
+    .line 1
     iget-object v0, p0, Lcom/applovin/impl/mediation/ads/a;->adUnitId:Ljava/lang/String;
 
+    .line 2
+    .line 3
     return-object v0
 .end method
 
@@ -366,6 +381,10 @@
 
 .method public setExpirationListener(Lcom/applovin/mediation/MaxAdExpirationListener;)V
     .locals 4
+    .param p1    # Lcom/applovin/mediation/MaxAdExpirationListener;
+        .annotation build Landroidx/annotation/Nullable;
+        .end annotation
+    .end param
 
     .line 1
     invoke-static {}, Lcom/applovin/impl/sdk/n;->a()Z

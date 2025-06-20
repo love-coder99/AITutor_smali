@@ -3,14 +3,14 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lzh/c;
+.implements Lka/c;
 
 
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "Lkotlin/jvm/internal/FunctionReferenceImpl;",
-        "Lzh/c;"
+        "Lka/c;"
     }
 .end annotation
 
@@ -29,15 +29,15 @@
 .method public constructor <init>(Ljava/lang/Object;)V
     .locals 7
 
-    const/4 v1, 0x1
-
-    const-class v3, Landroidx/compose/ui/platform/r;
-
-    const-string v4, "registerOnEndApplyChangesListener"
-
     const-string v5, "registerOnEndApplyChangesListener(Lkotlin/jvm/functions/Function0;)V"
 
     const/4 v6, 0x0
+
+    const/4 v1, 0x1
+
+    const-class v3, Landroidx/compose/ui/platform/o;
+
+    const-string v4, "registerOnEndApplyChangesListener"
 
     move-object v0, p0
 
@@ -54,42 +54,42 @@
     .locals 0
 
     .line 1
-    check-cast p1, Lzh/a;
+    check-cast p1, Lka/a;
 
-    invoke-virtual {p0, p1}, Landroidx/compose/ui/platform/AndroidComposeView$focusOwner$1;->invoke(Lzh/a;)V
+    invoke-virtual {p0, p1}, Landroidx/compose/ui/platform/AndroidComposeView$focusOwner$1;->invoke(Lka/a;)V
 
-    sget-object p1, Lqh/r;->a:Lqh/r;
+    sget-object p1, LX9/j;->a:LX9/j;
 
     return-object p1
 .end method
 
-.method public final invoke(Lzh/a;)V
+.method public final invoke(Lka/a;)V
     .locals 2
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
-            "Lzh/a;",
+            "Lka/a;",
             ")V"
         }
     .end annotation
 
+    .line 2
     iget-object v0, p0, Lkotlin/jvm/internal/CallableReference;->receiver:Ljava/lang/Object;
 
-    .line 2
-    check-cast v0, Landroidx/compose/ui/platform/r;
+    check-cast v0, Landroidx/compose/ui/platform/o;
 
     .line 3
-    iget-object v0, v0, Landroidx/compose/ui/platform/r;->s0:Landroidx/compose/runtime/collection/e;
+    iget-object v0, v0, Landroidx/compose/ui/platform/o;->s0:Landroidx/compose/runtime/collection/d;
 
     .line 4
-    invoke-virtual {v0, p1}, Landroidx/compose/runtime/collection/e;->k(Ljava/lang/Object;)Z
+    invoke-virtual {v0, p1}, Landroidx/compose/runtime/collection/d;->k(Ljava/lang/Object;)Z
 
     move-result v1
 
     if-nez v1, :cond_0
 
     .line 5
-    invoke-virtual {v0, p1}, Landroidx/compose/runtime/collection/e;->b(Ljava/lang/Object;)V
+    invoke-virtual {v0, p1}, Landroidx/compose/runtime/collection/d;->b(Ljava/lang/Object;)V
 
     :cond_0
     return-void

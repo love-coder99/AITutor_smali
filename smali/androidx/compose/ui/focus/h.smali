@@ -16,7 +16,7 @@
 
     .line 4
     .line 5
-    invoke-virtual {p0, p1, v0}, Landroidx/compose/ui/focus/k;->b(Landroid/view/KeyEvent;Lzh/a;)Z
+    invoke-virtual {p0, p1, v0}, Landroidx/compose/ui/focus/k;->b(Landroid/view/KeyEvent;Lka/a;)Z
 
     .line 6
     .line 7

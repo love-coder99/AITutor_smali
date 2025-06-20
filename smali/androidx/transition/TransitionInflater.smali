@@ -29,7 +29,7 @@
 
 # direct methods
 .method static constructor <clinit>()V
-    .locals 3
+    .locals 4
 
     .line 1
     const/4 v0, 0x2
@@ -39,25 +39,25 @@
 
     .line 3
     .line 4
-    const/4 v1, 0x0
+    const-class v1, Landroid/content/Context;
 
     .line 5
-    const-class v2, Landroid/content/Context;
-
     .line 6
+    const/4 v2, 0x0
+
     .line 7
-    aput-object v2, v0, v1
+    aput-object v1, v0, v2
 
     .line 8
     .line 9
-    const/4 v1, 0x1
+    const-class v1, Landroid/util/AttributeSet;
 
     .line 10
-    const-class v2, Landroid/util/AttributeSet;
-
     .line 11
+    const/4 v3, 0x1
+
     .line 12
-    aput-object v2, v0, v1
+    aput-object v1, v0, v3
 
     .line 13
     .line 14
@@ -69,7 +69,7 @@
 
     .line 17
     .line 18
-    invoke-direct {v0}, Landroidx/collection/n0;-><init>()V
+    invoke-direct {v0, v2}, Landroidx/collection/L;-><init>(I)V
 
     .line 19
     .line 20
@@ -83,6 +83,10 @@
 
 .method private constructor <init>(Landroid/content/Context;)V
     .locals 0
+    .param p1    # Landroid/content/Context;
+        .annotation build Landroidx/annotation/NonNull;
+        .end annotation
+    .end param
 
     .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -112,55 +116,55 @@
     .end annotation
 
     .line 1
-    const/4 v0, 0x0
+    const/4 v0, 0x1
 
     .line 2
-    const-string v1, "class"
+    const/4 v1, 0x0
 
     .line 3
+    const/4 v2, 0x0
+
     .line 4
-    invoke-interface {p1, v0, v1}, Landroid/util/AttributeSet;->getAttributeValue(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+    const-string v3, "class"
 
     .line 5
     .line 6
+    invoke-interface {p1, v2, v3}, Landroid/util/AttributeSet;->getAttributeValue(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+
     .line 7
-    move-result-object v0
-
     .line 8
-    if-eqz v0, :cond_1
-
     .line 9
+    move-result-object v2
+
     .line 10
-    :try_start_0
-    sget-object p3, Landroidx/transition/TransitionInflater;->CONSTRUCTORS:Landroidx/collection/f;
+    if-eqz v2, :cond_1
 
     .line 11
     .line 12
+    :try_start_0
+    sget-object p3, Landroidx/transition/TransitionInflater;->CONSTRUCTORS:Landroidx/collection/f;
+
+    .line 13
+    .line 14
     monitor-enter p3
     :try_end_0
     .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
 
-    .line 13
-    :try_start_1
-    invoke-virtual {p3, v0}, Landroidx/collection/f;->get(Ljava/lang/Object;)Ljava/lang/Object;
-
-    .line 14
     .line 15
+    :try_start_1
+    invoke-virtual {p3, v2}, Landroidx/collection/L;->get(Ljava/lang/Object;)Ljava/lang/Object;
+
     .line 16
-    move-result-object v1
-
     .line 17
-    check-cast v1, Ljava/lang/reflect/Constructor;
-
     .line 18
+    move-result-object v3
+
     .line 19
-    const/4 v2, 0x1
+    check-cast v3, Ljava/lang/reflect/Constructor;
 
     .line 20
-    const/4 v3, 0x0
-
     .line 21
-    if-nez v1, :cond_0
+    if-nez v3, :cond_0
 
     .line 22
     .line 23
@@ -176,7 +180,7 @@
     move-result-object v4
 
     .line 29
-    invoke-static {v0, v3, v4}, Ljava/lang/Class;->forName(Ljava/lang/String;ZLjava/lang/ClassLoader;)Ljava/lang/Class;
+    invoke-static {v2, v1, v4}, Ljava/lang/Class;->forName(Ljava/lang/String;ZLjava/lang/ClassLoader;)Ljava/lang/Class;
 
     .line 30
     .line 31
@@ -196,24 +200,24 @@
 
     .line 38
     .line 39
-    sget-object v1, Landroidx/transition/TransitionInflater;->CONSTRUCTOR_SIGNATURE:[Ljava/lang/Class;
+    sget-object v3, Landroidx/transition/TransitionInflater;->CONSTRUCTOR_SIGNATURE:[Ljava/lang/Class;
 
     .line 40
     .line 41
-    invoke-virtual {v4, v1}, Ljava/lang/Class;->getConstructor([Ljava/lang/Class;)Ljava/lang/reflect/Constructor;
+    invoke-virtual {v4, v3}, Ljava/lang/Class;->getConstructor([Ljava/lang/Class;)Ljava/lang/reflect/Constructor;
 
     .line 42
     .line 43
     .line 44
-    move-result-object v1
+    move-result-object v3
 
     .line 45
-    invoke-virtual {v1, v2}, Ljava/lang/reflect/AccessibleObject;->setAccessible(Z)V
+    invoke-virtual {v3, v0}, Ljava/lang/reflect/AccessibleObject;->setAccessible(Z)V
 
     .line 46
     .line 47
     .line 48
-    invoke-virtual {p3, v0, v1}, Landroidx/collection/n0;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {p3, v2, v3}, Landroidx/collection/L;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 49
     .line 50
@@ -230,26 +234,26 @@
     .line 54
     :cond_0
     :goto_0
-    const/4 v4, 0x2
+    iget-object v4, p0, Landroidx/transition/TransitionInflater;->mContext:Landroid/content/Context;
 
     .line 55
-    new-array v4, v4, [Ljava/lang/Object;
-
     .line 56
+    const/4 v5, 0x2
+
     .line 57
-    iget-object v5, p0, Landroidx/transition/TransitionInflater;->mContext:Landroid/content/Context;
+    new-array v5, v5, [Ljava/lang/Object;
 
     .line 58
     .line 59
-    aput-object v5, v4, v3
+    aput-object v4, v5, v1
 
     .line 60
     .line 61
-    aput-object p1, v4, v2
+    aput-object p1, v5, v0
 
     .line 62
     .line 63
-    invoke-virtual {v1, v4}, Ljava/lang/reflect/Constructor;->newInstance([Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v3, v5}, Ljava/lang/reflect/Constructor;->newInstance([Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 64
     .line 65
@@ -283,20 +287,20 @@
 
     .line 73
     .line 74
-    new-instance v1, Ljava/lang/StringBuilder;
+    new-instance v0, Ljava/lang/StringBuilder;
 
     .line 75
     .line 76
-    const-string v2, "Could not instantiate "
+    const-string v1, "Could not instantiate "
 
     .line 77
     .line 78
-    invoke-direct {v1, v2}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+    invoke-direct {v0, v1}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
 
     .line 79
     .line 80
     .line 81
-    invoke-virtual {v1, p2}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+    invoke-virtual {v0, p2}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 
     .line 82
     .line 83
@@ -305,17 +309,17 @@
 
     .line 85
     .line 86
-    invoke-virtual {v1, p2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v0, p2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     .line 87
     .line 88
     .line 89
-    invoke-virtual {v1, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     .line 90
     .line 91
     .line 92
-    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
     .line 93
     .line 94
@@ -340,7 +344,7 @@
 
     .line 103
     .line 104
-    invoke-static {p3, p2}, Landroid/support/v4/media/session/a;->S(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {p3, p2}, Landroidx/appcompat/view/menu/F;->F(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     .line 105
     .line 106
@@ -358,6 +362,9 @@
 
 .method private createTransitionFromXml(Lorg/xmlpull/v1/XmlPullParser;Landroid/util/AttributeSet;Landroidx/transition/Transition;)Landroidx/transition/Transition;
     .locals 7
+    .annotation build Landroidx/annotation/Nullable;
+    .end annotation
+
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lorg/xmlpull/v1/XmlPullParserException;,
@@ -1150,6 +1157,13 @@
 
 .method private createTransitionManagerFromXml(Lorg/xmlpull/v1/XmlPullParser;Landroid/util/AttributeSet;Landroid/view/ViewGroup;)Landroidx/transition/TransitionManager;
     .locals 4
+    .param p3    # Landroid/view/ViewGroup;
+        .annotation build Landroidx/annotation/NonNull;
+        .end annotation
+    .end param
+    .annotation build Landroidx/annotation/Nullable;
+    .end annotation
+
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lorg/xmlpull/v1/XmlPullParserException;,
@@ -1334,6 +1348,12 @@
 
 .method public static from(Landroid/content/Context;)Landroidx/transition/TransitionInflater;
     .locals 1
+    .param p0    # Landroid/content/Context;
+        .annotation build Landroidx/annotation/NonNull;
+        .end annotation
+    .end param
+    .annotation build Landroidx/annotation/NonNull;
+    .end annotation
 
     .line 1
     new-instance v0, Landroidx/transition/TransitionInflater;
@@ -1350,6 +1370,10 @@
 
 .method private getTargetIds(Lorg/xmlpull/v1/XmlPullParser;Landroid/util/AttributeSet;Landroidx/transition/Transition;)V
     .locals 7
+    .param p3    # Landroidx/transition/Transition;
+        .annotation build Landroidx/annotation/NonNull;
+        .end annotation
+    .end param
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lorg/xmlpull/v1/XmlPullParserException;,
@@ -1457,7 +1481,7 @@
 
     .line 46
     .line 47
-    invoke-static {p1, v5}, Lnc/b;->p(Lorg/xmlpull/v1/XmlPullParser;Ljava/lang/String;)Z
+    invoke-static {p1, v5}, Lk1/a;->e(Lorg/xmlpull/v1/XmlPullParser;Ljava/lang/String;)Z
 
     .line 48
     .line 49
@@ -1505,7 +1529,7 @@
 
     .line 67
     .line 68
-    invoke-static {p1, v5}, Lnc/b;->p(Lorg/xmlpull/v1/XmlPullParser;Ljava/lang/String;)Z
+    invoke-static {p1, v5}, Lk1/a;->e(Lorg/xmlpull/v1/XmlPullParser;Ljava/lang/String;)Z
 
     .line 69
     .line 70
@@ -1553,7 +1577,7 @@
     const/4 v5, 0x4
 
     .line 89
-    invoke-static {v1, p1, v4, v5}, Lnc/b;->n(Landroid/content/res/TypedArray;Lorg/xmlpull/v1/XmlPullParser;Ljava/lang/String;I)Ljava/lang/String;
+    invoke-static {v1, p1, v4, v5}, Lk1/a;->d(Landroid/content/res/TypedArray;Lorg/xmlpull/v1/XmlPullParser;Ljava/lang/String;I)Ljava/lang/String;
 
     .line 90
     .line 91
@@ -1581,7 +1605,7 @@
     const/4 v5, 0x5
 
     .line 102
-    invoke-static {v1, p1, v4, v5}, Lnc/b;->n(Landroid/content/res/TypedArray;Lorg/xmlpull/v1/XmlPullParser;Ljava/lang/String;I)Ljava/lang/String;
+    invoke-static {v1, p1, v4, v5}, Lk1/a;->d(Landroid/content/res/TypedArray;Lorg/xmlpull/v1/XmlPullParser;Ljava/lang/String;I)Ljava/lang/String;
 
     .line 103
     .line 104
@@ -1606,7 +1630,7 @@
 
     .line 113
     .line 114
-    invoke-static {v1, p1, v4, v2}, Lnc/b;->n(Landroid/content/res/TypedArray;Lorg/xmlpull/v1/XmlPullParser;Ljava/lang/String;I)Ljava/lang/String;
+    invoke-static {v1, p1, v4, v2}, Lk1/a;->d(Landroid/content/res/TypedArray;Lorg/xmlpull/v1/XmlPullParser;Ljava/lang/String;I)Ljava/lang/String;
 
     .line 115
     .line 116
@@ -1647,7 +1671,7 @@
 
     .line 131
     .line 132
-    invoke-static {v1, p1, v3, v6}, Lnc/b;->n(Landroid/content/res/TypedArray;Lorg/xmlpull/v1/XmlPullParser;Ljava/lang/String;I)Ljava/lang/String;
+    invoke-static {v1, p1, v3, v6}, Lk1/a;->d(Landroid/content/res/TypedArray;Lorg/xmlpull/v1/XmlPullParser;Ljava/lang/String;I)Ljava/lang/String;
 
     .line 133
     .line 134
@@ -1699,7 +1723,7 @@
 
     .line 156
     .line 157
-    invoke-static {p3, v2}, Landroid/support/v4/media/session/a;->D(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {p3, v2}, LB/u;->t(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     .line 158
     .line 159
@@ -1768,6 +1792,10 @@
 
 .method private loadTransition(Landroid/util/AttributeSet;Lorg/xmlpull/v1/XmlPullParser;Landroid/view/ViewGroup;Landroidx/transition/TransitionManager;)V
     .locals 5
+    .param p3    # Landroid/view/ViewGroup;
+        .annotation build Landroidx/annotation/NonNull;
+        .end annotation
+    .end param
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/content/res/Resources$NotFoundException;
@@ -1795,7 +1823,7 @@
 
     .line 10
     .line 11
-    invoke-static {p2, v0}, Lnc/b;->p(Lorg/xmlpull/v1/XmlPullParser;Ljava/lang/String;)Z
+    invoke-static {p2, v0}, Lk1/a;->e(Lorg/xmlpull/v1/XmlPullParser;Ljava/lang/String;)Z
 
     .line 12
     .line 13
@@ -1833,7 +1861,7 @@
 
     .line 26
     .line 27
-    invoke-static {p2, v2}, Lnc/b;->p(Lorg/xmlpull/v1/XmlPullParser;Ljava/lang/String;)Z
+    invoke-static {p2, v2}, Lk1/a;->e(Lorg/xmlpull/v1/XmlPullParser;Ljava/lang/String;)Z
 
     .line 28
     .line 29
@@ -1895,7 +1923,7 @@
 
     .line 52
     .line 53
-    invoke-static {p2, v4}, Lnc/b;->p(Lorg/xmlpull/v1/XmlPullParser;Ljava/lang/String;)Z
+    invoke-static {p2, v4}, Lk1/a;->e(Lorg/xmlpull/v1/XmlPullParser;Ljava/lang/String;)Z
 
     .line 54
     .line 55
@@ -1994,7 +2022,7 @@
 
     .line 97
     .line 98
-    invoke-static {p2, v0}, Lcom/google/android/gms/internal/play_billing/v3;->s(Ljava/lang/String;I)Ljava/lang/String;
+    invoke-static {v0, p2}, Landroidx/appcompat/view/menu/F;->D(ILjava/lang/String;)Ljava/lang/String;
 
     .line 99
     .line 100
@@ -2024,6 +2052,8 @@
 # virtual methods
 .method public inflateTransition(I)Landroidx/transition/Transition;
     .locals 4
+    .annotation build Landroidx/annotation/Nullable;
+    .end annotation
 
     .line 1
     iget-object v0, p0, Landroidx/transition/TransitionInflater;->mContext:Landroid/content/Context;
@@ -2199,6 +2229,12 @@
 
 .method public inflateTransitionManager(ILandroid/view/ViewGroup;)Landroidx/transition/TransitionManager;
     .locals 3
+    .param p2    # Landroid/view/ViewGroup;
+        .annotation build Landroidx/annotation/NonNull;
+        .end annotation
+    .end param
+    .annotation build Landroidx/annotation/Nullable;
+    .end annotation
 
     .line 1
     iget-object v0, p0, Landroidx/transition/TransitionInflater;->mContext:Landroid/content/Context;

@@ -26,21 +26,22 @@
 .method public static a(Ljava/lang/String;)V
     .locals 3
 
+    .line 4
     sget-object v0, Lcom/apm/insight/k/j;->d:Ljava/util/Map;
 
     if-nez v0, :cond_0
 
-    .line 4
+    .line 5
     new-instance v0, Ljava/util/HashMap;
 
     invoke-direct {v0}, Ljava/util/HashMap;-><init>()V
 
     sput-object v0, Lcom/apm/insight/k/j;->d:Ljava/util/Map;
 
+    .line 6
     :cond_0
     sget-object v0, Lcom/apm/insight/k/j;->d:Ljava/util/Map;
 
-    .line 5
     invoke-static {}, Ljava/lang/System;->currentTimeMillis()J
 
     move-result-wide v1
@@ -106,8 +107,11 @@
 .method public static b()Z
     .locals 1
 
+    .line 1
     sget-boolean v0, Lcom/apm/insight/k/j;->c:Z
 
+    .line 2
+    .line 3
     return v0
 .end method
 
@@ -633,6 +637,8 @@
 
 .method private static h()Ljava/io/File;
     .locals 3
+    .annotation build Landroidx/annotation/NonNull;
+    .end annotation
 
     .line 1
     sget-object v0, Lcom/apm/insight/k/j;->a:Ljava/io/File;

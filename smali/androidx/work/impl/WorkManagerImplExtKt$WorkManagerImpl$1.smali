@@ -3,14 +3,14 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lzh/h;
+.implements Lka/h;
 
 
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "Lkotlin/jvm/internal/FunctionReferenceImpl;",
-        "Lzh/h;"
+        "Lka/h;"
     }
 .end annotation
 
@@ -45,15 +45,15 @@
 .method public constructor <init>()V
     .locals 6
 
-    const/4 v1, 0x6
-
-    const-class v2, Landroidx/work/impl/j0;
-
-    const-string v3, "createSchedulers"
-
     const-string v4, "createSchedulers(Landroid/content/Context;Landroidx/work/Configuration;Landroidx/work/impl/utils/taskexecutor/TaskExecutor;Landroidx/work/impl/WorkDatabase;Landroidx/work/impl/constraints/trackers/Trackers;Landroidx/work/impl/Processor;)Ljava/util/List;"
 
     const/4 v5, 0x1
+
+    const/4 v1, 0x6
+
+    const-class v2, Landroidx/work/impl/o;
+
+    const-string v3, "createSchedulers"
 
     move-object v0, p0
 
@@ -70,37 +70,37 @@
     .line 1
     check-cast p1, Landroid/content/Context;
 
-    check-cast p2, Landroidx/work/c;
+    check-cast p2, Landroidx/work/b;
 
-    check-cast p3, Li5/a;
+    check-cast p3, LC2/a;
 
     check-cast p4, Landroidx/work/impl/WorkDatabase;
 
-    check-cast p5, Lf5/m;
+    check-cast p5, Lz2/k;
 
-    check-cast p6, Landroidx/work/impl/o;
+    check-cast p6, Landroidx/work/impl/d;
 
-    invoke-virtual/range {p0 .. p6}, Landroidx/work/impl/WorkManagerImplExtKt$WorkManagerImpl$1;->invoke(Landroid/content/Context;Landroidx/work/c;Li5/a;Landroidx/work/impl/WorkDatabase;Lf5/m;Landroidx/work/impl/o;)Ljava/util/List;
+    invoke-virtual/range {p0 .. p6}, Landroidx/work/impl/WorkManagerImplExtKt$WorkManagerImpl$1;->invoke(Landroid/content/Context;Landroidx/work/b;LC2/a;Landroidx/work/impl/WorkDatabase;Lz2/k;Landroidx/work/impl/d;)Ljava/util/List;
 
     move-result-object p1
 
     return-object p1
 .end method
 
-.method public final invoke(Landroid/content/Context;Landroidx/work/c;Li5/a;Landroidx/work/impl/WorkDatabase;Lf5/m;Landroidx/work/impl/o;)Ljava/util/List;
-    .locals 10
+.method public final invoke(Landroid/content/Context;Landroidx/work/b;LC2/a;Landroidx/work/impl/WorkDatabase;Lz2/k;Landroidx/work/impl/d;)Ljava/util/List;
+    .locals 12
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
             "Landroid/content/Context;",
-            "Landroidx/work/c;",
-            "Li5/a;",
+            "Landroidx/work/b;",
+            "LC2/a;",
             "Landroidx/work/impl/WorkDatabase;",
-            "Lf5/m;",
-            "Landroidx/work/impl/o;",
+            "Lz2/k;",
+            "Landroidx/work/impl/d;",
             ")",
             "Ljava/util/List<",
-            "Landroidx/work/impl/q;",
+            "Landroidx/work/impl/f;",
             ">;"
         }
     .end annotation
@@ -109,86 +109,90 @@
 
     move-object v2, p2
 
-    const/4 v0, 0x2
+    const/4 v7, 0x0
 
-    new-array v7, v0, [Landroidx/work/impl/q;
+    const/4 v8, 0x2
+
+    const/4 v9, 0x1
 
     .line 2
-    sget v3, Landroidx/work/impl/s;->a:I
-
-    sget v3, Landroid/os/Build$VERSION;->SDK_INT:I
-
-    const/16 v4, 0x17
-
-    const/4 v8, 0x1
-
-    const/4 v5, 0x0
-
-    if-lt v3, v4, :cond_0
+    sget v0, Landroidx/work/impl/h;->a:I
 
     .line 3
-    new-instance v0, Le5/d;
+    sget v0, Landroid/os/Build$VERSION;->SDK_INT:I
 
-    move-object v3, p4
+    const/16 v3, 0x17
 
-    invoke-direct {v0, p1, p4, p2}, Le5/d;-><init>(Landroid/content/Context;Landroidx/work/impl/WorkDatabase;Landroidx/work/c;)V
-
-    const-class v3, Landroidx/work/impl/background/systemjob/SystemJobService;
+    if-lt v0, v3, :cond_1
 
     .line 4
-    invoke-static {p1, v3, v8}, Landroidx/work/impl/utils/k;->a(Landroid/content/Context;Ljava/lang/Class;Z)V
+    new-instance v0, Ly2/e;
+
+    move-object/from16 v3, p4
+
+    invoke-direct {v0, p1, v3, p2}, Ly2/e;-><init>(Landroid/content/Context;Landroidx/work/impl/WorkDatabase;Landroidx/work/b;)V
 
     .line 5
-    invoke-static {}, Landroidx/work/u;->a()Landroidx/work/u;
+    const-class v3, Landroidx/work/impl/background/systemjob/SystemJobService;
+
+    invoke-static {p1, v3, v9}, Landroidx/work/impl/utils/h;->a(Landroid/content/Context;Ljava/lang/Class;Z)V
+
+    .line 6
+    invoke-static {}, Landroidx/work/A;->a()Landroidx/work/A;
 
     move-result-object v3
 
     invoke-virtual {v3}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
-    goto :goto_1
-
-    .line 6
     :cond_0
-    iget-object v3, v2, Landroidx/work/c;->d:Landroidx/work/f0;
+    :goto_0
+    move-object v10, v0
 
-    :try_start_0
-    const-string v4, "androidx.work.impl.background.gcm.GcmScheduler"
+    goto :goto_2
 
     .line 7
-    invoke-static {v4}, Ljava/lang/Class;->forName(Ljava/lang/String;)Ljava/lang/Class;
-
-    move-result-object v4
-
-    new-array v6, v0, [Ljava/lang/Class;
-
-    const-class v9, Landroid/content/Context;
-
-    aput-object v9, v6, v5
-
-    const-class v9, Landroidx/work/f0;
-
-    aput-object v9, v6, v8
+    :cond_1
+    iget-object v0, v2, Landroidx/work/b;->d:Landroidx/work/A;
 
     .line 8
-    invoke-virtual {v4, v6}, Ljava/lang/Class;->getConstructor([Ljava/lang/Class;)Ljava/lang/reflect/Constructor;
+    :try_start_0
+    const-string v3, "androidx.work.impl.background.gcm.GcmScheduler"
 
-    move-result-object v4
+    invoke-static {v3}, Ljava/lang/Class;->forName(Ljava/lang/String;)Ljava/lang/Class;
 
-    new-array v0, v0, [Ljava/lang/Object;
-
-    aput-object v1, v0, v5
-
-    aput-object v3, v0, v8
+    move-result-object v3
 
     .line 9
-    invoke-virtual {v4, v0}, Ljava/lang/reflect/Constructor;->newInstance([Ljava/lang/Object;)Ljava/lang/Object;
+    new-array v4, v8, [Ljava/lang/Class;
+
+    const-class v5, Landroid/content/Context;
+
+    aput-object v5, v4, v7
+
+    const-class v5, Landroidx/work/A;
+
+    aput-object v5, v4, v9
+
+    .line 10
+    invoke-virtual {v3, v4}, Ljava/lang/Class;->getConstructor([Ljava/lang/Class;)Ljava/lang/reflect/Constructor;
+
+    move-result-object v3
+
+    new-array v4, v8, [Ljava/lang/Object;
+
+    aput-object v1, v4, v7
+
+    aput-object v0, v4, v9
+
+    .line 11
+    invoke-virtual {v3, v4}, Ljava/lang/reflect/Constructor;->newInstance([Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object v0
 
-    check-cast v0, Landroidx/work/impl/q;
+    check-cast v0, Landroidx/work/impl/f;
 
-    .line 10
-    invoke-static {}, Landroidx/work/u;->a()Landroidx/work/u;
+    .line 12
+    invoke-static {}, Landroidx/work/A;->a()Landroidx/work/A;
 
     move-result-object v3
 
@@ -196,11 +200,11 @@
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    goto :goto_0
+    goto :goto_1
 
-    .line 11
+    .line 13
     :catchall_0
-    invoke-static {}, Landroidx/work/u;->a()Landroidx/work/u;
+    invoke-static {}, Landroidx/work/A;->a()Landroidx/work/A;
 
     move-result-object v0
 
@@ -208,57 +212,62 @@
 
     const/4 v0, 0x0
 
-    :goto_0
-    if-nez v0, :cond_1
-
-    .line 12
-    new-instance v0, Ld5/j;
-
-    invoke-direct {v0, p1}, Ld5/j;-><init>(Landroid/content/Context;)V
-
-    const-class v3, Landroidx/work/impl/background/systemalarm/SystemAlarmService;
-
-    .line 13
-    invoke-static {p1, v3, v8}, Landroidx/work/impl/utils/k;->a(Landroid/content/Context;Ljava/lang/Class;Z)V
+    :goto_1
+    if-nez v0, :cond_0
 
     .line 14
-    invoke-static {}, Landroidx/work/u;->a()Landroidx/work/u;
+    new-instance v0, Lx2/i;
+
+    invoke-direct {v0, p1}, Lx2/i;-><init>(Landroid/content/Context;)V
+
+    .line 15
+    const-class v3, Landroidx/work/impl/background/systemalarm/SystemAlarmService;
+
+    invoke-static {p1, v3, v9}, Landroidx/work/impl/utils/h;->a(Landroid/content/Context;Ljava/lang/Class;Z)V
+
+    .line 16
+    invoke-static {}, Landroidx/work/A;->a()Landroidx/work/A;
 
     move-result-object v3
 
     invoke-virtual {v3}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
-    :cond_1
-    :goto_1
-    aput-object v0, v7, v5
+    goto :goto_0
 
-    .line 15
-    new-instance v9, Lc5/c;
+    .line 17
+    :goto_2
+    new-instance v11, Lw2/c;
 
-    .line 16
-    new-instance v5, Landroidx/work/impl/h0;
+    .line 18
+    new-instance v5, Landroidx/compose/ui/input/pointer/p;
+
+    const/4 v0, 0x6
 
     move-object v6, p3
 
     move-object/from16 v4, p6
 
-    invoke-direct {v5, v4, p3}, Landroidx/work/impl/h0;-><init>(Landroidx/work/impl/o;Li5/a;)V
+    invoke-direct {v5, v4, v0, p3}, Landroidx/compose/ui/input/pointer/p;-><init>(Ljava/lang/Object;ILjava/lang/Object;)V
 
-    move-object v0, v9
+    move-object v0, v11
 
     move-object v1, p1
 
     move-object v2, p2
 
-    move-object v3, p5
+    move-object/from16 v3, p5
 
-    .line 17
-    invoke-direct/range {v0 .. v6}, Lc5/c;-><init>(Landroid/content/Context;Landroidx/work/c;Lf5/m;Landroidx/work/impl/o;Landroidx/work/impl/h0;Li5/a;)V
+    .line 19
+    invoke-direct/range {v0 .. v6}, Lw2/c;-><init>(Landroid/content/Context;Landroidx/work/b;Lz2/k;Landroidx/work/impl/d;Landroidx/compose/ui/input/pointer/p;LC2/a;)V
 
-    aput-object v9, v7, v8
+    new-array v0, v8, [Landroidx/work/impl/f;
 
-    .line 18
-    invoke-static {v7}, Lma/a;->V([Ljava/lang/Object;)Ljava/util/List;
+    aput-object v10, v0, v7
+
+    aput-object v11, v0, v9
+
+    .line 20
+    invoke-static {v0}, LY9/r;->z([Ljava/lang/Object;)Ljava/util/List;
 
     move-result-object v0
 

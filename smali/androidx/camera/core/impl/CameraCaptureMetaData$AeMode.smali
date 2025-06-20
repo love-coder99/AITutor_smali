@@ -36,182 +36,182 @@
     .locals 15
 
     .line 1
-    new-instance v0, Landroidx/camera/core/impl/CameraCaptureMetaData$AeMode;
+    const/4 v0, 0x6
 
     .line 2
+    const/4 v1, 0x5
+
     .line 3
-    const-string v1, "UNKNOWN"
+    const/4 v2, 0x4
 
     .line 4
+    const/4 v3, 0x3
+
     .line 5
-    const/4 v2, 0x0
+    const/4 v4, 0x2
 
     .line 6
-    invoke-direct {v0, v1, v2}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
+    const/4 v5, 0x1
 
     .line 7
+    const/4 v6, 0x0
+
     .line 8
+    new-instance v7, Landroidx/camera/core/impl/CameraCaptureMetaData$AeMode;
+
     .line 9
-    sput-object v0, Landroidx/camera/core/impl/CameraCaptureMetaData$AeMode;->UNKNOWN:Landroidx/camera/core/impl/CameraCaptureMetaData$AeMode;
-
     .line 10
+    const-string v8, "UNKNOWN"
+
     .line 11
-    new-instance v1, Landroidx/camera/core/impl/CameraCaptureMetaData$AeMode;
-
     .line 12
-    .line 13
-    const-string v3, "OFF"
+    invoke-direct {v7, v8, v6}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
 
+    .line 13
     .line 14
     .line 15
-    const/4 v4, 0x1
+    sput-object v7, Landroidx/camera/core/impl/CameraCaptureMetaData$AeMode;->UNKNOWN:Landroidx/camera/core/impl/CameraCaptureMetaData$AeMode;
 
     .line 16
-    invoke-direct {v1, v3, v4}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
-
     .line 17
+    new-instance v8, Landroidx/camera/core/impl/CameraCaptureMetaData$AeMode;
+
     .line 18
     .line 19
-    sput-object v1, Landroidx/camera/core/impl/CameraCaptureMetaData$AeMode;->OFF:Landroidx/camera/core/impl/CameraCaptureMetaData$AeMode;
+    const-string v9, "OFF"
 
     .line 20
     .line 21
-    new-instance v3, Landroidx/camera/core/impl/CameraCaptureMetaData$AeMode;
+    invoke-direct {v8, v9, v5}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
 
     .line 22
     .line 23
-    const-string v5, "ON"
-
     .line 24
-    .line 25
-    const/4 v6, 0x2
+    sput-object v8, Landroidx/camera/core/impl/CameraCaptureMetaData$AeMode;->OFF:Landroidx/camera/core/impl/CameraCaptureMetaData$AeMode;
 
+    .line 25
     .line 26
-    invoke-direct {v3, v5, v6}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
+    new-instance v9, Landroidx/camera/core/impl/CameraCaptureMetaData$AeMode;
 
     .line 27
     .line 28
+    const-string v10, "ON"
+
     .line 29
-    sput-object v3, Landroidx/camera/core/impl/CameraCaptureMetaData$AeMode;->ON:Landroidx/camera/core/impl/CameraCaptureMetaData$AeMode;
-
     .line 30
-    .line 31
-    new-instance v5, Landroidx/camera/core/impl/CameraCaptureMetaData$AeMode;
+    invoke-direct {v9, v10, v4}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
 
+    .line 31
     .line 32
     .line 33
-    const-string v7, "ON_AUTO_FLASH"
+    sput-object v9, Landroidx/camera/core/impl/CameraCaptureMetaData$AeMode;->ON:Landroidx/camera/core/impl/CameraCaptureMetaData$AeMode;
 
     .line 34
     .line 35
-    const/4 v8, 0x3
+    new-instance v10, Landroidx/camera/core/impl/CameraCaptureMetaData$AeMode;
 
     .line 36
-    invoke-direct {v5, v7, v8}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
-
     .line 37
+    const-string v11, "ON_AUTO_FLASH"
+
     .line 38
     .line 39
-    sput-object v5, Landroidx/camera/core/impl/CameraCaptureMetaData$AeMode;->ON_AUTO_FLASH:Landroidx/camera/core/impl/CameraCaptureMetaData$AeMode;
+    invoke-direct {v10, v11, v3}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
 
     .line 40
     .line 41
-    new-instance v7, Landroidx/camera/core/impl/CameraCaptureMetaData$AeMode;
-
     .line 42
+    sput-object v10, Landroidx/camera/core/impl/CameraCaptureMetaData$AeMode;->ON_AUTO_FLASH:Landroidx/camera/core/impl/CameraCaptureMetaData$AeMode;
+
     .line 43
-    const-string v9, "ON_ALWAYS_FLASH"
-
     .line 44
-    .line 45
-    const/4 v10, 0x4
+    new-instance v11, Landroidx/camera/core/impl/CameraCaptureMetaData$AeMode;
 
+    .line 45
     .line 46
-    invoke-direct {v7, v9, v10}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
+    const-string v12, "ON_ALWAYS_FLASH"
 
     .line 47
     .line 48
-    .line 49
-    sput-object v7, Landroidx/camera/core/impl/CameraCaptureMetaData$AeMode;->ON_ALWAYS_FLASH:Landroidx/camera/core/impl/CameraCaptureMetaData$AeMode;
+    invoke-direct {v11, v12, v2}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
 
+    .line 49
     .line 50
     .line 51
-    new-instance v9, Landroidx/camera/core/impl/CameraCaptureMetaData$AeMode;
+    sput-object v11, Landroidx/camera/core/impl/CameraCaptureMetaData$AeMode;->ON_ALWAYS_FLASH:Landroidx/camera/core/impl/CameraCaptureMetaData$AeMode;
 
     .line 52
     .line 53
-    const-string v11, "ON_AUTO_FLASH_REDEYE"
+    new-instance v12, Landroidx/camera/core/impl/CameraCaptureMetaData$AeMode;
 
     .line 54
     .line 55
-    const/4 v12, 0x5
+    const-string v13, "ON_AUTO_FLASH_REDEYE"
 
     .line 56
-    invoke-direct {v9, v11, v12}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
-
     .line 57
+    invoke-direct {v12, v13, v1}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
+
     .line 58
     .line 59
-    sput-object v9, Landroidx/camera/core/impl/CameraCaptureMetaData$AeMode;->ON_AUTO_FLASH_REDEYE:Landroidx/camera/core/impl/CameraCaptureMetaData$AeMode;
-
     .line 60
+    sput-object v12, Landroidx/camera/core/impl/CameraCaptureMetaData$AeMode;->ON_AUTO_FLASH_REDEYE:Landroidx/camera/core/impl/CameraCaptureMetaData$AeMode;
+
     .line 61
-    new-instance v11, Landroidx/camera/core/impl/CameraCaptureMetaData$AeMode;
-
     .line 62
+    new-instance v13, Landroidx/camera/core/impl/CameraCaptureMetaData$AeMode;
+
     .line 63
-    const-string v13, "ON_EXTERNAL_FLASH"
-
     .line 64
-    .line 65
-    const/4 v14, 0x6
+    const-string v14, "ON_EXTERNAL_FLASH"
 
+    .line 65
     .line 66
-    invoke-direct {v11, v13, v14}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
+    invoke-direct {v13, v14, v0}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
 
     .line 67
     .line 68
     .line 69
-    sput-object v11, Landroidx/camera/core/impl/CameraCaptureMetaData$AeMode;->ON_EXTERNAL_FLASH:Landroidx/camera/core/impl/CameraCaptureMetaData$AeMode;
+    sput-object v13, Landroidx/camera/core/impl/CameraCaptureMetaData$AeMode;->ON_EXTERNAL_FLASH:Landroidx/camera/core/impl/CameraCaptureMetaData$AeMode;
 
     .line 70
     .line 71
-    const/4 v13, 0x7
+    const/4 v14, 0x7
 
     .line 72
-    new-array v13, v13, [Landroidx/camera/core/impl/CameraCaptureMetaData$AeMode;
+    new-array v14, v14, [Landroidx/camera/core/impl/CameraCaptureMetaData$AeMode;
 
     .line 73
     .line 74
-    aput-object v0, v13, v2
+    aput-object v7, v14, v6
 
     .line 75
     .line 76
-    aput-object v1, v13, v4
+    aput-object v8, v14, v5
 
     .line 77
     .line 78
-    aput-object v3, v13, v6
+    aput-object v9, v14, v4
 
     .line 79
     .line 80
-    aput-object v5, v13, v8
+    aput-object v10, v14, v3
 
     .line 81
     .line 82
-    aput-object v7, v13, v10
+    aput-object v11, v14, v2
 
     .line 83
     .line 84
-    aput-object v9, v13, v12
+    aput-object v12, v14, v1
 
     .line 85
     .line 86
-    aput-object v11, v13, v14
+    aput-object v13, v14, v0
 
     .line 87
     .line 88
-    sput-object v13, Landroidx/camera/core/impl/CameraCaptureMetaData$AeMode;->b:[Landroidx/camera/core/impl/CameraCaptureMetaData$AeMode;
+    sput-object v14, Landroidx/camera/core/impl/CameraCaptureMetaData$AeMode;->b:[Landroidx/camera/core/impl/CameraCaptureMetaData$AeMode;
 
     .line 89
     .line 90

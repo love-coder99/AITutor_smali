@@ -13,14 +13,23 @@
 .method static constructor <clinit>()V
     .locals 1
 
+    .line 1
     const-string v0, "amigo"
 
+    .line 2
+    .line 3
     sput-object v0, Lcom/apm/insight/l/l;->a:Ljava/lang/CharSequence;
 
+    .line 4
+    .line 5
     const-string v0, "funtouch"
 
+    .line 6
+    .line 7
     sput-object v0, Lcom/apm/insight/l/l;->b:Ljava/lang/CharSequence;
 
+    .line 8
+    .line 9
     return-void
 .end method
 
@@ -181,7 +190,7 @@
     if-eqz v3, :cond_6
 
     .line 12
-    invoke-static {v0, v2}, Lj0/d;->s(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-static {v0, v2}, LB/u;->z(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object v0
 
@@ -209,10 +218,10 @@
 
     return-object v0
 
+    .line 15
     :cond_7
     const-string v0, "ro.vivo.os.build.display.id"
 
-    .line 15
     invoke-static {v0}, Lcom/apm/insight/l/l;->a(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v3
@@ -297,13 +306,13 @@
     if-eqz v3, :cond_9
 
     .line 22
-    invoke-static {v0, v2}, Lj0/d;->s(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-static {v0, v2}, LB/u;->z(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object v0
 
+    .line 23
     const-string v1, "ro.gn.sv.version"
 
-    .line 23
     invoke-static {v1}, Lcom/apm/insight/l/l;->a(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v1
@@ -350,9 +359,9 @@
 
     move-result-object v3
 
+    .line 27
     const-string v4, "360"
 
-    .line 27
     invoke-virtual {v3, v4}, Ljava/lang/String;->contains(Ljava/lang/CharSequence;)Z
 
     move-result v4
@@ -380,16 +389,16 @@
     move-result-object v3
 
     .line 29
-    invoke-static {v1, v3, v2, v0}, Landroidx/compose/foundation/text/modifiers/f;->r(Ljava/lang/StringBuilder;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v1, v3, v2, v0}, Lcom/google/android/material/datepicker/i;->A(Ljava/lang/StringBuilder;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v0
 
     return-object v0
 
+    .line 30
     :cond_b
     const-string v3, "ro.letv.release.version"
 
-    .line 30
     invoke-static {v3}, Lcom/apm/insight/l/l;->a(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v4
@@ -398,9 +407,7 @@
 
     move-result v4
 
-    xor-int/lit8 v4, v4, 0x1
-
-    if-eqz v4, :cond_c
+    if-nez v4, :cond_c
 
     .line 31
     new-instance v1, Ljava/lang/StringBuilder;
@@ -415,7 +422,7 @@
     move-result-object v3
 
     .line 33
-    invoke-static {v1, v3, v2, v0}, Landroidx/compose/foundation/text/modifiers/f;->r(Ljava/lang/StringBuilder;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v1, v3, v2, v0}, Lcom/google/android/material/datepicker/i;->A(Ljava/lang/StringBuilder;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v1
 
@@ -436,9 +443,10 @@
 .method private static a(Ljava/lang/String;)Ljava/lang/String;
     .locals 4
 
+    .line 51
     const-string v0, ""
 
-    .line 51
+    .line 52
     :try_start_0
     invoke-static {}, Ljava/lang/Runtime;->getRuntime()Ljava/lang/Runtime;
 
@@ -458,12 +466,12 @@
 
     move-result-object p0
 
-    .line 52
+    .line 53
     new-instance v1, Ljava/io/BufferedReader;
 
     new-instance v2, Ljava/io/InputStreamReader;
 
-    .line 53
+    .line 54
     invoke-virtual {p0}, Ljava/lang/Process;->getInputStream()Ljava/io/InputStream;
 
     move-result-object v3
@@ -476,18 +484,18 @@
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    .line 54
+    .line 55
     :try_start_1
     invoke-virtual {v1}, Ljava/io/BufferedReader;->readLine()Ljava/lang/String;
 
     move-result-object v0
 
-    .line 55
+    .line 56
     invoke-virtual {p0}, Ljava/lang/Process;->destroy()V
     :try_end_1
     .catchall {:try_start_1 .. :try_end_1} :catchall_1
 
-    .line 56
+    .line 57
     invoke-static {v1}, Lcom/apm/insight/a;->a(Ljava/io/Closeable;)V
 
     return-object v0

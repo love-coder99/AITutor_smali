@@ -1,12 +1,12 @@
 .class final Landroidx/compose/foundation/selection/SelectableElement;
-.super Landroidx/compose/ui/node/w0;
+.super Landroidx/compose/ui/node/V;
 .source "SourceFile"
 
 
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
-        "Landroidx/compose/ui/node/w0;"
+        "Landroidx/compose/ui/node/V;"
     }
 .end annotation
 
@@ -16,7 +16,7 @@
     }
     d2 = {
         "Landroidx/compose/foundation/selection/SelectableElement;",
-        "Landroidx/compose/ui/node/w0;",
+        "Landroidx/compose/ui/node/V;",
         "Landroidx/compose/foundation/selection/b;",
         "foundation_release"
     }
@@ -26,25 +26,26 @@
         0x8,
         0x0
     }
+    xi = 0x30
 .end annotation
 
 
 # instance fields
-.field public final c:Z
+.field public final a:Z
 
-.field public final d:Landroidx/compose/foundation/interaction/l;
+.field public final b:Landroidx/compose/foundation/interaction/l;
 
-.field public final e:Landroidx/compose/foundation/i0;
+.field public final c:Landroidx/compose/foundation/G;
 
-.field public final f:Z
+.field public final d:Z
 
-.field public final g:Landroidx/compose/ui/semantics/g;
+.field public final e:Landroidx/compose/ui/semantics/g;
 
-.field public final h:Lzh/a;
+.field public final f:Lka/a;
 
 
 # direct methods
-.method public constructor <init>(ZLandroidx/compose/foundation/interaction/l;Landroidx/compose/foundation/i0;ZLandroidx/compose/ui/semantics/g;Lzh/a;)V
+.method public constructor <init>(ZLandroidx/compose/foundation/interaction/l;Landroidx/compose/foundation/G;ZLandroidx/compose/ui/semantics/g;Lka/a;)V
     .locals 0
 
     .line 1
@@ -53,27 +54,27 @@
     .line 2
     .line 3
     .line 4
-    iput-boolean p1, p0, Landroidx/compose/foundation/selection/SelectableElement;->c:Z
+    iput-boolean p1, p0, Landroidx/compose/foundation/selection/SelectableElement;->a:Z
 
     .line 5
     .line 6
-    iput-object p2, p0, Landroidx/compose/foundation/selection/SelectableElement;->d:Landroidx/compose/foundation/interaction/l;
+    iput-object p2, p0, Landroidx/compose/foundation/selection/SelectableElement;->b:Landroidx/compose/foundation/interaction/l;
 
     .line 7
     .line 8
-    iput-object p3, p0, Landroidx/compose/foundation/selection/SelectableElement;->e:Landroidx/compose/foundation/i0;
+    iput-object p3, p0, Landroidx/compose/foundation/selection/SelectableElement;->c:Landroidx/compose/foundation/G;
 
     .line 9
     .line 10
-    iput-boolean p4, p0, Landroidx/compose/foundation/selection/SelectableElement;->f:Z
+    iput-boolean p4, p0, Landroidx/compose/foundation/selection/SelectableElement;->d:Z
 
     .line 11
     .line 12
-    iput-object p5, p0, Landroidx/compose/foundation/selection/SelectableElement;->g:Landroidx/compose/ui/semantics/g;
+    iput-object p5, p0, Landroidx/compose/foundation/selection/SelectableElement;->e:Landroidx/compose/ui/semantics/g;
 
     .line 13
     .line 14
-    iput-object p6, p0, Landroidx/compose/foundation/selection/SelectableElement;->h:Lzh/a;
+    iput-object p6, p0, Landroidx/compose/foundation/selection/SelectableElement;->f:Lka/a;
 
     .line 15
     .line 16
@@ -132,11 +133,11 @@
 
     .line 19
     .line 20
-    iget-boolean v2, p0, Landroidx/compose/foundation/selection/SelectableElement;->c:Z
+    iget-boolean v2, p0, Landroidx/compose/foundation/selection/SelectableElement;->a:Z
 
     .line 21
     .line 22
-    iget-boolean v3, p1, Landroidx/compose/foundation/selection/SelectableElement;->c:Z
+    iget-boolean v3, p1, Landroidx/compose/foundation/selection/SelectableElement;->a:Z
 
     .line 23
     .line 24
@@ -148,15 +149,15 @@
 
     .line 27
     :cond_3
-    iget-object v2, p0, Landroidx/compose/foundation/selection/SelectableElement;->d:Landroidx/compose/foundation/interaction/l;
+    iget-object v2, p0, Landroidx/compose/foundation/selection/SelectableElement;->b:Landroidx/compose/foundation/interaction/l;
 
     .line 28
     .line 29
-    iget-object v3, p1, Landroidx/compose/foundation/selection/SelectableElement;->d:Landroidx/compose/foundation/interaction/l;
+    iget-object v3, p1, Landroidx/compose/foundation/selection/SelectableElement;->b:Landroidx/compose/foundation/interaction/l;
 
     .line 30
     .line 31
-    invoke-static {v2, v3}, Lrb/h;->d(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v2, v3}, Lkotlin/jvm/internal/h;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     .line 32
     .line 33
@@ -172,15 +173,15 @@
 
     .line 38
     :cond_4
-    iget-object v2, p0, Landroidx/compose/foundation/selection/SelectableElement;->e:Landroidx/compose/foundation/i0;
+    iget-object v2, p0, Landroidx/compose/foundation/selection/SelectableElement;->c:Landroidx/compose/foundation/G;
 
     .line 39
     .line 40
-    iget-object v3, p1, Landroidx/compose/foundation/selection/SelectableElement;->e:Landroidx/compose/foundation/i0;
+    iget-object v3, p1, Landroidx/compose/foundation/selection/SelectableElement;->c:Landroidx/compose/foundation/G;
 
     .line 41
     .line 42
-    invoke-static {v2, v3}, Lrb/h;->d(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v2, v3}, Lkotlin/jvm/internal/h;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     .line 43
     .line 44
@@ -196,11 +197,11 @@
 
     .line 49
     :cond_5
-    iget-boolean v2, p0, Landroidx/compose/foundation/selection/SelectableElement;->f:Z
+    iget-boolean v2, p0, Landroidx/compose/foundation/selection/SelectableElement;->d:Z
 
     .line 50
     .line 51
-    iget-boolean v3, p1, Landroidx/compose/foundation/selection/SelectableElement;->f:Z
+    iget-boolean v3, p1, Landroidx/compose/foundation/selection/SelectableElement;->d:Z
 
     .line 52
     .line 53
@@ -212,15 +213,15 @@
 
     .line 56
     :cond_6
-    iget-object v2, p0, Landroidx/compose/foundation/selection/SelectableElement;->g:Landroidx/compose/ui/semantics/g;
+    iget-object v2, p0, Landroidx/compose/foundation/selection/SelectableElement;->e:Landroidx/compose/ui/semantics/g;
 
     .line 57
     .line 58
-    iget-object v3, p1, Landroidx/compose/foundation/selection/SelectableElement;->g:Landroidx/compose/ui/semantics/g;
+    iget-object v3, p1, Landroidx/compose/foundation/selection/SelectableElement;->e:Landroidx/compose/ui/semantics/g;
 
     .line 59
     .line 60
-    invoke-static {v2, v3}, Lrb/h;->d(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v2, v3}, Lkotlin/jvm/internal/h;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     .line 61
     .line 62
@@ -236,11 +237,11 @@
 
     .line 67
     :cond_7
-    iget-object v2, p0, Landroidx/compose/foundation/selection/SelectableElement;->h:Lzh/a;
+    iget-object v2, p0, Landroidx/compose/foundation/selection/SelectableElement;->f:Lka/a;
 
     .line 68
     .line 69
-    iget-object p1, p1, Landroidx/compose/foundation/selection/SelectableElement;->h:Lzh/a;
+    iget-object p1, p1, Landroidx/compose/foundation/selection/SelectableElement;->f:Lka/a;
 
     .line 70
     .line 71
@@ -259,23 +260,23 @@
     .locals 5
 
     .line 1
-    const/16 v0, 0x4d5
+    iget-boolean v0, p0, Landroidx/compose/foundation/selection/SelectableElement;->a:Z
 
     .line 2
     .line 3
-    const/16 v1, 0x4cf
+    const/16 v1, 0x4d5
 
     .line 4
     .line 5
-    iget-boolean v2, p0, Landroidx/compose/foundation/selection/SelectableElement;->c:Z
+    const/16 v2, 0x4cf
 
     .line 6
     .line 7
-    if-eqz v2, :cond_0
+    if-eqz v0, :cond_0
 
     .line 8
     .line 9
-    const/16 v2, 0x4cf
+    const/16 v0, 0x4cf
 
     .line 10
     .line 11
@@ -283,19 +284,19 @@
 
     .line 12
     :cond_0
-    const/16 v2, 0x4d5
+    const/16 v0, 0x4d5
 
     .line 13
     .line 14
     :goto_0
-    mul-int/lit8 v2, v2, 0x1f
+    mul-int/lit8 v0, v0, 0x1f
 
     .line 15
     .line 16
     const/4 v3, 0x0
 
     .line 17
-    iget-object v4, p0, Landroidx/compose/foundation/selection/SelectableElement;->d:Landroidx/compose/foundation/interaction/l;
+    iget-object v4, p0, Landroidx/compose/foundation/selection/SelectableElement;->b:Landroidx/compose/foundation/interaction/l;
 
     .line 18
     .line 19
@@ -319,14 +320,14 @@
 
     .line 27
     :goto_1
-    add-int/2addr v2, v4
+    add-int/2addr v0, v4
 
     .line 28
-    mul-int/lit8 v2, v2, 0x1f
+    mul-int/lit8 v0, v0, 0x1f
 
     .line 29
     .line 30
-    iget-object v4, p0, Landroidx/compose/foundation/selection/SelectableElement;->e:Landroidx/compose/foundation/i0;
+    iget-object v4, p0, Landroidx/compose/foundation/selection/SelectableElement;->c:Landroidx/compose/foundation/G;
 
     .line 31
     .line 32
@@ -350,14 +351,14 @@
 
     .line 40
     :goto_2
-    add-int/2addr v2, v4
+    add-int/2addr v0, v4
 
     .line 41
-    mul-int/lit8 v2, v2, 0x1f
+    mul-int/lit8 v0, v0, 0x1f
 
     .line 42
     .line 43
-    iget-boolean v4, p0, Landroidx/compose/foundation/selection/SelectableElement;->f:Z
+    iget-boolean v4, p0, Landroidx/compose/foundation/selection/SelectableElement;->d:Z
 
     .line 44
     .line 45
@@ -365,54 +366,54 @@
 
     .line 46
     .line 47
-    const/16 v0, 0x4cf
+    const/16 v1, 0x4cf
 
     .line 48
     .line 49
     :cond_3
-    add-int/2addr v2, v0
+    add-int/2addr v0, v1
 
     .line 50
-    mul-int/lit8 v2, v2, 0x1f
+    mul-int/lit8 v0, v0, 0x1f
 
     .line 51
     .line 52
-    iget-object v0, p0, Landroidx/compose/foundation/selection/SelectableElement;->g:Landroidx/compose/ui/semantics/g;
+    iget-object v1, p0, Landroidx/compose/foundation/selection/SelectableElement;->e:Landroidx/compose/ui/semantics/g;
 
     .line 53
     .line 54
-    if-eqz v0, :cond_4
+    if-eqz v1, :cond_4
 
     .line 55
     .line 56
-    iget v3, v0, Landroidx/compose/ui/semantics/g;->a:I
+    iget v3, v1, Landroidx/compose/ui/semantics/g;->a:I
 
     .line 57
     .line 58
     :cond_4
-    add-int/2addr v2, v3
+    add-int/2addr v0, v3
 
     .line 59
-    mul-int/lit8 v2, v2, 0x1f
+    mul-int/lit8 v0, v0, 0x1f
 
     .line 60
     .line 61
-    iget-object v0, p0, Landroidx/compose/foundation/selection/SelectableElement;->h:Lzh/a;
+    iget-object v1, p0, Landroidx/compose/foundation/selection/SelectableElement;->f:Lka/a;
 
     .line 62
     .line 63
-    invoke-virtual {v0}, Ljava/lang/Object;->hashCode()I
+    invoke-virtual {v1}, Ljava/lang/Object;->hashCode()I
 
     .line 64
     .line 65
     .line 66
-    move-result v0
+    move-result v1
 
     .line 67
-    add-int/2addr v0, v2
+    add-int/2addr v1, v0
 
     .line 68
-    return v0
+    return v1
 .end method
 
 .method public final m()Landroidx/compose/ui/n;
@@ -423,38 +424,38 @@
 
     .line 2
     .line 3
-    iget-object v1, p0, Landroidx/compose/foundation/selection/SelectableElement;->d:Landroidx/compose/foundation/interaction/l;
+    iget-boolean v3, p0, Landroidx/compose/foundation/selection/SelectableElement;->d:Z
 
     .line 4
     .line 5
-    iget-object v2, p0, Landroidx/compose/foundation/selection/SelectableElement;->e:Landroidx/compose/foundation/i0;
-
-    .line 6
-    .line 7
-    iget-boolean v3, p0, Landroidx/compose/foundation/selection/SelectableElement;->f:Z
-
-    .line 8
-    .line 9
-    iget-object v5, p0, Landroidx/compose/foundation/selection/SelectableElement;->g:Landroidx/compose/ui/semantics/g;
-
-    .line 10
-    .line 11
-    iget-object v6, p0, Landroidx/compose/foundation/selection/SelectableElement;->h:Lzh/a;
-
-    .line 12
-    .line 13
     const/4 v4, 0x0
 
+    .line 6
+    iget-object v1, p0, Landroidx/compose/foundation/selection/SelectableElement;->b:Landroidx/compose/foundation/interaction/l;
+
+    .line 7
+    .line 8
+    iget-object v2, p0, Landroidx/compose/foundation/selection/SelectableElement;->c:Landroidx/compose/foundation/G;
+
+    .line 9
+    .line 10
+    iget-object v5, p0, Landroidx/compose/foundation/selection/SelectableElement;->e:Landroidx/compose/ui/semantics/g;
+
+    .line 11
+    .line 12
+    iget-object v6, p0, Landroidx/compose/foundation/selection/SelectableElement;->f:Lka/a;
+
+    .line 13
     .line 14
     move-object v0, v7
 
     .line 15
-    invoke-direct/range {v0 .. v6}, Landroidx/compose/foundation/a;-><init>(Landroidx/compose/foundation/interaction/l;Landroidx/compose/foundation/i0;ZLjava/lang/String;Landroidx/compose/ui/semantics/g;Lzh/a;)V
+    invoke-direct/range {v0 .. v6}, Landroidx/compose/foundation/a;-><init>(Landroidx/compose/foundation/interaction/l;Landroidx/compose/foundation/G;ZLjava/lang/String;Landroidx/compose/ui/semantics/g;Lka/a;)V
 
     .line 16
     .line 17
     .line 18
-    iget-boolean v0, p0, Landroidx/compose/foundation/selection/SelectableElement;->c:Z
+    iget-boolean v0, p0, Landroidx/compose/foundation/selection/SelectableElement;->a:Z
 
     .line 19
     .line 20
@@ -476,52 +477,52 @@
 
     .line 3
     .line 4
-    iget-object v1, p0, Landroidx/compose/foundation/selection/SelectableElement;->d:Landroidx/compose/foundation/interaction/l;
+    iget-boolean p1, v0, Landroidx/compose/foundation/selection/b;->J:Z
 
     .line 5
     .line 6
-    iget-object v2, p0, Landroidx/compose/foundation/selection/SelectableElement;->e:Landroidx/compose/foundation/i0;
+    iget-boolean v1, p0, Landroidx/compose/foundation/selection/SelectableElement;->a:Z
 
     .line 7
     .line 8
-    iget-boolean v3, p0, Landroidx/compose/foundation/selection/SelectableElement;->f:Z
+    if-eq p1, v1, :cond_0
 
     .line 9
     .line 10
-    iget-object v5, p0, Landroidx/compose/foundation/selection/SelectableElement;->g:Landroidx/compose/ui/semantics/g;
+    iput-boolean v1, v0, Landroidx/compose/foundation/selection/b;->J:Z
 
     .line 11
     .line 12
-    iget-object v6, p0, Landroidx/compose/foundation/selection/SelectableElement;->h:Lzh/a;
+    invoke-static {v0}, LT6/b;->x(Landroidx/compose/ui/node/p0;)V
 
     .line 13
     .line 14
-    iget-boolean p1, v0, Landroidx/compose/foundation/selection/b;->J:Z
-
     .line 15
+    :cond_0
+    iget-object v5, p0, Landroidx/compose/foundation/selection/SelectableElement;->e:Landroidx/compose/ui/semantics/g;
+
     .line 16
-    iget-boolean v4, p0, Landroidx/compose/foundation/selection/SelectableElement;->c:Z
-
     .line 17
+    iget-object v6, p0, Landroidx/compose/foundation/selection/SelectableElement;->f:Lka/a;
+
     .line 18
-    if-eq p1, v4, :cond_0
-
     .line 19
+    iget-object v1, p0, Landroidx/compose/foundation/selection/SelectableElement;->b:Landroidx/compose/foundation/interaction/l;
+
     .line 20
-    iput-boolean v4, v0, Landroidx/compose/foundation/selection/b;->J:Z
-
     .line 21
-    .line 22
-    invoke-static {v0}, Lcom/google/android/play/core/appupdate/b;->C(Landroidx/compose/ui/node/v1;)V
+    iget-object v2, p0, Landroidx/compose/foundation/selection/SelectableElement;->c:Landroidx/compose/foundation/G;
 
+    .line 22
     .line 23
+    iget-boolean v3, p0, Landroidx/compose/foundation/selection/SelectableElement;->d:Z
+
     .line 24
     .line 25
-    :cond_0
     const/4 v4, 0x0
 
     .line 26
-    invoke-virtual/range {v0 .. v6}, Landroidx/compose/foundation/a;->H0(Landroidx/compose/foundation/interaction/l;Landroidx/compose/foundation/i0;ZLjava/lang/String;Landroidx/compose/ui/semantics/g;Lzh/a;)V
+    invoke-virtual/range {v0 .. v6}, Landroidx/compose/foundation/a;->F0(Landroidx/compose/foundation/interaction/l;Landroidx/compose/foundation/G;ZLjava/lang/String;Landroidx/compose/ui/semantics/g;Lka/a;)V
 
     .line 27
     .line 28

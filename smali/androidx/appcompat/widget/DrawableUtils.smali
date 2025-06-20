@@ -83,6 +83,10 @@
 
 .method public static canSafelyMutateDrawable(Landroid/graphics/drawable/Drawable;)Z
     .locals 0
+    .param p0    # Landroid/graphics/drawable/Drawable;
+        .annotation build Landroidx/annotation/NonNull;
+        .end annotation
+    .end param
     .annotation runtime Ljava/lang/Deprecated;
     .end annotation
 
@@ -93,6 +97,10 @@
 
 .method public static fixDrawable(Landroid/graphics/drawable/Drawable;)V
     .locals 3
+    .param p0    # Landroid/graphics/drawable/Drawable;
+        .annotation build Landroidx/annotation/NonNull;
+        .end annotation
+    .end param
 
     .line 1
     invoke-virtual {p0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
@@ -251,6 +259,12 @@
 
 .method public static getOpticalBounds(Landroid/graphics/drawable/Drawable;)Landroid/graphics/Rect;
     .locals 4
+    .param p0    # Landroid/graphics/drawable/Drawable;
+        .annotation build Landroidx/annotation/NonNull;
+        .end annotation
+    .end param
+    .annotation build Landroidx/annotation/NonNull;
+    .end annotation
 
     .line 1
     sget v0, Landroid/os/Build$VERSION;->SDK_INT:I
@@ -277,7 +291,7 @@
 
     .line 12
     .line 13
-    invoke-static {p0}, La2/c;->a(Landroid/graphics/Insets;)I
+    invoke-static {p0}, Landroidx/appcompat/widget/b;->a(Landroid/graphics/Insets;)I
 
     .line 14
     .line 15
@@ -285,7 +299,7 @@
     move-result v1
 
     .line 17
-    invoke-static {p0}, La2/c;->m(Landroid/graphics/Insets;)I
+    invoke-static {p0}, Landroidx/appcompat/widget/b;->m(Landroid/graphics/Insets;)I
 
     .line 18
     .line 19
@@ -293,7 +307,7 @@
     move-result v2
 
     .line 21
-    invoke-static {p0}, La2/c;->v(Landroid/graphics/Insets;)I
+    invoke-static {p0}, Landroidx/appcompat/widget/b;->r(Landroid/graphics/Insets;)I
 
     .line 22
     .line 23
@@ -301,7 +315,7 @@
     move-result v3
 
     .line 25
-    invoke-static {p0}, Landroidx/appcompat/widget/a;->a(Landroid/graphics/Insets;)I
+    invoke-static {p0}, Landroidx/appcompat/widget/b;->u(Landroid/graphics/Insets;)I
 
     .line 26
     .line 27
@@ -318,7 +332,7 @@
 
     .line 33
     :cond_0
-    invoke-static {p0}, Le3/b;->B(Landroid/graphics/drawable/Drawable;)Landroid/graphics/drawable/Drawable;
+    invoke-static {p0}, Lcom/facebook/appevents/cloudbridge/c;->v(Landroid/graphics/drawable/Drawable;)Landroid/graphics/drawable/Drawable;
 
     .line 34
     .line 35

@@ -53,26 +53,34 @@
 
     const/4 v0, -0x1
 
+    .line 2
     iput v0, p0, Landroidx/core/graphics/drawable/IconCompat;->a:I
 
     const/4 v0, 0x0
 
+    .line 3
     iput-object v0, p0, Landroidx/core/graphics/drawable/IconCompat;->c:[B
 
+    .line 4
     iput-object v0, p0, Landroidx/core/graphics/drawable/IconCompat;->d:Landroid/os/Parcelable;
 
     const/4 v1, 0x0
 
+    .line 5
     iput v1, p0, Landroidx/core/graphics/drawable/IconCompat;->e:I
 
+    .line 6
     iput v1, p0, Landroidx/core/graphics/drawable/IconCompat;->f:I
 
+    .line 7
     iput-object v0, p0, Landroidx/core/graphics/drawable/IconCompat;->g:Landroid/content/res/ColorStateList;
 
+    .line 8
     sget-object v1, Landroidx/core/graphics/drawable/IconCompat;->k:Landroid/graphics/PorterDuff$Mode;
 
     iput-object v1, p0, Landroidx/core/graphics/drawable/IconCompat;->h:Landroid/graphics/PorterDuff$Mode;
 
+    .line 9
     iput-object v0, p0, Landroidx/core/graphics/drawable/IconCompat;->i:Ljava/lang/String;
 
     return-void
@@ -81,29 +89,37 @@
 .method public constructor <init>(I)V
     .locals 2
 
-    .line 2
+    .line 10
     invoke-direct {p0}, Landroidx/versionedparcelable/CustomVersionedParcelable;-><init>()V
 
     const/4 v0, 0x0
 
+    .line 11
     iput-object v0, p0, Landroidx/core/graphics/drawable/IconCompat;->c:[B
 
+    .line 12
     iput-object v0, p0, Landroidx/core/graphics/drawable/IconCompat;->d:Landroid/os/Parcelable;
 
     const/4 v1, 0x0
 
+    .line 13
     iput v1, p0, Landroidx/core/graphics/drawable/IconCompat;->e:I
 
+    .line 14
     iput v1, p0, Landroidx/core/graphics/drawable/IconCompat;->f:I
 
+    .line 15
     iput-object v0, p0, Landroidx/core/graphics/drawable/IconCompat;->g:Landroid/content/res/ColorStateList;
 
+    .line 16
     sget-object v1, Landroidx/core/graphics/drawable/IconCompat;->k:Landroid/graphics/PorterDuff$Mode;
 
     iput-object v1, p0, Landroidx/core/graphics/drawable/IconCompat;->h:Landroid/graphics/PorterDuff$Mode;
 
+    .line 17
     iput-object v0, p0, Landroidx/core/graphics/drawable/IconCompat;->i:Ljava/lang/String;
 
+    .line 18
     iput p1, p0, Landroidx/core/graphics/drawable/IconCompat;->a:I
 
     return-void
@@ -235,14 +251,14 @@
 
     .line 62
     .line 63
-    const/high16 v7, 0x3d000000    # 0.03125f
+    const/4 v7, 0x0
 
     .line 64
-    .line 65
-    const/4 v8, 0x0
+    const/high16 v8, 0x3d000000    # 0.03125f
 
+    .line 65
     .line 66
-    invoke-virtual {v3, p1, v8, v4, v7}, Landroid/graphics/Paint;->setShadowLayer(FFFI)V
+    invoke-virtual {v3, p1, v7, v4, v8}, Landroid/graphics/Paint;->setShadowLayer(FFFI)V
 
     .line 67
     .line 68
@@ -256,7 +272,7 @@
 
     .line 73
     .line 74
-    invoke-virtual {v3, p1, v8, v8, v4}, Landroid/graphics/Paint;->setShadowLayer(FFFI)V
+    invoke-virtual {v3, p1, v7, v7, v4}, Landroid/graphics/Paint;->setShadowLayer(FFFI)V
 
     .line 75
     .line 76
@@ -378,16 +394,16 @@
     return-object v1
 .end method
 
-.method public static b(Ljava/lang/String;I)Landroidx/core/graphics/drawable/IconCompat;
+.method public static b(ILjava/lang/String;)Landroidx/core/graphics/drawable/IconCompat;
     .locals 2
 
     .line 1
-    invoke-virtual {p0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+    invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
     .line 2
     .line 3
     .line 4
-    if-eqz p1, :cond_0
+    if-eqz p0, :cond_0
 
     .line 5
     .line 6
@@ -403,15 +419,15 @@
     .line 10
     .line 11
     .line 12
-    iput p1, v0, Landroidx/core/graphics/drawable/IconCompat;->e:I
+    iput p0, v0, Landroidx/core/graphics/drawable/IconCompat;->e:I
 
     .line 13
     .line 14
-    iput-object p0, v0, Landroidx/core/graphics/drawable/IconCompat;->b:Ljava/lang/Object;
+    iput-object p1, v0, Landroidx/core/graphics/drawable/IconCompat;->b:Ljava/lang/Object;
 
     .line 15
     .line 16
-    iput-object p0, v0, Landroidx/core/graphics/drawable/IconCompat;->j:Ljava/lang/String;
+    iput-object p1, v0, Landroidx/core/graphics/drawable/IconCompat;->j:Ljava/lang/String;
 
     .line 17
     .line 18
@@ -606,7 +622,7 @@
 
     .line 13
     .line 14
-    invoke-static {v0}, Ls/x0;->m(Ljava/lang/Object;)I
+    invoke-static {v0}, LI/a;->i(Ljava/lang/Object;)I
 
     .line 15
     .line 16
@@ -702,7 +718,7 @@
 
     .line 13
     .line 14
-    invoke-static {v0}, Ls/x0;->r(Ljava/lang/Object;)I
+    invoke-static {v0}, LI/a;->k(Ljava/lang/Object;)I
 
     .line 15
     .line 16
@@ -745,7 +761,7 @@
 
     .line 13
     .line 14
-    invoke-static {v0}, Ls/x0;->s(Ljava/lang/Object;)Landroid/net/Uri;
+    invoke-static {v0}, LI/a;->l(Ljava/lang/Object;)Landroid/net/Uri;
 
     .line 15
     .line 16
@@ -850,7 +866,7 @@
 
     .line 6
     .line 7
-    invoke-static {p0, p1}, Ls/x0;->K(Landroidx/core/graphics/drawable/IconCompat;Landroid/content/Context;)Landroid/graphics/drawable/Icon;
+    invoke-static {p0, p1}, LI/a;->w(Landroidx/core/graphics/drawable/IconCompat;Landroid/content/Context;)Landroid/graphics/drawable/Icon;
 
     .line 8
     .line 9
@@ -1099,41 +1115,41 @@
     .line 103
     .line 104
     .line 105
-    const/4 v1, 0x1
-
-    .line 106
-    new-array v1, v1, [Ljava/lang/Object;
-
-    .line 107
-    .line 108
     invoke-virtual {p0}, Landroidx/core/graphics/drawable/IconCompat;->d()I
 
+    .line 106
+    .line 107
+    .line 108
+    move-result v1
+
     .line 109
+    invoke-static {v1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
     .line 110
     .line 111
-    move-result v2
-
     .line 112
-    invoke-static {v2}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+    move-result-object v1
 
     .line 113
-    .line 114
-    .line 115
-    move-result-object v2
+    const/4 v2, 0x1
 
+    .line 114
+    new-array v2, v2, [Ljava/lang/Object;
+
+    .line 115
     .line 116
     const/4 v3, 0x0
 
     .line 117
-    aput-object v2, v1, v3
+    aput-object v1, v2, v3
 
     .line 118
     .line 119
-    const-string v2, "0x%08x"
+    const-string v1, "0x%08x"
 
     .line 120
     .line 121
-    invoke-static {v2, v1}, Ljava/lang/String;->format(Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;
+    invoke-static {v1, v2}, Ljava/lang/String;->format(Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;
 
     .line 122
     .line 123

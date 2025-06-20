@@ -49,81 +49,87 @@
 
     const/4 v0, 0x0
 
+    .line 2
     iput v0, p0, Lcom/applovin/impl/cc;->g:I
 
+    .line 3
     iput v0, p0, Lcom/applovin/impl/cc;->h:I
 
     const/high16 v1, -0x1000000
 
+    .line 4
     iput v1, p0, Lcom/applovin/impl/cc;->i:I
 
+    .line 5
     iput v1, p0, Lcom/applovin/impl/cc;->j:I
 
+    .line 6
     iput v0, p0, Lcom/applovin/impl/cc;->k:I
 
+    .line 7
     iput v0, p0, Lcom/applovin/impl/cc;->l:I
 
-    .line 2
+    .line 8
     iget-object v0, p1, Lcom/applovin/impl/cc$b;->a:Lcom/applovin/impl/cc$c;
 
     iput-object v0, p0, Lcom/applovin/impl/cc;->a:Lcom/applovin/impl/cc$c;
 
-    .line 3
+    .line 9
     iget-boolean v0, p1, Lcom/applovin/impl/cc$b;->b:Z
 
     iput-boolean v0, p0, Lcom/applovin/impl/cc;->b:Z
 
-    .line 4
+    .line 10
     iget-object v0, p1, Lcom/applovin/impl/cc$b;->c:Landroid/text/SpannedString;
 
     iput-object v0, p0, Lcom/applovin/impl/cc;->c:Landroid/text/SpannedString;
 
-    .line 5
+    .line 11
     iget-object v0, p1, Lcom/applovin/impl/cc$b;->d:Landroid/text/SpannedString;
 
     iput-object v0, p0, Lcom/applovin/impl/cc;->d:Landroid/text/SpannedString;
 
-    .line 6
+    .line 12
     iget-object v0, p1, Lcom/applovin/impl/cc$b;->e:Ljava/lang/String;
 
     iput-object v0, p0, Lcom/applovin/impl/cc;->e:Ljava/lang/String;
 
-    .line 7
+    .line 13
     iget-object v0, p1, Lcom/applovin/impl/cc$b;->f:Ljava/lang/String;
 
     iput-object v0, p0, Lcom/applovin/impl/cc;->f:Ljava/lang/String;
 
-    .line 8
+    .line 14
     iget v0, p1, Lcom/applovin/impl/cc$b;->g:I
 
     iput v0, p0, Lcom/applovin/impl/cc;->g:I
 
-    .line 9
+    .line 15
     iget v0, p1, Lcom/applovin/impl/cc$b;->h:I
 
     iput v0, p0, Lcom/applovin/impl/cc;->h:I
 
-    .line 10
+    .line 16
     iget v0, p1, Lcom/applovin/impl/cc$b;->i:I
 
     iput v0, p0, Lcom/applovin/impl/cc;->i:I
 
-    .line 11
+    .line 17
     iget v0, p1, Lcom/applovin/impl/cc$b;->j:I
 
     iput v0, p0, Lcom/applovin/impl/cc;->j:I
 
-    .line 12
+    .line 18
     iget v0, p1, Lcom/applovin/impl/cc$b;->k:I
 
     iput v0, p0, Lcom/applovin/impl/cc;->k:I
 
-    .line 13
+    .line 19
     iget v0, p1, Lcom/applovin/impl/cc$b;->l:I
 
     iput v0, p0, Lcom/applovin/impl/cc;->l:I
 
-    .line 14
+    .line 20
     iget-boolean p1, p1, Lcom/applovin/impl/cc$b;->m:Z
 
     iput-boolean p1, p0, Lcom/applovin/impl/cc;->m:Z
@@ -134,7 +140,7 @@
 .method public synthetic constructor <init>(Lcom/applovin/impl/cc$b;Lcom/applovin/impl/cc$a;)V
     .locals 0
 
-    .line 15
+    .line 21
     invoke-direct {p0, p1}, Lcom/applovin/impl/cc;-><init>(Lcom/applovin/impl/cc$b;)V
 
     return-void
@@ -143,25 +149,32 @@
 .method public constructor <init>(Lcom/applovin/impl/cc$c;)V
     .locals 2
 
-    .line 16
+    .line 22
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     const/4 v0, 0x0
 
+    .line 23
     iput v0, p0, Lcom/applovin/impl/cc;->g:I
 
+    .line 24
     iput v0, p0, Lcom/applovin/impl/cc;->h:I
 
     const/high16 v1, -0x1000000
 
+    .line 25
     iput v1, p0, Lcom/applovin/impl/cc;->i:I
 
+    .line 26
     iput v1, p0, Lcom/applovin/impl/cc;->j:I
 
+    .line 27
     iput v0, p0, Lcom/applovin/impl/cc;->k:I
 
+    .line 28
     iput v0, p0, Lcom/applovin/impl/cc;->l:I
 
+    .line 29
     iput-object p1, p0, Lcom/applovin/impl/cc;->a:Lcom/applovin/impl/cc$c;
 
     return-void
@@ -215,64 +228,88 @@
 .method public b()Ljava/lang/String;
     .locals 1
 
+    .line 1
     iget-object v0, p0, Lcom/applovin/impl/cc;->f:Ljava/lang/String;
 
+    .line 2
+    .line 3
     return-object v0
 .end method
 
 .method public c()Ljava/lang/String;
     .locals 1
 
+    .line 1
     iget-object v0, p0, Lcom/applovin/impl/cc;->e:Ljava/lang/String;
 
+    .line 2
+    .line 3
     return-object v0
 .end method
 
 .method public d()I
     .locals 1
 
+    .line 1
     iget v0, p0, Lcom/applovin/impl/cc;->h:I
 
+    .line 2
+    .line 3
     return v0
 .end method
 
 .method public e()I
     .locals 1
 
+    .line 1
     iget v0, p0, Lcom/applovin/impl/cc;->l:I
 
+    .line 2
+    .line 3
     return v0
 .end method
 
 .method public f()Landroid/text/SpannedString;
     .locals 1
 
+    .line 1
     iget-object v0, p0, Lcom/applovin/impl/cc;->d:Landroid/text/SpannedString;
 
+    .line 2
+    .line 3
     return-object v0
 .end method
 
 .method public g()I
     .locals 1
 
+    .line 1
     iget v0, p0, Lcom/applovin/impl/cc;->j:I
 
+    .line 2
+    .line 3
     return v0
 .end method
 
 .method public h()I
     .locals 1
 
+    .line 1
     iget v0, p0, Lcom/applovin/impl/cc;->g:I
 
+    .line 2
+    .line 3
     return v0
 .end method
 
 .method public i()I
     .locals 1
 
+    .line 1
     iget v0, p0, Lcom/applovin/impl/cc;->k:I
 
+    .line 2
+    .line 3
     return v0
 .end method
 
@@ -298,16 +335,22 @@
 .method public k()Landroid/text/SpannedString;
     .locals 1
 
+    .line 1
     iget-object v0, p0, Lcom/applovin/impl/cc;->c:Landroid/text/SpannedString;
 
+    .line 2
+    .line 3
     return-object v0
 .end method
 
 .method public l()I
     .locals 1
 
+    .line 1
     iget v0, p0, Lcom/applovin/impl/cc;->i:I
 
+    .line 2
+    .line 3
     return v0
 .end method
 
@@ -333,15 +376,21 @@
 .method public o()Z
     .locals 1
 
+    .line 1
     iget-boolean v0, p0, Lcom/applovin/impl/cc;->b:Z
 
+    .line 2
+    .line 3
     return v0
 .end method
 
 .method public p()Z
     .locals 1
 
+    .line 1
     iget-boolean v0, p0, Lcom/applovin/impl/cc;->m:Z
 
+    .line 2
+    .line 3
     return v0
 .end method

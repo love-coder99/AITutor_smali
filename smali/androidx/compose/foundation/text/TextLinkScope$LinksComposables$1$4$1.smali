@@ -3,14 +3,14 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lzh/c;
+.implements Lka/c;
 
 
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "Lkotlin/jvm/internal/Lambda;",
-        "Lzh/c;"
+        "Lka/c;"
     }
 .end annotation
 
@@ -20,7 +20,7 @@
     }
     d2 = {
         "Landroidx/compose/foundation/text/x;",
-        "Lqh/r;",
+        "LX9/j;",
         "invoke",
         "(Landroidx/compose/foundation/text/x;)V",
         "<anonymous>"
@@ -45,23 +45,23 @@
     .end annotation
 .end field
 
-.field final synthetic this$0:Landroidx/compose/foundation/text/k0;
+.field final synthetic this$0:Landroidx/compose/foundation/text/K;
 
 
 # direct methods
-.method public constructor <init>(Landroidx/compose/foundation/text/k0;Landroidx/compose/ui/text/e;Landroidx/compose/foundation/text/u;)V
+.method public constructor <init>(Landroidx/compose/foundation/text/K;Landroidx/compose/ui/text/e;Landroidx/compose/foundation/text/u;)V
     .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
-            "Landroidx/compose/foundation/text/k0;",
+            "Landroidx/compose/foundation/text/K;",
             "Landroidx/compose/ui/text/e;",
             "Landroidx/compose/foundation/text/u;",
             ")V"
         }
     .end annotation
 
-    iput-object p1, p0, Landroidx/compose/foundation/text/TextLinkScope$LinksComposables$1$4$1;->this$0:Landroidx/compose/foundation/text/k0;
+    iput-object p1, p0, Landroidx/compose/foundation/text/TextLinkScope$LinksComposables$1$4$1;->this$0:Landroidx/compose/foundation/text/K;
 
     iput-object p2, p0, Landroidx/compose/foundation/text/TextLinkScope$LinksComposables$1$4$1;->$range:Landroidx/compose/ui/text/e;
 
@@ -84,7 +84,7 @@
 
     invoke-virtual {p0, p1}, Landroidx/compose/foundation/text/TextLinkScope$LinksComposables$1$4$1;->invoke(Landroidx/compose/foundation/text/x;)V
 
-    sget-object p1, Lqh/r;->a:Lqh/r;
+    sget-object p1, LX9/j;->a:LX9/j;
 
     return-object p1
 .end method
@@ -92,17 +92,19 @@
 .method public final invoke(Landroidx/compose/foundation/text/x;)V
     .locals 4
 
-    iget-object v0, p0, Landroidx/compose/foundation/text/TextLinkScope$LinksComposables$1$4$1;->this$0:Landroidx/compose/foundation/text/k0;
-
-    iget-object v1, p0, Landroidx/compose/foundation/text/TextLinkScope$LinksComposables$1$4$1;->$range:Landroidx/compose/ui/text/e;
-
     .line 2
-    iget-object v1, v1, Landroidx/compose/ui/text/e;->a:Ljava/lang/Object;
+    iget-object v0, p0, Landroidx/compose/foundation/text/TextLinkScope$LinksComposables$1$4$1;->this$0:Landroidx/compose/foundation/text/K;
 
     .line 3
-    check-cast v1, Landroidx/compose/ui/text/k;
+    iget-object v1, p0, Landroidx/compose/foundation/text/TextLinkScope$LinksComposables$1$4$1;->$range:Landroidx/compose/ui/text/e;
 
-    invoke-virtual {v1}, Landroidx/compose/ui/text/k;->b()Landroidx/compose/ui/text/g0;
+    .line 4
+    iget-object v1, v1, Landroidx/compose/ui/text/e;->a:Ljava/lang/Object;
+
+    .line 5
+    check-cast v1, Landroidx/compose/ui/text/l;
+
+    invoke-virtual {v1}, Landroidx/compose/ui/text/l;->a()Landroidx/compose/ui/text/G;
 
     move-result-object v1
 
@@ -110,22 +112,23 @@
 
     if-eqz v1, :cond_0
 
-    .line 4
-    iget-object v1, v1, Landroidx/compose/ui/text/g0;->a:Landroidx/compose/ui/text/a0;
+    .line 6
+    iget-object v1, v1, Landroidx/compose/ui/text/G;->a:Landroidx/compose/ui/text/A;
 
     goto :goto_0
 
     :cond_0
     move-object v1, v2
 
+    .line 7
     :goto_0
     iget-object v3, p0, Landroidx/compose/foundation/text/TextLinkScope$LinksComposables$1$4$1;->$linkStateObserver:Landroidx/compose/foundation/text/u;
 
-    .line 5
+    .line 8
     iget-object v3, v3, Landroidx/compose/foundation/text/u;->a:Landroidx/compose/runtime/ParcelableSnapshotMutableIntState;
 
-    .line 6
-    invoke-virtual {v3}, Landroidx/compose/runtime/p2;->k()I
+    .line 9
+    invoke-virtual {v3}, Landroidx/compose/runtime/ParcelableSnapshotMutableIntState;->k()I
 
     move-result v3
 
@@ -133,161 +136,143 @@
 
     if-eqz v3, :cond_1
 
+    .line 10
     iget-object v3, p0, Landroidx/compose/foundation/text/TextLinkScope$LinksComposables$1$4$1;->$range:Landroidx/compose/ui/text/e;
 
-    .line 7
+    .line 11
     iget-object v3, v3, Landroidx/compose/ui/text/e;->a:Ljava/lang/Object;
 
-    .line 8
-    check-cast v3, Landroidx/compose/ui/text/k;
+    .line 12
+    check-cast v3, Landroidx/compose/ui/text/l;
 
-    invoke-virtual {v3}, Landroidx/compose/ui/text/k;->b()Landroidx/compose/ui/text/g0;
+    invoke-virtual {v3}, Landroidx/compose/ui/text/l;->a()Landroidx/compose/ui/text/G;
 
     move-result-object v3
 
     if-eqz v3, :cond_1
 
-    iget-object v3, v3, Landroidx/compose/ui/text/g0;->b:Landroidx/compose/ui/text/a0;
+    iget-object v3, v3, Landroidx/compose/ui/text/G;->b:Landroidx/compose/ui/text/A;
 
     goto :goto_1
 
     :cond_1
     move-object v3, v2
 
-    .line 9
+    .line 13
     :goto_1
     invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
-    if-eqz v1, :cond_3
+    if-eqz v1, :cond_2
 
-    .line 10
-    invoke-virtual {v1, v3}, Landroidx/compose/ui/text/a0;->c(Landroidx/compose/ui/text/a0;)Landroidx/compose/ui/text/a0;
+    .line 14
+    invoke-virtual {v1, v3}, Landroidx/compose/ui/text/A;->c(Landroidx/compose/ui/text/A;)Landroidx/compose/ui/text/A;
 
-    move-result-object v0
+    move-result-object v3
 
-    if-nez v0, :cond_2
-
-    goto :goto_2
-
+    .line 15
     :cond_2
-    move-object v3, v0
-
-    :cond_3
-    :goto_2
     iget-object v0, p0, Landroidx/compose/foundation/text/TextLinkScope$LinksComposables$1$4$1;->$linkStateObserver:Landroidx/compose/foundation/text/u;
 
-    .line 11
+    .line 16
     iget-object v0, v0, Landroidx/compose/foundation/text/u;->a:Landroidx/compose/runtime/ParcelableSnapshotMutableIntState;
 
-    .line 12
-    invoke-virtual {v0}, Landroidx/compose/runtime/p2;->k()I
+    .line 17
+    invoke-virtual {v0}, Landroidx/compose/runtime/ParcelableSnapshotMutableIntState;->k()I
 
     move-result v0
 
     and-int/lit8 v0, v0, 0x2
 
-    if-eqz v0, :cond_4
+    if-eqz v0, :cond_3
 
+    .line 18
     iget-object v0, p0, Landroidx/compose/foundation/text/TextLinkScope$LinksComposables$1$4$1;->$range:Landroidx/compose/ui/text/e;
 
-    .line 13
+    .line 19
     iget-object v0, v0, Landroidx/compose/ui/text/e;->a:Ljava/lang/Object;
 
-    .line 14
-    check-cast v0, Landroidx/compose/ui/text/k;
+    .line 20
+    check-cast v0, Landroidx/compose/ui/text/l;
 
-    invoke-virtual {v0}, Landroidx/compose/ui/text/k;->b()Landroidx/compose/ui/text/g0;
+    invoke-virtual {v0}, Landroidx/compose/ui/text/l;->a()Landroidx/compose/ui/text/G;
 
     move-result-object v0
 
-    if-eqz v0, :cond_4
+    if-eqz v0, :cond_3
 
-    iget-object v0, v0, Landroidx/compose/ui/text/g0;->c:Landroidx/compose/ui/text/a0;
+    iget-object v0, v0, Landroidx/compose/ui/text/G;->c:Landroidx/compose/ui/text/A;
 
-    goto :goto_3
+    goto :goto_2
 
-    :cond_4
+    :cond_3
     move-object v0, v2
 
-    :goto_3
-    if-eqz v3, :cond_6
+    :goto_2
+    if-eqz v3, :cond_4
 
-    .line 15
-    invoke-virtual {v3, v0}, Landroidx/compose/ui/text/a0;->c(Landroidx/compose/ui/text/a0;)Landroidx/compose/ui/text/a0;
+    .line 21
+    invoke-virtual {v3, v0}, Landroidx/compose/ui/text/A;->c(Landroidx/compose/ui/text/A;)Landroidx/compose/ui/text/A;
 
-    move-result-object v1
+    move-result-object v0
 
-    if-nez v1, :cond_5
-
-    goto :goto_4
-
-    :cond_5
-    move-object v0, v1
-
-    :cond_6
-    :goto_4
+    .line 22
+    :cond_4
     iget-object v1, p0, Landroidx/compose/foundation/text/TextLinkScope$LinksComposables$1$4$1;->$linkStateObserver:Landroidx/compose/foundation/text/u;
 
-    .line 16
+    .line 23
     iget-object v1, v1, Landroidx/compose/foundation/text/u;->a:Landroidx/compose/runtime/ParcelableSnapshotMutableIntState;
 
-    .line 17
-    invoke-virtual {v1}, Landroidx/compose/runtime/p2;->k()I
+    .line 24
+    invoke-virtual {v1}, Landroidx/compose/runtime/ParcelableSnapshotMutableIntState;->k()I
 
     move-result v1
 
     and-int/lit8 v1, v1, 0x4
 
-    if-eqz v1, :cond_7
+    if-eqz v1, :cond_5
 
+    .line 25
     iget-object v1, p0, Landroidx/compose/foundation/text/TextLinkScope$LinksComposables$1$4$1;->$range:Landroidx/compose/ui/text/e;
 
-    .line 18
+    .line 26
     iget-object v1, v1, Landroidx/compose/ui/text/e;->a:Ljava/lang/Object;
 
-    .line 19
-    check-cast v1, Landroidx/compose/ui/text/k;
+    .line 27
+    check-cast v1, Landroidx/compose/ui/text/l;
 
-    invoke-virtual {v1}, Landroidx/compose/ui/text/k;->b()Landroidx/compose/ui/text/g0;
+    invoke-virtual {v1}, Landroidx/compose/ui/text/l;->a()Landroidx/compose/ui/text/G;
 
     move-result-object v1
 
-    if-eqz v1, :cond_7
+    if-eqz v1, :cond_5
 
-    iget-object v2, v1, Landroidx/compose/ui/text/g0;->d:Landroidx/compose/ui/text/a0;
+    iget-object v2, v1, Landroidx/compose/ui/text/G;->d:Landroidx/compose/ui/text/A;
 
-    :cond_7
-    if-eqz v0, :cond_9
+    :cond_5
+    if-eqz v0, :cond_6
 
-    .line 20
-    invoke-virtual {v0, v2}, Landroidx/compose/ui/text/a0;->c(Landroidx/compose/ui/text/a0;)Landroidx/compose/ui/text/a0;
+    .line 28
+    invoke-virtual {v0, v2}, Landroidx/compose/ui/text/A;->c(Landroidx/compose/ui/text/A;)Landroidx/compose/ui/text/A;
 
-    move-result-object v0
+    move-result-object v2
 
-    if-nez v0, :cond_8
+    :cond_6
+    if-eqz v2, :cond_7
 
-    goto :goto_5
-
-    :cond_8
-    move-object v2, v0
-
-    :cond_9
-    :goto_5
-    if-eqz v2, :cond_a
-
+    .line 29
     iget-object v0, p0, Landroidx/compose/foundation/text/TextLinkScope$LinksComposables$1$4$1;->$range:Landroidx/compose/ui/text/e;
 
-    .line 21
+    .line 30
     iget v1, v0, Landroidx/compose/ui/text/e;->b:I
 
-    .line 22
+    .line 31
     iget-object p1, p1, Landroidx/compose/foundation/text/x;->a:Landroidx/compose/ui/text/d;
 
-    .line 23
+    .line 32
     iget v0, v0, Landroidx/compose/ui/text/e;->c:I
 
-    invoke-virtual {p1, v2, v1, v0}, Landroidx/compose/ui/text/d;->a(Landroidx/compose/ui/text/a0;II)V
+    invoke-virtual {p1, v2, v1, v0}, Landroidx/compose/ui/text/d;->a(Landroidx/compose/ui/text/A;II)V
 
-    :cond_a
+    :cond_7
     return-void
 .end method

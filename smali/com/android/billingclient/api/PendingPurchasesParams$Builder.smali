@@ -4,6 +4,9 @@
 
 
 # annotations
+.annotation build Lcom/android/billingclient/api/zzj;
+.end annotation
+
 .annotation system Ldalvik/annotation/EnclosingClass;
     value = Lcom/android/billingclient/api/PendingPurchasesParams;
 .end annotation
@@ -43,6 +46,8 @@
 # virtual methods
 .method public build()Lcom/android/billingclient/api/PendingPurchasesParams;
     .locals 4
+    .annotation build Landroidx/annotation/NonNull;
+    .end annotation
 
     .line 1
     iget-boolean v0, p0, Lcom/android/billingclient/api/PendingPurchasesParams$Builder;->enableOneTimeProducts:Z
@@ -94,6 +99,8 @@
 
 .method public enableOneTimeProducts()Lcom/android/billingclient/api/PendingPurchasesParams$Builder;
     .locals 1
+    .annotation build Landroidx/annotation/NonNull;
+    .end annotation
 
     const/4 v0, 0x1
 
@@ -104,6 +111,8 @@
 
 .method public enablePrepaidPlans()Lcom/android/billingclient/api/PendingPurchasesParams$Builder;
     .locals 1
+    .annotation build Landroidx/annotation/NonNull;
+    .end annotation
 
     const/4 v0, 0x1
 

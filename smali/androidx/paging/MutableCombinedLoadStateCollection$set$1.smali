@@ -3,14 +3,14 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lzh/c;
+.implements Lka/c;
 
 
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "Lkotlin/jvm/internal/Lambda;",
-        "Lzh/c;"
+        "Lka/c;"
     }
 .end annotation
 
@@ -19,10 +19,10 @@
         "\u0000\u0008\n\u0002\u0018\u0002\n\u0002\u0008\u0004\u0010\u0004\u001a\u00020\u00002\u0008\u0010\u0001\u001a\u0004\u0018\u00010\u0000H\n\u00a2\u0006\u0004\u0008\u0002\u0010\u0003"
     }
     d2 = {
-        "Landroidx/paging/h;",
+        "Landroidx/paging/i;",
         "currState",
         "invoke",
-        "(Landroidx/paging/h;)Landroidx/paging/h;",
+        "(Landroidx/paging/i;)Landroidx/paging/i;",
         "<anonymous>"
     }
     k = 0x3
@@ -35,22 +35,22 @@
 
 
 # instance fields
-.field final synthetic $remoteLoadStates:Landroidx/paging/c0;
+.field final synthetic $remoteLoadStates:Landroidx/paging/A;
 
-.field final synthetic $sourceLoadStates:Landroidx/paging/c0;
+.field final synthetic $sourceLoadStates:Landroidx/paging/A;
 
-.field final synthetic this$0:Landroidx/paging/e0;
+.field final synthetic this$0:Landroidx/paging/C;
 
 
 # direct methods
-.method public constructor <init>(Landroidx/paging/e0;Landroidx/paging/c0;Landroidx/paging/c0;)V
+.method public constructor <init>(Landroidx/paging/C;Landroidx/paging/A;Landroidx/paging/A;)V
     .locals 0
 
-    iput-object p1, p0, Landroidx/paging/MutableCombinedLoadStateCollection$set$1;->this$0:Landroidx/paging/e0;
+    iput-object p1, p0, Landroidx/paging/MutableCombinedLoadStateCollection$set$1;->this$0:Landroidx/paging/C;
 
-    iput-object p2, p0, Landroidx/paging/MutableCombinedLoadStateCollection$set$1;->$sourceLoadStates:Landroidx/paging/c0;
+    iput-object p2, p0, Landroidx/paging/MutableCombinedLoadStateCollection$set$1;->$sourceLoadStates:Landroidx/paging/A;
 
-    iput-object p3, p0, Landroidx/paging/MutableCombinedLoadStateCollection$set$1;->$remoteLoadStates:Landroidx/paging/c0;
+    iput-object p3, p0, Landroidx/paging/MutableCombinedLoadStateCollection$set$1;->$remoteLoadStates:Landroidx/paging/A;
 
     const/4 p1, 0x1
 
@@ -61,17 +61,17 @@
 
 
 # virtual methods
-.method public final invoke(Landroidx/paging/h;)Landroidx/paging/h;
+.method public final invoke(Landroidx/paging/i;)Landroidx/paging/i;
     .locals 3
 
-    iget-object v0, p0, Landroidx/paging/MutableCombinedLoadStateCollection$set$1;->this$0:Landroidx/paging/e0;
-
-    iget-object v1, p0, Landroidx/paging/MutableCombinedLoadStateCollection$set$1;->$sourceLoadStates:Landroidx/paging/c0;
-
-    iget-object v2, p0, Landroidx/paging/MutableCombinedLoadStateCollection$set$1;->$remoteLoadStates:Landroidx/paging/c0;
-
     .line 2
-    invoke-static {v0, p1, v1, v2}, Landroidx/paging/e0;->a(Landroidx/paging/e0;Landroidx/paging/h;Landroidx/paging/c0;Landroidx/paging/c0;)Landroidx/paging/h;
+    iget-object v0, p0, Landroidx/paging/MutableCombinedLoadStateCollection$set$1;->this$0:Landroidx/paging/C;
+
+    iget-object v1, p0, Landroidx/paging/MutableCombinedLoadStateCollection$set$1;->$sourceLoadStates:Landroidx/paging/A;
+
+    iget-object v2, p0, Landroidx/paging/MutableCombinedLoadStateCollection$set$1;->$remoteLoadStates:Landroidx/paging/A;
+
+    invoke-static {v0, p1, v1, v2}, Landroidx/paging/C;->a(Landroidx/paging/C;Landroidx/paging/i;Landroidx/paging/A;Landroidx/paging/A;)Landroidx/paging/i;
 
     move-result-object p1
 
@@ -82,9 +82,9 @@
     .locals 0
 
     .line 1
-    check-cast p1, Landroidx/paging/h;
+    check-cast p1, Landroidx/paging/i;
 
-    invoke-virtual {p0, p1}, Landroidx/paging/MutableCombinedLoadStateCollection$set$1;->invoke(Landroidx/paging/h;)Landroidx/paging/h;
+    invoke-virtual {p0, p1}, Landroidx/paging/MutableCombinedLoadStateCollection$set$1;->invoke(Landroidx/paging/i;)Landroidx/paging/i;
 
     move-result-object p1
 

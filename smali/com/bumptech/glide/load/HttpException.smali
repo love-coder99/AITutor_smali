@@ -17,9 +17,9 @@
 .method public constructor <init>(I)V
     .locals 1
 
+    .line 1
     const-string v0, "Http request failed"
 
-    .line 1
     invoke-direct {p0, v0, p1}, Lcom/bumptech/glide/load/HttpException;-><init>(Ljava/lang/String;I)V
 
     return-void
@@ -51,6 +51,10 @@
 
 .method public constructor <init>(Ljava/lang/String;ILjava/lang/Throwable;)V
     .locals 1
+    .param p3    # Ljava/lang/Throwable;
+        .annotation build Landroidx/annotation/Nullable;
+        .end annotation
+    .end param
 
     .line 4
     new-instance v0, Ljava/lang/StringBuilder;
@@ -71,6 +75,7 @@
 
     invoke-direct {p0, p1, p3}, Ljava/io/IOException;-><init>(Ljava/lang/String;Ljava/lang/Throwable;)V
 
+    .line 5
     iput p2, p0, Lcom/bumptech/glide/load/HttpException;->statusCode:I
 
     return-void
@@ -81,7 +86,10 @@
 .method public getStatusCode()I
     .locals 1
 
+    .line 1
     iget v0, p0, Lcom/bumptech/glide/load/HttpException;->statusCode:I
 
+    .line 2
+    .line 3
     return v0
 .end method

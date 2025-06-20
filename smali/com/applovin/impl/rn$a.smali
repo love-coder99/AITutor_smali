@@ -130,9 +130,9 @@
 .method private static synthetic a()[Lcom/applovin/impl/rn$a;
     .locals 3
 
-    .line 1
     const/4 v0, 0x3
 
+    .line 1
     new-array v0, v0, [Lcom/applovin/impl/rn$a;
 
     sget-object v1, Lcom/applovin/impl/rn$a;->a:Lcom/applovin/impl/rn$a;
@@ -159,24 +159,38 @@
 .method private static b(I)Lcom/applovin/impl/rn$a;
     .locals 1
 
+    .line 1
     if-eqz p0, :cond_1
 
+    .line 2
+    .line 3
     const/4 v0, 0x1
 
+    .line 4
     if-eq p0, v0, :cond_0
 
+    .line 5
+    .line 6
     sget-object p0, Lcom/applovin/impl/rn$a;->c:Lcom/applovin/impl/rn$a;
 
+    .line 7
+    .line 8
     return-object p0
 
+    .line 9
     :cond_0
     sget-object p0, Lcom/applovin/impl/rn$a;->b:Lcom/applovin/impl/rn$a;
 
+    .line 10
+    .line 11
     return-object p0
 
+    .line 12
     :cond_1
     sget-object p0, Lcom/applovin/impl/rn$a;->a:Lcom/applovin/impl/rn$a;
 
+    .line 13
+    .line 14
     return-object p0
 .end method
 

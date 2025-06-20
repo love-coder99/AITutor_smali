@@ -3,7 +3,7 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lzh/a;
+.implements Lka/a;
 
 
 # annotations
@@ -19,7 +19,7 @@
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "Lkotlin/jvm/internal/Lambda;",
-        "Lzh/a;"
+        "Lka/a;"
     }
 .end annotation
 
@@ -44,14 +44,14 @@
 
 
 # instance fields
-.field final synthetic this$0:Landroidx/compose/ui/tooling/animation/q;
+.field final synthetic this$0:Landroidx/compose/ui/tooling/animation/l;
 
 
 # direct methods
-.method public constructor <init>(Landroidx/compose/ui/tooling/animation/q;)V
+.method public constructor <init>(Landroidx/compose/ui/tooling/animation/l;)V
     .locals 0
 
-    iput-object p1, p0, Landroidx/compose/ui/tooling/animation/PreviewAnimationClock$trackInfiniteTransition$1$1$1;->this$0:Landroidx/compose/ui/tooling/animation/q;
+    iput-object p1, p0, Landroidx/compose/ui/tooling/animation/PreviewAnimationClock$trackInfiniteTransition$1$1$1;->this$0:Landroidx/compose/ui/tooling/animation/l;
 
     const/4 p1, 0x0
 
@@ -65,32 +65,19 @@
 .method public final invoke()Ljava/lang/Long;
     .locals 8
 
-    iget-object v0, p0, Landroidx/compose/ui/tooling/animation/PreviewAnimationClock$trackInfiniteTransition$1$1$1;->this$0:Landroidx/compose/ui/tooling/animation/q;
-
-    .line 1
-    iget-object v1, v0, Landroidx/compose/ui/tooling/animation/q;->a:Ljava/util/LinkedHashMap;
-
     .line 2
+    iget-object v0, p0, Landroidx/compose/ui/tooling/animation/PreviewAnimationClock$trackInfiniteTransition$1$1$1;->this$0:Landroidx/compose/ui/tooling/animation/l;
+
+    .line 3
+    iget-object v1, v0, Landroidx/compose/ui/tooling/animation/l;->a:Ljava/util/LinkedHashMap;
+
+    .line 4
     invoke-virtual {v1}, Ljava/util/LinkedHashMap;->values()Ljava/util/Collection;
 
     move-result-object v1
 
-    .line 3
-    iget-object v2, v0, Landroidx/compose/ui/tooling/animation/q;->b:Ljava/util/LinkedHashMap;
-
-    invoke-virtual {v2}, Ljava/util/LinkedHashMap;->values()Ljava/util/Collection;
-
-    move-result-object v2
-
-    check-cast v2, Ljava/lang/Iterable;
-
-    .line 4
-    invoke-static {v2, v1}, Lkotlin/collections/w;->U0(Ljava/lang/Iterable;Ljava/util/Collection;)Ljava/util/ArrayList;
-
-    move-result-object v1
-
     .line 5
-    iget-object v2, v0, Landroidx/compose/ui/tooling/animation/q;->c:Ljava/util/LinkedHashMap;
+    iget-object v2, v0, Landroidx/compose/ui/tooling/animation/l;->b:Ljava/util/LinkedHashMap;
 
     invoke-virtual {v2}, Ljava/util/LinkedHashMap;->values()Ljava/util/Collection;
 
@@ -99,12 +86,26 @@
     check-cast v2, Ljava/lang/Iterable;
 
     .line 6
-    invoke-static {v2, v1}, Lkotlin/collections/w;->U0(Ljava/lang/Iterable;Ljava/util/Collection;)Ljava/util/ArrayList;
+    invoke-static {v1, v2}, LY9/q;->a0(Ljava/util/Collection;Ljava/lang/Iterable;)Ljava/util/ArrayList;
 
     move-result-object v1
 
     .line 7
-    iget-object v0, v0, Landroidx/compose/ui/tooling/animation/q;->e:Ljava/util/LinkedHashMap;
+    iget-object v2, v0, Landroidx/compose/ui/tooling/animation/l;->c:Ljava/util/LinkedHashMap;
+
+    invoke-virtual {v2}, Ljava/util/LinkedHashMap;->values()Ljava/util/Collection;
+
+    move-result-object v2
+
+    check-cast v2, Ljava/lang/Iterable;
+
+    .line 8
+    invoke-static {v1, v2}, LY9/q;->a0(Ljava/util/Collection;Ljava/lang/Iterable;)Ljava/util/ArrayList;
+
+    move-result-object v1
+
+    .line 9
+    iget-object v0, v0, Landroidx/compose/ui/tooling/animation/l;->e:Ljava/util/LinkedHashMap;
 
     invoke-virtual {v0}, Ljava/util/LinkedHashMap;->values()Ljava/util/Collection;
 
@@ -112,12 +113,12 @@
 
     check-cast v0, Ljava/lang/Iterable;
 
-    .line 8
-    invoke-static {v0, v1}, Lkotlin/collections/w;->U0(Ljava/lang/Iterable;Ljava/util/Collection;)Ljava/util/ArrayList;
+    .line 10
+    invoke-static {v1, v0}, LY9/q;->a0(Ljava/util/Collection;Ljava/lang/Iterable;)Ljava/util/ArrayList;
 
     move-result-object v0
 
-    .line 9
+    .line 11
     invoke-virtual {v0}, Ljava/util/ArrayList;->iterator()Ljava/util/Iterator;
 
     move-result-object v0
@@ -139,9 +140,9 @@
 
     move-result-object v1
 
-    check-cast v1, Le2/c;
+    check-cast v1, LJ0/b;
 
-    invoke-interface {v1}, Le2/c;->a()J
+    invoke-interface {v1}, LJ0/b;->a()J
 
     move-result-wide v3
 
@@ -161,9 +162,9 @@
 
     move-result-object v3
 
-    check-cast v3, Le2/c;
+    check-cast v3, LJ0/b;
 
-    invoke-interface {v3}, Le2/c;->a()J
+    invoke-interface {v3}, LJ0/b;->a()J
 
     move-result-wide v3
 
@@ -196,13 +197,14 @@
     :cond_3
     move-wide v0, v3
 
+    .line 12
     :goto_2
-    iget-object v5, p0, Landroidx/compose/ui/tooling/animation/PreviewAnimationClock$trackInfiniteTransition$1$1$1;->this$0:Landroidx/compose/ui/tooling/animation/q;
+    iget-object v5, p0, Landroidx/compose/ui/tooling/animation/PreviewAnimationClock$trackInfiniteTransition$1$1$1;->this$0:Landroidx/compose/ui/tooling/animation/l;
 
-    .line 10
-    iget-object v5, v5, Landroidx/compose/ui/tooling/animation/q;->d:Ljava/util/LinkedHashMap;
+    .line 13
+    iget-object v5, v5, Landroidx/compose/ui/tooling/animation/l;->d:Ljava/util/LinkedHashMap;
 
-    .line 11
+    .line 14
     invoke-virtual {v5}, Ljava/util/LinkedHashMap;->values()Ljava/util/Collection;
 
     move-result-object v5
@@ -226,10 +228,10 @@
 
     move-result-object v2
 
-    check-cast v2, Le2/d;
+    check-cast v2, LJ0/c;
 
-    .line 12
-    invoke-virtual {v2}, Le2/d;->c()J
+    .line 15
+    invoke-virtual {v2}, LJ0/c;->c()J
 
     move-result-wide v6
 
@@ -237,7 +239,7 @@
 
     move-result-object v2
 
-    .line 13
+    .line 16
     :cond_5
     :goto_3
     invoke-interface {v5}, Ljava/util/Iterator;->hasNext()Z
@@ -250,10 +252,10 @@
 
     move-result-object v6
 
-    check-cast v6, Le2/d;
+    check-cast v6, LJ0/c;
 
-    .line 14
-    invoke-virtual {v6}, Le2/d;->c()J
+    .line 17
+    invoke-virtual {v6}, LJ0/c;->c()J
 
     move-result-wide v6
 
@@ -261,7 +263,7 @@
 
     move-result-object v6
 
-    .line 15
+    .line 18
     invoke-virtual {v2, v6}, Ljava/lang/Long;->compareTo(Ljava/lang/Object;)I
 
     move-result v7
@@ -280,7 +282,7 @@
 
     move-result-wide v3
 
-    .line 16
+    .line 19
     :cond_7
     invoke-static {v0, v1, v3, v4}, Ljava/lang/Math;->max(JJ)J
 
@@ -296,7 +298,7 @@
 .method public bridge synthetic invoke()Ljava/lang/Object;
     .locals 1
 
-    .line 17
+    .line 1
     invoke-virtual {p0}, Landroidx/compose/ui/tooling/animation/PreviewAnimationClock$trackInfiniteTransition$1$1$1;->invoke()Ljava/lang/Long;
 
     move-result-object v0

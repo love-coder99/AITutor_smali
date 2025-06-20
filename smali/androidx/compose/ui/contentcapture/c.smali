@@ -3,20 +3,20 @@
 .source "SourceFile"
 
 # interfaces
-.implements Landroidx/lifecycle/e;
+.implements Landroidx/lifecycle/f;
 .implements Landroid/view/View$OnAttachStateChangeListener;
 
 
 # instance fields
-.field public final b:Landroidx/compose/ui/platform/r;
+.field public final b:Landroidx/compose/ui/platform/o;
 
-.field public final c:Lzh/a;
+.field public final c:Lka/a;
 
-.field public d:Lx1/d;
+.field public d:LC0/g;
 
-.field public final f:Landroidx/collection/t;
+.field public final f:Landroidx/collection/s;
 
-.field public final g:Landroidx/collection/u;
+.field public final g:Landroidx/collection/t;
 
 .field public final h:J
 
@@ -30,21 +30,21 @@
 
 .field public final m:Landroid/os/Handler;
 
-.field public n:Landroidx/collection/t;
+.field public n:Landroidx/collection/s;
 
 .field public o:J
 
-.field public final p:Landroidx/collection/t;
+.field public final p:Landroidx/collection/s;
 
-.field public q:Landroidx/compose/ui/platform/m2;
+.field public q:Landroidx/compose/ui/platform/D0;
 
 .field public r:Z
 
-.field public final s:Landroidx/camera/camera2/internal/b;
+.field public final s:Landroidx/activity/l;
 
 
 # direct methods
-.method public constructor <init>(Landroidx/compose/ui/platform/r;Lzh/a;)V
+.method public constructor <init>(Landroidx/compose/ui/platform/o;Lka/a;)V
     .locals 2
 
     .line 1
@@ -53,37 +53,37 @@
     .line 2
     .line 3
     .line 4
-    iput-object p1, p0, Landroidx/compose/ui/contentcapture/c;->b:Landroidx/compose/ui/platform/r;
+    iput-object p1, p0, Landroidx/compose/ui/contentcapture/c;->b:Landroidx/compose/ui/platform/o;
 
     .line 5
     .line 6
-    iput-object p2, p0, Landroidx/compose/ui/contentcapture/c;->c:Lzh/a;
+    iput-object p2, p0, Landroidx/compose/ui/contentcapture/c;->c:Lka/a;
 
     .line 7
     .line 8
-    new-instance p2, Landroidx/collection/t;
+    new-instance p2, Landroidx/collection/s;
 
     .line 9
     .line 10
-    invoke-direct {p2}, Landroidx/collection/t;-><init>()V
+    invoke-direct {p2}, Landroidx/collection/s;-><init>()V
 
     .line 11
     .line 12
     .line 13
-    iput-object p2, p0, Landroidx/compose/ui/contentcapture/c;->f:Landroidx/collection/t;
+    iput-object p2, p0, Landroidx/compose/ui/contentcapture/c;->f:Landroidx/collection/s;
 
     .line 14
     .line 15
-    new-instance p2, Landroidx/collection/u;
+    new-instance p2, Landroidx/collection/t;
 
     .line 16
     .line 17
-    invoke-direct {p2}, Landroidx/collection/u;-><init>()V
+    invoke-direct {p2}, Landroidx/collection/t;-><init>()V
 
     .line 18
     .line 19
     .line 20
-    iput-object p2, p0, Landroidx/compose/ui/contentcapture/c;->g:Landroidx/collection/u;
+    iput-object p2, p0, Landroidx/compose/ui/contentcapture/c;->g:Landroidx/collection/t;
 
     .line 21
     .line 22
@@ -132,7 +132,7 @@
     const/4 v1, 0x0
 
     .line 43
-    invoke-static {p2, v1, v0}, Lcom/google/android/material/internal/f0;->a(ILkotlinx/coroutines/channels/BufferOverflow;I)Lkotlinx/coroutines/channels/b;
+    invoke-static {p2, v0, v1}, Lkotlinx/coroutines/channels/k;->a(IILkotlinx/coroutines/channels/BufferOverflow;)Lkotlinx/coroutines/channels/b;
 
     .line 44
     .line 45
@@ -165,32 +165,32 @@
 
     .line 59
     .line 60
-    sget-object p2, Landroidx/collection/l;->a:Landroidx/collection/t;
+    sget-object p2, Landroidx/collection/k;->a:Landroidx/collection/s;
 
     .line 61
     .line 62
-    iput-object p2, p0, Landroidx/compose/ui/contentcapture/c;->n:Landroidx/collection/t;
+    iput-object p2, p0, Landroidx/compose/ui/contentcapture/c;->n:Landroidx/collection/s;
 
     .line 63
     .line 64
-    new-instance v0, Landroidx/collection/t;
+    new-instance v0, Landroidx/collection/s;
 
     .line 65
     .line 66
-    invoke-direct {v0}, Landroidx/collection/t;-><init>()V
+    invoke-direct {v0}, Landroidx/collection/s;-><init>()V
 
     .line 67
     .line 68
     .line 69
-    iput-object v0, p0, Landroidx/compose/ui/contentcapture/c;->p:Landroidx/collection/t;
+    iput-object v0, p0, Landroidx/compose/ui/contentcapture/c;->p:Landroidx/collection/s;
 
     .line 70
     .line 71
-    new-instance v0, Landroidx/compose/ui/platform/m2;
+    new-instance v0, Landroidx/compose/ui/platform/D0;
 
     .line 72
     .line 73
-    invoke-virtual {p1}, Landroidx/compose/ui/platform/r;->getSemanticsOwner()Landroidx/compose/ui/semantics/p;
+    invoke-virtual {p1}, Landroidx/compose/ui/platform/o;->getSemanticsOwner()Landroidx/compose/ui/semantics/o;
 
     .line 74
     .line 75
@@ -198,7 +198,7 @@
     move-result-object p1
 
     .line 77
-    invoke-virtual {p1}, Landroidx/compose/ui/semantics/p;->a()Landroidx/compose/ui/semantics/o;
+    invoke-virtual {p1}, Landroidx/compose/ui/semantics/o;->a()Landroidx/compose/ui/semantics/n;
 
     .line 78
     .line 79
@@ -206,38 +206,37 @@
     move-result-object p1
 
     .line 81
-    invoke-direct {v0, p1, p2}, Landroidx/compose/ui/platform/m2;-><init>(Landroidx/compose/ui/semantics/o;Landroidx/collection/t;)V
+    invoke-direct {v0, p1, p2}, Landroidx/compose/ui/platform/D0;-><init>(Landroidx/compose/ui/semantics/n;Landroidx/collection/s;)V
 
     .line 82
     .line 83
     .line 84
-    iput-object v0, p0, Landroidx/compose/ui/contentcapture/c;->q:Landroidx/compose/ui/platform/m2;
+    iput-object v0, p0, Landroidx/compose/ui/contentcapture/c;->q:Landroidx/compose/ui/platform/D0;
 
     .line 85
     .line 86
-    new-instance p1, Landroidx/camera/camera2/internal/b;
+    new-instance p1, Landroidx/activity/l;
 
     .line 87
     .line 88
-    const/16 p2, 0x1b
+    const/4 p2, 0x7
 
     .line 89
-    .line 90
-    invoke-direct {p1, p0, p2}, Landroidx/camera/camera2/internal/b;-><init>(Ljava/lang/Object;I)V
+    invoke-direct {p1, p0, p2}, Landroidx/activity/l;-><init>(Ljava/lang/Object;I)V
 
+    .line 90
     .line 91
     .line 92
-    .line 93
-    iput-object p1, p0, Landroidx/compose/ui/contentcapture/c;->s:Landroidx/camera/camera2/internal/b;
+    iput-object p1, p0, Landroidx/compose/ui/contentcapture/c;->s:Landroidx/activity/l;
 
+    .line 93
     .line 94
-    .line 95
     return-void
 .end method
 
 
 # virtual methods
-.method public final a(Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
+.method public final a(Lkotlin/coroutines/jvm/internal/ContinuationImpl;)Ljava/lang/Object;
     .locals 8
 
     .line 1
@@ -520,7 +519,7 @@
 
     .line 128
     .line 129
-    iget-object v6, v5, Landroidx/compose/ui/contentcapture/c;->s:Landroidx/camera/camera2/internal/b;
+    iget-object v6, v5, Landroidx/compose/ui/contentcapture/c;->s:Landroidx/activity/l;
 
     .line 130
     .line 131
@@ -555,7 +554,7 @@
 
     .line 146
     .line 147
-    invoke-static {v6, v7, v0}, Lf7/l;->g(JLkotlin/coroutines/Continuation;)Ljava/lang/Object;
+    invoke-static {v6, v7, v0}, Lkotlinx/coroutines/w;->i(JLkotlin/coroutines/Continuation;)Ljava/lang/Object;
 
     .line 148
     .line 149
@@ -582,7 +581,7 @@
     .line 157
     .line 158
     .line 159
-    sget-object p1, Lqh/r;->a:Lqh/r;
+    sget-object p1, LX9/j;->a:LX9/j;
 
     .line 160
     .line 161
@@ -616,7 +615,7 @@
     throw p1
 .end method
 
-.method public final b()Landroidx/collection/t;
+.method public final c()Landroidx/collection/s;
     .locals 2
 
     .line 1
@@ -635,11 +634,11 @@
 
     .line 7
     .line 8
-    iget-object v0, p0, Landroidx/compose/ui/contentcapture/c;->b:Landroidx/compose/ui/platform/r;
+    iget-object v0, p0, Landroidx/compose/ui/contentcapture/c;->b:Landroidx/compose/ui/platform/o;
 
     .line 9
     .line 10
-    invoke-virtual {v0}, Landroidx/compose/ui/platform/r;->getSemanticsOwner()Landroidx/compose/ui/semantics/p;
+    invoke-virtual {v0}, Landroidx/compose/ui/platform/o;->getSemanticsOwner()Landroidx/compose/ui/semantics/o;
 
     .line 11
     .line 12
@@ -647,7 +646,7 @@
     move-result-object v0
 
     .line 14
-    invoke-static {v0}, Landroidx/compose/ui/platform/o2;->a(Landroidx/compose/ui/semantics/p;)Landroidx/collection/t;
+    invoke-static {v0}, Landroidx/compose/ui/platform/d0;->r(Landroidx/compose/ui/semantics/o;)Landroidx/collection/s;
 
     .line 15
     .line 16
@@ -655,7 +654,7 @@
     move-result-object v0
 
     .line 18
-    iput-object v0, p0, Landroidx/compose/ui/contentcapture/c;->n:Landroidx/collection/t;
+    iput-object v0, p0, Landroidx/compose/ui/contentcapture/c;->n:Landroidx/collection/s;
 
     .line 19
     .line 20
@@ -672,7 +671,7 @@
     .line 25
     .line 26
     :cond_0
-    iget-object v0, p0, Landroidx/compose/ui/contentcapture/c;->n:Landroidx/collection/t;
+    iget-object v0, p0, Landroidx/compose/ui/contentcapture/c;->n:Landroidx/collection/s;
 
     .line 27
     .line 28
@@ -683,17 +682,24 @@
     .locals 1
 
     .line 1
-    iget-object v0, p0, Landroidx/compose/ui/contentcapture/c;->d:Lx1/d;
+    iget-object v0, p0, Landroidx/compose/ui/contentcapture/c;->d:LC0/g;
 
+    .line 2
+    .line 3
     if-eqz v0, :cond_0
 
+    .line 4
+    .line 5
     const/4 v0, 0x1
 
+    .line 6
     goto :goto_0
 
+    .line 7
     :cond_0
     const/4 v0, 0x0
 
+    .line 8
     :goto_0
     return v0
 .end method
@@ -706,7 +712,7 @@
 
     .line 2
     .line 3
-    iget-object v1, v0, Landroidx/compose/ui/contentcapture/c;->d:Lx1/d;
+    iget-object v1, v0, Landroidx/compose/ui/contentcapture/c;->d:LC0/g;
 
     .line 4
     .line 5
@@ -734,903 +740,900 @@
 
     .line 15
     :cond_1
-    iget-object v2, v0, Landroidx/compose/ui/contentcapture/c;->f:Landroidx/collection/t;
+    iget-object v2, v0, Landroidx/compose/ui/contentcapture/c;->f:Landroidx/collection/s;
 
     .line 16
     .line 17
-    iget v4, v2, Landroidx/collection/t;->e:I
+    iget v4, v2, Landroidx/collection/s;->e:I
 
     .line 18
     .line 19
-    iget-object v5, v1, Lx1/d;->a:Ljava/lang/Object;
+    iget-object v5, v1, LC0/g;->a:Ljava/lang/Object;
 
     .line 20
     .line 21
-    const-string v8, "TREAT_AS_VIEW_TREE_APPEARED"
+    const-string v7, "TREAT_AS_VIEW_TREE_APPEARED"
 
     .line 22
     .line 23
-    const-string v9, "TREAT_AS_VIEW_TREE_APPEARING"
+    const-string v8, "TREAT_AS_VIEW_TREE_APPEARING"
 
     .line 24
     .line 25
-    const/4 v15, 0x7
+    const/4 v14, 0x7
 
     .line 26
-    const-wide v16, -0x7f7f7f7f7f7f7f80L    # -2.937446524422997E-306
+    const-wide v15, -0x7f7f7f7f7f7f7f80L    # -2.937446524422997E-306
 
     .line 27
     .line 28
     .line 29
     .line 30
     .line 31
-    iget-object v1, v1, Lx1/d;->b:Landroid/view/View;
+    const/16 v17, 0x0
 
     .line 32
     .line 33
-    if-eqz v4, :cond_a
+    iget-object v1, v1, LC0/g;->b:Landroid/view/View;
 
     .line 34
     .line 35
-    new-instance v4, Ljava/util/ArrayList;
+    if-eqz v4, :cond_b
 
     .line 36
     .line 37
-    invoke-direct {v4}, Ljava/util/ArrayList;-><init>()V
+    new-instance v4, Ljava/util/ArrayList;
 
     .line 38
     .line 39
-    .line 40
-    iget-object v7, v2, Landroidx/collection/t;->c:[Ljava/lang/Object;
+    invoke-direct {v4}, Ljava/util/ArrayList;-><init>()V
 
+    .line 40
     .line 41
     .line 42
-    iget-object v3, v2, Landroidx/collection/t;->a:[J
+    iget-object v3, v2, Landroidx/collection/s;->c:[Ljava/lang/Object;
 
     .line 43
     .line 44
-    array-length v10, v3
+    iget-object v9, v2, Landroidx/collection/s;->a:[J
 
     .line 45
-    add-int/lit8 v10, v10, -0x2
-
     .line 46
+    array-length v10, v9
+
     .line 47
-    if-ltz v10, :cond_5
+    add-int/lit8 v10, v10, -0x2
 
     .line 48
     .line 49
-    const/4 v11, 0x0
+    if-ltz v10, :cond_5
 
     .line 50
-    :goto_0
-    aget-wide v13, v3, v11
-
     .line 51
+    const/4 v11, 0x0
+
     .line 52
-    move-object/from16 v22, v7
+    :goto_0
+    aget-wide v12, v9, v11
 
     .line 53
     .line 54
-    not-long v6, v13
+    move-object/from16 v22, v7
 
     .line 55
-    shl-long/2addr v6, v15
-
     .line 56
-    and-long/2addr v6, v13
+    not-long v6, v12
 
     .line 57
-    and-long v6, v6, v16
+    shl-long/2addr v6, v14
 
     .line 58
+    and-long/2addr v6, v12
+
     .line 59
-    cmp-long v23, v6, v16
+    and-long/2addr v6, v15
 
     .line 60
+    cmp-long v23, v6, v15
+
     .line 61
+    .line 62
     if-eqz v23, :cond_4
 
-    .line 62
     .line 63
+    .line 64
     sub-int v6, v11, v10
 
-    .line 64
     .line 65
+    .line 66
     not-int v6, v6
 
-    .line 66
+    .line 67
     ushr-int/lit8 v6, v6, 0x1f
 
-    .line 67
     .line 68
+    .line 69
     const/16 v7, 0x8
 
-    .line 69
     .line 70
+    .line 71
     rsub-int/lit8 v6, v6, 0x8
 
-    .line 71
     .line 72
+    .line 73
     const/4 v7, 0x0
 
-    .line 73
+    .line 74
     :goto_1
     if-ge v7, v6, :cond_3
 
-    .line 74
     .line 75
+    .line 76
     const-wide/16 v20, 0xff
 
-    .line 76
     .line 77
-    and-long v23, v13, v20
-
     .line 78
+    and-long v23, v12, v20
+
     .line 79
+    .line 80
     const-wide/16 v18, 0x80
 
-    .line 80
     .line 81
+    .line 82
     cmp-long v25, v23, v18
 
-    .line 82
     .line 83
+    .line 84
     if-gez v25, :cond_2
 
-    .line 84
     .line 85
+    .line 86
     shl-int/lit8 v23, v11, 0x3
 
-    .line 86
     .line 87
+    .line 88
     add-int v23, v23, v7
 
-    .line 88
     .line 89
-    aget-object v23, v22, v23
-
     .line 90
+    aget-object v23, v3, v23
+
     .line 91
-    move-object/from16 v12, v23
-
     .line 92
+    move-object/from16 v15, v23
+
     .line 93
-    check-cast v12, Lx1/i;
-
     .line 94
-    .line 95
-    invoke-virtual {v4, v12}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
+    check-cast v15, LC0/l;
 
+    .line 95
     .line 96
+    invoke-virtual {v4, v15}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
+
     .line 97
     .line 98
-    :cond_2
-    const/16 v12, 0x8
-
     .line 99
-    .line 100
-    shr-long/2addr v13, v12
+    :cond_2
+    const/16 v15, 0x8
 
+    .line 100
     .line 101
-    add-int/lit8 v7, v7, 0x1
+    shr-long/2addr v12, v15
 
     .line 102
-    .line 103
-    goto :goto_1
+    add-int/lit8 v7, v7, 0x1
 
+    .line 103
     .line 104
-    :cond_3
-    const/16 v12, 0x8
+    const-wide v15, -0x7f7f7f7f7f7f7f80L    # -2.937446524422997E-306
 
     .line 105
     .line 106
-    if-ne v6, v12, :cond_5
-
     .line 107
     .line 108
-    :cond_4
-    if-eq v11, v10, :cond_5
-
     .line 109
+    goto :goto_1
+
     .line 110
-    add-int/lit8 v11, v11, 0x1
+    :cond_3
+    const/16 v15, 0x8
 
     .line 111
     .line 112
-    move-object/from16 v7, v22
+    if-ne v6, v15, :cond_6
 
     .line 113
     .line 114
-    goto :goto_0
+    :cond_4
+    if-eq v11, v10, :cond_6
 
     .line 115
-    :cond_5
-    new-instance v3, Ljava/util/ArrayList;
-
     .line 116
-    .line 117
-    invoke-virtual {v4}, Ljava/util/ArrayList;->size()I
+    add-int/lit8 v11, v11, 0x1
 
+    .line 117
     .line 118
+    move-object/from16 v7, v22
+
     .line 119
     .line 120
-    move-result v6
+    const-wide v15, -0x7f7f7f7f7f7f7f80L    # -2.937446524422997E-306
 
     .line 121
-    invoke-direct {v3, v6}, Ljava/util/ArrayList;-><init>(I)V
-
     .line 122
     .line 123
     .line 124
-    invoke-virtual {v4}, Ljava/util/ArrayList;->size()I
-
     .line 125
-    .line 126
-    .line 127
-    move-result v6
+    goto :goto_0
 
+    .line 126
+    :cond_5
+    move-object/from16 v22, v7
+
+    .line 127
     .line 128
-    const/4 v7, 0x0
+    :cond_6
+    new-instance v3, Ljava/util/ArrayList;
 
     .line 129
-    :goto_2
-    if-ge v7, v6, :cond_6
-
     .line 130
-    .line 131
-    invoke-virtual {v4, v7}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
+    invoke-virtual {v4}, Ljava/util/ArrayList;->size()I
 
+    .line 131
     .line 132
     .line 133
+    move-result v6
+
     .line 134
-    move-result-object v10
+    invoke-direct {v3, v6}, Ljava/util/ArrayList;-><init>(I)V
 
     .line 135
-    check-cast v10, Lx1/i;
-
     .line 136
     .line 137
-    iget-object v10, v10, Lx1/i;->a:Ljava/lang/Object;
+    invoke-virtual {v4}, Ljava/util/ArrayList;->size()I
 
     .line 138
     .line 139
-    invoke-static {v10}, Lw4/d;->c(Ljava/lang/Object;)Landroid/view/ViewStructure;
-
     .line 140
+    move-result v6
+
     .line 141
+    const/4 v7, 0x0
+
     .line 142
-    move-result-object v10
+    :goto_2
+    if-ge v7, v6, :cond_7
 
     .line 143
-    invoke-virtual {v3, v10}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
-
     .line 144
+    invoke-virtual {v4, v7}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
+
     .line 145
     .line 146
-    add-int/lit8 v7, v7, 0x1
-
     .line 147
+    move-result-object v9
+
     .line 148
-    goto :goto_2
+    check-cast v9, LC0/l;
 
     .line 149
-    :cond_6
-    sget v4, Landroid/os/Build$VERSION;->SDK_INT:I
-
     .line 150
+    iget-object v9, v9, LC0/l;->a:Ljava/lang/Object;
+
     .line 151
-    const/16 v6, 0x22
-
     .line 152
-    .line 153
-    if-lt v4, v6, :cond_7
+    invoke-static {v9}, LC0/c;->k(Ljava/lang/Object;)Landroid/view/ViewStructure;
 
+    .line 153
     .line 154
     .line 155
-    invoke-static {v5}, Ln3/e;->f(Ljava/lang/Object;)Landroid/view/contentcapture/ContentCaptureSession;
+    move-result-object v9
 
     .line 156
+    invoke-virtual {v3, v9}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
+
     .line 157
     .line 158
-    move-result-object v4
-
     .line 159
-    invoke-static {v4, v3}, Lx1/c;->a(Landroid/view/contentcapture/ContentCaptureSession;Ljava/util/List;)V
+    add-int/lit8 v7, v7, 0x1
 
     .line 160
     .line 161
+    goto :goto_2
+
     .line 162
-    goto :goto_4
+    :cond_7
+    sget v4, Landroid/os/Build$VERSION;->SDK_INT:I
 
     .line 163
-    :cond_7
-    const/16 v6, 0x1d
-
     .line 164
+    const/16 v6, 0x22
+
     .line 165
+    .line 166
     if-lt v4, v6, :cond_9
 
-    .line 166
     .line 167
-    invoke-static {v5}, Ln3/e;->f(Ljava/lang/Object;)Landroid/view/contentcapture/ContentCaptureSession;
-
     .line 168
+    invoke-static {v5}, LC0/b;->d(Ljava/lang/Object;)Landroid/view/contentcapture/ContentCaptureSession;
+
     .line 169
     .line 170
-    move-result-object v4
-
     .line 171
-    invoke-static {v4, v1}, Lx1/b;->b(Landroid/view/contentcapture/ContentCaptureSession;Landroid/view/View;)Landroid/view/ViewStructure;
+    move-result-object v4
 
     .line 172
+    invoke-static {v4, v3}, LC0/f;->a(Landroid/view/contentcapture/ContentCaptureSession;Ljava/util/List;)V
+
     .line 173
     .line 174
-    move-result-object v4
-
     .line 175
-    invoke-static {v4}, Lx1/a;->a(Landroid/view/ViewStructure;)Landroid/os/Bundle;
+    :cond_8
+    move-object/from16 v7, v22
 
     .line 176
     .line 177
+    goto :goto_4
+
     .line 178
-    move-result-object v6
+    :cond_9
+    const/16 v6, 0x1d
 
     .line 179
-    const/4 v7, 0x1
-
     .line 180
-    invoke-virtual {v6, v9, v7}, Landroid/os/Bundle;->putBoolean(Ljava/lang/String;Z)V
+    if-lt v4, v6, :cond_8
 
     .line 181
     .line 182
-    .line 183
-    invoke-static {v5}, Ln3/e;->f(Ljava/lang/Object;)Landroid/view/contentcapture/ContentCaptureSession;
+    invoke-static {v5}, LC0/b;->d(Ljava/lang/Object;)Landroid/view/contentcapture/ContentCaptureSession;
 
+    .line 183
     .line 184
     .line 185
+    move-result-object v4
+
     .line 186
-    move-result-object v6
+    invoke-static {v4, v1}, LC0/e;->b(Landroid/view/contentcapture/ContentCaptureSession;Landroid/view/View;)Landroid/view/ViewStructure;
 
     .line 187
-    invoke-static {v6, v4}, Lx1/b;->d(Landroid/view/contentcapture/ContentCaptureSession;Landroid/view/ViewStructure;)V
-
     .line 188
     .line 189
+    move-result-object v4
+
     .line 190
-    const/4 v4, 0x0
+    invoke-static {v4}, LC0/d;->a(Landroid/view/ViewStructure;)Landroid/os/Bundle;
 
     .line 191
-    :goto_3
-    invoke-virtual {v3}, Ljava/util/ArrayList;->size()I
-
     .line 192
     .line 193
+    move-result-object v6
+
     .line 194
-    move-result v6
+    const/4 v7, 0x1
 
     .line 195
-    if-ge v4, v6, :cond_8
+    invoke-virtual {v6, v8, v7}, Landroid/os/Bundle;->putBoolean(Ljava/lang/String;Z)V
 
     .line 196
     .line 197
-    invoke-static {v5}, Ln3/e;->f(Ljava/lang/Object;)Landroid/view/contentcapture/ContentCaptureSession;
-
     .line 198
+    invoke-static {v5}, LC0/b;->d(Ljava/lang/Object;)Landroid/view/contentcapture/ContentCaptureSession;
+
     .line 199
     .line 200
+    .line 201
     move-result-object v6
 
-    .line 201
-    invoke-virtual {v3, v4}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
-
     .line 202
+    invoke-static {v6, v4}, LC0/e;->d(Landroid/view/contentcapture/ContentCaptureSession;Landroid/view/ViewStructure;)V
+
     .line 203
     .line 204
-    move-result-object v7
-
     .line 205
-    invoke-static {v7}, Lw4/d;->c(Ljava/lang/Object;)Landroid/view/ViewStructure;
+    const/4 v4, 0x0
 
     .line 206
+    :goto_3
+    invoke-virtual {v3}, Ljava/util/ArrayList;->size()I
+
     .line 207
     .line 208
-    move-result-object v7
-
     .line 209
-    invoke-static {v6, v7}, Lx1/b;->d(Landroid/view/contentcapture/ContentCaptureSession;Landroid/view/ViewStructure;)V
+    move-result v6
 
     .line 210
+    if-ge v4, v6, :cond_a
+
     .line 211
     .line 212
-    add-int/lit8 v4, v4, 0x1
+    invoke-static {v5}, LC0/b;->d(Ljava/lang/Object;)Landroid/view/contentcapture/ContentCaptureSession;
 
     .line 213
     .line 214
-    goto :goto_3
-
     .line 215
-    :cond_8
-    invoke-static {v5}, Ln3/e;->f(Ljava/lang/Object;)Landroid/view/contentcapture/ContentCaptureSession;
+    move-result-object v6
 
     .line 216
+    invoke-virtual {v3, v4}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
+
     .line 217
     .line 218
-    move-result-object v3
-
     .line 219
-    invoke-static {v3, v1}, Lx1/b;->b(Landroid/view/contentcapture/ContentCaptureSession;Landroid/view/View;)Landroid/view/ViewStructure;
+    move-result-object v7
 
     .line 220
+    invoke-static {v7}, LC0/c;->k(Ljava/lang/Object;)Landroid/view/ViewStructure;
+
     .line 221
     .line 222
-    move-result-object v3
-
     .line 223
-    invoke-static {v3}, Lx1/a;->a(Landroid/view/ViewStructure;)Landroid/os/Bundle;
+    move-result-object v7
 
     .line 224
+    invoke-static {v6, v7}, LC0/e;->d(Landroid/view/contentcapture/ContentCaptureSession;Landroid/view/ViewStructure;)V
+
     .line 225
     .line 226
-    move-result-object v4
-
     .line 227
-    const/4 v6, 0x1
+    add-int/lit8 v4, v4, 0x1
 
     .line 228
-    invoke-virtual {v4, v8, v6}, Landroid/os/Bundle;->putBoolean(Ljava/lang/String;Z)V
-
     .line 229
-    .line 230
-    .line 231
-    invoke-static {v5}, Ln3/e;->f(Ljava/lang/Object;)Landroid/view/contentcapture/ContentCaptureSession;
+    goto :goto_3
 
+    .line 230
+    :cond_a
+    invoke-static {v5}, LC0/b;->d(Ljava/lang/Object;)Landroid/view/contentcapture/ContentCaptureSession;
+
+    .line 231
     .line 232
     .line 233
+    move-result-object v3
+
     .line 234
-    move-result-object v4
+    invoke-static {v3, v1}, LC0/e;->b(Landroid/view/contentcapture/ContentCaptureSession;Landroid/view/View;)Landroid/view/ViewStructure;
 
     .line 235
-    invoke-static {v4, v3}, Lx1/b;->d(Landroid/view/contentcapture/ContentCaptureSession;Landroid/view/ViewStructure;)V
-
     .line 236
     .line 237
+    move-result-object v3
+
     .line 238
-    :cond_9
-    :goto_4
-    invoke-virtual {v2}, Landroidx/collection/t;->a()V
+    invoke-static {v3}, LC0/d;->a(Landroid/view/ViewStructure;)Landroid/os/Bundle;
 
     .line 239
     .line 240
     .line 241
-    :cond_a
-    iget-object v2, v0, Landroidx/compose/ui/contentcapture/c;->g:Landroidx/collection/u;
+    move-result-object v4
 
     .line 242
-    .line 243
-    iget v3, v2, Landroidx/collection/u;->d:I
+    move-object/from16 v7, v22
 
+    .line 243
     .line 244
+    const/4 v6, 0x1
+
     .line 245
-    if-eqz v3, :cond_13
+    invoke-virtual {v4, v7, v6}, Landroid/os/Bundle;->putBoolean(Ljava/lang/String;Z)V
 
     .line 246
     .line 247
-    new-instance v3, Ljava/util/ArrayList;
-
     .line 248
-    .line 249
-    invoke-direct {v3}, Ljava/util/ArrayList;-><init>()V
+    invoke-static {v5}, LC0/b;->d(Ljava/lang/Object;)Landroid/view/contentcapture/ContentCaptureSession;
 
+    .line 249
     .line 250
     .line 251
+    move-result-object v4
+
     .line 252
-    iget-object v4, v2, Landroidx/collection/u;->b:[I
+    invoke-static {v4, v3}, LC0/e;->d(Landroid/view/contentcapture/ContentCaptureSession;Landroid/view/ViewStructure;)V
 
     .line 253
     .line 254
-    iget-object v6, v2, Landroidx/collection/u;->a:[J
-
     .line 255
+    :goto_4
+    invoke-virtual {v2}, Landroidx/collection/s;->a()V
+
     .line 256
-    array-length v7, v6
-
     .line 257
-    add-int/lit8 v7, v7, -0x2
-
     .line 258
+    :cond_b
+    iget-object v2, v0, Landroidx/compose/ui/contentcapture/c;->g:Landroidx/collection/t;
+
     .line 259
-    if-ltz v7, :cond_e
-
     .line 260
-    .line 261
-    const/4 v10, 0x0
+    iget v3, v2, Landroidx/collection/t;->d:I
 
+    .line 261
     .line 262
-    :goto_5
-    aget-wide v13, v6, v10
+    if-eqz v3, :cond_15
 
     .line 263
     .line 264
-    not-long v11, v13
+    new-instance v3, Ljava/util/ArrayList;
 
     .line 265
-    shl-long/2addr v11, v15
-
     .line 266
-    and-long/2addr v11, v13
+    invoke-direct {v3}, Ljava/util/ArrayList;-><init>()V
 
     .line 267
-    and-long v11, v11, v16
-
     .line 268
     .line 269
-    cmp-long v22, v11, v16
+    iget-object v4, v2, Landroidx/collection/t;->b:[I
 
     .line 270
     .line 271
-    if-eqz v22, :cond_d
+    iget-object v6, v2, Landroidx/collection/t;->a:[J
 
     .line 272
     .line 273
-    sub-int v11, v10, v7
+    array-length v9, v6
 
     .line 274
-    .line 275
-    not-int v11, v11
+    add-int/lit8 v9, v9, -0x2
 
+    .line 275
     .line 276
-    ushr-int/lit8 v11, v11, 0x1f
+    if-ltz v9, :cond_f
 
     .line 277
     .line 278
-    const/16 v12, 0x8
+    const/4 v10, 0x0
 
     .line 279
-    .line 280
-    rsub-int/lit8 v11, v11, 0x8
+    :goto_5
+    aget-wide v11, v6, v10
 
+    .line 280
     .line 281
+    move-object v13, v6
+
     .line 282
-    const/4 v12, 0x0
+    move-object/from16 v22, v7
 
     .line 283
-    :goto_6
-    if-ge v12, v11, :cond_c
-
     .line 284
+    not-long v6, v11
+
     .line 285
-    const-wide/16 v20, 0xff
+    shl-long/2addr v6, v14
 
     .line 286
+    and-long/2addr v6, v11
+
     .line 287
-    and-long v22, v13, v20
+    const-wide v15, -0x7f7f7f7f7f7f7f80L    # -2.937446524422997E-306
 
     .line 288
     .line 289
-    const-wide/16 v18, 0x80
-
     .line 290
     .line 291
-    cmp-long v25, v22, v18
-
     .line 292
+    and-long/2addr v6, v15
+
     .line 293
-    if-gez v25, :cond_b
+    cmp-long v23, v6, v15
 
     .line 294
     .line 295
-    shl-int/lit8 v22, v10, 0x3
+    if-eqz v23, :cond_e
 
     .line 296
     .line 297
-    add-int v22, v22, v12
+    sub-int v6, v10, v9
 
     .line 298
     .line 299
-    aget v22, v4, v22
+    not-int v6, v6
 
     .line 300
-    .line 301
-    invoke-static/range {v22 .. v22}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+    ushr-int/lit8 v6, v6, 0x1f
 
+    .line 301
     .line 302
+    const/16 v7, 0x8
+
     .line 303
     .line 304
-    move-result-object v15
+    rsub-int/lit8 v6, v6, 0x8
 
     .line 305
-    invoke-virtual {v3, v15}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
-
     .line 306
+    const/4 v7, 0x0
+
     .line 307
+    :goto_6
+    if-ge v7, v6, :cond_d
+
     .line 308
-    :cond_b
-    const/16 v15, 0x8
-
     .line 309
-    .line 310
-    shr-long/2addr v13, v15
+    const-wide/16 v20, 0xff
 
+    .line 310
     .line 311
-    add-int/lit8 v12, v12, 0x1
+    and-long v23, v11, v20
 
     .line 312
     .line 313
-    const/4 v15, 0x7
+    const-wide/16 v18, 0x80
 
     .line 314
-    goto :goto_6
-
     .line 315
-    :cond_c
-    const/16 v15, 0x8
+    cmp-long v25, v23, v18
 
     .line 316
     .line 317
-    const-wide/16 v18, 0x80
+    if-gez v25, :cond_c
 
     .line 318
     .line 319
-    const-wide/16 v20, 0xff
+    shl-int/lit8 v23, v10, 0x3
 
     .line 320
     .line 321
-    if-ne v11, v15, :cond_e
+    add-int v23, v23, v7
 
     .line 322
     .line 323
-    goto :goto_7
+    aget v23, v4, v23
 
     .line 324
-    :cond_d
-    const/16 v15, 0x8
-
     .line 325
-    .line 326
-    const-wide/16 v18, 0x80
+    invoke-static/range {v23 .. v23}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
+    .line 326
     .line 327
     .line 328
-    const-wide/16 v20, 0xff
+    move-result-object v14
 
     .line 329
-    .line 330
-    :goto_7
-    if-eq v10, v7, :cond_e
+    invoke-virtual {v3, v14}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
+    .line 330
     .line 331
     .line 332
-    add-int/lit8 v10, v10, 0x1
+    :cond_c
+    const/16 v14, 0x8
 
     .line 333
     .line 334
-    const/4 v15, 0x7
+    shr-long/2addr v11, v14
 
     .line 335
-    goto :goto_5
+    add-int/lit8 v7, v7, 0x1
 
     .line 336
-    :cond_e
-    new-instance v4, Ljava/util/ArrayList;
-
     .line 337
+    const/4 v14, 0x7
+
     .line 338
-    invoke-virtual {v3}, Ljava/util/ArrayList;->size()I
+    goto :goto_6
 
     .line 339
+    :cond_d
+    const/16 v14, 0x8
+
     .line 340
     .line 341
-    move-result v6
+    const-wide/16 v18, 0x80
 
     .line 342
-    invoke-direct {v4, v6}, Ljava/util/ArrayList;-><init>(I)V
-
     .line 343
+    const-wide/16 v20, 0xff
+
     .line 344
     .line 345
-    invoke-virtual {v3}, Ljava/util/ArrayList;->size()I
+    if-ne v6, v14, :cond_10
 
     .line 346
     .line 347
+    goto :goto_7
+
     .line 348
-    move-result v6
+    :cond_e
+    const/16 v14, 0x8
 
     .line 349
-    const/4 v7, 0x0
-
     .line 350
-    :goto_8
-    if-ge v7, v6, :cond_f
+    const-wide/16 v18, 0x80
 
     .line 351
     .line 352
-    invoke-virtual {v3, v7}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
+    const-wide/16 v20, 0xff
 
     .line 353
     .line 354
-    .line 355
-    move-result-object v10
+    :goto_7
+    if-eq v10, v9, :cond_10
 
+    .line 355
     .line 356
-    check-cast v10, Ljava/lang/Number;
+    add-int/lit8 v10, v10, 0x1
 
     .line 357
     .line 358
-    invoke-virtual {v10}, Ljava/lang/Number;->intValue()I
+    move-object v6, v13
 
     .line 359
+    move-object/from16 v7, v22
+
     .line 360
     .line 361
-    move-result v10
+    const/4 v14, 0x7
 
     .line 362
-    int-to-long v10, v10
+    goto :goto_5
 
     .line 363
-    invoke-static {v10, v11}, Ljava/lang/Long;->valueOf(J)Ljava/lang/Long;
+    :cond_f
+    move-object/from16 v22, v7
 
     .line 364
     .line 365
-    .line 366
-    move-result-object v10
+    :cond_10
+    new-instance v4, Ljava/util/ArrayList;
 
+    .line 366
     .line 367
-    invoke-virtual {v4, v10}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
+    invoke-virtual {v3}, Ljava/util/ArrayList;->size()I
 
     .line 368
     .line 369
     .line 370
-    add-int/lit8 v7, v7, 0x1
+    move-result v6
 
     .line 371
+    invoke-direct {v4, v6}, Ljava/util/ArrayList;-><init>(I)V
+
     .line 372
-    goto :goto_8
-
     .line 373
-    :cond_f
-    invoke-virtual {v4}, Ljava/util/ArrayList;->size()I
-
     .line 374
+    invoke-virtual {v3}, Ljava/util/ArrayList;->size()I
+
     .line 375
     .line 376
-    move-result v3
-
     .line 377
-    new-array v3, v3, [J
+    move-result v6
 
     .line 378
+    const/4 v7, 0x0
+
     .line 379
-    invoke-virtual {v4}, Ljava/util/ArrayList;->iterator()Ljava/util/Iterator;
+    :goto_8
+    if-ge v7, v6, :cond_11
 
     .line 380
     .line 381
+    invoke-virtual {v3, v7}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
+
     .line 382
-    move-result-object v4
-
     .line 383
-    const/4 v6, 0x0
-
     .line 384
-    :goto_9
-    invoke-interface {v4}, Ljava/util/Iterator;->hasNext()Z
+    move-result-object v9
 
     .line 385
+    check-cast v9, Ljava/lang/Number;
+
     .line 386
     .line 387
-    move-result v7
+    invoke-virtual {v9}, Ljava/lang/Number;->intValue()I
 
     .line 388
-    if-eqz v7, :cond_10
-
     .line 389
     .line 390
-    invoke-interface {v4}, Ljava/util/Iterator;->next()Ljava/lang/Object;
+    move-result v9
 
     .line 391
+    int-to-long v9, v9
+
     .line 392
+    invoke-static {v9, v10}, Ljava/lang/Long;->valueOf(J)Ljava/lang/Long;
+
     .line 393
-    move-result-object v7
-
     .line 394
-    check-cast v7, Ljava/lang/Number;
-
     .line 395
+    move-result-object v9
+
     .line 396
-    invoke-virtual {v7}, Ljava/lang/Number;->longValue()J
+    invoke-virtual {v4, v9}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
     .line 397
     .line 398
     .line 399
-    move-result-wide v10
+    add-int/lit8 v7, v7, 0x1
 
     .line 400
-    add-int/lit8 v7, v6, 0x1
-
     .line 401
+    goto :goto_8
+
     .line 402
-    aput-wide v10, v3, v6
+    :cond_11
+    invoke-interface {v4}, Ljava/util/Collection;->size()I
 
     .line 403
     .line 404
-    move v6, v7
-
     .line 405
-    goto :goto_9
+    move-result v3
 
     .line 406
-    :cond_10
-    sget v4, Landroid/os/Build$VERSION;->SDK_INT:I
+    new-array v3, v3, [J
 
     .line 407
     .line 408
-    const/16 v6, 0x22
+    invoke-interface {v4}, Ljava/util/Collection;->iterator()Ljava/util/Iterator;
 
     .line 409
     .line 410
-    if-lt v4, v6, :cond_11
-
     .line 411
-    .line 412
-    invoke-static {v5}, Ln3/e;->f(Ljava/lang/Object;)Landroid/view/contentcapture/ContentCaptureSession;
-
-    .line 413
-    .line 414
-    .line 415
     move-result-object v4
 
+    .line 412
+    const/4 v6, 0x0
+
+    .line 413
+    :goto_9
+    invoke-interface {v4}, Ljava/util/Iterator;->hasNext()Z
+
+    .line 414
+    .line 415
     .line 416
-    invoke-static {v1}, Lkotlin/jvm/internal/g;->j(Landroid/view/View;)Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableList/d;
+    move-result v7
 
     .line 417
+    if-eqz v7, :cond_12
+
     .line 418
     .line 419
-    move-result-object v1
+    invoke-interface {v4}, Ljava/util/Iterator;->next()Ljava/lang/Object;
 
     .line 420
-    invoke-static {v1}, Ljava/util/Objects;->requireNonNull(Ljava/lang/Object;)Ljava/lang/Object;
-
     .line 421
     .line 422
+    move-result-object v7
+
     .line 423
-    iget-object v1, v1, Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableList/d;->a:Ljava/lang/Object;
+    check-cast v7, Ljava/lang/Number;
 
     .line 424
     .line 425
-    invoke-static {v1}, Ln3/d;->g(Ljava/lang/Object;)Landroid/view/autofill/AutofillId;
+    invoke-virtual {v7}, Ljava/lang/Number;->longValue()J
 
     .line 426
     .line 427
     .line 428
-    move-result-object v1
+    move-result-wide v9
 
     .line 429
-    invoke-static {v4, v1, v3}, Lx1/b;->f(Landroid/view/contentcapture/ContentCaptureSession;Landroid/view/autofill/AutofillId;[J)V
+    add-int/lit8 v7, v6, 0x1
 
     .line 430
     .line 431
-    .line 432
-    goto :goto_a
+    aput-wide v9, v3, v6
 
+    .line 432
     .line 433
-    :cond_11
-    const/16 v6, 0x1d
+    move v6, v7
 
     .line 434
+    goto :goto_9
+
     .line 435
-    if-lt v4, v6, :cond_12
+    :cond_12
+    sget v4, Landroid/os/Build$VERSION;->SDK_INT:I
 
     .line 436
     .line 437
-    invoke-static {v5}, Ln3/e;->f(Ljava/lang/Object;)Landroid/view/contentcapture/ContentCaptureSession;
+    const/16 v6, 0x22
 
     .line 438
     .line 439
-    .line 440
-    move-result-object v4
+    if-lt v4, v6, :cond_13
 
+    .line 440
     .line 441
-    invoke-static {v4, v1}, Lx1/b;->b(Landroid/view/contentcapture/ContentCaptureSession;Landroid/view/View;)Landroid/view/ViewStructure;
+    invoke-static {v5}, LC0/b;->d(Ljava/lang/Object;)Landroid/view/contentcapture/ContentCaptureSession;
 
     .line 442
     .line 443
@@ -1638,126 +1641,188 @@
     move-result-object v4
 
     .line 445
-    invoke-static {v4}, Lx1/a;->a(Landroid/view/ViewStructure;)Landroid/os/Bundle;
+    invoke-static {v1}, Lx7/c;->o(Landroid/view/View;)LC0/a;
 
     .line 446
     .line 447
     .line 448
-    move-result-object v6
+    move-result-object v1
 
     .line 449
-    const/4 v7, 0x1
+    invoke-static {v1}, Ljava/util/Objects;->requireNonNull(Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 450
-    invoke-virtual {v6, v9, v7}, Landroid/os/Bundle;->putBoolean(Ljava/lang/String;Z)V
-
     .line 451
     .line 452
-    .line 453
-    invoke-static {v5}, Ln3/e;->f(Ljava/lang/Object;)Landroid/view/contentcapture/ContentCaptureSession;
+    iget-object v1, v1, LC0/a;->b:Ljava/lang/Object;
 
+    .line 453
     .line 454
+    invoke-static {v1}, LA5/c;->e(Ljava/lang/Object;)Landroid/view/autofill/AutofillId;
+
     .line 455
     .line 456
-    move-result-object v6
-
     .line 457
-    invoke-static {v6, v4}, Lx1/b;->d(Landroid/view/contentcapture/ContentCaptureSession;Landroid/view/ViewStructure;)V
+    move-result-object v1
 
     .line 458
+    invoke-static {v4, v1, v3}, LC0/e;->f(Landroid/view/contentcapture/ContentCaptureSession;Landroid/view/autofill/AutofillId;[J)V
+
     .line 459
     .line 460
-    invoke-static {v5}, Ln3/e;->f(Ljava/lang/Object;)Landroid/view/contentcapture/ContentCaptureSession;
-
     .line 461
-    .line 462
-    .line 463
-    move-result-object v4
+    goto :goto_a
 
+    .line 462
+    :cond_13
+    const/16 v6, 0x1d
+
+    .line 463
     .line 464
-    invoke-static {v1}, Lkotlin/jvm/internal/g;->j(Landroid/view/View;)Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableList/d;
+    if-lt v4, v6, :cond_14
 
     .line 465
     .line 466
+    invoke-static {v5}, LC0/b;->d(Ljava/lang/Object;)Landroid/view/contentcapture/ContentCaptureSession;
+
     .line 467
-    move-result-object v6
-
     .line 468
-    invoke-static {v6}, Ljava/util/Objects;->requireNonNull(Ljava/lang/Object;)Ljava/lang/Object;
-
     .line 469
-    .line 470
-    .line 471
-    iget-object v6, v6, Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableList/d;->a:Ljava/lang/Object;
+    move-result-object v4
 
+    .line 470
+    invoke-static {v4, v1}, LC0/e;->b(Landroid/view/contentcapture/ContentCaptureSession;Landroid/view/View;)Landroid/view/ViewStructure;
+
+    .line 471
     .line 472
     .line 473
-    invoke-static {v6}, Ln3/d;->g(Ljava/lang/Object;)Landroid/view/autofill/AutofillId;
+    move-result-object v4
 
     .line 474
+    invoke-static {v4}, LC0/d;->a(Landroid/view/ViewStructure;)Landroid/os/Bundle;
+
     .line 475
     .line 476
+    .line 477
     move-result-object v6
 
-    .line 477
-    invoke-static {v4, v6, v3}, Lx1/b;->f(Landroid/view/contentcapture/ContentCaptureSession;Landroid/view/autofill/AutofillId;[J)V
-
     .line 478
-    .line 479
-    .line 480
-    invoke-static {v5}, Ln3/e;->f(Ljava/lang/Object;)Landroid/view/contentcapture/ContentCaptureSession;
+    const/4 v7, 0x1
 
+    .line 479
+    invoke-virtual {v6, v8, v7}, Landroid/os/Bundle;->putBoolean(Ljava/lang/String;Z)V
+
+    .line 480
     .line 481
     .line 482
+    invoke-static {v5}, LC0/b;->d(Ljava/lang/Object;)Landroid/view/contentcapture/ContentCaptureSession;
+
     .line 483
-    move-result-object v3
-
     .line 484
-    invoke-static {v3, v1}, Lx1/b;->b(Landroid/view/contentcapture/ContentCaptureSession;Landroid/view/View;)Landroid/view/ViewStructure;
-
     .line 485
+    move-result-object v6
+
     .line 486
+    invoke-static {v6, v4}, LC0/e;->d(Landroid/view/contentcapture/ContentCaptureSession;Landroid/view/ViewStructure;)V
+
     .line 487
-    move-result-object v1
-
     .line 488
-    invoke-static {v1}, Lx1/a;->a(Landroid/view/ViewStructure;)Landroid/os/Bundle;
-
     .line 489
+    invoke-static {v5}, LC0/b;->d(Ljava/lang/Object;)Landroid/view/contentcapture/ContentCaptureSession;
+
     .line 490
     .line 491
-    move-result-object v3
-
     .line 492
-    const/4 v4, 0x1
+    move-result-object v4
 
     .line 493
-    invoke-virtual {v3, v8, v4}, Landroid/os/Bundle;->putBoolean(Ljava/lang/String;Z)V
+    invoke-static {v1}, Lx7/c;->o(Landroid/view/View;)LC0/a;
 
     .line 494
     .line 495
     .line 496
-    invoke-static {v5}, Ln3/e;->f(Ljava/lang/Object;)Landroid/view/contentcapture/ContentCaptureSession;
+    move-result-object v6
 
     .line 497
+    invoke-static {v6}, Ljava/util/Objects;->requireNonNull(Ljava/lang/Object;)Ljava/lang/Object;
+
     .line 498
     .line 499
-    move-result-object v3
-
     .line 500
-    invoke-static {v3, v1}, Lx1/b;->d(Landroid/view/contentcapture/ContentCaptureSession;Landroid/view/ViewStructure;)V
+    iget-object v6, v6, LC0/a;->b:Ljava/lang/Object;
 
     .line 501
     .line 502
-    .line 503
-    :cond_12
-    :goto_a
-    invoke-virtual {v2}, Landroidx/collection/u;->b()V
+    invoke-static {v6}, LA5/c;->e(Ljava/lang/Object;)Landroid/view/autofill/AutofillId;
 
+    .line 503
     .line 504
     .line 505
+    move-result-object v6
+
     .line 506
-    :cond_13
+    invoke-static {v4, v6, v3}, LC0/e;->f(Landroid/view/contentcapture/ContentCaptureSession;Landroid/view/autofill/AutofillId;[J)V
+
+    .line 507
+    .line 508
+    .line 509
+    invoke-static {v5}, LC0/b;->d(Ljava/lang/Object;)Landroid/view/contentcapture/ContentCaptureSession;
+
+    .line 510
+    .line 511
+    .line 512
+    move-result-object v3
+
+    .line 513
+    invoke-static {v3, v1}, LC0/e;->b(Landroid/view/contentcapture/ContentCaptureSession;Landroid/view/View;)Landroid/view/ViewStructure;
+
+    .line 514
+    .line 515
+    .line 516
+    move-result-object v1
+
+    .line 517
+    invoke-static {v1}, LC0/d;->a(Landroid/view/ViewStructure;)Landroid/os/Bundle;
+
+    .line 518
+    .line 519
+    .line 520
+    move-result-object v3
+
+    .line 521
+    move-object/from16 v6, v22
+
+    .line 522
+    .line 523
+    const/4 v4, 0x1
+
+    .line 524
+    invoke-virtual {v3, v6, v4}, Landroid/os/Bundle;->putBoolean(Ljava/lang/String;Z)V
+
+    .line 525
+    .line 526
+    .line 527
+    invoke-static {v5}, LC0/b;->d(Ljava/lang/Object;)Landroid/view/contentcapture/ContentCaptureSession;
+
+    .line 528
+    .line 529
+    .line 530
+    move-result-object v3
+
+    .line 531
+    invoke-static {v3, v1}, LC0/e;->d(Landroid/view/contentcapture/ContentCaptureSession;Landroid/view/ViewStructure;)V
+
+    .line 532
+    .line 533
+    .line 534
+    :cond_14
+    :goto_a
+    invoke-virtual {v2}, Landroidx/collection/t;->b()V
+
+    .line 535
+    .line 536
+    .line 537
+    :cond_15
     return-void
 .end method
 
@@ -1773,7 +1838,7 @@
 
     .line 4
     .line 5
-    invoke-virtual {p0}, Landroidx/compose/ui/contentcapture/c;->b()Landroidx/collection/t;
+    invoke-virtual {p0}, Landroidx/compose/ui/contentcapture/c;->c()Landroidx/collection/s;
 
     .line 6
     .line 7
@@ -1781,11 +1846,11 @@
     move-result-object v0
 
     .line 9
-    iget-object v1, v0, Landroidx/collection/t;->c:[Ljava/lang/Object;
+    iget-object v1, v0, Landroidx/collection/s;->c:[Ljava/lang/Object;
 
     .line 10
     .line 11
-    iget-object v0, v0, Landroidx/collection/t;->a:[J
+    iget-object v0, v0, Landroidx/collection/s;->a:[J
 
     .line 12
     .line 13
@@ -1898,23 +1963,23 @@
 
     .line 61
     .line 62
-    check-cast v10, Landroidx/compose/ui/platform/n2;
+    check-cast v10, Landroidx/compose/ui/platform/E0;
 
     .line 63
     .line 64
-    iget-object v10, v10, Landroidx/compose/ui/platform/n2;->a:Landroidx/compose/ui/semantics/o;
+    iget-object v10, v10, Landroidx/compose/ui/platform/E0;->a:Landroidx/compose/ui/semantics/n;
 
     .line 65
     .line 66
-    iget-object v10, v10, Landroidx/compose/ui/semantics/o;->d:Landroidx/compose/ui/semantics/j;
+    iget-object v10, v10, Landroidx/compose/ui/semantics/n;->d:Landroidx/compose/ui/semantics/j;
 
     .line 67
     .line 68
-    sget-object v11, Landroidx/compose/ui/semantics/q;->x:Landroidx/compose/ui/semantics/t;
+    sget-object v11, Landroidx/compose/ui/semantics/p;->x:Landroidx/compose/ui/semantics/s;
 
     .line 69
     .line 70
-    invoke-static {v10, v11}, Landroidx/compose/ui/semantics/k;->a(Landroidx/compose/ui/semantics/j;Landroidx/compose/ui/semantics/t;)Ljava/lang/Object;
+    invoke-static {v10, v11}, Landroidx/compose/ui/semantics/k;->c(Landroidx/compose/ui/semantics/j;Landroidx/compose/ui/semantics/s;)Ljava/lang/Object;
 
     .line 71
     .line 72
@@ -1926,11 +1991,11 @@
 
     .line 75
     .line 76
-    sget-object v11, Landroidx/compose/ui/semantics/i;->l:Landroidx/compose/ui/semantics/t;
+    sget-object v11, Landroidx/compose/ui/semantics/i;->l:Landroidx/compose/ui/semantics/s;
 
     .line 77
     .line 78
-    invoke-static {v10, v11}, Landroidx/compose/ui/semantics/k;->a(Landroidx/compose/ui/semantics/j;Landroidx/compose/ui/semantics/t;)Ljava/lang/Object;
+    invoke-static {v10, v11}, Landroidx/compose/ui/semantics/k;->c(Landroidx/compose/ui/semantics/j;Landroidx/compose/ui/semantics/s;)Ljava/lang/Object;
 
     .line 79
     .line 80
@@ -1946,11 +2011,11 @@
 
     .line 85
     .line 86
-    iget-object v10, v10, Landroidx/compose/ui/semantics/a;->b:Lqh/b;
+    iget-object v10, v10, Landroidx/compose/ui/semantics/a;->b:LX9/b;
 
     .line 87
     .line 88
-    check-cast v10, Lzh/a;
+    check-cast v10, Lka/a;
 
     .line 89
     .line 90
@@ -1958,7 +2023,7 @@
 
     .line 91
     .line 92
-    invoke-interface {v10}, Lzh/a;->invoke()Ljava/lang/Object;
+    invoke-interface {v10}, Lka/a;->invoke()Ljava/lang/Object;
 
     .line 93
     .line 94
@@ -2014,7 +2079,7 @@
 
     .line 4
     .line 5
-    invoke-virtual {p0}, Landroidx/compose/ui/contentcapture/c;->b()Landroidx/collection/t;
+    invoke-virtual {p0}, Landroidx/compose/ui/contentcapture/c;->c()Landroidx/collection/s;
 
     .line 6
     .line 7
@@ -2022,11 +2087,11 @@
     move-result-object v0
 
     .line 9
-    iget-object v1, v0, Landroidx/collection/t;->c:[Ljava/lang/Object;
+    iget-object v1, v0, Landroidx/collection/s;->c:[Ljava/lang/Object;
 
     .line 10
     .line 11
-    iget-object v0, v0, Landroidx/collection/t;->a:[J
+    iget-object v0, v0, Landroidx/collection/s;->a:[J
 
     .line 12
     .line 13
@@ -2139,23 +2204,23 @@
 
     .line 61
     .line 62
-    check-cast v10, Landroidx/compose/ui/platform/n2;
+    check-cast v10, Landroidx/compose/ui/platform/E0;
 
     .line 63
     .line 64
-    iget-object v10, v10, Landroidx/compose/ui/platform/n2;->a:Landroidx/compose/ui/semantics/o;
+    iget-object v10, v10, Landroidx/compose/ui/platform/E0;->a:Landroidx/compose/ui/semantics/n;
 
     .line 65
     .line 66
-    iget-object v10, v10, Landroidx/compose/ui/semantics/o;->d:Landroidx/compose/ui/semantics/j;
+    iget-object v10, v10, Landroidx/compose/ui/semantics/n;->d:Landroidx/compose/ui/semantics/j;
 
     .line 67
     .line 68
-    sget-object v11, Landroidx/compose/ui/semantics/q;->x:Landroidx/compose/ui/semantics/t;
+    sget-object v11, Landroidx/compose/ui/semantics/p;->x:Landroidx/compose/ui/semantics/s;
 
     .line 69
     .line 70
-    invoke-static {v10, v11}, Landroidx/compose/ui/semantics/k;->a(Landroidx/compose/ui/semantics/j;Landroidx/compose/ui/semantics/t;)Ljava/lang/Object;
+    invoke-static {v10, v11}, Landroidx/compose/ui/semantics/k;->c(Landroidx/compose/ui/semantics/j;Landroidx/compose/ui/semantics/s;)Ljava/lang/Object;
 
     .line 71
     .line 72
@@ -2167,7 +2232,7 @@
 
     .line 75
     .line 76
-    invoke-static {v11, v12}, Lrb/h;->d(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v11, v12}, Lkotlin/jvm/internal/h;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     .line 77
     .line 78
@@ -2179,11 +2244,11 @@
 
     .line 81
     .line 82
-    sget-object v11, Landroidx/compose/ui/semantics/i;->k:Landroidx/compose/ui/semantics/t;
+    sget-object v11, Landroidx/compose/ui/semantics/i;->k:Landroidx/compose/ui/semantics/s;
 
     .line 83
     .line 84
-    invoke-static {v10, v11}, Landroidx/compose/ui/semantics/k;->a(Landroidx/compose/ui/semantics/j;Landroidx/compose/ui/semantics/t;)Ljava/lang/Object;
+    invoke-static {v10, v11}, Landroidx/compose/ui/semantics/k;->c(Landroidx/compose/ui/semantics/j;Landroidx/compose/ui/semantics/s;)Ljava/lang/Object;
 
     .line 85
     .line 86
@@ -2199,11 +2264,11 @@
 
     .line 91
     .line 92
-    iget-object v10, v10, Landroidx/compose/ui/semantics/a;->b:Lqh/b;
+    iget-object v10, v10, Landroidx/compose/ui/semantics/a;->b:LX9/b;
 
     .line 93
     .line 94
-    check-cast v10, Lzh/c;
+    check-cast v10, Lka/c;
 
     .line 95
     .line 96
@@ -2215,7 +2280,7 @@
 
     .line 99
     .line 100
-    invoke-interface {v10, v11}, Lzh/c;->invoke(Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-interface {v10, v11}, Lka/c;->invoke(Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 101
     .line 102
@@ -2271,7 +2336,7 @@
 
     .line 4
     .line 5
-    invoke-virtual {p0}, Landroidx/compose/ui/contentcapture/c;->b()Landroidx/collection/t;
+    invoke-virtual {p0}, Landroidx/compose/ui/contentcapture/c;->c()Landroidx/collection/s;
 
     .line 6
     .line 7
@@ -2279,11 +2344,11 @@
     move-result-object v0
 
     .line 9
-    iget-object v1, v0, Landroidx/collection/t;->c:[Ljava/lang/Object;
+    iget-object v1, v0, Landroidx/collection/s;->c:[Ljava/lang/Object;
 
     .line 10
     .line 11
-    iget-object v0, v0, Landroidx/collection/t;->a:[J
+    iget-object v0, v0, Landroidx/collection/s;->a:[J
 
     .line 12
     .line 13
@@ -2396,23 +2461,23 @@
 
     .line 61
     .line 62
-    check-cast v10, Landroidx/compose/ui/platform/n2;
+    check-cast v10, Landroidx/compose/ui/platform/E0;
 
     .line 63
     .line 64
-    iget-object v10, v10, Landroidx/compose/ui/platform/n2;->a:Landroidx/compose/ui/semantics/o;
+    iget-object v10, v10, Landroidx/compose/ui/platform/E0;->a:Landroidx/compose/ui/semantics/n;
 
     .line 65
     .line 66
-    iget-object v10, v10, Landroidx/compose/ui/semantics/o;->d:Landroidx/compose/ui/semantics/j;
+    iget-object v10, v10, Landroidx/compose/ui/semantics/n;->d:Landroidx/compose/ui/semantics/j;
 
     .line 67
     .line 68
-    sget-object v11, Landroidx/compose/ui/semantics/q;->x:Landroidx/compose/ui/semantics/t;
+    sget-object v11, Landroidx/compose/ui/semantics/p;->x:Landroidx/compose/ui/semantics/s;
 
     .line 69
     .line 70
-    invoke-static {v10, v11}, Landroidx/compose/ui/semantics/k;->a(Landroidx/compose/ui/semantics/j;Landroidx/compose/ui/semantics/t;)Ljava/lang/Object;
+    invoke-static {v10, v11}, Landroidx/compose/ui/semantics/k;->c(Landroidx/compose/ui/semantics/j;Landroidx/compose/ui/semantics/s;)Ljava/lang/Object;
 
     .line 71
     .line 72
@@ -2424,7 +2489,7 @@
 
     .line 75
     .line 76
-    invoke-static {v11, v12}, Lrb/h;->d(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v11, v12}, Lkotlin/jvm/internal/h;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     .line 77
     .line 78
@@ -2436,11 +2501,11 @@
 
     .line 81
     .line 82
-    sget-object v11, Landroidx/compose/ui/semantics/i;->k:Landroidx/compose/ui/semantics/t;
+    sget-object v11, Landroidx/compose/ui/semantics/i;->k:Landroidx/compose/ui/semantics/s;
 
     .line 83
     .line 84
-    invoke-static {v10, v11}, Landroidx/compose/ui/semantics/k;->a(Landroidx/compose/ui/semantics/j;Landroidx/compose/ui/semantics/t;)Ljava/lang/Object;
+    invoke-static {v10, v11}, Landroidx/compose/ui/semantics/k;->c(Landroidx/compose/ui/semantics/j;Landroidx/compose/ui/semantics/s;)Ljava/lang/Object;
 
     .line 85
     .line 86
@@ -2456,11 +2521,11 @@
 
     .line 91
     .line 92
-    iget-object v10, v10, Landroidx/compose/ui/semantics/a;->b:Lqh/b;
+    iget-object v10, v10, Landroidx/compose/ui/semantics/a;->b:LX9/b;
 
     .line 93
     .line 94
-    check-cast v10, Lzh/c;
+    check-cast v10, Lka/c;
 
     .line 95
     .line 96
@@ -2472,7 +2537,7 @@
 
     .line 99
     .line 100
-    invoke-interface {v10, v11}, Lzh/c;->invoke(Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-interface {v10, v11}, Lka/c;->invoke(Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 101
     .line 102
@@ -2516,7 +2581,7 @@
     return-void
 .end method
 
-.method public final i(Landroidx/compose/ui/semantics/o;Landroidx/compose/ui/platform/m2;)V
+.method public final i(Landroidx/compose/ui/semantics/n;Landroidx/compose/ui/platform/D0;)V
     .locals 20
 
     .line 1
@@ -2534,7 +2599,7 @@
     const/4 v3, 0x4
 
     .line 7
-    invoke-static {v1, v2, v3}, Landroidx/compose/ui/semantics/o;->h(Landroidx/compose/ui/semantics/o;ZI)Ljava/util/List;
+    invoke-static {v1, v2, v3}, Landroidx/compose/ui/semantics/n;->h(Landroidx/compose/ui/semantics/n;ZI)Ljava/util/List;
 
     .line 8
     .line 9
@@ -2566,11 +2631,11 @@
     move-result-object v8
 
     .line 22
-    check-cast v8, Landroidx/compose/ui/semantics/o;
+    check-cast v8, Landroidx/compose/ui/semantics/n;
 
     .line 23
     .line 24
-    invoke-virtual/range {p0 .. p0}, Landroidx/compose/ui/contentcapture/c;->b()Landroidx/collection/t;
+    invoke-virtual/range {p0 .. p0}, Landroidx/compose/ui/contentcapture/c;->c()Landroidx/collection/s;
 
     .line 25
     .line 26
@@ -2578,11 +2643,11 @@
     move-result-object v9
 
     .line 28
-    iget v10, v8, Landroidx/compose/ui/semantics/o;->g:I
+    iget v10, v8, Landroidx/compose/ui/semantics/n;->g:I
 
     .line 29
     .line 30
-    invoke-virtual {v9, v10}, Landroidx/collection/t;->b(I)Z
+    invoke-virtual {v9, v10}, Landroidx/collection/s;->b(I)Z
 
     .line 31
     .line 32
@@ -2598,15 +2663,15 @@
 
     .line 37
     .line 38
-    iget-object v10, v9, Landroidx/compose/ui/platform/m2;->b:Landroidx/collection/u;
+    iget-object v10, v9, Landroidx/compose/ui/platform/D0;->b:Landroidx/collection/t;
 
     .line 39
     .line 40
-    iget v11, v8, Landroidx/compose/ui/semantics/o;->g:I
+    iget v11, v8, Landroidx/compose/ui/semantics/n;->g:I
 
     .line 41
     .line 42
-    invoke-virtual {v10, v11}, Landroidx/collection/u;->c(I)Z
+    invoke-virtual {v10, v11}, Landroidx/collection/t;->c(I)Z
 
     .line 43
     .line 44
@@ -2618,7 +2683,7 @@
 
     .line 47
     .line 48
-    invoke-virtual {v0, v8}, Landroidx/compose/ui/contentcapture/c;->l(Landroidx/compose/ui/semantics/o;)V
+    invoke-virtual {v0, v8}, Landroidx/compose/ui/contentcapture/c;->l(Landroidx/compose/ui/semantics/n;)V
 
     .line 49
     .line 50
@@ -2641,15 +2706,15 @@
 
     .line 57
     :cond_2
-    iget-object v4, v0, Landroidx/compose/ui/contentcapture/c;->p:Landroidx/collection/t;
+    iget-object v4, v0, Landroidx/compose/ui/contentcapture/c;->p:Landroidx/collection/s;
 
     .line 58
     .line 59
-    iget-object v5, v4, Landroidx/collection/t;->b:[I
+    iget-object v5, v4, Landroidx/collection/s;->b:[I
 
     .line 60
     .line 61
-    iget-object v7, v4, Landroidx/collection/t;->a:[J
+    iget-object v7, v4, Landroidx/collection/s;->a:[J
 
     .line 62
     .line 63
@@ -2759,7 +2824,7 @@
 
     .line 110
     .line 111
-    invoke-virtual/range {p0 .. p0}, Landroidx/compose/ui/contentcapture/c;->b()Landroidx/collection/t;
+    invoke-virtual/range {p0 .. p0}, Landroidx/compose/ui/contentcapture/c;->c()Landroidx/collection/s;
 
     .line 112
     .line 113
@@ -2767,7 +2832,7 @@
     move-result-object v6
 
     .line 115
-    invoke-virtual {v6, v15}, Landroidx/collection/t;->b(I)Z
+    invoke-virtual {v6, v15}, Landroidx/collection/s;->b(I)Z
 
     .line 116
     .line 117
@@ -2779,11 +2844,11 @@
 
     .line 120
     .line 121
-    iget-object v6, v0, Landroidx/compose/ui/contentcapture/c;->f:Landroidx/collection/t;
+    iget-object v6, v0, Landroidx/compose/ui/contentcapture/c;->f:Landroidx/collection/s;
 
     .line 122
     .line 123
-    invoke-virtual {v6, v15}, Landroidx/collection/t;->c(I)Z
+    invoke-virtual {v6, v15}, Landroidx/collection/s;->c(I)Z
 
     .line 124
     .line 125
@@ -2795,7 +2860,7 @@
 
     .line 128
     .line 129
-    invoke-virtual {v6, v15}, Landroidx/collection/t;->j(I)Ljava/lang/Object;
+    invoke-virtual {v6, v15}, Landroidx/collection/s;->h(I)Ljava/lang/Object;
 
     .line 130
     .line 131
@@ -2804,11 +2869,11 @@
 
     .line 133
     :cond_3
-    iget-object v6, v0, Landroidx/compose/ui/contentcapture/c;->g:Landroidx/collection/u;
+    iget-object v6, v0, Landroidx/compose/ui/contentcapture/c;->g:Landroidx/collection/t;
 
     .line 134
     .line 135
-    invoke-virtual {v6, v15}, Landroidx/collection/u;->a(I)Z
+    invoke-virtual {v6, v15}, Landroidx/collection/t;->a(I)Z
 
     .line 136
     .line 137
@@ -2843,7 +2908,7 @@
 
     .line 149
     :cond_7
-    invoke-static {v1, v2, v3}, Landroidx/compose/ui/semantics/o;->h(Landroidx/compose/ui/semantics/o;ZI)Ljava/util/List;
+    invoke-static {v1, v2, v3}, Landroidx/compose/ui/semantics/n;->h(Landroidx/compose/ui/semantics/n;ZI)Ljava/util/List;
 
     .line 150
     .line 151
@@ -2875,11 +2940,11 @@
     move-result-object v3
 
     .line 164
-    check-cast v3, Landroidx/compose/ui/semantics/o;
+    check-cast v3, Landroidx/compose/ui/semantics/n;
 
     .line 165
     .line 166
-    invoke-virtual/range {p0 .. p0}, Landroidx/compose/ui/contentcapture/c;->b()Landroidx/collection/t;
+    invoke-virtual/range {p0 .. p0}, Landroidx/compose/ui/contentcapture/c;->c()Landroidx/collection/s;
 
     .line 167
     .line 168
@@ -2887,11 +2952,11 @@
     move-result-object v5
 
     .line 170
-    iget v7, v3, Landroidx/compose/ui/semantics/o;->g:I
+    iget v7, v3, Landroidx/compose/ui/semantics/n;->g:I
 
     .line 171
     .line 172
-    invoke-virtual {v5, v7}, Landroidx/collection/t;->b(I)Z
+    invoke-virtual {v5, v7}, Landroidx/collection/s;->b(I)Z
 
     .line 173
     .line 174
@@ -2903,11 +2968,11 @@
 
     .line 177
     .line 178
-    iget v5, v3, Landroidx/compose/ui/semantics/o;->g:I
+    iget v5, v3, Landroidx/compose/ui/semantics/n;->g:I
 
     .line 179
     .line 180
-    invoke-virtual {v4, v5}, Landroidx/collection/t;->b(I)Z
+    invoke-virtual {v4, v5}, Landroidx/collection/s;->b(I)Z
 
     .line 181
     .line 182
@@ -2919,7 +2984,7 @@
 
     .line 185
     .line 186
-    invoke-virtual {v4, v5}, Landroidx/collection/t;->g(I)Ljava/lang/Object;
+    invoke-virtual {v4, v5}, Landroidx/collection/s;->f(I)Ljava/lang/Object;
 
     .line 187
     .line 188
@@ -2931,11 +2996,11 @@
 
     .line 191
     .line 192
-    check-cast v5, Landroidx/compose/ui/platform/m2;
+    check-cast v5, Landroidx/compose/ui/platform/D0;
 
     .line 193
     .line 194
-    invoke-virtual {v0, v3, v5}, Landroidx/compose/ui/contentcapture/c;->i(Landroidx/compose/ui/semantics/o;Landroidx/compose/ui/platform/m2;)V
+    invoke-virtual {v0, v3, v5}, Landroidx/compose/ui/contentcapture/c;->i(Landroidx/compose/ui/semantics/n;Landroidx/compose/ui/platform/D0;)V
 
     .line 195
     .line 196
@@ -2948,7 +3013,7 @@
 
     .line 199
     .line 200
-    invoke-static {v1}, Lkotlinx/coroutines/y;->R(Ljava/lang/String;)V
+    invoke-static {v1}, LB/d;->u(Ljava/lang/String;)V
 
     .line 201
     .line 202
@@ -2992,7 +3057,7 @@
 
     .line 8
     :cond_0
-    iget-object v2, p0, Landroidx/compose/ui/contentcapture/c;->d:Lx1/d;
+    iget-object v2, p0, Landroidx/compose/ui/contentcapture/c;->d:LC0/g;
 
     .line 9
     .line 10
@@ -3007,7 +3072,7 @@
     int-to-long v3, p1
 
     .line 14
-    invoke-virtual {v2, v3, v4}, Lx1/d;->a(J)Landroid/view/autofill/AutofillId;
+    invoke-virtual {v2, v3, v4}, LC0/g;->a(J)Landroid/view/autofill/AutofillId;
 
     .line 15
     .line 16
@@ -3023,11 +3088,11 @@
 
     .line 21
     .line 22
-    iget-object v0, v2, Lx1/d;->a:Ljava/lang/Object;
+    iget-object v0, v2, LC0/g;->a:Ljava/lang/Object;
 
     .line 23
     .line 24
-    invoke-static {v0}, Ln3/e;->f(Ljava/lang/Object;)Landroid/view/contentcapture/ContentCaptureSession;
+    invoke-static {v0}, LC0/b;->d(Ljava/lang/Object;)Landroid/view/contentcapture/ContentCaptureSession;
 
     .line 25
     .line 26
@@ -3035,7 +3100,7 @@
     move-result-object v0
 
     .line 28
-    invoke-static {v0, p1, p2}, Lx1/b;->e(Landroid/view/contentcapture/ContentCaptureSession;Landroid/view/autofill/AutofillId;Ljava/lang/CharSequence;)V
+    invoke-static {v0, p1, p2}, LC0/e;->e(Landroid/view/contentcapture/ContentCaptureSession;Landroid/view/autofill/AutofillId;Ljava/lang/CharSequence;)V
 
     .line 29
     .line 30
@@ -3049,7 +3114,7 @@
 
     .line 33
     .line 34
-    invoke-static {p1}, Lkotlinx/coroutines/y;->R(Ljava/lang/String;)V
+    invoke-static {p1}, LB/d;->u(Ljava/lang/String;)V
 
     .line 35
     .line 36
@@ -3060,7 +3125,7 @@
     throw p1
 .end method
 
-.method public final k(Landroidx/compose/ui/semantics/o;Landroidx/compose/ui/platform/m2;)V
+.method public final k(Landroidx/compose/ui/semantics/n;Landroidx/compose/ui/platform/D0;)V
     .locals 21
 
     .line 1
@@ -3076,11 +3141,11 @@
 
     .line 6
     .line 7
-    new-instance v3, Landroidx/collection/u;
+    new-instance v3, Landroidx/collection/t;
 
     .line 8
     .line 9
-    invoke-direct {v3}, Landroidx/collection/u;-><init>()V
+    invoke-direct {v3}, Landroidx/collection/t;-><init>()V
 
     .line 10
     .line 11
@@ -3091,7 +3156,7 @@
     const/4 v5, 0x4
 
     .line 14
-    invoke-static {v1, v4, v5}, Landroidx/compose/ui/semantics/o;->h(Landroidx/compose/ui/semantics/o;ZI)Ljava/util/List;
+    invoke-static {v1, v4, v5}, Landroidx/compose/ui/semantics/n;->h(Landroidx/compose/ui/semantics/n;ZI)Ljava/util/List;
 
     .line 15
     .line 16
@@ -3115,7 +3180,7 @@
 
     .line 24
     .line 25
-    sget-object v11, Lqh/r;->a:Lqh/r;
+    sget-object v11, LX9/j;->a:LX9/j;
 
     .line 26
     .line 27
@@ -3123,7 +3188,7 @@
 
     .line 28
     .line 29
-    iget-object v13, v1, Landroidx/compose/ui/semantics/o;->c:Landroidx/compose/ui/node/e0;
+    iget-object v13, v1, Landroidx/compose/ui/semantics/n;->c:Landroidx/compose/ui/node/C;
 
     .line 30
     .line 31
@@ -3139,11 +3204,11 @@
     move-result-object v14
 
     .line 37
-    check-cast v14, Landroidx/compose/ui/semantics/o;
+    check-cast v14, Landroidx/compose/ui/semantics/n;
 
     .line 38
     .line 39
-    invoke-virtual/range {p0 .. p0}, Landroidx/compose/ui/contentcapture/c;->b()Landroidx/collection/t;
+    invoke-virtual/range {p0 .. p0}, Landroidx/compose/ui/contentcapture/c;->c()Landroidx/collection/s;
 
     .line 40
     .line 41
@@ -3151,11 +3216,11 @@
     move-result-object v15
 
     .line 43
-    iget v8, v14, Landroidx/compose/ui/semantics/o;->g:I
+    iget v8, v14, Landroidx/compose/ui/semantics/n;->g:I
 
     .line 44
     .line 45
-    invoke-virtual {v15, v8}, Landroidx/collection/t;->b(I)Z
+    invoke-virtual {v15, v8}, Landroidx/collection/s;->b(I)Z
 
     .line 46
     .line 47
@@ -3167,15 +3232,15 @@
 
     .line 50
     .line 51
-    iget-object v8, v2, Landroidx/compose/ui/platform/m2;->b:Landroidx/collection/u;
+    iget-object v8, v2, Landroidx/compose/ui/platform/D0;->b:Landroidx/collection/t;
 
     .line 52
     .line 53
-    iget v14, v14, Landroidx/compose/ui/semantics/o;->g:I
+    iget v14, v14, Landroidx/compose/ui/semantics/n;->g:I
 
     .line 54
     .line 55
-    invoke-virtual {v8, v14}, Landroidx/collection/u;->c(I)Z
+    invoke-virtual {v8, v14}, Landroidx/collection/t;->c(I)Z
 
     .line 56
     .line 57
@@ -3199,7 +3264,7 @@
 
     .line 66
     .line 67
-    invoke-interface {v10, v11}, Lkotlinx/coroutines/channels/p;->o(Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-interface {v10, v11}, Lkotlinx/coroutines/channels/p;->l(Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 68
     .line 69
@@ -3209,7 +3274,7 @@
 
     .line 71
     :cond_1
-    invoke-virtual {v3, v14}, Landroidx/collection/u;->a(I)Z
+    invoke-virtual {v3, v14}, Landroidx/collection/t;->a(I)Z
 
     .line 72
     .line 73
@@ -3223,15 +3288,15 @@
 
     .line 77
     :cond_3
-    iget-object v2, v2, Landroidx/compose/ui/platform/m2;->b:Landroidx/collection/u;
+    iget-object v2, v2, Landroidx/compose/ui/platform/D0;->b:Landroidx/collection/t;
 
     .line 78
     .line 79
-    iget-object v6, v2, Landroidx/collection/u;->b:[I
+    iget-object v6, v2, Landroidx/collection/t;->b:[I
 
     .line 80
     .line 81
-    iget-object v2, v2, Landroidx/collection/u;->a:[J
+    iget-object v2, v2, Landroidx/collection/t;->a:[J
 
     .line 82
     .line 83
@@ -3346,7 +3411,7 @@
 
     .line 135
     .line 136
-    invoke-virtual {v3, v5}, Landroidx/collection/u;->c(I)Z
+    invoke-virtual {v3, v5}, Landroidx/collection/t;->c(I)Z
 
     .line 137
     .line 138
@@ -3370,7 +3435,7 @@
 
     .line 147
     .line 148
-    invoke-interface {v10, v11}, Lkotlinx/coroutines/channels/p;->o(Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-interface {v10, v11}, Lkotlinx/coroutines/channels/p;->l(Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 149
     .line 150
@@ -3433,7 +3498,7 @@
 
     .line 171
     :goto_4
-    invoke-static {v1, v2, v3}, Landroidx/compose/ui/semantics/o;->h(Landroidx/compose/ui/semantics/o;ZI)Ljava/util/List;
+    invoke-static {v1, v2, v3}, Landroidx/compose/ui/semantics/n;->h(Landroidx/compose/ui/semantics/n;ZI)Ljava/util/List;
 
     .line 172
     .line 173
@@ -3465,11 +3530,11 @@
     move-result-object v3
 
     .line 186
-    check-cast v3, Landroidx/compose/ui/semantics/o;
+    check-cast v3, Landroidx/compose/ui/semantics/n;
 
     .line 187
     .line 188
-    invoke-virtual/range {p0 .. p0}, Landroidx/compose/ui/contentcapture/c;->b()Landroidx/collection/t;
+    invoke-virtual/range {p0 .. p0}, Landroidx/compose/ui/contentcapture/c;->c()Landroidx/collection/s;
 
     .line 189
     .line 190
@@ -3477,11 +3542,11 @@
     move-result-object v4
 
     .line 192
-    iget v5, v3, Landroidx/compose/ui/semantics/o;->g:I
+    iget v5, v3, Landroidx/compose/ui/semantics/n;->g:I
 
     .line 193
     .line 194
-    invoke-virtual {v4, v5}, Landroidx/collection/t;->b(I)Z
+    invoke-virtual {v4, v5}, Landroidx/collection/s;->b(I)Z
 
     .line 195
     .line 196
@@ -3493,15 +3558,15 @@
 
     .line 199
     .line 200
-    iget-object v4, v0, Landroidx/compose/ui/contentcapture/c;->p:Landroidx/collection/t;
+    iget-object v4, v0, Landroidx/compose/ui/contentcapture/c;->p:Landroidx/collection/s;
 
     .line 201
     .line 202
-    iget v5, v3, Landroidx/compose/ui/semantics/o;->g:I
+    iget v5, v3, Landroidx/compose/ui/semantics/n;->g:I
 
     .line 203
     .line 204
-    invoke-virtual {v4, v5}, Landroidx/collection/t;->g(I)Ljava/lang/Object;
+    invoke-virtual {v4, v5}, Landroidx/collection/s;->f(I)Ljava/lang/Object;
 
     .line 205
     .line 206
@@ -3513,11 +3578,11 @@
 
     .line 209
     .line 210
-    check-cast v4, Landroidx/compose/ui/platform/m2;
+    check-cast v4, Landroidx/compose/ui/platform/D0;
 
     .line 211
     .line 212
-    invoke-virtual {v0, v3, v4}, Landroidx/compose/ui/contentcapture/c;->k(Landroidx/compose/ui/semantics/o;Landroidx/compose/ui/platform/m2;)V
+    invoke-virtual {v0, v3, v4}, Landroidx/compose/ui/contentcapture/c;->k(Landroidx/compose/ui/semantics/n;Landroidx/compose/ui/platform/D0;)V
 
     .line 213
     .line 214
@@ -3530,7 +3595,7 @@
 
     .line 217
     .line 218
-    invoke-static {v1}, Lkotlinx/coroutines/y;->R(Ljava/lang/String;)V
+    invoke-static {v1}, LB/d;->u(Ljava/lang/String;)V
 
     .line 219
     .line 220
@@ -3554,7 +3619,7 @@
     return-void
 .end method
 
-.method public final l(Landroidx/compose/ui/semantics/o;)V
+.method public final l(Landroidx/compose/ui/semantics/n;)V
     .locals 23
 
     .line 1
@@ -3582,15 +3647,15 @@
 
     .line 12
     :cond_0
-    iget-object v2, v1, Landroidx/compose/ui/semantics/o;->d:Landroidx/compose/ui/semantics/j;
+    iget-object v2, v1, Landroidx/compose/ui/semantics/n;->d:Landroidx/compose/ui/semantics/j;
 
     .line 13
     .line 14
-    sget-object v3, Landroidx/compose/ui/semantics/q;->x:Landroidx/compose/ui/semantics/t;
+    sget-object v3, Landroidx/compose/ui/semantics/p;->x:Landroidx/compose/ui/semantics/s;
 
     .line 15
     .line 16
-    invoke-static {v2, v3}, Landroidx/compose/ui/semantics/k;->a(Landroidx/compose/ui/semantics/j;Landroidx/compose/ui/semantics/t;)Ljava/lang/Object;
+    invoke-static {v2, v3}, Landroidx/compose/ui/semantics/k;->c(Landroidx/compose/ui/semantics/j;Landroidx/compose/ui/semantics/s;)Ljava/lang/Object;
 
     .line 17
     .line 18
@@ -3618,7 +3683,7 @@
 
     .line 29
     .line 30
-    invoke-static {v3, v4}, Lrb/h;->d(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v3, v4}, Lkotlin/jvm/internal/h;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     .line 31
     .line 32
@@ -3630,11 +3695,11 @@
 
     .line 35
     .line 36
-    sget-object v3, Landroidx/compose/ui/semantics/i;->k:Landroidx/compose/ui/semantics/t;
+    sget-object v3, Landroidx/compose/ui/semantics/i;->k:Landroidx/compose/ui/semantics/s;
 
     .line 37
     .line 38
-    invoke-static {v2, v3}, Landroidx/compose/ui/semantics/k;->a(Landroidx/compose/ui/semantics/j;Landroidx/compose/ui/semantics/t;)Ljava/lang/Object;
+    invoke-static {v2, v3}, Landroidx/compose/ui/semantics/k;->c(Landroidx/compose/ui/semantics/j;Landroidx/compose/ui/semantics/s;)Ljava/lang/Object;
 
     .line 39
     .line 40
@@ -3650,11 +3715,11 @@
 
     .line 45
     .line 46
-    iget-object v2, v2, Landroidx/compose/ui/semantics/a;->b:Lqh/b;
+    iget-object v2, v2, Landroidx/compose/ui/semantics/a;->b:LX9/b;
 
     .line 47
     .line 48
-    check-cast v2, Lzh/c;
+    check-cast v2, Lka/c;
 
     .line 49
     .line 50
@@ -3666,7 +3731,7 @@
 
     .line 53
     .line 54
-    invoke-interface {v2, v3}, Lzh/c;->invoke(Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-interface {v2, v3}, Lka/c;->invoke(Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 55
     .line 56
@@ -3698,7 +3763,7 @@
 
     .line 68
     .line 69
-    invoke-static {v3, v4}, Lrb/h;->d(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v3, v4}, Lkotlin/jvm/internal/h;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     .line 70
     .line 71
@@ -3710,11 +3775,11 @@
 
     .line 74
     .line 75
-    sget-object v3, Landroidx/compose/ui/semantics/i;->k:Landroidx/compose/ui/semantics/t;
+    sget-object v3, Landroidx/compose/ui/semantics/i;->k:Landroidx/compose/ui/semantics/s;
 
     .line 76
     .line 77
-    invoke-static {v2, v3}, Landroidx/compose/ui/semantics/k;->a(Landroidx/compose/ui/semantics/j;Landroidx/compose/ui/semantics/t;)Ljava/lang/Object;
+    invoke-static {v2, v3}, Landroidx/compose/ui/semantics/k;->c(Landroidx/compose/ui/semantics/j;Landroidx/compose/ui/semantics/s;)Ljava/lang/Object;
 
     .line 78
     .line 79
@@ -3730,11 +3795,11 @@
 
     .line 84
     .line 85
-    iget-object v2, v2, Landroidx/compose/ui/semantics/a;->b:Lqh/b;
+    iget-object v2, v2, Landroidx/compose/ui/semantics/a;->b:LX9/b;
 
     .line 86
     .line 87
-    check-cast v2, Lzh/c;
+    check-cast v2, Lka/c;
 
     .line 88
     .line 89
@@ -3746,7 +3811,7 @@
 
     .line 92
     .line 93
-    invoke-interface {v2, v3}, Lzh/c;->invoke(Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-interface {v2, v3}, Lka/c;->invoke(Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 94
     .line 95
@@ -3760,7 +3825,7 @@
     .line 99
     :cond_2
     :goto_0
-    iget-object v2, v0, Landroidx/compose/ui/contentcapture/c;->d:Lx1/d;
+    iget-object v2, v0, Landroidx/compose/ui/contentcapture/c;->d:LC0/g;
 
     .line 100
     .line 101
@@ -3774,7 +3839,7 @@
     const/4 v6, 0x0
 
     .line 105
-    iget v7, v1, Landroidx/compose/ui/semantics/o;->g:I
+    iget v7, v1, Landroidx/compose/ui/semantics/n;->g:I
 
     .line 106
     .line 107
@@ -3804,11 +3869,11 @@
     .line 118
     .line 119
     :cond_4
-    iget-object v10, v0, Landroidx/compose/ui/contentcapture/c;->b:Landroidx/compose/ui/platform/r;
+    iget-object v10, v0, Landroidx/compose/ui/contentcapture/c;->b:Landroidx/compose/ui/platform/o;
 
     .line 120
     .line 121
-    invoke-static {v10}, Lkotlin/jvm/internal/g;->j(Landroid/view/View;)Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableList/d;
+    invoke-static {v10}, Lx7/c;->o(Landroid/view/View;)LC0/a;
 
     .line 122
     .line 123
@@ -3825,7 +3890,7 @@
     .line 128
     .line 129
     :cond_5
-    invoke-virtual/range {p1 .. p1}, Landroidx/compose/ui/semantics/o;->j()Landroidx/compose/ui/semantics/o;
+    invoke-virtual/range {p1 .. p1}, Landroidx/compose/ui/semantics/n;->j()Landroidx/compose/ui/semantics/n;
 
     .line 130
     .line 131
@@ -3837,14 +3902,14 @@
 
     .line 134
     .line 135
-    iget v10, v11, Landroidx/compose/ui/semantics/o;->g:I
+    iget v10, v11, Landroidx/compose/ui/semantics/n;->g:I
 
     .line 136
     .line 137
     int-to-long v10, v10
 
     .line 138
-    invoke-virtual {v2, v10, v11}, Lx1/d;->a(J)Landroid/view/autofill/AutofillId;
+    invoke-virtual {v2, v10, v11}, LC0/g;->a(J)Landroid/view/autofill/AutofillId;
 
     .line 139
     .line 140
@@ -3861,11 +3926,11 @@
     .line 145
     .line 146
     :cond_6
-    iget-object v10, v10, Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableList/d;->a:Ljava/lang/Object;
+    iget-object v10, v10, LC0/a;->b:Ljava/lang/Object;
 
     .line 147
     .line 148
-    invoke-static {v10}, Ln3/d;->g(Ljava/lang/Object;)Landroid/view/autofill/AutofillId;
+    invoke-static {v10}, LA5/c;->e(Ljava/lang/Object;)Landroid/view/autofill/AutofillId;
 
     .line 149
     .line 150
@@ -3881,11 +3946,11 @@
 
     .line 154
     .line 155
-    iget-object v2, v2, Lx1/d;->a:Ljava/lang/Object;
+    iget-object v2, v2, LC0/g;->a:Ljava/lang/Object;
 
     .line 156
     .line 157
-    invoke-static {v2}, Ln3/e;->f(Ljava/lang/Object;)Landroid/view/contentcapture/ContentCaptureSession;
+    invoke-static {v2}, LC0/b;->d(Ljava/lang/Object;)Landroid/view/contentcapture/ContentCaptureSession;
 
     .line 158
     .line 159
@@ -3893,7 +3958,7 @@
     move-result-object v2
 
     .line 161
-    invoke-static {v2, v10, v11, v12}, Lx1/b;->c(Landroid/view/contentcapture/ContentCaptureSession;Landroid/view/autofill/AutofillId;J)Landroid/view/ViewStructure;
+    invoke-static {v2, v10, v11, v12}, LC0/e;->c(Landroid/view/contentcapture/ContentCaptureSession;Landroid/view/autofill/AutofillId;J)Landroid/view/ViewStructure;
 
     .line 162
     .line 163
@@ -3901,11 +3966,11 @@
     move-result-object v2
 
     .line 165
-    new-instance v9, Lx1/i;
+    new-instance v9, LC0/l;
 
     .line 166
     .line 167
-    invoke-direct {v9, v2}, Lx1/i;-><init>(Landroid/view/ViewStructure;)V
+    invoke-direct {v9, v2}, LC0/l;-><init>(Landroid/view/ViewStructure;)V
 
     .line 168
     .line 169
@@ -3927,11 +3992,11 @@
     .line 175
     .line 176
     :cond_9
-    sget-object v2, Landroidx/compose/ui/semantics/q;->D:Landroidx/compose/ui/semantics/t;
+    sget-object v2, Landroidx/compose/ui/semantics/p;->D:Landroidx/compose/ui/semantics/s;
 
     .line 177
     .line 178
-    iget-object v10, v1, Landroidx/compose/ui/semantics/o;->d:Landroidx/compose/ui/semantics/j;
+    iget-object v10, v1, Landroidx/compose/ui/semantics/n;->d:Landroidx/compose/ui/semantics/j;
 
     .line 179
     .line 180
@@ -3956,7 +4021,7 @@
     .line 189
     .line 190
     :cond_a
-    iget-object v2, v9, Lx1/i;->a:Ljava/lang/Object;
+    iget-object v2, v9, LC0/l;->a:Ljava/lang/Object;
 
     .line 191
     .line 192
@@ -3968,7 +4033,7 @@
 
     .line 195
     .line 196
-    invoke-static {v2}, Lw4/d;->c(Ljava/lang/Object;)Landroid/view/ViewStructure;
+    invoke-static {v2}, LC0/c;->k(Ljava/lang/Object;)Landroid/view/ViewStructure;
 
     .line 197
     .line 198
@@ -3976,7 +4041,7 @@
     move-result-object v12
 
     .line 200
-    invoke-static {v12}, Lx1/h;->a(Landroid/view/ViewStructure;)Landroid/os/Bundle;
+    invoke-static {v12}, LC0/k;->a(Landroid/view/ViewStructure;)Landroid/os/Bundle;
 
     .line 201
     .line 202
@@ -4010,11 +4075,11 @@
     .line 214
     .line 215
     :cond_c
-    sget-object v12, Landroidx/compose/ui/semantics/q;->u:Landroidx/compose/ui/semantics/t;
+    sget-object v12, Landroidx/compose/ui/semantics/p;->u:Landroidx/compose/ui/semantics/s;
 
     .line 216
     .line 217
-    invoke-static {v10, v12}, Landroidx/compose/ui/semantics/k;->a(Landroidx/compose/ui/semantics/j;Landroidx/compose/ui/semantics/t;)Ljava/lang/Object;
+    invoke-static {v10, v12}, Landroidx/compose/ui/semantics/k;->c(Landroidx/compose/ui/semantics/j;Landroidx/compose/ui/semantics/s;)Ljava/lang/Object;
 
     .line 218
     .line 219
@@ -4034,7 +4099,7 @@
 
     .line 226
     .line 227
-    invoke-static {v2}, Lw4/d;->c(Ljava/lang/Object;)Landroid/view/ViewStructure;
+    invoke-static {v2}, LC0/c;->k(Ljava/lang/Object;)Landroid/view/ViewStructure;
 
     .line 228
     .line 229
@@ -4042,17 +4107,17 @@
     move-result-object v13
 
     .line 231
-    invoke-static {v13, v7, v12}, Lx1/h;->e(Landroid/view/ViewStructure;ILjava/lang/String;)V
+    invoke-static {v13, v7, v12}, LC0/k;->e(Landroid/view/ViewStructure;ILjava/lang/String;)V
 
     .line 232
     .line 233
     .line 234
     :cond_d
-    sget-object v12, Landroidx/compose/ui/semantics/q;->v:Landroidx/compose/ui/semantics/t;
+    sget-object v12, Landroidx/compose/ui/semantics/p;->v:Landroidx/compose/ui/semantics/s;
 
     .line 235
     .line 236
-    invoke-static {v10, v12}, Landroidx/compose/ui/semantics/k;->a(Landroidx/compose/ui/semantics/j;Landroidx/compose/ui/semantics/t;)Ljava/lang/Object;
+    invoke-static {v10, v12}, Landroidx/compose/ui/semantics/k;->c(Landroidx/compose/ui/semantics/j;Landroidx/compose/ui/semantics/s;)Ljava/lang/Object;
 
     .line 237
     .line 238
@@ -4080,7 +4145,7 @@
 
     .line 249
     .line 250
-    invoke-static {v2}, Lw4/d;->c(Ljava/lang/Object;)Landroid/view/ViewStructure;
+    invoke-static {v2}, LC0/c;->k(Ljava/lang/Object;)Landroid/view/ViewStructure;
 
     .line 251
     .line 252
@@ -4092,13 +4157,13 @@
 
     .line 255
     .line 256
-    invoke-static {v15, v4}, Lx1/h;->b(Landroid/view/ViewStructure;Ljava/lang/String;)V
+    invoke-static {v15, v4}, LC0/k;->b(Landroid/view/ViewStructure;Ljava/lang/String;)V
 
     .line 257
     .line 258
     .line 259
     :cond_e
-    invoke-static {v12, v14, v3, v13}, Lcom/google/android/gms/internal/consent_sdk/w;->k(Ljava/util/List;Ljava/lang/String;Lzh/c;I)Ljava/lang/String;
+    invoke-static {v12, v14, v3, v13}, Lf4/g;->w(Ljava/util/List;Ljava/lang/String;Lka/c;I)Ljava/lang/String;
 
     .line 260
     .line 261
@@ -4110,7 +4175,7 @@
 
     .line 264
     .line 265
-    invoke-static {v2}, Lw4/d;->c(Ljava/lang/Object;)Landroid/view/ViewStructure;
+    invoke-static {v2}, LC0/c;->k(Ljava/lang/Object;)Landroid/view/ViewStructure;
 
     .line 266
     .line 267
@@ -4118,17 +4183,17 @@
     move-result-object v12
 
     .line 269
-    invoke-static {v12, v4}, Lx1/h;->f(Landroid/view/ViewStructure;Ljava/lang/CharSequence;)V
+    invoke-static {v12, v4}, LC0/k;->f(Landroid/view/ViewStructure;Ljava/lang/CharSequence;)V
 
     .line 270
     .line 271
     .line 272
     :cond_f
-    sget-object v4, Landroidx/compose/ui/semantics/q;->y:Landroidx/compose/ui/semantics/t;
+    sget-object v4, Landroidx/compose/ui/semantics/p;->y:Landroidx/compose/ui/semantics/s;
 
     .line 273
     .line 274
-    invoke-static {v10, v4}, Landroidx/compose/ui/semantics/k;->a(Landroidx/compose/ui/semantics/j;Landroidx/compose/ui/semantics/t;)Ljava/lang/Object;
+    invoke-static {v10, v4}, Landroidx/compose/ui/semantics/k;->c(Landroidx/compose/ui/semantics/j;Landroidx/compose/ui/semantics/s;)Ljava/lang/Object;
 
     .line 275
     .line 276
@@ -4136,7 +4201,7 @@
     move-result-object v4
 
     .line 278
-    check-cast v4, Landroidx/compose/ui/text/f;
+    check-cast v4, Landroidx/compose/ui/text/g;
 
     .line 279
     .line 280
@@ -4148,7 +4213,7 @@
 
     .line 283
     .line 284
-    invoke-static {v2}, Lw4/d;->c(Ljava/lang/Object;)Landroid/view/ViewStructure;
+    invoke-static {v2}, LC0/c;->k(Ljava/lang/Object;)Landroid/view/ViewStructure;
 
     .line 285
     .line 286
@@ -4160,7 +4225,7 @@
 
     .line 289
     .line 290
-    invoke-static {v12, v15}, Lx1/h;->b(Landroid/view/ViewStructure;Ljava/lang/String;)V
+    invoke-static {v12, v15}, LC0/k;->b(Landroid/view/ViewStructure;Ljava/lang/String;)V
 
     .line 291
     .line 292
@@ -4170,7 +4235,7 @@
 
     .line 294
     .line 295
-    invoke-static {v2}, Lw4/d;->c(Ljava/lang/Object;)Landroid/view/ViewStructure;
+    invoke-static {v2}, LC0/c;->k(Ljava/lang/Object;)Landroid/view/ViewStructure;
 
     .line 296
     .line 297
@@ -4178,17 +4243,17 @@
     move-result-object v12
 
     .line 299
-    invoke-static {v12, v4}, Lx1/h;->f(Landroid/view/ViewStructure;Ljava/lang/CharSequence;)V
+    invoke-static {v12, v4}, LC0/k;->f(Landroid/view/ViewStructure;Ljava/lang/CharSequence;)V
 
     .line 300
     .line 301
     .line 302
     :cond_11
-    sget-object v4, Landroidx/compose/ui/semantics/q;->b:Landroidx/compose/ui/semantics/t;
+    sget-object v4, Landroidx/compose/ui/semantics/p;->b:Landroidx/compose/ui/semantics/s;
 
     .line 303
     .line 304
-    invoke-static {v10, v4}, Landroidx/compose/ui/semantics/k;->a(Landroidx/compose/ui/semantics/j;Landroidx/compose/ui/semantics/t;)Ljava/lang/Object;
+    invoke-static {v10, v4}, Landroidx/compose/ui/semantics/k;->c(Landroidx/compose/ui/semantics/j;Landroidx/compose/ui/semantics/s;)Ljava/lang/Object;
 
     .line 305
     .line 306
@@ -4204,7 +4269,7 @@
 
     .line 311
     .line 312
-    invoke-static {v4, v14, v3, v13}, Lcom/google/android/gms/internal/consent_sdk/w;->k(Ljava/util/List;Ljava/lang/String;Lzh/c;I)Ljava/lang/String;
+    invoke-static {v4, v14, v3, v13}, Lf4/g;->w(Ljava/util/List;Ljava/lang/String;Lka/c;I)Ljava/lang/String;
 
     .line 313
     .line 314
@@ -4216,7 +4281,7 @@
 
     .line 317
     .line 318
-    invoke-static {v2}, Lw4/d;->c(Ljava/lang/Object;)Landroid/view/ViewStructure;
+    invoke-static {v2}, LC0/c;->k(Ljava/lang/Object;)Landroid/view/ViewStructure;
 
     .line 319
     .line 320
@@ -4224,17 +4289,17 @@
     move-result-object v12
 
     .line 322
-    invoke-static {v12, v4}, Lx1/h;->c(Landroid/view/ViewStructure;Ljava/lang/CharSequence;)V
+    invoke-static {v12, v4}, LC0/k;->c(Landroid/view/ViewStructure;Ljava/lang/CharSequence;)V
 
     .line 323
     .line 324
     .line 325
     :cond_12
-    sget-object v4, Landroidx/compose/ui/semantics/q;->t:Landroidx/compose/ui/semantics/t;
+    sget-object v4, Landroidx/compose/ui/semantics/p;->t:Landroidx/compose/ui/semantics/s;
 
     .line 326
     .line 327
-    invoke-static {v10, v4}, Landroidx/compose/ui/semantics/k;->a(Landroidx/compose/ui/semantics/j;Landroidx/compose/ui/semantics/t;)Ljava/lang/Object;
+    invoke-static {v10, v4}, Landroidx/compose/ui/semantics/k;->c(Landroidx/compose/ui/semantics/j;Landroidx/compose/ui/semantics/s;)Ljava/lang/Object;
 
     .line 328
     .line 329
@@ -4254,7 +4319,7 @@
 
     .line 336
     .line 337
-    invoke-static {v4}, Landroidx/compose/ui/platform/o2;->g(I)Ljava/lang/String;
+    invoke-static {v4}, Landroidx/compose/ui/platform/d0;->C(I)Ljava/lang/String;
 
     .line 338
     .line 339
@@ -4270,7 +4335,7 @@
 
     .line 344
     .line 345
-    invoke-static {v2}, Lw4/d;->c(Ljava/lang/Object;)Landroid/view/ViewStructure;
+    invoke-static {v2}, LC0/c;->k(Ljava/lang/Object;)Landroid/view/ViewStructure;
 
     .line 346
     .line 347
@@ -4278,13 +4343,13 @@
     move-result-object v12
 
     .line 349
-    invoke-static {v12, v4}, Lx1/h;->b(Landroid/view/ViewStructure;Ljava/lang/String;)V
+    invoke-static {v12, v4}, LC0/k;->b(Landroid/view/ViewStructure;Ljava/lang/String;)V
 
     .line 350
     .line 351
     .line 352
     :cond_13
-    invoke-static {v10}, Landroidx/compose/ui/platform/o2;->c(Landroidx/compose/ui/semantics/j;)Landroidx/compose/ui/text/f0;
+    invoke-static {v10}, Landroidx/compose/ui/platform/d0;->t(Landroidx/compose/ui/semantics/j;)Landroidx/compose/ui/text/F;
 
     .line 353
     .line 354
@@ -4296,23 +4361,23 @@
 
     .line 357
     .line 358
-    iget-object v4, v4, Landroidx/compose/ui/text/f0;->a:Landroidx/compose/ui/text/e0;
+    iget-object v4, v4, Landroidx/compose/ui/text/F;->a:Landroidx/compose/ui/text/E;
 
     .line 359
     .line 360
-    iget-object v10, v4, Landroidx/compose/ui/text/e0;->b:Landroidx/compose/ui/text/i0;
+    iget-object v10, v4, Landroidx/compose/ui/text/E;->b:Landroidx/compose/ui/text/I;
 
     .line 361
     .line 362
-    iget-object v10, v10, Landroidx/compose/ui/text/i0;->a:Landroidx/compose/ui/text/a0;
+    iget-object v10, v10, Landroidx/compose/ui/text/I;->a:Landroidx/compose/ui/text/A;
 
     .line 363
     .line 364
-    iget-wide v12, v10, Landroidx/compose/ui/text/a0;->b:J
+    iget-wide v12, v10, Landroidx/compose/ui/text/A;->b:J
 
     .line 365
     .line 366
-    invoke-static {v12, v13}, Lh2/l;->c(J)F
+    invoke-static {v12, v13}, LM0/l;->c(J)F
 
     .line 367
     .line 368
@@ -4320,11 +4385,11 @@
     move-result v10
 
     .line 370
-    iget-object v4, v4, Landroidx/compose/ui/text/e0;->g:Lh2/b;
+    iget-object v4, v4, Landroidx/compose/ui/text/E;->g:LM0/b;
 
     .line 371
     .line 372
-    invoke-interface {v4}, Lh2/b;->a()F
+    invoke-interface {v4}, LM0/b;->b()F
 
     .line 373
     .line 374
@@ -4336,7 +4401,7 @@
 
     .line 377
     .line 378
-    invoke-interface {v4}, Lh2/b;->Q()F
+    invoke-interface {v4}, LM0/b;->O()F
 
     .line 379
     .line 380
@@ -4352,7 +4417,7 @@
 
     .line 385
     .line 386
-    invoke-static {v2}, Lw4/d;->c(Ljava/lang/Object;)Landroid/view/ViewStructure;
+    invoke-static {v2}, LC0/c;->k(Ljava/lang/Object;)Landroid/view/ViewStructure;
 
     .line 387
     .line 388
@@ -4360,13 +4425,13 @@
     move-result-object v10
 
     .line 390
-    invoke-static {v10, v4, v6, v6, v6}, Lx1/h;->g(Landroid/view/ViewStructure;FIII)V
+    invoke-static {v10, v4, v6, v6, v6}, LC0/k;->g(Landroid/view/ViewStructure;FIII)V
 
     .line 391
     .line 392
     .line 393
     :cond_14
-    invoke-virtual/range {p1 .. p1}, Landroidx/compose/ui/semantics/o;->j()Landroidx/compose/ui/semantics/o;
+    invoke-virtual/range {p1 .. p1}, Landroidx/compose/ui/semantics/n;->j()Landroidx/compose/ui/semantics/n;
 
     .line 394
     .line 395
@@ -4374,7 +4439,7 @@
     move-result-object v4
 
     .line 397
-    sget-object v10, Ln1/e;->e:Ln1/e;
+    sget-object v10, Lr0/d;->e:Lr0/d;
 
     .line 398
     .line 399
@@ -4386,7 +4451,7 @@
 
     .line 402
     :cond_15
-    invoke-virtual/range {p1 .. p1}, Landroidx/compose/ui/semantics/o;->c()Landroidx/compose/ui/node/e1;
+    invoke-virtual/range {p1 .. p1}, Landroidx/compose/ui/semantics/n;->c()Landroidx/compose/ui/node/a0;
 
     .line 403
     .line 404
@@ -4398,7 +4463,7 @@
 
     .line 407
     .line 408
-    invoke-virtual {v12}, Landroidx/compose/ui/node/e1;->K0()Landroidx/compose/ui/n;
+    invoke-virtual {v12}, Landroidx/compose/ui/node/a0;->F0()Landroidx/compose/ui/n;
 
     .line 409
     .line 410
@@ -4422,11 +4487,11 @@
 
     .line 418
     .line 419
-    iget-object v4, v4, Landroidx/compose/ui/semantics/o;->a:Landroidx/compose/ui/n;
+    iget-object v4, v4, Landroidx/compose/ui/semantics/n;->a:Landroidx/compose/ui/n;
 
     .line 420
     .line 421
-    invoke-static {v4, v5}, Lcom/google/android/play/core/appupdate/b;->K(Landroidx/compose/ui/node/j;I)Landroidx/compose/ui/node/e1;
+    invoke-static {v4, v5}, Lx0/c;->v(Landroidx/compose/ui/node/j;I)Landroidx/compose/ui/node/a0;
 
     .line 422
     .line 423
@@ -4437,7 +4502,7 @@
     const/4 v10, 0x1
 
     .line 426
-    invoke-virtual {v4, v3, v10}, Landroidx/compose/ui/node/e1;->m(Landroidx/compose/ui/layout/s;Z)Ln1/e;
+    invoke-virtual {v4, v3, v10}, Landroidx/compose/ui/node/a0;->n(Landroidx/compose/ui/layout/p;Z)Lr0/d;
 
     .line 427
     .line 428
@@ -4450,61 +4515,61 @@
     .line 431
     :cond_17
     :goto_3
-    iget v3, v10, Ln1/e;->a:F
+    iget v3, v10, Lr0/d;->a:F
 
     .line 432
     .line 433
     float-to-int v3, v3
 
     .line 434
-    iget v4, v10, Ln1/e;->b:F
+    iget v4, v10, Lr0/d;->b:F
 
     .line 435
     .line 436
     float-to-int v4, v4
 
     .line 437
-    const/16 v19, 0x0
+    invoke-virtual {v10}, Lr0/d;->c()F
 
     .line 438
     .line 439
-    const/16 v20, 0x0
-
     .line 440
-    .line 441
-    invoke-virtual {v10}, Ln1/e;->d()F
-
-    .line 442
-    .line 443
-    .line 444
     move-result v12
 
-    .line 445
+    .line 441
     float-to-int v12, v12
 
-    .line 446
-    invoke-virtual {v10}, Ln1/e;->c()F
+    .line 442
+    invoke-virtual {v10}, Lr0/d;->b()F
 
-    .line 447
-    .line 448
-    .line 449
+    .line 443
+    .line 444
+    .line 445
     move-result v10
 
-    .line 450
+    .line 446
     float-to-int v10, v10
 
-    .line 451
+    .line 447
     if-lt v8, v11, :cond_18
 
+    .line 448
+    .line 449
+    invoke-static {v2}, LC0/c;->k(Ljava/lang/Object;)Landroid/view/ViewStructure;
+
+    .line 450
+    .line 451
     .line 452
+    move-result-object v16
+
     .line 453
-    invoke-static {v2}, Lw4/d;->c(Ljava/lang/Object;)Landroid/view/ViewStructure;
+    const/16 v19, 0x0
 
     .line 454
     .line 455
-    .line 456
-    move-result-object v16
+    const/16 v20, 0x0
 
+    .line 456
     .line 457
     move/from16 v17, v3
 
@@ -4522,7 +4587,7 @@
 
     .line 464
     .line 465
-    invoke-static/range {v16 .. v22}, Lx1/h;->d(Landroid/view/ViewStructure;IIIIII)V
+    invoke-static/range {v16 .. v22}, LC0/k;->d(Landroid/view/ViewStructure;IIIIII)V
 
     .line 466
     .line 467
@@ -4541,11 +4606,11 @@
     .line 472
     .line 473
     :cond_19
-    iget-object v2, v0, Landroidx/compose/ui/contentcapture/c;->g:Landroidx/collection/u;
+    iget-object v2, v0, Landroidx/compose/ui/contentcapture/c;->g:Landroidx/collection/t;
 
     .line 474
     .line 475
-    invoke-virtual {v2, v7}, Landroidx/collection/u;->c(I)Z
+    invoke-virtual {v2, v7}, Landroidx/collection/t;->c(I)Z
 
     .line 476
     .line 477
@@ -4577,7 +4642,7 @@
 
     .line 490
     .line 491
-    iget v8, v2, Landroidx/collection/u;->c:I
+    iget v8, v2, Landroidx/collection/t;->c:I
 
     .line 492
     .line 493
@@ -4592,7 +4657,7 @@
 
     .line 497
     :goto_5
-    iget-object v10, v2, Landroidx/collection/u;->a:[J
+    iget-object v10, v2, Landroidx/collection/t;->a:[J
 
     .line 498
     .line 499
@@ -4720,7 +4785,7 @@
     and-int/2addr v14, v8
 
     .line 556
-    iget-object v15, v2, Landroidx/collection/u;->b:[I
+    iget-object v15, v2, Landroidx/collection/t;->b:[I
 
     .line 557
     .line 558
@@ -4782,7 +4847,7 @@
 
     .line 580
     .line 581
-    invoke-virtual {v2, v14}, Landroidx/collection/u;->h(I)V
+    invoke-virtual {v2, v14}, Landroidx/collection/t;->f(I)V
 
     .line 582
     .line 583
@@ -4811,11 +4876,11 @@
 
     .line 592
     :cond_1d
-    iget-object v2, v0, Landroidx/compose/ui/contentcapture/c;->f:Landroidx/collection/t;
+    iget-object v2, v0, Landroidx/compose/ui/contentcapture/c;->f:Landroidx/collection/s;
 
     .line 593
     .line 594
-    invoke-virtual {v2, v7, v3}, Landroidx/collection/t;->k(ILjava/lang/Object;)V
+    invoke-virtual {v2, v7, v3}, Landroidx/collection/s;->i(ILjava/lang/Object;)V
 
     .line 595
     .line 596
@@ -4828,7 +4893,7 @@
     const/4 v3, 0x1
 
     .line 599
-    invoke-static {v1, v3, v2}, Landroidx/compose/ui/semantics/o;->h(Landroidx/compose/ui/semantics/o;ZI)Ljava/util/List;
+    invoke-static {v1, v3, v2}, Landroidx/compose/ui/semantics/n;->h(Landroidx/compose/ui/semantics/n;ZI)Ljava/util/List;
 
     .line 600
     .line 601
@@ -4860,11 +4925,11 @@
     move-result-object v3
 
     .line 614
-    check-cast v3, Landroidx/compose/ui/semantics/o;
+    check-cast v3, Landroidx/compose/ui/semantics/n;
 
     .line 615
     .line 616
-    invoke-virtual {v0, v3}, Landroidx/compose/ui/contentcapture/c;->l(Landroidx/compose/ui/semantics/o;)V
+    invoke-virtual {v0, v3}, Landroidx/compose/ui/contentcapture/c;->l(Landroidx/compose/ui/semantics/n;)V
 
     .line 617
     .line 618
@@ -4880,7 +4945,7 @@
     return-void
 .end method
 
-.method public final m(Landroidx/compose/ui/semantics/o;)V
+.method public final m(Landroidx/compose/ui/semantics/n;)V
     .locals 3
 
     .line 1
@@ -4900,15 +4965,15 @@
 
     .line 8
     :cond_0
-    iget v0, p1, Landroidx/compose/ui/semantics/o;->g:I
+    iget v0, p1, Landroidx/compose/ui/semantics/n;->g:I
 
     .line 9
     .line 10
-    iget-object v1, p0, Landroidx/compose/ui/contentcapture/c;->f:Landroidx/collection/t;
+    iget-object v1, p0, Landroidx/compose/ui/contentcapture/c;->f:Landroidx/collection/s;
 
     .line 11
     .line 12
-    invoke-virtual {v1, v0}, Landroidx/collection/t;->c(I)Z
+    invoke-virtual {v1, v0}, Landroidx/collection/s;->c(I)Z
 
     .line 13
     .line 14
@@ -4920,7 +4985,7 @@
 
     .line 17
     .line 18
-    invoke-virtual {v1, v0}, Landroidx/collection/t;->j(I)Ljava/lang/Object;
+    invoke-virtual {v1, v0}, Landroidx/collection/s;->h(I)Ljava/lang/Object;
 
     .line 19
     .line 20
@@ -4929,11 +4994,11 @@
 
     .line 22
     :cond_1
-    iget-object v1, p0, Landroidx/compose/ui/contentcapture/c;->g:Landroidx/collection/u;
+    iget-object v1, p0, Landroidx/compose/ui/contentcapture/c;->g:Landroidx/collection/t;
 
     .line 23
     .line 24
-    invoke-virtual {v1, v0}, Landroidx/collection/u;->a(I)Z
+    invoke-virtual {v1, v0}, Landroidx/collection/t;->a(I)Z
 
     .line 25
     .line 26
@@ -4945,7 +5010,7 @@
     const/4 v1, 0x1
 
     .line 29
-    invoke-static {p1, v1, v0}, Landroidx/compose/ui/semantics/o;->h(Landroidx/compose/ui/semantics/o;ZI)Ljava/util/List;
+    invoke-static {p1, v1, v0}, Landroidx/compose/ui/semantics/n;->h(Landroidx/compose/ui/semantics/n;ZI)Ljava/util/List;
 
     .line 30
     .line 31
@@ -4977,11 +5042,11 @@
     move-result-object v2
 
     .line 44
-    check-cast v2, Landroidx/compose/ui/semantics/o;
+    check-cast v2, Landroidx/compose/ui/semantics/n;
 
     .line 45
     .line 46
-    invoke-virtual {p0, v2}, Landroidx/compose/ui/contentcapture/c;->m(Landroidx/compose/ui/semantics/o;)V
+    invoke-virtual {p0, v2}, Landroidx/compose/ui/contentcapture/c;->m(Landroidx/compose/ui/semantics/n;)V
 
     .line 47
     .line 48
@@ -4997,43 +5062,43 @@
     return-void
 .end method
 
-.method public final synthetic onCreate(Landroidx/lifecycle/w;)V
+.method public final synthetic onCreate(Landroidx/lifecycle/x;)V
     .locals 0
 
     .line 1
     return-void
 .end method
 
-.method public final synthetic onDestroy(Landroidx/lifecycle/w;)V
+.method public final synthetic onDestroy(Landroidx/lifecycle/x;)V
     .locals 0
 
     .line 1
     return-void
 .end method
 
-.method public final synthetic onPause(Landroidx/lifecycle/w;)V
+.method public final synthetic onPause(Landroidx/lifecycle/x;)V
     .locals 0
 
     .line 1
     return-void
 .end method
 
-.method public final synthetic onResume(Landroidx/lifecycle/w;)V
+.method public final synthetic onResume(Landroidx/lifecycle/x;)V
     .locals 0
 
     .line 1
     return-void
 .end method
 
-.method public final onStart(Landroidx/lifecycle/w;)V
+.method public final onStart(Landroidx/lifecycle/x;)V
     .locals 0
 
     .line 1
-    iget-object p1, p0, Landroidx/compose/ui/contentcapture/c;->c:Lzh/a;
+    iget-object p1, p0, Landroidx/compose/ui/contentcapture/c;->c:Lka/a;
 
     .line 2
     .line 3
-    invoke-interface {p1}, Lzh/a;->invoke()Ljava/lang/Object;
+    invoke-interface {p1}, Lka/a;->invoke()Ljava/lang/Object;
 
     .line 4
     .line 5
@@ -5041,19 +5106,19 @@
     move-result-object p1
 
     .line 7
-    check-cast p1, Lx1/d;
+    check-cast p1, LC0/g;
 
     .line 8
     .line 9
-    iput-object p1, p0, Landroidx/compose/ui/contentcapture/c;->d:Lx1/d;
+    iput-object p1, p0, Landroidx/compose/ui/contentcapture/c;->d:LC0/g;
 
     .line 10
     .line 11
-    iget-object p1, p0, Landroidx/compose/ui/contentcapture/c;->b:Landroidx/compose/ui/platform/r;
+    iget-object p1, p0, Landroidx/compose/ui/contentcapture/c;->b:Landroidx/compose/ui/platform/o;
 
     .line 12
     .line 13
-    invoke-virtual {p1}, Landroidx/compose/ui/platform/r;->getSemanticsOwner()Landroidx/compose/ui/semantics/p;
+    invoke-virtual {p1}, Landroidx/compose/ui/platform/o;->getSemanticsOwner()Landroidx/compose/ui/semantics/o;
 
     .line 14
     .line 15
@@ -5061,7 +5126,7 @@
     move-result-object p1
 
     .line 17
-    invoke-virtual {p1}, Landroidx/compose/ui/semantics/p;->a()Landroidx/compose/ui/semantics/o;
+    invoke-virtual {p1}, Landroidx/compose/ui/semantics/o;->a()Landroidx/compose/ui/semantics/n;
 
     .line 18
     .line 19
@@ -5069,7 +5134,7 @@
     move-result-object p1
 
     .line 21
-    invoke-virtual {p0, p1}, Landroidx/compose/ui/contentcapture/c;->l(Landroidx/compose/ui/semantics/o;)V
+    invoke-virtual {p0, p1}, Landroidx/compose/ui/contentcapture/c;->l(Landroidx/compose/ui/semantics/n;)V
 
     .line 22
     .line 23
@@ -5082,15 +5147,15 @@
     return-void
 .end method
 
-.method public final onStop(Landroidx/lifecycle/w;)V
+.method public final onStop(Landroidx/lifecycle/x;)V
     .locals 0
 
     .line 1
-    iget-object p1, p0, Landroidx/compose/ui/contentcapture/c;->b:Landroidx/compose/ui/platform/r;
+    iget-object p1, p0, Landroidx/compose/ui/contentcapture/c;->b:Landroidx/compose/ui/platform/o;
 
     .line 2
     .line 3
-    invoke-virtual {p1}, Landroidx/compose/ui/platform/r;->getSemanticsOwner()Landroidx/compose/ui/semantics/p;
+    invoke-virtual {p1}, Landroidx/compose/ui/platform/o;->getSemanticsOwner()Landroidx/compose/ui/semantics/o;
 
     .line 4
     .line 5
@@ -5098,7 +5163,7 @@
     move-result-object p1
 
     .line 7
-    invoke-virtual {p1}, Landroidx/compose/ui/semantics/p;->a()Landroidx/compose/ui/semantics/o;
+    invoke-virtual {p1}, Landroidx/compose/ui/semantics/o;->a()Landroidx/compose/ui/semantics/n;
 
     .line 8
     .line 9
@@ -5106,7 +5171,7 @@
     move-result-object p1
 
     .line 11
-    invoke-virtual {p0, p1}, Landroidx/compose/ui/contentcapture/c;->m(Landroidx/compose/ui/semantics/o;)V
+    invoke-virtual {p0, p1}, Landroidx/compose/ui/contentcapture/c;->m(Landroidx/compose/ui/semantics/n;)V
 
     .line 12
     .line 13
@@ -5119,7 +5184,7 @@
     const/4 p1, 0x0
 
     .line 18
-    iput-object p1, p0, Landroidx/compose/ui/contentcapture/c;->d:Lx1/d;
+    iput-object p1, p0, Landroidx/compose/ui/contentcapture/c;->d:LC0/g;
 
     .line 19
     .line 20
@@ -5140,7 +5205,7 @@
 
     .line 2
     .line 3
-    iget-object v0, p0, Landroidx/compose/ui/contentcapture/c;->s:Landroidx/camera/camera2/internal/b;
+    iget-object v0, p0, Landroidx/compose/ui/contentcapture/c;->s:Landroidx/activity/l;
 
     .line 4
     .line 5
@@ -5152,7 +5217,7 @@
     const/4 p1, 0x0
 
     .line 9
-    iput-object p1, p0, Landroidx/compose/ui/contentcapture/c;->d:Lx1/d;
+    iput-object p1, p0, Landroidx/compose/ui/contentcapture/c;->d:LC0/g;
 
     .line 10
     .line 11

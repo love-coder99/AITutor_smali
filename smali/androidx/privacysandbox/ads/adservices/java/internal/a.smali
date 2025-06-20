@@ -1,62 +1,58 @@
-.class public abstract Landroidx/privacysandbox/ads/adservices/java/internal/a;
+.class public final synthetic Landroidx/privacysandbox/ads/adservices/java/internal/a;
 .super Ljava/lang/Object;
 .source "SourceFile"
 
+# interfaces
+.implements Landroidx/concurrent/futures/i;
+
+
+# instance fields
+.field public final synthetic b:Lkotlinx/coroutines/A;
+
+.field public final synthetic c:Ljava/lang/Object;
+
 
 # direct methods
-.method public static a(Lkotlinx/coroutines/b0;Ljava/lang/Object;Landroidx/concurrent/futures/h;)V
+.method public synthetic constructor <init>(Lkotlinx/coroutines/A;Ljava/lang/Object;)V
     .locals 0
 
     .line 1
-    new-instance p1, Landroidx/privacysandbox/ads/adservices/java/internal/CoroutineAdapterKt$asListenableFuture$1$1;
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 2
-    .line 3
-    invoke-direct {p1, p2, p0}, Landroidx/privacysandbox/ads/adservices/java/internal/CoroutineAdapterKt$asListenableFuture$1$1;-><init>(Landroidx/concurrent/futures/h;Lkotlinx/coroutines/b0;)V
+    iput-object p1, p0, Landroidx/privacysandbox/ads/adservices/java/internal/a;->b:Lkotlinx/coroutines/A;
 
-    .line 4
-    .line 5
-    .line 6
-    check-cast p0, Lkotlinx/coroutines/h1;
+    iput-object p2, p0, Landroidx/privacysandbox/ads/adservices/java/internal/a;->c:Ljava/lang/Object;
 
-    .line 7
-    .line 8
-    invoke-virtual {p0, p1}, Lkotlinx/coroutines/h1;->y(Lzh/c;)Lkotlinx/coroutines/j0;
-
-    .line 9
-    .line 10
-    .line 11
     return-void
 .end method
 
-.method public static b(Lkotlinx/coroutines/c0;)Landroidx/concurrent/futures/k;
-    .locals 3
+
+# virtual methods
+.method public final p(Landroidx/concurrent/futures/h;)Ljava/lang/Object;
+    .locals 2
 
     .line 1
-    new-instance v0, Ls/j0;
+    new-instance v0, Landroidx/privacysandbox/ads/adservices/java/internal/CoroutineAdapterKt$asListenableFuture$1$1;
 
     .line 2
     .line 3
-    const/16 v1, 0xc
+    iget-object v1, p0, Landroidx/privacysandbox/ads/adservices/java/internal/a;->b:Lkotlinx/coroutines/A;
 
     .line 4
     .line 5
-    const-string v2, "Deferred.asListenableFuture"
+    invoke-direct {v0, p1, v1}, Landroidx/privacysandbox/ads/adservices/java/internal/CoroutineAdapterKt$asListenableFuture$1$1;-><init>(Landroidx/concurrent/futures/h;Lkotlinx/coroutines/z;)V
 
     .line 6
     .line 7
-    invoke-direct {v0, p0, v1, v2}, Ls/j0;-><init>(Ljava/lang/Object;ILjava/lang/Object;)V
-
     .line 8
+    invoke-virtual {v1, v0}, Lkotlinx/coroutines/i0;->v(Lka/c;)Lkotlinx/coroutines/H;
+
     .line 9
     .line 10
-    invoke-static {v0}, Landroidx/concurrent/futures/l;->e(Landroidx/concurrent/futures/i;)Landroidx/concurrent/futures/k;
-
     .line 11
+    iget-object p1, p0, Landroidx/privacysandbox/ads/adservices/java/internal/a;->c:Ljava/lang/Object;
+
     .line 12
     .line 13
-    move-result-object p0
-
-    .line 14
-    return-object p0
+    return-object p1
 .end method

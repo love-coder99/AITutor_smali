@@ -3,7 +3,7 @@
 .source "SourceFile"
 
 # interfaces
-.implements Landroidx/compose/ui/window/t;
+.implements Landroidx/compose/ui/window/r;
 
 
 # instance fields
@@ -29,11 +29,11 @@
 
 
 # virtual methods
-.method public final a(Lh2/i;JLandroidx/compose/ui/unit/LayoutDirection;J)J
+.method public final a(LM0/i;JLandroidx/compose/ui/unit/LayoutDirection;J)J
     .locals 7
 
     .line 1
-    iget v0, p1, Lh2/i;->a:I
+    iget v0, p1, LM0/i;->a:I
 
     .line 2
     .line 3
@@ -91,7 +91,7 @@
 
     .line 25
     :goto_0
-    invoke-static {v0, v5, v4, p4}, Laf/g0;->g(IIIZ)I
+    invoke-static {v0, v5, v4, p4}, Landroidx/compose/foundation/contextmenu/a;->d(IIIZ)I
 
     .line 26
     .line 27
@@ -113,7 +113,7 @@
     long-to-int v1, v0
 
     .line 37
-    iget p1, p1, Lh2/i;->b:I
+    iget p1, p1, LM0/i;->b:I
 
     .line 38
     .line 39
@@ -132,7 +132,7 @@
     long-to-int p3, p2
 
     .line 44
-    invoke-static {p1, p6, p3, v6}, Laf/g0;->g(IIIZ)I
+    invoke-static {p1, p6, p3, v6}, Landroidx/compose/foundation/contextmenu/a;->d(IIIZ)I
 
     .line 45
     .line 46
@@ -140,7 +140,7 @@
     move-result p1
 
     .line 48
-    invoke-static {p4, p1}, Ly/f;->a(II)J
+    invoke-static {p4, p1}, Landroid/support/v4/media/session/a;->a(II)J
 
     .line 49
     .line 50

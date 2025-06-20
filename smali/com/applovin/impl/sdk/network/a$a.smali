@@ -268,7 +268,7 @@
 .method public a(I)Lcom/applovin/impl/sdk/network/a$a;
     .locals 0
 
-    .line 1
+    .line 6
     iput p1, p0, Lcom/applovin/impl/sdk/network/a$a;->h:I
 
     return-object p0
@@ -277,7 +277,7 @@
 .method public a(Lcom/applovin/impl/vi$a;)Lcom/applovin/impl/sdk/network/a$a;
     .locals 0
 
-    .line 2
+    .line 1
     iput-object p1, p0, Lcom/applovin/impl/sdk/network/a$a;->q:Lcom/applovin/impl/vi$a;
 
     return-object p0
@@ -286,7 +286,7 @@
 .method public a(Ljava/lang/Object;)Lcom/applovin/impl/sdk/network/a$a;
     .locals 0
 
-    .line 3
+    .line 5
     iput-object p1, p0, Lcom/applovin/impl/sdk/network/a$a;->g:Ljava/lang/Object;
 
     return-object p0
@@ -304,7 +304,7 @@
 .method public a(Ljava/util/Map;)Lcom/applovin/impl/sdk/network/a$a;
     .locals 0
 
-    .line 5
+    .line 2
     iput-object p1, p0, Lcom/applovin/impl/sdk/network/a$a;->e:Ljava/util/Map;
 
     return-object p0
@@ -313,7 +313,7 @@
 .method public a(Lorg/json/JSONObject;)Lcom/applovin/impl/sdk/network/a$a;
     .locals 0
 
-    .line 6
+    .line 3
     iput-object p1, p0, Lcom/applovin/impl/sdk/network/a$a;->f:Lorg/json/JSONObject;
 
     return-object p0
@@ -342,7 +342,7 @@
 .method public b(I)Lcom/applovin/impl/sdk/network/a$a;
     .locals 0
 
-    .line 1
+    .line 3
     iput p1, p0, Lcom/applovin/impl/sdk/network/a$a;->j:I
 
     return-object p0
@@ -351,7 +351,7 @@
 .method public b(Ljava/lang/String;)Lcom/applovin/impl/sdk/network/a$a;
     .locals 0
 
-    .line 2
+    .line 1
     iput-object p1, p0, Lcom/applovin/impl/sdk/network/a$a;->b:Ljava/lang/String;
 
     return-object p0
@@ -360,7 +360,7 @@
 .method public b(Ljava/util/Map;)Lcom/applovin/impl/sdk/network/a$a;
     .locals 0
 
-    .line 3
+    .line 2
     iput-object p1, p0, Lcom/applovin/impl/sdk/network/a$a;->d:Ljava/util/Map;
 
     return-object p0
@@ -378,7 +378,7 @@
 .method public c(I)Lcom/applovin/impl/sdk/network/a$a;
     .locals 0
 
-    .line 1
+    .line 2
     iput p1, p0, Lcom/applovin/impl/sdk/network/a$a;->i:I
 
     return-object p0
@@ -387,7 +387,7 @@
 .method public c(Ljava/lang/String;)Lcom/applovin/impl/sdk/network/a$a;
     .locals 0
 
-    .line 2
+    .line 1
     iput-object p1, p0, Lcom/applovin/impl/sdk/network/a$a;->a:Ljava/lang/String;
 
     return-object p0
@@ -405,23 +405,32 @@
 .method public d(Z)Lcom/applovin/impl/sdk/network/a$a;
     .locals 0
 
+    .line 1
     iput-boolean p1, p0, Lcom/applovin/impl/sdk/network/a$a;->l:Z
 
+    .line 2
+    .line 3
     return-object p0
 .end method
 
 .method public e(Z)Lcom/applovin/impl/sdk/network/a$a;
     .locals 0
 
+    .line 1
     iput-boolean p1, p0, Lcom/applovin/impl/sdk/network/a$a;->m:Z
 
+    .line 2
+    .line 3
     return-object p0
 .end method
 
 .method public f(Z)Lcom/applovin/impl/sdk/network/a$a;
     .locals 0
 
+    .line 1
     iput-boolean p1, p0, Lcom/applovin/impl/sdk/network/a$a;->o:Z
 
+    .line 2
+    .line 3
     return-object p0
 .end method

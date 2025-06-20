@@ -1,12 +1,12 @@
 .class public final Landroidx/compose/ui/focus/FocusTargetNode$FocusTargetElement;
-.super Landroidx/compose/ui/node/w0;
+.super Landroidx/compose/ui/node/V;
 .source "SourceFile"
 
 
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
-        "Landroidx/compose/ui/node/w0;"
+        "Landroidx/compose/ui/node/V;"
     }
 .end annotation
 
@@ -16,7 +16,7 @@
     }
     d2 = {
         "androidx/compose/ui/focus/FocusTargetNode$FocusTargetElement",
-        "Landroidx/compose/ui/node/w0;",
+        "Landroidx/compose/ui/node/V;",
         "Landroidx/compose/ui/focus/w;",
         "<init>",
         "()V",
@@ -28,11 +28,12 @@
         0x8,
         0x0
     }
+    xi = 0x30
 .end annotation
 
 
 # static fields
-.field public static final c:Landroidx/compose/ui/focus/FocusTargetNode$FocusTargetElement;
+.field public static final a:Landroidx/compose/ui/focus/FocusTargetNode$FocusTargetElement;
 
 
 # direct methods
@@ -43,7 +44,7 @@
 
     invoke-direct {v0}, Landroidx/compose/ui/focus/FocusTargetNode$FocusTargetElement;-><init>()V
 
-    sput-object v0, Landroidx/compose/ui/focus/FocusTargetNode$FocusTargetElement;->c:Landroidx/compose/ui/focus/FocusTargetNode$FocusTargetElement;
+    sput-object v0, Landroidx/compose/ui/focus/FocusTargetNode$FocusTargetElement;->a:Landroidx/compose/ui/focus/FocusTargetNode$FocusTargetElement;
 
     return-void
 .end method

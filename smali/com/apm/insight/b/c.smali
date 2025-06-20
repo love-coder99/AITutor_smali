@@ -90,7 +90,7 @@
 .method public static synthetic b(Lcom/apm/insight/b/c;)Lcom/apm/insight/b/b;
     .locals 0
 
-    .line 2
+    .line 1
     iget-object p0, p0, Lcom/apm/insight/b/c;->a:Lcom/apm/insight/b/b;
 
     return-object p0
@@ -136,8 +136,11 @@
 .method public static synthetic d()J
     .locals 2
 
+    .line 1
     sget-wide v0, Lcom/apm/insight/b/c;->b:J
 
+    .line 2
+    .line 3
     return-wide v0
 .end method
 
@@ -146,13 +149,14 @@
 .method public final a()V
     .locals 4
 
+    .line 3
     iget-boolean v0, p0, Lcom/apm/insight/b/c;->c:Z
 
     if-eqz v0, :cond_0
 
     return-void
 
-    .line 3
+    .line 4
     :cond_0
     invoke-static {}, Lcom/apm/insight/runtime/n;->a()Lcom/apm/insight/runtime/r;
 
@@ -170,9 +174,9 @@
 .method public final b()V
     .locals 1
 
-    .line 1
     const/4 v0, 0x1
 
+    .line 2
     iput-boolean v0, p0, Lcom/apm/insight/b/c;->c:Z
 
     return-void

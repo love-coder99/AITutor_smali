@@ -61,6 +61,8 @@
 
 .method public static newBuilder()Lcom/android/billingclient/api/InAppMessageParams$Builder;
     .locals 1
+    .annotation build Landroidx/annotation/NonNull;
+    .end annotation
 
     .line 1
     new-instance v0, Lcom/android/billingclient/api/InAppMessageParams$Builder;

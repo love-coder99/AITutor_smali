@@ -100,15 +100,15 @@
 
     .line 13
     .line 14
-    new-instance v0, Lcom/applovin/impl/vu;
+    new-instance v0, Lcom/applovin/impl/M1;
 
     .line 15
     .line 16
-    const/16 v1, 0x13
+    const/16 v1, 0x14
 
     .line 17
     .line 18
-    invoke-direct {v0, v1}, Lcom/applovin/impl/vu;-><init>(I)V
+    invoke-direct {v0, v1}, Lcom/applovin/impl/M1;-><init>(I)V
 
     .line 19
     .line 20

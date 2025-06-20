@@ -94,14 +94,14 @@
 
     .line 17
     .line 18
-    new-instance v0, Lcom/applovin/impl/bt;
+    new-instance v0, Lcom/applovin/impl/T;
 
     .line 19
     .line 20
-    const/4 v1, 0x4
+    const/4 v1, 0x5
 
     .line 21
-    invoke-direct {v0, v1}, Lcom/applovin/impl/bt;-><init>(I)V
+    invoke-direct {v0, v1}, Lcom/applovin/impl/T;-><init>(I)V
 
     .line 22
     .line 23
@@ -179,69 +179,86 @@
     :cond_3
     const/4 v1, 0x0
 
+    .line 7
     iput-object v1, v0, Lcom/applovin/impl/a5;->a:Ljava/lang/CharSequence;
 
     goto :goto_2
 
+    .line 8
     :goto_3
     iput-object v1, v0, Lcom/applovin/impl/a5;->b:Landroid/text/Layout$Alignment;
 
     move-object v1, p3
 
+    .line 9
     iput-object v1, v0, Lcom/applovin/impl/a5;->c:Landroid/text/Layout$Alignment;
 
+    .line 10
     iput-object v2, v0, Lcom/applovin/impl/a5;->d:Landroid/graphics/Bitmap;
 
     move v1, p5
 
+    .line 11
     iput v1, v0, Lcom/applovin/impl/a5;->f:F
 
     move v1, p6
 
+    .line 12
     iput v1, v0, Lcom/applovin/impl/a5;->g:I
 
     move v1, p7
 
+    .line 13
     iput v1, v0, Lcom/applovin/impl/a5;->h:I
 
     move v1, p8
 
+    .line 14
     iput v1, v0, Lcom/applovin/impl/a5;->i:F
 
     move v1, p9
 
+    .line 15
     iput v1, v0, Lcom/applovin/impl/a5;->j:I
 
     move/from16 v1, p12
 
+    .line 16
     iput v1, v0, Lcom/applovin/impl/a5;->k:F
 
     move/from16 v1, p13
 
+    .line 17
     iput v1, v0, Lcom/applovin/impl/a5;->l:F
 
     move/from16 v1, p14
 
+    .line 18
     iput-boolean v1, v0, Lcom/applovin/impl/a5;->m:Z
 
     move/from16 v1, p15
 
+    .line 19
     iput v1, v0, Lcom/applovin/impl/a5;->n:I
 
     move v1, p10
 
+    .line 20
     iput v1, v0, Lcom/applovin/impl/a5;->o:I
 
     move v1, p11
 
+    .line 21
     iput v1, v0, Lcom/applovin/impl/a5;->p:F
 
     move/from16 v1, p16
 
+    .line 22
     iput v1, v0, Lcom/applovin/impl/a5;->q:I
 
     move/from16 v1, p17
 
+    .line 23
     iput v1, v0, Lcom/applovin/impl/a5;->r:F
 
     return-void
@@ -250,7 +267,7 @@
 .method public synthetic constructor <init>(Ljava/lang/CharSequence;Landroid/text/Layout$Alignment;Landroid/text/Layout$Alignment;Landroid/graphics/Bitmap;FIIFIIFFFZIIFLcom/applovin/impl/a5$a;)V
     .locals 0
 
-    .line 7
+    .line 24
     invoke-direct/range {p0 .. p17}, Lcom/applovin/impl/a5;-><init>(Ljava/lang/CharSequence;Landroid/text/Layout$Alignment;Landroid/text/Layout$Alignment;Landroid/graphics/Bitmap;FIIFIIFFFZIIF)V
 
     return-void

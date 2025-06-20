@@ -247,6 +247,7 @@
 .method public b(J)Lcom/applovin/impl/ij$a;
     .locals 10
 
+    .line 1
     iget-wide v0, p0, Lcom/applovin/impl/o4;->d:J
 
     const-wide/16 v2, -0x1
@@ -290,6 +291,7 @@
 
     invoke-direct {v6, v4, v5, v0, v1}, Lcom/applovin/impl/kj;-><init>(JJ)V
 
+    .line 6
     iget-wide v7, p0, Lcom/applovin/impl/o4;->d:J
 
     cmp-long v9, v7, v2
@@ -314,25 +316,25 @@
 
     goto :goto_0
 
-    .line 6
+    .line 7
     :cond_1
     invoke-virtual {p0, v0, v1}, Lcom/applovin/impl/o4;->d(J)J
 
     move-result-wide p1
 
-    .line 7
+    .line 8
     new-instance v2, Lcom/applovin/impl/kj;
 
     invoke-direct {v2, p1, p2, v0, v1}, Lcom/applovin/impl/kj;-><init>(JJ)V
 
-    .line 8
+    .line 9
     new-instance p1, Lcom/applovin/impl/ij$a;
 
     invoke-direct {p1, v6, v2}, Lcom/applovin/impl/ij$a;-><init>(Lcom/applovin/impl/kj;Lcom/applovin/impl/kj;)V
 
     return-object p1
 
-    .line 9
+    .line 10
     :cond_2
     :goto_0
     new-instance p1, Lcom/applovin/impl/ij$a;
@@ -345,7 +347,7 @@
 .method public b()Z
     .locals 5
 
-    .line 1
+    .line 11
     iget-wide v0, p0, Lcom/applovin/impl/o4;->d:J
 
     const-wide/16 v2, -0x1
@@ -385,11 +387,11 @@
 .method public d(J)J
     .locals 3
 
+    .line 2
     iget-wide v0, p0, Lcom/applovin/impl/o4;->b:J
 
     iget v2, p0, Lcom/applovin/impl/o4;->e:I
 
-    .line 2
     invoke-static {p1, p2, v0, v1, v2}, Lcom/applovin/impl/o4;->a(JJI)J
 
     move-result-wide p1

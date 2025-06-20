@@ -1,445 +1,211 @@
-.class public final Ln2/a;
-.super Ljava/lang/Object;
+.class public abstract LN2/a;
+.super Landroid/view/ViewGroup;
 .source "SourceFile"
 
 
-# static fields
-.field public static final s:[D
-
-
 # instance fields
-.field public a:[D
+.field public final b:Landroid/graphics/Paint;
 
-.field public b:D
+.field public final c:I
 
-.field public c:D
-
-.field public d:D
-
-.field public e:D
-
-.field public f:D
-
-.field public g:D
-
-.field public h:D
-
-.field public i:D
-
-.field public j:D
-
-.field public k:D
-
-.field public l:D
-
-.field public m:D
-
-.field public n:D
-
-.field public o:D
-
-.field public p:D
-
-.field public q:Z
-
-.field public r:Z
+.field public d:Z
 
 
 # direct methods
-.method static constructor <clinit>()V
+.method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
+    .locals 2
+
+    .line 1
+    invoke-direct {p0, p1, p2}, Landroid/view/ViewGroup;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
+
+    .line 2
+    .line 3
+    .line 4
+    new-instance p2, Landroid/graphics/Paint;
+
+    .line 5
+    .line 6
+    invoke-direct {p2}, Landroid/graphics/Paint;-><init>()V
+
+    .line 7
+    .line 8
+    .line 9
+    iput-object p2, p0, LN2/a;->b:Landroid/graphics/Paint;
+
+    .line 10
+    .line 11
+    sget v0, LK2/b;->md_divider_height:I
+
+    .line 12
+    .line 13
+    invoke-virtual {p0}, Landroid/view/View;->getContext()Landroid/content/Context;
+
+    .line 14
+    .line 15
+    .line 16
+    move-result-object v1
+
+    .line 17
+    invoke-virtual {v1}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
+
+    .line 18
+    .line 19
+    .line 20
+    move-result-object v1
+
+    .line 21
+    invoke-virtual {v1, v0}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
+
+    .line 22
+    .line 23
+    .line 24
+    move-result v0
+
+    .line 25
+    iput v0, p0, LN2/a;->c:I
+
+    .line 26
+    .line 27
+    const/4 v0, 0x0
+
+    .line 28
+    invoke-virtual {p0, v0}, Landroid/view/View;->setWillNotDraw(Z)V
+
+    .line 29
+    .line 30
+    .line 31
+    sget-object v0, Landroid/graphics/Paint$Style;->STROKE:Landroid/graphics/Paint$Style;
+
+    .line 32
+    .line 33
+    invoke-virtual {p2, v0}, Landroid/graphics/Paint;->setStyle(Landroid/graphics/Paint$Style;)V
+
+    .line 34
+    .line 35
+    .line 36
+    invoke-virtual {p1}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
+
+    .line 37
+    .line 38
+    .line 39
+    move-result-object p1
+
+    .line 40
+    sget v0, LK2/b;->md_divider_height:I
+
+    .line 41
+    .line 42
+    invoke-virtual {p1, v0}, Landroid/content/res/Resources;->getDimension(I)F
+
+    .line 43
+    .line 44
+    .line 45
+    move-result p1
+
+    .line 46
+    invoke-virtual {p2, p1}, Landroid/graphics/Paint;->setStrokeWidth(F)V
+
+    .line 47
+    .line 48
+    .line 49
+    const/4 p1, 0x1
+
+    .line 50
+    invoke-virtual {p2, p1}, Landroid/graphics/Paint;->setAntiAlias(Z)V
+
+    .line 51
+    .line 52
+    .line 53
+    return-void
+.end method
+
+.method private final getDividerColor()I
     .locals 1
 
     .line 1
-    const/16 v0, 0x5b
+    const/4 v0, 0x0
 
-    new-array v0, v0, [D
-
-    sput-object v0, Ln2/a;->s:[D
-
-    return-void
+    .line 2
+    throw v0
 .end method
 
 
 # virtual methods
-.method public final a()D
-    .locals 6
+.method public final a()Landroid/graphics/Paint;
+    .locals 2
 
     .line 1
-    iget-wide v0, p0, Ln2/a;->j:D
+    iget-object v0, p0, LN2/a;->b:Landroid/graphics/Paint;
 
     .line 2
     .line 3
-    iget-wide v2, p0, Ln2/a;->p:D
+    invoke-direct {p0}, LN2/a;->getDividerColor()I
 
     .line 4
     .line 5
-    mul-double v0, v0, v2
-
     .line 6
+    move-result v1
+
     .line 7
-    iget-wide v2, p0, Ln2/a;->k:D
+    invoke-virtual {v0, v1}, Landroid/graphics/Paint;->setColor(I)V
 
     .line 8
     .line 9
-    neg-double v2, v2
-
     .line 10
-    iget-wide v4, p0, Ln2/a;->o:D
-
-    .line 11
-    .line 12
-    mul-double v2, v2, v4
-
-    .line 13
-    .line 14
-    iget-wide v4, p0, Ln2/a;->n:D
-
-    .line 15
-    .line 16
-    invoke-static {v0, v1, v2, v3}, Ljava/lang/Math;->hypot(DD)D
-
-    .line 17
-    .line 18
-    .line 19
-    move-result-wide v2
-
-    .line 20
-    div-double/2addr v4, v2
-
-    .line 21
-    iget-boolean v2, p0, Ln2/a;->q:Z
-
-    .line 22
-    .line 23
-    if-eqz v2, :cond_0
-
-    .line 24
-    .line 25
-    neg-double v0, v0
-
-    .line 26
-    :cond_0
-    mul-double v0, v0, v4
-
-    .line 27
-    .line 28
-    return-wide v0
+    return-object v0
 .end method
 
-.method public final b()D
-    .locals 6
+.method public final getDialog()LK2/a;
+    .locals 1
 
     .line 1
-    iget-wide v0, p0, Ln2/a;->j:D
+    const/4 v0, 0x0
+
+    .line 2
+    return-object v0
+.end method
+
+.method public final getDividerHeight()I
+    .locals 1
+
+    .line 1
+    iget v0, p0, LN2/a;->c:I
 
     .line 2
     .line 3
-    iget-wide v2, p0, Ln2/a;->p:D
-
-    .line 4
-    .line 5
-    mul-double v0, v0, v2
-
-    .line 6
-    .line 7
-    iget-wide v2, p0, Ln2/a;->k:D
-
-    .line 8
-    .line 9
-    neg-double v2, v2
-
-    .line 10
-    iget-wide v4, p0, Ln2/a;->o:D
-
-    .line 11
-    .line 12
-    mul-double v2, v2, v4
-
-    .line 13
-    .line 14
-    iget-wide v4, p0, Ln2/a;->n:D
-
-    .line 15
-    .line 16
-    invoke-static {v0, v1, v2, v3}, Ljava/lang/Math;->hypot(DD)D
-
-    .line 17
-    .line 18
-    .line 19
-    move-result-wide v0
-
-    .line 20
-    div-double/2addr v4, v0
-
-    .line 21
-    iget-boolean v0, p0, Ln2/a;->q:Z
-
-    .line 22
-    .line 23
-    if-eqz v0, :cond_0
-
-    .line 24
-    .line 25
-    neg-double v0, v2
-
-    .line 26
-    mul-double v0, v0, v4
-
-    .line 27
-    .line 28
-    goto :goto_0
-
-    .line 29
-    :cond_0
-    mul-double v0, v2, v4
-
-    .line 30
-    .line 31
-    :goto_0
-    return-wide v0
+    return v0
 .end method
 
-.method public final c(D)D
-    .locals 4
+.method public final getDrawDivider()Z
+    .locals 1
 
     .line 1
-    iget-wide v0, p0, Ln2/a;->c:D
-
-    sub-double/2addr p1, v0
-
-    iget-wide v0, p0, Ln2/a;->i:D
-
-    mul-double p1, p1, v0
-
-    iget-wide v0, p0, Ln2/a;->f:D
-
-    iget-wide v2, p0, Ln2/a;->e:D
-
-    sub-double/2addr v0, v2
-
-    mul-double v0, v0, p1
-
-    add-double/2addr v0, v2
-
-    return-wide v0
-.end method
-
-.method public final d(D)D
-    .locals 4
-
-    .line 1
-    iget-wide v0, p0, Ln2/a;->c:D
-
-    sub-double/2addr p1, v0
-
-    iget-wide v0, p0, Ln2/a;->i:D
-
-    mul-double p1, p1, v0
-
-    iget-wide v0, p0, Ln2/a;->h:D
-
-    iget-wide v2, p0, Ln2/a;->g:D
-
-    sub-double/2addr v0, v2
-
-    mul-double v0, v0, p1
-
-    add-double/2addr v0, v2
-
-    return-wide v0
-.end method
-
-.method public final e()D
-    .locals 4
-
-    .line 1
-    iget-wide v0, p0, Ln2/a;->j:D
-
-    iget-wide v2, p0, Ln2/a;->o:D
-
-    mul-double v0, v0, v2
-
-    iget-wide v2, p0, Ln2/a;->l:D
-
-    add-double/2addr v0, v2
-
-    return-wide v0
-.end method
-
-.method public final f()D
-    .locals 4
-
-    .line 1
-    iget-wide v0, p0, Ln2/a;->k:D
-
-    iget-wide v2, p0, Ln2/a;->p:D
-
-    mul-double v0, v0, v2
-
-    iget-wide v2, p0, Ln2/a;->m:D
-
-    add-double/2addr v0, v2
-
-    return-wide v0
-.end method
-
-.method public final g(D)V
-    .locals 6
-
-    .line 1
-    iget-boolean v0, p0, Ln2/a;->q:Z
+    iget-boolean v0, p0, LN2/a;->d:Z
 
     .line 2
     .line 3
-    if-eqz v0, :cond_0
+    return v0
+.end method
+
+.method public final setDialog(LK2/a;)V
+    .locals 0
+
+    .line 1
+    return-void
+.end method
+
+.method public final setDrawDivider(Z)V
+    .locals 0
+
+    .line 1
+    iput-boolean p1, p0, LN2/a;->d:Z
+
+    .line 2
+    .line 3
+    invoke-virtual {p0}, Landroid/view/View;->invalidate()V
 
     .line 4
     .line 5
-    iget-wide v0, p0, Ln2/a;->d:D
-
     .line 6
-    .line 7
-    sub-double/2addr v0, p1
-
-    .line 8
-    goto :goto_0
-
-    .line 9
-    :cond_0
-    iget-wide v0, p0, Ln2/a;->c:D
-
-    .line 10
-    .line 11
-    sub-double v0, p1, v0
-
-    .line 12
-    .line 13
-    :goto_0
-    iget-wide p1, p0, Ln2/a;->i:D
-
-    .line 14
-    .line 15
-    mul-double v0, v0, p1
-
-    .line 16
-    .line 17
-    const-wide/16 p1, 0x0
-
-    .line 18
-    .line 19
-    cmpg-double v2, v0, p1
-
-    .line 20
-    .line 21
-    if-gtz v2, :cond_1
-
-    .line 22
-    .line 23
-    goto :goto_1
-
-    .line 24
-    :cond_1
-    const-wide/high16 p1, 0x3ff0000000000000L    # 1.0
-
-    .line 25
-    .line 26
-    cmpl-double v2, v0, p1
-
-    .line 27
-    .line 28
-    if-ltz v2, :cond_2
-
-    .line 29
-    .line 30
-    goto :goto_1
-
-    .line 31
-    :cond_2
-    iget-object p1, p0, Ln2/a;->a:[D
-
-    .line 32
-    .line 33
-    array-length p2, p1
-
-    .line 34
-    add-int/lit8 p2, p2, -0x1
-
-    .line 35
-    .line 36
-    int-to-double v2, p2
-
-    .line 37
-    mul-double v0, v0, v2
-
-    .line 38
-    .line 39
-    double-to-int p2, v0
-
-    .line 40
-    int-to-double v2, p2
-
-    .line 41
-    sub-double/2addr v0, v2
-
-    .line 42
-    aget-wide v2, p1, p2
-
-    .line 43
-    .line 44
-    add-int/lit8 p2, p2, 0x1
-
-    .line 45
-    .line 46
-    aget-wide v4, p1, p2
-
-    .line 47
-    .line 48
-    sub-double/2addr v4, v2
-
-    .line 49
-    mul-double v4, v4, v0
-
-    .line 50
-    .line 51
-    add-double p1, v4, v2
-
-    .line 52
-    .line 53
-    :goto_1
-    const-wide v0, 0x3ff921fb54442d18L    # 1.5707963267948966
-
-    .line 54
-    .line 55
-    .line 56
-    .line 57
-    .line 58
-    mul-double p1, p1, v0
-
-    .line 59
-    .line 60
-    invoke-static {p1, p2}, Ljava/lang/Math;->sin(D)D
-
-    .line 61
-    .line 62
-    .line 63
-    move-result-wide v0
-
-    .line 64
-    iput-wide v0, p0, Ln2/a;->o:D
-
-    .line 65
-    .line 66
-    invoke-static {p1, p2}, Ljava/lang/Math;->cos(D)D
-
-    .line 67
-    .line 68
-    .line 69
-    move-result-wide p1
-
-    .line 70
-    iput-wide p1, p0, Ln2/a;->p:D
-
-    .line 71
-    .line 72
     return-void
 .end method

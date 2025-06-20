@@ -3,14 +3,14 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lzh/c;
+.implements Lka/c;
 
 
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "Lkotlin/jvm/internal/Lambda;",
-        "Lzh/c;"
+        "Lka/c;"
     }
 .end annotation
 
@@ -38,33 +38,39 @@
 
 
 # instance fields
-.field final synthetic $restore:Lzh/c;
+.field final synthetic $restore:Lka/c;
     .annotation system Ldalvik/annotation/Signature;
         value = {
-            "Lzh/c;"
+            "Lka/c;"
         }
     .end annotation
 .end field
 
 
 # direct methods
-.method public constructor <init>(Lzh/c;)V
+.method public constructor <init>(Lka/c;)V
     .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
-            "Lzh/c;",
+            "Lka/c;",
             ")V"
         }
     .end annotation
 
     .line 1
-    iput-object p1, p0, Landroidx/compose/runtime/saveable/MapSaverKt$mapSaver$2;->$restore:Lzh/c;
+    iput-object p1, p0, Landroidx/compose/runtime/saveable/MapSaverKt$mapSaver$2;->$restore:Lka/c;
 
+    .line 2
+    .line 3
     const/4 p1, 0x1
 
+    .line 4
     invoke-direct {p0, p1}, Lkotlin/jvm/internal/Lambda;-><init>(I)V
 
+    .line 5
+    .line 6
+    .line 7
     return-void
 .end method
 
@@ -141,11 +147,11 @@
 
     goto :goto_0
 
-    :cond_0
-    iget-object p1, p0, Landroidx/compose/runtime/saveable/MapSaverKt$mapSaver$2;->$restore:Lzh/c;
-
     .line 8
-    invoke-interface {p1, v0}, Lzh/c;->invoke(Ljava/lang/Object;)Ljava/lang/Object;
+    :cond_0
+    iget-object p1, p0, Landroidx/compose/runtime/saveable/MapSaverKt$mapSaver$2;->$restore:Lka/c;
+
+    invoke-interface {p1, v0}, Lka/c;->invoke(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object p1
 
@@ -156,10 +162,6 @@
     new-instance p1, Ljava/lang/IllegalStateException;
 
     const-string v0, "non-zero remainder"
-
-    invoke-virtual {v0}, Ljava/lang/Object;->toString()Ljava/lang/String;
-
-    move-result-object v0
 
     invoke-direct {p1, v0}, Ljava/lang/IllegalStateException;-><init>(Ljava/lang/String;)V
 

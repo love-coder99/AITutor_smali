@@ -65,7 +65,7 @@
 .method public static a(J)V
     .locals 0
 
-    .line 48
+    .line 52
     invoke-static {p0, p1}, Lcom/apm/insight/nativecrash/NativeImpl;->a(J)V
 
     return-void
@@ -73,6 +73,14 @@
 
 .method public static declared-synchronized a(Landroid/app/Application;Landroid/content/Context;)V
     .locals 5
+    .param p0    # Landroid/app/Application;
+        .annotation build Landroidx/annotation/NonNull;
+        .end annotation
+    .end param
+    .param p1    # Landroid/content/Context;
+        .annotation build Landroidx/annotation/NonNull;
+        .end annotation
+    .end param
 
     const-class v0, Lcom/apm/insight/runtime/m;
 
@@ -84,13 +92,14 @@
 
     move-result-wide v1
 
+    .line 16
     sget-boolean v3, Lcom/apm/insight/runtime/m;->a:Z
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
     if-eqz v3, :cond_0
 
-    .line 16
+    .line 17
     monitor-exit v0
 
     return-void
@@ -98,6 +107,7 @@
     :cond_0
     const/4 v3, 0x1
 
+    .line 18
     :try_start_1
     sput-boolean v3, Lcom/apm/insight/runtime/m;->a:Z
 
@@ -105,17 +115,17 @@
 
     if-eqz p0, :cond_5
 
-    .line 17
+    .line 19
     invoke-static {p0, p1}, Lcom/apm/insight/e;->a(Landroid/app/Application;Landroid/content/Context;)V
 
-    .line 18
+    .line 20
     invoke-static {}, Lcom/apm/insight/e;->u()Z
 
     move-result v4
 
     if-eqz v4, :cond_2
 
-    .line 19
+    .line 21
     invoke-static {p0}, Lcom/apm/insight/runtime/m;->b(Landroid/content/Context;)Z
 
     move-result v4
@@ -137,51 +147,54 @@
 
     goto :goto_1
 
-    .line 20
+    .line 22
     :cond_1
     :goto_0
     monitor-exit v0
 
     return-void
 
-    .line 21
+    .line 23
     :cond_2
     :try_start_2
     invoke-static {}, Lcom/apm/insight/g/a;->a()Lcom/apm/insight/g/a;
 
     move-result-object p0
 
-    .line 22
+    .line 24
     new-instance v4, Lcom/apm/insight/i/b;
 
     invoke-direct {v4, p1}, Lcom/apm/insight/i/b;-><init>(Landroid/content/Context;)V
 
     invoke-virtual {p0, v4}, Lcom/apm/insight/g/a;->a(Lcom/apm/insight/g/c;)V
 
-    .line 23
+    .line 25
     new-instance v4, Lcom/apm/insight/g/d;
 
     invoke-direct {v4, p1}, Lcom/apm/insight/g/d;-><init>(Landroid/content/Context;)V
 
     invoke-virtual {p0, v4}, Lcom/apm/insight/g/a;->b(Lcom/apm/insight/g/c;)V
 
+    .line 26
     sput-boolean v3, Lcom/apm/insight/runtime/m;->b:Z
 
-    .line 24
+    .line 27
     invoke-static {}, Lcom/apm/insight/nativecrash/NativeImpl;->a()Z
 
-    .line 25
+    .line 28
     invoke-static {p1}, Lcom/apm/insight/nativecrash/NativeImpl;->a(Landroid/content/Context;)Z
 
     move-result p0
 
+    .line 29
     sput-boolean p0, Lcom/apm/insight/runtime/m;->d:Z
 
     if-nez p0, :cond_3
 
+    .line 30
     sput-boolean v3, Lcom/apm/insight/runtime/m;->e:Z
 
-    .line 26
+    .line 31
     :cond_3
     invoke-static {}, Landroid/os/Looper;->myLooper()Landroid/os/Looper;
 
@@ -193,12 +206,13 @@
 
     if-ne p0, p1, :cond_4
 
+    .line 32
     sput-boolean v3, Lcom/apm/insight/runtime/m;->g:Z
 
-    .line 27
+    .line 33
     invoke-static {}, Lcom/apm/insight/nativecrash/NativeImpl;->i()V
 
-    .line 28
+    .line 34
     :cond_4
     invoke-static {}, Lcom/apm/insight/runtime/n;->a()Lcom/apm/insight/runtime/r;
 
@@ -212,7 +226,7 @@
 
     invoke-virtual {p0, p1, v3, v4}, Lcom/apm/insight/runtime/r;->a(Ljava/lang/Runnable;J)Z
 
-    .line 29
+    .line 35
     new-instance p0, Ljava/lang/StringBuilder;
 
     const-string p1, "Npth.init takes "
@@ -239,12 +253,12 @@
     :try_end_2
     .catchall {:try_start_2 .. :try_end_2} :catchall_0
 
-    .line 30
+    .line 36
     monitor-exit v0
 
     return-void
 
-    .line 31
+    .line 37
     :cond_5
     :try_start_3
     new-instance p0, Ljava/lang/IllegalArgumentException;
@@ -254,17 +268,21 @@
     invoke-direct {p0, p1}, Ljava/lang/IllegalArgumentException;-><init>(Ljava/lang/String;)V
 
     throw p0
-    :try_end_3
-    .catchall {:try_start_3 .. :try_end_3} :catchall_0
 
     :goto_1
     monitor-exit v0
+    :try_end_3
+    .catchall {:try_start_3 .. :try_end_3} :catchall_0
 
     throw p0
 .end method
 
 .method public static declared-synchronized a(Landroid/content/Context;)V
     .locals 3
+    .param p0    # Landroid/content/Context;
+        .annotation build Landroidx/annotation/NonNull;
+        .end annotation
+    .end param
 
     const-class v0, Lcom/apm/insight/runtime/m;
 
@@ -380,11 +398,11 @@
     invoke-direct {p0, v1}, Ljava/lang/IllegalArgumentException;-><init>(Ljava/lang/String;)V
 
     throw p0
-    :try_end_3
-    .catchall {:try_start_3 .. :try_end_3} :catchall_0
 
     :goto_1
     monitor-exit v0
+    :try_end_3
+    .catchall {:try_start_3 .. :try_end_3} :catchall_0
 
     throw p0
 .end method
@@ -392,9 +410,10 @@
 .method public static a(Lcom/apm/insight/ICrashCallback;Lcom/apm/insight/CrashType;)V
     .locals 1
 
+    .line 55
     sget-object v0, Lcom/apm/insight/runtime/m;->f:Lcom/apm/insight/runtime/c;
 
-    .line 42
+    .line 56
     invoke-virtual {v0, p0, p1}, Lcom/apm/insight/runtime/c;->a(Lcom/apm/insight/ICrashCallback;Lcom/apm/insight/CrashType;)V
 
     return-void
@@ -403,9 +422,10 @@
 .method public static a(Lcom/apm/insight/IOOMCallback;)V
     .locals 1
 
+    .line 57
     sget-object v0, Lcom/apm/insight/runtime/m;->f:Lcom/apm/insight/runtime/c;
 
-    .line 43
+    .line 58
     invoke-virtual {v0, p0}, Lcom/apm/insight/runtime/c;->a(Lcom/apm/insight/IOOMCallback;)V
 
     return-void
@@ -414,7 +434,7 @@
 .method public static a(Lcom/apm/insight/b/h$a;)V
     .locals 0
 
-    .line 33
+    .line 39
     invoke-static {p0}, Lcom/apm/insight/runtime/i;->a(Lcom/apm/insight/b/h$a;)V
 
     return-void
@@ -422,8 +442,12 @@
 
 .method public static a(Lcom/apm/insight/b/i$a;)V
     .locals 1
+    .param p0    # Lcom/apm/insight/b/i$a;
+        .annotation build Landroidx/annotation/NonNull;
+        .end annotation
+    .end param
 
-    .line 49
+    .line 53
     invoke-static {}, Lcom/apm/insight/e;->i()Lcom/apm/insight/runtime/ConfigManager;
 
     move-result-object v0
@@ -436,14 +460,14 @@
 .method public static a(Ljava/lang/String;)V
     .locals 1
 
-    .line 34
+    .line 40
     invoke-static {p0}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
 
     move-result v0
 
     if-nez v0, :cond_0
 
-    .line 35
+    .line 41
     invoke-static {p0}, Lcom/apm/insight/d/a;->a(Ljava/lang/String;)V
 
     :cond_0
@@ -453,7 +477,7 @@
 .method public static a(Ljava/lang/String;Lcom/apm/insight/b/h$a;)V
     .locals 2
 
-    .line 32
+    .line 38
     invoke-static {}, Lcom/apm/insight/runtime/n;->a()Lcom/apm/insight/runtime/r;
 
     move-result-object v0
@@ -470,26 +494,26 @@
 .method public static a(Ljava/lang/String;Lcom/apm/insight/b/i$a;Lcom/apm/insight/b/i$a;)V
     .locals 1
 
-    .line 44
+    .line 48
     invoke-static {p0}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
 
     move-result v0
 
     if-nez v0, :cond_0
 
-    .line 45
+    .line 49
     new-instance v0, Ljava/io/File;
 
     invoke-direct {v0, p0}, Ljava/io/File;-><init>(Ljava/lang/String;)V
 
-    .line 46
+    .line 50
     invoke-virtual {v0}, Ljava/io/File;->exists()Z
 
     move-result v0
 
     if-eqz v0, :cond_0
 
-    .line 47
+    .line 51
     invoke-static {}, Lcom/apm/insight/a/a;->a()Lcom/apm/insight/a/a;
 
     move-result-object v0
@@ -502,6 +526,18 @@
 
 .method public static a(Ljava/lang/String;Ljava/util/Map;Ljava/util/Map;Lcom/apm/insight/b/h$a;)V
     .locals 1
+    .param p1    # Ljava/util/Map;
+        .annotation build Landroidx/annotation/Nullable;
+        .end annotation
+    .end param
+    .param p2    # Ljava/util/Map;
+        .annotation build Landroidx/annotation/Nullable;
+        .end annotation
+    .end param
+    .param p3    # Lcom/apm/insight/b/h$a;
+        .annotation build Landroidx/annotation/Nullable;
+        .end annotation
+    .end param
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -521,14 +557,14 @@
         }
     .end annotation
 
-    .line 36
+    .line 42
     invoke-static {p0}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
 
     move-result v0
 
     if-nez v0, :cond_0
 
-    .line 37
+    .line 43
     invoke-static {p0, p1, p2, p3}, Lcom/apm/insight/d/a;->a(Ljava/lang/String;Ljava/util/Map;Ljava/util/Map;Lcom/apm/insight/b/h$a;)V
 
     :cond_0
@@ -537,6 +573,22 @@
 
 .method public static a(Ljava/lang/String;Ljava/util/Map;Ljava/util/Map;Ljava/util/Map;Lcom/apm/insight/b/h$a;)V
     .locals 1
+    .param p1    # Ljava/util/Map;
+        .annotation build Landroidx/annotation/Nullable;
+        .end annotation
+    .end param
+    .param p2    # Ljava/util/Map;
+        .annotation build Landroidx/annotation/Nullable;
+        .end annotation
+    .end param
+    .param p3    # Ljava/util/Map;
+        .annotation build Landroidx/annotation/Nullable;
+        .end annotation
+    .end param
+    .param p4    # Lcom/apm/insight/b/h$a;
+        .annotation build Landroidx/annotation/Nullable;
+        .end annotation
+    .end param
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -560,14 +612,14 @@
         }
     .end annotation
 
-    .line 38
+    .line 44
     invoke-static {p0}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
 
     move-result v0
 
     if-nez v0, :cond_0
 
-    .line 39
+    .line 45
     invoke-static {p0, p1, p2, p3, p4}, Lcom/apm/insight/d/a;->a(Ljava/lang/String;Ljava/util/Map;Ljava/util/Map;Ljava/util/Map;Lcom/apm/insight/b/h$a;)V
 
     :cond_0
@@ -576,10 +628,14 @@
 
 .method public static a(Ljava/lang/Throwable;)V
     .locals 1
+    .param p0    # Ljava/lang/Throwable;
+        .annotation build Landroidx/annotation/NonNull;
+        .end annotation
+    .end param
     .annotation runtime Ljava/lang/Deprecated;
     .end annotation
 
-    .line 40
+    .line 46
     invoke-static {}, Lcom/apm/insight/e;->i()Lcom/apm/insight/runtime/ConfigManager;
 
     move-result-object v0
@@ -592,7 +648,7 @@
 
     return-void
 
-    .line 41
+    .line 47
     :cond_0
     invoke-static {p0}, Lcom/apm/insight/g/a;->a(Ljava/lang/Throwable;)V
 
@@ -602,7 +658,7 @@
 .method public static a(Z)V
     .locals 0
 
-    .line 50
+    .line 54
     invoke-static {p0}, Lcom/apm/insight/e;->a(Z)V
 
     return-void
@@ -611,7 +667,7 @@
 .method public static b(J)V
     .locals 0
 
-    .line 7
+    .line 5
     invoke-static {p0, p1}, Lcom/apm/insight/nativecrash/NativeImpl;->b(J)V
 
     return-void
@@ -620,9 +676,10 @@
 .method public static b(Lcom/apm/insight/ICrashCallback;Lcom/apm/insight/CrashType;)V
     .locals 1
 
+    .line 9
     sget-object v0, Lcom/apm/insight/runtime/m;->f:Lcom/apm/insight/runtime/c;
 
-    .line 4
+    .line 10
     invoke-virtual {v0, p0, p1}, Lcom/apm/insight/runtime/c;->b(Lcom/apm/insight/ICrashCallback;Lcom/apm/insight/CrashType;)V
 
     return-void
@@ -631,9 +688,10 @@
 .method public static b(Lcom/apm/insight/IOOMCallback;)V
     .locals 1
 
+    .line 11
     sget-object v0, Lcom/apm/insight/runtime/m;->f:Lcom/apm/insight/runtime/c;
 
-    .line 5
+    .line 12
     invoke-virtual {v0, p0}, Lcom/apm/insight/runtime/c;->b(Lcom/apm/insight/IOOMCallback;)V
 
     return-void
@@ -642,7 +700,7 @@
 .method public static b(Lcom/apm/insight/b/h$a;)V
     .locals 0
 
-    .line 6
+    .line 4
     invoke-static {p0}, Lcom/apm/insight/k/e;->a(Lcom/apm/insight/b/h$a;)V
 
     return-void
@@ -676,7 +734,7 @@
 .method public static b(Z)V
     .locals 0
 
-    .line 8
+    .line 6
     invoke-static {p0}, Lcom/apm/insight/e;->b(Z)V
 
     return-void
@@ -694,7 +752,7 @@
 .method private static b(Landroid/content/Context;)Z
     .locals 2
 
-    .line 9
+    .line 7
     :try_start_0
     new-instance v0, Ljava/io/File;
 
@@ -706,7 +764,7 @@
 
     invoke-direct {v0, p0, v1}, Ljava/io/File;-><init>(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 10
+    .line 8
     invoke-virtual {v0}, Ljava/io/File;->exists()Z
 
     move-result p0
@@ -819,11 +877,12 @@
     .line 6
     invoke-static {}, Lcom/apm/insight/nativecrash/NativeImpl;->d()V
 
+    .line 7
     sget-boolean v2, Lcom/apm/insight/runtime/m;->e:Z
 
     if-eqz v2, :cond_0
 
-    .line 7
+    .line 8
     invoke-static {}, Lcom/apm/insight/c;->a()Lcom/apm/insight/b/a;
 
     const-string v1, "NativeLibraryLoad faild"
@@ -835,14 +894,14 @@
     :cond_0
     if-gez v1, :cond_1
 
-    .line 8
+    .line 9
     invoke-static {}, Lcom/apm/insight/c;->a()Lcom/apm/insight/b/a;
 
     const-string v1, "createCallbackThread faild"
 
     invoke-static {v1}, Lcom/apm/insight/b/a;->a(Ljava/lang/String;)V
 
-    .line 9
+    .line 10
     :cond_1
     :goto_0
     invoke-static {}, Lcom/apm/insight/e/a;->a()Lcom/apm/insight/e/a;
@@ -851,24 +910,25 @@
 
     invoke-virtual {v1, v0}, Lcom/apm/insight/e/a;->a(Landroid/content/Context;)V
 
-    .line 10
+    .line 11
     invoke-static {}, Lcom/apm/insight/c;->a()Lcom/apm/insight/b/a;
 
-    .line 11
+    .line 12
     invoke-static {v0}, Lcom/apm/insight/k/h;->a(Landroid/content/Context;)V
 
     if-eqz p0, :cond_2
 
-    .line 12
+    .line 13
     invoke-static {v0}, Lcom/apm/insight/b/f;->a(Landroid/content/Context;)Lcom/apm/insight/b/f;
 
     move-result-object v0
 
     invoke-virtual {v0}, Lcom/apm/insight/b/f;->c()V
 
+    .line 14
     sput-boolean p0, Lcom/apm/insight/runtime/m;->c:Z
 
-    .line 13
+    .line 15
     :cond_2
     invoke-static {}, Lcom/apm/insight/k/g;->a()Lcom/apm/insight/k/g;
 
@@ -876,20 +936,20 @@
 
     invoke-virtual {p0}, Lcom/apm/insight/k/g;->b()V
 
-    .line 14
+    .line 16
     invoke-static {}, Lcom/apm/insight/nativecrash/NativeImpl;->g()V
 
-    .line 15
+    .line 17
     invoke-static {}, Lcom/apm/insight/k/j;->d()V
 
-    .line 16
+    .line 18
     invoke-static {}, Lcom/apm/insight/nativecrash/NativeImpl;->k()V
 
+    .line 19
     const-string p0, "afterNpthInitAsync"
 
     const-string v0, "noValue"
 
-    .line 17
     invoke-static {p0, v0}, Lcom/apm/insight/runtime/p;->a(Ljava/lang/String;Ljava/lang/String;)V
 
     return-void
@@ -1256,35 +1316,49 @@
 .method public static o()Z
     .locals 1
 
+    .line 1
     sget-boolean v0, Lcom/apm/insight/runtime/m;->h:Z
 
+    .line 2
+    .line 3
     return v0
 .end method
 
 .method public static p()V
     .locals 1
 
+    .line 1
     const/4 v0, 0x1
 
+    .line 2
     sput-boolean v0, Lcom/apm/insight/runtime/m;->h:Z
 
+    .line 3
+    .line 4
     return-void
 .end method
 
 .method public static synthetic q()Z
     .locals 1
 
+    .line 1
     sget-boolean v0, Lcom/apm/insight/runtime/m;->g:Z
 
+    .line 2
+    .line 3
     return v0
 .end method
 
 .method public static synthetic r()Z
     .locals 1
 
+    .line 1
     const/4 v0, 0x1
 
+    .line 2
     sput-boolean v0, Lcom/apm/insight/runtime/m;->g:Z
 
+    .line 3
+    .line 4
     return v0
 .end method

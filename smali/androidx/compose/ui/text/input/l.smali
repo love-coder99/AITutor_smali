@@ -1,72 +1,52 @@
-.class public final Landroidx/compose/ui/text/input/l;
+.class public final Landroidx/compose/ui/text/input/L;
 .super Ljava/lang/Object;
 .source "SourceFile"
 
 # interfaces
-.implements Landroidx/compose/ui/text/input/h;
+.implements Landroidx/compose/ui/text/input/w;
 
 
-# virtual methods
-.method public final a(Landroidx/compose/ui/text/input/k;)V
-    .locals 1
+# static fields
+.field public static final a:LC7/q;
+
+
+# direct methods
+.method static constructor <clinit>()V
+    .locals 2
 
     .line 1
-    const/4 v0, -0x1
+    new-instance v0, LC7/q;
 
     .line 2
-    iput v0, p1, Landroidx/compose/ui/text/input/k;->d:I
-
     .line 3
-    .line 4
-    iput v0, p1, Landroidx/compose/ui/text/input/k;->e:I
+    const/16 v1, 0x1c
 
+    .line 4
     .line 5
+    invoke-direct {v0, v1}, LC7/q;-><init>(I)V
+
     .line 6
+    .line 7
+    .line 8
+    sput-object v0, Landroidx/compose/ui/text/input/L;->a:LC7/q;
+
+    .line 9
+    .line 10
     return-void
 .end method
 
-.method public final equals(Ljava/lang/Object;)Z
+
+# virtual methods
+.method public a(I)I
     .locals 0
 
     .line 1
-    instance-of p1, p1, Landroidx/compose/ui/text/input/l;
-
-    .line 2
-    .line 3
     return p1
 .end method
 
-.method public final hashCode()I
-    .locals 1
+.method public b(I)I
+    .locals 0
 
     .line 1
-    const-class v0, Landroidx/compose/ui/text/input/l;
-
-    .line 2
-    .line 3
-    invoke-static {v0}, Lkotlin/jvm/internal/i;->a(Ljava/lang/Class;)Lkotlin/jvm/internal/b;
-
-    .line 4
-    .line 5
-    .line 6
-    move-result-object v0
-
-    .line 7
-    invoke-virtual {v0}, Lkotlin/jvm/internal/b;->hashCode()I
-
-    .line 8
-    .line 9
-    .line 10
-    move-result v0
-
-    .line 11
-    return v0
-.end method
-
-.method public final toString()Ljava/lang/String;
-    .locals 1
-
-    const-string v0, "FinishComposingTextCommand()"
-
-    return-object v0
+    return p1
 .end method

@@ -1,5 +1,5 @@
 .class Landroidx/appcompat/widget/ResourceManagerInternal$ColorFilterLruCache;
-.super Landroidx/collection/q;
+.super Landroidx/collection/p;
 .source "SourceFile"
 
 
@@ -15,7 +15,7 @@
 
 .annotation system Ldalvik/annotation/Signature;
     value = {
-        "Landroidx/collection/q;"
+        "Landroidx/collection/p;"
     }
 .end annotation
 
@@ -25,7 +25,7 @@
     .locals 0
 
     .line 1
-    invoke-direct {p0, p1}, Landroidx/collection/q;-><init>(I)V
+    invoke-direct {p0, p1}, Landroidx/collection/p;-><init>(I)V
 
     .line 2
     .line 3
@@ -84,7 +84,7 @@
     move-result-object p1
 
     .line 9
-    invoke-virtual {p0, p1}, Landroidx/collection/q;->get(Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {p0, p1}, Landroidx/collection/p;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 10
     .line 11
@@ -119,7 +119,7 @@
     move-result-object p1
 
     .line 9
-    invoke-virtual {p0, p1, p3}, Landroidx/collection/q;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {p0, p1, p3}, Landroidx/collection/p;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 10
     .line 11

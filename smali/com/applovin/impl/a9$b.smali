@@ -51,18 +51,18 @@
 .method public a(I)Lcom/applovin/impl/a9$b;
     .locals 2
 
+    .line 1
     iget-boolean v0, p0, Lcom/applovin/impl/a9$b;->b:Z
 
     const/4 v1, 0x1
 
     xor-int/2addr v0, v1
 
-    .line 1
     invoke-static {v0}, Lcom/applovin/impl/b1;->b(Z)V
 
+    .line 2
     iget-object v0, p0, Lcom/applovin/impl/a9$b;->a:Landroid/util/SparseBooleanArray;
 
-    .line 2
     invoke-virtual {v0, p1, v1}, Landroid/util/SparseBooleanArray;->append(IZ)V
 
     return-object p0
@@ -139,18 +139,19 @@
 .method public a()Lcom/applovin/impl/a9;
     .locals 3
 
+    .line 8
     iget-boolean v0, p0, Lcom/applovin/impl/a9$b;->b:Z
 
     const/4 v1, 0x1
 
     xor-int/2addr v0, v1
 
-    .line 8
     invoke-static {v0}, Lcom/applovin/impl/b1;->b(Z)V
 
+    .line 9
     iput-boolean v1, p0, Lcom/applovin/impl/a9$b;->b:Z
 
-    .line 9
+    .line 10
     new-instance v0, Lcom/applovin/impl/a9;
 
     iget-object v1, p0, Lcom/applovin/impl/a9$b;->a:Landroid/util/SparseBooleanArray;

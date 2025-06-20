@@ -57,9 +57,9 @@
 .method public a()Ljava/lang/Comparable;
     .locals 2
 
+    .line 7
     iget-object v0, p0, Lcom/applovin/impl/ug;->a:Ljava/util/ArrayList;
 
-    .line 7
     invoke-virtual {p0}, Lcom/applovin/impl/ug;->size()I
 
     move-result v1
@@ -78,9 +78,9 @@
 .method public a(I)Ljava/lang/Comparable;
     .locals 1
 
+    .line 6
     iget-object v0, p0, Lcom/applovin/impl/ug;->a:Ljava/util/ArrayList;
 
-    .line 6
     invoke-virtual {v0, p1}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
 
     move-result-object p1
@@ -93,28 +93,28 @@
 .method public a(ILjava/lang/Comparable;)V
     .locals 2
 
+    .line 8
     iget-object v0, p0, Lcom/applovin/impl/ug;->a:Ljava/util/ArrayList;
 
-    .line 8
     invoke-virtual {v0, p1}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
 
     move-result-object v0
 
     check-cast v0, Ljava/lang/Comparable;
 
+    .line 9
     iget-object v1, p0, Lcom/applovin/impl/ug;->b:Ljava/util/HashSet;
 
-    .line 9
     invoke-virtual {v1, v0}, Ljava/util/HashSet;->remove(Ljava/lang/Object;)Z
 
+    .line 10
     iget-object v0, p0, Lcom/applovin/impl/ug;->a:Ljava/util/ArrayList;
 
-    .line 10
     invoke-virtual {v0, p1, p2}, Ljava/util/ArrayList;->set(ILjava/lang/Object;)Ljava/lang/Object;
 
+    .line 11
     iget-object p1, p0, Lcom/applovin/impl/ug;->b:Ljava/util/HashSet;
 
-    .line 11
     invoke-virtual {p1, p2}, Ljava/util/HashSet;->add(Ljava/lang/Object;)Z
 
     return-void
@@ -154,10 +154,10 @@
 
     goto :goto_0
 
+    .line 3
     :cond_1
     iget-object v0, p0, Lcom/applovin/impl/ug;->a:Ljava/util/ArrayList;
 
-    .line 3
     invoke-virtual {p0, p1}, Lcom/applovin/impl/ug;->b(Ljava/lang/Comparable;)I
 
     move-result v1
@@ -166,17 +166,17 @@
 
     goto :goto_1
 
+    .line 4
     :cond_2
     :goto_0
     iget-object v0, p0, Lcom/applovin/impl/ug;->a:Ljava/util/ArrayList;
 
-    .line 4
     invoke-virtual {v0, p1}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
+    .line 5
     :goto_1
     iget-object v0, p0, Lcom/applovin/impl/ug;->b:Ljava/util/HashSet;
 
-    .line 5
     invoke-virtual {v0, p1}, Ljava/util/HashSet;->add(Ljava/lang/Object;)Z
 
     move-result p1
@@ -277,9 +277,9 @@
 .method public b(Ljava/lang/Comparable;)I
     .locals 2
 
+    .line 1
     iget-object v0, p0, Lcom/applovin/impl/ug;->a:Ljava/util/ArrayList;
 
-    .line 1
     invoke-static {v0, p1}, Ljava/util/Collections;->binarySearch(Ljava/util/List;Ljava/lang/Object;)I
 
     move-result p1
@@ -319,18 +319,18 @@
 .method public b(I)Ljava/lang/Comparable;
     .locals 1
 
+    .line 4
     iget-object v0, p0, Lcom/applovin/impl/ug;->a:Ljava/util/ArrayList;
 
-    .line 4
     invoke-virtual {v0, p1}, Ljava/util/ArrayList;->remove(I)Ljava/lang/Object;
 
     move-result-object p1
 
     check-cast p1, Ljava/lang/Comparable;
 
+    .line 5
     iget-object v0, p0, Lcom/applovin/impl/ug;->b:Ljava/util/HashSet;
 
-    .line 5
     invoke-virtual {v0, p1}, Ljava/util/HashSet;->remove(Ljava/lang/Object;)Z
 
     return-object p1
@@ -784,9 +784,9 @@
 .method public toArray()[Ljava/lang/Object;
     .locals 1
 
+    .line 1
     iget-object v0, p0, Lcom/applovin/impl/ug;->a:Ljava/util/ArrayList;
 
-    .line 1
     invoke-virtual {v0}, Ljava/util/ArrayList;->toArray()[Ljava/lang/Object;
 
     move-result-object v0
@@ -797,9 +797,9 @@
 .method public toArray([Ljava/lang/Object;)[Ljava/lang/Object;
     .locals 1
 
+    .line 2
     iget-object v0, p0, Lcom/applovin/impl/ug;->a:Ljava/util/ArrayList;
 
-    .line 2
     invoke-virtual {v0, p1}, Ljava/util/ArrayList;->toArray([Ljava/lang/Object;)[Ljava/lang/Object;
 
     move-result-object p1

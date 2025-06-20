@@ -1,14 +1,50 @@
-.class public final Lh2/m;
+.class public final LH2/m;
 .super Ljava/lang/Object;
 .source "SourceFile"
 
+# interfaces
+.implements Ljava/lang/Iterable;
+.implements Lla/a;
+
+
+# static fields
+.field public static final c:LH2/m;
+
 
 # instance fields
-.field public final a:J
+.field public final b:Ljava/util/Map;
 
 
 # direct methods
-.method public synthetic constructor <init>(J)V
+.method static constructor <clinit>()V
+    .locals 2
+
+    .line 1
+    new-instance v0, LH2/m;
+
+    .line 2
+    .line 3
+    invoke-static {}, Lkotlin/collections/a;->F()Ljava/util/Map;
+
+    .line 4
+    .line 5
+    .line 6
+    move-result-object v1
+
+    .line 7
+    invoke-direct {v0, v1}, LH2/m;-><init>(Ljava/util/Map;)V
+
+    .line 8
+    .line 9
+    .line 10
+    sput-object v0, LH2/m;->c:LH2/m;
+
+    .line 11
+    .line 12
+    return-void
+.end method
+
+.method public constructor <init>(Ljava/util/Map;)V
     .locals 0
 
     .line 1
@@ -17,41 +53,82 @@
     .line 2
     .line 3
     .line 4
-    iput-wide p1, p0, Lh2/m;->a:J
+    iput-object p1, p0, LH2/m;->b:Ljava/util/Map;
 
     .line 5
     .line 6
     return-void
 .end method
 
-.method public static final a(JJ)Z
-    .locals 1
 
-    .line 1
-    cmp-long v0, p0, p2
-
-    if-nez v0, :cond_0
-
-    const/4 p0, 0x1
-
-    goto :goto_0
-
-    :cond_0
-    const/4 p0, 0x0
-
-    :goto_0
-    return p0
-.end method
-
-.method public static b(J)Ljava/lang/String;
+# virtual methods
+.method public final equals(Ljava/lang/Object;)Z
     .locals 2
 
     .line 1
-    const-wide/16 v0, 0x0
+    const/4 v0, 0x1
+
+    .line 2
+    if-ne p0, p1, :cond_0
+
+    .line 3
+    .line 4
+    return v0
+
+    .line 5
+    :cond_0
+    instance-of v1, p1, LH2/m;
+
+    .line 6
+    .line 7
+    if-eqz v1, :cond_1
+
+    .line 8
+    .line 9
+    check-cast p1, LH2/m;
+
+    .line 10
+    .line 11
+    iget-object p1, p1, LH2/m;->b:Ljava/util/Map;
+
+    .line 12
+    .line 13
+    iget-object v1, p0, LH2/m;->b:Ljava/util/Map;
+
+    .line 14
+    .line 15
+    invoke-static {v1, p1}, Lkotlin/jvm/internal/h;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
+
+    .line 16
+    .line 17
+    .line 18
+    move-result p1
+
+    .line 19
+    if-eqz p1, :cond_1
+
+    .line 20
+    .line 21
+    goto :goto_0
+
+    .line 22
+    :cond_1
+    const/4 v0, 0x0
+
+    .line 23
+    :goto_0
+    return v0
+.end method
+
+.method public final hashCode()I
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, LH2/m;->b:Ljava/util/Map;
 
     .line 2
     .line 3
-    invoke-static {p0, p1, v0, v1}, Lh2/m;->a(JJ)Z
+    invoke-virtual {v0}, Ljava/lang/Object;->hashCode()I
 
     .line 4
     .line 5
@@ -59,164 +136,174 @@
     move-result v0
 
     .line 7
-    if-eqz v0, :cond_0
+    return v0
+.end method
 
+.method public final iterator()Ljava/util/Iterator;
+    .locals 5
+
+    .line 1
+    new-instance v0, Ljava/util/ArrayList;
+
+    .line 2
+    .line 3
+    iget-object v1, p0, LH2/m;->b:Ljava/util/Map;
+
+    .line 4
+    .line 5
+    invoke-interface {v1}, Ljava/util/Map;->size()I
+
+    .line 6
+    .line 7
     .line 8
+    move-result v2
+
     .line 9
-    const-string p0, "Unspecified"
+    invoke-direct {v0, v2}, Ljava/util/ArrayList;-><init>(I)V
 
     .line 10
     .line 11
-    goto :goto_0
-
     .line 12
-    :cond_0
-    const-wide v0, 0x100000000L
+    invoke-interface {v1}, Ljava/util/Map;->entrySet()Ljava/util/Set;
 
     .line 13
     .line 14
     .line 15
-    .line 16
-    .line 17
-    invoke-static {p0, p1, v0, v1}, Lh2/m;->a(JJ)Z
+    move-result-object v1
 
+    .line 16
+    invoke-interface {v1}, Ljava/util/Set;->iterator()Ljava/util/Iterator;
+
+    .line 17
     .line 18
     .line 19
+    move-result-object v1
+
     .line 20
-    move-result v0
+    :goto_0
+    invoke-interface {v1}, Ljava/util/Iterator;->hasNext()Z
 
     .line 21
-    if-eqz v0, :cond_1
-
     .line 22
     .line 23
-    const-string p0, "Sp"
+    move-result v2
 
     .line 24
-    .line 25
-    goto :goto_0
+    if-eqz v2, :cond_0
 
+    .line 25
     .line 26
-    :cond_1
-    const-wide v0, 0x200000000L
+    invoke-interface {v1}, Ljava/util/Iterator;->next()Ljava/lang/Object;
 
     .line 27
     .line 28
     .line 29
-    .line 30
-    .line 31
-    invoke-static {p0, p1, v0, v1}, Lh2/m;->a(JJ)Z
+    move-result-object v2
 
+    .line 30
+    check-cast v2, Ljava/util/Map$Entry;
+
+    .line 31
     .line 32
+    invoke-interface {v2}, Ljava/util/Map$Entry;->getKey()Ljava/lang/Object;
+
     .line 33
     .line 34
-    move-result p0
-
     .line 35
-    if-eqz p0, :cond_2
+    move-result-object v3
 
     .line 36
+    check-cast v3, Ljava/lang/String;
+
     .line 37
-    const-string p0, "Em"
-
     .line 38
+    invoke-interface {v2}, Ljava/util/Map$Entry;->getValue()Ljava/lang/Object;
+
     .line 39
-    goto :goto_0
-
     .line 40
-    :cond_2
-    const-string p0, "Invalid"
-
     .line 41
+    move-result-object v2
+
     .line 42
-    :goto_0
-    return-object p0
-.end method
+    invoke-static {v2}, Landroidx/appcompat/view/menu/F;->O(Ljava/lang/Object;)V
 
+    .line 43
+    .line 44
+    .line 45
+    new-instance v2, Lkotlin/Pair;
 
-# virtual methods
-.method public final equals(Ljava/lang/Object;)Z
-    .locals 6
+    .line 46
+    .line 47
+    const/4 v4, 0x0
 
-    .line 1
-    instance-of v0, p1, Lh2/m;
+    .line 48
+    invoke-direct {v2, v3, v4}, Lkotlin/Pair;-><init>(Ljava/lang/Object;Ljava/lang/Object;)V
 
-    .line 2
-    .line 3
-    const/4 v1, 0x0
+    .line 49
+    .line 50
+    .line 51
+    invoke-interface {v0, v2}, Ljava/util/Collection;->add(Ljava/lang/Object;)Z
 
-    .line 4
-    if-nez v0, :cond_0
-
-    .line 5
-    .line 6
+    .line 52
+    .line 53
+    .line 54
     goto :goto_0
 
-    .line 7
+    .line 55
     :cond_0
-    check-cast p1, Lh2/m;
+    invoke-interface {v0}, Ljava/util/List;->iterator()Ljava/util/Iterator;
 
-    .line 8
-    .line 9
-    iget-wide v2, p1, Lh2/m;->a:J
+    .line 56
+    .line 57
+    .line 58
+    move-result-object v0
 
-    .line 10
-    .line 11
-    iget-wide v4, p0, Lh2/m;->a:J
-
-    .line 12
-    .line 13
-    cmp-long p1, v4, v2
-
-    .line 14
-    .line 15
-    if-eqz p1, :cond_1
-
-    .line 16
-    .line 17
-    goto :goto_0
-
-    .line 18
-    :cond_1
-    const/4 v1, 0x1
-
-    .line 19
-    :goto_0
-    return v1
-.end method
-
-.method public final hashCode()I
-    .locals 5
-
-    .line 1
-    const/16 v0, 0x20
-
-    iget-wide v1, p0, Lh2/m;->a:J
-
-    ushr-long v3, v1, v0
-
-    xor-long v0, v1, v3
-
-    long-to-int v1, v0
-
-    return v1
+    .line 59
+    return-object v0
 .end method
 
 .method public final toString()Ljava/lang/String;
     .locals 2
 
     .line 1
-    iget-wide v0, p0, Lh2/m;->a:J
+    new-instance v0, Ljava/lang/StringBuilder;
 
     .line 2
     .line 3
-    invoke-static {v0, v1}, Lh2/m;->b(J)Ljava/lang/String;
+    const-string v1, "Parameters(entries="
 
     .line 4
     .line 5
+    invoke-direct {v0, v1}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+
     .line 6
+    .line 7
+    .line 8
+    iget-object v1, p0, LH2/m;->b:Ljava/util/Map;
+
+    .line 9
+    .line 10
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+
+    .line 11
+    .line 12
+    .line 13
+    const/16 v1, 0x29
+
+    .line 14
+    .line 15
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
+
+    .line 16
+    .line 17
+    .line 18
+    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    .line 19
+    .line 20
+    .line 21
     move-result-object v0
 
-    .line 7
+    .line 22
     return-object v0
 .end method

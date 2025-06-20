@@ -3,14 +3,14 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lzh/c;
+.implements Lka/c;
 
 
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "Lkotlin/jvm/internal/Lambda;",
-        "Lzh/c;"
+        "Lka/c;"
     }
 .end annotation
 
@@ -21,7 +21,7 @@
     d2 = {
         "",
         "it",
-        "Lqh/r;",
+        "LX9/j;",
         "invoke",
         "(Z)V",
         "<anonymous>"
@@ -36,14 +36,14 @@
 
 
 # instance fields
-.field final synthetic $state:Landroidx/compose/foundation/text/t;
+.field final synthetic $state:Landroidx/compose/foundation/text/s;
 
 
 # direct methods
-.method public constructor <init>(Landroidx/compose/foundation/text/t;)V
+.method public constructor <init>(Landroidx/compose/foundation/text/s;)V
     .locals 0
 
-    iput-object p1, p0, Landroidx/compose/foundation/text/CoreTextFieldKt$CoreTextField$pointerModifier$1$1;->$state:Landroidx/compose/foundation/text/t;
+    iput-object p1, p0, Landroidx/compose/foundation/text/CoreTextFieldKt$CoreTextField$pointerModifier$1$1;->$state:Landroidx/compose/foundation/text/s;
 
     const/4 p1, 0x1
 
@@ -66,7 +66,7 @@
 
     invoke-virtual {p0, p1}, Landroidx/compose/foundation/text/CoreTextFieldKt$CoreTextField$pointerModifier$1$1;->invoke(Z)V
 
-    sget-object p1, Lqh/r;->a:Lqh/r;
+    sget-object p1, LX9/j;->a:LX9/j;
 
     return-object p1
 .end method
@@ -74,10 +74,8 @@
 .method public final invoke(Z)V
     .locals 1
 
-    iget-object v0, p0, Landroidx/compose/foundation/text/CoreTextFieldKt$CoreTextField$pointerModifier$1$1;->$state:Landroidx/compose/foundation/text/t;
-
     .line 2
-    iget-object v0, v0, Landroidx/compose/foundation/text/t;->q:Landroidx/compose/runtime/ParcelableSnapshotMutableState;
+    iget-object v0, p0, Landroidx/compose/foundation/text/CoreTextFieldKt$CoreTextField$pointerModifier$1$1;->$state:Landroidx/compose/foundation/text/s;
 
     .line 3
     invoke-static {p1}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
@@ -85,7 +83,10 @@
     move-result-object p1
 
     .line 4
-    invoke-virtual {v0, p1}, Landroidx/compose/runtime/t2;->setValue(Ljava/lang/Object;)V
+    iget-object v0, v0, Landroidx/compose/foundation/text/s;->q:Landroidx/compose/runtime/ParcelableSnapshotMutableState;
+
+    .line 5
+    invoke-virtual {v0, p1}, Landroidx/compose/runtime/ParcelableSnapshotMutableState;->setValue(Ljava/lang/Object;)V
 
     return-void
 .end method

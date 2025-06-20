@@ -1,183 +1,260 @@
-.class public abstract Lg/e;
+.class public final synthetic LG/e;
 .super Ljava/lang/Object;
 .source "SourceFile"
 
+# interfaces
+.implements Landroidx/concurrent/futures/i;
+.implements LG/a;
 
-# static fields
-.field public static abc_ab_share_pack_mtrl_alpha:I = 0x7f080039
 
-.field public static abc_action_bar_item_background_material:I = 0x7f08003a
+# instance fields
+.field public final synthetic b:I
 
-.field public static abc_btn_borderless_material:I = 0x7f08003b
+.field public final synthetic c:Lcom/google/common/util/concurrent/d;
 
-.field public static abc_btn_check_material:I = 0x7f08003c
 
-.field public static abc_btn_check_material_anim:I = 0x7f08003d
+# direct methods
+.method public synthetic constructor <init>(ILcom/google/common/util/concurrent/d;)V
+    .locals 0
 
-.field public static abc_btn_check_to_on_mtrl_000:I = 0x7f08003e
+    .line 1
+    iput p1, p0, LG/e;->b:I
 
-.field public static abc_btn_check_to_on_mtrl_015:I = 0x7f08003f
+    iput-object p2, p0, LG/e;->c:Lcom/google/common/util/concurrent/d;
 
-.field public static abc_btn_colored_material:I = 0x7f080040
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-.field public static abc_btn_default_mtrl_shape:I = 0x7f080041
+    return-void
+.end method
 
-.field public static abc_btn_radio_material:I = 0x7f080042
 
-.field public static abc_btn_radio_material_anim:I = 0x7f080043
+# virtual methods
+.method public apply(Ljava/lang/Object;)Lcom/google/common/util/concurrent/d;
+    .locals 1
 
-.field public static abc_btn_radio_to_on_mtrl_000:I = 0x7f080044
+    .line 1
+    iget v0, p0, LG/e;->b:I
 
-.field public static abc_btn_radio_to_on_mtrl_015:I = 0x7f080045
+    .line 2
+    .line 3
+    packed-switch v0, :pswitch_data_0
 
-.field public static abc_btn_switch_to_on_mtrl_00001:I = 0x7f080046
+    .line 4
+    .line 5
+    .line 6
+    check-cast p1, Ljava/lang/Void;
 
-.field public static abc_btn_switch_to_on_mtrl_00012:I = 0x7f080047
+    .line 7
+    .line 8
+    iget-object p1, p0, LG/e;->c:Lcom/google/common/util/concurrent/d;
 
-.field public static abc_cab_background_internal_bg:I = 0x7f080048
+    .line 9
+    .line 10
+    invoke-interface {p1}, Ljava/util/concurrent/Future;->get()Ljava/lang/Object;
 
-.field public static abc_cab_background_top_material:I = 0x7f080049
+    .line 11
+    .line 12
+    .line 13
+    move-result-object p1
 
-.field public static abc_cab_background_top_mtrl_alpha:I = 0x7f08004a
+    .line 14
+    check-cast p1, LC/h;
 
-.field public static abc_control_background_material:I = 0x7f08004b
+    .line 15
+    .line 16
+    invoke-interface {p1}, LC/h;->b()Lcom/google/common/util/concurrent/d;
 
-.field public static abc_dialog_material_background:I = 0x7f08004c
+    .line 17
+    .line 18
+    .line 19
+    move-result-object p1
 
-.field public static abc_edit_text_material:I = 0x7f08004d
+    .line 20
+    return-object p1
 
-.field public static abc_ic_ab_back_material:I = 0x7f08004e
+    .line 21
+    :pswitch_0
+    check-cast p1, LC/h;
 
-.field public static abc_ic_arrow_drop_right_black_24dp:I = 0x7f08004f
+    .line 22
+    .line 23
+    iget-object p1, p0, LG/e;->c:Lcom/google/common/util/concurrent/d;
 
-.field public static abc_ic_clear_material:I = 0x7f080050
+    .line 24
+    .line 25
+    invoke-interface {p1}, Ljava/util/concurrent/Future;->get()Ljava/lang/Object;
 
-.field public static abc_ic_commit_search_api_mtrl_alpha:I = 0x7f080051
+    .line 26
+    .line 27
+    .line 28
+    move-result-object p1
 
-.field public static abc_ic_go_search_api_material:I = 0x7f080052
+    .line 29
+    check-cast p1, LC/h;
 
-.field public static abc_ic_menu_copy_mtrl_am_alpha:I = 0x7f080053
+    .line 30
+    .line 31
+    invoke-interface {p1}, LC/h;->a()Lcom/google/common/util/concurrent/d;
 
-.field public static abc_ic_menu_cut_mtrl_alpha:I = 0x7f080054
+    .line 32
+    .line 33
+    .line 34
+    move-result-object p1
 
-.field public static abc_ic_menu_overflow_material:I = 0x7f080055
-
-.field public static abc_ic_menu_paste_mtrl_am_alpha:I = 0x7f080056
-
-.field public static abc_ic_menu_selectall_mtrl_alpha:I = 0x7f080057
-
-.field public static abc_ic_menu_share_mtrl_alpha:I = 0x7f080058
-
-.field public static abc_ic_search_api_material:I = 0x7f080059
-
-.field public static abc_ic_voice_search_api_material:I = 0x7f08005a
-
-.field public static abc_item_background_holo_dark:I = 0x7f08005b
-
-.field public static abc_item_background_holo_light:I = 0x7f08005c
-
-.field public static abc_list_divider_material:I = 0x7f08005d
-
-.field public static abc_list_divider_mtrl_alpha:I = 0x7f08005e
-
-.field public static abc_list_focused_holo:I = 0x7f08005f
-
-.field public static abc_list_longpressed_holo:I = 0x7f080060
-
-.field public static abc_list_pressed_holo_dark:I = 0x7f080061
-
-.field public static abc_list_pressed_holo_light:I = 0x7f080062
-
-.field public static abc_list_selector_background_transition_holo_dark:I = 0x7f080063
-
-.field public static abc_list_selector_background_transition_holo_light:I = 0x7f080064
-
-.field public static abc_list_selector_disabled_holo_dark:I = 0x7f080065
-
-.field public static abc_list_selector_disabled_holo_light:I = 0x7f080066
-
-.field public static abc_list_selector_holo_dark:I = 0x7f080067
-
-.field public static abc_list_selector_holo_light:I = 0x7f080068
-
-.field public static abc_menu_hardkey_panel_mtrl_mult:I = 0x7f080069
-
-.field public static abc_popup_background_mtrl_mult:I = 0x7f08006a
-
-.field public static abc_ratingbar_indicator_material:I = 0x7f08006b
-
-.field public static abc_ratingbar_material:I = 0x7f08006c
-
-.field public static abc_ratingbar_small_material:I = 0x7f08006d
-
-.field public static abc_scrubber_control_off_mtrl_alpha:I = 0x7f08006e
-
-.field public static abc_scrubber_control_to_pressed_mtrl_000:I = 0x7f08006f
-
-.field public static abc_scrubber_control_to_pressed_mtrl_005:I = 0x7f080070
-
-.field public static abc_scrubber_primary_mtrl_alpha:I = 0x7f080071
-
-.field public static abc_scrubber_track_mtrl_alpha:I = 0x7f080072
-
-.field public static abc_seekbar_thumb_material:I = 0x7f080073
-
-.field public static abc_seekbar_tick_mark_material:I = 0x7f080074
-
-.field public static abc_seekbar_track_material:I = 0x7f080075
-
-.field public static abc_spinner_mtrl_am_alpha:I = 0x7f080076
-
-.field public static abc_spinner_textfield_background_material:I = 0x7f080077
-
-.field public static abc_star_black_48dp:I = 0x7f080078
-
-.field public static abc_star_half_black_48dp:I = 0x7f080079
-
-.field public static abc_switch_thumb_material:I = 0x7f08007a
-
-.field public static abc_switch_track_mtrl_alpha:I = 0x7f08007b
-
-.field public static abc_tab_indicator_material:I = 0x7f08007c
-
-.field public static abc_tab_indicator_mtrl_alpha:I = 0x7f08007d
-
-.field public static abc_text_cursor_material:I = 0x7f08007e
-
-.field public static abc_text_select_handle_left_mtrl:I = 0x7f08007f
-
-.field public static abc_text_select_handle_middle_mtrl:I = 0x7f080080
-
-.field public static abc_text_select_handle_right_mtrl:I = 0x7f080081
-
-.field public static abc_textfield_activated_mtrl_alpha:I = 0x7f080082
-
-.field public static abc_textfield_default_mtrl_alpha:I = 0x7f080083
-
-.field public static abc_textfield_search_activated_mtrl_alpha:I = 0x7f080084
-
-.field public static abc_textfield_search_default_mtrl_alpha:I = 0x7f080085
-
-.field public static abc_textfield_search_material:I = 0x7f080086
-
-.field public static btn_checkbox_checked_mtrl:I = 0x7f080126
-
-.field public static btn_checkbox_checked_to_unchecked_mtrl_animation:I = 0x7f080127
-
-.field public static btn_checkbox_unchecked_mtrl:I = 0x7f080128
-
-.field public static btn_checkbox_unchecked_to_checked_mtrl_animation:I = 0x7f080129
-
-.field public static btn_radio_off_mtrl:I = 0x7f08012a
-
-.field public static btn_radio_off_to_on_mtrl_animation:I = 0x7f08012b
-
-.field public static btn_radio_on_mtrl:I = 0x7f08012c
-
-.field public static btn_radio_on_to_off_mtrl_animation:I = 0x7f08012d
-
-.field public static test_level_drawable:I = 0x7f080347
-
-.field public static tooltip_frame_dark:I = 0x7f080348
-
-.field public static tooltip_frame_light:I = 0x7f080349
+    .line 35
+    return-object p1
+
+    .line 36
+    nop
+
+    .line 37
+    :pswitch_data_0
+    .packed-switch 0x2
+        :pswitch_0
+    .end packed-switch
+.end method
+
+.method public p(Landroidx/concurrent/futures/h;)Ljava/lang/Object;
+    .locals 3
+
+    .line 1
+    iget v0, p0, LG/e;->b:I
+
+    .line 2
+    .line 3
+    packed-switch v0, :pswitch_data_0
+
+    .line 4
+    .line 5
+    .line 6
+    new-instance v0, LG/i;
+
+    .line 7
+    .line 8
+    const/4 v1, 0x0
+
+    .line 9
+    invoke-direct {v0, p1, v1}, LG/i;-><init>(Landroidx/concurrent/futures/h;I)V
+
+    .line 10
+    .line 11
+    .line 12
+    invoke-static {}, LX3/j;->j()LF/a;
+
+    .line 13
+    .line 14
+    .line 15
+    move-result-object p1
+
+    .line 16
+    iget-object v1, p0, LG/e;->c:Lcom/google/common/util/concurrent/d;
+
+    .line 17
+    .line 18
+    invoke-interface {v1, v0, p1}, Lcom/google/common/util/concurrent/d;->a(Ljava/lang/Runnable;Ljava/util/concurrent/Executor;)V
+
+    .line 19
+    .line 20
+    .line 21
+    new-instance p1, Ljava/lang/StringBuilder;
+
+    .line 22
+    .line 23
+    const-string v0, "transformVoidFuture ["
+
+    .line 24
+    .line 25
+    invoke-direct {p1, v0}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+
+    .line 26
+    .line 27
+    .line 28
+    invoke-virtual {p1, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+
+    .line 29
+    .line 30
+    .line 31
+    const-string v0, "]"
+
+    .line 32
+    .line 33
+    invoke-virtual {p1, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 34
+    .line 35
+    .line 36
+    invoke-virtual {p1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    .line 37
+    .line 38
+    .line 39
+    move-result-object p1
+
+    .line 40
+    return-object p1
+
+    .line 41
+    :pswitch_0
+    invoke-static {}, LX3/j;->j()LF/a;
+
+    .line 42
+    .line 43
+    .line 44
+    move-result-object v0
+
+    .line 45
+    const/4 v1, 0x0
+
+    .line 46
+    iget-object v2, p0, LG/e;->c:Lcom/google/common/util/concurrent/d;
+
+    .line 47
+    .line 48
+    invoke-static {v1, v2, p1, v0}, LG/m;->g(ZLcom/google/common/util/concurrent/d;Landroidx/concurrent/futures/h;LF/a;)V
+
+    .line 49
+    .line 50
+    .line 51
+    new-instance p1, Ljava/lang/StringBuilder;
+
+    .line 52
+    .line 53
+    const-string v0, "nonCancellationPropagating["
+
+    .line 54
+    .line 55
+    invoke-direct {p1, v0}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+
+    .line 56
+    .line 57
+    .line 58
+    invoke-virtual {p1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+
+    .line 59
+    .line 60
+    .line 61
+    const-string v0, "]"
+
+    .line 62
+    .line 63
+    invoke-virtual {p1, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 64
+    .line 65
+    .line 66
+    invoke-virtual {p1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    .line 67
+    .line 68
+    .line 69
+    move-result-object p1
+
+    .line 70
+    return-object p1
+
+    .line 71
+    :pswitch_data_0
+    .packed-switch 0x0
+        :pswitch_0
+    .end packed-switch
+.end method

@@ -181,6 +181,7 @@
 .method private synthetic a(FZ)V
     .locals 1
 
+    .line 3
     iget-object v0, p0, Lcom/applovin/impl/rg;->j:Lcom/iab/omid/library/applovin/adsession/media/MediaEvents;
 
     if-eqz p2, :cond_0
@@ -192,7 +193,6 @@
     :cond_0
     const/high16 p2, 0x3f800000    # 1.0f
 
-    .line 3
     :goto_0
     invoke-virtual {v0, p1, p2}, Lcom/iab/omid/library/applovin/adsession/media/MediaEvents;->start(FF)V
 
@@ -202,6 +202,7 @@
 .method private synthetic a(Z)V
     .locals 1
 
+    .line 4
     iget-object v0, p0, Lcom/applovin/impl/rg;->j:Lcom/iab/omid/library/applovin/adsession/media/MediaEvents;
 
     if-eqz p1, :cond_0
@@ -213,7 +214,6 @@
     :cond_0
     const/high16 p1, 0x3f800000    # 1.0f
 
-    .line 4
     :goto_0
     invoke-virtual {v0, p1}, Lcom/iab/omid/library/applovin/adsession/media/MediaEvents;->volumeChange(F)V
 
@@ -224,7 +224,7 @@
     .locals 0
 
     .line 1
-    invoke-direct {p0}, Lcom/applovin/impl/rg;->k()V
+    invoke-direct {p0}, Lcom/applovin/impl/rg;->q()V
 
     return-void
 .end method
@@ -233,7 +233,7 @@
     .locals 0
 
     .line 1
-    invoke-direct {p0}, Lcom/applovin/impl/rg;->n()V
+    invoke-direct {p0}, Lcom/applovin/impl/rg;->o()V
 
     return-void
 .end method
@@ -241,19 +241,19 @@
 .method private synthetic k()V
     .locals 1
 
+    .line 2
     iget-object v0, p0, Lcom/applovin/impl/rg;->j:Lcom/iab/omid/library/applovin/adsession/media/MediaEvents;
 
-    .line 2
     invoke-virtual {v0}, Lcom/iab/omid/library/applovin/adsession/media/MediaEvents;->bufferFinish()V
 
     return-void
 .end method
 
-.method public static synthetic k(Lcom/applovin/impl/rg;)V
+.method public static synthetic k(Lcom/applovin/impl/rg;Z)V
     .locals 0
 
     .line 1
-    invoke-direct {p0}, Lcom/applovin/impl/rg;->t()V
+    invoke-direct {p0, p1}, Lcom/applovin/impl/rg;->a(Z)V
 
     return-void
 .end method
@@ -261,9 +261,9 @@
 .method private synthetic l()V
     .locals 1
 
+    .line 2
     iget-object v0, p0, Lcom/applovin/impl/rg;->j:Lcom/iab/omid/library/applovin/adsession/media/MediaEvents;
 
-    .line 2
     invoke-virtual {v0}, Lcom/iab/omid/library/applovin/adsession/media/MediaEvents;->bufferStart()V
 
     return-void
@@ -273,7 +273,7 @@
     .locals 0
 
     .line 1
-    invoke-direct {p0}, Lcom/applovin/impl/rg;->o()V
+    invoke-direct {p0}, Lcom/applovin/impl/rg;->k()V
 
     return-void
 .end method
@@ -281,9 +281,9 @@
 .method private synthetic m()V
     .locals 2
 
+    .line 2
     iget-object v0, p0, Lcom/applovin/impl/rg;->j:Lcom/iab/omid/library/applovin/adsession/media/MediaEvents;
 
-    .line 2
     sget-object v1, Lcom/iab/omid/library/applovin/adsession/media/InteractionType;->CLICK:Lcom/iab/omid/library/applovin/adsession/media/InteractionType;
 
     invoke-virtual {v0, v1}, Lcom/iab/omid/library/applovin/adsession/media/MediaEvents;->adUserInteraction(Lcom/iab/omid/library/applovin/adsession/media/InteractionType;)V
@@ -291,11 +291,11 @@
     return-void
 .end method
 
-.method public static synthetic m(Lcom/applovin/impl/rg;FZ)V
+.method public static synthetic m(Lcom/applovin/impl/rg;)V
     .locals 0
 
     .line 1
-    invoke-direct {p0, p1, p2}, Lcom/applovin/impl/rg;->a(FZ)V
+    invoke-direct {p0}, Lcom/applovin/impl/rg;->t()V
 
     return-void
 .end method
@@ -303,9 +303,9 @@
 .method private synthetic n()V
     .locals 1
 
+    .line 2
     iget-object v0, p0, Lcom/applovin/impl/rg;->j:Lcom/iab/omid/library/applovin/adsession/media/MediaEvents;
 
-    .line 2
     invoke-virtual {v0}, Lcom/iab/omid/library/applovin/adsession/media/MediaEvents;->complete()V
 
     return-void
@@ -315,7 +315,7 @@
     .locals 0
 
     .line 1
-    invoke-direct {p0}, Lcom/applovin/impl/rg;->m()V
+    invoke-direct {p0}, Lcom/applovin/impl/rg;->u()V
 
     return-void
 .end method
@@ -323,19 +323,19 @@
 .method private synthetic o()V
     .locals 1
 
+    .line 2
     iget-object v0, p0, Lcom/applovin/impl/rg;->j:Lcom/iab/omid/library/applovin/adsession/media/MediaEvents;
 
-    .line 2
     invoke-virtual {v0}, Lcom/iab/omid/library/applovin/adsession/media/MediaEvents;->firstQuartile()V
 
     return-void
 .end method
 
-.method public static synthetic o(Lcom/applovin/impl/rg;)V
+.method public static synthetic o(Lcom/applovin/impl/rg;FZ)V
     .locals 0
 
     .line 1
-    invoke-direct {p0}, Lcom/applovin/impl/rg;->q()V
+    invoke-direct {p0, p1, p2}, Lcom/applovin/impl/rg;->a(FZ)V
 
     return-void
 .end method
@@ -343,11 +343,11 @@
 .method private synthetic p()V
     .locals 2
 
+    .line 2
     iget-object v0, p0, Lcom/applovin/impl/lg;->g:Lcom/iab/omid/library/applovin/adsession/AdEvents;
 
     iget-object v1, p0, Lcom/applovin/impl/rg;->k:Lcom/iab/omid/library/applovin/adsession/media/VastProperties;
 
-    .line 2
     invoke-virtual {v0, v1}, Lcom/iab/omid/library/applovin/adsession/AdEvents;->loaded(Lcom/iab/omid/library/applovin/adsession/media/VastProperties;)V
 
     return-void
@@ -357,7 +357,7 @@
     .locals 0
 
     .line 1
-    invoke-direct {p0}, Lcom/applovin/impl/rg;->s()V
+    invoke-direct {p0}, Lcom/applovin/impl/rg;->l()V
 
     return-void
 .end method
@@ -365,9 +365,9 @@
 .method private synthetic q()V
     .locals 1
 
+    .line 2
     iget-object v0, p0, Lcom/applovin/impl/rg;->j:Lcom/iab/omid/library/applovin/adsession/media/MediaEvents;
 
-    .line 2
     invoke-virtual {v0}, Lcom/iab/omid/library/applovin/adsession/media/MediaEvents;->midpoint()V
 
     return-void
@@ -377,7 +377,7 @@
     .locals 0
 
     .line 1
-    invoke-direct {p0}, Lcom/applovin/impl/rg;->u()V
+    invoke-direct {p0}, Lcom/applovin/impl/rg;->s()V
 
     return-void
 .end method
@@ -385,19 +385,19 @@
 .method private synthetic r()V
     .locals 1
 
+    .line 2
     iget-object v0, p0, Lcom/applovin/impl/rg;->j:Lcom/iab/omid/library/applovin/adsession/media/MediaEvents;
 
-    .line 2
     invoke-virtual {v0}, Lcom/iab/omid/library/applovin/adsession/media/MediaEvents;->pause()V
 
     return-void
 .end method
 
-.method public static synthetic r(Lcom/applovin/impl/rg;Z)V
+.method public static synthetic r(Lcom/applovin/impl/rg;)V
     .locals 0
 
     .line 1
-    invoke-direct {p0, p1}, Lcom/applovin/impl/rg;->a(Z)V
+    invoke-direct {p0}, Lcom/applovin/impl/rg;->m()V
 
     return-void
 .end method
@@ -405,9 +405,9 @@
 .method private synthetic s()V
     .locals 1
 
+    .line 2
     iget-object v0, p0, Lcom/applovin/impl/rg;->j:Lcom/iab/omid/library/applovin/adsession/media/MediaEvents;
 
-    .line 2
     invoke-virtual {v0}, Lcom/iab/omid/library/applovin/adsession/media/MediaEvents;->resume()V
 
     return-void
@@ -417,7 +417,7 @@
     .locals 0
 
     .line 1
-    invoke-direct {p0}, Lcom/applovin/impl/rg;->l()V
+    invoke-direct {p0}, Lcom/applovin/impl/rg;->n()V
 
     return-void
 .end method
@@ -425,9 +425,9 @@
 .method private synthetic t()V
     .locals 1
 
+    .line 2
     iget-object v0, p0, Lcom/applovin/impl/rg;->j:Lcom/iab/omid/library/applovin/adsession/media/MediaEvents;
 
-    .line 2
     invoke-virtual {v0}, Lcom/iab/omid/library/applovin/adsession/media/MediaEvents;->skipped()V
 
     return-void
@@ -437,7 +437,7 @@
     .locals 0
 
     .line 1
-    invoke-direct {p0}, Lcom/applovin/impl/rg;->r()V
+    invoke-direct {p0}, Lcom/applovin/impl/rg;->p()V
 
     return-void
 .end method
@@ -445,9 +445,9 @@
 .method private synthetic u()V
     .locals 1
 
+    .line 2
     iget-object v0, p0, Lcom/applovin/impl/rg;->j:Lcom/iab/omid/library/applovin/adsession/media/MediaEvents;
 
-    .line 2
     invoke-virtual {v0}, Lcom/iab/omid/library/applovin/adsession/media/MediaEvents;->thirdQuartile()V
 
     return-void
@@ -457,7 +457,7 @@
     .locals 0
 
     .line 1
-    invoke-direct {p0}, Lcom/applovin/impl/rg;->p()V
+    invoke-direct {p0}, Lcom/applovin/impl/rg;->r()V
 
     return-void
 .end method
@@ -468,48 +468,20 @@
     .locals 2
 
     .line 1
-    new-instance v0, Lcom/applovin/impl/fw;
+    new-instance v0, Lcom/applovin/impl/V2;
 
     .line 2
     .line 3
-    const/4 v1, 0x7
+    const/16 v1, 0xa
 
     .line 4
-    invoke-direct {v0, p0, v1}, Lcom/applovin/impl/fw;-><init>(Lcom/applovin/impl/rg;I)V
-
     .line 5
+    invoke-direct {v0, p0, v1}, Lcom/applovin/impl/V2;-><init>(Lcom/applovin/impl/rg;I)V
+
     .line 6
     .line 7
+    .line 8
     const-string v1, "track resumed"
-
-    .line 8
-    .line 9
-    invoke-virtual {p0, v1, v0}, Lcom/applovin/impl/lg;->b(Ljava/lang/String;Ljava/lang/Runnable;)V
-
-    .line 10
-    .line 11
-    .line 12
-    return-void
-.end method
-
-.method public B()V
-    .locals 2
-
-    .line 1
-    new-instance v0, Lcom/applovin/impl/fw;
-
-    .line 2
-    .line 3
-    const/16 v1, 0x9
-
-    .line 4
-    .line 5
-    invoke-direct {v0, p0, v1}, Lcom/applovin/impl/fw;-><init>(Lcom/applovin/impl/rg;I)V
-
-    .line 6
-    .line 7
-    .line 8
-    const-string v1, "track skipped"
 
     .line 9
     .line 10
@@ -518,6 +490,34 @@
     .line 11
     .line 12
     .line 13
+    return-void
+.end method
+
+.method public B()V
+    .locals 2
+
+    .line 1
+    new-instance v0, Lcom/applovin/impl/V2;
+
+    .line 2
+    .line 3
+    const/4 v1, 0x2
+
+    .line 4
+    invoke-direct {v0, p0, v1}, Lcom/applovin/impl/V2;-><init>(Lcom/applovin/impl/rg;I)V
+
+    .line 5
+    .line 6
+    .line 7
+    const-string v1, "track skipped"
+
+    .line 8
+    .line 9
+    invoke-virtual {p0, v1, v0}, Lcom/applovin/impl/lg;->b(Ljava/lang/String;Ljava/lang/Runnable;)V
+
+    .line 10
+    .line 11
+    .line 12
     return-void
 .end method
 
@@ -547,14 +547,14 @@
 
     .line 10
     .line 11
-    new-instance v0, Lcom/applovin/impl/fw;
+    new-instance v0, Lcom/applovin/impl/V2;
 
     .line 12
     .line 13
-    const/4 v1, 0x5
+    const/4 v1, 0x7
 
     .line 14
-    invoke-direct {v0, p0, v1}, Lcom/applovin/impl/fw;-><init>(Lcom/applovin/impl/rg;I)V
+    invoke-direct {v0, p0, v1}, Lcom/applovin/impl/V2;-><init>(Lcom/applovin/impl/rg;I)V
 
     .line 15
     .line 16
@@ -621,13 +621,13 @@
 .method public a(Landroid/webkit/WebView;)Lcom/iab/omid/library/applovin/adsession/AdSessionContext;
     .locals 8
 
+    .line 7
     sget-boolean p1, Lcom/applovin/impl/rg;->p:Z
 
     if-nez p1, :cond_1
 
     iget-object p1, p0, Lcom/applovin/impl/rg;->h:Lcom/applovin/impl/aq;
 
-    .line 7
     invoke-virtual {p1}, Lcom/applovin/impl/aq;->k1()Lcom/applovin/impl/cq;
 
     move-result-object p1
@@ -650,9 +650,9 @@
 
     invoke-direct {p1}, Ljava/util/ArrayList;-><init>()V
 
+    .line 9
     iget-object v0, p0, Lcom/applovin/impl/rg;->h:Lcom/applovin/impl/aq;
 
-    .line 9
     invoke-virtual {v0}, Lcom/applovin/impl/aq;->k1()Lcom/applovin/impl/cq;
 
     move-result-object v0
@@ -933,10 +933,10 @@
 
     goto :goto_4
 
+    .line 35
     :cond_c
     iget-object v0, p0, Lcom/applovin/impl/lg;->b:Lcom/applovin/impl/sdk/j;
 
-    .line 35
     invoke-virtual {v0}, Lcom/applovin/impl/sdk/j;->V()Lcom/applovin/impl/pg;
 
     move-result-object v0
@@ -972,11 +972,11 @@
     :cond_d
     return-object v2
 
+    .line 38
     :cond_e
     :try_start_1
     iget-object v1, p0, Lcom/applovin/impl/lg;->b:Lcom/applovin/impl/sdk/j;
 
-    .line 38
     invoke-virtual {v1}, Lcom/applovin/impl/sdk/j;->V()Lcom/applovin/impl/pg;
 
     move-result-object v1
@@ -1072,13 +1072,13 @@
 .method public b(FZ)V
     .locals 3
 
+    .line 1
     iget-object v0, p0, Lcom/applovin/impl/rg;->l:Ljava/util/concurrent/atomic/AtomicBoolean;
 
     const/4 v1, 0x0
 
     const/4 v2, 0x1
 
-    .line 1
     invoke-virtual {v0, v1, v2}, Ljava/util/concurrent/atomic/AtomicBoolean;->compareAndSet(ZZ)Z
 
     move-result v0
@@ -1086,9 +1086,9 @@
     if-eqz v0, :cond_0
 
     .line 2
-    new-instance v0, Lcom/applovin/impl/gw;
+    new-instance v0, Lcom/applovin/impl/W2;
 
-    invoke-direct {v0, p0, p1, p2}, Lcom/applovin/impl/gw;-><init>(Lcom/applovin/impl/rg;FZ)V
+    invoke-direct {v0, p0, p1, p2}, Lcom/applovin/impl/W2;-><init>(Lcom/applovin/impl/rg;FZ)V
 
     const-string p1, "track started"
 
@@ -1102,11 +1102,11 @@
     .locals 2
 
     .line 3
-    new-instance v0, Landroidx/camera/camera2/internal/a;
+    new-instance v0, LA/b;
 
-    const/4 v1, 0x3
+    const/4 v1, 0x2
 
-    invoke-direct {v0, v1, p0, p1}, Landroidx/camera/camera2/internal/a;-><init>(ILjava/lang/Object;Z)V
+    invoke-direct {v0, v1, p0, p1}, LA/b;-><init>(ILjava/lang/Object;Z)V
 
     const-string p1, "track volume changed"
 
@@ -1119,14 +1119,14 @@
     .locals 2
 
     .line 1
-    new-instance v0, Lcom/applovin/impl/fw;
+    new-instance v0, Lcom/applovin/impl/V2;
 
     .line 2
     .line 3
-    const/4 v1, 0x3
+    const/4 v1, 0x5
 
     .line 4
-    invoke-direct {v0, p0, v1}, Lcom/applovin/impl/fw;-><init>(Lcom/applovin/impl/rg;I)V
+    invoke-direct {v0, p0, v1}, Lcom/applovin/impl/V2;-><init>(Lcom/applovin/impl/rg;I)V
 
     .line 5
     .line 6
@@ -1146,23 +1146,25 @@
 .method public i()V
     .locals 3
 
+    .line 2
     iget-object v0, p0, Lcom/applovin/impl/rg;->i:Ljava/util/concurrent/atomic/AtomicBoolean;
 
-    const/4 v1, 0x0
+    const/4 v1, 0x1
 
-    const/4 v2, 0x1
+    const/4 v2, 0x0
 
-    .line 2
-    invoke-virtual {v0, v2, v1}, Ljava/util/concurrent/atomic/AtomicBoolean;->compareAndSet(ZZ)Z
+    invoke-virtual {v0, v1, v2}, Ljava/util/concurrent/atomic/AtomicBoolean;->compareAndSet(ZZ)Z
 
     move-result v0
 
     if-eqz v0, :cond_0
 
     .line 3
-    new-instance v0, Lcom/applovin/impl/fw;
+    new-instance v0, Lcom/applovin/impl/V2;
 
-    invoke-direct {v0, p0, v2}, Lcom/applovin/impl/fw;-><init>(Lcom/applovin/impl/rg;I)V
+    const/4 v1, 0x6
+
+    invoke-direct {v0, p0, v1}, Lcom/applovin/impl/V2;-><init>(Lcom/applovin/impl/rg;I)V
 
     const-string v1, "buffer finished"
 
@@ -1175,13 +1177,13 @@
 .method public j()V
     .locals 3
 
+    .line 2
     iget-object v0, p0, Lcom/applovin/impl/rg;->i:Ljava/util/concurrent/atomic/AtomicBoolean;
 
     const/4 v1, 0x0
 
     const/4 v2, 0x1
 
-    .line 2
     invoke-virtual {v0, v1, v2}, Ljava/util/concurrent/atomic/AtomicBoolean;->compareAndSet(ZZ)Z
 
     move-result v0
@@ -1189,11 +1191,11 @@
     if-eqz v0, :cond_0
 
     .line 3
-    new-instance v0, Lcom/applovin/impl/fw;
+    new-instance v0, Lcom/applovin/impl/V2;
 
-    const/4 v1, 0x6
+    const/16 v1, 0x8
 
-    invoke-direct {v0, p0, v1}, Lcom/applovin/impl/fw;-><init>(Lcom/applovin/impl/rg;I)V
+    invoke-direct {v0, p0, v1}, Lcom/applovin/impl/V2;-><init>(Lcom/applovin/impl/rg;I)V
 
     const-string v1, "buffer started"
 
@@ -1207,14 +1209,14 @@
     .locals 2
 
     .line 1
-    new-instance v0, Lcom/applovin/impl/fw;
+    new-instance v0, Lcom/applovin/impl/V2;
 
     .line 2
     .line 3
     const/4 v1, 0x4
 
     .line 4
-    invoke-direct {v0, p0, v1}, Lcom/applovin/impl/fw;-><init>(Lcom/applovin/impl/rg;I)V
+    invoke-direct {v0, p0, v1}, Lcom/applovin/impl/V2;-><init>(Lcom/applovin/impl/rg;I)V
 
     .line 5
     .line 6
@@ -1235,28 +1237,27 @@
     .locals 2
 
     .line 1
-    new-instance v0, Lcom/applovin/impl/fw;
+    new-instance v0, Lcom/applovin/impl/V2;
 
     .line 2
     .line 3
-    const/16 v1, 0x8
+    const/4 v1, 0x1
 
     .line 4
-    .line 5
-    invoke-direct {v0, p0, v1}, Lcom/applovin/impl/fw;-><init>(Lcom/applovin/impl/rg;I)V
+    invoke-direct {v0, p0, v1}, Lcom/applovin/impl/V2;-><init>(Lcom/applovin/impl/rg;I)V
 
+    .line 5
     .line 6
     .line 7
-    .line 8
     const-string v1, "track completed"
 
+    .line 8
     .line 9
-    .line 10
     invoke-virtual {p0, v1, v0}, Lcom/applovin/impl/lg;->b(Ljava/lang/String;Ljava/lang/Runnable;)V
 
+    .line 10
     .line 11
     .line 12
-    .line 13
     return-void
 .end method
 
@@ -1286,28 +1287,27 @@
 
     .line 10
     .line 11
-    new-instance v0, Lcom/applovin/impl/fw;
+    new-instance v0, Lcom/applovin/impl/V2;
 
     .line 12
     .line 13
-    const/16 v1, 0xa
+    const/4 v1, 0x0
 
     .line 14
-    .line 15
-    invoke-direct {v0, p0, v1}, Lcom/applovin/impl/fw;-><init>(Lcom/applovin/impl/rg;I)V
+    invoke-direct {v0, p0, v1}, Lcom/applovin/impl/V2;-><init>(Lcom/applovin/impl/rg;I)V
 
+    .line 15
     .line 16
     .line 17
-    .line 18
     const-string v1, "track first quartile"
 
+    .line 18
     .line 19
-    .line 20
     invoke-virtual {p0, v1, v0}, Lcom/applovin/impl/lg;->b(Ljava/lang/String;Ljava/lang/Runnable;)V
 
+    .line 20
     .line 21
     .line 22
-    .line 23
     :cond_0
     return-void
 .end method
@@ -1320,13 +1320,13 @@
 
     .line 2
     .line 3
-    const/4 v1, 0x1
+    const/4 v1, 0x0
 
     .line 4
-    const/4 v2, 0x0
+    const/4 v2, 0x1
 
     .line 5
-    invoke-virtual {v0, v2, v1}, Ljava/util/concurrent/atomic/AtomicBoolean;->compareAndSet(ZZ)Z
+    invoke-virtual {v0, v1, v2}, Ljava/util/concurrent/atomic/AtomicBoolean;->compareAndSet(ZZ)Z
 
     .line 6
     .line 7
@@ -1338,24 +1338,28 @@
 
     .line 10
     .line 11
-    new-instance v0, Lcom/applovin/impl/fw;
+    new-instance v0, Lcom/applovin/impl/V2;
 
     .line 12
     .line 13
-    invoke-direct {v0, p0, v2}, Lcom/applovin/impl/fw;-><init>(Lcom/applovin/impl/rg;I)V
+    const/16 v1, 0x9
 
     .line 14
     .line 15
-    .line 16
-    const-string v1, "track midpoint"
+    invoke-direct {v0, p0, v1}, Lcom/applovin/impl/V2;-><init>(Lcom/applovin/impl/rg;I)V
 
+    .line 16
     .line 17
     .line 18
-    invoke-virtual {p0, v1, v0}, Lcom/applovin/impl/lg;->b(Ljava/lang/String;Ljava/lang/Runnable;)V
+    const-string v1, "track midpoint"
 
     .line 19
     .line 20
+    invoke-virtual {p0, v1, v0}, Lcom/applovin/impl/lg;->b(Ljava/lang/String;Ljava/lang/Runnable;)V
+
     .line 21
+    .line 22
+    .line 23
     :cond_0
     return-void
 .end method
@@ -1364,14 +1368,14 @@
     .locals 2
 
     .line 1
-    new-instance v0, Lcom/applovin/impl/fw;
+    new-instance v0, Lcom/applovin/impl/V2;
 
     .line 2
     .line 3
-    const/4 v1, 0x2
+    const/4 v1, 0x3
 
     .line 4
-    invoke-direct {v0, p0, v1}, Lcom/applovin/impl/fw;-><init>(Lcom/applovin/impl/rg;I)V
+    invoke-direct {v0, p0, v1}, Lcom/applovin/impl/V2;-><init>(Lcom/applovin/impl/rg;I)V
 
     .line 5
     .line 6

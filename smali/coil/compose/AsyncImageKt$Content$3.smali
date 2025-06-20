@@ -3,14 +3,14 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lzh/e;
+.implements Lka/e;
 
 
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "Lkotlin/jvm/internal/Lambda;",
-        "Lzh/e;"
+        "Lka/e;"
     }
 .end annotation
 
@@ -38,7 +38,7 @@
 
 .field final synthetic $contentDescription:Ljava/lang/String;
 
-.field final synthetic $contentScale:Landroidx/compose/ui/layout/j;
+.field final synthetic $contentScale:Landroidx/compose/ui/layout/h;
 
 .field final synthetic $modifier:Landroidx/compose/ui/o;
 
@@ -46,7 +46,7 @@
 
 
 # direct methods
-.method public constructor <init>(Landroidx/compose/ui/o;Lcoil/compose/l;Ljava/lang/String;Landroidx/compose/ui/e;Landroidx/compose/ui/layout/j;FLandroidx/compose/ui/graphics/x;ZI)V
+.method public constructor <init>(Landroidx/compose/ui/o;Lcoil/compose/l;Ljava/lang/String;Landroidx/compose/ui/e;Landroidx/compose/ui/layout/h;FLandroidx/compose/ui/graphics/x;ZI)V
     .locals 0
 
     iput-object p1, p0, Lcoil/compose/AsyncImageKt$Content$3;->$modifier:Landroidx/compose/ui/o;
@@ -57,7 +57,7 @@
 
     iput-object p4, p0, Lcoil/compose/AsyncImageKt$Content$3;->$alignment:Landroidx/compose/ui/e;
 
-    iput-object p5, p0, Lcoil/compose/AsyncImageKt$Content$3;->$contentScale:Landroidx/compose/ui/layout/j;
+    iput-object p5, p0, Lcoil/compose/AsyncImageKt$Content$3;->$contentScale:Landroidx/compose/ui/layout/h;
 
     iput p6, p0, Lcoil/compose/AsyncImageKt$Content$3;->$alpha:F
 
@@ -80,7 +80,7 @@
     .locals 0
 
     .line 1
-    check-cast p1, Landroidx/compose/runtime/l;
+    check-cast p1, Landroidx/compose/runtime/j;
 
     check-cast p2, Ljava/lang/Number;
 
@@ -88,14 +88,14 @@
 
     move-result p2
 
-    invoke-virtual {p0, p1, p2}, Lcoil/compose/AsyncImageKt$Content$3;->invoke(Landroidx/compose/runtime/l;I)V
+    invoke-virtual {p0, p1, p2}, Lcoil/compose/AsyncImageKt$Content$3;->invoke(Landroidx/compose/runtime/j;I)V
 
-    sget-object p1, Lqh/r;->a:Lqh/r;
+    sget-object p1, LX9/j;->a:LX9/j;
 
     return-object p1
 .end method
 
-.method public final invoke(Landroidx/compose/runtime/l;I)V
+.method public final invoke(Landroidx/compose/runtime/j;I)V
     .locals 10
 
     iget-object v0, p0, Lcoil/compose/AsyncImageKt$Content$3;->$modifier:Landroidx/compose/ui/o;
@@ -106,7 +106,7 @@
 
     iget-object v3, p0, Lcoil/compose/AsyncImageKt$Content$3;->$alignment:Landroidx/compose/ui/e;
 
-    iget-object v4, p0, Lcoil/compose/AsyncImageKt$Content$3;->$contentScale:Landroidx/compose/ui/layout/j;
+    iget-object v4, p0, Lcoil/compose/AsyncImageKt$Content$3;->$contentScale:Landroidx/compose/ui/layout/h;
 
     iget v5, p0, Lcoil/compose/AsyncImageKt$Content$3;->$alpha:F
 
@@ -118,14 +118,14 @@
 
     or-int/lit8 p2, p2, 0x1
 
-    invoke-static {p2}, Landroidx/compose/runtime/q;->A(I)I
+    invoke-static {p2}, Landroidx/compose/runtime/o;->f0(I)I
 
     move-result v9
 
     move-object v8, p1
 
     .line 2
-    invoke-static/range {v0 .. v9}, Lcoil/compose/b;->c(Landroidx/compose/ui/o;Lcoil/compose/l;Ljava/lang/String;Landroidx/compose/ui/e;Landroidx/compose/ui/layout/j;FLandroidx/compose/ui/graphics/x;ZLandroidx/compose/runtime/l;I)V
+    invoke-static/range {v0 .. v9}, Lcoil/compose/b;->d(Landroidx/compose/ui/o;Lcoil/compose/l;Ljava/lang/String;Landroidx/compose/ui/e;Landroidx/compose/ui/layout/h;FLandroidx/compose/ui/graphics/x;ZLandroidx/compose/runtime/j;I)V
 
     return-void
 .end method

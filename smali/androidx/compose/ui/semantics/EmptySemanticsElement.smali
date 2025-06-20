@@ -1,12 +1,12 @@
 .class public final Landroidx/compose/ui/semantics/EmptySemanticsElement;
-.super Landroidx/compose/ui/node/w0;
+.super Landroidx/compose/ui/node/V;
 .source "SourceFile"
 
 
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
-        "Landroidx/compose/ui/node/w0;"
+        "Landroidx/compose/ui/node/V;"
     }
 .end annotation
 
@@ -16,7 +16,7 @@
     }
     d2 = {
         "Landroidx/compose/ui/semantics/EmptySemanticsElement;",
-        "Landroidx/compose/ui/node/w0;",
+        "Landroidx/compose/ui/node/V;",
         "Landroidx/compose/ui/semantics/d;",
         "ui_release"
     }
@@ -26,11 +26,12 @@
         0x8,
         0x0
     }
+    xi = 0x30
 .end annotation
 
 
 # instance fields
-.field public final c:Landroidx/compose/ui/semantics/d;
+.field public final a:Landroidx/compose/ui/semantics/d;
 
 
 # direct methods
@@ -43,7 +44,7 @@
     .line 2
     .line 3
     .line 4
-    iput-object p1, p0, Landroidx/compose/ui/semantics/EmptySemanticsElement;->c:Landroidx/compose/ui/semantics/d;
+    iput-object p1, p0, Landroidx/compose/ui/semantics/EmptySemanticsElement;->a:Landroidx/compose/ui/semantics/d;
 
     .line 5
     .line 6
@@ -87,8 +88,10 @@
     .locals 1
 
     .line 1
-    iget-object v0, p0, Landroidx/compose/ui/semantics/EmptySemanticsElement;->c:Landroidx/compose/ui/semantics/d;
+    iget-object v0, p0, Landroidx/compose/ui/semantics/EmptySemanticsElement;->a:Landroidx/compose/ui/semantics/d;
 
+    .line 2
+    .line 3
     return-object v0
 .end method
 

@@ -4,6 +4,15 @@
 
 
 # annotations
+.annotation runtime Lca/c;
+    c = "coil.intercept.RealInterceptorChain"
+    f = "RealInterceptorChain.kt"
+    l = {
+        0x20
+    }
+    m = "proceed"
+.end annotation
+
 .annotation runtime Lkotlin/Metadata;
     k = 0x3
     mv = {
@@ -12,15 +21,6 @@
         0x0
     }
     xi = 0x30
-.end annotation
-
-.annotation runtime Lth/c;
-    c = "coil.intercept.RealInterceptorChain"
-    f = "RealInterceptorChain.kt"
-    l = {
-        0x20
-    }
-    m = "proceed"
 .end annotation
 
 
@@ -33,16 +33,16 @@
 
 .field synthetic result:Ljava/lang/Object;
 
-.field final synthetic this$0:Lcoil/intercept/e;
+.field final synthetic this$0:Lcoil/intercept/d;
 
 
 # direct methods
-.method public constructor <init>(Lcoil/intercept/e;Lkotlin/coroutines/Continuation;)V
+.method public constructor <init>(Lcoil/intercept/d;Lkotlin/coroutines/Continuation;)V
     .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
-            "Lcoil/intercept/e;",
+            "Lcoil/intercept/d;",
             "Lkotlin/coroutines/Continuation<",
             "-",
             "Lcoil/intercept/RealInterceptorChain$proceed$1;",
@@ -50,7 +50,7 @@
         }
     .end annotation
 
-    iput-object p1, p0, Lcoil/intercept/RealInterceptorChain$proceed$1;->this$0:Lcoil/intercept/e;
+    iput-object p1, p0, Lcoil/intercept/RealInterceptorChain$proceed$1;->this$0:Lcoil/intercept/d;
 
     invoke-direct {p0, p2}, Lkotlin/coroutines/jvm/internal/ContinuationImpl;-><init>(Lkotlin/coroutines/Continuation;)V
 
@@ -72,11 +72,11 @@
 
     iput p1, p0, Lcoil/intercept/RealInterceptorChain$proceed$1;->label:I
 
-    iget-object p1, p0, Lcoil/intercept/RealInterceptorChain$proceed$1;->this$0:Lcoil/intercept/e;
+    iget-object p1, p0, Lcoil/intercept/RealInterceptorChain$proceed$1;->this$0:Lcoil/intercept/d;
 
     const/4 v0, 0x0
 
-    invoke-virtual {p1, v0, p0}, Lcoil/intercept/e;->b(Ln5/i;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
+    invoke-virtual {p1, v0, p0}, Lcoil/intercept/d;->b(LH2/h;Lkotlin/coroutines/jvm/internal/ContinuationImpl;)Ljava/lang/Object;
 
     move-result-object p1
 

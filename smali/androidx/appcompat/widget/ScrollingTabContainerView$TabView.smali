@@ -41,7 +41,7 @@
 
     .line 2
     .line 3
-    sget p1, Lg/a;->actionBarTabStyle:I
+    sget p1, Li/a;->actionBarTabStyle:I
 
     .line 4
     .line 5
@@ -70,7 +70,7 @@
 
     .line 17
     .line 18
-    sget v0, Lg/a;->actionBarTabStyle:I
+    sget v0, Li/a;->actionBarTabStyle:I
 
     .line 19
     .line 20

@@ -1,12 +1,12 @@
 .class final Landroidx/compose/ui/focus/FocusRequesterElement;
-.super Landroidx/compose/ui/node/w0;
+.super Landroidx/compose/ui/node/V;
 .source "SourceFile"
 
 
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
-        "Landroidx/compose/ui/node/w0;"
+        "Landroidx/compose/ui/node/V;"
     }
 .end annotation
 
@@ -16,7 +16,7 @@
     }
     d2 = {
         "Landroidx/compose/ui/focus/FocusRequesterElement;",
-        "Landroidx/compose/ui/node/w0;",
+        "Landroidx/compose/ui/node/V;",
         "Landroidx/compose/ui/focus/s;",
         "ui_release"
     }
@@ -26,11 +26,12 @@
         0x8,
         0x0
     }
+    xi = 0x30
 .end annotation
 
 
 # instance fields
-.field public final c:Landroidx/compose/ui/focus/q;
+.field public final a:Landroidx/compose/ui/focus/q;
 
 
 # direct methods
@@ -43,7 +44,7 @@
     .line 2
     .line 3
     .line 4
-    iput-object p1, p0, Landroidx/compose/ui/focus/FocusRequesterElement;->c:Landroidx/compose/ui/focus/q;
+    iput-object p1, p0, Landroidx/compose/ui/focus/FocusRequesterElement;->a:Landroidx/compose/ui/focus/q;
 
     .line 5
     .line 6
@@ -73,11 +74,11 @@
     :cond_1
     check-cast p1, Landroidx/compose/ui/focus/FocusRequesterElement;
 
-    iget-object v1, p0, Landroidx/compose/ui/focus/FocusRequesterElement;->c:Landroidx/compose/ui/focus/q;
+    iget-object v1, p0, Landroidx/compose/ui/focus/FocusRequesterElement;->a:Landroidx/compose/ui/focus/q;
 
-    iget-object p1, p1, Landroidx/compose/ui/focus/FocusRequesterElement;->c:Landroidx/compose/ui/focus/q;
+    iget-object p1, p1, Landroidx/compose/ui/focus/FocusRequesterElement;->a:Landroidx/compose/ui/focus/q;
 
-    invoke-static {v1, p1}, Lrb/h;->d(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v1, p1}, Lkotlin/jvm/internal/h;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result p1
 
@@ -92,7 +93,7 @@
 .method public final hashCode()I
     .locals 1
 
-    iget-object v0, p0, Landroidx/compose/ui/focus/FocusRequesterElement;->c:Landroidx/compose/ui/focus/q;
+    iget-object v0, p0, Landroidx/compose/ui/focus/FocusRequesterElement;->a:Landroidx/compose/ui/focus/q;
 
     invoke-virtual {v0}, Ljava/lang/Object;->hashCode()I
 
@@ -114,7 +115,7 @@
     .line 4
     .line 5
     .line 6
-    iget-object v1, p0, Landroidx/compose/ui/focus/FocusRequesterElement;->c:Landroidx/compose/ui/focus/q;
+    iget-object v1, p0, Landroidx/compose/ui/focus/FocusRequesterElement;->a:Landroidx/compose/ui/focus/q;
 
     .line 7
     .line 8
@@ -137,16 +138,16 @@
 
     .line 4
     .line 5
-    iget-object v0, v0, Landroidx/compose/ui/focus/q;->a:Landroidx/compose/runtime/collection/e;
+    iget-object v0, v0, Landroidx/compose/ui/focus/q;->a:Landroidx/compose/runtime/collection/d;
 
     .line 6
     .line 7
-    invoke-virtual {v0, p1}, Landroidx/compose/runtime/collection/e;->p(Ljava/lang/Object;)Z
+    invoke-virtual {v0, p1}, Landroidx/compose/runtime/collection/d;->p(Ljava/lang/Object;)Z
 
     .line 8
     .line 9
     .line 10
-    iget-object v0, p0, Landroidx/compose/ui/focus/FocusRequesterElement;->c:Landroidx/compose/ui/focus/q;
+    iget-object v0, p0, Landroidx/compose/ui/focus/FocusRequesterElement;->a:Landroidx/compose/ui/focus/q;
 
     .line 11
     .line 12
@@ -154,11 +155,11 @@
 
     .line 13
     .line 14
-    iget-object v0, v0, Landroidx/compose/ui/focus/q;->a:Landroidx/compose/runtime/collection/e;
+    iget-object v0, v0, Landroidx/compose/ui/focus/q;->a:Landroidx/compose/runtime/collection/d;
 
     .line 15
     .line 16
-    invoke-virtual {v0, p1}, Landroidx/compose/runtime/collection/e;->b(Ljava/lang/Object;)V
+    invoke-virtual {v0, p1}, Landroidx/compose/runtime/collection/d;->b(Ljava/lang/Object;)V
 
     .line 17
     .line 18
@@ -175,7 +176,7 @@
 
     invoke-direct {v0, v1}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
 
-    iget-object v1, p0, Landroidx/compose/ui/focus/FocusRequesterElement;->c:Landroidx/compose/ui/focus/q;
+    iget-object v1, p0, Landroidx/compose/ui/focus/FocusRequesterElement;->a:Landroidx/compose/ui/focus/q;
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 

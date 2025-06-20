@@ -1,12 +1,12 @@
 .class public final Landroidx/compose/foundation/layout/VerticalAlignElement;
-.super Landroidx/compose/ui/node/w0;
+.super Landroidx/compose/ui/node/V;
 .source "SourceFile"
 
 
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
-        "Landroidx/compose/ui/node/w0;"
+        "Landroidx/compose/ui/node/V;"
     }
 .end annotation
 
@@ -16,8 +16,8 @@
     }
     d2 = {
         "Landroidx/compose/foundation/layout/VerticalAlignElement;",
-        "Landroidx/compose/ui/node/w0;",
-        "Landroidx/compose/foundation/layout/e1;",
+        "Landroidx/compose/ui/node/V;",
+        "Landroidx/compose/foundation/layout/b0;",
         "foundation-layout_release"
     }
     k = 0x1
@@ -26,33 +26,8 @@
         0x8,
         0x0
     }
+    xi = 0x30
 .end annotation
-
-
-# instance fields
-.field public final c:Landroidx/compose/ui/d;
-
-
-# direct methods
-.method public constructor <init>()V
-    .locals 1
-
-    .line 1
-    sget-object v0, Landroidx/compose/ui/b;->n:Landroidx/compose/ui/h;
-
-    .line 2
-    .line 3
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
-
-    .line 4
-    .line 5
-    .line 6
-    iput-object v0, p0, Landroidx/compose/foundation/layout/VerticalAlignElement;->c:Landroidx/compose/ui/d;
-
-    .line 7
-    .line 8
-    return-void
-.end method
 
 
 # virtual methods
@@ -102,22 +77,18 @@
 
     .line 17
     :cond_2
-    iget-object v0, p0, Landroidx/compose/foundation/layout/VerticalAlignElement;->c:Landroidx/compose/ui/d;
+    sget-object p1, Landroidx/compose/ui/b;->n:Landroidx/compose/ui/h;
 
     .line 18
     .line 19
-    iget-object p1, p1, Landroidx/compose/foundation/layout/VerticalAlignElement;->c:Landroidx/compose/ui/d;
+    invoke-virtual {p1, p1}, Landroidx/compose/ui/h;->equals(Ljava/lang/Object;)Z
 
     .line 20
     .line 21
-    invoke-static {v0, p1}, Lrb/h;->d(Ljava/lang/Object;Ljava/lang/Object;)Z
-
     .line 22
-    .line 23
-    .line 24
     move-result p1
 
-    .line 25
+    .line 23
     return p1
 .end method
 
@@ -125,26 +96,18 @@
     .locals 1
 
     .line 1
-    iget-object v0, p0, Landroidx/compose/foundation/layout/VerticalAlignElement;->c:Landroidx/compose/ui/d;
+    const/high16 v0, 0x3f800000    # 1.0f
 
     .line 2
     .line 3
-    check-cast v0, Landroidx/compose/ui/h;
+    invoke-static {v0}, Ljava/lang/Float;->floatToIntBits(F)I
 
     .line 4
     .line 5
-    iget v0, v0, Landroidx/compose/ui/h;->a:F
-
     .line 6
-    .line 7
-    invoke-static {v0}, Ljava/lang/Float;->floatToIntBits(F)I
-
-    .line 8
-    .line 9
-    .line 10
     move-result v0
 
-    .line 11
+    .line 7
     return v0
 .end method
 
@@ -152,7 +115,7 @@
     .locals 2
 
     .line 1
-    new-instance v0, Landroidx/compose/foundation/layout/e1;
+    new-instance v0, Landroidx/compose/foundation/layout/b0;
 
     .line 2
     .line 3
@@ -161,11 +124,11 @@
     .line 4
     .line 5
     .line 6
-    iget-object v1, p0, Landroidx/compose/foundation/layout/VerticalAlignElement;->c:Landroidx/compose/ui/d;
+    sget-object v1, Landroidx/compose/ui/b;->n:Landroidx/compose/ui/h;
 
     .line 7
     .line 8
-    iput-object v1, v0, Landroidx/compose/foundation/layout/e1;->p:Landroidx/compose/ui/d;
+    iput-object v1, v0, Landroidx/compose/foundation/layout/b0;->p:Landroidx/compose/ui/h;
 
     .line 9
     .line 10
@@ -176,15 +139,15 @@
     .locals 1
 
     .line 1
-    check-cast p1, Landroidx/compose/foundation/layout/e1;
+    check-cast p1, Landroidx/compose/foundation/layout/b0;
 
     .line 2
     .line 3
-    iget-object v0, p0, Landroidx/compose/foundation/layout/VerticalAlignElement;->c:Landroidx/compose/ui/d;
+    sget-object v0, Landroidx/compose/ui/b;->n:Landroidx/compose/ui/h;
 
     .line 4
     .line 5
-    iput-object v0, p1, Landroidx/compose/foundation/layout/e1;->p:Landroidx/compose/ui/d;
+    iput-object v0, p1, Landroidx/compose/foundation/layout/b0;->p:Landroidx/compose/ui/h;
 
     .line 6
     .line 7

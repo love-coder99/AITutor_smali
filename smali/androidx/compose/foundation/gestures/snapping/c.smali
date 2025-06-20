@@ -3,21 +3,21 @@
 .source "SourceFile"
 
 # interfaces
-.implements Landroidx/compose/foundation/gestures/n0;
+.implements Landroidx/compose/foundation/gestures/P;
 
 
 # instance fields
-.field public final a:Landroidx/compose/foundation/gestures/snapping/b;
+.field public final a:Landroidx/appcompat/app/L;
 
-.field public final b:Landroidx/compose/animation/core/t;
+.field public final b:Landroidx/compose/animation/core/r;
 
-.field public final c:Landroidx/compose/animation/core/g;
+.field public final c:Landroidx/compose/animation/core/f;
 
-.field public final d:Landroidx/compose/foundation/gestures/c0;
+.field public final d:Landroidx/compose/foundation/gestures/E;
 
 
 # direct methods
-.method public constructor <init>(Landroidx/compose/foundation/gestures/snapping/b;Landroidx/compose/animation/core/t;Landroidx/compose/animation/core/g;)V
+.method public constructor <init>(Landroidx/appcompat/app/L;Landroidx/compose/animation/core/r;Landroidx/compose/animation/core/f;)V
     .locals 0
 
     .line 1
@@ -26,30 +26,30 @@
     .line 2
     .line 3
     .line 4
-    iput-object p1, p0, Landroidx/compose/foundation/gestures/snapping/c;->a:Landroidx/compose/foundation/gestures/snapping/b;
+    iput-object p1, p0, Landroidx/compose/foundation/gestures/snapping/c;->a:Landroidx/appcompat/app/L;
 
     .line 5
     .line 6
-    iput-object p2, p0, Landroidx/compose/foundation/gestures/snapping/c;->b:Landroidx/compose/animation/core/t;
+    iput-object p2, p0, Landroidx/compose/foundation/gestures/snapping/c;->b:Landroidx/compose/animation/core/r;
 
     .line 7
     .line 8
-    iput-object p3, p0, Landroidx/compose/foundation/gestures/snapping/c;->c:Landroidx/compose/animation/core/g;
+    iput-object p3, p0, Landroidx/compose/foundation/gestures/snapping/c;->c:Landroidx/compose/animation/core/f;
 
     .line 9
     .line 10
-    sget-object p1, Landroidx/compose/foundation/gestures/f0;->c:Landroidx/compose/foundation/gestures/c0;
+    sget-object p1, Landroidx/compose/foundation/gestures/H;->c:Landroidx/compose/foundation/gestures/E;
 
     .line 11
     .line 12
-    iput-object p1, p0, Landroidx/compose/foundation/gestures/snapping/c;->d:Landroidx/compose/foundation/gestures/c0;
+    iput-object p1, p0, Landroidx/compose/foundation/gestures/snapping/c;->d:Landroidx/compose/foundation/gestures/E;
 
     .line 13
     .line 14
     return-void
 .end method
 
-.method public static final b(Landroidx/compose/foundation/gestures/snapping/c;Landroidx/compose/foundation/gestures/a0;FFLzh/c;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
+.method public static final b(Landroidx/compose/foundation/gestures/snapping/c;Landroidx/compose/foundation/gestures/C;FFLka/c;Lkotlin/coroutines/jvm/internal/ContinuationImpl;)Ljava/lang/Object;
     .locals 7
 
     .line 1
@@ -145,7 +145,7 @@
     .line 42
     .line 43
     .line 44
-    goto/16 :goto_7
+    goto/16 :goto_5
 
     .line 45
     .line 46
@@ -216,7 +216,7 @@
 
     .line 76
     .line 77
-    invoke-static {p2, p3, p0}, Landroidx/compose/animation/core/b;->b(FFI)Landroidx/compose/animation/core/h;
+    invoke-static {p2, p3, p0}, Landroidx/compose/animation/core/b;->b(FFI)Landroidx/compose/animation/core/g;
 
     .line 78
     .line 79
@@ -228,102 +228,102 @@
     move-object v0, p0
 
     .line 82
-    goto/16 :goto_8
+    goto :goto_6
 
     .line 83
-    .line 84
     :cond_4
     iput v2, v6, Landroidx/compose/foundation/gestures/snapping/SnapFlingBehavior$tryApproach$1;->label:I
 
+    .line 84
     .line 85
+    sget-object p5, Landroidx/compose/animation/core/g0;->a:Landroidx/compose/animation/core/f0;
+
     .line 86
-    sget-object p5, Landroidx/compose/animation/core/l1;->a:Landroidx/compose/animation/core/k1;
-
     .line 87
+    new-instance p5, LN7/v;
+
     .line 88
-    new-instance p5, Landroidx/compose/animation/core/q1;
-
     .line 89
+    iget-object v2, p0, Landroidx/compose/foundation/gestures/snapping/c;->b:Landroidx/compose/animation/core/r;
+
     .line 90
-    iget-object v3, p0, Landroidx/compose/foundation/gestures/snapping/c;->b:Landroidx/compose/animation/core/t;
-
     .line 91
+    iget-object v3, v2, Landroidx/compose/animation/core/r;->a:LQ/d;
+
     .line 92
-    iget-object v4, v3, Landroidx/compose/animation/core/t;->a:Landroidx/compose/animation/core/b0;
-
     .line 93
-    .line 94
-    invoke-direct {p5, v4}, Landroidx/compose/animation/core/q1;-><init>(Landroidx/compose/animation/core/b0;)V
+    invoke-direct {p5, v3}, LN7/v;-><init>(LQ/d;)V
 
+    .line 94
     .line 95
     .line 96
+    new-instance v3, Landroidx/compose/animation/core/h;
+
     .line 97
-    new-instance v4, Landroidx/compose/animation/core/i;
-
     .line 98
-    .line 99
-    invoke-direct {v4, v1}, Landroidx/compose/animation/core/i;-><init>(F)V
+    invoke-direct {v3, v1}, Landroidx/compose/animation/core/h;-><init>(F)V
 
+    .line 99
     .line 100
     .line 101
+    new-instance v1, Landroidx/compose/animation/core/h;
+
     .line 102
-    new-instance v1, Landroidx/compose/animation/core/i;
-
     .line 103
-    .line 104
-    invoke-direct {v1, p3}, Landroidx/compose/animation/core/i;-><init>(F)V
+    invoke-direct {v1, p3}, Landroidx/compose/animation/core/h;-><init>(F)V
 
+    .line 104
     .line 105
     .line 106
-    .line 107
-    invoke-virtual {p5, v4, v1}, Landroidx/compose/animation/core/q1;->a(Landroidx/compose/animation/core/m;Landroidx/compose/animation/core/m;)Landroidx/compose/animation/core/m;
+    invoke-virtual {p5, v3, v1}, LN7/v;->m(Landroidx/compose/animation/core/l;Landroidx/compose/animation/core/l;)Landroidx/compose/animation/core/l;
 
+    .line 107
     .line 108
     .line 109
-    .line 110
     move-result-object p5
 
+    .line 110
+    check-cast p5, Landroidx/compose/animation/core/h;
+
     .line 111
-    check-cast p5, Landroidx/compose/animation/core/i;
-
     .line 112
-    .line 113
-    iget p5, p5, Landroidx/compose/animation/core/i;->a:F
+    iget p5, p5, Landroidx/compose/animation/core/h;->a:F
 
+    .line 113
     .line 114
-    .line 115
     invoke-static {p5}, Ljava/lang/Math;->abs(F)F
 
+    .line 115
     .line 116
     .line 117
-    .line 118
     move-result p5
 
-    .line 119
+    .line 118
     invoke-static {p2}, Ljava/lang/Math;->abs(F)F
 
+    .line 119
     .line 120
     .line 121
-    .line 122
     move-result v1
 
-    .line 123
+    .line 122
     cmpl-float p5, p5, v1
 
+    .line 123
     .line 124
-    .line 125
     if-ltz p5, :cond_5
 
+    .line 125
     .line 126
+    new-instance p0, LQ/d;
+
     .line 127
-    new-instance p0, Landroidx/appcompat/app/y;
-
     .line 128
-    .line 129
-    const/4 p5, 0x0
+    const/16 p5, 0x13
 
+    .line 129
     .line 130
-    invoke-direct {p0, v3, p5}, Landroidx/appcompat/app/y;-><init>(Ljava/lang/Object;I)V
+    invoke-direct {p0, v2, p5}, LQ/d;-><init>(Ljava/lang/Object;I)V
 
     .line 131
     .line 132
@@ -335,177 +335,109 @@
 
     .line 135
     :cond_5
-    new-instance p5, Landroidx/appcompat/app/y;
+    new-instance p5, LZ/c;
 
     .line 136
     .line 137
-    iget-object p0, p0, Landroidx/compose/foundation/gestures/snapping/c;->c:Landroidx/compose/animation/core/g;
+    iget-object p0, p0, Landroidx/compose/foundation/gestures/snapping/c;->c:Landroidx/compose/animation/core/f;
 
     .line 138
     .line 139
-    invoke-direct {p5, p0, v2}, Landroidx/appcompat/app/y;-><init>(Ljava/lang/Object;I)V
+    const/16 v1, 0x10
 
     .line 140
     .line 141
+    invoke-direct {p5, p0, v1}, LZ/c;-><init>(Ljava/lang/Object;I)V
+
     .line 142
+    .line 143
+    .line 144
     move-object v1, p5
 
-    .line 143
-    :goto_4
-    new-instance p0, Ljava/lang/Float;
-
-    .line 144
     .line 145
-    invoke-direct {p0, p2}, Ljava/lang/Float;-><init>(F)V
+    :goto_4
+    new-instance v3, Ljava/lang/Float;
 
     .line 146
     .line 147
-    .line 148
-    new-instance p2, Ljava/lang/Float;
+    invoke-direct {v3, p2}, Ljava/lang/Float;-><init>(F)V
 
+    .line 148
     .line 149
     .line 150
-    invoke-direct {p2, p3}, Ljava/lang/Float;-><init>(F)V
+    new-instance v4, Ljava/lang/Float;
 
     .line 151
     .line 152
-    .line 153
-    iget p3, v1, Landroidx/appcompat/app/y;->b:I
+    invoke-direct {v4, p3}, Ljava/lang/Float;-><init>(F)V
 
+    .line 153
     .line 154
     .line 155
-    packed-switch p3, :pswitch_data_0
+    move-object v2, p1
 
     .line 156
-    .line 157
-    .line 158
-    invoke-virtual {p0}, Ljava/lang/Number;->floatValue()F
+    move-object v5, p4
 
+    .line 157
+    invoke-interface/range {v1 .. v6}, Landroidx/compose/foundation/gestures/snapping/b;->M(Landroidx/compose/foundation/gestures/C;Ljava/lang/Float;Ljava/lang/Float;Lka/c;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
+
+    .line 158
     .line 159
     .line 160
+    move-result-object p5
+
     .line 161
-    move-result v3
-
-    .line 162
-    invoke-virtual {p2}, Ljava/lang/Number;->floatValue()F
-
-    .line 163
-    .line 164
-    .line 165
-    move-result v4
-
-    .line 166
-    move-object v2, p1
-
-    .line 167
-    move-object v5, p4
-
-    .line 168
-    invoke-virtual/range {v1 .. v6}, Landroidx/appcompat/app/y;->d(Landroidx/compose/foundation/gestures/a0;FFLzh/c;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
-
-    .line 169
-    .line 170
-    .line 171
-    move-result-object p0
-
-    .line 172
-    :goto_5
-    move-object p5, p0
-
-    .line 173
-    goto :goto_6
-
-    .line 174
-    :pswitch_0
-    invoke-virtual {p0}, Ljava/lang/Number;->floatValue()F
-
-    .line 175
-    .line 176
-    .line 177
-    move-result v3
-
-    .line 178
-    invoke-virtual {p2}, Ljava/lang/Number;->floatValue()F
-
-    .line 179
-    .line 180
-    .line 181
-    move-result v4
-
-    .line 182
-    move-object v2, p1
-
-    .line 183
-    move-object v5, p4
-
-    .line 184
-    invoke-virtual/range {v1 .. v6}, Landroidx/appcompat/app/y;->d(Landroidx/compose/foundation/gestures/a0;FFLzh/c;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
-
-    .line 185
-    .line 186
-    .line 187
-    move-result-object p0
-
-    .line 188
-    goto :goto_5
-
-    .line 189
-    :goto_6
     if-ne p5, v0, :cond_6
 
-    .line 190
-    .line 191
-    goto :goto_8
+    .line 162
+    .line 163
+    goto :goto_6
 
-    .line 192
+    .line 164
     :cond_6
-    :goto_7
+    :goto_5
     check-cast p5, Landroidx/compose/foundation/gestures/snapping/a;
 
-    .line 193
-    .line 194
-    iget-object p0, p5, Landroidx/compose/foundation/gestures/snapping/a;->b:Landroidx/compose/animation/core/h;
+    .line 165
+    .line 166
+    iget-object p0, p5, Landroidx/compose/foundation/gestures/snapping/a;->b:Landroidx/compose/animation/core/g;
 
-    .line 195
-    .line 196
+    .line 167
+    .line 168
     goto :goto_3
 
-    .line 197
-    :goto_8
+    .line 169
+    :goto_6
     return-object v0
-
-    .line 198
-    nop
-
-    .line 199
-    :pswitch_data_0
-    .packed-switch 0x0
-        :pswitch_0
-    .end packed-switch
 .end method
 
 
 # virtual methods
-.method public final a(Landroidx/compose/foundation/gestures/j0;FLkotlin/coroutines/Continuation;)Ljava/lang/Object;
+.method public final a(Landroidx/compose/foundation/gestures/L;FLkotlin/coroutines/Continuation;)Ljava/lang/Object;
     .locals 1
 
     .line 1
-    sget-object v0, Landroidx/compose/foundation/gestures/o0;->a:Lzh/c;
+    sget-object v0, Landroidx/compose/foundation/gestures/Q;->a:Lka/c;
 
     .line 2
     .line 3
-    invoke-virtual {p0, p1, p2, v0, p3}, Landroidx/compose/foundation/gestures/snapping/c;->d(Landroidx/compose/foundation/gestures/j0;FLzh/c;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
+    check-cast p3, Lkotlin/coroutines/jvm/internal/ContinuationImpl;
 
     .line 4
     .line 5
+    invoke-virtual {p0, p1, p2, v0, p3}, Landroidx/compose/foundation/gestures/snapping/c;->d(Landroidx/compose/foundation/gestures/L;FLka/c;Lkotlin/coroutines/jvm/internal/ContinuationImpl;)Ljava/lang/Object;
+
     .line 6
+    .line 7
+    .line 8
     move-result-object p1
 
-    .line 7
+    .line 9
     return-object p1
 .end method
 
-.method public final c(Landroidx/compose/foundation/gestures/j0;FLzh/c;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
+.method public final c(Landroidx/compose/foundation/gestures/L;FLka/c;Lkotlin/coroutines/jvm/internal/ContinuationImpl;)Ljava/lang/Object;
     .locals 10
 
     .line 1
@@ -591,7 +523,7 @@
     move-object p3, p1
 
     .line 39
-    check-cast p3, Lzh/c;
+    check-cast p3, Lka/c;
 
     .line 40
     .line 41
@@ -626,7 +558,7 @@
     .line 54
     .line 55
     .line 56
-    iget-object p4, p0, Landroidx/compose/foundation/gestures/snapping/c;->d:Landroidx/compose/foundation/gestures/c0;
+    iget-object p4, p0, Landroidx/compose/foundation/gestures/snapping/c;->d:Landroidx/compose/foundation/gestures/E;
 
     .line 57
     .line 58
@@ -652,7 +584,7 @@
     move-object v8, p1
 
     .line 66
-    invoke-direct/range {v4 .. v9}, Landroidx/compose/foundation/gestures/snapping/SnapFlingBehavior$fling$result$1;-><init>(Landroidx/compose/foundation/gestures/snapping/c;FLzh/c;Landroidx/compose/foundation/gestures/a0;Lkotlin/coroutines/Continuation;)V
+    invoke-direct/range {v4 .. v9}, Landroidx/compose/foundation/gestures/snapping/SnapFlingBehavior$fling$result$1;-><init>(Landroidx/compose/foundation/gestures/snapping/c;FLka/c;Landroidx/compose/foundation/gestures/C;Lkotlin/coroutines/Continuation;)V
 
     .line 67
     .line 68
@@ -665,7 +597,7 @@
 
     .line 72
     .line 73
-    invoke-static {p4, v2, v0}, Lf7/l;->S(Lkotlin/coroutines/i;Lzh/e;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
+    invoke-static {p4, v2, v0}, Lkotlinx/coroutines/w;->H(Lba/g;Lka/e;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
 
     .line 74
     .line 75
@@ -698,7 +630,7 @@
     .line 86
     .line 87
     .line 88
-    invoke-interface {p3, p1}, Lzh/c;->invoke(Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-interface {p3, p1}, Lka/c;->invoke(Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 89
     .line 90
@@ -706,7 +638,7 @@
     return-object p4
 .end method
 
-.method public final d(Landroidx/compose/foundation/gestures/j0;FLzh/c;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
+.method public final d(Landroidx/compose/foundation/gestures/L;FLka/c;Lkotlin/coroutines/jvm/internal/ContinuationImpl;)Ljava/lang/Object;
     .locals 4
 
     .line 1
@@ -820,7 +752,7 @@
 
     .line 52
     .line 53
-    invoke-virtual {p0, p1, p2, p3, v0}, Landroidx/compose/foundation/gestures/snapping/c;->c(Landroidx/compose/foundation/gestures/j0;FLzh/c;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
+    invoke-virtual {p0, p1, p2, p3, v0}, Landroidx/compose/foundation/gestures/snapping/c;->c(Landroidx/compose/foundation/gestures/L;FLka/c;Lkotlin/coroutines/jvm/internal/ContinuationImpl;)Ljava/lang/Object;
 
     .line 54
     .line 55
@@ -841,71 +773,67 @@
 
     .line 61
     .line 62
-    iget-object p1, p4, Landroidx/compose/foundation/gestures/snapping/a;->a:Ljava/lang/Object;
+    iget-object p1, p4, Landroidx/compose/foundation/gestures/snapping/a;->a:Ljava/lang/Float;
 
     .line 63
     .line 64
-    check-cast p1, Ljava/lang/Number;
+    invoke-virtual {p1}, Ljava/lang/Number;->floatValue()F
 
     .line 65
     .line 66
-    invoke-virtual {p1}, Ljava/lang/Number;->floatValue()F
-
     .line 67
-    .line 68
-    .line 69
     move-result p1
 
-    .line 70
+    .line 68
     const/4 p2, 0x0
 
-    .line 71
+    .line 69
     cmpg-float p1, p1, p2
+
+    .line 70
+    .line 71
+    if-nez p1, :cond_4
 
     .line 72
     .line 73
-    if-nez p1, :cond_4
-
-    .line 74
-    .line 75
     goto :goto_2
 
-    .line 76
+    .line 74
     :cond_4
-    iget-object p1, p4, Landroidx/compose/foundation/gestures/snapping/a;->b:Landroidx/compose/animation/core/h;
+    iget-object p1, p4, Landroidx/compose/foundation/gestures/snapping/a;->b:Landroidx/compose/animation/core/g;
+
+    .line 75
+    .line 76
+    invoke-virtual {p1}, Landroidx/compose/animation/core/g;->a()Ljava/lang/Object;
 
     .line 77
     .line 78
-    invoke-virtual {p1}, Landroidx/compose/animation/core/h;->a()Ljava/lang/Object;
-
     .line 79
-    .line 80
-    .line 81
     move-result-object p1
 
-    .line 82
+    .line 80
     check-cast p1, Ljava/lang/Number;
+
+    .line 81
+    .line 82
+    invoke-virtual {p1}, Ljava/lang/Number;->floatValue()F
 
     .line 83
     .line 84
-    invoke-virtual {p1}, Ljava/lang/Number;->floatValue()F
-
     .line 85
-    .line 86
-    .line 87
     move-result p2
 
-    .line 88
+    .line 86
     :goto_2
     new-instance p1, Ljava/lang/Float;
 
-    .line 89
-    .line 90
+    .line 87
+    .line 88
     invoke-direct {p1, p2}, Ljava/lang/Float;-><init>(F)V
 
+    .line 89
+    .line 90
     .line 91
-    .line 92
-    .line 93
     return-object p1
 .end method
 
@@ -928,15 +856,15 @@
 
     .line 7
     .line 8
-    iget-object v0, p1, Landroidx/compose/foundation/gestures/snapping/c;->c:Landroidx/compose/animation/core/g;
+    iget-object v0, p1, Landroidx/compose/foundation/gestures/snapping/c;->c:Landroidx/compose/animation/core/f;
 
     .line 9
     .line 10
-    iget-object v2, p0, Landroidx/compose/foundation/gestures/snapping/c;->c:Landroidx/compose/animation/core/g;
+    iget-object v2, p0, Landroidx/compose/foundation/gestures/snapping/c;->c:Landroidx/compose/animation/core/f;
 
     .line 11
     .line 12
-    invoke-static {v0, v2}, Lrb/h;->d(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v0, v2}, Lkotlin/jvm/internal/h;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     .line 13
     .line 14
@@ -948,15 +876,15 @@
 
     .line 17
     .line 18
-    iget-object v0, p1, Landroidx/compose/foundation/gestures/snapping/c;->b:Landroidx/compose/animation/core/t;
+    iget-object v0, p1, Landroidx/compose/foundation/gestures/snapping/c;->b:Landroidx/compose/animation/core/r;
 
     .line 19
     .line 20
-    iget-object v2, p0, Landroidx/compose/foundation/gestures/snapping/c;->b:Landroidx/compose/animation/core/t;
+    iget-object v2, p0, Landroidx/compose/foundation/gestures/snapping/c;->b:Landroidx/compose/animation/core/r;
 
     .line 21
     .line 22
-    invoke-static {v0, v2}, Lrb/h;->d(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v0, v2}, Lkotlin/jvm/internal/h;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     .line 23
     .line 24
@@ -968,15 +896,15 @@
 
     .line 27
     .line 28
-    iget-object p1, p1, Landroidx/compose/foundation/gestures/snapping/c;->a:Landroidx/compose/foundation/gestures/snapping/b;
+    iget-object p1, p1, Landroidx/compose/foundation/gestures/snapping/c;->a:Landroidx/appcompat/app/L;
 
     .line 29
     .line 30
-    iget-object v0, p0, Landroidx/compose/foundation/gestures/snapping/c;->a:Landroidx/compose/foundation/gestures/snapping/b;
+    iget-object v0, p0, Landroidx/compose/foundation/gestures/snapping/c;->a:Landroidx/appcompat/app/L;
 
     .line 31
     .line 32
-    invoke-static {p1, v0}, Lrb/h;->d(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {p1, v0}, Lkotlin/jvm/internal/h;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     .line 33
     .line 34
@@ -999,7 +927,7 @@
     .locals 2
 
     .line 1
-    iget-object v0, p0, Landroidx/compose/foundation/gestures/snapping/c;->c:Landroidx/compose/animation/core/g;
+    iget-object v0, p0, Landroidx/compose/foundation/gestures/snapping/c;->c:Landroidx/compose/animation/core/f;
 
     .line 2
     .line 3
@@ -1015,7 +943,7 @@
 
     .line 8
     .line 9
-    iget-object v1, p0, Landroidx/compose/foundation/gestures/snapping/c;->b:Landroidx/compose/animation/core/t;
+    iget-object v1, p0, Landroidx/compose/foundation/gestures/snapping/c;->b:Landroidx/compose/animation/core/r;
 
     .line 10
     .line 11
@@ -1034,7 +962,7 @@
 
     .line 17
     .line 18
-    iget-object v0, p0, Landroidx/compose/foundation/gestures/snapping/c;->a:Landroidx/compose/foundation/gestures/snapping/b;
+    iget-object v0, p0, Landroidx/compose/foundation/gestures/snapping/c;->a:Landroidx/appcompat/app/L;
 
     .line 19
     .line 20

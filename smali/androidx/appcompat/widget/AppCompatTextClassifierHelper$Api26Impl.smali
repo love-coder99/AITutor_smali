@@ -29,6 +29,12 @@
 
 .method public static getTextClassifier(Landroid/widget/TextView;)Landroid/view/textclassifier/TextClassifier;
     .locals 1
+    .param p0    # Landroid/widget/TextView;
+        .annotation build Landroidx/annotation/NonNull;
+        .end annotation
+    .end param
+    .annotation build Landroidx/annotation/NonNull;
+    .end annotation
 
     .line 1
     invoke-virtual {p0}, Landroid/view/View;->getContext()Landroid/content/Context;

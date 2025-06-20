@@ -1071,7 +1071,7 @@
 .method private a(Lcom/applovin/impl/ka$b;Lcom/applovin/impl/sdk/j;)D
     .locals 1
 
-    .line 10
+    .line 11
     sget-object v0, Lcom/applovin/impl/ka$a;->a:[I
 
     invoke-virtual {p1}, Ljava/lang/Enum;->ordinal()I
@@ -1096,7 +1096,7 @@
 
     return-wide p1
 
-    .line 11
+    .line 12
     :cond_0
     sget-object p1, Lcom/applovin/impl/sj;->I:Lcom/applovin/impl/sj;
 
@@ -1115,7 +1115,7 @@
 
     return-wide p1
 
-    .line 12
+    .line 13
     :cond_1
     sget-object p1, Lcom/applovin/impl/sj;->H:Lcom/applovin/impl/sj;
 
@@ -1131,7 +1131,7 @@
 
     goto :goto_0
 
-    .line 13
+    .line 14
     :cond_2
     sget-object p1, Lcom/applovin/impl/sj;->G:Lcom/applovin/impl/sj;
 
@@ -1151,11 +1151,12 @@
 .method private a(Ljava/lang/String;Lcom/applovin/impl/sdk/j;)D
     .locals 1
 
+    .line 6
     sget-object v0, Lcom/applovin/impl/ka;->c:Lorg/json/JSONObject;
 
     if-nez v0, :cond_0
 
-    .line 6
+    .line 7
     sget-object v0, Lcom/applovin/impl/sj;->F:Lcom/applovin/impl/sj;
 
     invoke-virtual {p2, v0}, Lcom/applovin/impl/sdk/j;->a(Lcom/applovin/impl/sj;)Ljava/lang/Object;
@@ -1164,26 +1165,26 @@
 
     check-cast p2, Ljava/lang/String;
 
-    .line 7
+    .line 8
     invoke-static {p2}, Lcom/applovin/impl/sdk/utils/JsonUtils;->deserialize(Ljava/lang/String;)Lorg/json/JSONObject;
 
     move-result-object p2
 
     sput-object p2, Lcom/applovin/impl/ka;->c:Lorg/json/JSONObject;
 
+    .line 9
     :cond_0
     sget-object p2, Lcom/applovin/impl/ka;->c:Lorg/json/JSONObject;
 
     const/4 v0, 0x0
 
-    .line 8
     invoke-static {p2, p1, v0}, Lcom/applovin/impl/sdk/utils/JsonUtils;->getDouble(Lorg/json/JSONObject;Ljava/lang/String;Ljava/lang/Double;)Ljava/lang/Double;
 
     move-result-object p1
 
     if-eqz p1, :cond_1
 
-    .line 9
+    .line 10
     invoke-virtual {p1}, Ljava/lang/Double;->doubleValue()D
 
     move-result-wide p1
@@ -1217,10 +1218,10 @@
 
     return-wide v0
 
+    .line 3
     :cond_0
     iget-object v0, p0, Lcom/applovin/impl/ka;->a:Ljava/lang/String;
 
-    .line 3
     invoke-direct {p0, v0, p1}, Lcom/applovin/impl/ka;->a(Ljava/lang/String;Lcom/applovin/impl/sdk/j;)D
 
     move-result-wide v0
@@ -1233,10 +1234,10 @@
 
     return-wide v0
 
+    .line 4
     :cond_1
     iget-object v0, p0, Lcom/applovin/impl/ka;->b:Lcom/applovin/impl/ka$b;
 
-    .line 4
     invoke-direct {p0, v0, p1}, Lcom/applovin/impl/ka;->a(Lcom/applovin/impl/ka$b;Lcom/applovin/impl/sdk/j;)D
 
     move-result-wide v0
@@ -1278,7 +1279,10 @@
 .method public b()Ljava/lang/String;
     .locals 1
 
+    .line 1
     iget-object v0, p0, Lcom/applovin/impl/ka;->a:Ljava/lang/String;
 
+    .line 2
+    .line 3
     return-object v0
 .end method

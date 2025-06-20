@@ -3,7 +3,7 @@
 .source "SourceFile"
 
 # interfaces
-.implements Landroidx/appcompat/view/menu/n;
+.implements Landroidx/appcompat/view/menu/l;
 
 
 # annotations
@@ -40,8 +40,16 @@
 
 
 # virtual methods
-.method public onMenuItemSelected(Landroidx/appcompat/view/menu/p;Landroid/view/MenuItem;)Z
+.method public onMenuItemSelected(Landroidx/appcompat/view/menu/n;Landroid/view/MenuItem;)Z
     .locals 0
+    .param p1    # Landroidx/appcompat/view/menu/n;
+        .annotation build Landroidx/annotation/NonNull;
+        .end annotation
+    .end param
+    .param p2    # Landroid/view/MenuItem;
+        .annotation build Landroidx/annotation/NonNull;
+        .end annotation
+    .end param
 
     .line 1
     iget-object p1, p0, Landroidx/appcompat/widget/ActionMenuView$MenuBuilderCallback;->this$0:Landroidx/appcompat/widget/ActionMenuView;
@@ -82,15 +90,19 @@
     return p1
 .end method
 
-.method public onMenuModeChange(Landroidx/appcompat/view/menu/p;)V
+.method public onMenuModeChange(Landroidx/appcompat/view/menu/n;)V
     .locals 1
+    .param p1    # Landroidx/appcompat/view/menu/n;
+        .annotation build Landroidx/annotation/NonNull;
+        .end annotation
+    .end param
 
     .line 1
     iget-object v0, p0, Landroidx/appcompat/widget/ActionMenuView$MenuBuilderCallback;->this$0:Landroidx/appcompat/widget/ActionMenuView;
 
     .line 2
     .line 3
-    iget-object v0, v0, Landroidx/appcompat/widget/ActionMenuView;->mMenuBuilderCallback:Landroidx/appcompat/view/menu/n;
+    iget-object v0, v0, Landroidx/appcompat/widget/ActionMenuView;->mMenuBuilderCallback:Landroidx/appcompat/view/menu/l;
 
     .line 4
     .line 5
@@ -98,7 +110,7 @@
 
     .line 6
     .line 7
-    invoke-interface {v0, p1}, Landroidx/appcompat/view/menu/n;->onMenuModeChange(Landroidx/appcompat/view/menu/p;)V
+    invoke-interface {v0, p1}, Landroidx/appcompat/view/menu/l;->onMenuModeChange(Landroidx/appcompat/view/menu/n;)V
 
     .line 8
     .line 9

@@ -32,9 +32,10 @@
 .method private constructor <init>(Lcom/applovin/impl/wm;Lcom/applovin/impl/fe;Lcom/applovin/impl/wm$c;)V
     .locals 2
 
+    .line 1
     iput-object p1, p0, Lcom/applovin/impl/wm$b;->m:Lcom/applovin/impl/wm;
 
-    .line 1
+    .line 2
     invoke-static {p1}, Lcom/applovin/impl/wm;->a(Lcom/applovin/impl/wm;)Ljava/lang/String;
 
     move-result-object v0
@@ -49,7 +50,7 @@
 
     invoke-direct {p0, v0, v1, p1}, Lcom/applovin/impl/yl;-><init>(Ljava/lang/String;Lcom/applovin/impl/sdk/j;Ljava/lang/String;)V
 
-    .line 2
+    .line 3
     new-instance p1, Ljava/lang/StringBuilder;
 
     invoke-direct {p1}, Ljava/lang/StringBuilder;-><init>()V
@@ -70,18 +71,20 @@
 
     iput-object p1, p0, Lcom/applovin/impl/wm$b;->h:Ljava/lang/String;
 
-    .line 3
+    .line 4
     invoke-static {}, Landroid/os/SystemClock;->elapsedRealtime()J
 
     move-result-wide v0
 
     iput-wide v0, p0, Lcom/applovin/impl/wm$b;->i:J
 
+    .line 5
     iput-object p2, p0, Lcom/applovin/impl/wm$b;->j:Lcom/applovin/impl/fe;
 
+    .line 6
     iput-object p3, p0, Lcom/applovin/impl/wm$b;->k:Lcom/applovin/impl/wm$c;
 
-    .line 4
+    .line 7
     invoke-virtual {p2}, Lcom/applovin/impl/fe;->J()I
 
     move-result p1
@@ -96,7 +99,7 @@
 .method public synthetic constructor <init>(Lcom/applovin/impl/wm;Lcom/applovin/impl/fe;Lcom/applovin/impl/wm$c;Lcom/applovin/impl/wm$a;)V
     .locals 0
 
-    .line 5
+    .line 8
     invoke-direct {p0, p1, p2, p3}, Lcom/applovin/impl/wm$b;-><init>(Lcom/applovin/impl/wm;Lcom/applovin/impl/fe;Lcom/applovin/impl/wm$c;)V
 
     return-void
@@ -150,9 +153,9 @@
 .method private b(Lcom/applovin/impl/fe;)Z
     .locals 9
 
+    .line 3
     iget-object v0, p0, Lcom/applovin/impl/wm$b;->m:Lcom/applovin/impl/wm;
 
-    .line 3
     invoke-static {v0}, Lcom/applovin/impl/wm;->e(Lcom/applovin/impl/wm;)Lcom/applovin/impl/fe;
 
     move-result-object v0
@@ -170,10 +173,10 @@
 
     return v0
 
+    .line 4
     :cond_1
     iget-object v2, p0, Lcom/applovin/impl/wm$b;->m:Lcom/applovin/impl/wm;
 
-    .line 4
     invoke-static {v2}, Lcom/applovin/impl/wm;->e(Lcom/applovin/impl/wm;)Lcom/applovin/impl/fe;
 
     move-result-object v2
@@ -209,11 +212,11 @@
     :cond_3
     return v1
 
+    .line 6
     :cond_4
     :goto_0
     iget-object v2, p0, Lcom/applovin/impl/wm$b;->m:Lcom/applovin/impl/wm;
 
-    .line 6
     invoke-static {v2}, Lcom/applovin/impl/wm;->e(Lcom/applovin/impl/wm;)Lcom/applovin/impl/fe;
 
     move-result-object v2

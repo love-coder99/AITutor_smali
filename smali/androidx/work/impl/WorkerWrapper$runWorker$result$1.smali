@@ -3,36 +3,11 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lzh/e;
+.implements Lka/e;
 
 
 # annotations
-.annotation system Ldalvik/annotation/Signature;
-    value = {
-        "Lkotlin/coroutines/jvm/internal/SuspendLambda;",
-        "Lzh/e;"
-    }
-.end annotation
-
-.annotation runtime Lkotlin/Metadata;
-    d1 = {
-        "\u0000\u000c\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0008\u0002\u0010\u0003\u001a\n \u0002*\u0004\u0018\u00010\u00010\u0001*\u00020\u0000H\u008a@"
-    }
-    d2 = {
-        "Lkotlinx/coroutines/w;",
-        "Landroidx/work/s;",
-        "kotlin.jvm.PlatformType",
-        "<anonymous>"
-    }
-    k = 0x3
-    mv = {
-        0x1,
-        0x8,
-        0x0
-    }
-.end annotation
-
-.annotation runtime Lth/c;
+.annotation runtime Lca/c;
     c = "androidx.work.impl.WorkerWrapper$runWorker$result$1"
     f = "WorkerWrapper.kt"
     l = {
@@ -42,26 +17,52 @@
     m = "invokeSuspend"
 .end annotation
 
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "Lkotlin/coroutines/jvm/internal/SuspendLambda;",
+        "Lka/e;"
+    }
+.end annotation
+
+.annotation runtime Lkotlin/Metadata;
+    d1 = {
+        "\u0000\u000c\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0008\u0003\u0010\u0003\u001a\n \u0002*\u0004\u0018\u00010\u00010\u0001*\u00020\u0000H\u008a@\u00a2\u0006\u0004\u0008\u0003\u0010\u0004"
+    }
+    d2 = {
+        "Lkotlinx/coroutines/u;",
+        "Landroidx/work/s;",
+        "kotlin.jvm.PlatformType",
+        "<anonymous>",
+        "(Lkotlinx/coroutines/u;)Landroidx/work/s;"
+    }
+    k = 0x3
+    mv = {
+        0x1,
+        0x8,
+        0x0
+    }
+.end annotation
+
 
 # instance fields
-.field final synthetic $foregroundUpdater:Landroidx/work/l;
+.field final synthetic $foregroundUpdater:Landroidx/work/k;
 
 .field final synthetic $worker:Landroidx/work/t;
 
 .field label:I
 
-.field final synthetic this$0:Landroidx/work/impl/r0;
+.field final synthetic this$0:Landroidx/work/impl/v;
 
 
 # direct methods
-.method public constructor <init>(Landroidx/work/impl/r0;Landroidx/work/t;Landroidx/work/l;Lkotlin/coroutines/Continuation;)V
+.method public constructor <init>(Landroidx/work/impl/v;Landroidx/work/t;Landroidx/work/k;Lkotlin/coroutines/Continuation;)V
     .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
-            "Landroidx/work/impl/r0;",
+            "Landroidx/work/impl/v;",
             "Landroidx/work/t;",
-            "Landroidx/work/l;",
+            "Landroidx/work/k;",
             "Lkotlin/coroutines/Continuation<",
             "-",
             "Landroidx/work/impl/WorkerWrapper$runWorker$result$1;",
@@ -69,11 +70,11 @@
         }
     .end annotation
 
-    iput-object p1, p0, Landroidx/work/impl/WorkerWrapper$runWorker$result$1;->this$0:Landroidx/work/impl/r0;
+    iput-object p1, p0, Landroidx/work/impl/WorkerWrapper$runWorker$result$1;->this$0:Landroidx/work/impl/v;
 
     iput-object p2, p0, Landroidx/work/impl/WorkerWrapper$runWorker$result$1;->$worker:Landroidx/work/t;
 
-    iput-object p3, p0, Landroidx/work/impl/WorkerWrapper$runWorker$result$1;->$foregroundUpdater:Landroidx/work/l;
+    iput-object p3, p0, Landroidx/work/impl/WorkerWrapper$runWorker$result$1;->$foregroundUpdater:Landroidx/work/k;
 
     const/4 p1, 0x2
 
@@ -93,20 +94,20 @@
             "Lkotlin/coroutines/Continuation<",
             "*>;)",
             "Lkotlin/coroutines/Continuation<",
-            "Lqh/r;",
+            "LX9/j;",
             ">;"
         }
     .end annotation
 
     new-instance p1, Landroidx/work/impl/WorkerWrapper$runWorker$result$1;
 
-    iget-object v0, p0, Landroidx/work/impl/WorkerWrapper$runWorker$result$1;->this$0:Landroidx/work/impl/r0;
+    iget-object v0, p0, Landroidx/work/impl/WorkerWrapper$runWorker$result$1;->this$0:Landroidx/work/impl/v;
 
     iget-object v1, p0, Landroidx/work/impl/WorkerWrapper$runWorker$result$1;->$worker:Landroidx/work/t;
 
-    iget-object v2, p0, Landroidx/work/impl/WorkerWrapper$runWorker$result$1;->$foregroundUpdater:Landroidx/work/l;
+    iget-object v2, p0, Landroidx/work/impl/WorkerWrapper$runWorker$result$1;->$foregroundUpdater:Landroidx/work/k;
 
-    invoke-direct {p1, v0, v1, v2, p2}, Landroidx/work/impl/WorkerWrapper$runWorker$result$1;-><init>(Landroidx/work/impl/r0;Landroidx/work/t;Landroidx/work/l;Lkotlin/coroutines/Continuation;)V
+    invoke-direct {p1, v0, v1, v2, p2}, Landroidx/work/impl/WorkerWrapper$runWorker$result$1;-><init>(Landroidx/work/impl/v;Landroidx/work/t;Landroidx/work/k;Lkotlin/coroutines/Continuation;)V
 
     return-object p1
 .end method
@@ -115,23 +116,23 @@
     .locals 0
 
     .line 1
-    check-cast p1, Lkotlinx/coroutines/w;
+    check-cast p1, Lkotlinx/coroutines/u;
 
     check-cast p2, Lkotlin/coroutines/Continuation;
 
-    invoke-virtual {p0, p1, p2}, Landroidx/work/impl/WorkerWrapper$runWorker$result$1;->invoke(Lkotlinx/coroutines/w;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
+    invoke-virtual {p0, p1, p2}, Landroidx/work/impl/WorkerWrapper$runWorker$result$1;->invoke(Lkotlinx/coroutines/u;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
 
     move-result-object p1
 
     return-object p1
 .end method
 
-.method public final invoke(Lkotlinx/coroutines/w;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
+.method public final invoke(Lkotlinx/coroutines/u;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
     .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
-            "Lkotlinx/coroutines/w;",
+            "Lkotlinx/coroutines/u;",
             "Lkotlin/coroutines/Continuation<",
             "-",
             "Landroidx/work/s;",
@@ -147,7 +148,7 @@
 
     check-cast p1, Landroidx/work/impl/WorkerWrapper$runWorker$result$1;
 
-    sget-object p2, Lqh/r;->a:Lqh/r;
+    sget-object p2, LX9/j;->a:LX9/j;
 
     invoke-virtual {p1, p2}, Landroidx/work/impl/WorkerWrapper$runWorker$result$1;->invokeSuspend(Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -226,15 +227,15 @@
     .line 30
     .line 31
     .line 32
-    iget-object p1, p0, Landroidx/work/impl/WorkerWrapper$runWorker$result$1;->this$0:Landroidx/work/impl/r0;
+    iget-object p1, p0, Landroidx/work/impl/WorkerWrapper$runWorker$result$1;->this$0:Landroidx/work/impl/v;
 
     .line 33
     .line 34
-    iget-object v4, p1, Landroidx/work/impl/r0;->b:Landroid/content/Context;
+    iget-object v4, p1, Landroidx/work/impl/v;->b:Landroid/content/Context;
 
     .line 35
     .line 36
-    iget-object v5, p1, Landroidx/work/impl/r0;->a:Lh5/q;
+    iget-object v5, p1, Landroidx/work/impl/v;->a:LB2/p;
 
     .line 37
     .line 38
@@ -242,22 +243,22 @@
 
     .line 39
     .line 40
-    iget-object v7, p0, Landroidx/work/impl/WorkerWrapper$runWorker$result$1;->$foregroundUpdater:Landroidx/work/l;
+    iget-object v7, p0, Landroidx/work/impl/WorkerWrapper$runWorker$result$1;->$foregroundUpdater:Landroidx/work/k;
 
     .line 41
     .line 42
-    iget-object v8, p1, Landroidx/work/impl/r0;->f:Li5/a;
+    iput v3, p0, Landroidx/work/impl/WorkerWrapper$runWorker$result$1;->label:I
 
     .line 43
     .line 44
-    iput v3, p0, Landroidx/work/impl/WorkerWrapper$runWorker$result$1;->label:I
+    iget-object v8, p1, Landroidx/work/impl/v;->e:LC2/a;
 
     .line 45
     .line 46
     move-object v9, p0
 
     .line 47
-    invoke-static/range {v4 .. v9}, Landroidx/work/impl/utils/q;->a(Landroid/content/Context;Lh5/q;Landroidx/work/t;Landroidx/work/l;Li5/a;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
+    invoke-static/range {v4 .. v9}, Landroidx/work/impl/utils/m;->a(Landroid/content/Context;LB2/p;Landroidx/work/t;Landroidx/work/k;LC2/a;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
 
     .line 48
     .line 49
@@ -274,15 +275,15 @@
     .line 54
     :cond_3
     :goto_0
-    sget p1, Landroidx/work/impl/s0;->a:I
+    sget p1, Landroidx/work/impl/w;->a:I
 
     .line 55
     .line 56
-    iget-object p1, p0, Landroidx/work/impl/WorkerWrapper$runWorker$result$1;->this$0:Landroidx/work/impl/r0;
+    iget-object p1, p0, Landroidx/work/impl/WorkerWrapper$runWorker$result$1;->this$0:Landroidx/work/impl/v;
 
     .line 57
     .line 58
-    invoke-static {}, Landroidx/work/u;->a()Landroidx/work/u;
+    invoke-static {}, Landroidx/work/A;->a()Landroidx/work/A;
 
     .line 59
     .line 60
@@ -290,54 +291,50 @@
     move-result-object v1
 
     .line 62
-    iget-object p1, p1, Landroidx/work/impl/r0;->a:Lh5/q;
+    iget-object p1, p1, Landroidx/work/impl/v;->a:LB2/p;
 
     .line 63
     .line 64
-    iget-object p1, p1, Lh5/q;->c:Ljava/lang/String;
+    invoke-virtual {v1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
     .line 65
     .line 66
-    invoke-virtual {v1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
-
     .line 67
+    iget-object p1, p0, Landroidx/work/impl/WorkerWrapper$runWorker$result$1;->$worker:Landroidx/work/t;
+
     .line 68
     .line 69
-    iget-object p1, p0, Landroidx/work/impl/WorkerWrapper$runWorker$result$1;->$worker:Landroidx/work/t;
+    invoke-virtual {p1}, Landroidx/work/t;->startWork()Lcom/google/common/util/concurrent/d;
 
     .line 70
     .line 71
-    invoke-virtual {p1}, Landroidx/work/t;->startWork()Lcom/google/common/util/concurrent/c;
-
     .line 72
-    .line 73
-    .line 74
     move-result-object p1
 
-    .line 75
+    .line 73
     iget-object v1, p0, Landroidx/work/impl/WorkerWrapper$runWorker$result$1;->$worker:Landroidx/work/t;
+
+    .line 74
+    .line 75
+    iput v2, p0, Landroidx/work/impl/WorkerWrapper$runWorker$result$1;->label:I
 
     .line 76
     .line 77
-    iput v2, p0, Landroidx/work/impl/WorkerWrapper$runWorker$result$1;->label:I
+    invoke-static {p1, v1, p0}, Landroidx/work/impl/w;->a(Lcom/google/common/util/concurrent/d;Landroidx/work/t;Lkotlin/coroutines/jvm/internal/SuspendLambda;)Ljava/lang/Object;
 
     .line 78
     .line 79
-    invoke-static {p1, v1, p0}, Landroidx/work/impl/s0;->a(Lcom/google/common/util/concurrent/c;Landroidx/work/t;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
-
     .line 80
-    .line 81
-    .line 82
     move-result-object p1
 
-    .line 83
+    .line 81
     if-ne p1, v0, :cond_4
 
-    .line 84
-    .line 85
+    .line 82
+    .line 83
     return-object v0
 
-    .line 86
+    .line 84
     :cond_4
     :goto_1
     return-object p1

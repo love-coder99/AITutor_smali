@@ -12,6 +12,10 @@
 # direct methods
 .method public constructor <init>(Lcom/android/billingclient/api/BillingResult;Ljava/util/List;)V
     .locals 0
+    .param p2    # Ljava/util/List;
+        .annotation build Landroidx/annotation/Nullable;
+        .end annotation
+    .end param
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 

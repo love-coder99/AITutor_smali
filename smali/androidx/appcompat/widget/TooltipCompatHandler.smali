@@ -54,14 +54,14 @@
     .line 2
     .line 3
     .line 4
-    new-instance v0, Landroidx/appcompat/widget/e;
+    new-instance v0, Landroidx/appcompat/widget/g;
 
     .line 5
     .line 6
     const/4 v1, 0x0
 
     .line 7
-    invoke-direct {v0, p0, v1}, Landroidx/appcompat/widget/e;-><init>(Landroidx/appcompat/widget/TooltipCompatHandler;I)V
+    invoke-direct {v0, p0, v1}, Landroidx/appcompat/widget/g;-><init>(Landroidx/appcompat/widget/TooltipCompatHandler;I)V
 
     .line 8
     .line 9
@@ -70,14 +70,14 @@
 
     .line 11
     .line 12
-    new-instance v0, Landroidx/appcompat/widget/e;
+    new-instance v0, Landroidx/appcompat/widget/g;
 
     .line 13
     .line 14
     const/4 v1, 0x1
 
     .line 15
-    invoke-direct {v0, p0, v1}, Landroidx/appcompat/widget/e;-><init>(Landroidx/appcompat/widget/TooltipCompatHandler;I)V
+    invoke-direct {v0, p0, v1}, Landroidx/appcompat/widget/g;-><init>(Landroidx/appcompat/widget/TooltipCompatHandler;I)V
 
     .line 16
     .line 17
@@ -110,7 +110,7 @@
     move-result-object p2
 
     .line 32
-    sget-object v0, Landroidx/core/view/z0;->a:Ljava/lang/reflect/Method;
+    sget-object v0, Landroidx/core/view/f0;->a:Ljava/lang/reflect/Method;
 
     .line 33
     .line 34
@@ -126,7 +126,7 @@
 
     .line 39
     .line 40
-    invoke-static {p2}, Li3/f;->o(Landroid/view/ViewConfiguration;)I
+    invoke-static {p2}, Landroidx/core/view/l;->e(Landroid/view/ViewConfiguration;)I
 
     .line 41
     .line 42
@@ -205,10 +205,14 @@
 .method private forceNextChangeSignificant()V
     .locals 1
 
+    .line 1
     const/4 v0, 0x1
 
+    .line 2
     iput-boolean v0, p0, Landroidx/appcompat/widget/TooltipCompatHandler;->mForceNextChangeSignificant:Z
 
+    .line 3
+    .line 4
     return-void
 .end method
 
@@ -954,7 +958,7 @@
 
     .line 64
     .line 65
-    sget-object v0, Landroidx/core/view/y0;->a:Ljava/util/WeakHashMap;
+    sget-object v0, Landroidx/core/view/e0;->a:Ljava/util/WeakHashMap;
 
     .line 66
     .line 67

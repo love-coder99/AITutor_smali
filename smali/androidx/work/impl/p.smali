@@ -1,509 +1,483 @@
-.class public final Landroidx/work/impl/p;
-.super Lo4/b;
+.class public final synthetic Landroidx/work/impl/p;
+.super Ljava/lang/Object;
 .source "SourceFile"
+
+# interfaces
+.implements Ljava/lang/Runnable;
 
 
 # instance fields
-.field public final synthetic c:I
+.field public final synthetic b:Landroidx/work/impl/WorkDatabase;
 
-.field public final d:Landroid/content/Context;
+.field public final synthetic c:LB2/p;
+
+.field public final synthetic d:LB2/p;
+
+.field public final synthetic f:Ljava/util/List;
+
+.field public final synthetic g:Ljava/lang/String;
+
+.field public final synthetic h:Ljava/util/Set;
+
+.field public final synthetic i:Z
 
 
 # direct methods
-.method public constructor <init>(Landroid/content/Context;)V
-    .locals 2
-
-    const/4 v0, 0x1
-
-    iput v0, p0, Landroidx/work/impl/p;->c:I
-
-    const/16 v0, 0x9
-
-    const/16 v1, 0xa
-
-    .line 2
-    invoke-direct {p0, v0, v1}, Lo4/b;-><init>(II)V
-
-    iput-object p1, p0, Landroidx/work/impl/p;->d:Landroid/content/Context;
-
-    return-void
-.end method
-
-.method public constructor <init>(Landroid/content/Context;II)V
-    .locals 1
-
-    const/4 v0, 0x0
-
-    iput v0, p0, Landroidx/work/impl/p;->c:I
+.method public synthetic constructor <init>(Landroidx/work/impl/WorkDatabase;LB2/p;LB2/p;Ljava/util/List;Ljava/lang/String;Ljava/util/Set;Z)V
+    .locals 0
 
     .line 1
-    invoke-direct {p0, p2, p3}, Lo4/b;-><init>(II)V
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    iput-object p1, p0, Landroidx/work/impl/p;->d:Landroid/content/Context;
+    iput-object p1, p0, Landroidx/work/impl/p;->b:Landroidx/work/impl/WorkDatabase;
+
+    iput-object p2, p0, Landroidx/work/impl/p;->c:LB2/p;
+
+    iput-object p3, p0, Landroidx/work/impl/p;->d:LB2/p;
+
+    iput-object p4, p0, Landroidx/work/impl/p;->f:Ljava/util/List;
+
+    iput-object p5, p0, Landroidx/work/impl/p;->g:Ljava/lang/String;
+
+    iput-object p6, p0, Landroidx/work/impl/p;->h:Ljava/util/Set;
+
+    iput-boolean p7, p0, Landroidx/work/impl/p;->i:Z
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final a(Landroidx/sqlite/db/framework/b;)V
-    .locals 13
+.method public final run()V
+    .locals 22
 
     .line 1
-    iget v0, p0, Landroidx/work/impl/p;->c:I
+    move-object/from16 v1, p0
 
     .line 2
     .line 3
-    const-string v1, "INSERT OR REPLACE INTO `Preference` (`key`, `long_value`) VALUES (@key, @long_value)"
+    iget-object v0, v1, Landroidx/work/impl/p;->b:Landroidx/work/impl/WorkDatabase;
 
     .line 4
     .line 5
-    const/4 v2, 0x2
+    invoke-virtual {v0}, Landroidx/work/impl/WorkDatabase;->D()LB2/r;
 
     .line 6
-    const/4 v3, 0x1
-
     .line 7
-    const-string v4, "reschedule_needed"
-
     .line 8
+    move-result-object v2
+
     .line 9
-    const/4 v5, 0x0
+    invoke-virtual {v0}, Landroidx/work/impl/WorkDatabase;->E()LB2/t;
 
     .line 10
-    iget-object v6, p0, Landroidx/work/impl/p;->d:Landroid/content/Context;
-
     .line 11
     .line 12
-    const-string v7, "androidx.work.util.preferences"
+    move-result-object v3
 
     .line 13
-    .line 14
-    packed-switch v0, :pswitch_data_0
+    iget-object v4, v1, Landroidx/work/impl/p;->c:LB2/p;
 
+    .line 14
     .line 15
+    iget-object v7, v4, LB2/p;->b:Landroidx/work/WorkInfo$State;
+
     .line 16
     .line 17
-    const-string v0, "CREATE TABLE IF NOT EXISTS `Preference` (`key` TEXT NOT NULL, `long_value` INTEGER, PRIMARY KEY(`key`))"
+    iget-wide v11, v4, LB2/p;->n:J
 
     .line 18
     .line 19
-    invoke-virtual {p1, v0}, Landroidx/sqlite/db/framework/b;->D(Ljava/lang/String;)V
+    iget v5, v4, LB2/p;->t:I
 
     .line 20
     .line 21
+    const/4 v15, 0x1
+
     .line 22
-    invoke-virtual {v6, v7, v5}, Landroid/content/Context;->getSharedPreferences(Ljava/lang/String;I)Landroid/content/SharedPreferences;
+    add-int/lit8 v14, v5, 0x1
 
     .line 23
     .line 24
-    .line 25
-    move-result-object v0
+    iget-wide v9, v4, LB2/p;->u:J
 
+    .line 25
     .line 26
-    invoke-interface {v0, v4}, Landroid/content/SharedPreferences;->contains(Ljava/lang/String;)Z
+    iget v13, v4, LB2/p;->v:I
 
     .line 27
     .line 28
-    .line 29
-    move-result v7
+    iget-object v8, v1, Landroidx/work/impl/p;->d:LB2/p;
 
+    .line 29
     .line 30
-    const-string v8, "last_cancel_all_time_ms"
+    iget v6, v4, LB2/p;->k:I
 
     .line 31
     .line 32
-    if-nez v7, :cond_0
+    iget v4, v4, LB2/p;->s:I
 
     .line 33
     .line 34
-    invoke-interface {v0, v8}, Landroid/content/SharedPreferences;->contains(Ljava/lang/String;)Z
+    const/16 v16, 0x0
 
     .line 35
     .line 36
-    .line 37
-    move-result v7
+    const/16 v17, 0x0
 
+    .line 37
     .line 38
-    if-eqz v7, :cond_2
+    const/16 v18, 0x0
 
     .line 39
     .line 40
-    :cond_0
-    const-wide/16 v9, 0x0
+    const v19, 0xc3dbfd
 
     .line 41
     .line 42
-    invoke-interface {v0, v8, v9, v10}, Landroid/content/SharedPreferences;->getLong(Ljava/lang/String;J)J
-
     .line 43
-    .line 44
-    .line 45
-    move-result-wide v11
+    move-object v5, v8
 
+    .line 44
+    move/from16 v20, v6
+
+    .line 45
     .line 46
-    invoke-interface {v0, v4, v5}, Landroid/content/SharedPreferences;->getBoolean(Ljava/lang/String;Z)Z
+    move-object/from16 v6, v16
 
     .line 47
     .line 48
-    .line 49
-    move-result v7
+    move-object/from16 v21, v8
 
+    .line 49
     .line 50
-    if-eqz v7, :cond_1
+    move-object/from16 v8, v17
 
     .line 51
     .line 52
-    const-wide/16 v9, 0x1
+    move-wide/from16 v16, v9
 
     .line 53
     .line 54
-    :cond_1
-    invoke-virtual {p1}, Landroidx/sqlite/db/framework/b;->A()V
+    move-object/from16 v9, v18
 
     .line 55
     .line 56
+    move/from16 v10, v20
+
     .line 57
-    :try_start_0
-    new-array v7, v2, [Ljava/lang/Object;
-
     .line 58
-    .line 59
-    aput-object v8, v7, v5
+    move/from16 v18, v13
 
+    .line 59
     .line 60
+    move v13, v4
+
     .line 61
-    invoke-static {v11, v12}, Ljava/lang/Long;->valueOf(J)Ljava/lang/Long;
+    const/4 v4, 0x1
 
     .line 62
+    move-wide/from16 v15, v16
+
     .line 63
     .line 64
-    move-result-object v8
+    move/from16 v17, v18
 
     .line 65
-    aput-object v8, v7, v3
-
     .line 66
-    .line 67
-    invoke-virtual {p1, v1, v7}, Landroidx/sqlite/db/framework/b;->a(Ljava/lang/String;[Ljava/lang/Object;)V
+    move/from16 v18, v19
 
+    .line 67
     .line 68
+    invoke-static/range {v5 .. v18}, LB2/p;->b(LB2/p;Ljava/lang/String;Landroidx/work/WorkInfo$State;Ljava/lang/String;Landroidx/work/g;IJIIJII)LB2/p;
+
     .line 69
     .line 70
-    new-array v7, v2, [Ljava/lang/Object;
-
     .line 71
+    move-result-object v5
+
     .line 72
-    aput-object v4, v7, v5
+    move-object/from16 v6, v21
 
     .line 73
     .line 74
-    invoke-static {v9, v10}, Ljava/lang/Long;->valueOf(J)Ljava/lang/Long;
+    iget v7, v6, LB2/p;->v:I
 
     .line 75
     .line 76
-    .line 77
-    move-result-object v4
+    if-ne v7, v4, :cond_0
 
+    .line 77
     .line 78
-    aput-object v4, v7, v3
+    iget-wide v6, v6, LB2/p;->u:J
 
     .line 79
     .line 80
-    invoke-virtual {p1, v1, v7}, Landroidx/sqlite/db/framework/b;->a(Ljava/lang/String;[Ljava/lang/Object;)V
+    iput-wide v6, v5, LB2/p;->u:J
 
     .line 81
     .line 82
+    iget v6, v5, LB2/p;->v:I
+
     .line 83
-    invoke-interface {v0}, Landroid/content/SharedPreferences;->edit()Landroid/content/SharedPreferences$Editor;
-
     .line 84
-    .line 85
-    .line 86
-    move-result-object v0
+    add-int/2addr v6, v4
 
+    .line 85
+    iput v6, v5, LB2/p;->v:I
+
+    .line 86
     .line 87
-    invoke-interface {v0}, Landroid/content/SharedPreferences$Editor;->clear()Landroid/content/SharedPreferences$Editor;
+    :cond_0
+    iget-object v6, v1, Landroidx/work/impl/p;->f:Ljava/util/List;
 
     .line 88
     .line 89
+    invoke-static {v6, v5}, Landroidx/work/impl/utils/c;->g(Ljava/util/List;LB2/p;)LB2/p;
+
     .line 90
-    move-result-object v0
-
     .line 91
-    invoke-interface {v0}, Landroid/content/SharedPreferences$Editor;->apply()V
-
     .line 92
-    .line 93
-    .line 94
-    invoke-virtual {p1}, Landroidx/sqlite/db/framework/b;->I()V
-    :try_end_0
-    .catchall {:try_start_0 .. :try_end_0} :catchall_1
+    move-result-object v5
 
+    .line 93
+    iget-object v6, v2, LB2/r;->a:Ljava/lang/Object;
+
+    .line 94
     .line 95
+    check-cast v6, Landroidx/work/impl/WorkDatabase_Impl;
+
     .line 96
     .line 97
-    invoke-virtual {p1}, Landroidx/sqlite/db/framework/b;->N()V
+    invoke-virtual {v6}, Landroidx/room/y;->b()V
 
     .line 98
     .line 99
     .line 100
-    :cond_2
-    const-string v0, "androidx.work.util.id"
+    invoke-virtual {v6}, Landroidx/room/y;->c()V
 
     .line 101
     .line 102
-    invoke-virtual {v6, v0, v5}, Landroid/content/Context;->getSharedPreferences(Ljava/lang/String;I)Landroid/content/SharedPreferences;
-
     .line 103
+    :try_start_0
+    iget-object v7, v2, LB2/r;->c:Ljava/lang/Object;
+
     .line 104
     .line 105
-    move-result-object v0
+    check-cast v7, LB2/h;
 
     .line 106
-    const-string v4, "next_job_scheduler_id"
-
     .line 107
-    .line 108
-    invoke-interface {v0, v4}, Landroid/content/SharedPreferences;->contains(Ljava/lang/String;)Z
+    invoke-virtual {v7}, Landroidx/room/D;->a()Lm2/h;
 
+    .line 108
     .line 109
     .line 110
+    move-result-object v8
+    :try_end_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_2
+
     .line 111
-    move-result v6
+    :try_start_1
+    invoke-virtual {v7, v8, v5}, LB2/h;->d(Lm2/h;Ljava/lang/Object;)V
 
     .line 112
-    if-nez v6, :cond_3
-
     .line 113
     .line 114
-    invoke-interface {v0, v4}, Landroid/content/SharedPreferences;->contains(Ljava/lang/String;)Z
+    invoke-virtual {v8}, Lm2/h;->b()I
+    :try_end_1
+    .catchall {:try_start_1 .. :try_end_1} :catchall_3
 
     .line 115
     .line 116
     .line 117
-    move-result v6
+    :try_start_2
+    invoke-virtual {v7, v8}, Landroidx/room/D;->c(Lm2/h;)V
 
     .line 118
-    if-eqz v6, :cond_4
-
     .line 119
     .line 120
-    :cond_3
-    invoke-interface {v0, v4, v5}, Landroid/content/SharedPreferences;->getInt(Ljava/lang/String;I)I
+    invoke-virtual {v6}, Landroidx/room/y;->w()V
+    :try_end_2
+    .catchall {:try_start_2 .. :try_end_2} :catchall_2
 
     .line 121
     .line 122
     .line 123
-    move-result v6
+    invoke-virtual {v6}, Landroidx/room/y;->r()V
 
     .line 124
-    const-string v7, "next_alarm_manager_id"
-
     .line 125
     .line 126
-    invoke-interface {v0, v7, v5}, Landroid/content/SharedPreferences;->getInt(Ljava/lang/String;I)I
+    iget-object v5, v3, LB2/t;->c:Ljava/lang/Object;
 
     .line 127
     .line 128
-    .line 129
-    move-result v8
+    check-cast v5, Landroidx/work/impl/WorkDatabase_Impl;
 
+    .line 129
     .line 130
-    invoke-virtual {p1}, Landroidx/sqlite/db/framework/b;->A()V
+    invoke-virtual {v5}, Landroidx/room/y;->b()V
 
     .line 131
     .line 132
     .line 133
-    :try_start_1
-    new-array v9, v2, [Ljava/lang/Object;
+    iget-object v6, v3, LB2/t;->f:Ljava/lang/Object;
 
     .line 134
     .line 135
-    aput-object v4, v9, v5
+    check-cast v6, LB2/h;
 
     .line 136
     .line 137
-    invoke-static {v6}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+    invoke-virtual {v6}, Landroidx/room/D;->a()Lm2/h;
 
     .line 138
     .line 139
     .line 140
-    move-result-object v4
+    move-result-object v7
 
     .line 141
-    aput-object v4, v9, v3
+    iget-object v8, v1, Landroidx/work/impl/p;->g:Ljava/lang/String;
 
     .line 142
     .line 143
-    invoke-virtual {p1, v1, v9}, Landroidx/sqlite/db/framework/b;->a(Ljava/lang/String;[Ljava/lang/Object;)V
+    invoke-interface {v7, v4, v8}, Ll2/d;->g(ILjava/lang/String;)V
 
     .line 144
     .line 145
     .line 146
-    new-array v2, v2, [Ljava/lang/Object;
+    :try_start_3
+    invoke-virtual {v5}, Landroidx/room/y;->c()V
+    :try_end_3
+    .catchall {:try_start_3 .. :try_end_3} :catchall_1
 
     .line 147
     .line 148
-    aput-object v7, v2, v5
-
     .line 149
-    .line 150
-    invoke-static {v8}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+    :try_start_4
+    invoke-virtual {v7}, Lm2/h;->b()I
 
+    .line 150
     .line 151
     .line 152
+    invoke-virtual {v5}, Landroidx/room/y;->w()V
+    :try_end_4
+    .catchall {:try_start_4 .. :try_end_4} :catchall_0
+
     .line 153
-    move-result-object v4
-
     .line 154
-    aput-object v4, v2, v3
-
     .line 155
-    .line 156
-    invoke-virtual {p1, v1, v2}, Landroidx/sqlite/db/framework/b;->a(Ljava/lang/String;[Ljava/lang/Object;)V
+    :try_start_5
+    invoke-virtual {v5}, Landroidx/room/y;->r()V
+    :try_end_5
+    .catchall {:try_start_5 .. :try_end_5} :catchall_1
 
+    .line 156
     .line 157
     .line 158
-    .line 159
-    invoke-interface {v0}, Landroid/content/SharedPreferences;->edit()Landroid/content/SharedPreferences$Editor;
+    invoke-virtual {v6, v7}, Landroidx/room/D;->c(Lm2/h;)V
 
+    .line 159
     .line 160
     .line 161
-    .line 162
-    move-result-object v0
+    iget-object v4, v1, Landroidx/work/impl/p;->h:Ljava/util/Set;
 
+    .line 162
     .line 163
-    invoke-interface {v0}, Landroid/content/SharedPreferences$Editor;->clear()Landroid/content/SharedPreferences$Editor;
+    invoke-virtual {v3, v8, v4}, LB2/t;->G(Ljava/lang/String;Ljava/util/Set;)V
 
     .line 164
     .line 165
     .line 166
-    move-result-object v0
+    iget-boolean v3, v1, Landroidx/work/impl/p;->i:Z
 
     .line 167
-    invoke-interface {v0}, Landroid/content/SharedPreferences$Editor;->apply()V
-
     .line 168
+    if-nez v3, :cond_1
+
     .line 169
     .line 170
-    invoke-virtual {p1}, Landroidx/sqlite/db/framework/b;->I()V
-    :try_end_1
-    .catchall {:try_start_1 .. :try_end_1} :catchall_0
+    const-wide/16 v3, -0x1
 
     .line 171
     .line 172
-    .line 173
-    invoke-virtual {p1}, Landroidx/sqlite/db/framework/b;->N()V
+    invoke-virtual {v2, v3, v4, v8}, LB2/r;->j(JLjava/lang/String;)V
 
+    .line 173
     .line 174
     .line 175
+    invoke-virtual {v0}, Landroidx/work/impl/WorkDatabase;->C()LB2/n;
+
     .line 176
-    :cond_4
+    .line 177
+    .line 178
+    move-result-object v0
+
+    .line 179
+    invoke-virtual {v0, v8}, LB2/n;->c(Ljava/lang/String;)V
+
+    .line 180
+    .line 181
+    .line 182
+    :cond_1
     return-void
 
-    .line 177
+    .line 183
     :catchall_0
     move-exception v0
 
-    .line 178
-    invoke-virtual {p1}, Landroidx/sqlite/db/framework/b;->N()V
+    .line 184
+    :try_start_6
+    invoke-virtual {v5}, Landroidx/room/y;->r()V
 
-    .line 179
-    .line 180
-    .line 181
+    .line 185
+    .line 186
+    .line 187
     throw v0
+    :try_end_6
+    .catchall {:try_start_6 .. :try_end_6} :catchall_1
 
-    .line 182
+    .line 188
     :catchall_1
     move-exception v0
 
-    .line 183
-    invoke-virtual {p1}, Landroidx/sqlite/db/framework/b;->N()V
-
-    .line 184
-    .line 185
-    .line 186
-    throw v0
-
-    .line 187
-    :pswitch_0
-    iget v0, p0, Lo4/b;->b:I
-
-    .line 188
     .line 189
-    const/16 v8, 0xa
+    invoke-virtual {v6, v7}, Landroidx/room/D;->c(Lm2/h;)V
 
     .line 190
     .line 191
-    if-lt v0, v8, :cond_5
-
     .line 192
+    throw v0
+
     .line 193
-    new-array v0, v2, [Ljava/lang/Object;
+    :catchall_2
+    move-exception v0
 
     .line 194
-    .line 195
-    aput-object v4, v0, v5
-
-    .line 196
-    .line 197
-    invoke-static {v3}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
-
-    .line 198
-    .line 199
-    .line 200
-    move-result-object v2
-
-    .line 201
-    aput-object v2, v0, v3
-
-    .line 202
-    .line 203
-    invoke-virtual {p1, v1, v0}, Landroidx/sqlite/db/framework/b;->a(Ljava/lang/String;[Ljava/lang/Object;)V
-
-    .line 204
-    .line 205
-    .line 206
     goto :goto_0
 
-    .line 207
-    :cond_5
-    invoke-virtual {v6, v7, v5}, Landroid/content/Context;->getSharedPreferences(Ljava/lang/String;I)Landroid/content/SharedPreferences;
+    .line 195
+    :catchall_3
+    move-exception v0
 
-    .line 208
-    .line 209
-    .line 210
-    move-result-object p1
+    .line 196
+    :try_start_7
+    invoke-virtual {v7, v8}, Landroidx/room/D;->c(Lm2/h;)V
 
-    .line 211
-    invoke-interface {p1}, Landroid/content/SharedPreferences;->edit()Landroid/content/SharedPreferences$Editor;
+    .line 197
+    .line 198
+    .line 199
+    throw v0
+    :try_end_7
+    .catchall {:try_start_7 .. :try_end_7} :catchall_2
 
-    .line 212
-    .line 213
-    .line 214
-    move-result-object p1
-
-    .line 215
-    invoke-interface {p1, v4, v3}, Landroid/content/SharedPreferences$Editor;->putBoolean(Ljava/lang/String;Z)Landroid/content/SharedPreferences$Editor;
-
-    .line 216
-    .line 217
-    .line 218
-    move-result-object p1
-
-    .line 219
-    invoke-interface {p1}, Landroid/content/SharedPreferences$Editor;->apply()V
-
-    .line 220
-    .line 221
-    .line 222
+    .line 200
     :goto_0
-    return-void
+    invoke-virtual {v6}, Landroidx/room/y;->r()V
 
-    .line 223
-    :pswitch_data_0
-    .packed-switch 0x0
-        :pswitch_0
-    .end packed-switch
+    .line 201
+    .line 202
+    .line 203
+    throw v0
 .end method

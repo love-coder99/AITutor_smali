@@ -3,14 +3,14 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lzh/c;
+.implements Lka/c;
 
 
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "Lkotlin/jvm/internal/Lambda;",
-        "Lzh/c;"
+        "Lka/c;"
     }
 .end annotation
 
@@ -23,7 +23,7 @@
         "candidate",
         "",
         "Lkotlin/Pair;",
-        "Landroidx/compose/ui/layout/w;",
+        "Landroidx/compose/ui/layout/t;",
         "invoke",
         "(Landroidx/compose/ui/tooling/k;)Ljava/util/List;",
         "<anonymous>"
@@ -42,10 +42,10 @@
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/Map<",
-            "Landroidx/compose/ui/layout/w;",
+            "Landroidx/compose/ui/layout/t;",
             "Ljava/util/List<",
             "Lkotlin/Pair<",
-            "Landroidx/compose/ui/layout/w;",
+            "Landroidx/compose/ui/layout/t;",
             "Landroidx/compose/ui/tooling/k;",
             ">;>;>;"
         }
@@ -60,13 +60,13 @@
         value = {
             "(",
             "Ljava/util/Map<",
-            "Landroidx/compose/ui/layout/w;",
+            "Landroidx/compose/ui/layout/t;",
             "+",
             "Ljava/util/List<",
             "+",
             "Lkotlin/Pair<",
             "+",
-            "Landroidx/compose/ui/layout/w;",
+            "Landroidx/compose/ui/layout/t;",
             "Landroidx/compose/ui/tooling/k;",
             ">;>;>;)V"
         }
@@ -86,7 +86,7 @@
 .method public bridge synthetic invoke(Ljava/lang/Object;)Ljava/lang/Object;
     .locals 0
 
-    .line 7
+    .line 1
     check-cast p1, Landroidx/compose/ui/tooling/k;
 
     invoke-virtual {p0, p1}, Landroidx/compose/ui/tooling/ShadowViewInfo_androidKt$stitchTrees$1$1;->invoke(Landroidx/compose/ui/tooling/k;)Ljava/util/List;
@@ -105,28 +105,27 @@
             ")",
             "Ljava/util/List<",
             "Lkotlin/Pair<",
-            "Landroidx/compose/ui/layout/w;",
+            "Landroidx/compose/ui/layout/t;",
             "Landroidx/compose/ui/tooling/k;",
             ">;>;"
         }
     .end annotation
 
+    .line 2
     iget-object v0, p0, Landroidx/compose/ui/tooling/ShadowViewInfo_androidKt$stitchTrees$1$1;->$shadowNodesWithLayoutInfo:Ljava/util/Map;
 
-    .line 1
-    iget-object p1, p1, Landroidx/compose/ui/tooling/k;->b:Landroidx/compose/ui/tooling/m;
-
-    .line 2
-    iget-object p1, p1, Landroidx/compose/ui/tooling/m;->f:Ljava/lang/Object;
-
     .line 3
-    instance-of v1, p1, Landroidx/compose/ui/layout/w;
+    iget-object p1, p1, Landroidx/compose/ui/tooling/k;->b:Landroidx/compose/ui/tooling/l;
+
+    .line 4
+    iget-object p1, p1, Landroidx/compose/ui/tooling/l;->f:Landroidx/compose/ui/layout/t;
+
+    .line 5
+    instance-of v1, p1, Landroidx/compose/ui/layout/t;
 
     const/4 v2, 0x0
 
     if-eqz v1, :cond_0
-
-    check-cast p1, Landroidx/compose/ui/layout/w;
 
     goto :goto_0
 
@@ -136,14 +135,15 @@
     :goto_0
     if-eqz p1, :cond_1
 
-    check-cast p1, Landroidx/compose/ui/node/e0;
+    .line 6
+    check-cast p1, Landroidx/compose/ui/node/C;
 
-    .line 4
-    invoke-virtual {p1}, Landroidx/compose/ui/node/e0;->t()Landroidx/compose/ui/node/e0;
+    .line 7
+    invoke-virtual {p1}, Landroidx/compose/ui/node/C;->t()Landroidx/compose/ui/node/C;
 
     move-result-object v2
 
-    .line 5
+    .line 8
     :cond_1
     invoke-interface {v0, v2}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -153,7 +153,7 @@
 
     if-nez p1, :cond_2
 
-    .line 6
+    .line 9
     sget-object p1, Lkotlin/collections/EmptyList;->INSTANCE:Lkotlin/collections/EmptyList;
 
     :cond_2

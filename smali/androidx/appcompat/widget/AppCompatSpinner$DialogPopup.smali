@@ -21,7 +21,7 @@
 # instance fields
 .field private mListAdapter:Landroid/widget/ListAdapter;
 
-.field mPopup:Landroidx/appcompat/app/l;
+.field mPopup:Landroidx/appcompat/app/h;
 
 .field private mPrompt:Ljava/lang/CharSequence;
 
@@ -51,7 +51,7 @@
     .locals 1
 
     .line 1
-    iget-object v0, p0, Landroidx/appcompat/widget/AppCompatSpinner$DialogPopup;->mPopup:Landroidx/appcompat/app/l;
+    iget-object v0, p0, Landroidx/appcompat/widget/AppCompatSpinner$DialogPopup;->mPopup:Landroidx/appcompat/app/h;
 
     .line 2
     .line 3
@@ -59,7 +59,7 @@
 
     .line 4
     .line 5
-    invoke-virtual {v0}, Landroidx/appcompat/app/l;->h()V
+    invoke-virtual {v0}, Landroidx/appcompat/app/h;->dismiss()V
 
     .line 6
     .line 7
@@ -67,7 +67,7 @@
     const/4 v0, 0x0
 
     .line 9
-    iput-object v0, p0, Landroidx/appcompat/widget/AppCompatSpinner$DialogPopup;->mPopup:Landroidx/appcompat/app/l;
+    iput-object v0, p0, Landroidx/appcompat/widget/AppCompatSpinner$DialogPopup;->mPopup:Landroidx/appcompat/app/h;
 
     .line 10
     .line 11
@@ -86,8 +86,11 @@
 .method public getHintText()Ljava/lang/CharSequence;
     .locals 1
 
+    .line 1
     iget-object v0, p0, Landroidx/appcompat/widget/AppCompatSpinner$DialogPopup;->mPrompt:Ljava/lang/CharSequence;
 
+    .line 2
+    .line 3
     return-object v0
 .end method
 
@@ -119,7 +122,7 @@
     .locals 1
 
     .line 1
-    iget-object v0, p0, Landroidx/appcompat/widget/AppCompatSpinner$DialogPopup;->mPopup:Landroidx/appcompat/app/l;
+    iget-object v0, p0, Landroidx/appcompat/widget/AppCompatSpinner$DialogPopup;->mPopup:Landroidx/appcompat/app/h;
 
     .line 2
     .line 3
@@ -211,8 +214,11 @@
 .method public setAdapter(Landroid/widget/ListAdapter;)V
     .locals 0
 
+    .line 1
     iput-object p1, p0, Landroidx/appcompat/widget/AppCompatSpinner$DialogPopup;->mListAdapter:Landroid/widget/ListAdapter;
 
+    .line 2
+    .line 3
     return-void
 .end method
 
@@ -237,8 +243,11 @@
 .method public setPromptText(Ljava/lang/CharSequence;)V
     .locals 0
 
+    .line 1
     iput-object p1, p0, Landroidx/appcompat/widget/AppCompatSpinner$DialogPopup;->mPrompt:Ljava/lang/CharSequence;
 
+    .line 2
+    .line 3
     return-void
 .end method
 
@@ -264,7 +273,7 @@
 
     .line 6
     :cond_0
-    new-instance v0, Landroidx/appcompat/app/k;
+    new-instance v0, LC7/l;
 
     .line 7
     .line 8
@@ -280,7 +289,7 @@
     move-result-object v1
 
     .line 14
-    invoke-direct {v0, v1}, Landroidx/appcompat/app/k;-><init>(Landroid/content/Context;)V
+    invoke-direct {v0, v1}, LC7/l;-><init>(Landroid/content/Context;)V
 
     .line 15
     .line 16
@@ -289,19 +298,19 @@
 
     .line 18
     .line 19
-    if-eqz v1, :cond_1
+    iget-object v2, v0, LC7/l;->d:Ljava/lang/Object;
 
     .line 20
     .line 21
-    iget-object v2, v0, Landroidx/appcompat/app/k;->d:Ljava/lang/Object;
+    check-cast v2, Landroidx/appcompat/app/e;
 
     .line 22
     .line 23
-    check-cast v2, Landroidx/appcompat/app/g;
+    if-eqz v1, :cond_1
 
     .line 24
     .line 25
-    iput-object v1, v2, Landroidx/appcompat/app/g;->d:Ljava/lang/CharSequence;
+    iput-object v1, v2, Landroidx/appcompat/app/e;->d:Ljava/lang/CharSequence;
 
     .line 26
     .line 27
@@ -310,83 +319,75 @@
 
     .line 28
     .line 29
-    iget-object v2, p0, Landroidx/appcompat/widget/AppCompatSpinner$DialogPopup;->this$0:Landroidx/appcompat/widget/AppCompatSpinner;
+    iget-object v3, p0, Landroidx/appcompat/widget/AppCompatSpinner$DialogPopup;->this$0:Landroidx/appcompat/widget/AppCompatSpinner;
 
     .line 30
     .line 31
-    invoke-virtual {v2}, Landroid/widget/AdapterView;->getSelectedItemPosition()I
+    invoke-virtual {v3}, Landroid/widget/AdapterView;->getSelectedItemPosition()I
 
     .line 32
     .line 33
     .line 34
-    move-result v2
+    move-result v3
 
     .line 35
-    iget-object v3, v0, Landroidx/appcompat/app/k;->d:Ljava/lang/Object;
+    iput-object v1, v2, Landroidx/appcompat/app/e;->i:Landroid/widget/ListAdapter;
 
     .line 36
     .line 37
-    check-cast v3, Landroidx/appcompat/app/g;
+    iput-object p0, v2, Landroidx/appcompat/app/e;->j:Landroid/content/DialogInterface$OnClickListener;
 
     .line 38
     .line 39
-    iput-object v1, v3, Landroidx/appcompat/app/g;->g:Landroid/widget/ListAdapter;
+    iput v3, v2, Landroidx/appcompat/app/e;->l:I
 
     .line 40
     .line 41
-    iput-object p0, v3, Landroidx/appcompat/app/g;->h:Landroid/content/DialogInterface$OnClickListener;
-
-    .line 42
-    .line 43
-    iput v2, v3, Landroidx/appcompat/app/g;->j:I
-
-    .line 44
-    .line 45
     const/4 v1, 0x1
 
-    .line 46
-    iput-boolean v1, v3, Landroidx/appcompat/app/g;->i:Z
+    .line 42
+    iput-boolean v1, v2, Landroidx/appcompat/app/e;->k:Z
 
+    .line 43
+    .line 44
+    invoke-virtual {v0}, LC7/l;->m()Landroidx/appcompat/app/h;
+
+    .line 45
+    .line 46
     .line 47
+    move-result-object v0
+
     .line 48
-    invoke-virtual {v0}, Landroidx/appcompat/app/k;->g()Landroidx/appcompat/app/l;
+    iput-object v0, p0, Landroidx/appcompat/widget/AppCompatSpinner$DialogPopup;->mPopup:Landroidx/appcompat/app/h;
 
     .line 49
     .line 50
-    .line 51
-    move-result-object v0
+    iget-object v0, v0, Landroidx/appcompat/app/h;->h:Landroidx/appcompat/app/g;
 
+    .line 51
     .line 52
-    iput-object v0, p0, Landroidx/appcompat/widget/AppCompatSpinner$DialogPopup;->mPopup:Landroidx/appcompat/app/l;
+    iget-object v0, v0, Landroidx/appcompat/app/g;->e:Landroidx/appcompat/app/AlertController$RecycleListView;
 
     .line 53
     .line 54
-    iget-object v0, v0, Landroidx/appcompat/app/l;->h:Landroidx/appcompat/app/j;
+    invoke-virtual {v0, p1}, Landroid/view/View;->setTextDirection(I)V
 
     .line 55
     .line 56
-    iget-object v0, v0, Landroidx/appcompat/app/j;->e:Landroidx/appcompat/app/AlertController$RecycleListView;
-
     .line 57
-    .line 58
-    invoke-virtual {v0, p1}, Landroid/view/View;->setTextDirection(I)V
-
-    .line 59
-    .line 60
-    .line 61
     invoke-virtual {v0, p2}, Landroid/view/View;->setTextAlignment(I)V
 
-    .line 62
-    .line 63
-    .line 64
-    iget-object p1, p0, Landroidx/appcompat/widget/AppCompatSpinner$DialogPopup;->mPopup:Landroidx/appcompat/app/l;
+    .line 58
+    .line 59
+    .line 60
+    iget-object p1, p0, Landroidx/appcompat/widget/AppCompatSpinner$DialogPopup;->mPopup:Landroidx/appcompat/app/h;
 
-    .line 65
-    .line 66
+    .line 61
+    .line 62
     invoke-virtual {p1}, Landroid/app/Dialog;->show()V
 
-    .line 67
-    .line 68
-    .line 69
+    .line 63
+    .line 64
+    .line 65
     return-void
 .end method

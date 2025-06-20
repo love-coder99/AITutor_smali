@@ -3,27 +3,37 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lzh/f;
+.implements Lka/f;
 
 
 # annotations
+.annotation runtime Lca/c;
+    c = "androidx.compose.foundation.CombinedClickableNodeImpl$clickPointerInput$4"
+    f = "Clickable.kt"
+    l = {
+        0x313
+    }
+    m = "invokeSuspend"
+.end annotation
+
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "Lkotlin/coroutines/jvm/internal/SuspendLambda;",
-        "Lzh/f;"
+        "Lka/f;"
     }
 .end annotation
 
 .annotation runtime Lkotlin/Metadata;
     d1 = {
-        "\u0000\u0010\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\u0010\u0004\u001a\u00020\u0003*\u00020\u00002\u0006\u0010\u0002\u001a\u00020\u0001H\u008a@"
+        "\u0000\u0012\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0008\u0002\u0010\u0004\u001a\u00020\u0003*\u00020\u00002\u0006\u0010\u0002\u001a\u00020\u0001H\u008a@\u00a2\u0006\u0004\u0008\u0004\u0010\u0005"
     }
     d2 = {
-        "Landroidx/compose/foundation/gestures/y;",
-        "Ln1/c;",
+        "Landroidx/compose/foundation/gestures/A;",
+        "Lr0/c;",
         "offset",
-        "Lqh/r;",
-        "<anonymous>"
+        "LX9/j;",
+        "<anonymous>",
+        "(Landroidx/compose/foundation/gestures/A;Lr0/c;)V"
     }
     k = 0x3
     mv = {
@@ -31,15 +41,6 @@
         0x8,
         0x0
     }
-.end annotation
-
-.annotation runtime Lth/c;
-    c = "androidx.compose.foundation.CombinedClickableNodeImpl$clickPointerInput$4"
-    f = "Clickable.kt"
-    l = {
-        0x313
-    }
-    m = "invokeSuspend"
 .end annotation
 
 
@@ -82,15 +83,15 @@
     .locals 2
 
     .line 1
-    check-cast p1, Landroidx/compose/foundation/gestures/y;
+    check-cast p1, Landroidx/compose/foundation/gestures/A;
 
     .line 2
     .line 3
-    check-cast p2, Ln1/c;
+    check-cast p2, Lr0/c;
 
     .line 4
     .line 5
-    iget-wide v0, p2, Ln1/c;->a:J
+    iget-wide v0, p2, Lr0/c;->a:J
 
     .line 6
     .line 7
@@ -98,7 +99,7 @@
 
     .line 8
     .line 9
-    invoke-virtual {p0, p1, v0, v1, p3}, Landroidx/compose/foundation/CombinedClickableNodeImpl$clickPointerInput$4;->invoke-d-4ec7I(Landroidx/compose/foundation/gestures/y;JLkotlin/coroutines/Continuation;)Ljava/lang/Object;
+    invoke-virtual {p0, p1, v0, v1, p3}, Landroidx/compose/foundation/CombinedClickableNodeImpl$clickPointerInput$4;->invoke-d-4ec7I(Landroidx/compose/foundation/gestures/A;JLkotlin/coroutines/Continuation;)Ljava/lang/Object;
 
     .line 10
     .line 11
@@ -109,16 +110,16 @@
     return-object p1
 .end method
 
-.method public final invoke-d-4ec7I(Landroidx/compose/foundation/gestures/y;JLkotlin/coroutines/Continuation;)Ljava/lang/Object;
+.method public final invoke-d-4ec7I(Landroidx/compose/foundation/gestures/A;JLkotlin/coroutines/Continuation;)Ljava/lang/Object;
     .locals 2
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
-            "Landroidx/compose/foundation/gestures/y;",
+            "Landroidx/compose/foundation/gestures/A;",
             "J",
             "Lkotlin/coroutines/Continuation<",
             "-",
-            "Lqh/r;",
+            "LX9/j;",
             ">;)",
             "Ljava/lang/Object;"
         }
@@ -134,7 +135,7 @@
 
     iput-wide p2, v0, Landroidx/compose/foundation/CombinedClickableNodeImpl$clickPointerInput$4;->J$0:J
 
-    sget-object p1, Lqh/r;->a:Lqh/r;
+    sget-object p1, LX9/j;->a:LX9/j;
 
     invoke-virtual {v0, p1}, Landroidx/compose/foundation/CombinedClickableNodeImpl$clickPointerInput$4;->invokeSuspend(Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -155,7 +156,7 @@
 
     .line 4
     .line 5
-    sget-object v2, Lqh/r;->a:Lqh/r;
+    sget-object v2, LX9/j;->a:LX9/j;
 
     .line 6
     .line 7
@@ -208,7 +209,7 @@
     move-object v5, p1
 
     .line 30
-    check-cast v5, Landroidx/compose/foundation/gestures/y;
+    check-cast v5, Landroidx/compose/foundation/gestures/A;
 
     .line 31
     .line 32
@@ -250,12 +251,12 @@
     move-object v4, p1
 
     .line 50
-    invoke-direct/range {v4 .. v10}, Landroidx/compose/foundation/AbstractClickableNode$handlePressInteraction$2$1;-><init>(Landroidx/compose/foundation/gestures/y;JLandroidx/compose/foundation/interaction/l;Landroidx/compose/foundation/a;Lkotlin/coroutines/Continuation;)V
+    invoke-direct/range {v4 .. v10}, Landroidx/compose/foundation/AbstractClickableNode$handlePressInteraction$2$1;-><init>(Landroidx/compose/foundation/gestures/A;JLandroidx/compose/foundation/interaction/l;Landroidx/compose/foundation/a;Lkotlin/coroutines/Continuation;)V
 
     .line 51
     .line 52
     .line 53
-    invoke-static {p1, p0}, Lrb/h;->k(Lzh/e;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
+    invoke-static {p1, p0}, Lkotlinx/coroutines/w;->h(Lka/e;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
 
     .line 54
     .line 55

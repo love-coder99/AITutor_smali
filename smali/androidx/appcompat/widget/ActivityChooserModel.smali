@@ -586,29 +586,29 @@
     .locals 6
 
     .line 1
-    iget-boolean v0, p0, Landroidx/appcompat/widget/ActivityChooserModel;->mReadShareHistoryCalled:Z
-
-    .line 2
-    .line 3
-    if-eqz v0, :cond_2
-
-    .line 4
-    .line 5
-    iget-boolean v0, p0, Landroidx/appcompat/widget/ActivityChooserModel;->mHistoricalRecordsChanged:Z
-
-    .line 6
-    .line 7
-    if-nez v0, :cond_0
-
-    .line 8
-    .line 9
-    return-void
-
-    .line 10
-    :cond_0
     const/4 v0, 0x0
 
+    .line 2
+    iget-boolean v1, p0, Landroidx/appcompat/widget/ActivityChooserModel;->mReadShareHistoryCalled:Z
+
+    .line 3
+    .line 4
+    if-eqz v1, :cond_2
+
+    .line 5
+    .line 6
+    iget-boolean v1, p0, Landroidx/appcompat/widget/ActivityChooserModel;->mHistoricalRecordsChanged:Z
+
+    .line 7
+    .line 8
+    if-nez v1, :cond_0
+
+    .line 9
+    .line 10
+    return-void
+
     .line 11
+    :cond_0
     iput-boolean v0, p0, Landroidx/appcompat/widget/ActivityChooserModel;->mHistoricalRecordsChanged:Z
 
     .line 12
@@ -642,42 +642,42 @@
 
     .line 27
     .line 28
-    const/4 v3, 0x2
+    new-instance v3, Ljava/util/ArrayList;
 
     .line 29
-    new-array v3, v3, [Ljava/lang/Object;
-
     .line 30
+    iget-object v4, p0, Landroidx/appcompat/widget/ActivityChooserModel;->mHistoricalRecords:Ljava/util/List;
+
     .line 31
-    new-instance v4, Ljava/util/ArrayList;
-
     .line 32
-    .line 33
-    iget-object v5, p0, Landroidx/appcompat/widget/ActivityChooserModel;->mHistoricalRecords:Ljava/util/List;
+    invoke-direct {v3, v4}, Ljava/util/ArrayList;-><init>(Ljava/util/Collection;)V
 
+    .line 33
     .line 34
     .line 35
-    invoke-direct {v4, v5}, Ljava/util/ArrayList;-><init>(Ljava/util/Collection;)V
+    iget-object v4, p0, Landroidx/appcompat/widget/ActivityChooserModel;->mHistoryFileName:Ljava/lang/String;
 
     .line 36
     .line 37
+    const/4 v5, 0x2
+
     .line 38
-    aput-object v4, v3, v0
+    new-array v5, v5, [Ljava/lang/Object;
 
     .line 39
     .line 40
-    const/4 v0, 0x1
+    aput-object v3, v5, v0
 
     .line 41
-    iget-object v4, p0, Landroidx/appcompat/widget/ActivityChooserModel;->mHistoryFileName:Ljava/lang/String;
-
     .line 42
+    const/4 v0, 0x1
+
     .line 43
-    aput-object v4, v3, v0
+    aput-object v4, v5, v0
 
     .line 44
     .line 45
-    invoke-virtual {v1, v2, v3}, Landroid/os/AsyncTask;->executeOnExecutor(Ljava/util/concurrent/Executor;[Ljava/lang/Object;)Landroid/os/AsyncTask;
+    invoke-virtual {v1, v2, v5}, Landroid/os/AsyncTask;->executeOnExecutor(Ljava/util/concurrent/Executor;[Ljava/lang/Object;)Landroid/os/AsyncTask;
 
     .line 46
     .line 47

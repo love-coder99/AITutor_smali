@@ -188,7 +188,7 @@
 
     .line 19
     .line 20
-    invoke-static {v0, v1}, Ld3/b;->c(ILandroid/content/Context;)Landroid/content/res/ColorStateList;
+    invoke-static {v1, v0}, Li1/f;->d(Landroid/content/Context;I)Landroid/content/res/ColorStateList;
 
     .line 21
     .line 22
@@ -319,7 +319,7 @@
 
     .line 19
     .line 20
-    invoke-static {p1, v0}, La0/r;->o(Landroid/content/Context;I)Landroid/graphics/drawable/Drawable;
+    invoke-static {p1, v0}, Lcom/google/android/gms/internal/measurement/Q1;->l(Landroid/content/Context;I)Landroid/graphics/drawable/Drawable;
 
     .line 21
     .line 22
@@ -437,8 +437,14 @@
     return p1
 .end method
 
-.method public getFont(IILe3/j;)Landroid/graphics/Typeface;
+.method public getFont(IILk1/j;)Landroid/graphics/Typeface;
     .locals 9
+    .param p3    # Lk1/j;
+        .annotation build Landroidx/annotation/Nullable;
+        .end annotation
+    .end param
+    .annotation build Landroidx/annotation/Nullable;
+    .end annotation
 
     .line 1
     iget-object v0, p0, Landroidx/appcompat/widget/TintTypedArray;->mWrapped:Landroid/content/res/TypedArray;
@@ -497,7 +503,7 @@
 
     .line 26
     .line 27
-    sget-object v0, Le3/l;->a:Ljava/lang/ThreadLocal;
+    sget-object v0, Lk1/l;->a:Ljava/lang/ThreadLocal;
 
     .line 28
     .line 29
@@ -517,10 +523,10 @@
 
     .line 36
     :cond_2
-    const/4 v7, 0x1
+    const/4 v8, 0x0
 
     .line 37
-    const/4 v8, 0x0
+    const/4 v7, 0x1
 
     .line 38
     move v5, p2
@@ -529,7 +535,7 @@
     move-object v6, p3
 
     .line 40
-    invoke-static/range {v2 .. v8}, Le3/l;->c(Landroid/content/Context;ILandroid/util/TypedValue;ILe3/j;ZZ)Landroid/graphics/Typeface;
+    invoke-static/range {v2 .. v8}, Lk1/l;->c(Landroid/content/Context;ILandroid/util/TypedValue;ILk1/j;ZZ)Landroid/graphics/Typeface;
 
     .line 41
     .line 42
@@ -639,9 +645,9 @@
 .method public getLayoutDimension(II)I
     .locals 1
 
+    .line 2
     iget-object v0, p0, Landroidx/appcompat/widget/TintTypedArray;->mWrapped:Landroid/content/res/TypedArray;
 
-    .line 2
     invoke-virtual {v0, p1, p2}, Landroid/content/res/TypedArray;->getLayoutDimension(II)I
 
     move-result p1
@@ -652,9 +658,9 @@
 .method public getLayoutDimension(ILjava/lang/String;)I
     .locals 1
 
+    .line 1
     iget-object v0, p0, Landroidx/appcompat/widget/TintTypedArray;->mWrapped:Landroid/content/res/TypedArray;
 
-    .line 1
     invoke-virtual {v0, p1, p2}, Landroid/content/res/TypedArray;->getLayoutDimension(ILjava/lang/String;)I
 
     move-result p1
@@ -836,8 +842,11 @@
 .method public getWrappedTypeArray()Landroid/content/res/TypedArray;
     .locals 1
 
+    .line 1
     iget-object v0, p0, Landroidx/appcompat/widget/TintTypedArray;->mWrapped:Landroid/content/res/TypedArray;
 
+    .line 2
+    .line 3
     return-object v0
 .end method
 

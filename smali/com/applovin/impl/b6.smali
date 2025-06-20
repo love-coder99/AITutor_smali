@@ -47,168 +47,160 @@
 
     .line 2
     .line 3
-    new-array v0, v0, [I
+    const/4 v1, 0x0
 
     .line 4
+    const/4 v2, 0x1
+
     .line 5
-    fill-array-data v0, :array_0
+    new-array v0, v0, [I
 
     .line 6
     .line 7
-    .line 8
-    sput-object v0, Lcom/applovin/impl/b6;->n:[I
+    fill-array-data v0, :array_0
 
+    .line 8
     .line 9
     .line 10
-    const/4 v0, 0x0
+    sput-object v0, Lcom/applovin/impl/b6;->n:[I
 
     .line 11
-    :try_start_0
-    sget-object v1, Ljava/lang/Boolean;->TRUE:Ljava/lang/Boolean;
-
     .line 12
+    const/4 v0, 0x0
+
     .line 13
-    const-string v2, "com.applovin.exoplayer2.ext.flac.FlacLibrary"
+    :try_start_0
+    sget-object v3, Ljava/lang/Boolean;->TRUE:Ljava/lang/Boolean;
 
     .line 14
     .line 15
-    invoke-static {v2}, Ljava/lang/Class;->forName(Ljava/lang/String;)Ljava/lang/Class;
+    const-string v4, "com.applovin.exoplayer2.ext.flac.FlacLibrary"
 
     .line 16
     .line 17
+    invoke-static {v4}, Ljava/lang/Class;->forName(Ljava/lang/String;)Ljava/lang/Class;
+
     .line 18
-    move-result-object v2
-
     .line 19
-    const-string v3, "isAvailable"
-
     .line 20
+    move-result-object v4
+
     .line 21
-    const/4 v4, 0x0
+    const-string v5, "isAvailable"
 
     .line 22
-    new-array v5, v4, [Ljava/lang/Class;
-
     .line 23
-    .line 24
-    invoke-virtual {v2, v3, v5}, Ljava/lang/Class;->getMethod(Ljava/lang/String;[Ljava/lang/Class;)Ljava/lang/reflect/Method;
+    invoke-virtual {v4, v5, v0}, Ljava/lang/Class;->getMethod(Ljava/lang/String;[Ljava/lang/Class;)Ljava/lang/reflect/Method;
 
+    .line 24
     .line 25
     .line 26
+    move-result-object v4
+
     .line 27
-    move-result-object v2
+    invoke-virtual {v4, v0, v0}, Ljava/lang/reflect/Method;->invoke(Ljava/lang/Object;[Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 28
-    new-array v3, v4, [Ljava/lang/Object;
-
     .line 29
     .line 30
-    invoke-virtual {v2, v0, v3}, Ljava/lang/reflect/Method;->invoke(Ljava/lang/Object;[Ljava/lang/Object;)Ljava/lang/Object;
+    move-result-object v4
 
     .line 31
+    invoke-virtual {v3, v4}, Ljava/lang/Boolean;->equals(Ljava/lang/Object;)Z
+
     .line 32
     .line 33
-    move-result-object v2
-
     .line 34
-    invoke-virtual {v1, v2}, Ljava/lang/Boolean;->equals(Ljava/lang/Object;)Z
+    move-result v3
 
     .line 35
+    if-eqz v3, :cond_0
+
     .line 36
     .line 37
-    move-result v1
+    const-string v3, "com.applovin.exoplayer2.ext.flac.FlacExtractor"
 
     .line 38
-    if-eqz v1, :cond_0
-
     .line 39
-    .line 40
-    const-string v1, "com.applovin.exoplayer2.ext.flac.FlacExtractor"
+    invoke-static {v3}, Ljava/lang/Class;->forName(Ljava/lang/String;)Ljava/lang/Class;
 
+    .line 40
     .line 41
     .line 42
-    invoke-static {v1}, Ljava/lang/Class;->forName(Ljava/lang/String;)Ljava/lang/Class;
+    move-result-object v3
 
     .line 43
+    const-class v4, Lcom/applovin/impl/j8;
+
     .line 44
     .line 45
-    move-result-object v1
+    invoke-virtual {v3, v4}, Ljava/lang/Class;->asSubclass(Ljava/lang/Class;)Ljava/lang/Class;
 
     .line 46
-    const-class v2, Lcom/applovin/impl/j8;
-
     .line 47
     .line 48
-    invoke-virtual {v1, v2}, Ljava/lang/Class;->asSubclass(Ljava/lang/Class;)Ljava/lang/Class;
+    move-result-object v3
 
     .line 49
+    new-array v2, v2, [Ljava/lang/Class;
+
     .line 50
     .line 51
-    move-result-object v1
+    sget-object v4, Ljava/lang/Integer;->TYPE:Ljava/lang/Class;
 
     .line 52
-    const/4 v2, 0x1
-
     .line 53
-    new-array v2, v2, [Ljava/lang/Class;
+    aput-object v4, v2, v1
 
     .line 54
     .line 55
-    sget-object v3, Ljava/lang/Integer;->TYPE:Ljava/lang/Class;
+    invoke-virtual {v3, v2}, Ljava/lang/Class;->getConstructor([Ljava/lang/Class;)Ljava/lang/reflect/Constructor;
 
     .line 56
     .line 57
-    aput-object v3, v2, v4
-
     .line 58
-    .line 59
-    invoke-virtual {v1, v2}, Ljava/lang/Class;->getConstructor([Ljava/lang/Class;)Ljava/lang/reflect/Constructor;
-
-    .line 60
-    .line 61
-    .line 62
     move-result-object v0
     :try_end_0
     .catch Ljava/lang/ClassNotFoundException; {:try_start_0 .. :try_end_0} :catch_1
     .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
 
-    .line 63
+    .line 59
     goto :goto_0
 
-    .line 64
+    .line 60
     :catch_0
     move-exception v0
 
-    .line 65
+    .line 61
     new-instance v1, Ljava/lang/RuntimeException;
+
+    .line 62
+    .line 63
+    const-string v2, "Error instantiating FLAC extension"
+
+    .line 64
+    .line 65
+    invoke-direct {v1, v2, v0}, Ljava/lang/RuntimeException;-><init>(Ljava/lang/String;Ljava/lang/Throwable;)V
 
     .line 66
     .line 67
-    const-string v2, "Error instantiating FLAC extension"
-
     .line 68
-    .line 69
-    invoke-direct {v1, v2, v0}, Ljava/lang/RuntimeException;-><init>(Ljava/lang/String;Ljava/lang/Throwable;)V
-
-    .line 70
-    .line 71
-    .line 72
     throw v1
 
-    .line 73
+    .line 69
     :catch_1
     :cond_0
     :goto_0
     sput-object v0, Lcom/applovin/impl/b6;->o:Ljava/lang/reflect/Constructor;
 
-    .line 74
-    .line 75
+    .line 70
+    .line 71
     return-void
 
-    .line 76
+    .line 72
     nop
 
-    .line 77
+    .line 73
     :array_0
     .array-data 4
         0x5
@@ -259,14 +251,14 @@
 .method private a(ILjava/util/List;)V
     .locals 4
 
-    const/4 v0, 0x2
+    const/4 v0, 0x0
 
-    const/4 v1, 0x0
+    const/4 v1, 0x2
 
     packed-switch p1, :pswitch_data_0
 
     :pswitch_0
-    goto/16 :goto_3
+    goto/16 :goto_0
 
     .line 1
     :pswitch_1
@@ -276,7 +268,7 @@
 
     invoke-interface {p2, p1}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
-    goto/16 :goto_3
+    goto/16 :goto_0
 
     .line 2
     :pswitch_2
@@ -286,7 +278,7 @@
 
     invoke-interface {p2, p1}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
-    goto/16 :goto_3
+    goto/16 :goto_0
 
     .line 3
     :pswitch_3
@@ -302,7 +294,7 @@
 
     invoke-interface {p2, p1}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
-    goto/16 :goto_3
+    goto/16 :goto_0
 
     .line 4
     :pswitch_4
@@ -312,7 +304,7 @@
 
     invoke-interface {p2, p1}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
-    goto/16 :goto_3
+    goto/16 :goto_0
 
     .line 5
     :pswitch_5
@@ -322,7 +314,7 @@
 
     invoke-interface {p2, p1}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
-    goto/16 :goto_3
+    goto/16 :goto_0
 
     .line 6
     :pswitch_6
@@ -343,7 +335,7 @@
 
     invoke-interface {p2, p1}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
-    goto/16 :goto_3
+    goto/16 :goto_0
 
     .line 8
     :pswitch_7
@@ -351,31 +343,30 @@
 
     iget v2, p0, Lcom/applovin/impl/b6;->j:I
 
+    .line 9
     iget-boolean v3, p0, Lcom/applovin/impl/b6;->b:Z
 
     or-int/2addr v2, v3
 
+    .line 10
     iget-boolean v3, p0, Lcom/applovin/impl/b6;->c:Z
 
     if-eqz v3, :cond_0
 
-    goto :goto_0
+    const/4 v0, 0x2
 
     :cond_0
-    const/4 v0, 0x0
-
-    :goto_0
     or-int/2addr v0, v2
 
-    .line 9
+    .line 11
     invoke-direct {p1, v0}, Lcom/applovin/impl/nf;-><init>(I)V
 
-    .line 10
+    .line 12
     invoke-interface {p2, p1}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
-    goto/16 :goto_3
+    goto/16 :goto_0
 
-    .line 11
+    .line 13
     :pswitch_8
     new-instance p1, Lcom/applovin/impl/xc;
 
@@ -385,9 +376,9 @@
 
     invoke-interface {p2, p1}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
-    goto/16 :goto_3
+    goto/16 :goto_0
 
-    .line 12
+    .line 14
     :pswitch_9
     new-instance p1, Lcom/applovin/impl/d9;
 
@@ -395,28 +386,29 @@
 
     invoke-interface {p2, p1}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
-    goto :goto_3
+    goto :goto_0
 
+    .line 15
     :pswitch_a
     sget-object p1, Lcom/applovin/impl/b6;->o:Ljava/lang/reflect/Constructor;
 
     if-eqz p1, :cond_1
 
-    const/4 v0, 0x1
-
+    .line 16
     :try_start_0
-    new-array v0, v0, [Ljava/lang/Object;
+    iget v1, p0, Lcom/applovin/impl/b6;->f:I
 
-    iget v2, p0, Lcom/applovin/impl/b6;->f:I
+    invoke-static {v1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
-    .line 13
-    invoke-static {v2}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+    move-result-object v1
 
-    move-result-object v2
+    const/4 v2, 0x1
 
-    aput-object v2, v0, v1
+    new-array v2, v2, [Ljava/lang/Object;
 
-    invoke-virtual {p1, v0}, Ljava/lang/reflect/Constructor;->newInstance([Ljava/lang/Object;)Ljava/lang/Object;
+    aput-object v1, v2, v0
+
+    invoke-virtual {p1, v2}, Ljava/lang/reflect/Constructor;->newInstance([Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object p1
 
@@ -426,12 +418,12 @@
     :try_end_0
     .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
 
-    goto :goto_3
+    goto :goto_0
 
     :catch_0
     move-exception p1
 
-    .line 14
+    .line 17
     new-instance p2, Ljava/lang/IllegalStateException;
 
     const-string v0, "Unexpected error creating FLAC extractor"
@@ -440,7 +432,7 @@
 
     throw p2
 
-    .line 15
+    .line 18
     :cond_1
     new-instance p1, Lcom/applovin/impl/u8;
 
@@ -450,69 +442,67 @@
 
     invoke-interface {p2, p1}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
-    goto :goto_3
+    goto :goto_0
 
-    .line 16
+    .line 19
     :pswitch_b
     new-instance p1, Lcom/applovin/impl/q0;
 
     iget v2, p0, Lcom/applovin/impl/b6;->e:I
 
+    .line 20
     iget-boolean v3, p0, Lcom/applovin/impl/b6;->b:Z
 
     or-int/2addr v2, v3
 
+    .line 21
     iget-boolean v3, p0, Lcom/applovin/impl/b6;->c:Z
 
     if-eqz v3, :cond_2
 
-    goto :goto_1
+    const/4 v0, 0x2
 
     :cond_2
-    const/4 v0, 0x0
-
-    :goto_1
     or-int/2addr v0, v2
 
-    .line 17
+    .line 22
     invoke-direct {p1, v0}, Lcom/applovin/impl/q0;-><init>(I)V
 
-    .line 18
+    .line 23
     invoke-interface {p2, p1}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
-    goto :goto_3
+    goto :goto_0
 
-    .line 19
+    .line 24
     :pswitch_c
     new-instance p1, Lcom/applovin/impl/j0;
 
     iget v2, p0, Lcom/applovin/impl/b6;->d:I
 
+    .line 25
     iget-boolean v3, p0, Lcom/applovin/impl/b6;->b:Z
 
     or-int/2addr v2, v3
 
+    .line 26
     iget-boolean v3, p0, Lcom/applovin/impl/b6;->c:Z
 
     if-eqz v3, :cond_3
 
-    goto :goto_2
+    const/4 v0, 0x2
 
     :cond_3
-    const/4 v0, 0x0
-
-    :goto_2
     or-int/2addr v0, v2
 
-    .line 20
+    .line 27
     invoke-direct {p1, v0}, Lcom/applovin/impl/j0;-><init>(I)V
 
-    .line 21
+    .line 28
     invoke-interface {p2, p1}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
-    goto :goto_3
+    goto :goto_0
 
-    .line 22
+    .line 29
     :pswitch_d
     new-instance p1, Lcom/applovin/impl/l;
 
@@ -520,9 +510,9 @@
 
     invoke-interface {p2, p1}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
-    goto :goto_3
+    goto :goto_0
 
-    .line 23
+    .line 30
     :pswitch_e
     new-instance p1, Lcom/applovin/impl/i;
 
@@ -530,10 +520,8 @@
 
     invoke-interface {p2, p1}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
-    :goto_3
+    :goto_0
     return-void
-
-    nop
 
     :pswitch_data_0
     .packed-switch 0x0
@@ -562,7 +550,7 @@
 
     monitor-enter p0
 
-    .line 24
+    .line 31
     :try_start_0
     sget-object v0, Landroid/net/Uri;->EMPTY:Landroid/net/Uri;
 
@@ -583,7 +571,10 @@
     :catchall_0
     move-exception v0
 
+    :try_start_1
     monitor-exit p0
+    :try_end_1
+    .catchall {:try_start_1 .. :try_end_1} :catchall_0
 
     throw v0
 .end method
@@ -593,7 +584,7 @@
 
     monitor-enter p0
 
-    .line 25
+    .line 32
     :try_start_0
     new-instance v0, Ljava/util/ArrayList;
 
@@ -601,7 +592,7 @@
 
     invoke-direct {v0, v1}, Ljava/util/ArrayList;-><init>(I)V
 
-    .line 26
+    .line 33
     invoke-static {p2}, Lcom/applovin/impl/p8;->a(Ljava/util/Map;)I
 
     move-result p2
@@ -610,7 +601,7 @@
 
     if-eq p2, v1, :cond_0
 
-    .line 27
+    .line 34
     invoke-direct {p0, p2, v0}, Lcom/applovin/impl/b6;->a(ILjava/util/List;)V
 
     goto :goto_0
@@ -620,7 +611,7 @@
 
     goto :goto_2
 
-    .line 28
+    .line 35
     :cond_0
     :goto_0
     invoke-static {p1}, Lcom/applovin/impl/p8;->a(Landroid/net/Uri;)I
@@ -631,13 +622,13 @@
 
     if-eq p1, p2, :cond_1
 
-    .line 29
+    .line 36
     invoke-direct {p0, p1, v0}, Lcom/applovin/impl/b6;->a(ILjava/util/List;)V
 
+    .line 37
     :cond_1
     sget-object v1, Lcom/applovin/impl/b6;->n:[I
 
-    .line 30
     array-length v2, v1
 
     const/4 v3, 0x0
@@ -651,7 +642,7 @@
 
     if-eq v4, p1, :cond_2
 
-    .line 31
+    .line 38
     invoke-direct {p0, v4, v0}, Lcom/applovin/impl/b6;->a(ILjava/util/List;)V
 
     :cond_2
@@ -659,7 +650,7 @@
 
     goto :goto_1
 
-    .line 32
+    .line 39
     :cond_3
     invoke-virtual {v0}, Ljava/util/ArrayList;->size()I
 
@@ -680,7 +671,10 @@
     return-object p1
 
     :goto_2
+    :try_start_1
     monitor-exit p0
+    :try_end_1
+    .catchall {:try_start_1 .. :try_end_1} :catchall_0
 
     throw p1
 .end method

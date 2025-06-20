@@ -3,14 +3,14 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lzh/c;
+.implements Lka/c;
 
 
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "Lkotlin/jvm/internal/Lambda;",
-        "Lzh/c;"
+        "Lka/c;"
     }
 .end annotation
 
@@ -37,10 +37,10 @@
 
 
 # instance fields
-.field final synthetic $key:Lzh/c;
+.field final synthetic $key:Lka/c;
     .annotation system Ldalvik/annotation/Signature;
         value = {
-            "Lzh/c;"
+            "Lka/c;"
         }
     .end annotation
 .end field
@@ -55,26 +55,34 @@
 
 
 # direct methods
-.method public constructor <init>(Lzh/c;Landroidx/paging/compose/c;)V
+.method public constructor <init>(Lka/c;Landroidx/paging/compose/c;)V
     .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
-            "Lzh/c;",
+            "Lka/c;",
             "Landroidx/paging/compose/c;",
             ")V"
         }
     .end annotation
 
     .line 1
-    iput-object p1, p0, Landroidx/paging/compose/LazyFoundationExtensionsKt$itemKey$1;->$key:Lzh/c;
+    iput-object p1, p0, Landroidx/paging/compose/LazyFoundationExtensionsKt$itemKey$1;->$key:Lka/c;
 
+    .line 2
+    .line 3
     iput-object p2, p0, Landroidx/paging/compose/LazyFoundationExtensionsKt$itemKey$1;->$this_itemKey:Landroidx/paging/compose/c;
 
+    .line 4
+    .line 5
     const/4 p1, 0x1
 
+    .line 6
     invoke-direct {p0, p1}, Lkotlin/jvm/internal/Lambda;-><init>(I)V
 
+    .line 7
+    .line 8
+    .line 9
     return-void
 .end method
 
@@ -83,49 +91,51 @@
 .method public final invoke(I)Ljava/lang/Object;
     .locals 1
 
-    iget-object v0, p0, Landroidx/paging/compose/LazyFoundationExtensionsKt$itemKey$1;->$key:Lzh/c;
+    .line 2
+    iget-object v0, p0, Landroidx/paging/compose/LazyFoundationExtensionsKt$itemKey$1;->$key:Lka/c;
 
     if-nez v0, :cond_0
 
-    .line 1
+    .line 3
     new-instance v0, Landroidx/paging/compose/PagingPlaceholderKey;
 
     invoke-direct {v0, p1}, Landroidx/paging/compose/PagingPlaceholderKey;-><init>(I)V
 
     goto :goto_0
 
+    .line 4
     :cond_0
     iget-object v0, p0, Landroidx/paging/compose/LazyFoundationExtensionsKt$itemKey$1;->$this_itemKey:Landroidx/paging/compose/c;
 
-    .line 2
+    .line 5
     iget-object v0, v0, Landroidx/paging/compose/c;->c:Landroidx/compose/runtime/ParcelableSnapshotMutableState;
 
-    .line 3
-    invoke-virtual {v0}, Landroidx/compose/runtime/t2;->getValue()Ljava/lang/Object;
+    .line 6
+    invoke-virtual {v0}, Landroidx/compose/runtime/ParcelableSnapshotMutableState;->getValue()Ljava/lang/Object;
 
     move-result-object v0
 
-    check-cast v0, Landroidx/paging/v;
+    check-cast v0, Landroidx/paging/u;
 
-    .line 4
-    invoke-virtual {v0, p1}, Landroidx/paging/v;->get(I)Ljava/lang/Object;
+    .line 7
+    invoke-virtual {v0, p1}, Landroidx/paging/u;->get(I)Ljava/lang/Object;
 
     move-result-object v0
 
     if-nez v0, :cond_1
 
-    .line 5
+    .line 8
     new-instance v0, Landroidx/paging/compose/PagingPlaceholderKey;
 
     invoke-direct {v0, p1}, Landroidx/paging/compose/PagingPlaceholderKey;-><init>(I)V
 
     goto :goto_0
 
+    .line 9
     :cond_1
-    iget-object p1, p0, Landroidx/paging/compose/LazyFoundationExtensionsKt$itemKey$1;->$key:Lzh/c;
+    iget-object p1, p0, Landroidx/paging/compose/LazyFoundationExtensionsKt$itemKey$1;->$key:Lka/c;
 
-    .line 6
-    invoke-interface {p1, v0}, Lzh/c;->invoke(Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-interface {p1, v0}, Lka/c;->invoke(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object v0
 
@@ -136,7 +146,7 @@
 .method public bridge synthetic invoke(Ljava/lang/Object;)Ljava/lang/Object;
     .locals 0
 
-    .line 7
+    .line 1
     check-cast p1, Ljava/lang/Number;
 
     invoke-virtual {p1}, Ljava/lang/Number;->intValue()I

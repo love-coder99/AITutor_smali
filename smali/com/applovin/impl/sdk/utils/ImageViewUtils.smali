@@ -22,21 +22,22 @@
 
     const/4 v1, 0x1
 
+    .line 24
     iput-boolean v1, v0, Landroid/graphics/BitmapFactory$Options;->inJustDecodeBounds:Z
 
-    .line 24
+    .line 25
     invoke-virtual {p0}, Landroid/net/Uri;->getPath()Ljava/lang/String;
 
     move-result-object v2
 
     invoke-static {v2, v0}, Landroid/graphics/BitmapFactory;->decodeFile(Ljava/lang/String;Landroid/graphics/BitmapFactory$Options;)Landroid/graphics/Bitmap;
 
-    .line 25
+    .line 26
     invoke-virtual {p1}, Landroid/view/View;->getHeight()I
 
     move-result v2
 
-    .line 26
+    .line 27
     invoke-virtual {p1}, Landroid/view/View;->getWidth()I
 
     move-result v3
@@ -45,7 +46,7 @@
 
     if-gtz v3, :cond_1
 
-    .line 27
+    .line 28
     :cond_0
     invoke-virtual {p1}, Landroid/view/View;->getContext()Landroid/content/Context;
 
@@ -55,7 +56,7 @@
 
     move-result-object v2
 
-    .line 28
+    .line 29
     iget v3, v2, Landroid/graphics/Point;->x:I
 
     iget v2, v2, Landroid/graphics/Point;->y:I
@@ -66,9 +67,11 @@
 
     move v3, v2
 
+    .line 30
     :cond_1
     iget v4, v0, Landroid/graphics/BitmapFactory$Options;->outHeight:I
 
+    .line 31
     iget v5, v0, Landroid/graphics/BitmapFactory$Options;->outWidth:I
 
     if-gt v4, v2, :cond_2
@@ -79,7 +82,7 @@
     :goto_0
     mul-int/lit8 v6, v1, 0x2
 
-    .line 29
+    .line 32
     div-int v7, v4, v6
 
     if-ge v7, v2, :cond_5
@@ -90,14 +93,16 @@
 
     goto :goto_1
 
+    .line 33
     :cond_3
     iput v1, v0, Landroid/graphics/BitmapFactory$Options;->inSampleSize:I
 
     const/4 v1, 0x0
 
+    .line 34
     iput-boolean v1, v0, Landroid/graphics/BitmapFactory$Options;->inJustDecodeBounds:Z
 
-    .line 30
+    .line 35
     sget-object v1, Lcom/applovin/impl/sdk/j;->u0:Lcom/applovin/impl/sdk/j;
 
     invoke-virtual {v1}, Lcom/applovin/impl/sdk/j;->I()Lcom/applovin/impl/sdk/n;
@@ -138,7 +143,7 @@
 
     invoke-virtual {v1, v3, v2}, Lcom/applovin/impl/sdk/n;->a(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 31
+    .line 36
     :cond_4
     invoke-virtual {p0}, Landroid/net/Uri;->getPath()Ljava/lang/String;
 
@@ -148,12 +153,12 @@
 
     move-result-object p0
 
-    .line 32
-    new-instance v0, Landroidx/fragment/app/c;
+    .line 37
+    new-instance v0, Landroidx/camera/core/impl/Y;
 
-    const/16 v1, 0xd
+    const/16 v1, 0xb
 
-    invoke-direct {v0, p1, v1, p0}, Landroidx/fragment/app/c;-><init>(Ljava/lang/Object;ILjava/lang/Object;)V
+    invoke-direct {v0, p1, v1, p0}, Landroidx/camera/core/impl/Y;-><init>(Ljava/lang/Object;ILjava/lang/Object;)V
 
     invoke-static {v0}, Lcom/applovin/sdk/AppLovinSdkUtils;->runOnUiThread(Ljava/lang/Runnable;)V
 
@@ -169,7 +174,7 @@
 .method private static synthetic a(Landroid/widget/ImageView;Landroid/graphics/Bitmap;)V
     .locals 0
 
-    .line 33
+    .line 38
     invoke-virtual {p0, p1}, Landroid/widget/ImageView;->setImageBitmap(Landroid/graphics/Bitmap;)V
 
     return-void
@@ -267,11 +272,11 @@
     move-result-object v0
 
     .line 4
-    new-instance v3, Lcom/applovin/impl/sdk/utils/a;
+    new-instance v3, Lcom/applovin/impl/sdk/utils/b;
 
     const/4 v4, 0x0
 
-    invoke-direct {v3, p0, v0, p2, v4}, Lcom/applovin/impl/sdk/utils/a;-><init>(Lcom/applovin/impl/sdk/j;Landroid/graphics/Bitmap;Landroid/widget/ImageView;I)V
+    invoke-direct {v3, p0, v0, p2, v4}, Lcom/applovin/impl/sdk/utils/b;-><init>(Lcom/applovin/impl/sdk/j;Landroid/graphics/Bitmap;Landroid/widget/ImageView;I)V
 
     invoke-static {v3}, Lcom/applovin/sdk/AppLovinSdkUtils;->runOnUiThread(Ljava/lang/Runnable;)V
     :try_end_1
@@ -382,11 +387,11 @@
     move-result-object p1
 
     .line 13
-    new-instance v3, Lcom/applovin/impl/sdk/utils/a;
+    new-instance v3, Lcom/applovin/impl/sdk/utils/b;
 
     const/4 v4, 0x1
 
-    invoke-direct {v3, p0, p1, p2, v4}, Lcom/applovin/impl/sdk/utils/a;-><init>(Lcom/applovin/impl/sdk/j;Landroid/graphics/Bitmap;Landroid/widget/ImageView;I)V
+    invoke-direct {v3, p0, p1, p2, v4}, Lcom/applovin/impl/sdk/utils/b;-><init>(Lcom/applovin/impl/sdk/j;Landroid/graphics/Bitmap;Landroid/widget/ImageView;I)V
 
     invoke-static {v3}, Lcom/applovin/sdk/AppLovinSdkUtils;->runOnUiThread(Ljava/lang/Runnable;)V
     :try_end_5
@@ -452,11 +457,11 @@
     throw p1
 .end method
 
-.method public static synthetic b(Landroid/net/Uri;Landroid/widget/ImageView;)V
+.method public static synthetic b(Landroid/widget/ImageView;Landroid/graphics/Bitmap;)V
     .locals 0
 
     .line 1
-    invoke-static {p0, p1}, Lcom/applovin/impl/sdk/utils/ImageViewUtils;->a(Landroid/net/Uri;Landroid/widget/ImageView;)V
+    invoke-static {p0, p1}, Lcom/applovin/impl/sdk/utils/ImageViewUtils;->a(Landroid/widget/ImageView;Landroid/graphics/Bitmap;)V
 
     return-void
 .end method
@@ -520,25 +525,7 @@
     return-void
 .end method
 
-.method public static synthetic c(Landroid/widget/ImageView;Landroid/graphics/Bitmap;)V
-    .locals 0
-
-    .line 1
-    invoke-static {p0, p1}, Lcom/applovin/impl/sdk/utils/ImageViewUtils;->a(Landroid/widget/ImageView;Landroid/graphics/Bitmap;)V
-
-    return-void
-.end method
-
-.method public static synthetic d(Lcom/applovin/impl/sdk/j;Landroid/graphics/Bitmap;Landroid/widget/ImageView;)V
-    .locals 0
-
-    .line 1
-    invoke-static {p0, p1, p2}, Lcom/applovin/impl/sdk/utils/ImageViewUtils;->a(Lcom/applovin/impl/sdk/j;Landroid/graphics/Bitmap;Landroid/widget/ImageView;)V
-
-    return-void
-.end method
-
-.method public static synthetic e(Landroid/net/Uri;Landroid/widget/ImageView;)V
+.method public static synthetic c(Landroid/net/Uri;Landroid/widget/ImageView;)V
     .locals 0
 
     .line 1
@@ -547,7 +534,16 @@
     return-void
 .end method
 
-.method public static synthetic f(Landroid/net/Uri;Landroid/widget/ImageView;)V
+.method public static synthetic d(Lcom/applovin/impl/sdk/j;Ljava/lang/String;Landroid/widget/ImageView;Landroid/net/Uri;)V
+    .locals 0
+
+    .line 1
+    invoke-static {p0, p1, p2, p3}, Lcom/applovin/impl/sdk/utils/ImageViewUtils;->a(Lcom/applovin/impl/sdk/j;Ljava/lang/String;Landroid/widget/ImageView;Landroid/net/Uri;)V
+
+    return-void
+.end method
+
+.method public static synthetic e(Landroid/net/Uri;Landroid/widget/ImageView;)V
     .locals 0
 
     .line 1
@@ -556,7 +552,7 @@
     return-void
 .end method
 
-.method public static synthetic g(Lcom/applovin/impl/sdk/j;Landroid/graphics/Bitmap;Landroid/widget/ImageView;)V
+.method public static synthetic f(Lcom/applovin/impl/sdk/j;Landroid/graphics/Bitmap;Landroid/widget/ImageView;)V
     .locals 0
 
     .line 1
@@ -565,11 +561,20 @@
     return-void
 .end method
 
-.method public static synthetic h(Lcom/applovin/impl/sdk/j;Ljava/lang/String;Landroid/widget/ImageView;Landroid/net/Uri;)V
+.method public static synthetic g(Landroid/net/Uri;Landroid/widget/ImageView;)V
     .locals 0
 
     .line 1
-    invoke-static {p0, p1, p2, p3}, Lcom/applovin/impl/sdk/utils/ImageViewUtils;->a(Lcom/applovin/impl/sdk/j;Ljava/lang/String;Landroid/widget/ImageView;Landroid/net/Uri;)V
+    invoke-static {p0, p1}, Lcom/applovin/impl/sdk/utils/ImageViewUtils;->a(Landroid/net/Uri;Landroid/widget/ImageView;)V
+
+    return-void
+.end method
+
+.method public static synthetic h(Lcom/applovin/impl/sdk/j;Landroid/graphics/Bitmap;Landroid/widget/ImageView;)V
+    .locals 0
+
+    .line 1
+    invoke-static {p0, p1, p2}, Lcom/applovin/impl/sdk/utils/ImageViewUtils;->a(Lcom/applovin/impl/sdk/j;Landroid/graphics/Bitmap;Landroid/widget/ImageView;)V
 
     return-void
 .end method
@@ -631,11 +636,11 @@
     move-result-object v0
 
     .line 26
-    new-instance v1, Lcom/applovin/impl/sdk/utils/b;
+    new-instance v1, Lcom/applovin/impl/sdk/utils/a;
 
     .line 27
     .line 28
-    invoke-direct {v1, p1, p0}, Lcom/applovin/impl/sdk/utils/b;-><init>(Landroid/net/Uri;Landroid/widget/ImageView;)V
+    invoke-direct {v1, p1, p0}, Lcom/applovin/impl/sdk/utils/a;-><init>(Landroid/net/Uri;Landroid/widget/ImageView;)V
 
     .line 29
     .line 30
@@ -699,14 +704,14 @@
 
     .line 22
     :cond_1
-    new-instance v0, Lcom/applovin/impl/sdk/utils/b;
+    new-instance v0, Lcom/applovin/impl/sdk/utils/a;
 
     .line 23
     .line 24
     const/4 v1, 0x1
 
     .line 25
-    invoke-direct {v0, p0, p1, v1}, Lcom/applovin/impl/sdk/utils/b;-><init>(Landroid/widget/ImageView;Landroid/net/Uri;I)V
+    invoke-direct {v0, p0, p1, v1}, Lcom/applovin/impl/sdk/utils/a;-><init>(Landroid/widget/ImageView;Landroid/net/Uri;I)V
 
     .line 26
     .line 27
@@ -858,11 +863,11 @@
     move-result-object v6
 
     .line 66
-    new-instance v7, Landroidx/camera/camera2/internal/compat/c;
+    new-instance v7, LB/N;
 
     .line 67
     .line 68
-    const/16 v5, 0xd
+    const/16 v5, 0x10
 
     .line 69
     .line 70
@@ -878,7 +883,7 @@
     move-object v4, p1
 
     .line 74
-    invoke-direct/range {v0 .. v5}, Landroidx/camera/camera2/internal/compat/c;-><init>(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;I)V
+    invoke-direct/range {v0 .. v5}, LB/N;-><init>(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;I)V
 
     .line 75
     .line 76
@@ -893,14 +898,14 @@
     .line 81
     :cond_4
     :goto_0
-    new-instance p2, Lcom/applovin/impl/sdk/utils/b;
+    new-instance p2, Lcom/applovin/impl/sdk/utils/a;
 
     .line 82
     .line 83
     const/4 v0, 0x2
 
     .line 84
-    invoke-direct {p2, p0, p1, v0}, Lcom/applovin/impl/sdk/utils/b;-><init>(Landroid/widget/ImageView;Landroid/net/Uri;I)V
+    invoke-direct {p2, p0, p1, v0}, Lcom/applovin/impl/sdk/utils/a;-><init>(Landroid/widget/ImageView;Landroid/net/Uri;I)V
 
     .line 85
     .line 86

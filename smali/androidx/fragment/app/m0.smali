@@ -2,15 +2,16 @@
 .super Ljava/lang/Object;
 .source "SourceFile"
 
+# interfaces
+.implements Landroid/transition/Transition$TransitionListener;
+
 
 # instance fields
-.field public final a:Landroidx/fragment/app/s0;
-
-.field public final b:Z
+.field public final synthetic a:Landroidx/fragment/app/s0;
 
 
 # direct methods
-.method public constructor <init>(Landroidx/fragment/app/s0;Z)V
+.method public constructor <init>(Landroidx/fragment/app/s0;)V
     .locals 0
 
     .line 1
@@ -23,9 +24,47 @@
 
     .line 5
     .line 6
-    iput-boolean p2, p0, Landroidx/fragment/app/m0;->b:Z
+    return-void
+.end method
 
-    .line 7
-    .line 8
+
+# virtual methods
+.method public final onTransitionCancel(Landroid/transition/Transition;)V
+    .locals 0
+
+    return-void
+.end method
+
+.method public final onTransitionEnd(Landroid/transition/Transition;)V
+    .locals 0
+
+    .line 1
+    iget-object p1, p0, Landroidx/fragment/app/m0;->a:Landroidx/fragment/app/s0;
+
+    .line 2
+    .line 3
+    invoke-virtual {p1}, Landroidx/fragment/app/s0;->run()V
+
+    .line 4
+    .line 5
+    .line 6
+    return-void
+.end method
+
+.method public final onTransitionPause(Landroid/transition/Transition;)V
+    .locals 0
+
+    return-void
+.end method
+
+.method public final onTransitionResume(Landroid/transition/Transition;)V
+    .locals 0
+
+    return-void
+.end method
+
+.method public final onTransitionStart(Landroid/transition/Transition;)V
+    .locals 0
+
     return-void
 .end method

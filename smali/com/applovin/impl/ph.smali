@@ -42,14 +42,14 @@
 
     .line 9
     .line 10
-    new-instance v0, Lcom/applovin/impl/vu;
+    new-instance v0, Lcom/applovin/impl/M1;
 
     .line 11
     .line 12
-    const/4 v1, 0x4
+    const/4 v1, 0x5
 
     .line 13
-    invoke-direct {v0, v1}, Lcom/applovin/impl/vu;-><init>(I)V
+    invoke-direct {v0, v1}, Lcom/applovin/impl/M1;-><init>(I)V
 
     .line 14
     .line 15
@@ -78,9 +78,9 @@
     .line 2
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    const/4 v0, 0x1
+    const/4 v0, 0x0
 
-    const/4 v1, 0x0
+    const/4 v1, 0x1
 
     const/4 v2, 0x0
 
@@ -103,24 +103,23 @@
 
     if-lez v2, :cond_1
 
-    goto :goto_1
-
-    :cond_1
-    const/4 v0, 0x0
+    const/4 v0, 0x1
 
     .line 4
-    :goto_1
+    :cond_1
     invoke-static {v0}, Lcom/applovin/impl/b1;->a(Z)V
 
+    .line 5
     iput p1, p0, Lcom/applovin/impl/ph;->a:F
 
+    .line 6
     iput p2, p0, Lcom/applovin/impl/ph;->b:F
 
     const/high16 p2, 0x447a0000    # 1000.0f
 
     mul-float p1, p1, p2
 
-    .line 5
+    .line 7
     invoke-static {p1}, Ljava/lang/Math;->round(F)I
 
     move-result p1

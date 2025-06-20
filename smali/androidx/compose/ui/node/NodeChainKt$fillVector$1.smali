@@ -3,14 +3,14 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lzh/c;
+.implements Lka/c;
 
 
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "Lkotlin/jvm/internal/Lambda;",
-        "Lzh/c;"
+        "Lka/c;"
     }
 .end annotation
 
@@ -36,27 +36,27 @@
 
 
 # instance fields
-.field final synthetic $result:Landroidx/compose/runtime/collection/e;
+.field final synthetic $result:Landroidx/compose/runtime/collection/d;
     .annotation system Ldalvik/annotation/Signature;
         value = {
-            "Landroidx/compose/runtime/collection/e;"
+            "Landroidx/compose/runtime/collection/d;"
         }
     .end annotation
 .end field
 
 
 # direct methods
-.method public constructor <init>(Landroidx/compose/runtime/collection/e;)V
+.method public constructor <init>(Landroidx/compose/runtime/collection/d;)V
     .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
-            "Landroidx/compose/runtime/collection/e;",
+            "Landroidx/compose/runtime/collection/d;",
             ")V"
         }
     .end annotation
 
-    iput-object p1, p0, Landroidx/compose/ui/node/NodeChainKt$fillVector$1;->$result:Landroidx/compose/runtime/collection/e;
+    iput-object p1, p0, Landroidx/compose/ui/node/NodeChainKt$fillVector$1;->$result:Landroidx/compose/runtime/collection/d;
 
     const/4 p1, 0x1
 
@@ -70,11 +70,12 @@
 .method public final invoke(Landroidx/compose/ui/m;)Ljava/lang/Boolean;
     .locals 1
 
-    iget-object v0, p0, Landroidx/compose/ui/node/NodeChainKt$fillVector$1;->$result:Landroidx/compose/runtime/collection/e;
-
     .line 1
-    invoke-virtual {v0, p1}, Landroidx/compose/runtime/collection/e;->b(Ljava/lang/Object;)V
+    iget-object v0, p0, Landroidx/compose/ui/node/NodeChainKt$fillVector$1;->$result:Landroidx/compose/runtime/collection/d;
 
+    invoke-virtual {v0, p1}, Landroidx/compose/runtime/collection/d;->b(Ljava/lang/Object;)V
+
+    .line 2
     sget-object p1, Ljava/lang/Boolean;->TRUE:Ljava/lang/Boolean;
 
     return-object p1
@@ -83,7 +84,7 @@
 .method public bridge synthetic invoke(Ljava/lang/Object;)Ljava/lang/Object;
     .locals 0
 
-    .line 2
+    .line 3
     check-cast p1, Landroidx/compose/ui/m;
 
     invoke-virtual {p0, p1}, Landroidx/compose/ui/node/NodeChainKt$fillVector$1;->invoke(Landroidx/compose/ui/m;)Ljava/lang/Boolean;

@@ -10,11 +10,11 @@
 
 .field public final c:I
 
-.field public final d:Landroidx/compose/ui/text/f0;
+.field public final d:Landroidx/compose/ui/text/F;
 
 
 # direct methods
-.method public constructor <init>(IIILandroidx/compose/ui/text/f0;)V
+.method public constructor <init>(IIILandroidx/compose/ui/text/F;)V
     .locals 0
 
     .line 1
@@ -35,7 +35,7 @@
 
     .line 9
     .line 10
-    iput-object p4, p0, Landroidx/compose/foundation/text/selection/g;->d:Landroidx/compose/ui/text/f0;
+    iput-object p4, p0, Landroidx/compose/foundation/text/selection/g;->d:Landroidx/compose/ui/text/F;
 
     .line 11
     .line 12
@@ -52,11 +52,11 @@
 
     .line 2
     .line 3
-    iget-object v1, p0, Landroidx/compose/foundation/text/selection/g;->d:Landroidx/compose/ui/text/f0;
+    iget-object v1, p0, Landroidx/compose/foundation/text/selection/g;->d:Landroidx/compose/ui/text/F;
 
     .line 4
     .line 5
-    invoke-static {v1, p1}, Landroidx/compose/foundation/text/selection/a;->o(Landroidx/compose/ui/text/f0;I)Landroidx/compose/ui/text/style/ResolvedTextDirection;
+    invoke-static {v1, p1}, Landroidx/compose/foundation/text/selection/a;->p(Landroidx/compose/ui/text/F;I)Landroidx/compose/ui/text/style/ResolvedTextDirection;
 
     .line 6
     .line 7
@@ -111,11 +111,11 @@
     .line 16
     .line 17
     .line 18
-    iget-object v3, p0, Landroidx/compose/foundation/text/selection/g;->d:Landroidx/compose/ui/text/f0;
+    iget-object v3, p0, Landroidx/compose/foundation/text/selection/g;->d:Landroidx/compose/ui/text/F;
 
     .line 19
     .line 20
-    invoke-static {v3, v1}, Landroidx/compose/foundation/text/selection/a;->o(Landroidx/compose/ui/text/f0;I)Landroidx/compose/ui/text/style/ResolvedTextDirection;
+    invoke-static {v3, v1}, Landroidx/compose/foundation/text/selection/a;->p(Landroidx/compose/ui/text/F;I)Landroidx/compose/ui/text/style/ResolvedTextDirection;
 
     .line 21
     .line 22
@@ -151,7 +151,7 @@
     .line 38
     .line 39
     .line 40
-    invoke-static {v3, v1}, Landroidx/compose/foundation/text/selection/a;->o(Landroidx/compose/ui/text/f0;I)Landroidx/compose/ui/text/style/ResolvedTextDirection;
+    invoke-static {v3, v1}, Landroidx/compose/foundation/text/selection/a;->p(Landroidx/compose/ui/text/F;I)Landroidx/compose/ui/text/style/ResolvedTextDirection;
 
     .line 41
     .line 42
@@ -181,7 +181,7 @@
 
     .line 55
     .line 56
-    invoke-static {v0, v1, v2}, Landroid/support/v4/media/session/a;->F(Ljava/lang/StringBuilder;IC)Ljava/lang/String;
+    invoke-static {v0, v1, v2}, LB/u;->v(Ljava/lang/StringBuilder;IC)Ljava/lang/String;
 
     .line 57
     .line 58

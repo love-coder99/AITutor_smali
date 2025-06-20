@@ -4,9 +4,9 @@
 
 
 # instance fields
-.field public a:Landroidx/paging/j2;
+.field public a:Landroidx/paging/L0;
 
-.field public final b:Lkotlinx/coroutines/flow/m0;
+.field public final b:Lkotlinx/coroutines/flow/K;
 
 
 # direct methods
@@ -32,7 +32,7 @@
     const/4 v3, 0x2
 
     .line 9
-    invoke-static {v1, v2, v0, v3}, Lkotlinx/coroutines/flow/j;->b(IILkotlinx/coroutines/channels/BufferOverflow;I)Lkotlinx/coroutines/flow/m0;
+    invoke-static {v1, v2, v0, v3}, Lkotlinx/coroutines/flow/h;->b(IILkotlinx/coroutines/channels/BufferOverflow;I)Lkotlinx/coroutines/flow/K;
 
     .line 10
     .line 11
@@ -40,7 +40,7 @@
     move-result-object v0
 
     .line 13
-    iput-object v0, p0, Landroidx/paging/r;->b:Lkotlinx/coroutines/flow/m0;
+    iput-object v0, p0, Landroidx/paging/r;->b:Lkotlinx/coroutines/flow/K;
 
     .line 14
     .line 15

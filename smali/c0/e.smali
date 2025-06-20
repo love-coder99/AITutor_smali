@@ -1,126 +1,86 @@
-.class public final synthetic Lc0/e;
+.class public abstract LC0/e;
 .super Ljava/lang/Object;
 .source "SourceFile"
 
-# interfaces
-.implements Ljava/util/concurrent/Callable;
-
-
-# instance fields
-.field public final synthetic a:Landroidx/concurrent/futures/h;
-
-.field public final synthetic b:Lcom/google/common/util/concurrent/c;
-
-.field public final synthetic c:J
-
 
 # direct methods
-.method public synthetic constructor <init>(Landroidx/concurrent/futures/h;Lcom/google/common/util/concurrent/c;J)V
+.method public static a(Landroid/view/contentcapture/ContentCaptureSession;Landroid/view/autofill/AutofillId;J)Landroid/view/autofill/AutofillId;
     .locals 0
 
     .line 1
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
-
-    iput-object p1, p0, Lc0/e;->a:Landroidx/concurrent/futures/h;
-
-    iput-object p2, p0, Lc0/e;->b:Lcom/google/common/util/concurrent/c;
-
-    iput-wide p3, p0, Lc0/e;->c:J
-
-    return-void
-.end method
-
-
-# virtual methods
-.method public final call()Ljava/lang/Object;
-    .locals 4
-
-    .line 1
-    new-instance v0, Ljava/util/concurrent/TimeoutException;
+    invoke-virtual {p0, p1, p2, p3}, Landroid/view/contentcapture/ContentCaptureSession;->newAutofillId(Landroid/view/autofill/AutofillId;J)Landroid/view/autofill/AutofillId;
 
     .line 2
     .line 3
-    new-instance v1, Ljava/lang/StringBuilder;
-
     .line 4
+    move-result-object p0
+
     .line 5
-    const-string v2, "Future["
+    return-object p0
+.end method
 
-    .line 6
-    .line 7
-    invoke-direct {v1, v2}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+.method public static b(Landroid/view/contentcapture/ContentCaptureSession;Landroid/view/View;)Landroid/view/ViewStructure;
+    .locals 0
 
-    .line 8
-    .line 9
-    .line 10
-    iget-object v2, p0, Lc0/e;->b:Lcom/google/common/util/concurrent/c;
+    .line 1
+    invoke-virtual {p0, p1}, Landroid/view/contentcapture/ContentCaptureSession;->newViewStructure(Landroid/view/View;)Landroid/view/ViewStructure;
 
-    .line 11
-    .line 12
-    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+    .line 2
+    .line 3
+    .line 4
+    move-result-object p0
 
-    .line 13
-    .line 14
-    .line 15
-    const-string v2, "] is not done within "
+    .line 5
+    return-object p0
+.end method
 
-    .line 16
-    .line 17
-    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+.method public static c(Landroid/view/contentcapture/ContentCaptureSession;Landroid/view/autofill/AutofillId;J)Landroid/view/ViewStructure;
+    .locals 0
 
-    .line 18
-    .line 19
-    .line 20
-    iget-wide v2, p0, Lc0/e;->c:J
+    .line 1
+    invoke-virtual {p0, p1, p2, p3}, Landroid/view/contentcapture/ContentCaptureSession;->newVirtualViewStructure(Landroid/view/autofill/AutofillId;J)Landroid/view/ViewStructure;
 
-    .line 21
-    .line 22
-    invoke-virtual {v1, v2, v3}, Ljava/lang/StringBuilder;->append(J)Ljava/lang/StringBuilder;
+    .line 2
+    .line 3
+    .line 4
+    move-result-object p0
 
-    .line 23
-    .line 24
-    .line 25
-    const-string v2, " ms."
+    .line 5
+    return-object p0
+.end method
 
-    .line 26
-    .line 27
-    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+.method public static d(Landroid/view/contentcapture/ContentCaptureSession;Landroid/view/ViewStructure;)V
+    .locals 0
 
-    .line 28
-    .line 29
-    .line 30
-    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    .line 1
+    invoke-virtual {p0, p1}, Landroid/view/contentcapture/ContentCaptureSession;->notifyViewAppeared(Landroid/view/ViewStructure;)V
 
-    .line 31
-    .line 32
-    .line 33
-    move-result-object v1
+    .line 2
+    .line 3
+    .line 4
+    return-void
+.end method
 
-    .line 34
-    invoke-direct {v0, v1}, Ljava/util/concurrent/TimeoutException;-><init>(Ljava/lang/String;)V
+.method public static e(Landroid/view/contentcapture/ContentCaptureSession;Landroid/view/autofill/AutofillId;Ljava/lang/CharSequence;)V
+    .locals 0
 
-    .line 35
-    .line 36
-    .line 37
-    iget-object v1, p0, Lc0/e;->a:Landroidx/concurrent/futures/h;
+    .line 1
+    invoke-virtual {p0, p1, p2}, Landroid/view/contentcapture/ContentCaptureSession;->notifyViewTextChanged(Landroid/view/autofill/AutofillId;Ljava/lang/CharSequence;)V
 
-    .line 38
-    .line 39
-    invoke-virtual {v1, v0}, Landroidx/concurrent/futures/h;->d(Ljava/lang/Throwable;)Z
+    .line 2
+    .line 3
+    .line 4
+    return-void
+.end method
 
-    .line 40
-    .line 41
-    .line 42
-    move-result v0
+.method public static f(Landroid/view/contentcapture/ContentCaptureSession;Landroid/view/autofill/AutofillId;[J)V
+    .locals 0
 
-    .line 43
-    invoke-static {v0}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
+    .line 1
+    invoke-virtual {p0, p1, p2}, Landroid/view/contentcapture/ContentCaptureSession;->notifyViewsDisappeared(Landroid/view/autofill/AutofillId;[J)V
 
-    .line 44
-    .line 45
-    .line 46
-    move-result-object v0
-
-    .line 47
-    return-object v0
+    .line 2
+    .line 3
+    .line 4
+    return-void
 .end method

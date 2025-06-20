@@ -4,6 +4,16 @@
 
 
 # annotations
+.annotation runtime Lca/c;
+    c = "androidx.compose.ui.text.font.AsyncFontListLoader"
+    f = "FontListFontFamilyTypefaceAdapter.kt"
+    l = {
+        0x110,
+        0x11d
+    }
+    m = "load"
+.end annotation
+
 .annotation runtime Lkotlin/Metadata;
     k = 0x3
     mv = {
@@ -12,16 +22,6 @@
         0x0
     }
     xi = 0x30
-.end annotation
-
-.annotation runtime Lth/c;
-    c = "androidx.compose.ui.text.font.AsyncFontListLoader"
-    f = "FontListFontFamilyTypefaceAdapter.kt"
-    l = {
-        0x110,
-        0x11d
-    }
-    m = "load"
 .end annotation
 
 
@@ -40,16 +40,16 @@
 
 .field synthetic result:Ljava/lang/Object;
 
-.field final synthetic this$0:Landroidx/compose/ui/text/font/d;
+.field final synthetic this$0:Landroidx/compose/ui/text/font/c;
 
 
 # direct methods
-.method public constructor <init>(Landroidx/compose/ui/text/font/d;Lkotlin/coroutines/Continuation;)V
+.method public constructor <init>(Landroidx/compose/ui/text/font/c;Lkotlin/coroutines/Continuation;)V
     .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
-            "Landroidx/compose/ui/text/font/d;",
+            "Landroidx/compose/ui/text/font/c;",
             "Lkotlin/coroutines/Continuation<",
             "-",
             "Landroidx/compose/ui/text/font/AsyncFontListLoader$load$1;",
@@ -57,7 +57,7 @@
         }
     .end annotation
 
-    iput-object p1, p0, Landroidx/compose/ui/text/font/AsyncFontListLoader$load$1;->this$0:Landroidx/compose/ui/text/font/d;
+    iput-object p1, p0, Landroidx/compose/ui/text/font/AsyncFontListLoader$load$1;->this$0:Landroidx/compose/ui/text/font/c;
 
     invoke-direct {p0, p2}, Lkotlin/coroutines/jvm/internal/ContinuationImpl;-><init>(Lkotlin/coroutines/Continuation;)V
 
@@ -79,9 +79,9 @@
 
     iput p1, p0, Landroidx/compose/ui/text/font/AsyncFontListLoader$load$1;->label:I
 
-    iget-object p1, p0, Landroidx/compose/ui/text/font/AsyncFontListLoader$load$1;->this$0:Landroidx/compose/ui/text/font/d;
+    iget-object p1, p0, Landroidx/compose/ui/text/font/AsyncFontListLoader$load$1;->this$0:Landroidx/compose/ui/text/font/c;
 
-    invoke-virtual {p1, p0}, Landroidx/compose/ui/text/font/d;->a(Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
+    invoke-virtual {p1, p0}, Landroidx/compose/ui/text/font/c;->a(Lkotlin/coroutines/jvm/internal/ContinuationImpl;)Ljava/lang/Object;
 
     move-result-object p1
 

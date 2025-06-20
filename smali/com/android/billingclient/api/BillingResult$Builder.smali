@@ -51,6 +51,8 @@
 # virtual methods
 .method public build()Lcom/android/billingclient/api/BillingResult;
     .locals 2
+    .annotation build Landroidx/annotation/NonNull;
+    .end annotation
 
     .line 1
     new-instance v0, Lcom/android/billingclient/api/BillingResult;
@@ -85,6 +87,12 @@
 
 .method public setDebugMessage(Ljava/lang/String;)Lcom/android/billingclient/api/BillingResult$Builder;
     .locals 0
+    .param p1    # Ljava/lang/String;
+        .annotation build Landroidx/annotation/NonNull;
+        .end annotation
+    .end param
+    .annotation build Landroidx/annotation/NonNull;
+    .end annotation
 
     iput-object p1, p0, Lcom/android/billingclient/api/BillingResult$Builder;->zzb:Ljava/lang/String;
 
@@ -93,6 +101,8 @@
 
 .method public setResponseCode(I)Lcom/android/billingclient/api/BillingResult$Builder;
     .locals 0
+    .annotation build Landroidx/annotation/NonNull;
+    .end annotation
 
     iput p1, p0, Lcom/android/billingclient/api/BillingResult$Builder;->zza:I
 

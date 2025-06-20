@@ -1,171 +1,209 @@
-.class public final Landroidx/activity/b;
+.class public final Landroidx/activity/B;
 .super Ljava/lang/Object;
 .source "SourceFile"
 
+# interfaces
+.implements Landroidx/lifecycle/v;
+
+
+# static fields
+.field public static final c:LX9/d;
+
 
 # instance fields
-.field public final a:F
-
-.field public final b:F
-
-.field public final c:F
-
-.field public final d:I
+.field public final b:Landroidx/activity/o;
 
 
 # direct methods
-.method public constructor <init>(Landroid/window/BackEvent;)V
-    .locals 4
+.method static constructor <clinit>()V
+    .locals 1
 
     .line 1
-    sget-object v0, Landroidx/activity/a;->a:Landroidx/activity/a;
+    sget-object v0, Landroidx/activity/ImmLeaksCleaner$Companion$cleaner$2;->INSTANCE:Landroidx/activity/ImmLeaksCleaner$Companion$cleaner$2;
 
     .line 2
     .line 3
-    invoke-virtual {v0, p1}, Landroidx/activity/a;->d(Landroid/window/BackEvent;)F
+    invoke-static {v0}, Lkotlin/a;->a(Lka/a;)LX9/d;
 
     .line 4
     .line 5
     .line 6
-    move-result v1
+    move-result-object v0
 
     .line 7
-    invoke-virtual {v0, p1}, Landroidx/activity/a;->e(Landroid/window/BackEvent;)F
+    sput-object v0, Landroidx/activity/B;->c:LX9/d;
 
     .line 8
     .line 9
-    .line 10
-    move-result v2
+    return-void
+.end method
 
-    .line 11
-    invoke-virtual {v0, p1}, Landroidx/activity/a;->b(Landroid/window/BackEvent;)F
+.method public constructor <init>(Landroidx/activity/o;)V
+    .locals 0
 
-    .line 12
-    .line 13
-    .line 14
-    move-result v3
-
-    .line 15
-    invoke-virtual {v0, p1}, Landroidx/activity/a;->c(Landroid/window/BackEvent;)I
-
-    .line 16
-    .line 17
-    .line 18
-    move-result p1
-
-    .line 19
+    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 20
-    .line 21
-    .line 22
-    iput v1, p0, Landroidx/activity/b;->a:F
+    .line 2
+    .line 3
+    .line 4
+    iput-object p1, p0, Landroidx/activity/B;->b:Landroidx/activity/o;
 
-    .line 23
-    .line 24
-    iput v2, p0, Landroidx/activity/b;->b:F
-
-    .line 25
-    .line 26
-    iput v3, p0, Landroidx/activity/b;->c:F
-
-    .line 27
-    .line 28
-    iput p1, p0, Landroidx/activity/b;->d:I
-
-    .line 29
-    .line 30
+    .line 5
+    .line 6
     return-void
 .end method
 
 
 # virtual methods
-.method public final toString()Ljava/lang/String;
-    .locals 3
+.method public final b(Landroidx/lifecycle/x;Landroidx/lifecycle/Lifecycle$Event;)V
+    .locals 2
 
     .line 1
-    new-instance v0, Ljava/lang/StringBuilder;
+    sget-object p1, Landroidx/lifecycle/Lifecycle$Event;->ON_DESTROY:Landroidx/lifecycle/Lifecycle$Event;
 
     .line 2
     .line 3
-    const-string v1, "BackEventCompat{touchX="
+    if-eq p2, p1, :cond_0
 
     .line 4
     .line 5
-    invoke-direct {v0, v1}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+    return-void
 
     .line 6
+    :cond_0
+    iget-object p1, p0, Landroidx/activity/B;->b:Landroidx/activity/o;
+
     .line 7
     .line 8
-    iget v1, p0, Landroidx/activity/b;->a:F
+    const-string p2, "input_method"
 
     .line 9
     .line 10
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(F)Ljava/lang/StringBuilder;
+    invoke-virtual {p1, p2}, Landroid/app/Activity;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
 
     .line 11
     .line 12
     .line 13
-    const-string v1, ", touchY="
+    move-result-object p1
 
     .line 14
-    .line 15
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    check-cast p1, Landroid/view/inputmethod/InputMethodManager;
 
+    .line 15
     .line 16
+    sget-object p2, Landroidx/activity/B;->c:LX9/d;
+
     .line 17
     .line 18
-    iget v1, p0, Landroidx/activity/b;->b:F
+    invoke-interface {p2}, LX9/d;->getValue()Ljava/lang/Object;
 
     .line 19
     .line 20
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(F)Ljava/lang/StringBuilder;
-
     .line 21
+    move-result-object p2
+
     .line 22
+    check-cast p2, Landroidx/activity/y;
+
     .line 23
-    const-string v1, ", progress="
-
     .line 24
-    .line 25
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {p2, p1}, Landroidx/activity/y;->b(Landroid/view/inputmethod/InputMethodManager;)Ljava/lang/Object;
 
+    .line 25
     .line 26
     .line 27
+    move-result-object v0
+
     .line 28
-    iget v1, p0, Landroidx/activity/b;->c:F
+    if-nez v0, :cond_1
 
     .line 29
     .line 30
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(F)Ljava/lang/StringBuilder;
+    return-void
 
     .line 31
-    .line 32
-    .line 33
-    const-string v1, ", swipeEdge="
+    :cond_1
+    monitor-enter v0
 
+    .line 32
+    :try_start_0
+    invoke-virtual {p2, p1}, Landroidx/activity/y;->c(Landroid/view/inputmethod/InputMethodManager;)Landroid/view/View;
+
+    .line 33
     .line 34
     .line 35
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    move-result-object v1
+    :try_end_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
     .line 36
+    if-nez v1, :cond_2
+
     .line 37
     .line 38
-    iget v1, p0, Landroidx/activity/b;->d:I
+    monitor-exit v0
 
     .line 39
+    return-void
+
     .line 40
-    const/16 v2, 0x7d
+    :cond_2
+    :try_start_1
+    invoke-virtual {v1}, Landroid/view/View;->isAttachedToWindow()Z
 
     .line 41
     .line 42
-    invoke-static {v0, v1, v2}, Landroid/support/v4/media/session/a;->F(Ljava/lang/StringBuilder;IC)Ljava/lang/String;
-
     .line 43
-    .line 44
-    .line 45
-    move-result-object v0
+    move-result v1
+    :try_end_1
+    .catchall {:try_start_1 .. :try_end_1} :catchall_0
 
+    .line 44
+    if-eqz v1, :cond_3
+
+    .line 45
     .line 46
-    return-object v0
+    monitor-exit v0
+
+    .line 47
+    return-void
+
+    .line 48
+    :cond_3
+    :try_start_2
+    invoke-virtual {p2, p1}, Landroidx/activity/y;->a(Landroid/view/inputmethod/InputMethodManager;)Z
+
+    .line 49
+    .line 50
+    .line 51
+    move-result p2
+    :try_end_2
+    .catchall {:try_start_2 .. :try_end_2} :catchall_0
+
+    .line 52
+    monitor-exit v0
+
+    .line 53
+    if-eqz p2, :cond_4
+
+    .line 54
+    .line 55
+    invoke-virtual {p1}, Landroid/view/inputmethod/InputMethodManager;->isActive()Z
+
+    .line 56
+    .line 57
+    .line 58
+    :cond_4
+    return-void
+
+    .line 59
+    :catchall_0
+    move-exception p1
+
+    .line 60
+    monitor-exit v0
+
+    .line 61
+    throw p1
 .end method

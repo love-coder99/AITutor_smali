@@ -116,11 +116,11 @@
 
     .line 44
     .line 45
-    new-instance v0, Lcom/applovin/impl/eu;
+    new-instance v0, Lcom/applovin/impl/X0;
 
     .line 46
     .line 47
-    invoke-direct {v0, p0}, Lcom/applovin/impl/eu;-><init>(Lcom/applovin/impl/hl;)V
+    invoke-direct {v0, p0}, Lcom/applovin/impl/X0;-><init>(Lcom/applovin/impl/hl;)V
 
     .line 48
     .line 49
@@ -146,15 +146,6 @@
     .line 58
     .line 59
     :goto_0
-    return-void
-.end method
-
-.method public static synthetic a(Lcom/applovin/impl/hl;)V
-    .locals 0
-
-    .line 1
-    invoke-direct {p0}, Lcom/applovin/impl/hl;->c()V
-
     return-void
 .end method
 
@@ -187,6 +178,26 @@
     return p1
 .end method
 
+.method public static synthetic a(Lcom/applovin/impl/hl;)Z
+    .locals 0
+
+    .line 1
+    invoke-direct {p0}, Lcom/applovin/impl/hl;->b()Z
+
+    move-result p0
+
+    return p0
+.end method
+
+.method public static synthetic b(Lcom/applovin/impl/hl;)V
+    .locals 0
+
+    .line 1
+    invoke-direct {p0}, Lcom/applovin/impl/hl;->c()V
+
+    return-void
+.end method
+
 .method private synthetic b()Z
     .locals 1
 
@@ -196,17 +207,6 @@
     const/4 v0, 0x1
 
     return v0
-.end method
-
-.method public static synthetic b(Lcom/applovin/impl/hl;)Z
-    .locals 0
-
-    .line 1
-    invoke-direct {p0}, Lcom/applovin/impl/hl;->b()Z
-
-    move-result p0
-
-    return p0
 .end method
 
 .method private synthetic c()V
@@ -470,7 +470,7 @@
 
     .line 10
     .line 11
-    new-instance v1, Lcom/applovin/impl/wt;
+    new-instance v1, Lcom/applovin/impl/P0;
 
     .line 12
     .line 13
@@ -478,7 +478,7 @@
 
     .line 14
     .line 15
-    invoke-direct {v1, p0, v2}, Lcom/applovin/impl/wt;-><init>(Ljava/lang/Object;I)V
+    invoke-direct {v1, p0, v2}, Lcom/applovin/impl/P0;-><init>(Ljava/lang/Object;I)V
 
     .line 16
     .line 17
@@ -502,11 +502,12 @@
 
     const/4 v0, 0x0
 
+    .line 2
     iput-object v0, p0, Lcom/applovin/impl/hl;->g:Lcom/applovin/impl/hl$a;
 
+    .line 3
     iget-object v0, p0, Lcom/applovin/impl/hl;->e:Ljava/lang/ref/WeakReference;
 
-    .line 3
     invoke-virtual {v0}, Ljava/lang/ref/Reference;->get()Ljava/lang/Object;
 
     move-result-object v0
@@ -534,10 +535,10 @@
     .line 6
     invoke-virtual {v0, v1}, Landroid/view/ViewTreeObserver;->removeOnPreDrawListener(Landroid/view/ViewTreeObserver$OnPreDrawListener;)V
 
+    .line 7
     :cond_0
     iget-object v0, p0, Lcom/applovin/impl/hl;->e:Ljava/lang/ref/WeakReference;
 
-    .line 7
     invoke-virtual {v0}, Ljava/lang/ref/Reference;->clear()V
 
     :cond_1
@@ -547,25 +548,25 @@
 .method public a(Landroid/view/View;I)V
     .locals 2
 
+    .line 10
     iget-object v0, p0, Lcom/applovin/impl/hl;->b:Ljava/lang/Object;
 
-    .line 9
     monitor-enter v0
 
+    .line 11
     :try_start_0
     iget-object v1, p0, Lcom/applovin/impl/hl;->a:Ljava/util/WeakHashMap;
 
-    .line 10
     invoke-static {p2}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
     move-result-object p2
 
     invoke-virtual {v1, p1, p2}, Ljava/util/WeakHashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 11
+    .line 12
     invoke-direct {p0}, Lcom/applovin/impl/hl;->d()V
 
-    .line 12
+    .line 13
     monitor-exit v0
 
     return-void
@@ -573,7 +574,7 @@
     :catchall_0
     move-exception p1
 
-    .line 13
+    .line 14
     monitor-exit v0
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
@@ -584,7 +585,7 @@
 .method public a(Lcom/applovin/impl/hl$a;)V
     .locals 0
 
-    .line 2
+    .line 9
     iput-object p1, p0, Lcom/applovin/impl/hl;->g:Lcom/applovin/impl/hl$a;
 
     return-void
@@ -593,15 +594,15 @@
 .method public b(Landroid/view/View;)V
     .locals 2
 
+    .line 3
     iget-object v0, p0, Lcom/applovin/impl/hl;->b:Ljava/lang/Object;
 
-    .line 3
     monitor-enter v0
 
+    .line 4
     :try_start_0
     iget-object v1, p0, Lcom/applovin/impl/hl;->a:Ljava/util/WeakHashMap;
 
-    .line 4
     invoke-virtual {v1, p1}, Ljava/util/WeakHashMap;->remove(Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 5

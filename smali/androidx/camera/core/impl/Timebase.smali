@@ -26,62 +26,62 @@
     .locals 5
 
     .line 1
-    new-instance v0, Landroidx/camera/core/impl/Timebase;
+    const/4 v0, 0x1
 
     .line 2
+    const/4 v1, 0x0
+
     .line 3
-    const-string v1, "UPTIME"
+    new-instance v2, Landroidx/camera/core/impl/Timebase;
 
     .line 4
     .line 5
-    const/4 v2, 0x0
+    const-string v3, "UPTIME"
 
     .line 6
-    invoke-direct {v0, v1, v2}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
-
     .line 7
+    invoke-direct {v2, v3, v1}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
+
     .line 8
     .line 9
-    sput-object v0, Landroidx/camera/core/impl/Timebase;->UPTIME:Landroidx/camera/core/impl/Timebase;
-
     .line 10
+    sput-object v2, Landroidx/camera/core/impl/Timebase;->UPTIME:Landroidx/camera/core/impl/Timebase;
+
     .line 11
-    new-instance v1, Landroidx/camera/core/impl/Timebase;
-
     .line 12
+    new-instance v3, Landroidx/camera/core/impl/Timebase;
+
     .line 13
-    const-string v3, "REALTIME"
-
     .line 14
-    .line 15
-    const/4 v4, 0x1
+    const-string v4, "REALTIME"
 
+    .line 15
     .line 16
-    invoke-direct {v1, v3, v4}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
+    invoke-direct {v3, v4, v0}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
 
     .line 17
     .line 18
     .line 19
-    sput-object v1, Landroidx/camera/core/impl/Timebase;->REALTIME:Landroidx/camera/core/impl/Timebase;
+    sput-object v3, Landroidx/camera/core/impl/Timebase;->REALTIME:Landroidx/camera/core/impl/Timebase;
 
     .line 20
     .line 21
-    const/4 v3, 0x2
+    const/4 v4, 0x2
 
     .line 22
-    new-array v3, v3, [Landroidx/camera/core/impl/Timebase;
+    new-array v4, v4, [Landroidx/camera/core/impl/Timebase;
 
     .line 23
     .line 24
-    aput-object v0, v3, v2
+    aput-object v2, v4, v1
 
     .line 25
     .line 26
-    aput-object v1, v3, v4
+    aput-object v3, v4, v0
 
     .line 27
     .line 28
-    sput-object v3, Landroidx/camera/core/impl/Timebase;->b:[Landroidx/camera/core/impl/Timebase;
+    sput-object v4, Landroidx/camera/core/impl/Timebase;->b:[Landroidx/camera/core/impl/Timebase;
 
     .line 29
     .line 30

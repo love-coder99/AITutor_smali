@@ -71,15 +71,15 @@
 .method public a(Lcom/applovin/impl/v7;)[B
     .locals 3
 
+    .line 1
     iget-object v0, p0, Lcom/applovin/impl/x7;->a:Ljava/io/ByteArrayOutputStream;
 
-    .line 1
     invoke-virtual {v0}, Ljava/io/ByteArrayOutputStream;->reset()V
 
+    .line 2
     :try_start_0
     iget-object v0, p0, Lcom/applovin/impl/x7;->b:Ljava/io/DataOutputStream;
 
-    .line 2
     iget-object v1, p1, Lcom/applovin/impl/v7;->a:Ljava/lang/String;
 
     invoke-static {v0, v1}, Lcom/applovin/impl/x7;->a(Ljava/io/DataOutputStream;Ljava/lang/String;)V
@@ -94,41 +94,41 @@
     :cond_0
     const-string v0, ""
 
+    .line 4
     :goto_0
     iget-object v1, p0, Lcom/applovin/impl/x7;->b:Ljava/io/DataOutputStream;
 
-    .line 4
     invoke-static {v1, v0}, Lcom/applovin/impl/x7;->a(Ljava/io/DataOutputStream;Ljava/lang/String;)V
 
+    .line 5
     iget-object v0, p0, Lcom/applovin/impl/x7;->b:Ljava/io/DataOutputStream;
 
-    .line 5
     iget-wide v1, p1, Lcom/applovin/impl/v7;->c:J
 
     invoke-virtual {v0, v1, v2}, Ljava/io/DataOutputStream;->writeLong(J)V
 
+    .line 6
     iget-object v0, p0, Lcom/applovin/impl/x7;->b:Ljava/io/DataOutputStream;
 
-    .line 6
     iget-wide v1, p1, Lcom/applovin/impl/v7;->d:J
 
     invoke-virtual {v0, v1, v2}, Ljava/io/DataOutputStream;->writeLong(J)V
 
+    .line 7
     iget-object v0, p0, Lcom/applovin/impl/x7;->b:Ljava/io/DataOutputStream;
 
-    .line 7
     iget-object p1, p1, Lcom/applovin/impl/v7;->f:[B
 
     invoke-virtual {v0, p1}, Ljava/io/OutputStream;->write([B)V
 
+    .line 8
     iget-object p1, p0, Lcom/applovin/impl/x7;->b:Ljava/io/DataOutputStream;
 
-    .line 8
     invoke-virtual {p1}, Ljava/io/DataOutputStream;->flush()V
 
+    .line 9
     iget-object p1, p0, Lcom/applovin/impl/x7;->a:Ljava/io/ByteArrayOutputStream;
 
-    .line 9
     invoke-virtual {p1}, Ljava/io/ByteArrayOutputStream;->toByteArray()[B
 
     move-result-object p1

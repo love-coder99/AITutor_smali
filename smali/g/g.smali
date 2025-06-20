@@ -1,69 +1,126 @@
-.class public abstract Lg/g;
+.class public final synthetic LG/g;
 .super Ljava/lang/Object;
 .source "SourceFile"
 
+# interfaces
+.implements Ljava/util/concurrent/Callable;
 
-# static fields
-.field public static abc_action_bar_title_item:I = 0x7f0d0000
 
-.field public static abc_action_bar_up_container:I = 0x7f0d0001
+# instance fields
+.field public final synthetic a:Landroidx/concurrent/futures/h;
 
-.field public static abc_action_menu_item_layout:I = 0x7f0d0002
+.field public final synthetic b:Lcom/google/common/util/concurrent/d;
 
-.field public static abc_action_menu_layout:I = 0x7f0d0003
+.field public final synthetic c:J
 
-.field public static abc_action_mode_bar:I = 0x7f0d0004
 
-.field public static abc_action_mode_close_item_material:I = 0x7f0d0005
+# direct methods
+.method public synthetic constructor <init>(Landroidx/concurrent/futures/h;Lcom/google/common/util/concurrent/d;J)V
+    .locals 0
 
-.field public static abc_activity_chooser_view:I = 0x7f0d0006
+    .line 1
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-.field public static abc_activity_chooser_view_list_item:I = 0x7f0d0007
+    iput-object p1, p0, LG/g;->a:Landroidx/concurrent/futures/h;
 
-.field public static abc_alert_dialog_button_bar_material:I = 0x7f0d0008
+    iput-object p2, p0, LG/g;->b:Lcom/google/common/util/concurrent/d;
 
-.field public static abc_alert_dialog_material:I = 0x7f0d0009
+    iput-wide p3, p0, LG/g;->c:J
 
-.field public static abc_alert_dialog_title_material:I = 0x7f0d000a
+    return-void
+.end method
 
-.field public static abc_cascading_menu_item_layout:I = 0x7f0d000b
 
-.field public static abc_dialog_title_material:I = 0x7f0d000c
+# virtual methods
+.method public final call()Ljava/lang/Object;
+    .locals 4
 
-.field public static abc_expanded_menu_layout:I = 0x7f0d000d
+    .line 1
+    new-instance v0, Ljava/util/concurrent/TimeoutException;
 
-.field public static abc_list_menu_item_checkbox:I = 0x7f0d000e
+    .line 2
+    .line 3
+    new-instance v1, Ljava/lang/StringBuilder;
 
-.field public static abc_list_menu_item_icon:I = 0x7f0d000f
+    .line 4
+    .line 5
+    const-string v2, "Future["
 
-.field public static abc_list_menu_item_layout:I = 0x7f0d0010
+    .line 6
+    .line 7
+    invoke-direct {v1, v2}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
 
-.field public static abc_list_menu_item_radio:I = 0x7f0d0011
+    .line 8
+    .line 9
+    .line 10
+    iget-object v2, p0, LG/g;->b:Lcom/google/common/util/concurrent/d;
 
-.field public static abc_popup_menu_header_item_layout:I = 0x7f0d0012
+    .line 11
+    .line 12
+    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 
-.field public static abc_popup_menu_item_layout:I = 0x7f0d0013
+    .line 13
+    .line 14
+    .line 15
+    const-string v2, "] is not done within "
 
-.field public static abc_screen_content_include:I = 0x7f0d0014
+    .line 16
+    .line 17
+    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-.field public static abc_screen_simple:I = 0x7f0d0015
+    .line 18
+    .line 19
+    .line 20
+    iget-wide v2, p0, LG/g;->c:J
 
-.field public static abc_screen_simple_overlay_action_mode:I = 0x7f0d0016
+    .line 21
+    .line 22
+    invoke-virtual {v1, v2, v3}, Ljava/lang/StringBuilder;->append(J)Ljava/lang/StringBuilder;
 
-.field public static abc_screen_toolbar:I = 0x7f0d0017
+    .line 23
+    .line 24
+    .line 25
+    const-string v2, " ms."
 
-.field public static abc_search_dropdown_item_icons_2line:I = 0x7f0d0018
+    .line 26
+    .line 27
+    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-.field public static abc_search_view:I = 0x7f0d0019
+    .line 28
+    .line 29
+    .line 30
+    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
-.field public static abc_select_dialog_material:I = 0x7f0d001a
+    .line 31
+    .line 32
+    .line 33
+    move-result-object v1
 
-.field public static abc_tooltip:I = 0x7f0d001b
+    .line 34
+    invoke-direct {v0, v1}, Ljava/util/concurrent/TimeoutException;-><init>(Ljava/lang/String;)V
 
-.field public static select_dialog_item_material:I = 0x7f0d00e9
+    .line 35
+    .line 36
+    .line 37
+    iget-object v1, p0, LG/g;->a:Landroidx/concurrent/futures/h;
 
-.field public static select_dialog_multichoice_material:I = 0x7f0d00ea
+    .line 38
+    .line 39
+    invoke-virtual {v1, v0}, Landroidx/concurrent/futures/h;->d(Ljava/lang/Throwable;)Z
 
-.field public static select_dialog_singlechoice_material:I = 0x7f0d00eb
+    .line 40
+    .line 41
+    .line 42
+    move-result v0
 
-.field public static support_simple_spinner_dropdown_item:I = 0x7f0d00ee
+    .line 43
+    invoke-static {v0}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
+
+    .line 44
+    .line 45
+    .line 46
+    move-result-object v0
+
+    .line 47
+    return-object v0
+.end method

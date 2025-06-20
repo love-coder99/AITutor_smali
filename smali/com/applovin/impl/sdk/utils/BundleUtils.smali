@@ -191,9 +191,9 @@
     .line 9
     check-cast p0, Ljava/lang/String;
 
+    .line 10
     const-string p2, "true"
 
-    .line 10
     invoke-virtual {p0, p2}, Ljava/lang/String;->equalsIgnoreCase(Ljava/lang/String;)Z
 
     move-result p2
@@ -210,10 +210,10 @@
 
     goto :goto_1
 
+    .line 11
     :cond_4
     const-string p2, "false"
 
-    .line 11
     invoke-virtual {p0, p2}, Ljava/lang/String;->equalsIgnoreCase(Ljava/lang/String;)Z
 
     move-result p2
@@ -506,6 +506,10 @@
 
 .method public static put(Ljava/lang/String;Ljava/lang/Object;Landroid/os/Bundle;)V
     .locals 3
+    .param p1    # Ljava/lang/Object;
+        .annotation build Landroidx/annotation/Nullable;
+        .end annotation
+    .end param
 
     .line 1
     const-string v0, "AppLovinSdk"
@@ -1118,6 +1122,10 @@
 
 .method public static putBoolean(Ljava/lang/String;Ljava/lang/Boolean;Landroid/os/Bundle;)V
     .locals 0
+    .param p1    # Ljava/lang/Boolean;
+        .annotation build Landroidx/annotation/Nullable;
+        .end annotation
+    .end param
 
     .line 1
     if-eqz p1, :cond_0
@@ -1143,6 +1151,10 @@
 
 .method public static putBooleanArray(Ljava/lang/String;[ZLandroid/os/Bundle;)V
     .locals 0
+    .param p1    # [Z
+        .annotation build Landroidx/annotation/Nullable;
+        .end annotation
+    .end param
 
     .line 1
     if-eqz p1, :cond_0
@@ -1160,6 +1172,10 @@
 
 .method public static putByte(Ljava/lang/String;Ljava/lang/Byte;Landroid/os/Bundle;)V
     .locals 0
+    .param p1    # Ljava/lang/Byte;
+        .annotation build Landroidx/annotation/Nullable;
+        .end annotation
+    .end param
 
     .line 1
     if-eqz p1, :cond_0
@@ -1185,6 +1201,10 @@
 
 .method public static putByteArray(Ljava/lang/String;[BLandroid/os/Bundle;)V
     .locals 0
+    .param p1    # [B
+        .annotation build Landroidx/annotation/Nullable;
+        .end annotation
+    .end param
 
     .line 1
     if-eqz p1, :cond_0
@@ -1202,6 +1222,10 @@
 
 .method public static putChar(Ljava/lang/String;Ljava/lang/Character;Landroid/os/Bundle;)V
     .locals 0
+    .param p1    # Ljava/lang/Character;
+        .annotation build Landroidx/annotation/Nullable;
+        .end annotation
+    .end param
 
     .line 1
     if-eqz p1, :cond_0
@@ -1227,6 +1251,10 @@
 
 .method public static putCharArray(Ljava/lang/String;[CLandroid/os/Bundle;)V
     .locals 0
+    .param p1    # [C
+        .annotation build Landroidx/annotation/Nullable;
+        .end annotation
+    .end param
 
     .line 1
     if-eqz p1, :cond_0
@@ -1244,6 +1272,10 @@
 
 .method public static putCharSequence(Ljava/lang/String;Ljava/lang/CharSequence;Landroid/os/Bundle;)V
     .locals 0
+    .param p1    # Ljava/lang/CharSequence;
+        .annotation build Landroidx/annotation/Nullable;
+        .end annotation
+    .end param
 
     .line 1
     if-eqz p1, :cond_0
@@ -1261,6 +1293,10 @@
 
 .method public static putCharSequenceArray(Ljava/lang/String;[Ljava/lang/CharSequence;Landroid/os/Bundle;)V
     .locals 0
+    .param p1    # [Ljava/lang/CharSequence;
+        .annotation build Landroidx/annotation/Nullable;
+        .end annotation
+    .end param
 
     .line 1
     if-eqz p1, :cond_0
@@ -1278,6 +1314,10 @@
 
 .method public static putCharSequenceArrayList(Ljava/lang/String;Ljava/util/ArrayList;Landroid/os/Bundle;)V
     .locals 0
+    .param p1    # Ljava/util/ArrayList;
+        .annotation build Landroidx/annotation/Nullable;
+        .end annotation
+    .end param
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -1306,6 +1346,10 @@
 
 .method public static putDouble(Ljava/lang/String;Ljava/lang/Double;Landroid/os/Bundle;)V
     .locals 2
+    .param p1    # Ljava/lang/Double;
+        .annotation build Landroidx/annotation/Nullable;
+        .end annotation
+    .end param
 
     .line 1
     if-eqz p1, :cond_0
@@ -1331,6 +1375,10 @@
 
 .method public static putDoubleArray(Ljava/lang/String;[DLandroid/os/Bundle;)V
     .locals 0
+    .param p1    # [D
+        .annotation build Landroidx/annotation/Nullable;
+        .end annotation
+    .end param
 
     .line 1
     if-eqz p1, :cond_0
@@ -1348,6 +1396,10 @@
 
 .method public static putFloat(Ljava/lang/String;Ljava/lang/Float;Landroid/os/Bundle;)V
     .locals 0
+    .param p1    # Ljava/lang/Float;
+        .annotation build Landroidx/annotation/Nullable;
+        .end annotation
+    .end param
 
     .line 1
     if-eqz p1, :cond_0
@@ -1373,6 +1425,10 @@
 
 .method public static putFloatArray(Ljava/lang/String;[FLandroid/os/Bundle;)V
     .locals 0
+    .param p1    # [F
+        .annotation build Landroidx/annotation/Nullable;
+        .end annotation
+    .end param
 
     .line 1
     if-eqz p1, :cond_0
@@ -1390,6 +1446,10 @@
 
 .method public static putInt(Ljava/lang/String;Ljava/lang/Integer;Landroid/os/Bundle;)V
     .locals 0
+    .param p1    # Ljava/lang/Integer;
+        .annotation build Landroidx/annotation/Nullable;
+        .end annotation
+    .end param
 
     .line 1
     if-eqz p1, :cond_0
@@ -1415,6 +1475,10 @@
 
 .method public static putIntArray(Ljava/lang/String;[ILandroid/os/Bundle;)V
     .locals 0
+    .param p1    # [I
+        .annotation build Landroidx/annotation/Nullable;
+        .end annotation
+    .end param
 
     .line 1
     if-eqz p1, :cond_0
@@ -1432,6 +1496,10 @@
 
 .method public static putIntegerArrayList(Ljava/lang/String;Ljava/util/ArrayList;Landroid/os/Bundle;)V
     .locals 0
+    .param p1    # Ljava/util/ArrayList;
+        .annotation build Landroidx/annotation/Nullable;
+        .end annotation
+    .end param
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -1460,6 +1528,10 @@
 
 .method public static putLong(Ljava/lang/String;Ljava/lang/Long;Landroid/os/Bundle;)V
     .locals 2
+    .param p1    # Ljava/lang/Long;
+        .annotation build Landroidx/annotation/Nullable;
+        .end annotation
+    .end param
 
     .line 1
     if-eqz p1, :cond_0
@@ -1485,6 +1557,10 @@
 
 .method public static putLongArray(Ljava/lang/String;[JLandroid/os/Bundle;)V
     .locals 0
+    .param p1    # [J
+        .annotation build Landroidx/annotation/Nullable;
+        .end annotation
+    .end param
 
     .line 1
     if-eqz p1, :cond_0
@@ -1502,6 +1578,10 @@
 
 .method public static putShort(Ljava/lang/String;Ljava/lang/Short;Landroid/os/Bundle;)V
     .locals 0
+    .param p1    # Ljava/lang/Short;
+        .annotation build Landroidx/annotation/Nullable;
+        .end annotation
+    .end param
 
     .line 1
     if-eqz p1, :cond_0
@@ -1527,6 +1607,10 @@
 
 .method public static putShortArray(Ljava/lang/String;[SLandroid/os/Bundle;)V
     .locals 0
+    .param p1    # [S
+        .annotation build Landroidx/annotation/Nullable;
+        .end annotation
+    .end param
 
     .line 1
     if-eqz p1, :cond_0
@@ -1544,6 +1628,10 @@
 
 .method public static putString(Ljava/lang/String;Ljava/lang/String;Landroid/os/Bundle;)V
     .locals 0
+    .param p1    # Ljava/lang/String;
+        .annotation build Landroidx/annotation/Nullable;
+        .end annotation
+    .end param
 
     .line 1
     if-eqz p1, :cond_0
@@ -1561,6 +1649,10 @@
 
 .method public static putStringArray(Ljava/lang/String;[Ljava/lang/String;Landroid/os/Bundle;)V
     .locals 0
+    .param p1    # [Ljava/lang/String;
+        .annotation build Landroidx/annotation/Nullable;
+        .end annotation
+    .end param
 
     .line 1
     if-eqz p1, :cond_0
@@ -1578,6 +1670,10 @@
 
 .method public static putStringArrayList(Ljava/lang/String;Ljava/util/ArrayList;Landroid/os/Bundle;)V
     .locals 0
+    .param p1    # Ljava/util/ArrayList;
+        .annotation build Landroidx/annotation/Nullable;
+        .end annotation
+    .end param
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -1606,6 +1702,10 @@
 
 .method public static putStringIfValid(Ljava/lang/String;Ljava/lang/String;Landroid/os/Bundle;)V
     .locals 1
+    .param p1    # Ljava/lang/String;
+        .annotation build Landroidx/annotation/Nullable;
+        .end annotation
+    .end param
 
     .line 1
     invoke-static {p1}, Lcom/applovin/sdk/AppLovinSdkUtils;->isValidString(Ljava/lang/String;)Z

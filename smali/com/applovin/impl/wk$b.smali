@@ -27,8 +27,10 @@
     .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
+    .line 2
     iput p1, p0, Lcom/applovin/impl/wk$b;->a:I
 
+    .line 3
     iput-wide p2, p0, Lcom/applovin/impl/wk$b;->b:J
 
     return-void
@@ -37,7 +39,7 @@
 .method public synthetic constructor <init>(IJLcom/applovin/impl/wk$a;)V
     .locals 0
 
-    .line 2
+    .line 4
     invoke-direct {p0, p1, p2, p3}, Lcom/applovin/impl/wk$b;-><init>(IJ)V
 
     return-void

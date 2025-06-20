@@ -3,14 +3,14 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lzh/e;
+.implements Lka/e;
 
 
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "Lkotlin/jvm/internal/Lambda;",
-        "Lzh/e;"
+        "Lka/e;"
     }
 .end annotation
 
@@ -22,7 +22,7 @@
         "Landroidx/compose/ui/node/h;",
         "Landroidx/compose/ui/unit/LayoutDirection;",
         "it",
-        "Lqh/r;",
+        "LX9/j;",
         "invoke",
         "(Landroidx/compose/ui/node/h;Landroidx/compose/ui/unit/LayoutDirection;)V",
         "<anonymous>"
@@ -75,7 +75,7 @@
 
     invoke-virtual {p0, p1, p2}, Landroidx/compose/ui/node/ComposeUiNode$Companion$SetLayoutDirection$1;->invoke(Landroidx/compose/ui/node/h;Landroidx/compose/ui/unit/LayoutDirection;)V
 
-    sget-object p1, Lqh/r;->a:Lqh/r;
+    sget-object p1, LX9/j;->a:LX9/j;
 
     return-object p1
 .end method
@@ -83,10 +83,10 @@
 .method public final invoke(Landroidx/compose/ui/node/h;Landroidx/compose/ui/unit/LayoutDirection;)V
     .locals 0
 
-    check-cast p1, Landroidx/compose/ui/node/e0;
-
     .line 2
-    invoke-virtual {p1, p2}, Landroidx/compose/ui/node/e0;->Y(Landroidx/compose/ui/unit/LayoutDirection;)V
+    check-cast p1, Landroidx/compose/ui/node/C;
+
+    invoke-virtual {p1, p2}, Landroidx/compose/ui/node/C;->Y(Landroidx/compose/ui/unit/LayoutDirection;)V
 
     return-void
 .end method

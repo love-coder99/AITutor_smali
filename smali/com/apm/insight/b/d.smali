@@ -19,11 +19,11 @@
 .method public static a(Landroid/content/Context;)Ljava/lang/String;
     .locals 8
 
+    .line 13
     const-string v0, "\n"
 
     const-string v1, "|------------- processErrorStateInfo--------------|\n"
 
-    .line 12
     invoke-static {}, Landroid/os/SystemClock;->uptimeMillis()J
 
     move-result-wide v2
@@ -42,7 +42,7 @@
 
     return-object v6
 
-    .line 13
+    .line 14
     :cond_0
     :try_start_0
     invoke-static {p0}, Lcom/apm/insight/l/a;->b(Landroid/content/Context;)Landroid/app/ActivityManager$ProcessErrorStateInfo;
@@ -51,7 +51,7 @@
 
     if-eqz p0, :cond_3
 
-    .line 14
+    .line 15
     invoke-static {}, Landroid/os/Process;->myPid()I
 
     move-result v2
@@ -60,11 +60,12 @@
 
     if-ne v2, v3, :cond_3
 
+    .line 16
     sget-object v2, Lcom/apm/insight/b/d;->e:Landroid/app/ActivityManager$ProcessErrorStateInfo;
 
     if-eqz v2, :cond_1
 
-    .line 15
+    .line 17
     iget v3, v2, Landroid/app/ActivityManager$ProcessErrorStateInfo;->condition:I
 
     invoke-static {v3}, Ljava/lang/String;->valueOf(I)Ljava/lang/String;
@@ -85,7 +86,7 @@
 
     iget-object v3, v2, Landroid/app/ActivityManager$ProcessErrorStateInfo;->processName:Ljava/lang/String;
 
-    .line 16
+    .line 18
     invoke-static {v3}, Ljava/lang/String;->valueOf(Ljava/lang/Object;)Ljava/lang/String;
 
     move-result-object v3
@@ -104,7 +105,7 @@
 
     iget v3, v2, Landroid/app/ActivityManager$ProcessErrorStateInfo;->pid:I
 
-    .line 17
+    .line 19
     invoke-static {v3}, Ljava/lang/String;->valueOf(I)Ljava/lang/String;
 
     move-result-object v3
@@ -123,7 +124,7 @@
 
     iget v3, v2, Landroid/app/ActivityManager$ProcessErrorStateInfo;->uid:I
 
-    .line 18
+    .line 20
     invoke-static {v3}, Ljava/lang/String;->valueOf(I)Ljava/lang/String;
 
     move-result-object v3
@@ -142,7 +143,7 @@
 
     iget-object v3, v2, Landroid/app/ActivityManager$ProcessErrorStateInfo;->tag:Ljava/lang/String;
 
-    .line 19
+    .line 21
     invoke-static {v3}, Ljava/lang/String;->valueOf(Ljava/lang/Object;)Ljava/lang/String;
 
     move-result-object v3
@@ -161,7 +162,7 @@
 
     iget-object v3, v2, Landroid/app/ActivityManager$ProcessErrorStateInfo;->shortMsg:Ljava/lang/String;
 
-    .line 20
+    .line 22
     invoke-static {v3}, Ljava/lang/String;->valueOf(Ljava/lang/Object;)Ljava/lang/String;
 
     move-result-object v3
@@ -180,7 +181,7 @@
 
     iget-object v2, v2, Landroid/app/ActivityManager$ProcessErrorStateInfo;->longMsg:Ljava/lang/String;
 
-    .line 21
+    .line 23
     invoke-static {v2}, Ljava/lang/String;->valueOf(Ljava/lang/Object;)Ljava/lang/String;
 
     move-result-object v2
@@ -204,12 +205,14 @@
 
     goto/16 :goto_0
 
+    .line 24
     :cond_1
     sput-object p0, Lcom/apm/insight/b/d;->e:Landroid/app/ActivityManager$ProcessErrorStateInfo;
 
+    .line 25
     sput-object v6, Lcom/apm/insight/b/d;->a:Ljava/lang/String;
 
-    .line 22
+    .line 26
     invoke-static {}, Landroid/os/SystemClock;->uptimeMillis()J
 
     move-result-wide v2
@@ -218,26 +221,28 @@
 
     const/4 v2, 0x0
 
+    .line 27
     sput-boolean v2, Lcom/apm/insight/b/d;->c:Z
 
-    .line 23
+    .line 28
     invoke-static {}, Lcom/apm/insight/e;->t()Z
 
     move-result v2
 
     if-nez v2, :cond_2
 
+    .line 29
     const-string p0, "|------------- processErrorStateInfo--------------|\ndisable anr info\n\"-----------------------end----------------------------\""
 
     return-object p0
 
-    .line 24
+    .line 30
     :cond_2
     new-instance v2, Ljava/lang/StringBuilder;
 
     invoke-direct {v2, v1}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
 
-    .line 25
+    .line 31
     new-instance v1, Ljava/lang/StringBuilder;
 
     const-string v3, "condition: "
@@ -256,7 +261,7 @@
 
     invoke-virtual {v2, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    .line 26
+    .line 32
     new-instance v1, Ljava/lang/StringBuilder;
 
     const-string v3, "processName: "
@@ -275,7 +280,7 @@
 
     invoke-virtual {v2, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    .line 27
+    .line 33
     new-instance v1, Ljava/lang/StringBuilder;
 
     const-string v3, "pid: "
@@ -294,7 +299,7 @@
 
     invoke-virtual {v2, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    .line 28
+    .line 34
     new-instance v1, Ljava/lang/StringBuilder;
 
     const-string v3, "uid: "
@@ -313,7 +318,7 @@
 
     invoke-virtual {v2, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    .line 29
+    .line 35
     new-instance v1, Ljava/lang/StringBuilder;
 
     const-string v3, "tag: "
@@ -332,7 +337,7 @@
 
     invoke-virtual {v2, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    .line 30
+    .line 36
     new-instance v1, Ljava/lang/StringBuilder;
 
     const-string v3, "shortMsg : "
@@ -351,7 +356,7 @@
 
     invoke-virtual {v2, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    .line 31
+    .line 37
     new-instance v1, Ljava/lang/StringBuilder;
 
     const-string v3, "longMsg : "
@@ -370,12 +375,12 @@
 
     invoke-virtual {v2, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    .line 38
     const-string p0, "-----------------------end----------------------------"
 
-    .line 32
     invoke-virtual {v2, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    .line 33
+    .line 39
     invoke-virtual {v2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
     move-result-object p0
@@ -384,6 +389,7 @@
 
     return-object p0
 
+    .line 40
     :cond_3
     :goto_0
     sget-object p0, Lcom/apm/insight/b/d;->a:Ljava/lang/String;
@@ -392,11 +398,13 @@
 
     const/4 v0, 0x1
 
+    .line 41
     sput-boolean v0, Lcom/apm/insight/b/d;->c:Z
 
+    .line 42
     sput-object v6, Lcom/apm/insight/b/d;->a:Ljava/lang/String;
 
-    .line 34
+    .line 43
     invoke-static {}, Landroid/os/SystemClock;->uptimeMillis()J
 
     move-result-wide v0
@@ -426,7 +434,7 @@
         }
     .end annotation
 
-    .line 5
+    .line 6
     :try_start_0
     invoke-static {}, Landroid/os/Looper;->getMainLooper()Landroid/os/Looper;
 
@@ -436,26 +444,26 @@
 
     move-result-object v0
 
-    .line 6
+    .line 7
     invoke-virtual {v0}, Ljava/lang/Thread;->getStackTrace()[Ljava/lang/StackTraceElement;
 
     move-result-object v0
 
-    .line 7
+    .line 8
     new-instance v1, Lorg/json/JSONObject;
 
     invoke-direct {v1}, Lorg/json/JSONObject;-><init>()V
 
+    .line 9
     const-string v2, "thread_number"
 
     const/4 v3, 0x1
 
-    .line 8
     invoke-virtual {v1, v2, v3}, Lorg/json/JSONObject;->put(Ljava/lang/String;I)Lorg/json/JSONObject;
 
+    .line 10
     const-string v2, "mainStackFromTrace"
 
-    .line 9
     invoke-static {v0}, Lcom/apm/insight/l/m;->a([Ljava/lang/StackTraceElement;)Ljava/lang/String;
 
     move-result-object v0
@@ -469,12 +477,12 @@
     :catchall_0
     move-exception v0
 
-    .line 10
+    .line 11
     invoke-static {}, Lcom/apm/insight/c;->a()Lcom/apm/insight/b/a;
 
     const-string v1, "NPTH_CATCH"
 
-    .line 11
+    .line 12
     invoke-static {v0, v1}, Lcom/apm/insight/runtime/k;->a(Ljava/lang/Throwable;Ljava/lang/String;)V
 
     const/4 v0, 0x0
@@ -485,22 +493,23 @@
 .method public static a(Ljava/lang/String;Lcom/apm/insight/b/h$a;)V
     .locals 1
 
+    .line 2
     sget-object v0, Lcom/apm/insight/b/d;->d:Landroid/os/FileObserver;
 
     if-eqz v0, :cond_0
 
-    .line 2
+    .line 3
     invoke-virtual {v0}, Landroid/os/FileObserver;->stopWatching()V
 
-    .line 3
+    .line 4
     :cond_0
     new-instance v0, Lcom/apm/insight/b/d$1;
 
     invoke-direct {v0, p0, p1, p0}, Lcom/apm/insight/b/d$1;-><init>(Ljava/lang/String;Lcom/apm/insight/b/h$a;Ljava/lang/String;)V
 
+    .line 5
     sput-object v0, Lcom/apm/insight/b/d;->d:Landroid/os/FileObserver;
 
-    .line 4
     invoke-virtual {v0}, Landroid/os/FileObserver;->startWatching()V
 
     return-void
@@ -509,17 +518,24 @@
 .method public static b()Z
     .locals 1
 
+    .line 1
     sget-boolean v0, Lcom/apm/insight/b/d;->c:Z
 
+    .line 2
+    .line 3
     return v0
 .end method
 
 .method public static c()V
     .locals 1
 
+    .line 1
     const/4 v0, 0x0
 
+    .line 2
     sput-object v0, Lcom/apm/insight/b/d;->e:Landroid/app/ActivityManager$ProcessErrorStateInfo;
 
+    .line 3
+    .line 4
     return-void
 .end method

@@ -3,14 +3,14 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lzh/c;
+.implements Lka/c;
 
 
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "Lkotlin/jvm/internal/Lambda;",
-        "Lzh/c;"
+        "Lka/c;"
     }
 .end annotation
 
@@ -19,11 +19,11 @@
         "\u0000\u000e\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0008\u0003\u0010\u0005\u001a\u00020\u00022\u0006\u0010\u0001\u001a\u00020\u0000H\n\u00a2\u0006\u0004\u0008\u0003\u0010\u0004"
     }
     d2 = {
-        "Landroidx/compose/animation/core/j;",
+        "Landroidx/compose/animation/core/i;",
         "it",
-        "Ln1/c;",
+        "Lr0/c;",
         "invoke-tuRUvjQ",
-        "(Landroidx/compose/animation/core/j;)J",
+        "(Landroidx/compose/animation/core/i;)J",
         "<anonymous>"
     }
     k = 0x3
@@ -68,11 +68,11 @@
     .locals 2
 
     .line 1
-    check-cast p1, Landroidx/compose/animation/core/j;
+    check-cast p1, Landroidx/compose/animation/core/i;
 
     .line 2
     .line 3
-    invoke-virtual {p0, p1}, Landroidx/compose/foundation/text/selection/SelectionMagnifierKt$UnspecifiedSafeOffsetVectorConverter$2;->invoke-tuRUvjQ(Landroidx/compose/animation/core/j;)J
+    invoke-virtual {p0, p1}, Landroidx/compose/foundation/text/selection/SelectionMagnifierKt$UnspecifiedSafeOffsetVectorConverter$2;->invoke-tuRUvjQ(Landroidx/compose/animation/core/i;)J
 
     .line 4
     .line 5
@@ -80,11 +80,11 @@
     move-result-wide v0
 
     .line 7
-    new-instance p1, Ln1/c;
+    new-instance p1, Lr0/c;
 
     .line 8
     .line 9
-    invoke-direct {p1, v0, v1}, Ln1/c;-><init>(J)V
+    invoke-direct {p1, v0, v1}, Lr0/c;-><init>(J)V
 
     .line 10
     .line 11
@@ -92,19 +92,19 @@
     return-object p1
 .end method
 
-.method public final invoke-tuRUvjQ(Landroidx/compose/animation/core/j;)J
+.method public final invoke-tuRUvjQ(Landroidx/compose/animation/core/i;)J
     .locals 2
 
     .line 1
-    iget v0, p1, Landroidx/compose/animation/core/j;->a:F
+    iget v0, p1, Landroidx/compose/animation/core/i;->a:F
 
     .line 2
     .line 3
-    iget p1, p1, Landroidx/compose/animation/core/j;->b:F
+    iget p1, p1, Landroidx/compose/animation/core/i;->b:F
 
     .line 4
     .line 5
-    invoke-static {v0, p1}, La0/r;->b(FF)J
+    invoke-static {v0, p1}, Lcom/bumptech/glide/c;->b(FF)J
 
     .line 6
     .line 7

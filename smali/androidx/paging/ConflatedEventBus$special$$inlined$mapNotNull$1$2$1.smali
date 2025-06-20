@@ -4,6 +4,15 @@
 
 
 # annotations
+.annotation runtime Lca/c;
+    c = "androidx.paging.ConflatedEventBus$special$$inlined$mapNotNull$1$2"
+    f = "ConflatedEventBus.kt"
+    l = {
+        0xe1
+    }
+    m = "emit"
+.end annotation
+
 .annotation runtime Lkotlin/Metadata;
     k = 0x3
     mv = {
@@ -14,15 +23,6 @@
     xi = 0x30
 .end annotation
 
-.annotation runtime Lth/c;
-    c = "androidx.paging.ConflatedEventBus$special$$inlined$mapNotNull$1$2"
-    f = "ConflatedEventBus.kt"
-    l = {
-        0xe1
-    }
-    m = "emit"
-.end annotation
-
 
 # instance fields
 .field L$0:Ljava/lang/Object;
@@ -31,14 +31,14 @@
 
 .field synthetic result:Ljava/lang/Object;
 
-.field final synthetic this$0:Landroidx/paging/i;
+.field final synthetic this$0:Landroidx/paging/j;
 
 
 # direct methods
-.method public constructor <init>(Landroidx/paging/i;Lkotlin/coroutines/Continuation;)V
+.method public constructor <init>(Landroidx/paging/j;Lkotlin/coroutines/Continuation;)V
     .locals 0
 
-    iput-object p1, p0, Landroidx/paging/ConflatedEventBus$special$$inlined$mapNotNull$1$2$1;->this$0:Landroidx/paging/i;
+    iput-object p1, p0, Landroidx/paging/ConflatedEventBus$special$$inlined$mapNotNull$1$2$1;->this$0:Landroidx/paging/j;
 
     invoke-direct {p0, p2}, Lkotlin/coroutines/jvm/internal/ContinuationImpl;-><init>(Lkotlin/coroutines/Continuation;)V
 
@@ -60,11 +60,11 @@
 
     iput p1, p0, Landroidx/paging/ConflatedEventBus$special$$inlined$mapNotNull$1$2$1;->label:I
 
-    iget-object p1, p0, Landroidx/paging/ConflatedEventBus$special$$inlined$mapNotNull$1$2$1;->this$0:Landroidx/paging/i;
+    iget-object p1, p0, Landroidx/paging/ConflatedEventBus$special$$inlined$mapNotNull$1$2$1;->this$0:Landroidx/paging/j;
 
     const/4 v0, 0x0
 
-    invoke-virtual {p1, v0, p0}, Landroidx/paging/i;->emit(Ljava/lang/Object;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
+    invoke-virtual {p1, v0, p0}, Landroidx/paging/j;->emit(Ljava/lang/Object;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
 
     move-result-object p1
 

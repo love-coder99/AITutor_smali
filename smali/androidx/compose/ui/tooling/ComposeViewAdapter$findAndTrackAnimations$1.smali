@@ -19,13 +19,13 @@
 .method public constructor <init>(Ljava/lang/Object;)V
     .locals 6
 
-    const-class v2, Landroidx/compose/ui/tooling/ComposeViewAdapter;
-
-    const-string v3, "clock"
-
     const-string v4, "getClock$ui_tooling_release()Landroidx/compose/ui/tooling/animation/PreviewAnimationClock;"
 
     const/4 v5, 0x0
+
+    const-class v2, Landroidx/compose/ui/tooling/ComposeViewAdapter;
+
+    const-string v3, "clock"
 
     move-object v0, p0
 
@@ -50,7 +50,7 @@
 
     .line 4
     .line 5
-    invoke-virtual {v0}, Landroidx/compose/ui/tooling/ComposeViewAdapter;->getClock$ui_tooling_release()Landroidx/compose/ui/tooling/animation/q;
+    invoke-virtual {v0}, Landroidx/compose/ui/tooling/ComposeViewAdapter;->getClock$ui_tooling_release()Landroidx/compose/ui/tooling/animation/l;
 
     .line 6
     .line 7
@@ -73,11 +73,11 @@
 
     .line 4
     .line 5
-    check-cast p1, Landroidx/compose/ui/tooling/animation/q;
+    check-cast p1, Landroidx/compose/ui/tooling/animation/l;
 
     .line 6
     .line 7
-    invoke-virtual {v0, p1}, Landroidx/compose/ui/tooling/ComposeViewAdapter;->setClock$ui_tooling_release(Landroidx/compose/ui/tooling/animation/q;)V
+    invoke-virtual {v0, p1}, Landroidx/compose/ui/tooling/ComposeViewAdapter;->setClock$ui_tooling_release(Landroidx/compose/ui/tooling/animation/l;)V
 
     .line 8
     .line 9

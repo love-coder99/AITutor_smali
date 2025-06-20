@@ -8,6 +8,8 @@
 .end method
 
 .method public abstract getDirectDownloadToken()Ljava/lang/String;
+    .annotation build Landroidx/annotation/Nullable;
+    .end annotation
 .end method
 
 .method public abstract isDirectDownloadEnabled()Z

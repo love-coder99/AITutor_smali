@@ -3,14 +3,14 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lzh/c;
+.implements Lka/c;
 
 
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "Lkotlin/jvm/internal/Lambda;",
-        "Lzh/c;"
+        "Lka/c;"
     }
 .end annotation
 
@@ -22,7 +22,7 @@
         "",
         "Landroidx/compose/ui/text/input/h;",
         "it",
-        "Lqh/r;",
+        "LX9/j;",
         "invoke",
         "(Ljava/util/List;)V",
         "<anonymous>"
@@ -39,10 +39,10 @@
 # instance fields
 .field final synthetic $editProcessor:Landroidx/compose/ui/text/input/i;
 
-.field final synthetic $onValueChange:Lzh/c;
+.field final synthetic $onValueChange:Lka/c;
     .annotation system Ldalvik/annotation/Signature;
         value = {
-            "Lzh/c;"
+            "Lka/c;"
         }
     .end annotation
 .end field
@@ -51,7 +51,7 @@
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Lkotlin/jvm/internal/Ref$ObjectRef<",
-            "Landroidx/compose/ui/text/input/o0;",
+            "Landroidx/compose/ui/text/input/J;",
             ">;"
         }
     .end annotation
@@ -59,15 +59,15 @@
 
 
 # direct methods
-.method public constructor <init>(Landroidx/compose/ui/text/input/i;Lzh/c;Lkotlin/jvm/internal/Ref$ObjectRef;)V
+.method public constructor <init>(Landroidx/compose/ui/text/input/i;Lka/c;Lkotlin/jvm/internal/Ref$ObjectRef;)V
     .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
             "Landroidx/compose/ui/text/input/i;",
-            "Lzh/c;",
+            "Lka/c;",
             "Lkotlin/jvm/internal/Ref$ObjectRef<",
-            "Landroidx/compose/ui/text/input/o0;",
+            "Landroidx/compose/ui/text/input/J;",
             ">;)V"
         }
     .end annotation
@@ -75,14 +75,24 @@
     .line 1
     iput-object p1, p0, Landroidx/compose/foundation/text/TextFieldDelegate$Companion$restartInput$1;->$editProcessor:Landroidx/compose/ui/text/input/i;
 
-    iput-object p2, p0, Landroidx/compose/foundation/text/TextFieldDelegate$Companion$restartInput$1;->$onValueChange:Lzh/c;
+    .line 2
+    .line 3
+    iput-object p2, p0, Landroidx/compose/foundation/text/TextFieldDelegate$Companion$restartInput$1;->$onValueChange:Lka/c;
 
+    .line 4
+    .line 5
     iput-object p3, p0, Landroidx/compose/foundation/text/TextFieldDelegate$Companion$restartInput$1;->$session:Lkotlin/jvm/internal/Ref$ObjectRef;
 
+    .line 6
+    .line 7
     const/4 p1, 0x1
 
+    .line 8
     invoke-direct {p0, p1}, Lkotlin/jvm/internal/Lambda;-><init>(I)V
 
+    .line 9
+    .line 10
+    .line 11
     return-void
 .end method
 
@@ -96,7 +106,7 @@
 
     invoke-virtual {p0, p1}, Landroidx/compose/foundation/text/TextFieldDelegate$Companion$restartInput$1;->invoke(Ljava/util/List;)V
 
-    sget-object p1, Lqh/r;->a:Lqh/r;
+    sget-object p1, LX9/j;->a:LX9/j;
 
     return-object p1
 .end method
@@ -113,19 +123,19 @@
         }
     .end annotation
 
+    .line 2
     iget-object v0, p0, Landroidx/compose/foundation/text/TextFieldDelegate$Companion$restartInput$1;->$editProcessor:Landroidx/compose/ui/text/input/i;
 
-    iget-object v1, p0, Landroidx/compose/foundation/text/TextFieldDelegate$Companion$restartInput$1;->$onValueChange:Lzh/c;
+    iget-object v1, p0, Landroidx/compose/foundation/text/TextFieldDelegate$Companion$restartInput$1;->$onValueChange:Lka/c;
 
     iget-object v2, p0, Landroidx/compose/foundation/text/TextFieldDelegate$Companion$restartInput$1;->$session:Lkotlin/jvm/internal/Ref$ObjectRef;
 
-    .line 2
     iget-object v2, v2, Lkotlin/jvm/internal/Ref$ObjectRef;->element:Ljava/lang/Object;
 
-    check-cast v2, Landroidx/compose/ui/text/input/o0;
+    check-cast v2, Landroidx/compose/ui/text/input/J;
 
     .line 3
-    invoke-virtual {v0, p1}, Landroidx/compose/ui/text/input/i;->a(Ljava/util/List;)Landroidx/compose/ui/text/input/h0;
+    invoke-virtual {v0, p1}, Landroidx/compose/ui/text/input/i;->a(Ljava/util/List;)Landroidx/compose/ui/text/input/C;
 
     move-result-object p1
 
@@ -134,11 +144,11 @@
     const/4 v0, 0x0
 
     .line 4
-    invoke-virtual {v2, v0, p1}, Landroidx/compose/ui/text/input/o0;->a(Landroidx/compose/ui/text/input/h0;Landroidx/compose/ui/text/input/h0;)V
+    invoke-virtual {v2, v0, p1}, Landroidx/compose/ui/text/input/J;->a(Landroidx/compose/ui/text/input/C;Landroidx/compose/ui/text/input/C;)V
 
     .line 5
     :cond_0
-    invoke-interface {v1, p1}, Lzh/c;->invoke(Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-interface {v1, p1}, Lka/c;->invoke(Ljava/lang/Object;)Ljava/lang/Object;
 
     return-void
 .end method

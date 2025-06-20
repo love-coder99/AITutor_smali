@@ -17,50 +17,91 @@
 .method static constructor <clinit>()V
     .locals 5
 
+    .line 1
     const/4 v0, 0x1
 
+    .line 2
     const/16 v1, 0xb
 
+    .line 3
+    .line 4
     const/4 v2, 0x7
 
+    .line 5
     const/4 v3, 0x4
 
+    .line 6
     const/4 v4, 0x2
 
+    .line 7
     filled-new-array {v2, v3, v4, v0, v1}, [I
 
+    .line 8
+    .line 9
+    .line 10
     move-result-object v0
 
+    .line 11
     sput-object v0, Lcom/applovin/impl/e4;->a:[I
 
+    .line 12
+    .line 13
     const/16 v0, 0x8
 
+    .line 14
+    .line 15
     new-array v0, v0, [I
 
+    .line 16
+    .line 17
     fill-array-data v0, :array_0
 
+    .line 18
+    .line 19
+    .line 20
     sput-object v0, Lcom/applovin/impl/e4;->b:[I
 
+    .line 21
+    .line 22
     const/16 v0, 0xf
 
+    .line 23
+    .line 24
     const/16 v1, 0xd
 
+    .line 25
+    .line 26
     filled-new-array {v0, v1}, [I
 
+    .line 27
+    .line 28
+    .line 29
     move-result-object v0
 
+    .line 30
     sput-object v0, Lcom/applovin/impl/e4;->c:[I
 
+    .line 31
+    .line 32
     const/16 v0, 0x14
 
+    .line 33
+    .line 34
     filled-new-array {v0}, [I
 
+    .line 35
+    .line 36
+    .line 37
     move-result-object v0
 
+    .line 38
     sput-object v0, Lcom/applovin/impl/e4;->d:[I
 
+    .line 39
+    .line 40
     return-void
 
+    .line 41
     :array_0
     .array-data 4
         0x5
@@ -311,11 +352,11 @@
 .method public static a(Lorg/json/JSONObject;Lcom/applovin/impl/sdk/j;)V
     .locals 4
 
+    .line 28
     const-string p1, "filesystem_values"
 
     const/4 v0, 0x0
 
-    .line 28
     invoke-static {p0, p1, v0}, Lcom/applovin/impl/sdk/utils/JsonUtils;->getJSONObject(Lorg/json/JSONObject;Ljava/lang/String;Lorg/json/JSONObject;)Lorg/json/JSONObject;
 
     move-result-object p0
@@ -422,9 +463,9 @@
 .method public static a(Landroid/content/Context;)Z
     .locals 1
 
+    .line 18
     const-string v0, "connectivity"
 
-    .line 18
     invoke-virtual {p0, v0}, Landroid/content/Context;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
 
     move-result-object v0
@@ -514,9 +555,9 @@
 .method private static b(Landroid/content/Context;)Landroid/net/NetworkInfo;
     .locals 1
 
+    .line 5
     const-string v0, "connectivity"
 
-    .line 5
     invoke-virtual {p0, v0}, Landroid/content/Context;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
 
     move-result-object p0
@@ -604,11 +645,11 @@
 .method public static b(Lorg/json/JSONObject;Lcom/applovin/impl/sdk/j;)V
     .locals 2
 
+    .line 7
     const-string v0, "persisted_data"
 
     const/4 v1, 0x0
 
-    .line 7
     invoke-static {p0, v0, v1}, Lcom/applovin/impl/sdk/utils/JsonUtils;->getString(Lorg/json/JSONObject;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object p0
@@ -672,9 +713,9 @@
 
     if-eqz v2, :cond_0
 
+    .line 4
     const-string v2, "device_token"
 
-    .line 4
     invoke-virtual {v0, v2, v1}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     goto :goto_0
@@ -727,13 +768,14 @@
 .method public static c(Lorg/json/JSONObject;Lcom/applovin/impl/sdk/j;)V
     .locals 3
 
+    .line 8
     const-string v0, "settings"
 
     if-eqz p0, :cond_2
 
     if-eqz p1, :cond_1
 
-    .line 8
+    .line 9
     :try_start_0
     invoke-virtual {p0, v0}, Lorg/json/JSONObject;->has(Ljava/lang/String;)Z
 
@@ -741,27 +783,27 @@
 
     if-eqz v1, :cond_0
 
-    .line 9
+    .line 10
     invoke-virtual {p1}, Lcom/applovin/impl/sdk/j;->g0()Lcom/applovin/impl/tj;
 
     move-result-object v1
 
-    .line 10
+    .line 11
     invoke-virtual {p0, v0}, Lorg/json/JSONObject;->isNull(Ljava/lang/String;)Z
 
     move-result v2
 
     if-nez v2, :cond_0
 
-    .line 11
+    .line 12
     invoke-virtual {p0, v0}, Lorg/json/JSONObject;->getJSONObject(Ljava/lang/String;)Lorg/json/JSONObject;
 
     move-result-object p0
 
-    .line 12
+    .line 13
     invoke-virtual {v1, p0}, Lcom/applovin/impl/tj;->a(Lorg/json/JSONObject;)V
 
-    .line 13
+    .line 14
     invoke-virtual {v1}, Lcom/applovin/impl/tj;->e()V
     :try_end_0
     .catch Lorg/json/JSONException; {:try_start_0 .. :try_end_0} :catch_0
@@ -771,7 +813,7 @@
     :catch_0
     move-exception p0
 
-    .line 14
+    .line 15
     invoke-virtual {p1}, Lcom/applovin/impl/sdk/j;->I()Lcom/applovin/impl/sdk/n;
 
     invoke-static {}, Lcom/applovin/impl/sdk/n;->a()Z
@@ -794,7 +836,7 @@
     :goto_0
     return-void
 
-    .line 15
+    .line 16
     :cond_1
     new-instance p0, Ljava/lang/IllegalArgumentException;
 
@@ -804,7 +846,7 @@
 
     throw p0
 
-    .line 16
+    .line 17
     :cond_2
     new-instance p0, Ljava/lang/IllegalArgumentException;
 

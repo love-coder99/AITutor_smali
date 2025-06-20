@@ -50,10 +50,10 @@
     array-length v0, p3
 
     .line 12
-    const/4 v1, 0x1
+    const/4 v1, 0x0
 
     .line 13
-    const/4 v2, 0x0
+    const/4 v2, 0x1
 
     .line 14
     if-ne p1, v0, :cond_0
@@ -249,7 +249,10 @@
 .method public toString()Ljava/lang/String;
     .locals 1
 
+    .line 1
     iget-object v0, p0, Lcom/applovin/exoplayer2/common/base/CharMatcher$y;->a:Ljava/lang/String;
 
+    .line 2
+    .line 3
     return-object v0
 .end method

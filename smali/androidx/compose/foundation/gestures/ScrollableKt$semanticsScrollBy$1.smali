@@ -4,6 +4,15 @@
 
 
 # annotations
+.annotation runtime Lca/c;
+    c = "androidx.compose.foundation.gestures.ScrollableKt"
+    f = "Scrollable.kt"
+    l = {
+        0x3c6
+    }
+    m = "semanticsScrollBy-d-4ec7I"
+.end annotation
+
 .annotation runtime Lkotlin/Metadata;
     k = 0x3
     mv = {
@@ -12,15 +21,6 @@
         0x0
     }
     xi = 0x30
-.end annotation
-
-.annotation runtime Lth/c;
-    c = "androidx.compose.foundation.gestures.ScrollableKt"
-    f = "Scrollable.kt"
-    l = {
-        0x3c6
-    }
-    m = "semanticsScrollBy-d-4ec7I"
 .end annotation
 
 
@@ -71,7 +71,7 @@
 
     const-wide/16 v0, 0x0
 
-    invoke-static {p1, v0, v1, p0}, Landroidx/compose/foundation/gestures/f0;->a(Landroidx/compose/foundation/gestures/l0;JLkotlin/coroutines/Continuation;)Ljava/lang/Object;
+    invoke-static {p1, v0, v1, p0}, Landroidx/compose/foundation/gestures/H;->a(Landroidx/compose/foundation/gestures/N;JLkotlin/coroutines/jvm/internal/ContinuationImpl;)Ljava/lang/Object;
 
     move-result-object p1
 

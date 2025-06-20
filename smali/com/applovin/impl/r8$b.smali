@@ -35,16 +35,22 @@
     .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
+    .line 2
     iput-object p1, p0, Lcom/applovin/impl/r8$b;->a:[J
 
+    .line 3
     iput-object p2, p0, Lcom/applovin/impl/r8$b;->b:[I
 
+    .line 4
     iput p3, p0, Lcom/applovin/impl/r8$b;->c:I
 
+    .line 5
     iput-object p4, p0, Lcom/applovin/impl/r8$b;->d:[J
 
+    .line 6
     iput-object p5, p0, Lcom/applovin/impl/r8$b;->e:[I
 
+    .line 7
     iput-wide p6, p0, Lcom/applovin/impl/r8$b;->f:J
 
     return-void
@@ -53,7 +59,7 @@
 .method public synthetic constructor <init>([J[II[J[IJLcom/applovin/impl/r8$a;)V
     .locals 0
 
-    .line 2
+    .line 8
     invoke-direct/range {p0 .. p7}, Lcom/applovin/impl/r8$b;-><init>([J[II[J[IJ)V
 
     return-void

@@ -3,29 +3,39 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lzh/f;
+.implements Lka/f;
 
 
 # annotations
+.annotation runtime Lca/c;
+    c = "androidx.work.impl.constraints.WorkConstraintsTracker$track$$inlined$combine$1$3"
+    f = "WorkConstraintsTracker.kt"
+    l = {
+        0x124
+    }
+    m = "invokeSuspend"
+.end annotation
+
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "Lkotlin/coroutines/jvm/internal/SuspendLambda;",
-        "Lzh/f;"
+        "Lka/f;"
     }
 .end annotation
 
 .annotation runtime Lkotlin/Metadata;
     d1 = {
-        "\u0000\u0014\n\u0002\u0008\u0002\n\u0002\u0018\u0002\n\u0002\u0010\u0011\n\u0000\n\u0002\u0018\u0002\n\u0000\u0010\u0006\u001a\u00020\u0005\"\u0006\u0008\u0000\u0010\u0000\u0018\u0001\"\u0004\u0008\u0001\u0010\u0001*\u0008\u0012\u0004\u0012\u00028\u00010\u00022\u000c\u0010\u0004\u001a\u0008\u0012\u0004\u0012\u00028\u00000\u0003H\u008a@"
+        "\u0000\u0016\n\u0002\u0008\u0002\n\u0002\u0018\u0002\n\u0002\u0010\u0011\n\u0000\n\u0002\u0018\u0002\n\u0002\u0008\u0002\u0010\u0006\u001a\u00020\u0005\"\u0006\u0008\u0000\u0010\u0000\u0018\u0001\"\u0004\u0008\u0001\u0010\u0001*\u0008\u0012\u0004\u0012\u00028\u00010\u00022\u000c\u0010\u0004\u001a\u0008\u0012\u0004\u0012\u00028\u00000\u0003H\u008a@\u00a2\u0006\u0004\u0008\u0006\u0010\u0007"
     }
     d2 = {
         "T",
         "R",
-        "Lkotlinx/coroutines/flow/i;",
+        "Lkotlinx/coroutines/flow/g;",
         "",
         "it",
-        "Lqh/r;",
-        "<anonymous>"
+        "LX9/j;",
+        "<anonymous>",
+        "(Lkotlinx/coroutines/flow/g;Lkotlin/Array;)V"
     }
     k = 0x3
     mv = {
@@ -33,15 +43,6 @@
         0x8,
         0x0
     }
-.end annotation
-
-.annotation runtime Lth/c;
-    c = "androidx.work.impl.constraints.WorkConstraintsTracker$track$$inlined$combine$1$3"
-    f = "WorkConstraintsTracker.kt"
-    l = {
-        0x124
-    }
-    m = "invokeSuspend"
 .end annotation
 
 
@@ -70,30 +71,30 @@
     .locals 0
 
     .line 1
-    check-cast p1, Lkotlinx/coroutines/flow/i;
+    check-cast p1, Lkotlinx/coroutines/flow/g;
 
     check-cast p2, [Ljava/lang/Object;
 
     check-cast p3, Lkotlin/coroutines/Continuation;
 
-    invoke-virtual {p0, p1, p2, p3}, Landroidx/work/impl/constraints/WorkConstraintsTracker$track$$inlined$combine$1$3;->invoke(Lkotlinx/coroutines/flow/i;[Ljava/lang/Object;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
+    invoke-virtual {p0, p1, p2, p3}, Landroidx/work/impl/constraints/WorkConstraintsTracker$track$$inlined$combine$1$3;->invoke(Lkotlinx/coroutines/flow/g;[Ljava/lang/Object;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
 
     move-result-object p1
 
     return-object p1
 .end method
 
-.method public final invoke(Lkotlinx/coroutines/flow/i;[Ljava/lang/Object;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
+.method public final invoke(Lkotlinx/coroutines/flow/g;[Ljava/lang/Object;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
     .locals 1
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
-            "Lkotlinx/coroutines/flow/i;",
+            "Lkotlinx/coroutines/flow/g;",
             "[",
             "Landroidx/work/impl/constraints/c;",
             "Lkotlin/coroutines/Continuation<",
             "-",
-            "Lqh/r;",
+            "LX9/j;",
             ">;)",
             "Ljava/lang/Object;"
         }
@@ -108,7 +109,7 @@
 
     iput-object p2, v0, Landroidx/work/impl/constraints/WorkConstraintsTracker$track$$inlined$combine$1$3;->L$1:Ljava/lang/Object;
 
-    sget-object p1, Lqh/r;->a:Lqh/r;
+    sget-object p1, LX9/j;->a:LX9/j;
 
     invoke-virtual {v0, p1}, Landroidx/work/impl/constraints/WorkConstraintsTracker$track$$inlined$combine$1$3;->invokeSuspend(Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -175,7 +176,7 @@
 
     .line 26
     .line 27
-    check-cast p1, Lkotlinx/coroutines/flow/i;
+    check-cast p1, Lkotlinx/coroutines/flow/g;
 
     .line 28
     .line 29
@@ -210,7 +211,7 @@
 
     .line 42
     .line 43
-    invoke-static {v6, v5}, Lrb/h;->d(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v6, v5}, Lkotlin/jvm/internal/h;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     .line 44
     .line 45
@@ -218,65 +219,62 @@
     move-result v7
 
     .line 47
-    xor-int/2addr v7, v2
+    if-nez v7, :cond_2
 
     .line 48
-    if-eqz v7, :cond_2
-
     .line 49
-    .line 50
     goto :goto_1
 
-    .line 51
+    .line 50
     :cond_2
     add-int/lit8 v4, v4, 0x1
 
+    .line 51
     .line 52
-    .line 53
     goto :goto_0
 
-    .line 54
+    .line 53
     :cond_3
     const/4 v6, 0x0
 
-    .line 55
+    .line 54
     :goto_1
     if-nez v6, :cond_4
 
+    .line 55
     .line 56
-    .line 57
     goto :goto_2
 
-    .line 58
+    .line 57
     :cond_4
     move-object v5, v6
 
-    .line 59
+    .line 58
     :goto_2
     iput v2, p0, Landroidx/work/impl/constraints/WorkConstraintsTracker$track$$inlined$combine$1$3;->label:I
 
+    .line 59
     .line 60
-    .line 61
-    invoke-interface {p1, v5, p0}, Lkotlinx/coroutines/flow/i;->emit(Ljava/lang/Object;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
+    invoke-interface {p1, v5, p0}, Lkotlinx/coroutines/flow/g;->emit(Ljava/lang/Object;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
 
+    .line 61
     .line 62
     .line 63
-    .line 64
     move-result-object p1
 
-    .line 65
+    .line 64
     if-ne p1, v0, :cond_5
 
+    .line 65
     .line 66
-    .line 67
     return-object v0
 
-    .line 68
+    .line 67
     :cond_5
     :goto_3
-    sget-object p1, Lqh/r;->a:Lqh/r;
+    sget-object p1, LX9/j;->a:LX9/j;
 
+    .line 68
     .line 69
-    .line 70
     return-object p1
 .end method

@@ -68,15 +68,17 @@
 
 .method public static a()Lorg/json/JSONArray;
     .locals 3
+    .annotation build Landroidx/annotation/NonNull;
+    .end annotation
 
     .line 21
     new-instance v0, Lorg/json/JSONArray;
 
     invoke-direct {v0}, Lorg/json/JSONArray;-><init>()V
 
+    .line 22
     sget-object v1, Lcom/apm/insight/entity/b;->a:Ljava/util/concurrent/ConcurrentLinkedQueue;
 
-    .line 22
     invoke-virtual {v1}, Ljava/util/concurrent/ConcurrentLinkedQueue;->iterator()Ljava/util/Iterator;
 
     move-result-object v1
@@ -111,15 +113,17 @@
 
 .method public static a(Ljava/lang/Object;)Lorg/json/JSONArray;
     .locals 4
+    .annotation build Landroidx/annotation/NonNull;
+    .end annotation
 
     .line 24
     new-instance v0, Lorg/json/JSONArray;
 
     invoke-direct {v0}, Lorg/json/JSONArray;-><init>()V
 
+    .line 25
     sget-object v1, Lcom/apm/insight/entity/b;->a:Ljava/util/concurrent/ConcurrentLinkedQueue;
 
-    .line 25
     invoke-virtual {v1}, Ljava/util/concurrent/ConcurrentLinkedQueue;->iterator()Ljava/util/Iterator;
 
     move-result-object v1
@@ -164,9 +168,9 @@
 .method public static a(Ljava/lang/Object;Ljava/lang/Throwable;[Ljava/lang/StackTraceElement;)Lorg/json/JSONArray;
     .locals 3
 
+    .line 28
     sget-object v0, Lcom/apm/insight/entity/b;->a:Ljava/util/concurrent/ConcurrentLinkedQueue;
 
-    .line 28
     invoke-virtual {v0}, Ljava/util/concurrent/ConcurrentLinkedQueue;->iterator()Ljava/util/Iterator;
 
     move-result-object v0
@@ -209,18 +213,18 @@
 
     invoke-direct {p2}, Lorg/json/JSONObject;-><init>()V
 
+    .line 33
     const-string v0, "aid"
 
-    .line 33
     invoke-virtual {v1}, Lcom/apm/insight/d;->b()Ljava/lang/String;
 
     move-result-object v1
 
     invoke-virtual {p2, v0, v1}, Lorg/json/JSONObject;->put(Ljava/lang/String;Ljava/lang/Object;)Lorg/json/JSONObject;
 
+    .line 34
     const-string v0, "lines"
 
-    .line 34
     invoke-virtual {p2, v0, p0}, Lorg/json/JSONObject;->put(Ljava/lang/String;Ljava/lang/Object;)Lorg/json/JSONObject;
 
     .line 35
@@ -239,22 +243,24 @@
 
 .method public static a(Ljava/lang/String;)Lorg/json/JSONArray;
     .locals 5
+    .annotation build Landroidx/annotation/NonNull;
+    .end annotation
 
     .line 14
     new-instance v0, Lorg/json/JSONArray;
 
     invoke-direct {v0}, Lorg/json/JSONArray;-><init>()V
 
+    .line 15
     const-string v1, "\n"
 
-    .line 15
     invoke-virtual {p0, v1}, Ljava/lang/String;->split(Ljava/lang/String;)[Ljava/lang/String;
 
     move-result-object p0
 
+    .line 16
     sget-object v1, Lcom/apm/insight/entity/b;->a:Ljava/util/concurrent/ConcurrentLinkedQueue;
 
-    .line 16
     invoke-virtual {v1}, Ljava/util/concurrent/ConcurrentLinkedQueue;->iterator()Ljava/util/Iterator;
 
     move-result-object v1
@@ -315,6 +321,8 @@
 
 .method public static a(Ljava/lang/String;Ljava/lang/String;Lorg/json/JSONArray;)Lorg/json/JSONArray;
     .locals 6
+    .annotation build Landroidx/annotation/NonNull;
+    .end annotation
 
     .line 36
     new-instance v0, Lorg/json/JSONArray;
@@ -338,18 +346,18 @@
 
     if-eqz v2, :cond_1
 
+    .line 39
     const-string v3, "header"
 
-    .line 39
     invoke-virtual {v2, v3}, Lorg/json/JSONObject;->optJSONObject(Ljava/lang/String;)Lorg/json/JSONObject;
 
     move-result-object v3
 
     if-eqz v3, :cond_1
 
+    .line 40
     const-string v4, "aid"
 
-    .line 40
     invoke-virtual {v3, v4}, Lorg/json/JSONObject;->opt(Ljava/lang/String;)Ljava/lang/Object;
 
     move-result-object v4
@@ -365,9 +373,9 @@
 
     if-eqz v4, :cond_1
 
+    .line 42
     const-string v4, "package"
 
-    .line 42
     invoke-virtual {v3, v4}, Lorg/json/JSONObject;->optString(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v4
@@ -384,10 +392,10 @@
 
     goto :goto_1
 
+    .line 45
     :cond_0
     const-string v4, "so_list"
 
-    .line 45
     invoke-virtual {v3, v4}, Lorg/json/JSONObject;->optJSONArray(Ljava/lang/String;)Lorg/json/JSONArray;
 
     move-result-object v5
@@ -419,6 +427,12 @@
 
 .method public static a(Ljava/lang/Throwable;Ljava/lang/Thread;Ljava/io/File;)Lorg/json/JSONArray;
     .locals 6
+    .param p2    # Ljava/io/File;
+        .annotation build Landroidx/annotation/Nullable;
+        .end annotation
+    .end param
+    .annotation build Landroidx/annotation/Nullable;
+    .end annotation
 
     .line 3
     new-instance v0, Lorg/json/JSONArray;
@@ -430,9 +444,9 @@
 
     move-result-object v1
 
+    .line 5
     sget-object v2, Lcom/apm/insight/entity/b;->a:Ljava/util/concurrent/ConcurrentLinkedQueue;
 
-    .line 5
     invoke-virtual {v2}, Ljava/util/concurrent/ConcurrentLinkedQueue;->iterator()Ljava/util/Iterator;
 
     move-result-object v2
@@ -551,10 +565,14 @@
 
 .method public static a(Lcom/apm/insight/d;)V
     .locals 1
-
-    sget-object v0, Lcom/apm/insight/entity/b;->a:Ljava/util/concurrent/ConcurrentLinkedQueue;
+    .param p0    # Lcom/apm/insight/d;
+        .annotation build Landroidx/annotation/NonNull;
+        .end annotation
+    .end param
 
     .line 1
+    sget-object v0, Lcom/apm/insight/entity/b;->a:Ljava/util/concurrent/ConcurrentLinkedQueue;
+
     invoke-virtual {v0, p0}, Ljava/util/concurrent/ConcurrentLinkedQueue;->add(Ljava/lang/Object;)Z
 
     return-void
@@ -600,6 +618,7 @@
 
     if-eqz v3, :cond_1
 
+    .line 61
     const-string v4, "header"
 
     const-string v5, "single_upload"
@@ -608,7 +627,6 @@
 
     move-result-object v4
 
-    .line 61
     invoke-static {v3, v1, v4}, Lcom/apm/insight/a;->a(Lorg/json/JSONObject;I[Ljava/lang/String;)I
 
     move-result v4
@@ -661,10 +679,10 @@
     .line 69
     invoke-static {p1, p0}, Lcom/apm/insight/entity/a;->b(Lorg/json/JSONObject;Lorg/json/JSONObject;)V
 
+    .line 70
     :try_start_0
     const-string p0, "all_data"
 
-    .line 70
     invoke-virtual {p1, p0, v0}, Lorg/json/JSONObject;->put(Ljava/lang/String;Ljava/lang/Object;)Lorg/json/JSONObject;
     :try_end_0
     .catch Lorg/json/JSONException; {:try_start_0 .. :try_end_0} :catch_0
@@ -772,10 +790,12 @@
 
 .method public static b(Ljava/lang/Object;)Ljava/lang/String;
     .locals 3
-
-    sget-object v0, Lcom/apm/insight/entity/b;->a:Ljava/util/concurrent/ConcurrentLinkedQueue;
+    .annotation build Landroidx/annotation/Nullable;
+    .end annotation
 
     .line 5
+    sget-object v0, Lcom/apm/insight/entity/b;->a:Ljava/util/concurrent/ConcurrentLinkedQueue;
+
     invoke-virtual {v0}, Ljava/util/concurrent/ConcurrentLinkedQueue;->iterator()Ljava/util/Iterator;
 
     move-result-object v0
@@ -817,15 +837,17 @@
 
 .method public static b()Lorg/json/JSONArray;
     .locals 4
+    .annotation build Landroidx/annotation/NonNull;
+    .end annotation
 
     .line 1
     new-instance v0, Lorg/json/JSONArray;
 
     invoke-direct {v0}, Lorg/json/JSONArray;-><init>()V
 
+    .line 2
     sget-object v1, Lcom/apm/insight/entity/b;->a:Ljava/util/concurrent/ConcurrentLinkedQueue;
 
-    .line 2
     invoke-virtual {v1}, Ljava/util/concurrent/ConcurrentLinkedQueue;->iterator()Ljava/util/Iterator;
 
     move-result-object v1

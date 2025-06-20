@@ -218,10 +218,6 @@
     .line 89
     .line 90
     .line 91
-    .line 92
-    .line 93
-    .line 94
-    .line 95
     :array_2
     .array-data 4
         0x3f958106    # 1.168f
@@ -235,18 +231,6 @@
         0x0
     .end array-data
 
-    .line 96
-    .line 97
-    .line 98
-    .line 99
-    .line 100
-    .line 101
-    .line 102
-    .line 103
-    .line 104
-    .line 105
-    .line 106
-    .line 107
     :array_3
     .array-data 4
         -0x40800000    # -1.0f
@@ -370,23 +354,23 @@
 .method private a()V
     .locals 5
 
+    .line 4
     iget-object v0, p0, Lcom/applovin/impl/rq$a;->b:[I
 
     const/4 v1, 0x3
 
     const/4 v2, 0x0
 
-    .line 3
     invoke-static {v1, v0, v2}, Landroid/opengl/GLES20;->glGenTextures(I[II)V
 
     :goto_0
     if-ge v2, v1, :cond_0
 
+    .line 5
     iget v0, p0, Lcom/applovin/impl/rq$a;->h:I
 
     sget-object v3, Lcom/applovin/impl/rq$a;->m:[Ljava/lang/String;
 
-    .line 4
     aget-object v3, v3, v2
 
     invoke-static {v0, v3}, Landroid/opengl/GLES20;->glGetUniformLocation(ILjava/lang/String;)I
@@ -399,12 +383,12 @@
 
     add-int/2addr v0, v2
 
-    .line 5
+    .line 6
     invoke-static {v0}, Landroid/opengl/GLES20;->glActiveTexture(I)V
 
+    .line 7
     iget-object v0, p0, Lcom/applovin/impl/rq$a;->b:[I
 
-    .line 6
     aget v0, v0, v2
 
     const/16 v3, 0xde1
@@ -415,31 +399,31 @@
 
     const v4, 0x46180400    # 9729.0f
 
-    .line 7
+    .line 8
     invoke-static {v3, v0, v4}, Landroid/opengl/GLES20;->glTexParameterf(IIF)V
 
     const/16 v0, 0x2800
 
-    .line 8
+    .line 9
     invoke-static {v3, v0, v4}, Landroid/opengl/GLES20;->glTexParameterf(IIF)V
 
     const/16 v0, 0x2802
 
     const v4, 0x47012f00    # 33071.0f
 
-    .line 9
+    .line 10
     invoke-static {v3, v0, v4}, Landroid/opengl/GLES20;->glTexParameterf(IIF)V
 
     const/16 v0, 0x2803
 
-    .line 10
+    .line 11
     invoke-static {v3, v0, v4}, Landroid/opengl/GLES20;->glTexParameterf(IIF)V
 
     add-int/lit8 v2, v2, 0x1
 
     goto :goto_0
 
-    .line 11
+    .line 12
     :cond_0
     invoke-static {}, Lcom/applovin/impl/aa;->a()V
 
@@ -451,18 +435,19 @@
 .method public a(Lcom/applovin/impl/sq;)V
     .locals 1
 
+    .line 1
     iget-object v0, p0, Lcom/applovin/impl/rq$a;->f:Ljava/util/concurrent/atomic/AtomicReference;
 
-    .line 1
+    .line 2
     invoke-virtual {v0, p1}, Ljava/util/concurrent/atomic/AtomicReference;->getAndSet(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object p1
 
     invoke-static {p1}, Lcom/applovin/impl/c8;->a(Ljava/lang/Object;)V
 
+    .line 3
     iget-object p1, p0, Lcom/applovin/impl/rq$a;->a:Landroid/opengl/GLSurfaceView;
 
-    .line 2
     invoke-virtual {p1}, Landroid/opengl/GLSurfaceView;->requestRender()V
 
     return-void
@@ -564,18 +549,18 @@
 
     .line 26
     .line 27
-    const/4 v1, 0x2
-
-    .line 28
-    const/16 v2, 0x1406
-
-    .line 29
-    .line 30
     const/4 v3, 0x0
 
-    .line 31
+    .line 28
     const/4 v4, 0x0
 
+    .line 29
+    const/4 v1, 0x2
+
+    .line 30
+    const/16 v2, 0x1406
+
+    .line 31
     .line 32
     invoke-static/range {v0 .. v5}, Landroid/opengl/GLES20;->glVertexAttribPointer(IIIZILjava/nio/Buffer;)V
 

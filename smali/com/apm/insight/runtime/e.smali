@@ -35,9 +35,9 @@
 .method public constructor <init>()V
     .locals 1
 
+    .line 1
     sget-object v0, Lcom/apm/insight/runtime/e;->b:Lcom/apm/insight/runtime/e;
 
-    .line 1
     invoke-direct {p0, v0}, Lcom/apm/insight/runtime/e;-><init>(Lcom/apm/insight/runtime/e;)V
 
     return-void
@@ -49,6 +49,7 @@
     .line 2
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
+    .line 3
     iput-object p1, p0, Lcom/apm/insight/runtime/e;->a:Lcom/apm/insight/runtime/e;
 
     return-void
@@ -58,6 +59,8 @@
 # virtual methods
 .method public a(Ljava/lang/String;)Ljava/lang/Object;
     .locals 1
+    .annotation build Landroidx/annotation/Nullable;
+    .end annotation
 
     .line 1
     iget-object v0, p0, Lcom/apm/insight/runtime/e;->a:Lcom/apm/insight/runtime/e;
@@ -88,6 +91,8 @@
 
 .method public b(Ljava/lang/String;)Ljava/lang/Object;
     .locals 1
+    .annotation build Landroidx/annotation/Nullable;
+    .end annotation
 
     .line 1
     iget-object v0, p0, Lcom/apm/insight/runtime/e;->a:Lcom/apm/insight/runtime/e;

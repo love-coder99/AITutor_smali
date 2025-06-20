@@ -3,7 +3,7 @@
 .source "SourceFile"
 
 # interfaces
-.implements Landroidx/core/view/f1;
+.implements Landroidx/core/view/l0;
 
 
 # annotations
@@ -54,10 +54,14 @@
 .method public onAnimationCancel(Landroid/view/View;)V
     .locals 0
 
+    .line 1
     const/4 p1, 0x1
 
+    .line 2
     iput-boolean p1, p0, Landroidx/appcompat/widget/AbsActionBarView$VisibilityAnimListener;->mCanceled:Z
 
+    .line 3
+    .line 4
     return-void
 .end method
 
@@ -84,7 +88,7 @@
     const/4 v0, 0x0
 
     .line 9
-    iput-object v0, p1, Landroidx/appcompat/widget/AbsActionBarView;->mVisibilityAnim:Landroidx/core/view/e1;
+    iput-object v0, p1, Landroidx/appcompat/widget/AbsActionBarView;->mVisibilityAnim:Landroidx/core/view/k0;
 
     .line 10
     .line 11
@@ -123,7 +127,7 @@
     return-void
 .end method
 
-.method public withFinalVisibility(Landroidx/core/view/e1;I)Landroidx/appcompat/widget/AbsActionBarView$VisibilityAnimListener;
+.method public withFinalVisibility(Landroidx/core/view/k0;I)Landroidx/appcompat/widget/AbsActionBarView$VisibilityAnimListener;
     .locals 1
 
     .line 1
@@ -131,7 +135,7 @@
 
     .line 2
     .line 3
-    iput-object p1, v0, Landroidx/appcompat/widget/AbsActionBarView;->mVisibilityAnim:Landroidx/core/view/e1;
+    iput-object p1, v0, Landroidx/appcompat/widget/AbsActionBarView;->mVisibilityAnim:Landroidx/core/view/k0;
 
     .line 4
     .line 5

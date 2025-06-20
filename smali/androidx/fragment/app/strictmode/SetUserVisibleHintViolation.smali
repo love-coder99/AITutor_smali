@@ -95,7 +95,10 @@
 .method public final isVisibleToUser()Z
     .locals 1
 
+    .line 1
     iget-boolean v0, p0, Landroidx/fragment/app/strictmode/SetUserVisibleHintViolation;->isVisibleToUser:Z
 
+    .line 2
+    .line 3
     return v0
 .end method

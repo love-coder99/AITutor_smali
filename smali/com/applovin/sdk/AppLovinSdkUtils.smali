@@ -348,6 +348,14 @@
 
 .method public static isInclusiveVersion(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Z
     .locals 2
+    .param p1    # Ljava/lang/String;
+        .annotation build Landroidx/annotation/Nullable;
+        .end annotation
+    .end param
+    .param p2    # Ljava/lang/String;
+        .annotation build Landroidx/annotation/Nullable;
+        .end annotation
+    .end param
 
     .line 1
     invoke-static {p0}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
@@ -683,10 +691,10 @@
 
     goto :goto_0
 
+    .line 4
     :cond_0
     sget-object p0, Lcom/applovin/sdk/AppLovinSdkUtils;->a:Landroid/os/Handler;
 
-    .line 4
     invoke-virtual {p0, p1}, Landroid/os/Handler;->post(Ljava/lang/Runnable;)Z
 
     :goto_0
@@ -696,9 +704,9 @@
 .method public static runOnUiThreadDelayed(Ljava/lang/Runnable;J)V
     .locals 1
 
+    .line 1
     sget-object v0, Lcom/applovin/sdk/AppLovinSdkUtils;->a:Landroid/os/Handler;
 
-    .line 1
     invoke-static {p0, p1, p2, v0}, Lcom/applovin/sdk/AppLovinSdkUtils;->runOnUiThreadDelayed(Ljava/lang/Runnable;JLandroid/os/Handler;)V
 
     return-void

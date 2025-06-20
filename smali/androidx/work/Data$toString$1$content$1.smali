@@ -3,14 +3,14 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lzh/c;
+.implements Lka/c;
 
 
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "Lkotlin/jvm/internal/Lambda;",
-        "Lzh/c;"
+        "Lka/c;"
     }
 .end annotation
 
@@ -91,14 +91,15 @@
 
     move-result-object p1
 
+    .line 2
     const-string v1, " : "
 
-    .line 2
-    invoke-static {v0, v1}, Lj0/d;->s(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/StringBuilder;
+    .line 3
+    invoke-static {v0, v1}, LB/u;->z(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object v0
 
-    .line 3
+    .line 4
     instance-of v1, p1, [Ljava/lang/Object;
 
     if-eqz v1, :cond_0
@@ -122,7 +123,7 @@
 .method public bridge synthetic invoke(Ljava/lang/Object;)Ljava/lang/Object;
     .locals 0
 
-    .line 8
+    .line 9
     check-cast p1, Ljava/util/Map$Entry;
 
     invoke-virtual {p0, p1}, Landroidx/work/Data$toString$1$content$1;->invoke(Ljava/util/Map$Entry;)Ljava/lang/CharSequence;

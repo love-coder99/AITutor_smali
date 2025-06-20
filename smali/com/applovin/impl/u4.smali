@@ -122,21 +122,21 @@
 .method private a(Lcom/applovin/impl/u4$c;I)V
     .locals 3
 
+    .line 14
     iget-object v0, p0, Lcom/applovin/impl/u4;->b:Landroid/os/Handler;
 
-    .line 13
-    new-instance v1, Lcom/applovin/impl/qw;
+    new-instance v1, Lcom/applovin/impl/G3;
 
     const/4 v2, 0x0
 
-    invoke-direct {v1, p0, p1, p2, v2}, Lcom/applovin/impl/qw;-><init>(Ljava/lang/Object;Ljava/lang/Object;II)V
+    invoke-direct {v1, p0, p1, p2, v2}, Lcom/applovin/impl/G3;-><init>(Ljava/lang/Object;Ljava/lang/Object;II)V
 
-    .line 14
+    .line 15
     invoke-static {p1}, Lcom/applovin/impl/u4$c;->b(Lcom/applovin/impl/u4$c;)J
 
     move-result-wide p1
 
-    .line 15
+    .line 16
     invoke-virtual {v0, v1, p1, p2}, Landroid/os/Handler;->postDelayed(Ljava/lang/Runnable;J)Z
 
     return-void
@@ -168,9 +168,9 @@
 
     if-eqz v1, :cond_2
 
+    .line 3
     iget-object v1, p0, Lcom/applovin/impl/u4;->d:Ljava/util/concurrent/atomic/AtomicInteger;
 
-    .line 3
     invoke-virtual {v1}, Ljava/util/concurrent/atomic/AtomicInteger;->get()I
 
     move-result v1
@@ -292,7 +292,7 @@
 .method public a()V
     .locals 3
 
-    .line 16
+    .line 17
     invoke-static {}, Lcom/applovin/impl/sdk/n;->a()Z
 
     move-result v0
@@ -307,13 +307,13 @@
 
     invoke-virtual {v0, v1, v2}, Lcom/applovin/impl/sdk/n;->a(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 17
+    .line 18
     :cond_0
     invoke-virtual {p0}, Lcom/applovin/impl/u4;->c()V
 
+    .line 19
     iget-object v0, p0, Lcom/applovin/impl/u4;->c:Ljava/util/Set;
 
-    .line 18
     invoke-interface {v0}, Ljava/util/Set;->clear()V
 
     return-void
@@ -328,11 +328,12 @@
 
     if-lez v2, :cond_2
 
+    .line 2
     iget-object v0, p0, Lcom/applovin/impl/u4;->b:Landroid/os/Handler;
 
     if-eqz v0, :cond_1
 
-    .line 2
+    .line 3
     invoke-static {}, Lcom/applovin/impl/sdk/n;->a()Z
 
     move-result v0
@@ -345,10 +346,10 @@
 
     const-string v2, "CountdownManager"
 
-    .line 3
-    invoke-static {v1, p1, v0, v2}, Landroidx/compose/foundation/text/modifiers/f;->A(Ljava/lang/String;Ljava/lang/String;Lcom/applovin/impl/sdk/n;Ljava/lang/String;)V
-
     .line 4
+    invoke-static {v1, p1, v0, v2}, Lcom/android/billingclient/api/a;->w(Ljava/lang/String;Ljava/lang/String;Lcom/applovin/impl/sdk/n;Ljava/lang/String;)V
+
+    .line 5
     :cond_0
     new-instance v0, Lcom/applovin/impl/u4$c;
 
@@ -364,14 +365,14 @@
 
     invoke-direct/range {v3 .. v8}, Lcom/applovin/impl/u4$c;-><init>(Ljava/lang/String;JLcom/applovin/impl/u4$b;Lcom/applovin/impl/u4$a;)V
 
+    .line 6
     iget-object p1, p0, Lcom/applovin/impl/u4;->c:Ljava/util/Set;
 
-    .line 5
     invoke-interface {p1, v0}, Ljava/util/Set;->add(Ljava/lang/Object;)Z
 
     return-void
 
-    .line 6
+    .line 7
     :cond_1
     new-instance p1, Ljava/lang/IllegalArgumentException;
 
@@ -381,7 +382,7 @@
 
     throw p1
 
-    .line 7
+    .line 8
     :cond_2
     new-instance p1, Ljava/lang/IllegalArgumentException;
 
@@ -435,10 +436,10 @@
 
     invoke-virtual {v1, v2, v3}, Lcom/applovin/impl/sdk/n;->a(Ljava/lang/String;Ljava/lang/String;)V
 
+    .line 12
     :cond_0
     iget-object v1, p0, Lcom/applovin/impl/u4;->d:Ljava/util/concurrent/atomic/AtomicInteger;
 
-    .line 12
     invoke-virtual {v1}, Ljava/util/concurrent/atomic/AtomicInteger;->incrementAndGet()I
 
     move-result v1

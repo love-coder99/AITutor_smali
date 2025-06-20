@@ -80,9 +80,9 @@
 .method private a(Lcom/applovin/impl/sdk/j;)V
     .locals 2
 
+    .line 4
     const-string v0, "WebView Activity"
 
-    .line 4
     invoke-static {p0, v0}, Lcom/applovin/impl/yp;->b(Landroid/content/Context;Ljava/lang/String;)Landroid/webkit/WebView;
 
     move-result-object v0
@@ -100,9 +100,9 @@
     :cond_0
     invoke-virtual {p0, v0}, Landroid/app/Activity;->setContentView(Landroid/view/View;)V
 
+    .line 7
     iget-object v0, p0, Lcom/applovin/sdk/AppLovinWebViewActivity;->c:Landroid/webkit/WebView;
 
-    .line 7
     invoke-virtual {v0}, Landroid/webkit/WebView;->getSettings()Landroid/webkit/WebSettings;
 
     move-result-object v0
@@ -117,26 +117,26 @@
     .line 9
     invoke-virtual {v0, v1}, Landroid/webkit/WebSettings;->setJavaScriptEnabled(Z)V
 
+    .line 10
     iget-object v0, p0, Lcom/applovin/sdk/AppLovinWebViewActivity;->c:Landroid/webkit/WebView;
 
-    .line 10
     invoke-virtual {v0, v1}, Landroid/view/View;->setVerticalScrollBarEnabled(Z)V
 
+    .line 11
     iget-object v0, p0, Lcom/applovin/sdk/AppLovinWebViewActivity;->c:Landroid/webkit/WebView;
 
-    .line 11
     invoke-virtual {v0, v1}, Landroid/view/View;->setHorizontalScrollBarEnabled(Z)V
 
+    .line 12
     iget-object v0, p0, Lcom/applovin/sdk/AppLovinWebViewActivity;->c:Landroid/webkit/WebView;
 
     const/high16 v1, 0x2000000
 
-    .line 12
     invoke-virtual {v0, v1}, Landroid/webkit/WebView;->setScrollBarStyle(I)V
 
+    .line 13
     iget-object v0, p0, Lcom/applovin/sdk/AppLovinWebViewActivity;->c:Landroid/webkit/WebView;
 
-    .line 13
     new-instance v1, Lcom/applovin/sdk/AppLovinWebViewActivity$a;
 
     invoke-direct {v1, p0, p1}, Lcom/applovin/sdk/AppLovinWebViewActivity$a;-><init>(Lcom/applovin/sdk/AppLovinWebViewActivity;Lcom/applovin/impl/sdk/j;)V

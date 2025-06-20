@@ -3,14 +3,14 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lzh/a;
+.implements Lka/a;
 
 
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "Lkotlin/jvm/internal/Lambda;",
-        "Lzh/a;"
+        "Lka/a;"
     }
 .end annotation
 
@@ -19,9 +19,9 @@
         "\u0000\u0008\n\u0002\u0018\u0002\n\u0002\u0008\u0003\u0010\u0003\u001a\u00020\u0000H\n\u00a2\u0006\u0004\u0008\u0001\u0010\u0002"
     }
     d2 = {
-        "Landroidx/compose/runtime/snapshots/s;",
+        "Landroidx/compose/runtime/snapshots/q;",
         "invoke",
-        "()Landroidx/compose/runtime/snapshots/s;",
+        "()Landroidx/compose/runtime/snapshots/q;",
         "<anonymous>"
     }
     k = 0x3
@@ -62,24 +62,17 @@
 
 
 # virtual methods
-.method public final invoke()Landroidx/compose/runtime/snapshots/s;
+.method public final invoke()Landroidx/compose/runtime/snapshots/q;
     .locals 2
 
     .line 1
-    new-instance v0, Landroidx/compose/runtime/snapshots/s;
+    new-instance v0, Landroidx/compose/runtime/snapshots/q;
 
     sget-object v1, Landroidx/compose/animation/core/TransitionKt$SeekableStateObserver$2$1;->INSTANCE:Landroidx/compose/animation/core/TransitionKt$SeekableStateObserver$2$1;
 
-    invoke-direct {v0, v1}, Landroidx/compose/runtime/snapshots/s;-><init>(Lzh/c;)V
+    invoke-direct {v0, v1}, Landroidx/compose/runtime/snapshots/q;-><init>(Lka/c;)V
 
-    iget-object v1, v0, Landroidx/compose/runtime/snapshots/s;->d:Lzh/e;
-
-    .line 2
-    invoke-static {v1}, Lxd/e;->x(Lzh/e;)Landroidx/compose/runtime/snapshots/g;
-
-    move-result-object v1
-
-    iput-object v1, v0, Landroidx/compose/runtime/snapshots/s;->g:Landroidx/compose/runtime/snapshots/g;
+    invoke-virtual {v0}, Landroidx/compose/runtime/snapshots/q;->e()V
 
     return-object v0
 .end method
@@ -87,8 +80,8 @@
 .method public bridge synthetic invoke()Ljava/lang/Object;
     .locals 1
 
-    .line 3
-    invoke-virtual {p0}, Landroidx/compose/animation/core/TransitionKt$SeekableStateObserver$2;->invoke()Landroidx/compose/runtime/snapshots/s;
+    .line 2
+    invoke-virtual {p0}, Landroidx/compose/animation/core/TransitionKt$SeekableStateObserver$2;->invoke()Landroidx/compose/runtime/snapshots/q;
 
     move-result-object v0
 

@@ -3,14 +3,14 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lzh/a;
+.implements Lka/a;
 
 
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "Lkotlin/jvm/internal/Lambda;",
-        "Lzh/a;"
+        "Lka/a;"
     }
 .end annotation
 
@@ -56,13 +56,14 @@
 .method public final invoke()Ljava/lang/Boolean;
     .locals 1
 
+    .line 2
     iget-object v0, p0, Landroidx/compose/foundation/AbstractClickableNode$applySemantics$1;->this$0:Landroidx/compose/foundation/a;
 
-    .line 1
-    iget-object v0, v0, Landroidx/compose/foundation/a;->w:Lzh/a;
+    .line 3
+    iget-object v0, v0, Landroidx/compose/foundation/a;->w:Lka/a;
 
-    .line 2
-    invoke-interface {v0}, Lzh/a;->invoke()Ljava/lang/Object;
+    .line 4
+    invoke-interface {v0}, Lka/a;->invoke()Ljava/lang/Object;
 
     sget-object v0, Ljava/lang/Boolean;->TRUE:Ljava/lang/Boolean;
 
@@ -72,7 +73,7 @@
 .method public bridge synthetic invoke()Ljava/lang/Object;
     .locals 1
 
-    .line 3
+    .line 1
     invoke-virtual {p0}, Landroidx/compose/foundation/AbstractClickableNode$applySemantics$1;->invoke()Ljava/lang/Boolean;
 
     move-result-object v0

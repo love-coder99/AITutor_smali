@@ -19,13 +19,13 @@
 .method public constructor <init>(Ljava/lang/Object;)V
     .locals 6
 
-    const-class v2, Landroidx/compose/runtime/d3;
-
-    const-string v3, "value"
-
     const-string v4, "getValue()Ljava/lang/Object;"
 
     const/4 v5, 0x0
+
+    const-class v2, Landroidx/compose/runtime/H0;
+
+    const-string v3, "value"
 
     move-object v0, p0
 
@@ -46,11 +46,11 @@
 
     .line 2
     .line 3
-    check-cast v0, Landroidx/compose/runtime/d3;
+    check-cast v0, Landroidx/compose/runtime/H0;
 
     .line 4
     .line 5
-    invoke-interface {v0}, Landroidx/compose/runtime/d3;->getValue()Ljava/lang/Object;
+    invoke-interface {v0}, Landroidx/compose/runtime/H0;->getValue()Ljava/lang/Object;
 
     .line 6
     .line 7

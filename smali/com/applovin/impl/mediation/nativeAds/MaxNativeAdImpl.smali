@@ -30,14 +30,22 @@
 # virtual methods
 .method public getAdViewTracker()Lcom/applovin/impl/mediation/ads/b;
     .locals 1
+    .annotation build Landroidx/annotation/Nullable;
+    .end annotation
 
+    .line 1
     iget-object v0, p0, Lcom/applovin/impl/mediation/nativeAds/MaxNativeAdImpl;->adViewTracker:Lcom/applovin/impl/mediation/ads/b;
 
+    .line 2
+    .line 3
     return-object v0
 .end method
 
 .method public getClickableViews()Ljava/util/List;
     .locals 1
+    .annotation build Landroidx/annotation/Nullable;
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "()",
@@ -47,16 +55,22 @@
         }
     .end annotation
 
+    .line 1
     iget-object v0, p0, Lcom/applovin/impl/mediation/nativeAds/MaxNativeAdImpl;->clickableViews:Ljava/util/List;
 
+    .line 2
+    .line 3
     return-object v0
 .end method
 
 .method public setAdViewTracker(Lcom/applovin/impl/mediation/ads/b;)V
     .locals 0
 
+    .line 1
     iput-object p1, p0, Lcom/applovin/impl/mediation/nativeAds/MaxNativeAdImpl;->adViewTracker:Lcom/applovin/impl/mediation/ads/b;
 
+    .line 2
+    .line 3
     return-void
 .end method
 
@@ -71,7 +85,10 @@
         }
     .end annotation
 
+    .line 1
     iput-object p1, p0, Lcom/applovin/impl/mediation/nativeAds/MaxNativeAdImpl;->clickableViews:Ljava/util/List;
 
+    .line 2
+    .line 3
     return-void
 .end method

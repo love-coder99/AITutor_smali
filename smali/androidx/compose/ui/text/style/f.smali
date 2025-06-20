@@ -122,18 +122,10 @@
 
     .line 23
     .line 24
-    invoke-virtual {v0}, Ljava/lang/Object;->toString()Ljava/lang/String;
+    invoke-direct {p0, v0}, Ljava/lang/IllegalStateException;-><init>(Ljava/lang/String;)V
 
     .line 25
     .line 26
     .line 27
-    move-result-object v0
-
-    .line 28
-    invoke-direct {p0, v0}, Ljava/lang/IllegalStateException;-><init>(Ljava/lang/String;)V
-
-    .line 29
-    .line 30
-    .line 31
     throw p0
 .end method

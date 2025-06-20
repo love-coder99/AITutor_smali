@@ -176,6 +176,7 @@
 .method public static a()Lcom/apm/insight/g/a;
     .locals 1
 
+    .line 1
     sget-object v0, Lcom/apm/insight/g/a;->a:Lcom/apm/insight/g/a;
 
     if-nez v0, :cond_0
@@ -187,6 +188,7 @@
 
     sput-object v0, Lcom/apm/insight/g/a;->a:Lcom/apm/insight/g/a;
 
+    .line 3
     :cond_0
     sget-object v0, Lcom/apm/insight/g/a;->a:Lcom/apm/insight/g/a;
 
@@ -196,21 +198,21 @@
 .method private a(Ljava/io/File;Ljava/lang/Throwable;Ljava/lang/Thread;Z)Ljava/lang/String;
     .locals 3
 
-    .line 58
+    .line 73
     invoke-virtual {p1}, Ljava/io/File;->getAbsolutePath()Ljava/lang/String;
 
     move-result-object v0
 
+    .line 74
     iget-object v1, p0, Lcom/apm/insight/g/a;->h:Ljava/util/concurrent/ConcurrentHashMap;
 
-    .line 59
     invoke-virtual {p1}, Ljava/io/File;->getName()Ljava/lang/String;
 
     move-result-object v2
 
     invoke-virtual {v1, v2, p1}, Ljava/util/concurrent/ConcurrentHashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 60
+    .line 75
     :try_start_0
     invoke-virtual {p1}, Ljava/io/File;->getParentFile()Ljava/io/File;
 
@@ -218,10 +220,10 @@
 
     invoke-virtual {v1}, Ljava/io/File;->mkdirs()Z
 
-    .line 61
+    .line 76
     invoke-virtual {p1}, Ljava/io/File;->createNewFile()Z
 
-    .line 62
+    .line 77
     invoke-static {v0}, Lcom/apm/insight/nativecrash/NativeImpl;->c(Ljava/lang/String;)I
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
@@ -231,6 +233,7 @@
     :catchall_0
     nop
 
+    .line 78
     :goto_0
     const-string v1, "\n"
 
@@ -238,14 +241,14 @@
 
     if-eqz p4, :cond_1
 
-    .line 63
+    .line 79
     invoke-static {v0}, Lcom/apm/insight/nativecrash/NativeImpl;->h(Ljava/lang/String;)I
 
     move-result p1
 
     if-lez p1, :cond_3
 
-    .line 64
+    .line 80
     :try_start_1
     invoke-static {}, Lcom/apm/insight/e;->g()Landroid/content/Context;
 
@@ -257,20 +260,20 @@
 
     invoke-static {p1, p4}, Lcom/apm/insight/nativecrash/NativeImpl;->a(ILjava/lang/String;)V
 
-    .line 65
+    .line 81
     invoke-static {p1, v1}, Lcom/apm/insight/nativecrash/NativeImpl;->a(ILjava/lang/String;)V
 
-    .line 66
+    .line 82
     invoke-virtual {p2}, Ljava/lang/Throwable;->getMessage()Ljava/lang/String;
 
     move-result-object p4
 
     invoke-static {p1, p4}, Lcom/apm/insight/nativecrash/NativeImpl;->a(ILjava/lang/String;)V
 
-    .line 67
+    .line 83
     invoke-static {p1, v1}, Lcom/apm/insight/nativecrash/NativeImpl;->a(ILjava/lang/String;)V
 
-    .line 68
+    .line 84
     invoke-virtual {p2}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
     move-result-object p4
@@ -281,63 +284,63 @@
 
     invoke-static {p1, p4}, Lcom/apm/insight/nativecrash/NativeImpl;->a(ILjava/lang/String;)V
 
-    .line 69
+    .line 85
     invoke-virtual {p2}, Ljava/lang/Throwable;->getMessage()Ljava/lang/String;
 
     move-result-object p4
 
     if-eqz p4, :cond_0
 
+    .line 86
     const-string p4, ": "
 
-    .line 70
     invoke-static {p1, p4}, Lcom/apm/insight/nativecrash/NativeImpl;->a(ILjava/lang/String;)V
 
-    .line 71
+    .line 87
     invoke-virtual {p2}, Ljava/lang/Throwable;->getMessage()Ljava/lang/String;
 
     move-result-object p4
 
     invoke-static {p1, p4}, Lcom/apm/insight/nativecrash/NativeImpl;->a(ILjava/lang/String;)V
 
-    .line 72
+    .line 88
     :cond_0
     invoke-static {p1, v1}, Lcom/apm/insight/nativecrash/NativeImpl;->a(ILjava/lang/String;)V
 
-    .line 73
+    .line 89
     invoke-virtual {p3}, Ljava/lang/Thread;->getName()Ljava/lang/String;
 
     move-result-object p3
 
     invoke-static {p1, p3}, Lcom/apm/insight/nativecrash/NativeImpl;->a(ILjava/lang/String;)V
 
-    .line 74
+    .line 90
     invoke-static {p1, v1}, Lcom/apm/insight/nativecrash/NativeImpl;->a(ILjava/lang/String;)V
     :try_end_1
     .catchall {:try_start_1 .. :try_end_1} :catchall_1
 
+    .line 91
     :catchall_1
     :try_start_2
     const-string p3, "stack:"
 
-    .line 75
     invoke-static {p1, p3}, Lcom/apm/insight/nativecrash/NativeImpl;->a(ILjava/lang/String;)V
 
-    .line 76
+    .line 92
     invoke-static {p1, v1}, Lcom/apm/insight/nativecrash/NativeImpl;->a(ILjava/lang/String;)V
     :try_end_2
     .catchall {:try_start_2 .. :try_end_2} :catchall_2
 
-    .line 77
+    .line 93
     :catchall_2
     invoke-static {p2, p1}, Lcom/apm/insight/l/m;->a(Ljava/lang/Throwable;I)V
 
-    .line 78
+    .line 94
     invoke-static {p1}, Lcom/apm/insight/nativecrash/NativeImpl;->b(I)V
 
     goto/16 :goto_4
 
-    .line 79
+    .line 95
     :cond_1
     :try_start_3
     new-instance p4, Ljava/io/FileOutputStream;
@@ -348,7 +351,7 @@
     :try_end_3
     .catchall {:try_start_3 .. :try_end_3} :catchall_8
 
-    .line 80
+    .line 96
     :try_start_4
     new-instance p1, Ljava/lang/StringBuilder;
 
@@ -376,7 +379,7 @@
 
     invoke-virtual {p4, p1}, Ljava/io/FileOutputStream;->write([B)V
 
-    .line 81
+    .line 97
     new-instance p1, Ljava/lang/StringBuilder;
 
     invoke-direct {p1}, Ljava/lang/StringBuilder;-><init>()V
@@ -399,7 +402,7 @@
 
     invoke-virtual {p4, p1}, Ljava/io/FileOutputStream;->write([B)V
 
-    .line 82
+    .line 98
     new-instance p1, Ljava/lang/StringBuilder;
 
     invoke-direct {p1}, Ljava/lang/StringBuilder;-><init>()V
@@ -418,7 +421,7 @@
 
     invoke-virtual {p4, p1}, Ljava/io/FileOutputStream;->write([B)V
 
-    .line 83
+    .line 99
     new-instance p1, Ljava/lang/StringBuilder;
 
     invoke-direct {p1}, Ljava/lang/StringBuilder;-><init>()V
@@ -443,11 +446,11 @@
     :try_end_4
     .catchall {:try_start_4 .. :try_end_4} :catchall_3
 
+    .line 100
     :catchall_3
     :try_start_5
     const-string p1, "stack:\n"
 
-    .line 84
     invoke-virtual {p1}, Ljava/lang/String;->getBytes()[B
 
     move-result-object p1
@@ -456,14 +459,14 @@
     :try_end_5
     .catchall {:try_start_5 .. :try_end_5} :catchall_4
 
-    .line 85
+    .line 101
     :catchall_4
     :try_start_6
     new-instance p1, Ljava/io/PrintStream;
 
     invoke-direct {p1, p4}, Ljava/io/PrintStream;-><init>(Ljava/io/OutputStream;)V
 
-    .line 86
+    .line 102
     invoke-static {}, Landroid/os/Looper;->getMainLooper()Landroid/os/Looper;
 
     move-result-object p3
@@ -490,25 +493,25 @@
 
     invoke-direct {p3}, Lcom/apm/insight/l/e$a;-><init>()V
 
-    .line 87
+    .line 103
     :goto_1
     invoke-static {p2, p1, p3}, Lcom/apm/insight/l/m;->a(Ljava/lang/Throwable;Ljava/io/PrintStream;Lcom/apm/insight/l/e$a;)Ljava/lang/String;
 
     move-result-object v2
 
-    .line 88
+    .line 104
     invoke-static {p4}, Lcom/apm/insight/a;->a(Ljava/io/Closeable;)V
     :try_end_6
     .catchall {:try_start_6 .. :try_end_6} :catchall_5
 
-    .line 89
+    .line 105
     :catchall_6
     :goto_2
     invoke-static {p4}, Lcom/apm/insight/a;->a(Ljava/io/Closeable;)V
 
     goto :goto_4
 
-    .line 90
+    .line 106
     :goto_3
     :try_start_7
     new-instance p3, Ljava/io/PrintStream;
@@ -524,17 +527,17 @@
     :catchall_7
     move-exception p2
 
+    .line 107
     :try_start_8
     const-string p3, "err:\n"
 
-    .line 91
     invoke-virtual {p3}, Ljava/lang/String;->getBytes()[B
 
     move-result-object p3
 
     invoke-virtual {p4, p3}, Ljava/io/FileOutputStream;->write([B)V
 
-    .line 92
+    .line 108
     new-instance p3, Ljava/lang/StringBuilder;
 
     invoke-direct {p3}, Ljava/lang/StringBuilder;-><init>()V
@@ -553,7 +556,7 @@
 
     invoke-virtual {p4, p1}, Ljava/io/FileOutputStream;->write([B)V
 
-    .line 93
+    .line 109
     new-instance p1, Ljava/lang/StringBuilder;
 
     invoke-direct {p1}, Ljava/lang/StringBuilder;-><init>()V
@@ -591,6 +594,7 @@
 
     move-object/from16 v14, p2
 
+    .line 5
     iget v0, v7, Lcom/apm/insight/g/a;->e:I
 
     const/4 v1, 0x3
@@ -601,6 +605,7 @@
 
     return-object v16
 
+    .line 6
     :cond_0
     iget v0, v7, Lcom/apm/insight/g/a;->e:I
 
@@ -610,32 +615,35 @@
 
     iput v0, v7, Lcom/apm/insight/g/a;->e:I
 
+    .line 7
     iget v0, v7, Lcom/apm/insight/g/a;->f:I
 
     add-int/2addr v0, v13
 
     iput v0, v7, Lcom/apm/insight/g/a;->f:I
 
+    .line 8
     sget-boolean v0, Lcom/apm/insight/g/a;->i:Z
 
     if-eqz v0, :cond_1
 
+    .line 9
     sget-object v0, Lcom/apm/insight/g/a;->j:Ljava/lang/ThreadLocal;
 
     sget-object v1, Ljava/lang/Boolean;->TRUE:Ljava/lang/Boolean;
 
-    .line 3
     invoke-virtual {v0, v1}, Ljava/lang/ThreadLocal;->set(Ljava/lang/Object;)V
 
+    .line 10
     :cond_1
     sput-boolean v13, Lcom/apm/insight/g/a;->i:Z
 
-    .line 4
+    .line 11
     invoke-static {}, Ljava/lang/System;->currentTimeMillis()J
 
     move-result-wide v11
 
-    .line 5
+    .line 12
     invoke-static {}, Lcom/apm/insight/runtime/a/b;->c()J
 
     move-result-wide v0
@@ -648,7 +656,7 @@
 
     if-eqz v5, :cond_2
 
-    .line 6
+    .line 13
     invoke-static {}, Lcom/apm/insight/runtime/a/b;->c()J
 
     move-result-wide v0
@@ -667,7 +675,7 @@
 
     if-gtz v5, :cond_3
 
-    .line 7
+    .line 14
     :cond_2
     invoke-static {}, Lcom/apm/insight/e;->n()Z
 
@@ -692,7 +700,7 @@
     :goto_0
     const/16 v17, 0x1
 
-    .line 8
+    .line 15
     :goto_1
     :try_start_0
     invoke-static/range {p2 .. p2}, Lcom/apm/insight/l/m;->c(Ljava/lang/Throwable;)Z
@@ -703,7 +711,7 @@
 
     if-eqz v0, :cond_5
 
-    .line 9
+    .line 16
     :try_start_1
     invoke-static/range {p2 .. p2}, Lcom/apm/insight/l/m;->d(Ljava/lang/Throwable;)Z
 
@@ -741,7 +749,7 @@
     :goto_4
     if-eqz v17, :cond_6
 
-    .line 10
+    .line 17
     :try_start_2
     sget-object v1, Lcom/apm/insight/CrashType;->LAUNCH:Lcom/apm/insight/CrashType;
     :try_end_2
@@ -773,7 +781,7 @@
 
     move-result-object v1
 
-    .line 11
+    .line 18
     new-instance v2, Ljava/io/File;
 
     invoke-static {}, Lcom/apm/insight/e;->g()Landroid/content/Context;
@@ -786,19 +794,19 @@
 
     invoke-direct {v2, v3, v1}, Ljava/io/File;-><init>(Ljava/io/File;Ljava/lang/String;)V
 
-    .line 12
+    .line 19
     new-instance v3, Ljava/io/File;
 
     const-string v5, "logEventStack"
 
     invoke-direct {v3, v2, v5}, Ljava/io/File;-><init>(Ljava/io/File;Ljava/lang/String;)V
 
-    .line 13
+    .line 20
     invoke-direct {v7, v3, v14, v15, v9}, Lcom/apm/insight/g/a;->a(Ljava/io/File;Ljava/lang/Throwable;Ljava/lang/Thread;Z)Ljava/lang/String;
 
     move-result-object v10
 
-    .line 14
+    .line 21
     invoke-static {}, Lcom/apm/insight/g/a;->f()I
 
     move-result v3
@@ -811,7 +819,7 @@
 
     if-eqz v10, :cond_7
 
-    .line 15
+    .line 22
     :try_start_4
     invoke-static {}, Lcom/apm/insight/e;->i()Lcom/apm/insight/runtime/ConfigManager;
 
@@ -836,7 +844,7 @@
     :goto_8
     const/16 v18, 0x1
 
-    .line 16
+    .line 23
     :goto_9
     :try_start_5
     invoke-static {v14, v15, v2}, Lcom/apm/insight/entity/b;->a(Ljava/lang/Throwable;Ljava/lang/Thread;Ljava/io/File;)Lorg/json/JSONArray;
@@ -857,7 +865,7 @@
     :goto_a
     if-eqz v17, :cond_a
 
-    .line 17
+    .line 24
     :try_start_6
     sget-object v1, Lcom/apm/insight/CrashType;->LAUNCH:Lcom/apm/insight/CrashType;
 
@@ -882,10 +890,10 @@
 
     move-result-object v0
 
-    .line 18
+    .line 25
     new-instance v1, Ljava/io/File;
 
-    .line 19
+    .line 26
     invoke-static {}, Lcom/apm/insight/e;->g()Landroid/content/Context;
 
     move-result-object v3
@@ -896,10 +904,10 @@
 
     invoke-direct {v1, v3, v0}, Ljava/io/File;-><init>(Ljava/io/File;Ljava/lang/String;)V
 
-    .line 20
+    .line 27
     invoke-virtual {v2, v1}, Ljava/io/File;->renameTo(Ljava/io/File;)Z
 
-    .line 21
+    .line 28
     new-instance v2, Ljava/io/File;
 
     const-string v3, "logEventStack"
@@ -913,31 +921,27 @@
     :cond_b
     move-object v0, v1
 
-    .line 22
+    .line 29
     :goto_c
     :try_start_7
     invoke-static {}, Lcom/apm/insight/a;->d()V
 
-    .line 23
+    .line 30
     invoke-static {}, Lcom/apm/insight/k/b;->a()Lcom/apm/insight/k/b;
 
     move-result-object v1
 
     invoke-virtual {v1}, Lcom/apm/insight/k/b;->b()V
 
-    const/4 v1, 0x2
-
-    new-array v1, v1, [Ljava/lang/String;
-
-    const-string v2, "exception_modules"
-
-    aput-object v2, v1, v4
+    .line 31
+    const-string v1, "exception_modules"
 
     const-string v2, "oom_callback"
 
-    aput-object v2, v1, v13
+    filled-new-array {v1, v2}, [Ljava/lang/String;
 
-    .line 24
+    move-result-object v1
+
     invoke-static {v1}, Lcom/apm/insight/runtime/a;->a([Ljava/lang/String;)I
 
     move-result v1
@@ -968,7 +972,7 @@
 
     move-wide v5, v11
 
-    .line 25
+    .line 32
     :try_start_8
     invoke-direct/range {v1 .. v6}, Lcom/apm/insight/g/a;->a(Ljava/lang/Thread;Ljava/lang/Throwable;ZJ)V
     :try_end_8
@@ -987,12 +991,12 @@
 
     goto/16 :goto_6
 
+    .line 33
     :cond_d
     :goto_e
     :try_start_9
     const-string v1, "[uncaughtException] isLaunchCrash="
 
-    .line 26
     invoke-static/range {v17 .. v17}, Ljava/lang/String;->valueOf(Z)Ljava/lang/String;
 
     move-result-object v2
@@ -1003,16 +1007,17 @@
 
     invoke-static {v1}, Lcom/apm/insight/a;->a(Ljava/lang/Object;)V
 
-    .line 27
+    .line 34
     invoke-static {}, Lcom/apm/insight/a/a;->a()Lcom/apm/insight/a/a;
 
-    .line 28
+    .line 35
     invoke-static/range {p1 .. p2}, Lcom/apm/insight/g/a;->b(Ljava/lang/Thread;Ljava/lang/Throwable;)Z
 
     move-result v1
 
     if-eqz v1, :cond_e
 
+    .line 36
     iget-object v8, v7, Lcom/apm/insight/g/a;->c:Lcom/apm/insight/g/c;
     :try_end_9
     .catchall {:try_start_9 .. :try_end_9} :catchall_6
@@ -1041,11 +1046,11 @@
 
     move/from16 v15, v18
 
-    .line 29
+    .line 37
     :try_start_a
     invoke-interface/range {v8 .. v15}, Lcom/apm/insight/g/c;->a(JLjava/lang/Thread;Ljava/lang/Throwable;Ljava/lang/String;Ljava/lang/String;Z)V
 
-    .line 30
+    .line 38
     new-instance v0, Ljava/lang/StringBuilder;
 
     const-string v1, "[uncaughtException] mLaunchCrashDisposer "
@@ -1099,6 +1104,7 @@
     :goto_10
     if-eqz v1, :cond_f
 
+    .line 39
     iget-object v8, v7, Lcom/apm/insight/g/a;->d:Lcom/apm/insight/g/c;
 
     if-eqz v8, :cond_f
@@ -1115,10 +1121,10 @@
 
     move/from16 v15, v18
 
-    .line 31
+    .line 40
     invoke-interface/range {v8 .. v15}, Lcom/apm/insight/g/c;->a(JLjava/lang/Thread;Ljava/lang/Throwable;Ljava/lang/String;Ljava/lang/String;Z)V
 
-    .line 32
+    .line 41
     new-instance v0, Ljava/lang/StringBuilder;
 
     const-string v1, "[uncaughtException] mLaunchCrashDisposer "
@@ -1155,29 +1161,30 @@
 
     move/from16 v4, v17
 
-    .line 33
+    .line 42
     :try_start_b
     invoke-direct/range {v1 .. v6}, Lcom/apm/insight/g/a;->a(Ljava/lang/Thread;Ljava/lang/Throwable;ZJ)V
 
-    .line 34
+    .line 43
     :cond_10
     invoke-static {}, Lcom/apm/insight/g/a;->e()V
 
-    .line 35
+    .line 44
     :goto_12
     invoke-direct/range {p0 .. p0}, Lcom/apm/insight/g/a;->d()V
 
-    .line 36
+    .line 45
     invoke-direct/range {p0 .. p2}, Lcom/apm/insight/g/a;->c(Ljava/lang/Thread;Ljava/lang/Throwable;)V
     :try_end_b
     .catchall {:try_start_b .. :try_end_b} :catchall_b
 
     goto :goto_16
 
-    .line 37
+    .line 46
     :cond_11
     monitor-enter p0
 
+    .line 47
     :try_start_c
     iget v0, v7, Lcom/apm/insight/g/a;->f:I
 
@@ -1185,18 +1192,19 @@
 
     iput v0, v7, Lcom/apm/insight/g/a;->f:I
 
+    .line 48
     iget v0, v7, Lcom/apm/insight/g/a;->e:I
 
     add-int/lit8 v0, v0, -0x1
 
     iput v0, v7, Lcom/apm/insight/g/a;->e:I
 
-    .line 38
+    .line 49
     monitor-exit p0
     :try_end_c
     .catchall {:try_start_c .. :try_end_c} :catchall_7
 
-    .line 39
+    .line 50
     invoke-static {}, Lcom/apm/insight/g/a;->g()Ljava/lang/Throwable;
 
     move-result-object v0
@@ -1206,7 +1214,7 @@
     :catchall_7
     move-exception v0
 
-    .line 40
+    .line 51
     :try_start_d
     monitor-exit p0
     :try_end_d
@@ -1241,7 +1249,7 @@
 
     goto :goto_13
 
-    .line 41
+    .line 52
     :goto_14
     :try_start_e
     invoke-static {v0}, Lcom/apm/insight/l/m;->c(Ljava/lang/Throwable;)Z
@@ -1250,7 +1258,7 @@
 
     if-nez v1, :cond_12
 
-    .line 42
+    .line 53
     invoke-static {v0}, Lcom/apm/insight/a;->a(Ljava/lang/Throwable;)V
     :try_end_e
     .catchall {:try_start_e .. :try_end_e} :catchall_a
@@ -1278,11 +1286,11 @@
 
     move/from16 v4, v17
 
-    .line 43
+    .line 54
     :try_start_f
     invoke-direct/range {v1 .. v6}, Lcom/apm/insight/g/a;->a(Ljava/lang/Thread;Ljava/lang/Throwable;ZJ)V
 
-    .line 44
+    .line 55
     :cond_13
     invoke-static {}, Lcom/apm/insight/g/a;->e()V
     :try_end_f
@@ -1294,10 +1302,11 @@
     :goto_16
     return-object v16
 
-    .line 45
+    .line 56
     :cond_14
     monitor-enter p0
 
+    .line 57
     :try_start_10
     iget v0, v7, Lcom/apm/insight/g/a;->f:I
 
@@ -1305,18 +1314,19 @@
 
     iput v0, v7, Lcom/apm/insight/g/a;->f:I
 
+    .line 58
     iget v0, v7, Lcom/apm/insight/g/a;->e:I
 
     add-int/lit8 v0, v0, -0x1
 
     iput v0, v7, Lcom/apm/insight/g/a;->e:I
 
-    .line 46
+    .line 59
     monitor-exit p0
     :try_end_10
     .catchall {:try_start_10 .. :try_end_10} :catchall_c
 
-    .line 47
+    .line 60
     invoke-static {}, Lcom/apm/insight/g/a;->g()Ljava/lang/Throwable;
 
     move-result-object v0
@@ -1326,7 +1336,7 @@
     :catchall_c
     move-exception v0
 
-    .line 48
+    .line 61
     :try_start_11
     monitor-exit p0
     :try_end_11
@@ -1349,30 +1359,31 @@
 
     move/from16 v4, v17
 
-    .line 49
+    .line 62
     :try_start_12
     invoke-direct/range {v1 .. v6}, Lcom/apm/insight/g/a;->a(Ljava/lang/Thread;Ljava/lang/Throwable;ZJ)V
 
-    .line 50
+    .line 63
     :cond_15
     invoke-static {}, Lcom/apm/insight/g/a;->e()V
 
-    .line 51
+    .line 64
     invoke-direct/range {p0 .. p0}, Lcom/apm/insight/g/a;->d()V
 
-    .line 52
+    .line 65
     invoke-direct/range {p0 .. p2}, Lcom/apm/insight/g/a;->c(Ljava/lang/Thread;Ljava/lang/Throwable;)V
     :try_end_12
     .catchall {:try_start_12 .. :try_end_12} :catchall_d
 
-    .line 53
+    .line 66
     :catchall_d
     throw v0
 
-    .line 54
+    .line 67
     :cond_16
     monitor-enter p0
 
+    .line 68
     :try_start_13
     iget v0, v7, Lcom/apm/insight/g/a;->f:I
 
@@ -1380,18 +1391,19 @@
 
     iput v0, v7, Lcom/apm/insight/g/a;->f:I
 
+    .line 69
     iget v0, v7, Lcom/apm/insight/g/a;->e:I
 
     add-int/lit8 v0, v0, -0x1
 
     iput v0, v7, Lcom/apm/insight/g/a;->e:I
 
-    .line 55
+    .line 70
     monitor-exit p0
     :try_end_13
     .catchall {:try_start_13 .. :try_end_13} :catchall_e
 
-    .line 56
+    .line 71
     invoke-static {}, Lcom/apm/insight/g/a;->g()Ljava/lang/Throwable;
 
     move-result-object v0
@@ -1401,7 +1413,7 @@
     :catchall_e
     move-exception v0
 
-    .line 57
+    .line 72
     :try_start_14
     monitor-exit p0
     :try_end_14
@@ -1413,7 +1425,7 @@
 .method private a(Ljava/lang/Thread;Ljava/lang/Throwable;ZJ)V
     .locals 8
 
-    .line 106
+    .line 122
     invoke-static {}, Lcom/apm/insight/runtime/m;->a()Lcom/apm/insight/runtime/c;
 
     move-result-object v0
@@ -1424,7 +1436,7 @@
 
     if-eqz p3, :cond_0
 
-    .line 107
+    .line 123
     sget-object p3, Lcom/apm/insight/CrashType;->LAUNCH:Lcom/apm/insight/CrashType;
 
     goto :goto_0
@@ -1432,7 +1444,7 @@
     :cond_0
     sget-object p3, Lcom/apm/insight/CrashType;->JAVA:Lcom/apm/insight/CrashType;
 
-    .line 108
+    .line 124
     :goto_0
     invoke-interface {v0}, Ljava/util/List;->iterator()Ljava/util/Iterator;
 
@@ -1451,13 +1463,13 @@
 
     check-cast v1, Lcom/apm/insight/IOOMCallback;
 
-    .line 109
+    .line 125
     :try_start_0
     instance-of v2, v1, Lcom/apm/insight/b;
 
     if-eqz v2, :cond_1
 
-    .line 110
+    .line 126
     check-cast v1, Lcom/apm/insight/b;
 
     iget-object v7, p0, Lcom/apm/insight/g/a;->k:Lorg/json/JSONArray;
@@ -1488,14 +1500,14 @@
 
     move-wide v5, p4
 
-    .line 111
+    .line 127
     invoke-interface/range {v1 .. v6}, Lcom/apm/insight/IOOMCallback;->onCrash(Lcom/apm/insight/CrashType;Ljava/lang/Throwable;Ljava/lang/Thread;J)V
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
     goto :goto_1
 
-    .line 112
+    .line 128
     :goto_2
     invoke-static {v1}, Lcom/apm/insight/a;->b(Ljava/lang/Throwable;)V
 
@@ -1512,7 +1524,7 @@
 
     return-void
 
-    .line 114
+    .line 130
     :cond_0
     :try_start_0
     invoke-static {}, Lcom/apm/insight/runtime/n;->a()Lcom/apm/insight/runtime/r;
@@ -1534,7 +1546,7 @@
 .method public static b()Z
     .locals 1
 
-    .line 2
+    .line 5
     sget-boolean v0, Lcom/apm/insight/g/a;->i:Z
 
     return v0
@@ -1543,7 +1555,7 @@
 .method private static b(Ljava/lang/Thread;Ljava/lang/Throwable;)Z
     .locals 2
 
-    .line 3
+    .line 2
     invoke-static {}, Lcom/apm/insight/e;->b()Lcom/apm/insight/a;
 
     move-result-object v0
@@ -1556,7 +1568,7 @@
 
     if-eqz v0, :cond_1
 
-    .line 4
+    .line 3
     :try_start_0
     invoke-interface {v0, p1, p0}, Lcom/apm/insight/ICrashFilter;->onJavaCrashFilter(Ljava/lang/Throwable;Ljava/lang/Thread;)Z
 
@@ -1586,7 +1598,7 @@
 
     return-void
 
-    .line 2
+    .line 3
     :cond_0
     :try_start_0
     invoke-static {}, Lcom/apm/insight/runtime/n;->a()Lcom/apm/insight/runtime/r;
@@ -1608,13 +1620,14 @@
 .method private c(Ljava/lang/Thread;Ljava/lang/Throwable;)V
     .locals 1
 
+    .line 1
     iget-object v0, p0, Lcom/apm/insight/g/a;->b:Ljava/lang/Thread$UncaughtExceptionHandler;
 
     if-eqz v0, :cond_0
 
     if-eq v0, p0, :cond_0
 
-    .line 1
+    .line 2
     invoke-interface {v0, p1, p2}, Ljava/lang/Thread$UncaughtExceptionHandler;->uncaughtException(Ljava/lang/Thread;Ljava/lang/Throwable;)V
 
     :cond_0
@@ -1624,9 +1637,9 @@
 .method public static c()Z
     .locals 1
 
+    .line 4
     sget-object v0, Lcom/apm/insight/g/a;->j:Ljava/lang/ThreadLocal;
 
-    .line 3
     invoke-virtual {v0}, Ljava/lang/ThreadLocal;->get()Ljava/lang/Object;
 
     move-result-object v0
@@ -1635,7 +1648,7 @@
 
     if-eqz v0, :cond_0
 
-    .line 4
+    .line 5
     invoke-virtual {v0}, Ljava/lang/Boolean;->booleanValue()Z
 
     move-result v0
@@ -2065,7 +2078,7 @@
 .method public final a(Lcom/apm/insight/g/c;)V
     .locals 0
 
-    .line 1
+    .line 4
     iput-object p1, p0, Lcom/apm/insight/g/a;->c:Lcom/apm/insight/g/c;
 
     return-void
@@ -2074,9 +2087,9 @@
 .method public final a(Ljava/lang/String;)V
     .locals 2
 
+    .line 129
     iget-object v0, p0, Lcom/apm/insight/g/a;->g:Ljava/util/concurrent/ConcurrentHashMap;
 
-    .line 113
     new-instance v1, Ljava/lang/Object;
 
     invoke-direct {v1}, Ljava/lang/Object;-><init>()V
@@ -2091,7 +2104,7 @@
 
     if-eqz p3, :cond_0
 
-    .line 94
+    .line 110
     invoke-static {}, Lcom/apm/insight/runtime/m;->a()Lcom/apm/insight/runtime/c;
 
     move-result-object p3
@@ -2100,12 +2113,12 @@
 
     move-result-object p3
 
-    .line 95
+    .line 111
     sget-object v0, Lcom/apm/insight/CrashType;->LAUNCH:Lcom/apm/insight/CrashType;
 
     goto :goto_0
 
-    .line 96
+    .line 112
     :cond_0
     invoke-static {}, Lcom/apm/insight/runtime/m;->a()Lcom/apm/insight/runtime/c;
 
@@ -2115,10 +2128,10 @@
 
     move-result-object p3
 
-    .line 97
+    .line 113
     sget-object v0, Lcom/apm/insight/CrashType;->JAVA:Lcom/apm/insight/CrashType;
 
-    .line 98
+    .line 114
     :goto_0
     invoke-interface {p3}, Ljava/util/List;->iterator()Ljava/util/Iterator;
 
@@ -2137,18 +2150,18 @@
 
     check-cast v1, Lcom/apm/insight/ICrashCallback;
 
-    .line 99
+    .line 115
     invoke-static {}, Landroid/os/SystemClock;->uptimeMillis()J
 
     move-result-wide v2
 
-    .line 100
+    .line 116
     :try_start_0
     instance-of v4, v1, Lcom/apm/insight/b;
 
     if-eqz v4, :cond_1
 
-    .line 101
+    .line 117
     move-object v4, v1
 
     check-cast v4, Lcom/apm/insight/b;
@@ -2168,7 +2181,7 @@
 
     goto :goto_3
 
-    .line 102
+    .line 118
     :cond_1
     invoke-static {p2}, Lcom/apm/insight/l/m;->a(Ljava/lang/Throwable;)Ljava/lang/String;
 
@@ -2176,7 +2189,7 @@
 
     invoke-interface {v1, v0, v4, p1}, Lcom/apm/insight/ICrashCallback;->onCrash(Lcom/apm/insight/CrashType;Ljava/lang/String;Ljava/lang/Thread;)V
 
-    .line 103
+    .line 119
     :goto_2
     new-instance v4, Ljava/lang/StringBuilder;
 
@@ -2214,11 +2227,11 @@
 
     goto :goto_1
 
-    .line 104
+    .line 120
     :goto_3
     invoke-static {v4}, Lcom/apm/insight/a;->b(Ljava/lang/Throwable;)V
 
-    .line 105
+    .line 121
     invoke-virtual {v1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
     move-result-object v1
@@ -2263,9 +2276,9 @@
 .method public final b(Ljava/lang/String;)Z
     .locals 1
 
+    .line 4
     iget-object v0, p0, Lcom/apm/insight/g/a;->g:Ljava/util/concurrent/ConcurrentHashMap;
 
-    .line 5
     invoke-virtual {v0, p1}, Ljava/util/concurrent/ConcurrentHashMap;->containsKey(Ljava/lang/Object;)Z
 
     move-result p1

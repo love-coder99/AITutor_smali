@@ -4,6 +4,15 @@
 
 
 # annotations
+.annotation runtime Lca/c;
+    c = "androidx.compose.foundation.lazy.layout.AwaitFirstLayoutModifier"
+    f = "AwaitFirstLayoutModifier.kt"
+    l = {
+        0x23
+    }
+    m = "waitForFirstLayout"
+.end annotation
+
 .annotation runtime Lkotlin/Metadata;
     k = 0x3
     mv = {
@@ -12,15 +21,6 @@
         0x0
     }
     xi = 0x30
-.end annotation
-
-.annotation runtime Lth/c;
-    c = "androidx.compose.foundation.lazy.layout.AwaitFirstLayoutModifier"
-    f = "AwaitFirstLayoutModifier.kt"
-    l = {
-        0x23
-    }
-    m = "waitForFirstLayout"
 .end annotation
 
 
@@ -74,7 +74,7 @@
 
     iget-object p1, p0, Landroidx/compose/foundation/lazy/layout/AwaitFirstLayoutModifier$waitForFirstLayout$1;->this$0:Landroidx/compose/foundation/lazy/layout/c;
 
-    invoke-virtual {p1, p0}, Landroidx/compose/foundation/lazy/layout/c;->m(Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
+    invoke-virtual {p1, p0}, Landroidx/compose/foundation/lazy/layout/c;->m(Lkotlin/coroutines/jvm/internal/ContinuationImpl;)Ljava/lang/Object;
 
     move-result-object p1
 

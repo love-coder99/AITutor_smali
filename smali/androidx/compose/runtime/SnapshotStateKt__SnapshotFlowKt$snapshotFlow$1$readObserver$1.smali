@@ -3,7 +3,7 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lzh/c;
+.implements Lka/c;
 
 
 # annotations
@@ -19,7 +19,7 @@
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "Lkotlin/jvm/internal/Lambda;",
-        "Lzh/c;"
+        "Lka/c;"
     }
 .end annotation
 
@@ -31,7 +31,7 @@
         "T",
         "",
         "it",
-        "Lqh/r;",
+        "LX9/j;",
         "invoke",
         "(Ljava/lang/Object;)V",
         "<anonymous>"
@@ -46,27 +46,27 @@
 
 
 # instance fields
-.field final synthetic $readSet:Landroidx/collection/e0;
+.field final synthetic $readSet:Landroidx/collection/D;
     .annotation system Ldalvik/annotation/Signature;
         value = {
-            "Landroidx/collection/e0;"
+            "Landroidx/collection/D;"
         }
     .end annotation
 .end field
 
 
 # direct methods
-.method public constructor <init>(Landroidx/collection/e0;)V
+.method public constructor <init>(Landroidx/collection/D;)V
     .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
-            "Landroidx/collection/e0;",
+            "Landroidx/collection/D;",
             ")V"
         }
     .end annotation
 
-    iput-object p1, p0, Landroidx/compose/runtime/SnapshotStateKt__SnapshotFlowKt$snapshotFlow$1$readObserver$1;->$readSet:Landroidx/collection/e0;
+    iput-object p1, p0, Landroidx/compose/runtime/SnapshotStateKt__SnapshotFlowKt$snapshotFlow$1$readObserver$1;->$readSet:Landroidx/collection/D;
 
     const/4 p1, 0x1
 
@@ -83,7 +83,7 @@
     .line 1
     invoke-virtual {p0, p1}, Landroidx/compose/runtime/SnapshotStateKt__SnapshotFlowKt$snapshotFlow$1$readObserver$1;->invoke(Ljava/lang/Object;)V
 
-    sget-object p1, Lqh/r;->a:Lqh/r;
+    sget-object p1, LX9/j;->a:LX9/j;
 
     return-object p1
 .end method
@@ -92,24 +92,24 @@
     .locals 2
 
     .line 2
-    instance-of v0, p1, Landroidx/compose/runtime/snapshots/w;
+    instance-of v0, p1, Landroidx/compose/runtime/snapshots/s;
 
     if-eqz v0, :cond_0
 
     .line 3
     move-object v0, p1
 
-    check-cast v0, Landroidx/compose/runtime/snapshots/w;
+    check-cast v0, Landroidx/compose/runtime/snapshots/s;
 
     const/4 v1, 0x4
 
-    invoke-virtual {v0, v1}, Landroidx/compose/runtime/snapshots/w;->j(I)V
-
-    :cond_0
-    iget-object v0, p0, Landroidx/compose/runtime/SnapshotStateKt__SnapshotFlowKt$snapshotFlow$1$readObserver$1;->$readSet:Landroidx/collection/e0;
+    invoke-virtual {v0, v1}, Landroidx/compose/runtime/snapshots/s;->j(I)V
 
     .line 4
-    invoke-virtual {v0, p1}, Landroidx/collection/e0;->d(Ljava/lang/Object;)Z
+    :cond_0
+    iget-object v0, p0, Landroidx/compose/runtime/SnapshotStateKt__SnapshotFlowKt$snapshotFlow$1$readObserver$1;->$readSet:Landroidx/collection/D;
+
+    invoke-virtual {v0, p1}, Landroidx/collection/D;->d(Ljava/lang/Object;)Z
 
     return-void
 .end method

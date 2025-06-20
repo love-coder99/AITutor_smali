@@ -3,6 +3,11 @@
 .source "SourceFile"
 
 
+# annotations
+.annotation build Lcom/android/billingclient/api/zzh;
+.end annotation
+
+
 # instance fields
 .field private final countryCode:Ljava/lang/String;
 
@@ -36,6 +41,10 @@
 
 .method private constructor <init>(Ljava/lang/String;Ljava/lang/String;)V
     .locals 0
+    .param p1    # Ljava/lang/String;
+        .annotation build Landroidx/annotation/Nullable;
+        .end annotation
+    .end param
 
     .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -61,6 +70,8 @@
 # virtual methods
 .method public getCountryCode()Ljava/lang/String;
     .locals 1
+    .annotation build Landroidx/annotation/NonNull;
+    .end annotation
 
     iget-object v0, p0, Lcom/android/billingclient/api/BillingConfig;->countryCode:Ljava/lang/String;
 

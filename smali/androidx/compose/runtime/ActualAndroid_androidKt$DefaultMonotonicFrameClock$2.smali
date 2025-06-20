@@ -3,14 +3,14 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lzh/a;
+.implements Lka/a;
 
 
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "Lkotlin/jvm/internal/Lambda;",
-        "Lzh/a;"
+        "Lka/a;"
     }
 .end annotation
 
@@ -19,9 +19,9 @@
         "\u0000\u0008\n\u0002\u0018\u0002\n\u0002\u0008\u0003\u0010\u0003\u001a\u00020\u0000H\n\u00a2\u0006\u0004\u0008\u0001\u0010\u0002"
     }
     d2 = {
-        "Landroidx/compose/runtime/c1;",
+        "Landroidx/compose/runtime/U;",
         "invoke",
-        "()Landroidx/compose/runtime/c1;",
+        "()Landroidx/compose/runtime/U;",
         "<anonymous>"
     }
     k = 0x3
@@ -62,7 +62,7 @@
 
 
 # virtual methods
-.method public final invoke()Landroidx/compose/runtime/c1;
+.method public final invoke()Landroidx/compose/runtime/U;
     .locals 1
 
     .line 2
@@ -72,12 +72,13 @@
 
     if-eqz v0, :cond_0
 
-    sget-object v0, Landroidx/compose/runtime/i0;->b:Landroidx/compose/runtime/i0;
+    sget-object v0, Landroidx/compose/runtime/C;->b:Landroidx/compose/runtime/C;
 
     goto :goto_0
 
+    .line 3
     :cond_0
-    sget-object v0, Landroidx/compose/runtime/f2;->b:Landroidx/compose/runtime/f2;
+    sget-object v0, Landroidx/compose/runtime/q0;->b:Landroidx/compose/runtime/q0;
 
     :goto_0
     return-object v0
@@ -87,7 +88,7 @@
     .locals 1
 
     .line 1
-    invoke-virtual {p0}, Landroidx/compose/runtime/ActualAndroid_androidKt$DefaultMonotonicFrameClock$2;->invoke()Landroidx/compose/runtime/c1;
+    invoke-virtual {p0}, Landroidx/compose/runtime/ActualAndroid_androidKt$DefaultMonotonicFrameClock$2;->invoke()Landroidx/compose/runtime/U;
 
     move-result-object v0
 

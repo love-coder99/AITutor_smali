@@ -39,7 +39,7 @@
 
     const/4 v1, 0x1
 
-    const-class v2, Landroidx/compose/ui/input/key/a;
+    const-class v2, Lx0/c;
 
     const-string v3, "isCtrlPressed"
 
@@ -54,11 +54,11 @@
     .locals 0
 
     .line 1
-    check-cast p1, Lt1/b;
+    check-cast p1, Lx0/b;
 
     .line 2
     .line 3
-    iget-object p1, p1, Lt1/b;->a:Landroid/view/KeyEvent;
+    iget-object p1, p1, Lx0/b;->a:Landroid/view/KeyEvent;
 
     .line 4
     .line 5

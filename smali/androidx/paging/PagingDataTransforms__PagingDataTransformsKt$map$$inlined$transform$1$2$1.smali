@@ -4,6 +4,16 @@
 
 
 # annotations
+.annotation runtime Lca/c;
+    c = "androidx.paging.PagingDataTransforms__PagingDataTransformsKt$map$$inlined$transform$1$2"
+    f = "PagingDataTransforms.kt"
+    l = {
+        0xe1,
+        0xdf
+    }
+    m = "emit"
+.end annotation
+
 .annotation runtime Lkotlin/Metadata;
     k = 0x3
     mv = {
@@ -14,16 +24,6 @@
     xi = 0x30
 .end annotation
 
-.annotation runtime Lth/c;
-    c = "androidx.paging.PagingDataTransforms__PagingDataTransformsKt$map$$inlined$transform$1$2"
-    f = "PagingDataTransforms.kt"
-    l = {
-        0xe1,
-        0xdf
-    }
-    m = "emit"
-.end annotation
-
 
 # instance fields
 .field L$0:Ljava/lang/Object;
@@ -32,14 +32,14 @@
 
 .field synthetic result:Ljava/lang/Object;
 
-.field final synthetic this$0:Landroidx/paging/l1;
+.field final synthetic this$0:Landroidx/paging/n0;
 
 
 # direct methods
-.method public constructor <init>(Landroidx/paging/l1;Lkotlin/coroutines/Continuation;)V
+.method public constructor <init>(Landroidx/paging/n0;Lkotlin/coroutines/Continuation;)V
     .locals 0
 
-    iput-object p1, p0, Landroidx/paging/PagingDataTransforms__PagingDataTransformsKt$map$$inlined$transform$1$2$1;->this$0:Landroidx/paging/l1;
+    iput-object p1, p0, Landroidx/paging/PagingDataTransforms__PagingDataTransformsKt$map$$inlined$transform$1$2$1;->this$0:Landroidx/paging/n0;
 
     invoke-direct {p0, p2}, Lkotlin/coroutines/jvm/internal/ContinuationImpl;-><init>(Lkotlin/coroutines/Continuation;)V
 
@@ -61,11 +61,11 @@
 
     iput p1, p0, Landroidx/paging/PagingDataTransforms__PagingDataTransformsKt$map$$inlined$transform$1$2$1;->label:I
 
-    iget-object p1, p0, Landroidx/paging/PagingDataTransforms__PagingDataTransformsKt$map$$inlined$transform$1$2$1;->this$0:Landroidx/paging/l1;
+    iget-object p1, p0, Landroidx/paging/PagingDataTransforms__PagingDataTransformsKt$map$$inlined$transform$1$2$1;->this$0:Landroidx/paging/n0;
 
     const/4 v0, 0x0
 
-    invoke-virtual {p1, v0, p0}, Landroidx/paging/l1;->emit(Ljava/lang/Object;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
+    invoke-virtual {p1, v0, p0}, Landroidx/paging/n0;->emit(Ljava/lang/Object;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
 
     move-result-object p1
 

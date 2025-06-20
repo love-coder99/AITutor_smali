@@ -3,14 +3,14 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lzh/c;
+.implements Lka/c;
 
 
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "Lkotlin/jvm/internal/Lambda;",
-        "Lzh/c;"
+        "Lka/c;"
     }
 .end annotation
 
@@ -19,11 +19,11 @@
         "\u0000\u000e\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u000b\n\u0002\u0008\u0003\u0010\u0005\u001a\u00020\u00022\u0006\u0010\u0001\u001a\u00020\u0000H\n\u00a2\u0006\u0004\u0008\u0003\u0010\u0004"
     }
     d2 = {
-        "Lg2/c;",
+        "LL0/c;",
         "it",
         "",
         "invoke",
-        "(Lg2/c;)Ljava/lang/Boolean;",
+        "(LL0/c;)Ljava/lang/Boolean;",
         "<anonymous>"
     }
     k = 0x3
@@ -64,7 +64,7 @@
 
 
 # virtual methods
-.method public final invoke(Lg2/c;)Ljava/lang/Boolean;
+.method public final invoke(LL0/c;)Ljava/lang/Boolean;
     .locals 0
 
     .line 1
@@ -77,9 +77,9 @@
     .locals 0
 
     .line 2
-    check-cast p1, Lg2/c;
+    check-cast p1, LL0/c;
 
-    invoke-virtual {p0, p1}, Landroidx/compose/ui/tooling/animation/AnimationSearch$attachAllAnimations$1$groups$1;->invoke(Lg2/c;)Ljava/lang/Boolean;
+    invoke-virtual {p0, p1}, Landroidx/compose/ui/tooling/animation/AnimationSearch$attachAllAnimations$1$groups$1;->invoke(LL0/c;)Ljava/lang/Boolean;
 
     move-result-object p1
 

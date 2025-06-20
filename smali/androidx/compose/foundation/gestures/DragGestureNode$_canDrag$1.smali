@@ -3,14 +3,14 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lzh/c;
+.implements Lka/c;
 
 
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "Lkotlin/jvm/internal/Lambda;",
-        "Lzh/c;"
+        "Lka/c;"
     }
 .end annotation
 
@@ -19,11 +19,11 @@
         "\u0000\u000e\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u000b\n\u0002\u0008\u0003\u0010\u0005\u001a\u00020\u00022\u0006\u0010\u0001\u001a\u00020\u0000H\n\u00a2\u0006\u0004\u0008\u0003\u0010\u0004"
     }
     d2 = {
-        "Landroidx/compose/ui/input/pointer/r;",
+        "Landroidx/compose/ui/input/pointer/n;",
         "it",
         "",
         "invoke",
-        "(Landroidx/compose/ui/input/pointer/r;)Ljava/lang/Boolean;",
+        "(Landroidx/compose/ui/input/pointer/n;)Ljava/lang/Boolean;",
         "<anonymous>"
     }
     k = 0x3
@@ -54,16 +54,17 @@
 
 
 # virtual methods
-.method public final invoke(Landroidx/compose/ui/input/pointer/r;)Ljava/lang/Boolean;
+.method public final invoke(Landroidx/compose/ui/input/pointer/n;)Ljava/lang/Boolean;
     .locals 1
 
+    .line 1
     iget-object v0, p0, Landroidx/compose/foundation/gestures/DragGestureNode$_canDrag$1;->this$0:Landroidx/compose/foundation/gestures/t;
 
-    .line 1
-    iget-object v0, v0, Landroidx/compose/foundation/gestures/t;->s:Lzh/c;
-
     .line 2
-    invoke-interface {v0, p1}, Lzh/c;->invoke(Ljava/lang/Object;)Ljava/lang/Object;
+    iget-object v0, v0, Landroidx/compose/foundation/gestures/t;->s:Lkotlin/jvm/internal/Lambda;
+
+    .line 3
+    invoke-interface {v0, p1}, Lka/c;->invoke(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object p1
 
@@ -75,10 +76,10 @@
 .method public bridge synthetic invoke(Ljava/lang/Object;)Ljava/lang/Object;
     .locals 0
 
-    .line 3
-    check-cast p1, Landroidx/compose/ui/input/pointer/r;
+    .line 4
+    check-cast p1, Landroidx/compose/ui/input/pointer/n;
 
-    invoke-virtual {p0, p1}, Landroidx/compose/foundation/gestures/DragGestureNode$_canDrag$1;->invoke(Landroidx/compose/ui/input/pointer/r;)Ljava/lang/Boolean;
+    invoke-virtual {p0, p1}, Landroidx/compose/foundation/gestures/DragGestureNode$_canDrag$1;->invoke(Landroidx/compose/ui/input/pointer/n;)Ljava/lang/Boolean;
 
     move-result-object p1
 

@@ -3,14 +3,14 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lzh/c;
+.implements Lka/c;
 
 
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "Lkotlin/jvm/internal/Lambda;",
-        "Lzh/c;"
+        "Lka/c;"
     }
 .end annotation
 
@@ -20,7 +20,7 @@
     }
     d2 = {
         "",
-        "Landroidx/compose/ui/text/f0;",
+        "Landroidx/compose/ui/text/F;",
         "textLayoutResult",
         "",
         "invoke",
@@ -37,14 +37,14 @@
 
 
 # instance fields
-.field final synthetic this$0:Landroidx/compose/foundation/text/modifiers/i;
+.field final synthetic this$0:Landroidx/compose/foundation/text/modifiers/h;
 
 
 # direct methods
-.method public constructor <init>(Landroidx/compose/foundation/text/modifiers/i;)V
+.method public constructor <init>(Landroidx/compose/foundation/text/modifiers/h;)V
     .locals 0
 
-    iput-object p1, p0, Landroidx/compose/foundation/text/modifiers/TextAnnotatedStringNode$applySemantics$1;->this$0:Landroidx/compose/foundation/text/modifiers/i;
+    iput-object p1, p0, Landroidx/compose/foundation/text/modifiers/TextAnnotatedStringNode$applySemantics$1;->this$0:Landroidx/compose/foundation/text/modifiers/h;
 
     const/4 p1, 0x1
 
@@ -61,7 +61,7 @@
         value = {
             "(",
             "Ljava/util/List<",
-            "Landroidx/compose/ui/text/f0;",
+            "Landroidx/compose/ui/text/F;",
             ">;)",
             "Ljava/lang/Boolean;"
         }
@@ -69,121 +69,113 @@
 
     move-object/from16 v0, p0
 
-    iget-object v1, v0, Landroidx/compose/foundation/text/modifiers/TextAnnotatedStringNode$applySemantics$1;->this$0:Landroidx/compose/foundation/text/modifiers/i;
+    .line 2
+    iget-object v1, v0, Landroidx/compose/foundation/text/modifiers/TextAnnotatedStringNode$applySemantics$1;->this$0:Landroidx/compose/foundation/text/modifiers/h;
 
-    .line 1
-    invoke-virtual {v1}, Landroidx/compose/foundation/text/modifiers/i;->B0()Landroidx/compose/foundation/text/modifiers/d;
+    .line 3
+    invoke-virtual {v1}, Landroidx/compose/foundation/text/modifiers/h;->y0()Landroidx/compose/foundation/text/modifiers/d;
 
     move-result-object v1
 
-    .line 2
-    iget-object v1, v1, Landroidx/compose/foundation/text/modifiers/d;->n:Landroidx/compose/ui/text/f0;
+    .line 4
+    iget-object v1, v1, Landroidx/compose/foundation/text/modifiers/d;->n:Landroidx/compose/ui/text/F;
 
     if-eqz v1, :cond_1
 
-    .line 3
-    new-instance v14, Landroidx/compose/ui/text/e0;
-
-    .line 4
-    iget-object v2, v1, Landroidx/compose/ui/text/f0;->a:Landroidx/compose/ui/text/e0;
-
-    iget-object v3, v2, Landroidx/compose/ui/text/e0;->a:Landroidx/compose/ui/text/f;
-
-    iget-object v4, v0, Landroidx/compose/foundation/text/modifiers/TextAnnotatedStringNode$applySemantics$1;->this$0:Landroidx/compose/foundation/text/modifiers/i;
-
     .line 5
-    iget-object v5, v4, Landroidx/compose/foundation/text/modifiers/i;->q:Landroidx/compose/ui/text/i0;
+    new-instance v14, Landroidx/compose/ui/text/E;
 
     .line 6
-    iget-object v4, v4, Landroidx/compose/foundation/text/modifiers/i;->z:Landroidx/compose/ui/graphics/y;
+    iget-object v2, v1, Landroidx/compose/ui/text/F;->a:Landroidx/compose/ui/text/E;
+
+    iget-object v3, v2, Landroidx/compose/ui/text/E;->a:Landroidx/compose/ui/text/g;
+
+    .line 7
+    iget-object v4, v0, Landroidx/compose/foundation/text/modifiers/TextAnnotatedStringNode$applySemantics$1;->this$0:Landroidx/compose/foundation/text/modifiers/h;
+
+    .line 8
+    iget-object v15, v4, Landroidx/compose/foundation/text/modifiers/h;->q:Landroidx/compose/ui/text/I;
+
+    .line 9
+    iget-object v4, v4, Landroidx/compose/foundation/text/modifiers/h;->z:Landroidx/compose/ui/graphics/y;
 
     if-eqz v4, :cond_0
 
-    .line 7
+    .line 10
     invoke-interface {v4}, Landroidx/compose/ui/graphics/y;->a()J
 
-    move-result-wide v6
+    move-result-wide v4
 
     :goto_0
-    move-wide/from16 v17, v6
+    move-wide/from16 v16, v4
 
     goto :goto_1
 
-    .line 8
+    .line 11
     :cond_0
-    sget-wide v6, Landroidx/compose/ui/graphics/w;->h:J
+    sget-wide v4, Landroidx/compose/ui/graphics/w;->h:J
 
     goto :goto_0
 
     :goto_1
-    const-wide/16 v19, 0x0
-
-    const/16 v28, 0x0
-
-    const/16 v27, 0x0
-
     const/16 v26, 0x0
 
-    const-wide/16 v21, 0x0
+    const-wide/16 v27, 0x0
 
-    const/16 v29, 0x0
+    const-wide/16 v18, 0x0
 
-    const/4 v15, 0x0
+    const/16 v20, 0x0
+
+    const/16 v21, 0x0
+
+    const/16 v22, 0x0
 
     const-wide/16 v23, 0x0
 
-    const v16, 0xfffffe
+    const/16 v25, 0x0
 
-    move-object/from16 v25, v5
+    const v29, 0xfffffe
 
-    .line 9
-    invoke-static/range {v15 .. v29}, Landroidx/compose/ui/text/i0;->e(IIJJJJLandroidx/compose/ui/text/i0;Landroidx/compose/ui/text/font/m;Landroidx/compose/ui/text/font/s;Landroidx/compose/ui/text/font/w;Landroidx/compose/ui/text/style/i;)Landroidx/compose/ui/text/i0;
+    .line 12
+    invoke-static/range {v15 .. v29}, Landroidx/compose/ui/text/I;->e(Landroidx/compose/ui/text/I;JJLandroidx/compose/ui/text/font/u;Landroidx/compose/ui/text/font/q;Landroidx/compose/ui/text/font/k;JLandroidx/compose/ui/text/style/i;IJI)Landroidx/compose/ui/text/I;
 
     move-result-object v4
 
-    .line 10
-    iget-object v5, v2, Landroidx/compose/ui/text/e0;->c:Ljava/util/List;
-
-    .line 11
-    iget v6, v2, Landroidx/compose/ui/text/e0;->d:I
-
-    .line 12
-    iget-boolean v7, v2, Landroidx/compose/ui/text/e0;->e:Z
-
     .line 13
-    iget v8, v2, Landroidx/compose/ui/text/e0;->f:I
+    iget-object v5, v2, Landroidx/compose/ui/text/E;->c:Ljava/util/List;
 
-    .line 14
-    iget-object v9, v2, Landroidx/compose/ui/text/e0;->g:Lh2/b;
+    iget v6, v2, Landroidx/compose/ui/text/E;->d:I
 
-    .line 15
-    iget-object v10, v2, Landroidx/compose/ui/text/e0;->h:Landroidx/compose/ui/unit/LayoutDirection;
+    iget-boolean v7, v2, Landroidx/compose/ui/text/E;->e:Z
 
-    .line 16
-    iget-object v11, v2, Landroidx/compose/ui/text/e0;->i:Landroidx/compose/ui/text/font/l;
+    iget v8, v2, Landroidx/compose/ui/text/E;->f:I
 
-    .line 17
-    iget-wide v12, v2, Landroidx/compose/ui/text/e0;->j:J
+    iget-object v9, v2, Landroidx/compose/ui/text/E;->g:LM0/b;
+
+    iget-object v10, v2, Landroidx/compose/ui/text/E;->h:Landroidx/compose/ui/unit/LayoutDirection;
+
+    iget-object v11, v2, Landroidx/compose/ui/text/E;->i:Landroidx/compose/ui/text/font/j;
+
+    iget-wide v12, v2, Landroidx/compose/ui/text/E;->j:J
 
     move-object v2, v14
 
-    .line 18
-    invoke-direct/range {v2 .. v13}, Landroidx/compose/ui/text/e0;-><init>(Landroidx/compose/ui/text/f;Landroidx/compose/ui/text/i0;Ljava/util/List;IZILh2/b;Landroidx/compose/ui/unit/LayoutDirection;Landroidx/compose/ui/text/font/l;J)V
+    invoke-direct/range {v2 .. v13}, Landroidx/compose/ui/text/E;-><init>(Landroidx/compose/ui/text/g;Landroidx/compose/ui/text/I;Ljava/util/List;IZILM0/b;Landroidx/compose/ui/unit/LayoutDirection;Landroidx/compose/ui/text/font/j;J)V
 
-    .line 19
-    new-instance v2, Landroidx/compose/ui/text/f0;
+    .line 14
+    new-instance v2, Landroidx/compose/ui/text/F;
 
-    .line 20
-    iget-object v3, v1, Landroidx/compose/ui/text/f0;->b:Landroidx/compose/ui/text/l;
+    .line 15
+    iget-object v3, v1, Landroidx/compose/ui/text/F;->b:Landroidx/compose/ui/text/m;
 
-    .line 21
-    iget-wide v4, v1, Landroidx/compose/ui/text/f0;->c:J
+    .line 16
+    iget-wide v4, v1, Landroidx/compose/ui/text/F;->c:J
 
-    invoke-direct {v2, v14, v3, v4, v5}, Landroidx/compose/ui/text/f0;-><init>(Landroidx/compose/ui/text/e0;Landroidx/compose/ui/text/l;J)V
+    invoke-direct {v2, v14, v3, v4, v5}, Landroidx/compose/ui/text/F;-><init>(Landroidx/compose/ui/text/E;Landroidx/compose/ui/text/m;J)V
 
     move-object/from16 v1, p1
 
-    .line 22
+    .line 17
     invoke-interface {v1, v2}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
     goto :goto_2
@@ -201,7 +193,7 @@
     :cond_2
     const/4 v1, 0x0
 
-    .line 23
+    .line 18
     :goto_3
     invoke-static {v1}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
 
@@ -213,7 +205,7 @@
 .method public bridge synthetic invoke(Ljava/lang/Object;)Ljava/lang/Object;
     .locals 0
 
-    .line 24
+    .line 1
     check-cast p1, Ljava/util/List;
 
     invoke-virtual {p0, p1}, Landroidx/compose/foundation/text/modifiers/TextAnnotatedStringNode$applySemantics$1;->invoke(Ljava/util/List;)Ljava/lang/Boolean;

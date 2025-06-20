@@ -3,14 +3,14 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lzh/a;
+.implements Lka/a;
 
 
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "Lkotlin/jvm/internal/Lambda;",
-        "Lzh/a;"
+        "Lka/a;"
     }
 .end annotation
 
@@ -19,7 +19,7 @@
         "\u0000\u0008\n\u0002\u0018\u0002\n\u0002\u0008\u0003\u0010\u0003\u001a\u00020\u0000H\n\u00a2\u0006\u0004\u0008\u0001\u0010\u0002"
     }
     d2 = {
-        "Lqh/r;",
+        "LX9/j;",
         "invoke",
         "()V",
         "<anonymous>"
@@ -34,14 +34,14 @@
 
 
 # instance fields
-.field final synthetic this$0:Landroidx/compose/foundation/gestures/h0;
+.field final synthetic this$0:Landroidx/compose/foundation/gestures/J;
 
 
 # direct methods
-.method public constructor <init>(Landroidx/compose/foundation/gestures/h0;)V
+.method public constructor <init>(Landroidx/compose/foundation/gestures/J;)V
     .locals 0
 
-    iput-object p1, p0, Landroidx/compose/foundation/gestures/ScrollableNode$updateDefaultFlingBehavior$1;->this$0:Landroidx/compose/foundation/gestures/h0;
+    iput-object p1, p0, Landroidx/compose/foundation/gestures/ScrollableNode$updateDefaultFlingBehavior$1;->this$0:Landroidx/compose/foundation/gestures/J;
 
     const/4 p1, 0x0
 
@@ -55,10 +55,10 @@
 .method public bridge synthetic invoke()Ljava/lang/Object;
     .locals 1
 
-    .line 7
+    .line 1
     invoke-virtual {p0}, Landroidx/compose/foundation/gestures/ScrollableNode$updateDefaultFlingBehavior$1;->invoke()V
 
-    sget-object v0, Lqh/r;->a:Lqh/r;
+    sget-object v0, LX9/j;->a:LX9/j;
 
     return-object v0
 .end method
@@ -66,35 +66,37 @@
 .method public final invoke()V
     .locals 3
 
-    iget-object v0, p0, Landroidx/compose/foundation/gestures/ScrollableNode$updateDefaultFlingBehavior$1;->this$0:Landroidx/compose/foundation/gestures/h0;
-
-    .line 1
-    sget-object v1, Landroidx/compose/ui/platform/i1;->f:Landroidx/compose/runtime/e3;
-
     .line 2
-    invoke-static {v0, v1}, Lcom/google/android/play/core/appupdate/b;->s(Landroidx/compose/ui/node/i;Landroidx/compose/runtime/u1;)Ljava/lang/Object;
+    iget-object v0, p0, Landroidx/compose/foundation/gestures/ScrollableNode$updateDefaultFlingBehavior$1;->this$0:Landroidx/compose/foundation/gestures/J;
+
+    .line 3
+    sget-object v1, Landroidx/compose/ui/platform/Z;->f:Landroidx/compose/runtime/I0;
+
+    .line 4
+    invoke-static {v0, v1}, Lma/a;->g(Landroidx/compose/ui/node/i;Landroidx/compose/runtime/j0;)Ljava/lang/Object;
 
     move-result-object v0
 
-    check-cast v0, Lh2/b;
-
-    iget-object v1, p0, Landroidx/compose/foundation/gestures/ScrollableNode$updateDefaultFlingBehavior$1;->this$0:Landroidx/compose/foundation/gestures/h0;
-
-    .line 3
-    iget-object v1, v1, Landroidx/compose/foundation/gestures/h0;->D:Landroidx/compose/foundation/gestures/k;
-
-    .line 4
-    new-instance v2, Landroidx/compose/animation/p0;
-
-    invoke-direct {v2, v0}, Landroidx/compose/animation/p0;-><init>(Lh2/b;)V
+    check-cast v0, LM0/b;
 
     .line 5
-    new-instance v0, Landroidx/compose/animation/core/t;
-
-    invoke-direct {v0, v2}, Landroidx/compose/animation/core/t;-><init>(Landroidx/compose/animation/p0;)V
+    iget-object v1, p0, Landroidx/compose/foundation/gestures/ScrollableNode$updateDefaultFlingBehavior$1;->this$0:Landroidx/compose/foundation/gestures/J;
 
     .line 6
-    iput-object v0, v1, Landroidx/compose/foundation/gestures/k;->a:Landroidx/compose/animation/core/t;
+    iget-object v1, v1, Landroidx/compose/foundation/gestures/J;->D:Landroidx/compose/foundation/gestures/k;
+
+    .line 7
+    new-instance v2, LQ/d;
+
+    invoke-direct {v2, v0}, LQ/d;-><init>(LM0/b;)V
+
+    .line 8
+    new-instance v0, Landroidx/compose/animation/core/r;
+
+    invoke-direct {v0, v2}, Landroidx/compose/animation/core/r;-><init>(LQ/d;)V
+
+    .line 9
+    iput-object v0, v1, Landroidx/compose/foundation/gestures/k;->a:Landroidx/compose/animation/core/r;
 
     return-void
 .end method

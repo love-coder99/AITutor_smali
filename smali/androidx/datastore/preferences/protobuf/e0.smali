@@ -1,7 +1,3 @@
-.class public abstract Landroidx/datastore/preferences/protobuf/e0;
-.super Landroidx/datastore/preferences/protobuf/c;
+.class public interface abstract Landroidx/datastore/preferences/protobuf/e0;
+.super Ljava/lang/Object;
 .source "SourceFile"
-
-# interfaces
-.implements Ljava/util/RandomAccess;
-.implements Landroidx/datastore/preferences/protobuf/i1;

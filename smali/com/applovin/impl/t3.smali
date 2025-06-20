@@ -1,52 +1,38 @@
-.class public abstract Lcom/applovin/impl/t3;
+.class public final synthetic Lcom/applovin/impl/T3;
 .super Ljava/lang/Object;
 .source "SourceFile"
 
+# interfaces
+.implements Ljava/util/concurrent/ThreadFactory;
+
+
+# instance fields
+.field public final synthetic b:Ljava/lang/String;
+
 
 # direct methods
-.method public static a(ILandroid/content/Context;)I
+.method public synthetic constructor <init>(Ljava/lang/String;)V
+    .locals 0
+
+    .line 1
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    iput-object p1, p0, Lcom/applovin/impl/T3;->b:Ljava/lang/String;
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public final newThread(Ljava/lang/Runnable;)Ljava/lang/Thread;
     .locals 1
 
     .line 1
-    invoke-static {}, Lcom/applovin/impl/z3;->g()Z
+    iget-object v0, p0, Lcom/applovin/impl/T3;->b:Ljava/lang/String;
 
-    .line 2
-    .line 3
-    .line 4
-    move-result v0
+    invoke-static {v0, p1}, Lcom/applovin/impl/xp;->b(Ljava/lang/String;Ljava/lang/Runnable;)Ljava/lang/Thread;
 
-    .line 5
-    if-eqz v0, :cond_0
-
-    .line 6
-    .line 7
-    invoke-static {p0, p1}, Lcom/applovin/impl/cw;->a(ILandroid/content/Context;)I
-
-    .line 8
-    .line 9
-    .line 10
-    move-result p0
-
-    .line 11
-    return p0
-
-    .line 12
-    :cond_0
-    invoke-virtual {p1}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
-
-    .line 13
-    .line 14
-    .line 15
     move-result-object p1
 
-    .line 16
-    invoke-virtual {p1, p0}, Landroid/content/res/Resources;->getColor(I)I
-
-    .line 17
-    .line 18
-    .line 19
-    move-result p0
-
-    .line 20
-    return p0
+    return-object p1
 .end method

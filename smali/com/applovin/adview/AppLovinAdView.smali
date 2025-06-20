@@ -29,11 +29,11 @@
     .line 8
     invoke-direct {p0, p1, p2, p3}, Landroid/widget/RelativeLayout;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
 
-    const/4 v1, 0x0
-
     const/4 v2, 0x0
 
     const/4 v3, 0x0
+
+    const/4 v1, 0x0
 
     move-object v0, p0
 
@@ -166,9 +166,9 @@
     .line 10
     invoke-virtual {v1, p2}, Landroid/widget/TextView;->setTextColor(I)V
 
+    .line 11
     const-string p2, "AppLovin Ad"
 
-    .line 11
     invoke-virtual {v1, p2}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
     const/16 p2, 0x11
@@ -250,8 +250,11 @@
 .method public getController()Lcom/applovin/impl/adview/a;
     .locals 1
 
+    .line 1
     iget-object v0, p0, Lcom/applovin/adview/AppLovinAdView;->a:Lcom/applovin/impl/adview/a;
 
+    .line 2
+    .line 3
     return-object v0
 .end method
 
@@ -554,6 +557,14 @@
 
 .method public setExtraInfo(Ljava/lang/String;Ljava/lang/Object;)V
     .locals 1
+    .param p1    # Ljava/lang/String;
+        .annotation build Landroidx/annotation/NonNull;
+        .end annotation
+    .end param
+    .param p2    # Ljava/lang/Object;
+        .annotation build Landroidx/annotation/Nullable;
+        .end annotation
+    .end param
 
     .line 1
     if-eqz p1, :cond_1

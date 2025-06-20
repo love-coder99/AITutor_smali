@@ -51,8 +51,10 @@
     .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
+    .line 2
     iput p1, p0, Lcom/applovin/impl/kk;->a:F
 
+    .line 3
     iput p2, p0, Lcom/applovin/impl/kk;->b:I
 
     return-void
@@ -61,17 +63,17 @@
 .method private constructor <init>(Landroid/os/Parcel;)V
     .locals 1
 
-    .line 2
+    .line 4
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 3
+    .line 5
     invoke-virtual {p1}, Landroid/os/Parcel;->readFloat()F
 
     move-result v0
 
     iput v0, p0, Lcom/applovin/impl/kk;->a:F
 
-    .line 4
+    .line 6
     invoke-virtual {p1}, Landroid/os/Parcel;->readInt()I
 
     move-result p1
@@ -84,7 +86,7 @@
 .method public synthetic constructor <init>(Landroid/os/Parcel;Lcom/applovin/impl/kk$a;)V
     .locals 0
 
-    .line 5
+    .line 7
     invoke-direct {p0, p1}, Lcom/applovin/impl/kk;-><init>(Landroid/os/Parcel;)V
 
     return-void
@@ -96,7 +98,7 @@
     .locals 0
 
     .line 1
-    invoke-static {p0, p1}, Lcom/applovin/impl/ns;->a(Lcom/applovin/impl/af$b;Lcom/applovin/impl/ud$b;)V
+    invoke-static {p0, p1}, Lcom/applovin/impl/F;->a(Lcom/applovin/impl/af$b;Lcom/applovin/impl/ud$b;)V
 
     return-void
 .end method
@@ -105,7 +107,7 @@
     .locals 1
 
     .line 2
-    invoke-static {p0}, Lcom/applovin/impl/ns;->b(Lcom/applovin/impl/af$b;)[B
+    invoke-static {p0}, Lcom/applovin/impl/F;->b(Lcom/applovin/impl/af$b;)[B
 
     move-result-object v0
 
@@ -116,7 +118,7 @@
     .locals 1
 
     .line 1
-    invoke-static {p0}, Lcom/applovin/impl/ns;->c(Lcom/applovin/impl/af$b;)Lcom/applovin/impl/e9;
+    invoke-static {p0}, Lcom/applovin/impl/F;->c(Lcom/applovin/impl/af$b;)Lcom/applovin/impl/e9;
 
     move-result-object v0
 

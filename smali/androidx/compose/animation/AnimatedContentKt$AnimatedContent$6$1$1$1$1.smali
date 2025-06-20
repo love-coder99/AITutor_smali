@@ -3,12 +3,12 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lzh/c;
+.implements Lka/c;
 
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Landroidx/compose/animation/AnimatedContentKt$AnimatedContent$6$1$1$1;->invoke-3p2s80s(Landroidx/compose/ui/layout/o0;Landroidx/compose/ui/layout/l0;J)Landroidx/compose/ui/layout/n0;
+    value = Landroidx/compose/animation/AnimatedContentKt$AnimatedContent$6$1$1$1;->invoke-3p2s80s(Landroidx/compose/ui/layout/L;Landroidx/compose/ui/layout/I;J)Landroidx/compose/ui/layout/K;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -19,7 +19,7 @@
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "Lkotlin/jvm/internal/Lambda;",
-        "Lzh/c;"
+        "Lka/c;"
     }
 .end annotation
 
@@ -29,10 +29,10 @@
     }
     d2 = {
         "S",
-        "Landroidx/compose/ui/layout/z0;",
-        "Lqh/r;",
+        "Landroidx/compose/ui/layout/W;",
+        "LX9/j;",
         "invoke",
-        "(Landroidx/compose/ui/layout/z0;)V",
+        "(Landroidx/compose/ui/layout/W;)V",
         "<anonymous>"
     }
     k = 0x3
@@ -45,18 +45,18 @@
 
 
 # instance fields
-.field final synthetic $placeable:Landroidx/compose/ui/layout/a1;
+.field final synthetic $placeable:Landroidx/compose/ui/layout/X;
 
-.field final synthetic $specOnEnter:Landroidx/compose/animation/s;
+.field final synthetic $specOnEnter:Landroidx/compose/animation/r;
 
 
 # direct methods
-.method public constructor <init>(Landroidx/compose/ui/layout/a1;Landroidx/compose/animation/s;)V
+.method public constructor <init>(Landroidx/compose/ui/layout/X;Landroidx/compose/animation/r;)V
     .locals 0
 
-    iput-object p1, p0, Landroidx/compose/animation/AnimatedContentKt$AnimatedContent$6$1$1$1$1;->$placeable:Landroidx/compose/ui/layout/a1;
+    iput-object p1, p0, Landroidx/compose/animation/AnimatedContentKt$AnimatedContent$6$1$1$1$1;->$placeable:Landroidx/compose/ui/layout/X;
 
-    iput-object p2, p0, Landroidx/compose/animation/AnimatedContentKt$AnimatedContent$6$1$1$1$1;->$specOnEnter:Landroidx/compose/animation/s;
+    iput-object p2, p0, Landroidx/compose/animation/AnimatedContentKt$AnimatedContent$6$1$1$1$1;->$specOnEnter:Landroidx/compose/animation/r;
 
     const/4 p1, 0x1
 
@@ -70,56 +70,57 @@
 .method public bridge synthetic invoke(Ljava/lang/Object;)Ljava/lang/Object;
     .locals 0
 
-    .line 9
-    check-cast p1, Landroidx/compose/ui/layout/z0;
+    .line 1
+    check-cast p1, Landroidx/compose/ui/layout/W;
 
-    invoke-virtual {p0, p1}, Landroidx/compose/animation/AnimatedContentKt$AnimatedContent$6$1$1$1$1;->invoke(Landroidx/compose/ui/layout/z0;)V
+    invoke-virtual {p0, p1}, Landroidx/compose/animation/AnimatedContentKt$AnimatedContent$6$1$1$1$1;->invoke(Landroidx/compose/ui/layout/W;)V
 
-    sget-object p1, Lqh/r;->a:Lqh/r;
+    sget-object p1, LX9/j;->a:LX9/j;
 
     return-object p1
 .end method
 
-.method public final invoke(Landroidx/compose/ui/layout/z0;)V
+.method public final invoke(Landroidx/compose/ui/layout/W;)V
     .locals 6
 
-    iget-object v0, p0, Landroidx/compose/animation/AnimatedContentKt$AnimatedContent$6$1$1$1$1;->$placeable:Landroidx/compose/ui/layout/a1;
-
-    iget-object v1, p0, Landroidx/compose/animation/AnimatedContentKt$AnimatedContent$6$1$1$1$1;->$specOnEnter:Landroidx/compose/animation/s;
-
-    .line 1
-    iget-object v1, v1, Landroidx/compose/animation/s;->c:Landroidx/compose/runtime/ParcelableSnapshotMutableFloatState;
-
     .line 2
-    invoke-virtual {v1}, Landroidx/compose/runtime/n2;->k()F
+    iget-object v0, p0, Landroidx/compose/animation/AnimatedContentKt$AnimatedContent$6$1$1$1$1;->$placeable:Landroidx/compose/ui/layout/X;
+
+    iget-object v1, p0, Landroidx/compose/animation/AnimatedContentKt$AnimatedContent$6$1$1$1$1;->$specOnEnter:Landroidx/compose/animation/r;
+
+    .line 3
+    iget-object v1, v1, Landroidx/compose/animation/r;->c:Landroidx/compose/runtime/ParcelableSnapshotMutableFloatState;
+
+    .line 4
+    invoke-virtual {v1}, Landroidx/compose/runtime/ParcelableSnapshotMutableFloatState;->k()F
 
     move-result v1
 
-    .line 3
+    .line 5
     invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
     const/4 v2, 0x0
 
-    .line 4
-    invoke-static {v2, v2}, Ly/f;->a(II)J
+    .line 6
+    invoke-static {v2, v2}, Landroid/support/v4/media/session/a;->a(II)J
 
     move-result-wide v2
 
-    .line 5
-    invoke-static {p1, v0}, Landroidx/compose/ui/layout/z0;->c(Landroidx/compose/ui/layout/z0;Landroidx/compose/ui/layout/a1;)V
-
-    .line 6
-    iget-wide v4, v0, Landroidx/compose/ui/layout/a1;->g:J
-
     .line 7
-    invoke-static {v2, v3, v4, v5}, Lh2/h;->d(JJ)J
+    invoke-static {p1, v0}, Landroidx/compose/ui/layout/W;->a(Landroidx/compose/ui/layout/W;Landroidx/compose/ui/layout/X;)V
+
+    .line 8
+    iget-wide v4, v0, Landroidx/compose/ui/layout/X;->g:J
+
+    .line 9
+    invoke-static {v2, v3, v4, v5}, LM0/h;->d(JJ)J
 
     move-result-wide v2
 
     const/4 p1, 0x0
 
-    .line 8
-    invoke-virtual {v0, v2, v3, v1, p1}, Landroidx/compose/ui/layout/a1;->h0(JFLzh/c;)V
+    .line 10
+    invoke-virtual {v0, v2, v3, v1, p1}, Landroidx/compose/ui/layout/X;->a0(JFLka/c;)V
 
     return-void
 .end method

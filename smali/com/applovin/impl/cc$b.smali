@@ -95,7 +95,7 @@
 .method public a(I)Lcom/applovin/impl/cc$b;
     .locals 0
 
-    .line 1
+    .line 2
     iput p1, p0, Lcom/applovin/impl/cc$b;->h:I
 
     return-object p0
@@ -104,13 +104,14 @@
 .method public a(Landroid/content/Context;)Lcom/applovin/impl/cc$b;
     .locals 1
 
+    .line 3
     sget v0, Lcom/applovin/sdk/R$drawable;->applovin_ic_disclosure_arrow:I
 
     iput v0, p0, Lcom/applovin/impl/cc$b;->h:I
 
+    .line 4
     sget v0, Lcom/applovin/sdk/R$color;->applovin_sdk_disclosureButtonColor:I
 
-    .line 5
     invoke-static {v0, p1}, Lcom/applovin/impl/t3;->a(ILandroid/content/Context;)I
 
     move-result p1
@@ -123,7 +124,7 @@
 .method public a(Landroid/text/SpannedString;)Lcom/applovin/impl/cc$b;
     .locals 0
 
-    .line 2
+    .line 6
     iput-object p1, p0, Lcom/applovin/impl/cc$b;->d:Landroid/text/SpannedString;
 
     return-object p0
@@ -132,7 +133,7 @@
 .method public a(Ljava/lang/String;)Lcom/applovin/impl/cc$b;
     .locals 0
 
-    .line 3
+    .line 1
     iput-object p1, p0, Lcom/applovin/impl/cc$b;->f:Ljava/lang/String;
 
     return-object p0
@@ -141,7 +142,7 @@
 .method public a(Z)Lcom/applovin/impl/cc$b;
     .locals 0
 
-    .line 4
+    .line 5
     iput-boolean p1, p0, Lcom/applovin/impl/cc$b;->b:Z
 
     return-object p0
@@ -150,7 +151,7 @@
 .method public a()Lcom/applovin/impl/cc;
     .locals 2
 
-    .line 6
+    .line 7
     new-instance v0, Lcom/applovin/impl/cc;
 
     const/4 v1, 0x0
@@ -163,7 +164,7 @@
 .method public b(I)Lcom/applovin/impl/cc$b;
     .locals 0
 
-    .line 1
+    .line 2
     iput p1, p0, Lcom/applovin/impl/cc$b;->l:I
 
     return-object p0
@@ -172,7 +173,7 @@
 .method public b(Landroid/text/SpannedString;)Lcom/applovin/impl/cc$b;
     .locals 0
 
-    .line 2
+    .line 4
     iput-object p1, p0, Lcom/applovin/impl/cc$b;->c:Landroid/text/SpannedString;
 
     return-object p0
@@ -181,7 +182,7 @@
 .method public b(Ljava/lang/String;)Lcom/applovin/impl/cc$b;
     .locals 0
 
-    .line 3
+    .line 1
     iput-object p1, p0, Lcom/applovin/impl/cc$b;->e:Ljava/lang/String;
 
     return-object p0
@@ -190,7 +191,7 @@
 .method public b(Z)Lcom/applovin/impl/cc$b;
     .locals 0
 
-    .line 4
+    .line 3
     iput-boolean p1, p0, Lcom/applovin/impl/cc$b;->m:Z
 
     return-object p0
@@ -199,7 +200,7 @@
 .method public c(I)Lcom/applovin/impl/cc$b;
     .locals 0
 
-    .line 1
+    .line 3
     iput p1, p0, Lcom/applovin/impl/cc$b;->j:I
 
     return-object p0
@@ -208,7 +209,7 @@
 .method public c(Ljava/lang/String;)Lcom/applovin/impl/cc$b;
     .locals 1
 
-    .line 2
+    .line 1
     invoke-static {p1}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
 
     move-result v0
@@ -224,7 +225,7 @@
     :cond_0
     const/4 v0, 0x0
 
-    .line 3
+    .line 2
     :goto_0
     invoke-virtual {p0, v0}, Lcom/applovin/impl/cc$b;->a(Landroid/text/SpannedString;)Lcom/applovin/impl/cc$b;
 
@@ -236,7 +237,7 @@
 .method public d(I)Lcom/applovin/impl/cc$b;
     .locals 0
 
-    .line 1
+    .line 3
     iput p1, p0, Lcom/applovin/impl/cc$b;->i:I
 
     return-object p0
@@ -245,7 +246,7 @@
 .method public d(Ljava/lang/String;)Lcom/applovin/impl/cc$b;
     .locals 1
 
-    .line 2
+    .line 1
     invoke-static {p1}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
 
     move-result v0
@@ -261,7 +262,7 @@
     :cond_0
     const/4 v0, 0x0
 
-    .line 3
+    .line 2
     :goto_0
     invoke-virtual {p0, v0}, Lcom/applovin/impl/cc$b;->b(Landroid/text/SpannedString;)Lcom/applovin/impl/cc$b;
 

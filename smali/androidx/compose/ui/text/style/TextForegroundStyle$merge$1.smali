@@ -3,14 +3,14 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lzh/a;
+.implements Lka/a;
 
 
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "Lkotlin/jvm/internal/Lambda;",
-        "Lzh/a;"
+        "Lka/a;"
     }
 .end annotation
 
@@ -56,9 +56,9 @@
 .method public final invoke()Ljava/lang/Float;
     .locals 1
 
+    .line 1
     iget-object v0, p0, Landroidx/compose/ui/text/style/TextForegroundStyle$merge$1;->this$0:Landroidx/compose/ui/text/style/m;
 
-    .line 1
     invoke-interface {v0}, Landroidx/compose/ui/text/style/m;->a()F
 
     move-result v0

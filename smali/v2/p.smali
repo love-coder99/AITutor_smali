@@ -1,157 +1,195 @@
-.class public final Lv2/p;
-.super Lv2/q;
+.class public final LV2/p;
+.super Ljava/lang/Object;
 .source "SourceFile"
 
 
 # instance fields
-.field public k:Z
+.field public final a:Ljava/util/HashMap;
 
 
-# virtual methods
-.method public final f(FJLandroid/view/View;Ln2/f;)Z
-    .locals 6
+# direct methods
+.method public constructor <init>(I)V
+    .locals 0
 
     .line 1
-    instance-of v0, p4, Landroidx/constraintlayout/motion/widget/MotionLayout;
+    packed-switch p1, :pswitch_data_0
 
     .line 2
     .line 3
-    if-eqz v0, :cond_0
-
     .line 4
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
     .line 5
-    move-object v0, p4
-
     .line 6
-    check-cast v0, Landroidx/constraintlayout/motion/widget/MotionLayout;
-
     .line 7
-    .line 8
-    invoke-virtual/range {p0 .. p5}, Lv2/q;->d(FJLandroid/view/View;Ln2/f;)F
+    new-instance p1, Ljava/util/HashMap;
 
+    .line 8
     .line 9
+    invoke-direct {p1}, Ljava/util/HashMap;-><init>()V
+
     .line 10
     .line 11
-    move-result p1
-
     .line 12
-    invoke-virtual {v0, p1}, Landroidx/constraintlayout/motion/widget/MotionLayout;->setProgress(F)V
+    iput-object p1, p0, LV2/p;->a:Ljava/util/HashMap;
 
     .line 13
     .line 14
-    .line 15
-    goto :goto_1
+    new-instance p1, Ljava/util/HashMap;
 
+    .line 15
     .line 16
-    :cond_0
-    iget-boolean v0, p0, Lv2/p;->k:Z
+    invoke-direct {p1}, Ljava/util/HashMap;-><init>()V
 
     .line 17
     .line 18
-    const/4 v1, 0x0
-
     .line 19
-    if-eqz v0, :cond_1
+    return-void
 
     .line 20
+    :pswitch_0
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
     .line 21
-    return v1
-
     .line 22
-    :cond_1
-    const/4 v0, 0x1
-
     .line 23
-    :try_start_0
-    invoke-virtual {p4}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+    new-instance p1, Ljava/util/HashMap;
 
     .line 24
     .line 25
+    invoke-direct {p1}, Ljava/util/HashMap;-><init>()V
+
     .line 26
-    move-result-object v2
-
     .line 27
-    const-string v3, "setProgress"
-
     .line 28
+    iput-object p1, p0, LV2/p;->a:Ljava/util/HashMap;
+
     .line 29
-    new-array v4, v0, [Ljava/lang/Class;
-
     .line 30
+    return-void
+
     .line 31
-    sget-object v5, Ljava/lang/Float;->TYPE:Ljava/lang/Class;
+    :pswitch_data_0
+    .packed-switch 0x1
+        :pswitch_0
+    .end packed-switch
+.end method
 
-    .line 32
-    .line 33
-    aput-object v5, v4, v1
 
-    .line 34
-    .line 35
-    invoke-virtual {v2, v3, v4}, Ljava/lang/Class;->getMethod(Ljava/lang/String;[Ljava/lang/Class;)Ljava/lang/reflect/Method;
+# virtual methods
+.method public a(Lz7/k;)Z
+    .locals 3
 
-    .line 36
-    .line 37
-    .line 38
-    move-result-object v2
-    :try_end_0
-    .catch Ljava/lang/NoSuchMethodException; {:try_start_0 .. :try_end_0} :catch_0
+    .line 1
+    iget-object v0, p1, Lz7/e;->b:Ljava/util/List;
 
-    .line 39
+    .line 2
+    .line 3
+    invoke-interface {v0}, Ljava/util/List;->size()I
+
+    .line 4
+    .line 5
+    .line 6
+    move-result v0
+
+    .line 7
+    rem-int/lit8 v0, v0, 0x2
+
+    .line 8
+    .line 9
+    const/4 v1, 0x0
+
+    .line 10
+    const/4 v2, 0x1
+
+    .line 11
+    if-ne v0, v2, :cond_0
+
+    .line 12
+    .line 13
     goto :goto_0
 
+    .line 14
+    :cond_0
+    const/4 v2, 0x0
+
+    .line 15
+    :goto_0
+    const-string v0, "Expected a collection path."
+
+    .line 16
+    .line 17
+    new-array v1, v1, [Ljava/lang/Object;
+
+    .line 18
+    .line 19
+    invoke-static {v2, v0, v1}, Lx0/c;->r(ZLjava/lang/String;[Ljava/lang/Object;)V
+
+    .line 20
+    .line 21
+    .line 22
+    invoke-virtual {p1}, Lz7/e;->e()Ljava/lang/String;
+
+    .line 23
+    .line 24
+    .line 25
+    move-result-object v0
+
+    .line 26
+    invoke-virtual {p1}, Lz7/e;->i()Lz7/e;
+
+    .line 27
+    .line 28
+    .line 29
+    move-result-object p1
+
+    .line 30
+    check-cast p1, Lz7/k;
+
+    .line 31
+    .line 32
+    iget-object v1, p0, LV2/p;->a:Ljava/util/HashMap;
+
+    .line 33
+    .line 34
+    invoke-virtual {v1, v0}, Ljava/util/HashMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 35
+    .line 36
+    .line 37
+    move-result-object v2
+
+    .line 38
+    check-cast v2, Ljava/util/HashSet;
+
+    .line 39
     .line 40
-    :catch_0
-    iput-boolean v0, p0, Lv2/p;->k:Z
+    if-nez v2, :cond_1
 
     .line 41
     .line 42
-    const/4 v2, 0x0
+    new-instance v2, Ljava/util/HashSet;
 
     .line 43
-    :goto_0
-    if-eqz v2, :cond_2
-
     .line 44
-    .line 45
-    :try_start_1
-    new-array v0, v0, [Ljava/lang/Object;
+    invoke-direct {v2}, Ljava/util/HashSet;-><init>()V
 
+    .line 45
     .line 46
     .line 47
-    invoke-virtual/range {p0 .. p5}, Lv2/q;->d(FJLandroid/view/View;Ln2/f;)F
+    invoke-virtual {v1, v0, v2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 48
     .line 49
     .line 50
-    move-result p1
+    :cond_1
+    invoke-virtual {v2, p1}, Ljava/util/HashSet;->add(Ljava/lang/Object;)Z
 
     .line 51
-    invoke-static {p1}, Ljava/lang/Float;->valueOf(F)Ljava/lang/Float;
-
     .line 52
     .line 53
+    move-result p1
+
     .line 54
-    move-result-object p1
-
-    .line 55
-    aput-object p1, v0, v1
-
-    .line 56
-    .line 57
-    invoke-virtual {v2, p4, v0}, Ljava/lang/reflect/Method;->invoke(Ljava/lang/Object;[Ljava/lang/Object;)Ljava/lang/Object;
-    :try_end_1
-    .catch Ljava/lang/IllegalAccessException; {:try_start_1 .. :try_end_1} :catch_1
-    .catch Ljava/lang/reflect/InvocationTargetException; {:try_start_1 .. :try_end_1} :catch_1
-
-    .line 58
-    .line 59
-    .line 60
-    :catch_1
-    :cond_2
-    :goto_1
-    iget-boolean p1, p0, Ln2/q;->h:Z
-
-    .line 61
-    .line 62
     return p1
 .end method

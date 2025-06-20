@@ -46,7 +46,7 @@
 .method public static a(Ljava/lang/String;)Ljava/lang/String;
     .locals 8
 
-    .line 25
+    .line 28
     invoke-static {p0}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
 
     move-result v0
@@ -57,13 +57,13 @@
 
     return-object v1
 
-    .line 26
+    .line 29
     :cond_0
     new-instance v0, Ljava/io/File;
 
     invoke-direct {v0, p0}, Ljava/io/File;-><init>(Ljava/lang/String;)V
 
-    .line 27
+    .line 30
     invoke-virtual {v0}, Ljava/io/File;->exists()Z
 
     move-result p0
@@ -72,18 +72,18 @@
 
     return-object v1
 
-    .line 28
+    .line 31
     :cond_1
     new-instance p0, Ljava/util/LinkedList;
 
     invoke-direct {p0}, Ljava/util/LinkedList;-><init>()V
 
-    .line 29
+    .line 32
     new-instance v2, Ljava/util/LinkedList;
 
     invoke-direct {v2}, Ljava/util/LinkedList;-><init>()V
 
-    .line 30
+    .line 33
     new-instance v3, Ljava/lang/StringBuilder;
 
     invoke-direct {v3}, Ljava/lang/StringBuilder;-><init>()V
@@ -92,7 +92,7 @@
 
     const/4 v5, 0x0
 
-    .line 31
+    .line 34
     :try_start_0
     new-instance v6, Ljava/io/BufferedReader;
 
@@ -106,7 +106,7 @@
 
     const/4 v0, 0x0
 
-    .line 32
+    .line 35
     :goto_0
     :try_start_1
     invoke-virtual {v6}, Ljava/io/BufferedReader;->readLine()Ljava/lang/String;
@@ -119,28 +119,28 @@
 
     if-gt v0, v7, :cond_2
 
-    .line 33
+    .line 36
     invoke-virtual {p0, v1}, Ljava/util/LinkedList;->add(Ljava/lang/Object;)Z
 
-    .line 34
+    .line 37
     invoke-virtual {v3, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     invoke-virtual {v3, v4}, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
 
     goto :goto_1
 
-    .line 35
+    .line 38
     :cond_2
     invoke-virtual {v2, v1}, Ljava/util/LinkedList;->add(Ljava/lang/Object;)Z
 
-    .line 36
+    .line 39
     invoke-virtual {v2}, Ljava/util/LinkedList;->size()I
 
     move-result v1
 
     if-le v1, v7, :cond_3
 
-    .line 37
+    .line 40
     invoke-virtual {v2}, Ljava/util/LinkedList;->poll()Ljava/lang/Object;
     :try_end_1
     .catchall {:try_start_1 .. :try_end_1} :catchall_0
@@ -153,7 +153,7 @@
 
     goto :goto_0
 
-    .line 38
+    .line 41
     :cond_4
     invoke-static {v6}, Lcom/apm/insight/a;->a(Ljava/io/Closeable;)V
 
@@ -165,7 +165,7 @@
     :catchall_1
     invoke-static {v1}, Lcom/apm/insight/a;->a(Ljava/io/Closeable;)V
 
-    .line 39
+    .line 42
     :goto_2
     invoke-virtual {v2}, Ljava/util/AbstractCollection;->isEmpty()Z
 
@@ -175,9 +175,9 @@
 
     if-eqz v5, :cond_5
 
+    .line 43
     const-string p0, "\t... skip "
 
-    .line 40
     invoke-virtual {v3, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     invoke-virtual {v3, v5}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
@@ -186,7 +186,7 @@
 
     invoke-virtual {v3, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    .line 41
+    .line 44
     :cond_5
     invoke-virtual {v2}, Ljava/util/AbstractCollection;->iterator()Ljava/util/Iterator;
 
@@ -205,14 +205,14 @@
 
     check-cast v0, Ljava/lang/String;
 
-    .line 42
+    .line 45
     invoke-virtual {v3, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     invoke-virtual {v3, v4}, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
 
     goto :goto_3
 
-    .line 43
+    .line 46
     :cond_6
     invoke-virtual {v3}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
@@ -223,6 +223,12 @@
 
 .method public static a(Ljava/lang/Throwable;)Ljava/lang/String;
     .locals 2
+    .param p0    # Ljava/lang/Throwable;
+        .annotation build Landroidx/annotation/NonNull;
+        .end annotation
+    .end param
+    .annotation build Landroidx/annotation/NonNull;
+    .end annotation
 
     .line 9
     new-instance v0, Ljava/io/StringWriter;
@@ -253,6 +259,7 @@
     :catchall_0
     invoke-virtual {v1}, Ljava/io/PrintWriter;->close()V
 
+    .line 14
     const-string p0, ""
 
     return-object p0
@@ -260,13 +267,19 @@
 
 .method public static a(Ljava/lang/Throwable;Ljava/io/PrintStream;Lcom/apm/insight/l/e$a;)Ljava/lang/String;
     .locals 6
+    .param p0    # Ljava/lang/Throwable;
+        .annotation build Landroidx/annotation/NonNull;
+        .end annotation
+    .end param
+    .annotation build Landroidx/annotation/NonNull;
+    .end annotation
 
     const/4 v0, 0x0
 
+    .line 15
     :try_start_0
     const-string v1, "MD5"
 
-    .line 14
     invoke-static {v1}, Ljava/security/MessageDigest;->getInstance(Ljava/lang/String;)Ljava/security/MessageDigest;
 
     move-result-object v1
@@ -278,32 +291,32 @@
     :catchall_0
     move-object v1, v0
 
-    .line 15
+    .line 16
     :goto_0
     new-instance v2, Lcom/apm/insight/l/e;
 
     invoke-direct {v2, p1, v1, p2}, Lcom/apm/insight/l/e;-><init>(Ljava/io/OutputStream;Ljava/security/MessageDigest;Lcom/apm/insight/l/e$a;)V
 
-    .line 16
+    .line 17
     :try_start_1
     invoke-static {p0, v2}, Lcom/apm/insight/l/m;->a(Ljava/lang/Throwable;Ljava/io/PrintWriter;)V
     :try_end_1
     .catchall {:try_start_1 .. :try_end_1} :catchall_1
 
-    .line 17
+    .line 18
     :catchall_1
     invoke-virtual {v2}, Ljava/io/Writer;->close()V
 
     if-eqz v1, :cond_3
 
-    .line 18
+    .line 19
     invoke-virtual {v1}, Ljava/security/MessageDigest;->digest()[B
 
     move-result-object p0
 
     if-eqz p0, :cond_2
 
-    .line 19
+    .line 20
     array-length p1, p0
 
     if-gtz p1, :cond_0
@@ -313,18 +326,19 @@
     :cond_0
     const/16 p1, 0x10
 
+    .line 21
     new-array p1, p1, [C
 
     fill-array-data p1, :array_0
 
-    .line 20
+    .line 22
     array-length p2, p0
 
     shl-int/lit8 p2, p2, 0x1
 
     new-array p2, p2, [C
 
-    .line 21
+    .line 23
     array-length v0, p0
 
     const/4 v1, 0x0
@@ -342,7 +356,7 @@
 
     and-int/lit8 v5, v5, 0xf
 
-    .line 22
+    .line 24
     aget-char v5, p1, v5
 
     aput-char v5, p2, v2
@@ -351,7 +365,7 @@
 
     and-int/lit8 v3, v3, 0xf
 
-    .line 23
+    .line 25
     aget-char v3, p1, v3
 
     aput-char v3, p2, v4
@@ -360,7 +374,7 @@
 
     goto :goto_1
 
-    .line 24
+    .line 26
     :cond_1
     new-instance p0, Ljava/lang/String;
 
@@ -368,6 +382,7 @@
 
     return-object p0
 
+    .line 27
     :cond_2
     :goto_2
     const-string p0, ""
@@ -440,9 +455,9 @@
 
     move-result-object v0
 
+    .line 6
     const-string v1, "  at "
 
-    .line 6
     invoke-virtual {p1, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     invoke-virtual {p1, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
@@ -489,31 +504,32 @@
 .method public static a([Ljava/lang/StackTraceElement;[Ljava/lang/String;)Lorg/json/JSONArray;
     .locals 5
 
-    .line 134
+    .line 176
     new-instance v0, Lcom/apm/insight/l/m$a;
 
     const/4 v1, -0x1
 
     invoke-direct {v0, v1, v1}, Lcom/apm/insight/l/m$a;-><init>(II)V
 
-    .line 135
+    .line 177
     new-instance v2, Lorg/json/JSONArray;
 
     invoke-direct {v2}, Lorg/json/JSONArray;-><init>()V
 
     const/4 v3, 0x0
 
-    .line 136
+    .line 178
     :goto_0
     array-length v4, p0
 
     if-ge v3, v4, :cond_2
 
+    .line 179
     iget v4, v0, Lcom/apm/insight/l/m$a;->a:I
 
     if-ne v4, v1, :cond_0
 
-    .line 137
+    .line 180
     aget-object v4, p0, v3
 
     invoke-virtual {v4}, Ljava/lang/StackTraceElement;->getClassName()Ljava/lang/String;
@@ -526,13 +542,15 @@
 
     if-eqz v4, :cond_1
 
+    .line 181
     iput v3, v0, Lcom/apm/insight/l/m$a;->a:I
 
+    .line 182
     iput v3, v0, Lcom/apm/insight/l/m$a;->b:I
 
     goto :goto_1
 
-    .line 138
+    .line 183
     :cond_0
     aget-object v4, p0, v3
 
@@ -546,16 +564,17 @@
 
     if-nez v4, :cond_1
 
+    .line 184
     iput v3, v0, Lcom/apm/insight/l/m$a;->b:I
 
-    .line 139
+    .line 185
     invoke-virtual {v0}, Lcom/apm/insight/l/m$a;->a()Lorg/json/JSONObject;
 
     move-result-object v0
 
     invoke-virtual {v2, v0}, Lorg/json/JSONArray;->put(Ljava/lang/Object;)Lorg/json/JSONArray;
 
-    .line 140
+    .line 186
     new-instance v0, Lcom/apm/insight/l/m$a;
 
     invoke-direct {v0, v1, v1}, Lcom/apm/insight/l/m$a;-><init>(II)V
@@ -566,17 +585,18 @@
 
     goto :goto_0
 
+    .line 187
     :cond_2
     iget p1, v0, Lcom/apm/insight/l/m$a;->a:I
 
     if-eq p1, v1, :cond_3
 
-    .line 141
+    .line 188
     array-length p0, p0
 
     iput p0, v0, Lcom/apm/insight/l/m$a;->b:I
 
-    .line 142
+    .line 189
     invoke-virtual {v0}, Lcom/apm/insight/l/m$a;->a()Lorg/json/JSONObject;
 
     move-result-object p0
@@ -590,31 +610,32 @@
 .method public static a([Ljava/lang/String;[Ljava/lang/String;)Lorg/json/JSONArray;
     .locals 5
 
-    .line 143
+    .line 190
     new-instance v0, Lcom/apm/insight/l/m$a;
 
     const/4 v1, -0x1
 
     invoke-direct {v0, v1, v1}, Lcom/apm/insight/l/m$a;-><init>(II)V
 
-    .line 144
+    .line 191
     new-instance v2, Lorg/json/JSONArray;
 
     invoke-direct {v2}, Lorg/json/JSONArray;-><init>()V
 
     const/4 v3, 0x0
 
-    .line 145
+    .line 192
     :goto_0
     array-length v4, p0
 
     if-ge v3, v4, :cond_2
 
+    .line 193
     iget v4, v0, Lcom/apm/insight/l/m$a;->a:I
 
     if-ne v4, v1, :cond_0
 
-    .line 146
+    .line 194
     aget-object v4, p0, v3
 
     invoke-static {v4, p1}, Lcom/apm/insight/l/m;->a(Ljava/lang/String;[Ljava/lang/String;)Z
@@ -623,13 +644,15 @@
 
     if-eqz v4, :cond_1
 
+    .line 195
     iput v3, v0, Lcom/apm/insight/l/m$a;->a:I
 
+    .line 196
     iput v3, v0, Lcom/apm/insight/l/m$a;->b:I
 
     goto :goto_1
 
-    .line 147
+    .line 197
     :cond_0
     aget-object v4, p0, v3
 
@@ -639,16 +662,17 @@
 
     if-nez v4, :cond_1
 
+    .line 198
     iput v3, v0, Lcom/apm/insight/l/m$a;->b:I
 
-    .line 148
+    .line 199
     invoke-virtual {v0}, Lcom/apm/insight/l/m$a;->a()Lorg/json/JSONObject;
 
     move-result-object v0
 
     invoke-virtual {v2, v0}, Lorg/json/JSONArray;->put(Ljava/lang/Object;)Lorg/json/JSONArray;
 
-    .line 149
+    .line 200
     new-instance v0, Lcom/apm/insight/l/m$a;
 
     invoke-direct {v0, v1, v1}, Lcom/apm/insight/l/m$a;-><init>(II)V
@@ -659,17 +683,18 @@
 
     goto :goto_0
 
+    .line 201
     :cond_2
     iget p1, v0, Lcom/apm/insight/l/m$a;->a:I
 
     if-eq p1, v1, :cond_3
 
-    .line 150
+    .line 202
     array-length p0, p0
 
     iput p0, v0, Lcom/apm/insight/l/m$a;->b:I
 
-    .line 151
+    .line 203
     invoke-virtual {v0}, Lcom/apm/insight/l/m$a;->a()Lorg/json/JSONObject;
 
     move-result-object p0
@@ -683,48 +708,51 @@
 .method private static a(Ljava/lang/StackTraceElement;I)V
     .locals 3
 
+    .line 47
     :try_start_0
     const-string v0, "\tat "
 
-    .line 160
+    .line 48
     invoke-static {p1, v0}, Lcom/apm/insight/nativecrash/NativeImpl;->a(ILjava/lang/String;)V
 
-    .line 161
+    .line 49
     invoke-virtual {p0}, Ljava/lang/StackTraceElement;->getClassName()Ljava/lang/String;
 
     move-result-object v0
 
-    .line 162
+    .line 50
     invoke-static {p1, v0}, Lcom/apm/insight/nativecrash/NativeImpl;->a(ILjava/lang/String;)V
 
+    .line 51
     const-string v0, "."
 
-    .line 163
+    .line 52
     invoke-static {p1, v0}, Lcom/apm/insight/nativecrash/NativeImpl;->a(ILjava/lang/String;)V
 
-    .line 164
+    .line 53
     invoke-virtual {p0}, Ljava/lang/StackTraceElement;->getMethodName()Ljava/lang/String;
 
     move-result-object v0
 
-    .line 165
+    .line 54
     invoke-static {p1, v0}, Lcom/apm/insight/nativecrash/NativeImpl;->a(ILjava/lang/String;)V
 
-    .line 166
+    .line 55
     invoke-virtual {p0}, Ljava/lang/StackTraceElement;->isNativeMethod()Z
 
     move-result v0
 
     if-eqz v0, :cond_0
 
+    .line 56
     const-string p0, "(Native Method)"
 
-    .line 167
+    .line 57
     invoke-static {p1, p0}, Lcom/apm/insight/nativecrash/NativeImpl;->a(ILjava/lang/String;)V
 
     goto :goto_0
 
-    .line 168
+    .line 58
     :cond_0
     invoke-virtual {p0}, Ljava/lang/StackTraceElement;->getFileName()Ljava/lang/String;
 
@@ -736,7 +764,7 @@
 
     if-eqz v0, :cond_2
 
-    .line 169
+    .line 59
     :try_start_1
     invoke-virtual {p0}, Ljava/lang/StackTraceElement;->getLineNumber()I
 
@@ -748,24 +776,25 @@
 
     if-ltz v0, :cond_1
 
-    .line 170
+    .line 60
     :try_start_2
     invoke-static {p1, v2}, Lcom/apm/insight/nativecrash/NativeImpl;->a(ILjava/lang/String;)V
 
-    .line 171
+    .line 61
     invoke-virtual {p0}, Ljava/lang/StackTraceElement;->getFileName()Ljava/lang/String;
 
     move-result-object v0
 
-    .line 172
+    .line 62
     invoke-static {p1, v0}, Lcom/apm/insight/nativecrash/NativeImpl;->a(ILjava/lang/String;)V
 
+    .line 63
     const-string v0, ":"
 
-    .line 173
+    .line 64
     invoke-static {p1, v0}, Lcom/apm/insight/nativecrash/NativeImpl;->a(ILjava/lang/String;)V
 
-    .line 174
+    .line 65
     invoke-virtual {p0}, Ljava/lang/StackTraceElement;->getLineNumber()I
 
     move-result p0
@@ -774,32 +803,32 @@
 
     move-result-object p0
 
-    .line 175
+    .line 66
     invoke-static {p1, p0}, Lcom/apm/insight/nativecrash/NativeImpl;->a(ILjava/lang/String;)V
 
-    .line 176
+    .line 67
     invoke-static {p1, v1}, Lcom/apm/insight/nativecrash/NativeImpl;->a(ILjava/lang/String;)V
 
     goto :goto_0
 
-    .line 177
+    .line 68
     :cond_1
     invoke-static {p1, v2}, Lcom/apm/insight/nativecrash/NativeImpl;->a(ILjava/lang/String;)V
 
-    .line 178
+    .line 69
     invoke-virtual {p0}, Ljava/lang/StackTraceElement;->getFileName()Ljava/lang/String;
 
     move-result-object p0
 
-    .line 179
+    .line 70
     invoke-static {p1, p0}, Lcom/apm/insight/nativecrash/NativeImpl;->a(ILjava/lang/String;)V
 
-    .line 180
+    .line 71
     invoke-static {p1, v1}, Lcom/apm/insight/nativecrash/NativeImpl;->a(ILjava/lang/String;)V
 
     goto :goto_0
 
-    .line 181
+    .line 72
     :cond_2
     invoke-virtual {p0}, Ljava/lang/StackTraceElement;->getLineNumber()I
 
@@ -807,12 +836,13 @@
 
     if-ltz v0, :cond_3
 
+    .line 73
     const-string v0, "(Unknown Source:"
 
-    .line 182
+    .line 74
     invoke-static {p1, v0}, Lcom/apm/insight/nativecrash/NativeImpl;->a(ILjava/lang/String;)V
 
-    .line 183
+    .line 75
     invoke-virtual {p0}, Ljava/lang/StackTraceElement;->getLineNumber()I
 
     move-result p0
@@ -821,24 +851,26 @@
 
     move-result-object p0
 
-    .line 184
+    .line 76
     invoke-static {p1, p0}, Lcom/apm/insight/nativecrash/NativeImpl;->a(ILjava/lang/String;)V
 
-    .line 185
+    .line 77
     invoke-static {p1, v1}, Lcom/apm/insight/nativecrash/NativeImpl;->a(ILjava/lang/String;)V
 
     goto :goto_0
 
+    .line 78
     :cond_3
     const-string p0, "(Unknown Source)"
 
-    .line 186
+    .line 79
     invoke-static {p1, p0}, Lcom/apm/insight/nativecrash/NativeImpl;->a(ILjava/lang/String;)V
 
+    .line 80
     :goto_0
     const-string p0, "\n"
 
-    .line 187
+    .line 81
     invoke-static {p1, p0}, Lcom/apm/insight/nativecrash/NativeImpl;->a(ILjava/lang/String;)V
     :try_end_2
     .catchall {:try_start_2 .. :try_end_2} :catchall_0
@@ -849,6 +881,10 @@
 
 .method public static a(Ljava/lang/Throwable;I)V
     .locals 6
+    .param p0    # Ljava/lang/Throwable;
+        .annotation build Landroidx/annotation/NonNull;
+        .end annotation
+    .end param
 
     if-eqz p0, :cond_3
 
@@ -856,17 +892,17 @@
 
     goto :goto_2
 
-    .line 152
+    .line 204
     :cond_0
     :try_start_0
     invoke-static {p0, p1}, Lcom/apm/insight/l/m;->b(Ljava/lang/Throwable;I)V
 
-    .line 153
+    .line 205
     invoke-virtual {p0}, Ljava/lang/Throwable;->getStackTrace()[Ljava/lang/StackTraceElement;
 
     move-result-object v0
 
-    .line 154
+    .line 206
     array-length v1, v0
 
     const/4 v2, 0x0
@@ -878,14 +914,14 @@
 
     aget-object v4, v0, v3
 
-    .line 155
+    .line 207
     invoke-static {v4, p1}, Lcom/apm/insight/l/m;->a(Ljava/lang/StackTraceElement;I)V
 
     add-int/lit8 v3, v3, 0x1
 
     goto :goto_0
 
-    .line 156
+    .line 208
     :cond_1
     invoke-virtual {p0}, Ljava/lang/Throwable;->getSuppressed()[Ljava/lang/Throwable;
 
@@ -898,18 +934,18 @@
 
     aget-object v3, v0, v2
 
+    .line 209
     const-string v4, "Suppressed: "
 
     const-string v5, "\t"
 
-    .line 157
     invoke-static {v3, p1, v4, v5}, Lcom/apm/insight/l/m;->a(Ljava/lang/Throwable;ILjava/lang/String;Ljava/lang/String;)V
 
     add-int/lit8 v2, v2, 0x1
 
     goto :goto_1
 
-    .line 158
+    .line 210
     :cond_2
     invoke-virtual {p0}, Ljava/lang/Throwable;->getCause()Ljava/lang/Throwable;
 
@@ -917,11 +953,11 @@
 
     if-eqz p0, :cond_3
 
+    .line 211
     const-string v0, "Caused by: "
 
     const-string v1, ""
 
-    .line 159
     invoke-static {p0, p1, v0, v1}, Lcom/apm/insight/l/m;->a(Ljava/lang/Throwable;ILjava/lang/String;Ljava/lang/String;)V
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
@@ -935,26 +971,26 @@
 .method private static a(Ljava/lang/Throwable;ILjava/lang/String;Ljava/lang/String;)V
     .locals 5
 
-    .line 95
+    .line 134
     :goto_0
     invoke-virtual {p0}, Ljava/lang/Throwable;->getStackTrace()[Ljava/lang/StackTraceElement;
 
     move-result-object v0
 
-    .line 96
+    .line 135
     :try_start_0
     invoke-static {p1, p3}, Lcom/apm/insight/nativecrash/NativeImpl;->a(ILjava/lang/String;)V
 
-    .line 97
+    .line 136
     invoke-static {p1, p2}, Lcom/apm/insight/nativecrash/NativeImpl;->a(ILjava/lang/String;)V
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    .line 98
+    .line 137
     :catchall_0
     invoke-static {p0, p1}, Lcom/apm/insight/l/m;->b(Ljava/lang/Throwable;I)V
 
-    .line 99
+    .line 138
     array-length p2, v0
 
     const/4 v1, 0x0
@@ -966,14 +1002,14 @@
 
     aget-object v3, v0, v2
 
-    .line 100
+    .line 139
     invoke-static {v3, p1}, Lcom/apm/insight/l/m;->a(Ljava/lang/StackTraceElement;I)V
 
     add-int/lit8 v2, v2, 0x1
 
     goto :goto_1
 
-    .line 101
+    .line 140
     :cond_0
     invoke-virtual {p0}, Ljava/lang/Throwable;->getSuppressed()[Ljava/lang/Throwable;
 
@@ -986,23 +1022,24 @@
 
     aget-object v2, p2, v1
 
+    .line 141
     const-string v3, "\t"
 
-    .line 102
-    invoke-static {p3, v3}, Landroid/support/v4/media/session/a;->S(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+    .line 142
+    invoke-static {p3, v3}, Landroidx/appcompat/view/menu/F;->F(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v3
 
+    .line 143
     const-string v4, "Suppressed: "
 
-    .line 103
     invoke-static {v2, p1, v4, v3}, Lcom/apm/insight/l/m;->a(Ljava/lang/Throwable;ILjava/lang/String;Ljava/lang/String;)V
 
     add-int/lit8 v1, v1, 0x1
 
     goto :goto_2
 
-    .line 104
+    .line 144
     :cond_1
     invoke-virtual {p0}, Ljava/lang/Throwable;->getCause()Ljava/lang/Throwable;
 
@@ -1010,6 +1047,7 @@
 
     if-eqz p0, :cond_2
 
+    .line 145
     const-string p2, "Caused by: "
 
     goto :goto_0
@@ -1025,29 +1063,29 @@
 
     return-void
 
-    .line 80
+    .line 119
     :cond_0
     new-instance v0, Ljava/util/IdentityHashMap;
 
     invoke-direct {v0}, Ljava/util/IdentityHashMap;-><init>()V
 
-    .line 81
+    .line 120
     invoke-static {v0}, Ljava/util/Collections;->newSetFromMap(Ljava/util/Map;)Ljava/util/Set;
 
     move-result-object v0
 
-    .line 82
+    .line 121
     invoke-interface {v0, p0}, Ljava/util/Set;->add(Ljava/lang/Object;)Z
 
-    .line 83
+    .line 122
     invoke-virtual {p1, p0}, Ljava/io/PrintWriter;->println(Ljava/lang/Object;)V
 
-    .line 84
+    .line 123
     invoke-virtual {p0}, Ljava/lang/Throwable;->getStackTrace()[Ljava/lang/StackTraceElement;
 
     move-result-object v1
 
-    .line 85
+    .line 124
     array-length v2, v1
 
     const/16 v3, 0x180
@@ -1063,7 +1101,7 @@
     :cond_1
     const/4 v2, 0x0
 
-    .line 86
+    .line 125
     :goto_0
     array-length v3, v1
 
@@ -1084,7 +1122,7 @@
 
     if-le v6, v9, :cond_2
 
-    .line 87
+    .line 126
     new-instance v3, Ljava/lang/StringBuilder;
 
     const-string v5, "\t... skip "
@@ -1111,7 +1149,7 @@
 
     goto :goto_2
 
-    .line 88
+    .line 127
     :cond_2
     invoke-static {v8}, Ljava/lang/String;->valueOf(Ljava/lang/Object;)Ljava/lang/String;
 
@@ -1133,7 +1171,7 @@
     :goto_2
     if-eqz v2, :cond_4
 
-    .line 89
+    .line 128
     array-length v2, v1
 
     add-int/lit8 v2, v2, -0x80
@@ -1143,7 +1181,7 @@
 
     if-ge v2, v3, :cond_4
 
-    .line 90
+    .line 129
     new-instance v3, Ljava/lang/StringBuilder;
 
     invoke-direct {v3, v7}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
@@ -1162,7 +1200,7 @@
 
     goto :goto_3
 
-    .line 91
+    .line 130
     :cond_4
     invoke-virtual {p0}, Ljava/lang/Throwable;->getSuppressed()[Ljava/lang/Throwable;
 
@@ -1177,24 +1215,24 @@
 
     aget-object v1, v7, v9
 
-    const-string v3, "Suppressed: "
-
+    .line 131
     const-string v4, "\t"
 
     const/16 v6, 0x80
+
+    const-string v3, "Suppressed: "
 
     move-object v2, p1
 
     move-object v5, v0
 
-    .line 92
     invoke-static/range {v1 .. v6}, Lcom/apm/insight/l/m;->a(Ljava/lang/Throwable;Ljava/io/PrintWriter;Ljava/lang/String;Ljava/lang/String;Ljava/util/Set;I)V
 
     add-int/lit8 v9, v9, 0x1
 
     goto :goto_4
 
-    .line 93
+    .line 132
     :cond_5
     invoke-virtual {p0}, Ljava/lang/Throwable;->getCause()Ljava/lang/Throwable;
 
@@ -1202,17 +1240,17 @@
 
     if-eqz v1, :cond_6
 
-    const-string v3, "Caused by: "
-
+    .line 133
     const-string v4, ""
 
     const/16 v6, 0x80
+
+    const-string v3, "Caused by: "
 
     move-object v2, p1
 
     move-object v5, v0
 
-    .line 94
     invoke-static/range {v1 .. v6}, Lcom/apm/insight/l/m;->a(Ljava/lang/Throwable;Ljava/io/PrintWriter;Ljava/lang/String;Ljava/lang/String;Ljava/util/Set;I)V
 
     :cond_6
@@ -1234,7 +1272,7 @@
         }
     .end annotation
 
-    .line 110
+    .line 151
     :goto_0
     invoke-interface {p4, p0}, Ljava/util/Set;->contains(Ljava/lang/Object;)Z
 
@@ -1242,7 +1280,7 @@
 
     if-eqz v0, :cond_0
 
-    .line 111
+    .line 152
     new-instance p2, Ljava/lang/StringBuilder;
 
     const-string p3, "\t[CIRCULAR REFERENCE:"
@@ -1263,16 +1301,16 @@
 
     return-void
 
-    .line 112
+    .line 153
     :cond_0
     invoke-interface {p4, p0}, Ljava/util/Set;->add(Ljava/lang/Object;)Z
 
-    .line 113
+    .line 154
     invoke-virtual {p0}, Ljava/lang/Throwable;->getStackTrace()[Ljava/lang/StackTraceElement;
 
     move-result-object v0
 
-    .line 114
+    .line 155
     array-length v1, v0
 
     const/4 v2, 0x0
@@ -1286,7 +1324,7 @@
     :cond_1
     const/4 v1, 0x0
 
-    .line 115
+    .line 156
     :goto_1
     new-instance v3, Ljava/lang/StringBuilder;
 
@@ -1304,7 +1342,7 @@
 
     invoke-virtual {p1, p2}, Ljava/io/PrintWriter;->println(Ljava/lang/String;)V
 
-    .line 116
+    .line 157
     array-length p2, v0
 
     const/4 v3, 0x0
@@ -1322,7 +1360,7 @@
 
     if-le v4, p5, :cond_2
 
-    .line 117
+    .line 158
     new-instance p2, Ljava/lang/StringBuilder;
 
     const-string v3, "\t... skip "
@@ -1351,7 +1389,7 @@
 
     goto :goto_3
 
-    .line 118
+    .line 159
     :cond_2
     invoke-static {v6}, Ljava/lang/String;->valueOf(Ljava/lang/Object;)Ljava/lang/String;
 
@@ -1373,7 +1411,7 @@
     :goto_3
     if-eqz v1, :cond_4
 
-    .line 119
+    .line 160
     array-length p2, v0
 
     div-int/lit8 v1, p5, 0x2
@@ -1385,7 +1423,7 @@
 
     if-ge p2, v1, :cond_4
 
-    .line 120
+    .line 161
     new-instance v1, Ljava/lang/StringBuilder;
 
     invoke-direct {v1, v5}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
@@ -1404,7 +1442,7 @@
 
     goto :goto_4
 
-    .line 121
+    .line 162
     :cond_4
     invoke-virtual {p0}, Ljava/lang/Throwable;->getSuppressed()[Ljava/lang/Throwable;
 
@@ -1419,16 +1457,15 @@
 
     aget-object v3, p2, v2
 
-    const-string v5, "Suppressed: "
-
+    .line 163
     const-string v4, "\t"
 
-    .line 122
-    invoke-static {p3, v4}, Landroid/support/v4/media/session/a;->S(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+    .line 164
+    invoke-static {p3, v4}, Landroidx/appcompat/view/menu/F;->F(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v6
 
-    .line 123
+    .line 165
     div-int/lit8 v4, p5, 0x2
 
     if-le v4, v1, :cond_5
@@ -1441,6 +1478,8 @@
     const/16 v8, 0xa
 
     :goto_6
+    const-string v5, "Suppressed: "
+
     move-object v4, p1
 
     move-object v7, p4
@@ -1451,7 +1490,7 @@
 
     goto :goto_5
 
-    .line 124
+    .line 166
     :cond_6
     invoke-virtual {p0}, Ljava/lang/Throwable;->getCause()Ljava/lang/Throwable;
 
@@ -1459,7 +1498,7 @@
 
     if-eqz p0, :cond_8
 
-    .line 125
+    .line 167
     div-int/lit8 p5, p5, 0x2
 
     if-le p5, v1, :cond_7
@@ -1494,31 +1533,31 @@
 
     return-void
 
-    .line 44
+    .line 82
     :cond_0
     new-instance v0, Ljava/util/IdentityHashMap;
 
     invoke-direct {v0}, Ljava/util/IdentityHashMap;-><init>()V
 
-    .line 45
+    .line 83
     invoke-static {v0}, Ljava/util/Collections;->newSetFromMap(Ljava/util/Map;)Ljava/util/Set;
 
     move-result-object v0
 
-    .line 46
+    .line 84
     invoke-interface {v0, p0}, Ljava/util/Set;->add(Ljava/lang/Object;)Z
 
+    .line 85
     sget-object v1, Lcom/apm/insight/l/m;->a:Ljava/lang/StackTraceElement;
 
-    .line 47
     invoke-interface {p1, v1}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
-    .line 48
+    .line 86
     invoke-virtual {p0}, Ljava/lang/Throwable;->getStackTrace()[Ljava/lang/StackTraceElement;
 
     move-result-object v1
 
-    .line 49
+    .line 87
     array-length v2, v1
 
     const/16 v3, 0x180
@@ -1534,7 +1573,7 @@
     :cond_1
     const/4 v2, 0x0
 
-    .line 50
+    .line 88
     :goto_0
     array-length v3, v1
 
@@ -1553,14 +1592,14 @@
 
     if-le v6, v8, :cond_2
 
+    .line 89
     sget-object v3, Lcom/apm/insight/l/m;->a:Ljava/lang/StackTraceElement;
 
-    .line 51
     invoke-interface {p1, v3}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
     goto :goto_2
 
-    .line 52
+    .line 90
     :cond_2
     invoke-interface {p1, v7}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
@@ -1576,7 +1615,7 @@
 
     if-eqz v2, :cond_4
 
-    .line 53
+    .line 91
     array-length v2, v1
 
     sub-int/2addr v2, v3
@@ -1586,7 +1625,7 @@
 
     if-ge v2, v5, :cond_4
 
-    .line 54
+    .line 92
     aget-object v5, v1, v2
 
     invoke-interface {p1, v5}, Ljava/util/List;->add(Ljava/lang/Object;)Z
@@ -1595,7 +1634,7 @@
 
     goto :goto_3
 
-    .line 55
+    .line 93
     :cond_4
     invoke-virtual {p0}, Ljava/lang/Throwable;->getSuppressed()[Ljava/lang/Throwable;
 
@@ -1608,16 +1647,16 @@
 
     aget-object v5, v1, v4
 
+    .line 94
     const-string v6, "\t"
 
-    .line 56
     invoke-static {v5, p1, v6, v0, v3}, Lcom/apm/insight/l/m;->a(Ljava/lang/Throwable;Ljava/util/List;Ljava/lang/String;Ljava/util/Set;I)V
 
     add-int/lit8 v4, v4, 0x1
 
     goto :goto_4
 
-    .line 57
+    .line 95
     :cond_5
     invoke-virtual {p0}, Ljava/lang/Throwable;->getCause()Ljava/lang/Throwable;
 
@@ -1625,9 +1664,9 @@
 
     if-eqz p0, :cond_6
 
+    .line 96
     const-string v1, ""
 
-    .line 58
     invoke-static {p0, p1, v1, v0, v3}, Lcom/apm/insight/l/m;->a(Ljava/lang/Throwable;Ljava/util/List;Ljava/lang/String;Ljava/util/Set;I)V
 
     :cond_6
@@ -1650,7 +1689,7 @@
         }
     .end annotation
 
-    .line 59
+    .line 97
     :goto_0
     invoke-interface {p3, p0}, Ljava/util/Set;->contains(Ljava/lang/Object;)Z
 
@@ -1658,23 +1697,23 @@
 
     if-eqz v0, :cond_0
 
+    .line 98
     sget-object p0, Lcom/apm/insight/l/m;->a:Ljava/lang/StackTraceElement;
 
-    .line 60
     invoke-interface {p1, p0}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
     return-void
 
-    .line 61
+    .line 99
     :cond_0
     invoke-interface {p3, p0}, Ljava/util/Set;->add(Ljava/lang/Object;)Z
 
-    .line 62
+    .line 100
     invoke-virtual {p0}, Ljava/lang/Throwable;->getStackTrace()[Ljava/lang/StackTraceElement;
 
     move-result-object v0
 
-    .line 63
+    .line 101
     array-length v1, v0
 
     const/4 v2, 0x0
@@ -1688,13 +1727,13 @@
     :cond_1
     const/4 v1, 0x0
 
+    .line 102
     :goto_1
     sget-object v3, Lcom/apm/insight/l/m;->a:Ljava/lang/StackTraceElement;
 
-    .line 64
     invoke-interface {p1, v3}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
-    .line 65
+    .line 103
     array-length v3, v0
 
     const/4 v4, 0x0
@@ -1710,14 +1749,14 @@
 
     if-le v5, p4, :cond_2
 
+    .line 104
     sget-object v3, Lcom/apm/insight/l/m;->a:Ljava/lang/StackTraceElement;
 
-    .line 66
     invoke-interface {p1, v3}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
     goto :goto_3
 
-    .line 67
+    .line 105
     :cond_2
     invoke-interface {p1, v6}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
@@ -1731,7 +1770,7 @@
     :goto_3
     if-eqz v1, :cond_4
 
-    .line 68
+    .line 106
     array-length v1, v0
 
     div-int/lit8 v3, p4, 0x2
@@ -1743,7 +1782,7 @@
 
     if-ge v1, v3, :cond_4
 
-    .line 69
+    .line 107
     aget-object v3, v0, v1
 
     invoke-interface {p1, v3}, Ljava/util/List;->add(Ljava/lang/Object;)Z
@@ -1752,7 +1791,7 @@
 
     goto :goto_4
 
-    .line 70
+    .line 108
     :cond_4
     invoke-virtual {p0}, Ljava/lang/Throwable;->getSuppressed()[Ljava/lang/Throwable;
 
@@ -1767,14 +1806,15 @@
 
     aget-object v4, v0, v2
 
+    .line 109
     const-string v5, "\t"
 
-    .line 71
-    invoke-static {p2, v5}, Landroid/support/v4/media/session/a;->S(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+    .line 110
+    invoke-static {p2, v5}, Landroidx/appcompat/view/menu/F;->F(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v5
 
-    .line 72
+    .line 111
     div-int/lit8 v6, p4, 0x2
 
     if-le v6, v3, :cond_5
@@ -1788,7 +1828,7 @@
 
     goto :goto_5
 
-    .line 73
+    .line 112
     :cond_6
     invoke-virtual {p0}, Ljava/lang/Throwable;->getCause()Ljava/lang/Throwable;
 
@@ -1796,7 +1836,7 @@
 
     if-eqz p0, :cond_8
 
-    .line 74
+    .line 113
     div-int/lit8 p4, p4, 0x2
 
     if-le p4, v3, :cond_7
@@ -1819,7 +1859,7 @@
 
     if-eqz p1, :cond_2
 
-    .line 131
+    .line 173
     invoke-static {p0}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
 
     move-result v1
@@ -1828,7 +1868,7 @@
 
     goto :goto_1
 
-    .line 132
+    .line 174
     :cond_0
     array-length v1, p1
 
@@ -1839,7 +1879,7 @@
 
     aget-object v3, p1, v2
 
-    .line 133
+    .line 175
     invoke-virtual {p0, v3}, Ljava/lang/String;->contains(Ljava/lang/CharSequence;)Z
 
     move-result v3
@@ -1862,14 +1902,16 @@
 
 .method public static b(Ljava/lang/String;)Lorg/json/JSONObject;
     .locals 14
+    .annotation build Landroidx/annotation/Nullable;
+    .end annotation
 
+    .line 5
     const-string v0, ")"
 
     const-string v1, "("
 
     const/4 v2, 0x0
 
-    .line 5
     :try_start_0
     invoke-static {}, Ljava/lang/Thread;->getAllStackTraces()Ljava/util/Map;
 
@@ -1884,10 +1926,10 @@
 
     return-object v2
 
+    .line 7
     :cond_0
     const-string v5, "thread_all_count"
 
-    .line 7
     invoke-interface {v3}, Ljava/util/Map;->size()I
 
     move-result v6
@@ -1967,10 +2009,10 @@
 
     if-nez v9, :cond_1
 
+    .line 15
     :cond_2
     const-string v9, "thread_name"
 
-    .line 15
     new-instance v10, Ljava/lang/StringBuilder;
 
     invoke-direct {v10}, Ljava/lang/StringBuilder;-><init>()V
@@ -2066,10 +2108,10 @@
 
     goto :goto_1
 
+    .line 24
     :cond_3
     const-string v6, "thread_stack"
 
-    .line 24
     invoke-virtual {v7, v6, v8}, Lorg/json/JSONObject;->put(Ljava/lang/String;Ljava/lang/Object;)Lorg/json/JSONObject;
 
     .line 25
@@ -2085,10 +2127,10 @@
 
     goto/16 :goto_0
 
+    .line 27
     :cond_5
     const-string p0, "thread_stacks"
 
-    .line 27
     invoke-virtual {v4, p0, v5}, Lorg/json/JSONObject;->put(Ljava/lang/String;Ljava/lang/Object;)Lorg/json/JSONObject;
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
@@ -2125,18 +2167,20 @@
 
     if-eqz v0, :cond_0
 
+    .line 32
     const-string p0, ": "
 
-    .line 32
+    .line 33
     invoke-static {p1, p0}, Lcom/apm/insight/nativecrash/NativeImpl;->a(ILjava/lang/String;)V
 
-    .line 33
+    .line 34
     invoke-static {p1, v0}, Lcom/apm/insight/nativecrash/NativeImpl;->a(ILjava/lang/String;)V
 
+    .line 35
     :cond_0
     const-string p0, "\n"
 
-    .line 34
+    .line 36
     invoke-static {p1, p0}, Lcom/apm/insight/nativecrash/NativeImpl;->a(ILjava/lang/String;)V
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
@@ -2147,6 +2191,10 @@
 
 .method public static b(Ljava/lang/Throwable;)[Ljava/lang/StackTraceElement;
     .locals 1
+    .param p0    # Ljava/lang/Throwable;
+        .annotation build Landroidx/annotation/NonNull;
+        .end annotation
+    .end param
 
     .line 1
     new-instance v0, Ljava/util/ArrayList;

@@ -25,6 +25,9 @@
 .end method
 
 .method public abstract getEnabledAmazonAdUnitIds()Ljava/util/List;
+    .annotation build Landroidx/annotation/Nullable;
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "()",

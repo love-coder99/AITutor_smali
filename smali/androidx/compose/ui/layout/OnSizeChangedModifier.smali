@@ -1,12 +1,12 @@
 .class final Landroidx/compose/ui/layout/OnSizeChangedModifier;
-.super Landroidx/compose/ui/node/w0;
+.super Landroidx/compose/ui/node/V;
 .source "SourceFile"
 
 
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
-        "Landroidx/compose/ui/node/w0;"
+        "Landroidx/compose/ui/node/V;"
     }
 .end annotation
 
@@ -16,8 +16,8 @@
     }
     d2 = {
         "Landroidx/compose/ui/layout/OnSizeChangedModifier;",
-        "Landroidx/compose/ui/node/w0;",
-        "Landroidx/compose/ui/layout/v0;",
+        "Landroidx/compose/ui/node/V;",
+        "Landroidx/compose/ui/layout/S;",
         "ui_release"
     }
     k = 0x1
@@ -26,15 +26,16 @@
         0x8,
         0x0
     }
+    xi = 0x30
 .end annotation
 
 
 # instance fields
-.field public final c:Lzh/c;
+.field public final a:Lka/c;
 
 
 # direct methods
-.method public constructor <init>(Lzh/c;)V
+.method public constructor <init>(Lka/c;)V
     .locals 0
 
     .line 1
@@ -43,7 +44,7 @@
     .line 2
     .line 3
     .line 4
-    iput-object p1, p0, Landroidx/compose/ui/layout/OnSizeChangedModifier;->c:Lzh/c;
+    iput-object p1, p0, Landroidx/compose/ui/layout/OnSizeChangedModifier;->a:Lka/c;
 
     .line 5
     .line 6
@@ -86,11 +87,11 @@
 
     .line 12
     .line 13
-    iget-object p1, p1, Landroidx/compose/ui/layout/OnSizeChangedModifier;->c:Lzh/c;
+    iget-object p1, p1, Landroidx/compose/ui/layout/OnSizeChangedModifier;->a:Lka/c;
 
     .line 14
     .line 15
-    iget-object v1, p0, Landroidx/compose/ui/layout/OnSizeChangedModifier;->c:Lzh/c;
+    iget-object v1, p0, Landroidx/compose/ui/layout/OnSizeChangedModifier;->a:Lka/c;
 
     .line 16
     .line 17
@@ -113,7 +114,7 @@
     .locals 1
 
     .line 1
-    iget-object v0, p0, Landroidx/compose/ui/layout/OnSizeChangedModifier;->c:Lzh/c;
+    iget-object v0, p0, Landroidx/compose/ui/layout/OnSizeChangedModifier;->a:Lka/c;
 
     .line 2
     .line 3
@@ -129,22 +130,42 @@
 .end method
 
 .method public final m()Landroidx/compose/ui/n;
-    .locals 2
+    .locals 3
 
     .line 1
-    new-instance v0, Landroidx/compose/ui/layout/v0;
+    new-instance v0, Landroidx/compose/ui/layout/S;
 
     .line 2
     .line 3
-    iget-object v1, p0, Landroidx/compose/ui/layout/OnSizeChangedModifier;->c:Lzh/c;
+    iget-object v1, p0, Landroidx/compose/ui/layout/OnSizeChangedModifier;->a:Lka/c;
 
     .line 4
     .line 5
-    invoke-direct {v0, v1}, Landroidx/compose/ui/layout/v0;-><init>(Lzh/c;)V
+    invoke-direct {v0}, Landroidx/compose/ui/n;-><init>()V
 
     .line 6
     .line 7
     .line 8
+    iput-object v1, v0, Landroidx/compose/ui/layout/S;->p:Lka/c;
+
+    .line 9
+    .line 10
+    const/high16 v1, -0x80000000
+
+    .line 11
+    .line 12
+    invoke-static {v1, v1}, Lc4/s;->a(II)J
+
+    .line 13
+    .line 14
+    .line 15
+    move-result-wide v1
+
+    .line 16
+    iput-wide v1, v0, Landroidx/compose/ui/layout/S;->q:J
+
+    .line 17
+    .line 18
     return-object v0
 .end method
 
@@ -152,15 +173,15 @@
     .locals 2
 
     .line 1
-    check-cast p1, Landroidx/compose/ui/layout/v0;
+    check-cast p1, Landroidx/compose/ui/layout/S;
 
     .line 2
     .line 3
-    iget-object v0, p0, Landroidx/compose/ui/layout/OnSizeChangedModifier;->c:Lzh/c;
+    iget-object v0, p0, Landroidx/compose/ui/layout/OnSizeChangedModifier;->a:Lka/c;
 
     .line 4
     .line 5
-    iput-object v0, p1, Landroidx/compose/ui/layout/v0;->p:Lzh/c;
+    iput-object v0, p1, Landroidx/compose/ui/layout/S;->p:Lka/c;
 
     .line 6
     .line 7
@@ -168,7 +189,7 @@
 
     .line 8
     .line 9
-    invoke-static {v0, v0}, Lv5/a;->b(II)J
+    invoke-static {v0, v0}, Lc4/s;->a(II)J
 
     .line 10
     .line 11
@@ -176,7 +197,7 @@
     move-result-wide v0
 
     .line 13
-    iput-wide v0, p1, Landroidx/compose/ui/layout/v0;->q:J
+    iput-wide v0, p1, Landroidx/compose/ui/layout/S;->q:J
 
     .line 14
     .line 15

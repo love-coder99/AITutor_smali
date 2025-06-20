@@ -3,7 +3,7 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lw2/b;
+.implements Lb1/b;
 
 
 # instance fields
@@ -65,7 +65,7 @@
 
 .field public i:F
 
-.field public j:Lx2/e;
+.field public j:Landroid/view/ViewOutlineProvider;
 
 .field public k:Landroid/graphics/RectF;
 
@@ -103,6 +103,10 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
     .locals 5
+    .param p2    # Landroid/util/AttributeSet;
+        .annotation build Landroidx/annotation/Nullable;
+        .end annotation
+    .end param
 
     .line 1
     invoke-direct {p0, p1, p2}, Landroid/view/View;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
@@ -123,87 +127,113 @@
 
     const v0, 0xffff
 
+    .line 4
     iput v0, p0, Landroidx/constraintlayout/utils/widget/MotionLabel;->d:I
 
+    .line 5
     iput v0, p0, Landroidx/constraintlayout/utils/widget/MotionLabel;->f:I
 
     const/4 v0, 0x0
 
+    .line 6
     iput-boolean v0, p0, Landroidx/constraintlayout/utils/widget/MotionLabel;->g:Z
 
     const/4 v1, 0x0
 
+    .line 7
     iput v1, p0, Landroidx/constraintlayout/utils/widget/MotionLabel;->h:F
 
     const/high16 v2, 0x7fc00000    # Float.NaN
 
+    .line 8
     iput v2, p0, Landroidx/constraintlayout/utils/widget/MotionLabel;->i:F
 
     const/high16 v3, 0x42400000    # 48.0f
 
+    .line 9
     iput v3, p0, Landroidx/constraintlayout/utils/widget/MotionLabel;->l:F
 
+    .line 10
     iput v2, p0, Landroidx/constraintlayout/utils/widget/MotionLabel;->m:F
 
+    .line 11
     iput v1, p0, Landroidx/constraintlayout/utils/widget/MotionLabel;->p:F
 
+    .line 12
     const-string v3, "Hello World"
 
     iput-object v3, p0, Landroidx/constraintlayout/utils/widget/MotionLabel;->q:Ljava/lang/String;
 
     const/4 v3, 0x1
 
+    .line 13
     iput-boolean v3, p0, Landroidx/constraintlayout/utils/widget/MotionLabel;->r:Z
 
-    .line 4
+    .line 14
     new-instance v4, Landroid/graphics/Rect;
 
     invoke-direct {v4}, Landroid/graphics/Rect;-><init>()V
 
     iput-object v4, p0, Landroidx/constraintlayout/utils/widget/MotionLabel;->s:Landroid/graphics/Rect;
 
+    .line 15
     iput v3, p0, Landroidx/constraintlayout/utils/widget/MotionLabel;->t:I
 
+    .line 16
     iput v3, p0, Landroidx/constraintlayout/utils/widget/MotionLabel;->u:I
 
+    .line 17
     iput v3, p0, Landroidx/constraintlayout/utils/widget/MotionLabel;->v:I
 
+    .line 18
     iput v3, p0, Landroidx/constraintlayout/utils/widget/MotionLabel;->w:I
 
     const v3, 0x800033
 
+    .line 19
     iput v3, p0, Landroidx/constraintlayout/utils/widget/MotionLabel;->y:I
 
+    .line 20
     iput v0, p0, Landroidx/constraintlayout/utils/widget/MotionLabel;->z:I
 
+    .line 21
     iput-boolean v0, p0, Landroidx/constraintlayout/utils/widget/MotionLabel;->A:Z
 
+    .line 22
     iput v2, p0, Landroidx/constraintlayout/utils/widget/MotionLabel;->J:F
 
+    .line 23
     iput v2, p0, Landroidx/constraintlayout/utils/widget/MotionLabel;->K:F
 
+    .line 24
     iput v1, p0, Landroidx/constraintlayout/utils/widget/MotionLabel;->L:F
 
+    .line 25
     iput v1, p0, Landroidx/constraintlayout/utils/widget/MotionLabel;->M:F
 
-    .line 5
+    .line 26
     new-instance v1, Landroid/graphics/Paint;
 
     invoke-direct {v1}, Landroid/graphics/Paint;-><init>()V
 
     iput-object v1, p0, Landroidx/constraintlayout/utils/widget/MotionLabel;->N:Landroid/graphics/Paint;
 
+    .line 27
     iput v0, p0, Landroidx/constraintlayout/utils/widget/MotionLabel;->O:I
 
+    .line 28
     iput v2, p0, Landroidx/constraintlayout/utils/widget/MotionLabel;->S:F
 
+    .line 29
     iput v2, p0, Landroidx/constraintlayout/utils/widget/MotionLabel;->T:F
 
+    .line 30
     iput v2, p0, Landroidx/constraintlayout/utils/widget/MotionLabel;->U:F
 
+    .line 31
     iput v2, p0, Landroidx/constraintlayout/utils/widget/MotionLabel;->V:F
 
-    .line 6
+    .line 32
     invoke-virtual {p0, p1, p2}, Landroidx/constraintlayout/utils/widget/MotionLabel;->b(Landroid/content/Context;Landroid/util/AttributeSet;)V
 
     return-void
@@ -211,18 +241,22 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
     .locals 4
+    .param p2    # Landroid/util/AttributeSet;
+        .annotation build Landroidx/annotation/Nullable;
+        .end annotation
+    .end param
 
-    .line 7
+    .line 33
     invoke-direct {p0, p1, p2, p3}, Landroid/view/View;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
 
-    .line 8
+    .line 34
     new-instance p3, Landroid/text/TextPaint;
 
     invoke-direct {p3}, Landroid/text/TextPaint;-><init>()V
 
     iput-object p3, p0, Landroidx/constraintlayout/utils/widget/MotionLabel;->b:Landroid/text/TextPaint;
 
-    .line 9
+    .line 35
     new-instance p3, Landroid/graphics/Path;
 
     invoke-direct {p3}, Landroid/graphics/Path;-><init>()V
@@ -231,87 +265,113 @@
 
     const p3, 0xffff
 
+    .line 36
     iput p3, p0, Landroidx/constraintlayout/utils/widget/MotionLabel;->d:I
 
+    .line 37
     iput p3, p0, Landroidx/constraintlayout/utils/widget/MotionLabel;->f:I
 
     const/4 p3, 0x0
 
+    .line 38
     iput-boolean p3, p0, Landroidx/constraintlayout/utils/widget/MotionLabel;->g:Z
 
     const/4 v0, 0x0
 
+    .line 39
     iput v0, p0, Landroidx/constraintlayout/utils/widget/MotionLabel;->h:F
 
     const/high16 v1, 0x7fc00000    # Float.NaN
 
+    .line 40
     iput v1, p0, Landroidx/constraintlayout/utils/widget/MotionLabel;->i:F
 
     const/high16 v2, 0x42400000    # 48.0f
 
+    .line 41
     iput v2, p0, Landroidx/constraintlayout/utils/widget/MotionLabel;->l:F
 
+    .line 42
     iput v1, p0, Landroidx/constraintlayout/utils/widget/MotionLabel;->m:F
 
+    .line 43
     iput v0, p0, Landroidx/constraintlayout/utils/widget/MotionLabel;->p:F
 
+    .line 44
     const-string v2, "Hello World"
 
     iput-object v2, p0, Landroidx/constraintlayout/utils/widget/MotionLabel;->q:Ljava/lang/String;
 
     const/4 v2, 0x1
 
+    .line 45
     iput-boolean v2, p0, Landroidx/constraintlayout/utils/widget/MotionLabel;->r:Z
 
-    .line 10
+    .line 46
     new-instance v3, Landroid/graphics/Rect;
 
     invoke-direct {v3}, Landroid/graphics/Rect;-><init>()V
 
     iput-object v3, p0, Landroidx/constraintlayout/utils/widget/MotionLabel;->s:Landroid/graphics/Rect;
 
+    .line 47
     iput v2, p0, Landroidx/constraintlayout/utils/widget/MotionLabel;->t:I
 
+    .line 48
     iput v2, p0, Landroidx/constraintlayout/utils/widget/MotionLabel;->u:I
 
+    .line 49
     iput v2, p0, Landroidx/constraintlayout/utils/widget/MotionLabel;->v:I
 
+    .line 50
     iput v2, p0, Landroidx/constraintlayout/utils/widget/MotionLabel;->w:I
 
     const v2, 0x800033
 
+    .line 51
     iput v2, p0, Landroidx/constraintlayout/utils/widget/MotionLabel;->y:I
 
+    .line 52
     iput p3, p0, Landroidx/constraintlayout/utils/widget/MotionLabel;->z:I
 
+    .line 53
     iput-boolean p3, p0, Landroidx/constraintlayout/utils/widget/MotionLabel;->A:Z
 
+    .line 54
     iput v1, p0, Landroidx/constraintlayout/utils/widget/MotionLabel;->J:F
 
+    .line 55
     iput v1, p0, Landroidx/constraintlayout/utils/widget/MotionLabel;->K:F
 
+    .line 56
     iput v0, p0, Landroidx/constraintlayout/utils/widget/MotionLabel;->L:F
 
+    .line 57
     iput v0, p0, Landroidx/constraintlayout/utils/widget/MotionLabel;->M:F
 
-    .line 11
+    .line 58
     new-instance v0, Landroid/graphics/Paint;
 
     invoke-direct {v0}, Landroid/graphics/Paint;-><init>()V
 
     iput-object v0, p0, Landroidx/constraintlayout/utils/widget/MotionLabel;->N:Landroid/graphics/Paint;
 
+    .line 59
     iput p3, p0, Landroidx/constraintlayout/utils/widget/MotionLabel;->O:I
 
+    .line 60
     iput v1, p0, Landroidx/constraintlayout/utils/widget/MotionLabel;->S:F
 
+    .line 61
     iput v1, p0, Landroidx/constraintlayout/utils/widget/MotionLabel;->T:F
 
+    .line 62
     iput v1, p0, Landroidx/constraintlayout/utils/widget/MotionLabel;->U:F
 
+    .line 63
     iput v1, p0, Landroidx/constraintlayout/utils/widget/MotionLabel;->V:F
 
-    .line 12
+    .line 64
     invoke-virtual {p0, p1, p2}, Landroidx/constraintlayout/utils/widget/MotionLabel;->b(Landroid/content/Context;Landroid/util/AttributeSet;)V
 
     return-void
@@ -667,7 +727,7 @@
     move-result-object p1
 
     .line 10
-    sget v1, Lg/a;->colorPrimary:I
+    sget v1, Li/a;->colorPrimary:I
 
     .line 11
     .line 12
@@ -766,22 +826,22 @@
     .line 29
     .line 30
     .line 31
-    iget-object v2, p0, Landroidx/constraintlayout/utils/widget/MotionLabel;->b:Landroid/text/TextPaint;
+    iget-object v8, p0, Landroidx/constraintlayout/utils/widget/MotionLabel;->c:Landroid/graphics/Path;
 
     .line 32
     .line 33
-    const/4 v4, 0x0
+    iget-object v2, p0, Landroidx/constraintlayout/utils/widget/MotionLabel;->b:Landroid/text/TextPaint;
 
     .line 34
-    const/4 v6, 0x0
-
     .line 35
-    const/4 v7, 0x0
+    const/4 v4, 0x0
 
     .line 36
-    iget-object v8, p0, Landroidx/constraintlayout/utils/widget/MotionLabel;->c:Landroid/graphics/Path;
+    const/4 v6, 0x0
 
     .line 37
+    const/4 v7, 0x0
+
     .line 38
     invoke-virtual/range {v2 .. v8}, Landroid/graphics/Paint;->getTextPath(Ljava/lang/String;IIFFLandroid/graphics/Path;)V
 
@@ -796,7 +856,7 @@
 
     .line 44
     .line 45
-    invoke-static {}, Lb0/h;->H()V
+    invoke-static {}, Lcom/bumptech/glide/c;->g()V
 
     .line 46
     .line 47
@@ -946,7 +1006,7 @@
     move-result-object v1
 
     .line 12
-    sget-object v2, Ly2/r;->MotionLabel:[I
+    sget-object v2, Ld1/r;->MotionLabel:[I
 
     .line 13
     .line 14
@@ -982,7 +1042,7 @@
     move-result v3
 
     .line 29
-    sget v4, Ly2/r;->MotionLabel_android_text:I
+    sget v4, Ld1/r;->MotionLabel_android_text:I
 
     .line 30
     .line 31
@@ -1008,7 +1068,7 @@
     .line 41
     .line 42
     :cond_0
-    sget v4, Ly2/r;->MotionLabel_android_fontFamily:I
+    sget v4, Ld1/r;->MotionLabel_android_fontFamily:I
 
     .line 43
     .line 44
@@ -1033,7 +1093,7 @@
     .line 53
     .line 54
     :cond_1
-    sget v4, Ly2/r;->MotionLabel_scaleFromTextSize:I
+    sget v4, Ld1/r;->MotionLabel_scaleFromTextSize:I
 
     .line 55
     .line 56
@@ -1068,7 +1128,7 @@
     .line 69
     .line 70
     :cond_2
-    sget v4, Ly2/r;->MotionLabel_android_textSize:I
+    sget v4, Ld1/r;->MotionLabel_android_textSize:I
 
     .line 71
     .line 72
@@ -1103,7 +1163,7 @@
     .line 85
     .line 86
     :cond_3
-    sget v4, Ly2/r;->MotionLabel_android_textStyle:I
+    sget v4, Ld1/r;->MotionLabel_android_textStyle:I
 
     .line 87
     .line 88
@@ -1132,7 +1192,7 @@
     .line 99
     .line 100
     :cond_4
-    sget v4, Ly2/r;->MotionLabel_android_typeface:I
+    sget v4, Ld1/r;->MotionLabel_android_typeface:I
 
     .line 101
     .line 102
@@ -1161,7 +1221,7 @@
     .line 113
     .line 114
     :cond_5
-    sget v4, Ly2/r;->MotionLabel_android_textColor:I
+    sget v4, Ld1/r;->MotionLabel_android_textColor:I
 
     .line 115
     .line 116
@@ -1190,7 +1250,7 @@
     .line 127
     .line 128
     :cond_6
-    sget v4, Ly2/r;->MotionLabel_borderRound:I
+    sget v4, Ld1/r;->MotionLabel_borderRound:I
 
     .line 129
     .line 130
@@ -1224,7 +1284,7 @@
     .line 144
     .line 145
     :cond_7
-    sget v4, Ly2/r;->MotionLabel_borderRoundPercent:I
+    sget v4, Ld1/r;->MotionLabel_borderRoundPercent:I
 
     .line 146
     .line 147
@@ -1258,7 +1318,7 @@
     .line 161
     .line 162
     :cond_8
-    sget v4, Ly2/r;->MotionLabel_android_gravity:I
+    sget v4, Ld1/r;->MotionLabel_android_gravity:I
 
     .line 163
     .line 164
@@ -1287,7 +1347,7 @@
     .line 175
     .line 176
     :cond_9
-    sget v4, Ly2/r;->MotionLabel_android_autoSizeTextType:I
+    sget v4, Ld1/r;->MotionLabel_android_autoSizeTextType:I
 
     .line 177
     .line 178
@@ -1312,7 +1372,7 @@
     .line 187
     .line 188
     :cond_a
-    sget v4, Ly2/r;->MotionLabel_textOutlineColor:I
+    sget v4, Ld1/r;->MotionLabel_textOutlineColor:I
 
     .line 189
     .line 190
@@ -1345,7 +1405,7 @@
     .line 203
     .line 204
     :cond_b
-    sget v4, Ly2/r;->MotionLabel_textOutlineThickness:I
+    sget v4, Ld1/r;->MotionLabel_textOutlineThickness:I
 
     .line 205
     .line 206
@@ -1378,7 +1438,7 @@
     .line 219
     .line 220
     :cond_c
-    sget v4, Ly2/r;->MotionLabel_textBackground:I
+    sget v4, Ld1/r;->MotionLabel_textBackground:I
 
     .line 221
     .line 222
@@ -1407,7 +1467,7 @@
     .line 233
     .line 234
     :cond_d
-    sget v4, Ly2/r;->MotionLabel_textBackgroundPanX:I
+    sget v4, Ld1/r;->MotionLabel_textBackgroundPanX:I
 
     .line 235
     .line 236
@@ -1436,7 +1496,7 @@
     .line 247
     .line 248
     :cond_e
-    sget v4, Ly2/r;->MotionLabel_textBackgroundPanY:I
+    sget v4, Ld1/r;->MotionLabel_textBackgroundPanY:I
 
     .line 249
     .line 250
@@ -1464,7 +1524,7 @@
 
     .line 261
     :cond_f
-    sget v4, Ly2/r;->MotionLabel_textPanX:I
+    sget v4, Ld1/r;->MotionLabel_textPanX:I
 
     .line 262
     .line 263
@@ -1492,7 +1552,7 @@
 
     .line 274
     :cond_10
-    sget v4, Ly2/r;->MotionLabel_textPanY:I
+    sget v4, Ld1/r;->MotionLabel_textPanY:I
 
     .line 275
     .line 276
@@ -1520,7 +1580,7 @@
 
     .line 287
     :cond_11
-    sget v4, Ly2/r;->MotionLabel_textBackgroundRotate:I
+    sget v4, Ld1/r;->MotionLabel_textBackgroundRotate:I
 
     .line 288
     .line 289
@@ -1548,7 +1608,7 @@
 
     .line 300
     :cond_12
-    sget v4, Ly2/r;->MotionLabel_textBackgroundZoom:I
+    sget v4, Ld1/r;->MotionLabel_textBackgroundZoom:I
 
     .line 301
     .line 302
@@ -1576,7 +1636,7 @@
 
     .line 313
     :cond_13
-    sget v4, Ly2/r;->MotionLabel_textureHeight:I
+    sget v4, Ld1/r;->MotionLabel_textureHeight:I
 
     .line 314
     .line 315
@@ -1604,7 +1664,7 @@
 
     .line 326
     :cond_14
-    sget v4, Ly2/r;->MotionLabel_textureWidth:I
+    sget v4, Ld1/r;->MotionLabel_textureWidth:I
 
     .line 327
     .line 328
@@ -1632,7 +1692,7 @@
 
     .line 339
     :cond_15
-    sget v4, Ly2/r;->MotionLabel_textureEffect:I
+    sget v4, Ld1/r;->MotionLabel_textureEffect:I
 
     .line 340
     .line 341
@@ -3205,96 +3265,132 @@
 .method public getRound()F
     .locals 1
 
+    .line 1
     iget v0, p0, Landroidx/constraintlayout/utils/widget/MotionLabel;->i:F
 
+    .line 2
+    .line 3
     return v0
 .end method
 
 .method public getRoundPercent()F
     .locals 1
 
+    .line 1
     iget v0, p0, Landroidx/constraintlayout/utils/widget/MotionLabel;->h:F
 
+    .line 2
+    .line 3
     return v0
 .end method
 
 .method public getScaleFromTextSize()F
     .locals 1
 
+    .line 1
     iget v0, p0, Landroidx/constraintlayout/utils/widget/MotionLabel;->m:F
 
+    .line 2
+    .line 3
     return v0
 .end method
 
 .method public getTextBackgroundPanX()F
     .locals 1
 
+    .line 1
     iget v0, p0, Landroidx/constraintlayout/utils/widget/MotionLabel;->S:F
 
+    .line 2
+    .line 3
     return v0
 .end method
 
 .method public getTextBackgroundPanY()F
     .locals 1
 
+    .line 1
     iget v0, p0, Landroidx/constraintlayout/utils/widget/MotionLabel;->T:F
 
+    .line 2
+    .line 3
     return v0
 .end method
 
 .method public getTextBackgroundRotate()F
     .locals 1
 
+    .line 1
     iget v0, p0, Landroidx/constraintlayout/utils/widget/MotionLabel;->V:F
 
+    .line 2
+    .line 3
     return v0
 .end method
 
 .method public getTextBackgroundZoom()F
     .locals 1
 
+    .line 1
     iget v0, p0, Landroidx/constraintlayout/utils/widget/MotionLabel;->U:F
 
+    .line 2
+    .line 3
     return v0
 .end method
 
 .method public getTextOutlineColor()I
     .locals 1
 
+    .line 1
     iget v0, p0, Landroidx/constraintlayout/utils/widget/MotionLabel;->f:I
 
+    .line 2
+    .line 3
     return v0
 .end method
 
 .method public getTextPanX()F
     .locals 1
 
+    .line 1
     iget v0, p0, Landroidx/constraintlayout/utils/widget/MotionLabel;->L:F
 
+    .line 2
+    .line 3
     return v0
 .end method
 
 .method public getTextPanY()F
     .locals 1
 
+    .line 1
     iget v0, p0, Landroidx/constraintlayout/utils/widget/MotionLabel;->M:F
 
+    .line 2
+    .line 3
     return v0
 .end method
 
 .method public getTextureHeight()F
     .locals 1
 
+    .line 1
     iget v0, p0, Landroidx/constraintlayout/utils/widget/MotionLabel;->J:F
 
+    .line 2
+    .line 3
     return v0
 .end method
 
 .method public getTextureWidth()F
     .locals 1
 
+    .line 1
     iget v0, p0, Landroidx/constraintlayout/utils/widget/MotionLabel;->K:F
 
+    .line 2
+    .line 3
     return v0
 .end method
 
@@ -4856,7 +4952,7 @@
     .line 58
     .line 59
     :cond_3
-    iget-object p1, p0, Landroidx/constraintlayout/utils/widget/MotionLabel;->j:Lx2/e;
+    iget-object p1, p0, Landroidx/constraintlayout/utils/widget/MotionLabel;->j:Landroid/view/ViewOutlineProvider;
 
     .line 60
     .line 61
@@ -4864,110 +4960,113 @@
 
     .line 62
     .line 63
-    new-instance p1, Lx2/e;
+    new-instance p1, Lc1/e;
 
     .line 64
     .line 65
-    invoke-direct {p1, p0, v2}, Lx2/e;-><init>(Landroidx/constraintlayout/utils/widget/MotionLabel;I)V
+    const/4 v1, 0x1
 
     .line 66
+    invoke-direct {p1, p0, v1}, Lc1/e;-><init>(Landroidx/constraintlayout/utils/widget/MotionLabel;I)V
+
     .line 67
     .line 68
-    iput-object p1, p0, Landroidx/constraintlayout/utils/widget/MotionLabel;->j:Lx2/e;
-
     .line 69
+    iput-object p1, p0, Landroidx/constraintlayout/utils/widget/MotionLabel;->j:Landroid/view/ViewOutlineProvider;
+
     .line 70
+    .line 71
     invoke-virtual {p0, p1}, Landroid/view/View;->setOutlineProvider(Landroid/view/ViewOutlineProvider;)V
 
-    .line 71
     .line 72
     .line 73
+    .line 74
     :cond_4
     invoke-virtual {p0, v2}, Landroid/view/View;->setClipToOutline(Z)V
 
-    .line 74
     .line 75
     .line 76
+    .line 77
     invoke-virtual {p0}, Landroid/view/View;->getWidth()I
 
-    .line 77
     .line 78
     .line 79
+    .line 80
     move-result p1
 
-    .line 80
+    .line 81
     invoke-virtual {p0}, Landroid/view/View;->getHeight()I
 
-    .line 81
     .line 82
     .line 83
+    .line 84
     move-result v1
 
-    .line 84
+    .line 85
     iget-object v2, p0, Landroidx/constraintlayout/utils/widget/MotionLabel;->k:Landroid/graphics/RectF;
 
-    .line 85
     .line 86
+    .line 87
     int-to-float p1, p1
 
-    .line 87
+    .line 88
     int-to-float v1, v1
 
-    .line 88
+    .line 89
     invoke-virtual {v2, v3, v3, p1, v1}, Landroid/graphics/RectF;->set(FFFF)V
 
-    .line 89
     .line 90
     .line 91
+    .line 92
     iget-object p1, p0, Landroidx/constraintlayout/utils/widget/MotionLabel;->c:Landroid/graphics/Path;
 
-    .line 92
     .line 93
+    .line 94
     invoke-virtual {p1}, Landroid/graphics/Path;->reset()V
 
-    .line 94
     .line 95
     .line 96
+    .line 97
     iget-object p1, p0, Landroidx/constraintlayout/utils/widget/MotionLabel;->c:Landroid/graphics/Path;
 
-    .line 97
     .line 98
+    .line 99
     iget-object v1, p0, Landroidx/constraintlayout/utils/widget/MotionLabel;->k:Landroid/graphics/RectF;
 
-    .line 99
     .line 100
+    .line 101
     iget v2, p0, Landroidx/constraintlayout/utils/widget/MotionLabel;->i:F
 
-    .line 101
     .line 102
+    .line 103
     sget-object v3, Landroid/graphics/Path$Direction;->CW:Landroid/graphics/Path$Direction;
 
-    .line 103
     .line 104
+    .line 105
     invoke-virtual {p1, v1, v2, v2, v3}, Landroid/graphics/Path;->addRoundRect(Landroid/graphics/RectF;FFLandroid/graphics/Path$Direction;)V
 
-    .line 105
     .line 106
     .line 107
+    .line 108
     goto :goto_1
 
-    .line 108
+    .line 109
     :cond_5
     invoke-virtual {p0, v1}, Landroid/view/View;->setClipToOutline(Z)V
 
-    .line 109
     .line 110
     .line 111
+    .line 112
     :goto_1
     if-eqz v0, :cond_6
 
-    .line 112
     .line 113
+    .line 114
     invoke-virtual {p0}, Landroid/view/View;->invalidateOutline()V
 
-    .line 114
     .line 115
     .line 116
+    .line 117
     :cond_6
     return-void
 .end method
@@ -4980,10 +5079,10 @@
 
     .line 2
     .line 3
-    const/4 v1, 0x1
+    const/4 v1, 0x0
 
     .line 4
-    const/4 v2, 0x0
+    const/4 v2, 0x1
 
     .line 5
     cmpl-float v0, v0, p1
@@ -5064,7 +5163,7 @@
     .line 40
     .line 41
     :cond_2
-    iget-object p1, p0, Landroidx/constraintlayout/utils/widget/MotionLabel;->j:Lx2/e;
+    iget-object p1, p0, Landroidx/constraintlayout/utils/widget/MotionLabel;->j:Landroid/view/ViewOutlineProvider;
 
     .line 42
     .line 43
@@ -5072,132 +5171,135 @@
 
     .line 44
     .line 45
-    new-instance p1, Lx2/e;
+    new-instance p1, Lc1/e;
 
     .line 46
     .line 47
-    invoke-direct {p1, p0, v2}, Lx2/e;-><init>(Landroidx/constraintlayout/utils/widget/MotionLabel;I)V
+    const/4 v1, 0x0
 
     .line 48
+    invoke-direct {p1, p0, v1}, Lc1/e;-><init>(Landroidx/constraintlayout/utils/widget/MotionLabel;I)V
+
     .line 49
     .line 50
-    iput-object p1, p0, Landroidx/constraintlayout/utils/widget/MotionLabel;->j:Lx2/e;
-
     .line 51
+    iput-object p1, p0, Landroidx/constraintlayout/utils/widget/MotionLabel;->j:Landroid/view/ViewOutlineProvider;
+
     .line 52
+    .line 53
     invoke-virtual {p0, p1}, Landroid/view/View;->setOutlineProvider(Landroid/view/ViewOutlineProvider;)V
 
-    .line 53
     .line 54
     .line 55
-    :cond_3
-    invoke-virtual {p0, v1}, Landroid/view/View;->setClipToOutline(Z)V
-
     .line 56
-    .line 57
-    .line 58
-    invoke-virtual {p0}, Landroid/view/View;->getWidth()I
-
-    .line 59
-    .line 60
-    .line 61
-    move-result p1
-
-    .line 62
-    invoke-virtual {p0}, Landroid/view/View;->getHeight()I
-
-    .line 63
-    .line 64
-    .line 65
-    move-result v1
-
-    .line 66
-    invoke-static {p1, v1}, Ljava/lang/Math;->min(II)I
-
-    .line 67
-    .line 68
-    .line 69
-    move-result v2
-
-    .line 70
-    int-to-float v2, v2
-
-    .line 71
-    iget v4, p0, Landroidx/constraintlayout/utils/widget/MotionLabel;->h:F
-
-    .line 72
-    .line 73
-    mul-float v2, v2, v4
-
-    .line 74
-    .line 75
-    const/high16 v4, 0x40000000    # 2.0f
-
-    .line 76
-    .line 77
-    div-float/2addr v2, v4
-
-    .line 78
-    iget-object v4, p0, Landroidx/constraintlayout/utils/widget/MotionLabel;->k:Landroid/graphics/RectF;
-
-    .line 79
-    .line 80
-    int-to-float p1, p1
-
-    .line 81
-    int-to-float v1, v1
-
-    .line 82
-    invoke-virtual {v4, v3, v3, p1, v1}, Landroid/graphics/RectF;->set(FFFF)V
-
-    .line 83
-    .line 84
-    .line 85
-    iget-object p1, p0, Landroidx/constraintlayout/utils/widget/MotionLabel;->c:Landroid/graphics/Path;
-
-    .line 86
-    .line 87
-    invoke-virtual {p1}, Landroid/graphics/Path;->reset()V
-
-    .line 88
-    .line 89
-    .line 90
-    iget-object p1, p0, Landroidx/constraintlayout/utils/widget/MotionLabel;->c:Landroid/graphics/Path;
-
-    .line 91
-    .line 92
-    iget-object v1, p0, Landroidx/constraintlayout/utils/widget/MotionLabel;->k:Landroid/graphics/RectF;
-
-    .line 93
-    .line 94
-    sget-object v3, Landroid/graphics/Path$Direction;->CW:Landroid/graphics/Path$Direction;
-
-    .line 95
-    .line 96
-    invoke-virtual {p1, v1, v2, v2, v3}, Landroid/graphics/Path;->addRoundRect(Landroid/graphics/RectF;FFLandroid/graphics/Path$Direction;)V
-
-    .line 97
-    .line 98
-    .line 99
-    goto :goto_1
-
-    .line 100
-    :cond_4
+    :cond_3
     invoke-virtual {p0, v2}, Landroid/view/View;->setClipToOutline(Z)V
 
+    .line 57
+    .line 58
+    .line 59
+    invoke-virtual {p0}, Landroid/view/View;->getWidth()I
+
+    .line 60
+    .line 61
+    .line 62
+    move-result p1
+
+    .line 63
+    invoke-virtual {p0}, Landroid/view/View;->getHeight()I
+
+    .line 64
+    .line 65
+    .line 66
+    move-result v1
+
+    .line 67
+    invoke-static {p1, v1}, Ljava/lang/Math;->min(II)I
+
+    .line 68
+    .line 69
+    .line 70
+    move-result v2
+
+    .line 71
+    int-to-float v2, v2
+
+    .line 72
+    iget v4, p0, Landroidx/constraintlayout/utils/widget/MotionLabel;->h:F
+
+    .line 73
+    .line 74
+    mul-float v2, v2, v4
+
+    .line 75
+    .line 76
+    const/high16 v4, 0x40000000    # 2.0f
+
+    .line 77
+    .line 78
+    div-float/2addr v2, v4
+
+    .line 79
+    iget-object v4, p0, Landroidx/constraintlayout/utils/widget/MotionLabel;->k:Landroid/graphics/RectF;
+
+    .line 80
+    .line 81
+    int-to-float p1, p1
+
+    .line 82
+    int-to-float v1, v1
+
+    .line 83
+    invoke-virtual {v4, v3, v3, p1, v1}, Landroid/graphics/RectF;->set(FFFF)V
+
+    .line 84
+    .line 85
+    .line 86
+    iget-object p1, p0, Landroidx/constraintlayout/utils/widget/MotionLabel;->c:Landroid/graphics/Path;
+
+    .line 87
+    .line 88
+    invoke-virtual {p1}, Landroid/graphics/Path;->reset()V
+
+    .line 89
+    .line 90
+    .line 91
+    iget-object p1, p0, Landroidx/constraintlayout/utils/widget/MotionLabel;->c:Landroid/graphics/Path;
+
+    .line 92
+    .line 93
+    iget-object v1, p0, Landroidx/constraintlayout/utils/widget/MotionLabel;->k:Landroid/graphics/RectF;
+
+    .line 94
+    .line 95
+    sget-object v3, Landroid/graphics/Path$Direction;->CW:Landroid/graphics/Path$Direction;
+
+    .line 96
+    .line 97
+    invoke-virtual {p1, v1, v2, v2, v3}, Landroid/graphics/Path;->addRoundRect(Landroid/graphics/RectF;FFLandroid/graphics/Path$Direction;)V
+
+    .line 98
+    .line 99
+    .line 100
+    goto :goto_1
+
     .line 101
+    :cond_4
+    invoke-virtual {p0, v1}, Landroid/view/View;->setClipToOutline(Z)V
+
     .line 102
     .line 103
+    .line 104
     :goto_1
     if-eqz v0, :cond_5
 
-    .line 104
     .line 105
+    .line 106
     invoke-virtual {p0}, Landroid/view/View;->invalidateOutline()V
 
-    .line 106
     .line 107
     .line 108
+    .line 109
     :cond_5
     return-void
 .end method
@@ -5205,8 +5307,11 @@
 .method public setScaleFromTextSize(F)V
     .locals 0
 
+    .line 1
     iput p1, p0, Landroidx/constraintlayout/utils/widget/MotionLabel;->m:F
 
+    .line 2
+    .line 3
     return-void
 .end method
 

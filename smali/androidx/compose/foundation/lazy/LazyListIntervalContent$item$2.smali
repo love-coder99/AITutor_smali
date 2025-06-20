@@ -3,14 +3,14 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lzh/c;
+.implements Lka/c;
 
 
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "Lkotlin/jvm/internal/Lambda;",
-        "Lzh/c;"
+        "Lka/c;"
     }
 .end annotation
 
@@ -57,7 +57,7 @@
 .method public final invoke(I)Ljava/lang/Object;
     .locals 0
 
-    .line 1
+    .line 2
     iget-object p1, p0, Landroidx/compose/foundation/lazy/LazyListIntervalContent$item$2;->$contentType:Ljava/lang/Object;
 
     return-object p1
@@ -66,7 +66,7 @@
 .method public bridge synthetic invoke(Ljava/lang/Object;)Ljava/lang/Object;
     .locals 0
 
-    .line 2
+    .line 1
     check-cast p1, Ljava/lang/Number;
 
     invoke-virtual {p1}, Ljava/lang/Number;->intValue()I

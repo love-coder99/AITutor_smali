@@ -502,11 +502,12 @@
 .method public final a()V
     .locals 5
 
+    .line 1
     iget-object v0, p0, Lcom/apm/insight/runtime/g;->b:Ljava/util/HashMap;
 
+    .line 2
     const-string v1, "time"
 
-    .line 1
     invoke-virtual {v0, v1}, Ljava/util/HashMap;->remove(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object v1
@@ -515,7 +516,7 @@
 
     if-nez v1, :cond_0
 
-    .line 2
+    .line 3
     invoke-static {}, Lcom/apm/insight/c;->a()Lcom/apm/insight/b/a;
 
     new-instance v0, Ljava/lang/RuntimeException;
@@ -524,14 +525,14 @@
 
     invoke-direct {v0, v1}, Ljava/lang/RuntimeException;-><init>(Ljava/lang/String;)V
 
+    .line 4
     const-string v1, "NPTH_CATCH"
 
-    .line 3
     invoke-static {v0, v1}, Lcom/apm/insight/runtime/k;->a(Ljava/lang/Throwable;Ljava/lang/String;)V
 
     return-void
 
-    .line 4
+    .line 5
     :cond_0
     new-instance v2, Ljava/lang/StringBuilder;
 
@@ -543,7 +544,7 @@
 
     invoke-virtual {v2, v1}, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
 
-    .line 5
+    .line 6
     invoke-virtual {v0}, Ljava/util/HashMap;->entrySet()Ljava/util/Set;
 
     move-result-object v0
@@ -565,7 +566,7 @@
 
     check-cast v3, Ljava/util/Map$Entry;
 
-    .line 6
+    .line 7
     invoke-interface {v3}, Ljava/util/Map$Entry;->getKey()Ljava/lang/Object;
 
     move-result-object v4
@@ -578,7 +579,7 @@
 
     invoke-virtual {v2, v4}, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
 
-    .line 7
+    .line 8
     invoke-interface {v3}, Ljava/util/Map$Entry;->getValue()Ljava/lang/Object;
 
     move-result-object v3
@@ -589,11 +590,11 @@
 
     goto :goto_0
 
+    .line 9
     :cond_1
     :try_start_0
     iget-object v0, p0, Lcom/apm/insight/runtime/g;->a:Landroid/content/Context;
 
-    .line 8
     invoke-static {v0}, Lcom/apm/insight/l/j;->h(Landroid/content/Context;)Ljava/io/File;
 
     move-result-object v0
@@ -613,60 +614,61 @@
 .end method
 
 .method public final a(Ljava/lang/String;)Z
-    .locals 6
+    .locals 7
 
     if-nez p1, :cond_0
 
+    .line 10
     const-string p1, "default"
 
+    .line 11
     :cond_0
     iget-object v0, p0, Lcom/apm/insight/runtime/g;->b:Ljava/util/HashMap;
 
-    const-string v1, "all"
+    const-wide/16 v1, 0x1
 
-    const-wide/16 v2, 0x1
+    invoke-static {v1, v2}, Ljava/lang/Long;->valueOf(J)Ljava/lang/Long;
 
-    .line 9
-    invoke-static {v2, v3}, Ljava/lang/Long;->valueOf(J)Ljava/lang/Long;
+    move-result-object v3
 
-    move-result-object v4
+    const-string v4, "all"
 
-    invoke-static {v0, v1, v4}, Lcom/apm/insight/l/c$1;->a(Ljava/util/Map;Ljava/lang/String;Ljava/lang/Long;)Ljava/lang/Long;
+    invoke-static {v0, v4, v3}, Lcom/apm/insight/l/c$1;->a(Ljava/util/Map;Ljava/lang/String;Ljava/lang/Long;)Ljava/lang/Long;
 
     move-result-object v0
 
     invoke-virtual {v0}, Ljava/lang/Long;->longValue()J
 
-    move-result-wide v0
+    move-result-wide v3
 
-    iget-object v4, p0, Lcom/apm/insight/runtime/g;->b:Ljava/util/HashMap;
+    .line 12
+    iget-object v0, p0, Lcom/apm/insight/runtime/g;->b:Ljava/util/HashMap;
 
-    .line 10
-    invoke-static {v2, v3}, Ljava/lang/Long;->valueOf(J)Ljava/lang/Long;
+    invoke-static {v1, v2}, Ljava/lang/Long;->valueOf(J)Ljava/lang/Long;
 
-    move-result-object v2
+    move-result-object v1
 
-    invoke-static {v4, p1, v2}, Lcom/apm/insight/l/c$1;->a(Ljava/util/Map;Ljava/lang/String;Ljava/lang/Long;)Ljava/lang/Long;
+    invoke-static {v0, p1, v1}, Lcom/apm/insight/l/c$1;->a(Ljava/util/Map;Ljava/lang/String;Ljava/lang/Long;)Ljava/lang/Long;
 
     move-result-object p1
 
     invoke-virtual {p1}, Ljava/lang/Long;->longValue()J
 
-    move-result-wide v2
+    move-result-wide v0
 
     iget p1, p0, Lcom/apm/insight/runtime/g;->c:I
 
-    int-to-long v4, p1
+    int-to-long v5, p1
 
-    cmp-long p1, v2, v4
+    cmp-long p1, v0, v5
 
     if-gez p1, :cond_1
 
     iget p1, p0, Lcom/apm/insight/runtime/g;->d:I
 
-    int-to-long v2, p1
+    int-to-long v0, p1
 
-    cmp-long p1, v0, v2
+    cmp-long p1, v3, v0
 
     if-gez p1, :cond_1
 

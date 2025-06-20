@@ -97,13 +97,13 @@
 
     sget-object v9, Lcom/applovin/impl/u;->h:Lcom/applovin/impl/u;
 
-    const/4 v4, 0x0
-
-    const-wide v5, -0x7fffffffffffffffL    # -4.9E-324
-
     const-wide/16 v7, 0x0
 
     const/4 v10, 0x1
+
+    const/4 v4, 0x0
+
+    const-wide v5, -0x7fffffffffffffffL    # -4.9E-324
 
     move-object v1, p2
 
@@ -126,6 +126,10 @@
     move-object/from16 v13, p0
 
     iget-object v2, v13, Lcom/applovin/impl/wc$b;->c:Lcom/applovin/impl/sd;
+
+    const/16 v18, 0x0
+
+    const-wide/16 v19, 0x0
 
     const/4 v3, 0x0
 
@@ -150,10 +154,6 @@
     move-wide/from16 v15, v16
 
     const/16 v17, 0x0
-
-    const/16 v18, 0x0
-
-    const-wide/16 v19, 0x0
 
     invoke-virtual/range {v0 .. v20}, Lcom/applovin/impl/fo$d;->a(Ljava/lang/Object;Lcom/applovin/impl/sd;Ljava/lang/Object;JJJZZLcom/applovin/impl/sd$f;JJIIJ)Lcom/applovin/impl/fo$d;
 

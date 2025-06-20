@@ -3,14 +3,14 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lzh/a;
+.implements Lka/a;
 
 
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "Lkotlin/jvm/internal/Lambda;",
-        "Lzh/a;"
+        "Lka/a;"
     }
 .end annotation
 
@@ -19,9 +19,9 @@
         "\u0000\u0008\n\u0002\u0018\u0002\n\u0002\u0008\u0003\u0010\u0003\u001a\u0004\u0018\u00010\u0000H\n\u00a2\u0006\u0004\u0008\u0001\u0010\u0002"
     }
     d2 = {
-        "Landroidx/compose/ui/platform/f1;",
+        "Landroidx/compose/ui/platform/W;",
         "invoke",
-        "()Landroidx/compose/ui/platform/f1;",
+        "()Landroidx/compose/ui/platform/W;",
         "<anonymous>"
     }
     k = 0x3
@@ -62,7 +62,7 @@
 
 
 # virtual methods
-.method public final invoke()Landroidx/compose/ui/platform/f1;
+.method public final invoke()Landroidx/compose/ui/platform/W;
     .locals 1
 
     .line 1
@@ -75,7 +75,7 @@
     .locals 1
 
     .line 2
-    invoke-virtual {p0}, Landroidx/compose/ui/platform/PlatformTextInputModifierNodeKt$LocalChainedPlatformTextInputInterceptor$1;->invoke()Landroidx/compose/ui/platform/f1;
+    invoke-virtual {p0}, Landroidx/compose/ui/platform/PlatformTextInputModifierNodeKt$LocalChainedPlatformTextInputInterceptor$1;->invoke()Landroidx/compose/ui/platform/W;
 
     const/4 v0, 0x0
 

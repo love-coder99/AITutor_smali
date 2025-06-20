@@ -3,14 +3,14 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lzh/c;
+.implements Lka/c;
 
 
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "Lkotlin/jvm/internal/Lambda;",
-        "Lzh/c;"
+        "Lka/c;"
     }
 .end annotation
 
@@ -58,11 +58,11 @@
 .method public final invoke(Ljava/lang/Object;)Ljava/lang/Boolean;
     .locals 1
 
+    .line 2
     iget-object v0, p0, Landroidx/compose/foundation/lazy/layout/LazySaveableStateHolder$1;->$parentRegistry:Landroidx/compose/runtime/saveable/g;
 
     if-eqz v0, :cond_0
 
-    .line 2
     invoke-interface {v0, p1}, Landroidx/compose/runtime/saveable/g;->a(Ljava/lang/Object;)Z
 
     move-result p1

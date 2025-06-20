@@ -3,14 +3,14 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lzh/e;
+.implements Lka/e;
 
 
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "Lkotlin/jvm/internal/Lambda;",
-        "Lzh/e;"
+        "Lka/e;"
     }
 .end annotation
 
@@ -19,12 +19,12 @@
         "\u0000\u0012\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u0000\n\u0002\u0008\u0003\u0010\u0006\u001a\u0004\u0018\u00010\u0003*\u00020\u00002\u0006\u0010\u0002\u001a\u00020\u0001H\n\u00a2\u0006\u0004\u0008\u0004\u0010\u0005"
     }
     d2 = {
-        "Landroidx/compose/runtime/saveable/n;",
-        "Landroidx/compose/ui/text/font/w;",
+        "Landroidx/compose/runtime/saveable/l;",
+        "Landroidx/compose/ui/text/font/u;",
         "it",
         "",
         "invoke",
-        "(Landroidx/compose/runtime/saveable/n;Landroidx/compose/ui/text/font/w;)Ljava/lang/Object;",
+        "(Landroidx/compose/runtime/saveable/l;Landroidx/compose/ui/text/font/u;)Ljava/lang/Object;",
         "<anonymous>"
     }
     k = 0x3
@@ -65,11 +65,11 @@
 
 
 # virtual methods
-.method public final invoke(Landroidx/compose/runtime/saveable/n;Landroidx/compose/ui/text/font/w;)Ljava/lang/Object;
+.method public final invoke(Landroidx/compose/runtime/saveable/l;Landroidx/compose/ui/text/font/u;)Ljava/lang/Object;
     .locals 0
 
     .line 1
-    iget p1, p2, Landroidx/compose/ui/text/font/w;->b:I
+    iget p1, p2, Landroidx/compose/ui/text/font/u;->b:I
 
     .line 2
     invoke-static {p1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
@@ -83,11 +83,11 @@
     .locals 0
 
     .line 3
-    check-cast p1, Landroidx/compose/runtime/saveable/n;
+    check-cast p1, Landroidx/compose/runtime/saveable/l;
 
-    check-cast p2, Landroidx/compose/ui/text/font/w;
+    check-cast p2, Landroidx/compose/ui/text/font/u;
 
-    invoke-virtual {p0, p1, p2}, Landroidx/compose/ui/text/SaversKt$FontWeightSaver$1;->invoke(Landroidx/compose/runtime/saveable/n;Landroidx/compose/ui/text/font/w;)Ljava/lang/Object;
+    invoke-virtual {p0, p1, p2}, Landroidx/compose/ui/text/SaversKt$FontWeightSaver$1;->invoke(Landroidx/compose/runtime/saveable/l;Landroidx/compose/ui/text/font/u;)Ljava/lang/Object;
 
     move-result-object p1
 

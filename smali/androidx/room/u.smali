@@ -1,419 +1,121 @@
-.class public Landroidx/room/u;
-.super Ljava/lang/Object;
+.class public final Landroidx/room/u;
+.super Lcom/google/android/gms/internal/ads/Vn;
 .source "SourceFile"
-
-# interfaces
-.implements Ls4/g;
 
 
 # instance fields
-.field public final synthetic b:I
-
-.field public final c:Ljava/lang/Object;
+.field public final synthetic c:LA/e;
 
 
 # direct methods
-.method public constructor <init>(Landroid/database/sqlite/SQLiteProgram;)V
-    .locals 1
+.method public constructor <init>(LA/e;I)V
+    .locals 0
 
     .line 1
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    iput-object p1, p0, Landroidx/room/u;->c:LA/e;
 
     .line 2
     .line 3
+    const/4 p1, 0x2
+
     .line 4
-    const/4 v0, 0x1
+    invoke-direct {p0, p2, p1}, Lcom/google/android/gms/internal/ads/Vn;-><init>(II)V
 
     .line 5
-    iput v0, p0, Landroidx/room/u;->b:I
-
     .line 6
     .line 7
-    iput-object p1, p0, Landroidx/room/u;->c:Ljava/lang/Object;
-
-    .line 8
-    .line 9
     return-void
 .end method
 
 
 # virtual methods
-.method public final U(I)V
+.method public final n(Lm2/c;)V
     .locals 1
 
     .line 1
-    iget v0, p0, Landroidx/room/u;->b:I
+    new-instance v0, Landroidx/room/driver/a;
 
     .line 2
     .line 3
-    packed-switch v0, :pswitch_data_0
+    invoke-direct {v0, p1}, Landroidx/room/driver/a;-><init>(Ll2/a;)V
 
     .line 4
     .line 5
     .line 6
-    iget-object v0, p0, Landroidx/room/u;->c:Ljava/lang/Object;
+    iget-object p1, p0, Landroidx/room/u;->c:LA/e;
 
     .line 7
     .line 8
-    check-cast v0, Landroid/database/sqlite/SQLiteProgram;
+    invoke-virtual {p1, v0}, LA/e;->e(Lk2/a;)V
 
     .line 9
     .line 10
-    invoke-virtual {v0, p1}, Landroid/database/sqlite/SQLiteProgram;->bindNull(I)V
-
     .line 11
+    return-void
+.end method
+
+.method public final o(Lm2/c;II)V
+    .locals 0
+
+    .line 1
+    invoke-virtual {p0, p1, p2, p3}, Landroidx/room/u;->q(Lm2/c;II)V
+
+    .line 2
+    .line 3
+    .line 4
+    return-void
+.end method
+
+.method public final p(Lm2/c;)V
+    .locals 2
+
+    .line 1
+    new-instance v0, Landroidx/room/driver/a;
+
+    .line 2
+    .line 3
+    invoke-direct {v0, p1}, Landroidx/room/driver/a;-><init>(Ll2/a;)V
+
+    .line 4
+    .line 5
+    .line 6
+    iget-object v1, p0, Landroidx/room/u;->c:LA/e;
+
+    .line 7
+    .line 8
+    invoke-virtual {v1, v0}, LA/e;->g(Lk2/a;)V
+
+    .line 9
+    .line 10
+    .line 11
+    iput-object p1, v1, LA/e;->g:Ljava/lang/Object;
+
     .line 12
     .line 13
     return-void
-
-    .line 14
-    :pswitch_0
-    const/4 v0, 0x0
-
-    .line 15
-    invoke-virtual {p0, p1, v0}, Landroidx/room/u;->b(ILjava/lang/Object;)V
-
-    .line 16
-    .line 17
-    .line 18
-    return-void
-
-    .line 19
-    :pswitch_data_0
-    .packed-switch 0x0
-        :pswitch_0
-    .end packed-switch
 .end method
 
-.method public final a(DI)V
+.method public final q(Lm2/c;II)V
     .locals 1
 
     .line 1
-    iget v0, p0, Landroidx/room/u;->b:I
+    new-instance v0, Landroidx/room/driver/a;
 
     .line 2
     .line 3
-    packed-switch v0, :pswitch_data_0
+    invoke-direct {v0, p1}, Landroidx/room/driver/a;-><init>(Ll2/a;)V
 
     .line 4
     .line 5
     .line 6
-    iget-object v0, p0, Landroidx/room/u;->c:Ljava/lang/Object;
+    iget-object p1, p0, Landroidx/room/u;->c:LA/e;
 
     .line 7
     .line 8
-    check-cast v0, Landroid/database/sqlite/SQLiteProgram;
-
-    .line 9
-    .line 10
-    invoke-virtual {v0, p3, p1, p2}, Landroid/database/sqlite/SQLiteProgram;->bindDouble(ID)V
-
-    .line 11
-    .line 12
-    .line 13
-    return-void
-
-    .line 14
-    :pswitch_0
-    invoke-static {p1, p2}, Ljava/lang/Double;->valueOf(D)Ljava/lang/Double;
-
-    .line 15
-    .line 16
-    .line 17
-    move-result-object p1
-
-    .line 18
-    invoke-virtual {p0, p3, p1}, Landroidx/room/u;->b(ILjava/lang/Object;)V
-
-    .line 19
-    .line 20
-    .line 21
-    return-void
-
-    .line 22
-    nop
-
-    .line 23
-    :pswitch_data_0
-    .packed-switch 0x0
-        :pswitch_0
-    .end packed-switch
-.end method
-
-.method public final b(ILjava/lang/Object;)V
-    .locals 4
-
-    .line 1
-    add-int/lit8 p1, p1, -0x1
-
-    .line 2
-    .line 3
-    iget-object v0, p0, Landroidx/room/u;->c:Ljava/lang/Object;
-
-    .line 4
-    .line 5
-    move-object v1, v0
-
-    .line 6
-    check-cast v1, Ljava/util/List;
-
-    .line 7
-    .line 8
-    invoke-interface {v1}, Ljava/util/List;->size()I
+    invoke-virtual {p1, v0, p2, p3}, LA/e;->f(Lk2/a;II)V
 
     .line 9
     .line 10
     .line 11
-    move-result v1
-
-    .line 12
-    if-lt p1, v1, :cond_0
-
-    .line 13
-    .line 14
-    move-object v1, v0
-
-    .line 15
-    check-cast v1, Ljava/util/List;
-
-    .line 16
-    .line 17
-    invoke-interface {v1}, Ljava/util/List;->size()I
-
-    .line 18
-    .line 19
-    .line 20
-    move-result v1
-
-    .line 21
-    if-gt v1, p1, :cond_0
-
-    .line 22
-    .line 23
-    :goto_0
-    move-object v2, v0
-
-    .line 24
-    check-cast v2, Ljava/util/List;
-
-    .line 25
-    .line 26
-    const/4 v3, 0x0
-
-    .line 27
-    invoke-interface {v2, v3}, Ljava/util/List;->add(Ljava/lang/Object;)Z
-
-    .line 28
-    .line 29
-    .line 30
-    if-eq v1, p1, :cond_0
-
-    .line 31
-    .line 32
-    add-int/lit8 v1, v1, 0x1
-
-    .line 33
-    .line 34
-    goto :goto_0
-
-    .line 35
-    :cond_0
-    check-cast v0, Ljava/util/List;
-
-    .line 36
-    .line 37
-    invoke-interface {v0, p1, p2}, Ljava/util/List;->set(ILjava/lang/Object;)Ljava/lang/Object;
-
-    .line 38
-    .line 39
-    .line 40
     return-void
-.end method
-
-.method public final close()V
-    .locals 1
-
-    .line 1
-    iget v0, p0, Landroidx/room/u;->b:I
-
-    .line 2
-    .line 3
-    packed-switch v0, :pswitch_data_0
-
-    .line 4
-    .line 5
-    .line 6
-    iget-object v0, p0, Landroidx/room/u;->c:Ljava/lang/Object;
-
-    .line 7
-    .line 8
-    check-cast v0, Landroid/database/sqlite/SQLiteProgram;
-
-    .line 9
-    .line 10
-    invoke-virtual {v0}, Landroid/database/sqlite/SQLiteClosable;->close()V
-
-    .line 11
-    .line 12
-    .line 13
-    :pswitch_0
-    return-void
-
-    .line 14
-    nop
-
-    .line 15
-    :pswitch_data_0
-    .packed-switch 0x0
-        :pswitch_0
-    .end packed-switch
-.end method
-
-.method public final g(ILjava/lang/String;)V
-    .locals 1
-
-    .line 1
-    iget v0, p0, Landroidx/room/u;->b:I
-
-    .line 2
-    .line 3
-    packed-switch v0, :pswitch_data_0
-
-    .line 4
-    .line 5
-    .line 6
-    iget-object v0, p0, Landroidx/room/u;->c:Ljava/lang/Object;
-
-    .line 7
-    .line 8
-    check-cast v0, Landroid/database/sqlite/SQLiteProgram;
-
-    .line 9
-    .line 10
-    invoke-virtual {v0, p1, p2}, Landroid/database/sqlite/SQLiteProgram;->bindString(ILjava/lang/String;)V
-
-    .line 11
-    .line 12
-    .line 13
-    return-void
-
-    .line 14
-    :pswitch_0
-    invoke-virtual {p0, p1, p2}, Landroidx/room/u;->b(ILjava/lang/Object;)V
-
-    .line 15
-    .line 16
-    .line 17
-    return-void
-
-    .line 18
-    nop
-
-    .line 19
-    :pswitch_data_0
-    .packed-switch 0x0
-        :pswitch_0
-    .end packed-switch
-.end method
-
-.method public final t(IJ)V
-    .locals 1
-
-    .line 1
-    iget v0, p0, Landroidx/room/u;->b:I
-
-    .line 2
-    .line 3
-    packed-switch v0, :pswitch_data_0
-
-    .line 4
-    .line 5
-    .line 6
-    iget-object v0, p0, Landroidx/room/u;->c:Ljava/lang/Object;
-
-    .line 7
-    .line 8
-    check-cast v0, Landroid/database/sqlite/SQLiteProgram;
-
-    .line 9
-    .line 10
-    invoke-virtual {v0, p1, p2, p3}, Landroid/database/sqlite/SQLiteProgram;->bindLong(IJ)V
-
-    .line 11
-    .line 12
-    .line 13
-    return-void
-
-    .line 14
-    :pswitch_0
-    invoke-static {p2, p3}, Ljava/lang/Long;->valueOf(J)Ljava/lang/Long;
-
-    .line 15
-    .line 16
-    .line 17
-    move-result-object p2
-
-    .line 18
-    invoke-virtual {p0, p1, p2}, Landroidx/room/u;->b(ILjava/lang/Object;)V
-
-    .line 19
-    .line 20
-    .line 21
-    return-void
-
-    .line 22
-    nop
-
-    .line 23
-    :pswitch_data_0
-    .packed-switch 0x0
-        :pswitch_0
-    .end packed-switch
-.end method
-
-.method public final w(I[B)V
-    .locals 1
-
-    .line 1
-    iget v0, p0, Landroidx/room/u;->b:I
-
-    .line 2
-    .line 3
-    packed-switch v0, :pswitch_data_0
-
-    .line 4
-    .line 5
-    .line 6
-    iget-object v0, p0, Landroidx/room/u;->c:Ljava/lang/Object;
-
-    .line 7
-    .line 8
-    check-cast v0, Landroid/database/sqlite/SQLiteProgram;
-
-    .line 9
-    .line 10
-    invoke-virtual {v0, p1, p2}, Landroid/database/sqlite/SQLiteProgram;->bindBlob(I[B)V
-
-    .line 11
-    .line 12
-    .line 13
-    return-void
-
-    .line 14
-    :pswitch_0
-    invoke-virtual {p0, p1, p2}, Landroidx/room/u;->b(ILjava/lang/Object;)V
-
-    .line 15
-    .line 16
-    .line 17
-    return-void
-
-    .line 18
-    nop
-
-    .line 19
-    :pswitch_data_0
-    .packed-switch 0x0
-        :pswitch_0
-    .end packed-switch
 .end method

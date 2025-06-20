@@ -52,6 +52,14 @@
     .locals 11
 
     .line 1
+    move-object v9, p2
+
+    check-cast v9, Ljava/lang/String;
+
+    move-object v10, p3
+
+    check-cast v10, Lcom/applovin/mediation/MaxError;
+
     iget-object v0, p0, Lcom/applovin/impl/mediation/i;->b:Lcom/applovin/impl/mediation/MediationServiceImpl;
 
     iget-wide v1, p0, Lcom/applovin/impl/mediation/i;->c:J
@@ -66,17 +74,9 @@
 
     iget-object v7, p0, Lcom/applovin/impl/mediation/i;->i:Lcom/applovin/impl/yj$a;
 
-    move-object v9, p2
-
-    check-cast v9, Ljava/lang/String;
-
-    move-object v10, p3
-
-    check-cast v10, Lcom/applovin/mediation/MaxError;
-
     move v8, p1
 
-    invoke-static/range {v0 .. v10}, Lcom/applovin/impl/mediation/MediationServiceImpl;->a(Lcom/applovin/impl/mediation/MediationServiceImpl;JLcom/applovin/impl/mediation/g;Ljava/lang/String;Lcom/applovin/impl/zj;Lcom/applovin/mediation/MaxAdFormat;Lcom/applovin/impl/yj$a;ZLjava/lang/String;Lcom/applovin/mediation/MaxError;)V
+    invoke-static/range {v0 .. v10}, Lcom/applovin/impl/mediation/MediationServiceImpl;->c(Lcom/applovin/impl/mediation/MediationServiceImpl;JLcom/applovin/impl/mediation/g;Ljava/lang/String;Lcom/applovin/impl/zj;Lcom/applovin/mediation/MaxAdFormat;Lcom/applovin/impl/yj$a;ZLjava/lang/String;Lcom/applovin/mediation/MaxError;)V
 
     return-void
 .end method

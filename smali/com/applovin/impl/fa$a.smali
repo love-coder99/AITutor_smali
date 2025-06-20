@@ -34,18 +34,29 @@
 .method static constructor <clinit>()V
     .locals 1
 
+    .line 1
     const/4 v0, 0x3
 
+    .line 2
     new-array v0, v0, [B
 
+    .line 3
+    .line 4
     fill-array-data v0, :array_0
 
+    .line 5
+    .line 6
+    .line 7
     sput-object v0, Lcom/applovin/impl/fa$a;->f:[B
 
+    .line 8
+    .line 9
     return-void
 
+    .line 10
     nop
 
+    .line 11
     :array_0
     .array-data 1
         0x0t
@@ -79,13 +90,15 @@
 .method public a()V
     .locals 1
 
-    .line 1
     const/4 v0, 0x0
 
+    .line 23
     iput-boolean v0, p0, Lcom/applovin/impl/fa$a;->a:Z
 
+    .line 24
     iput v0, p0, Lcom/applovin/impl/fa$a;->c:I
 
+    .line 25
     iput v0, p0, Lcom/applovin/impl/fa$a;->b:I
 
     return-void
@@ -94,6 +107,7 @@
 .method public a([BII)V
     .locals 3
 
+    .line 1
     iget-boolean v0, p0, Lcom/applovin/impl/fa$a;->a:Z
 
     if-nez v0, :cond_0
@@ -103,9 +117,9 @@
     :cond_0
     sub-int/2addr p3, p2
 
+    .line 2
     iget-object v0, p0, Lcom/applovin/impl/fa$a;->e:[B
 
-    .line 2
     array-length v1, v0
 
     iget v2, p0, Lcom/applovin/impl/fa$a;->c:I
@@ -123,14 +137,15 @@
 
     iput-object v0, p0, Lcom/applovin/impl/fa$a;->e:[B
 
+    .line 4
     :cond_1
     iget-object v0, p0, Lcom/applovin/impl/fa$a;->e:[B
 
     iget v1, p0, Lcom/applovin/impl/fa$a;->c:I
 
-    .line 4
     invoke-static {p1, p2, v0, v1, p3}, Ljava/lang/System;->arraycopy(Ljava/lang/Object;ILjava/lang/Object;II)V
 
+    .line 5
     iget p1, p0, Lcom/applovin/impl/fa$a;->c:I
 
     add-int/2addr p1, p3
@@ -143,6 +158,7 @@
 .method public a(II)Z
     .locals 8
 
+    .line 6
     iget v0, p0, Lcom/applovin/impl/fa$a;->b:I
 
     const/4 v1, 0x0
@@ -177,6 +193,7 @@
 
     if-ne p1, v3, :cond_9
 
+    .line 7
     :cond_0
     iget p1, p0, Lcom/applovin/impl/fa$a;->c:I
 
@@ -184,11 +201,12 @@
 
     iput p1, p0, Lcom/applovin/impl/fa$a;->c:I
 
+    .line 8
     iput-boolean v1, p0, Lcom/applovin/impl/fa$a;->a:Z
 
     return v2
 
-    .line 5
+    .line 9
     :cond_1
     new-instance p1, Ljava/lang/IllegalStateException;
 
@@ -203,19 +221,21 @@
 
     if-eq p1, p2, :cond_3
 
-    .line 6
+    .line 10
     invoke-static {v6, v5}, Lcom/applovin/impl/oc;->d(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 7
+    .line 11
     invoke-virtual {p0}, Lcom/applovin/impl/fa$a;->a()V
 
     goto :goto_0
 
+    .line 12
     :cond_3
     iget p1, p0, Lcom/applovin/impl/fa$a;->c:I
 
     iput p1, p0, Lcom/applovin/impl/fa$a;->d:I
 
+    .line 13
     iput v4, p0, Lcom/applovin/impl/fa$a;->b:I
 
     goto :goto_0
@@ -225,14 +245,15 @@
 
     if-le p1, p2, :cond_5
 
-    .line 8
+    .line 14
     invoke-static {v6, v5}, Lcom/applovin/impl/oc;->d(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 9
+    .line 15
     invoke-virtual {p0}, Lcom/applovin/impl/fa$a;->a()V
 
     goto :goto_0
 
+    .line 16
     :cond_5
     iput v7, p0, Lcom/applovin/impl/fa$a;->b:I
 
@@ -241,14 +262,15 @@
     :cond_6
     if-eq p1, v3, :cond_7
 
-    .line 10
+    .line 17
     invoke-static {v6, v5}, Lcom/applovin/impl/oc;->d(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 11
+    .line 18
     invoke-virtual {p0}, Lcom/applovin/impl/fa$a;->a()V
 
     goto :goto_0
 
+    .line 19
     :cond_7
     iput v4, p0, Lcom/applovin/impl/fa$a;->b:I
 
@@ -259,15 +281,17 @@
 
     if-ne p1, p2, :cond_9
 
+    .line 20
     iput v2, p0, Lcom/applovin/impl/fa$a;->b:I
 
+    .line 21
     iput-boolean v2, p0, Lcom/applovin/impl/fa$a;->a:Z
 
+    .line 22
     :cond_9
     :goto_0
     sget-object p1, Lcom/applovin/impl/fa$a;->f:[B
 
-    .line 12
     array-length p2, p1
 
     invoke-virtual {p0, p1, v1, p2}, Lcom/applovin/impl/fa$a;->a([BII)V

@@ -138,36 +138,36 @@
 .method public static a(Lorg/json/JSONObject;Lcom/applovin/impl/sdk/j;)Lcom/applovin/impl/sdk/c$a;
     .locals 7
 
+    .line 7
     const-string p1, "id"
 
     const-string v0, ""
 
-    .line 7
     invoke-static {p0, p1, v0}, Lcom/applovin/impl/sdk/utils/JsonUtils;->getString(Lorg/json/JSONObject;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v2
 
+    .line 8
     const-string p1, "type"
 
-    .line 8
     invoke-static {p0, p1, v0}, Lcom/applovin/impl/sdk/utils/JsonUtils;->getString(Lorg/json/JSONObject;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object p1
 
+    .line 9
     const-string v0, "is_ad_server_ad"
 
     const/4 v1, 0x0
 
-    .line 9
     invoke-static {p0, v0, v1}, Lcom/applovin/impl/sdk/utils/JsonUtils;->getBoolean(Lorg/json/JSONObject;Ljava/lang/String;Ljava/lang/Boolean;)Ljava/lang/Boolean;
 
     move-result-object v0
 
+    .line 10
     const-string v3, "expiry_time_millis"
 
     const-wide/16 v4, 0x0
 
-    .line 10
     invoke-static {p0, v3, v4, v5}, Lcom/applovin/impl/sdk/utils/JsonUtils;->getLong(Lorg/json/JSONObject;Ljava/lang/String;J)J
 
     move-result-wide v5
@@ -222,16 +222,16 @@
 
     invoke-direct {v0}, Lorg/json/JSONObject;-><init>()V
 
+    .line 14
     iget-object v1, p0, Lcom/applovin/impl/sdk/c$a;->a:Ljava/lang/String;
 
     const-string v2, "id"
 
-    .line 14
     invoke-static {v0, v2, v1}, Lcom/applovin/impl/sdk/utils/JsonUtils;->putString(Lorg/json/JSONObject;Ljava/lang/String;Ljava/lang/String;)V
 
+    .line 15
     iget-object v1, p0, Lcom/applovin/impl/sdk/c$a;->b:Lcom/applovin/sdk/AppLovinAdType;
 
-    .line 15
     invoke-virtual {v1}, Lcom/applovin/sdk/AppLovinAdType;->toString()Ljava/lang/String;
 
     move-result-object v1
@@ -240,18 +240,18 @@
 
     invoke-static {v0, v2, v1}, Lcom/applovin/impl/sdk/utils/JsonUtils;->putString(Lorg/json/JSONObject;Ljava/lang/String;Ljava/lang/String;)V
 
+    .line 16
     iget-boolean v1, p0, Lcom/applovin/impl/sdk/c$a;->c:Z
 
     const-string v2, "is_ad_server_ad"
 
-    .line 16
     invoke-static {v0, v2, v1}, Lcom/applovin/impl/sdk/utils/JsonUtils;->putBoolean(Lorg/json/JSONObject;Ljava/lang/String;Z)V
 
+    .line 17
     iget-wide v1, p0, Lcom/applovin/impl/sdk/c$a;->d:J
 
     const-string v3, "expiry_time_millis"
 
-    .line 17
     invoke-static {v0, v3, v1, v2}, Lcom/applovin/impl/sdk/utils/JsonUtils;->putLong(Lorg/json/JSONObject;Ljava/lang/String;J)V
 
     return-object v0
@@ -269,8 +269,11 @@
 .method public b()J
     .locals 2
 
+    .line 1
     iget-wide v0, p0, Lcom/applovin/impl/sdk/c$a;->d:J
 
+    .line 2
+    .line 3
     return-wide v0
 .end method
 
@@ -328,16 +331,22 @@
 .method public d()Ljava/lang/String;
     .locals 1
 
+    .line 1
     iget-object v0, p0, Lcom/applovin/impl/sdk/c$a;->a:Ljava/lang/String;
 
+    .line 2
+    .line 3
     return-object v0
 .end method
 
 .method public e()Lcom/applovin/sdk/AppLovinAdType;
     .locals 1
 
+    .line 1
     iget-object v0, p0, Lcom/applovin/impl/sdk/c$a;->b:Lcom/applovin/sdk/AppLovinAdType;
 
+    .line 2
+    .line 3
     return-object v0
 .end method
 
@@ -487,8 +496,11 @@
 .method public f()Z
     .locals 1
 
+    .line 1
     iget-boolean v0, p0, Lcom/applovin/impl/sdk/c$a;->c:Z
 
+    .line 2
+    .line 3
     return v0
 .end method
 

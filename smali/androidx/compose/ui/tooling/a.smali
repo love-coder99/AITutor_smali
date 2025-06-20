@@ -4,11 +4,11 @@
 
 
 # static fields
-.field public static final a:Landroidx/compose/runtime/internal/b;
+.field public static final a:Landroidx/compose/runtime/internal/a;
 
-.field public static final b:Landroidx/compose/runtime/internal/b;
+.field public static final b:Landroidx/compose/runtime/internal/a;
 
-.field public static final c:Landroidx/compose/runtime/internal/b;
+.field public static final c:Landroidx/compose/runtime/internal/a;
 
 
 # direct methods
@@ -20,74 +20,70 @@
 
     .line 2
     .line 3
-    sget-object v1, Landroidx/compose/runtime/internal/c;->a:Ljava/lang/Object;
+    new-instance v1, Landroidx/compose/runtime/internal/a;
 
     .line 4
     .line 5
-    new-instance v1, Landroidx/compose/runtime/internal/b;
+    const v2, -0x4554f2da
 
     .line 6
     .line 7
-    const v2, -0x4554f2da
-
     .line 8
-    .line 9
-    .line 10
     const/4 v3, 0x0
 
-    .line 11
-    invoke-direct {v1, v2, v0, v3}, Landroidx/compose/runtime/internal/b;-><init>(ILkotlin/jvm/internal/Lambda;Z)V
+    .line 9
+    invoke-direct {v1, v2, v0, v3}, Landroidx/compose/runtime/internal/a;-><init>(ILjava/lang/Object;Z)V
 
+    .line 10
+    .line 11
     .line 12
+    sput-object v1, Landroidx/compose/ui/tooling/a;->a:Landroidx/compose/runtime/internal/a;
+
     .line 13
     .line 14
-    sput-object v1, Landroidx/compose/ui/tooling/a;->a:Landroidx/compose/runtime/internal/b;
+    sget-object v0, Landroidx/compose/ui/tooling/ComposableSingletons$ComposeViewAdapter_androidKt$lambda-2$1;->INSTANCE:Landroidx/compose/ui/tooling/ComposableSingletons$ComposeViewAdapter_androidKt$lambda-2$1;
 
     .line 15
     .line 16
-    sget-object v0, Landroidx/compose/ui/tooling/ComposableSingletons$ComposeViewAdapter_androidKt$lambda-2$1;->INSTANCE:Landroidx/compose/ui/tooling/ComposableSingletons$ComposeViewAdapter_androidKt$lambda-2$1;
+    new-instance v1, Landroidx/compose/runtime/internal/a;
 
     .line 17
     .line 18
-    new-instance v1, Landroidx/compose/runtime/internal/b;
+    const v2, 0x7c63c00a
 
     .line 19
     .line 20
-    const v2, 0x7c63c00a
-
     .line 21
+    invoke-direct {v1, v2, v0, v3}, Landroidx/compose/runtime/internal/a;-><init>(ILjava/lang/Object;Z)V
+
     .line 22
     .line 23
-    invoke-direct {v1, v2, v0, v3}, Landroidx/compose/runtime/internal/b;-><init>(ILkotlin/jvm/internal/Lambda;Z)V
-
     .line 24
+    sput-object v1, Landroidx/compose/ui/tooling/a;->b:Landroidx/compose/runtime/internal/a;
+
     .line 25
     .line 26
-    sput-object v1, Landroidx/compose/ui/tooling/a;->b:Landroidx/compose/runtime/internal/b;
+    sget-object v0, Landroidx/compose/ui/tooling/ComposableSingletons$ComposeViewAdapter_androidKt$lambda-3$1;->INSTANCE:Landroidx/compose/ui/tooling/ComposableSingletons$ComposeViewAdapter_androidKt$lambda-3$1;
 
     .line 27
     .line 28
-    sget-object v0, Landroidx/compose/ui/tooling/ComposableSingletons$ComposeViewAdapter_androidKt$lambda-3$1;->INSTANCE:Landroidx/compose/ui/tooling/ComposableSingletons$ComposeViewAdapter_androidKt$lambda-3$1;
+    new-instance v1, Landroidx/compose/runtime/internal/a;
 
     .line 29
     .line 30
-    new-instance v1, Landroidx/compose/runtime/internal/b;
+    const v2, 0x115720bc
 
     .line 31
     .line 32
-    const v2, 0x115720bc
-
     .line 33
+    invoke-direct {v1, v2, v0, v3}, Landroidx/compose/runtime/internal/a;-><init>(ILjava/lang/Object;Z)V
+
     .line 34
     .line 35
-    invoke-direct {v1, v2, v0, v3}, Landroidx/compose/runtime/internal/b;-><init>(ILkotlin/jvm/internal/Lambda;Z)V
-
     .line 36
+    sput-object v1, Landroidx/compose/ui/tooling/a;->c:Landroidx/compose/runtime/internal/a;
+
     .line 37
     .line 38
-    sput-object v1, Landroidx/compose/ui/tooling/a;->c:Landroidx/compose/runtime/internal/b;
-
-    .line 39
-    .line 40
     return-void
 .end method

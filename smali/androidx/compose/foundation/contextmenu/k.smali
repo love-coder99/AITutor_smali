@@ -4,7 +4,7 @@
 
 
 # static fields
-.field public static final a:Landroidx/compose/ui/window/u;
+.field public static final a:Landroidx/compose/ui/window/s;
 
 .field public static final b:Landroidx/compose/foundation/contextmenu/b;
 
@@ -14,23 +14,23 @@
     .locals 14
 
     .line 1
-    new-instance v0, Landroidx/compose/ui/window/u;
+    new-instance v0, Landroidx/compose/ui/window/s;
 
     .line 2
     .line 3
-    const/4 v1, 0x1
+    const/16 v1, 0xe
 
     .line 4
-    const/16 v2, 0xe
-
     .line 5
+    const/4 v2, 0x1
+
     .line 6
-    invoke-direct {v0, v1, v2}, Landroidx/compose/ui/window/u;-><init>(ZI)V
+    invoke-direct {v0, v2, v1}, Landroidx/compose/ui/window/s;-><init>(ZI)V
 
     .line 7
     .line 8
     .line 9
-    sput-object v0, Landroidx/compose/foundation/contextmenu/k;->a:Landroidx/compose/ui/window/u;
+    sput-object v0, Landroidx/compose/foundation/contextmenu/k;->a:Landroidx/compose/ui/window/s;
 
     .line 10
     .line 11
@@ -51,7 +51,7 @@
     .line 18
     .line 19
     .line 20
-    invoke-static {v8, v9, v1}, Landroidx/compose/ui/graphics/w;->b(JF)J
+    invoke-static {v1, v8, v9}, Landroidx/compose/ui/graphics/w;->b(FJ)J
 
     .line 21
     .line 22
@@ -59,7 +59,7 @@
     move-result-wide v10
 
     .line 24
-    invoke-static {v8, v9, v1}, Landroidx/compose/ui/graphics/w;->b(JF)J
+    invoke-static {v1, v8, v9}, Landroidx/compose/ui/graphics/w;->b(FJ)J
 
     .line 25
     .line 26
@@ -85,642 +85,712 @@
     return-void
 .end method
 
-.method public static final a(Landroidx/compose/foundation/contextmenu/b;Landroidx/compose/ui/o;Lzh/f;Landroidx/compose/runtime/l;II)V
-    .locals 13
+.method public static final a(Landroidx/compose/foundation/contextmenu/b;Landroidx/compose/ui/o;Lka/f;Landroidx/compose/runtime/j;II)V
+    .locals 15
 
     .line 1
     move-object v1, p0
 
     .line 2
-    move-object v3, p2
+    move-object/from16 v3, p2
 
     .line 3
+    .line 4
     move/from16 v4, p4
 
-    .line 4
     .line 5
+    .line 6
     move-object/from16 v0, p3
 
-    .line 6
     .line 7
-    check-cast v0, Landroidx/compose/runtime/p;
-
     .line 8
+    check-cast v0, Landroidx/compose/runtime/n;
+
     .line 9
+    .line 10
     const v2, -0x36e94d1d
 
-    .line 10
     .line 11
     .line 12
-    invoke-virtual {v0, v2}, Landroidx/compose/runtime/p;->V(I)Landroidx/compose/runtime/p;
-
     .line 13
+    invoke-virtual {v0, v2}, Landroidx/compose/runtime/n;->T(I)Landroidx/compose/runtime/n;
+
     .line 14
     .line 15
+    .line 16
     and-int/lit8 v2, p5, 0x1
 
-    .line 16
     .line 17
+    .line 18
     if-eqz v2, :cond_0
 
-    .line 18
     .line 19
+    .line 20
     or-int/lit8 v2, v4, 0x6
 
-    .line 20
     .line 21
+    .line 22
     goto :goto_1
 
-    .line 22
+    .line 23
     :cond_0
     and-int/lit8 v2, v4, 0x6
 
-    .line 23
     .line 24
+    .line 25
     if-nez v2, :cond_2
 
-    .line 25
     .line 26
-    invoke-virtual {v0, p0}, Landroidx/compose/runtime/p;->g(Ljava/lang/Object;)Z
-
     .line 27
+    invoke-virtual {v0, p0}, Landroidx/compose/runtime/n;->f(Ljava/lang/Object;)Z
+
     .line 28
     .line 29
+    .line 30
     move-result v2
 
-    .line 30
+    .line 31
     if-eqz v2, :cond_1
 
-    .line 31
     .line 32
+    .line 33
     const/4 v2, 0x4
 
-    .line 33
+    .line 34
     goto :goto_0
 
-    .line 34
+    .line 35
     :cond_1
     const/4 v2, 0x2
 
-    .line 35
+    .line 36
     :goto_0
     or-int/2addr v2, v4
 
-    .line 36
+    .line 37
     goto :goto_1
 
-    .line 37
+    .line 38
     :cond_2
     move v2, v4
 
-    .line 38
+    .line 39
     :goto_1
     and-int/lit8 v5, p5, 0x2
 
-    .line 39
     .line 40
+    .line 41
     if-eqz v5, :cond_4
 
-    .line 41
     .line 42
+    .line 43
     or-int/lit8 v2, v2, 0x30
 
-    .line 43
     .line 44
-    :cond_3
-    move-object v6, p1
-
     .line 45
-    goto :goto_3
+    :cond_3
+    move-object/from16 v6, p1
 
     .line 46
+    .line 47
+    goto :goto_3
+
+    .line 48
     :cond_4
     and-int/lit8 v6, v4, 0x30
 
-    .line 47
-    .line 48
-    if-nez v6, :cond_3
-
     .line 49
     .line 50
-    move-object v6, p1
+    if-nez v6, :cond_3
 
     .line 51
-    invoke-virtual {v0, p1}, Landroidx/compose/runtime/p;->g(Ljava/lang/Object;)Z
-
     .line 52
+    move-object/from16 v6, p1
+
     .line 53
     .line 54
-    move-result v7
+    invoke-virtual {v0, v6}, Landroidx/compose/runtime/n;->f(Ljava/lang/Object;)Z
 
     .line 55
-    if-eqz v7, :cond_5
-
     .line 56
     .line 57
-    const/16 v7, 0x20
+    move-result v7
 
     .line 58
-    .line 59
-    goto :goto_2
+    if-eqz v7, :cond_5
 
+    .line 59
     .line 60
-    :cond_5
-    const/16 v7, 0x10
+    const/16 v7, 0x20
 
     .line 61
     .line 62
-    :goto_2
-    or-int/2addr v2, v7
+    goto :goto_2
 
     .line 63
-    :goto_3
-    and-int/lit8 v7, p5, 0x4
+    :cond_5
+    const/16 v7, 0x10
 
     .line 64
     .line 65
-    if-eqz v7, :cond_6
+    :goto_2
+    or-int/2addr v2, v7
 
     .line 66
+    :goto_3
+    and-int/lit8 v7, p5, 0x4
+
     .line 67
-    or-int/lit16 v2, v2, 0x180
-
     .line 68
-    .line 69
-    goto :goto_5
+    if-eqz v7, :cond_6
 
+    .line 69
     .line 70
-    :cond_6
-    and-int/lit16 v7, v4, 0x180
+    or-int/lit16 v2, v2, 0x180
 
     .line 71
     .line 72
-    if-nez v7, :cond_8
+    goto :goto_5
 
     .line 73
-    .line 74
-    invoke-virtual {v0, p2}, Landroidx/compose/runtime/p;->i(Ljava/lang/Object;)Z
+    :cond_6
+    and-int/lit16 v7, v4, 0x180
 
+    .line 74
     .line 75
+    if-nez v7, :cond_8
+
     .line 76
     .line 77
-    move-result v7
+    invoke-virtual {v0, v3}, Landroidx/compose/runtime/n;->h(Ljava/lang/Object;)Z
 
     .line 78
-    if-eqz v7, :cond_7
-
     .line 79
     .line 80
-    const/16 v7, 0x100
+    move-result v7
 
     .line 81
-    .line 82
-    goto :goto_4
+    if-eqz v7, :cond_7
 
+    .line 82
     .line 83
-    :cond_7
-    const/16 v7, 0x80
+    const/16 v7, 0x100
 
     .line 84
     .line 85
+    goto :goto_4
+
+    .line 86
+    :cond_7
+    const/16 v7, 0x80
+
+    .line 87
+    .line 88
     :goto_4
     or-int/2addr v2, v7
 
-    .line 86
+    .line 89
     :cond_8
     :goto_5
     and-int/lit16 v7, v2, 0x93
 
-    .line 87
-    .line 88
+    .line 90
+    .line 91
     const/16 v8, 0x92
 
-    .line 89
-    .line 90
+    .line 92
+    .line 93
     if-ne v7, v8, :cond_a
 
-    .line 91
-    .line 92
-    invoke-virtual {v0}, Landroidx/compose/runtime/p;->y()Z
-
-    .line 93
     .line 94
     .line 95
-    move-result v7
+    invoke-virtual {v0}, Landroidx/compose/runtime/n;->x()Z
 
     .line 96
-    if-nez v7, :cond_9
-
     .line 97
     .line 98
-    goto :goto_6
+    move-result v7
 
     .line 99
-    :cond_9
-    invoke-virtual {v0}, Landroidx/compose/runtime/p;->N()V
+    if-nez v7, :cond_9
 
     .line 100
     .line 101
+    goto :goto_6
+
     .line 102
-    move-object v2, v6
+    :cond_9
+    invoke-virtual {v0}, Landroidx/compose/runtime/n;->L()V
 
     .line 103
-    goto/16 :goto_9
-
     .line 104
     .line 105
+    move-object v2, v6
+
+    .line 106
+    goto/16 :goto_d
+
+    .line 107
+    .line 108
     :cond_a
     :goto_6
     if-eqz v5, :cond_b
 
-    .line 106
-    .line 107
-    sget-object v5, Landroidx/compose/ui/l;->c:Landroidx/compose/ui/l;
-
-    .line 108
     .line 109
+    .line 110
+    sget-object v5, Landroidx/compose/ui/l;->a:Landroidx/compose/ui/l;
+
+    .line 111
+    .line 112
     goto :goto_7
 
-    .line 110
+    .line 113
     :cond_b
     move-object v5, v6
 
-    .line 111
-    :goto_7
-    sget v6, Landroidx/compose/foundation/contextmenu/f;->d:F
-
-    .line 112
-    .line 113
-    sget v7, Landroidx/compose/foundation/contextmenu/f;->e:F
-
     .line 114
-    .line 115
-    invoke-static {v7}, Ld1/f;->a(F)Ld1/e;
+    :goto_7
+    sget v7, Landroidx/compose/foundation/contextmenu/f;->d:F
 
+    .line 115
     .line 116
+    sget v6, Landroidx/compose/foundation/contextmenu/f;->e:F
+
     .line 117
     .line 118
-    move-result-object v7
+    invoke-static {v6}, Lh0/e;->a(F)Lh0/d;
 
     .line 119
-    const/16 v8, 0x1c
-
     .line 120
     .line 121
-    invoke-static {v5, v6, v7, v8}, Landroidx/compose/ui/draw/g;->i(Landroidx/compose/ui/o;FLandroidx/compose/ui/graphics/z0;I)Landroidx/compose/ui/o;
+    move-result-object v8
 
     .line 122
+    const/16 v6, 0x1c
+
     .line 123
     .line 124
-    move-result-object v6
+    and-int/lit8 v6, v6, 0x4
 
     .line 125
-    iget-wide v7, v1, Landroidx/compose/foundation/contextmenu/b;->a:J
-
     .line 126
+    const/4 v9, 0x0
+
     .line 127
-    sget-object v9, Landroidx/compose/ui/graphics/f0;->a:Landroidx/compose/ui/graphics/u0;
+    if-eqz v6, :cond_d
 
     .line 128
     .line 129
-    invoke-static {v6, v7, v8, v9}, Landroidx/compose/foundation/d;->f(Landroidx/compose/ui/o;JLandroidx/compose/ui/graphics/z0;)Landroidx/compose/ui/o;
+    int-to-float v6, v9
 
     .line 130
+    invoke-static {v7, v6}, Ljava/lang/Float;->compare(FF)I
+
     .line 131
     .line 132
-    move-result-object v6
-
     .line 133
-    sget-object v7, Landroidx/compose/foundation/layout/IntrinsicSize;->Max:Landroidx/compose/foundation/layout/IntrinsicSize;
+    move-result v6
 
     .line 134
-    .line 135
-    invoke-static {v6, v7}, Landroidx/compose/foundation/layout/a;->x(Landroidx/compose/ui/o;Landroidx/compose/foundation/layout/IntrinsicSize;)Landroidx/compose/ui/o;
+    if-lez v6, :cond_c
 
+    .line 135
     .line 136
+    const/4 v6, 0x1
+
     .line 137
+    goto :goto_8
+
     .line 138
-    move-result-object v6
+    :cond_c
+    const/4 v6, 0x0
 
     .line 139
-    sget v7, Landroidx/compose/foundation/contextmenu/f;->i:F
+    :goto_8
+    move v10, v6
 
     .line 140
+    goto :goto_9
+
     .line 141
-    const/4 v8, 0x0
+    :cond_d
+    const/4 v10, 0x0
 
     .line 142
-    const/4 v9, 0x1
+    :goto_9
+    sget-wide v12, Landroidx/compose/ui/graphics/I;->a:J
 
     .line 143
-    invoke-static {v6, v8, v7, v9}, Landroidx/compose/foundation/layout/a;->r(Landroidx/compose/ui/o;FFI)Landroidx/compose/ui/o;
-
     .line 144
+    int-to-float v6, v9
+
     .line 145
+    invoke-static {v7, v6}, Ljava/lang/Float;->compare(FF)I
+
     .line 146
-    move-result-object v6
-
     .line 147
-    invoke-static {v0}, Landroidx/compose/foundation/d;->o(Landroidx/compose/runtime/l;)Landroidx/compose/foundation/y0;
-
     .line 148
-    .line 149
-    .line 150
-    move-result-object v7
+    move-result v6
 
+    .line 149
+    if-gtz v6, :cond_f
+
+    .line 150
     .line 151
-    invoke-static {v6, v7}, Landroidx/compose/foundation/d;->r(Landroidx/compose/ui/o;Landroidx/compose/foundation/y0;)Landroidx/compose/ui/o;
+    if-eqz v10, :cond_e
 
     .line 152
     .line 153
+    goto :goto_a
+
     .line 154
-    move-result-object v6
+    :cond_e
+    move-object v6, v5
 
     .line 155
-    shl-int/lit8 v2, v2, 0x3
+    goto :goto_b
 
     .line 156
-    .line 157
-    and-int/lit16 v2, v2, 0x1c00
+    :cond_f
+    :goto_a
+    new-instance v14, Landroidx/compose/ui/draw/ShadowGraphicsLayerElement;
 
+    .line 157
     .line 158
+    move-object v6, v14
+
     .line 159
-    sget-object v7, Landroidx/compose/foundation/layout/j;->c:Landroidx/compose/foundation/layout/e;
+    move v9, v10
 
     .line 160
+    move-wide v10, v12
+
     .line 161
-    sget-object v8, Landroidx/compose/ui/b;->o:Landroidx/compose/ui/g;
+    invoke-direct/range {v6 .. v13}, Landroidx/compose/ui/draw/ShadowGraphicsLayerElement;-><init>(FLandroidx/compose/ui/graphics/Z;ZJJ)V
 
     .line 162
     .line 163
-    shr-int/lit8 v10, v2, 0x3
-
     .line 164
-    .line 165
-    and-int/lit8 v11, v10, 0xe
+    invoke-interface {v5, v14}, Landroidx/compose/ui/o;->g(Landroidx/compose/ui/o;)Landroidx/compose/ui/o;
 
+    .line 165
     .line 166
     .line 167
-    and-int/lit8 v10, v10, 0x70
+    move-result-object v6
 
     .line 168
-    .line 169
-    or-int/2addr v10, v11
+    :goto_b
+    iget-wide v7, v1, Landroidx/compose/foundation/contextmenu/b;->a:J
 
+    .line 169
     .line 170
-    invoke-static {v7, v8, v0, v10}, Landroidx/compose/foundation/layout/s;->a(Landroidx/compose/foundation/layout/i;Landroidx/compose/ui/g;Landroidx/compose/runtime/l;I)Landroidx/compose/foundation/layout/t;
+    sget-object v9, Landroidx/compose/ui/graphics/G;->a:LD6/f;
 
     .line 171
     .line 172
+    invoke-static {v6, v7, v8, v9}, Landroidx/compose/foundation/d;->f(Landroidx/compose/ui/o;JLandroidx/compose/ui/graphics/Z;)Landroidx/compose/ui/o;
+
     .line 173
-    move-result-object v7
-
     .line 174
-    iget v8, v0, Landroidx/compose/runtime/p;->P:I
-
     .line 175
+    move-result-object v6
+
     .line 176
-    invoke-virtual {v0}, Landroidx/compose/runtime/p;->n()Landroidx/compose/runtime/q1;
+    sget-object v7, Landroidx/compose/foundation/layout/IntrinsicSize;->Max:Landroidx/compose/foundation/layout/IntrinsicSize;
 
     .line 177
     .line 178
+    invoke-static {v6, v7}, Landroidx/compose/foundation/layout/a;->z(Landroidx/compose/ui/o;Landroidx/compose/foundation/layout/IntrinsicSize;)Landroidx/compose/ui/o;
+
     .line 179
-    move-result-object v10
-
     .line 180
-    invoke-static {v0, v6}, Landroidx/compose/ui/a;->c(Landroidx/compose/runtime/l;Landroidx/compose/ui/o;)Landroidx/compose/ui/o;
-
     .line 181
-    .line 182
-    .line 183
     move-result-object v6
 
+    .line 182
+    sget v7, Landroidx/compose/foundation/contextmenu/f;->i:F
+
+    .line 183
     .line 184
-    sget-object v11, Landroidx/compose/ui/node/h;->y8:Landroidx/compose/ui/node/g;
+    const/4 v8, 0x0
 
     .line 185
+    const/4 v9, 0x1
+
     .line 186
-    invoke-virtual {v11}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+    invoke-static {v6, v8, v7, v9}, Landroidx/compose/foundation/layout/a;->s(Landroidx/compose/ui/o;FFI)Landroidx/compose/ui/o;
 
     .line 187
     .line 188
     .line 189
-    sget-object v11, Landroidx/compose/ui/node/g;->b:Lzh/a;
+    move-result-object v6
 
     .line 190
-    .line 191
-    iget-object v12, v0, Landroidx/compose/runtime/p;->a:Landroidx/compose/runtime/e;
+    invoke-static {v0}, Landroidx/compose/foundation/d;->o(Landroidx/compose/runtime/j;)Landroidx/compose/foundation/X;
 
+    .line 191
     .line 192
     .line 193
-    instance-of v12, v12, Landroidx/compose/runtime/e;
+    move-result-object v7
 
     .line 194
-    .line 195
-    if-eqz v12, :cond_10
+    invoke-static {v6, v7}, Landroidx/compose/foundation/d;->r(Landroidx/compose/ui/o;Landroidx/compose/foundation/X;)Landroidx/compose/ui/o;
 
+    .line 195
     .line 196
     .line 197
-    invoke-virtual {v0}, Landroidx/compose/runtime/p;->X()V
+    move-result-object v6
 
     .line 198
+    shl-int/lit8 v2, v2, 0x3
+
     .line 199
     .line 200
-    iget-boolean v12, v0, Landroidx/compose/runtime/p;->O:Z
+    and-int/lit16 v2, v2, 0x1c00
 
     .line 201
     .line 202
-    if-eqz v12, :cond_c
+    sget-object v7, Landroidx/compose/foundation/layout/g;->c:Landroidx/compose/foundation/layout/d0;
 
     .line 203
     .line 204
-    invoke-virtual {v0, v11}, Landroidx/compose/runtime/p;->m(Lzh/a;)V
+    sget-object v8, Landroidx/compose/ui/b;->o:Landroidx/compose/ui/g;
 
     .line 205
     .line 206
+    const/4 v10, 0x0
+
     .line 207
-    goto :goto_8
+    invoke-static {v7, v8, v0, v10}, Landroidx/compose/foundation/layout/q;->a(Landroidx/compose/foundation/layout/f;Landroidx/compose/ui/g;Landroidx/compose/runtime/j;I)Landroidx/compose/foundation/layout/r;
 
     .line 208
-    :cond_c
-    invoke-virtual {v0}, Landroidx/compose/runtime/p;->g0()V
-
     .line 209
     .line 210
+    move-result-object v7
+
     .line 211
-    :goto_8
-    sget-object v11, Landroidx/compose/ui/node/g;->f:Lzh/e;
+    iget v8, v0, Landroidx/compose/runtime/n;->P:I
 
     .line 212
     .line 213
-    invoke-static {v0, v7, v11}, Landroidx/compose/runtime/q;->x(Landroidx/compose/runtime/l;Ljava/lang/Object;Lzh/e;)V
+    invoke-virtual {v0}, Landroidx/compose/runtime/n;->m()Landroidx/compose/runtime/g0;
 
     .line 214
     .line 215
     .line 216
-    sget-object v7, Landroidx/compose/ui/node/g;->e:Lzh/e;
+    move-result-object v10
 
     .line 217
-    .line 218
-    invoke-static {v0, v10, v7}, Landroidx/compose/runtime/q;->x(Landroidx/compose/runtime/l;Ljava/lang/Object;Lzh/e;)V
+    invoke-static {v0, v6}, Landroidx/compose/ui/a;->d(Landroidx/compose/runtime/j;Landroidx/compose/ui/o;)Landroidx/compose/ui/o;
 
+    .line 218
     .line 219
     .line 220
+    move-result-object v6
+
     .line 221
-    sget-object v7, Landroidx/compose/ui/node/g;->g:Lzh/e;
+    sget-object v11, Landroidx/compose/ui/node/h;->A8:Landroidx/compose/ui/node/g;
 
     .line 222
     .line 223
-    iget-boolean v10, v0, Landroidx/compose/runtime/p;->O:Z
+    invoke-virtual {v11}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
     .line 224
     .line 225
-    if-nez v10, :cond_d
-
     .line 226
-    .line 227
-    invoke-virtual {v0}, Landroidx/compose/runtime/p;->I()Ljava/lang/Object;
+    sget-object v11, Landroidx/compose/ui/node/g;->b:Lka/a;
 
+    .line 227
     .line 228
+    invoke-virtual {v0}, Landroidx/compose/runtime/n;->V()V
+
     .line 229
     .line 230
-    move-result-object v10
-
     .line 231
-    invoke-static {v8}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+    iget-boolean v12, v0, Landroidx/compose/runtime/n;->O:Z
 
     .line 232
     .line 233
-    .line 234
-    move-result-object v11
+    if-eqz v12, :cond_10
 
+    .line 234
     .line 235
-    invoke-static {v10, v11}, Lrb/h;->d(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-virtual {v0, v11}, Landroidx/compose/runtime/n;->l(Lka/a;)V
 
     .line 236
     .line 237
     .line 238
-    move-result v10
+    goto :goto_c
 
     .line 239
-    if-nez v10, :cond_e
+    :cond_10
+    invoke-virtual {v0}, Landroidx/compose/runtime/n;->e0()V
 
     .line 240
     .line 241
-    :cond_d
-    invoke-static {v8, v0, v8, v7}, Landroid/support/v4/media/session/a;->N(ILandroidx/compose/runtime/p;ILzh/e;)V
-
     .line 242
+    :goto_c
+    sget-object v11, Landroidx/compose/ui/node/g;->f:Lka/e;
+
     .line 243
     .line 244
-    :cond_e
-    sget-object v7, Landroidx/compose/ui/node/g;->d:Lzh/e;
+    invoke-static {v0, v7, v11}, Landroidx/compose/runtime/o;->a0(Landroidx/compose/runtime/j;Ljava/lang/Object;Lka/e;)V
 
     .line 245
     .line 246
-    invoke-static {v0, v6, v7}, Landroidx/compose/runtime/q;->x(Landroidx/compose/runtime/l;Ljava/lang/Object;Lzh/e;)V
-
     .line 247
+    sget-object v7, Landroidx/compose/ui/node/g;->e:Lka/e;
+
     .line 248
     .line 249
-    sget-object v6, Landroidx/compose/foundation/layout/v;->a:Landroidx/compose/foundation/layout/v;
+    invoke-static {v0, v10, v7}, Landroidx/compose/runtime/o;->a0(Landroidx/compose/runtime/j;Ljava/lang/Object;Lka/e;)V
 
     .line 250
     .line 251
-    shr-int/lit8 v2, v2, 0x6
-
     .line 252
+    sget-object v7, Landroidx/compose/ui/node/g;->g:Lka/e;
+
     .line 253
-    and-int/lit8 v2, v2, 0x70
-
     .line 254
+    iget-boolean v10, v0, Landroidx/compose/runtime/n;->O:Z
+
     .line 255
-    or-int/lit8 v2, v2, 0x6
-
     .line 256
-    .line 257
-    invoke-static {v2}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+    if-nez v10, :cond_11
 
+    .line 257
     .line 258
+    invoke-virtual {v0}, Landroidx/compose/runtime/n;->G()Ljava/lang/Object;
+
     .line 259
     .line 260
-    move-result-object v2
-
     .line 261
-    invoke-interface {p2, v6, v0, v2}, Lzh/f;->invoke(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    move-result-object v10
 
     .line 262
+    invoke-static {v8}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
     .line 263
     .line 264
-    invoke-virtual {v0, v9}, Landroidx/compose/runtime/p;->q(Z)V
-
     .line 265
+    move-result-object v11
+
     .line 266
+    invoke-static {v10, v11}, Lkotlin/jvm/internal/h;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
+
     .line 267
-    move-object v2, v5
-
     .line 268
-    :goto_9
-    invoke-virtual {v0}, Landroidx/compose/runtime/p;->s()Landroidx/compose/runtime/x1;
-
     .line 269
-    .line 270
-    .line 271
-    move-result-object v6
+    move-result v10
 
+    .line 270
+    if-nez v10, :cond_12
+
+    .line 271
     .line 272
-    if-eqz v6, :cond_f
+    :cond_11
+    invoke-static {v8, v0, v8, v7}, Landroidx/appcompat/view/menu/F;->K(ILandroidx/compose/runtime/n;ILka/e;)V
 
     .line 273
     .line 274
-    new-instance v7, Landroidx/compose/foundation/contextmenu/ContextMenuUi_androidKt$ContextMenuColumn$1;
-
     .line 275
-    .line 276
-    move-object v0, v7
+    :cond_12
+    sget-object v7, Landroidx/compose/ui/node/g;->d:Lka/e;
 
+    .line 276
     .line 277
-    move-object v1, p0
+    invoke-static {v0, v6, v7}, Landroidx/compose/runtime/o;->a0(Landroidx/compose/runtime/j;Ljava/lang/Object;Lka/e;)V
 
     .line 278
-    move-object v3, p2
-
     .line 279
-    move/from16 v4, p4
-
     .line 280
+    sget-object v6, Landroidx/compose/foundation/layout/t;->a:Landroidx/compose/foundation/layout/t;
+
     .line 281
-    move/from16 v5, p5
-
     .line 282
-    .line 283
-    invoke-direct/range {v0 .. v5}, Landroidx/compose/foundation/contextmenu/ContextMenuUi_androidKt$ContextMenuColumn$1;-><init>(Landroidx/compose/foundation/contextmenu/b;Landroidx/compose/ui/o;Lzh/f;II)V
+    shr-int/lit8 v2, v2, 0x6
 
+    .line 283
     .line 284
+    and-int/lit8 v2, v2, 0x70
+
     .line 285
     .line 286
-    iput-object v7, v6, Landroidx/compose/runtime/x1;->d:Lzh/e;
+    or-int/lit8 v2, v2, 0x6
 
     .line 287
     .line 288
-    :cond_f
-    return-void
+    invoke-static {v2}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
     .line 289
-    :cond_10
-    invoke-static {}, Lb0/h;->N()V
-
     .line 290
     .line 291
+    move-result-object v2
+
     .line 292
-    const/4 v0, 0x0
+    invoke-interface {v3, v6, v0, v2}, Lka/f;->invoke(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 293
-    throw v0
+    .line 294
+    .line 295
+    invoke-virtual {v0, v9}, Landroidx/compose/runtime/n;->p(Z)V
+
+    .line 296
+    .line 297
+    .line 298
+    move-object v2, v5
+
+    .line 299
+    :goto_d
+    invoke-virtual {v0}, Landroidx/compose/runtime/n;->r()Landroidx/compose/runtime/l0;
+
+    .line 300
+    .line 301
+    .line 302
+    move-result-object v6
+
+    .line 303
+    if-eqz v6, :cond_13
+
+    .line 304
+    .line 305
+    new-instance v7, Landroidx/compose/foundation/contextmenu/ContextMenuUi_androidKt$ContextMenuColumn$1;
+
+    .line 306
+    .line 307
+    move-object v0, v7
+
+    .line 308
+    move-object v1, p0
+
+    .line 309
+    move-object/from16 v3, p2
+
+    .line 310
+    .line 311
+    move/from16 v4, p4
+
+    .line 312
+    .line 313
+    move/from16 v5, p5
+
+    .line 314
+    .line 315
+    invoke-direct/range {v0 .. v5}, Landroidx/compose/foundation/contextmenu/ContextMenuUi_androidKt$ContextMenuColumn$1;-><init>(Landroidx/compose/foundation/contextmenu/b;Landroidx/compose/ui/o;Lka/f;II)V
+
+    .line 316
+    .line 317
+    .line 318
+    iput-object v7, v6, Landroidx/compose/runtime/l0;->d:Lka/e;
+
+    .line 319
+    .line 320
+    :cond_13
+    return-void
 .end method
 
-.method public static final b(Ljava/lang/String;ZLandroidx/compose/foundation/contextmenu/b;Landroidx/compose/ui/o;Lzh/f;Lzh/a;Landroidx/compose/runtime/l;II)V
-    .locals 38
+.method public static final b(Ljava/lang/String;ZLandroidx/compose/foundation/contextmenu/b;Landroidx/compose/ui/o;Lka/f;Lka/a;Landroidx/compose/runtime/j;II)V
+    .locals 33
 
     .line 1
     move-object/from16 v12, p0
@@ -743,581 +813,585 @@
 
     .line 10
     .line 11
-    move-object/from16 v10, p6
+    const/16 v0, 0x10
 
     .line 12
     .line 13
-    check-cast v10, Landroidx/compose/runtime/p;
+    const/16 v1, 0x20
 
     .line 14
     .line 15
-    const v0, 0x2f25fb7f
+    move-object/from16 v10, p6
 
     .line 16
     .line 17
-    .line 18
-    invoke-virtual {v10, v0}, Landroidx/compose/runtime/p;->V(I)Landroidx/compose/runtime/p;
+    check-cast v10, Landroidx/compose/runtime/n;
 
+    .line 18
     .line 19
+    const v2, 0x2f25fb7f
+
     .line 20
     .line 21
-    and-int/lit8 v0, p8, 0x1
-
     .line 22
+    invoke-virtual {v10, v2}, Landroidx/compose/runtime/n;->T(I)Landroidx/compose/runtime/n;
+
     .line 23
-    const/4 v1, 0x4
-
     .line 24
-    if-eqz v0, :cond_0
-
     .line 25
+    const/4 v9, 0x1
+
     .line 26
-    or-int/lit8 v0, v11, 0x6
+    and-int/lit8 v2, p8, 0x1
 
     .line 27
     .line 28
-    goto :goto_1
+    const/4 v3, 0x4
 
     .line 29
-    :cond_0
-    and-int/lit8 v0, v11, 0x6
+    const/4 v4, 0x2
 
     .line 30
+    if-eqz v2, :cond_0
+
     .line 31
-    if-nez v0, :cond_2
-
     .line 32
+    or-int/lit8 v2, v11, 0x6
+
     .line 33
-    invoke-virtual {v10, v12}, Landroidx/compose/runtime/p;->g(Ljava/lang/Object;)Z
-
     .line 34
-    .line 35
-    .line 36
-    move-result v0
+    goto :goto_1
 
+    .line 35
+    :cond_0
+    and-int/lit8 v2, v11, 0x6
+
+    .line 36
     .line 37
-    if-eqz v0, :cond_1
+    if-nez v2, :cond_2
 
     .line 38
     .line 39
-    const/4 v0, 0x4
+    invoke-virtual {v10, v12}, Landroidx/compose/runtime/n;->f(Ljava/lang/Object;)Z
 
     .line 40
-    goto :goto_0
-
     .line 41
-    :cond_1
-    const/4 v0, 0x2
-
     .line 42
-    :goto_0
-    or-int/2addr v0, v11
+    move-result v2
 
     .line 43
-    goto :goto_1
+    if-eqz v2, :cond_1
 
     .line 44
-    :cond_2
-    move v0, v11
-
     .line 45
-    :goto_1
-    and-int/lit8 v3, p8, 0x2
+    const/4 v2, 0x4
 
     .line 46
+    goto :goto_0
+
     .line 47
-    const/16 v4, 0x20
+    :cond_1
+    const/4 v2, 0x2
 
     .line 48
+    :goto_0
+    or-int/2addr v2, v11
+
     .line 49
-    if-eqz v3, :cond_3
+    goto :goto_1
 
     .line 50
+    :cond_2
+    move v2, v11
+
     .line 51
-    or-int/lit8 v0, v0, 0x30
+    :goto_1
+    and-int/lit8 v5, p8, 0x2
 
     .line 52
     .line 53
-    goto :goto_3
+    if-eqz v5, :cond_3
 
     .line 54
-    :cond_3
-    and-int/lit8 v3, v11, 0x30
-
     .line 55
-    .line 56
-    if-nez v3, :cond_5
+    or-int/lit8 v2, v2, 0x30
 
+    .line 56
     .line 57
+    goto :goto_3
+
     .line 58
-    invoke-virtual {v10, v13}, Landroidx/compose/runtime/p;->h(Z)Z
+    :cond_3
+    and-int/lit8 v5, v11, 0x30
 
     .line 59
     .line 60
-    .line 61
-    move-result v3
+    if-nez v5, :cond_5
 
+    .line 61
     .line 62
-    if-eqz v3, :cond_4
+    invoke-virtual {v10, v13}, Landroidx/compose/runtime/n;->g(Z)Z
 
     .line 63
     .line 64
-    const/16 v3, 0x20
-
     .line 65
+    move-result v5
+
     .line 66
-    goto :goto_2
+    if-eqz v5, :cond_4
 
     .line 67
-    :cond_4
-    const/16 v3, 0x10
-
     .line 68
-    .line 69
-    :goto_2
-    or-int/2addr v0, v3
+    const/16 v5, 0x20
 
+    .line 69
     .line 70
-    :cond_5
-    :goto_3
-    and-int/lit8 v3, p8, 0x4
+    goto :goto_2
 
     .line 71
-    .line 72
-    if-eqz v3, :cond_6
+    :cond_4
+    const/16 v5, 0x10
 
+    .line 72
     .line 73
+    :goto_2
+    or-int/2addr v2, v5
+
     .line 74
-    or-int/lit16 v0, v0, 0x180
+    :cond_5
+    :goto_3
+    and-int/lit8 v5, p8, 0x4
 
     .line 75
     .line 76
-    goto :goto_5
+    if-eqz v5, :cond_6
 
     .line 77
-    :cond_6
-    and-int/lit16 v3, v11, 0x180
-
     .line 78
-    .line 79
-    if-nez v3, :cond_8
+    or-int/lit16 v2, v2, 0x180
 
+    .line 79
     .line 80
+    goto :goto_5
+
     .line 81
-    invoke-virtual {v10, v14}, Landroidx/compose/runtime/p;->g(Ljava/lang/Object;)Z
+    :cond_6
+    and-int/lit16 v5, v11, 0x180
 
     .line 82
     .line 83
-    .line 84
-    move-result v3
+    if-nez v5, :cond_8
 
+    .line 84
     .line 85
-    if-eqz v3, :cond_7
+    invoke-virtual {v10, v14}, Landroidx/compose/runtime/n;->f(Ljava/lang/Object;)Z
 
     .line 86
     .line 87
-    const/16 v3, 0x100
-
     .line 88
+    move-result v5
+
     .line 89
-    goto :goto_4
+    if-eqz v5, :cond_7
 
     .line 90
-    :cond_7
-    const/16 v3, 0x80
-
     .line 91
-    .line 92
-    :goto_4
-    or-int/2addr v0, v3
+    const/16 v5, 0x100
 
+    .line 92
     .line 93
-    :cond_8
-    :goto_5
-    and-int/lit8 v3, p8, 0x8
+    goto :goto_4
 
     .line 94
-    .line 95
-    if-eqz v3, :cond_a
+    :cond_7
+    const/16 v5, 0x80
 
+    .line 95
     .line 96
+    :goto_4
+    or-int/2addr v2, v5
+
     .line 97
-    or-int/lit16 v0, v0, 0xc00
+    :cond_8
+    :goto_5
+    and-int/lit8 v5, p8, 0x8
 
     .line 98
     .line 99
-    :cond_9
-    move-object/from16 v5, p3
+    if-eqz v5, :cond_a
 
     .line 100
     .line 101
-    goto :goto_7
+    or-int/lit16 v2, v2, 0xc00
 
     .line 102
-    :cond_a
-    and-int/lit16 v5, v11, 0xc00
-
     .line 103
-    .line 104
-    if-nez v5, :cond_9
+    :cond_9
+    move-object/from16 v6, p3
 
+    .line 104
     .line 105
+    goto :goto_7
+
     .line 106
-    move-object/from16 v5, p3
+    :cond_a
+    and-int/lit16 v6, v11, 0xc00
 
     .line 107
     .line 108
-    invoke-virtual {v10, v5}, Landroidx/compose/runtime/p;->g(Ljava/lang/Object;)Z
+    if-nez v6, :cond_9
 
     .line 109
     .line 110
-    .line 111
-    move-result v6
+    move-object/from16 v6, p3
 
+    .line 111
     .line 112
-    if-eqz v6, :cond_b
+    invoke-virtual {v10, v6}, Landroidx/compose/runtime/n;->f(Ljava/lang/Object;)Z
 
     .line 113
     .line 114
-    const/16 v6, 0x800
-
     .line 115
+    move-result v7
+
     .line 116
-    goto :goto_6
+    if-eqz v7, :cond_b
 
     .line 117
-    :cond_b
-    const/16 v6, 0x400
-
     .line 118
-    .line 119
-    :goto_6
-    or-int/2addr v0, v6
+    const/16 v7, 0x800
 
+    .line 119
     .line 120
-    :goto_7
-    and-int/lit8 v6, p8, 0x10
+    goto :goto_6
 
     .line 121
-    .line 122
-    if-eqz v6, :cond_d
+    :cond_b
+    const/16 v7, 0x400
 
+    .line 122
     .line 123
+    :goto_6
+    or-int/2addr v2, v7
+
     .line 124
-    or-int/lit16 v0, v0, 0x6000
+    :goto_7
+    and-int/lit8 v0, p8, 0x10
 
     .line 125
     .line 126
-    :cond_c
-    move-object/from16 v7, p4
+    if-eqz v0, :cond_d
 
     .line 127
     .line 128
-    goto :goto_9
+    or-int/lit16 v2, v2, 0x6000
 
     .line 129
+    .line 130
+    :cond_c
+    move-object/from16 v7, p4
+
+    .line 131
+    .line 132
+    goto :goto_9
+
+    .line 133
     :cond_d
     and-int/lit16 v7, v11, 0x6000
 
-    .line 130
-    .line 131
-    if-nez v7, :cond_c
-
-    .line 132
-    .line 133
-    move-object/from16 v7, p4
-
     .line 134
     .line 135
-    invoke-virtual {v10, v7}, Landroidx/compose/runtime/p;->i(Ljava/lang/Object;)Z
+    if-nez v7, :cond_c
 
     .line 136
     .line 137
-    .line 138
-    move-result v8
+    move-object/from16 v7, p4
 
+    .line 138
     .line 139
-    if-eqz v8, :cond_e
+    invoke-virtual {v10, v7}, Landroidx/compose/runtime/n;->h(Ljava/lang/Object;)Z
 
     .line 140
     .line 141
-    const/16 v8, 0x4000
-
     .line 142
+    move-result v8
+
     .line 143
-    goto :goto_8
+    if-eqz v8, :cond_e
 
     .line 144
+    .line 145
+    const/16 v8, 0x4000
+
+    .line 146
+    .line 147
+    goto :goto_8
+
+    .line 148
     :cond_e
     const/16 v8, 0x2000
 
-    .line 145
-    .line 146
+    .line 149
+    .line 150
     :goto_8
-    or-int/2addr v0, v8
+    or-int/2addr v2, v8
 
-    .line 147
+    .line 151
     :goto_9
     and-int/lit8 v8, p8, 0x20
 
-    .line 148
-    .line 149
-    const/high16 v9, 0x20000
-
-    .line 150
-    .line 151
-    const/high16 v16, 0x30000
-
     .line 152
     .line 153
-    if-eqz v8, :cond_f
+    const/high16 v9, 0x20000
 
     .line 154
     .line 155
-    or-int v0, v0, v16
+    const/high16 v16, 0x30000
 
     .line 156
     .line 157
-    goto :goto_b
+    if-eqz v8, :cond_f
 
     .line 158
+    .line 159
+    or-int v2, v2, v16
+
+    .line 160
+    .line 161
+    goto :goto_b
+
+    .line 162
     :cond_f
     and-int v8, v11, v16
 
-    .line 159
-    .line 160
-    if-nez v8, :cond_11
-
-    .line 161
-    .line 162
-    invoke-virtual {v10, v15}, Landroidx/compose/runtime/p;->i(Ljava/lang/Object;)Z
-
     .line 163
     .line 164
-    .line 165
-    move-result v8
+    if-nez v8, :cond_11
 
+    .line 165
     .line 166
-    if-eqz v8, :cond_10
+    invoke-virtual {v10, v15}, Landroidx/compose/runtime/n;->h(Ljava/lang/Object;)Z
 
     .line 167
     .line 168
-    const/high16 v8, 0x20000
-
     .line 169
+    move-result v8
+
     .line 170
-    goto :goto_a
+    if-eqz v8, :cond_10
 
     .line 171
+    .line 172
+    const/high16 v8, 0x20000
+
+    .line 173
+    .line 174
+    goto :goto_a
+
+    .line 175
     :cond_10
     const/high16 v8, 0x10000
 
-    .line 172
-    .line 173
+    .line 176
+    .line 177
     :goto_a
-    or-int/2addr v0, v8
+    or-int/2addr v2, v8
 
-    .line 174
+    .line 178
     :cond_11
     :goto_b
     const v8, 0x12493
 
-    .line 175
-    .line 176
-    .line 177
-    and-int/2addr v8, v0
-
-    .line 178
-    const v2, 0x12492
-
     .line 179
     .line 180
     .line 181
-    if-ne v8, v2, :cond_13
+    and-int/2addr v8, v2
 
     .line 182
-    .line 183
-    invoke-virtual {v10}, Landroidx/compose/runtime/p;->y()Z
+    const v4, 0x12492
 
+    .line 183
     .line 184
     .line 185
-    .line 186
-    move-result v2
+    if-ne v8, v4, :cond_13
 
+    .line 186
     .line 187
-    if-nez v2, :cond_12
+    invoke-virtual {v10}, Landroidx/compose/runtime/n;->x()Z
 
     .line 188
     .line 189
-    goto :goto_c
-
     .line 190
-    :cond_12
-    invoke-virtual {v10}, Landroidx/compose/runtime/p;->N()V
+    move-result v4
 
     .line 191
+    if-nez v4, :cond_12
+
     .line 192
     .line 193
-    move-object v4, v5
+    goto :goto_c
 
     .line 194
-    move-object v5, v7
+    :cond_12
+    invoke-virtual {v10}, Landroidx/compose/runtime/n;->L()V
 
     .line 195
-    move-object v12, v10
-
     .line 196
-    goto/16 :goto_18
-
     .line 197
+    move-object v4, v6
+
     .line 198
-    :cond_13
-    :goto_c
-    sget-object v16, Landroidx/compose/ui/l;->c:Landroidx/compose/ui/l;
+    move-object v5, v7
 
     .line 199
+    move-object v0, v10
+
     .line 200
-    if-eqz v3, :cond_14
+    goto/16 :goto_18
 
     .line 201
     .line 202
-    move-object/from16 v8, v16
+    :cond_13
+    :goto_c
+    sget-object v17, Landroidx/compose/ui/l;->a:Landroidx/compose/ui/l;
 
     .line 203
     .line 204
-    goto :goto_d
+    if-eqz v5, :cond_14
 
     .line 205
-    :cond_14
-    move-object v8, v5
-
     .line 206
-    :goto_d
-    if-eqz v6, :cond_15
+    move-object/from16 v8, v17
 
     .line 207
     .line 208
-    const/4 v7, 0x0
+    goto :goto_d
 
     .line 209
-    :cond_15
-    sget-object v3, Landroidx/compose/foundation/contextmenu/f;->f:Landroidx/compose/ui/h;
+    :cond_14
+    move-object v8, v6
 
     .line 210
-    .line 211
-    sget-object v5, Landroidx/compose/foundation/layout/j;->a:Landroidx/compose/foundation/layout/d;
+    :goto_d
+    if-eqz v0, :cond_15
 
+    .line 211
     .line 212
+    const/4 v0, 0x0
+
     .line 213
-    sget v5, Landroidx/compose/foundation/contextmenu/f;->h:F
+    move-object v7, v0
 
     .line 214
-    .line 215
-    invoke-static {v5}, Landroidx/compose/foundation/layout/j;->g(F)Landroidx/compose/foundation/layout/h;
+    :cond_15
+    sget-object v0, Landroidx/compose/foundation/contextmenu/f;->f:Landroidx/compose/ui/h;
 
+    .line 215
     .line 216
+    sget-object v4, Landroidx/compose/foundation/layout/g;->a:Landroidx/compose/foundation/layout/d0;
+
     .line 217
     .line 218
-    move-result-object v6
+    sget v4, Landroidx/compose/foundation/contextmenu/f;->h:F
 
     .line 219
-    and-int/lit8 v2, v0, 0x70
-
     .line 220
-    .line 221
-    if-ne v2, v4, :cond_16
+    invoke-static {v4}, Landroidx/compose/foundation/layout/g;->g(F)Landroidx/compose/foundation/layout/e;
 
+    .line 221
     .line 222
     .line 223
-    const/4 v2, 0x1
+    move-result-object v5
 
     .line 224
-    goto :goto_e
+    and-int/lit8 v6, v2, 0x70
 
     .line 225
-    :cond_16
-    const/4 v2, 0x0
-
     .line 226
-    :goto_e
-    const/high16 v4, 0x70000
+    if-ne v6, v1, :cond_16
 
     .line 227
     .line 228
-    and-int/2addr v4, v0
+    const/4 v1, 0x1
 
     .line 229
-    if-ne v4, v9, :cond_17
+    goto :goto_e
 
     .line 230
+    :cond_16
+    const/4 v1, 0x0
+
     .line 231
-    const/4 v4, 0x1
+    :goto_e
+    const/high16 v6, 0x70000
 
     .line 232
-    goto :goto_f
-
     .line 233
-    :cond_17
-    const/4 v4, 0x0
+    and-int/2addr v6, v2
 
     .line 234
-    :goto_f
-    or-int/2addr v2, v4
+    if-ne v6, v9, :cond_17
 
     .line 235
-    invoke-virtual {v10}, Landroidx/compose/runtime/p;->I()Ljava/lang/Object;
-
     .line 236
+    const/4 v6, 0x1
+
     .line 237
+    goto :goto_f
+
     .line 238
-    move-result-object v4
+    :cond_17
+    const/4 v6, 0x0
 
     .line 239
-    if-nez v2, :cond_18
+    :goto_f
+    or-int/2addr v1, v6
 
     .line 240
-    .line 241
-    sget-object v2, Landroidx/compose/runtime/k;->b:Lxd/e;
+    invoke-virtual {v10}, Landroidx/compose/runtime/n;->G()Ljava/lang/Object;
 
+    .line 241
     .line 242
     .line 243
-    if-ne v4, v2, :cond_19
+    move-result-object v6
 
     .line 244
+    if-nez v1, :cond_18
+
     .line 245
-    :cond_18
-    new-instance v4, Landroidx/compose/foundation/contextmenu/ContextMenuUi_androidKt$ContextMenuItem$1$1;
-
     .line 246
-    .line 247
-    invoke-direct {v4, v13, v15}, Landroidx/compose/foundation/contextmenu/ContextMenuUi_androidKt$ContextMenuItem$1$1;-><init>(ZLzh/a;)V
+    sget-object v1, Landroidx/compose/runtime/i;->a:Landroidx/compose/runtime/T;
 
+    .line 247
     .line 248
+    if-ne v6, v1, :cond_19
+
     .line 249
     .line 250
-    invoke-virtual {v10, v4}, Landroidx/compose/runtime/p;->d0(Ljava/lang/Object;)V
+    :cond_18
+    new-instance v6, Landroidx/compose/foundation/contextmenu/ContextMenuUi_androidKt$ContextMenuItem$1$1;
 
     .line 251
     .line 252
-    .line 253
-    :cond_19
-    check-cast v4, Lzh/a;
+    invoke-direct {v6, v13, v15}, Landroidx/compose/foundation/contextmenu/ContextMenuUi_androidKt$ContextMenuItem$1$1;-><init>(ZLka/a;)V
 
+    .line 253
     .line 254
     .line 255
-    invoke-static {v8, v13, v12, v4, v1}, Landroidx/compose/foundation/d;->j(Landroidx/compose/ui/o;ZLjava/lang/String;Lzh/a;I)Landroidx/compose/ui/o;
+    invoke-virtual {v10, v6}, Landroidx/compose/runtime/n;->b0(Ljava/lang/Object;)V
 
     .line 256
     .line 257
     .line 258
-    move-result-object v1
+    :cond_19
+    check-cast v6, Lka/a;
 
     .line 259
-    sget-object v2, Landroidx/compose/foundation/layout/y0;->a:Landroidx/compose/foundation/layout/FillElement;
-
     .line 260
+    const/4 v1, 0x4
+
     .line 261
-    invoke-interface {v1, v2}, Landroidx/compose/ui/o;->e(Landroidx/compose/ui/o;)Landroidx/compose/ui/o;
+    invoke-static {v8, v13, v12, v6, v1}, Landroidx/compose/foundation/d;->j(Landroidx/compose/ui/o;ZLjava/lang/String;Lka/a;I)Landroidx/compose/ui/o;
 
     .line 262
     .line 263
@@ -1325,33 +1399,31 @@
     move-result-object v1
 
     .line 265
-    sget v2, Landroidx/compose/foundation/contextmenu/f;->a:F
+    sget-object v6, Landroidx/compose/foundation/layout/W;->a:Landroidx/compose/foundation/layout/FillElement;
 
     .line 266
     .line 267
-    sget v4, Landroidx/compose/foundation/contextmenu/f;->b:F
+    invoke-interface {v1, v6}, Landroidx/compose/ui/o;->g(Landroidx/compose/ui/o;)Landroidx/compose/ui/o;
 
     .line 268
     .line 269
-    sget v9, Landroidx/compose/foundation/contextmenu/f;->c:F
-
     .line 270
+    move-result-object v1
+
     .line 271
-    invoke-static {v1, v2, v9, v4, v9}, Landroidx/compose/foundation/layout/y0;->i(Landroidx/compose/ui/o;FFFF)Landroidx/compose/ui/o;
+    sget v6, Landroidx/compose/foundation/contextmenu/f;->a:F
 
     .line 272
     .line 273
-    .line 274
-    move-result-object v1
+    sget v9, Landroidx/compose/foundation/contextmenu/f;->b:F
 
+    .line 274
     .line 275
-    const/4 v2, 0x0
+    sget v3, Landroidx/compose/foundation/contextmenu/f;->c:F
 
     .line 276
-    const/4 v4, 0x2
-
     .line 277
-    invoke-static {v1, v5, v2, v4}, Landroidx/compose/foundation/layout/a;->r(Landroidx/compose/ui/o;FFI)Landroidx/compose/ui/o;
+    invoke-static {v1, v6, v3, v9, v3}, Landroidx/compose/foundation/layout/W;->j(Landroidx/compose/ui/o;FFFF)Landroidx/compose/ui/o;
 
     .line 278
     .line 279
@@ -1359,77 +1431,79 @@
     move-result-object v1
 
     .line 281
-    const/16 v2, 0x36
+    const/4 v3, 0x0
 
     .line 282
+    const/4 v6, 0x2
+
     .line 283
-    invoke-static {v6, v3, v10, v2}, Landroidx/compose/foundation/layout/u0;->a(Landroidx/compose/foundation/layout/g;Landroidx/compose/ui/h;Landroidx/compose/runtime/l;I)Landroidx/compose/foundation/layout/v0;
+    invoke-static {v1, v4, v3, v6}, Landroidx/compose/foundation/layout/a;->s(Landroidx/compose/ui/o;FFI)Landroidx/compose/ui/o;
 
     .line 284
     .line 285
     .line 286
-    move-result-object v2
+    move-result-object v1
 
     .line 287
-    iget v3, v10, Landroidx/compose/runtime/p;->P:I
+    const/16 v3, 0x36
 
     .line 288
     .line 289
-    invoke-virtual {v10}, Landroidx/compose/runtime/p;->n()Landroidx/compose/runtime/q1;
+    invoke-static {v5, v0, v10, v3}, Landroidx/compose/foundation/layout/S;->a(Landroidx/compose/foundation/layout/d;Landroidx/compose/ui/h;Landroidx/compose/runtime/j;I)Landroidx/compose/foundation/layout/T;
 
     .line 290
     .line 291
     .line 292
-    move-result-object v4
+    move-result-object v0
 
     .line 293
-    invoke-static {v10, v1}, Landroidx/compose/ui/a;->c(Landroidx/compose/runtime/l;Landroidx/compose/ui/o;)Landroidx/compose/ui/o;
+    iget v3, v10, Landroidx/compose/runtime/n;->P:I
 
     .line 294
     .line 295
+    invoke-virtual {v10}, Landroidx/compose/runtime/n;->m()Landroidx/compose/runtime/g0;
+
     .line 296
-    move-result-object v1
-
     .line 297
-    sget-object v5, Landroidx/compose/ui/node/h;->y8:Landroidx/compose/ui/node/g;
-
     .line 298
+    move-result-object v4
+
     .line 299
-    invoke-virtual {v5}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+    invoke-static {v10, v1}, Landroidx/compose/ui/a;->d(Landroidx/compose/runtime/j;Landroidx/compose/ui/o;)Landroidx/compose/ui/o;
 
     .line 300
     .line 301
     .line 302
-    sget-object v5, Landroidx/compose/ui/node/g;->b:Lzh/a;
+    move-result-object v1
 
     .line 303
+    sget-object v5, Landroidx/compose/ui/node/h;->A8:Landroidx/compose/ui/node/g;
+
     .line 304
-    iget-object v6, v10, Landroidx/compose/runtime/p;->a:Landroidx/compose/runtime/e;
-
     .line 305
-    .line 306
-    instance-of v6, v6, Landroidx/compose/runtime/e;
+    invoke-virtual {v5}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
+    .line 306
     .line 307
     .line 308
-    if-eqz v6, :cond_26
+    sget-object v5, Landroidx/compose/ui/node/g;->b:Lka/a;
 
     .line 309
     .line 310
-    invoke-virtual {v10}, Landroidx/compose/runtime/p;->X()V
+    invoke-virtual {v10}, Landroidx/compose/runtime/n;->V()V
 
     .line 311
     .line 312
     .line 313
-    iget-boolean v9, v10, Landroidx/compose/runtime/p;->O:Z
+    iget-boolean v6, v10, Landroidx/compose/runtime/n;->O:Z
 
     .line 314
     .line 315
-    if-eqz v9, :cond_1a
+    if-eqz v6, :cond_1a
 
     .line 316
     .line 317
-    invoke-virtual {v10, v5}, Landroidx/compose/runtime/p;->m(Lzh/a;)V
+    invoke-virtual {v10, v5}, Landroidx/compose/runtime/n;->l(Lka/a;)V
 
     .line 318
     .line 319
@@ -1438,51 +1512,51 @@
 
     .line 321
     :cond_1a
-    invoke-virtual {v10}, Landroidx/compose/runtime/p;->g0()V
+    invoke-virtual {v10}, Landroidx/compose/runtime/n;->e0()V
 
     .line 322
     .line 323
     .line 324
     :goto_10
-    sget-object v9, Landroidx/compose/ui/node/g;->f:Lzh/e;
+    sget-object v6, Landroidx/compose/ui/node/g;->f:Lka/e;
 
     .line 325
     .line 326
-    invoke-static {v10, v2, v9}, Landroidx/compose/runtime/q;->x(Landroidx/compose/runtime/l;Ljava/lang/Object;Lzh/e;)V
+    invoke-static {v10, v0, v6}, Landroidx/compose/runtime/o;->a0(Landroidx/compose/runtime/j;Ljava/lang/Object;Lka/e;)V
 
     .line 327
     .line 328
     .line 329
-    sget-object v2, Landroidx/compose/ui/node/g;->e:Lzh/e;
+    sget-object v0, Landroidx/compose/ui/node/g;->e:Lka/e;
 
     .line 330
     .line 331
-    invoke-static {v10, v4, v2}, Landroidx/compose/runtime/q;->x(Landroidx/compose/runtime/l;Ljava/lang/Object;Lzh/e;)V
+    invoke-static {v10, v4, v0}, Landroidx/compose/runtime/o;->a0(Landroidx/compose/runtime/j;Ljava/lang/Object;Lka/e;)V
 
     .line 332
     .line 333
     .line 334
-    sget-object v4, Landroidx/compose/ui/node/g;->g:Lzh/e;
+    sget-object v4, Landroidx/compose/ui/node/g;->g:Lka/e;
 
     .line 335
     .line 336
-    iget-boolean v11, v10, Landroidx/compose/runtime/p;->O:Z
+    iget-boolean v9, v10, Landroidx/compose/runtime/n;->O:Z
 
     .line 337
     .line 338
-    if-nez v11, :cond_1b
+    if-nez v9, :cond_1b
 
     .line 339
     .line 340
-    invoke-virtual {v10}, Landroidx/compose/runtime/p;->I()Ljava/lang/Object;
+    invoke-virtual {v10}, Landroidx/compose/runtime/n;->G()Ljava/lang/Object;
 
     .line 341
     .line 342
     .line 343
-    move-result-object v11
+    move-result-object v9
 
     .line 344
-    move-object/from16 v22, v8
+    move-object/from16 v16, v8
 
     .line 345
     .line 346
@@ -1494,7 +1568,7 @@
     move-result-object v8
 
     .line 350
-    invoke-static {v11, v8}, Lrb/h;->d(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v9, v8}, Lkotlin/jvm/internal/h;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     .line 351
     .line 352
@@ -1510,22 +1584,22 @@
 
     .line 357
     :cond_1b
-    move-object/from16 v22, v8
+    move-object/from16 v16, v8
 
     .line 358
     .line 359
     :goto_11
-    invoke-static {v3, v10, v3, v4}, Landroid/support/v4/media/session/a;->N(ILandroidx/compose/runtime/p;ILzh/e;)V
+    invoke-static {v3, v10, v3, v4}, Landroidx/appcompat/view/menu/F;->K(ILandroidx/compose/runtime/n;ILka/e;)V
 
     .line 360
     .line 361
     .line 362
     :cond_1c
-    sget-object v3, Landroidx/compose/ui/node/g;->d:Lzh/e;
+    sget-object v3, Landroidx/compose/ui/node/g;->d:Lka/e;
 
     .line 363
     .line 364
-    invoke-static {v10, v1, v3}, Landroidx/compose/runtime/q;->x(Landroidx/compose/runtime/l;Ljava/lang/Object;Lzh/e;)V
+    invoke-static {v10, v1, v3}, Landroidx/compose/runtime/o;->a0(Landroidx/compose/runtime/j;Ljava/lang/Object;Lka/e;)V
 
     .line 365
     .line 366
@@ -1534,21 +1608,21 @@
 
     .line 368
     .line 369
-    const v1, 0x210e0ccd
+    const v0, 0x210e0ccd
 
     .line 370
     .line 371
     .line 372
-    invoke-virtual {v10, v1}, Landroidx/compose/runtime/p;->T(I)V
+    invoke-virtual {v10, v0}, Landroidx/compose/runtime/n;->R(I)V
 
     .line 373
     .line 374
     .line 375
-    const/4 v1, 0x0
+    const/4 v0, 0x0
 
     .line 376
     :goto_12
-    invoke-virtual {v10, v1}, Landroidx/compose/runtime/p;->q(Z)V
+    invoke-virtual {v10, v0}, Landroidx/compose/runtime/n;->p(Z)V
 
     .line 377
     .line 378
@@ -1562,32 +1636,32 @@
     .line 381
     .line 382
     .line 383
-    invoke-virtual {v10, v1}, Landroidx/compose/runtime/p;->T(I)V
+    invoke-virtual {v10, v1}, Landroidx/compose/runtime/n;->R(I)V
 
     .line 384
     .line 385
     .line 386
-    sget v20, Landroidx/compose/foundation/contextmenu/f;->j:F
+    sget v21, Landroidx/compose/foundation/contextmenu/f;->j:F
 
     .line 387
     .line 388
-    const/16 v18, 0x0
+    const/16 v22, 0x2
 
     .line 389
     .line 390
-    const/16 v21, 0x2
+    const/16 v19, 0x0
 
     .line 391
     .line 392
-    move/from16 v17, v20
+    move/from16 v18, v21
 
     .line 393
     .line 394
-    move/from16 v19, v20
+    move/from16 v20, v21
 
     .line 395
     .line 396
-    invoke-static/range {v16 .. v21}, Landroidx/compose/foundation/layout/y0;->e(Landroidx/compose/ui/o;FFFFI)Landroidx/compose/ui/o;
+    invoke-static/range {v17 .. v22}, Landroidx/compose/foundation/layout/W;->f(Landroidx/compose/ui/o;FFFFI)Landroidx/compose/ui/o;
 
     .line 397
     .line 398
@@ -1599,10 +1673,10 @@
 
     .line 401
     .line 402
-    const/4 v11, 0x0
+    const/4 v9, 0x0
 
     .line 403
-    invoke-static {v8, v11}, Landroidx/compose/foundation/layout/n;->e(Landroidx/compose/ui/e;Z)Landroidx/compose/ui/layout/m0;
+    invoke-static {v8, v9}, Landroidx/compose/foundation/layout/k;->e(Landroidx/compose/ui/e;Z)Landroidx/compose/ui/layout/J;
 
     .line 404
     .line 405
@@ -1610,19 +1684,19 @@
     move-result-object v8
 
     .line 407
-    iget v11, v10, Landroidx/compose/runtime/p;->P:I
+    iget v9, v10, Landroidx/compose/runtime/n;->P:I
 
     .line 408
     .line 409
-    invoke-virtual {v10}, Landroidx/compose/runtime/p;->n()Landroidx/compose/runtime/q1;
+    invoke-virtual {v10}, Landroidx/compose/runtime/n;->m()Landroidx/compose/runtime/g0;
 
     .line 410
     .line 411
     .line 412
-    move-result-object v12
+    move-result-object v11
 
     .line 413
-    invoke-static {v10, v1}, Landroidx/compose/ui/a;->c(Landroidx/compose/runtime/l;Landroidx/compose/ui/o;)Landroidx/compose/ui/o;
+    invoke-static {v10, v1}, Landroidx/compose/ui/a;->d(Landroidx/compose/runtime/j;Landroidx/compose/ui/o;)Landroidx/compose/ui/o;
 
     .line 414
     .line 415
@@ -1630,373 +1704,371 @@
     move-result-object v1
 
     .line 417
-    if-eqz v6, :cond_25
+    invoke-virtual {v10}, Landroidx/compose/runtime/n;->V()V
 
     .line 418
     .line 419
-    invoke-virtual {v10}, Landroidx/compose/runtime/p;->X()V
-
     .line 420
+    iget-boolean v12, v10, Landroidx/compose/runtime/n;->O:Z
+
     .line 421
     .line 422
-    iget-boolean v6, v10, Landroidx/compose/runtime/p;->O:Z
+    if-eqz v12, :cond_1e
 
     .line 423
     .line 424
-    if-eqz v6, :cond_1e
+    invoke-virtual {v10, v5}, Landroidx/compose/runtime/n;->l(Lka/a;)V
 
     .line 425
     .line 426
-    invoke-virtual {v10, v5}, Landroidx/compose/runtime/p;->m(Lzh/a;)V
-
     .line 427
-    .line 428
-    .line 429
     goto :goto_13
 
-    .line 430
+    .line 428
     :cond_1e
-    invoke-virtual {v10}, Landroidx/compose/runtime/p;->g0()V
+    invoke-virtual {v10}, Landroidx/compose/runtime/n;->e0()V
 
+    .line 429
+    .line 430
     .line 431
+    :goto_13
+    invoke-static {v10, v8, v6}, Landroidx/compose/runtime/o;->a0(Landroidx/compose/runtime/j;Ljava/lang/Object;Lka/e;)V
+
     .line 432
     .line 433
-    :goto_13
-    invoke-static {v10, v8, v9}, Landroidx/compose/runtime/q;->x(Landroidx/compose/runtime/l;Ljava/lang/Object;Lzh/e;)V
-
     .line 434
+    invoke-static {v10, v11, v0}, Landroidx/compose/runtime/o;->a0(Landroidx/compose/runtime/j;Ljava/lang/Object;Lka/e;)V
+
     .line 435
     .line 436
-    invoke-static {v10, v12, v2}, Landroidx/compose/runtime/q;->x(Landroidx/compose/runtime/l;Ljava/lang/Object;Lzh/e;)V
-
     .line 437
+    iget-boolean v0, v10, Landroidx/compose/runtime/n;->O:Z
+
     .line 438
     .line 439
-    iget-boolean v2, v10, Landroidx/compose/runtime/p;->O:Z
+    if-nez v0, :cond_1f
 
     .line 440
     .line 441
-    if-nez v2, :cond_1f
+    invoke-virtual {v10}, Landroidx/compose/runtime/n;->G()Ljava/lang/Object;
 
     .line 442
     .line 443
-    invoke-virtual {v10}, Landroidx/compose/runtime/p;->I()Ljava/lang/Object;
-
     .line 444
+    move-result-object v0
+
     .line 445
+    invoke-static {v9}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
     .line 446
-    move-result-object v2
-
     .line 447
-    invoke-static {v11}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
-
     .line 448
-    .line 449
-    .line 450
     move-result-object v5
 
+    .line 449
+    invoke-static {v0, v5}, Lkotlin/jvm/internal/h;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
+
+    .line 450
     .line 451
-    invoke-static {v2, v5}, Lrb/h;->d(Ljava/lang/Object;Ljava/lang/Object;)Z
-
     .line 452
-    .line 453
-    .line 454
-    move-result v2
+    move-result v0
 
+    .line 453
+    if-nez v0, :cond_20
+
+    .line 454
     .line 455
-    if-nez v2, :cond_20
+    :cond_1f
+    invoke-static {v9, v10, v9, v4}, Landroidx/appcompat/view/menu/F;->K(ILandroidx/compose/runtime/n;ILka/e;)V
 
     .line 456
     .line 457
-    :cond_1f
-    invoke-static {v11, v10, v11, v4}, Landroid/support/v4/media/session/a;->N(ILandroidx/compose/runtime/p;ILzh/e;)V
-
     .line 458
+    :cond_20
+    invoke-static {v10, v1, v3}, Landroidx/compose/runtime/o;->a0(Landroidx/compose/runtime/j;Ljava/lang/Object;Lka/e;)V
+
     .line 459
     .line 460
-    :cond_20
-    invoke-static {v10, v1, v3}, Landroidx/compose/runtime/q;->x(Landroidx/compose/runtime/l;Ljava/lang/Object;Lzh/e;)V
-
     .line 461
+    if-eqz v13, :cond_21
+
     .line 462
     .line 463
-    if-eqz v13, :cond_21
+    iget-wide v0, v14, Landroidx/compose/foundation/contextmenu/b;->c:J
 
     .line 464
     .line 465
-    iget-wide v1, v14, Landroidx/compose/foundation/contextmenu/b;->c:J
-
-    .line 466
-    .line 467
     goto :goto_14
 
-    .line 468
+    .line 466
     :cond_21
-    iget-wide v1, v14, Landroidx/compose/foundation/contextmenu/b;->e:J
+    iget-wide v0, v14, Landroidx/compose/foundation/contextmenu/b;->e:J
 
-    .line 469
-    .line 470
+    .line 467
+    .line 468
     :goto_14
     new-instance v3, Landroidx/compose/ui/graphics/w;
 
+    .line 469
+    .line 470
+    invoke-direct {v3, v0, v1}, Landroidx/compose/ui/graphics/w;-><init>(J)V
+
     .line 471
     .line 472
-    invoke-direct {v3, v1, v2}, Landroidx/compose/ui/graphics/w;-><init>(J)V
-
     .line 473
+    const/4 v0, 0x0
+
     .line 474
+    invoke-static {v0}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
     .line 475
-    const/4 v1, 0x0
-
     .line 476
-    invoke-static {v1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
-
     .line 477
+    move-result-object v1
+
     .line 478
+    invoke-interface {v7, v3, v10, v1}, Lka/f;->invoke(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+
     .line 479
-    move-result-object v2
-
     .line 480
-    invoke-interface {v7, v3, v10, v2}, Lzh/f;->invoke(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
-
     .line 481
+    const/4 v1, 0x1
+
     .line 482
+    invoke-virtual {v10, v1}, Landroidx/compose/runtime/n;->p(Z)V
+
     .line 483
-    const/4 v2, 0x1
-
     .line 484
-    invoke-virtual {v10, v2}, Landroidx/compose/runtime/p;->q(Z)V
-
     .line 485
-    .line 486
-    .line 487
     goto :goto_12
 
-    .line 488
+    .line 486
     :goto_15
     if-eqz v13, :cond_22
 
+    .line 487
+    .line 488
+    iget-wide v0, v14, Landroidx/compose/foundation/contextmenu/b;->b:J
+
     .line 489
     .line 490
-    iget-wide v1, v14, Landroidx/compose/foundation/contextmenu/b;->b:J
+    :goto_16
+    move-wide/from16 v18, v0
 
     .line 491
     .line 492
-    :goto_16
-    move-wide/from16 v24, v1
-
-    .line 493
-    .line 494
     goto :goto_17
 
-    .line 495
+    .line 493
     :cond_22
-    iget-wide v1, v14, Landroidx/compose/foundation/contextmenu/b;->d:J
+    iget-wide v0, v14, Landroidx/compose/foundation/contextmenu/b;->d:J
 
-    .line 496
-    .line 497
+    .line 494
+    .line 495
     goto :goto_16
 
-    .line 498
+    .line 496
     :goto_17
-    sget v34, Landroidx/compose/foundation/contextmenu/f;->g:I
+    new-instance v3, Landroidx/compose/ui/text/I;
+
+    .line 497
+    .line 498
+    sget-wide v20, Landroidx/compose/foundation/contextmenu/f;->k:J
 
     .line 499
     .line 500
-    sget-wide v26, Landroidx/compose/foundation/contextmenu/f;->k:J
+    sget-object v22, Landroidx/compose/foundation/contextmenu/f;->l:Landroidx/compose/ui/text/font/u;
 
     .line 501
     .line 502
-    sget-object v28, Landroidx/compose/foundation/contextmenu/f;->l:Landroidx/compose/ui/text/font/w;
+    sget-wide v25, Landroidx/compose/foundation/contextmenu/f;->n:J
 
     .line 503
     .line 504
-    sget-wide v35, Landroidx/compose/foundation/contextmenu/f;->m:J
+    sget v28, Landroidx/compose/foundation/contextmenu/f;->g:I
 
     .line 505
     .line 506
-    sget-wide v31, Landroidx/compose/foundation/contextmenu/f;->n:J
+    sget-wide v29, Landroidx/compose/foundation/contextmenu/f;->m:J
 
     .line 507
     .line 508
-    new-instance v2, Landroidx/compose/ui/text/i0;
+    const/16 v27, 0x0
 
     .line 509
     .line 510
-    const/16 v29, 0x0
+    const v31, 0xfd7f78
 
     .line 511
     .line 512
-    const/16 v30, 0x0
-
     .line 513
+    const/16 v23, 0x0
+
     .line 514
-    const/16 v33, 0x0
-
     .line 515
-    .line 516
-    const v37, 0xfd7f78
+    const/16 v24, 0x0
 
+    .line 516
     .line 517
+    move-object/from16 v17, v3
+
     .line 518
     .line 519
-    move-object/from16 v23, v2
+    invoke-direct/range {v17 .. v31}, Landroidx/compose/ui/text/I;-><init>(JJLandroidx/compose/ui/text/font/u;Landroidx/compose/ui/text/font/q;Landroidx/compose/ui/text/font/k;JLandroidx/compose/ui/text/style/i;IJI)V
 
     .line 520
     .line 521
-    invoke-direct/range {v23 .. v37}, Landroidx/compose/ui/text/i0;-><init>(JJLandroidx/compose/ui/text/font/w;Landroidx/compose/ui/text/font/s;Landroidx/compose/ui/text/font/m;JLandroidx/compose/ui/text/style/i;IJI)V
-
     .line 522
+    const/high16 v0, 0x3f800000    # 1.0f
+
     .line 523
     .line 524
-    const/high16 v1, 0x3f800000    # 1.0f
+    float-to-double v4, v0
 
     .line 525
-    .line 526
-    float-to-double v3, v1
+    const-wide/16 v8, 0x0
 
+    .line 526
     .line 527
-    const-wide/16 v5, 0x0
+    cmpl-double v1, v4, v8
 
     .line 528
     .line 529
-    cmpl-double v8, v3, v5
+    if-lez v1, :cond_24
 
     .line 530
     .line 531
-    if-lez v8, :cond_24
+    new-instance v1, Landroidx/compose/foundation/layout/LayoutWeightElement;
 
     .line 532
     .line 533
-    new-instance v3, Landroidx/compose/foundation/layout/LayoutWeightElement;
+    const v4, 0x7f7fffff    # Float.MAX_VALUE
 
     .line 534
     .line 535
-    const v4, 0x7f7fffff    # Float.MAX_VALUE
-
     .line 536
+    invoke-static {v0, v4}, Landroid/support/v4/media/session/a;->f(FF)F
+
     .line 537
     .line 538
-    invoke-static {v1, v4}, Lma/a;->m(FF)F
-
     .line 539
+    move-result v0
+
     .line 540
+    const/4 v9, 0x1
+
     .line 541
-    move-result v1
+    invoke-direct {v1, v0, v9}, Landroidx/compose/foundation/layout/LayoutWeightElement;-><init>(FZ)V
 
     .line 542
-    const/4 v11, 0x1
-
     .line 543
-    invoke-direct {v3, v1, v11}, Landroidx/compose/foundation/layout/LayoutWeightElement;-><init>(FZ)V
-
     .line 544
+    and-int/lit8 v0, v2, 0xe
+
     .line 545
     .line 546
-    const/4 v4, 0x0
+    const/high16 v2, 0x180000
 
     .line 547
-    const/4 v5, 0x0
-
     .line 548
-    const/4 v6, 0x0
+    or-int v11, v0, v2
 
     .line 549
-    const/4 v8, 0x1
-
     .line 550
-    const/4 v9, 0x0
+    const/4 v8, 0x0
 
     .line 551
     const/4 v12, 0x0
 
     .line 552
-    and-int/lit8 v0, v0, 0xe
+    const/4 v4, 0x0
 
     .line 553
+    const/4 v5, 0x0
+
     .line 554
-    const/high16 v1, 0x180000
+    const/4 v6, 0x0
 
     .line 555
+    const/16 v17, 0x1
+
     .line 556
-    or-int v16, v0, v1
-
     .line 557
-    .line 558
-    const/16 v17, 0x1b8
+    const/16 v18, 0x1b8
 
+    .line 558
     .line 559
-    .line 560
     move-object/from16 v0, p0
 
+    .line 560
     .line 561
-    .line 562
-    move-object v1, v3
+    move-object v2, v3
 
-    .line 563
+    .line 562
     move-object v3, v4
 
-    .line 564
+    .line 563
     move v4, v5
 
-    .line 565
+    .line 564
     move v5, v6
 
-    .line 566
-    move v6, v8
+    .line 565
+    move/from16 v6, v17
 
+    .line 566
     .line 567
-    move-object/from16 v18, v7
+    move-object/from16 v17, v7
 
     .line 568
     .line 569
-    move v7, v9
+    move v7, v8
 
     .line 570
-    move-object/from16 v19, v22
-
-    .line 571
-    .line 572
     move-object v8, v12
 
-    .line 573
+    .line 571
+    const/4 v12, 0x1
+
+    .line 572
     move-object v9, v10
 
-    .line 574
-    move-object v12, v10
+    .line 573
+    move-object/from16 v32, v10
 
+    .line 574
     .line 575
-    move/from16 v10, v16
+    move v10, v11
 
     .line 576
-    .line 577
-    const/4 v13, 0x1
+    move/from16 v11, v18
 
+    .line 577
     .line 578
-    move/from16 v11, v17
+    invoke-static/range {v0 .. v11}, Landroidx/compose/foundation/text/e;->b(Ljava/lang/String;Landroidx/compose/ui/o;Landroidx/compose/ui/text/I;Lka/c;IZIILandroidx/compose/ui/graphics/y;Landroidx/compose/runtime/j;II)V
 
     .line 579
     .line 580
-    invoke-static/range {v0 .. v11}, Landroidx/compose/foundation/text/e;->b(Ljava/lang/String;Landroidx/compose/ui/o;Landroidx/compose/ui/text/i0;Lzh/c;IZIILandroidx/compose/ui/graphics/y;Landroidx/compose/runtime/l;II)V
-
     .line 581
+    move-object/from16 v0, v32
+
     .line 582
     .line 583
-    invoke-virtual {v12, v13}, Landroidx/compose/runtime/p;->q(Z)V
+    invoke-virtual {v0, v12}, Landroidx/compose/runtime/n;->p(Z)V
 
     .line 584
     .line 585
     .line 586
-    move-object/from16 v5, v18
+    move-object/from16 v4, v16
 
     .line 587
     .line 588
-    move-object/from16 v4, v19
+    move-object/from16 v5, v17
 
     .line 589
     .line 590
     :goto_18
-    invoke-virtual {v12}, Landroidx/compose/runtime/p;->s()Landroidx/compose/runtime/x1;
+    invoke-virtual {v0}, Landroidx/compose/runtime/n;->r()Landroidx/compose/runtime/l0;
 
     .line 591
     .line 592
@@ -2039,12 +2111,12 @@
 
     .line 610
     .line 611
-    invoke-direct/range {v0 .. v8}, Landroidx/compose/foundation/contextmenu/ContextMenuUi_androidKt$ContextMenuItem$3;-><init>(Ljava/lang/String;ZLandroidx/compose/foundation/contextmenu/b;Landroidx/compose/ui/o;Lzh/f;Lzh/a;II)V
+    invoke-direct/range {v0 .. v8}, Landroidx/compose/foundation/contextmenu/ContextMenuUi_androidKt$ContextMenuItem$3;-><init>(Ljava/lang/String;ZLandroidx/compose/foundation/contextmenu/b;Landroidx/compose/ui/o;Lka/f;Lka/a;II)V
 
     .line 612
     .line 613
     .line 614
-    iput-object v10, v9, Landroidx/compose/runtime/x1;->d:Lzh/e;
+    iput-object v10, v9, Landroidx/compose/runtime/l0;->d:Lka/e;
 
     .line 615
     .line 616
@@ -2075,33 +2147,9 @@
     .line 627
     .line 628
     throw v0
-
-    .line 629
-    :cond_25
-    invoke-static {}, Lb0/h;->N()V
-
-    .line 630
-    .line 631
-    .line 632
-    const/4 v0, 0x0
-
-    .line 633
-    throw v0
-
-    .line 634
-    :cond_26
-    const/4 v0, 0x0
-
-    .line 635
-    invoke-static {}, Lb0/h;->N()V
-
-    .line 636
-    .line 637
-    .line 638
-    throw v0
 .end method
 
-.method public static final c(Landroidx/compose/ui/window/t;Lzh/a;Landroidx/compose/ui/o;Landroidx/compose/foundation/contextmenu/b;Lzh/c;Landroidx/compose/runtime/l;II)V
+.method public static final c(Landroidx/compose/ui/window/r;Lka/a;Landroidx/compose/ui/o;Landroidx/compose/foundation/contextmenu/b;Lka/c;Landroidx/compose/runtime/j;II)V
     .locals 15
 
     .line 1
@@ -2121,7 +2169,7 @@
 
     .line 8
     .line 9
-    check-cast v0, Landroidx/compose/runtime/p;
+    check-cast v0, Landroidx/compose/runtime/n;
 
     .line 10
     .line 11
@@ -2130,7 +2178,7 @@
     .line 12
     .line 13
     .line 14
-    invoke-virtual {v0, v1}, Landroidx/compose/runtime/p;->V(I)Landroidx/compose/runtime/p;
+    invoke-virtual {v0, v1}, Landroidx/compose/runtime/n;->T(I)Landroidx/compose/runtime/n;
 
     .line 15
     .line 16
@@ -2168,7 +2216,7 @@
     move-object v1, p0
 
     .line 31
-    invoke-virtual {v0, p0}, Landroidx/compose/runtime/p;->g(Ljava/lang/Object;)Z
+    invoke-virtual {v0, p0}, Landroidx/compose/runtime/n;->f(Ljava/lang/Object;)Z
 
     .line 32
     .line 33
@@ -2238,7 +2286,7 @@
 
     .line 58
     .line 59
-    invoke-virtual {v0, v3}, Landroidx/compose/runtime/p;->i(Ljava/lang/Object;)Z
+    invoke-virtual {v0, v3}, Landroidx/compose/runtime/n;->h(Ljava/lang/Object;)Z
 
     .line 60
     .line 61
@@ -2300,7 +2348,7 @@
 
     .line 85
     .line 86
-    invoke-virtual {v0, v8}, Landroidx/compose/runtime/p;->g(Ljava/lang/Object;)Z
+    invoke-virtual {v0, v8}, Landroidx/compose/runtime/n;->f(Ljava/lang/Object;)Z
 
     .line 87
     .line 88
@@ -2353,7 +2401,7 @@
 
     .line 108
     .line 109
-    invoke-virtual {v0, v4}, Landroidx/compose/runtime/p;->g(Ljava/lang/Object;)Z
+    invoke-virtual {v0, v4}, Landroidx/compose/runtime/n;->f(Ljava/lang/Object;)Z
 
     .line 110
     .line 111
@@ -2407,7 +2455,7 @@
 
     .line 131
     .line 132
-    invoke-virtual {v0, v5}, Landroidx/compose/runtime/p;->i(Ljava/lang/Object;)Z
+    invoke-virtual {v0, v5}, Landroidx/compose/runtime/n;->h(Ljava/lang/Object;)Z
 
     .line 133
     .line 134
@@ -2449,7 +2497,7 @@
 
     .line 149
     .line 150
-    invoke-virtual {v0}, Landroidx/compose/runtime/p;->y()Z
+    invoke-virtual {v0}, Landroidx/compose/runtime/n;->x()Z
 
     .line 151
     .line 152
@@ -2465,7 +2513,7 @@
 
     .line 157
     :cond_f
-    invoke-virtual {v0}, Landroidx/compose/runtime/p;->N()V
+    invoke-virtual {v0}, Landroidx/compose/runtime/n;->L()V
 
     .line 158
     .line 159
@@ -2479,7 +2527,7 @@
 
     .line 162
     .line 163
-    sget-object v7, Landroidx/compose/ui/l;->c:Landroidx/compose/ui/l;
+    sget-object v7, Landroidx/compose/ui/l;->a:Landroidx/compose/ui/l;
 
     .line 164
     .line 165
@@ -2494,7 +2542,7 @@
 
     .line 168
     :goto_b
-    sget-object v9, Landroidx/compose/foundation/contextmenu/k;->a:Landroidx/compose/ui/window/u;
+    sget-object v9, Landroidx/compose/foundation/contextmenu/k;->a:Landroidx/compose/ui/window/s;
 
     .line 169
     .line 170
@@ -2502,7 +2550,7 @@
 
     .line 171
     .line 172
-    invoke-direct {v7, v4, v14, v5}, Landroidx/compose/foundation/contextmenu/ContextMenuUi_androidKt$ContextMenuPopup$2;-><init>(Landroidx/compose/foundation/contextmenu/b;Landroidx/compose/ui/o;Lzh/c;)V
+    invoke-direct {v7, v4, v14, v5}, Landroidx/compose/foundation/contextmenu/ContextMenuUi_androidKt$ContextMenuPopup$2;-><init>(Landroidx/compose/foundation/contextmenu/b;Landroidx/compose/ui/o;Lka/c;)V
 
     .line 173
     .line 174
@@ -2512,7 +2560,7 @@
     .line 176
     .line 177
     .line 178
-    invoke-static {v8, v7, v0}, Landroidx/compose/runtime/internal/c;->b(ILkotlin/jvm/internal/Lambda;Landroidx/compose/runtime/l;)Landroidx/compose/runtime/internal/b;
+    invoke-static {v8, v7, v0}, Landroidx/compose/runtime/internal/b;->d(ILX9/b;Landroidx/compose/runtime/j;)Landroidx/compose/runtime/internal/a;
 
     .line 179
     .line 180
@@ -2549,7 +2597,7 @@
     move-object v11, v0
 
     .line 195
-    invoke-static/range {v7 .. v13}, Landroidx/compose/ui/window/f;->a(Landroidx/compose/ui/window/t;Lzh/a;Landroidx/compose/ui/window/u;Lzh/e;Landroidx/compose/runtime/l;II)V
+    invoke-static/range {v7 .. v13}, Landroidx/compose/ui/window/f;->a(Landroidx/compose/ui/window/r;Lka/a;Landroidx/compose/ui/window/s;Lka/e;Landroidx/compose/runtime/j;II)V
 
     .line 196
     .line 197
@@ -2558,7 +2606,7 @@
 
     .line 199
     :goto_c
-    invoke-virtual {v0}, Landroidx/compose/runtime/p;->s()Landroidx/compose/runtime/x1;
+    invoke-virtual {v0}, Landroidx/compose/runtime/n;->r()Landroidx/compose/runtime/l0;
 
     .line 200
     .line 201
@@ -2603,12 +2651,12 @@
 
     .line 219
     .line 220
-    invoke-direct/range {v0 .. v7}, Landroidx/compose/foundation/contextmenu/ContextMenuUi_androidKt$ContextMenuPopup$3;-><init>(Landroidx/compose/ui/window/t;Lzh/a;Landroidx/compose/ui/o;Landroidx/compose/foundation/contextmenu/b;Lzh/c;II)V
+    invoke-direct/range {v0 .. v7}, Landroidx/compose/foundation/contextmenu/ContextMenuUi_androidKt$ContextMenuPopup$3;-><init>(Landroidx/compose/ui/window/r;Lka/a;Landroidx/compose/ui/o;Landroidx/compose/foundation/contextmenu/b;Lka/c;II)V
 
     .line 221
     .line 222
     .line 223
-    iput-object v10, v9, Landroidx/compose/runtime/x1;->d:Lzh/e;
+    iput-object v10, v9, Landroidx/compose/runtime/l0;->d:Lka/e;
 
     .line 224
     .line 225
@@ -2616,7 +2664,7 @@
     return-void
 .end method
 
-.method public static final d(Landroidx/compose/ui/window/t;Lzh/a;Landroidx/compose/ui/o;Lzh/c;Landroidx/compose/runtime/l;II)V
+.method public static final d(Landroidx/compose/ui/window/r;Lka/a;Landroidx/compose/ui/o;Lka/c;Landroidx/compose/runtime/j;II)V
     .locals 26
 
     .line 1
@@ -2628,7 +2676,7 @@
 
     .line 4
     .line 5
-    check-cast v0, Landroidx/compose/runtime/p;
+    check-cast v0, Landroidx/compose/runtime/n;
 
     .line 6
     .line 7
@@ -2637,7 +2685,7 @@
     .line 8
     .line 9
     .line 10
-    invoke-virtual {v0, v1}, Landroidx/compose/runtime/p;->V(I)Landroidx/compose/runtime/p;
+    invoke-virtual {v0, v1}, Landroidx/compose/runtime/n;->T(I)Landroidx/compose/runtime/n;
 
     .line 11
     .line 12
@@ -2677,7 +2725,7 @@
 
     .line 28
     .line 29
-    invoke-virtual {v0, v1}, Landroidx/compose/runtime/p;->g(Ljava/lang/Object;)Z
+    invoke-virtual {v0, v1}, Landroidx/compose/runtime/n;->f(Ljava/lang/Object;)Z
 
     .line 30
     .line 31
@@ -2748,7 +2796,7 @@
 
     .line 57
     .line 58
-    invoke-virtual {v0, v3}, Landroidx/compose/runtime/p;->i(Ljava/lang/Object;)Z
+    invoke-virtual {v0, v3}, Landroidx/compose/runtime/n;->h(Ljava/lang/Object;)Z
 
     .line 59
     .line 60
@@ -2810,7 +2858,7 @@
 
     .line 84
     .line 85
-    invoke-virtual {v0, v6}, Landroidx/compose/runtime/p;->g(Ljava/lang/Object;)Z
+    invoke-virtual {v0, v6}, Landroidx/compose/runtime/n;->f(Ljava/lang/Object;)Z
 
     .line 86
     .line 87
@@ -2871,7 +2919,7 @@
 
     .line 111
     .line 112
-    invoke-virtual {v0, v14}, Landroidx/compose/runtime/p;->i(Ljava/lang/Object;)Z
+    invoke-virtual {v0, v14}, Landroidx/compose/runtime/n;->h(Ljava/lang/Object;)Z
 
     .line 113
     .line 114
@@ -2913,7 +2961,7 @@
 
     .line 129
     .line 130
-    invoke-virtual {v0}, Landroidx/compose/runtime/p;->y()Z
+    invoke-virtual {v0}, Landroidx/compose/runtime/n;->x()Z
 
     .line 131
     .line 132
@@ -2929,7 +2977,7 @@
 
     .line 137
     :cond_c
-    invoke-virtual {v0}, Landroidx/compose/runtime/p;->N()V
+    invoke-virtual {v0}, Landroidx/compose/runtime/n;->L()V
 
     .line 138
     .line 139
@@ -2947,7 +2995,7 @@
 
     .line 144
     .line 145
-    sget-object v4, Landroidx/compose/ui/l;->c:Landroidx/compose/ui/l;
+    sget-object v4, Landroidx/compose/ui/l;->a:Landroidx/compose/ui/l;
 
     .line 146
     .line 147
@@ -2959,11 +3007,11 @@
 
     .line 149
     :goto_9
-    sget-object v6, Landroidx/compose/ui/platform/AndroidCompositionLocals_androidKt;->b:Landroidx/compose/runtime/e3;
+    sget-object v6, Landroidx/compose/ui/platform/AndroidCompositionLocals_androidKt;->b:Landroidx/compose/runtime/I0;
 
     .line 150
     .line 151
-    invoke-virtual {v0, v6}, Landroidx/compose/runtime/p;->l(Landroidx/compose/runtime/u1;)Ljava/lang/Object;
+    invoke-virtual {v0, v6}, Landroidx/compose/runtime/n;->k(Landroidx/compose/runtime/j0;)Ljava/lang/Object;
 
     .line 152
     .line 153
@@ -2975,11 +3023,11 @@
 
     .line 156
     .line 157
-    sget-object v7, Landroidx/compose/ui/platform/AndroidCompositionLocals_androidKt;->a:Landroidx/compose/runtime/q0;
+    sget-object v7, Landroidx/compose/ui/platform/AndroidCompositionLocals_androidKt;->a:Landroidx/compose/runtime/x;
 
     .line 158
     .line 159
-    invoke-virtual {v0, v7}, Landroidx/compose/runtime/p;->l(Landroidx/compose/runtime/u1;)Ljava/lang/Object;
+    invoke-virtual {v0, v7}, Landroidx/compose/runtime/n;->k(Landroidx/compose/runtime/j0;)Ljava/lang/Object;
 
     .line 160
     .line 161
@@ -2991,7 +3039,7 @@
 
     .line 164
     .line 165
-    invoke-virtual {v0, v6}, Landroidx/compose/runtime/p;->g(Ljava/lang/Object;)Z
+    invoke-virtual {v0, v6}, Landroidx/compose/runtime/n;->f(Ljava/lang/Object;)Z
 
     .line 166
     .line 167
@@ -2999,7 +3047,7 @@
     move-result v8
 
     .line 169
-    invoke-virtual {v0, v7}, Landroidx/compose/runtime/p;->g(Ljava/lang/Object;)Z
+    invoke-virtual {v0, v7}, Landroidx/compose/runtime/n;->f(Ljava/lang/Object;)Z
 
     .line 170
     .line 171
@@ -3010,7 +3058,7 @@
     or-int/2addr v7, v8
 
     .line 174
-    invoke-virtual {v0}, Landroidx/compose/runtime/p;->I()Ljava/lang/Object;
+    invoke-virtual {v0}, Landroidx/compose/runtime/n;->G()Ljava/lang/Object;
 
     .line 175
     .line 176
@@ -3022,7 +3070,7 @@
 
     .line 179
     .line 180
-    sget-object v7, Landroidx/compose/runtime/k;->b:Lxd/e;
+    sget-object v7, Landroidx/compose/runtime/i;->a:Landroidx/compose/runtime/T;
 
     .line 181
     .line 182
@@ -3065,7 +3113,7 @@
     move-result-object v10
 
     .line 202
-    invoke-static {v8, v9}, Landroidx/compose/ui/graphics/f0;->G(J)I
+    invoke-static {v8, v9}, Landroidx/compose/ui/graphics/G;->G(J)I
 
     .line 203
     .line 204
@@ -3102,7 +3150,7 @@
 
     .line 219
     :cond_10
-    invoke-static {v13}, Landroidx/compose/ui/graphics/f0;->c(I)J
+    invoke-static {v13}, Landroidx/compose/ui/graphics/G;->c(I)J
 
     .line 220
     .line 221
@@ -3157,7 +3205,7 @@
 
     .line 246
     .line 247
-    invoke-static {v9, v10}, Landroidx/compose/ui/graphics/f0;->G(J)I
+    invoke-static {v9, v10}, Landroidx/compose/ui/graphics/G;->G(J)I
 
     .line 248
     .line 249
@@ -3237,7 +3285,7 @@
     move-result v6
 
     .line 284
-    invoke-static {v6}, Landroidx/compose/ui/graphics/f0;->c(I)J
+    invoke-static {v6}, Landroidx/compose/ui/graphics/G;->c(I)J
 
     .line 285
     .line 286
@@ -3255,7 +3303,7 @@
 
     .line 291
     .line 292
-    invoke-static {v6, v7}, Landroidx/compose/ui/graphics/f0;->G(J)I
+    invoke-static {v6, v7}, Landroidx/compose/ui/graphics/G;->G(J)I
 
     .line 293
     .line 294
@@ -3325,7 +3373,7 @@
     move-result v6
 
     .line 326
-    invoke-static {v6}, Landroidx/compose/ui/graphics/f0;->c(I)J
+    invoke-static {v6}, Landroidx/compose/ui/graphics/G;->c(I)J
 
     .line 327
     .line 328
@@ -3359,7 +3407,7 @@
     .line 340
     .line 341
     .line 342
-    invoke-virtual {v0, v8}, Landroidx/compose/runtime/p;->d0(Ljava/lang/Object;)V
+    invoke-virtual {v0, v8}, Landroidx/compose/runtime/n;->b0(Ljava/lang/Object;)V
 
     .line 343
     .line 344
@@ -3372,118 +3420,104 @@
 
     .line 347
     .line 348
-    and-int/lit8 v6, v2, 0xe
+    and-int/lit16 v6, v2, 0x3fe
 
     .line 349
     .line 350
-    and-int/lit8 v7, v2, 0x70
+    shl-int/lit8 v2, v2, 0x3
 
     .line 351
     .line 352
-    or-int/2addr v6, v7
+    const v7, 0xe000
 
     .line 353
-    and-int/lit16 v7, v2, 0x380
-
     .line 354
     .line 355
-    or-int/2addr v6, v7
+    and-int/2addr v2, v7
 
     .line 356
-    shl-int/lit8 v2, v2, 0x3
+    or-int v12, v6, v2
 
     .line 357
     .line 358
-    const v7, 0xe000
-
-    .line 359
-    .line 360
-    .line 361
-    and-int/2addr v2, v7
-
-    .line 362
-    or-int v12, v6, v2
-
-    .line 363
-    .line 364
     const/4 v13, 0x0
 
-    .line 365
+    .line 359
     move-object/from16 v6, p0
 
-    .line 366
-    .line 367
+    .line 360
+    .line 361
     move-object/from16 v7, p1
+
+    .line 362
+    .line 363
+    move-object v8, v4
+
+    .line 364
+    move-object/from16 v10, p3
+
+    .line 365
+    .line 366
+    move-object v11, v0
+
+    .line 367
+    invoke-static/range {v6 .. v13}, Landroidx/compose/foundation/contextmenu/k;->c(Landroidx/compose/ui/window/r;Lka/a;Landroidx/compose/ui/o;Landroidx/compose/foundation/contextmenu/b;Lka/c;Landroidx/compose/runtime/j;II)V
 
     .line 368
     .line 369
-    move-object v8, v4
-
     .line 370
-    move-object/from16 v10, p3
+    :goto_f
+    invoke-virtual {v0}, Landroidx/compose/runtime/n;->r()Landroidx/compose/runtime/l0;
 
     .line 371
     .line 372
-    move-object v11, v0
-
     .line 373
-    invoke-static/range {v6 .. v13}, Landroidx/compose/foundation/contextmenu/k;->c(Landroidx/compose/ui/window/t;Lzh/a;Landroidx/compose/ui/o;Landroidx/compose/foundation/contextmenu/b;Lzh/c;Landroidx/compose/runtime/l;II)V
+    move-result-object v7
 
     .line 374
+    if-eqz v7, :cond_18
+
     .line 375
     .line 376
-    :goto_f
-    invoke-virtual {v0}, Landroidx/compose/runtime/p;->s()Landroidx/compose/runtime/x1;
+    new-instance v8, Landroidx/compose/foundation/contextmenu/ContextMenuUi_androidKt$ContextMenuPopup$1;
 
     .line 377
     .line 378
-    .line 379
-    move-result-object v7
-
-    .line 380
-    if-eqz v7, :cond_18
-
-    .line 381
-    .line 382
-    new-instance v8, Landroidx/compose/foundation/contextmenu/ContextMenuUi_androidKt$ContextMenuPopup$1;
-
-    .line 383
-    .line 384
     move-object v0, v8
 
-    .line 385
+    .line 379
     move-object/from16 v1, p0
 
-    .line 386
-    .line 387
+    .line 380
+    .line 381
     move-object/from16 v2, p1
 
-    .line 388
-    .line 389
+    .line 382
+    .line 383
     move-object v3, v4
 
-    .line 390
+    .line 384
     move-object/from16 v4, p3
+
+    .line 385
+    .line 386
+    move/from16 v5, p5
+
+    .line 387
+    .line 388
+    move/from16 v6, p6
+
+    .line 389
+    .line 390
+    invoke-direct/range {v0 .. v6}, Landroidx/compose/foundation/contextmenu/ContextMenuUi_androidKt$ContextMenuPopup$1;-><init>(Landroidx/compose/ui/window/r;Lka/a;Landroidx/compose/ui/o;Lka/c;II)V
 
     .line 391
     .line 392
-    move/from16 v5, p5
-
     .line 393
+    iput-object v8, v7, Landroidx/compose/runtime/l0;->d:Lka/e;
+
     .line 394
-    move/from16 v6, p6
-
     .line 395
-    .line 396
-    invoke-direct/range {v0 .. v6}, Landroidx/compose/foundation/contextmenu/ContextMenuUi_androidKt$ContextMenuPopup$1;-><init>(Landroidx/compose/ui/window/t;Lzh/a;Landroidx/compose/ui/o;Lzh/c;II)V
-
-    .line 397
-    .line 398
-    .line 399
-    iput-object v8, v7, Landroidx/compose/runtime/x1;->d:Lzh/e;
-
-    .line 400
-    .line 401
     :cond_18
     return-void
 .end method

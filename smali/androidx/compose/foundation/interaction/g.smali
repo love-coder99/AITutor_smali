@@ -4,15 +4,15 @@
 
 
 # direct methods
-.method public static final a(Landroidx/compose/foundation/interaction/k;Landroidx/compose/runtime/l;I)Landroidx/compose/runtime/j1;
+.method public static final a(Landroidx/compose/foundation/interaction/k;Landroidx/compose/runtime/j;I)Landroidx/compose/runtime/Z;
     .locals 4
 
     .line 1
-    check-cast p1, Landroidx/compose/runtime/p;
+    check-cast p1, Landroidx/compose/runtime/n;
 
     .line 2
     .line 3
-    invoke-virtual {p1}, Landroidx/compose/runtime/p;->I()Ljava/lang/Object;
+    invoke-virtual {p1}, Landroidx/compose/runtime/n;->G()Ljava/lang/Object;
 
     .line 4
     .line 5
@@ -20,7 +20,7 @@
     move-result-object v0
 
     .line 7
-    sget-object v1, Landroidx/compose/runtime/k;->b:Lxd/e;
+    sget-object v1, Landroidx/compose/runtime/i;->a:Landroidx/compose/runtime/T;
 
     .line 8
     .line 9
@@ -32,11 +32,11 @@
 
     .line 12
     .line 13
-    sget-object v2, Landroidx/compose/runtime/g3;->a:Landroidx/compose/runtime/g3;
+    sget-object v2, Landroidx/compose/runtime/T;->h:Landroidx/compose/runtime/T;
 
     .line 14
     .line 15
-    invoke-static {v0, v2}, Lma/a;->Z(Ljava/lang/Object;Landroidx/compose/runtime/u2;)Landroidx/compose/runtime/ParcelableSnapshotMutableState;
+    invoke-static {v0, v2}, Landroidx/compose/runtime/o;->R(Ljava/lang/Object;Landroidx/compose/runtime/A0;)Landroidx/compose/runtime/ParcelableSnapshotMutableState;
 
     .line 16
     .line 17
@@ -44,13 +44,13 @@
     move-result-object v0
 
     .line 19
-    invoke-virtual {p1, v0}, Landroidx/compose/runtime/p;->d0(Ljava/lang/Object;)V
+    invoke-virtual {p1, v0}, Landroidx/compose/runtime/n;->b0(Ljava/lang/Object;)V
 
     .line 20
     .line 21
     .line 22
     :cond_0
-    check-cast v0, Landroidx/compose/runtime/j1;
+    check-cast v0, Landroidx/compose/runtime/Z;
 
     .line 23
     .line 24
@@ -69,7 +69,7 @@
 
     .line 30
     .line 31
-    invoke-virtual {p1, p0}, Landroidx/compose/runtime/p;->g(Ljava/lang/Object;)Z
+    invoke-virtual {p1, p0}, Landroidx/compose/runtime/n;->f(Ljava/lang/Object;)Z
 
     .line 32
     .line 33
@@ -102,7 +102,7 @@
 
     .line 44
     :goto_0
-    invoke-virtual {p1}, Landroidx/compose/runtime/p;->I()Ljava/lang/Object;
+    invoke-virtual {p1}, Landroidx/compose/runtime/n;->G()Ljava/lang/Object;
 
     .line 45
     .line 46
@@ -126,22 +126,22 @@
     const/4 p2, 0x0
 
     .line 55
-    invoke-direct {v2, p0, v0, p2}, Landroidx/compose/foundation/interaction/FocusInteractionKt$collectIsFocusedAsState$1$1;-><init>(Landroidx/compose/foundation/interaction/k;Landroidx/compose/runtime/j1;Lkotlin/coroutines/Continuation;)V
+    invoke-direct {v2, p0, v0, p2}, Landroidx/compose/foundation/interaction/FocusInteractionKt$collectIsFocusedAsState$1$1;-><init>(Landroidx/compose/foundation/interaction/k;Landroidx/compose/runtime/Z;Lkotlin/coroutines/Continuation;)V
 
     .line 56
     .line 57
     .line 58
-    invoke-virtual {p1, v2}, Landroidx/compose/runtime/p;->d0(Ljava/lang/Object;)V
+    invoke-virtual {p1, v2}, Landroidx/compose/runtime/n;->b0(Ljava/lang/Object;)V
 
     .line 59
     .line 60
     .line 61
     :cond_5
-    check-cast v2, Lzh/e;
+    check-cast v2, Lka/e;
 
     .line 62
     .line 63
-    invoke-static {p0, v2, p1}, Landroidx/compose/runtime/q;->g(Ljava/lang/Object;Lzh/e;Landroidx/compose/runtime/l;)V
+    invoke-static {p1, p0, v2}, Landroidx/compose/runtime/o;->f(Landroidx/compose/runtime/j;Ljava/lang/Object;Lka/e;)V
 
     .line 64
     .line 65

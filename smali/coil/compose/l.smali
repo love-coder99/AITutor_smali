@@ -3,17 +3,17 @@
 .source "SourceFile"
 
 # interfaces
-.implements Landroidx/compose/runtime/c2;
+.implements Landroidx/compose/runtime/o0;
 
 
 # static fields
-.field public static final v:Lzh/c;
+.field public static final v:Lka/c;
 
 
 # instance fields
 .field public g:Lkotlinx/coroutines/internal/e;
 
-.field public final h:Lkotlinx/coroutines/flow/v0;
+.field public final h:Lkotlinx/coroutines/flow/T;
 
 .field public final i:Landroidx/compose/runtime/ParcelableSnapshotMutableState;
 
@@ -25,11 +25,11 @@
 
 .field public m:Landroidx/compose/ui/graphics/painter/b;
 
-.field public n:Lzh/c;
+.field public n:Lka/c;
 
-.field public o:Lzh/c;
+.field public o:Lka/c;
 
-.field public p:Landroidx/compose/ui/layout/j;
+.field public p:Landroidx/compose/ui/layout/h;
 
 .field public q:I
 
@@ -51,14 +51,14 @@
 
     .line 2
     .line 3
-    sput-object v0, Lcoil/compose/l;->v:Lzh/c;
+    sput-object v0, Lcoil/compose/l;->v:Lka/c;
 
     .line 4
     .line 5
     return-void
 .end method
 
-.method public constructor <init>(Ln5/i;Lcoil/g;)V
+.method public constructor <init>(LH2/h;Lcoil/f;)V
     .locals 3
 
     .line 1
@@ -67,7 +67,7 @@
     .line 2
     .line 3
     .line 4
-    new-instance v0, Ln1/g;
+    new-instance v0, Lr0/f;
 
     .line 5
     .line 6
@@ -75,12 +75,12 @@
 
     .line 7
     .line 8
-    invoke-direct {v0, v1, v2}, Ln1/g;-><init>(J)V
+    invoke-direct {v0, v1, v2}, Lr0/f;-><init>(J)V
 
     .line 9
     .line 10
     .line 11
-    invoke-static {v0}, Lkotlinx/coroutines/flow/j;->c(Ljava/lang/Object;)Lkotlinx/coroutines/flow/v0;
+    invoke-static {v0}, Lkotlinx/coroutines/flow/h;->c(Ljava/lang/Object;)Lkotlinx/coroutines/flow/T;
 
     .line 12
     .line 13
@@ -88,18 +88,18 @@
     move-result-object v0
 
     .line 15
-    iput-object v0, p0, Lcoil/compose/l;->h:Lkotlinx/coroutines/flow/v0;
+    iput-object v0, p0, Lcoil/compose/l;->h:Lkotlinx/coroutines/flow/T;
 
     .line 16
     .line 17
-    sget-object v0, Landroidx/compose/runtime/g3;->a:Landroidx/compose/runtime/g3;
+    sget-object v0, Landroidx/compose/runtime/T;->h:Landroidx/compose/runtime/T;
 
     .line 18
     .line 19
     const/4 v1, 0x0
 
     .line 20
-    invoke-static {v1, v0}, Lma/a;->Z(Ljava/lang/Object;Landroidx/compose/runtime/u2;)Landroidx/compose/runtime/ParcelableSnapshotMutableState;
+    invoke-static {v1, v0}, Landroidx/compose/runtime/o;->R(Ljava/lang/Object;Landroidx/compose/runtime/A0;)Landroidx/compose/runtime/ParcelableSnapshotMutableState;
 
     .line 21
     .line 22
@@ -115,7 +115,7 @@
 
     .line 27
     .line 28
-    invoke-static {v2}, Laf/g0;->C(F)Landroidx/compose/runtime/ParcelableSnapshotMutableFloatState;
+    invoke-static {v2}, Landroidx/compose/runtime/o;->P(F)Landroidx/compose/runtime/ParcelableSnapshotMutableFloatState;
 
     .line 29
     .line 30
@@ -127,7 +127,7 @@
 
     .line 33
     .line 34
-    invoke-static {v1, v0}, Lma/a;->Z(Ljava/lang/Object;Landroidx/compose/runtime/u2;)Landroidx/compose/runtime/ParcelableSnapshotMutableState;
+    invoke-static {v1, v0}, Landroidx/compose/runtime/o;->R(Ljava/lang/Object;Landroidx/compose/runtime/A0;)Landroidx/compose/runtime/ParcelableSnapshotMutableState;
 
     .line 35
     .line 36
@@ -147,19 +147,19 @@
 
     .line 43
     .line 44
-    sget-object v2, Lcoil/compose/l;->v:Lzh/c;
+    sget-object v2, Lcoil/compose/l;->v:Lka/c;
 
     .line 45
     .line 46
-    iput-object v2, p0, Lcoil/compose/l;->n:Lzh/c;
+    iput-object v2, p0, Lcoil/compose/l;->n:Lka/c;
 
     .line 47
     .line 48
-    sget-object v2, Landroidx/compose/ui/layout/i;->b:La8/d;
+    sget-object v2, Landroidx/compose/ui/layout/g;->b:Landroidx/compose/ui/layout/P;
 
     .line 49
     .line 50
-    iput-object v2, p0, Lcoil/compose/l;->p:Landroidx/compose/ui/layout/j;
+    iput-object v2, p0, Lcoil/compose/l;->p:Landroidx/compose/ui/layout/h;
 
     .line 51
     .line 52
@@ -170,7 +170,7 @@
 
     .line 54
     .line 55
-    invoke-static {v1, v0}, Lma/a;->Z(Ljava/lang/Object;Landroidx/compose/runtime/u2;)Landroidx/compose/runtime/ParcelableSnapshotMutableState;
+    invoke-static {v1, v0}, Landroidx/compose/runtime/o;->R(Ljava/lang/Object;Landroidx/compose/runtime/A0;)Landroidx/compose/runtime/ParcelableSnapshotMutableState;
 
     .line 56
     .line 57
@@ -182,7 +182,7 @@
 
     .line 60
     .line 61
-    invoke-static {p1, v0}, Lma/a;->Z(Ljava/lang/Object;Landroidx/compose/runtime/u2;)Landroidx/compose/runtime/ParcelableSnapshotMutableState;
+    invoke-static {p1, v0}, Landroidx/compose/runtime/o;->R(Ljava/lang/Object;Landroidx/compose/runtime/A0;)Landroidx/compose/runtime/ParcelableSnapshotMutableState;
 
     .line 62
     .line 63
@@ -194,7 +194,7 @@
 
     .line 66
     .line 67
-    invoke-static {p2, v0}, Lma/a;->Z(Ljava/lang/Object;Landroidx/compose/runtime/u2;)Landroidx/compose/runtime/ParcelableSnapshotMutableState;
+    invoke-static {p2, v0}, Landroidx/compose/runtime/o;->R(Ljava/lang/Object;Landroidx/compose/runtime/A0;)Landroidx/compose/runtime/ParcelableSnapshotMutableState;
 
     .line 68
     .line 69
@@ -226,7 +226,7 @@
 
     .line 5
     .line 6
-    invoke-static {v0, v1}, Lrb/h;->f(Lkotlinx/coroutines/w;Ljava/util/concurrent/CancellationException;)V
+    invoke-static {v0, v1}, Lkotlinx/coroutines/w;->f(Lkotlinx/coroutines/u;Ljava/util/concurrent/CancellationException;)V
 
     .line 7
     .line 8
@@ -240,7 +240,7 @@
 
     .line 12
     .line 13
-    instance-of v2, v0, Landroidx/compose/runtime/c2;
+    instance-of v2, v0, Landroidx/compose/runtime/o0;
 
     .line 14
     .line 15
@@ -251,7 +251,7 @@
     move-object v1, v0
 
     .line 18
-    check-cast v1, Landroidx/compose/runtime/c2;
+    check-cast v1, Landroidx/compose/runtime/o0;
 
     .line 19
     .line 20
@@ -260,7 +260,7 @@
 
     .line 21
     .line 22
-    invoke-interface {v1}, Landroidx/compose/runtime/c2;->a()V
+    invoke-interface {v1}, Landroidx/compose/runtime/o0;->a()V
 
     .line 23
     .line 24
@@ -284,7 +284,7 @@
 
     .line 5
     .line 6
-    invoke-static {v0, v1}, Lrb/h;->f(Lkotlinx/coroutines/w;Ljava/util/concurrent/CancellationException;)V
+    invoke-static {v0, v1}, Lkotlinx/coroutines/w;->f(Lkotlinx/coroutines/u;Ljava/util/concurrent/CancellationException;)V
 
     .line 7
     .line 8
@@ -298,7 +298,7 @@
 
     .line 12
     .line 13
-    instance-of v2, v0, Landroidx/compose/runtime/c2;
+    instance-of v2, v0, Landroidx/compose/runtime/o0;
 
     .line 14
     .line 15
@@ -309,7 +309,7 @@
     move-object v1, v0
 
     .line 18
-    check-cast v1, Landroidx/compose/runtime/c2;
+    check-cast v1, Landroidx/compose/runtime/o0;
 
     .line 19
     .line 20
@@ -318,7 +318,7 @@
 
     .line 21
     .line 22
-    invoke-interface {v1}, Landroidx/compose/runtime/c2;->b()V
+    invoke-interface {v1}, Landroidx/compose/runtime/o0;->b()V
 
     .line 23
     .line 24
@@ -335,7 +335,7 @@
 
     .line 2
     .line 3
-    invoke-virtual {v0, p1}, Landroidx/compose/runtime/n2;->l(F)V
+    invoke-virtual {v0, p1}, Landroidx/compose/runtime/ParcelableSnapshotMutableFloatState;->l(F)V
 
     .line 4
     .line 5
@@ -343,24 +343,8 @@
     return-void
 .end method
 
-.method public final d(Landroidx/compose/ui/graphics/x;)V
-    .locals 1
-
-    .line 1
-    iget-object v0, p0, Lcoil/compose/l;->k:Landroidx/compose/runtime/ParcelableSnapshotMutableState;
-
-    .line 2
-    .line 3
-    invoke-virtual {v0, p1}, Landroidx/compose/runtime/t2;->setValue(Ljava/lang/Object;)V
-
-    .line 4
-    .line 5
-    .line 6
-    return-void
-.end method
-
-.method public final e()V
-    .locals 6
+.method public final d()V
+    .locals 4
 
     .line 1
     iget-object v0, p0, Lcoil/compose/l;->g:Lkotlinx/coroutines/internal/e;
@@ -375,7 +359,7 @@
 
     .line 6
     :cond_0
-    invoke-static {}, Ljb/a;->a()Lkotlinx/coroutines/r1;
+    invoke-static {}, Lkotlinx/coroutines/w;->d()Lkotlinx/coroutines/s0;
 
     .line 7
     .line 8
@@ -383,11 +367,11 @@
     move-result-object v0
 
     .line 10
-    sget-object v1, Lkotlinx/coroutines/h0;->a:Lii/e;
+    sget-object v1, Lkotlinx/coroutines/F;->a:Lva/e;
 
     .line 11
     .line 12
-    sget-object v1, Lkotlinx/coroutines/internal/m;->a:Lkotlinx/coroutines/k1;
+    sget-object v1, Lkotlinx/coroutines/internal/m;->a:Lkotlinx/coroutines/l0;
 
     .line 13
     .line 14
@@ -399,7 +383,7 @@
 
     .line 17
     .line 18
-    invoke-static {v0, v1}, Lkotlin/coroutines/f;->a(Lkotlin/coroutines/i;Lkotlin/coroutines/i;)Lkotlin/coroutines/i;
+    invoke-static {v0, v1}, Lcom/facebook/appevents/n;->m(Lba/g;Lba/g;)Lba/g;
 
     .line 19
     .line 20
@@ -407,7 +391,7 @@
     move-result-object v0
 
     .line 22
-    invoke-static {v0}, Lrb/h;->a(Lkotlin/coroutines/i;)Lkotlinx/coroutines/internal/e;
+    invoke-static {v0}, Lkotlinx/coroutines/w;->b(Lba/g;)Lkotlinx/coroutines/internal/e;
 
     .line 23
     .line 24
@@ -423,7 +407,7 @@
 
     .line 29
     .line 30
-    instance-of v2, v1, Landroidx/compose/runtime/c2;
+    instance-of v2, v1, Landroidx/compose/runtime/o0;
 
     .line 31
     .line 32
@@ -434,7 +418,7 @@
 
     .line 34
     .line 35
-    check-cast v1, Landroidx/compose/runtime/c2;
+    check-cast v1, Landroidx/compose/runtime/o0;
 
     .line 36
     .line 37
@@ -450,7 +434,7 @@
 
     .line 40
     .line 41
-    invoke-interface {v1}, Landroidx/compose/runtime/c2;->e()V
+    invoke-interface {v1}, Landroidx/compose/runtime/o0;->d()V
 
     .line 42
     .line 43
@@ -468,7 +452,7 @@
 
     .line 49
     .line 50
-    invoke-virtual {v0}, Landroidx/compose/runtime/t2;->getValue()Ljava/lang/Object;
+    invoke-virtual {v0}, Landroidx/compose/runtime/ParcelableSnapshotMutableState;->getValue()Ljava/lang/Object;
 
     .line 51
     .line 52
@@ -476,11 +460,11 @@
     move-result-object v0
 
     .line 54
-    check-cast v0, Ln5/i;
+    check-cast v0, LH2/h;
 
     .line 55
     .line 56
-    invoke-static {v0}, Ln5/i;->a(Ln5/i;)Ln5/g;
+    invoke-static {v0}, LH2/h;->a(LH2/h;)LH2/g;
 
     .line 57
     .line 58
@@ -492,7 +476,7 @@
 
     .line 61
     .line 62
-    invoke-virtual {v1}, Landroidx/compose/runtime/t2;->getValue()Ljava/lang/Object;
+    invoke-virtual {v1}, Landroidx/compose/runtime/ParcelableSnapshotMutableState;->getValue()Ljava/lang/Object;
 
     .line 63
     .line 64
@@ -500,7 +484,7 @@
     move-result-object v1
 
     .line 66
-    check-cast v1, Lcoil/g;
+    check-cast v1, Lcoil/f;
 
     .line 67
     .line 68
@@ -508,19 +492,19 @@
 
     .line 69
     .line 70
-    iget-object v1, v1, Lcoil/i;->b:Ln5/b;
+    iget-object v1, v1, Lcoil/i;->b:LH2/b;
 
     .line 71
     .line 72
-    iput-object v1, v0, Ln5/g;->b:Ln5/b;
+    iput-object v1, v0, LH2/g;->b:LH2/b;
 
     .line 73
     .line 74
-    iput-object v3, v0, Ln5/g;->O:Lcoil/size/Scale;
+    iput-object v3, v0, LH2/g;->q:Lcoil/size/Scale;
 
     .line 75
     .line 76
-    invoke-virtual {v0}, Ln5/g;->a()Ln5/i;
+    invoke-virtual {v0}, LH2/g;->a()LH2/h;
 
     .line 77
     .line 78
@@ -532,74 +516,78 @@
 
     .line 81
     .line 82
-    iget-object v2, v0, Ln5/i;->M:Ln5/b;
+    iget-object v0, v0, LH2/h;->z:LH2/b;
 
     .line 83
     .line 84
-    iget-object v2, v2, Ln5/b;->j:Landroid/graphics/drawable/Drawable;
+    iget-object v0, v0, LH2/b;->j:Landroid/graphics/drawable/Drawable;
 
     .line 85
     .line 86
-    iget-object v4, v0, Ln5/i;->G:Landroid/graphics/drawable/Drawable;
+    sget-object v2, Lcoil/util/e;->a:LH2/b;
 
     .line 87
     .line 88
-    iget-object v5, v0, Ln5/i;->F:Ljava/lang/Integer;
+    if-eqz v0, :cond_3
 
     .line 89
     .line 90
-    invoke-static {v0, v4, v5, v2}, Lcoil/util/e;->b(Ln5/i;Landroid/graphics/drawable/Drawable;Ljava/lang/Integer;Landroid/graphics/drawable/Drawable;)Landroid/graphics/drawable/Drawable;
+    invoke-virtual {p0, v0}, Lcoil/compose/l;->j(Landroid/graphics/drawable/Drawable;)Landroidx/compose/ui/graphics/painter/b;
 
     .line 91
     .line 92
     .line 93
-    move-result-object v0
-
-    .line 94
-    if-eqz v0, :cond_3
-
-    .line 95
-    .line 96
-    invoke-virtual {p0, v0}, Lcoil/compose/l;->j(Landroid/graphics/drawable/Drawable;)Landroidx/compose/ui/graphics/painter/b;
-
-    .line 97
-    .line 98
-    .line 99
     move-result-object v3
 
-    .line 100
+    .line 94
     :cond_3
     invoke-direct {v1, v3}, Lcoil/compose/e;-><init>(Landroidx/compose/ui/graphics/painter/b;)V
 
+    .line 95
+    .line 96
+    .line 97
+    invoke-virtual {p0, v1}, Lcoil/compose/l;->k(Lcoil/compose/g;)V
+
+    .line 98
+    .line 99
+    .line 100
+    return-void
+
     .line 101
+    :cond_4
+    new-instance v1, Lcoil/compose/AsyncImagePainter$onRemembered$1;
+
     .line 102
     .line 103
-    invoke-virtual {p0, v1}, Lcoil/compose/l;->k(Lcoil/compose/g;)V
+    invoke-direct {v1, p0, v3}, Lcoil/compose/AsyncImagePainter$onRemembered$1;-><init>(Lcoil/compose/l;Lkotlin/coroutines/Continuation;)V
 
     .line 104
     .line 105
     .line 106
-    return-void
+    const/4 v2, 0x3
 
     .line 107
-    :cond_4
-    new-instance v1, Lcoil/compose/AsyncImagePainter$onRemembered$1;
+    invoke-static {v0, v3, v3, v1, v2}, Lkotlinx/coroutines/w;->w(Lkotlinx/coroutines/u;Lba/g;Lkotlinx/coroutines/CoroutineStart;Lka/e;I)Lkotlinx/coroutines/r0;
 
     .line 108
     .line 109
-    invoke-direct {v1, p0, v3}, Lcoil/compose/AsyncImagePainter$onRemembered$1;-><init>(Lcoil/compose/l;Lkotlin/coroutines/Continuation;)V
-
     .line 110
-    .line 111
-    .line 112
-    const/4 v2, 0x3
+    return-void
+.end method
 
-    .line 113
-    invoke-static {v0, v3, v3, v1, v2}, Lf7/l;->D(Lkotlinx/coroutines/w;Lkotlin/coroutines/g;Lkotlinx/coroutines/CoroutineStart;Lzh/e;I)Lkotlinx/coroutines/q1;
+.method public final e(Landroidx/compose/ui/graphics/x;)V
+    .locals 1
 
-    .line 114
-    .line 115
-    .line 116
+    .line 1
+    iget-object v0, p0, Lcoil/compose/l;->k:Landroidx/compose/runtime/ParcelableSnapshotMutableState;
+
+    .line 2
+    .line 3
+    invoke-virtual {v0, p1}, Landroidx/compose/runtime/ParcelableSnapshotMutableState;->setValue(Ljava/lang/Object;)V
+
+    .line 4
+    .line 5
+    .line 6
     return-void
 .end method
 
@@ -611,7 +599,7 @@
 
     .line 2
     .line 3
-    invoke-virtual {v0}, Landroidx/compose/runtime/t2;->getValue()Ljava/lang/Object;
+    invoke-virtual {v0}, Landroidx/compose/runtime/ParcelableSnapshotMutableState;->getValue()Ljava/lang/Object;
 
     .line 4
     .line 5
@@ -650,11 +638,11 @@
     return-wide v0
 .end method
 
-.method public final i(Lo1/h;)V
+.method public final i(Ls0/e;)V
     .locals 7
 
     .line 1
-    invoke-interface {p1}, Lo1/h;->e()J
+    invoke-interface {p1}, Ls0/e;->g()J
 
     .line 2
     .line 3
@@ -662,94 +650,102 @@
     move-result-wide v0
 
     .line 5
-    new-instance v2, Ln1/g;
+    new-instance v2, Lr0/f;
 
     .line 6
     .line 7
-    invoke-direct {v2, v0, v1}, Ln1/g;-><init>(J)V
+    invoke-direct {v2, v0, v1}, Lr0/f;-><init>(J)V
 
     .line 8
     .line 9
     .line 10
-    iget-object v0, p0, Lcoil/compose/l;->h:Lkotlinx/coroutines/flow/v0;
+    iget-object v0, p0, Lcoil/compose/l;->h:Lkotlinx/coroutines/flow/T;
 
     .line 11
     .line 12
-    invoke-virtual {v0, v2}, Lkotlinx/coroutines/flow/v0;->l(Ljava/lang/Object;)V
+    invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
     .line 13
     .line 14
     .line 15
-    iget-object v0, p0, Lcoil/compose/l;->i:Landroidx/compose/runtime/ParcelableSnapshotMutableState;
+    const/4 v1, 0x0
 
     .line 16
-    .line 17
-    invoke-virtual {v0}, Landroidx/compose/runtime/t2;->getValue()Ljava/lang/Object;
+    invoke-virtual {v0, v1, v2}, Lkotlinx/coroutines/flow/T;->m(Ljava/lang/Object;Ljava/lang/Object;)Z
 
+    .line 17
     .line 18
     .line 19
-    .line 20
-    move-result-object v0
+    iget-object v0, p0, Lcoil/compose/l;->i:Landroidx/compose/runtime/ParcelableSnapshotMutableState;
 
+    .line 20
     .line 21
-    move-object v1, v0
+    invoke-virtual {v0}, Landroidx/compose/runtime/ParcelableSnapshotMutableState;->getValue()Ljava/lang/Object;
 
     .line 22
-    check-cast v1, Landroidx/compose/ui/graphics/painter/b;
-
     .line 23
     .line 24
-    if-eqz v1, :cond_0
+    move-result-object v0
 
     .line 25
+    move-object v1, v0
+
     .line 26
-    invoke-interface {p1}, Lo1/h;->e()J
+    check-cast v1, Landroidx/compose/ui/graphics/painter/b;
 
     .line 27
     .line 28
-    .line 29
-    move-result-wide v3
+    if-eqz v1, :cond_0
 
+    .line 29
     .line 30
-    iget-object v0, p0, Lcoil/compose/l;->j:Landroidx/compose/runtime/ParcelableSnapshotMutableFloatState;
+    invoke-interface {p1}, Ls0/e;->g()J
 
     .line 31
     .line 32
-    invoke-virtual {v0}, Landroidx/compose/runtime/n2;->k()F
-
     .line 33
-    .line 34
-    .line 35
-    move-result v5
+    move-result-wide v3
 
+    .line 34
+    iget-object v0, p0, Lcoil/compose/l;->j:Landroidx/compose/runtime/ParcelableSnapshotMutableFloatState;
+
+    .line 35
     .line 36
-    iget-object v0, p0, Lcoil/compose/l;->k:Landroidx/compose/runtime/ParcelableSnapshotMutableState;
+    invoke-virtual {v0}, Landroidx/compose/runtime/ParcelableSnapshotMutableFloatState;->k()F
 
     .line 37
     .line 38
-    invoke-virtual {v0}, Landroidx/compose/runtime/t2;->getValue()Ljava/lang/Object;
-
     .line 39
-    .line 40
-    .line 41
-    move-result-object v0
+    move-result v5
 
+    .line 40
+    iget-object v0, p0, Lcoil/compose/l;->k:Landroidx/compose/runtime/ParcelableSnapshotMutableState;
+
+    .line 41
     .line 42
-    move-object v6, v0
+    invoke-virtual {v0}, Landroidx/compose/runtime/ParcelableSnapshotMutableState;->getValue()Ljava/lang/Object;
 
     .line 43
-    check-cast v6, Landroidx/compose/ui/graphics/x;
-
     .line 44
     .line 45
-    move-object v2, p1
+    move-result-object v0
 
     .line 46
-    invoke-virtual/range {v1 .. v6}, Landroidx/compose/ui/graphics/painter/b;->g(Lo1/h;JFLandroidx/compose/ui/graphics/x;)V
+    move-object v6, v0
 
     .line 47
+    check-cast v6, Landroidx/compose/ui/graphics/x;
+
     .line 48
     .line 49
+    move-object v2, p1
+
+    .line 50
+    invoke-virtual/range {v1 .. v6}, Landroidx/compose/ui/graphics/painter/b;->g(Ls0/e;JFLandroidx/compose/ui/graphics/x;)V
+
+    .line 51
+    .line 52
+    .line 53
     :cond_0
     return-void
 .end method
@@ -791,42 +787,42 @@
 
     .line 17
     .line 18
-    const-wide/16 v2, 0x0
+    invoke-virtual {p1}, Landroid/graphics/Bitmap;->getWidth()I
 
     .line 19
     .line 20
-    invoke-virtual {p1}, Landroid/graphics/Bitmap;->getWidth()I
-
     .line 21
-    .line 22
-    .line 23
     move-result v0
 
-    .line 24
+    .line 22
     invoke-virtual {p1}, Landroid/graphics/Bitmap;->getHeight()I
 
+    .line 23
+    .line 24
     .line 25
-    .line 26
-    .line 27
     move-result p1
 
-    .line 28
-    invoke-static {v0, p1}, Lv5/a;->b(II)J
+    .line 26
+    invoke-static {v0, p1}, Lc4/s;->a(II)J
 
+    .line 27
+    .line 28
     .line 29
-    .line 30
-    .line 31
     move-result-wide v4
 
-    .line 32
+    .line 30
     new-instance p1, Landroidx/compose/ui/graphics/painter/a;
+
+    .line 31
+    .line 32
+    const-wide/16 v2, 0x0
 
     .line 33
     .line 34
     move-object v0, p1
 
     .line 35
-    invoke-direct/range {v0 .. v5}, Landroidx/compose/ui/graphics/painter/a;-><init>(Landroidx/compose/ui/graphics/i0;JJ)V
+    invoke-direct/range {v0 .. v5}, Landroidx/compose/ui/graphics/painter/a;-><init>(Landroidx/compose/ui/graphics/J;JJ)V
 
     .line 36
     .line 37
@@ -871,11 +867,11 @@
 
     .line 2
     .line 3
-    iget-object v1, p0, Lcoil/compose/l;->n:Lzh/c;
+    iget-object v1, p0, Lcoil/compose/l;->n:Lka/c;
 
     .line 4
     .line 5
-    invoke-interface {v1, p1}, Lzh/c;->invoke(Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-interface {v1, p1}, Lka/c;->invoke(Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 6
     .line 7
@@ -895,7 +891,7 @@
 
     .line 14
     .line 15
-    invoke-virtual {v1, p1}, Landroidx/compose/runtime/t2;->setValue(Ljava/lang/Object;)V
+    invoke-virtual {v1, p1}, Landroidx/compose/runtime/ParcelableSnapshotMutableState;->setValue(Ljava/lang/Object;)V
 
     .line 16
     .line 17
@@ -918,7 +914,7 @@
 
     .line 25
     .line 26
-    iget-object v1, v1, Lcoil/compose/f;->b:Ln5/o;
+    iget-object v1, v1, Lcoil/compose/f;->b:LH2/n;
 
     .line 27
     .line 28
@@ -941,12 +937,12 @@
 
     .line 35
     .line 36
-    iget-object v1, v1, Lcoil/compose/d;->b:Ln5/d;
+    iget-object v1, v1, Lcoil/compose/d;->b:LH2/d;
 
     .line 37
     .line 38
     :goto_0
-    invoke-virtual {v1}, Ln5/j;->b()Ln5/i;
+    invoke-virtual {v1}, LH2/i;->b()LH2/h;
 
     .line 39
     .line 40
@@ -954,7 +950,7 @@
     move-result-object v3
 
     .line 42
-    iget-object v3, v3, Ln5/i;->m:Lq5/e;
+    iget-object v3, v3, LH2/h;->g:LJ2/e;
 
     .line 43
     .line 44
@@ -962,7 +958,7 @@
 
     .line 45
     .line 46
-    invoke-interface {v3, v4, v1}, Lq5/e;->a(Lcoil/compose/m;Ln5/j;)Lq5/f;
+    invoke-interface {v3, v4, v1}, LJ2/e;->a(Lcoil/compose/m;LH2/i;)LJ2/f;
 
     .line 47
     .line 48
@@ -970,7 +966,7 @@
     move-result-object v3
 
     .line 50
-    instance-of v4, v3, Lq5/b;
+    instance-of v4, v3, LJ2/b;
 
     .line 51
     .line 52
@@ -1013,72 +1009,72 @@
     move-result-object v8
 
     .line 69
-    iget-object v9, p0, Lcoil/compose/l;->p:Landroidx/compose/ui/layout/j;
+    iget-object v9, p0, Lcoil/compose/l;->p:Landroidx/compose/ui/layout/h;
 
     .line 70
     .line 71
-    check-cast v3, Lq5/b;
+    check-cast v3, LJ2/b;
 
     .line 72
     .line 73
-    iget v10, v3, Lq5/b;->c:I
+    instance-of v4, v1, LH2/n;
 
     .line 74
     .line 75
-    instance-of v4, v1, Ln5/o;
+    if-eqz v4, :cond_3
 
     .line 76
     .line 77
-    if-eqz v4, :cond_3
+    check-cast v1, LH2/n;
 
     .line 78
     .line 79
-    check-cast v1, Ln5/o;
+    iget-boolean v1, v1, LH2/n;->g:Z
 
     .line 80
     .line 81
-    iget-boolean v1, v1, Ln5/o;->g:Z
+    if-nez v1, :cond_2
 
     .line 82
     .line 83
-    if-nez v1, :cond_2
-
-    .line 84
-    .line 85
     goto :goto_2
 
-    .line 86
+    .line 84
     :cond_2
     const/4 v1, 0x0
 
-    .line 87
+    .line 85
     const/4 v11, 0x0
 
-    .line 88
+    .line 86
     goto :goto_3
 
-    .line 89
+    .line 87
     :cond_3
     :goto_2
     const/4 v1, 0x1
 
-    .line 90
+    .line 88
     const/4 v11, 0x1
 
-    .line 91
+    .line 89
     :goto_3
-    iget-boolean v12, v3, Lq5/b;->d:Z
+    new-instance v1, Lcoil/compose/r;
+
+    .line 90
+    .line 91
+    iget-boolean v12, v3, LJ2/b;->d:Z
 
     .line 92
     .line 93
-    new-instance v1, Lcoil/compose/r;
+    iget v10, v3, LJ2/b;->c:I
 
     .line 94
     .line 95
     move-object v6, v1
 
     .line 96
-    invoke-direct/range {v6 .. v12}, Lcoil/compose/r;-><init>(Landroidx/compose/ui/graphics/painter/b;Landroidx/compose/ui/graphics/painter/b;Landroidx/compose/ui/layout/j;IZZ)V
+    invoke-direct/range {v6 .. v12}, Lcoil/compose/r;-><init>(Landroidx/compose/ui/graphics/painter/b;Landroidx/compose/ui/graphics/painter/b;Landroidx/compose/ui/layout/h;IZZ)V
 
     .line 97
     .line 98
@@ -1116,7 +1112,7 @@
 
     .line 111
     .line 112
-    invoke-virtual {v3, v1}, Landroidx/compose/runtime/t2;->setValue(Ljava/lang/Object;)V
+    invoke-virtual {v3, v1}, Landroidx/compose/runtime/ParcelableSnapshotMutableState;->setValue(Ljava/lang/Object;)V
 
     .line 113
     .line 114
@@ -1157,7 +1153,7 @@
     move-result-object v0
 
     .line 133
-    instance-of v1, v0, Landroidx/compose/runtime/c2;
+    instance-of v1, v0, Landroidx/compose/runtime/o0;
 
     .line 134
     .line 135
@@ -1165,7 +1161,7 @@
 
     .line 136
     .line 137
-    check-cast v0, Landroidx/compose/runtime/c2;
+    check-cast v0, Landroidx/compose/runtime/o0;
 
     .line 138
     .line 139
@@ -1181,7 +1177,7 @@
 
     .line 142
     .line 143
-    invoke-interface {v0}, Landroidx/compose/runtime/c2;->b()V
+    invoke-interface {v0}, Landroidx/compose/runtime/o0;->b()V
 
     .line 144
     .line 145
@@ -1195,7 +1191,7 @@
     move-result-object v0
 
     .line 150
-    instance-of v1, v0, Landroidx/compose/runtime/c2;
+    instance-of v1, v0, Landroidx/compose/runtime/o0;
 
     .line 151
     .line 152
@@ -1206,7 +1202,7 @@
     move-object v2, v0
 
     .line 155
-    check-cast v2, Landroidx/compose/runtime/c2;
+    check-cast v2, Landroidx/compose/runtime/o0;
 
     .line 156
     .line 157
@@ -1215,13 +1211,13 @@
 
     .line 158
     .line 159
-    invoke-interface {v2}, Landroidx/compose/runtime/c2;->e()V
+    invoke-interface {v2}, Landroidx/compose/runtime/o0;->d()V
 
     .line 160
     .line 161
     .line 162
     :cond_9
-    iget-object v0, p0, Lcoil/compose/l;->o:Lzh/c;
+    iget-object v0, p0, Lcoil/compose/l;->o:Lka/c;
 
     .line 163
     .line 164
@@ -1229,7 +1225,7 @@
 
     .line 165
     .line 166
-    invoke-interface {v0, p1}, Lzh/c;->invoke(Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-interface {v0, p1}, Lka/c;->invoke(Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 167
     .line 168

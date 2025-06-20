@@ -77,10 +77,10 @@
 
     goto :goto_0
 
+    .line 6
     :cond_2
     iget-object p1, p0, Lcom/apm/insight/runtime/a/c;->b:Landroid/content/Context;
 
-    .line 6
     invoke-static {p1}, Lcom/apm/insight/entity/Header;->a(Landroid/content/Context;)Lcom/apm/insight/entity/Header;
 
     move-result-object p1
@@ -91,9 +91,9 @@
     .line 8
     invoke-virtual {p2, p1}, Lcom/apm/insight/entity/a;->a(Lcom/apm/insight/entity/Header;)Lcom/apm/insight/entity/a;
 
+    .line 9
     iget-object v0, p0, Lcom/apm/insight/runtime/a/c;->a:Lcom/apm/insight/CrashType;
 
-    .line 9
     invoke-static {p2, p1, v0}, Lcom/apm/insight/a;->a(Lcom/apm/insight/entity/a;Lcom/apm/insight/entity/Header;Lcom/apm/insight/CrashType;)V
 
     :goto_0

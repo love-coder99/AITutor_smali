@@ -3,14 +3,14 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lzh/a;
+.implements Lka/a;
 
 
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "Lkotlin/jvm/internal/Lambda;",
-        "Lzh/a;"
+        "Lka/a;"
     }
 .end annotation
 
@@ -19,9 +19,9 @@
         "\u0000\u0008\n\u0002\u0018\u0002\n\u0002\u0008\u0003\u0010\u0003\u001a\u00020\u0000H\n\u00a2\u0006\u0004\u0008\u0001\u0010\u0002"
     }
     d2 = {
-        "Landroidx/compose/foundation/text/g0;",
+        "Landroidx/compose/foundation/text/H;",
         "invoke",
-        "()Landroidx/compose/foundation/text/g0;",
+        "()Landroidx/compose/foundation/text/H;",
         "<anonymous>"
     }
     k = 0x3
@@ -52,18 +52,18 @@
 
 
 # virtual methods
-.method public final invoke()Landroidx/compose/foundation/text/g0;
+.method public final invoke()Landroidx/compose/foundation/text/H;
     .locals 3
 
     .line 1
-    new-instance v0, Landroidx/compose/foundation/text/g0;
+    new-instance v0, Landroidx/compose/foundation/text/H;
 
     iget-object v1, p0, Landroidx/compose/foundation/text/CoreTextFieldKt$CoreTextField$scrollerPosition$1$1;->$orientation:Landroidx/compose/foundation/gestures/Orientation;
 
     const/4 v2, 0x0
 
     .line 2
-    invoke-direct {v0, v1, v2}, Landroidx/compose/foundation/text/g0;-><init>(Landroidx/compose/foundation/gestures/Orientation;F)V
+    invoke-direct {v0, v1, v2}, Landroidx/compose/foundation/text/H;-><init>(Landroidx/compose/foundation/gestures/Orientation;F)V
 
     return-object v0
 .end method
@@ -72,7 +72,7 @@
     .locals 1
 
     .line 3
-    invoke-virtual {p0}, Landroidx/compose/foundation/text/CoreTextFieldKt$CoreTextField$scrollerPosition$1$1;->invoke()Landroidx/compose/foundation/text/g0;
+    invoke-virtual {p0}, Landroidx/compose/foundation/text/CoreTextFieldKt$CoreTextField$scrollerPosition$1$1;->invoke()Landroidx/compose/foundation/text/H;
 
     move-result-object v0
 

@@ -3,6 +3,11 @@
 .source "SourceFile"
 
 
+# annotations
+.annotation build Lcom/android/billingclient/api/zzf;
+.end annotation
+
+
 # instance fields
 .field private final externalTransactionToken:Ljava/lang/String;
 
@@ -54,6 +59,8 @@
 # virtual methods
 .method public getExternalTransactionToken()Ljava/lang/String;
     .locals 1
+    .annotation build Landroidx/annotation/NonNull;
+    .end annotation
 
     iget-object v0, p0, Lcom/android/billingclient/api/AlternativeBillingOnlyReportingDetails;->externalTransactionToken:Ljava/lang/String;
 

@@ -3,7 +3,7 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lzh/c;
+.implements Lka/c;
 
 
 # annotations
@@ -19,7 +19,7 @@
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "Lkotlin/jvm/internal/Lambda;",
-        "Lzh/c;"
+        "Lka/c;"
     }
 .end annotation
 
@@ -30,7 +30,7 @@
     d2 = {
         "",
         "it",
-        "Lqh/r;",
+        "LX9/j;",
         "invoke",
         "(Ljava/lang/Throwable;)V",
         "<anonymous>"
@@ -45,18 +45,18 @@
 
 
 # instance fields
-.field final synthetic $methodSession:Landroidx/compose/ui/platform/t1;
+.field final synthetic $methodSession:Landroidx/compose/ui/platform/j0;
 
-.field final synthetic this$0:Landroidx/compose/ui/platform/r0;
+.field final synthetic this$0:Landroidx/compose/ui/platform/I;
 
 
 # direct methods
-.method public constructor <init>(Landroidx/compose/ui/platform/t1;Landroidx/compose/ui/platform/r0;)V
+.method public constructor <init>(Landroidx/compose/ui/platform/j0;Landroidx/compose/ui/platform/I;)V
     .locals 0
 
-    iput-object p1, p0, Landroidx/compose/ui/platform/AndroidPlatformTextInputSession$startInputMethod$3$1$1;->$methodSession:Landroidx/compose/ui/platform/t1;
+    iput-object p1, p0, Landroidx/compose/ui/platform/AndroidPlatformTextInputSession$startInputMethod$3$1$1;->$methodSession:Landroidx/compose/ui/platform/j0;
 
-    iput-object p2, p0, Landroidx/compose/ui/platform/AndroidPlatformTextInputSession$startInputMethod$3$1$1;->this$0:Landroidx/compose/ui/platform/r0;
+    iput-object p2, p0, Landroidx/compose/ui/platform/AndroidPlatformTextInputSession$startInputMethod$3$1$1;->this$0:Landroidx/compose/ui/platform/I;
 
     const/4 p1, 0x1
 
@@ -75,7 +75,7 @@
 
     invoke-virtual {p0, p1}, Landroidx/compose/ui/platform/AndroidPlatformTextInputSession$startInputMethod$3$1$1;->invoke(Ljava/lang/Throwable;)V
 
-    sget-object p1, Lqh/r;->a:Lqh/r;
+    sget-object p1, LX9/j;->a:LX9/j;
 
     return-object p1
 .end method
@@ -83,62 +83,63 @@
 .method public final invoke(Ljava/lang/Throwable;)V
     .locals 6
 
-    iget-object p1, p0, Landroidx/compose/ui/platform/AndroidPlatformTextInputSession$startInputMethod$3$1$1;->$methodSession:Landroidx/compose/ui/platform/t1;
-
     .line 2
-    iget-object v0, p1, Landroidx/compose/ui/platform/t1;->c:Ljava/lang/Object;
+    iget-object p1, p0, Landroidx/compose/ui/platform/AndroidPlatformTextInputSession$startInputMethod$3$1$1;->$methodSession:Landroidx/compose/ui/platform/j0;
 
     .line 3
+    iget-object v0, p1, Landroidx/compose/ui/platform/j0;->c:Ljava/lang/Object;
+
+    .line 4
     monitor-enter v0
 
     const/4 v1, 0x1
 
-    .line 4
-    :try_start_0
-    iput-boolean v1, p1, Landroidx/compose/ui/platform/t1;->e:Z
-
     .line 5
-    iget-object v1, p1, Landroidx/compose/ui/platform/t1;->d:Landroidx/compose/runtime/collection/e;
+    :try_start_0
+    iput-boolean v1, p1, Landroidx/compose/ui/platform/j0;->e:Z
 
     .line 6
-    iget v2, v1, Landroidx/compose/runtime/collection/e;->d:I
+    iget-object v1, p1, Landroidx/compose/ui/platform/j0;->d:Landroidx/compose/runtime/collection/d;
+
+    .line 7
+    iget v2, v1, Landroidx/compose/runtime/collection/d;->d:I
 
     if-lez v2, :cond_2
 
-    .line 7
-    iget-object v1, v1, Landroidx/compose/runtime/collection/e;->b:[Ljava/lang/Object;
+    .line 8
+    iget-object v1, v1, Landroidx/compose/runtime/collection/d;->b:[Ljava/lang/Object;
 
     const/4 v3, 0x0
 
-    .line 8
+    .line 9
     :cond_0
     aget-object v4, v1, v3
 
     check-cast v4, Ljava/lang/ref/WeakReference;
 
-    .line 9
+    .line 10
     invoke-virtual {v4}, Ljava/lang/ref/Reference;->get()Ljava/lang/Object;
 
     move-result-object v4
 
-    check-cast v4, Landroidx/compose/ui/text/input/t;
+    check-cast v4, Landroidx/compose/ui/text/input/q;
 
     if-eqz v4, :cond_1
 
-    check-cast v4, Landroidx/compose/ui/text/input/u;
+    check-cast v4, Landroidx/compose/ui/text/input/r;
 
-    .line 10
-    iget-object v5, v4, Landroidx/compose/ui/text/input/u;->b:Landroid/view/inputmethod/InputConnection;
+    .line 11
+    iget-object v5, v4, Landroidx/compose/ui/text/input/r;->b:Landroidx/compose/foundation/text/input/internal/w;
 
     if-eqz v5, :cond_1
 
-    .line 11
-    invoke-virtual {v4, v5}, Landroidx/compose/ui/text/input/u;->a(Landroid/view/inputmethod/InputConnection;)V
+    .line 12
+    invoke-virtual {v4, v5}, Landroidx/compose/ui/text/input/r;->a(Landroidx/compose/foundation/text/input/internal/w;)V
 
     const/4 v5, 0x0
 
-    .line 12
-    iput-object v5, v4, Landroidx/compose/ui/text/input/u;->b:Landroid/view/inputmethod/InputConnection;
+    .line 13
+    iput-object v5, v4, Landroidx/compose/ui/text/input/r;->b:Landroidx/compose/foundation/text/input/internal/w;
 
     :cond_1
     add-int/lit8 v3, v3, 0x1
@@ -152,32 +153,33 @@
 
     goto :goto_1
 
-    .line 13
+    .line 14
     :cond_2
     :goto_0
-    iget-object p1, p1, Landroidx/compose/ui/platform/t1;->d:Landroidx/compose/runtime/collection/e;
+    iget-object p1, p1, Landroidx/compose/ui/platform/j0;->d:Landroidx/compose/runtime/collection/d;
 
-    invoke-virtual {p1}, Landroidx/compose/runtime/collection/e;->j()V
+    invoke-virtual {p1}, Landroidx/compose/runtime/collection/d;->j()V
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    .line 14
+    .line 15
     monitor-exit v0
 
-    iget-object p1, p0, Landroidx/compose/ui/platform/AndroidPlatformTextInputSession$startInputMethod$3$1$1;->this$0:Landroidx/compose/ui/platform/r0;
-
-    .line 15
-    iget-object p1, p1, Landroidx/compose/ui/platform/r0;->c:Landroidx/compose/ui/text/input/i0;
-
     .line 16
-    iget-object p1, p1, Landroidx/compose/ui/text/input/i0;->a:Landroidx/compose/ui/text/input/c0;
+    iget-object p1, p0, Landroidx/compose/ui/platform/AndroidPlatformTextInputSession$startInputMethod$3$1$1;->this$0:Landroidx/compose/ui/platform/I;
 
     .line 17
-    invoke-interface {p1}, Landroidx/compose/ui/text/input/c0;->e()V
+    iget-object p1, p1, Landroidx/compose/ui/platform/I;->c:Landroidx/compose/ui/text/input/D;
+
+    .line 18
+    iget-object p1, p1, Landroidx/compose/ui/text/input/D;->a:Landroidx/compose/ui/text/input/x;
+
+    .line 19
+    invoke-interface {p1}, Landroidx/compose/ui/text/input/x;->e()V
 
     return-void
 
-    .line 18
+    .line 20
     :goto_1
     monitor-exit v0
 

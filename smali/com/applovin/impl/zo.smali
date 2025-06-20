@@ -45,9 +45,10 @@
 .method public a(II)V
     .locals 0
 
-    .line 1
+    .line 21
     iput p1, p0, Lcom/applovin/impl/zo;->i:I
 
+    .line 22
     iput p2, p0, Lcom/applovin/impl/zo;->j:I
 
     return-void
@@ -56,12 +57,12 @@
 .method public a(Ljava/nio/ByteBuffer;)V
     .locals 8
 
-    .line 2
+    .line 1
     invoke-virtual {p1}, Ljava/nio/Buffer;->position()I
 
     move-result v0
 
-    .line 3
+    .line 2
     invoke-virtual {p1}, Ljava/nio/Buffer;->limit()I
 
     move-result v1
@@ -72,19 +73,19 @@
 
     return-void
 
+    .line 3
     :cond_0
     iget v3, p0, Lcom/applovin/impl/zo;->l:I
 
-    .line 4
     invoke-static {v2, v3}, Ljava/lang/Math;->min(II)I
 
     move-result v3
 
+    .line 4
     iget-wide v4, p0, Lcom/applovin/impl/zo;->o:J
 
     iget-object v6, p0, Lcom/applovin/impl/z1;->b:Lcom/applovin/impl/p1$a;
 
-    .line 5
     iget v6, v6, Lcom/applovin/impl/p1$a;->d:I
 
     div-int v6, v3, v6
@@ -95,6 +96,7 @@
 
     iput-wide v4, p0, Lcom/applovin/impl/zo;->o:J
 
+    .line 5
     iget v4, p0, Lcom/applovin/impl/zo;->l:I
 
     sub-int/2addr v4, v3
@@ -106,6 +108,7 @@
     .line 6
     invoke-virtual {p1, v0}, Ljava/nio/ByteBuffer;->position(I)Ljava/nio/Buffer;
 
+    .line 7
     iget v0, p0, Lcom/applovin/impl/zo;->l:I
 
     if-lez v0, :cond_1
@@ -115,44 +118,44 @@
     :cond_1
     sub-int/2addr v2, v3
 
+    .line 8
     iget v0, p0, Lcom/applovin/impl/zo;->n:I
 
     add-int/2addr v0, v2
 
     iget-object v3, p0, Lcom/applovin/impl/zo;->m:[B
 
-    .line 7
     array-length v3, v3
 
     sub-int/2addr v0, v3
 
-    .line 8
+    .line 9
     invoke-virtual {p0, v0}, Lcom/applovin/impl/z1;->a(I)Ljava/nio/ByteBuffer;
 
     move-result-object v3
 
+    .line 10
     iget v4, p0, Lcom/applovin/impl/zo;->n:I
 
     const/4 v5, 0x0
 
-    .line 9
     invoke-static {v0, v5, v4}, Lcom/applovin/impl/xp;->a(III)I
 
     move-result v4
 
+    .line 11
     iget-object v6, p0, Lcom/applovin/impl/zo;->m:[B
 
-    .line 10
     invoke-virtual {v3, v6, v5, v4}, Ljava/nio/ByteBuffer;->put([BII)Ljava/nio/ByteBuffer;
 
     sub-int/2addr v0, v4
 
-    .line 11
+    .line 12
     invoke-static {v0, v5, v2}, Lcom/applovin/impl/xp;->a(III)I
 
     move-result v0
 
-    .line 12
+    .line 13
     invoke-virtual {p1}, Ljava/nio/Buffer;->position()I
 
     move-result v6
@@ -161,39 +164,41 @@
 
     invoke-virtual {p1, v6}, Ljava/nio/ByteBuffer;->limit(I)Ljava/nio/Buffer;
 
-    .line 13
+    .line 14
     invoke-virtual {v3, p1}, Ljava/nio/ByteBuffer;->put(Ljava/nio/ByteBuffer;)Ljava/nio/ByteBuffer;
 
-    .line 14
+    .line 15
     invoke-virtual {p1, v1}, Ljava/nio/ByteBuffer;->limit(I)Ljava/nio/Buffer;
 
     sub-int/2addr v2, v0
 
+    .line 16
     iget v0, p0, Lcom/applovin/impl/zo;->n:I
 
     sub-int/2addr v0, v4
 
     iput v0, p0, Lcom/applovin/impl/zo;->n:I
 
+    .line 17
     iget-object v1, p0, Lcom/applovin/impl/zo;->m:[B
 
-    .line 15
     invoke-static {v1, v4, v1, v5, v0}, Ljava/lang/System;->arraycopy(Ljava/lang/Object;ILjava/lang/Object;II)V
 
+    .line 18
     iget-object v0, p0, Lcom/applovin/impl/zo;->m:[B
 
     iget v1, p0, Lcom/applovin/impl/zo;->n:I
 
-    .line 16
     invoke-virtual {p1, v0, v1, v2}, Ljava/nio/ByteBuffer;->get([BII)Ljava/nio/ByteBuffer;
 
+    .line 19
     iget p1, p0, Lcom/applovin/impl/zo;->n:I
 
     add-int/2addr p1, v2
 
     iput p1, p0, Lcom/applovin/impl/zo;->n:I
 
-    .line 17
+    .line 20
     invoke-virtual {v3}, Ljava/nio/ByteBuffer;->flip()Ljava/nio/Buffer;
 
     return-void
@@ -511,17 +516,25 @@
 .method public j()J
     .locals 2
 
+    .line 1
     iget-wide v0, p0, Lcom/applovin/impl/zo;->o:J
 
+    .line 2
+    .line 3
     return-wide v0
 .end method
 
 .method public k()V
     .locals 2
 
+    .line 1
     const-wide/16 v0, 0x0
 
+    .line 2
+    .line 3
     iput-wide v0, p0, Lcom/applovin/impl/zo;->o:J
 
+    .line 4
+    .line 5
     return-void
 .end method

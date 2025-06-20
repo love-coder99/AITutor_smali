@@ -3,14 +3,14 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lzh/c;
+.implements Lka/c;
 
 
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "Lkotlin/jvm/internal/Lambda;",
-        "Lzh/c;"
+        "Lka/c;"
     }
 .end annotation
 
@@ -22,9 +22,9 @@
         "",
         "",
         "it",
-        "Landroidx/compose/foundation/lazy/u;",
+        "Landroidx/compose/foundation/lazy/o;",
         "invoke",
-        "(Ljava/util/List;)Landroidx/compose/foundation/lazy/u;",
+        "(Ljava/util/List;)Landroidx/compose/foundation/lazy/o;",
         "<anonymous>"
     }
     k = 0x3
@@ -65,7 +65,7 @@
 
 
 # virtual methods
-.method public final invoke(Ljava/util/List;)Landroidx/compose/foundation/lazy/u;
+.method public final invoke(Ljava/util/List;)Landroidx/compose/foundation/lazy/o;
     .locals 3
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -73,12 +73,12 @@
             "Ljava/util/List<",
             "Ljava/lang/Integer;",
             ">;)",
-            "Landroidx/compose/foundation/lazy/u;"
+            "Landroidx/compose/foundation/lazy/o;"
         }
     .end annotation
 
     .line 2
-    new-instance v0, Landroidx/compose/foundation/lazy/u;
+    new-instance v0, Landroidx/compose/foundation/lazy/o;
 
     const/4 v1, 0x0
 
@@ -107,7 +107,7 @@
     move-result p1
 
     .line 5
-    invoke-direct {v0, v1, p1}, Landroidx/compose/foundation/lazy/u;-><init>(II)V
+    invoke-direct {v0, v1, p1}, Landroidx/compose/foundation/lazy/o;-><init>(II)V
 
     return-object v0
 .end method
@@ -118,7 +118,7 @@
     .line 1
     check-cast p1, Ljava/util/List;
 
-    invoke-virtual {p0, p1}, Landroidx/compose/foundation/lazy/LazyListState$Companion$Saver$2;->invoke(Ljava/util/List;)Landroidx/compose/foundation/lazy/u;
+    invoke-virtual {p0, p1}, Landroidx/compose/foundation/lazy/LazyListState$Companion$Saver$2;->invoke(Ljava/util/List;)Landroidx/compose/foundation/lazy/o;
 
     move-result-object p1
 

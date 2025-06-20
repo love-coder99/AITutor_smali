@@ -43,8 +43,11 @@
 .method public static a()Lcom/applovin/exoplayer2/common/base/Optional;
     .locals 1
 
+    .line 1
     sget-object v0, Lcom/applovin/exoplayer2/common/base/a;->a:Lcom/applovin/exoplayer2/common/base/a;
 
+    .line 2
+    .line 3
     return-object v0
 .end method
 
@@ -138,9 +141,9 @@
 
     move-result-object p1
 
+    .line 4
     const-string v0, "use Optional.orNull() instead of a Supplier that returns null"
 
-    .line 4
     invoke-static {p1, v0}, Lcom/applovin/exoplayer2/common/base/Preconditions;->checkNotNull(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object p1
@@ -151,9 +154,9 @@
 .method public or(Ljava/lang/Object;)Ljava/lang/Object;
     .locals 1
 
+    .line 1
     const-string v0, "use Optional.orNull() instead of Optional.or(null)"
 
-    .line 1
     invoke-static {p1, v0}, Lcom/applovin/exoplayer2/common/base/Preconditions;->checkNotNull(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object p1
@@ -172,8 +175,11 @@
 .method public toString()Ljava/lang/String;
     .locals 1
 
+    .line 1
     const-string v0, "Optional.absent()"
 
+    .line 2
+    .line 3
     return-object v0
 .end method
 

@@ -1,12 +1,12 @@
 .class final Landroidx/compose/foundation/layout/IntrinsicWidthElement;
-.super Landroidx/compose/ui/node/w0;
+.super Landroidx/compose/ui/node/V;
 .source "SourceFile"
 
 
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
-        "Landroidx/compose/ui/node/w0;"
+        "Landroidx/compose/ui/node/V;"
     }
 .end annotation
 
@@ -16,8 +16,8 @@
     }
     d2 = {
         "Landroidx/compose/foundation/layout/IntrinsicWidthElement;",
-        "Landroidx/compose/ui/node/w0;",
-        "Landroidx/compose/foundation/layout/j0;",
+        "Landroidx/compose/ui/node/V;",
+        "Landroidx/compose/foundation/layout/G;",
         "foundation-layout_release"
     }
     k = 0x1
@@ -26,11 +26,12 @@
         0x8,
         0x0
     }
+    xi = 0x30
 .end annotation
 
 
 # instance fields
-.field public final c:Landroidx/compose/foundation/layout/IntrinsicSize;
+.field public final a:Landroidx/compose/foundation/layout/IntrinsicSize;
 
 
 # direct methods
@@ -43,7 +44,7 @@
     .line 2
     .line 3
     .line 4
-    iput-object p1, p0, Landroidx/compose/foundation/layout/IntrinsicWidthElement;->c:Landroidx/compose/foundation/layout/IntrinsicSize;
+    iput-object p1, p0, Landroidx/compose/foundation/layout/IntrinsicWidthElement;->a:Landroidx/compose/foundation/layout/IntrinsicSize;
 
     .line 5
     .line 6
@@ -98,11 +99,11 @@
 
     .line 17
     :cond_2
-    iget-object v2, p0, Landroidx/compose/foundation/layout/IntrinsicWidthElement;->c:Landroidx/compose/foundation/layout/IntrinsicSize;
+    iget-object v2, p0, Landroidx/compose/foundation/layout/IntrinsicWidthElement;->a:Landroidx/compose/foundation/layout/IntrinsicSize;
 
     .line 18
     .line 19
-    iget-object p1, p1, Landroidx/compose/foundation/layout/IntrinsicWidthElement;->c:Landroidx/compose/foundation/layout/IntrinsicSize;
+    iget-object p1, p1, Landroidx/compose/foundation/layout/IntrinsicWidthElement;->a:Landroidx/compose/foundation/layout/IntrinsicSize;
 
     .line 20
     .line 21
@@ -125,7 +126,7 @@
     .locals 1
 
     .line 1
-    iget-object v0, p0, Landroidx/compose/foundation/layout/IntrinsicWidthElement;->c:Landroidx/compose/foundation/layout/IntrinsicSize;
+    iget-object v0, p0, Landroidx/compose/foundation/layout/IntrinsicWidthElement;->a:Landroidx/compose/foundation/layout/IntrinsicSize;
 
     .line 2
     .line 3
@@ -152,7 +153,7 @@
     .locals 2
 
     .line 1
-    new-instance v0, Landroidx/compose/foundation/layout/j0;
+    new-instance v0, Landroidx/compose/foundation/layout/G;
 
     .line 2
     .line 3
@@ -161,18 +162,18 @@
     .line 4
     .line 5
     .line 6
-    iget-object v1, p0, Landroidx/compose/foundation/layout/IntrinsicWidthElement;->c:Landroidx/compose/foundation/layout/IntrinsicSize;
+    iget-object v1, p0, Landroidx/compose/foundation/layout/IntrinsicWidthElement;->a:Landroidx/compose/foundation/layout/IntrinsicSize;
 
     .line 7
     .line 8
-    iput-object v1, v0, Landroidx/compose/foundation/layout/j0;->p:Landroidx/compose/foundation/layout/IntrinsicSize;
+    iput-object v1, v0, Landroidx/compose/foundation/layout/G;->p:Landroidx/compose/foundation/layout/IntrinsicSize;
 
     .line 9
     .line 10
     const/4 v1, 0x1
 
     .line 11
-    iput-boolean v1, v0, Landroidx/compose/foundation/layout/j0;->q:Z
+    iput-boolean v1, v0, Landroidx/compose/foundation/layout/G;->q:Z
 
     .line 12
     .line 13
@@ -183,22 +184,22 @@
     .locals 1
 
     .line 1
-    check-cast p1, Landroidx/compose/foundation/layout/j0;
+    check-cast p1, Landroidx/compose/foundation/layout/G;
 
     .line 2
     .line 3
-    iget-object v0, p0, Landroidx/compose/foundation/layout/IntrinsicWidthElement;->c:Landroidx/compose/foundation/layout/IntrinsicSize;
+    iget-object v0, p0, Landroidx/compose/foundation/layout/IntrinsicWidthElement;->a:Landroidx/compose/foundation/layout/IntrinsicSize;
 
     .line 4
     .line 5
-    iput-object v0, p1, Landroidx/compose/foundation/layout/j0;->p:Landroidx/compose/foundation/layout/IntrinsicSize;
+    iput-object v0, p1, Landroidx/compose/foundation/layout/G;->p:Landroidx/compose/foundation/layout/IntrinsicSize;
 
     .line 6
     .line 7
     const/4 v0, 0x1
 
     .line 8
-    iput-boolean v0, p1, Landroidx/compose/foundation/layout/j0;->q:Z
+    iput-boolean v0, p1, Landroidx/compose/foundation/layout/G;->q:Z
 
     .line 9
     .line 10

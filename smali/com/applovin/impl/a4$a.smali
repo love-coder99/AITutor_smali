@@ -44,7 +44,7 @@
 .method public static synthetic a(Lcom/applovin/impl/a4$a;)Ljava/lang/String;
     .locals 0
 
-    .line 2
+    .line 1
     iget-object p0, p0, Lcom/applovin/impl/a4$a;->a:Ljava/lang/String;
 
     return-object p0
@@ -55,7 +55,7 @@
 .method public a()Ljava/lang/String;
     .locals 1
 
-    .line 1
+    .line 2
     iget-object v0, p0, Lcom/applovin/impl/a4$a;->a:Ljava/lang/String;
 
     return-object v0

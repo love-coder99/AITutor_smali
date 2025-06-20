@@ -3,12 +3,12 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lzh/f;
+.implements Lka/f;
 
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Landroidx/compose/foundation/pager/PagerMeasurePolicyKt$rememberPagerMeasurePolicy$1$1;->invoke-0kLqBqw(Landroidx/compose/foundation/lazy/layout/e0;J)Landroidx/compose/foundation/pager/o;
+    value = Landroidx/compose/foundation/pager/PagerMeasurePolicyKt$rememberPagerMeasurePolicy$1$1;->invoke-0kLqBqw(Landroidx/compose/foundation/lazy/layout/D;J)Landroidx/compose/foundation/pager/l;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -19,7 +19,7 @@
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "Lkotlin/jvm/internal/Lambda;",
-        "Lzh/f;"
+        "Lka/f;"
     }
 .end annotation
 
@@ -32,12 +32,12 @@
         "width",
         "height",
         "Lkotlin/Function1;",
-        "Landroidx/compose/ui/layout/z0;",
-        "Lqh/r;",
+        "Landroidx/compose/ui/layout/W;",
+        "LX9/j;",
         "placement",
-        "Landroidx/compose/ui/layout/n0;",
+        "Landroidx/compose/ui/layout/K;",
         "invoke",
-        "(IILzh/c;)Landroidx/compose/ui/layout/n0;",
+        "(IILka/c;)Landroidx/compose/ui/layout/K;",
         "<anonymous>"
     }
     k = 0x3
@@ -52,7 +52,7 @@
 # instance fields
 .field final synthetic $containerConstraints:J
 
-.field final synthetic $this_null:Landroidx/compose/foundation/lazy/layout/e0;
+.field final synthetic $this_null:Landroidx/compose/foundation/lazy/layout/D;
 
 .field final synthetic $totalHorizontalPadding:I
 
@@ -60,10 +60,10 @@
 
 
 # direct methods
-.method public constructor <init>(Landroidx/compose/foundation/lazy/layout/e0;JII)V
+.method public constructor <init>(Landroidx/compose/foundation/lazy/layout/D;JII)V
     .locals 0
 
-    iput-object p1, p0, Landroidx/compose/foundation/pager/PagerMeasurePolicyKt$rememberPagerMeasurePolicy$1$1$measureResult$1;->$this_null:Landroidx/compose/foundation/lazy/layout/e0;
+    iput-object p1, p0, Landroidx/compose/foundation/pager/PagerMeasurePolicyKt$rememberPagerMeasurePolicy$1$1$measureResult$1;->$this_null:Landroidx/compose/foundation/lazy/layout/D;
 
     iput-wide p2, p0, Landroidx/compose/foundation/pager/PagerMeasurePolicyKt$rememberPagerMeasurePolicy$1$1$measureResult$1;->$containerConstraints:J
 
@@ -80,53 +80,55 @@
 
 
 # virtual methods
-.method public final invoke(IILzh/c;)Landroidx/compose/ui/layout/n0;
+.method public final invoke(IILka/c;)Landroidx/compose/ui/layout/K;
     .locals 4
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(II",
-            "Lzh/c;",
+            "Lka/c;",
             ")",
-            "Landroidx/compose/ui/layout/n0;"
+            "Landroidx/compose/ui/layout/K;"
         }
     .end annotation
 
-    iget-object v0, p0, Landroidx/compose/foundation/pager/PagerMeasurePolicyKt$rememberPagerMeasurePolicy$1$1$measureResult$1;->$this_null:Landroidx/compose/foundation/lazy/layout/e0;
+    .line 2
+    iget-object v0, p0, Landroidx/compose/foundation/pager/PagerMeasurePolicyKt$rememberPagerMeasurePolicy$1$1$measureResult$1;->$this_null:Landroidx/compose/foundation/lazy/layout/D;
 
+    .line 3
     iget-wide v1, p0, Landroidx/compose/foundation/pager/PagerMeasurePolicyKt$rememberPagerMeasurePolicy$1$1$measureResult$1;->$containerConstraints:J
 
     iget v3, p0, Landroidx/compose/foundation/pager/PagerMeasurePolicyKt$rememberPagerMeasurePolicy$1$1$measureResult$1;->$totalHorizontalPadding:I
 
     add-int/2addr p1, v3
 
-    .line 2
-    invoke-static {p1, v1, v2}, Lcom/google/android/gms/internal/consent_sdk/z;->j(IJ)I
+    invoke-static {p1, v1, v2}, LP5/f;->i(IJ)I
 
     move-result p1
 
+    .line 4
     iget-wide v1, p0, Landroidx/compose/foundation/pager/PagerMeasurePolicyKt$rememberPagerMeasurePolicy$1$1$measureResult$1;->$containerConstraints:J
 
     iget v3, p0, Landroidx/compose/foundation/pager/PagerMeasurePolicyKt$rememberPagerMeasurePolicy$1$1$measureResult$1;->$totalVerticalPadding:I
 
     add-int/2addr p2, v3
 
-    .line 3
-    invoke-static {p2, v1, v2}, Lcom/google/android/gms/internal/consent_sdk/z;->i(IJ)I
+    invoke-static {p2, v1, v2}, LP5/f;->h(IJ)I
 
     move-result p2
 
-    .line 4
-    invoke-static {}, Lkotlin/collections/d0;->e0()Ljava/util/Map;
+    .line 5
+    invoke-static {}, Lkotlin/collections/a;->F()Ljava/util/Map;
 
     move-result-object v1
 
-    check-cast v0, Landroidx/compose/foundation/lazy/layout/f0;
-
-    .line 5
-    iget-object v0, v0, Landroidx/compose/foundation/lazy/layout/f0;->c:Landroidx/compose/ui/layout/i1;
-
     .line 6
-    invoke-interface {v0, p1, p2, v1, p3}, Landroidx/compose/ui/layout/o0;->W(IILjava/util/Map;Lzh/c;)Landroidx/compose/ui/layout/n0;
+    check-cast v0, Landroidx/compose/foundation/lazy/layout/E;
+
+    .line 7
+    iget-object v0, v0, Landroidx/compose/foundation/lazy/layout/E;->c:Landroidx/compose/ui/layout/e0;
+
+    .line 8
+    invoke-interface {v0, p1, p2, v1, p3}, Landroidx/compose/ui/layout/L;->Z(IILjava/util/Map;Lka/c;)Landroidx/compose/ui/layout/K;
 
     move-result-object p1
 
@@ -149,9 +151,9 @@
 
     move-result p2
 
-    check-cast p3, Lzh/c;
+    check-cast p3, Lka/c;
 
-    invoke-virtual {p0, p1, p2, p3}, Landroidx/compose/foundation/pager/PagerMeasurePolicyKt$rememberPagerMeasurePolicy$1$1$measureResult$1;->invoke(IILzh/c;)Landroidx/compose/ui/layout/n0;
+    invoke-virtual {p0, p1, p2, p3}, Landroidx/compose/foundation/pager/PagerMeasurePolicyKt$rememberPagerMeasurePolicy$1$1$measureResult$1;->invoke(IILka/c;)Landroidx/compose/ui/layout/K;
 
     move-result-object p1
 

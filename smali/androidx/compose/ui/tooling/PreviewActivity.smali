@@ -1,5 +1,5 @@
 .class public final Landroidx/compose/ui/tooling/PreviewActivity;
-.super Landroidx/activity/s;
+.super Landroidx/activity/o;
 .source "SourceFile"
 
 
@@ -10,7 +10,7 @@
     }
     d2 = {
         "Landroidx/compose/ui/tooling/PreviewActivity;",
-        "Landroidx/activity/s;",
+        "Landroidx/activity/o;",
         "<init>",
         "()V",
         "ui-tooling_release"
@@ -21,6 +21,7 @@
         0x8,
         0x0
     }
+    xi = 0x30
 .end annotation
 
 
@@ -29,7 +30,7 @@
     .locals 0
 
     .line 1
-    invoke-direct {p0}, Landroidx/activity/s;-><init>()V
+    invoke-direct {p0}, Landroidx/activity/o;-><init>()V
 
     .line 2
     .line 3
@@ -43,7 +44,7 @@
     .locals 6
 
     .line 1
-    invoke-super {p0, p1}, Landroidx/activity/s;->onCreate(Landroid/os/Bundle;)V
+    invoke-super {p0, p1}, Landroidx/activity/o;->onCreate(Landroid/os/Bundle;)V
 
     .line 2
     .line 3
@@ -109,7 +110,7 @@
 
     .line 33
     .line 34
-    invoke-static {p1, v0}, Lkotlin/text/p;->M0(Ljava/lang/String;C)Ljava/lang/String;
+    invoke-static {p1, v0}, Lkotlin/text/m;->t0(Ljava/lang/String;C)Ljava/lang/String;
 
     .line 35
     .line 36
@@ -117,7 +118,7 @@
     move-result-object v1
 
     .line 38
-    invoke-static {v0, p1, p1}, Lkotlin/text/p;->L0(CLjava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v0, p1, p1}, Lkotlin/text/m;->s0(CLjava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     .line 39
     .line 40
@@ -194,7 +195,7 @@
     move-result v3
 
     .line 72
-    invoke-static {v0, v3}, Lb0/h;->L(Ljava/lang/Class;I)[Ljava/lang/Object;
+    invoke-static {v3, v0}, Landroidx/compose/ui/tooling/j;->e(ILjava/lang/Class;)[Ljava/lang/Object;
 
     .line 73
     .line 74
@@ -211,65 +212,57 @@
     .line 79
     .line 80
     .line 81
-    sget-object p1, Landroidx/compose/runtime/internal/c;->a:Ljava/lang/Object;
+    new-instance p1, Landroidx/compose/runtime/internal/a;
 
     .line 82
     .line 83
-    new-instance p1, Landroidx/compose/runtime/internal/b;
+    const v0, -0x7155c95a
 
     .line 84
     .line 85
-    const v0, -0x7155c95a
-
     .line 86
+    invoke-direct {p1, v0, v3, v2}, Landroidx/compose/runtime/internal/a;-><init>(ILjava/lang/Object;Z)V
+
     .line 87
     .line 88
-    invoke-direct {p1, v0, v3, v2}, Landroidx/compose/runtime/internal/b;-><init>(ILkotlin/jvm/internal/Lambda;Z)V
-
     .line 89
+    invoke-static {p0, p1}, Landroidx/activity/compose/e;->a(Landroidx/activity/o;Landroidx/compose/runtime/internal/a;)V
+
     .line 90
     .line 91
-    invoke-static {p0, p1}, Landroidx/activity/compose/f;->a(Landroidx/activity/s;Landroidx/compose/runtime/internal/b;)V
-
     .line 92
-    .line 93
-    .line 94
     goto :goto_1
 
-    .line 95
+    .line 93
     :cond_1
     new-instance v0, Landroidx/compose/ui/tooling/PreviewActivity$setComposableContent$2;
 
-    .line 96
-    .line 97
+    .line 94
+    .line 95
     invoke-direct {v0, v1, p1}, Landroidx/compose/ui/tooling/PreviewActivity$setComposableContent$2;-><init>(Ljava/lang/String;Ljava/lang/String;)V
 
+    .line 96
+    .line 97
     .line 98
+    new-instance p1, Landroidx/compose/runtime/internal/a;
+
     .line 99
     .line 100
-    sget-object p1, Landroidx/compose/runtime/internal/c;->a:Ljava/lang/Object;
+    const v1, -0x321af304
 
     .line 101
     .line 102
-    new-instance p1, Landroidx/compose/runtime/internal/b;
-
     .line 103
-    .line 104
-    const v1, -0x321af304
+    invoke-direct {p1, v1, v0, v2}, Landroidx/compose/runtime/internal/a;-><init>(ILjava/lang/Object;Z)V
 
+    .line 104
     .line 105
     .line 106
-    .line 107
-    invoke-direct {p1, v1, v0, v2}, Landroidx/compose/runtime/internal/b;-><init>(ILkotlin/jvm/internal/Lambda;Z)V
+    invoke-static {p0, p1}, Landroidx/activity/compose/e;->a(Landroidx/activity/o;Landroidx/compose/runtime/internal/a;)V
 
+    .line 107
     .line 108
     .line 109
-    .line 110
-    invoke-static {p0, p1}, Landroidx/activity/compose/f;->a(Landroidx/activity/s;Landroidx/compose/runtime/internal/b;)V
-
-    .line 111
-    .line 112
-    .line 113
     :cond_2
     :goto_1
     return-void

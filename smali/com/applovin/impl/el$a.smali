@@ -49,9 +49,9 @@
 .method public b(J)Lcom/applovin/impl/ij$a;
     .locals 8
 
+    .line 1
     iget-object v0, p0, Lcom/applovin/impl/el$a;->a:Lcom/applovin/impl/ij;
 
-    .line 1
     invoke-interface {v0, p1, p2}, Lcom/applovin/impl/ij;->b(J)Lcom/applovin/impl/ij$a;
 
     move-result-object p1
@@ -105,9 +105,9 @@
 .method public b()Z
     .locals 1
 
+    .line 5
     iget-object v0, p0, Lcom/applovin/impl/el$a;->a:Lcom/applovin/impl/ij;
 
-    .line 5
     invoke-interface {v0}, Lcom/applovin/impl/ij;->b()Z
 
     move-result v0

@@ -127,90 +127,124 @@
 
     const/4 v0, -0x1
 
+    .line 2
     iput v0, p0, Lcom/applovin/impl/xc$c;->m:I
 
+    .line 3
     iput v0, p0, Lcom/applovin/impl/xc$c;->n:I
 
+    .line 4
     iput v0, p0, Lcom/applovin/impl/xc$c;->o:I
 
+    .line 5
     iput v0, p0, Lcom/applovin/impl/xc$c;->p:I
 
     const/4 v1, 0x0
 
+    .line 6
     iput v1, p0, Lcom/applovin/impl/xc$c;->q:I
 
+    .line 7
     iput v0, p0, Lcom/applovin/impl/xc$c;->r:I
 
     const/4 v2, 0x0
 
+    .line 8
     iput v2, p0, Lcom/applovin/impl/xc$c;->s:F
 
+    .line 9
     iput v2, p0, Lcom/applovin/impl/xc$c;->t:F
 
+    .line 10
     iput v2, p0, Lcom/applovin/impl/xc$c;->u:F
 
     const/4 v2, 0x0
 
+    .line 11
     iput-object v2, p0, Lcom/applovin/impl/xc$c;->v:[B
 
+    .line 12
     iput v0, p0, Lcom/applovin/impl/xc$c;->w:I
 
+    .line 13
     iput-boolean v1, p0, Lcom/applovin/impl/xc$c;->x:Z
 
+    .line 14
     iput v0, p0, Lcom/applovin/impl/xc$c;->y:I
 
+    .line 15
     iput v0, p0, Lcom/applovin/impl/xc$c;->z:I
 
+    .line 16
     iput v0, p0, Lcom/applovin/impl/xc$c;->A:I
 
     const/16 v1, 0x3e8
 
+    .line 17
     iput v1, p0, Lcom/applovin/impl/xc$c;->B:I
 
     const/16 v1, 0xc8
 
+    .line 18
     iput v1, p0, Lcom/applovin/impl/xc$c;->C:I
 
     const/high16 v1, -0x40800000    # -1.0f
 
+    .line 19
     iput v1, p0, Lcom/applovin/impl/xc$c;->D:F
 
+    .line 20
     iput v1, p0, Lcom/applovin/impl/xc$c;->E:F
 
+    .line 21
     iput v1, p0, Lcom/applovin/impl/xc$c;->F:F
 
+    .line 22
     iput v1, p0, Lcom/applovin/impl/xc$c;->G:F
 
+    .line 23
     iput v1, p0, Lcom/applovin/impl/xc$c;->H:F
 
+    .line 24
     iput v1, p0, Lcom/applovin/impl/xc$c;->I:F
 
+    .line 25
     iput v1, p0, Lcom/applovin/impl/xc$c;->J:F
 
+    .line 26
     iput v1, p0, Lcom/applovin/impl/xc$c;->K:F
 
+    .line 27
     iput v1, p0, Lcom/applovin/impl/xc$c;->L:F
 
+    .line 28
     iput v1, p0, Lcom/applovin/impl/xc$c;->M:F
 
     const/4 v1, 0x1
 
+    .line 29
     iput v1, p0, Lcom/applovin/impl/xc$c;->O:I
 
+    .line 30
     iput v0, p0, Lcom/applovin/impl/xc$c;->P:I
 
     const/16 v0, 0x1f40
 
+    .line 31
     iput v0, p0, Lcom/applovin/impl/xc$c;->Q:I
 
     const-wide/16 v2, 0x0
 
+    .line 32
     iput-wide v2, p0, Lcom/applovin/impl/xc$c;->R:J
 
+    .line 33
     iput-wide v2, p0, Lcom/applovin/impl/xc$c;->S:J
 
+    .line 34
     iput-boolean v1, p0, Lcom/applovin/impl/xc$c;->V:Z
 
+    .line 35
     const-string v0, "eng"
 
     iput-object v0, p0, Lcom/applovin/impl/xc$c;->W:Ljava/lang/String;
@@ -221,7 +255,7 @@
 .method public synthetic constructor <init>(Lcom/applovin/impl/xc$a;)V
     .locals 0
 
-    .line 2
+    .line 36
     invoke-direct {p0}, Lcom/applovin/impl/xc$c;-><init>()V
 
     return-void
@@ -243,11 +277,11 @@
 
     const/4 v1, 0x0
 
-    .line 93
+    .line 121
     :try_start_0
     invoke-virtual {p0, v0}, Lcom/applovin/impl/ah;->g(I)V
 
-    .line 94
+    .line 122
     invoke-virtual {p0}, Lcom/applovin/impl/ah;->p()J
 
     move-result-wide v2
@@ -258,7 +292,7 @@
 
     if-nez v0, :cond_0
 
-    .line 95
+    .line 123
     new-instance p0, Landroid/util/Pair;
 
     const-string v0, "video/divx"
@@ -274,7 +308,7 @@
 
     if-nez v0, :cond_1
 
-    .line 96
+    .line 124
     new-instance p0, Landroid/util/Pair;
 
     const-string v0, "video/3gpp"
@@ -290,19 +324,19 @@
 
     if-nez v0, :cond_4
 
-    .line 97
+    .line 125
     invoke-virtual {p0}, Lcom/applovin/impl/ah;->d()I
 
     move-result v0
 
     add-int/lit8 v0, v0, 0x14
 
-    .line 98
+    .line 126
     invoke-virtual {p0}, Lcom/applovin/impl/ah;->c()[B
 
     move-result-object p0
 
-    .line 99
+    .line 127
     :goto_0
     array-length v2, p0
 
@@ -310,7 +344,7 @@
 
     if-ge v0, v2, :cond_3
 
-    .line 100
+    .line 128
     aget-byte v2, p0, v0
 
     if-nez v2, :cond_2
@@ -337,14 +371,14 @@
 
     if-ne v2, v3, :cond_2
 
-    .line 101
+    .line 129
     array-length v2, p0
 
     invoke-static {p0, v0, v2}, Ljava/util/Arrays;->copyOfRange([BII)[B
 
     move-result-object p0
 
-    .line 102
+    .line 130
     new-instance v0, Landroid/util/Pair;
 
     const-string v2, "video/wvc1"
@@ -362,10 +396,10 @@
 
     goto :goto_0
 
+    .line 131
     :cond_3
     const-string p0, "Failed to find FourCC VC1 initialization data"
 
-    .line 103
     invoke-static {p0, v1}, Lcom/applovin/impl/ch;->a(Ljava/lang/String;Ljava/lang/Throwable;)Lcom/applovin/impl/ch;
 
     move-result-object p0
@@ -374,15 +408,15 @@
     :try_end_0
     .catch Ljava/lang/ArrayIndexOutOfBoundsException; {:try_start_0 .. :try_end_0} :catch_0
 
+    .line 132
     :cond_4
     const-string p0, "MatroskaExtractor"
 
     const-string v0, "Unknown FourCC. Setting mimeType to video/x-unknown"
 
-    .line 104
     invoke-static {p0, v0}, Lcom/applovin/impl/oc;->d(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 105
+    .line 133
     new-instance p0, Landroid/util/Pair;
 
     const-string v0, "video/x-unknown"
@@ -391,10 +425,10 @@
 
     return-object p0
 
+    .line 134
     :catch_0
     const-string p0, "Error parsing FourCC private data"
 
-    .line 106
     invoke-static {p0, v1}, Lcom/applovin/impl/ch;->a(Ljava/lang/String;Ljava/lang/Throwable;)Lcom/applovin/impl/ch;
 
     move-result-object p0
@@ -414,13 +448,14 @@
 .method private static a([B)Ljava/util/List;
     .locals 10
 
+    .line 135
     const-string v0, "Error parsing vorbis codec private"
 
     const/4 v1, 0x0
 
     const/4 v2, 0x0
 
-    .line 107
+    .line 136
     :try_start_0
     aget-byte v3, p0, v2
 
@@ -434,7 +469,7 @@
 
     const/4 v6, 0x0
 
-    .line 108
+    .line 137
     :goto_0
     aget-byte v7, p0, v5
 
@@ -457,7 +492,7 @@
 
     const/4 v7, 0x0
 
-    .line 109
+    .line 138
     :goto_1
     aget-byte v9, p0, v5
 
@@ -476,20 +511,20 @@
 
     add-int/2addr v7, v9
 
-    .line 110
+    .line 139
     aget-byte v8, p0, v5
 
     if-ne v8, v3, :cond_4
 
-    .line 111
+    .line 140
     new-array v3, v6, [B
 
-    .line 112
+    .line 141
     invoke-static {p0, v5, v3, v2, v6}, Ljava/lang/System;->arraycopy(Ljava/lang/Object;ILjava/lang/Object;II)V
 
     add-int/2addr v5, v6
 
-    .line 113
+    .line 142
     aget-byte v6, p0, v5
 
     const/4 v8, 0x3
@@ -498,41 +533,41 @@
 
     add-int/2addr v5, v7
 
-    .line 114
+    .line 143
     aget-byte v6, p0, v5
 
     const/4 v7, 0x5
 
     if-ne v6, v7, :cond_2
 
-    .line 115
+    .line 144
     array-length v6, p0
 
     sub-int/2addr v6, v5
 
     new-array v6, v6, [B
 
-    .line 116
+    .line 145
     array-length v7, p0
 
     sub-int/2addr v7, v5
 
     invoke-static {p0, v5, v6, v2, v7}, Ljava/lang/System;->arraycopy(Ljava/lang/Object;ILjava/lang/Object;II)V
 
-    .line 117
+    .line 146
     new-instance p0, Ljava/util/ArrayList;
 
     invoke-direct {p0, v4}, Ljava/util/ArrayList;-><init>(I)V
 
-    .line 118
+    .line 147
     invoke-virtual {p0, v3}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
-    .line 119
+    .line 148
     invoke-virtual {p0, v6}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
     return-object p0
 
-    .line 120
+    .line 149
     :cond_2
     invoke-static {v0, v1}, Lcom/applovin/impl/ch;->a(Ljava/lang/String;Ljava/lang/Throwable;)Lcom/applovin/impl/ch;
 
@@ -540,7 +575,7 @@
 
     throw p0
 
-    .line 121
+    .line 150
     :cond_3
     invoke-static {v0, v1}, Lcom/applovin/impl/ch;->a(Ljava/lang/String;Ljava/lang/Throwable;)Lcom/applovin/impl/ch;
 
@@ -548,7 +583,7 @@
 
     throw p0
 
-    .line 122
+    .line 151
     :cond_4
     invoke-static {v0, v1}, Lcom/applovin/impl/ch;->a(Ljava/lang/String;Ljava/lang/Throwable;)Lcom/applovin/impl/ch;
 
@@ -556,7 +591,7 @@
 
     throw p0
 
-    .line 123
+    .line 152
     :cond_5
     invoke-static {v0, v1}, Lcom/applovin/impl/ch;->a(Ljava/lang/String;Ljava/lang/Throwable;)Lcom/applovin/impl/ch;
 
@@ -566,7 +601,7 @@
     :try_end_0
     .catch Ljava/lang/ArrayIndexOutOfBoundsException; {:try_start_0 .. :try_end_0} :catch_0
 
-    .line 124
+    .line 153
     :catch_0
     invoke-static {v0, v1}, Lcom/applovin/impl/ch;->a(Ljava/lang/String;Ljava/lang/Throwable;)Lcom/applovin/impl/ch;
 
@@ -578,9 +613,9 @@
 .method private a()V
     .locals 1
 
+    .line 4
     iget-object v0, p0, Lcom/applovin/impl/xc$c;->X:Lcom/applovin/impl/qo;
 
-    .line 4
     invoke-static {v0}, Lcom/applovin/impl/b1;->a(Ljava/lang/Object;)Ljava/lang/Object;
 
     return-void
@@ -598,13 +633,14 @@
 .method private a(Ljava/lang/String;)[B
     .locals 2
 
+    .line 5
     iget-object v0, p0, Lcom/applovin/impl/xc$c;->k:[B
 
     if-eqz v0, :cond_0
 
     return-object v0
 
-    .line 5
+    .line 6
     :cond_0
     new-instance v0, Ljava/lang/StringBuilder;
 
@@ -639,7 +675,7 @@
 .method private static b(Lcom/applovin/impl/ah;)Z
     .locals 8
 
-    .line 16
+    .line 18
     :try_start_0
     invoke-virtual {p0}, Lcom/applovin/impl/ah;->r()I
 
@@ -660,10 +696,10 @@
 
     const/16 v0, 0x18
 
-    .line 17
+    .line 19
     invoke-virtual {p0, v0}, Lcom/applovin/impl/ah;->f(I)V
 
-    .line 18
+    .line 20
     invoke-virtual {p0}, Lcom/applovin/impl/ah;->s()J
 
     move-result-wide v4
@@ -680,7 +716,7 @@
 
     if-nez v0, :cond_1
 
-    .line 19
+    .line 21
     invoke-virtual {p0}, Lcom/applovin/impl/ah;->s()J
 
     move-result-wide v4
@@ -710,12 +746,12 @@
     :cond_2
     return v3
 
+    .line 22
     :catch_0
     const-string p0, "Error parsing MS/ACM codec private"
 
     const/4 v0, 0x0
 
-    .line 20
     invoke-static {p0, v0}, Lcom/applovin/impl/ch;->a(Ljava/lang/String;Ljava/lang/Throwable;)Lcom/applovin/impl/ch;
 
     move-result-object p0
@@ -726,6 +762,7 @@
 .method private b()[B
     .locals 5
 
+    .line 2
     iget v0, p0, Lcom/applovin/impl/xc$c;->D:F
 
     const/high16 v1, -0x40800000    # -1.0f
@@ -793,9 +830,10 @@
     :cond_0
     const/16 v0, 0x19
 
+    .line 3
     new-array v0, v0, [B
 
-    .line 2
+    .line 4
     invoke-static {v0}, Ljava/nio/ByteBuffer;->wrap([B)Ljava/nio/ByteBuffer;
 
     move-result-object v1
@@ -808,9 +846,10 @@
 
     const/4 v2, 0x0
 
-    .line 3
+    .line 5
     invoke-virtual {v1, v2}, Ljava/nio/ByteBuffer;->put(B)Ljava/nio/ByteBuffer;
 
+    .line 6
     iget v2, p0, Lcom/applovin/impl/xc$c;->D:F
 
     const v3, 0x47435000    # 50000.0f
@@ -825,9 +864,9 @@
 
     int-to-short v2, v2
 
-    .line 4
     invoke-virtual {v1, v2}, Ljava/nio/ByteBuffer;->putShort(S)Ljava/nio/ByteBuffer;
 
+    .line 7
     iget v2, p0, Lcom/applovin/impl/xc$c;->E:F
 
     mul-float v2, v2, v3
@@ -838,9 +877,9 @@
 
     int-to-short v2, v2
 
-    .line 5
     invoke-virtual {v1, v2}, Ljava/nio/ByteBuffer;->putShort(S)Ljava/nio/ByteBuffer;
 
+    .line 8
     iget v2, p0, Lcom/applovin/impl/xc$c;->F:F
 
     mul-float v2, v2, v3
@@ -851,9 +890,9 @@
 
     int-to-short v2, v2
 
-    .line 6
     invoke-virtual {v1, v2}, Ljava/nio/ByteBuffer;->putShort(S)Ljava/nio/ByteBuffer;
 
+    .line 9
     iget v2, p0, Lcom/applovin/impl/xc$c;->G:F
 
     mul-float v2, v2, v3
@@ -864,9 +903,9 @@
 
     int-to-short v2, v2
 
-    .line 7
     invoke-virtual {v1, v2}, Ljava/nio/ByteBuffer;->putShort(S)Ljava/nio/ByteBuffer;
 
+    .line 10
     iget v2, p0, Lcom/applovin/impl/xc$c;->H:F
 
     mul-float v2, v2, v3
@@ -877,9 +916,9 @@
 
     int-to-short v2, v2
 
-    .line 8
     invoke-virtual {v1, v2}, Ljava/nio/ByteBuffer;->putShort(S)Ljava/nio/ByteBuffer;
 
+    .line 11
     iget v2, p0, Lcom/applovin/impl/xc$c;->I:F
 
     mul-float v2, v2, v3
@@ -890,9 +929,9 @@
 
     int-to-short v2, v2
 
-    .line 9
     invoke-virtual {v1, v2}, Ljava/nio/ByteBuffer;->putShort(S)Ljava/nio/ByteBuffer;
 
+    .line 12
     iget v2, p0, Lcom/applovin/impl/xc$c;->J:F
 
     mul-float v2, v2, v3
@@ -903,9 +942,9 @@
 
     int-to-short v2, v2
 
-    .line 10
     invoke-virtual {v1, v2}, Ljava/nio/ByteBuffer;->putShort(S)Ljava/nio/ByteBuffer;
 
+    .line 13
     iget v2, p0, Lcom/applovin/impl/xc$c;->K:F
 
     mul-float v2, v2, v3
@@ -916,9 +955,9 @@
 
     int-to-short v2, v2
 
-    .line 11
     invoke-virtual {v1, v2}, Ljava/nio/ByteBuffer;->putShort(S)Ljava/nio/ByteBuffer;
 
+    .line 14
     iget v2, p0, Lcom/applovin/impl/xc$c;->L:F
 
     add-float/2addr v2, v4
@@ -927,9 +966,9 @@
 
     int-to-short v2, v2
 
-    .line 12
     invoke-virtual {v1, v2}, Ljava/nio/ByteBuffer;->putShort(S)Ljava/nio/ByteBuffer;
 
+    .line 15
     iget v2, p0, Lcom/applovin/impl/xc$c;->M:F
 
     add-float/2addr v2, v4
@@ -938,21 +977,20 @@
 
     int-to-short v2, v2
 
-    .line 13
     invoke-virtual {v1, v2}, Ljava/nio/ByteBuffer;->putShort(S)Ljava/nio/ByteBuffer;
 
+    .line 16
     iget v2, p0, Lcom/applovin/impl/xc$c;->B:I
 
     int-to-short v2, v2
 
-    .line 14
     invoke-virtual {v1, v2}, Ljava/nio/ByteBuffer;->putShort(S)Ljava/nio/ByteBuffer;
 
+    .line 17
     iget v2, p0, Lcom/applovin/impl/xc$c;->C:I
 
     int-to-short v2, v2
 
-    .line 15
     invoke-virtual {v1, v2}, Ljava/nio/ByteBuffer;->putShort(S)Ljava/nio/ByteBuffer;
 
     return-object v0
@@ -971,591 +1009,591 @@
 
     move-object/from16 v0, p0
 
-    iget-object v1, v0, Lcom/applovin/impl/xc$c;->b:Ljava/lang/String;
-
-    .line 6
-    invoke-virtual {v1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
-
-    invoke-virtual {v1}, Ljava/lang/String;->hashCode()I
-
-    move-result v2
-
-    const/16 v3, 0x10
-
-    const/16 v6, 0x8
-
-    const/4 v7, 0x4
-
-    const/4 v8, 0x3
-
-    const/4 v9, 0x0
-
-    sparse-switch v2, :sswitch_data_0
-
-    :goto_0
-    const/4 v1, -0x1
-
-    goto/16 :goto_1
-
-    :sswitch_0
-    const-string v2, "A_OPUS"
-
-    invoke-virtual {v1, v2}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
-
-    move-result v1
-
-    if-nez v1, :cond_0
-
-    goto :goto_0
-
-    :cond_0
-    const/16 v1, 0x1f
-
-    goto/16 :goto_1
-
-    :sswitch_1
-    const-string v2, "A_FLAC"
-
-    invoke-virtual {v1, v2}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
-
-    move-result v1
-
-    if-nez v1, :cond_1
-
-    goto :goto_0
-
-    :cond_1
-    const/16 v1, 0x1e
-
-    goto/16 :goto_1
-
-    :sswitch_2
-    const-string v2, "A_EAC3"
-
-    invoke-virtual {v1, v2}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
-
-    move-result v1
-
-    if-nez v1, :cond_2
-
-    goto :goto_0
-
-    :cond_2
-    const/16 v1, 0x1d
-
-    goto/16 :goto_1
-
-    :sswitch_3
-    const-string v2, "V_MPEG2"
-
-    invoke-virtual {v1, v2}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
-
-    move-result v1
-
-    if-nez v1, :cond_3
-
-    goto :goto_0
-
-    :cond_3
-    const/16 v1, 0x1c
-
-    goto/16 :goto_1
-
-    :sswitch_4
-    const-string v2, "S_TEXT/UTF8"
-
-    invoke-virtual {v1, v2}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
-
-    move-result v1
-
-    if-nez v1, :cond_4
-
-    goto :goto_0
-
-    :cond_4
-    const/16 v1, 0x1b
-
-    goto/16 :goto_1
-
-    :sswitch_5
-    const-string v2, "V_MPEGH/ISO/HEVC"
-
-    invoke-virtual {v1, v2}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
-
-    move-result v1
-
-    if-nez v1, :cond_5
-
-    goto :goto_0
-
-    :cond_5
-    const/16 v1, 0x1a
-
-    goto/16 :goto_1
-
-    :sswitch_6
-    const-string v2, "S_TEXT/ASS"
-
-    invoke-virtual {v1, v2}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
-
-    move-result v1
-
-    if-nez v1, :cond_6
-
-    goto :goto_0
-
-    :cond_6
-    const/16 v1, 0x19
-
-    goto/16 :goto_1
-
-    :sswitch_7
-    const-string v2, "A_PCM/INT/LIT"
-
-    invoke-virtual {v1, v2}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
-
-    move-result v1
-
-    if-nez v1, :cond_7
-
-    goto :goto_0
-
-    :cond_7
-    const/16 v1, 0x18
-
-    goto/16 :goto_1
-
-    :sswitch_8
-    const-string v2, "A_PCM/INT/BIG"
-
-    invoke-virtual {v1, v2}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
-
-    move-result v1
-
-    if-nez v1, :cond_8
-
-    goto :goto_0
-
-    :cond_8
-    const/16 v1, 0x17
-
-    goto/16 :goto_1
-
-    :sswitch_9
-    const-string v2, "A_PCM/FLOAT/IEEE"
-
-    invoke-virtual {v1, v2}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
-
-    move-result v1
-
-    if-nez v1, :cond_9
-
-    goto/16 :goto_0
-
-    :cond_9
-    const/16 v1, 0x16
-
-    goto/16 :goto_1
-
-    :sswitch_a
-    const-string v2, "A_DTS/EXPRESS"
-
-    invoke-virtual {v1, v2}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
-
-    move-result v1
-
-    if-nez v1, :cond_a
-
-    goto/16 :goto_0
-
-    :cond_a
-    const/16 v1, 0x15
-
-    goto/16 :goto_1
-
-    :sswitch_b
-    const-string v2, "V_THEORA"
-
-    invoke-virtual {v1, v2}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
-
-    move-result v1
-
-    if-nez v1, :cond_b
-
-    goto/16 :goto_0
-
-    :cond_b
-    const/16 v1, 0x14
-
-    goto/16 :goto_1
-
-    :sswitch_c
-    const-string v2, "S_HDMV/PGS"
-
-    invoke-virtual {v1, v2}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
-
-    move-result v1
-
-    if-nez v1, :cond_c
-
-    goto/16 :goto_0
-
-    :cond_c
-    const/16 v1, 0x13
-
-    goto/16 :goto_1
-
-    :sswitch_d
-    const-string v2, "V_VP9"
-
-    invoke-virtual {v1, v2}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
-
-    move-result v1
-
-    if-nez v1, :cond_d
-
-    goto/16 :goto_0
-
-    :cond_d
-    const/16 v1, 0x12
-
-    goto/16 :goto_1
-
-    :sswitch_e
-    const-string v2, "V_VP8"
-
-    invoke-virtual {v1, v2}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
-
-    move-result v1
-
-    if-nez v1, :cond_e
-
-    goto/16 :goto_0
-
-    :cond_e
-    const/16 v1, 0x11
-
-    goto/16 :goto_1
-
-    :sswitch_f
-    const-string v2, "V_AV1"
-
-    invoke-virtual {v1, v2}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
-
-    move-result v1
-
-    if-nez v1, :cond_f
-
-    goto/16 :goto_0
-
-    :cond_f
     const/16 v1, 0x10
 
-    goto/16 :goto_1
+    .line 7
+    iget-object v4, v0, Lcom/applovin/impl/xc$c;->b:Ljava/lang/String;
 
-    :sswitch_10
-    const-string v2, "A_DTS"
+    invoke-virtual {v4}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
-    invoke-virtual {v1, v2}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+    const-string v6, "application/dvbsubs"
 
-    move-result v1
+    const-string v7, "application/vobsub"
 
-    if-nez v1, :cond_10
+    const-string v8, "application/pgs"
 
-    goto/16 :goto_0
+    const-string v9, "text/x-ssa"
 
-    :cond_10
-    const/16 v1, 0xf
+    const-string v10, "application/x-subrip"
 
-    goto/16 :goto_1
+    const/4 v11, 0x4
 
-    :sswitch_11
-    const-string v2, "A_AC3"
+    const/16 v12, 0x8
 
-    invoke-virtual {v1, v2}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+    const/4 v13, 0x3
 
-    move-result v1
+    const/4 v14, 0x0
 
-    if-nez v1, :cond_11
-
-    goto/16 :goto_0
-
-    :cond_11
-    const/16 v1, 0xe
-
-    goto/16 :goto_1
-
-    :sswitch_12
-    const-string v2, "A_AAC"
-
-    invoke-virtual {v1, v2}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
-
-    move-result v1
-
-    if-nez v1, :cond_12
-
-    goto/16 :goto_0
-
-    :cond_12
-    const/16 v1, 0xd
-
-    goto/16 :goto_1
-
-    :sswitch_13
-    const-string v2, "A_DTS/LOSSLESS"
-
-    invoke-virtual {v1, v2}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
-
-    move-result v1
-
-    if-nez v1, :cond_13
-
-    goto/16 :goto_0
-
-    :cond_13
-    const/16 v1, 0xc
-
-    goto/16 :goto_1
-
-    :sswitch_14
-    const-string v2, "S_VOBSUB"
-
-    invoke-virtual {v1, v2}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
-
-    move-result v1
-
-    if-nez v1, :cond_14
-
-    goto/16 :goto_0
-
-    :cond_14
-    const/16 v1, 0xb
-
-    goto/16 :goto_1
-
-    :sswitch_15
-    const-string v2, "V_MPEG4/ISO/AVC"
-
-    invoke-virtual {v1, v2}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
-
-    move-result v1
-
-    if-nez v1, :cond_15
-
-    goto/16 :goto_0
-
-    :cond_15
-    const/16 v1, 0xa
-
-    goto/16 :goto_1
-
-    :sswitch_16
-    const-string v2, "V_MPEG4/ISO/ASP"
-
-    invoke-virtual {v1, v2}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
-
-    move-result v1
-
-    if-nez v1, :cond_16
-
-    goto/16 :goto_0
-
-    :cond_16
-    const/16 v1, 0x9
-
-    goto/16 :goto_1
-
-    :sswitch_17
-    const-string v2, "S_DVBSUB"
-
-    invoke-virtual {v1, v2}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
-
-    move-result v1
-
-    if-nez v1, :cond_17
-
-    goto/16 :goto_0
-
-    :cond_17
-    const/16 v1, 0x8
-
-    goto/16 :goto_1
-
-    :sswitch_18
-    const-string v2, "V_MS/VFW/FOURCC"
-
-    invoke-virtual {v1, v2}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
-
-    move-result v1
-
-    if-nez v1, :cond_18
-
-    goto/16 :goto_0
-
-    :cond_18
-    const/4 v1, 0x7
-
-    goto :goto_1
-
-    :sswitch_19
-    const-string v2, "A_MPEG/L3"
-
-    invoke-virtual {v1, v2}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
-
-    move-result v1
-
-    if-nez v1, :cond_19
-
-    goto/16 :goto_0
-
-    :cond_19
-    const/4 v1, 0x6
-
-    goto :goto_1
-
-    :sswitch_1a
-    const-string v2, "A_MPEG/L2"
-
-    invoke-virtual {v1, v2}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
-
-    move-result v1
-
-    if-nez v1, :cond_1a
-
-    goto/16 :goto_0
-
-    :cond_1a
-    const/4 v1, 0x5
-
-    goto :goto_1
-
-    :sswitch_1b
-    const-string v2, "A_VORBIS"
-
-    invoke-virtual {v1, v2}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
-
-    move-result v1
-
-    if-nez v1, :cond_1b
-
-    goto/16 :goto_0
-
-    :cond_1b
-    const/4 v1, 0x4
-
-    goto :goto_1
-
-    :sswitch_1c
-    const-string v2, "A_TRUEHD"
-
-    invoke-virtual {v1, v2}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
-
-    move-result v1
-
-    if-nez v1, :cond_1c
-
-    goto/16 :goto_0
-
-    :cond_1c
-    const/4 v1, 0x3
-
-    goto :goto_1
-
-    :sswitch_1d
-    const-string v2, "A_MS/ACM"
-
-    invoke-virtual {v1, v2}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
-
-    move-result v1
-
-    if-nez v1, :cond_1d
-
-    goto/16 :goto_0
-
-    :cond_1d
-    const/4 v1, 0x2
-
-    goto :goto_1
-
-    :sswitch_1e
-    const-string v2, "V_MPEG4/ISO/SP"
-
-    invoke-virtual {v1, v2}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
-
-    move-result v1
-
-    if-nez v1, :cond_1e
-
-    goto/16 :goto_0
-
-    :cond_1e
-    const/4 v1, 0x1
-
-    goto :goto_1
-
-    :sswitch_1f
-    const-string v2, "V_MPEG4/ISO/AP"
-
-    invoke-virtual {v1, v2}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
-
-    move-result v1
-
-    if-nez v1, :cond_1f
-
-    goto/16 :goto_0
-
-    :cond_1f
-    const/4 v1, 0x0
-
-    :goto_1
-    const-string v11, "application/dvbsubs"
-
-    const-string v12, "application/vobsub"
-
-    const-string v13, "application/pgs"
-
-    const-string v14, "text/x-ssa"
-
-    const-string v15, "application/x-subrip"
-
-    const-string v2, ". Setting mimeType to audio/x-unknown"
+    const-string v15, ". Setting mimeType to audio/x-unknown"
 
     const-string v16, "audio/raw"
 
-    const-string v4, "MatroskaExtractor"
+    const-string v2, "MatroskaExtractor"
 
     const-string v17, "audio/x-unknown"
 
     const/4 v5, 0x0
 
-    packed-switch v1, :pswitch_data_0
+    invoke-virtual {v4}, Ljava/lang/String;->hashCode()I
 
+    move-result v18
+
+    sparse-switch v18, :sswitch_data_0
+
+    :goto_0
+    const/4 v3, -0x1
+
+    goto/16 :goto_1
+
+    :sswitch_0
+    const-string v3, "A_OPUS"
+
+    invoke-virtual {v4, v3}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v3
+
+    if-nez v3, :cond_0
+
+    goto :goto_0
+
+    :cond_0
+    const/16 v3, 0x1f
+
+    goto/16 :goto_1
+
+    :sswitch_1
+    const-string v3, "A_FLAC"
+
+    invoke-virtual {v4, v3}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v3
+
+    if-nez v3, :cond_1
+
+    goto :goto_0
+
+    :cond_1
+    const/16 v3, 0x1e
+
+    goto/16 :goto_1
+
+    :sswitch_2
+    const-string v3, "A_EAC3"
+
+    invoke-virtual {v4, v3}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v3
+
+    if-nez v3, :cond_2
+
+    goto :goto_0
+
+    :cond_2
+    const/16 v3, 0x1d
+
+    goto/16 :goto_1
+
+    :sswitch_3
+    const-string v3, "V_MPEG2"
+
+    invoke-virtual {v4, v3}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v3
+
+    if-nez v3, :cond_3
+
+    goto :goto_0
+
+    :cond_3
+    const/16 v3, 0x1c
+
+    goto/16 :goto_1
+
+    :sswitch_4
+    const-string v3, "S_TEXT/UTF8"
+
+    invoke-virtual {v4, v3}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v3
+
+    if-nez v3, :cond_4
+
+    goto :goto_0
+
+    :cond_4
+    const/16 v3, 0x1b
+
+    goto/16 :goto_1
+
+    :sswitch_5
+    const-string v3, "V_MPEGH/ISO/HEVC"
+
+    invoke-virtual {v4, v3}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v3
+
+    if-nez v3, :cond_5
+
+    goto :goto_0
+
+    :cond_5
+    const/16 v3, 0x1a
+
+    goto/16 :goto_1
+
+    :sswitch_6
+    const-string v3, "S_TEXT/ASS"
+
+    invoke-virtual {v4, v3}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v3
+
+    if-nez v3, :cond_6
+
+    goto :goto_0
+
+    :cond_6
+    const/16 v3, 0x19
+
+    goto/16 :goto_1
+
+    :sswitch_7
+    const-string v3, "A_PCM/INT/LIT"
+
+    invoke-virtual {v4, v3}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v3
+
+    if-nez v3, :cond_7
+
+    goto :goto_0
+
+    :cond_7
+    const/16 v3, 0x18
+
+    goto/16 :goto_1
+
+    :sswitch_8
+    const-string v3, "A_PCM/INT/BIG"
+
+    invoke-virtual {v4, v3}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v3
+
+    if-nez v3, :cond_8
+
+    goto :goto_0
+
+    :cond_8
+    const/16 v3, 0x17
+
+    goto/16 :goto_1
+
+    :sswitch_9
+    const-string v3, "A_PCM/FLOAT/IEEE"
+
+    invoke-virtual {v4, v3}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v3
+
+    if-nez v3, :cond_9
+
+    goto/16 :goto_0
+
+    :cond_9
+    const/16 v3, 0x16
+
+    goto/16 :goto_1
+
+    :sswitch_a
+    const-string v3, "A_DTS/EXPRESS"
+
+    invoke-virtual {v4, v3}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v3
+
+    if-nez v3, :cond_a
+
+    goto/16 :goto_0
+
+    :cond_a
+    const/16 v3, 0x15
+
+    goto/16 :goto_1
+
+    :sswitch_b
+    const-string v3, "V_THEORA"
+
+    invoke-virtual {v4, v3}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v3
+
+    if-nez v3, :cond_b
+
+    goto/16 :goto_0
+
+    :cond_b
+    const/16 v3, 0x14
+
+    goto/16 :goto_1
+
+    :sswitch_c
+    const-string v3, "S_HDMV/PGS"
+
+    invoke-virtual {v4, v3}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v3
+
+    if-nez v3, :cond_c
+
+    goto/16 :goto_0
+
+    :cond_c
+    const/16 v3, 0x13
+
+    goto/16 :goto_1
+
+    :sswitch_d
+    const-string v3, "V_VP9"
+
+    invoke-virtual {v4, v3}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v3
+
+    if-nez v3, :cond_d
+
+    goto/16 :goto_0
+
+    :cond_d
+    const/16 v3, 0x12
+
+    goto/16 :goto_1
+
+    :sswitch_e
+    const-string v3, "V_VP8"
+
+    invoke-virtual {v4, v3}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v3
+
+    if-nez v3, :cond_e
+
+    goto/16 :goto_0
+
+    :cond_e
+    const/16 v3, 0x11
+
+    goto/16 :goto_1
+
+    :sswitch_f
+    const-string v3, "V_AV1"
+
+    invoke-virtual {v4, v3}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v3
+
+    if-nez v3, :cond_f
+
+    goto/16 :goto_0
+
+    :cond_f
+    const/16 v3, 0x10
+
+    goto/16 :goto_1
+
+    :sswitch_10
+    const-string v3, "A_DTS"
+
+    invoke-virtual {v4, v3}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v3
+
+    if-nez v3, :cond_10
+
+    goto/16 :goto_0
+
+    :cond_10
+    const/16 v3, 0xf
+
+    goto/16 :goto_1
+
+    :sswitch_11
+    const-string v3, "A_AC3"
+
+    invoke-virtual {v4, v3}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v3
+
+    if-nez v3, :cond_11
+
+    goto/16 :goto_0
+
+    :cond_11
+    const/16 v3, 0xe
+
+    goto/16 :goto_1
+
+    :sswitch_12
+    const-string v3, "A_AAC"
+
+    invoke-virtual {v4, v3}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v3
+
+    if-nez v3, :cond_12
+
+    goto/16 :goto_0
+
+    :cond_12
+    const/16 v3, 0xd
+
+    goto/16 :goto_1
+
+    :sswitch_13
+    const-string v3, "A_DTS/LOSSLESS"
+
+    invoke-virtual {v4, v3}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v3
+
+    if-nez v3, :cond_13
+
+    goto/16 :goto_0
+
+    :cond_13
+    const/16 v3, 0xc
+
+    goto/16 :goto_1
+
+    :sswitch_14
+    const-string v3, "S_VOBSUB"
+
+    invoke-virtual {v4, v3}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v3
+
+    if-nez v3, :cond_14
+
+    goto/16 :goto_0
+
+    :cond_14
+    const/16 v3, 0xb
+
+    goto/16 :goto_1
+
+    :sswitch_15
+    const-string v3, "V_MPEG4/ISO/AVC"
+
+    invoke-virtual {v4, v3}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v3
+
+    if-nez v3, :cond_15
+
+    goto/16 :goto_0
+
+    :cond_15
+    const/16 v3, 0xa
+
+    goto/16 :goto_1
+
+    :sswitch_16
+    const-string v3, "V_MPEG4/ISO/ASP"
+
+    invoke-virtual {v4, v3}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v3
+
+    if-nez v3, :cond_16
+
+    goto/16 :goto_0
+
+    :cond_16
+    const/16 v3, 0x9
+
+    goto/16 :goto_1
+
+    :sswitch_17
+    const-string v3, "S_DVBSUB"
+
+    invoke-virtual {v4, v3}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v3
+
+    if-nez v3, :cond_17
+
+    goto/16 :goto_0
+
+    :cond_17
+    const/16 v3, 0x8
+
+    goto/16 :goto_1
+
+    :sswitch_18
+    const-string v3, "V_MS/VFW/FOURCC"
+
+    invoke-virtual {v4, v3}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v3
+
+    if-nez v3, :cond_18
+
+    goto/16 :goto_0
+
+    :cond_18
+    const/4 v3, 0x7
+
+    goto :goto_1
+
+    :sswitch_19
+    const-string v3, "A_MPEG/L3"
+
+    invoke-virtual {v4, v3}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v3
+
+    if-nez v3, :cond_19
+
+    goto/16 :goto_0
+
+    :cond_19
+    const/4 v3, 0x6
+
+    goto :goto_1
+
+    :sswitch_1a
+    const-string v3, "A_MPEG/L2"
+
+    invoke-virtual {v4, v3}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v3
+
+    if-nez v3, :cond_1a
+
+    goto/16 :goto_0
+
+    :cond_1a
+    const/4 v3, 0x5
+
+    goto :goto_1
+
+    :sswitch_1b
+    const-string v3, "A_VORBIS"
+
+    invoke-virtual {v4, v3}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v3
+
+    if-nez v3, :cond_1b
+
+    goto/16 :goto_0
+
+    :cond_1b
+    const/4 v3, 0x4
+
+    goto :goto_1
+
+    :sswitch_1c
+    const-string v3, "A_TRUEHD"
+
+    invoke-virtual {v4, v3}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v3
+
+    if-nez v3, :cond_1c
+
+    goto/16 :goto_0
+
+    :cond_1c
+    const/4 v3, 0x3
+
+    goto :goto_1
+
+    :sswitch_1d
+    const-string v3, "A_MS/ACM"
+
+    invoke-virtual {v4, v3}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v3
+
+    if-nez v3, :cond_1d
+
+    goto/16 :goto_0
+
+    :cond_1d
+    const/4 v3, 0x2
+
+    goto :goto_1
+
+    :sswitch_1e
+    const-string v3, "V_MPEG4/ISO/SP"
+
+    invoke-virtual {v4, v3}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v3
+
+    if-nez v3, :cond_1e
+
+    goto/16 :goto_0
+
+    :cond_1e
+    const/4 v3, 0x1
+
+    goto :goto_1
+
+    :sswitch_1f
+    const-string v3, "V_MPEG4/ISO/AP"
+
+    invoke-virtual {v4, v3}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v3
+
+    if-nez v3, :cond_1f
+
+    goto/16 :goto_0
+
+    :cond_1f
+    const/4 v3, 0x0
+
+    :goto_1
+    packed-switch v3, :pswitch_data_0
+
+    .line 8
     const-string v1, "Unrecognized codec identifier."
 
-    .line 7
     invoke-static {v1, v5}, Lcom/applovin/impl/ch;->a(Ljava/lang/String;Ljava/lang/Throwable;)Lcom/applovin/impl/ch;
 
     move-result-object v1
 
     throw v1
 
-    .line 8
+    .line 9
     :pswitch_0
     new-instance v1, Ljava/util/ArrayList;
 
-    invoke-direct {v1, v8}, Ljava/util/ArrayList;-><init>(I)V
+    invoke-direct {v1, v13}, Ljava/util/ArrayList;-><init>(I)V
 
+    .line 10
     iget-object v2, v0, Lcom/applovin/impl/xc$c;->b:Ljava/lang/String;
 
-    .line 9
     invoke-direct {v0, v2}, Lcom/applovin/impl/xc$c;->a(Ljava/lang/String;)[B
 
     move-result-object v2
 
     invoke-virtual {v1, v2}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
-    .line 10
-    invoke-static {v6}, Ljava/nio/ByteBuffer;->allocate(I)Ljava/nio/ByteBuffer;
+    .line 11
+    invoke-static {v12}, Ljava/nio/ByteBuffer;->allocate(I)Ljava/nio/ByteBuffer;
 
     move-result-object v2
 
@@ -1565,11 +1603,11 @@
 
     move-result-object v2
 
-    move-object/from16 v18, v11
+    move-object v4, v6
 
-    iget-wide v10, v0, Lcom/applovin/impl/xc$c;->R:J
+    iget-wide v5, v0, Lcom/applovin/impl/xc$c;->R:J
 
-    invoke-virtual {v2, v10, v11}, Ljava/nio/ByteBuffer;->putLong(J)Ljava/nio/ByteBuffer;
+    invoke-virtual {v2, v5, v6}, Ljava/nio/ByteBuffer;->putLong(J)Ljava/nio/ByteBuffer;
 
     move-result-object v2
 
@@ -1577,11 +1615,11 @@
 
     move-result-object v2
 
-    .line 11
+    .line 12
     invoke-virtual {v1, v2}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
-    .line 12
-    invoke-static {v6}, Ljava/nio/ByteBuffer;->allocate(I)Ljava/nio/ByteBuffer;
+    .line 13
+    invoke-static {v12}, Ljava/nio/ByteBuffer;->allocate(I)Ljava/nio/ByteBuffer;
 
     move-result-object v2
 
@@ -1589,9 +1627,9 @@
 
     move-result-object v2
 
-    iget-wide v3, v0, Lcom/applovin/impl/xc$c;->S:J
+    iget-wide v5, v0, Lcom/applovin/impl/xc$c;->S:J
 
-    invoke-virtual {v2, v3, v4}, Ljava/nio/ByteBuffer;->putLong(J)Ljava/nio/ByteBuffer;
+    invoke-virtual {v2, v5, v6}, Ljava/nio/ByteBuffer;->putLong(J)Ljava/nio/ByteBuffer;
 
     move-result-object v2
 
@@ -1599,27 +1637,27 @@
 
     move-result-object v2
 
-    .line 13
+    .line 14
     invoke-virtual {v1, v2}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
     const-string v2, "audio/opus"
 
-    const/16 v3, 0x1680
+    const/16 v5, 0x1680
 
     :goto_2
-    move-object v4, v5
+    const/4 v3, 0x0
 
     :goto_3
-    const/4 v7, -0x1
+    const/4 v11, -0x1
 
     goto/16 :goto_d
 
     :pswitch_1
-    move-object/from16 v18, v11
+    move-object v4, v6
 
+    .line 15
     iget-object v1, v0, Lcom/applovin/impl/xc$c;->b:Ljava/lang/String;
 
-    .line 14
     invoke-direct {v0, v1}, Lcom/applovin/impl/xc$c;->a(Ljava/lang/String;)[B
 
     move-result-object v1
@@ -1631,38 +1669,40 @@
     const-string v2, "audio/flac"
 
     :goto_4
-    const/4 v7, -0x1
+    const/4 v11, -0x1
 
     goto/16 :goto_b
 
     :pswitch_2
-    move-object/from16 v18, v11
+    move-object v4, v6
 
+    .line 16
     const-string v16, "audio/eac3"
 
     :goto_5
-    const/4 v7, -0x1
+    const/4 v11, -0x1
 
     goto/16 :goto_9
 
     :pswitch_3
-    move-object/from16 v18, v11
+    move-object v4, v6
 
+    .line 17
     const-string v16, "video/mpeg2"
 
     goto :goto_5
 
     :pswitch_4
-    move-object/from16 v18, v11
+    move-object v4, v6
 
-    move-object/from16 v16, v15
+    move-object/from16 v16, v10
 
     goto :goto_5
 
     :pswitch_5
-    move-object/from16 v18, v11
+    move-object v4, v6
 
-    .line 15
+    .line 18
     new-instance v1, Lcom/applovin/impl/ah;
 
     iget-object v2, v0, Lcom/applovin/impl/xc$c;->b:Ljava/lang/String;
@@ -1677,21 +1717,21 @@
 
     move-result-object v1
 
-    .line 16
+    .line 19
     iget-object v2, v1, Lcom/applovin/impl/na;->a:Ljava/util/List;
 
-    .line 17
+    .line 20
     iget v3, v1, Lcom/applovin/impl/na;->b:I
 
     iput v3, v0, Lcom/applovin/impl/xc$c;->Y:I
 
-    .line 18
+    .line 21
     iget-object v1, v1, Lcom/applovin/impl/na;->c:Ljava/lang/String;
 
     const-string v3, "video/hevc"
 
     :goto_6
-    const/4 v7, -0x1
+    const/4 v11, -0x1
 
     move-object/from16 v19, v2
 
@@ -1702,9 +1742,9 @@
     goto/16 :goto_c
 
     :pswitch_6
-    move-object/from16 v18, v11
+    move-object v4, v6
 
-    .line 19
+    .line 22
     invoke-static {}, Lcom/applovin/impl/xc;->b()[B
 
     move-result-object v1
@@ -1719,23 +1759,23 @@
 
     move-result-object v1
 
-    move-object v2, v14
+    move-object v2, v9
 
     goto :goto_4
 
     :pswitch_7
-    move-object/from16 v18, v11
+    move-object v4, v6
 
+    .line 23
     iget v1, v0, Lcom/applovin/impl/xc$c;->P:I
 
-    .line 20
     invoke-static {v1}, Lcom/applovin/impl/xp;->d(I)I
 
-    move-result v7
+    move-result v11
 
-    if-nez v7, :cond_25
+    if-nez v11, :cond_25
 
-    .line 21
+    .line 24
     new-instance v1, Ljava/lang/StringBuilder;
 
     const-string v3, "Unsupported little endian PCM bit depth: "
@@ -1746,13 +1786,13 @@
 
     invoke-virtual {v1, v3}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
-    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v1, v15}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
     move-result-object v1
 
-    invoke-static {v4, v1}, Lcom/applovin/impl/oc;->d(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v2, v1}, Lcom/applovin/impl/oc;->d(Ljava/lang/String;Ljava/lang/String;)V
 
     :goto_7
     move-object/from16 v16, v17
@@ -1760,24 +1800,25 @@
     goto :goto_5
 
     :pswitch_8
-    move-object/from16 v18, v11
+    move-object v4, v6
 
-    iget v1, v0, Lcom/applovin/impl/xc$c;->P:I
+    .line 25
+    iget v3, v0, Lcom/applovin/impl/xc$c;->P:I
 
-    if-ne v1, v6, :cond_20
+    if-ne v3, v12, :cond_20
 
-    const/4 v7, 0x3
+    const/4 v11, 0x3
 
     goto/16 :goto_9
 
     :cond_20
-    if-ne v1, v3, :cond_21
+    if-ne v3, v1, :cond_21
 
-    const/high16 v7, 0x10000000
+    const/high16 v11, 0x10000000
 
     goto/16 :goto_9
 
-    .line 22
+    .line 26
     :cond_21
     new-instance v1, Ljava/lang/StringBuilder;
 
@@ -1789,19 +1830,20 @@
 
     invoke-virtual {v1, v3}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
-    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v1, v15}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
     move-result-object v1
 
-    invoke-static {v4, v1}, Lcom/applovin/impl/oc;->d(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v2, v1}, Lcom/applovin/impl/oc;->d(Ljava/lang/String;Ljava/lang/String;)V
 
     goto :goto_7
 
     :pswitch_9
-    move-object/from16 v18, v11
+    move-object v4, v6
 
+    .line 27
     iget v1, v0, Lcom/applovin/impl/xc$c;->P:I
 
     const/16 v3, 0x20
@@ -1810,7 +1852,7 @@
 
     goto/16 :goto_9
 
-    .line 23
+    .line 28
     :cond_22
     new-instance v1, Ljava/lang/StringBuilder;
 
@@ -1822,71 +1864,77 @@
 
     invoke-virtual {v1, v3}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
-    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v1, v15}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
     move-result-object v1
 
-    invoke-static {v4, v1}, Lcom/applovin/impl/oc;->d(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v2, v1}, Lcom/applovin/impl/oc;->d(Ljava/lang/String;Ljava/lang/String;)V
 
     goto :goto_7
 
     :pswitch_a
-    move-object/from16 v18, v11
+    move-object v4, v6
 
+    .line 29
     const-string v16, "video/x-unknown"
 
     goto/16 :goto_5
 
     :pswitch_b
-    move-object/from16 v18, v11
+    move-object v4, v6
 
-    move-object/from16 v16, v13
+    move-object/from16 v16, v8
 
     goto/16 :goto_5
 
     :pswitch_c
-    move-object/from16 v18, v11
+    move-object v4, v6
 
+    .line 30
     const-string v16, "video/x-vnd.on2.vp9"
 
     goto/16 :goto_5
 
     :pswitch_d
-    move-object/from16 v18, v11
+    move-object v4, v6
 
+    .line 31
     const-string v16, "video/x-vnd.on2.vp8"
 
     goto/16 :goto_5
 
     :pswitch_e
-    move-object/from16 v18, v11
+    move-object v4, v6
 
+    .line 32
     const-string v16, "video/av01"
 
     goto/16 :goto_5
 
     :pswitch_f
-    move-object/from16 v18, v11
+    move-object v4, v6
 
+    .line 33
     const-string v16, "audio/vnd.dts"
 
     goto/16 :goto_5
 
     :pswitch_10
-    move-object/from16 v18, v11
+    move-object v4, v6
 
+    .line 34
     const-string v16, "audio/ac3"
 
     goto/16 :goto_5
 
     :pswitch_11
-    move-object/from16 v18, v11
+    move-object v4, v6
 
+    .line 35
     iget-object v1, v0, Lcom/applovin/impl/xc$c;->b:Ljava/lang/String;
 
-    .line 24
     invoke-direct {v0, v1}, Lcom/applovin/impl/xc$c;->a(Ljava/lang/String;)[B
 
     move-result-object v1
@@ -1895,45 +1943,46 @@
 
     move-result-object v1
 
+    .line 36
     iget-object v2, v0, Lcom/applovin/impl/xc$c;->k:[B
 
-    .line 25
     invoke-static {v2}, Lcom/applovin/impl/a;->a([B)Lcom/applovin/impl/a$b;
 
     move-result-object v2
 
-    .line 26
+    .line 37
     iget v3, v2, Lcom/applovin/impl/a$b;->a:I
 
     iput v3, v0, Lcom/applovin/impl/xc$c;->Q:I
 
-    .line 27
+    .line 38
     iget v3, v2, Lcom/applovin/impl/a$b;->b:I
 
     iput v3, v0, Lcom/applovin/impl/xc$c;->O:I
 
-    .line 28
+    .line 39
     iget-object v2, v2, Lcom/applovin/impl/a$b;->c:Ljava/lang/String;
 
     const-string v3, "audio/mp4a-latm"
 
-    const/4 v7, -0x1
+    const/4 v11, -0x1
 
     goto/16 :goto_c
 
     :pswitch_12
-    move-object/from16 v18, v11
+    move-object v4, v6
 
+    .line 40
     const-string v16, "audio/vnd.dts.hd"
 
     goto/16 :goto_5
 
     :pswitch_13
-    move-object/from16 v18, v11
+    move-object v4, v6
 
+    .line 41
     iget-object v1, v0, Lcom/applovin/impl/xc$c;->b:Ljava/lang/String;
 
-    .line 29
     invoke-direct {v0, v1}, Lcom/applovin/impl/xc$c;->a(Ljava/lang/String;)[B
 
     move-result-object v1
@@ -1942,14 +1991,14 @@
 
     move-result-object v1
 
-    move-object v2, v12
+    move-object v2, v7
 
     goto/16 :goto_4
 
     :pswitch_14
-    move-object/from16 v18, v11
+    move-object v4, v6
 
-    .line 30
+    .line 42
     new-instance v1, Lcom/applovin/impl/ah;
 
     iget-object v2, v0, Lcom/applovin/impl/xc$c;->b:Ljava/lang/String;
@@ -1964,15 +2013,15 @@
 
     move-result-object v1
 
-    .line 31
+    .line 43
     iget-object v2, v1, Lcom/applovin/impl/w1;->a:Ljava/util/List;
 
-    .line 32
+    .line 44
     iget v3, v1, Lcom/applovin/impl/w1;->b:I
 
     iput v3, v0, Lcom/applovin/impl/xc$c;->Y:I
 
-    .line 33
+    .line 45
     iget-object v1, v1, Lcom/applovin/impl/w1;->f:Ljava/lang/String;
 
     const-string v3, "video/avc"
@@ -1980,37 +2029,38 @@
     goto/16 :goto_6
 
     :pswitch_15
-    move-object/from16 v18, v11
+    move-object v4, v6
 
-    new-array v1, v7, [B
+    .line 46
+    new-array v1, v11, [B
 
+    .line 47
     iget-object v2, v0, Lcom/applovin/impl/xc$c;->b:Ljava/lang/String;
 
-    .line 34
     invoke-direct {v0, v2}, Lcom/applovin/impl/xc$c;->a(Ljava/lang/String;)[B
 
     move-result-object v2
 
-    invoke-static {v2, v9, v1, v9, v7}, Ljava/lang/System;->arraycopy(Ljava/lang/Object;ILjava/lang/Object;II)V
+    invoke-static {v2, v14, v1, v14, v11}, Ljava/lang/System;->arraycopy(Ljava/lang/Object;ILjava/lang/Object;II)V
 
-    .line 35
+    .line 48
     invoke-static {v1}, Lcom/applovin/impl/db;->a(Ljava/lang/Object;)Lcom/applovin/impl/db;
 
     move-result-object v1
 
-    move-object/from16 v2, v18
+    move-object v2, v4
 
     goto/16 :goto_4
 
     :pswitch_16
-    move-object/from16 v18, v11
+    move-object v4, v6
 
-    .line 36
+    .line 49
     new-instance v1, Lcom/applovin/impl/ah;
 
     iget-object v2, v0, Lcom/applovin/impl/xc$c;->b:Ljava/lang/String;
 
-    .line 37
+    .line 50
     invoke-direct {v0, v2}, Lcom/applovin/impl/xc$c;->a(Ljava/lang/String;)[B
 
     move-result-object v2
@@ -2021,12 +2071,12 @@
 
     move-result-object v1
 
-    .line 38
+    .line 51
     iget-object v2, v1, Landroid/util/Pair;->first:Ljava/lang/Object;
 
     check-cast v2, Ljava/lang/String;
 
-    .line 39
+    .line 52
     iget-object v1, v1, Landroid/util/Pair;->second:Ljava/lang/Object;
 
     check-cast v1, Ljava/util/List;
@@ -2034,32 +2084,34 @@
     goto/16 :goto_4
 
     :pswitch_17
-    move-object/from16 v18, v11
+    move-object v4, v6
 
+    .line 53
     const-string v2, "audio/mpeg"
 
     :goto_8
-    move-object v1, v5
+    const/4 v1, 0x0
 
-    move-object v4, v1
+    const/4 v3, 0x0
 
-    const/16 v3, 0x1000
+    const/16 v5, 0x1000
 
     goto/16 :goto_3
 
     :pswitch_18
-    move-object/from16 v18, v11
+    move-object v4, v6
 
+    .line 54
     const-string v2, "audio/mpeg-L2"
 
     goto :goto_8
 
     :pswitch_19
-    move-object/from16 v18, v11
+    move-object v4, v6
 
+    .line 55
     iget-object v1, v0, Lcom/applovin/impl/xc$c;->b:Ljava/lang/String;
 
-    .line 40
     invoke-direct {v0, v1}, Lcom/applovin/impl/xc$c;->a(Ljava/lang/String;)[B
 
     move-result-object v1
@@ -2070,14 +2122,14 @@
 
     const-string v2, "audio/vorbis"
 
-    const/16 v3, 0x2000
+    const/16 v5, 0x2000
 
     goto/16 :goto_2
 
     :pswitch_1a
-    move-object/from16 v18, v11
+    move-object v4, v6
 
-    .line 41
+    .line 56
     new-instance v1, Lcom/applovin/impl/xc$d;
 
     invoke-direct {v1}, Lcom/applovin/impl/xc$d;-><init>()V
@@ -2089,9 +2141,9 @@
     goto/16 :goto_5
 
     :pswitch_1b
-    move-object/from16 v18, v11
+    move-object v4, v6
 
-    .line 42
+    .line 57
     new-instance v1, Lcom/applovin/impl/ah;
 
     iget-object v3, v0, Lcom/applovin/impl/xc$c;->b:Ljava/lang/String;
@@ -2108,16 +2160,16 @@
 
     if-eqz v1, :cond_24
 
+    .line 58
     iget v1, v0, Lcom/applovin/impl/xc$c;->P:I
 
-    .line 43
     invoke-static {v1}, Lcom/applovin/impl/xp;->d(I)I
 
     move-result v1
 
     if-nez v1, :cond_23
 
-    .line 44
+    .line 59
     new-instance v1, Ljava/lang/StringBuilder;
 
     const-string v3, "Unsupported PCM bit depth: "
@@ -2128,49 +2180,49 @@
 
     invoke-virtual {v1, v3}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
-    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v1, v15}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
     move-result-object v1
 
-    invoke-static {v4, v1}, Lcom/applovin/impl/oc;->d(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v2, v1}, Lcom/applovin/impl/oc;->d(Ljava/lang/String;Ljava/lang/String;)V
 
     goto/16 :goto_7
 
     :cond_23
-    move v7, v1
+    move v11, v1
 
     goto :goto_9
 
+    .line 60
     :cond_24
     const-string v1, "Non-PCM MS/ACM is unsupported. Setting mimeType to audio/x-unknown"
 
-    .line 45
-    invoke-static {v4, v1}, Lcom/applovin/impl/oc;->d(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v2, v1}, Lcom/applovin/impl/oc;->d(Ljava/lang/String;Ljava/lang/String;)V
 
     goto/16 :goto_7
 
     :cond_25
     :goto_9
-    move-object v1, v5
-
     move-object/from16 v2, v16
+
+    const/4 v1, 0x0
 
     goto :goto_b
 
     :pswitch_1c
-    move-object/from16 v18, v11
+    move-object v4, v6
 
+    .line 61
     iget-object v1, v0, Lcom/applovin/impl/xc$c;->k:[B
 
     if-nez v1, :cond_26
 
-    move-object v1, v5
+    const/4 v1, 0x0
 
     goto :goto_a
 
-    .line 46
     :cond_26
     invoke-static {v1}, Ljava/util/Collections;->singletonList(Ljava/lang/Object;)Ljava/util/List;
 
@@ -2184,499 +2236,519 @@
     :goto_b
     move-object v3, v2
 
-    move-object v2, v5
+    const/4 v2, 0x0
 
     :goto_c
-    move-object v4, v2
+    const/4 v5, -0x1
 
-    move-object v2, v3
+    move-object/from16 v19, v3
 
-    const/4 v3, -0x1
+    move-object v3, v2
 
+    move-object/from16 v2, v19
+
+    .line 62
     :goto_d
     iget-object v6, v0, Lcom/applovin/impl/xc$c;->N:[B
 
     if-eqz v6, :cond_27
 
-    .line 47
-    new-instance v10, Lcom/applovin/impl/ah;
+    .line 63
+    new-instance v12, Lcom/applovin/impl/ah;
 
-    invoke-direct {v10, v6}, Lcom/applovin/impl/ah;-><init>([B)V
+    invoke-direct {v12, v6}, Lcom/applovin/impl/ah;-><init>([B)V
 
-    .line 48
-    invoke-static {v10}, Lcom/applovin/impl/w6;->a(Lcom/applovin/impl/ah;)Lcom/applovin/impl/w6;
+    .line 64
+    invoke-static {v12}, Lcom/applovin/impl/w6;->a(Lcom/applovin/impl/ah;)Lcom/applovin/impl/w6;
 
     move-result-object v6
 
     if-eqz v6, :cond_27
 
-    .line 49
-    iget-object v4, v6, Lcom/applovin/impl/w6;->c:Ljava/lang/String;
+    .line 65
+    iget-object v3, v6, Lcom/applovin/impl/w6;->c:Ljava/lang/String;
 
+    .line 66
     const-string v2, "video/dolby-vision"
 
+    .line 67
     :cond_27
     iget-boolean v6, v0, Lcom/applovin/impl/xc$c;->V:Z
 
-    iget-boolean v10, v0, Lcom/applovin/impl/xc$c;->U:Z
+    .line 68
+    iget-boolean v12, v0, Lcom/applovin/impl/xc$c;->U:Z
 
-    if-eqz v10, :cond_28
+    if-eqz v12, :cond_28
 
-    const/4 v10, 0x2
+    const/4 v12, 0x2
 
     goto :goto_e
 
     :cond_28
-    const/4 v10, 0x0
+    const/4 v12, 0x0
 
     :goto_e
-    or-int/2addr v6, v10
+    or-int/2addr v6, v12
 
-    .line 50
-    new-instance v10, Lcom/applovin/impl/e9$b;
+    .line 69
+    new-instance v12, Lcom/applovin/impl/e9$b;
 
-    invoke-direct {v10}, Lcom/applovin/impl/e9$b;-><init>()V
+    invoke-direct {v12}, Lcom/applovin/impl/e9$b;-><init>()V
 
-    .line 51
+    .line 70
     invoke-static {v2}, Lcom/applovin/impl/hf;->g(Ljava/lang/String;)Z
 
-    move-result v11
+    move-result v15
 
-    if-eqz v11, :cond_29
+    if-eqz v15, :cond_29
 
-    iget v5, v0, Lcom/applovin/impl/xc$c;->O:I
+    .line 71
+    iget v4, v0, Lcom/applovin/impl/xc$c;->O:I
 
-    .line 52
-    invoke-virtual {v10, v5}, Lcom/applovin/impl/e9$b;->c(I)Lcom/applovin/impl/e9$b;
+    .line 72
+    invoke-virtual {v12, v4}, Lcom/applovin/impl/e9$b;->c(I)Lcom/applovin/impl/e9$b;
 
-    move-result-object v5
+    move-result-object v4
 
-    iget v8, v0, Lcom/applovin/impl/xc$c;->Q:I
+    iget v7, v0, Lcom/applovin/impl/xc$c;->Q:I
 
-    .line 53
-    invoke-virtual {v5, v8}, Lcom/applovin/impl/e9$b;->n(I)Lcom/applovin/impl/e9$b;
+    .line 73
+    invoke-virtual {v4, v7}, Lcom/applovin/impl/e9$b;->n(I)Lcom/applovin/impl/e9$b;
 
-    move-result-object v5
+    move-result-object v4
 
-    .line 54
-    invoke-virtual {v5, v7}, Lcom/applovin/impl/e9$b;->j(I)Lcom/applovin/impl/e9$b;
+    .line 74
+    invoke-virtual {v4, v11}, Lcom/applovin/impl/e9$b;->j(I)Lcom/applovin/impl/e9$b;
 
-    const/4 v8, 0x1
+    const/4 v13, 0x1
 
-    goto/16 :goto_13
+    goto/16 :goto_14
 
-    .line 55
+    .line 75
     :cond_29
     invoke-static {v2}, Lcom/applovin/impl/hf;->i(Ljava/lang/String;)Z
 
-    move-result v7
+    move-result v11
 
-    if-eqz v7, :cond_35
+    if-eqz v11, :cond_35
 
-    iget v7, v0, Lcom/applovin/impl/xc$c;->q:I
+    .line 76
+    iget v4, v0, Lcom/applovin/impl/xc$c;->q:I
 
-    if-nez v7, :cond_2c
+    if-nez v4, :cond_2c
 
-    iget v7, v0, Lcom/applovin/impl/xc$c;->o:I
+    .line 77
+    iget v4, v0, Lcom/applovin/impl/xc$c;->o:I
 
-    const/4 v8, -0x1
+    const/4 v7, -0x1
 
-    if-ne v7, v8, :cond_2a
+    if-ne v4, v7, :cond_2a
 
-    iget v7, v0, Lcom/applovin/impl/xc$c;->m:I
+    iget v4, v0, Lcom/applovin/impl/xc$c;->m:I
 
     :cond_2a
-    iput v7, v0, Lcom/applovin/impl/xc$c;->o:I
+    iput v4, v0, Lcom/applovin/impl/xc$c;->o:I
 
-    iget v7, v0, Lcom/applovin/impl/xc$c;->p:I
+    .line 78
+    iget v4, v0, Lcom/applovin/impl/xc$c;->p:I
 
-    if-ne v7, v8, :cond_2b
+    if-ne v4, v7, :cond_2b
 
-    iget v7, v0, Lcom/applovin/impl/xc$c;->n:I
+    iget v4, v0, Lcom/applovin/impl/xc$c;->n:I
 
     :cond_2b
-    iput v7, v0, Lcom/applovin/impl/xc$c;->p:I
+    iput v4, v0, Lcom/applovin/impl/xc$c;->p:I
 
     goto :goto_f
 
     :cond_2c
-    const/4 v8, -0x1
+    const/4 v7, -0x1
 
+    .line 79
     :goto_f
-    iget v7, v0, Lcom/applovin/impl/xc$c;->o:I
+    iget v4, v0, Lcom/applovin/impl/xc$c;->o:I
 
-    if-eq v7, v8, :cond_2d
+    if-eq v4, v7, :cond_2d
 
-    iget v11, v0, Lcom/applovin/impl/xc$c;->p:I
+    iget v8, v0, Lcom/applovin/impl/xc$c;->p:I
 
-    if-eq v11, v8, :cond_2d
+    if-eq v8, v7, :cond_2d
 
-    iget v12, v0, Lcom/applovin/impl/xc$c;->n:I
+    .line 80
+    iget v9, v0, Lcom/applovin/impl/xc$c;->n:I
 
-    mul-int v12, v12, v7
+    mul-int v9, v9, v4
 
-    int-to-float v7, v12
+    int-to-float v4, v9
 
-    iget v12, v0, Lcom/applovin/impl/xc$c;->m:I
+    iget v9, v0, Lcom/applovin/impl/xc$c;->m:I
 
-    mul-int v12, v12, v11
+    mul-int v9, v9, v8
 
-    int-to-float v11, v12
+    int-to-float v8, v9
 
-    div-float/2addr v7, v11
+    div-float/2addr v4, v8
 
     goto :goto_10
 
     :cond_2d
-    const/high16 v7, -0x40800000    # -1.0f
+    const/high16 v4, -0x40800000    # -1.0f
 
+    .line 81
     :goto_10
-    iget-boolean v11, v0, Lcom/applovin/impl/xc$c;->x:Z
+    iget-boolean v8, v0, Lcom/applovin/impl/xc$c;->x:Z
 
-    if-eqz v11, :cond_2e
+    if-eqz v8, :cond_2e
 
-    .line 56
+    .line 82
     invoke-direct/range {p0 .. p0}, Lcom/applovin/impl/xc$c;->b()[B
 
-    move-result-object v5
-
-    .line 57
-    new-instance v11, Lcom/applovin/impl/r3;
-
-    iget v12, v0, Lcom/applovin/impl/xc$c;->y:I
-
-    iget v13, v0, Lcom/applovin/impl/xc$c;->A:I
-
-    iget v14, v0, Lcom/applovin/impl/xc$c;->z:I
-
-    invoke-direct {v11, v12, v13, v14, v5}, Lcom/applovin/impl/r3;-><init>(III[B)V
-
-    move-object v5, v11
-
-    :cond_2e
-    iget-object v11, v0, Lcom/applovin/impl/xc$c;->a:Ljava/lang/String;
-
-    if-eqz v11, :cond_2f
-
-    .line 58
-    invoke-static {}, Lcom/applovin/impl/xc;->c()Ljava/util/Map;
-
-    move-result-object v11
-
-    iget-object v12, v0, Lcom/applovin/impl/xc$c;->a:Ljava/lang/String;
-
-    invoke-interface {v11, v12}, Ljava/util/Map;->containsKey(Ljava/lang/Object;)Z
-
-    move-result v11
-
-    if-eqz v11, :cond_2f
-
-    .line 59
-    invoke-static {}, Lcom/applovin/impl/xc;->c()Ljava/util/Map;
-
     move-result-object v8
 
-    iget-object v11, v0, Lcom/applovin/impl/xc$c;->a:Ljava/lang/String;
+    .line 83
+    new-instance v9, Lcom/applovin/impl/r3;
 
-    invoke-interface {v8, v11}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
+    iget v10, v0, Lcom/applovin/impl/xc$c;->y:I
 
-    move-result-object v8
+    iget v11, v0, Lcom/applovin/impl/xc$c;->A:I
 
-    check-cast v8, Ljava/lang/Integer;
+    iget v13, v0, Lcom/applovin/impl/xc$c;->z:I
 
-    invoke-virtual {v8}, Ljava/lang/Integer;->intValue()I
-
-    move-result v8
-
-    :cond_2f
-    iget v11, v0, Lcom/applovin/impl/xc$c;->r:I
-
-    if-nez v11, :cond_34
-
-    iget v11, v0, Lcom/applovin/impl/xc$c;->s:F
-
-    const/4 v12, 0x0
-
-    .line 60
-    invoke-static {v11, v12}, Ljava/lang/Float;->compare(FF)I
-
-    move-result v11
-
-    if-nez v11, :cond_34
-
-    iget v11, v0, Lcom/applovin/impl/xc$c;->t:F
-
-    .line 61
-    invoke-static {v11, v12}, Ljava/lang/Float;->compare(FF)I
-
-    move-result v11
-
-    if-nez v11, :cond_34
-
-    iget v11, v0, Lcom/applovin/impl/xc$c;->u:F
-
-    .line 62
-    invoke-static {v11, v12}, Ljava/lang/Float;->compare(FF)I
-
-    move-result v11
-
-    if-nez v11, :cond_30
-
-    goto :goto_12
-
-    :cond_30
-    iget v9, v0, Lcom/applovin/impl/xc$c;->t:F
-
-    const/high16 v11, 0x42b40000    # 90.0f
-
-    .line 63
-    invoke-static {v9, v11}, Ljava/lang/Float;->compare(FF)I
-
-    move-result v9
-
-    if-nez v9, :cond_31
-
-    const/16 v9, 0x5a
-
-    goto :goto_12
-
-    :cond_31
-    iget v9, v0, Lcom/applovin/impl/xc$c;->t:F
-
-    const/high16 v11, -0x3ccc0000    # -180.0f
-
-    .line 64
-    invoke-static {v9, v11}, Ljava/lang/Float;->compare(FF)I
-
-    move-result v9
-
-    if-eqz v9, :cond_33
-
-    iget v9, v0, Lcom/applovin/impl/xc$c;->t:F
-
-    const/high16 v11, 0x43340000    # 180.0f
-
-    .line 65
-    invoke-static {v9, v11}, Ljava/lang/Float;->compare(FF)I
-
-    move-result v9
-
-    if-nez v9, :cond_32
+    invoke-direct {v9, v10, v11, v13, v8}, Lcom/applovin/impl/r3;-><init>(III[B)V
 
     goto :goto_11
 
-    :cond_32
-    iget v9, v0, Lcom/applovin/impl/xc$c;->t:F
+    :cond_2e
+    const/4 v9, 0x0
 
-    const/high16 v11, -0x3d4c0000    # -90.0f
-
-    .line 66
-    invoke-static {v9, v11}, Ljava/lang/Float;->compare(FF)I
-
-    move-result v9
-
-    if-nez v9, :cond_34
-
-    const/16 v9, 0x10e
-
-    goto :goto_12
-
-    :cond_33
+    .line 84
     :goto_11
-    const/16 v9, 0xb4
+    iget-object v8, v0, Lcom/applovin/impl/xc$c;->a:Ljava/lang/String;
 
-    goto :goto_12
+    if-eqz v8, :cond_2f
 
-    :cond_34
-    move v9, v8
-
-    :goto_12
-    iget v8, v0, Lcom/applovin/impl/xc$c;->m:I
-
-    .line 67
-    invoke-virtual {v10, v8}, Lcom/applovin/impl/e9$b;->q(I)Lcom/applovin/impl/e9$b;
+    invoke-static {}, Lcom/applovin/impl/xc;->c()Ljava/util/Map;
 
     move-result-object v8
 
-    iget v11, v0, Lcom/applovin/impl/xc$c;->n:I
+    iget-object v10, v0, Lcom/applovin/impl/xc$c;->a:Ljava/lang/String;
 
-    .line 68
-    invoke-virtual {v8, v11}, Lcom/applovin/impl/e9$b;->g(I)Lcom/applovin/impl/e9$b;
+    invoke-interface {v8, v10}, Ljava/util/Map;->containsKey(Ljava/lang/Object;)Z
 
-    move-result-object v8
+    move-result v8
 
-    .line 69
-    invoke-virtual {v8, v7}, Lcom/applovin/impl/e9$b;->b(F)Lcom/applovin/impl/e9$b;
+    if-eqz v8, :cond_2f
 
-    move-result-object v7
-
-    .line 70
-    invoke-virtual {v7, v9}, Lcom/applovin/impl/e9$b;->m(I)Lcom/applovin/impl/e9$b;
+    .line 85
+    invoke-static {}, Lcom/applovin/impl/xc;->c()Ljava/util/Map;
 
     move-result-object v7
 
-    iget-object v8, v0, Lcom/applovin/impl/xc$c;->v:[B
+    iget-object v8, v0, Lcom/applovin/impl/xc$c;->a:Ljava/lang/String;
 
-    .line 71
-    invoke-virtual {v7, v8}, Lcom/applovin/impl/e9$b;->a([B)Lcom/applovin/impl/e9$b;
-
-    move-result-object v7
-
-    iget v8, v0, Lcom/applovin/impl/xc$c;->w:I
-
-    .line 72
-    invoke-virtual {v7, v8}, Lcom/applovin/impl/e9$b;->p(I)Lcom/applovin/impl/e9$b;
+    invoke-interface {v7, v8}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object v7
 
-    .line 73
-    invoke-virtual {v7, v5}, Lcom/applovin/impl/e9$b;->a(Lcom/applovin/impl/r3;)Lcom/applovin/impl/e9$b;
+    check-cast v7, Ljava/lang/Integer;
 
-    const/4 v8, 0x2
+    invoke-virtual {v7}, Ljava/lang/Integer;->intValue()I
+
+    move-result v7
+
+    .line 86
+    :cond_2f
+    iget v8, v0, Lcom/applovin/impl/xc$c;->r:I
+
+    if-nez v8, :cond_34
+
+    iget v8, v0, Lcom/applovin/impl/xc$c;->s:F
+
+    const/4 v10, 0x0
+
+    .line 87
+    invoke-static {v8, v10}, Ljava/lang/Float;->compare(FF)I
+
+    move-result v8
+
+    if-nez v8, :cond_34
+
+    iget v8, v0, Lcom/applovin/impl/xc$c;->t:F
+
+    .line 88
+    invoke-static {v8, v10}, Ljava/lang/Float;->compare(FF)I
+
+    move-result v8
+
+    if-nez v8, :cond_34
+
+    .line 89
+    iget v8, v0, Lcom/applovin/impl/xc$c;->u:F
+
+    invoke-static {v8, v10}, Ljava/lang/Float;->compare(FF)I
+
+    move-result v8
+
+    if-nez v8, :cond_30
 
     goto :goto_13
 
-    .line 74
+    .line 90
+    :cond_30
+    iget v8, v0, Lcom/applovin/impl/xc$c;->t:F
+
+    const/high16 v10, 0x42b40000    # 90.0f
+
+    invoke-static {v8, v10}, Ljava/lang/Float;->compare(FF)I
+
+    move-result v8
+
+    if-nez v8, :cond_31
+
+    const/16 v14, 0x5a
+
+    goto :goto_13
+
+    .line 91
+    :cond_31
+    iget v8, v0, Lcom/applovin/impl/xc$c;->t:F
+
+    const/high16 v10, -0x3ccc0000    # -180.0f
+
+    invoke-static {v8, v10}, Ljava/lang/Float;->compare(FF)I
+
+    move-result v8
+
+    if-eqz v8, :cond_33
+
+    iget v8, v0, Lcom/applovin/impl/xc$c;->t:F
+
+    const/high16 v10, 0x43340000    # 180.0f
+
+    .line 92
+    invoke-static {v8, v10}, Ljava/lang/Float;->compare(FF)I
+
+    move-result v8
+
+    if-nez v8, :cond_32
+
+    goto :goto_12
+
+    .line 93
+    :cond_32
+    iget v8, v0, Lcom/applovin/impl/xc$c;->t:F
+
+    const/high16 v10, -0x3d4c0000    # -90.0f
+
+    invoke-static {v8, v10}, Ljava/lang/Float;->compare(FF)I
+
+    move-result v8
+
+    if-nez v8, :cond_34
+
+    const/16 v14, 0x10e
+
+    goto :goto_13
+
+    :cond_33
+    :goto_12
+    const/16 v14, 0xb4
+
+    goto :goto_13
+
+    :cond_34
+    move v14, v7
+
+    .line 94
+    :goto_13
+    iget v7, v0, Lcom/applovin/impl/xc$c;->m:I
+
+    .line 95
+    invoke-virtual {v12, v7}, Lcom/applovin/impl/e9$b;->q(I)Lcom/applovin/impl/e9$b;
+
+    move-result-object v7
+
+    iget v8, v0, Lcom/applovin/impl/xc$c;->n:I
+
+    .line 96
+    invoke-virtual {v7, v8}, Lcom/applovin/impl/e9$b;->g(I)Lcom/applovin/impl/e9$b;
+
+    move-result-object v7
+
+    .line 97
+    invoke-virtual {v7, v4}, Lcom/applovin/impl/e9$b;->b(F)Lcom/applovin/impl/e9$b;
+
+    move-result-object v4
+
+    .line 98
+    invoke-virtual {v4, v14}, Lcom/applovin/impl/e9$b;->m(I)Lcom/applovin/impl/e9$b;
+
+    move-result-object v4
+
+    iget-object v7, v0, Lcom/applovin/impl/xc$c;->v:[B
+
+    .line 99
+    invoke-virtual {v4, v7}, Lcom/applovin/impl/e9$b;->a([B)Lcom/applovin/impl/e9$b;
+
+    move-result-object v4
+
+    iget v7, v0, Lcom/applovin/impl/xc$c;->w:I
+
+    .line 100
+    invoke-virtual {v4, v7}, Lcom/applovin/impl/e9$b;->p(I)Lcom/applovin/impl/e9$b;
+
+    move-result-object v4
+
+    .line 101
+    invoke-virtual {v4, v9}, Lcom/applovin/impl/e9$b;->a(Lcom/applovin/impl/r3;)Lcom/applovin/impl/e9$b;
+
+    const/4 v13, 0x2
+
+    goto :goto_14
+
+    .line 102
     :cond_35
-    invoke-virtual {v15, v2}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+    invoke-virtual {v10, v2}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
-    move-result v7
+    move-result v10
 
-    if-nez v7, :cond_37
+    if-nez v10, :cond_37
 
-    .line 75
-    invoke-virtual {v14, v2}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+    .line 103
+    invoke-virtual {v9, v2}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
-    move-result v7
+    move-result v9
 
-    if-nez v7, :cond_37
+    if-nez v9, :cond_37
 
-    .line 76
-    invoke-virtual {v12, v2}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
-
-    move-result v7
-
-    if-nez v7, :cond_37
-
-    .line 77
-    invoke-virtual {v13, v2}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
-
-    move-result v7
-
-    if-nez v7, :cond_37
-
-    move-object/from16 v7, v18
-
-    .line 78
+    .line 104
     invoke-virtual {v7, v2}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
     move-result v7
 
-    if-eqz v7, :cond_36
+    if-nez v7, :cond_37
 
-    goto :goto_13
+    .line 105
+    invoke-virtual {v8, v2}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
+    move-result v7
+
+    if-nez v7, :cond_37
+
+    .line 106
+    invoke-virtual {v4, v2}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v4
+
+    if-eqz v4, :cond_36
+
+    goto :goto_14
+
+    .line 107
     :cond_36
     const-string v1, "Unexpected MIME type."
 
-    .line 79
-    invoke-static {v1, v5}, Lcom/applovin/impl/ch;->a(Ljava/lang/String;Ljava/lang/Throwable;)Lcom/applovin/impl/ch;
+    const/4 v2, 0x0
+
+    invoke-static {v1, v2}, Lcom/applovin/impl/ch;->a(Ljava/lang/String;Ljava/lang/Throwable;)Lcom/applovin/impl/ch;
 
     move-result-object v1
 
     throw v1
 
+    .line 108
     :cond_37
-    :goto_13
-    iget-object v5, v0, Lcom/applovin/impl/xc$c;->a:Ljava/lang/String;
+    :goto_14
+    iget-object v4, v0, Lcom/applovin/impl/xc$c;->a:Ljava/lang/String;
 
-    if-eqz v5, :cond_38
+    if-eqz v4, :cond_38
 
-    .line 80
     invoke-static {}, Lcom/applovin/impl/xc;->c()Ljava/util/Map;
 
-    move-result-object v5
+    move-result-object v4
 
     iget-object v7, v0, Lcom/applovin/impl/xc$c;->a:Ljava/lang/String;
 
-    invoke-interface {v5, v7}, Ljava/util/Map;->containsKey(Ljava/lang/Object;)Z
+    invoke-interface {v4, v7}, Ljava/util/Map;->containsKey(Ljava/lang/Object;)Z
 
-    move-result v5
+    move-result v4
 
-    if-nez v5, :cond_38
+    if-nez v4, :cond_38
 
-    iget-object v5, v0, Lcom/applovin/impl/xc$c;->a:Ljava/lang/String;
+    .line 109
+    iget-object v4, v0, Lcom/applovin/impl/xc$c;->a:Ljava/lang/String;
 
-    .line 81
-    invoke-virtual {v10, v5}, Lcom/applovin/impl/e9$b;->d(Ljava/lang/String;)Lcom/applovin/impl/e9$b;
+    invoke-virtual {v12, v4}, Lcom/applovin/impl/e9$b;->d(Ljava/lang/String;)Lcom/applovin/impl/e9$b;
 
     :cond_38
-    move/from16 v5, p2
+    move/from16 v4, p2
 
-    .line 82
-    invoke-virtual {v10, v5}, Lcom/applovin/impl/e9$b;->h(I)Lcom/applovin/impl/e9$b;
+    .line 110
+    invoke-virtual {v12, v4}, Lcom/applovin/impl/e9$b;->h(I)Lcom/applovin/impl/e9$b;
 
-    move-result-object v5
+    move-result-object v4
 
-    .line 83
-    invoke-virtual {v5, v2}, Lcom/applovin/impl/e9$b;->f(Ljava/lang/String;)Lcom/applovin/impl/e9$b;
-
-    move-result-object v2
-
-    .line 84
-    invoke-virtual {v2, v3}, Lcom/applovin/impl/e9$b;->i(I)Lcom/applovin/impl/e9$b;
+    .line 111
+    invoke-virtual {v4, v2}, Lcom/applovin/impl/e9$b;->f(Ljava/lang/String;)Lcom/applovin/impl/e9$b;
 
     move-result-object v2
 
-    iget-object v3, v0, Lcom/applovin/impl/xc$c;->W:Ljava/lang/String;
-
-    .line 85
-    invoke-virtual {v2, v3}, Lcom/applovin/impl/e9$b;->e(Ljava/lang/String;)Lcom/applovin/impl/e9$b;
+    .line 112
+    invoke-virtual {v2, v5}, Lcom/applovin/impl/e9$b;->i(I)Lcom/applovin/impl/e9$b;
 
     move-result-object v2
 
-    .line 86
+    iget-object v4, v0, Lcom/applovin/impl/xc$c;->W:Ljava/lang/String;
+
+    .line 113
+    invoke-virtual {v2, v4}, Lcom/applovin/impl/e9$b;->e(Ljava/lang/String;)Lcom/applovin/impl/e9$b;
+
+    move-result-object v2
+
+    .line 114
     invoke-virtual {v2, v6}, Lcom/applovin/impl/e9$b;->o(I)Lcom/applovin/impl/e9$b;
 
     move-result-object v2
 
-    .line 87
+    .line 115
     invoke-virtual {v2, v1}, Lcom/applovin/impl/e9$b;->a(Ljava/util/List;)Lcom/applovin/impl/e9$b;
 
     move-result-object v1
 
-    .line 88
-    invoke-virtual {v1, v4}, Lcom/applovin/impl/e9$b;->a(Ljava/lang/String;)Lcom/applovin/impl/e9$b;
+    .line 116
+    invoke-virtual {v1, v3}, Lcom/applovin/impl/e9$b;->a(Ljava/lang/String;)Lcom/applovin/impl/e9$b;
 
     move-result-object v1
 
     iget-object v2, v0, Lcom/applovin/impl/xc$c;->l:Lcom/applovin/impl/x6;
 
-    .line 89
+    .line 117
     invoke-virtual {v1, v2}, Lcom/applovin/impl/e9$b;->a(Lcom/applovin/impl/x6;)Lcom/applovin/impl/e9$b;
 
     move-result-object v1
 
-    .line 90
+    .line 118
     invoke-virtual {v1}, Lcom/applovin/impl/e9$b;->a()Lcom/applovin/impl/e9;
 
     move-result-object v1
 
+    .line 119
     iget v2, v0, Lcom/applovin/impl/xc$c;->c:I
 
     move-object/from16 v3, p1
 
-    .line 91
-    invoke-interface {v3, v2, v8}, Lcom/applovin/impl/l8;->a(II)Lcom/applovin/impl/qo;
+    invoke-interface {v3, v2, v13}, Lcom/applovin/impl/l8;->a(II)Lcom/applovin/impl/qo;
 
     move-result-object v2
 
     iput-object v2, v0, Lcom/applovin/impl/xc$c;->X:Lcom/applovin/impl/qo;
 
-    .line 92
+    .line 120
     invoke-interface {v2, v1}, Lcom/applovin/impl/qo;->a(Lcom/applovin/impl/e9;)V
 
     return-void
+
+    nop
 
     :sswitch_data_0
     .sparse-switch

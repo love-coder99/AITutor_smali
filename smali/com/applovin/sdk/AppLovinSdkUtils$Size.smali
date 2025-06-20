@@ -150,34 +150,51 @@
 .method public getHeight()I
     .locals 1
 
+    .line 1
     iget v0, p0, Lcom/applovin/sdk/AppLovinSdkUtils$Size;->b:I
 
+    .line 2
+    .line 3
     return v0
 .end method
 
 .method public getWidth()I
     .locals 1
 
+    .line 1
     iget v0, p0, Lcom/applovin/sdk/AppLovinSdkUtils$Size;->a:I
 
+    .line 2
+    .line 3
     return v0
 .end method
 
 .method public hashCode()I
     .locals 3
 
+    .line 1
     iget v0, p0, Lcom/applovin/sdk/AppLovinSdkUtils$Size;->b:I
 
+    .line 2
+    .line 3
     iget v1, p0, Lcom/applovin/sdk/AppLovinSdkUtils$Size;->a:I
 
+    .line 4
+    .line 5
     shl-int/lit8 v2, v1, 0x10
 
+    .line 6
+    .line 7
     ushr-int/lit8 v1, v1, 0x10
 
+    .line 8
+    .line 9
     or-int/2addr v1, v2
 
+    .line 10
     xor-int/2addr v0, v1
 
+    .line 11
     return v0
 .end method
 

@@ -3,12 +3,12 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lzh/a;
+.implements Lka/a;
 
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Landroidx/compose/material3/SnackbarHostKt$FadeInFadeOutWithScale$1$1;->invoke(Lzh/e;Landroidx/compose/runtime/l;I)V
+    value = Landroidx/compose/material3/SnackbarHostKt$FadeInFadeOutWithScale$1$1;->invoke(Lka/e;Landroidx/compose/runtime/j;I)V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -19,7 +19,7 @@
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "Lkotlin/jvm/internal/Lambda;",
-        "Lzh/a;"
+        "Lka/a;"
     }
 .end annotation
 
@@ -28,7 +28,7 @@
         "\u0000\u0008\n\u0002\u0018\u0002\n\u0002\u0008\u0003\u0010\u0003\u001a\u00020\u0000H\n\u00a2\u0006\u0004\u0008\u0001\u0010\u0002"
     }
     d2 = {
-        "Lqh/r;",
+        "LX9/j;",
         "invoke",
         "()V",
         "<anonymous>"
@@ -43,32 +43,32 @@
 
 
 # instance fields
-.field final synthetic $key:Landroidx/compose/material3/a1;
+.field final synthetic $key:Landroidx/compose/material3/w0;
 
-.field final synthetic $state:Landroidx/compose/material3/a0;
+.field final synthetic $state:Landroidx/compose/material3/F;
     .annotation system Ldalvik/annotation/Signature;
         value = {
-            "Landroidx/compose/material3/a0;"
+            "Landroidx/compose/material3/F;"
         }
     .end annotation
 .end field
 
 
 # direct methods
-.method public constructor <init>(Landroidx/compose/material3/a1;Landroidx/compose/material3/a0;)V
+.method public constructor <init>(Landroidx/compose/material3/w0;Landroidx/compose/material3/F;)V
     .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
-            "Landroidx/compose/material3/a1;",
-            "Landroidx/compose/material3/a0;",
+            "Landroidx/compose/material3/w0;",
+            "Landroidx/compose/material3/F;",
             ")V"
         }
     .end annotation
 
-    iput-object p1, p0, Landroidx/compose/material3/SnackbarHostKt$FadeInFadeOutWithScale$1$1$opacity$1$1;->$key:Landroidx/compose/material3/a1;
+    iput-object p1, p0, Landroidx/compose/material3/SnackbarHostKt$FadeInFadeOutWithScale$1$1$opacity$1$1;->$key:Landroidx/compose/material3/w0;
 
-    iput-object p2, p0, Landroidx/compose/material3/SnackbarHostKt$FadeInFadeOutWithScale$1$1$opacity$1$1;->$state:Landroidx/compose/material3/a0;
+    iput-object p2, p0, Landroidx/compose/material3/SnackbarHostKt$FadeInFadeOutWithScale$1$1$opacity$1$1;->$state:Landroidx/compose/material3/F;
 
     const/4 p1, 0x0
 
@@ -85,7 +85,7 @@
     .line 1
     invoke-virtual {p0}, Landroidx/compose/material3/SnackbarHostKt$FadeInFadeOutWithScale$1$1$opacity$1$1;->invoke()V
 
-    sget-object v0, Lqh/r;->a:Lqh/r;
+    sget-object v0, LX9/j;->a:LX9/j;
 
     return-object v0
 .end method
@@ -93,45 +93,46 @@
 .method public final invoke()V
     .locals 3
 
-    iget-object v0, p0, Landroidx/compose/material3/SnackbarHostKt$FadeInFadeOutWithScale$1$1$opacity$1$1;->$key:Landroidx/compose/material3/a1;
-
-    iget-object v1, p0, Landroidx/compose/material3/SnackbarHostKt$FadeInFadeOutWithScale$1$1$opacity$1$1;->$state:Landroidx/compose/material3/a0;
-
     .line 2
-    iget-object v1, v1, Landroidx/compose/material3/a0;->a:Ljava/lang/Object;
+    iget-object v0, p0, Landroidx/compose/material3/SnackbarHostKt$FadeInFadeOutWithScale$1$1$opacity$1$1;->$key:Landroidx/compose/material3/w0;
+
+    iget-object v1, p0, Landroidx/compose/material3/SnackbarHostKt$FadeInFadeOutWithScale$1$1$opacity$1$1;->$state:Landroidx/compose/material3/F;
 
     .line 3
-    invoke-static {v0, v1}, Lrb/h;->d(Ljava/lang/Object;Ljava/lang/Object;)Z
+    iget-object v1, v1, Landroidx/compose/material3/F;->a:Ljava/lang/Object;
+
+    .line 4
+    invoke-static {v0, v1}, Lkotlin/jvm/internal/h;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result v0
 
     if-nez v0, :cond_0
 
-    iget-object v0, p0, Landroidx/compose/material3/SnackbarHostKt$FadeInFadeOutWithScale$1$1$opacity$1$1;->$state:Landroidx/compose/material3/a0;
-
-    .line 4
-    iget-object v0, v0, Landroidx/compose/material3/a0;->b:Ljava/util/ArrayList;
-
     .line 5
-    new-instance v1, Landroidx/compose/material3/SnackbarHostKt$FadeInFadeOutWithScale$1$1$opacity$1$1$1;
-
-    iget-object v2, p0, Landroidx/compose/material3/SnackbarHostKt$FadeInFadeOutWithScale$1$1$opacity$1$1;->$key:Landroidx/compose/material3/a1;
-
-    invoke-direct {v1, v2}, Landroidx/compose/material3/SnackbarHostKt$FadeInFadeOutWithScale$1$1$opacity$1$1$1;-><init>(Landroidx/compose/material3/a1;)V
-
-    invoke-static {v0, v1}, Lkotlin/collections/t;->B0(Ljava/util/AbstractList;Lzh/c;)V
-
-    iget-object v0, p0, Landroidx/compose/material3/SnackbarHostKt$FadeInFadeOutWithScale$1$1$opacity$1$1;->$state:Landroidx/compose/material3/a0;
+    iget-object v0, p0, Landroidx/compose/material3/SnackbarHostKt$FadeInFadeOutWithScale$1$1$opacity$1$1;->$state:Landroidx/compose/material3/F;
 
     .line 6
-    iget-object v0, v0, Landroidx/compose/material3/a0;->c:Landroidx/compose/runtime/w1;
+    iget-object v0, v0, Landroidx/compose/material3/F;->b:Ljava/util/ArrayList;
+
+    .line 7
+    new-instance v1, Landroidx/compose/material3/SnackbarHostKt$FadeInFadeOutWithScale$1$1$opacity$1$1$1;
+
+    iget-object v2, p0, Landroidx/compose/material3/SnackbarHostKt$FadeInFadeOutWithScale$1$1$opacity$1$1;->$key:Landroidx/compose/material3/w0;
+
+    invoke-direct {v1, v2}, Landroidx/compose/material3/SnackbarHostKt$FadeInFadeOutWithScale$1$1$opacity$1$1$1;-><init>(Landroidx/compose/material3/w0;)V
+
+    invoke-static {v0, v1}, LY9/w;->H(Ljava/util/List;Lka/c;)V
+
+    .line 8
+    iget-object v0, p0, Landroidx/compose/material3/SnackbarHostKt$FadeInFadeOutWithScale$1$1$opacity$1$1;->$state:Landroidx/compose/material3/F;
+
+    .line 9
+    iget-object v0, v0, Landroidx/compose/material3/F;->c:Landroidx/compose/runtime/l0;
 
     if-eqz v0, :cond_0
 
-    check-cast v0, Landroidx/compose/runtime/x1;
-
-    .line 7
-    invoke-virtual {v0}, Landroidx/compose/runtime/x1;->b()V
+    .line 10
+    invoke-virtual {v0}, Landroidx/compose/runtime/l0;->b()V
 
     :cond_0
     return-void

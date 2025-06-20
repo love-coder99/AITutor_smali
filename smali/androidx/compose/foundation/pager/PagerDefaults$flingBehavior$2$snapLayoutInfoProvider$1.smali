@@ -3,14 +3,14 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lzh/f;
+.implements Lka/f;
 
 
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "Lkotlin/jvm/internal/Lambda;",
-        "Lzh/f;"
+        "Lka/f;"
     }
 .end annotation
 
@@ -42,14 +42,14 @@
 
 .field final synthetic $snapPositionalThreshold:F
 
-.field final synthetic $state:Landroidx/compose/foundation/pager/u;
+.field final synthetic $state:Landroidx/compose/foundation/pager/o;
 
 
 # direct methods
-.method public constructor <init>(Landroidx/compose/foundation/pager/u;Landroidx/compose/ui/unit/LayoutDirection;F)V
+.method public constructor <init>(Landroidx/compose/foundation/pager/o;Landroidx/compose/ui/unit/LayoutDirection;F)V
     .locals 0
 
-    iput-object p1, p0, Landroidx/compose/foundation/pager/PagerDefaults$flingBehavior$2$snapLayoutInfoProvider$1;->$state:Landroidx/compose/foundation/pager/u;
+    iput-object p1, p0, Landroidx/compose/foundation/pager/PagerDefaults$flingBehavior$2$snapLayoutInfoProvider$1;->$state:Landroidx/compose/foundation/pager/o;
 
     iput-object p2, p0, Landroidx/compose/foundation/pager/PagerDefaults$flingBehavior$2$snapLayoutInfoProvider$1;->$layoutDirection:Landroidx/compose/ui/unit/LayoutDirection;
 
@@ -67,22 +67,24 @@
 .method public final invoke(FFF)Ljava/lang/Float;
     .locals 11
 
-    iget-object v0, p0, Landroidx/compose/foundation/pager/PagerDefaults$flingBehavior$2$snapLayoutInfoProvider$1;->$state:Landroidx/compose/foundation/pager/u;
+    .line 2
+    iget-object v0, p0, Landroidx/compose/foundation/pager/PagerDefaults$flingBehavior$2$snapLayoutInfoProvider$1;->$state:Landroidx/compose/foundation/pager/o;
 
+    .line 3
     iget-object v1, p0, Landroidx/compose/foundation/pager/PagerDefaults$flingBehavior$2$snapLayoutInfoProvider$1;->$layoutDirection:Landroidx/compose/ui/unit/LayoutDirection;
 
+    .line 4
     iget v2, p0, Landroidx/compose/foundation/pager/PagerDefaults$flingBehavior$2$snapLayoutInfoProvider$1;->$snapPositionalThreshold:F
 
-    .line 1
-    invoke-virtual {v0}, Landroidx/compose/foundation/pager/u;->k()Landroidx/compose/foundation/pager/k;
+    .line 5
+    invoke-virtual {v0}, Landroidx/compose/foundation/pager/o;->k()Landroidx/compose/foundation/pager/l;
 
     move-result-object v3
 
-    check-cast v3, Landroidx/compose/foundation/pager/o;
+    .line 6
+    iget-object v3, v3, Landroidx/compose/foundation/pager/l;->e:Landroidx/compose/foundation/gestures/Orientation;
 
-    .line 2
-    iget-object v3, v3, Landroidx/compose/foundation/pager/o;->e:Landroidx/compose/foundation/gestures/Orientation;
-
+    .line 7
     sget-object v4, Landroidx/compose/foundation/gestures/Orientation;->Vertical:Landroidx/compose/foundation/gestures/Orientation;
 
     const/4 v5, 0x0
@@ -91,28 +93,29 @@
 
     if-ne v3, v4, :cond_0
 
-    .line 3
-    invoke-static {v0}, Lb0/h;->O(Landroidx/compose/foundation/pager/u;)Z
+    .line 8
+    invoke-static {v0}, Lx7/c;->r(Landroidx/compose/foundation/pager/o;)Z
 
     move-result v1
 
     goto :goto_0
 
+    .line 9
     :cond_0
     sget-object v3, Landroidx/compose/ui/unit/LayoutDirection;->Ltr:Landroidx/compose/ui/unit/LayoutDirection;
 
     if-ne v1, v3, :cond_1
 
-    .line 4
-    invoke-static {v0}, Lb0/h;->O(Landroidx/compose/foundation/pager/u;)Z
+    .line 10
+    invoke-static {v0}, Lx7/c;->r(Landroidx/compose/foundation/pager/o;)Z
 
     move-result v1
 
     goto :goto_0
 
-    .line 5
+    .line 11
     :cond_1
-    invoke-static {v0}, Lb0/h;->O(Landroidx/compose/foundation/pager/u;)Z
+    invoke-static {v0}, Lx7/c;->r(Landroidx/compose/foundation/pager/o;)Z
 
     move-result v1
 
@@ -125,16 +128,14 @@
     :cond_2
     const/4 v1, 0x0
 
-    .line 6
+    .line 12
     :goto_0
-    invoke-virtual {v0}, Landroidx/compose/foundation/pager/u;->k()Landroidx/compose/foundation/pager/k;
+    invoke-virtual {v0}, Landroidx/compose/foundation/pager/o;->k()Landroidx/compose/foundation/pager/l;
 
     move-result-object v3
 
-    check-cast v3, Landroidx/compose/foundation/pager/o;
-
-    .line 7
-    iget v3, v3, Landroidx/compose/foundation/pager/o;->b:I
+    .line 13
+    iget v3, v3, Landroidx/compose/foundation/pager/l;->b:I
 
     const/4 v4, 0x0
 
@@ -144,9 +145,9 @@
 
     goto :goto_1
 
-    .line 8
+    .line 14
     :cond_3
-    invoke-static {v0}, Lb0/h;->z(Landroidx/compose/foundation/pager/u;)F
+    invoke-static {v0}, Lx7/c;->k(Landroidx/compose/foundation/pager/o;)F
 
     move-result v7
 
@@ -161,19 +162,17 @@
 
     sub-float v3, v7, v3
 
-    .line 9
-    iget-object v8, v0, Landroidx/compose/foundation/pager/u;->p:Lh2/b;
+    .line 15
+    iget-object v8, v0, Landroidx/compose/foundation/pager/o;->p:LM0/b;
 
-    .line 10
+    .line 16
     invoke-static {p1}, Ljava/lang/Math;->abs(F)F
 
     move-result v9
 
-    .line 11
     sget v10, Landroidx/compose/foundation/gestures/snapping/d;->a:F
 
-    .line 12
-    invoke-interface {v8, v10}, Lh2/b;->S(F)F
+    invoke-interface {v8, v10}, LM0/b;->S(F)F
 
     move-result v8
 
@@ -200,7 +199,7 @@
     :goto_2
     if-nez v5, :cond_8
 
-    .line 13
+    .line 17
     invoke-static {v3}, Ljava/lang/Math;->abs(F)F
 
     move-result p1
@@ -213,24 +212,23 @@
 
     goto :goto_3
 
-    .line 14
+    .line 18
     :cond_6
     invoke-static {v7}, Ljava/lang/Math;->abs(F)F
 
     move-result p1
 
-    .line 15
-    iget-object v2, v0, Landroidx/compose/foundation/pager/u;->p:Lh2/b;
+    .line 19
+    iget-object v2, v0, Landroidx/compose/foundation/pager/o;->p:LM0/b;
 
-    .line 16
-    sget v3, Landroidx/compose/foundation/pager/w;->a:F
+    .line 20
+    sget v3, Landroidx/compose/foundation/pager/q;->a:F
 
-    .line 17
-    invoke-interface {v2, v3}, Lh2/b;->S(F)F
+    invoke-interface {v2, v3}, LM0/b;->S(F)F
 
     move-result v2
 
-    invoke-virtual {v0}, Landroidx/compose/foundation/pager/u;->m()I
+    invoke-virtual {v0}, Landroidx/compose/foundation/pager/o;->m()I
 
     move-result v3
 
@@ -244,8 +242,8 @@
 
     move-result v2
 
-    .line 18
-    invoke-virtual {v0}, Landroidx/compose/foundation/pager/u;->m()I
+    .line 21
+    invoke-virtual {v0}, Landroidx/compose/foundation/pager/o;->m()I
 
     move-result v0
 
@@ -253,7 +251,7 @@
 
     div-float/2addr v2, v0
 
-    .line 19
+    .line 22
     invoke-static {v2}, Ljava/lang/Math;->abs(F)F
 
     move-result v0
@@ -266,7 +264,7 @@
 
     goto :goto_4
 
-    .line 20
+    .line 23
     :cond_7
     invoke-static {p2}, Ljava/lang/Math;->abs(F)F
 
@@ -299,7 +297,7 @@
     :cond_b
     const/4 p2, 0x0
 
-    .line 21
+    .line 24
     :cond_c
     :goto_4
     invoke-static {p2}, Ljava/lang/Float;->valueOf(F)Ljava/lang/Float;
@@ -312,7 +310,7 @@
 .method public bridge synthetic invoke(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
     .locals 0
 
-    .line 22
+    .line 1
     check-cast p1, Ljava/lang/Number;
 
     invoke-virtual {p1}, Ljava/lang/Number;->floatValue()F

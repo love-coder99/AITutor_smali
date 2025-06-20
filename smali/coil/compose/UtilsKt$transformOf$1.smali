@@ -3,14 +3,14 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lzh/c;
+.implements Lka/c;
 
 
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "Lkotlin/jvm/internal/Lambda;",
-        "Lzh/c;"
+        "Lka/c;"
     }
 .end annotation
 
@@ -69,9 +69,9 @@
 
     if-eqz v0, :cond_0
 
+    .line 3
     iget-object v0, p0, Lcoil/compose/UtilsKt$transformOf$1;->$placeholder:Landroidx/compose/ui/graphics/painter/b;
 
-    .line 3
     check-cast p1, Lcoil/compose/e;
 
     if-eqz v0, :cond_2
@@ -94,36 +94,38 @@
     check-cast p1, Lcoil/compose/d;
 
     .line 6
-    iget-object v0, p1, Lcoil/compose/d;->b:Ln5/d;
+    iget-object v0, p1, Lcoil/compose/d;->b:LH2/d;
 
     .line 7
-    iget-object v1, v0, Ln5/d;->c:Ljava/lang/Throwable;
+    iget-object v1, v0, LH2/d;->c:Ljava/lang/Throwable;
 
     .line 8
     instance-of v1, v1, Lcoil/request/NullRequestDataException;
 
     if-eqz v1, :cond_1
 
-    iget-object v1, p0, Lcoil/compose/UtilsKt$transformOf$1;->$fallback:Landroidx/compose/ui/graphics/painter/b;
-
-    if-eqz v1, :cond_2
-
     .line 9
-    new-instance p1, Lcoil/compose/d;
-
-    invoke-direct {p1, v1, v0}, Lcoil/compose/d;-><init>(Landroidx/compose/ui/graphics/painter/b;Ln5/d;)V
-
-    goto :goto_0
-
-    :cond_1
-    iget-object v1, p0, Lcoil/compose/UtilsKt$transformOf$1;->$error:Landroidx/compose/ui/graphics/painter/b;
+    iget-object v1, p0, Lcoil/compose/UtilsKt$transformOf$1;->$fallback:Landroidx/compose/ui/graphics/painter/b;
 
     if-eqz v1, :cond_2
 
     .line 10
     new-instance p1, Lcoil/compose/d;
 
-    invoke-direct {p1, v1, v0}, Lcoil/compose/d;-><init>(Landroidx/compose/ui/graphics/painter/b;Ln5/d;)V
+    invoke-direct {p1, v1, v0}, Lcoil/compose/d;-><init>(Landroidx/compose/ui/graphics/painter/b;LH2/d;)V
+
+    goto :goto_0
+
+    .line 11
+    :cond_1
+    iget-object v1, p0, Lcoil/compose/UtilsKt$transformOf$1;->$error:Landroidx/compose/ui/graphics/painter/b;
+
+    if-eqz v1, :cond_2
+
+    .line 12
+    new-instance p1, Lcoil/compose/d;
+
+    invoke-direct {p1, v1, v0}, Lcoil/compose/d;-><init>(Landroidx/compose/ui/graphics/painter/b;LH2/d;)V
 
     :cond_2
     :goto_0

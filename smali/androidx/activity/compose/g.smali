@@ -4,7 +4,7 @@
 
 
 # static fields
-.field public static final a:Landroidx/compose/runtime/q0;
+.field public static final a:Landroidx/compose/runtime/x;
 
 
 # direct methods
@@ -16,7 +16,7 @@
 
     .line 2
     .line 3
-    invoke-static {v0}, Landroidx/compose/runtime/q;->n(Lzh/a;)Landroidx/compose/runtime/q0;
+    invoke-static {v0}, Landroidx/compose/runtime/o;->B(Lka/a;)Landroidx/compose/runtime/x;
 
     .line 4
     .line 5
@@ -24,7 +24,7 @@
     move-result-object v0
 
     .line 7
-    sput-object v0, Landroidx/activity/compose/g;->a:Landroidx/compose/runtime/q0;
+    sput-object v0, Landroidx/activity/compose/g;->a:Landroidx/compose/runtime/x;
 
     .line 8
     .line 9

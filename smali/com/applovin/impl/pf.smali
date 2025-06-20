@@ -131,12 +131,13 @@
     :cond_3
     if-nez v1, :cond_4
 
+    .line 19
     const-string v1, ""
 
     :cond_4
     if-eqz v2, :cond_5
 
-    .line 19
+    .line 20
     invoke-virtual {v2, v1}, Lcom/applovin/impl/a5$b;->a(Ljava/lang/CharSequence;)Lcom/applovin/impl/a5$b;
 
     move-result-object p0
@@ -147,7 +148,7 @@
 
     goto :goto_1
 
-    .line 20
+    .line 21
     :cond_5
     invoke-static {v1}, Lcom/applovin/impl/xr;->a(Ljava/lang/CharSequence;)Lcom/applovin/impl/a5;
 
@@ -162,9 +163,9 @@
 .method public a([BIZ)Lcom/applovin/impl/nl;
     .locals 1
 
+    .line 1
     iget-object p3, p0, Lcom/applovin/impl/pf;->o:Lcom/applovin/impl/ah;
 
-    .line 1
     invoke-virtual {p3, p1, p2}, Lcom/applovin/impl/ah;->a([BI)V
 
     .line 2
@@ -172,19 +173,19 @@
 
     invoke-direct {p1}, Ljava/util/ArrayList;-><init>()V
 
+    .line 3
     :goto_0
     iget-object p2, p0, Lcom/applovin/impl/pf;->o:Lcom/applovin/impl/ah;
 
-    .line 3
     invoke-virtual {p2}, Lcom/applovin/impl/ah;->a()I
 
     move-result p2
 
     if-lez p2, :cond_2
 
+    .line 4
     iget-object p2, p0, Lcom/applovin/impl/pf;->o:Lcom/applovin/impl/ah;
 
-    .line 4
     invoke-virtual {p2}, Lcom/applovin/impl/ah;->a()I
 
     move-result p2
@@ -193,16 +194,16 @@
 
     if-lt p2, p3, :cond_1
 
+    .line 5
     iget-object p2, p0, Lcom/applovin/impl/pf;->o:Lcom/applovin/impl/ah;
 
-    .line 5
     invoke-virtual {p2}, Lcom/applovin/impl/ah;->j()I
 
     move-result p2
 
+    .line 6
     iget-object p3, p0, Lcom/applovin/impl/pf;->o:Lcom/applovin/impl/ah;
 
-    .line 6
     invoke-virtual {p3}, Lcom/applovin/impl/ah;->j()I
 
     move-result p3
@@ -211,11 +212,11 @@
 
     if-ne p3, v0, :cond_0
 
+    .line 7
     iget-object p3, p0, Lcom/applovin/impl/pf;->o:Lcom/applovin/impl/ah;
 
     add-int/lit8 p2, p2, -0x8
 
-    .line 7
     invoke-static {p3, p2}, Lcom/applovin/impl/pf;->a(Lcom/applovin/impl/ah;I)Lcom/applovin/impl/a5;
 
     move-result-object p2
@@ -224,12 +225,12 @@
 
     goto :goto_0
 
+    .line 8
     :cond_0
     iget-object p3, p0, Lcom/applovin/impl/pf;->o:Lcom/applovin/impl/ah;
 
     add-int/lit8 p2, p2, -0x8
 
-    .line 8
     invoke-virtual {p3, p2}, Lcom/applovin/impl/ah;->g(I)V
 
     goto :goto_0

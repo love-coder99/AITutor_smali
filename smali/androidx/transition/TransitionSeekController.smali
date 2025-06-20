@@ -4,21 +4,29 @@
 
 
 # virtual methods
-.method public abstract addOnProgressChangedListener(Lm3/a;)V
+.method public abstract addOnProgressChangedListener(Lu1/a;)V
+    .param p1    # Lu1/a;
+        .annotation build Landroidx/annotation/NonNull;
+        .end annotation
+    .end param
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
-            "Lm3/a;",
+            "Lu1/a;",
             ")V"
         }
     .end annotation
 .end method
 
-.method public abstract addOnReadyListener(Lm3/a;)V
+.method public abstract addOnReadyListener(Lu1/a;)V
+    .param p1    # Lu1/a;
+        .annotation build Landroidx/annotation/NonNull;
+        .end annotation
+    .end param
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
-            "Lm3/a;",
+            "Lu1/a;",
             ")V"
         }
     .end annotation
@@ -28,6 +36,10 @@
 .end method
 
 .method public abstract animateToStart(Ljava/lang/Runnable;)V
+    .param p1    # Ljava/lang/Runnable;
+        .annotation build Landroidx/annotation/NonNull;
+        .end annotation
+    .end param
 .end method
 
 .method public abstract getCurrentFraction()F
@@ -42,21 +54,29 @@
 .method public abstract isReady()Z
 .end method
 
-.method public abstract removeOnProgressChangedListener(Lm3/a;)V
+.method public abstract removeOnProgressChangedListener(Lu1/a;)V
+    .param p1    # Lu1/a;
+        .annotation build Landroidx/annotation/NonNull;
+        .end annotation
+    .end param
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
-            "Lm3/a;",
+            "Lu1/a;",
             ")V"
         }
     .end annotation
 .end method
 
-.method public abstract removeOnReadyListener(Lm3/a;)V
+.method public abstract removeOnReadyListener(Lu1/a;)V
+    .param p1    # Lu1/a;
+        .annotation build Landroidx/annotation/NonNull;
+        .end annotation
+    .end param
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
-            "Lm3/a;",
+            "Lu1/a;",
             ")V"
         }
     .end annotation

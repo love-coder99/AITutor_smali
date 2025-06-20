@@ -26,6 +26,7 @@
 .method private constructor <init>()V
     .locals 0
 
+    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -34,7 +35,7 @@
 .method public synthetic constructor <init>(Lcom/applovin/exoplayer2/common/base/MoreObjects$a;)V
     .locals 0
 
-    .line 1
+    .line 2
     invoke-direct {p0}, Lcom/applovin/exoplayer2/common/base/MoreObjects$ToStringHelper$a;-><init>()V
 
     return-void

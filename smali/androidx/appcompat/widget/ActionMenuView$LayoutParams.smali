@@ -52,6 +52,7 @@
 
     const/4 p1, 0x0
 
+    .line 6
     iput-boolean p1, p0, Landroidx/appcompat/widget/ActionMenuView$LayoutParams;->isOverflowButton:Z
 
     return-void
@@ -60,9 +61,10 @@
 .method public constructor <init>(IIZ)V
     .locals 0
 
-    .line 6
+    .line 7
     invoke-direct {p0, p1, p2}, Landroidx/appcompat/widget/LinearLayoutCompat$LayoutParams;-><init>(II)V
 
+    .line 8
     iput-boolean p3, p0, Landroidx/appcompat/widget/ActionMenuView$LayoutParams;->isOverflowButton:Z
 
     return-void

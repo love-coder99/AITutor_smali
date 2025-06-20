@@ -39,11 +39,11 @@
 .end method
 
 .method private static a(Landroid/net/Uri;)Ljava/io/RandomAccessFile;
-    .locals 6
+    .locals 7
 
     const/16 v0, 0x7d6
 
-    .line 12
+    .line 18
     :try_start_0
     new-instance v1, Ljava/io/RandomAccessFile;
 
@@ -82,7 +82,7 @@
 
     goto :goto_2
 
-    .line 13
+    .line 19
     :goto_0
     new-instance v0, Lcom/applovin/impl/o8$b;
 
@@ -92,7 +92,7 @@
 
     throw v0
 
-    .line 14
+    .line 20
     :goto_1
     new-instance v1, Lcom/applovin/impl/o8$b;
 
@@ -100,7 +100,7 @@
 
     throw v1
 
-    .line 15
+    .line 21
     :goto_2
     invoke-virtual {p0}, Landroid/net/Uri;->getQuery()Ljava/lang/String;
 
@@ -122,10 +122,10 @@
 
     if-eqz v2, :cond_1
 
-    .line 16
+    .line 22
     new-instance p0, Lcom/applovin/impl/o8$b;
 
-    .line 17
+    .line 23
     sget v2, Lcom/applovin/impl/xp;->a:I
 
     const/16 v3, 0x15
@@ -147,17 +147,17 @@
     :cond_0
     const/16 v0, 0x7d5
 
-    .line 18
+    .line 24
     :goto_3
     invoke-direct {p0, v1, v0}, Lcom/applovin/impl/o8$b;-><init>(Ljava/lang/Throwable;I)V
 
     throw p0
 
-    .line 19
+    .line 25
     :cond_1
     new-instance v0, Lcom/applovin/impl/o8$b;
 
-    .line 20
+    .line 26
     invoke-virtual {p0}, Landroid/net/Uri;->getPath()Ljava/lang/String;
 
     move-result-object v2
@@ -170,26 +170,22 @@
 
     move-result-object p0
 
-    const/4 v4, 0x3
+    .line 27
+    const-string v4, "uri has query and/or fragment, which are not supported. Did you call Uri.parse() on a string containing \'?\' or \'#\'? Use Uri.fromFile(new File(path)) to avoid this. path="
 
-    new-array v4, v4, [Ljava/lang/Object;
+    const-string v5, ",query="
 
-    const/4 v5, 0x0
+    const-string v6, ",fragment="
 
-    aput-object v2, v4, v5
+    .line 28
+    invoke-static {v4, v2, v5, v3, v6}, LB/u;->B(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    const/4 v2, 0x1
+    move-result-object v2
 
-    aput-object v3, v4, v2
+    .line 29
+    invoke-virtual {v2, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    const/4 v2, 0x2
-
-    aput-object p0, v4, v2
-
-    const-string p0, "uri has query and/or fragment, which are not supported. Did you call Uri.parse() on a string containing \'?\' or \'#\'? Use Uri.fromFile(new File(path)) to avoid this. path=%s,query=%s,fragment=%s"
-
-    .line 21
-    invoke-static {p0, v4}, Ljava/lang/String;->format(Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;
+    invoke-virtual {v2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
     move-result-object p0
 
@@ -211,6 +207,7 @@
 
     return p1
 
+    .line 13
     :cond_0
     iget-wide v0, p0, Lcom/applovin/impl/o8;->g:J
 
@@ -224,11 +221,11 @@
 
     return p1
 
+    .line 14
     :cond_1
     :try_start_0
     iget-object v0, p0, Lcom/applovin/impl/o8;->e:Ljava/io/RandomAccessFile;
 
-    .line 9
     invoke-static {v0}, Lcom/applovin/impl/xp;->a(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object v0
@@ -253,6 +250,7 @@
 
     if-lez p1, :cond_2
 
+    .line 15
     iget-wide p2, p0, Lcom/applovin/impl/o8;->g:J
 
     int-to-long v0, p1
@@ -261,7 +259,7 @@
 
     iput-wide p2, p0, Lcom/applovin/impl/o8;->g:J
 
-    .line 10
+    .line 16
     invoke-virtual {p0, p1}, Lcom/applovin/impl/a2;->d(I)V
 
     :cond_2
@@ -270,7 +268,7 @@
     :catch_0
     move-exception p1
 
-    .line 11
+    .line 17
     new-instance p2, Lcom/applovin/impl/o8$b;
 
     const/16 p3, 0x7d0
@@ -286,25 +284,26 @@
     .line 1
     iget-object v0, p1, Lcom/applovin/impl/k5;->a:Landroid/net/Uri;
 
+    .line 2
     iput-object v0, p0, Lcom/applovin/impl/o8;->f:Landroid/net/Uri;
 
-    .line 2
+    .line 3
     invoke-virtual {p0, p1}, Lcom/applovin/impl/a2;->b(Lcom/applovin/impl/k5;)V
 
-    .line 3
+    .line 4
     invoke-static {v0}, Lcom/applovin/impl/o8;->a(Landroid/net/Uri;)Ljava/io/RandomAccessFile;
 
     move-result-object v0
 
     iput-object v0, p0, Lcom/applovin/impl/o8;->e:Ljava/io/RandomAccessFile;
 
-    .line 4
+    .line 5
     :try_start_0
     iget-wide v1, p1, Lcom/applovin/impl/k5;->g:J
 
     invoke-virtual {v0, v1, v2}, Ljava/io/RandomAccessFile;->seek(J)V
 
-    .line 5
+    .line 6
     iget-wide v0, p1, Lcom/applovin/impl/k5;->h:J
 
     const-wide/16 v2, -0x1
@@ -330,6 +329,7 @@
 
     goto :goto_1
 
+    .line 7
     :cond_0
     :goto_0
     iput-wide v0, p0, Lcom/applovin/impl/o8;->g:J
@@ -344,16 +344,18 @@
 
     const/4 v0, 0x1
 
+    .line 8
     iput-boolean v0, p0, Lcom/applovin/impl/o8;->h:Z
 
-    .line 6
+    .line 9
     invoke-virtual {p0, p1}, Lcom/applovin/impl/a2;->c(Lcom/applovin/impl/k5;)V
 
+    .line 10
     iget-wide v0, p0, Lcom/applovin/impl/o8;->g:J
 
     return-wide v0
 
-    .line 7
+    .line 11
     :cond_1
     new-instance p1, Lcom/applovin/impl/o8$b;
 
@@ -365,7 +367,7 @@
 
     throw p1
 
-    .line 8
+    .line 12
     :goto_1
     new-instance v0, Lcom/applovin/impl/o8$b;
 
@@ -379,8 +381,11 @@
 .method public c()Landroid/net/Uri;
     .locals 1
 
+    .line 1
     iget-object v0, p0, Lcom/applovin/impl/o8;->f:Landroid/net/Uri;
 
+    .line 2
+    .line 3
     return-object v0
 .end method
 

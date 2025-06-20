@@ -53,7 +53,7 @@
 .method public static synthetic a(Lcom/apm/insight/runtime/a/d;I)I
     .locals 0
 
-    .line 2
+    .line 1
     iput p1, p0, Lcom/apm/insight/runtime/a/d;->a:I
 
     return p1
@@ -64,7 +64,7 @@
 .method public final a()I
     .locals 1
 
-    .line 1
+    .line 2
     iget v0, p0, Lcom/apm/insight/runtime/a/d;->a:I
 
     return v0

@@ -61,9 +61,9 @@
 .method private a(J)V
     .locals 4
 
+    .line 1
     iget-object v0, p0, Lcom/applovin/impl/od$b;->b:Lcom/applovin/impl/od;
 
-    .line 1
     iget-object v1, v0, Lcom/applovin/impl/od;->q1:Lcom/applovin/impl/od$b;
 
     if-eq p0, v1, :cond_0
@@ -94,9 +94,9 @@
     :catch_0
     move-exception p1
 
+    .line 4
     iget-object p2, p0, Lcom/applovin/impl/od$b;->b:Lcom/applovin/impl/od;
 
-    .line 4
     invoke-static {p2, p1}, Lcom/applovin/impl/od;->a(Lcom/applovin/impl/od;Lcom/applovin/impl/z7;)V
 
     :goto_0
@@ -115,6 +115,7 @@
 
     if-ge p1, p4, :cond_0
 
+    .line 6
     iget-object p1, p0, Lcom/applovin/impl/od$b;->a:Landroid/os/Handler;
 
     const/16 p4, 0x20
@@ -127,19 +128,19 @@
 
     const/4 p2, 0x0
 
-    .line 6
+    .line 7
     invoke-static {p1, p2, p5, p3}, Landroid/os/Message;->obtain(Landroid/os/Handler;III)Landroid/os/Message;
 
     move-result-object p1
 
+    .line 8
     iget-object p2, p0, Lcom/applovin/impl/od$b;->a:Landroid/os/Handler;
 
-    .line 7
     invoke-virtual {p2, p1}, Landroid/os/Handler;->sendMessageAtFrontOfQueue(Landroid/os/Message;)Z
 
     goto :goto_0
 
-    .line 8
+    .line 9
     :cond_0
     invoke-direct {p0, p2, p3}, Lcom/applovin/impl/od$b;->a(J)V
 

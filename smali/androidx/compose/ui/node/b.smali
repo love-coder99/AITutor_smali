@@ -1,32 +1,39 @@
-.class public interface abstract Landroidx/compose/ui/node/b;
+.class public abstract synthetic Landroidx/compose/ui/node/B;
 .super Ljava/lang/Object;
 .source "SourceFile"
 
-# interfaces
-.implements Landroidx/compose/ui/layout/l0;
+
+# static fields
+.field public static final synthetic a:[I
 
 
-# virtual methods
-.method public abstract H()V
-.end method
+# direct methods
+.method static constructor <clinit>()V
+    .locals 3
 
-.method public abstract I()Z
-.end method
+    invoke-static {}, Landroidx/compose/ui/node/LayoutNode$LayoutState;->values()[Landroidx/compose/ui/node/LayoutNode$LayoutState;
 
-.method public abstract T()V
-.end method
+    move-result-object v0
 
-.method public abstract b()Landroidx/compose/ui/node/a;
-.end method
+    array-length v0, v0
 
-.method public abstract f()Landroidx/compose/ui/node/t;
-.end method
+    new-array v0, v0, [I
 
-.method public abstract g(Lzh/c;)V
-.end method
+    :try_start_0
+    sget-object v1, Landroidx/compose/ui/node/LayoutNode$LayoutState;->Idle:Landroidx/compose/ui/node/LayoutNode$LayoutState;
 
-.method public abstract j()Landroidx/compose/ui/node/b;
-.end method
+    invoke-virtual {v1}, Ljava/lang/Enum;->ordinal()I
 
-.method public abstract requestLayout()V
+    move-result v1
+
+    const/4 v2, 0x1
+
+    aput v2, v0, v1
+    :try_end_0
+    .catch Ljava/lang/NoSuchFieldError; {:try_start_0 .. :try_end_0} :catch_0
+
+    :catch_0
+    sput-object v0, Landroidx/compose/ui/node/B;->a:[I
+
+    return-void
 .end method

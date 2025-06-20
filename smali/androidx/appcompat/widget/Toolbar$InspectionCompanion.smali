@@ -85,13 +85,17 @@
 # virtual methods
 .method public mapProperties(Landroid/view/inspector/PropertyMapper;)V
     .locals 1
+    .param p1    # Landroid/view/inspector/PropertyMapper;
+        .annotation build Landroidx/annotation/NonNull;
+        .end annotation
+    .end param
 
     .line 1
-    sget v0, Lg/a;->collapseContentDescription:I
+    sget v0, Li/a;->collapseContentDescription:I
 
     .line 2
     .line 3
-    invoke-static {p1, v0}, Landroidx/appcompat/widget/b;->x(Landroid/view/inspector/PropertyMapper;I)I
+    invoke-static {p1, v0}, Landroidx/appcompat/widget/f;->a(Landroid/view/inspector/PropertyMapper;I)I
 
     .line 4
     .line 5
@@ -103,11 +107,11 @@
 
     .line 8
     .line 9
-    sget v0, Lg/a;->collapseIcon:I
+    sget v0, Li/a;->collapseIcon:I
 
     .line 10
     .line 11
-    invoke-static {p1, v0}, Landroidx/appcompat/widget/b;->z(Landroid/view/inspector/PropertyMapper;I)I
+    invoke-static {p1, v0}, Landroidx/appcompat/widget/c;->l(Landroid/view/inspector/PropertyMapper;I)I
 
     .line 12
     .line 13
@@ -119,11 +123,11 @@
 
     .line 16
     .line 17
-    sget v0, Lg/a;->contentInsetEnd:I
+    sget v0, Li/a;->contentInsetEnd:I
 
     .line 18
     .line 19
-    invoke-static {p1, v0}, Landroidx/appcompat/widget/b;->A(Landroid/view/inspector/PropertyMapper;I)I
+    invoke-static {p1, v0}, Landroidx/appcompat/widget/c;->m(Landroid/view/inspector/PropertyMapper;I)I
 
     .line 20
     .line 21
@@ -135,11 +139,11 @@
 
     .line 24
     .line 25
-    sget v0, Lg/a;->contentInsetEndWithActions:I
+    sget v0, Li/a;->contentInsetEndWithActions:I
 
     .line 26
     .line 27
-    invoke-static {p1, v0}, Landroidx/appcompat/widget/b;->B(Landroid/view/inspector/PropertyMapper;I)I
+    invoke-static {p1, v0}, Landroidx/appcompat/widget/c;->n(Landroid/view/inspector/PropertyMapper;I)I
 
     .line 28
     .line 29
@@ -151,11 +155,11 @@
 
     .line 32
     .line 33
-    sget v0, Lg/a;->contentInsetLeft:I
+    sget v0, Li/a;->contentInsetLeft:I
 
     .line 34
     .line 35
-    invoke-static {p1, v0}, Landroidx/appcompat/widget/b;->C(Landroid/view/inspector/PropertyMapper;I)I
+    invoke-static {p1, v0}, Landroidx/appcompat/widget/c;->o(Landroid/view/inspector/PropertyMapper;I)I
 
     .line 36
     .line 37
@@ -167,11 +171,11 @@
 
     .line 40
     .line 41
-    sget v0, Lg/a;->contentInsetRight:I
+    sget v0, Li/a;->contentInsetRight:I
 
     .line 42
     .line 43
-    invoke-static {p1, v0}, Landroidx/appcompat/widget/b;->D(Landroid/view/inspector/PropertyMapper;I)I
+    invoke-static {p1, v0}, Landroidx/appcompat/widget/c;->p(Landroid/view/inspector/PropertyMapper;I)I
 
     .line 44
     .line 45
@@ -183,11 +187,11 @@
 
     .line 48
     .line 49
-    sget v0, Lg/a;->contentInsetStart:I
+    sget v0, Li/a;->contentInsetStart:I
 
     .line 50
     .line 51
-    invoke-static {p1, v0}, Landroidx/appcompat/widget/b;->j(Landroid/view/inspector/PropertyMapper;I)I
+    invoke-static {p1, v0}, Landroidx/appcompat/widget/c;->s(Landroid/view/inspector/PropertyMapper;I)I
 
     .line 52
     .line 53
@@ -199,11 +203,11 @@
 
     .line 56
     .line 57
-    sget v0, Lg/a;->contentInsetStartWithNavigation:I
+    sget v0, Li/a;->contentInsetStartWithNavigation:I
 
     .line 58
     .line 59
-    invoke-static {p1, v0}, Landroidx/appcompat/widget/b;->k(Landroid/view/inspector/PropertyMapper;I)I
+    invoke-static {p1, v0}, Landroidx/appcompat/widget/c;->t(Landroid/view/inspector/PropertyMapper;I)I
 
     .line 60
     .line 61
@@ -215,11 +219,11 @@
 
     .line 64
     .line 65
-    sget v0, Lg/a;->logo:I
+    sget v0, Li/a;->logo:I
 
     .line 66
     .line 67
-    invoke-static {p1, v0}, Landroidx/appcompat/widget/b;->l(Landroid/view/inspector/PropertyMapper;I)I
+    invoke-static {p1, v0}, Landroidx/appcompat/widget/c;->u(Landroid/view/inspector/PropertyMapper;I)I
 
     .line 68
     .line 69
@@ -231,11 +235,11 @@
 
     .line 72
     .line 73
-    sget v0, Lg/a;->logoDescription:I
+    sget v0, Li/a;->logoDescription:I
 
     .line 74
     .line 75
-    invoke-static {p1, v0}, Landroidx/appcompat/widget/b;->m(Landroid/view/inspector/PropertyMapper;I)I
+    invoke-static {p1, v0}, Landroidx/appcompat/widget/c;->v(Landroid/view/inspector/PropertyMapper;I)I
 
     .line 76
     .line 77
@@ -247,11 +251,11 @@
 
     .line 80
     .line 81
-    sget v0, Lg/a;->menu:I
+    sget v0, Li/a;->menu:I
 
     .line 82
     .line 83
-    invoke-static {p1, v0}, Landroidx/appcompat/widget/b;->n(Landroid/view/inspector/PropertyMapper;I)I
+    invoke-static {p1, v0}, Landroidx/appcompat/widget/f;->i(Landroid/view/inspector/PropertyMapper;I)I
 
     .line 84
     .line 85
@@ -263,11 +267,11 @@
 
     .line 88
     .line 89
-    sget v0, Lg/a;->navigationContentDescription:I
+    sget v0, Li/a;->navigationContentDescription:I
 
     .line 90
     .line 91
-    invoke-static {p1, v0}, Landroidx/appcompat/widget/b;->o(Landroid/view/inspector/PropertyMapper;I)I
+    invoke-static {p1, v0}, Landroidx/appcompat/widget/f;->q(Landroid/view/inspector/PropertyMapper;I)I
 
     .line 92
     .line 93
@@ -279,11 +283,11 @@
 
     .line 96
     .line 97
-    sget v0, Lg/a;->navigationIcon:I
+    sget v0, Li/a;->navigationIcon:I
 
     .line 98
     .line 99
-    invoke-static {p1, v0}, Landroidx/appcompat/widget/b;->p(Landroid/view/inspector/PropertyMapper;I)I
+    invoke-static {p1, v0}, Landroidx/appcompat/widget/f;->s(Landroid/view/inspector/PropertyMapper;I)I
 
     .line 100
     .line 101
@@ -295,11 +299,11 @@
 
     .line 104
     .line 105
-    sget v0, Lg/a;->popupTheme:I
+    sget v0, Li/a;->popupTheme:I
 
     .line 106
     .line 107
-    invoke-static {p1, v0}, Landroidx/appcompat/widget/b;->q(Landroid/view/inspector/PropertyMapper;I)I
+    invoke-static {p1, v0}, Landroidx/appcompat/widget/f;->u(Landroid/view/inspector/PropertyMapper;I)I
 
     .line 108
     .line 109
@@ -311,11 +315,11 @@
 
     .line 112
     .line 113
-    sget v0, Lg/a;->subtitle:I
+    sget v0, Li/a;->subtitle:I
 
     .line 114
     .line 115
-    invoke-static {p1, v0}, Landroidx/appcompat/widget/b;->r(Landroid/view/inspector/PropertyMapper;I)I
+    invoke-static {p1, v0}, Landroidx/appcompat/widget/f;->w(Landroid/view/inspector/PropertyMapper;I)I
 
     .line 116
     .line 117
@@ -327,11 +331,11 @@
 
     .line 120
     .line 121
-    sget v0, Lg/a;->title:I
+    sget v0, Li/a;->title:I
 
     .line 122
     .line 123
-    invoke-static {p1, v0}, Landroidx/appcompat/widget/b;->s(Landroid/view/inspector/PropertyMapper;I)I
+    invoke-static {p1, v0}, Landroidx/appcompat/widget/f;->y(Landroid/view/inspector/PropertyMapper;I)I
 
     .line 124
     .line 125
@@ -343,11 +347,11 @@
 
     .line 128
     .line 129
-    sget v0, Lg/a;->titleMarginBottom:I
+    sget v0, Li/a;->titleMarginBottom:I
 
     .line 130
     .line 131
-    invoke-static {p1, v0}, Landroidx/appcompat/widget/b;->u(Landroid/view/inspector/PropertyMapper;I)I
+    invoke-static {p1, v0}, Landroidx/appcompat/widget/f;->A(Landroid/view/inspector/PropertyMapper;I)I
 
     .line 132
     .line 133
@@ -359,11 +363,11 @@
 
     .line 136
     .line 137
-    sget v0, Lg/a;->titleMarginEnd:I
+    sget v0, Li/a;->titleMarginEnd:I
 
     .line 138
     .line 139
-    invoke-static {p1, v0}, Landroidx/appcompat/widget/b;->v(Landroid/view/inspector/PropertyMapper;I)I
+    invoke-static {p1, v0}, Landroidx/appcompat/widget/c;->i(Landroid/view/inspector/PropertyMapper;I)I
 
     .line 140
     .line 141
@@ -375,11 +379,11 @@
 
     .line 144
     .line 145
-    sget v0, Lg/a;->titleMarginStart:I
+    sget v0, Li/a;->titleMarginStart:I
 
     .line 146
     .line 147
-    invoke-static {p1, v0}, Landroidx/appcompat/widget/b;->w(Landroid/view/inspector/PropertyMapper;I)I
+    invoke-static {p1, v0}, Landroidx/appcompat/widget/c;->j(Landroid/view/inspector/PropertyMapper;I)I
 
     .line 148
     .line 149
@@ -391,11 +395,11 @@
 
     .line 152
     .line 153
-    sget v0, Lg/a;->titleMarginTop:I
+    sget v0, Li/a;->titleMarginTop:I
 
     .line 154
     .line 155
-    invoke-static {p1, v0}, Landroidx/appcompat/widget/b;->y(Landroid/view/inspector/PropertyMapper;I)I
+    invoke-static {p1, v0}, Landroidx/appcompat/widget/c;->k(Landroid/view/inspector/PropertyMapper;I)I
 
     .line 156
     .line 157
@@ -419,206 +423,215 @@
 
 .method public readProperties(Landroidx/appcompat/widget/Toolbar;Landroid/view/inspector/PropertyReader;)V
     .locals 2
+    .param p1    # Landroidx/appcompat/widget/Toolbar;
+        .annotation build Landroidx/annotation/NonNull;
+        .end annotation
+    .end param
+    .param p2    # Landroid/view/inspector/PropertyReader;
+        .annotation build Landroidx/annotation/NonNull;
+        .end annotation
+    .end param
 
+    .line 2
     iget-boolean v0, p0, Landroidx/appcompat/widget/Toolbar$InspectionCompanion;->mPropertiesMapped:Z
 
     if-eqz v0, :cond_0
 
+    .line 3
     iget v0, p0, Landroidx/appcompat/widget/Toolbar$InspectionCompanion;->mCollapseContentDescriptionId:I
 
-    .line 2
     invoke-virtual {p1}, Landroidx/appcompat/widget/Toolbar;->getCollapseContentDescription()Ljava/lang/CharSequence;
 
     move-result-object v1
 
     check-cast v1, Ljava/lang/CharSequence;
 
-    invoke-static {p2, v0, v1}, Landroidx/appcompat/widget/a;->i(Landroid/view/inspector/PropertyReader;ILjava/lang/CharSequence;)V
+    invoke-static {p2, v0, v1}, Landroidx/appcompat/widget/b;->j(Landroid/view/inspector/PropertyReader;ILjava/lang/CharSequence;)V
 
+    .line 4
     iget v0, p0, Landroidx/appcompat/widget/Toolbar$InspectionCompanion;->mCollapseIconId:I
 
-    .line 3
     invoke-virtual {p1}, Landroidx/appcompat/widget/Toolbar;->getCollapseIcon()Landroid/graphics/drawable/Drawable;
 
     move-result-object v1
 
-    invoke-static {p2, v0, v1}, Landroidx/appcompat/widget/a;->h(Landroid/view/inspector/PropertyReader;ILandroid/graphics/drawable/Drawable;)V
+    invoke-static {p2, v0, v1}, Landroidx/appcompat/widget/b;->i(Landroid/view/inspector/PropertyReader;ILandroid/graphics/drawable/Drawable;)V
 
+    .line 5
     iget v0, p0, Landroidx/appcompat/widget/Toolbar$InspectionCompanion;->mContentInsetEndId:I
 
-    .line 4
     invoke-virtual {p1}, Landroidx/appcompat/widget/Toolbar;->getContentInsetEnd()I
 
     move-result v1
 
-    invoke-static {p2, v0, v1}, La2/c;->h(Landroid/view/inspector/PropertyReader;II)V
+    invoke-static {p2, v0, v1}, LC0/b;->q(Landroid/view/inspector/PropertyReader;II)V
 
+    .line 6
     iget v0, p0, Landroidx/appcompat/widget/Toolbar$InspectionCompanion;->mContentInsetEndWithActionsId:I
 
-    .line 5
     invoke-virtual {p1}, Landroidx/appcompat/widget/Toolbar;->getContentInsetEndWithActions()I
 
     move-result v1
 
-    invoke-static {p2, v0, v1}, La2/c;->h(Landroid/view/inspector/PropertyReader;II)V
+    invoke-static {p2, v0, v1}, LC0/b;->q(Landroid/view/inspector/PropertyReader;II)V
 
+    .line 7
     iget v0, p0, Landroidx/appcompat/widget/Toolbar$InspectionCompanion;->mContentInsetLeftId:I
 
-    .line 6
     invoke-virtual {p1}, Landroidx/appcompat/widget/Toolbar;->getContentInsetLeft()I
 
     move-result v1
 
-    invoke-static {p2, v0, v1}, La2/c;->h(Landroid/view/inspector/PropertyReader;II)V
+    invoke-static {p2, v0, v1}, LC0/b;->q(Landroid/view/inspector/PropertyReader;II)V
 
+    .line 8
     iget v0, p0, Landroidx/appcompat/widget/Toolbar$InspectionCompanion;->mContentInsetRightId:I
 
-    .line 7
     invoke-virtual {p1}, Landroidx/appcompat/widget/Toolbar;->getContentInsetRight()I
 
     move-result v1
 
-    invoke-static {p2, v0, v1}, La2/c;->h(Landroid/view/inspector/PropertyReader;II)V
+    invoke-static {p2, v0, v1}, LC0/b;->q(Landroid/view/inspector/PropertyReader;II)V
 
+    .line 9
     iget v0, p0, Landroidx/appcompat/widget/Toolbar$InspectionCompanion;->mContentInsetStartId:I
 
-    .line 8
     invoke-virtual {p1}, Landroidx/appcompat/widget/Toolbar;->getContentInsetStart()I
 
     move-result v1
 
-    invoke-static {p2, v0, v1}, La2/c;->h(Landroid/view/inspector/PropertyReader;II)V
+    invoke-static {p2, v0, v1}, LC0/b;->q(Landroid/view/inspector/PropertyReader;II)V
 
+    .line 10
     iget v0, p0, Landroidx/appcompat/widget/Toolbar$InspectionCompanion;->mContentInsetStartWithNavigationId:I
 
-    .line 9
     invoke-virtual {p1}, Landroidx/appcompat/widget/Toolbar;->getContentInsetStartWithNavigation()I
 
     move-result v1
 
-    invoke-static {p2, v0, v1}, La2/c;->h(Landroid/view/inspector/PropertyReader;II)V
+    invoke-static {p2, v0, v1}, LC0/b;->q(Landroid/view/inspector/PropertyReader;II)V
 
+    .line 11
     iget v0, p0, Landroidx/appcompat/widget/Toolbar$InspectionCompanion;->mLogoId:I
 
-    .line 10
     invoke-virtual {p1}, Landroidx/appcompat/widget/Toolbar;->getLogo()Landroid/graphics/drawable/Drawable;
 
     move-result-object v1
 
-    invoke-static {p2, v0, v1}, Landroidx/appcompat/widget/a;->h(Landroid/view/inspector/PropertyReader;ILandroid/graphics/drawable/Drawable;)V
+    invoke-static {p2, v0, v1}, Landroidx/appcompat/widget/b;->i(Landroid/view/inspector/PropertyReader;ILandroid/graphics/drawable/Drawable;)V
 
+    .line 12
     iget v0, p0, Landroidx/appcompat/widget/Toolbar$InspectionCompanion;->mLogoDescriptionId:I
 
-    .line 11
     invoke-virtual {p1}, Landroidx/appcompat/widget/Toolbar;->getLogoDescription()Ljava/lang/CharSequence;
 
     move-result-object v1
 
     check-cast v1, Ljava/lang/CharSequence;
 
-    invoke-static {p2, v0, v1}, Landroidx/appcompat/widget/a;->i(Landroid/view/inspector/PropertyReader;ILjava/lang/CharSequence;)V
+    invoke-static {p2, v0, v1}, Landroidx/appcompat/widget/b;->j(Landroid/view/inspector/PropertyReader;ILjava/lang/CharSequence;)V
 
+    .line 13
     iget v0, p0, Landroidx/appcompat/widget/Toolbar$InspectionCompanion;->mMenuId:I
 
-    .line 12
     invoke-virtual {p1}, Landroidx/appcompat/widget/Toolbar;->getMenu()Landroid/view/Menu;
 
     move-result-object v1
 
-    invoke-static {p2, v0, v1}, Landroidx/appcompat/widget/b;->h(Landroid/view/inspector/PropertyReader;ILandroid/view/Menu;)V
+    invoke-static {p2, v0, v1}, Landroidx/appcompat/widget/c;->d(Landroid/view/inspector/PropertyReader;ILandroid/view/Menu;)V
 
+    .line 14
     iget v0, p0, Landroidx/appcompat/widget/Toolbar$InspectionCompanion;->mNavigationContentDescriptionId:I
 
-    .line 13
     invoke-virtual {p1}, Landroidx/appcompat/widget/Toolbar;->getNavigationContentDescription()Ljava/lang/CharSequence;
 
     move-result-object v1
 
     check-cast v1, Ljava/lang/CharSequence;
 
-    invoke-static {p2, v0, v1}, Landroidx/appcompat/widget/a;->i(Landroid/view/inspector/PropertyReader;ILjava/lang/CharSequence;)V
+    invoke-static {p2, v0, v1}, Landroidx/appcompat/widget/b;->j(Landroid/view/inspector/PropertyReader;ILjava/lang/CharSequence;)V
 
+    .line 15
     iget v0, p0, Landroidx/appcompat/widget/Toolbar$InspectionCompanion;->mNavigationIconId:I
 
-    .line 14
     invoke-virtual {p1}, Landroidx/appcompat/widget/Toolbar;->getNavigationIcon()Landroid/graphics/drawable/Drawable;
 
     move-result-object v1
 
-    invoke-static {p2, v0, v1}, Landroidx/appcompat/widget/a;->h(Landroid/view/inspector/PropertyReader;ILandroid/graphics/drawable/Drawable;)V
+    invoke-static {p2, v0, v1}, Landroidx/appcompat/widget/b;->i(Landroid/view/inspector/PropertyReader;ILandroid/graphics/drawable/Drawable;)V
 
+    .line 16
     iget v0, p0, Landroidx/appcompat/widget/Toolbar$InspectionCompanion;->mPopupThemeId:I
 
-    .line 15
     invoke-virtual {p1}, Landroidx/appcompat/widget/Toolbar;->getPopupTheme()I
 
     move-result v1
 
-    invoke-static {p2, v0, v1}, Landroidx/appcompat/widget/b;->g(Landroid/view/inspector/PropertyReader;II)V
+    invoke-static {p2, v0, v1}, Landroidx/appcompat/widget/c;->c(Landroid/view/inspector/PropertyReader;II)V
 
+    .line 17
     iget v0, p0, Landroidx/appcompat/widget/Toolbar$InspectionCompanion;->mSubtitleId:I
 
-    .line 16
     invoke-virtual {p1}, Landroidx/appcompat/widget/Toolbar;->getSubtitle()Ljava/lang/CharSequence;
 
     move-result-object v1
 
     check-cast v1, Ljava/lang/CharSequence;
 
-    invoke-static {p2, v0, v1}, Landroidx/appcompat/widget/a;->i(Landroid/view/inspector/PropertyReader;ILjava/lang/CharSequence;)V
+    invoke-static {p2, v0, v1}, Landroidx/appcompat/widget/b;->j(Landroid/view/inspector/PropertyReader;ILjava/lang/CharSequence;)V
 
+    .line 18
     iget v0, p0, Landroidx/appcompat/widget/Toolbar$InspectionCompanion;->mTitleId:I
 
-    .line 17
     invoke-virtual {p1}, Landroidx/appcompat/widget/Toolbar;->getTitle()Ljava/lang/CharSequence;
 
     move-result-object v1
 
     check-cast v1, Ljava/lang/CharSequence;
 
-    invoke-static {p2, v0, v1}, Landroidx/appcompat/widget/a;->i(Landroid/view/inspector/PropertyReader;ILjava/lang/CharSequence;)V
+    invoke-static {p2, v0, v1}, Landroidx/appcompat/widget/b;->j(Landroid/view/inspector/PropertyReader;ILjava/lang/CharSequence;)V
 
+    .line 19
     iget v0, p0, Landroidx/appcompat/widget/Toolbar$InspectionCompanion;->mTitleMarginBottomId:I
 
-    .line 18
     invoke-virtual {p1}, Landroidx/appcompat/widget/Toolbar;->getTitleMarginBottom()I
 
     move-result v1
 
-    invoke-static {p2, v0, v1}, La2/c;->h(Landroid/view/inspector/PropertyReader;II)V
+    invoke-static {p2, v0, v1}, LC0/b;->q(Landroid/view/inspector/PropertyReader;II)V
 
+    .line 20
     iget v0, p0, Landroidx/appcompat/widget/Toolbar$InspectionCompanion;->mTitleMarginEndId:I
 
-    .line 19
     invoke-virtual {p1}, Landroidx/appcompat/widget/Toolbar;->getTitleMarginEnd()I
 
     move-result v1
 
-    invoke-static {p2, v0, v1}, La2/c;->h(Landroid/view/inspector/PropertyReader;II)V
+    invoke-static {p2, v0, v1}, LC0/b;->q(Landroid/view/inspector/PropertyReader;II)V
 
+    .line 21
     iget v0, p0, Landroidx/appcompat/widget/Toolbar$InspectionCompanion;->mTitleMarginStartId:I
 
-    .line 20
     invoke-virtual {p1}, Landroidx/appcompat/widget/Toolbar;->getTitleMarginStart()I
 
     move-result v1
 
-    invoke-static {p2, v0, v1}, La2/c;->h(Landroid/view/inspector/PropertyReader;II)V
+    invoke-static {p2, v0, v1}, LC0/b;->q(Landroid/view/inspector/PropertyReader;II)V
 
+    .line 22
     iget v0, p0, Landroidx/appcompat/widget/Toolbar$InspectionCompanion;->mTitleMarginTopId:I
 
-    .line 21
     invoke-virtual {p1}, Landroidx/appcompat/widget/Toolbar;->getTitleMarginTop()I
 
     move-result p1
 
-    invoke-static {p2, v0, p1}, La2/c;->h(Landroid/view/inspector/PropertyReader;II)V
+    invoke-static {p2, v0, p1}, LC0/b;->q(Landroid/view/inspector/PropertyReader;II)V
 
     return-void
 
-    .line 22
+    .line 23
     :cond_0
-    invoke-static {}, La2/c;->f()Landroid/view/inspector/InspectionCompanion$UninitializedPropertyMapException;
+    invoke-static {}, LC0/b;->e()Landroid/view/inspector/InspectionCompanion$UninitializedPropertyMapException;
 
     move-result-object p1
 
@@ -627,6 +640,14 @@
 
 .method public bridge synthetic readProperties(Ljava/lang/Object;Landroid/view/inspector/PropertyReader;)V
     .locals 0
+    .param p1    # Ljava/lang/Object;
+        .annotation build Landroidx/annotation/NonNull;
+        .end annotation
+    .end param
+    .param p2    # Landroid/view/inspector/PropertyReader;
+        .annotation build Landroidx/annotation/NonNull;
+        .end annotation
+    .end param
 
     .line 1
     check-cast p1, Landroidx/appcompat/widget/Toolbar;

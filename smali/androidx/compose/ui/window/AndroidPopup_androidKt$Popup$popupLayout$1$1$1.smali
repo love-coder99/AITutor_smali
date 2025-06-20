@@ -3,14 +3,14 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lzh/e;
+.implements Lka/e;
 
 
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "Lkotlin/jvm/internal/Lambda;",
-        "Lzh/e;"
+        "Lka/e;"
     }
 .end annotation
 
@@ -19,9 +19,9 @@
         "\u0000\u0008\n\u0002\u0018\u0002\n\u0002\u0008\u0003\u0010\u0003\u001a\u00020\u0000H\u000b\u00a2\u0006\u0004\u0008\u0001\u0010\u0002"
     }
     d2 = {
-        "Lqh/r;",
+        "LX9/j;",
         "invoke",
-        "(Landroidx/compose/runtime/l;I)V",
+        "(Landroidx/compose/runtime/j;I)V",
         "<anonymous>"
     }
     k = 0x3
@@ -34,32 +34,32 @@
 
 
 # instance fields
-.field final synthetic $currentContent$delegate:Landroidx/compose/runtime/d3;
+.field final synthetic $currentContent$delegate:Landroidx/compose/runtime/H0;
     .annotation system Ldalvik/annotation/Signature;
         value = {
-            "Landroidx/compose/runtime/d3;"
+            "Landroidx/compose/runtime/H0;"
         }
     .end annotation
 .end field
 
-.field final synthetic $this_apply:Landroidx/compose/ui/window/q;
+.field final synthetic $this_apply:Landroidx/compose/ui/window/o;
 
 
 # direct methods
-.method public constructor <init>(Landroidx/compose/ui/window/q;Landroidx/compose/runtime/d3;)V
+.method public constructor <init>(Landroidx/compose/ui/window/o;Landroidx/compose/runtime/H0;)V
     .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
-            "Landroidx/compose/ui/window/q;",
-            "Landroidx/compose/runtime/d3;",
+            "Landroidx/compose/ui/window/o;",
+            "Landroidx/compose/runtime/H0;",
             ")V"
         }
     .end annotation
 
-    iput-object p1, p0, Landroidx/compose/ui/window/AndroidPopup_androidKt$Popup$popupLayout$1$1$1;->$this_apply:Landroidx/compose/ui/window/q;
+    iput-object p1, p0, Landroidx/compose/ui/window/AndroidPopup_androidKt$Popup$popupLayout$1$1$1;->$this_apply:Landroidx/compose/ui/window/o;
 
-    iput-object p2, p0, Landroidx/compose/ui/window/AndroidPopup_androidKt$Popup$popupLayout$1$1$1;->$currentContent$delegate:Landroidx/compose/runtime/d3;
+    iput-object p2, p0, Landroidx/compose/ui/window/AndroidPopup_androidKt$Popup$popupLayout$1$1$1;->$currentContent$delegate:Landroidx/compose/runtime/H0;
 
     const/4 p1, 0x2
 
@@ -74,7 +74,7 @@
     .locals 0
 
     .line 1
-    check-cast p1, Landroidx/compose/runtime/l;
+    check-cast p1, Landroidx/compose/runtime/j;
 
     check-cast p2, Ljava/lang/Number;
 
@@ -82,14 +82,14 @@
 
     move-result p2
 
-    invoke-virtual {p0, p1, p2}, Landroidx/compose/ui/window/AndroidPopup_androidKt$Popup$popupLayout$1$1$1;->invoke(Landroidx/compose/runtime/l;I)V
+    invoke-virtual {p0, p1, p2}, Landroidx/compose/ui/window/AndroidPopup_androidKt$Popup$popupLayout$1$1$1;->invoke(Landroidx/compose/runtime/j;I)V
 
-    sget-object p1, Lqh/r;->a:Lqh/r;
+    sget-object p1, LX9/j;->a:LX9/j;
 
     return-object p1
 .end method
 
-.method public final invoke(Landroidx/compose/runtime/l;I)V
+.method public final invoke(Landroidx/compose/runtime/j;I)V
     .locals 6
 
     and-int/lit8 p2, p2, 0x3
@@ -98,12 +98,12 @@
 
     if-ne p2, v0, :cond_1
 
+    .line 2
     move-object p2, p1
 
-    check-cast p2, Landroidx/compose/runtime/p;
+    check-cast p2, Landroidx/compose/runtime/n;
 
-    .line 2
-    invoke-virtual {p2}, Landroidx/compose/runtime/p;->y()Z
+    invoke-virtual {p2}, Landroidx/compose/runtime/n;->x()Z
 
     move-result v0
 
@@ -113,65 +113,69 @@
 
     .line 3
     :cond_0
-    invoke-virtual {p2}, Landroidx/compose/runtime/p;->N()V
+    invoke-virtual {p2}, Landroidx/compose/runtime/n;->L()V
 
     goto/16 :goto_3
 
     .line 4
     :cond_1
     :goto_0
-    sget-object p2, Landroidx/compose/ui/window/AndroidPopup_androidKt$Popup$popupLayout$1$1$1$1;->INSTANCE:Landroidx/compose/ui/window/AndroidPopup_androidKt$Popup$popupLayout$1$1$1$1;
+    sget-object p2, Landroidx/compose/ui/l;->a:Landroidx/compose/ui/l;
 
     .line 5
-    new-instance v0, Landroidx/compose/ui/semantics/AppendedSemanticsElement;
+    sget-object v0, Landroidx/compose/ui/window/AndroidPopup_androidKt$Popup$popupLayout$1$1$1$1;->INSTANCE:Landroidx/compose/ui/window/AndroidPopup_androidKt$Popup$popupLayout$1$1$1$1;
 
     const/4 v1, 0x0
 
-    invoke-direct {v0, p2, v1}, Landroidx/compose/ui/semantics/AppendedSemanticsElement;-><init>(Lzh/c;Z)V
-
-    iget-object p2, p0, Landroidx/compose/ui/window/AndroidPopup_androidKt$Popup$popupLayout$1$1$1;->$this_apply:Landroidx/compose/ui/window/q;
-
-    check-cast p1, Landroidx/compose/runtime/p;
-
     .line 6
-    invoke-virtual {p1, p2}, Landroidx/compose/runtime/p;->i(Ljava/lang/Object;)Z
-
-    move-result p2
-
-    iget-object v1, p0, Landroidx/compose/ui/window/AndroidPopup_androidKt$Popup$popupLayout$1$1$1;->$this_apply:Landroidx/compose/ui/window/q;
-
-    .line 7
-    invoke-virtual {p1}, Landroidx/compose/runtime/p;->I()Ljava/lang/Object;
-
-    move-result-object v2
-
-    if-nez p2, :cond_2
-
-    sget-object p2, Landroidx/compose/runtime/k;->b:Lxd/e;
-
-    if-ne v2, p2, :cond_3
-
-    .line 8
-    :cond_2
-    new-instance v2, Landroidx/compose/ui/window/AndroidPopup_androidKt$Popup$popupLayout$1$1$1$2$1;
-
-    invoke-direct {v2, v1}, Landroidx/compose/ui/window/AndroidPopup_androidKt$Popup$popupLayout$1$1$1$2$1;-><init>(Landroidx/compose/ui/window/q;)V
-
-    .line 9
-    invoke-virtual {p1, v2}, Landroidx/compose/runtime/p;->d0(Ljava/lang/Object;)V
-
-    .line 10
-    :cond_3
-    check-cast v2, Lzh/c;
-
-    invoke-static {v0, v2}, Landroidx/compose/ui/layout/t;->o(Landroidx/compose/ui/o;Lzh/c;)Landroidx/compose/ui/o;
+    invoke-static {p2, v1, v0}, Landroidx/compose/ui/semantics/l;->a(Landroidx/compose/ui/o;ZLka/c;)Landroidx/compose/ui/o;
 
     move-result-object p2
 
-    iget-object v0, p0, Landroidx/compose/ui/window/AndroidPopup_androidKt$Popup$popupLayout$1$1$1;->$this_apply:Landroidx/compose/ui/window/q;
+    .line 7
+    iget-object v0, p0, Landroidx/compose/ui/window/AndroidPopup_androidKt$Popup$popupLayout$1$1$1;->$this_apply:Landroidx/compose/ui/window/o;
+
+    check-cast p1, Landroidx/compose/runtime/n;
+
+    invoke-virtual {p1, v0}, Landroidx/compose/runtime/n;->h(Ljava/lang/Object;)Z
+
+    move-result v0
+
+    iget-object v1, p0, Landroidx/compose/ui/window/AndroidPopup_androidKt$Popup$popupLayout$1$1$1;->$this_apply:Landroidx/compose/ui/window/o;
+
+    .line 8
+    invoke-virtual {p1}, Landroidx/compose/runtime/n;->G()Ljava/lang/Object;
+
+    move-result-object v2
+
+    if-nez v0, :cond_2
+
+    .line 9
+    sget-object v0, Landroidx/compose/runtime/i;->a:Landroidx/compose/runtime/T;
+
+    if-ne v2, v0, :cond_3
+
+    .line 10
+    :cond_2
+    new-instance v2, Landroidx/compose/ui/window/AndroidPopup_androidKt$Popup$popupLayout$1$1$1$2$1;
+
+    invoke-direct {v2, v1}, Landroidx/compose/ui/window/AndroidPopup_androidKt$Popup$popupLayout$1$1$1$2$1;-><init>(Landroidx/compose/ui/window/o;)V
 
     .line 11
-    invoke-virtual {v0}, Landroidx/compose/ui/window/q;->getCanCalculatePosition()Z
+    invoke-virtual {p1, v2}, Landroidx/compose/runtime/n;->b0(Ljava/lang/Object;)V
+
+    .line 12
+    :cond_3
+    check-cast v2, Lka/c;
+
+    invoke-static {p2, v2}, Landroidx/compose/ui/layout/q;->o(Landroidx/compose/ui/o;Lka/c;)Landroidx/compose/ui/o;
+
+    move-result-object p2
+
+    .line 13
+    iget-object v0, p0, Landroidx/compose/ui/window/AndroidPopup_androidKt$Popup$popupLayout$1$1$1;->$this_apply:Landroidx/compose/ui/window/o;
+
+    invoke-virtual {v0}, Landroidx/compose/ui/window/o;->getCanCalculatePosition()Z
 
     move-result v0
 
@@ -185,93 +189,87 @@
     const/4 v0, 0x0
 
     :goto_1
-    invoke-static {p2, v0}, Landroidx/compose/ui/draw/g;->a(Landroidx/compose/ui/o;F)Landroidx/compose/ui/o;
+    invoke-static {p2, v0}, Landroidx/compose/ui/draw/f;->a(Landroidx/compose/ui/o;F)Landroidx/compose/ui/o;
 
     move-result-object p2
 
-    .line 12
+    .line 14
     new-instance v0, Landroidx/compose/ui/window/AndroidPopup_androidKt$Popup$popupLayout$1$1$1$3;
 
-    iget-object v1, p0, Landroidx/compose/ui/window/AndroidPopup_androidKt$Popup$popupLayout$1$1$1;->$currentContent$delegate:Landroidx/compose/runtime/d3;
+    iget-object v1, p0, Landroidx/compose/ui/window/AndroidPopup_androidKt$Popup$popupLayout$1$1$1;->$currentContent$delegate:Landroidx/compose/runtime/H0;
 
-    invoke-direct {v0, v1}, Landroidx/compose/ui/window/AndroidPopup_androidKt$Popup$popupLayout$1$1$1$3;-><init>(Landroidx/compose/runtime/d3;)V
+    invoke-direct {v0, v1}, Landroidx/compose/ui/window/AndroidPopup_androidKt$Popup$popupLayout$1$1$1$3;-><init>(Landroidx/compose/runtime/H0;)V
 
     const v1, 0x24266c85
 
-    invoke-static {v1, v0, p1}, Landroidx/compose/runtime/internal/c;->b(ILkotlin/jvm/internal/Lambda;Landroidx/compose/runtime/l;)Landroidx/compose/runtime/internal/b;
+    invoke-static {v1, v0, p1}, Landroidx/compose/runtime/internal/b;->d(ILX9/b;Landroidx/compose/runtime/j;)Landroidx/compose/runtime/internal/a;
 
     move-result-object v0
 
-    sget-object v1, Landroidx/compose/ui/window/e;->a:Landroidx/compose/ui/window/e;
+    .line 15
+    sget-object v1, Landroidx/compose/ui/window/b;->c:Landroidx/compose/ui/window/b;
 
-    .line 13
-    iget v2, p1, Landroidx/compose/runtime/p;->P:I
+    .line 16
+    iget v2, p1, Landroidx/compose/runtime/n;->P:I
 
-    .line 14
-    invoke-virtual {p1}, Landroidx/compose/runtime/p;->n()Landroidx/compose/runtime/q1;
+    .line 17
+    invoke-virtual {p1}, Landroidx/compose/runtime/n;->m()Landroidx/compose/runtime/g0;
 
     move-result-object v3
 
-    .line 15
-    invoke-static {p1, p2}, Landroidx/compose/ui/a;->c(Landroidx/compose/runtime/l;Landroidx/compose/ui/o;)Landroidx/compose/ui/o;
+    .line 18
+    invoke-static {p1, p2}, Landroidx/compose/ui/a;->d(Landroidx/compose/runtime/j;Landroidx/compose/ui/o;)Landroidx/compose/ui/o;
 
     move-result-object p2
 
-    .line 16
-    sget-object v4, Landroidx/compose/ui/node/h;->y8:Landroidx/compose/ui/node/g;
+    .line 19
+    sget-object v4, Landroidx/compose/ui/node/h;->A8:Landroidx/compose/ui/node/g;
 
     invoke-virtual {v4}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
-    .line 17
-    sget-object v4, Landroidx/compose/ui/node/g;->b:Lzh/a;
-
-    .line 18
-    iget-object v5, p1, Landroidx/compose/runtime/p;->a:Landroidx/compose/runtime/e;
-
-    instance-of v5, v5, Landroidx/compose/runtime/e;
-
-    if-eqz v5, :cond_8
-
-    .line 19
-    invoke-virtual {p1}, Landroidx/compose/runtime/p;->X()V
-
     .line 20
-    iget-boolean v5, p1, Landroidx/compose/runtime/p;->O:Z
+    sget-object v4, Landroidx/compose/ui/node/g;->b:Lka/a;
+
+    .line 21
+    invoke-virtual {p1}, Landroidx/compose/runtime/n;->V()V
+
+    .line 22
+    iget-boolean v5, p1, Landroidx/compose/runtime/n;->O:Z
 
     if-eqz v5, :cond_5
 
-    .line 21
-    invoke-virtual {p1, v4}, Landroidx/compose/runtime/p;->m(Lzh/a;)V
+    .line 23
+    invoke-virtual {p1, v4}, Landroidx/compose/runtime/n;->l(Lka/a;)V
 
     goto :goto_2
 
-    .line 22
-    :cond_5
-    invoke-virtual {p1}, Landroidx/compose/runtime/p;->g0()V
-
-    .line 23
-    :goto_2
-    sget-object v4, Landroidx/compose/ui/node/g;->f:Lzh/e;
-
     .line 24
-    invoke-static {p1, v1, v4}, Landroidx/compose/runtime/q;->x(Landroidx/compose/runtime/l;Ljava/lang/Object;Lzh/e;)V
+    :cond_5
+    invoke-virtual {p1}, Landroidx/compose/runtime/n;->e0()V
 
     .line 25
-    sget-object v1, Landroidx/compose/ui/node/g;->e:Lzh/e;
+    :goto_2
+    sget-object v4, Landroidx/compose/ui/node/g;->f:Lka/e;
 
     .line 26
-    invoke-static {p1, v3, v1}, Landroidx/compose/runtime/q;->x(Landroidx/compose/runtime/l;Ljava/lang/Object;Lzh/e;)V
+    invoke-static {p1, v1, v4}, Landroidx/compose/runtime/o;->a0(Landroidx/compose/runtime/j;Ljava/lang/Object;Lka/e;)V
 
     .line 27
-    sget-object v1, Landroidx/compose/ui/node/g;->g:Lzh/e;
+    sget-object v1, Landroidx/compose/ui/node/g;->e:Lka/e;
 
     .line 28
-    iget-boolean v3, p1, Landroidx/compose/runtime/p;->O:Z
+    invoke-static {p1, v3, v1}, Landroidx/compose/runtime/o;->a0(Landroidx/compose/runtime/j;Ljava/lang/Object;Lka/e;)V
+
+    .line 29
+    sget-object v1, Landroidx/compose/ui/node/g;->g:Lka/e;
+
+    .line 30
+    iget-boolean v3, p1, Landroidx/compose/runtime/n;->O:Z
 
     if-nez v3, :cond_6
 
-    .line 29
-    invoke-virtual {p1}, Landroidx/compose/runtime/p;->I()Ljava/lang/Object;
+    .line 31
+    invoke-virtual {p1}, Landroidx/compose/runtime/n;->G()Ljava/lang/Object;
 
     move-result-object v3
 
@@ -279,45 +277,37 @@
 
     move-result-object v4
 
-    invoke-static {v3, v4}, Lrb/h;->d(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v3, v4}, Lkotlin/jvm/internal/h;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result v3
 
     if-nez v3, :cond_7
 
-    .line 30
-    :cond_6
-    invoke-static {v2, p1, v2, v1}, Landroid/support/v4/media/session/a;->N(ILandroidx/compose/runtime/p;ILzh/e;)V
-
-    .line 31
-    :cond_7
-    sget-object v1, Landroidx/compose/ui/node/g;->d:Lzh/e;
-
     .line 32
-    invoke-static {p1, p2, v1}, Landroidx/compose/runtime/q;->x(Landroidx/compose/runtime/l;Ljava/lang/Object;Lzh/e;)V
+    :cond_6
+    invoke-static {v2, p1, v2, v1}, Landroidx/appcompat/view/menu/F;->K(ILandroidx/compose/runtime/n;ILka/e;)V
+
+    .line 33
+    :cond_7
+    sget-object v1, Landroidx/compose/ui/node/g;->d:Lka/e;
+
+    .line 34
+    invoke-static {p1, p2, v1}, Landroidx/compose/runtime/o;->a0(Landroidx/compose/runtime/j;Ljava/lang/Object;Lka/e;)V
 
     const/4 p2, 0x6
 
-    .line 33
+    .line 35
     invoke-static {p2}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
     move-result-object p2
 
-    invoke-virtual {v0, p1, p2}, Landroidx/compose/runtime/internal/b;->invoke(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v0, p1, p2}, Landroidx/compose/runtime/internal/a;->invoke(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     const/4 p2, 0x1
 
-    .line 34
-    invoke-virtual {p1, p2}, Landroidx/compose/runtime/p;->q(Z)V
+    .line 36
+    invoke-virtual {p1, p2}, Landroidx/compose/runtime/n;->p(Z)V
 
     :goto_3
     return-void
-
-    .line 35
-    :cond_8
-    invoke-static {}, Lb0/h;->N()V
-
-    const/4 p1, 0x0
-
-    throw p1
 .end method

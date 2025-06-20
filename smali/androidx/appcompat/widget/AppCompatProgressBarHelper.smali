@@ -25,16 +25,29 @@
 .method static constructor <clinit>()V
     .locals 2
 
+    .line 1
     const v0, 0x101013b
 
+    .line 2
+    .line 3
+    .line 4
     const v1, 0x101013c
 
+    .line 5
+    .line 6
+    .line 7
     filled-new-array {v0, v1}, [I
 
+    .line 8
+    .line 9
+    .line 10
     move-result-object v0
 
+    .line 11
     sput-object v0, Landroidx/appcompat/widget/AppCompatProgressBarHelper;->TINT_ATTRS:[I
 
+    .line 12
+    .line 13
     return-void
 .end method
 
@@ -219,8 +232,11 @@
 .method public getSampleTile()Landroid/graphics/Bitmap;
     .locals 1
 
+    .line 1
     iget-object v0, p0, Landroidx/appcompat/widget/AppCompatProgressBarHelper;->mSampleTile:Landroid/graphics/Bitmap;
 
+    .line 2
+    .line 3
     return-object v0
 .end method
 
@@ -330,7 +346,7 @@
     .locals 7
 
     .line 1
-    instance-of v0, p1, Lg3/b;
+    instance-of v0, p1, Lm1/c;
 
     .line 2
     .line 3
@@ -341,15 +357,15 @@
     move-object v0, p1
 
     .line 6
-    check-cast v0, Lg3/b;
+    check-cast v0, Lm1/c;
 
     .line 7
     .line 8
-    check-cast v0, Lg3/c;
+    check-cast v0, Lm1/d;
 
     .line 9
     .line 10
-    iget-object v1, v0, Lg3/c;->h:Landroid/graphics/drawable/Drawable;
+    iget-object v1, v0, Lm1/d;->h:Landroid/graphics/drawable/Drawable;
 
     .line 11
     .line 12
@@ -365,7 +381,7 @@
     move-result-object p2
 
     .line 18
-    invoke-virtual {v0, p2}, Lg3/c;->c(Landroid/graphics/drawable/Drawable;)V
+    invoke-virtual {v0, p2}, Lm1/d;->g(Landroid/graphics/drawable/Drawable;)V
 
     .line 19
     .line 20

@@ -1,10 +1,10 @@
-.class public abstract Lw2/i;
+.class public abstract synthetic LW2/i;
 .super Ljava/lang/Object;
 .source "SourceFile"
 
 
 # static fields
-.field public static final a:Landroid/util/SparseIntArray;
+.field public static final synthetic a:[I
 
 
 # direct methods
@@ -12,167 +12,128 @@
     .locals 3
 
     .line 1
-    new-instance v0, Landroid/util/SparseIntArray;
+    invoke-static {}, Landroid/graphics/Bitmap$Config;->values()[Landroid/graphics/Bitmap$Config;
 
     .line 2
     .line 3
-    invoke-direct {v0}, Landroid/util/SparseIntArray;-><init>()V
-
     .line 4
+    move-result-object v0
+
     .line 5
+    array-length v0, v0
+
     .line 6
-    sput-object v0, Lw2/i;->a:Landroid/util/SparseIntArray;
+    new-array v0, v0, [I
 
     .line 7
     .line 8
-    sget v1, Ly2/r;->KeyPosition_motionTarget:I
+    sput-object v0, LW2/i;->a:[I
 
     .line 9
     .line 10
-    const/4 v2, 0x1
+    :try_start_0
+    sget-object v1, Landroid/graphics/Bitmap$Config;->ARGB_8888:Landroid/graphics/Bitmap$Config;
 
     .line 11
-    invoke-virtual {v0, v1, v2}, Landroid/util/SparseIntArray;->append(II)V
-
     .line 12
+    invoke-virtual {v1}, Ljava/lang/Enum;->ordinal()I
+
     .line 13
     .line 14
-    sget v1, Ly2/r;->KeyPosition_framePosition:I
-
     .line 15
+    move-result v1
+
     .line 16
-    const/4 v2, 0x2
+    const/4 v2, 0x1
 
     .line 17
-    invoke-virtual {v0, v1, v2}, Landroid/util/SparseIntArray;->append(II)V
+    aput v2, v0, v1
+    :try_end_0
+    .catch Ljava/lang/NoSuchFieldError; {:try_start_0 .. :try_end_0} :catch_0
 
     .line 18
     .line 19
+    :catch_0
+    :try_start_1
+    sget-object v0, LW2/i;->a:[I
+
     .line 20
-    sget v1, Ly2/r;->KeyPosition_transitionEasing:I
-
     .line 21
-    .line 22
-    const/4 v2, 0x3
+    sget-object v1, Landroid/graphics/Bitmap$Config;->RGB_565:Landroid/graphics/Bitmap$Config;
 
+    .line 22
     .line 23
-    invoke-virtual {v0, v1, v2}, Landroid/util/SparseIntArray;->append(II)V
+    invoke-virtual {v1}, Ljava/lang/Enum;->ordinal()I
 
     .line 24
     .line 25
     .line 26
-    sget v1, Ly2/r;->KeyPosition_curveFit:I
+    move-result v1
 
     .line 27
+    const/4 v2, 0x2
+
     .line 28
-    const/4 v2, 0x4
+    aput v2, v0, v1
+    :try_end_1
+    .catch Ljava/lang/NoSuchFieldError; {:try_start_1 .. :try_end_1} :catch_1
 
     .line 29
-    invoke-virtual {v0, v1, v2}, Landroid/util/SparseIntArray;->append(II)V
-
     .line 30
+    :catch_1
+    :try_start_2
+    sget-object v0, LW2/i;->a:[I
+
     .line 31
     .line 32
-    sget v1, Ly2/r;->KeyPosition_drawPath:I
+    sget-object v1, Landroid/graphics/Bitmap$Config;->ARGB_4444:Landroid/graphics/Bitmap$Config;
 
     .line 33
     .line 34
-    const/4 v2, 0x5
+    invoke-virtual {v1}, Ljava/lang/Enum;->ordinal()I
 
     .line 35
-    invoke-virtual {v0, v1, v2}, Landroid/util/SparseIntArray;->append(II)V
-
     .line 36
     .line 37
+    move-result v1
+
     .line 38
-    sget v1, Ly2/r;->KeyPosition_percentX:I
+    const/4 v2, 0x3
 
     .line 39
-    .line 40
-    const/4 v2, 0x6
+    aput v2, v0, v1
+    :try_end_2
+    .catch Ljava/lang/NoSuchFieldError; {:try_start_2 .. :try_end_2} :catch_2
 
+    .line 40
     .line 41
-    invoke-virtual {v0, v1, v2}, Landroid/util/SparseIntArray;->append(II)V
+    :catch_2
+    :try_start_3
+    sget-object v0, LW2/i;->a:[I
 
     .line 42
     .line 43
+    sget-object v1, Landroid/graphics/Bitmap$Config;->ALPHA_8:Landroid/graphics/Bitmap$Config;
+
     .line 44
-    sget v1, Ly2/r;->KeyPosition_percentY:I
-
     .line 45
+    invoke-virtual {v1}, Ljava/lang/Enum;->ordinal()I
+
     .line 46
-    const/4 v2, 0x7
-
     .line 47
-    invoke-virtual {v0, v1, v2}, Landroid/util/SparseIntArray;->append(II)V
-
     .line 48
+    move-result v1
+
     .line 49
+    const/4 v2, 0x4
+
     .line 50
-    sget v1, Ly2/r;->KeyPosition_keyPositionType:I
+    aput v2, v0, v1
+    :try_end_3
+    .catch Ljava/lang/NoSuchFieldError; {:try_start_3 .. :try_end_3} :catch_3
 
     .line 51
     .line 52
-    const/16 v2, 0x9
-
-    .line 53
-    .line 54
-    invoke-virtual {v0, v1, v2}, Landroid/util/SparseIntArray;->append(II)V
-
-    .line 55
-    .line 56
-    .line 57
-    sget v1, Ly2/r;->KeyPosition_sizePercent:I
-
-    .line 58
-    .line 59
-    const/16 v2, 0x8
-
-    .line 60
-    .line 61
-    invoke-virtual {v0, v1, v2}, Landroid/util/SparseIntArray;->append(II)V
-
-    .line 62
-    .line 63
-    .line 64
-    sget v1, Ly2/r;->KeyPosition_percentWidth:I
-
-    .line 65
-    .line 66
-    const/16 v2, 0xb
-
-    .line 67
-    .line 68
-    invoke-virtual {v0, v1, v2}, Landroid/util/SparseIntArray;->append(II)V
-
-    .line 69
-    .line 70
-    .line 71
-    sget v1, Ly2/r;->KeyPosition_percentHeight:I
-
-    .line 72
-    .line 73
-    const/16 v2, 0xc
-
-    .line 74
-    .line 75
-    invoke-virtual {v0, v1, v2}, Landroid/util/SparseIntArray;->append(II)V
-
-    .line 76
-    .line 77
-    .line 78
-    sget v1, Ly2/r;->KeyPosition_pathMotionArc:I
-
-    .line 79
-    .line 80
-    const/16 v2, 0xa
-
-    .line 81
-    .line 82
-    invoke-virtual {v0, v1, v2}, Landroid/util/SparseIntArray;->append(II)V
-
-    .line 83
-    .line 84
-    .line 85
+    :catch_3
     return-void
 .end method

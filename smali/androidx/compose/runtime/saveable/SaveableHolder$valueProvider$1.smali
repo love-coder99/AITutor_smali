@@ -3,14 +3,14 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lzh/a;
+.implements Lka/a;
 
 
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "Lkotlin/jvm/internal/Lambda;",
-        "Lzh/a;"
+        "Lka/a;"
     }
 .end annotation
 
@@ -74,7 +74,7 @@
 
     .line 2
     .line 3
-    iget-object v1, v0, Landroidx/compose/runtime/saveable/b;->b:Landroidx/compose/runtime/saveable/k;
+    iget-object v1, v0, Landroidx/compose/runtime/saveable/b;->b:Landroidx/compose/runtime/saveable/j;
 
     .line 4
     .line 5
@@ -86,7 +86,7 @@
 
     .line 8
     .line 9
-    invoke-interface {v1, v0, v2}, Landroidx/compose/runtime/saveable/k;->a(Landroidx/compose/runtime/saveable/n;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-interface {v1, v0, v2}, Landroidx/compose/runtime/saveable/j;->d(Landroidx/compose/runtime/saveable/l;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 10
     .line 11
@@ -106,18 +106,10 @@
 
     .line 17
     .line 18
-    invoke-virtual {v1}, Ljava/lang/Object;->toString()Ljava/lang/String;
+    invoke-direct {v0, v1}, Ljava/lang/IllegalArgumentException;-><init>(Ljava/lang/String;)V
 
     .line 19
     .line 20
     .line 21
-    move-result-object v1
-
-    .line 22
-    invoke-direct {v0, v1}, Ljava/lang/IllegalArgumentException;-><init>(Ljava/lang/String;)V
-
-    .line 23
-    .line 24
-    .line 25
     throw v0
 .end method

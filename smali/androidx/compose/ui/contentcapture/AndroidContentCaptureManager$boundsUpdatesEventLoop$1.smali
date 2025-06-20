@@ -4,6 +4,16 @@
 
 
 # annotations
+.annotation runtime Lca/c;
+    c = "androidx.compose.ui.contentcapture.AndroidContentCaptureManager"
+    f = "AndroidContentCaptureManager.android.kt"
+    l = {
+        0xba,
+        0xc4
+    }
+    m = "boundsUpdatesEventLoop$ui_release"
+.end annotation
+
 .annotation runtime Lkotlin/Metadata;
     k = 0x3
     mv = {
@@ -12,16 +22,6 @@
         0x0
     }
     xi = 0x30
-.end annotation
-
-.annotation runtime Lth/c;
-    c = "androidx.compose.ui.contentcapture.AndroidContentCaptureManager"
-    f = "AndroidContentCaptureManager.android.kt"
-    l = {
-        0xba,
-        0xc4
-    }
-    m = "boundsUpdatesEventLoop$ui_release"
 .end annotation
 
 
@@ -75,7 +75,7 @@
 
     iget-object p1, p0, Landroidx/compose/ui/contentcapture/AndroidContentCaptureManager$boundsUpdatesEventLoop$1;->this$0:Landroidx/compose/ui/contentcapture/c;
 
-    invoke-virtual {p1, p0}, Landroidx/compose/ui/contentcapture/c;->a(Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
+    invoke-virtual {p1, p0}, Landroidx/compose/ui/contentcapture/c;->a(Lkotlin/coroutines/jvm/internal/ContinuationImpl;)Ljava/lang/Object;
 
     move-result-object p1
 

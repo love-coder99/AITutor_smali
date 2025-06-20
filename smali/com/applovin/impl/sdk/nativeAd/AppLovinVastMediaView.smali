@@ -35,6 +35,9 @@
 .field private final countdownManager:Lcom/applovin/impl/u4;
 
 .field private industryIconImageView:Landroid/widget/ImageView;
+    .annotation build Landroidx/annotation/Nullable;
+    .end annotation
+.end field
 
 .field private final initialOnAttachedToWindowHandled:Ljava/util/concurrent/atomic/AtomicBoolean;
 
@@ -53,10 +56,19 @@
 .field private final mediaPlayer:Lcom/applovin/impl/ck;
 
 .field private muteButtonImageView:Landroid/widget/ImageView;
+    .annotation build Landroidx/annotation/Nullable;
+    .end annotation
+.end field
 
 .field private playPauseButtonImageView:Landroid/widget/ImageView;
+    .annotation build Landroidx/annotation/Nullable;
+    .end annotation
+.end field
 
 .field private replayIconContainer:Landroid/widget/FrameLayout;
+    .annotation build Landroidx/annotation/Nullable;
+    .end annotation
+.end field
 
 .field private savedVideoPercentViewed:I
 
@@ -83,6 +95,9 @@
 .field private videoWasCompleted:Z
 
 .field private videoWidgetLinearLayout:Landroid/widget/LinearLayout;
+    .annotation build Landroidx/annotation/Nullable;
+    .end annotation
+.end field
 
 .field private viewActivity:Landroid/app/Activity;
 
@@ -1956,7 +1971,7 @@
 
     .line 37
     .line 38
-    invoke-static {v2, p1, v0, v1}, Landroidx/compose/foundation/text/modifiers/f;->A(Ljava/lang/String;Ljava/lang/String;Lcom/applovin/impl/sdk/n;Ljava/lang/String;)V
+    invoke-static {v2, p1, v0, v1}, Lcom/android/billingclient/api/a;->w(Ljava/lang/String;Ljava/lang/String;Lcom/applovin/impl/sdk/n;Ljava/lang/String;)V
 
     .line 39
     .line 40
@@ -2045,7 +2060,7 @@
 
     .line 81
     .line 82
-    invoke-static {v2, p1, v0, v1}, Landroidx/compose/foundation/text/modifiers/f;->A(Ljava/lang/String;Ljava/lang/String;Lcom/applovin/impl/sdk/n;Ljava/lang/String;)V
+    invoke-static {v2, p1, v0, v1}, Lcom/android/billingclient/api/a;->w(Ljava/lang/String;Ljava/lang/String;Lcom/applovin/impl/sdk/n;Ljava/lang/String;)V
 
     .line 83
     .line 84
@@ -2307,9 +2322,9 @@
 .method private maybeFireTrackers(Lcom/applovin/impl/aq$d;Lcom/applovin/impl/fq;)V
     .locals 1
 
+    .line 2
     const-string v0, ""
 
-    .line 2
     invoke-direct {p0, p1, v0, p2}, Lcom/applovin/impl/sdk/nativeAd/AppLovinVastMediaView;->maybeFireTrackers(Lcom/applovin/impl/aq$d;Ljava/lang/String;Lcom/applovin/impl/fq;)V
 
     return-void
@@ -2329,9 +2344,9 @@
 .method private maybeFireTrackers(Lcom/applovin/impl/aq$d;Ljava/lang/String;Lcom/applovin/impl/fq;)V
     .locals 1
 
+    .line 4
     iget-object v0, p0, Lcom/applovin/impl/sdk/nativeAd/AppLovinVastMediaView;->vastAd:Lcom/applovin/impl/aq;
 
-    .line 4
     invoke-virtual {v0, p1, p2}, Lcom/applovin/impl/aq;->a(Lcom/applovin/impl/aq$d;Ljava/lang/String;)Ljava/util/Set;
 
     move-result-object p1
@@ -2399,9 +2414,9 @@
 
     move-result-wide v4
 
+    .line 8
     iget-object v0, p0, Lcom/applovin/impl/sdk/nativeAd/AppLovinVastMediaView;->vastAd:Lcom/applovin/impl/aq;
 
-    .line 8
     invoke-virtual {v0}, Lcom/applovin/impl/aq;->w1()Lcom/applovin/impl/oq;
 
     move-result-object v0
@@ -2459,6 +2474,7 @@
 
     invoke-virtual {v0, v2, v1}, Lcom/applovin/impl/sdk/n;->a(Ljava/lang/String;Ljava/lang/String;)V
 
+    .line 11
     :cond_2
     iget-object v8, p0, Lcom/applovin/impl/sdk/nativeAd/AppLovinMediaView;->sdk:Lcom/applovin/impl/sdk/j;
 
@@ -2466,7 +2482,6 @@
 
     move-object v7, p2
 
-    .line 11
     invoke-static/range {v3 .. v8}, Lcom/applovin/impl/mq;->a(Ljava/util/Set;JLandroid/net/Uri;Lcom/applovin/impl/fq;Lcom/applovin/impl/sdk/j;)V
 
     :cond_3
@@ -3161,7 +3176,7 @@
 
     .line 59
     .line 60
-    invoke-static {v2, v3, v4, v5}, Landroid/support/v4/media/session/a;->G(Ljava/lang/StringBuilder;JLjava/lang/String;)Ljava/lang/String;
+    invoke-static {v3, v4, v5, v2}, LB/u;->q(JLjava/lang/String;Ljava/lang/StringBuilder;)Ljava/lang/String;
 
     .line 61
     .line 62
@@ -3765,8 +3780,11 @@
 .method public getCommunicatorId()Ljava/lang/String;
     .locals 1
 
+    .line 1
     const-string v0, "AppLovinVastMediaView"
 
+    .line 2
+    .line 3
     return-object v0
 .end method
 

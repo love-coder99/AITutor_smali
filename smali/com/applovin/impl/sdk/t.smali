@@ -19,126 +19,140 @@
     .locals 0
 
     .line 1
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
-
-    .line 2
-    .line 3
-    .line 4
     iput p2, p0, Lcom/applovin/impl/sdk/t;->b:I
 
-    .line 5
-    .line 6
-    iput-object p1, p0, Lcom/applovin/impl/sdk/t;->d:Ljava/lang/Object;
+    iput-object p1, p0, Lcom/applovin/impl/sdk/t;->c:Ljava/lang/Object;
 
-    .line 7
-    .line 8
-    iput-object p3, p0, Lcom/applovin/impl/sdk/t;->c:Ljava/lang/Object;
+    iput-object p3, p0, Lcom/applovin/impl/sdk/t;->d:Ljava/lang/Object;
 
-    .line 9
-    .line 10
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
     return-void
 .end method
 
 
 # virtual methods
 .method public final run()V
-    .locals 3
+    .locals 2
 
     .line 1
     iget v0, p0, Lcom/applovin/impl/sdk/t;->b:I
 
-    iget-object v1, p0, Lcom/applovin/impl/sdk/t;->c:Ljava/lang/Object;
-
-    iget-object v2, p0, Lcom/applovin/impl/sdk/t;->d:Ljava/lang/Object;
-
     packed-switch v0, :pswitch_data_0
 
-    check-cast v2, Lcom/applovin/impl/sdk/q;
+    iget-object v0, p0, Lcom/applovin/impl/sdk/t;->c:Ljava/lang/Object;
 
-    check-cast v1, Landroid/adservices/topics/GetTopicsRequest;
+    check-cast v0, Lcom/applovin/impl/sdk/q;
 
-    invoke-static {v2, v1}, Lcom/applovin/impl/sdk/q;->a(Lcom/applovin/impl/sdk/q;Landroid/adservices/topics/GetTopicsRequest;)V
+    iget-object v1, p0, Lcom/applovin/impl/sdk/t;->d:Ljava/lang/Object;
+
+    check-cast v1, Ljava/lang/String;
+
+    invoke-static {v0, v1}, Lcom/applovin/impl/sdk/q;->c(Lcom/applovin/impl/sdk/q;Ljava/lang/String;)V
 
     return-void
 
     :pswitch_0
-    check-cast v2, Lcom/applovin/impl/sdk/q;
+    iget-object v0, p0, Lcom/applovin/impl/sdk/t;->c:Ljava/lang/Object;
 
-    check-cast v1, Ljava/lang/String;
+    check-cast v0, Lcom/applovin/impl/sdk/q;
 
-    invoke-static {v2, v1}, Lcom/applovin/impl/sdk/q;->c(Lcom/applovin/impl/sdk/q;Ljava/lang/String;)V
+    iget-object v1, p0, Lcom/applovin/impl/sdk/t;->d:Ljava/lang/Object;
+
+    check-cast v1, Ljava/util/List;
+
+    invoke-static {v0, v1}, Lcom/applovin/impl/sdk/q;->e(Lcom/applovin/impl/sdk/q;Ljava/util/List;)V
 
     return-void
 
     :pswitch_1
-    check-cast v2, Lcom/applovin/impl/sdk/q;
+    iget-object v0, p0, Lcom/applovin/impl/sdk/t;->d:Ljava/lang/Object;
 
-    check-cast v1, Ljava/util/List;
+    check-cast v0, Ljava/lang/Long;
 
-    invoke-static {v2, v1}, Lcom/applovin/impl/sdk/q;->e(Lcom/applovin/impl/sdk/q;Ljava/util/List;)V
+    iget-object v1, p0, Lcom/applovin/impl/sdk/t;->c:Ljava/lang/Object;
+
+    check-cast v1, Lcom/applovin/impl/sdk/m;
+
+    invoke-static {v1, v0}, Lcom/applovin/impl/sdk/m;->a(Lcom/applovin/impl/sdk/m;Ljava/lang/Long;)V
 
     return-void
 
     :pswitch_2
-    check-cast v2, Lcom/applovin/impl/sdk/m;
+    iget-object v0, p0, Lcom/applovin/impl/sdk/t;->c:Ljava/lang/Object;
 
-    check-cast v1, Ljava/lang/Long;
+    check-cast v0, Lcom/applovin/impl/sdk/k;
 
-    invoke-static {v2, v1}, Lcom/applovin/impl/sdk/m;->b(Lcom/applovin/impl/sdk/m;Ljava/lang/Long;)V
+    iget-object v1, p0, Lcom/applovin/impl/sdk/t;->d:Ljava/lang/Object;
+
+    check-cast v1, Lcom/applovin/sdk/AppLovinBidTokenCollectionListener;
+
+    invoke-static {v0, v1}, Lcom/applovin/impl/sdk/k;->a(Lcom/applovin/impl/sdk/k;Lcom/applovin/sdk/AppLovinBidTokenCollectionListener;)V
 
     return-void
 
     :pswitch_3
-    check-cast v2, Lcom/applovin/impl/sdk/k;
+    iget-object v0, p0, Lcom/applovin/impl/sdk/t;->c:Ljava/lang/Object;
 
-    check-cast v1, Lcom/applovin/sdk/AppLovinBidTokenCollectionListener;
+    check-cast v0, Lcom/applovin/impl/sdk/j;
 
-    invoke-static {v2, v1}, Lcom/applovin/impl/sdk/k;->b(Lcom/applovin/impl/sdk/k;Lcom/applovin/sdk/AppLovinBidTokenCollectionListener;)V
+    iget-object v1, p0, Lcom/applovin/impl/sdk/t;->d:Ljava/lang/Object;
+
+    check-cast v1, Lcom/applovin/sdk/AppLovinSdkInitializationConfiguration;
+
+    invoke-static {v0, v1}, Lcom/applovin/impl/sdk/j;->k(Lcom/applovin/impl/sdk/j;Lcom/applovin/sdk/AppLovinSdkInitializationConfiguration;)V
 
     return-void
 
     :pswitch_4
-    check-cast v2, Lcom/applovin/impl/sdk/j;
+    iget-object v0, p0, Lcom/applovin/impl/sdk/t;->c:Ljava/lang/Object;
 
-    check-cast v1, Lcom/applovin/sdk/AppLovinSdkInitializationConfiguration;
+    check-cast v0, Lcom/applovin/impl/sdk/NativeCrashReporter;
 
-    invoke-static {v2, v1}, Lcom/applovin/impl/sdk/j;->h(Lcom/applovin/impl/sdk/j;Lcom/applovin/sdk/AppLovinSdkInitializationConfiguration;)V
+    iget-object v1, p0, Lcom/applovin/impl/sdk/t;->d:Ljava/lang/Object;
+
+    check-cast v1, Lcom/applovin/impl/sdk/g$b;
+
+    invoke-static {v0, v1}, Lcom/applovin/impl/sdk/NativeCrashReporter;->a(Lcom/applovin/impl/sdk/NativeCrashReporter;Lcom/applovin/impl/sdk/g$b;)V
 
     return-void
 
     :pswitch_5
-    check-cast v2, Lcom/applovin/impl/sdk/NativeCrashReporter;
+    iget-object v0, p0, Lcom/applovin/impl/sdk/t;->c:Ljava/lang/Object;
 
-    check-cast v1, Lcom/applovin/impl/sdk/g$b;
+    check-cast v0, Lcom/applovin/sdk/AppLovinAdLoadListener;
 
-    invoke-static {v2, v1}, Lcom/applovin/impl/sdk/NativeCrashReporter;->a(Lcom/applovin/impl/sdk/NativeCrashReporter;Lcom/applovin/impl/sdk/g$b;)V
+    iget-object v1, p0, Lcom/applovin/impl/sdk/t;->d:Ljava/lang/Object;
+
+    check-cast v1, Lcom/applovin/impl/sdk/ad/b;
+
+    invoke-static {v0, v1}, Lcom/applovin/impl/sdk/AppLovinAdServiceImpl;->f(Lcom/applovin/sdk/AppLovinAdLoadListener;Lcom/applovin/impl/sdk/ad/b;)V
 
     return-void
 
     :pswitch_6
-    check-cast v2, Lcom/applovin/impl/sdk/AppLovinAdServiceImpl;
+    iget-object v0, p0, Lcom/applovin/impl/sdk/t;->c:Ljava/lang/Object;
+
+    check-cast v0, Lcom/applovin/impl/sdk/AppLovinAdServiceImpl;
+
+    iget-object v1, p0, Lcom/applovin/impl/sdk/t;->d:Ljava/lang/Object;
 
     check-cast v1, Lcom/applovin/impl/o9;
 
-    invoke-static {v2, v1}, Lcom/applovin/impl/sdk/AppLovinAdServiceImpl;->g(Lcom/applovin/impl/sdk/AppLovinAdServiceImpl;Lcom/applovin/impl/o9;)V
+    invoke-static {v0, v1}, Lcom/applovin/impl/sdk/AppLovinAdServiceImpl;->a(Lcom/applovin/impl/sdk/AppLovinAdServiceImpl;Lcom/applovin/impl/o9;)V
 
     return-void
 
     :pswitch_7
-    check-cast v2, Lcom/applovin/sdk/AppLovinAdLoadListener;
+    iget-object v0, p0, Lcom/applovin/impl/sdk/t;->c:Ljava/lang/Object;
+
+    check-cast v0, Lcom/applovin/impl/sdk/AppLovinAdServiceImpl$c;
+
+    iget-object v1, p0, Lcom/applovin/impl/sdk/t;->d:Ljava/lang/Object;
 
     check-cast v1, Lcom/applovin/impl/sdk/ad/b;
 
-    invoke-static {v2, v1}, Lcom/applovin/impl/sdk/AppLovinAdServiceImpl;->d(Lcom/applovin/sdk/AppLovinAdLoadListener;Lcom/applovin/impl/sdk/ad/b;)V
-
-    return-void
-
-    :pswitch_8
-    check-cast v2, Lcom/applovin/impl/sdk/AppLovinAdServiceImpl$c;
-
-    check-cast v1, Lcom/applovin/impl/sdk/ad/b;
-
-    invoke-static {v2, v1}, Lcom/applovin/impl/sdk/AppLovinAdServiceImpl;->b(Lcom/applovin/impl/sdk/AppLovinAdServiceImpl$c;Lcom/applovin/impl/sdk/ad/b;)V
+    invoke-static {v0, v1}, Lcom/applovin/impl/sdk/AppLovinAdServiceImpl;->e(Lcom/applovin/impl/sdk/AppLovinAdServiceImpl$c;Lcom/applovin/impl/sdk/ad/b;)V
 
     return-void
 
@@ -146,7 +160,6 @@
 
     :pswitch_data_0
     .packed-switch 0x0
-        :pswitch_8
         :pswitch_7
         :pswitch_6
         :pswitch_5

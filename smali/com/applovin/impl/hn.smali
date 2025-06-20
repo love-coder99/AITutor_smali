@@ -76,11 +76,11 @@
 
     if-ne p1, v0, :cond_1
 
+    .line 4
     iget-object v0, p0, Lcom/applovin/impl/hn;->i:Lcom/applovin/sdk/AppLovinAdLoadListener;
 
     if-eqz v0, :cond_3
 
-    .line 4
     invoke-interface {v0, p1}, Lcom/applovin/sdk/AppLovinAdLoadListener;->failedToReceiveAd(I)V
 
     goto :goto_1
@@ -98,6 +98,7 @@
     :cond_2
     sget-object v0, Lcom/applovin/impl/fq;->h:Lcom/applovin/impl/fq;
 
+    .line 6
     :goto_0
     iget-object v1, p0, Lcom/applovin/impl/hn;->h:Lcom/applovin/impl/eq;
 
@@ -105,7 +106,6 @@
 
     iget-object v3, p0, Lcom/applovin/impl/yl;->a:Lcom/applovin/impl/sdk/j;
 
-    .line 6
     invoke-static {v1, v2, v0, p1, v3}, Lcom/applovin/impl/mq;->a(Lcom/applovin/impl/eq;Lcom/applovin/sdk/AppLovinAdLoadListener;Lcom/applovin/impl/fq;ILcom/applovin/impl/sdk/j;)V
 
     :cond_3

@@ -1,12 +1,12 @@
 .class final Landroidx/compose/foundation/layout/SizeElement;
-.super Landroidx/compose/ui/node/w0;
+.super Landroidx/compose/ui/node/V;
 .source "SourceFile"
 
 
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
-        "Landroidx/compose/ui/node/w0;"
+        "Landroidx/compose/ui/node/V;"
     }
 .end annotation
 
@@ -16,8 +16,8 @@
     }
     d2 = {
         "Landroidx/compose/foundation/layout/SizeElement;",
-        "Landroidx/compose/ui/node/w0;",
-        "Landroidx/compose/foundation/layout/z0;",
+        "Landroidx/compose/ui/node/V;",
+        "Landroidx/compose/foundation/layout/X;",
         "foundation-layout_release"
     }
     k = 0x1
@@ -26,42 +26,48 @@
         0x8,
         0x0
     }
+    xi = 0x30
 .end annotation
 
 
 # instance fields
+.field public final a:F
+
+.field public final b:F
+
 .field public final c:F
 
 .field public final d:F
 
-.field public final e:F
-
-.field public final f:F
-
-.field public final g:Z
+.field public final e:Z
 
 
 # direct methods
 .method public constructor <init>(FFFFZ)V
     .locals 0
 
-    .line 2
+    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    iput p1, p0, Landroidx/compose/foundation/layout/SizeElement;->c:F
+    .line 2
+    iput p1, p0, Landroidx/compose/foundation/layout/SizeElement;->a:F
 
-    iput p2, p0, Landroidx/compose/foundation/layout/SizeElement;->d:F
+    .line 3
+    iput p2, p0, Landroidx/compose/foundation/layout/SizeElement;->b:F
 
-    iput p3, p0, Landroidx/compose/foundation/layout/SizeElement;->e:F
+    .line 4
+    iput p3, p0, Landroidx/compose/foundation/layout/SizeElement;->c:F
 
-    iput p4, p0, Landroidx/compose/foundation/layout/SizeElement;->f:F
+    .line 5
+    iput p4, p0, Landroidx/compose/foundation/layout/SizeElement;->d:F
 
-    iput-boolean p5, p0, Landroidx/compose/foundation/layout/SizeElement;->g:Z
+    .line 6
+    iput-boolean p5, p0, Landroidx/compose/foundation/layout/SizeElement;->e:Z
 
     return-void
 .end method
 
-.method public constructor <init>(FFFFZI)V
+.method public synthetic constructor <init>(FFFFZI)V
     .locals 8
 
     and-int/lit8 v0, p6, 0x1
@@ -118,7 +124,7 @@
 
     move v7, p5
 
-    .line 1
+    .line 7
     invoke-direct/range {v2 .. v7}, Landroidx/compose/foundation/layout/SizeElement;-><init>(FFFFZ)V
 
     return-void
@@ -160,15 +166,15 @@
 
     .line 12
     .line 13
-    iget v1, p1, Landroidx/compose/foundation/layout/SizeElement;->c:F
+    iget v1, p1, Landroidx/compose/foundation/layout/SizeElement;->a:F
 
     .line 14
     .line 15
-    iget v3, p0, Landroidx/compose/foundation/layout/SizeElement;->c:F
+    iget v3, p0, Landroidx/compose/foundation/layout/SizeElement;->a:F
 
     .line 16
     .line 17
-    invoke-static {v3, v1}, Lh2/e;->a(FF)Z
+    invoke-static {v3, v1}, LM0/e;->a(FF)Z
 
     .line 18
     .line 19
@@ -184,15 +190,15 @@
 
     .line 24
     :cond_2
-    iget v1, p0, Landroidx/compose/foundation/layout/SizeElement;->d:F
+    iget v1, p0, Landroidx/compose/foundation/layout/SizeElement;->b:F
 
     .line 25
     .line 26
-    iget v3, p1, Landroidx/compose/foundation/layout/SizeElement;->d:F
+    iget v3, p1, Landroidx/compose/foundation/layout/SizeElement;->b:F
 
     .line 27
     .line 28
-    invoke-static {v1, v3}, Lh2/e;->a(FF)Z
+    invoke-static {v1, v3}, LM0/e;->a(FF)Z
 
     .line 29
     .line 30
@@ -208,15 +214,15 @@
 
     .line 35
     :cond_3
-    iget v1, p0, Landroidx/compose/foundation/layout/SizeElement;->e:F
+    iget v1, p0, Landroidx/compose/foundation/layout/SizeElement;->c:F
 
     .line 36
     .line 37
-    iget v3, p1, Landroidx/compose/foundation/layout/SizeElement;->e:F
+    iget v3, p1, Landroidx/compose/foundation/layout/SizeElement;->c:F
 
     .line 38
     .line 39
-    invoke-static {v1, v3}, Lh2/e;->a(FF)Z
+    invoke-static {v1, v3}, LM0/e;->a(FF)Z
 
     .line 40
     .line 41
@@ -232,15 +238,15 @@
 
     .line 46
     :cond_4
-    iget v1, p0, Landroidx/compose/foundation/layout/SizeElement;->f:F
+    iget v1, p0, Landroidx/compose/foundation/layout/SizeElement;->d:F
 
     .line 47
     .line 48
-    iget v3, p1, Landroidx/compose/foundation/layout/SizeElement;->f:F
+    iget v3, p1, Landroidx/compose/foundation/layout/SizeElement;->d:F
 
     .line 49
     .line 50
-    invoke-static {v1, v3}, Lh2/e;->a(FF)Z
+    invoke-static {v1, v3}, LM0/e;->a(FF)Z
 
     .line 51
     .line 52
@@ -256,11 +262,11 @@
 
     .line 57
     :cond_5
-    iget-boolean v1, p0, Landroidx/compose/foundation/layout/SizeElement;->g:Z
+    iget-boolean v1, p0, Landroidx/compose/foundation/layout/SizeElement;->e:Z
 
     .line 58
     .line 59
-    iget-boolean p1, p1, Landroidx/compose/foundation/layout/SizeElement;->g:Z
+    iget-boolean p1, p1, Landroidx/compose/foundation/layout/SizeElement;->e:Z
 
     .line 60
     .line 61
@@ -279,7 +285,7 @@
     .locals 3
 
     .line 1
-    iget v0, p0, Landroidx/compose/foundation/layout/SizeElement;->c:F
+    iget v0, p0, Landroidx/compose/foundation/layout/SizeElement;->a:F
 
     .line 2
     .line 3
@@ -299,11 +305,11 @@
 
     .line 10
     .line 11
-    iget v2, p0, Landroidx/compose/foundation/layout/SizeElement;->d:F
+    iget v2, p0, Landroidx/compose/foundation/layout/SizeElement;->b:F
 
     .line 12
     .line 13
-    invoke-static {v2, v0, v1}, Landroid/support/v4/media/session/a;->x(FII)I
+    invoke-static {v2, v0, v1}, Landroidx/appcompat/view/menu/F;->v(FII)I
 
     .line 14
     .line 15
@@ -311,11 +317,11 @@
     move-result v0
 
     .line 17
-    iget v2, p0, Landroidx/compose/foundation/layout/SizeElement;->e:F
+    iget v2, p0, Landroidx/compose/foundation/layout/SizeElement;->c:F
 
     .line 18
     .line 19
-    invoke-static {v2, v0, v1}, Landroid/support/v4/media/session/a;->x(FII)I
+    invoke-static {v2, v0, v1}, Landroidx/appcompat/view/menu/F;->v(FII)I
 
     .line 20
     .line 21
@@ -323,11 +329,11 @@
     move-result v0
 
     .line 23
-    iget v2, p0, Landroidx/compose/foundation/layout/SizeElement;->f:F
+    iget v2, p0, Landroidx/compose/foundation/layout/SizeElement;->d:F
 
     .line 24
     .line 25
-    invoke-static {v2, v0, v1}, Landroid/support/v4/media/session/a;->x(FII)I
+    invoke-static {v2, v0, v1}, Landroidx/appcompat/view/menu/F;->v(FII)I
 
     .line 26
     .line 27
@@ -335,7 +341,7 @@
     move-result v0
 
     .line 29
-    iget-boolean v1, p0, Landroidx/compose/foundation/layout/SizeElement;->g:Z
+    iget-boolean v1, p0, Landroidx/compose/foundation/layout/SizeElement;->e:Z
 
     .line 30
     .line 31
@@ -366,7 +372,7 @@
     .locals 2
 
     .line 1
-    new-instance v0, Landroidx/compose/foundation/layout/z0;
+    new-instance v0, Landroidx/compose/foundation/layout/X;
 
     .line 2
     .line 3
@@ -375,43 +381,43 @@
     .line 4
     .line 5
     .line 6
-    iget v1, p0, Landroidx/compose/foundation/layout/SizeElement;->c:F
+    iget v1, p0, Landroidx/compose/foundation/layout/SizeElement;->a:F
 
     .line 7
     .line 8
-    iput v1, v0, Landroidx/compose/foundation/layout/z0;->p:F
+    iput v1, v0, Landroidx/compose/foundation/layout/X;->p:F
 
     .line 9
     .line 10
-    iget v1, p0, Landroidx/compose/foundation/layout/SizeElement;->d:F
+    iget v1, p0, Landroidx/compose/foundation/layout/SizeElement;->b:F
 
     .line 11
     .line 12
-    iput v1, v0, Landroidx/compose/foundation/layout/z0;->q:F
+    iput v1, v0, Landroidx/compose/foundation/layout/X;->q:F
 
     .line 13
     .line 14
-    iget v1, p0, Landroidx/compose/foundation/layout/SizeElement;->e:F
+    iget v1, p0, Landroidx/compose/foundation/layout/SizeElement;->c:F
 
     .line 15
     .line 16
-    iput v1, v0, Landroidx/compose/foundation/layout/z0;->r:F
+    iput v1, v0, Landroidx/compose/foundation/layout/X;->r:F
 
     .line 17
     .line 18
-    iget v1, p0, Landroidx/compose/foundation/layout/SizeElement;->f:F
+    iget v1, p0, Landroidx/compose/foundation/layout/SizeElement;->d:F
 
     .line 19
     .line 20
-    iput v1, v0, Landroidx/compose/foundation/layout/z0;->s:F
+    iput v1, v0, Landroidx/compose/foundation/layout/X;->s:F
 
     .line 21
     .line 22
-    iget-boolean v1, p0, Landroidx/compose/foundation/layout/SizeElement;->g:Z
+    iget-boolean v1, p0, Landroidx/compose/foundation/layout/SizeElement;->e:Z
 
     .line 23
     .line 24
-    iput-boolean v1, v0, Landroidx/compose/foundation/layout/z0;->t:Z
+    iput-boolean v1, v0, Landroidx/compose/foundation/layout/X;->t:Z
 
     .line 25
     .line 26
@@ -422,47 +428,47 @@
     .locals 1
 
     .line 1
-    check-cast p1, Landroidx/compose/foundation/layout/z0;
+    check-cast p1, Landroidx/compose/foundation/layout/X;
 
     .line 2
     .line 3
-    iget v0, p0, Landroidx/compose/foundation/layout/SizeElement;->c:F
+    iget v0, p0, Landroidx/compose/foundation/layout/SizeElement;->a:F
 
     .line 4
     .line 5
-    iput v0, p1, Landroidx/compose/foundation/layout/z0;->p:F
+    iput v0, p1, Landroidx/compose/foundation/layout/X;->p:F
 
     .line 6
     .line 7
-    iget v0, p0, Landroidx/compose/foundation/layout/SizeElement;->d:F
+    iget v0, p0, Landroidx/compose/foundation/layout/SizeElement;->b:F
 
     .line 8
     .line 9
-    iput v0, p1, Landroidx/compose/foundation/layout/z0;->q:F
+    iput v0, p1, Landroidx/compose/foundation/layout/X;->q:F
 
     .line 10
     .line 11
-    iget v0, p0, Landroidx/compose/foundation/layout/SizeElement;->e:F
+    iget v0, p0, Landroidx/compose/foundation/layout/SizeElement;->c:F
 
     .line 12
     .line 13
-    iput v0, p1, Landroidx/compose/foundation/layout/z0;->r:F
+    iput v0, p1, Landroidx/compose/foundation/layout/X;->r:F
 
     .line 14
     .line 15
-    iget v0, p0, Landroidx/compose/foundation/layout/SizeElement;->f:F
+    iget v0, p0, Landroidx/compose/foundation/layout/SizeElement;->d:F
 
     .line 16
     .line 17
-    iput v0, p1, Landroidx/compose/foundation/layout/z0;->s:F
+    iput v0, p1, Landroidx/compose/foundation/layout/X;->s:F
 
     .line 18
     .line 19
-    iget-boolean v0, p0, Landroidx/compose/foundation/layout/SizeElement;->g:Z
+    iget-boolean v0, p0, Landroidx/compose/foundation/layout/SizeElement;->e:Z
 
     .line 20
     .line 21
-    iput-boolean v0, p1, Landroidx/compose/foundation/layout/z0;->t:Z
+    iput-boolean v0, p1, Landroidx/compose/foundation/layout/X;->t:Z
 
     .line 22
     .line 23

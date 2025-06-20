@@ -19,7 +19,7 @@
     .line 2
     .line 3
     .line 4
-    sget-object v0, Lg/j;->RecycleListView:[I
+    sget-object v0, Li/j;->RecycleListView:[I
 
     .line 5
     .line 6
@@ -31,7 +31,7 @@
     move-result-object p1
 
     .line 10
-    sget p2, Lg/j;->RecycleListView_paddingBottomNoButtons:I
+    sget p2, Li/j;->RecycleListView_paddingBottomNoButtons:I
 
     .line 11
     .line 12
@@ -50,7 +50,7 @@
 
     .line 18
     .line 19
-    sget p2, Lg/j;->RecycleListView_paddingTopNoTitle:I
+    sget p2, Li/j;->RecycleListView_paddingTopNoTitle:I
 
     .line 20
     .line 21

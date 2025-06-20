@@ -1,20 +1,15 @@
 .class public final Landroidx/compose/foundation/pager/j;
-.super Ljava/lang/Object;
+.super Landroidx/compose/foundation/lazy/layout/r;
 .source "SourceFile"
-
-# interfaces
-.implements Landroidx/compose/foundation/lazy/layout/r;
 
 
 # instance fields
-.field public final a:Lzh/c;
-
-.field public final b:Lzh/g;
+.field public final b:LBa/i;
 
 
 # direct methods
-.method public constructor <init>(Lzh/c;Lzh/g;)V
-    .locals 0
+.method public constructor <init>(Lka/g;Lka/c;I)V
+    .locals 2
 
     .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -22,35 +17,48 @@
     .line 2
     .line 3
     .line 4
-    iput-object p1, p0, Landroidx/compose/foundation/pager/j;->a:Lzh/c;
+    new-instance v0, LBa/i;
 
     .line 5
     .line 6
-    iput-object p2, p0, Landroidx/compose/foundation/pager/j;->b:Lzh/g;
+    const/4 v1, 0x4
 
     .line 7
+    invoke-direct {v0, v1}, LBa/i;-><init>(I)V
+
     .line 8
+    .line 9
+    .line 10
+    new-instance v1, Landroidx/compose/foundation/pager/i;
+
+    .line 11
+    .line 12
+    invoke-direct {v1, p2, p1}, Landroidx/compose/foundation/pager/i;-><init>(Lka/c;Lka/g;)V
+
+    .line 13
+    .line 14
+    .line 15
+    invoke-virtual {v0, p3, v1}, LBa/i;->a(ILandroidx/compose/foundation/lazy/layout/q;)V
+
+    .line 16
+    .line 17
+    .line 18
+    iput-object v0, p0, Landroidx/compose/foundation/pager/j;->b:LBa/i;
+
+    .line 19
+    .line 20
     return-void
 .end method
 
 
 # virtual methods
-.method public final getKey()Lzh/c;
+.method public final j()LBa/i;
     .locals 1
 
     .line 1
-    iget-object v0, p0, Landroidx/compose/foundation/pager/j;->a:Lzh/c;
+    iget-object v0, p0, Landroidx/compose/foundation/pager/j;->b:LBa/i;
 
-    return-object v0
-.end method
-
-.method public final synthetic getType()Lzh/c;
-    .locals 1
-
-    .line 1
-    invoke-static {}, Landroidx/compose/foundation/lazy/layout/q;->a()Lzh/c;
-
-    move-result-object v0
-
+    .line 2
+    .line 3
     return-object v0
 .end method

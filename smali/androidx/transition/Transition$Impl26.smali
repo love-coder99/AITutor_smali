@@ -18,8 +18,12 @@
 .method private constructor <init>()V
     .locals 0
 
+    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
+    .line 2
+    .line 3
+    .line 4
     return-void
 .end method
 
@@ -27,7 +31,7 @@
     .locals 2
 
     .line 1
-    invoke-static {p0}, Landroidx/appcompat/app/e0;->b(Landroid/animation/Animator;)J
+    invoke-static {p0}, Landroidx/compose/ui/graphics/A;->c(Landroid/animation/Animator;)J
 
     .line 2
     .line 3
@@ -46,7 +50,7 @@
 
     .line 2
     .line 3
-    invoke-static {p0, p1, p2}, Landroidx/transition/a;->p(Landroid/animation/AnimatorSet;J)V
+    invoke-static {p0, p1, p2}, Landroidx/compose/ui/graphics/z;->k(Landroid/animation/AnimatorSet;J)V
 
     .line 4
     .line 5

@@ -111,11 +111,11 @@
     move-result-object v0
 
     .line 27
-    check-cast v0, Lt2/e;
+    check-cast v0, LY0/e;
 
     .line 28
     .line 29
-    invoke-interface {v0, v0}, Lt2/e;->a(Lt2/e;)V
+    invoke-interface {v0, v0}, LY0/e;->a(LY0/e;)V
 
     .line 30
     .line 31

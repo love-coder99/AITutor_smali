@@ -1,68 +1,67 @@
-.class public final Landroidx/camera/core/impl/a0;
+.class public final Landroidx/camera/core/impl/A0;
 .super Ljava/lang/Object;
 .source "SourceFile"
 
 # interfaces
-.implements Ly/m1;
+.implements LB/h0;
 
 
 # instance fields
-.field public final synthetic b:I
+.field public final b:J
 
-.field public final c:J
-
-.field public final d:Ly/m1;
+.field public final c:LB/h0;
 
 
 # direct methods
-.method public constructor <init>(JLy/m1;)V
-    .locals 4
-
-    .line 2
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
-
-    const/4 v0, 0x1
-
-    iput v0, p0, Landroidx/camera/core/impl/a0;->b:I
-
-    const-wide/16 v1, 0x0
-
-    cmp-long v3, p1, v1
-
-    if-ltz v3, :cond_0
-
-    goto :goto_0
-
-    :cond_0
-    const/4 v0, 0x0
-
-    :goto_0
-    const-string v1, "Timeout must be non-negative."
-
-    .line 3
-    invoke-static {v0, v1}, Le3/b;->b(ZLjava/lang/String;)V
-
-    iput-wide p1, p0, Landroidx/camera/core/impl/a0;->c:J
-
-    iput-object p3, p0, Landroidx/camera/core/impl/a0;->d:Ly/m1;
-
-    return-void
-.end method
-
-.method public constructor <init>(Landroidx/camera/core/impl/b0;J)V
-    .locals 1
+.method public constructor <init>(JLB/h0;)V
+    .locals 3
 
     .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
+    .line 2
+    .line 3
+    .line 4
+    const-wide/16 v0, 0x0
+
+    .line 5
+    .line 6
+    cmp-long v2, p1, v0
+
+    .line 7
+    .line 8
+    if-ltz v2, :cond_0
+
+    .line 9
+    .line 10
+    const/4 v0, 0x1
+
+    .line 11
+    goto :goto_0
+
+    .line 12
+    :cond_0
     const/4 v0, 0x0
 
-    iput v0, p0, Landroidx/camera/core/impl/a0;->b:I
+    .line 13
+    :goto_0
+    const-string v1, "Timeout must be non-negative."
 
-    iput-object p1, p0, Landroidx/camera/core/impl/a0;->d:Ly/m1;
+    .line 14
+    .line 15
+    invoke-static {v1, v0}, Lf4/g;->d(Ljava/lang/String;Z)V
 
-    iput-wide p2, p0, Landroidx/camera/core/impl/a0;->c:J
+    .line 16
+    .line 17
+    .line 18
+    iput-wide p1, p0, Landroidx/camera/core/impl/A0;->b:J
 
+    .line 19
+    .line 20
+    iput-object p3, p0, Landroidx/camera/core/impl/A0;->c:LB/h0;
+
+    .line 21
+    .line 22
     return-void
 .end method
 
@@ -72,109 +71,68 @@
     .locals 2
 
     .line 1
-    iget-wide v0, p0, Landroidx/camera/core/impl/a0;->c:J
-
-    return-wide v0
-.end method
-
-.method public final b(Landroidx/camera/core/impl/z;)Ly/l1;
-    .locals 6
-
-    .line 1
-    iget v0, p0, Landroidx/camera/core/impl/a0;->b:I
+    iget-wide v0, p0, Landroidx/camera/core/impl/A0;->b:J
 
     .line 2
     .line 3
-    packed-switch v0, :pswitch_data_0
+    return-wide v0
+.end method
+
+.method public final b(LN4/c;)LB/g0;
+    .locals 6
+
+    .line 1
+    iget-object v0, p0, Landroidx/camera/core/impl/A0;->c:LB/h0;
+
+    .line 2
+    .line 3
+    invoke-interface {v0, p1}, LB/h0;->b(LN4/c;)LB/g0;
 
     .line 4
     .line 5
     .line 6
-    iget-object v0, p0, Landroidx/camera/core/impl/a0;->d:Ly/m1;
-
-    .line 7
-    .line 8
-    invoke-interface {v0, p1}, Ly/m1;->b(Landroidx/camera/core/impl/z;)Ly/l1;
-
-    .line 9
-    .line 10
-    .line 11
     move-result-object v0
 
-    .line 12
+    .line 7
     const-wide/16 v1, 0x0
 
-    .line 13
-    .line 14
-    iget-wide v3, p0, Landroidx/camera/core/impl/a0;->c:J
+    .line 8
+    .line 9
+    iget-wide v3, p0, Landroidx/camera/core/impl/A0;->b:J
 
-    .line 15
-    .line 16
+    .line 10
+    .line 11
     cmp-long v5, v3, v1
 
-    .line 17
-    .line 18
+    .line 12
+    .line 13
     if-lez v5, :cond_0
+
+    .line 14
+    .line 15
+    iget-wide v1, v0, LB/g0;->a:J
+
+    .line 16
+    .line 17
+    sub-long/2addr v3, v1
+
+    .line 18
+    iget-wide v1, p1, LN4/c;->d:J
 
     .line 19
     .line 20
-    iget-wide v1, v0, Ly/l1;->a:J
+    cmp-long p1, v1, v3
 
     .line 21
     .line 22
-    sub-long/2addr v3, v1
-
-    .line 23
-    iget-wide v1, p1, Landroidx/camera/core/impl/z;->b:J
-
-    .line 24
-    .line 25
-    cmp-long p1, v1, v3
-
-    .line 26
-    .line 27
     if-ltz p1, :cond_0
 
-    .line 28
-    .line 29
-    sget-object v0, Ly/l1;->d:Ly/l1;
+    .line 23
+    .line 24
+    sget-object v0, LB/g0;->d:LB/g0;
 
-    .line 30
-    .line 31
+    .line 25
+    .line 26
     :cond_0
     return-object v0
-
-    .line 32
-    :pswitch_0
-    const/4 v0, 0x1
-
-    .line 33
-    iget p1, p1, Landroidx/camera/core/impl/z;->a:I
-
-    .line 34
-    .line 35
-    if-ne p1, v0, :cond_1
-
-    .line 36
-    .line 37
-    sget-object p1, Ly/l1;->d:Ly/l1;
-
-    .line 38
-    .line 39
-    goto :goto_0
-
-    .line 40
-    :cond_1
-    sget-object p1, Ly/l1;->e:Ly/l1;
-
-    .line 41
-    .line 42
-    :goto_0
-    return-object p1
-
-    .line 43
-    :pswitch_data_0
-    .packed-switch 0x0
-        :pswitch_0
-    .end packed-switch
 .end method

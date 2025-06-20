@@ -71,18 +71,24 @@
 
     const/4 v0, 0x0
 
+    .line 2
     iput v0, p0, Landroidx/transition/ArcMotion;->mMinimumHorizontalAngle:F
 
+    .line 3
     iput v0, p0, Landroidx/transition/ArcMotion;->mMinimumVerticalAngle:F
 
     const/high16 v1, 0x428c0000    # 70.0f
 
+    .line 4
     iput v1, p0, Landroidx/transition/ArcMotion;->mMaximumAngle:F
 
+    .line 5
     iput v0, p0, Landroidx/transition/ArcMotion;->mMinimumHorizontalTangent:F
 
+    .line 6
     iput v0, p0, Landroidx/transition/ArcMotion;->mMinimumVerticalTangent:F
 
+    .line 7
     sget v0, Landroidx/transition/ArcMotion;->DEFAULT_MAX_TANGENT:F
 
     iput v0, p0, Landroidx/transition/ArcMotion;->mMaximumTangent:F
@@ -92,42 +98,56 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
     .locals 3
+    .param p1    # Landroid/content/Context;
+        .annotation build Landroidx/annotation/NonNull;
+        .end annotation
+    .end param
+    .param p2    # Landroid/util/AttributeSet;
+        .annotation build Landroidx/annotation/NonNull;
+        .end annotation
+    .end param
 
-    .line 2
+    .line 8
     invoke-direct {p0, p1, p2}, Landroidx/transition/PathMotion;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
 
     const/4 v0, 0x0
 
+    .line 9
     iput v0, p0, Landroidx/transition/ArcMotion;->mMinimumHorizontalAngle:F
 
+    .line 10
     iput v0, p0, Landroidx/transition/ArcMotion;->mMinimumVerticalAngle:F
 
     const/high16 v1, 0x428c0000    # 70.0f
 
+    .line 11
     iput v1, p0, Landroidx/transition/ArcMotion;->mMaximumAngle:F
 
+    .line 12
     iput v0, p0, Landroidx/transition/ArcMotion;->mMinimumHorizontalTangent:F
 
+    .line 13
     iput v0, p0, Landroidx/transition/ArcMotion;->mMinimumVerticalTangent:F
 
+    .line 14
     sget v2, Landroidx/transition/ArcMotion;->DEFAULT_MAX_TANGENT:F
 
     iput v2, p0, Landroidx/transition/ArcMotion;->mMaximumTangent:F
 
+    .line 15
     sget-object v2, Landroidx/transition/Styleable;->ARC_MOTION:[I
 
-    .line 3
     invoke-virtual {p1, p2, v2}, Landroid/content/Context;->obtainStyledAttributes(Landroid/util/AttributeSet;[I)Landroid/content/res/TypedArray;
 
     move-result-object p1
 
-    .line 4
+    .line 16
     check-cast p2, Lorg/xmlpull/v1/XmlPullParser;
 
+    .line 17
     const-string v2, "minimumVerticalAngle"
 
-    .line 5
-    invoke-static {p2, v2}, Lnc/b;->p(Lorg/xmlpull/v1/XmlPullParser;Ljava/lang/String;)Z
+    invoke-static {p2, v2}, Lk1/a;->e(Lorg/xmlpull/v1/XmlPullParser;Ljava/lang/String;)Z
 
     move-result v2
 
@@ -140,19 +160,19 @@
     :cond_0
     const/4 v2, 0x1
 
-    .line 6
+    .line 18
     invoke-virtual {p1, v2, v0}, Landroid/content/res/TypedArray;->getFloat(IF)F
 
     move-result v2
 
-    .line 7
+    .line 19
     :goto_0
     invoke-virtual {p0, v2}, Landroidx/transition/ArcMotion;->setMinimumVerticalAngle(F)V
 
+    .line 20
     const-string v2, "minimumHorizontalAngle"
 
-    .line 8
-    invoke-static {p2, v2}, Lnc/b;->p(Lorg/xmlpull/v1/XmlPullParser;Ljava/lang/String;)Z
+    invoke-static {p2, v2}, Lk1/a;->e(Lorg/xmlpull/v1/XmlPullParser;Ljava/lang/String;)Z
 
     move-result v2
 
@@ -163,19 +183,19 @@
     :cond_1
     const/4 v2, 0x0
 
-    .line 9
+    .line 21
     invoke-virtual {p1, v2, v0}, Landroid/content/res/TypedArray;->getFloat(IF)F
 
     move-result v0
 
-    .line 10
+    .line 22
     :goto_1
     invoke-virtual {p0, v0}, Landroidx/transition/ArcMotion;->setMinimumHorizontalAngle(F)V
 
+    .line 23
     const-string v0, "maximumAngle"
 
-    .line 11
-    invoke-static {p2, v0}, Lnc/b;->p(Lorg/xmlpull/v1/XmlPullParser;Ljava/lang/String;)Z
+    invoke-static {p2, v0}, Lk1/a;->e(Lorg/xmlpull/v1/XmlPullParser;Ljava/lang/String;)Z
 
     move-result p2
 
@@ -186,16 +206,16 @@
     :cond_2
     const/4 p2, 0x2
 
-    .line 12
+    .line 24
     invoke-virtual {p1, p2, v1}, Landroid/content/res/TypedArray;->getFloat(IF)F
 
     move-result v1
 
-    .line 13
+    .line 25
     :goto_2
     invoke-virtual {p0, v1}, Landroidx/transition/ArcMotion;->setMaximumAngle(F)V
 
-    .line 14
+    .line 26
     invoke-virtual {p1}, Landroid/content/res/TypedArray;->recycle()V
 
     return-void
@@ -282,29 +302,40 @@
 .method public getMaximumAngle()F
     .locals 1
 
+    .line 1
     iget v0, p0, Landroidx/transition/ArcMotion;->mMaximumAngle:F
 
+    .line 2
+    .line 3
     return v0
 .end method
 
 .method public getMinimumHorizontalAngle()F
     .locals 1
 
+    .line 1
     iget v0, p0, Landroidx/transition/ArcMotion;->mMinimumHorizontalAngle:F
 
+    .line 2
+    .line 3
     return v0
 .end method
 
 .method public getMinimumVerticalAngle()F
     .locals 1
 
+    .line 1
     iget v0, p0, Landroidx/transition/ArcMotion;->mMinimumVerticalAngle:F
 
+    .line 2
+    .line 3
     return v0
 .end method
 
 .method public getPath(FFFF)Landroid/graphics/Path;
     .locals 11
+    .annotation build Landroidx/annotation/NonNull;
+    .end annotation
 
     .line 1
     new-instance v7, Landroid/graphics/Path;
@@ -595,7 +626,7 @@
     double-to-float v3, v8
 
     .line 125
-    invoke-static {v1, v2, v3, v2}, Lcom/google/android/gms/internal/play_billing/v3;->j(FFFF)F
+    invoke-static {v1, v2, v3, v2}, Lcom/google/android/material/datepicker/i;->l(FFFF)F
 
     .line 126
     .line 127
@@ -603,7 +634,7 @@
     move-result v1
 
     .line 129
-    invoke-static {v0, v5, v3, v5}, Lcom/google/android/gms/internal/play_billing/v3;->j(FFFF)F
+    invoke-static {v0, v5, v3, v5}, Lcom/google/android/material/datepicker/i;->l(FFFF)F
 
     .line 130
     .line 131

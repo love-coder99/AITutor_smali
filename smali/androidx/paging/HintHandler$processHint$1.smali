@@ -3,14 +3,14 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lzh/e;
+.implements Lka/e;
 
 
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "Lkotlin/jvm/internal/Lambda;",
-        "Lzh/e;"
+        "Lka/e;"
     }
 .end annotation
 
@@ -20,10 +20,10 @@
     }
     d2 = {
         "Landroidx/paging/r;",
-        "Landroidx/paging/t;",
+        "Landroidx/paging/c0;",
         "prependHint",
         "appendHint",
-        "Lqh/r;",
+        "LX9/j;",
         "invoke",
         "(Landroidx/paging/r;Landroidx/paging/r;)V",
         "<anonymous>"
@@ -38,14 +38,14 @@
 
 
 # instance fields
-.field final synthetic $viewportHint:Landroidx/paging/j2;
+.field final synthetic $viewportHint:Landroidx/paging/L0;
 
 
 # direct methods
-.method public constructor <init>(Landroidx/paging/j2;)V
+.method public constructor <init>(Landroidx/paging/L0;)V
     .locals 0
 
-    iput-object p1, p0, Landroidx/paging/HintHandler$processHint$1;->$viewportHint:Landroidx/paging/j2;
+    iput-object p1, p0, Landroidx/paging/HintHandler$processHint$1;->$viewportHint:Landroidx/paging/L0;
 
     const/4 p1, 0x2
 
@@ -66,7 +66,7 @@
 
     invoke-virtual {p0, p1, p2}, Landroidx/paging/HintHandler$processHint$1;->invoke(Landroidx/paging/r;Landroidx/paging/r;)V
 
-    sget-object p1, Lqh/r;->a:Lqh/r;
+    sget-object p1, LX9/j;->a:LX9/j;
 
     return-object p1
 .end method
@@ -74,58 +74,64 @@
 .method public final invoke(Landroidx/paging/r;Landroidx/paging/r;)V
     .locals 3
 
-    iget-object v0, p0, Landroidx/paging/HintHandler$processHint$1;->$viewportHint:Landroidx/paging/j2;
-
     .line 2
-    iget-object v1, p1, Landroidx/paging/r;->a:Landroidx/paging/j2;
-
-    sget-object v2, Landroidx/paging/LoadType;->PREPEND:Landroidx/paging/LoadType;
+    iget-object v0, p0, Landroidx/paging/HintHandler$processHint$1;->$viewportHint:Landroidx/paging/L0;
 
     .line 3
-    invoke-static {v0, v1, v2}, Ly/f;->K(Landroidx/paging/j2;Landroidx/paging/j2;Landroidx/paging/LoadType;)Z
+    iget-object v1, p1, Landroidx/paging/r;->a:Landroidx/paging/L0;
+
+    .line 4
+    sget-object v2, Landroidx/paging/LoadType;->PREPEND:Landroidx/paging/LoadType;
+
+    .line 5
+    invoke-static {v0, v1, v2}, Landroidx/paging/g;->c(Landroidx/paging/L0;Landroidx/paging/L0;Landroidx/paging/LoadType;)Z
 
     move-result v0
 
     if-eqz v0, :cond_0
 
-    iget-object v0, p0, Landroidx/paging/HintHandler$processHint$1;->$viewportHint:Landroidx/paging/j2;
+    .line 6
+    iget-object v0, p0, Landroidx/paging/HintHandler$processHint$1;->$viewportHint:Landroidx/paging/L0;
 
-    .line 4
-    iput-object v0, p1, Landroidx/paging/r;->a:Landroidx/paging/j2;
+    .line 7
+    iput-object v0, p1, Landroidx/paging/r;->a:Landroidx/paging/L0;
 
     if-eqz v0, :cond_0
 
-    .line 5
-    iget-object p1, p1, Landroidx/paging/r;->b:Lkotlinx/coroutines/flow/m0;
+    .line 8
+    iget-object p1, p1, Landroidx/paging/r;->b:Lkotlinx/coroutines/flow/K;
 
-    invoke-virtual {p1, v0}, Lkotlinx/coroutines/flow/m0;->d(Ljava/lang/Object;)Z
+    invoke-virtual {p1, v0}, Lkotlinx/coroutines/flow/K;->d(Ljava/lang/Object;)Z
 
+    .line 9
     :cond_0
-    iget-object p1, p0, Landroidx/paging/HintHandler$processHint$1;->$viewportHint:Landroidx/paging/j2;
+    iget-object p1, p0, Landroidx/paging/HintHandler$processHint$1;->$viewportHint:Landroidx/paging/L0;
 
-    .line 6
-    iget-object v0, p2, Landroidx/paging/r;->a:Landroidx/paging/j2;
+    .line 10
+    iget-object v0, p2, Landroidx/paging/r;->a:Landroidx/paging/L0;
 
+    .line 11
     sget-object v1, Landroidx/paging/LoadType;->APPEND:Landroidx/paging/LoadType;
 
-    .line 7
-    invoke-static {p1, v0, v1}, Ly/f;->K(Landroidx/paging/j2;Landroidx/paging/j2;Landroidx/paging/LoadType;)Z
+    .line 12
+    invoke-static {p1, v0, v1}, Landroidx/paging/g;->c(Landroidx/paging/L0;Landroidx/paging/L0;Landroidx/paging/LoadType;)Z
 
     move-result p1
 
     if-eqz p1, :cond_1
 
-    iget-object p1, p0, Landroidx/paging/HintHandler$processHint$1;->$viewportHint:Landroidx/paging/j2;
+    .line 13
+    iget-object p1, p0, Landroidx/paging/HintHandler$processHint$1;->$viewportHint:Landroidx/paging/L0;
 
-    .line 8
-    iput-object p1, p2, Landroidx/paging/r;->a:Landroidx/paging/j2;
+    .line 14
+    iput-object p1, p2, Landroidx/paging/r;->a:Landroidx/paging/L0;
 
     if-eqz p1, :cond_1
 
-    .line 9
-    iget-object p2, p2, Landroidx/paging/r;->b:Lkotlinx/coroutines/flow/m0;
+    .line 15
+    iget-object p2, p2, Landroidx/paging/r;->b:Lkotlinx/coroutines/flow/K;
 
-    invoke-virtual {p2, p1}, Lkotlinx/coroutines/flow/m0;->d(Ljava/lang/Object;)Z
+    invoke-virtual {p2, p1}, Lkotlinx/coroutines/flow/K;->d(Ljava/lang/Object;)Z
 
     :cond_1
     return-void

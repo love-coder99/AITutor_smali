@@ -3,7 +3,7 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lzh/c;
+.implements Lka/c;
 
 
 # annotations
@@ -19,7 +19,7 @@
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "Lkotlin/jvm/internal/Lambda;",
-        "Lzh/c;"
+        "Lka/c;"
     }
 .end annotation
 
@@ -31,7 +31,7 @@
         "T",
         "",
         "it",
-        "Lqh/r;",
+        "LX9/j;",
         "invoke",
         "(Ljava/lang/Throwable;)V",
         "<anonymous>"
@@ -46,27 +46,27 @@
 
 
 # instance fields
-.field final synthetic $$this$simpleChannelFlow:Landroidx/paging/a2;
+.field final synthetic $$this$simpleChannelFlow:Landroidx/paging/C0;
     .annotation system Ldalvik/annotation/Signature;
         value = {
-            "Landroidx/paging/a2;"
+            "Landroidx/paging/C0;"
         }
     .end annotation
 .end field
 
 
 # direct methods
-.method public constructor <init>(Landroidx/paging/a2;)V
+.method public constructor <init>(Landroidx/paging/C0;)V
     .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
-            "Landroidx/paging/a2;",
+            "Landroidx/paging/C0;",
             ")V"
         }
     .end annotation
 
-    iput-object p1, p0, Landroidx/paging/CancelableChannelFlowKt$cancelableChannelFlow$1$1;->$$this$simpleChannelFlow:Landroidx/paging/a2;
+    iput-object p1, p0, Landroidx/paging/CancelableChannelFlowKt$cancelableChannelFlow$1$1;->$$this$simpleChannelFlow:Landroidx/paging/C0;
 
     const/4 p1, 0x1
 
@@ -85,7 +85,7 @@
 
     invoke-virtual {p0, p1}, Landroidx/paging/CancelableChannelFlowKt$cancelableChannelFlow$1$1;->invoke(Ljava/lang/Throwable;)V
 
-    sget-object p1, Lqh/r;->a:Lqh/r;
+    sget-object p1, LX9/j;->a:LX9/j;
 
     return-object p1
 .end method
@@ -93,14 +93,15 @@
 .method public final invoke(Ljava/lang/Throwable;)V
     .locals 1
 
-    iget-object p1, p0, Landroidx/paging/CancelableChannelFlowKt$cancelableChannelFlow$1$1;->$$this$simpleChannelFlow:Landroidx/paging/a2;
+    .line 2
+    iget-object p1, p0, Landroidx/paging/CancelableChannelFlowKt$cancelableChannelFlow$1$1;->$$this$simpleChannelFlow:Landroidx/paging/C0;
 
     const/4 v0, 0x0
 
-    check-cast p1, Landroidx/paging/b2;
+    .line 3
+    check-cast p1, Landroidx/paging/D0;
 
-    .line 2
-    invoke-virtual {p1, v0}, Landroidx/paging/b2;->m(Ljava/lang/Throwable;)Z
+    invoke-virtual {p1, v0}, Landroidx/paging/D0;->g(Ljava/lang/Throwable;)Z
 
     return-void
 .end method

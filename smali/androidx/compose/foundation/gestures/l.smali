@@ -1,17 +1,19 @@
-.class public final Landroidx/compose/foundation/gestures/l;
+.class public final Landroidx/compose/foundation/gestures/L;
 .super Ljava/lang/Object;
 .source "SourceFile"
 
 # interfaces
-.implements Landroidx/compose/foundation/gestures/a0;
+.implements Landroidx/compose/foundation/gestures/C;
 
 
 # instance fields
-.field public final synthetic a:Landroidx/compose/foundation/gestures/m;
+.field public final synthetic a:Landroidx/compose/foundation/gestures/N;
+
+.field public final synthetic b:Landroidx/compose/foundation/gestures/z;
 
 
 # direct methods
-.method public constructor <init>(Landroidx/compose/foundation/gestures/m;)V
+.method public constructor <init>(Landroidx/compose/foundation/gestures/z;Landroidx/compose/foundation/gestures/N;)V
     .locals 0
 
     .line 1
@@ -20,10 +22,14 @@
     .line 2
     .line 3
     .line 4
-    iput-object p1, p0, Landroidx/compose/foundation/gestures/l;->a:Landroidx/compose/foundation/gestures/m;
+    iput-object p2, p0, Landroidx/compose/foundation/gestures/L;->a:Landroidx/compose/foundation/gestures/N;
 
     .line 5
     .line 6
+    iput-object p1, p0, Landroidx/compose/foundation/gestures/L;->b:Landroidx/compose/foundation/gestures/z;
+
+    .line 7
+    .line 8
     return-void
 .end method
 
@@ -33,131 +39,134 @@
     .locals 6
 
     .line 1
-    invoke-static {p1}, Ljava/lang/Float;->isNaN(F)Z
+    iget-object v0, p0, Landroidx/compose/foundation/gestures/L;->a:Landroidx/compose/foundation/gestures/N;
 
     .line 2
     .line 3
+    invoke-virtual {v0, p1}, Landroidx/compose/foundation/gestures/N;->g(F)J
+
     .line 4
-    move-result v0
-
     .line 5
-    const/4 v1, 0x0
-
     .line 6
-    if-eqz v0, :cond_0
+    move-result-wide v1
 
     .line 7
+    invoke-virtual {v0, v1, v2}, Landroidx/compose/foundation/gestures/N;->d(J)J
+
     .line 8
-    return v1
-
     .line 9
-    :cond_0
-    iget-object v0, p0, Landroidx/compose/foundation/gestures/l;->a:Landroidx/compose/foundation/gestures/m;
-
     .line 10
+    move-result-wide v1
+
     .line 11
-    iget-object v2, v0, Landroidx/compose/foundation/gestures/m;->a:Lzh/c;
+    iget-object p1, p0, Landroidx/compose/foundation/gestures/L;->b:Landroidx/compose/foundation/gestures/z;
 
     .line 12
     .line 13
-    invoke-static {p1}, Ljava/lang/Float;->valueOf(F)Ljava/lang/Float;
+    check-cast p1, Landroidx/compose/foundation/gestures/M;
 
     .line 14
     .line 15
-    .line 16
-    move-result-object p1
+    iget-object p1, p1, Landroidx/compose/foundation/gestures/M;->a:Landroidx/compose/foundation/gestures/N;
 
+    .line 16
     .line 17
-    invoke-interface {v2, p1}, Lzh/c;->invoke(Ljava/lang/Object;)Ljava/lang/Object;
+    const/4 v3, 0x2
 
     .line 18
+    iput v3, p1, Landroidx/compose/foundation/gestures/N;->g:I
+
     .line 19
     .line 20
-    move-result-object p1
+    iget-object v4, p1, Landroidx/compose/foundation/gestures/N;->b:Landroidx/compose/foundation/O;
 
     .line 21
-    check-cast p1, Ljava/lang/Number;
-
     .line 22
-    .line 23
-    invoke-virtual {p1}, Ljava/lang/Number;->floatValue()F
+    if-eqz v4, :cond_1
 
+    .line 23
     .line 24
+    iget-object v5, p1, Landroidx/compose/foundation/gestures/N;->a:Landroidx/compose/foundation/gestures/K;
+
     .line 25
     .line 26
-    move-result p1
+    invoke-interface {v5}, Landroidx/compose/foundation/gestures/K;->d()Z
 
     .line 27
-    const/4 v2, 0x0
-
     .line 28
-    const/4 v3, 0x1
-
     .line 29
-    cmpl-float v4, p1, v1
+    move-result v5
 
     .line 30
+    if-nez v5, :cond_0
+
     .line 31
-    if-lez v4, :cond_1
-
     .line 32
-    .line 33
-    const/4 v4, 0x1
+    iget-object v5, p1, Landroidx/compose/foundation/gestures/N;->a:Landroidx/compose/foundation/gestures/K;
 
+    .line 33
     .line 34
-    goto :goto_0
+    invoke-interface {v5}, Landroidx/compose/foundation/gestures/K;->b()Z
 
     .line 35
-    :cond_1
-    const/4 v4, 0x0
-
     .line 36
-    :goto_0
-    invoke-static {v4}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
-
     .line 37
-    .line 38
-    .line 39
-    move-result-object v4
+    move-result v5
 
+    .line 38
+    if-eqz v5, :cond_1
+
+    .line 39
     .line 40
-    iget-object v5, v0, Landroidx/compose/foundation/gestures/m;->e:Landroidx/compose/runtime/ParcelableSnapshotMutableState;
+    :cond_0
+    iget v3, p1, Landroidx/compose/foundation/gestures/N;->g:I
 
     .line 41
     .line 42
-    invoke-virtual {v5, v4}, Landroidx/compose/runtime/t2;->setValue(Ljava/lang/Object;)V
+    iget-object p1, p1, Landroidx/compose/foundation/gestures/N;->j:Lka/c;
 
     .line 43
     .line 44
-    .line 45
-    cmpg-float v1, p1, v1
+    invoke-interface {v4, v1, v2, v3, p1}, Landroidx/compose/foundation/O;->b(JILka/c;)J
 
+    .line 45
     .line 46
     .line 47
-    if-gez v1, :cond_2
+    move-result-wide v1
 
     .line 48
+    goto :goto_0
+
     .line 49
-    const/4 v2, 0x1
+    :cond_1
+    iget-object v4, p1, Landroidx/compose/foundation/gestures/N;->h:Landroidx/compose/foundation/gestures/C;
 
     .line 50
-    :cond_2
-    invoke-static {v2}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
-
     .line 51
+    invoke-static {p1, v4, v1, v2, v3}, Landroidx/compose/foundation/gestures/N;->a(Landroidx/compose/foundation/gestures/N;Landroidx/compose/foundation/gestures/C;JI)J
+
     .line 52
     .line 53
-    move-result-object v1
-
     .line 54
-    iget-object v0, v0, Landroidx/compose/foundation/gestures/m;->f:Landroidx/compose/runtime/ParcelableSnapshotMutableState;
+    move-result-wide v1
 
     .line 55
-    .line 56
-    invoke-virtual {v0, v1}, Landroidx/compose/runtime/t2;->setValue(Ljava/lang/Object;)V
+    :goto_0
+    invoke-virtual {v0, v1, v2}, Landroidx/compose/foundation/gestures/N;->f(J)F
 
+    .line 56
     .line 57
     .line 58
+    move-result p1
+
     .line 59
+    invoke-virtual {v0, p1}, Landroidx/compose/foundation/gestures/N;->c(F)F
+
+    .line 60
+    .line 61
+    .line 62
+    move-result p1
+
+    .line 63
     return p1
 .end method

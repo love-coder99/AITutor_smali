@@ -89,10 +89,13 @@
     .line 5
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
+    .line 6
     iput-object p1, p0, Lcom/applovin/impl/va;->a:[B
 
+    .line 7
     iput-object p2, p0, Lcom/applovin/impl/va;->b:Ljava/lang/String;
 
+    .line 8
     iput-object p3, p0, Lcom/applovin/impl/va;->c:Ljava/lang/String;
 
     return-void
@@ -103,11 +106,12 @@
 .method public a(Lcom/applovin/impl/ud$b;)V
     .locals 1
 
+    .line 2
     iget-object v0, p0, Lcom/applovin/impl/va;->b:Ljava/lang/String;
 
     if-eqz v0, :cond_0
 
-    .line 2
+    .line 3
     invoke-virtual {p1, v0}, Lcom/applovin/impl/ud$b;->k(Ljava/lang/CharSequence;)Lcom/applovin/impl/ud$b;
 
     :cond_0
@@ -118,7 +122,7 @@
     .locals 1
 
     .line 1
-    invoke-static {p0}, Lcom/applovin/impl/ns;->b(Lcom/applovin/impl/af$b;)[B
+    invoke-static {p0}, Lcom/applovin/impl/F;->b(Lcom/applovin/impl/af$b;)[B
 
     move-result-object v0
 
@@ -129,7 +133,7 @@
     .locals 1
 
     .line 1
-    invoke-static {p0}, Lcom/applovin/impl/ns;->c(Lcom/applovin/impl/af$b;)Lcom/applovin/impl/e9;
+    invoke-static {p0}, Lcom/applovin/impl/F;->c(Lcom/applovin/impl/af$b;)Lcom/applovin/impl/e9;
 
     move-result-object v0
 
@@ -234,7 +238,7 @@
 .end method
 
 .method public toString()Ljava/lang/String;
-    .locals 5
+    .locals 6
 
     .line 1
     iget-object v0, p0, Lcom/applovin/impl/va;->b:Ljava/lang/String;
@@ -252,54 +256,38 @@
     array-length v2, v2
 
     .line 8
-    invoke-static {v2}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+    const-string v3, "ICY: title=\""
 
     .line 9
     .line 10
-    .line 11
-    move-result-object v2
+    const-string v4, "\", url=\""
 
+    .line 11
     .line 12
-    const/4 v3, 0x3
+    const-string v5, "\", rawMetadata.length=\""
 
     .line 13
-    new-array v3, v3, [Ljava/lang/Object;
-
     .line 14
+    invoke-static {v3, v0, v4, v1, v5}, LB/u;->B(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/StringBuilder;
+
     .line 15
-    const/4 v4, 0x0
-
     .line 16
-    aput-object v0, v3, v4
-
     .line 17
-    .line 18
-    const/4 v0, 0x1
-
-    .line 19
-    aput-object v1, v3, v0
-
-    .line 20
-    .line 21
-    const/4 v0, 0x2
-
-    .line 22
-    aput-object v2, v3, v0
-
-    .line 23
-    .line 24
-    const-string v0, "ICY: title=\"%s\", url=\"%s\", rawMetadata.length=\"%s\""
-
-    .line 25
-    .line 26
-    invoke-static {v0, v3}, Ljava/lang/String;->format(Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;
-
-    .line 27
-    .line 28
-    .line 29
     move-result-object v0
 
-    .line 30
+    .line 18
+    const-string v1, "\""
+
+    .line 19
+    .line 20
+    invoke-static {v2, v1, v0}, LB/u;->o(ILjava/lang/String;Ljava/lang/StringBuilder;)Ljava/lang/String;
+
+    .line 21
+    .line 22
+    .line 23
+    move-result-object v0
+
+    .line 24
     return-object v0
 .end method
 

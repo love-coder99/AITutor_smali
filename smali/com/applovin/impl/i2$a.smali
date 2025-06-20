@@ -106,7 +106,7 @@
 .method public static synthetic d(Lcom/applovin/impl/i2$a;)J
     .locals 2
 
-    .line 2
+    .line 1
     iget-wide v0, p0, Lcom/applovin/impl/i2$a;->f:J
 
     return-wide v0
@@ -128,9 +128,10 @@
 .method public b(J)Lcom/applovin/impl/ij$a;
     .locals 13
 
+    .line 3
     iget-object v0, p0, Lcom/applovin/impl/i2$a;->a:Lcom/applovin/impl/i2$d;
 
-    .line 3
+    .line 4
     invoke-interface {v0, p1, p2}, Lcom/applovin/impl/i2$d;->a(J)J
 
     move-result-wide v1
@@ -145,12 +146,12 @@
 
     iget-wide v11, p0, Lcom/applovin/impl/i2$a;->g:J
 
-    .line 4
+    .line 5
     invoke-static/range {v1 .. v12}, Lcom/applovin/impl/i2$c;->a(JJJJJJ)J
 
     move-result-wide v0
 
-    .line 5
+    .line 6
     new-instance v2, Lcom/applovin/impl/ij$a;
 
     new-instance v3, Lcom/applovin/impl/kj;
@@ -174,9 +175,9 @@
 .method public c(J)J
     .locals 1
 
+    .line 2
     iget-object v0, p0, Lcom/applovin/impl/i2$a;->a:Lcom/applovin/impl/i2$d;
 
-    .line 2
     invoke-interface {v0, p1, p2}, Lcom/applovin/impl/i2$d;->a(J)J
 
     move-result-wide p1
@@ -187,7 +188,7 @@
 .method public d()J
     .locals 2
 
-    .line 1
+    .line 2
     iget-wide v0, p0, Lcom/applovin/impl/i2$a;->b:J
 
     return-wide v0

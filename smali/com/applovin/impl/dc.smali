@@ -78,46 +78,46 @@
 .method private a(Landroid/view/View;)Landroid/graphics/drawable/Drawable;
     .locals 3
 
-    .line 3
+    .line 2
     invoke-virtual {p1}, Landroid/view/View;->getBackground()Landroid/graphics/drawable/Drawable;
 
     move-result-object p1
 
-    .line 4
+    .line 3
     new-instance v0, Landroid/graphics/drawable/GradientDrawable;
 
     invoke-direct {v0}, Landroid/graphics/drawable/GradientDrawable;-><init>()V
 
+    .line 4
     sget v1, Lcom/applovin/sdk/R$color;->applovin_sdk_highlightListItemColor:I
 
     iget-object v2, p0, Lcom/applovin/impl/dc;->a:Landroid/content/Context;
 
-    .line 5
     invoke-static {v1, v2}, Lcom/applovin/impl/t3;->a(ILandroid/content/Context;)I
 
     move-result v1
 
     invoke-virtual {v0, v1}, Landroid/graphics/drawable/GradientDrawable;->setColor(I)V
 
-    .line 6
+    .line 5
     new-instance v1, Landroid/graphics/drawable/StateListDrawable;
 
     invoke-direct {v1}, Landroid/graphics/drawable/StateListDrawable;-><init>()V
 
     const v2, 0x10100a7
 
+    .line 6
     filled-new-array {v2}, [I
 
     move-result-object v2
 
-    .line 7
     invoke-virtual {v1, v2, v0}, Landroid/graphics/drawable/StateListDrawable;->addState([ILandroid/graphics/drawable/Drawable;)V
 
     const/4 v0, 0x0
 
+    .line 7
     new-array v0, v0, [I
 
-    .line 8
     invoke-virtual {v1, v0, p1}, Landroid/graphics/drawable/StateListDrawable;->addState([ILandroid/graphics/drawable/Drawable;)V
 
     return-object v1
@@ -128,7 +128,7 @@
 
     const/4 v0, 0x0
 
-    .line 9
+    .line 8
     :goto_0
     invoke-virtual {p0}, Lcom/applovin/impl/dc;->b()I
 
@@ -136,9 +136,9 @@
 
     if-ge v0, v1, :cond_2
 
+    .line 9
     iget-object v1, p0, Lcom/applovin/impl/dc;->c:Ljava/util/Map;
 
-    .line 10
     invoke-static {v0}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
     move-result-object v2
@@ -153,13 +153,13 @@
 
     goto :goto_1
 
-    .line 11
+    .line 10
     :cond_0
     invoke-virtual {p0, v0}, Lcom/applovin/impl/dc;->d(I)I
 
     move-result v2
 
-    .line 12
+    .line 11
     invoke-virtual {v1}, Ljava/lang/Integer;->intValue()I
 
     move-result v3
@@ -168,14 +168,14 @@
 
     if-gt p1, v3, :cond_1
 
-    .line 13
+    .line 12
     invoke-virtual {v1}, Ljava/lang/Integer;->intValue()I
 
     move-result v1
 
     add-int/lit8 v1, v1, 0x1
 
-    .line 14
+    .line 13
     new-instance v2, Lcom/applovin/impl/kb;
 
     sub-int/2addr p1, v1
@@ -210,7 +210,7 @@
 .method public a(Lcom/applovin/impl/dc$a;)V
     .locals 0
 
-    .line 2
+    .line 14
     iput-object p1, p0, Lcom/applovin/impl/dc;->d:Lcom/applovin/impl/dc$a;
 
     return-void
@@ -230,9 +230,9 @@
 .method public b(I)Lcom/applovin/impl/cc;
     .locals 1
 
+    .line 1
     iget-object v0, p0, Lcom/applovin/impl/dc;->b:Ljava/util/List;
 
-    .line 1
     invoke-interface {v0, p1}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
     move-result-object p1
@@ -249,11 +249,11 @@
     .locals 2
 
     .line 1
-    new-instance v0, Lcom/applovin/impl/wt;
+    new-instance v0, Lcom/applovin/impl/P0;
 
     const/16 v1, 0x8
 
-    invoke-direct {v0, p0, v1}, Lcom/applovin/impl/wt;-><init>(Ljava/lang/Object;I)V
+    invoke-direct {v0, p0, v1}, Lcom/applovin/impl/P0;-><init>(Ljava/lang/Object;I)V
 
     invoke-static {v0}, Lcom/applovin/sdk/AppLovinSdkUtils;->runOnUiThread(Ljava/lang/Runnable;)V
 

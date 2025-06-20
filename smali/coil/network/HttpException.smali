@@ -6,19 +6,19 @@
 # annotations
 .annotation runtime Lkotlin/Metadata;
     d1 = {
-        "\u0000\u0014\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0008\u0007\u0018\u00002\u00060\u0001j\u0002`\u0002B\u000f\u0012\u0006\u0010\u0004\u001a\u00020\u0003\u00a2\u0006\u0004\u0008\u0008\u0010\tR\u0017\u0010\u0004\u001a\u00020\u00038\u0006\u00a2\u0006\u000c\n\u0004\u0008\u0004\u0010\u0005\u001a\u0004\u0008\u0006\u0010\u0007\u00a8\u0006\n"
+        "\u0000\u0014\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0008\u0007\u0018\u00002\u00060\u0001j\u0002`\u0002B\u000f\u0012\u0006\u0010\u0004\u001a\u00020\u0003\u00a2\u0006\u0004\u0008\u0005\u0010\u0006R\u0017\u0010\u0004\u001a\u00020\u00038\u0006\u00a2\u0006\u000c\n\u0004\u0008\u0004\u0010\u0007\u001a\u0004\u0008\u0008\u0010\t\u00a8\u0006\n"
     }
     d2 = {
         "Lcoil/network/HttpException;",
         "Ljava/lang/RuntimeException;",
         "Lkotlin/RuntimeException;",
-        "Lokhttp3/j0;",
+        "Lokhttp3/B;",
         "response",
-        "Lokhttp3/j0;",
-        "getResponse",
-        "()Lokhttp3/j0;",
         "<init>",
-        "(Lokhttp3/j0;)V",
+        "(Lokhttp3/B;)V",
+        "Lokhttp3/B;",
+        "getResponse",
+        "()Lokhttp3/B;",
         "coil-base_release"
     }
     k = 0x1
@@ -27,15 +27,16 @@
         0x9,
         0x0
     }
+    xi = 0x30
 .end annotation
 
 
 # instance fields
-.field private final response:Lokhttp3/j0;
+.field private final response:Lokhttp3/B;
 
 
 # direct methods
-.method public constructor <init>(Lokhttp3/j0;)V
+.method public constructor <init>(Lokhttp3/B;)V
     .locals 2
 
     .line 1
@@ -52,7 +53,7 @@
     .line 6
     .line 7
     .line 8
-    iget v1, p1, Lokhttp3/j0;->f:I
+    iget v1, p1, Lokhttp3/B;->f:I
 
     .line 9
     .line 10
@@ -70,7 +71,7 @@
     .line 16
     .line 17
     .line 18
-    iget-object v1, p1, Lokhttp3/j0;->d:Ljava/lang/String;
+    iget-object v1, p1, Lokhttp3/B;->d:Ljava/lang/String;
 
     .line 19
     .line 20
@@ -92,7 +93,7 @@
     .line 28
     .line 29
     .line 30
-    iput-object p1, p0, Lcoil/network/HttpException;->response:Lokhttp3/j0;
+    iput-object p1, p0, Lcoil/network/HttpException;->response:Lokhttp3/B;
 
     .line 31
     .line 32
@@ -101,10 +102,13 @@
 
 
 # virtual methods
-.method public final getResponse()Lokhttp3/j0;
+.method public final getResponse()Lokhttp3/B;
     .locals 1
 
-    iget-object v0, p0, Lcoil/network/HttpException;->response:Lokhttp3/j0;
+    .line 1
+    iget-object v0, p0, Lcoil/network/HttpException;->response:Lokhttp3/B;
 
+    .line 2
+    .line 3
     return-object v0
 .end method

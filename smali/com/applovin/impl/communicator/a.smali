@@ -11,7 +11,7 @@
     .locals 0
 
     .line 1
-    invoke-static {p1}, Lcom/applovin/impl/communicator/MessagingServiceImpl;->c(Ljava/lang/Runnable;)Ljava/lang/Thread;
+    invoke-static {p1}, Lcom/applovin/impl/communicator/MessagingServiceImpl;->b(Ljava/lang/Runnable;)Ljava/lang/Thread;
 
     move-result-object p1
 

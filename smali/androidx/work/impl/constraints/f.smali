@@ -107,65 +107,112 @@
 .method public final hashCode()I
     .locals 4
 
+    .line 1
     const/16 v0, 0x4d5
 
+    .line 2
+    .line 3
     const/16 v1, 0x4cf
 
+    .line 4
+    .line 5
     iget-boolean v2, p0, Landroidx/work/impl/constraints/f;->a:Z
 
+    .line 6
+    .line 7
     if-eqz v2, :cond_0
 
+    .line 8
+    .line 9
     const/16 v2, 0x4cf
 
+    .line 10
+    .line 11
     goto :goto_0
 
+    .line 12
     :cond_0
     const/16 v2, 0x4d5
 
+    .line 13
+    .line 14
     :goto_0
     mul-int/lit8 v2, v2, 0x1f
 
+    .line 15
+    .line 16
     iget-boolean v3, p0, Landroidx/work/impl/constraints/f;->b:Z
 
+    .line 17
+    .line 18
     if-eqz v3, :cond_1
 
+    .line 19
+    .line 20
     const/16 v3, 0x4cf
 
+    .line 21
+    .line 22
     goto :goto_1
 
+    .line 23
     :cond_1
     const/16 v3, 0x4d5
 
+    .line 24
+    .line 25
     :goto_1
     add-int/2addr v2, v3
 
+    .line 26
     mul-int/lit8 v2, v2, 0x1f
 
+    .line 27
+    .line 28
     iget-boolean v3, p0, Landroidx/work/impl/constraints/f;->c:Z
 
+    .line 29
+    .line 30
     if-eqz v3, :cond_2
 
+    .line 31
+    .line 32
     const/16 v3, 0x4cf
 
+    .line 33
+    .line 34
     goto :goto_2
 
+    .line 35
     :cond_2
     const/16 v3, 0x4d5
 
+    .line 36
+    .line 37
     :goto_2
     add-int/2addr v2, v3
 
+    .line 38
     mul-int/lit8 v2, v2, 0x1f
 
+    .line 39
+    .line 40
     iget-boolean v3, p0, Landroidx/work/impl/constraints/f;->d:Z
 
+    .line 41
+    .line 42
     if-eqz v3, :cond_3
 
+    .line 43
+    .line 44
     const/16 v0, 0x4cf
 
+    .line 45
+    .line 46
     :cond_3
     add-int/2addr v2, v0
 
+    .line 47
     return v2
 .end method
 
@@ -248,7 +295,7 @@
 
     .line 41
     .line 42
-    invoke-static {v0, v1, v2}, Landroid/support/v4/media/session/a;->J(Ljava/lang/StringBuilder;ZC)Ljava/lang/String;
+    invoke-static {v0, v1, v2}, Landroidx/appcompat/view/menu/F;->I(Ljava/lang/StringBuilder;ZC)Ljava/lang/String;
 
     .line 43
     .line 44

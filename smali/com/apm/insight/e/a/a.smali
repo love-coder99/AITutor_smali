@@ -77,9 +77,9 @@
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
 
+    .line 2
     const-string v1, "CREATE TABLE "
 
-    .line 2
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     iget-object v1, p0, Lcom/apm/insight/e/a/a;->a:Ljava/lang/String;
@@ -162,9 +162,9 @@
 
     invoke-virtual {v0, v1, v2}, Ljava/lang/StringBuilder;->delete(II)Ljava/lang/StringBuilder;
 
+    .line 12
     const-string v1, ")"
 
-    .line 12
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     .line 13
@@ -204,10 +204,10 @@
 
     if-eqz p2, :cond_0
 
+    .line 16
     :try_start_0
     iget-object v0, p0, Lcom/apm/insight/e/a/a;->a:Ljava/lang/String;
 
-    .line 16
     invoke-virtual {p0, p2}, Lcom/apm/insight/e/a/a;->a(Ljava/lang/Object;)Landroid/content/ContentValues;
 
     move-result-object p2

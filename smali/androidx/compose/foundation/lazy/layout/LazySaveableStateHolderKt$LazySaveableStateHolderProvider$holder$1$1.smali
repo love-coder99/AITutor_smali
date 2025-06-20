@@ -3,14 +3,14 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lzh/a;
+.implements Lka/a;
 
 
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "Lkotlin/jvm/internal/Lambda;",
-        "Lzh/a;"
+        "Lka/a;"
     }
 .end annotation
 
@@ -19,9 +19,9 @@
         "\u0000\u0008\n\u0002\u0018\u0002\n\u0002\u0008\u0003\u0010\u0003\u001a\u00020\u0000H\n\u00a2\u0006\u0004\u0008\u0001\u0010\u0002"
     }
     d2 = {
-        "Landroidx/compose/foundation/lazy/layout/r0;",
+        "Landroidx/compose/foundation/lazy/layout/Q;",
         "invoke",
-        "()Landroidx/compose/foundation/lazy/layout/r0;",
+        "()Landroidx/compose/foundation/lazy/layout/Q;",
         "<anonymous>"
     }
     k = 0x3
@@ -52,19 +52,19 @@
 
 
 # virtual methods
-.method public final invoke()Landroidx/compose/foundation/lazy/layout/r0;
+.method public final invoke()Landroidx/compose/foundation/lazy/layout/Q;
     .locals 3
 
     .line 2
-    new-instance v0, Landroidx/compose/foundation/lazy/layout/r0;
+    new-instance v0, Landroidx/compose/foundation/lazy/layout/Q;
 
     iget-object v1, p0, Landroidx/compose/foundation/lazy/layout/LazySaveableStateHolderKt$LazySaveableStateHolderProvider$holder$1$1;->$currentRegistry:Landroidx/compose/runtime/saveable/g;
 
-    invoke-static {}, Lkotlin/collections/d0;->e0()Ljava/util/Map;
+    invoke-static {}, Lkotlin/collections/a;->F()Ljava/util/Map;
 
     move-result-object v2
 
-    invoke-direct {v0, v1, v2}, Landroidx/compose/foundation/lazy/layout/r0;-><init>(Landroidx/compose/runtime/saveable/g;Ljava/util/Map;)V
+    invoke-direct {v0, v1, v2}, Landroidx/compose/foundation/lazy/layout/Q;-><init>(Landroidx/compose/runtime/saveable/g;Ljava/util/Map;)V
 
     return-object v0
 .end method
@@ -73,7 +73,7 @@
     .locals 1
 
     .line 1
-    invoke-virtual {p0}, Landroidx/compose/foundation/lazy/layout/LazySaveableStateHolderKt$LazySaveableStateHolderProvider$holder$1$1;->invoke()Landroidx/compose/foundation/lazy/layout/r0;
+    invoke-virtual {p0}, Landroidx/compose/foundation/lazy/layout/LazySaveableStateHolderKt$LazySaveableStateHolderProvider$holder$1$1;->invoke()Landroidx/compose/foundation/lazy/layout/Q;
 
     move-result-object v0
 

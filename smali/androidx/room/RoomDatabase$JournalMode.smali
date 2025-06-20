@@ -14,7 +14,7 @@
 
 .annotation runtime Lkotlin/Metadata;
     d1 = {
-        "\u0000\u0012\n\u0000\n\u0002\u0010\u0010\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0008\u0008\u0008\u0086\u0001\u0018\u00002\u0008\u0012\u0004\u0012\u00020\u00020\u0001J\u0017\u0010\u0007\u001a\u00020\u00022\u0006\u0010\u0004\u001a\u00020\u0003H\u0000\u00a2\u0006\u0004\u0008\u0005\u0010\u0006j\u0002\u0008\u0008j\u0002\u0008\tj\u0002\u0008\n\u00a8\u0006\u000b"
+        "\u0000\u0012\n\u0000\n\u0002\u0010\u0010\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0008\u0008\u0008\u0086\u0081\u0002\u0018\u00002\u0008\u0012\u0004\u0012\u00020\u00020\u0001J\u0017\u0010\u0007\u001a\u00020\u00022\u0006\u0010\u0004\u001a\u00020\u0003H\u0000\u00a2\u0006\u0004\u0008\u0005\u0010\u0006j\u0002\u0008\u0008j\u0002\u0008\tj\u0002\u0008\n\u00a8\u0006\u000b"
     }
     d2 = {
         "androidx/room/RoomDatabase$JournalMode",
@@ -32,10 +32,11 @@
     }
     k = 0x1
     mv = {
-        0x1,
-        0x8,
+        0x2,
+        0x0,
         0x0
     }
+    xi = 0x30
 .end annotation
 
 
@@ -48,123 +49,170 @@
 
 .field public static final synthetic b:[Landroidx/room/RoomDatabase$JournalMode;
 
+.field public static final synthetic c:Lda/a;
+
 
 # direct methods
 .method static constructor <clinit>()V
     .locals 7
 
     .line 1
-    new-instance v0, Landroidx/room/RoomDatabase$JournalMode;
+    const/4 v0, 0x2
 
     .line 2
-    .line 3
-    const-string v1, "AUTOMATIC"
+    const/4 v1, 0x1
 
-    .line 4
-    .line 5
+    .line 3
     const/4 v2, 0x0
 
+    .line 4
+    new-instance v3, Landroidx/room/RoomDatabase$JournalMode;
+
+    .line 5
     .line 6
-    invoke-direct {v0, v1, v2}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
+    const-string v4, "AUTOMATIC"
 
     .line 7
     .line 8
-    .line 9
-    sput-object v0, Landroidx/room/RoomDatabase$JournalMode;->AUTOMATIC:Landroidx/room/RoomDatabase$JournalMode;
+    invoke-direct {v3, v4, v2}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
 
+    .line 9
     .line 10
     .line 11
-    new-instance v1, Landroidx/room/RoomDatabase$JournalMode;
+    sput-object v3, Landroidx/room/RoomDatabase$JournalMode;->AUTOMATIC:Landroidx/room/RoomDatabase$JournalMode;
 
     .line 12
     .line 13
-    const-string v3, "TRUNCATE"
+    new-instance v4, Landroidx/room/RoomDatabase$JournalMode;
 
     .line 14
     .line 15
-    const/4 v4, 0x1
+    const-string v5, "TRUNCATE"
 
     .line 16
-    invoke-direct {v1, v3, v4}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
-
     .line 17
+    invoke-direct {v4, v5, v1}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
+
     .line 18
     .line 19
-    sput-object v1, Landroidx/room/RoomDatabase$JournalMode;->TRUNCATE:Landroidx/room/RoomDatabase$JournalMode;
-
     .line 20
+    sput-object v4, Landroidx/room/RoomDatabase$JournalMode;->TRUNCATE:Landroidx/room/RoomDatabase$JournalMode;
+
     .line 21
-    new-instance v3, Landroidx/room/RoomDatabase$JournalMode;
-
     .line 22
+    new-instance v5, Landroidx/room/RoomDatabase$JournalMode;
+
     .line 23
-    const-string v5, "WRITE_AHEAD_LOGGING"
-
     .line 24
-    .line 25
-    const/4 v6, 0x2
+    const-string v6, "WRITE_AHEAD_LOGGING"
 
+    .line 25
     .line 26
-    invoke-direct {v3, v5, v6}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
+    invoke-direct {v5, v6, v0}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
 
     .line 27
     .line 28
     .line 29
-    sput-object v3, Landroidx/room/RoomDatabase$JournalMode;->WRITE_AHEAD_LOGGING:Landroidx/room/RoomDatabase$JournalMode;
+    sput-object v5, Landroidx/room/RoomDatabase$JournalMode;->WRITE_AHEAD_LOGGING:Landroidx/room/RoomDatabase$JournalMode;
 
     .line 30
     .line 31
-    const/4 v5, 0x3
+    const/4 v6, 0x3
 
     .line 32
-    new-array v5, v5, [Landroidx/room/RoomDatabase$JournalMode;
+    new-array v6, v6, [Landroidx/room/RoomDatabase$JournalMode;
 
     .line 33
     .line 34
-    aput-object v0, v5, v2
+    aput-object v3, v6, v2
 
     .line 35
     .line 36
-    aput-object v1, v5, v4
+    aput-object v4, v6, v1
 
     .line 37
     .line 38
-    aput-object v3, v5, v6
+    aput-object v5, v6, v0
 
     .line 39
     .line 40
-    sput-object v5, Landroidx/room/RoomDatabase$JournalMode;->b:[Landroidx/room/RoomDatabase$JournalMode;
+    sput-object v6, Landroidx/room/RoomDatabase$JournalMode;->b:[Landroidx/room/RoomDatabase$JournalMode;
 
     .line 41
     .line 42
+    invoke-static {v6}, Lkotlin/enums/a;->a([Ljava/lang/Enum;)Lda/a;
+
+    .line 43
+    .line 44
+    .line 45
+    move-result-object v0
+
+    .line 46
+    sput-object v0, Landroidx/room/RoomDatabase$JournalMode;->c:Lda/a;
+
+    .line 47
+    .line 48
     return-void
+.end method
+
+.method public static getEntries()Lda/a;
+    .locals 1
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "()",
+            "Lda/a;"
+        }
+    .end annotation
+
+    .line 1
+    sget-object v0, Landroidx/room/RoomDatabase$JournalMode;->c:Lda/a;
+
+    return-object v0
 .end method
 
 .method public static valueOf(Ljava/lang/String;)Landroidx/room/RoomDatabase$JournalMode;
     .locals 1
 
+    .line 1
     const-class v0, Landroidx/room/RoomDatabase$JournalMode;
 
+    .line 2
+    .line 3
     invoke-static {v0, p0}, Ljava/lang/Enum;->valueOf(Ljava/lang/Class;Ljava/lang/String;)Ljava/lang/Enum;
 
+    .line 4
+    .line 5
+    .line 6
     move-result-object p0
 
+    .line 7
     check-cast p0, Landroidx/room/RoomDatabase$JournalMode;
 
+    .line 8
+    .line 9
     return-object p0
 .end method
 
 .method public static values()[Landroidx/room/RoomDatabase$JournalMode;
     .locals 1
 
+    .line 1
     sget-object v0, Landroidx/room/RoomDatabase$JournalMode;->b:[Landroidx/room/RoomDatabase$JournalMode;
 
-    invoke-virtual {v0}, [Ljava/lang/Object;->clone()Ljava/lang/Object;
+    .line 2
+    .line 3
+    invoke-virtual {v0}, Ljava/lang/Object;->clone()Ljava/lang/Object;
 
+    .line 4
+    .line 5
+    .line 6
     move-result-object v0
 
+    .line 7
     check-cast v0, [Landroidx/room/RoomDatabase$JournalMode;
 
+    .line 8
+    .line 9
     return-object v0
 .end method
 

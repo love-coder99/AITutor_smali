@@ -46,13 +46,15 @@
 
     iput-object v0, p0, Lcom/applovin/exoplayer2/common/base/MoreObjects$ToStringHelper;->holderHead:Lcom/applovin/exoplayer2/common/base/MoreObjects$ToStringHelper$a;
 
+    .line 4
     iput-object v0, p0, Lcom/applovin/exoplayer2/common/base/MoreObjects$ToStringHelper;->holderTail:Lcom/applovin/exoplayer2/common/base/MoreObjects$ToStringHelper$a;
 
     const/4 v0, 0x0
 
+    .line 5
     iput-boolean v0, p0, Lcom/applovin/exoplayer2/common/base/MoreObjects$ToStringHelper;->omitNullValues:Z
 
-    .line 4
+    .line 6
     invoke-static {p1}, Lcom/applovin/exoplayer2/common/base/Preconditions;->checkNotNull(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object p1
@@ -83,9 +85,9 @@
 
     invoke-direct {v0, v1}, Lcom/applovin/exoplayer2/common/base/MoreObjects$ToStringHelper$a;-><init>(Lcom/applovin/exoplayer2/common/base/MoreObjects$a;)V
 
+    .line 2
     iget-object v1, p0, Lcom/applovin/exoplayer2/common/base/MoreObjects$ToStringHelper;->holderTail:Lcom/applovin/exoplayer2/common/base/MoreObjects$ToStringHelper$a;
 
-    .line 2
     iput-object v0, v1, Lcom/applovin/exoplayer2/common/base/MoreObjects$ToStringHelper$a;->c:Lcom/applovin/exoplayer2/common/base/MoreObjects$ToStringHelper$a;
 
     iput-object v0, p0, Lcom/applovin/exoplayer2/common/base/MoreObjects$ToStringHelper;->holderTail:Lcom/applovin/exoplayer2/common/base/MoreObjects$ToStringHelper$a;
@@ -353,10 +355,14 @@
 .method public omitNullValues()Lcom/applovin/exoplayer2/common/base/MoreObjects$ToStringHelper;
     .locals 1
 
+    .line 1
     const/4 v0, 0x1
 
+    .line 2
     iput-boolean v0, p0, Lcom/applovin/exoplayer2/common/base/MoreObjects$ToStringHelper;->omitNullValues:Z
 
+    .line 3
+    .line 4
     return-object p0
 .end method
 
@@ -364,138 +370,138 @@
     .locals 7
 
     .line 1
-    iget-boolean v0, p0, Lcom/applovin/exoplayer2/common/base/MoreObjects$ToStringHelper;->omitNullValues:Z
+    const/4 v0, 0x1
 
     .line 2
+    iget-boolean v1, p0, Lcom/applovin/exoplayer2/common/base/MoreObjects$ToStringHelper;->omitNullValues:Z
+
     .line 3
-    new-instance v1, Ljava/lang/StringBuilder;
-
     .line 4
+    new-instance v2, Ljava/lang/StringBuilder;
+
     .line 5
-    const/16 v2, 0x20
-
     .line 6
-    .line 7
-    invoke-direct {v1, v2}, Ljava/lang/StringBuilder;-><init>(I)V
+    const/16 v3, 0x20
 
+    .line 7
     .line 8
+    invoke-direct {v2, v3}, Ljava/lang/StringBuilder;-><init>(I)V
+
     .line 9
     .line 10
-    iget-object v2, p0, Lcom/applovin/exoplayer2/common/base/MoreObjects$ToStringHelper;->className:Ljava/lang/String;
-
     .line 11
-    .line 12
-    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    iget-object v3, p0, Lcom/applovin/exoplayer2/common/base/MoreObjects$ToStringHelper;->className:Ljava/lang/String;
 
+    .line 12
     .line 13
+    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
     .line 14
     .line 15
-    const/16 v2, 0x7b
-
     .line 16
-    .line 17
-    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
+    const/16 v3, 0x7b
 
+    .line 17
     .line 18
+    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
+
     .line 19
     .line 20
-    iget-object v2, p0, Lcom/applovin/exoplayer2/common/base/MoreObjects$ToStringHelper;->holderHead:Lcom/applovin/exoplayer2/common/base/MoreObjects$ToStringHelper$a;
-
     .line 21
+    iget-object v3, p0, Lcom/applovin/exoplayer2/common/base/MoreObjects$ToStringHelper;->holderHead:Lcom/applovin/exoplayer2/common/base/MoreObjects$ToStringHelper$a;
+
     .line 22
-    iget-object v2, v2, Lcom/applovin/exoplayer2/common/base/MoreObjects$ToStringHelper$a;->c:Lcom/applovin/exoplayer2/common/base/MoreObjects$ToStringHelper$a;
-
     .line 23
+    iget-object v3, v3, Lcom/applovin/exoplayer2/common/base/MoreObjects$ToStringHelper$a;->c:Lcom/applovin/exoplayer2/common/base/MoreObjects$ToStringHelper$a;
+
     .line 24
-    const-string v3, ""
-
     .line 25
+    const-string v4, ""
+
     .line 26
-    :goto_0
-    if-eqz v2, :cond_4
-
     .line 27
+    :goto_0
+    if-eqz v3, :cond_4
+
     .line 28
-    iget-object v4, v2, Lcom/applovin/exoplayer2/common/base/MoreObjects$ToStringHelper$a;->b:Ljava/lang/Object;
-
     .line 29
+    iget-object v5, v3, Lcom/applovin/exoplayer2/common/base/MoreObjects$ToStringHelper$a;->b:Ljava/lang/Object;
+
     .line 30
-    if-eqz v0, :cond_0
-
     .line 31
+    if-eqz v1, :cond_0
+
     .line 32
-    if-eqz v4, :cond_3
-
     .line 33
-    .line 34
-    :cond_0
-    invoke-virtual {v1, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    if-eqz v5, :cond_3
 
+    .line 34
     .line 35
+    :cond_0
+    invoke-virtual {v2, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
     .line 36
     .line 37
-    iget-object v3, v2, Lcom/applovin/exoplayer2/common/base/MoreObjects$ToStringHelper$a;->a:Ljava/lang/String;
-
     .line 38
+    iget-object v4, v3, Lcom/applovin/exoplayer2/common/base/MoreObjects$ToStringHelper$a;->a:Ljava/lang/String;
+
     .line 39
-    if-eqz v3, :cond_1
-
     .line 40
-    .line 41
-    invoke-virtual {v1, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    if-eqz v4, :cond_1
 
+    .line 41
     .line 42
+    invoke-virtual {v2, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
     .line 43
     .line 44
-    const/16 v3, 0x3d
-
     .line 45
-    .line 46
-    invoke-virtual {v1, v3}, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
+    const/16 v4, 0x3d
 
+    .line 46
     .line 47
+    invoke-virtual {v2, v4}, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
+
     .line 48
     .line 49
-    :cond_1
-    if-eqz v4, :cond_2
-
     .line 50
-    .line 51
-    invoke-virtual {v4}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+    :cond_1
+    if-eqz v5, :cond_2
 
+    .line 51
     .line 52
+    invoke-virtual {v5}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
     .line 53
     .line 54
-    move-result-object v3
-
     .line 55
-    invoke-virtual {v3}, Ljava/lang/Class;->isArray()Z
+    move-result-object v4
 
     .line 56
+    invoke-virtual {v4}, Ljava/lang/Class;->isArray()Z
+
     .line 57
     .line 58
-    move-result v3
-
     .line 59
-    if-eqz v3, :cond_2
+    move-result v4
 
     .line 60
-    .line 61
-    const/4 v3, 0x1
+    if-eqz v4, :cond_2
 
+    .line 61
     .line 62
-    new-array v5, v3, [Ljava/lang/Object;
+    new-array v4, v0, [Ljava/lang/Object;
 
     .line 63
     .line 64
     const/4 v6, 0x0
 
     .line 65
-    aput-object v4, v5, v6
+    aput-object v5, v4, v6
 
     .line 66
     .line 67
-    invoke-static {v5}, Ljava/util/Arrays;->deepToString([Ljava/lang/Object;)Ljava/lang/String;
+    invoke-static {v4}, Ljava/util/Arrays;->deepToString([Ljava/lang/Object;)Ljava/lang/String;
 
     .line 68
     .line 69
@@ -511,10 +517,10 @@
     move-result v5
 
     .line 75
-    sub-int/2addr v5, v3
+    sub-int/2addr v5, v0
 
     .line 76
-    invoke-virtual {v1, v4, v3, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/CharSequence;II)Ljava/lang/StringBuilder;
+    invoke-virtual {v2, v4, v0, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/CharSequence;II)Ljava/lang/StringBuilder;
 
     .line 77
     .line 78
@@ -523,18 +529,18 @@
 
     .line 80
     :cond_2
-    invoke-virtual {v1, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+    invoke-virtual {v2, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 
     .line 81
     .line 82
     .line 83
     :goto_1
-    const-string v3, ", "
+    const-string v4, ", "
 
     .line 84
     .line 85
     :cond_3
-    iget-object v2, v2, Lcom/applovin/exoplayer2/common/base/MoreObjects$ToStringHelper$a;->c:Lcom/applovin/exoplayer2/common/base/MoreObjects$ToStringHelper$a;
+    iget-object v3, v3, Lcom/applovin/exoplayer2/common/base/MoreObjects$ToStringHelper$a;->c:Lcom/applovin/exoplayer2/common/base/MoreObjects$ToStringHelper$a;
 
     .line 86
     .line 87
@@ -546,12 +552,12 @@
 
     .line 89
     .line 90
-    invoke-virtual {v1, v0}, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
+    invoke-virtual {v2, v0}, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
 
     .line 91
     .line 92
     .line 93
-    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    invoke-virtual {v2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
     .line 94
     .line 95

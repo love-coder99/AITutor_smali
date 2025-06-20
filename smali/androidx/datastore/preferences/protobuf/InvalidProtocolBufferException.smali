@@ -16,14 +16,16 @@
 
 
 # instance fields
-.field private unfinishedMessage:Landroidx/datastore/preferences/protobuf/a1;
+.field private unfinishedMessage:Landroidx/datastore/preferences/protobuf/X;
+
+.field private wasThrownFromInputStream:Z
 
 
 # direct methods
 .method public constructor <init>(Ljava/io/IOException;)V
     .locals 1
 
-    .line 2
+    .line 7
     invoke-virtual {p1}, Ljava/lang/Throwable;->getMessage()Ljava/lang/String;
 
     move-result-object v0
@@ -32,7 +34,26 @@
 
     const/4 p1, 0x0
 
-    iput-object p1, p0, Landroidx/datastore/preferences/protobuf/InvalidProtocolBufferException;->unfinishedMessage:Landroidx/datastore/preferences/protobuf/a1;
+    .line 8
+    iput-object p1, p0, Landroidx/datastore/preferences/protobuf/InvalidProtocolBufferException;->unfinishedMessage:Landroidx/datastore/preferences/protobuf/X;
+
+    return-void
+.end method
+
+.method public constructor <init>(Ljava/lang/Exception;)V
+    .locals 1
+
+    .line 3
+    invoke-virtual {p1}, Ljava/lang/Throwable;->getMessage()Ljava/lang/String;
+
+    move-result-object v0
+
+    invoke-direct {p0, v0, p1}, Ljava/io/IOException;-><init>(Ljava/lang/String;Ljava/lang/Throwable;)V
+
+    const/4 p1, 0x0
+
+    .line 4
+    iput-object p1, p0, Landroidx/datastore/preferences/protobuf/InvalidProtocolBufferException;->unfinishedMessage:Landroidx/datastore/preferences/protobuf/X;
 
     return-void
 .end method
@@ -45,7 +66,8 @@
 
     const/4 p1, 0x0
 
-    iput-object p1, p0, Landroidx/datastore/preferences/protobuf/InvalidProtocolBufferException;->unfinishedMessage:Landroidx/datastore/preferences/protobuf/a1;
+    .line 2
+    iput-object p1, p0, Landroidx/datastore/preferences/protobuf/InvalidProtocolBufferException;->unfinishedMessage:Landroidx/datastore/preferences/protobuf/X;
 
     return-void
 .end method
@@ -53,12 +75,27 @@
 .method public constructor <init>(Ljava/lang/String;Ljava/io/IOException;)V
     .locals 0
 
-    .line 3
+    .line 9
     invoke-direct {p0, p1, p2}, Ljava/io/IOException;-><init>(Ljava/lang/String;Ljava/lang/Throwable;)V
 
     const/4 p1, 0x0
 
-    iput-object p1, p0, Landroidx/datastore/preferences/protobuf/InvalidProtocolBufferException;->unfinishedMessage:Landroidx/datastore/preferences/protobuf/a1;
+    .line 10
+    iput-object p1, p0, Landroidx/datastore/preferences/protobuf/InvalidProtocolBufferException;->unfinishedMessage:Landroidx/datastore/preferences/protobuf/X;
+
+    return-void
+.end method
+
+.method public constructor <init>(Ljava/lang/String;Ljava/lang/Exception;)V
+    .locals 0
+
+    .line 5
+    invoke-direct {p0, p1, p2}, Ljava/io/IOException;-><init>(Ljava/lang/String;Ljava/lang/Throwable;)V
+
+    const/4 p1, 0x0
+
+    .line 6
+    iput-object p1, p0, Landroidx/datastore/preferences/protobuf/InvalidProtocolBufferException;->unfinishedMessage:Landroidx/datastore/preferences/protobuf/X;
 
     return-void
 .end method
@@ -211,7 +248,7 @@
 
     .line 2
     .line 3
-    const-string v1, "Protocol message had too many levels of nesting.  May be malicious.  Use CodedInputStream.setRecursionLimit() to increase the depth limit."
+    const-string v1, "Protocol message had too many levels of nesting.  May be malicious.  Use setRecursionLimit() to increase the recursion depth limit."
 
     .line 4
     .line 5
@@ -265,19 +302,50 @@
 
 
 # virtual methods
-.method public getUnfinishedMessage()Landroidx/datastore/preferences/protobuf/a1;
+.method public getThrownFromInputStream()Z
     .locals 1
 
-    iget-object v0, p0, Landroidx/datastore/preferences/protobuf/InvalidProtocolBufferException;->unfinishedMessage:Landroidx/datastore/preferences/protobuf/a1;
+    .line 1
+    iget-boolean v0, p0, Landroidx/datastore/preferences/protobuf/InvalidProtocolBufferException;->wasThrownFromInputStream:Z
 
+    .line 2
+    .line 3
+    return v0
+.end method
+
+.method public getUnfinishedMessage()Landroidx/datastore/preferences/protobuf/X;
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, Landroidx/datastore/preferences/protobuf/InvalidProtocolBufferException;->unfinishedMessage:Landroidx/datastore/preferences/protobuf/X;
+
+    .line 2
+    .line 3
     return-object v0
 .end method
 
-.method public setUnfinishedMessage(Landroidx/datastore/preferences/protobuf/a1;)Landroidx/datastore/preferences/protobuf/InvalidProtocolBufferException;
+.method public setThrownFromInputStream()V
+    .locals 1
+
+    .line 1
+    const/4 v0, 0x1
+
+    .line 2
+    iput-boolean v0, p0, Landroidx/datastore/preferences/protobuf/InvalidProtocolBufferException;->wasThrownFromInputStream:Z
+
+    .line 3
+    .line 4
+    return-void
+.end method
+
+.method public setUnfinishedMessage(Landroidx/datastore/preferences/protobuf/X;)Landroidx/datastore/preferences/protobuf/InvalidProtocolBufferException;
     .locals 0
 
-    iput-object p1, p0, Landroidx/datastore/preferences/protobuf/InvalidProtocolBufferException;->unfinishedMessage:Landroidx/datastore/preferences/protobuf/a1;
+    .line 1
+    iput-object p1, p0, Landroidx/datastore/preferences/protobuf/InvalidProtocolBufferException;->unfinishedMessage:Landroidx/datastore/preferences/protobuf/X;
 
+    .line 2
+    .line 3
     return-object p0
 .end method
 

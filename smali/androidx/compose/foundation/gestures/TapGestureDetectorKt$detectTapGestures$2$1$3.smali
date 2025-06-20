@@ -3,10 +3,19 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lzh/e;
+.implements Lka/e;
 
 
 # annotations
+.annotation runtime Lca/c;
+    c = "androidx.compose.foundation.gestures.TapGestureDetectorKt$detectTapGestures$2$1$3"
+    f = "TapGestureDetector.kt"
+    l = {
+        0x73
+    }
+    m = "invokeSuspend"
+.end annotation
+
 .annotation system Ldalvik/annotation/EnclosingMethod;
     value = Landroidx/compose/foundation/gestures/TapGestureDetectorKt$detectTapGestures$2$1;->invokeSuspend(Ljava/lang/Object;)Ljava/lang/Object;
 .end annotation
@@ -19,18 +28,19 @@
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "Lkotlin/coroutines/jvm/internal/RestrictedSuspendLambda;",
-        "Lzh/e;"
+        "Lka/e;"
     }
 .end annotation
 
 .annotation runtime Lkotlin/Metadata;
     d1 = {
-        "\u0000\n\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\u0010\u0002\u001a\u0004\u0018\u00010\u0001*\u00020\u0000H\u008a@"
+        "\u0000\u000c\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0008\u0002\u0010\u0002\u001a\u0004\u0018\u00010\u0001*\u00020\u0000H\u008a@\u00a2\u0006\u0004\u0008\u0002\u0010\u0003"
     }
     d2 = {
         "Landroidx/compose/ui/input/pointer/b;",
-        "Landroidx/compose/ui/input/pointer/r;",
-        "<anonymous>"
+        "Landroidx/compose/ui/input/pointer/n;",
+        "<anonymous>",
+        "(Landroidx/compose/ui/input/pointer/b;)Landroidx/compose/ui/input/pointer/n;"
     }
     k = 0x3
     mv = {
@@ -38,15 +48,6 @@
         0x8,
         0x0
     }
-.end annotation
-
-.annotation runtime Lth/c;
-    c = "androidx.compose.foundation.gestures.TapGestureDetectorKt$detectTapGestures$2$1$3"
-    f = "TapGestureDetector.kt"
-    l = {
-        0x73
-    }
-    m = "invokeSuspend"
 .end annotation
 
 
@@ -87,7 +88,7 @@
             "Lkotlin/coroutines/Continuation<",
             "*>;)",
             "Lkotlin/coroutines/Continuation<",
-            "Lqh/r;",
+            "LX9/j;",
             ">;"
         }
     .end annotation
@@ -109,7 +110,7 @@
             "Landroidx/compose/ui/input/pointer/b;",
             "Lkotlin/coroutines/Continuation<",
             "-",
-            "Landroidx/compose/ui/input/pointer/r;",
+            "Landroidx/compose/ui/input/pointer/n;",
             ">;)",
             "Ljava/lang/Object;"
         }
@@ -122,7 +123,7 @@
 
     check-cast p1, Landroidx/compose/foundation/gestures/TapGestureDetectorKt$detectTapGestures$2$1$3;
 
-    sget-object p2, Lqh/r;->a:Lqh/r;
+    sget-object p2, LX9/j;->a:LX9/j;
 
     invoke-virtual {p1, p2}, Landroidx/compose/foundation/gestures/TapGestureDetectorKt$detectTapGestures$2$1$3;->invokeSuspend(Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -216,7 +217,7 @@
 
     .line 32
     .line 33
-    invoke-static {p1, v1, p0}, Landroidx/compose/foundation/gestures/m0;->g(Landroidx/compose/ui/input/pointer/b;Landroidx/compose/ui/input/pointer/PointerEventPass;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
+    invoke-static {p1, v1, p0}, Landroidx/compose/foundation/gestures/O;->g(Landroidx/compose/ui/input/pointer/b;Landroidx/compose/ui/input/pointer/PointerEventPass;Lkotlin/coroutines/jvm/internal/BaseContinuationImpl;)Ljava/lang/Object;
 
     .line 34
     .line 35

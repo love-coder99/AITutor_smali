@@ -62,7 +62,7 @@
 .method private static a(I)Z
     .locals 1
 
-    .line 2
+    .line 1
     const/16 v0, 0x20
 
     if-gt v0, p0, :cond_0
@@ -182,17 +182,21 @@
 .method public a()V
     .locals 1
 
-    .line 1
     const/4 v0, 0x0
 
+    .line 18
     iput-boolean v0, p0, Lcom/applovin/impl/ha$a;->f:Z
 
+    .line 19
     iput-boolean v0, p0, Lcom/applovin/impl/ha$a;->g:Z
 
+    .line 20
     iput-boolean v0, p0, Lcom/applovin/impl/ha$a;->h:Z
 
+    .line 21
     iput-boolean v0, p0, Lcom/applovin/impl/ha$a;->i:Z
 
+    .line 22
     iput-boolean v0, p0, Lcom/applovin/impl/ha$a;->j:Z
 
     return-void
@@ -203,17 +207,22 @@
 
     const/4 v0, 0x0
 
+    .line 23
     iput-boolean v0, p0, Lcom/applovin/impl/ha$a;->g:Z
 
+    .line 24
     iput-boolean v0, p0, Lcom/applovin/impl/ha$a;->h:Z
 
+    .line 25
     iput-wide p5, p0, Lcom/applovin/impl/ha$a;->e:J
 
+    .line 26
     iput v0, p0, Lcom/applovin/impl/ha$a;->d:I
 
+    .line 27
     iput-wide p1, p0, Lcom/applovin/impl/ha$a;->b:J
 
-    .line 5
+    .line 28
     invoke-static {p4}, Lcom/applovin/impl/ha$a;->b(I)Z
 
     move-result p1
@@ -222,6 +231,7 @@
 
     if-nez p1, :cond_2
 
+    .line 29
     iget-boolean p1, p0, Lcom/applovin/impl/ha$a;->i:Z
 
     if-eqz p1, :cond_1
@@ -232,13 +242,14 @@
 
     if-eqz p7, :cond_0
 
-    .line 6
+    .line 30
     invoke-direct {p0, p3}, Lcom/applovin/impl/ha$a;->c(I)V
 
+    .line 31
     :cond_0
     iput-boolean v0, p0, Lcom/applovin/impl/ha$a;->i:Z
 
-    .line 7
+    .line 32
     :cond_1
     invoke-static {p4}, Lcom/applovin/impl/ha$a;->a(I)Z
 
@@ -246,12 +257,14 @@
 
     if-eqz p1, :cond_2
 
+    .line 33
     iget-boolean p1, p0, Lcom/applovin/impl/ha$a;->j:Z
 
     xor-int/2addr p1, p2
 
     iput-boolean p1, p0, Lcom/applovin/impl/ha$a;->h:Z
 
+    .line 34
     iput-boolean p2, p0, Lcom/applovin/impl/ha$a;->j:Z
 
     :cond_2
@@ -270,6 +283,7 @@
     :cond_3
     const/4 p1, 0x0
 
+    .line 35
     :goto_0
     iput-boolean p1, p0, Lcom/applovin/impl/ha$a;->c:Z
 
@@ -282,6 +296,7 @@
     :cond_4
     const/4 v0, 0x1
 
+    .line 36
     :cond_5
     iput-boolean v0, p0, Lcom/applovin/impl/ha$a;->f:Z
 
@@ -291,6 +306,7 @@
 .method public a(JIZ)V
     .locals 2
 
+    .line 2
     iget-boolean v0, p0, Lcom/applovin/impl/ha$a;->j:Z
 
     if-eqz v0, :cond_0
@@ -299,16 +315,19 @@
 
     if-eqz v0, :cond_0
 
+    .line 3
     iget-boolean p1, p0, Lcom/applovin/impl/ha$a;->c:Z
 
     iput-boolean p1, p0, Lcom/applovin/impl/ha$a;->m:Z
 
     const/4 p1, 0x0
 
+    .line 4
     iput-boolean p1, p0, Lcom/applovin/impl/ha$a;->j:Z
 
     goto :goto_0
 
+    .line 5
     :cond_0
     iget-boolean v0, p0, Lcom/applovin/impl/ha$a;->h:Z
 
@@ -321,10 +340,12 @@
     :cond_1
     if-eqz p4, :cond_2
 
+    .line 6
     iget-boolean p4, p0, Lcom/applovin/impl/ha$a;->i:Z
 
     if-eqz p4, :cond_2
 
+    .line 7
     iget-wide v0, p0, Lcom/applovin/impl/ha$a;->b:J
 
     sub-long/2addr p1, v0
@@ -333,24 +354,28 @@
 
     add-int/2addr p3, p2
 
-    .line 3
+    .line 8
     invoke-direct {p0, p3}, Lcom/applovin/impl/ha$a;->c(I)V
 
+    .line 9
     :cond_2
     iget-wide p1, p0, Lcom/applovin/impl/ha$a;->b:J
 
     iput-wide p1, p0, Lcom/applovin/impl/ha$a;->k:J
 
+    .line 10
     iget-wide p1, p0, Lcom/applovin/impl/ha$a;->e:J
 
     iput-wide p1, p0, Lcom/applovin/impl/ha$a;->l:J
 
+    .line 11
     iget-boolean p1, p0, Lcom/applovin/impl/ha$a;->c:Z
 
     iput-boolean p1, p0, Lcom/applovin/impl/ha$a;->m:Z
 
     const/4 p1, 0x1
 
+    .line 12
     iput-boolean p1, p0, Lcom/applovin/impl/ha$a;->i:Z
 
     :cond_3
@@ -361,19 +386,21 @@
 .method public a([BII)V
     .locals 2
 
+    .line 13
     iget-boolean v0, p0, Lcom/applovin/impl/ha$a;->f:Z
 
     if-eqz v0, :cond_2
 
     add-int/lit8 v0, p2, 0x2
 
+    .line 14
     iget v1, p0, Lcom/applovin/impl/ha$a;->d:I
 
     sub-int/2addr v0, v1
 
     if-ge v0, p3, :cond_1
 
-    .line 4
+    .line 15
     aget-byte p1, p1, v0
 
     and-int/lit16 p1, p1, 0x80
@@ -392,6 +419,7 @@
     :goto_0
     iput-boolean p1, p0, Lcom/applovin/impl/ha$a;->g:Z
 
+    .line 16
     iput-boolean p2, p0, Lcom/applovin/impl/ha$a;->f:Z
 
     goto :goto_1
@@ -401,6 +429,7 @@
 
     add-int/2addr p3, v1
 
+    .line 17
     iput p3, p0, Lcom/applovin/impl/ha$a;->d:I
 
     :cond_2

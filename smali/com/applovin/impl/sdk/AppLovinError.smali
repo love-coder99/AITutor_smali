@@ -44,6 +44,10 @@
 
 .method public constructor <init>(ILjava/lang/String;)V
     .locals 0
+    .param p2    # Ljava/lang/String;
+        .annotation build Landroidx/annotation/Nullable;
+        .end annotation
+    .end param
 
     .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -200,16 +204,24 @@
 .method public getCode()I
     .locals 1
 
+    .line 1
     iget v0, p0, Lcom/applovin/impl/sdk/AppLovinError;->a:I
 
+    .line 2
+    .line 3
     return v0
 .end method
 
 .method public getMessage()Ljava/lang/String;
     .locals 1
+    .annotation build Landroidx/annotation/Nullable;
+    .end annotation
 
+    .line 1
     iget-object v0, p0, Lcom/applovin/impl/sdk/AppLovinError;->b:Ljava/lang/String;
 
+    .line 2
+    .line 3
     return-object v0
 .end method
 

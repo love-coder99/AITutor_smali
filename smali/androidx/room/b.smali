@@ -1,47 +1,48 @@
-.class public final Landroidx/room/b;
-.super Landroidx/room/l;
+.class public final Landroidx/room/B;
+.super Ljava/lang/Object;
 .source "SourceFile"
 
 
 # instance fields
-.field public final synthetic b:Lkotlinx/coroutines/channels/e;
+.field public final a:Ljava/lang/String;
+
+.field public final b:Landroidx/navigation/compose/x;
 
 
 # direct methods
-.method public constructor <init>([Ljava/lang/String;Lkotlinx/coroutines/channels/b;)V
-    .locals 0
-
-    .line 1
-    iput-object p2, p0, Landroidx/room/b;->b:Lkotlinx/coroutines/channels/e;
-
-    .line 2
-    .line 3
-    invoke-direct {p0, p1}, Landroidx/room/l;-><init>([Ljava/lang/String;)V
+.method public synthetic constructor <init>(Ljava/lang/String;)V
+    .locals 2
 
     .line 4
+    new-instance v0, LW8/c;
+
+    const/16 v1, 0xc
+
+    invoke-direct {v0, v1}, LW8/c;-><init>(I)V
+
     .line 5
-    .line 6
+    invoke-direct {p0, p1, v0}, Landroidx/room/B;-><init>(Ljava/lang/String;Lka/c;)V
+
     return-void
 .end method
 
-
-# virtual methods
-.method public final a(Ljava/util/Set;)V
+.method public constructor <init>(Ljava/lang/String;Lka/c;)V
     .locals 1
 
     .line 1
-    sget-object p1, Lqh/r;->a:Lqh/r;
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 2
+    iput-object p1, p0, Landroidx/room/B;->a:Ljava/lang/String;
+
     .line 3
-    iget-object v0, p0, Landroidx/room/b;->b:Lkotlinx/coroutines/channels/e;
+    new-instance p1, Landroidx/navigation/compose/x;
 
-    .line 4
-    .line 5
-    invoke-interface {v0, p1}, Lkotlinx/coroutines/channels/p;->o(Ljava/lang/Object;)Ljava/lang/Object;
+    const/4 v0, 0x1
 
-    .line 6
-    .line 7
-    .line 8
+    invoke-direct {p1, v0, p2}, Landroidx/navigation/compose/x;-><init>(ILka/c;)V
+
+    iput-object p1, p0, Landroidx/room/B;->b:Landroidx/navigation/compose/x;
+
     return-void
 .end method

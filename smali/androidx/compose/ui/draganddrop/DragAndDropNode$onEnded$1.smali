@@ -3,14 +3,14 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lzh/c;
+.implements Lka/c;
 
 
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "Lkotlin/jvm/internal/Lambda;",
-        "Lzh/c;"
+        "Lka/c;"
     }
 .end annotation
 
@@ -19,11 +19,11 @@
         "\u0000\u000e\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0008\u0003\u0010\u0005\u001a\u00020\u00022\u0006\u0010\u0001\u001a\u00020\u0000H\n\u00a2\u0006\u0004\u0008\u0003\u0010\u0004"
     }
     d2 = {
-        "Landroidx/compose/ui/draganddrop/f;",
+        "Landroidx/compose/ui/draganddrop/e;",
         "currentNode",
         "Landroidx/compose/ui/node/TraversableNode$Companion$TraverseDescendantsAction;",
         "invoke",
-        "(Landroidx/compose/ui/draganddrop/f;)Landroidx/compose/ui/node/TraversableNode$Companion$TraverseDescendantsAction;",
+        "(Landroidx/compose/ui/draganddrop/e;)Landroidx/compose/ui/node/TraversableNode$Companion$TraverseDescendantsAction;",
         "<anonymous>"
     }
     k = 0x3
@@ -54,7 +54,7 @@
 
 
 # virtual methods
-.method public final invoke(Landroidx/compose/ui/draganddrop/f;)Landroidx/compose/ui/node/TraversableNode$Companion$TraverseDescendantsAction;
+.method public final invoke(Landroidx/compose/ui/draganddrop/e;)Landroidx/compose/ui/node/TraversableNode$Companion$TraverseDescendantsAction;
     .locals 2
 
     .line 1
@@ -65,32 +65,34 @@
 
     if-nez v0, :cond_0
 
+    .line 3
     sget-object p1, Landroidx/compose/ui/node/TraversableNode$Companion$TraverseDescendantsAction;->SkipSubtreeAndContinueTraversal:Landroidx/compose/ui/node/TraversableNode$Companion$TraverseDescendantsAction;
 
     return-object p1
 
-    .line 3
+    .line 4
     :cond_0
-    iget-object v0, p1, Landroidx/compose/ui/draganddrop/f;->r:Landroidx/compose/ui/draganddrop/g;
+    iget-object v0, p1, Landroidx/compose/ui/draganddrop/e;->r:Landroidx/compose/ui/draganddrop/f;
 
     if-eqz v0, :cond_1
 
+    .line 5
     iget-object v1, p0, Landroidx/compose/ui/draganddrop/DragAndDropNode$onEnded$1;->$event:Landroidx/compose/ui/draganddrop/b;
 
-    check-cast v0, Landroidx/compose/ui/draganddrop/f;
+    check-cast v0, Landroidx/compose/ui/draganddrop/e;
 
-    .line 4
-    invoke-virtual {v0, v1}, Landroidx/compose/ui/draganddrop/f;->C0(Landroidx/compose/ui/draganddrop/b;)V
+    invoke-virtual {v0, v1}, Landroidx/compose/ui/draganddrop/e;->A0(Landroidx/compose/ui/draganddrop/b;)V
 
     :cond_1
     const/4 v0, 0x0
 
-    .line 5
-    iput-object v0, p1, Landroidx/compose/ui/draganddrop/f;->r:Landroidx/compose/ui/draganddrop/g;
-
     .line 6
-    iput-object v0, p1, Landroidx/compose/ui/draganddrop/f;->q:Landroidx/compose/ui/draganddrop/d;
+    iput-object v0, p1, Landroidx/compose/ui/draganddrop/e;->r:Landroidx/compose/ui/draganddrop/f;
 
+    .line 7
+    iput-object v0, p1, Landroidx/compose/ui/draganddrop/e;->q:Landroidx/compose/ui/draganddrop/e;
+
+    .line 8
     sget-object p1, Landroidx/compose/ui/node/TraversableNode$Companion$TraverseDescendantsAction;->ContinueTraversal:Landroidx/compose/ui/node/TraversableNode$Companion$TraverseDescendantsAction;
 
     return-object p1
@@ -99,10 +101,10 @@
 .method public bridge synthetic invoke(Ljava/lang/Object;)Ljava/lang/Object;
     .locals 0
 
-    .line 7
-    check-cast p1, Landroidx/compose/ui/draganddrop/f;
+    .line 9
+    check-cast p1, Landroidx/compose/ui/draganddrop/e;
 
-    invoke-virtual {p0, p1}, Landroidx/compose/ui/draganddrop/DragAndDropNode$onEnded$1;->invoke(Landroidx/compose/ui/draganddrop/f;)Landroidx/compose/ui/node/TraversableNode$Companion$TraverseDescendantsAction;
+    invoke-virtual {p0, p1}, Landroidx/compose/ui/draganddrop/DragAndDropNode$onEnded$1;->invoke(Landroidx/compose/ui/draganddrop/e;)Landroidx/compose/ui/node/TraversableNode$Companion$TraverseDescendantsAction;
 
     move-result-object p1
 

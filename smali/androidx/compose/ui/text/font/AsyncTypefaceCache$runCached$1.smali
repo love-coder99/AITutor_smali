@@ -4,6 +4,15 @@
 
 
 # annotations
+.annotation runtime Lca/c;
+    c = "androidx.compose.ui.text.font.AsyncTypefaceCache"
+    f = "FontListFontFamilyTypefaceAdapter.kt"
+    l = {
+        0x18e
+    }
+    m = "runCached"
+.end annotation
+
 .annotation runtime Lkotlin/Metadata;
     k = 0x3
     mv = {
@@ -12,15 +21,6 @@
         0x0
     }
     xi = 0x30
-.end annotation
-
-.annotation runtime Lth/c;
-    c = "androidx.compose.ui.text.font.AsyncTypefaceCache"
-    f = "FontListFontFamilyTypefaceAdapter.kt"
-    l = {
-        0x18e
-    }
-    m = "runCached"
 .end annotation
 
 
@@ -35,16 +35,16 @@
 
 .field synthetic result:Ljava/lang/Object;
 
-.field final synthetic this$0:Landroidx/compose/ui/text/font/g;
+.field final synthetic this$0:Landroidx/compose/ui/text/font/f;
 
 
 # direct methods
-.method public constructor <init>(Landroidx/compose/ui/text/font/g;Lkotlin/coroutines/Continuation;)V
+.method public constructor <init>(Landroidx/compose/ui/text/font/f;Lkotlin/coroutines/Continuation;)V
     .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
-            "Landroidx/compose/ui/text/font/g;",
+            "Landroidx/compose/ui/text/font/f;",
             "Lkotlin/coroutines/Continuation<",
             "-",
             "Landroidx/compose/ui/text/font/AsyncTypefaceCache$runCached$1;",
@@ -52,7 +52,7 @@
         }
     .end annotation
 
-    iput-object p1, p0, Landroidx/compose/ui/text/font/AsyncTypefaceCache$runCached$1;->this$0:Landroidx/compose/ui/text/font/g;
+    iput-object p1, p0, Landroidx/compose/ui/text/font/AsyncTypefaceCache$runCached$1;->this$0:Landroidx/compose/ui/text/font/f;
 
     invoke-direct {p0, p2}, Lkotlin/coroutines/jvm/internal/ContinuationImpl;-><init>(Lkotlin/coroutines/Continuation;)V
 
@@ -74,11 +74,11 @@
 
     iput p1, p0, Landroidx/compose/ui/text/font/AsyncTypefaceCache$runCached$1;->label:I
 
-    iget-object p1, p0, Landroidx/compose/ui/text/font/AsyncTypefaceCache$runCached$1;->this$0:Landroidx/compose/ui/text/font/g;
+    iget-object p1, p0, Landroidx/compose/ui/text/font/AsyncTypefaceCache$runCached$1;->this$0:Landroidx/compose/ui/text/font/f;
 
     const/4 v0, 0x0
 
-    invoke-virtual {p1, v0, v0, v0, p0}, Landroidx/compose/ui/text/font/g;->c(Landroidx/compose/ui/text/font/k;Landroidx/compose/ui/text/font/a0;Lzh/c;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
+    invoke-virtual {p1, v0, v0, v0, p0}, Landroidx/compose/ui/text/font/f;->c(Landroidx/compose/ui/text/font/i;Landroidx/compose/ui/text/font/a;Lka/c;Lkotlin/coroutines/jvm/internal/ContinuationImpl;)Ljava/lang/Object;
 
     move-result-object p1
 

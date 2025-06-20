@@ -33,6 +33,7 @@
 .method private constructor <init>()V
     .locals 0
 
+    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -41,7 +42,7 @@
 .method public synthetic constructor <init>(Lcom/applovin/impl/ck$a;)V
     .locals 0
 
-    .line 1
+    .line 2
     invoke-direct {p0}, Lcom/applovin/impl/ck$d;-><init>()V
 
     return-void
@@ -52,19 +53,21 @@
 .method public a()V
     .locals 1
 
+    .line 12
     iget-object v0, p0, Lcom/applovin/impl/ck$d;->d:Lcom/applovin/impl/v2;
 
     if-eqz v0, :cond_0
 
-    .line 8
+    .line 13
     invoke-interface {v0}, Lcom/applovin/impl/v2;->a()V
 
+    .line 14
     :cond_0
     iget-object v0, p0, Lcom/applovin/impl/ck$d;->b:Lcom/applovin/impl/v2;
 
     if-eqz v0, :cond_1
 
-    .line 9
+    .line 15
     invoke-interface {v0}, Lcom/applovin/impl/v2;->a()V
 
     :cond_1
@@ -96,13 +99,15 @@
 
     const/4 p1, 0x0
 
+    .line 2
     iput-object p1, p0, Lcom/applovin/impl/ck$d;->c:Lcom/applovin/impl/uq;
 
+    .line 3
     iput-object p1, p0, Lcom/applovin/impl/ck$d;->d:Lcom/applovin/impl/v2;
 
     goto :goto_0
 
-    .line 2
+    .line 4
     :cond_1
     invoke-virtual {p2}, Lcom/applovin/impl/rk;->getVideoFrameMetadataListener()Lcom/applovin/impl/uq;
 
@@ -110,7 +115,7 @@
 
     iput-object p1, p0, Lcom/applovin/impl/ck$d;->c:Lcom/applovin/impl/uq;
 
-    .line 3
+    .line 5
     invoke-virtual {p2}, Lcom/applovin/impl/rk;->getCameraMotionListener()Lcom/applovin/impl/v2;
 
     move-result-object p1
@@ -119,7 +124,7 @@
 
     goto :goto_0
 
-    .line 4
+    .line 6
     :cond_2
     check-cast p2, Lcom/applovin/impl/v2;
 
@@ -127,7 +132,7 @@
 
     goto :goto_0
 
-    .line 5
+    .line 7
     :cond_3
     check-cast p2, Lcom/applovin/impl/uq;
 
@@ -140,6 +145,7 @@
 .method public a(JJLcom/applovin/impl/e9;Landroid/media/MediaFormat;)V
     .locals 8
 
+    .line 16
     iget-object v0, p0, Lcom/applovin/impl/ck$d;->c:Lcom/applovin/impl/uq;
 
     if-eqz v0, :cond_0
@@ -152,9 +158,10 @@
 
     move-object v6, p6
 
-    .line 10
+    .line 17
     invoke-interface/range {v0 .. v6}, Lcom/applovin/impl/uq;->a(JJLcom/applovin/impl/e9;Landroid/media/MediaFormat;)V
 
+    .line 18
     :cond_0
     iget-object v1, p0, Lcom/applovin/impl/ck$d;->a:Lcom/applovin/impl/uq;
 
@@ -168,7 +175,7 @@
 
     move-object v7, p6
 
-    .line 11
+    .line 19
     invoke-interface/range {v1 .. v7}, Lcom/applovin/impl/uq;->a(JJLcom/applovin/impl/e9;Landroid/media/MediaFormat;)V
 
     :cond_1
@@ -178,19 +185,21 @@
 .method public a(J[F)V
     .locals 1
 
+    .line 8
     iget-object v0, p0, Lcom/applovin/impl/ck$d;->d:Lcom/applovin/impl/v2;
 
     if-eqz v0, :cond_0
 
-    .line 6
+    .line 9
     invoke-interface {v0, p1, p2, p3}, Lcom/applovin/impl/v2;->a(J[F)V
 
+    .line 10
     :cond_0
     iget-object v0, p0, Lcom/applovin/impl/ck$d;->b:Lcom/applovin/impl/v2;
 
     if-eqz v0, :cond_1
 
-    .line 7
+    .line 11
     invoke-interface {v0, p1, p2, p3}, Lcom/applovin/impl/v2;->a(J[F)V
 
     :cond_1

@@ -31,6 +31,9 @@
 # virtual methods
 .method public final b()Ljava/util/HashMap;
     .locals 7
+    .annotation build Landroidx/annotation/NonNull;
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "()",

@@ -1,5 +1,5 @@
 .class public final Landroidx/viewpager2/widget/b;
-.super Landroidx/viewpager2/widget/j;
+.super Landroidx/viewpager2/widget/i;
 .source "SourceFile"
 
 

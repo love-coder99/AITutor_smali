@@ -3,14 +3,14 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lzh/c;
+.implements Lka/c;
 
 
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "Lkotlin/jvm/internal/Lambda;",
-        "Lzh/c;"
+        "Lka/c;"
     }
 .end annotation
 
@@ -19,10 +19,10 @@
         "\u0000\u000c\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0008\u0003\u0010\u0004\u001a\u00020\u0001*\u00020\u0000H\n\u00a2\u0006\u0004\u0008\u0002\u0010\u0003"
     }
     d2 = {
-        "Landroidx/compose/ui/layout/z0;",
-        "Lqh/r;",
+        "Landroidx/compose/ui/layout/W;",
+        "LX9/j;",
         "invoke",
-        "(Landroidx/compose/ui/layout/z0;)V",
+        "(Landroidx/compose/ui/layout/W;)V",
         "<anonymous>"
     }
     k = 0x3
@@ -35,16 +35,16 @@
 
 
 # instance fields
-.field final synthetic $placeable:Landroidx/compose/ui/layout/a1;
+.field final synthetic $placeable:Landroidx/compose/ui/layout/X;
 
 .field final synthetic this$0:Landroidx/compose/ui/graphics/q;
 
 
 # direct methods
-.method public constructor <init>(Landroidx/compose/ui/layout/a1;Landroidx/compose/ui/graphics/q;)V
+.method public constructor <init>(Landroidx/compose/ui/layout/X;Landroidx/compose/ui/graphics/q;)V
     .locals 0
 
-    iput-object p1, p0, Landroidx/compose/ui/graphics/BlockGraphicsLayerModifier$measure$1;->$placeable:Landroidx/compose/ui/layout/a1;
+    iput-object p1, p0, Landroidx/compose/ui/graphics/BlockGraphicsLayerModifier$measure$1;->$placeable:Landroidx/compose/ui/layout/X;
 
     iput-object p2, p0, Landroidx/compose/ui/graphics/BlockGraphicsLayerModifier$measure$1;->this$0:Landroidx/compose/ui/graphics/q;
 
@@ -60,36 +60,37 @@
 .method public bridge synthetic invoke(Ljava/lang/Object;)Ljava/lang/Object;
     .locals 0
 
-    .line 3
-    check-cast p1, Landroidx/compose/ui/layout/z0;
+    .line 1
+    check-cast p1, Landroidx/compose/ui/layout/W;
 
-    invoke-virtual {p0, p1}, Landroidx/compose/ui/graphics/BlockGraphicsLayerModifier$measure$1;->invoke(Landroidx/compose/ui/layout/z0;)V
+    invoke-virtual {p0, p1}, Landroidx/compose/ui/graphics/BlockGraphicsLayerModifier$measure$1;->invoke(Landroidx/compose/ui/layout/W;)V
 
-    sget-object p1, Lqh/r;->a:Lqh/r;
+    sget-object p1, LX9/j;->a:LX9/j;
 
     return-object p1
 .end method
 
-.method public final invoke(Landroidx/compose/ui/layout/z0;)V
+.method public final invoke(Landroidx/compose/ui/layout/W;)V
     .locals 6
 
-    iget-object v1, p0, Landroidx/compose/ui/graphics/BlockGraphicsLayerModifier$measure$1;->$placeable:Landroidx/compose/ui/layout/a1;
+    .line 2
+    iget-object v1, p0, Landroidx/compose/ui/graphics/BlockGraphicsLayerModifier$measure$1;->$placeable:Landroidx/compose/ui/layout/X;
+
+    iget-object v0, p0, Landroidx/compose/ui/graphics/BlockGraphicsLayerModifier$measure$1;->this$0:Landroidx/compose/ui/graphics/q;
+
+    .line 3
+    iget-object v4, v0, Landroidx/compose/ui/graphics/q;->p:Lka/c;
 
     const/4 v2, 0x0
 
     const/4 v3, 0x0
 
-    iget-object v0, p0, Landroidx/compose/ui/graphics/BlockGraphicsLayerModifier$measure$1;->this$0:Landroidx/compose/ui/graphics/q;
-
-    .line 1
-    iget-object v4, v0, Landroidx/compose/ui/graphics/q;->p:Lzh/c;
-
     const/4 v5, 0x4
 
     move-object v0, p1
 
-    .line 2
-    invoke-static/range {v0 .. v5}, Landroidx/compose/ui/layout/z0;->j(Landroidx/compose/ui/layout/z0;Landroidx/compose/ui/layout/a1;IILzh/c;I)V
+    .line 4
+    invoke-static/range {v0 .. v5}, Landroidx/compose/ui/layout/W;->j(Landroidx/compose/ui/layout/W;Landroidx/compose/ui/layout/X;IILka/c;I)V
 
     return-void
 .end method

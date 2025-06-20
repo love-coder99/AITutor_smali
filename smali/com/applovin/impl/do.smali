@@ -48,8 +48,10 @@
     .line 1
     invoke-direct {p0}, Lcom/applovin/impl/sk;-><init>()V
 
+    .line 2
     iput-wide p1, p0, Lcom/applovin/impl/do;->a:J
 
+    .line 3
     iput-wide p3, p0, Lcom/applovin/impl/do;->b:J
 
     return-void
@@ -58,7 +60,7 @@
 .method public synthetic constructor <init>(JJLcom/applovin/impl/do$a;)V
     .locals 0
 
-    .line 2
+    .line 4
     invoke-direct {p0, p1, p2, p3, p4}, Lcom/applovin/impl/do;-><init>(JJ)V
 
     return-void

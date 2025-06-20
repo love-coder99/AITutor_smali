@@ -1,17 +1,26 @@
-.class public final Landroidx/compose/runtime/e0;
+.class public final Landroidx/compose/runtime/E0;
 .super Ljava/lang/Object;
 .source "SourceFile"
 
 # interfaces
-.implements Landroidx/compose/runtime/h3;
+.implements Ljava/util/Iterator;
+.implements Lla/a;
 
 
 # instance fields
-.field public final a:Lzh/c;
+.field public final b:Landroidx/compose/runtime/s0;
+
+.field public final c:I
+
+.field public final d:Landroidx/compose/runtime/o;
+
+.field public final f:I
+
+.field public g:I
 
 
 # direct methods
-.method public constructor <init>(Lzh/c;)V
+.method public constructor <init>(Landroidx/compose/runtime/s0;ILandroidx/compose/runtime/L;Landroidx/compose/runtime/o;)V
     .locals 0
 
     .line 1
@@ -20,103 +29,59 @@
     .line 2
     .line 3
     .line 4
-    iput-object p1, p0, Landroidx/compose/runtime/e0;->a:Lzh/c;
+    iput-object p1, p0, Landroidx/compose/runtime/E0;->b:Landroidx/compose/runtime/s0;
 
     .line 5
     .line 6
+    iput p2, p0, Landroidx/compose/runtime/E0;->c:I
+
+    .line 7
+    .line 8
+    iput-object p4, p0, Landroidx/compose/runtime/E0;->d:Landroidx/compose/runtime/o;
+
+    .line 9
+    .line 10
+    iget p1, p1, Landroidx/compose/runtime/s0;->i:I
+
+    .line 11
+    .line 12
+    iput p1, p0, Landroidx/compose/runtime/E0;->f:I
+
+    .line 13
+    .line 14
     return-void
 .end method
 
 
 # virtual methods
-.method public final a(Landroidx/compose/runtime/q1;)Ljava/lang/Object;
+.method public final hasNext()Z
     .locals 1
 
     .line 1
-    iget-object v0, p0, Landroidx/compose/runtime/e0;->a:Lzh/c;
+    const/4 v0, 0x0
 
     .line 2
-    .line 3
-    invoke-interface {v0, p1}, Lzh/c;->invoke(Ljava/lang/Object;)Ljava/lang/Object;
-
-    .line 4
-    .line 5
-    .line 6
-    move-result-object p1
-
-    .line 7
-    return-object p1
+    throw v0
 .end method
 
-.method public final equals(Ljava/lang/Object;)Z
-    .locals 3
-
-    const/4 v0, 0x1
-
-    if-ne p0, p1, :cond_0
-
-    return v0
-
-    :cond_0
-    instance-of v1, p1, Landroidx/compose/runtime/e0;
-
-    const/4 v2, 0x0
-
-    if-nez v1, :cond_1
-
-    return v2
-
-    :cond_1
-    check-cast p1, Landroidx/compose/runtime/e0;
-
-    iget-object v1, p0, Landroidx/compose/runtime/e0;->a:Lzh/c;
-
-    iget-object p1, p1, Landroidx/compose/runtime/e0;->a:Lzh/c;
-
-    invoke-static {v1, p1}, Lrb/h;->d(Ljava/lang/Object;Ljava/lang/Object;)Z
-
-    move-result p1
-
-    if-nez p1, :cond_2
-
-    return v2
-
-    :cond_2
-    return v0
-.end method
-
-.method public final hashCode()I
+.method public final next()Ljava/lang/Object;
     .locals 1
 
-    iget-object v0, p0, Landroidx/compose/runtime/e0;->a:Lzh/c;
+    .line 1
+    const/4 v0, 0x0
 
-    invoke-virtual {v0}, Ljava/lang/Object;->hashCode()I
-
-    move-result v0
-
-    return v0
+    .line 2
+    throw v0
 .end method
 
-.method public final toString()Ljava/lang/String;
+.method public final remove()V
     .locals 2
 
-    new-instance v0, Ljava/lang/StringBuilder;
+    new-instance v0, Ljava/lang/UnsupportedOperationException;
 
-    const-string v1, "ComputedValueHolder(compute="
+    const-string v1, "Operation is not supported for read-only collection"
 
-    invoke-direct {v0, v1}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+    invoke-direct {v0, v1}, Ljava/lang/UnsupportedOperationException;-><init>(Ljava/lang/String;)V
 
-    iget-object v1, p0, Landroidx/compose/runtime/e0;->a:Lzh/c;
-
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
-
-    const/16 v1, 0x29
-
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object v0
-
-    return-object v0
+    throw v0
 .end method

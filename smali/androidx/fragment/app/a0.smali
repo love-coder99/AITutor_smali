@@ -1,136 +1,53 @@
-.class public final synthetic Landroidx/fragment/app/a0;
+.class public final Landroidx/fragment/app/a0;
 .super Ljava/lang/Object;
 .source "SourceFile"
 
 # interfaces
-.implements Lr4/d;
-
-
-# instance fields
-.field public final synthetic a:I
-
-.field public final synthetic b:Ljava/lang/Object;
-
-
-# direct methods
-.method public synthetic constructor <init>(Ljava/lang/Object;I)V
-    .locals 0
-
-    .line 1
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
-
-    .line 2
-    .line 3
-    .line 4
-    iput p2, p0, Landroidx/fragment/app/a0;->a:I
-
-    .line 5
-    .line 6
-    iput-object p1, p0, Landroidx/fragment/app/a0;->b:Ljava/lang/Object;
-
-    .line 7
-    .line 8
-    return-void
-.end method
+.implements Landroidx/lifecycle/d0;
 
 
 # virtual methods
-.method public final a()Landroid/os/Bundle;
-    .locals 3
+.method public final a(Ljava/lang/Class;)Landroidx/lifecycle/b0;
+    .locals 1
 
     .line 1
-    iget v0, p0, Landroidx/fragment/app/a0;->a:I
+    new-instance p1, Landroidx/fragment/app/b0;
 
     .line 2
     .line 3
-    iget-object v1, p0, Landroidx/fragment/app/a0;->b:Ljava/lang/Object;
+    const/4 v0, 0x1
 
     .line 4
-    .line 5
-    packed-switch v0, :pswitch_data_0
+    invoke-direct {p1, v0}, Landroidx/fragment/app/b0;-><init>(Z)V
 
+    .line 5
     .line 6
     .line 7
-    .line 8
-    check-cast v1, Landroidx/fragment/app/v0;
+    return-object p1
+.end method
 
-    .line 9
-    .line 10
-    invoke-virtual {v1}, Landroidx/fragment/app/v0;->U()Landroid/os/Bundle;
+.method public final synthetic b(Lkotlin/jvm/internal/b;LU1/d;)Landroidx/lifecycle/b0;
+    .locals 0
 
-    .line 11
-    .line 12
-    .line 13
-    move-result-object v0
+    .line 1
+    invoke-static {p0, p1, p2}, Landroidx/compose/runtime/a0;->c(Landroidx/lifecycle/d0;Lkotlin/jvm/internal/b;LU1/d;)Landroidx/lifecycle/b0;
 
-    .line 14
-    return-object v0
+    move-result-object p1
 
-    .line 15
-    :pswitch_0
-    check-cast v1, Landroidx/fragment/app/e0;
+    return-object p1
+.end method
 
-    .line 16
-    .line 17
-    :cond_0
-    iget-object v0, v1, Landroidx/fragment/app/e0;->c:Landroidx/fragment/app/o0;
+.method public final c(Ljava/lang/Class;LU1/d;)Landroidx/lifecycle/b0;
+    .locals 0
 
-    .line 18
-    .line 19
-    invoke-virtual {v0}, Landroidx/fragment/app/o0;->a()Landroidx/fragment/app/w0;
+    .line 1
+    invoke-virtual {p0, p1}, Landroidx/fragment/app/a0;->a(Ljava/lang/Class;)Landroidx/lifecycle/b0;
 
-    .line 20
-    .line 21
-    .line 22
-    move-result-object v0
+    .line 2
+    .line 3
+    .line 4
+    move-result-object p1
 
-    .line 23
-    sget-object v2, Landroidx/lifecycle/Lifecycle$State;->CREATED:Landroidx/lifecycle/Lifecycle$State;
-
-    .line 24
-    .line 25
-    invoke-static {v0, v2}, Landroidx/fragment/app/e0;->h(Landroidx/fragment/app/v0;Landroidx/lifecycle/Lifecycle$State;)Z
-
-    .line 26
-    .line 27
-    .line 28
-    move-result v0
-
-    .line 29
-    if-nez v0, :cond_0
-
-    .line 30
-    .line 31
-    iget-object v0, v1, Landroidx/fragment/app/e0;->d:Landroidx/lifecycle/y;
-
-    .line 32
-    .line 33
-    sget-object v1, Landroidx/lifecycle/Lifecycle$Event;->ON_STOP:Landroidx/lifecycle/Lifecycle$Event;
-
-    .line 34
-    .line 35
-    invoke-virtual {v0, v1}, Landroidx/lifecycle/y;->f(Landroidx/lifecycle/Lifecycle$Event;)V
-
-    .line 36
-    .line 37
-    .line 38
-    new-instance v0, Landroid/os/Bundle;
-
-    .line 39
-    .line 40
-    invoke-direct {v0}, Landroid/os/Bundle;-><init>()V
-
-    .line 41
-    .line 42
-    .line 43
-    return-object v0
-
-    .line 44
-    nop
-
-    .line 45
-    :pswitch_data_0
-    .packed-switch 0x0
-        :pswitch_0
-    .end packed-switch
+    .line 5
+    return-object p1
 .end method

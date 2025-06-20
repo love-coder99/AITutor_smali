@@ -3,12 +3,12 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lzh/c;
+.implements Lka/c;
 
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Landroidx/compose/foundation/text/CoreTextFieldKt$CoreTextField$semanticsModifier$1$1;->invoke(Landroidx/compose/ui/semantics/u;)V
+    value = Landroidx/compose/foundation/text/CoreTextFieldKt$CoreTextField$semanticsModifier$1$1;->invoke(Landroidx/compose/ui/semantics/t;)V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -19,7 +19,7 @@
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "Lkotlin/jvm/internal/Lambda;",
-        "Lzh/c;"
+        "Lka/c;"
     }
 .end annotation
 
@@ -29,7 +29,7 @@
     }
     d2 = {
         "",
-        "Landroidx/compose/ui/text/f0;",
+        "Landroidx/compose/ui/text/F;",
         "it",
         "",
         "invoke",
@@ -46,14 +46,14 @@
 
 
 # instance fields
-.field final synthetic $state:Landroidx/compose/foundation/text/t;
+.field final synthetic $state:Landroidx/compose/foundation/text/s;
 
 
 # direct methods
-.method public constructor <init>(Landroidx/compose/foundation/text/t;)V
+.method public constructor <init>(Landroidx/compose/foundation/text/s;)V
     .locals 0
 
-    iput-object p1, p0, Landroidx/compose/foundation/text/CoreTextFieldKt$CoreTextField$semanticsModifier$1$1$1;->$state:Landroidx/compose/foundation/text/t;
+    iput-object p1, p0, Landroidx/compose/foundation/text/CoreTextFieldKt$CoreTextField$semanticsModifier$1$1$1;->$state:Landroidx/compose/foundation/text/s;
 
     const/4 p1, 0x1
 
@@ -70,29 +70,29 @@
         value = {
             "(",
             "Ljava/util/List<",
-            "Landroidx/compose/ui/text/f0;",
+            "Landroidx/compose/ui/text/F;",
             ">;)",
             "Ljava/lang/Boolean;"
         }
     .end annotation
 
-    iget-object v0, p0, Landroidx/compose/foundation/text/CoreTextFieldKt$CoreTextField$semanticsModifier$1$1$1;->$state:Landroidx/compose/foundation/text/t;
-
     .line 2
-    invoke-virtual {v0}, Landroidx/compose/foundation/text/t;->d()Landroidx/compose/foundation/text/i0;
+    iget-object v0, p0, Landroidx/compose/foundation/text/CoreTextFieldKt$CoreTextField$semanticsModifier$1$1$1;->$state:Landroidx/compose/foundation/text/s;
+
+    invoke-virtual {v0}, Landroidx/compose/foundation/text/s;->d()Landroidx/compose/foundation/text/J;
 
     move-result-object v0
 
     if-eqz v0, :cond_0
 
-    iget-object v0, p0, Landroidx/compose/foundation/text/CoreTextFieldKt$CoreTextField$semanticsModifier$1$1$1;->$state:Landroidx/compose/foundation/text/t;
-
     .line 3
-    invoke-virtual {v0}, Landroidx/compose/foundation/text/t;->d()Landroidx/compose/foundation/text/i0;
+    iget-object v0, p0, Landroidx/compose/foundation/text/CoreTextFieldKt$CoreTextField$semanticsModifier$1$1$1;->$state:Landroidx/compose/foundation/text/s;
+
+    invoke-virtual {v0}, Landroidx/compose/foundation/text/s;->d()Landroidx/compose/foundation/text/J;
 
     move-result-object v0
 
-    iget-object v0, v0, Landroidx/compose/foundation/text/i0;->a:Landroidx/compose/ui/text/f0;
+    iget-object v0, v0, Landroidx/compose/foundation/text/J;->a:Landroidx/compose/ui/text/F;
 
     invoke-interface {p1, v0}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 

@@ -3,14 +3,14 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lzh/c;
+.implements Lka/c;
 
 
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "Lkotlin/jvm/internal/Lambda;",
-        "Lzh/c;"
+        "Lka/c;"
     }
 .end annotation
 
@@ -21,9 +21,9 @@
     d2 = {
         "",
         "it",
-        "Landroidx/compose/ui/text/f;",
+        "Landroidx/compose/ui/text/g;",
         "invoke",
-        "(Ljava/lang/Object;)Landroidx/compose/ui/text/f;",
+        "(Ljava/lang/Object;)Landroidx/compose/ui/text/g;",
         "<anonymous>"
     }
     k = 0x3
@@ -64,7 +64,7 @@
 
 
 # virtual methods
-.method public final invoke(Ljava/lang/Object;)Landroidx/compose/ui/text/f;
+.method public final invoke(Ljava/lang/Object;)Landroidx/compose/ui/text/g;
     .locals 7
 
     .line 2
@@ -78,22 +78,18 @@
     move-result-object v0
 
     .line 4
-    sget-object v1, Landroidx/compose/ui/text/z;->b:Landroidx/compose/runtime/saveable/l;
-
-    sget-object v2, Ljava/lang/Boolean;->FALSE:Ljava/lang/Boolean;
+    sget-object v1, Landroidx/compose/ui/text/z;->b:LB2/c;
 
     .line 5
-    invoke-static {v0, v2}, Lrb/h;->d(Ljava/lang/Object;Ljava/lang/Object;)Z
+    sget-object v2, Ljava/lang/Boolean;->FALSE:Ljava/lang/Boolean;
+
+    invoke-static {v0, v2}, Lkotlin/jvm/internal/h;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result v3
 
     const/4 v4, 0x0
 
     if-eqz v3, :cond_1
-
-    instance-of v3, v1, Landroidx/compose/ui/text/y;
-
-    if-nez v3, :cond_1
 
     :cond_0
     move-object v0, v4
@@ -104,10 +100,12 @@
     if-eqz v0, :cond_0
 
     .line 6
-    iget-object v3, v1, Landroidx/compose/runtime/saveable/l;->b:Lzh/c;
+    iget-object v3, v1, LB2/c;->d:Ljava/lang/Object;
+
+    check-cast v3, Lka/c;
 
     .line 7
-    invoke-interface {v3, v0}, Lzh/c;->invoke(Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-interface {v3, v0}, Lka/c;->invoke(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object v0
 
@@ -123,15 +121,11 @@
     move-result-object v3
 
     .line 10
-    invoke-static {v3, v2}, Lrb/h;->d(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v3, v2}, Lkotlin/jvm/internal/h;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result v5
 
     if-eqz v5, :cond_3
-
-    instance-of v5, v1, Landroidx/compose/ui/text/y;
-
-    if-nez v5, :cond_3
 
     :cond_2
     move-object v3, v4
@@ -142,10 +136,12 @@
     if-eqz v3, :cond_2
 
     .line 11
-    iget-object v5, v1, Landroidx/compose/runtime/saveable/l;->b:Lzh/c;
+    iget-object v5, v1, LB2/c;->d:Ljava/lang/Object;
+
+    check-cast v5, Lka/c;
 
     .line 12
-    invoke-interface {v5, v3}, Lzh/c;->invoke(Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-interface {v5, v3}, Lka/c;->invoke(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object v3
 
@@ -171,50 +167,32 @@
     move-object v5, v4
 
     :goto_2
-    if-eqz v0, :cond_6
+    if-eqz v0, :cond_5
 
     .line 16
-    check-cast v0, Ljava/util/Collection;
-
     invoke-interface {v0}, Ljava/util/Collection;->isEmpty()Z
 
     move-result v6
 
-    if-eqz v6, :cond_5
-
-    move-object v0, v4
+    if-eqz v6, :cond_6
 
     :cond_5
-    check-cast v0, Ljava/util/List;
-
-    goto :goto_3
-
-    :cond_6
     move-object v0, v4
 
-    :goto_3
-    if-eqz v3, :cond_8
+    :cond_6
+    if-eqz v3, :cond_7
 
     .line 17
-    check-cast v3, Ljava/util/Collection;
-
     invoke-interface {v3}, Ljava/util/Collection;->isEmpty()Z
 
     move-result v6
 
-    if-eqz v6, :cond_7
-
-    move-object v3, v4
+    if-eqz v6, :cond_8
 
     :cond_7
-    check-cast v3, Ljava/util/List;
-
-    goto :goto_4
-
-    :cond_8
     move-object v3, v4
 
-    :goto_4
+    :cond_8
     const/4 v6, 0x3
 
     .line 18
@@ -223,26 +201,24 @@
     move-result-object p1
 
     .line 19
-    invoke-static {p1, v2}, Lrb/h;->d(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {p1, v2}, Lkotlin/jvm/internal/h;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result v2
 
     if-eqz v2, :cond_9
 
-    instance-of v2, v1, Landroidx/compose/ui/text/y;
-
-    if-nez v2, :cond_9
-
-    goto :goto_5
+    goto :goto_3
 
     :cond_9
     if-eqz p1, :cond_a
 
     .line 20
-    iget-object v1, v1, Landroidx/compose/runtime/saveable/l;->b:Lzh/c;
+    iget-object v1, v1, LB2/c;->d:Ljava/lang/Object;
+
+    check-cast v1, Lka/c;
 
     .line 21
-    invoke-interface {v1, p1}, Lzh/c;->invoke(Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-interface {v1, p1}, Lka/c;->invoke(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object p1
 
@@ -253,10 +229,10 @@
 
     .line 23
     :cond_a
-    :goto_5
-    new-instance p1, Landroidx/compose/ui/text/f;
+    :goto_3
+    new-instance p1, Landroidx/compose/ui/text/g;
 
-    invoke-direct {p1, v5, v0, v3, v4}, Landroidx/compose/ui/text/f;-><init>(Ljava/lang/String;Ljava/util/List;Ljava/util/List;Ljava/util/List;)V
+    invoke-direct {p1, v5, v0, v3, v4}, Landroidx/compose/ui/text/g;-><init>(Ljava/lang/String;Ljava/util/List;Ljava/util/List;Ljava/util/List;)V
 
     return-object p1
 .end method
@@ -265,7 +241,7 @@
     .locals 0
 
     .line 1
-    invoke-virtual {p0, p1}, Landroidx/compose/ui/text/SaversKt$AnnotatedStringSaver$2;->invoke(Ljava/lang/Object;)Landroidx/compose/ui/text/f;
+    invoke-virtual {p0, p1}, Landroidx/compose/ui/text/SaversKt$AnnotatedStringSaver$2;->invoke(Ljava/lang/Object;)Landroidx/compose/ui/text/g;
 
     move-result-object p1
 

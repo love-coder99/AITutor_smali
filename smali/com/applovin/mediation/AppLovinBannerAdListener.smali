@@ -14,13 +14,13 @@
 
 .field private final adapter:Lcom/applovin/mediation/ApplovinAdapter;
 
-.field private final mediationBannerListener:Lv9/n;
+.field private final mediationBannerListener:Lo5/n;
 
 .field private final zoneId:Ljava/lang/String;
 
 
 # direct methods
-.method public constructor <init>(Ljava/lang/String;Lcom/applovin/adview/AppLovinAdView;Lcom/applovin/mediation/ApplovinAdapter;Lv9/n;)V
+.method public constructor <init>(Ljava/lang/String;Lcom/applovin/adview/AppLovinAdView;Lcom/applovin/mediation/ApplovinAdapter;Lo5/n;)V
     .locals 0
 
     .line 1
@@ -33,7 +33,7 @@
 
     .line 5
     .line 6
-    iput-object p4, p0, Lcom/applovin/mediation/AppLovinBannerAdListener;->mediationBannerListener:Lv9/n;
+    iput-object p4, p0, Lcom/applovin/mediation/AppLovinBannerAdListener;->mediationBannerListener:Lo5/n;
 
     .line 7
     .line 8
@@ -59,11 +59,11 @@
     return-object p0
 .end method
 
-.method public static synthetic access$100(Lcom/applovin/mediation/AppLovinBannerAdListener;)Lv9/n;
+.method public static synthetic access$100(Lcom/applovin/mediation/AppLovinBannerAdListener;)Lo5/n;
     .locals 0
 
     .line 1
-    iget-object p0, p0, Lcom/applovin/mediation/AppLovinBannerAdListener;->mediationBannerListener:Lv9/n;
+    iget-object p0, p0, Lcom/applovin/mediation/AppLovinBannerAdListener;->mediationBannerListener:Lo5/n;
 
     .line 2
     .line 3
@@ -88,19 +88,70 @@
     .line 5
     .line 6
     .line 7
-    iget-object p1, p0, Lcom/applovin/mediation/AppLovinBannerAdListener;->mediationBannerListener:Lv9/n;
+    iget-object p1, p0, Lcom/applovin/mediation/AppLovinBannerAdListener;->mediationBannerListener:Lo5/n;
 
     .line 8
     .line 9
-    check-cast p1, Lcom/google/android/gms/internal/ads/i6;
+    check-cast p1, Lcom/google/android/gms/internal/ads/Wa;
 
     .line 10
     .line 11
-    invoke-virtual {p1}, Lcom/google/android/gms/internal/ads/i6;->e()V
+    invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
     .line 12
     .line 13
     .line 14
+    const-string v0, "#008 Must be called on the main UI thread."
+
+    .line 15
+    .line 16
+    invoke-static {v0}, LC5/u;->d(Ljava/lang/String;)V
+
+    .line 17
+    .line 18
+    .line 19
+    const-string v0, "Adapter called onAdClicked."
+
+    .line 20
+    .line 21
+    invoke-static {v0}, Lm5/i;->d(Ljava/lang/String;)V
+
+    .line 22
+    .line 23
+    .line 24
+    :try_start_0
+    iget-object p1, p1, Lcom/google/android/gms/internal/ads/Wa;->c:Ljava/lang/Object;
+
+    .line 25
+    .line 26
+    check-cast p1, Lcom/google/android/gms/internal/ads/O9;
+
+    .line 27
+    .line 28
+    invoke-interface {p1}, Lcom/google/android/gms/internal/ads/O9;->zze()V
+    :try_end_0
+    .catch Landroid/os/RemoteException; {:try_start_0 .. :try_end_0} :catch_0
+
+    .line 29
+    .line 30
+    .line 31
+    goto :goto_0
+
+    .line 32
+    :catch_0
+    move-exception p1
+
+    .line 33
+    const-string v0, "#007 Could not call remote method."
+
+    .line 34
+    .line 35
+    invoke-static {v0, p1}, Lm5/i;->h(Ljava/lang/String;Ljava/lang/Exception;)V
+
+    .line 36
+    .line 37
+    .line 38
+    :goto_0
     return-void
 .end method
 
@@ -120,19 +171,70 @@
     .line 5
     .line 6
     .line 7
-    iget-object p1, p0, Lcom/applovin/mediation/AppLovinBannerAdListener;->mediationBannerListener:Lv9/n;
+    iget-object p1, p0, Lcom/applovin/mediation/AppLovinBannerAdListener;->mediationBannerListener:Lo5/n;
 
     .line 8
     .line 9
-    check-cast p1, Lcom/google/android/gms/internal/ads/i6;
+    check-cast p1, Lcom/google/android/gms/internal/ads/Wa;
 
     .line 10
     .line 11
-    invoke-virtual {p1}, Lcom/google/android/gms/internal/ads/i6;->f()V
+    invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
     .line 12
     .line 13
     .line 14
+    const-string p2, "#008 Must be called on the main UI thread."
+
+    .line 15
+    .line 16
+    invoke-static {p2}, LC5/u;->d(Ljava/lang/String;)V
+
+    .line 17
+    .line 18
+    .line 19
+    const-string p2, "Adapter called onAdClosed."
+
+    .line 20
+    .line 21
+    invoke-static {p2}, Lm5/i;->d(Ljava/lang/String;)V
+
+    .line 22
+    .line 23
+    .line 24
+    :try_start_0
+    iget-object p1, p1, Lcom/google/android/gms/internal/ads/Wa;->c:Ljava/lang/Object;
+
+    .line 25
+    .line 26
+    check-cast p1, Lcom/google/android/gms/internal/ads/O9;
+
+    .line 27
+    .line 28
+    invoke-interface {p1}, Lcom/google/android/gms/internal/ads/O9;->F1()V
+    :try_end_0
+    .catch Landroid/os/RemoteException; {:try_start_0 .. :try_end_0} :catch_0
+
+    .line 29
+    .line 30
+    .line 31
+    goto :goto_0
+
+    .line 32
+    :catch_0
+    move-exception p1
+
+    .line 33
+    const-string p2, "#007 Could not call remote method."
+
+    .line 34
+    .line 35
+    invoke-static {p2, p1}, Lm5/i;->h(Ljava/lang/String;Ljava/lang/Exception;)V
+
+    .line 36
+    .line 37
+    .line 38
+    :goto_0
     return-void
 .end method
 
@@ -231,11 +333,11 @@
     .line 5
     .line 6
     .line 7
-    iget-object p1, p0, Lcom/applovin/mediation/AppLovinBannerAdListener;->mediationBannerListener:Lv9/n;
+    iget-object p1, p0, Lcom/applovin/mediation/AppLovinBannerAdListener;->mediationBannerListener:Lo5/n;
 
     .line 8
     .line 9
-    check-cast p1, Lcom/google/android/gms/internal/ads/i6;
+    check-cast p1, Lcom/google/android/gms/internal/ads/Wa;
 
     .line 10
     .line 11
@@ -248,7 +350,7 @@
 
     .line 15
     .line 16
-    invoke-static {p2}, Lb0/h;->k(Ljava/lang/String;)V
+    invoke-static {p2}, LC5/u;->d(Ljava/lang/String;)V
 
     .line 17
     .line 18
@@ -257,21 +359,21 @@
 
     .line 20
     .line 21
-    invoke-static {p2}, Lt9/h;->b(Ljava/lang/String;)V
+    invoke-static {p2}, Lm5/i;->d(Ljava/lang/String;)V
 
     .line 22
     .line 23
     .line 24
     :try_start_0
-    iget-object p1, p1, Lcom/google/android/gms/internal/ads/i6;->c:Ljava/lang/Object;
+    iget-object p1, p1, Lcom/google/android/gms/internal/ads/Wa;->c:Ljava/lang/Object;
 
     .line 25
     .line 26
-    check-cast p1, Lcom/google/android/gms/internal/ads/an;
+    check-cast p1, Lcom/google/android/gms/internal/ads/O9;
 
     .line 27
     .line 28
-    invoke-interface {p1}, Lcom/google/android/gms/internal/ads/an;->K1()V
+    invoke-interface {p1}, Lcom/google/android/gms/internal/ads/O9;->L1()V
     :try_end_0
     .catch Landroid/os/RemoteException; {:try_start_0 .. :try_end_0} :catch_0
 
@@ -289,7 +391,7 @@
 
     .line 34
     .line 35
-    invoke-static {p2, p1}, Lt9/h;->f(Ljava/lang/String;Ljava/lang/Exception;)V
+    invoke-static {p2, p1}, Lm5/i;->h(Ljava/lang/String;Ljava/lang/Exception;)V
 
     .line 36
     .line 37
@@ -314,19 +416,70 @@
     .line 5
     .line 6
     .line 7
-    iget-object p1, p0, Lcom/applovin/mediation/AppLovinBannerAdListener;->mediationBannerListener:Lv9/n;
+    iget-object p1, p0, Lcom/applovin/mediation/AppLovinBannerAdListener;->mediationBannerListener:Lo5/n;
 
     .line 8
     .line 9
-    check-cast p1, Lcom/google/android/gms/internal/ads/i6;
+    check-cast p1, Lcom/google/android/gms/internal/ads/Wa;
 
     .line 10
     .line 11
-    invoke-virtual {p1}, Lcom/google/android/gms/internal/ads/i6;->n()V
+    invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
     .line 12
     .line 13
     .line 14
+    const-string p2, "#008 Must be called on the main UI thread."
+
+    .line 15
+    .line 16
+    invoke-static {p2}, LC5/u;->d(Ljava/lang/String;)V
+
+    .line 17
+    .line 18
+    .line 19
+    const-string p2, "Adapter called onAdOpened."
+
+    .line 20
+    .line 21
+    invoke-static {p2}, Lm5/i;->d(Ljava/lang/String;)V
+
+    .line 22
+    .line 23
+    .line 24
+    :try_start_0
+    iget-object p1, p1, Lcom/google/android/gms/internal/ads/Wa;->c:Ljava/lang/Object;
+
+    .line 25
+    .line 26
+    check-cast p1, Lcom/google/android/gms/internal/ads/O9;
+
+    .line 27
+    .line 28
+    invoke-interface {p1}, Lcom/google/android/gms/internal/ads/O9;->zzp()V
+    :try_end_0
+    .catch Landroid/os/RemoteException; {:try_start_0 .. :try_end_0} :catch_0
+
+    .line 29
+    .line 30
+    .line 31
+    goto :goto_0
+
+    .line 32
+    :catch_0
+    move-exception p1
+
+    .line 33
+    const-string p2, "#007 Could not call remote method."
+
+    .line 34
+    .line 35
+    invoke-static {p2, p1}, Lm5/i;->h(Ljava/lang/String;Ljava/lang/Exception;)V
+
+    .line 36
+    .line 37
+    .line 38
+    :goto_0
     return-void
 .end method
 
@@ -402,7 +555,7 @@
     .locals 3
 
     .line 1
-    invoke-static {p1}, Lcom/applovin/mediation/AppLovinUtils;->getAdError(I)Lj9/a;
+    invoke-static {p1}, Lcom/applovin/mediation/AppLovinUtils;->getAdError(I)Lb5/a;
 
     .line 2
     .line 3
@@ -448,7 +601,7 @@
 
     .line 24
     .line 25
-    invoke-direct {p1, p0, v0}, Lcom/applovin/mediation/AppLovinBannerAdListener$2;-><init>(Lcom/applovin/mediation/AppLovinBannerAdListener;Lj9/a;)V
+    invoke-direct {p1, p0, v0}, Lcom/applovin/mediation/AppLovinBannerAdListener$2;-><init>(Lcom/applovin/mediation/AppLovinBannerAdListener;Lb5/a;)V
 
     .line 26
     .line 27

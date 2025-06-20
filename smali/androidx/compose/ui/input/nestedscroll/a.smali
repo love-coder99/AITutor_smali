@@ -4,14 +4,14 @@
 
 
 # virtual methods
-.method public abstract H(IJ)J
+.method public abstract D(IJ)J
 .end method
 
 .method public abstract V(JLkotlin/coroutines/Continuation;)Ljava/lang/Object;
 .end method
 
-.method public abstract Z(IJJ)J
+.method public abstract a0(IJJ)J
 .end method
 
-.method public abstract m(JJLkotlin/coroutines/Continuation;)Ljava/lang/Object;
+.method public abstract n(JJLkotlin/coroutines/Continuation;)Ljava/lang/Object;
 .end method

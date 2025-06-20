@@ -9,17 +9,13 @@
 # instance fields
 .field public final synthetic a:Lcom/applovin/impl/mediation/ads/MaxFullscreenAdImpl$c;
 
-.field public final synthetic b:Lcom/applovin/mediation/MaxAd;
+.field public final synthetic b:Ljava/lang/String;
 
-.field public final synthetic c:Z
-
-.field public final synthetic d:Lcom/applovin/impl/he;
-
-.field public final synthetic e:Lcom/applovin/mediation/MaxError;
+.field public final synthetic c:Lcom/applovin/mediation/MaxError;
 
 
 # direct methods
-.method public synthetic constructor <init>(Lcom/applovin/impl/mediation/ads/MaxFullscreenAdImpl$c;Lcom/applovin/mediation/MaxAd;ZLcom/applovin/impl/he;Lcom/applovin/mediation/MaxError;)V
+.method public synthetic constructor <init>(Lcom/applovin/impl/mediation/ads/MaxFullscreenAdImpl$c;Ljava/lang/String;Lcom/applovin/mediation/MaxError;)V
     .locals 0
 
     .line 1
@@ -27,13 +23,9 @@
 
     iput-object p1, p0, Lcom/applovin/impl/mediation/ads/i;->a:Lcom/applovin/impl/mediation/ads/MaxFullscreenAdImpl$c;
 
-    iput-object p2, p0, Lcom/applovin/impl/mediation/ads/i;->b:Lcom/applovin/mediation/MaxAd;
+    iput-object p2, p0, Lcom/applovin/impl/mediation/ads/i;->b:Ljava/lang/String;
 
-    iput-boolean p3, p0, Lcom/applovin/impl/mediation/ads/i;->c:Z
-
-    iput-object p4, p0, Lcom/applovin/impl/mediation/ads/i;->d:Lcom/applovin/impl/he;
-
-    iput-object p5, p0, Lcom/applovin/impl/mediation/ads/i;->e:Lcom/applovin/mediation/MaxError;
+    iput-object p3, p0, Lcom/applovin/impl/mediation/ads/i;->c:Lcom/applovin/mediation/MaxError;
 
     return-void
 .end method
@@ -41,20 +33,16 @@
 
 # virtual methods
 .method public final a()V
-    .locals 5
+    .locals 3
 
     .line 1
-    iget-object v0, p0, Lcom/applovin/impl/mediation/ads/i;->d:Lcom/applovin/impl/he;
+    iget-object v0, p0, Lcom/applovin/impl/mediation/ads/i;->b:Ljava/lang/String;
 
-    iget-object v1, p0, Lcom/applovin/impl/mediation/ads/i;->e:Lcom/applovin/mediation/MaxError;
+    iget-object v1, p0, Lcom/applovin/impl/mediation/ads/i;->c:Lcom/applovin/mediation/MaxError;
 
     iget-object v2, p0, Lcom/applovin/impl/mediation/ads/i;->a:Lcom/applovin/impl/mediation/ads/MaxFullscreenAdImpl$c;
 
-    iget-object v3, p0, Lcom/applovin/impl/mediation/ads/i;->b:Lcom/applovin/mediation/MaxAd;
-
-    iget-boolean v4, p0, Lcom/applovin/impl/mediation/ads/i;->c:Z
-
-    invoke-static {v2, v3, v4, v0, v1}, Lcom/applovin/impl/mediation/ads/MaxFullscreenAdImpl$c;->f(Lcom/applovin/impl/mediation/ads/MaxFullscreenAdImpl$c;Lcom/applovin/mediation/MaxAd;ZLcom/applovin/impl/he;Lcom/applovin/mediation/MaxError;)V
+    invoke-static {v2, v0, v1}, Lcom/applovin/impl/mediation/ads/MaxFullscreenAdImpl$c;->a(Lcom/applovin/impl/mediation/ads/MaxFullscreenAdImpl$c;Ljava/lang/String;Lcom/applovin/mediation/MaxError;)V
 
     return-void
 .end method

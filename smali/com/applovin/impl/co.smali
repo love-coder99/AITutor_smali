@@ -18,15 +18,15 @@
     .locals 2
 
     .line 1
-    new-instance v0, Lcom/applovin/impl/bt;
+    new-instance v0, Lcom/applovin/impl/T;
 
     .line 2
     .line 3
-    const/16 v1, 0x8
+    const/16 v1, 0x9
 
     .line 4
     .line 5
-    invoke-direct {v0, v1}, Lcom/applovin/impl/bt;-><init>(I)V
+    invoke-direct {v0, v1}, Lcom/applovin/impl/T;-><init>(I)V
 
     .line 6
     .line 7
@@ -46,8 +46,10 @@
 
     const/4 v0, 0x0
 
+    .line 2
     iput-boolean v0, p0, Lcom/applovin/impl/co;->b:Z
 
+    .line 3
     iput-boolean v0, p0, Lcom/applovin/impl/co;->c:Z
 
     return-void
@@ -56,13 +58,15 @@
 .method public constructor <init>(Z)V
     .locals 1
 
-    .line 2
+    .line 4
     invoke-direct {p0}, Lcom/applovin/impl/ki;-><init>()V
 
     const/4 v0, 0x1
 
+    .line 5
     iput-boolean v0, p0, Lcom/applovin/impl/co;->b:Z
 
+    .line 6
     iput-boolean p1, p0, Lcom/applovin/impl/co;->c:Z
 
     return-void

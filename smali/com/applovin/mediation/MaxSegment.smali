@@ -148,8 +148,11 @@
 .method public getKey()I
     .locals 1
 
+    .line 1
     iget v0, p0, Lcom/applovin/mediation/MaxSegment;->a:I
 
+    .line 2
+    .line 3
     return v0
 .end method
 
@@ -164,8 +167,11 @@
         }
     .end annotation
 
+    .line 1
     iget-object v0, p0, Lcom/applovin/mediation/MaxSegment;->b:Ljava/util/List;
 
+    .line 2
+    .line 3
     return-object v0
 .end method
 

@@ -52,9 +52,9 @@
 .method public apply(Ljava/lang/Character;)Z
     .locals 1
 
+    .line 2
     iget-object v0, p0, Lcom/applovin/exoplayer2/common/base/CharMatcher$h;->a:Lcom/applovin/exoplayer2/common/base/Predicate;
 
-    .line 2
     invoke-static {p1}, Lcom/applovin/exoplayer2/common/base/Preconditions;->checkNotNull(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object p1

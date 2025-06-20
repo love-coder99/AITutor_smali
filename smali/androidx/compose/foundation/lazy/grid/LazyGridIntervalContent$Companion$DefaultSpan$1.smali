@@ -3,14 +3,14 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lzh/e;
+.implements Lka/e;
 
 
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "Lkotlin/jvm/internal/Lambda;",
-        "Lzh/e;"
+        "Lka/e;"
     }
 .end annotation
 
@@ -19,12 +19,12 @@
         "\u0000\u0012\n\u0002\u0018\u0002\n\u0002\u0010\u0008\n\u0000\n\u0002\u0018\u0002\n\u0002\u0008\u0003\u0010\u0006\u001a\u00020\u0003*\u00020\u00002\u0006\u0010\u0002\u001a\u00020\u0001H\n\u00a2\u0006\u0004\u0008\u0004\u0010\u0005"
     }
     d2 = {
-        "Landroidx/compose/foundation/lazy/grid/o;",
+        "Landroidx/compose/foundation/lazy/grid/l;",
         "",
         "it",
-        "Landroidx/compose/foundation/lazy/grid/d;",
+        "Landroidx/compose/foundation/lazy/grid/c;",
         "invoke-_-orMbw",
-        "(Landroidx/compose/foundation/lazy/grid/o;I)J",
+        "(Landroidx/compose/foundation/lazy/grid/l;I)J",
         "<anonymous>"
     }
     k = 0x3
@@ -69,7 +69,7 @@
     .locals 1
 
     .line 1
-    check-cast p1, Landroidx/compose/foundation/lazy/grid/o;
+    check-cast p1, Landroidx/compose/foundation/lazy/grid/l;
 
     .line 2
     .line 3
@@ -85,7 +85,7 @@
     move-result p2
 
     .line 9
-    invoke-virtual {p0, p1, p2}, Landroidx/compose/foundation/lazy/grid/LazyGridIntervalContent$Companion$DefaultSpan$1;->invoke-_-orMbw(Landroidx/compose/foundation/lazy/grid/o;I)J
+    invoke-virtual {p0, p1, p2}, Landroidx/compose/foundation/lazy/grid/LazyGridIntervalContent$Companion$DefaultSpan$1;->invoke-_-orMbw(Landroidx/compose/foundation/lazy/grid/l;I)J
 
     .line 10
     .line 11
@@ -93,11 +93,11 @@
     move-result-wide p1
 
     .line 13
-    new-instance v0, Landroidx/compose/foundation/lazy/grid/d;
+    new-instance v0, Landroidx/compose/foundation/lazy/grid/c;
 
     .line 14
     .line 15
-    invoke-direct {v0, p1, p2}, Landroidx/compose/foundation/lazy/grid/d;-><init>(J)V
+    invoke-direct {v0, p1, p2}, Landroidx/compose/foundation/lazy/grid/c;-><init>(J)V
 
     .line 16
     .line 17
@@ -105,7 +105,7 @@
     return-object v0
 .end method
 
-.method public final invoke-_-orMbw(Landroidx/compose/foundation/lazy/grid/o;I)J
+.method public final invoke-_-orMbw(Landroidx/compose/foundation/lazy/grid/l;I)J
     .locals 0
 
     const/4 p1, 0x1

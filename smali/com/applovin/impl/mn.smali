@@ -33,7 +33,7 @@
 
     .line 2
     .line 3
-    invoke-static {p1, v0}, Landroidx/compose/foundation/text/modifiers/f;->v(Lorg/json/JSONObject;Ljava/lang/String;)Lorg/json/JSONArray;
+    invoke-static {v0, p1}, Lcom/android/billingclient/api/a;->h(Ljava/lang/String;Lorg/json/JSONObject;)Lorg/json/JSONArray;
 
     .line 4
     .line 5

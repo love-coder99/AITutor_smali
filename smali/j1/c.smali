@@ -1,214 +1,199 @@
-.class public final Lj1/c;
-.super Ljava/lang/Object;
+.class public final LJ1/c;
+.super Landroid/view/inputmethod/InputConnectionWrapper;
 .source "SourceFile"
-
-# interfaces
-.implements Ljava/util/Iterator;
-.implements Lai/a;
 
 
 # instance fields
-.field public b:Ljava/lang/Object;
+.field public final a:Landroid/widget/EditText;
 
-.field public final c:Ljava/util/Map;
-
-.field public d:I
+.field public final b:LD6/f;
 
 
 # direct methods
-.method public constructor <init>(Ljava/lang/Object;Li1/d;)V
-    .locals 0
+.method public constructor <init>(Landroid/widget/EditText;Landroid/view/inputmethod/InputConnection;Landroid/view/inputmethod/EditorInfo;)V
+    .locals 2
 
     .line 1
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    new-instance v0, LD6/f;
 
     .line 2
     .line 3
+    const/16 v1, 0x9
+
     .line 4
-    iput-object p1, p0, Lj1/c;->b:Ljava/lang/Object;
-
     .line 5
-    .line 6
-    iput-object p2, p0, Lj1/c;->c:Ljava/util/Map;
+    invoke-direct {v0, v1}, LD6/f;-><init>(I)V
 
+    .line 6
     .line 7
     .line 8
+    const/4 v1, 0x0
+
+    .line 9
+    invoke-direct {p0, p2, v1}, Landroid/view/inputmethod/InputConnectionWrapper;-><init>(Landroid/view/inputmethod/InputConnection;Z)V
+
+    .line 10
+    .line 11
+    .line 12
+    iput-object p1, p0, LJ1/c;->a:Landroid/widget/EditText;
+
+    .line 13
+    .line 14
+    iput-object v0, p0, LJ1/c;->b:LD6/f;
+
+    .line 15
+    .line 16
+    invoke-static {}, LH1/j;->c()Z
+
+    .line 17
+    .line 18
+    .line 19
+    move-result p1
+
+    .line 20
+    if-eqz p1, :cond_0
+
+    .line 21
+    .line 22
+    invoke-static {}, LH1/j;->a()LH1/j;
+
+    .line 23
+    .line 24
+    .line 25
+    move-result-object p1
+
+    .line 26
+    invoke-virtual {p1, p3}, LH1/j;->h(Landroid/view/inputmethod/EditorInfo;)V
+
+    .line 27
+    .line 28
+    .line 29
+    :cond_0
     return-void
 .end method
 
 
 # virtual methods
-.method public final hasNext()Z
+.method public final deleteSurroundingText(II)Z
     .locals 2
 
     .line 1
-    iget v0, p0, Lj1/c;->d:I
+    iget-object v0, p0, LJ1/c;->a:Landroid/widget/EditText;
 
     .line 2
     .line 3
-    iget-object v1, p0, Lj1/c;->c:Ljava/util/Map;
+    invoke-virtual {v0}, Landroid/widget/TextView;->getEditableText()Landroid/text/Editable;
 
     .line 4
     .line 5
-    invoke-interface {v1}, Ljava/util/Map;->size()I
-
     .line 6
+    move-result-object v0
+
     .line 7
-    .line 8
-    move-result v1
-
-    .line 9
-    if-ge v0, v1, :cond_0
-
-    .line 10
-    .line 11
-    const/4 v0, 0x1
-
-    .line 12
-    goto :goto_0
-
-    .line 13
-    :cond_0
-    const/4 v0, 0x0
-
-    .line 14
-    :goto_0
-    return v0
-.end method
-
-.method public final next()Ljava/lang/Object;
-    .locals 4
-
-    .line 1
-    invoke-virtual {p0}, Lj1/c;->hasNext()Z
-
-    .line 2
-    .line 3
-    .line 4
-    move-result v0
-
-    .line 5
-    if-eqz v0, :cond_1
-
-    .line 6
-    .line 7
-    iget-object v0, p0, Lj1/c;->b:Ljava/lang/Object;
+    iget-object v1, p0, LJ1/c;->b:LD6/f;
 
     .line 8
     .line 9
-    iget v1, p0, Lj1/c;->d:I
+    invoke-virtual {v1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
     .line 10
     .line 11
-    add-int/lit8 v1, v1, 0x1
-
     .line 12
+    const/4 v1, 0x0
+
     .line 13
-    iput v1, p0, Lj1/c;->d:I
+    invoke-static {p0, v0, p1, p2, v1}, LD6/f;->M(LJ1/c;Landroid/text/Editable;IIZ)Z
 
     .line 14
     .line 15
-    iget-object v1, p0, Lj1/c;->c:Ljava/util/Map;
-
     .line 16
+    move-result v0
+
     .line 17
-    invoke-interface {v1, v0}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
+    if-nez v0, :cond_0
 
     .line 18
     .line 19
+    invoke-super {p0, p1, p2}, Landroid/view/inputmethod/InputConnectionWrapper;->deleteSurroundingText(II)Z
+
     .line 20
-    move-result-object v1
-
     .line 21
-    if-eqz v1, :cond_0
-
     .line 22
+    move-result p1
+
     .line 23
-    check-cast v1, Lj1/a;
+    if-eqz p1, :cond_1
 
     .line 24
     .line 25
-    iget-object v1, v1, Lj1/a;->b:Ljava/lang/Object;
+    :cond_0
+    const/4 v1, 0x1
 
     .line 26
-    .line 27
-    iput-object v1, p0, Lj1/c;->b:Ljava/lang/Object;
-
-    .line 28
-    .line 29
-    return-object v0
-
-    .line 30
-    :cond_0
-    new-instance v1, Ljava/util/ConcurrentModificationException;
-
-    .line 31
-    .line 32
-    new-instance v2, Ljava/lang/StringBuilder;
-
-    .line 33
-    .line 34
-    const-string v3, "Hash code of an element ("
-
-    .line 35
-    .line 36
-    invoke-direct {v2, v3}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
-
-    .line 37
-    .line 38
-    .line 39
-    invoke-virtual {v2, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
-
-    .line 40
-    .line 41
-    .line 42
-    const-string v0, ") has changed after it was added to the persistent set."
-
-    .line 43
-    .line 44
-    invoke-virtual {v2, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    .line 45
-    .line 46
-    .line 47
-    invoke-virtual {v2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    .line 48
-    .line 49
-    .line 50
-    move-result-object v0
-
-    .line 51
-    invoke-direct {v1, v0}, Ljava/util/ConcurrentModificationException;-><init>(Ljava/lang/String;)V
-
-    .line 52
-    .line 53
-    .line 54
-    throw v1
-
-    .line 55
     :cond_1
-    new-instance v0, Ljava/util/NoSuchElementException;
-
-    .line 56
-    .line 57
-    invoke-direct {v0}, Ljava/util/NoSuchElementException;-><init>()V
-
-    .line 58
-    .line 59
-    .line 60
-    throw v0
+    return v1
 .end method
 
-.method public final remove()V
+.method public final deleteSurroundingTextInCodePoints(II)Z
     .locals 2
 
     .line 1
-    new-instance v0, Ljava/lang/UnsupportedOperationException;
+    iget-object v0, p0, LJ1/c;->a:Landroid/widget/EditText;
 
-    const-string v1, "Operation is not supported for read-only collection"
+    .line 2
+    .line 3
+    invoke-virtual {v0}, Landroid/widget/TextView;->getEditableText()Landroid/text/Editable;
 
-    invoke-direct {v0, v1}, Ljava/lang/UnsupportedOperationException;-><init>(Ljava/lang/String;)V
+    .line 4
+    .line 5
+    .line 6
+    move-result-object v0
 
-    throw v0
+    .line 7
+    iget-object v1, p0, LJ1/c;->b:LD6/f;
+
+    .line 8
+    .line 9
+    invoke-virtual {v1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    .line 10
+    .line 11
+    .line 12
+    const/4 v1, 0x1
+
+    .line 13
+    invoke-static {p0, v0, p1, p2, v1}, LD6/f;->M(LJ1/c;Landroid/text/Editable;IIZ)Z
+
+    .line 14
+    .line 15
+    .line 16
+    move-result v0
+
+    .line 17
+    if-nez v0, :cond_1
+
+    .line 18
+    .line 19
+    invoke-super {p0, p1, p2}, Landroid/view/inputmethod/InputConnectionWrapper;->deleteSurroundingTextInCodePoints(II)Z
+
+    .line 20
+    .line 21
+    .line 22
+    move-result p1
+
+    .line 23
+    if-eqz p1, :cond_0
+
+    .line 24
+    .line 25
+    goto :goto_0
+
+    .line 26
+    :cond_0
+    const/4 v1, 0x0
+
+    .line 27
+    :cond_1
+    :goto_0
+    return v1
 .end method

@@ -3,14 +3,14 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lzh/c;
+.implements Lka/c;
 
 
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "Lkotlin/jvm/internal/Lambda;",
-        "Lzh/c;"
+        "Lka/c;"
     }
 .end annotation
 
@@ -20,9 +20,9 @@
     }
     d2 = {
         "Landroidx/compose/foundation/lazy/layout/f;",
-        "Landroidx/compose/foundation/lazy/layout/r;",
+        "Landroidx/compose/foundation/lazy/layout/q;",
         "it",
-        "Lqh/r;",
+        "LX9/j;",
         "invoke",
         "(Landroidx/compose/foundation/lazy/layout/f;)V",
         "<anonymous>"
@@ -41,25 +41,25 @@
 
 .field final synthetic $last:I
 
-.field final synthetic $map:Landroidx/collection/y;
+.field final synthetic $map:Landroidx/collection/x;
     .annotation system Ldalvik/annotation/Signature;
         value = {
-            "Landroidx/collection/y;"
+            "Landroidx/collection/x;"
         }
     .end annotation
 .end field
 
-.field final synthetic this$0:Landroidx/compose/foundation/lazy/layout/t0;
+.field final synthetic this$0:Landroidx/compose/foundation/lazy/layout/S;
 
 
 # direct methods
-.method public constructor <init>(IILandroidx/collection/y;Landroidx/compose/foundation/lazy/layout/t0;)V
+.method public constructor <init>(IILandroidx/collection/x;Landroidx/compose/foundation/lazy/layout/S;)V
     .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(II",
-            "Landroidx/collection/y;",
-            "Landroidx/compose/foundation/lazy/layout/t0;",
+            "Landroidx/collection/x;",
+            "Landroidx/compose/foundation/lazy/layout/S;",
             ")V"
         }
     .end annotation
@@ -68,9 +68,9 @@
 
     iput p2, p0, Landroidx/compose/foundation/lazy/layout/NearestRangeKeyIndexMap$2$1;->$last:I
 
-    iput-object p3, p0, Landroidx/compose/foundation/lazy/layout/NearestRangeKeyIndexMap$2$1;->$map:Landroidx/collection/y;
+    iput-object p3, p0, Landroidx/compose/foundation/lazy/layout/NearestRangeKeyIndexMap$2$1;->$map:Landroidx/collection/x;
 
-    iput-object p4, p0, Landroidx/compose/foundation/lazy/layout/NearestRangeKeyIndexMap$2$1;->this$0:Landroidx/compose/foundation/lazy/layout/t0;
+    iput-object p4, p0, Landroidx/compose/foundation/lazy/layout/NearestRangeKeyIndexMap$2$1;->this$0:Landroidx/compose/foundation/lazy/layout/S;
 
     const/4 p1, 0x1
 
@@ -89,7 +89,7 @@
 
     invoke-virtual {p0, p1}, Landroidx/compose/foundation/lazy/layout/NearestRangeKeyIndexMap$2$1;->invoke(Landroidx/compose/foundation/lazy/layout/f;)V
 
-    sget-object p1, Lqh/r;->a:Lqh/r;
+    sget-object p1, LX9/j;->a:LX9/j;
 
     return-object p1
 .end method
@@ -105,27 +105,25 @@
     .end annotation
 
     .line 2
-    iget-object v0, p1, Landroidx/compose/foundation/lazy/layout/f;->c:Ljava/lang/Object;
+    iget-object v0, p1, Landroidx/compose/foundation/lazy/layout/f;->c:Landroidx/compose/foundation/lazy/layout/q;
 
     .line 3
-    check-cast v0, Landroidx/compose/foundation/lazy/layout/r;
-
-    invoke-interface {v0}, Landroidx/compose/foundation/lazy/layout/r;->getKey()Lzh/c;
+    invoke-interface {v0}, Landroidx/compose/foundation/lazy/layout/q;->getKey()Lka/c;
 
     move-result-object v0
 
+    .line 4
     iget v1, p0, Landroidx/compose/foundation/lazy/layout/NearestRangeKeyIndexMap$2$1;->$first:I
 
-    .line 4
     iget v2, p1, Landroidx/compose/foundation/lazy/layout/f;->a:I
 
     invoke-static {v1, v2}, Ljava/lang/Math;->max(II)I
 
     move-result v1
 
+    .line 5
     iget v3, p0, Landroidx/compose/foundation/lazy/layout/NearestRangeKeyIndexMap$2$1;->$last:I
 
-    .line 5
     iget p1, p1, Landroidx/compose/foundation/lazy/layout/f;->b:I
 
     add-int/2addr p1, v2
@@ -148,7 +146,7 @@
 
     move-result-object v3
 
-    invoke-interface {v0, v3}, Lzh/c;->invoke(Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-interface {v0, v3}, Lka/c;->invoke(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object v3
 
@@ -160,23 +158,23 @@
 
     invoke-direct {v3, v1}, Landroidx/compose/foundation/lazy/layout/DefaultLazyKey;-><init>(I)V
 
-    :cond_1
-    iget-object v4, p0, Landroidx/compose/foundation/lazy/layout/NearestRangeKeyIndexMap$2$1;->$map:Landroidx/collection/y;
-
     .line 8
-    invoke-virtual {v4, v1, v3}, Landroidx/collection/y;->h(ILjava/lang/Object;)V
+    :cond_1
+    iget-object v4, p0, Landroidx/compose/foundation/lazy/layout/NearestRangeKeyIndexMap$2$1;->$map:Landroidx/collection/x;
 
-    iget-object v4, p0, Landroidx/compose/foundation/lazy/layout/NearestRangeKeyIndexMap$2$1;->this$0:Landroidx/compose/foundation/lazy/layout/t0;
+    invoke-virtual {v4, v1, v3}, Landroidx/collection/x;->f(ILjava/lang/Object;)V
 
     .line 9
-    iget-object v5, v4, Landroidx/compose/foundation/lazy/layout/t0;->c:[Ljava/lang/Object;
+    iget-object v4, p0, Landroidx/compose/foundation/lazy/layout/NearestRangeKeyIndexMap$2$1;->this$0:Landroidx/compose/foundation/lazy/layout/S;
 
     .line 10
-    iget v4, v4, Landroidx/compose/foundation/lazy/layout/t0;->d:I
+    iget-object v5, v4, Landroidx/compose/foundation/lazy/layout/S;->c:[Ljava/lang/Object;
+
+    .line 11
+    iget v4, v4, Landroidx/compose/foundation/lazy/layout/S;->d:I
 
     sub-int v4, v1, v4
 
-    .line 11
     aput-object v3, v5, v4
 
     if-eq v1, p1, :cond_2

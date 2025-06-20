@@ -1,12 +1,12 @@
 .class final Landroidx/compose/foundation/layout/BoxChildDataElement;
-.super Landroidx/compose/ui/node/w0;
+.super Landroidx/compose/ui/node/V;
 .source "SourceFile"
 
 
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
-        "Landroidx/compose/ui/node/w0;"
+        "Landroidx/compose/ui/node/V;"
     }
 .end annotation
 
@@ -16,8 +16,8 @@
     }
     d2 = {
         "Landroidx/compose/foundation/layout/BoxChildDataElement;",
-        "Landroidx/compose/ui/node/w0;",
-        "Landroidx/compose/foundation/layout/l;",
+        "Landroidx/compose/ui/node/V;",
+        "Landroidx/compose/foundation/layout/i;",
         "foundation-layout_release"
     }
     k = 0x1
@@ -26,15 +26,18 @@
         0x8,
         0x0
     }
+    xi = 0x30
 .end annotation
 
 
 # instance fields
-.field public final c:Landroidx/compose/ui/e;
+.field public final a:Landroidx/compose/ui/i;
+
+.field public final b:Z
 
 
 # direct methods
-.method public constructor <init>(Landroidx/compose/ui/i;)V
+.method public constructor <init>(Landroidx/compose/ui/i;Z)V
     .locals 0
 
     .line 1
@@ -43,17 +46,21 @@
     .line 2
     .line 3
     .line 4
-    iput-object p1, p0, Landroidx/compose/foundation/layout/BoxChildDataElement;->c:Landroidx/compose/ui/e;
+    iput-object p1, p0, Landroidx/compose/foundation/layout/BoxChildDataElement;->a:Landroidx/compose/ui/i;
 
     .line 5
     .line 6
+    iput-boolean p2, p0, Landroidx/compose/foundation/layout/BoxChildDataElement;->b:Z
+
+    .line 7
+    .line 8
     return-void
 .end method
 
 
 # virtual methods
 .method public final equals(Ljava/lang/Object;)Z
-    .locals 1
+    .locals 4
 
     .line 1
     const/4 v0, 0x1
@@ -67,11 +74,11 @@
 
     .line 5
     :cond_0
-    instance-of v0, p1, Landroidx/compose/foundation/layout/BoxChildDataElement;
+    instance-of v1, p1, Landroidx/compose/foundation/layout/BoxChildDataElement;
 
     .line 6
     .line 7
-    if-eqz v0, :cond_1
+    if-eqz v1, :cond_1
 
     .line 8
     .line 9
@@ -87,45 +94,69 @@
 
     .line 13
     :goto_0
-    const/4 v0, 0x0
+    const/4 v1, 0x0
 
     .line 14
     if-nez p1, :cond_2
 
     .line 15
     .line 16
-    return v0
+    return v1
 
     .line 17
     :cond_2
-    iget-object v0, p0, Landroidx/compose/foundation/layout/BoxChildDataElement;->c:Landroidx/compose/ui/e;
+    iget-object v2, p0, Landroidx/compose/foundation/layout/BoxChildDataElement;->a:Landroidx/compose/ui/i;
 
     .line 18
     .line 19
-    iget-object p1, p1, Landroidx/compose/foundation/layout/BoxChildDataElement;->c:Landroidx/compose/ui/e;
+    iget-object v3, p1, Landroidx/compose/foundation/layout/BoxChildDataElement;->a:Landroidx/compose/ui/i;
 
     .line 20
     .line 21
-    invoke-static {v0, p1}, Lrb/h;->d(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-virtual {v2, v3}, Landroidx/compose/ui/i;->equals(Ljava/lang/Object;)Z
 
     .line 22
     .line 23
     .line 24
-    move-result p1
+    move-result v2
 
     .line 25
-    return p1
+    if-eqz v2, :cond_3
+
+    .line 26
+    .line 27
+    iget-boolean v2, p0, Landroidx/compose/foundation/layout/BoxChildDataElement;->b:Z
+
+    .line 28
+    .line 29
+    iget-boolean p1, p1, Landroidx/compose/foundation/layout/BoxChildDataElement;->b:Z
+
+    .line 30
+    .line 31
+    if-ne v2, p1, :cond_3
+
+    .line 32
+    .line 33
+    goto :goto_1
+
+    .line 34
+    :cond_3
+    const/4 v0, 0x0
+
+    .line 35
+    :goto_1
+    return v0
 .end method
 
 .method public final hashCode()I
-    .locals 1
+    .locals 2
 
     .line 1
-    iget-object v0, p0, Landroidx/compose/foundation/layout/BoxChildDataElement;->c:Landroidx/compose/ui/e;
+    iget-object v0, p0, Landroidx/compose/foundation/layout/BoxChildDataElement;->a:Landroidx/compose/ui/i;
 
     .line 2
     .line 3
-    invoke-virtual {v0}, Ljava/lang/Object;->hashCode()I
+    invoke-virtual {v0}, Landroidx/compose/ui/i;->hashCode()I
 
     .line 4
     .line 5
@@ -137,10 +168,30 @@
 
     .line 8
     .line 9
-    add-int/lit16 v0, v0, 0x4d5
+    iget-boolean v1, p0, Landroidx/compose/foundation/layout/BoxChildDataElement;->b:Z
 
     .line 10
     .line 11
+    if-eqz v1, :cond_0
+
+    .line 12
+    .line 13
+    const/16 v1, 0x4cf
+
+    .line 14
+    .line 15
+    goto :goto_0
+
+    .line 16
+    :cond_0
+    const/16 v1, 0x4d5
+
+    .line 17
+    .line 18
+    :goto_0
+    add-int/2addr v0, v1
+
+    .line 19
     return v0
 .end method
 
@@ -148,7 +199,7 @@
     .locals 2
 
     .line 1
-    new-instance v0, Landroidx/compose/foundation/layout/l;
+    new-instance v0, Landroidx/compose/foundation/layout/i;
 
     .line 2
     .line 3
@@ -157,21 +208,22 @@
     .line 4
     .line 5
     .line 6
-    iget-object v1, p0, Landroidx/compose/foundation/layout/BoxChildDataElement;->c:Landroidx/compose/ui/e;
+    iget-object v1, p0, Landroidx/compose/foundation/layout/BoxChildDataElement;->a:Landroidx/compose/ui/i;
 
     .line 7
     .line 8
-    iput-object v1, v0, Landroidx/compose/foundation/layout/l;->p:Landroidx/compose/ui/e;
+    iput-object v1, v0, Landroidx/compose/foundation/layout/i;->p:Landroidx/compose/ui/i;
 
     .line 9
     .line 10
-    const/4 v1, 0x0
+    iget-boolean v1, p0, Landroidx/compose/foundation/layout/BoxChildDataElement;->b:Z
 
     .line 11
-    iput-boolean v1, v0, Landroidx/compose/foundation/layout/l;->q:Z
-
     .line 12
+    iput-boolean v1, v0, Landroidx/compose/foundation/layout/i;->q:Z
+
     .line 13
+    .line 14
     return-object v0
 .end method
 
@@ -179,24 +231,25 @@
     .locals 1
 
     .line 1
-    check-cast p1, Landroidx/compose/foundation/layout/l;
+    check-cast p1, Landroidx/compose/foundation/layout/i;
 
     .line 2
     .line 3
-    iget-object v0, p0, Landroidx/compose/foundation/layout/BoxChildDataElement;->c:Landroidx/compose/ui/e;
+    iget-object v0, p0, Landroidx/compose/foundation/layout/BoxChildDataElement;->a:Landroidx/compose/ui/i;
 
     .line 4
     .line 5
-    iput-object v0, p1, Landroidx/compose/foundation/layout/l;->p:Landroidx/compose/ui/e;
+    iput-object v0, p1, Landroidx/compose/foundation/layout/i;->p:Landroidx/compose/ui/i;
 
     .line 6
     .line 7
-    const/4 v0, 0x0
+    iget-boolean v0, p0, Landroidx/compose/foundation/layout/BoxChildDataElement;->b:Z
 
     .line 8
-    iput-boolean v0, p1, Landroidx/compose/foundation/layout/l;->q:Z
-
     .line 9
+    iput-boolean v0, p1, Landroidx/compose/foundation/layout/i;->q:Z
+
     .line 10
+    .line 11
     return-void
 .end method

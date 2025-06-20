@@ -3,7 +3,7 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lzh/c;
+.implements Lka/c;
 
 
 # annotations
@@ -19,7 +19,7 @@
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "Lkotlin/jvm/internal/Lambda;",
-        "Lzh/c;"
+        "Lka/c;"
     }
 .end annotation
 
@@ -30,7 +30,7 @@
     d2 = {
         "Landroidx/compose/foundation/gestures/o;",
         "it",
-        "Lqh/r;",
+        "LX9/j;",
         "invoke",
         "(Landroidx/compose/foundation/gestures/o;)V",
         "<anonymous>"
@@ -45,18 +45,18 @@
 
 
 # instance fields
-.field final synthetic $$this$scroll:Landroidx/compose/foundation/gestures/x;
+.field final synthetic $$this$scroll:Landroidx/compose/foundation/gestures/z;
 
-.field final synthetic $this_with:Landroidx/compose/foundation/gestures/l0;
+.field final synthetic $this_with:Landroidx/compose/foundation/gestures/N;
 
 
 # direct methods
-.method public constructor <init>(Landroidx/compose/foundation/gestures/x;Landroidx/compose/foundation/gestures/l0;)V
+.method public constructor <init>(Landroidx/compose/foundation/gestures/z;Landroidx/compose/foundation/gestures/N;)V
     .locals 0
 
-    iput-object p1, p0, Landroidx/compose/foundation/gestures/ScrollableNode$drag$2$1$1;->$$this$scroll:Landroidx/compose/foundation/gestures/x;
+    iput-object p1, p0, Landroidx/compose/foundation/gestures/ScrollableNode$drag$2$1$1;->$$this$scroll:Landroidx/compose/foundation/gestures/z;
 
-    iput-object p2, p0, Landroidx/compose/foundation/gestures/ScrollableNode$drag$2$1$1;->$this_with:Landroidx/compose/foundation/gestures/l0;
+    iput-object p2, p0, Landroidx/compose/foundation/gestures/ScrollableNode$drag$2$1$1;->$this_with:Landroidx/compose/foundation/gestures/N;
 
     const/4 p1, 0x1
 
@@ -75,7 +75,7 @@
 
     invoke-virtual {p0, p1}, Landroidx/compose/foundation/gestures/ScrollableNode$drag$2$1$1;->invoke(Landroidx/compose/foundation/gestures/o;)V
 
-    sget-object p1, Lqh/r;->a:Lqh/r;
+    sget-object p1, LX9/j;->a:LX9/j;
 
     return-object p1
 .end method
@@ -83,16 +83,19 @@
 .method public final invoke(Landroidx/compose/foundation/gestures/o;)V
     .locals 6
 
-    iget-object v0, p0, Landroidx/compose/foundation/gestures/ScrollableNode$drag$2$1$1;->$$this$scroll:Landroidx/compose/foundation/gestures/x;
-
-    iget-object v1, p0, Landroidx/compose/foundation/gestures/ScrollableNode$drag$2$1$1;->$this_with:Landroidx/compose/foundation/gestures/l0;
-
     .line 2
-    iget-wide v2, p1, Landroidx/compose/foundation/gestures/o;->a:J
+    iget-object v0, p0, Landroidx/compose/foundation/gestures/ScrollableNode$drag$2$1$1;->$$this$scroll:Landroidx/compose/foundation/gestures/z;
 
     .line 3
-    iget-object p1, v1, Landroidx/compose/foundation/gestures/l0;->d:Landroidx/compose/foundation/gestures/Orientation;
+    iget-object v1, p0, Landroidx/compose/foundation/gestures/ScrollableNode$drag$2$1$1;->$this_with:Landroidx/compose/foundation/gestures/N;
 
+    .line 4
+    iget-wide v2, p1, Landroidx/compose/foundation/gestures/o;->a:J
+
+    .line 5
+    iget-object p1, v1, Landroidx/compose/foundation/gestures/N;->d:Landroidx/compose/foundation/gestures/Orientation;
+
+    .line 6
     sget-object v1, Landroidx/compose/foundation/gestures/Orientation;->Horizontal:Landroidx/compose/foundation/gestures/Orientation;
 
     const/4 v4, 0x1
@@ -101,8 +104,7 @@
 
     if-ne p1, v1, :cond_0
 
-    .line 4
-    invoke-static {v2, v3, v5, v4}, Ln1/c;->a(JFI)J
+    invoke-static {v2, v3, v4, v5}, Lr0/c;->a(JIF)J
 
     move-result-wide v1
 
@@ -111,59 +113,60 @@
     :cond_0
     const/4 p1, 0x2
 
-    invoke-static {v2, v3, v5, p1}, Ln1/c;->a(JFI)J
+    invoke-static {v2, v3, p1, v5}, Lr0/c;->a(JIF)J
 
     move-result-wide v1
 
-    :goto_0
-    check-cast v0, Landroidx/compose/foundation/gestures/k0;
-
-    .line 5
-    iget-object p1, v0, Landroidx/compose/foundation/gestures/k0;->a:Landroidx/compose/foundation/gestures/l0;
-
-    .line 6
-    iput v4, p1, Landroidx/compose/foundation/gestures/l0;->g:I
-
     .line 7
-    iget-object v0, p1, Landroidx/compose/foundation/gestures/l0;->b:Landroidx/compose/foundation/q0;
+    :goto_0
+    check-cast v0, Landroidx/compose/foundation/gestures/M;
+
+    .line 8
+    iget-object p1, v0, Landroidx/compose/foundation/gestures/M;->a:Landroidx/compose/foundation/gestures/N;
+
+    .line 9
+    iput v4, p1, Landroidx/compose/foundation/gestures/N;->g:I
+
+    .line 10
+    iget-object v0, p1, Landroidx/compose/foundation/gestures/N;->b:Landroidx/compose/foundation/O;
 
     if-eqz v0, :cond_2
 
-    .line 8
-    iget-object v3, p1, Landroidx/compose/foundation/gestures/l0;->a:Landroidx/compose/foundation/gestures/i0;
+    .line 11
+    iget-object v3, p1, Landroidx/compose/foundation/gestures/N;->a:Landroidx/compose/foundation/gestures/K;
 
-    invoke-interface {v3}, Landroidx/compose/foundation/gestures/i0;->d()Z
+    invoke-interface {v3}, Landroidx/compose/foundation/gestures/K;->d()Z
 
     move-result v3
 
     if-nez v3, :cond_1
 
-    iget-object v3, p1, Landroidx/compose/foundation/gestures/l0;->a:Landroidx/compose/foundation/gestures/i0;
+    iget-object v3, p1, Landroidx/compose/foundation/gestures/N;->a:Landroidx/compose/foundation/gestures/K;
 
-    invoke-interface {v3}, Landroidx/compose/foundation/gestures/i0;->c()Z
+    invoke-interface {v3}, Landroidx/compose/foundation/gestures/K;->b()Z
 
     move-result v3
 
     if-eqz v3, :cond_2
 
-    .line 9
+    .line 12
     :cond_1
-    iget v3, p1, Landroidx/compose/foundation/gestures/l0;->g:I
+    iget v3, p1, Landroidx/compose/foundation/gestures/N;->g:I
 
-    .line 10
-    iget-object p1, p1, Landroidx/compose/foundation/gestures/l0;->j:Lzh/c;
+    .line 13
+    iget-object p1, p1, Landroidx/compose/foundation/gestures/N;->j:Lka/c;
 
-    .line 11
-    invoke-interface {v0, v1, v2, v3, p1}, Landroidx/compose/foundation/q0;->b(JILzh/c;)J
+    .line 14
+    invoke-interface {v0, v1, v2, v3, p1}, Landroidx/compose/foundation/O;->b(JILka/c;)J
 
     goto :goto_1
 
-    .line 12
+    .line 15
     :cond_2
-    iget-object v0, p1, Landroidx/compose/foundation/gestures/l0;->h:Landroidx/compose/foundation/gestures/a0;
+    iget-object v0, p1, Landroidx/compose/foundation/gestures/N;->h:Landroidx/compose/foundation/gestures/C;
 
-    .line 13
-    invoke-static {p1, v0, v1, v2, v4}, Landroidx/compose/foundation/gestures/l0;->a(Landroidx/compose/foundation/gestures/l0;Landroidx/compose/foundation/gestures/a0;JI)J
+    .line 16
+    invoke-static {p1, v0, v1, v2, v4}, Landroidx/compose/foundation/gestures/N;->a(Landroidx/compose/foundation/gestures/N;Landroidx/compose/foundation/gestures/C;JI)J
 
     :goto_1
     return-void

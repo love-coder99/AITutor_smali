@@ -3,14 +3,14 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lzh/c;
+.implements Lka/c;
 
 
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "Lkotlin/jvm/internal/Lambda;",
-        "Lzh/c;"
+        "Lka/c;"
     }
 .end annotation
 
@@ -19,10 +19,10 @@
         "\u0000\u000c\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0008\u0003\u0010\u0004\u001a\u00020\u0001*\u00020\u0000H\n\u00a2\u0006\u0004\u0008\u0002\u0010\u0003"
     }
     d2 = {
-        "Landroidx/compose/ui/semantics/u;",
-        "Lqh/r;",
+        "Landroidx/compose/ui/semantics/t;",
+        "LX9/j;",
         "invoke",
-        "(Landroidx/compose/ui/semantics/u;)V",
+        "(Landroidx/compose/ui/semantics/t;)V",
         "<anonymous>"
     }
     k = 0x3
@@ -56,26 +56,27 @@
 .method public bridge synthetic invoke(Ljava/lang/Object;)Ljava/lang/Object;
     .locals 0
 
-    .line 3
-    check-cast p1, Landroidx/compose/ui/semantics/u;
+    .line 1
+    check-cast p1, Landroidx/compose/ui/semantics/t;
 
-    invoke-virtual {p0, p1}, Landroidx/compose/ui/semantics/SemanticsNode$emitFakeNodes$fakeNode$1;->invoke(Landroidx/compose/ui/semantics/u;)V
+    invoke-virtual {p0, p1}, Landroidx/compose/ui/semantics/SemanticsNode$emitFakeNodes$fakeNode$1;->invoke(Landroidx/compose/ui/semantics/t;)V
 
-    sget-object p1, Lqh/r;->a:Lqh/r;
+    sget-object p1, LX9/j;->a:LX9/j;
 
     return-object p1
 .end method
 
-.method public final invoke(Landroidx/compose/ui/semantics/u;)V
+.method public final invoke(Landroidx/compose/ui/semantics/t;)V
     .locals 1
 
+    .line 2
     iget-object v0, p0, Landroidx/compose/ui/semantics/SemanticsNode$emitFakeNodes$fakeNode$1;->$nodeRole:Landroidx/compose/ui/semantics/g;
 
-    .line 1
+    .line 3
     iget v0, v0, Landroidx/compose/ui/semantics/g;->a:I
 
-    .line 2
-    invoke-static {p1, v0}, Landroidx/compose/ui/semantics/s;->g(Landroidx/compose/ui/semantics/u;I)V
+    .line 4
+    invoke-static {p1, v0}, Landroidx/compose/ui/semantics/r;->f(Landroidx/compose/ui/semantics/t;I)V
 
     return-void
 .end method

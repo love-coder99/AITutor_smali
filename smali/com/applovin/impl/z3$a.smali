@@ -64,7 +64,7 @@
 .method public a()I
     .locals 1
 
-    .line 1
+    .line 2
     iget v0, p0, Lcom/applovin/impl/z3$a;->c:I
 
     return v0
@@ -73,7 +73,7 @@
 .method public a(Ljava/lang/Object;)Z
     .locals 0
 
-    .line 2
+    .line 1
     instance-of p1, p1, Lcom/applovin/impl/z3$a;
 
     return p1
@@ -82,24 +82,33 @@
 .method public b()I
     .locals 1
 
+    .line 1
     iget v0, p0, Lcom/applovin/impl/z3$a;->d:I
 
+    .line 2
+    .line 3
     return v0
 .end method
 
 .method public c()I
     .locals 1
 
+    .line 1
     iget v0, p0, Lcom/applovin/impl/z3$a;->a:I
 
+    .line 2
+    .line 3
     return v0
 .end method
 
 .method public d()I
     .locals 1
 
+    .line 1
     iget v0, p0, Lcom/applovin/impl/z3$a;->b:I
 
+    .line 2
+    .line 3
     return v0
 .end method
 

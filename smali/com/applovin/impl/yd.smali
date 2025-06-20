@@ -52,10 +52,10 @@
     .line 11
     .line 12
     .line 13
-    const/4 v5, 0x0
+    const/4 v5, 0x1
 
     .line 14
-    const/4 v6, 0x1
+    const/4 v6, 0x0
 
     .line 15
     if-eqz v4, :cond_1
@@ -116,84 +116,88 @@
     .line 35
     .line 36
     .line 37
-    if-eqz v1, :cond_4
+    if-eqz v1, :cond_5
 
     .line 38
     .line 39
-    if-nez v2, :cond_5
+    if-nez v2, :cond_4
 
     .line 40
     .line 41
-    if-nez v3, :cond_5
+    if-nez v3, :cond_4
 
     .line 42
     .line 43
-    if-nez v4, :cond_5
+    if-nez v4, :cond_4
 
     .line 44
     .line 45
-    :cond_4
-    const/4 v5, 0x1
+    goto :goto_4
 
     .line 46
-    :cond_5
-    invoke-static {v5}, Lcom/applovin/impl/b1;->a(Z)V
+    :cond_4
+    const/4 v5, 0x0
 
     .line 47
+    :cond_5
+    :goto_4
+    invoke-static {v5}, Lcom/applovin/impl/b1;->a(Z)V
+
     .line 48
     .line 49
+    .line 50
     move-object v5, p1
 
-    .line 50
+    .line 51
     iput-object v5, v0, Lcom/applovin/impl/yd;->a:Lcom/applovin/impl/ae$a;
 
-    .line 51
     .line 52
+    .line 53
     move-wide v5, p2
 
-    .line 53
+    .line 54
     iput-wide v5, v0, Lcom/applovin/impl/yd;->b:J
 
-    .line 54
     .line 55
+    .line 56
     move-wide v5, p4
 
-    .line 56
+    .line 57
     iput-wide v5, v0, Lcom/applovin/impl/yd;->c:J
 
-    .line 57
     .line 58
+    .line 59
     move-wide v5, p6
 
-    .line 59
+    .line 60
     iput-wide v5, v0, Lcom/applovin/impl/yd;->d:J
 
-    .line 60
     .line 61
+    .line 62
     move-wide/from16 v5, p8
 
-    .line 62
     .line 63
+    .line 64
     iput-wide v5, v0, Lcom/applovin/impl/yd;->e:J
 
-    .line 64
     .line 65
+    .line 66
     iput-boolean v1, v0, Lcom/applovin/impl/yd;->f:Z
 
-    .line 66
     .line 67
+    .line 68
     iput-boolean v2, v0, Lcom/applovin/impl/yd;->g:Z
 
-    .line 68
     .line 69
+    .line 70
     iput-boolean v3, v0, Lcom/applovin/impl/yd;->h:Z
 
-    .line 70
     .line 71
+    .line 72
     iput-boolean v4, v0, Lcom/applovin/impl/yd;->i:Z
 
-    .line 72
     .line 73
+    .line 74
     return-void
 .end method
 

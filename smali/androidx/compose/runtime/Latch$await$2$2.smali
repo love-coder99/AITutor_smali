@@ -3,14 +3,14 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lzh/c;
+.implements Lka/c;
 
 
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "Lkotlin/jvm/internal/Lambda;",
-        "Lzh/c;"
+        "Lka/c;"
     }
 .end annotation
 
@@ -21,7 +21,7 @@
     d2 = {
         "",
         "it",
-        "Lqh/r;",
+        "LX9/j;",
         "invoke",
         "(Ljava/lang/Throwable;)V",
         "<anonymous>"
@@ -36,32 +36,32 @@
 
 
 # instance fields
-.field final synthetic $co:Lkotlinx/coroutines/g;
+.field final synthetic $co:Lkotlinx/coroutines/f;
     .annotation system Ldalvik/annotation/Signature;
         value = {
-            "Lkotlinx/coroutines/g;"
+            "Lkotlinx/coroutines/f;"
         }
     .end annotation
 .end field
 
-.field final synthetic this$0:Landroidx/compose/runtime/z0;
+.field final synthetic this$0:Landroidx/compose/runtime/P;
 
 
 # direct methods
-.method public constructor <init>(Landroidx/compose/runtime/z0;Lkotlinx/coroutines/g;)V
+.method public constructor <init>(Landroidx/compose/runtime/P;Lkotlinx/coroutines/f;)V
     .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
-            "Landroidx/compose/runtime/z0;",
-            "Lkotlinx/coroutines/g;",
+            "Landroidx/compose/runtime/P;",
+            "Lkotlinx/coroutines/f;",
             ")V"
         }
     .end annotation
 
-    iput-object p1, p0, Landroidx/compose/runtime/Latch$await$2$2;->this$0:Landroidx/compose/runtime/z0;
+    iput-object p1, p0, Landroidx/compose/runtime/Latch$await$2$2;->this$0:Landroidx/compose/runtime/P;
 
-    iput-object p2, p0, Landroidx/compose/runtime/Latch$await$2$2;->$co:Lkotlinx/coroutines/g;
+    iput-object p2, p0, Landroidx/compose/runtime/Latch$await$2$2;->$co:Lkotlinx/coroutines/f;
 
     const/4 p1, 0x1
 
@@ -75,12 +75,12 @@
 .method public bridge synthetic invoke(Ljava/lang/Object;)Ljava/lang/Object;
     .locals 0
 
-    .line 6
+    .line 1
     check-cast p1, Ljava/lang/Throwable;
 
     invoke-virtual {p0, p1}, Landroidx/compose/runtime/Latch$await$2$2;->invoke(Ljava/lang/Throwable;)V
 
-    sget-object p1, Lqh/r;->a:Lqh/r;
+    sget-object p1, LX9/j;->a:LX9/j;
 
     return-object p1
 .end method
@@ -88,26 +88,28 @@
 .method public final invoke(Ljava/lang/Throwable;)V
     .locals 2
 
-    iget-object p1, p0, Landroidx/compose/runtime/Latch$await$2$2;->this$0:Landroidx/compose/runtime/z0;
-
-    .line 1
-    iget-object v0, p1, Landroidx/compose/runtime/z0;->a:Ljava/lang/Object;
-
-    iget-object v1, p0, Landroidx/compose/runtime/Latch$await$2$2;->$co:Lkotlinx/coroutines/g;
-
     .line 2
-    monitor-enter v0
+    iget-object p1, p0, Landroidx/compose/runtime/Latch$await$2$2;->this$0:Landroidx/compose/runtime/P;
 
     .line 3
-    :try_start_0
-    iget-object p1, p1, Landroidx/compose/runtime/z0;->b:Ljava/util/List;
+    iget-object v0, p1, Landroidx/compose/runtime/P;->a:Ljava/lang/Object;
 
     .line 4
-    invoke-interface {p1, v1}, Ljava/util/List;->remove(Ljava/lang/Object;)Z
+    iget-object v1, p0, Landroidx/compose/runtime/Latch$await$2$2;->$co:Lkotlinx/coroutines/f;
+
+    .line 5
+    monitor-enter v0
+
+    .line 6
+    :try_start_0
+    iget-object p1, p1, Landroidx/compose/runtime/P;->b:Ljava/util/ArrayList;
+
+    .line 7
+    invoke-virtual {p1, v1}, Ljava/util/ArrayList;->remove(Ljava/lang/Object;)Z
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    .line 5
+    .line 8
     monitor-exit v0
 
     return-void

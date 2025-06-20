@@ -31,6 +31,8 @@
 
 .method public static newBuilder()Lcom/android/billingclient/api/SkuDetailsParams$Builder;
     .locals 2
+    .annotation build Landroidx/annotation/NonNull;
+    .end annotation
 
     new-instance v0, Lcom/android/billingclient/api/SkuDetailsParams$Builder;
 
@@ -61,6 +63,8 @@
 # virtual methods
 .method public getSkuType()Ljava/lang/String;
     .locals 1
+    .annotation build Landroidx/annotation/NonNull;
+    .end annotation
 
     iget-object v0, p0, Lcom/android/billingclient/api/SkuDetailsParams;->zza:Ljava/lang/String;
 
@@ -69,6 +73,9 @@
 
 .method public getSkusList()Ljava/util/List;
     .locals 1
+    .annotation build Landroidx/annotation/NonNull;
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "()",

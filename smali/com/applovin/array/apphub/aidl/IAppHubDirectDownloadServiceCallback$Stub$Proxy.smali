@@ -43,16 +43,22 @@
 .method public asBinder()Landroid/os/IBinder;
     .locals 1
 
+    .line 1
     iget-object v0, p0, Lcom/applovin/array/apphub/aidl/IAppHubDirectDownloadServiceCallback$Stub$Proxy;->mRemote:Landroid/os/IBinder;
 
+    .line 2
+    .line 3
     return-object v0
 .end method
 
 .method public getInterfaceDescriptor()Ljava/lang/String;
     .locals 1
 
+    .line 1
     const-string v0, "com.applovin.array.apphub.aidl.IAppHubDirectDownloadServiceCallback"
 
+    .line 2
+    .line 3
     return-object v0
 .end method
 

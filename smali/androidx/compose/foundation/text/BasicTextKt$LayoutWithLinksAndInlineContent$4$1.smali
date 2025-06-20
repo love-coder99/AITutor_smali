@@ -3,14 +3,14 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lzh/a;
+.implements Lka/a;
 
 
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "Lkotlin/jvm/internal/Lambda;",
-        "Lzh/a;"
+        "Lka/a;"
     }
 .end annotation
 
@@ -35,14 +35,14 @@
 
 
 # instance fields
-.field final synthetic $textScope:Landroidx/compose/foundation/text/k0;
+.field final synthetic $textScope:Landroidx/compose/foundation/text/K;
 
 
 # direct methods
-.method public constructor <init>(Landroidx/compose/foundation/text/k0;)V
+.method public constructor <init>(Landroidx/compose/foundation/text/K;)V
     .locals 0
 
-    iput-object p1, p0, Landroidx/compose/foundation/text/BasicTextKt$LayoutWithLinksAndInlineContent$4$1;->$textScope:Landroidx/compose/foundation/text/k0;
+    iput-object p1, p0, Landroidx/compose/foundation/text/BasicTextKt$LayoutWithLinksAndInlineContent$4$1;->$textScope:Landroidx/compose/foundation/text/K;
 
     const/4 p1, 0x0
 
@@ -56,17 +56,18 @@
 .method public final invoke()Ljava/lang/Boolean;
     .locals 2
 
-    iget-object v0, p0, Landroidx/compose/foundation/text/BasicTextKt$LayoutWithLinksAndInlineContent$4$1;->$textScope:Landroidx/compose/foundation/text/k0;
+    .line 1
+    iget-object v0, p0, Landroidx/compose/foundation/text/BasicTextKt$LayoutWithLinksAndInlineContent$4$1;->$textScope:Landroidx/compose/foundation/text/K;
 
     if-eqz v0, :cond_0
 
-    .line 1
+    .line 2
     new-instance v1, Landroidx/compose/foundation/text/TextLinkScope$shouldMeasureLinks$1;
 
-    invoke-direct {v1, v0}, Landroidx/compose/foundation/text/TextLinkScope$shouldMeasureLinks$1;-><init>(Landroidx/compose/foundation/text/k0;)V
+    invoke-direct {v1, v0}, Landroidx/compose/foundation/text/TextLinkScope$shouldMeasureLinks$1;-><init>(Landroidx/compose/foundation/text/K;)V
 
-    .line 2
-    invoke-interface {v1}, Lzh/a;->invoke()Ljava/lang/Object;
+    .line 3
+    invoke-interface {v1}, Lka/a;->invoke()Ljava/lang/Object;
 
     move-result-object v0
 
@@ -92,7 +93,7 @@
 .method public bridge synthetic invoke()Ljava/lang/Object;
     .locals 1
 
-    .line 3
+    .line 4
     invoke-virtual {p0}, Landroidx/compose/foundation/text/BasicTextKt$LayoutWithLinksAndInlineContent$4$1;->invoke()Ljava/lang/Boolean;
 
     move-result-object v0

@@ -1,5 +1,5 @@
 .class Landroidx/appcompat/widget/AppCompatTextHelper$1;
-.super Le3/j;
+.super Lk1/j;
 .source "SourceFile"
 
 
@@ -63,6 +63,10 @@
 
 .method public onFontRetrieved(Landroid/graphics/Typeface;)V
     .locals 2
+    .param p1    # Landroid/graphics/Typeface;
+        .annotation build Landroidx/annotation/NonNull;
+        .end annotation
+    .end param
 
     .line 1
     sget v0, Landroid/os/Build$VERSION;->SDK_INT:I

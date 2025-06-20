@@ -3,7 +3,7 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lzh/a;
+.implements Lka/a;
 
 
 # annotations
@@ -19,7 +19,7 @@
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "Lkotlin/jvm/internal/Lambda;",
-        "Lzh/a;"
+        "Lka/a;"
     }
 .end annotation
 
@@ -29,7 +29,7 @@
     }
     d2 = {
         "T",
-        "Lqh/r;",
+        "LX9/j;",
         "invoke",
         "()V",
         "<anonymous>"
@@ -83,10 +83,10 @@
 .method public bridge synthetic invoke()Ljava/lang/Object;
     .locals 1
 
-    .line 7
+    .line 1
     invoke-virtual {p0}, Landroidx/work/impl/constraints/controllers/BaseConstraintController$track$1$1;->invoke()V
 
-    sget-object v0, Lqh/r;->a:Lqh/r;
+    sget-object v0, LX9/j;->a:LX9/j;
 
     return-object v0
 .end method
@@ -94,22 +94,26 @@
 .method public final invoke()V
     .locals 4
 
+    .line 2
     iget-object v0, p0, Landroidx/work/impl/constraints/controllers/BaseConstraintController$track$1$1;->this$0:Landroidx/work/impl/constraints/controllers/b;
 
-    .line 1
-    iget-object v0, v0, Landroidx/work/impl/constraints/controllers/b;->a:Lf5/f;
-
-    iget-object v1, p0, Landroidx/work/impl/constraints/controllers/BaseConstraintController$track$1$1;->$listener:Landroidx/work/impl/constraints/controllers/a;
-
-    .line 2
-    iget-object v2, v0, Lf5/f;->c:Ljava/lang/Object;
-
     .line 3
-    monitor-enter v2
+    iget-object v0, v0, Landroidx/work/impl/constraints/controllers/b;->a:LZ1/z;
 
     .line 4
+    iget-object v1, p0, Landroidx/work/impl/constraints/controllers/BaseConstraintController$track$1$1;->$listener:Landroidx/work/impl/constraints/controllers/a;
+
+    .line 5
+    iget-object v2, v0, LZ1/z;->c:Ljava/lang/Object;
+
+    .line 6
+    monitor-enter v2
+
+    .line 7
     :try_start_0
-    iget-object v3, v0, Lf5/f;->d:Ljava/util/LinkedHashSet;
+    iget-object v3, v0, LZ1/z;->d:Ljava/lang/Object;
+
+    check-cast v3, Ljava/util/LinkedHashSet;
 
     invoke-virtual {v3, v1}, Ljava/util/AbstractCollection;->remove(Ljava/lang/Object;)Z
 
@@ -117,7 +121,9 @@
 
     if-eqz v1, :cond_0
 
-    iget-object v1, v0, Lf5/f;->d:Ljava/util/LinkedHashSet;
+    iget-object v1, v0, LZ1/z;->d:Ljava/lang/Object;
+
+    check-cast v1, Ljava/util/LinkedHashSet;
 
     invoke-virtual {v1}, Ljava/util/AbstractCollection;->isEmpty()Z
 
@@ -125,8 +131,8 @@
 
     if-eqz v1, :cond_0
 
-    .line 5
-    invoke-virtual {v0}, Lf5/f;->d()V
+    .line 8
+    invoke-virtual {v0}, LZ1/z;->f()V
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
@@ -137,7 +143,7 @@
 
     goto :goto_1
 
-    .line 6
+    .line 9
     :cond_0
     :goto_0
     monitor-exit v2

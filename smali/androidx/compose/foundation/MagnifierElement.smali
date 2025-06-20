@@ -1,12 +1,12 @@
 .class public final Landroidx/compose/foundation/MagnifierElement;
-.super Landroidx/compose/ui/node/w0;
+.super Landroidx/compose/ui/node/V;
 .source "SourceFile"
 
 
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
-        "Landroidx/compose/ui/node/w0;"
+        "Landroidx/compose/ui/node/V;"
     }
 .end annotation
 
@@ -16,8 +16,8 @@
     }
     d2 = {
         "Landroidx/compose/foundation/MagnifierElement;",
-        "Landroidx/compose/ui/node/w0;",
-        "Landroidx/compose/foundation/j0;",
+        "Landroidx/compose/ui/node/V;",
+        "Landroidx/compose/foundation/H;",
         "foundation_release"
     }
     k = 0x1
@@ -26,33 +26,34 @@
         0x8,
         0x0
     }
+    xi = 0x30
 .end annotation
 
 
 # instance fields
-.field public final c:Lzh/c;
+.field public final a:Lka/c;
 
-.field public final d:Lzh/c;
+.field public final b:Lka/c;
 
-.field public final e:Lzh/c;
+.field public final c:Lka/c;
 
-.field public final f:F
+.field public final d:F
 
-.field public final g:Z
+.field public final e:Z
 
-.field public final h:J
+.field public final f:J
 
-.field public final i:F
+.field public final g:F
 
-.field public final j:F
+.field public final h:F
 
-.field public final k:Z
+.field public final i:Z
 
-.field public final l:Landroidx/compose/foundation/s0;
+.field public final j:Landroidx/compose/foundation/Q;
 
 
 # direct methods
-.method public constructor <init>(Lzh/c;Lzh/c;Lzh/c;FZJFFZLandroidx/compose/foundation/s0;)V
+.method public constructor <init>(Lka/c;Lka/c;Lka/c;FZJFFZLandroidx/compose/foundation/Q;)V
     .locals 0
 
     .line 1
@@ -61,43 +62,43 @@
     .line 2
     .line 3
     .line 4
-    iput-object p1, p0, Landroidx/compose/foundation/MagnifierElement;->c:Lzh/c;
+    iput-object p1, p0, Landroidx/compose/foundation/MagnifierElement;->a:Lka/c;
 
     .line 5
     .line 6
-    iput-object p2, p0, Landroidx/compose/foundation/MagnifierElement;->d:Lzh/c;
+    iput-object p2, p0, Landroidx/compose/foundation/MagnifierElement;->b:Lka/c;
 
     .line 7
     .line 8
-    iput-object p3, p0, Landroidx/compose/foundation/MagnifierElement;->e:Lzh/c;
+    iput-object p3, p0, Landroidx/compose/foundation/MagnifierElement;->c:Lka/c;
 
     .line 9
     .line 10
-    iput p4, p0, Landroidx/compose/foundation/MagnifierElement;->f:F
+    iput p4, p0, Landroidx/compose/foundation/MagnifierElement;->d:F
 
     .line 11
     .line 12
-    iput-boolean p5, p0, Landroidx/compose/foundation/MagnifierElement;->g:Z
+    iput-boolean p5, p0, Landroidx/compose/foundation/MagnifierElement;->e:Z
 
     .line 13
     .line 14
-    iput-wide p6, p0, Landroidx/compose/foundation/MagnifierElement;->h:J
+    iput-wide p6, p0, Landroidx/compose/foundation/MagnifierElement;->f:J
 
     .line 15
     .line 16
-    iput p8, p0, Landroidx/compose/foundation/MagnifierElement;->i:F
+    iput p8, p0, Landroidx/compose/foundation/MagnifierElement;->g:F
 
     .line 17
     .line 18
-    iput p9, p0, Landroidx/compose/foundation/MagnifierElement;->j:F
+    iput p9, p0, Landroidx/compose/foundation/MagnifierElement;->h:F
 
     .line 19
     .line 20
-    iput-boolean p10, p0, Landroidx/compose/foundation/MagnifierElement;->k:Z
+    iput-boolean p10, p0, Landroidx/compose/foundation/MagnifierElement;->i:Z
 
     .line 21
     .line 22
-    iput-object p11, p0, Landroidx/compose/foundation/MagnifierElement;->l:Landroidx/compose/foundation/s0;
+    iput-object p11, p0, Landroidx/compose/foundation/MagnifierElement;->j:Landroidx/compose/foundation/Q;
 
     .line 23
     .line 24
@@ -140,11 +141,11 @@
 
     .line 12
     .line 13
-    iget-object v1, p1, Landroidx/compose/foundation/MagnifierElement;->c:Lzh/c;
+    iget-object v1, p1, Landroidx/compose/foundation/MagnifierElement;->a:Lka/c;
 
     .line 14
     .line 15
-    iget-object v3, p0, Landroidx/compose/foundation/MagnifierElement;->c:Lzh/c;
+    iget-object v3, p0, Landroidx/compose/foundation/MagnifierElement;->a:Lka/c;
 
     .line 16
     .line 17
@@ -156,11 +157,11 @@
 
     .line 20
     :cond_2
-    iget-object v1, p0, Landroidx/compose/foundation/MagnifierElement;->d:Lzh/c;
+    iget-object v1, p0, Landroidx/compose/foundation/MagnifierElement;->b:Lka/c;
 
     .line 21
     .line 22
-    iget-object v3, p1, Landroidx/compose/foundation/MagnifierElement;->d:Lzh/c;
+    iget-object v3, p1, Landroidx/compose/foundation/MagnifierElement;->b:Lka/c;
 
     .line 23
     .line 24
@@ -172,11 +173,11 @@
 
     .line 27
     :cond_3
-    iget v1, p0, Landroidx/compose/foundation/MagnifierElement;->f:F
+    iget v1, p0, Landroidx/compose/foundation/MagnifierElement;->d:F
 
     .line 28
     .line 29
-    iget v3, p1, Landroidx/compose/foundation/MagnifierElement;->f:F
+    iget v3, p1, Landroidx/compose/foundation/MagnifierElement;->d:F
 
     .line 30
     .line 31
@@ -188,11 +189,11 @@
 
     .line 34
     .line 35
-    iget-boolean v1, p0, Landroidx/compose/foundation/MagnifierElement;->g:Z
+    iget-boolean v1, p0, Landroidx/compose/foundation/MagnifierElement;->e:Z
 
     .line 36
     .line 37
-    iget-boolean v3, p1, Landroidx/compose/foundation/MagnifierElement;->g:Z
+    iget-boolean v3, p1, Landroidx/compose/foundation/MagnifierElement;->e:Z
 
     .line 38
     .line 39
@@ -204,11 +205,11 @@
 
     .line 42
     :cond_4
-    iget-wide v3, p0, Landroidx/compose/foundation/MagnifierElement;->h:J
+    iget-wide v3, p0, Landroidx/compose/foundation/MagnifierElement;->f:J
 
     .line 43
     .line 44
-    iget-wide v5, p1, Landroidx/compose/foundation/MagnifierElement;->h:J
+    iget-wide v5, p1, Landroidx/compose/foundation/MagnifierElement;->f:J
 
     .line 45
     .line 46
@@ -220,15 +221,15 @@
 
     .line 49
     .line 50
-    iget v1, p0, Landroidx/compose/foundation/MagnifierElement;->i:F
+    iget v1, p0, Landroidx/compose/foundation/MagnifierElement;->g:F
 
     .line 51
     .line 52
-    iget v3, p1, Landroidx/compose/foundation/MagnifierElement;->i:F
+    iget v3, p1, Landroidx/compose/foundation/MagnifierElement;->g:F
 
     .line 53
     .line 54
-    invoke-static {v1, v3}, Lh2/e;->a(FF)Z
+    invoke-static {v1, v3}, LM0/e;->a(FF)Z
 
     .line 55
     .line 56
@@ -244,15 +245,15 @@
 
     .line 61
     :cond_5
-    iget v1, p0, Landroidx/compose/foundation/MagnifierElement;->j:F
+    iget v1, p0, Landroidx/compose/foundation/MagnifierElement;->h:F
 
     .line 62
     .line 63
-    iget v3, p1, Landroidx/compose/foundation/MagnifierElement;->j:F
+    iget v3, p1, Landroidx/compose/foundation/MagnifierElement;->h:F
 
     .line 64
     .line 65
-    invoke-static {v1, v3}, Lh2/e;->a(FF)Z
+    invoke-static {v1, v3}, LM0/e;->a(FF)Z
 
     .line 66
     .line 67
@@ -268,11 +269,11 @@
 
     .line 72
     :cond_6
-    iget-boolean v1, p0, Landroidx/compose/foundation/MagnifierElement;->k:Z
+    iget-boolean v1, p0, Landroidx/compose/foundation/MagnifierElement;->i:Z
 
     .line 73
     .line 74
-    iget-boolean v3, p1, Landroidx/compose/foundation/MagnifierElement;->k:Z
+    iget-boolean v3, p1, Landroidx/compose/foundation/MagnifierElement;->i:Z
 
     .line 75
     .line 76
@@ -284,11 +285,11 @@
 
     .line 79
     :cond_7
-    iget-object v1, p0, Landroidx/compose/foundation/MagnifierElement;->e:Lzh/c;
+    iget-object v1, p0, Landroidx/compose/foundation/MagnifierElement;->c:Lka/c;
 
     .line 80
     .line 81
-    iget-object v3, p1, Landroidx/compose/foundation/MagnifierElement;->e:Lzh/c;
+    iget-object v3, p1, Landroidx/compose/foundation/MagnifierElement;->c:Lka/c;
 
     .line 82
     .line 83
@@ -300,15 +301,15 @@
 
     .line 86
     :cond_8
-    iget-object v1, p0, Landroidx/compose/foundation/MagnifierElement;->l:Landroidx/compose/foundation/s0;
+    iget-object v1, p0, Landroidx/compose/foundation/MagnifierElement;->j:Landroidx/compose/foundation/Q;
 
     .line 87
     .line 88
-    iget-object p1, p1, Landroidx/compose/foundation/MagnifierElement;->l:Landroidx/compose/foundation/s0;
+    iget-object p1, p1, Landroidx/compose/foundation/MagnifierElement;->j:Landroidx/compose/foundation/Q;
 
     .line 89
     .line 90
-    invoke-static {v1, p1}, Lrb/h;->d(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-virtual {v1, p1}, Ljava/lang/Object;->equals(Ljava/lang/Object;)Z
 
     .line 91
     .line 92
@@ -335,7 +336,7 @@
     .locals 10
 
     .line 1
-    iget-object v0, p0, Landroidx/compose/foundation/MagnifierElement;->c:Lzh/c;
+    iget-object v0, p0, Landroidx/compose/foundation/MagnifierElement;->a:Lka/c;
 
     .line 2
     .line 3
@@ -358,7 +359,7 @@
     const/4 v2, 0x0
 
     .line 12
-    iget-object v3, p0, Landroidx/compose/foundation/MagnifierElement;->d:Lzh/c;
+    iget-object v3, p0, Landroidx/compose/foundation/MagnifierElement;->b:Lka/c;
 
     .line 13
     .line 14
@@ -389,11 +390,11 @@
 
     .line 24
     .line 25
-    iget v3, p0, Landroidx/compose/foundation/MagnifierElement;->f:F
+    iget v3, p0, Landroidx/compose/foundation/MagnifierElement;->d:F
 
     .line 26
     .line 27
-    invoke-static {v3, v0, v1}, Landroid/support/v4/media/session/a;->x(FII)I
+    invoke-static {v3, v0, v1}, Landroidx/appcompat/view/menu/F;->v(FII)I
 
     .line 28
     .line 29
@@ -401,7 +402,7 @@
     move-result v0
 
     .line 31
-    iget-boolean v3, p0, Landroidx/compose/foundation/MagnifierElement;->g:Z
+    iget-boolean v3, p0, Landroidx/compose/foundation/MagnifierElement;->e:Z
 
     .line 32
     .line 33
@@ -441,7 +442,7 @@
 
     .line 48
     .line 49
-    iget-wide v6, p0, Landroidx/compose/foundation/MagnifierElement;->h:J
+    iget-wide v6, p0, Landroidx/compose/foundation/MagnifierElement;->f:J
 
     .line 50
     .line 51
@@ -462,11 +463,11 @@
 
     .line 57
     .line 58
-    iget v0, p0, Landroidx/compose/foundation/MagnifierElement;->i:F
+    iget v0, p0, Landroidx/compose/foundation/MagnifierElement;->g:F
 
     .line 59
     .line 60
-    invoke-static {v0, v3, v1}, Landroid/support/v4/media/session/a;->x(FII)I
+    invoke-static {v0, v3, v1}, Landroidx/appcompat/view/menu/F;->v(FII)I
 
     .line 61
     .line 62
@@ -474,11 +475,11 @@
     move-result v0
 
     .line 64
-    iget v3, p0, Landroidx/compose/foundation/MagnifierElement;->j:F
+    iget v3, p0, Landroidx/compose/foundation/MagnifierElement;->h:F
 
     .line 65
     .line 66
-    invoke-static {v3, v0, v1}, Landroid/support/v4/media/session/a;->x(FII)I
+    invoke-static {v3, v0, v1}, Landroidx/appcompat/view/menu/F;->v(FII)I
 
     .line 67
     .line 68
@@ -486,7 +487,7 @@
     move-result v0
 
     .line 70
-    iget-boolean v3, p0, Landroidx/compose/foundation/MagnifierElement;->k:Z
+    iget-boolean v3, p0, Landroidx/compose/foundation/MagnifierElement;->i:Z
 
     .line 71
     .line 72
@@ -506,7 +507,7 @@
 
     .line 78
     .line 79
-    iget-object v3, p0, Landroidx/compose/foundation/MagnifierElement;->e:Lzh/c;
+    iget-object v3, p0, Landroidx/compose/foundation/MagnifierElement;->c:Lka/c;
 
     .line 80
     .line 81
@@ -530,7 +531,7 @@
 
     .line 89
     .line 90
-    iget-object v1, p0, Landroidx/compose/foundation/MagnifierElement;->l:Landroidx/compose/foundation/s0;
+    iget-object v1, p0, Landroidx/compose/foundation/MagnifierElement;->j:Landroidx/compose/foundation/Q;
 
     .line 91
     .line 92
@@ -552,54 +553,54 @@
     .locals 13
 
     .line 1
-    iget-object v1, p0, Landroidx/compose/foundation/MagnifierElement;->c:Lzh/c;
+    new-instance v12, Landroidx/compose/foundation/H;
 
     .line 2
     .line 3
-    iget-object v2, p0, Landroidx/compose/foundation/MagnifierElement;->d:Lzh/c;
+    iget-object v11, p0, Landroidx/compose/foundation/MagnifierElement;->j:Landroidx/compose/foundation/Q;
 
     .line 4
     .line 5
-    iget v4, p0, Landroidx/compose/foundation/MagnifierElement;->f:F
+    iget-object v1, p0, Landroidx/compose/foundation/MagnifierElement;->a:Lka/c;
 
     .line 6
     .line 7
-    iget-boolean v5, p0, Landroidx/compose/foundation/MagnifierElement;->g:Z
+    iget v8, p0, Landroidx/compose/foundation/MagnifierElement;->g:F
 
     .line 8
     .line 9
-    iget-wide v6, p0, Landroidx/compose/foundation/MagnifierElement;->h:J
+    iget v9, p0, Landroidx/compose/foundation/MagnifierElement;->h:F
 
     .line 10
     .line 11
-    iget v8, p0, Landroidx/compose/foundation/MagnifierElement;->i:F
+    iget-object v2, p0, Landroidx/compose/foundation/MagnifierElement;->b:Lka/c;
 
     .line 12
     .line 13
-    iget v9, p0, Landroidx/compose/foundation/MagnifierElement;->j:F
+    iget-object v3, p0, Landroidx/compose/foundation/MagnifierElement;->c:Lka/c;
 
     .line 14
     .line 15
-    iget-boolean v10, p0, Landroidx/compose/foundation/MagnifierElement;->k:Z
+    iget v4, p0, Landroidx/compose/foundation/MagnifierElement;->d:F
 
     .line 16
     .line 17
-    iget-object v3, p0, Landroidx/compose/foundation/MagnifierElement;->e:Lzh/c;
+    iget-boolean v5, p0, Landroidx/compose/foundation/MagnifierElement;->e:Z
 
     .line 18
     .line 19
-    iget-object v11, p0, Landroidx/compose/foundation/MagnifierElement;->l:Landroidx/compose/foundation/s0;
+    iget-wide v6, p0, Landroidx/compose/foundation/MagnifierElement;->f:J
 
     .line 20
     .line 21
-    new-instance v12, Landroidx/compose/foundation/j0;
+    iget-boolean v10, p0, Landroidx/compose/foundation/MagnifierElement;->i:Z
 
     .line 22
     .line 23
     move-object v0, v12
 
     .line 24
-    invoke-direct/range {v0 .. v11}, Landroidx/compose/foundation/j0;-><init>(Lzh/c;Lzh/c;Lzh/c;FZJFFZLandroidx/compose/foundation/s0;)V
+    invoke-direct/range {v0 .. v11}, Landroidx/compose/foundation/H;-><init>(Lka/c;Lka/c;Lka/c;FZJFFZLandroidx/compose/foundation/Q;)V
 
     .line 25
     .line 26
@@ -619,83 +620,83 @@
 
     .line 4
     .line 5
-    check-cast v1, Landroidx/compose/foundation/j0;
+    check-cast v1, Landroidx/compose/foundation/H;
 
     .line 6
     .line 7
-    iget v2, v1, Landroidx/compose/foundation/j0;->s:F
+    iget v2, v1, Landroidx/compose/foundation/H;->s:F
 
     .line 8
     .line 9
-    iget-wide v3, v1, Landroidx/compose/foundation/j0;->u:J
+    iget-wide v3, v1, Landroidx/compose/foundation/H;->u:J
 
     .line 10
     .line 11
-    iget v5, v1, Landroidx/compose/foundation/j0;->v:F
+    iget v5, v1, Landroidx/compose/foundation/H;->v:F
 
     .line 12
     .line 13
-    iget-boolean v6, v1, Landroidx/compose/foundation/j0;->t:Z
+    iget-boolean v6, v1, Landroidx/compose/foundation/H;->t:Z
 
     .line 14
     .line 15
-    iget v7, v1, Landroidx/compose/foundation/j0;->w:F
+    iget v7, v1, Landroidx/compose/foundation/H;->w:F
 
     .line 16
     .line 17
-    iget-boolean v8, v1, Landroidx/compose/foundation/j0;->x:Z
+    iget-boolean v8, v1, Landroidx/compose/foundation/H;->x:Z
 
     .line 18
     .line 19
-    iget-object v9, v1, Landroidx/compose/foundation/j0;->y:Landroidx/compose/foundation/s0;
+    iget-object v9, v1, Landroidx/compose/foundation/H;->y:Landroidx/compose/foundation/Q;
 
     .line 20
     .line 21
-    iget-object v10, v1, Landroidx/compose/foundation/j0;->z:Landroid/view/View;
+    iget-object v10, v1, Landroidx/compose/foundation/H;->z:Landroid/view/View;
 
     .line 22
     .line 23
-    iget-object v11, v1, Landroidx/compose/foundation/j0;->A:Lh2/b;
+    iget-object v11, v1, Landroidx/compose/foundation/H;->A:LM0/b;
 
     .line 24
     .line 25
-    iget-object v12, v0, Landroidx/compose/foundation/MagnifierElement;->c:Lzh/c;
+    iget-object v12, v0, Landroidx/compose/foundation/MagnifierElement;->a:Lka/c;
 
     .line 26
     .line 27
-    iput-object v12, v1, Landroidx/compose/foundation/j0;->p:Lzh/c;
+    iput-object v12, v1, Landroidx/compose/foundation/H;->p:Lka/c;
 
     .line 28
     .line 29
-    iget-object v12, v0, Landroidx/compose/foundation/MagnifierElement;->d:Lzh/c;
+    iget-object v12, v0, Landroidx/compose/foundation/MagnifierElement;->b:Lka/c;
 
     .line 30
     .line 31
-    iput-object v12, v1, Landroidx/compose/foundation/j0;->q:Lzh/c;
+    iput-object v12, v1, Landroidx/compose/foundation/H;->q:Lka/c;
 
     .line 32
     .line 33
-    iget v12, v0, Landroidx/compose/foundation/MagnifierElement;->f:F
+    iget v12, v0, Landroidx/compose/foundation/MagnifierElement;->d:F
 
     .line 34
     .line 35
-    iput v12, v1, Landroidx/compose/foundation/j0;->s:F
+    iput v12, v1, Landroidx/compose/foundation/H;->s:F
 
     .line 36
     .line 37
-    iget-boolean v13, v0, Landroidx/compose/foundation/MagnifierElement;->g:Z
+    iget-boolean v13, v0, Landroidx/compose/foundation/MagnifierElement;->e:Z
 
     .line 38
     .line 39
-    iput-boolean v13, v1, Landroidx/compose/foundation/j0;->t:Z
+    iput-boolean v13, v1, Landroidx/compose/foundation/H;->t:Z
 
     .line 40
     .line 41
-    iget-wide v14, v0, Landroidx/compose/foundation/MagnifierElement;->h:J
+    iget-wide v14, v0, Landroidx/compose/foundation/MagnifierElement;->f:J
 
     .line 42
     .line 43
-    iput-wide v14, v1, Landroidx/compose/foundation/j0;->u:J
+    iput-wide v14, v1, Landroidx/compose/foundation/H;->u:J
 
     .line 44
     .line 45
@@ -703,11 +704,11 @@
 
     .line 46
     .line 47
-    iget v11, v0, Landroidx/compose/foundation/MagnifierElement;->i:F
+    iget v11, v0, Landroidx/compose/foundation/MagnifierElement;->g:F
 
     .line 48
     .line 49
-    iput v11, v1, Landroidx/compose/foundation/j0;->v:F
+    iput v11, v1, Landroidx/compose/foundation/H;->v:F
 
     .line 50
     .line 51
@@ -715,11 +716,11 @@
 
     .line 52
     .line 53
-    iget v10, v0, Landroidx/compose/foundation/MagnifierElement;->j:F
+    iget v10, v0, Landroidx/compose/foundation/MagnifierElement;->h:F
 
     .line 54
     .line 55
-    iput v10, v1, Landroidx/compose/foundation/j0;->w:F
+    iput v10, v1, Landroidx/compose/foundation/H;->w:F
 
     .line 56
     .line 57
@@ -727,11 +728,11 @@
 
     .line 58
     .line 59
-    iget-boolean v9, v0, Landroidx/compose/foundation/MagnifierElement;->k:Z
+    iget-boolean v9, v0, Landroidx/compose/foundation/MagnifierElement;->i:Z
 
     .line 60
     .line 61
-    iput-boolean v9, v1, Landroidx/compose/foundation/j0;->x:Z
+    iput-boolean v9, v1, Landroidx/compose/foundation/H;->x:Z
 
     .line 62
     .line 63
@@ -739,23 +740,23 @@
 
     .line 64
     .line 65
-    iget-object v8, v0, Landroidx/compose/foundation/MagnifierElement;->e:Lzh/c;
+    iget-object v8, v0, Landroidx/compose/foundation/MagnifierElement;->c:Lka/c;
 
     .line 66
     .line 67
-    iput-object v8, v1, Landroidx/compose/foundation/j0;->r:Lzh/c;
+    iput-object v8, v1, Landroidx/compose/foundation/H;->r:Lka/c;
 
     .line 68
     .line 69
-    iget-object v8, v0, Landroidx/compose/foundation/MagnifierElement;->l:Landroidx/compose/foundation/s0;
+    iget-object v8, v0, Landroidx/compose/foundation/MagnifierElement;->j:Landroidx/compose/foundation/Q;
 
     .line 70
     .line 71
-    iput-object v8, v1, Landroidx/compose/foundation/j0;->y:Landroidx/compose/foundation/s0;
+    iput-object v8, v1, Landroidx/compose/foundation/H;->y:Landroidx/compose/foundation/Q;
 
     .line 72
     .line 73
-    invoke-static {v1}, Lcom/google/android/play/core/appupdate/b;->O(Landroidx/compose/ui/node/j;)Landroid/view/View;
+    invoke-static {v1}, LB/d;->q(Landroidx/compose/ui/node/j;)Landroid/view/View;
 
     .line 74
     .line 75
@@ -767,7 +768,7 @@
 
     .line 78
     .line 79
-    invoke-static {v1}, Lcom/google/android/play/core/appupdate/b;->M(Landroidx/compose/ui/node/j;)Landroidx/compose/ui/node/e0;
+    invoke-static {v1}, Lx0/c;->x(Landroidx/compose/ui/node/j;)Landroidx/compose/ui/node/C;
 
     .line 80
     .line 81
@@ -775,7 +776,7 @@
     move-result-object v0
 
     .line 83
-    iget-object v0, v0, Landroidx/compose/ui/node/e0;->t:Lh2/b;
+    iget-object v0, v0, Landroidx/compose/ui/node/C;->t:LM0/b;
 
     .line 84
     .line 85
@@ -783,7 +784,7 @@
 
     .line 86
     .line 87
-    iget-object v0, v1, Landroidx/compose/foundation/j0;->B:Landroidx/compose/foundation/r0;
+    iget-object v0, v1, Landroidx/compose/foundation/H;->B:Landroidx/compose/foundation/P;
 
     .line 88
     .line 89
@@ -791,7 +792,7 @@
 
     .line 90
     .line 91
-    sget-object v0, Landroidx/compose/foundation/k0;->a:Landroidx/compose/ui/semantics/t;
+    sget-object v0, Landroidx/compose/foundation/I;->a:Landroidx/compose/ui/semantics/s;
 
     .line 92
     .line 93
@@ -835,7 +836,7 @@
 
     .line 111
     :cond_1
-    invoke-interface {v8}, Landroidx/compose/foundation/s0;->a()Z
+    invoke-interface {v8}, Landroidx/compose/foundation/Q;->a()Z
 
     .line 112
     .line 113
@@ -856,7 +857,7 @@
 
     .line 120
     .line 121
-    invoke-static {v11, v5}, Lh2/e;->a(FF)Z
+    invoke-static {v11, v5}, LM0/e;->a(FF)Z
 
     .line 122
     .line 123
@@ -868,7 +869,7 @@
 
     .line 126
     .line 127
-    invoke-static {v10, v7}, Lh2/e;->a(FF)Z
+    invoke-static {v10, v7}, LM0/e;->a(FF)Z
 
     .line 128
     .line 129
@@ -896,7 +897,7 @@
 
     .line 140
     .line 141
-    invoke-static {v8, v0}, Lrb/h;->d(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-virtual {v8, v0}, Ljava/lang/Object;->equals(Ljava/lang/Object;)Z
 
     .line 142
     .line 143
@@ -916,7 +917,7 @@
 
     .line 150
     .line 151
-    invoke-static {v2, v0}, Lrb/h;->d(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-virtual {v2, v0}, Ljava/lang/Object;->equals(Ljava/lang/Object;)Z
 
     .line 152
     .line 153
@@ -936,7 +937,7 @@
 
     .line 160
     .line 161
-    invoke-static {v2, v0}, Lrb/h;->d(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v2, v0}, Lkotlin/jvm/internal/h;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     .line 162
     .line 163
@@ -949,13 +950,13 @@
     .line 166
     .line 167
     :cond_2
-    invoke-virtual {v1}, Landroidx/compose/foundation/j0;->B0()V
+    invoke-virtual {v1}, Landroidx/compose/foundation/H;->z0()V
 
     .line 168
     .line 169
     .line 170
     :cond_3
-    invoke-virtual {v1}, Landroidx/compose/foundation/j0;->C0()V
+    invoke-virtual {v1}, Landroidx/compose/foundation/H;->A0()V
 
     .line 171
     .line 172

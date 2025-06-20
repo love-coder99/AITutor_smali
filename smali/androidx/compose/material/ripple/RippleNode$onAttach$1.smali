@@ -3,25 +3,35 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lzh/e;
+.implements Lka/e;
 
 
 # annotations
+.annotation runtime Lca/c;
+    c = "androidx.compose.material.ripple.RippleNode$onAttach$1"
+    f = "Ripple.kt"
+    l = {
+        0x17a
+    }
+    m = "invokeSuspend"
+.end annotation
+
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "Lkotlin/coroutines/jvm/internal/SuspendLambda;",
-        "Lzh/e;"
+        "Lka/e;"
     }
 .end annotation
 
 .annotation runtime Lkotlin/Metadata;
     d1 = {
-        "\u0000\n\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\u0010\u0002\u001a\u00020\u0001*\u00020\u0000H\u008a@"
+        "\u0000\u000c\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0008\u0002\u0010\u0002\u001a\u00020\u0001*\u00020\u0000H\u008a@\u00a2\u0006\u0004\u0008\u0002\u0010\u0003"
     }
     d2 = {
-        "Lkotlinx/coroutines/w;",
-        "Lqh/r;",
-        "<anonymous>"
+        "Lkotlinx/coroutines/u;",
+        "LX9/j;",
+        "<anonymous>",
+        "(Lkotlinx/coroutines/u;)V"
     }
     k = 0x3
     mv = {
@@ -31,31 +41,22 @@
     }
 .end annotation
 
-.annotation runtime Lth/c;
-    c = "androidx.compose.material.ripple.RippleNode$onAttach$1"
-    f = "Ripple.kt"
-    l = {
-        0x17a
-    }
-    m = "invokeSuspend"
-.end annotation
-
 
 # instance fields
 .field private synthetic L$0:Ljava/lang/Object;
 
 .field label:I
 
-.field final synthetic this$0:Landroidx/compose/material/ripple/p;
+.field final synthetic this$0:Landroidx/compose/material/ripple/n;
 
 
 # direct methods
-.method public constructor <init>(Landroidx/compose/material/ripple/p;Lkotlin/coroutines/Continuation;)V
+.method public constructor <init>(Landroidx/compose/material/ripple/n;Lkotlin/coroutines/Continuation;)V
     .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
-            "Landroidx/compose/material/ripple/p;",
+            "Landroidx/compose/material/ripple/n;",
             "Lkotlin/coroutines/Continuation<",
             "-",
             "Landroidx/compose/material/ripple/RippleNode$onAttach$1;",
@@ -63,7 +64,7 @@
         }
     .end annotation
 
-    iput-object p1, p0, Landroidx/compose/material/ripple/RippleNode$onAttach$1;->this$0:Landroidx/compose/material/ripple/p;
+    iput-object p1, p0, Landroidx/compose/material/ripple/RippleNode$onAttach$1;->this$0:Landroidx/compose/material/ripple/n;
 
     const/4 p1, 0x2
 
@@ -83,16 +84,16 @@
             "Lkotlin/coroutines/Continuation<",
             "*>;)",
             "Lkotlin/coroutines/Continuation<",
-            "Lqh/r;",
+            "LX9/j;",
             ">;"
         }
     .end annotation
 
     new-instance v0, Landroidx/compose/material/ripple/RippleNode$onAttach$1;
 
-    iget-object v1, p0, Landroidx/compose/material/ripple/RippleNode$onAttach$1;->this$0:Landroidx/compose/material/ripple/p;
+    iget-object v1, p0, Landroidx/compose/material/ripple/RippleNode$onAttach$1;->this$0:Landroidx/compose/material/ripple/n;
 
-    invoke-direct {v0, v1, p2}, Landroidx/compose/material/ripple/RippleNode$onAttach$1;-><init>(Landroidx/compose/material/ripple/p;Lkotlin/coroutines/Continuation;)V
+    invoke-direct {v0, v1, p2}, Landroidx/compose/material/ripple/RippleNode$onAttach$1;-><init>(Landroidx/compose/material/ripple/n;Lkotlin/coroutines/Continuation;)V
 
     iput-object p1, v0, Landroidx/compose/material/ripple/RippleNode$onAttach$1;->L$0:Ljava/lang/Object;
 
@@ -103,26 +104,26 @@
     .locals 0
 
     .line 1
-    check-cast p1, Lkotlinx/coroutines/w;
+    check-cast p1, Lkotlinx/coroutines/u;
 
     check-cast p2, Lkotlin/coroutines/Continuation;
 
-    invoke-virtual {p0, p1, p2}, Landroidx/compose/material/ripple/RippleNode$onAttach$1;->invoke(Lkotlinx/coroutines/w;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
+    invoke-virtual {p0, p1, p2}, Landroidx/compose/material/ripple/RippleNode$onAttach$1;->invoke(Lkotlinx/coroutines/u;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
 
     move-result-object p1
 
     return-object p1
 .end method
 
-.method public final invoke(Lkotlinx/coroutines/w;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
+.method public final invoke(Lkotlinx/coroutines/u;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
     .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
-            "Lkotlinx/coroutines/w;",
+            "Lkotlinx/coroutines/u;",
             "Lkotlin/coroutines/Continuation<",
             "-",
-            "Lqh/r;",
+            "LX9/j;",
             ">;)",
             "Ljava/lang/Object;"
         }
@@ -135,7 +136,7 @@
 
     check-cast p1, Landroidx/compose/material/ripple/RippleNode$onAttach$1;
 
-    sget-object p2, Lqh/r;->a:Lqh/r;
+    sget-object p2, LX9/j;->a:LX9/j;
 
     invoke-virtual {p1, p2}, Landroidx/compose/material/ripple/RippleNode$onAttach$1;->invokeSuspend(Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -202,15 +203,15 @@
 
     .line 26
     .line 27
-    check-cast p1, Lkotlinx/coroutines/w;
+    check-cast p1, Lkotlinx/coroutines/u;
 
     .line 28
     .line 29
-    iget-object v1, p0, Landroidx/compose/material/ripple/RippleNode$onAttach$1;->this$0:Landroidx/compose/material/ripple/p;
+    iget-object v1, p0, Landroidx/compose/material/ripple/RippleNode$onAttach$1;->this$0:Landroidx/compose/material/ripple/n;
 
     .line 30
     .line 31
-    iget-object v3, v1, Landroidx/compose/material/ripple/p;->p:Landroidx/compose/foundation/interaction/k;
+    iget-object v3, v1, Landroidx/compose/material/ripple/n;->p:Landroidx/compose/foundation/interaction/k;
 
     .line 32
     .line 33
@@ -218,7 +219,7 @@
 
     .line 34
     .line 35
-    iget-object v3, v3, Landroidx/compose/foundation/interaction/m;->a:Lkotlinx/coroutines/flow/m0;
+    iget-object v3, v3, Landroidx/compose/foundation/interaction/m;->a:Lkotlinx/coroutines/flow/K;
 
     .line 36
     .line 37
@@ -226,7 +227,7 @@
 
     .line 38
     .line 39
-    const/4 v5, 0x3
+    const/4 v5, 0x2
 
     .line 40
     invoke-direct {v4, v1, v5, p1}, Landroidx/compose/foundation/interaction/f;-><init>(Ljava/lang/Object;ILjava/lang/Object;)V
@@ -243,7 +244,7 @@
     .line 46
     .line 47
     .line 48
-    invoke-static {v3, v4, p0}, Lkotlinx/coroutines/flow/m0;->m(Lkotlinx/coroutines/flow/m0;Lkotlinx/coroutines/flow/i;Lkotlin/coroutines/Continuation;)Lkotlin/coroutines/intrinsics/CoroutineSingletons;
+    invoke-static {v3, v4, p0}, Lkotlinx/coroutines/flow/K;->m(Lkotlinx/coroutines/flow/K;Lkotlinx/coroutines/flow/g;Lkotlin/coroutines/Continuation;)Lkotlin/coroutines/intrinsics/CoroutineSingletons;
 
     .line 49
     .line 50
@@ -260,7 +261,7 @@
     .line 55
     :cond_2
     :goto_0
-    sget-object p1, Lqh/r;->a:Lqh/r;
+    sget-object p1, LX9/j;->a:LX9/j;
 
     .line 56
     .line 57

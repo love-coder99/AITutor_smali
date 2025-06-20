@@ -7,12 +7,16 @@
 .method public constructor <init>()V
     .locals 0
 
+    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
+    .line 2
+    .line 3
+    .line 4
     return-void
 .end method
 
-.method public static read(Lx4/a;)Landroidx/media/AudioAttributesImplApi21;
+.method public static read(Lr2/a;)Landroidx/media/AudioAttributesImplApi21;
     .locals 3
 
     .line 1
@@ -32,7 +36,7 @@
     const/4 v2, 0x1
 
     .line 9
-    invoke-virtual {p0, v1, v2}, Lx4/a;->g(Landroid/os/Parcelable;I)Landroid/os/Parcelable;
+    invoke-virtual {p0, v1, v2}, Lr2/a;->g(Landroid/os/Parcelable;I)Landroid/os/Parcelable;
 
     .line 10
     .line 11
@@ -55,7 +59,7 @@
     const/4 v2, 0x2
 
     .line 20
-    invoke-virtual {p0, v1, v2}, Lx4/a;->f(II)I
+    invoke-virtual {p0, v1, v2}, Lr2/a;->f(II)I
 
     .line 21
     .line 22
@@ -70,7 +74,7 @@
     return-object v0
 .end method
 
-.method public static write(Landroidx/media/AudioAttributesImplApi21;Lx4/a;)V
+.method public static write(Landroidx/media/AudioAttributesImplApi21;Lr2/a;)V
     .locals 3
 
     .line 1
@@ -86,7 +90,7 @@
     const/4 v1, 0x1
 
     .line 7
-    invoke-virtual {p1, v1}, Lx4/a;->i(I)V
+    invoke-virtual {p1, v1}, Lr2/a;->i(I)V
 
     .line 8
     .line 9
@@ -94,11 +98,11 @@
     move-object v1, p1
 
     .line 11
-    check-cast v1, Lx4/b;
+    check-cast v1, Lr2/b;
 
     .line 12
     .line 13
-    iget-object v1, v1, Lx4/b;->e:Landroid/os/Parcel;
+    iget-object v1, v1, Lr2/b;->e:Landroid/os/Parcel;
 
     .line 14
     .line 15
@@ -117,7 +121,7 @@
     const/4 v0, 0x2
 
     .line 22
-    invoke-virtual {p1, p0, v0}, Lx4/a;->j(II)V
+    invoke-virtual {p1, p0, v0}, Lr2/a;->j(II)V
 
     .line 23
     .line 24

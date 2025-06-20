@@ -4,6 +4,9 @@
 
 
 # annotations
+.annotation build Lcom/android/billingclient/api/zzh;
+.end annotation
+
 .annotation system Ldalvik/annotation/EnclosingClass;
     value = Lcom/android/billingclient/api/GetBillingConfigParams;
 .end annotation
@@ -37,6 +40,8 @@
 # virtual methods
 .method public build()Lcom/android/billingclient/api/GetBillingConfigParams;
     .locals 2
+    .annotation build Landroidx/annotation/NonNull;
+    .end annotation
 
     new-instance v0, Lcom/android/billingclient/api/GetBillingConfigParams;
 

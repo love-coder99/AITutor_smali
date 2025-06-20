@@ -1,31 +1,28 @@
-.class public interface abstract Lh1/c;
-.super Ljava/lang/Object;
+.class public final LH1/c;
+.super LD6/f;
 .source "SourceFile"
-
-# interfaces
-.implements Lh1/b;
-.implements Ljava/util/Collection;
-.implements Lai/a;
 
 
 # virtual methods
-.method public abstract W(Lzh/c;)Lh1/c;
-.end method
+.method public final L(Landroid/content/pm/PackageManager;Ljava/lang/String;)[Landroid/content/pm/Signature;
+    .locals 1
 
-.method public abstract add(ILjava/lang/Object;)Lh1/c;
-.end method
+    .line 1
+    const/16 v0, 0x40
 
-.method public abstract add(Ljava/lang/Object;)Lh1/c;
-.end method
+    .line 2
+    .line 3
+    invoke-virtual {p1, p2, v0}, Landroid/content/pm/PackageManager;->getPackageInfo(Ljava/lang/String;I)Landroid/content/pm/PackageInfo;
 
-.method public abstract addAll(Ljava/util/Collection;)Lh1/c;
-.end method
+    .line 4
+    .line 5
+    .line 6
+    move-result-object p1
 
-.method public abstract s(I)Lh1/c;
-.end method
+    .line 7
+    iget-object p1, p1, Landroid/content/pm/PackageInfo;->signatures:[Landroid/content/pm/Signature;
 
-.method public abstract set(ILjava/lang/Object;)Lh1/c;
-.end method
-
-.method public abstract u()Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableList/f;
+    .line 8
+    .line 9
+    return-object p1
 .end method

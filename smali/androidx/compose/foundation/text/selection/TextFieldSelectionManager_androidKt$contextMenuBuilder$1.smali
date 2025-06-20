@@ -3,14 +3,14 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lzh/c;
+.implements Lka/c;
 
 
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "Lkotlin/jvm/internal/Lambda;",
-        "Lzh/c;"
+        "Lka/c;"
     }
 .end annotation
 
@@ -20,7 +20,7 @@
     }
     d2 = {
         "Landroidx/compose/foundation/contextmenu/e;",
-        "Lqh/r;",
+        "LX9/j;",
         "invoke",
         "(Landroidx/compose/foundation/contextmenu/e;)V",
         "<anonymous>"
@@ -37,14 +37,14 @@
 # instance fields
 .field final synthetic $contextMenuState:Landroidx/compose/foundation/contextmenu/j;
 
-.field final synthetic $this_contextMenuBuilder:Landroidx/compose/foundation/text/selection/a0;
+.field final synthetic $this_contextMenuBuilder:Landroidx/compose/foundation/text/selection/x;
 
 
 # direct methods
-.method public constructor <init>(Landroidx/compose/foundation/text/selection/a0;Landroidx/compose/foundation/contextmenu/j;)V
+.method public constructor <init>(Landroidx/compose/foundation/text/selection/x;Landroidx/compose/foundation/contextmenu/j;)V
     .locals 0
 
-    iput-object p1, p0, Landroidx/compose/foundation/text/selection/TextFieldSelectionManager_androidKt$contextMenuBuilder$1;->$this_contextMenuBuilder:Landroidx/compose/foundation/text/selection/a0;
+    iput-object p1, p0, Landroidx/compose/foundation/text/selection/TextFieldSelectionManager_androidKt$contextMenuBuilder$1;->$this_contextMenuBuilder:Landroidx/compose/foundation/text/selection/x;
 
     iput-object p2, p0, Landroidx/compose/foundation/text/selection/TextFieldSelectionManager_androidKt$contextMenuBuilder$1;->$contextMenuState:Landroidx/compose/foundation/contextmenu/j;
 
@@ -65,7 +65,7 @@
 
     invoke-virtual {p0, p1}, Landroidx/compose/foundation/text/selection/TextFieldSelectionManager_androidKt$contextMenuBuilder$1;->invoke(Landroidx/compose/foundation/contextmenu/e;)V
 
-    sget-object p1, Lqh/r;->a:Lqh/r;
+    sget-object p1, LX9/j;->a:LX9/j;
 
     return-object p1
 .end method
@@ -73,43 +73,45 @@
 .method public final invoke(Landroidx/compose/foundation/contextmenu/e;)V
     .locals 8
 
-    iget-object v0, p0, Landroidx/compose/foundation/text/selection/TextFieldSelectionManager_androidKt$contextMenuBuilder$1;->$this_contextMenuBuilder:Landroidx/compose/foundation/text/selection/a0;
-
     .line 2
-    iget-object v1, v0, Landroidx/compose/foundation/text/selection/a0;->f:Landroidx/compose/ui/text/input/r0;
+    iget-object v0, p0, Landroidx/compose/foundation/text/selection/TextFieldSelectionManager_androidKt$contextMenuBuilder$1;->$this_contextMenuBuilder:Landroidx/compose/foundation/text/selection/x;
 
     .line 3
-    invoke-virtual {v0}, Landroidx/compose/foundation/text/selection/a0;->l()Landroidx/compose/ui/text/input/h0;
+    iget-object v1, v0, Landroidx/compose/foundation/text/selection/x;->f:Landroidx/compose/ui/text/input/M;
+
+    .line 4
+    invoke-virtual {v0}, Landroidx/compose/foundation/text/selection/x;->k()Landroidx/compose/ui/text/input/C;
 
     move-result-object v0
 
-    .line 4
-    iget-wide v0, v0, Landroidx/compose/ui/text/input/h0;->b:J
-
     .line 5
-    invoke-static {v0, v1}, Landroidx/compose/ui/text/h0;->b(J)Z
+    iget-wide v0, v0, Landroidx/compose/ui/text/input/C;->b:J
+
+    .line 6
+    invoke-static {v0, v1}, Landroidx/compose/ui/text/H;->b(J)Z
 
     move-result v0
 
-    const/4 v1, 0x1
-
-    xor-int/2addr v0, v1
-
-    iget-object v2, p0, Landroidx/compose/foundation/text/selection/TextFieldSelectionManager_androidKt$contextMenuBuilder$1;->$contextMenuState:Landroidx/compose/foundation/contextmenu/j;
-
-    sget-object v3, Landroidx/compose/foundation/text/TextContextMenuItems;->Cut:Landroidx/compose/foundation/text/TextContextMenuItems;
-
-    const/4 v4, 0x0
-
-    if-eqz v0, :cond_0
-
-    iget-object v5, p0, Landroidx/compose/foundation/text/selection/TextFieldSelectionManager_androidKt$contextMenuBuilder$1;->$this_contextMenuBuilder:Landroidx/compose/foundation/text/selection/a0;
-
-    .line 6
-    iget-object v5, v5, Landroidx/compose/foundation/text/selection/a0;->k:Landroidx/compose/runtime/ParcelableSnapshotMutableState;
-
     .line 7
-    invoke-virtual {v5}, Landroidx/compose/runtime/t2;->getValue()Ljava/lang/Object;
+    iget-object v1, p0, Landroidx/compose/foundation/text/selection/TextFieldSelectionManager_androidKt$contextMenuBuilder$1;->$contextMenuState:Landroidx/compose/foundation/contextmenu/j;
+
+    .line 8
+    sget-object v2, Landroidx/compose/foundation/text/TextContextMenuItems;->Cut:Landroidx/compose/foundation/text/TextContextMenuItems;
+
+    const/4 v3, 0x0
+
+    const/4 v4, 0x1
+
+    if-nez v0, :cond_0
+
+    .line 9
+    iget-object v5, p0, Landroidx/compose/foundation/text/selection/TextFieldSelectionManager_androidKt$contextMenuBuilder$1;->$this_contextMenuBuilder:Landroidx/compose/foundation/text/selection/x;
+
+    .line 10
+    iget-object v5, v5, Landroidx/compose/foundation/text/selection/x;->k:Landroidx/compose/runtime/ParcelableSnapshotMutableState;
+
+    .line 11
+    invoke-virtual {v5}, Landroidx/compose/runtime/ParcelableSnapshotMutableState;->getValue()Ljava/lang/Object;
 
     move-result-object v5
 
@@ -128,162 +130,180 @@
     :cond_0
     const/4 v5, 0x0
 
-    :goto_0
-    iget-object v6, p0, Landroidx/compose/foundation/text/selection/TextFieldSelectionManager_androidKt$contextMenuBuilder$1;->$this_contextMenuBuilder:Landroidx/compose/foundation/text/selection/a0;
-
-    .line 8
-    new-instance v7, Landroidx/compose/foundation/text/ContextMenu_androidKt$TextItem$1;
-
-    invoke-direct {v7, v3}, Landroidx/compose/foundation/text/ContextMenu_androidKt$TextItem$1;-><init>(Landroidx/compose/foundation/text/TextContextMenuItems;)V
-
-    new-instance v3, Landroidx/compose/foundation/text/selection/TextFieldSelectionManager_androidKt$contextMenuBuilder$1$invoke$$inlined$TextItem$1;
-
-    invoke-direct {v3, v2, v6}, Landroidx/compose/foundation/text/selection/TextFieldSelectionManager_androidKt$contextMenuBuilder$1$invoke$$inlined$TextItem$1;-><init>(Landroidx/compose/foundation/contextmenu/j;Landroidx/compose/foundation/text/selection/a0;)V
-
-    invoke-static {p1, v7, v5, v3}, Landroidx/compose/foundation/contextmenu/e;->b(Landroidx/compose/foundation/contextmenu/e;Landroidx/compose/foundation/text/ContextMenu_androidKt$TextItem$1;ZLzh/a;)V
-
-    iget-object v2, p0, Landroidx/compose/foundation/text/selection/TextFieldSelectionManager_androidKt$contextMenuBuilder$1;->$contextMenuState:Landroidx/compose/foundation/contextmenu/j;
-
-    sget-object v3, Landroidx/compose/foundation/text/TextContextMenuItems;->Copy:Landroidx/compose/foundation/text/TextContextMenuItems;
-
-    iget-object v5, p0, Landroidx/compose/foundation/text/selection/TextFieldSelectionManager_androidKt$contextMenuBuilder$1;->$this_contextMenuBuilder:Landroidx/compose/foundation/text/selection/a0;
-
-    .line 9
-    new-instance v6, Landroidx/compose/foundation/text/ContextMenu_androidKt$TextItem$1;
-
-    invoke-direct {v6, v3}, Landroidx/compose/foundation/text/ContextMenu_androidKt$TextItem$1;-><init>(Landroidx/compose/foundation/text/TextContextMenuItems;)V
-
-    new-instance v3, Landroidx/compose/foundation/text/selection/TextFieldSelectionManager_androidKt$contextMenuBuilder$1$invoke$$inlined$TextItem$2;
-
-    invoke-direct {v3, v2, v5}, Landroidx/compose/foundation/text/selection/TextFieldSelectionManager_androidKt$contextMenuBuilder$1$invoke$$inlined$TextItem$2;-><init>(Landroidx/compose/foundation/contextmenu/j;Landroidx/compose/foundation/text/selection/a0;)V
-
-    invoke-static {p1, v6, v0, v3}, Landroidx/compose/foundation/contextmenu/e;->b(Landroidx/compose/foundation/contextmenu/e;Landroidx/compose/foundation/text/ContextMenu_androidKt$TextItem$1;ZLzh/a;)V
-
-    iget-object v0, p0, Landroidx/compose/foundation/text/selection/TextFieldSelectionManager_androidKt$contextMenuBuilder$1;->$contextMenuState:Landroidx/compose/foundation/contextmenu/j;
-
-    sget-object v2, Landroidx/compose/foundation/text/TextContextMenuItems;->Paste:Landroidx/compose/foundation/text/TextContextMenuItems;
-
-    iget-object v3, p0, Landroidx/compose/foundation/text/selection/TextFieldSelectionManager_androidKt$contextMenuBuilder$1;->$this_contextMenuBuilder:Landroidx/compose/foundation/text/selection/a0;
-
-    .line 10
-    iget-object v3, v3, Landroidx/compose/foundation/text/selection/a0;->k:Landroidx/compose/runtime/ParcelableSnapshotMutableState;
-
-    .line 11
-    invoke-virtual {v3}, Landroidx/compose/runtime/t2;->getValue()Ljava/lang/Object;
-
-    move-result-object v3
-
-    check-cast v3, Ljava/lang/Boolean;
-
-    invoke-virtual {v3}, Ljava/lang/Boolean;->booleanValue()Z
-
-    move-result v3
-
-    if-eqz v3, :cond_1
-
-    iget-object v3, p0, Landroidx/compose/foundation/text/selection/TextFieldSelectionManager_androidKt$contextMenuBuilder$1;->$this_contextMenuBuilder:Landroidx/compose/foundation/text/selection/a0;
-
     .line 12
-    iget-object v3, v3, Landroidx/compose/foundation/text/selection/a0;->g:Landroidx/compose/ui/platform/g1;
-
-    if-eqz v3, :cond_1
-
-    check-cast v3, Landroidx/compose/ui/platform/j;
+    :goto_0
+    iget-object v6, p0, Landroidx/compose/foundation/text/selection/TextFieldSelectionManager_androidKt$contextMenuBuilder$1;->$this_contextMenuBuilder:Landroidx/compose/foundation/text/selection/x;
 
     .line 13
-    iget-object v3, v3, Landroidx/compose/ui/platform/j;->a:Landroid/content/ClipboardManager;
+    new-instance v7, Landroidx/compose/foundation/text/ContextMenu_androidKt$TextItem$1;
 
-    invoke-virtual {v3}, Landroid/content/ClipboardManager;->getPrimaryClipDescription()Landroid/content/ClipDescription;
+    invoke-direct {v7, v2}, Landroidx/compose/foundation/text/ContextMenu_androidKt$TextItem$1;-><init>(Landroidx/compose/foundation/text/TextContextMenuItems;)V
 
-    move-result-object v3
+    new-instance v2, Landroidx/compose/foundation/text/selection/TextFieldSelectionManager_androidKt$contextMenuBuilder$1$invoke$$inlined$TextItem$1;
 
-    if-eqz v3, :cond_1
+    invoke-direct {v2, v1, v6}, Landroidx/compose/foundation/text/selection/TextFieldSelectionManager_androidKt$contextMenuBuilder$1$invoke$$inlined$TextItem$1;-><init>(Landroidx/compose/foundation/contextmenu/j;Landroidx/compose/foundation/text/selection/x;)V
 
-    const-string v5, "text/*"
-
-    invoke-virtual {v3, v5}, Landroid/content/ClipDescription;->hasMimeType(Ljava/lang/String;)Z
-
-    move-result v3
-
-    if-ne v3, v1, :cond_1
-
-    const/4 v3, 0x1
-
-    goto :goto_1
-
-    :cond_1
-    const/4 v3, 0x0
-
-    :goto_1
-    iget-object v5, p0, Landroidx/compose/foundation/text/selection/TextFieldSelectionManager_androidKt$contextMenuBuilder$1;->$this_contextMenuBuilder:Landroidx/compose/foundation/text/selection/a0;
+    invoke-static {p1, v7, v5, v2}, Landroidx/compose/foundation/contextmenu/e;->b(Landroidx/compose/foundation/contextmenu/e;Landroidx/compose/foundation/text/ContextMenu_androidKt$TextItem$1;ZLka/a;)V
 
     .line 14
+    iget-object v1, p0, Landroidx/compose/foundation/text/selection/TextFieldSelectionManager_androidKt$contextMenuBuilder$1;->$contextMenuState:Landroidx/compose/foundation/contextmenu/j;
+
+    .line 15
+    sget-object v2, Landroidx/compose/foundation/text/TextContextMenuItems;->Copy:Landroidx/compose/foundation/text/TextContextMenuItems;
+
+    xor-int/2addr v0, v4
+
+    .line 16
+    iget-object v5, p0, Landroidx/compose/foundation/text/selection/TextFieldSelectionManager_androidKt$contextMenuBuilder$1;->$this_contextMenuBuilder:Landroidx/compose/foundation/text/selection/x;
+
+    .line 17
     new-instance v6, Landroidx/compose/foundation/text/ContextMenu_androidKt$TextItem$1;
 
     invoke-direct {v6, v2}, Landroidx/compose/foundation/text/ContextMenu_androidKt$TextItem$1;-><init>(Landroidx/compose/foundation/text/TextContextMenuItems;)V
 
-    new-instance v2, Landroidx/compose/foundation/text/selection/TextFieldSelectionManager_androidKt$contextMenuBuilder$1$invoke$$inlined$TextItem$3;
+    new-instance v2, Landroidx/compose/foundation/text/selection/TextFieldSelectionManager_androidKt$contextMenuBuilder$1$invoke$$inlined$TextItem$2;
 
-    invoke-direct {v2, v0, v5}, Landroidx/compose/foundation/text/selection/TextFieldSelectionManager_androidKt$contextMenuBuilder$1$invoke$$inlined$TextItem$3;-><init>(Landroidx/compose/foundation/contextmenu/j;Landroidx/compose/foundation/text/selection/a0;)V
+    invoke-direct {v2, v1, v5}, Landroidx/compose/foundation/text/selection/TextFieldSelectionManager_androidKt$contextMenuBuilder$1$invoke$$inlined$TextItem$2;-><init>(Landroidx/compose/foundation/contextmenu/j;Landroidx/compose/foundation/text/selection/x;)V
 
-    invoke-static {p1, v6, v3, v2}, Landroidx/compose/foundation/contextmenu/e;->b(Landroidx/compose/foundation/contextmenu/e;Landroidx/compose/foundation/text/ContextMenu_androidKt$TextItem$1;ZLzh/a;)V
-
-    iget-object v0, p0, Landroidx/compose/foundation/text/selection/TextFieldSelectionManager_androidKt$contextMenuBuilder$1;->$contextMenuState:Landroidx/compose/foundation/contextmenu/j;
-
-    sget-object v2, Landroidx/compose/foundation/text/TextContextMenuItems;->SelectAll:Landroidx/compose/foundation/text/TextContextMenuItems;
-
-    iget-object v3, p0, Landroidx/compose/foundation/text/selection/TextFieldSelectionManager_androidKt$contextMenuBuilder$1;->$this_contextMenuBuilder:Landroidx/compose/foundation/text/selection/a0;
-
-    .line 15
-    invoke-virtual {v3}, Landroidx/compose/foundation/text/selection/a0;->l()Landroidx/compose/ui/text/input/h0;
-
-    move-result-object v3
-
-    .line 16
-    iget-wide v5, v3, Landroidx/compose/ui/text/input/h0;->b:J
-
-    .line 17
-    invoke-static {v5, v6}, Landroidx/compose/ui/text/h0;->c(J)I
-
-    move-result v3
-
-    iget-object v5, p0, Landroidx/compose/foundation/text/selection/TextFieldSelectionManager_androidKt$contextMenuBuilder$1;->$this_contextMenuBuilder:Landroidx/compose/foundation/text/selection/a0;
-
-    invoke-virtual {v5}, Landroidx/compose/foundation/text/selection/a0;->l()Landroidx/compose/ui/text/input/h0;
-
-    move-result-object v5
+    invoke-static {p1, v6, v0, v2}, Landroidx/compose/foundation/contextmenu/e;->b(Landroidx/compose/foundation/contextmenu/e;Landroidx/compose/foundation/text/ContextMenu_androidKt$TextItem$1;ZLka/a;)V
 
     .line 18
-    iget-object v5, v5, Landroidx/compose/ui/text/input/h0;->a:Landroidx/compose/ui/text/f;
+    iget-object v0, p0, Landroidx/compose/foundation/text/selection/TextFieldSelectionManager_androidKt$contextMenuBuilder$1;->$contextMenuState:Landroidx/compose/foundation/contextmenu/j;
 
     .line 19
-    iget-object v5, v5, Landroidx/compose/ui/text/f;->b:Ljava/lang/String;
+    sget-object v1, Landroidx/compose/foundation/text/TextContextMenuItems;->Paste:Landroidx/compose/foundation/text/TextContextMenuItems;
 
     .line 20
-    invoke-virtual {v5}, Ljava/lang/String;->length()I
+    iget-object v2, p0, Landroidx/compose/foundation/text/selection/TextFieldSelectionManager_androidKt$contextMenuBuilder$1;->$this_contextMenuBuilder:Landroidx/compose/foundation/text/selection/x;
 
-    move-result v5
+    .line 21
+    iget-object v2, v2, Landroidx/compose/foundation/text/selection/x;->k:Landroidx/compose/runtime/ParcelableSnapshotMutableState;
 
-    if-eq v3, v5, :cond_2
+    .line 22
+    invoke-virtual {v2}, Landroidx/compose/runtime/ParcelableSnapshotMutableState;->getValue()Ljava/lang/Object;
+
+    move-result-object v2
+
+    check-cast v2, Ljava/lang/Boolean;
+
+    invoke-virtual {v2}, Ljava/lang/Boolean;->booleanValue()Z
+
+    move-result v2
+
+    if-eqz v2, :cond_2
+
+    .line 23
+    iget-object v2, p0, Landroidx/compose/foundation/text/selection/TextFieldSelectionManager_androidKt$contextMenuBuilder$1;->$this_contextMenuBuilder:Landroidx/compose/foundation/text/selection/x;
+
+    .line 24
+    iget-object v2, v2, Landroidx/compose/foundation/text/selection/x;->g:Landroidx/compose/ui/platform/X;
+
+    if-eqz v2, :cond_2
+
+    .line 25
+    check-cast v2, Landroidx/compose/ui/platform/g;
+
+    .line 26
+    iget-object v2, v2, Landroidx/compose/ui/platform/g;->a:Landroid/content/ClipboardManager;
+
+    invoke-virtual {v2}, Landroid/content/ClipboardManager;->getPrimaryClipDescription()Landroid/content/ClipDescription;
+
+    move-result-object v2
+
+    if-eqz v2, :cond_1
+
+    const-string v5, "text/*"
+
+    invoke-virtual {v2, v5}, Landroid/content/ClipDescription;->hasMimeType(Ljava/lang/String;)Z
+
+    move-result v2
+
+    goto :goto_1
+
+    :cond_1
+    const/4 v2, 0x0
+
+    :goto_1
+    if-ne v2, v4, :cond_2
+
+    const/4 v2, 0x1
 
     goto :goto_2
 
     :cond_2
-    const/4 v1, 0x0
+    const/4 v2, 0x0
 
+    .line 27
     :goto_2
-    iget-object v3, p0, Landroidx/compose/foundation/text/selection/TextFieldSelectionManager_androidKt$contextMenuBuilder$1;->$this_contextMenuBuilder:Landroidx/compose/foundation/text/selection/a0;
+    iget-object v5, p0, Landroidx/compose/foundation/text/selection/TextFieldSelectionManager_androidKt$contextMenuBuilder$1;->$this_contextMenuBuilder:Landroidx/compose/foundation/text/selection/x;
 
-    .line 21
+    .line 28
+    new-instance v6, Landroidx/compose/foundation/text/ContextMenu_androidKt$TextItem$1;
+
+    invoke-direct {v6, v1}, Landroidx/compose/foundation/text/ContextMenu_androidKt$TextItem$1;-><init>(Landroidx/compose/foundation/text/TextContextMenuItems;)V
+
+    new-instance v1, Landroidx/compose/foundation/text/selection/TextFieldSelectionManager_androidKt$contextMenuBuilder$1$invoke$$inlined$TextItem$3;
+
+    invoke-direct {v1, v0, v5}, Landroidx/compose/foundation/text/selection/TextFieldSelectionManager_androidKt$contextMenuBuilder$1$invoke$$inlined$TextItem$3;-><init>(Landroidx/compose/foundation/contextmenu/j;Landroidx/compose/foundation/text/selection/x;)V
+
+    invoke-static {p1, v6, v2, v1}, Landroidx/compose/foundation/contextmenu/e;->b(Landroidx/compose/foundation/contextmenu/e;Landroidx/compose/foundation/text/ContextMenu_androidKt$TextItem$1;ZLka/a;)V
+
+    .line 29
+    iget-object v0, p0, Landroidx/compose/foundation/text/selection/TextFieldSelectionManager_androidKt$contextMenuBuilder$1;->$contextMenuState:Landroidx/compose/foundation/contextmenu/j;
+
+    .line 30
+    sget-object v1, Landroidx/compose/foundation/text/TextContextMenuItems;->SelectAll:Landroidx/compose/foundation/text/TextContextMenuItems;
+
+    .line 31
+    iget-object v2, p0, Landroidx/compose/foundation/text/selection/TextFieldSelectionManager_androidKt$contextMenuBuilder$1;->$this_contextMenuBuilder:Landroidx/compose/foundation/text/selection/x;
+
+    invoke-virtual {v2}, Landroidx/compose/foundation/text/selection/x;->k()Landroidx/compose/ui/text/input/C;
+
+    move-result-object v2
+
+    .line 32
+    iget-wide v5, v2, Landroidx/compose/ui/text/input/C;->b:J
+
+    .line 33
+    invoke-static {v5, v6}, Landroidx/compose/ui/text/H;->c(J)I
+
+    move-result v2
+
+    iget-object v5, p0, Landroidx/compose/foundation/text/selection/TextFieldSelectionManager_androidKt$contextMenuBuilder$1;->$this_contextMenuBuilder:Landroidx/compose/foundation/text/selection/x;
+
+    invoke-virtual {v5}, Landroidx/compose/foundation/text/selection/x;->k()Landroidx/compose/ui/text/input/C;
+
+    move-result-object v5
+
+    .line 34
+    iget-object v5, v5, Landroidx/compose/ui/text/input/C;->a:Landroidx/compose/ui/text/g;
+
+    .line 35
+    iget-object v5, v5, Landroidx/compose/ui/text/g;->b:Ljava/lang/String;
+
+    .line 36
+    invoke-virtual {v5}, Ljava/lang/String;->length()I
+
+    move-result v5
+
+    if-eq v2, v5, :cond_3
+
+    const/4 v3, 0x1
+
+    .line 37
+    :cond_3
+    iget-object v2, p0, Landroidx/compose/foundation/text/selection/TextFieldSelectionManager_androidKt$contextMenuBuilder$1;->$this_contextMenuBuilder:Landroidx/compose/foundation/text/selection/x;
+
+    .line 38
     new-instance v4, Landroidx/compose/foundation/text/ContextMenu_androidKt$TextItem$1;
 
-    invoke-direct {v4, v2}, Landroidx/compose/foundation/text/ContextMenu_androidKt$TextItem$1;-><init>(Landroidx/compose/foundation/text/TextContextMenuItems;)V
+    invoke-direct {v4, v1}, Landroidx/compose/foundation/text/ContextMenu_androidKt$TextItem$1;-><init>(Landroidx/compose/foundation/text/TextContextMenuItems;)V
 
-    new-instance v2, Landroidx/compose/foundation/text/selection/TextFieldSelectionManager_androidKt$contextMenuBuilder$1$invoke$$inlined$TextItem$4;
+    new-instance v1, Landroidx/compose/foundation/text/selection/TextFieldSelectionManager_androidKt$contextMenuBuilder$1$invoke$$inlined$TextItem$4;
 
-    invoke-direct {v2, v0, v3}, Landroidx/compose/foundation/text/selection/TextFieldSelectionManager_androidKt$contextMenuBuilder$1$invoke$$inlined$TextItem$4;-><init>(Landroidx/compose/foundation/contextmenu/j;Landroidx/compose/foundation/text/selection/a0;)V
+    invoke-direct {v1, v0, v2}, Landroidx/compose/foundation/text/selection/TextFieldSelectionManager_androidKt$contextMenuBuilder$1$invoke$$inlined$TextItem$4;-><init>(Landroidx/compose/foundation/contextmenu/j;Landroidx/compose/foundation/text/selection/x;)V
 
-    invoke-static {p1, v4, v1, v2}, Landroidx/compose/foundation/contextmenu/e;->b(Landroidx/compose/foundation/contextmenu/e;Landroidx/compose/foundation/text/ContextMenu_androidKt$TextItem$1;ZLzh/a;)V
+    invoke-static {p1, v4, v3, v1}, Landroidx/compose/foundation/contextmenu/e;->b(Landroidx/compose/foundation/contextmenu/e;Landroidx/compose/foundation/text/ContextMenu_androidKt$TextItem$1;ZLka/a;)V
 
     return-void
 .end method

@@ -1,82 +1,83 @@
-.class public abstract synthetic Lw1/b;
+.class public final LW1/b;
 .super Ljava/lang/Object;
 .source "SourceFile"
 
+# interfaces
+.implements Landroidx/lifecycle/d0;
+
 
 # static fields
-.field public static final synthetic a:[I
+.field public static final a:LW1/b;
 
 
 # direct methods
 .method static constructor <clinit>()V
-    .locals 3
+    .locals 1
 
     .line 1
-    invoke-static {}, Landroidx/compose/ui/platform/actionmodecallback/MenuItemOption;->values()[Landroidx/compose/ui/platform/actionmodecallback/MenuItemOption;
+    new-instance v0, LW1/b;
 
-    move-result-object v0
+    .line 2
+    .line 3
+    invoke-direct {v0}, Ljava/lang/Object;-><init>()V
 
-    array-length v0, v0
+    .line 4
+    .line 5
+    .line 6
+    sput-object v0, LW1/b;->a:LW1/b;
 
-    new-array v0, v0, [I
-
-    :try_start_0
-    sget-object v1, Landroidx/compose/ui/platform/actionmodecallback/MenuItemOption;->Copy:Landroidx/compose/ui/platform/actionmodecallback/MenuItemOption;
-
-    invoke-virtual {v1}, Ljava/lang/Enum;->ordinal()I
-
-    move-result v1
-
-    const/4 v2, 0x1
-
-    aput v2, v0, v1
-    :try_end_0
-    .catch Ljava/lang/NoSuchFieldError; {:try_start_0 .. :try_end_0} :catch_0
-
-    :catch_0
-    :try_start_1
-    sget-object v1, Landroidx/compose/ui/platform/actionmodecallback/MenuItemOption;->Paste:Landroidx/compose/ui/platform/actionmodecallback/MenuItemOption;
-
-    invoke-virtual {v1}, Ljava/lang/Enum;->ordinal()I
-
-    move-result v1
-
-    const/4 v2, 0x2
-
-    aput v2, v0, v1
-    :try_end_1
-    .catch Ljava/lang/NoSuchFieldError; {:try_start_1 .. :try_end_1} :catch_1
-
-    :catch_1
-    :try_start_2
-    sget-object v1, Landroidx/compose/ui/platform/actionmodecallback/MenuItemOption;->Cut:Landroidx/compose/ui/platform/actionmodecallback/MenuItemOption;
-
-    invoke-virtual {v1}, Ljava/lang/Enum;->ordinal()I
-
-    move-result v1
-
-    const/4 v2, 0x3
-
-    aput v2, v0, v1
-    :try_end_2
-    .catch Ljava/lang/NoSuchFieldError; {:try_start_2 .. :try_end_2} :catch_2
-
-    :catch_2
-    :try_start_3
-    sget-object v1, Landroidx/compose/ui/platform/actionmodecallback/MenuItemOption;->SelectAll:Landroidx/compose/ui/platform/actionmodecallback/MenuItemOption;
-
-    invoke-virtual {v1}, Ljava/lang/Enum;->ordinal()I
-
-    move-result v1
-
-    const/4 v2, 0x4
-
-    aput v2, v0, v1
-    :try_end_3
-    .catch Ljava/lang/NoSuchFieldError; {:try_start_3 .. :try_end_3} :catch_3
-
-    :catch_3
-    sput-object v0, Lw1/b;->a:[I
-
+    .line 7
+    .line 8
     return-void
+.end method
+
+
+# virtual methods
+.method public final synthetic a(Ljava/lang/Class;)Landroidx/lifecycle/b0;
+    .locals 0
+
+    .line 1
+    invoke-static {}, Landroidx/compose/runtime/a0;->d()V
+
+    const/4 p1, 0x0
+
+    throw p1
+.end method
+
+.method public final b(Lkotlin/jvm/internal/b;LU1/d;)Landroidx/lifecycle/b0;
+    .locals 0
+
+    .line 1
+    invoke-interface {p1}, Lkotlin/jvm/internal/a;->a()Ljava/lang/Class;
+
+    .line 2
+    .line 3
+    .line 4
+    move-result-object p1
+
+    .line 5
+    invoke-static {p1}, Lcom/facebook/appevents/cloudbridge/c;->h(Ljava/lang/Class;)Landroidx/lifecycle/b0;
+
+    .line 6
+    .line 7
+    .line 8
+    move-result-object p1
+
+    .line 9
+    return-object p1
+.end method
+
+.method public final c(Ljava/lang/Class;LU1/d;)Landroidx/lifecycle/b0;
+    .locals 0
+
+    .line 1
+    invoke-static {}, Landroidx/compose/runtime/a0;->d()V
+
+    .line 2
+    .line 3
+    .line 4
+    const/4 p1, 0x0
+
+    .line 5
+    throw p1
 .end method

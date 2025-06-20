@@ -84,7 +84,7 @@
     .locals 0
 
     .line 1
-    invoke-static {p0}, Lcom/applovin/impl/js;->a(Lcom/applovin/impl/a7;)V
+    invoke-static {p0}, Lcom/applovin/impl/B;->a(Lcom/applovin/impl/a7;)V
 
     return-void
 .end method
@@ -93,7 +93,7 @@
     .locals 0
 
     .line 1
-    invoke-static {p0, p1, p2, p3}, Lcom/applovin/impl/js;->b(Lcom/applovin/impl/a7;Landroid/os/Looper;Lcom/applovin/impl/z6$a;Lcom/applovin/impl/e9;)Lcom/applovin/impl/a7$b;
+    invoke-static {p0, p1, p2, p3}, Lcom/applovin/impl/B;->b(Lcom/applovin/impl/a7;Landroid/os/Looper;Lcom/applovin/impl/z6$a;Lcom/applovin/impl/e9;)Lcom/applovin/impl/a7$b;
 
     move-result-object p1
 
@@ -104,7 +104,7 @@
     .locals 0
 
     .line 2
-    invoke-static {p0}, Lcom/applovin/impl/js;->c(Lcom/applovin/impl/a7;)V
+    invoke-static {p0}, Lcom/applovin/impl/B;->c(Lcom/applovin/impl/a7;)V
 
     return-void
 .end method

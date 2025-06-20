@@ -83,8 +83,11 @@
 .method public static shared()Lcom/applovin/impl/sdk/AppLovinExceptionHandler;
     .locals 1
 
+    .line 1
     sget-object v0, Lcom/applovin/impl/sdk/AppLovinExceptionHandler;->d:Lcom/applovin/impl/sdk/AppLovinExceptionHandler;
 
+    .line 2
+    .line 3
     return-object v0
 .end method
 

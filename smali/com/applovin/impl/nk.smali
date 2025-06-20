@@ -154,20 +154,21 @@
 .method private a(I)I
     .locals 2
 
+    .line 28
     iget v0, p0, Lcom/applovin/impl/nk;->h:I
 
     iget v1, p0, Lcom/applovin/impl/nk;->r:I
 
-    .line 15
     invoke-static {v0, v1}, Ljava/lang/Math;->min(II)I
 
     move-result v0
 
+    .line 29
     iget-object v1, p0, Lcom/applovin/impl/nk;->j:[S
 
-    .line 16
     invoke-direct {p0, v1, p1, v0}, Lcom/applovin/impl/nk;->a([SII)V
 
+    .line 30
     iget p1, p0, Lcom/applovin/impl/nk;->r:I
 
     sub-int/2addr p1, v0
@@ -180,6 +181,7 @@
 .method private a([SI)I
     .locals 6
 
+    .line 34
     iget v0, p0, Lcom/applovin/impl/nk;->a:I
 
     const/4 v1, 0x1
@@ -188,7 +190,6 @@
 
     if-le v0, v2, :cond_0
 
-    .line 19
     div-int/2addr v0, v2
 
     goto :goto_0
@@ -196,6 +197,7 @@
     :cond_0
     const/4 v0, 0x1
 
+    .line 35
     :goto_0
     iget v2, p0, Lcom/applovin/impl/nk;->b:I
 
@@ -203,26 +205,26 @@
 
     if-ne v0, v1, :cond_1
 
+    .line 36
     iget v0, p0, Lcom/applovin/impl/nk;->f:I
 
     iget v1, p0, Lcom/applovin/impl/nk;->g:I
 
-    .line 20
     invoke-direct {p0, p1, p2, v0, v1}, Lcom/applovin/impl/nk;->a([SIII)I
 
     move-result p1
 
     goto :goto_1
 
-    .line 21
+    .line 37
     :cond_1
     invoke-direct {p0, p1, p2, v0}, Lcom/applovin/impl/nk;->b([SII)V
 
+    .line 38
     iget-object v2, p0, Lcom/applovin/impl/nk;->i:[S
 
     iget v3, p0, Lcom/applovin/impl/nk;->f:I
 
-    .line 22
     div-int/2addr v3, v0
 
     iget v4, p0, Lcom/applovin/impl/nk;->g:I
@@ -245,12 +247,14 @@
 
     add-int/2addr v2, v0
 
+    .line 39
     iget v0, p0, Lcom/applovin/impl/nk;->f:I
 
     if-ge v3, v0, :cond_2
 
     move v3, v0
 
+    .line 40
     :cond_2
     iget v0, p0, Lcom/applovin/impl/nk;->g:I
 
@@ -258,25 +262,26 @@
 
     move v2, v0
 
+    .line 41
     :cond_3
     iget v0, p0, Lcom/applovin/impl/nk;->b:I
 
     if-ne v0, v1, :cond_4
 
-    .line 23
+    .line 42
     invoke-direct {p0, p1, p2, v3, v2}, Lcom/applovin/impl/nk;->a([SIII)I
 
     move-result p1
 
     goto :goto_1
 
-    .line 24
+    .line 43
     :cond_4
     invoke-direct {p0, p1, p2, v1}, Lcom/applovin/impl/nk;->b([SII)V
 
+    .line 44
     iget-object p1, p0, Lcom/applovin/impl/nk;->i:[S
 
-    .line 25
     invoke-direct {p0, p1, v5, v3, v2}, Lcom/applovin/impl/nk;->a([SIII)I
 
     move-result p1
@@ -286,18 +291,19 @@
     :cond_5
     move p1, v2
 
+    .line 45
     :goto_1
     iget p2, p0, Lcom/applovin/impl/nk;->u:I
 
     iget v0, p0, Lcom/applovin/impl/nk;->v:I
 
-    .line 26
     invoke-direct {p0, p2, v0}, Lcom/applovin/impl/nk;->a(II)Z
 
     move-result p2
 
     if-eqz p2, :cond_6
 
+    .line 46
     iget p2, p0, Lcom/applovin/impl/nk;->s:I
 
     goto :goto_2
@@ -305,11 +311,13 @@
     :cond_6
     move p2, p1
 
+    .line 47
     :goto_2
     iget v0, p0, Lcom/applovin/impl/nk;->u:I
 
     iput v0, p0, Lcom/applovin/impl/nk;->t:I
 
+    .line 48
     iput p1, p0, Lcom/applovin/impl/nk;->s:I
 
     return p2
@@ -355,10 +363,12 @@
 
     float-to-int p3, v2
 
+    .line 69
     iput p3, p0, Lcom/applovin/impl/nk;->r:I
 
     move p3, p4
 
+    .line 70
     :goto_0
     iget-object v0, p0, Lcom/applovin/impl/nk;->l:[S
 
@@ -366,13 +376,14 @@
 
     add-int v8, p4, p3
 
-    .line 35
+    .line 71
     invoke-direct {p0, v0, v1, v8}, Lcom/applovin/impl/nk;->c([SII)[S
 
     move-result-object v0
 
     iput-object v0, p0, Lcom/applovin/impl/nk;->l:[S
 
+    .line 72
     iget v1, p0, Lcom/applovin/impl/nk;->b:I
 
     mul-int v2, p2, v1
@@ -383,9 +394,9 @@
 
     mul-int v1, v1, p4
 
-    .line 36
     invoke-static {p1, v2, v0, v3, v1}, Ljava/lang/System;->arraycopy(Ljava/lang/Object;ILjava/lang/Object;II)V
 
+    .line 73
     iget v1, p0, Lcom/applovin/impl/nk;->b:I
 
     iget-object v2, p0, Lcom/applovin/impl/nk;->l:[S
@@ -404,9 +415,9 @@
 
     move v7, p2
 
-    .line 37
     invoke-static/range {v0 .. v7}, Lcom/applovin/impl/nk;->a(II[SI[SI[SI)V
 
+    .line 74
     iget p1, p0, Lcom/applovin/impl/nk;->m:I
 
     add-int/2addr p1, v8
@@ -419,6 +430,7 @@
 .method private a([SIII)I
     .locals 9
 
+    .line 49
     iget v0, p0, Lcom/applovin/impl/nk;->b:I
 
     mul-int p2, p2, v0
@@ -445,19 +457,19 @@
 
     add-int v7, p2, v5
 
-    .line 27
+    .line 50
     aget-short v7, p1, v7
 
     add-int v8, p2, p3
 
     add-int/2addr v8, v5
 
-    .line 28
+    .line 51
     aget-short v8, p1, v8
 
     sub-int/2addr v7, v8
 
-    .line 29
+    .line 52
     invoke-static {v7}, Ljava/lang/Math;->abs(I)I
 
     move-result v7
@@ -495,13 +507,13 @@
 
     goto :goto_0
 
-    .line 30
+    .line 53
     :cond_3
     div-int/2addr v2, v3
 
     iput v2, p0, Lcom/applovin/impl/nk;->u:I
 
-    .line 31
+    .line 54
     div-int/2addr v4, v1
 
     iput v4, p0, Lcom/applovin/impl/nk;->v:I
@@ -512,6 +524,7 @@
 .method private a(F)V
     .locals 8
 
+    .line 20
     iget v0, p0, Lcom/applovin/impl/nk;->k:I
 
     iget v1, p0, Lcom/applovin/impl/nk;->h:I
@@ -523,12 +536,13 @@
     :cond_0
     const/4 v1, 0x0
 
+    .line 21
     :cond_1
     iget v2, p0, Lcom/applovin/impl/nk;->r:I
 
     if-lez v2, :cond_2
 
-    .line 10
+    .line 22
     invoke-direct {p0, v1}, Lcom/applovin/impl/nk;->a(I)I
 
     move-result v2
@@ -538,10 +552,10 @@
 
     goto :goto_1
 
+    .line 23
     :cond_2
     iget-object v2, p0, Lcom/applovin/impl/nk;->j:[S
 
-    .line 11
     invoke-direct {p0, v2, v1}, Lcom/applovin/impl/nk;->a([SI)I
 
     move-result v2
@@ -554,9 +568,9 @@
 
     if-lez v7, :cond_3
 
+    .line 24
     iget-object v3, p0, Lcom/applovin/impl/nk;->j:[S
 
-    .line 12
     invoke-direct {p0, v3, v1, p1, v2}, Lcom/applovin/impl/nk;->b([SIFI)I
 
     move-result v3
@@ -569,16 +583,17 @@
 
     goto :goto_1
 
+    .line 25
     :cond_3
     iget-object v3, p0, Lcom/applovin/impl/nk;->j:[S
 
-    .line 13
     invoke-direct {p0, v3, v1, p1, v2}, Lcom/applovin/impl/nk;->a([SIFI)I
 
     move-result v2
 
     goto :goto_0
 
+    .line 26
     :goto_1
     iget v2, p0, Lcom/applovin/impl/nk;->h:I
 
@@ -586,7 +601,7 @@
 
     if-le v2, v0, :cond_1
 
-    .line 14
+    .line 27
     invoke-direct {p0, v1}, Lcom/applovin/impl/nk;->d(I)V
 
     return-void
@@ -595,12 +610,14 @@
 .method private a(FI)V
     .locals 8
 
+    .line 1
     iget v0, p0, Lcom/applovin/impl/nk;->m:I
 
     if-ne v0, p2, :cond_0
 
     return-void
 
+    .line 2
     :cond_0
     iget v0, p0, Lcom/applovin/impl/nk;->a:I
 
@@ -627,6 +644,7 @@
 
     const/4 v1, 0x0
 
+    .line 4
     :goto_1
     iget v2, p0, Lcom/applovin/impl/nk;->o:I
 
@@ -636,6 +654,7 @@
 
     if-ge v1, v2, :cond_6
 
+    .line 5
     :goto_2
     iget v2, p0, Lcom/applovin/impl/nk;->p:I
 
@@ -649,11 +668,12 @@
 
     if-le v4, v6, :cond_3
 
+    .line 6
     iget-object v2, p0, Lcom/applovin/impl/nk;->l:[S
 
     iget v4, p0, Lcom/applovin/impl/nk;->m:I
 
-    .line 4
+    .line 7
     invoke-direct {p0, v2, v4, v3}, Lcom/applovin/impl/nk;->c([SII)[S
 
     move-result-object v2
@@ -662,11 +682,13 @@
 
     const/4 v2, 0x0
 
+    .line 8
     :goto_3
     iget v4, p0, Lcom/applovin/impl/nk;->b:I
 
     if-ge v2, v4, :cond_2
 
+    .line 9
     iget-object v5, p0, Lcom/applovin/impl/nk;->l:[S
 
     iget v6, p0, Lcom/applovin/impl/nk;->m:I
@@ -681,7 +703,7 @@
 
     add-int/2addr v4, v2
 
-    .line 5
+    .line 10
     invoke-direct {p0, v7, v4, v0, p1}, Lcom/applovin/impl/nk;->b([SIII)S
 
     move-result v4
@@ -692,6 +714,7 @@
 
     goto :goto_3
 
+    .line 11
     :cond_2
     iget v2, p0, Lcom/applovin/impl/nk;->q:I
 
@@ -699,6 +722,7 @@
 
     iput v2, p0, Lcom/applovin/impl/nk;->q:I
 
+    .line 12
     iget v2, p0, Lcom/applovin/impl/nk;->m:I
 
     add-int/2addr v2, v3
@@ -707,11 +731,13 @@
 
     goto :goto_2
 
+    .line 13
     :cond_3
     iput v2, p0, Lcom/applovin/impl/nk;->p:I
 
     if-ne v2, v0, :cond_5
 
+    .line 14
     iput p2, p0, Lcom/applovin/impl/nk;->p:I
 
     if-ne v5, p1, :cond_4
@@ -721,10 +747,11 @@
     :cond_4
     const/4 v3, 0x0
 
-    .line 6
+    .line 15
     :goto_4
     invoke-static {v3}, Lcom/applovin/impl/b1;->b(Z)V
 
+    .line 16
     iput p2, p0, Lcom/applovin/impl/nk;->q:I
 
     :cond_5
@@ -732,18 +759,18 @@
 
     goto :goto_1
 
-    .line 7
+    .line 17
     :cond_6
     invoke-direct {p0, v2}, Lcom/applovin/impl/nk;->c(I)V
 
     return-void
 
-    .line 8
+    .line 18
     :cond_7
     :goto_5
     div-int/lit8 p1, p1, 0x2
 
-    .line 9
+    .line 19
     div-int/lit8 v0, v0, 0x2
 
     goto :goto_0
@@ -776,7 +803,7 @@
     :goto_1
     if-ge v5, p0, :cond_0
 
-    .line 38
+    .line 75
     aget-short v6, p4, v4
 
     sub-int v7, p0, v5
@@ -817,17 +844,18 @@
 .method private a([SII)V
     .locals 3
 
+    .line 31
     iget-object v0, p0, Lcom/applovin/impl/nk;->l:[S
 
     iget v1, p0, Lcom/applovin/impl/nk;->m:I
 
-    .line 17
     invoke-direct {p0, v0, v1, p3}, Lcom/applovin/impl/nk;->c([SII)[S
 
     move-result-object v0
 
     iput-object v0, p0, Lcom/applovin/impl/nk;->l:[S
 
+    .line 32
     iget v1, p0, Lcom/applovin/impl/nk;->b:I
 
     mul-int p2, p2, v1
@@ -838,9 +866,9 @@
 
     mul-int v1, v1, p3
 
-    .line 18
     invoke-static {p1, p2, v0, v2, v1}, Ljava/lang/System;->arraycopy(Ljava/lang/Object;ILjava/lang/Object;II)V
 
+    .line 33
     iget p1, p0, Lcom/applovin/impl/nk;->m:I
 
     add-int/2addr p1, p3
@@ -853,11 +881,11 @@
 .method private a(II)Z
     .locals 2
 
-    .line 2
     const/4 v0, 0x0
 
     if-eqz p1, :cond_3
 
+    .line 76
     iget v1, p0, Lcom/applovin/impl/nk;->s:I
 
     if-nez v1, :cond_0
@@ -874,6 +902,7 @@
     :cond_1
     mul-int/lit8 p1, p1, 0x2
 
+    .line 77
     iget p2, p0, Lcom/applovin/impl/nk;->t:I
 
     mul-int/lit8 p2, p2, 0x3
@@ -926,22 +955,24 @@
 
     float-to-int p3, v1
 
+    .line 22
     iput p3, p0, Lcom/applovin/impl/nk;->r:I
 
     move p3, p4
 
+    .line 23
     :goto_0
     iget-object v0, p0, Lcom/applovin/impl/nk;->l:[S
 
     iget v1, p0, Lcom/applovin/impl/nk;->m:I
 
-    .line 15
     invoke-direct {p0, v0, v1, p3}, Lcom/applovin/impl/nk;->c([SII)[S
 
     move-result-object v2
 
     iput-object v2, p0, Lcom/applovin/impl/nk;->l:[S
 
+    .line 24
     iget v1, p0, Lcom/applovin/impl/nk;->b:I
 
     iget v3, p0, Lcom/applovin/impl/nk;->m:I
@@ -956,9 +987,9 @@
 
     move-object v6, p1
 
-    .line 16
     invoke-static/range {v0 .. v7}, Lcom/applovin/impl/nk;->a(II[SI[SI[SI)V
 
+    .line 25
     iget p1, p0, Lcom/applovin/impl/nk;->m:I
 
     add-int/2addr p1, p3
@@ -971,20 +1002,22 @@
 .method private b([SIII)S
     .locals 2
 
-    .line 6
+    .line 7
     aget-short v0, p1, p2
 
+    .line 8
     iget v1, p0, Lcom/applovin/impl/nk;->b:I
 
     add-int/2addr p2, v1
 
-    .line 7
     aget-short p1, p1, p2
 
+    .line 9
     iget p2, p0, Lcom/applovin/impl/nk;->q:I
 
     mul-int p2, p2, p3
 
+    .line 10
     iget p3, p0, Lcom/applovin/impl/nk;->p:I
 
     mul-int v1, p3, p4
@@ -1005,7 +1038,7 @@
 
     add-int/2addr p2, v0
 
-    .line 8
+    .line 11
     div-int/2addr p2, p3
 
     int-to-short p1, p2
@@ -1016,21 +1049,23 @@
 .method private b(I)V
     .locals 6
 
+    .line 12
     iget v0, p0, Lcom/applovin/impl/nk;->m:I
 
     sub-int/2addr v0, p1
 
+    .line 13
     iget-object v1, p0, Lcom/applovin/impl/nk;->n:[S
 
     iget v2, p0, Lcom/applovin/impl/nk;->o:I
 
-    .line 9
     invoke-direct {p0, v1, v2, v0}, Lcom/applovin/impl/nk;->c([SII)[S
 
     move-result-object v1
 
     iput-object v1, p0, Lcom/applovin/impl/nk;->n:[S
 
+    .line 14
     iget-object v2, p0, Lcom/applovin/impl/nk;->l:[S
 
     iget v3, p0, Lcom/applovin/impl/nk;->b:I
@@ -1043,11 +1078,12 @@
 
     mul-int v3, v3, v0
 
-    .line 10
     invoke-static {v2, v4, v1, v5, v3}, Ljava/lang/System;->arraycopy(Ljava/lang/Object;ILjava/lang/Object;II)V
 
+    .line 15
     iput p1, p0, Lcom/applovin/impl/nk;->m:I
 
+    .line 16
     iget p1, p0, Lcom/applovin/impl/nk;->o:I
 
     add-int/2addr p1, v0
@@ -1060,11 +1096,12 @@
 .method private b([SII)V
     .locals 6
 
+    .line 1
     iget v0, p0, Lcom/applovin/impl/nk;->h:I
 
-    .line 2
     div-int/2addr v0, p3
 
+    .line 2
     iget v1, p0, Lcom/applovin/impl/nk;->b:I
 
     mul-int p3, p3, v1
@@ -1104,11 +1141,11 @@
     :cond_0
     div-int/2addr v4, p3
 
+    .line 5
     iget-object v3, p0, Lcom/applovin/impl/nk;->i:[S
 
     int-to-short v4, v4
 
-    .line 5
     aput-short v4, v3, v2
 
     add-int/lit8 v2, v2, 0x1
@@ -1126,6 +1163,7 @@
 
     return-void
 
+    .line 5
     :cond_0
     iget-object v0, p0, Lcom/applovin/impl/nk;->n:[S
 
@@ -1141,9 +1179,9 @@
 
     const/4 v1, 0x0
 
-    .line 5
     invoke-static {v0, v2, v0, v1, v3}, Ljava/lang/System;->arraycopy(Ljava/lang/Object;ILjava/lang/Object;II)V
 
+    .line 6
     iget v0, p0, Lcom/applovin/impl/nk;->o:I
 
     sub-int/2addr v0, p1
@@ -1156,7 +1194,7 @@
 .method private c([SII)[S
     .locals 2
 
-    .line 2
+    .line 1
     array-length v0, p1
 
     iget v1, p0, Lcom/applovin/impl/nk;->b:I
@@ -1172,14 +1210,14 @@
     :cond_0
     mul-int/lit8 v0, v0, 0x3
 
-    .line 3
+    .line 2
     div-int/lit8 v0, v0, 0x2
 
     add-int/2addr v0, p3
 
     mul-int v0, v0, v1
 
-    .line 4
+    .line 3
     invoke-static {p1, v0}, Ljava/util/Arrays;->copyOf([SI)[S
 
     move-result-object p1
@@ -1190,14 +1228,17 @@
 .method private d()V
     .locals 8
 
+    .line 1
     iget v0, p0, Lcom/applovin/impl/nk;->m:I
 
+    .line 2
     iget v1, p0, Lcom/applovin/impl/nk;->c:F
 
     iget v2, p0, Lcom/applovin/impl/nk;->d:F
 
     div-float/2addr v1, v2
 
+    .line 3
     iget v3, p0, Lcom/applovin/impl/nk;->e:F
 
     mul-float v3, v3, v2
@@ -1218,6 +1259,7 @@
 
     goto :goto_0
 
+    .line 4
     :cond_0
     iget-object v1, p0, Lcom/applovin/impl/nk;->j:[S
 
@@ -1225,14 +1267,14 @@
 
     const/4 v4, 0x0
 
-    .line 1
     invoke-direct {p0, v1, v4, v2}, Lcom/applovin/impl/nk;->a([SII)V
 
+    .line 5
     iput v4, p0, Lcom/applovin/impl/nk;->k:I
 
     goto :goto_1
 
-    .line 2
+    .line 6
     :cond_1
     :goto_0
     invoke-direct {p0, v1}, Lcom/applovin/impl/nk;->a(F)V
@@ -1244,7 +1286,7 @@
 
     if-eqz v1, :cond_2
 
-    .line 3
+    .line 7
     invoke-direct {p0, v3, v0}, Lcom/applovin/impl/nk;->a(FI)V
 
     :cond_2
@@ -1254,10 +1296,12 @@
 .method private d(I)V
     .locals 4
 
+    .line 8
     iget v0, p0, Lcom/applovin/impl/nk;->k:I
 
     sub-int/2addr v0, p1
 
+    .line 9
     iget-object v1, p0, Lcom/applovin/impl/nk;->j:[S
 
     iget v2, p0, Lcom/applovin/impl/nk;->b:I
@@ -1268,9 +1312,9 @@
 
     const/4 v3, 0x0
 
-    .line 4
     invoke-static {v1, p1, v1, v3, v2}, Ljava/lang/System;->arraycopy(Ljava/lang/Object;ILjava/lang/Object;II)V
 
+    .line 10
     iput v0, p0, Lcom/applovin/impl/nk;->k:I
 
     return-void
@@ -1281,27 +1325,36 @@
 .method public a()V
     .locals 1
 
-    .line 1
     const/4 v0, 0x0
 
+    .line 55
     iput v0, p0, Lcom/applovin/impl/nk;->k:I
 
+    .line 56
     iput v0, p0, Lcom/applovin/impl/nk;->m:I
 
+    .line 57
     iput v0, p0, Lcom/applovin/impl/nk;->o:I
 
+    .line 58
     iput v0, p0, Lcom/applovin/impl/nk;->p:I
 
+    .line 59
     iput v0, p0, Lcom/applovin/impl/nk;->q:I
 
+    .line 60
     iput v0, p0, Lcom/applovin/impl/nk;->r:I
 
+    .line 61
     iput v0, p0, Lcom/applovin/impl/nk;->s:I
 
+    .line 62
     iput v0, p0, Lcom/applovin/impl/nk;->t:I
 
+    .line 63
     iput v0, p0, Lcom/applovin/impl/nk;->u:I
 
+    .line 64
     iput v0, p0, Lcom/applovin/impl/nk;->v:I
 
     return-void
@@ -1310,7 +1363,7 @@
 .method public a(Ljava/nio/ShortBuffer;)V
     .locals 4
 
-    .line 32
+    .line 65
     invoke-virtual {p1}, Ljava/nio/Buffer;->remaining()I
 
     move-result v0
@@ -1325,6 +1378,7 @@
 
     move-result v0
 
+    .line 66
     iget-object v1, p0, Lcom/applovin/impl/nk;->l:[S
 
     iget v2, p0, Lcom/applovin/impl/nk;->b:I
@@ -1333,15 +1387,16 @@
 
     const/4 v3, 0x0
 
-    .line 33
     invoke-virtual {p1, v1, v3, v2}, Ljava/nio/ShortBuffer;->put([SII)Ljava/nio/ShortBuffer;
 
+    .line 67
     iget p1, p0, Lcom/applovin/impl/nk;->m:I
 
     sub-int/2addr p1, v0
 
     iput p1, p0, Lcom/applovin/impl/nk;->m:I
 
+    .line 68
     iget-object v1, p0, Lcom/applovin/impl/nk;->l:[S
 
     iget v2, p0, Lcom/applovin/impl/nk;->b:I
@@ -1350,7 +1405,6 @@
 
     mul-int p1, p1, v2
 
-    .line 34
     invoke-static {v1, v0, v1, v3, p1}, Ljava/lang/System;->arraycopy(Ljava/lang/Object;ILjava/lang/Object;II)V
 
     return-void
@@ -1359,7 +1413,7 @@
 .method public b()I
     .locals 2
 
-    .line 1
+    .line 6
     iget v0, p0, Lcom/applovin/impl/nk;->m:I
 
     iget v1, p0, Lcom/applovin/impl/nk;->b:I
@@ -1374,7 +1428,7 @@
 .method public b(Ljava/nio/ShortBuffer;)V
     .locals 5
 
-    .line 11
+    .line 17
     invoke-virtual {p1}, Ljava/nio/Buffer;->remaining()I
 
     move-result v0
@@ -1387,35 +1441,36 @@
 
     mul-int/lit8 v1, v1, 0x2
 
+    .line 18
     iget-object v2, p0, Lcom/applovin/impl/nk;->j:[S
 
     iget v3, p0, Lcom/applovin/impl/nk;->k:I
 
-    .line 12
     invoke-direct {p0, v2, v3, v0}, Lcom/applovin/impl/nk;->c([SII)[S
 
     move-result-object v2
 
     iput-object v2, p0, Lcom/applovin/impl/nk;->j:[S
 
+    .line 19
     iget v3, p0, Lcom/applovin/impl/nk;->k:I
 
     iget v4, p0, Lcom/applovin/impl/nk;->b:I
 
     mul-int v3, v3, v4
 
-    .line 13
     div-int/lit8 v1, v1, 0x2
 
     invoke-virtual {p1, v2, v3, v1}, Ljava/nio/ShortBuffer;->get([SII)Ljava/nio/ShortBuffer;
 
+    .line 20
     iget p1, p0, Lcom/applovin/impl/nk;->k:I
 
     add-int/2addr p1, v0
 
     iput p1, p0, Lcom/applovin/impl/nk;->k:I
 
-    .line 14
+    .line 21
     invoke-direct {p0}, Lcom/applovin/impl/nk;->d()V
 
     return-void
@@ -1424,7 +1479,7 @@
 .method public c()I
     .locals 2
 
-    .line 1
+    .line 4
     iget v0, p0, Lcom/applovin/impl/nk;->k:I
 
     iget v1, p0, Lcom/applovin/impl/nk;->b:I

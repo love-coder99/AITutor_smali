@@ -40,26 +40,26 @@
 .method public final a(Ljava/lang/String;)V
     .locals 4
 
+    .line 2
     iget-object v0, p0, Lcom/apm/insight/b/g$3;->d:Lcom/apm/insight/b/g;
 
     const/4 v1, 0x1
 
-    .line 2
     invoke-static {v0, v1}, Lcom/apm/insight/b/g;->a(Lcom/apm/insight/b/g;Z)Z
 
+    .line 3
     iget-object v0, p0, Lcom/apm/insight/b/g$3;->d:Lcom/apm/insight/b/g;
 
-    .line 3
     invoke-static {v0, p1}, Lcom/apm/insight/b/g;->a(Lcom/apm/insight/b/g;Ljava/lang/String;)Ljava/lang/String;
 
     .line 4
     invoke-super {p0, p1}, Lcom/apm/insight/b/e;->a(Ljava/lang/String;)V
 
+    .line 5
     iget-object p1, p0, Lcom/apm/insight/b/g$3;->d:Lcom/apm/insight/b/g;
 
     sget-wide v2, Lcom/apm/insight/b/e;->a:J
 
-    .line 5
     invoke-static {p1, v1, v2, v3}, Lcom/apm/insight/b/g;->a(Lcom/apm/insight/b/g;ZJ)V
 
     return-void

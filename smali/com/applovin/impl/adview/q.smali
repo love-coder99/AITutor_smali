@@ -30,7 +30,7 @@
     .line 1
     iget-object v0, p0, Lcom/applovin/impl/adview/q;->b:Lcom/applovin/impl/adview/a;
 
-    invoke-static {v0}, Lcom/applovin/impl/adview/a;->u(Lcom/applovin/impl/adview/a;)Lcom/applovin/impl/adview/b;
+    invoke-static {v0}, Lcom/applovin/impl/adview/a;->v(Lcom/applovin/impl/adview/a;)Lcom/applovin/impl/adview/b;
 
     move-result-object v0
 

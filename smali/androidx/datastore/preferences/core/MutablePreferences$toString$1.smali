@@ -3,34 +3,36 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lzh/c;
+.implements Lka/c;
 
 
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "Lkotlin/jvm/internal/Lambda;",
-        "Lzh/c;"
+        "Lka/c;"
     }
 .end annotation
 
 .annotation runtime Lkotlin/Metadata;
     d1 = {
-        "\u0000\u0014\n\u0002\u0010\'\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0000\n\u0002\u0010\r\n\u0000\u0010\u0005\u001a\u00020\u00042\u0016\u0010\u0003\u001a\u0012\u0012\u0008\u0012\u0006\u0012\u0002\u0008\u00030\u0001\u0012\u0004\u0012\u00020\u00020\u0000H\n"
+        "\u0000\u0016\n\u0002\u0010\'\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0000\n\u0002\u0010\r\n\u0002\u0008\u0003\u0010\u0007\u001a\u00020\u00042\u0016\u0010\u0003\u001a\u0012\u0012\u0008\u0012\u0006\u0012\u0002\u0008\u00030\u0001\u0012\u0004\u0012\u00020\u00020\u0000H\n\u00a2\u0006\u0004\u0008\u0005\u0010\u0006"
     }
     d2 = {
         "",
-        "Landroidx/datastore/preferences/core/d;",
+        "Landroidx/datastore/preferences/core/e;",
         "",
         "entry",
         "",
+        "invoke",
+        "(Ljava/util/Map$Entry;)Ljava/lang/CharSequence;",
         "<anonymous>"
     }
     k = 0x3
     mv = {
         0x1,
-        0x5,
-        0x1
+        0x8,
+        0x0
     }
 .end annotation
 
@@ -65,12 +67,12 @@
 
 # virtual methods
 .method public final invoke(Ljava/util/Map$Entry;)Ljava/lang/CharSequence;
-    .locals 2
+    .locals 7
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
             "Ljava/util/Map$Entry<",
-            "Landroidx/datastore/preferences/core/d;",
+            "Landroidx/datastore/preferences/core/e;",
             "Ljava/lang/Object;",
             ">;)",
             "Ljava/lang/CharSequence;"
@@ -78,35 +80,107 @@
     .end annotation
 
     .line 2
-    new-instance v0, Ljava/lang/StringBuilder;
+    invoke-interface {p1}, Ljava/util/Map$Entry;->getValue()Ljava/lang/Object;
 
-    const-string v1, "  "
+    move-result-object v0
 
-    invoke-direct {v0, v1}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+    .line 3
+    instance-of v1, v0, [B
+
+    if-eqz v1, :cond_2
+
+    check-cast v0, [B
+
+    .line 4
+    new-instance v1, Ljava/lang/StringBuilder;
+
+    invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
+
+    .line 5
+    const-string v2, "["
+
+    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/CharSequence;)Ljava/lang/Appendable;
+
+    .line 6
+    array-length v2, v0
+
+    const/4 v3, 0x0
+
+    const/4 v4, 0x0
+
+    :goto_0
+    if-ge v3, v2, :cond_1
+
+    aget-byte v5, v0, v3
+
+    const/4 v6, 0x1
+
+    add-int/2addr v4, v6
+
+    if-le v4, v6, :cond_0
+
+    .line 7
+    const-string v6, ", "
+
+    invoke-virtual {v1, v6}, Ljava/lang/StringBuilder;->append(Ljava/lang/CharSequence;)Ljava/lang/Appendable;
+
+    .line 8
+    :cond_0
+    invoke-static {v5}, Ljava/lang/String;->valueOf(I)Ljava/lang/String;
+
+    move-result-object v5
+
+    invoke-virtual {v1, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/CharSequence;)Ljava/lang/Appendable;
+
+    add-int/lit8 v3, v3, 0x1
+
+    goto :goto_0
+
+    .line 9
+    :cond_1
+    const-string v0, "]"
+
+    invoke-virtual {v1, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/CharSequence;)Ljava/lang/Appendable;
+
+    .line 10
+    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v0
+
+    goto :goto_1
+
+    .line 11
+    :cond_2
+    invoke-interface {p1}, Ljava/util/Map$Entry;->getValue()Ljava/lang/Object;
+
+    move-result-object v0
+
+    invoke-static {v0}, Ljava/lang/String;->valueOf(Ljava/lang/Object;)Ljava/lang/String;
+
+    move-result-object v0
+
+    .line 12
+    :goto_1
+    new-instance v1, Ljava/lang/StringBuilder;
+
+    const-string v2, "  "
+
+    invoke-direct {v1, v2}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
 
     invoke-interface {p1}, Ljava/util/Map$Entry;->getKey()Ljava/lang/Object;
 
-    move-result-object v1
-
-    check-cast v1, Landroidx/datastore/preferences/core/d;
-
-    .line 3
-    iget-object v1, v1, Landroidx/datastore/preferences/core/d;->a:Ljava/lang/String;
-
-    .line 4
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    const-string v1, " = "
-
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    invoke-interface {p1}, Ljava/util/Map$Entry;->getValue()Ljava/lang/Object;
-
     move-result-object p1
 
-    invoke-virtual {v0, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+    check-cast p1, Landroidx/datastore/preferences/core/e;
 
-    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    .line 13
+    iget-object p1, p1, Landroidx/datastore/preferences/core/e;->a:Ljava/lang/String;
+
+    .line 14
+    const-string v2, " = "
+
+    .line 15
+    invoke-static {v1, p1, v2, v0}, Lcom/google/android/material/datepicker/i;->A(Ljava/lang/StringBuilder;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object p1
 

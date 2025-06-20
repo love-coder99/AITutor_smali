@@ -39,7 +39,7 @@
     .locals 1
 
     .line 1
-    new-instance v0, Landroidx/viewpager2/widget/p;
+    new-instance v0, Landroidx/viewpager2/widget/m;
 
     .line 2
     .line 3

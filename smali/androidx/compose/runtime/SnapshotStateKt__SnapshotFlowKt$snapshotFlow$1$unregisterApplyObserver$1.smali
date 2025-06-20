@@ -3,7 +3,7 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lzh/e;
+.implements Lka/e;
 
 
 # annotations
@@ -19,7 +19,7 @@
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "Lkotlin/jvm/internal/Lambda;",
-        "Lzh/e;"
+        "Lka/e;"
     }
 .end annotation
 
@@ -32,11 +32,11 @@
         "",
         "",
         "changed",
-        "Landroidx/compose/runtime/snapshots/h;",
+        "Landroidx/compose/runtime/snapshots/g;",
         "<anonymous parameter 1>",
-        "Lqh/r;",
+        "LX9/j;",
         "invoke",
-        "(Ljava/util/Set;Landroidx/compose/runtime/snapshots/h;)V",
+        "(Ljava/util/Set;Landroidx/compose/runtime/snapshots/g;)V",
         "<anonymous>"
     }
     k = 0x3
@@ -86,16 +86,16 @@
     .line 1
     check-cast p1, Ljava/util/Set;
 
-    check-cast p2, Landroidx/compose/runtime/snapshots/h;
+    check-cast p2, Landroidx/compose/runtime/snapshots/g;
 
-    invoke-virtual {p0, p1, p2}, Landroidx/compose/runtime/SnapshotStateKt__SnapshotFlowKt$snapshotFlow$1$unregisterApplyObserver$1;->invoke(Ljava/util/Set;Landroidx/compose/runtime/snapshots/h;)V
+    invoke-virtual {p0, p1, p2}, Landroidx/compose/runtime/SnapshotStateKt__SnapshotFlowKt$snapshotFlow$1$unregisterApplyObserver$1;->invoke(Ljava/util/Set;Landroidx/compose/runtime/snapshots/g;)V
 
-    sget-object p1, Lqh/r;->a:Lqh/r;
+    sget-object p1, LX9/j;->a:LX9/j;
 
     return-object p1
 .end method
 
-.method public final invoke(Ljava/util/Set;Landroidx/compose/runtime/snapshots/h;)V
+.method public final invoke(Ljava/util/Set;Landroidx/compose/runtime/snapshots/g;)V
     .locals 17
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -104,7 +104,7 @@
             "+",
             "Ljava/lang/Object;",
             ">;",
-            "Landroidx/compose/runtime/snapshots/h;",
+            "Landroidx/compose/runtime/snapshots/g;",
             ")V"
         }
     .end annotation
@@ -112,7 +112,7 @@
     move-object/from16 v0, p1
 
     .line 2
-    instance-of v1, v0, Landroidx/compose/runtime/collection/f;
+    instance-of v1, v0, Landroidx/compose/runtime/collection/e;
 
     const/4 v2, 0x4
 
@@ -121,16 +121,16 @@
     .line 3
     move-object v1, v0
 
-    check-cast v1, Landroidx/compose/runtime/collection/f;
+    check-cast v1, Landroidx/compose/runtime/collection/e;
 
     .line 4
-    iget-object v1, v1, Landroidx/compose/runtime/collection/f;->b:Landroidx/collection/l0;
+    iget-object v1, v1, Landroidx/compose/runtime/collection/e;->b:Landroidx/collection/J;
 
     .line 5
-    iget-object v3, v1, Landroidx/collection/l0;->b:[Ljava/lang/Object;
+    iget-object v3, v1, Landroidx/collection/J;->b:[Ljava/lang/Object;
 
     .line 6
-    iget-object v1, v1, Landroidx/collection/l0;->a:[J
+    iget-object v1, v1, Landroidx/collection/J;->a:[J
 
     .line 7
     array-length v4, v1
@@ -196,13 +196,13 @@
     aget-object v12, v3, v12
 
     .line 10
-    instance-of v13, v12, Landroidx/compose/runtime/snapshots/w;
+    instance-of v13, v12, Landroidx/compose/runtime/snapshots/s;
 
     if-eqz v13, :cond_0
 
-    check-cast v12, Landroidx/compose/runtime/snapshots/w;
+    check-cast v12, Landroidx/compose/runtime/snapshots/s;
 
-    invoke-virtual {v12, v2}, Landroidx/compose/runtime/snapshots/w;->h(I)Z
+    invoke-virtual {v12, v2}, Landroidx/compose/runtime/snapshots/s;->i(I)Z
 
     move-result v12
 
@@ -278,13 +278,13 @@
     move-result-object v3
 
     .line 14
-    instance-of v4, v3, Landroidx/compose/runtime/snapshots/w;
+    instance-of v4, v3, Landroidx/compose/runtime/snapshots/s;
 
     if-eqz v4, :cond_0
 
-    check-cast v3, Landroidx/compose/runtime/snapshots/w;
+    check-cast v3, Landroidx/compose/runtime/snapshots/s;
 
-    invoke-virtual {v3, v2}, Landroidx/compose/runtime/snapshots/w;->h(I)Z
+    invoke-virtual {v3, v2}, Landroidx/compose/runtime/snapshots/s;->i(I)Z
 
     move-result v3
 
@@ -292,11 +292,11 @@
 
     goto :goto_2
 
+    .line 15
     :goto_4
     iget-object v2, v1, Landroidx/compose/runtime/SnapshotStateKt__SnapshotFlowKt$snapshotFlow$1$unregisterApplyObserver$1;->$appliedChanges:Lkotlinx/coroutines/channels/e;
 
-    .line 15
-    invoke-interface {v2, v0}, Lkotlinx/coroutines/channels/p;->o(Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-interface {v2, v0}, Lkotlinx/coroutines/channels/p;->l(Ljava/lang/Object;)Ljava/lang/Object;
 
     :goto_5
     return-void

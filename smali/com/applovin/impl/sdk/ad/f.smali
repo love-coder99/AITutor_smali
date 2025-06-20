@@ -3,7 +3,7 @@
 .source "SourceFile"
 
 # interfaces
-.implements Ln/a;
+.implements Lq/a;
 
 
 # instance fields
@@ -13,11 +13,9 @@
 
 .field public final synthetic c:Z
 
-.field public final synthetic d:Z
-
 
 # direct methods
-.method public synthetic constructor <init>(Lcom/applovin/impl/sdk/ad/b;Landroid/view/MotionEvent;ZZ)V
+.method public synthetic constructor <init>(Lcom/applovin/impl/sdk/ad/b;Landroid/view/MotionEvent;Z)V
     .locals 0
 
     .line 1
@@ -29,18 +27,16 @@
 
     iput-boolean p3, p0, Lcom/applovin/impl/sdk/ad/f;->c:Z
 
-    iput-boolean p4, p0, Lcom/applovin/impl/sdk/ad/f;->d:Z
-
     return-void
 .end method
 
 
 # virtual methods
 .method public final apply(Ljava/lang/Object;)Ljava/lang/Object;
-    .locals 4
+    .locals 3
 
     .line 1
-    iget-boolean v0, p0, Lcom/applovin/impl/sdk/ad/f;->d:Z
+    iget-boolean v0, p0, Lcom/applovin/impl/sdk/ad/f;->c:Z
 
     check-cast p1, Lcom/applovin/impl/tl;
 
@@ -48,9 +44,7 @@
 
     iget-object v2, p0, Lcom/applovin/impl/sdk/ad/f;->b:Landroid/view/MotionEvent;
 
-    iget-boolean v3, p0, Lcom/applovin/impl/sdk/ad/f;->c:Z
-
-    invoke-static {v1, v2, v3, v0, p1}, Lcom/applovin/impl/sdk/ad/b;->A(Lcom/applovin/impl/sdk/ad/b;Landroid/view/MotionEvent;ZZLcom/applovin/impl/tl;)Ljava/util/List;
+    invoke-static {v1, v2, v0, p1}, Lcom/applovin/impl/sdk/ad/b;->Q(Lcom/applovin/impl/sdk/ad/b;Landroid/view/MotionEvent;ZLcom/applovin/impl/tl;)Ljava/util/List;
 
     move-result-object p1
 

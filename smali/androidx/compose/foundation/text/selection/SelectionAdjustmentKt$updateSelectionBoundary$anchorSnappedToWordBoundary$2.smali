@@ -3,14 +3,14 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lzh/a;
+.implements Lka/a;
 
 
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "Lkotlin/jvm/internal/Lambda;",
-        "Lzh/a;"
+        "Lka/a;"
     }
 .end annotation
 
@@ -34,10 +34,10 @@
 
 
 # instance fields
-.field final synthetic $currentRawLine$delegate:Lqh/d;
+.field final synthetic $currentRawLine$delegate:LX9/d;
     .annotation system Ldalvik/annotation/Signature;
         value = {
-            "Lqh/d;"
+            "LX9/d;"
         }
     .end annotation
 .end field
@@ -48,19 +48,19 @@
 
 .field final synthetic $otherRawOffset:I
 
-.field final synthetic $this_updateSelectionBoundary:Landroidx/compose/foundation/text/selection/o;
+.field final synthetic $this_updateSelectionBoundary:Landroidx/compose/foundation/text/selection/n;
 
 
 # direct methods
-.method public constructor <init>(Landroidx/compose/foundation/text/selection/g;IILandroidx/compose/foundation/text/selection/o;Lqh/d;)V
+.method public constructor <init>(Landroidx/compose/foundation/text/selection/g;IILandroidx/compose/foundation/text/selection/n;LX9/d;)V
     .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
             "Landroidx/compose/foundation/text/selection/g;",
             "II",
-            "Landroidx/compose/foundation/text/selection/o;",
-            "Lqh/d;",
+            "Landroidx/compose/foundation/text/selection/n;",
+            "LX9/d;",
             ")V"
         }
     .end annotation
@@ -68,18 +68,32 @@
     .line 1
     iput-object p1, p0, Landroidx/compose/foundation/text/selection/SelectionAdjustmentKt$updateSelectionBoundary$anchorSnappedToWordBoundary$2;->$info:Landroidx/compose/foundation/text/selection/g;
 
+    .line 2
+    .line 3
     iput p2, p0, Landroidx/compose/foundation/text/selection/SelectionAdjustmentKt$updateSelectionBoundary$anchorSnappedToWordBoundary$2;->$currentRawOffset:I
 
+    .line 4
+    .line 5
     iput p3, p0, Landroidx/compose/foundation/text/selection/SelectionAdjustmentKt$updateSelectionBoundary$anchorSnappedToWordBoundary$2;->$otherRawOffset:I
 
-    iput-object p4, p0, Landroidx/compose/foundation/text/selection/SelectionAdjustmentKt$updateSelectionBoundary$anchorSnappedToWordBoundary$2;->$this_updateSelectionBoundary:Landroidx/compose/foundation/text/selection/o;
+    .line 6
+    .line 7
+    iput-object p4, p0, Landroidx/compose/foundation/text/selection/SelectionAdjustmentKt$updateSelectionBoundary$anchorSnappedToWordBoundary$2;->$this_updateSelectionBoundary:Landroidx/compose/foundation/text/selection/n;
 
-    iput-object p5, p0, Landroidx/compose/foundation/text/selection/SelectionAdjustmentKt$updateSelectionBoundary$anchorSnappedToWordBoundary$2;->$currentRawLine$delegate:Lqh/d;
+    .line 8
+    .line 9
+    iput-object p5, p0, Landroidx/compose/foundation/text/selection/SelectionAdjustmentKt$updateSelectionBoundary$anchorSnappedToWordBoundary$2;->$currentRawLine$delegate:LX9/d;
 
+    .line 10
+    .line 11
     const/4 p1, 0x0
 
+    .line 12
     invoke-direct {p0, p1}, Lkotlin/jvm/internal/Lambda;-><init>(I)V
 
+    .line 13
+    .line 14
+    .line 15
     return-void
 .end method
 
@@ -90,103 +104,107 @@
 
     move-object/from16 v0, p0
 
-    iget-object v1, v0, Landroidx/compose/foundation/text/selection/SelectionAdjustmentKt$updateSelectionBoundary$anchorSnappedToWordBoundary$2;->$info:Landroidx/compose/foundation/text/selection/g;
-
-    iget-object v2, v0, Landroidx/compose/foundation/text/selection/SelectionAdjustmentKt$updateSelectionBoundary$anchorSnappedToWordBoundary$2;->$currentRawLine$delegate:Lqh/d;
-
-    .line 1
-    invoke-interface {v2}, Lqh/d;->getValue()Ljava/lang/Object;
-
-    move-result-object v2
-
-    check-cast v2, Ljava/lang/Number;
-
-    invoke-virtual {v2}, Ljava/lang/Number;->intValue()I
-
-    move-result v2
-
-    iget v3, v0, Landroidx/compose/foundation/text/selection/SelectionAdjustmentKt$updateSelectionBoundary$anchorSnappedToWordBoundary$2;->$currentRawOffset:I
-
-    iget v4, v0, Landroidx/compose/foundation/text/selection/SelectionAdjustmentKt$updateSelectionBoundary$anchorSnappedToWordBoundary$2;->$otherRawOffset:I
-
-    iget-object v5, v0, Landroidx/compose/foundation/text/selection/SelectionAdjustmentKt$updateSelectionBoundary$anchorSnappedToWordBoundary$2;->$this_updateSelectionBoundary:Landroidx/compose/foundation/text/selection/o;
-
-    check-cast v5, Landroidx/compose/foundation/text/selection/v;
+    const/4 v1, 0x1
 
     .line 2
-    iget-boolean v6, v5, Landroidx/compose/foundation/text/selection/v;->a:Z
+    iget-object v2, v0, Landroidx/compose/foundation/text/selection/SelectionAdjustmentKt$updateSelectionBoundary$anchorSnappedToWordBoundary$2;->$info:Landroidx/compose/foundation/text/selection/g;
 
     .line 3
-    invoke-virtual {v5}, Landroidx/compose/foundation/text/selection/v;->a()Landroidx/compose/foundation/text/selection/CrossStatus;
+    iget-object v3, v0, Landroidx/compose/foundation/text/selection/SelectionAdjustmentKt$updateSelectionBoundary$anchorSnappedToWordBoundary$2;->$currentRawLine$delegate:LX9/d;
 
-    move-result-object v5
+    .line 4
+    invoke-interface {v3}, LX9/d;->getValue()Ljava/lang/Object;
 
-    sget-object v7, Landroidx/compose/foundation/text/selection/CrossStatus;->CROSSED:Landroidx/compose/foundation/text/selection/CrossStatus;
+    move-result-object v3
 
-    const/4 v8, 0x0
+    check-cast v3, Ljava/lang/Number;
 
-    const/4 v9, 0x1
+    invoke-virtual {v3}, Ljava/lang/Number;->intValue()I
 
-    if-ne v5, v7, :cond_0
+    move-result v3
 
-    const/4 v5, 0x1
+    .line 5
+    iget v4, v0, Landroidx/compose/foundation/text/selection/SelectionAdjustmentKt$updateSelectionBoundary$anchorSnappedToWordBoundary$2;->$currentRawOffset:I
+
+    .line 6
+    iget v5, v0, Landroidx/compose/foundation/text/selection/SelectionAdjustmentKt$updateSelectionBoundary$anchorSnappedToWordBoundary$2;->$otherRawOffset:I
+
+    .line 7
+    iget-object v6, v0, Landroidx/compose/foundation/text/selection/SelectionAdjustmentKt$updateSelectionBoundary$anchorSnappedToWordBoundary$2;->$this_updateSelectionBoundary:Landroidx/compose/foundation/text/selection/n;
+
+    check-cast v6, Lcom/google/android/gms/internal/measurement/y1;
+
+    .line 8
+    iget-boolean v7, v6, Lcom/google/android/gms/internal/measurement/y1;->c:Z
+
+    .line 9
+    invoke-virtual {v6}, Lcom/google/android/gms/internal/measurement/y1;->g()Landroidx/compose/foundation/text/selection/CrossStatus;
+
+    move-result-object v6
+
+    sget-object v8, Landroidx/compose/foundation/text/selection/CrossStatus;->CROSSED:Landroidx/compose/foundation/text/selection/CrossStatus;
+
+    const/4 v9, 0x0
+
+    if-ne v6, v8, :cond_0
+
+    const/4 v6, 0x1
 
     goto :goto_0
 
     :cond_0
-    const/4 v5, 0x0
+    const/4 v6, 0x0
 
-    .line 4
+    .line 10
     :goto_0
-    iget-object v7, v1, Landroidx/compose/foundation/text/selection/g;->d:Landroidx/compose/ui/text/f0;
+    iget-object v8, v2, Landroidx/compose/foundation/text/selection/g;->d:Landroidx/compose/ui/text/F;
 
-    .line 5
-    invoke-virtual {v7, v3}, Landroidx/compose/ui/text/f0;->l(I)J
+    .line 11
+    invoke-virtual {v8, v4}, Landroidx/compose/ui/text/F;->k(I)J
 
     move-result-wide v10
 
-    .line 6
-    sget v7, Landroidx/compose/ui/text/h0;->c:I
+    .line 12
+    sget v8, Landroidx/compose/ui/text/H;->c:I
 
-    const/16 v7, 0x20
+    const/16 v8, 0x20
 
-    shr-long v12, v10, v7
+    shr-long v12, v10, v8
 
-    long-to-int v7, v12
+    long-to-int v8, v12
 
-    iget-object v12, v1, Landroidx/compose/foundation/text/selection/g;->d:Landroidx/compose/ui/text/f0;
+    iget-object v12, v2, Landroidx/compose/foundation/text/selection/g;->d:Landroidx/compose/ui/text/F;
 
-    invoke-virtual {v12, v7}, Landroidx/compose/ui/text/f0;->f(I)I
+    invoke-virtual {v12, v8}, Landroidx/compose/ui/text/F;->e(I)I
 
     move-result v13
 
-    .line 7
-    iget-object v14, v12, Landroidx/compose/ui/text/f0;->b:Landroidx/compose/ui/text/l;
+    .line 13
+    iget-object v14, v12, Landroidx/compose/ui/text/F;->b:Landroidx/compose/ui/text/m;
 
-    if-ne v13, v2, :cond_1
+    iget v14, v14, Landroidx/compose/ui/text/m;->f:I
+
+    if-ne v13, v3, :cond_1
 
     goto :goto_1
 
-    .line 8
     :cond_1
-    iget v7, v14, Landroidx/compose/ui/text/l;->f:I
+    if-lt v3, v14, :cond_2
 
-    if-lt v2, v7, :cond_2
+    add-int/lit8 v8, v14, -0x1
 
-    sub-int/2addr v7, v9
+    .line 14
+    invoke-virtual {v12, v8}, Landroidx/compose/ui/text/F;->h(I)I
 
-    .line 9
-    invoke-virtual {v12, v7}, Landroidx/compose/ui/text/f0;->i(I)I
-
-    move-result v7
+    move-result v8
 
     goto :goto_1
 
-    .line 10
+    .line 15
     :cond_2
-    invoke-virtual {v12, v2}, Landroidx/compose/ui/text/f0;->i(I)I
+    invoke-virtual {v12, v3}, Landroidx/compose/ui/text/F;->h(I)I
 
-    move-result v7
+    move-result v8
 
     :goto_1
     const-wide v15, 0xffffffffL
@@ -195,75 +213,72 @@
 
     long-to-int v11, v10
 
-    .line 11
-    invoke-virtual {v12, v11}, Landroidx/compose/ui/text/f0;->f(I)I
+    .line 16
+    invoke-virtual {v12, v11}, Landroidx/compose/ui/text/F;->e(I)I
 
     move-result v10
 
-    if-ne v10, v2, :cond_3
+    if-ne v10, v3, :cond_3
 
     goto :goto_2
 
-    .line 12
     :cond_3
-    iget v10, v14, Landroidx/compose/ui/text/l;->f:I
+    if-lt v3, v14, :cond_4
 
-    if-lt v2, v10, :cond_4
+    sub-int/2addr v14, v1
 
-    sub-int/2addr v10, v9
-
-    .line 13
-    invoke-virtual {v12, v10, v8}, Landroidx/compose/ui/text/f0;->e(IZ)I
+    .line 17
+    invoke-virtual {v12, v14, v9}, Landroidx/compose/ui/text/F;->d(IZ)I
 
     move-result v11
 
     goto :goto_2
 
-    .line 14
+    .line 18
     :cond_4
-    invoke-virtual {v12, v2, v8}, Landroidx/compose/ui/text/f0;->e(IZ)I
+    invoke-virtual {v12, v3, v9}, Landroidx/compose/ui/text/F;->d(IZ)I
 
     move-result v11
 
     :goto_2
-    if-ne v7, v4, :cond_5
+    if-ne v8, v5, :cond_5
 
-    .line 15
-    invoke-virtual {v1, v11}, Landroidx/compose/foundation/text/selection/g;->a(I)Landroidx/compose/foundation/text/selection/h;
+    .line 19
+    invoke-virtual {v2, v11}, Landroidx/compose/foundation/text/selection/g;->a(I)Landroidx/compose/foundation/text/selection/h;
 
     move-result-object v1
 
     goto :goto_4
 
     :cond_5
-    if-ne v11, v4, :cond_6
+    if-ne v11, v5, :cond_6
 
-    .line 16
-    invoke-virtual {v1, v7}, Landroidx/compose/foundation/text/selection/g;->a(I)Landroidx/compose/foundation/text/selection/h;
+    .line 20
+    invoke-virtual {v2, v8}, Landroidx/compose/foundation/text/selection/g;->a(I)Landroidx/compose/foundation/text/selection/h;
 
     move-result-object v1
 
     goto :goto_4
 
     :cond_6
-    xor-int v2, v6, v5
+    xor-int v1, v7, v6
 
-    if-eqz v2, :cond_7
+    if-eqz v1, :cond_7
 
-    if-gt v3, v11, :cond_8
+    if-gt v4, v11, :cond_8
 
     goto :goto_3
 
     :cond_7
-    if-lt v3, v7, :cond_9
+    if-lt v4, v8, :cond_9
 
     :cond_8
-    move v7, v11
+    move v8, v11
 
-    .line 17
+    .line 21
     :cond_9
     :goto_3
-    invoke-virtual {v1, v7}, Landroidx/compose/foundation/text/selection/g;->a(I)Landroidx/compose/foundation/text/selection/h;
+    invoke-virtual {v2, v8}, Landroidx/compose/foundation/text/selection/g;->a(I)Landroidx/compose/foundation/text/selection/h;
 
     move-result-object v1
 
@@ -274,7 +289,7 @@
 .method public bridge synthetic invoke()Ljava/lang/Object;
     .locals 1
 
-    .line 18
+    .line 1
     invoke-virtual {p0}, Landroidx/compose/foundation/text/selection/SelectionAdjustmentKt$updateSelectionBoundary$anchorSnappedToWordBoundary$2;->invoke()Landroidx/compose/foundation/text/selection/h;
 
     move-result-object v0

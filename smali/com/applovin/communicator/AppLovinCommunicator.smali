@@ -81,11 +81,12 @@
 .method private a(Ljava/lang/String;)V
     .locals 2
 
+    .line 4
     iget-object v0, p0, Lcom/applovin/communicator/AppLovinCommunicator;->b:Lcom/applovin/impl/sdk/n;
 
     if-eqz v0, :cond_0
 
-    .line 3
+    .line 5
     invoke-static {}, Lcom/applovin/impl/sdk/n;->a()Z
 
     move-result v0
@@ -174,16 +175,17 @@
 .method public a(Lcom/applovin/impl/sdk/j;)V
     .locals 2
 
+    .line 1
     iput-object p1, p0, Lcom/applovin/communicator/AppLovinCommunicator;->a:Lcom/applovin/impl/sdk/j;
 
-    .line 1
+    .line 2
     invoke-virtual {p1}, Lcom/applovin/impl/sdk/j;->I()Lcom/applovin/impl/sdk/n;
 
     move-result-object v0
 
     iput-object v0, p0, Lcom/applovin/communicator/AppLovinCommunicator;->b:Lcom/applovin/impl/sdk/n;
 
-    .line 2
+    .line 3
     new-instance v0, Ljava/lang/StringBuilder;
 
     const-string v1, "Attached SDK instance: "
@@ -208,8 +210,11 @@
 .method public getMessagingService()Lcom/applovin/communicator/AppLovinCommunicatorMessagingService;
     .locals 1
 
+    .line 1
     iget-object v0, p0, Lcom/applovin/communicator/AppLovinCommunicator;->d:Lcom/applovin/impl/communicator/MessagingServiceImpl;
 
+    .line 2
+    .line 3
     return-object v0
 .end method
 
@@ -303,9 +308,9 @@
 
     check-cast v0, Ljava/lang/String;
 
+    .line 3
     iget-object v1, p0, Lcom/applovin/communicator/AppLovinCommunicator;->c:Lcom/applovin/impl/ll;
 
-    .line 3
     invoke-virtual {v1, p1, v0}, Lcom/applovin/impl/ll;->a(Lcom/applovin/communicator/AppLovinCommunicatorSubscriber;Ljava/lang/String;)Z
 
     move-result v1
@@ -449,9 +454,9 @@
 
     invoke-direct {p0, v1}, Lcom/applovin/communicator/AppLovinCommunicator;->a(Ljava/lang/String;)V
 
+    .line 4
     iget-object v1, p0, Lcom/applovin/communicator/AppLovinCommunicator;->c:Lcom/applovin/impl/ll;
 
-    .line 4
     invoke-virtual {v1, p1, v0}, Lcom/applovin/impl/ll;->b(Lcom/applovin/communicator/AppLovinCommunicatorSubscriber;Ljava/lang/String;)V
 
     goto :goto_0

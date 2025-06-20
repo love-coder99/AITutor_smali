@@ -3,14 +3,14 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lzh/a;
+.implements Lka/a;
 
 
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "Lkotlin/jvm/internal/Lambda;",
-        "Lzh/a;"
+        "Lka/a;"
     }
 .end annotation
 
@@ -20,7 +20,7 @@
     }
     d2 = {
         "",
-        "Ln1/e;",
+        "Lr0/d;",
         "invoke",
         "()Ljava/util/List;",
         "<anonymous>"
@@ -35,27 +35,27 @@
 
 
 # instance fields
-.field final synthetic $measuredPlaceholderPositions:Landroidx/compose/runtime/j1;
+.field final synthetic $measuredPlaceholderPositions:Landroidx/compose/runtime/Z;
     .annotation system Ldalvik/annotation/Signature;
         value = {
-            "Landroidx/compose/runtime/j1;"
+            "Landroidx/compose/runtime/Z;"
         }
     .end annotation
 .end field
 
 
 # direct methods
-.method public constructor <init>(Landroidx/compose/runtime/j1;)V
+.method public constructor <init>(Landroidx/compose/runtime/Z;)V
     .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
-            "Landroidx/compose/runtime/j1;",
+            "Landroidx/compose/runtime/Z;",
             ")V"
         }
     .end annotation
 
-    iput-object p1, p0, Landroidx/compose/foundation/text/BasicTextKt$LayoutWithLinksAndInlineContent$5$1;->$measuredPlaceholderPositions:Landroidx/compose/runtime/j1;
+    iput-object p1, p0, Landroidx/compose/foundation/text/BasicTextKt$LayoutWithLinksAndInlineContent$5$1;->$measuredPlaceholderPositions:Landroidx/compose/runtime/Z;
 
     const/4 p1, 0x0
 
@@ -83,17 +83,17 @@
         value = {
             "()",
             "Ljava/util/List<",
-            "Ln1/e;",
+            "Lr0/d;",
             ">;"
         }
     .end annotation
 
-    iget-object v0, p0, Landroidx/compose/foundation/text/BasicTextKt$LayoutWithLinksAndInlineContent$5$1;->$measuredPlaceholderPositions:Landroidx/compose/runtime/j1;
+    .line 2
+    iget-object v0, p0, Landroidx/compose/foundation/text/BasicTextKt$LayoutWithLinksAndInlineContent$5$1;->$measuredPlaceholderPositions:Landroidx/compose/runtime/Z;
 
     if-eqz v0, :cond_0
 
-    .line 2
-    invoke-interface {v0}, Landroidx/compose/runtime/d3;->getValue()Ljava/lang/Object;
+    invoke-interface {v0}, Landroidx/compose/runtime/H0;->getValue()Ljava/lang/Object;
 
     move-result-object v0
 

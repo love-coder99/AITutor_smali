@@ -3,14 +3,14 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lzh/c;
+.implements Lka/c;
 
 
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "Lkotlin/jvm/internal/Lambda;",
-        "Lzh/c;"
+        "Lka/c;"
     }
 .end annotation
 
@@ -21,7 +21,7 @@
     d2 = {
         "Landroidx/activity/b;",
         "backEvent",
-        "Lqh/r;",
+        "LX9/j;",
         "invoke",
         "(Landroidx/activity/b;)V",
         "<anonymous>"
@@ -36,14 +36,14 @@
 
 
 # instance fields
-.field final synthetic this$0:Landroidx/activity/p0;
+.field final synthetic this$0:Landroidx/activity/H;
 
 
 # direct methods
-.method public constructor <init>(Landroidx/activity/p0;)V
+.method public constructor <init>(Landroidx/activity/H;)V
     .locals 0
 
-    iput-object p1, p0, Landroidx/activity/OnBackPressedDispatcher$2;->this$0:Landroidx/activity/p0;
+    iput-object p1, p0, Landroidx/activity/OnBackPressedDispatcher$2;->this$0:Landroidx/activity/H;
 
     const/4 p1, 0x1
 
@@ -62,7 +62,7 @@
 
     invoke-virtual {p0, p1}, Landroidx/activity/OnBackPressedDispatcher$2;->invoke(Landroidx/activity/b;)V
 
-    sget-object p1, Lqh/r;->a:Lqh/r;
+    sget-object p1, LX9/j;->a:LX9/j;
 
     return-object p1
 .end method
@@ -70,15 +70,16 @@
 .method public final invoke(Landroidx/activity/b;)V
     .locals 3
 
-    iget-object v0, p0, Landroidx/activity/OnBackPressedDispatcher$2;->this$0:Landroidx/activity/p0;
-
     .line 2
-    iget-object v1, v0, Landroidx/activity/p0;->c:Landroidx/activity/i0;
+    iget-object v0, p0, Landroidx/activity/OnBackPressedDispatcher$2;->this$0:Landroidx/activity/H;
+
+    .line 3
+    iget-object v1, v0, Landroidx/activity/H;->c:Landroidx/activity/C;
 
     if-nez v1, :cond_2
 
-    .line 3
-    iget-object v0, v0, Landroidx/activity/p0;->b:Lkotlin/collections/n;
+    .line 4
+    iget-object v0, v0, Landroidx/activity/H;->b:LY9/n;
 
     invoke-interface {v0}, Ljava/util/List;->size()I
 
@@ -88,7 +89,7 @@
 
     move-result-object v0
 
-    .line 4
+    .line 5
     :cond_0
     invoke-interface {v0}, Ljava/util/ListIterator;->hasPrevious()Z
 
@@ -96,18 +97,18 @@
 
     if-eqz v1, :cond_1
 
-    .line 5
+    .line 6
     invoke-interface {v0}, Ljava/util/ListIterator;->previous()Ljava/lang/Object;
 
     move-result-object v1
 
-    .line 6
+    .line 7
     move-object v2, v1
 
-    check-cast v2, Landroidx/activity/i0;
+    check-cast v2, Landroidx/activity/C;
 
-    .line 7
-    iget-boolean v2, v2, Landroidx/activity/i0;->a:Z
+    .line 8
+    iget-boolean v2, v2, Landroidx/activity/C;->a:Z
 
     if-eqz v2, :cond_0
 
@@ -116,15 +117,15 @@
     :cond_1
     const/4 v1, 0x0
 
-    .line 8
+    .line 9
     :goto_0
-    check-cast v1, Landroidx/activity/i0;
+    check-cast v1, Landroidx/activity/C;
 
     :cond_2
     if-eqz v1, :cond_3
 
-    .line 9
-    invoke-virtual {v1, p1}, Landroidx/activity/i0;->c(Landroidx/activity/b;)V
+    .line 10
+    invoke-virtual {v1, p1}, Landroidx/activity/C;->c(Landroidx/activity/b;)V
 
     :cond_3
     return-void

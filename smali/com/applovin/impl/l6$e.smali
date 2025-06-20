@@ -337,14 +337,14 @@
 
     if-nez p1, :cond_0
 
-    .line 5
+    .line 3
     new-instance p1, Landroid/util/SparseBooleanArray;
 
     invoke-direct {p1}, Landroid/util/SparseBooleanArray;-><init>()V
 
     return-object p1
 
-    .line 6
+    .line 4
     :cond_0
     new-instance v0, Landroid/util/SparseBooleanArray;
 
@@ -352,7 +352,7 @@
 
     invoke-direct {v0, v1}, Landroid/util/SparseBooleanArray;-><init>(I)V
 
-    .line 7
+    .line 5
     array-length v1, p1
 
     const/4 v2, 0x0
@@ -364,7 +364,7 @@
 
     const/4 v4, 0x1
 
-    .line 8
+    .line 6
     invoke-virtual {v0, v3, v4}, Landroid/util/SparseBooleanArray;->append(IZ)V
 
     add-int/lit8 v2, v2, 0x1
@@ -380,51 +380,52 @@
 
     const/16 v0, 0x3f3
 
-    .line 15
+    .line 16
     invoke-static {v0}, Lcom/applovin/impl/l6$d;->c(I)Ljava/lang/String;
 
     move-result-object v0
 
-    .line 16
+    .line 17
     invoke-virtual {p1, v0}, Landroid/os/BaseBundle;->getIntArray(Ljava/lang/String;)[I
 
     move-result-object v0
 
-    .line 17
+    .line 18
     sget-object v1, Lcom/applovin/impl/po;->f:Lcom/applovin/impl/o2$a;
 
     const/16 v2, 0x3f4
 
-    .line 18
+    .line 19
     invoke-static {v2}, Lcom/applovin/impl/l6$d;->c(I)Ljava/lang/String;
 
     move-result-object v2
 
-    .line 19
+    .line 20
     invoke-virtual {p1, v2}, Landroid/os/Bundle;->getParcelableArrayList(Ljava/lang/String;)Ljava/util/ArrayList;
 
     move-result-object v2
 
-    .line 20
+    .line 21
     invoke-static {}, Lcom/applovin/impl/db;->h()Lcom/applovin/impl/db;
 
     move-result-object v3
 
-    .line 21
+    .line 22
     invoke-static {v1, v2, v3}, Lcom/applovin/impl/p2;->a(Lcom/applovin/impl/o2$a;Ljava/util/List;Ljava/util/List;)Ljava/util/List;
 
     move-result-object v1
 
+    .line 23
     sget-object v2, Lcom/applovin/impl/l6$f;->f:Lcom/applovin/impl/o2$a;
 
     const/16 v3, 0x3f5
 
-    .line 22
+    .line 24
     invoke-static {v3}, Lcom/applovin/impl/l6$d;->c(I)Ljava/lang/String;
 
     move-result-object v3
 
-    .line 23
+    .line 25
     invoke-virtual {p1, v3}, Landroid/os/Bundle;->getSparseParcelableArray(Ljava/lang/String;)Landroid/util/SparseArray;
 
     move-result-object p1
@@ -433,14 +434,14 @@
 
     invoke-direct {v3}, Landroid/util/SparseArray;-><init>()V
 
-    .line 24
+    .line 26
     invoke-static {v2, p1, v3}, Lcom/applovin/impl/p2;->a(Lcom/applovin/impl/o2$a;Landroid/util/SparseArray;Landroid/util/SparseArray;)Landroid/util/SparseArray;
 
     move-result-object p1
 
     if-eqz v0, :cond_1
 
-    .line 25
+    .line 27
     array-length v2, v0
 
     invoke-interface {v1}, Ljava/util/List;->size()I
@@ -454,30 +455,30 @@
     :cond_0
     const/4 v2, 0x0
 
-    .line 26
+    .line 28
     :goto_0
     array-length v3, v0
 
     if-ge v2, v3, :cond_1
 
-    .line 27
+    .line 29
     aget v3, v0, v2
 
-    .line 28
+    .line 30
     invoke-interface {v1, v2}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
     move-result-object v4
 
     check-cast v4, Lcom/applovin/impl/po;
 
-    .line 29
+    .line 31
     invoke-virtual {p1, v2}, Landroid/util/SparseArray;->get(I)Ljava/lang/Object;
 
     move-result-object v5
 
     check-cast v5, Lcom/applovin/impl/l6$f;
 
-    .line 30
+    .line 32
     invoke-virtual {p0, v3, v4, v5}, Lcom/applovin/impl/l6$e;->a(ILcom/applovin/impl/po;Lcom/applovin/impl/l6$f;)Lcom/applovin/impl/l6$e;
 
     add-int/lit8 v2, v2, 0x1
@@ -492,7 +493,7 @@
 .method public static synthetic a(Lcom/applovin/impl/l6$e;)Z
     .locals 0
 
-    .line 3
+    .line 1
     iget-boolean p0, p0, Lcom/applovin/impl/l6$e;->D:Z
 
     return p0
@@ -501,7 +502,7 @@
 .method public static synthetic b(Lcom/applovin/impl/l6$e;)I
     .locals 0
 
-    .line 2
+    .line 1
     iget p0, p0, Lcom/applovin/impl/l6$e;->E:I
 
     return p0
@@ -510,31 +511,41 @@
 .method private c()V
     .locals 2
 
-    .line 2
     const/4 v0, 0x1
 
+    .line 2
     iput-boolean v0, p0, Lcom/applovin/impl/l6$e;->x:Z
 
     const/4 v1, 0x0
 
+    .line 3
     iput-boolean v1, p0, Lcom/applovin/impl/l6$e;->y:Z
 
+    .line 4
     iput-boolean v0, p0, Lcom/applovin/impl/l6$e;->z:Z
 
+    .line 5
     iput-boolean v0, p0, Lcom/applovin/impl/l6$e;->A:Z
 
+    .line 6
     iput-boolean v1, p0, Lcom/applovin/impl/l6$e;->B:Z
 
+    .line 7
     iput-boolean v1, p0, Lcom/applovin/impl/l6$e;->C:Z
 
+    .line 8
     iput-boolean v1, p0, Lcom/applovin/impl/l6$e;->D:Z
 
+    .line 9
     iput v1, p0, Lcom/applovin/impl/l6$e;->E:I
 
+    .line 10
     iput-boolean v0, p0, Lcom/applovin/impl/l6$e;->F:Z
 
+    .line 11
     iput-boolean v1, p0, Lcom/applovin/impl/l6$e;->G:Z
 
+    .line 12
     iput-boolean v0, p0, Lcom/applovin/impl/l6$e;->H:Z
 
     return-void
@@ -543,7 +554,7 @@
 .method public static synthetic c(Lcom/applovin/impl/l6$e;)Z
     .locals 0
 
-    .line 3
+    .line 1
     iget-boolean p0, p0, Lcom/applovin/impl/l6$e;->F:Z
 
     return p0
@@ -552,7 +563,7 @@
 .method public static synthetic d(Lcom/applovin/impl/l6$e;)Z
     .locals 0
 
-    .line 2
+    .line 1
     iget-boolean p0, p0, Lcom/applovin/impl/l6$e;->G:Z
 
     return p0
@@ -561,7 +572,7 @@
 .method public static synthetic e(Lcom/applovin/impl/l6$e;)Z
     .locals 0
 
-    .line 2
+    .line 1
     iget-boolean p0, p0, Lcom/applovin/impl/l6$e;->H:Z
 
     return p0
@@ -570,7 +581,7 @@
 .method public static synthetic f(Lcom/applovin/impl/l6$e;)Landroid/util/SparseArray;
     .locals 0
 
-    .line 2
+    .line 1
     iget-object p0, p0, Lcom/applovin/impl/l6$e;->I:Landroid/util/SparseArray;
 
     return-object p0
@@ -579,7 +590,7 @@
 .method public static synthetic g(Lcom/applovin/impl/l6$e;)Landroid/util/SparseBooleanArray;
     .locals 0
 
-    .line 2
+    .line 1
     iget-object p0, p0, Lcom/applovin/impl/l6$e;->J:Landroid/util/SparseBooleanArray;
 
     return-object p0
@@ -588,7 +599,7 @@
 .method public static synthetic h(Lcom/applovin/impl/l6$e;)Z
     .locals 0
 
-    .line 2
+    .line 1
     iget-boolean p0, p0, Lcom/applovin/impl/l6$e;->x:Z
 
     return p0
@@ -597,7 +608,7 @@
 .method public static synthetic i(Lcom/applovin/impl/l6$e;)Z
     .locals 0
 
-    .line 2
+    .line 1
     iget-boolean p0, p0, Lcom/applovin/impl/l6$e;->y:Z
 
     return p0
@@ -606,7 +617,7 @@
 .method public static synthetic j(Lcom/applovin/impl/l6$e;)Z
     .locals 0
 
-    .line 2
+    .line 1
     iget-boolean p0, p0, Lcom/applovin/impl/l6$e;->z:Z
 
     return p0
@@ -650,7 +661,7 @@
 .method public a(I)Lcom/applovin/impl/l6$e;
     .locals 0
 
-    .line 1
+    .line 8
     iput p1, p0, Lcom/applovin/impl/l6$e;->E:I
 
     return-object p0
@@ -659,9 +670,10 @@
 .method public final a(ILcom/applovin/impl/po;Lcom/applovin/impl/l6$f;)Lcom/applovin/impl/l6$e;
     .locals 2
 
+    .line 10
     iget-object v0, p0, Lcom/applovin/impl/l6$e;->I:Landroid/util/SparseArray;
 
-    .line 10
+    .line 11
     invoke-virtual {v0, p1}, Landroid/util/SparseArray;->get(I)Ljava/lang/Object;
 
     move-result-object v0
@@ -670,17 +682,17 @@
 
     if-nez v0, :cond_0
 
-    .line 11
+    .line 12
     new-instance v0, Ljava/util/HashMap;
 
     invoke-direct {v0}, Ljava/util/HashMap;-><init>()V
 
+    .line 13
     iget-object v1, p0, Lcom/applovin/impl/l6$e;->I:Landroid/util/SparseArray;
 
-    .line 12
     invoke-virtual {v1, p1, v0}, Landroid/util/SparseArray;->put(ILjava/lang/Object;)V
 
-    .line 13
+    .line 14
     :cond_0
     invoke-interface {v0, p2}, Ljava/util/Map;->containsKey(Ljava/lang/Object;)Z
 
@@ -700,7 +712,7 @@
 
     return-object p0
 
-    .line 14
+    .line 15
     :cond_1
     invoke-interface {v0, p2, p3}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -710,7 +722,7 @@
 .method public a(Z)Lcom/applovin/impl/l6$e;
     .locals 0
 
-    .line 2
+    .line 7
     iput-boolean p1, p0, Lcom/applovin/impl/l6$e;->D:Z
 
     return-object p0
@@ -719,7 +731,7 @@
 .method public bridge synthetic a(IIZ)Lcom/applovin/impl/uo$a;
     .locals 0
 
-    .line 31
+    .line 33
     invoke-virtual {p0, p1, p2, p3}, Lcom/applovin/impl/l6$e;->b(IIZ)Lcom/applovin/impl/l6$e;
 
     move-result-object p1
@@ -741,7 +753,7 @@
 .method public bridge synthetic a(Landroid/content/Context;Z)Lcom/applovin/impl/uo$a;
     .locals 0
 
-    .line 32
+    .line 34
     invoke-virtual {p0, p1, p2}, Lcom/applovin/impl/l6$e;->b(Landroid/content/Context;Z)Lcom/applovin/impl/l6$e;
 
     move-result-object p1
@@ -752,7 +764,7 @@
 .method public bridge synthetic a()Lcom/applovin/impl/uo;
     .locals 1
 
-    .line 4
+    .line 2
     invoke-virtual {p0}, Lcom/applovin/impl/l6$e;->b()Lcom/applovin/impl/l6$d;
 
     move-result-object v0
@@ -794,7 +806,7 @@
 .method public b(Z)Lcom/applovin/impl/l6$e;
     .locals 0
 
-    .line 1
+    .line 2
     iput-boolean p1, p0, Lcom/applovin/impl/l6$e;->B:Z
 
     return-object p0
@@ -803,7 +815,7 @@
 .method public c(Landroid/content/Context;)Lcom/applovin/impl/l6$e;
     .locals 0
 
-    .line 4
+    .line 14
     invoke-super {p0, p1}, Lcom/applovin/impl/uo$a;->a(Landroid/content/Context;)Lcom/applovin/impl/uo$a;
 
     return-object p0
@@ -812,7 +824,7 @@
 .method public c(Z)Lcom/applovin/impl/l6$e;
     .locals 0
 
-    .line 1
+    .line 13
     iput-boolean p1, p0, Lcom/applovin/impl/l6$e;->C:Z
 
     return-object p0
@@ -821,7 +833,7 @@
 .method public d(Z)Lcom/applovin/impl/l6$e;
     .locals 0
 
-    .line 1
+    .line 2
     iput-boolean p1, p0, Lcom/applovin/impl/l6$e;->H:Z
 
     return-object p0
@@ -830,7 +842,7 @@
 .method public e(Z)Lcom/applovin/impl/l6$e;
     .locals 0
 
-    .line 1
+    .line 2
     iput-boolean p1, p0, Lcom/applovin/impl/l6$e;->y:Z
 
     return-object p0
@@ -839,7 +851,7 @@
 .method public f(Z)Lcom/applovin/impl/l6$e;
     .locals 0
 
-    .line 1
+    .line 2
     iput-boolean p1, p0, Lcom/applovin/impl/l6$e;->z:Z
 
     return-object p0
@@ -848,7 +860,7 @@
 .method public g(Z)Lcom/applovin/impl/l6$e;
     .locals 0
 
-    .line 1
+    .line 2
     iput-boolean p1, p0, Lcom/applovin/impl/l6$e;->A:Z
 
     return-object p0
@@ -857,7 +869,7 @@
 .method public h(Z)Lcom/applovin/impl/l6$e;
     .locals 0
 
-    .line 1
+    .line 2
     iput-boolean p1, p0, Lcom/applovin/impl/l6$e;->F:Z
 
     return-object p0
@@ -866,7 +878,7 @@
 .method public i(Z)Lcom/applovin/impl/l6$e;
     .locals 0
 
-    .line 1
+    .line 2
     iput-boolean p1, p0, Lcom/applovin/impl/l6$e;->x:Z
 
     return-object p0
@@ -875,7 +887,7 @@
 .method public j(Z)Lcom/applovin/impl/l6$e;
     .locals 0
 
-    .line 1
+    .line 2
     iput-boolean p1, p0, Lcom/applovin/impl/l6$e;->G:Z
 
     return-object p0

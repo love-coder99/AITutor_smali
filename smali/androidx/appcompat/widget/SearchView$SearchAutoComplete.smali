@@ -39,9 +39,9 @@
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
     .locals 1
 
-    sget v0, Lg/a;->autoCompleteTextViewStyle:I
-
     .line 2
+    sget v0, Li/a;->autoCompleteTextViewStyle:I
+
     invoke-direct {p0, p1, p2, v0}, Landroidx/appcompat/widget/SearchView$SearchAutoComplete;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
 
     return-void
@@ -787,8 +787,11 @@
 .method public setSearchView(Landroidx/appcompat/widget/SearchView;)V
     .locals 0
 
+    .line 1
     iput-object p1, p0, Landroidx/appcompat/widget/SearchView$SearchAutoComplete;->mSearchView:Landroidx/appcompat/widget/SearchView;
 
+    .line 2
+    .line 3
     return-void
 .end method
 

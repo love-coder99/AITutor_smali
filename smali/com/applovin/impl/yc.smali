@@ -75,9 +75,9 @@
 .method private a(IZ)I
     .locals 2
 
+    .line 7
     iget-object v0, p0, Lcom/applovin/impl/yc;->a:Lcom/applovin/impl/ug;
 
-    .line 7
     invoke-static {p1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
     move-result-object v1
@@ -90,10 +90,10 @@
 
     add-int/2addr p1, v0
 
+    .line 8
     :goto_0
     iget-object p2, p0, Lcom/applovin/impl/yc;->a:Lcom/applovin/impl/ug;
 
-    .line 8
     invoke-virtual {p2}, Lcom/applovin/impl/ug;->size()I
 
     move-result p2
@@ -127,9 +127,9 @@
 .method private a(II)V
     .locals 4
 
+    .line 21
     iget-object v0, p0, Lcom/applovin/impl/yc;->c:Ljava/util/Map;
 
-    .line 21
     invoke-static {p1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
     move-result-object v1
@@ -140,9 +140,9 @@
 
     if-eqz v0, :cond_0
 
+    .line 22
     iget-object v0, p0, Lcom/applovin/impl/yc;->c:Ljava/util/Map;
 
-    .line 22
     invoke-static {p2}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
     move-result-object v1
@@ -161,27 +161,27 @@
 
     invoke-interface {v0, v1, v2}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
+    .line 23
     iget-object v0, p0, Lcom/applovin/impl/yc;->b:Ljava/util/TreeSet;
 
-    .line 23
     invoke-static {p2}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
     move-result-object p2
 
     invoke-virtual {v0, p2}, Ljava/util/TreeSet;->add(Ljava/lang/Object;)Z
 
+    .line 24
     iget-object p2, p0, Lcom/applovin/impl/yc;->c:Ljava/util/Map;
 
-    .line 24
     invoke-static {p1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
     move-result-object v0
 
     invoke-interface {p2, v0}, Ljava/util/Map;->remove(Ljava/lang/Object;)Ljava/lang/Object;
 
+    .line 25
     iget-object p2, p0, Lcom/applovin/impl/yc;->b:Ljava/util/TreeSet;
 
-    .line 25
     invoke-static {p1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
     move-result-object p1
@@ -202,19 +202,19 @@
 
     if-nez v0, :cond_0
 
+    .line 10
     const-string p1, "MaxAdPlacerData"
 
     const-string v0, "No positioning info was provided with ad placer settings. You must set at least (1) one or more fixed positions or (2) a repeating interval greater than or equal to 2 for the ad placer to determine where to position ads."
 
-    .line 10
     invoke-static {p1, v0}, Lcom/applovin/impl/sdk/n;->h(Ljava/lang/String;Ljava/lang/String;)V
 
     return-void
 
+    .line 11
     :cond_0
     iget-object v0, p0, Lcom/applovin/impl/yc;->a:Lcom/applovin/impl/ug;
 
-    .line 11
     invoke-virtual {p1}, Lcom/applovin/mediation/nativeAds/adPlacer/MaxAdPlacerSettings;->getFixedPositions()Ljava/util/Set;
 
     move-result-object v1
@@ -233,30 +233,30 @@
 
     move-result v0
 
+    .line 14
     iget-object v1, p0, Lcom/applovin/impl/yc;->a:Lcom/applovin/impl/ug;
 
-    .line 14
     invoke-virtual {v1}, Lcom/applovin/impl/ug;->isEmpty()Z
 
     move-result v1
 
     if-eqz v1, :cond_1
 
+    .line 15
     iget-object v1, p0, Lcom/applovin/impl/yc;->a:Lcom/applovin/impl/ug;
 
     add-int/lit8 v2, v0, -0x1
 
-    .line 15
     invoke-static {v2}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
     move-result-object v2
 
     invoke-virtual {v1, v2}, Lcom/applovin/impl/ug;->a(Ljava/lang/Comparable;)Z
 
+    .line 16
     :cond_1
     iget-object v1, p0, Lcom/applovin/impl/yc;->a:Lcom/applovin/impl/ug;
 
-    .line 16
     invoke-virtual {v1}, Lcom/applovin/impl/ug;->a()Ljava/lang/Comparable;
 
     move-result-object v1
@@ -270,9 +270,9 @@
     :goto_0
     add-int/2addr v1, v0
 
+    .line 17
     iget-object v2, p0, Lcom/applovin/impl/yc;->a:Lcom/applovin/impl/ug;
 
-    .line 17
     invoke-virtual {v2}, Lcom/applovin/impl/ug;->size()I
 
     move-result v2
@@ -283,9 +283,9 @@
 
     if-ge v2, v3, :cond_2
 
+    .line 18
     iget-object v2, p0, Lcom/applovin/impl/yc;->a:Lcom/applovin/impl/ug;
 
-    .line 18
     invoke-static {v1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
     move-result-object v3
@@ -303,9 +303,9 @@
 .method public a(I)Lcom/applovin/mediation/MaxAd;
     .locals 1
 
+    .line 6
     iget-object v0, p0, Lcom/applovin/impl/yc;->c:Ljava/util/Map;
 
-    .line 6
     invoke-static {p1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
     move-result-object p1
@@ -322,14 +322,14 @@
 .method public a()V
     .locals 1
 
+    .line 1
     iget-object v0, p0, Lcom/applovin/impl/yc;->c:Ljava/util/Map;
 
-    .line 1
     invoke-interface {v0}, Ljava/util/Map;->clear()V
 
+    .line 2
     iget-object v0, p0, Lcom/applovin/impl/yc;->b:Ljava/util/TreeSet;
 
-    .line 2
     invoke-virtual {v0}, Ljava/util/TreeSet;->clear()V
 
     return-void
@@ -338,18 +338,18 @@
 .method public a(Lcom/applovin/mediation/MaxAd;I)V
     .locals 2
 
+    .line 19
     iget-object v0, p0, Lcom/applovin/impl/yc;->c:Ljava/util/Map;
 
-    .line 19
     invoke-static {p2}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
     move-result-object v1
 
     invoke-interface {v0, v1, p1}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
+    .line 20
     iget-object p1, p0, Lcom/applovin/impl/yc;->b:Ljava/util/TreeSet;
 
-    .line 20
     invoke-static {p2}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
     move-result-object p2
@@ -380,14 +380,14 @@
 
     check-cast v0, Ljava/lang/Integer;
 
+    .line 4
     iget-object v1, p0, Lcom/applovin/impl/yc;->c:Ljava/util/Map;
 
-    .line 4
     invoke-interface {v1, v0}, Ljava/util/Map;->remove(Ljava/lang/Object;)Ljava/lang/Object;
 
+    .line 5
     iget-object v1, p0, Lcom/applovin/impl/yc;->b:Ljava/util/TreeSet;
 
-    .line 5
     invoke-virtual {v1, v0}, Ljava/util/TreeSet;->remove(Ljava/lang/Object;)Z
 
     goto :goto_0
@@ -446,6 +446,7 @@
 .method public c()I
     .locals 3
 
+    .line 2
     iget v0, p0, Lcom/applovin/impl/yc;->d:I
 
     const/4 v1, -0x1
@@ -458,13 +459,14 @@
 
     goto :goto_1
 
+    .line 3
     :cond_0
     :goto_0
     iget v2, p0, Lcom/applovin/impl/yc;->e:I
 
     if-gt v0, v2, :cond_2
 
-    .line 3
+    .line 4
     invoke-virtual {p0, v0}, Lcom/applovin/impl/yc;->g(I)Z
 
     move-result v2
@@ -494,7 +496,7 @@
 
     const/4 v0, 0x0
 
-    .line 2
+    .line 1
     invoke-direct {p0, p1, v0}, Lcom/applovin/impl/yc;->a(IZ)I
 
     move-result v0
@@ -507,9 +509,10 @@
 .method public c(II)V
     .locals 0
 
-    .line 1
+    .line 5
     iput p1, p0, Lcom/applovin/impl/yc;->d:I
 
+    .line 6
     iput p2, p0, Lcom/applovin/impl/yc;->e:I
 
     return-void

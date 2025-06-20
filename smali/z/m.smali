@@ -1,19 +1,14 @@
-.class public final synthetic Lz/m;
+.class public final LZ/m;
 .super Ljava/lang/Object;
 .source "SourceFile"
 
-# interfaces
-.implements Landroidx/camera/core/impl/b1;
-
 
 # instance fields
-.field public final synthetic b:I
-
-.field public final synthetic c:Ly/r0;
+.field public final a:Landroidx/camera/lifecycle/e;
 
 
 # direct methods
-.method public synthetic constructor <init>(Ly/r0;I)V
+.method public constructor <init>(Landroidx/camera/lifecycle/e;)V
     .locals 0
 
     .line 1
@@ -22,285 +17,396 @@
     .line 2
     .line 3
     .line 4
-    iput p2, p0, Lz/m;->b:I
+    iput-object p1, p0, LZ/m;->a:Landroidx/camera/lifecycle/e;
 
     .line 5
     .line 6
-    iput-object p1, p0, Lz/m;->c:Ly/r0;
-
-    .line 7
-    .line 8
     return-void
 .end method
 
 
 # virtual methods
-.method public final b(Landroidx/camera/core/impl/c1;)V
-    .locals 5
+.method public final a(Landroidx/lifecycle/x;LB/q;LB2/t;)Landroidx/camera/lifecycle/b;
+    .locals 6
 
     .line 1
-    iget v0, p0, Lz/m;->b:I
+    iget-object v0, p0, LZ/m;->a:Landroidx/camera/lifecycle/e;
 
     .line 2
     .line 3
-    iget-object v1, p0, Lz/m;->c:Ly/r0;
+    invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
     .line 4
     .line 5
-    packed-switch v0, :pswitch_data_0
-
     .line 6
+    const-string v1, "CX:bindToLifecycle-UseCaseGroup"
+
     .line 7
     .line 8
-    invoke-virtual {v1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+    invoke-static {v1}, LE/p;->O(Ljava/lang/String;)Ljava/lang/String;
 
     .line 9
     .line 10
     .line 11
-    const-string v0, "CaptureNode"
+    move-result-object v1
 
     .line 12
-    .line 13
-    :try_start_0
-    invoke-interface {p1}, Landroidx/camera/core/impl/c1;->b()Ly/a1;
+    invoke-static {v1}, Landroid/os/Trace;->beginSection(Ljava/lang/String;)V
 
+    .line 13
     .line 14
     .line 15
-    .line 16
-    move-result-object p1
+    :try_start_0
+    iget-object v1, v0, Landroidx/camera/lifecycle/e;->d:Landroidx/camera/core/b;
 
+    .line 16
     .line 17
-    if-eqz p1, :cond_1
+    const/4 v2, 0x0
 
     .line 18
-    .line 19
-    iget-object v2, v1, Ly/r0;->c:Ljava/lang/Object;
+    if-nez v1, :cond_0
 
+    .line 19
     .line 20
+    const/4 v1, 0x0
+
     .line 21
-    check-cast v2, Lz/r;
+    goto :goto_0
 
     .line 22
+    :cond_0
+    iget-object v1, v1, Landroidx/camera/core/b;->f:Lv/j;
+
     .line 23
-    if-nez v2, :cond_0
-
     .line 24
-    .line 25
-    invoke-static {v0}, Lcom/facebook/appevents/g;->i(Ljava/lang/String;)Ljava/lang/String;
+    if-eqz v1, :cond_2
 
+    .line 25
     .line 26
+    iget-object v1, v1, Lv/j;->b:LS0/i;
+
     .line 27
     .line 28
-    invoke-interface {p1}, Ljava/lang/AutoCloseable;->close()V
+    iget v1, v1, LS0/i;->b:I
 
     .line 29
     .line 30
+    :goto_0
+    const/4 v3, 0x2
+
     .line 31
-    goto :goto_0
+    if-eq v1, v3, :cond_1
 
     .line 32
-    :cond_0
-    iget-object v2, v1, Ly/r0;->g:Ljava/lang/Object;
-
     .line 33
-    .line 34
-    check-cast v2, Lz/e;
+    invoke-static {v0}, Landroidx/camera/lifecycle/e;->b(Landroidx/camera/lifecycle/e;)V
 
+    .line 34
     .line 35
     .line 36
-    invoke-static {v2}, Ljava/util/Objects;->requireNonNull(Ljava/lang/Object;)Ljava/lang/Object;
+    iget-object v1, p3, LB2/t;->c:Ljava/lang/Object;
 
     .line 37
     .line 38
+    move-object v3, v1
+
     .line 39
-    iget-object v1, v1, Ly/r0;->c:Ljava/lang/Object;
+    check-cast v3, LB/t0;
 
     .line 40
     .line 41
-    check-cast v1, Lz/r;
+    iget-object v1, p3, LB2/t;->f:Ljava/lang/Object;
 
     .line 42
     .line 43
-    new-instance v3, Lz/f;
+    move-object v4, v1
 
     .line 44
-    .line 45
-    invoke-direct {v3, v1, p1}, Lz/f;-><init>(Lz/r;Ly/a1;)V
+    check-cast v4, Ljava/util/ArrayList;
 
+    .line 45
     .line 46
+    iget-object p3, p3, LB2/t;->d:Ljava/lang/Object;
+
     .line 47
     .line 48
-    iget-object p1, v2, Lz/e;->b:Lh0/k;
+    check-cast p3, Ljava/util/ArrayList;
 
     .line 49
     .line 50
-    invoke-virtual {p1, v3}, Lh0/k;->accept(Ljava/lang/Object;)V
-    :try_end_0
-    .catch Ljava/lang/IllegalStateException; {:try_start_0 .. :try_end_0} :catch_0
+    new-array v1, v2, [Landroidx/camera/core/f;
 
     .line 51
     .line 52
+    invoke-virtual {p3, v1}, Ljava/util/ArrayList;->toArray([Ljava/lang/Object;)[Ljava/lang/Object;
+
     .line 53
-    goto :goto_0
-
     .line 54
-    :catch_0
-    invoke-static {v0}, Lcom/facebook/appevents/g;->i(Ljava/lang/String;)Ljava/lang/String;
-
     .line 55
-    .line 56
-    .line 57
-    :cond_1
-    :goto_0
-    return-void
+    move-result-object p3
 
+    .line 56
+    check-cast p3, [Landroidx/camera/core/f;
+
+    .line 57
     .line 58
-    :pswitch_0
-    invoke-virtual {v1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+    array-length v1, p3
 
     .line 59
+    invoke-static {p3, v1}, Ljava/util/Arrays;->copyOf([Ljava/lang/Object;I)[Ljava/lang/Object;
+
     .line 60
     .line 61
-    const-string v0, "Failed to acquire latest image"
-
     .line 62
+    move-result-object p3
+
     .line 63
-    const/4 v2, 0x2
+    move-object v5, p3
 
     .line 64
-    :try_start_1
-    invoke-interface {p1}, Landroidx/camera/core/impl/c1;->b()Ly/a1;
+    check-cast v5, [Landroidx/camera/core/f;
 
     .line 65
     .line 66
+    move-object v1, p1
+
     .line 67
-    move-result-object p1
+    move-object v2, p2
 
     .line 68
-    if-eqz p1, :cond_2
+    invoke-virtual/range {v0 .. v5}, Landroidx/camera/lifecycle/e;->c(Landroidx/lifecycle/x;LB/q;LB/t0;Ljava/util/ArrayList;[Landroidx/camera/core/f;)Landroidx/camera/lifecycle/b;
 
     .line 69
     .line 70
-    invoke-virtual {v1, p1}, Ly/r0;->g(Ly/a1;)V
-
     .line 71
+    move-result-object p1
+    :try_end_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+
     .line 72
+    invoke-static {}, Landroid/os/Trace;->endSection()V
+
     .line 73
-    goto :goto_2
-
     .line 74
-    :catch_1
-    move-exception p1
-
     .line 75
-    goto :goto_1
+    return-object p1
 
     .line 76
-    :cond_2
-    iget-object p1, v1, Ly/r0;->c:Ljava/lang/Object;
+    :catchall_0
+    move-exception p1
 
     .line 77
+    goto :goto_1
+
     .line 78
-    move-object v3, p1
+    :cond_1
+    :try_start_1
+    new-instance p1, Ljava/lang/UnsupportedOperationException;
 
     .line 79
-    check-cast v3, Lz/r;
-
     .line 80
+    const-string p2, "bindToLifecycle for single camera is not supported in concurrent camera mode, call unbindAll() first."
+
     .line 81
-    if-eqz v3, :cond_3
-
     .line 82
-    .line 83
-    check-cast p1, Lz/r;
+    invoke-direct {p1, p2}, Ljava/lang/UnsupportedOperationException;-><init>(Ljava/lang/String;)V
 
+    .line 83
     .line 84
     .line 85
-    iget p1, p1, Lz/r;->a:I
+    throw p1
 
     .line 86
+    :cond_2
+    new-instance p1, Ljava/lang/IllegalStateException;
+
     .line 87
-    new-instance v3, Landroidx/camera/core/ImageCaptureException;
-
     .line 88
-    .line 89
-    const/4 v4, 0x0
+    const-string p2, "CameraX not initialized yet."
 
+    .line 89
     .line 90
-    invoke-direct {v3, v2, v0, v4}, Landroidx/camera/core/ImageCaptureException;-><init>(ILjava/lang/String;Ljava/lang/Throwable;)V
+    invoke-direct {p1, p2}, Ljava/lang/IllegalStateException;-><init>(Ljava/lang/String;)V
 
     .line 91
     .line 92
     .line 93
-    new-instance v4, Lz/g;
+    throw p1
+    :try_end_1
+    .catchall {:try_start_1 .. :try_end_1} :catchall_0
 
     .line 94
-    .line 95
-    invoke-direct {v4, p1, v3}, Lz/g;-><init>(ILandroidx/camera/core/ImageCaptureException;)V
+    :goto_1
+    invoke-static {}, Landroid/os/Trace;->endSection()V
 
+    .line 95
     .line 96
     .line 97
-    .line 98
-    invoke-virtual {v1, v4}, Ly/r0;->i(Lz/g;)V
-    :try_end_1
-    .catch Ljava/lang/IllegalStateException; {:try_start_1 .. :try_end_1} :catch_1
+    throw p1
+.end method
 
-    .line 99
-    .line 100
-    .line 101
-    goto :goto_2
+.method public final varargs b([Landroidx/camera/core/f;)V
+    .locals 3
 
-    .line 102
-    :goto_1
-    iget-object v3, v1, Ly/r0;->c:Ljava/lang/Object;
+    .line 1
+    iget-object v0, p0, LZ/m;->a:Landroidx/camera/lifecycle/e;
 
-    .line 103
-    .line 104
-    check-cast v3, Lz/r;
+    .line 2
+    .line 3
+    invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
-    .line 105
-    .line 106
-    if-eqz v3, :cond_3
+    .line 4
+    .line 5
+    .line 6
+    const-string v1, "CX:unbind"
 
-    .line 107
-    .line 108
-    new-instance v4, Landroidx/camera/core/ImageCaptureException;
+    .line 7
+    .line 8
+    invoke-static {v1}, LE/p;->O(Ljava/lang/String;)Ljava/lang/String;
 
-    .line 109
-    .line 110
-    invoke-direct {v4, v2, v0, p1}, Landroidx/camera/core/ImageCaptureException;-><init>(ILjava/lang/String;Ljava/lang/Throwable;)V
+    .line 9
+    .line 10
+    .line 11
+    move-result-object v1
 
-    .line 111
-    .line 112
-    .line 113
-    new-instance p1, Lz/g;
+    .line 12
+    invoke-static {v1}, Landroid/os/Trace;->beginSection(Ljava/lang/String;)V
 
-    .line 114
-    .line 115
-    iget v0, v3, Lz/r;->a:I
+    .line 13
+    .line 14
+    .line 15
+    :try_start_0
+    invoke-static {}, Landroidx/datastore/preferences/protobuf/y0;->b()V
 
-    .line 116
-    .line 117
-    invoke-direct {p1, v0, v4}, Lz/g;-><init>(ILandroidx/camera/core/ImageCaptureException;)V
+    .line 16
+    .line 17
+    .line 18
+    iget-object v1, v0, Landroidx/camera/lifecycle/e;->d:Landroidx/camera/core/b;
 
-    .line 118
-    .line 119
-    .line 120
-    invoke-virtual {v1, p1}, Ly/r0;->i(Lz/g;)V
+    .line 19
+    .line 20
+    if-nez v1, :cond_0
 
-    .line 121
-    .line 122
-    .line 123
-    :cond_3
-    :goto_2
+    .line 21
+    .line 22
+    const/4 v1, 0x0
+
+    .line 23
+    goto :goto_0
+
+    .line 24
+    :cond_0
+    iget-object v1, v1, Landroidx/camera/core/b;->f:Lv/j;
+
+    .line 25
+    .line 26
+    if-eqz v1, :cond_2
+
+    .line 27
+    .line 28
+    iget-object v1, v1, Lv/j;->b:LS0/i;
+
+    .line 29
+    .line 30
+    iget v1, v1, LS0/i;->b:I
+
+    .line 31
+    .line 32
+    :goto_0
+    const/4 v2, 0x2
+
+    .line 33
+    if-eq v1, v2, :cond_1
+
+    .line 34
+    .line 35
+    iget-object v0, v0, Landroidx/camera/lifecycle/e;->c:Li5/o;
+
+    .line 36
+    .line 37
+    array-length v1, p1
+
+    .line 38
+    invoke-static {p1, v1}, Ljava/util/Arrays;->copyOf([Ljava/lang/Object;I)[Ljava/lang/Object;
+
+    .line 39
+    .line 40
+    .line 41
+    move-result-object p1
+
+    .line 42
+    invoke-static {p1}, LY9/r;->z([Ljava/lang/Object;)Ljava/util/List;
+
+    .line 43
+    .line 44
+    .line 45
+    move-result-object p1
+
+    .line 46
+    invoke-virtual {v0, p1}, Li5/o;->O(Ljava/util/List;)V
+    :try_end_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+
+    .line 47
+    .line 48
+    .line 49
+    invoke-static {}, Landroid/os/Trace;->endSection()V
+
+    .line 50
+    .line 51
+    .line 52
     return-void
 
-    .line 124
-    nop
+    .line 53
+    :catchall_0
+    move-exception p1
 
-    .line 125
-    :pswitch_data_0
-    .packed-switch 0x0
-        :pswitch_0
-    .end packed-switch
+    .line 54
+    goto :goto_1
+
+    .line 55
+    :cond_1
+    :try_start_1
+    new-instance p1, Ljava/lang/UnsupportedOperationException;
+
+    .line 56
+    .line 57
+    const-string v0, "Unbind usecase is not supported in concurrent camera mode, call unbindAll() first."
+
+    .line 58
+    .line 59
+    invoke-direct {p1, v0}, Ljava/lang/UnsupportedOperationException;-><init>(Ljava/lang/String;)V
+
+    .line 60
+    .line 61
+    .line 62
+    throw p1
+
+    .line 63
+    :cond_2
+    new-instance p1, Ljava/lang/IllegalStateException;
+
+    .line 64
+    .line 65
+    const-string v0, "CameraX not initialized yet."
+
+    .line 66
+    .line 67
+    invoke-direct {p1, v0}, Ljava/lang/IllegalStateException;-><init>(Ljava/lang/String;)V
+
+    .line 68
+    .line 69
+    .line 70
+    throw p1
+    :try_end_1
+    .catchall {:try_start_1 .. :try_end_1} :catchall_0
+
+    .line 71
+    :goto_1
+    invoke-static {}, Landroid/os/Trace;->endSection()V
+
+    .line 72
+    .line 73
+    .line 74
+    throw p1
 .end method

@@ -40,8 +40,11 @@
 .method public a()Ljava/util/Map;
     .locals 1
 
+    .line 1
     iget-object v0, p0, Lcom/applovin/impl/f$b$a;->a:Lcom/applovin/impl/f$b;
 
+    .line 2
+    .line 3
     return-object v0
 .end method
 

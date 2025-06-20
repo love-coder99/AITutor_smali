@@ -57,7 +57,7 @@
     return-wide v0
 .end method
 
-.method public final c(Lzh/a;)Landroidx/compose/ui/text/style/m;
+.method public final c(Lka/a;)Landroidx/compose/ui/text/style/m;
     .locals 1
 
     .line 1
@@ -65,7 +65,7 @@
 
     .line 2
     .line 3
-    invoke-static {p0, v0}, Lrb/h;->d(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-virtual {p0, v0}, Ljava/lang/Object;->equals(Ljava/lang/Object;)Z
 
     .line 4
     .line 5
@@ -84,7 +84,7 @@
 
     .line 11
     :cond_0
-    invoke-interface {p1}, Lzh/a;->invoke()Ljava/lang/Object;
+    invoke-interface {p1}, Lka/a;->invoke()Ljava/lang/Object;
 
     .line 12
     .line 13

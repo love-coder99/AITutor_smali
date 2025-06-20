@@ -3,10 +3,6 @@
 .source "SourceFile"
 
 
-# static fields
-.field public static final synthetic a:I
-
-
 # virtual methods
 .method public abstract a(JJLandroidx/compose/ui/unit/LayoutDirection;)J
 .end method

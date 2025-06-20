@@ -24,6 +24,7 @@
 .method public constructor <init>()V
     .locals 0
 
+    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -32,9 +33,10 @@
 .method public constructor <init>(Lcom/applovin/impl/f4;)V
     .locals 0
 
-    .line 1
+    .line 2
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
+    .line 3
     iput-object p1, p0, Lcom/applovin/impl/h4$a;->b:Lcom/applovin/impl/f4;
 
     return-void
@@ -43,7 +45,7 @@
 .method public static synthetic a(Lcom/applovin/impl/h4$a;)Lcom/applovin/impl/f4;
     .locals 0
 
-    .line 4
+    .line 1
     iget-object p0, p0, Lcom/applovin/impl/h4$a;->b:Lcom/applovin/impl/f4;
 
     return-object p0
@@ -54,7 +56,7 @@
 .method public a()Lcom/applovin/impl/f4;
     .locals 1
 
-    .line 1
+    .line 3
     iget-object v0, p0, Lcom/applovin/impl/h4$a;->b:Lcom/applovin/impl/f4;
 
     return-object v0
@@ -63,7 +65,7 @@
 .method public a(Lcom/applovin/impl/f4;)V
     .locals 0
 
-    .line 2
+    .line 5
     iput-object p1, p0, Lcom/applovin/impl/h4$a;->b:Lcom/applovin/impl/f4;
 
     return-void
@@ -72,7 +74,7 @@
 .method public a(Z)V
     .locals 0
 
-    .line 3
+    .line 4
     iput-boolean p1, p0, Lcom/applovin/impl/h4$a;->a:Z
 
     return-void
@@ -81,7 +83,7 @@
 .method public a(Ljava/lang/Object;)Z
     .locals 0
 
-    .line 5
+    .line 2
     instance-of p1, p1, Lcom/applovin/impl/h4$a;
 
     return p1
@@ -90,8 +92,11 @@
 .method public b()Z
     .locals 1
 
+    .line 1
     iget-boolean v0, p0, Lcom/applovin/impl/h4$a;->a:Z
 
+    .line 2
+    .line 3
     return v0
 .end method
 

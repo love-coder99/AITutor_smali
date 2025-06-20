@@ -3,14 +3,14 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lzh/a;
+.implements Lka/a;
 
 
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "Lkotlin/jvm/internal/Lambda;",
-        "Lzh/a;"
+        "Lka/a;"
     }
 .end annotation
 
@@ -35,14 +35,14 @@
 
 
 # instance fields
-.field final synthetic this$0:Landroidx/compose/ui/text/m;
+.field final synthetic this$0:Landroidx/compose/ui/text/n;
 
 
 # direct methods
-.method public constructor <init>(Landroidx/compose/ui/text/m;)V
+.method public constructor <init>(Landroidx/compose/ui/text/n;)V
     .locals 0
 
-    iput-object p1, p0, Landroidx/compose/ui/text/MultiParagraphIntrinsics$minIntrinsicWidth$2;->this$0:Landroidx/compose/ui/text/m;
+    iput-object p1, p0, Landroidx/compose/ui/text/MultiParagraphIntrinsics$minIntrinsicWidth$2;->this$0:Landroidx/compose/ui/text/n;
 
     const/4 p1, 0x0
 
@@ -56,12 +56,13 @@
 .method public final invoke()Ljava/lang/Float;
     .locals 8
 
-    iget-object v0, p0, Landroidx/compose/ui/text/MultiParagraphIntrinsics$minIntrinsicWidth$2;->this$0:Landroidx/compose/ui/text/m;
-
     .line 2
-    iget-object v0, v0, Landroidx/compose/ui/text/m;->e:Ljava/util/ArrayList;
+    iget-object v0, p0, Landroidx/compose/ui/text/MultiParagraphIntrinsics$minIntrinsicWidth$2;->this$0:Landroidx/compose/ui/text/n;
 
     .line 3
+    iget-object v0, v0, Landroidx/compose/ui/text/n;->e:Ljava/util/ArrayList;
+
+    .line 4
     invoke-virtual {v0}, Ljava/util/ArrayList;->isEmpty()Z
 
     move-result v1
@@ -75,26 +76,26 @@
     :cond_0
     const/4 v1, 0x0
 
-    .line 4
+    .line 5
     invoke-interface {v0, v1}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
     move-result-object v1
 
-    .line 5
+    .line 6
     move-object v2, v1
 
     check-cast v2, Landroidx/compose/ui/text/p;
 
-    .line 6
-    iget-object v2, v2, Landroidx/compose/ui/text/p;->a:Landroidx/compose/ui/text/q;
-
     .line 7
-    invoke-interface {v2}, Landroidx/compose/ui/text/q;->b()F
+    iget-object v2, v2, Landroidx/compose/ui/text/p;->a:Landroidx/compose/ui/text/platform/c;
+
+    .line 8
+    invoke-virtual {v2}, Landroidx/compose/ui/text/platform/c;->b()F
 
     move-result v2
 
-    .line 8
-    invoke-static {v0}, Lma/a;->I(Ljava/util/List;)I
+    .line 9
+    invoke-static {v0}, LY9/r;->y(Ljava/util/List;)I
 
     move-result v3
 
@@ -102,26 +103,26 @@
 
     if-gt v4, v3, :cond_2
 
-    .line 9
+    .line 10
     :goto_0
     invoke-interface {v0, v4}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
     move-result-object v5
 
-    .line 10
+    .line 11
     move-object v6, v5
 
     check-cast v6, Landroidx/compose/ui/text/p;
 
-    .line 11
-    iget-object v6, v6, Landroidx/compose/ui/text/p;->a:Landroidx/compose/ui/text/q;
-
     .line 12
-    invoke-interface {v6}, Landroidx/compose/ui/text/q;->b()F
+    iget-object v6, v6, Landroidx/compose/ui/text/p;->a:Landroidx/compose/ui/text/platform/c;
+
+    .line 13
+    invoke-virtual {v6}, Landroidx/compose/ui/text/platform/c;->b()F
 
     move-result v6
 
-    .line 13
+    .line 14
     invoke-static {v2, v6}, Ljava/lang/Float;->compare(FF)I
 
     move-result v7
@@ -142,18 +143,16 @@
     :cond_2
     move-object v0, v1
 
-    .line 14
+    .line 15
     :goto_1
     check-cast v0, Landroidx/compose/ui/text/p;
 
     if-eqz v0, :cond_3
 
-    .line 15
-    iget-object v0, v0, Landroidx/compose/ui/text/p;->a:Landroidx/compose/ui/text/q;
+    .line 16
+    iget-object v0, v0, Landroidx/compose/ui/text/p;->a:Landroidx/compose/ui/text/platform/c;
 
-    if-eqz v0, :cond_3
-
-    invoke-interface {v0}, Landroidx/compose/ui/text/q;->b()F
+    invoke-virtual {v0}, Landroidx/compose/ui/text/platform/c;->b()F
 
     move-result v0
 

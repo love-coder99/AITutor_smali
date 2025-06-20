@@ -3,12 +3,12 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lzh/e;
+.implements Lka/e;
 
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Landroidx/compose/material3/SnackbarKt$Snackbar$1;->invoke(Landroidx/compose/runtime/l;I)V
+    value = Landroidx/compose/material3/SnackbarKt$Snackbar$1;->invoke(Landroidx/compose/runtime/j;I)V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -19,7 +19,7 @@
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "Lkotlin/jvm/internal/Lambda;",
-        "Lzh/e;"
+        "Lka/e;"
     }
 .end annotation
 
@@ -28,9 +28,9 @@
         "\u0000\u0008\n\u0002\u0018\u0002\n\u0002\u0008\u0003\u0010\u0003\u001a\u00020\u0000H\u000b\u00a2\u0006\u0004\u0008\u0001\u0010\u0002"
     }
     d2 = {
-        "Lqh/r;",
+        "LX9/j;",
         "invoke",
-        "(Landroidx/compose/runtime/l;I)V",
+        "(Landroidx/compose/runtime/j;I)V",
         "<anonymous>"
     }
     k = 0x3
@@ -43,10 +43,10 @@
 
 
 # instance fields
-.field final synthetic $action:Lzh/e;
+.field final synthetic $action:Lka/e;
     .annotation system Ldalvik/annotation/Signature;
         value = {
-            "Lzh/e;"
+            "Lka/e;"
         }
     .end annotation
 .end field
@@ -55,20 +55,20 @@
 
 .field final synthetic $actionOnNewLine:Z
 
-.field final synthetic $actionTextStyle:Landroidx/compose/ui/text/i0;
+.field final synthetic $actionTextStyle:Landroidx/compose/ui/text/I;
 
-.field final synthetic $content:Lzh/e;
+.field final synthetic $content:Lka/e;
     .annotation system Ldalvik/annotation/Signature;
         value = {
-            "Lzh/e;"
+            "Lka/e;"
         }
     .end annotation
 .end field
 
-.field final synthetic $dismissAction:Lzh/e;
+.field final synthetic $dismissAction:Lka/e;
     .annotation system Ldalvik/annotation/Signature;
         value = {
-            "Lzh/e;"
+            "Lka/e;"
         }
     .end annotation
 .end field
@@ -77,15 +77,15 @@
 
 
 # direct methods
-.method public constructor <init>(ZLzh/e;Lzh/e;Lzh/e;Landroidx/compose/ui/text/i0;JJ)V
+.method public constructor <init>(ZLka/e;Lka/e;Lka/e;Landroidx/compose/ui/text/I;JJ)V
     .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(Z",
-            "Lzh/e;",
-            "Lzh/e;",
-            "Lzh/e;",
-            "Landroidx/compose/ui/text/i0;",
+            "Lka/e;",
+            "Lka/e;",
+            "Lka/e;",
+            "Landroidx/compose/ui/text/I;",
             "JJ)V"
         }
     .end annotation
@@ -93,22 +93,40 @@
     .line 1
     iput-boolean p1, p0, Landroidx/compose/material3/SnackbarKt$Snackbar$1$1;->$actionOnNewLine:Z
 
-    iput-object p2, p0, Landroidx/compose/material3/SnackbarKt$Snackbar$1$1;->$action:Lzh/e;
+    .line 2
+    .line 3
+    iput-object p2, p0, Landroidx/compose/material3/SnackbarKt$Snackbar$1$1;->$action:Lka/e;
 
-    iput-object p3, p0, Landroidx/compose/material3/SnackbarKt$Snackbar$1$1;->$content:Lzh/e;
+    .line 4
+    .line 5
+    iput-object p3, p0, Landroidx/compose/material3/SnackbarKt$Snackbar$1$1;->$content:Lka/e;
 
-    iput-object p4, p0, Landroidx/compose/material3/SnackbarKt$Snackbar$1$1;->$dismissAction:Lzh/e;
+    .line 6
+    .line 7
+    iput-object p4, p0, Landroidx/compose/material3/SnackbarKt$Snackbar$1$1;->$dismissAction:Lka/e;
 
-    iput-object p5, p0, Landroidx/compose/material3/SnackbarKt$Snackbar$1$1;->$actionTextStyle:Landroidx/compose/ui/text/i0;
+    .line 8
+    .line 9
+    iput-object p5, p0, Landroidx/compose/material3/SnackbarKt$Snackbar$1$1;->$actionTextStyle:Landroidx/compose/ui/text/I;
 
+    .line 10
+    .line 11
     iput-wide p6, p0, Landroidx/compose/material3/SnackbarKt$Snackbar$1$1;->$actionContentColor:J
 
+    .line 12
+    .line 13
     iput-wide p8, p0, Landroidx/compose/material3/SnackbarKt$Snackbar$1$1;->$dismissActionContentColor:J
 
+    .line 14
+    .line 15
     const/4 p1, 0x2
 
+    .line 16
     invoke-direct {p0, p1}, Lkotlin/jvm/internal/Lambda;-><init>(I)V
 
+    .line 17
+    .line 18
+    .line 19
     return-void
 .end method
 
@@ -118,7 +136,7 @@
     .locals 0
 
     .line 1
-    check-cast p1, Landroidx/compose/runtime/l;
+    check-cast p1, Landroidx/compose/runtime/j;
 
     check-cast p2, Ljava/lang/Number;
 
@@ -126,14 +144,14 @@
 
     move-result p2
 
-    invoke-virtual {p0, p1, p2}, Landroidx/compose/material3/SnackbarKt$Snackbar$1$1;->invoke(Landroidx/compose/runtime/l;I)V
+    invoke-virtual {p0, p1, p2}, Landroidx/compose/material3/SnackbarKt$Snackbar$1$1;->invoke(Landroidx/compose/runtime/j;I)V
 
-    sget-object p1, Lqh/r;->a:Lqh/r;
+    sget-object p1, LX9/j;->a:LX9/j;
 
     return-object p1
 .end method
 
-.method public final invoke(Landroidx/compose/runtime/l;I)V
+.method public final invoke(Landroidx/compose/runtime/j;I)V
     .locals 23
 
     move-object/from16 v0, p0
@@ -144,12 +162,12 @@
 
     if-ne v1, v2, :cond_1
 
+    .line 2
     move-object/from16 v1, p1
 
-    check-cast v1, Landroidx/compose/runtime/p;
+    check-cast v1, Landroidx/compose/runtime/n;
 
-    .line 2
-    invoke-virtual {v1}, Landroidx/compose/runtime/p;->y()Z
+    invoke-virtual {v1}, Landroidx/compose/runtime/n;->x()Z
 
     move-result v2
 
@@ -159,10 +177,11 @@
 
     .line 3
     :cond_0
-    invoke-virtual {v1}, Landroidx/compose/runtime/p;->N()V
+    invoke-virtual {v1}, Landroidx/compose/runtime/n;->L()V
 
     goto :goto_1
 
+    .line 4
     :cond_1
     :goto_0
     iget-boolean v1, v0, Landroidx/compose/material3/SnackbarKt$Snackbar$1$1;->$actionOnNewLine:Z
@@ -171,62 +190,75 @@
 
     if-eqz v1, :cond_2
 
-    iget-object v1, v0, Landroidx/compose/material3/SnackbarKt$Snackbar$1$1;->$action:Lzh/e;
+    iget-object v1, v0, Landroidx/compose/material3/SnackbarKt$Snackbar$1$1;->$action:Lka/e;
 
     if-eqz v1, :cond_2
 
+    .line 5
     move-object/from16 v1, p1
 
-    check-cast v1, Landroidx/compose/runtime/p;
+    check-cast v1, Landroidx/compose/runtime/n;
 
     const v3, -0x305288fb
 
-    .line 4
-    invoke-virtual {v1, v3}, Landroidx/compose/runtime/p;->T(I)V
+    invoke-virtual {v1, v3}, Landroidx/compose/runtime/n;->R(I)V
 
-    iget-object v3, v0, Landroidx/compose/material3/SnackbarKt$Snackbar$1$1;->$content:Lzh/e;
+    .line 6
+    iget-object v3, v0, Landroidx/compose/material3/SnackbarKt$Snackbar$1$1;->$content:Lka/e;
 
-    iget-object v4, v0, Landroidx/compose/material3/SnackbarKt$Snackbar$1$1;->$action:Lzh/e;
+    .line 7
+    iget-object v4, v0, Landroidx/compose/material3/SnackbarKt$Snackbar$1$1;->$action:Lka/e;
 
-    iget-object v5, v0, Landroidx/compose/material3/SnackbarKt$Snackbar$1$1;->$dismissAction:Lzh/e;
+    .line 8
+    iget-object v5, v0, Landroidx/compose/material3/SnackbarKt$Snackbar$1$1;->$dismissAction:Lka/e;
 
-    iget-object v6, v0, Landroidx/compose/material3/SnackbarKt$Snackbar$1$1;->$actionTextStyle:Landroidx/compose/ui/text/i0;
+    .line 9
+    iget-object v6, v0, Landroidx/compose/material3/SnackbarKt$Snackbar$1$1;->$actionTextStyle:Landroidx/compose/ui/text/I;
 
+    .line 10
     iget-wide v7, v0, Landroidx/compose/material3/SnackbarKt$Snackbar$1$1;->$actionContentColor:J
 
+    .line 11
     iget-wide v9, v0, Landroidx/compose/material3/SnackbarKt$Snackbar$1$1;->$dismissActionContentColor:J
 
     const/4 v12, 0x0
 
     move-object v11, v1
 
-    invoke-static/range {v3 .. v12}, Landroidx/compose/material3/g1;->c(Lzh/e;Lzh/e;Lzh/e;Landroidx/compose/ui/text/i0;JJLandroidx/compose/runtime/l;I)V
+    .line 12
+    invoke-static/range {v3 .. v12}, Landroidx/compose/material3/C0;->c(Lka/e;Lka/e;Lka/e;Landroidx/compose/ui/text/I;JJLandroidx/compose/runtime/j;I)V
 
-    .line 5
-    invoke-virtual {v1, v2}, Landroidx/compose/runtime/p;->q(Z)V
+    .line 13
+    invoke-virtual {v1, v2}, Landroidx/compose/runtime/n;->p(Z)V
 
     goto :goto_1
 
+    .line 14
     :cond_2
     move-object/from16 v1, p1
 
-    check-cast v1, Landroidx/compose/runtime/p;
+    check-cast v1, Landroidx/compose/runtime/n;
 
     const v3, -0x3052538c
 
-    .line 6
-    invoke-virtual {v1, v3}, Landroidx/compose/runtime/p;->T(I)V
+    invoke-virtual {v1, v3}, Landroidx/compose/runtime/n;->R(I)V
 
-    iget-object v13, v0, Landroidx/compose/material3/SnackbarKt$Snackbar$1$1;->$content:Lzh/e;
+    .line 15
+    iget-object v13, v0, Landroidx/compose/material3/SnackbarKt$Snackbar$1$1;->$content:Lka/e;
 
-    iget-object v14, v0, Landroidx/compose/material3/SnackbarKt$Snackbar$1$1;->$action:Lzh/e;
+    .line 16
+    iget-object v14, v0, Landroidx/compose/material3/SnackbarKt$Snackbar$1$1;->$action:Lka/e;
 
-    iget-object v15, v0, Landroidx/compose/material3/SnackbarKt$Snackbar$1$1;->$dismissAction:Lzh/e;
+    .line 17
+    iget-object v15, v0, Landroidx/compose/material3/SnackbarKt$Snackbar$1$1;->$dismissAction:Lka/e;
 
-    iget-object v3, v0, Landroidx/compose/material3/SnackbarKt$Snackbar$1$1;->$actionTextStyle:Landroidx/compose/ui/text/i0;
+    .line 18
+    iget-object v3, v0, Landroidx/compose/material3/SnackbarKt$Snackbar$1$1;->$actionTextStyle:Landroidx/compose/ui/text/I;
 
+    .line 19
     iget-wide v4, v0, Landroidx/compose/material3/SnackbarKt$Snackbar$1$1;->$actionContentColor:J
 
+    .line 20
     iget-wide v6, v0, Landroidx/compose/material3/SnackbarKt$Snackbar$1$1;->$dismissActionContentColor:J
 
     const/16 v22, 0x0
@@ -239,10 +271,11 @@
 
     move-object/from16 v21, v1
 
-    invoke-static/range {v13 .. v22}, Landroidx/compose/material3/g1;->d(Lzh/e;Lzh/e;Lzh/e;Landroidx/compose/ui/text/i0;JJLandroidx/compose/runtime/l;I)V
+    .line 21
+    invoke-static/range {v13 .. v22}, Landroidx/compose/material3/C0;->d(Lka/e;Lka/e;Lka/e;Landroidx/compose/ui/text/I;JJLandroidx/compose/runtime/j;I)V
 
-    .line 7
-    invoke-virtual {v1, v2}, Landroidx/compose/runtime/p;->q(Z)V
+    .line 22
+    invoke-virtual {v1, v2}, Landroidx/compose/runtime/n;->p(Z)V
 
     :goto_1
     return-void

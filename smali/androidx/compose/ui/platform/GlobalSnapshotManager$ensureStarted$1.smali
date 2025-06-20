@@ -3,25 +3,35 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lzh/e;
+.implements Lka/e;
 
 
 # annotations
+.annotation runtime Lca/c;
+    c = "androidx.compose.ui.platform.GlobalSnapshotManager$ensureStarted$1"
+    f = "GlobalSnapshotManager.android.kt"
+    l = {
+        0x43
+    }
+    m = "invokeSuspend"
+.end annotation
+
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "Lkotlin/coroutines/jvm/internal/SuspendLambda;",
-        "Lzh/e;"
+        "Lka/e;"
     }
 .end annotation
 
 .annotation runtime Lkotlin/Metadata;
     d1 = {
-        "\u0000\n\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\u0010\u0002\u001a\u00020\u0001*\u00020\u0000H\u008a@"
+        "\u0000\u000c\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0008\u0002\u0010\u0002\u001a\u00020\u0001*\u00020\u0000H\u008a@\u00a2\u0006\u0004\u0008\u0002\u0010\u0003"
     }
     d2 = {
-        "Lkotlinx/coroutines/w;",
-        "Lqh/r;",
-        "<anonymous>"
+        "Lkotlinx/coroutines/u;",
+        "LX9/j;",
+        "<anonymous>",
+        "(Lkotlinx/coroutines/u;)V"
     }
     k = 0x3
     mv = {
@@ -29,15 +39,6 @@
         0x8,
         0x0
     }
-.end annotation
-
-.annotation runtime Lth/c;
-    c = "androidx.compose.ui.platform.GlobalSnapshotManager$ensureStarted$1"
-    f = "GlobalSnapshotManager.android.kt"
-    l = {
-        0x43
-    }
-    m = "invokeSuspend"
 .end annotation
 
 
@@ -91,7 +92,7 @@
             "Lkotlin/coroutines/Continuation<",
             "*>;)",
             "Lkotlin/coroutines/Continuation<",
-            "Lqh/r;",
+            "LX9/j;",
             ">;"
         }
     .end annotation
@@ -109,26 +110,26 @@
     .locals 0
 
     .line 1
-    check-cast p1, Lkotlinx/coroutines/w;
+    check-cast p1, Lkotlinx/coroutines/u;
 
     check-cast p2, Lkotlin/coroutines/Continuation;
 
-    invoke-virtual {p0, p1, p2}, Landroidx/compose/ui/platform/GlobalSnapshotManager$ensureStarted$1;->invoke(Lkotlinx/coroutines/w;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
+    invoke-virtual {p0, p1, p2}, Landroidx/compose/ui/platform/GlobalSnapshotManager$ensureStarted$1;->invoke(Lkotlinx/coroutines/u;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
 
     move-result-object p1
 
     return-object p1
 .end method
 
-.method public final invoke(Lkotlinx/coroutines/w;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
+.method public final invoke(Lkotlinx/coroutines/u;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
     .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
-            "Lkotlinx/coroutines/w;",
+            "Lkotlinx/coroutines/u;",
             "Lkotlin/coroutines/Continuation<",
             "-",
-            "Lqh/r;",
+            "LX9/j;",
             ">;)",
             "Ljava/lang/Object;"
         }
@@ -141,7 +142,7 @@
 
     check-cast p1, Landroidx/compose/ui/platform/GlobalSnapshotManager$ensureStarted$1;
 
-    sget-object p2, Lqh/r;->a:Lqh/r;
+    sget-object p2, LX9/j;->a:LX9/j;
 
     invoke-virtual {p1, p2}, Landroidx/compose/ui/platform/GlobalSnapshotManager$ensureStarted$1;->invokeSuspend(Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -162,259 +163,319 @@
 
     .line 4
     .line 5
-    const/4 v2, 0x1
+    const/4 v2, 0x0
 
     .line 6
-    if-eqz v1, :cond_1
+    const/4 v3, 0x1
 
     .line 7
-    .line 8
-    if-ne v1, v2, :cond_0
+    if-eqz v1, :cond_1
 
+    .line 8
     .line 9
+    if-ne v1, v3, :cond_0
+
     .line 10
+    .line 11
     iget-object v1, p0, Landroidx/compose/ui/platform/GlobalSnapshotManager$ensureStarted$1;->L$1:Ljava/lang/Object;
 
-    .line 11
     .line 12
+    .line 13
     check-cast v1, Lkotlinx/coroutines/channels/a;
 
-    .line 13
     .line 14
-    iget-object v3, p0, Landroidx/compose/ui/platform/GlobalSnapshotManager$ensureStarted$1;->L$0:Ljava/lang/Object;
-
     .line 15
-    .line 16
-    check-cast v3, Lkotlinx/coroutines/channels/o;
+    iget-object v4, p0, Landroidx/compose/ui/platform/GlobalSnapshotManager$ensureStarted$1;->L$0:Ljava/lang/Object;
 
+    .line 16
     .line 17
+    check-cast v4, Lkotlinx/coroutines/channels/o;
+
     .line 18
+    .line 19
     :try_start_0
     invoke-static {p1}, Lkotlin/b;->a(Ljava/lang/Object;)V
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    .line 19
     .line 20
     .line 21
-    move-object v4, v3
-
     .line 22
-    move-object v3, v1
-
-    .line 23
-    move-object v1, v0
-
-    .line 24
-    move-object v0, p0
-
-    .line 25
     goto :goto_1
 
-    .line 26
+    .line 23
     :catchall_0
     move-exception p1
 
-    .line 27
-    goto :goto_2
+    .line 24
+    goto :goto_4
 
-    .line 28
+    .line 25
     :cond_0
     new-instance p1, Ljava/lang/IllegalStateException;
 
-    .line 29
-    .line 30
+    .line 26
+    .line 27
     const-string v0, "call to \'resume\' before \'invoke\' with coroutine"
 
-    .line 31
-    .line 32
+    .line 28
+    .line 29
     invoke-direct {p1, v0}, Ljava/lang/IllegalStateException;-><init>(Ljava/lang/String;)V
 
-    .line 33
-    .line 34
-    .line 35
+    .line 30
+    .line 31
+    .line 32
     throw p1
 
-    .line 36
+    .line 33
     :cond_1
     invoke-static {p1}, Lkotlin/b;->a(Ljava/lang/Object;)V
 
+    .line 34
+    .line 35
+    .line 36
+    iget-object v4, p0, Landroidx/compose/ui/platform/GlobalSnapshotManager$ensureStarted$1;->$channel:Lkotlinx/coroutines/channels/e;
+
     .line 37
     .line 38
-    .line 39
-    iget-object v3, p0, Landroidx/compose/ui/platform/GlobalSnapshotManager$ensureStarted$1;->$channel:Lkotlinx/coroutines/channels/e;
+    :try_start_1
+    invoke-interface {v4}, Lkotlinx/coroutines/channels/o;->iterator()Lkotlinx/coroutines/channels/a;
 
+    .line 39
     .line 40
     .line 41
-    :try_start_1
-    invoke-interface {v3}, Lkotlinx/coroutines/channels/o;->iterator()Lkotlinx/coroutines/channels/a;
-
-    .line 42
-    .line 43
-    .line 44
     move-result-object p1
 
-    .line 45
+    .line 42
     move-object v1, p1
 
-    .line 46
-    move-object p1, p0
-
-    .line 47
+    .line 43
+    :cond_2
     :goto_0
-    iput-object v3, p1, Landroidx/compose/ui/platform/GlobalSnapshotManager$ensureStarted$1;->L$0:Ljava/lang/Object;
+    iput-object v4, p0, Landroidx/compose/ui/platform/GlobalSnapshotManager$ensureStarted$1;->L$0:Ljava/lang/Object;
+
+    .line 44
+    .line 45
+    iput-object v1, p0, Landroidx/compose/ui/platform/GlobalSnapshotManager$ensureStarted$1;->L$1:Ljava/lang/Object;
+
+    .line 46
+    .line 47
+    iput v3, p0, Landroidx/compose/ui/platform/GlobalSnapshotManager$ensureStarted$1;->label:I
 
     .line 48
     .line 49
-    iput-object v1, p1, Landroidx/compose/ui/platform/GlobalSnapshotManager$ensureStarted$1;->L$1:Ljava/lang/Object;
+    invoke-virtual {v1, p0}, Lkotlinx/coroutines/channels/a;->b(Lkotlin/coroutines/jvm/internal/ContinuationImpl;)Ljava/lang/Object;
 
     .line 50
     .line 51
-    iput v2, p1, Landroidx/compose/ui/platform/GlobalSnapshotManager$ensureStarted$1;->label:I
-
     .line 52
+    move-result-object p1
+
     .line 53
-    invoke-virtual {v1, p1}, Lkotlinx/coroutines/channels/a;->b(Lkotlin/coroutines/jvm/internal/ContinuationImpl;)Ljava/lang/Object;
+    if-ne p1, v0, :cond_3
 
     .line 54
     .line 55
-    .line 56
-    move-result-object v4
-    :try_end_1
-    .catchall {:try_start_1 .. :try_end_1} :catchall_0
-
-    .line 57
-    if-ne v4, v0, :cond_2
-
-    .line 58
-    .line 59
     return-object v0
 
-    .line 60
-    :cond_2
-    move-object v6, v0
-
-    .line 61
-    move-object v0, p1
-
-    .line 62
-    move-object p1, v4
-
-    .line 63
-    move-object v4, v3
-
-    .line 64
-    move-object v3, v1
-
-    .line 65
-    move-object v1, v6
-
-    .line 66
+    .line 56
+    :cond_3
     :goto_1
-    :try_start_2
     check-cast p1, Ljava/lang/Boolean;
 
-    .line 67
-    .line 68
+    .line 57
+    .line 58
     invoke-virtual {p1}, Ljava/lang/Boolean;->booleanValue()Z
+
+    .line 59
+    .line 60
+    .line 61
+    move-result p1
+
+    .line 62
+    if-eqz p1, :cond_5
+
+    .line 63
+    .line 64
+    invoke-virtual {v1}, Lkotlinx/coroutines/channels/a;->c()Ljava/lang/Object;
+
+    .line 65
+    .line 66
+    .line 67
+    move-result-object p1
+
+    .line 68
+    check-cast p1, LX9/j;
 
     .line 69
     .line 70
+    sget-object p1, Landroidx/compose/ui/platform/g0;->b:Ljava/util/concurrent/atomic/AtomicBoolean;
+
     .line 71
-    move-result p1
-
     .line 72
-    if-eqz p1, :cond_3
-
-    .line 73
-    .line 74
-    invoke-virtual {v3}, Lkotlinx/coroutines/channels/a;->c()Ljava/lang/Object;
-
-    .line 75
-    .line 76
-    .line 77
-    move-result-object p1
-
-    .line 78
-    check-cast p1, Lqh/r;
-
-    .line 79
-    .line 80
-    sget-object p1, Landroidx/compose/ui/platform/q1;->b:Ljava/util/concurrent/atomic/AtomicBoolean;
-
-    .line 81
-    .line 82
     const/4 v5, 0x0
 
-    .line 83
+    .line 73
     invoke-virtual {p1, v5}, Ljava/util/concurrent/atomic/AtomicBoolean;->set(Z)V
 
+    .line 74
+    .line 75
+    .line 76
+    sget-object p1, Landroidx/compose/runtime/snapshots/k;->c:Ljava/lang/Object;
+
+    .line 77
+    .line 78
+    monitor-enter p1
+    :try_end_1
+    .catchall {:try_start_1 .. :try_end_1} :catchall_0
+
+    .line 79
+    :try_start_2
+    sget-object v6, Landroidx/compose/runtime/snapshots/k;->j:Ljava/util/concurrent/atomic/AtomicReference;
+
+    .line 80
+    .line 81
+    invoke-virtual {v6}, Ljava/util/concurrent/atomic/AtomicReference;->get()Ljava/lang/Object;
+
+    .line 82
+    .line 83
     .line 84
+    move-result-object v6
+
     .line 85
+    check-cast v6, Landroidx/compose/runtime/snapshots/a;
+
     .line 86
-    invoke-static {}, Lxd/e;->z()V
+    .line 87
+    iget-object v6, v6, Landroidx/compose/runtime/snapshots/b;->h:Landroidx/collection/D;
+
+    .line 88
+    .line 89
+    if-eqz v6, :cond_4
+
+    .line 90
+    .line 91
+    invoke-virtual {v6}, Landroidx/collection/J;->c()Z
+
+    .line 92
+    .line 93
+    .line 94
+    move-result v6
     :try_end_2
     .catchall {:try_start_2 .. :try_end_2} :catchall_1
 
-    .line 87
-    .line 88
-    .line 89
-    move-object p1, v0
-
-    .line 90
-    move-object v0, v1
-
-    .line 91
-    move-object v1, v3
-
-    .line 92
-    move-object v3, v4
-
-    .line 93
-    goto :goto_0
-
-    .line 94
-    :catchall_1
-    move-exception p1
-
     .line 95
-    move-object v3, v4
+    if-ne v6, v3, :cond_4
 
     .line 96
-    goto :goto_2
-
     .line 97
-    :cond_3
-    const/4 p1, 0x0
+    const/4 v5, 0x1
 
     .line 98
-    invoke-static {v4, p1}, Lkotlinx/coroutines/y;->p(Lkotlinx/coroutines/channels/o;Ljava/lang/Throwable;)V
+    goto :goto_2
 
     .line 99
+    :catchall_1
+    move-exception v0
+
     .line 100
+    goto :goto_3
+
     .line 101
-    sget-object p1, Lqh/r;->a:Lqh/r;
-
-    .line 102
-    .line 103
-    return-object p1
-
-    .line 104
+    :cond_4
     :goto_2
     :try_start_3
-    throw p1
-    :try_end_3
-    .catchall {:try_start_3 .. :try_end_3} :catchall_2
+    monitor-exit p1
+
+    .line 102
+    if-eqz v5, :cond_2
+
+    .line 103
+    .line 104
+    invoke-static {}, Landroidx/compose/runtime/snapshots/k;->a()V
 
     .line 105
+    .line 106
+    .line 107
+    goto :goto_0
+
+    .line 108
+    :goto_3
+    monitor-exit p1
+
+    .line 109
+    throw v0
+    :try_end_3
+    .catchall {:try_start_3 .. :try_end_3} :catchall_0
+
+    .line 110
+    :cond_5
+    invoke-interface {v4, v2}, Lkotlinx/coroutines/channels/o;->b(Ljava/util/concurrent/CancellationException;)V
+
+    .line 111
+    .line 112
+    .line 113
+    sget-object p1, LX9/j;->a:LX9/j;
+
+    .line 114
+    .line 115
+    return-object p1
+
+    .line 116
+    :goto_4
+    :try_start_4
+    throw p1
+    :try_end_4
+    .catchall {:try_start_4 .. :try_end_4} :catchall_2
+
+    .line 117
     :catchall_2
     move-exception v0
 
-    .line 106
-    invoke-static {v3, p1}, Lkotlinx/coroutines/y;->p(Lkotlinx/coroutines/channels/o;Ljava/lang/Throwable;)V
+    .line 118
+    instance-of v1, p1, Ljava/util/concurrent/CancellationException;
 
-    .line 107
-    .line 108
-    .line 109
+    .line 119
+    .line 120
+    if-eqz v1, :cond_6
+
+    .line 121
+    .line 122
+    move-object v2, p1
+
+    .line 123
+    check-cast v2, Ljava/util/concurrent/CancellationException;
+
+    .line 124
+    .line 125
+    :cond_6
+    if-nez v2, :cond_7
+
+    .line 126
+    .line 127
+    new-instance v2, Ljava/util/concurrent/CancellationException;
+
+    .line 128
+    .line 129
+    const-string v1, "Channel was consumed, consumer had failed"
+
+    .line 130
+    .line 131
+    invoke-direct {v2, v1}, Ljava/util/concurrent/CancellationException;-><init>(Ljava/lang/String;)V
+
+    .line 132
+    .line 133
+    .line 134
+    invoke-virtual {v2, p1}, Ljava/lang/Throwable;->initCause(Ljava/lang/Throwable;)Ljava/lang/Throwable;
+
+    .line 135
+    .line 136
+    .line 137
+    :cond_7
+    invoke-interface {v4, v2}, Lkotlinx/coroutines/channels/o;->b(Ljava/util/concurrent/CancellationException;)V
+
+    .line 138
+    .line 139
+    .line 140
     throw v0
 .end method

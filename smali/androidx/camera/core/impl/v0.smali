@@ -2,164 +2,105 @@
 .super Ljava/lang/Object;
 .source "SourceFile"
 
-# interfaces
-.implements Landroidx/camera/core/impl/m2;
-.implements Landroidx/camera/core/impl/a1;
-.implements Ld0/l;
-
 
 # static fields
-.field public static final c:Landroidx/camera/core/impl/c;
-
-.field public static final d:Landroidx/camera/core/impl/c;
-
-.field public static final f:Landroidx/camera/core/impl/c;
-
-.field public static final g:Landroidx/camera/core/impl/c;
-
-.field public static final h:Landroidx/camera/core/impl/c;
-
-.field public static final i:Landroidx/camera/core/impl/c;
+.field public static final i:Ljava/util/List;
 
 
 # instance fields
-.field public final b:Landroidx/camera/core/impl/m1;
+.field public final a:Ljava/util/ArrayList;
+
+.field public final b:Landroidx/camera/core/impl/h;
+
+.field public final c:Ljava/util/List;
+
+.field public final d:Ljava/util/List;
+
+.field public final e:Ljava/util/List;
+
+.field public final f:Landroidx/camera/core/impl/t0;
+
+.field public final g:Landroidx/camera/core/impl/E;
+
+.field public final h:Landroid/hardware/camera2/params/InputConfiguration;
 
 
 # direct methods
 .method static constructor <clinit>()V
-    .locals 4
+    .locals 6
 
     .line 1
-    new-instance v0, Landroidx/camera/core/impl/c;
+    const/4 v0, 0x1
 
     .line 2
-    .line 3
-    const-string v1, "camerax.core.imageAnalysis.backpressureStrategy"
+    invoke-static {v0}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
+    .line 3
     .line 4
     .line 5
-    const-class v2, Ly/d0;
+    move-result-object v1
 
     .line 6
+    const/4 v2, 0x5
+
     .line 7
-    const/4 v3, 0x0
+    invoke-static {v2}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
     .line 8
-    invoke-direct {v0, v1, v2, v3}, Landroidx/camera/core/impl/c;-><init>(Ljava/lang/String;Ljava/lang/Class;Ljava/lang/Object;)V
-
     .line 9
     .line 10
+    move-result-object v2
+
     .line 11
-    sput-object v0, Landroidx/camera/core/impl/v0;->c:Landroidx/camera/core/impl/c;
+    const/4 v3, 0x3
 
     .line 12
-    .line 13
-    sget-object v0, Ljava/lang/Integer;->TYPE:Ljava/lang/Class;
+    invoke-static {v3}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
+    .line 13
     .line 14
     .line 15
-    new-instance v1, Landroidx/camera/core/impl/c;
+    move-result-object v4
 
     .line 16
-    .line 17
-    const-string v2, "camerax.core.imageAnalysis.imageQueueDepth"
+    new-array v3, v3, [Ljava/lang/Integer;
 
+    .line 17
     .line 18
+    const/4 v5, 0x0
+
     .line 19
-    invoke-direct {v1, v2, v0, v3}, Landroidx/camera/core/impl/c;-><init>(Ljava/lang/String;Ljava/lang/Class;Ljava/lang/Object;)V
+    aput-object v1, v3, v5
 
     .line 20
     .line 21
-    .line 22
-    sput-object v1, Landroidx/camera/core/impl/v0;->d:Landroidx/camera/core/impl/c;
+    aput-object v2, v3, v0
 
+    .line 22
     .line 23
+    const/4 v0, 0x2
+
     .line 24
-    new-instance v0, Landroidx/camera/core/impl/c;
+    aput-object v4, v3, v0
 
     .line 25
     .line 26
-    const-string v1, "camerax.core.imageAnalysis.imageReaderProxyProvider"
+    invoke-static {v3}, Ljava/util/Arrays;->asList([Ljava/lang/Object;)Ljava/util/List;
 
     .line 27
     .line 28
-    const-class v2, Ly/b1;
-
     .line 29
+    move-result-object v0
+
     .line 30
-    invoke-direct {v0, v1, v2, v3}, Landroidx/camera/core/impl/c;-><init>(Ljava/lang/String;Ljava/lang/Class;Ljava/lang/Object;)V
+    sput-object v0, Landroidx/camera/core/impl/v0;->i:Ljava/util/List;
 
     .line 31
     .line 32
-    .line 33
-    sput-object v0, Landroidx/camera/core/impl/v0;->f:Landroidx/camera/core/impl/c;
-
-    .line 34
-    .line 35
-    new-instance v0, Landroidx/camera/core/impl/c;
-
-    .line 36
-    .line 37
-    const-string v1, "camerax.core.imageAnalysis.outputImageFormat"
-
-    .line 38
-    .line 39
-    const-class v2, Ly/g0;
-
-    .line 40
-    .line 41
-    invoke-direct {v0, v1, v2, v3}, Landroidx/camera/core/impl/c;-><init>(Ljava/lang/String;Ljava/lang/Class;Ljava/lang/Object;)V
-
-    .line 42
-    .line 43
-    .line 44
-    sput-object v0, Landroidx/camera/core/impl/v0;->g:Landroidx/camera/core/impl/c;
-
-    .line 45
-    .line 46
-    new-instance v0, Landroidx/camera/core/impl/c;
-
-    .line 47
-    .line 48
-    const-string v1, "camerax.core.imageAnalysis.onePixelShiftEnabled"
-
-    .line 49
-    .line 50
-    const-class v2, Ljava/lang/Boolean;
-
-    .line 51
-    .line 52
-    invoke-direct {v0, v1, v2, v3}, Landroidx/camera/core/impl/c;-><init>(Ljava/lang/String;Ljava/lang/Class;Ljava/lang/Object;)V
-
-    .line 53
-    .line 54
-    .line 55
-    sput-object v0, Landroidx/camera/core/impl/v0;->h:Landroidx/camera/core/impl/c;
-
-    .line 56
-    .line 57
-    new-instance v0, Landroidx/camera/core/impl/c;
-
-    .line 58
-    .line 59
-    const-string v1, "camerax.core.imageAnalysis.outputImageRotationEnabled"
-
-    .line 60
-    .line 61
-    invoke-direct {v0, v1, v2, v3}, Landroidx/camera/core/impl/c;-><init>(Ljava/lang/String;Ljava/lang/Class;Ljava/lang/Object;)V
-
-    .line 62
-    .line 63
-    .line 64
-    sput-object v0, Landroidx/camera/core/impl/v0;->i:Landroidx/camera/core/impl/c;
-
-    .line 65
-    .line 66
     return-void
 .end method
 
-.method public constructor <init>(Landroidx/camera/core/impl/m1;)V
+.method public constructor <init>(Ljava/util/ArrayList;Ljava/util/ArrayList;Ljava/util/ArrayList;Ljava/util/ArrayList;Landroidx/camera/core/impl/E;Landroidx/camera/core/impl/t0;Landroid/hardware/camera2/params/InputConfiguration;Landroidx/camera/core/impl/h;)V
     .locals 0
 
     .line 1
@@ -168,545 +109,427 @@
     .line 2
     .line 3
     .line 4
-    iput-object p1, p0, Landroidx/camera/core/impl/v0;->b:Landroidx/camera/core/impl/m1;
+    iput-object p1, p0, Landroidx/camera/core/impl/v0;->a:Ljava/util/ArrayList;
 
     .line 5
     .line 6
+    invoke-static {p2}, Ljava/util/Collections;->unmodifiableList(Ljava/util/List;)Ljava/util/List;
+
+    .line 7
+    .line 8
+    .line 9
+    move-result-object p1
+
+    .line 10
+    iput-object p1, p0, Landroidx/camera/core/impl/v0;->c:Ljava/util/List;
+
+    .line 11
+    .line 12
+    invoke-static {p3}, Ljava/util/Collections;->unmodifiableList(Ljava/util/List;)Ljava/util/List;
+
+    .line 13
+    .line 14
+    .line 15
+    move-result-object p1
+
+    .line 16
+    iput-object p1, p0, Landroidx/camera/core/impl/v0;->d:Ljava/util/List;
+
+    .line 17
+    .line 18
+    invoke-static {p4}, Ljava/util/Collections;->unmodifiableList(Ljava/util/List;)Ljava/util/List;
+
+    .line 19
+    .line 20
+    .line 21
+    move-result-object p1
+
+    .line 22
+    iput-object p1, p0, Landroidx/camera/core/impl/v0;->e:Ljava/util/List;
+
+    .line 23
+    .line 24
+    iput-object p6, p0, Landroidx/camera/core/impl/v0;->f:Landroidx/camera/core/impl/t0;
+
+    .line 25
+    .line 26
+    iput-object p5, p0, Landroidx/camera/core/impl/v0;->g:Landroidx/camera/core/impl/E;
+
+    .line 27
+    .line 28
+    iput-object p7, p0, Landroidx/camera/core/impl/v0;->h:Landroid/hardware/camera2/params/InputConfiguration;
+
+    .line 29
+    .line 30
+    iput-object p8, p0, Landroidx/camera/core/impl/v0;->b:Landroidx/camera/core/impl/h;
+
+    .line 31
+    .line 32
     return-void
+.end method
+
+.method public static a()Landroidx/camera/core/impl/v0;
+    .locals 19
+
+    .line 1
+    new-instance v9, Landroidx/camera/core/impl/v0;
+
+    .line 2
+    .line 3
+    new-instance v1, Ljava/util/ArrayList;
+
+    .line 4
+    .line 5
+    invoke-direct {v1}, Ljava/util/ArrayList;-><init>()V
+
+    .line 6
+    .line 7
+    .line 8
+    new-instance v2, Ljava/util/ArrayList;
+
+    .line 9
+    .line 10
+    const/4 v0, 0x0
+
+    .line 11
+    invoke-direct {v2, v0}, Ljava/util/ArrayList;-><init>(I)V
+
+    .line 12
+    .line 13
+    .line 14
+    new-instance v3, Ljava/util/ArrayList;
+
+    .line 15
+    .line 16
+    invoke-direct {v3, v0}, Ljava/util/ArrayList;-><init>(I)V
+
+    .line 17
+    .line 18
+    .line 19
+    new-instance v4, Ljava/util/ArrayList;
+
+    .line 20
+    .line 21
+    invoke-direct {v4, v0}, Ljava/util/ArrayList;-><init>(I)V
+
+    .line 22
+    .line 23
+    .line 24
+    new-instance v0, Ljava/util/HashSet;
+
+    .line 25
+    .line 26
+    invoke-direct {v0}, Ljava/util/HashSet;-><init>()V
+
+    .line 27
+    .line 28
+    .line 29
+    invoke-static {}, Landroidx/camera/core/impl/c0;->b()Landroidx/camera/core/impl/c0;
+
+    .line 30
+    .line 31
+    .line 32
+    move-result-object v5
+
+    .line 33
+    new-instance v6, Ljava/util/ArrayList;
+
+    .line 34
+    .line 35
+    invoke-direct {v6}, Ljava/util/ArrayList;-><init>()V
+
+    .line 36
+    .line 37
+    .line 38
+    invoke-static {}, Landroidx/camera/core/impl/d0;->a()Landroidx/camera/core/impl/d0;
+
+    .line 39
+    .line 40
+    .line 41
+    move-result-object v7
+
+    .line 42
+    new-instance v8, Landroidx/camera/core/impl/E;
+
+    .line 43
+    .line 44
+    new-instance v11, Ljava/util/ArrayList;
+
+    .line 45
+    .line 46
+    invoke-direct {v11, v0}, Ljava/util/ArrayList;-><init>(Ljava/util/Collection;)V
+
+    .line 47
+    .line 48
+    .line 49
+    invoke-static {v5}, Landroidx/camera/core/impl/g0;->a(Landroidx/camera/core/impl/G;)Landroidx/camera/core/impl/g0;
+
+    .line 50
+    .line 51
+    .line 52
+    move-result-object v12
+
+    .line 53
+    new-instance v15, Ljava/util/ArrayList;
+
+    .line 54
+    .line 55
+    invoke-direct {v15, v6}, Ljava/util/ArrayList;-><init>(Ljava/util/Collection;)V
+
+    .line 56
+    .line 57
+    .line 58
+    sget-object v0, Landroidx/camera/core/impl/z0;->b:Landroidx/camera/core/impl/z0;
+
+    .line 59
+    .line 60
+    new-instance v0, Landroid/util/ArrayMap;
+
+    .line 61
+    .line 62
+    invoke-direct {v0}, Landroid/util/ArrayMap;-><init>()V
+
+    .line 63
+    .line 64
+    .line 65
+    iget-object v5, v7, Landroidx/camera/core/impl/z0;->a:Landroid/util/ArrayMap;
+
+    .line 66
+    .line 67
+    invoke-virtual {v5}, Landroid/util/ArrayMap;->keySet()Ljava/util/Set;
+
+    .line 68
+    .line 69
+    .line 70
+    move-result-object v6
+
+    .line 71
+    invoke-interface {v6}, Ljava/util/Set;->iterator()Ljava/util/Iterator;
+
+    .line 72
+    .line 73
+    .line 74
+    move-result-object v6
+
+    .line 75
+    :goto_0
+    invoke-interface {v6}, Ljava/util/Iterator;->hasNext()Z
+
+    .line 76
+    .line 77
+    .line 78
+    move-result v7
+
+    .line 79
+    if-eqz v7, :cond_0
+
+    .line 80
+    .line 81
+    invoke-interface {v6}, Ljava/util/Iterator;->next()Ljava/lang/Object;
+
+    .line 82
+    .line 83
+    .line 84
+    move-result-object v7
+
+    .line 85
+    check-cast v7, Ljava/lang/String;
+
+    .line 86
+    .line 87
+    invoke-virtual {v5, v7}, Landroid/util/ArrayMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 88
+    .line 89
+    .line 90
+    move-result-object v10
+
+    .line 91
+    invoke-virtual {v0, v7, v10}, Landroid/util/ArrayMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 92
+    .line 93
+    .line 94
+    goto :goto_0
+
+    .line 95
+    :cond_0
+    new-instance v5, Landroidx/camera/core/impl/z0;
+
+    .line 96
+    .line 97
+    invoke-direct {v5, v0}, Landroidx/camera/core/impl/z0;-><init>(Landroid/util/ArrayMap;)V
+
+    .line 98
+    .line 99
+    .line 100
+    const/16 v16, 0x0
+
+    .line 101
+    .line 102
+    const/16 v18, 0x0
+
+    .line 103
+    .line 104
+    const/4 v13, -0x1
+
+    .line 105
+    move-object v10, v8
+
+    .line 106
+    move/from16 v14, v16
+
+    .line 107
+    .line 108
+    move-object/from16 v17, v5
+
+    .line 109
+    .line 110
+    invoke-direct/range {v10 .. v18}, Landroidx/camera/core/impl/E;-><init>(Ljava/util/ArrayList;Landroidx/camera/core/impl/g0;IZLjava/util/ArrayList;ZLandroidx/camera/core/impl/z0;Landroidx/camera/core/impl/q;)V
+
+    .line 111
+    .line 112
+    .line 113
+    const/4 v6, 0x0
+
+    .line 114
+    const/4 v7, 0x0
+
+    .line 115
+    const/4 v10, 0x0
+
+    .line 116
+    move-object v0, v9
+
+    .line 117
+    move-object v5, v8
+
+    .line 118
+    move-object v8, v10
+
+    .line 119
+    invoke-direct/range {v0 .. v8}, Landroidx/camera/core/impl/v0;-><init>(Ljava/util/ArrayList;Ljava/util/ArrayList;Ljava/util/ArrayList;Ljava/util/ArrayList;Landroidx/camera/core/impl/E;Landroidx/camera/core/impl/t0;Landroid/hardware/camera2/params/InputConfiguration;Landroidx/camera/core/impl/h;)V
+
+    .line 120
+    .line 121
+    .line 122
+    return-object v9
 .end method
 
 
 # virtual methods
-.method public final synthetic A()Landroidx/camera/core/impl/UseCaseConfigFactory$CaptureType;
-    .locals 1
+.method public final b()Ljava/util/List;
+    .locals 4
 
     .line 1
-    invoke-static {p0}, Landroid/support/v4/media/session/a;->d(Landroidx/camera/core/impl/m2;)Landroidx/camera/core/impl/UseCaseConfigFactory$CaptureType;
-
-    move-result-object v0
-
-    return-object v0
-.end method
-
-.method public final synthetic B()I
-    .locals 1
-
-    .line 1
-    invoke-static {p0}, Landroid/support/v4/media/session/a;->o(Landroidx/camera/core/impl/m2;)I
-
-    move-result v0
-
-    return v0
-.end method
-
-.method public final synthetic C()Landroidx/camera/core/impl/h0;
-    .locals 1
-
-    .line 1
-    invoke-static {p0}, Landroid/support/v4/media/session/a;->e(Landroidx/camera/core/impl/m2;)Landroidx/camera/core/impl/h0;
-
-    move-result-object v0
-
-    return-object v0
-.end method
-
-.method public final synthetic D()Ljava/lang/String;
-    .locals 1
-
-    .line 1
-    invoke-static {p0}, Lcom/google/android/gms/internal/play_billing/v3;->b(Landroidx/camera/core/impl/m2;)Ljava/lang/String;
-
-    move-result-object v0
-
-    return-object v0
-.end method
-
-.method public final E()Z
-    .locals 1
-
-    .line 1
-    sget v0, Landroidx/camera/core/impl/y0;->a:I
+    new-instance v0, Ljava/util/ArrayList;
 
     .line 2
     .line 3
-    sget-object v0, Landroidx/camera/core/impl/a1;->b8:Landroidx/camera/core/impl/c;
+    invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
 
     .line 4
     .line 5
-    invoke-virtual {p0, v0}, Landroidx/camera/core/impl/v0;->a(Landroidx/camera/core/impl/c;)Z
-
     .line 6
-    .line 7
-    .line 8
-    move-result v0
-
-    .line 9
-    return v0
-.end method
-
-.method public final synthetic F()I
-    .locals 1
-
-    .line 1
-    invoke-static {p0}, Landroidx/camera/core/impl/y0;->d(Landroidx/camera/core/impl/a1;)I
-
-    move-result v0
-
-    return v0
-.end method
-
-.method public final synthetic G()I
-    .locals 1
-
-    .line 1
-    invoke-static {p0}, Landroid/support/v4/media/session/a;->j(Landroidx/camera/core/impl/m2;)I
-
-    move-result v0
-
-    return v0
-.end method
-
-.method public final H()Landroid/util/Size;
-    .locals 2
-
-    .line 1
-    sget v0, Landroidx/camera/core/impl/y0;->a:I
-
-    .line 2
-    .line 3
-    const/4 v0, 0x0
-
-    .line 4
-    sget-object v1, Landroidx/camera/core/impl/a1;->h8:Landroidx/camera/core/impl/c;
-
-    .line 5
-    .line 6
-    invoke-virtual {p0, v1, v0}, Landroidx/camera/core/impl/v0;->M(Landroidx/camera/core/impl/c;Ljava/lang/Object;)Ljava/lang/Object;
+    iget-object v1, p0, Landroidx/camera/core/impl/v0;->a:Ljava/util/ArrayList;
 
     .line 7
     .line 8
-    .line 9
-    move-result-object v0
+    invoke-virtual {v1}, Ljava/util/ArrayList;->iterator()Ljava/util/Iterator;
 
+    .line 9
     .line 10
-    check-cast v0, Landroid/util/Size;
-
     .line 11
+    move-result-object v1
+
     .line 12
-    return-object v0
-.end method
+    :cond_0
+    invoke-interface {v1}, Ljava/util/Iterator;->hasNext()Z
 
-.method public final synthetic I()Z
-    .locals 1
+    .line 13
+    .line 14
+    .line 15
+    move-result v2
 
-    .line 1
-    invoke-static {p0}, Landroid/support/v4/media/session/a;->r(Landroidx/camera/core/impl/m2;)Z
+    .line 16
+    if-eqz v2, :cond_1
 
-    move-result v0
+    .line 17
+    .line 18
+    invoke-interface {v1}, Ljava/util/Iterator;->next()Ljava/lang/Object;
 
-    return v0
-.end method
+    .line 19
+    .line 20
+    .line 21
+    move-result-object v2
 
-.method public final synthetic J(I)I
-    .locals 0
+    .line 22
+    check-cast v2, Landroidx/camera/core/impl/h;
 
-    .line 1
-    invoke-static {p0, p1}, Landroidx/camera/core/impl/y0;->e(Landroidx/camera/core/impl/a1;I)I
+    .line 23
+    .line 24
+    iget-object v3, v2, Landroidx/camera/core/impl/h;->a:Landroidx/camera/core/impl/K;
 
-    move-result p1
+    .line 25
+    .line 26
+    invoke-virtual {v0, v3}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
-    return p1
-.end method
+    .line 27
+    .line 28
+    .line 29
+    iget-object v2, v2, Landroidx/camera/core/impl/h;->b:Ljava/util/List;
 
-.method public final synthetic K()I
-    .locals 1
+    .line 30
+    .line 31
+    invoke-interface {v2}, Ljava/util/List;->iterator()Ljava/util/Iterator;
 
-    .line 1
-    invoke-static {p0}, Landroidx/camera/core/impl/y0;->a(Landroidx/camera/core/impl/a1;)I
+    .line 32
+    .line 33
+    .line 34
+    move-result-object v2
 
-    move-result v0
+    .line 35
+    :goto_0
+    invoke-interface {v2}, Ljava/util/Iterator;->hasNext()Z
 
-    return v0
-.end method
+    .line 36
+    .line 37
+    .line 38
+    move-result v3
 
-.method public final synthetic L(Landroidx/camera/core/impl/c;)Landroidx/camera/core/impl/Config$OptionPriority;
-    .locals 0
+    .line 39
+    if-eqz v3, :cond_0
 
-    .line 1
-    invoke-static {p0, p1}, Landroid/support/v4/media/session/a;->i(Landroidx/camera/core/impl/u1;Landroidx/camera/core/impl/c;)Landroidx/camera/core/impl/Config$OptionPriority;
+    .line 40
+    .line 41
+    invoke-interface {v2}, Ljava/util/Iterator;->next()Ljava/lang/Object;
 
-    move-result-object p1
+    .line 42
+    .line 43
+    .line 44
+    move-result-object v3
 
-    return-object p1
-.end method
+    .line 45
+    check-cast v3, Landroidx/camera/core/impl/K;
 
-.method public final synthetic M(Landroidx/camera/core/impl/c;Ljava/lang/Object;)Ljava/lang/Object;
-    .locals 0
+    .line 46
+    .line 47
+    invoke-virtual {v0, v3}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
-    .line 1
-    invoke-static {p0, p1, p2}, Landroid/support/v4/media/session/a;->v(Landroidx/camera/core/impl/u1;Landroidx/camera/core/impl/c;Ljava/lang/Object;)Ljava/lang/Object;
+    .line 48
+    .line 49
+    .line 50
+    goto :goto_0
 
-    move-result-object p1
+    .line 51
+    :cond_1
+    invoke-static {v0}, Ljava/util/Collections;->unmodifiableList(Ljava/util/List;)Ljava/util/List;
 
-    return-object p1
-.end method
-
-.method public final synthetic a(Landroidx/camera/core/impl/c;)Z
-    .locals 0
-
-    .line 1
-    invoke-static {p0, p1}, Landroid/support/v4/media/session/a;->a(Landroidx/camera/core/impl/u1;Landroidx/camera/core/impl/c;)Z
-
-    move-result p1
-
-    return p1
-.end method
-
-.method public final synthetic b(Ls/j0;)V
-    .locals 0
-
-    .line 1
-    invoke-static {p0, p1}, Landroid/support/v4/media/session/a;->b(Landroidx/camera/core/impl/u1;Ls/j0;)V
-
-    return-void
-.end method
-
-.method public final synthetic c()Ly/x;
-    .locals 1
-
-    .line 1
-    invoke-static {p0}, Landroid/support/v4/media/session/a;->h(Landroidx/camera/core/impl/m2;)Ly/x;
-
+    .line 52
+    .line 53
+    .line 54
     move-result-object v0
 
-    return-object v0
-.end method
-
-.method public final synthetic d(Landroidx/camera/core/impl/c;Landroidx/camera/core/impl/Config$OptionPriority;)Ljava/lang/Object;
-    .locals 0
-
-    .line 1
-    invoke-static {p0, p1, p2}, Landroid/support/v4/media/session/a;->w(Landroidx/camera/core/impl/u1;Landroidx/camera/core/impl/c;Landroidx/camera/core/impl/Config$OptionPriority;)Ljava/lang/Object;
-
-    move-result-object p1
-
-    return-object p1
-.end method
-
-.method public final e()Ljava/util/List;
-    .locals 2
-
-    .line 1
-    sget v0, Landroidx/camera/core/impl/y0;->a:I
-
-    .line 2
-    .line 3
-    const/4 v0, 0x0
-
-    .line 4
-    sget-object v1, Landroidx/camera/core/impl/a1;->i8:Landroidx/camera/core/impl/c;
-
-    .line 5
-    .line 6
-    invoke-virtual {p0, v1, v0}, Landroidx/camera/core/impl/v0;->M(Landroidx/camera/core/impl/c;Ljava/lang/Object;)Ljava/lang/Object;
-
-    .line 7
-    .line 8
-    .line 9
-    move-result-object v0
-
-    .line 10
-    check-cast v0, Ljava/util/List;
-
-    .line 11
-    .line 12
-    return-object v0
-.end method
-
-.method public final f()Lk0/b;
-    .locals 1
-
-    .line 1
-    sget v0, Landroidx/camera/core/impl/y0;->a:I
-
-    .line 2
-    .line 3
-    sget-object v0, Landroidx/camera/core/impl/a1;->j8:Landroidx/camera/core/impl/c;
-
-    .line 4
-    .line 5
-    invoke-virtual {p0, v0}, Landroidx/camera/core/impl/v0;->k(Landroidx/camera/core/impl/c;)Ljava/lang/Object;
-
-    .line 6
-    .line 7
-    .line 8
-    move-result-object v0
-
-    .line 9
-    check-cast v0, Lk0/b;
-
-    .line 10
-    .line 11
-    return-object v0
-.end method
-
-.method public final g()Landroidx/camera/core/impl/j0;
-    .locals 1
-
-    .line 1
-    iget-object v0, p0, Landroidx/camera/core/impl/v0;->b:Landroidx/camera/core/impl/m1;
-
-    return-object v0
-.end method
-
-.method public final synthetic h()Landroid/util/Range;
-    .locals 1
-
-    .line 1
-    const/4 v0, 0x0
-
-    invoke-static {p0, v0}, Landroid/support/v4/media/session/a;->n(Landroidx/camera/core/impl/m2;Landroid/util/Range;)Landroid/util/Range;
-
-    move-result-object v0
-
-    return-object v0
-.end method
-
-.method public final i()I
-    .locals 1
-
-    .line 1
-    const/16 v0, 0x23
-
-    return v0
-.end method
-
-.method public final synthetic j()I
-    .locals 1
-
-    .line 1
-    invoke-static {p0}, Landroidx/camera/core/impl/y0;->c(Landroidx/camera/core/impl/a1;)I
-
-    move-result v0
-
-    return v0
-.end method
-
-.method public final synthetic k(Landroidx/camera/core/impl/c;)Ljava/lang/Object;
-    .locals 0
-
-    .line 1
-    invoke-static {p0, p1}, Landroid/support/v4/media/session/a;->u(Landroidx/camera/core/impl/u1;Landroidx/camera/core/impl/c;)Ljava/lang/Object;
-
-    move-result-object p1
-
-    return-object p1
-.end method
-
-.method public final m()Z
-    .locals 1
-
-    .line 1
-    sget-object v0, Landroidx/camera/core/impl/x0;->a8:Landroidx/camera/core/impl/c;
-
-    .line 2
-    .line 3
-    invoke-static {p0, v0}, Landroid/support/v4/media/session/a;->a(Landroidx/camera/core/impl/u1;Landroidx/camera/core/impl/c;)Z
-
-    .line 4
-    .line 5
-    .line 6
-    move-result v0
-
-    .line 7
-    return v0
-.end method
-
-.method public final synthetic n()Ljava/util/Set;
-    .locals 1
-
-    .line 1
-    invoke-static {p0}, Landroid/support/v4/media/session/a;->s(Landroidx/camera/core/impl/u1;)Ljava/util/Set;
-
-    move-result-object v0
-
-    return-object v0
-.end method
-
-.method public final synthetic o()Landroidx/camera/core/impl/e2;
-    .locals 1
-
-    .line 1
-    invoke-static {p0}, Landroid/support/v4/media/session/a;->f(Landroidx/camera/core/impl/m2;)Landroidx/camera/core/impl/e2;
-
-    move-result-object v0
-
-    return-object v0
-.end method
-
-.method public final synthetic p()I
-    .locals 1
-
-    .line 1
-    invoke-static {p0}, Landroid/support/v4/media/session/a;->m(Landroidx/camera/core/impl/m2;)I
-
-    move-result v0
-
-    return v0
-.end method
-
-.method public final synthetic q()Landroidx/camera/core/impl/c2;
-    .locals 1
-
-    .line 1
-    invoke-static {p0}, Landroid/support/v4/media/session/a;->l(Landroidx/camera/core/impl/m2;)Landroidx/camera/core/impl/c2;
-
-    move-result-object v0
-
-    return-object v0
-.end method
-
-.method public final synthetic r()Z
-    .locals 1
-
-    .line 1
-    invoke-static {p0}, Landroid/support/v4/media/session/a;->q(Landroidx/camera/core/impl/m2;)Z
-
-    move-result v0
-
-    return v0
-.end method
-
-.method public final synthetic s()Ljava/util/ArrayList;
-    .locals 1
-
-    .line 1
-    invoke-static {p0}, Landroidx/camera/core/impl/y0;->b(Landroidx/camera/core/impl/a1;)Ljava/util/ArrayList;
-
-    move-result-object v0
-
-    return-object v0
-.end method
-
-.method public final t()Lk0/b;
-    .locals 2
-
-    .line 1
-    sget v0, Landroidx/camera/core/impl/y0;->a:I
-
-    .line 2
-    .line 3
-    const/4 v0, 0x0
-
-    .line 4
-    sget-object v1, Landroidx/camera/core/impl/a1;->j8:Landroidx/camera/core/impl/c;
-
-    .line 5
-    .line 6
-    invoke-virtual {p0, v1, v0}, Landroidx/camera/core/impl/v0;->M(Landroidx/camera/core/impl/c;Ljava/lang/Object;)Ljava/lang/Object;
-
-    .line 7
-    .line 8
-    .line 9
-    move-result-object v0
-
-    .line 10
-    check-cast v0, Lk0/b;
-
-    .line 11
-    .line 12
-    return-object v0
-.end method
-
-.method public final synthetic u()Landroidx/camera/core/impl/e2;
-    .locals 1
-
-    .line 1
-    invoke-static {p0}, Landroid/support/v4/media/session/a;->g(Landroidx/camera/core/impl/m2;)Landroidx/camera/core/impl/e2;
-
-    move-result-object v0
-
-    return-object v0
-.end method
-
-.method public final synthetic v(Landroidx/camera/core/impl/c;)Ljava/util/Set;
-    .locals 0
-
-    .line 1
-    invoke-static {p0, p1}, Landroid/support/v4/media/session/a;->k(Landroidx/camera/core/impl/u1;Landroidx/camera/core/impl/c;)Ljava/util/Set;
-
-    move-result-object p1
-
-    return-object p1
-.end method
-
-.method public final synthetic w(Ljava/lang/String;)Ljava/lang/String;
-    .locals 0
-
-    .line 1
-    invoke-static {p0, p1}, Lcom/google/android/gms/internal/play_billing/v3;->c(Ld0/k;Ljava/lang/String;)Ljava/lang/String;
-
-    move-result-object p1
-
-    return-object p1
-.end method
-
-.method public final x()Landroid/util/Size;
-    .locals 2
-
-    .line 1
-    sget v0, Landroidx/camera/core/impl/y0;->a:I
-
-    .line 2
-    .line 3
-    const/4 v0, 0x0
-
-    .line 4
-    sget-object v1, Landroidx/camera/core/impl/a1;->g8:Landroidx/camera/core/impl/c;
-
-    .line 5
-    .line 6
-    invoke-virtual {p0, v1, v0}, Landroidx/camera/core/impl/v0;->M(Landroidx/camera/core/impl/c;Ljava/lang/Object;)Ljava/lang/Object;
-
-    .line 7
-    .line 8
-    .line 9
-    move-result-object v0
-
-    .line 10
-    check-cast v0, Landroid/util/Size;
-
-    .line 11
-    .line 12
-    return-object v0
-.end method
-
-.method public final z()Landroid/util/Size;
-    .locals 2
-
-    .line 1
-    sget v0, Landroidx/camera/core/impl/y0;->a:I
-
-    .line 2
-    .line 3
-    const/4 v0, 0x0
-
-    .line 4
-    sget-object v1, Landroidx/camera/core/impl/a1;->f8:Landroidx/camera/core/impl/c;
-
-    .line 5
-    .line 6
-    invoke-virtual {p0, v1, v0}, Landroidx/camera/core/impl/v0;->M(Landroidx/camera/core/impl/c;Ljava/lang/Object;)Ljava/lang/Object;
-
-    .line 7
-    .line 8
-    .line 9
-    move-result-object v0
-
-    .line 10
-    check-cast v0, Landroid/util/Size;
-
-    .line 11
-    .line 12
+    .line 55
     return-object v0
 .end method

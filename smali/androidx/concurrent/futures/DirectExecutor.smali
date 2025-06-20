@@ -28,38 +28,38 @@
     .locals 3
 
     .line 1
-    new-instance v0, Landroidx/concurrent/futures/DirectExecutor;
+    const/4 v0, 0x0
 
     .line 2
+    new-instance v1, Landroidx/concurrent/futures/DirectExecutor;
+
     .line 3
-    const-string v1, "INSTANCE"
-
     .line 4
-    .line 5
-    const/4 v2, 0x0
+    const-string v2, "INSTANCE"
 
+    .line 5
     .line 6
-    invoke-direct {v0, v1, v2}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
+    invoke-direct {v1, v2, v0}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
 
     .line 7
     .line 8
     .line 9
-    sput-object v0, Landroidx/concurrent/futures/DirectExecutor;->INSTANCE:Landroidx/concurrent/futures/DirectExecutor;
+    sput-object v1, Landroidx/concurrent/futures/DirectExecutor;->INSTANCE:Landroidx/concurrent/futures/DirectExecutor;
 
     .line 10
     .line 11
-    const/4 v1, 0x1
+    const/4 v2, 0x1
 
     .line 12
-    new-array v1, v1, [Landroidx/concurrent/futures/DirectExecutor;
+    new-array v2, v2, [Landroidx/concurrent/futures/DirectExecutor;
 
     .line 13
     .line 14
-    aput-object v0, v1, v2
+    aput-object v1, v2, v0
 
     .line 15
     .line 16
-    sput-object v1, Landroidx/concurrent/futures/DirectExecutor;->b:[Landroidx/concurrent/futures/DirectExecutor;
+    sput-object v2, Landroidx/concurrent/futures/DirectExecutor;->b:[Landroidx/concurrent/futures/DirectExecutor;
 
     .line 17
     .line 18
@@ -129,7 +129,10 @@
 .method public toString()Ljava/lang/String;
     .locals 1
 
+    .line 1
     const-string v0, "DirectExecutor"
 
+    .line 2
+    .line 3
     return-object v0
 .end method

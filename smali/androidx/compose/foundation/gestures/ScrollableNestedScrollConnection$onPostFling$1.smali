@@ -4,6 +4,15 @@
 
 
 # annotations
+.annotation runtime Lca/c;
+    c = "androidx.compose.foundation.gestures.ScrollableNestedScrollConnection"
+    f = "Scrollable.kt"
+    l = {
+        0x361
+    }
+    m = "onPostFling-RZ2iAVY"
+.end annotation
+
 .annotation runtime Lkotlin/Metadata;
     k = 0x3
     mv = {
@@ -14,15 +23,6 @@
     xi = 0x30
 .end annotation
 
-.annotation runtime Lth/c;
-    c = "androidx.compose.foundation.gestures.ScrollableNestedScrollConnection"
-    f = "Scrollable.kt"
-    l = {
-        0x361
-    }
-    m = "onPostFling-RZ2iAVY"
-.end annotation
-
 
 # instance fields
 .field J$0:J
@@ -31,16 +31,16 @@
 
 .field synthetic result:Ljava/lang/Object;
 
-.field final synthetic this$0:Landroidx/compose/foundation/gestures/g0;
+.field final synthetic this$0:Landroidx/compose/foundation/gestures/I;
 
 
 # direct methods
-.method public constructor <init>(Landroidx/compose/foundation/gestures/g0;Lkotlin/coroutines/Continuation;)V
+.method public constructor <init>(Landroidx/compose/foundation/gestures/I;Lkotlin/coroutines/Continuation;)V
     .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
-            "Landroidx/compose/foundation/gestures/g0;",
+            "Landroidx/compose/foundation/gestures/I;",
             "Lkotlin/coroutines/Continuation<",
             "-",
             "Landroidx/compose/foundation/gestures/ScrollableNestedScrollConnection$onPostFling$1;",
@@ -48,7 +48,7 @@
         }
     .end annotation
 
-    iput-object p1, p0, Landroidx/compose/foundation/gestures/ScrollableNestedScrollConnection$onPostFling$1;->this$0:Landroidx/compose/foundation/gestures/g0;
+    iput-object p1, p0, Landroidx/compose/foundation/gestures/ScrollableNestedScrollConnection$onPostFling$1;->this$0:Landroidx/compose/foundation/gestures/I;
 
     invoke-direct {p0, p2}, Lkotlin/coroutines/jvm/internal/ContinuationImpl;-><init>(Lkotlin/coroutines/Continuation;)V
 
@@ -70,7 +70,7 @@
 
     iput p1, p0, Landroidx/compose/foundation/gestures/ScrollableNestedScrollConnection$onPostFling$1;->label:I
 
-    iget-object v0, p0, Landroidx/compose/foundation/gestures/ScrollableNestedScrollConnection$onPostFling$1;->this$0:Landroidx/compose/foundation/gestures/g0;
+    iget-object v0, p0, Landroidx/compose/foundation/gestures/ScrollableNestedScrollConnection$onPostFling$1;->this$0:Landroidx/compose/foundation/gestures/I;
 
     const-wide/16 v1, 0x0
 
@@ -78,7 +78,7 @@
 
     move-object v5, p0
 
-    invoke-virtual/range {v0 .. v5}, Landroidx/compose/foundation/gestures/g0;->m(JJLkotlin/coroutines/Continuation;)Ljava/lang/Object;
+    invoke-virtual/range {v0 .. v5}, Landroidx/compose/foundation/gestures/I;->n(JJLkotlin/coroutines/Continuation;)Ljava/lang/Object;
 
     move-result-object p1
 

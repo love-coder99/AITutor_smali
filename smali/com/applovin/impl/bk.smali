@@ -214,9 +214,10 @@
 .method private b(Lcom/applovin/impl/o5;)V
     .locals 3
 
-    .line 9
+    .line 13
     invoke-virtual {p1}, Lcom/applovin/impl/o5;->b()V
 
+    .line 14
     iget-object v0, p0, Lcom/applovin/impl/bk;->e:[Lcom/applovin/impl/o5;
 
     iget v1, p0, Lcom/applovin/impl/bk;->g:I
@@ -225,7 +226,6 @@
 
     iput v2, p0, Lcom/applovin/impl/bk;->g:I
 
-    .line 10
     aput-object p1, v0, v1
 
     return-void
@@ -234,9 +234,10 @@
 .method private b(Lcom/applovin/impl/yg;)V
     .locals 3
 
-    .line 11
+    .line 15
     invoke-virtual {p1}, Lcom/applovin/impl/l2;->b()V
 
+    .line 16
     iget-object v0, p0, Lcom/applovin/impl/bk;->f:[Lcom/applovin/impl/yg;
 
     iget v1, p0, Lcom/applovin/impl/bk;->h:I
@@ -245,7 +246,6 @@
 
     iput v2, p0, Lcom/applovin/impl/bk;->h:I
 
-    .line 12
     aput-object p1, v0, v1
 
     return-void
@@ -759,37 +759,38 @@
 .method public a()V
     .locals 2
 
+    .line 11
     iget-object v0, p0, Lcom/applovin/impl/bk;->b:Ljava/lang/Object;
 
-    .line 10
     monitor-enter v0
 
     const/4 v1, 0x1
 
+    .line 12
     :try_start_0
     iput-boolean v1, p0, Lcom/applovin/impl/bk;->l:Z
 
+    .line 13
     iget-object v1, p0, Lcom/applovin/impl/bk;->b:Ljava/lang/Object;
 
-    .line 11
     invoke-virtual {v1}, Ljava/lang/Object;->notify()V
 
-    .line 12
+    .line 14
     monitor-exit v0
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
+    .line 15
     :try_start_1
     iget-object v0, p0, Lcom/applovin/impl/bk;->a:Ljava/lang/Thread;
 
-    .line 13
     invoke-virtual {v0}, Ljava/lang/Thread;->join()V
     :try_end_1
     .catch Ljava/lang/InterruptedException; {:try_start_1 .. :try_end_1} :catch_0
 
     goto :goto_0
 
-    .line 14
+    .line 16
     :catch_0
     invoke-static {}, Ljava/lang/Thread;->currentThread()Ljava/lang/Thread;
 
@@ -803,7 +804,7 @@
     :catchall_0
     move-exception v1
 
-    .line 15
+    .line 17
     :try_start_2
     monitor-exit v0
     :try_end_2
@@ -815,11 +816,11 @@
 .method public final a(I)V
     .locals 4
 
+    .line 23
     iget v0, p0, Lcom/applovin/impl/bk;->g:I
 
     iget-object v1, p0, Lcom/applovin/impl/bk;->e:[Lcom/applovin/impl/o5;
 
-    .line 21
     array-length v1, v1
 
     const/4 v2, 0x0
@@ -836,9 +837,9 @@
     :goto_0
     invoke-static {v0}, Lcom/applovin/impl/b1;->b(Z)V
 
+    .line 24
     iget-object v0, p0, Lcom/applovin/impl/bk;->e:[Lcom/applovin/impl/o5;
 
-    .line 22
     array-length v1, v0
 
     :goto_1
@@ -846,7 +847,7 @@
 
     aget-object v3, v0, v2
 
-    .line 23
+    .line 25
     invoke-virtual {v3, p1}, Lcom/applovin/impl/o5;->g(I)V
 
     add-int/lit8 v2, v2, 0x1
@@ -860,15 +861,16 @@
 .method public final a(Lcom/applovin/impl/o5;)V
     .locals 2
 
+    .line 2
     iget-object v0, p0, Lcom/applovin/impl/bk;->b:Ljava/lang/Object;
 
-    .line 2
     monitor-enter v0
 
     .line 3
     :try_start_0
     invoke-direct {p0}, Lcom/applovin/impl/bk;->l()V
 
+    .line 4
     iget-object v1, p0, Lcom/applovin/impl/bk;->i:Lcom/applovin/impl/o5;
 
     if-ne p1, v1, :cond_0
@@ -880,13 +882,12 @@
     :cond_0
     const/4 v1, 0x0
 
-    .line 4
     :goto_0
     invoke-static {v1}, Lcom/applovin/impl/b1;->a(Z)V
 
+    .line 5
     iget-object v1, p0, Lcom/applovin/impl/bk;->c:Ljava/util/ArrayDeque;
 
-    .line 5
     invoke-virtual {v1, p1}, Ljava/util/ArrayDeque;->addLast(Ljava/lang/Object;)V
 
     .line 6
@@ -894,9 +895,10 @@
 
     const/4 p1, 0x0
 
+    .line 7
     iput-object p1, p0, Lcom/applovin/impl/bk;->i:Lcom/applovin/impl/o5;
 
-    .line 7
+    .line 8
     monitor-exit v0
 
     return-void
@@ -904,7 +906,7 @@
     :catchall_0
     move-exception p1
 
-    .line 8
+    .line 9
     monitor-exit v0
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
@@ -915,19 +917,19 @@
 .method public a(Lcom/applovin/impl/yg;)V
     .locals 1
 
+    .line 18
     iget-object v0, p0, Lcom/applovin/impl/bk;->b:Ljava/lang/Object;
 
-    .line 16
     monitor-enter v0
 
-    .line 17
+    .line 19
     :try_start_0
     invoke-direct {p0, p1}, Lcom/applovin/impl/bk;->b(Lcom/applovin/impl/yg;)V
 
-    .line 18
+    .line 20
     invoke-direct {p0}, Lcom/applovin/impl/bk;->k()V
 
-    .line 19
+    .line 21
     monitor-exit v0
 
     return-void
@@ -935,7 +937,7 @@
     :catchall_0
     move-exception p1
 
-    .line 20
+    .line 22
     monitor-exit v0
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
@@ -946,7 +948,7 @@
 .method public bridge synthetic a(Ljava/lang/Object;)V
     .locals 0
 
-    .line 9
+    .line 10
     check-cast p1, Lcom/applovin/impl/o5;
 
     invoke-virtual {p0, p1}, Lcom/applovin/impl/bk;->a(Lcom/applovin/impl/o5;)V
@@ -957,29 +959,33 @@
 .method public final b()V
     .locals 2
 
+    .line 1
     iget-object v0, p0, Lcom/applovin/impl/bk;->b:Ljava/lang/Object;
 
-    .line 1
     monitor-enter v0
 
     const/4 v1, 0x1
 
+    .line 2
     :try_start_0
     iput-boolean v1, p0, Lcom/applovin/impl/bk;->k:Z
 
     const/4 v1, 0x0
 
+    .line 3
     iput v1, p0, Lcom/applovin/impl/bk;->m:I
 
+    .line 4
     iget-object v1, p0, Lcom/applovin/impl/bk;->i:Lcom/applovin/impl/o5;
 
     if-eqz v1, :cond_0
 
-    .line 2
+    .line 5
     invoke-direct {p0, v1}, Lcom/applovin/impl/bk;->b(Lcom/applovin/impl/o5;)V
 
     const/4 v1, 0x0
 
+    .line 6
     iput-object v1, p0, Lcom/applovin/impl/bk;->i:Lcom/applovin/impl/o5;
 
     goto :goto_0
@@ -989,20 +995,20 @@
 
     goto :goto_2
 
+    .line 7
     :cond_0
     :goto_0
     iget-object v1, p0, Lcom/applovin/impl/bk;->c:Ljava/util/ArrayDeque;
 
-    .line 3
     invoke-virtual {v1}, Ljava/util/ArrayDeque;->isEmpty()Z
 
     move-result v1
 
     if-nez v1, :cond_1
 
+    .line 8
     iget-object v1, p0, Lcom/applovin/impl/bk;->c:Ljava/util/ArrayDeque;
 
-    .line 4
     invoke-virtual {v1}, Ljava/util/ArrayDeque;->removeFirst()Ljava/lang/Object;
 
     move-result-object v1
@@ -1013,20 +1019,20 @@
 
     goto :goto_0
 
+    .line 9
     :cond_1
     :goto_1
     iget-object v1, p0, Lcom/applovin/impl/bk;->d:Ljava/util/ArrayDeque;
 
-    .line 5
     invoke-virtual {v1}, Ljava/util/ArrayDeque;->isEmpty()Z
 
     move-result v1
 
     if-nez v1, :cond_2
 
+    .line 10
     iget-object v1, p0, Lcom/applovin/impl/bk;->d:Ljava/util/ArrayDeque;
 
-    .line 6
     invoke-virtual {v1}, Ljava/util/ArrayDeque;->removeFirst()Ljava/lang/Object;
 
     move-result-object v1
@@ -1037,13 +1043,13 @@
 
     goto :goto_1
 
-    .line 7
+    .line 11
     :cond_2
     monitor-exit v0
 
     return-void
 
-    .line 8
+    .line 12
     :goto_2
     monitor-exit v0
     :try_end_0

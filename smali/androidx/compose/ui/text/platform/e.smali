@@ -4,11 +4,11 @@
 
 
 # instance fields
-.field public final b:Landroidx/compose/ui/text/k;
+.field public final b:Landroidx/compose/ui/text/l;
 
 
 # direct methods
-.method public constructor <init>(Landroidx/compose/ui/text/k;)V
+.method public constructor <init>(Landroidx/compose/ui/text/l;)V
     .locals 0
 
     .line 1
@@ -17,7 +17,7 @@
     .line 2
     .line 3
     .line 4
-    iput-object p1, p0, Landroidx/compose/ui/text/platform/e;->b:Landroidx/compose/ui/text/k;
+    iput-object p1, p0, Landroidx/compose/ui/text/platform/e;->b:Landroidx/compose/ui/text/l;
 
     .line 5
     .line 6
@@ -30,11 +30,11 @@
     .locals 0
 
     .line 1
-    iget-object p1, p0, Landroidx/compose/ui/text/platform/e;->b:Landroidx/compose/ui/text/k;
+    iget-object p1, p0, Landroidx/compose/ui/text/platform/e;->b:Landroidx/compose/ui/text/l;
 
     .line 2
     .line 3
-    invoke-virtual {p1}, Landroidx/compose/ui/text/k;->a()V
+    invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
     .line 4
     .line 5

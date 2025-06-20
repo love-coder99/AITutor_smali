@@ -4,6 +4,16 @@
 
 
 # annotations
+.annotation runtime Lca/c;
+    c = "androidx.compose.foundation.pager.PagerState"
+    f = "PagerState.kt"
+    l = {
+        0x25d,
+        0x265
+    }
+    m = "animateScrollToPage"
+.end annotation
+
 .annotation runtime Lkotlin/Metadata;
     k = 0x3
     mv = {
@@ -12,16 +22,6 @@
         0x0
     }
     xi = 0x30
-.end annotation
-
-.annotation runtime Lth/c;
-    c = "androidx.compose.foundation.pager.PagerState"
-    f = "PagerState.kt"
-    l = {
-        0x25d,
-        0x265
-    }
-    m = "animateScrollToPage"
 .end annotation
 
 
@@ -38,16 +38,16 @@
 
 .field synthetic result:Ljava/lang/Object;
 
-.field final synthetic this$0:Landroidx/compose/foundation/pager/u;
+.field final synthetic this$0:Landroidx/compose/foundation/pager/o;
 
 
 # direct methods
-.method public constructor <init>(Landroidx/compose/foundation/pager/u;Lkotlin/coroutines/Continuation;)V
+.method public constructor <init>(Landroidx/compose/foundation/pager/o;Lkotlin/coroutines/Continuation;)V
     .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
-            "Landroidx/compose/foundation/pager/u;",
+            "Landroidx/compose/foundation/pager/o;",
             "Lkotlin/coroutines/Continuation<",
             "-",
             "Landroidx/compose/foundation/pager/PagerState$animateScrollToPage$1;",
@@ -55,7 +55,7 @@
         }
     .end annotation
 
-    iput-object p1, p0, Landroidx/compose/foundation/pager/PagerState$animateScrollToPage$1;->this$0:Landroidx/compose/foundation/pager/u;
+    iput-object p1, p0, Landroidx/compose/foundation/pager/PagerState$animateScrollToPage$1;->this$0:Landroidx/compose/foundation/pager/o;
 
     invoke-direct {p0, p2}, Lkotlin/coroutines/jvm/internal/ContinuationImpl;-><init>(Lkotlin/coroutines/Continuation;)V
 
@@ -77,7 +77,7 @@
 
     iput p1, p0, Landroidx/compose/foundation/pager/PagerState$animateScrollToPage$1;->label:I
 
-    iget-object p1, p0, Landroidx/compose/foundation/pager/PagerState$animateScrollToPage$1;->this$0:Landroidx/compose/foundation/pager/u;
+    iget-object p1, p0, Landroidx/compose/foundation/pager/PagerState$animateScrollToPage$1;->this$0:Landroidx/compose/foundation/pager/o;
 
     const/4 v0, 0x0
 
@@ -85,7 +85,7 @@
 
     const/4 v2, 0x0
 
-    invoke-virtual {p1, v2, v0, v1, p0}, Landroidx/compose/foundation/pager/u;->f(IFLandroidx/compose/animation/core/g;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
+    invoke-virtual {p1, v1, v2, v0, p0}, Landroidx/compose/foundation/pager/o;->f(IFLandroidx/compose/animation/core/f;Lkotlin/coroutines/jvm/internal/ContinuationImpl;)Ljava/lang/Object;
 
     move-result-object p1
 

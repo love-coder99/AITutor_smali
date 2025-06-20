@@ -114,6 +114,10 @@
 # direct methods
 .method private constructor <init>(Landroid/app/Application;)V
     .locals 2
+    .param p1    # Landroid/app/Application;
+        .annotation build Landroidx/annotation/NonNull;
+        .end annotation
+    .end param
 
     .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -271,7 +275,7 @@
 .method public static synthetic a(Lcom/apm/insight/runtime/a/b;J)J
     .locals 0
 
-    .line 5
+    .line 3
     iput-wide p1, p0, Lcom/apm/insight/runtime/a/b;->o:J
 
     return-wide p1
@@ -280,7 +284,7 @@
 .method public static synthetic a(Lcom/apm/insight/runtime/a/b;)Ljava/lang/String;
     .locals 0
 
-    .line 6
+    .line 4
     iget-object p0, p0, Lcom/apm/insight/runtime/a/b;->n:Ljava/lang/String;
 
     return-object p0
@@ -289,7 +293,7 @@
 .method public static synthetic a(Lcom/apm/insight/runtime/a/b;Ljava/lang/String;)Ljava/lang/String;
     .locals 0
 
-    .line 7
+    .line 5
     iput-object p1, p0, Lcom/apm/insight/runtime/a/b;->n:Ljava/lang/String;
 
     return-object p1
@@ -303,15 +307,15 @@
 
     invoke-direct {v0}, Lorg/json/JSONObject;-><init>()V
 
+    .line 10
     :try_start_0
     const-string v1, "name"
 
-    .line 10
     invoke-virtual {v0, v1, p0}, Lorg/json/JSONObject;->put(Ljava/lang/String;Ljava/lang/Object;)Lorg/json/JSONObject;
 
+    .line 11
     const-string p0, "time"
 
-    .line 11
     invoke-virtual {v0, p0, p1, p2}, Lorg/json/JSONObject;->put(Ljava/lang/String;J)Lorg/json/JSONObject;
     :try_end_0
     .catch Lorg/json/JSONException; {:try_start_0 .. :try_end_0} :catch_0
@@ -323,9 +327,9 @@
 .method public static a()V
     .locals 1
 
-    .line 3
     const/4 v0, 0x1
 
+    .line 8
     sput-boolean v0, Lcom/apm/insight/runtime/a/b;->e:Z
 
     return-void
@@ -400,7 +404,7 @@
 .method public static synthetic a(Lcom/apm/insight/runtime/a/b;Z)Z
     .locals 0
 
-    .line 8
+    .line 6
     iput-boolean p1, p0, Lcom/apm/insight/runtime/a/b;->x:Z
 
     return p1
@@ -409,7 +413,7 @@
 .method public static synthetic a(Z)Z
     .locals 0
 
-    .line 4
+    .line 7
     sput-boolean p0, Lcom/apm/insight/runtime/a/b;->b:Z
 
     return p0
@@ -418,13 +422,14 @@
 .method public static b()I
     .locals 2
 
-    .line 1
+    .line 5
     sget v0, Lcom/apm/insight/runtime/a/b;->d:I
 
     const/4 v1, 0x1
 
     if-ne v0, v1, :cond_1
 
+    .line 6
     sget-boolean v0, Lcom/apm/insight/runtime/a/b;->e:Z
 
     if-eqz v0, :cond_0
@@ -443,7 +448,7 @@
 .method public static synthetic b(Lcom/apm/insight/runtime/a/b;J)J
     .locals 0
 
-    .line 3
+    .line 1
     iput-wide p1, p0, Lcom/apm/insight/runtime/a/b;->q:J
 
     return-wide p1
@@ -452,7 +457,7 @@
 .method public static synthetic b(Lcom/apm/insight/runtime/a/b;Ljava/lang/String;)Ljava/lang/String;
     .locals 0
 
-    .line 4
+    .line 2
     iput-object p1, p0, Lcom/apm/insight/runtime/a/b;->p:Ljava/lang/String;
 
     return-object p1
@@ -461,7 +466,7 @@
 .method public static synthetic b(Lcom/apm/insight/runtime/a/b;)Ljava/util/List;
     .locals 0
 
-    .line 5
+    .line 3
     iget-object p0, p0, Lcom/apm/insight/runtime/a/b;->i:Ljava/util/List;
 
     return-object p0
@@ -470,7 +475,7 @@
 .method public static synthetic b(Z)Z
     .locals 0
 
-    .line 2
+    .line 4
     sput-boolean p0, Lcom/apm/insight/runtime/a/b;->c:Z
 
     return p0
@@ -479,7 +484,7 @@
 .method public static c()J
     .locals 2
 
-    .line 1
+    .line 4
     sget-wide v0, Lcom/apm/insight/runtime/a/b;->f:J
 
     return-wide v0
@@ -488,7 +493,7 @@
 .method public static synthetic c(Lcom/apm/insight/runtime/a/b;)J
     .locals 2
 
-    .line 2
+    .line 1
     iget-wide v0, p0, Lcom/apm/insight/runtime/a/b;->o:J
 
     return-wide v0
@@ -497,7 +502,7 @@
 .method public static synthetic c(Lcom/apm/insight/runtime/a/b;J)J
     .locals 0
 
-    .line 3
+    .line 2
     iput-wide p1, p0, Lcom/apm/insight/runtime/a/b;->s:J
 
     return-wide p1
@@ -506,7 +511,7 @@
 .method public static synthetic c(Lcom/apm/insight/runtime/a/b;Ljava/lang/String;)Ljava/lang/String;
     .locals 0
 
-    .line 4
+    .line 3
     iput-object p1, p0, Lcom/apm/insight/runtime/a/b;->r:Ljava/lang/String;
 
     return-object p1
@@ -524,21 +529,23 @@
 .method public static d()Lcom/apm/insight/runtime/a/b;
     .locals 3
 
+    .line 4
     sget-object v0, Lcom/apm/insight/runtime/a/b;->z:Lcom/apm/insight/runtime/a/b;
 
     if-nez v0, :cond_1
 
+    .line 5
     const-class v0, Lcom/apm/insight/runtime/a/b;
 
-    .line 4
     monitor-enter v0
 
+    .line 6
     :try_start_0
     sget-object v1, Lcom/apm/insight/runtime/a/b;->z:Lcom/apm/insight/runtime/a/b;
 
     if-nez v1, :cond_0
 
-    .line 5
+    .line 7
     new-instance v1, Lcom/apm/insight/runtime/a/b;
 
     invoke-static {}, Lcom/apm/insight/e;->h()Landroid/app/Application;
@@ -556,7 +563,7 @@
 
     goto :goto_1
 
-    .line 6
+    .line 8
     :cond_0
     :goto_0
     monitor-exit v0
@@ -570,6 +577,7 @@
 
     throw v1
 
+    .line 9
     :cond_1
     :goto_2
     sget-object v0, Lcom/apm/insight/runtime/a/b;->z:Lcom/apm/insight/runtime/a/b;
@@ -625,7 +633,7 @@
 .method public static synthetic f(Lcom/apm/insight/runtime/a/b;)J
     .locals 2
 
-    .line 2
+    .line 1
     iget-wide v0, p0, Lcom/apm/insight/runtime/a/b;->q:J
 
     return-wide v0
@@ -634,7 +642,7 @@
 .method public static synthetic f(Lcom/apm/insight/runtime/a/b;J)J
     .locals 0
 
-    .line 3
+    .line 2
     iput-wide p1, p0, Lcom/apm/insight/runtime/a/b;->w:J
 
     return-wide p1
@@ -674,7 +682,7 @@
 .method public static synthetic j(Lcom/apm/insight/runtime/a/b;)Ljava/lang/String;
     .locals 0
 
-    .line 2
+    .line 1
     iget-object p0, p0, Lcom/apm/insight/runtime/a/b;->t:Ljava/lang/String;
 
     return-object p0
@@ -683,7 +691,7 @@
 .method public static synthetic j()Z
     .locals 1
 
-    .line 1
+    .line 2
     sget-boolean v0, Lcom/apm/insight/runtime/a/b;->a:Z
 
     return v0
@@ -692,7 +700,7 @@
 .method public static synthetic k(Lcom/apm/insight/runtime/a/b;)Ljava/lang/String;
     .locals 0
 
-    .line 2
+    .line 1
     iget-object p0, p0, Lcom/apm/insight/runtime/a/b;->r:Ljava/lang/String;
 
     return-object p0
@@ -701,9 +709,9 @@
 .method public static synthetic k()Z
     .locals 1
 
-    .line 1
     const/4 v0, 0x0
 
+    .line 2
     sput-boolean v0, Lcom/apm/insight/runtime/a/b;->a:Z
 
     return v0
@@ -712,7 +720,7 @@
 .method public static synthetic l(Lcom/apm/insight/runtime/a/b;)I
     .locals 2
 
-    .line 2
+    .line 1
     iget v0, p0, Lcom/apm/insight/runtime/a/b;->B:I
 
     add-int/lit8 v1, v0, -0x1
@@ -725,7 +733,7 @@
 .method public static synthetic l()Z
     .locals 1
 
-    .line 1
+    .line 2
     sget-boolean v0, Lcom/apm/insight/runtime/a/b;->c:Z
 
     return v0
@@ -734,7 +742,7 @@
 .method public static synthetic m(Lcom/apm/insight/runtime/a/b;)I
     .locals 0
 
-    .line 2
+    .line 1
     iget p0, p0, Lcom/apm/insight/runtime/a/b;->B:I
 
     return p0
@@ -743,7 +751,7 @@
 .method public static synthetic m()Z
     .locals 1
 
-    .line 1
+    .line 2
     sget-boolean v0, Lcom/apm/insight/runtime/a/b;->b:Z
 
     return v0
@@ -768,11 +776,11 @@
 
     invoke-direct {v0}, Lorg/json/JSONArray;-><init>()V
 
+    .line 3
     iget-object v1, p0, Lcom/apm/insight/runtime/a/b;->i:Ljava/util/List;
 
     if-eqz v1, :cond_1
 
-    .line 3
     invoke-interface {v1}, Ljava/util/List;->isEmpty()Z
 
     move-result v1
@@ -784,29 +792,29 @@
     :cond_0
     const/4 v1, 0x0
 
+    .line 4
     :goto_0
     iget-object v2, p0, Lcom/apm/insight/runtime/a/b;->i:Ljava/util/List;
 
-    .line 4
     invoke-interface {v2}, Ljava/util/List;->size()I
 
     move-result v2
 
     if-ge v1, v2, :cond_1
 
+    .line 5
     :try_start_0
     iget-object v2, p0, Lcom/apm/insight/runtime/a/b;->i:Ljava/util/List;
 
-    .line 5
     invoke-interface {v2, v1}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
     move-result-object v2
 
     check-cast v2, Ljava/lang/String;
 
+    .line 6
     iget-object v3, p0, Lcom/apm/insight/runtime/a/b;->j:Ljava/util/List;
 
-    .line 6
     invoke-interface {v3, v1}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
     move-result-object v3
@@ -853,11 +861,11 @@
 
     invoke-direct {v0}, Lorg/json/JSONArray;-><init>()V
 
+    .line 3
     iget-object v1, p0, Lcom/apm/insight/runtime/a/b;->k:Ljava/util/List;
 
     if-eqz v1, :cond_1
 
-    .line 3
     invoke-interface {v1}, Ljava/util/List;->isEmpty()Z
 
     move-result v1
@@ -869,29 +877,29 @@
     :cond_0
     const/4 v1, 0x0
 
+    .line 4
     :goto_0
     iget-object v2, p0, Lcom/apm/insight/runtime/a/b;->k:Ljava/util/List;
 
-    .line 4
     invoke-interface {v2}, Ljava/util/List;->size()I
 
     move-result v2
 
     if-ge v1, v2, :cond_1
 
+    .line 5
     :try_start_0
     iget-object v2, p0, Lcom/apm/insight/runtime/a/b;->k:Ljava/util/List;
 
-    .line 5
     invoke-interface {v2, v1}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
     move-result-object v2
 
     check-cast v2, Ljava/lang/String;
 
+    .line 6
     iget-object v3, p0, Lcom/apm/insight/runtime/a/b;->l:Ljava/util/List;
 
-    .line 6
     invoke-interface {v3, v1}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
     move-result-object v3
@@ -985,7 +993,7 @@
 .method public final f()Z
     .locals 1
 
-    .line 1
+    .line 3
     iget-boolean v0, p0, Lcom/apm/insight/runtime/a/b;->x:Z
 
     return v0
@@ -999,6 +1007,7 @@
 
     invoke-direct {v0}, Lorg/json/JSONObject;-><init>()V
 
+    .line 3
     :try_start_0
     const-string v1, "last_create_activity"
 
@@ -1006,77 +1015,76 @@
 
     iget-wide v3, p0, Lcom/apm/insight/runtime/a/b;->o:J
 
-    .line 3
     invoke-static {v2, v3, v4}, Lcom/apm/insight/runtime/a/b;->a(Ljava/lang/String;J)Lorg/json/JSONObject;
 
     move-result-object v2
 
     invoke-virtual {v0, v1, v2}, Lorg/json/JSONObject;->put(Ljava/lang/String;Ljava/lang/Object;)Lorg/json/JSONObject;
 
+    .line 4
     const-string v1, "last_start_activity"
 
     iget-object v2, p0, Lcom/apm/insight/runtime/a/b;->p:Ljava/lang/String;
 
     iget-wide v3, p0, Lcom/apm/insight/runtime/a/b;->q:J
 
-    .line 4
     invoke-static {v2, v3, v4}, Lcom/apm/insight/runtime/a/b;->a(Ljava/lang/String;J)Lorg/json/JSONObject;
 
     move-result-object v2
 
     invoke-virtual {v0, v1, v2}, Lorg/json/JSONObject;->put(Ljava/lang/String;Ljava/lang/Object;)Lorg/json/JSONObject;
 
+    .line 5
     const-string v1, "last_resume_activity"
 
     iget-object v2, p0, Lcom/apm/insight/runtime/a/b;->r:Ljava/lang/String;
 
     iget-wide v3, p0, Lcom/apm/insight/runtime/a/b;->s:J
 
-    .line 5
     invoke-static {v2, v3, v4}, Lcom/apm/insight/runtime/a/b;->a(Ljava/lang/String;J)Lorg/json/JSONObject;
 
     move-result-object v2
 
     invoke-virtual {v0, v1, v2}, Lorg/json/JSONObject;->put(Ljava/lang/String;Ljava/lang/Object;)Lorg/json/JSONObject;
 
+    .line 6
     const-string v1, "last_pause_activity"
 
     iget-object v2, p0, Lcom/apm/insight/runtime/a/b;->t:Ljava/lang/String;
 
     iget-wide v3, p0, Lcom/apm/insight/runtime/a/b;->u:J
 
-    .line 6
     invoke-static {v2, v3, v4}, Lcom/apm/insight/runtime/a/b;->a(Ljava/lang/String;J)Lorg/json/JSONObject;
 
     move-result-object v2
 
     invoke-virtual {v0, v1, v2}, Lorg/json/JSONObject;->put(Ljava/lang/String;Ljava/lang/Object;)Lorg/json/JSONObject;
 
+    .line 7
     const-string v1, "last_stop_activity"
 
     iget-object v2, p0, Lcom/apm/insight/runtime/a/b;->v:Ljava/lang/String;
 
     iget-wide v3, p0, Lcom/apm/insight/runtime/a/b;->w:J
 
-    .line 7
     invoke-static {v2, v3, v4}, Lcom/apm/insight/runtime/a/b;->a(Ljava/lang/String;J)Lorg/json/JSONObject;
 
     move-result-object v2
 
     invoke-virtual {v0, v1, v2}, Lorg/json/JSONObject;->put(Ljava/lang/String;Ljava/lang/Object;)Lorg/json/JSONObject;
 
+    .line 8
     const-string v1, "alive_activities"
 
-    .line 8
     invoke-direct {p0}, Lcom/apm/insight/runtime/a/b;->n()Lorg/json/JSONArray;
 
     move-result-object v2
 
     invoke-virtual {v0, v1, v2}, Lorg/json/JSONObject;->put(Ljava/lang/String;Ljava/lang/Object;)Lorg/json/JSONObject;
 
+    .line 9
     const-string v1, "finish_activities"
 
-    .line 9
     invoke-direct {p0}, Lcom/apm/insight/runtime/a/b;->o()Lorg/json/JSONArray;
 
     move-result-object v2
@@ -1091,10 +1099,12 @@
 
 .method public final h()Ljava/lang/String;
     .locals 1
-
-    iget-object v0, p0, Lcom/apm/insight/runtime/a/b;->r:Ljava/lang/String;
+    .annotation build Landroidx/annotation/NonNull;
+    .end annotation
 
     .line 2
+    iget-object v0, p0, Lcom/apm/insight/runtime/a/b;->r:Ljava/lang/String;
+
     invoke-static {v0}, Ljava/lang/String;->valueOf(Ljava/lang/Object;)Ljava/lang/String;
 
     move-result-object v0

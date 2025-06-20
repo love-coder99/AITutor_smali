@@ -1,19 +1,8 @@
-.class public interface abstract Landroidx/compose/runtime/a0;
+.class public interface abstract Landroidx/compose/runtime/A0;
 .super Ljava/lang/Object;
 .source "SourceFile"
 
 
-# static fields
-.field public static final w8:Landroidx/compose/runtime/z;
-
-
-# direct methods
-.method static constructor <clinit>()V
-    .locals 1
-
-    sget-object v0, Landroidx/compose/runtime/z;->a:Landroidx/compose/runtime/z;
-
-    sput-object v0, Landroidx/compose/runtime/a0;->w8:Landroidx/compose/runtime/z;
-
-    return-void
+# virtual methods
+.method public abstract a(Ljava/lang/Object;Ljava/lang/Object;)Z
 .end method

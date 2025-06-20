@@ -48,6 +48,8 @@
 # virtual methods
 .method public addAllInAppMessageCategoriesToShow()Lcom/android/billingclient/api/InAppMessageParams$Builder;
     .locals 2
+    .annotation build Landroidx/annotation/NonNull;
+    .end annotation
 
     .line 1
     iget-object v0, p0, Lcom/android/billingclient/api/InAppMessageParams$Builder;->zza:Ljava/util/Set;
@@ -75,6 +77,8 @@
 
 .method public addInAppMessageCategoryToShow(I)Lcom/android/billingclient/api/InAppMessageParams$Builder;
     .locals 1
+    .annotation build Landroidx/annotation/NonNull;
+    .end annotation
 
     .line 1
     iget-object v0, p0, Lcom/android/billingclient/api/InAppMessageParams$Builder;->zza:Ljava/util/Set;
@@ -99,6 +103,8 @@
 
 .method public build()Lcom/android/billingclient/api/InAppMessageParams;
     .locals 3
+    .annotation build Landroidx/annotation/NonNull;
+    .end annotation
 
     .line 1
     new-instance v0, Lcom/android/billingclient/api/InAppMessageParams;

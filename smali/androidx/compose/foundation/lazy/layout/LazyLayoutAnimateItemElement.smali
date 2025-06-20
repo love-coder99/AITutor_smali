@@ -1,12 +1,12 @@
 .class public final Landroidx/compose/foundation/lazy/layout/LazyLayoutAnimateItemElement;
-.super Landroidx/compose/ui/node/w0;
+.super Landroidx/compose/ui/node/V;
 .source "SourceFile"
 
 
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
-        "Landroidx/compose/ui/node/w0;"
+        "Landroidx/compose/ui/node/V;"
     }
 .end annotation
 
@@ -16,7 +16,7 @@
     }
     d2 = {
         "Landroidx/compose/foundation/lazy/layout/LazyLayoutAnimateItemElement;",
-        "Landroidx/compose/ui/node/w0;",
+        "Landroidx/compose/ui/node/V;",
         "Landroidx/compose/foundation/lazy/layout/h;",
         "foundation_release"
     }
@@ -26,20 +26,21 @@
         0x8,
         0x0
     }
+    xi = 0x30
 .end annotation
 
 
 # instance fields
-.field public final c:Landroidx/compose/animation/core/z;
+.field public final a:Landroidx/compose/animation/core/w;
 
-.field public final d:Landroidx/compose/animation/core/z;
+.field public final b:Landroidx/compose/animation/core/w;
 
-.field public final e:Landroidx/compose/animation/core/z;
+.field public final c:Landroidx/compose/animation/core/w;
 
 
 # direct methods
-.method public constructor <init>(Landroidx/compose/animation/core/z;)V
-    .locals 1
+.method public constructor <init>(Landroidx/compose/animation/core/w;Landroidx/compose/animation/core/w;Landroidx/compose/animation/core/w;)V
+    .locals 0
 
     .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -47,21 +48,18 @@
     .line 2
     .line 3
     .line 4
-    const/4 v0, 0x0
+    iput-object p1, p0, Landroidx/compose/foundation/lazy/layout/LazyLayoutAnimateItemElement;->a:Landroidx/compose/animation/core/w;
 
     .line 5
-    iput-object v0, p0, Landroidx/compose/foundation/lazy/layout/LazyLayoutAnimateItemElement;->c:Landroidx/compose/animation/core/z;
-
     .line 6
+    iput-object p2, p0, Landroidx/compose/foundation/lazy/layout/LazyLayoutAnimateItemElement;->b:Landroidx/compose/animation/core/w;
+
     .line 7
-    iput-object p1, p0, Landroidx/compose/foundation/lazy/layout/LazyLayoutAnimateItemElement;->d:Landroidx/compose/animation/core/z;
-
     .line 8
-    .line 9
-    iput-object v0, p0, Landroidx/compose/foundation/lazy/layout/LazyLayoutAnimateItemElement;->e:Landroidx/compose/animation/core/z;
+    iput-object p3, p0, Landroidx/compose/foundation/lazy/layout/LazyLayoutAnimateItemElement;->c:Landroidx/compose/animation/core/w;
 
+    .line 9
     .line 10
-    .line 11
     return-void
 .end method
 
@@ -88,11 +86,11 @@
     :cond_1
     check-cast p1, Landroidx/compose/foundation/lazy/layout/LazyLayoutAnimateItemElement;
 
-    iget-object v1, p1, Landroidx/compose/foundation/lazy/layout/LazyLayoutAnimateItemElement;->c:Landroidx/compose/animation/core/z;
+    iget-object v1, p1, Landroidx/compose/foundation/lazy/layout/LazyLayoutAnimateItemElement;->a:Landroidx/compose/animation/core/w;
 
-    iget-object v3, p0, Landroidx/compose/foundation/lazy/layout/LazyLayoutAnimateItemElement;->c:Landroidx/compose/animation/core/z;
+    iget-object v3, p0, Landroidx/compose/foundation/lazy/layout/LazyLayoutAnimateItemElement;->a:Landroidx/compose/animation/core/w;
 
-    invoke-static {v3, v1}, Lrb/h;->d(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v3, v1}, Lkotlin/jvm/internal/h;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result v1
 
@@ -101,11 +99,11 @@
     return v2
 
     :cond_2
-    iget-object v1, p0, Landroidx/compose/foundation/lazy/layout/LazyLayoutAnimateItemElement;->d:Landroidx/compose/animation/core/z;
+    iget-object v1, p0, Landroidx/compose/foundation/lazy/layout/LazyLayoutAnimateItemElement;->b:Landroidx/compose/animation/core/w;
 
-    iget-object v3, p1, Landroidx/compose/foundation/lazy/layout/LazyLayoutAnimateItemElement;->d:Landroidx/compose/animation/core/z;
+    iget-object v3, p1, Landroidx/compose/foundation/lazy/layout/LazyLayoutAnimateItemElement;->b:Landroidx/compose/animation/core/w;
 
-    invoke-static {v1, v3}, Lrb/h;->d(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v1, v3}, Lkotlin/jvm/internal/h;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result v1
 
@@ -114,11 +112,11 @@
     return v2
 
     :cond_3
-    iget-object v1, p0, Landroidx/compose/foundation/lazy/layout/LazyLayoutAnimateItemElement;->e:Landroidx/compose/animation/core/z;
+    iget-object v1, p0, Landroidx/compose/foundation/lazy/layout/LazyLayoutAnimateItemElement;->c:Landroidx/compose/animation/core/w;
 
-    iget-object p1, p1, Landroidx/compose/foundation/lazy/layout/LazyLayoutAnimateItemElement;->e:Landroidx/compose/animation/core/z;
+    iget-object p1, p1, Landroidx/compose/foundation/lazy/layout/LazyLayoutAnimateItemElement;->c:Landroidx/compose/animation/core/w;
 
-    invoke-static {v1, p1}, Lrb/h;->d(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v1, p1}, Lkotlin/jvm/internal/h;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result p1
 
@@ -135,7 +133,7 @@
 
     const/4 v0, 0x0
 
-    iget-object v1, p0, Landroidx/compose/foundation/lazy/layout/LazyLayoutAnimateItemElement;->c:Landroidx/compose/animation/core/z;
+    iget-object v1, p0, Landroidx/compose/foundation/lazy/layout/LazyLayoutAnimateItemElement;->a:Landroidx/compose/animation/core/w;
 
     if-nez v1, :cond_0
 
@@ -151,7 +149,7 @@
     :goto_0
     mul-int/lit8 v1, v1, 0x1f
 
-    iget-object v2, p0, Landroidx/compose/foundation/lazy/layout/LazyLayoutAnimateItemElement;->d:Landroidx/compose/animation/core/z;
+    iget-object v2, p0, Landroidx/compose/foundation/lazy/layout/LazyLayoutAnimateItemElement;->b:Landroidx/compose/animation/core/w;
 
     if-nez v2, :cond_1
 
@@ -169,7 +167,7 @@
 
     mul-int/lit8 v1, v1, 0x1f
 
-    iget-object v2, p0, Landroidx/compose/foundation/lazy/layout/LazyLayoutAnimateItemElement;->e:Landroidx/compose/animation/core/z;
+    iget-object v2, p0, Landroidx/compose/foundation/lazy/layout/LazyLayoutAnimateItemElement;->c:Landroidx/compose/animation/core/w;
 
     if-nez v2, :cond_2
 
@@ -199,27 +197,27 @@
     .line 4
     .line 5
     .line 6
-    iget-object v1, p0, Landroidx/compose/foundation/lazy/layout/LazyLayoutAnimateItemElement;->c:Landroidx/compose/animation/core/z;
+    iget-object v1, p0, Landroidx/compose/foundation/lazy/layout/LazyLayoutAnimateItemElement;->a:Landroidx/compose/animation/core/w;
 
     .line 7
     .line 8
-    iput-object v1, v0, Landroidx/compose/foundation/lazy/layout/h;->p:Landroidx/compose/animation/core/z;
+    iput-object v1, v0, Landroidx/compose/foundation/lazy/layout/h;->p:Landroidx/compose/animation/core/w;
 
     .line 9
     .line 10
-    iget-object v1, p0, Landroidx/compose/foundation/lazy/layout/LazyLayoutAnimateItemElement;->d:Landroidx/compose/animation/core/z;
+    iget-object v1, p0, Landroidx/compose/foundation/lazy/layout/LazyLayoutAnimateItemElement;->b:Landroidx/compose/animation/core/w;
 
     .line 11
     .line 12
-    iput-object v1, v0, Landroidx/compose/foundation/lazy/layout/h;->q:Landroidx/compose/animation/core/z;
+    iput-object v1, v0, Landroidx/compose/foundation/lazy/layout/h;->q:Landroidx/compose/animation/core/w;
 
     .line 13
     .line 14
-    iget-object v1, p0, Landroidx/compose/foundation/lazy/layout/LazyLayoutAnimateItemElement;->e:Landroidx/compose/animation/core/z;
+    iget-object v1, p0, Landroidx/compose/foundation/lazy/layout/LazyLayoutAnimateItemElement;->c:Landroidx/compose/animation/core/w;
 
     .line 15
     .line 16
-    iput-object v1, v0, Landroidx/compose/foundation/lazy/layout/h;->r:Landroidx/compose/animation/core/z;
+    iput-object v1, v0, Landroidx/compose/foundation/lazy/layout/h;->r:Landroidx/compose/animation/core/w;
 
     .line 17
     .line 18
@@ -234,27 +232,27 @@
 
     .line 2
     .line 3
-    iget-object v0, p0, Landroidx/compose/foundation/lazy/layout/LazyLayoutAnimateItemElement;->c:Landroidx/compose/animation/core/z;
+    iget-object v0, p0, Landroidx/compose/foundation/lazy/layout/LazyLayoutAnimateItemElement;->a:Landroidx/compose/animation/core/w;
 
     .line 4
     .line 5
-    iput-object v0, p1, Landroidx/compose/foundation/lazy/layout/h;->p:Landroidx/compose/animation/core/z;
+    iput-object v0, p1, Landroidx/compose/foundation/lazy/layout/h;->p:Landroidx/compose/animation/core/w;
 
     .line 6
     .line 7
-    iget-object v0, p0, Landroidx/compose/foundation/lazy/layout/LazyLayoutAnimateItemElement;->d:Landroidx/compose/animation/core/z;
+    iget-object v0, p0, Landroidx/compose/foundation/lazy/layout/LazyLayoutAnimateItemElement;->b:Landroidx/compose/animation/core/w;
 
     .line 8
     .line 9
-    iput-object v0, p1, Landroidx/compose/foundation/lazy/layout/h;->q:Landroidx/compose/animation/core/z;
+    iput-object v0, p1, Landroidx/compose/foundation/lazy/layout/h;->q:Landroidx/compose/animation/core/w;
 
     .line 10
     .line 11
-    iget-object v0, p0, Landroidx/compose/foundation/lazy/layout/LazyLayoutAnimateItemElement;->e:Landroidx/compose/animation/core/z;
+    iget-object v0, p0, Landroidx/compose/foundation/lazy/layout/LazyLayoutAnimateItemElement;->c:Landroidx/compose/animation/core/w;
 
     .line 12
     .line 13
-    iput-object v0, p1, Landroidx/compose/foundation/lazy/layout/h;->r:Landroidx/compose/animation/core/z;
+    iput-object v0, p1, Landroidx/compose/foundation/lazy/layout/h;->r:Landroidx/compose/animation/core/w;
 
     .line 14
     .line 15
@@ -270,7 +268,7 @@
 
     invoke-direct {v0, v1}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
 
-    iget-object v1, p0, Landroidx/compose/foundation/lazy/layout/LazyLayoutAnimateItemElement;->c:Landroidx/compose/animation/core/z;
+    iget-object v1, p0, Landroidx/compose/foundation/lazy/layout/LazyLayoutAnimateItemElement;->a:Landroidx/compose/animation/core/w;
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 
@@ -278,7 +276,7 @@
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget-object v1, p0, Landroidx/compose/foundation/lazy/layout/LazyLayoutAnimateItemElement;->d:Landroidx/compose/animation/core/z;
+    iget-object v1, p0, Landroidx/compose/foundation/lazy/layout/LazyLayoutAnimateItemElement;->b:Landroidx/compose/animation/core/w;
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 
@@ -286,7 +284,7 @@
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget-object v1, p0, Landroidx/compose/foundation/lazy/layout/LazyLayoutAnimateItemElement;->e:Landroidx/compose/animation/core/z;
+    iget-object v1, p0, Landroidx/compose/foundation/lazy/layout/LazyLayoutAnimateItemElement;->c:Landroidx/compose/animation/core/w;
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 

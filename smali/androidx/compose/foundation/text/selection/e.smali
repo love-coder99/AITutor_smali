@@ -4,11 +4,11 @@
 
 
 # virtual methods
-.method public abstract a(JLcom/google/android/material/internal/i;)Z
+.method public abstract a(JLandroidx/compose/foundation/text/selection/k;)Z
 .end method
 
 .method public abstract b()V
 .end method
 
-.method public abstract c(JLandroidx/compose/foundation/text/selection/l;)Z
+.method public abstract c(JLandroidx/compose/foundation/text/selection/k;)Z
 .end method

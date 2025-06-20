@@ -7,7 +7,7 @@
 
 
 # instance fields
-.field public final a:Lkotlinx/coroutines/flow/m0;
+.field public final a:Lkotlinx/coroutines/flow/K;
 
 
 # direct methods
@@ -34,7 +34,7 @@
     const/4 v3, 0x1
 
     .line 10
-    invoke-static {v1, v2, v0, v3}, Lkotlinx/coroutines/flow/j;->b(IILkotlinx/coroutines/channels/BufferOverflow;I)Lkotlinx/coroutines/flow/m0;
+    invoke-static {v1, v2, v0, v3}, Lkotlinx/coroutines/flow/h;->b(IILkotlinx/coroutines/channels/BufferOverflow;I)Lkotlinx/coroutines/flow/K;
 
     .line 11
     .line 12
@@ -42,7 +42,7 @@
     move-result-object v0
 
     .line 14
-    iput-object v0, p0, Landroidx/compose/foundation/interaction/m;->a:Lkotlinx/coroutines/flow/m0;
+    iput-object v0, p0, Landroidx/compose/foundation/interaction/m;->a:Lkotlinx/coroutines/flow/K;
 
     .line 15
     .line 16
@@ -51,15 +51,15 @@
 
 
 # virtual methods
-.method public final a(Landroidx/compose/foundation/interaction/j;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
+.method public final a(Landroidx/compose/foundation/interaction/j;Lkotlin/coroutines/jvm/internal/ContinuationImpl;)Ljava/lang/Object;
     .locals 1
 
     .line 1
-    iget-object v0, p0, Landroidx/compose/foundation/interaction/m;->a:Lkotlinx/coroutines/flow/m0;
+    iget-object v0, p0, Landroidx/compose/foundation/interaction/m;->a:Lkotlinx/coroutines/flow/K;
 
     .line 2
     .line 3
-    invoke-virtual {v0, p1, p2}, Lkotlinx/coroutines/flow/m0;->emit(Ljava/lang/Object;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
+    invoke-virtual {v0, p1, p2}, Lkotlinx/coroutines/flow/K;->emit(Ljava/lang/Object;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
 
     .line 4
     .line 5
@@ -79,7 +79,7 @@
 
     .line 12
     :cond_0
-    sget-object p1, Lqh/r;->a:Lqh/r;
+    sget-object p1, LX9/j;->a:LX9/j;
 
     .line 13
     .line 14
@@ -90,11 +90,11 @@
     .locals 1
 
     .line 1
-    iget-object v0, p0, Landroidx/compose/foundation/interaction/m;->a:Lkotlinx/coroutines/flow/m0;
+    iget-object v0, p0, Landroidx/compose/foundation/interaction/m;->a:Lkotlinx/coroutines/flow/K;
 
     .line 2
     .line 3
-    invoke-virtual {v0, p1}, Lkotlinx/coroutines/flow/m0;->d(Ljava/lang/Object;)Z
+    invoke-virtual {v0, p1}, Lkotlinx/coroutines/flow/K;->d(Ljava/lang/Object;)Z
 
     .line 4
     .line 5

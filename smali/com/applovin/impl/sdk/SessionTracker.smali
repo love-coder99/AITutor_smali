@@ -188,13 +188,13 @@
 .method private a()V
     .locals 3
 
+    .line 2
     iget-object v0, p0, Lcom/applovin/impl/sdk/SessionTracker;->c:Ljava/util/concurrent/atomic/AtomicBoolean;
 
     const/4 v1, 0x0
 
     const/4 v2, 0x1
 
-    .line 2
     invoke-virtual {v0, v1, v2}, Ljava/util/concurrent/atomic/AtomicBoolean;->compareAndSet(ZZ)Z
 
     move-result v0
@@ -229,13 +229,13 @@
 .method private b()V
     .locals 3
 
+    .line 2
     iget-object v0, p0, Lcom/applovin/impl/sdk/SessionTracker;->c:Ljava/util/concurrent/atomic/AtomicBoolean;
 
     const/4 v1, 0x1
 
     const/4 v2, 0x0
 
-    .line 2
     invoke-virtual {v0, v1, v2}, Ljava/util/concurrent/atomic/AtomicBoolean;->compareAndSet(ZZ)Z
 
     move-result v0
@@ -252,9 +252,9 @@
 .method private c()V
     .locals 7
 
+    .line 2
     iget-object v0, p0, Lcom/applovin/impl/sdk/SessionTracker;->a:Lcom/applovin/impl/sdk/j;
 
-    .line 2
     invoke-virtual {v0}, Lcom/applovin/impl/sdk/j;->I()Lcom/applovin/impl/sdk/n;
 
     invoke-static {}, Lcom/applovin/impl/sdk/n;->a()Z
@@ -275,10 +275,10 @@
 
     invoke-virtual {v0, v1, v2}, Lcom/applovin/impl/sdk/n;->a(Ljava/lang/String;Ljava/lang/String;)V
 
+    .line 3
     :cond_0
     iget-object v0, p0, Lcom/applovin/impl/sdk/SessionTracker;->e:Ljava/util/concurrent/atomic/AtomicLong;
 
-    .line 3
     invoke-static {}, Ljava/lang/System;->currentTimeMillis()J
 
     move-result-wide v1
@@ -296,9 +296,9 @@
 
     invoke-static {v0, v1}, Lcom/applovin/impl/sdk/AppLovinBroadcastManager;->sendBroadcastSync(Landroid/content/Intent;Ljava/util/Map;)V
 
+    .line 5
     iget-object v0, p0, Lcom/applovin/impl/sdk/SessionTracker;->b:Ljava/util/concurrent/atomic/AtomicBoolean;
 
-    .line 5
     invoke-virtual {v0}, Ljava/util/concurrent/atomic/AtomicBoolean;->get()Z
 
     move-result v0
@@ -307,10 +307,10 @@
 
     return-void
 
+    .line 6
     :cond_1
     iget-object v0, p0, Lcom/applovin/impl/sdk/SessionTracker;->a:Lcom/applovin/impl/sdk/j;
 
-    .line 6
     sget-object v1, Lcom/applovin/impl/sj;->v3:Lcom/applovin/impl/sj;
 
     invoke-virtual {v0, v1}, Lcom/applovin/impl/sdk/j;->a(Lcom/applovin/impl/sj;)Ljava/lang/Object;
@@ -323,9 +323,9 @@
 
     move-result v0
 
+    .line 7
     iget-object v1, p0, Lcom/applovin/impl/sdk/SessionTracker;->a:Lcom/applovin/impl/sdk/j;
 
-    .line 7
     sget-object v2, Lcom/applovin/impl/sj;->x3:Lcom/applovin/impl/sj;
 
     invoke-virtual {v1, v2}, Lcom/applovin/impl/sdk/j;->a(Lcom/applovin/impl/sj;)Ljava/lang/Object;
@@ -345,11 +345,11 @@
 
     move-result-wide v1
 
+    .line 9
     iget-object v3, p0, Lcom/applovin/impl/sdk/SessionTracker;->g:Ljava/util/Date;
 
     if-eqz v3, :cond_2
 
-    .line 9
     invoke-static {}, Ljava/lang/System;->currentTimeMillis()J
 
     move-result-wide v3
@@ -366,17 +366,17 @@
 
     if-ltz v5, :cond_3
 
+    .line 10
     :cond_2
     iget-object v1, p0, Lcom/applovin/impl/sdk/SessionTracker;->a:Lcom/applovin/impl/sdk/j;
 
-    .line 10
     invoke-virtual {v1}, Lcom/applovin/impl/sdk/j;->z()Lcom/applovin/impl/sdk/EventServiceImpl;
 
     move-result-object v1
 
+    .line 11
     const-string v2, "paused"
 
-    .line 11
     invoke-virtual {v1, v2}, Lcom/applovin/impl/sdk/EventServiceImpl;->trackEvent(Ljava/lang/String;)V
 
     if-eqz v0, :cond_3

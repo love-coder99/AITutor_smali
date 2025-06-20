@@ -3,25 +3,33 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lzh/e;
+.implements Lka/e;
 
 
 # annotations
+.annotation runtime Lca/c;
+    c = "androidx.activity.compose.PredictiveBackHandlerKt$PredictiveBackHandler$2$1"
+    f = "PredictiveBackHandler.kt"
+    l = {}
+    m = "invokeSuspend"
+.end annotation
+
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "Lkotlin/coroutines/jvm/internal/SuspendLambda;",
-        "Lzh/e;"
+        "Lka/e;"
     }
 .end annotation
 
 .annotation runtime Lkotlin/Metadata;
     d1 = {
-        "\u0000\n\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\u0010\u0002\u001a\u00020\u0001*\u00020\u0000H\u008a@"
+        "\u0000\u000c\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0008\u0002\u0010\u0002\u001a\u00020\u0001*\u00020\u0000H\u008a@\u00a2\u0006\u0004\u0008\u0002\u0010\u0003"
     }
     d2 = {
-        "Lkotlinx/coroutines/w;",
-        "Lqh/r;",
-        "<anonymous>"
+        "Lkotlinx/coroutines/u;",
+        "LX9/j;",
+        "<anonymous>",
+        "(Lkotlinx/coroutines/u;)V"
     }
     k = 0x3
     mv = {
@@ -29,13 +37,6 @@
         0x8,
         0x0
     }
-.end annotation
-
-.annotation runtime Lth/c;
-    c = "androidx.activity.compose.PredictiveBackHandlerKt$PredictiveBackHandler$2$1"
-    f = "PredictiveBackHandler.kt"
-    l = {}
-    m = "invokeSuspend"
 .end annotation
 
 
@@ -84,7 +85,7 @@
             "Lkotlin/coroutines/Continuation<",
             "*>;)",
             "Lkotlin/coroutines/Continuation<",
-            "Lqh/r;",
+            "LX9/j;",
             ">;"
         }
     .end annotation
@@ -104,26 +105,26 @@
     .locals 0
 
     .line 1
-    check-cast p1, Lkotlinx/coroutines/w;
+    check-cast p1, Lkotlinx/coroutines/u;
 
     check-cast p2, Lkotlin/coroutines/Continuation;
 
-    invoke-virtual {p0, p1, p2}, Landroidx/activity/compose/PredictiveBackHandlerKt$PredictiveBackHandler$2$1;->invoke(Lkotlinx/coroutines/w;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
+    invoke-virtual {p0, p1, p2}, Landroidx/activity/compose/PredictiveBackHandlerKt$PredictiveBackHandler$2$1;->invoke(Lkotlinx/coroutines/u;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
 
     move-result-object p1
 
     return-object p1
 .end method
 
-.method public final invoke(Lkotlinx/coroutines/w;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
+.method public final invoke(Lkotlinx/coroutines/u;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
     .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
-            "Lkotlinx/coroutines/w;",
+            "Lkotlinx/coroutines/u;",
             "Lkotlin/coroutines/Continuation<",
             "-",
-            "Lqh/r;",
+            "LX9/j;",
             ">;)",
             "Ljava/lang/Object;"
         }
@@ -136,7 +137,7 @@
 
     check-cast p1, Landroidx/activity/compose/PredictiveBackHandlerKt$PredictiveBackHandler$2$1;
 
-    sget-object p2, Lqh/r;->a:Lqh/r;
+    sget-object p2, LX9/j;->a:LX9/j;
 
     invoke-virtual {p1, p2}, Landroidx/activity/compose/PredictiveBackHandlerKt$PredictiveBackHandler$2$1;->invokeSuspend(Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -178,15 +179,15 @@
 
     .line 15
     .line 16
-    iget-boolean v1, p1, Landroidx/activity/i0;->a:Z
+    iget-boolean v1, p1, Landroidx/activity/compose/k;->g:Z
 
     .line 17
     .line 18
-    if-eqz v1, :cond_0
+    if-nez v1, :cond_0
 
     .line 19
     .line 20
-    iget-object v1, p1, Landroidx/activity/compose/k;->f:Landroidx/activity/compose/j;
+    iget-boolean v1, p1, Landroidx/activity/C;->a:Z
 
     .line 21
     .line 22
@@ -194,50 +195,58 @@
 
     .line 23
     .line 24
-    invoke-virtual {v1}, Landroidx/activity/compose/j;->a()V
+    iget-object v1, p1, Landroidx/activity/compose/k;->f:Landroidx/activity/compose/j;
 
     .line 25
     .line 26
+    if-eqz v1, :cond_0
+
     .line 27
-    :cond_0
-    iput-boolean v0, p1, Landroidx/activity/i0;->a:Z
-
     .line 28
-    .line 29
-    iget-object p1, p1, Landroidx/activity/i0;->c:Lzh/a;
+    invoke-virtual {v1}, Landroidx/activity/compose/j;->a()V
 
+    .line 29
     .line 30
     .line 31
-    if-eqz p1, :cond_1
+    :cond_0
+    iput-boolean v0, p1, Landroidx/activity/C;->a:Z
 
     .line 32
     .line 33
-    invoke-interface {p1}, Lzh/a;->invoke()Ljava/lang/Object;
+    iget-object p1, p1, Landroidx/activity/C;->c:Lkotlin/jvm/internal/FunctionReferenceImpl;
 
     .line 34
     .line 35
-    .line 36
-    :cond_1
-    sget-object p1, Lqh/r;->a:Lqh/r;
+    if-eqz p1, :cond_1
 
+    .line 36
     .line 37
+    invoke-interface {p1}, Lka/a;->invoke()Ljava/lang/Object;
+
     .line 38
+    .line 39
+    .line 40
+    :cond_1
+    sget-object p1, LX9/j;->a:LX9/j;
+
+    .line 41
+    .line 42
     return-object p1
 
-    .line 39
+    .line 43
     :cond_2
     new-instance p1, Ljava/lang/IllegalStateException;
 
-    .line 40
-    .line 41
-    const-string v0, "call to \'resume\' before \'invoke\' with coroutine"
-
-    .line 42
-    .line 43
-    invoke-direct {p1, v0}, Ljava/lang/IllegalStateException;-><init>(Ljava/lang/String;)V
-
     .line 44
     .line 45
+    const-string v0, "call to \'resume\' before \'invoke\' with coroutine"
+
     .line 46
+    .line 47
+    invoke-direct {p1, v0}, Ljava/lang/IllegalStateException;-><init>(Ljava/lang/String;)V
+
+    .line 48
+    .line 49
+    .line 50
     throw p1
 .end method

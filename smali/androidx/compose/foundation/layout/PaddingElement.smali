@@ -1,12 +1,12 @@
 .class final Landroidx/compose/foundation/layout/PaddingElement;
-.super Landroidx/compose/ui/node/w0;
+.super Landroidx/compose/ui/node/V;
 .source "SourceFile"
 
 
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
-        "Landroidx/compose/ui/node/w0;"
+        "Landroidx/compose/ui/node/V;"
     }
 .end annotation
 
@@ -16,8 +16,8 @@
     }
     d2 = {
         "Landroidx/compose/foundation/layout/PaddingElement;",
-        "Landroidx/compose/ui/node/w0;",
-        "Landroidx/compose/foundation/layout/o0;",
+        "Landroidx/compose/ui/node/V;",
+        "Landroidx/compose/foundation/layout/L;",
         "foundation-layout_release"
     }
     k = 0x1
@@ -26,17 +26,18 @@
         0x8,
         0x0
     }
+    xi = 0x30
 .end annotation
 
 
 # instance fields
+.field public final a:F
+
+.field public final b:F
+
 .field public final c:F
 
 .field public final d:F
-
-.field public final e:F
-
-.field public final f:F
 
 
 # direct methods
@@ -49,19 +50,19 @@
     .line 2
     .line 3
     .line 4
-    iput p1, p0, Landroidx/compose/foundation/layout/PaddingElement;->c:F
+    iput p1, p0, Landroidx/compose/foundation/layout/PaddingElement;->a:F
 
     .line 5
     .line 6
-    iput p2, p0, Landroidx/compose/foundation/layout/PaddingElement;->d:F
+    iput p2, p0, Landroidx/compose/foundation/layout/PaddingElement;->b:F
 
     .line 7
     .line 8
-    iput p3, p0, Landroidx/compose/foundation/layout/PaddingElement;->e:F
+    iput p3, p0, Landroidx/compose/foundation/layout/PaddingElement;->c:F
 
     .line 9
     .line 10
-    iput p4, p0, Landroidx/compose/foundation/layout/PaddingElement;->f:F
+    iput p4, p0, Landroidx/compose/foundation/layout/PaddingElement;->d:F
 
     .line 11
     .line 12
@@ -80,7 +81,7 @@
 
     .line 18
     .line 19
-    invoke-static {p1, v0}, Lh2/e;->a(FF)Z
+    invoke-static {p1, v0}, LM0/e;->a(FF)Z
 
     .line 20
     .line 21
@@ -101,7 +102,7 @@
 
     .line 28
     .line 29
-    invoke-static {p2, v0}, Lh2/e;->a(FF)Z
+    invoke-static {p2, v0}, LM0/e;->a(FF)Z
 
     .line 30
     .line 31
@@ -122,7 +123,7 @@
 
     .line 38
     .line 39
-    invoke-static {p3, v0}, Lh2/e;->a(FF)Z
+    invoke-static {p3, v0}, LM0/e;->a(FF)Z
 
     .line 40
     .line 41
@@ -143,7 +144,7 @@
 
     .line 48
     .line 49
-    invoke-static {p4, v0}, Lh2/e;->a(FF)Z
+    invoke-static {p4, v0}, LM0/e;->a(FF)Z
 
     .line 50
     .line 51
@@ -167,22 +168,14 @@
 
     .line 59
     .line 60
-    invoke-virtual {p2}, Ljava/lang/Object;->toString()Ljava/lang/String;
+    invoke-direct {p1, p2}, Ljava/lang/IllegalArgumentException;-><init>(Ljava/lang/String;)V
 
     .line 61
     .line 62
     .line 63
-    move-result-object p2
-
-    .line 64
-    invoke-direct {p1, p2}, Ljava/lang/IllegalArgumentException;-><init>(Ljava/lang/String;)V
-
-    .line 65
-    .line 66
-    .line 67
     throw p1
 
-    .line 68
+    .line 64
     :cond_4
     :goto_0
     return-void
@@ -225,15 +218,15 @@
 
     .line 13
     :cond_1
-    iget v1, p0, Landroidx/compose/foundation/layout/PaddingElement;->c:F
+    iget v1, p0, Landroidx/compose/foundation/layout/PaddingElement;->a:F
 
     .line 14
     .line 15
-    iget v2, p1, Landroidx/compose/foundation/layout/PaddingElement;->c:F
+    iget v2, p1, Landroidx/compose/foundation/layout/PaddingElement;->a:F
 
     .line 16
     .line 17
-    invoke-static {v1, v2}, Lh2/e;->a(FF)Z
+    invoke-static {v1, v2}, LM0/e;->a(FF)Z
 
     .line 18
     .line 19
@@ -245,15 +238,15 @@
 
     .line 22
     .line 23
-    iget v1, p0, Landroidx/compose/foundation/layout/PaddingElement;->d:F
+    iget v1, p0, Landroidx/compose/foundation/layout/PaddingElement;->b:F
 
     .line 24
     .line 25
-    iget v2, p1, Landroidx/compose/foundation/layout/PaddingElement;->d:F
+    iget v2, p1, Landroidx/compose/foundation/layout/PaddingElement;->b:F
 
     .line 26
     .line 27
-    invoke-static {v1, v2}, Lh2/e;->a(FF)Z
+    invoke-static {v1, v2}, LM0/e;->a(FF)Z
 
     .line 28
     .line 29
@@ -265,15 +258,15 @@
 
     .line 32
     .line 33
-    iget v1, p0, Landroidx/compose/foundation/layout/PaddingElement;->e:F
+    iget v1, p0, Landroidx/compose/foundation/layout/PaddingElement;->c:F
 
     .line 34
     .line 35
-    iget v2, p1, Landroidx/compose/foundation/layout/PaddingElement;->e:F
+    iget v2, p1, Landroidx/compose/foundation/layout/PaddingElement;->c:F
 
     .line 36
     .line 37
-    invoke-static {v1, v2}, Lh2/e;->a(FF)Z
+    invoke-static {v1, v2}, LM0/e;->a(FF)Z
 
     .line 38
     .line 39
@@ -285,15 +278,15 @@
 
     .line 42
     .line 43
-    iget v1, p0, Landroidx/compose/foundation/layout/PaddingElement;->f:F
+    iget v1, p0, Landroidx/compose/foundation/layout/PaddingElement;->d:F
 
     .line 44
     .line 45
-    iget p1, p1, Landroidx/compose/foundation/layout/PaddingElement;->f:F
+    iget p1, p1, Landroidx/compose/foundation/layout/PaddingElement;->d:F
 
     .line 46
     .line 47
-    invoke-static {v1, p1}, Lh2/e;->a(FF)Z
+    invoke-static {v1, p1}, LM0/e;->a(FF)Z
 
     .line 48
     .line 49
@@ -316,7 +309,7 @@
     .locals 3
 
     .line 1
-    iget v0, p0, Landroidx/compose/foundation/layout/PaddingElement;->c:F
+    iget v0, p0, Landroidx/compose/foundation/layout/PaddingElement;->a:F
 
     .line 2
     .line 3
@@ -336,11 +329,11 @@
 
     .line 10
     .line 11
-    iget v2, p0, Landroidx/compose/foundation/layout/PaddingElement;->d:F
+    iget v2, p0, Landroidx/compose/foundation/layout/PaddingElement;->b:F
 
     .line 12
     .line 13
-    invoke-static {v2, v0, v1}, Landroid/support/v4/media/session/a;->x(FII)I
+    invoke-static {v2, v0, v1}, Landroidx/appcompat/view/menu/F;->v(FII)I
 
     .line 14
     .line 15
@@ -348,11 +341,11 @@
     move-result v0
 
     .line 17
-    iget v2, p0, Landroidx/compose/foundation/layout/PaddingElement;->e:F
+    iget v2, p0, Landroidx/compose/foundation/layout/PaddingElement;->c:F
 
     .line 18
     .line 19
-    invoke-static {v2, v0, v1}, Landroid/support/v4/media/session/a;->x(FII)I
+    invoke-static {v2, v0, v1}, Landroidx/appcompat/view/menu/F;->v(FII)I
 
     .line 20
     .line 21
@@ -360,7 +353,7 @@
     move-result v0
 
     .line 23
-    iget v2, p0, Landroidx/compose/foundation/layout/PaddingElement;->f:F
+    iget v2, p0, Landroidx/compose/foundation/layout/PaddingElement;->d:F
 
     .line 24
     .line 25
@@ -390,7 +383,7 @@
     .locals 2
 
     .line 1
-    new-instance v0, Landroidx/compose/foundation/layout/o0;
+    new-instance v0, Landroidx/compose/foundation/layout/L;
 
     .line 2
     .line 3
@@ -399,42 +392,42 @@
     .line 4
     .line 5
     .line 6
-    iget v1, p0, Landroidx/compose/foundation/layout/PaddingElement;->c:F
+    iget v1, p0, Landroidx/compose/foundation/layout/PaddingElement;->a:F
 
     .line 7
     .line 8
-    iput v1, v0, Landroidx/compose/foundation/layout/o0;->p:F
+    iput v1, v0, Landroidx/compose/foundation/layout/L;->p:F
 
     .line 9
     .line 10
-    iget v1, p0, Landroidx/compose/foundation/layout/PaddingElement;->d:F
+    iget v1, p0, Landroidx/compose/foundation/layout/PaddingElement;->b:F
 
     .line 11
     .line 12
-    iput v1, v0, Landroidx/compose/foundation/layout/o0;->q:F
+    iput v1, v0, Landroidx/compose/foundation/layout/L;->q:F
 
     .line 13
     .line 14
-    iget v1, p0, Landroidx/compose/foundation/layout/PaddingElement;->e:F
+    iget v1, p0, Landroidx/compose/foundation/layout/PaddingElement;->c:F
 
     .line 15
     .line 16
-    iput v1, v0, Landroidx/compose/foundation/layout/o0;->r:F
+    iput v1, v0, Landroidx/compose/foundation/layout/L;->r:F
 
     .line 17
     .line 18
-    iget v1, p0, Landroidx/compose/foundation/layout/PaddingElement;->f:F
+    iget v1, p0, Landroidx/compose/foundation/layout/PaddingElement;->d:F
 
     .line 19
     .line 20
-    iput v1, v0, Landroidx/compose/foundation/layout/o0;->s:F
+    iput v1, v0, Landroidx/compose/foundation/layout/L;->s:F
 
     .line 21
     .line 22
     const/4 v1, 0x1
 
     .line 23
-    iput-boolean v1, v0, Landroidx/compose/foundation/layout/o0;->t:Z
+    iput-boolean v1, v0, Landroidx/compose/foundation/layout/L;->t:Z
 
     .line 24
     .line 25
@@ -445,46 +438,46 @@
     .locals 1
 
     .line 1
-    check-cast p1, Landroidx/compose/foundation/layout/o0;
+    check-cast p1, Landroidx/compose/foundation/layout/L;
 
     .line 2
     .line 3
-    iget v0, p0, Landroidx/compose/foundation/layout/PaddingElement;->c:F
+    iget v0, p0, Landroidx/compose/foundation/layout/PaddingElement;->a:F
 
     .line 4
     .line 5
-    iput v0, p1, Landroidx/compose/foundation/layout/o0;->p:F
+    iput v0, p1, Landroidx/compose/foundation/layout/L;->p:F
 
     .line 6
     .line 7
-    iget v0, p0, Landroidx/compose/foundation/layout/PaddingElement;->d:F
+    iget v0, p0, Landroidx/compose/foundation/layout/PaddingElement;->b:F
 
     .line 8
     .line 9
-    iput v0, p1, Landroidx/compose/foundation/layout/o0;->q:F
+    iput v0, p1, Landroidx/compose/foundation/layout/L;->q:F
 
     .line 10
     .line 11
-    iget v0, p0, Landroidx/compose/foundation/layout/PaddingElement;->e:F
+    iget v0, p0, Landroidx/compose/foundation/layout/PaddingElement;->c:F
 
     .line 12
     .line 13
-    iput v0, p1, Landroidx/compose/foundation/layout/o0;->r:F
+    iput v0, p1, Landroidx/compose/foundation/layout/L;->r:F
 
     .line 14
     .line 15
-    iget v0, p0, Landroidx/compose/foundation/layout/PaddingElement;->f:F
+    iget v0, p0, Landroidx/compose/foundation/layout/PaddingElement;->d:F
 
     .line 16
     .line 17
-    iput v0, p1, Landroidx/compose/foundation/layout/o0;->s:F
+    iput v0, p1, Landroidx/compose/foundation/layout/L;->s:F
 
     .line 18
     .line 19
     const/4 v0, 0x1
 
     .line 20
-    iput-boolean v0, p1, Landroidx/compose/foundation/layout/o0;->t:Z
+    iput-boolean v0, p1, Landroidx/compose/foundation/layout/L;->t:Z
 
     .line 21
     .line 22

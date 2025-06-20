@@ -29,18 +29,18 @@
     .line 8
     invoke-direct {p0, p1, p2, p3}, Landroid/widget/RelativeLayout;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
 
+    .line 9
     const-string p3, "adUnitId"
 
     const-string v0, "http://schemas.applovin.com/android/1.0"
 
-    .line 9
     invoke-static {p1, p2, v0, p3}, Lcom/applovin/impl/e0;->a(Landroid/content/Context;Landroid/util/AttributeSet;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v2
 
+    .line 10
     const-string p3, "adFormat"
 
-    .line 10
     invoke-static {p1, p2, v0, p3}, Lcom/applovin/impl/e0;->a(Landroid/content/Context;Landroid/util/AttributeSet;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object p3
@@ -70,6 +70,7 @@
 
     goto :goto_0
 
+    .line 14
     :goto_1
     const-string p3, "gravity"
 
@@ -77,7 +78,6 @@
 
     const-string v1, "http://schemas.android.com/apk/res/android"
 
-    .line 14
     invoke-interface {p2, v1, p3, v0}, Landroid/util/AttributeSet;->getAttributeIntValue(Ljava/lang/String;Ljava/lang/String;I)I
 
     move-result v4
@@ -276,9 +276,9 @@
     .line 17
     invoke-virtual {v2, p1}, Landroid/widget/TextView;->setTextColor(I)V
 
+    .line 18
     const-string p1, "AppLovin MAX Ad"
 
-    .line 18
     invoke-virtual {v2, p1}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
     const/16 p1, 0x11
@@ -311,14 +311,14 @@
     .line 2
     invoke-virtual {v0, v1}, Landroid/view/View;->setBackgroundColor(I)V
 
+    .line 3
     iget-object v0, p0, Lcom/applovin/mediation/ads/MaxAdView;->b:Landroid/view/View;
 
-    .line 3
     invoke-virtual {p0, v0}, Landroid/view/ViewGroup;->addView(Landroid/view/View;)V
 
+    .line 4
     iget-object v0, p0, Lcom/applovin/mediation/ads/MaxAdView;->b:Landroid/view/View;
 
-    .line 4
     new-instance v2, Landroid/widget/RelativeLayout$LayoutParams;
 
     const/4 v3, -0x1
@@ -913,7 +913,7 @@
 
     .line 8
     .line 9
-    invoke-static {v1, p1, v2, p2, v3}, Lj0/d;->l(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v1, p1, v2, p2, v3}, Lcom/google/android/material/datepicker/i;->y(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     .line 10
     .line 11
@@ -1312,6 +1312,8 @@
 
 .method public toString()Ljava/lang/String;
     .locals 1
+    .annotation build Landroidx/annotation/NonNull;
+    .end annotation
 
     .line 1
     iget-object v0, p0, Lcom/applovin/mediation/ads/MaxAdView;->a:Lcom/applovin/impl/mediation/ads/MaxAdViewImpl;

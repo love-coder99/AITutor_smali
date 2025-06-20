@@ -3,7 +3,7 @@
 .source "SourceFile"
 
 # interfaces
-.implements Landroidx/camera/core/impl/o1;
+.implements Landroidx/camera/core/impl/i0;
 
 
 # static fields
@@ -11,7 +11,7 @@
 
 
 # instance fields
-.field public final a:Landroidx/camera/camera2/internal/compat/m;
+.field public final a:Landroidx/camera/camera2/internal/compat/j;
 
 
 # direct methods
@@ -19,31 +19,31 @@
     .locals 7
 
     .line 1
-    const-string v0, "PIXEL 6A"
+    const-string v5, "PIXEL 8"
 
     .line 2
     .line 3
-    const-string v1, "PIXEL 6 PRO"
+    const-string v6, "PIXEL 8 PRO"
 
     .line 4
     .line 5
-    const-string v2, "PIXEL 7"
+    const-string v0, "PIXEL 6A"
 
     .line 6
     .line 7
-    const-string v3, "PIXEL 7A"
+    const-string v1, "PIXEL 6 PRO"
 
     .line 8
     .line 9
-    const-string v4, "PIXEL 7 PRO"
+    const-string v2, "PIXEL 7"
 
     .line 10
     .line 11
-    const-string v5, "PIXEL 8"
+    const-string v3, "PIXEL 7A"
 
     .line 12
     .line 13
-    const-string v6, "PIXEL 8 PRO"
+    const-string v4, "PIXEL 7 PRO"
 
     .line 14
     .line 15
@@ -70,7 +70,7 @@
     return-void
 .end method
 
-.method public constructor <init>(Landroidx/camera/camera2/internal/compat/m;)V
+.method public constructor <init>(Landroidx/camera/camera2/internal/compat/j;)V
     .locals 0
 
     .line 1
@@ -79,7 +79,7 @@
     .line 2
     .line 3
     .line 4
-    iput-object p1, p0, Landroidx/camera/camera2/internal/compat/quirk/TorchFlashRequiredFor3aUpdateQuirk;->a:Landroidx/camera/camera2/internal/compat/m;
+    iput-object p1, p0, Landroidx/camera/camera2/internal/compat/quirk/TorchFlashRequiredFor3aUpdateQuirk;->a:Landroidx/camera/camera2/internal/compat/j;
 
     .line 5
     .line 6

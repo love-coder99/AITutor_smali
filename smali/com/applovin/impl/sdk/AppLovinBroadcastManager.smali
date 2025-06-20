@@ -102,9 +102,9 @@
 .method private static a(Landroid/content/Intent;)Ljava/util/List;
     .locals 15
 
+    .line 2
     sget-object v0, Lcom/applovin/impl/sdk/AppLovinBroadcastManager;->a:Ljava/util/Map;
 
-    .line 2
     monitor-enter v0
 
     .line 3
@@ -128,9 +128,9 @@
 
     move-result-object p0
 
+    .line 7
     sget-object v1, Lcom/applovin/impl/sdk/AppLovinBroadcastManager;->b:Ljava/util/Map;
 
-    .line 7
     invoke-interface {v1, v8}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object v1
@@ -185,9 +185,9 @@
     :cond_1
     iget-object v1, v14, Lcom/applovin/impl/sdk/AppLovinBroadcastManager$c;->a:Landroid/content/IntentFilter;
 
-    const/4 v3, 0x0
-
     const-string v7, "AppLovinBroadcastManager"
+
+    const/4 v3, 0x0
 
     move-object v2, v8
 
@@ -620,6 +620,10 @@
 
 .method public static sendBroadcast(Landroid/content/Intent;Ljava/util/Map;)Z
     .locals 4
+    .param p1    # Ljava/util/Map;
+        .annotation build Landroidx/annotation/Nullable;
+        .end annotation
+    .end param
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -729,6 +733,10 @@
 
 .method public static sendBroadcastSync(Landroid/content/Intent;Ljava/util/Map;)V
     .locals 3
+    .param p1    # Ljava/util/Map;
+        .annotation build Landroidx/annotation/Nullable;
+        .end annotation
+    .end param
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -817,6 +825,10 @@
 
 .method public static sendBroadcastSyncWithPendingBroadcasts(Landroid/content/Intent;Ljava/util/Map;)V
     .locals 0
+    .param p1    # Ljava/util/Map;
+        .annotation build Landroidx/annotation/Nullable;
+        .end annotation
+    .end param
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",

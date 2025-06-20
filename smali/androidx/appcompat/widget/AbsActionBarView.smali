@@ -30,12 +30,16 @@
 
 .field protected final mVisAnimListener:Landroidx/appcompat/widget/AbsActionBarView$VisibilityAnimListener;
 
-.field protected mVisibilityAnim:Landroidx/core/view/e1;
+.field protected mVisibilityAnim:Landroidx/core/view/k0;
 
 
 # direct methods
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 1
+    .param p1    # Landroid/content/Context;
+        .annotation build Landroidx/annotation/NonNull;
+        .end annotation
+    .end param
 
     const/4 v0, 0x0
 
@@ -47,6 +51,14 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
     .locals 1
+    .param p1    # Landroid/content/Context;
+        .annotation build Landroidx/annotation/NonNull;
+        .end annotation
+    .end param
+    .param p2    # Landroid/util/AttributeSet;
+        .annotation build Landroidx/annotation/Nullable;
+        .end annotation
+    .end param
 
     const/4 v0, 0x0
 
@@ -58,6 +70,14 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
     .locals 2
+    .param p1    # Landroid/content/Context;
+        .annotation build Landroidx/annotation/NonNull;
+        .end annotation
+    .end param
+    .param p2    # Landroid/util/AttributeSet;
+        .annotation build Landroidx/annotation/Nullable;
+        .end annotation
+    .end param
 
     .line 3
     invoke-direct {p0, p1, p2, p3}, Landroid/view/ViewGroup;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
@@ -79,7 +99,7 @@
 
     move-result-object p3
 
-    sget v0, Lg/a;->actionBarPopupTheme:I
+    sget v0, Li/a;->actionBarPopupTheme:I
 
     const/4 v1, 0x1
 
@@ -104,6 +124,7 @@
 
     goto :goto_0
 
+    .line 8
     :cond_0
     iput-object p1, p0, Landroidx/appcompat/widget/AbsActionBarView;->mPopupContext:Landroid/content/Context;
 
@@ -161,7 +182,7 @@
 
     .line 2
     .line 3
-    invoke-virtual {p0, p1, v0, v1}, Landroidx/appcompat/widget/AbsActionBarView;->setupAnimatorToVisibility(IJ)Landroidx/core/view/e1;
+    invoke-virtual {p0, p1, v0, v1}, Landroidx/appcompat/widget/AbsActionBarView;->setupAnimatorToVisibility(IJ)Landroidx/core/view/k0;
 
     .line 4
     .line 5
@@ -169,7 +190,7 @@
     move-result-object p1
 
     .line 7
-    iget-object p1, p1, Landroidx/core/view/e1;->a:Ljava/lang/ref/WeakReference;
+    iget-object p1, p1, Landroidx/core/view/k0;->a:Ljava/lang/ref/WeakReference;
 
     .line 8
     .line 9
@@ -273,7 +294,7 @@
     .locals 1
 
     .line 1
-    iget-object v0, p0, Landroidx/appcompat/widget/AbsActionBarView;->mVisibilityAnim:Landroidx/core/view/e1;
+    iget-object v0, p0, Landroidx/appcompat/widget/AbsActionBarView;->mVisibilityAnim:Landroidx/core/view/k0;
 
     .line 2
     .line 3
@@ -307,8 +328,11 @@
 .method public getContentHeight()I
     .locals 1
 
+    .line 1
     iget v0, p0, Landroidx/appcompat/widget/AbsActionBarView;->mContentHeight:I
 
+    .line 2
+    .line 3
     return v0
 .end method
 
@@ -506,11 +530,11 @@
     move-result-object v0
 
     .line 8
-    sget-object v1, Lg/j;->ActionBar:[I
+    sget-object v1, Li/j;->ActionBar:[I
 
     .line 9
     .line 10
-    sget v2, Lg/a;->actionBarStyle:I
+    sget v2, Li/a;->actionBarStyle:I
 
     .line 11
     .line 12
@@ -528,7 +552,7 @@
     move-result-object v0
 
     .line 18
-    sget v1, Lg/j;->ActionBar_height:I
+    sget v1, Li/j;->ActionBar_height:I
 
     .line 19
     .line 20
@@ -854,7 +878,7 @@
 
     .line 6
     .line 7
-    iget-object v0, p0, Landroidx/appcompat/widget/AbsActionBarView;->mVisibilityAnim:Landroidx/core/view/e1;
+    iget-object v0, p0, Landroidx/appcompat/widget/AbsActionBarView;->mVisibilityAnim:Landroidx/core/view/k0;
 
     .line 8
     .line 9
@@ -862,7 +886,7 @@
 
     .line 10
     .line 11
-    invoke-virtual {v0}, Landroidx/core/view/e1;->b()V
+    invoke-virtual {v0}, Landroidx/core/view/k0;->b()V
 
     .line 12
     .line 13
@@ -877,11 +901,11 @@
     return-void
 .end method
 
-.method public setupAnimatorToVisibility(IJ)Landroidx/core/view/e1;
+.method public setupAnimatorToVisibility(IJ)Landroidx/core/view/k0;
     .locals 2
 
     .line 1
-    iget-object v0, p0, Landroidx/appcompat/widget/AbsActionBarView;->mVisibilityAnim:Landroidx/core/view/e1;
+    iget-object v0, p0, Landroidx/appcompat/widget/AbsActionBarView;->mVisibilityAnim:Landroidx/core/view/k0;
 
     .line 2
     .line 3
@@ -889,7 +913,7 @@
 
     .line 4
     .line 5
-    invoke-virtual {v0}, Landroidx/core/view/e1;->b()V
+    invoke-virtual {v0}, Landroidx/core/view/k0;->b()V
 
     .line 6
     .line 7
@@ -920,7 +944,7 @@
     .line 19
     .line 20
     :cond_1
-    invoke-static {p0}, Landroidx/core/view/y0;->a(Landroid/view/View;)Landroidx/core/view/e1;
+    invoke-static {p0}, Landroidx/core/view/e0;->a(Landroid/view/View;)Landroidx/core/view/k0;
 
     .line 21
     .line 22
@@ -932,12 +956,12 @@
 
     .line 25
     .line 26
-    invoke-virtual {v0, v1}, Landroidx/core/view/e1;->a(F)V
+    invoke-virtual {v0, v1}, Landroidx/core/view/k0;->a(F)V
 
     .line 27
     .line 28
     .line 29
-    invoke-virtual {v0, p2, p3}, Landroidx/core/view/e1;->c(J)V
+    invoke-virtual {v0, p2, p3}, Landroidx/core/view/k0;->c(J)V
 
     .line 30
     .line 31
@@ -946,7 +970,7 @@
 
     .line 33
     .line 34
-    invoke-virtual {p2, v0, p1}, Landroidx/appcompat/widget/AbsActionBarView$VisibilityAnimListener;->withFinalVisibility(Landroidx/core/view/e1;I)Landroidx/appcompat/widget/AbsActionBarView$VisibilityAnimListener;
+    invoke-virtual {p2, v0, p1}, Landroidx/appcompat/widget/AbsActionBarView$VisibilityAnimListener;->withFinalVisibility(Landroidx/core/view/k0;I)Landroidx/appcompat/widget/AbsActionBarView$VisibilityAnimListener;
 
     .line 35
     .line 36
@@ -954,7 +978,7 @@
     move-result-object p1
 
     .line 38
-    invoke-virtual {v0, p1}, Landroidx/core/view/e1;->d(Landroidx/core/view/f1;)V
+    invoke-virtual {v0, p1}, Landroidx/core/view/k0;->d(Landroidx/core/view/l0;)V
 
     .line 39
     .line 40
@@ -963,7 +987,7 @@
 
     .line 42
     :cond_2
-    invoke-static {p0}, Landroidx/core/view/y0;->a(Landroid/view/View;)Landroidx/core/view/e1;
+    invoke-static {p0}, Landroidx/core/view/e0;->a(Landroid/view/View;)Landroidx/core/view/k0;
 
     .line 43
     .line 44
@@ -971,12 +995,12 @@
     move-result-object v1
 
     .line 46
-    invoke-virtual {v1, v0}, Landroidx/core/view/e1;->a(F)V
+    invoke-virtual {v1, v0}, Landroidx/core/view/k0;->a(F)V
 
     .line 47
     .line 48
     .line 49
-    invoke-virtual {v1, p2, p3}, Landroidx/core/view/e1;->c(J)V
+    invoke-virtual {v1, p2, p3}, Landroidx/core/view/k0;->c(J)V
 
     .line 50
     .line 51
@@ -985,7 +1009,7 @@
 
     .line 53
     .line 54
-    invoke-virtual {p2, v1, p1}, Landroidx/appcompat/widget/AbsActionBarView$VisibilityAnimListener;->withFinalVisibility(Landroidx/core/view/e1;I)Landroidx/appcompat/widget/AbsActionBarView$VisibilityAnimListener;
+    invoke-virtual {p2, v1, p1}, Landroidx/appcompat/widget/AbsActionBarView$VisibilityAnimListener;->withFinalVisibility(Landroidx/core/view/k0;I)Landroidx/appcompat/widget/AbsActionBarView$VisibilityAnimListener;
 
     .line 55
     .line 56
@@ -993,7 +1017,7 @@
     move-result-object p1
 
     .line 58
-    invoke-virtual {v1, p1}, Landroidx/core/view/e1;->d(Landroidx/core/view/f1;)V
+    invoke-virtual {v1, p1}, Landroidx/core/view/k0;->d(Landroidx/core/view/l0;)V
 
     .line 59
     .line 60

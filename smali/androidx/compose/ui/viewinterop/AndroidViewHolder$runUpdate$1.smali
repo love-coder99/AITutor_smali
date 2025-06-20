@@ -3,14 +3,14 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lzh/a;
+.implements Lka/a;
 
 
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "Lkotlin/jvm/internal/Lambda;",
-        "Lzh/a;"
+        "Lka/a;"
     }
 .end annotation
 
@@ -19,7 +19,7 @@
         "\u0000\u0008\n\u0002\u0018\u0002\n\u0002\u0008\u0003\u0010\u0003\u001a\u00020\u0000H\n\u00a2\u0006\u0004\u0008\u0001\u0010\u0002"
     }
     d2 = {
-        "Lqh/r;",
+        "LX9/j;",
         "invoke",
         "()V",
         "<anonymous>"
@@ -55,10 +55,10 @@
 .method public bridge synthetic invoke()Ljava/lang/Object;
     .locals 1
 
-    .line 6
+    .line 1
     invoke-virtual {p0}, Landroidx/compose/ui/viewinterop/AndroidViewHolder$runUpdate$1;->invoke()V
 
-    sget-object v0, Lqh/r;->a:Lqh/r;
+    sget-object v0, LX9/j;->a:LX9/j;
 
     return-object v0
 .end method
@@ -66,14 +66,15 @@
 .method public final invoke()V
     .locals 4
 
+    .line 2
     iget-object v0, p0, Landroidx/compose/ui/viewinterop/AndroidViewHolder$runUpdate$1;->this$0:Landroidx/compose/ui/viewinterop/d;
 
-    .line 1
+    .line 3
     iget-boolean v1, v0, Landroidx/compose/ui/viewinterop/d;->g:Z
 
     if-eqz v1, :cond_0
 
-    .line 2
+    .line 4
     invoke-virtual {v0}, Landroid/view/View;->isAttachedToWindow()Z
 
     move-result v0
@@ -94,22 +95,22 @@
 
     if-ne v0, v1, :cond_0
 
-    .line 3
-    invoke-static {v1}, Landroidx/compose/ui/viewinterop/d;->d(Landroidx/compose/ui/viewinterop/d;)Landroidx/compose/ui/node/q1;
+    .line 5
+    invoke-static {v1}, Landroidx/compose/ui/viewinterop/d;->d(Landroidx/compose/ui/viewinterop/d;)Landroidx/compose/ui/node/k0;
 
     move-result-object v0
 
     iget-object v1, p0, Landroidx/compose/ui/viewinterop/AndroidViewHolder$runUpdate$1;->this$0:Landroidx/compose/ui/viewinterop/d;
 
-    .line 4
-    sget-object v2, Landroidx/compose/ui/viewinterop/d;->y:Lzh/c;
+    .line 6
+    sget-object v2, Landroidx/compose/ui/viewinterop/d;->y:Lka/c;
 
-    .line 5
-    invoke-virtual {v1}, Landroidx/compose/ui/viewinterop/d;->getUpdate()Lzh/a;
+    .line 7
+    invoke-virtual {v1}, Landroidx/compose/ui/viewinterop/d;->getUpdate()Lka/a;
 
     move-result-object v3
 
-    invoke-virtual {v0, v1, v2, v3}, Landroidx/compose/ui/node/q1;->b(Landroidx/compose/ui/node/p1;Lzh/c;Lzh/a;)V
+    invoke-virtual {v0, v1, v2, v3}, Landroidx/compose/ui/node/k0;->b(Landroidx/compose/ui/node/j0;Lka/c;Lka/a;)V
 
     :cond_0
     return-void

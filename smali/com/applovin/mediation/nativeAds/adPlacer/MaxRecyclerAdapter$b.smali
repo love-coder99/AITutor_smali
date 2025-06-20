@@ -1,5 +1,5 @@
 .class Lcom/applovin/mediation/nativeAds/adPlacer/MaxRecyclerAdapter$b;
-.super Landroidx/recyclerview/widget/i0;
+.super Landroidx/recyclerview/widget/E;
 .source "SourceFile"
 
 
@@ -22,9 +22,10 @@
 .method private constructor <init>(Lcom/applovin/mediation/nativeAds/adPlacer/MaxRecyclerAdapter;)V
     .locals 0
 
+    .line 1
     iput-object p1, p0, Lcom/applovin/mediation/nativeAds/adPlacer/MaxRecyclerAdapter$b;->a:Lcom/applovin/mediation/nativeAds/adPlacer/MaxRecyclerAdapter;
 
-    .line 1
+    .line 2
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -33,7 +34,7 @@
 .method public synthetic constructor <init>(Lcom/applovin/mediation/nativeAds/adPlacer/MaxRecyclerAdapter;Lcom/applovin/mediation/nativeAds/adPlacer/MaxRecyclerAdapter$a;)V
     .locals 0
 
-    .line 2
+    .line 3
     invoke-direct {p0, p1}, Lcom/applovin/mediation/nativeAds/adPlacer/MaxRecyclerAdapter$b;-><init>(Lcom/applovin/mediation/nativeAds/adPlacer/MaxRecyclerAdapter;)V
 
     return-void
@@ -49,7 +50,7 @@
 
     .line 2
     .line 3
-    invoke-virtual {v0}, Landroidx/recyclerview/widget/g0;->notifyDataSetChanged()V
+    invoke-virtual {v0}, Landroidx/recyclerview/widget/C;->notifyDataSetChanged()V
 
     .line 4
     .line 5
@@ -119,7 +120,7 @@
 
     .line 28
     .line 29
-    invoke-virtual {p2, v0, p1}, Landroidx/recyclerview/widget/g0;->notifyItemRangeChanged(II)V
+    invoke-virtual {p2, v0, p1}, Landroidx/recyclerview/widget/C;->notifyItemRangeChanged(II)V
 
     .line 30
     .line 31
@@ -135,7 +136,7 @@
 
     .line 2
     .line 3
-    invoke-static {v0}, Lcom/applovin/mediation/nativeAds/adPlacer/MaxRecyclerAdapter;->c(Lcom/applovin/mediation/nativeAds/adPlacer/MaxRecyclerAdapter;)Landroidx/recyclerview/widget/g0;
+    invoke-static {v0}, Lcom/applovin/mediation/nativeAds/adPlacer/MaxRecyclerAdapter;->c(Lcom/applovin/mediation/nativeAds/adPlacer/MaxRecyclerAdapter;)Landroidx/recyclerview/widget/C;
 
     .line 4
     .line 5
@@ -143,7 +144,7 @@
     move-result-object v0
 
     .line 7
-    invoke-virtual {v0}, Landroidx/recyclerview/widget/g0;->getItemCount()I
+    invoke-virtual {v0}, Landroidx/recyclerview/widget/C;->getItemCount()I
 
     .line 8
     .line 9
@@ -275,7 +276,7 @@
 
     .line 67
     .line 68
-    invoke-virtual {v0, p1, p2}, Landroidx/recyclerview/widget/g0;->notifyItemRangeInserted(II)V
+    invoke-virtual {v0, p1, p2}, Landroidx/recyclerview/widget/C;->notifyItemRangeInserted(II)V
 
     .line 69
     .line 70
@@ -289,7 +290,7 @@
 
     .line 73
     .line 74
-    invoke-virtual {p1}, Landroidx/recyclerview/widget/g0;->notifyDataSetChanged()V
+    invoke-virtual {p1}, Landroidx/recyclerview/widget/C;->notifyDataSetChanged()V
 
     .line 75
     .line 76
@@ -306,7 +307,7 @@
 
     .line 2
     .line 3
-    invoke-virtual {p1}, Landroidx/recyclerview/widget/g0;->notifyDataSetChanged()V
+    invoke-virtual {p1}, Landroidx/recyclerview/widget/C;->notifyDataSetChanged()V
 
     .line 4
     .line 5
@@ -322,7 +323,7 @@
 
     .line 2
     .line 3
-    invoke-static {v0}, Lcom/applovin/mediation/nativeAds/adPlacer/MaxRecyclerAdapter;->c(Lcom/applovin/mediation/nativeAds/adPlacer/MaxRecyclerAdapter;)Landroidx/recyclerview/widget/g0;
+    invoke-static {v0}, Lcom/applovin/mediation/nativeAds/adPlacer/MaxRecyclerAdapter;->c(Lcom/applovin/mediation/nativeAds/adPlacer/MaxRecyclerAdapter;)Landroidx/recyclerview/widget/C;
 
     .line 4
     .line 5
@@ -330,7 +331,7 @@
     move-result-object v0
 
     .line 7
-    invoke-virtual {v0}, Landroidx/recyclerview/widget/g0;->getItemCount()I
+    invoke-virtual {v0}, Landroidx/recyclerview/widget/C;->getItemCount()I
 
     .line 8
     .line 9
@@ -566,7 +567,7 @@
 
     .line 116
     .line 117
-    invoke-virtual {p2, p1, v1}, Landroidx/recyclerview/widget/g0;->notifyItemRangeRemoved(II)V
+    invoke-virtual {p2, p1, v1}, Landroidx/recyclerview/widget/C;->notifyItemRangeRemoved(II)V
 
     .line 118
     .line 119
@@ -580,7 +581,7 @@
 
     .line 122
     .line 123
-    invoke-virtual {p1}, Landroidx/recyclerview/widget/g0;->notifyDataSetChanged()V
+    invoke-virtual {p1}, Landroidx/recyclerview/widget/C;->notifyDataSetChanged()V
 
     .line 124
     .line 125

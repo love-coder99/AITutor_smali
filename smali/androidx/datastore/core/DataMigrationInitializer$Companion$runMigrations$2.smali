@@ -3,35 +3,11 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lzh/e;
+.implements Lka/e;
 
 
 # annotations
-.annotation system Ldalvik/annotation/Signature;
-    value = {
-        "Lkotlin/coroutines/jvm/internal/SuspendLambda;",
-        "Lzh/e;"
-    }
-.end annotation
-
-.annotation runtime Lkotlin/Metadata;
-    d1 = {
-        "\u0000\u0004\n\u0002\u0008\u0003\u0010\u0002\u001a\u00028\u0001\"\u0004\u0008\u0000\u0010\u0000\"\u0004\u0008\u0001\u0010\u00002\u0006\u0010\u0001\u001a\u00028\u0001H\u008a@"
-    }
-    d2 = {
-        "T",
-        "startingData",
-        "<anonymous>"
-    }
-    k = 0x3
-    mv = {
-        0x1,
-        0x5,
-        0x1
-    }
-.end annotation
-
-.annotation runtime Lth/c;
+.annotation runtime Lca/c;
     c = "androidx.datastore.core.DataMigrationInitializer$Companion$runMigrations$2"
     f = "DataMigrationInitializer.kt"
     l = {
@@ -41,13 +17,38 @@
     m = "invokeSuspend"
 .end annotation
 
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "Lkotlin/coroutines/jvm/internal/SuspendLambda;",
+        "Lka/e;"
+    }
+.end annotation
+
+.annotation runtime Lkotlin/Metadata;
+    d1 = {
+        "\u0000\u0004\n\u0002\u0008\u0003\u0010\u0000\u001a\u0002H\u0001\"\u0004\u0008\u0000\u0010\u0001\"\u0004\u0008\u0001\u0010\u00012\u0006\u0010\u0002\u001a\u0002H\u0001H\u008a@"
+    }
+    d2 = {
+        "<anonymous>",
+        "T",
+        "startingData"
+    }
+    k = 0x3
+    mv = {
+        0x1,
+        0x8,
+        0x0
+    }
+    xi = 0x30
+.end annotation
+
 
 # instance fields
 .field final synthetic $cleanUps:Ljava/util/List;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/List<",
-            "Lzh/c;",
+            "Lka/c;",
             ">;"
         }
     .end annotation
@@ -57,7 +58,7 @@
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/List<",
-            "Landroidx/datastore/core/c;",
+            "Landroidx/datastore/core/e;",
             ">;"
         }
     .end annotation
@@ -82,10 +83,10 @@
             "(",
             "Ljava/util/List<",
             "+",
-            "Landroidx/datastore/core/c;",
+            "Landroidx/datastore/core/e;",
             ">;",
             "Ljava/util/List<",
-            "Lzh/c;",
+            "Lka/c;",
             ">;",
             "Lkotlin/coroutines/Continuation<",
             "-",
@@ -116,7 +117,7 @@
             "Lkotlin/coroutines/Continuation<",
             "*>;)",
             "Lkotlin/coroutines/Continuation<",
-            "Lqh/r;",
+            "LX9/j;",
             ">;"
         }
     .end annotation
@@ -167,7 +168,7 @@
 
     check-cast p1, Landroidx/datastore/core/DataMigrationInitializer$Companion$runMigrations$2;
 
-    sget-object p2, Lqh/r;->a:Lqh/r;
+    sget-object p2, LX9/j;->a:LX9/j;
 
     invoke-virtual {p1, p2}, Landroidx/datastore/core/DataMigrationInitializer$Companion$runMigrations$2;->invokeSuspend(Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -259,7 +260,7 @@
 
     .line 37
     .line 38
-    invoke-static {v4}, Landroid/support/v4/media/session/a;->P(Ljava/lang/Object;)V
+    invoke-static {v4}, Landroidx/appcompat/view/menu/F;->O(Ljava/lang/Object;)V
 
     .line 39
     .line 40
@@ -318,7 +319,7 @@
 
     .line 65
     .line 66
-    invoke-direct {p1, v2, v2}, Landroidx/datastore/core/DataMigrationInitializer$Companion$runMigrations$2$1$1;-><init>(Landroidx/datastore/core/c;Lkotlin/coroutines/Continuation;)V
+    invoke-direct {p1, v2, v2}, Landroidx/datastore/core/DataMigrationInitializer$Companion$runMigrations$2$1$1;-><init>(Landroidx/datastore/core/e;Lkotlin/coroutines/Continuation;)V
 
     .line 67
     .line 68
@@ -365,71 +366,67 @@
 
     .line 89
     .line 90
-    check-cast v0, Ljava/lang/Iterable;
+    iget-object v3, p0, Landroidx/datastore/core/DataMigrationInitializer$Companion$runMigrations$2;->$cleanUps:Ljava/util/List;
 
     .line 91
     .line 92
-    iget-object v3, p0, Landroidx/datastore/core/DataMigrationInitializer$Companion$runMigrations$2;->$cleanUps:Ljava/util/List;
+    invoke-interface {v0}, Ljava/lang/Iterable;->iterator()Ljava/util/Iterator;
 
     .line 93
     .line 94
-    invoke-interface {v0}, Ljava/lang/Iterable;->iterator()Ljava/util/Iterator;
-
     .line 95
-    .line 96
-    .line 97
     move-result-object v0
 
-    .line 98
+    .line 96
     :goto_0
     invoke-interface {v0}, Ljava/util/Iterator;->hasNext()Z
 
+    .line 97
+    .line 98
     .line 99
-    .line 100
-    .line 101
     move-result v4
 
-    .line 102
+    .line 100
     if-nez v4, :cond_4
 
-    .line 103
-    .line 104
+    .line 101
+    .line 102
     return-object p1
 
-    .line 105
+    .line 103
     :cond_4
     invoke-interface {v0}, Ljava/util/Iterator;->next()Ljava/lang/Object;
 
+    .line 104
+    .line 105
     .line 106
-    .line 107
-    .line 108
     move-result-object v4
 
-    .line 109
-    invoke-static {v4}, Landroid/support/v4/media/session/a;->P(Ljava/lang/Object;)V
+    .line 107
+    invoke-static {v4}, Landroidx/appcompat/view/menu/F;->O(Ljava/lang/Object;)V
 
+    .line 108
+    .line 109
     .line 110
+    iput-object v3, p0, Landroidx/datastore/core/DataMigrationInitializer$Companion$runMigrations$2;->L$0:Ljava/lang/Object;
+
     .line 111
     .line 112
-    iput-object v3, p0, Landroidx/datastore/core/DataMigrationInitializer$Companion$runMigrations$2;->L$0:Ljava/lang/Object;
+    iput-object v0, p0, Landroidx/datastore/core/DataMigrationInitializer$Companion$runMigrations$2;->L$1:Ljava/lang/Object;
 
     .line 113
     .line 114
-    iput-object v0, p0, Landroidx/datastore/core/DataMigrationInitializer$Companion$runMigrations$2;->L$1:Ljava/lang/Object;
+    iput-object v2, p0, Landroidx/datastore/core/DataMigrationInitializer$Companion$runMigrations$2;->L$2:Ljava/lang/Object;
 
     .line 115
     .line 116
-    iput-object v2, p0, Landroidx/datastore/core/DataMigrationInitializer$Companion$runMigrations$2;->L$2:Ljava/lang/Object;
+    iput-object p1, p0, Landroidx/datastore/core/DataMigrationInitializer$Companion$runMigrations$2;->L$3:Ljava/lang/Object;
 
     .line 117
     .line 118
-    iput-object p1, p0, Landroidx/datastore/core/DataMigrationInitializer$Companion$runMigrations$2;->L$3:Ljava/lang/Object;
+    iput v1, p0, Landroidx/datastore/core/DataMigrationInitializer$Companion$runMigrations$2;->label:I
 
     .line 119
     .line 120
-    iput v1, p0, Landroidx/datastore/core/DataMigrationInitializer$Companion$runMigrations$2;->label:I
-
-    .line 121
-    .line 122
     throw v2
 .end method

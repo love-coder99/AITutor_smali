@@ -30,110 +30,110 @@
     .locals 9
 
     .line 1
-    new-instance v0, Landroidx/camera/core/impl/Config$OptionPriority;
+    const/4 v0, 0x3
 
     .line 2
+    const/4 v1, 0x2
+
     .line 3
-    const-string v1, "ALWAYS_OVERRIDE"
+    const/4 v2, 0x1
 
     .line 4
+    const/4 v3, 0x0
+
     .line 5
-    const/4 v2, 0x0
+    new-instance v4, Landroidx/camera/core/impl/Config$OptionPriority;
 
     .line 6
-    invoke-direct {v0, v1, v2}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
-
     .line 7
+    const-string v5, "ALWAYS_OVERRIDE"
+
     .line 8
     .line 9
-    sput-object v0, Landroidx/camera/core/impl/Config$OptionPriority;->ALWAYS_OVERRIDE:Landroidx/camera/core/impl/Config$OptionPriority;
+    invoke-direct {v4, v5, v3}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
 
     .line 10
     .line 11
-    new-instance v1, Landroidx/camera/core/impl/Config$OptionPriority;
-
     .line 12
+    sput-object v4, Landroidx/camera/core/impl/Config$OptionPriority;->ALWAYS_OVERRIDE:Landroidx/camera/core/impl/Config$OptionPriority;
+
     .line 13
-    const-string v3, "HIGH_PRIORITY_REQUIRED"
-
     .line 14
-    .line 15
-    const/4 v4, 0x1
+    new-instance v5, Landroidx/camera/core/impl/Config$OptionPriority;
 
+    .line 15
     .line 16
-    invoke-direct {v1, v3, v4}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
+    const-string v6, "HIGH_PRIORITY_REQUIRED"
 
     .line 17
     .line 18
-    .line 19
-    sput-object v1, Landroidx/camera/core/impl/Config$OptionPriority;->HIGH_PRIORITY_REQUIRED:Landroidx/camera/core/impl/Config$OptionPriority;
+    invoke-direct {v5, v6, v2}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
 
+    .line 19
     .line 20
     .line 21
-    new-instance v3, Landroidx/camera/core/impl/Config$OptionPriority;
+    sput-object v5, Landroidx/camera/core/impl/Config$OptionPriority;->HIGH_PRIORITY_REQUIRED:Landroidx/camera/core/impl/Config$OptionPriority;
 
     .line 22
     .line 23
-    const-string v5, "REQUIRED"
+    new-instance v6, Landroidx/camera/core/impl/Config$OptionPriority;
 
     .line 24
     .line 25
-    const/4 v6, 0x2
+    const-string v7, "REQUIRED"
 
     .line 26
-    invoke-direct {v3, v5, v6}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
-
     .line 27
+    invoke-direct {v6, v7, v1}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
+
     .line 28
     .line 29
-    sput-object v3, Landroidx/camera/core/impl/Config$OptionPriority;->REQUIRED:Landroidx/camera/core/impl/Config$OptionPriority;
-
     .line 30
+    sput-object v6, Landroidx/camera/core/impl/Config$OptionPriority;->REQUIRED:Landroidx/camera/core/impl/Config$OptionPriority;
+
     .line 31
-    new-instance v5, Landroidx/camera/core/impl/Config$OptionPriority;
-
     .line 32
+    new-instance v7, Landroidx/camera/core/impl/Config$OptionPriority;
+
     .line 33
-    const-string v7, "OPTIONAL"
-
     .line 34
-    .line 35
-    const/4 v8, 0x3
+    const-string v8, "OPTIONAL"
 
+    .line 35
     .line 36
-    invoke-direct {v5, v7, v8}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
+    invoke-direct {v7, v8, v0}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
 
     .line 37
     .line 38
     .line 39
-    sput-object v5, Landroidx/camera/core/impl/Config$OptionPriority;->OPTIONAL:Landroidx/camera/core/impl/Config$OptionPriority;
+    sput-object v7, Landroidx/camera/core/impl/Config$OptionPriority;->OPTIONAL:Landroidx/camera/core/impl/Config$OptionPriority;
 
     .line 40
     .line 41
-    const/4 v7, 0x4
+    const/4 v8, 0x4
 
     .line 42
-    new-array v7, v7, [Landroidx/camera/core/impl/Config$OptionPriority;
+    new-array v8, v8, [Landroidx/camera/core/impl/Config$OptionPriority;
 
     .line 43
     .line 44
-    aput-object v0, v7, v2
+    aput-object v4, v8, v3
 
     .line 45
     .line 46
-    aput-object v1, v7, v4
+    aput-object v5, v8, v2
 
     .line 47
     .line 48
-    aput-object v3, v7, v6
+    aput-object v6, v8, v1
 
     .line 49
     .line 50
-    aput-object v5, v7, v8
+    aput-object v7, v8, v0
 
     .line 51
     .line 52
-    sput-object v7, Landroidx/camera/core/impl/Config$OptionPriority;->b:[Landroidx/camera/core/impl/Config$OptionPriority;
+    sput-object v8, Landroidx/camera/core/impl/Config$OptionPriority;->b:[Landroidx/camera/core/impl/Config$OptionPriority;
 
     .line 53
     .line 54

@@ -1,16 +1,3 @@
-.class public abstract synthetic Landroidx/work/impl/u;
+.class public abstract Landroidx/work/impl/u;
 .super Ljava/lang/Object;
 .source "SourceFile"
-
-
-# static fields
-.field public static final synthetic a:I
-
-
-# direct methods
-.method static constructor <clinit>()V
-    .locals 0
-
-    .line 1
-    return-void
-.end method

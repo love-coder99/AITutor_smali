@@ -96,16 +96,22 @@
 .method public b()[Ljava/lang/Object;
     .locals 1
 
+    .line 1
     iget-object v0, p0, Lcom/applovin/impl/mi;->c:[Ljava/lang/Object;
 
+    .line 2
+    .line 3
     return-object v0
 .end method
 
 .method public c()I
     .locals 1
 
+    .line 1
     iget v0, p0, Lcom/applovin/impl/mi;->d:I
 
+    .line 2
+    .line 3
     return v0
 .end method
 
@@ -152,7 +158,10 @@
 .method public size()I
     .locals 1
 
+    .line 1
     iget v0, p0, Lcom/applovin/impl/mi;->d:I
 
+    .line 2
+    .line 3
     return v0
 .end method

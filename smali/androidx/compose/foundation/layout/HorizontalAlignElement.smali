@@ -1,12 +1,12 @@
 .class public final Landroidx/compose/foundation/layout/HorizontalAlignElement;
-.super Landroidx/compose/ui/node/w0;
+.super Landroidx/compose/ui/node/V;
 .source "SourceFile"
 
 
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
-        "Landroidx/compose/ui/node/w0;"
+        "Landroidx/compose/ui/node/V;"
     }
 .end annotation
 
@@ -16,8 +16,8 @@
     }
     d2 = {
         "Landroidx/compose/foundation/layout/HorizontalAlignElement;",
-        "Landroidx/compose/ui/node/w0;",
-        "Landroidx/compose/foundation/layout/d0;",
+        "Landroidx/compose/ui/node/V;",
+        "Landroidx/compose/foundation/layout/B;",
         "foundation-layout_release"
     }
     k = 0x1
@@ -26,11 +26,12 @@
         0x8,
         0x0
     }
+    xi = 0x30
 .end annotation
 
 
 # instance fields
-.field public final c:Landroidx/compose/ui/c;
+.field public final a:Landroidx/compose/ui/g;
 
 
 # direct methods
@@ -43,7 +44,7 @@
     .line 2
     .line 3
     .line 4
-    iput-object p1, p0, Landroidx/compose/foundation/layout/HorizontalAlignElement;->c:Landroidx/compose/ui/c;
+    iput-object p1, p0, Landroidx/compose/foundation/layout/HorizontalAlignElement;->a:Landroidx/compose/ui/g;
 
     .line 5
     .line 6
@@ -98,15 +99,15 @@
 
     .line 17
     :cond_2
-    iget-object v0, p0, Landroidx/compose/foundation/layout/HorizontalAlignElement;->c:Landroidx/compose/ui/c;
+    iget-object v0, p0, Landroidx/compose/foundation/layout/HorizontalAlignElement;->a:Landroidx/compose/ui/g;
 
     .line 18
     .line 19
-    iget-object p1, p1, Landroidx/compose/foundation/layout/HorizontalAlignElement;->c:Landroidx/compose/ui/c;
+    iget-object p1, p1, Landroidx/compose/foundation/layout/HorizontalAlignElement;->a:Landroidx/compose/ui/g;
 
     .line 20
     .line 21
-    invoke-static {v0, p1}, Lrb/h;->d(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-virtual {v0, p1}, Landroidx/compose/ui/g;->equals(Ljava/lang/Object;)Z
 
     .line 22
     .line 23
@@ -121,26 +122,22 @@
     .locals 1
 
     .line 1
-    iget-object v0, p0, Landroidx/compose/foundation/layout/HorizontalAlignElement;->c:Landroidx/compose/ui/c;
+    iget-object v0, p0, Landroidx/compose/foundation/layout/HorizontalAlignElement;->a:Landroidx/compose/ui/g;
 
     .line 2
     .line 3
-    check-cast v0, Landroidx/compose/ui/g;
+    iget v0, v0, Landroidx/compose/ui/g;->a:F
 
     .line 4
     .line 5
-    iget v0, v0, Landroidx/compose/ui/g;->a:F
+    invoke-static {v0}, Ljava/lang/Float;->floatToIntBits(F)I
 
     .line 6
     .line 7
-    invoke-static {v0}, Ljava/lang/Float;->floatToIntBits(F)I
-
     .line 8
-    .line 9
-    .line 10
     move-result v0
 
-    .line 11
+    .line 9
     return v0
 .end method
 
@@ -148,7 +145,7 @@
     .locals 2
 
     .line 1
-    new-instance v0, Landroidx/compose/foundation/layout/d0;
+    new-instance v0, Landroidx/compose/foundation/layout/B;
 
     .line 2
     .line 3
@@ -157,11 +154,11 @@
     .line 4
     .line 5
     .line 6
-    iget-object v1, p0, Landroidx/compose/foundation/layout/HorizontalAlignElement;->c:Landroidx/compose/ui/c;
+    iget-object v1, p0, Landroidx/compose/foundation/layout/HorizontalAlignElement;->a:Landroidx/compose/ui/g;
 
     .line 7
     .line 8
-    iput-object v1, v0, Landroidx/compose/foundation/layout/d0;->p:Landroidx/compose/ui/c;
+    iput-object v1, v0, Landroidx/compose/foundation/layout/B;->p:Landroidx/compose/ui/g;
 
     .line 9
     .line 10
@@ -172,15 +169,15 @@
     .locals 1
 
     .line 1
-    check-cast p1, Landroidx/compose/foundation/layout/d0;
+    check-cast p1, Landroidx/compose/foundation/layout/B;
 
     .line 2
     .line 3
-    iget-object v0, p0, Landroidx/compose/foundation/layout/HorizontalAlignElement;->c:Landroidx/compose/ui/c;
+    iget-object v0, p0, Landroidx/compose/foundation/layout/HorizontalAlignElement;->a:Landroidx/compose/ui/g;
 
     .line 4
     .line 5
-    iput-object v0, p1, Landroidx/compose/foundation/layout/d0;->p:Landroidx/compose/ui/c;
+    iput-object v0, p1, Landroidx/compose/foundation/layout/B;->p:Landroidx/compose/ui/g;
 
     .line 6
     .line 7

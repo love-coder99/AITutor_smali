@@ -3,14 +3,14 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lzh/c;
+.implements Lka/c;
 
 
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "Lkotlin/jvm/internal/Lambda;",
-        "Lzh/c;"
+        "Lka/c;"
     }
 .end annotation
 
@@ -19,11 +19,11 @@
         "\u0000\u000e\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0008\u0003\u0010\u0005\u001a\u00020\u00022\u0006\u0010\u0001\u001a\u00020\u0000H\n\u00a2\u0006\u0004\u0008\u0003\u0010\u0004"
     }
     d2 = {
-        "Landroidx/compose/ui/text/input/h0;",
+        "Landroidx/compose/ui/text/input/C;",
         "newTextFieldValueState",
-        "Lqh/r;",
+        "LX9/j;",
         "invoke",
-        "(Landroidx/compose/ui/text/input/h0;)V",
+        "(Landroidx/compose/ui/text/input/C;)V",
         "<anonymous>"
     }
     k = 0x3
@@ -36,55 +36,65 @@
 
 
 # instance fields
-.field final synthetic $lastTextValue$delegate:Landroidx/compose/runtime/j1;
+.field final synthetic $lastTextValue$delegate:Landroidx/compose/runtime/Z;
     .annotation system Ldalvik/annotation/Signature;
         value = {
-            "Landroidx/compose/runtime/j1;"
+            "Landroidx/compose/runtime/Z;"
         }
     .end annotation
 .end field
 
-.field final synthetic $onValueChange:Lzh/c;
+.field final synthetic $onValueChange:Lka/c;
     .annotation system Ldalvik/annotation/Signature;
         value = {
-            "Lzh/c;"
+            "Lka/c;"
         }
     .end annotation
 .end field
 
-.field final synthetic $textFieldValueState$delegate:Landroidx/compose/runtime/j1;
+.field final synthetic $textFieldValueState$delegate:Landroidx/compose/runtime/Z;
     .annotation system Ldalvik/annotation/Signature;
         value = {
-            "Landroidx/compose/runtime/j1;"
+            "Landroidx/compose/runtime/Z;"
         }
     .end annotation
 .end field
 
 
 # direct methods
-.method public constructor <init>(Lzh/c;Landroidx/compose/runtime/j1;Landroidx/compose/runtime/j1;)V
+.method public constructor <init>(Lka/c;Landroidx/compose/runtime/Z;Landroidx/compose/runtime/Z;)V
     .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
-            "Lzh/c;",
-            "Landroidx/compose/runtime/j1;",
-            "Landroidx/compose/runtime/j1;",
+            "Lka/c;",
+            "Landroidx/compose/runtime/Z;",
+            "Landroidx/compose/runtime/Z;",
             ")V"
         }
     .end annotation
 
     .line 1
-    iput-object p1, p0, Landroidx/compose/foundation/text/BasicTextFieldKt$BasicTextField$8$1;->$onValueChange:Lzh/c;
+    iput-object p1, p0, Landroidx/compose/foundation/text/BasicTextFieldKt$BasicTextField$8$1;->$onValueChange:Lka/c;
 
-    iput-object p2, p0, Landroidx/compose/foundation/text/BasicTextFieldKt$BasicTextField$8$1;->$textFieldValueState$delegate:Landroidx/compose/runtime/j1;
+    .line 2
+    .line 3
+    iput-object p2, p0, Landroidx/compose/foundation/text/BasicTextFieldKt$BasicTextField$8$1;->$textFieldValueState$delegate:Landroidx/compose/runtime/Z;
 
-    iput-object p3, p0, Landroidx/compose/foundation/text/BasicTextFieldKt$BasicTextField$8$1;->$lastTextValue$delegate:Landroidx/compose/runtime/j1;
+    .line 4
+    .line 5
+    iput-object p3, p0, Landroidx/compose/foundation/text/BasicTextFieldKt$BasicTextField$8$1;->$lastTextValue$delegate:Landroidx/compose/runtime/Z;
 
+    .line 6
+    .line 7
     const/4 p1, 0x1
 
+    .line 8
     invoke-direct {p0, p1}, Lkotlin/jvm/internal/Lambda;-><init>(I)V
 
+    .line 9
+    .line 10
+    .line 11
     return-void
 .end method
 
@@ -94,67 +104,66 @@
     .locals 0
 
     .line 1
-    check-cast p1, Landroidx/compose/ui/text/input/h0;
+    check-cast p1, Landroidx/compose/ui/text/input/C;
 
-    invoke-virtual {p0, p1}, Landroidx/compose/foundation/text/BasicTextFieldKt$BasicTextField$8$1;->invoke(Landroidx/compose/ui/text/input/h0;)V
+    invoke-virtual {p0, p1}, Landroidx/compose/foundation/text/BasicTextFieldKt$BasicTextField$8$1;->invoke(Landroidx/compose/ui/text/input/C;)V
 
-    sget-object p1, Lqh/r;->a:Lqh/r;
+    sget-object p1, LX9/j;->a:LX9/j;
 
     return-object p1
 .end method
 
-.method public final invoke(Landroidx/compose/ui/text/input/h0;)V
+.method public final invoke(Landroidx/compose/ui/text/input/C;)V
     .locals 3
 
-    iget-object v0, p0, Landroidx/compose/foundation/text/BasicTextFieldKt$BasicTextField$8$1;->$textFieldValueState$delegate:Landroidx/compose/runtime/j1;
-
     .line 2
+    iget-object v0, p0, Landroidx/compose/foundation/text/BasicTextFieldKt$BasicTextField$8$1;->$textFieldValueState$delegate:Landroidx/compose/runtime/Z;
+
     sget v1, Landroidx/compose/foundation/text/d;->a:I
 
     .line 3
-    invoke-interface {v0, p1}, Landroidx/compose/runtime/j1;->setValue(Ljava/lang/Object;)V
-
-    iget-object v0, p0, Landroidx/compose/foundation/text/BasicTextFieldKt$BasicTextField$8$1;->$lastTextValue$delegate:Landroidx/compose/runtime/j1;
+    invoke-interface {v0, p1}, Landroidx/compose/runtime/Z;->setValue(Ljava/lang/Object;)V
 
     .line 4
-    invoke-interface {v0}, Landroidx/compose/runtime/d3;->getValue()Ljava/lang/Object;
+    iget-object v0, p0, Landroidx/compose/foundation/text/BasicTextFieldKt$BasicTextField$8$1;->$lastTextValue$delegate:Landroidx/compose/runtime/Z;
+
+    .line 5
+    invoke-interface {v0}, Landroidx/compose/runtime/H0;->getValue()Ljava/lang/Object;
 
     move-result-object v0
 
     check-cast v0, Ljava/lang/String;
 
-    .line 5
-    iget-object v1, p1, Landroidx/compose/ui/text/input/h0;->a:Landroidx/compose/ui/text/f;
-
     .line 6
-    iget-object v1, v1, Landroidx/compose/ui/text/f;->b:Ljava/lang/String;
+    iget-object v1, p1, Landroidx/compose/ui/text/input/C;->a:Landroidx/compose/ui/text/g;
 
     .line 7
-    invoke-static {v0, v1}, Lrb/h;->d(Ljava/lang/Object;Ljava/lang/Object;)Z
+    iget-object v1, v1, Landroidx/compose/ui/text/g;->b:Ljava/lang/String;
+
+    .line 8
+    invoke-static {v0, v1}, Lkotlin/jvm/internal/h;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result v0
 
-    xor-int/lit8 v0, v0, 0x1
-
-    iget-object v1, p0, Landroidx/compose/foundation/text/BasicTextFieldKt$BasicTextField$8$1;->$lastTextValue$delegate:Landroidx/compose/runtime/j1;
-
-    .line 8
-    iget-object p1, p1, Landroidx/compose/ui/text/input/h0;->a:Landroidx/compose/ui/text/f;
-
-    iget-object v2, p1, Landroidx/compose/ui/text/f;->b:Ljava/lang/String;
-
     .line 9
-    invoke-interface {v1, v2}, Landroidx/compose/runtime/j1;->setValue(Ljava/lang/Object;)V
-
-    if-eqz v0, :cond_0
-
-    iget-object v0, p0, Landroidx/compose/foundation/text/BasicTextFieldKt$BasicTextField$8$1;->$onValueChange:Lzh/c;
+    iget-object v1, p0, Landroidx/compose/foundation/text/BasicTextFieldKt$BasicTextField$8$1;->$lastTextValue$delegate:Landroidx/compose/runtime/Z;
 
     .line 10
-    iget-object p1, p1, Landroidx/compose/ui/text/f;->b:Ljava/lang/String;
+    iget-object p1, p1, Landroidx/compose/ui/text/input/C;->a:Landroidx/compose/ui/text/g;
+
+    iget-object v2, p1, Landroidx/compose/ui/text/g;->b:Ljava/lang/String;
 
     .line 11
-    invoke-interface {v0, p1}, Lzh/c;->invoke(Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-interface {v1, v2}, Landroidx/compose/runtime/Z;->setValue(Ljava/lang/Object;)V
+
+    if-nez v0, :cond_0
+
+    .line 12
+    iget-object v0, p0, Landroidx/compose/foundation/text/BasicTextFieldKt$BasicTextField$8$1;->$onValueChange:Lka/c;
+
+    iget-object p1, p1, Landroidx/compose/ui/text/g;->b:Ljava/lang/String;
+
+    invoke-interface {v0, p1}, Lka/c;->invoke(Ljava/lang/Object;)Ljava/lang/Object;
 
     :cond_0
     return-void

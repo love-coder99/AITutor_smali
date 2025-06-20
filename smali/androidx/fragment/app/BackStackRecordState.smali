@@ -251,21 +251,21 @@
 
     move-result-object v3
 
-    check-cast v3, Landroidx/fragment/app/d1;
+    check-cast v3, Landroidx/fragment/app/h0;
 
+    .line 9
     iget-object v4, p0, Landroidx/fragment/app/BackStackRecordState;->b:[I
 
     add-int/lit8 v5, v2, 0x1
 
-    .line 9
-    iget v6, v3, Landroidx/fragment/app/d1;->a:I
+    iget v6, v3, Landroidx/fragment/app/h0;->a:I
 
     aput v6, v4, v2
 
+    .line 10
     iget-object v4, p0, Landroidx/fragment/app/BackStackRecordState;->c:Ljava/util/ArrayList;
 
-    .line 10
-    iget-object v6, v3, Landroidx/fragment/app/d1;->b:Landroidx/fragment/app/Fragment;
+    iget-object v6, v3, Landroidx/fragment/app/h0;->b:Landroidx/fragment/app/Fragment;
 
     if-eqz v6, :cond_0
 
@@ -279,47 +279,47 @@
     :goto_1
     invoke-virtual {v4, v6}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
+    .line 11
     iget-object v4, p0, Landroidx/fragment/app/BackStackRecordState;->b:[I
 
     add-int/lit8 v6, v2, 0x2
 
-    .line 11
-    iget-boolean v7, v3, Landroidx/fragment/app/d1;->c:Z
+    iget-boolean v7, v3, Landroidx/fragment/app/h0;->c:Z
 
     aput v7, v4, v5
 
     add-int/lit8 v5, v2, 0x3
 
     .line 12
-    iget v7, v3, Landroidx/fragment/app/d1;->d:I
+    iget v7, v3, Landroidx/fragment/app/h0;->d:I
 
     aput v7, v4, v6
 
     add-int/lit8 v6, v2, 0x4
 
     .line 13
-    iget v7, v3, Landroidx/fragment/app/d1;->e:I
+    iget v7, v3, Landroidx/fragment/app/h0;->e:I
 
     aput v7, v4, v5
 
     add-int/lit8 v5, v2, 0x5
 
     .line 14
-    iget v7, v3, Landroidx/fragment/app/d1;->f:I
+    iget v7, v3, Landroidx/fragment/app/h0;->f:I
 
     aput v7, v4, v6
 
     add-int/lit8 v2, v2, 0x6
 
     .line 15
-    iget v6, v3, Landroidx/fragment/app/d1;->g:I
+    iget v6, v3, Landroidx/fragment/app/h0;->g:I
 
     aput v6, v4, v5
 
+    .line 16
     iget-object v4, p0, Landroidx/fragment/app/BackStackRecordState;->d:[I
 
-    .line 16
-    iget-object v5, v3, Landroidx/fragment/app/d1;->h:Landroidx/lifecycle/Lifecycle$State;
+    iget-object v5, v3, Landroidx/fragment/app/h0;->h:Landroidx/lifecycle/Lifecycle$State;
 
     invoke-virtual {v5}, Ljava/lang/Enum;->ordinal()I
 
@@ -327,10 +327,10 @@
 
     aput v5, v4, v1
 
+    .line 17
     iget-object v4, p0, Landroidx/fragment/app/BackStackRecordState;->f:[I
 
-    .line 17
-    iget-object v3, v3, Landroidx/fragment/app/d1;->i:Landroidx/lifecycle/Lifecycle$State;
+    iget-object v3, v3, Landroidx/fragment/app/h0;->i:Landroidx/lifecycle/Lifecycle$State;
 
     invoke-virtual {v3}, Ljava/lang/Enum;->ordinal()I
 

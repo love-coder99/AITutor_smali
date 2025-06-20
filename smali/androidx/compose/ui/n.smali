@@ -19,9 +19,9 @@
 
 .field public h:Landroidx/compose/ui/n;
 
-.field public i:Landroidx/compose/ui/node/i1;
+.field public i:Landroidx/compose/ui/node/e0;
 
-.field public j:Landroidx/compose/ui/node/e1;
+.field public j:Landroidx/compose/ui/node/a0;
 
 .field public k:Z
 
@@ -60,7 +60,7 @@
 
 
 # virtual methods
-.method public final o0()Lkotlinx/coroutines/w;
+.method public final m0()Lkotlinx/coroutines/u;
     .locals 3
 
     .line 1
@@ -72,7 +72,7 @@
 
     .line 4
     .line 5
-    invoke-static {p0}, Lcom/google/android/play/core/appupdate/b;->N(Landroidx/compose/ui/node/j;)Landroidx/compose/ui/node/o1;
+    invoke-static {p0}, Lx0/c;->y(Landroidx/compose/ui/node/j;)Landroidx/compose/ui/node/i0;
 
     .line 6
     .line 7
@@ -80,11 +80,11 @@
     move-result-object v0
 
     .line 9
-    check-cast v0, Landroidx/compose/ui/platform/r;
+    check-cast v0, Landroidx/compose/ui/platform/o;
 
     .line 10
     .line 11
-    invoke-virtual {v0}, Landroidx/compose/ui/platform/r;->getCoroutineContext()Lkotlin/coroutines/i;
+    invoke-virtual {v0}, Landroidx/compose/ui/platform/o;->getCoroutineContext()Lba/g;
 
     .line 12
     .line 13
@@ -92,7 +92,7 @@
     move-result-object v0
 
     .line 15
-    invoke-static {p0}, Lcom/google/android/play/core/appupdate/b;->N(Landroidx/compose/ui/node/j;)Landroidx/compose/ui/node/o1;
+    invoke-static {p0}, Lx0/c;->y(Landroidx/compose/ui/node/j;)Landroidx/compose/ui/node/i0;
 
     .line 16
     .line 17
@@ -100,11 +100,11 @@
     move-result-object v1
 
     .line 19
-    check-cast v1, Landroidx/compose/ui/platform/r;
+    check-cast v1, Landroidx/compose/ui/platform/o;
 
     .line 20
     .line 21
-    invoke-virtual {v1}, Landroidx/compose/ui/platform/r;->getCoroutineContext()Lkotlin/coroutines/i;
+    invoke-virtual {v1}, Landroidx/compose/ui/platform/o;->getCoroutineContext()Lba/g;
 
     .line 22
     .line 23
@@ -112,11 +112,11 @@
     move-result-object v1
 
     .line 25
-    sget-object v2, Lkotlinx/coroutines/u;->c:Lkotlinx/coroutines/u;
+    sget-object v2, Lkotlinx/coroutines/s;->c:Lkotlinx/coroutines/s;
 
     .line 26
     .line 27
-    invoke-interface {v1, v2}, Lkotlin/coroutines/i;->get(Lkotlin/coroutines/h;)Lkotlin/coroutines/g;
+    invoke-interface {v1, v2}, Lba/g;->get(Lba/f;)Lba/e;
 
     .line 28
     .line 29
@@ -124,20 +124,20 @@
     move-result-object v1
 
     .line 31
-    check-cast v1, Lkotlinx/coroutines/z0;
+    check-cast v1, Lkotlinx/coroutines/a0;
 
     .line 32
     .line 33
-    new-instance v2, Lkotlinx/coroutines/b1;
+    new-instance v2, Lkotlinx/coroutines/c0;
 
     .line 34
     .line 35
-    invoke-direct {v2, v1}, Lkotlinx/coroutines/b1;-><init>(Lkotlinx/coroutines/z0;)V
+    invoke-direct {v2, v1}, Lkotlinx/coroutines/c0;-><init>(Lkotlinx/coroutines/a0;)V
 
     .line 36
     .line 37
     .line 38
-    invoke-interface {v0, v2}, Lkotlin/coroutines/i;->plus(Lkotlin/coroutines/i;)Lkotlin/coroutines/i;
+    invoke-interface {v0, v2}, Lba/g;->plus(Lba/g;)Lba/g;
 
     .line 39
     .line 40
@@ -145,7 +145,7 @@
     move-result-object v0
 
     .line 42
-    invoke-static {v0}, Lrb/h;->a(Lkotlin/coroutines/i;)Lkotlinx/coroutines/internal/e;
+    invoke-static {v0}, Lkotlinx/coroutines/w;->b(Lba/g;)Lkotlinx/coroutines/internal/e;
 
     .line 43
     .line 44
@@ -161,99 +161,81 @@
     return-object v0
 .end method
 
-.method public p0()Z
-    .locals 0
+.method public n0()Z
+    .locals 1
 
     .line 1
-    instance-of p0, p0, Landroidx/compose/foundation/t;
+    instance-of v0, p0, Landroidx/compose/foundation/r;
 
-    xor-int/lit8 p0, p0, 0x1
+    xor-int/lit8 v0, v0, 0x1
 
-    return p0
+    return v0
 .end method
 
-.method public q0()V
-    .locals 3
+.method public o0()V
+    .locals 2
 
     .line 1
     iget-boolean v0, p0, Landroidx/compose/ui/n;->o:Z
 
     .line 2
     .line 3
-    const/4 v1, 0x1
+    const/4 v1, 0x0
 
     .line 4
-    xor-int/2addr v0, v1
+    if-nez v0, :cond_1
 
     .line 5
-    const/4 v2, 0x0
-
     .line 6
-    if-eqz v0, :cond_2
+    iget-object v0, p0, Landroidx/compose/ui/n;->j:Landroidx/compose/ui/node/a0;
 
     .line 7
     .line 8
-    iget-object v0, p0, Landroidx/compose/ui/n;->j:Landroidx/compose/ui/node/e1;
+    if-eqz v0, :cond_0
 
     .line 9
     .line 10
-    if-eqz v0, :cond_0
-
-    .line 11
-    .line 12
     const/4 v0, 0x1
 
+    .line 11
+    iput-boolean v0, p0, Landroidx/compose/ui/n;->o:Z
+
+    .line 12
     .line 13
-    goto :goto_0
+    iput-boolean v0, p0, Landroidx/compose/ui/n;->m:Z
 
     .line 14
-    :cond_0
-    const/4 v0, 0x0
-
     .line 15
-    :goto_0
-    if-eqz v0, :cond_1
+    return-void
 
     .line 16
+    :cond_0
+    const-string v0, "attach invoked on a node without a coordinator"
+
     .line 17
-    iput-boolean v1, p0, Landroidx/compose/ui/n;->o:Z
-
     .line 18
-    .line 19
-    iput-boolean v1, p0, Landroidx/compose/ui/n;->m:Z
+    invoke-static {v0}, LB/d;->t(Ljava/lang/String;)V
 
+    .line 19
     .line 20
     .line 21
-    return-void
+    throw v1
 
     .line 22
     :cond_1
-    const-string v0, "attach invoked on a node without a coordinator"
+    const-string v0, "node attached multiple times"
 
     .line 23
     .line 24
-    invoke-static {v0}, Lkotlinx/coroutines/y;->Q(Ljava/lang/String;)V
+    invoke-static {v0}, LB/d;->t(Ljava/lang/String;)V
 
     .line 25
     .line 26
     .line 27
-    throw v2
-
-    .line 28
-    :cond_2
-    const-string v0, "node attached multiple times"
-
-    .line 29
-    .line 30
-    invoke-static {v0}, Lkotlinx/coroutines/y;->Q(Ljava/lang/String;)V
-
-    .line 31
-    .line 32
-    .line 33
-    throw v2
+    throw v1
 .end method
 
-.method public r0()V
+.method public p0()V
     .locals 3
 
     .line 1
@@ -272,100 +254,106 @@
 
     .line 7
     .line 8
-    xor-int/lit8 v0, v0, 0x1
+    if-nez v0, :cond_2
 
     .line 9
     .line 10
-    if-eqz v0, :cond_2
+    iget-boolean v0, p0, Landroidx/compose/ui/n;->n:Z
 
     .line 11
     .line 12
-    iget-boolean v0, p0, Landroidx/compose/ui/n;->n:Z
+    if-nez v0, :cond_1
 
     .line 13
     .line 14
-    xor-int/lit8 v0, v0, 0x1
-
-    .line 15
-    .line 16
-    if-eqz v0, :cond_1
-
-    .line 17
-    .line 18
     const/4 v0, 0x0
 
-    .line 19
+    .line 15
     iput-boolean v0, p0, Landroidx/compose/ui/n;->o:Z
+
+    .line 16
+    .line 17
+    iget-object v0, p0, Landroidx/compose/ui/n;->c:Lkotlinx/coroutines/internal/e;
+
+    .line 18
+    .line 19
+    if-eqz v0, :cond_0
 
     .line 20
     .line 21
-    iget-object v0, p0, Landroidx/compose/ui/n;->c:Lkotlinx/coroutines/internal/e;
+    new-instance v2, Landroidx/compose/ui/ModifierNodeDetachedCancellationException;
 
     .line 22
     .line 23
-    if-eqz v0, :cond_0
+    invoke-direct {v2}, Landroidx/compose/ui/ModifierNodeDetachedCancellationException;-><init>()V
 
     .line 24
     .line 25
-    new-instance v2, Landroidx/compose/ui/ModifierNodeDetachedCancellationException;
-
     .line 26
-    .line 27
-    invoke-direct {v2}, Landroidx/compose/ui/ModifierNodeDetachedCancellationException;-><init>()V
+    invoke-static {v0, v2}, Lkotlinx/coroutines/w;->f(Lkotlinx/coroutines/u;Ljava/util/concurrent/CancellationException;)V
 
+    .line 27
     .line 28
     .line 29
-    .line 30
-    invoke-static {v0, v2}, Lrb/h;->f(Lkotlinx/coroutines/w;Ljava/util/concurrent/CancellationException;)V
-
-    .line 31
-    .line 32
-    .line 33
     iput-object v1, p0, Landroidx/compose/ui/n;->c:Lkotlinx/coroutines/internal/e;
 
-    .line 34
-    .line 35
+    .line 30
+    .line 31
     :cond_0
     return-void
 
-    .line 36
+    .line 32
     :cond_1
     const-string v0, "Must run runDetachLifecycle() before markAsDetached()"
 
-    .line 37
-    .line 38
-    invoke-static {v0}, Lkotlinx/coroutines/y;->Q(Ljava/lang/String;)V
+    .line 33
+    .line 34
+    invoke-static {v0}, LB/d;->t(Ljava/lang/String;)V
 
-    .line 39
-    .line 40
-    .line 41
+    .line 35
+    .line 36
+    .line 37
     throw v1
 
-    .line 42
+    .line 38
     :cond_2
     const-string v0, "Must run runAttachLifecycle() before markAsDetached()"
 
-    .line 43
-    .line 44
-    invoke-static {v0}, Lkotlinx/coroutines/y;->Q(Ljava/lang/String;)V
+    .line 39
+    .line 40
+    invoke-static {v0}, LB/d;->t(Ljava/lang/String;)V
 
-    .line 45
-    .line 46
-    .line 47
+    .line 41
+    .line 42
+    .line 43
     throw v1
 
-    .line 48
+    .line 44
     :cond_3
     const-string v0, "Cannot detach a node that is not attached"
 
-    .line 49
-    .line 50
-    invoke-static {v0}, Lkotlinx/coroutines/y;->Q(Ljava/lang/String;)V
+    .line 45
+    .line 46
+    invoke-static {v0}, LB/d;->t(Ljava/lang/String;)V
 
-    .line 51
-    .line 52
-    .line 53
+    .line 47
+    .line 48
+    .line 49
     throw v1
+.end method
+
+.method public q0()V
+    .locals 0
+
+    .line 1
+    return-void
+.end method
+
+.method public r0()V
+    .locals 0
+
+    .line 1
+    return-void
 .end method
 
 .method public s0()V
@@ -376,20 +364,6 @@
 .end method
 
 .method public t0()V
-    .locals 0
-
-    .line 1
-    return-void
-.end method
-
-.method public u0()V
-    .locals 0
-
-    .line 1
-    return-void
-.end method
-
-.method public v0()V
     .locals 1
 
     .line 1
@@ -401,7 +375,7 @@
 
     .line 4
     .line 5
-    invoke-virtual {p0}, Landroidx/compose/ui/n;->u0()V
+    invoke-virtual {p0}, Landroidx/compose/ui/n;->s0()V
 
     .line 6
     .line 7
@@ -414,7 +388,7 @@
 
     .line 10
     .line 11
-    invoke-static {v0}, Lkotlinx/coroutines/y;->Q(Ljava/lang/String;)V
+    invoke-static {v0}, LB/d;->t(Ljava/lang/String;)V
 
     .line 12
     .line 13
@@ -425,7 +399,7 @@
     throw v0
 .end method
 
-.method public w0()V
+.method public u0()V
     .locals 2
 
     .line 1
@@ -455,7 +429,7 @@
 
     .line 12
     .line 13
-    invoke-virtual {p0}, Landroidx/compose/ui/n;->s0()V
+    invoke-virtual {p0}, Landroidx/compose/ui/n;->q0()V
 
     .line 14
     .line 15
@@ -475,7 +449,7 @@
 
     .line 21
     .line 22
-    invoke-static {v0}, Lkotlinx/coroutines/y;->Q(Ljava/lang/String;)V
+    invoke-static {v0}, LB/d;->t(Ljava/lang/String;)V
 
     .line 23
     .line 24
@@ -488,7 +462,7 @@
 
     .line 27
     .line 28
-    invoke-static {v0}, Lkotlinx/coroutines/y;->Q(Ljava/lang/String;)V
+    invoke-static {v0}, LB/d;->t(Ljava/lang/String;)V
 
     .line 29
     .line 30
@@ -496,8 +470,8 @@
     throw v1
 .end method
 
-.method public x0()V
-    .locals 3
+.method public v0()V
+    .locals 2
 
     .line 1
     iget-boolean v0, p0, Landroidx/compose/ui/n;->o:Z
@@ -507,109 +481,98 @@
     const/4 v1, 0x0
 
     .line 4
-    if-eqz v0, :cond_3
+    if-eqz v0, :cond_2
 
     .line 5
     .line 6
-    iget-object v0, p0, Landroidx/compose/ui/n;->j:Landroidx/compose/ui/node/e1;
+    iget-object v0, p0, Landroidx/compose/ui/n;->j:Landroidx/compose/ui/node/a0;
 
     .line 7
     .line 8
-    const/4 v2, 0x0
-
-    .line 9
-    if-eqz v0, :cond_0
-
-    .line 10
-    .line 11
-    const/4 v0, 0x1
-
-    .line 12
-    goto :goto_0
-
-    .line 13
-    :cond_0
-    const/4 v0, 0x0
-
-    .line 14
-    :goto_0
-    if-eqz v0, :cond_2
-
-    .line 15
-    .line 16
-    iget-boolean v0, p0, Landroidx/compose/ui/n;->n:Z
-
-    .line 17
-    .line 18
     if-eqz v0, :cond_1
 
+    .line 9
+    .line 10
+    iget-boolean v0, p0, Landroidx/compose/ui/n;->n:Z
+
+    .line 11
+    .line 12
+    if-eqz v0, :cond_0
+
+    .line 13
+    .line 14
+    const/4 v0, 0x0
+
+    .line 15
+    iput-boolean v0, p0, Landroidx/compose/ui/n;->n:Z
+
+    .line 16
+    .line 17
+    invoke-virtual {p0}, Landroidx/compose/ui/n;->r0()V
+
+    .line 18
     .line 19
     .line 20
-    iput-boolean v2, p0, Landroidx/compose/ui/n;->n:Z
-
-    .line 21
-    .line 22
-    invoke-virtual {p0}, Landroidx/compose/ui/n;->t0()V
-
-    .line 23
-    .line 24
-    .line 25
     return-void
 
-    .line 26
-    :cond_1
+    .line 21
+    :cond_0
     const-string v0, "Must run runDetachLifecycle() once after runAttachLifecycle() and before markAsDetached()"
 
-    .line 27
-    .line 28
-    invoke-static {v0}, Lkotlinx/coroutines/y;->Q(Ljava/lang/String;)V
+    .line 22
+    .line 23
+    invoke-static {v0}, LB/d;->t(Ljava/lang/String;)V
 
-    .line 29
-    .line 30
-    .line 31
+    .line 24
+    .line 25
+    .line 26
     throw v1
 
-    .line 32
-    :cond_2
+    .line 27
+    :cond_1
     const-string v0, "detach invoked on a node without a coordinator"
 
-    .line 33
-    .line 34
-    invoke-static {v0}, Lkotlinx/coroutines/y;->Q(Ljava/lang/String;)V
+    .line 28
+    .line 29
+    invoke-static {v0}, LB/d;->t(Ljava/lang/String;)V
 
-    .line 35
-    .line 36
-    .line 37
+    .line 30
+    .line 31
+    .line 32
     throw v1
 
-    .line 38
-    :cond_3
+    .line 33
+    :cond_2
     const-string v0, "node detached multiple times"
 
-    .line 39
-    .line 40
-    invoke-static {v0}, Lkotlinx/coroutines/y;->Q(Ljava/lang/String;)V
+    .line 34
+    .line 35
+    invoke-static {v0}, LB/d;->t(Ljava/lang/String;)V
 
-    .line 41
-    .line 42
-    .line 43
+    .line 36
+    .line 37
+    .line 38
     throw v1
 .end method
 
-.method public y0(Landroidx/compose/ui/n;)V
+.method public w0(Landroidx/compose/ui/n;)V
     .locals 0
 
     .line 1
     iput-object p1, p0, Landroidx/compose/ui/n;->b:Landroidx/compose/ui/n;
 
+    .line 2
+    .line 3
     return-void
 .end method
 
-.method public z0(Landroidx/compose/ui/node/e1;)V
+.method public x0(Landroidx/compose/ui/node/a0;)V
     .locals 0
 
     .line 1
-    iput-object p1, p0, Landroidx/compose/ui/n;->j:Landroidx/compose/ui/node/e1;
+    iput-object p1, p0, Landroidx/compose/ui/n;->j:Landroidx/compose/ui/node/a0;
 
+    .line 2
+    .line 3
     return-void
 .end method

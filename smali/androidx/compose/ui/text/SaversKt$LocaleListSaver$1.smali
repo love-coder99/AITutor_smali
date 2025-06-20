@@ -3,14 +3,14 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lzh/e;
+.implements Lka/e;
 
 
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "Lkotlin/jvm/internal/Lambda;",
-        "Lzh/e;"
+        "Lka/e;"
     }
 .end annotation
 
@@ -19,12 +19,12 @@
         "\u0000\u0012\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u0000\n\u0002\u0008\u0003\u0010\u0006\u001a\u0004\u0018\u00010\u0003*\u00020\u00002\u0006\u0010\u0002\u001a\u00020\u0001H\n\u00a2\u0006\u0004\u0008\u0004\u0010\u0005"
     }
     d2 = {
-        "Landroidx/compose/runtime/saveable/n;",
-        "Ld2/c;",
+        "Landroidx/compose/runtime/saveable/l;",
+        "LI0/b;",
         "it",
         "",
         "invoke",
-        "(Landroidx/compose/runtime/saveable/n;Ld2/c;)Ljava/lang/Object;",
+        "(Landroidx/compose/runtime/saveable/l;LI0/b;)Ljava/lang/Object;",
         "<anonymous>"
     }
     k = 0x3
@@ -65,11 +65,11 @@
 
 
 # virtual methods
-.method public final invoke(Landroidx/compose/runtime/saveable/n;Ld2/c;)Ljava/lang/Object;
+.method public final invoke(Landroidx/compose/runtime/saveable/l;LI0/b;)Ljava/lang/Object;
     .locals 5
 
     .line 1
-    iget-object p2, p2, Ld2/c;->b:Ljava/util/List;
+    iget-object p2, p2, LI0/b;->b:Ljava/util/List;
 
     .line 2
     new-instance v0, Ljava/util/ArrayList;
@@ -96,13 +96,13 @@
     move-result-object v3
 
     .line 5
-    check-cast v3, Ld2/b;
+    check-cast v3, LI0/a;
 
     .line 6
-    sget-object v4, Landroidx/compose/ui/text/z;->v:Landroidx/compose/runtime/saveable/l;
+    sget-object v4, Landroidx/compose/ui/text/z;->v:LB2/c;
 
     .line 7
-    invoke-static {v3, v4, p1}, Landroidx/compose/ui/text/z;->a(Ljava/lang/Object;Landroidx/compose/runtime/saveable/k;Landroidx/compose/runtime/saveable/n;)Ljava/lang/Object;
+    invoke-static {v3, v4, p1}, Landroidx/compose/ui/text/z;->a(Ljava/lang/Object;Landroidx/compose/runtime/saveable/j;Landroidx/compose/runtime/saveable/l;)Ljava/lang/Object;
 
     move-result-object v3
 
@@ -121,11 +121,11 @@
     .locals 0
 
     .line 9
-    check-cast p1, Landroidx/compose/runtime/saveable/n;
+    check-cast p1, Landroidx/compose/runtime/saveable/l;
 
-    check-cast p2, Ld2/c;
+    check-cast p2, LI0/b;
 
-    invoke-virtual {p0, p1, p2}, Landroidx/compose/ui/text/SaversKt$LocaleListSaver$1;->invoke(Landroidx/compose/runtime/saveable/n;Ld2/c;)Ljava/lang/Object;
+    invoke-virtual {p0, p1, p2}, Landroidx/compose/ui/text/SaversKt$LocaleListSaver$1;->invoke(Landroidx/compose/runtime/saveable/l;LI0/b;)Ljava/lang/Object;
 
     move-result-object p1
 

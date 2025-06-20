@@ -25,7 +25,7 @@
     const/4 v0, 0x1
 
     .line 1
-    invoke-static {p0, v0}, Landroidx/compose/foundation/text/modifiers/f;->o(Ljava/util/List;I)Ljava/lang/Object;
+    invoke-static {v0, p0}, Landroidx/compose/runtime/a0;->n(ILjava/util/List;)Ljava/lang/Object;
 
     move-result-object p0
 

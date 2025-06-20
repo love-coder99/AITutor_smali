@@ -3,34 +3,56 @@
 .source "SourceFile"
 
 # interfaces
-.implements Landroid/window/OnBackInvokedCallback;
+.implements Ljava/lang/Runnable;
 
 
 # instance fields
-.field public final synthetic a:Ljava/lang/Runnable;
+.field public final synthetic b:I
+
+.field public final synthetic c:Landroidx/appcompat/widget/Toolbar;
 
 
 # direct methods
-.method public synthetic constructor <init>(Ljava/lang/Runnable;)V
+.method public synthetic constructor <init>(Landroidx/appcompat/widget/Toolbar;I)V
     .locals 0
 
     .line 1
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    iput p2, p0, Landroidx/appcompat/widget/d;->b:I
 
-    iput-object p1, p0, Landroidx/appcompat/widget/d;->a:Ljava/lang/Runnable;
+    iput-object p1, p0, Landroidx/appcompat/widget/d;->c:Landroidx/appcompat/widget/Toolbar;
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final onBackInvoked()V
+.method public final run()V
     .locals 1
 
     .line 1
-    iget-object v0, p0, Landroidx/appcompat/widget/d;->a:Ljava/lang/Runnable;
+    iget v0, p0, Landroidx/appcompat/widget/d;->b:I
 
-    invoke-interface {v0}, Ljava/lang/Runnable;->run()V
+    packed-switch v0, :pswitch_data_0
+
+    iget-object v0, p0, Landroidx/appcompat/widget/d;->c:Landroidx/appcompat/widget/Toolbar;
+
+    invoke-virtual {v0}, Landroidx/appcompat/widget/Toolbar;->invalidateMenu()V
 
     return-void
+
+    :pswitch_0
+    iget-object v0, p0, Landroidx/appcompat/widget/d;->c:Landroidx/appcompat/widget/Toolbar;
+
+    invoke-virtual {v0}, Landroidx/appcompat/widget/Toolbar;->collapseActionView()V
+
+    return-void
+
+    nop
+
+    :pswitch_data_0
+    .packed-switch 0x0
+        :pswitch_0
+    .end packed-switch
 .end method

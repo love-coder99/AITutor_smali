@@ -112,15 +112,15 @@
 
     .line 11
     .line 12
-    new-instance v0, Lcom/applovin/impl/vu;
+    new-instance v0, Lcom/applovin/impl/M1;
 
     .line 13
     .line 14
-    const/16 v1, 0x12
+    const/16 v1, 0x13
 
     .line 15
     .line 16
-    invoke-direct {v0, v1}, Lcom/applovin/impl/vu;-><init>(I)V
+    invoke-direct {v0, v1}, Lcom/applovin/impl/M1;-><init>(I)V
 
     .line 17
     .line 18
@@ -681,9 +681,9 @@
 
     if-eqz v1, :cond_1
 
+    .line 25
     sget-object v2, Lcom/applovin/impl/ki;->a:Lcom/applovin/impl/o2$a;
 
-    .line 25
     invoke-interface {v2, v1}, Lcom/applovin/impl/o2$a;->a(Landroid/os/Bundle;)Lcom/applovin/impl/o2;
 
     move-result-object v1
@@ -717,9 +717,9 @@
 
     if-eqz v1, :cond_2
 
+    .line 28
     sget-object v2, Lcom/applovin/impl/ki;->a:Lcom/applovin/impl/o2$a;
 
-    .line 28
     invoke-interface {v2, v1}, Lcom/applovin/impl/o2$a;->a(Landroid/os/Bundle;)Lcom/applovin/impl/o2;
 
     move-result-object v1

@@ -29,9 +29,9 @@
 .method private synthetic a(Landroid/view/View;)V
     .locals 2
 
+    .line 5
     iget-object p1, p0, Lcom/applovin/impl/t6;->b:Lcom/applovin/impl/sdk/j;
 
-    .line 4
     invoke-virtual {p1}, Lcom/applovin/impl/sdk/j;->v()Lcom/applovin/impl/x4;
 
     move-result-object p1
@@ -57,7 +57,7 @@
 .method private a()Z
     .locals 1
 
-    .line 3
+    .line 4
     iget-object v0, p0, Lcom/applovin/impl/t6;->a:Lcom/applovin/impl/v6;
 
     if-eqz v0, :cond_0
@@ -227,6 +227,7 @@
     .line 2
     iput-object p1, p0, Lcom/applovin/impl/t6;->a:Lcom/applovin/impl/v6;
 
+    .line 3
     iput-object p2, p0, Lcom/applovin/impl/t6;->b:Lcom/applovin/impl/sdk/j;
 
     return-void
@@ -361,14 +362,14 @@
 
     .line 66
     .line 67
-    new-instance v0, Lcom/applovin/impl/xu;
+    new-instance v0, Lcom/applovin/impl/O1;
 
     .line 68
     .line 69
     const/4 v1, 0x1
 
     .line 70
-    invoke-direct {v0, p0, v1}, Lcom/applovin/impl/xu;-><init>(Ljava/lang/Object;I)V
+    invoke-direct {v0, p0, v1}, Lcom/applovin/impl/O1;-><init>(Ljava/lang/Object;I)V
 
     .line 71
     .line 72

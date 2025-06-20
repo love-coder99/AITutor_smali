@@ -3,4 +3,4 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lx4/c;
+.implements Lr2/c;

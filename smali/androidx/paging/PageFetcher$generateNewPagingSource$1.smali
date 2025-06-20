@@ -4,6 +4,15 @@
 
 
 # annotations
+.annotation runtime Lca/c;
+    c = "androidx.paging.PageFetcher"
+    f = "PageFetcher.kt"
+    l = {
+        0xd2
+    }
+    m = "generateNewPagingSource"
+.end annotation
+
 .annotation runtime Lkotlin/Metadata;
     k = 0x3
     mv = {
@@ -12,15 +21,6 @@
         0x0
     }
     xi = 0x30
-.end annotation
-
-.annotation runtime Lth/c;
-    c = "androidx.paging.PageFetcher"
-    f = "PageFetcher.kt"
-    l = {
-        0xd2
-    }
-    m = "generateNewPagingSource"
 .end annotation
 
 
@@ -33,22 +33,22 @@
 
 .field synthetic result:Ljava/lang/Object;
 
-.field final synthetic this$0:Landroidx/paging/p0;
+.field final synthetic this$0:Landroidx/paging/N;
     .annotation system Ldalvik/annotation/Signature;
         value = {
-            "Landroidx/paging/p0;"
+            "Landroidx/paging/N;"
         }
     .end annotation
 .end field
 
 
 # direct methods
-.method public constructor <init>(Landroidx/paging/p0;Lkotlin/coroutines/Continuation;)V
+.method public constructor <init>(Landroidx/paging/N;Lkotlin/coroutines/Continuation;)V
     .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
-            "Landroidx/paging/p0;",
+            "Landroidx/paging/N;",
             "Lkotlin/coroutines/Continuation<",
             "-",
             "Landroidx/paging/PageFetcher$generateNewPagingSource$1;",
@@ -56,7 +56,7 @@
         }
     .end annotation
 
-    iput-object p1, p0, Landroidx/paging/PageFetcher$generateNewPagingSource$1;->this$0:Landroidx/paging/p0;
+    iput-object p1, p0, Landroidx/paging/PageFetcher$generateNewPagingSource$1;->this$0:Landroidx/paging/N;
 
     invoke-direct {p0, p2}, Lkotlin/coroutines/jvm/internal/ContinuationImpl;-><init>(Lkotlin/coroutines/Continuation;)V
 
@@ -78,11 +78,11 @@
 
     iput p1, p0, Landroidx/paging/PageFetcher$generateNewPagingSource$1;->label:I
 
-    iget-object p1, p0, Landroidx/paging/PageFetcher$generateNewPagingSource$1;->this$0:Landroidx/paging/p0;
+    iget-object p1, p0, Landroidx/paging/PageFetcher$generateNewPagingSource$1;->this$0:Landroidx/paging/N;
 
     const/4 v0, 0x0
 
-    invoke-static {p1, v0, p0}, Landroidx/paging/p0;->a(Landroidx/paging/p0;Landroidx/paging/w1;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
+    invoke-static {p1, v0, p0}, Landroidx/paging/N;->a(Landroidx/paging/N;Landroidx/paging/y0;Lkotlin/coroutines/jvm/internal/ContinuationImpl;)Ljava/lang/Object;
 
     move-result-object p1
 

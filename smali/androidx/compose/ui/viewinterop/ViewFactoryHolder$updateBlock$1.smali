@@ -3,12 +3,12 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lzh/a;
+.implements Lka/a;
 
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Landroidx/compose/ui/viewinterop/ViewFactoryHolder;->setUpdateBlock(Lzh/c;)V
+    value = Landroidx/compose/ui/viewinterop/ViewFactoryHolder;->setUpdateBlock(Lka/c;)V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -19,7 +19,7 @@
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "Lkotlin/jvm/internal/Lambda;",
-        "Lzh/a;"
+        "Lka/a;"
     }
 .end annotation
 
@@ -30,7 +30,7 @@
     d2 = {
         "Landroid/view/View;",
         "T",
-        "Lqh/r;",
+        "LX9/j;",
         "invoke",
         "()V",
         "<anonymous>"
@@ -79,10 +79,10 @@
 .method public bridge synthetic invoke()Ljava/lang/Object;
     .locals 1
 
-    .line 3
+    .line 1
     invoke-virtual {p0}, Landroidx/compose/ui/viewinterop/ViewFactoryHolder$updateBlock$1;->invoke()V
 
-    sget-object v0, Lqh/r;->a:Lqh/r;
+    sget-object v0, LX9/j;->a:LX9/j;
 
     return-object v0
 .end method
@@ -90,17 +90,18 @@
 .method public final invoke()V
     .locals 2
 
+    .line 2
     iget-object v0, p0, Landroidx/compose/ui/viewinterop/ViewFactoryHolder$updateBlock$1;->this$0:Landroidx/compose/ui/viewinterop/ViewFactoryHolder;
 
-    .line 1
+    .line 3
     iget-object v1, v0, Landroidx/compose/ui/viewinterop/ViewFactoryHolder;->z:Landroid/view/View;
 
-    .line 2
-    invoke-virtual {v0}, Landroidx/compose/ui/viewinterop/ViewFactoryHolder;->getUpdateBlock()Lzh/c;
+    .line 4
+    invoke-virtual {v0}, Landroidx/compose/ui/viewinterop/ViewFactoryHolder;->getUpdateBlock()Lka/c;
 
     move-result-object v0
 
-    invoke-interface {v0, v1}, Lzh/c;->invoke(Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-interface {v0, v1}, Lka/c;->invoke(Ljava/lang/Object;)Ljava/lang/Object;
 
     return-void
 .end method

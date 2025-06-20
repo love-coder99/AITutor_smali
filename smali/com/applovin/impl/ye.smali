@@ -91,9 +91,9 @@
 .method public a(Lcom/applovin/impl/ye$a;)V
     .locals 1
 
+    .line 1
     iget-object v0, p0, Lcom/applovin/impl/ye;->a:Ljava/util/List;
 
-    .line 1
     invoke-interface {v0, p1}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
     return-void

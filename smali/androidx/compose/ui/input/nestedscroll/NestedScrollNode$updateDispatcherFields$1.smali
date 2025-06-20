@@ -3,14 +3,14 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lzh/a;
+.implements Lka/a;
 
 
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "Lkotlin/jvm/internal/Lambda;",
-        "Lzh/a;"
+        "Lka/a;"
     }
 .end annotation
 
@@ -19,9 +19,9 @@
         "\u0000\u0008\n\u0002\u0018\u0002\n\u0002\u0008\u0003\u0010\u0003\u001a\u00020\u0000H\n\u00a2\u0006\u0004\u0008\u0001\u0010\u0002"
     }
     d2 = {
-        "Lkotlinx/coroutines/w;",
+        "Lkotlinx/coroutines/u;",
         "invoke",
-        "()Lkotlinx/coroutines/w;",
+        "()Lkotlinx/coroutines/u;",
         "<anonymous>"
     }
     k = 0x3
@@ -55,21 +55,22 @@
 .method public bridge synthetic invoke()Ljava/lang/Object;
     .locals 1
 
-    .line 2
-    invoke-virtual {p0}, Landroidx/compose/ui/input/nestedscroll/NestedScrollNode$updateDispatcherFields$1;->invoke()Lkotlinx/coroutines/w;
+    .line 1
+    invoke-virtual {p0}, Landroidx/compose/ui/input/nestedscroll/NestedScrollNode$updateDispatcherFields$1;->invoke()Lkotlinx/coroutines/u;
 
     move-result-object v0
 
     return-object v0
 .end method
 
-.method public final invoke()Lkotlinx/coroutines/w;
+.method public final invoke()Lkotlinx/coroutines/u;
     .locals 1
 
+    .line 2
     iget-object v0, p0, Landroidx/compose/ui/input/nestedscroll/NestedScrollNode$updateDispatcherFields$1;->this$0:Landroidx/compose/ui/input/nestedscroll/d;
 
-    .line 1
-    invoke-virtual {v0}, Landroidx/compose/ui/input/nestedscroll/d;->A0()Lkotlinx/coroutines/w;
+    .line 3
+    invoke-virtual {v0}, Landroidx/compose/ui/input/nestedscroll/d;->y0()Lkotlinx/coroutines/u;
 
     move-result-object v0
 

@@ -22,9 +22,9 @@
 .method private constructor <init>(Lcom/applovin/impl/eg;)V
     .locals 0
 
+    .line 1
     iput-object p1, p0, Lcom/applovin/impl/eg$e;->a:Lcom/applovin/impl/eg;
 
-    .line 1
     invoke-direct {p0}, Landroid/telephony/PhoneStateListener;-><init>()V
 
     return-void
@@ -45,7 +45,7 @@
     .locals 1
 
     .line 1
-    invoke-static {p1}, Landroidx/core/view/b2;->c(Landroid/telephony/TelephonyDisplayInfo;)I
+    invoke-static {p1}, Landroidx/core/view/H0;->c(Landroid/telephony/TelephonyDisplayInfo;)I
 
     .line 2
     .line 3

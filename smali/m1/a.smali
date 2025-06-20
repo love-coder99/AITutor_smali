@@ -1,22 +1,53 @@
-.class public final Lm1/a;
+.class public final LM1/a;
 .super Ljava/lang/Object;
 .source "SourceFile"
 
-# interfaces
-.implements Lm1/b;
+
+# static fields
+.field public static final c:LM1/a;
 
 
 # instance fields
-.field public final a:Landroid/view/View;
+.field public final a:Lkotlin/collections/EmptySet;
 
-.field public final b:Lm1/g;
-
-.field public final c:Landroid/view/autofill/AutofillManager;
+.field public final b:Ljava/util/LinkedHashMap;
 
 
 # direct methods
-.method public constructor <init>(Landroid/view/View;Lm1/g;)V
-    .locals 1
+.method static constructor <clinit>()V
+    .locals 3
+
+    .line 1
+    new-instance v0, LM1/a;
+
+    .line 2
+    .line 3
+    sget-object v1, Lkotlin/collections/EmptySet;->INSTANCE:Lkotlin/collections/EmptySet;
+
+    .line 4
+    .line 5
+    invoke-static {}, Lkotlin/collections/a;->F()Ljava/util/Map;
+
+    .line 6
+    .line 7
+    .line 8
+    move-result-object v2
+
+    .line 9
+    invoke-direct {v0, v1, v2}, LM1/a;-><init>(Lkotlin/collections/EmptySet;Ljava/util/Map;)V
+
+    .line 10
+    .line 11
+    .line 12
+    sput-object v0, LM1/a;->c:LM1/a;
+
+    .line 13
+    .line 14
+    return-void
+.end method
+
+.method public constructor <init>(Lkotlin/collections/EmptySet;Ljava/util/Map;)V
+    .locals 2
 
     .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -24,83 +55,96 @@
     .line 2
     .line 3
     .line 4
-    iput-object p1, p0, Lm1/a;->a:Landroid/view/View;
+    iput-object p1, p0, LM1/a;->a:Lkotlin/collections/EmptySet;
 
     .line 5
     .line 6
-    iput-object p2, p0, Lm1/a;->b:Lm1/g;
+    new-instance p1, Ljava/util/LinkedHashMap;
 
     .line 7
     .line 8
-    invoke-virtual {p1}, Landroid/view/View;->getContext()Landroid/content/Context;
+    invoke-direct {p1}, Ljava/util/LinkedHashMap;-><init>()V
 
     .line 9
     .line 10
     .line 11
-    move-result-object p2
+    invoke-interface {p2}, Ljava/util/Map;->entrySet()Ljava/util/Set;
 
     .line 12
-    invoke-static {}, Lfe/e;->i()Ljava/lang/Class;
-
     .line 13
     .line 14
+    move-result-object p2
+
     .line 15
-    move-result-object v0
+    invoke-interface {p2}, Ljava/util/Set;->iterator()Ljava/util/Iterator;
 
     .line 16
-    invoke-static {p2, v0}, Lcom/google/android/gms/internal/ads/ql1;->p(Landroid/content/Context;Ljava/lang/Class;)Ljava/lang/Object;
-
     .line 17
     .line 18
-    .line 19
     move-result-object p2
+
+    .line 19
+    :goto_0
+    invoke-interface {p2}, Ljava/util/Iterator;->hasNext()Z
 
     .line 20
-    invoke-static {p2}, Lfe/e;->e(Ljava/lang/Object;)Landroid/view/autofill/AutofillManager;
-
     .line 21
     .line 22
+    move-result v0
+
     .line 23
-    move-result-object p2
+    if-eqz v0, :cond_0
 
     .line 24
-    if-eqz p2, :cond_0
-
     .line 25
-    .line 26
-    iput-object p2, p0, Lm1/a;->c:Landroid/view/autofill/AutofillManager;
+    invoke-interface {p2}, Ljava/util/Iterator;->next()Ljava/lang/Object;
 
+    .line 26
     .line 27
     .line 28
-    invoke-static {p1}, Lfe/e;->m(Landroid/view/View;)V
+    move-result-object v0
 
     .line 29
+    check-cast v0, Ljava/util/Map$Entry;
+
     .line 30
     .line 31
-    return-void
+    invoke-interface {v0}, Ljava/util/Map$Entry;->getKey()Ljava/lang/Object;
 
     .line 32
-    :cond_0
-    new-instance p1, Ljava/lang/IllegalStateException;
-
     .line 33
     .line 34
-    const-string p2, "Autofill service could not be located."
+    move-result-object v1
 
     .line 35
-    .line 36
-    invoke-virtual {p2}, Ljava/lang/Object;->toString()Ljava/lang/String;
+    check-cast v1, Ljava/lang/String;
 
+    .line 36
     .line 37
+    invoke-interface {v0}, Ljava/util/Map$Entry;->getValue()Ljava/lang/Object;
+
     .line 38
     .line 39
-    move-result-object p2
-
     .line 40
-    invoke-direct {p1, p2}, Ljava/lang/IllegalStateException;-><init>(Ljava/lang/String;)V
+    move-result-object v0
 
     .line 41
+    check-cast v0, Ljava/util/Set;
+
     .line 42
     .line 43
-    throw p1
+    invoke-interface {p1, v1, v0}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 44
+    .line 45
+    .line 46
+    goto :goto_0
+
+    .line 47
+    :cond_0
+    iput-object p1, p0, LM1/a;->b:Ljava/util/LinkedHashMap;
+
+    .line 48
+    .line 49
+    return-void
 .end method

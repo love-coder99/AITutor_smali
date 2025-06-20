@@ -62,7 +62,7 @@
 .method public static a(Ljava/lang/String;JLandroid/net/Uri;Lcom/applovin/impl/fq;Lcom/applovin/impl/sdk/j;)Landroid/net/Uri;
     .locals 5
 
-    .line 57
+    .line 60
     invoke-static {p0}, Landroid/webkit/URLUtil;->isValidUrl(Ljava/lang/String;)Z
 
     move-result v0
@@ -73,7 +73,7 @@
 
     if-eqz v0, :cond_3
 
-    .line 58
+    .line 61
     :try_start_0
     invoke-virtual {p4}, Lcom/applovin/impl/fq;->b()I
 
@@ -83,16 +83,17 @@
 
     move-result-object p4
 
+    .line 62
     const-string v0, "[ERRORCODE]"
 
-    .line 59
+    .line 63
     invoke-virtual {p0, v0, p4}, Ljava/lang/String;->replace(Ljava/lang/CharSequence;Ljava/lang/CharSequence;)Ljava/lang/String;
 
     move-result-object v0
 
     const-string v3, "[REASON]"
 
-    .line 60
+    .line 64
     invoke-virtual {v0, v3, p4}, Ljava/lang/String;->replace(Ljava/lang/CharSequence;Ljava/lang/CharSequence;)Ljava/lang/String;
 
     move-result-object p4
@@ -103,14 +104,14 @@
 
     if-ltz v0, :cond_0
 
-    .line 61
+    .line 65
     invoke-static {p1, p2}, Lcom/applovin/impl/mq;->a(J)Ljava/lang/String;
 
     move-result-object p1
 
+    .line 66
     const-string p2, "[CONTENTPLAYHEAD]"
 
-    .line 62
     invoke-virtual {p4, p2, p1}, Ljava/lang/String;->replace(Ljava/lang/CharSequence;Ljava/lang/CharSequence;)Ljava/lang/String;
 
     move-result-object p4
@@ -126,9 +127,9 @@
     :goto_0
     if-eqz p3, :cond_1
 
+    .line 67
     const-string p1, "[ASSETURI]"
 
-    .line 63
     invoke-virtual {p3}, Landroid/net/Uri;->toString()Ljava/lang/String;
 
     move-result-object p2
@@ -137,10 +138,10 @@
 
     move-result-object p4
 
+    .line 68
     :cond_1
     const-string p1, "[CACHEBUSTING]"
 
-    .line 64
     invoke-static {}, Lcom/applovin/impl/mq;->a()Ljava/lang/String;
 
     move-result-object p2
@@ -149,9 +150,9 @@
 
     move-result-object p1
 
+    .line 69
     const-string p2, "[TIMESTAMP]"
 
-    .line 65
     invoke-static {}, Lcom/applovin/impl/mq;->b()Ljava/lang/String;
 
     move-result-object p3
@@ -160,7 +161,7 @@
 
     move-result-object p1
 
-    .line 66
+    .line 70
     invoke-static {p1}, Landroid/net/Uri;->parse(Ljava/lang/String;)Landroid/net/Uri;
 
     move-result-object p0
@@ -169,7 +170,7 @@
 
     return-object p0
 
-    .line 67
+    .line 71
     :goto_1
     invoke-virtual {p5}, Lcom/applovin/impl/sdk/j;->I()Lcom/applovin/impl/sdk/n;
 
@@ -197,7 +198,7 @@
 
     invoke-virtual {p2, v2, p0, p1}, Lcom/applovin/impl/sdk/n;->a(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)V
 
-    .line 68
+    .line 72
     :cond_2
     invoke-virtual {p5}, Lcom/applovin/impl/sdk/j;->D()Lcom/applovin/impl/la;
 
@@ -207,7 +208,7 @@
 
     return-object v1
 
-    .line 69
+    .line 73
     :cond_3
     invoke-virtual {p5}, Lcom/applovin/impl/sdk/j;->I()Lcom/applovin/impl/sdk/n;
 
@@ -232,11 +233,11 @@
 .method private static a()Ljava/lang/String;
     .locals 2
 
+    .line 84
     sget-object v0, Lcom/applovin/impl/mq;->b:Ljava/util/Random;
 
     const v1, 0x55d4a7f
 
-    .line 80
     invoke-virtual {v0, v1}, Ljava/util/Random;->nextInt(I)I
 
     move-result v0
@@ -245,7 +246,7 @@
 
     add-int/2addr v0, v1
 
-    .line 81
+    .line 85
     invoke-static {v0}, Ljava/lang/Integer;->toString(I)Ljava/lang/String;
 
     move-result-object v0
@@ -330,6 +331,7 @@
 
     return-object p0
 
+    .line 22
     :cond_0
     const-string p0, "00:00:00.000"
 
@@ -341,12 +343,12 @@
 
     if-eqz p0, :cond_1
 
-    .line 22
+    .line 23
     invoke-virtual {p0}, Lcom/applovin/impl/eq;->a()Ljava/util/List;
 
     move-result-object v0
 
-    .line 23
+    .line 24
     invoke-virtual {p0}, Lcom/applovin/impl/eq;->a()Ljava/util/List;
 
     move-result-object p0
@@ -359,23 +361,23 @@
 
     add-int/lit8 p0, p0, -0x1
 
-    .line 24
+    .line 25
     invoke-interface {v0, p0}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
     move-result-object p0
 
     check-cast p0, Lcom/applovin/impl/es;
 
+    .line 26
     const-string v0, "VASTAdTagURI"
 
-    .line 25
     invoke-virtual {p0, v0}, Lcom/applovin/impl/es;->b(Ljava/lang/String;)Lcom/applovin/impl/es;
 
     move-result-object p0
 
     if-eqz p0, :cond_0
 
-    .line 26
+    .line 27
     invoke-virtual {p0}, Lcom/applovin/impl/es;->d()Ljava/lang/String;
 
     move-result-object p0
@@ -387,7 +389,7 @@
 
     return-object p0
 
-    .line 27
+    .line 28
     :cond_1
     new-instance p0, Ljava/lang/IllegalArgumentException;
 
@@ -431,12 +433,12 @@
 
     if-eqz p0, :cond_4
 
-    .line 70
+    .line 74
     invoke-virtual {p0}, Lcom/applovin/impl/eq;->a()Ljava/util/List;
 
     move-result-object v0
 
-    .line 71
+    .line 75
     new-instance v1, Ljava/util/HashSet;
 
     invoke-interface {v0}, Ljava/util/List;->size()I
@@ -445,7 +447,7 @@
 
     invoke-direct {v1, v2}, Ljava/util/HashSet;-><init>(I)V
 
-    .line 72
+    .line 76
     invoke-interface {v0}, Ljava/util/List;->iterator()Ljava/util/Iterator;
 
     move-result-object v0
@@ -463,9 +465,9 @@
 
     check-cast v2, Lcom/applovin/impl/es;
 
+    .line 77
     const-string v3, "Wrapper"
 
-    .line 73
     invoke-virtual {v2, v3}, Lcom/applovin/impl/es;->b(Ljava/lang/String;)Lcom/applovin/impl/es;
 
     move-result-object v3
@@ -474,10 +476,10 @@
 
     goto :goto_1
 
+    .line 78
     :cond_0
     const-string v3, "InLine"
 
-    .line 74
     invoke-virtual {v2, v3}, Lcom/applovin/impl/es;->b(Ljava/lang/String;)Lcom/applovin/impl/es;
 
     move-result-object v3
@@ -487,32 +489,32 @@
 
     if-eqz v3, :cond_1
 
-    .line 75
+    .line 79
     invoke-virtual {v3, v4}, Lcom/applovin/impl/es;->a(Ljava/lang/String;)Ljava/util/List;
 
     move-result-object v2
 
-    .line 76
+    .line 80
     invoke-static {v1, v2, p0, p1}, Lcom/applovin/impl/mq;->a(Ljava/util/Set;Ljava/util/List;Lcom/applovin/impl/eq;Lcom/applovin/impl/sdk/j;)Ljava/util/Set;
 
     move-result-object v1
 
     goto :goto_0
 
-    .line 77
+    .line 81
     :cond_1
     invoke-virtual {v2, v4}, Lcom/applovin/impl/es;->a(Ljava/lang/String;)Ljava/util/List;
 
     move-result-object v2
 
-    .line 78
+    .line 82
     invoke-static {v1, v2, p0, p1}, Lcom/applovin/impl/mq;->a(Ljava/util/Set;Ljava/util/List;Lcom/applovin/impl/eq;Lcom/applovin/impl/sdk/j;)Ljava/util/Set;
 
     move-result-object v1
 
     goto :goto_0
 
-    .line 79
+    .line 83
     :cond_2
     invoke-virtual {p1}, Lcom/applovin/impl/sdk/j;->I()Lcom/applovin/impl/sdk/n;
 
@@ -608,10 +610,10 @@
 
     if-eqz p1, :cond_0
 
-    .line 28
+    .line 29
     invoke-interface {p1, p3}, Lcom/applovin/sdk/AppLovinAdLoadListener;->failedToReceiveAd(I)V
 
-    .line 29
+    .line 30
     :cond_0
     invoke-static {p0, p4}, Lcom/applovin/impl/mq;->a(Lcom/applovin/impl/eq;Lcom/applovin/impl/sdk/j;)Ljava/util/Set;
 
@@ -621,7 +623,7 @@
 
     return-void
 
-    .line 30
+    .line 31
     :cond_1
     new-instance p0, Ljava/lang/IllegalArgumentException;
 
@@ -637,11 +639,12 @@
 
     if-eqz p3, :cond_8
 
+    .line 37
     const-string v0, "VastUtils"
 
     if-nez p0, :cond_1
 
-    .line 36
+    .line 38
     invoke-virtual {p3}, Lcom/applovin/impl/sdk/j;->I()Lcom/applovin/impl/sdk/n;
 
     invoke-static {}, Lcom/applovin/impl/sdk/n;->a()Z
@@ -664,7 +667,7 @@
     :cond_1
     if-nez p1, :cond_3
 
-    .line 37
+    .line 39
     invoke-virtual {p3}, Lcom/applovin/impl/sdk/j;->I()Lcom/applovin/impl/sdk/n;
 
     invoke-static {}, Lcom/applovin/impl/sdk/n;->a()Z
@@ -684,26 +687,26 @@
     :cond_2
     return-void
 
+    .line 40
     :cond_3
     const-string v1, "TrackingEvents"
 
-    .line 38
     invoke-virtual {p0, v1}, Lcom/applovin/impl/es;->c(Ljava/lang/String;)Lcom/applovin/impl/es;
 
     move-result-object p0
 
     if-eqz p0, :cond_7
 
+    .line 41
     const-string v1, "Tracking"
 
-    .line 39
     invoke-virtual {p0, v1}, Lcom/applovin/impl/es;->a(Ljava/lang/String;)Ljava/util/List;
 
     move-result-object p0
 
     if-eqz p0, :cond_7
 
-    .line 40
+    .line 42
     invoke-interface {p0}, Ljava/util/List;->iterator()Ljava/util/Iterator;
 
     move-result-object p0
@@ -722,7 +725,7 @@
 
     check-cast v1, Lcom/applovin/impl/es;
 
-    .line 41
+    .line 43
     invoke-virtual {v1}, Lcom/applovin/impl/es;->a()Ljava/util/Map;
 
     move-result-object v2
@@ -735,21 +738,21 @@
 
     check-cast v2, Ljava/lang/String;
 
-    .line 42
+    .line 44
     invoke-static {v2}, Lcom/applovin/impl/sdk/utils/StringUtils;->isValidString(Ljava/lang/String;)Z
 
     move-result v3
 
     if-eqz v3, :cond_6
 
-    .line 43
+    .line 45
     invoke-static {v1, p2, p3}, Lcom/applovin/impl/kq;->a(Lcom/applovin/impl/es;Lcom/applovin/impl/eq;Lcom/applovin/impl/sdk/j;)Lcom/applovin/impl/kq;
 
     move-result-object v1
 
     if-eqz v1, :cond_4
 
-    .line 44
+    .line 46
     invoke-interface {p1, v2}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object v3
@@ -758,26 +761,26 @@
 
     if-eqz v3, :cond_5
 
-    .line 45
+    .line 47
     invoke-interface {v3, v1}, Ljava/util/Set;->add(Ljava/lang/Object;)Z
 
     goto :goto_0
 
-    .line 46
+    .line 48
     :cond_5
     new-instance v3, Ljava/util/HashSet;
 
     invoke-direct {v3}, Ljava/util/HashSet;-><init>()V
 
-    .line 47
+    .line 49
     invoke-virtual {v3, v1}, Ljava/util/HashSet;->add(Ljava/lang/Object;)Z
 
-    .line 48
+    .line 50
     invoke-interface {p1, v2, v3}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     goto :goto_0
 
-    .line 49
+    .line 51
     :cond_6
     invoke-virtual {p3}, Lcom/applovin/impl/sdk/j;->I()Lcom/applovin/impl/sdk/n;
 
@@ -810,7 +813,7 @@
     :cond_7
     return-void
 
-    .line 50
+    .line 52
     :cond_8
     new-instance p0, Ljava/lang/IllegalArgumentException;
 
@@ -826,11 +829,12 @@
 
     if-eqz p3, :cond_6
 
+    .line 53
     const-string v0, "VastUtils"
 
     if-nez p0, :cond_1
 
-    .line 51
+    .line 54
     invoke-virtual {p3}, Lcom/applovin/impl/sdk/j;->I()Lcom/applovin/impl/sdk/n;
 
     invoke-static {}, Lcom/applovin/impl/sdk/n;->a()Z
@@ -853,7 +857,7 @@
     :cond_1
     if-nez p1, :cond_3
 
-    .line 52
+    .line 55
     invoke-virtual {p3}, Lcom/applovin/impl/sdk/j;->I()Lcom/applovin/impl/sdk/n;
 
     invoke-static {}, Lcom/applovin/impl/sdk/n;->a()Z
@@ -873,7 +877,7 @@
     :cond_2
     return-void
 
-    .line 53
+    .line 56
     :cond_3
     invoke-interface {p0}, Ljava/util/List;->iterator()Ljava/util/Iterator;
 
@@ -893,14 +897,14 @@
 
     check-cast v0, Lcom/applovin/impl/es;
 
-    .line 54
+    .line 57
     invoke-static {v0, p2, p3}, Lcom/applovin/impl/kq;->a(Lcom/applovin/impl/es;Lcom/applovin/impl/eq;Lcom/applovin/impl/sdk/j;)Lcom/applovin/impl/kq;
 
     move-result-object v0
 
     if-eqz v0, :cond_4
 
-    .line 55
+    .line 58
     invoke-interface {p1, v0}, Ljava/util/Set;->add(Ljava/lang/Object;)Z
 
     goto :goto_0
@@ -908,7 +912,7 @@
     :cond_5
     return-void
 
-    .line 56
+    .line 59
     :cond_6
     new-instance p0, Ljava/lang/IllegalArgumentException;
 
@@ -1067,7 +1071,7 @@
 
     return v0
 
-    .line 31
+    .line 32
     :cond_0
     invoke-virtual {p0}, Lcom/applovin/impl/aq;->l1()Lcom/applovin/impl/dq;
 
@@ -1075,14 +1079,14 @@
 
     if-eqz p0, :cond_2
 
-    .line 32
+    .line 33
     invoke-virtual {p0}, Lcom/applovin/impl/dq;->e()Lcom/applovin/impl/iq;
 
     move-result-object p0
 
     if-eqz p0, :cond_2
 
-    .line 33
+    .line 34
     invoke-virtual {p0}, Lcom/applovin/impl/iq;->c()Landroid/net/Uri;
 
     move-result-object v1
@@ -1111,9 +1115,9 @@
 
     if-eqz p0, :cond_1
 
+    .line 35
     const-string v0, "InLine"
 
-    .line 34
     invoke-virtual {p0, v0}, Lcom/applovin/impl/es;->b(Ljava/lang/String;)Lcom/applovin/impl/es;
 
     move-result-object p0
@@ -1130,7 +1134,7 @@
     :goto_0
     return p0
 
-    .line 35
+    .line 36
     :cond_1
     new-instance p0, Ljava/lang/IllegalArgumentException;
 
@@ -1144,9 +1148,9 @@
 .method private static b()Ljava/lang/String;
     .locals 2
 
+    .line 6
     sget-object v0, Lcom/applovin/impl/mq;->a:Ljava/text/DateFormat;
 
-    .line 6
     invoke-static {}, Ljava/util/TimeZone;->getDefault()Ljava/util/TimeZone;
 
     move-result-object v1
@@ -1207,9 +1211,9 @@
 
     if-eqz p0, :cond_1
 
+    .line 4
     const-string v0, "Wrapper"
 
-    .line 4
     invoke-virtual {p0, v0}, Lcom/applovin/impl/es;->b(Ljava/lang/String;)Lcom/applovin/impl/es;
 
     move-result-object p0

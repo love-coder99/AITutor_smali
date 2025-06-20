@@ -232,7 +232,7 @@
 
     .line 81
     .line 82
-    invoke-static {p4, p1}, Landroidx/compose/foundation/text/modifiers/f;->v(Lorg/json/JSONObject;Ljava/lang/String;)Lorg/json/JSONArray;
+    invoke-static {p1, p4}, Lcom/android/billingclient/api/a;->h(Ljava/lang/String;Lorg/json/JSONObject;)Lorg/json/JSONArray;
 
     .line 83
     .line 84
@@ -386,17 +386,17 @@
 
     if-ne p1, v0, :cond_1
 
+    .line 10
     iget-object p1, p0, Lcom/applovin/impl/wm;->q:Ljava/lang/Object;
 
-    .line 10
     monitor-enter p1
 
     if-eqz p2, :cond_0
 
+    .line 11
     :try_start_0
     iget-object p2, p0, Lcom/applovin/impl/wm;->p:Ljava/util/Queue;
 
-    .line 11
     invoke-interface {p2}, Ljava/util/Queue;->peek()Ljava/lang/Object;
 
     move-result-object p2
@@ -408,10 +408,10 @@
 
     goto :goto_1
 
+    .line 12
     :cond_0
     iget-object p2, p0, Lcom/applovin/impl/wm;->p:Ljava/util/Queue;
 
-    .line 12
     invoke-interface {p2}, Ljava/util/Queue;->poll()Ljava/lang/Object;
 
     move-result-object p2
@@ -433,18 +433,18 @@
 
     throw p2
 
+    .line 16
     :cond_1
     iget-object p1, p0, Lcom/applovin/impl/wm;->o:Ljava/lang/Object;
 
-    .line 16
     monitor-enter p1
 
     if-eqz p2, :cond_2
 
+    .line 17
     :try_start_1
     iget-object p2, p0, Lcom/applovin/impl/wm;->n:Ljava/util/Queue;
 
-    .line 17
     invoke-interface {p2}, Ljava/util/Queue;->peek()Ljava/lang/Object;
 
     move-result-object p2
@@ -456,10 +456,10 @@
 
     goto :goto_3
 
+    .line 18
     :cond_2
     iget-object p2, p0, Lcom/applovin/impl/wm;->n:Ljava/util/Queue;
 
-    .line 18
     invoke-interface {p2}, Ljava/util/Queue;->poll()Ljava/lang/Object;
 
     move-result-object p2
@@ -512,13 +512,13 @@
 .method private a(Lcom/applovin/impl/fe;Lcom/applovin/impl/fe;)V
     .locals 10
 
+    .line 22
     iget-object v0, p0, Lcom/applovin/impl/wm;->w:Ljava/util/concurrent/atomic/AtomicBoolean;
 
     const/4 v1, 0x0
 
     const/4 v2, 0x1
 
-    .line 22
     invoke-virtual {v0, v1, v2}, Ljava/util/concurrent/atomic/AtomicBoolean;->compareAndSet(ZZ)Z
 
     move-result v0
@@ -534,9 +534,9 @@
     .line 24
     invoke-direct {p0}, Lcom/applovin/impl/wm;->g()V
 
+    .line 25
     iget-object v0, p0, Lcom/applovin/impl/yl;->a:Lcom/applovin/impl/sdk/j;
 
-    .line 25
     invoke-virtual {v0}, Lcom/applovin/impl/sdk/j;->S()Lcom/applovin/impl/sdk/o;
 
     move-result-object v0
@@ -568,7 +568,7 @@
     const-string v2, "ms from "
 
     .line 28
-    invoke-static {v1, v6, v7, v2}, Lj0/d;->r(Ljava/lang/String;JLjava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-static {v1, v2, v6, v7}, Landroidx/compose/runtime/a0;->u(Ljava/lang/String;Ljava/lang/String;J)Ljava/lang/StringBuilder;
 
     move-result-object v1
 
@@ -617,9 +617,9 @@
 
     invoke-virtual {p1, p2}, Lcom/applovin/impl/fe;->a(Lcom/applovin/mediation/MaxAdWaterfallInfo;)V
 
+    .line 31
     iget-object p2, p0, Lcom/applovin/impl/wm;->k:Lcom/applovin/impl/mediation/ads/a$a;
 
-    .line 31
     invoke-static {p2, p1}, Lcom/applovin/impl/fc;->f(Lcom/applovin/mediation/MaxAdListener;Lcom/applovin/mediation/MaxAd;)V
 
     return-void
@@ -663,9 +663,9 @@
 
     invoke-direct/range {v0 .. v8}, Lcom/applovin/impl/mediation/MaxNetworkResponseInfoImpl;-><init>(Lcom/applovin/mediation/MaxNetworkResponseInfo$AdLoadState;Lcom/applovin/mediation/MaxMediatedNetworkInfo;Landroid/os/Bundle;ZJLjava/lang/String;Lcom/applovin/mediation/MaxError;)V
 
+    .line 75
     iget-object p1, p0, Lcom/applovin/impl/wm;->t:Ljava/util/List;
 
-    .line 75
     invoke-interface {p1, v9}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
     return-void
@@ -710,13 +710,13 @@
 .method private a(Lcom/applovin/mediation/MaxError;)V
     .locals 13
 
+    .line 36
     iget-object v0, p0, Lcom/applovin/impl/wm;->w:Ljava/util/concurrent/atomic/AtomicBoolean;
 
     const/4 v1, 0x1
 
     const/4 v2, 0x0
 
-    .line 36
     invoke-virtual {v0, v2, v1}, Ljava/util/concurrent/atomic/AtomicBoolean;->compareAndSet(ZZ)Z
 
     move-result v0
@@ -735,9 +735,9 @@
 
     if-ne v0, v1, :cond_1
 
+    .line 38
     iget-object v0, p0, Lcom/applovin/impl/yl;->a:Lcom/applovin/impl/sdk/j;
 
-    .line 38
     invoke-virtual {v0}, Lcom/applovin/impl/sdk/j;->C()Lcom/applovin/impl/ca;
 
     move-result-object v0
@@ -758,9 +758,9 @@
 
     if-ne v0, v1, :cond_2
 
+    .line 40
     iget-object v0, p0, Lcom/applovin/impl/yl;->a:Lcom/applovin/impl/sdk/j;
 
-    .line 40
     invoke-virtual {v0}, Lcom/applovin/impl/sdk/j;->C()Lcom/applovin/impl/ca;
 
     move-result-object v0
@@ -771,10 +771,10 @@
 
     goto :goto_0
 
+    .line 41
     :cond_2
     iget-object v0, p0, Lcom/applovin/impl/yl;->a:Lcom/applovin/impl/sdk/j;
 
-    .line 41
     invoke-virtual {v0}, Lcom/applovin/impl/sdk/j;->C()Lcom/applovin/impl/ca;
 
     move-result-object v0
@@ -795,9 +795,9 @@
 
     invoke-direct {v0, v1}, Ljava/util/ArrayList;-><init>(I)V
 
+    .line 43
     iget-object v1, p0, Lcom/applovin/impl/wm;->t:Ljava/util/List;
 
-    .line 43
     invoke-interface {v1}, Ljava/util/List;->iterator()Ljava/util/Iterator;
 
     move-result-object v1
@@ -879,9 +879,9 @@
 
     invoke-virtual {v1, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    .line 51
     const-string v4, "\n..code: "
 
-    .line 51
     invoke-virtual {v1, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     .line 52
@@ -895,9 +895,9 @@
 
     invoke-virtual {v1, v4}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
+    .line 53
     const-string v4, "\n..message: "
 
-    .line 53
     invoke-virtual {v1, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     .line 54
@@ -911,9 +911,9 @@
 
     invoke-virtual {v1, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    .line 55
     const-string v3, "\n"
 
-    .line 55
     invoke-virtual {v1, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     goto :goto_2
@@ -956,13 +956,13 @@
     const-string v3, "ms for "
 
     .line 59
-    invoke-static {v2, v8, v9, v3}, Lj0/d;->r(Ljava/lang/String;JLjava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-static {v2, v3, v8, v9}, Landroidx/compose/runtime/a0;->u(Ljava/lang/String;Ljava/lang/String;J)Ljava/lang/StringBuilder;
 
     move-result-object v2
 
+    .line 60
     iget-object v3, p0, Lcom/applovin/impl/wm;->i:Lcom/applovin/mediation/MaxAdFormat;
 
-    .line 60
     invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 
     const-string v3, " ad unit "
@@ -985,6 +985,7 @@
 
     invoke-virtual {v0, v1, v2}, Lcom/applovin/impl/sdk/n;->d(Ljava/lang/String;Ljava/lang/String;)V
 
+    .line 61
     :cond_7
     iget-object v0, p0, Lcom/applovin/impl/wm;->j:Lorg/json/JSONObject;
 
@@ -992,7 +993,6 @@
 
     const/4 v2, 0x0
 
-    .line 61
     invoke-static {v0, v1, v2}, Lcom/applovin/impl/sdk/utils/JsonUtils;->getJSONArray(Lorg/json/JSONObject;Ljava/lang/String;Lorg/json/JSONArray;)Lorg/json/JSONArray;
 
     move-result-object v0
@@ -1006,20 +1006,20 @@
 
     iget-object v3, p0, Lcom/applovin/impl/wm;->j:Lorg/json/JSONObject;
 
+    .line 63
     const-string v4, "waterfall_name"
 
     const-string v5, ""
 
-    .line 63
     invoke-static {v3, v4, v5}, Lcom/applovin/impl/sdk/utils/JsonUtils;->getString(Lorg/json/JSONObject;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v6
 
     iget-object v3, p0, Lcom/applovin/impl/wm;->j:Lorg/json/JSONObject;
 
+    .line 64
     const-string v4, "waterfall_test_name"
 
-    .line 64
     invoke-static {v3, v4, v5}, Lcom/applovin/impl/sdk/utils/JsonUtils;->getString(Lorg/json/JSONObject;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v7
@@ -1044,11 +1044,11 @@
     .line 66
     invoke-virtual {v1, v2}, Lcom/applovin/impl/mediation/MaxErrorImpl;->setWaterfall(Lcom/applovin/mediation/MaxAdWaterfallInfo;)V
 
+    .line 67
     iget-object v0, p0, Lcom/applovin/impl/wm;->k:Lcom/applovin/impl/mediation/ads/a$a;
 
     iget-object v1, p0, Lcom/applovin/impl/wm;->h:Ljava/lang/String;
 
-    .line 67
     invoke-static {v0, v1, p1}, Lcom/applovin/impl/fc;->a(Lcom/applovin/mediation/MaxAdListener;Ljava/lang/String;Lcom/applovin/mediation/MaxError;)V
 
     return-void
@@ -1137,9 +1137,9 @@
 
     if-ne v0, p1, :cond_0
 
+    .line 7
     iget-object p1, p0, Lcom/applovin/impl/wm;->u:Ljava/util/concurrent/atomic/AtomicBoolean;
 
-    .line 7
     invoke-virtual {p1, v2, v1}, Ljava/util/concurrent/atomic/AtomicBoolean;->compareAndSet(ZZ)Z
 
     goto :goto_0
@@ -1150,9 +1150,9 @@
 
     if-ne v0, p1, :cond_1
 
+    .line 9
     iget-object p1, p0, Lcom/applovin/impl/wm;->v:Ljava/util/concurrent/atomic/AtomicBoolean;
 
-    .line 9
     invoke-virtual {p1, v2, v1}, Ljava/util/concurrent/atomic/AtomicBoolean;->compareAndSet(ZZ)Z
 
     :cond_1
@@ -1245,9 +1245,9 @@
 
     invoke-direct {v1, p0, v0, p1, v2}, Lcom/applovin/impl/wm$b;-><init>(Lcom/applovin/impl/wm;Lcom/applovin/impl/fe;Lcom/applovin/impl/wm$c;Lcom/applovin/impl/wm$a;)V
 
+    .line 5
     iget-object p1, p0, Lcom/applovin/impl/yl;->a:Lcom/applovin/impl/sdk/j;
 
-    .line 5
     invoke-virtual {p1}, Lcom/applovin/impl/sdk/j;->i0()Lcom/applovin/impl/tm;
 
     move-result-object p1
@@ -1273,18 +1273,19 @@
 .method private synthetic e()V
     .locals 3
 
+    .line 2
     iget-object v0, p0, Lcom/applovin/impl/yl;->a:Lcom/applovin/impl/sdk/j;
 
-    .line 2
+    .line 3
     invoke-virtual {v0}, Lcom/applovin/impl/sdk/j;->m0()Landroid/app/Activity;
 
     move-result-object v0
 
+    .line 4
     const-string v1, "MAX SDK Not Initialized In Test Mode"
 
     const-string v2, "Test ads may not load. Please force close and restart the app if you experience issues."
 
-    .line 3
     invoke-static {v1, v2, v0}, Lcom/applovin/impl/yp;->a(Ljava/lang/String;Ljava/lang/String;Landroid/content/Context;)V
 
     return-void
@@ -1302,18 +1303,20 @@
 .method private f()V
     .locals 1
 
+    .line 2
     iget-object v0, p0, Lcom/applovin/impl/wm;->y:Lcom/applovin/impl/go;
 
     if-nez v0, :cond_0
 
     return-void
 
-    .line 2
+    .line 3
     :cond_0
     invoke-virtual {v0}, Lcom/applovin/impl/go;->a()V
 
     const/4 v0, 0x0
 
+    .line 4
     iput-object v0, p0, Lcom/applovin/impl/wm;->y:Lcom/applovin/impl/go;
 
     return-void
@@ -1331,14 +1334,14 @@
 .method private g()V
     .locals 1
 
+    .line 2
     iget-object v0, p0, Lcom/applovin/impl/wm;->n:Ljava/util/Queue;
 
-    .line 2
     invoke-direct {p0, v0}, Lcom/applovin/impl/wm;->a(Ljava/util/Queue;)V
 
+    .line 3
     iget-object v0, p0, Lcom/applovin/impl/wm;->p:Ljava/util/Queue;
 
-    .line 3
     invoke-direct {p0, v0}, Lcom/applovin/impl/wm;->a(Ljava/util/Queue;)V
 
     return-void
@@ -1397,7 +1400,7 @@
     return-void
 .end method
 
-.method public static synthetic m(Lcom/applovin/impl/wm;Lcom/applovin/mediation/MaxError;)V
+.method public static synthetic m(Lcom/applovin/impl/wm;Lcom/applovin/impl/mediation/MaxErrorImpl;)V
     .locals 0
 
     .line 1
@@ -1409,7 +1412,7 @@
 
 # virtual methods
 .method public run()V
-    .locals 9
+    .locals 8
 
     .line 1
     invoke-static {}, Landroid/os/SystemClock;->elapsedRealtime()J
@@ -1443,40 +1446,40 @@
     move-result v0
 
     .line 16
-    const/4 v1, 0x1
-
-    .line 17
     if-eqz v0, :cond_0
 
+    .line 17
     .line 18
-    .line 19
     iget-object v0, p0, Lcom/applovin/impl/yl;->a:Lcom/applovin/impl/sdk/j;
 
+    .line 19
     .line 20
-    .line 21
     invoke-virtual {v0}, Lcom/applovin/impl/sdk/j;->k0()Lcom/applovin/impl/wn;
 
+    .line 21
     .line 22
     .line 23
-    .line 24
     move-result-object v0
 
-    .line 25
+    .line 24
     invoke-virtual {v0}, Lcom/applovin/impl/wn;->c()Z
 
+    .line 25
     .line 26
     .line 27
-    .line 28
     move-result v0
 
-    .line 29
+    .line 28
     if-nez v0, :cond_0
 
+    .line 29
     .line 30
-    .line 31
     sget-object v0, Lcom/applovin/impl/wm;->z:Ljava/util/concurrent/atomic/AtomicBoolean;
 
+    .line 31
     .line 32
+    const/4 v1, 0x1
+
     .line 33
     invoke-virtual {v0, v2, v1}, Ljava/util/concurrent/atomic/AtomicBoolean;->compareAndSet(ZZ)Z
 
@@ -1490,15 +1493,15 @@
 
     .line 38
     .line 39
-    new-instance v0, Lcom/applovin/impl/wt;
+    new-instance v0, Lcom/applovin/impl/P0;
 
     .line 40
     .line 41
-    const/16 v2, 0x15
+    const/16 v1, 0x15
 
     .line 42
     .line 43
-    invoke-direct {v0, p0, v2}, Lcom/applovin/impl/wt;-><init>(Ljava/lang/Object;I)V
+    invoke-direct {v0, p0, v1}, Lcom/applovin/impl/P0;-><init>(Ljava/lang/Object;I)V
 
     .line 44
     .line 45
@@ -1513,7 +1516,7 @@
 
     .line 50
     .line 51
-    const-string v2, " ad unit "
+    const-string v1, " ad unit "
 
     .line 52
     .line 53
@@ -1537,63 +1540,63 @@
 
     .line 62
     .line 63
-    iget-object v3, p0, Lcom/applovin/impl/yl;->b:Ljava/lang/String;
+    iget-object v2, p0, Lcom/applovin/impl/yl;->b:Ljava/lang/String;
 
     .line 64
     .line 65
-    new-instance v4, Ljava/lang/StringBuilder;
+    new-instance v3, Ljava/lang/StringBuilder;
 
     .line 66
     .line 67
-    const-string v5, "No ads were returned from the server for "
+    const-string v4, "No ads were returned from the server for "
 
     .line 68
     .line 69
-    invoke-direct {v4, v5}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+    invoke-direct {v3, v4}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
 
     .line 70
     .line 71
     .line 72
-    iget-object v5, p0, Lcom/applovin/impl/wm;->i:Lcom/applovin/mediation/MaxAdFormat;
+    iget-object v4, p0, Lcom/applovin/impl/wm;->i:Lcom/applovin/mediation/MaxAdFormat;
 
     .line 73
     .line 74
-    invoke-virtual {v5}, Lcom/applovin/mediation/MaxAdFormat;->getLabel()Ljava/lang/String;
+    invoke-virtual {v4}, Lcom/applovin/mediation/MaxAdFormat;->getLabel()Ljava/lang/String;
 
     .line 75
     .line 76
     .line 77
-    move-result-object v5
+    move-result-object v4
 
     .line 78
-    invoke-virtual {v4, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v3, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     .line 79
     .line 80
     .line 81
-    invoke-virtual {v4, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v3, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     .line 82
     .line 83
     .line 84
-    iget-object v2, p0, Lcom/applovin/impl/wm;->h:Ljava/lang/String;
+    iget-object v1, p0, Lcom/applovin/impl/wm;->h:Ljava/lang/String;
 
     .line 85
     .line 86
-    invoke-virtual {v4, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v3, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     .line 87
     .line 88
     .line 89
-    invoke-virtual {v4}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    invoke-virtual {v3}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
     .line 90
     .line 91
     .line 92
-    move-result-object v2
+    move-result-object v1
 
     .line 93
-    invoke-virtual {v0, v3, v2}, Lcom/applovin/impl/sdk/n;->k(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-virtual {v0, v2, v1}, Lcom/applovin/impl/sdk/n;->k(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 94
     .line 95
@@ -1603,19 +1606,19 @@
 
     .line 97
     .line 98
-    iget-object v2, p0, Lcom/applovin/impl/wm;->i:Lcom/applovin/mediation/MaxAdFormat;
+    iget-object v1, p0, Lcom/applovin/impl/wm;->i:Lcom/applovin/mediation/MaxAdFormat;
 
     .line 99
     .line 100
-    iget-object v3, p0, Lcom/applovin/impl/wm;->j:Lorg/json/JSONObject;
+    iget-object v2, p0, Lcom/applovin/impl/wm;->j:Lorg/json/JSONObject;
 
     .line 101
     .line 102
-    iget-object v4, p0, Lcom/applovin/impl/yl;->a:Lcom/applovin/impl/sdk/j;
+    iget-object v3, p0, Lcom/applovin/impl/yl;->a:Lcom/applovin/impl/sdk/j;
 
     .line 103
     .line 104
-    invoke-static {v0, v2, v3, v4}, Lcom/applovin/impl/yp;->a(Ljava/lang/String;Lcom/applovin/mediation/MaxAdFormat;Lorg/json/JSONObject;Lcom/applovin/impl/sdk/j;)V
+    invoke-static {v0, v1, v2, v3}, Lcom/applovin/impl/yp;->a(Ljava/lang/String;Lcom/applovin/mediation/MaxAdFormat;Lorg/json/JSONObject;Lcom/applovin/impl/sdk/j;)V
 
     .line 105
     .line 106
@@ -1624,20 +1627,20 @@
 
     .line 108
     .line 109
-    new-instance v2, Lorg/json/JSONObject;
+    new-instance v1, Lorg/json/JSONObject;
 
     .line 110
     .line 111
-    invoke-direct {v2}, Lorg/json/JSONObject;-><init>()V
+    invoke-direct {v1}, Lorg/json/JSONObject;-><init>()V
 
     .line 112
     .line 113
     .line 114
-    const-string v3, "settings"
+    const-string v2, "settings"
 
     .line 115
     .line 116
-    invoke-static {v0, v3, v2}, Lcom/applovin/impl/sdk/utils/JsonUtils;->getJSONObject(Lorg/json/JSONObject;Ljava/lang/String;Lorg/json/JSONObject;)Lorg/json/JSONObject;
+    invoke-static {v0, v2, v1}, Lcom/applovin/impl/sdk/utils/JsonUtils;->getJSONObject(Lorg/json/JSONObject;Ljava/lang/String;Lorg/json/JSONObject;)Lorg/json/JSONObject;
 
     .line 117
     .line 118
@@ -1645,373 +1648,376 @@
     move-result-object v0
 
     .line 120
-    const-string v2, "alfdcs"
+    const-string v1, "alfdcs"
 
     .line 121
     .line 122
-    const-wide/16 v3, 0x0
+    const-wide/16 v2, 0x0
 
     .line 123
     .line 124
-    invoke-static {v0, v2, v3, v4}, Lcom/applovin/impl/sdk/utils/JsonUtils;->getLong(Lorg/json/JSONObject;Ljava/lang/String;J)J
+    invoke-static {v0, v1, v2, v3}, Lcom/applovin/impl/sdk/utils/JsonUtils;->getLong(Lorg/json/JSONObject;Ljava/lang/String;J)J
 
     .line 125
     .line 126
     .line 127
-    move-result-wide v5
+    move-result-wide v4
 
     .line 128
-    iget-object v2, p0, Lcom/applovin/impl/wm;->j:Lorg/json/JSONObject;
+    iget-object v1, p0, Lcom/applovin/impl/wm;->j:Lorg/json/JSONObject;
 
     .line 129
     .line 130
-    iget-object v7, p0, Lcom/applovin/impl/wm;->h:Ljava/lang/String;
+    iget-object v6, p0, Lcom/applovin/impl/wm;->h:Ljava/lang/String;
 
     .line 131
     .line 132
-    iget-object v8, p0, Lcom/applovin/impl/yl;->a:Lcom/applovin/impl/sdk/j;
+    iget-object v7, p0, Lcom/applovin/impl/yl;->a:Lcom/applovin/impl/sdk/j;
 
     .line 133
     .line 134
-    invoke-static {v2, v7, v8}, Lcom/applovin/impl/ze;->a(Lorg/json/JSONObject;Ljava/lang/String;Lcom/applovin/impl/sdk/j;)Z
+    invoke-static {v1, v6, v7}, Lcom/applovin/impl/ze;->a(Lorg/json/JSONObject;Ljava/lang/String;Lcom/applovin/impl/sdk/j;)Z
 
     .line 135
     .line 136
     .line 137
-    move-result v2
+    move-result v1
 
     .line 138
-    if-eqz v2, :cond_2
+    if-eqz v1, :cond_2
 
     .line 139
     .line 140
-    new-instance v2, Ljava/lang/StringBuilder;
+    new-instance v1, Ljava/lang/StringBuilder;
 
     .line 141
     .line 142
-    const-string v7, "Ad Unit ID "
+    const-string v6, "Ad Unit ID "
 
     .line 143
     .line 144
-    invoke-direct {v2, v7}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+    invoke-direct {v1, v6}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
 
     .line 145
     .line 146
     .line 147
-    iget-object v7, p0, Lcom/applovin/impl/wm;->h:Ljava/lang/String;
+    iget-object v6, p0, Lcom/applovin/impl/wm;->h:Ljava/lang/String;
 
     .line 148
     .line 149
-    const-string v8, " is invalid or disabled.\nMake sure to use an Ad Unit ID from the MAX dashboard that is enabled and configured for the current application.\nFor more information, see https://developers.applovin.com/en/getting-started#step-2-create-an-ad-unit\nNote: New ad units cannot load ads until 30-60 minutes after they are created"
+    const-string v7, " is invalid or disabled.\nMake sure to use an Ad Unit ID from the MAX dashboard that is enabled and configured for the current application.\nFor more information, see https://developers.applovin.com/en/getting-started#step-2-create-an-ad-unit\nNote: New ad units cannot load ads until 30-60 minutes after they are created"
 
     .line 150
     .line 151
-    invoke-static {v2, v7, v8}, Landroid/support/v4/media/session/a;->I(Ljava/lang/StringBuilder;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v1, v6, v7}, LB/u;->w(Ljava/lang/StringBuilder;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     .line 152
     .line 153
     .line 154
-    move-result-object v2
+    move-result-object v1
 
     .line 155
-    new-instance v7, Lcom/applovin/impl/mediation/MaxErrorImpl;
+    new-instance v6, Lcom/applovin/impl/mediation/MaxErrorImpl;
 
     .line 156
     .line 157
-    const/16 v8, -0x15e3
+    const/16 v7, -0x15e3
 
     .line 158
     .line 159
-    invoke-direct {v7, v8, v2}, Lcom/applovin/impl/mediation/MaxErrorImpl;-><init>(ILjava/lang/String;)V
+    invoke-direct {v6, v7, v1}, Lcom/applovin/impl/mediation/MaxErrorImpl;-><init>(ILjava/lang/String;)V
 
     .line 160
     .line 161
     .line 162
-    iget-object v2, p0, Lcom/applovin/impl/yl;->a:Lcom/applovin/impl/sdk/j;
+    iget-object v1, p0, Lcom/applovin/impl/yl;->a:Lcom/applovin/impl/sdk/j;
 
     .line 163
     .line 164
-    invoke-static {v2}, Lcom/applovin/impl/yp;->c(Lcom/applovin/impl/sdk/j;)Z
+    invoke-static {v1}, Lcom/applovin/impl/yp;->c(Lcom/applovin/impl/sdk/j;)Z
 
     .line 165
     .line 166
     .line 167
-    move-result v2
+    move-result v1
 
     .line 168
-    if-eqz v2, :cond_3
+    if-eqz v1, :cond_3
 
     .line 169
     .line 170
-    iget-object v2, p0, Lcom/applovin/impl/yl;->a:Lcom/applovin/impl/sdk/j;
+    iget-object v1, p0, Lcom/applovin/impl/yl;->a:Lcom/applovin/impl/sdk/j;
 
     .line 171
     .line 172
-    sget-object v8, Lcom/applovin/impl/sj;->g6:Lcom/applovin/impl/sj;
+    sget-object v7, Lcom/applovin/impl/sj;->g6:Lcom/applovin/impl/sj;
 
     .line 173
     .line 174
-    invoke-virtual {v2, v8}, Lcom/applovin/impl/sdk/j;->a(Lcom/applovin/impl/sj;)Ljava/lang/Object;
+    invoke-virtual {v1, v7}, Lcom/applovin/impl/sdk/j;->a(Lcom/applovin/impl/sj;)Ljava/lang/Object;
 
     .line 175
     .line 176
     .line 177
-    move-result-object v2
+    move-result-object v1
 
     .line 178
-    check-cast v2, Ljava/lang/Boolean;
+    check-cast v1, Ljava/lang/Boolean;
 
     .line 179
     .line 180
-    invoke-virtual {v2}, Ljava/lang/Boolean;->booleanValue()Z
+    invoke-virtual {v1}, Ljava/lang/Boolean;->booleanValue()Z
 
     .line 181
     .line 182
     .line 183
-    move-result v2
+    move-result v1
 
     .line 184
-    if-eqz v2, :cond_3
+    if-eqz v1, :cond_3
 
     .line 185
     .line 186
-    move-wide v5, v3
+    move-wide v4, v2
 
     .line 187
     goto :goto_0
 
     .line 188
     :cond_2
-    new-instance v7, Lcom/applovin/impl/mediation/MaxErrorImpl;
+    new-instance v6, Lcom/applovin/impl/mediation/MaxErrorImpl;
 
     .line 189
     .line 190
-    const/16 v2, 0xcc
+    const/16 v1, 0xcc
 
     .line 191
     .line 192
-    const-string v8, "MAX returned no eligible ads from any mediated networks for this app/device"
+    const-string v7, "MAX returned no eligible ads from any mediated networks for this app/device"
 
     .line 193
     .line 194
-    invoke-direct {v7, v2, v8}, Lcom/applovin/impl/mediation/MaxErrorImpl;-><init>(ILjava/lang/String;)V
+    invoke-direct {v6, v1, v7}, Lcom/applovin/impl/mediation/MaxErrorImpl;-><init>(ILjava/lang/String;)V
 
     .line 195
     .line 196
     .line 197
     :cond_3
     :goto_0
-    cmp-long v2, v5, v3
+    cmp-long v1, v4, v2
 
     .line 198
     .line 199
-    if-lez v2, :cond_5
+    if-lez v1, :cond_5
 
     .line 200
     .line 201
-    sget-object v2, Ljava/util/concurrent/TimeUnit;->SECONDS:Ljava/util/concurrent/TimeUnit;
+    sget-object v1, Ljava/util/concurrent/TimeUnit;->SECONDS:Ljava/util/concurrent/TimeUnit;
 
     .line 202
     .line 203
-    invoke-virtual {v2, v5, v6}, Ljava/util/concurrent/TimeUnit;->toMillis(J)J
+    invoke-virtual {v1, v4, v5}, Ljava/util/concurrent/TimeUnit;->toMillis(J)J
 
     .line 204
     .line 205
     .line 206
-    move-result-wide v2
+    move-result-wide v1
 
     .line 207
-    new-instance v4, Lcom/applovin/impl/sw;
+    new-instance v3, Lcom/applovin/impl/I3;
 
     .line 208
     .line 209
-    invoke-direct {v4, p0, v1, v7}, Lcom/applovin/impl/sw;-><init>(Ljava/lang/Object;ILjava/lang/Object;)V
+    const/4 v4, 0x1
 
     .line 210
+    invoke-direct {v3, p0, v4, v6}, Lcom/applovin/impl/I3;-><init>(Ljava/lang/Object;ILjava/lang/Object;)V
+
     .line 211
     .line 212
-    sget-object v1, Ljava/lang/Boolean;->FALSE:Ljava/lang/Boolean;
-
     .line 213
+    sget-object v4, Ljava/lang/Boolean;->FALSE:Ljava/lang/Boolean;
+
     .line 214
+    .line 215
     const-string v5, "alfdcs_iba"
 
-    .line 215
     .line 216
-    invoke-static {v0, v5, v1}, Lcom/applovin/impl/sdk/utils/JsonUtils;->getBoolean(Lorg/json/JSONObject;Ljava/lang/String;Ljava/lang/Boolean;)Ljava/lang/Boolean;
-
     .line 217
+    invoke-static {v0, v5, v4}, Lcom/applovin/impl/sdk/utils/JsonUtils;->getBoolean(Lorg/json/JSONObject;Ljava/lang/String;Ljava/lang/Boolean;)Ljava/lang/Boolean;
+
     .line 218
     .line 219
+    .line 220
     move-result-object v0
 
-    .line 220
+    .line 221
     invoke-virtual {v0}, Ljava/lang/Boolean;->booleanValue()Z
 
-    .line 221
     .line 222
     .line 223
+    .line 224
     move-result v0
 
-    .line 224
+    .line 225
     if-eqz v0, :cond_4
 
-    .line 225
     .line 226
+    .line 227
     iget-object v0, p0, Lcom/applovin/impl/yl;->a:Lcom/applovin/impl/sdk/j;
 
-    .line 227
     .line 228
-    invoke-static {v2, v3, v0, v4}, Lcom/applovin/impl/x1;->a(JLcom/applovin/impl/sdk/j;Ljava/lang/Runnable;)Lcom/applovin/impl/x1;
-
     .line 229
+    invoke-static {v1, v2, v0, v3}, Lcom/applovin/impl/x1;->a(JLcom/applovin/impl/sdk/j;Ljava/lang/Runnable;)Lcom/applovin/impl/x1;
+
     .line 230
     .line 231
-    goto :goto_1
-
     .line 232
-    :cond_4
-    invoke-static {v4, v2, v3}, Lcom/applovin/sdk/AppLovinSdkUtils;->runOnUiThreadDelayed(Ljava/lang/Runnable;J)V
+    goto :goto_1
 
     .line 233
+    :cond_4
+    invoke-static {v3, v1, v2}, Lcom/applovin/sdk/AppLovinSdkUtils;->runOnUiThreadDelayed(Ljava/lang/Runnable;J)V
+
     .line 234
     .line 235
+    .line 236
     goto :goto_1
 
-    .line 236
-    :cond_5
-    invoke-direct {p0, v7}, Lcom/applovin/impl/wm;->a(Lcom/applovin/mediation/MaxError;)V
-
     .line 237
+    :cond_5
+    invoke-direct {p0, v6}, Lcom/applovin/impl/wm;->a(Lcom/applovin/mediation/MaxError;)V
+
     .line 238
     .line 239
+    .line 240
     :goto_1
     return-void
 
-    .line 240
+    .line 241
     :cond_6
     invoke-static {}, Lcom/applovin/impl/sdk/n;->a()Z
 
-    .line 241
     .line 242
     .line 243
+    .line 244
     move-result v0
 
-    .line 244
+    .line 245
     if-eqz v0, :cond_7
 
-    .line 245
     .line 246
+    .line 247
     iget-object v0, p0, Lcom/applovin/impl/yl;->c:Lcom/applovin/impl/sdk/n;
 
-    .line 247
     .line 248
-    iget-object v1, p0, Lcom/applovin/impl/yl;->b:Ljava/lang/String;
-
     .line 249
+    iget-object v2, p0, Lcom/applovin/impl/yl;->b:Ljava/lang/String;
+
     .line 250
+    .line 251
     new-instance v3, Ljava/lang/StringBuilder;
 
-    .line 251
     .line 252
+    .line 253
     const-string v4, "Starting waterfall for "
 
-    .line 253
     .line 254
+    .line 255
     invoke-direct {v3, v4}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
 
-    .line 255
     .line 256
     .line 257
+    .line 258
     iget-object v4, p0, Lcom/applovin/impl/wm;->i:Lcom/applovin/mediation/MaxAdFormat;
 
-    .line 258
     .line 259
+    .line 260
     invoke-virtual {v4}, Lcom/applovin/mediation/MaxAdFormat;->getLabel()Ljava/lang/String;
 
-    .line 260
     .line 261
     .line 262
+    .line 263
     move-result-object v4
 
-    .line 263
+    .line 264
     invoke-virtual {v3, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    .line 264
     .line 265
     .line 266
-    invoke-virtual {v3, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
     .line 267
+    invoke-virtual {v3, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
     .line 268
     .line 269
-    iget-object v2, p0, Lcom/applovin/impl/wm;->h:Ljava/lang/String;
-
     .line 270
-    .line 271
-    invoke-virtual {v3, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    iget-object v1, p0, Lcom/applovin/impl/wm;->h:Ljava/lang/String;
 
+    .line 271
     .line 272
+    invoke-virtual {v3, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
     .line 273
     .line 274
-    const-string v2, " with "
-
     .line 275
-    .line 276
-    invoke-virtual {v3, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    const-string v1, " with "
 
+    .line 276
     .line 277
+    invoke-virtual {v3, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
     .line 278
     .line 279
-    iget v2, p0, Lcom/applovin/impl/wm;->r:I
-
     .line 280
-    .line 281
-    invoke-virtual {v3, v2}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+    iget v1, p0, Lcom/applovin/impl/wm;->r:I
 
+    .line 281
     .line 282
+    invoke-virtual {v3, v1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+
     .line 283
     .line 284
-    const-string v2, " ad(s)..."
-
     .line 285
-    .line 286
-    invoke-virtual {v3, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    const-string v1, " ad(s)..."
 
+    .line 286
     .line 287
+    invoke-virtual {v3, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
     .line 288
     .line 289
+    .line 290
     invoke-virtual {v3}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
-    .line 290
     .line 291
     .line 292
-    move-result-object v2
-
     .line 293
-    invoke-virtual {v0, v1, v2}, Lcom/applovin/impl/sdk/n;->a(Ljava/lang/String;Ljava/lang/String;)V
+    move-result-object v1
 
     .line 294
+    invoke-virtual {v0, v2, v1}, Lcom/applovin/impl/sdk/n;->a(Ljava/lang/String;Ljava/lang/String;)V
+
     .line 295
     .line 296
+    .line 297
     :cond_7
     sget-object v0, Lcom/applovin/impl/wm$c;->b:Lcom/applovin/impl/wm$c;
 
-    .line 297
     .line 298
+    .line 299
     invoke-direct {p0, v0}, Lcom/applovin/impl/wm;->d(Lcom/applovin/impl/wm$c;)Z
 
-    .line 299
     .line 300
     .line 301
+    .line 302
     sget-object v0, Lcom/applovin/impl/wm$c;->a:Lcom/applovin/impl/wm$c;
 
-    .line 302
     .line 303
+    .line 304
     invoke-direct {p0, v0}, Lcom/applovin/impl/wm;->d(Lcom/applovin/impl/wm$c;)Z
 
-    .line 304
     .line 305
     .line 306
+    .line 307
     return-void
 .end method

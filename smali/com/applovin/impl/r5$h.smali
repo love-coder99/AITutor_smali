@@ -25,9 +25,9 @@
 .method private constructor <init>(Lcom/applovin/impl/r5;)V
     .locals 0
 
+    .line 1
     iput-object p1, p0, Lcom/applovin/impl/r5$h;->a:Lcom/applovin/impl/r5;
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -47,16 +47,16 @@
 .method public a(IJ)V
     .locals 10
 
+    .line 3
     iget-object v0, p0, Lcom/applovin/impl/r5$h;->a:Lcom/applovin/impl/r5;
 
-    .line 13
     invoke-static {v0}, Lcom/applovin/impl/r5;->c(Lcom/applovin/impl/r5;)Lcom/applovin/impl/r1$c;
 
     move-result-object v0
 
     if-eqz v0, :cond_0
 
-    .line 14
+    .line 4
     invoke-static {}, Landroid/os/SystemClock;->elapsedRealtime()J
 
     move-result-wide v0
@@ -69,9 +69,9 @@
 
     sub-long v8, v0, v2
 
+    .line 5
     iget-object v0, p0, Lcom/applovin/impl/r5$h;->a:Lcom/applovin/impl/r5;
 
-    .line 15
     invoke-static {v0}, Lcom/applovin/impl/r5;->c(Lcom/applovin/impl/r5;)Lcom/applovin/impl/r1$c;
 
     move-result-object v4
@@ -89,18 +89,18 @@
 .method public a(J)V
     .locals 1
 
+    .line 1
     iget-object v0, p0, Lcom/applovin/impl/r5$h;->a:Lcom/applovin/impl/r5;
 
-    .line 11
     invoke-static {v0}, Lcom/applovin/impl/r5;->c(Lcom/applovin/impl/r5;)Lcom/applovin/impl/r1$c;
 
     move-result-object v0
 
     if-eqz v0, :cond_0
 
+    .line 2
     iget-object v0, p0, Lcom/applovin/impl/r5$h;->a:Lcom/applovin/impl/r5;
 
-    .line 12
     invoke-static {v0}, Lcom/applovin/impl/r5;->c(Lcom/applovin/impl/r5;)Lcom/applovin/impl/r1$c;
 
     move-result-object v0
@@ -114,16 +114,17 @@
 .method public a(JJJJ)V
     .locals 2
 
+    .line 6
     const-string v0, "Spurious audio timestamp (frame position mismatch): "
 
     const-string v1, ", "
 
-    .line 1
-    invoke-static {v0, p1, p2, v1}, Lj0/d;->r(Ljava/lang/String;JLjava/lang/String;)Ljava/lang/StringBuilder;
+    .line 7
+    invoke-static {v0, v1, p1, p2}, Landroidx/compose/runtime/a0;->u(Ljava/lang/String;Ljava/lang/String;J)Ljava/lang/StringBuilder;
 
     move-result-object p1
 
-    .line 2
+    .line 8
     invoke-virtual {p1, p3, p4}, Ljava/lang/StringBuilder;->append(J)Ljava/lang/StringBuilder;
 
     invoke-virtual {p1, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
@@ -138,7 +139,7 @@
 
     iget-object p2, p0, Lcom/applovin/impl/r5$h;->a:Lcom/applovin/impl/r5;
 
-    .line 3
+    .line 9
     invoke-static {p2}, Lcom/applovin/impl/r5;->e(Lcom/applovin/impl/r5;)J
 
     move-result-wide p2
@@ -149,7 +150,7 @@
 
     iget-object p2, p0, Lcom/applovin/impl/r5$h;->a:Lcom/applovin/impl/r5;
 
-    .line 4
+    .line 10
     invoke-static {p2}, Lcom/applovin/impl/r5;->f(Lcom/applovin/impl/r5;)J
 
     move-result-wide p2
@@ -160,18 +161,19 @@
 
     move-result-object p1
 
+    .line 11
     sget-boolean p2, Lcom/applovin/impl/r5;->a0:Z
 
     if-nez p2, :cond_0
 
+    .line 12
     const-string p2, "DefaultAudioSink"
 
-    .line 5
     invoke-static {p2, p1}, Lcom/applovin/impl/oc;->d(Ljava/lang/String;Ljava/lang/String;)V
 
     return-void
 
-    .line 6
+    .line 13
     :cond_0
     new-instance p2, Lcom/applovin/impl/r5$e;
 
@@ -185,7 +187,7 @@
 .method public b(J)V
     .locals 2
 
-    .line 11
+    .line 13
     new-instance v0, Ljava/lang/StringBuilder;
 
     const-string v1, "Ignoring impossibly large audio latency: "
@@ -208,16 +210,17 @@
 .method public b(JJJJ)V
     .locals 2
 
+    .line 1
     const-string v0, "Spurious audio timestamp (system clock mismatch): "
 
     const-string v1, ", "
 
-    .line 1
-    invoke-static {v0, p1, p2, v1}, Lj0/d;->r(Ljava/lang/String;JLjava/lang/String;)Ljava/lang/StringBuilder;
+    .line 2
+    invoke-static {v0, v1, p1, p2}, Landroidx/compose/runtime/a0;->u(Ljava/lang/String;Ljava/lang/String;J)Ljava/lang/StringBuilder;
 
     move-result-object p1
 
-    .line 2
+    .line 3
     invoke-virtual {p1, p3, p4}, Ljava/lang/StringBuilder;->append(J)Ljava/lang/StringBuilder;
 
     invoke-virtual {p1, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
@@ -232,7 +235,7 @@
 
     iget-object p2, p0, Lcom/applovin/impl/r5$h;->a:Lcom/applovin/impl/r5;
 
-    .line 3
+    .line 4
     invoke-static {p2}, Lcom/applovin/impl/r5;->e(Lcom/applovin/impl/r5;)J
 
     move-result-wide p2
@@ -243,7 +246,7 @@
 
     iget-object p2, p0, Lcom/applovin/impl/r5$h;->a:Lcom/applovin/impl/r5;
 
-    .line 4
+    .line 5
     invoke-static {p2}, Lcom/applovin/impl/r5;->f(Lcom/applovin/impl/r5;)J
 
     move-result-wide p2
@@ -254,18 +257,19 @@
 
     move-result-object p1
 
+    .line 6
     sget-boolean p2, Lcom/applovin/impl/r5;->a0:Z
 
     if-nez p2, :cond_0
 
+    .line 7
     const-string p2, "DefaultAudioSink"
 
-    .line 5
     invoke-static {p2, p1}, Lcom/applovin/impl/oc;->d(Ljava/lang/String;Ljava/lang/String;)V
 
     return-void
 
-    .line 6
+    .line 8
     :cond_0
     new-instance p2, Lcom/applovin/impl/r5$e;
 

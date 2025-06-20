@@ -54,9 +54,9 @@
 .method public a(Ljava/lang/String;ILjava/lang/String;Lorg/json/JSONObject;)V
     .locals 0
 
+    .line 2
     iget-object p1, p0, Lcom/applovin/impl/gn$a;->a:Lcom/applovin/impl/gn;
 
-    .line 2
     invoke-virtual {p1, p2}, Lcom/applovin/impl/in;->a(I)V
 
     return-void
@@ -76,9 +76,9 @@
 .method public a(Ljava/lang/String;Lorg/json/JSONObject;I)V
     .locals 0
 
+    .line 4
     iget-object p1, p0, Lcom/applovin/impl/gn$a;->a:Lcom/applovin/impl/gn;
 
-    .line 4
     invoke-virtual {p1, p2}, Lcom/applovin/impl/gn;->b(Lorg/json/JSONObject;)V
 
     return-void

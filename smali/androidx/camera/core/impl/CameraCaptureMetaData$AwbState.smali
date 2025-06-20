@@ -32,134 +32,134 @@
     .locals 11
 
     .line 1
-    new-instance v0, Landroidx/camera/core/impl/CameraCaptureMetaData$AwbState;
+    const/4 v0, 0x4
 
     .line 2
+    const/4 v1, 0x3
+
     .line 3
-    const-string v1, "UNKNOWN"
+    const/4 v2, 0x2
 
     .line 4
+    const/4 v3, 0x1
+
     .line 5
-    const/4 v2, 0x0
+    const/4 v4, 0x0
 
     .line 6
-    invoke-direct {v0, v1, v2}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
+    new-instance v5, Landroidx/camera/core/impl/CameraCaptureMetaData$AwbState;
 
     .line 7
     .line 8
+    const-string v6, "UNKNOWN"
+
     .line 9
-    sput-object v0, Landroidx/camera/core/impl/CameraCaptureMetaData$AwbState;->UNKNOWN:Landroidx/camera/core/impl/CameraCaptureMetaData$AwbState;
-
     .line 10
-    .line 11
-    new-instance v1, Landroidx/camera/core/impl/CameraCaptureMetaData$AwbState;
+    invoke-direct {v5, v6, v4}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
 
+    .line 11
     .line 12
     .line 13
-    const-string v3, "INACTIVE"
+    sput-object v5, Landroidx/camera/core/impl/CameraCaptureMetaData$AwbState;->UNKNOWN:Landroidx/camera/core/impl/CameraCaptureMetaData$AwbState;
 
     .line 14
     .line 15
-    const/4 v4, 0x1
+    new-instance v6, Landroidx/camera/core/impl/CameraCaptureMetaData$AwbState;
 
     .line 16
-    invoke-direct {v1, v3, v4}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
-
     .line 17
+    const-string v7, "INACTIVE"
+
     .line 18
     .line 19
-    sput-object v1, Landroidx/camera/core/impl/CameraCaptureMetaData$AwbState;->INACTIVE:Landroidx/camera/core/impl/CameraCaptureMetaData$AwbState;
+    invoke-direct {v6, v7, v3}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
 
     .line 20
     .line 21
-    new-instance v3, Landroidx/camera/core/impl/CameraCaptureMetaData$AwbState;
-
     .line 22
+    sput-object v6, Landroidx/camera/core/impl/CameraCaptureMetaData$AwbState;->INACTIVE:Landroidx/camera/core/impl/CameraCaptureMetaData$AwbState;
+
     .line 23
-    const-string v5, "METERING"
-
     .line 24
-    .line 25
-    const/4 v6, 0x2
+    new-instance v7, Landroidx/camera/core/impl/CameraCaptureMetaData$AwbState;
 
+    .line 25
     .line 26
-    invoke-direct {v3, v5, v6}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
+    const-string v8, "METERING"
 
     .line 27
     .line 28
-    .line 29
-    sput-object v3, Landroidx/camera/core/impl/CameraCaptureMetaData$AwbState;->METERING:Landroidx/camera/core/impl/CameraCaptureMetaData$AwbState;
+    invoke-direct {v7, v8, v2}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
 
+    .line 29
     .line 30
     .line 31
-    new-instance v5, Landroidx/camera/core/impl/CameraCaptureMetaData$AwbState;
+    sput-object v7, Landroidx/camera/core/impl/CameraCaptureMetaData$AwbState;->METERING:Landroidx/camera/core/impl/CameraCaptureMetaData$AwbState;
 
     .line 32
     .line 33
-    const-string v7, "CONVERGED"
+    new-instance v8, Landroidx/camera/core/impl/CameraCaptureMetaData$AwbState;
 
     .line 34
     .line 35
-    const/4 v8, 0x3
+    const-string v9, "CONVERGED"
 
     .line 36
-    invoke-direct {v5, v7, v8}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
-
     .line 37
+    invoke-direct {v8, v9, v1}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
+
     .line 38
     .line 39
-    sput-object v5, Landroidx/camera/core/impl/CameraCaptureMetaData$AwbState;->CONVERGED:Landroidx/camera/core/impl/CameraCaptureMetaData$AwbState;
-
     .line 40
+    sput-object v8, Landroidx/camera/core/impl/CameraCaptureMetaData$AwbState;->CONVERGED:Landroidx/camera/core/impl/CameraCaptureMetaData$AwbState;
+
     .line 41
-    new-instance v7, Landroidx/camera/core/impl/CameraCaptureMetaData$AwbState;
-
     .line 42
+    new-instance v9, Landroidx/camera/core/impl/CameraCaptureMetaData$AwbState;
+
     .line 43
-    const-string v9, "LOCKED"
-
     .line 44
-    .line 45
-    const/4 v10, 0x4
+    const-string v10, "LOCKED"
 
+    .line 45
     .line 46
-    invoke-direct {v7, v9, v10}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
+    invoke-direct {v9, v10, v0}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
 
     .line 47
     .line 48
     .line 49
-    sput-object v7, Landroidx/camera/core/impl/CameraCaptureMetaData$AwbState;->LOCKED:Landroidx/camera/core/impl/CameraCaptureMetaData$AwbState;
+    sput-object v9, Landroidx/camera/core/impl/CameraCaptureMetaData$AwbState;->LOCKED:Landroidx/camera/core/impl/CameraCaptureMetaData$AwbState;
 
     .line 50
     .line 51
-    const/4 v9, 0x5
+    const/4 v10, 0x5
 
     .line 52
-    new-array v9, v9, [Landroidx/camera/core/impl/CameraCaptureMetaData$AwbState;
+    new-array v10, v10, [Landroidx/camera/core/impl/CameraCaptureMetaData$AwbState;
 
     .line 53
     .line 54
-    aput-object v0, v9, v2
+    aput-object v5, v10, v4
 
     .line 55
     .line 56
-    aput-object v1, v9, v4
+    aput-object v6, v10, v3
 
     .line 57
     .line 58
-    aput-object v3, v9, v6
+    aput-object v7, v10, v2
 
     .line 59
     .line 60
-    aput-object v5, v9, v8
+    aput-object v8, v10, v1
 
     .line 61
     .line 62
-    aput-object v7, v9, v10
+    aput-object v9, v10, v0
 
     .line 63
     .line 64
-    sput-object v9, Landroidx/camera/core/impl/CameraCaptureMetaData$AwbState;->b:[Landroidx/camera/core/impl/CameraCaptureMetaData$AwbState;
+    sput-object v10, Landroidx/camera/core/impl/CameraCaptureMetaData$AwbState;->b:[Landroidx/camera/core/impl/CameraCaptureMetaData$AwbState;
 
     .line 65
     .line 66

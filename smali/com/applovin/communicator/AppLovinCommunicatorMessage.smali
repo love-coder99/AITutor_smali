@@ -21,8 +21,11 @@
 .method public getMessageData()Landroid/os/Bundle;
     .locals 1
 
+    .line 1
     iget-object v0, p0, Lcom/applovin/impl/communicator/CommunicatorMessageImpl;->data:Landroid/os/Bundle;
 
+    .line 2
+    .line 3
     return-object v0
 .end method
 

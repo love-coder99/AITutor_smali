@@ -38,7 +38,7 @@
 
 .field private final f:I
 
-.field private final g:Lm3/a;
+.field private final g:Lu1/a;
 
 .field private final h:Ljava/util/concurrent/Executor;
 
@@ -122,11 +122,11 @@
     iput v0, p0, Lcom/applovin/impl/dg$c;->f:I
 
     .line 7
-    invoke-static {p1}, Lcom/applovin/impl/dg$c$a;->d(Lcom/applovin/impl/dg$c$a;)Lm3/a;
+    invoke-static {p1}, Lcom/applovin/impl/dg$c$a;->d(Lcom/applovin/impl/dg$c$a;)Lu1/a;
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/applovin/impl/dg$c;->g:Lm3/a;
+    iput-object v0, p0, Lcom/applovin/impl/dg$c;->g:Lu1/a;
 
     .line 8
     invoke-static {p1}, Lcom/applovin/impl/dg$c$a;->e(Lcom/applovin/impl/dg$c$a;)Ljava/util/concurrent/Executor;
@@ -135,9 +135,9 @@
 
     iput-object p1, p0, Lcom/applovin/impl/dg$c;->h:Ljava/util/concurrent/Executor;
 
+    .line 9
     sget-object p1, Lcom/applovin/impl/dg$c;->j:Ljava/util/concurrent/atomic/AtomicInteger;
 
-    .line 9
     invoke-virtual {p1}, Ljava/util/concurrent/atomic/AtomicInteger;->incrementAndGet()I
 
     move-result p1
@@ -222,11 +222,11 @@
     return-object p0
 .end method
 
-.method public static synthetic g(Lcom/applovin/impl/dg$c;)Lm3/a;
+.method public static synthetic g(Lcom/applovin/impl/dg$c;)Lu1/a;
     .locals 0
 
     .line 1
-    iget-object p0, p0, Lcom/applovin/impl/dg$c;->g:Lm3/a;
+    iget-object p0, p0, Lcom/applovin/impl/dg$c;->g:Lu1/a;
 
     .line 2
     .line 3

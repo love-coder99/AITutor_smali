@@ -22,9 +22,9 @@
 .method private constructor <init>(Lcom/apm/insight/runtime/a/d;)V
     .locals 0
 
+    .line 1
     iput-object p1, p0, Lcom/apm/insight/runtime/a/d$a;->a:Lcom/apm/insight/runtime/a/d;
 
-    .line 1
     invoke-direct {p0}, Landroid/content/BroadcastReceiver;-><init>()V
 
     return-void

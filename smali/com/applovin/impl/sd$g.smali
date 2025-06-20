@@ -37,18 +37,25 @@
     .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
+    .line 2
     iput-object p1, p0, Lcom/applovin/impl/sd$g;->a:Landroid/net/Uri;
 
+    .line 3
     iput-object p2, p0, Lcom/applovin/impl/sd$g;->b:Ljava/lang/String;
 
+    .line 4
     iput-object p3, p0, Lcom/applovin/impl/sd$g;->c:Lcom/applovin/impl/sd$e;
 
+    .line 5
     iput-object p5, p0, Lcom/applovin/impl/sd$g;->d:Ljava/util/List;
 
+    .line 6
     iput-object p6, p0, Lcom/applovin/impl/sd$g;->e:Ljava/lang/String;
 
+    .line 7
     iput-object p7, p0, Lcom/applovin/impl/sd$g;->f:Ljava/util/List;
 
+    .line 8
     iput-object p8, p0, Lcom/applovin/impl/sd$g;->g:Ljava/lang/Object;
 
     return-void
@@ -57,7 +64,7 @@
 .method public synthetic constructor <init>(Landroid/net/Uri;Ljava/lang/String;Lcom/applovin/impl/sd$e;Lcom/applovin/impl/sd$b;Ljava/util/List;Ljava/lang/String;Ljava/util/List;Ljava/lang/Object;Lcom/applovin/impl/sd$a;)V
     .locals 0
 
-    .line 2
+    .line 9
     invoke-direct/range {p0 .. p8}, Lcom/applovin/impl/sd$g;-><init>(Landroid/net/Uri;Ljava/lang/String;Lcom/applovin/impl/sd$e;Lcom/applovin/impl/sd$b;Ljava/util/List;Ljava/lang/String;Ljava/util/List;Ljava/lang/Object;)V
 
     return-void

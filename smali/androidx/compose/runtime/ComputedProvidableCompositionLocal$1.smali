@@ -3,14 +3,14 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lzh/a;
+.implements Lka/a;
 
 
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "Lkotlin/jvm/internal/Lambda;",
-        "Lzh/a;"
+        "Lka/a;"
     }
 .end annotation
 
@@ -77,7 +77,7 @@
 
     .line 2
     .line 3
-    invoke-static {v0}, Landroidx/compose/runtime/q;->m(Ljava/lang/String;)V
+    invoke-static {v0}, Landroidx/compose/runtime/o;->A(Ljava/lang/String;)V
 
     .line 4
     .line 5

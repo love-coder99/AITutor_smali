@@ -3,14 +3,14 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lzh/e;
+.implements Lka/e;
 
 
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "Lkotlin/jvm/internal/Lambda;",
-        "Lzh/e;"
+        "Lka/e;"
     }
 .end annotation
 
@@ -19,12 +19,12 @@
         "\u0000\u0012\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0008\u0003\u0010\u0006\u001a\u00020\u0003*\u00020\u00002\u0006\u0010\u0002\u001a\u00020\u0001H\n\u00a2\u0006\u0004\u0008\u0004\u0010\u0005"
     }
     d2 = {
-        "Landroidx/compose/ui/node/e0;",
-        "Landroidx/compose/ui/layout/h1;",
+        "Landroidx/compose/ui/node/C;",
+        "Landroidx/compose/ui/layout/d0;",
         "it",
-        "Lqh/r;",
+        "LX9/j;",
         "invoke",
-        "(Landroidx/compose/ui/node/e0;Landroidx/compose/ui/layout/h1;)V",
+        "(Landroidx/compose/ui/node/C;Landroidx/compose/ui/layout/d0;)V",
         "<anonymous>"
     }
     k = 0x3
@@ -37,14 +37,14 @@
 
 
 # instance fields
-.field final synthetic this$0:Landroidx/compose/ui/layout/h1;
+.field final synthetic this$0:Landroidx/compose/ui/layout/d0;
 
 
 # direct methods
-.method public constructor <init>(Landroidx/compose/ui/layout/h1;)V
+.method public constructor <init>(Landroidx/compose/ui/layout/d0;)V
     .locals 0
 
-    iput-object p1, p0, Landroidx/compose/ui/layout/SubcomposeLayoutState$setRoot$1;->this$0:Landroidx/compose/ui/layout/h1;
+    iput-object p1, p0, Landroidx/compose/ui/layout/SubcomposeLayoutState$setRoot$1;->this$0:Landroidx/compose/ui/layout/d0;
 
     const/4 p1, 0x2
 
@@ -59,84 +59,88 @@
     .locals 0
 
     .line 1
-    check-cast p1, Landroidx/compose/ui/node/e0;
+    check-cast p1, Landroidx/compose/ui/node/C;
 
-    check-cast p2, Landroidx/compose/ui/layout/h1;
+    check-cast p2, Landroidx/compose/ui/layout/d0;
 
-    invoke-virtual {p0, p1, p2}, Landroidx/compose/ui/layout/SubcomposeLayoutState$setRoot$1;->invoke(Landroidx/compose/ui/node/e0;Landroidx/compose/ui/layout/h1;)V
+    invoke-virtual {p0, p1, p2}, Landroidx/compose/ui/layout/SubcomposeLayoutState$setRoot$1;->invoke(Landroidx/compose/ui/node/C;Landroidx/compose/ui/layout/d0;)V
 
-    sget-object p1, Lqh/r;->a:Lqh/r;
+    sget-object p1, LX9/j;->a:LX9/j;
 
     return-object p1
 .end method
 
-.method public final invoke(Landroidx/compose/ui/node/e0;Landroidx/compose/ui/layout/h1;)V
+.method public final invoke(Landroidx/compose/ui/node/C;Landroidx/compose/ui/layout/d0;)V
     .locals 2
 
-    iget-object p2, p0, Landroidx/compose/ui/layout/SubcomposeLayoutState$setRoot$1;->this$0:Landroidx/compose/ui/layout/h1;
-
     .line 2
-    iget-object v0, p1, Landroidx/compose/ui/node/e0;->C:Landroidx/compose/ui/layout/i0;
+    iget-object p2, p0, Landroidx/compose/ui/layout/SubcomposeLayoutState$setRoot$1;->this$0:Landroidx/compose/ui/layout/d0;
+
+    .line 3
+    iget-object v0, p1, Landroidx/compose/ui/node/C;->C:Landroidx/compose/ui/layout/F;
 
     if-nez v0, :cond_0
 
-    .line 3
-    new-instance v0, Landroidx/compose/ui/layout/i0;
-
     .line 4
-    iget-object v1, p2, Landroidx/compose/ui/layout/h1;->a:Landroidx/compose/ui/layout/k1;
+    new-instance v0, Landroidx/compose/ui/layout/F;
 
     .line 5
-    invoke-direct {v0, p1, v1}, Landroidx/compose/ui/layout/i0;-><init>(Landroidx/compose/ui/node/e0;Landroidx/compose/ui/layout/k1;)V
+    iget-object v1, p2, Landroidx/compose/ui/layout/d0;->a:Landroidx/compose/ui/layout/g0;
 
     .line 6
-    iput-object v0, p1, Landroidx/compose/ui/node/e0;->C:Landroidx/compose/ui/layout/i0;
+    invoke-direct {v0, p1, v1}, Landroidx/compose/ui/layout/F;-><init>(Landroidx/compose/ui/node/C;Landroidx/compose/ui/layout/g0;)V
 
     .line 7
-    :cond_0
-    iput-object v0, p2, Landroidx/compose/ui/layout/h1;->b:Landroidx/compose/ui/layout/i0;
-
-    iget-object p1, p0, Landroidx/compose/ui/layout/SubcomposeLayoutState$setRoot$1;->this$0:Landroidx/compose/ui/layout/h1;
+    iput-object v0, p1, Landroidx/compose/ui/node/C;->C:Landroidx/compose/ui/layout/F;
 
     .line 8
-    invoke-virtual {p1}, Landroidx/compose/ui/layout/h1;->a()Landroidx/compose/ui/layout/i0;
-
-    move-result-object p1
+    :cond_0
+    iput-object v0, p2, Landroidx/compose/ui/layout/d0;->b:Landroidx/compose/ui/layout/F;
 
     .line 9
-    invoke-virtual {p1}, Landroidx/compose/ui/layout/i0;->e()V
-
-    iget-object p1, p0, Landroidx/compose/ui/layout/SubcomposeLayoutState$setRoot$1;->this$0:Landroidx/compose/ui/layout/h1;
+    iget-object p1, p0, Landroidx/compose/ui/layout/SubcomposeLayoutState$setRoot$1;->this$0:Landroidx/compose/ui/layout/d0;
 
     .line 10
-    invoke-virtual {p1}, Landroidx/compose/ui/layout/h1;->a()Landroidx/compose/ui/layout/i0;
+    invoke-virtual {p1}, Landroidx/compose/ui/layout/d0;->a()Landroidx/compose/ui/layout/F;
 
     move-result-object p1
 
-    iget-object p2, p0, Landroidx/compose/ui/layout/SubcomposeLayoutState$setRoot$1;->this$0:Landroidx/compose/ui/layout/h1;
-
     .line 11
-    iget-object p2, p2, Landroidx/compose/ui/layout/h1;->a:Landroidx/compose/ui/layout/k1;
+    invoke-virtual {p1}, Landroidx/compose/ui/layout/F;->e()V
 
     .line 12
-    iget-object v0, p1, Landroidx/compose/ui/layout/i0;->d:Landroidx/compose/ui/layout/k1;
+    iget-object p1, p0, Landroidx/compose/ui/layout/SubcomposeLayoutState$setRoot$1;->this$0:Landroidx/compose/ui/layout/d0;
+
+    .line 13
+    invoke-virtual {p1}, Landroidx/compose/ui/layout/d0;->a()Landroidx/compose/ui/layout/F;
+
+    move-result-object p1
+
+    .line 14
+    iget-object p2, p0, Landroidx/compose/ui/layout/SubcomposeLayoutState$setRoot$1;->this$0:Landroidx/compose/ui/layout/d0;
+
+    .line 15
+    iget-object p2, p2, Landroidx/compose/ui/layout/d0;->a:Landroidx/compose/ui/layout/g0;
+
+    .line 16
+    iget-object v0, p1, Landroidx/compose/ui/layout/F;->d:Landroidx/compose/ui/layout/g0;
 
     if-eq v0, p2, :cond_1
 
-    .line 13
-    iput-object p2, p1, Landroidx/compose/ui/layout/i0;->d:Landroidx/compose/ui/layout/k1;
+    .line 17
+    iput-object p2, p1, Landroidx/compose/ui/layout/F;->d:Landroidx/compose/ui/layout/g0;
 
     const/4 p2, 0x0
 
-    .line 14
-    invoke-virtual {p1, p2}, Landroidx/compose/ui/layout/i0;->f(Z)V
+    .line 18
+    invoke-virtual {p1, p2}, Landroidx/compose/ui/layout/F;->f(Z)V
 
-    .line 15
-    iget-object p1, p1, Landroidx/compose/ui/layout/i0;->b:Landroidx/compose/ui/node/e0;
+    .line 19
+    iget-object p1, p1, Landroidx/compose/ui/layout/F;->b:Landroidx/compose/ui/node/C;
 
     const/4 v0, 0x7
 
-    invoke-static {p1, p2, v0}, Landroidx/compose/ui/node/e0;->U(Landroidx/compose/ui/node/e0;ZI)V
+    invoke-static {p1, p2, v0}, Landroidx/compose/ui/node/C;->U(Landroidx/compose/ui/node/C;ZI)V
 
     :cond_1
     return-void

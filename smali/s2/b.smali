@@ -1,46 +1,34 @@
-.class public final Ls2/b;
+.class public final LS2/b;
 .super Ljava/lang/Object;
 .source "SourceFile"
 
 
 # instance fields
-.field public final a:Ls2/e;
+.field public a:[I
 
-.field public b:Ls2/e;
+.field public b:I
 
-.field public c:Ls2/e;
+.field public c:I
 
-.field public d:Ls2/e;
+.field public d:LS2/a;
 
-.field public e:Ls2/e;
+.field public final e:Ljava/util/ArrayList;
 
-.field public f:Ls2/e;
+.field public f:I
 
-.field public g:Ls2/e;
+.field public g:I
 
-.field public h:Ljava/util/ArrayList;
+.field public h:Z
 
 .field public i:I
 
 .field public j:I
 
-.field public k:F
-
-.field public final l:I
-
-.field public final m:Z
-
-.field public n:Z
-
-.field public o:Z
-
-.field public p:Z
-
-.field public q:Z
+.field public k:I
 
 
 # direct methods
-.method public constructor <init>(Ls2/e;IZ)V
+.method public constructor <init>()V
     .locals 1
 
     .line 1
@@ -52,21 +40,33 @@
     const/4 v0, 0x0
 
     .line 5
-    iput v0, p0, Ls2/b;->k:F
+    iput-object v0, p0, LS2/b;->a:[I
 
     .line 6
     .line 7
-    iput-object p1, p0, Ls2/b;->a:Ls2/e;
+    const/4 v0, 0x0
 
     .line 8
+    iput v0, p0, LS2/b;->b:I
+
     .line 9
-    iput p2, p0, Ls2/b;->l:I
-
     .line 10
-    .line 11
-    iput-boolean p3, p0, Ls2/b;->m:Z
+    iput v0, p0, LS2/b;->c:I
 
+    .line 11
     .line 12
+    new-instance v0, Ljava/util/ArrayList;
+
     .line 13
+    .line 14
+    invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
+
+    .line 15
+    .line 16
+    .line 17
+    iput-object v0, p0, LS2/b;->e:Ljava/util/ArrayList;
+
+    .line 18
+    .line 19
     return-void
 .end method

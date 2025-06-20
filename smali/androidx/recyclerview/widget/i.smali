@@ -1,15 +1,19 @@
-.class public final Landroidx/recyclerview/widget/i;
+.class public abstract Landroidx/recyclerview/widget/I;
 .super Ljava/lang/Object;
 .source "SourceFile"
 
 
-# instance fields
-.field public a:Landroidx/recyclerview/widget/h1;
+# virtual methods
+.method public a(Landroid/graphics/Canvas;Landroidx/recyclerview/widget/RecyclerView;)V
+    .locals 0
 
-.field public b:I
+    .line 1
+    return-void
+.end method
 
-.field public c:I
+.method public b(Landroid/graphics/Canvas;Landroidx/recyclerview/widget/RecyclerView;)V
+    .locals 0
 
-.field public d:I
-
-.field public e:I
+    .line 1
+    return-void
+.end method

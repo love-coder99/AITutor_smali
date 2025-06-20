@@ -45,6 +45,10 @@
 # virtual methods
 .method public onGetEpicenter(Landroidx/transition/Transition;)Landroid/graphics/Rect;
     .locals 0
+    .param p1    # Landroidx/transition/Transition;
+        .annotation build Landroidx/annotation/NonNull;
+        .end annotation
+    .end param
 
     .line 1
     iget-object p1, p0, Landroidx/transition/FragmentTransitionSupport$5;->val$epicenter:Landroid/graphics/Rect;

@@ -8,9 +8,13 @@
 .end method
 
 .method public abstract getPrivacyPolicyUri()Landroid/net/Uri;
+    .annotation build Landroidx/annotation/Nullable;
+    .end annotation
 .end method
 
 .method public abstract getTermsOfServiceUri()Landroid/net/Uri;
+    .annotation build Landroidx/annotation/Nullable;
+    .end annotation
 .end method
 
 .method public abstract isEnabled()Z

@@ -89,12 +89,13 @@
 
     goto :goto_1
 
+    .line 3
     :cond_1
     sget-boolean v0, Lcom/applovin/impl/sdk/NativeCrashReporter;->b:Z
 
     if-eqz v0, :cond_3
 
-    .line 3
+    .line 4
     :try_start_0
     invoke-virtual {p0}, Lcom/applovin/impl/sdk/j;->k()Lcom/applovin/impl/sdk/g;
 
@@ -104,7 +105,7 @@
 
     invoke-virtual {v0, v2}, Lcom/applovin/impl/sdk/g;->a(Lcom/applovin/impl/sdk/g$d;)V
 
-    .line 4
+    .line 5
     invoke-direct {v2}, Lcom/applovin/impl/sdk/NativeCrashReporter;->disable()V
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
@@ -114,7 +115,7 @@
     :catchall_0
     move-exception v0
 
-    .line 5
+    .line 6
     invoke-virtual {p0}, Lcom/applovin/impl/sdk/j;->I()Lcom/applovin/impl/sdk/n;
 
     invoke-static {}, Lcom/applovin/impl/sdk/n;->a()Z
@@ -131,7 +132,7 @@
 
     invoke-virtual {v2, v1, v3, v0}, Lcom/applovin/impl/sdk/n;->a(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)V
 
-    .line 6
+    .line 7
     :cond_2
     invoke-virtual {p0}, Lcom/applovin/impl/sdk/j;->D()Lcom/applovin/impl/la;
 
@@ -145,7 +146,7 @@
     :goto_0
     return-void
 
-    .line 7
+    .line 8
     :cond_4
     :goto_1
     invoke-static {}, Lcom/applovin/impl/sdk/NativeCrashReporter;->a()Z
@@ -156,7 +157,7 @@
 
     return-void
 
-    .line 8
+    .line 9
     :cond_5
     sget-object v0, Lcom/applovin/impl/sj;->t4:Lcom/applovin/impl/sj;
 
@@ -164,7 +165,7 @@
 
     move-result-object v0
 
-    .line 9
+    .line 10
     invoke-interface {v0}, Ljava/util/List;->size()I
 
     move-result v2
@@ -173,7 +174,7 @@
 
     const/4 v3, 0x0
 
-    .line 10
+    .line 11
     :goto_2
     invoke-interface {v0}, Ljava/util/List;->size()I
 
@@ -181,7 +182,7 @@
 
     if-ge v3, v4, :cond_6
 
-    .line 11
+    .line 12
     :try_start_1
     invoke-interface {v0, v3}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
@@ -202,7 +203,7 @@
 
     goto :goto_2
 
-    .line 12
+    .line 13
     :cond_6
     new-instance v0, Ljava/io/File;
 
@@ -218,19 +219,19 @@
 
     invoke-direct {v0, v3, v4}, Ljava/io/File;-><init>(Ljava/io/File;Ljava/lang/String;)V
 
-    .line 13
+    .line 14
     invoke-virtual {v0}, Ljava/io/File;->exists()Z
 
     move-result v3
 
     if-eqz v3, :cond_7
 
-    .line 14
+    .line 15
     invoke-static {v0, p0}, Lcom/applovin/impl/sdk/NativeCrashReporter;->a(Ljava/io/File;Lcom/applovin/impl/sdk/j;)V
 
     goto :goto_3
 
-    .line 15
+    .line 16
     :cond_7
     invoke-virtual {v0}, Ljava/io/File;->mkdir()Z
 
@@ -238,7 +239,7 @@
 
     if-nez v3, :cond_9
 
-    .line 16
+    .line 17
     invoke-virtual {p0}, Lcom/applovin/impl/sdk/j;->I()Lcom/applovin/impl/sdk/n;
 
     invoke-static {}, Lcom/applovin/impl/sdk/n;->a()Z
@@ -258,12 +259,12 @@
     :cond_8
     return-void
 
+    .line 18
     :cond_9
     :goto_3
     :try_start_2
     sget-object v3, Lcom/applovin/impl/sdk/NativeCrashReporter;->c:Lcom/applovin/impl/sdk/NativeCrashReporter;
 
-    .line 17
     invoke-virtual {v0}, Ljava/io/File;->getAbsolutePath()Ljava/lang/String;
 
     move-result-object v0
@@ -282,32 +283,32 @@
 
     invoke-direct {v3, v0, v2, v4}, Lcom/applovin/impl/sdk/NativeCrashReporter;->enable(Ljava/lang/String;[IZ)V
 
-    .line 18
+    .line 19
     new-instance v0, Ljava/util/HashSet;
 
     invoke-direct {v0}, Ljava/util/HashSet;-><init>()V
 
-    .line 19
+    .line 20
     sget-object v2, Lcom/applovin/impl/sdk/g$c;->c:Lcom/applovin/impl/sdk/g$c;
 
     invoke-virtual {v0, v2}, Ljava/util/HashSet;->add(Ljava/lang/Object;)Z
 
-    .line 20
+    .line 21
     sget-object v2, Lcom/applovin/impl/sdk/g$c;->f:Lcom/applovin/impl/sdk/g$c;
 
     invoke-virtual {v0, v2}, Ljava/util/HashSet;->add(Ljava/lang/Object;)Z
 
-    .line 21
+    .line 22
     sget-object v2, Lcom/applovin/impl/sdk/g$c;->h:Lcom/applovin/impl/sdk/g$c;
 
     invoke-virtual {v0, v2}, Ljava/util/HashSet;->add(Ljava/lang/Object;)Z
 
-    .line 22
+    .line 23
     sget-object v2, Lcom/applovin/impl/sdk/g$c;->g:Lcom/applovin/impl/sdk/g$c;
 
     invoke-virtual {v0, v2}, Ljava/util/HashSet;->add(Ljava/lang/Object;)Z
 
-    .line 23
+    .line 24
     invoke-virtual {p0}, Lcom/applovin/impl/sdk/j;->k()Lcom/applovin/impl/sdk/g;
 
     move-result-object v2
@@ -321,7 +322,7 @@
     :catchall_1
     move-exception v0
 
-    .line 24
+    .line 25
     invoke-virtual {p0}, Lcom/applovin/impl/sdk/j;->I()Lcom/applovin/impl/sdk/n;
 
     invoke-static {}, Lcom/applovin/impl/sdk/n;->a()Z
@@ -338,7 +339,7 @@
 
     invoke-virtual {v2, v1, v3, v0}, Lcom/applovin/impl/sdk/n;->a(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)V
 
-    .line 25
+    .line 26
     :cond_a
     invoke-virtual {p0}, Lcom/applovin/impl/sdk/j;->D()Lcom/applovin/impl/la;
 
@@ -355,9 +356,9 @@
 .method private static a(Ljava/io/File;Lcom/applovin/impl/sdk/j;)V
     .locals 16
 
+    .line 33
     const-string v1, "Failed to delete native crash report: "
 
-    .line 28
     invoke-virtual/range {p0 .. p0}, Ljava/io/File;->listFiles()[Ljava/io/File;
 
     move-result-object v2
@@ -366,7 +367,7 @@
 
     return-void
 
-    .line 29
+    .line 34
     :cond_0
     array-length v3, v2
 
@@ -379,7 +380,7 @@
 
     aget-object v6, v2, v5
 
-    .line 30
+    .line 35
     invoke-virtual/range {p1 .. p1}, Lcom/applovin/impl/sdk/j;->A()Lcom/applovin/impl/sdk/l;
 
     move-result-object v0
@@ -388,7 +389,7 @@
 
     move-result-object v0
 
-    .line 31
+    .line 36
     invoke-static {v0}, Lcom/applovin/impl/sdk/utils/StringUtils;->isValidString(Ljava/lang/String;)Z
 
     move-result v7
@@ -397,30 +398,30 @@
 
     if-eqz v7, :cond_4
 
+    .line 37
     const-string v7, "@@@@@"
 
-    .line 32
     invoke-virtual {v0, v7}, Ljava/lang/String;->split(Ljava/lang/String;)[Ljava/lang/String;
 
     move-result-object v0
 
-    .line 33
+    .line 38
     array-length v7, v0
 
     const/4 v9, 0x3
 
     if-ne v7, v9, :cond_4
 
-    .line 34
+    .line 39
     :try_start_0
     aget-object v7, v0, v4
 
     const/4 v9, 0x1
 
-    .line 35
+    .line 40
     aget-object v12, v0, v9
 
-    .line 36
+    .line 41
     new-instance v9, Lorg/json/JSONArray;
 
     const/4 v10, 0x2
@@ -429,7 +430,7 @@
 
     invoke-direct {v9, v0}, Lorg/json/JSONArray;-><init>(Ljava/lang/String;)V
 
-    .line 37
+    .line 42
     invoke-virtual {v9}, Lorg/json/JSONArray;->length()I
 
     move-result v0
@@ -440,13 +441,13 @@
 
     if-nez v0, :cond_1
 
-    .line 38
+    .line 43
     :try_start_1
     invoke-static {v10, v7}, Lcom/applovin/impl/sdk/utils/CollectionUtils;->hashMap(Ljava/lang/String;Ljava/lang/String;)Ljava/util/HashMap;
 
     move-result-object v0
 
-    .line 39
+    .line 44
     invoke-virtual/range {p1 .. p1}, Lcom/applovin/impl/sdk/j;->D()Lcom/applovin/impl/la;
 
     move-result-object v7
@@ -462,7 +463,7 @@
 
     goto :goto_3
 
-    .line 40
+    .line 45
     :cond_1
     new-instance v13, Ljava/util/ArrayList;
 
@@ -474,7 +475,7 @@
 
     const/4 v0, 0x0
 
-    .line 41
+    .line 46
     :goto_1
     invoke-virtual {v9}, Lorg/json/JSONArray;->length()I
 
@@ -484,7 +485,7 @@
 
     const/4 v11, 0x0
 
-    .line 42
+    .line 47
     invoke-static {v9, v0, v11}, Lcom/applovin/impl/sdk/utils/JsonUtils;->getJSONObject(Lorg/json/JSONArray;ILorg/json/JSONObject;)Lorg/json/JSONObject;
 
     move-result-object v11
@@ -493,20 +494,20 @@
 
     goto :goto_2
 
-    .line 43
+    .line 48
     :cond_2
     invoke-static {v10, v7}, Lcom/applovin/impl/sdk/utils/CollectionUtils;->hashMap(Ljava/lang/String;Ljava/lang/String;)Ljava/util/HashMap;
 
     move-result-object v14
 
-    .line 44
+    .line 49
     invoke-static {v11}, Lcom/applovin/impl/sdk/utils/JsonUtils;->toStringMap(Lorg/json/JSONObject;)Ljava/util/Map;
 
     move-result-object v11
 
     invoke-virtual {v14, v11}, Ljava/util/HashMap;->putAll(Ljava/util/Map;)V
 
-    .line 45
+    .line 50
     invoke-virtual {v13, v14}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
     :goto_2
@@ -514,7 +515,7 @@
 
     goto :goto_1
 
-    .line 46
+    .line 51
     :cond_3
     invoke-virtual/range {p1 .. p1}, Lcom/applovin/impl/sdk/j;->D()Lcom/applovin/impl/la;
 
@@ -530,7 +531,7 @@
 
     goto :goto_4
 
-    .line 47
+    .line 52
     :goto_3
     invoke-virtual/range {p1 .. p1}, Lcom/applovin/impl/sdk/j;->I()Lcom/applovin/impl/sdk/n;
 
@@ -550,7 +551,7 @@
 
     goto :goto_4
 
-    .line 48
+    .line 53
     :cond_4
     invoke-virtual/range {p1 .. p1}, Lcom/applovin/impl/sdk/j;->I()Lcom/applovin/impl/sdk/n;
 
@@ -582,7 +583,7 @@
 
     invoke-virtual {v0, v8, v7}, Lcom/applovin/impl/sdk/n;->b(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 49
+    .line 54
     :cond_5
     :goto_4
     :try_start_2
@@ -592,7 +593,7 @@
 
     if-nez v0, :cond_6
 
-    .line 50
+    .line 55
     invoke-virtual/range {p1 .. p1}, Lcom/applovin/impl/sdk/j;->I()Lcom/applovin/impl/sdk/n;
 
     invoke-static {}, Lcom/applovin/impl/sdk/n;->a()Z
@@ -630,7 +631,7 @@
     :catchall_1
     move-exception v0
 
-    .line 51
+    .line 56
     invoke-virtual/range {p1 .. p1}, Lcom/applovin/impl/sdk/j;->I()Lcom/applovin/impl/sdk/n;
 
     invoke-static {}, Lcom/applovin/impl/sdk/n;->a()Z
@@ -672,20 +673,23 @@
 .method private static a()Z
     .locals 3
 
+    .line 27
     sget-boolean v0, Lcom/applovin/impl/sdk/NativeCrashReporter;->a:Z
 
     if-nez v0, :cond_0
 
     const/4 v0, 0x1
 
+    .line 28
     sput-boolean v0, Lcom/applovin/impl/sdk/NativeCrashReporter;->a:Z
 
+    .line 29
     :try_start_0
     const-string v1, "applovin-native-crash-reporter"
 
-    .line 26
     invoke-static {v1}, Ljava/lang/System;->loadLibrary(Ljava/lang/String;)V
 
+    .line 30
     sput-boolean v0, Lcom/applovin/impl/sdk/NativeCrashReporter;->b:Z
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
@@ -695,13 +699,14 @@
     :catchall_0
     move-exception v0
 
+    .line 31
     const-string v1, "NativeCrashReporter"
 
     const-string v2, "Failed to load native crash reporter library"
 
-    .line 27
     invoke-static {v1, v2, v0}, Lcom/applovin/impl/sdk/n;->b(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)V
 
+    .line 32
     :cond_0
     :goto_0
     sget-boolean v0, Lcom/applovin/impl/sdk/NativeCrashReporter;->b:Z
@@ -907,7 +912,7 @@
 .method public a(Lcom/applovin/impl/sdk/g$b;)V
     .locals 2
 
-    .line 52
+    .line 57
     invoke-virtual {p1}, Lcom/applovin/impl/sdk/g$b;->i()Lcom/applovin/impl/sdk/g$c;
 
     move-result-object v0
@@ -916,7 +921,7 @@
 
     if-ne v0, v1, :cond_0
 
-    .line 53
+    .line 58
     invoke-virtual {p1}, Lcom/applovin/impl/sdk/g$b;->h()I
 
     move-result p1
@@ -925,7 +930,7 @@
 
     goto :goto_0
 
-    .line 54
+    .line 59
     :cond_0
     new-instance v0, Lcom/applovin/impl/sdk/t;
 

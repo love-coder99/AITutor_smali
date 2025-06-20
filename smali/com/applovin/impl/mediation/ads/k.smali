@@ -3,87 +3,67 @@
 .source "SourceFile"
 
 # interfaces
-.implements Ljava/lang/Runnable;
+.implements Lcom/applovin/impl/mediation/ads/MaxFullscreenAdImpl$e;
 
 
 # instance fields
-.field public final synthetic b:I
+.field public final synthetic a:Lcom/applovin/impl/mediation/ads/MaxFullscreenAdImpl$c;
 
-.field public final synthetic c:Ljava/lang/Object;
+.field public final synthetic b:Lcom/applovin/mediation/MaxAd;
 
-.field public final synthetic d:Ljava/lang/Object;
+.field public final synthetic c:Z
+
+.field public final synthetic d:Lcom/applovin/impl/he;
+
+.field public final synthetic e:Lcom/applovin/mediation/MaxError;
 
 
 # direct methods
-.method public synthetic constructor <init>(Ljava/lang/Object;ILjava/lang/Object;)V
+.method public synthetic constructor <init>(Lcom/applovin/impl/mediation/ads/MaxFullscreenAdImpl$c;Lcom/applovin/mediation/MaxAd;ZLcom/applovin/impl/he;Lcom/applovin/mediation/MaxError;)V
     .locals 0
 
     .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 2
-    .line 3
-    .line 4
-    iput p2, p0, Lcom/applovin/impl/mediation/ads/k;->b:I
+    iput-object p1, p0, Lcom/applovin/impl/mediation/ads/k;->a:Lcom/applovin/impl/mediation/ads/MaxFullscreenAdImpl$c;
 
-    .line 5
-    .line 6
-    iput-object p1, p0, Lcom/applovin/impl/mediation/ads/k;->c:Ljava/lang/Object;
+    iput-object p2, p0, Lcom/applovin/impl/mediation/ads/k;->b:Lcom/applovin/mediation/MaxAd;
 
-    .line 7
-    .line 8
-    iput-object p3, p0, Lcom/applovin/impl/mediation/ads/k;->d:Ljava/lang/Object;
+    iput-boolean p3, p0, Lcom/applovin/impl/mediation/ads/k;->c:Z
 
-    .line 9
-    .line 10
+    iput-object p4, p0, Lcom/applovin/impl/mediation/ads/k;->d:Lcom/applovin/impl/he;
+
+    iput-object p5, p0, Lcom/applovin/impl/mediation/ads/k;->e:Lcom/applovin/mediation/MaxError;
+
     return-void
 .end method
 
 
 # virtual methods
-.method public final run()V
-    .locals 3
+.method public final a()V
+    .locals 5
 
     .line 1
-    iget v0, p0, Lcom/applovin/impl/mediation/ads/k;->b:I
+    iget-object v0, p0, Lcom/applovin/impl/mediation/ads/k;->d:Lcom/applovin/impl/he;
 
-    iget-object v1, p0, Lcom/applovin/impl/mediation/ads/k;->d:Ljava/lang/Object;
+    iget-object v1, p0, Lcom/applovin/impl/mediation/ads/k;->e:Lcom/applovin/mediation/MaxError;
 
-    iget-object v2, p0, Lcom/applovin/impl/mediation/ads/k;->c:Ljava/lang/Object;
+    iget-object v2, p0, Lcom/applovin/impl/mediation/ads/k;->a:Lcom/applovin/impl/mediation/ads/MaxFullscreenAdImpl$c;
 
-    packed-switch v0, :pswitch_data_0
+    iget-object v3, p0, Lcom/applovin/impl/mediation/ads/k;->b:Lcom/applovin/mediation/MaxAd;
 
-    check-cast v2, Lcom/applovin/impl/mediation/ads/MaxFullscreenAdImpl;
+    iget-boolean v4, p0, Lcom/applovin/impl/mediation/ads/k;->c:Z
 
-    check-cast v1, Ljava/lang/String;
-
-    invoke-static {v2, v1}, Lcom/applovin/impl/mediation/ads/MaxFullscreenAdImpl;->k(Lcom/applovin/impl/mediation/ads/MaxFullscreenAdImpl;Ljava/lang/String;)V
+    invoke-static {v2, v3, v4, v0, v1}, Lcom/applovin/impl/mediation/ads/MaxFullscreenAdImpl$c;->f(Lcom/applovin/impl/mediation/ads/MaxFullscreenAdImpl$c;Lcom/applovin/mediation/MaxAd;ZLcom/applovin/impl/he;Lcom/applovin/mediation/MaxError;)V
 
     return-void
+.end method
 
-    :pswitch_0
-    check-cast v2, Lcom/applovin/impl/mediation/ads/MaxNativeAdLoaderImpl$c;
+.method public final synthetic a(Lcom/applovin/mediation/MaxError;)V
+    .locals 0
 
-    check-cast v1, Lcom/applovin/mediation/MaxAd;
-
-    invoke-static {v2, v1}, Lcom/applovin/impl/mediation/ads/MaxNativeAdLoaderImpl$c;->a(Lcom/applovin/impl/mediation/ads/MaxNativeAdLoaderImpl$c;Lcom/applovin/mediation/MaxAd;)V
-
-    return-void
-
-    :pswitch_1
-    check-cast v2, Lcom/applovin/impl/mediation/ads/MaxFullscreenAdImpl$c;
-
-    check-cast v1, Lcom/applovin/impl/he;
-
-    invoke-static {v2, v1}, Lcom/applovin/impl/mediation/ads/MaxFullscreenAdImpl$c;->e(Lcom/applovin/impl/mediation/ads/MaxFullscreenAdImpl$c;Lcom/applovin/impl/he;)V
+    .line 2
+    invoke-static {p0, p1}, Lcom/applovin/impl/mediation/ads/n;->a(Lcom/applovin/impl/mediation/ads/MaxFullscreenAdImpl$e;Lcom/applovin/mediation/MaxError;)V
 
     return-void
-
-    nop
-
-    :pswitch_data_0
-    .packed-switch 0x0
-        :pswitch_1
-        :pswitch_0
-    .end packed-switch
 .end method

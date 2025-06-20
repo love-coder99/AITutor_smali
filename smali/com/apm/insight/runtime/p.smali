@@ -57,6 +57,9 @@
 
 .method public static a(JLjava/lang/String;)Ljava/util/HashMap;
     .locals 10
+    .annotation build Landroidx/annotation/NonNull;
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(J",
@@ -231,12 +234,13 @@
 .method public static a(Ljava/lang/String;Ljava/lang/String;)V
     .locals 10
 
+    .line 14
     :try_start_0
     sget-object v0, Lcom/apm/insight/runtime/p;->a:Ljava/io/File;
 
     if-nez v0, :cond_1
 
-    .line 14
+    .line 15
     invoke-static {}, Lcom/apm/insight/e;->g()Landroid/content/Context;
 
     move-result-object v0
@@ -251,13 +255,13 @@
 
     goto :goto_0
 
-    .line 15
+    .line 16
     :cond_0
     invoke-static {}, Ljava/lang/System;->currentTimeMillis()J
 
     move-result-wide v1
 
-    .line 16
+    .line 17
     new-instance v3, Ljava/io/File;
 
     invoke-static {}, Lcom/apm/insight/e;->g()Landroid/content/Context;
@@ -292,7 +296,7 @@
 
     const/16 v2, 0x5f
 
-    .line 17
+    .line 18
     invoke-virtual {v0, v1, v2}, Ljava/lang/String;->replace(CC)Ljava/lang/String;
 
     move-result-object v0
@@ -311,13 +315,14 @@
 
     sput-object v3, Lcom/apm/insight/runtime/p;->a:Ljava/io/File;
 
+    .line 19
     :cond_1
     sget-object v0, Lcom/apm/insight/runtime/p;->a:Ljava/io/File;
 
     :goto_0
     if-eqz v0, :cond_2
 
-    .line 18
+    .line 20
     new-instance v1, Ljava/lang/StringBuilder;
 
     invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
@@ -332,7 +337,7 @@
 
     invoke-virtual {v1, p0}, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
 
-    .line 19
+    .line 21
     invoke-static {}, Ljava/lang/System;->currentTimeMillis()J
 
     move-result-wide p0
@@ -349,7 +354,7 @@
 
     const/4 p1, 0x1
 
-    .line 20
+    .line 22
     invoke-static {v0, p0, p1}, Lcom/apm/insight/l/f;->a(Ljava/io/File;Ljava/lang/String;Z)V
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0

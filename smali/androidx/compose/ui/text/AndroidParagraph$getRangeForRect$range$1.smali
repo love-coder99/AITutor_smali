@@ -3,14 +3,14 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lzh/e;
+.implements Lka/e;
 
 
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "Lkotlin/jvm/internal/Lambda;",
-        "Lzh/e;"
+        "Lka/e;"
     }
 .end annotation
 
@@ -38,14 +38,14 @@
 
 
 # instance fields
-.field final synthetic $inclusionStrategy:Landroidx/compose/ui/text/d0;
+.field final synthetic $inclusionStrategy:Landroidx/compose/ui/text/D;
 
 
 # direct methods
-.method public constructor <init>(Landroidx/compose/ui/text/d0;)V
+.method public constructor <init>(Landroidx/compose/ui/text/D;)V
     .locals 0
 
-    iput-object p1, p0, Landroidx/compose/ui/text/AndroidParagraph$getRangeForRect$range$1;->$inclusionStrategy:Landroidx/compose/ui/text/d0;
+    iput-object p1, p0, Landroidx/compose/ui/text/AndroidParagraph$getRangeForRect$range$1;->$inclusionStrategy:Landroidx/compose/ui/text/D;
 
     const/4 p1, 0x2
 
@@ -57,56 +57,28 @@
 
 # virtual methods
 .method public final invoke(Landroid/graphics/RectF;Landroid/graphics/RectF;)Ljava/lang/Boolean;
-    .locals 2
-
-    iget-object v0, p0, Landroidx/compose/ui/text/AndroidParagraph$getRangeForRect$range$1;->$inclusionStrategy:Landroidx/compose/ui/text/d0;
+    .locals 1
 
     .line 2
-    invoke-static {p1}, Landroidx/compose/ui/graphics/f0;->I(Landroid/graphics/RectF;)Ln1/e;
+    iget-object v0, p0, Landroidx/compose/ui/text/AndroidParagraph$getRangeForRect$range$1;->$inclusionStrategy:Landroidx/compose/ui/text/D;
+
+    invoke-static {p1}, Landroidx/compose/ui/graphics/G;->I(Landroid/graphics/RectF;)Lr0/d;
 
     move-result-object p1
 
-    invoke-static {p2}, Landroidx/compose/ui/graphics/f0;->I(Landroid/graphics/RectF;)Ln1/e;
+    invoke-static {p2}, Landroidx/compose/ui/graphics/G;->I(Landroid/graphics/RectF;)Lr0/d;
 
     move-result-object p2
 
-    check-cast v0, Lcom/google/android/material/internal/i;
-
-    iget v0, v0, Lcom/google/android/material/internal/i;->b:I
-
-    packed-switch v0, :pswitch_data_0
-
-    .line 3
-    invoke-virtual {p1}, Ln1/e;->b()J
-
-    move-result-wide v0
-
-    invoke-virtual {p2, v0, v1}, Ln1/e;->a(J)Z
+    invoke-interface {v0, p1, p2}, Landroidx/compose/ui/text/D;->b(Lr0/d;Lr0/d;)Z
 
     move-result p1
 
-    goto :goto_0
-
-    .line 4
-    :pswitch_0
-    invoke-virtual {p1, p2}, Ln1/e;->g(Ln1/e;)Z
-
-    move-result p1
-
-    .line 5
-    :goto_0
     invoke-static {p1}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
 
     move-result-object p1
 
     return-object p1
-
-    nop
-
-    :pswitch_data_0
-    .packed-switch 0x11
-        :pswitch_0
-    .end packed-switch
 .end method
 
 .method public bridge synthetic invoke(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;

@@ -4,6 +4,16 @@
 
 
 # annotations
+.annotation runtime Lca/c;
+    c = "androidx.compose.ui.platform.PlatformTextInputModifierNodeKt"
+    f = "PlatformTextInputModifierNode.kt"
+    l = {
+        0xc2,
+        0xc4
+    }
+    m = "interceptedTextInputSession"
+.end annotation
+
 .annotation runtime Lkotlin/Metadata;
     k = 0x3
     mv = {
@@ -12,16 +22,6 @@
         0x0
     }
     xi = 0x30
-.end annotation
-
-.annotation runtime Lth/c;
-    c = "androidx.compose.ui.platform.PlatformTextInputModifierNodeKt"
-    f = "PlatformTextInputModifierNode.kt"
-    l = {
-        0xc2,
-        0xc4
-    }
-    m = "interceptedTextInputSession"
 .end annotation
 
 
@@ -77,7 +77,7 @@
     const/4 p1, 0x0
 
     .line 11
-    invoke-static {p1, p1, p0}, Landroidx/compose/ui/platform/c2;->b(Landroidx/compose/ui/node/o1;Lzh/e;Lkotlin/coroutines/Continuation;)Lkotlin/coroutines/intrinsics/CoroutineSingletons;
+    invoke-static {p1, p1, p0}, Landroidx/compose/ui/platform/s0;->b(Landroidx/compose/ui/node/i0;Lka/e;Lkotlin/coroutines/jvm/internal/ContinuationImpl;)Lkotlin/coroutines/intrinsics/CoroutineSingletons;
 
     .line 12
     .line 13

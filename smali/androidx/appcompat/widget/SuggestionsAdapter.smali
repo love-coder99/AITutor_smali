@@ -246,7 +246,7 @@
     move-result-object v1
 
     .line 16
-    sget v2, Lg/a;->textColorSearchUrl:I
+    sget v2, Li/a;->textColorSearchUrl:I
 
     .line 17
     .line 18
@@ -300,20 +300,20 @@
 
     .line 42
     .line 43
-    const/4 v2, 0x0
-
-    .line 44
-    const/4 v3, 0x0
-
-    .line 45
-    const/4 v4, 0x0
-
-    .line 46
     iget-object v5, p0, Landroidx/appcompat/widget/SuggestionsAdapter;->mUrlColor:Landroid/content/res/ColorStateList;
 
-    .line 47
-    .line 48
+    .line 44
+    .line 45
     const/4 v6, 0x0
+
+    .line 46
+    const/4 v2, 0x0
+
+    .line 47
+    const/4 v3, 0x0
+
+    .line 48
+    const/4 v4, 0x0
 
     .line 49
     move-object v1, v7
@@ -880,7 +880,7 @@
 .end method
 
 .method private getDrawableFromResourceValue(Ljava/lang/String;)Landroid/graphics/drawable/Drawable;
-    .locals 5
+    .locals 4
 
     .line 1
     const-string v0, "android.resource://"
@@ -1003,81 +1003,77 @@
 
     .line 59
     .line 60
-    sget-object v4, Ld3/b;->a:Ljava/lang/Object;
+    invoke-virtual {v3, v2}, Landroid/content/Context;->getDrawable(I)Landroid/graphics/drawable/Drawable;
 
     .line 61
     .line 62
-    invoke-virtual {v3, v2}, Landroid/content/Context;->getDrawable(I)Landroid/graphics/drawable/Drawable;
-
     .line 63
-    .line 64
-    .line 65
     move-result-object v2
 
-    .line 66
+    .line 64
     invoke-direct {p0, v0, v2}, Landroidx/appcompat/widget/SuggestionsAdapter;->storeInIconCache(Ljava/lang/String;Landroid/graphics/drawable/Drawable;)V
     :try_end_0
     .catch Ljava/lang/NumberFormatException; {:try_start_0 .. :try_end_0} :catch_0
     .catch Landroid/content/res/Resources$NotFoundException; {:try_start_0 .. :try_end_0} :catch_1
 
+    .line 65
+    .line 66
     .line 67
-    .line 68
-    .line 69
     return-object v2
 
-    .line 70
+    .line 68
     :catch_0
     nop
 
-    .line 71
+    .line 69
     goto :goto_0
 
-    .line 72
+    .line 70
     :catch_1
     return-object v1
 
-    .line 73
+    .line 71
     :goto_0
     invoke-direct {p0, p1}, Landroidx/appcompat/widget/SuggestionsAdapter;->checkIconCache(Ljava/lang/String;)Landroid/graphics/drawable/Drawable;
 
+    .line 72
+    .line 73
     .line 74
-    .line 75
-    .line 76
     move-result-object v0
 
-    .line 77
+    .line 75
     if-eqz v0, :cond_2
 
-    .line 78
-    .line 79
+    .line 76
+    .line 77
     return-object v0
 
-    .line 80
+    .line 78
     :cond_2
     invoke-static {p1}, Landroid/net/Uri;->parse(Ljava/lang/String;)Landroid/net/Uri;
 
+    .line 79
+    .line 80
     .line 81
-    .line 82
-    .line 83
     move-result-object v0
 
-    .line 84
+    .line 82
     invoke-direct {p0, v0}, Landroidx/appcompat/widget/SuggestionsAdapter;->getDrawable(Landroid/net/Uri;)Landroid/graphics/drawable/Drawable;
 
+    .line 83
+    .line 84
     .line 85
-    .line 86
-    .line 87
     move-result-object v0
 
-    .line 88
+    .line 86
     invoke-direct {p0, p1, v0}, Landroidx/appcompat/widget/SuggestionsAdapter;->storeInIconCache(Ljava/lang/String;Landroid/graphics/drawable/Drawable;)V
 
+    .line 87
+    .line 88
     .line 89
-    .line 90
-    .line 91
     return-object v0
 
-    .line 92
+    .line 90
     :cond_3
     :goto_1
     return-object v1
@@ -2113,159 +2109,167 @@
 
     .line 47
     .line 48
-    new-instance v1, Ljava/lang/StringBuilder;
+    const-string v1, "Single path segment is not a resource ID: "
 
     .line 49
     .line 50
-    const-string v2, "Single path segment is not a resource ID: "
+    invoke-static {p1, v1}, Landroidx/appcompat/view/menu/F;->E(Landroid/net/Uri;Ljava/lang/String;)Ljava/lang/String;
 
     .line 51
     .line 52
-    invoke-direct {v1, v2}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
-
     .line 53
-    .line 54
-    .line 55
-    invoke-virtual {v1, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
-
-    .line 56
-    .line 57
-    .line 58
-    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    .line 59
-    .line 60
-    .line 61
     move-result-object p1
 
-    .line 62
+    .line 54
     invoke-direct {v0, p1}, Ljava/io/FileNotFoundException;-><init>(Ljava/lang/String;)V
 
-    .line 63
-    .line 64
-    .line 65
+    .line 55
+    .line 56
+    .line 57
     throw v0
 
-    .line 66
+    .line 58
     :cond_0
     const/4 v6, 0x2
 
-    .line 67
+    .line 59
     if-ne v3, v6, :cond_2
+
+    .line 60
+    .line 61
+    invoke-interface {v2, v5}, Ljava/util/List;->get(I)Ljava/lang/Object;
+
+    .line 62
+    .line 63
+    .line 64
+    move-result-object v3
+
+    .line 65
+    check-cast v3, Ljava/lang/String;
+
+    .line 66
+    .line 67
+    invoke-interface {v2, v4}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
     .line 68
     .line 69
-    invoke-interface {v2, v5}, Ljava/util/List;->get(I)Ljava/lang/Object;
-
     .line 70
-    .line 71
-    .line 72
-    move-result-object v3
+    move-result-object v2
 
+    .line 71
+    check-cast v2, Ljava/lang/String;
+
+    .line 72
     .line 73
-    check-cast v3, Ljava/lang/String;
+    invoke-virtual {v1, v3, v2, v0}, Landroid/content/res/Resources;->getIdentifier(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)I
 
     .line 74
     .line 75
-    invoke-interface {v2, v4}, Ljava/util/List;->get(I)Ljava/lang/Object;
-
     .line 76
-    .line 77
-    .line 78
-    move-result-object v2
-
-    .line 79
-    check-cast v2, Ljava/lang/String;
-
-    .line 80
-    .line 81
-    invoke-virtual {v1, v3, v2, v0}, Landroid/content/res/Resources;->getIdentifier(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)I
-
-    .line 82
-    .line 83
-    .line 84
     move-result v0
 
-    .line 85
+    .line 77
     :goto_0
     if-eqz v0, :cond_1
 
-    .line 86
-    .line 87
+    .line 78
+    .line 79
     invoke-virtual {v1, v0}, Landroid/content/res/Resources;->getDrawable(I)Landroid/graphics/drawable/Drawable;
 
-    .line 88
-    .line 89
-    .line 90
+    .line 80
+    .line 81
+    .line 82
     move-result-object p1
 
-    .line 91
+    .line 83
     return-object p1
 
-    .line 92
+    .line 84
     :cond_1
     new-instance v0, Ljava/io/FileNotFoundException;
 
+    .line 85
+    .line 86
+    const-string v1, "No resource found for: "
+
+    .line 87
+    .line 88
+    invoke-static {p1, v1}, Landroidx/appcompat/view/menu/F;->E(Landroid/net/Uri;Ljava/lang/String;)Ljava/lang/String;
+
+    .line 89
+    .line 90
+    .line 91
+    move-result-object p1
+
+    .line 92
+    invoke-direct {v0, p1}, Ljava/io/FileNotFoundException;-><init>(Ljava/lang/String;)V
+
     .line 93
     .line 94
-    new-instance v1, Ljava/lang/StringBuilder;
-
     .line 95
+    throw v0
+
     .line 96
-    const-string v2, "No resource found for: "
+    :cond_2
+    new-instance v0, Ljava/io/FileNotFoundException;
 
     .line 97
     .line 98
-    invoke-direct {v1, v2}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+    const-string v1, "More than two path segments: "
 
     .line 99
     .line 100
-    .line 101
-    invoke-virtual {v1, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+    invoke-static {p1, v1}, Landroidx/appcompat/view/menu/F;->E(Landroid/net/Uri;Ljava/lang/String;)Ljava/lang/String;
 
+    .line 101
     .line 102
     .line 103
+    move-result-object p1
+
     .line 104
-    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    invoke-direct {v0, p1}, Ljava/io/FileNotFoundException;-><init>(Ljava/lang/String;)V
 
     .line 105
     .line 106
     .line 107
-    move-result-object p1
+    throw v0
 
     .line 108
-    invoke-direct {v0, p1}, Ljava/io/FileNotFoundException;-><init>(Ljava/lang/String;)V
+    :cond_3
+    new-instance v0, Ljava/io/FileNotFoundException;
 
     .line 109
     .line 110
-    .line 111
-    throw v0
+    const-string v1, "No path: "
 
+    .line 111
     .line 112
-    :cond_2
-    new-instance v0, Ljava/io/FileNotFoundException;
+    invoke-static {p1, v1}, Landroidx/appcompat/view/menu/F;->E(Landroid/net/Uri;Ljava/lang/String;)Ljava/lang/String;
 
     .line 113
     .line 114
-    new-instance v1, Ljava/lang/StringBuilder;
-
     .line 115
+    move-result-object p1
+
     .line 116
-    const-string v2, "More than two path segments: "
+    invoke-direct {v0, p1}, Ljava/io/FileNotFoundException;-><init>(Ljava/lang/String;)V
 
     .line 117
     .line 118
-    invoke-direct {v1, v2}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
-
     .line 119
-    .line 120
-    .line 121
-    invoke-virtual {v1, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+    throw v0
 
+    .line 120
+    :catch_1
+    new-instance v0, Ljava/io/FileNotFoundException;
+
+    .line 121
     .line 122
+    const-string v1, "No package found for authority: "
+
     .line 123
     .line 124
-    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    invoke-static {p1, v1}, Landroidx/appcompat/view/menu/F;->E(Landroid/net/Uri;Ljava/lang/String;)Ljava/lang/String;
 
     .line 125
     .line 126
@@ -2281,120 +2285,28 @@
     throw v0
 
     .line 132
-    :cond_3
+    :cond_4
     new-instance v0, Ljava/io/FileNotFoundException;
 
     .line 133
     .line 134
-    new-instance v1, Ljava/lang/StringBuilder;
+    const-string v1, "No authority: "
 
     .line 135
     .line 136
-    const-string v2, "No path: "
+    invoke-static {p1, v1}, Landroidx/appcompat/view/menu/F;->E(Landroid/net/Uri;Ljava/lang/String;)Ljava/lang/String;
 
     .line 137
     .line 138
-    invoke-direct {v1, v2}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
-
     .line 139
-    .line 140
-    .line 141
-    invoke-virtual {v1, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+    move-result-object p1
 
+    .line 140
+    invoke-direct {v0, p1}, Ljava/io/FileNotFoundException;-><init>(Ljava/lang/String;)V
+
+    .line 141
     .line 142
     .line 143
-    .line 144
-    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    .line 145
-    .line 146
-    .line 147
-    move-result-object p1
-
-    .line 148
-    invoke-direct {v0, p1}, Ljava/io/FileNotFoundException;-><init>(Ljava/lang/String;)V
-
-    .line 149
-    .line 150
-    .line 151
-    throw v0
-
-    .line 152
-    :catch_1
-    new-instance v0, Ljava/io/FileNotFoundException;
-
-    .line 153
-    .line 154
-    new-instance v1, Ljava/lang/StringBuilder;
-
-    .line 155
-    .line 156
-    const-string v2, "No package found for authority: "
-
-    .line 157
-    .line 158
-    invoke-direct {v1, v2}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
-
-    .line 159
-    .line 160
-    .line 161
-    invoke-virtual {v1, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
-
-    .line 162
-    .line 163
-    .line 164
-    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    .line 165
-    .line 166
-    .line 167
-    move-result-object p1
-
-    .line 168
-    invoke-direct {v0, p1}, Ljava/io/FileNotFoundException;-><init>(Ljava/lang/String;)V
-
-    .line 169
-    .line 170
-    .line 171
-    throw v0
-
-    .line 172
-    :cond_4
-    new-instance v0, Ljava/io/FileNotFoundException;
-
-    .line 173
-    .line 174
-    new-instance v1, Ljava/lang/StringBuilder;
-
-    .line 175
-    .line 176
-    const-string v2, "No authority: "
-
-    .line 177
-    .line 178
-    invoke-direct {v1, v2}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
-
-    .line 179
-    .line 180
-    .line 181
-    invoke-virtual {v1, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
-
-    .line 182
-    .line 183
-    .line 184
-    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    .line 185
-    .line 186
-    .line 187
-    move-result-object p1
-
-    .line 188
-    invoke-direct {v0, p1}, Ljava/io/FileNotFoundException;-><init>(Ljava/lang/String;)V
-
-    .line 189
-    .line 190
-    .line 191
     throw v0
 .end method
 
@@ -2480,8 +2392,11 @@
 .method public getQueryRefinement()I
     .locals 1
 
+    .line 1
     iget v0, p0, Landroidx/appcompat/widget/SuggestionsAdapter;->mQueryRefinement:I
 
+    .line 2
+    .line 3
     return v0
 .end method
 
@@ -2604,87 +2519,93 @@
 
     .line 56
     .line 57
-    filled-new-array {p2}, [Ljava/lang/String;
+    const/4 p1, 0x1
 
     .line 58
+    new-array v0, p1, [Ljava/lang/String;
+
     .line 59
     .line 60
-    move-result-object v0
+    const/4 p1, 0x0
 
     .line 61
+    aput-object p2, v0, p1
+
+    .line 62
+    .line 63
     :goto_0
     move-object v7, v0
 
-    .line 62
+    .line 64
     goto :goto_1
 
-    .line 63
+    .line 65
     :cond_3
     invoke-virtual {v1, p2}, Landroid/net/Uri$Builder;->appendPath(Ljava/lang/String;)Landroid/net/Uri$Builder;
 
-    .line 64
-    .line 65
     .line 66
+    .line 67
+    .line 68
     goto :goto_0
 
-    .line 67
+    .line 69
     :goto_1
     if-lez p3, :cond_4
 
-    .line 68
-    .line 69
-    const-string p1, "limit"
-
     .line 70
     .line 71
-    invoke-static {p3}, Ljava/lang/String;->valueOf(I)Ljava/lang/String;
+    const-string p1, "limit"
 
     .line 72
     .line 73
+    invoke-static {p3}, Ljava/lang/String;->valueOf(I)Ljava/lang/String;
+
     .line 74
+    .line 75
+    .line 76
     move-result-object p2
 
-    .line 75
+    .line 77
     invoke-virtual {v1, p1, p2}, Landroid/net/Uri$Builder;->appendQueryParameter(Ljava/lang/String;Ljava/lang/String;)Landroid/net/Uri$Builder;
 
-    .line 76
-    .line 77
     .line 78
+    .line 79
+    .line 80
     :cond_4
     invoke-virtual {v1}, Landroid/net/Uri$Builder;->build()Landroid/net/Uri;
 
-    .line 79
-    .line 80
     .line 81
+    .line 82
+    .line 83
     move-result-object v4
 
-    .line 82
-    iget-object p1, p0, Landroidx/appcompat/widget/SuggestionsAdapter;->mProviderContext:Landroid/content/Context;
-
-    .line 83
     .line 84
-    invoke-virtual {p1}, Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;
+    iget-object p1, p0, Landroidx/appcompat/widget/SuggestionsAdapter;->mProviderContext:Landroid/content/Context;
 
     .line 85
     .line 86
+    invoke-virtual {p1}, Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;
+
     .line 87
+    .line 88
+    .line 89
     move-result-object v3
 
-    .line 88
+    .line 90
     const/4 v5, 0x0
 
-    .line 89
+    .line 91
     const/4 v8, 0x0
 
-    .line 90
+    .line 92
     invoke-virtual/range {v3 .. v8}, Landroid/content/ContentResolver;->query(Landroid/net/Uri;[Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;Ljava/lang/String;)Landroid/database/Cursor;
 
-    .line 91
-    .line 92
     .line 93
+    .line 94
+    .line 95
     move-result-object p1
 
-    .line 94
+    .line 96
     return-object p1
 .end method
 
@@ -2801,7 +2722,7 @@
     .line 11
     .line 12
     .line 13
-    sget p2, Lg/f;->edit_query:I
+    sget p2, Li/f;->edit_query:I
 
     .line 14
     .line 15
@@ -3020,7 +2941,10 @@
 .method public setQueryRefinement(I)V
     .locals 0
 
+    .line 1
     iput p1, p0, Landroidx/appcompat/widget/SuggestionsAdapter;->mQueryRefinement:I
 
+    .line 2
+    .line 3
     return-void
 .end method

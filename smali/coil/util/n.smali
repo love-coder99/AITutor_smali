@@ -4,7 +4,7 @@
 
 
 # static fields
-.field public static final a:Lzh/a;
+.field public static final a:Lka/a;
 
 
 # direct methods
@@ -16,7 +16,7 @@
 
     .line 2
     .line 3
-    sput-object v0, Lcoil/util/n;->a:Lzh/a;
+    sput-object v0, Lcoil/util/n;->a:Lka/a;
 
     .line 4
     .line 5

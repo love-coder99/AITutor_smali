@@ -19,18 +19,26 @@
 
 .field private mDragListener:Landroid/view/View$OnTouchListener;
 
-.field private final mMenu:Landroidx/appcompat/view/menu/p;
+.field private final mMenu:Landroidx/appcompat/view/menu/n;
 
 .field mMenuItemClickListener:Landroidx/appcompat/widget/PopupMenu$OnMenuItemClickListener;
 
 .field mOnDismissListener:Landroidx/appcompat/widget/PopupMenu$OnDismissListener;
 
-.field final mPopup:Landroidx/appcompat/view/menu/z;
+.field final mPopup:Landroidx/appcompat/view/menu/x;
 
 
 # direct methods
 .method public constructor <init>(Landroid/content/Context;Landroid/view/View;)V
     .locals 1
+    .param p1    # Landroid/content/Context;
+        .annotation build Landroidx/annotation/NonNull;
+        .end annotation
+    .end param
+    .param p2    # Landroid/view/View;
+        .annotation build Landroidx/annotation/NonNull;
+        .end annotation
+    .end param
 
     const/4 v0, 0x0
 
@@ -42,8 +50,17 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/view/View;I)V
     .locals 6
+    .param p1    # Landroid/content/Context;
+        .annotation build Landroidx/annotation/NonNull;
+        .end annotation
+    .end param
+    .param p2    # Landroid/view/View;
+        .annotation build Landroidx/annotation/NonNull;
+        .end annotation
+    .end param
 
-    sget v4, Lg/a;->popupMenuStyle:I
+    .line 2
+    sget v4, Li/a;->popupMenuStyle:I
 
     const/4 v5, 0x0
 
@@ -55,7 +72,6 @@
 
     move v3, p3
 
-    .line 2
     invoke-direct/range {v0 .. v5}, Landroidx/appcompat/widget/PopupMenu;-><init>(Landroid/content/Context;Landroid/view/View;III)V
 
     return-void
@@ -63,30 +79,41 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/view/View;III)V
     .locals 8
+    .param p1    # Landroid/content/Context;
+        .annotation build Landroidx/annotation/NonNull;
+        .end annotation
+    .end param
+    .param p2    # Landroid/view/View;
+        .annotation build Landroidx/annotation/NonNull;
+        .end annotation
+    .end param
 
     .line 3
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
+    .line 4
     iput-object p1, p0, Landroidx/appcompat/widget/PopupMenu;->mContext:Landroid/content/Context;
 
+    .line 5
     iput-object p2, p0, Landroidx/appcompat/widget/PopupMenu;->mAnchor:Landroid/view/View;
 
-    .line 4
-    new-instance v5, Landroidx/appcompat/view/menu/p;
+    .line 6
+    new-instance v5, Landroidx/appcompat/view/menu/n;
 
-    invoke-direct {v5, p1}, Landroidx/appcompat/view/menu/p;-><init>(Landroid/content/Context;)V
+    invoke-direct {v5, p1}, Landroidx/appcompat/view/menu/n;-><init>(Landroid/content/Context;)V
 
-    iput-object v5, p0, Landroidx/appcompat/widget/PopupMenu;->mMenu:Landroidx/appcompat/view/menu/p;
+    iput-object v5, p0, Landroidx/appcompat/widget/PopupMenu;->mMenu:Landroidx/appcompat/view/menu/n;
 
-    .line 5
+    .line 7
     new-instance v0, Landroidx/appcompat/widget/PopupMenu$1;
 
     invoke-direct {v0, p0}, Landroidx/appcompat/widget/PopupMenu$1;-><init>(Landroidx/appcompat/widget/PopupMenu;)V
 
-    invoke-virtual {v5, v0}, Landroidx/appcompat/view/menu/p;->w(Landroidx/appcompat/view/menu/n;)V
+    .line 8
+    iput-object v0, v5, Landroidx/appcompat/view/menu/n;->g:Landroidx/appcompat/view/menu/l;
 
-    .line 6
-    new-instance v7, Landroidx/appcompat/view/menu/z;
+    .line 9
+    new-instance v7, Landroidx/appcompat/view/menu/x;
 
     const/4 v6, 0x0
 
@@ -100,19 +127,19 @@
 
     move-object v4, p2
 
-    invoke-direct/range {v0 .. v6}, Landroidx/appcompat/view/menu/z;-><init>(IILandroid/content/Context;Landroid/view/View;Landroidx/appcompat/view/menu/p;Z)V
+    invoke-direct/range {v0 .. v6}, Landroidx/appcompat/view/menu/x;-><init>(IILandroid/content/Context;Landroid/view/View;Landroidx/appcompat/view/menu/n;Z)V
 
-    iput-object v7, p0, Landroidx/appcompat/widget/PopupMenu;->mPopup:Landroidx/appcompat/view/menu/z;
+    iput-object v7, p0, Landroidx/appcompat/widget/PopupMenu;->mPopup:Landroidx/appcompat/view/menu/x;
 
-    .line 7
-    invoke-virtual {v7, p3}, Landroidx/appcompat/view/menu/z;->setGravity(I)V
+    .line 10
+    invoke-virtual {v7, p3}, Landroidx/appcompat/view/menu/x;->setGravity(I)V
 
-    .line 8
+    .line 11
     new-instance p1, Landroidx/appcompat/widget/PopupMenu$2;
 
     invoke-direct {p1, p0}, Landroidx/appcompat/widget/PopupMenu$2;-><init>(Landroidx/appcompat/widget/PopupMenu;)V
 
-    invoke-virtual {v7, p1}, Landroidx/appcompat/view/menu/z;->setOnDismissListener(Landroid/widget/PopupWindow$OnDismissListener;)V
+    invoke-virtual {v7, p1}, Landroidx/appcompat/view/menu/x;->setOnDismissListener(Landroid/widget/PopupWindow$OnDismissListener;)V
 
     return-void
 .end method
@@ -123,11 +150,11 @@
     .locals 1
 
     .line 1
-    iget-object v0, p0, Landroidx/appcompat/widget/PopupMenu;->mPopup:Landroidx/appcompat/view/menu/z;
+    iget-object v0, p0, Landroidx/appcompat/widget/PopupMenu;->mPopup:Landroidx/appcompat/view/menu/x;
 
     .line 2
     .line 3
-    invoke-virtual {v0}, Landroidx/appcompat/view/menu/z;->dismiss()V
+    invoke-virtual {v0}, Landroidx/appcompat/view/menu/x;->dismiss()V
 
     .line 4
     .line 5
@@ -137,6 +164,8 @@
 
 .method public getDragToOpenListener()Landroid/view/View$OnTouchListener;
     .locals 2
+    .annotation build Landroidx/annotation/NonNull;
+    .end annotation
 
     .line 1
     iget-object v0, p0, Landroidx/appcompat/widget/PopupMenu;->mDragListener:Landroid/view/View$OnTouchListener;
@@ -176,11 +205,11 @@
     .locals 1
 
     .line 1
-    iget-object v0, p0, Landroidx/appcompat/widget/PopupMenu;->mPopup:Landroidx/appcompat/view/menu/z;
+    iget-object v0, p0, Landroidx/appcompat/widget/PopupMenu;->mPopup:Landroidx/appcompat/view/menu/x;
 
     .line 2
     .line 3
-    invoke-virtual {v0}, Landroidx/appcompat/view/menu/z;->getGravity()I
+    invoke-virtual {v0}, Landroidx/appcompat/view/menu/x;->getGravity()I
 
     .line 4
     .line 5
@@ -193,17 +222,24 @@
 
 .method public getMenu()Landroid/view/Menu;
     .locals 1
+    .annotation build Landroidx/annotation/NonNull;
+    .end annotation
 
-    iget-object v0, p0, Landroidx/appcompat/widget/PopupMenu;->mMenu:Landroidx/appcompat/view/menu/p;
+    .line 1
+    iget-object v0, p0, Landroidx/appcompat/widget/PopupMenu;->mMenu:Landroidx/appcompat/view/menu/n;
 
+    .line 2
+    .line 3
     return-object v0
 .end method
 
 .method public getMenuInflater()Landroid/view/MenuInflater;
     .locals 2
+    .annotation build Landroidx/annotation/NonNull;
+    .end annotation
 
     .line 1
-    new-instance v0, Lk/j;
+    new-instance v0, Ln/h;
 
     .line 2
     .line 3
@@ -211,7 +247,7 @@
 
     .line 4
     .line 5
-    invoke-direct {v0, v1}, Lk/j;-><init>(Landroid/content/Context;)V
+    invoke-direct {v0, v1}, Ln/h;-><init>(Landroid/content/Context;)V
 
     .line 6
     .line 7
@@ -223,11 +259,11 @@
     .locals 1
 
     .line 1
-    iget-object v0, p0, Landroidx/appcompat/widget/PopupMenu;->mPopup:Landroidx/appcompat/view/menu/z;
+    iget-object v0, p0, Landroidx/appcompat/widget/PopupMenu;->mPopup:Landroidx/appcompat/view/menu/x;
 
     .line 2
     .line 3
-    invoke-virtual {v0}, Landroidx/appcompat/view/menu/z;->isShowing()Z
+    invoke-virtual {v0}, Landroidx/appcompat/view/menu/x;->isShowing()Z
 
     .line 4
     .line 5
@@ -246,11 +282,11 @@
 
     .line 11
     :cond_0
-    iget-object v0, p0, Landroidx/appcompat/widget/PopupMenu;->mPopup:Landroidx/appcompat/view/menu/z;
+    iget-object v0, p0, Landroidx/appcompat/widget/PopupMenu;->mPopup:Landroidx/appcompat/view/menu/x;
 
     .line 12
     .line 13
-    invoke-virtual {v0}, Landroidx/appcompat/view/menu/z;->getListView()Landroid/widget/ListView;
+    invoke-virtual {v0}, Landroidx/appcompat/view/menu/x;->getListView()Landroid/widget/ListView;
 
     .line 14
     .line 15
@@ -273,7 +309,7 @@
     move-result-object v0
 
     .line 5
-    iget-object v1, p0, Landroidx/appcompat/widget/PopupMenu;->mMenu:Landroidx/appcompat/view/menu/p;
+    iget-object v1, p0, Landroidx/appcompat/widget/PopupMenu;->mMenu:Landroidx/appcompat/view/menu/n;
 
     .line 6
     .line 7
@@ -289,11 +325,11 @@
     .locals 1
 
     .line 1
-    iget-object v0, p0, Landroidx/appcompat/widget/PopupMenu;->mPopup:Landroidx/appcompat/view/menu/z;
+    iget-object v0, p0, Landroidx/appcompat/widget/PopupMenu;->mPopup:Landroidx/appcompat/view/menu/x;
 
     .line 2
     .line 3
-    invoke-virtual {v0, p1}, Landroidx/appcompat/view/menu/z;->setForceShowIcon(Z)V
+    invoke-virtual {v0, p1}, Landroidx/appcompat/view/menu/x;->setForceShowIcon(Z)V
 
     .line 4
     .line 5
@@ -305,11 +341,11 @@
     .locals 1
 
     .line 1
-    iget-object v0, p0, Landroidx/appcompat/widget/PopupMenu;->mPopup:Landroidx/appcompat/view/menu/z;
+    iget-object v0, p0, Landroidx/appcompat/widget/PopupMenu;->mPopup:Landroidx/appcompat/view/menu/x;
 
     .line 2
     .line 3
-    invoke-virtual {v0, p1}, Landroidx/appcompat/view/menu/z;->setGravity(I)V
+    invoke-virtual {v0, p1}, Landroidx/appcompat/view/menu/x;->setGravity(I)V
 
     .line 4
     .line 5
@@ -319,17 +355,31 @@
 
 .method public setOnDismissListener(Landroidx/appcompat/widget/PopupMenu$OnDismissListener;)V
     .locals 0
+    .param p1    # Landroidx/appcompat/widget/PopupMenu$OnDismissListener;
+        .annotation build Landroidx/annotation/Nullable;
+        .end annotation
+    .end param
 
+    .line 1
     iput-object p1, p0, Landroidx/appcompat/widget/PopupMenu;->mOnDismissListener:Landroidx/appcompat/widget/PopupMenu$OnDismissListener;
 
+    .line 2
+    .line 3
     return-void
 .end method
 
 .method public setOnMenuItemClickListener(Landroidx/appcompat/widget/PopupMenu$OnMenuItemClickListener;)V
     .locals 0
+    .param p1    # Landroidx/appcompat/widget/PopupMenu$OnMenuItemClickListener;
+        .annotation build Landroidx/annotation/Nullable;
+        .end annotation
+    .end param
 
+    .line 1
     iput-object p1, p0, Landroidx/appcompat/widget/PopupMenu;->mMenuItemClickListener:Landroidx/appcompat/widget/PopupMenu$OnMenuItemClickListener;
 
+    .line 2
+    .line 3
     return-void
 .end method
 
@@ -337,11 +387,11 @@
     .locals 1
 
     .line 1
-    iget-object v0, p0, Landroidx/appcompat/widget/PopupMenu;->mPopup:Landroidx/appcompat/view/menu/z;
+    iget-object v0, p0, Landroidx/appcompat/widget/PopupMenu;->mPopup:Landroidx/appcompat/view/menu/x;
 
     .line 2
     .line 3
-    invoke-virtual {v0}, Landroidx/appcompat/view/menu/z;->show()V
+    invoke-virtual {v0}, Landroidx/appcompat/view/menu/x;->show()V
 
     .line 4
     .line 5

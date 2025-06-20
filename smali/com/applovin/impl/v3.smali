@@ -1,108 +1,43 @@
-.class public Lcom/applovin/impl/v3;
-.super Lcom/applovin/impl/yl;
+.class public abstract synthetic Lcom/applovin/impl/V3;
+.super Ljava/lang/Object;
 .source "SourceFile"
 
 
-# instance fields
-.field private final h:Ljava/lang/String;
-
-.field private final i:Lcom/applovin/impl/sdk/network/a;
-
-
 # direct methods
-.method public constructor <init>(Ljava/lang/String;Lcom/applovin/impl/sdk/network/a;Lcom/applovin/impl/sdk/j;)V
+.method public static a(Lcom/applovin/impl/y6;Lcom/applovin/impl/y6;)V
     .locals 1
 
     .line 1
-    const-string v0, "CommunicatorRequestTask"
+    if-ne p0, p1, :cond_0
 
     .line 2
     .line 3
-    invoke-direct {p0, v0, p3, p1}, Lcom/applovin/impl/yl;-><init>(Ljava/lang/String;Lcom/applovin/impl/sdk/j;Ljava/lang/String;)V
-
-    .line 4
-    .line 5
-    .line 6
-    iput-object p1, p0, Lcom/applovin/impl/v3;->h:Ljava/lang/String;
-
-    .line 7
-    .line 8
-    iput-object p2, p0, Lcom/applovin/impl/v3;->i:Lcom/applovin/impl/sdk/network/a;
-
-    .line 9
-    .line 10
     return-void
-.end method
-
-.method public static synthetic a(Lcom/applovin/impl/v3;)Ljava/lang/String;
-    .locals 0
-
-    .line 1
-    iget-object p0, p0, Lcom/applovin/impl/v3;->h:Ljava/lang/String;
-
-    .line 2
-    .line 3
-    return-object p0
-.end method
-
-.method public static synthetic b(Lcom/applovin/impl/v3;)Lcom/applovin/impl/sdk/network/a;
-    .locals 0
-
-    .line 1
-    iget-object p0, p0, Lcom/applovin/impl/v3;->i:Lcom/applovin/impl/sdk/network/a;
-
-    .line 2
-    .line 3
-    return-object p0
-.end method
-
-
-# virtual methods
-.method public run()V
-    .locals 5
-
-    .line 1
-    iget-object v0, p0, Lcom/applovin/impl/yl;->a:Lcom/applovin/impl/sdk/j;
-
-    .line 2
-    .line 3
-    invoke-virtual {v0}, Lcom/applovin/impl/sdk/j;->i0()Lcom/applovin/impl/tm;
 
     .line 4
-    .line 5
-    .line 6
-    move-result-object v0
+    :cond_0
+    const/4 v0, 0x0
 
+    .line 5
+    if-eqz p1, :cond_1
+
+    .line 6
     .line 7
-    new-instance v1, Lcom/applovin/impl/v3$a;
+    invoke-interface {p1, v0}, Lcom/applovin/impl/y6;->b(Lcom/applovin/impl/z6$a;)V
 
     .line 8
     .line 9
-    iget-object v2, p0, Lcom/applovin/impl/v3;->i:Lcom/applovin/impl/sdk/network/a;
-
     .line 10
+    :cond_1
+    if-eqz p0, :cond_2
+
     .line 11
-    iget-object v3, p0, Lcom/applovin/impl/yl;->a:Lcom/applovin/impl/sdk/j;
-
     .line 12
-    .line 13
-    invoke-virtual {p0}, Lcom/applovin/impl/yl;->d()Z
+    invoke-interface {p0, v0}, Lcom/applovin/impl/y6;->a(Lcom/applovin/impl/z6$a;)V
 
+    .line 13
     .line 14
     .line 15
-    .line 16
-    move-result v4
-
-    .line 17
-    invoke-direct {v1, p0, v2, v3, v4}, Lcom/applovin/impl/v3$a;-><init>(Lcom/applovin/impl/v3;Lcom/applovin/impl/sdk/network/a;Lcom/applovin/impl/sdk/j;Z)V
-
-    .line 18
-    .line 19
-    .line 20
-    invoke-virtual {v0, v1}, Lcom/applovin/impl/tm;->a(Lcom/applovin/impl/yl;)V
-
-    .line 21
-    .line 22
-    .line 23
+    :cond_2
     return-void
 .end method

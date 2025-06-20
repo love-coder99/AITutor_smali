@@ -1,5 +1,5 @@
 .class public final Lcoil/h;
-.super Lkotlin/coroutines/a;
+.super Lba/a;
 .source "SourceFile"
 
 # interfaces
@@ -15,7 +15,7 @@
     .locals 1
 
     .line 1
-    sget-object v0, Lkotlinx/coroutines/u;->b:Lkotlinx/coroutines/u;
+    sget-object v0, Lkotlinx/coroutines/s;->b:Lkotlinx/coroutines/s;
 
     .line 2
     .line 3
@@ -23,7 +23,7 @@
 
     .line 4
     .line 5
-    invoke-direct {p0, v0}, Lkotlin/coroutines/a;-><init>(Lkotlin/coroutines/h;)V
+    invoke-direct {p0, v0}, Lba/a;-><init>(Lba/f;)V
 
     .line 6
     .line 7
@@ -33,7 +33,7 @@
 
 
 # virtual methods
-.method public final u(Lkotlin/coroutines/i;Ljava/lang/Throwable;)V
+.method public final e(Lba/g;Ljava/lang/Throwable;)V
     .locals 0
 
     .line 1

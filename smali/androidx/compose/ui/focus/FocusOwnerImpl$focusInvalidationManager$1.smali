@@ -3,14 +3,14 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lzh/a;
+.implements Lka/a;
 
 
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "Lkotlin/jvm/internal/FunctionReferenceImpl;",
-        "Lzh/a;"
+        "Lka/a;"
     }
 .end annotation
 
@@ -29,15 +29,15 @@
 .method public constructor <init>(Ljava/lang/Object;)V
     .locals 7
 
+    const-string v5, "invalidateOwnerFocusState()V"
+
+    const/4 v6, 0x0
+
     const/4 v1, 0x0
 
     const-class v3, Landroidx/compose/ui/focus/k;
 
     const-string v4, "invalidateOwnerFocusState"
-
-    const-string v5, "invalidateOwnerFocusState()V"
-
-    const/4 v6, 0x0
 
     move-object v0, p0
 
@@ -56,7 +56,7 @@
     .line 1
     invoke-virtual {p0}, Landroidx/compose/ui/focus/FocusOwnerImpl$focusInvalidationManager$1;->invoke()V
 
-    sget-object v0, Lqh/r;->a:Lqh/r;
+    sget-object v0, LX9/j;->a:LX9/j;
 
     return-object v0
 .end method
@@ -64,16 +64,16 @@
 .method public final invoke()V
     .locals 3
 
+    .line 2
     iget-object v0, p0, Lkotlin/jvm/internal/CallableReference;->receiver:Ljava/lang/Object;
 
-    .line 2
     check-cast v0, Landroidx/compose/ui/focus/k;
 
     .line 3
     iget-object v1, v0, Landroidx/compose/ui/focus/k;->f:Landroidx/compose/ui/focus/w;
 
     .line 4
-    invoke-virtual {v1}, Landroidx/compose/ui/focus/w;->B0()Landroidx/compose/ui/focus/FocusStateImpl;
+    invoke-virtual {v1}, Landroidx/compose/ui/focus/w;->z0()Landroidx/compose/ui/focus/FocusStateImpl;
 
     move-result-object v1
 
@@ -82,9 +82,9 @@
     if-ne v1, v2, :cond_0
 
     .line 5
-    iget-object v0, v0, Landroidx/compose/ui/focus/k;->c:Lzh/a;
+    iget-object v0, v0, Landroidx/compose/ui/focus/k;->c:Lka/a;
 
-    invoke-interface {v0}, Lzh/a;->invoke()Ljava/lang/Object;
+    invoke-interface {v0}, Lka/a;->invoke()Ljava/lang/Object;
 
     :cond_0
     return-void

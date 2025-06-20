@@ -1,5 +1,5 @@
 .class public abstract Landroidx/viewpager2/adapter/FragmentStateAdapter;
-.super Landroidx/recyclerview/widget/g0;
+.super Landroidx/recyclerview/widget/C;
 .source "SourceFile"
 
 # interfaces
@@ -9,7 +9,7 @@
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
-        "Landroidx/recyclerview/widget/g0;",
+        "Landroidx/recyclerview/widget/C;",
         "Landroidx/viewpager2/adapter/j;"
     }
 .end annotation
@@ -26,14 +26,14 @@
 # instance fields
 .field mFragmentEventDispatcher:Landroidx/viewpager2/adapter/d;
 
-.field final mFragmentManager:Landroidx/fragment/app/v0;
+.field final mFragmentManager:Landroidx/fragment/app/Y;
 
 .field private mFragmentMaxLifecycleEnforcer:Landroidx/viewpager2/adapter/h;
 
-.field final mFragments:Landroidx/collection/o;
+.field final mFragments:Landroidx/collection/n;
     .annotation system Ldalvik/annotation/Signature;
         value = {
-            "Landroidx/collection/o;"
+            "Landroidx/collection/n;"
         }
     .end annotation
 .end field
@@ -42,20 +42,20 @@
 
 .field mIsInGracePeriod:Z
 
-.field private final mItemIdToViewHolder:Landroidx/collection/o;
+.field private final mItemIdToViewHolder:Landroidx/collection/n;
     .annotation system Ldalvik/annotation/Signature;
         value = {
-            "Landroidx/collection/o;"
+            "Landroidx/collection/n;"
         }
     .end annotation
 .end field
 
-.field final mLifecycle:Landroidx/lifecycle/p;
+.field final mLifecycle:Landroidx/lifecycle/r;
 
-.field private final mSavedStates:Landroidx/collection/o;
+.field private final mSavedStates:Landroidx/collection/n;
     .annotation system Ldalvik/annotation/Signature;
         value = {
-            "Landroidx/collection/o;"
+            "Landroidx/collection/n;"
         }
     .end annotation
 .end field
@@ -188,7 +188,7 @@
 
     .line 6
     .line 7
-    invoke-virtual {p0}, Landroidx/recyclerview/widget/g0;->getItemCount()I
+    invoke-virtual {p0}, Landroidx/recyclerview/widget/C;->getItemCount()I
 
     .line 8
     .line 9
@@ -236,11 +236,11 @@
 
     .line 4
     .line 5
-    iget-object v0, p0, Landroidx/viewpager2/adapter/FragmentStateAdapter;->mFragmentManager:Landroidx/fragment/app/v0;
+    iget-object v0, p0, Landroidx/viewpager2/adapter/FragmentStateAdapter;->mFragmentManager:Landroidx/fragment/app/Y;
 
     .line 6
     .line 7
-    invoke-virtual {v0}, Landroidx/fragment/app/v0;->K()Z
+    invoke-virtual {v0}, Landroidx/fragment/app/Y;->K()Z
 
     .line 8
     .line 9
@@ -273,11 +273,11 @@
 
     .line 22
     :goto_0
-    iget-object v3, p0, Landroidx/viewpager2/adapter/FragmentStateAdapter;->mFragments:Landroidx/collection/o;
+    iget-object v3, p0, Landroidx/viewpager2/adapter/FragmentStateAdapter;->mFragments:Landroidx/collection/n;
 
     .line 23
     .line 24
-    invoke-virtual {v3}, Landroidx/collection/o;->k()I
+    invoke-virtual {v3}, Landroidx/collection/n;->k()I
 
     .line 25
     .line 26
@@ -289,11 +289,11 @@
 
     .line 29
     .line 30
-    iget-object v3, p0, Landroidx/viewpager2/adapter/FragmentStateAdapter;->mFragments:Landroidx/collection/o;
+    iget-object v3, p0, Landroidx/viewpager2/adapter/FragmentStateAdapter;->mFragments:Landroidx/collection/n;
 
     .line 31
     .line 32
-    invoke-virtual {v3, v2}, Landroidx/collection/o;->h(I)J
+    invoke-virtual {v3, v2}, Landroidx/collection/n;->h(I)J
 
     .line 33
     .line 34
@@ -326,11 +326,11 @@
     .line 47
     .line 48
     .line 49
-    iget-object v5, p0, Landroidx/viewpager2/adapter/FragmentStateAdapter;->mItemIdToViewHolder:Landroidx/collection/o;
+    iget-object v5, p0, Landroidx/viewpager2/adapter/FragmentStateAdapter;->mItemIdToViewHolder:Landroidx/collection/n;
 
     .line 50
     .line 51
-    invoke-virtual {v5, v3, v4}, Landroidx/collection/o;->j(J)V
+    invoke-virtual {v5, v3, v4}, Landroidx/collection/n;->j(J)V
 
     .line 52
     .line 53
@@ -357,11 +357,11 @@
     .line 62
     .line 63
     :goto_1
-    iget-object v2, p0, Landroidx/viewpager2/adapter/FragmentStateAdapter;->mFragments:Landroidx/collection/o;
+    iget-object v2, p0, Landroidx/viewpager2/adapter/FragmentStateAdapter;->mFragments:Landroidx/collection/n;
 
     .line 64
     .line 65
-    invoke-virtual {v2}, Landroidx/collection/o;->k()I
+    invoke-virtual {v2}, Landroidx/collection/n;->k()I
 
     .line 66
     .line 67
@@ -373,11 +373,11 @@
 
     .line 70
     .line 71
-    iget-object v2, p0, Landroidx/viewpager2/adapter/FragmentStateAdapter;->mFragments:Landroidx/collection/o;
+    iget-object v2, p0, Landroidx/viewpager2/adapter/FragmentStateAdapter;->mFragments:Landroidx/collection/n;
 
     .line 72
     .line 73
-    invoke-virtual {v2, v1}, Landroidx/collection/o;->h(I)J
+    invoke-virtual {v2, v1}, Landroidx/collection/n;->h(I)J
 
     .line 74
     .line 75
@@ -385,11 +385,11 @@
     move-result-wide v2
 
     .line 77
-    iget-object v4, p0, Landroidx/viewpager2/adapter/FragmentStateAdapter;->mItemIdToViewHolder:Landroidx/collection/o;
+    iget-object v4, p0, Landroidx/viewpager2/adapter/FragmentStateAdapter;->mItemIdToViewHolder:Landroidx/collection/n;
 
     .line 78
     .line 79
-    invoke-virtual {v4, v2, v3}, Landroidx/collection/o;->f(J)I
+    invoke-virtual {v4, v2, v3}, Landroidx/collection/n;->f(J)I
 
     .line 80
     .line 81
@@ -405,11 +405,11 @@
 
     .line 86
     :cond_3
-    iget-object v4, p0, Landroidx/viewpager2/adapter/FragmentStateAdapter;->mFragments:Landroidx/collection/o;
+    iget-object v4, p0, Landroidx/viewpager2/adapter/FragmentStateAdapter;->mFragments:Landroidx/collection/n;
 
     .line 87
     .line 88
-    invoke-virtual {v4, v2, v3}, Landroidx/collection/o;->d(J)Ljava/lang/Object;
+    invoke-virtual {v4, v2, v3}, Landroidx/collection/n;->d(J)Ljava/lang/Object;
 
     .line 89
     .line 90
@@ -494,7 +494,7 @@
     .line 125
     .line 126
     :goto_4
-    invoke-virtual {v1}, Landroidx/collection/j;->hasNext()Z
+    invoke-virtual {v1}, Landroidx/collection/b;->hasNext()Z
 
     .line 127
     .line 128
@@ -506,7 +506,7 @@
 
     .line 131
     .line 132
-    invoke-virtual {v1}, Landroidx/collection/j;->next()Ljava/lang/Object;
+    invoke-virtual {v1}, Landroidx/collection/b;->next()Ljava/lang/Object;
 
     .line 133
     .line 134
@@ -550,11 +550,11 @@
 
     .line 3
     :goto_0
-    iget-object v2, p0, Landroidx/viewpager2/adapter/FragmentStateAdapter;->mItemIdToViewHolder:Landroidx/collection/o;
+    iget-object v2, p0, Landroidx/viewpager2/adapter/FragmentStateAdapter;->mItemIdToViewHolder:Landroidx/collection/n;
 
     .line 4
     .line 5
-    invoke-virtual {v2}, Landroidx/collection/o;->k()I
+    invoke-virtual {v2}, Landroidx/collection/n;->k()I
 
     .line 6
     .line 7
@@ -566,11 +566,11 @@
 
     .line 10
     .line 11
-    iget-object v2, p0, Landroidx/viewpager2/adapter/FragmentStateAdapter;->mItemIdToViewHolder:Landroidx/collection/o;
+    iget-object v2, p0, Landroidx/viewpager2/adapter/FragmentStateAdapter;->mItemIdToViewHolder:Landroidx/collection/n;
 
     .line 12
     .line 13
-    invoke-virtual {v2, v1}, Landroidx/collection/o;->l(I)Ljava/lang/Object;
+    invoke-virtual {v2, v1}, Landroidx/collection/n;->l(I)Ljava/lang/Object;
 
     .line 14
     .line 15
@@ -598,11 +598,11 @@
 
     .line 26
     .line 27
-    iget-object v0, p0, Landroidx/viewpager2/adapter/FragmentStateAdapter;->mItemIdToViewHolder:Landroidx/collection/o;
+    iget-object v0, p0, Landroidx/viewpager2/adapter/FragmentStateAdapter;->mItemIdToViewHolder:Landroidx/collection/n;
 
     .line 28
     .line 29
-    invoke-virtual {v0, v1}, Landroidx/collection/o;->h(I)J
+    invoke-virtual {v0, v1}, Landroidx/collection/n;->h(I)J
 
     .line 30
     .line 31
@@ -655,11 +655,11 @@
     .locals 5
 
     .line 1
-    iget-object v0, p0, Landroidx/viewpager2/adapter/FragmentStateAdapter;->mFragments:Landroidx/collection/o;
+    iget-object v0, p0, Landroidx/viewpager2/adapter/FragmentStateAdapter;->mFragments:Landroidx/collection/n;
 
     .line 2
     .line 3
-    invoke-virtual {p1}, Landroidx/recyclerview/widget/h1;->getItemId()J
+    invoke-virtual {p1}, Landroidx/recyclerview/widget/c0;->getItemId()J
 
     .line 4
     .line 5
@@ -667,7 +667,7 @@
     move-result-wide v1
 
     .line 7
-    invoke-virtual {v0, v1, v2}, Landroidx/collection/o;->d(J)Ljava/lang/Object;
+    invoke-virtual {v0, v1, v2}, Landroidx/collection/n;->d(J)Ljava/lang/Object;
 
     .line 8
     .line 9
@@ -687,7 +687,7 @@
 
     .line 16
     .line 17
-    iget-object v2, p1, Landroidx/recyclerview/widget/h1;->itemView:Landroid/view/View;
+    iget-object v2, p1, Landroidx/recyclerview/widget/c0;->itemView:Landroid/view/View;
 
     .line 18
     .line 19
@@ -756,24 +756,24 @@
 
     .line 48
     .line 49
-    iget-object p1, p0, Landroidx/viewpager2/adapter/FragmentStateAdapter;->mFragmentManager:Landroidx/fragment/app/v0;
+    iget-object p1, p0, Landroidx/viewpager2/adapter/FragmentStateAdapter;->mFragmentManager:Landroidx/fragment/app/Y;
 
     .line 50
     .line 51
-    new-instance v1, Landroidx/viewpager2/adapter/a;
+    new-instance v1, Landroidx/viewpager2/adapter/b;
 
     .line 52
     .line 53
-    invoke-direct {v1, p0, v0, v2}, Landroidx/viewpager2/adapter/a;-><init>(Landroidx/viewpager2/adapter/FragmentStateAdapter;Landroidx/fragment/app/Fragment;Landroid/widget/FrameLayout;)V
+    invoke-direct {v1, p0, v0, v2}, Landroidx/viewpager2/adapter/b;-><init>(Landroidx/viewpager2/adapter/FragmentStateAdapter;Landroidx/fragment/app/Fragment;Landroid/widget/FrameLayout;)V
 
     .line 54
     .line 55
     .line 56
-    iget-object p1, p1, Landroidx/fragment/app/v0;->l:Landroidx/fragment/app/f0;
+    iget-object p1, p1, Landroidx/fragment/app/Y;->l:Landroidx/fragment/app/F;
 
     .line 57
     .line 58
-    iget-object p1, p1, Landroidx/fragment/app/f0;->a:Ljava/lang/Cloneable;
+    iget-object p1, p1, Landroidx/fragment/app/F;->a:Ljava/lang/Cloneable;
 
     .line 59
     .line 60
@@ -781,11 +781,11 @@
 
     .line 61
     .line 62
-    new-instance v0, Landroidx/fragment/app/m0;
+    new-instance v0, Landroidx/fragment/app/M;
 
     .line 63
     .line 64
-    invoke-direct {v0, v1, v4}, Landroidx/fragment/app/m0;-><init>(Landroidx/fragment/app/s0;Z)V
+    invoke-direct {v0, v1, v4}, Landroidx/fragment/app/M;-><init>(Landroidx/fragment/app/V;Z)V
 
     .line 65
     .line 66
@@ -866,11 +866,11 @@
 
     .line 103
     :cond_5
-    iget-object v1, p0, Landroidx/viewpager2/adapter/FragmentStateAdapter;->mFragmentManager:Landroidx/fragment/app/v0;
+    iget-object v1, p0, Landroidx/viewpager2/adapter/FragmentStateAdapter;->mFragmentManager:Landroidx/fragment/app/Y;
 
     .line 104
     .line 105
-    invoke-virtual {v1}, Landroidx/fragment/app/v0;->K()Z
+    invoke-virtual {v1}, Landroidx/fragment/app/Y;->K()Z
 
     .line 106
     .line 107
@@ -882,11 +882,11 @@
 
     .line 110
     .line 111
-    iget-object v0, p0, Landroidx/viewpager2/adapter/FragmentStateAdapter;->mFragmentManager:Landroidx/fragment/app/v0;
+    iget-object v0, p0, Landroidx/viewpager2/adapter/FragmentStateAdapter;->mFragmentManager:Landroidx/fragment/app/Y;
 
     .line 112
     .line 113
-    iget-boolean v0, v0, Landroidx/fragment/app/v0;->G:Z
+    iget-boolean v0, v0, Landroidx/fragment/app/Y;->G:Z
 
     .line 114
     .line 115
@@ -898,20 +898,20 @@
 
     .line 118
     :cond_6
-    iget-object v0, p0, Landroidx/viewpager2/adapter/FragmentStateAdapter;->mLifecycle:Landroidx/lifecycle/p;
+    iget-object v0, p0, Landroidx/viewpager2/adapter/FragmentStateAdapter;->mLifecycle:Landroidx/lifecycle/r;
 
     .line 119
     .line 120
-    new-instance v1, Landroidx/lifecycle/g;
+    new-instance v1, Landroidx/viewpager2/adapter/a;
 
     .line 121
     .line 122
-    invoke-direct {v1, p0, p1}, Landroidx/lifecycle/g;-><init>(Landroidx/viewpager2/adapter/FragmentStateAdapter;Landroidx/viewpager2/adapter/i;)V
+    invoke-direct {v1, p0, p1}, Landroidx/viewpager2/adapter/a;-><init>(Landroidx/viewpager2/adapter/FragmentStateAdapter;Landroidx/viewpager2/adapter/i;)V
 
     .line 123
     .line 124
     .line 125
-    invoke-virtual {v0, v1}, Landroidx/lifecycle/p;->a(Landroidx/lifecycle/v;)V
+    invoke-virtual {v0, v1}, Landroidx/lifecycle/r;->a(Landroidx/lifecycle/w;)V
 
     .line 126
     .line 127
@@ -920,24 +920,24 @@
 
     .line 129
     :cond_7
-    iget-object p1, p0, Landroidx/viewpager2/adapter/FragmentStateAdapter;->mFragmentManager:Landroidx/fragment/app/v0;
+    iget-object p1, p0, Landroidx/viewpager2/adapter/FragmentStateAdapter;->mFragmentManager:Landroidx/fragment/app/Y;
 
     .line 130
     .line 131
-    new-instance v1, Landroidx/viewpager2/adapter/a;
+    new-instance v1, Landroidx/viewpager2/adapter/b;
 
     .line 132
     .line 133
-    invoke-direct {v1, p0, v0, v2}, Landroidx/viewpager2/adapter/a;-><init>(Landroidx/viewpager2/adapter/FragmentStateAdapter;Landroidx/fragment/app/Fragment;Landroid/widget/FrameLayout;)V
+    invoke-direct {v1, p0, v0, v2}, Landroidx/viewpager2/adapter/b;-><init>(Landroidx/viewpager2/adapter/FragmentStateAdapter;Landroidx/fragment/app/Fragment;Landroid/widget/FrameLayout;)V
 
     .line 134
     .line 135
     .line 136
-    iget-object p1, p1, Landroidx/fragment/app/v0;->l:Landroidx/fragment/app/f0;
+    iget-object p1, p1, Landroidx/fragment/app/Y;->l:Landroidx/fragment/app/F;
 
     .line 137
     .line 138
-    iget-object p1, p1, Landroidx/fragment/app/f0;->a:Ljava/lang/Cloneable;
+    iget-object p1, p1, Landroidx/fragment/app/F;->a:Ljava/lang/Cloneable;
 
     .line 139
     .line 140
@@ -945,11 +945,11 @@
 
     .line 141
     .line 142
-    new-instance v0, Landroidx/fragment/app/m0;
+    new-instance v0, Landroidx/fragment/app/M;
 
     .line 143
     .line 144
-    invoke-direct {v0, v1, v4}, Landroidx/fragment/app/m0;-><init>(Landroidx/fragment/app/s0;Z)V
+    invoke-direct {v0, v1, v4}, Landroidx/fragment/app/M;-><init>(Landroidx/fragment/app/V;Z)V
 
     .line 145
     .line 146
@@ -982,11 +982,11 @@
     .locals 2
 
     .line 1
-    iget-object v0, p0, Landroidx/viewpager2/adapter/FragmentStateAdapter;->mFragments:Landroidx/collection/o;
+    iget-object v0, p0, Landroidx/viewpager2/adapter/FragmentStateAdapter;->mFragments:Landroidx/collection/n;
 
     .line 2
     .line 3
-    invoke-virtual {v0, p1, p2}, Landroidx/collection/o;->d(J)Ljava/lang/Object;
+    invoke-virtual {v0, p1, p2}, Landroidx/collection/n;->d(J)Ljava/lang/Object;
 
     .line 4
     .line 5
@@ -1060,11 +1060,11 @@
 
     .line 38
     .line 39
-    iget-object v1, p0, Landroidx/viewpager2/adapter/FragmentStateAdapter;->mSavedStates:Landroidx/collection/o;
+    iget-object v1, p0, Landroidx/viewpager2/adapter/FragmentStateAdapter;->mSavedStates:Landroidx/collection/n;
 
     .line 40
     .line 41
-    invoke-virtual {v1, p1, p2}, Landroidx/collection/o;->j(J)V
+    invoke-virtual {v1, p1, p2}, Landroidx/collection/n;->j(J)V
 
     .line 42
     .line 43
@@ -1082,11 +1082,11 @@
 
     .line 49
     .line 50
-    iget-object v0, p0, Landroidx/viewpager2/adapter/FragmentStateAdapter;->mFragments:Landroidx/collection/o;
+    iget-object v0, p0, Landroidx/viewpager2/adapter/FragmentStateAdapter;->mFragments:Landroidx/collection/n;
 
     .line 51
     .line 52
-    invoke-virtual {v0, p1, p2}, Landroidx/collection/o;->j(J)V
+    invoke-virtual {v0, p1, p2}, Landroidx/collection/n;->j(J)V
 
     .line 53
     .line 54
@@ -1095,11 +1095,11 @@
 
     .line 56
     :cond_3
-    iget-object v1, p0, Landroidx/viewpager2/adapter/FragmentStateAdapter;->mFragmentManager:Landroidx/fragment/app/v0;
+    iget-object v1, p0, Landroidx/viewpager2/adapter/FragmentStateAdapter;->mFragmentManager:Landroidx/fragment/app/Y;
 
     .line 57
     .line 58
-    invoke-virtual {v1}, Landroidx/fragment/app/v0;->K()Z
+    invoke-virtual {v1}, Landroidx/fragment/app/Y;->K()Z
 
     .line 59
     .line 60
@@ -1168,11 +1168,11 @@
     .locals 8
 
     .line 1
-    iget-object v0, p0, Landroidx/viewpager2/adapter/FragmentStateAdapter;->mSavedStates:Landroidx/collection/o;
+    iget-object v0, p0, Landroidx/viewpager2/adapter/FragmentStateAdapter;->mSavedStates:Landroidx/collection/n;
 
     .line 2
     .line 3
-    invoke-virtual {v0}, Landroidx/collection/o;->g()Z
+    invoke-virtual {v0}, Landroidx/collection/n;->g()Z
 
     .line 4
     .line 5
@@ -1184,11 +1184,11 @@
 
     .line 8
     .line 9
-    iget-object v0, p0, Landroidx/viewpager2/adapter/FragmentStateAdapter;->mFragments:Landroidx/collection/o;
+    iget-object v0, p0, Landroidx/viewpager2/adapter/FragmentStateAdapter;->mFragments:Landroidx/collection/n;
 
     .line 10
     .line 11
-    invoke-virtual {v0}, Landroidx/collection/o;->g()Z
+    invoke-virtual {v0}, Landroidx/collection/n;->g()Z
 
     .line 12
     .line 13
@@ -1342,7 +1342,7 @@
     move-result-wide v2
 
     .line 84
-    iget-object v4, p0, Landroidx/viewpager2/adapter/FragmentStateAdapter;->mFragmentManager:Landroidx/fragment/app/v0;
+    iget-object v4, p0, Landroidx/viewpager2/adapter/FragmentStateAdapter;->mFragmentManager:Landroidx/fragment/app/Y;
 
     .line 85
     .line 86
@@ -1370,11 +1370,11 @@
 
     .line 97
     :cond_3
-    iget-object v7, v4, Landroidx/fragment/app/v0;->c:Landroidx/fragment/app/c1;
+    iget-object v7, v4, Landroidx/fragment/app/Y;->c:Landroidx/fragment/app/g0;
 
     .line 98
     .line 99
-    invoke-virtual {v7, v5}, Landroidx/fragment/app/c1;->b(Ljava/lang/String;)Landroidx/fragment/app/Fragment;
+    invoke-virtual {v7, v5}, Landroidx/fragment/app/g0;->b(Ljava/lang/String;)Landroidx/fragment/app/Fragment;
 
     .line 100
     .line 101
@@ -1390,11 +1390,11 @@
 
     .line 106
     :goto_2
-    iget-object v1, p0, Landroidx/viewpager2/adapter/FragmentStateAdapter;->mFragments:Landroidx/collection/o;
+    iget-object v1, p0, Landroidx/viewpager2/adapter/FragmentStateAdapter;->mFragments:Landroidx/collection/n;
 
     .line 107
     .line 108
-    invoke-virtual {v1, v2, v3, v6}, Landroidx/collection/o;->i(JLjava/lang/Object;)V
+    invoke-virtual {v1, v2, v3, v6}, Landroidx/collection/n;->i(JLjava/lang/Object;)V
 
     .line 109
     .line 110
@@ -1415,7 +1415,7 @@
 
     .line 117
     .line 118
-    invoke-static {v0, v1, v2, v5}, Lj0/d;->A(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v0, v1, v2, v5}, Landroidx/compose/runtime/a0;->r(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     .line 119
     .line 120
@@ -1428,7 +1428,7 @@
     .line 123
     .line 124
     .line 125
-    invoke-virtual {v4, p1}, Landroidx/fragment/app/v0;->a0(Ljava/lang/IllegalStateException;)V
+    invoke-virtual {v4, p1}, Landroidx/fragment/app/Y;->a0(Ljava/lang/IllegalStateException;)V
 
     .line 126
     .line 127
@@ -1505,11 +1505,11 @@
 
     .line 162
     .line 163
-    iget-object v4, p0, Landroidx/viewpager2/adapter/FragmentStateAdapter;->mSavedStates:Landroidx/collection/o;
+    iget-object v4, p0, Landroidx/viewpager2/adapter/FragmentStateAdapter;->mSavedStates:Landroidx/collection/n;
 
     .line 164
     .line 165
-    invoke-virtual {v4, v2, v3, v1}, Landroidx/collection/o;->i(JLjava/lang/Object;)V
+    invoke-virtual {v4, v2, v3, v1}, Landroidx/collection/n;->i(JLjava/lang/Object;)V
 
     .line 166
     .line 167
@@ -1543,11 +1543,11 @@
 
     .line 181
     :cond_7
-    iget-object p1, p0, Landroidx/viewpager2/adapter/FragmentStateAdapter;->mFragments:Landroidx/collection/o;
+    iget-object p1, p0, Landroidx/viewpager2/adapter/FragmentStateAdapter;->mFragments:Landroidx/collection/n;
 
     .line 182
     .line 183
-    invoke-virtual {p1}, Landroidx/collection/o;->g()Z
+    invoke-virtual {p1}, Landroidx/collection/n;->g()Z
 
     .line 184
     .line 185
@@ -1589,29 +1589,29 @@
     .line 203
     .line 204
     .line 205
-    new-instance v0, Landroidx/viewpager2/adapter/b;
+    new-instance v0, Landroidx/viewpager2/adapter/c;
 
     .line 206
     .line 207
-    invoke-direct {v0, p0}, Landroidx/viewpager2/adapter/b;-><init>(Landroidx/viewpager2/adapter/FragmentStateAdapter;)V
+    invoke-direct {v0, p0}, Landroidx/viewpager2/adapter/c;-><init>(Landroidx/viewpager2/adapter/FragmentStateAdapter;)V
 
     .line 208
     .line 209
     .line 210
-    iget-object v1, p0, Landroidx/viewpager2/adapter/FragmentStateAdapter;->mLifecycle:Landroidx/lifecycle/p;
+    iget-object v1, p0, Landroidx/viewpager2/adapter/FragmentStateAdapter;->mLifecycle:Landroidx/lifecycle/r;
 
     .line 211
     .line 212
-    new-instance v2, Landroidx/viewpager2/adapter/c;
+    new-instance v2, Landroidx/viewpager2/adapter/a;
 
     .line 213
     .line 214
-    invoke-direct {v2, p1, v0}, Landroidx/viewpager2/adapter/c;-><init>(Landroid/os/Handler;Landroidx/viewpager2/adapter/b;)V
+    invoke-direct {v2, p1, v0}, Landroidx/viewpager2/adapter/a;-><init>(Landroid/os/Handler;Landroidx/viewpager2/adapter/c;)V
 
     .line 215
     .line 216
     .line 217
-    invoke-virtual {v1, v2}, Landroidx/lifecycle/p;->a(Landroidx/lifecycle/v;)V
+    invoke-virtual {v1, v2}, Landroidx/lifecycle/r;->a(Landroidx/lifecycle/w;)V
 
     .line 218
     .line 219
@@ -1654,11 +1654,11 @@
 
     .line 2
     .line 3
-    iget-object v1, p0, Landroidx/viewpager2/adapter/FragmentStateAdapter;->mFragments:Landroidx/collection/o;
+    iget-object v1, p0, Landroidx/viewpager2/adapter/FragmentStateAdapter;->mFragments:Landroidx/collection/n;
 
     .line 4
     .line 5
-    invoke-virtual {v1}, Landroidx/collection/o;->k()I
+    invoke-virtual {v1}, Landroidx/collection/n;->k()I
 
     .line 6
     .line 7
@@ -1666,11 +1666,11 @@
     move-result v1
 
     .line 9
-    iget-object v2, p0, Landroidx/viewpager2/adapter/FragmentStateAdapter;->mSavedStates:Landroidx/collection/o;
+    iget-object v2, p0, Landroidx/viewpager2/adapter/FragmentStateAdapter;->mSavedStates:Landroidx/collection/n;
 
     .line 10
     .line 11
-    invoke-virtual {v2}, Landroidx/collection/o;->k()I
+    invoke-virtual {v2}, Landroidx/collection/n;->k()I
 
     .line 12
     .line 13
@@ -1693,11 +1693,11 @@
 
     .line 21
     :goto_0
-    iget-object v3, p0, Landroidx/viewpager2/adapter/FragmentStateAdapter;->mFragments:Landroidx/collection/o;
+    iget-object v3, p0, Landroidx/viewpager2/adapter/FragmentStateAdapter;->mFragments:Landroidx/collection/n;
 
     .line 22
     .line 23
-    invoke-virtual {v3}, Landroidx/collection/o;->k()I
+    invoke-virtual {v3}, Landroidx/collection/n;->k()I
 
     .line 24
     .line 25
@@ -1709,11 +1709,11 @@
 
     .line 28
     .line 29
-    iget-object v3, p0, Landroidx/viewpager2/adapter/FragmentStateAdapter;->mFragments:Landroidx/collection/o;
+    iget-object v3, p0, Landroidx/viewpager2/adapter/FragmentStateAdapter;->mFragments:Landroidx/collection/n;
 
     .line 30
     .line 31
-    invoke-virtual {v3, v2}, Landroidx/collection/o;->h(I)J
+    invoke-virtual {v3, v2}, Landroidx/collection/n;->h(I)J
 
     .line 32
     .line 33
@@ -1721,11 +1721,11 @@
     move-result-wide v3
 
     .line 35
-    iget-object v5, p0, Landroidx/viewpager2/adapter/FragmentStateAdapter;->mFragments:Landroidx/collection/o;
+    iget-object v5, p0, Landroidx/viewpager2/adapter/FragmentStateAdapter;->mFragments:Landroidx/collection/n;
 
     .line 36
     .line 37
-    invoke-virtual {v5, v3, v4}, Landroidx/collection/o;->d(J)Ljava/lang/Object;
+    invoke-virtual {v5, v3, v4}, Landroidx/collection/n;->d(J)Ljava/lang/Object;
 
     .line 38
     .line 39
@@ -1757,7 +1757,7 @@
 
     .line 52
     .line 53
-    invoke-static {v6, v3, v4}, Landroid/support/v4/media/session/a;->C(Ljava/lang/String;J)Ljava/lang/String;
+    invoke-static {v3, v4, v6}, Lcom/google/android/material/datepicker/i;->v(JLjava/lang/String;)Ljava/lang/String;
 
     .line 54
     .line 55
@@ -1765,11 +1765,11 @@
     move-result-object v3
 
     .line 57
-    iget-object v4, p0, Landroidx/viewpager2/adapter/FragmentStateAdapter;->mFragmentManager:Landroidx/fragment/app/v0;
+    iget-object v4, p0, Landroidx/viewpager2/adapter/FragmentStateAdapter;->mFragmentManager:Landroidx/fragment/app/Y;
 
     .line 58
     .line 59
-    invoke-virtual {v4, v0, v3, v5}, Landroidx/fragment/app/v0;->Q(Landroid/os/Bundle;Ljava/lang/String;Landroidx/fragment/app/Fragment;)V
+    invoke-virtual {v4, v0, v3, v5}, Landroidx/fragment/app/Y;->Q(Landroid/os/Bundle;Ljava/lang/String;Landroidx/fragment/app/Fragment;)V
 
     .line 60
     .line 61
@@ -1784,11 +1784,11 @@
     .line 65
     :cond_1
     :goto_1
-    iget-object v2, p0, Landroidx/viewpager2/adapter/FragmentStateAdapter;->mSavedStates:Landroidx/collection/o;
+    iget-object v2, p0, Landroidx/viewpager2/adapter/FragmentStateAdapter;->mSavedStates:Landroidx/collection/n;
 
     .line 66
     .line 67
-    invoke-virtual {v2}, Landroidx/collection/o;->k()I
+    invoke-virtual {v2}, Landroidx/collection/n;->k()I
 
     .line 68
     .line 69
@@ -1800,11 +1800,11 @@
 
     .line 72
     .line 73
-    iget-object v2, p0, Landroidx/viewpager2/adapter/FragmentStateAdapter;->mSavedStates:Landroidx/collection/o;
+    iget-object v2, p0, Landroidx/viewpager2/adapter/FragmentStateAdapter;->mSavedStates:Landroidx/collection/n;
 
     .line 74
     .line 75
-    invoke-virtual {v2, v1}, Landroidx/collection/o;->h(I)J
+    invoke-virtual {v2, v1}, Landroidx/collection/n;->h(I)J
 
     .line 76
     .line 77
@@ -1828,7 +1828,7 @@
 
     .line 86
     .line 87
-    invoke-static {v4, v2, v3}, Landroid/support/v4/media/session/a;->C(Ljava/lang/String;J)Ljava/lang/String;
+    invoke-static {v2, v3, v4}, Lcom/google/android/material/datepicker/i;->v(JLjava/lang/String;)Ljava/lang/String;
 
     .line 88
     .line 89
@@ -1836,11 +1836,11 @@
     move-result-object v4
 
     .line 91
-    iget-object v5, p0, Landroidx/viewpager2/adapter/FragmentStateAdapter;->mSavedStates:Landroidx/collection/o;
+    iget-object v5, p0, Landroidx/viewpager2/adapter/FragmentStateAdapter;->mSavedStates:Landroidx/collection/n;
 
     .line 92
     .line 93
-    invoke-virtual {v5, v2, v3}, Landroidx/collection/o;->d(J)Ljava/lang/Object;
+    invoke-virtual {v5, v2, v3}, Landroidx/collection/n;->d(J)Ljava/lang/Object;
 
     .line 94
     .line 95
@@ -1869,25 +1869,6 @@
     return-object v0
 .end method
 
-.method public final j()Z
-    .locals 1
-
-    .line 1
-    iget-object v0, p0, Landroidx/viewpager2/adapter/FragmentStateAdapter;->mFragmentManager:Landroidx/fragment/app/v0;
-
-    .line 2
-    .line 3
-    invoke-virtual {v0}, Landroidx/fragment/app/v0;->K()Z
-
-    .line 4
-    .line 5
-    .line 6
-    move-result v0
-
-    .line 7
-    return v0
-.end method
-
 .method public final onAttachedToRecyclerView(Landroidx/recyclerview/widget/RecyclerView;)V
     .locals 2
 
@@ -1911,7 +1892,7 @@
 
     .line 8
     :goto_0
-    invoke-static {v0}, Le3/b;->a(Z)V
+    invoke-static {v0}, Lf4/g;->e(Z)V
 
     .line 9
     .line 10
@@ -1962,11 +1943,11 @@
 
     .line 34
     .line 35
-    check-cast p1, Ljava/util/List;
+    check-cast p1, Ljava/util/ArrayList;
 
     .line 36
     .line 37
-    invoke-interface {p1, v1}, Ljava/util/List;->add(Ljava/lang/Object;)Z
+    invoke-virtual {p1, v1}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
     .line 38
     .line 39
@@ -1984,7 +1965,7 @@
 
     .line 46
     .line 47
-    invoke-virtual {p0, p1}, Landroidx/recyclerview/widget/g0;->registerAdapterDataObserver(Landroidx/recyclerview/widget/i0;)V
+    invoke-virtual {p0, p1}, Landroidx/recyclerview/widget/C;->registerAdapterDataObserver(Landroidx/recyclerview/widget/E;)V
 
     .line 48
     .line 49
@@ -2002,11 +1983,11 @@
 
     .line 56
     .line 57
-    iget-object v0, p0, Landroidx/viewpager2/adapter/FragmentStateAdapter;->mLifecycle:Landroidx/lifecycle/p;
+    iget-object v0, p0, Landroidx/viewpager2/adapter/FragmentStateAdapter;->mLifecycle:Landroidx/lifecycle/r;
 
     .line 58
     .line 59
-    invoke-virtual {v0, p1}, Landroidx/lifecycle/p;->a(Landroidx/lifecycle/v;)V
+    invoke-virtual {v0, p1}, Landroidx/lifecycle/r;->a(Landroidx/lifecycle/w;)V
 
     .line 60
     .line 61
@@ -2014,7 +1995,7 @@
     return-void
 .end method
 
-.method public final onBindViewHolder(Landroidx/recyclerview/widget/h1;I)V
+.method public final onBindViewHolder(Landroidx/recyclerview/widget/c0;I)V
     .locals 7
 
     .line 1
@@ -2022,7 +2003,7 @@
 
     .line 2
     .line 3
-    invoke-virtual {p1}, Landroidx/recyclerview/widget/h1;->getItemId()J
+    invoke-virtual {p1}, Landroidx/recyclerview/widget/c0;->getItemId()J
 
     .line 4
     .line 5
@@ -2030,7 +2011,7 @@
     move-result-wide v0
 
     .line 7
-    iget-object v2, p1, Landroidx/recyclerview/widget/h1;->itemView:Landroid/view/View;
+    iget-object v2, p1, Landroidx/recyclerview/widget/c0;->itemView:Landroid/view/View;
 
     .line 8
     .line 9
@@ -2087,7 +2068,7 @@
     .line 34
     .line 35
     .line 36
-    iget-object v4, p0, Landroidx/viewpager2/adapter/FragmentStateAdapter;->mItemIdToViewHolder:Landroidx/collection/o;
+    iget-object v4, p0, Landroidx/viewpager2/adapter/FragmentStateAdapter;->mItemIdToViewHolder:Landroidx/collection/n;
 
     .line 37
     .line 38
@@ -2099,13 +2080,13 @@
     move-result-wide v5
 
     .line 42
-    invoke-virtual {v4, v5, v6}, Landroidx/collection/o;->j(J)V
+    invoke-virtual {v4, v5, v6}, Landroidx/collection/n;->j(J)V
 
     .line 43
     .line 44
     .line 45
     :cond_0
-    iget-object v3, p0, Landroidx/viewpager2/adapter/FragmentStateAdapter;->mItemIdToViewHolder:Landroidx/collection/o;
+    iget-object v3, p0, Landroidx/viewpager2/adapter/FragmentStateAdapter;->mItemIdToViewHolder:Landroidx/collection/n;
 
     .line 46
     .line 47
@@ -2117,7 +2098,7 @@
     move-result-object v2
 
     .line 51
-    invoke-virtual {v3, v0, v1, v2}, Landroidx/collection/o;->i(JLjava/lang/Object;)V
+    invoke-virtual {v3, v0, v1, v2}, Landroidx/collection/n;->i(JLjava/lang/Object;)V
 
     .line 52
     .line 53
@@ -2125,11 +2106,11 @@
     int-to-long v0, p2
 
     .line 55
-    iget-object p2, p0, Landroidx/viewpager2/adapter/FragmentStateAdapter;->mFragments:Landroidx/collection/o;
+    iget-object p2, p0, Landroidx/viewpager2/adapter/FragmentStateAdapter;->mFragments:Landroidx/collection/n;
 
     .line 56
     .line 57
-    invoke-virtual {p2, v0, v1}, Landroidx/collection/o;->f(J)I
+    invoke-virtual {p2, v0, v1}, Landroidx/collection/n;->f(J)I
 
     .line 58
     .line 59
@@ -2153,11 +2134,11 @@
     move-result-object p2
 
     .line 68
-    iget-object v2, p0, Landroidx/viewpager2/adapter/FragmentStateAdapter;->mSavedStates:Landroidx/collection/o;
+    iget-object v2, p0, Landroidx/viewpager2/adapter/FragmentStateAdapter;->mSavedStates:Landroidx/collection/n;
 
     .line 69
     .line 70
-    invoke-virtual {v2, v0, v1}, Landroidx/collection/o;->d(J)Ljava/lang/Object;
+    invoke-virtual {v2, v0, v1}, Landroidx/collection/n;->d(J)Ljava/lang/Object;
 
     .line 71
     .line 72
@@ -2174,17 +2155,17 @@
     .line 77
     .line 78
     .line 79
-    iget-object v2, p0, Landroidx/viewpager2/adapter/FragmentStateAdapter;->mFragments:Landroidx/collection/o;
+    iget-object v2, p0, Landroidx/viewpager2/adapter/FragmentStateAdapter;->mFragments:Landroidx/collection/n;
 
     .line 80
     .line 81
-    invoke-virtual {v2, v0, v1, p2}, Landroidx/collection/o;->i(JLjava/lang/Object;)V
+    invoke-virtual {v2, v0, v1, p2}, Landroidx/collection/n;->i(JLjava/lang/Object;)V
 
     .line 82
     .line 83
     .line 84
     :goto_0
-    iget-object p2, p1, Landroidx/recyclerview/widget/h1;->itemView:Landroid/view/View;
+    iget-object p2, p1, Landroidx/recyclerview/widget/c0;->itemView:Landroid/view/View;
 
     .line 85
     .line 86
@@ -2218,7 +2199,7 @@
     return-void
 .end method
 
-.method public final onCreateViewHolder(Landroid/view/ViewGroup;I)Landroidx/recyclerview/widget/h1;
+.method public final onCreateViewHolder(Landroid/view/ViewGroup;I)Landroidx/recyclerview/widget/c0;
     .locals 1
 
     .line 1
@@ -2285,7 +2266,7 @@
 
     .line 33
     .line 34
-    invoke-direct {p1, p2}, Landroidx/recyclerview/widget/h1;-><init>(Landroid/view/View;)V
+    invoke-direct {p1, p2}, Landroidx/recyclerview/widget/c0;-><init>(Landroid/view/View;)V
 
     .line 35
     .line 36
@@ -2326,11 +2307,11 @@
 
     .line 15
     .line 16
-    check-cast p1, Ljava/util/List;
+    check-cast p1, Ljava/util/ArrayList;
 
     .line 17
     .line 18
-    invoke-interface {p1, v1}, Ljava/util/List;->remove(Ljava/lang/Object;)Z
+    invoke-virtual {p1, v1}, Ljava/util/ArrayList;->remove(Ljava/lang/Object;)Z
 
     .line 19
     .line 20
@@ -2343,12 +2324,12 @@
 
     .line 24
     .line 25
-    invoke-virtual {v1, p1}, Landroidx/recyclerview/widget/g0;->unregisterAdapterDataObserver(Landroidx/recyclerview/widget/i0;)V
+    invoke-virtual {v1, p1}, Landroidx/recyclerview/widget/C;->unregisterAdapterDataObserver(Landroidx/recyclerview/widget/E;)V
 
     .line 26
     .line 27
     .line 28
-    iget-object p1, v1, Landroidx/viewpager2/adapter/FragmentStateAdapter;->mLifecycle:Landroidx/lifecycle/p;
+    iget-object p1, v1, Landroidx/viewpager2/adapter/FragmentStateAdapter;->mLifecycle:Landroidx/lifecycle/r;
 
     .line 29
     .line 30
@@ -2356,7 +2337,7 @@
 
     .line 31
     .line 32
-    invoke-virtual {p1, v1}, Landroidx/lifecycle/p;->c(Landroidx/lifecycle/v;)V
+    invoke-virtual {p1, v1}, Landroidx/lifecycle/r;->c(Landroidx/lifecycle/w;)V
 
     .line 33
     .line 34
@@ -2375,7 +2356,7 @@
     return-void
 .end method
 
-.method public final bridge synthetic onFailedToRecycleView(Landroidx/recyclerview/widget/h1;)Z
+.method public final bridge synthetic onFailedToRecycleView(Landroidx/recyclerview/widget/c0;)Z
     .locals 0
 
     .line 1
@@ -2389,7 +2370,7 @@
     return p1
 .end method
 
-.method public final onViewAttachedToWindow(Landroidx/recyclerview/widget/h1;)V
+.method public final onViewAttachedToWindow(Landroidx/recyclerview/widget/c0;)V
     .locals 0
 
     .line 1
@@ -2410,7 +2391,7 @@
     return-void
 .end method
 
-.method public final onViewRecycled(Landroidx/recyclerview/widget/h1;)V
+.method public final onViewRecycled(Landroidx/recyclerview/widget/c0;)V
     .locals 3
 
     .line 1
@@ -2418,7 +2399,7 @@
 
     .line 2
     .line 3
-    iget-object p1, p1, Landroidx/recyclerview/widget/h1;->itemView:Landroid/view/View;
+    iget-object p1, p1, Landroidx/recyclerview/widget/c0;->itemView:Landroid/view/View;
 
     .line 4
     .line 5
@@ -2459,7 +2440,7 @@
     .line 22
     .line 23
     .line 24
-    iget-object v0, p0, Landroidx/viewpager2/adapter/FragmentStateAdapter;->mItemIdToViewHolder:Landroidx/collection/o;
+    iget-object v0, p0, Landroidx/viewpager2/adapter/FragmentStateAdapter;->mItemIdToViewHolder:Landroidx/collection/n;
 
     .line 25
     .line 26
@@ -2471,7 +2452,7 @@
     move-result-wide v1
 
     .line 30
-    invoke-virtual {v0, v1, v2}, Landroidx/collection/o;->j(J)V
+    invoke-virtual {v0, v1, v2}, Landroidx/collection/n;->j(J)V
 
     .line 31
     .line 32

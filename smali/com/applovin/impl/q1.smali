@@ -1,46 +1,21 @@
-.class public interface abstract Lcom/applovin/impl/q1;
+.class public final synthetic Lcom/applovin/impl/Q1;
 .super Ljava/lang/Object;
 .source "SourceFile"
 
-
-# annotations
-.annotation system Ldalvik/annotation/MemberClasses;
-    value = {
-        Lcom/applovin/impl/q1$a;
-    }
-.end annotation
+# interfaces
+.implements Lcom/applovin/exoplayer2/common/base/Function;
 
 
 # virtual methods
-.method public abstract a(J)V
-.end method
+.method public final apply(Ljava/lang/Object;)Ljava/lang/Object;
+    .locals 0
 
-.method public abstract a(Lcom/applovin/impl/m5;)V
-.end method
+    .line 1
+    check-cast p1, Lcom/applovin/impl/lo;
 
-.method public abstract a(Ljava/lang/Exception;)V
-.end method
+    invoke-static {p1}, Lcom/applovin/impl/of;->b(Lcom/applovin/impl/lo;)Lcom/applovin/impl/lo;
 
-.method public abstract a(Ljava/lang/String;JJ)V
-.end method
+    move-result-object p1
 
-.method public abstract a(Z)V
-.end method
-
-.method public abstract b(IJJ)V
-.end method
-
-.method public abstract b(Lcom/applovin/impl/e9;)V
-.end method
-
-.method public abstract b(Lcom/applovin/impl/e9;Lcom/applovin/impl/p5;)V
-.end method
-
-.method public abstract b(Ljava/lang/String;)V
-.end method
-
-.method public abstract c(Lcom/applovin/impl/m5;)V
-.end method
-
-.method public abstract c(Ljava/lang/Exception;)V
+    return-object p1
 .end method

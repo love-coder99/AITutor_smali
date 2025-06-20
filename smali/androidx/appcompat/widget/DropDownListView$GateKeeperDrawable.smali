@@ -1,5 +1,5 @@
 .class Landroidx/appcompat/widget/DropDownListView$GateKeeperDrawable;
-.super Lh/j;
+.super Lk/h;
 .source "SourceFile"
 
 
@@ -23,7 +23,7 @@
     .locals 0
 
     .line 1
-    invoke-direct {p0, p1}, Lh/j;-><init>(Landroid/graphics/drawable/Drawable;)V
+    invoke-direct {p0, p1}, Lk/h;-><init>(Landroid/graphics/drawable/Drawable;)V
 
     .line 2
     .line 3
@@ -42,6 +42,10 @@
 # virtual methods
 .method public draw(Landroid/graphics/Canvas;)V
     .locals 1
+    .param p1    # Landroid/graphics/Canvas;
+        .annotation build Landroidx/annotation/NonNull;
+        .end annotation
+    .end param
 
     .line 1
     iget-boolean v0, p0, Landroidx/appcompat/widget/DropDownListView$GateKeeperDrawable;->mEnabled:Z
@@ -52,7 +56,7 @@
 
     .line 4
     .line 5
-    invoke-super {p0, p1}, Lh/j;->draw(Landroid/graphics/Canvas;)V
+    invoke-super {p0, p1}, Lk/h;->draw(Landroid/graphics/Canvas;)V
 
     .line 6
     .line 7
@@ -64,8 +68,11 @@
 .method public setEnabled(Z)V
     .locals 0
 
+    .line 1
     iput-boolean p1, p0, Landroidx/appcompat/widget/DropDownListView$GateKeeperDrawable;->mEnabled:Z
 
+    .line 2
+    .line 3
     return-void
 .end method
 
@@ -81,7 +88,7 @@
 
     .line 4
     .line 5
-    invoke-super {p0, p1, p2}, Lh/j;->setHotspot(FF)V
+    invoke-super {p0, p1, p2}, Lk/h;->setHotspot(FF)V
 
     .line 6
     .line 7
@@ -102,7 +109,7 @@
 
     .line 4
     .line 5
-    invoke-super {p0, p1, p2, p3, p4}, Lh/j;->setHotspotBounds(IIII)V
+    invoke-super {p0, p1, p2, p3, p4}, Lk/h;->setHotspotBounds(IIII)V
 
     .line 6
     .line 7
@@ -123,7 +130,7 @@
 
     .line 4
     .line 5
-    invoke-super {p0, p1}, Lh/j;->setState([I)Z
+    invoke-super {p0, p1}, Lk/h;->setState([I)Z
 
     .line 6
     .line 7
@@ -153,7 +160,7 @@
 
     .line 4
     .line 5
-    invoke-super {p0, p1, p2}, Lh/j;->setVisible(ZZ)Z
+    invoke-super {p0, p1, p2}, Lk/h;->setVisible(ZZ)Z
 
     .line 6
     .line 7

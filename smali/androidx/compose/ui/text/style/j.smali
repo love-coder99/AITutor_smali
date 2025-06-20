@@ -3,10 +3,6 @@
 .source "SourceFile"
 
 
-# static fields
-.field public static final synthetic b:I
-
-
 # instance fields
 .field public final a:I
 

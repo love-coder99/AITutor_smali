@@ -3,7 +3,7 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lzh/a;
+.implements Lka/a;
 
 
 # annotations
@@ -19,7 +19,7 @@
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "Lkotlin/jvm/internal/Lambda;",
-        "Lzh/a;"
+        "Lka/a;"
     }
 .end annotation
 
@@ -44,14 +44,14 @@
 
 
 # instance fields
-.field final synthetic $$this$LaunchedEffect:Lkotlinx/coroutines/w;
+.field final synthetic $$this$LaunchedEffect:Lkotlinx/coroutines/u;
 
 
 # direct methods
-.method public constructor <init>(Lkotlinx/coroutines/w;)V
+.method public constructor <init>(Lkotlinx/coroutines/u;)V
     .locals 0
 
-    iput-object p1, p0, Landroidx/compose/animation/core/InfiniteTransition$run$1$1$2;->$$this$LaunchedEffect:Lkotlinx/coroutines/w;
+    iput-object p1, p0, Landroidx/compose/animation/core/InfiniteTransition$run$1$1$2;->$$this$LaunchedEffect:Lkotlinx/coroutines/u;
 
     const/4 p1, 0x0
 
@@ -65,14 +65,14 @@
 .method public final invoke()Ljava/lang/Float;
     .locals 1
 
-    iget-object v0, p0, Landroidx/compose/animation/core/InfiniteTransition$run$1$1$2;->$$this$LaunchedEffect:Lkotlinx/coroutines/w;
-
     .line 1
-    invoke-interface {v0}, Lkotlinx/coroutines/w;->n()Lkotlin/coroutines/i;
+    iget-object v0, p0, Landroidx/compose/animation/core/InfiniteTransition$run$1$1$2;->$$this$LaunchedEffect:Lkotlinx/coroutines/u;
+
+    invoke-interface {v0}, Lkotlinx/coroutines/u;->u()Lba/g;
 
     move-result-object v0
 
-    invoke-static {v0}, Landroidx/compose/animation/core/b;->n(Lkotlin/coroutines/i;)F
+    invoke-static {v0}, Landroidx/compose/animation/core/b;->n(Lba/g;)F
 
     move-result v0
 

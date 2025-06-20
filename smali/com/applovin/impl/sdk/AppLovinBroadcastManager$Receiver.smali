@@ -16,6 +16,10 @@
 
 # virtual methods
 .method public abstract onReceive(Landroid/content/Intent;Ljava/util/Map;)V
+    .param p2    # Ljava/util/Map;
+        .annotation build Landroidx/annotation/Nullable;
+        .end annotation
+    .end param
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",

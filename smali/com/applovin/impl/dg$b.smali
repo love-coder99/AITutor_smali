@@ -24,20 +24,22 @@
 .method private constructor <init>(Ljava/util/concurrent/BlockingQueue;ILcom/applovin/impl/sdk/j;)V
     .locals 0
 
+    .line 1
     const-string p2, "AppLovinSdk:network"
 
-    .line 1
     invoke-direct {p0, p2}, Ljava/lang/Thread;-><init>(Ljava/lang/String;)V
 
     if-eqz p1, :cond_1
 
     if-eqz p3, :cond_0
 
+    .line 2
     iput-object p1, p0, Lcom/applovin/impl/dg$b;->a:Ljava/util/concurrent/BlockingQueue;
 
+    .line 3
     iput-object p3, p0, Lcom/applovin/impl/dg$b;->b:Lcom/applovin/impl/sdk/j;
 
-    .line 2
+    .line 4
     sget-object p1, Lcom/applovin/impl/sj;->U:Lcom/applovin/impl/sj;
 
     invoke-virtual {p3, p1}, Lcom/applovin/impl/sdk/j;->a(Lcom/applovin/impl/sj;)Ljava/lang/Object;
@@ -54,7 +56,7 @@
 
     return-void
 
-    .line 3
+    .line 5
     :cond_0
     new-instance p1, Ljava/lang/IllegalArgumentException;
 
@@ -64,7 +66,7 @@
 
     throw p1
 
-    .line 4
+    .line 6
     :cond_1
     new-instance p1, Ljava/lang/IllegalArgumentException;
 
@@ -78,7 +80,7 @@
 .method public synthetic constructor <init>(Ljava/util/concurrent/BlockingQueue;ILcom/applovin/impl/sdk/j;Lcom/applovin/impl/dg$a;)V
     .locals 0
 
-    .line 5
+    .line 7
     invoke-direct {p0, p1, p2, p3}, Lcom/applovin/impl/dg$b;-><init>(Ljava/util/concurrent/BlockingQueue;ILcom/applovin/impl/sdk/j;)V
 
     return-void
@@ -210,9 +212,9 @@
 .method private a()V
     .locals 1
 
+    .line 15
     iget-object v0, p0, Lcom/applovin/impl/dg$b;->a:Ljava/util/concurrent/BlockingQueue;
 
-    .line 15
     invoke-interface {v0}, Ljava/util/concurrent/BlockingQueue;->take()Ljava/lang/Object;
 
     move-result-object v0
@@ -229,25 +231,25 @@
     .locals 0
 
     .line 14
-    invoke-static {p0}, Lcom/applovin/impl/dg$c;->g(Lcom/applovin/impl/dg$c;)Lm3/a;
+    invoke-static {p0}, Lcom/applovin/impl/dg$c;->g(Lcom/applovin/impl/dg$c;)Lu1/a;
 
     move-result-object p0
 
-    invoke-interface {p0, p1}, Lm3/a;->accept(Ljava/lang/Object;)V
+    invoke-interface {p0, p1}, Lu1/a;->accept(Ljava/lang/Object;)V
 
     return-void
 .end method
 
 .method private b(Lcom/applovin/impl/dg$c;)V
-    .locals 20
+    .locals 18
 
     move-object/from16 v1, p0
 
     move-object/from16 v2, p1
 
+    .line 2
     iget-object v0, v1, Lcom/applovin/impl/dg$b;->b:Lcom/applovin/impl/sdk/j;
 
-    .line 2
     sget-object v3, Lcom/applovin/impl/sj;->z:Lcom/applovin/impl/sj;
 
     invoke-virtual {v0, v3}, Lcom/applovin/impl/sdk/j;->a(Lcom/applovin/impl/sj;)Ljava/lang/Object;
@@ -291,7 +293,7 @@
 
     move-result-object v15
     :try_end_0
-    .catchall {:try_start_0 .. :try_end_0} :catchall_a
+    .catchall {:try_start_0 .. :try_end_0} :catchall_9
 
     .line 5
     :try_start_1
@@ -394,9 +396,9 @@
     .line 14
     invoke-static {v10, v6, v5}, Lcom/applovin/impl/sdk/utils/CollectionUtils;->putStringIfValid(Ljava/lang/String;Ljava/lang/String;Ljava/util/Map;)V
 
+    .line 15
     iget-object v5, v1, Lcom/applovin/impl/dg$b;->b:Lcom/applovin/impl/sdk/j;
 
-    .line 15
     invoke-virtual {v5}, Lcom/applovin/impl/sdk/j;->D()Lcom/applovin/impl/la;
 
     move-result-object v5
@@ -411,10 +413,8 @@
 
     move-object v5, v0
 
-    const/4 v6, 0x0
-
     :goto_2
-    const/4 v7, 0x0
+    const/16 v16, 0x0
 
     goto :goto_7
 
@@ -428,58 +428,53 @@
     .line 18
     invoke-virtual {v15}, Ljava/net/HttpURLConnection;->getResponseCode()I
 
-    move-result v6
+    move-result v8
+
+    .line 19
+    invoke-static {}, Landroid/os/SystemClock;->elapsedRealtime()J
+
+    move-result-wide v6
     :try_end_7
     .catchall {:try_start_7 .. :try_end_7} :catchall_3
 
-    .line 19
-    :try_start_8
-    invoke-static {}, Landroid/os/SystemClock;->elapsedRealtime()J
-
-    move-result-wide v16
-    :try_end_8
-    .catchall {:try_start_8 .. :try_end_8} :catchall_9
-
-    if-lez v6, :cond_4
+    if-lez v8, :cond_4
 
     .line 20
-    :try_start_9
+    :try_start_8
     invoke-virtual {v15}, Ljava/net/URLConnection;->getInputStream()Ljava/io/InputStream;
 
-    move-result-object v7
-    :try_end_9
-    .catchall {:try_start_9 .. :try_end_9} :catchall_7
-
-    :try_start_a
-    iget-object v0, v1, Lcom/applovin/impl/dg$b;->b:Lcom/applovin/impl/sdk/j;
+    move-result-object v11
+    :try_end_8
+    .catchall {:try_start_8 .. :try_end_8} :catchall_7
 
     .line 21
-    invoke-static {v7, v0}, Lcom/applovin/impl/e4;->a(Ljava/io/InputStream;Lcom/applovin/impl/sdk/j;)[B
+    :try_start_9
+    iget-object v0, v1, Lcom/applovin/impl/dg$b;->b:Lcom/applovin/impl/sdk/j;
 
-    move-result-object v18
-    :try_end_a
-    .catchall {:try_start_a .. :try_end_a} :catchall_5
+    invoke-static {v11, v0}, Lcom/applovin/impl/e4;->a(Ljava/io/InputStream;Lcom/applovin/impl/sdk/j;)[B
 
-    if-eqz v7, :cond_2
+    move-result-object v16
+    :try_end_9
+    .catchall {:try_start_9 .. :try_end_9} :catchall_5
+
+    if-eqz v11, :cond_2
 
     .line 22
-    :try_start_b
-    invoke-virtual {v7}, Ljava/io/InputStream;->close()V
-    :try_end_b
-    .catchall {:try_start_b .. :try_end_b} :catchall_4
+    :try_start_a
+    invoke-virtual {v11}, Ljava/io/InputStream;->close()V
+    :try_end_a
+    .catchall {:try_start_a .. :try_end_a} :catchall_4
 
     goto :goto_4
 
     :catchall_4
     move-exception v0
 
-    move-object/from16 v7, v18
-
     goto :goto_6
 
     :cond_2
     :goto_4
-    move-object/from16 v11, v18
+    move-object/from16 v11, v16
 
     const/4 v0, 0x0
 
@@ -490,15 +485,15 @@
     :catchall_5
     move-exception v0
 
-    move-object v11, v0
+    move-object v6, v0
 
-    if-eqz v7, :cond_3
+    if-eqz v11, :cond_3
 
     .line 23
-    :try_start_c
-    invoke-virtual {v7}, Ljava/io/InputStream;->close()V
-    :try_end_c
-    .catchall {:try_start_c .. :try_end_c} :catchall_6
+    :try_start_b
+    invoke-virtual {v11}, Ljava/io/InputStream;->close()V
+    :try_end_b
+    .catchall {:try_start_b .. :try_end_b} :catchall_6
 
     goto :goto_5
 
@@ -507,48 +502,48 @@
 
     move-object v7, v0
 
-    :try_start_d
-    invoke-virtual {v11, v7}, Ljava/lang/Throwable;->addSuppressed(Ljava/lang/Throwable;)V
+    :try_start_c
+    invoke-virtual {v6, v7}, Ljava/lang/Throwable;->addSuppressed(Ljava/lang/Throwable;)V
 
     goto :goto_5
 
     :catchall_7
     move-exception v0
 
-    const/4 v7, 0x0
+    const/16 v16, 0x0
 
     goto :goto_6
 
     .line 24
     :cond_3
     :goto_5
-    throw v11
-    :try_end_d
-    .catchall {:try_start_d .. :try_end_d} :catchall_7
+    throw v6
+    :try_end_c
+    .catchall {:try_start_c .. :try_end_c} :catchall_7
 
     .line 25
     :goto_6
-    :try_start_e
-    new-instance v11, Ljava/util/HashMap;
+    :try_start_d
+    new-instance v6, Ljava/util/HashMap;
 
-    invoke-direct {v11}, Ljava/util/HashMap;-><init>()V
+    invoke-direct {v6}, Ljava/util/HashMap;-><init>()V
 
     .line 26
-    invoke-static {v10, v5, v11}, Lcom/applovin/impl/sdk/utils/CollectionUtils;->putStringIfValid(Ljava/lang/String;Ljava/lang/String;Ljava/util/Map;)V
-
-    iget-object v5, v1, Lcom/applovin/impl/dg$b;->b:Lcom/applovin/impl/sdk/j;
+    invoke-static {v10, v5, v6}, Lcom/applovin/impl/sdk/utils/CollectionUtils;->putStringIfValid(Ljava/lang/String;Ljava/lang/String;Ljava/util/Map;)V
 
     .line 27
+    iget-object v5, v1, Lcom/applovin/impl/dg$b;->b:Lcom/applovin/impl/sdk/j;
+
     invoke-virtual {v5}, Lcom/applovin/impl/sdk/j;->D()Lcom/applovin/impl/la;
 
     move-result-object v5
 
-    invoke-virtual {v5, v12, v9, v0, v11}, Lcom/applovin/impl/la;->a(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;Ljava/util/Map;)V
+    invoke-virtual {v5, v12, v9, v0, v6}, Lcom/applovin/impl/la;->a(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;Ljava/util/Map;)V
 
     .line 28
     throw v0
-    :try_end_e
-    .catchall {:try_start_e .. :try_end_e} :catchall_8
+    :try_end_d
+    .catchall {:try_start_d .. :try_end_d} :catchall_8
 
     :catchall_8
     move-exception v0
@@ -571,38 +566,29 @@
 
     move-object v5, v0
 
-    goto :goto_2
-
-    :catchall_a
-    move-exception v0
-
-    move-object v5, v0
-
-    const/4 v6, 0x0
-
-    const/4 v7, 0x0
-
     const/4 v15, 0x0
+
+    goto :goto_2
 
     .line 29
     :goto_7
-    :try_start_f
+    :try_start_e
     invoke-static {}, Landroid/os/SystemClock;->elapsedRealtime()J
 
-    move-result-wide v16
-
-    iget-object v0, v1, Lcom/applovin/impl/dg$b;->b:Lcom/applovin/impl/sdk/j;
+    move-result-wide v6
 
     .line 30
+    iget-object v0, v1, Lcom/applovin/impl/dg$b;->b:Lcom/applovin/impl/sdk/j;
+
     invoke-virtual {v0}, Lcom/applovin/impl/sdk/j;->I()Lcom/applovin/impl/sdk/n;
 
     move-result-object v0
 
     invoke-virtual {v0, v12, v5}, Lcom/applovin/impl/sdk/n;->a(Ljava/lang/String;Ljava/lang/Throwable;)V
 
+    .line 31
     iget-object v0, v1, Lcom/applovin/impl/dg$b;->b:Lcom/applovin/impl/sdk/j;
 
-    .line 31
     invoke-virtual {v0}, Lcom/applovin/impl/sdk/j;->I()Lcom/applovin/impl/sdk/n;
 
     invoke-static {}, Lcom/applovin/impl/sdk/n;->a()Z
@@ -618,12 +604,12 @@
     move-result-object v0
 
     invoke-virtual {v0, v12, v4, v5}, Lcom/applovin/impl/sdk/n;->d(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)V
-    :try_end_f
-    .catchall {:try_start_f .. :try_end_f} :catchall_b
+    :try_end_e
+    .catchall {:try_start_e .. :try_end_e} :catchall_a
 
     goto :goto_8
 
-    :catchall_b
+    :catchall_a
     move-exception v0
 
     goto/16 :goto_d
@@ -633,34 +619,34 @@
     if-eqz v15, :cond_8
 
     .line 32
-    :try_start_10
+    :try_start_f
     invoke-virtual {v15}, Ljava/net/HttpURLConnection;->getErrorStream()Ljava/io/InputStream;
 
     move-result-object v4
-    :try_end_10
-    .catchall {:try_start_10 .. :try_end_10} :catchall_f
-
-    :try_start_11
-    iget-object v0, v1, Lcom/applovin/impl/dg$b;->b:Lcom/applovin/impl/sdk/j;
+    :try_end_f
+    .catchall {:try_start_f .. :try_end_f} :catchall_e
 
     .line 33
+    :try_start_10
+    iget-object v0, v1, Lcom/applovin/impl/dg$b;->b:Lcom/applovin/impl/sdk/j;
+
     invoke-static {v4, v0}, Lcom/applovin/impl/e4;->a(Ljava/io/InputStream;Lcom/applovin/impl/sdk/j;)[B
 
     move-result-object v11
-    :try_end_11
-    .catchall {:try_start_11 .. :try_end_11} :catchall_d
+    :try_end_10
+    .catchall {:try_start_10 .. :try_end_10} :catchall_c
 
     if-eqz v4, :cond_6
 
     .line 34
-    :try_start_12
+    :try_start_11
     invoke-virtual {v4}, Ljava/io/InputStream;->close()V
-    :try_end_12
-    .catchall {:try_start_12 .. :try_end_12} :catchall_c
+    :try_end_11
+    .catchall {:try_start_11 .. :try_end_11} :catchall_b
 
     goto :goto_9
 
-    :catchall_c
+    :catchall_b
     move-exception v0
 
     goto :goto_b
@@ -669,11 +655,11 @@
     :goto_9
     move-object v0, v11
 
-    move-object v11, v7
+    move-object/from16 v11, v16
 
     goto :goto_c
 
-    :catchall_d
+    :catchall_c
     move-exception v0
 
     move-object v11, v0
@@ -681,24 +667,24 @@
     if-eqz v4, :cond_7
 
     .line 35
-    :try_start_13
+    :try_start_12
     invoke-virtual {v4}, Ljava/io/InputStream;->close()V
-    :try_end_13
-    .catchall {:try_start_13 .. :try_end_13} :catchall_e
+    :try_end_12
+    .catchall {:try_start_12 .. :try_end_12} :catchall_d
 
     goto :goto_a
 
-    :catchall_e
+    :catchall_d
     move-exception v0
 
     move-object v4, v0
 
-    :try_start_14
+    :try_start_13
     invoke-virtual {v11, v4}, Ljava/lang/Throwable;->addSuppressed(Ljava/lang/Throwable;)V
 
     goto :goto_a
 
-    :catchall_f
+    :catchall_e
     move-exception v0
 
     const/4 v11, 0x0
@@ -709,14 +695,14 @@
     :cond_7
     :goto_a
     throw v11
-    :try_end_14
-    .catchall {:try_start_14 .. :try_end_14} :catchall_f
-
-    :goto_b
-    :try_start_15
-    iget-object v4, v1, Lcom/applovin/impl/dg$b;->b:Lcom/applovin/impl/sdk/j;
+    :try_end_13
+    .catchall {:try_start_13 .. :try_end_13} :catchall_e
 
     .line 37
+    :goto_b
+    :try_start_14
+    iget-object v4, v1, Lcom/applovin/impl/dg$b;->b:Lcom/applovin/impl/sdk/j;
+
     invoke-virtual {v4}, Lcom/applovin/impl/sdk/j;->I()Lcom/applovin/impl/sdk/n;
 
     move-result-object v4
@@ -731,28 +717,28 @@
     .line 39
     invoke-static {v10, v3, v4}, Lcom/applovin/impl/sdk/utils/CollectionUtils;->putStringIfValid(Ljava/lang/String;Ljava/lang/String;Ljava/util/Map;)V
 
+    .line 40
     iget-object v3, v1, Lcom/applovin/impl/dg$b;->b:Lcom/applovin/impl/sdk/j;
 
-    .line 40
     invoke-virtual {v3}, Lcom/applovin/impl/sdk/j;->D()Lcom/applovin/impl/la;
 
     move-result-object v3
 
     invoke-virtual {v3, v12, v9, v0, v4}, Lcom/applovin/impl/la;->a(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;Ljava/util/Map;)V
-    :try_end_15
-    .catchall {:try_start_15 .. :try_end_15} :catchall_b
+    :try_end_14
+    .catchall {:try_start_14 .. :try_end_14} :catchall_a
 
     goto :goto_9
 
     :cond_8
-    move-object v11, v7
+    move-object/from16 v11, v16
 
     const/4 v0, 0x0
 
+    .line 41
     :goto_c
     iget-object v3, v1, Lcom/applovin/impl/dg$b;->b:Lcom/applovin/impl/sdk/j;
 
-    .line 41
     invoke-static {v15, v3}, Lcom/applovin/impl/yp;->a(Ljava/net/HttpURLConnection;Lcom/applovin/impl/sdk/j;)V
 
     .line 42
@@ -761,7 +747,7 @@
     move-result-object v3
 
     .line 43
-    invoke-virtual {v3, v6}, Lcom/applovin/impl/dg$d$a;->a(I)Lcom/applovin/impl/dg$d$a;
+    invoke-virtual {v3, v8}, Lcom/applovin/impl/dg$d$a;->a(I)Lcom/applovin/impl/dg$d$a;
 
     move-result-object v3
 
@@ -775,10 +761,10 @@
 
     move-result-object v0
 
-    sub-long v3, v16, v13
+    sub-long/2addr v6, v13
 
     .line 46
-    invoke-virtual {v0, v3, v4}, Lcom/applovin/impl/dg$d$a;->a(J)Lcom/applovin/impl/dg$d$a;
+    invoke-virtual {v0, v6, v7}, Lcom/applovin/impl/dg$d$a;->a(J)Lcom/applovin/impl/dg$d$a;
 
     move-result-object v0
 
@@ -797,18 +783,20 @@
 
     move-result-object v3
 
-    new-instance v4, Lcom/applovin/impl/kt;
+    new-instance v4, Lcom/applovin/impl/C0;
 
-    invoke-direct {v4, v2, v0, v8}, Lcom/applovin/impl/kt;-><init>(Lcom/applovin/impl/dg$c;Lcom/applovin/impl/dg$d;I)V
+    const/4 v5, 0x0
+
+    invoke-direct {v4, v2, v0, v5}, Lcom/applovin/impl/C0;-><init>(Lcom/applovin/impl/dg$c;Lcom/applovin/impl/dg$d;I)V
 
     invoke-interface {v3, v4}, Ljava/util/concurrent/Executor;->execute(Ljava/lang/Runnable;)V
 
     goto/16 :goto_17
 
+    .line 50
     :goto_d
     iget-object v2, v1, Lcom/applovin/impl/dg$b;->b:Lcom/applovin/impl/sdk/j;
 
-    .line 50
     invoke-static {v15, v2}, Lcom/applovin/impl/yp;->a(Ljava/net/HttpURLConnection;Lcom/applovin/impl/sdk/j;)V
 
     .line 51
@@ -821,15 +809,15 @@
     move-result-wide v13
 
     .line 53
-    :try_start_16
+    :try_start_15
     invoke-direct/range {p0 .. p1}, Lcom/applovin/impl/dg$b;->a(Lcom/applovin/impl/dg$c;)Ljava/net/HttpURLConnection;
 
     move-result-object v11
-    :try_end_16
-    .catchall {:try_start_16 .. :try_end_16} :catchall_15
+    :try_end_15
+    .catchall {:try_start_15 .. :try_end_15} :catchall_14
 
     .line 54
-    :try_start_17
+    :try_start_16
     invoke-static/range {p1 .. p1}, Lcom/applovin/impl/dg$c;->a(Lcom/applovin/impl/dg$c;)[B
 
     move-result-object v0
@@ -856,12 +844,12 @@
 
     invoke-virtual {v11, v0}, Ljava/net/HttpURLConnection;->setFixedLengthStreamingMode(I)V
 
+    .line 57
     iget-object v0, v1, Lcom/applovin/impl/dg$b;->b:Lcom/applovin/impl/sdk/j;
 
-    .line 57
-    sget-object v15, Lcom/applovin/impl/sj;->A:Lcom/applovin/impl/sj;
+    sget-object v7, Lcom/applovin/impl/sj;->A:Lcom/applovin/impl/sj;
 
-    invoke-virtual {v0, v15}, Lcom/applovin/impl/sdk/j;->a(Lcom/applovin/impl/sj;)Ljava/lang/Object;
+    invoke-virtual {v0, v7}, Lcom/applovin/impl/sdk/j;->a(Lcom/applovin/impl/sj;)Ljava/lang/Object;
 
     move-result-object v0
 
@@ -870,13 +858,13 @@
     invoke-virtual {v0}, Ljava/lang/Boolean;->booleanValue()Z
 
     move-result v0
-    :try_end_17
-    .catchall {:try_start_17 .. :try_end_17} :catchall_11
+    :try_end_16
+    .catchall {:try_start_16 .. :try_end_16} :catchall_10
 
     if-eqz v0, :cond_a
 
     .line 58
-    :try_start_18
+    :try_start_17
     invoke-virtual {v11}, Ljava/net/URLConnection;->getOutputStream()Ljava/io/OutputStream;
 
     move-result-object v0
@@ -884,22 +872,22 @@
     .line 59
     invoke-static/range {p1 .. p1}, Lcom/applovin/impl/dg$c;->a(Lcom/applovin/impl/dg$c;)[B
 
-    move-result-object v15
+    move-result-object v7
 
-    invoke-virtual {v0, v15}, Ljava/io/OutputStream;->write([B)V
+    invoke-virtual {v0, v7}, Ljava/io/OutputStream;->write([B)V
 
     .line 60
     invoke-virtual {v0}, Ljava/io/OutputStream;->close()V
-    :try_end_18
-    .catchall {:try_start_18 .. :try_end_18} :catchall_10
+    :try_end_17
+    .catchall {:try_start_17 .. :try_end_17} :catchall_f
 
-    goto :goto_e
+    goto :goto_f
 
-    :catchall_10
+    :catchall_f
     move-exception v0
 
     .line 61
-    :try_start_19
+    :try_start_18
     new-instance v5, Ljava/util/HashMap;
 
     invoke-direct {v5}, Ljava/util/HashMap;-><init>()V
@@ -907,9 +895,9 @@
     .line 62
     invoke-static {v10, v6, v5}, Lcom/applovin/impl/sdk/utils/CollectionUtils;->putStringIfValid(Ljava/lang/String;Ljava/lang/String;Ljava/util/Map;)V
 
+    .line 63
     iget-object v5, v1, Lcom/applovin/impl/dg$b;->b:Lcom/applovin/impl/sdk/j;
 
-    .line 63
     invoke-virtual {v5}, Lcom/applovin/impl/sdk/j;->D()Lcom/applovin/impl/la;
 
     move-result-object v5
@@ -919,14 +907,15 @@
     .line 64
     throw v0
 
-    :catchall_11
+    :catchall_10
     move-exception v0
 
     move-object v5, v0
 
-    const/4 v6, 0x0
+    :goto_e
+    const/4 v15, 0x0
 
-    goto :goto_11
+    goto :goto_12
 
     .line 65
     :cond_a
@@ -946,7 +935,7 @@
 
     .line 68
     :cond_b
-    :goto_e
+    :goto_f
     invoke-static {}, Landroid/os/SystemClock;->elapsedRealtime()J
 
     move-result-wide v13
@@ -959,16 +948,16 @@
     .line 70
     invoke-static {}, Landroid/os/SystemClock;->elapsedRealtime()J
 
-    move-result-wide v15
+    move-result-wide v6
 
     if-lez v8, :cond_d
 
+    .line 71
     iget-object v0, v1, Lcom/applovin/impl/dg$b;->b:Lcom/applovin/impl/sdk/j;
 
-    .line 71
-    sget-object v6, Lcom/applovin/impl/sj;->A:Lcom/applovin/impl/sj;
+    sget-object v15, Lcom/applovin/impl/sj;->A:Lcom/applovin/impl/sj;
 
-    invoke-virtual {v0, v6}, Lcom/applovin/impl/sdk/j;->a(Lcom/applovin/impl/sj;)Ljava/lang/Object;
+    invoke-virtual {v0, v15}, Lcom/applovin/impl/sdk/j;->a(Lcom/applovin/impl/sj;)Ljava/lang/Object;
 
     move-result-object v0
 
@@ -977,92 +966,92 @@
     invoke-virtual {v0}, Ljava/lang/Boolean;->booleanValue()Z
 
     move-result v0
-    :try_end_19
-    .catchall {:try_start_19 .. :try_end_19} :catchall_11
+    :try_end_18
+    .catchall {:try_start_18 .. :try_end_18} :catchall_10
 
     if-eqz v0, :cond_c
 
     .line 72
-    :try_start_1a
+    :try_start_19
     invoke-virtual {v11}, Ljava/net/URLConnection;->getInputStream()Ljava/io/InputStream;
 
-    move-result-object v6
-    :try_end_1a
-    .catchall {:try_start_1a .. :try_end_1a} :catchall_13
-
-    :try_start_1b
-    iget-object v0, v1, Lcom/applovin/impl/dg$b;->b:Lcom/applovin/impl/sdk/j;
+    move-result-object v15
+    :try_end_19
+    .catchall {:try_start_19 .. :try_end_19} :catchall_12
 
     .line 73
-    invoke-static {v6, v0}, Lcom/applovin/impl/e4;->a(Ljava/io/InputStream;Lcom/applovin/impl/sdk/j;)[B
+    :try_start_1a
+    iget-object v0, v1, Lcom/applovin/impl/dg$b;->b:Lcom/applovin/impl/sdk/j;
+
+    invoke-static {v15, v0}, Lcom/applovin/impl/e4;->a(Ljava/io/InputStream;Lcom/applovin/impl/sdk/j;)[B
 
     move-result-object v0
-    :try_end_1b
-    .catchall {:try_start_1b .. :try_end_1b} :catchall_12
+    :try_end_1a
+    .catchall {:try_start_1a .. :try_end_1a} :catchall_11
+
+    goto :goto_11
+
+    :catchall_11
+    move-exception v0
 
     goto :goto_10
 
     :catchall_12
     move-exception v0
 
-    goto :goto_f
-
-    :catchall_13
-    move-exception v0
-
-    const/4 v6, 0x0
+    const/4 v15, 0x0
 
     .line 74
-    :goto_f
-    :try_start_1c
-    new-instance v15, Ljava/util/HashMap;
+    :goto_10
+    :try_start_1b
+    new-instance v6, Ljava/util/HashMap;
 
-    invoke-direct {v15}, Ljava/util/HashMap;-><init>()V
+    invoke-direct {v6}, Ljava/util/HashMap;-><init>()V
 
     .line 75
-    invoke-static {v10, v5, v15}, Lcom/applovin/impl/sdk/utils/CollectionUtils;->putStringIfValid(Ljava/lang/String;Ljava/lang/String;Ljava/util/Map;)V
-
-    iget-object v5, v1, Lcom/applovin/impl/dg$b;->b:Lcom/applovin/impl/sdk/j;
+    invoke-static {v10, v5, v6}, Lcom/applovin/impl/sdk/utils/CollectionUtils;->putStringIfValid(Ljava/lang/String;Ljava/lang/String;Ljava/util/Map;)V
 
     .line 76
+    iget-object v5, v1, Lcom/applovin/impl/dg$b;->b:Lcom/applovin/impl/sdk/j;
+
     invoke-virtual {v5}, Lcom/applovin/impl/sdk/j;->D()Lcom/applovin/impl/la;
 
     move-result-object v5
 
-    invoke-virtual {v5, v12, v9, v0, v15}, Lcom/applovin/impl/la;->a(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;Ljava/util/Map;)V
+    invoke-virtual {v5, v12, v9, v0, v6}, Lcom/applovin/impl/la;->a(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;Ljava/util/Map;)V
 
     .line 77
     throw v0
-    :try_end_1c
-    .catchall {:try_start_1c .. :try_end_1c} :catchall_14
+    :try_end_1b
+    .catchall {:try_start_1b .. :try_end_1b} :catchall_13
 
-    :catchall_14
+    :catchall_13
     move-exception v0
 
     move-object v5, v0
 
-    goto :goto_11
+    goto :goto_12
 
     .line 78
     :cond_c
-    :try_start_1d
+    :try_start_1c
     invoke-virtual {v11}, Ljava/net/URLConnection;->getInputStream()Ljava/io/InputStream;
 
-    move-result-object v6
-    :try_end_1d
-    .catchall {:try_start_1d .. :try_end_1d} :catchall_11
-
-    :try_start_1e
-    iget-object v0, v1, Lcom/applovin/impl/dg$b;->b:Lcom/applovin/impl/sdk/j;
+    move-result-object v15
+    :try_end_1c
+    .catchall {:try_start_1c .. :try_end_1c} :catchall_10
 
     .line 79
-    invoke-static {v6, v0}, Lcom/applovin/impl/e4;->a(Ljava/io/InputStream;Lcom/applovin/impl/sdk/j;)[B
+    :try_start_1d
+    iget-object v0, v1, Lcom/applovin/impl/dg$b;->b:Lcom/applovin/impl/sdk/j;
+
+    invoke-static {v15, v0}, Lcom/applovin/impl/e4;->a(Ljava/io/InputStream;Lcom/applovin/impl/sdk/j;)[B
 
     move-result-object v0
-    :try_end_1e
-    .catchall {:try_start_1e .. :try_end_1e} :catchall_14
+    :try_end_1d
+    .catchall {:try_start_1d .. :try_end_1d} :catchall_13
 
-    :goto_10
+    :goto_11
     const/4 v3, 0x0
 
     const/4 v4, 0x0
@@ -1080,38 +1069,38 @@
 
     const/4 v5, 0x0
 
-    const/4 v6, 0x0
+    const/4 v15, 0x0
 
     goto/16 :goto_16
 
-    :catchall_15
+    :catchall_14
     move-exception v0
 
     move-object v5, v0
 
-    const/4 v6, 0x0
-
     const/4 v11, 0x0
 
+    goto :goto_e
+
     .line 80
-    :goto_11
-    :try_start_1f
+    :goto_12
+    :try_start_1e
     invoke-static {}, Landroid/os/SystemClock;->elapsedRealtime()J
 
-    move-result-wide v15
-
-    iget-object v0, v1, Lcom/applovin/impl/dg$b;->b:Lcom/applovin/impl/sdk/j;
+    move-result-wide v6
 
     .line 81
+    iget-object v0, v1, Lcom/applovin/impl/dg$b;->b:Lcom/applovin/impl/sdk/j;
+
     invoke-virtual {v0}, Lcom/applovin/impl/sdk/j;->I()Lcom/applovin/impl/sdk/n;
 
     move-result-object v0
 
     invoke-virtual {v0, v12, v5}, Lcom/applovin/impl/sdk/n;->a(Ljava/lang/String;Ljava/lang/Throwable;)V
 
+    .line 82
     iget-object v0, v1, Lcom/applovin/impl/dg$b;->b:Lcom/applovin/impl/sdk/j;
 
-    .line 82
     invoke-virtual {v0}, Lcom/applovin/impl/sdk/j;->I()Lcom/applovin/impl/sdk/n;
 
     invoke-static {}, Lcom/applovin/impl/sdk/n;->a()Z
@@ -1127,12 +1116,12 @@
     move-result-object v0
 
     invoke-virtual {v0, v12, v4, v5}, Lcom/applovin/impl/sdk/n;->d(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)V
-    :try_end_1f
-    .catchall {:try_start_1f .. :try_end_1f} :catchall_16
+    :try_end_1e
+    .catchall {:try_start_1e .. :try_end_1e} :catchall_15
 
-    goto :goto_12
+    goto :goto_13
 
-    :catchall_16
+    :catchall_15
     move-exception v0
 
     move-object v2, v0
@@ -1142,26 +1131,26 @@
     goto/16 :goto_18
 
     :cond_e
-    :goto_12
+    :goto_13
     if-eqz v11, :cond_10
 
     .line 83
-    :try_start_20
+    :try_start_1f
     invoke-virtual {v11}, Ljava/net/HttpURLConnection;->getErrorStream()Ljava/io/InputStream;
 
     move-result-object v4
-    :try_end_20
-    .catchall {:try_start_20 .. :try_end_20} :catchall_18
-
-    :try_start_21
-    iget-object v0, v1, Lcom/applovin/impl/dg$b;->b:Lcom/applovin/impl/sdk/j;
+    :try_end_1f
+    .catchall {:try_start_1f .. :try_end_1f} :catchall_17
 
     .line 84
+    :try_start_20
+    iget-object v0, v1, Lcom/applovin/impl/dg$b;->b:Lcom/applovin/impl/sdk/j;
+
     invoke-static {v4, v0}, Lcom/applovin/impl/e4;->a(Ljava/io/InputStream;Lcom/applovin/impl/sdk/j;)[B
 
     move-result-object v0
-    :try_end_21
-    .catchall {:try_start_21 .. :try_end_21} :catchall_17
+    :try_end_20
+    .catchall {:try_start_20 .. :try_end_20} :catchall_16
 
     move-object v3, v0
 
@@ -1169,29 +1158,28 @@
 
     goto :goto_16
 
+    :catchall_16
+    move-exception v0
+
+    move-object/from16 v16, v4
+
+    goto :goto_14
+
     :catchall_17
     move-exception v0
 
-    goto :goto_13
-
-    :catchall_18
-    move-exception v0
-
-    const/4 v4, 0x0
-
-    :goto_13
-    :try_start_22
-    iget-object v7, v1, Lcom/applovin/impl/dg$b;->b:Lcom/applovin/impl/sdk/j;
-    :try_end_22
-    .catchall {:try_start_22 .. :try_end_22} :catchall_1a
-
-    move-object/from16 v19, v4
+    const/16 v16, 0x0
 
     .line 85
-    :try_start_23
-    sget-object v4, Lcom/applovin/impl/sj;->A:Lcom/applovin/impl/sj;
+    :goto_14
+    :try_start_21
+    iget-object v4, v1, Lcom/applovin/impl/dg$b;->b:Lcom/applovin/impl/sdk/j;
 
-    invoke-virtual {v7, v4}, Lcom/applovin/impl/sdk/j;->a(Lcom/applovin/impl/sj;)Ljava/lang/Object;
+    move-object/from16 v17, v5
+
+    sget-object v5, Lcom/applovin/impl/sj;->A:Lcom/applovin/impl/sj;
+
+    invoke-virtual {v4, v5}, Lcom/applovin/impl/sdk/j;->a(Lcom/applovin/impl/sj;)Ljava/lang/Object;
 
     move-result-object v4
 
@@ -1211,32 +1199,33 @@
     .line 87
     invoke-static {v10, v3, v4}, Lcom/applovin/impl/sdk/utils/CollectionUtils;->putStringIfValid(Ljava/lang/String;Ljava/lang/String;Ljava/util/Map;)V
 
+    .line 88
     iget-object v3, v1, Lcom/applovin/impl/dg$b;->b:Lcom/applovin/impl/sdk/j;
 
-    .line 88
     invoke-virtual {v3}, Lcom/applovin/impl/sdk/j;->D()Lcom/applovin/impl/la;
 
     move-result-object v3
 
     invoke-virtual {v3, v12, v9, v0, v4}, Lcom/applovin/impl/la;->a(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;Ljava/util/Map;)V
-    :try_end_23
-    .catchall {:try_start_23 .. :try_end_23} :catchall_19
+    :try_end_21
+    .catchall {:try_start_21 .. :try_end_21} :catchall_18
 
     goto :goto_15
 
-    :catchall_19
+    :catchall_18
     move-exception v0
 
-    :goto_14
     move-object v2, v0
 
-    move-object/from16 v0, v19
+    move-object/from16 v0, v16
 
     goto :goto_18
 
     :cond_f
     :goto_15
-    move-object/from16 v4, v19
+    move-object/from16 v4, v16
+
+    move-object/from16 v5, v17
 
     const/4 v0, 0x0
 
@@ -1244,34 +1233,29 @@
 
     goto :goto_16
 
-    :catchall_1a
-    move-exception v0
-
-    move-object/from16 v19, v4
-
-    goto :goto_14
-
     :cond_10
+    move-object/from16 v17, v5
+
     const/4 v0, 0x0
 
     const/4 v3, 0x0
 
     const/4 v4, 0x0
 
-    :goto_16
-    iget-object v7, v1, Lcom/applovin/impl/dg$b;->b:Lcom/applovin/impl/sdk/j;
-
     .line 89
-    invoke-static {v6, v7}, Lcom/applovin/impl/yp;->a(Ljava/io/Closeable;Lcom/applovin/impl/sdk/j;)V
+    :goto_16
+    iget-object v9, v1, Lcom/applovin/impl/dg$b;->b:Lcom/applovin/impl/sdk/j;
 
-    iget-object v6, v1, Lcom/applovin/impl/dg$b;->b:Lcom/applovin/impl/sdk/j;
+    invoke-static {v15, v9}, Lcom/applovin/impl/yp;->a(Ljava/io/Closeable;Lcom/applovin/impl/sdk/j;)V
 
     .line 90
-    invoke-static {v4, v6}, Lcom/applovin/impl/yp;->a(Ljava/io/Closeable;Lcom/applovin/impl/sdk/j;)V
+    iget-object v9, v1, Lcom/applovin/impl/dg$b;->b:Lcom/applovin/impl/sdk/j;
 
-    iget-object v4, v1, Lcom/applovin/impl/dg$b;->b:Lcom/applovin/impl/sdk/j;
+    invoke-static {v4, v9}, Lcom/applovin/impl/yp;->a(Ljava/io/Closeable;Lcom/applovin/impl/sdk/j;)V
 
     .line 91
+    iget-object v4, v1, Lcom/applovin/impl/dg$b;->b:Lcom/applovin/impl/sdk/j;
+
     invoke-static {v11, v4}, Lcom/applovin/impl/yp;->a(Ljava/net/HttpURLConnection;Lcom/applovin/impl/sdk/j;)V
 
     .line 92
@@ -1294,10 +1278,10 @@
 
     move-result-object v0
 
-    sub-long v3, v15, v13
+    sub-long/2addr v6, v13
 
     .line 96
-    invoke-virtual {v0, v3, v4}, Lcom/applovin/impl/dg$d$a;->a(J)Lcom/applovin/impl/dg$d$a;
+    invoke-virtual {v0, v6, v7}, Lcom/applovin/impl/dg$d$a;->a(J)Lcom/applovin/impl/dg$d$a;
 
     move-result-object v0
 
@@ -1316,31 +1300,31 @@
 
     move-result-object v3
 
-    new-instance v4, Lcom/applovin/impl/kt;
+    new-instance v4, Lcom/applovin/impl/C0;
 
     const/4 v5, 0x1
 
-    invoke-direct {v4, v2, v0, v5}, Lcom/applovin/impl/kt;-><init>(Lcom/applovin/impl/dg$c;Lcom/applovin/impl/dg$d;I)V
+    invoke-direct {v4, v2, v0, v5}, Lcom/applovin/impl/C0;-><init>(Lcom/applovin/impl/dg$c;Lcom/applovin/impl/dg$d;I)V
 
     invoke-interface {v3, v4}, Ljava/util/concurrent/Executor;->execute(Ljava/lang/Runnable;)V
 
     :goto_17
     return-void
 
+    .line 100
     :goto_18
     iget-object v3, v1, Lcom/applovin/impl/dg$b;->b:Lcom/applovin/impl/sdk/j;
 
-    .line 100
-    invoke-static {v6, v3}, Lcom/applovin/impl/yp;->a(Ljava/io/Closeable;Lcom/applovin/impl/sdk/j;)V
-
-    iget-object v3, v1, Lcom/applovin/impl/dg$b;->b:Lcom/applovin/impl/sdk/j;
+    invoke-static {v15, v3}, Lcom/applovin/impl/yp;->a(Ljava/io/Closeable;Lcom/applovin/impl/sdk/j;)V
 
     .line 101
+    iget-object v3, v1, Lcom/applovin/impl/dg$b;->b:Lcom/applovin/impl/sdk/j;
+
     invoke-static {v0, v3}, Lcom/applovin/impl/yp;->a(Ljava/io/Closeable;Lcom/applovin/impl/sdk/j;)V
 
+    .line 102
     iget-object v0, v1, Lcom/applovin/impl/dg$b;->b:Lcom/applovin/impl/sdk/j;
 
-    .line 102
     invoke-static {v11, v0}, Lcom/applovin/impl/yp;->a(Ljava/net/HttpURLConnection;Lcom/applovin/impl/sdk/j;)V
 
     .line 103
@@ -1351,11 +1335,11 @@
     .locals 0
 
     .line 1
-    invoke-static {p0}, Lcom/applovin/impl/dg$c;->g(Lcom/applovin/impl/dg$c;)Lm3/a;
+    invoke-static {p0}, Lcom/applovin/impl/dg$c;->g(Lcom/applovin/impl/dg$c;)Lu1/a;
 
     move-result-object p0
 
-    invoke-interface {p0, p1}, Lm3/a;->accept(Ljava/lang/Object;)V
+    invoke-interface {p0, p1}, Lu1/a;->accept(Ljava/lang/Object;)V
 
     return-void
 .end method

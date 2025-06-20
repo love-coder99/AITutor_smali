@@ -91,7 +91,7 @@
     .line 26
     .line 27
     .line 28
-    invoke-virtual {v0, p1}, Lkotlinx/coroutines/channels/l;->o(Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v0, p1}, Lkotlinx/coroutines/channels/l;->l(Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 29
     .line 30

@@ -118,21 +118,21 @@
 
     move-result-object p0
 
-    invoke-static {p0}, Landroidx/core/view/b2;->h(Landroid/view/Window;)Landroid/view/WindowInsetsController;
+    invoke-static {p0}, Landroidx/core/view/H0;->g(Landroid/view/Window;)Landroid/view/WindowInsetsController;
 
     move-result-object p0
 
     if-eqz p0, :cond_0
 
     .line 8
-    invoke-static {p0}, Landroidx/core/view/b2;->r(Landroid/view/WindowInsetsController;)V
+    invoke-static {p0}, Landroidx/core/view/H0;->y(Landroid/view/WindowInsetsController;)V
 
     .line 9
-    invoke-static {}, Landroidx/core/view/b2;->A()I
+    invoke-static {}, Landroidx/core/view/H0;->C()I
 
     move-result p1
 
-    invoke-static {p0, p1}, Landroidx/compose/ui/graphics/layer/l;->r(Landroid/view/WindowInsetsController;I)V
+    invoke-static {p0, p1}, LE0/j;->A(Landroid/view/WindowInsetsController;I)V
 
     goto :goto_0
 

@@ -3,14 +3,14 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lzh/c;
+.implements Lka/c;
 
 
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "Lkotlin/jvm/internal/Lambda;",
-        "Lzh/c;"
+        "Lka/c;"
     }
 .end annotation
 
@@ -19,11 +19,11 @@
         "\u0000\u000e\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0008\u0003\u0010\u0005\u001a\u00020\u00022\u0006\u0010\u0001\u001a\u00020\u0000H\n\u00a2\u0006\u0004\u0008\u0003\u0010\u0004"
     }
     d2 = {
-        "Lh2/e;",
+        "LM0/e;",
         "it",
-        "Landroidx/compose/animation/core/i;",
+        "Landroidx/compose/animation/core/h;",
         "invoke-0680j_4",
-        "(F)Landroidx/compose/animation/core/i;",
+        "(F)Landroidx/compose/animation/core/h;",
         "<anonymous>"
     }
     k = 0x3
@@ -68,15 +68,15 @@
     .locals 0
 
     .line 1
-    check-cast p1, Lh2/e;
+    check-cast p1, LM0/e;
 
     .line 2
     .line 3
-    iget p1, p1, Lh2/e;->b:F
+    iget p1, p1, LM0/e;->b:F
 
     .line 4
     .line 5
-    invoke-virtual {p0, p1}, Landroidx/compose/animation/core/VectorConvertersKt$DpToVector$1;->invoke-0680j_4(F)Landroidx/compose/animation/core/i;
+    invoke-virtual {p0, p1}, Landroidx/compose/animation/core/VectorConvertersKt$DpToVector$1;->invoke-0680j_4(F)Landroidx/compose/animation/core/h;
 
     .line 6
     .line 7
@@ -87,15 +87,15 @@
     return-object p1
 .end method
 
-.method public final invoke-0680j_4(F)Landroidx/compose/animation/core/i;
+.method public final invoke-0680j_4(F)Landroidx/compose/animation/core/h;
     .locals 1
 
     .line 1
-    new-instance v0, Landroidx/compose/animation/core/i;
+    new-instance v0, Landroidx/compose/animation/core/h;
 
     .line 2
     .line 3
-    invoke-direct {v0, p1}, Landroidx/compose/animation/core/i;-><init>(F)V
+    invoke-direct {v0, p1}, Landroidx/compose/animation/core/h;-><init>(F)V
 
     .line 4
     .line 5

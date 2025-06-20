@@ -226,15 +226,17 @@
 .method public a(Z)V
     .locals 0
 
-    .line 16
+    .line 20
     invoke-super {p0, p1}, Lcom/applovin/impl/gl;->a(Z)V
 
     if-eqz p1, :cond_0
 
     const/4 p1, 0x0
 
+    .line 21
     iput-object p1, p0, Lcom/applovin/impl/x8;->n:Lcom/applovin/impl/z8;
 
+    .line 22
     iput-object p1, p0, Lcom/applovin/impl/x8;->o:Lcom/applovin/impl/x8$a;
 
     :cond_0
@@ -249,22 +251,24 @@
 
     move-result-object v0
 
+    .line 5
     iget-object v1, p0, Lcom/applovin/impl/x8;->n:Lcom/applovin/impl/z8;
 
     const/4 v2, 0x1
 
     if-nez v1, :cond_0
 
-    .line 5
+    .line 6
     new-instance p2, Lcom/applovin/impl/z8;
 
     const/16 p3, 0x11
 
     invoke-direct {p2, v0, p3}, Lcom/applovin/impl/z8;-><init>([BI)V
 
+    .line 7
     iput-object p2, p0, Lcom/applovin/impl/x8;->n:Lcom/applovin/impl/z8;
 
-    .line 6
+    .line 8
     invoke-virtual {p1}, Lcom/applovin/impl/ah;->e()I
 
     move-result p1
@@ -277,7 +281,7 @@
 
     const/4 p3, 0x0
 
-    .line 7
+    .line 9
     invoke-virtual {p2, p1, p3}, Lcom/applovin/impl/z8;->a([BLcom/applovin/impl/af;)Lcom/applovin/impl/e9;
 
     move-result-object p1
@@ -289,7 +293,7 @@
     :cond_0
     const/4 v3, 0x0
 
-    .line 8
+    .line 10
     aget-byte v4, v0, v3
 
     and-int/lit8 v4, v4, 0x7f
@@ -298,19 +302,20 @@
 
     if-ne v4, v5, :cond_1
 
-    .line 9
+    .line 11
     invoke-static {p1}, Lcom/applovin/impl/w8;->a(Lcom/applovin/impl/ah;)Lcom/applovin/impl/z8$a;
 
     move-result-object p1
 
-    .line 10
+    .line 12
     invoke-virtual {v1, p1}, Lcom/applovin/impl/z8;->a(Lcom/applovin/impl/z8$a;)Lcom/applovin/impl/z8;
 
     move-result-object p2
 
+    .line 13
     iput-object p2, p0, Lcom/applovin/impl/x8;->n:Lcom/applovin/impl/z8;
 
-    .line 11
+    .line 14
     new-instance p3, Lcom/applovin/impl/x8$a;
 
     invoke-direct {p3, p2, p1}, Lcom/applovin/impl/x8$a;-><init>(Lcom/applovin/impl/z8;Lcom/applovin/impl/z8$a;)V
@@ -319,7 +324,7 @@
 
     return v2
 
-    .line 12
+    .line 15
     :cond_1
     invoke-static {v0}, Lcom/applovin/impl/x8;->a([B)Z
 
@@ -327,19 +332,20 @@
 
     if-eqz p1, :cond_3
 
+    .line 16
     iget-object p1, p0, Lcom/applovin/impl/x8;->o:Lcom/applovin/impl/x8$a;
 
     if-eqz p1, :cond_2
 
-    .line 13
+    .line 17
     invoke-virtual {p1, p2, p3}, Lcom/applovin/impl/x8$a;->b(J)V
 
+    .line 18
     iget-object p1, p0, Lcom/applovin/impl/x8;->o:Lcom/applovin/impl/x8$a;
 
-    .line 14
     iput-object p1, p4, Lcom/applovin/impl/gl$b;->b:Lcom/applovin/impl/jg;
 
-    .line 15
+    .line 19
     :cond_2
     iget-object p1, p4, Lcom/applovin/impl/gl$b;->a:Lcom/applovin/impl/e9;
 

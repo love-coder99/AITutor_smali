@@ -4,6 +4,9 @@
 
 
 # annotations
+.annotation build Lcom/android/billingclient/api/zzh;
+.end annotation
+
 .annotation system Ldalvik/annotation/MemberClasses;
     value = {
         Lcom/android/billingclient/api/GetBillingConfigParams$Builder;
@@ -32,6 +35,8 @@
 
 .method public static newBuilder()Lcom/android/billingclient/api/GetBillingConfigParams$Builder;
     .locals 2
+    .annotation build Landroidx/annotation/NonNull;
+    .end annotation
 
     new-instance v0, Lcom/android/billingclient/api/GetBillingConfigParams$Builder;
 

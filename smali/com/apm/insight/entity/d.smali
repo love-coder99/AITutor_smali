@@ -13,11 +13,12 @@
 .method private static a()V
     .locals 3
 
+    .line 1
     sget-object v0, Lcom/apm/insight/entity/d;->a:Ljava/lang/String;
 
     if-nez v0, :cond_0
 
-    .line 1
+    .line 2
     new-instance v0, Ljava/lang/StringBuilder;
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
@@ -36,7 +37,7 @@
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    .line 2
+    .line 3
     invoke-static {}, Lcom/apm/insight/e;->g()Landroid/content/Context;
 
     move-result-object v1
@@ -57,25 +58,26 @@
 
     sput-object v0, Lcom/apm/insight/entity/d;->a:Ljava/lang/String;
 
+    .line 4
     :cond_0
     sget-object v0, Lcom/apm/insight/entity/d;->b:Lorg/json/JSONObject;
 
     if-nez v0, :cond_1
 
-    .line 3
+    .line 5
     :try_start_0
     new-instance v0, Lorg/json/JSONObject;
 
     sget-object v1, Lcom/apm/insight/entity/d;->a:Ljava/lang/String;
 
+    .line 6
     const-string v2, "\n"
 
-    .line 4
     invoke-static {v1, v2}, Lcom/apm/insight/l/f;->a(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v1
 
-    .line 5
+    .line 7
     invoke-direct {v0, v1}, Lorg/json/JSONObject;-><init>(Ljava/lang/String;)V
 
     sput-object v0, Lcom/apm/insight/entity/d;->b:Lorg/json/JSONObject;
@@ -85,7 +87,7 @@
 
     return-void
 
-    .line 6
+    .line 8
     :catch_0
     new-instance v0, Lorg/json/JSONObject;
 
@@ -95,7 +97,7 @@
 
     goto :goto_0
 
-    .line 7
+    .line 9
     :catch_1
     new-instance v0, Lorg/json/JSONObject;
 
@@ -115,16 +117,17 @@
 
     return-void
 
-    .line 8
+    .line 10
     :cond_0
     :try_start_0
     invoke-static {}, Lcom/apm/insight/entity/d;->a()V
 
+    .line 11
     sget-object v0, Lcom/apm/insight/entity/d;->b:Lorg/json/JSONObject;
 
     if-eqz v0, :cond_2
 
-    .line 9
+    .line 12
     invoke-virtual {v0}, Lorg/json/JSONObject;->keys()Ljava/util/Iterator;
 
     move-result-object v0
@@ -138,25 +141,25 @@
 
     if-eqz v1, :cond_2
 
-    .line 10
+    .line 13
     invoke-interface {v0}, Ljava/util/Iterator;->next()Ljava/lang/Object;
 
     move-result-object v1
 
     check-cast v1, Ljava/lang/String;
 
+    .line 14
     const-string v2, "slardar_filter"
 
-    .line 11
     invoke-virtual {v2, v1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
     move-result v2
 
     if-nez v2, :cond_1
 
+    .line 15
     sget-object v2, Lcom/apm/insight/entity/d;->b:Lorg/json/JSONObject;
 
-    .line 12
     invoke-virtual {v2, v1}, Lorg/json/JSONObject;->opt(Ljava/lang/String;)Ljava/lang/Object;
 
     move-result-object v2
@@ -165,7 +168,7 @@
 
     if-eqz v2, :cond_1
 
-    .line 13
+    .line 16
     :try_start_1
     invoke-virtual {p0, v1, v2}, Lorg/json/JSONObject;->put(Ljava/lang/String;Ljava/lang/Object;)Lorg/json/JSONObject;
     :try_end_1

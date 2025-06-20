@@ -55,25 +55,32 @@
     .line 1
     invoke-direct {p0, v0}, Lcom/applovin/impl/a2;-><init>(Z)V
 
+    .line 2
     iput-object p1, p0, Lcom/applovin/impl/c6;->h:Ljava/lang/String;
 
+    .line 3
     iput p2, p0, Lcom/applovin/impl/c6;->f:I
 
+    .line 4
     iput p3, p0, Lcom/applovin/impl/c6;->g:I
 
+    .line 5
     iput-boolean p4, p0, Lcom/applovin/impl/c6;->e:Z
 
+    .line 6
     iput-object p5, p0, Lcom/applovin/impl/c6;->i:Lcom/applovin/impl/pa$f;
 
+    .line 7
     iput-object p6, p0, Lcom/applovin/impl/c6;->l:Lcom/applovin/exoplayer2/common/base/Predicate;
 
-    .line 2
+    .line 8
     new-instance p1, Lcom/applovin/impl/pa$f;
 
     invoke-direct {p1}, Lcom/applovin/impl/pa$f;-><init>()V
 
     iput-object p1, p0, Lcom/applovin/impl/c6;->j:Lcom/applovin/impl/pa$f;
 
+    .line 9
     iput-boolean p7, p0, Lcom/applovin/impl/c6;->k:Z
 
     return-void
@@ -82,7 +89,7 @@
 .method public synthetic constructor <init>(Ljava/lang/String;IIZLcom/applovin/impl/pa$f;Lcom/applovin/exoplayer2/common/base/Predicate;ZLcom/applovin/impl/c6$a;)V
     .locals 0
 
-    .line 3
+    .line 10
     invoke-direct/range {p0 .. p7}, Lcom/applovin/impl/c6;-><init>(Ljava/lang/String;IIZLcom/applovin/impl/pa$f;Lcom/applovin/exoplayer2/common/base/Predicate;Z)V
 
     return-void
@@ -96,14 +103,14 @@
 
     move-result-object p1
 
+    .line 19
     iget v0, p0, Lcom/applovin/impl/c6;->f:I
 
-    .line 19
     invoke-virtual {p1, v0}, Ljava/net/URLConnection;->setConnectTimeout(I)V
 
+    .line 20
     iget v0, p0, Lcom/applovin/impl/c6;->g:I
 
-    .line 20
     invoke-virtual {p1, v0}, Ljava/net/URLConnection;->setReadTimeout(I)V
 
     .line 21
@@ -111,19 +118,10 @@
 
     invoke-direct {v0}, Ljava/util/HashMap;-><init>()V
 
+    .line 22
     iget-object v1, p0, Lcom/applovin/impl/c6;->i:Lcom/applovin/impl/pa$f;
 
     if-eqz v1, :cond_0
-
-    .line 22
-    invoke-virtual {v1}, Lcom/applovin/impl/pa$f;->a()Ljava/util/Map;
-
-    move-result-object v1
-
-    invoke-virtual {v0, v1}, Ljava/util/HashMap;->putAll(Ljava/util/Map;)V
-
-    :cond_0
-    iget-object v1, p0, Lcom/applovin/impl/c6;->j:Lcom/applovin/impl/pa$f;
 
     .line 23
     invoke-virtual {v1}, Lcom/applovin/impl/pa$f;->a()Ljava/util/Map;
@@ -133,9 +131,19 @@
     invoke-virtual {v0, v1}, Ljava/util/HashMap;->putAll(Ljava/util/Map;)V
 
     .line 24
-    invoke-virtual {v0, p10}, Ljava/util/HashMap;->putAll(Ljava/util/Map;)V
+    :cond_0
+    iget-object v1, p0, Lcom/applovin/impl/c6;->j:Lcom/applovin/impl/pa$f;
+
+    invoke-virtual {v1}, Lcom/applovin/impl/pa$f;->a()Ljava/util/Map;
+
+    move-result-object v1
+
+    invoke-virtual {v0, v1}, Ljava/util/HashMap;->putAll(Ljava/util/Map;)V
 
     .line 25
+    invoke-virtual {v0, p10}, Ljava/util/HashMap;->putAll(Ljava/util/Map;)V
+
+    .line 26
     invoke-virtual {v0}, Ljava/util/HashMap;->entrySet()Ljava/util/Set;
 
     move-result-object p10
@@ -157,7 +165,7 @@
 
     check-cast v0, Ljava/util/Map$Entry;
 
-    .line 26
+    .line 27
     invoke-interface {v0}, Ljava/util/Map$Entry;->getKey()Ljava/lang/Object;
 
     move-result-object v1
@@ -174,7 +182,7 @@
 
     goto :goto_0
 
-    .line 27
+    .line 28
     :cond_1
     invoke-static {p4, p5, p6, p7}, Lcom/applovin/impl/ra;->a(JJ)Ljava/lang/String;
 
@@ -182,24 +190,26 @@
 
     if-eqz p4, :cond_2
 
+    .line 29
     const-string p5, "Range"
 
-    .line 28
     invoke-virtual {p1, p5, p4}, Ljava/net/URLConnection;->setRequestProperty(Ljava/lang/String;Ljava/lang/String;)V
 
+    .line 30
     :cond_2
     iget-object p4, p0, Lcom/applovin/impl/c6;->h:Ljava/lang/String;
 
     if-eqz p4, :cond_3
 
+    .line 31
     const-string p5, "User-Agent"
 
-    .line 29
     invoke-virtual {p1, p5, p4}, Ljava/net/URLConnection;->setRequestProperty(Ljava/lang/String;Ljava/lang/String;)V
 
     :cond_3
     if-eqz p8, :cond_4
 
+    .line 32
     const-string p4, "gzip"
 
     goto :goto_1
@@ -210,10 +220,9 @@
     :goto_1
     const-string p5, "Accept-Encoding"
 
-    .line 30
     invoke-virtual {p1, p5, p4}, Ljava/net/URLConnection;->setRequestProperty(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 31
+    .line 33
     invoke-virtual {p1, p9}, Ljava/net/HttpURLConnection;->setInstanceFollowRedirects(Z)V
 
     if-eqz p3, :cond_5
@@ -225,11 +234,11 @@
     :cond_5
     const/4 p4, 0x0
 
-    .line 32
+    .line 34
     :goto_2
     invoke-virtual {p1, p4}, Ljava/net/URLConnection;->setDoOutput(Z)V
 
-    .line 33
+    .line 35
     invoke-static {p2}, Lcom/applovin/impl/k5;->a(I)Ljava/lang/String;
 
     move-result-object p2
@@ -238,28 +247,28 @@
 
     if-eqz p3, :cond_6
 
-    .line 34
+    .line 36
     array-length p2, p3
 
     invoke-virtual {p1, p2}, Ljava/net/HttpURLConnection;->setFixedLengthStreamingMode(I)V
 
-    .line 35
+    .line 37
     invoke-virtual {p1}, Ljava/net/URLConnection;->connect()V
 
-    .line 36
+    .line 38
     invoke-virtual {p1}, Ljava/net/URLConnection;->getOutputStream()Ljava/io/OutputStream;
 
     move-result-object p2
 
-    .line 37
+    .line 39
     invoke-virtual {p2, p3}, Ljava/io/OutputStream;->write([B)V
 
-    .line 38
+    .line 40
     invoke-virtual {p2}, Ljava/io/OutputStream;->close()V
 
     goto :goto_3
 
-    .line 39
+    .line 41
     :cond_6
     invoke-virtual {p1}, Ljava/net/URLConnection;->connect()V
 
@@ -289,9 +298,9 @@
 
     move-result-object p2
 
+    .line 3
     const-string v3, "https"
 
-    .line 3
     invoke-virtual {v3, p2}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
     move-result v3
@@ -315,7 +324,7 @@
     const-string v2, "Unsupported protocol redirect: "
 
     .line 5
-    invoke-static {v2, p2}, Landroid/support/v4/media/session/a;->D(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v2, p2}, LB/u;->t(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object p2
 
@@ -324,13 +333,13 @@
 
     throw p1
 
+    .line 7
     :cond_1
     :goto_0
     iget-boolean v3, p0, Lcom/applovin/impl/c6;->e:Z
 
     if-nez v3, :cond_3
 
-    .line 7
     invoke-virtual {p1}, Ljava/net/URL;->getProtocol()Ljava/lang/String;
 
     move-result-object v3
@@ -417,6 +426,7 @@
     :cond_0
     const/16 v2, 0x1000
 
+    .line 107
     new-array v3, v2, [B
 
     :goto_0
@@ -426,16 +436,16 @@
 
     int-to-long v4, v2
 
-    .line 93
+    .line 108
     invoke-static {p1, p2, v4, v5}, Ljava/lang/Math;->min(JJ)J
 
     move-result-wide v4
 
     long-to-int v5, v4
 
+    .line 109
     iget-object v4, p0, Lcom/applovin/impl/c6;->o:Ljava/io/InputStream;
 
-    .line 94
     invoke-static {v4}, Lcom/applovin/impl/xp;->a(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object v4
@@ -448,7 +458,7 @@
 
     move-result v4
 
-    .line 95
+    .line 110
     invoke-static {}, Ljava/lang/Thread;->currentThread()Ljava/lang/Thread;
 
     move-result-object v5
@@ -469,12 +479,12 @@
 
     sub-long/2addr p1, v5
 
-    .line 96
+    .line 111
     invoke-virtual {p0, v4}, Lcom/applovin/impl/a2;->d(I)V
 
     goto :goto_0
 
-    .line 97
+    .line 112
     :cond_1
     new-instance p1, Lcom/applovin/impl/pa$c;
 
@@ -484,7 +494,7 @@
 
     throw p1
 
-    .line 98
+    .line 113
     :cond_2
     new-instance p1, Lcom/applovin/impl/pa$c;
 
@@ -507,7 +517,7 @@
 
     if-eqz p0, :cond_4
 
-    .line 40
+    .line 42
     sget v0, Lcom/applovin/impl/xp;->a:I
 
     const/16 v1, 0x13
@@ -520,7 +530,7 @@
 
     goto :goto_0
 
-    .line 41
+    .line 43
     :cond_0
     :try_start_0
     invoke-virtual {p0}, Ljava/net/URLConnection;->getInputStream()Ljava/io/InputStream;
@@ -533,7 +543,7 @@
 
     if-nez v2, :cond_1
 
-    .line 42
+    .line 44
     invoke-virtual {p0}, Ljava/io/InputStream;->read()I
 
     move-result p1
@@ -553,7 +563,7 @@
 
     return-void
 
-    .line 43
+    .line 45
     :cond_2
     invoke-virtual {p0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
@@ -563,9 +573,9 @@
 
     move-result-object p1
 
+    .line 46
     const-string p2, "com.android.okhttp.internal.http.HttpTransport$ChunkedInputStream"
 
-    .line 44
     invoke-virtual {p2, p1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
     move-result p2
@@ -574,14 +584,14 @@
 
     const-string p2, "com.android.okhttp.internal.http.HttpTransport$FixedLengthInputStream"
 
-    .line 45
+    .line 47
     invoke-virtual {p2, p1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
     move-result p1
 
     if-eqz p1, :cond_4
 
-    .line 46
+    .line 48
     :cond_3
     invoke-virtual {p0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
@@ -591,7 +601,7 @@
 
     move-result-object p1
 
-    .line 47
+    .line 49
     invoke-static {p1}, Lcom/applovin/impl/b1;->a(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object p1
@@ -602,21 +612,17 @@
 
     const/4 v0, 0x0
 
-    new-array v1, v0, [Ljava/lang/Class;
-
-    invoke-virtual {p1, p2, v1}, Ljava/lang/Class;->getDeclaredMethod(Ljava/lang/String;[Ljava/lang/Class;)Ljava/lang/reflect/Method;
+    invoke-virtual {p1, p2, v0}, Ljava/lang/Class;->getDeclaredMethod(Ljava/lang/String;[Ljava/lang/Class;)Ljava/lang/reflect/Method;
 
     move-result-object p1
 
     const/4 p2, 0x1
 
-    .line 48
+    .line 50
     invoke-virtual {p1, p2}, Ljava/lang/reflect/AccessibleObject;->setAccessible(Z)V
 
-    new-array p2, v0, [Ljava/lang/Object;
-
-    .line 49
-    invoke-virtual {p1, p0, p2}, Ljava/lang/reflect/Method;->invoke(Ljava/lang/Object;[Ljava/lang/Object;)Ljava/lang/Object;
+    .line 51
+    invoke-virtual {p1, p0, v0}, Ljava/lang/reflect/Method;->invoke(Ljava/lang/Object;[Ljava/lang/Object;)Ljava/lang/Object;
     :try_end_0
     .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
 
@@ -629,16 +635,16 @@
 .method private static a(Ljava/net/HttpURLConnection;)Z
     .locals 1
 
+    .line 16
     const-string v0, "Content-Encoding"
 
-    .line 16
     invoke-virtual {p0, v0}, Ljava/net/URLConnection;->getHeaderField(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object p0
 
+    .line 17
     const-string v0, "gzip"
 
-    .line 17
     invoke-virtual {v0, p0}, Ljava/lang/String;->equalsIgnoreCase(Ljava/lang/String;)Z
 
     move-result p0
@@ -1076,7 +1082,7 @@
 
     .line 194
     .line 195
-    invoke-static {v2, v14}, Lcom/google/android/gms/internal/play_billing/v3;->s(Ljava/lang/String;I)Ljava/lang/String;
+    invoke-static {v14, v2}, Landroidx/appcompat/view/menu/F;->D(ILjava/lang/String;)Ljava/lang/String;
 
     .line 196
     .line 197
@@ -1110,6 +1116,7 @@
 
     return p1
 
+    .line 2
     :cond_0
     iget-wide v0, p0, Lcom/applovin/impl/c6;->r:J
 
@@ -1121,6 +1128,7 @@
 
     if-eqz v5, :cond_2
 
+    .line 3
     iget-wide v2, p0, Lcom/applovin/impl/c6;->s:J
 
     sub-long/2addr v0, v2
@@ -1136,17 +1144,17 @@
     :cond_1
     int-to-long v2, p3
 
-    .line 2
+    .line 4
     invoke-static {v2, v3, v0, v1}, Ljava/lang/Math;->min(JJ)J
 
     move-result-wide v0
 
     long-to-int p3, v0
 
+    .line 5
     :cond_2
     iget-object v0, p0, Lcom/applovin/impl/c6;->o:Ljava/io/InputStream;
 
-    .line 3
     invoke-static {v0}, Lcom/applovin/impl/xp;->a(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object v0
@@ -1161,6 +1169,7 @@
 
     return v4
 
+    .line 6
     :cond_3
     iget-wide p2, p0, Lcom/applovin/impl/c6;->s:J
 
@@ -1170,7 +1179,7 @@
 
     iput-wide p2, p0, Lcom/applovin/impl/c6;->s:J
 
-    .line 4
+    .line 7
     invoke-virtual {p0, p1}, Lcom/applovin/impl/a2;->d(I)V
 
     return p1
@@ -1233,7 +1242,7 @@
 .method public a([BII)I
     .locals 0
 
-    .line 90
+    .line 103
     :try_start_0
     invoke-direct {p0, p1, p2, p3}, Lcom/applovin/impl/c6;->e([BII)I
 
@@ -1246,9 +1255,10 @@
     :catch_0
     move-exception p1
 
+    .line 104
     iget-object p2, p0, Lcom/applovin/impl/c6;->m:Lcom/applovin/impl/k5;
 
-    .line 91
+    .line 105
     invoke-static {p2}, Lcom/applovin/impl/xp;->a(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object p2
@@ -1257,7 +1267,7 @@
 
     const/4 p3, 0x2
 
-    .line 92
+    .line 106
     invoke-static {p1, p2, p3}, Lcom/applovin/impl/pa$c;->a(Ljava/io/IOException;Lcom/applovin/impl/k5;I)Lcom/applovin/impl/pa$c;
 
     move-result-object p1
@@ -1268,20 +1278,23 @@
 .method public a(Lcom/applovin/impl/k5;)J
     .locals 14
 
+    .line 52
     iput-object p1, p0, Lcom/applovin/impl/c6;->m:Lcom/applovin/impl/k5;
 
     const-wide/16 v0, 0x0
 
+    .line 53
     iput-wide v0, p0, Lcom/applovin/impl/c6;->s:J
 
+    .line 54
     iput-wide v0, p0, Lcom/applovin/impl/c6;->r:J
 
-    .line 50
+    .line 55
     invoke-virtual {p0, p1}, Lcom/applovin/impl/a2;->b(Lcom/applovin/impl/k5;)V
 
     const/4 v2, 0x1
 
-    .line 51
+    .line 56
     :try_start_0
     invoke-direct {p0, p1}, Lcom/applovin/impl/c6;->d(Lcom/applovin/impl/k5;)Ljava/net/HttpURLConnection;
 
@@ -1289,20 +1302,21 @@
 
     iput-object v3, p0, Lcom/applovin/impl/c6;->n:Ljava/net/HttpURLConnection;
 
-    .line 52
+    .line 57
     invoke-virtual {v3}, Ljava/net/HttpURLConnection;->getResponseCode()I
 
     move-result v4
 
     iput v4, p0, Lcom/applovin/impl/c6;->q:I
 
-    .line 53
+    .line 58
     invoke-virtual {v3}, Ljava/net/HttpURLConnection;->getResponseMessage()Ljava/lang/String;
 
     move-result-object v7
     :try_end_0
     .catch Ljava/io/IOException; {:try_start_0 .. :try_end_0} :catch_3
 
+    .line 59
     iget v4, p0, Lcom/applovin/impl/c6;->q:I
 
     const-string v5, "Content-Range"
@@ -1319,17 +1333,17 @@
 
     goto/16 :goto_4
 
-    .line 54
+    .line 60
     :cond_0
     invoke-virtual {v3}, Ljava/net/URLConnection;->getContentType()Ljava/lang/String;
 
     move-result-object v4
 
+    .line 61
     iget-object v7, p0, Lcom/applovin/impl/c6;->l:Lcom/applovin/exoplayer2/common/base/Predicate;
 
     if-eqz v7, :cond_2
 
-    .line 55
     invoke-interface {v7, v4}, Lcom/applovin/exoplayer2/common/base/Predicate;->apply(Ljava/lang/Object;)Z
 
     move-result v7
@@ -1338,24 +1352,24 @@
 
     goto :goto_0
 
-    .line 56
+    .line 62
     :cond_1
     invoke-direct {p0}, Lcom/applovin/impl/c6;->h()V
 
-    .line 57
+    .line 63
     new-instance v0, Lcom/applovin/impl/pa$d;
 
     invoke-direct {v0, v4, p1}, Lcom/applovin/impl/pa$d;-><init>(Ljava/lang/String;Lcom/applovin/impl/k5;)V
 
     throw v0
 
+    .line 64
     :cond_2
     :goto_0
     iget v4, p0, Lcom/applovin/impl/c6;->q:I
 
     if-ne v4, v6, :cond_3
 
-    .line 58
     iget-wide v6, p1, Lcom/applovin/impl/k5;->g:J
 
     cmp-long v4, v6, v0
@@ -1364,7 +1378,7 @@
 
     move-wide v0, v6
 
-    .line 59
+    .line 65
     :cond_3
     invoke-static {v3}, Lcom/applovin/impl/c6;->a(Ljava/net/HttpURLConnection;)Z
 
@@ -1372,31 +1386,32 @@
 
     if-nez v4, :cond_6
 
-    .line 60
+    .line 66
     iget-wide v6, p1, Lcom/applovin/impl/k5;->h:J
 
     cmp-long v10, v6, v8
 
     if-eqz v10, :cond_4
 
+    .line 67
     iput-wide v6, p0, Lcom/applovin/impl/c6;->r:J
 
     goto :goto_1
 
+    .line 68
     :cond_4
     const-string v6, "Content-Length"
 
-    .line 61
     invoke-virtual {v3, v6}, Ljava/net/URLConnection;->getHeaderField(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v6
 
-    .line 62
+    .line 69
     invoke-virtual {v3, v5}, Ljava/net/URLConnection;->getHeaderField(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v5
 
-    .line 63
+    .line 70
     invoke-static {v6, v5}, Lcom/applovin/impl/ra;->a(Ljava/lang/String;Ljava/lang/String;)J
 
     move-result-wide v5
@@ -1407,12 +1422,13 @@
 
     sub-long v8, v5, v0
 
+    .line 71
     :cond_5
     iput-wide v8, p0, Lcom/applovin/impl/c6;->r:J
 
     goto :goto_1
 
-    .line 64
+    .line 72
     :cond_6
     iget-wide v5, p1, Lcom/applovin/impl/k5;->h:J
 
@@ -1421,7 +1437,7 @@
     :goto_1
     const/16 v5, 0x7d0
 
-    .line 65
+    .line 73
     :try_start_1
     invoke-virtual {v3}, Ljava/net/URLConnection;->getInputStream()Ljava/io/InputStream;
 
@@ -1431,7 +1447,7 @@
 
     if-eqz v4, :cond_7
 
-    .line 66
+    .line 74
     new-instance v3, Ljava/util/zip/GZIPInputStream;
 
     iget-object v4, p0, Lcom/applovin/impl/c6;->o:Ljava/io/InputStream;
@@ -1449,19 +1465,21 @@
 
     goto :goto_3
 
+    .line 75
     :cond_7
     :goto_2
     iput-boolean v2, p0, Lcom/applovin/impl/c6;->p:Z
 
-    .line 67
+    .line 76
     invoke-virtual {p0, p1}, Lcom/applovin/impl/a2;->c(Lcom/applovin/impl/k5;)V
 
-    .line 68
+    .line 77
     :try_start_2
     invoke-direct {p0, v0, v1, p1}, Lcom/applovin/impl/c6;->a(JLcom/applovin/impl/k5;)V
     :try_end_2
     .catch Ljava/io/IOException; {:try_start_2 .. :try_end_2} :catch_1
 
+    .line 78
     iget-wide v0, p0, Lcom/applovin/impl/c6;->r:J
 
     return-wide v0
@@ -1469,20 +1487,20 @@
     :catch_1
     move-exception v0
 
-    .line 69
+    .line 79
     invoke-direct {p0}, Lcom/applovin/impl/c6;->h()V
 
-    .line 70
+    .line 80
     instance-of v1, v0, Lcom/applovin/impl/pa$c;
 
     if-eqz v1, :cond_8
 
-    .line 71
+    .line 81
     check-cast v0, Lcom/applovin/impl/pa$c;
 
     throw v0
 
-    .line 72
+    .line 82
     :cond_8
     new-instance v1, Lcom/applovin/impl/pa$c;
 
@@ -1490,31 +1508,32 @@
 
     throw v1
 
-    .line 73
+    .line 83
     :goto_3
     invoke-direct {p0}, Lcom/applovin/impl/c6;->h()V
 
-    .line 74
+    .line 84
     new-instance v1, Lcom/applovin/impl/pa$c;
 
     invoke-direct {v1, v0, p1, v5, v2}, Lcom/applovin/impl/pa$c;-><init>(Ljava/io/IOException;Lcom/applovin/impl/k5;II)V
 
     throw v1
 
-    .line 75
+    .line 85
     :cond_9
     :goto_4
     invoke-virtual {v3}, Ljava/net/URLConnection;->getHeaderFields()Ljava/util/Map;
 
     move-result-object v4
 
+    .line 86
     iget v6, p0, Lcom/applovin/impl/c6;->q:I
 
     const/16 v10, 0x1a0
 
     if-ne v6, v10, :cond_b
 
-    .line 76
+    .line 87
     invoke-virtual {v3, v5}, Ljava/net/URLConnection;->getHeaderField(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v5
@@ -1523,19 +1542,20 @@
 
     move-result-wide v5
 
-    .line 77
+    .line 88
     iget-wide v11, p1, Lcom/applovin/impl/k5;->g:J
 
     cmp-long v13, v11, v5
 
     if-nez v13, :cond_b
 
+    .line 89
     iput-boolean v2, p0, Lcom/applovin/impl/c6;->p:Z
 
-    .line 78
+    .line 90
     invoke-virtual {p0, p1}, Lcom/applovin/impl/a2;->c(Lcom/applovin/impl/k5;)V
 
-    .line 79
+    .line 91
     iget-wide v2, p1, Lcom/applovin/impl/k5;->h:J
 
     cmp-long p1, v2, v8
@@ -1547,7 +1567,7 @@
     :cond_a
     return-wide v0
 
-    .line 80
+    .line 92
     :cond_b
     invoke-virtual {v3}, Ljava/net/HttpURLConnection;->getErrorStream()Ljava/io/InputStream;
 
@@ -1555,7 +1575,7 @@
 
     if-eqz v0, :cond_c
 
-    .line 81
+    .line 93
     :try_start_3
     invoke-static {v0}, Lcom/applovin/impl/xp;->a(Ljava/io/InputStream;)[B
 
@@ -1563,7 +1583,7 @@
 
     goto :goto_5
 
-    .line 82
+    .line 94
     :cond_c
     sget-object v0, Lcom/applovin/impl/xp;->f:[B
     :try_end_3
@@ -1574,21 +1594,22 @@
 
     goto :goto_6
 
-    .line 83
+    .line 95
     :catch_2
     sget-object v0, Lcom/applovin/impl/xp;->f:[B
 
     goto :goto_5
 
-    .line 84
+    .line 96
     :goto_6
     invoke-direct {p0}, Lcom/applovin/impl/c6;->h()V
 
+    .line 97
     iget v0, p0, Lcom/applovin/impl/c6;->q:I
 
     if-ne v0, v10, :cond_d
 
-    .line 85
+    .line 98
     new-instance v0, Lcom/applovin/impl/i5;
 
     const/16 v1, 0x7d8
@@ -1605,7 +1626,7 @@
 
     goto :goto_7
 
-    .line 86
+    .line 99
     :goto_8
     new-instance v0, Lcom/applovin/impl/pa$e;
 
@@ -1624,10 +1645,10 @@
     :catch_3
     move-exception v0
 
-    .line 87
+    .line 100
     invoke-direct {p0}, Lcom/applovin/impl/c6;->h()V
 
-    .line 88
+    .line 101
     invoke-static {v0, p1, v2}, Lcom/applovin/impl/pa$c;->a(Ljava/io/IOException;Lcom/applovin/impl/k5;I)Lcom/applovin/impl/pa$c;
 
     move-result-object p1
@@ -1638,7 +1659,7 @@
 .method public a(Ljava/net/URL;)Ljava/net/HttpURLConnection;
     .locals 0
 
-    .line 89
+    .line 102
     invoke-virtual {p1}, Ljava/net/URL;->openConnection()Ljava/net/URLConnection;
 
     move-result-object p1
@@ -1887,11 +1908,11 @@
 .method public e()Ljava/util/Map;
     .locals 1
 
+    .line 1
     iget-object v0, p0, Lcom/applovin/impl/c6;->n:Ljava/net/HttpURLConnection;
 
     if-nez v0, :cond_0
 
-    .line 1
     invoke-static {}, Ljava/util/Collections;->emptyMap()Ljava/util/Map;
 
     move-result-object v0

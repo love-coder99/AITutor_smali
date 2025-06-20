@@ -3,14 +3,14 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lzh/c;
+.implements Lka/c;
 
 
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "Lkotlin/jvm/internal/Lambda;",
-        "Lzh/c;"
+        "Lka/c;"
     }
 .end annotation
 
@@ -21,7 +21,7 @@
     d2 = {
         "Landroidx/compose/ui/node/b;",
         "it",
-        "Lqh/r;",
+        "LX9/j;",
         "invoke",
         "(Landroidx/compose/ui/node/b;)V",
         "<anonymous>"
@@ -72,7 +72,7 @@
 
     invoke-virtual {p0, p1}, Landroidx/compose/ui/node/LayoutNodeLayoutDelegate$LookaheadPassDelegate$remeasure$2;->invoke(Landroidx/compose/ui/node/b;)V
 
-    sget-object p1, Lqh/r;->a:Lqh/r;
+    sget-object p1, LX9/j;->a:LX9/j;
 
     return-object p1
 .end method
@@ -81,7 +81,7 @@
     .locals 1
 
     .line 2
-    invoke-interface {p1}, Landroidx/compose/ui/node/b;->b()Landroidx/compose/ui/node/a;
+    invoke-interface {p1}, Landroidx/compose/ui/node/b;->a()Landroidx/compose/ui/node/a;
 
     move-result-object p1
 

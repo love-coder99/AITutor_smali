@@ -29,7 +29,7 @@
 
 
 # instance fields
-.field public final M0:Landroidx/recyclerview/widget/l;
+.field public final M0:LM2/a;
 
 
 # direct methods
@@ -42,19 +42,19 @@
     .line 2
     .line 3
     .line 4
-    new-instance p1, Landroidx/recyclerview/widget/l;
+    new-instance p1, LM2/a;
 
     .line 5
     .line 6
-    const/4 p2, 0x1
+    const/4 p2, 0x0
 
     .line 7
-    invoke-direct {p1, p0, p2}, Landroidx/recyclerview/widget/l;-><init>(Ljava/lang/Object;I)V
+    invoke-direct {p1, p0, p2}, LM2/a;-><init>(Ljava/lang/Object;I)V
 
     .line 8
     .line 9
     .line 10
-    iput-object p1, p0, Lcom/afollestad/materialdialogs/internal/list/DialogRecyclerView;->M0:Landroidx/recyclerview/widget/l;
+    iput-object p1, p0, Lcom/afollestad/materialdialogs/internal/list/DialogRecyclerView;->M0:LM2/a;
 
     .line 11
     .line 12
@@ -100,7 +100,7 @@
 
     .line 17
     .line 18
-    invoke-interface {v0, p0}, Lzh/c;->invoke(Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-interface {v0, p0}, Lka/c;->invoke(Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 19
     .line 20
@@ -117,11 +117,11 @@
     move-result-object v1
 
     .line 26
-    new-instance v2, Lu5/a;
+    new-instance v2, LO2/a;
 
     .line 27
     .line 28
-    invoke-direct {v2, p0, v0}, Lu5/a;-><init>(Landroid/view/View;Lzh/c;)V
+    invoke-direct {v2, p0, v0}, LO2/a;-><init>(Landroid/view/ViewGroup;Lka/c;)V
 
     .line 29
     .line 30
@@ -132,11 +132,11 @@
     .line 33
     .line 34
     :goto_0
-    iget-object v0, p0, Lcom/afollestad/materialdialogs/internal/list/DialogRecyclerView;->M0:Landroidx/recyclerview/widget/l;
+    iget-object v0, p0, Lcom/afollestad/materialdialogs/internal/list/DialogRecyclerView;->M0:LM2/a;
 
     .line 35
     .line 36
-    invoke-virtual {p0, v0}, Landroidx/recyclerview/widget/RecyclerView;->i(Landroidx/recyclerview/widget/u0;)V
+    invoke-virtual {p0, v0}, Landroidx/recyclerview/widget/RecyclerView;->i(Landroidx/recyclerview/widget/O;)V
 
     .line 37
     .line 38
@@ -156,7 +156,7 @@
 
     .line 4
     .line 5
-    iget-object v1, p0, Lcom/afollestad/materialdialogs/internal/list/DialogRecyclerView;->M0:Landroidx/recyclerview/widget/l;
+    iget-object v1, p0, Lcom/afollestad/materialdialogs/internal/list/DialogRecyclerView;->M0:LM2/a;
 
     .line 6
     .line 7

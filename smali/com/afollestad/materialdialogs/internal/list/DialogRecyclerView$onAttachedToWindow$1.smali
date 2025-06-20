@@ -3,14 +3,14 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lzh/c;
+.implements Lka/c;
 
 
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "Lkotlin/jvm/internal/Lambda;",
-        "Lzh/c;"
+        "Lka/c;"
     }
 .end annotation
 
@@ -20,7 +20,7 @@
     }
     d2 = {
         "Lcom/afollestad/materialdialogs/internal/list/DialogRecyclerView;",
-        "Lqh/r;",
+        "LX9/j;",
         "invoke",
         "(Lcom/afollestad/materialdialogs/internal/list/DialogRecyclerView;)V",
         "<anonymous>"
@@ -71,7 +71,7 @@
 
     invoke-virtual {p0, p1}, Lcom/afollestad/materialdialogs/internal/list/DialogRecyclerView$onAttachedToWindow$1;->invoke(Lcom/afollestad/materialdialogs/internal/list/DialogRecyclerView;)V
 
-    sget-object p1, Lqh/r;->a:Lqh/r;
+    sget-object p1, LX9/j;->a:LX9/j;
 
     return-object p1
 .end method
@@ -97,7 +97,7 @@
 
     const/4 v1, 0x2
 
-    if-eqz v0, :cond_a
+    if-eqz v0, :cond_b
 
     .line 5
     invoke-virtual {p1}, Landroid/view/View;->getMeasuredHeight()I
@@ -106,17 +106,17 @@
 
     if-nez v0, :cond_1
 
-    goto/16 :goto_4
+    goto/16 :goto_7
 
     .line 6
     :cond_1
-    invoke-virtual {p1}, Landroidx/recyclerview/widget/RecyclerView;->getAdapter()Landroidx/recyclerview/widget/g0;
+    invoke-virtual {p1}, Landroidx/recyclerview/widget/RecyclerView;->getAdapter()Landroidx/recyclerview/widget/C;
 
     move-result-object v0
 
-    if-eqz v0, :cond_9
+    if-eqz v0, :cond_a
 
-    invoke-virtual {v0}, Landroidx/recyclerview/widget/g0;->getItemCount()I
+    invoke-virtual {v0}, Landroidx/recyclerview/widget/C;->getItemCount()I
 
     move-result v0
 
@@ -125,7 +125,7 @@
     sub-int/2addr v0, v2
 
     .line 7
-    invoke-virtual {p1}, Landroidx/recyclerview/widget/RecyclerView;->getLayoutManager()Landroidx/recyclerview/widget/q0;
+    invoke-virtual {p1}, Landroidx/recyclerview/widget/RecyclerView;->getLayoutManager()Landroidx/recyclerview/widget/L;
 
     move-result-object v3
 
@@ -141,7 +141,7 @@
     check-cast v3, Landroidx/recyclerview/widget/LinearLayoutManager;
 
     .line 9
-    invoke-virtual {v3}, Landroidx/recyclerview/widget/q0;->v()I
+    invoke-virtual {v3}, Landroidx/recyclerview/widget/L;->v()I
 
     move-result v4
 
@@ -154,16 +154,18 @@
 
     if-nez v3, :cond_2
 
+    const/4 v3, -0x1
+
     goto :goto_0
 
     .line 11
     :cond_2
-    invoke-static {v3}, Landroidx/recyclerview/widget/q0;->H(Landroid/view/View;)I
+    invoke-static {v3}, Landroidx/recyclerview/widget/L;->H(Landroid/view/View;)I
 
-    move-result v6
+    move-result v3
 
     :goto_0
-    if-ne v6, v0, :cond_8
+    if-ne v3, v0, :cond_9
 
     goto :goto_2
 
@@ -171,12 +173,12 @@
     :cond_3
     instance-of v4, v3, Landroidx/recyclerview/widget/GridLayoutManager;
 
-    if-eqz v4, :cond_8
+    if-eqz v4, :cond_9
 
     check-cast v3, Landroidx/recyclerview/widget/GridLayoutManager;
 
     .line 13
-    invoke-virtual {v3}, Landroidx/recyclerview/widget/q0;->v()I
+    invoke-virtual {v3}, Landroidx/recyclerview/widget/L;->v()I
 
     move-result v4
 
@@ -189,20 +191,22 @@
 
     if-nez v3, :cond_4
 
+    const/4 v3, -0x1
+
     goto :goto_1
 
     .line 15
     :cond_4
-    invoke-static {v3}, Landroidx/recyclerview/widget/q0;->H(Landroid/view/View;)I
+    invoke-static {v3}, Landroidx/recyclerview/widget/L;->H(Landroid/view/View;)I
 
-    move-result v6
+    move-result v3
 
     :goto_1
-    if-ne v6, v0, :cond_8
+    if-ne v3, v0, :cond_9
 
     .line 16
     :goto_2
-    invoke-virtual {p1}, Landroidx/recyclerview/widget/RecyclerView;->getLayoutManager()Landroidx/recyclerview/widget/q0;
+    invoke-virtual {p1}, Landroidx/recyclerview/widget/RecyclerView;->getLayoutManager()Landroidx/recyclerview/widget/L;
 
     move-result-object v0
 
@@ -214,7 +218,7 @@
     check-cast v0, Landroidx/recyclerview/widget/LinearLayoutManager;
 
     .line 18
-    invoke-virtual {v0}, Landroidx/recyclerview/widget/q0;->v()I
+    invoke-virtual {v0}, Landroidx/recyclerview/widget/L;->v()I
 
     move-result v3
 
@@ -229,13 +233,17 @@
 
     .line 20
     :cond_5
-    invoke-static {v0}, Landroidx/recyclerview/widget/q0;->H(Landroid/view/View;)I
+    invoke-static {v0}, Landroidx/recyclerview/widget/L;->H(Landroid/view/View;)I
 
-    move-result v0
+    move-result v6
 
-    if-nez v0, :cond_8
+    :goto_3
+    if-nez v6, :cond_8
 
-    goto :goto_4
+    :goto_4
+    const/4 v5, 0x1
+
+    goto :goto_6
 
     .line 21
     :cond_6
@@ -246,7 +254,7 @@
     check-cast v0, Landroidx/recyclerview/widget/GridLayoutManager;
 
     .line 22
-    invoke-virtual {v0}, Landroidx/recyclerview/widget/q0;->v()I
+    invoke-virtual {v0}, Landroidx/recyclerview/widget/L;->v()I
 
     move-result v3
 
@@ -257,35 +265,41 @@
 
     if-nez v0, :cond_7
 
-    goto :goto_3
+    goto :goto_5
 
     .line 24
     :cond_7
-    invoke-static {v0}, Landroidx/recyclerview/widget/q0;->H(Landroid/view/View;)I
+    invoke-static {v0}, Landroidx/recyclerview/widget/L;->H(Landroid/view/View;)I
 
-    move-result v0
+    move-result v6
 
-    if-nez v0, :cond_8
+    :goto_5
+    if-nez v6, :cond_8
 
     goto :goto_4
 
     :cond_8
-    :goto_3
+    :goto_6
+    if-eqz v5, :cond_9
+
+    goto :goto_7
+
+    :cond_9
     const/4 v1, 0x1
 
-    goto :goto_4
+    goto :goto_7
 
     .line 25
-    :cond_9
-    invoke-static {}, Lrb/h;->W()V
+    :cond_a
+    invoke-static {}, Lkotlin/jvm/internal/h;->e()V
 
     const/4 p1, 0x0
 
     throw p1
 
     .line 26
-    :cond_a
-    :goto_4
+    :cond_b
+    :goto_7
     invoke-virtual {p1, v1}, Landroid/view/View;->setOverScrollMode(I)V
 
     return-void

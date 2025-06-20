@@ -71,6 +71,10 @@
 
 .method public constructor <init>(Lcom/applovin/impl/fe;Ljava/lang/String;Ljava/lang/String;JLjava/util/List;Ljava/util/List;Ljava/lang/String;)V
     .locals 0
+    .param p1    # Lcom/applovin/impl/fe;
+        .annotation build Landroidx/annotation/Nullable;
+        .end annotation
+    .end param
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -92,18 +96,25 @@
     .line 5
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
+    .line 6
     iput-object p1, p0, Lcom/applovin/impl/mediation/MaxAdWaterfallInfoImpl;->a:Lcom/applovin/impl/fe;
 
+    .line 7
     iput-object p2, p0, Lcom/applovin/impl/mediation/MaxAdWaterfallInfoImpl;->b:Ljava/lang/String;
 
+    .line 8
     iput-object p3, p0, Lcom/applovin/impl/mediation/MaxAdWaterfallInfoImpl;->c:Ljava/lang/String;
 
+    .line 9
     iput-object p6, p0, Lcom/applovin/impl/mediation/MaxAdWaterfallInfoImpl;->d:Ljava/util/List;
 
+    .line 10
     iput-wide p4, p0, Lcom/applovin/impl/mediation/MaxAdWaterfallInfoImpl;->e:J
 
+    .line 11
     iput-object p7, p0, Lcom/applovin/impl/mediation/MaxAdWaterfallInfoImpl;->f:Ljava/util/List;
 
+    .line 12
     iput-object p8, p0, Lcom/applovin/impl/mediation/MaxAdWaterfallInfoImpl;->g:Ljava/lang/String;
 
     return-void
@@ -114,32 +125,44 @@
 .method public getLatencyMillis()J
     .locals 2
 
+    .line 1
     iget-wide v0, p0, Lcom/applovin/impl/mediation/MaxAdWaterfallInfoImpl;->e:J
 
+    .line 2
+    .line 3
     return-wide v0
 .end method
 
 .method public getLoadedAd()Lcom/applovin/mediation/MaxAd;
     .locals 1
 
+    .line 1
     iget-object v0, p0, Lcom/applovin/impl/mediation/MaxAdWaterfallInfoImpl;->a:Lcom/applovin/impl/fe;
 
+    .line 2
+    .line 3
     return-object v0
 .end method
 
 .method public getMCode()Ljava/lang/String;
     .locals 1
 
+    .line 1
     iget-object v0, p0, Lcom/applovin/impl/mediation/MaxAdWaterfallInfoImpl;->g:Ljava/lang/String;
 
+    .line 2
+    .line 3
     return-object v0
 .end method
 
 .method public getName()Ljava/lang/String;
     .locals 1
 
+    .line 1
     iget-object v0, p0, Lcom/applovin/impl/mediation/MaxAdWaterfallInfoImpl;->b:Ljava/lang/String;
 
+    .line 2
+    .line 3
     return-object v0
 .end method
 
@@ -154,8 +177,11 @@
         }
     .end annotation
 
+    .line 1
     iget-object v0, p0, Lcom/applovin/impl/mediation/MaxAdWaterfallInfoImpl;->d:Ljava/util/List;
 
+    .line 2
+    .line 3
     return-object v0
 .end method
 
@@ -170,21 +196,29 @@
         }
     .end annotation
 
+    .line 1
     iget-object v0, p0, Lcom/applovin/impl/mediation/MaxAdWaterfallInfoImpl;->f:Ljava/util/List;
 
+    .line 2
+    .line 3
     return-object v0
 .end method
 
 .method public getTestName()Ljava/lang/String;
     .locals 1
 
+    .line 1
     iget-object v0, p0, Lcom/applovin/impl/mediation/MaxAdWaterfallInfoImpl;->c:Ljava/lang/String;
 
+    .line 2
+    .line 3
     return-object v0
 .end method
 
 .method public toString()Ljava/lang/String;
     .locals 3
+    .annotation build Landroidx/annotation/NonNull;
+    .end annotation
 
     .line 1
     new-instance v0, Ljava/lang/StringBuilder;

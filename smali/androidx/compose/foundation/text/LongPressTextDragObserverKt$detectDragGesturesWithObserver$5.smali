@@ -3,14 +3,14 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lzh/e;
+.implements Lka/e;
 
 
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "Lkotlin/jvm/internal/Lambda;",
-        "Lzh/e;"
+        "Lka/e;"
     }
 .end annotation
 
@@ -19,13 +19,13 @@
         "\u0000\u0014\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0008\u0003\u0010\u0007\u001a\u00020\u00042\u0006\u0010\u0001\u001a\u00020\u00002\u0006\u0010\u0003\u001a\u00020\u0002H\n\u00a2\u0006\u0004\u0008\u0005\u0010\u0006"
     }
     d2 = {
-        "Landroidx/compose/ui/input/pointer/r;",
+        "Landroidx/compose/ui/input/pointer/n;",
         "<anonymous parameter 0>",
-        "Ln1/c;",
+        "Lr0/c;",
         "offset",
-        "Lqh/r;",
+        "LX9/j;",
         "invoke-Uv8p0NA",
-        "(Landroidx/compose/ui/input/pointer/r;J)V",
+        "(Landroidx/compose/ui/input/pointer/n;J)V",
         "<anonymous>"
     }
     k = 0x3
@@ -60,31 +60,31 @@
     .locals 2
 
     .line 1
-    check-cast p1, Landroidx/compose/ui/input/pointer/r;
+    check-cast p1, Landroidx/compose/ui/input/pointer/n;
 
     .line 2
     .line 3
-    check-cast p2, Ln1/c;
+    check-cast p2, Lr0/c;
 
     .line 4
     .line 5
-    iget-wide v0, p2, Ln1/c;->a:J
+    iget-wide v0, p2, Lr0/c;->a:J
 
     .line 6
     .line 7
-    invoke-virtual {p0, p1, v0, v1}, Landroidx/compose/foundation/text/LongPressTextDragObserverKt$detectDragGesturesWithObserver$5;->invoke-Uv8p0NA(Landroidx/compose/ui/input/pointer/r;J)V
+    invoke-virtual {p0, p1, v0, v1}, Landroidx/compose/foundation/text/LongPressTextDragObserverKt$detectDragGesturesWithObserver$5;->invoke-Uv8p0NA(Landroidx/compose/ui/input/pointer/n;J)V
 
     .line 8
     .line 9
     .line 10
-    sget-object p1, Lqh/r;->a:Lqh/r;
+    sget-object p1, LX9/j;->a:LX9/j;
 
     .line 11
     .line 12
     return-object p1
 .end method
 
-.method public final invoke-Uv8p0NA(Landroidx/compose/ui/input/pointer/r;J)V
+.method public final invoke-Uv8p0NA(Landroidx/compose/ui/input/pointer/n;J)V
     .locals 0
 
     .line 1

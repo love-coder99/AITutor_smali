@@ -41,25 +41,25 @@
 .method public static a(Lorg/json/JSONObject;Lcom/applovin/impl/sdk/j;)Lcom/applovin/impl/k4;
     .locals 3
 
+    .line 1
     const-string v0, "title"
 
     const/4 v1, 0x0
 
-    .line 1
     invoke-static {p0, v0, v1}, Lcom/applovin/impl/sdk/utils/JsonUtils;->getJSONObject(Lorg/json/JSONObject;Ljava/lang/String;Lorg/json/JSONObject;)Lorg/json/JSONObject;
 
     move-result-object v0
 
+    .line 2
     const-string v2, "key"
 
-    .line 2
     invoke-static {v0, v2, v1}, Lcom/applovin/impl/sdk/utils/JsonUtils;->getString(Lorg/json/JSONObject;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v0
 
+    .line 3
     const-string v2, "TOS"
 
-    .line 3
     invoke-virtual {v2, v0}, Ljava/lang/String;->equalsIgnoreCase(Ljava/lang/String;)Z
 
     move-result v2
@@ -78,10 +78,10 @@
 
     return-object v1
 
+    .line 4
     :cond_0
     const-string v2, "PP"
 
-    .line 4
     invoke-virtual {v2, v0}, Ljava/lang/String;->equalsIgnoreCase(Ljava/lang/String;)Z
 
     move-result v0
@@ -114,13 +114,13 @@
 .method public a()Ljava/lang/String;
     .locals 3
 
+    .line 6
     iget-object v0, p0, Lcom/applovin/impl/k4;->b:Lorg/json/JSONObject;
 
     const-string v1, "destination_state_id"
 
     const/4 v2, 0x0
 
-    .line 6
     invoke-static {v0, v1, v2}, Lcom/applovin/impl/sdk/utils/JsonUtils;->getString(Lorg/json/JSONObject;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v0

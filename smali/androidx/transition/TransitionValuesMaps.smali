@@ -14,10 +14,10 @@
     .end annotation
 .end field
 
-.field final mItemIdValues:Landroidx/collection/o;
+.field final mItemIdValues:Landroidx/collection/n;
     .annotation system Ldalvik/annotation/Signature;
         value = {
-            "Landroidx/collection/o;"
+            "Landroidx/collection/n;"
         }
     .end annotation
 .end field
@@ -41,7 +41,7 @@
 
 # direct methods
 .method public constructor <init>()V
-    .locals 1
+    .locals 3
 
     .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -53,53 +53,59 @@
 
     .line 5
     .line 6
-    invoke-direct {v0}, Landroidx/collection/n0;-><init>()V
+    const/4 v1, 0x0
 
     .line 7
+    invoke-direct {v0, v1}, Landroidx/collection/L;-><init>(I)V
+
     .line 8
     .line 9
+    .line 10
     iput-object v0, p0, Landroidx/transition/TransitionValuesMaps;->mViewValues:Landroidx/collection/f;
 
-    .line 10
     .line 11
+    .line 12
     new-instance v0, Landroid/util/SparseArray;
 
-    .line 12
     .line 13
+    .line 14
     invoke-direct {v0}, Landroid/util/SparseArray;-><init>()V
 
-    .line 14
     .line 15
     .line 16
+    .line 17
     iput-object v0, p0, Landroidx/transition/TransitionValuesMaps;->mIdValues:Landroid/util/SparseArray;
 
-    .line 17
     .line 18
-    new-instance v0, Landroidx/collection/o;
-
     .line 19
+    new-instance v0, Landroidx/collection/n;
+
     .line 20
-    invoke-direct {v0}, Landroidx/collection/o;-><init>()V
-
     .line 21
-    .line 22
-    .line 23
-    iput-object v0, p0, Landroidx/transition/TransitionValuesMaps;->mItemIdValues:Landroidx/collection/o;
+    const/4 v2, 0x0
 
+    .line 22
+    invoke-direct {v0, v2}, Landroidx/collection/n;-><init>(Ljava/lang/Object;)V
+
+    .line 23
     .line 24
     .line 25
-    new-instance v0, Landroidx/collection/f;
+    iput-object v0, p0, Landroidx/transition/TransitionValuesMaps;->mItemIdValues:Landroidx/collection/n;
 
     .line 26
     .line 27
-    invoke-direct {v0}, Landroidx/collection/n0;-><init>()V
+    new-instance v0, Landroidx/collection/f;
 
     .line 28
     .line 29
-    .line 30
-    iput-object v0, p0, Landroidx/transition/TransitionValuesMaps;->mNameValues:Landroidx/collection/f;
+    invoke-direct {v0, v1}, Landroidx/collection/L;-><init>(I)V
 
+    .line 30
     .line 31
     .line 32
+    iput-object v0, p0, Landroidx/transition/TransitionValuesMaps;->mNameValues:Landroidx/collection/f;
+
+    .line 33
+    .line 34
     return-void
 .end method

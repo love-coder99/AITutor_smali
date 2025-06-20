@@ -22,9 +22,10 @@
 .method private static a(Lcom/apm/insight/k/e$b;)Ljava/lang/String;
     .locals 2
 
+    .line 2
     const-string v0, ""
 
-    .line 2
+    .line 3
     :try_start_0
     sget-object v1, Lcom/apm/insight/l/k$1;->a:[I
 
@@ -38,31 +39,37 @@
 
     goto :goto_0
 
+    .line 4
     :pswitch_0
     const-string v0, "5g"
 
     goto :goto_0
 
+    .line 5
     :pswitch_1
     const-string v0, "mobile"
 
     goto :goto_0
 
+    .line 6
     :pswitch_2
     const-string v0, "4g"
 
     goto :goto_0
 
+    .line 7
     :pswitch_3
     const-string v0, "3g"
 
     goto :goto_0
 
+    .line 8
     :pswitch_4
     const-string v0, "2g"
 
     goto :goto_0
 
+    .line 9
     :pswitch_5
     const-string v0, "wifi"
     :try_end_0
@@ -375,9 +382,6 @@
     .line 95
     .line 96
     .line 97
-    .line 98
-    .line 99
-    .line 100
     :pswitch_data_1
     .packed-switch 0xc
         :pswitch_1

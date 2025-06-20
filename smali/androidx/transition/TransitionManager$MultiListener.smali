@@ -128,7 +128,7 @@
 
     .line 21
     .line 22
-    invoke-virtual {v0, v2}, Landroidx/collection/f;->get(Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v0, v2}, Landroidx/collection/L;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 23
     .line 24
@@ -160,7 +160,7 @@
 
     .line 37
     .line 38
-    invoke-virtual {v0, v4, v2}, Landroidx/collection/n0;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v0, v4, v2}, Landroidx/collection/L;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 39
     .line 40
@@ -341,7 +341,7 @@
 
     .line 16
     .line 17
-    invoke-virtual {p1, v0}, Landroidx/collection/f;->get(Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {p1, v0}, Landroidx/collection/L;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 18
     .line 19

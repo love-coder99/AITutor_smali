@@ -222,19 +222,19 @@
 
     return-void
 
+    .line 4
     :cond_0
     const-string v0, "applovin_ad_view_info"
 
-    .line 4
     invoke-virtual {p1, v0}, Landroid/os/Bundle;->getBundle(Ljava/lang/String;)Landroid/os/Bundle;
 
     move-result-object p1
 
     if-eqz p1, :cond_1
 
+    .line 5
     iget-object v1, p0, Lcom/applovin/impl/he;->v:Landroid/os/Bundle;
 
-    .line 5
     invoke-virtual {v1, v0, p1}, Landroid/os/Bundle;->putBundle(Ljava/lang/String;Landroid/os/Bundle;)V
 
     :cond_1
@@ -244,9 +244,9 @@
 .method public a(Lcom/applovin/impl/eh;)V
     .locals 1
 
+    .line 2
     iget-object v0, p0, Lcom/applovin/impl/he;->w:Ljava/util/concurrent/atomic/AtomicReference;
 
-    .line 2
     invoke-virtual {v0, p1}, Ljava/util/concurrent/atomic/AtomicReference;->set(Ljava/lang/Object;)V
 
     return-void
@@ -597,8 +597,11 @@
 .method public m0()Landroid/os/Bundle;
     .locals 1
 
+    .line 1
     iget-object v0, p0, Lcom/applovin/impl/he;->v:Landroid/os/Bundle;
 
+    .line 2
+    .line 3
     return-object v0
 .end method
 
@@ -695,16 +698,22 @@
 .method public p0()Ljava/util/concurrent/atomic/AtomicBoolean;
     .locals 1
 
+    .line 1
     iget-object v0, p0, Lcom/applovin/impl/he;->y:Ljava/util/concurrent/atomic/AtomicBoolean;
 
+    .line 2
+    .line 3
     return-object v0
 .end method
 
 .method public q0()Z
     .locals 1
 
+    .line 1
     iget-boolean v0, p0, Lcom/applovin/impl/he;->z:Z
 
+    .line 2
+    .line 3
     return v0
 .end method
 
@@ -808,10 +817,14 @@
 .method public setExpired()V
     .locals 1
 
+    .line 1
     const/4 v0, 0x1
 
+    .line 2
     iput-boolean v0, p0, Lcom/applovin/impl/he;->A:Z
 
+    .line 3
+    .line 4
     return-void
 .end method
 

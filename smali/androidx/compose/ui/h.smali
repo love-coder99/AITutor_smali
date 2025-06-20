@@ -114,12 +114,19 @@
 .method public final hashCode()I
     .locals 1
 
+    .line 1
     iget v0, p0, Landroidx/compose/ui/h;->a:F
 
+    .line 2
+    .line 3
     invoke-static {v0}, Ljava/lang/Float;->floatToIntBits(F)I
 
+    .line 4
+    .line 5
+    .line 6
     move-result v0
 
+    .line 7
     return v0
 .end method
 
@@ -148,7 +155,7 @@
 
     .line 11
     .line 12
-    invoke-static {v0, v1, v2}, Landroid/support/v4/media/session/a;->E(Ljava/lang/StringBuilder;FC)Ljava/lang/String;
+    invoke-static {v0, v1, v2}, Landroidx/appcompat/view/menu/F;->G(Ljava/lang/StringBuilder;FC)Ljava/lang/String;
 
     .line 13
     .line 14

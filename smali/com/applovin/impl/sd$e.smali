@@ -154,6 +154,7 @@
     :cond_2
     const/4 p1, 0x0
 
+    .line 12
     :goto_2
     iput-object p1, p0, Lcom/applovin/impl/sd$e;->h:[B
 
@@ -163,7 +164,7 @@
 .method public synthetic constructor <init>(Lcom/applovin/impl/sd$e$a;Lcom/applovin/impl/sd$a;)V
     .locals 0
 
-    .line 12
+    .line 13
     invoke-direct {p0, p1}, Lcom/applovin/impl/sd$e;-><init>(Lcom/applovin/impl/sd$e$a;)V
 
     return-void

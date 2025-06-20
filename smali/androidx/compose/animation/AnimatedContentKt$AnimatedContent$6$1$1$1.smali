@@ -3,12 +3,12 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lzh/f;
+.implements Lka/f;
 
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Landroidx/compose/animation/AnimatedContentKt$AnimatedContent$6$1;->invoke(Landroidx/compose/runtime/l;I)V
+    value = Landroidx/compose/animation/AnimatedContentKt$AnimatedContent$6$1;->invoke(Landroidx/compose/runtime/j;I)V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -19,7 +19,7 @@
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "Lkotlin/jvm/internal/Lambda;",
-        "Lzh/f;"
+        "Lka/f;"
     }
 .end annotation
 
@@ -29,14 +29,14 @@
     }
     d2 = {
         "S",
-        "Landroidx/compose/ui/layout/o0;",
-        "Landroidx/compose/ui/layout/l0;",
+        "Landroidx/compose/ui/layout/L;",
+        "Landroidx/compose/ui/layout/I;",
         "measurable",
-        "Lh2/a;",
+        "LM0/a;",
         "constraints",
-        "Landroidx/compose/ui/layout/n0;",
+        "Landroidx/compose/ui/layout/K;",
         "invoke-3p2s80s",
-        "(Landroidx/compose/ui/layout/o0;Landroidx/compose/ui/layout/l0;J)Landroidx/compose/ui/layout/n0;",
+        "(Landroidx/compose/ui/layout/L;Landroidx/compose/ui/layout/I;J)Landroidx/compose/ui/layout/K;",
         "<anonymous>"
     }
     k = 0x3
@@ -49,14 +49,14 @@
 
 
 # instance fields
-.field final synthetic $specOnEnter:Landroidx/compose/animation/s;
+.field final synthetic $specOnEnter:Landroidx/compose/animation/r;
 
 
 # direct methods
-.method public constructor <init>(Landroidx/compose/animation/s;)V
+.method public constructor <init>(Landroidx/compose/animation/r;)V
     .locals 0
 
-    iput-object p1, p0, Landroidx/compose/animation/AnimatedContentKt$AnimatedContent$6$1$1$1;->$specOnEnter:Landroidx/compose/animation/s;
+    iput-object p1, p0, Landroidx/compose/animation/AnimatedContentKt$AnimatedContent$6$1$1$1;->$specOnEnter:Landroidx/compose/animation/r;
 
     const/4 p1, 0x3
 
@@ -71,23 +71,23 @@
     .locals 2
 
     .line 1
-    check-cast p1, Landroidx/compose/ui/layout/o0;
+    check-cast p1, Landroidx/compose/ui/layout/L;
 
     .line 2
     .line 3
-    check-cast p2, Landroidx/compose/ui/layout/l0;
+    check-cast p2, Landroidx/compose/ui/layout/I;
 
     .line 4
     .line 5
-    check-cast p3, Lh2/a;
+    check-cast p3, LM0/a;
 
     .line 6
     .line 7
-    iget-wide v0, p3, Lh2/a;->a:J
+    iget-wide v0, p3, LM0/a;->a:J
 
     .line 8
     .line 9
-    invoke-virtual {p0, p1, p2, v0, v1}, Landroidx/compose/animation/AnimatedContentKt$AnimatedContent$6$1$1$1;->invoke-3p2s80s(Landroidx/compose/ui/layout/o0;Landroidx/compose/ui/layout/l0;J)Landroidx/compose/ui/layout/n0;
+    invoke-virtual {p0, p1, p2, v0, v1}, Landroidx/compose/animation/AnimatedContentKt$AnimatedContent$6$1$1$1;->invoke-3p2s80s(Landroidx/compose/ui/layout/L;Landroidx/compose/ui/layout/I;J)Landroidx/compose/ui/layout/K;
 
     .line 10
     .line 11
@@ -98,11 +98,11 @@
     return-object p1
 .end method
 
-.method public final invoke-3p2s80s(Landroidx/compose/ui/layout/o0;Landroidx/compose/ui/layout/l0;J)Landroidx/compose/ui/layout/n0;
+.method public final invoke-3p2s80s(Landroidx/compose/ui/layout/L;Landroidx/compose/ui/layout/I;J)Landroidx/compose/ui/layout/K;
     .locals 2
 
     .line 1
-    invoke-interface {p2, p3, p4}, Landroidx/compose/ui/layout/l0;->y(J)Landroidx/compose/ui/layout/a1;
+    invoke-interface {p2, p3, p4}, Landroidx/compose/ui/layout/I;->u(J)Landroidx/compose/ui/layout/X;
 
     .line 2
     .line 3
@@ -110,11 +110,11 @@
     move-result-object p2
 
     .line 5
-    iget p3, p2, Landroidx/compose/ui/layout/a1;->b:I
+    iget p3, p2, Landroidx/compose/ui/layout/X;->b:I
 
     .line 6
     .line 7
-    iget p4, p2, Landroidx/compose/ui/layout/a1;->c:I
+    iget p4, p2, Landroidx/compose/ui/layout/X;->c:I
 
     .line 8
     .line 9
@@ -122,16 +122,16 @@
 
     .line 10
     .line 11
-    iget-object v1, p0, Landroidx/compose/animation/AnimatedContentKt$AnimatedContent$6$1$1$1;->$specOnEnter:Landroidx/compose/animation/s;
+    iget-object v1, p0, Landroidx/compose/animation/AnimatedContentKt$AnimatedContent$6$1$1$1;->$specOnEnter:Landroidx/compose/animation/r;
 
     .line 12
     .line 13
-    invoke-direct {v0, p2, v1}, Landroidx/compose/animation/AnimatedContentKt$AnimatedContent$6$1$1$1$1;-><init>(Landroidx/compose/ui/layout/a1;Landroidx/compose/animation/s;)V
+    invoke-direct {v0, p2, v1}, Landroidx/compose/animation/AnimatedContentKt$AnimatedContent$6$1$1$1$1;-><init>(Landroidx/compose/ui/layout/X;Landroidx/compose/animation/r;)V
 
     .line 14
     .line 15
     .line 16
-    invoke-static {p1, p3, p4, v0}, Landroidx/compose/ui/layout/x;->i(Landroidx/compose/ui/layout/o0;IILzh/c;)Landroidx/compose/ui/layout/n0;
+    invoke-static {p1, p3, p4, v0}, Landroidx/compose/ui/layout/u;->i(Landroidx/compose/ui/layout/L;IILka/c;)Landroidx/compose/ui/layout/K;
 
     .line 17
     .line 18

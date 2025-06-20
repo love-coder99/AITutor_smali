@@ -1,1652 +1,1887 @@
-.class public abstract Landroidx/work/impl/utils/e;
+.class public final Landroidx/work/impl/utils/e;
 .super Ljava/lang/Object;
 .source "SourceFile"
+
+# interfaces
+.implements Ljava/lang/Runnable;
+
+
+# static fields
+.field public static final g:J
+
+
+# instance fields
+.field public final b:Landroid/content/Context;
+
+.field public final c:Landroidx/work/impl/n;
+
+.field public final d:Landroidx/datastore/core/n;
+
+.field public f:I
 
 
 # direct methods
 .method static constructor <clinit>()V
-    .locals 1
-
-    .line 1
-    const-string v0, "EnqueueRunnable"
-
-    .line 2
-    .line 3
-    invoke-static {v0}, Landroidx/work/u;->b(Ljava/lang/String;)Ljava/lang/String;
-
-    .line 4
-    .line 5
-    .line 6
-    return-void
-.end method
-
-.method public static a(Landroidx/work/impl/a0;)V
     .locals 3
 
     .line 1
-    new-instance v0, Ljava/util/HashSet;
+    const-string v0, "ForceStopRunnable"
 
     .line 2
     .line 3
-    invoke-direct {v0}, Ljava/util/HashSet;-><init>()V
+    invoke-static {v0}, Landroidx/work/A;->b(Ljava/lang/String;)Ljava/lang/String;
 
     .line 4
     .line 5
     .line 6
-    invoke-static {p0, v0}, Landroidx/work/impl/a0;->f(Landroidx/work/impl/a0;Ljava/util/HashSet;)Z
+    sget-object v0, Ljava/util/concurrent/TimeUnit;->DAYS:Ljava/util/concurrent/TimeUnit;
 
     .line 7
     .line 8
-    .line 9
-    move-result v0
+    const-wide/16 v1, 0xe42
 
+    .line 9
     .line 10
-    if-nez v0, :cond_1
+    invoke-virtual {v0, v1, v2}, Ljava/util/concurrent/TimeUnit;->toMillis(J)J
 
     .line 11
     .line 12
-    iget-object v0, p0, Landroidx/work/impl/a0;->a:Landroidx/work/impl/i0;
-
     .line 13
+    move-result-wide v0
+
     .line 14
-    iget-object v1, v0, Landroidx/work/impl/i0;->c:Landroidx/work/impl/WorkDatabase;
+    sput-wide v0, Landroidx/work/impl/utils/e;->g:J
 
     .line 15
     .line 16
-    invoke-virtual {v1}, Landroidx/room/w;->c()V
+    return-void
+.end method
+
+.method public constructor <init>(Landroid/content/Context;Landroidx/work/impl/n;)V
+    .locals 0
+
+    .line 1
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    .line 2
+    .line 3
+    .line 4
+    invoke-virtual {p1}, Landroid/content/Context;->getApplicationContext()Landroid/content/Context;
+
+    .line 5
+    .line 6
+    .line 7
+    move-result-object p1
+
+    .line 8
+    iput-object p1, p0, Landroidx/work/impl/utils/e;->b:Landroid/content/Context;
+
+    .line 9
+    .line 10
+    iput-object p2, p0, Landroidx/work/impl/utils/e;->c:Landroidx/work/impl/n;
+
+    .line 11
+    .line 12
+    iget-object p1, p2, Landroidx/work/impl/n;->i:Landroidx/datastore/core/n;
+
+    .line 13
+    .line 14
+    iput-object p1, p0, Landroidx/work/impl/utils/e;->d:Landroidx/datastore/core/n;
+
+    .line 15
+    .line 16
+    const/4 p1, 0x0
 
     .line 17
+    iput p1, p0, Landroidx/work/impl/utils/e;->f:I
+
     .line 18
     .line 19
-    :try_start_0
-    iget-object v2, v0, Landroidx/work/impl/i0;->b:Landroidx/work/c;
+    return-void
+.end method
+
+.method public static b(Landroid/content/Context;)V
+    .locals 5
+
+    .line 1
+    const-string v0, "alarm"
+
+    .line 2
+    .line 3
+    invoke-virtual {p0, v0}, Landroid/content/Context;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
+
+    .line 4
+    .line 5
+    .line 6
+    move-result-object v0
+
+    .line 7
+    check-cast v0, Landroid/app/AlarmManager;
+
+    .line 8
+    .line 9
+    sget v1, Landroid/os/Build$VERSION;->SDK_INT:I
+
+    .line 10
+    .line 11
+    const/16 v2, 0x1f
+
+    .line 12
+    .line 13
+    if-lt v1, v2, :cond_0
+
+    .line 14
+    .line 15
+    const/high16 v1, 0xa000000
+
+    .line 16
+    .line 17
+    goto :goto_0
+
+    .line 18
+    :cond_0
+    const/high16 v1, 0x8000000
+
+    .line 19
+    .line 20
+    :goto_0
+    new-instance v2, Landroid/content/Intent;
+
+    .line 21
+    .line 22
+    invoke-direct {v2}, Landroid/content/Intent;-><init>()V
+
+    .line 23
+    .line 24
+    .line 25
+    new-instance v3, Landroid/content/ComponentName;
+
+    .line 26
+    .line 27
+    const-class v4, Landroidx/work/impl/utils/ForceStopRunnable$BroadcastReceiver;
+
+    .line 28
+    .line 29
+    invoke-direct {v3, p0, v4}, Landroid/content/ComponentName;-><init>(Landroid/content/Context;Ljava/lang/Class;)V
+
+    .line 30
+    .line 31
+    .line 32
+    invoke-virtual {v2, v3}, Landroid/content/Intent;->setComponent(Landroid/content/ComponentName;)Landroid/content/Intent;
+
+    .line 33
+    .line 34
+    .line 35
+    const-string v3, "ACTION_FORCE_STOP_RESCHEDULE"
+
+    .line 36
+    .line 37
+    invoke-virtual {v2, v3}, Landroid/content/Intent;->setAction(Ljava/lang/String;)Landroid/content/Intent;
+
+    .line 38
+    .line 39
+    .line 40
+    const/4 v3, -0x1
+
+    .line 41
+    invoke-static {p0, v3, v2, v1}, Landroid/app/PendingIntent;->getBroadcast(Landroid/content/Context;ILandroid/content/Intent;I)Landroid/app/PendingIntent;
+
+    .line 42
+    .line 43
+    .line 44
+    move-result-object p0
+
+    .line 45
+    invoke-static {}, Ljava/lang/System;->currentTimeMillis()J
+
+    .line 46
+    .line 47
+    .line 48
+    move-result-wide v1
+
+    .line 49
+    sget-wide v3, Landroidx/work/impl/utils/e;->g:J
+
+    .line 50
+    .line 51
+    add-long/2addr v1, v3
+
+    .line 52
+    if-eqz v0, :cond_1
+
+    .line 53
+    .line 54
+    const/4 v3, 0x0
+
+    .line 55
+    invoke-virtual {v0, v3, v1, v2, p0}, Landroid/app/AlarmManager;->setExact(IJLandroid/app/PendingIntent;)V
+
+    .line 56
+    .line 57
+    .line 58
+    :cond_1
+    return-void
+.end method
+
+
+# virtual methods
+.method public final a()V
+    .locals 16
+
+    .line 1
+    move-object/from16 v1, p0
+
+    .line 2
+    .line 3
+    const/4 v0, 0x1
+
+    .line 4
+    const-string v2, "last_force_stop_ms"
+
+    .line 5
+    .line 6
+    iget-object v3, v1, Landroidx/work/impl/utils/e;->d:Landroidx/datastore/core/n;
+
+    .line 7
+    .line 8
+    sget v4, Landroid/os/Build$VERSION;->SDK_INT:I
+
+    .line 9
+    .line 10
+    iget-object v5, v1, Landroidx/work/impl/utils/e;->b:Landroid/content/Context;
+
+    .line 11
+    .line 12
+    const/4 v6, 0x0
+
+    .line 13
+    iget-object v7, v1, Landroidx/work/impl/utils/e;->c:Landroidx/work/impl/n;
+
+    .line 14
+    .line 15
+    const/16 v8, 0x17
+
+    .line 16
+    .line 17
+    const-wide/16 v9, -0x1
+
+    .line 18
+    .line 19
+    if-lt v4, v8, :cond_7
 
     .line 20
     .line 21
-    invoke-static {v1, v2, p0}, Ly/f;->f(Landroidx/work/impl/WorkDatabase;Landroidx/work/c;Landroidx/work/impl/a0;)V
+    iget-object v4, v7, Landroidx/work/impl/n;->e:Landroidx/work/impl/WorkDatabase;
 
     .line 22
     .line 23
-    .line 24
-    invoke-static {p0}, Landroidx/work/impl/utils/e;->b(Landroidx/work/impl/a0;)Z
+    sget v8, Ly2/e;->h:I
 
+    .line 24
     .line 25
+    invoke-static {v5}, Ly2/a;->a(Landroid/content/Context;)Landroid/app/job/JobScheduler;
+
     .line 26
     .line 27
-    move-result p0
-
     .line 28
-    invoke-virtual {v1}, Landroidx/room/w;->o()V
+    move-result-object v8
+
+    .line 29
+    invoke-static {v5, v8}, Ly2/e;->f(Landroid/content/Context;Landroid/app/job/JobScheduler;)Ljava/util/ArrayList;
+
+    .line 30
+    .line 31
+    .line 32
+    move-result-object v11
+
+    .line 33
+    invoke-virtual {v4}, Landroidx/work/impl/WorkDatabase;->A()LB2/i;
+
+    .line 34
+    .line 35
+    .line 36
+    move-result-object v12
+
+    .line 37
+    invoke-virtual {v12}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    .line 38
+    .line 39
+    .line 40
+    const-string v13, "SELECT DISTINCT work_spec_id FROM SystemIdInfo"
+
+    .line 41
+    .line 42
+    invoke-static {v6, v13}, Landroidx/room/C;->d(ILjava/lang/String;)Landroidx/room/C;
+
+    .line 43
+    .line 44
+    .line 45
+    move-result-object v13
+
+    .line 46
+    iget-object v12, v12, LB2/i;->a:Ljava/lang/Object;
+
+    .line 47
+    .line 48
+    check-cast v12, Landroidx/work/impl/WorkDatabase_Impl;
+
+    .line 49
+    .line 50
+    invoke-virtual {v12}, Landroidx/room/y;->b()V
+
+    .line 51
+    .line 52
+    .line 53
+    invoke-static {v12, v13}, Landroidx/room/util/a;->l(Landroidx/room/y;Ll2/e;)Landroid/database/Cursor;
+
+    .line 54
+    .line 55
+    .line 56
+    move-result-object v12
+
+    .line 57
+    :try_start_0
+    new-instance v14, Ljava/util/ArrayList;
+
+    .line 58
+    .line 59
+    invoke-interface {v12}, Landroid/database/Cursor;->getCount()I
+
+    .line 60
+    .line 61
+    .line 62
+    move-result v15
+
+    .line 63
+    invoke-direct {v14, v15}, Ljava/util/ArrayList;-><init>(I)V
+
+    .line 64
+    .line 65
+    .line 66
+    :goto_0
+    invoke-interface {v12}, Landroid/database/Cursor;->moveToNext()Z
+
+    .line 67
+    .line 68
+    .line 69
+    move-result v15
+
+    .line 70
+    if-eqz v15, :cond_0
+
+    .line 71
+    .line 72
+    invoke-interface {v12, v6}, Landroid/database/Cursor;->getString(I)Ljava/lang/String;
+
+    .line 73
+    .line 74
+    .line 75
+    move-result-object v15
+
+    .line 76
+    invoke-virtual {v14, v15}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    .line 29
-    .line 30
-    .line 31
-    invoke-virtual {v1}, Landroidx/room/w;->j()V
-
-    .line 32
-    .line 33
-    .line 34
-    if-eqz p0, :cond_0
-
-    .line 35
-    .line 36
-    iget-object p0, v0, Landroidx/work/impl/i0;->b:Landroidx/work/c;
-
-    .line 37
-    .line 38
-    iget-object v1, v0, Landroidx/work/impl/i0;->c:Landroidx/work/impl/WorkDatabase;
-
-    .line 39
-    .line 40
-    iget-object v0, v0, Landroidx/work/impl/i0;->e:Ljava/util/List;
-
-    .line 41
-    .line 42
-    invoke-static {p0, v1, v0}, Landroidx/work/impl/s;->b(Landroidx/work/c;Landroidx/work/impl/WorkDatabase;Ljava/util/List;)V
-
-    .line 43
-    .line 44
-    .line 45
-    :cond_0
-    return-void
-
-    .line 46
-    :catchall_0
-    move-exception p0
-
-    .line 47
-    invoke-virtual {v1}, Landroidx/room/w;->j()V
-
-    .line 48
-    .line 49
-    .line 50
-    throw p0
-
-    .line 51
-    :cond_1
-    new-instance v0, Ljava/lang/IllegalStateException;
-
-    .line 52
-    .line 53
-    new-instance v1, Ljava/lang/StringBuilder;
-
-    .line 54
-    .line 55
-    const-string v2, "WorkContinuation has cycles ("
-
-    .line 56
-    .line 57
-    invoke-direct {v1, v2}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
-
-    .line 58
-    .line 59
-    .line 60
-    invoke-virtual {v1, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
-
-    .line 61
-    .line 62
-    .line 63
-    const-string p0, ")"
-
-    .line 64
-    .line 65
-    invoke-virtual {v1, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    .line 66
-    .line 67
-    .line 68
-    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    .line 69
-    .line 70
-    .line 71
-    move-result-object p0
-
-    .line 72
-    invoke-direct {v0, p0}, Ljava/lang/IllegalStateException;-><init>(Ljava/lang/String;)V
-
-    .line 73
-    .line 74
-    .line 75
-    throw v0
-.end method
-
-.method public static b(Landroidx/work/impl/a0;)Z
-    .locals 22
-
-    .line 1
-    move-object/from16 v0, p0
-
-    .line 2
-    .line 3
-    invoke-static/range {p0 .. p0}, Landroidx/work/impl/a0;->g(Landroidx/work/impl/a0;)Ljava/util/HashSet;
-
-    .line 4
-    .line 5
-    .line 6
-    move-result-object v1
-
-    .line 7
-    const/4 v2, 0x0
-
-    .line 8
-    new-array v3, v2, [Ljava/lang/String;
-
-    .line 9
-    .line 10
-    invoke-virtual {v1, v3}, Ljava/util/HashSet;->toArray([Ljava/lang/Object;)[Ljava/lang/Object;
-
-    .line 11
-    .line 12
-    .line 13
-    move-result-object v1
-
-    .line 14
-    check-cast v1, [Ljava/lang/String;
-
-    .line 15
-    .line 16
-    iget-object v3, v0, Landroidx/work/impl/a0;->a:Landroidx/work/impl/i0;
-
-    .line 17
-    .line 18
-    iget-object v4, v3, Landroidx/work/impl/i0;->b:Landroidx/work/c;
-
-    .line 19
-    .line 20
-    iget-object v4, v4, Landroidx/work/c;->d:Landroidx/work/f0;
-
-    .line 21
-    .line 22
-    invoke-virtual {v4}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
-
-    .line 23
-    .line 24
-    .line 25
-    invoke-static {}, Ljava/lang/System;->currentTimeMillis()J
-
-    .line 26
-    .line 27
-    .line 28
-    move-result-wide v4
-
-    .line 29
-    const/4 v6, 0x1
-
-    .line 30
-    if-eqz v1, :cond_0
-
-    .line 31
-    .line 32
-    array-length v7, v1
-
-    .line 33
-    if-lez v7, :cond_0
-
-    .line 34
-    .line 35
-    const/4 v7, 0x1
-
-    .line 36
+    .line 77
+    .line 78
+    .line 79
     goto :goto_0
 
-    .line 37
-    :cond_0
-    const/4 v7, 0x0
-
-    .line 38
-    :goto_0
-    iget-object v8, v3, Landroidx/work/impl/i0;->c:Landroidx/work/impl/WorkDatabase;
-
-    .line 39
-    .line 40
-    if-eqz v7, :cond_5
-
-    .line 41
-    .line 42
-    array-length v9, v1
-
-    .line 43
-    const/4 v10, 0x0
-
-    .line 44
-    const/4 v11, 0x1
-
-    .line 45
-    const/4 v12, 0x0
-
-    .line 46
-    const/4 v13, 0x0
-
-    .line 47
-    :goto_1
-    if-ge v10, v9, :cond_6
-
-    .line 48
-    .line 49
-    aget-object v14, v1, v10
-
-    .line 50
-    .line 51
-    invoke-virtual {v8}, Landroidx/work/impl/WorkDatabase;->v()Lh5/s;
-
-    .line 52
-    .line 53
-    .line 54
-    move-result-object v15
-
-    .line 55
-    invoke-virtual {v15, v14}, Lh5/s;->h(Ljava/lang/String;)Lh5/q;
-
-    .line 56
-    .line 57
-    .line 58
-    move-result-object v14
-
-    .line 59
-    if-nez v14, :cond_1
-
-    .line 60
-    .line 61
-    invoke-static {}, Landroidx/work/u;->a()Landroidx/work/u;
-
-    .line 62
-    .line 63
-    .line 64
-    move-result-object v1
-
-    .line 65
-    invoke-virtual {v1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
-
-    .line 66
-    .line 67
-    .line 68
-    :goto_2
-    const/4 v1, 0x1
-
-    .line 69
-    goto/16 :goto_15
-
-    .line 70
-    .line 71
-    :cond_1
-    iget-object v14, v14, Lh5/q;->b:Landroidx/work/WorkInfo$State;
-
-    .line 72
-    .line 73
-    sget-object v15, Landroidx/work/WorkInfo$State;->SUCCEEDED:Landroidx/work/WorkInfo$State;
-
-    .line 74
-    .line 75
-    if-ne v14, v15, :cond_2
-
-    .line 76
-    .line 77
-    const/4 v15, 0x1
-
-    .line 78
-    goto :goto_3
-
-    .line 79
-    :cond_2
-    const/4 v15, 0x0
-
     .line 80
-    :goto_3
-    and-int/2addr v11, v15
+    :catchall_0
+    move-exception v0
 
     .line 81
-    sget-object v15, Landroidx/work/WorkInfo$State;->FAILED:Landroidx/work/WorkInfo$State;
+    goto/16 :goto_6
 
     .line 82
     .line 83
-    if-ne v14, v15, :cond_3
+    :cond_0
+    invoke-interface {v12}, Landroid/database/Cursor;->close()V
 
     .line 84
     .line 85
-    const/4 v13, 0x1
-
     .line 86
-    goto :goto_4
+    invoke-virtual {v13}, Landroidx/room/C;->e()V
 
     .line 87
-    :cond_3
-    sget-object v15, Landroidx/work/WorkInfo$State;->CANCELLED:Landroidx/work/WorkInfo$State;
-
     .line 88
     .line 89
-    if-ne v14, v15, :cond_4
+    if-eqz v11, :cond_1
 
     .line 90
     .line 91
-    const/4 v12, 0x1
+    invoke-virtual {v11}, Ljava/util/ArrayList;->size()I
 
     .line 92
-    :cond_4
-    :goto_4
-    add-int/lit8 v10, v10, 0x1
-
     .line 93
     .line 94
-    goto :goto_1
+    move-result v12
 
     .line 95
-    :cond_5
-    const/4 v11, 0x1
+    goto :goto_1
 
     .line 96
+    :cond_1
     const/4 v12, 0x0
 
     .line 97
-    const/4 v13, 0x0
+    :goto_1
+    new-instance v13, Ljava/util/HashSet;
 
     .line 98
-    :cond_6
-    iget-object v9, v0, Landroidx/work/impl/a0;->b:Ljava/lang/String;
-
     .line 99
-    .line 100
-    invoke-static {v9}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
+    invoke-direct {v13, v12}, Ljava/util/HashSet;-><init>(I)V
 
+    .line 100
     .line 101
     .line 102
-    .line 103
-    move-result v10
+    if-eqz v11, :cond_3
 
+    .line 103
     .line 104
-    xor-int/2addr v10, v6
+    invoke-virtual {v11}, Ljava/util/ArrayList;->isEmpty()Z
 
     .line 105
-    if-eqz v10, :cond_18
-
     .line 106
     .line 107
-    if-nez v7, :cond_18
+    move-result v12
 
     .line 108
-    .line 109
-    invoke-virtual {v8}, Landroidx/work/impl/WorkDatabase;->v()Lh5/s;
+    if-nez v12, :cond_3
 
+    .line 109
     .line 110
+    invoke-virtual {v11}, Ljava/util/ArrayList;->iterator()Ljava/util/Iterator;
+
     .line 111
     .line 112
-    move-result-object v14
-
     .line 113
-    invoke-virtual {v14, v9}, Lh5/s;->i(Ljava/lang/String;)Ljava/util/ArrayList;
+    move-result-object v11
 
     .line 114
+    :goto_2
+    invoke-interface {v11}, Ljava/util/Iterator;->hasNext()Z
+
     .line 115
     .line 116
-    move-result-object v14
-
     .line 117
-    invoke-virtual {v14}, Ljava/util/ArrayList;->isEmpty()Z
+    move-result v12
 
     .line 118
+    if-eqz v12, :cond_3
+
     .line 119
     .line 120
-    move-result v15
+    invoke-interface {v11}, Ljava/util/Iterator;->next()Ljava/lang/Object;
 
     .line 121
-    if-nez v15, :cond_18
-
     .line 122
     .line 123
-    sget-object v15, Landroidx/work/ExistingWorkPolicy;->APPEND:Landroidx/work/ExistingWorkPolicy;
+    move-result-object v12
 
     .line 124
+    check-cast v12, Landroid/app/job/JobInfo;
+
     .line 125
-    iget-object v2, v0, Landroidx/work/impl/a0;->c:Landroidx/work/ExistingWorkPolicy;
-
     .line 126
-    .line 127
-    if-eq v2, v15, :cond_c
+    invoke-static {v12}, Ly2/e;->g(Landroid/app/job/JobInfo;)LB2/j;
 
+    .line 127
     .line 128
     .line 129
-    sget-object v15, Landroidx/work/ExistingWorkPolicy;->APPEND_OR_REPLACE:Landroidx/work/ExistingWorkPolicy;
+    move-result-object v15
 
     .line 130
+    if-eqz v15, :cond_2
+
     .line 131
-    if-ne v2, v15, :cond_7
-
     .line 132
-    .line 133
-    goto :goto_8
+    iget-object v12, v15, LB2/j;->a:Ljava/lang/String;
 
+    .line 133
     .line 134
-    :cond_7
-    sget-object v15, Landroidx/work/ExistingWorkPolicy;->KEEP:Landroidx/work/ExistingWorkPolicy;
+    invoke-virtual {v13, v12}, Ljava/util/HashSet;->add(Ljava/lang/Object;)Z
 
     .line 135
     .line 136
-    if-ne v2, v15, :cond_a
-
     .line 137
+    goto :goto_2
+
     .line 138
-    invoke-virtual {v14}, Ljava/util/ArrayList;->iterator()Ljava/util/Iterator;
+    :cond_2
+    invoke-virtual {v12}, Landroid/app/job/JobInfo;->getId()I
 
     .line 139
     .line 140
     .line 141
-    move-result-object v2
+    move-result v12
 
     .line 142
-    :goto_5
-    invoke-interface {v2}, Ljava/util/Iterator;->hasNext()Z
+    invoke-static {v8, v12}, Ly2/e;->c(Landroid/app/job/JobScheduler;I)V
 
     .line 143
     .line 144
     .line 145
-    move-result v15
+    goto :goto_2
 
     .line 146
-    if-eqz v15, :cond_a
+    :cond_3
+    invoke-virtual {v14}, Ljava/util/ArrayList;->iterator()Ljava/util/Iterator;
 
     .line 147
     .line 148
-    invoke-interface {v2}, Ljava/util/Iterator;->next()Ljava/lang/Object;
-
     .line 149
+    move-result-object v8
+
     .line 150
+    :cond_4
+    invoke-interface {v8}, Ljava/util/Iterator;->hasNext()Z
+
     .line 151
-    move-result-object v15
-
     .line 152
-    check-cast v15, Lh5/p;
-
     .line 153
+    move-result v11
+
     .line 154
-    iget-object v15, v15, Lh5/p;->b:Landroidx/work/WorkInfo$State;
+    if-eqz v11, :cond_5
 
     .line 155
     .line 156
-    sget-object v6, Landroidx/work/WorkInfo$State;->ENQUEUED:Landroidx/work/WorkInfo$State;
+    invoke-interface {v8}, Ljava/util/Iterator;->next()Ljava/lang/Object;
 
     .line 157
     .line 158
-    if-eq v15, v6, :cond_9
-
     .line 159
+    move-result-object v11
+
     .line 160
-    sget-object v6, Landroidx/work/WorkInfo$State;->RUNNING:Landroidx/work/WorkInfo$State;
+    check-cast v11, Ljava/lang/String;
 
     .line 161
     .line 162
-    if-ne v15, v6, :cond_8
+    invoke-virtual {v13, v11}, Ljava/util/HashSet;->contains(Ljava/lang/Object;)Z
 
     .line 163
     .line 164
-    goto :goto_6
-
     .line 165
-    :cond_8
-    const/4 v6, 0x1
+    move-result v11
 
     .line 166
-    goto :goto_5
+    if-nez v11, :cond_4
 
     .line 167
-    :cond_9
-    :goto_6
-    const/4 v1, 0x1
-
     .line 168
-    const/4 v2, 0x0
+    invoke-static {}, Landroidx/work/A;->a()Landroidx/work/A;
 
     .line 169
-    goto/16 :goto_15
-
     .line 170
     .line 171
-    :cond_a
-    iget-object v2, v3, Landroidx/work/impl/i0;->c:Landroidx/work/impl/WorkDatabase;
+    move-result-object v8
 
     .line 172
-    .line 173
-    new-instance v6, Landroidx/work/impl/utils/c;
+    invoke-virtual {v8}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
+    .line 173
     .line 174
     .line 175
-    const/4 v15, 0x1
+    const/4 v8, 0x1
 
     .line 176
-    invoke-direct {v6, v2, v9, v3, v15}, Landroidx/work/impl/utils/c;-><init>(Landroidx/work/impl/WorkDatabase;Ljava/lang/String;Landroidx/work/impl/i0;I)V
+    goto :goto_3
 
     .line 177
-    .line 178
-    .line 179
-    invoke-virtual {v2, v6}, Landroidx/room/w;->n(Ljava/lang/Runnable;)V
+    :cond_5
+    const/4 v8, 0x0
 
+    .line 178
+    :goto_3
+    if-eqz v8, :cond_8
+
+    .line 179
     .line 180
+    invoke-virtual {v4}, Landroidx/room/y;->c()V
+
     .line 181
     .line 182
-    invoke-virtual {v8}, Landroidx/work/impl/WorkDatabase;->v()Lh5/s;
-
     .line 183
+    :try_start_1
+    invoke-virtual {v4}, Landroidx/work/impl/WorkDatabase;->D()LB2/r;
+
     .line 184
     .line 185
-    move-result-object v2
-
     .line 186
-    invoke-virtual {v14}, Ljava/util/ArrayList;->iterator()Ljava/util/Iterator;
+    move-result-object v11
 
     .line 187
+    invoke-virtual {v14}, Ljava/util/ArrayList;->iterator()Ljava/util/Iterator;
+
     .line 188
     .line 189
-    move-result-object v6
-
     .line 190
-    :goto_7
-    invoke-interface {v6}, Ljava/util/Iterator;->hasNext()Z
+    move-result-object v12
 
     .line 191
+    :goto_4
+    invoke-interface {v12}, Ljava/util/Iterator;->hasNext()Z
+
     .line 192
     .line 193
-    move-result v14
-
     .line 194
-    if-eqz v14, :cond_b
+    move-result v13
 
     .line 195
-    .line 196
-    invoke-interface {v6}, Ljava/util/Iterator;->next()Ljava/lang/Object;
+    if-eqz v13, :cond_6
 
+    .line 196
     .line 197
+    invoke-interface {v12}, Ljava/util/Iterator;->next()Ljava/lang/Object;
+
     .line 198
     .line 199
-    move-result-object v14
-
     .line 200
-    check-cast v14, Lh5/p;
+    move-result-object v13
 
     .line 201
+    check-cast v13, Ljava/lang/String;
+
     .line 202
-    iget-object v14, v14, Lh5/p;->a:Ljava/lang/String;
-
     .line 203
-    .line 204
-    invoke-virtual {v2, v14}, Lh5/s;->a(Ljava/lang/String;)V
+    invoke-virtual {v11, v9, v10, v13}, LB2/r;->j(JLjava/lang/String;)V
 
+    .line 204
     .line 205
     .line 206
+    goto :goto_4
+
     .line 207
-    goto :goto_7
+    :catchall_1
+    move-exception v0
 
     .line 208
-    :cond_b
-    move-object/from16 v19, v3
+    goto :goto_5
 
     .line 209
-    .line 210
-    move/from16 v18, v10
+    :cond_6
+    invoke-virtual {v4}, Landroidx/room/y;->w()V
+    :try_end_1
+    .catchall {:try_start_1 .. :try_end_1} :catchall_1
 
+    .line 210
     .line 211
     .line 212
-    const/4 v14, 0x0
+    invoke-virtual {v4}, Landroidx/room/y;->r()V
 
     .line 213
-    const/4 v15, 0x1
-
     .line 214
-    goto/16 :goto_10
-
     .line 215
+    goto :goto_7
+
     .line 216
-    :cond_c
-    :goto_8
-    invoke-virtual {v8}, Landroidx/work/impl/WorkDatabase;->q()Lh5/c;
+    :goto_5
+    invoke-virtual {v4}, Landroidx/room/y;->r()V
 
     .line 217
     .line 218
     .line 219
-    move-result-object v6
+    throw v0
 
     .line 220
-    new-instance v7, Ljava/util/ArrayList;
+    :goto_6
+    invoke-interface {v12}, Landroid/database/Cursor;->close()V
 
     .line 221
     .line 222
-    invoke-direct {v7}, Ljava/util/ArrayList;-><init>()V
-
     .line 223
+    invoke-virtual {v13}, Landroidx/room/C;->e()V
+
     .line 224
     .line 225
-    invoke-virtual {v14}, Ljava/util/ArrayList;->iterator()Ljava/util/Iterator;
-
     .line 226
+    throw v0
+
     .line 227
+    :cond_7
+    const/4 v8, 0x0
+
     .line 228
-    move-result-object v14
+    :cond_8
+    :goto_7
+    iget-object v4, v7, Landroidx/work/impl/n;->e:Landroidx/work/impl/WorkDatabase;
 
     .line 229
-    :goto_9
-    invoke-interface {v14}, Ljava/util/Iterator;->hasNext()Z
-
     .line 230
+    invoke-virtual {v4}, Landroidx/work/impl/WorkDatabase;->D()LB2/r;
+
     .line 231
     .line 232
-    move-result v15
-
     .line 233
-    if-eqz v15, :cond_13
+    move-result-object v11
 
     .line 234
-    .line 235
-    invoke-interface {v14}, Ljava/util/Iterator;->next()Ljava/lang/Object;
+    invoke-virtual {v4}, Landroidx/work/impl/WorkDatabase;->C()LB2/n;
 
+    .line 235
     .line 236
     .line 237
+    move-result-object v12
+
     .line 238
-    move-result-object v15
+    invoke-virtual {v4}, Landroidx/room/y;->c()V
 
     .line 239
-    check-cast v15, Lh5/p;
-
     .line 240
     .line 241
-    move-object/from16 v17, v14
+    :try_start_2
+    invoke-virtual {v11}, LB2/r;->e()Ljava/util/ArrayList;
 
     .line 242
     .line 243
-    iget-object v14, v15, Lh5/p;->a:Ljava/lang/String;
-
     .line 244
+    move-result-object v13
+
     .line 245
-    invoke-virtual {v6}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+    invoke-virtual {v13}, Ljava/util/ArrayList;->isEmpty()Z
 
     .line 246
     .line 247
     .line 248
-    sget-object v18, Landroidx/room/a0;->k:Ljava/util/TreeMap;
+    move-result v14
 
     .line 249
+    if-nez v14, :cond_9
+
     .line 250
-    move/from16 v18, v10
-
     .line 251
-    .line 252
-    const-string v10, "SELECT COUNT(*)>0 FROM dependency WHERE prerequisite_id=?"
+    invoke-virtual {v13}, Ljava/util/ArrayList;->iterator()Ljava/util/Iterator;
 
+    .line 252
     .line 253
     .line 254
-    move-object/from16 v19, v3
+    move-result-object v13
 
     .line 255
+    :goto_8
+    invoke-interface {v13}, Ljava/util/Iterator;->hasNext()Z
+
     .line 256
-    const/4 v3, 0x1
-
     .line 257
-    invoke-static {v3, v10}, Landroidx/work/f0;->t(ILjava/lang/String;)Landroidx/room/a0;
-
     .line 258
-    .line 259
-    .line 260
-    move-result-object v10
+    move-result v15
 
+    .line 259
+    if-eqz v15, :cond_9
+
+    .line 260
     .line 261
-    invoke-virtual {v10, v3, v14}, Landroidx/room/a0;->g(ILjava/lang/String;)V
+    invoke-interface {v13}, Ljava/util/Iterator;->next()Ljava/lang/Object;
 
     .line 262
     .line 263
     .line 264
-    iget-object v3, v6, Lh5/c;->c:Ljava/lang/Object;
+    move-result-object v15
 
     .line 265
+    check-cast v15, LB2/p;
+
     .line 266
-    check-cast v3, Landroidx/room/w;
-
     .line 267
-    .line 268
-    invoke-virtual {v3}, Landroidx/room/w;->b()V
+    sget-object v6, Landroidx/work/WorkInfo$State;->ENQUEUED:Landroidx/work/WorkInfo$State;
 
+    .line 268
     .line 269
+    iget-object v15, v15, LB2/p;->a:Ljava/lang/String;
+
     .line 270
     .line 271
-    iget-object v3, v6, Lh5/c;->c:Ljava/lang/Object;
+    invoke-virtual {v11, v6, v15}, LB2/r;->n(Landroidx/work/WorkInfo$State;Ljava/lang/String;)V
 
     .line 272
     .line 273
-    check-cast v3, Landroidx/room/w;
-
     .line 274
-    .line 275
-    const/4 v14, 0x0
+    const/16 v6, -0x200
 
+    .line 275
     .line 276
-    invoke-virtual {v3, v10, v14}, Landroidx/room/w;->l(Ls4/h;Landroid/os/CancellationSignal;)Landroid/database/Cursor;
+    invoke-virtual {v11, v6, v15}, LB2/r;->o(ILjava/lang/String;)V
 
     .line 277
     .line 278
     .line 279
-    move-result-object v3
+    invoke-virtual {v11, v9, v10, v15}, LB2/r;->j(JLjava/lang/String;)V
 
     .line 280
-    :try_start_0
-    invoke-interface {v3}, Landroid/database/Cursor;->moveToFirst()Z
-
     .line 281
     .line 282
+    const/4 v6, 0x0
+
     .line 283
-    move-result v14
+    goto :goto_8
 
     .line 284
-    if-eqz v14, :cond_d
+    :catchall_2
+    move-exception v0
 
     .line 285
-    .line 286
-    const/4 v14, 0x0
+    goto/16 :goto_f
 
+    .line 286
     .line 287
-    invoke-interface {v3, v14}, Landroid/database/Cursor;->getInt(I)I
+    :cond_9
+    iget-object v6, v12, LB2/n;->b:Ljava/lang/Object;
 
     .line 288
     .line 289
-    .line 290
-    move-result v16
-    :try_end_0
-    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+    check-cast v6, Landroidx/work/impl/WorkDatabase_Impl;
 
+    .line 290
     .line 291
-    if-eqz v16, :cond_e
+    invoke-virtual {v6}, Landroidx/room/y;->b()V
 
     .line 292
     .line 293
-    const/16 v16, 0x1
-
     .line 294
-    .line 295
-    goto :goto_a
+    iget-object v9, v12, LB2/n;->f:Ljava/lang/Object;
 
+    .line 295
     .line 296
-    :catchall_0
-    move-exception v0
+    check-cast v9, LB2/h;
 
     .line 297
-    goto :goto_d
-
     .line 298
-    :cond_d
-    const/4 v14, 0x0
+    invoke-virtual {v9}, Landroidx/room/D;->a()Lm2/h;
 
     .line 299
-    :cond_e
-    const/16 v16, 0x0
-
     .line 300
     .line 301
-    :goto_a
-    invoke-interface {v3}, Landroid/database/Cursor;->close()V
+    move-result-object v10
+    :try_end_2
+    .catchall {:try_start_2 .. :try_end_2} :catchall_2
 
     .line 302
+    :try_start_3
+    invoke-virtual {v6}, Landroidx/room/y;->c()V
+    :try_end_3
+    .catchall {:try_start_3 .. :try_end_3} :catchall_4
+
     .line 303
     .line 304
-    invoke-virtual {v10}, Landroidx/room/a0;->b()V
-
     .line 305
+    :try_start_4
+    invoke-virtual {v10}, Lm2/h;->b()I
+
     .line 306
     .line 307
-    if-nez v16, :cond_12
-
     .line 308
-    .line 309
-    sget-object v3, Landroidx/work/WorkInfo$State;->SUCCEEDED:Landroidx/work/WorkInfo$State;
+    invoke-virtual {v6}, Landroidx/room/y;->w()V
+    :try_end_4
+    .catchall {:try_start_4 .. :try_end_4} :catchall_3
 
+    .line 309
     .line 310
     .line 311
-    iget-object v10, v15, Lh5/p;->b:Landroidx/work/WorkInfo$State;
+    :try_start_5
+    invoke-virtual {v6}, Landroidx/room/y;->r()V
+    :try_end_5
+    .catchall {:try_start_5 .. :try_end_5} :catchall_4
 
     .line 312
     .line 313
-    if-ne v10, v3, :cond_f
-
     .line 314
+    :try_start_6
+    invoke-virtual {v9, v10}, Landroidx/room/D;->c(Lm2/h;)V
+
     .line 315
-    const/4 v3, 0x1
-
     .line 316
-    goto :goto_b
-
     .line 317
-    :cond_f
-    const/4 v3, 0x0
+    invoke-virtual {v4}, Landroidx/room/y;->w()V
+    :try_end_6
+    .catchall {:try_start_6 .. :try_end_6} :catchall_2
 
     .line 318
-    :goto_b
-    and-int/2addr v3, v11
-
     .line 319
-    sget-object v11, Landroidx/work/WorkInfo$State;->FAILED:Landroidx/work/WorkInfo$State;
-
     .line 320
-    .line 321
-    if-ne v10, v11, :cond_10
+    invoke-virtual {v4}, Landroidx/room/y;->r()V
 
+    .line 321
     .line 322
     .line 323
-    const/4 v13, 0x1
+    if-eqz v14, :cond_b
 
     .line 324
-    goto :goto_c
-
     .line 325
-    :cond_10
-    sget-object v11, Landroidx/work/WorkInfo$State;->CANCELLED:Landroidx/work/WorkInfo$State;
+    if-eqz v8, :cond_a
 
     .line 326
     .line 327
-    if-ne v10, v11, :cond_11
-
-    .line 328
-    .line 329
-    const/4 v12, 0x1
-
-    .line 330
-    :cond_11
-    :goto_c
-    iget-object v10, v15, Lh5/p;->a:Ljava/lang/String;
-
-    .line 331
-    .line 332
-    invoke-virtual {v7, v10}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
-
-    .line 333
-    .line 334
-    .line 335
-    move v11, v3
-
-    .line 336
-    :cond_12
-    move-object/from16 v14, v17
-
-    .line 337
-    .line 338
-    move/from16 v10, v18
-
-    .line 339
-    .line 340
-    move-object/from16 v3, v19
-
-    .line 341
-    .line 342
     goto :goto_9
 
+    .line 328
+    :cond_a
+    const/4 v4, 0x0
+
+    .line 329
+    goto :goto_a
+
+    .line 330
+    :cond_b
+    :goto_9
+    const/4 v4, 0x1
+
+    .line 331
+    :goto_a
+    iget-object v6, v7, Landroidx/work/impl/n;->i:Landroidx/datastore/core/n;
+
+    .line 332
+    .line 333
+    iget-object v6, v6, Landroidx/datastore/core/n;->c:Ljava/lang/Object;
+
+    .line 334
+    .line 335
+    check-cast v6, Landroidx/work/impl/WorkDatabase;
+
+    .line 336
+    .line 337
+    invoke-virtual {v6}, Landroidx/work/impl/WorkDatabase;->z()LB2/e;
+
+    .line 338
+    .line 339
+    .line 340
+    move-result-object v6
+
+    .line 341
+    const-string v8, "reschedule_needed"
+
+    .line 342
     .line 343
-    :goto_d
-    invoke-interface {v3}, Landroid/database/Cursor;->close()V
+    invoke-virtual {v6, v8}, LB2/e;->z(Ljava/lang/String;)Ljava/lang/Long;
 
     .line 344
     .line 345
     .line 346
-    invoke-virtual {v10}, Landroidx/room/a0;->b()V
+    move-result-object v6
 
     .line 347
+    const-wide/16 v9, 0x0
+
     .line 348
     .line 349
-    throw v0
+    if-eqz v6, :cond_c
 
     .line 350
-    :cond_13
-    move-object/from16 v19, v3
-
     .line 351
-    .line 352
-    move/from16 v18, v10
+    invoke-virtual {v6}, Ljava/lang/Long;->longValue()J
 
+    .line 352
     .line 353
     .line 354
-    const/4 v14, 0x0
+    move-result-wide v11
 
     .line 355
-    sget-object v3, Landroidx/work/ExistingWorkPolicy;->APPEND_OR_REPLACE:Landroidx/work/ExistingWorkPolicy;
+    const-wide/16 v13, 0x1
 
     .line 356
     .line 357
-    if-ne v2, v3, :cond_16
+    cmp-long v6, v11, v13
 
     .line 358
     .line 359
-    if-nez v12, :cond_14
+    if-nez v6, :cond_c
 
     .line 360
     .line 361
-    if-eqz v13, :cond_16
+    invoke-static {}, Landroidx/work/A;->a()Landroidx/work/A;
 
     .line 362
     .line 363
-    :cond_14
-    invoke-virtual {v8}, Landroidx/work/impl/WorkDatabase;->v()Lh5/s;
-
     .line 364
+    move-result-object v0
+
     .line 365
+    invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
     .line 366
-    move-result-object v2
-
     .line 367
-    invoke-virtual {v2, v9}, Lh5/s;->i(Ljava/lang/String;)Ljava/util/ArrayList;
-
     .line 368
+    invoke-virtual {v7}, Landroidx/work/impl/n;->D()V
+
     .line 369
     .line 370
-    move-result-object v3
-
     .line 371
-    invoke-virtual {v3}, Ljava/util/ArrayList;->iterator()Ljava/util/Iterator;
+    iget-object v0, v7, Landroidx/work/impl/n;->i:Landroidx/datastore/core/n;
 
     .line 372
     .line 373
+    invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
     .line 374
-    move-result-object v3
-
     .line 375
-    :goto_e
-    invoke-interface {v3}, Ljava/util/Iterator;->hasNext()Z
-
     .line 376
+    new-instance v2, LB2/d;
+
     .line 377
     .line 378
-    move-result v6
+    invoke-static {v9, v10}, Ljava/lang/Long;->valueOf(J)Ljava/lang/Long;
 
     .line 379
-    if-eqz v6, :cond_15
-
     .line 380
     .line 381
-    invoke-interface {v3}, Ljava/util/Iterator;->next()Ljava/lang/Object;
+    move-result-object v3
 
     .line 382
+    invoke-direct {v2, v8, v3}, LB2/d;-><init>(Ljava/lang/String;Ljava/lang/Long;)V
+
     .line 383
     .line 384
-    move-result-object v6
-
     .line 385
-    check-cast v6, Lh5/p;
+    iget-object v0, v0, Landroidx/datastore/core/n;->c:Ljava/lang/Object;
 
     .line 386
     .line 387
-    iget-object v6, v6, Lh5/p;->a:Ljava/lang/String;
+    check-cast v0, Landroidx/work/impl/WorkDatabase;
 
     .line 388
     .line 389
-    invoke-virtual {v2, v6}, Lh5/s;->a(Ljava/lang/String;)V
+    invoke-virtual {v0}, Landroidx/work/impl/WorkDatabase;->z()LB2/e;
 
     .line 390
     .line 391
     .line 392
-    goto :goto_e
+    move-result-object v0
 
     .line 393
-    :cond_15
-    invoke-static {}, Ljava/util/Collections;->emptyList()Ljava/util/List;
+    invoke-virtual {v0, v2}, LB2/e;->D(LB2/d;)V
 
     .line 394
     .line 395
     .line 396
-    move-result-object v7
+    goto/16 :goto_e
 
     .line 397
-    const/4 v12, 0x0
-
     .line 398
-    const/4 v13, 0x0
+    :cond_c
+    :try_start_7
+    sget v6, Landroid/os/Build$VERSION;->SDK_INT:I
 
     .line 399
-    :cond_16
-    invoke-interface {v7, v1}, Ljava/util/List;->toArray([Ljava/lang/Object;)[Ljava/lang/Object;
-
     .line 400
+    const/16 v8, 0x1f
+
     .line 401
     .line 402
-    move-result-object v1
+    if-lt v6, v8, :cond_d
 
     .line 403
-    check-cast v1, [Ljava/lang/String;
-
     .line 404
-    .line 405
-    array-length v2, v1
+    const/high16 v8, 0x22000000
 
+    .line 405
     .line 406
-    if-lez v2, :cond_17
+    goto :goto_b
 
     .line 407
-    .line 408
-    const/4 v7, 0x1
+    :cond_d
+    const/high16 v8, 0x20000000
 
+    .line 408
     .line 409
-    goto :goto_f
+    :goto_b
+    new-instance v11, Landroid/content/Intent;
 
     .line 410
-    :cond_17
-    const/4 v7, 0x0
-
     .line 411
-    :goto_f
-    const/4 v15, 0x0
+    invoke-direct {v11}, Landroid/content/Intent;-><init>()V
 
     .line 412
-    goto :goto_10
-
     .line 413
-    :cond_18
-    move-object/from16 v19, v3
-
     .line 414
+    new-instance v12, Landroid/content/ComponentName;
+
     .line 415
-    move/from16 v18, v10
-
     .line 416
-    .line 417
-    const/4 v14, 0x0
+    const-class v13, Landroidx/work/impl/utils/ForceStopRunnable$BroadcastReceiver;
 
+    .line 417
     .line 418
-    goto :goto_f
+    invoke-direct {v12, v5, v13}, Landroid/content/ComponentName;-><init>(Landroid/content/Context;Ljava/lang/Class;)V
 
     .line 419
-    :goto_10
-    iget-object v2, v0, Landroidx/work/impl/a0;->d:Ljava/util/List;
-
     .line 420
     .line 421
-    invoke-interface {v2}, Ljava/util/List;->iterator()Ljava/util/Iterator;
+    invoke-virtual {v11, v12}, Landroid/content/Intent;->setComponent(Landroid/content/ComponentName;)Landroid/content/Intent;
 
     .line 422
     .line 423
     .line 424
-    move-result-object v2
+    const-string v12, "ACTION_FORCE_STOP_RESCHEDULE"
 
     .line 425
-    :goto_11
-    invoke-interface {v2}, Ljava/util/Iterator;->hasNext()Z
-
     .line 426
+    invoke-virtual {v11, v12}, Landroid/content/Intent;->setAction(Ljava/lang/String;)Landroid/content/Intent;
+
     .line 427
     .line 428
-    move-result v3
-
     .line 429
-    if-eqz v3, :cond_1f
+    const/4 v12, -0x1
 
     .line 430
-    .line 431
-    invoke-interface {v2}, Ljava/util/Iterator;->next()Ljava/lang/Object;
+    invoke-static {v5, v12, v11, v8}, Landroid/app/PendingIntent;->getBroadcast(Landroid/content/Context;ILandroid/content/Intent;I)Landroid/app/PendingIntent;
 
+    .line 431
     .line 432
     .line 433
+    move-result-object v8
+
     .line 434
-    move-result-object v3
+    const/16 v11, 0x1e
 
     .line 435
-    check-cast v3, Landroidx/work/i0;
-
     .line 436
+    if-lt v6, v11, :cond_11
+
     .line 437
-    iget-object v6, v3, Landroidx/work/i0;->b:Lh5/q;
-
     .line 438
+    if-eqz v8, :cond_e
+
     .line 439
-    if-eqz v7, :cond_1b
-
     .line 440
-    .line 441
-    if-nez v11, :cond_1b
+    invoke-virtual {v8}, Landroid/app/PendingIntent;->cancel()V
 
+    .line 441
     .line 442
     .line 443
-    if-eqz v13, :cond_19
+    :cond_e
+    const-string v6, "activity"
 
     .line 444
     .line 445
-    sget-object v10, Landroidx/work/WorkInfo$State;->FAILED:Landroidx/work/WorkInfo$State;
+    invoke-virtual {v5, v6}, Landroid/content/Context;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
 
     .line 446
     .line 447
-    iput-object v10, v6, Lh5/q;->b:Landroidx/work/WorkInfo$State;
-
     .line 448
+    move-result-object v5
+
     .line 449
-    goto :goto_12
+    check-cast v5, Landroid/app/ActivityManager;
 
     .line 450
-    :cond_19
-    if-eqz v12, :cond_1a
-
     .line 451
-    .line 452
-    sget-object v10, Landroidx/work/WorkInfo$State;->CANCELLED:Landroidx/work/WorkInfo$State;
+    invoke-static {v5}, Landroidx/core/view/H0;->j(Landroid/app/ActivityManager;)Ljava/util/List;
 
+    .line 452
     .line 453
     .line 454
-    iput-object v10, v6, Lh5/q;->b:Landroidx/work/WorkInfo$State;
+    move-result-object v5
 
     .line 455
-    .line 456
-    goto :goto_12
+    if-eqz v5, :cond_12
 
+    .line 456
     .line 457
-    :cond_1a
-    sget-object v10, Landroidx/work/WorkInfo$State;->BLOCKED:Landroidx/work/WorkInfo$State;
+    invoke-interface {v5}, Ljava/util/List;->isEmpty()Z
 
     .line 458
     .line 459
-    iput-object v10, v6, Lh5/q;->b:Landroidx/work/WorkInfo$State;
-
     .line 460
+    move-result v6
+
     .line 461
-    goto :goto_12
+    if-nez v6, :cond_12
 
     .line 462
-    :cond_1b
-    iput-wide v4, v6, Lh5/q;->n:J
-
     .line 463
+    iget-object v6, v3, Landroidx/datastore/core/n;->c:Ljava/lang/Object;
+
     .line 464
-    :goto_12
-    iget-object v10, v6, Lh5/q;->b:Landroidx/work/WorkInfo$State;
-
     .line 465
+    check-cast v6, Landroidx/work/impl/WorkDatabase;
+
     .line 466
-    sget-object v14, Landroidx/work/WorkInfo$State;->ENQUEUED:Landroidx/work/WorkInfo$State;
-
     .line 467
-    .line 468
-    if-ne v10, v14, :cond_1c
+    invoke-virtual {v6}, Landroidx/work/impl/WorkDatabase;->z()LB2/e;
 
+    .line 468
     .line 469
     .line 470
-    const/4 v15, 0x1
+    move-result-object v6
 
     .line 471
-    :cond_1c
-    invoke-virtual {v8}, Landroidx/work/impl/WorkDatabase;->v()Lh5/s;
+    invoke-virtual {v6, v2}, LB2/e;->z(Ljava/lang/String;)Ljava/lang/Long;
 
     .line 472
     .line 473
     .line 474
-    move-result-object v10
+    move-result-object v6
 
     .line 475
-    move-object/from16 v17, v2
+    if-eqz v6, :cond_f
 
     .line 476
     .line 477
-    move-object/from16 v14, v19
+    invoke-virtual {v6}, Ljava/lang/Long;->longValue()J
 
     .line 478
     .line 479
-    iget-object v2, v14, Landroidx/work/impl/i0;->e:Ljava/util/List;
-
     .line 480
+    move-result-wide v9
+
     .line 481
-    invoke-static {v2, v6}, Ly/f;->R(Ljava/util/List;Lh5/q;)Lh5/q;
+    :cond_f
+    const/4 v6, 0x0
 
     .line 482
+    :goto_c
+    invoke-interface {v5}, Ljava/util/List;->size()I
+
     .line 483
     .line 484
-    move-result-object v2
-
     .line 485
-    iget-object v6, v10, Lh5/s;->a:Landroidx/room/w;
+    move-result v8
 
     .line 486
-    .line 487
-    invoke-virtual {v6}, Landroidx/room/w;->b()V
+    if-ge v6, v8, :cond_12
 
+    .line 487
     .line 488
+    invoke-interface {v5, v6}, Ljava/util/List;->get(I)Ljava/lang/Object;
+
     .line 489
     .line 490
-    invoke-virtual {v6}, Landroidx/room/w;->c()V
-
     .line 491
-    .line 492
-    .line 493
-    :try_start_1
-    iget-object v10, v10, Lh5/s;->b:Lh5/b;
+    move-result-object v8
 
+    .line 492
+    invoke-static {v8}, Landroidx/core/view/H0;->e(Ljava/lang/Object;)Landroid/app/ApplicationExitInfo;
+
+    .line 493
     .line 494
     .line 495
-    invoke-virtual {v10, v2}, Landroidx/room/f;->e(Ljava/lang/Object;)V
+    move-result-object v8
 
     .line 496
+    invoke-static {v8}, Landroidx/core/view/H0;->b(Landroid/app/ApplicationExitInfo;)I
+
     .line 497
     .line 498
-    invoke-virtual {v6}, Landroidx/room/w;->o()V
-    :try_end_1
-    .catchall {:try_start_1 .. :try_end_1} :catchall_3
-
     .line 499
-    .line 500
-    .line 501
-    invoke-virtual {v6}, Landroidx/room/w;->j()V
+    move-result v11
 
+    .line 500
+    const/16 v12, 0xa
+
+    .line 501
     .line 502
+    if-ne v11, v12, :cond_10
+
     .line 503
     .line 504
-    iget-object v2, v3, Landroidx/work/i0;->a:Ljava/util/UUID;
+    invoke-static {v8}, Landroidx/core/view/H0;->d(Landroid/app/ApplicationExitInfo;)J
 
     .line 505
     .line 506
-    if-eqz v7, :cond_1d
-
     .line 507
+    move-result-wide v11
+
     .line 508
-    array-length v6, v1
+    cmp-long v8, v11, v9
 
     .line 509
-    const/4 v10, 0x0
-
     .line 510
-    :goto_13
-    if-ge v10, v6, :cond_1d
+    if-ltz v8, :cond_10
 
     .line 511
     .line 512
-    move-wide/from16 v19, v4
+    goto :goto_d
 
     .line 513
+    :cond_10
+    add-int/2addr v6, v0
+
     .line 514
-    aget-object v4, v1, v10
+    goto :goto_c
 
     .line 515
+    :cond_11
+    if-nez v8, :cond_12
+
     .line 516
-    new-instance v5, Lh5/a;
-
     .line 517
-    .line 518
-    move-object/from16 v21, v1
+    invoke-static {v5}, Landroidx/work/impl/utils/e;->b(Landroid/content/Context;)V
+    :try_end_7
+    .catch Ljava/lang/SecurityException; {:try_start_7 .. :try_end_7} :catch_0
+    .catch Ljava/lang/IllegalArgumentException; {:try_start_7 .. :try_end_7} :catch_0
 
+    .line 518
     .line 519
     .line 520
-    invoke-virtual {v2}, Ljava/util/UUID;->toString()Ljava/lang/String;
+    goto :goto_d
 
     .line 521
+    :cond_12
+    if-eqz v4, :cond_13
+
     .line 522
     .line 523
-    move-result-object v1
+    invoke-static {}, Landroidx/work/A;->a()Landroidx/work/A;
 
     .line 524
-    invoke-direct {v5, v1, v4}, Lh5/a;-><init>(Ljava/lang/String;Ljava/lang/String;)V
-
     .line 525
     .line 526
+    move-result-object v0
+
     .line 527
-    invoke-virtual {v8}, Landroidx/work/impl/WorkDatabase;->q()Lh5/c;
+    invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
     .line 528
     .line 529
     .line 530
-    move-result-object v1
+    iget-object v0, v7, Landroidx/work/impl/n;->d:Landroidx/work/b;
 
     .line 531
-    iget-object v4, v1, Lh5/c;->c:Ljava/lang/Object;
-
     .line 532
+    iget-object v2, v7, Landroidx/work/impl/n;->e:Landroidx/work/impl/WorkDatabase;
+
     .line 533
-    check-cast v4, Landroidx/room/w;
-
     .line 534
-    .line 535
-    invoke-virtual {v4}, Landroidx/room/w;->b()V
+    iget-object v3, v7, Landroidx/work/impl/n;->g:Ljava/util/List;
 
+    .line 535
     .line 536
+    invoke-static {v0, v2, v3}, Landroidx/work/impl/h;->b(Landroidx/work/b;Landroidx/work/impl/WorkDatabase;Ljava/util/List;)V
+
     .line 537
     .line 538
-    iget-object v4, v1, Lh5/c;->c:Ljava/lang/Object;
-
     .line 539
+    goto :goto_e
+
     .line 540
-    check-cast v4, Landroidx/room/w;
+    :catch_0
+    invoke-static {}, Landroidx/work/A;->a()Landroidx/work/A;
 
     .line 541
     .line 542
-    invoke-virtual {v4}, Landroidx/room/w;->c()V
-
     .line 543
-    .line 544
-    .line 545
-    :try_start_2
-    iget-object v4, v1, Lh5/c;->d:Ljava/lang/Object;
+    move-result-object v0
 
+    .line 544
+    invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    .line 545
     .line 546
     .line 547
-    check-cast v4, Landroidx/room/f;
+    :goto_d
+    invoke-static {}, Landroidx/work/A;->a()Landroidx/work/A;
 
     .line 548
     .line 549
-    invoke-virtual {v4, v5}, Landroidx/room/f;->e(Ljava/lang/Object;)V
-
     .line 550
-    .line 551
-    .line 552
-    iget-object v4, v1, Lh5/c;->c:Ljava/lang/Object;
+    move-result-object v0
 
+    .line 551
+    invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    .line 552
     .line 553
     .line 554
-    check-cast v4, Landroidx/room/w;
+    invoke-virtual {v7}, Landroidx/work/impl/n;->D()V
 
     .line 555
     .line 556
-    invoke-virtual {v4}, Landroidx/room/w;->o()V
-    :try_end_2
-    .catchall {:try_start_2 .. :try_end_2} :catchall_1
-
     .line 557
+    iget-object v0, v7, Landroidx/work/impl/n;->d:Landroidx/work/b;
+
     .line 558
     .line 559
-    iget-object v1, v1, Lh5/c;->c:Ljava/lang/Object;
+    iget-object v0, v0, Landroidx/work/b;->d:Landroidx/work/A;
 
     .line 560
     .line 561
-    check-cast v1, Landroidx/room/w;
+    invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
     .line 562
     .line 563
-    invoke-virtual {v1}, Landroidx/room/w;->j()V
-
     .line 564
+    invoke-static {}, Ljava/lang/System;->currentTimeMillis()J
+
     .line 565
     .line 566
-    add-int/lit8 v10, v10, 0x1
-
     .line 567
+    move-result-wide v4
+
     .line 568
-    move-wide/from16 v4, v19
+    invoke-virtual {v3}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
     .line 569
     .line 570
-    move-object/from16 v1, v21
-
     .line 571
-    .line 572
-    goto :goto_13
+    new-instance v0, LB2/d;
 
+    .line 572
     .line 573
-    :catchall_1
-    move-exception v0
+    invoke-static {v4, v5}, Ljava/lang/Long;->valueOf(J)Ljava/lang/Long;
 
     .line 574
-    iget-object v1, v1, Lh5/c;->c:Ljava/lang/Object;
-
     .line 575
     .line 576
-    check-cast v1, Landroidx/room/w;
+    move-result-object v4
 
     .line 577
-    .line 578
-    invoke-virtual {v1}, Landroidx/room/w;->j()V
+    invoke-direct {v0, v2, v4}, LB2/d;-><init>(Ljava/lang/String;Ljava/lang/Long;)V
 
+    .line 578
     .line 579
     .line 580
-    .line 581
-    throw v0
+    iget-object v2, v3, Landroidx/datastore/core/n;->c:Ljava/lang/Object;
 
+    .line 581
     .line 582
-    :cond_1d
-    move-object/from16 v21, v1
+    check-cast v2, Landroidx/work/impl/WorkDatabase;
 
     .line 583
     .line 584
-    move-wide/from16 v19, v4
+    invoke-virtual {v2}, Landroidx/work/impl/WorkDatabase;->z()LB2/e;
 
     .line 585
     .line 586
-    invoke-virtual {v8}, Landroidx/work/impl/WorkDatabase;->w()Lh5/v;
-
     .line 587
-    .line 588
-    .line 589
-    move-result-object v1
-
-    .line 590
-    invoke-virtual {v2}, Ljava/util/UUID;->toString()Ljava/lang/String;
-
-    .line 591
-    .line 592
-    .line 593
-    move-result-object v4
-
-    .line 594
-    iget-object v3, v3, Landroidx/work/i0;->c:Ljava/util/Set;
-
-    .line 595
-    .line 596
-    invoke-virtual {v1, v4, v3}, Lh5/v;->I(Ljava/lang/String;Ljava/util/Set;)V
-
-    .line 597
-    .line 598
-    .line 599
-    if-eqz v18, :cond_1e
-
-    .line 600
-    .line 601
-    invoke-virtual {v8}, Landroidx/work/impl/WorkDatabase;->t()Lh5/l;
-
-    .line 602
-    .line 603
-    .line 604
-    move-result-object v1
-
-    .line 605
-    new-instance v3, Lh5/k;
-
-    .line 606
-    .line 607
-    invoke-virtual {v2}, Ljava/util/UUID;->toString()Ljava/lang/String;
-
-    .line 608
-    .line 609
-    .line 610
     move-result-object v2
 
-    .line 611
-    invoke-direct {v3, v9, v2}, Lh5/k;-><init>(Ljava/lang/String;Ljava/lang/String;)V
+    .line 588
+    invoke-virtual {v2, v0}, LB2/e;->D(LB2/d;)V
 
-    .line 612
-    .line 613
-    .line 614
-    iget-object v2, v1, Lh5/l;->c:Ljava/lang/Object;
+    .line 589
+    .line 590
+    .line 591
+    :cond_13
+    :goto_e
+    return-void
 
-    .line 615
-    .line 616
-    check-cast v2, Landroidx/room/w;
-
-    .line 617
-    .line 618
-    invoke-virtual {v2}, Landroidx/room/w;->b()V
-
-    .line 619
-    .line 620
-    .line 621
-    iget-object v2, v1, Lh5/l;->c:Ljava/lang/Object;
-
-    .line 622
-    .line 623
-    check-cast v2, Landroidx/room/w;
-
-    .line 624
-    .line 625
-    invoke-virtual {v2}, Landroidx/room/w;->c()V
-
-    .line 626
-    .line 627
-    .line 628
-    :try_start_3
-    iget-object v2, v1, Lh5/l;->d:Ljava/lang/Object;
-
-    .line 629
-    .line 630
-    check-cast v2, Landroidx/room/f;
-
-    .line 631
-    .line 632
-    invoke-virtual {v2, v3}, Landroidx/room/f;->e(Ljava/lang/Object;)V
-
-    .line 633
-    .line 634
-    .line 635
-    iget-object v2, v1, Lh5/l;->c:Ljava/lang/Object;
-
-    .line 636
-    .line 637
-    check-cast v2, Landroidx/room/w;
-
-    .line 638
-    .line 639
-    invoke-virtual {v2}, Landroidx/room/w;->o()V
-    :try_end_3
-    .catchall {:try_start_3 .. :try_end_3} :catchall_2
-
-    .line 640
-    .line 641
-    .line 642
-    iget-object v1, v1, Lh5/l;->c:Ljava/lang/Object;
-
-    .line 643
-    .line 644
-    check-cast v1, Landroidx/room/w;
-
-    .line 645
-    .line 646
-    invoke-virtual {v1}, Landroidx/room/w;->j()V
-
-    .line 647
-    .line 648
-    .line 649
-    goto :goto_14
-
-    .line 650
-    :catchall_2
-    move-exception v0
-
-    .line 651
-    iget-object v1, v1, Lh5/l;->c:Ljava/lang/Object;
-
-    .line 652
-    .line 653
-    check-cast v1, Landroidx/room/w;
-
-    .line 654
-    .line 655
-    invoke-virtual {v1}, Landroidx/room/w;->j()V
-
-    .line 656
-    .line 657
-    .line 658
-    throw v0
-
-    .line 659
-    :cond_1e
-    :goto_14
-    move-object/from16 v2, v17
-
-    .line 660
-    .line 661
-    move-wide/from16 v4, v19
-
-    .line 662
-    .line 663
-    move-object/from16 v1, v21
-
-    .line 664
-    .line 665
-    move-object/from16 v19, v14
-
-    .line 666
-    .line 667
-    const/4 v14, 0x0
-
-    .line 668
-    goto/16 :goto_11
-
-    .line 669
-    .line 670
+    .line 592
     :catchall_3
     move-exception v0
 
-    .line 671
-    invoke-virtual {v6}, Landroidx/room/w;->j()V
+    .line 593
+    :try_start_8
+    invoke-virtual {v6}, Landroidx/room/y;->r()V
 
-    .line 672
-    .line 673
-    .line 674
+    .line 594
+    .line 595
+    .line 596
     throw v0
+    :try_end_8
+    .catchall {:try_start_8 .. :try_end_8} :catchall_4
 
-    .line 675
-    :cond_1f
-    move v2, v15
+    .line 597
+    :catchall_4
+    move-exception v0
 
-    .line 676
-    goto/16 :goto_2
+    .line 598
+    :try_start_9
+    invoke-virtual {v9, v10}, Landroidx/room/D;->c(Lm2/h;)V
 
-    .line 677
-    .line 678
-    :goto_15
-    iput-boolean v1, v0, Landroidx/work/impl/a0;->g:Z
+    .line 599
+    .line 600
+    .line 601
+    throw v0
+    :try_end_9
+    .catchall {:try_start_9 .. :try_end_9} :catchall_2
 
-    .line 679
-    .line 680
-    return v2
+    .line 602
+    :goto_f
+    invoke-virtual {v4}, Landroidx/room/y;->r()V
+
+    .line 603
+    .line 604
+    .line 605
+    throw v0
+.end method
+
+.method public final run()V
+    .locals 8
+
+    .line 1
+    iget-object v0, p0, Landroidx/work/impl/utils/e;->c:Landroidx/work/impl/n;
+
+    .line 2
+    .line 3
+    :try_start_0
+    iget-object v1, v0, Landroidx/work/impl/n;->d:Landroidx/work/b;
+
+    .line 4
+    .line 5
+    invoke-virtual {v1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    .line 6
+    .line 7
+    .line 8
+    const/4 v1, 0x0
+
+    .line 9
+    invoke-static {v1}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
+
+    .line 10
+    .line 11
+    .line 12
+    move-result v1
+    :try_end_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+
+    .line 13
+    const/4 v2, 0x1
+
+    .line 14
+    iget-object v3, p0, Landroidx/work/impl/utils/e;->b:Landroid/content/Context;
+
+    .line 15
+    .line 16
+    if-eqz v1, :cond_0
+
+    .line 17
+    .line 18
+    :try_start_1
+    invoke-static {}, Landroidx/work/A;->a()Landroidx/work/A;
+
+    .line 19
+    .line 20
+    .line 21
+    move-result-object v1
+
+    .line 22
+    invoke-virtual {v1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    .line 23
+    .line 24
+    .line 25
+    const/4 v1, 0x1
+
+    .line 26
+    goto :goto_0
+
+    .line 27
+    :cond_0
+    invoke-static {v3}, Landroidx/work/impl/utils/i;->a(Landroid/content/Context;)Z
+
+    .line 28
+    .line 29
+    .line 30
+    move-result v1
+
+    .line 31
+    invoke-static {}, Landroidx/work/A;->a()Landroidx/work/A;
+
+    .line 32
+    .line 33
+    .line 34
+    move-result-object v4
+
+    .line 35
+    invoke-virtual {v4}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+    :try_end_1
+    .catchall {:try_start_1 .. :try_end_1} :catchall_0
+
+    .line 36
+    .line 37
+    .line 38
+    :goto_0
+    if-nez v1, :cond_1
+
+    .line 39
+    .line 40
+    invoke-virtual {v0}, Landroidx/work/impl/n;->C()V
+
+    .line 41
+    .line 42
+    .line 43
+    return-void
+
+    .line 44
+    :catch_0
+    :cond_1
+    :goto_1
+    :try_start_2
+    invoke-static {v3}, Landroidx/work/impl/o;->b(Landroid/content/Context;)V
+    :try_end_2
+    .catch Landroid/database/sqlite/SQLiteException; {:try_start_2 .. :try_end_2} :catch_9
+    .catchall {:try_start_2 .. :try_end_2} :catchall_0
+
+    .line 45
+    .line 46
+    .line 47
+    :try_start_3
+    invoke-static {}, Landroidx/work/A;->a()Landroidx/work/A;
+
+    .line 48
+    .line 49
+    .line 50
+    move-result-object v1
+
+    .line 51
+    invoke-virtual {v1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+    :try_end_3
+    .catchall {:try_start_3 .. :try_end_3} :catchall_0
+
+    .line 52
+    .line 53
+    .line 54
+    :try_start_4
+    invoke-virtual {p0}, Landroidx/work/impl/utils/e;->a()V
+    :try_end_4
+    .catch Landroid/database/sqlite/SQLiteAccessPermException; {:try_start_4 .. :try_end_4} :catch_8
+    .catch Landroid/database/sqlite/SQLiteCantOpenDatabaseException; {:try_start_4 .. :try_end_4} :catch_7
+    .catch Landroid/database/sqlite/SQLiteConstraintException; {:try_start_4 .. :try_end_4} :catch_6
+    .catch Landroid/database/sqlite/SQLiteDatabaseCorruptException; {:try_start_4 .. :try_end_4} :catch_5
+    .catch Landroid/database/sqlite/SQLiteDatabaseLockedException; {:try_start_4 .. :try_end_4} :catch_4
+    .catch Landroid/database/sqlite/SQLiteDiskIOException; {:try_start_4 .. :try_end_4} :catch_3
+    .catch Landroid/database/sqlite/SQLiteFullException; {:try_start_4 .. :try_end_4} :catch_2
+    .catch Landroid/database/sqlite/SQLiteTableLockedException; {:try_start_4 .. :try_end_4} :catch_1
+    .catchall {:try_start_4 .. :try_end_4} :catchall_0
+
+    .line 55
+    .line 56
+    .line 57
+    invoke-virtual {v0}, Landroidx/work/impl/n;->C()V
+
+    .line 58
+    .line 59
+    .line 60
+    return-void
+
+    .line 61
+    :catchall_0
+    move-exception v1
+
+    .line 62
+    goto :goto_4
+
+    .line 63
+    :catch_1
+    move-exception v1
+
+    .line 64
+    goto :goto_2
+
+    .line 65
+    :catch_2
+    move-exception v1
+
+    .line 66
+    goto :goto_2
+
+    .line 67
+    :catch_3
+    move-exception v1
+
+    .line 68
+    goto :goto_2
+
+    .line 69
+    :catch_4
+    move-exception v1
+
+    .line 70
+    goto :goto_2
+
+    .line 71
+    :catch_5
+    move-exception v1
+
+    .line 72
+    goto :goto_2
+
+    .line 73
+    :catch_6
+    move-exception v1
+
+    .line 74
+    goto :goto_2
+
+    .line 75
+    :catch_7
+    move-exception v1
+
+    .line 76
+    goto :goto_2
+
+    .line 77
+    :catch_8
+    move-exception v1
+
+    .line 78
+    :goto_2
+    :try_start_5
+    iget v4, p0, Landroidx/work/impl/utils/e;->f:I
+
+    .line 79
+    .line 80
+    add-int/2addr v4, v2
+
+    .line 81
+    iput v4, p0, Landroidx/work/impl/utils/e;->f:I
+
+    .line 82
+    .line 83
+    const/4 v5, 0x3
+
+    .line 84
+    if-lt v4, v5, :cond_3
+
+    .line 85
+    .line 86
+    invoke-static {v3}, LP5/f;->s(Landroid/content/Context;)Z
+
+    .line 87
+    .line 88
+    .line 89
+    move-result v2
+
+    .line 90
+    if-eqz v2, :cond_2
+
+    .line 91
+    .line 92
+    const-string v2, "The file system on the device is in a bad state. WorkManager cannot access the app\'s internal data store."
+
+    .line 93
+    .line 94
+    goto :goto_3
+
+    .line 95
+    :cond_2
+    const-string v2, "WorkManager can\'t be accessed from direct boot, because credential encrypted storage isn\'t accessible.\nDon\'t access or initialise WorkManager from directAware components. See https://developer.android.com/training/articles/direct-boot"
+
+    .line 96
+    .line 97
+    :goto_3
+    invoke-static {}, Landroidx/work/A;->a()Landroidx/work/A;
+
+    .line 98
+    .line 99
+    .line 100
+    move-result-object v3
+
+    .line 101
+    invoke-virtual {v3}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    .line 102
+    .line 103
+    .line 104
+    new-instance v3, Ljava/lang/IllegalStateException;
+
+    .line 105
+    .line 106
+    invoke-direct {v3, v2, v1}, Ljava/lang/IllegalStateException;-><init>(Ljava/lang/String;Ljava/lang/Throwable;)V
+
+    .line 107
+    .line 108
+    .line 109
+    iget-object v1, v0, Landroidx/work/impl/n;->d:Landroidx/work/b;
+
+    .line 110
+    .line 111
+    invoke-virtual {v1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    .line 112
+    .line 113
+    .line 114
+    throw v3
+
+    .line 115
+    :cond_3
+    invoke-static {}, Landroidx/work/A;->a()Landroidx/work/A;
+
+    .line 116
+    .line 117
+    .line 118
+    move-result-object v1
+
+    .line 119
+    invoke-virtual {v1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    .line 120
+    .line 121
+    .line 122
+    iget v1, p0, Landroidx/work/impl/utils/e;->f:I
+    :try_end_5
+    .catchall {:try_start_5 .. :try_end_5} :catchall_0
+
+    .line 123
+    .line 124
+    int-to-long v4, v1
+
+    .line 125
+    const-wide/16 v6, 0x12c
+
+    .line 126
+    .line 127
+    mul-long v4, v4, v6
+
+    .line 128
+    .line 129
+    :try_start_6
+    invoke-static {v4, v5}, Ljava/lang/Thread;->sleep(J)V
+    :try_end_6
+    .catch Ljava/lang/InterruptedException; {:try_start_6 .. :try_end_6} :catch_0
+    .catchall {:try_start_6 .. :try_end_6} :catchall_0
+
+    .line 130
+    .line 131
+    .line 132
+    goto :goto_1
+
+    .line 133
+    :catch_9
+    move-exception v1
+
+    .line 134
+    :try_start_7
+    const-string v2, "Unexpected SQLite exception during migrations"
+
+    .line 135
+    .line 136
+    invoke-static {}, Landroidx/work/A;->a()Landroidx/work/A;
+
+    .line 137
+    .line 138
+    .line 139
+    move-result-object v3
+
+    .line 140
+    invoke-virtual {v3}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    .line 141
+    .line 142
+    .line 143
+    new-instance v3, Ljava/lang/IllegalStateException;
+
+    .line 144
+    .line 145
+    invoke-direct {v3, v2, v1}, Ljava/lang/IllegalStateException;-><init>(Ljava/lang/String;Ljava/lang/Throwable;)V
+
+    .line 146
+    .line 147
+    .line 148
+    iget-object v1, v0, Landroidx/work/impl/n;->d:Landroidx/work/b;
+
+    .line 149
+    .line 150
+    invoke-virtual {v1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    .line 151
+    .line 152
+    .line 153
+    throw v3
+    :try_end_7
+    .catchall {:try_start_7 .. :try_end_7} :catchall_0
+
+    .line 154
+    :goto_4
+    invoke-virtual {v0}, Landroidx/work/impl/n;->C()V
+
+    .line 155
+    .line 156
+    .line 157
+    throw v1
 .end method

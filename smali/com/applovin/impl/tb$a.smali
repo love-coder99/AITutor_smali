@@ -46,10 +46,13 @@
     .line 2
     invoke-direct {p0}, Ljava/util/AbstractList;-><init>()V
 
+    .line 3
     iput-object p1, p0, Lcom/applovin/impl/tb$a;->a:[I
 
+    .line 4
     iput p2, p0, Lcom/applovin/impl/tb$a;->b:I
 
+    .line 5
     iput p3, p0, Lcom/applovin/impl/tb$a;->c:I
 
     return-void
@@ -282,13 +285,13 @@
 
     invoke-static {p1, v0}, Lcom/applovin/exoplayer2/common/base/Preconditions;->checkElementIndex(II)I
 
+    .line 2
     iget-object v0, p0, Lcom/applovin/impl/tb$a;->a:[I
 
     iget v1, p0, Lcom/applovin/impl/tb$a;->b:I
 
     add-int/2addr v1, p1
 
-    .line 2
     aget p1, v0, v1
 
     invoke-static {p1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
@@ -511,13 +514,13 @@
 
     invoke-static {p1, v0}, Lcom/applovin/exoplayer2/common/base/Preconditions;->checkElementIndex(II)I
 
+    .line 2
     iget-object v0, p0, Lcom/applovin/impl/tb$a;->a:[I
 
     iget v1, p0, Lcom/applovin/impl/tb$a;->b:I
 
     add-int/2addr v1, p1
 
-    .line 2
     aget p1, v0, v1
 
     .line 3
@@ -557,12 +560,18 @@
 .method public size()I
     .locals 2
 
+    .line 1
     iget v0, p0, Lcom/applovin/impl/tb$a;->c:I
 
+    .line 2
+    .line 3
     iget v1, p0, Lcom/applovin/impl/tb$a;->b:I
 
+    .line 4
+    .line 5
     sub-int/2addr v0, v1
 
+    .line 6
     return v0
 .end method
 

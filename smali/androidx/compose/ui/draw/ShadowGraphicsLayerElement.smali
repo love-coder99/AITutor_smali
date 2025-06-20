@@ -1,12 +1,12 @@
 .class public final Landroidx/compose/ui/draw/ShadowGraphicsLayerElement;
-.super Landroidx/compose/ui/node/w0;
+.super Landroidx/compose/ui/node/V;
 .source "SourceFile"
 
 
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
-        "Landroidx/compose/ui/node/w0;"
+        "Landroidx/compose/ui/node/V;"
     }
 .end annotation
 
@@ -16,7 +16,7 @@
     }
     d2 = {
         "Landroidx/compose/ui/draw/ShadowGraphicsLayerElement;",
-        "Landroidx/compose/ui/node/w0;",
+        "Landroidx/compose/ui/node/V;",
         "Landroidx/compose/ui/graphics/q;",
         "ui_release"
     }
@@ -26,23 +26,24 @@
         0x8,
         0x0
     }
+    xi = 0x30
 .end annotation
 
 
 # instance fields
-.field public final c:F
+.field public final a:F
 
-.field public final d:Landroidx/compose/ui/graphics/z0;
+.field public final b:Landroidx/compose/ui/graphics/Z;
 
-.field public final e:Z
+.field public final c:Z
 
-.field public final f:J
+.field public final d:J
 
-.field public final g:J
+.field public final e:J
 
 
 # direct methods
-.method public constructor <init>(FLandroidx/compose/ui/graphics/z0;ZJJ)V
+.method public constructor <init>(FLandroidx/compose/ui/graphics/Z;ZJJ)V
     .locals 0
 
     .line 1
@@ -51,23 +52,23 @@
     .line 2
     .line 3
     .line 4
-    iput p1, p0, Landroidx/compose/ui/draw/ShadowGraphicsLayerElement;->c:F
+    iput p1, p0, Landroidx/compose/ui/draw/ShadowGraphicsLayerElement;->a:F
 
     .line 5
     .line 6
-    iput-object p2, p0, Landroidx/compose/ui/draw/ShadowGraphicsLayerElement;->d:Landroidx/compose/ui/graphics/z0;
+    iput-object p2, p0, Landroidx/compose/ui/draw/ShadowGraphicsLayerElement;->b:Landroidx/compose/ui/graphics/Z;
 
     .line 7
     .line 8
-    iput-boolean p3, p0, Landroidx/compose/ui/draw/ShadowGraphicsLayerElement;->e:Z
+    iput-boolean p3, p0, Landroidx/compose/ui/draw/ShadowGraphicsLayerElement;->c:Z
 
     .line 9
     .line 10
-    iput-wide p4, p0, Landroidx/compose/ui/draw/ShadowGraphicsLayerElement;->f:J
+    iput-wide p4, p0, Landroidx/compose/ui/draw/ShadowGraphicsLayerElement;->d:J
 
     .line 11
     .line 12
-    iput-wide p6, p0, Landroidx/compose/ui/draw/ShadowGraphicsLayerElement;->g:J
+    iput-wide p6, p0, Landroidx/compose/ui/draw/ShadowGraphicsLayerElement;->e:J
 
     .line 13
     .line 14
@@ -97,11 +98,11 @@
     :cond_1
     check-cast p1, Landroidx/compose/ui/draw/ShadowGraphicsLayerElement;
 
-    iget v1, p1, Landroidx/compose/ui/draw/ShadowGraphicsLayerElement;->c:F
+    iget v1, p1, Landroidx/compose/ui/draw/ShadowGraphicsLayerElement;->a:F
 
-    iget v3, p0, Landroidx/compose/ui/draw/ShadowGraphicsLayerElement;->c:F
+    iget v3, p0, Landroidx/compose/ui/draw/ShadowGraphicsLayerElement;->a:F
 
-    invoke-static {v3, v1}, Lh2/e;->a(FF)Z
+    invoke-static {v3, v1}, LM0/e;->a(FF)Z
 
     move-result v1
 
@@ -110,11 +111,11 @@
     return v2
 
     :cond_2
-    iget-object v1, p0, Landroidx/compose/ui/draw/ShadowGraphicsLayerElement;->d:Landroidx/compose/ui/graphics/z0;
+    iget-object v1, p0, Landroidx/compose/ui/draw/ShadowGraphicsLayerElement;->b:Landroidx/compose/ui/graphics/Z;
 
-    iget-object v3, p1, Landroidx/compose/ui/draw/ShadowGraphicsLayerElement;->d:Landroidx/compose/ui/graphics/z0;
+    iget-object v3, p1, Landroidx/compose/ui/draw/ShadowGraphicsLayerElement;->b:Landroidx/compose/ui/graphics/Z;
 
-    invoke-static {v1, v3}, Lrb/h;->d(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v1, v3}, Lkotlin/jvm/internal/h;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result v1
 
@@ -123,18 +124,18 @@
     return v2
 
     :cond_3
-    iget-boolean v1, p0, Landroidx/compose/ui/draw/ShadowGraphicsLayerElement;->e:Z
+    iget-boolean v1, p0, Landroidx/compose/ui/draw/ShadowGraphicsLayerElement;->c:Z
 
-    iget-boolean v3, p1, Landroidx/compose/ui/draw/ShadowGraphicsLayerElement;->e:Z
+    iget-boolean v3, p1, Landroidx/compose/ui/draw/ShadowGraphicsLayerElement;->c:Z
 
     if-eq v1, v3, :cond_4
 
     return v2
 
     :cond_4
-    iget-wide v3, p0, Landroidx/compose/ui/draw/ShadowGraphicsLayerElement;->f:J
+    iget-wide v3, p0, Landroidx/compose/ui/draw/ShadowGraphicsLayerElement;->d:J
 
-    iget-wide v5, p1, Landroidx/compose/ui/draw/ShadowGraphicsLayerElement;->f:J
+    iget-wide v5, p1, Landroidx/compose/ui/draw/ShadowGraphicsLayerElement;->d:J
 
     invoke-static {v3, v4, v5, v6}, Landroidx/compose/ui/graphics/w;->c(JJ)Z
 
@@ -145,9 +146,9 @@
     return v2
 
     :cond_5
-    iget-wide v3, p0, Landroidx/compose/ui/draw/ShadowGraphicsLayerElement;->g:J
+    iget-wide v3, p0, Landroidx/compose/ui/draw/ShadowGraphicsLayerElement;->e:J
 
-    iget-wide v5, p1, Landroidx/compose/ui/draw/ShadowGraphicsLayerElement;->g:J
+    iget-wide v5, p1, Landroidx/compose/ui/draw/ShadowGraphicsLayerElement;->e:J
 
     invoke-static {v3, v4, v5, v6}, Landroidx/compose/ui/graphics/w;->c(JJ)Z
 
@@ -165,7 +166,7 @@
     .locals 5
 
     .line 1
-    iget v0, p0, Landroidx/compose/ui/draw/ShadowGraphicsLayerElement;->c:F
+    iget v0, p0, Landroidx/compose/ui/draw/ShadowGraphicsLayerElement;->a:F
 
     .line 2
     .line 3
@@ -185,7 +186,7 @@
 
     .line 10
     .line 11
-    iget-object v2, p0, Landroidx/compose/ui/draw/ShadowGraphicsLayerElement;->d:Landroidx/compose/ui/graphics/z0;
+    iget-object v2, p0, Landroidx/compose/ui/draw/ShadowGraphicsLayerElement;->b:Landroidx/compose/ui/graphics/Z;
 
     .line 12
     .line 13
@@ -204,7 +205,7 @@
 
     .line 19
     .line 20
-    iget-boolean v0, p0, Landroidx/compose/ui/draw/ShadowGraphicsLayerElement;->e:Z
+    iget-boolean v0, p0, Landroidx/compose/ui/draw/ShadowGraphicsLayerElement;->c:Z
 
     .line 21
     .line 22
@@ -232,11 +233,11 @@
 
     .line 31
     .line 32
-    iget-wide v3, p0, Landroidx/compose/ui/draw/ShadowGraphicsLayerElement;->f:J
+    iget-wide v3, p0, Landroidx/compose/ui/draw/ShadowGraphicsLayerElement;->d:J
 
     .line 33
     .line 34
-    invoke-static {v3, v4, v2, v1}, Landroid/support/v4/media/session/a;->y(JII)I
+    invoke-static {v2, v1, v3, v4}, Landroidx/appcompat/view/menu/F;->w(IIJ)I
 
     .line 35
     .line 36
@@ -244,7 +245,7 @@
     move-result v0
 
     .line 38
-    iget-wide v1, p0, Landroidx/compose/ui/draw/ShadowGraphicsLayerElement;->g:J
+    iget-wide v1, p0, Landroidx/compose/ui/draw/ShadowGraphicsLayerElement;->e:J
 
     .line 39
     .line 40
@@ -279,7 +280,7 @@
     .line 6
     .line 7
     .line 8
-    invoke-direct {v0, v1}, Landroidx/compose/ui/graphics/q;-><init>(Lzh/c;)V
+    invoke-direct {v0, v1}, Landroidx/compose/ui/graphics/q;-><init>(Lka/c;)V
 
     .line 9
     .line 10
@@ -304,14 +305,14 @@
     .line 6
     .line 7
     .line 8
-    iput-object v0, p1, Landroidx/compose/ui/graphics/q;->p:Lzh/c;
+    iput-object v0, p1, Landroidx/compose/ui/graphics/q;->p:Lka/c;
 
     .line 9
     .line 10
     const/4 v0, 0x2
 
     .line 11
-    invoke-static {p1, v0}, Lcom/google/android/play/core/appupdate/b;->K(Landroidx/compose/ui/node/j;I)Landroidx/compose/ui/node/e1;
+    invoke-static {p1, v0}, Lx0/c;->v(Landroidx/compose/ui/node/j;I)Landroidx/compose/ui/node/a0;
 
     .line 12
     .line 13
@@ -319,7 +320,7 @@
     move-result-object v0
 
     .line 15
-    iget-object v0, v0, Landroidx/compose/ui/node/e1;->q:Landroidx/compose/ui/node/e1;
+    iget-object v0, v0, Landroidx/compose/ui/node/a0;->p:Landroidx/compose/ui/node/a0;
 
     .line 16
     .line 17
@@ -327,14 +328,14 @@
 
     .line 18
     .line 19
-    iget-object p1, p1, Landroidx/compose/ui/graphics/q;->p:Lzh/c;
+    iget-object p1, p1, Landroidx/compose/ui/graphics/q;->p:Lka/c;
 
     .line 20
     .line 21
     const/4 v1, 0x1
 
     .line 22
-    invoke-virtual {v0, p1, v1}, Landroidx/compose/ui/node/e1;->e1(Lzh/c;Z)V
+    invoke-virtual {v0, p1, v1}, Landroidx/compose/ui/node/a0;->a1(Lka/c;Z)V
 
     .line 23
     .line 24
@@ -360,11 +361,11 @@
     .line 6
     .line 7
     .line 8
-    iget v1, p0, Landroidx/compose/ui/draw/ShadowGraphicsLayerElement;->c:F
+    iget v1, p0, Landroidx/compose/ui/draw/ShadowGraphicsLayerElement;->a:F
 
     .line 9
     .line 10
-    invoke-static {v1}, Lh2/e;->b(F)Ljava/lang/String;
+    invoke-static {v1}, LM0/e;->b(F)Ljava/lang/String;
 
     .line 11
     .line 12
@@ -386,7 +387,7 @@
     .line 20
     .line 21
     .line 22
-    iget-object v1, p0, Landroidx/compose/ui/draw/ShadowGraphicsLayerElement;->d:Landroidx/compose/ui/graphics/z0;
+    iget-object v1, p0, Landroidx/compose/ui/draw/ShadowGraphicsLayerElement;->b:Landroidx/compose/ui/graphics/Z;
 
     .line 23
     .line 24
@@ -404,7 +405,7 @@
     .line 30
     .line 31
     .line 32
-    iget-boolean v1, p0, Landroidx/compose/ui/draw/ShadowGraphicsLayerElement;->e:Z
+    iget-boolean v1, p0, Landroidx/compose/ui/draw/ShadowGraphicsLayerElement;->c:Z
 
     .line 33
     .line 34
@@ -422,7 +423,7 @@
     .line 40
     .line 41
     .line 42
-    iget-wide v1, p0, Landroidx/compose/ui/draw/ShadowGraphicsLayerElement;->f:J
+    iget-wide v1, p0, Landroidx/compose/ui/draw/ShadowGraphicsLayerElement;->d:J
 
     .line 43
     .line 44
@@ -430,12 +431,12 @@
 
     .line 45
     .line 46
-    invoke-static {v1, v2, v0, v3}, Landroid/support/v4/media/session/a;->O(JLjava/lang/StringBuilder;Ljava/lang/String;)V
+    invoke-static {v1, v2, v3, v0}, Landroidx/appcompat/view/menu/F;->M(JLjava/lang/String;Ljava/lang/StringBuilder;)V
 
     .line 47
     .line 48
     .line 49
-    iget-wide v1, p0, Landroidx/compose/ui/draw/ShadowGraphicsLayerElement;->g:J
+    iget-wide v1, p0, Landroidx/compose/ui/draw/ShadowGraphicsLayerElement;->e:J
 
     .line 50
     .line 51

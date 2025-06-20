@@ -4,6 +4,16 @@
 
 
 # annotations
+.annotation runtime Lca/c;
+    c = "androidx.compose.foundation.lazy.grid.LazyGridState"
+    f = "LazyGridState.kt"
+    l = {
+        0x172,
+        0x173
+    }
+    m = "scroll"
+.end annotation
+
 .annotation runtime Lkotlin/Metadata;
     k = 0x3
     mv = {
@@ -12,16 +22,6 @@
         0x0
     }
     xi = 0x30
-.end annotation
-
-.annotation runtime Lth/c;
-    c = "androidx.compose.foundation.lazy.grid.LazyGridState"
-    f = "LazyGridState.kt"
-    l = {
-        0x172,
-        0x173
-    }
-    m = "scroll"
 .end annotation
 
 
@@ -36,16 +36,16 @@
 
 .field synthetic result:Ljava/lang/Object;
 
-.field final synthetic this$0:Landroidx/compose/foundation/lazy/grid/f0;
+.field final synthetic this$0:Landroidx/compose/foundation/lazy/grid/x;
 
 
 # direct methods
-.method public constructor <init>(Landroidx/compose/foundation/lazy/grid/f0;Lkotlin/coroutines/Continuation;)V
+.method public constructor <init>(Landroidx/compose/foundation/lazy/grid/x;Lkotlin/coroutines/Continuation;)V
     .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
-            "Landroidx/compose/foundation/lazy/grid/f0;",
+            "Landroidx/compose/foundation/lazy/grid/x;",
             "Lkotlin/coroutines/Continuation<",
             "-",
             "Landroidx/compose/foundation/lazy/grid/LazyGridState$scroll$1;",
@@ -53,7 +53,7 @@
         }
     .end annotation
 
-    iput-object p1, p0, Landroidx/compose/foundation/lazy/grid/LazyGridState$scroll$1;->this$0:Landroidx/compose/foundation/lazy/grid/f0;
+    iput-object p1, p0, Landroidx/compose/foundation/lazy/grid/LazyGridState$scroll$1;->this$0:Landroidx/compose/foundation/lazy/grid/x;
 
     invoke-direct {p0, p2}, Lkotlin/coroutines/jvm/internal/ContinuationImpl;-><init>(Lkotlin/coroutines/Continuation;)V
 
@@ -75,11 +75,11 @@
 
     iput p1, p0, Landroidx/compose/foundation/lazy/grid/LazyGridState$scroll$1;->label:I
 
-    iget-object p1, p0, Landroidx/compose/foundation/lazy/grid/LazyGridState$scroll$1;->this$0:Landroidx/compose/foundation/lazy/grid/f0;
+    iget-object p1, p0, Landroidx/compose/foundation/lazy/grid/LazyGridState$scroll$1;->this$0:Landroidx/compose/foundation/lazy/grid/x;
 
     const/4 v0, 0x0
 
-    invoke-virtual {p1, v0, v0, p0}, Landroidx/compose/foundation/lazy/grid/f0;->b(Landroidx/compose/foundation/MutatePriority;Lzh/e;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
+    invoke-virtual {p1, v0, v0, p0}, Landroidx/compose/foundation/lazy/grid/x;->c(Landroidx/compose/foundation/MutatePriority;Lka/e;Lkotlin/coroutines/jvm/internal/ContinuationImpl;)Ljava/lang/Object;
 
     move-result-object p1
 

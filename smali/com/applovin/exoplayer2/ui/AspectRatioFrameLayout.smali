@@ -34,32 +34,37 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
     .locals 2
+    .param p2    # Landroid/util/AttributeSet;
+        .annotation build Landroidx/annotation/Nullable;
+        .end annotation
+    .end param
 
     .line 2
     invoke-direct {p0, p1, p2}, Landroid/widget/FrameLayout;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
 
     const/4 v0, 0x0
 
+    .line 3
     iput v0, p0, Lcom/applovin/exoplayer2/ui/AspectRatioFrameLayout;->c:I
 
     if-eqz p2, :cond_0
 
-    .line 3
+    .line 4
     invoke-virtual {p1}, Landroid/content/Context;->getTheme()Landroid/content/res/Resources$Theme;
 
     move-result-object p1
 
     sget-object v1, Lcom/applovin/sdk/R$styleable;->AppLovinAspectRatioFrameLayout:[I
 
-    .line 4
+    .line 5
     invoke-virtual {p1, p2, v1, v0, v0}, Landroid/content/res/Resources$Theme;->obtainStyledAttributes(Landroid/util/AttributeSet;[III)Landroid/content/res/TypedArray;
 
     move-result-object p1
 
+    .line 6
     :try_start_0
     sget p2, Lcom/applovin/sdk/R$styleable;->AppLovinAspectRatioFrameLayout_al_resize_mode:I
 
-    .line 5
     invoke-virtual {p1, p2, v0}, Landroid/content/res/TypedArray;->getInt(II)I
 
     move-result p2
@@ -68,7 +73,7 @@
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    .line 6
+    .line 7
     invoke-virtual {p1}, Landroid/content/res/TypedArray;->recycle()V
 
     goto :goto_0
@@ -76,13 +81,13 @@
     :catchall_0
     move-exception p2
 
-    .line 7
+    .line 8
     invoke-virtual {p1}, Landroid/content/res/TypedArray;->recycle()V
 
-    .line 8
+    .line 9
     throw p2
 
-    .line 9
+    .line 10
     :cond_0
     :goto_0
     new-instance p1, Lcom/applovin/exoplayer2/ui/AspectRatioFrameLayout$c;
@@ -116,8 +121,11 @@
 .method public getResizeMode()I
     .locals 1
 
+    .line 1
     iget v0, p0, Lcom/applovin/exoplayer2/ui/AspectRatioFrameLayout;->c:I
 
+    .line 2
+    .line 3
     return v0
 .end method
 
@@ -414,6 +422,10 @@
 
 .method public setAspectRatioListener(Lcom/applovin/exoplayer2/ui/AspectRatioFrameLayout$b;)V
     .locals 0
+    .param p1    # Lcom/applovin/exoplayer2/ui/AspectRatioFrameLayout$b;
+        .annotation build Landroidx/annotation/Nullable;
+        .end annotation
+    .end param
 
     return-void
 .end method

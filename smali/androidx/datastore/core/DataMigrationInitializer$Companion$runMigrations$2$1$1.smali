@@ -3,10 +3,19 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lzh/c;
+.implements Lka/c;
 
 
 # annotations
+.annotation runtime Lca/c;
+    c = "androidx.datastore.core.DataMigrationInitializer$Companion$runMigrations$2$1$1"
+    f = "DataMigrationInitializer.kt"
+    l = {
+        0x2d
+    }
+    m = "invokeSuspend"
+.end annotation
+
 .annotation system Ldalvik/annotation/EnclosingMethod;
     value = Landroidx/datastore/core/DataMigrationInitializer$Companion$runMigrations$2;->invokeSuspend(Ljava/lang/Object;)Ljava/lang/Object;
 .end annotation
@@ -19,42 +28,34 @@
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "Lkotlin/coroutines/jvm/internal/SuspendLambda;",
-        "Lzh/c;"
+        "Lka/c;"
     }
 .end annotation
 
 .annotation runtime Lkotlin/Metadata;
     d1 = {
-        "\u0000\u0008\n\u0000\n\u0002\u0018\u0002\n\u0000\u0010\u0002\u001a\u00020\u0001\"\u0004\u0008\u0000\u0010\u0000\"\u0004\u0008\u0001\u0010\u0000H\u008a@"
+        "\u0000\n\n\u0000\n\u0002\u0018\u0002\n\u0002\u0008\u0002\u0010\u0002\u001a\u00020\u0001\"\u0004\u0008\u0000\u0010\u0000\"\u0004\u0008\u0001\u0010\u0000H\u008a@\u00a2\u0006\u0004\u0008\u0002\u0010\u0003"
     }
     d2 = {
         "T",
-        "Lqh/r;",
-        "<anonymous>"
+        "LX9/j;",
+        "<anonymous>",
+        "()V"
     }
     k = 0x3
     mv = {
         0x1,
-        0x5,
-        0x1
+        0x8,
+        0x0
     }
-.end annotation
-
-.annotation runtime Lth/c;
-    c = "androidx.datastore.core.DataMigrationInitializer$Companion$runMigrations$2$1$1"
-    f = "DataMigrationInitializer.kt"
-    l = {
-        0x2d
-    }
-    m = "invokeSuspend"
 .end annotation
 
 
 # instance fields
-.field final synthetic $migration:Landroidx/datastore/core/c;
+.field final synthetic $migration:Landroidx/datastore/core/e;
     .annotation system Ldalvik/annotation/Signature;
         value = {
-            "Landroidx/datastore/core/c;"
+            "Landroidx/datastore/core/e;"
         }
     .end annotation
 .end field
@@ -63,12 +64,12 @@
 
 
 # direct methods
-.method public constructor <init>(Landroidx/datastore/core/c;Lkotlin/coroutines/Continuation;)V
+.method public constructor <init>(Landroidx/datastore/core/e;Lkotlin/coroutines/Continuation;)V
     .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
-            "Landroidx/datastore/core/c;",
+            "Landroidx/datastore/core/e;",
             "Lkotlin/coroutines/Continuation<",
             "-",
             "Landroidx/datastore/core/DataMigrationInitializer$Companion$runMigrations$2$1$1;",
@@ -93,7 +94,7 @@
             "Lkotlin/coroutines/Continuation<",
             "*>;)",
             "Lkotlin/coroutines/Continuation<",
-            "Lqh/r;",
+            "LX9/j;",
             ">;"
         }
     .end annotation
@@ -102,7 +103,7 @@
 
     const/4 v1, 0x0
 
-    invoke-direct {v0, v1, p1}, Landroidx/datastore/core/DataMigrationInitializer$Companion$runMigrations$2$1$1;-><init>(Landroidx/datastore/core/c;Lkotlin/coroutines/Continuation;)V
+    invoke-direct {v0, v1, p1}, Landroidx/datastore/core/DataMigrationInitializer$Companion$runMigrations$2$1$1;-><init>(Landroidx/datastore/core/e;Lkotlin/coroutines/Continuation;)V
 
     return-object v0
 .end method
@@ -127,7 +128,7 @@
             "(",
             "Lkotlin/coroutines/Continuation<",
             "-",
-            "Lqh/r;",
+            "LX9/j;",
             ">;)",
             "Ljava/lang/Object;"
         }
@@ -140,7 +141,7 @@
 
     check-cast p1, Landroidx/datastore/core/DataMigrationInitializer$Companion$runMigrations$2$1$1;
 
-    sget-object v0, Lqh/r;->a:Lqh/r;
+    sget-object v0, LX9/j;->a:LX9/j;
 
     invoke-virtual {p1, v0}, Landroidx/datastore/core/DataMigrationInitializer$Companion$runMigrations$2$1$1;->invokeSuspend(Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -177,7 +178,7 @@
     .line 11
     .line 12
     .line 13
-    sget-object p1, Lqh/r;->a:Lqh/r;
+    sget-object p1, LX9/j;->a:LX9/j;
 
     .line 14
     .line 15

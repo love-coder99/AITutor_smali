@@ -3,12 +3,12 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lzh/a;
+.implements Lka/a;
 
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Landroidx/work/Worker;->getForegroundInfoAsync()Lcom/google/common/util/concurrent/c;
+    value = Landroidx/work/Worker;->getForegroundInfoAsync()Lcom/google/common/util/concurrent/d;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -19,7 +19,7 @@
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "Lkotlin/jvm/internal/Lambda;",
-        "Lzh/a;"
+        "Lka/a;"
     }
 .end annotation
 
@@ -28,9 +28,9 @@
         "\u0000\u0008\n\u0002\u0018\u0002\n\u0002\u0008\u0003\u0010\u0003\u001a\u00020\u0000H\n\u00a2\u0006\u0004\u0008\u0001\u0010\u0002"
     }
     d2 = {
-        "Landroidx/work/k;",
+        "Landroidx/work/j;",
         "invoke",
-        "()Landroidx/work/k;",
+        "()Landroidx/work/j;",
         "<anonymous>"
     }
     k = 0x3
@@ -61,13 +61,13 @@
 
 
 # virtual methods
-.method public final invoke()Landroidx/work/k;
+.method public final invoke()Landroidx/work/j;
     .locals 1
 
+    .line 1
     iget-object v0, p0, Landroidx/work/Worker$getForegroundInfoAsync$1;->this$0:Landroidx/work/Worker;
 
-    .line 1
-    invoke-virtual {v0}, Landroidx/work/Worker;->getForegroundInfo()Landroidx/work/k;
+    invoke-virtual {v0}, Landroidx/work/Worker;->getForegroundInfo()Landroidx/work/j;
 
     move-result-object v0
 
@@ -78,7 +78,7 @@
     .locals 1
 
     .line 2
-    invoke-virtual {p0}, Landroidx/work/Worker$getForegroundInfoAsync$1;->invoke()Landroidx/work/k;
+    invoke-virtual {p0}, Landroidx/work/Worker$getForegroundInfoAsync$1;->invoke()Landroidx/work/j;
 
     move-result-object v0
 

@@ -3,14 +3,14 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lzh/a;
+.implements Lka/a;
 
 
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "Lkotlin/jvm/internal/Lambda;",
-        "Lzh/a;"
+        "Lka/a;"
     }
 .end annotation
 
@@ -35,14 +35,14 @@
 
 
 # instance fields
-.field final synthetic $scrollerPosition:Landroidx/compose/foundation/text/g0;
+.field final synthetic $scrollerPosition:Landroidx/compose/foundation/text/H;
 
 
 # direct methods
-.method public constructor <init>(Landroidx/compose/foundation/text/g0;)V
+.method public constructor <init>(Landroidx/compose/foundation/text/H;)V
     .locals 0
 
-    iput-object p1, p0, Landroidx/compose/foundation/text/TextFieldScrollKt$textFieldScrollable$2$wrappedScrollableState$1$1$canScrollBackward$2;->$scrollerPosition:Landroidx/compose/foundation/text/g0;
+    iput-object p1, p0, Landroidx/compose/foundation/text/TextFieldScrollKt$textFieldScrollable$2$wrappedScrollableState$1$1$canScrollBackward$2;->$scrollerPosition:Landroidx/compose/foundation/text/H;
 
     const/4 p1, 0x0
 
@@ -56,10 +56,14 @@
 .method public final invoke()Ljava/lang/Boolean;
     .locals 2
 
-    iget-object v0, p0, Landroidx/compose/foundation/text/TextFieldScrollKt$textFieldScrollable$2$wrappedScrollableState$1$1$canScrollBackward$2;->$scrollerPosition:Landroidx/compose/foundation/text/g0;
-
     .line 1
-    invoke-virtual {v0}, Landroidx/compose/foundation/text/g0;->a()F
+    iget-object v0, p0, Landroidx/compose/foundation/text/TextFieldScrollKt$textFieldScrollable$2$wrappedScrollableState$1$1$canScrollBackward$2;->$scrollerPosition:Landroidx/compose/foundation/text/H;
+
+    .line 2
+    iget-object v0, v0, Landroidx/compose/foundation/text/H;->a:Landroidx/compose/runtime/ParcelableSnapshotMutableFloatState;
+
+    .line 3
+    invoke-virtual {v0}, Landroidx/compose/runtime/ParcelableSnapshotMutableFloatState;->k()F
 
     move-result v0
 
@@ -76,6 +80,7 @@
     :cond_0
     const/4 v0, 0x0
 
+    .line 4
     :goto_0
     invoke-static {v0}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
 
@@ -87,7 +92,7 @@
 .method public bridge synthetic invoke()Ljava/lang/Object;
     .locals 1
 
-    .line 2
+    .line 5
     invoke-virtual {p0}, Landroidx/compose/foundation/text/TextFieldScrollKt$textFieldScrollable$2$wrappedScrollableState$1$1$canScrollBackward$2;->invoke()Ljava/lang/Boolean;
 
     move-result-object v0

@@ -3,14 +3,14 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lzh/a;
+.implements Lka/a;
 
 
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "Lkotlin/jvm/internal/Lambda;",
-        "Lzh/a;"
+        "Lka/a;"
     }
 .end annotation
 
@@ -35,14 +35,14 @@
 
 
 # instance fields
-.field final synthetic this$0:Landroidx/compose/ui/window/q;
+.field final synthetic this$0:Landroidx/compose/ui/window/o;
 
 
 # direct methods
-.method public constructor <init>(Landroidx/compose/ui/window/q;)V
+.method public constructor <init>(Landroidx/compose/ui/window/o;)V
     .locals 0
 
-    iput-object p1, p0, Landroidx/compose/ui/window/PopupLayout$canCalculatePosition$2;->this$0:Landroidx/compose/ui/window/q;
+    iput-object p1, p0, Landroidx/compose/ui/window/PopupLayout$canCalculatePosition$2;->this$0:Landroidx/compose/ui/window/o;
 
     const/4 p1, 0x0
 
@@ -56,10 +56,10 @@
 .method public final invoke()Ljava/lang/Boolean;
     .locals 3
 
-    iget-object v0, p0, Landroidx/compose/ui/window/PopupLayout$canCalculatePosition$2;->this$0:Landroidx/compose/ui/window/q;
-
     .line 2
-    invoke-static {v0}, Landroidx/compose/ui/window/q;->h(Landroidx/compose/ui/window/q;)Landroidx/compose/ui/layout/s;
+    iget-object v0, p0, Landroidx/compose/ui/window/PopupLayout$canCalculatePosition$2;->this$0:Landroidx/compose/ui/window/o;
+
+    invoke-static {v0}, Landroidx/compose/ui/window/o;->i(Landroidx/compose/ui/window/o;)Landroidx/compose/ui/layout/p;
 
     move-result-object v0
 
@@ -67,7 +67,7 @@
 
     if-eqz v0, :cond_0
 
-    invoke-interface {v0}, Landroidx/compose/ui/layout/s;->k()Z
+    invoke-interface {v0}, Landroidx/compose/ui/layout/p;->k()Z
 
     move-result v2
 
@@ -81,9 +81,9 @@
     :goto_0
     if-eqz v0, :cond_1
 
-    iget-object v0, p0, Landroidx/compose/ui/window/PopupLayout$canCalculatePosition$2;->this$0:Landroidx/compose/ui/window/q;
+    iget-object v0, p0, Landroidx/compose/ui/window/PopupLayout$canCalculatePosition$2;->this$0:Landroidx/compose/ui/window/o;
 
-    invoke-virtual {v0}, Landroidx/compose/ui/window/q;->getPopupContentSize-bOM6tXw()Lh2/j;
+    invoke-virtual {v0}, Landroidx/compose/ui/window/o;->getPopupContentSize-bOM6tXw()LM0/j;
 
     move-result-object v0
 

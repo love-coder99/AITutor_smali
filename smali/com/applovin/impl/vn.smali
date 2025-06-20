@@ -120,8 +120,11 @@
 .method public getSdk()Lcom/applovin/impl/sdk/j;
     .locals 1
 
+    .line 1
     iget-object v0, p0, Lcom/applovin/impl/vn;->a:Lcom/applovin/impl/sdk/j;
 
+    .line 2
+    .line 3
     return-object v0
 .end method
 

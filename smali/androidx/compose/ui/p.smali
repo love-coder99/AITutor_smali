@@ -3,9 +3,9 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lkotlin/coroutines/g;
+.implements Lba/e;
 
 
 # virtual methods
-.method public abstract k()F
+.method public abstract p()F
 .end method

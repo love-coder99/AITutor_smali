@@ -52,22 +52,23 @@
 .method public a(Lcom/applovin/impl/adview/k$a;)V
     .locals 1
 
+    .line 2
     iget-boolean v0, p0, Lcom/applovin/impl/adview/k;->b:Z
 
     if-eqz v0, :cond_1
 
     if-eqz p1, :cond_0
 
-    .line 2
+    .line 3
     invoke-interface {p1}, Lcom/applovin/impl/adview/k$a;->a()V
 
     :cond_0
     return-void
 
+    .line 4
     :cond_1
     iget-object v0, p0, Lcom/applovin/impl/adview/k;->a:Lcom/applovin/impl/da;
 
-    .line 3
     invoke-virtual {v0}, Lcom/applovin/impl/da;->a()Landroid/graphics/drawable/Drawable;
 
     move-result-object v0
@@ -76,23 +77,24 @@
 
     if-eqz p1, :cond_2
 
-    .line 4
+    .line 5
     invoke-interface {p1}, Lcom/applovin/impl/adview/k$a;->onFailure()V
 
     :cond_2
     return-void
 
-    .line 5
+    .line 6
     :cond_3
     invoke-virtual {p0, v0}, Landroid/view/View;->setBackground(Landroid/graphics/drawable/Drawable;)V
 
     const/4 v0, 0x1
 
+    .line 7
     iput-boolean v0, p0, Lcom/applovin/impl/adview/k;->b:Z
 
     if-eqz p1, :cond_4
 
-    .line 6
+    .line 8
     invoke-interface {p1}, Lcom/applovin/impl/adview/k$a;->a()V
 
     :cond_4

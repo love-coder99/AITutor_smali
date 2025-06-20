@@ -150,7 +150,7 @@
 .method public static synthetic a(Lcom/applovin/impl/privacy/cmp/a;Lcom/google/android/ump/FormError;Ljava/lang/String;)Lcom/applovin/impl/privacy/cmp/CmpErrorImpl;
     .locals 0
 
-    .line 18
+    .line 17
     invoke-direct {p0, p1, p2}, Lcom/applovin/impl/privacy/cmp/a;->a(Lcom/google/android/ump/FormError;Ljava/lang/String;)Lcom/applovin/impl/privacy/cmp/CmpErrorImpl;
 
     move-result-object p0
@@ -161,10 +161,10 @@
 .method private a(Lcom/google/android/ump/FormError;Ljava/lang/String;)Lcom/applovin/impl/privacy/cmp/CmpErrorImpl;
     .locals 3
 
-    .line 19
+    .line 20
     sget-object v0, Lcom/applovin/sdk/AppLovinCmpError$Code;->UNSPECIFIED:Lcom/applovin/sdk/AppLovinCmpError$Code;
 
-    .line 20
+    .line 21
     invoke-virtual {p1}, Lcom/google/android/ump/FormError;->getErrorCode()I
 
     move-result v1
@@ -187,17 +187,17 @@
 
     goto :goto_0
 
-    .line 21
+    .line 22
     :cond_0
     sget-object v0, Lcom/applovin/sdk/AppLovinCmpError$Code;->INTEGRATION_ERROR:Lcom/applovin/sdk/AppLovinCmpError$Code;
 
     goto :goto_0
 
-    .line 22
+    .line 23
     :cond_1
     sget-object v0, Lcom/applovin/sdk/AppLovinCmpError$Code;->FORM_UNAVAILABLE:Lcom/applovin/sdk/AppLovinCmpError$Code;
 
-    .line 23
+    .line 24
     :goto_0
     new-instance v1, Lcom/applovin/impl/privacy/cmp/CmpErrorImpl;
 
@@ -217,7 +217,7 @@
 .method public static synthetic a(Lcom/applovin/impl/privacy/cmp/a;Lcom/google/android/ump/ConsentForm;)Lcom/google/android/ump/ConsentForm;
     .locals 0
 
-    .line 17
+    .line 16
     iput-object p1, p0, Lcom/applovin/impl/privacy/cmp/a;->c:Lcom/google/android/ump/ConsentForm;
 
     return-object p1
@@ -226,7 +226,7 @@
 .method public static synthetic a(Lcom/applovin/impl/privacy/cmp/a;Ljava/lang/String;)V
     .locals 0
 
-    .line 16
+    .line 15
     invoke-direct {p0, p1}, Lcom/applovin/impl/privacy/cmp/a;->a(Ljava/lang/String;)V
 
     return-void
@@ -235,7 +235,7 @@
 .method private a(Ljava/lang/String;)V
     .locals 2
 
-    .line 24
+    .line 25
     invoke-static {}, Lcom/applovin/impl/sdk/n;->a()Z
 
     move-result v0
@@ -255,7 +255,7 @@
 .method public static synthetic b(Lcom/applovin/impl/privacy/cmp/a;Ljava/lang/String;)V
     .locals 0
 
-    .line 7
+    .line 8
     invoke-direct {p0, p1}, Lcom/applovin/impl/privacy/cmp/a;->b(Ljava/lang/String;)V
 
     return-void
@@ -264,7 +264,7 @@
 .method private b(Ljava/lang/String;)V
     .locals 2
 
-    .line 8
+    .line 9
     invoke-static {}, Lcom/applovin/impl/sdk/n;->a()Z
 
     move-result v0
@@ -286,13 +286,14 @@
 .method public a()V
     .locals 1
 
-    .line 1
+    .line 18
     iget-object v0, p0, Lcom/applovin/impl/privacy/cmp/a;->c:Lcom/google/android/ump/ConsentForm;
 
     if-eqz v0, :cond_0
 
     const/4 v0, 0x0
 
+    .line 19
     iput-object v0, p0, Lcom/applovin/impl/privacy/cmp/a;->c:Lcom/google/android/ump/ConsentForm;
 
     :cond_0
@@ -302,21 +303,21 @@
 .method public a(Landroid/app/Activity;Lcom/applovin/impl/m3;Lcom/applovin/impl/privacy/cmp/a$d;)V
     .locals 3
 
-    .line 2
+    .line 1
     new-instance v0, Lcom/google/android/ump/ConsentRequestParameters$Builder;
 
     invoke-direct {v0}, Lcom/google/android/ump/ConsentRequestParameters$Builder;-><init>()V
 
+    .line 2
     iget-object v1, p0, Lcom/applovin/impl/privacy/cmp/a;->a:Lcom/applovin/impl/sdk/j;
 
-    .line 3
     invoke-static {v1}, Lcom/applovin/impl/yp;->c(Lcom/applovin/impl/sdk/j;)Z
 
     move-result v1
 
     if-eqz v1, :cond_0
 
-    .line 4
+    .line 3
     invoke-virtual {p2}, Lcom/applovin/impl/m3;->a()Lcom/applovin/sdk/AppLovinSdkConfiguration$ConsentFlowUserGeography;
 
     move-result-object p2
@@ -325,9 +326,9 @@
 
     if-ne p2, v1, :cond_0
 
+    .line 4
     iget-object p2, p0, Lcom/applovin/impl/privacy/cmp/a;->a:Lcom/applovin/impl/sdk/j;
 
-    .line 5
     invoke-virtual {p2}, Lcom/applovin/impl/sdk/j;->f0()Lcom/applovin/sdk/AppLovinSdkSettings;
 
     move-result-object p2
@@ -336,9 +337,9 @@
 
     move-result-object p2
 
+    .line 5
     const-string v1, "google_test_device_hashed_id"
 
-    .line 6
     invoke-interface {p2, v1}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object p2
@@ -349,43 +350,43 @@
 
     move-result-object p2
 
-    .line 7
+    .line 6
     new-instance v1, Lcom/google/android/ump/ConsentDebugSettings$Builder;
 
     invoke-direct {v1, p1}, Lcom/google/android/ump/ConsentDebugSettings$Builder;-><init>(Landroid/content/Context;)V
 
     const/4 v2, 0x1
 
-    .line 8
+    .line 7
     invoke-virtual {v1, v2}, Lcom/google/android/ump/ConsentDebugSettings$Builder;->setForceTesting(Z)Lcom/google/android/ump/ConsentDebugSettings$Builder;
 
     move-result-object v1
 
-    .line 9
+    .line 8
     invoke-virtual {v1, v2}, Lcom/google/android/ump/ConsentDebugSettings$Builder;->setDebugGeography(I)Lcom/google/android/ump/ConsentDebugSettings$Builder;
 
     move-result-object v1
 
-    .line 10
+    .line 9
     invoke-virtual {v1, p2}, Lcom/google/android/ump/ConsentDebugSettings$Builder;->addTestDeviceHashedId(Ljava/lang/String;)Lcom/google/android/ump/ConsentDebugSettings$Builder;
 
     move-result-object p2
 
-    .line 11
+    .line 10
     invoke-virtual {p2}, Lcom/google/android/ump/ConsentDebugSettings$Builder;->build()Lcom/google/android/ump/ConsentDebugSettings;
 
     move-result-object p2
 
-    .line 12
+    .line 11
     invoke-virtual {v0, p2}, Lcom/google/android/ump/ConsentRequestParameters$Builder;->setConsentDebugSettings(Lcom/google/android/ump/ConsentDebugSettings;)Lcom/google/android/ump/ConsentRequestParameters$Builder;
 
-    .line 13
+    .line 12
     :cond_0
     invoke-static {p1}, Lcom/google/android/ump/UserMessagingPlatform;->getConsentInformation(Landroid/content/Context;)Lcom/google/android/ump/ConsentInformation;
 
     move-result-object p2
 
-    .line 14
+    .line 13
     invoke-virtual {v0}, Lcom/google/android/ump/ConsentRequestParameters$Builder;->build()Lcom/google/android/ump/ConsentRequestParameters;
 
     move-result-object v0
@@ -398,7 +399,7 @@
 
     invoke-direct {v2, p0, p3}, Lcom/applovin/impl/privacy/cmp/a$b;-><init>(Lcom/applovin/impl/privacy/cmp/a;Lcom/applovin/impl/privacy/cmp/a$d;)V
 
-    .line 15
+    .line 14
     invoke-interface {p2, p1, v0, v1, v2}, Lcom/google/android/ump/ConsentInformation;->requestConsentInfoUpdate(Landroid/app/Activity;Lcom/google/android/ump/ConsentRequestParameters;Lcom/google/android/ump/ConsentInformation$OnConsentInfoUpdateSuccessListener;Lcom/google/android/ump/ConsentInformation$OnConsentInfoUpdateFailureListener;)V
 
     return-void
@@ -416,16 +417,17 @@
 .method public b(Landroid/app/Activity;Lcom/applovin/impl/m3;Lcom/applovin/impl/privacy/cmp/a$d;)V
     .locals 1
 
+    .line 2
     iget-object p2, p0, Lcom/applovin/impl/privacy/cmp/a;->c:Lcom/google/android/ump/ConsentForm;
 
     if-nez p2, :cond_0
 
+    .line 3
     const-string p1, "Failed to show - not ready yet"
 
-    .line 2
     invoke-direct {p0, p1}, Lcom/applovin/impl/privacy/cmp/a;->b(Ljava/lang/String;)V
 
-    .line 3
+    .line 4
     new-instance p1, Lcom/applovin/impl/privacy/cmp/CmpErrorImpl;
 
     sget-object p2, Lcom/applovin/sdk/AppLovinCmpError$Code;->FORM_UNAVAILABLE:Lcom/applovin/sdk/AppLovinCmpError$Code;
@@ -434,20 +436,20 @@
 
     invoke-direct {p1, p2, v0}, Lcom/applovin/impl/privacy/cmp/CmpErrorImpl;-><init>(Lcom/applovin/sdk/AppLovinCmpError$Code;Ljava/lang/String;)V
 
-    .line 4
+    .line 5
     invoke-interface {p3, p1}, Lcom/applovin/impl/privacy/cmp/a$d;->onFlowShowFailed(Lcom/applovin/impl/privacy/cmp/CmpErrorImpl;)V
 
     return-void
 
+    .line 6
     :cond_0
     const-string p2, "Showing consent form..."
 
-    .line 5
     invoke-direct {p0, p2}, Lcom/applovin/impl/privacy/cmp/a;->a(Ljava/lang/String;)V
 
+    .line 7
     iget-object p2, p0, Lcom/applovin/impl/privacy/cmp/a;->c:Lcom/google/android/ump/ConsentForm;
 
-    .line 6
     new-instance v0, Lcom/applovin/impl/privacy/cmp/a$c;
 
     invoke-direct {v0, p0, p3}, Lcom/applovin/impl/privacy/cmp/a$c;-><init>(Lcom/applovin/impl/privacy/cmp/a;Lcom/applovin/impl/privacy/cmp/a$d;)V

@@ -127,9 +127,9 @@
 .method public iterator()Lcom/applovin/impl/pp;
     .locals 1
 
+    .line 1
     iget-object v0, p0, Lcom/applovin/impl/gb$c;->b:Lcom/applovin/impl/gb;
 
-    .line 1
     invoke-virtual {v0}, Lcom/applovin/impl/gb;->i()Lcom/applovin/impl/pp;
 
     move-result-object v0

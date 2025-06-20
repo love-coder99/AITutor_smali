@@ -53,9 +53,9 @@
 .method public a()Lcom/applovin/impl/sdk/ad/AppLovinAdImpl;
     .locals 2
 
+    .line 7
     iget-object v0, p0, Lcom/applovin/impl/sdk/p;->b:Ljava/lang/Object;
 
-    .line 7
     monitor-enter v0
 
     .line 8
@@ -66,9 +66,9 @@
 
     if-nez v1, :cond_0
 
+    .line 9
     iget-object v1, p0, Lcom/applovin/impl/sdk/p;->a:Ljava/util/Queue;
 
-    .line 9
     invoke-interface {v1}, Ljava/util/Queue;->poll()Ljava/lang/Object;
 
     move-result-object v1
@@ -103,9 +103,9 @@
 .method public a(Lcom/applovin/impl/sdk/ad/AppLovinAdImpl;)V
     .locals 3
 
+    .line 1
     iget-object v0, p0, Lcom/applovin/impl/sdk/p;->b:Ljava/lang/Object;
 
-    .line 1
     monitor-enter v0
 
     .line 2
@@ -118,9 +118,9 @@
 
     if-gt v1, v2, :cond_0
 
+    .line 3
     iget-object v1, p0, Lcom/applovin/impl/sdk/p;->a:Ljava/util/Queue;
 
-    .line 3
     invoke-interface {v1, p1}, Ljava/util/Queue;->offer(Ljava/lang/Object;)Z
 
     goto :goto_0
@@ -130,12 +130,12 @@
 
     goto :goto_1
 
+    .line 4
     :cond_0
     const-string p1, "AppLovinSdk"
 
     const-string v1, "Maximum queue capacity reached - discarding ad..."
 
-    .line 4
     invoke-static {p1, v1}, Lcom/applovin/impl/sdk/n;->h(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 5
@@ -156,15 +156,15 @@
 .method public b()I
     .locals 2
 
+    .line 1
     iget-object v0, p0, Lcom/applovin/impl/sdk/p;->b:Ljava/lang/Object;
 
-    .line 1
     monitor-enter v0
 
+    .line 2
     :try_start_0
     iget-object v1, p0, Lcom/applovin/impl/sdk/p;->a:Ljava/util/Queue;
 
-    .line 2
     invoke-interface {v1}, Ljava/util/Collection;->size()I
 
     move-result v1
@@ -187,15 +187,15 @@
 .method public b(Lcom/applovin/impl/sdk/ad/AppLovinAdImpl;)V
     .locals 2
 
+    .line 4
     iget-object v0, p0, Lcom/applovin/impl/sdk/p;->b:Ljava/lang/Object;
 
-    .line 4
     monitor-enter v0
 
+    .line 5
     :try_start_0
     iget-object v1, p0, Lcom/applovin/impl/sdk/p;->a:Ljava/util/Queue;
 
-    .line 5
     invoke-interface {v1, p1}, Ljava/util/Collection;->remove(Ljava/lang/Object;)Z
 
     .line 6

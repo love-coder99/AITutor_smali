@@ -124,9 +124,9 @@
 .method public a(Ljava/lang/String;)Ljava/lang/String;
     .locals 1
 
+    .line 21
     iget-object v0, p0, Lcom/applovin/impl/sdk/o;->e:Ljava/util/Map;
 
-    .line 21
     invoke-interface {v0, p1}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object p1
@@ -139,13 +139,13 @@
 .method public a(Lcom/applovin/impl/fe;)V
     .locals 7
 
+    .line 1
     const-string v0, "Previous winner not cleared for ad: "
 
     const-string v1, "Clearing previous winning ad: "
 
     iget-object v2, p0, Lcom/applovin/impl/sdk/o;->c:Ljava/lang/Object;
 
-    .line 1
     monitor-enter v2
 
     .line 2
@@ -154,9 +154,9 @@
 
     move-result-object v3
 
+    .line 3
     iget-object v4, p0, Lcom/applovin/impl/sdk/o;->b:Ljava/util/Map;
 
-    .line 3
     invoke-interface {v4, v3}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object v4
@@ -233,10 +233,10 @@
 
     invoke-virtual {p1, v0, v1}, Lcom/applovin/impl/sdk/n;->a(Ljava/lang/String;Ljava/lang/String;)V
 
+    .line 8
     :cond_2
     iget-object p1, p0, Lcom/applovin/impl/sdk/o;->b:Ljava/util/Map;
 
-    .line 8
     invoke-interface {p1, v3}, Ljava/util/Map;->remove(Ljava/lang/Object;)Ljava/lang/Object;
 
     goto :goto_1
@@ -290,11 +290,11 @@
 .method public a(Lcom/applovin/impl/fe;Lcom/applovin/impl/fe;)V
     .locals 5
 
+    .line 12
     const-string v0, "Tracking winning ad: "
 
     iget-object v1, p0, Lcom/applovin/impl/sdk/o;->c:Ljava/lang/Object;
 
-    .line 12
     monitor-enter v1
 
     .line 13
@@ -363,10 +363,10 @@
 
     invoke-static {v0, p2}, Lcom/applovin/impl/sdk/o$a;->b(Lcom/applovin/impl/sdk/o$a;Ljava/lang/String;)Ljava/lang/String;
 
+    .line 17
     :cond_1
     iget-object p2, p0, Lcom/applovin/impl/sdk/o;->b:Ljava/util/Map;
 
-    .line 17
     invoke-virtual {p1}, Lcom/applovin/impl/oe;->getAdUnitId()Ljava/lang/String;
 
     move-result-object v2
@@ -378,9 +378,9 @@
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
+    .line 19
     iget-object p2, p0, Lcom/applovin/impl/sdk/o;->e:Ljava/util/Map;
 
-    .line 19
     invoke-virtual {p1}, Lcom/applovin/impl/oe;->getAdUnitId()Ljava/lang/String;
 
     move-result-object v0
@@ -406,9 +406,9 @@
 .method public b(Ljava/lang/String;)Ljava/lang/String;
     .locals 1
 
+    .line 2
     iget-object v0, p0, Lcom/applovin/impl/sdk/o;->d:Ljava/util/Map;
 
-    .line 2
     invoke-interface {v0, p1}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object p1
@@ -421,9 +421,9 @@
 .method public b(Lcom/applovin/impl/fe;)V
     .locals 2
 
+    .line 1
     iget-object v0, p0, Lcom/applovin/impl/sdk/o;->d:Ljava/util/Map;
 
-    .line 1
     invoke-virtual {p1}, Lcom/applovin/impl/oe;->getAdUnitId()Ljava/lang/String;
 
     move-result-object v1
@@ -440,15 +440,15 @@
 .method public c(Ljava/lang/String;)Lcom/applovin/impl/sdk/o$a;
     .locals 2
 
+    .line 2
     iget-object v0, p0, Lcom/applovin/impl/sdk/o;->c:Ljava/lang/Object;
 
-    .line 2
     monitor-enter v0
 
+    .line 3
     :try_start_0
     iget-object v1, p0, Lcom/applovin/impl/sdk/o;->b:Ljava/util/Map;
 
-    .line 3
     invoke-interface {v1, p1}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object p1

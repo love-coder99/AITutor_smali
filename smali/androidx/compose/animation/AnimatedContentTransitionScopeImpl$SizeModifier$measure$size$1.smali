@@ -3,14 +3,14 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lzh/c;
+.implements Lka/c;
 
 
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "Lkotlin/jvm/internal/Lambda;",
-        "Lzh/c;"
+        "Lka/c;"
     }
 .end annotation
 
@@ -20,11 +20,11 @@
     }
     d2 = {
         "S",
-        "Landroidx/compose/animation/core/a1;",
-        "Landroidx/compose/animation/core/z;",
-        "Lh2/j;",
+        "Landroidx/compose/animation/core/V;",
+        "Landroidx/compose/animation/core/w;",
+        "LM0/j;",
         "invoke",
-        "(Landroidx/compose/animation/core/a1;)Landroidx/compose/animation/core/z;",
+        "(Landroidx/compose/animation/core/V;)Landroidx/compose/animation/core/w;",
         "<anonymous>"
     }
     k = 0x3
@@ -37,15 +37,7 @@
 
 
 # instance fields
-.field final synthetic this$0:Landroidx/compose/animation/k;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "Landroidx/compose/animation/k;"
-        }
-    .end annotation
-.end field
-
-.field final synthetic this$1:Landroidx/compose/animation/j;
+.field final synthetic this$0:Landroidx/compose/animation/j;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Landroidx/compose/animation/j;"
@@ -53,22 +45,30 @@
     .end annotation
 .end field
 
+.field final synthetic this$1:Landroidx/compose/animation/i;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Landroidx/compose/animation/i;"
+        }
+    .end annotation
+.end field
+
 
 # direct methods
-.method public constructor <init>(Landroidx/compose/animation/k;Landroidx/compose/animation/j;)V
+.method public constructor <init>(Landroidx/compose/animation/j;Landroidx/compose/animation/i;)V
     .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
-            "Landroidx/compose/animation/k;",
             "Landroidx/compose/animation/j;",
+            "Landroidx/compose/animation/i;",
             ")V"
         }
     .end annotation
 
-    iput-object p1, p0, Landroidx/compose/animation/AnimatedContentTransitionScopeImpl$SizeModifier$measure$size$1;->this$0:Landroidx/compose/animation/k;
+    iput-object p1, p0, Landroidx/compose/animation/AnimatedContentTransitionScopeImpl$SizeModifier$measure$size$1;->this$0:Landroidx/compose/animation/j;
 
-    iput-object p2, p0, Landroidx/compose/animation/AnimatedContentTransitionScopeImpl$SizeModifier$measure$size$1;->this$1:Landroidx/compose/animation/j;
+    iput-object p2, p0, Landroidx/compose/animation/AnimatedContentTransitionScopeImpl$SizeModifier$measure$size$1;->this$1:Landroidx/compose/animation/i;
 
     const/4 p1, 0x1
 
@@ -79,113 +79,114 @@
 
 
 # virtual methods
-.method public final invoke(Landroidx/compose/animation/core/a1;)Landroidx/compose/animation/core/z;
+.method public final invoke(Landroidx/compose/animation/core/V;)Landroidx/compose/animation/core/w;
     .locals 5
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
-            "Landroidx/compose/animation/core/a1;",
+            "Landroidx/compose/animation/core/V;",
             ")",
-            "Landroidx/compose/animation/core/z;"
+            "Landroidx/compose/animation/core/w;"
         }
     .end annotation
 
-    iget-object v0, p0, Landroidx/compose/animation/AnimatedContentTransitionScopeImpl$SizeModifier$measure$size$1;->this$0:Landroidx/compose/animation/k;
-
-    .line 1
-    iget-object v0, v0, Landroidx/compose/animation/k;->d:Landroidx/collection/b0;
-
     .line 2
-    invoke-interface {p1}, Landroidx/compose/animation/core/a1;->a()Ljava/lang/Object;
+    iget-object v0, p0, Landroidx/compose/animation/AnimatedContentTransitionScopeImpl$SizeModifier$measure$size$1;->this$0:Landroidx/compose/animation/j;
+
+    .line 3
+    iget-object v0, v0, Landroidx/compose/animation/j;->d:Landroidx/collection/A;
+
+    .line 4
+    invoke-interface {p1}, Landroidx/compose/animation/core/V;->a()Ljava/lang/Object;
 
     move-result-object v1
 
-    invoke-virtual {v0, v1}, Landroidx/collection/b0;->f(Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v0, v1}, Landroidx/collection/A;->e(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object v0
 
-    check-cast v0, Landroidx/compose/runtime/d3;
+    check-cast v0, Landroidx/compose/runtime/H0;
 
     const-wide/16 v1, 0x0
 
     if-eqz v0, :cond_0
 
-    invoke-interface {v0}, Landroidx/compose/runtime/d3;->getValue()Ljava/lang/Object;
+    invoke-interface {v0}, Landroidx/compose/runtime/H0;->getValue()Ljava/lang/Object;
 
     move-result-object v0
 
-    check-cast v0, Lh2/j;
+    check-cast v0, LM0/j;
 
-    .line 3
-    iget-wide v3, v0, Lh2/j;->a:J
+    .line 5
+    iget-wide v3, v0, LM0/j;->a:J
 
     goto :goto_0
 
     :cond_0
     move-wide v3, v1
 
+    .line 6
     :goto_0
-    iget-object v0, p0, Landroidx/compose/animation/AnimatedContentTransitionScopeImpl$SizeModifier$measure$size$1;->this$0:Landroidx/compose/animation/k;
+    iget-object v0, p0, Landroidx/compose/animation/AnimatedContentTransitionScopeImpl$SizeModifier$measure$size$1;->this$0:Landroidx/compose/animation/j;
 
-    .line 4
-    iget-object v0, v0, Landroidx/compose/animation/k;->d:Landroidx/collection/b0;
+    .line 7
+    iget-object v0, v0, Landroidx/compose/animation/j;->d:Landroidx/collection/A;
 
-    .line 5
-    invoke-interface {p1}, Landroidx/compose/animation/core/a1;->c()Ljava/lang/Object;
-
-    move-result-object p1
-
-    invoke-virtual {v0, p1}, Landroidx/collection/b0;->f(Ljava/lang/Object;)Ljava/lang/Object;
+    .line 8
+    invoke-interface {p1}, Landroidx/compose/animation/core/V;->c()Ljava/lang/Object;
 
     move-result-object p1
 
-    check-cast p1, Landroidx/compose/runtime/d3;
+    invoke-virtual {v0, p1}, Landroidx/collection/A;->e(Ljava/lang/Object;)Ljava/lang/Object;
+
+    move-result-object p1
+
+    check-cast p1, Landroidx/compose/runtime/H0;
 
     if-eqz p1, :cond_1
 
-    invoke-interface {p1}, Landroidx/compose/runtime/d3;->getValue()Ljava/lang/Object;
+    invoke-interface {p1}, Landroidx/compose/runtime/H0;->getValue()Ljava/lang/Object;
 
     move-result-object p1
 
-    check-cast p1, Lh2/j;
+    check-cast p1, LM0/j;
 
-    .line 6
-    iget-wide v1, p1, Lh2/j;->a:J
+    .line 9
+    iget-wide v1, p1, LM0/j;->a:J
 
+    .line 10
     :cond_1
-    iget-object p1, p0, Landroidx/compose/animation/AnimatedContentTransitionScopeImpl$SizeModifier$measure$size$1;->this$1:Landroidx/compose/animation/j;
+    iget-object p1, p0, Landroidx/compose/animation/AnimatedContentTransitionScopeImpl$SizeModifier$measure$size$1;->this$1:Landroidx/compose/animation/i;
 
-    .line 7
-    iget-object p1, p1, Landroidx/compose/animation/j;->d:Landroidx/compose/runtime/d3;
+    .line 11
+    iget-object p1, p1, Landroidx/compose/animation/i;->b:Landroidx/compose/runtime/Z;
 
-    .line 8
-    invoke-interface {p1}, Landroidx/compose/runtime/d3;->getValue()Ljava/lang/Object;
+    .line 12
+    invoke-interface {p1}, Landroidx/compose/runtime/H0;->getValue()Ljava/lang/Object;
 
     move-result-object p1
 
-    check-cast p1, Landroidx/compose/animation/n0;
+    check-cast p1, Landroidx/compose/animation/J;
 
     if-eqz p1, :cond_2
 
-    check-cast p1, Landroidx/compose/animation/o0;
+    .line 13
+    new-instance v0, LM0/j;
 
-    .line 9
-    new-instance v0, Lh2/j;
+    invoke-direct {v0, v3, v4}, LM0/j;-><init>(J)V
 
-    invoke-direct {v0, v3, v4}, Lh2/j;-><init>(J)V
+    new-instance v3, LM0/j;
 
-    new-instance v3, Lh2/j;
+    invoke-direct {v3, v1, v2}, LM0/j;-><init>(J)V
 
-    invoke-direct {v3, v1, v2}, Lh2/j;-><init>(J)V
+    .line 14
+    iget-object p1, p1, Landroidx/compose/animation/J;->b:Lka/e;
 
-    .line 10
-    iget-object p1, p1, Landroidx/compose/animation/o0;->b:Lzh/e;
-
-    invoke-interface {p1, v0, v3}, Lzh/e;->invoke(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-interface {p1, v0, v3}, Lka/e;->invoke(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object p1
 
-    check-cast p1, Landroidx/compose/animation/core/z;
+    check-cast p1, Landroidx/compose/animation/core/w;
 
     if-nez p1, :cond_3
 
@@ -196,8 +197,8 @@
 
     const/4 v1, 0x7
 
-    .line 11
-    invoke-static {p1, v0, v1}, Landroidx/compose/animation/core/b;->r(FLjava/lang/Object;I)Landroidx/compose/animation/core/u0;
+    .line 15
+    invoke-static {p1, v0, v1}, Landroidx/compose/animation/core/b;->r(FLjava/lang/Object;I)Landroidx/compose/animation/core/O;
 
     move-result-object p1
 
@@ -208,10 +209,10 @@
 .method public bridge synthetic invoke(Ljava/lang/Object;)Ljava/lang/Object;
     .locals 0
 
-    .line 12
-    check-cast p1, Landroidx/compose/animation/core/a1;
+    .line 1
+    check-cast p1, Landroidx/compose/animation/core/V;
 
-    invoke-virtual {p0, p1}, Landroidx/compose/animation/AnimatedContentTransitionScopeImpl$SizeModifier$measure$size$1;->invoke(Landroidx/compose/animation/core/a1;)Landroidx/compose/animation/core/z;
+    invoke-virtual {p0, p1}, Landroidx/compose/animation/AnimatedContentTransitionScopeImpl$SizeModifier$measure$size$1;->invoke(Landroidx/compose/animation/core/V;)Landroidx/compose/animation/core/w;
 
     move-result-object p1
 

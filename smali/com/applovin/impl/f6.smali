@@ -28,6 +28,7 @@
     .line 2
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
+    .line 3
     iput p1, p0, Lcom/applovin/impl/f6;->a:I
 
     return-void
@@ -38,7 +39,7 @@
 .method public a(I)I
     .locals 2
 
-    .line 1
+    .line 2
     iget v0, p0, Lcom/applovin/impl/f6;->a:I
 
     const/4 v1, -0x1
@@ -123,8 +124,8 @@
 .method public final synthetic a(J)V
     .locals 0
 
-    .line 2
-    invoke-static {p0, p1, p2}, Lcom/applovin/impl/ou;->a(Lcom/applovin/impl/lc;J)V
+    .line 1
+    invoke-static {p0, p1, p2}, Lcom/applovin/impl/G1;->a(Lcom/applovin/impl/lc;J)V
 
     return-void
 .end method

@@ -5,6 +5,8 @@
 
 # virtual methods
 .method public abstract getAdReviewCreativeId()Ljava/lang/String;
+    .annotation build Landroidx/annotation/Nullable;
+    .end annotation
 .end method
 
 .method public abstract getAdUnitId()Ljava/lang/String;
@@ -17,18 +19,26 @@
 .end method
 
 .method public abstract getCreativeId()Ljava/lang/String;
+    .annotation build Landroidx/annotation/Nullable;
+    .end annotation
 .end method
 
 .method public abstract getDspId()Ljava/lang/String;
+    .annotation build Landroidx/annotation/Nullable;
+    .end annotation
 .end method
 
 .method public abstract getDspName()Ljava/lang/String;
+    .annotation build Landroidx/annotation/Nullable;
+    .end annotation
 .end method
 
 .method public abstract getFormat()Lcom/applovin/mediation/MaxAdFormat;
 .end method
 
 .method public abstract getNativeAd()Lcom/applovin/mediation/nativeAds/MaxNativeAd;
+    .annotation build Landroidx/annotation/Nullable;
+    .end annotation
 .end method
 
 .method public abstract getNetworkName()Ljava/lang/String;

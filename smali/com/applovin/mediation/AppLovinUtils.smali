@@ -25,13 +25,27 @@
 .method public constructor <init>()V
     .locals 0
 
+    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
+    .line 2
+    .line 3
+    .line 4
     return-void
 .end method
 
-.method public static appLovinAdSizeFromAdMobAdSize(Landroid/content/Context;Lj9/g;)Lcom/applovin/sdk/AppLovinAdSize;
+.method public static appLovinAdSizeFromAdMobAdSize(Landroid/content/Context;Lb5/f;)Lcom/applovin/sdk/AppLovinAdSize;
     .locals 4
+    .param p0    # Landroid/content/Context;
+        .annotation build Landroidx/annotation/NonNull;
+        .end annotation
+    .end param
+    .param p1    # Lb5/f;
+        .annotation build Landroidx/annotation/NonNull;
+        .end annotation
+    .end param
+    .annotation build Landroidx/annotation/Nullable;
+    .end annotation
 
     .line 1
     new-instance v0, Ljava/util/ArrayList;
@@ -43,7 +57,7 @@
     .line 4
     .line 5
     .line 6
-    sget-object v1, Lj9/g;->i:Lj9/g;
+    sget-object v1, Lb5/f;->i:Lb5/f;
 
     .line 7
     .line 8
@@ -52,7 +66,7 @@
     .line 9
     .line 10
     .line 11
-    sget-object v2, Lj9/g;->l:Lj9/g;
+    sget-object v2, Lb5/f;->l:Lb5/f;
 
     .line 12
     .line 13
@@ -61,7 +75,7 @@
     .line 14
     .line 15
     .line 16
-    sget-object v3, Lj9/g;->m:Lj9/g;
+    sget-object v3, Lb5/f;->m:Lb5/f;
 
     .line 17
     .line 18
@@ -70,7 +84,7 @@
     .line 19
     .line 20
     .line 21
-    invoke-static {p0, p1, v0}, Lyi/a;->m(Landroid/content/Context;Lj9/g;Ljava/util/ArrayList;)Lj9/g;
+    invoke-static {p0, p1, v0}, Lcom/facebook/appevents/g;->c(Landroid/content/Context;Lb5/f;Ljava/util/ArrayList;)Lb5/f;
 
     .line 22
     .line 23
@@ -78,7 +92,7 @@
     move-result-object p0
 
     .line 25
-    invoke-virtual {v1, p0}, Lj9/g;->equals(Ljava/lang/Object;)Z
+    invoke-virtual {v1, p0}, Lb5/f;->equals(Ljava/lang/Object;)Z
 
     .line 26
     .line 27
@@ -98,7 +112,7 @@
 
     .line 34
     :cond_0
-    invoke-virtual {v3, p0}, Lj9/g;->equals(Ljava/lang/Object;)Z
+    invoke-virtual {v3, p0}, Lb5/f;->equals(Ljava/lang/Object;)Z
 
     .line 35
     .line 36
@@ -118,7 +132,7 @@
 
     .line 43
     :cond_1
-    invoke-virtual {v2, p0}, Lj9/g;->equals(Ljava/lang/Object;)Z
+    invoke-virtual {v2, p0}, Lb5/f;->equals(Ljava/lang/Object;)Z
 
     .line 44
     .line 45
@@ -144,7 +158,7 @@
     return-object p0
 .end method
 
-.method public static getAdError(I)Lj9/a;
+.method public static getAdError(I)Lb5/a;
     .locals 4
 
     .line 1
@@ -152,7 +166,7 @@
 
     .line 2
     .line 3
-    invoke-static {v0, p0}, Lcom/google/android/gms/internal/play_billing/v3;->s(Ljava/lang/String;I)Ljava/lang/String;
+    invoke-static {p0, v0}, Landroidx/appcompat/view/menu/F;->D(ILjava/lang/String;)Ljava/lang/String;
 
     .line 4
     .line 5
@@ -328,7 +342,7 @@
     .line 72
     .line 73
     :goto_0
-    new-instance v1, Lj9/a;
+    new-instance v1, Lb5/a;
 
     .line 74
     .line 75
@@ -336,7 +350,7 @@
 
     .line 76
     .line 77
-    invoke-static {v2, v0}, Landroid/support/v4/media/session/a;->D(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v2, v0}, LB/u;->t(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     .line 78
     .line 79
@@ -351,7 +365,7 @@
 
     .line 83
     .line 84
-    invoke-direct {v1, p0, v0, v3, v2}, Lj9/a;-><init>(ILjava/lang/String;Ljava/lang/String;Lj9/a;)V
+    invoke-direct {v1, p0, v0, v3, v2}, Lb5/a;-><init>(ILjava/lang/String;Ljava/lang/String;Lb5/a;)V
 
     .line 85
     .line 86
@@ -385,9 +399,6 @@
     .line 95
     .line 96
     .line 97
-    .line 98
-    .line 99
-    .line 100
     :pswitch_data_0
     .packed-switch -0xca
         :pswitch_2
@@ -396,11 +407,11 @@
     .end packed-switch
 .end method
 
-.method public static getChildUserError()Lj9/a;
+.method public static getChildUserError()Lb5/a;
     .locals 5
 
     .line 1
-    new-instance v0, Lj9/a;
+    new-instance v0, Lb5/a;
 
     .line 2
     .line 3
@@ -419,7 +430,7 @@
 
     .line 9
     .line 10
-    invoke-direct {v0, v2, v3, v4, v1}, Lj9/a;-><init>(ILjava/lang/String;Ljava/lang/String;Lj9/a;)V
+    invoke-direct {v0, v2, v3, v4, v1}, Lb5/a;-><init>(ILjava/lang/String;Ljava/lang/String;Lb5/a;)V
 
     .line 11
     .line 12
@@ -428,10 +439,10 @@
 .end method
 
 .method public static isChildUser()Z
-    .locals 3
+    .locals 1
 
     .line 1
-    invoke-static {}, Lq9/k2;->e()Lq9/k2;
+    invoke-static {}, Li5/B0;->e()Li5/B0;
 
     .line 2
     .line 3
@@ -439,39 +450,19 @@
     move-result-object v0
 
     .line 5
-    iget-object v0, v0, Lq9/k2;->g:Lj9/s;
+    iget-object v0, v0, Li5/B0;->g:Lb5/q;
 
     .line 6
     .line 7
-    iget v1, v0, Lj9/s;->a:I
+    invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
     .line 8
     .line 9
-    const/4 v2, 0x1
-
     .line 10
-    if-eq v1, v2, :cond_1
+    const/4 v0, 0x0
 
     .line 11
-    .line 12
-    iget v0, v0, Lj9/s;->b:I
-
-    .line 13
-    .line 14
-    if-ne v0, v2, :cond_0
-
-    .line 15
-    .line 16
-    goto :goto_0
-
-    .line 17
-    :cond_0
-    const/4 v2, 0x0
-
-    .line 18
-    :cond_1
-    :goto_0
-    return v2
+    return v0
 .end method
 
 .method public static isMultiAdsEnabled(Landroid/os/Bundle;)Z

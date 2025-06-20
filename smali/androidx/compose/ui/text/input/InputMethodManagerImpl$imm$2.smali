@@ -3,14 +3,14 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lzh/a;
+.implements Lka/a;
 
 
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "Lkotlin/jvm/internal/Lambda;",
-        "Lzh/a;"
+        "Lka/a;"
     }
 .end annotation
 
@@ -34,14 +34,14 @@
 
 
 # instance fields
-.field final synthetic this$0:Landroidx/compose/ui/text/input/q;
+.field final synthetic this$0:Landroidx/compose/ui/text/input/n;
 
 
 # direct methods
-.method public constructor <init>(Landroidx/compose/ui/text/input/q;)V
+.method public constructor <init>(Landroidx/compose/ui/text/input/n;)V
     .locals 0
 
-    iput-object p1, p0, Landroidx/compose/ui/text/input/InputMethodManagerImpl$imm$2;->this$0:Landroidx/compose/ui/text/input/q;
+    iput-object p1, p0, Landroidx/compose/ui/text/input/InputMethodManagerImpl$imm$2;->this$0:Landroidx/compose/ui/text/input/n;
 
     const/4 p1, 0x0
 
@@ -55,12 +55,13 @@
 .method public final invoke()Landroid/view/inputmethod/InputMethodManager;
     .locals 2
 
-    iget-object v0, p0, Landroidx/compose/ui/text/input/InputMethodManagerImpl$imm$2;->this$0:Landroidx/compose/ui/text/input/q;
-
-    .line 1
-    iget-object v0, v0, Landroidx/compose/ui/text/input/q;->a:Landroid/view/View;
-
     .line 2
+    iget-object v0, p0, Landroidx/compose/ui/text/input/InputMethodManagerImpl$imm$2;->this$0:Landroidx/compose/ui/text/input/n;
+
+    .line 3
+    iget-object v0, v0, Landroidx/compose/ui/text/input/n;->a:Landroid/view/View;
+
+    .line 4
     invoke-virtual {v0}, Landroid/view/View;->getContext()Landroid/content/Context;
 
     move-result-object v0
@@ -79,7 +80,7 @@
 .method public bridge synthetic invoke()Ljava/lang/Object;
     .locals 1
 
-    .line 3
+    .line 1
     invoke-virtual {p0}, Landroidx/compose/ui/text/input/InputMethodManagerImpl$imm$2;->invoke()Landroid/view/inputmethod/InputMethodManager;
 
     move-result-object v0

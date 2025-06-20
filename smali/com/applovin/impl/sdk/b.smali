@@ -117,15 +117,17 @@
 .method public a()V
     .locals 1
 
+    .line 7
     iget-object v0, p0, Lcom/applovin/impl/sdk/b;->d:Lcom/applovin/impl/go;
 
     if-eqz v0, :cond_0
 
-    .line 7
+    .line 8
     invoke-virtual {v0}, Lcom/applovin/impl/go;->a()V
 
     const/4 v0, 0x0
 
+    .line 9
     iput-object v0, p0, Lcom/applovin/impl/sdk/b;->d:Lcom/applovin/impl/go;
 
     :cond_0
@@ -138,9 +140,9 @@
     .line 4
     invoke-virtual {p0}, Lcom/applovin/impl/sdk/b;->a()V
 
+    .line 5
     iget-object v0, p0, Lcom/applovin/impl/sdk/b;->a:Lcom/applovin/impl/sdk/j;
 
-    .line 5
     sget-object v1, Lcom/applovin/impl/sj;->c1:Lcom/applovin/impl/sj;
 
     invoke-virtual {v0, v1}, Lcom/applovin/impl/sdk/j;->a(Lcom/applovin/impl/sj;)Ljava/lang/Object;
@@ -169,15 +171,15 @@
 
     return-void
 
+    .line 6
     :cond_0
     iget-object v0, p0, Lcom/applovin/impl/sdk/b;->a:Lcom/applovin/impl/sdk/j;
 
-    .line 6
-    new-instance v1, Lc3/a;
+    new-instance v1, Landroidx/activity/l;
 
-    const/16 v2, 0x9
+    const/16 v2, 0x10
 
-    invoke-direct {v1, p0, v2}, Lc3/a;-><init>(Ljava/lang/Object;I)V
+    invoke-direct {v1, p0, v2}, Landroidx/activity/l;-><init>(Ljava/lang/Object;I)V
 
     invoke-static {p1, p2, v0, v1}, Lcom/applovin/impl/go;->a(JLcom/applovin/impl/sdk/j;Ljava/lang/Runnable;)Lcom/applovin/impl/go;
 

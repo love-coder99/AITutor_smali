@@ -68,17 +68,17 @@
 
     const/4 v0, 0x0
 
+    .line 3
     :goto_0
     iget-object v1, p0, Lcom/applovin/impl/af;->a:[Lcom/applovin/impl/af$b;
 
-    .line 3
     array-length v2, v1
 
     if-ge v0, v2, :cond_0
 
+    .line 4
     const-class v2, Lcom/applovin/impl/af$b;
 
-    .line 4
     invoke-virtual {v2}, Ljava/lang/Class;->getClassLoader()Ljava/lang/ClassLoader;
 
     move-result-object v2
@@ -107,9 +107,9 @@
 
     const/4 v0, 0x0
 
+    .line 6
     new-array v0, v0, [Lcom/applovin/impl/af$b;
 
-    .line 6
     invoke-interface {p1, v0}, Ljava/util/List;->toArray([Ljava/lang/Object;)[Ljava/lang/Object;
 
     move-result-object p1
@@ -127,6 +127,7 @@
     .line 7
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
+    .line 8
     iput-object p1, p0, Lcom/applovin/impl/af;->a:[Lcom/applovin/impl/af$b;
 
     return-void
@@ -137,9 +138,9 @@
 .method public a(I)Lcom/applovin/impl/af$b;
     .locals 1
 
+    .line 4
     iget-object v0, p0, Lcom/applovin/impl/af;->a:[Lcom/applovin/impl/af$b;
 
-    .line 4
     aget-object p1, v0, p1
 
     return-object p1

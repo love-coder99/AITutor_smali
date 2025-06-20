@@ -1,12 +1,12 @@
 .class final Landroidx/compose/foundation/lazy/layout/LazyLayoutSemanticsModifier;
-.super Landroidx/compose/ui/node/w0;
+.super Landroidx/compose/ui/node/V;
 .source "SourceFile"
 
 
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
-        "Landroidx/compose/ui/node/w0;"
+        "Landroidx/compose/ui/node/V;"
     }
 .end annotation
 
@@ -16,8 +16,8 @@
     }
     d2 = {
         "Landroidx/compose/foundation/lazy/layout/LazyLayoutSemanticsModifier;",
-        "Landroidx/compose/ui/node/w0;",
-        "Landroidx/compose/foundation/lazy/layout/q0;",
+        "Landroidx/compose/ui/node/V;",
+        "Landroidx/compose/foundation/lazy/layout/P;",
         "foundation_release"
     }
     k = 0x1
@@ -26,23 +26,24 @@
         0x8,
         0x0
     }
+    xi = 0x30
 .end annotation
 
 
 # instance fields
-.field public final c:Lzh/a;
+.field public final a:Lra/m;
 
-.field public final d:Landroidx/compose/foundation/lazy/layout/p0;
+.field public final b:Landroidx/compose/foundation/lazy/layout/O;
 
-.field public final e:Landroidx/compose/foundation/gestures/Orientation;
+.field public final c:Landroidx/compose/foundation/gestures/Orientation;
 
-.field public final f:Z
+.field public final d:Z
 
-.field public final g:Z
+.field public final e:Z
 
 
 # direct methods
-.method public constructor <init>(Lgi/m;Landroidx/compose/foundation/lazy/layout/p0;Landroidx/compose/foundation/gestures/Orientation;ZZ)V
+.method public constructor <init>(Lra/m;Landroidx/compose/foundation/lazy/layout/O;Landroidx/compose/foundation/gestures/Orientation;ZZ)V
     .locals 0
 
     .line 1
@@ -51,23 +52,23 @@
     .line 2
     .line 3
     .line 4
-    iput-object p1, p0, Landroidx/compose/foundation/lazy/layout/LazyLayoutSemanticsModifier;->c:Lzh/a;
+    iput-object p1, p0, Landroidx/compose/foundation/lazy/layout/LazyLayoutSemanticsModifier;->a:Lra/m;
 
     .line 5
     .line 6
-    iput-object p2, p0, Landroidx/compose/foundation/lazy/layout/LazyLayoutSemanticsModifier;->d:Landroidx/compose/foundation/lazy/layout/p0;
+    iput-object p2, p0, Landroidx/compose/foundation/lazy/layout/LazyLayoutSemanticsModifier;->b:Landroidx/compose/foundation/lazy/layout/O;
 
     .line 7
     .line 8
-    iput-object p3, p0, Landroidx/compose/foundation/lazy/layout/LazyLayoutSemanticsModifier;->e:Landroidx/compose/foundation/gestures/Orientation;
+    iput-object p3, p0, Landroidx/compose/foundation/lazy/layout/LazyLayoutSemanticsModifier;->c:Landroidx/compose/foundation/gestures/Orientation;
 
     .line 9
     .line 10
-    iput-boolean p4, p0, Landroidx/compose/foundation/lazy/layout/LazyLayoutSemanticsModifier;->f:Z
+    iput-boolean p4, p0, Landroidx/compose/foundation/lazy/layout/LazyLayoutSemanticsModifier;->d:Z
 
     .line 11
     .line 12
-    iput-boolean p5, p0, Landroidx/compose/foundation/lazy/layout/LazyLayoutSemanticsModifier;->g:Z
+    iput-boolean p5, p0, Landroidx/compose/foundation/lazy/layout/LazyLayoutSemanticsModifier;->e:Z
 
     .line 13
     .line 14
@@ -110,11 +111,11 @@
 
     .line 12
     .line 13
-    iget-object v1, p1, Landroidx/compose/foundation/lazy/layout/LazyLayoutSemanticsModifier;->c:Lzh/a;
+    iget-object v1, p1, Landroidx/compose/foundation/lazy/layout/LazyLayoutSemanticsModifier;->a:Lra/m;
 
     .line 14
     .line 15
-    iget-object v3, p0, Landroidx/compose/foundation/lazy/layout/LazyLayoutSemanticsModifier;->c:Lzh/a;
+    iget-object v3, p0, Landroidx/compose/foundation/lazy/layout/LazyLayoutSemanticsModifier;->a:Lra/m;
 
     .line 16
     .line 17
@@ -126,15 +127,15 @@
 
     .line 20
     :cond_2
-    iget-object v1, p0, Landroidx/compose/foundation/lazy/layout/LazyLayoutSemanticsModifier;->d:Landroidx/compose/foundation/lazy/layout/p0;
+    iget-object v1, p0, Landroidx/compose/foundation/lazy/layout/LazyLayoutSemanticsModifier;->b:Landroidx/compose/foundation/lazy/layout/O;
 
     .line 21
     .line 22
-    iget-object v3, p1, Landroidx/compose/foundation/lazy/layout/LazyLayoutSemanticsModifier;->d:Landroidx/compose/foundation/lazy/layout/p0;
+    iget-object v3, p1, Landroidx/compose/foundation/lazy/layout/LazyLayoutSemanticsModifier;->b:Landroidx/compose/foundation/lazy/layout/O;
 
     .line 23
     .line 24
-    invoke-static {v1, v3}, Lrb/h;->d(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v1, v3}, Lkotlin/jvm/internal/h;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     .line 25
     .line 26
@@ -150,11 +151,11 @@
 
     .line 31
     :cond_3
-    iget-object v1, p0, Landroidx/compose/foundation/lazy/layout/LazyLayoutSemanticsModifier;->e:Landroidx/compose/foundation/gestures/Orientation;
+    iget-object v1, p0, Landroidx/compose/foundation/lazy/layout/LazyLayoutSemanticsModifier;->c:Landroidx/compose/foundation/gestures/Orientation;
 
     .line 32
     .line 33
-    iget-object v3, p1, Landroidx/compose/foundation/lazy/layout/LazyLayoutSemanticsModifier;->e:Landroidx/compose/foundation/gestures/Orientation;
+    iget-object v3, p1, Landroidx/compose/foundation/lazy/layout/LazyLayoutSemanticsModifier;->c:Landroidx/compose/foundation/gestures/Orientation;
 
     .line 34
     .line 35
@@ -166,11 +167,11 @@
 
     .line 38
     :cond_4
-    iget-boolean v1, p0, Landroidx/compose/foundation/lazy/layout/LazyLayoutSemanticsModifier;->f:Z
+    iget-boolean v1, p0, Landroidx/compose/foundation/lazy/layout/LazyLayoutSemanticsModifier;->d:Z
 
     .line 39
     .line 40
-    iget-boolean v3, p1, Landroidx/compose/foundation/lazy/layout/LazyLayoutSemanticsModifier;->f:Z
+    iget-boolean v3, p1, Landroidx/compose/foundation/lazy/layout/LazyLayoutSemanticsModifier;->d:Z
 
     .line 41
     .line 42
@@ -182,11 +183,11 @@
 
     .line 45
     :cond_5
-    iget-boolean v1, p0, Landroidx/compose/foundation/lazy/layout/LazyLayoutSemanticsModifier;->g:Z
+    iget-boolean v1, p0, Landroidx/compose/foundation/lazy/layout/LazyLayoutSemanticsModifier;->e:Z
 
     .line 46
     .line 47
-    iget-boolean p1, p1, Landroidx/compose/foundation/lazy/layout/LazyLayoutSemanticsModifier;->g:Z
+    iget-boolean p1, p1, Landroidx/compose/foundation/lazy/layout/LazyLayoutSemanticsModifier;->e:Z
 
     .line 48
     .line 49
@@ -205,7 +206,7 @@
     .locals 4
 
     .line 1
-    iget-object v0, p0, Landroidx/compose/foundation/lazy/layout/LazyLayoutSemanticsModifier;->c:Lzh/a;
+    iget-object v0, p0, Landroidx/compose/foundation/lazy/layout/LazyLayoutSemanticsModifier;->a:Lra/m;
 
     .line 2
     .line 3
@@ -221,7 +222,7 @@
 
     .line 8
     .line 9
-    iget-object v1, p0, Landroidx/compose/foundation/lazy/layout/LazyLayoutSemanticsModifier;->d:Landroidx/compose/foundation/lazy/layout/p0;
+    iget-object v1, p0, Landroidx/compose/foundation/lazy/layout/LazyLayoutSemanticsModifier;->b:Landroidx/compose/foundation/lazy/layout/O;
 
     .line 10
     .line 11
@@ -240,7 +241,7 @@
 
     .line 17
     .line 18
-    iget-object v0, p0, Landroidx/compose/foundation/lazy/layout/LazyLayoutSemanticsModifier;->e:Landroidx/compose/foundation/gestures/Orientation;
+    iget-object v0, p0, Landroidx/compose/foundation/lazy/layout/LazyLayoutSemanticsModifier;->c:Landroidx/compose/foundation/gestures/Orientation;
 
     .line 19
     .line 20
@@ -259,23 +260,23 @@
 
     .line 26
     .line 27
-    const/16 v1, 0x4d5
+    iget-boolean v1, p0, Landroidx/compose/foundation/lazy/layout/LazyLayoutSemanticsModifier;->d:Z
 
     .line 28
     .line 29
-    const/16 v2, 0x4cf
+    const/16 v2, 0x4d5
 
     .line 30
     .line 31
-    iget-boolean v3, p0, Landroidx/compose/foundation/lazy/layout/LazyLayoutSemanticsModifier;->f:Z
+    const/16 v3, 0x4cf
 
     .line 32
     .line 33
-    if-eqz v3, :cond_0
+    if-eqz v1, :cond_0
 
     .line 34
     .line 35
-    const/16 v3, 0x4cf
+    const/16 v1, 0x4cf
 
     .line 36
     .line 37
@@ -283,32 +284,32 @@
 
     .line 38
     :cond_0
-    const/16 v3, 0x4d5
+    const/16 v1, 0x4d5
 
     .line 39
     .line 40
     :goto_0
-    add-int/2addr v0, v3
+    add-int/2addr v0, v1
 
     .line 41
     mul-int/lit8 v0, v0, 0x1f
 
     .line 42
     .line 43
-    iget-boolean v3, p0, Landroidx/compose/foundation/lazy/layout/LazyLayoutSemanticsModifier;->g:Z
+    iget-boolean v1, p0, Landroidx/compose/foundation/lazy/layout/LazyLayoutSemanticsModifier;->e:Z
 
     .line 44
     .line 45
-    if-eqz v3, :cond_1
+    if-eqz v1, :cond_1
 
     .line 46
     .line 47
-    const/16 v1, 0x4cf
+    const/16 v2, 0x4cf
 
     .line 48
     .line 49
     :cond_1
-    add-int/2addr v0, v1
+    add-int/2addr v0, v2
 
     .line 50
     return v0
@@ -318,34 +319,34 @@
     .locals 7
 
     .line 1
-    new-instance v6, Landroidx/compose/foundation/lazy/layout/q0;
+    new-instance v6, Landroidx/compose/foundation/lazy/layout/P;
 
     .line 2
     .line 3
-    iget-object v1, p0, Landroidx/compose/foundation/lazy/layout/LazyLayoutSemanticsModifier;->c:Lzh/a;
+    iget-boolean v4, p0, Landroidx/compose/foundation/lazy/layout/LazyLayoutSemanticsModifier;->d:Z
 
     .line 4
     .line 5
-    iget-object v2, p0, Landroidx/compose/foundation/lazy/layout/LazyLayoutSemanticsModifier;->d:Landroidx/compose/foundation/lazy/layout/p0;
+    iget-boolean v5, p0, Landroidx/compose/foundation/lazy/layout/LazyLayoutSemanticsModifier;->e:Z
 
     .line 6
     .line 7
-    iget-object v3, p0, Landroidx/compose/foundation/lazy/layout/LazyLayoutSemanticsModifier;->e:Landroidx/compose/foundation/gestures/Orientation;
+    iget-object v1, p0, Landroidx/compose/foundation/lazy/layout/LazyLayoutSemanticsModifier;->a:Lra/m;
 
     .line 8
     .line 9
-    iget-boolean v4, p0, Landroidx/compose/foundation/lazy/layout/LazyLayoutSemanticsModifier;->f:Z
+    iget-object v2, p0, Landroidx/compose/foundation/lazy/layout/LazyLayoutSemanticsModifier;->b:Landroidx/compose/foundation/lazy/layout/O;
 
     .line 10
     .line 11
-    iget-boolean v5, p0, Landroidx/compose/foundation/lazy/layout/LazyLayoutSemanticsModifier;->g:Z
+    iget-object v3, p0, Landroidx/compose/foundation/lazy/layout/LazyLayoutSemanticsModifier;->c:Landroidx/compose/foundation/gestures/Orientation;
 
     .line 12
     .line 13
     move-object v0, v6
 
     .line 14
-    invoke-direct/range {v0 .. v5}, Landroidx/compose/foundation/lazy/layout/q0;-><init>(Lzh/a;Landroidx/compose/foundation/lazy/layout/p0;Landroidx/compose/foundation/gestures/Orientation;ZZ)V
+    invoke-direct/range {v0 .. v5}, Landroidx/compose/foundation/lazy/layout/P;-><init>(Lra/m;Landroidx/compose/foundation/lazy/layout/O;Landroidx/compose/foundation/gestures/Orientation;ZZ)V
 
     .line 15
     .line 16
@@ -357,31 +358,31 @@
     .locals 3
 
     .line 1
-    check-cast p1, Landroidx/compose/foundation/lazy/layout/q0;
+    check-cast p1, Landroidx/compose/foundation/lazy/layout/P;
 
     .line 2
     .line 3
-    iget-object v0, p0, Landroidx/compose/foundation/lazy/layout/LazyLayoutSemanticsModifier;->c:Lzh/a;
+    iget-object v0, p0, Landroidx/compose/foundation/lazy/layout/LazyLayoutSemanticsModifier;->a:Lra/m;
 
     .line 4
     .line 5
-    iput-object v0, p1, Landroidx/compose/foundation/lazy/layout/q0;->p:Lzh/a;
+    iput-object v0, p1, Landroidx/compose/foundation/lazy/layout/P;->p:Lra/m;
 
     .line 6
     .line 7
-    iget-object v0, p0, Landroidx/compose/foundation/lazy/layout/LazyLayoutSemanticsModifier;->d:Landroidx/compose/foundation/lazy/layout/p0;
+    iget-object v0, p0, Landroidx/compose/foundation/lazy/layout/LazyLayoutSemanticsModifier;->b:Landroidx/compose/foundation/lazy/layout/O;
 
     .line 8
     .line 9
-    iput-object v0, p1, Landroidx/compose/foundation/lazy/layout/q0;->q:Landroidx/compose/foundation/lazy/layout/p0;
+    iput-object v0, p1, Landroidx/compose/foundation/lazy/layout/P;->q:Landroidx/compose/foundation/lazy/layout/O;
 
     .line 10
     .line 11
-    iget-object v0, p1, Landroidx/compose/foundation/lazy/layout/q0;->r:Landroidx/compose/foundation/gestures/Orientation;
+    iget-object v0, p1, Landroidx/compose/foundation/lazy/layout/P;->r:Landroidx/compose/foundation/gestures/Orientation;
 
     .line 12
     .line 13
-    iget-object v1, p0, Landroidx/compose/foundation/lazy/layout/LazyLayoutSemanticsModifier;->e:Landroidx/compose/foundation/gestures/Orientation;
+    iget-object v1, p0, Landroidx/compose/foundation/lazy/layout/LazyLayoutSemanticsModifier;->c:Landroidx/compose/foundation/gestures/Orientation;
 
     .line 14
     .line 15
@@ -389,25 +390,25 @@
 
     .line 16
     .line 17
-    iput-object v1, p1, Landroidx/compose/foundation/lazy/layout/q0;->r:Landroidx/compose/foundation/gestures/Orientation;
+    iput-object v1, p1, Landroidx/compose/foundation/lazy/layout/P;->r:Landroidx/compose/foundation/gestures/Orientation;
 
     .line 18
     .line 19
-    invoke-static {p1}, Lcom/google/android/play/core/appupdate/b;->C(Landroidx/compose/ui/node/v1;)V
+    invoke-static {p1}, LT6/b;->x(Landroidx/compose/ui/node/p0;)V
 
     .line 20
     .line 21
     .line 22
     :cond_0
-    iget-boolean v0, p1, Landroidx/compose/foundation/lazy/layout/q0;->s:Z
+    iget-boolean v0, p1, Landroidx/compose/foundation/lazy/layout/P;->s:Z
 
     .line 23
     .line 24
-    iget-boolean v1, p0, Landroidx/compose/foundation/lazy/layout/LazyLayoutSemanticsModifier;->f:Z
+    iget-boolean v1, p0, Landroidx/compose/foundation/lazy/layout/LazyLayoutSemanticsModifier;->d:Z
 
     .line 25
     .line 26
-    iget-boolean v2, p0, Landroidx/compose/foundation/lazy/layout/LazyLayoutSemanticsModifier;->g:Z
+    iget-boolean v2, p0, Landroidx/compose/foundation/lazy/layout/LazyLayoutSemanticsModifier;->e:Z
 
     .line 27
     .line 28
@@ -415,7 +416,7 @@
 
     .line 29
     .line 30
-    iget-boolean v0, p1, Landroidx/compose/foundation/lazy/layout/q0;->t:Z
+    iget-boolean v0, p1, Landroidx/compose/foundation/lazy/layout/P;->t:Z
 
     .line 31
     .line 32
@@ -424,20 +425,20 @@
     .line 33
     .line 34
     :cond_1
-    iput-boolean v1, p1, Landroidx/compose/foundation/lazy/layout/q0;->s:Z
+    iput-boolean v1, p1, Landroidx/compose/foundation/lazy/layout/P;->s:Z
 
     .line 35
     .line 36
-    iput-boolean v2, p1, Landroidx/compose/foundation/lazy/layout/q0;->t:Z
+    iput-boolean v2, p1, Landroidx/compose/foundation/lazy/layout/P;->t:Z
 
     .line 37
     .line 38
-    invoke-virtual {p1}, Landroidx/compose/foundation/lazy/layout/q0;->A0()V
+    invoke-virtual {p1}, Landroidx/compose/foundation/lazy/layout/P;->y0()V
 
     .line 39
     .line 40
     .line 41
-    invoke-static {p1}, Lcom/google/android/play/core/appupdate/b;->C(Landroidx/compose/ui/node/v1;)V
+    invoke-static {p1}, LT6/b;->x(Landroidx/compose/ui/node/p0;)V
 
     .line 42
     .line 43

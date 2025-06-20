@@ -65,11 +65,11 @@
 
     const/4 v0, 0x0
 
+    .line 5
     new-array v0, v0, [Ljava/lang/Object;
 
     const-string v1, "Null value not expected"
 
-    .line 5
     invoke-static {p0, v1, v0}, Lcom/applovin/impl/p6;->a(Ljava/lang/Object;Ljava/lang/String;[Ljava/lang/Object;)Z
 
     move-result p0
@@ -103,11 +103,11 @@
 
     const/4 v0, 0x0
 
+    .line 3
     new-array v0, v0, [Ljava/lang/Object;
 
     const-string v1, "Assertion failed"
 
-    .line 3
     invoke-static {p0, v1, v0}, Lcom/applovin/impl/p6;->a(ZLjava/lang/String;[Ljava/lang/Object;)Z
 
     move-result p0

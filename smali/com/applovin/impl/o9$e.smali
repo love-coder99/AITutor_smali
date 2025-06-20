@@ -26,9 +26,9 @@
 .method private constructor <init>(Lcom/applovin/impl/o9;)V
     .locals 0
 
+    .line 1
     iput-object p1, p0, Lcom/applovin/impl/o9$e;->a:Lcom/applovin/impl/o9;
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -46,9 +46,9 @@
 .method private synthetic a()V
     .locals 3
 
+    .line 2
     iget-object v0, p0, Lcom/applovin/impl/o9$e;->a:Lcom/applovin/impl/o9;
 
-    .line 2
     invoke-static {}, Landroid/os/SystemClock;->elapsedRealtime()J
 
     move-result-wide v1
@@ -718,14 +718,14 @@
     int-to-long v2, p1
 
     .line 291
-    new-instance p1, Lcom/applovin/impl/wt;
+    new-instance p1, Lcom/applovin/impl/P0;
 
     .line 292
     .line 293
     const/4 v4, 0x2
 
     .line 294
-    invoke-direct {p1, p0, v4}, Lcom/applovin/impl/wt;-><init>(Ljava/lang/Object;I)V
+    invoke-direct {p1, p0, v4}, Lcom/applovin/impl/P0;-><init>(Ljava/lang/Object;I)V
 
     .line 295
     .line 296

@@ -3,14 +3,14 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lzh/c;
+.implements Lka/c;
 
 
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "Lkotlin/jvm/internal/Lambda;",
-        "Lzh/c;"
+        "Lka/c;"
     }
 .end annotation
 
@@ -21,7 +21,7 @@
     d2 = {
         "",
         "it",
-        "Lqh/r;",
+        "LX9/j;",
         "invoke",
         "(Ljava/lang/Object;)V",
         "<anonymous>"
@@ -36,14 +36,14 @@
 
 
 # instance fields
-.field final synthetic this$0:Landroidx/compose/ui/tooling/animation/o;
+.field final synthetic this$0:Landroidx/compose/ui/tooling/animation/j;
 
 
 # direct methods
-.method public constructor <init>(Landroidx/compose/ui/tooling/animation/o;)V
+.method public constructor <init>(Landroidx/compose/ui/tooling/animation/j;)V
     .locals 0
 
-    iput-object p1, p0, Landroidx/compose/ui/tooling/animation/AnimationSearch$unsupportedSearch$1;->this$0:Landroidx/compose/ui/tooling/animation/o;
+    iput-object p1, p0, Landroidx/compose/ui/tooling/animation/AnimationSearch$unsupportedSearch$1;->this$0:Landroidx/compose/ui/tooling/animation/j;
 
     const/4 p1, 0x1
 
@@ -57,10 +57,10 @@
 .method public bridge synthetic invoke(Ljava/lang/Object;)Ljava/lang/Object;
     .locals 0
 
-    .line 5
+    .line 1
     invoke-virtual {p0, p1}, Landroidx/compose/ui/tooling/animation/AnimationSearch$unsupportedSearch$1;->invoke(Ljava/lang/Object;)V
 
-    sget-object p1, Lqh/r;->a:Lqh/r;
+    sget-object p1, LX9/j;->a:LX9/j;
 
     return-object p1
 .end method
@@ -68,29 +68,30 @@
 .method public final invoke(Ljava/lang/Object;)V
     .locals 3
 
-    iget-object v0, p0, Landroidx/compose/ui/tooling/animation/AnimationSearch$unsupportedSearch$1;->this$0:Landroidx/compose/ui/tooling/animation/o;
-
-    .line 1
-    iget-object v0, v0, Landroidx/compose/ui/tooling/animation/o;->a:Lzh/a;
-
     .line 2
-    invoke-interface {v0}, Lzh/a;->invoke()Ljava/lang/Object;
+    iget-object v0, p0, Landroidx/compose/ui/tooling/animation/AnimationSearch$unsupportedSearch$1;->this$0:Landroidx/compose/ui/tooling/animation/j;
+
+    .line 3
+    iget-object v0, v0, Landroidx/compose/ui/tooling/animation/j;->a:Lka/a;
+
+    .line 4
+    invoke-interface {v0}, Lka/a;->invoke()Ljava/lang/Object;
 
     move-result-object v0
 
-    check-cast v0, Landroidx/compose/ui/tooling/animation/q;
+    check-cast v0, Landroidx/compose/ui/tooling/animation/l;
 
-    .line 3
+    .line 5
     invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
-    .line 4
+    .line 6
     new-instance v1, Landroidx/compose/ui/tooling/animation/PreviewAnimationClock$trackUnsupported$1;
 
     const-string v2, "animateContentSize"
 
-    invoke-direct {v1, v0, v2}, Landroidx/compose/ui/tooling/animation/PreviewAnimationClock$trackUnsupported$1;-><init>(Landroidx/compose/ui/tooling/animation/q;Ljava/lang/String;)V
+    invoke-direct {v1, v0, v2}, Landroidx/compose/ui/tooling/animation/PreviewAnimationClock$trackUnsupported$1;-><init>(Landroidx/compose/ui/tooling/animation/l;Ljava/lang/String;)V
 
-    invoke-virtual {v0, p1, v1}, Landroidx/compose/ui/tooling/animation/q;->h(Ljava/lang/Object;Lzh/c;)V
+    invoke-virtual {v0, p1, v1}, Landroidx/compose/ui/tooling/animation/l;->h(Ljava/lang/Object;Lka/c;)V
 
     return-void
 .end method

@@ -48,14 +48,19 @@
     .line 2
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
+    .line 3
     iput-wide p1, p0, Lcom/applovin/impl/ds;->a:J
 
+    .line 4
     iput p3, p0, Lcom/applovin/impl/ds;->b:I
 
+    .line 5
     iput-wide p4, p0, Lcom/applovin/impl/ds;->c:J
 
+    .line 6
     iput-object p8, p0, Lcom/applovin/impl/ds;->f:[J
 
+    .line 7
     iput-wide p6, p0, Lcom/applovin/impl/ds;->d:J
 
     const-wide/16 p3, -0x1
@@ -69,6 +74,7 @@
     :cond_0
     add-long p3, p1, p6
 
+    .line 8
     :goto_0
     iput-wide p3, p0, Lcom/applovin/impl/ds;->e:J
 
@@ -78,6 +84,7 @@
 .method private a(I)J
     .locals 4
 
+    .line 28
     iget-wide v0, p0, Lcom/applovin/impl/ds;->c:J
 
     int-to-long v2, p1
@@ -86,7 +93,6 @@
 
     const-wide/16 v2, 0x64
 
-    .line 24
     div-long/2addr v0, v2
 
     return-wide v0
@@ -170,6 +176,7 @@
 
     const/16 v3, 0x64
 
+    .line 8
     new-array v4, v3, [J
 
     const/4 v5, 0x0
@@ -177,7 +184,7 @@
     :goto_0
     if-ge v5, v3, :cond_2
 
-    .line 8
+    .line 9
     invoke-virtual/range {p5 .. p5}, Lcom/applovin/impl/ah;->w()I
 
     move-result v6
@@ -203,16 +210,17 @@
 
     if-eqz v3, :cond_3
 
+    .line 10
     const-string v3, "XING data size mismatch: "
 
     const-string v7, ", "
 
-    .line 9
-    invoke-static {v3, v0, v1, v7}, Lj0/d;->r(Ljava/lang/String;JLjava/lang/String;)Ljava/lang/StringBuilder;
+    .line 11
+    invoke-static {v3, v7, v0, v1}, Landroidx/compose/runtime/a0;->u(Ljava/lang/String;Ljava/lang/String;J)Ljava/lang/StringBuilder;
 
     move-result-object v0
 
-    .line 10
+    .line 12
     invoke-virtual {v0, v5, v6}, Ljava/lang/StringBuilder;->append(J)Ljava/lang/StringBuilder;
 
     invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
@@ -223,7 +231,7 @@
 
     invoke-static {v1, v0}, Lcom/applovin/impl/oc;->d(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 11
+    .line 13
     :cond_3
     new-instance v0, Lcom/applovin/impl/ds;
 
@@ -253,11 +261,12 @@
 .method public a(J)J
     .locals 11
 
+    .line 18
     iget-wide v0, p0, Lcom/applovin/impl/ds;->a:J
 
     sub-long/2addr p1, v0
 
-    .line 16
+    .line 19
     invoke-virtual {p0}, Lcom/applovin/impl/ds;->b()Z
 
     move-result v0
@@ -274,10 +283,10 @@
 
     goto :goto_2
 
+    .line 20
     :cond_0
     iget-object v0, p0, Lcom/applovin/impl/ds;->f:[J
 
-    .line 17
     invoke-static {v0}, Lcom/applovin/impl/b1;->b(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object v0
@@ -290,6 +299,7 @@
 
     mul-double p1, p1, v1
 
+    .line 21
     iget-wide v1, p0, Lcom/applovin/impl/ds;->d:J
 
     long-to-double v1, v1
@@ -300,22 +310,22 @@
 
     const/4 v3, 0x1
 
-    .line 18
+    .line 22
     invoke-static {v0, v1, v2, v3, v3}, Lcom/applovin/impl/xp;->b([JJZZ)I
 
     move-result v1
 
-    .line 19
+    .line 23
     invoke-direct {p0, v1}, Lcom/applovin/impl/ds;->a(I)J
 
     move-result-wide v2
 
-    .line 20
+    .line 24
     aget-wide v4, v0, v1
 
     add-int/lit8 v6, v1, 0x1
 
-    .line 21
+    .line 25
     invoke-direct {p0, v6}, Lcom/applovin/impl/ds;->a(I)J
 
     move-result-wide v7
@@ -328,7 +338,7 @@
 
     goto :goto_0
 
-    .line 22
+    .line 26
     :cond_1
     aget-wide v9, v0, v6
 
@@ -361,7 +371,7 @@
 
     mul-double p1, p1, v0
 
-    .line 23
+    .line 27
     invoke-static {p1, p2}, Ljava/lang/Math;->round(D)J
 
     move-result-wide p1
@@ -380,14 +390,14 @@
 .method public b(J)Lcom/applovin/impl/ij$a;
     .locals 12
 
-    .line 2
+    .line 1
     invoke-virtual {p0}, Lcom/applovin/impl/ds;->b()Z
 
     move-result v0
 
     if-nez v0, :cond_0
 
-    .line 3
+    .line 2
     new-instance p1, Lcom/applovin/impl/ij$a;
 
     new-instance p2, Lcom/applovin/impl/kj;
@@ -408,6 +418,7 @@
 
     return-object p1
 
+    .line 3
     :cond_0
     iget-wide v8, p0, Lcom/applovin/impl/ds;->c:J
 
@@ -415,7 +426,6 @@
 
     move-wide v4, p1
 
-    .line 4
     invoke-static/range {v4 .. v9}, Lcom/applovin/impl/xp;->b(JJJ)J
 
     move-result-wide p1
@@ -426,6 +436,7 @@
 
     mul-double v0, v0, v2
 
+    .line 4
     iget-wide v4, p0, Lcom/applovin/impl/ds;->c:J
 
     long-to-double v4, v4
@@ -454,9 +465,9 @@
     :cond_2
     double-to-int v2, v0
 
+    .line 5
     iget-object v3, p0, Lcom/applovin/impl/ds;->f:[J
 
-    .line 5
     invoke-static {v3}, Lcom/applovin/impl/b1;->b(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object v3
@@ -498,17 +509,18 @@
     :goto_1
     div-double/2addr v4, v6
 
+    .line 8
     iget-wide v0, p0, Lcom/applovin/impl/ds;->d:J
 
     long-to-double v0, v0
 
     mul-double v4, v4, v0
 
-    .line 8
     invoke-static {v4, v5}, Ljava/lang/Math;->round(D)J
 
     move-result-wide v6
 
+    .line 9
     iget v0, p0, Lcom/applovin/impl/ds;->b:I
 
     int-to-long v8, v0
@@ -519,7 +531,6 @@
 
     sub-long v10, v0, v2
 
-    .line 9
     invoke-static/range {v6 .. v11}, Lcom/applovin/impl/xp;->b(JJJ)J
 
     move-result-wide v0
@@ -543,7 +554,7 @@
 .method public b()Z
     .locals 1
 
-    .line 1
+    .line 11
     iget-object v0, p0, Lcom/applovin/impl/ds;->f:[J
 
     if-eqz v0, :cond_0
@@ -562,15 +573,21 @@
 .method public c()J
     .locals 2
 
+    .line 1
     iget-wide v0, p0, Lcom/applovin/impl/ds;->e:J
 
+    .line 2
+    .line 3
     return-wide v0
 .end method
 
 .method public d()J
     .locals 2
 
+    .line 1
     iget-wide v0, p0, Lcom/applovin/impl/ds;->c:J
 
+    .line 2
+    .line 3
     return-wide v0
 .end method

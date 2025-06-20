@@ -3,14 +3,14 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lzh/a;
+.implements Lka/a;
 
 
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "Lkotlin/jvm/internal/Lambda;",
-        "Lzh/a;"
+        "Lka/a;"
     }
 .end annotation
 
@@ -19,9 +19,9 @@
         "\u0000\u0008\n\u0002\u0018\u0002\n\u0002\u0008\u0003\u0010\u0003\u001a\u00020\u0000H\n\u00a2\u0006\u0004\u0008\u0001\u0010\u0002"
     }
     d2 = {
-        "Landroidx/compose/foundation/lazy/h;",
+        "Landroidx/compose/foundation/lazy/g;",
         "invoke",
-        "()Landroidx/compose/foundation/lazy/h;",
+        "()Landroidx/compose/foundation/lazy/g;",
         "<anonymous>"
     }
     k = 0x3
@@ -34,27 +34,27 @@
 
 
 # instance fields
-.field final synthetic $latestContent:Landroidx/compose/runtime/d3;
+.field final synthetic $latestContent:Landroidx/compose/runtime/H0;
     .annotation system Ldalvik/annotation/Signature;
         value = {
-            "Landroidx/compose/runtime/d3;"
+            "Landroidx/compose/runtime/H0;"
         }
     .end annotation
 .end field
 
 
 # direct methods
-.method public constructor <init>(Landroidx/compose/runtime/d3;)V
+.method public constructor <init>(Landroidx/compose/runtime/H0;)V
     .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
-            "Landroidx/compose/runtime/d3;",
+            "Landroidx/compose/runtime/H0;",
             ")V"
         }
     .end annotation
 
-    iput-object p1, p0, Landroidx/compose/foundation/lazy/LazyListItemProviderKt$rememberLazyListItemProviderLambda$1$intervalContentState$1;->$latestContent:Landroidx/compose/runtime/d3;
+    iput-object p1, p0, Landroidx/compose/foundation/lazy/LazyListItemProviderKt$rememberLazyListItemProviderLambda$1$intervalContentState$1;->$latestContent:Landroidx/compose/runtime/H0;
 
     const/4 p1, 0x0
 
@@ -65,21 +65,21 @@
 
 
 # virtual methods
-.method public final invoke()Landroidx/compose/foundation/lazy/h;
+.method public final invoke()Landroidx/compose/foundation/lazy/g;
     .locals 2
 
     .line 2
-    new-instance v0, Landroidx/compose/foundation/lazy/h;
+    new-instance v0, Landroidx/compose/foundation/lazy/g;
 
-    iget-object v1, p0, Landroidx/compose/foundation/lazy/LazyListItemProviderKt$rememberLazyListItemProviderLambda$1$intervalContentState$1;->$latestContent:Landroidx/compose/runtime/d3;
+    iget-object v1, p0, Landroidx/compose/foundation/lazy/LazyListItemProviderKt$rememberLazyListItemProviderLambda$1$intervalContentState$1;->$latestContent:Landroidx/compose/runtime/H0;
 
-    invoke-interface {v1}, Landroidx/compose/runtime/d3;->getValue()Ljava/lang/Object;
+    invoke-interface {v1}, Landroidx/compose/runtime/H0;->getValue()Ljava/lang/Object;
 
     move-result-object v1
 
-    check-cast v1, Lzh/c;
+    check-cast v1, Lka/c;
 
-    invoke-direct {v0, v1}, Landroidx/compose/foundation/lazy/h;-><init>(Lzh/c;)V
+    invoke-direct {v0, v1}, Landroidx/compose/foundation/lazy/g;-><init>(Lka/c;)V
 
     return-object v0
 .end method
@@ -88,7 +88,7 @@
     .locals 1
 
     .line 1
-    invoke-virtual {p0}, Landroidx/compose/foundation/lazy/LazyListItemProviderKt$rememberLazyListItemProviderLambda$1$intervalContentState$1;->invoke()Landroidx/compose/foundation/lazy/h;
+    invoke-virtual {p0}, Landroidx/compose/foundation/lazy/LazyListItemProviderKt$rememberLazyListItemProviderLambda$1$intervalContentState$1;->invoke()Landroidx/compose/foundation/lazy/g;
 
     move-result-object v0
 

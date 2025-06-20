@@ -122,11 +122,11 @@
 
     .line 24
     .line 25
-    iget p1, p1, Landroidx/compose/ui/text/style/g;->b:I
+    iget v1, p0, Landroidx/compose/ui/text/style/g;->b:I
 
     .line 26
     .line 27
-    iget v1, p0, Landroidx/compose/ui/text/style/g;->b:I
+    iget p1, p1, Landroidx/compose/ui/text/style/g;->b:I
 
     .line 28
     .line 29

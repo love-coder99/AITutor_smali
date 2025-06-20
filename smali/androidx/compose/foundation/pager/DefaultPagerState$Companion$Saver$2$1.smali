@@ -3,7 +3,7 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lzh/a;
+.implements Lka/a;
 
 
 # annotations
@@ -19,7 +19,7 @@
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "Lkotlin/jvm/internal/Lambda;",
-        "Lzh/a;"
+        "Lka/a;"
     }
 .end annotation
 
@@ -82,11 +82,11 @@
 .method public final invoke()Ljava/lang/Integer;
     .locals 2
 
+    .line 1
     iget-object v0, p0, Landroidx/compose/foundation/pager/DefaultPagerState$Companion$Saver$2$1;->$it:Ljava/util/List;
 
     const/4 v1, 0x2
 
-    .line 1
     invoke-interface {v0, v1}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
     move-result-object v0

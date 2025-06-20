@@ -43,14 +43,14 @@
     .locals 2
 
     .line 1
-    new-instance v0, Landroid/support/v4/media/a;
+    new-instance v0, LX7/a;
 
     .line 2
     .line 3
-    const/4 v1, 0x1
+    const/4 v1, 0x3
 
     .line 4
-    invoke-direct {v0, v1}, Landroid/support/v4/media/a;-><init>(I)V
+    invoke-direct {v0, v1}, LX7/a;-><init>(I)V
 
     .line 5
     .line 6
@@ -325,7 +325,7 @@
 
     .line 74
     .line 75
-    invoke-static {v1, v3}, Landroid/support/v4/media/c;->z(Landroid/media/MediaDescription$Builder;Landroid/net/Uri;)V
+    invoke-static {v1, v3}, LC0/c;->r(Landroid/media/MediaDescription$Builder;Landroid/net/Uri;)V
 
     .line 76
     .line 77

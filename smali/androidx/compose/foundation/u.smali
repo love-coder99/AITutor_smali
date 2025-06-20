@@ -1,138 +1,117 @@
-.class public final Landroidx/compose/foundation/u;
-.super Landroidx/compose/ui/n;
+.class public final Landroidx/compose/foundation/U;
+.super Landroidx/compose/foundation/S;
 .source "SourceFile"
 
 
-# instance fields
-.field public p:Landroidx/compose/foundation/interaction/l;
-
-.field public q:Landroidx/compose/foundation/interaction/d;
-
-
 # virtual methods
-.method public final A0(Landroidx/compose/foundation/interaction/l;Landroidx/compose/foundation/interaction/j;)V
-    .locals 4
-
-    .line 1
-    iget-boolean v0, p0, Landroidx/compose/ui/n;->o:Z
-
-    .line 2
-    .line 3
-    if-eqz v0, :cond_1
-
-    .line 4
-    .line 5
-    invoke-virtual {p0}, Landroidx/compose/ui/n;->o0()Lkotlinx/coroutines/w;
-
-    .line 6
-    .line 7
-    .line 8
-    move-result-object v0
-
-    .line 9
-    check-cast v0, Lkotlinx/coroutines/internal/e;
-
-    .line 10
-    .line 11
-    sget-object v1, Lkotlinx/coroutines/u;->c:Lkotlinx/coroutines/u;
-
-    .line 12
-    .line 13
-    iget-object v0, v0, Lkotlinx/coroutines/internal/e;->b:Lkotlin/coroutines/i;
-
-    .line 14
-    .line 15
-    invoke-interface {v0, v1}, Lkotlin/coroutines/i;->get(Lkotlin/coroutines/h;)Lkotlin/coroutines/g;
-
-    .line 16
-    .line 17
-    .line 18
-    move-result-object v0
-
-    .line 19
-    check-cast v0, Lkotlinx/coroutines/z0;
-
-    .line 20
-    .line 21
-    const/4 v1, 0x0
-
-    .line 22
-    if-eqz v0, :cond_0
-
-    .line 23
-    .line 24
-    new-instance v2, Landroidx/compose/foundation/FocusableInteractionNode$emitWithFallback$handler$1;
-
-    .line 25
-    .line 26
-    invoke-direct {v2, p1, p2}, Landroidx/compose/foundation/FocusableInteractionNode$emitWithFallback$handler$1;-><init>(Landroidx/compose/foundation/interaction/l;Landroidx/compose/foundation/interaction/j;)V
-
-    .line 27
-    .line 28
-    .line 29
-    invoke-interface {v0, v2}, Lkotlinx/coroutines/z0;->y(Lzh/c;)Lkotlinx/coroutines/j0;
-
-    .line 30
-    .line 31
-    .line 32
-    move-result-object v0
-
-    .line 33
-    goto :goto_0
-
-    .line 34
-    :cond_0
-    move-object v0, v1
-
-    .line 35
-    :goto_0
-    invoke-virtual {p0}, Landroidx/compose/ui/n;->o0()Lkotlinx/coroutines/w;
-
-    .line 36
-    .line 37
-    .line 38
-    move-result-object v2
-
-    .line 39
-    new-instance v3, Landroidx/compose/foundation/FocusableInteractionNode$emitWithFallback$1;
-
-    .line 40
-    .line 41
-    invoke-direct {v3, p1, p2, v0, v1}, Landroidx/compose/foundation/FocusableInteractionNode$emitWithFallback$1;-><init>(Landroidx/compose/foundation/interaction/l;Landroidx/compose/foundation/interaction/j;Lkotlinx/coroutines/j0;Lkotlin/coroutines/Continuation;)V
-
-    .line 42
-    .line 43
-    .line 44
-    const/4 p1, 0x3
-
-    .line 45
-    invoke-static {v2, v1, v1, v3, p1}, Lf7/l;->D(Lkotlinx/coroutines/w;Lkotlin/coroutines/g;Lkotlinx/coroutines/CoroutineStart;Lzh/e;I)Lkotlinx/coroutines/q1;
-
-    .line 46
-    .line 47
-    .line 48
-    goto :goto_1
-
-    .line 49
-    :cond_1
-    check-cast p1, Landroidx/compose/foundation/interaction/m;
-
-    .line 50
-    .line 51
-    invoke-virtual {p1, p2}, Landroidx/compose/foundation/interaction/m;->b(Landroidx/compose/foundation/interaction/j;)Z
-
-    .line 52
-    .line 53
-    .line 54
-    :goto_1
-    return-void
-.end method
-
-.method public final p0()Z
+.method public final a(JJF)V
     .locals 1
 
     .line 1
-    const/4 v0, 0x0
+    invoke-static {p5}, Ljava/lang/Float;->isNaN(F)Z
 
-    return v0
+    .line 2
+    .line 3
+    .line 4
+    move-result v0
+
+    .line 5
+    if-nez v0, :cond_0
+
+    .line 6
+    .line 7
+    iget-object v0, p0, Landroidx/compose/foundation/S;->a:Landroid/widget/Magnifier;
+
+    .line 8
+    .line 9
+    invoke-virtual {v0, p5}, Landroid/widget/Magnifier;->setZoom(F)V
+
+    .line 10
+    .line 11
+    .line 12
+    :cond_0
+    invoke-static {p3, p4}, Lcom/bumptech/glide/c;->s(J)Z
+
+    .line 13
+    .line 14
+    .line 15
+    move-result p5
+
+    .line 16
+    if-eqz p5, :cond_1
+
+    .line 17
+    .line 18
+    iget-object p5, p0, Landroidx/compose/foundation/S;->a:Landroid/widget/Magnifier;
+
+    .line 19
+    .line 20
+    invoke-static {p1, p2}, Lr0/c;->d(J)F
+
+    .line 21
+    .line 22
+    .line 23
+    move-result v0
+
+    .line 24
+    invoke-static {p1, p2}, Lr0/c;->e(J)F
+
+    .line 25
+    .line 26
+    .line 27
+    move-result p1
+
+    .line 28
+    invoke-static {p3, p4}, Lr0/c;->d(J)F
+
+    .line 29
+    .line 30
+    .line 31
+    move-result p2
+
+    .line 32
+    invoke-static {p3, p4}, Lr0/c;->e(J)F
+
+    .line 33
+    .line 34
+    .line 35
+    move-result p3
+
+    .line 36
+    invoke-virtual {p5, v0, p1, p2, p3}, Landroid/widget/Magnifier;->show(FFFF)V
+
+    .line 37
+    .line 38
+    .line 39
+    goto :goto_0
+
+    .line 40
+    :cond_1
+    iget-object p3, p0, Landroidx/compose/foundation/S;->a:Landroid/widget/Magnifier;
+
+    .line 41
+    .line 42
+    invoke-static {p1, p2}, Lr0/c;->d(J)F
+
+    .line 43
+    .line 44
+    .line 45
+    move-result p4
+
+    .line 46
+    invoke-static {p1, p2}, Lr0/c;->e(J)F
+
+    .line 47
+    .line 48
+    .line 49
+    move-result p1
+
+    .line 50
+    invoke-virtual {p3, p4, p1}, Landroid/widget/Magnifier;->show(FF)V
+
+    .line 51
+    .line 52
+    .line 53
+    :goto_0
+    return-void
 .end method

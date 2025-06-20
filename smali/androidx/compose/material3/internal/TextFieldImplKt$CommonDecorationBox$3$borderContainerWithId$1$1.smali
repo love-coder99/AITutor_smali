@@ -5,7 +5,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Landroidx/compose/material3/internal/TextFieldImplKt$CommonDecorationBox$3$borderContainerWithId$1;->invoke(Landroidx/compose/runtime/l;I)V
+    value = Landroidx/compose/material3/internal/TextFieldImplKt$CommonDecorationBox$3$borderContainerWithId$1;->invoke(Landroidx/compose/runtime/j;I)V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -28,13 +28,13 @@
 .method public constructor <init>(Ljava/lang/Object;)V
     .locals 6
 
-    const-class v2, Landroidx/compose/runtime/j1;
-
-    const-string v3, "value"
-
     const-string v4, "getValue()Ljava/lang/Object;"
 
     const/4 v5, 0x0
+
+    const-class v2, Landroidx/compose/runtime/Z;
+
+    const-string v3, "value"
 
     move-object v0, p0
 
@@ -55,11 +55,11 @@
 
     .line 2
     .line 3
-    check-cast v0, Landroidx/compose/runtime/j1;
+    check-cast v0, Landroidx/compose/runtime/Z;
 
     .line 4
     .line 5
-    invoke-interface {v0}, Landroidx/compose/runtime/d3;->getValue()Ljava/lang/Object;
+    invoke-interface {v0}, Landroidx/compose/runtime/H0;->getValue()Ljava/lang/Object;
 
     .line 6
     .line 7
@@ -78,11 +78,11 @@
 
     .line 2
     .line 3
-    check-cast v0, Landroidx/compose/runtime/j1;
+    check-cast v0, Landroidx/compose/runtime/Z;
 
     .line 4
     .line 5
-    invoke-interface {v0, p1}, Landroidx/compose/runtime/j1;->setValue(Ljava/lang/Object;)V
+    invoke-interface {v0, p1}, Landroidx/compose/runtime/Z;->setValue(Ljava/lang/Object;)V
 
     .line 6
     .line 7

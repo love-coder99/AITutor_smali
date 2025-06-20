@@ -3,7 +3,7 @@
 .source "SourceFile"
 
 # interfaces
-.implements Landroidx/compose/ui/input/pointer/n;
+.implements Landroidx/compose/ui/input/pointer/j;
 
 
 # instance fields
@@ -68,7 +68,7 @@
 
     .line 14
     .line 15
-    invoke-static {v2, v1}, Lrb/h;->d(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-virtual {v2, v1}, Ljava/lang/Object;->equals(Ljava/lang/Object;)Z
 
     .line 16
     .line 17
@@ -113,8 +113,11 @@
 .method public final hashCode()I
     .locals 1
 
+    .line 1
     iget v0, p0, Landroidx/compose/ui/input/pointer/a;->b:I
 
+    .line 2
+    .line 3
     return v0
 .end method
 
@@ -143,7 +146,7 @@
 
     .line 11
     .line 12
-    invoke-static {v0, v1, v2}, Landroid/support/v4/media/session/a;->F(Ljava/lang/StringBuilder;IC)Ljava/lang/String;
+    invoke-static {v0, v1, v2}, LB/u;->v(Ljava/lang/StringBuilder;IC)Ljava/lang/String;
 
     .line 13
     .line 14

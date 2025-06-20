@@ -29,13 +29,21 @@
 .end method
 
 .method public abstract shouldCollectSignalsOnUiThread()Ljava/lang/Boolean;
+    .annotation build Landroidx/annotation/Nullable;
+    .end annotation
 .end method
 
 .method public abstract shouldInitializeOnUiThread()Ljava/lang/Boolean;
+    .annotation build Landroidx/annotation/Nullable;
+    .end annotation
 .end method
 
 .method public abstract shouldLoadAdsOnUiThread(Lcom/applovin/mediation/MaxAdFormat;)Ljava/lang/Boolean;
+    .annotation build Landroidx/annotation/Nullable;
+    .end annotation
 .end method
 
 .method public abstract shouldShowAdsOnUiThread(Lcom/applovin/mediation/MaxAdFormat;)Ljava/lang/Boolean;
+    .annotation build Landroidx/annotation/Nullable;
+    .end annotation
 .end method

@@ -16,15 +16,15 @@
     .locals 2
 
     .line 1
-    new-instance v0, Lcom/applovin/impl/bt;
+    new-instance v0, Lcom/applovin/impl/T;
 
     .line 2
     .line 3
-    const/16 v1, 0xc
+    const/16 v1, 0xd
 
     .line 4
     .line 5
-    invoke-direct {v0, v1}, Lcom/applovin/impl/bt;-><init>(I)V
+    invoke-direct {v0, v1}, Lcom/applovin/impl/T;-><init>(I)V
 
     .line 6
     .line 7
@@ -44,6 +44,7 @@
 
     const/high16 v0, -0x40800000    # -1.0f
 
+    .line 2
     iput v0, p0, Lcom/applovin/impl/fh;->b:F
 
     return-void
@@ -52,7 +53,7 @@
 .method public constructor <init>(F)V
     .locals 2
 
-    .line 2
+    .line 3
     invoke-direct {p0}, Lcom/applovin/impl/ki;-><init>()V
 
     const/4 v0, 0x0
@@ -74,12 +75,13 @@
     :cond_0
     const/4 v0, 0x0
 
+    .line 4
     :goto_0
     const-string v1, "percent must be in the range of [0, 100]"
 
-    .line 3
     invoke-static {v0, v1}, Lcom/applovin/impl/b1;->a(ZLjava/lang/Object;)V
 
+    .line 5
     iput p1, p0, Lcom/applovin/impl/fh;->b:F
 
     return-void

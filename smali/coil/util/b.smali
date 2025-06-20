@@ -3,7 +3,7 @@
 .source "SourceFile"
 
 # interfaces
-.implements Landroidx/lifecycle/e;
+.implements Landroidx/lifecycle/f;
 
 
 # instance fields
@@ -11,7 +11,7 @@
 
 
 # direct methods
-.method public constructor <init>(Lkotlinx/coroutines/h;)V
+.method public constructor <init>(Lkotlinx/coroutines/g;)V
     .locals 0
 
     .line 1
@@ -29,39 +29,39 @@
 
 
 # virtual methods
-.method public final synthetic onCreate(Landroidx/lifecycle/w;)V
+.method public final synthetic onCreate(Landroidx/lifecycle/x;)V
     .locals 0
 
     .line 1
     return-void
 .end method
 
-.method public final synthetic onDestroy(Landroidx/lifecycle/w;)V
+.method public final synthetic onDestroy(Landroidx/lifecycle/x;)V
     .locals 0
 
     .line 1
     return-void
 .end method
 
-.method public final synthetic onPause(Landroidx/lifecycle/w;)V
+.method public final synthetic onPause(Landroidx/lifecycle/x;)V
     .locals 0
 
     .line 1
     return-void
 .end method
 
-.method public final synthetic onResume(Landroidx/lifecycle/w;)V
+.method public final synthetic onResume(Landroidx/lifecycle/x;)V
     .locals 0
 
     .line 1
     return-void
 .end method
 
-.method public final onStart(Landroidx/lifecycle/w;)V
+.method public final onStart(Landroidx/lifecycle/x;)V
     .locals 1
 
     .line 1
-    sget-object p1, Lqh/r;->a:Lqh/r;
+    sget-object p1, LX9/j;->a:LX9/j;
 
     .line 2
     .line 3
@@ -77,7 +77,7 @@
 
     .line 8
     .line 9
-    invoke-interface {v0, p1}, Lkotlin/coroutines/Continuation;->resumeWith(Ljava/lang/Object;)V
+    invoke-virtual {v0, p1}, Lkotlinx/coroutines/g;->resumeWith(Ljava/lang/Object;)V
 
     .line 10
     .line 11
@@ -85,7 +85,7 @@
     return-void
 .end method
 
-.method public final synthetic onStop(Landroidx/lifecycle/w;)V
+.method public final synthetic onStop(Landroidx/lifecycle/x;)V
     .locals 0
 
     .line 1

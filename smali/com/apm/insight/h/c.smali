@@ -30,6 +30,8 @@
 
 .method public static a(Landroid/content/Context;Ljava/lang/String;Ljava/io/File;)Ljava/lang/String;
     .locals 6
+    .annotation build Landroidx/annotation/Nullable;
+    .end annotation
 
     .line 1
     invoke-virtual {p0}, Landroid/content/Context;->getApplicationInfo()Landroid/content/pm/ApplicationInfo;
@@ -79,11 +81,11 @@
 
     goto :goto_0
 
+    .line 6
     :cond_2
     :try_start_0
     const-class p0, Lcom/apm/insight/h/c;
 
-    .line 6
     invoke-virtual {p0}, Ljava/lang/Class;->getClassLoader()Ljava/lang/ClassLoader;
 
     move-result-object p0
@@ -118,11 +120,11 @@
 
     if-eqz v2, :cond_6
 
+    .line 10
     const-class v0, Ldalvik/system/BaseDexClassLoader;
 
     const-string v2, "pathList"
 
-    .line 10
     invoke-virtual {v0, v2}, Ljava/lang/Class;->getDeclaredField(Ljava/lang/String;)Ljava/lang/reflect/Field;
 
     move-result-object v0
@@ -201,12 +203,13 @@
 
     goto :goto_2
 
+    .line 21
     :cond_5
     const-string v0, "not_found"
 
     goto :goto_4
 
-    .line 21
+    .line 22
     :goto_3
     invoke-virtual {p0}, Ljava/lang/Throwable;->getMessage()Ljava/lang/String;
 
@@ -220,13 +223,14 @@
 .method private static a(Ljava/lang/String;Ljava/lang/String;Ljava/io/File;)Ljava/lang/String;
     .locals 8
 
+    .line 23
     const-string v0, "/"
 
     const-string v1, "lib/"
 
     const/4 v2, 0x0
 
-    .line 22
+    .line 24
     :try_start_0
     new-instance v3, Ljava/util/zip/ZipFile;
 
@@ -240,7 +244,7 @@
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_3
 
-    .line 23
+    .line 25
     :try_start_1
     new-instance p0, Ljava/lang/StringBuilder;
 
@@ -262,7 +266,7 @@
 
     move-result-object p0
 
-    .line 24
+    .line 26
     invoke-virtual {v3, p0}, Ljava/util/zip/ZipFile;->getEntry(Ljava/lang/String;)Ljava/util/zip/ZipEntry;
 
     move-result-object p0
@@ -273,12 +277,12 @@
 
     const/16 p0, 0x2d
 
-    .line 25
+    .line 27
     invoke-virtual {v4, p0}, Ljava/lang/String;->indexOf(I)I
 
     move-result p0
 
-    .line 26
+    .line 28
     new-instance v6, Ljava/lang/StringBuilder;
 
     invoke-direct {v6, v1}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
@@ -287,13 +291,13 @@
 
     goto :goto_0
 
-    .line 27
+    .line 29
     :cond_0
     invoke-virtual {v4}, Ljava/lang/String;->length()I
 
     move-result p0
 
-    .line 28
+    .line 30
     :goto_0
     invoke-virtual {v4, v5, p0}, Ljava/lang/String;->substring(II)Ljava/lang/String;
 
@@ -303,7 +307,7 @@
 
     invoke-virtual {v6, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    .line 29
+    .line 31
     invoke-static {p1}, Ljava/lang/System;->mapLibraryName(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object p0
@@ -314,16 +318,16 @@
 
     move-result-object p0
 
-    .line 30
+    .line 32
     invoke-virtual {v3, p0}, Ljava/util/zip/ZipFile;->getEntry(Ljava/lang/String;)Ljava/util/zip/ZipEntry;
 
     move-result-object p1
 
     if-nez p1, :cond_1
 
+    .line 33
     const-string p1, "Library entry not found:"
 
-    .line 31
     invoke-static {p0}, Ljava/lang/String;->valueOf(Ljava/lang/Object;)Ljava/lang/String;
 
     move-result-object p0
@@ -334,13 +338,13 @@
     :try_end_1
     .catchall {:try_start_1 .. :try_end_1} :catchall_0
 
-    .line 32
-    invoke-static {v2}, Lcom/apm/insight/a;->a(Ljava/io/Closeable;)V
-
-    .line 33
-    invoke-static {v2}, Lcom/apm/insight/a;->a(Ljava/io/Closeable;)V
-
     .line 34
+    invoke-static {v2}, Lcom/apm/insight/a;->a(Ljava/io/Closeable;)V
+
+    .line 35
+    invoke-static {v2}, Lcom/apm/insight/a;->a(Ljava/io/Closeable;)V
+
+    .line 36
     :goto_1
     invoke-static {v3}, Lcom/apm/insight/a;->a(Ljava/util/zip/ZipFile;)V
 
@@ -356,19 +360,19 @@
     :cond_1
     move-object p0, p1
 
-    .line 35
+    .line 37
     :cond_2
     :try_start_2
     invoke-virtual {p2}, Ljava/io/File;->createNewFile()Z
 
-    .line 36
+    .line 38
     invoke-virtual {v3, p0}, Ljava/util/zip/ZipFile;->getInputStream(Ljava/util/zip/ZipEntry;)Ljava/io/InputStream;
 
     move-result-object p0
     :try_end_2
     .catchall {:try_start_2 .. :try_end_2} :catchall_0
 
-    .line 37
+    .line 39
     :try_start_3
     new-instance p1, Ljava/io/FileOutputStream;
 
@@ -378,10 +382,11 @@
 
     const/16 v0, 0x1000
 
+    .line 40
     :try_start_4
     new-array v0, v0, [B
 
-    .line 38
+    .line 41
     :goto_2
     invoke-virtual {p0, v0}, Ljava/io/InputStream;->read([B)I
 
@@ -389,7 +394,7 @@
 
     if-lez v1, :cond_3
 
-    .line 39
+    .line 42
     invoke-virtual {p1, v0, v5, v1}, Ljava/io/FileOutputStream;->write([BII)V
 
     goto :goto_2
@@ -405,7 +410,7 @@
 
     goto :goto_3
 
-    .line 40
+    .line 43
     :cond_3
     invoke-virtual {p2}, Ljava/io/File;->getAbsolutePath()Ljava/lang/String;
 
@@ -415,13 +420,13 @@
     :try_end_4
     .catchall {:try_start_4 .. :try_end_4} :catchall_1
 
-    .line 41
+    .line 44
     invoke-static {p1}, Lcom/apm/insight/a;->a(Ljava/io/Closeable;)V
 
-    .line 42
+    .line 45
     invoke-static {p0}, Lcom/apm/insight/a;->a(Ljava/io/Closeable;)V
 
-    .line 43
+    .line 46
     invoke-static {v3}, Lcom/apm/insight/a;->a(Ljava/util/zip/ZipFile;)V
 
     return-object v2
@@ -444,7 +449,7 @@
 
     move-object v3, p1
 
-    .line 44
+    .line 47
     :goto_3
     :try_start_5
     invoke-virtual {p0}, Ljava/lang/Throwable;->getMessage()Ljava/lang/String;
@@ -453,10 +458,10 @@
     :try_end_5
     .catchall {:try_start_5 .. :try_end_5} :catchall_4
 
-    .line 45
+    .line 48
     invoke-static {v2}, Lcom/apm/insight/a;->a(Ljava/io/Closeable;)V
 
-    .line 46
+    .line 49
     invoke-static {p1}, Lcom/apm/insight/a;->a(Ljava/io/Closeable;)V
 
     goto :goto_1
@@ -464,13 +469,13 @@
     :catchall_4
     move-exception p0
 
-    .line 47
+    .line 50
     invoke-static {v2}, Lcom/apm/insight/a;->a(Ljava/io/Closeable;)V
 
-    .line 48
+    .line 51
     invoke-static {p1}, Lcom/apm/insight/a;->a(Ljava/io/Closeable;)V
 
-    .line 49
+    .line 52
     invoke-static {v3}, Lcom/apm/insight/a;->a(Ljava/util/zip/ZipFile;)V
 
     throw p0

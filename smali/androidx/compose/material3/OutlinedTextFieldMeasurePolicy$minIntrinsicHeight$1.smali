@@ -3,14 +3,14 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lzh/e;
+.implements Lka/e;
 
 
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "Lkotlin/jvm/internal/Lambda;",
-        "Lzh/e;"
+        "Lka/e;"
     }
 .end annotation
 
@@ -19,12 +19,12 @@
         "\u0000\u000e\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u0008\n\u0002\u0008\u0004\u0010\u0006\u001a\u00020\u00022\u0006\u0010\u0001\u001a\u00020\u00002\u0006\u0010\u0003\u001a\u00020\u0002H\n\u00a2\u0006\u0004\u0008\u0004\u0010\u0005"
     }
     d2 = {
-        "Landroidx/compose/ui/layout/o;",
+        "Landroidx/compose/ui/layout/l;",
         "intrinsicMeasurable",
         "",
         "w",
         "invoke",
-        "(Landroidx/compose/ui/layout/o;I)Ljava/lang/Integer;",
+        "(Landroidx/compose/ui/layout/l;I)Ljava/lang/Integer;",
         "<anonymous>"
     }
     k = 0x3
@@ -65,11 +65,11 @@
 
 
 # virtual methods
-.method public final invoke(Landroidx/compose/ui/layout/o;I)Ljava/lang/Integer;
+.method public final invoke(Landroidx/compose/ui/layout/l;I)Ljava/lang/Integer;
     .locals 0
 
     .line 2
-    invoke-interface {p1, p2}, Landroidx/compose/ui/layout/o;->V(I)I
+    invoke-interface {p1, p2}, Landroidx/compose/ui/layout/l;->M(I)I
 
     move-result p1
 
@@ -84,7 +84,7 @@
     .locals 0
 
     .line 1
-    check-cast p1, Landroidx/compose/ui/layout/o;
+    check-cast p1, Landroidx/compose/ui/layout/l;
 
     check-cast p2, Ljava/lang/Number;
 
@@ -92,7 +92,7 @@
 
     move-result p2
 
-    invoke-virtual {p0, p1, p2}, Landroidx/compose/material3/OutlinedTextFieldMeasurePolicy$minIntrinsicHeight$1;->invoke(Landroidx/compose/ui/layout/o;I)Ljava/lang/Integer;
+    invoke-virtual {p0, p1, p2}, Landroidx/compose/material3/OutlinedTextFieldMeasurePolicy$minIntrinsicHeight$1;->invoke(Landroidx/compose/ui/layout/l;I)Ljava/lang/Integer;
 
     move-result-object p1
 

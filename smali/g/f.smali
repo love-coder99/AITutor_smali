@@ -1,161 +1,687 @@
-.class public abstract Lg/f;
+.class public final synthetic LG/f;
 .super Ljava/lang/Object;
 .source "SourceFile"
 
+# interfaces
+.implements Landroidx/concurrent/futures/i;
+.implements LX4/a;
+.implements LW4/g;
+.implements Lcom/applovin/impl/gc$a;
+.implements Lcom/google/android/gms/tasks/Continuation;
 
-# static fields
-.field public static action_bar:I = 0x7f0a0044
 
-.field public static action_bar_activity_content:I = 0x7f0a0045
+# instance fields
+.field public final synthetic b:I
 
-.field public static action_bar_container:I = 0x7f0a0046
+.field public final synthetic c:Ljava/lang/Object;
 
-.field public static action_bar_root:I = 0x7f0a0047
+.field public final synthetic d:J
 
-.field public static action_bar_spinner:I = 0x7f0a0048
+.field public final synthetic f:Ljava/lang/Object;
 
-.field public static action_bar_subtitle:I = 0x7f0a0049
 
-.field public static action_bar_title:I = 0x7f0a004a
+# direct methods
+.method public synthetic constructor <init>(Ld8/g;JLjava/util/HashMap;)V
+    .locals 1
 
-.field public static action_context_bar:I = 0x7f0a004c
+    .line 1
+    const/4 v0, 0x5
 
-.field public static action_menu_divider:I = 0x7f0a004f
+    iput v0, p0, LG/f;->b:I
 
-.field public static action_menu_presenter:I = 0x7f0a0050
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-.field public static action_mode_bar:I = 0x7f0a0051
+    iput-object p1, p0, LG/f;->f:Ljava/lang/Object;
 
-.field public static action_mode_bar_stub:I = 0x7f0a0052
+    iput-wide p2, p0, LG/f;->d:J
 
-.field public static action_mode_close_button:I = 0x7f0a0053
+    iput-object p4, p0, LG/f;->c:Ljava/lang/Object;
 
-.field public static activity_chooser_view_content:I = 0x7f0a0057
+    return-void
+.end method
 
-.field public static add:I = 0x7f0a005e
+.method public synthetic constructor <init>(Ljava/lang/Object;Ljava/lang/Object;JI)V
+    .locals 0
 
-.field public static alertTitle:I = 0x7f0a008d
+    .line 2
+    iput p5, p0, LG/f;->b:I
 
-.field public static buttonPanel:I = 0x7f0a00e2
+    iput-object p1, p0, LG/f;->f:Ljava/lang/Object;
 
-.field public static checkbox:I = 0x7f0a00f0
+    iput-object p2, p0, LG/f;->c:Ljava/lang/Object;
 
-.field public static checked:I = 0x7f0a00f1
+    iput-wide p3, p0, LG/f;->d:J
 
-.field public static content:I = 0x7f0a010f
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-.field public static contentPanel:I = 0x7f0a0110
+    return-void
+.end method
 
-.field public static custom:I = 0x7f0a0118
 
-.field public static customPanel:I = 0x7f0a0119
+# virtual methods
+.method public a(Ljava/lang/Object;)V
+    .locals 4
 
-.field public static decor_content_parent:I = 0x7f0a0120
+    .line 1
+    iget-wide v0, p0, LG/f;->d:J
 
-.field public static default_activity_button:I = 0x7f0a0121
+    check-cast p1, Lcom/applovin/impl/s0;
 
-.field public static edit_query:I = 0x7f0a0141
+    iget-object v2, p0, LG/f;->f:Ljava/lang/Object;
 
-.field public static expand_activities_button:I = 0x7f0a0155
+    check-cast v2, Lcom/applovin/impl/s0$a;
 
-.field public static expanded_menu:I = 0x7f0a0156
+    iget-object v3, p0, LG/f;->c:Ljava/lang/Object;
 
-.field public static group_divider:I = 0x7f0a0175
+    invoke-static {v2, v3, v0, v1, p1}, Lcom/applovin/impl/r0;->g0(Lcom/applovin/impl/s0$a;Ljava/lang/Object;JLcom/applovin/impl/s0;)V
 
-.field public static home:I = 0x7f0a017e
+    return-void
+.end method
 
-.field public static icon:I = 0x7f0a0183
+.method public apply(Ljava/lang/Object;)Ljava/lang/Object;
+    .locals 7
 
-.field public static image:I = 0x7f0a0189
+    .line 1
+    check-cast p1, Landroid/database/sqlite/SQLiteDatabase;
 
-.field public static listMode:I = 0x7f0a01a9
+    .line 2
+    .line 3
+    iget-object v0, p0, LG/f;->c:Ljava/lang/Object;
 
-.field public static list_item:I = 0x7f0a01ab
+    .line 4
+    .line 5
+    check-cast v0, Lcom/google/android/datatransport/runtime/firebase/transport/LogEventDropped$Reason;
 
-.field public static message:I = 0x7f0a029c
+    .line 6
+    .line 7
+    invoke-virtual {v0}, Lcom/google/android/datatransport/runtime/firebase/transport/LogEventDropped$Reason;->getNumber()I
 
-.field public static multiply:I = 0x7f0a02c1
+    .line 8
+    .line 9
+    .line 10
+    move-result v1
 
-.field public static none:I = 0x7f0a02d7
-
-.field public static normal:I = 0x7f0a02d8
-
-.field public static off:I = 0x7f0a02dd
-
-.field public static on:I = 0x7f0a02e1
-
-.field public static parentPanel:I = 0x7f0a02fc
-
-.field public static progress_circular:I = 0x7f0a030c
-
-.field public static progress_horizontal:I = 0x7f0a030d
-
-.field public static radio:I = 0x7f0a030f
-
-.field public static screen:I = 0x7f0a0327
-
-.field public static scrollIndicatorDown:I = 0x7f0a0329
-
-.field public static scrollIndicatorUp:I = 0x7f0a032a
-
-.field public static scrollView:I = 0x7f0a032b
-
-.field public static search_badge:I = 0x7f0a032d
-
-.field public static search_bar:I = 0x7f0a032e
-
-.field public static search_button:I = 0x7f0a032f
-
-.field public static search_close_btn:I = 0x7f0a0330
-
-.field public static search_edit_frame:I = 0x7f0a0331
-
-.field public static search_go_btn:I = 0x7f0a0332
-
-.field public static search_mag_icon:I = 0x7f0a0333
-
-.field public static search_plate:I = 0x7f0a0334
-
-.field public static search_src_text:I = 0x7f0a0335
-
-.field public static search_voice_btn:I = 0x7f0a0336
-
-.field public static select_dialog_listview:I = 0x7f0a0337
-
-.field public static shortcut:I = 0x7f0a033d
-
-.field public static spacer:I = 0x7f0a0350
-
-.field public static split_action_bar:I = 0x7f0a0355
-
-.field public static src_atop:I = 0x7f0a035a
-
-.field public static src_in:I = 0x7f0a035b
-
-.field public static src_over:I = 0x7f0a035c
-
-.field public static submenuarrow:I = 0x7f0a0368
-
-.field public static submit_area:I = 0x7f0a0369
-
-.field public static tabMode:I = 0x7f0a036c
-
-.field public static textSpacerNoButtons:I = 0x7f0a037d
-
-.field public static textSpacerNoTitle:I = 0x7f0a037e
-
-.field public static title:I = 0x7f0a038e
-
-.field public static titleDividerNoCustom:I = 0x7f0a038f
-
-.field public static title_template:I = 0x7f0a0390
-
-.field public static topPanel:I = 0x7f0a0393
-
-.field public static unchecked:I = 0x7f0a03a4
-
-.field public static uniform:I = 0x7f0a03a5
-
-.field public static up:I = 0x7f0a03a8
-
-.field public static wrap_content:I = 0x7f0a03c0
+    .line 11
+    invoke-static {v1}, Ljava/lang/Integer;->toString(I)Ljava/lang/String;
+
+    .line 12
+    .line 13
+    .line 14
+    move-result-object v1
+
+    .line 15
+    iget-object v2, p0, LG/f;->f:Ljava/lang/Object;
+
+    .line 16
+    .line 17
+    check-cast v2, Ljava/lang/String;
+
+    .line 18
+    .line 19
+    filled-new-array {v2, v1}, [Ljava/lang/String;
+
+    .line 20
+    .line 21
+    .line 22
+    move-result-object v1
+
+    .line 23
+    const-string v3, "SELECT 1 FROM log_event_dropped WHERE log_source = ? AND reason = ?"
+
+    .line 24
+    .line 25
+    invoke-virtual {p1, v3, v1}, Landroid/database/sqlite/SQLiteDatabase;->rawQuery(Ljava/lang/String;[Ljava/lang/String;)Landroid/database/Cursor;
+
+    .line 26
+    .line 27
+    .line 28
+    move-result-object v1
+
+    .line 29
+    new-instance v3, LC7/q;
+
+    .line 30
+    .line 31
+    const/16 v4, 0xf
+
+    .line 32
+    .line 33
+    invoke-direct {v3, v4}, LC7/q;-><init>(I)V
+
+    .line 34
+    .line 35
+    .line 36
+    invoke-static {v1, v3}, LW4/i;->k(Landroid/database/Cursor;LW4/g;)Ljava/lang/Object;
+
+    .line 37
+    .line 38
+    .line 39
+    move-result-object v1
+
+    .line 40
+    check-cast v1, Ljava/lang/Boolean;
+
+    .line 41
+    .line 42
+    invoke-virtual {v1}, Ljava/lang/Boolean;->booleanValue()Z
+
+    .line 43
+    .line 44
+    .line 45
+    move-result v1
+
+    .line 46
+    const/4 v3, 0x0
+
+    .line 47
+    iget-wide v4, p0, LG/f;->d:J
+
+    .line 48
+    .line 49
+    if-nez v1, :cond_0
+
+    .line 50
+    .line 51
+    new-instance v1, Landroid/content/ContentValues;
+
+    .line 52
+    .line 53
+    invoke-direct {v1}, Landroid/content/ContentValues;-><init>()V
+
+    .line 54
+    .line 55
+    .line 56
+    const-string v6, "log_source"
+
+    .line 57
+    .line 58
+    invoke-virtual {v1, v6, v2}, Landroid/content/ContentValues;->put(Ljava/lang/String;Ljava/lang/String;)V
+
+    .line 59
+    .line 60
+    .line 61
+    invoke-virtual {v0}, Lcom/google/android/datatransport/runtime/firebase/transport/LogEventDropped$Reason;->getNumber()I
+
+    .line 62
+    .line 63
+    .line 64
+    move-result v0
+
+    .line 65
+    invoke-static {v0}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    .line 66
+    .line 67
+    .line 68
+    move-result-object v0
+
+    .line 69
+    const-string v2, "reason"
+
+    .line 70
+    .line 71
+    invoke-virtual {v1, v2, v0}, Landroid/content/ContentValues;->put(Ljava/lang/String;Ljava/lang/Integer;)V
+
+    .line 72
+    .line 73
+    .line 74
+    invoke-static {v4, v5}, Ljava/lang/Long;->valueOf(J)Ljava/lang/Long;
+
+    .line 75
+    .line 76
+    .line 77
+    move-result-object v0
+
+    .line 78
+    const-string v2, "events_dropped_count"
+
+    .line 79
+    .line 80
+    invoke-virtual {v1, v2, v0}, Landroid/content/ContentValues;->put(Ljava/lang/String;Ljava/lang/Long;)V
+
+    .line 81
+    .line 82
+    .line 83
+    const-string v0, "log_event_dropped"
+
+    .line 84
+    .line 85
+    invoke-virtual {p1, v0, v3, v1}, Landroid/database/sqlite/SQLiteDatabase;->insert(Ljava/lang/String;Ljava/lang/String;Landroid/content/ContentValues;)J
+
+    .line 86
+    .line 87
+    .line 88
+    goto :goto_0
+
+    .line 89
+    :cond_0
+    const-string v1, "UPDATE log_event_dropped SET events_dropped_count = events_dropped_count + "
+
+    .line 90
+    .line 91
+    const-string v6, " WHERE log_source = ? AND reason = ?"
+
+    .line 92
+    .line 93
+    invoke-static {v1, v6, v4, v5}, Landroidx/compose/runtime/a0;->q(Ljava/lang/String;Ljava/lang/String;J)Ljava/lang/String;
+
+    .line 94
+    .line 95
+    .line 96
+    move-result-object v1
+
+    .line 97
+    invoke-virtual {v0}, Lcom/google/android/datatransport/runtime/firebase/transport/LogEventDropped$Reason;->getNumber()I
+
+    .line 98
+    .line 99
+    .line 100
+    move-result v0
+
+    .line 101
+    invoke-static {v0}, Ljava/lang/Integer;->toString(I)Ljava/lang/String;
+
+    .line 102
+    .line 103
+    .line 104
+    move-result-object v0
+
+    .line 105
+    filled-new-array {v2, v0}, [Ljava/lang/String;
+
+    .line 106
+    .line 107
+    .line 108
+    move-result-object v0
+
+    .line 109
+    invoke-virtual {p1, v1, v0}, Landroid/database/sqlite/SQLiteDatabase;->execSQL(Ljava/lang/String;[Ljava/lang/Object;)V
+
+    .line 110
+    .line 111
+    .line 112
+    :goto_0
+    return-object v3
+.end method
+
+.method public execute()Ljava/lang/Object;
+    .locals 5
+
+    .line 1
+    iget-object v0, p0, LG/f;->f:Ljava/lang/Object;
+
+    .line 2
+    .line 3
+    check-cast v0, LV4/i;
+
+    .line 4
+    .line 5
+    iget-object v1, v0, LV4/i;->g:LY4/a;
+
+    .line 6
+    .line 7
+    invoke-interface {v1}, LY4/a;->i()J
+
+    .line 8
+    .line 9
+    .line 10
+    move-result-wide v1
+
+    .line 11
+    iget-wide v3, p0, LG/f;->d:J
+
+    .line 12
+    .line 13
+    add-long/2addr v1, v3
+
+    .line 14
+    iget-object v0, v0, LV4/i;->c:LW4/d;
+
+    .line 15
+    .line 16
+    check-cast v0, LW4/i;
+
+    .line 17
+    .line 18
+    iget-object v3, p0, LG/f;->c:Ljava/lang/Object;
+
+    .line 19
+    .line 20
+    check-cast v3, LP4/j;
+
+    .line 21
+    .line 22
+    invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    .line 23
+    .line 24
+    .line 25
+    new-instance v4, LW4/e;
+
+    .line 26
+    .line 27
+    invoke-direct {v4, v1, v2, v3}, LW4/e;-><init>(JLP4/j;)V
+
+    .line 28
+    .line 29
+    .line 30
+    invoke-virtual {v0, v4}, LW4/i;->e(LW4/g;)Ljava/lang/Object;
+
+    .line 31
+    .line 32
+    .line 33
+    const/4 v0, 0x0
+
+    .line 34
+    return-object v0
+.end method
+
+.method public p(Landroidx/concurrent/futures/h;)Ljava/lang/Object;
+    .locals 6
+
+    .line 1
+    iget v0, p0, LG/f;->b:I
+
+    .line 2
+    .line 3
+    packed-switch v0, :pswitch_data_0
+
+    .line 4
+    .line 5
+    .line 6
+    iget-object v0, p0, LG/f;->f:Ljava/lang/Object;
+
+    .line 7
+    .line 8
+    check-cast v0, Landroidx/concurrent/futures/k;
+
+    .line 9
+    .line 10
+    invoke-static {v0, p1}, LG/m;->f(Lcom/google/common/util/concurrent/d;Landroidx/concurrent/futures/h;)V
+
+    .line 11
+    .line 12
+    .line 13
+    iget-object v1, v0, Landroidx/concurrent/futures/k;->c:Landroidx/concurrent/futures/j;
+
+    .line 14
+    .line 15
+    invoke-virtual {v1}, Landroidx/concurrent/futures/g;->isDone()Z
+
+    .line 16
+    .line 17
+    .line 18
+    move-result v2
+
+    .line 19
+    if-nez v2, :cond_0
+
+    .line 20
+    .line 21
+    new-instance v2, LB/c;
+
+    .line 22
+    .line 23
+    const/16 v3, 0x12
+
+    .line 24
+    .line 25
+    invoke-direct {v2, p1, v3, v0}, LB/c;-><init>(Ljava/lang/Object;ILjava/lang/Object;)V
+
+    .line 26
+    .line 27
+    .line 28
+    sget-object p1, Ljava/util/concurrent/TimeUnit;->MILLISECONDS:Ljava/util/concurrent/TimeUnit;
+
+    .line 29
+    .line 30
+    iget-object v3, p0, LG/f;->c:Ljava/lang/Object;
+
+    .line 31
+    .line 32
+    check-cast v3, LF/d;
+
+    .line 33
+    .line 34
+    iget-wide v4, p0, LG/f;->d:J
+
+    .line 35
+    .line 36
+    invoke-virtual {v3, v2, v4, v5, p1}, LF/d;->schedule(Ljava/lang/Runnable;JLjava/util/concurrent/TimeUnit;)Ljava/util/concurrent/ScheduledFuture;
+
+    .line 37
+    .line 38
+    .line 39
+    move-result-object p1
+
+    .line 40
+    new-instance v2, LG/h;
+
+    .line 41
+    .line 42
+    const/4 v3, 0x1
+
+    .line 43
+    invoke-direct {v2, p1, v3}, LG/h;-><init>(Ljava/util/concurrent/ScheduledFuture;I)V
+
+    .line 44
+    .line 45
+    .line 46
+    invoke-static {}, LX3/j;->j()LF/a;
+
+    .line 47
+    .line 48
+    .line 49
+    move-result-object p1
+
+    .line 50
+    invoke-virtual {v1, v2, p1}, Landroidx/concurrent/futures/g;->a(Ljava/lang/Runnable;Ljava/util/concurrent/Executor;)V
+
+    .line 51
+    .line 52
+    .line 53
+    :cond_0
+    new-instance p1, Ljava/lang/StringBuilder;
+
+    .line 54
+    .line 55
+    const-string v1, "TimeoutFuture["
+
+    .line 56
+    .line 57
+    invoke-direct {p1, v1}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+
+    .line 58
+    .line 59
+    .line 60
+    invoke-virtual {p1, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+
+    .line 61
+    .line 62
+    .line 63
+    const-string v0, "]"
+
+    .line 64
+    .line 65
+    invoke-virtual {p1, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 66
+    .line 67
+    .line 68
+    invoke-virtual {p1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    .line 69
+    .line 70
+    .line 71
+    move-result-object p1
+
+    .line 72
+    return-object p1
+
+    .line 73
+    :pswitch_0
+    iget-object v0, p0, LG/f;->f:Ljava/lang/Object;
+
+    .line 74
+    .line 75
+    check-cast v0, Lcom/google/common/util/concurrent/d;
+
+    .line 76
+    .line 77
+    invoke-static {v0, p1}, LG/m;->f(Lcom/google/common/util/concurrent/d;Landroidx/concurrent/futures/h;)V
+
+    .line 78
+    .line 79
+    .line 80
+    invoke-interface {v0}, Ljava/util/concurrent/Future;->isDone()Z
+
+    .line 81
+    .line 82
+    .line 83
+    move-result v1
+
+    .line 84
+    if-nez v1, :cond_1
+
+    .line 85
+    .line 86
+    new-instance v1, LG/g;
+
+    .line 87
+    .line 88
+    iget-wide v2, p0, LG/f;->d:J
+
+    .line 89
+    .line 90
+    invoke-direct {v1, p1, v0, v2, v3}, LG/g;-><init>(Landroidx/concurrent/futures/h;Lcom/google/common/util/concurrent/d;J)V
+
+    .line 91
+    .line 92
+    .line 93
+    sget-object p1, Ljava/util/concurrent/TimeUnit;->MILLISECONDS:Ljava/util/concurrent/TimeUnit;
+
+    .line 94
+    .line 95
+    iget-object v4, p0, LG/f;->c:Ljava/lang/Object;
+
+    .line 96
+    .line 97
+    check-cast v4, LF/d;
+
+    .line 98
+    .line 99
+    invoke-virtual {v4, v1, v2, v3, p1}, LF/d;->schedule(Ljava/util/concurrent/Callable;JLjava/util/concurrent/TimeUnit;)Ljava/util/concurrent/ScheduledFuture;
+
+    .line 100
+    .line 101
+    .line 102
+    move-result-object p1
+
+    .line 103
+    new-instance v1, LG/h;
+
+    .line 104
+    .line 105
+    const/4 v2, 0x0
+
+    .line 106
+    invoke-direct {v1, p1, v2}, LG/h;-><init>(Ljava/util/concurrent/ScheduledFuture;I)V
+
+    .line 107
+    .line 108
+    .line 109
+    invoke-static {}, LX3/j;->j()LF/a;
+
+    .line 110
+    .line 111
+    .line 112
+    move-result-object p1
+
+    .line 113
+    invoke-interface {v0, v1, p1}, Lcom/google/common/util/concurrent/d;->a(Ljava/lang/Runnable;Ljava/util/concurrent/Executor;)V
+
+    .line 114
+    .line 115
+    .line 116
+    :cond_1
+    new-instance p1, Ljava/lang/StringBuilder;
+
+    .line 117
+    .line 118
+    const-string v1, "TimeoutFuture["
+
+    .line 119
+    .line 120
+    invoke-direct {p1, v1}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+
+    .line 121
+    .line 122
+    .line 123
+    invoke-virtual {p1, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+
+    .line 124
+    .line 125
+    .line 126
+    const-string v0, "]"
+
+    .line 127
+    .line 128
+    invoke-virtual {p1, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 129
+    .line 130
+    .line 131
+    invoke-virtual {p1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    .line 132
+    .line 133
+    .line 134
+    move-result-object p1
+
+    .line 135
+    return-object p1
+
+    .line 136
+    nop
+
+    .line 137
+    :pswitch_data_0
+    .packed-switch 0x0
+        :pswitch_0
+    .end packed-switch
+.end method
+
+.method public then(Lcom/google/android/gms/tasks/Task;)Ljava/lang/Object;
+    .locals 4
+
+    .line 1
+    iget-object v0, p0, LG/f;->f:Ljava/lang/Object;
+
+    .line 2
+    .line 3
+    check-cast v0, Ld8/g;
+
+    .line 4
+    .line 5
+    iget-object v1, p0, LG/f;->c:Ljava/lang/Object;
+
+    .line 6
+    .line 7
+    check-cast v1, Ljava/util/HashMap;
+
+    .line 8
+    .line 9
+    iget-wide v2, p0, LG/f;->d:J
+
+    .line 10
+    .line 11
+    invoke-virtual {v0, p1, v2, v3, v1}, Ld8/g;->b(Lcom/google/android/gms/tasks/Task;JLjava/util/HashMap;)Lcom/google/android/gms/tasks/Task;
+
+    .line 12
+    .line 13
+    .line 14
+    move-result-object p1
+
+    .line 15
+    return-object p1
+.end method

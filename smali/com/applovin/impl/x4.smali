@@ -149,9 +149,9 @@
 .method private a(Ljava/lang/Object;)Landroid/os/Bundle;
     .locals 4
 
+    .line 73
     iget-object v0, p0, Lcom/applovin/impl/x4;->a:Lcom/applovin/impl/sdk/j;
 
-    .line 71
     invoke-virtual {v0}, Lcom/applovin/impl/sdk/j;->I()Lcom/applovin/impl/sdk/n;
 
     invoke-static {}, Lcom/applovin/impl/sdk/n;->a()Z
@@ -182,15 +182,15 @@
 
     invoke-virtual {v0, v1, v2}, Lcom/applovin/impl/sdk/n;->a(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 72
+    .line 74
     :cond_0
     invoke-static {p1}, Lcom/applovin/impl/yp;->a(Ljava/lang/Object;)Ljava/lang/String;
 
     move-result-object p1
 
+    .line 75
     iget-object v0, p0, Lcom/applovin/impl/x4;->a:Lcom/applovin/impl/sdk/j;
 
-    .line 73
     invoke-virtual {v0}, Lcom/applovin/impl/sdk/j;->i()Lcom/applovin/impl/v;
 
     move-result-object v0
@@ -199,9 +199,9 @@
 
     move-result-object v0
 
+    .line 76
     iget-object v2, p0, Lcom/applovin/impl/x4;->a:Lcom/applovin/impl/sdk/j;
 
-    .line 74
     invoke-virtual {v2}, Lcom/applovin/impl/sdk/j;->I()Lcom/applovin/impl/sdk/n;
 
     invoke-static {}, Lcom/applovin/impl/sdk/n;->a()Z
@@ -218,13 +218,13 @@
 
     const-string v3, "Serve id: "
 
-    .line 75
-    invoke-static {v3, p1, v2, v1}, Landroidx/compose/foundation/text/modifiers/f;->A(Ljava/lang/String;Ljava/lang/String;Lcom/applovin/impl/sdk/n;Ljava/lang/String;)V
+    .line 77
+    invoke-static {v3, p1, v2, v1}, Lcom/android/billingclient/api/a;->w(Ljava/lang/String;Ljava/lang/String;Lcom/applovin/impl/sdk/n;Ljava/lang/String;)V
 
+    .line 78
     :cond_1
     iget-object p1, p0, Lcom/applovin/impl/x4;->a:Lcom/applovin/impl/sdk/j;
 
-    .line 76
     invoke-virtual {p1}, Lcom/applovin/impl/sdk/j;->I()Lcom/applovin/impl/sdk/n;
 
     invoke-static {}, Lcom/applovin/impl/sdk/n;->a()Z
@@ -256,7 +256,7 @@
     :cond_2
     if-eqz v0, :cond_4
 
-    .line 77
+    .line 79
     invoke-virtual {v0}, Landroid/os/BaseBundle;->keySet()Ljava/util/Set;
 
     move-result-object p1
@@ -278,15 +278,15 @@
 
     check-cast v1, Ljava/lang/String;
 
-    .line 78
+    .line 80
     invoke-virtual {v0, v1}, Landroid/os/BaseBundle;->get(Ljava/lang/String;)Ljava/lang/Object;
 
     move-result-object v2
 
-    .line 79
+    .line 81
     invoke-virtual {v0, v1}, Landroid/os/Bundle;->remove(Ljava/lang/String;)V
 
-    .line 80
+    .line 82
     invoke-static {v1}, Lcom/applovin/impl/sdk/utils/StringUtils;->toHumanReadableString(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v1
@@ -305,125 +305,128 @@
 .end method
 
 .method private a(Landroid/widget/FrameLayout;Landroid/app/Activity;)Landroid/view/View;
-    .locals 6
+    .locals 5
 
     const/16 v0, 0x28
 
-    .line 3
+    .line 4
     invoke-static {p2, v0}, Lcom/applovin/sdk/AppLovinSdkUtils;->dpToPx(Landroid/content/Context;I)I
 
     move-result v0
 
-    .line 4
+    .line 5
     div-int/lit8 v1, v0, 0xa
 
-    .line 5
+    .line 6
     new-instance v2, Landroid/widget/FrameLayout$LayoutParams;
 
     const v3, 0x800015
 
     invoke-direct {v2, v0, v0, v3}, Landroid/widget/FrameLayout$LayoutParams;-><init>(III)V
 
-    .line 6
+    .line 7
     invoke-virtual {v2, v1, v1, v1, v1}, Landroid/view/ViewGroup$MarginLayoutParams;->setMargins(IIII)V
 
-    const/4 v0, 0x2
-
-    .line 7
-    :try_start_0
-    new-instance v3, Landroid/widget/ImageButton;
-
-    invoke-direct {v3, p2}, Landroid/widget/ImageButton;-><init>(Landroid/content/Context;)V
-
     .line 8
-    invoke-virtual {p2}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
+    :try_start_0
+    new-instance v0, Landroid/widget/ImageButton;
 
-    move-result-object v4
-
-    sget v5, Lcom/applovin/sdk/R$drawable;->applovin_ic_white_small:I
-
-    invoke-virtual {v4, v5}, Landroid/content/res/Resources;->getDrawable(I)Landroid/graphics/drawable/Drawable;
-
-    move-result-object v4
-
-    invoke-virtual {v3, v4}, Landroid/widget/ImageView;->setImageDrawable(Landroid/graphics/drawable/Drawable;)V
+    invoke-direct {v0, p2}, Landroid/widget/ImageButton;-><init>(Landroid/content/Context;)V
 
     .line 9
-    sget-object v4, Landroid/widget/ImageView$ScaleType;->FIT_CENTER:Landroid/widget/ImageView$ScaleType;
+    invoke-virtual {p2}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
 
-    invoke-virtual {v3, v4}, Landroid/widget/ImageView;->setScaleType(Landroid/widget/ImageView$ScaleType;)V
+    move-result-object v3
 
-    mul-int/lit8 v4, v1, 0x2
+    sget v4, Lcom/applovin/sdk/R$drawable;->applovin_ic_white_small:I
+
+    invoke-virtual {v3, v4}, Landroid/content/res/Resources;->getDrawable(I)Landroid/graphics/drawable/Drawable;
+
+    move-result-object v3
+
+    invoke-virtual {v0, v3}, Landroid/widget/ImageView;->setImageDrawable(Landroid/graphics/drawable/Drawable;)V
 
     .line 10
-    invoke-virtual {v3, v1, v1, v1, v4}, Landroid/view/View;->setPadding(IIII)V
+    sget-object v3, Landroid/widget/ImageView$ScaleType;->FIT_CENTER:Landroid/widget/ImageView$ScaleType;
+
+    invoke-virtual {v0, v3}, Landroid/widget/ImageView;->setScaleType(Landroid/widget/ImageView$ScaleType;)V
+
+    mul-int/lit8 v3, v1, 0x2
+
+    .line 11
+    invoke-virtual {v0, v1, v1, v1, v3}, Landroid/view/View;->setPadding(IIII)V
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
     goto :goto_0
 
-    .line 11
+    .line 12
     :catchall_0
-    new-instance v3, Landroid/widget/Button;
+    new-instance v0, Landroid/widget/Button;
 
-    invoke-direct {v3, p2}, Landroid/widget/Button;-><init>(Landroid/content/Context;)V
+    invoke-direct {v0, p2}, Landroid/widget/Button;-><init>(Landroid/content/Context;)V
 
+    .line 13
     const-string v1, "\u24d8"
 
-    .line 12
-    invoke-virtual {v3, v1}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
+    invoke-virtual {v0, v1}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
     const/4 v1, -0x1
 
-    .line 13
-    invoke-virtual {v3, v1}, Landroid/widget/TextView;->setTextColor(I)V
+    .line 14
+    invoke-virtual {v0, v1}, Landroid/widget/TextView;->setTextColor(I)V
 
     const/4 v1, 0x0
 
-    .line 14
-    invoke-virtual {v3, v1}, Landroid/widget/TextView;->setAllCaps(Z)V
-
-    const/high16 v4, 0x41a00000    # 20.0f
-
     .line 15
-    invoke-virtual {v3, v0, v4}, Landroid/widget/TextView;->setTextSize(IF)V
+    invoke-virtual {v0, v1}, Landroid/widget/TextView;->setAllCaps(Z)V
+
+    const/high16 v3, 0x41a00000    # 20.0f
+
+    const/4 v4, 0x2
 
     .line 16
-    invoke-virtual {v3, v1, v1, v1, v1}, Landroid/view/View;->setPadding(IIII)V
+    invoke-virtual {v0, v4, v3}, Landroid/widget/TextView;->setTextSize(IF)V
 
     .line 17
-    :goto_0
-    invoke-virtual {v3, v2}, Landroid/view/View;->setLayoutParams(Landroid/view/ViewGroup$LayoutParams;)V
+    invoke-virtual {v0, v1, v1, v1, v1}, Landroid/view/View;->setPadding(IIII)V
 
     .line 18
+    :goto_0
+    invoke-virtual {v0, v2}, Landroid/view/View;->setLayoutParams(Landroid/view/ViewGroup$LayoutParams;)V
+
+    .line 19
     invoke-direct {p0}, Lcom/applovin/impl/x4;->f()Landroid/graphics/drawable/Drawable;
 
     move-result-object v1
 
-    invoke-virtual {v3, v1}, Landroid/view/View;->setBackground(Landroid/graphics/drawable/Drawable;)V
+    invoke-virtual {v0, v1}, Landroid/view/View;->setBackground(Landroid/graphics/drawable/Drawable;)V
 
+    .line 20
     iget-boolean v1, p0, Lcom/applovin/impl/x4;->j:Z
 
     if-eqz v1, :cond_0
 
-    .line 19
-    new-instance v0, Lcom/applovin/impl/bx;
+    .line 21
+    new-instance v1, Lcom/applovin/impl/S3;
 
-    invoke-direct {v0, p0, p1}, Lcom/applovin/impl/bx;-><init>(Lcom/applovin/impl/x4;Landroid/widget/FrameLayout;)V
+    invoke-direct {v1, p0, p1}, Lcom/applovin/impl/S3;-><init>(Lcom/applovin/impl/x4;Landroid/widget/FrameLayout;)V
 
-    invoke-virtual {v3, v0}, Landroid/view/View;->setOnTouchListener(Landroid/view/View$OnTouchListener;)V
+    invoke-virtual {v0, v1}, Landroid/view/View;->setOnTouchListener(Landroid/view/View$OnTouchListener;)V
 
     goto :goto_1
 
-    .line 20
+    .line 22
     :cond_0
-    new-instance p1, Lcom/applovin/impl/xu;
+    new-instance p1, Lcom/applovin/impl/O1;
 
-    invoke-direct {p1, p0, v0}, Lcom/applovin/impl/xu;-><init>(Ljava/lang/Object;I)V
+    const/4 v1, 0x2
 
-    invoke-virtual {v3, p1}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
+    invoke-direct {p1, p0, v1}, Lcom/applovin/impl/O1;-><init>(Ljava/lang/Object;I)V
 
-    .line 21
+    invoke-virtual {v0, p1}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
+
+    .line 23
     :goto_1
     invoke-static {}, Lcom/applovin/impl/z3;->f()Z
 
@@ -433,23 +436,23 @@
 
     const/4 p1, 0x5
 
-    .line 22
+    .line 24
     invoke-static {p2, p1}, Lcom/applovin/sdk/AppLovinSdkUtils;->dpToPx(Landroid/content/Context;I)I
 
     move-result p1
 
     int-to-float p1, p1
 
-    invoke-virtual {v3, p1}, Landroid/view/View;->setElevation(F)V
+    invoke-virtual {v0, p1}, Landroid/view/View;->setElevation(F)V
 
     :cond_1
-    return-object v3
+    return-object v0
 .end method
 
 .method public static synthetic a(Ljava/lang/ref/WeakReference;)Ljava/lang/ref/WeakReference;
     .locals 0
 
-    .line 1
+    .line 3
     sput-object p0, Lcom/applovin/impl/x4;->m:Ljava/lang/ref/WeakReference;
 
     return-object p0
@@ -458,7 +461,7 @@
 .method private synthetic a(Landroid/view/View;)V
     .locals 0
 
-    .line 101
+    .line 105
     invoke-virtual {p0}, Lcom/applovin/impl/x4;->n()V
 
     return-void
@@ -467,7 +470,7 @@
 .method private synthetic a(Landroid/view/View;Landroid/widget/FrameLayout;)V
     .locals 1
 
-    .line 86
+    .line 88
     invoke-virtual {p1}, Landroid/view/View;->getParent()Landroid/view/ViewParent;
 
     move-result-object v0
@@ -482,7 +485,7 @@
 
     if-eqz v0, :cond_0
 
-    .line 87
+    .line 89
     invoke-virtual {p2, p1}, Landroid/view/ViewGroup;->addView(Landroid/view/View;)V
 
     :cond_0
@@ -492,6 +495,7 @@
 .method private synthetic a(Landroid/view/View;Landroid/widget/FrameLayout;Landroid/view/ViewTreeObserver;Landroid/view/ViewTreeObserver$OnGlobalLayoutListener;)V
     .locals 5
 
+    .line 90
     iget-wide v0, p0, Lcom/applovin/impl/x4;->k:J
 
     const-wide/16 v2, 0x0
@@ -506,16 +510,16 @@
 
     const/4 p2, 0x4
 
-    .line 88
+    .line 91
     invoke-virtual {p1, p2}, Landroid/view/View;->setVisibility(I)V
 
     goto :goto_0
 
-    .line 89
+    .line 92
     :cond_0
     invoke-direct {p0, p1, p2}, Lcom/applovin/impl/x4;->b(Landroid/view/View;Landroid/widget/FrameLayout;)V
 
-    .line 90
+    .line 93
     :goto_0
     invoke-virtual {p3}, Landroid/view/ViewTreeObserver;->isAlive()Z
 
@@ -523,17 +527,26 @@
 
     if-eqz p1, :cond_1
 
-    .line 91
+    .line 94
     invoke-virtual {p3, p4}, Landroid/view/ViewTreeObserver;->removeOnGlobalLayoutListener(Landroid/view/ViewTreeObserver$OnGlobalLayoutListener;)V
 
     :cond_1
     return-void
 .end method
 
+.method public static synthetic a(Lcom/applovin/impl/x4;Landroid/view/View;)V
+    .locals 0
+
+    .line 1
+    invoke-direct {p0, p1}, Lcom/applovin/impl/x4;->a(Landroid/view/View;)V
+
+    return-void
+.end method
+
 .method private synthetic a(Landroid/widget/FrameLayout;Landroid/view/View;Landroid/view/MotionEvent;)Z
     .locals 4
 
-    .line 92
+    .line 95
     invoke-virtual {p3}, Landroid/view/MotionEvent;->getAction()I
 
     move-result v0
@@ -542,33 +555,35 @@
 
     if-nez v0, :cond_0
 
-    .line 93
+    .line 96
     invoke-static {}, Landroid/os/SystemClock;->elapsedRealtime()J
 
     move-result-wide p1
 
     iput-wide p1, p0, Lcom/applovin/impl/x4;->k:J
 
-    .line 94
-    new-instance p1, Lcom/applovin/impl/zw;
+    .line 97
+    new-instance p1, Lcom/applovin/impl/Q3;
 
-    invoke-direct {p1, p0, v1}, Lcom/applovin/impl/zw;-><init>(Lcom/applovin/impl/x4;I)V
+    const/4 p2, 0x0
+
+    invoke-direct {p1, p0, p2}, Lcom/applovin/impl/Q3;-><init>(Lcom/applovin/impl/x4;I)V
 
     sget-object p2, Ljava/util/concurrent/TimeUnit;->SECONDS:Ljava/util/concurrent/TimeUnit;
 
     const-wide/16 v2, 0xa
 
-    .line 95
+    .line 98
     invoke-virtual {p2, v2, v3}, Ljava/util/concurrent/TimeUnit;->toMillis(J)J
 
     move-result-wide p2
 
-    .line 96
+    .line 99
     invoke-static {p1, p2, p3}, Lcom/applovin/sdk/AppLovinSdkUtils;->runOnUiThreadDelayed(Ljava/lang/Runnable;J)V
 
     goto :goto_0
 
-    .line 97
+    .line 100
     :cond_0
     invoke-virtual {p3}, Landroid/view/MotionEvent;->getAction()I
 
@@ -584,7 +599,7 @@
 
     if-ne p3, v0, :cond_3
 
-    .line 98
+    .line 101
     :cond_1
     invoke-virtual {p2}, Landroid/view/View;->getVisibility()I
 
@@ -594,14 +609,15 @@
 
     const-wide/16 p1, 0x0
 
+    .line 102
     iput-wide p1, p0, Lcom/applovin/impl/x4;->k:J
 
-    .line 99
+    .line 103
     invoke-virtual {p0}, Lcom/applovin/impl/x4;->n()V
 
     goto :goto_0
 
-    .line 100
+    .line 104
     :cond_2
     invoke-direct {p0, p2, p1}, Lcom/applovin/impl/x4;->b(Landroid/view/View;Landroid/widget/FrameLayout;)V
 
@@ -633,24 +649,26 @@
 .method private b(Landroid/view/View;Landroid/widget/FrameLayout;)V
     .locals 4
 
+    .line 16
     iget-boolean v0, p0, Lcom/applovin/impl/x4;->j:Z
 
     const/4 v1, 0x0
 
     if-eqz v0, :cond_0
 
-    .line 14
+    .line 17
     invoke-virtual {p1, v1}, Landroid/view/View;->setOnTouchListener(Landroid/view/View$OnTouchListener;)V
 
     const-wide/16 v2, 0x0
 
+    .line 18
     iput-wide v2, p0, Lcom/applovin/impl/x4;->k:J
 
-    .line 15
+    .line 19
     :cond_0
     invoke-virtual {p2, p1}, Landroid/view/ViewGroup;->removeView(Landroid/view/View;)V
 
-    .line 16
+    .line 20
     new-instance p1, Ljava/lang/ref/WeakReference;
 
     invoke-direct {p1, v1}, Ljava/lang/ref/WeakReference;-><init>(Ljava/lang/Object;)V
@@ -663,7 +681,7 @@
 .method public static synthetic c(Lcom/applovin/impl/x4;)Lcom/applovin/impl/sdk/j;
     .locals 0
 
-    .line 2
+    .line 1
     iget-object p0, p0, Lcom/applovin/impl/x4;->a:Lcom/applovin/impl/sdk/j;
 
     return-object p0
@@ -672,7 +690,7 @@
 .method public static synthetic c()Ljava/lang/ref/WeakReference;
     .locals 1
 
-    .line 1
+    .line 7
     sget-object v0, Lcom/applovin/impl/x4;->m:Ljava/lang/ref/WeakReference;
 
     return-object v0
@@ -681,12 +699,12 @@
 .method private c(Ljava/lang/Object;)Z
     .locals 1
 
-    .line 3
+    .line 2
     instance-of v0, p1, Lcom/applovin/impl/sdk/ad/b;
 
     if-eqz v0, :cond_0
 
-    .line 4
+    .line 3
     check-cast p1, Lcom/applovin/impl/sdk/ad/b;
 
     invoke-virtual {p1}, Lcom/applovin/impl/sdk/ad/AppLovinAdImpl;->getAdZone()Lcom/applovin/impl/h0;
@@ -699,13 +717,13 @@
 
     goto :goto_0
 
-    .line 5
+    .line 4
     :cond_0
     instance-of v0, p1, Lcom/applovin/impl/fe;
 
     if-eqz v0, :cond_1
 
-    .line 6
+    .line 5
     check-cast p1, Lcom/applovin/impl/fe;
 
     invoke-virtual {p1}, Lcom/applovin/impl/fe;->getFormat()Lcom/applovin/mediation/MaxAdFormat;
@@ -720,7 +738,7 @@
     :goto_0
     if-eqz p1, :cond_2
 
-    .line 7
+    .line 6
     invoke-virtual {p1}, Lcom/applovin/mediation/MaxAdFormat;->isFullscreenAd()Z
 
     move-result p1
@@ -741,7 +759,7 @@
 .method public static synthetic d()Ljava/util/concurrent/atomic/AtomicBoolean;
     .locals 1
 
-    .line 2
+    .line 11
     sget-object v0, Lcom/applovin/impl/x4;->n:Ljava/util/concurrent/atomic/AtomicBoolean;
 
     return-object v0
@@ -751,7 +769,7 @@
     .locals 0
 
     .line 1
-    invoke-direct {p0}, Lcom/applovin/impl/x4;->e()V
+    invoke-direct {p0}, Lcom/applovin/impl/x4;->i()V
 
     return-void
 .end method
@@ -782,10 +800,10 @@
 
     goto :goto_0
 
+    .line 3
     :cond_0
     iget-object v0, p0, Lcom/applovin/impl/x4;->a:Lcom/applovin/impl/sdk/j;
 
-    .line 3
     invoke-virtual {v0}, Lcom/applovin/impl/sdk/j;->e()Lcom/applovin/impl/q;
 
     move-result-object v0
@@ -796,9 +814,9 @@
 
     if-nez v0, :cond_2
 
+    .line 4
     iget-object v0, p0, Lcom/applovin/impl/x4;->a:Lcom/applovin/impl/sdk/j;
 
-    .line 4
     invoke-virtual {v0}, Lcom/applovin/impl/sdk/j;->I()Lcom/applovin/impl/sdk/n;
 
     invoke-static {}, Lcom/applovin/impl/sdk/n;->a()Z
@@ -871,15 +889,15 @@
     move-result-object v7
 
     .line 14
-    new-instance v8, Lcom/applovin/impl/ax;
+    new-instance v8, Lcom/applovin/impl/R3;
 
-    invoke-direct {v8, p0, v0, v6}, Lcom/applovin/impl/ax;-><init>(Lcom/applovin/impl/x4;Landroid/view/View;Landroid/widget/FrameLayout;)V
+    invoke-direct {v8, p0, v0, v6}, Lcom/applovin/impl/R3;-><init>(Lcom/applovin/impl/x4;Landroid/view/View;Landroid/widget/FrameLayout;)V
 
     .line 15
     invoke-virtual {v7, v8}, Landroid/view/ViewTreeObserver;->addOnGlobalLayoutListener(Landroid/view/ViewTreeObserver$OnGlobalLayoutListener;)V
 
     .line 16
-    new-instance v1, Lm0/s;
+    new-instance v1, LR/n;
 
     const/4 v9, 0x4
 
@@ -889,7 +907,7 @@
 
     move-object v5, v0
 
-    invoke-direct/range {v3 .. v9}, Lm0/s;-><init>(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;I)V
+    invoke-direct/range {v3 .. v9}, LR/n;-><init>(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;I)V
 
     sget-object v2, Ljava/util/concurrent/TimeUnit;->SECONDS:Ljava/util/concurrent/TimeUnit;
 
@@ -915,21 +933,30 @@
     return-void
 .end method
 
+.method public static synthetic e(Lcom/applovin/impl/x4;)V
+    .locals 0
+
+    .line 1
+    invoke-direct {p0}, Lcom/applovin/impl/x4;->e()V
+
+    return-void
+.end method
+
 .method private e(Ljava/lang/Object;)V
     .locals 3
 
+    .line 20
     const-string v0, "AppLovinSdk"
 
     const-string v1, "Starting Creative Debugger for current fullscreen ad..."
 
-    .line 20
     invoke-static {v0, v1}, Lcom/applovin/impl/sdk/n;->g(Ljava/lang/String;Ljava/lang/String;)V
 
+    .line 21
     iget-object v0, p0, Lcom/applovin/impl/x4;->b:Landroid/content/Context;
 
     iget-object v1, p0, Lcom/applovin/impl/x4;->a:Lcom/applovin/impl/sdk/j;
 
-    .line 21
     invoke-virtual {v1}, Lcom/applovin/impl/sdk/j;->e()Lcom/applovin/impl/q;
 
     move-result-object v1
@@ -943,17 +970,6 @@
     invoke-static {v0, p1, v1, v2}, Lcom/applovin/impl/r;->a(Landroid/content/Context;Ljava/lang/Class;Lcom/applovin/impl/q;Lcom/applovin/impl/r$b;)V
 
     return-void
-.end method
-
-.method public static synthetic e(Lcom/applovin/impl/x4;Landroid/widget/FrameLayout;Landroid/view/View;Landroid/view/MotionEvent;)Z
-    .locals 0
-
-    .line 1
-    invoke-direct {p0, p1, p2, p3}, Lcom/applovin/impl/x4;->a(Landroid/widget/FrameLayout;Landroid/view/View;Landroid/view/MotionEvent;)Z
-
-    move-result p0
-
-    return p0
 .end method
 
 .method private f()Landroid/graphics/drawable/Drawable;
@@ -1010,42 +1026,24 @@
 
     const v3, 0x10100a7
 
+    .line 9
     filled-new-array {v3}, [I
 
     move-result-object v3
 
-    .line 9
     invoke-virtual {v1, v3, v2}, Landroid/graphics/drawable/StateListDrawable;->addState([ILandroid/graphics/drawable/Drawable;)V
 
     const/4 v2, 0x0
 
+    .line 10
     new-array v2, v2, [I
 
-    .line 10
     invoke-virtual {v1, v2, v0}, Landroid/graphics/drawable/StateListDrawable;->addState([ILandroid/graphics/drawable/Drawable;)V
 
     return-object v1
 .end method
 
-.method public static synthetic f(Lcom/applovin/impl/x4;Landroid/view/View;)V
-    .locals 0
-
-    .line 1
-    invoke-direct {p0, p1}, Lcom/applovin/impl/x4;->a(Landroid/view/View;)V
-
-    return-void
-.end method
-
-.method public static synthetic g(Lcom/applovin/impl/x4;)V
-    .locals 0
-
-    .line 1
-    invoke-direct {p0}, Lcom/applovin/impl/x4;->i()V
-
-    return-void
-.end method
-
-.method public static synthetic h(Lcom/applovin/impl/x4;)V
+.method public static synthetic f(Lcom/applovin/impl/x4;)V
     .locals 0
 
     .line 1
@@ -1054,14 +1052,34 @@
     return-void
 .end method
 
+.method public static synthetic g(Lcom/applovin/impl/x4;Landroid/widget/FrameLayout;Landroid/view/View;Landroid/view/MotionEvent;)Z
+    .locals 0
+
+    .line 1
+    invoke-direct {p0, p1, p2, p3}, Lcom/applovin/impl/x4;->a(Landroid/widget/FrameLayout;Landroid/view/View;Landroid/view/MotionEvent;)Z
+
+    move-result p0
+
+    return p0
+.end method
+
+.method public static synthetic h(Lcom/applovin/impl/x4;Landroid/view/View;Landroid/widget/FrameLayout;)V
+    .locals 0
+
+    .line 1
+    invoke-direct {p0, p1, p2}, Lcom/applovin/impl/x4;->a(Landroid/view/View;Landroid/widget/FrameLayout;)V
+
+    return-void
+.end method
+
 .method private h()Z
     .locals 1
 
+    .line 2
     sget-object v0, Lcom/applovin/impl/x4;->m:Ljava/lang/ref/WeakReference;
 
     if-eqz v0, :cond_0
 
-    .line 2
     invoke-virtual {v0}, Ljava/lang/ref/Reference;->get()Ljava/lang/Object;
 
     move-result-object v0
@@ -1097,6 +1115,7 @@
 
     move-result-wide v0
 
+    .line 3
     iget-wide v2, p0, Lcom/applovin/impl/x4;->k:J
 
     const-wide/16 v4, 0x0
@@ -1113,10 +1132,10 @@
 
     goto :goto_0
 
+    .line 4
     :cond_0
     iget-object v0, p0, Lcom/applovin/impl/x4;->a:Lcom/applovin/impl/sdk/j;
 
-    .line 3
     invoke-virtual {v0}, Lcom/applovin/impl/sdk/j;->D()Lcom/applovin/impl/la;
 
     move-result-object v0
@@ -1127,9 +1146,9 @@
 
     invoke-virtual {v0, v1, v2}, Lcom/applovin/impl/la;->a(Lcom/applovin/impl/ka;Ljava/lang/String;)V
 
+    .line 5
     iget-object v0, p0, Lcom/applovin/impl/x4;->a:Lcom/applovin/impl/sdk/j;
 
-    .line 4
     invoke-virtual {v0}, Lcom/applovin/impl/sdk/j;->T0()V
 
     :cond_1
@@ -1137,11 +1156,11 @@
     return-void
 .end method
 
-.method public static synthetic i(Lcom/applovin/impl/x4;Landroid/view/View;Landroid/widget/FrameLayout;)V
+.method public static synthetic i(Lcom/applovin/impl/x4;Landroid/view/View;Landroid/widget/FrameLayout;Landroid/view/ViewTreeObserver;Lcom/applovin/impl/R3;)V
     .locals 0
 
     .line 1
-    invoke-direct {p0, p1, p2}, Lcom/applovin/impl/x4;->a(Landroid/view/View;Landroid/widget/FrameLayout;)V
+    invoke-direct {p0, p1, p2, p3, p4}, Lcom/applovin/impl/x4;->a(Landroid/view/View;Landroid/widget/FrameLayout;Landroid/view/ViewTreeObserver;Landroid/view/ViewTreeObserver$OnGlobalLayoutListener;)V
 
     return-void
 .end method
@@ -1149,20 +1168,14 @@
 .method private synthetic j()V
     .locals 1
 
-    .line 2
+    .line 1
     const/4 v0, 0x0
 
+    .line 2
     iput v0, p0, Lcom/applovin/impl/x4;->i:I
 
-    return-void
-.end method
-
-.method public static synthetic j(Lcom/applovin/impl/x4;Landroid/view/View;Landroid/widget/FrameLayout;Landroid/view/ViewTreeObserver;Landroid/view/ViewTreeObserver$OnGlobalLayoutListener;)V
-    .locals 0
-
-    .line 1
-    invoke-direct {p0, p1, p2, p3, p4}, Lcom/applovin/impl/x4;->a(Landroid/view/View;Landroid/widget/FrameLayout;Landroid/view/ViewTreeObserver;Landroid/view/ViewTreeObserver$OnGlobalLayoutListener;)V
-
+    .line 3
+    .line 4
     return-void
 .end method
 
@@ -1202,73 +1215,73 @@
 
 # virtual methods
 .method public a(Lcom/applovin/impl/v6;)Ljava/lang/String;
-    .locals 5
+    .locals 6
 
-    .line 45
+    .line 47
     invoke-virtual {p1}, Lcom/applovin/impl/v6;->a()Ljava/lang/Object;
 
     move-result-object v0
 
-    .line 46
+    .line 48
     new-instance v1, Lcom/applovin/impl/pc;
 
     invoke-direct {v1}, Lcom/applovin/impl/pc;-><init>()V
 
+    .line 49
     const-string v2, "Ad Info:\n"
 
-    .line 47
     invoke-virtual {v1, v2}, Lcom/applovin/impl/pc;->b(Ljava/lang/String;)Lcom/applovin/impl/pc;
 
-    .line 48
+    .line 50
     instance-of v2, v0, Lcom/applovin/impl/sdk/ad/b;
 
     if-eqz v2, :cond_0
 
-    .line 49
+    .line 51
     move-object v2, v0
 
     check-cast v2, Lcom/applovin/impl/sdk/ad/b;
 
+    .line 52
     const-string v3, "Network"
 
     const-string v4, "APPLOVIN"
 
-    .line 50
     invoke-virtual {v1, v3, v4}, Lcom/applovin/impl/pc;->a(Ljava/lang/String;Ljava/lang/Object;)Lcom/applovin/impl/pc;
 
     move-result-object v3
 
-    .line 51
+    .line 53
     invoke-virtual {v3, v2}, Lcom/applovin/impl/pc;->a(Lcom/applovin/impl/sdk/ad/b;)Lcom/applovin/impl/pc;
 
     move-result-object v3
 
-    .line 52
+    .line 54
     invoke-virtual {v3, v2}, Lcom/applovin/impl/pc;->b(Lcom/applovin/impl/sdk/ad/b;)Lcom/applovin/impl/pc;
 
     goto :goto_0
 
-    .line 53
+    .line 55
     :cond_0
     instance-of v2, v0, Lcom/applovin/impl/fe;
 
     if-eqz v2, :cond_1
 
-    .line 54
+    .line 56
     move-object v2, v0
 
     check-cast v2, Lcom/applovin/impl/fe;
 
     invoke-virtual {v1, v2}, Lcom/applovin/impl/pc;->a(Lcom/applovin/impl/fe;)Lcom/applovin/impl/pc;
 
+    .line 57
     :cond_1
     :goto_0
     iget-object v2, p0, Lcom/applovin/impl/x4;->a:Lcom/applovin/impl/sdk/j;
 
-    .line 55
     invoke-virtual {v1, v2}, Lcom/applovin/impl/pc;->a(Lcom/applovin/impl/sdk/j;)Lcom/applovin/impl/pc;
 
-    .line 56
+    .line 58
     invoke-virtual {p1}, Lcom/applovin/impl/v6;->b()J
 
     move-result-wide v2
@@ -1281,9 +1294,9 @@
 
     invoke-virtual {v1, v2, p1}, Lcom/applovin/impl/pc;->a(Ljava/lang/String;Ljava/lang/Object;)Lcom/applovin/impl/pc;
 
+    .line 59
     iget-object p1, p0, Lcom/applovin/impl/x4;->a:Lcom/applovin/impl/sdk/j;
 
-    .line 57
     invoke-virtual {p1}, Lcom/applovin/impl/sdk/j;->x()Lcom/applovin/impl/sdk/k;
 
     move-result-object p1
@@ -1292,16 +1305,16 @@
 
     move-result-object p1
 
+    .line 60
     const-string v2, "\nDebug Info:\n"
 
-    .line 58
     invoke-virtual {v1, v2}, Lcom/applovin/impl/pc;->a(Ljava/lang/String;)Lcom/applovin/impl/pc;
 
     move-result-object v2
 
+    .line 61
     const-string v3, "fireos"
 
-    .line 59
     invoke-virtual {v3, p1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
     move-result p1
@@ -1324,9 +1337,9 @@
 
     sget-object v2, Lcom/applovin/sdk/AppLovinSdk;->VERSION:Ljava/lang/String;
 
+    .line 62
     const-string v3, "AppLovin SDK Version"
 
-    .line 60
     invoke-virtual {p1, v3, v2}, Lcom/applovin/impl/pc;->a(Ljava/lang/String;Ljava/lang/Object;)Lcom/applovin/impl/pc;
 
     move-result-object p1
@@ -1335,7 +1348,7 @@
 
     sget-object v3, Lcom/applovin/impl/sj;->K3:Lcom/applovin/impl/sj;
 
-    .line 61
+    .line 63
     invoke-virtual {v2, v3}, Lcom/applovin/impl/sdk/j;->a(Lcom/applovin/impl/sj;)Ljava/lang/Object;
 
     move-result-object v2
@@ -1348,7 +1361,7 @@
 
     iget-object v2, p0, Lcom/applovin/impl/x4;->b:Landroid/content/Context;
 
-    .line 62
+    .line 64
     invoke-virtual {v2}, Landroid/content/Context;->getPackageName()Ljava/lang/String;
 
     move-result-object v2
@@ -1359,32 +1372,36 @@
 
     move-result-object p1
 
-    const/4 v2, 0x3
-
-    new-array v2, v2, [Ljava/lang/Object;
-
-    sget-object v3, Landroid/os/Build;->BRAND:Ljava/lang/String;
-
-    const/4 v4, 0x0
-
-    aput-object v3, v2, v4
+    sget-object v2, Landroid/os/Build;->BRAND:Ljava/lang/String;
 
     sget-object v3, Landroid/os/Build;->MODEL:Ljava/lang/String;
 
-    const/4 v4, 0x1
+    sget-object v4, Landroid/os/Build;->DEVICE:Ljava/lang/String;
 
-    aput-object v3, v2, v4
+    .line 65
+    new-instance v5, Ljava/lang/StringBuilder;
 
-    sget-object v3, Landroid/os/Build;->DEVICE:Ljava/lang/String;
+    invoke-direct {v5}, Ljava/lang/StringBuilder;-><init>()V
 
-    const/4 v4, 0x2
+    invoke-virtual {v5, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    aput-object v3, v2, v4
+    const-string v2, " "
 
-    const-string v3, "%s %s (%s)"
+    invoke-virtual {v5, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    .line 63
-    invoke-static {v3, v2}, Ljava/lang/String;->format(Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;
+    invoke-virtual {v5, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    const-string v2, " ("
+
+    invoke-virtual {v5, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v5, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    const-string v2, ")"
+
+    invoke-virtual {v5, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v5}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
     move-result-object v2
 
@@ -1396,16 +1413,16 @@
 
     sget-object v2, Landroid/os/Build$VERSION;->RELEASE:Ljava/lang/String;
 
+    .line 66
     const-string v3, "OS Version"
 
-    .line 64
     invoke-virtual {p1, v3, v2}, Lcom/applovin/impl/pc;->a(Ljava/lang/String;Ljava/lang/Object;)Lcom/applovin/impl/pc;
 
     move-result-object p1
 
     iget-object v2, p0, Lcom/applovin/impl/x4;->a:Lcom/applovin/impl/sdk/j;
 
-    .line 65
+    .line 67
     invoke-virtual {v2}, Lcom/applovin/impl/sdk/j;->Z()Ljava/lang/String;
 
     move-result-object v2
@@ -1416,7 +1433,7 @@
 
     move-result-object p1
 
-    .line 66
+    .line 68
     invoke-static {}, Lcom/applovin/impl/v;->b()Ljava/lang/String;
 
     move-result-object v2
@@ -1427,7 +1444,7 @@
 
     move-result-object p1
 
-    .line 67
+    .line 69
     invoke-direct {p0, v0}, Lcom/applovin/impl/x4;->a(Ljava/lang/Object;)Landroid/os/Bundle;
 
     move-result-object v0
@@ -1436,9 +1453,9 @@
 
     move-result-object p1
 
+    .line 70
     iget-object v0, p0, Lcom/applovin/impl/x4;->a:Lcom/applovin/impl/sdk/j;
 
-    .line 68
     invoke-virtual {v0}, Lcom/applovin/impl/sdk/j;->o0()Lcom/applovin/impl/wp;
 
     move-result-object v0
@@ -1475,7 +1492,7 @@
 
     sget-object v2, Lcom/applovin/impl/sj;->v:Lcom/applovin/impl/sj;
 
-    .line 69
+    .line 71
     invoke-virtual {v0, v2}, Lcom/applovin/impl/sdk/j;->a(Lcom/applovin/impl/sj;)Ljava/lang/Object;
 
     move-result-object v0
@@ -1484,7 +1501,7 @@
 
     invoke-virtual {p1, v2, v0}, Lcom/applovin/impl/pc;->a(Ljava/lang/String;Ljava/lang/Object;)Lcom/applovin/impl/pc;
 
-    .line 70
+    .line 72
     invoke-virtual {v1}, Lcom/applovin/impl/pc;->toString()Ljava/lang/String;
 
     move-result-object p1
@@ -1495,9 +1512,9 @@
 .method public a()V
     .locals 3
 
+    .line 106
     iget v0, p0, Lcom/applovin/impl/x4;->i:I
 
-    .line 102
     rem-int/lit8 v1, v0, 0x2
 
     const/4 v2, 0x1
@@ -1506,32 +1523,36 @@
 
     add-int/2addr v0, v2
 
+    .line 107
     iput v0, p0, Lcom/applovin/impl/x4;->i:I
 
+    .line 108
     :cond_0
     iget v0, p0, Lcom/applovin/impl/x4;->i:I
 
     const/4 v1, 0x2
 
-    .line 103
     div-int/2addr v0, v1
 
     if-ne v0, v1, :cond_1
 
-    .line 104
-    new-instance v0, Lcom/applovin/impl/zw;
+    .line 109
+    new-instance v0, Lcom/applovin/impl/Q3;
 
-    invoke-direct {v0, p0, v1}, Lcom/applovin/impl/zw;-><init>(Lcom/applovin/impl/x4;I)V
+    const/4 v1, 0x1
+
+    invoke-direct {v0, p0, v1}, Lcom/applovin/impl/Q3;-><init>(Lcom/applovin/impl/x4;I)V
 
     invoke-static {v0}, Lcom/applovin/sdk/AppLovinSdkUtils;->runOnUiThread(Ljava/lang/Runnable;)V
 
     const/4 v0, 0x0
 
+    .line 110
     iput v0, p0, Lcom/applovin/impl/x4;->i:I
 
+    .line 111
     iget-object v0, p0, Lcom/applovin/impl/x4;->h:Lcom/applovin/impl/go;
 
-    .line 105
     invoke-virtual {v0}, Lcom/applovin/impl/go;->a()V
 
     :cond_1
@@ -1541,35 +1562,35 @@
 .method public a(Lcom/applovin/impl/v6;Landroid/content/Context;Z)V
     .locals 8
 
-    .line 23
+    .line 25
     invoke-virtual {p1}, Lcom/applovin/impl/v6;->a()Ljava/lang/Object;
 
     move-result-object v0
 
-    .line 24
+    .line 26
     invoke-virtual {p0, p1}, Lcom/applovin/impl/x4;->a(Lcom/applovin/impl/v6;)Ljava/lang/String;
 
     move-result-object p1
 
-    .line 25
+    .line 27
     new-instance v1, Lcom/applovin/impl/pc;
 
     invoke-direct {v1}, Lcom/applovin/impl/pc;-><init>()V
 
     if-eqz p3, :cond_0
 
+    .line 28
     const-string v2, "Please describe the issue you had with this ad:\n\n\n\n"
 
-    .line 26
     invoke-virtual {v1, v2}, Lcom/applovin/impl/pc;->b(Ljava/lang/String;)Lcom/applovin/impl/pc;
 
-    .line 27
+    .line 29
     :cond_0
     invoke-virtual {v1, p1}, Lcom/applovin/impl/pc;->b(Ljava/lang/String;)Lcom/applovin/impl/pc;
 
+    .line 30
     iget-object p1, p0, Lcom/applovin/impl/x4;->a:Lcom/applovin/impl/sdk/j;
 
-    .line 28
     invoke-virtual {p1}, Lcom/applovin/impl/sdk/j;->v()Lcom/applovin/impl/x4;
 
     move-result-object p1
@@ -1580,15 +1601,15 @@
 
     if-eqz p1, :cond_1
 
+    .line 31
     const-string v2, "\nBid Response:\n"
 
-    .line 29
     invoke-virtual {v1, v2}, Lcom/applovin/impl/pc;->a(Ljava/lang/String;)Lcom/applovin/impl/pc;
 
-    .line 30
+    .line 32
     invoke-virtual {v1, p1}, Lcom/applovin/impl/pc;->a(Ljava/lang/String;)Lcom/applovin/impl/pc;
 
-    .line 31
+    .line 33
     :cond_1
     new-instance p1, Landroid/content/Intent;
 
@@ -1596,14 +1617,14 @@
 
     invoke-direct {p1, v2}, Landroid/content/Intent;-><init>(Ljava/lang/String;)V
 
+    .line 34
     const-string v2, "text/plain"
 
-    .line 32
     invoke-virtual {p1, v2}, Landroid/content/Intent;->setType(Ljava/lang/String;)Landroid/content/Intent;
 
     move-result-object p1
 
-    .line 33
+    .line 35
     instance-of v2, v0, Lcom/applovin/impl/sdk/ad/b;
 
     const-string v3, "MAX Ad Report"
@@ -1626,7 +1647,7 @@
 
     move-result-object p1
 
-    .line 34
+    .line 36
     invoke-virtual {v1}, Lcom/applovin/impl/pc;->toString()Ljava/lang/String;
 
     move-result-object v2
@@ -1639,21 +1660,21 @@
 
     const/4 v2, 0x0
 
-    .line 35
+    .line 37
     invoke-virtual {p1, v2}, Landroid/content/Intent;->setPackage(Ljava/lang/String;)Landroid/content/Intent;
 
     move-result-object p1
 
+    .line 38
     const-string v2, "Share Ad Report"
 
-    .line 36
     invoke-static {p1, v2}, Landroid/content/Intent;->createChooser(Landroid/content/Intent;Ljava/lang/CharSequence;)Landroid/content/Intent;
 
     move-result-object p1
 
     if-eqz p3, :cond_4
 
-    .line 37
+    .line 39
     :try_start_0
     new-instance p3, Landroid/content/Intent;
 
@@ -1667,20 +1688,20 @@
 
     invoke-direct {p3, v2, v7}, Landroid/content/Intent;-><init>(Ljava/lang/String;Landroid/net/Uri;)V
 
-    .line 38
+    .line 40
     instance-of v0, v0, Lcom/applovin/impl/sdk/ad/b;
 
     if-eqz v0, :cond_3
 
     move-object v3, v4
 
-    .line 39
+    .line 41
     :cond_3
     invoke-virtual {p3, v5, v3}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Ljava/lang/String;)Landroid/content/Intent;
 
     move-result-object p3
 
-    .line 40
+    .line 42
     invoke-virtual {v1}, Lcom/applovin/impl/pc;->toString()Ljava/lang/String;
 
     move-result-object v0
@@ -1691,25 +1712,25 @@
 
     const-string v0, "com.google.android.gm"
 
-    .line 41
+    .line 43
     invoke-virtual {p3, v0}, Landroid/content/Intent;->setPackage(Ljava/lang/String;)Landroid/content/Intent;
 
     move-result-object p3
 
-    .line 42
+    .line 44
     invoke-virtual {p2, p3}, Landroid/content/Context;->startActivity(Landroid/content/Intent;)V
     :try_end_0
     .catch Landroid/content/ActivityNotFoundException; {:try_start_0 .. :try_end_0} :catch_0
 
     goto :goto_1
 
-    .line 43
+    .line 45
     :catch_0
     invoke-virtual {p2, p1}, Landroid/content/Context;->startActivity(Landroid/content/Intent;)V
 
     goto :goto_1
 
-    .line 44
+    .line 46
     :cond_4
     invoke-virtual {p2, p1}, Landroid/content/Context;->startActivity(Landroid/content/Intent;)V
 
@@ -1793,45 +1814,47 @@
 .method public b()V
     .locals 5
 
+    .line 10
     iget v0, p0, Lcom/applovin/impl/x4;->i:I
 
     if-nez v0, :cond_0
 
-    .line 10
+    .line 11
     sget-object v0, Ljava/util/concurrent/TimeUnit;->SECONDS:Ljava/util/concurrent/TimeUnit;
 
     const-wide/16 v1, 0x3
 
-    .line 11
+    .line 12
     invoke-virtual {v0, v1, v2}, Ljava/util/concurrent/TimeUnit;->toMillis(J)J
 
     move-result-wide v0
 
     iget-object v2, p0, Lcom/applovin/impl/x4;->a:Lcom/applovin/impl/sdk/j;
 
-    new-instance v3, Lcom/applovin/impl/zw;
+    new-instance v3, Lcom/applovin/impl/Q3;
 
-    const/4 v4, 0x0
+    const/4 v4, 0x2
 
-    invoke-direct {v3, p0, v4}, Lcom/applovin/impl/zw;-><init>(Lcom/applovin/impl/x4;I)V
+    invoke-direct {v3, p0, v4}, Lcom/applovin/impl/Q3;-><init>(Lcom/applovin/impl/x4;I)V
 
-    .line 12
+    .line 13
     invoke-static {v0, v1, v2, v3}, Lcom/applovin/impl/go;->a(JLcom/applovin/impl/sdk/j;Ljava/lang/Runnable;)Lcom/applovin/impl/go;
 
     move-result-object v0
 
     iput-object v0, p0, Lcom/applovin/impl/x4;->h:Lcom/applovin/impl/go;
 
+    .line 14
     :cond_0
     iget v0, p0, Lcom/applovin/impl/x4;->i:I
 
-    .line 13
     rem-int/lit8 v1, v0, 0x2
 
     if-nez v1, :cond_1
 
     add-int/lit8 v0, v0, 0x1
 
+    .line 15
     iput v0, p0, Lcom/applovin/impl/x4;->i:I
 
     :cond_1
@@ -1841,7 +1864,7 @@
 .method public d(Ljava/lang/Object;)V
     .locals 5
 
-    .line 3
+    .line 2
     invoke-virtual {p0}, Lcom/applovin/impl/x4;->g()Z
 
     move-result v0
@@ -1855,7 +1878,7 @@
 
     return-void
 
-    .line 4
+    .line 3
     :cond_1
     invoke-static {p1}, Lcom/applovin/impl/ze;->a(Ljava/lang/Object;)Z
 
@@ -1871,7 +1894,7 @@
 
     return-void
 
-    .line 5
+    .line 4
     :cond_2
     invoke-static {p1}, Lcom/applovin/impl/ze;->b(Ljava/lang/Object;)Z
 
@@ -1887,16 +1910,16 @@
 
     return-void
 
+    .line 5
     :cond_3
     iget-object v0, p0, Lcom/applovin/impl/x4;->d:Ljava/lang/Object;
 
-    .line 6
     monitor-enter v0
 
+    .line 6
     :try_start_0
     iget-object v1, p0, Lcom/applovin/impl/x4;->c:Ljava/util/List;
 
-    .line 7
     new-instance v2, Lcom/applovin/impl/v6;
 
     invoke-static {}, Ljava/lang/System;->currentTimeMillis()J
@@ -1909,9 +1932,9 @@
 
     invoke-interface {v1, p1, v2}, Ljava/util/List;->add(ILjava/lang/Object;)V
 
+    .line 7
     iget-object p1, p0, Lcom/applovin/impl/x4;->c:Ljava/util/List;
 
-    .line 8
     invoke-interface {p1}, Ljava/util/List;->size()I
 
     move-result p1
@@ -1920,9 +1943,9 @@
 
     if-le p1, v1, :cond_4
 
+    .line 8
     iget-object p1, p0, Lcom/applovin/impl/x4;->c:Ljava/util/List;
 
-    .line 9
     invoke-interface {p1}, Ljava/util/List;->size()I
 
     move-result v1
@@ -1938,14 +1961,14 @@
 
     goto :goto_1
 
-    .line 10
+    .line 9
     :cond_4
     :goto_0
     monitor-exit v0
 
     return-void
 
-    .line 11
+    .line 10
     :goto_1
     monitor-exit v0
     :try_end_0
@@ -1957,9 +1980,9 @@
 .method public g()Z
     .locals 2
 
+    .line 2
     iget-object v0, p0, Lcom/applovin/impl/x4;->a:Lcom/applovin/impl/sdk/j;
 
-    .line 2
     sget-object v1, Lcom/applovin/impl/sj;->r1:Lcom/applovin/impl/sj;
 
     invoke-virtual {v0, v1}, Lcom/applovin/impl/sdk/j;->a(Lcom/applovin/impl/sj;)Ljava/lang/Object;

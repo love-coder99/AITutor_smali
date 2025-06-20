@@ -3,14 +3,14 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lzh/c;
+.implements Lka/c;
 
 
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "Lkotlin/jvm/internal/Lambda;",
-        "Lzh/c;"
+        "Lka/c;"
     }
 .end annotation
 
@@ -19,10 +19,10 @@
         "\u0000\u000c\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0008\u0003\u0010\u0004\u001a\u00020\u0001*\u00020\u0000H\n\u00a2\u0006\u0004\u0008\u0002\u0010\u0003"
     }
     d2 = {
-        "Landroidx/compose/ui/layout/z0;",
-        "Lqh/r;",
+        "Landroidx/compose/ui/layout/W;",
+        "LX9/j;",
         "invoke",
-        "(Landroidx/compose/ui/layout/z0;)V",
+        "(Landroidx/compose/ui/layout/W;)V",
         "<anonymous>"
     }
     k = 0x3
@@ -39,34 +39,34 @@
 
 .field final synthetic $actionButtonPlaceY:I
 
-.field final synthetic $actionButtonPlaceable:Landroidx/compose/ui/layout/a1;
+.field final synthetic $actionButtonPlaceable:Landroidx/compose/ui/layout/X;
 
 .field final synthetic $dismissButtonPlaceX:I
 
 .field final synthetic $dismissButtonPlaceY:I
 
-.field final synthetic $dismissButtonPlaceable:Landroidx/compose/ui/layout/a1;
+.field final synthetic $dismissButtonPlaceable:Landroidx/compose/ui/layout/X;
 
 .field final synthetic $textPlaceY:I
 
-.field final synthetic $textPlaceable:Landroidx/compose/ui/layout/a1;
+.field final synthetic $textPlaceable:Landroidx/compose/ui/layout/X;
 
 
 # direct methods
-.method public constructor <init>(Landroidx/compose/ui/layout/a1;ILandroidx/compose/ui/layout/a1;IILandroidx/compose/ui/layout/a1;II)V
+.method public constructor <init>(Landroidx/compose/ui/layout/X;ILandroidx/compose/ui/layout/X;IILandroidx/compose/ui/layout/X;II)V
     .locals 0
 
-    iput-object p1, p0, Landroidx/compose/material3/SnackbarKt$OneRowSnackbar$2$1$2;->$textPlaceable:Landroidx/compose/ui/layout/a1;
+    iput-object p1, p0, Landroidx/compose/material3/SnackbarKt$OneRowSnackbar$2$1$2;->$textPlaceable:Landroidx/compose/ui/layout/X;
 
     iput p2, p0, Landroidx/compose/material3/SnackbarKt$OneRowSnackbar$2$1$2;->$textPlaceY:I
 
-    iput-object p3, p0, Landroidx/compose/material3/SnackbarKt$OneRowSnackbar$2$1$2;->$dismissButtonPlaceable:Landroidx/compose/ui/layout/a1;
+    iput-object p3, p0, Landroidx/compose/material3/SnackbarKt$OneRowSnackbar$2$1$2;->$dismissButtonPlaceable:Landroidx/compose/ui/layout/X;
 
     iput p4, p0, Landroidx/compose/material3/SnackbarKt$OneRowSnackbar$2$1$2;->$dismissButtonPlaceX:I
 
     iput p5, p0, Landroidx/compose/material3/SnackbarKt$OneRowSnackbar$2$1$2;->$dismissButtonPlaceY:I
 
-    iput-object p6, p0, Landroidx/compose/material3/SnackbarKt$OneRowSnackbar$2$1$2;->$actionButtonPlaceable:Landroidx/compose/ui/layout/a1;
+    iput-object p6, p0, Landroidx/compose/material3/SnackbarKt$OneRowSnackbar$2$1$2;->$actionButtonPlaceable:Landroidx/compose/ui/layout/X;
 
     iput p7, p0, Landroidx/compose/material3/SnackbarKt$OneRowSnackbar$2$1$2;->$actionButtonPlaceX:I
 
@@ -85,28 +85,29 @@
     .locals 0
 
     .line 1
-    check-cast p1, Landroidx/compose/ui/layout/z0;
+    check-cast p1, Landroidx/compose/ui/layout/W;
 
-    invoke-virtual {p0, p1}, Landroidx/compose/material3/SnackbarKt$OneRowSnackbar$2$1$2;->invoke(Landroidx/compose/ui/layout/z0;)V
+    invoke-virtual {p0, p1}, Landroidx/compose/material3/SnackbarKt$OneRowSnackbar$2$1$2;->invoke(Landroidx/compose/ui/layout/W;)V
 
-    sget-object p1, Lqh/r;->a:Lqh/r;
+    sget-object p1, LX9/j;->a:LX9/j;
 
     return-object p1
 .end method
 
-.method public final invoke(Landroidx/compose/ui/layout/z0;)V
+.method public final invoke(Landroidx/compose/ui/layout/W;)V
     .locals 3
 
-    iget-object v0, p0, Landroidx/compose/material3/SnackbarKt$OneRowSnackbar$2$1$2;->$textPlaceable:Landroidx/compose/ui/layout/a1;
-
-    const/4 v1, 0x0
-
-    iget v2, p0, Landroidx/compose/material3/SnackbarKt$OneRowSnackbar$2$1$2;->$textPlaceY:I
-
     .line 2
-    invoke-static {p1, v0, v1, v2}, Landroidx/compose/ui/layout/z0;->f(Landroidx/compose/ui/layout/z0;Landroidx/compose/ui/layout/a1;II)V
+    iget-object v0, p0, Landroidx/compose/material3/SnackbarKt$OneRowSnackbar$2$1$2;->$textPlaceable:Landroidx/compose/ui/layout/X;
 
-    iget-object v0, p0, Landroidx/compose/material3/SnackbarKt$OneRowSnackbar$2$1$2;->$dismissButtonPlaceable:Landroidx/compose/ui/layout/a1;
+    iget v1, p0, Landroidx/compose/material3/SnackbarKt$OneRowSnackbar$2$1$2;->$textPlaceY:I
+
+    const/4 v2, 0x0
+
+    invoke-static {p1, v0, v2, v1}, Landroidx/compose/ui/layout/W;->f(Landroidx/compose/ui/layout/W;Landroidx/compose/ui/layout/X;II)V
+
+    .line 3
+    iget-object v0, p0, Landroidx/compose/material3/SnackbarKt$OneRowSnackbar$2$1$2;->$dismissButtonPlaceable:Landroidx/compose/ui/layout/X;
 
     if-eqz v0, :cond_0
 
@@ -114,11 +115,11 @@
 
     iget v2, p0, Landroidx/compose/material3/SnackbarKt$OneRowSnackbar$2$1$2;->$dismissButtonPlaceY:I
 
-    .line 3
-    invoke-static {p1, v0, v1, v2}, Landroidx/compose/ui/layout/z0;->f(Landroidx/compose/ui/layout/z0;Landroidx/compose/ui/layout/a1;II)V
+    invoke-static {p1, v0, v1, v2}, Landroidx/compose/ui/layout/W;->f(Landroidx/compose/ui/layout/W;Landroidx/compose/ui/layout/X;II)V
 
+    .line 4
     :cond_0
-    iget-object v0, p0, Landroidx/compose/material3/SnackbarKt$OneRowSnackbar$2$1$2;->$actionButtonPlaceable:Landroidx/compose/ui/layout/a1;
+    iget-object v0, p0, Landroidx/compose/material3/SnackbarKt$OneRowSnackbar$2$1$2;->$actionButtonPlaceable:Landroidx/compose/ui/layout/X;
 
     if-eqz v0, :cond_1
 
@@ -126,8 +127,7 @@
 
     iget v2, p0, Landroidx/compose/material3/SnackbarKt$OneRowSnackbar$2$1$2;->$actionButtonPlaceY:I
 
-    .line 4
-    invoke-static {p1, v0, v1, v2}, Landroidx/compose/ui/layout/z0;->f(Landroidx/compose/ui/layout/z0;Landroidx/compose/ui/layout/a1;II)V
+    invoke-static {p1, v0, v1, v2}, Landroidx/compose/ui/layout/W;->f(Landroidx/compose/ui/layout/W;Landroidx/compose/ui/layout/X;II)V
 
     :cond_1
     return-void

@@ -11,89 +11,45 @@
 
 .field public final synthetic c:Ljava/lang/Object;
 
-.field public final synthetic d:Ljava/lang/Object;
-
 
 # direct methods
-.method public synthetic constructor <init>(Ljava/lang/Object;ILjava/lang/Object;)V
+.method public synthetic constructor <init>(Ljava/lang/Object;I)V
     .locals 0
 
     .line 1
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
-
-    .line 2
-    .line 3
-    .line 4
     iput p2, p0, Lcom/applovin/impl/mediation/s;->b:I
 
-    .line 5
-    .line 6
     iput-object p1, p0, Lcom/applovin/impl/mediation/s;->c:Ljava/lang/Object;
 
-    .line 7
-    .line 8
-    iput-object p3, p0, Lcom/applovin/impl/mediation/s;->d:Ljava/lang/Object;
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 9
-    .line 10
     return-void
 .end method
 
 
 # virtual methods
 .method public final run()V
-    .locals 3
+    .locals 1
 
     .line 1
     iget v0, p0, Lcom/applovin/impl/mediation/s;->b:I
 
-    iget-object v1, p0, Lcom/applovin/impl/mediation/s;->d:Ljava/lang/Object;
-
-    iget-object v2, p0, Lcom/applovin/impl/mediation/s;->c:Ljava/lang/Object;
-
     packed-switch v0, :pswitch_data_0
 
-    check-cast v2, Lcom/applovin/impl/mediation/g;
+    iget-object v0, p0, Lcom/applovin/impl/mediation/s;->c:Ljava/lang/Object;
 
-    check-cast v1, Ljava/lang/Runnable;
+    check-cast v0, Lcom/applovin/impl/mediation/g;
 
-    invoke-static {v2, v1}, Lcom/applovin/impl/mediation/g;->b(Lcom/applovin/impl/mediation/g;Ljava/lang/Runnable;)V
+    invoke-static {v0}, Lcom/applovin/impl/mediation/g;->l(Lcom/applovin/impl/mediation/g;)V
 
     return-void
 
     :pswitch_0
-    check-cast v2, Lcom/applovin/impl/mediation/c;
+    iget-object v0, p0, Lcom/applovin/impl/mediation/s;->c:Ljava/lang/Object;
 
-    check-cast v1, Lcom/applovin/impl/he;
+    check-cast v0, Lcom/applovin/impl/mediation/g$d;
 
-    invoke-static {v2, v1}, Lcom/applovin/impl/mediation/c;->a(Lcom/applovin/impl/mediation/c;Lcom/applovin/impl/he;)V
-
-    return-void
-
-    :pswitch_1
-    check-cast v2, Lcom/applovin/impl/mediation/b;
-
-    check-cast v1, Lcom/applovin/impl/he;
-
-    invoke-static {v2, v1}, Lcom/applovin/impl/mediation/b;->a(Lcom/applovin/impl/mediation/b;Lcom/applovin/impl/he;)V
-
-    return-void
-
-    :pswitch_2
-    check-cast v2, Lcom/applovin/impl/mediation/MediationServiceImpl$d;
-
-    check-cast v1, Lcom/applovin/mediation/MaxAd;
-
-    invoke-static {v2, v1}, Lcom/applovin/impl/mediation/MediationServiceImpl$d;->a(Lcom/applovin/impl/mediation/MediationServiceImpl$d;Lcom/applovin/mediation/MaxAd;)V
-
-    return-void
-
-    :pswitch_3
-    check-cast v2, Lcom/applovin/impl/mediation/g$d;
-
-    check-cast v1, Lcom/applovin/mediation/MaxError;
-
-    invoke-static {v2, v1}, Lcom/applovin/impl/mediation/g$d;->l(Lcom/applovin/impl/mediation/g$d;Lcom/applovin/mediation/MaxError;)V
+    invoke-static {v0}, Lcom/applovin/impl/mediation/g$d;->m(Lcom/applovin/impl/mediation/g$d;)V
 
     return-void
 
@@ -101,9 +57,6 @@
 
     :pswitch_data_0
     .packed-switch 0x0
-        :pswitch_3
-        :pswitch_2
-        :pswitch_1
         :pswitch_0
     .end packed-switch
 .end method

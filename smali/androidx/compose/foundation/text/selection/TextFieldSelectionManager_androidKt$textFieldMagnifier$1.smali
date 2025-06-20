@@ -3,14 +3,14 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lzh/f;
+.implements Lka/f;
 
 
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "Lkotlin/jvm/internal/Lambda;",
-        "Lzh/f;"
+        "Lka/f;"
     }
 .end annotation
 
@@ -21,7 +21,7 @@
     d2 = {
         "Landroidx/compose/ui/o;",
         "invoke",
-        "(Landroidx/compose/ui/o;Landroidx/compose/runtime/l;I)Landroidx/compose/ui/o;",
+        "(Landroidx/compose/ui/o;Landroidx/compose/runtime/j;I)Landroidx/compose/ui/o;",
         "<anonymous>"
     }
     k = 0x3
@@ -34,14 +34,14 @@
 
 
 # instance fields
-.field final synthetic $manager:Landroidx/compose/foundation/text/selection/a0;
+.field final synthetic $manager:Landroidx/compose/foundation/text/selection/x;
 
 
 # direct methods
-.method public constructor <init>(Landroidx/compose/foundation/text/selection/a0;)V
+.method public constructor <init>(Landroidx/compose/foundation/text/selection/x;)V
     .locals 0
 
-    iput-object p1, p0, Landroidx/compose/foundation/text/selection/TextFieldSelectionManager_androidKt$textFieldMagnifier$1;->$manager:Landroidx/compose/foundation/text/selection/a0;
+    iput-object p1, p0, Landroidx/compose/foundation/text/selection/TextFieldSelectionManager_androidKt$textFieldMagnifier$1;->$manager:Landroidx/compose/foundation/text/selection/x;
 
     const/4 p1, 0x3
 
@@ -50,11 +50,11 @@
     return-void
 .end method
 
-.method public static final access$invoke$lambda$1(Landroidx/compose/runtime/j1;)J
+.method public static final access$invoke$lambda$1(Landroidx/compose/runtime/Z;)J
     .locals 2
 
     .line 1
-    invoke-interface {p0}, Landroidx/compose/runtime/d3;->getValue()Ljava/lang/Object;
+    invoke-interface {p0}, Landroidx/compose/runtime/H0;->getValue()Ljava/lang/Object;
 
     .line 2
     .line 3
@@ -62,31 +62,31 @@
     move-result-object p0
 
     .line 5
-    check-cast p0, Lh2/j;
+    check-cast p0, LM0/j;
 
     .line 6
     .line 7
-    iget-wide v0, p0, Lh2/j;->a:J
+    iget-wide v0, p0, LM0/j;->a:J
 
     .line 8
     .line 9
     return-wide v0
 .end method
 
-.method public static final access$invoke$lambda$2(Landroidx/compose/runtime/j1;J)V
+.method public static final access$invoke$lambda$2(Landroidx/compose/runtime/Z;J)V
     .locals 1
 
     .line 1
-    new-instance v0, Lh2/j;
+    new-instance v0, LM0/j;
 
     .line 2
     .line 3
-    invoke-direct {v0, p1, p2}, Lh2/j;-><init>(J)V
+    invoke-direct {v0, p1, p2}, LM0/j;-><init>(J)V
 
     .line 4
     .line 5
     .line 6
-    invoke-interface {p0, v0}, Landroidx/compose/runtime/j1;->setValue(Ljava/lang/Object;)V
+    invoke-interface {p0, v0}, Landroidx/compose/runtime/Z;->setValue(Ljava/lang/Object;)V
 
     .line 7
     .line 8
@@ -96,67 +96,69 @@
 
 
 # virtual methods
-.method public final invoke(Landroidx/compose/ui/o;Landroidx/compose/runtime/l;I)Landroidx/compose/ui/o;
+.method public final invoke(Landroidx/compose/ui/o;Landroidx/compose/runtime/j;I)Landroidx/compose/ui/o;
     .locals 5
 
-    check-cast p2, Landroidx/compose/runtime/p;
+    check-cast p2, Landroidx/compose/runtime/n;
 
     const p3, 0x760d4197
 
-    invoke-virtual {p2, p3}, Landroidx/compose/runtime/p;->T(I)V
+    invoke-virtual {p2, p3}, Landroidx/compose/runtime/n;->R(I)V
 
     .line 2
-    sget-object p3, Landroidx/compose/ui/platform/i1;->f:Landroidx/compose/runtime/e3;
+    sget-object p3, Landroidx/compose/ui/platform/Z;->f:Landroidx/compose/runtime/I0;
 
     .line 3
-    invoke-virtual {p2, p3}, Landroidx/compose/runtime/p;->l(Landroidx/compose/runtime/u1;)Ljava/lang/Object;
+    invoke-virtual {p2, p3}, Landroidx/compose/runtime/n;->k(Landroidx/compose/runtime/j0;)Ljava/lang/Object;
 
     move-result-object p3
 
     .line 4
-    check-cast p3, Lh2/b;
+    check-cast p3, LM0/b;
 
     .line 5
-    invoke-virtual {p2}, Landroidx/compose/runtime/p;->I()Ljava/lang/Object;
+    invoke-virtual {p2}, Landroidx/compose/runtime/n;->G()Ljava/lang/Object;
 
     move-result-object v0
 
-    sget-object v1, Landroidx/compose/runtime/k;->b:Lxd/e;
+    .line 6
+    sget-object v1, Landroidx/compose/runtime/i;->a:Landroidx/compose/runtime/T;
 
     if-ne v0, v1, :cond_0
 
-    .line 6
-    new-instance v0, Lh2/j;
+    .line 7
+    new-instance v0, LM0/j;
 
     const-wide/16 v2, 0x0
 
-    invoke-direct {v0, v2, v3}, Lh2/j;-><init>(J)V
+    invoke-direct {v0, v2, v3}, LM0/j;-><init>(J)V
 
-    sget-object v2, Landroidx/compose/runtime/g3;->a:Landroidx/compose/runtime/g3;
+    .line 8
+    sget-object v2, Landroidx/compose/runtime/T;->h:Landroidx/compose/runtime/T;
 
-    .line 7
-    invoke-static {v0, v2}, Lma/a;->Z(Ljava/lang/Object;Landroidx/compose/runtime/u2;)Landroidx/compose/runtime/ParcelableSnapshotMutableState;
+    .line 9
+    invoke-static {v0, v2}, Landroidx/compose/runtime/o;->R(Ljava/lang/Object;Landroidx/compose/runtime/A0;)Landroidx/compose/runtime/ParcelableSnapshotMutableState;
 
     move-result-object v0
 
-    .line 8
-    invoke-virtual {p2, v0}, Landroidx/compose/runtime/p;->d0(Ljava/lang/Object;)V
-
-    .line 9
-    :cond_0
-    check-cast v0, Landroidx/compose/runtime/j1;
-
-    iget-object v2, p0, Landroidx/compose/foundation/text/selection/TextFieldSelectionManager_androidKt$textFieldMagnifier$1;->$manager:Landroidx/compose/foundation/text/selection/a0;
-
     .line 10
-    invoke-virtual {p2, v2}, Landroidx/compose/runtime/p;->i(Ljava/lang/Object;)Z
+    invoke-virtual {p2, v0}, Landroidx/compose/runtime/n;->b0(Ljava/lang/Object;)V
+
+    .line 11
+    :cond_0
+    check-cast v0, Landroidx/compose/runtime/Z;
+
+    .line 12
+    iget-object v2, p0, Landroidx/compose/foundation/text/selection/TextFieldSelectionManager_androidKt$textFieldMagnifier$1;->$manager:Landroidx/compose/foundation/text/selection/x;
+
+    invoke-virtual {p2, v2}, Landroidx/compose/runtime/n;->h(Ljava/lang/Object;)Z
 
     move-result v2
 
-    iget-object v3, p0, Landroidx/compose/foundation/text/selection/TextFieldSelectionManager_androidKt$textFieldMagnifier$1;->$manager:Landroidx/compose/foundation/text/selection/a0;
+    iget-object v3, p0, Landroidx/compose/foundation/text/selection/TextFieldSelectionManager_androidKt$textFieldMagnifier$1;->$manager:Landroidx/compose/foundation/text/selection/x;
 
-    .line 11
-    invoke-virtual {p2}, Landroidx/compose/runtime/p;->I()Ljava/lang/Object;
+    .line 13
+    invoke-virtual {p2}, Landroidx/compose/runtime/n;->G()Ljava/lang/Object;
 
     move-result-object v4
 
@@ -164,26 +166,26 @@
 
     if-ne v4, v1, :cond_2
 
-    .line 12
+    .line 14
     :cond_1
     new-instance v4, Landroidx/compose/foundation/text/selection/TextFieldSelectionManager_androidKt$textFieldMagnifier$1$1$1;
 
-    invoke-direct {v4, v3, v0}, Landroidx/compose/foundation/text/selection/TextFieldSelectionManager_androidKt$textFieldMagnifier$1$1$1;-><init>(Landroidx/compose/foundation/text/selection/a0;Landroidx/compose/runtime/j1;)V
-
-    .line 13
-    invoke-virtual {p2, v4}, Landroidx/compose/runtime/p;->d0(Ljava/lang/Object;)V
-
-    .line 14
-    :cond_2
-    check-cast v4, Lzh/a;
+    invoke-direct {v4, v3, v0}, Landroidx/compose/foundation/text/selection/TextFieldSelectionManager_androidKt$textFieldMagnifier$1$1$1;-><init>(Landroidx/compose/foundation/text/selection/x;Landroidx/compose/runtime/Z;)V
 
     .line 15
-    invoke-virtual {p2, p3}, Landroidx/compose/runtime/p;->g(Ljava/lang/Object;)Z
+    invoke-virtual {p2, v4}, Landroidx/compose/runtime/n;->b0(Ljava/lang/Object;)V
+
+    .line 16
+    :cond_2
+    check-cast v4, Lka/a;
+
+    .line 17
+    invoke-virtual {p2, p3}, Landroidx/compose/runtime/n;->f(Ljava/lang/Object;)Z
 
     move-result v2
 
-    .line 16
-    invoke-virtual {p2}, Landroidx/compose/runtime/p;->I()Ljava/lang/Object;
+    .line 18
+    invoke-virtual {p2}, Landroidx/compose/runtime/n;->G()Ljava/lang/Object;
 
     move-result-object v3
 
@@ -191,39 +193,39 @@
 
     if-ne v3, v1, :cond_4
 
-    .line 17
+    .line 19
     :cond_3
     new-instance v3, Landroidx/compose/foundation/text/selection/TextFieldSelectionManager_androidKt$textFieldMagnifier$1$2$1;
 
-    invoke-direct {v3, p3, v0}, Landroidx/compose/foundation/text/selection/TextFieldSelectionManager_androidKt$textFieldMagnifier$1$2$1;-><init>(Lh2/b;Landroidx/compose/runtime/j1;)V
-
-    .line 18
-    invoke-virtual {p2, v3}, Landroidx/compose/runtime/p;->d0(Ljava/lang/Object;)V
-
-    .line 19
-    :cond_4
-    check-cast v3, Lzh/c;
+    invoke-direct {v3, p3, v0}, Landroidx/compose/foundation/text/selection/TextFieldSelectionManager_androidKt$textFieldMagnifier$1$2$1;-><init>(LM0/b;Landroidx/compose/runtime/Z;)V
 
     .line 20
-    sget-object p3, Landroidx/compose/foundation/text/selection/q;->a:Landroidx/compose/animation/core/j;
+    invoke-virtual {p2, v3}, Landroidx/compose/runtime/n;->b0(Ljava/lang/Object;)V
 
     .line 21
-    new-instance p3, Landroidx/compose/foundation/text/selection/SelectionMagnifierKt$animatedSelectionMagnifier$1;
-
-    invoke-direct {p3, v4, v3}, Landroidx/compose/foundation/text/selection/SelectionMagnifierKt$animatedSelectionMagnifier$1;-><init>(Lzh/a;Lzh/c;)V
+    :cond_4
+    check-cast v3, Lka/c;
 
     .line 22
-    sget v0, Landroidx/compose/ui/platform/u1;->a:I
+    sget-object p3, Landroidx/compose/foundation/text/selection/p;->a:Landroidx/compose/animation/core/i;
 
     .line 23
-    invoke-static {p1, p3}, Landroidx/compose/ui/a;->a(Landroidx/compose/ui/o;Lzh/f;)Landroidx/compose/ui/o;
+    new-instance p3, Landroidx/compose/foundation/text/selection/SelectionMagnifierKt$animatedSelectionMagnifier$1;
+
+    invoke-direct {p3, v4, v3}, Landroidx/compose/foundation/text/selection/SelectionMagnifierKt$animatedSelectionMagnifier$1;-><init>(Lka/a;Lka/c;)V
+
+    .line 24
+    sget v0, Landroidx/compose/ui/platform/k0;->a:I
+
+    .line 25
+    invoke-static {p1, p3}, Landroidx/compose/ui/a;->b(Landroidx/compose/ui/o;Lka/f;)Landroidx/compose/ui/o;
 
     move-result-object p1
 
     const/4 p3, 0x0
 
-    .line 24
-    invoke-virtual {p2, p3}, Landroidx/compose/runtime/p;->q(Z)V
+    .line 26
+    invoke-virtual {p2, p3}, Landroidx/compose/runtime/n;->p(Z)V
 
     return-object p1
 .end method
@@ -234,7 +236,7 @@
     .line 1
     check-cast p1, Landroidx/compose/ui/o;
 
-    check-cast p2, Landroidx/compose/runtime/l;
+    check-cast p2, Landroidx/compose/runtime/j;
 
     check-cast p3, Ljava/lang/Number;
 
@@ -242,7 +244,7 @@
 
     move-result p3
 
-    invoke-virtual {p0, p1, p2, p3}, Landroidx/compose/foundation/text/selection/TextFieldSelectionManager_androidKt$textFieldMagnifier$1;->invoke(Landroidx/compose/ui/o;Landroidx/compose/runtime/l;I)Landroidx/compose/ui/o;
+    invoke-virtual {p0, p1, p2, p3}, Landroidx/compose/foundation/text/selection/TextFieldSelectionManager_androidKt$textFieldMagnifier$1;->invoke(Landroidx/compose/ui/o;Landroidx/compose/runtime/j;I)Landroidx/compose/ui/o;
 
     move-result-object p1
 

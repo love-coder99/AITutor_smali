@@ -1,382 +1,826 @@
-.class public abstract Landroidx/appcompat/view/menu/x;
+.class public Landroidx/appcompat/view/menu/x;
 .super Ljava/lang/Object;
 .source "SourceFile"
 
-# interfaces
-.implements Landroidx/appcompat/view/menu/f0;
-.implements Landroidx/appcompat/view/menu/b0;
-.implements Landroid/widget/AdapterView$OnItemClickListener;
+
+# static fields
+.field private static final TOUCH_EPICENTER_SIZE_DP:I = 0x30
 
 
 # instance fields
-.field public b:Landroid/graphics/Rect;
+.field private mAnchorView:Landroid/view/View;
+
+.field private final mContext:Landroid/content/Context;
+
+.field private mDropDownGravity:I
+
+.field private mForceShowIcon:Z
+
+.field private final mInternalOnDismissListener:Landroid/widget/PopupWindow$OnDismissListener;
+
+.field private final mMenu:Landroidx/appcompat/view/menu/n;
+
+.field private mOnDismissListener:Landroid/widget/PopupWindow$OnDismissListener;
+
+.field private final mOverflowOnly:Z
+
+.field private mPopup:Landroidx/appcompat/view/menu/v;
+
+.field private final mPopupStyleAttr:I
+
+.field private final mPopupStyleRes:I
+
+.field private mPresenterCallback:Landroidx/appcompat/view/menu/y;
 
 
 # direct methods
-.method public static b(Landroidx/appcompat/view/menu/m;Landroid/content/Context;I)I
-    .locals 10
+.method public constructor <init>(IILandroid/content/Context;Landroid/view/View;Landroidx/appcompat/view/menu/n;Z)V
+    .locals 1
 
     .line 1
-    const/4 v0, 0x0
-
-    .line 2
-    invoke-static {v0, v0}, Landroid/view/View$MeasureSpec;->makeMeasureSpec(II)I
-
-    .line 3
-    .line 4
-    .line 5
-    move-result v1
-
-    .line 6
-    invoke-static {v0, v0}, Landroid/view/View$MeasureSpec;->makeMeasureSpec(II)I
-
-    .line 7
-    .line 8
-    .line 9
-    move-result v2
-
-    .line 10
-    invoke-virtual {p0}, Landroidx/appcompat/view/menu/m;->getCount()I
-
-    .line 11
-    .line 12
-    .line 13
-    move-result v3
-
-    .line 14
-    const/4 v4, 0x0
-
-    .line 15
-    move-object v7, v4
-
-    .line 16
-    move-object v8, v7
-
-    .line 17
-    const/4 v5, 0x0
-
-    .line 18
-    const/4 v6, 0x0
-
-    .line 19
-    :goto_0
-    if-ge v0, v3, :cond_4
-
-    .line 20
-    .line 21
-    invoke-virtual {p0, v0}, Landroid/widget/BaseAdapter;->getItemViewType(I)I
-
-    .line 22
-    .line 23
-    .line 24
-    move-result v9
-
-    .line 25
-    if-eq v9, v6, :cond_0
-
-    .line 26
-    .line 27
-    move-object v8, v4
-
-    .line 28
-    move v6, v9
-
-    .line 29
-    :cond_0
-    if-nez v7, :cond_1
-
-    .line 30
-    .line 31
-    new-instance v7, Landroid/widget/FrameLayout;
-
-    .line 32
-    .line 33
-    invoke-direct {v7, p1}, Landroid/widget/FrameLayout;-><init>(Landroid/content/Context;)V
-
-    .line 34
-    .line 35
-    .line 36
-    :cond_1
-    invoke-virtual {p0, v0, v8, v7}, Landroidx/appcompat/view/menu/m;->getView(ILandroid/view/View;Landroid/view/ViewGroup;)Landroid/view/View;
-
-    .line 37
-    .line 38
-    .line 39
-    move-result-object v8
-
-    .line 40
-    invoke-virtual {v8, v1, v2}, Landroid/view/View;->measure(II)V
-
-    .line 41
-    .line 42
-    .line 43
-    invoke-virtual {v8}, Landroid/view/View;->getMeasuredWidth()I
-
-    .line 44
-    .line 45
-    .line 46
-    move-result v9
-
-    .line 47
-    if-lt v9, p2, :cond_2
-
-    .line 48
-    .line 49
-    return p2
-
-    .line 50
-    :cond_2
-    if-le v9, v5, :cond_3
-
-    .line 51
-    .line 52
-    move v5, v9
-
-    .line 53
-    :cond_3
-    add-int/lit8 v0, v0, 0x1
-
-    .line 54
-    .line 55
-    goto :goto_0
-
-    .line 56
-    :cond_4
-    return v5
-.end method
-
-.method public static j(Landroidx/appcompat/view/menu/p;)Z
-    .locals 5
-
-    .line 1
-    iget-object v0, p0, Landroidx/appcompat/view/menu/p;->f:Ljava/util/ArrayList;
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 2
     .line 3
-    invoke-virtual {v0}, Ljava/util/ArrayList;->size()I
-
     .line 4
+    const v0, 0x800003
+
     .line 5
     .line 6
-    move-result v0
-
     .line 7
-    const/4 v1, 0x0
+    iput v0, p0, Landroidx/appcompat/view/menu/x;->mDropDownGravity:I
 
     .line 8
-    const/4 v2, 0x0
-
     .line 9
-    :goto_0
-    if-ge v2, v0, :cond_1
+    new-instance v0, Landroidx/appcompat/view/menu/w;
 
     .line 10
     .line 11
-    invoke-virtual {p0, v2}, Landroidx/appcompat/view/menu/p;->getItem(I)Landroid/view/MenuItem;
+    invoke-direct {v0, p0}, Landroidx/appcompat/view/menu/w;-><init>(Landroidx/appcompat/view/menu/x;)V
 
     .line 12
     .line 13
     .line 14
-    move-result-object v3
+    iput-object v0, p0, Landroidx/appcompat/view/menu/x;->mInternalOnDismissListener:Landroid/widget/PopupWindow$OnDismissListener;
 
     .line 15
-    invoke-interface {v3}, Landroid/view/MenuItem;->isVisible()Z
-
     .line 16
+    iput-object p3, p0, Landroidx/appcompat/view/menu/x;->mContext:Landroid/content/Context;
+
     .line 17
     .line 18
-    move-result v4
+    iput-object p5, p0, Landroidx/appcompat/view/menu/x;->mMenu:Landroidx/appcompat/view/menu/n;
 
     .line 19
-    if-eqz v4, :cond_0
-
     .line 20
-    .line 21
-    invoke-interface {v3}, Landroid/view/MenuItem;->getIcon()Landroid/graphics/drawable/Drawable;
+    iput-object p4, p0, Landroidx/appcompat/view/menu/x;->mAnchorView:Landroid/view/View;
 
+    .line 21
     .line 22
+    iput-boolean p6, p0, Landroidx/appcompat/view/menu/x;->mOverflowOnly:Z
+
     .line 23
     .line 24
-    move-result-object v3
+    iput p1, p0, Landroidx/appcompat/view/menu/x;->mPopupStyleAttr:I
 
     .line 25
-    if-eqz v3, :cond_0
-
     .line 26
+    iput p2, p0, Landroidx/appcompat/view/menu/x;->mPopupStyleRes:I
+
     .line 27
-    const/4 v1, 0x1
-
     .line 28
-    goto :goto_1
-
-    .line 29
-    :cond_0
-    add-int/lit8 v2, v2, 0x1
-
-    .line 30
-    .line 31
-    goto :goto_0
-
-    .line 32
-    :cond_1
-    :goto_1
-    return v1
+    return-void
 .end method
 
 
 # virtual methods
-.method public abstract a(Landroidx/appcompat/view/menu/p;)V
-.end method
-
-.method public abstract c(Landroid/view/View;)V
-.end method
-
-.method public final collapseItemActionView(Landroidx/appcompat/view/menu/p;Landroidx/appcompat/view/menu/r;)Z
-    .locals 0
-
-    const/4 p1, 0x0
-
-    return p1
-.end method
-
-.method public abstract d(Z)V
-.end method
-
-.method public abstract e(I)V
-.end method
-
-.method public final expandItemActionView(Landroidx/appcompat/view/menu/p;Landroidx/appcompat/view/menu/r;)Z
-    .locals 0
-
-    const/4 p1, 0x0
-
-    return p1
-.end method
-
-.method public abstract f(I)V
-.end method
-
-.method public abstract g(Landroid/widget/PopupWindow$OnDismissListener;)V
-.end method
-
-.method public final getId()I
-    .locals 1
-
-    const/4 v0, 0x0
-
-    return v0
-.end method
-
-.method public abstract h(Z)V
-.end method
-
-.method public abstract i(I)V
-.end method
-
-.method public final initForMenu(Landroid/content/Context;Landroidx/appcompat/view/menu/p;)V
-    .locals 0
-
-    return-void
-.end method
-
-.method public final onItemClick(Landroid/widget/AdapterView;Landroid/view/View;IJ)V
-    .locals 0
+.method public final a(IIZZ)V
+    .locals 3
 
     .line 1
-    invoke-virtual {p1}, Landroid/widget/AdapterView;->getAdapter()Landroid/widget/Adapter;
+    invoke-virtual {p0}, Landroidx/appcompat/view/menu/x;->getPopup()Landroidx/appcompat/view/menu/v;
 
     .line 2
     .line 3
     .line 4
-    move-result-object p1
+    move-result-object v0
 
     .line 5
-    check-cast p1, Landroid/widget/ListAdapter;
+    invoke-virtual {v0, p4}, Landroidx/appcompat/view/menu/v;->h(Z)V
 
     .line 6
     .line 7
-    instance-of p2, p1, Landroid/widget/HeaderViewListAdapter;
-
     .line 8
+    if-eqz p3, :cond_1
+
     .line 9
-    if-eqz p2, :cond_0
-
     .line 10
-    .line 11
-    move-object p2, p1
+    iget p3, p0, Landroidx/appcompat/view/menu/x;->mDropDownGravity:I
 
+    .line 11
     .line 12
-    check-cast p2, Landroid/widget/HeaderViewListAdapter;
+    iget-object p4, p0, Landroidx/appcompat/view/menu/x;->mAnchorView:Landroid/view/View;
 
     .line 13
     .line 14
-    invoke-virtual {p2}, Landroid/widget/HeaderViewListAdapter;->getWrappedAdapter()Landroid/widget/ListAdapter;
+    invoke-virtual {p4}, Landroid/view/View;->getLayoutDirection()I
 
     .line 15
     .line 16
     .line 17
-    move-result-object p2
+    move-result p4
 
     .line 18
-    check-cast p2, Landroidx/appcompat/view/menu/m;
+    invoke-static {p3, p4}, Landroid/view/Gravity;->getAbsoluteGravity(II)I
 
     .line 19
     .line 20
-    goto :goto_0
-
     .line 21
-    :cond_0
-    move-object p2, p1
+    move-result p3
 
     .line 22
-    check-cast p2, Landroidx/appcompat/view/menu/m;
+    and-int/lit8 p3, p3, 0x7
 
     .line 23
     .line 24
-    :goto_0
-    iget-object p2, p2, Landroidx/appcompat/view/menu/m;->b:Landroidx/appcompat/view/menu/p;
+    const/4 p4, 0x5
 
     .line 25
-    .line 26
-    invoke-interface {p1, p3}, Landroid/widget/Adapter;->getItem(I)Ljava/lang/Object;
+    if-ne p3, p4, :cond_0
 
+    .line 26
     .line 27
+    iget-object p3, p0, Landroidx/appcompat/view/menu/x;->mAnchorView:Landroid/view/View;
+
     .line 28
     .line 29
-    move-result-object p1
+    invoke-virtual {p3}, Landroid/view/View;->getWidth()I
 
     .line 30
-    check-cast p1, Landroid/view/MenuItem;
-
     .line 31
     .line 32
-    instance-of p3, p0, Landroidx/appcompat/view/menu/j;
+    move-result p3
 
     .line 33
+    sub-int/2addr p1, p3
+
     .line 34
-    xor-int/lit8 p3, p3, 0x1
+    :cond_0
+    invoke-virtual {v0, p1}, Landroidx/appcompat/view/menu/v;->f(I)V
 
     .line 35
     .line 36
-    if-eqz p3, :cond_1
-
     .line 37
+    invoke-virtual {v0, p2}, Landroidx/appcompat/view/menu/v;->i(I)V
+
     .line 38
-    const/4 p3, 0x0
-
     .line 39
-    goto :goto_1
-
     .line 40
-    :cond_1
-    const/4 p3, 0x4
+    iget-object p3, p0, Landroidx/appcompat/view/menu/x;->mContext:Landroid/content/Context;
 
     .line 41
-    :goto_1
-    invoke-virtual {p2, p1, p0, p3}, Landroidx/appcompat/view/menu/p;->q(Landroid/view/MenuItem;Landroidx/appcompat/view/menu/b0;I)Z
+    .line 42
+    invoke-virtual {p3}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
+
+    .line 43
+    .line 44
+    .line 45
+    move-result-object p3
+
+    .line 46
+    invoke-virtual {p3}, Landroid/content/res/Resources;->getDisplayMetrics()Landroid/util/DisplayMetrics;
+
+    .line 47
+    .line 48
+    .line 49
+    move-result-object p3
+
+    .line 50
+    iget p3, p3, Landroid/util/DisplayMetrics;->density:F
+
+    .line 51
+    .line 52
+    const/high16 p4, 0x42400000    # 48.0f
+
+    .line 53
+    .line 54
+    mul-float p3, p3, p4
+
+    .line 55
+    .line 56
+    const/high16 p4, 0x40000000    # 2.0f
+
+    .line 57
+    .line 58
+    div-float/2addr p3, p4
+
+    .line 59
+    float-to-int p3, p3
+
+    .line 60
+    new-instance p4, Landroid/graphics/Rect;
+
+    .line 61
+    .line 62
+    sub-int v1, p1, p3
+
+    .line 63
+    .line 64
+    sub-int v2, p2, p3
+
+    .line 65
+    .line 66
+    add-int/2addr p1, p3
+
+    .line 67
+    add-int/2addr p2, p3
+
+    .line 68
+    invoke-direct {p4, v1, v2, p1, p2}, Landroid/graphics/Rect;-><init>(IIII)V
+
+    .line 69
+    .line 70
+    .line 71
+    iput-object p4, v0, Landroidx/appcompat/view/menu/v;->b:Landroid/graphics/Rect;
+
+    .line 72
+    .line 73
+    :cond_1
+    invoke-interface {v0}, Landroidx/appcompat/view/menu/D;->show()V
+
+    .line 74
+    .line 75
+    .line 76
+    return-void
+.end method
+
+.method public dismiss()V
+    .locals 1
+
+    .line 1
+    invoke-virtual {p0}, Landroidx/appcompat/view/menu/x;->isShowing()Z
+
+    .line 2
+    .line 3
+    .line 4
+    move-result v0
+
+    .line 5
+    if-eqz v0, :cond_0
+
+    .line 6
+    .line 7
+    iget-object v0, p0, Landroidx/appcompat/view/menu/x;->mPopup:Landroidx/appcompat/view/menu/v;
+
+    .line 8
+    .line 9
+    invoke-interface {v0}, Landroidx/appcompat/view/menu/D;->dismiss()V
+
+    .line 10
+    .line 11
+    .line 12
+    :cond_0
+    return-void
+.end method
+
+.method public getGravity()I
+    .locals 1
+
+    .line 1
+    iget v0, p0, Landroidx/appcompat/view/menu/x;->mDropDownGravity:I
+
+    .line 2
+    .line 3
+    return v0
+.end method
+
+.method public getListView()Landroid/widget/ListView;
+    .locals 1
+
+    .line 1
+    invoke-virtual {p0}, Landroidx/appcompat/view/menu/x;->getPopup()Landroidx/appcompat/view/menu/v;
+
+    .line 2
+    .line 3
+    .line 4
+    move-result-object v0
+
+    .line 5
+    invoke-interface {v0}, Landroidx/appcompat/view/menu/D;->getListView()Landroid/widget/ListView;
+
+    .line 6
+    .line 7
+    .line 8
+    move-result-object v0
+
+    .line 9
+    return-object v0
+.end method
+
+.method public getPopup()Landroidx/appcompat/view/menu/v;
+    .locals 15
+    .annotation build Landroidx/annotation/NonNull;
+    .end annotation
+
+    .line 1
+    iget-object v0, p0, Landroidx/appcompat/view/menu/x;->mPopup:Landroidx/appcompat/view/menu/v;
+
+    .line 2
+    .line 3
+    if-nez v0, :cond_1
+
+    .line 4
+    .line 5
+    iget-object v0, p0, Landroidx/appcompat/view/menu/x;->mContext:Landroid/content/Context;
+
+    .line 6
+    .line 7
+    const-string v1, "window"
+
+    .line 8
+    .line 9
+    invoke-virtual {v0, v1}, Landroid/content/Context;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
+
+    .line 10
+    .line 11
+    .line 12
+    move-result-object v0
+
+    .line 13
+    check-cast v0, Landroid/view/WindowManager;
+
+    .line 14
+    .line 15
+    invoke-interface {v0}, Landroid/view/WindowManager;->getDefaultDisplay()Landroid/view/Display;
+
+    .line 16
+    .line 17
+    .line 18
+    move-result-object v0
+
+    .line 19
+    new-instance v1, Landroid/graphics/Point;
+
+    .line 20
+    .line 21
+    invoke-direct {v1}, Landroid/graphics/Point;-><init>()V
+
+    .line 22
+    .line 23
+    .line 24
+    invoke-virtual {v0, v1}, Landroid/view/Display;->getRealSize(Landroid/graphics/Point;)V
+
+    .line 25
+    .line 26
+    .line 27
+    iget v0, v1, Landroid/graphics/Point;->x:I
+
+    .line 28
+    .line 29
+    iget v1, v1, Landroid/graphics/Point;->y:I
+
+    .line 30
+    .line 31
+    invoke-static {v0, v1}, Ljava/lang/Math;->min(II)I
+
+    .line 32
+    .line 33
+    .line 34
+    move-result v0
+
+    .line 35
+    iget-object v1, p0, Landroidx/appcompat/view/menu/x;->mContext:Landroid/content/Context;
+
+    .line 36
+    .line 37
+    invoke-virtual {v1}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
+
+    .line 38
+    .line 39
+    .line 40
+    move-result-object v1
+
+    .line 41
+    sget v2, Li/d;->abc_cascading_menus_min_smallest_width:I
 
     .line 42
     .line 43
+    invoke-virtual {v1, v2}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
+
     .line 44
+    .line 45
+    .line 46
+    move-result v1
+
+    .line 47
+    if-lt v0, v1, :cond_0
+
+    .line 48
+    .line 49
+    new-instance v0, Landroidx/appcompat/view/menu/h;
+
+    .line 50
+    .line 51
+    iget-object v3, p0, Landroidx/appcompat/view/menu/x;->mContext:Landroid/content/Context;
+
+    .line 52
+    .line 53
+    iget-object v4, p0, Landroidx/appcompat/view/menu/x;->mAnchorView:Landroid/view/View;
+
+    .line 54
+    .line 55
+    iget v5, p0, Landroidx/appcompat/view/menu/x;->mPopupStyleAttr:I
+
+    .line 56
+    .line 57
+    iget v6, p0, Landroidx/appcompat/view/menu/x;->mPopupStyleRes:I
+
+    .line 58
+    .line 59
+    iget-boolean v7, p0, Landroidx/appcompat/view/menu/x;->mOverflowOnly:Z
+
+    .line 60
+    .line 61
+    move-object v2, v0
+
+    .line 62
+    invoke-direct/range {v2 .. v7}, Landroidx/appcompat/view/menu/h;-><init>(Landroid/content/Context;Landroid/view/View;IIZ)V
+
+    .line 63
+    .line 64
+    .line 65
+    goto :goto_0
+
+    .line 66
+    :cond_0
+    new-instance v0, Landroidx/appcompat/view/menu/E;
+
+    .line 67
+    .line 68
+    iget-object v11, p0, Landroidx/appcompat/view/menu/x;->mContext:Landroid/content/Context;
+
+    .line 69
+    .line 70
+    iget-object v13, p0, Landroidx/appcompat/view/menu/x;->mMenu:Landroidx/appcompat/view/menu/n;
+
+    .line 71
+    .line 72
+    iget-object v12, p0, Landroidx/appcompat/view/menu/x;->mAnchorView:Landroid/view/View;
+
+    .line 73
+    .line 74
+    iget v9, p0, Landroidx/appcompat/view/menu/x;->mPopupStyleAttr:I
+
+    .line 75
+    .line 76
+    iget v10, p0, Landroidx/appcompat/view/menu/x;->mPopupStyleRes:I
+
+    .line 77
+    .line 78
+    iget-boolean v14, p0, Landroidx/appcompat/view/menu/x;->mOverflowOnly:Z
+
+    .line 79
+    .line 80
+    move-object v8, v0
+
+    .line 81
+    invoke-direct/range {v8 .. v14}, Landroidx/appcompat/view/menu/E;-><init>(IILandroid/content/Context;Landroid/view/View;Landroidx/appcompat/view/menu/n;Z)V
+
+    .line 82
+    .line 83
+    .line 84
+    :goto_0
+    iget-object v1, p0, Landroidx/appcompat/view/menu/x;->mMenu:Landroidx/appcompat/view/menu/n;
+
+    .line 85
+    .line 86
+    invoke-virtual {v0, v1}, Landroidx/appcompat/view/menu/v;->a(Landroidx/appcompat/view/menu/n;)V
+
+    .line 87
+    .line 88
+    .line 89
+    iget-object v1, p0, Landroidx/appcompat/view/menu/x;->mInternalOnDismissListener:Landroid/widget/PopupWindow$OnDismissListener;
+
+    .line 90
+    .line 91
+    invoke-virtual {v0, v1}, Landroidx/appcompat/view/menu/v;->g(Landroid/widget/PopupWindow$OnDismissListener;)V
+
+    .line 92
+    .line 93
+    .line 94
+    iget-object v1, p0, Landroidx/appcompat/view/menu/x;->mAnchorView:Landroid/view/View;
+
+    .line 95
+    .line 96
+    invoke-virtual {v0, v1}, Landroidx/appcompat/view/menu/v;->c(Landroid/view/View;)V
+
+    .line 97
+    .line 98
+    .line 99
+    iget-object v1, p0, Landroidx/appcompat/view/menu/x;->mPresenterCallback:Landroidx/appcompat/view/menu/y;
+
+    .line 100
+    .line 101
+    invoke-interface {v0, v1}, Landroidx/appcompat/view/menu/z;->setCallback(Landroidx/appcompat/view/menu/y;)V
+
+    .line 102
+    .line 103
+    .line 104
+    iget-boolean v1, p0, Landroidx/appcompat/view/menu/x;->mForceShowIcon:Z
+
+    .line 105
+    .line 106
+    invoke-virtual {v0, v1}, Landroidx/appcompat/view/menu/v;->d(Z)V
+
+    .line 107
+    .line 108
+    .line 109
+    iget v1, p0, Landroidx/appcompat/view/menu/x;->mDropDownGravity:I
+
+    .line 110
+    .line 111
+    invoke-virtual {v0, v1}, Landroidx/appcompat/view/menu/v;->e(I)V
+
+    .line 112
+    .line 113
+    .line 114
+    iput-object v0, p0, Landroidx/appcompat/view/menu/x;->mPopup:Landroidx/appcompat/view/menu/v;
+
+    .line 115
+    .line 116
+    :cond_1
+    iget-object v0, p0, Landroidx/appcompat/view/menu/x;->mPopup:Landroidx/appcompat/view/menu/v;
+
+    .line 117
+    .line 118
+    return-object v0
+.end method
+
+.method public isShowing()Z
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, Landroidx/appcompat/view/menu/x;->mPopup:Landroidx/appcompat/view/menu/v;
+
+    .line 2
+    .line 3
+    if-eqz v0, :cond_0
+
+    .line 4
+    .line 5
+    invoke-interface {v0}, Landroidx/appcompat/view/menu/D;->isShowing()Z
+
+    .line 6
+    .line 7
+    .line 8
+    move-result v0
+
+    .line 9
+    if-eqz v0, :cond_0
+
+    .line 10
+    .line 11
+    const/4 v0, 0x1
+
+    .line 12
+    goto :goto_0
+
+    .line 13
+    :cond_0
+    const/4 v0, 0x0
+
+    .line 14
+    :goto_0
+    return v0
+.end method
+
+.method public onDismiss()V
+    .locals 1
+
+    .line 1
+    const/4 v0, 0x0
+
+    .line 2
+    iput-object v0, p0, Landroidx/appcompat/view/menu/x;->mPopup:Landroidx/appcompat/view/menu/v;
+
+    .line 3
+    .line 4
+    iget-object v0, p0, Landroidx/appcompat/view/menu/x;->mOnDismissListener:Landroid/widget/PopupWindow$OnDismissListener;
+
+    .line 5
+    .line 6
+    if-eqz v0, :cond_0
+
+    .line 7
+    .line 8
+    invoke-interface {v0}, Landroid/widget/PopupWindow$OnDismissListener;->onDismiss()V
+
+    .line 9
+    .line 10
+    .line 11
+    :cond_0
     return-void
+.end method
+
+.method public setAnchorView(Landroid/view/View;)V
+    .locals 0
+    .param p1    # Landroid/view/View;
+        .annotation build Landroidx/annotation/NonNull;
+        .end annotation
+    .end param
+
+    .line 1
+    iput-object p1, p0, Landroidx/appcompat/view/menu/x;->mAnchorView:Landroid/view/View;
+
+    .line 2
+    .line 3
+    return-void
+.end method
+
+.method public setForceShowIcon(Z)V
+    .locals 1
+
+    .line 1
+    iput-boolean p1, p0, Landroidx/appcompat/view/menu/x;->mForceShowIcon:Z
+
+    .line 2
+    .line 3
+    iget-object v0, p0, Landroidx/appcompat/view/menu/x;->mPopup:Landroidx/appcompat/view/menu/v;
+
+    .line 4
+    .line 5
+    if-eqz v0, :cond_0
+
+    .line 6
+    .line 7
+    invoke-virtual {v0, p1}, Landroidx/appcompat/view/menu/v;->d(Z)V
+
+    .line 8
+    .line 9
+    .line 10
+    :cond_0
+    return-void
+.end method
+
+.method public setGravity(I)V
+    .locals 0
+
+    .line 1
+    iput p1, p0, Landroidx/appcompat/view/menu/x;->mDropDownGravity:I
+
+    .line 2
+    .line 3
+    return-void
+.end method
+
+.method public setOnDismissListener(Landroid/widget/PopupWindow$OnDismissListener;)V
+    .locals 0
+    .param p1    # Landroid/widget/PopupWindow$OnDismissListener;
+        .annotation build Landroidx/annotation/Nullable;
+        .end annotation
+    .end param
+
+    .line 1
+    iput-object p1, p0, Landroidx/appcompat/view/menu/x;->mOnDismissListener:Landroid/widget/PopupWindow$OnDismissListener;
+
+    .line 2
+    .line 3
+    return-void
+.end method
+
+.method public setPresenterCallback(Landroidx/appcompat/view/menu/y;)V
+    .locals 1
+    .param p1    # Landroidx/appcompat/view/menu/y;
+        .annotation build Landroidx/annotation/Nullable;
+        .end annotation
+    .end param
+
+    .line 1
+    iput-object p1, p0, Landroidx/appcompat/view/menu/x;->mPresenterCallback:Landroidx/appcompat/view/menu/y;
+
+    .line 2
+    .line 3
+    iget-object v0, p0, Landroidx/appcompat/view/menu/x;->mPopup:Landroidx/appcompat/view/menu/v;
+
+    .line 4
+    .line 5
+    if-eqz v0, :cond_0
+
+    .line 6
+    .line 7
+    invoke-interface {v0, p1}, Landroidx/appcompat/view/menu/z;->setCallback(Landroidx/appcompat/view/menu/y;)V
+
+    .line 8
+    .line 9
+    .line 10
+    :cond_0
+    return-void
+.end method
+
+.method public show()V
+    .locals 2
+
+    .line 1
+    invoke-virtual {p0}, Landroidx/appcompat/view/menu/x;->tryShow()Z
+
+    move-result v0
+
+    if-eqz v0, :cond_0
+
+    return-void
+
+    .line 2
+    :cond_0
+    new-instance v0, Ljava/lang/IllegalStateException;
+
+    const-string v1, "MenuPopupHelper cannot be used without an anchor"
+
+    invoke-direct {v0, v1}, Ljava/lang/IllegalStateException;-><init>(Ljava/lang/String;)V
+
+    throw v0
+.end method
+
+.method public show(II)V
+    .locals 0
+
+    .line 3
+    invoke-virtual {p0, p1, p2}, Landroidx/appcompat/view/menu/x;->tryShow(II)Z
+
+    move-result p1
+
+    if-eqz p1, :cond_0
+
+    return-void
+
+    .line 4
+    :cond_0
+    new-instance p1, Ljava/lang/IllegalStateException;
+
+    const-string p2, "MenuPopupHelper cannot be used without an anchor"
+
+    invoke-direct {p1, p2}, Ljava/lang/IllegalStateException;-><init>(Ljava/lang/String;)V
+
+    throw p1
+.end method
+
+.method public tryShow()Z
+    .locals 3
+
+    .line 1
+    invoke-virtual {p0}, Landroidx/appcompat/view/menu/x;->isShowing()Z
+
+    move-result v0
+
+    const/4 v1, 0x1
+
+    if-eqz v0, :cond_0
+
+    return v1
+
+    .line 2
+    :cond_0
+    iget-object v0, p0, Landroidx/appcompat/view/menu/x;->mAnchorView:Landroid/view/View;
+
+    const/4 v2, 0x0
+
+    if-nez v0, :cond_1
+
+    return v2
+
+    .line 3
+    :cond_1
+    invoke-virtual {p0, v2, v2, v2, v2}, Landroidx/appcompat/view/menu/x;->a(IIZZ)V
+
+    return v1
+.end method
+
+.method public tryShow(II)Z
+    .locals 2
+
+    .line 4
+    invoke-virtual {p0}, Landroidx/appcompat/view/menu/x;->isShowing()Z
+
+    move-result v0
+
+    const/4 v1, 0x1
+
+    if-eqz v0, :cond_0
+
+    return v1
+
+    .line 5
+    :cond_0
+    iget-object v0, p0, Landroidx/appcompat/view/menu/x;->mAnchorView:Landroid/view/View;
+
+    if-nez v0, :cond_1
+
+    const/4 p1, 0x0
+
+    return p1
+
+    .line 6
+    :cond_1
+    invoke-virtual {p0, p1, p2, v1, v1}, Landroidx/appcompat/view/menu/x;->a(IIZZ)V
+
+    return v1
 .end method

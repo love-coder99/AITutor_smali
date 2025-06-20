@@ -3,12 +3,12 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lzh/c;
+.implements Lka/c;
 
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Landroidx/compose/ui/scrollcapture/ScrollCapture;->a(Landroid/view/View;Landroidx/compose/ui/semantics/p;Lkotlin/coroutines/i;Ljava/util/function/Consumer;)V
+    value = Landroidx/compose/ui/scrollcapture/ScrollCapture;->a(Landroid/view/View;Landroidx/compose/ui/semantics/o;Lba/g;Ljava/util/function/Consumer;)V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -19,7 +19,7 @@
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "Lkotlin/jvm/internal/Lambda;",
-        "Lzh/c;"
+        "Lka/c;"
     }
 .end annotation
 
@@ -28,11 +28,11 @@
         "\u0000\u000e\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u000f\n\u0002\u0008\u0003\u0010\u0005\u001a\u0008\u0012\u0002\u0008\u0003\u0018\u00010\u00022\u0006\u0010\u0001\u001a\u00020\u0000H\n\u00a2\u0006\u0004\u0008\u0003\u0010\u0004"
     }
     d2 = {
-        "Landroidx/compose/ui/scrollcapture/e;",
+        "Landroidx/compose/ui/scrollcapture/d;",
         "it",
         "",
         "invoke",
-        "(Landroidx/compose/ui/scrollcapture/e;)Ljava/lang/Comparable;",
+        "(Landroidx/compose/ui/scrollcapture/d;)Ljava/lang/Comparable;",
         "<anonymous>"
     }
     k = 0x3
@@ -73,12 +73,12 @@
 
 
 # virtual methods
-.method public final invoke(Landroidx/compose/ui/scrollcapture/e;)Ljava/lang/Comparable;
+.method public final invoke(Landroidx/compose/ui/scrollcapture/d;)Ljava/lang/Comparable;
     .locals 1
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
-            "Landroidx/compose/ui/scrollcapture/e;",
+            "Landroidx/compose/ui/scrollcapture/d;",
             ")",
             "Ljava/lang/Comparable<",
             "*>;"
@@ -86,17 +86,16 @@
     .end annotation
 
     .line 2
-    iget-object p1, p1, Landroidx/compose/ui/scrollcapture/e;->c:Lh2/i;
+    iget-object p1, p1, Landroidx/compose/ui/scrollcapture/d;->c:LM0/i;
 
     .line 3
-    iget v0, p1, Lh2/i;->d:I
+    iget v0, p1, LM0/i;->d:I
 
-    .line 4
-    iget p1, p1, Lh2/i;->b:I
+    iget p1, p1, LM0/i;->b:I
 
     sub-int/2addr v0, p1
 
-    .line 5
+    .line 4
     invoke-static {v0}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
     move-result-object p1
@@ -108,9 +107,9 @@
     .locals 0
 
     .line 1
-    check-cast p1, Landroidx/compose/ui/scrollcapture/e;
+    check-cast p1, Landroidx/compose/ui/scrollcapture/d;
 
-    invoke-virtual {p0, p1}, Landroidx/compose/ui/scrollcapture/ScrollCapture$onScrollCaptureSearch$3;->invoke(Landroidx/compose/ui/scrollcapture/e;)Ljava/lang/Comparable;
+    invoke-virtual {p0, p1}, Landroidx/compose/ui/scrollcapture/ScrollCapture$onScrollCaptureSearch$3;->invoke(Landroidx/compose/ui/scrollcapture/d;)Ljava/lang/Comparable;
 
     move-result-object p1
 

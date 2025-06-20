@@ -3,7 +3,7 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lzh/e;
+.implements Lka/e;
 
 
 # annotations
@@ -19,7 +19,7 @@
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "Lkotlin/jvm/internal/Lambda;",
-        "Lzh/e;"
+        "Lka/e;"
     }
 .end annotation
 
@@ -31,11 +31,11 @@
         "",
         "",
         "changed",
-        "Landroidx/compose/runtime/snapshots/h;",
+        "Landroidx/compose/runtime/snapshots/g;",
         "<anonymous parameter 1>",
-        "Lqh/r;",
+        "LX9/j;",
         "invoke",
-        "(Ljava/util/Set;Landroidx/compose/runtime/snapshots/h;)V",
+        "(Ljava/util/Set;Landroidx/compose/runtime/snapshots/g;)V",
         "<anonymous>"
     }
     k = 0x3
@@ -48,14 +48,14 @@
 
 
 # instance fields
-.field final synthetic this$0:Landroidx/compose/runtime/z1;
+.field final synthetic this$0:Landroidx/compose/runtime/m0;
 
 
 # direct methods
-.method public constructor <init>(Landroidx/compose/runtime/z1;)V
+.method public constructor <init>(Landroidx/compose/runtime/m0;)V
     .locals 0
 
-    iput-object p1, p0, Landroidx/compose/runtime/Recomposer$recompositionRunner$2$unregisterApplyObserver$1;->this$0:Landroidx/compose/runtime/z1;
+    iput-object p1, p0, Landroidx/compose/runtime/Recomposer$recompositionRunner$2$unregisterApplyObserver$1;->this$0:Landroidx/compose/runtime/m0;
 
     const/4 p1, 0x2
 
@@ -69,19 +69,19 @@
 .method public bridge synthetic invoke(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
     .locals 0
 
-    .line 26
+    .line 1
     check-cast p1, Ljava/util/Set;
 
-    check-cast p2, Landroidx/compose/runtime/snapshots/h;
+    check-cast p2, Landroidx/compose/runtime/snapshots/g;
 
-    invoke-virtual {p0, p1, p2}, Landroidx/compose/runtime/Recomposer$recompositionRunner$2$unregisterApplyObserver$1;->invoke(Ljava/util/Set;Landroidx/compose/runtime/snapshots/h;)V
+    invoke-virtual {p0, p1, p2}, Landroidx/compose/runtime/Recomposer$recompositionRunner$2$unregisterApplyObserver$1;->invoke(Ljava/util/Set;Landroidx/compose/runtime/snapshots/g;)V
 
-    sget-object p1, Lqh/r;->a:Lqh/r;
+    sget-object p1, LX9/j;->a:LX9/j;
 
     return-object p1
 .end method
 
-.method public final invoke(Ljava/util/Set;Landroidx/compose/runtime/snapshots/h;)V
+.method public final invoke(Ljava/util/Set;Landroidx/compose/runtime/snapshots/g;)V
     .locals 20
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -90,7 +90,7 @@
             "+",
             "Ljava/lang/Object;",
             ">;",
-            "Landroidx/compose/runtime/snapshots/h;",
+            "Landroidx/compose/runtime/snapshots/g;",
             ")V"
         }
     .end annotation
@@ -99,20 +99,21 @@
 
     move-object/from16 v1, p0
 
-    iget-object v2, v1, Landroidx/compose/runtime/Recomposer$recompositionRunner$2$unregisterApplyObserver$1;->this$0:Landroidx/compose/runtime/z1;
-
-    .line 1
-    iget-object v3, v2, Landroidx/compose/runtime/z1;->b:Ljava/lang/Object;
-
     .line 2
-    monitor-enter v3
+    iget-object v2, v1, Landroidx/compose/runtime/Recomposer$recompositionRunner$2$unregisterApplyObserver$1;->this$0:Landroidx/compose/runtime/m0;
 
     .line 3
-    :try_start_0
-    iget-object v4, v2, Landroidx/compose/runtime/z1;->r:Lkotlinx/coroutines/flow/v0;
+    iget-object v3, v2, Landroidx/compose/runtime/m0;->b:Ljava/lang/Object;
 
     .line 4
-    invoke-virtual {v4}, Lkotlinx/coroutines/flow/v0;->getValue()Ljava/lang/Object;
+    monitor-enter v3
+
+    .line 5
+    :try_start_0
+    iget-object v4, v2, Landroidx/compose/runtime/m0;->r:Lkotlinx/coroutines/flow/T;
+
+    .line 6
+    invoke-virtual {v4}, Lkotlinx/coroutines/flow/T;->getValue()Ljava/lang/Object;
 
     move-result-object v4
 
@@ -126,29 +127,29 @@
 
     if-ltz v4, :cond_7
 
-    .line 5
-    iget-object v4, v2, Landroidx/compose/runtime/z1;->g:Landroidx/collection/e0;
+    .line 7
+    iget-object v4, v2, Landroidx/compose/runtime/m0;->g:Landroidx/collection/D;
 
-    .line 6
-    instance-of v5, v0, Landroidx/compose/runtime/collection/f;
+    .line 8
+    instance-of v5, v0, Landroidx/compose/runtime/collection/e;
 
     const/4 v6, 0x1
 
     if-eqz v5, :cond_4
 
-    .line 7
-    check-cast v0, Landroidx/compose/runtime/collection/f;
-
-    .line 8
-    iget-object v0, v0, Landroidx/compose/runtime/collection/f;->b:Landroidx/collection/l0;
-
     .line 9
-    iget-object v5, v0, Landroidx/collection/l0;->b:[Ljava/lang/Object;
+    check-cast v0, Landroidx/compose/runtime/collection/e;
 
     .line 10
-    iget-object v0, v0, Landroidx/collection/l0;->a:[J
+    iget-object v0, v0, Landroidx/compose/runtime/collection/e;->b:Landroidx/collection/J;
 
     .line 11
+    iget-object v5, v0, Landroidx/collection/J;->b:[Ljava/lang/Object;
+
+    .line 12
+    iget-object v0, v0, Landroidx/collection/J;->a:[J
+
+    .line 13
     array-length v7, v0
 
     add-int/lit8 v7, v7, -0x2
@@ -157,7 +158,7 @@
 
     const/4 v9, 0x0
 
-    .line 12
+    .line 14
     :goto_0
     aget-wide v10, v0, v9
 
@@ -206,20 +207,20 @@
 
     add-int/2addr v15, v14
 
-    .line 13
+    .line 15
     aget-object v15, v5, v15
 
-    .line 14
-    instance-of v8, v15, Landroidx/compose/runtime/snapshots/w;
+    .line 16
+    instance-of v8, v15, Landroidx/compose/runtime/snapshots/s;
 
     if-eqz v8, :cond_0
 
-    .line 15
+    .line 17
     move-object v8, v15
 
-    check-cast v8, Landroidx/compose/runtime/snapshots/w;
+    check-cast v8, Landroidx/compose/runtime/snapshots/s;
 
-    invoke-virtual {v8, v6}, Landroidx/compose/runtime/snapshots/w;->h(I)Z
+    invoke-virtual {v8, v6}, Landroidx/compose/runtime/snapshots/s;->i(I)Z
 
     move-result v8
 
@@ -232,9 +233,9 @@
 
     goto :goto_5
 
-    .line 16
+    .line 18
     :cond_0
-    invoke-virtual {v4, v15}, Landroidx/collection/e0;->d(Ljava/lang/Object;)Z
+    invoke-virtual {v4, v15}, Landroidx/collection/D;->d(Ljava/lang/Object;)Z
 
     :cond_1
     :goto_2
@@ -254,11 +255,11 @@
 
     goto :goto_0
 
-    .line 17
+    .line 19
     :cond_4
     check-cast v0, Ljava/lang/Iterable;
 
-    .line 18
+    .line 20
     invoke-interface {v0}, Ljava/lang/Iterable;->iterator()Ljava/util/Iterator;
 
     move-result-object v0
@@ -274,17 +275,17 @@
 
     move-result-object v5
 
-    .line 19
-    instance-of v7, v5, Landroidx/compose/runtime/snapshots/w;
+    .line 21
+    instance-of v7, v5, Landroidx/compose/runtime/snapshots/s;
 
     if-eqz v7, :cond_5
 
-    .line 20
+    .line 22
     move-object v7, v5
 
-    check-cast v7, Landroidx/compose/runtime/snapshots/w;
+    check-cast v7, Landroidx/compose/runtime/snapshots/s;
 
-    invoke-virtual {v7, v6}, Landroidx/compose/runtime/snapshots/w;->h(I)Z
+    invoke-virtual {v7, v6}, Landroidx/compose/runtime/snapshots/s;->i(I)Z
 
     move-result v7
 
@@ -292,15 +293,15 @@
 
     goto :goto_3
 
-    .line 21
+    .line 23
     :cond_5
-    invoke-virtual {v4, v5}, Landroidx/collection/e0;->d(Ljava/lang/Object;)Z
+    invoke-virtual {v4, v5}, Landroidx/collection/D;->d(Ljava/lang/Object;)Z
 
     goto :goto_3
 
-    .line 22
+    .line 24
     :cond_6
-    invoke-virtual {v2}, Landroidx/compose/runtime/z1;->z()Lkotlinx/coroutines/g;
+    invoke-virtual {v2}, Landroidx/compose/runtime/m0;->x()Lkotlinx/coroutines/f;
 
     move-result-object v0
     :try_end_0
@@ -311,25 +312,27 @@
     :cond_7
     const/4 v0, 0x0
 
-    .line 23
+    .line 25
     :goto_4
     monitor-exit v3
 
     if-eqz v0, :cond_8
 
-    sget-object v2, Lqh/r;->a:Lqh/r;
+    .line 26
+    sget-object v2, LX9/j;->a:LX9/j;
 
-    .line 24
     invoke-static {v2}, Lkotlin/Result;->constructor-impl(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object v2
 
-    invoke-interface {v0, v2}, Lkotlin/coroutines/Continuation;->resumeWith(Ljava/lang/Object;)V
+    check-cast v0, Lkotlinx/coroutines/g;
+
+    invoke-virtual {v0, v2}, Lkotlinx/coroutines/g;->resumeWith(Ljava/lang/Object;)V
 
     :cond_8
     return-void
 
-    .line 25
+    .line 27
     :goto_5
     monitor-exit v3
 

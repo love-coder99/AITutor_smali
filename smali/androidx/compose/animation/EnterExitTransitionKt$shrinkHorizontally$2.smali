@@ -3,14 +3,14 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lzh/c;
+.implements Lka/c;
 
 
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "Lkotlin/jvm/internal/Lambda;",
-        "Lzh/c;"
+        "Lka/c;"
     }
 .end annotation
 
@@ -19,7 +19,7 @@
         "\u0000\u0008\n\u0002\u0018\u0002\n\u0002\u0008\u0004\u0010\u0004\u001a\u00020\u00002\u0006\u0010\u0001\u001a\u00020\u0000H\n\u00a2\u0006\u0004\u0008\u0002\u0010\u0003"
     }
     d2 = {
-        "Lh2/j;",
+        "LM0/j;",
         "it",
         "invoke-mzRDjE0",
         "(J)J",
@@ -35,33 +35,39 @@
 
 
 # instance fields
-.field final synthetic $targetWidth:Lzh/c;
+.field final synthetic $targetWidth:Lka/c;
     .annotation system Ldalvik/annotation/Signature;
         value = {
-            "Lzh/c;"
+            "Lka/c;"
         }
     .end annotation
 .end field
 
 
 # direct methods
-.method public constructor <init>(Lzh/c;)V
+.method public constructor <init>(Lka/c;)V
     .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
-            "Lzh/c;",
+            "Lka/c;",
             ")V"
         }
     .end annotation
 
     .line 1
-    iput-object p1, p0, Landroidx/compose/animation/EnterExitTransitionKt$shrinkHorizontally$2;->$targetWidth:Lzh/c;
+    iput-object p1, p0, Landroidx/compose/animation/EnterExitTransitionKt$shrinkHorizontally$2;->$targetWidth:Lka/c;
 
+    .line 2
+    .line 3
     const/4 p1, 0x1
 
+    .line 4
     invoke-direct {p0, p1}, Lkotlin/jvm/internal/Lambda;-><init>(I)V
 
+    .line 5
+    .line 6
+    .line 7
     return-void
 .end method
 
@@ -71,11 +77,11 @@
     .locals 2
 
     .line 1
-    check-cast p1, Lh2/j;
+    check-cast p1, LM0/j;
 
     .line 2
     .line 3
-    iget-wide v0, p1, Lh2/j;->a:J
+    iget-wide v0, p1, LM0/j;->a:J
 
     .line 4
     .line 5
@@ -87,11 +93,11 @@
     move-result-wide v0
 
     .line 9
-    new-instance p1, Lh2/j;
+    new-instance p1, LM0/j;
 
     .line 10
     .line 11
-    invoke-direct {p1, v0, v1}, Lh2/j;-><init>(J)V
+    invoke-direct {p1, v0, v1}, LM0/j;-><init>(J)V
 
     .line 12
     .line 13
@@ -103,7 +109,7 @@
     .locals 3
 
     .line 1
-    iget-object v0, p0, Landroidx/compose/animation/EnterExitTransitionKt$shrinkHorizontally$2;->$targetWidth:Lzh/c;
+    iget-object v0, p0, Landroidx/compose/animation/EnterExitTransitionKt$shrinkHorizontally$2;->$targetWidth:Lka/c;
 
     .line 2
     .line 3
@@ -126,7 +132,7 @@
     move-result-object v1
 
     .line 12
-    invoke-interface {v0, v1}, Lzh/c;->invoke(Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-interface {v0, v1}, Lka/c;->invoke(Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 13
     .line 14
@@ -159,7 +165,7 @@
     long-to-int p2, p1
 
     .line 29
-    invoke-static {v0, p2}, Lv5/a;->b(II)J
+    invoke-static {v0, p2}, Lc4/s;->a(II)J
 
     .line 30
     .line 31

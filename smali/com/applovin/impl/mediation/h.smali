@@ -3,82 +3,191 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lcom/applovin/impl/fi$a;
+.implements Ljava/lang/Runnable;
 
 
 # instance fields
-.field public final synthetic a:I
+.field public final synthetic b:I
 
-.field public final synthetic b:Lcom/applovin/impl/mediation/MediationServiceImpl;
+.field public final synthetic c:Lcom/applovin/impl/mediation/MediationServiceImpl;
 
-.field public final synthetic c:Ljava/lang/Object;
+.field public final synthetic d:Lcom/applovin/impl/mediation/g;
 
-.field public final synthetic d:Ljava/lang/Object;
+.field public final synthetic f:Landroid/app/Activity;
+
+.field public final synthetic g:Ljava/lang/Object;
+
+.field public final synthetic h:Ljava/lang/Object;
+
+.field public final synthetic i:Ljava/lang/Object;
+
+.field public final synthetic j:Ljava/lang/Object;
 
 
 # direct methods
-.method public synthetic constructor <init>(Lcom/applovin/impl/mediation/MediationServiceImpl;Ljava/lang/Object;Ljava/lang/Object;I)V
-    .locals 0
+.method public synthetic constructor <init>(Lcom/applovin/impl/mediation/MediationServiceImpl;Lcom/applovin/impl/mediation/g;Ljava/lang/String;Lcom/applovin/impl/mediation/MaxAdapterParametersImpl;Lcom/applovin/impl/fe;Landroid/app/Activity;Lcom/applovin/impl/mediation/ads/a$a;)V
+    .locals 1
 
     .line 1
+    const/4 v0, 0x2
+
+    iput v0, p0, Lcom/applovin/impl/mediation/h;->b:I
+
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
+    iput-object p1, p0, Lcom/applovin/impl/mediation/h;->c:Lcom/applovin/impl/mediation/MediationServiceImpl;
+
+    iput-object p2, p0, Lcom/applovin/impl/mediation/h;->d:Lcom/applovin/impl/mediation/g;
+
+    iput-object p3, p0, Lcom/applovin/impl/mediation/h;->g:Ljava/lang/Object;
+
+    iput-object p4, p0, Lcom/applovin/impl/mediation/h;->h:Ljava/lang/Object;
+
+    iput-object p5, p0, Lcom/applovin/impl/mediation/h;->i:Ljava/lang/Object;
+
+    iput-object p6, p0, Lcom/applovin/impl/mediation/h;->f:Landroid/app/Activity;
+
+    iput-object p7, p0, Lcom/applovin/impl/mediation/h;->j:Ljava/lang/Object;
+
+    return-void
+.end method
+
+.method public synthetic constructor <init>(Lcom/applovin/impl/mediation/MediationServiceImpl;Ljava/lang/Object;Lcom/applovin/impl/mediation/g;Ljava/lang/Object;Ljava/lang/Object;Landroid/app/Activity;Ljava/lang/Object;I)V
+    .locals 0
+
     .line 2
-    .line 3
-    .line 4
-    iput p4, p0, Lcom/applovin/impl/mediation/h;->a:I
+    iput p8, p0, Lcom/applovin/impl/mediation/h;->b:I
 
-    .line 5
-    .line 6
-    iput-object p1, p0, Lcom/applovin/impl/mediation/h;->b:Lcom/applovin/impl/mediation/MediationServiceImpl;
+    iput-object p1, p0, Lcom/applovin/impl/mediation/h;->c:Lcom/applovin/impl/mediation/MediationServiceImpl;
 
-    .line 7
-    .line 8
-    iput-object p2, p0, Lcom/applovin/impl/mediation/h;->c:Ljava/lang/Object;
+    iput-object p2, p0, Lcom/applovin/impl/mediation/h;->g:Ljava/lang/Object;
 
-    .line 9
-    .line 10
-    iput-object p3, p0, Lcom/applovin/impl/mediation/h;->d:Ljava/lang/Object;
+    iput-object p3, p0, Lcom/applovin/impl/mediation/h;->d:Lcom/applovin/impl/mediation/g;
 
-    .line 11
-    .line 12
+    iput-object p4, p0, Lcom/applovin/impl/mediation/h;->h:Ljava/lang/Object;
+
+    iput-object p5, p0, Lcom/applovin/impl/mediation/h;->i:Ljava/lang/Object;
+
+    iput-object p6, p0, Lcom/applovin/impl/mediation/h;->f:Landroid/app/Activity;
+
+    iput-object p7, p0, Lcom/applovin/impl/mediation/h;->j:Ljava/lang/Object;
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
     return-void
 .end method
 
 
 # virtual methods
-.method public final a(Ljava/lang/Object;)V
-    .locals 4
+.method public final run()V
+    .locals 15
 
     .line 1
-    iget v0, p0, Lcom/applovin/impl/mediation/h;->a:I
-
-    iget-object v1, p0, Lcom/applovin/impl/mediation/h;->b:Lcom/applovin/impl/mediation/MediationServiceImpl;
-
-    iget-object v2, p0, Lcom/applovin/impl/mediation/h;->d:Ljava/lang/Object;
-
-    iget-object v3, p0, Lcom/applovin/impl/mediation/h;->c:Ljava/lang/Object;
+    iget v0, p0, Lcom/applovin/impl/mediation/h;->b:I
 
     packed-switch v0, :pswitch_data_0
 
-    check-cast v3, Lcom/applovin/impl/mediation/g;
+    iget-object v2, p0, Lcom/applovin/impl/mediation/h;->d:Lcom/applovin/impl/mediation/g;
 
-    check-cast v2, Lcom/applovin/impl/fi;
+    iget-object v0, p0, Lcom/applovin/impl/mediation/h;->i:Ljava/lang/Object;
 
-    check-cast p1, Ljava/lang/String;
+    move-object v5, v0
 
-    invoke-static {v1, v3, v2, p1}, Lcom/applovin/impl/mediation/MediationServiceImpl;->c(Lcom/applovin/impl/mediation/MediationServiceImpl;Lcom/applovin/impl/mediation/g;Lcom/applovin/impl/fi;Ljava/lang/String;)V
+    check-cast v5, Lcom/applovin/impl/fe;
+
+    iget-object v1, p0, Lcom/applovin/impl/mediation/h;->c:Lcom/applovin/impl/mediation/MediationServiceImpl;
+
+    iget-object v0, p0, Lcom/applovin/impl/mediation/h;->g:Ljava/lang/Object;
+
+    move-object v3, v0
+
+    check-cast v3, Ljava/lang/String;
+
+    iget-object v0, p0, Lcom/applovin/impl/mediation/h;->h:Ljava/lang/Object;
+
+    move-object v4, v0
+
+    check-cast v4, Lcom/applovin/impl/mediation/MaxAdapterParametersImpl;
+
+    iget-object v6, p0, Lcom/applovin/impl/mediation/h;->f:Landroid/app/Activity;
+
+    iget-object v0, p0, Lcom/applovin/impl/mediation/h;->j:Ljava/lang/Object;
+
+    move-object v7, v0
+
+    check-cast v7, Lcom/applovin/impl/mediation/ads/a$a;
+
+    invoke-static/range {v1 .. v7}, Lcom/applovin/impl/mediation/MediationServiceImpl;->e(Lcom/applovin/impl/mediation/MediationServiceImpl;Lcom/applovin/impl/mediation/g;Ljava/lang/String;Lcom/applovin/impl/mediation/MaxAdapterParametersImpl;Lcom/applovin/impl/fe;Landroid/app/Activity;Lcom/applovin/impl/mediation/ads/a$a;)V
 
     return-void
 
     :pswitch_0
-    check-cast v3, Lcom/applovin/impl/fe;
+    iget-object v0, p0, Lcom/applovin/impl/mediation/h;->j:Ljava/lang/Object;
 
-    check-cast v2, Lcom/applovin/impl/mediation/ads/a$a;
+    move-object v7, v0
 
-    check-cast p1, Ljava/lang/String;
+    check-cast v7, Lcom/applovin/impl/mediation/g$c;
 
-    invoke-static {v1, v3, v2, p1}, Lcom/applovin/impl/mediation/MediationServiceImpl;->d(Lcom/applovin/impl/mediation/MediationServiceImpl;Lcom/applovin/impl/fe;Lcom/applovin/impl/mediation/ads/a$a;Ljava/lang/String;)V
+    iget-object v0, p0, Lcom/applovin/impl/mediation/h;->g:Ljava/lang/Object;
+
+    move-object v2, v0
+
+    check-cast v2, Lcom/applovin/impl/fi;
+
+    iget-object v0, p0, Lcom/applovin/impl/mediation/h;->h:Ljava/lang/Object;
+
+    move-object v4, v0
+
+    check-cast v4, Lcom/applovin/impl/mediation/MaxAdapterParametersImpl;
+
+    iget-object v0, p0, Lcom/applovin/impl/mediation/h;->i:Ljava/lang/Object;
+
+    move-object v5, v0
+
+    check-cast v5, Lcom/applovin/impl/zj;
+
+    iget-object v1, p0, Lcom/applovin/impl/mediation/h;->c:Lcom/applovin/impl/mediation/MediationServiceImpl;
+
+    iget-object v3, p0, Lcom/applovin/impl/mediation/h;->d:Lcom/applovin/impl/mediation/g;
+
+    iget-object v6, p0, Lcom/applovin/impl/mediation/h;->f:Landroid/app/Activity;
+
+    invoke-static/range {v1 .. v7}, Lcom/applovin/impl/mediation/MediationServiceImpl;->g(Lcom/applovin/impl/mediation/MediationServiceImpl;Lcom/applovin/impl/fi;Lcom/applovin/impl/mediation/g;Lcom/applovin/impl/mediation/MaxAdapterParametersImpl;Lcom/applovin/impl/zj;Landroid/app/Activity;Lcom/applovin/impl/mediation/g$c;)V
+
+    return-void
+
+    :pswitch_1
+    iget-object v13, p0, Lcom/applovin/impl/mediation/h;->f:Landroid/app/Activity;
+
+    iget-object v0, p0, Lcom/applovin/impl/mediation/h;->j:Ljava/lang/Object;
+
+    move-object v14, v0
+
+    check-cast v14, Lcom/applovin/impl/mediation/ads/a$a;
+
+    iget-object v8, p0, Lcom/applovin/impl/mediation/h;->c:Lcom/applovin/impl/mediation/MediationServiceImpl;
+
+    iget-object v0, p0, Lcom/applovin/impl/mediation/h;->g:Ljava/lang/Object;
+
+    move-object v9, v0
+
+    check-cast v9, Lcom/applovin/impl/he;
+
+    iget-object v10, p0, Lcom/applovin/impl/mediation/h;->d:Lcom/applovin/impl/mediation/g;
+
+    iget-object v0, p0, Lcom/applovin/impl/mediation/h;->h:Ljava/lang/Object;
+
+    move-object v11, v0
+
+    check-cast v11, Landroid/view/ViewGroup;
+
+    iget-object v0, p0, Lcom/applovin/impl/mediation/h;->i:Ljava/lang/Object;
+
+    move-object v12, v0
+
+    check-cast v12, Landroidx/lifecycle/r;
+
+    invoke-static/range {v8 .. v14}, Lcom/applovin/impl/mediation/MediationServiceImpl;->a(Lcom/applovin/impl/mediation/MediationServiceImpl;Lcom/applovin/impl/he;Lcom/applovin/impl/mediation/g;Landroid/view/ViewGroup;Landroidx/lifecycle/r;Landroid/app/Activity;Lcom/applovin/impl/mediation/ads/a$a;)V
 
     return-void
 
@@ -86,6 +195,7 @@
 
     :pswitch_data_0
     .packed-switch 0x0
+        :pswitch_1
         :pswitch_0
     .end packed-switch
 .end method

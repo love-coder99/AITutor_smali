@@ -3,14 +3,14 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lzh/a;
+.implements Lka/a;
 
 
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "Lkotlin/jvm/internal/FunctionReferenceImpl;",
-        "Lzh/a;"
+        "Lka/a;"
     }
 .end annotation
 
@@ -29,15 +29,15 @@
 .method public constructor <init>(Ljava/lang/Object;)V
     .locals 7
 
-    const/4 v1, 0x0
-
-    const-class v3, Landroidx/compose/ui/platform/o0;
-
-    const-string v4, "getContentCaptureSessionCompat"
-
     const-string v5, "getContentCaptureSessionCompat(Landroid/view/View;)Landroidx/compose/ui/platform/coreshims/ContentCaptureSessionCompat;"
 
     const/4 v6, 0x1
+
+    const/4 v1, 0x0
+
+    const-class v3, Landroidx/compose/ui/platform/F;
+
+    const-string v4, "getContentCaptureSessionCompat"
 
     move-object v0, p0
 
@@ -50,27 +50,17 @@
 
 
 # virtual methods
-.method public bridge synthetic invoke()Ljava/lang/Object;
-    .locals 1
-
-    .line 1
-    invoke-virtual {p0}, Landroidx/compose/ui/platform/AndroidComposeView$contentCaptureManager$1;->invoke()Lx1/d;
-
-    move-result-object v0
-
-    return-object v0
-.end method
-
-.method public final invoke()Lx1/d;
+.method public final invoke()LC0/g;
     .locals 4
 
+    .line 1
     iget-object v0, p0, Lkotlin/jvm/internal/CallableReference;->receiver:Ljava/lang/Object;
 
-    .line 2
     check-cast v0, Landroid/view/View;
 
-    sget-object v1, Landroidx/compose/ui/platform/o0;->a:Lzh/c;
+    sget-object v1, Landroidx/compose/ui/platform/F;->a:Lka/c;
 
+    .line 2
     sget v1, Landroid/os/Build$VERSION;->SDK_INT:I
 
     const/16 v2, 0x1e
@@ -80,7 +70,7 @@
     const/4 v2, 0x1
 
     .line 3
-    invoke-static {v0, v2}, Lx1/g;->a(Landroid/view/View;I)V
+    invoke-static {v0, v2}, LC0/j;->a(Landroid/view/View;I)V
 
     :cond_0
     const/16 v2, 0x1d
@@ -90,7 +80,7 @@
     if-lt v1, v2, :cond_2
 
     .line 4
-    invoke-static {v0}, Lx1/f;->a(Landroid/view/View;)Landroid/view/contentcapture/ContentCaptureSession;
+    invoke-static {v0}, LC0/i;->a(Landroid/view/View;)Landroid/view/contentcapture/ContentCaptureSession;
 
     move-result-object v1
 
@@ -100,11 +90,22 @@
 
     .line 5
     :cond_1
-    new-instance v3, Lx1/d;
+    new-instance v3, LC0/g;
 
-    invoke-direct {v3, v1, v0}, Lx1/d;-><init>(Landroid/view/contentcapture/ContentCaptureSession;Landroid/view/View;)V
+    invoke-direct {v3, v1, v0}, LC0/g;-><init>(Landroid/view/contentcapture/ContentCaptureSession;Landroid/view/View;)V
 
     :cond_2
     :goto_0
     return-object v3
+.end method
+
+.method public bridge synthetic invoke()Ljava/lang/Object;
+    .locals 1
+
+    .line 6
+    invoke-virtual {p0}, Landroidx/compose/ui/platform/AndroidComposeView$contentCaptureManager$1;->invoke()LC0/g;
+
+    move-result-object v0
+
+    return-object v0
 .end method

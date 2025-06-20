@@ -3,84 +3,66 @@
 .source "SourceFile"
 
 
-# instance fields
-.field public a:Landroidx/compose/runtime/d3;
+# static fields
+.field public static final a:LQ/d;
 
 
-# virtual methods
-.method public final a()Landroidx/compose/runtime/d3;
+# direct methods
+.method static constructor <clinit>()V
     .locals 3
 
     .line 1
-    invoke-static {}, Lx3/l;->a()Lx3/l;
+    new-instance v0, LQ/d;
 
     .line 2
     .line 3
-    .line 4
-    move-result-object v0
+    const/16 v1, 0x1a
 
+    .line 4
     .line 5
-    invoke-virtual {v0}, Lx3/l;->b()I
+    const/4 v2, 0x0
 
     .line 6
+    invoke-direct {v0, v1, v2}, LQ/d;-><init>(IZ)V
+
     .line 7
     .line 8
-    move-result v1
-
     .line 9
-    const/4 v2, 0x1
+    invoke-static {}, LH1/j;->c()Z
 
     .line 10
-    if-ne v1, v2, :cond_0
-
     .line 11
     .line 12
-    new-instance v0, Landroidx/compose/ui/text/platform/k;
+    move-result v1
 
     .line 13
-    .line 14
-    invoke-direct {v0, v2}, Landroidx/compose/ui/text/platform/k;-><init>(Z)V
+    if-eqz v1, :cond_0
 
+    .line 14
     .line 15
+    invoke-virtual {v0}, LQ/d;->Y()Landroidx/compose/runtime/H0;
+
     .line 16
     .line 17
-    goto :goto_0
-
     .line 18
-    :cond_0
-    sget-object v1, Ljava/lang/Boolean;->FALSE:Ljava/lang/Boolean;
-
-    .line 19
-    .line 20
-    sget-object v2, Landroidx/compose/runtime/g3;->a:Landroidx/compose/runtime/g3;
-
-    .line 21
-    .line 22
-    invoke-static {v1, v2}, Lma/a;->Z(Ljava/lang/Object;Landroidx/compose/runtime/u2;)Landroidx/compose/runtime/ParcelableSnapshotMutableState;
-
-    .line 23
-    .line 24
-    .line 25
     move-result-object v1
 
-    .line 26
-    new-instance v2, Landroidx/compose/ui/text/platform/f;
+    .line 19
+    goto :goto_0
 
-    .line 27
-    .line 28
-    invoke-direct {v2, v1, p0}, Landroidx/compose/ui/text/platform/f;-><init>(Landroidx/compose/runtime/ParcelableSnapshotMutableState;Landroidx/compose/ui/text/platform/g;)V
+    .line 20
+    :cond_0
+    const/4 v1, 0x0
 
-    .line 29
-    .line 30
-    .line 31
-    invoke-virtual {v0, v2}, Lx3/l;->h(Lx3/j;)V
-
-    .line 32
-    .line 33
-    .line 34
-    move-object v0, v1
-
-    .line 35
+    .line 21
     :goto_0
-    return-object v0
+    iput-object v1, v0, LQ/d;->c:Ljava/lang/Object;
+
+    .line 22
+    .line 23
+    sput-object v0, Landroidx/compose/ui/text/platform/g;->a:LQ/d;
+
+    .line 24
+    .line 25
+    return-void
 .end method

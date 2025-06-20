@@ -272,18 +272,19 @@
 .method public static synthetic b()V
     .locals 10
 
+    .line 2
     sget-object v0, Lcom/apm/insight/h/b;->a:Ljava/util/HashMap;
 
     if-nez v0, :cond_2
 
-    .line 2
+    .line 3
     new-instance v0, Ljava/util/HashMap;
 
     invoke-direct {v0}, Ljava/util/HashMap;-><init>()V
 
     sput-object v0, Lcom/apm/insight/h/b;->a:Ljava/util/HashMap;
 
-    .line 3
+    .line 4
     new-instance v0, Ljava/io/File;
 
     invoke-static {}, Lcom/apm/insight/e;->g()Landroid/content/Context;
@@ -298,14 +299,14 @@
 
     invoke-direct {v0, v1, v2}, Ljava/io/File;-><init>(Ljava/io/File;Ljava/lang/String;)V
 
-    .line 4
+    .line 5
     invoke-virtual {v0}, Ljava/io/File;->list()[Ljava/lang/String;
 
     move-result-object v1
 
     if-eqz v1, :cond_2
 
-    .line 5
+    .line 6
     array-length v2, v1
 
     const/4 v3, 0x0
@@ -317,26 +318,30 @@
 
     aget-object v5, v1, v4
 
+    .line 7
     const-string v6, ".ver"
 
-    .line 6
     invoke-virtual {v5, v6}, Ljava/lang/String;->endsWith(Ljava/lang/String;)Z
 
     move-result v6
 
     if-eqz v6, :cond_0
 
-    const/4 v6, 0x4
+    .line 8
+    invoke-virtual {v5}, Ljava/lang/String;->length()I
 
-    .line 7
-    invoke-static {v5, v6, v3}, Landroidx/compose/ui/node/x;->e(Ljava/lang/String;II)Ljava/lang/String;
+    move-result v6
+
+    add-int/lit8 v6, v6, -0x4
+
+    invoke-virtual {v5, v3, v6}, Ljava/lang/String;->substring(II)Ljava/lang/String;
 
     move-result-object v6
 
+    .line 9
     :try_start_0
     sget-object v7, Lcom/apm/insight/h/b;->a:Ljava/util/HashMap;
 
-    .line 8
     new-instance v8, Ljava/lang/StringBuilder;
 
     invoke-direct {v8}, Ljava/lang/StringBuilder;-><init>()V
@@ -357,14 +362,14 @@
 
     move-result-object v5
 
+    .line 10
     const-string v8, "\n"
 
-    .line 9
     invoke-static {v5, v8}, Lcom/apm/insight/l/f;->a(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v5
 
-    .line 10
+    .line 11
     invoke-virtual {v7, v6, v5}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
@@ -374,27 +379,27 @@
     :catchall_0
     move-exception v5
 
-    .line 11
+    .line 12
     invoke-static {}, Lcom/apm/insight/c;->a()Lcom/apm/insight/b/a;
 
     const-string v6, "NPTH_CATCH"
 
-    .line 12
+    .line 13
     invoke-static {v5, v6}, Lcom/apm/insight/runtime/k;->a(Ljava/lang/Throwable;Ljava/lang/String;)V
 
     goto :goto_1
 
+    .line 14
     :cond_0
     const-string v6, ".so"
 
-    .line 13
     invoke-virtual {v5, v6}, Ljava/lang/String;->endsWith(Ljava/lang/String;)Z
 
     move-result v6
 
     if-nez v6, :cond_1
 
-    .line 14
+    .line 15
     new-instance v6, Ljava/io/File;
 
     invoke-direct {v6, v0, v5}, Ljava/io/File;-><init>(Ljava/io/File;Ljava/lang/String;)V
@@ -440,18 +445,18 @@
 .method public static synthetic c(Ljava/lang/String;)Z
     .locals 2
 
+    .line 2
     sget-object v0, Lcom/apm/insight/h/b;->a:Ljava/util/HashMap;
 
-    .line 2
     invoke-virtual {v0, p0}, Ljava/util/HashMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object v0
 
     check-cast v0, Ljava/lang/String;
 
+    .line 3
     const-string v1, "1.3.8.nourl-rc.1"
 
-    .line 3
     invoke-virtual {v1, v0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
     move-result v0
@@ -785,6 +790,8 @@
 
 .method public final e()Ljava/lang/String;
     .locals 2
+    .annotation build Landroidx/annotation/Nullable;
+    .end annotation
 
     .line 1
     iget-object v0, p0, Lcom/apm/insight/h/b;->b:Ljava/util/Map;
@@ -822,7 +829,10 @@
         }
     .end annotation
 
+    .line 1
     iget-object v0, p0, Lcom/apm/insight/h/b;->b:Ljava/util/Map;
 
+    .line 2
+    .line 3
     return-object v0
 .end method

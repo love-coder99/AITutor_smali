@@ -25,6 +25,10 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 0
+    .param p1    # Landroid/content/Context;
+        .annotation build Landroidx/annotation/NonNull;
+        .end annotation
+    .end param
 
     .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -55,22 +59,34 @@
 # virtual methods
 .method public getDropDownViewInflater()Landroid/view/LayoutInflater;
     .locals 1
+    .annotation build Landroidx/annotation/NonNull;
+    .end annotation
 
+    .line 1
     iget-object v0, p0, Landroidx/appcompat/widget/ThemedSpinnerAdapter$Helper;->mDropDownInflater:Landroid/view/LayoutInflater;
 
+    .line 2
+    .line 3
     if-eqz v0, :cond_0
 
+    .line 4
+    .line 5
     goto :goto_0
 
+    .line 6
     :cond_0
     iget-object v0, p0, Landroidx/appcompat/widget/ThemedSpinnerAdapter$Helper;->mInflater:Landroid/view/LayoutInflater;
 
+    .line 7
+    .line 8
     :goto_0
     return-object v0
 .end method
 
 .method public getDropDownViewTheme()Landroid/content/res/Resources$Theme;
     .locals 1
+    .annotation build Landroidx/annotation/Nullable;
+    .end annotation
 
     .line 1
     iget-object v0, p0, Landroidx/appcompat/widget/ThemedSpinnerAdapter$Helper;->mDropDownInflater:Landroid/view/LayoutInflater;
@@ -110,6 +126,10 @@
 
 .method public setDropDownViewTheme(Landroid/content/res/Resources$Theme;)V
     .locals 2
+    .param p1    # Landroid/content/res/Resources$Theme;
+        .annotation build Landroidx/annotation/Nullable;
+        .end annotation
+    .end param
 
     .line 1
     if-nez p1, :cond_0
@@ -163,7 +183,7 @@
 
     .line 24
     :cond_1
-    new-instance v0, Lk/e;
+    new-instance v0, Ln/c;
 
     .line 25
     .line 26
@@ -171,7 +191,7 @@
 
     .line 27
     .line 28
-    invoke-direct {v0, v1, p1}, Lk/e;-><init>(Landroid/content/Context;Landroid/content/res/Resources$Theme;)V
+    invoke-direct {v0, v1, p1}, Ln/c;-><init>(Landroid/content/Context;Landroid/content/res/Resources$Theme;)V
 
     .line 29
     .line 30

@@ -1,203 +1,262 @@
-.class public final synthetic Lz/o;
-.super Ljava/lang/Object;
+.class public final LZ/o;
+.super Landroid/view/OrientationEventListener;
 .source "SourceFile"
-
-# interfaces
-.implements Lm3/a;
 
 
 # instance fields
-.field public final synthetic a:I
+.field public a:I
 
-.field public final synthetic b:Lz/q;
+.field public final synthetic b:LB2/t;
 
 
 # direct methods
-.method public synthetic constructor <init>(Lz/q;I)V
+.method public constructor <init>(LB2/t;Landroid/content/Context;)V
     .locals 0
 
     .line 1
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    iput-object p1, p0, LZ/o;->b:LB2/t;
 
     .line 2
     .line 3
-    .line 4
-    iput p2, p0, Lz/o;->a:I
+    invoke-direct {p0, p2}, Landroid/view/OrientationEventListener;-><init>(Landroid/content/Context;)V
 
+    .line 4
     .line 5
     .line 6
-    iput-object p1, p0, Lz/o;->b:Lz/q;
+    const/4 p1, -0x1
 
     .line 7
+    iput p1, p0, LZ/o;->a:I
+
     .line 8
+    .line 9
     return-void
 .end method
 
 
 # virtual methods
-.method public final accept(Ljava/lang/Object;)V
-    .locals 3
+.method public final onOrientationChanged(I)V
+    .locals 4
 
     .line 1
-    iget v0, p0, Lz/o;->a:I
+    const/4 v0, -0x1
 
     .line 2
-    .line 3
-    iget-object v1, p0, Lz/o;->b:Lz/q;
+    if-ne p1, v0, :cond_0
 
+    .line 3
     .line 4
+    return-void
+
     .line 5
-    packed-switch v0, :pswitch_data_0
+    :cond_0
+    const/16 v0, 0x13b
 
     .line 6
     .line 7
+    if-ge p1, v0, :cond_4
+
     .line 8
-    check-cast p1, Lz/f;
-
     .line 9
-    .line 10
-    invoke-virtual {v1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+    const/16 v0, 0x2d
 
+    .line 10
     .line 11
+    if-ge p1, v0, :cond_1
+
     .line 12
     .line 13
-    iget-object v0, p1, Lz/f;->a:Lz/r;
-
-    .line 14
-    .line 15
-    iget-object v0, v0, Lz/r;->g:Lz/x;
-
-    .line 16
-    .line 17
-    check-cast v0, Lz/t;
-
-    .line 18
-    .line 19
-    iget-boolean v0, v0, Lz/t;->g:Z
-
-    .line 20
-    .line 21
-    if-eqz v0, :cond_0
-
-    .line 22
-    .line 23
-    const-string v0, "ProcessingNode"
-
-    .line 24
-    .line 25
-    invoke-static {v0}, Lcom/facebook/appevents/g;->i(Ljava/lang/String;)Ljava/lang/String;
-
-    .line 26
-    .line 27
-    .line 28
-    iget-object p1, p1, Lz/f;->b:Ly/a1;
-
-    .line 29
-    .line 30
-    invoke-interface {p1}, Ljava/lang/AutoCloseable;->close()V
-
-    .line 31
-    .line 32
-    .line 33
     goto :goto_0
 
+    .line 14
+    :cond_1
+    const/16 v0, 0xe1
+
+    .line 15
+    .line 16
+    if-lt p1, v0, :cond_2
+
+    .line 17
+    .line 18
+    const/4 p1, 0x1
+
+    .line 19
+    goto :goto_1
+
+    .line 20
+    :cond_2
+    const/16 v0, 0x87
+
+    .line 21
+    .line 22
+    if-lt p1, v0, :cond_3
+
+    .line 23
+    .line 24
+    const/4 p1, 0x2
+
+    .line 25
+    goto :goto_1
+
+    .line 26
+    :cond_3
+    const/4 p1, 0x3
+
+    .line 27
+    goto :goto_1
+
+    .line 28
+    :cond_4
+    :goto_0
+    const/4 p1, 0x0
+
+    .line 29
+    :goto_1
+    iget v0, p0, LZ/o;->a:I
+
+    .line 30
+    .line 31
+    if-eq v0, p1, :cond_5
+
+    .line 32
+    .line 33
+    iput p1, p0, LZ/o;->a:I
+
     .line 34
-    :cond_0
-    new-instance v0, Lz/p;
-
     .line 35
-    .line 36
-    const/4 v2, 0x0
+    iget-object v0, p0, LZ/o;->b:LB2/t;
 
+    .line 36
     .line 37
-    invoke-direct {v0, v1, p1, v2}, Lz/p;-><init>(Lz/q;Lz/f;I)V
+    iget-object v0, v0, LB2/t;->c:Ljava/lang/Object;
 
     .line 38
     .line 39
+    monitor-enter v0
+
     .line 40
-    iget-object p1, v1, Lz/q;->a:Ljava/util/concurrent/Executor;
+    :try_start_0
+    new-instance v1, Ljava/util/ArrayList;
 
     .line 41
     .line 42
-    invoke-interface {p1, v0}, Ljava/util/concurrent/Executor;->execute(Ljava/lang/Runnable;)V
+    iget-object v2, p0, LZ/o;->b:LB2/t;
 
     .line 43
     .line 44
-    .line 45
-    :goto_0
-    return-void
+    iget-object v2, v2, LB2/t;->f:Ljava/lang/Object;
 
+    .line 45
     .line 46
-    :pswitch_0
-    check-cast p1, Lz/f;
+    check-cast v2, Ljava/util/HashMap;
 
     .line 47
     .line 48
-    invoke-virtual {v1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+    invoke-virtual {v2}, Ljava/util/HashMap;->values()Ljava/util/Collection;
 
     .line 49
     .line 50
     .line 51
-    iget-object v0, p1, Lz/f;->a:Lz/r;
+    move-result-object v2
 
     .line 52
-    .line 53
-    iget-object v0, v0, Lz/r;->g:Lz/x;
+    invoke-direct {v1, v2}, Ljava/util/ArrayList;-><init>(Ljava/util/Collection;)V
 
+    .line 53
     .line 54
     .line 55
-    check-cast v0, Lz/t;
+    monitor-exit v0
+    :try_end_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
     .line 56
-    .line 57
-    iget-boolean v0, v0, Lz/t;->g:Z
+    invoke-virtual {v1}, Ljava/util/ArrayList;->isEmpty()Z
 
+    .line 57
     .line 58
     .line 59
-    if-eqz v0, :cond_1
+    move-result v0
 
     .line 60
+    if-nez v0, :cond_5
+
     .line 61
-    iget-object p1, p1, Lz/f;->b:Ly/a1;
-
     .line 62
-    .line 63
-    invoke-interface {p1}, Ljava/lang/AutoCloseable;->close()V
+    invoke-virtual {v1}, Ljava/util/ArrayList;->iterator()Ljava/util/Iterator;
 
+    .line 63
     .line 64
     .line 65
+    move-result-object v0
+
     .line 66
-    goto :goto_1
+    :goto_2
+    invoke-interface {v0}, Ljava/util/Iterator;->hasNext()Z
 
     .line 67
-    :cond_1
-    new-instance v0, Lz/p;
-
     .line 68
     .line 69
-    const/4 v2, 0x1
+    move-result v1
 
     .line 70
-    invoke-direct {v0, v1, p1, v2}, Lz/p;-><init>(Lz/q;Lz/f;I)V
+    if-eqz v1, :cond_5
 
     .line 71
     .line 72
-    .line 73
-    iget-object p1, v1, Lz/q;->a:Ljava/util/concurrent/Executor;
+    invoke-interface {v0}, Ljava/util/Iterator;->next()Ljava/lang/Object;
 
+    .line 73
     .line 74
     .line 75
-    invoke-interface {p1, v0}, Ljava/util/concurrent/Executor;->execute(Ljava/lang/Runnable;)V
+    move-result-object v1
 
     .line 76
+    check-cast v1, LZ/p;
+
     .line 77
     .line 78
-    :goto_1
-    return-void
+    invoke-virtual {v1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
     .line 79
-    :pswitch_data_0
-    .packed-switch 0x0
-        :pswitch_0
-    .end packed-switch
+    .line 80
+    .line 81
+    new-instance v2, LE6/c;
+
+    .line 82
+    .line 83
+    const/4 v3, 0x2
+
+    .line 84
+    invoke-direct {v2, v1, p1, v3}, LE6/c;-><init>(Ljava/lang/Object;II)V
+
+    .line 85
+    .line 86
+    .line 87
+    iget-object v1, v1, LZ/p;->b:LF/d;
+
+    .line 88
+    .line 89
+    invoke-virtual {v1, v2}, LF/d;->execute(Ljava/lang/Runnable;)V
+
+    .line 90
+    .line 91
+    .line 92
+    goto :goto_2
+
+    .line 93
+    :catchall_0
+    move-exception p1
+
+    .line 94
+    :try_start_1
+    monitor-exit v0
+    :try_end_1
+    .catchall {:try_start_1 .. :try_end_1} :catchall_0
+
+    .line 95
+    throw p1
+
+    .line 96
+    :cond_5
+    return-void
 .end method

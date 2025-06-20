@@ -3,14 +3,14 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lzh/c;
+.implements Lka/c;
 
 
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "Lkotlin/jvm/internal/Lambda;",
-        "Lzh/c;"
+        "Lka/c;"
     }
 .end annotation
 
@@ -21,7 +21,7 @@
     d2 = {
         "Landroidx/compose/ui/text/input/h;",
         "it",
-        "Lqh/r;",
+        "LX9/j;",
         "invoke",
         "(Landroidx/compose/ui/text/input/h;)V",
         "<anonymous>"
@@ -36,14 +36,14 @@
 
 
 # instance fields
-.field final synthetic this$0:Landroidx/compose/foundation/text/input/internal/x;
+.field final synthetic this$0:Landroidx/compose/foundation/text/input/internal/w;
 
 
 # direct methods
-.method public constructor <init>(Landroidx/compose/foundation/text/input/internal/x;)V
+.method public constructor <init>(Landroidx/compose/foundation/text/input/internal/w;)V
     .locals 0
 
-    iput-object p1, p0, Landroidx/compose/foundation/text/input/internal/RecordingInputConnection$performHandwritingGesture$1;->this$0:Landroidx/compose/foundation/text/input/internal/x;
+    iput-object p1, p0, Landroidx/compose/foundation/text/input/internal/RecordingInputConnection$performHandwritingGesture$1;->this$0:Landroidx/compose/foundation/text/input/internal/w;
 
     const/4 p1, 0x1
 
@@ -57,12 +57,12 @@
 .method public bridge synthetic invoke(Ljava/lang/Object;)Ljava/lang/Object;
     .locals 0
 
-    .line 2
+    .line 1
     check-cast p1, Landroidx/compose/ui/text/input/h;
 
     invoke-virtual {p0, p1}, Landroidx/compose/foundation/text/input/internal/RecordingInputConnection$performHandwritingGesture$1;->invoke(Landroidx/compose/ui/text/input/h;)V
 
-    sget-object p1, Lqh/r;->a:Lqh/r;
+    sget-object p1, LX9/j;->a:LX9/j;
 
     return-object p1
 .end method
@@ -70,10 +70,11 @@
 .method public final invoke(Landroidx/compose/ui/text/input/h;)V
     .locals 1
 
-    iget-object v0, p0, Landroidx/compose/foundation/text/input/internal/RecordingInputConnection$performHandwritingGesture$1;->this$0:Landroidx/compose/foundation/text/input/internal/x;
+    .line 2
+    iget-object v0, p0, Landroidx/compose/foundation/text/input/internal/RecordingInputConnection$performHandwritingGesture$1;->this$0:Landroidx/compose/foundation/text/input/internal/w;
 
-    .line 1
-    invoke-virtual {v0, p1}, Landroidx/compose/foundation/text/input/internal/x;->a(Landroidx/compose/ui/text/input/h;)V
+    .line 3
+    invoke-virtual {v0, p1}, Landroidx/compose/foundation/text/input/internal/w;->a(Landroidx/compose/ui/text/input/h;)V
 
     return-void
 .end method

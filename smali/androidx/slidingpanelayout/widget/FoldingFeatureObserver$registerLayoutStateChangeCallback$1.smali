@@ -3,25 +3,35 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lzh/e;
+.implements Lka/e;
 
 
 # annotations
+.annotation runtime Lca/c;
+    c = "androidx.slidingpanelayout.widget.FoldingFeatureObserver$registerLayoutStateChangeCallback$1"
+    f = "FoldingFeatureObserver.kt"
+    l = {
+        0x61
+    }
+    m = "invokeSuspend"
+.end annotation
+
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "Lkotlin/coroutines/jvm/internal/SuspendLambda;",
-        "Lzh/e;"
+        "Lka/e;"
     }
 .end annotation
 
 .annotation runtime Lkotlin/Metadata;
     d1 = {
-        "\u0000\n\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\u0010\u0002\u001a\u00020\u0001*\u00020\u0000H\u008a@"
+        "\u0000\u000c\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0008\u0002\u0010\u0002\u001a\u00020\u0001*\u00020\u0000H\u008a@\u00a2\u0006\u0004\u0008\u0002\u0010\u0003"
     }
     d2 = {
-        "Lkotlinx/coroutines/w;",
-        "Lqh/r;",
-        "<anonymous>"
+        "Lkotlinx/coroutines/u;",
+        "LX9/j;",
+        "<anonymous>",
+        "(Lkotlinx/coroutines/u;)V"
     }
     k = 0x3
     mv = {
@@ -31,31 +41,22 @@
     }
 .end annotation
 
-.annotation runtime Lth/c;
-    c = "androidx.slidingpanelayout.widget.FoldingFeatureObserver$registerLayoutStateChangeCallback$1"
-    f = "FoldingFeatureObserver.kt"
-    l = {
-        0x61
-    }
-    m = "invokeSuspend"
-.end annotation
-
 
 # instance fields
 .field final synthetic $activity:Landroid/app/Activity;
 
 .field label:I
 
-.field final synthetic this$0:Landroidx/slidingpanelayout/widget/d;
+.field final synthetic this$0:Landroidx/slidingpanelayout/widget/b;
 
 
 # direct methods
-.method public constructor <init>(Landroidx/slidingpanelayout/widget/d;Landroid/app/Activity;Lkotlin/coroutines/Continuation;)V
+.method public constructor <init>(Landroidx/slidingpanelayout/widget/b;Landroid/app/Activity;Lkotlin/coroutines/Continuation;)V
     .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
-            "Landroidx/slidingpanelayout/widget/d;",
+            "Landroidx/slidingpanelayout/widget/b;",
             "Landroid/app/Activity;",
             "Lkotlin/coroutines/Continuation<",
             "-",
@@ -64,7 +65,7 @@
         }
     .end annotation
 
-    iput-object p1, p0, Landroidx/slidingpanelayout/widget/FoldingFeatureObserver$registerLayoutStateChangeCallback$1;->this$0:Landroidx/slidingpanelayout/widget/d;
+    iput-object p1, p0, Landroidx/slidingpanelayout/widget/FoldingFeatureObserver$registerLayoutStateChangeCallback$1;->this$0:Landroidx/slidingpanelayout/widget/b;
 
     iput-object p2, p0, Landroidx/slidingpanelayout/widget/FoldingFeatureObserver$registerLayoutStateChangeCallback$1;->$activity:Landroid/app/Activity;
 
@@ -86,18 +87,18 @@
             "Lkotlin/coroutines/Continuation<",
             "*>;)",
             "Lkotlin/coroutines/Continuation<",
-            "Lqh/r;",
+            "LX9/j;",
             ">;"
         }
     .end annotation
 
     new-instance p1, Landroidx/slidingpanelayout/widget/FoldingFeatureObserver$registerLayoutStateChangeCallback$1;
 
-    iget-object v0, p0, Landroidx/slidingpanelayout/widget/FoldingFeatureObserver$registerLayoutStateChangeCallback$1;->this$0:Landroidx/slidingpanelayout/widget/d;
+    iget-object v0, p0, Landroidx/slidingpanelayout/widget/FoldingFeatureObserver$registerLayoutStateChangeCallback$1;->this$0:Landroidx/slidingpanelayout/widget/b;
 
     iget-object v1, p0, Landroidx/slidingpanelayout/widget/FoldingFeatureObserver$registerLayoutStateChangeCallback$1;->$activity:Landroid/app/Activity;
 
-    invoke-direct {p1, v0, v1, p2}, Landroidx/slidingpanelayout/widget/FoldingFeatureObserver$registerLayoutStateChangeCallback$1;-><init>(Landroidx/slidingpanelayout/widget/d;Landroid/app/Activity;Lkotlin/coroutines/Continuation;)V
+    invoke-direct {p1, v0, v1, p2}, Landroidx/slidingpanelayout/widget/FoldingFeatureObserver$registerLayoutStateChangeCallback$1;-><init>(Landroidx/slidingpanelayout/widget/b;Landroid/app/Activity;Lkotlin/coroutines/Continuation;)V
 
     return-object p1
 .end method
@@ -106,26 +107,26 @@
     .locals 0
 
     .line 1
-    check-cast p1, Lkotlinx/coroutines/w;
+    check-cast p1, Lkotlinx/coroutines/u;
 
     check-cast p2, Lkotlin/coroutines/Continuation;
 
-    invoke-virtual {p0, p1, p2}, Landroidx/slidingpanelayout/widget/FoldingFeatureObserver$registerLayoutStateChangeCallback$1;->invoke(Lkotlinx/coroutines/w;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
+    invoke-virtual {p0, p1, p2}, Landroidx/slidingpanelayout/widget/FoldingFeatureObserver$registerLayoutStateChangeCallback$1;->invoke(Lkotlinx/coroutines/u;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
 
     move-result-object p1
 
     return-object p1
 .end method
 
-.method public final invoke(Lkotlinx/coroutines/w;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
+.method public final invoke(Lkotlinx/coroutines/u;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
     .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
-            "Lkotlinx/coroutines/w;",
+            "Lkotlinx/coroutines/u;",
             "Lkotlin/coroutines/Continuation<",
             "-",
-            "Lqh/r;",
+            "LX9/j;",
             ">;)",
             "Ljava/lang/Object;"
         }
@@ -138,7 +139,7 @@
 
     check-cast p1, Landroidx/slidingpanelayout/widget/FoldingFeatureObserver$registerLayoutStateChangeCallback$1;
 
-    sget-object p2, Lqh/r;->a:Lqh/r;
+    sget-object p2, LX9/j;->a:LX9/j;
 
     invoke-virtual {p1, p2}, Landroidx/slidingpanelayout/widget/FoldingFeatureObserver$registerLayoutStateChangeCallback$1;->invokeSuspend(Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -201,11 +202,11 @@
     .line 23
     .line 24
     .line 25
-    iget-object p1, p0, Landroidx/slidingpanelayout/widget/FoldingFeatureObserver$registerLayoutStateChangeCallback$1;->this$0:Landroidx/slidingpanelayout/widget/d;
+    iget-object p1, p0, Landroidx/slidingpanelayout/widget/FoldingFeatureObserver$registerLayoutStateChangeCallback$1;->this$0:Landroidx/slidingpanelayout/widget/b;
 
     .line 26
     .line 27
-    iget-object p1, p1, Landroidx/slidingpanelayout/widget/d;->a:Landroidx/window/layout/z;
+    iget-object p1, p1, Landroidx/slidingpanelayout/widget/b;->a:Landroidx/window/layout/s;
 
     .line 28
     .line 29
@@ -213,79 +214,78 @@
 
     .line 30
     .line 31
-    check-cast p1, Landroidx/window/layout/b0;
+    invoke-virtual {p1, v1}, Landroidx/window/layout/s;->a(Landroid/app/Activity;)Lkotlinx/coroutines/flow/G;
 
     .line 32
     .line 33
-    invoke-virtual {p1, v1}, Landroidx/window/layout/b0;->a(Landroid/app/Activity;)Lkotlinx/coroutines/flow/i0;
-
     .line 34
-    .line 35
-    .line 36
     move-result-object p1
 
+    .line 35
+    iget-object v1, p0, Landroidx/slidingpanelayout/widget/FoldingFeatureObserver$registerLayoutStateChangeCallback$1;->this$0:Landroidx/slidingpanelayout/widget/b;
+
+    .line 36
     .line 37
-    iget-object v1, p0, Landroidx/slidingpanelayout/widget/FoldingFeatureObserver$registerLayoutStateChangeCallback$1;->this$0:Landroidx/slidingpanelayout/widget/d;
+    new-instance v3, Landroidx/room/l;
 
     .line 38
     .line 39
-    new-instance v3, Landroidx/slidingpanelayout/widget/c;
+    const/4 v4, 0x1
 
     .line 40
+    invoke-direct {v3, p1, v1, v4}, Landroidx/room/l;-><init>(Lkotlinx/coroutines/flow/f;Ljava/lang/Object;I)V
+
     .line 41
-    const/4 v4, 0x0
-
     .line 42
-    invoke-direct {v3, p1, v1, v4}, Landroidx/slidingpanelayout/widget/c;-><init>(Lkotlinx/coroutines/flow/h;Ljava/lang/Object;I)V
-
     .line 43
+    invoke-static {v3}, Lkotlinx/coroutines/flow/h;->k(Lkotlinx/coroutines/flow/f;)Lkotlinx/coroutines/flow/f;
+
     .line 44
     .line 45
-    invoke-static {v3}, Lkotlinx/coroutines/flow/j;->l(Lkotlinx/coroutines/flow/h;)Lkotlinx/coroutines/flow/h;
-
     .line 46
-    .line 47
-    .line 48
     move-result-object p1
 
+    .line 47
+    iget-object v1, p0, Landroidx/slidingpanelayout/widget/FoldingFeatureObserver$registerLayoutStateChangeCallback$1;->this$0:Landroidx/slidingpanelayout/widget/b;
+
+    .line 48
     .line 49
-    iget-object v1, p0, Landroidx/slidingpanelayout/widget/FoldingFeatureObserver$registerLayoutStateChangeCallback$1;->this$0:Landroidx/slidingpanelayout/widget/d;
+    new-instance v3, Landroidx/compose/foundation/text/input/internal/a;
 
     .line 50
     .line 51
-    new-instance v3, Landroidx/slidingpanelayout/widget/a;
+    const/4 v4, 0x5
 
     .line 52
-    .line 53
-    invoke-direct {v3, v1}, Landroidx/slidingpanelayout/widget/a;-><init>(Landroidx/slidingpanelayout/widget/d;)V
+    invoke-direct {v3, v1, v4}, Landroidx/compose/foundation/text/input/internal/a;-><init>(Ljava/lang/Object;I)V
 
+    .line 53
     .line 54
     .line 55
-    .line 56
     iput v2, p0, Landroidx/slidingpanelayout/widget/FoldingFeatureObserver$registerLayoutStateChangeCallback$1;->label:I
 
+    .line 56
     .line 57
-    .line 58
-    invoke-interface {p1, v3, p0}, Lkotlinx/coroutines/flow/h;->b(Lkotlinx/coroutines/flow/i;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
+    invoke-interface {p1, v3, p0}, Lkotlinx/coroutines/flow/f;->b(Lkotlinx/coroutines/flow/g;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
 
+    .line 58
     .line 59
     .line 60
-    .line 61
     move-result-object p1
 
-    .line 62
+    .line 61
     if-ne p1, v0, :cond_2
 
+    .line 62
     .line 63
-    .line 64
     return-object v0
 
-    .line 65
+    .line 64
     :cond_2
     :goto_0
-    sget-object p1, Lqh/r;->a:Lqh/r;
+    sget-object p1, LX9/j;->a:LX9/j;
 
+    .line 65
     .line 66
-    .line 67
     return-object p1
 .end method

@@ -32,7 +32,7 @@
 .method private a(J)V
     .locals 0
 
-    .line 2
+    .line 3
     iput-wide p1, p0, Lcom/applovin/impl/d4$b;->a:J
 
     return-void
@@ -41,7 +41,7 @@
 .method public static synthetic a(Lcom/applovin/impl/d4$b;J)V
     .locals 0
 
-    .line 3
+    .line 1
     invoke-direct {p0, p1, p2}, Lcom/applovin/impl/d4$b;->a(J)V
 
     return-void
@@ -50,7 +50,7 @@
 .method private b(J)V
     .locals 0
 
-    .line 2
+    .line 3
     iput-wide p1, p0, Lcom/applovin/impl/d4$b;->b:J
 
     return-void
@@ -59,7 +59,7 @@
 .method public static synthetic b(Lcom/applovin/impl/d4$b;J)V
     .locals 0
 
-    .line 3
+    .line 1
     invoke-direct {p0, p1, p2}, Lcom/applovin/impl/d4$b;->b(J)V
 
     return-void
@@ -70,7 +70,7 @@
 .method public a()J
     .locals 2
 
-    .line 1
+    .line 2
     iget-wide v0, p0, Lcom/applovin/impl/d4$b;->a:J
 
     return-wide v0
@@ -79,7 +79,7 @@
 .method public b()J
     .locals 2
 
-    .line 1
+    .line 2
     iget-wide v0, p0, Lcom/applovin/impl/d4$b;->b:J
 
     return-wide v0

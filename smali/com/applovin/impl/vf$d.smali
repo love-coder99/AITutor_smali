@@ -41,9 +41,9 @@
 .method public a(I)Lcom/applovin/impl/vf$c;
     .locals 1
 
+    .line 2
     const-string v0, "expectedValuesPerKey"
 
-    .line 2
     invoke-static {p1, v0}, Lcom/applovin/impl/p3;->a(ILjava/lang/String;)I
 
     .line 3

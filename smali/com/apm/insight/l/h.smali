@@ -88,14 +88,14 @@
     .line 2
     invoke-direct {p0}, Lcom/apm/insight/l/h;->f()V
 
+    .line 3
     iget-object v0, p0, Lcom/apm/insight/l/h;->b:Ljava/util/List;
 
-    .line 3
     invoke-interface {v0, p1}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
+    .line 4
     iget-object p1, p0, Lcom/apm/insight/l/h;->a:Ljava/io/Writer;
 
-    .line 4
     invoke-virtual {p1, p2}, Ljava/io/Writer;->write(Ljava/lang/String;)V
 
     return-object p0
@@ -154,9 +154,9 @@
 
     if-eqz v0, :cond_3
 
+    .line 16
     iget-object v0, p0, Lcom/apm/insight/l/h;->a:Ljava/io/Writer;
 
-    .line 16
     invoke-static {p1}, Ljava/lang/String;->valueOf(Ljava/lang/Object;)Ljava/lang/String;
 
     move-result-object p1
@@ -171,9 +171,9 @@
 
     if-eqz v0, :cond_4
 
+    .line 18
     iget-object v0, p0, Lcom/apm/insight/l/h;->a:Ljava/io/Writer;
 
-    .line 18
     check-cast p1, Ljava/lang/Number;
 
     invoke-static {p1}, Lorg/json/JSONObject;->numberToString(Ljava/lang/Number;)Ljava/lang/String;
@@ -194,13 +194,13 @@
 
     goto :goto_1
 
+    .line 20
     :cond_5
     :goto_0
     iget-object p1, p0, Lcom/apm/insight/l/h;->a:Ljava/io/Writer;
 
     const-string v0, "null"
 
-    .line 20
     invoke-virtual {p1, v0}, Ljava/io/Writer;->write(Ljava/lang/String;)V
 
     :goto_1
@@ -219,9 +219,9 @@
     .line 5
     invoke-direct {p0}, Lcom/apm/insight/l/h;->e()Lcom/apm/insight/l/h$a;
 
+    .line 6
     iget-object v0, p0, Lcom/apm/insight/l/h;->b:Ljava/util/List;
 
-    .line 6
     invoke-interface {v0}, Ljava/util/List;->size()I
 
     move-result v1
@@ -230,9 +230,9 @@
 
     invoke-interface {v0, v1}, Ljava/util/List;->remove(I)Ljava/lang/Object;
 
+    .line 7
     iget-object v0, p0, Lcom/apm/insight/l/h;->a:Ljava/io/Writer;
 
-    .line 7
     invoke-virtual {v0, p1}, Ljava/io/Writer;->write(Ljava/lang/String;)V
 
     return-object p0
@@ -241,9 +241,9 @@
 .method private a(Lcom/apm/insight/l/h$a;)V
     .locals 2
 
+    .line 8
     iget-object v0, p0, Lcom/apm/insight/l/h;->b:Ljava/util/List;
 
-    .line 8
     invoke-interface {v0}, Ljava/util/List;->size()I
 
     move-result v1
@@ -412,160 +412,162 @@
 .end method
 
 .method private b(Ljava/lang/String;)V
-    .locals 7
+    .locals 8
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
         }
     .end annotation
 
-    iget-object v0, p0, Lcom/apm/insight/l/h;->a:Ljava/io/Writer;
-
-    const-string v1, "\""
+    const/4 v0, 0x1
 
     .line 2
-    invoke-virtual {v0, v1}, Ljava/io/Writer;->write(Ljava/lang/String;)V
+    iget-object v1, p0, Lcom/apm/insight/l/h;->a:Ljava/io/Writer;
+
+    const-string v2, "\""
+
+    invoke-virtual {v1, v2}, Ljava/io/Writer;->write(Ljava/lang/String;)V
 
     .line 3
     invoke-virtual {p1}, Ljava/lang/String;->length()I
 
-    move-result v0
-
-    const/4 v2, 0x0
+    move-result v1
 
     const/4 v3, 0x0
 
+    const/4 v4, 0x0
+
     :goto_0
-    if-ge v3, v0, :cond_4
+    if-ge v4, v1, :cond_4
 
     .line 4
-    invoke-virtual {p1, v3}, Ljava/lang/String;->charAt(I)C
+    invoke-virtual {p1, v4}, Ljava/lang/String;->charAt(I)C
 
-    move-result v4
+    move-result v5
 
-    const/16 v5, 0xc
+    const/16 v6, 0xc
 
-    if-eq v4, v5, :cond_3
+    if-eq v5, v6, :cond_3
 
-    const/16 v5, 0xd
+    const/16 v6, 0xd
 
-    if-eq v4, v5, :cond_2
+    if-eq v5, v6, :cond_2
 
-    const/16 v5, 0x22
+    const/16 v6, 0x22
 
-    const/16 v6, 0x5c
+    const/16 v7, 0x5c
 
-    if-eq v4, v5, :cond_0
+    if-eq v5, v6, :cond_0
 
-    const/16 v5, 0x2f
+    const/16 v6, 0x2f
 
-    if-eq v4, v5, :cond_0
+    if-eq v5, v6, :cond_0
 
-    if-eq v4, v6, :cond_0
+    if-eq v5, v7, :cond_0
 
-    packed-switch v4, :pswitch_data_0
+    packed-switch v5, :pswitch_data_0
 
-    const/16 v5, 0x1f
+    const/16 v6, 0x1f
 
-    if-gt v4, v5, :cond_1
-
-    iget-object v5, p0, Lcom/apm/insight/l/h;->a:Ljava/io/Writer;
-
-    const/4 v6, 0x1
-
-    new-array v6, v6, [Ljava/lang/Object;
+    if-gt v5, v6, :cond_1
 
     .line 5
-    invoke-static {v4}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+    iget-object v6, p0, Lcom/apm/insight/l/h;->a:Ljava/io/Writer;
 
-    move-result-object v4
+    invoke-static {v5}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
-    aput-object v4, v6, v2
+    move-result-object v5
 
-    const-string v4, "\\u%04x"
+    new-array v7, v0, [Ljava/lang/Object;
 
-    invoke-static {v4, v6}, Ljava/lang/String;->format(Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;
+    aput-object v5, v7, v3
 
-    move-result-object v4
+    const-string v5, "\\u%04x"
 
-    invoke-virtual {v5, v4}, Ljava/io/Writer;->write(Ljava/lang/String;)V
+    invoke-static {v5, v7}, Ljava/lang/String;->format(Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;
+
+    move-result-object v5
+
+    invoke-virtual {v6, v5}, Ljava/io/Writer;->write(Ljava/lang/String;)V
 
     goto :goto_1
-
-    :pswitch_0
-    iget-object v4, p0, Lcom/apm/insight/l/h;->a:Ljava/io/Writer;
-
-    const-string v5, "\\n"
 
     .line 6
-    invoke-virtual {v4, v5}, Ljava/io/Writer;->write(Ljava/lang/String;)V
+    :pswitch_0
+    iget-object v5, p0, Lcom/apm/insight/l/h;->a:Ljava/io/Writer;
+
+    const-string v6, "\\n"
+
+    invoke-virtual {v5, v6}, Ljava/io/Writer;->write(Ljava/lang/String;)V
 
     goto :goto_1
-
-    :pswitch_1
-    iget-object v4, p0, Lcom/apm/insight/l/h;->a:Ljava/io/Writer;
-
-    const-string v5, "\\t"
 
     .line 7
-    invoke-virtual {v4, v5}, Ljava/io/Writer;->write(Ljava/lang/String;)V
+    :pswitch_1
+    iget-object v5, p0, Lcom/apm/insight/l/h;->a:Ljava/io/Writer;
+
+    const-string v6, "\\t"
+
+    invoke-virtual {v5, v6}, Ljava/io/Writer;->write(Ljava/lang/String;)V
 
     goto :goto_1
-
-    :pswitch_2
-    iget-object v4, p0, Lcom/apm/insight/l/h;->a:Ljava/io/Writer;
-
-    const-string v5, "\\b"
 
     .line 8
-    invoke-virtual {v4, v5}, Ljava/io/Writer;->write(Ljava/lang/String;)V
+    :pswitch_2
+    iget-object v5, p0, Lcom/apm/insight/l/h;->a:Ljava/io/Writer;
+
+    const-string v6, "\\b"
+
+    invoke-virtual {v5, v6}, Ljava/io/Writer;->write(Ljava/lang/String;)V
 
     goto :goto_1
-
-    :cond_0
-    iget-object v5, p0, Lcom/apm/insight/l/h;->a:Ljava/io/Writer;
 
     .line 9
-    invoke-virtual {v5, v6}, Ljava/io/Writer;->write(I)V
+    :cond_0
+    iget-object v6, p0, Lcom/apm/insight/l/h;->a:Ljava/io/Writer;
 
-    :cond_1
-    iget-object v5, p0, Lcom/apm/insight/l/h;->a:Ljava/io/Writer;
+    invoke-virtual {v6, v7}, Ljava/io/Writer;->write(I)V
 
     .line 10
-    invoke-virtual {v5, v4}, Ljava/io/Writer;->write(I)V
+    :cond_1
+    iget-object v6, p0, Lcom/apm/insight/l/h;->a:Ljava/io/Writer;
+
+    invoke-virtual {v6, v5}, Ljava/io/Writer;->write(I)V
 
     goto :goto_1
-
-    :cond_2
-    iget-object v4, p0, Lcom/apm/insight/l/h;->a:Ljava/io/Writer;
-
-    const-string v5, "\\r"
 
     .line 11
-    invoke-virtual {v4, v5}, Ljava/io/Writer;->write(Ljava/lang/String;)V
+    :cond_2
+    iget-object v5, p0, Lcom/apm/insight/l/h;->a:Ljava/io/Writer;
+
+    const-string v6, "\\r"
+
+    invoke-virtual {v5, v6}, Ljava/io/Writer;->write(Ljava/lang/String;)V
 
     goto :goto_1
 
-    :cond_3
-    iget-object v4, p0, Lcom/apm/insight/l/h;->a:Ljava/io/Writer;
-
-    const-string v5, "\\f"
-
     .line 12
-    invoke-virtual {v4, v5}, Ljava/io/Writer;->write(Ljava/lang/String;)V
+    :cond_3
+    iget-object v5, p0, Lcom/apm/insight/l/h;->a:Ljava/io/Writer;
+
+    const-string v6, "\\f"
+
+    invoke-virtual {v5, v6}, Ljava/io/Writer;->write(Ljava/lang/String;)V
 
     :goto_1
-    add-int/lit8 v3, v3, 0x1
+    add-int/2addr v4, v0
 
     goto :goto_0
 
+    .line 13
     :cond_4
     iget-object p1, p0, Lcom/apm/insight/l/h;->a:Ljava/io/Writer;
 
-    .line 13
-    invoke-virtual {p1, v1}, Ljava/io/Writer;->write(Ljava/lang/String;)V
+    invoke-virtual {p1, v2}, Ljava/io/Writer;->write(Ljava/lang/String;)V
 
     return-void
+
+    nop
 
     :pswitch_data_0
     .packed-switch 0x8
@@ -615,11 +617,11 @@
 
     if-ne v0, v1, :cond_0
 
+    .line 4
     iget-object v0, p0, Lcom/apm/insight/l/h;->a:Ljava/io/Writer;
 
     const/16 v1, 0x2c
 
-    .line 4
     invoke-virtual {v0, v1}, Ljava/io/Writer;->write(I)V
 
     goto :goto_0
@@ -697,7 +699,7 @@
     const/4 v1, 0x1
 
     .line 4
-    invoke-static {v0, v1}, Landroidx/compose/foundation/text/modifiers/f;->o(Ljava/util/List;I)Ljava/lang/Object;
+    invoke-static {v1, v0}, Landroidx/compose/runtime/a0;->n(ILjava/util/List;)Ljava/lang/Object;
 
     .line 5
     .line 6
@@ -863,7 +865,10 @@
 .method public final toString()Ljava/lang/String;
     .locals 1
 
+    .line 1
     const-string v0, ""
 
+    .line 2
+    .line 3
     return-object v0
 .end method

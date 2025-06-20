@@ -3,35 +3,11 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lzh/e;
+.implements Lka/e;
 
 
 # annotations
-.annotation system Ldalvik/annotation/Signature;
-    value = {
-        "Lkotlin/coroutines/jvm/internal/RestrictedSuspendLambda;",
-        "Lzh/e;"
-    }
-.end annotation
-
-.annotation runtime Lkotlin/Metadata;
-    d1 = {
-        "\u0000\n\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\u0010\u0002\u001a\u00020\u0001*\u00020\u0000H\u008a@"
-    }
-    d2 = {
-        "Landroidx/compose/ui/input/pointer/b;",
-        "Lqh/r;",
-        "<anonymous>"
-    }
-    k = 0x3
-    mv = {
-        0x1,
-        0x8,
-        0x0
-    }
-.end annotation
-
-.annotation runtime Lth/c;
+.annotation runtime Lca/c;
     c = "androidx.compose.foundation.gestures.ForEachGestureKt$awaitEachGesture$2"
     f = "ForEachGesture.kt"
     l = {
@@ -42,17 +18,42 @@
     m = "invokeSuspend"
 .end annotation
 
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "Lkotlin/coroutines/jvm/internal/RestrictedSuspendLambda;",
+        "Lka/e;"
+    }
+.end annotation
+
+.annotation runtime Lkotlin/Metadata;
+    d1 = {
+        "\u0000\u000c\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0008\u0002\u0010\u0002\u001a\u00020\u0001*\u00020\u0000H\u008a@\u00a2\u0006\u0004\u0008\u0002\u0010\u0003"
+    }
+    d2 = {
+        "Landroidx/compose/ui/input/pointer/b;",
+        "LX9/j;",
+        "<anonymous>",
+        "(Landroidx/compose/ui/input/pointer/b;)V"
+    }
+    k = 0x3
+    mv = {
+        0x1,
+        0x8,
+        0x0
+    }
+.end annotation
+
 
 # instance fields
-.field final synthetic $block:Lzh/e;
+.field final synthetic $block:Lka/e;
     .annotation system Ldalvik/annotation/Signature;
         value = {
-            "Lzh/e;"
+            "Lka/e;"
         }
     .end annotation
 .end field
 
-.field final synthetic $currentContext:Lkotlin/coroutines/i;
+.field final synthetic $currentContext:Lba/g;
 
 .field private synthetic L$0:Ljava/lang/Object;
 
@@ -60,13 +61,13 @@
 
 
 # direct methods
-.method public constructor <init>(Lkotlin/coroutines/i;Lzh/e;Lkotlin/coroutines/Continuation;)V
+.method public constructor <init>(Lba/g;Lka/e;Lkotlin/coroutines/Continuation;)V
     .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
-            "Lkotlin/coroutines/i;",
-            "Lzh/e;",
+            "Lba/g;",
+            "Lka/e;",
             "Lkotlin/coroutines/Continuation<",
             "-",
             "Landroidx/compose/foundation/gestures/ForEachGestureKt$awaitEachGesture$2;",
@@ -75,14 +76,22 @@
     .end annotation
 
     .line 1
-    iput-object p1, p0, Landroidx/compose/foundation/gestures/ForEachGestureKt$awaitEachGesture$2;->$currentContext:Lkotlin/coroutines/i;
+    iput-object p1, p0, Landroidx/compose/foundation/gestures/ForEachGestureKt$awaitEachGesture$2;->$currentContext:Lba/g;
 
-    iput-object p2, p0, Landroidx/compose/foundation/gestures/ForEachGestureKt$awaitEachGesture$2;->$block:Lzh/e;
+    .line 2
+    .line 3
+    iput-object p2, p0, Landroidx/compose/foundation/gestures/ForEachGestureKt$awaitEachGesture$2;->$block:Lka/e;
 
+    .line 4
+    .line 5
     const/4 p1, 0x2
 
+    .line 6
     invoke-direct {p0, p1, p3}, Lkotlin/coroutines/jvm/internal/RestrictedSuspendLambda;-><init>(ILkotlin/coroutines/Continuation;)V
 
+    .line 7
+    .line 8
+    .line 9
     return-void
 .end method
 
@@ -97,18 +106,18 @@
             "Lkotlin/coroutines/Continuation<",
             "*>;)",
             "Lkotlin/coroutines/Continuation<",
-            "Lqh/r;",
+            "LX9/j;",
             ">;"
         }
     .end annotation
 
     new-instance v0, Landroidx/compose/foundation/gestures/ForEachGestureKt$awaitEachGesture$2;
 
-    iget-object v1, p0, Landroidx/compose/foundation/gestures/ForEachGestureKt$awaitEachGesture$2;->$currentContext:Lkotlin/coroutines/i;
+    iget-object v1, p0, Landroidx/compose/foundation/gestures/ForEachGestureKt$awaitEachGesture$2;->$currentContext:Lba/g;
 
-    iget-object v2, p0, Landroidx/compose/foundation/gestures/ForEachGestureKt$awaitEachGesture$2;->$block:Lzh/e;
+    iget-object v2, p0, Landroidx/compose/foundation/gestures/ForEachGestureKt$awaitEachGesture$2;->$block:Lka/e;
 
-    invoke-direct {v0, v1, v2, p2}, Landroidx/compose/foundation/gestures/ForEachGestureKt$awaitEachGesture$2;-><init>(Lkotlin/coroutines/i;Lzh/e;Lkotlin/coroutines/Continuation;)V
+    invoke-direct {v0, v1, v2, p2}, Landroidx/compose/foundation/gestures/ForEachGestureKt$awaitEachGesture$2;-><init>(Lba/g;Lka/e;Lkotlin/coroutines/Continuation;)V
 
     iput-object p1, v0, Landroidx/compose/foundation/gestures/ForEachGestureKt$awaitEachGesture$2;->L$0:Ljava/lang/Object;
 
@@ -123,7 +132,7 @@
             "Landroidx/compose/ui/input/pointer/b;",
             "Lkotlin/coroutines/Continuation<",
             "-",
-            "Lqh/r;",
+            "LX9/j;",
             ">;)",
             "Ljava/lang/Object;"
         }
@@ -136,7 +145,7 @@
 
     check-cast p1, Landroidx/compose/foundation/gestures/ForEachGestureKt$awaitEachGesture$2;
 
-    sget-object p2, Lqh/r;->a:Lqh/r;
+    sget-object p2, LX9/j;->a:LX9/j;
 
     invoke-virtual {p1, p2}, Landroidx/compose/foundation/gestures/ForEachGestureKt$awaitEachGesture$2;->invokeSuspend(Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -161,7 +170,7 @@
 .end method
 
 .method public final invokeSuspend(Ljava/lang/Object;)Ljava/lang/Object;
-    .locals 8
+    .locals 7
 
     .line 1
     sget-object v0, Lkotlin/coroutines/intrinsics/CoroutineSingletons;->COROUTINE_SUSPENDED:Lkotlin/coroutines/intrinsics/CoroutineSingletons;
@@ -181,11 +190,11 @@
     const/4 v4, 0x1
 
     .line 8
-    if-eqz v1, :cond_3
+    if-eqz v1, :cond_4
 
     .line 9
     .line 10
-    if-eq v1, v4, :cond_2
+    if-eq v1, v4, :cond_3
 
     .line 11
     .line 12
@@ -247,6 +256,7 @@
     .line 37
     .line 38
     .line 39
+    :cond_2
     :goto_0
     move-object p1, v1
 
@@ -258,240 +268,182 @@
     move-exception p1
 
     .line 42
-    move-object v5, v1
+    goto :goto_3
 
     .line 43
-    move-object v1, p0
+    :cond_3
+    iget-object v1, p0, Landroidx/compose/foundation/gestures/ForEachGestureKt$awaitEachGesture$2;->L$0:Ljava/lang/Object;
 
     .line 44
-    goto :goto_4
-
     .line 45
-    :cond_2
-    iget-object v1, p0, Landroidx/compose/foundation/gestures/ForEachGestureKt$awaitEachGesture$2;->L$0:Ljava/lang/Object;
+    check-cast v1, Landroidx/compose/ui/input/pointer/b;
 
     .line 46
     .line 47
-    check-cast v1, Landroidx/compose/ui/input/pointer/b;
-
-    .line 48
-    .line 49
     :try_start_1
     invoke-static {p1}, Lkotlin/b;->a(Ljava/lang/Object;)V
     :try_end_1
     .catch Ljava/util/concurrent/CancellationException; {:try_start_1 .. :try_end_1} :catch_0
 
+    .line 48
+    .line 49
     .line 50
+    goto :goto_2
+
     .line 51
-    .line 52
-    move-object p1, p0
-
-    .line 53
-    goto :goto_3
-
-    .line 54
-    :cond_3
+    :cond_4
     invoke-static {p1}, Lkotlin/b;->a(Ljava/lang/Object;)V
+
+    .line 52
+    .line 53
+    .line 54
+    iget-object p1, p0, Landroidx/compose/foundation/gestures/ForEachGestureKt$awaitEachGesture$2;->L$0:Ljava/lang/Object;
 
     .line 55
     .line 56
-    .line 57
-    iget-object p1, p0, Landroidx/compose/foundation/gestures/ForEachGestureKt$awaitEachGesture$2;->L$0:Ljava/lang/Object;
-
-    .line 58
-    .line 59
     check-cast p1, Landroidx/compose/ui/input/pointer/b;
 
-    .line 60
-    .line 61
+    .line 57
+    .line 58
     :goto_1
-    move-object v1, p0
+    iget-object v1, p0, Landroidx/compose/foundation/gestures/ForEachGestureKt$awaitEachGesture$2;->$currentContext:Lba/g;
 
+    .line 59
+    .line 60
+    invoke-static {v1}, Lkotlinx/coroutines/w;->s(Lba/g;)Z
+
+    .line 61
     .line 62
-    :goto_2
-    iget-object v5, v1, Landroidx/compose/foundation/gestures/ForEachGestureKt$awaitEachGesture$2;->$currentContext:Lkotlin/coroutines/i;
-
     .line 63
+    move-result v1
+
     .line 64
-    invoke-static {v5}, Lrb/h;->B(Lkotlin/coroutines/i;)Z
+    if-eqz v1, :cond_7
 
     .line 65
     .line 66
-    .line 67
-    move-result v5
+    :try_start_2
+    iget-object v1, p0, Landroidx/compose/foundation/gestures/ForEachGestureKt$awaitEachGesture$2;->$block:Lka/e;
 
+    .line 67
     .line 68
-    if-eqz v5, :cond_8
+    iput-object p1, p0, Landroidx/compose/foundation/gestures/ForEachGestureKt$awaitEachGesture$2;->L$0:Ljava/lang/Object;
 
     .line 69
     .line 70
-    :try_start_2
-    iget-object v5, v1, Landroidx/compose/foundation/gestures/ForEachGestureKt$awaitEachGesture$2;->$block:Lzh/e;
+    iput v4, p0, Landroidx/compose/foundation/gestures/ForEachGestureKt$awaitEachGesture$2;->label:I
 
     .line 71
     .line 72
-    iput-object p1, v1, Landroidx/compose/foundation/gestures/ForEachGestureKt$awaitEachGesture$2;->L$0:Ljava/lang/Object;
+    invoke-interface {v1, p1, p0}, Lka/e;->invoke(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 73
     .line 74
-    iput v4, v1, Landroidx/compose/foundation/gestures/ForEachGestureKt$awaitEachGesture$2;->label:I
-
     .line 75
+    move-result-object v1
+    :try_end_2
+    .catch Ljava/util/concurrent/CancellationException; {:try_start_2 .. :try_end_2} :catch_1
+
     .line 76
-    invoke-interface {v5, p1, v1}, Lzh/e;->invoke(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    if-ne v1, v0, :cond_5
 
     .line 77
     .line 78
+    return-object v0
+
     .line 79
-    move-result-object v5
-    :try_end_2
-    .catch Ljava/util/concurrent/CancellationException; {:try_start_2 .. :try_end_2} :catch_2
+    :cond_5
+    move-object v1, p1
 
     .line 80
-    if-ne v5, v0, :cond_4
+    :goto_2
+    :try_start_3
+    iput-object v1, p0, Landroidx/compose/foundation/gestures/ForEachGestureKt$awaitEachGesture$2;->L$0:Ljava/lang/Object;
 
     .line 81
     .line 82
-    return-object v0
+    iput v3, p0, Landroidx/compose/foundation/gestures/ForEachGestureKt$awaitEachGesture$2;->label:I
 
     .line 83
-    :cond_4
-    move-object v7, v1
-
     .line 84
-    move-object v1, p1
+    invoke-static {v1, p0}, Landroidx/compose/foundation/gestures/y;->a(Landroidx/compose/ui/input/pointer/b;Lkotlin/coroutines/jvm/internal/BaseContinuationImpl;)Ljava/lang/Object;
 
     .line 85
-    move-object p1, v7
-
     .line 86
-    :goto_3
-    :try_start_3
-    iput-object v1, p1, Landroidx/compose/foundation/gestures/ForEachGestureKt$awaitEachGesture$2;->L$0:Ljava/lang/Object;
-
     .line 87
+    move-result-object p1
+    :try_end_3
+    .catch Ljava/util/concurrent/CancellationException; {:try_start_3 .. :try_end_3} :catch_0
+
     .line 88
-    iput v3, p1, Landroidx/compose/foundation/gestures/ForEachGestureKt$awaitEachGesture$2;->label:I
+    if-ne p1, v0, :cond_2
 
     .line 89
     .line 90
-    invoke-static {v1, p1}, Landroidx/compose/foundation/gestures/w;->a(Landroidx/compose/ui/input/pointer/b;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
-
-    .line 91
-    .line 92
-    .line 93
-    move-result-object v5
-    :try_end_3
-    .catch Ljava/util/concurrent/CancellationException; {:try_start_3 .. :try_end_3} :catch_1
-
-    .line 94
-    if-ne v5, v0, :cond_5
-
-    .line 95
-    .line 96
     return-object v0
 
+    .line 91
+    :catch_1
+    move-exception v1
+
+    .line 92
+    move-object v6, v1
+
+    .line 93
+    move-object v1, p1
+
+    .line 94
+    move-object p1, v6
+
+    .line 95
+    :goto_3
+    iget-object v5, p0, Landroidx/compose/foundation/gestures/ForEachGestureKt$awaitEachGesture$2;->$currentContext:Lba/g;
+
+    .line 96
     .line 97
-    :cond_5
-    move-object v7, v1
+    invoke-static {v5}, Lkotlinx/coroutines/w;->s(Lba/g;)Z
 
     .line 98
-    move-object v1, p1
-
     .line 99
-    move-object p1, v7
-
     .line 100
-    goto :goto_2
+    move-result v5
 
     .line 101
-    :catch_1
-    move-exception v5
+    if-eqz v5, :cond_6
 
     .line 102
-    move-object v7, v1
-
     .line 103
-    move-object v1, p1
+    iput-object v1, p0, Landroidx/compose/foundation/gestures/ForEachGestureKt$awaitEachGesture$2;->L$0:Ljava/lang/Object;
 
     .line 104
-    move-object p1, v5
-
     .line 105
-    move-object v5, v7
+    iput v2, p0, Landroidx/compose/foundation/gestures/ForEachGestureKt$awaitEachGesture$2;->label:I
 
     .line 106
-    goto :goto_4
-
     .line 107
-    :catch_2
-    move-exception v5
+    invoke-static {v1, p0}, Landroidx/compose/foundation/gestures/y;->a(Landroidx/compose/ui/input/pointer/b;Lkotlin/coroutines/jvm/internal/BaseContinuationImpl;)Ljava/lang/Object;
 
     .line 108
-    move-object v7, v5
-
     .line 109
-    move-object v5, p1
-
     .line 110
-    move-object p1, v7
+    move-result-object p1
 
     .line 111
-    :goto_4
-    iget-object v6, v1, Landroidx/compose/foundation/gestures/ForEachGestureKt$awaitEachGesture$2;->$currentContext:Lkotlin/coroutines/i;
+    if-ne p1, v0, :cond_2
 
     .line 112
     .line 113
-    invoke-static {v6}, Lrb/h;->B(Lkotlin/coroutines/i;)Z
-
-    .line 114
-    .line 115
-    .line 116
-    move-result v6
-
-    .line 117
-    if-eqz v6, :cond_7
-
-    .line 118
-    .line 119
-    iput-object v5, v1, Landroidx/compose/foundation/gestures/ForEachGestureKt$awaitEachGesture$2;->L$0:Ljava/lang/Object;
-
-    .line 120
-    .line 121
-    iput v2, v1, Landroidx/compose/foundation/gestures/ForEachGestureKt$awaitEachGesture$2;->label:I
-
-    .line 122
-    .line 123
-    invoke-static {v5, v1}, Landroidx/compose/foundation/gestures/w;->a(Landroidx/compose/ui/input/pointer/b;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
-
-    .line 124
-    .line 125
-    .line 126
-    move-result-object p1
-
-    .line 127
-    if-ne p1, v0, :cond_6
-
-    .line 128
-    .line 129
     return-object v0
 
-    .line 130
+    .line 114
     :cond_6
-    move-object p1, v5
-
-    .line 131
-    goto :goto_2
-
-    .line 132
-    :cond_7
     throw p1
 
-    .line 133
-    :cond_8
-    sget-object p1, Lqh/r;->a:Lqh/r;
+    .line 115
+    :cond_7
+    sget-object p1, LX9/j;->a:LX9/j;
 
-    .line 134
-    .line 135
+    .line 116
+    .line 117
     return-object p1
 .end method

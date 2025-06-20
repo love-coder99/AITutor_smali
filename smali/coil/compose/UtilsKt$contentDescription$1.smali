@@ -3,14 +3,14 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lzh/c;
+.implements Lka/c;
 
 
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "Lkotlin/jvm/internal/Lambda;",
-        "Lzh/c;"
+        "Lka/c;"
     }
 .end annotation
 
@@ -19,10 +19,10 @@
         "\u0000\u000c\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0008\u0003\u0010\u0004\u001a\u00020\u0001*\u00020\u0000H\n\u00a2\u0006\u0004\u0008\u0002\u0010\u0003"
     }
     d2 = {
-        "Landroidx/compose/ui/semantics/u;",
-        "Lqh/r;",
+        "Landroidx/compose/ui/semantics/t;",
+        "LX9/j;",
         "invoke",
-        "(Landroidx/compose/ui/semantics/u;)V",
+        "(Landroidx/compose/ui/semantics/t;)V",
         "<anonymous>"
     }
     k = 0x3
@@ -57,27 +57,27 @@
     .locals 0
 
     .line 1
-    check-cast p1, Landroidx/compose/ui/semantics/u;
+    check-cast p1, Landroidx/compose/ui/semantics/t;
 
-    invoke-virtual {p0, p1}, Lcoil/compose/UtilsKt$contentDescription$1;->invoke(Landroidx/compose/ui/semantics/u;)V
+    invoke-virtual {p0, p1}, Lcoil/compose/UtilsKt$contentDescription$1;->invoke(Landroidx/compose/ui/semantics/t;)V
 
-    sget-object p1, Lqh/r;->a:Lqh/r;
+    sget-object p1, LX9/j;->a:LX9/j;
 
     return-object p1
 .end method
 
-.method public final invoke(Landroidx/compose/ui/semantics/u;)V
+.method public final invoke(Landroidx/compose/ui/semantics/t;)V
     .locals 1
 
+    .line 2
     iget-object v0, p0, Lcoil/compose/UtilsKt$contentDescription$1;->$contentDescription:Ljava/lang/String;
 
-    .line 2
-    invoke-static {p1, v0}, Landroidx/compose/ui/semantics/s;->f(Landroidx/compose/ui/semantics/u;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Landroidx/compose/ui/semantics/r;->e(Landroidx/compose/ui/semantics/t;Ljava/lang/String;)V
 
     const/4 v0, 0x5
 
     .line 3
-    invoke-static {p1, v0}, Landroidx/compose/ui/semantics/s;->g(Landroidx/compose/ui/semantics/u;I)V
+    invoke-static {p1, v0}, Landroidx/compose/ui/semantics/r;->f(Landroidx/compose/ui/semantics/t;I)V
 
     return-void
 .end method

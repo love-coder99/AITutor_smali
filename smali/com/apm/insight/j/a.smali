@@ -48,9 +48,9 @@
 .method public final a()V
     .locals 1
 
+    .line 1
     iget-object v0, p0, Lcom/apm/insight/j/a;->a:Landroid/os/Handler;
 
-    .line 1
     invoke-virtual {v0, p0}, Landroid/os/Handler;->post(Ljava/lang/Runnable;)Z
 
     return-void
@@ -65,17 +65,17 @@
 
     if-lez v2, :cond_0
 
+    .line 2
     iget-object v0, p0, Lcom/apm/insight/j/a;->a:Landroid/os/Handler;
 
-    .line 2
     invoke-virtual {v0, p0, p1, p2}, Landroid/os/Handler;->postDelayed(Ljava/lang/Runnable;J)Z
 
     return-void
 
+    .line 3
     :cond_0
     iget-object p1, p0, Lcom/apm/insight/j/a;->a:Landroid/os/Handler;
 
-    .line 3
     invoke-virtual {p1, p0}, Landroid/os/Handler;->post(Ljava/lang/Runnable;)Z
 
     return-void
@@ -84,7 +84,10 @@
 .method public final b()J
     .locals 2
 
+    .line 1
     iget-wide v0, p0, Lcom/apm/insight/j/a;->c:J
 
+    .line 2
+    .line 3
     return-wide v0
 .end method

@@ -3,14 +3,23 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lzh/e;
+.implements Lka/e;
 
 
 # annotations
+.annotation runtime Lca/c;
+    c = "androidx.compose.runtime.SdkStubsFallbackFrameClock$withFrameNanos$2"
+    f = "ActualAndroid.android.kt"
+    l = {
+        0x34
+    }
+    m = "invokeSuspend"
+.end annotation
+
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "Lkotlin/coroutines/jvm/internal/SuspendLambda;",
-        "Lzh/e;"
+        "Lka/e;"
     }
 .end annotation
 
@@ -20,7 +29,7 @@
     }
     d2 = {
         "R",
-        "Lkotlinx/coroutines/w;",
+        "Lkotlinx/coroutines/u;",
         "<anonymous>"
     }
     k = 0x3
@@ -31,21 +40,12 @@
     }
 .end annotation
 
-.annotation runtime Lth/c;
-    c = "androidx.compose.runtime.SdkStubsFallbackFrameClock$withFrameNanos$2"
-    f = "ActualAndroid.android.kt"
-    l = {
-        0x34
-    }
-    m = "invokeSuspend"
-.end annotation
-
 
 # instance fields
-.field final synthetic $onFrame:Lzh/c;
+.field final synthetic $onFrame:Lka/c;
     .annotation system Ldalvik/annotation/Signature;
         value = {
-            "Lzh/c;"
+            "Lka/c;"
         }
     .end annotation
 .end field
@@ -54,12 +54,12 @@
 
 
 # direct methods
-.method public constructor <init>(Lzh/c;Lkotlin/coroutines/Continuation;)V
+.method public constructor <init>(Lka/c;Lkotlin/coroutines/Continuation;)V
     .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
-            "Lzh/c;",
+            "Lka/c;",
             "Lkotlin/coroutines/Continuation<",
             "-",
             "Landroidx/compose/runtime/SdkStubsFallbackFrameClock$withFrameNanos$2;",
@@ -68,12 +68,18 @@
     .end annotation
 
     .line 1
-    iput-object p1, p0, Landroidx/compose/runtime/SdkStubsFallbackFrameClock$withFrameNanos$2;->$onFrame:Lzh/c;
+    iput-object p1, p0, Landroidx/compose/runtime/SdkStubsFallbackFrameClock$withFrameNanos$2;->$onFrame:Lka/c;
 
+    .line 2
+    .line 3
     const/4 p1, 0x2
 
+    .line 4
     invoke-direct {p0, p1, p2}, Lkotlin/coroutines/jvm/internal/SuspendLambda;-><init>(ILkotlin/coroutines/Continuation;)V
 
+    .line 5
+    .line 6
+    .line 7
     return-void
 .end method
 
@@ -88,16 +94,16 @@
             "Lkotlin/coroutines/Continuation<",
             "*>;)",
             "Lkotlin/coroutines/Continuation<",
-            "Lqh/r;",
+            "LX9/j;",
             ">;"
         }
     .end annotation
 
     new-instance p1, Landroidx/compose/runtime/SdkStubsFallbackFrameClock$withFrameNanos$2;
 
-    iget-object v0, p0, Landroidx/compose/runtime/SdkStubsFallbackFrameClock$withFrameNanos$2;->$onFrame:Lzh/c;
+    iget-object v0, p0, Landroidx/compose/runtime/SdkStubsFallbackFrameClock$withFrameNanos$2;->$onFrame:Lka/c;
 
-    invoke-direct {p1, v0, p2}, Landroidx/compose/runtime/SdkStubsFallbackFrameClock$withFrameNanos$2;-><init>(Lzh/c;Lkotlin/coroutines/Continuation;)V
+    invoke-direct {p1, v0, p2}, Landroidx/compose/runtime/SdkStubsFallbackFrameClock$withFrameNanos$2;-><init>(Lka/c;Lkotlin/coroutines/Continuation;)V
 
     return-object p1
 .end method
@@ -106,23 +112,23 @@
     .locals 0
 
     .line 1
-    check-cast p1, Lkotlinx/coroutines/w;
+    check-cast p1, Lkotlinx/coroutines/u;
 
     check-cast p2, Lkotlin/coroutines/Continuation;
 
-    invoke-virtual {p0, p1, p2}, Landroidx/compose/runtime/SdkStubsFallbackFrameClock$withFrameNanos$2;->invoke(Lkotlinx/coroutines/w;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
+    invoke-virtual {p0, p1, p2}, Landroidx/compose/runtime/SdkStubsFallbackFrameClock$withFrameNanos$2;->invoke(Lkotlinx/coroutines/u;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
 
     move-result-object p1
 
     return-object p1
 .end method
 
-.method public final invoke(Lkotlinx/coroutines/w;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
+.method public final invoke(Lkotlinx/coroutines/u;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
     .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
-            "Lkotlinx/coroutines/w;",
+            "Lkotlinx/coroutines/u;",
             "Lkotlin/coroutines/Continuation<",
             "Ljava/lang/Object;",
             ">;)",
@@ -137,7 +143,7 @@
 
     check-cast p1, Landroidx/compose/runtime/SdkStubsFallbackFrameClock$withFrameNanos$2;
 
-    sget-object p2, Lqh/r;->a:Lqh/r;
+    sget-object p2, LX9/j;->a:LX9/j;
 
     invoke-virtual {p1, p2}, Landroidx/compose/runtime/SdkStubsFallbackFrameClock$withFrameNanos$2;->invokeSuspend(Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -208,7 +214,7 @@
 
     .line 28
     .line 29
-    invoke-static {v1, v2, p0}, Lf7/l;->g(JLkotlin/coroutines/Continuation;)Ljava/lang/Object;
+    invoke-static {v1, v2, p0}, Lkotlinx/coroutines/w;->i(JLkotlin/coroutines/Continuation;)Ljava/lang/Object;
 
     .line 30
     .line 31
@@ -225,7 +231,7 @@
     .line 36
     :cond_2
     :goto_0
-    iget-object p1, p0, Landroidx/compose/runtime/SdkStubsFallbackFrameClock$withFrameNanos$2;->$onFrame:Lzh/c;
+    iget-object p1, p0, Landroidx/compose/runtime/SdkStubsFallbackFrameClock$withFrameNanos$2;->$onFrame:Lka/c;
 
     .line 37
     .line 38
@@ -246,7 +252,7 @@
     .line 45
     .line 46
     .line 47
-    invoke-interface {p1, v2}, Lzh/c;->invoke(Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-interface {p1, v2}, Lka/c;->invoke(Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 48
     .line 49

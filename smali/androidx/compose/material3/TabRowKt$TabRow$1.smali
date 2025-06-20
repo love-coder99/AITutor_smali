@@ -3,14 +3,14 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lzh/f;
+.implements Lka/f;
 
 
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "Lkotlin/jvm/internal/Lambda;",
-        "Lzh/f;"
+        "Lka/f;"
     }
 .end annotation
 
@@ -50,7 +50,7 @@
     .line 1
     check-cast p1, Ljava/util/List;
 
-    check-cast p2, Landroidx/compose/runtime/l;
+    check-cast p2, Landroidx/compose/runtime/j;
 
     check-cast p3, Ljava/lang/Number;
 
@@ -58,29 +58,29 @@
 
     move-result p3
 
-    invoke-virtual {p0, p1, p2, p3}, Landroidx/compose/material3/TabRowKt$TabRow$1;->invoke(Ljava/util/List;Landroidx/compose/runtime/l;I)V
+    invoke-virtual {p0, p1, p2, p3}, Landroidx/compose/material3/TabRowKt$TabRow$1;->invoke(Ljava/util/List;Landroidx/compose/runtime/j;I)V
 
-    sget-object p1, Lqh/r;->a:Lqh/r;
+    sget-object p1, LX9/j;->a:LX9/j;
 
     return-object p1
 .end method
 
-.method public final invoke(Ljava/util/List;Landroidx/compose/runtime/l;I)V
+.method public final invoke(Ljava/util/List;Landroidx/compose/runtime/j;I)V
     .locals 9
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
             "Ljava/util/List<",
-            "Landroidx/compose/material3/m1;",
+            "Landroidx/compose/material3/I0;",
             ">;",
-            "Landroidx/compose/runtime/l;",
+            "Landroidx/compose/runtime/j;",
             "I)V"
         }
     .end annotation
 
+    .line 2
     iget p3, p0, Landroidx/compose/material3/TabRowKt$TabRow$1;->$selectedTabIndex:I
 
-    .line 2
     invoke-interface {p1}, Ljava/util/List;->size()I
 
     move-result v0
@@ -88,29 +88,29 @@
     if-ge p3, v0, :cond_0
 
     .line 3
-    sget-object v1, Landroidx/compose/material3/n1;->a:Landroidx/compose/material3/n1;
-
-    iget p3, p0, Landroidx/compose/material3/TabRowKt$TabRow$1;->$selectedTabIndex:I
+    sget-object v1, Landroidx/compose/material3/J0;->a:Landroidx/compose/material3/J0;
 
     .line 4
+    iget p3, p0, Landroidx/compose/material3/TabRowKt$TabRow$1;->$selectedTabIndex:I
+
     invoke-interface {p1, p3}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
     move-result-object p1
 
-    check-cast p1, Landroidx/compose/material3/m1;
+    check-cast p1, Landroidx/compose/material3/I0;
 
     .line 5
-    sget p3, Landroidx/compose/ui/platform/u1;->a:I
+    sget p3, Landroidx/compose/ui/platform/k0;->a:I
 
     .line 6
     new-instance p3, Landroidx/compose/material3/TabRowDefaults$tabIndicatorOffset$2;
 
-    invoke-direct {p3, p1}, Landroidx/compose/material3/TabRowDefaults$tabIndicatorOffset$2;-><init>(Landroidx/compose/material3/m1;)V
+    invoke-direct {p3, p1}, Landroidx/compose/material3/TabRowDefaults$tabIndicatorOffset$2;-><init>(Landroidx/compose/material3/I0;)V
 
     .line 7
     new-instance v2, Landroidx/compose/ui/k;
 
-    invoke-direct {v2, p3}, Landroidx/compose/ui/k;-><init>(Lzh/f;)V
+    invoke-direct {v2, p3}, Landroidx/compose/ui/k;-><init>(Lka/f;)V
 
     const/4 v3, 0x0
 
@@ -123,7 +123,7 @@
     move-object v6, p2
 
     .line 8
-    invoke-virtual/range {v1 .. v8}, Landroidx/compose/material3/n1;->b(Landroidx/compose/ui/o;FJLandroidx/compose/runtime/l;II)V
+    invoke-virtual/range {v1 .. v8}, Landroidx/compose/material3/J0;->b(Landroidx/compose/ui/o;FJLandroidx/compose/runtime/j;II)V
 
     :cond_0
     return-void

@@ -1,587 +1,254 @@
-.class public Lcom/applovin/impl/f0;
-.super Landroid/webkit/WebChromeClient;
+.class public final synthetic Lcom/applovin/impl/F0;
+.super Ljava/lang/Object;
 .source "SourceFile"
+
+# interfaces
+.implements Ljava/lang/Runnable;
 
 
 # instance fields
-.field private final a:Lcom/applovin/impl/sdk/j;
+.field public final synthetic b:I
 
-.field private final b:Lcom/applovin/impl/sdk/n;
+.field public final synthetic c:Z
 
-.field private final c:Lcom/applovin/impl/adview/a;
+.field public final synthetic d:Ljava/lang/Object;
+
+.field public final synthetic f:Ljava/lang/Object;
+
+.field public final synthetic g:Ljava/lang/Object;
 
 
 # direct methods
-.method public constructor <init>(Lcom/applovin/impl/adview/a;Lcom/applovin/impl/sdk/j;)V
+.method public synthetic constructor <init>(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;ZI)V
     .locals 0
 
     .line 1
-    invoke-direct {p0}, Landroid/webkit/WebChromeClient;-><init>()V
+    iput p5, p0, Lcom/applovin/impl/F0;->b:I
 
-    .line 2
-    .line 3
-    .line 4
-    iput-object p2, p0, Lcom/applovin/impl/f0;->a:Lcom/applovin/impl/sdk/j;
+    iput-object p1, p0, Lcom/applovin/impl/F0;->f:Ljava/lang/Object;
 
-    .line 5
-    .line 6
-    invoke-virtual {p2}, Lcom/applovin/impl/sdk/j;->I()Lcom/applovin/impl/sdk/n;
+    iput-object p2, p0, Lcom/applovin/impl/F0;->d:Ljava/lang/Object;
 
-    .line 7
-    .line 8
-    .line 9
-    move-result-object p2
+    iput-object p3, p0, Lcom/applovin/impl/F0;->g:Ljava/lang/Object;
 
-    .line 10
-    iput-object p2, p0, Lcom/applovin/impl/f0;->b:Lcom/applovin/impl/sdk/n;
+    iput-boolean p4, p0, Lcom/applovin/impl/F0;->c:Z
 
-    .line 11
-    .line 12
-    iput-object p1, p0, Lcom/applovin/impl/f0;->c:Lcom/applovin/impl/adview/a;
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 13
-    .line 14
     return-void
 .end method
 
-.method private a(Landroid/webkit/ConsoleMessage;)V
-    .locals 4
-
-    .line 1
-    new-instance v0, Landroid/content/Intent;
+.method public synthetic constructor <init>(ZLcom/applovin/mediation/nativeAds/MaxNativeAdListener;Lcom/applovin/mediation/nativeAds/MaxNativeAdView;Lcom/applovin/mediation/MaxAd;)V
+    .locals 1
 
     .line 2
+    const/4 v0, 0x1
+
+    iput v0, p0, Lcom/applovin/impl/F0;->b:I
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    iput-boolean p1, p0, Lcom/applovin/impl/F0;->c:Z
+
+    iput-object p2, p0, Lcom/applovin/impl/F0;->f:Ljava/lang/Object;
+
+    iput-object p3, p0, Lcom/applovin/impl/F0;->g:Ljava/lang/Object;
+
+    iput-object p4, p0, Lcom/applovin/impl/F0;->d:Ljava/lang/Object;
+
+    return-void
+.end method
+
+.method public synthetic constructor <init>(ZLjava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;I)V
+    .locals 0
+
     .line 3
-    const-string v1, "com.applovin.al_onPoststitialShow_evaluation_error"
+    iput p5, p0, Lcom/applovin/impl/F0;->b:I
 
-    .line 4
-    .line 5
-    invoke-direct {v0, v1}, Landroid/content/Intent;-><init>(Ljava/lang/String;)V
+    iput-boolean p1, p0, Lcom/applovin/impl/F0;->c:Z
 
-    .line 6
-    .line 7
-    .line 8
-    const/4 v1, 0x0
+    iput-object p2, p0, Lcom/applovin/impl/F0;->f:Ljava/lang/Object;
 
-    .line 9
-    invoke-static {v0, v1}, Lcom/applovin/impl/sdk/AppLovinBroadcastManager;->sendBroadcast(Landroid/content/Intent;Ljava/util/Map;)Z
+    iput-object p3, p0, Lcom/applovin/impl/F0;->d:Ljava/lang/Object;
 
-    .line 10
-    .line 11
-    .line 12
-    iget-object v0, p0, Lcom/applovin/impl/f0;->c:Lcom/applovin/impl/adview/a;
+    iput-object p4, p0, Lcom/applovin/impl/F0;->g:Ljava/lang/Object;
 
-    .line 13
-    .line 14
-    invoke-virtual {v0}, Lcom/applovin/impl/adview/a;->i()Lcom/applovin/impl/sdk/ad/b;
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 15
-    .line 16
-    .line 17
-    move-result-object v0
-
-    .line 18
-    if-eqz v0, :cond_0
-
-    .line 19
-    .line 20
-    new-instance v1, Ljava/lang/StringBuilder;
-
-    .line 21
-    .line 22
-    invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
-
-    .line 23
-    .line 24
-    .line 25
-    invoke-virtual {p1}, Landroid/webkit/ConsoleMessage;->messageLevel()Landroid/webkit/ConsoleMessage$MessageLevel;
-
-    .line 26
-    .line 27
-    .line 28
-    move-result-object v2
-
-    .line 29
-    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
-
-    .line 30
-    .line 31
-    .line 32
-    const-string v2, ": "
-
-    .line 33
-    .line 34
-    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    .line 35
-    .line 36
-    .line 37
-    invoke-virtual {p1}, Landroid/webkit/ConsoleMessage;->sourceId()Ljava/lang/String;
-
-    .line 38
-    .line 39
-    .line 40
-    move-result-object v3
-
-    .line 41
-    invoke-virtual {v1, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    .line 42
-    .line 43
-    .line 44
-    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    .line 45
-    .line 46
-    .line 47
-    invoke-virtual {p1}, Landroid/webkit/ConsoleMessage;->lineNumber()I
-
-    .line 48
-    .line 49
-    .line 50
-    move-result v2
-
-    .line 51
-    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
-
-    .line 52
-    .line 53
-    .line 54
-    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    .line 55
-    .line 56
-    .line 57
-    move-result-object v1
-
-    .line 58
-    invoke-static {v0}, Lcom/applovin/impl/la;->a(Lcom/applovin/impl/sdk/ad/b;)Ljava/util/Map;
-
-    .line 59
-    .line 60
-    .line 61
-    move-result-object v0
-
-    .line 62
-    const-string v2, "source"
-
-    .line 63
-    .line 64
-    const-string v3, "AdWebView:onPoststitialShowEvaluationError"
-
-    .line 65
-    .line 66
-    invoke-interface {v0, v2, v3}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
-
-    .line 67
-    .line 68
-    .line 69
-    const-string v2, "top_main_method"
-
-    .line 70
-    .line 71
-    invoke-interface {v0, v2, v1}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
-
-    .line 72
-    .line 73
-    .line 74
-    invoke-virtual {p1}, Landroid/webkit/ConsoleMessage;->message()Ljava/lang/String;
-
-    .line 75
-    .line 76
-    .line 77
-    move-result-object p1
-
-    .line 78
-    const-string v1, "error_message"
-
-    .line 79
-    .line 80
-    invoke-interface {v0, v1, p1}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
-
-    .line 81
-    .line 82
-    .line 83
-    iget-object p1, p0, Lcom/applovin/impl/f0;->a:Lcom/applovin/impl/sdk/j;
-
-    .line 84
-    .line 85
-    invoke-virtual {p1}, Lcom/applovin/impl/sdk/j;->D()Lcom/applovin/impl/la;
-
-    .line 86
-    .line 87
-    .line 88
-    move-result-object p1
-
-    .line 89
-    sget-object v1, Lcom/applovin/impl/ka;->b0:Lcom/applovin/impl/ka;
-
-    .line 90
-    .line 91
-    invoke-virtual {p1, v1, v0}, Lcom/applovin/impl/la;->a(Lcom/applovin/impl/ka;Ljava/util/Map;)V
-
-    .line 92
-    .line 93
-    .line 94
-    :cond_0
     return-void
 .end method
 
 
 # virtual methods
-.method public onConsoleMessage(Ljava/lang/String;ILjava/lang/String;)V
-    .locals 2
+.method public final run()V
+    .locals 4
 
-    .line 8
-    invoke-static {}, Lcom/applovin/impl/sdk/n;->a()Z
+    .line 1
+    iget v0, p0, Lcom/applovin/impl/F0;->b:I
 
-    move-result p3
+    packed-switch v0, :pswitch_data_0
 
-    if-eqz p3, :cond_0
+    iget-object v0, p0, Lcom/applovin/impl/F0;->g:Ljava/lang/Object;
 
-    iget-object p3, p0, Lcom/applovin/impl/f0;->b:Lcom/applovin/impl/sdk/n;
+    check-cast v0, Lcom/google/firebase/crashlytics/internal/metadata/EventMetadata;
 
-    new-instance v0, Ljava/lang/StringBuilder;
+    iget-boolean v1, p0, Lcom/applovin/impl/F0;->c:Z
 
-    const-string v1, "console.log["
+    iget-object v2, p0, Lcom/applovin/impl/F0;->f:Ljava/lang/Object;
 
-    invoke-direct {v0, v1}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+    check-cast v2, Lcom/google/firebase/crashlytics/internal/common/SessionReportingCoordinator;
 
-    invoke-virtual {v0, p2}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+    iget-object v3, p0, Lcom/applovin/impl/F0;->d:Ljava/lang/Object;
 
-    const-string p2, "] :"
+    check-cast v3, Lcom/google/firebase/crashlytics/internal/model/CrashlyticsReport$Session$Event;
 
-    invoke-virtual {v0, p2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-static {v2, v3, v0, v1}, Lcom/google/firebase/crashlytics/internal/common/SessionReportingCoordinator;->a(Lcom/google/firebase/crashlytics/internal/common/SessionReportingCoordinator;Lcom/google/firebase/crashlytics/internal/model/CrashlyticsReport$Session$Event;Lcom/google/firebase/crashlytics/internal/metadata/EventMetadata;Z)V
 
-    invoke-virtual {v0, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object p1
-
-    const-string p2, "AdWebView"
-
-    invoke-virtual {p3, p2, p1}, Lcom/applovin/impl/sdk/n;->k(Ljava/lang/String;Ljava/lang/String;)V
-
-    :cond_0
     return-void
-.end method
 
-.method public onConsoleMessage(Landroid/webkit/ConsoleMessage;)Z
-    .locals 3
+    :pswitch_0
+    iget-object v0, p0, Lcom/applovin/impl/F0;->d:Ljava/lang/Object;
 
-    .line 1
-    new-instance v0, Ljava/lang/StringBuilder;
+    check-cast v0, Lcom/applovin/impl/u7;
 
-    invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
+    iget-object v1, p0, Lcom/applovin/impl/F0;->f:Ljava/lang/Object;
 
-    invoke-virtual {p1}, Landroid/webkit/ConsoleMessage;->messageLevel()Landroid/webkit/ConsoleMessage$MessageLevel;
+    check-cast v1, Lcom/applovin/impl/sdk/EventServiceImpl;
 
-    move-result-object v1
+    iget-object v2, p0, Lcom/applovin/impl/F0;->g:Ljava/lang/Object;
 
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+    check-cast v2, Ljava/util/Map;
 
-    const-string v1, ": "
+    iget-boolean v3, p0, Lcom/applovin/impl/F0;->c:Z
 
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-static {v1, v0, v2, v3}, Lcom/applovin/impl/sdk/EventServiceImpl;->a(Lcom/applovin/impl/sdk/EventServiceImpl;Lcom/applovin/impl/u7;Ljava/util/Map;Z)V
 
-    .line 2
-    invoke-virtual {p1}, Landroid/webkit/ConsoleMessage;->sourceId()Ljava/lang/String;
-
-    move-result-object v2
-
-    invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    .line 3
-    invoke-virtual {p1}, Landroid/webkit/ConsoleMessage;->lineNumber()I
-
-    move-result v2
-
-    invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    .line 4
-    invoke-virtual {p1}, Landroid/webkit/ConsoleMessage;->message()Ljava/lang/String;
-
-    move-result-object v1
-
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object v0
-
-    .line 5
-    invoke-static {}, Lcom/applovin/impl/sdk/n;->a()Z
-
-    move-result v1
-
-    if-eqz v1, :cond_0
-
-    iget-object v1, p0, Lcom/applovin/impl/f0;->b:Lcom/applovin/impl/sdk/n;
-
-    const-string v2, "AdWebView"
-
-    invoke-virtual {v1, v2, v0}, Lcom/applovin/impl/sdk/n;->a(Ljava/lang/String;Ljava/lang/String;)V
-
-    .line 6
-    :cond_0
-    invoke-virtual {p1}, Landroid/webkit/ConsoleMessage;->messageLevel()Landroid/webkit/ConsoleMessage$MessageLevel;
-
-    move-result-object v0
-
-    sget-object v1, Landroid/webkit/ConsoleMessage$MessageLevel;->ERROR:Landroid/webkit/ConsoleMessage$MessageLevel;
-
-    if-ne v0, v1, :cond_2
-
-    invoke-virtual {p1}, Landroid/webkit/ConsoleMessage;->message()Ljava/lang/String;
-
-    move-result-object v0
-
-    const-string v1, "al_onPoststitialShow"
-
-    invoke-virtual {v0, v1}, Ljava/lang/String;->contains(Ljava/lang/CharSequence;)Z
-
-    move-result v0
-
-    if-nez v0, :cond_1
-
-    invoke-virtual {p1}, Landroid/webkit/ConsoleMessage;->message()Ljava/lang/String;
-
-    move-result-object v0
-
-    const-string v1, "al_showPostitial"
-
-    invoke-virtual {v0, v1}, Ljava/lang/String;->contains(Ljava/lang/CharSequence;)Z
-
-    move-result v0
-
-    if-eqz v0, :cond_2
-
-    .line 7
-    :cond_1
-    invoke-direct {p0, p1}, Lcom/applovin/impl/f0;->a(Landroid/webkit/ConsoleMessage;)V
-
-    :cond_2
-    const/4 p1, 0x1
-
-    return p1
-.end method
-
-.method public onJsAlert(Landroid/webkit/WebView;Ljava/lang/String;Ljava/lang/String;Landroid/webkit/JsResult;)Z
-    .locals 0
-
-    .line 1
-    invoke-static {}, Lcom/applovin/impl/sdk/n;->a()Z
-
-    .line 2
-    .line 3
-    .line 4
-    move-result p1
-
-    .line 5
-    if-eqz p1, :cond_0
-
-    .line 6
-    .line 7
-    iget-object p1, p0, Lcom/applovin/impl/f0;->b:Lcom/applovin/impl/sdk/n;
-
-    .line 8
-    .line 9
-    new-instance p2, Ljava/lang/StringBuilder;
-
-    .line 10
-    .line 11
-    const-string p4, "Alert attempted: "
-
-    .line 12
-    .line 13
-    invoke-direct {p2, p4}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
-
-    .line 14
-    .line 15
-    .line 16
-    invoke-virtual {p2, p3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    .line 17
-    .line 18
-    .line 19
-    invoke-virtual {p2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    .line 20
-    .line 21
-    .line 22
-    move-result-object p2
-
-    .line 23
-    const-string p3, "AdWebView"
-
-    .line 24
-    .line 25
-    invoke-virtual {p1, p3, p2}, Lcom/applovin/impl/sdk/n;->k(Ljava/lang/String;Ljava/lang/String;)V
-
-    .line 26
-    .line 27
-    .line 28
-    :cond_0
-    const/4 p1, 0x1
-
-    .line 29
-    return p1
-.end method
-
-.method public onJsBeforeUnload(Landroid/webkit/WebView;Ljava/lang/String;Ljava/lang/String;Landroid/webkit/JsResult;)Z
-    .locals 0
-
-    .line 1
-    invoke-static {}, Lcom/applovin/impl/sdk/n;->a()Z
-
-    .line 2
-    .line 3
-    .line 4
-    move-result p1
-
-    .line 5
-    if-eqz p1, :cond_0
-
-    .line 6
-    .line 7
-    iget-object p1, p0, Lcom/applovin/impl/f0;->b:Lcom/applovin/impl/sdk/n;
-
-    .line 8
-    .line 9
-    new-instance p2, Ljava/lang/StringBuilder;
-
-    .line 10
-    .line 11
-    const-string p4, "JS onBeforeUnload attempted: "
-
-    .line 12
-    .line 13
-    invoke-direct {p2, p4}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
-
-    .line 14
-    .line 15
-    .line 16
-    invoke-virtual {p2, p3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    .line 17
-    .line 18
-    .line 19
-    invoke-virtual {p2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    .line 20
-    .line 21
-    .line 22
-    move-result-object p2
-
-    .line 23
-    const-string p3, "AdWebView"
-
-    .line 24
-    .line 25
-    invoke-virtual {p1, p3, p2}, Lcom/applovin/impl/sdk/n;->k(Ljava/lang/String;Ljava/lang/String;)V
-
-    .line 26
-    .line 27
-    .line 28
-    :cond_0
-    const/4 p1, 0x1
-
-    .line 29
-    return p1
-.end method
-
-.method public onJsConfirm(Landroid/webkit/WebView;Ljava/lang/String;Ljava/lang/String;Landroid/webkit/JsResult;)Z
-    .locals 0
-
-    .line 1
-    invoke-static {}, Lcom/applovin/impl/sdk/n;->a()Z
-
-    .line 2
-    .line 3
-    .line 4
-    move-result p1
-
-    .line 5
-    if-eqz p1, :cond_0
-
-    .line 6
-    .line 7
-    iget-object p1, p0, Lcom/applovin/impl/f0;->b:Lcom/applovin/impl/sdk/n;
-
-    .line 8
-    .line 9
-    new-instance p2, Ljava/lang/StringBuilder;
-
-    .line 10
-    .line 11
-    const-string p4, "JS confirm attempted: "
-
-    .line 12
-    .line 13
-    invoke-direct {p2, p4}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
-
-    .line 14
-    .line 15
-    .line 16
-    invoke-virtual {p2, p3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    .line 17
-    .line 18
-    .line 19
-    invoke-virtual {p2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    .line 20
-    .line 21
-    .line 22
-    move-result-object p2
-
-    .line 23
-    const-string p3, "AdWebView"
-
-    .line 24
-    .line 25
-    invoke-virtual {p1, p3, p2}, Lcom/applovin/impl/sdk/n;->k(Ljava/lang/String;Ljava/lang/String;)V
-
-    .line 26
-    .line 27
-    .line 28
-    :cond_0
-    const/4 p1, 0x1
-
-    .line 29
-    return p1
-.end method
-
-.method public onProgressChanged(Landroid/webkit/WebView;I)V
-    .locals 1
-
-    .line 1
-    const/16 v0, 0x64
-
-    .line 2
-    .line 3
-    if-ne p2, v0, :cond_0
-
-    .line 4
-    .line 5
-    iget-object p2, p0, Lcom/applovin/impl/f0;->c:Lcom/applovin/impl/adview/a;
-
-    .line 6
-    .line 7
-    if-eqz p2, :cond_0
-
-    .line 8
-    .line 9
-    invoke-virtual {p2, p1}, Lcom/applovin/impl/adview/a;->c(Landroid/webkit/WebView;)V
-
-    .line 10
-    .line 11
-    .line 12
-    :cond_0
     return-void
+
+    :pswitch_1
+    iget-object v0, p0, Lcom/applovin/impl/F0;->d:Ljava/lang/Object;
+
+    check-cast v0, Ljava/lang/String;
+
+    iget-object v1, p0, Lcom/applovin/impl/F0;->g:Ljava/lang/Object;
+
+    check-cast v1, Lcom/applovin/mediation/MaxError;
+
+    iget-boolean v2, p0, Lcom/applovin/impl/F0;->c:Z
+
+    iget-object v3, p0, Lcom/applovin/impl/F0;->f:Ljava/lang/Object;
+
+    check-cast v3, Lcom/applovin/mediation/MaxAdListener;
+
+    invoke-static {v2, v3, v0, v1}, Lcom/applovin/impl/fc;->o(ZLcom/applovin/mediation/MaxAdListener;Ljava/lang/String;Lcom/applovin/mediation/MaxError;)V
+
+    return-void
+
+    :pswitch_2
+    iget-object v0, p0, Lcom/applovin/impl/F0;->d:Ljava/lang/Object;
+
+    check-cast v0, Lcom/applovin/mediation/MaxAd;
+
+    iget-object v1, p0, Lcom/applovin/impl/F0;->g:Ljava/lang/Object;
+
+    check-cast v1, Lcom/applovin/mediation/MaxAd;
+
+    iget-boolean v2, p0, Lcom/applovin/impl/F0;->c:Z
+
+    iget-object v3, p0, Lcom/applovin/impl/F0;->f:Ljava/lang/Object;
+
+    check-cast v3, Lcom/applovin/mediation/MaxAdExpirationListener;
+
+    invoke-static {v2, v3, v0, v1}, Lcom/applovin/impl/fc;->b(ZLcom/applovin/mediation/MaxAdExpirationListener;Lcom/applovin/mediation/MaxAd;Lcom/applovin/mediation/MaxAd;)V
+
+    return-void
+
+    :pswitch_3
+    iget-object v0, p0, Lcom/applovin/impl/F0;->d:Ljava/lang/Object;
+
+    check-cast v0, Lcom/applovin/mediation/MaxAd;
+
+    iget-object v1, p0, Lcom/applovin/impl/F0;->g:Ljava/lang/Object;
+
+    check-cast v1, Lcom/applovin/mediation/MaxError;
+
+    iget-boolean v2, p0, Lcom/applovin/impl/F0;->c:Z
+
+    iget-object v3, p0, Lcom/applovin/impl/F0;->f:Ljava/lang/Object;
+
+    check-cast v3, Lcom/applovin/mediation/MaxAdListener;
+
+    invoke-static {v2, v3, v0, v1}, Lcom/applovin/impl/fc;->w(ZLcom/applovin/mediation/MaxAdListener;Lcom/applovin/mediation/MaxAd;Lcom/applovin/mediation/MaxError;)V
+
+    return-void
+
+    :pswitch_4
+    iget-object v0, p0, Lcom/applovin/impl/F0;->d:Ljava/lang/Object;
+
+    check-cast v0, Ljava/lang/String;
+
+    iget-object v1, p0, Lcom/applovin/impl/F0;->g:Ljava/lang/Object;
+
+    check-cast v1, Lcom/applovin/mediation/MaxError;
+
+    iget-boolean v2, p0, Lcom/applovin/impl/F0;->c:Z
+
+    iget-object v3, p0, Lcom/applovin/impl/F0;->f:Ljava/lang/Object;
+
+    check-cast v3, Lcom/applovin/mediation/nativeAds/MaxNativeAdListener;
+
+    invoke-static {v2, v3, v0, v1}, Lcom/applovin/impl/fc;->s(ZLcom/applovin/mediation/nativeAds/MaxNativeAdListener;Ljava/lang/String;Lcom/applovin/mediation/MaxError;)V
+
+    return-void
+
+    :pswitch_5
+    iget-object v0, p0, Lcom/applovin/impl/F0;->g:Ljava/lang/Object;
+
+    check-cast v0, Lcom/applovin/mediation/nativeAds/MaxNativeAdView;
+
+    iget-object v1, p0, Lcom/applovin/impl/F0;->d:Ljava/lang/Object;
+
+    check-cast v1, Lcom/applovin/mediation/MaxAd;
+
+    iget-boolean v2, p0, Lcom/applovin/impl/F0;->c:Z
+
+    iget-object v3, p0, Lcom/applovin/impl/F0;->f:Ljava/lang/Object;
+
+    check-cast v3, Lcom/applovin/mediation/nativeAds/MaxNativeAdListener;
+
+    invoke-static {v2, v3, v0, v1}, Lcom/applovin/impl/fc;->y(ZLcom/applovin/mediation/nativeAds/MaxNativeAdListener;Lcom/applovin/mediation/nativeAds/MaxNativeAdView;Lcom/applovin/mediation/MaxAd;)V
+
+    return-void
+
+    :pswitch_6
+    iget-object v0, p0, Lcom/applovin/impl/F0;->d:Ljava/lang/Object;
+
+    check-cast v0, Lcom/applovin/mediation/MaxAd;
+
+    iget-object v1, p0, Lcom/applovin/impl/F0;->g:Ljava/lang/Object;
+
+    check-cast v1, Lcom/applovin/mediation/MaxReward;
+
+    iget-boolean v2, p0, Lcom/applovin/impl/F0;->c:Z
+
+    iget-object v3, p0, Lcom/applovin/impl/F0;->f:Ljava/lang/Object;
+
+    check-cast v3, Lcom/applovin/mediation/MaxAdListener;
+
+    invoke-static {v2, v3, v0, v1}, Lcom/applovin/impl/fc;->B(ZLcom/applovin/mediation/MaxAdListener;Lcom/applovin/mediation/MaxAd;Lcom/applovin/mediation/MaxReward;)V
+
+    return-void
+
+    nop
+
+    :pswitch_data_0
+    .packed-switch 0x0
+        :pswitch_6
+        :pswitch_5
+        :pswitch_4
+        :pswitch_3
+        :pswitch_2
+        :pswitch_1
+        :pswitch_0
+    .end packed-switch
 .end method

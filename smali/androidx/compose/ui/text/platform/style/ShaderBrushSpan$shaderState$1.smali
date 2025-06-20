@@ -3,14 +3,14 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lzh/a;
+.implements Lka/a;
 
 
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "Lkotlin/jvm/internal/Lambda;",
-        "Lzh/a;"
+        "Lka/a;"
     }
 .end annotation
 
@@ -56,20 +56,21 @@
 .method public final invoke()Landroid/graphics/Shader;
     .locals 5
 
+    .line 2
     iget-object v0, p0, Landroidx/compose/ui/text/platform/style/ShaderBrushSpan$shaderState$1;->this$0:Landroidx/compose/ui/text/platform/style/b;
 
-    .line 1
+    .line 3
     iget-object v0, v0, Landroidx/compose/ui/text/platform/style/b;->d:Landroidx/compose/runtime/ParcelableSnapshotMutableState;
 
-    .line 2
-    invoke-virtual {v0}, Landroidx/compose/runtime/t2;->getValue()Ljava/lang/Object;
+    .line 4
+    invoke-virtual {v0}, Landroidx/compose/runtime/ParcelableSnapshotMutableState;->getValue()Ljava/lang/Object;
 
     move-result-object v0
 
-    check-cast v0, Ln1/g;
+    check-cast v0, Lr0/f;
 
-    .line 3
-    iget-wide v0, v0, Ln1/g;->a:J
+    .line 5
+    iget-wide v0, v0, Lr0/f;->a:J
 
     const-wide v2, 0x7fc000007fc00000L    # 2.247117487993712E307
 
@@ -79,24 +80,25 @@
 
     goto :goto_0
 
+    .line 6
     :cond_0
     iget-object v0, p0, Landroidx/compose/ui/text/platform/style/ShaderBrushSpan$shaderState$1;->this$0:Landroidx/compose/ui/text/platform/style/b;
 
-    .line 4
+    .line 7
     iget-object v0, v0, Landroidx/compose/ui/text/platform/style/b;->d:Landroidx/compose/runtime/ParcelableSnapshotMutableState;
 
-    .line 5
-    invoke-virtual {v0}, Landroidx/compose/runtime/t2;->getValue()Ljava/lang/Object;
+    .line 8
+    invoke-virtual {v0}, Landroidx/compose/runtime/ParcelableSnapshotMutableState;->getValue()Ljava/lang/Object;
 
     move-result-object v0
 
-    check-cast v0, Ln1/g;
+    check-cast v0, Lr0/f;
 
-    .line 6
-    iget-wide v0, v0, Ln1/g;->a:J
+    .line 9
+    iget-wide v0, v0, Lr0/f;->a:J
 
-    .line 7
-    invoke-static {v0, v1}, Ln1/g;->e(J)Z
+    .line 10
+    invoke-static {v0, v1}, Lr0/f;->e(J)Z
 
     move-result v0
 
@@ -107,27 +109,28 @@
 
     goto :goto_1
 
+    .line 11
     :cond_1
     iget-object v0, p0, Landroidx/compose/ui/text/platform/style/ShaderBrushSpan$shaderState$1;->this$0:Landroidx/compose/ui/text/platform/style/b;
 
-    .line 8
-    iget-object v1, v0, Landroidx/compose/ui/text/platform/style/b;->b:Landroidx/compose/ui/graphics/x0;
+    .line 12
+    iget-object v1, v0, Landroidx/compose/ui/text/platform/style/b;->b:Landroidx/compose/ui/graphics/X;
 
-    .line 9
+    .line 13
     iget-object v0, v0, Landroidx/compose/ui/text/platform/style/b;->d:Landroidx/compose/runtime/ParcelableSnapshotMutableState;
 
-    .line 10
-    invoke-virtual {v0}, Landroidx/compose/runtime/t2;->getValue()Ljava/lang/Object;
+    .line 14
+    invoke-virtual {v0}, Landroidx/compose/runtime/ParcelableSnapshotMutableState;->getValue()Ljava/lang/Object;
 
     move-result-object v0
 
-    check-cast v0, Ln1/g;
+    check-cast v0, Lr0/f;
 
-    .line 11
-    iget-wide v2, v0, Ln1/g;->a:J
+    .line 15
+    iget-wide v2, v0, Lr0/f;->a:J
 
-    .line 12
-    invoke-virtual {v1, v2, v3}, Landroidx/compose/ui/graphics/x0;->b(J)Landroid/graphics/Shader;
+    .line 16
+    invoke-virtual {v1, v2, v3}, Landroidx/compose/ui/graphics/X;->b(J)Landroid/graphics/Shader;
 
     move-result-object v0
 
@@ -138,7 +141,7 @@
 .method public bridge synthetic invoke()Ljava/lang/Object;
     .locals 1
 
-    .line 13
+    .line 1
     invoke-virtual {p0}, Landroidx/compose/ui/text/platform/style/ShaderBrushSpan$shaderState$1;->invoke()Landroid/graphics/Shader;
 
     move-result-object v0

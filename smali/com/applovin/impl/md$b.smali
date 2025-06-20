@@ -167,7 +167,7 @@
 
     .line 4
     .line 5
-    invoke-static {v0, v1, v1}, Landroidx/compose/foundation/text/modifiers/f;->k(Ljava/lang/String;II)I
+    invoke-static {v1, v1, v0}, Landroidx/appcompat/view/menu/F;->y(IILjava/lang/String;)I
 
     .line 6
     .line 7

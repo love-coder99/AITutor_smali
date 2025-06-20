@@ -1,98 +1,95 @@
-.class abstract Lcom/applovin/impl/p3;
+.class public final synthetic Lcom/applovin/impl/P3;
 .super Ljava/lang/Object;
 .source "SourceFile"
 
+# interfaces
+.implements Ljava/lang/Runnable;
+
+
+# instance fields
+.field public final synthetic b:I
+
+.field public final synthetic c:Lcom/applovin/impl/wq$a;
+
+.field public final synthetic d:J
+
+.field public final synthetic f:I
+
 
 # direct methods
-.method public static a(ILjava/lang/String;)I
-    .locals 2
-
-    if-ltz p0, :cond_0
-
-    return p0
-
-    .line 9
-    :cond_0
-    new-instance v0, Ljava/lang/IllegalArgumentException;
-
-    new-instance v1, Ljava/lang/StringBuilder;
-
-    invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
-
-    invoke-virtual {v1, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    const-string p1, " cannot be negative but was: "
-
-    invoke-virtual {v1, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v1, p0}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object p0
-
-    invoke-direct {v0, p0}, Ljava/lang/IllegalArgumentException;-><init>(Ljava/lang/String;)V
-
-    throw v0
-.end method
-
-.method public static a(Ljava/lang/Object;Ljava/lang/Object;)V
-    .locals 2
-
-    if-eqz p0, :cond_1
-
-    if-eqz p1, :cond_0
-
-    return-void
-
-    .line 1
-    :cond_0
-    new-instance p1, Ljava/lang/NullPointerException;
-
-    new-instance v0, Ljava/lang/StringBuilder;
-
-    const-string v1, "null value in entry: "
-
-    invoke-direct {v0, v1}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
-
-    invoke-virtual {v0, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
-
-    const-string p0, "=null"
-
-    invoke-virtual {v0, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object p0
-
-    invoke-direct {p1, p0}, Ljava/lang/NullPointerException;-><init>(Ljava/lang/String;)V
-
-    throw p1
-
-    .line 2
-    :cond_1
-    new-instance p0, Ljava/lang/NullPointerException;
-
-    const-string v0, "null key in entry: null="
-
-    .line 3
-    invoke-static {v0, p1}, Lj0/d;->i(Ljava/lang/String;Ljava/lang/Object;)Ljava/lang/String;
-
-    move-result-object p1
-
-    .line 4
-    invoke-direct {p0, p1}, Ljava/lang/NullPointerException;-><init>(Ljava/lang/String;)V
-
-    throw p0
-.end method
-
-.method public static a(Z)V
+.method public synthetic constructor <init>(Lcom/applovin/impl/wq$a;IJ)V
     .locals 1
 
-    const-string v0, "no calls to next() since the last call to remove()"
+    .line 1
+    const/4 v0, 0x0
 
-    .line 10
-    invoke-static {p0, v0}, Lcom/applovin/exoplayer2/common/base/Preconditions;->checkState(ZLjava/lang/Object;)V
+    iput v0, p0, Lcom/applovin/impl/P3;->b:I
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    iput-object p1, p0, Lcom/applovin/impl/P3;->c:Lcom/applovin/impl/wq$a;
+
+    iput p2, p0, Lcom/applovin/impl/P3;->f:I
+
+    iput-wide p3, p0, Lcom/applovin/impl/P3;->d:J
 
     return-void
+.end method
+
+.method public synthetic constructor <init>(Lcom/applovin/impl/wq$a;JI)V
+    .locals 1
+
+    .line 2
+    const/4 v0, 0x1
+
+    iput v0, p0, Lcom/applovin/impl/P3;->b:I
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    iput-object p1, p0, Lcom/applovin/impl/P3;->c:Lcom/applovin/impl/wq$a;
+
+    iput-wide p2, p0, Lcom/applovin/impl/P3;->d:J
+
+    iput p4, p0, Lcom/applovin/impl/P3;->f:I
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public final run()V
+    .locals 4
+
+    .line 1
+    iget v0, p0, Lcom/applovin/impl/P3;->b:I
+
+    packed-switch v0, :pswitch_data_0
+
+    iget-wide v0, p0, Lcom/applovin/impl/P3;->d:J
+
+    iget v2, p0, Lcom/applovin/impl/P3;->f:I
+
+    iget-object v3, p0, Lcom/applovin/impl/P3;->c:Lcom/applovin/impl/wq$a;
+
+    invoke-static {v3, v2, v0, v1}, Lcom/applovin/impl/wq$a;->c(Lcom/applovin/impl/wq$a;IJ)V
+
+    return-void
+
+    :pswitch_0
+    iget v0, p0, Lcom/applovin/impl/P3;->f:I
+
+    iget-wide v1, p0, Lcom/applovin/impl/P3;->d:J
+
+    iget-object v3, p0, Lcom/applovin/impl/P3;->c:Lcom/applovin/impl/wq$a;
+
+    invoke-static {v3, v0, v1, v2}, Lcom/applovin/impl/wq$a;->d(Lcom/applovin/impl/wq$a;IJ)V
+
+    return-void
+
+    nop
+
+    :pswitch_data_0
+    .packed-switch 0x0
+        :pswitch_0
+    .end packed-switch
 .end method

@@ -159,8 +159,11 @@
 .method public getMatrix()Landroid/graphics/Matrix;
     .locals 1
 
+    .line 1
     iget-object v0, p0, Landroidx/transition/ChangeTransform$PathAnimatorMatrix;->mMatrix:Landroid/graphics/Matrix;
 
+    .line 2
+    .line 3
     return-object v0
 .end method
 

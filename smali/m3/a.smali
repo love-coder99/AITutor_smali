@@ -1,8 +1,15 @@
-.class public interface abstract Lm3/a;
+.class public abstract Lm3/a;
 .super Ljava/lang/Object;
 .source "SourceFile"
 
+# interfaces
+.implements Lm3/d;
+
 
 # virtual methods
-.method public abstract accept(Ljava/lang/Object;)V
+.method public final onDestroy()V
+    .locals 0
+
+    .line 1
+    return-void
 .end method

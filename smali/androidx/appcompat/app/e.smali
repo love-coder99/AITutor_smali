@@ -1,62 +1,37 @@
-.class public final Landroidx/appcompat/app/e;
+.class public final Landroidx/appcompat/app/E;
 .super Ljava/lang/Object;
 .source "SourceFile"
 
-# interfaces
-.implements Landroid/widget/AbsListView$OnScrollListener;
-
 
 # instance fields
-.field public final synthetic a:Landroid/view/View;
+.field public a:I
 
-.field public final synthetic b:Landroid/view/View;
+.field public b:I
 
+.field public c:I
 
-# direct methods
-.method public constructor <init>(Landroid/view/View;Landroid/view/View;)V
-    .locals 0
+.field public d:I
 
-    .line 1
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+.field public e:Landroidx/appcompat/app/C;
 
-    .line 2
-    .line 3
-    .line 4
-    iput-object p1, p0, Landroidx/appcompat/app/e;->a:Landroid/view/View;
+.field public f:Landroid/view/View;
 
-    .line 5
-    .line 6
-    iput-object p2, p0, Landroidx/appcompat/app/e;->b:Landroid/view/View;
+.field public g:Landroid/view/View;
 
-    .line 7
-    .line 8
-    return-void
-.end method
+.field public h:Landroidx/appcompat/view/menu/n;
 
+.field public i:Landroidx/appcompat/view/menu/j;
 
-# virtual methods
-.method public final onScroll(Landroid/widget/AbsListView;III)V
-    .locals 0
+.field public j:Ln/c;
 
-    .line 1
-    iget-object p2, p0, Landroidx/appcompat/app/e;->a:Landroid/view/View;
+.field public k:Z
 
-    .line 2
-    .line 3
-    iget-object p3, p0, Landroidx/appcompat/app/e;->b:Landroid/view/View;
+.field public l:Z
 
-    .line 4
-    .line 5
-    invoke-static {p1, p2, p3}, Landroidx/appcompat/app/j;->a(Landroid/view/View;Landroid/view/View;Landroid/view/View;)V
+.field public m:Z
 
-    .line 6
-    .line 7
-    .line 8
-    return-void
-.end method
+.field public n:Z
 
-.method public final onScrollStateChanged(Landroid/widget/AbsListView;I)V
-    .locals 0
+.field public o:Z
 
-    return-void
-.end method
+.field public p:Landroid/os/Bundle;

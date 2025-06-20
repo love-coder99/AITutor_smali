@@ -25,7 +25,7 @@
     .line 4
     .line 5
     .line 6
-    new-instance v1, Lcom/applovin/impl/is;
+    new-instance v1, Lcom/applovin/impl/A;
 
     .line 7
     .line 8
@@ -33,7 +33,7 @@
 
     .line 9
     .line 10
-    invoke-direct {v1, v0, v2}, Lcom/applovin/impl/is;-><init>(Ljava/lang/Object;I)V
+    invoke-direct {v1, v0, v2}, Lcom/applovin/impl/A;-><init>(Ljava/lang/Object;I)V
 
     .line 11
     .line 12

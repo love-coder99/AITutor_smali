@@ -149,6 +149,8 @@
 
 .method public getBillingPeriod()Ljava/lang/String;
     .locals 1
+    .annotation build Landroidx/annotation/NonNull;
+    .end annotation
 
     iget-object v0, p0, Lcom/android/billingclient/api/ProductDetails$PricingPhase;->zzd:Ljava/lang/String;
 
@@ -157,6 +159,8 @@
 
 .method public getFormattedPrice()Ljava/lang/String;
     .locals 1
+    .annotation build Landroidx/annotation/NonNull;
+    .end annotation
 
     iget-object v0, p0, Lcom/android/billingclient/api/ProductDetails$PricingPhase;->zza:Ljava/lang/String;
 
@@ -173,6 +177,8 @@
 
 .method public getPriceCurrencyCode()Ljava/lang/String;
     .locals 1
+    .annotation build Landroidx/annotation/NonNull;
+    .end annotation
 
     iget-object v0, p0, Lcom/android/billingclient/api/ProductDetails$PricingPhase;->zzc:Ljava/lang/String;
 

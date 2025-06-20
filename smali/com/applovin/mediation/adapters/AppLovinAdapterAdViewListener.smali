@@ -726,15 +726,15 @@
     .line 27
     .line 28
     .line 29
-    new-instance v0, Landroidx/fragment/app/c;
+    new-instance v0, Landroidx/camera/core/impl/Y;
 
     .line 30
     .line 31
-    const/16 v1, 0xe
+    const/16 v1, 0xc
 
     .line 32
     .line 33
-    invoke-direct {v0, p0, v1, p1}, Landroidx/fragment/app/c;-><init>(Ljava/lang/Object;ILjava/lang/Object;)V
+    invoke-direct {v0, p0, v1, p1}, Landroidx/camera/core/impl/Y;-><init>(Ljava/lang/Object;ILjava/lang/Object;)V
 
     .line 34
     .line 35

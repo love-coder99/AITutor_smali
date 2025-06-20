@@ -4,6 +4,9 @@
 
 
 # annotations
+.annotation build Lcom/android/billingclient/api/zzj;
+.end annotation
+
 .annotation system Ldalvik/annotation/EnclosingClass;
     value = Lcom/android/billingclient/api/Purchase;
 .end annotation
@@ -43,6 +46,9 @@
 # virtual methods
 .method public getProducts()Ljava/util/List;
     .locals 4
+    .annotation build Landroidx/annotation/NonNull;
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "()",
@@ -140,6 +146,8 @@
 
 .method public getPurchaseToken()Ljava/lang/String;
     .locals 2
+    .annotation build Landroidx/annotation/NonNull;
+    .end annotation
 
     .line 1
     iget-object v0, p0, Lcom/android/billingclient/api/Purchase$PendingPurchaseUpdate;->mParsedJson:Lorg/json/JSONObject;

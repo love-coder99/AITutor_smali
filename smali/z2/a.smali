@@ -1,47 +1,97 @@
-.class public abstract Lz2/a;
+.class public final LZ2/A;
 .super Ljava/lang/Object;
 .source "SourceFile"
 
+# interfaces
+.implements LZ2/s;
+.implements Lh3/a;
 
-# static fields
-.field public static alpha:I = 0x7f04005f
 
-.field public static coordinatorLayoutStyle:I = 0x7f04019c
+# instance fields
+.field public final b:Landroid/content/res/Resources;
 
-.field public static font:I = 0x7f040259
 
-.field public static fontProviderAuthority:I = 0x7f04025b
+# direct methods
+.method public synthetic constructor <init>(Landroid/content/res/Resources;)V
+    .locals 0
 
-.field public static fontProviderCerts:I = 0x7f04025c
+    .line 1
+    iput-object p1, p0, LZ2/A;->b:Landroid/content/res/Resources;
 
-.field public static fontProviderFetchStrategy:I = 0x7f04025e
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-.field public static fontProviderFetchTimeout:I = 0x7f04025f
+    return-void
+.end method
 
-.field public static fontProviderPackage:I = 0x7f040260
 
-.field public static fontProviderQuery:I = 0x7f040261
+# virtual methods
+.method public H(LZ2/y;)LZ2/r;
+    .locals 3
 
-.field public static fontStyle:I = 0x7f040263
+    .line 1
+    new-instance v0, LZ2/b;
 
-.field public static fontVariationSettings:I = 0x7f040264
+    .line 2
+    .line 3
+    const-class v1, Landroid/net/Uri;
 
-.field public static fontWeight:I = 0x7f040265
+    .line 4
+    .line 5
+    const-class v2, Ljava/io/InputStream;
 
-.field public static keylines:I = 0x7f0402d4
+    .line 6
+    .line 7
+    invoke-virtual {p1, v1, v2}, LZ2/y;->b(Ljava/lang/Class;Ljava/lang/Class;)LZ2/r;
 
-.field public static layout_anchor:I = 0x7f0402e1
+    .line 8
+    .line 9
+    .line 10
+    move-result-object p1
 
-.field public static layout_anchorGravity:I = 0x7f0402e2
+    .line 11
+    iget-object v1, p0, LZ2/A;->b:Landroid/content/res/Resources;
 
-.field public static layout_behavior:I = 0x7f0402e3
+    .line 12
+    .line 13
+    invoke-direct {v0, v1, p1}, LZ2/b;-><init>(Landroid/content/res/Resources;LZ2/r;)V
 
-.field public static layout_dodgeInsetEdges:I = 0x7f040314
+    .line 14
+    .line 15
+    .line 16
+    return-object v0
+.end method
 
-.field public static layout_insetEdge:I = 0x7f04031e
+.method public f(LV2/s;LT2/g;)LV2/s;
+    .locals 1
 
-.field public static layout_keyline:I = 0x7f04031f
+    .line 1
+    if-nez p1, :cond_0
 
-.field public static statusBarBackground:I = 0x7f0404b3
+    .line 2
+    .line 3
+    const/4 p1, 0x0
 
-.field public static ttcIndex:I = 0x7f040581
+    .line 4
+    goto :goto_0
+
+    .line 5
+    :cond_0
+    new-instance p2, Lc3/d;
+
+    .line 6
+    .line 7
+    iget-object v0, p0, LZ2/A;->b:Landroid/content/res/Resources;
+
+    .line 8
+    .line 9
+    invoke-direct {p2, v0, p1}, Lc3/d;-><init>(Landroid/content/res/Resources;LV2/s;)V
+
+    .line 10
+    .line 11
+    .line 12
+    move-object p1, p2
+
+    .line 13
+    :goto_0
+    return-object p1
+.end method

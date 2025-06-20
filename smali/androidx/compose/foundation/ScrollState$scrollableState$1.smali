@@ -3,14 +3,14 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lzh/c;
+.implements Lka/c;
 
 
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "Lkotlin/jvm/internal/Lambda;",
-        "Lzh/c;"
+        "Lka/c;"
     }
 .end annotation
 
@@ -36,14 +36,14 @@
 
 
 # instance fields
-.field final synthetic this$0:Landroidx/compose/foundation/y0;
+.field final synthetic this$0:Landroidx/compose/foundation/X;
 
 
 # direct methods
-.method public constructor <init>(Landroidx/compose/foundation/y0;)V
+.method public constructor <init>(Landroidx/compose/foundation/X;)V
     .locals 0
 
-    iput-object p1, p0, Landroidx/compose/foundation/ScrollState$scrollableState$1;->this$0:Landroidx/compose/foundation/y0;
+    iput-object p1, p0, Landroidx/compose/foundation/ScrollState$scrollableState$1;->this$0:Landroidx/compose/foundation/X;
 
     const/4 p1, 0x1
 
@@ -57,13 +57,14 @@
 .method public final invoke(F)Ljava/lang/Float;
     .locals 5
 
-    iget-object v0, p0, Landroidx/compose/foundation/ScrollState$scrollableState$1;->this$0:Landroidx/compose/foundation/y0;
-
-    .line 1
-    iget-object v0, v0, Landroidx/compose/foundation/y0;->a:Landroidx/compose/runtime/ParcelableSnapshotMutableIntState;
-
     .line 2
-    invoke-virtual {v0}, Landroidx/compose/runtime/p2;->k()I
+    iget-object v0, p0, Landroidx/compose/foundation/ScrollState$scrollableState$1;->this$0:Landroidx/compose/foundation/X;
+
+    .line 3
+    iget-object v0, v0, Landroidx/compose/foundation/X;->a:Landroidx/compose/runtime/ParcelableSnapshotMutableIntState;
+
+    .line 4
+    invoke-virtual {v0}, Landroidx/compose/runtime/ParcelableSnapshotMutableIntState;->k()I
 
     move-result v0
 
@@ -71,17 +72,18 @@
 
     add-float/2addr v0, p1
 
-    iget-object v1, p0, Landroidx/compose/foundation/ScrollState$scrollableState$1;->this$0:Landroidx/compose/foundation/y0;
+    .line 5
+    iget-object v1, p0, Landroidx/compose/foundation/ScrollState$scrollableState$1;->this$0:Landroidx/compose/foundation/X;
 
-    .line 3
-    iget v2, v1, Landroidx/compose/foundation/y0;->e:F
+    .line 6
+    iget v2, v1, Landroidx/compose/foundation/X;->e:F
 
     add-float/2addr v0, v2
 
-    .line 4
-    iget-object v1, v1, Landroidx/compose/foundation/y0;->d:Landroidx/compose/runtime/ParcelableSnapshotMutableIntState;
+    .line 7
+    iget-object v1, v1, Landroidx/compose/foundation/X;->d:Landroidx/compose/runtime/ParcelableSnapshotMutableIntState;
 
-    invoke-virtual {v1}, Landroidx/compose/runtime/p2;->k()I
+    invoke-virtual {v1}, Landroidx/compose/runtime/ParcelableSnapshotMutableIntState;->k()I
 
     move-result v1
 
@@ -89,12 +91,10 @@
 
     const/4 v2, 0x0
 
-    .line 5
-    invoke-static {v0, v2, v1}, Lma/a;->p(FFF)F
+    .line 8
+    invoke-static {v0, v2, v1}, Landroid/support/v4/media/session/a;->i(FFF)F
 
     move-result v1
-
-    const/4 v2, 0x1
 
     cmpg-float v0, v0, v1
 
@@ -107,16 +107,15 @@
     :cond_0
     const/4 v0, 0x0
 
+    .line 9
     :goto_0
-    xor-int/2addr v0, v2
+    iget-object v2, p0, Landroidx/compose/foundation/ScrollState$scrollableState$1;->this$0:Landroidx/compose/foundation/X;
 
-    iget-object v2, p0, Landroidx/compose/foundation/ScrollState$scrollableState$1;->this$0:Landroidx/compose/foundation/y0;
+    .line 10
+    iget-object v2, v2, Landroidx/compose/foundation/X;->a:Landroidx/compose/runtime/ParcelableSnapshotMutableIntState;
 
-    .line 6
-    iget-object v2, v2, Landroidx/compose/foundation/y0;->a:Landroidx/compose/runtime/ParcelableSnapshotMutableIntState;
-
-    .line 7
-    invoke-virtual {v2}, Landroidx/compose/runtime/p2;->k()I
+    .line 11
+    invoke-virtual {v2}, Landroidx/compose/runtime/ParcelableSnapshotMutableIntState;->k()I
 
     move-result v2
 
@@ -124,43 +123,45 @@
 
     sub-float/2addr v1, v2
 
-    .line 8
+    .line 12
     invoke-static {v1}, Ljava/lang/Math;->round(F)I
 
     move-result v2
 
-    iget-object v3, p0, Landroidx/compose/foundation/ScrollState$scrollableState$1;->this$0:Landroidx/compose/foundation/y0;
+    .line 13
+    iget-object v3, p0, Landroidx/compose/foundation/ScrollState$scrollableState$1;->this$0:Landroidx/compose/foundation/X;
 
-    .line 9
-    iget-object v4, v3, Landroidx/compose/foundation/y0;->a:Landroidx/compose/runtime/ParcelableSnapshotMutableIntState;
+    .line 14
+    iget-object v4, v3, Landroidx/compose/foundation/X;->a:Landroidx/compose/runtime/ParcelableSnapshotMutableIntState;
 
-    .line 10
-    invoke-virtual {v4}, Landroidx/compose/runtime/p2;->k()I
+    .line 15
+    invoke-virtual {v4}, Landroidx/compose/runtime/ParcelableSnapshotMutableIntState;->k()I
 
     move-result v4
 
     add-int/2addr v4, v2
 
-    .line 11
-    iget-object v3, v3, Landroidx/compose/foundation/y0;->a:Landroidx/compose/runtime/ParcelableSnapshotMutableIntState;
+    .line 16
+    iget-object v3, v3, Landroidx/compose/foundation/X;->a:Landroidx/compose/runtime/ParcelableSnapshotMutableIntState;
 
-    .line 12
-    invoke-virtual {v3, v4}, Landroidx/compose/runtime/p2;->l(I)V
+    .line 17
+    invoke-virtual {v3, v4}, Landroidx/compose/runtime/ParcelableSnapshotMutableIntState;->l(I)V
 
-    iget-object v3, p0, Landroidx/compose/foundation/ScrollState$scrollableState$1;->this$0:Landroidx/compose/foundation/y0;
+    .line 18
+    iget-object v3, p0, Landroidx/compose/foundation/ScrollState$scrollableState$1;->this$0:Landroidx/compose/foundation/X;
 
     int-to-float v2, v2
 
     sub-float v2, v1, v2
 
-    .line 13
-    iput v2, v3, Landroidx/compose/foundation/y0;->e:F
+    .line 19
+    iput v2, v3, Landroidx/compose/foundation/X;->e:F
 
-    if-eqz v0, :cond_1
+    if-nez v0, :cond_1
 
     move p1, v1
 
-    .line 14
+    .line 20
     :cond_1
     invoke-static {p1}, Ljava/lang/Float;->valueOf(F)Ljava/lang/Float;
 
@@ -172,7 +173,7 @@
 .method public bridge synthetic invoke(Ljava/lang/Object;)Ljava/lang/Object;
     .locals 0
 
-    .line 15
+    .line 1
     check-cast p1, Ljava/lang/Number;
 
     invoke-virtual {p1}, Ljava/lang/Number;->floatValue()F

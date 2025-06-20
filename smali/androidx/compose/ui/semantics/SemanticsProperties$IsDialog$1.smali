@@ -3,14 +3,14 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lzh/e;
+.implements Lka/e;
 
 
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "Lkotlin/jvm/internal/Lambda;",
-        "Lzh/e;"
+        "Lka/e;"
     }
 .end annotation
 
@@ -19,11 +19,11 @@
         "\u0000\u0008\n\u0002\u0018\u0002\n\u0002\u0008\u0005\u0010\u0005\u001a\u0004\u0018\u00010\u00002\u0008\u0010\u0001\u001a\u0004\u0018\u00010\u00002\u0006\u0010\u0002\u001a\u00020\u0000H\n\u00a2\u0006\u0004\u0008\u0003\u0010\u0004"
     }
     d2 = {
-        "Lqh/r;",
+        "LX9/j;",
         "<anonymous parameter 0>",
         "<anonymous parameter 1>",
         "invoke",
-        "(Lqh/r;Lqh/r;)Lqh/r;",
+        "(LX9/j;LX9/j;)LX9/j;",
         "<anonymous>"
     }
     k = 0x3
@@ -64,30 +64,32 @@
 
 
 # virtual methods
-.method public bridge synthetic invoke(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
-    .locals 0
-
-    .line 1
-    check-cast p1, Lqh/r;
-
-    check-cast p2, Lqh/r;
-
-    invoke-virtual {p0, p1, p2}, Landroidx/compose/ui/semantics/SemanticsProperties$IsDialog$1;->invoke(Lqh/r;Lqh/r;)Lqh/r;
-
-    move-result-object p1
-
-    return-object p1
-.end method
-
-.method public final invoke(Lqh/r;Lqh/r;)Lqh/r;
+.method public final invoke(LX9/j;LX9/j;)LX9/j;
     .locals 0
 
     .line 2
     new-instance p1, Ljava/lang/IllegalStateException;
 
+    .line 3
     const-string p2, "merge function called on unmergeable property IsDialog. A dialog should not be a child of a clickable/focusable node."
 
+    .line 4
     invoke-direct {p1, p2}, Ljava/lang/IllegalStateException;-><init>(Ljava/lang/String;)V
 
     throw p1
+.end method
+
+.method public bridge synthetic invoke(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    .locals 0
+
+    .line 1
+    check-cast p1, LX9/j;
+
+    check-cast p2, LX9/j;
+
+    invoke-virtual {p0, p1, p2}, Landroidx/compose/ui/semantics/SemanticsProperties$IsDialog$1;->invoke(LX9/j;LX9/j;)LX9/j;
+
+    move-result-object p1
+
+    return-object p1
 .end method

@@ -3,14 +3,14 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lzh/a;
+.implements Lka/a;
 
 
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "Lkotlin/jvm/internal/Lambda;",
-        "Lzh/a;"
+        "Lka/a;"
     }
 .end annotation
 
@@ -19,9 +19,9 @@
         "\u0000\u0008\n\u0002\u0018\u0002\n\u0002\u0008\u0003\u0010\u0003\u001a\u0004\u0018\u00010\u0000H\n\u00a2\u0006\u0004\u0008\u0001\u0010\u0002"
     }
     d2 = {
-        "Lokhttp3/x;",
+        "Lokhttp3/r;",
         "invoke",
-        "()Lokhttp3/x;",
+        "()Lokhttp3/r;",
         "<anonymous>"
     }
     k = 0x3
@@ -56,25 +56,26 @@
     .locals 1
 
     .line 1
-    invoke-virtual {p0}, Lcoil/network/CacheResponse$contentType$2;->invoke()Lokhttp3/x;
+    invoke-virtual {p0}, Lcoil/network/CacheResponse$contentType$2;->invoke()Lokhttp3/r;
 
     move-result-object v0
 
     return-object v0
 .end method
 
-.method public final invoke()Lokhttp3/x;
+.method public final invoke()Lokhttp3/r;
     .locals 3
 
+    .line 2
     iget-object v0, p0, Lcoil/network/CacheResponse$contentType$2;->this$0:Lcoil/network/a;
 
-    .line 2
-    iget-object v0, v0, Lcoil/network/a;->f:Lokhttp3/t;
+    .line 3
+    iget-object v0, v0, Lcoil/network/a;->f:Lokhttp3/o;
 
+    .line 4
     const-string v1, "Content-Type"
 
-    .line 3
-    invoke-virtual {v0, v1}, Lokhttp3/t;->a(Ljava/lang/String;)Ljava/lang/String;
+    invoke-virtual {v0, v1}, Lokhttp3/o;->a(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v0
 
@@ -82,11 +83,11 @@
 
     if-eqz v0, :cond_0
 
-    sget-object v2, Lokhttp3/x;->d:Ljava/util/regex/Pattern;
+    sget-object v2, Lokhttp3/r;->d:Ljava/util/regex/Pattern;
 
-    .line 4
+    .line 5
     :try_start_0
-    invoke-static {v0}, Lfi/k;->i(Ljava/lang/String;)Lokhttp3/x;
+    invoke-static {v0}, Lokhttp3/m;->g(Ljava/lang/String;)Lokhttp3/r;
 
     move-result-object v1
     :try_end_0

@@ -225,13 +225,14 @@
 .method public a()V
     .locals 1
 
+    .line 14
     iget-object v0, p0, Lcom/applovin/impl/j9;->c:Lcom/applovin/impl/eo;
 
-    .line 12
     invoke-virtual {v0}, Lcom/applovin/impl/eo;->a()V
 
     const/4 v0, 0x0
 
+    .line 15
     iput-boolean v0, p0, Lcom/applovin/impl/j9;->d:Z
 
     return-void
@@ -240,9 +241,9 @@
 .method public a(J[F)V
     .locals 1
 
+    .line 16
     iget-object v0, p0, Lcom/applovin/impl/j9;->c:Lcom/applovin/impl/eo;
 
-    .line 13
     invoke-virtual {v0, p1, p2, p3}, Lcom/applovin/impl/eo;->a(JLjava/lang/Object;)V
 
     return-void
@@ -251,9 +252,9 @@
 .method public a([FJ)Z
     .locals 7
 
+    .line 8
     iget-object v0, p0, Lcom/applovin/impl/j9;->c:Lcom/applovin/impl/eo;
 
-    .line 8
     invoke-virtual {v0, p2, p3}, Lcom/applovin/impl/eo;->c(J)Ljava/lang/Object;
 
     move-result-object p2
@@ -266,41 +267,43 @@
 
     return p1
 
+    .line 9
     :cond_0
     iget-object p3, p0, Lcom/applovin/impl/j9;->b:[F
 
-    .line 9
     invoke-static {p3, p2}, Lcom/applovin/impl/j9;->b([F[F)V
 
+    .line 10
     iget-boolean p2, p0, Lcom/applovin/impl/j9;->d:Z
 
     const/4 p3, 0x1
 
     if-nez p2, :cond_1
 
+    .line 11
     iget-object p2, p0, Lcom/applovin/impl/j9;->a:[F
 
     iget-object v0, p0, Lcom/applovin/impl/j9;->b:[F
 
-    .line 10
     invoke-static {p2, v0}, Lcom/applovin/impl/j9;->a([F[F)V
 
+    .line 12
     iput-boolean p3, p0, Lcom/applovin/impl/j9;->d:Z
 
+    .line 13
     :cond_1
     iget-object v3, p0, Lcom/applovin/impl/j9;->a:[F
 
     iget-object v5, p0, Lcom/applovin/impl/j9;->b:[F
 
-    const/4 v2, 0x0
-
     const/4 v4, 0x0
 
     const/4 v6, 0x0
 
+    const/4 v2, 0x0
+
     move-object v1, p1
 
-    .line 11
     invoke-static/range {v1 .. v6}, Landroid/opengl/Matrix;->multiplyMM([FI[FI[FI)V
 
     return p3

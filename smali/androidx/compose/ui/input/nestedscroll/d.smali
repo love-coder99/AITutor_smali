@@ -3,7 +3,7 @@
 .source "SourceFile"
 
 # interfaces
-.implements Landroidx/compose/ui/node/x1;
+.implements Landroidx/compose/ui/node/r0;
 .implements Landroidx/compose/ui/input/nestedscroll/a;
 
 
@@ -60,88 +60,7 @@
 
 
 # virtual methods
-.method public final A0()Lkotlinx/coroutines/w;
-    .locals 2
-
-    .line 1
-    iget-boolean v0, p0, Landroidx/compose/ui/n;->o:Z
-
-    .line 2
-    .line 3
-    if-eqz v0, :cond_0
-
-    .line 4
-    .line 5
-    invoke-static {p0}, Lcom/google/android/play/core/appupdate/b;->v(Landroidx/compose/ui/node/x1;)Landroidx/compose/ui/node/x1;
-
-    .line 6
-    .line 7
-    .line 8
-    move-result-object v0
-
-    .line 9
-    check-cast v0, Landroidx/compose/ui/input/nestedscroll/d;
-
-    .line 10
-    .line 11
-    goto :goto_0
-
-    .line 12
-    :cond_0
-    const/4 v0, 0x0
-
-    .line 13
-    :goto_0
-    if-eqz v0, :cond_1
-
-    .line 14
-    .line 15
-    invoke-virtual {v0}, Landroidx/compose/ui/input/nestedscroll/d;->A0()Lkotlinx/coroutines/w;
-
-    .line 16
-    .line 17
-    .line 18
-    move-result-object v0
-
-    .line 19
-    goto :goto_1
-
-    .line 20
-    :cond_1
-    iget-object v0, p0, Landroidx/compose/ui/input/nestedscroll/d;->q:Landroidx/compose/ui/input/nestedscroll/b;
-
-    .line 21
-    .line 22
-    iget-object v0, v0, Landroidx/compose/ui/input/nestedscroll/b;->c:Lkotlinx/coroutines/w;
-
-    .line 23
-    .line 24
-    if-eqz v0, :cond_2
-
-    .line 25
-    .line 26
-    :goto_1
-    return-object v0
-
-    .line 27
-    :cond_2
-    new-instance v0, Ljava/lang/IllegalStateException;
-
-    .line 28
-    .line 29
-    const-string v1, "in order to access nested coroutine scope you need to attach dispatcher to the `Modifier.nestedScroll` first."
-
-    .line 30
-    .line 31
-    invoke-direct {v0, v1}, Ljava/lang/IllegalStateException;-><init>(Ljava/lang/String;)V
-
-    .line 32
-    .line 33
-    .line 34
-    throw v0
-.end method
-
-.method public final H(IJ)J
+.method public final D(IJ)J
     .locals 3
 
     .line 1
@@ -160,7 +79,7 @@
 
     .line 7
     .line 8
-    invoke-static {p0}, Lcom/google/android/play/core/appupdate/b;->v(Landroidx/compose/ui/node/x1;)Landroidx/compose/ui/node/x1;
+    invoke-static {p0}, La/a;->m(Landroidx/compose/ui/node/r0;)Landroidx/compose/ui/node/r0;
 
     .line 9
     .line 10
@@ -180,7 +99,7 @@
 
     .line 16
     .line 17
-    invoke-virtual {v1, p1, p2, p3}, Landroidx/compose/ui/input/nestedscroll/d;->H(IJ)J
+    invoke-virtual {v1, p1, p2, p3}, Landroidx/compose/ui/input/nestedscroll/d;->D(IJ)J
 
     .line 18
     .line 19
@@ -201,7 +120,7 @@
 
     .line 25
     .line 26
-    invoke-static {p2, p3, v0, v1}, Ln1/c;->h(JJ)J
+    invoke-static {p2, p3, v0, v1}, Lr0/c;->h(JJ)J
 
     .line 27
     .line 28
@@ -209,7 +128,7 @@
     move-result-wide p2
 
     .line 30
-    invoke-interface {v2, p1, p2, p3}, Landroidx/compose/ui/input/nestedscroll/a;->H(IJ)J
+    invoke-interface {v2, p1, p2, p3}, Landroidx/compose/ui/input/nestedscroll/a;->D(IJ)J
 
     .line 31
     .line 32
@@ -217,7 +136,7 @@
     move-result-wide p1
 
     .line 34
-    invoke-static {v0, v1, p1, p2}, Ln1/c;->i(JJ)J
+    invoke-static {v0, v1, p1, p2}, Lr0/c;->i(JJ)J
 
     .line 35
     .line 36
@@ -385,7 +304,7 @@
 
     .line 72
     .line 73
-    invoke-static {p0}, Lcom/google/android/play/core/appupdate/b;->v(Landroidx/compose/ui/node/x1;)Landroidx/compose/ui/node/x1;
+    invoke-static {p0}, La/a;->m(Landroidx/compose/ui/node/r0;)Landroidx/compose/ui/node/r0;
 
     .line 74
     .line 75
@@ -441,11 +360,11 @@
 
     .line 97
     :goto_2
-    check-cast p3, Lh2/n;
+    check-cast p3, LM0/n;
 
     .line 98
     .line 99
-    iget-wide v5, p3, Lh2/n;->a:J
+    iget-wide v5, p3, LM0/n;->a:J
 
     .line 100
     .line 101
@@ -478,7 +397,7 @@
 
     .line 110
     .line 111
-    invoke-static {v5, v6, p1, p2}, Lh2/n;->d(JJ)J
+    invoke-static {v5, v6, p1, p2}, LM0/n;->d(JJ)J
 
     .line 112
     .line 113
@@ -515,15 +434,15 @@
     .line 128
     :cond_7
     :goto_5
-    check-cast p3, Lh2/n;
+    check-cast p3, LM0/n;
 
     .line 129
     .line 130
-    iget-wide v0, p3, Lh2/n;->a:J
+    iget-wide v0, p3, LM0/n;->a:J
 
     .line 131
     .line 132
-    invoke-static {p1, p2, v0, v1}, Lh2/n;->e(JJ)J
+    invoke-static {p1, p2, v0, v1}, LM0/n;->e(JJ)J
 
     .line 133
     .line 134
@@ -531,11 +450,11 @@
     move-result-wide p1
 
     .line 136
-    new-instance p3, Lh2/n;
+    new-instance p3, LM0/n;
 
     .line 137
     .line 138
-    invoke-direct {p3, p1, p2}, Lh2/n;-><init>(J)V
+    invoke-direct {p3, p1, p2}, LM0/n;-><init>(J)V
 
     .line 139
     .line 140
@@ -543,7 +462,7 @@
     return-object p3
 .end method
 
-.method public final Z(IJJ)J
+.method public final a0(IJJ)J
     .locals 10
 
     .line 1
@@ -560,7 +479,7 @@
     move-wide v4, p4
 
     .line 6
-    invoke-interface/range {v0 .. v5}, Landroidx/compose/ui/input/nestedscroll/a;->Z(IJJ)J
+    invoke-interface/range {v0 .. v5}, Landroidx/compose/ui/input/nestedscroll/a;->a0(IJJ)J
 
     .line 7
     .line 8
@@ -583,7 +502,7 @@
 
     .line 16
     .line 17
-    invoke-static {p0}, Lcom/google/android/play/core/appupdate/b;->v(Landroidx/compose/ui/node/x1;)Landroidx/compose/ui/node/x1;
+    invoke-static {p0}, La/a;->m(Landroidx/compose/ui/node/r0;)Landroidx/compose/ui/node/r0;
 
     .line 18
     .line 19
@@ -606,7 +525,7 @@
 
     .line 26
     .line 27
-    invoke-static {p2, p3, v0, v1}, Ln1/c;->i(JJ)J
+    invoke-static {p2, p3, v0, v1}, Lr0/c;->i(JJ)J
 
     .line 28
     .line 29
@@ -614,7 +533,7 @@
     move-result-wide v6
 
     .line 31
-    invoke-static {p4, p5, v0, v1}, Ln1/c;->h(JJ)J
+    invoke-static {p4, p5, v0, v1}, Lr0/c;->h(JJ)J
 
     .line 32
     .line 33
@@ -625,7 +544,7 @@
     move v5, p1
 
     .line 36
-    invoke-virtual/range {v4 .. v9}, Landroidx/compose/ui/input/nestedscroll/d;->Z(IJJ)J
+    invoke-virtual/range {v4 .. v9}, Landroidx/compose/ui/input/nestedscroll/d;->a0(IJJ)J
 
     .line 37
     .line 38
@@ -642,7 +561,7 @@
     .line 42
     .line 43
     :goto_0
-    invoke-static {v0, v1, p1, p2}, Ln1/c;->i(JJ)J
+    invoke-static {v0, v1, p1, p2}, Lr0/c;->i(JJ)J
 
     .line 44
     .line 45
@@ -659,10 +578,12 @@
     .line 1
     iget-object v0, p0, Landroidx/compose/ui/input/nestedscroll/d;->r:Ljava/lang/String;
 
+    .line 2
+    .line 3
     return-object v0
 .end method
 
-.method public final m(JJLkotlin/coroutines/Continuation;)Ljava/lang/Object;
+.method public final n(JJLkotlin/coroutines/Continuation;)Ljava/lang/Object;
     .locals 15
 
     .line 1
@@ -861,7 +782,7 @@
     move-object v8, v2
 
     .line 93
-    invoke-interface/range {v3 .. v8}, Landroidx/compose/ui/input/nestedscroll/a;->m(JJLkotlin/coroutines/Continuation;)Ljava/lang/Object;
+    invoke-interface/range {v3 .. v8}, Landroidx/compose/ui/input/nestedscroll/a;->n(JJLkotlin/coroutines/Continuation;)Ljava/lang/Object;
 
     .line 94
     .line 95
@@ -881,11 +802,11 @@
 
     .line 101
     :goto_1
-    check-cast v1, Lh2/n;
+    check-cast v1, LM0/n;
 
     .line 102
     .line 103
-    iget-wide v4, v1, Lh2/n;->a:J
+    iget-wide v4, v1, LM0/n;->a:J
 
     .line 104
     .line 105
@@ -904,7 +825,7 @@
 
     .line 111
     .line 112
-    invoke-static {v7}, Lcom/google/android/play/core/appupdate/b;->v(Landroidx/compose/ui/node/x1;)Landroidx/compose/ui/node/x1;
+    invoke-static {v7}, La/a;->m(Landroidx/compose/ui/node/r0;)Landroidx/compose/ui/node/r0;
 
     .line 113
     .line 114
@@ -928,7 +849,7 @@
 
     .line 121
     .line 122
-    invoke-static {v11, v12, v4, v5}, Lh2/n;->e(JJ)J
+    invoke-static {v11, v12, v4, v5}, LM0/n;->e(JJ)J
 
     .line 123
     .line 124
@@ -936,7 +857,7 @@
     move-result-wide v6
 
     .line 126
-    invoke-static {v13, v14, v4, v5}, Lh2/n;->d(JJ)J
+    invoke-static {v13, v14, v4, v5}, LM0/n;->d(JJ)J
 
     .line 127
     .line 128
@@ -971,7 +892,7 @@
     move-object v8, v2
 
     .line 141
-    invoke-virtual/range {v3 .. v8}, Landroidx/compose/ui/input/nestedscroll/d;->m(JJLkotlin/coroutines/Continuation;)Ljava/lang/Object;
+    invoke-virtual/range {v3 .. v8}, Landroidx/compose/ui/input/nestedscroll/d;->n(JJLkotlin/coroutines/Continuation;)Ljava/lang/Object;
 
     .line 142
     .line 143
@@ -991,11 +912,11 @@
 
     .line 149
     :goto_3
-    check-cast v1, Lh2/n;
+    check-cast v1, LM0/n;
 
     .line 150
     .line 151
-    iget-wide v4, v1, Lh2/n;->a:J
+    iget-wide v4, v1, LM0/n;->a:J
 
     .line 152
     .line 153
@@ -1014,7 +935,7 @@
     .line 157
     .line 158
     :goto_4
-    invoke-static {v13, v14, v4, v5}, Lh2/n;->e(JJ)J
+    invoke-static {v13, v14, v4, v5}, LM0/n;->e(JJ)J
 
     .line 159
     .line 160
@@ -1022,11 +943,11 @@
     move-result-wide v1
 
     .line 162
-    new-instance v3, Lh2/n;
+    new-instance v3, LM0/n;
 
     .line 163
     .line 164
-    invoke-direct {v3, v1, v2}, Lh2/n;-><init>(J)V
+    invoke-direct {v3, v1, v2}, LM0/n;-><init>(J)V
 
     .line 165
     .line 166
@@ -1034,7 +955,7 @@
     return-object v3
 .end method
 
-.method public final s0()V
+.method public final q0()V
     .locals 2
 
     .line 1
@@ -1055,7 +976,7 @@
     .line 8
     .line 9
     .line 10
-    iput-object v1, v0, Landroidx/compose/ui/input/nestedscroll/b;->b:Lzh/a;
+    iput-object v1, v0, Landroidx/compose/ui/input/nestedscroll/b;->b:Lkotlin/jvm/internal/Lambda;
 
     .line 11
     .line 12
@@ -1063,7 +984,7 @@
 
     .line 13
     .line 14
-    invoke-virtual {p0}, Landroidx/compose/ui/n;->o0()Lkotlinx/coroutines/w;
+    invoke-virtual {p0}, Landroidx/compose/ui/n;->m0()Lkotlinx/coroutines/u;
 
     .line 15
     .line 16
@@ -1071,14 +992,14 @@
     move-result-object v1
 
     .line 18
-    iput-object v1, v0, Landroidx/compose/ui/input/nestedscroll/b;->c:Lkotlinx/coroutines/w;
+    iput-object v1, v0, Landroidx/compose/ui/input/nestedscroll/b;->c:Lkotlinx/coroutines/u;
 
     .line 19
     .line 20
     return-void
 .end method
 
-.method public final t0()V
+.method public final r0()V
     .locals 2
 
     .line 1
@@ -1103,4 +1024,85 @@
     .line 10
     :cond_0
     return-void
+.end method
+
+.method public final y0()Lkotlinx/coroutines/u;
+    .locals 2
+
+    .line 1
+    iget-boolean v0, p0, Landroidx/compose/ui/n;->o:Z
+
+    .line 2
+    .line 3
+    if-eqz v0, :cond_0
+
+    .line 4
+    .line 5
+    invoke-static {p0}, La/a;->m(Landroidx/compose/ui/node/r0;)Landroidx/compose/ui/node/r0;
+
+    .line 6
+    .line 7
+    .line 8
+    move-result-object v0
+
+    .line 9
+    check-cast v0, Landroidx/compose/ui/input/nestedscroll/d;
+
+    .line 10
+    .line 11
+    goto :goto_0
+
+    .line 12
+    :cond_0
+    const/4 v0, 0x0
+
+    .line 13
+    :goto_0
+    if-eqz v0, :cond_1
+
+    .line 14
+    .line 15
+    invoke-virtual {v0}, Landroidx/compose/ui/input/nestedscroll/d;->y0()Lkotlinx/coroutines/u;
+
+    .line 16
+    .line 17
+    .line 18
+    move-result-object v0
+
+    .line 19
+    goto :goto_1
+
+    .line 20
+    :cond_1
+    iget-object v0, p0, Landroidx/compose/ui/input/nestedscroll/d;->q:Landroidx/compose/ui/input/nestedscroll/b;
+
+    .line 21
+    .line 22
+    iget-object v0, v0, Landroidx/compose/ui/input/nestedscroll/b;->c:Lkotlinx/coroutines/u;
+
+    .line 23
+    .line 24
+    if-eqz v0, :cond_2
+
+    .line 25
+    .line 26
+    :goto_1
+    return-object v0
+
+    .line 27
+    :cond_2
+    new-instance v0, Ljava/lang/IllegalStateException;
+
+    .line 28
+    .line 29
+    const-string v1, "in order to access nested coroutine scope you need to attach dispatcher to the `Modifier.nestedScroll` first."
+
+    .line 30
+    .line 31
+    invoke-direct {v0, v1}, Ljava/lang/IllegalStateException;-><init>(Ljava/lang/String;)V
+
+    .line 32
+    .line 33
+    .line 34
+    throw v0
 .end method

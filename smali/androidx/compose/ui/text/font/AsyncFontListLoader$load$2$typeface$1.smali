@@ -3,34 +3,11 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lzh/c;
+.implements Lka/c;
 
 
 # annotations
-.annotation system Ldalvik/annotation/Signature;
-    value = {
-        "Lkotlin/coroutines/jvm/internal/SuspendLambda;",
-        "Lzh/c;"
-    }
-.end annotation
-
-.annotation runtime Lkotlin/Metadata;
-    d1 = {
-        "\u0000\u0006\n\u0002\u0010\u0000\n\u0000\u0010\u0001\u001a\u0004\u0018\u00010\u0000H\u008a@"
-    }
-    d2 = {
-        "",
-        "<anonymous>"
-    }
-    k = 0x3
-    mv = {
-        0x1,
-        0x8,
-        0x0
-    }
-.end annotation
-
-.annotation runtime Lth/c;
+.annotation runtime Lca/c;
     c = "androidx.compose.ui.text.font.AsyncFontListLoader$load$2$typeface$1"
     f = "FontListFontFamilyTypefaceAdapter.kt"
     l = {
@@ -39,23 +16,47 @@
     m = "invokeSuspend"
 .end annotation
 
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "Lkotlin/coroutines/jvm/internal/SuspendLambda;",
+        "Lka/c;"
+    }
+.end annotation
+
+.annotation runtime Lkotlin/Metadata;
+    d1 = {
+        "\u0000\u0006\n\u0000\n\u0002\u0010\u0000\u0010\u0000\u001a\u0004\u0018\u00010\u0001H\u008a@"
+    }
+    d2 = {
+        "<anonymous>",
+        ""
+    }
+    k = 0x3
+    mv = {
+        0x1,
+        0x8,
+        0x0
+    }
+    xi = 0x30
+.end annotation
+
 
 # instance fields
-.field final synthetic $font:Landroidx/compose/ui/text/font/k;
+.field final synthetic $font:Landroidx/compose/ui/text/font/i;
 
 .field label:I
 
-.field final synthetic this$0:Landroidx/compose/ui/text/font/d;
+.field final synthetic this$0:Landroidx/compose/ui/text/font/c;
 
 
 # direct methods
-.method public constructor <init>(Landroidx/compose/ui/text/font/d;Landroidx/compose/ui/text/font/k;Lkotlin/coroutines/Continuation;)V
+.method public constructor <init>(Landroidx/compose/ui/text/font/c;Landroidx/compose/ui/text/font/i;Lkotlin/coroutines/Continuation;)V
     .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
-            "Landroidx/compose/ui/text/font/d;",
-            "Landroidx/compose/ui/text/font/k;",
+            "Landroidx/compose/ui/text/font/c;",
+            "Landroidx/compose/ui/text/font/i;",
             "Lkotlin/coroutines/Continuation<",
             "-",
             "Landroidx/compose/ui/text/font/AsyncFontListLoader$load$2$typeface$1;",
@@ -63,9 +64,9 @@
         }
     .end annotation
 
-    iput-object p1, p0, Landroidx/compose/ui/text/font/AsyncFontListLoader$load$2$typeface$1;->this$0:Landroidx/compose/ui/text/font/d;
+    iput-object p1, p0, Landroidx/compose/ui/text/font/AsyncFontListLoader$load$2$typeface$1;->this$0:Landroidx/compose/ui/text/font/c;
 
-    iput-object p2, p0, Landroidx/compose/ui/text/font/AsyncFontListLoader$load$2$typeface$1;->$font:Landroidx/compose/ui/text/font/k;
+    iput-object p2, p0, Landroidx/compose/ui/text/font/AsyncFontListLoader$load$2$typeface$1;->$font:Landroidx/compose/ui/text/font/i;
 
     const/4 p1, 0x1
 
@@ -84,18 +85,18 @@
             "Lkotlin/coroutines/Continuation<",
             "*>;)",
             "Lkotlin/coroutines/Continuation<",
-            "Lqh/r;",
+            "LX9/j;",
             ">;"
         }
     .end annotation
 
     new-instance v0, Landroidx/compose/ui/text/font/AsyncFontListLoader$load$2$typeface$1;
 
-    iget-object v1, p0, Landroidx/compose/ui/text/font/AsyncFontListLoader$load$2$typeface$1;->this$0:Landroidx/compose/ui/text/font/d;
+    iget-object v1, p0, Landroidx/compose/ui/text/font/AsyncFontListLoader$load$2$typeface$1;->this$0:Landroidx/compose/ui/text/font/c;
 
-    iget-object v2, p0, Landroidx/compose/ui/text/font/AsyncFontListLoader$load$2$typeface$1;->$font:Landroidx/compose/ui/text/font/k;
+    iget-object v2, p0, Landroidx/compose/ui/text/font/AsyncFontListLoader$load$2$typeface$1;->$font:Landroidx/compose/ui/text/font/i;
 
-    invoke-direct {v0, v1, v2, p1}, Landroidx/compose/ui/text/font/AsyncFontListLoader$load$2$typeface$1;-><init>(Landroidx/compose/ui/text/font/d;Landroidx/compose/ui/text/font/k;Lkotlin/coroutines/Continuation;)V
+    invoke-direct {v0, v1, v2, p1}, Landroidx/compose/ui/text/font/AsyncFontListLoader$load$2$typeface$1;-><init>(Landroidx/compose/ui/text/font/c;Landroidx/compose/ui/text/font/i;Lkotlin/coroutines/Continuation;)V
 
     return-object v0
 .end method
@@ -132,7 +133,7 @@
 
     check-cast p1, Landroidx/compose/ui/text/font/AsyncFontListLoader$load$2$typeface$1;
 
-    sget-object v0, Lqh/r;->a:Lqh/r;
+    sget-object v0, LX9/j;->a:LX9/j;
 
     invoke-virtual {p1, v0}, Landroidx/compose/ui/text/font/AsyncFontListLoader$load$2$typeface$1;->invokeSuspend(Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -195,11 +196,11 @@
     .line 23
     .line 24
     .line 25
-    iget-object p1, p0, Landroidx/compose/ui/text/font/AsyncFontListLoader$load$2$typeface$1;->this$0:Landroidx/compose/ui/text/font/d;
+    iget-object p1, p0, Landroidx/compose/ui/text/font/AsyncFontListLoader$load$2$typeface$1;->this$0:Landroidx/compose/ui/text/font/c;
 
     .line 26
     .line 27
-    iget-object v1, p0, Landroidx/compose/ui/text/font/AsyncFontListLoader$load$2$typeface$1;->$font:Landroidx/compose/ui/text/font/k;
+    iget-object v1, p0, Landroidx/compose/ui/text/font/AsyncFontListLoader$load$2$typeface$1;->$font:Landroidx/compose/ui/text/font/i;
 
     .line 28
     .line 29
@@ -207,7 +208,7 @@
 
     .line 30
     .line 31
-    invoke-virtual {p1, v1, p0}, Landroidx/compose/ui/text/font/d;->b(Landroidx/compose/ui/text/font/k;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
+    invoke-virtual {p1, v1, p0}, Landroidx/compose/ui/text/font/c;->b(Landroidx/compose/ui/text/font/i;Lkotlin/coroutines/jvm/internal/ContinuationImpl;)Ljava/lang/Object;
 
     .line 32
     .line 33

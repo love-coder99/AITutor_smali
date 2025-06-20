@@ -1,3 +1,3 @@
-.class public abstract Landroidx/compose/ui/text/font/i;
-.super Landroidx/compose/ui/text/font/m;
+.class public interface abstract Landroidx/compose/ui/text/font/i;
+.super Ljava/lang/Object;
 .source "SourceFile"

@@ -43,21 +43,23 @@
 .method public static a()Lcom/apm/insight/a/a;
     .locals 2
 
+    .line 1
     sget-object v0, Lcom/apm/insight/a/a;->d:Lcom/apm/insight/a/a;
 
     if-nez v0, :cond_1
 
+    .line 2
     const-class v0, Lcom/apm/insight/a/a;
 
-    .line 1
     monitor-enter v0
 
+    .line 3
     :try_start_0
     sget-object v1, Lcom/apm/insight/a/a;->d:Lcom/apm/insight/a/a;
 
     if-nez v1, :cond_0
 
-    .line 2
+    .line 4
     new-instance v1, Lcom/apm/insight/a/a;
 
     invoke-direct {v1}, Lcom/apm/insight/a/a;-><init>()V
@@ -71,7 +73,7 @@
 
     goto :goto_1
 
-    .line 3
+    .line 5
     :cond_0
     :goto_0
     monitor-exit v0
@@ -85,6 +87,7 @@
 
     throw v1
 
+    .line 6
     :cond_1
     :goto_2
     sget-object v0, Lcom/apm/insight/a/a;->d:Lcom/apm/insight/a/a;
@@ -97,21 +100,26 @@
 .method public final a(Ljava/lang/String;Lcom/apm/insight/b/i$a;Lcom/apm/insight/b/i$a;)V
     .locals 0
 
+    .line 7
     iput-object p1, p0, Lcom/apm/insight/a/a;->a:Ljava/lang/String;
 
+    .line 8
     iput-object p2, p0, Lcom/apm/insight/a/a;->b:Lcom/apm/insight/b/i$a;
 
+    .line 9
     iput-object p3, p0, Lcom/apm/insight/a/a;->c:Lcom/apm/insight/b/i$a;
 
+    .line 10
     iget-boolean p1, p0, Lcom/apm/insight/a/a;->e:Z
 
     if-nez p1, :cond_0
 
     const/4 p1, 0x1
 
+    .line 11
     iput-boolean p1, p0, Lcom/apm/insight/a/a;->e:Z
 
-    .line 4
+    .line 12
     invoke-static {}, Lcom/apm/insight/runtime/n;->a()Lcom/apm/insight/runtime/r;
 
     move-result-object p1
@@ -128,6 +136,18 @@
 
 .method public onCrash(Lcom/apm/insight/CrashType;Ljava/lang/String;Ljava/lang/Thread;)V
     .locals 0
+    .param p1    # Lcom/apm/insight/CrashType;
+        .annotation build Landroidx/annotation/NonNull;
+        .end annotation
+    .end param
+    .param p2    # Ljava/lang/String;
+        .annotation build Landroidx/annotation/Nullable;
+        .end annotation
+    .end param
+    .param p3    # Ljava/lang/Thread;
+        .annotation build Landroidx/annotation/Nullable;
+        .end annotation
+    .end param
 
     .line 1
     sget-object p2, Lcom/apm/insight/CrashType;->NATIVE:Lcom/apm/insight/CrashType;

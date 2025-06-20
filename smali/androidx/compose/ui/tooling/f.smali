@@ -3,11 +3,11 @@
 .source "SourceFile"
 
 # interfaces
-.implements Landroidx/lifecycle/l1;
+.implements Landroidx/lifecycle/g0;
 
 
 # instance fields
-.field public final b:Landroidx/lifecycle/k1;
+.field public final b:Landroidx/lifecycle/f0;
 
 
 # direct methods
@@ -20,16 +20,16 @@
     .line 2
     .line 3
     .line 4
-    new-instance v0, Landroidx/lifecycle/k1;
+    new-instance v0, Landroidx/lifecycle/f0;
 
     .line 5
     .line 6
-    invoke-direct {v0}, Landroidx/lifecycle/k1;-><init>()V
+    invoke-direct {v0}, Landroidx/lifecycle/f0;-><init>()V
 
     .line 7
     .line 8
     .line 9
-    iput-object v0, p0, Landroidx/compose/ui/tooling/f;->b:Landroidx/lifecycle/k1;
+    iput-object v0, p0, Landroidx/compose/ui/tooling/f;->b:Landroidx/lifecycle/f0;
 
     .line 10
     .line 11
@@ -38,10 +38,13 @@
 
 
 # virtual methods
-.method public final getViewModelStore()Landroidx/lifecycle/k1;
+.method public final getViewModelStore()Landroidx/lifecycle/f0;
     .locals 1
 
-    iget-object v0, p0, Landroidx/compose/ui/tooling/f;->b:Landroidx/lifecycle/k1;
+    .line 1
+    iget-object v0, p0, Landroidx/compose/ui/tooling/f;->b:Landroidx/lifecycle/f0;
 
+    .line 2
+    .line 3
     return-object v0
 .end method

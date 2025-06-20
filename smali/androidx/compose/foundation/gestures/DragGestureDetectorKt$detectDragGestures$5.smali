@@ -3,14 +3,14 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lzh/f;
+.implements Lka/f;
 
 
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "Lkotlin/jvm/internal/Lambda;",
-        "Lzh/f;"
+        "Lka/f;"
     }
 .end annotation
 
@@ -19,14 +19,14 @@
         "\u0000\u0016\n\u0002\u0018\u0002\n\u0002\u0008\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0008\u0003\u0010\u0008\u001a\u00020\u00052\u0006\u0010\u0001\u001a\u00020\u00002\u0006\u0010\u0002\u001a\u00020\u00002\u0006\u0010\u0004\u001a\u00020\u0003H\n\u00a2\u0006\u0004\u0008\u0006\u0010\u0007"
     }
     d2 = {
-        "Landroidx/compose/ui/input/pointer/r;",
+        "Landroidx/compose/ui/input/pointer/n;",
         "<anonymous parameter 0>",
         "slopTriggerChange",
-        "Ln1/c;",
+        "Lr0/c;",
         "<anonymous parameter 2>",
-        "Lqh/r;",
+        "LX9/j;",
         "invoke-0AR0LA0",
-        "(Landroidx/compose/ui/input/pointer/r;Landroidx/compose/ui/input/pointer/r;J)V",
+        "(Landroidx/compose/ui/input/pointer/n;Landroidx/compose/ui/input/pointer/n;J)V",
         "<anonymous>"
     }
     k = 0x3
@@ -39,33 +39,39 @@
 
 
 # instance fields
-.field final synthetic $onDragStart:Lzh/c;
+.field final synthetic $onDragStart:Lka/c;
     .annotation system Ldalvik/annotation/Signature;
         value = {
-            "Lzh/c;"
+            "Lka/c;"
         }
     .end annotation
 .end field
 
 
 # direct methods
-.method public constructor <init>(Lzh/c;)V
+.method public constructor <init>(Lka/c;)V
     .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
-            "Lzh/c;",
+            "Lka/c;",
             ")V"
         }
     .end annotation
 
     .line 1
-    iput-object p1, p0, Landroidx/compose/foundation/gestures/DragGestureDetectorKt$detectDragGestures$5;->$onDragStart:Lzh/c;
+    iput-object p1, p0, Landroidx/compose/foundation/gestures/DragGestureDetectorKt$detectDragGestures$5;->$onDragStart:Lka/c;
 
+    .line 2
+    .line 3
     const/4 p1, 0x3
 
+    .line 4
     invoke-direct {p0, p1}, Lkotlin/jvm/internal/Lambda;-><init>(I)V
 
+    .line 5
+    .line 6
+    .line 7
     return-void
 .end method
 
@@ -75,56 +81,56 @@
     .locals 2
 
     .line 1
-    check-cast p1, Landroidx/compose/ui/input/pointer/r;
+    check-cast p1, Landroidx/compose/ui/input/pointer/n;
 
     .line 2
     .line 3
-    check-cast p2, Landroidx/compose/ui/input/pointer/r;
+    check-cast p2, Landroidx/compose/ui/input/pointer/n;
 
     .line 4
     .line 5
-    check-cast p3, Ln1/c;
+    check-cast p3, Lr0/c;
 
     .line 6
     .line 7
-    iget-wide v0, p3, Ln1/c;->a:J
+    iget-wide v0, p3, Lr0/c;->a:J
 
     .line 8
     .line 9
-    invoke-virtual {p0, p1, p2, v0, v1}, Landroidx/compose/foundation/gestures/DragGestureDetectorKt$detectDragGestures$5;->invoke-0AR0LA0(Landroidx/compose/ui/input/pointer/r;Landroidx/compose/ui/input/pointer/r;J)V
+    invoke-virtual {p0, p1, p2, v0, v1}, Landroidx/compose/foundation/gestures/DragGestureDetectorKt$detectDragGestures$5;->invoke-0AR0LA0(Landroidx/compose/ui/input/pointer/n;Landroidx/compose/ui/input/pointer/n;J)V
 
     .line 10
     .line 11
     .line 12
-    sget-object p1, Lqh/r;->a:Lqh/r;
+    sget-object p1, LX9/j;->a:LX9/j;
 
     .line 13
     .line 14
     return-object p1
 .end method
 
-.method public final invoke-0AR0LA0(Landroidx/compose/ui/input/pointer/r;Landroidx/compose/ui/input/pointer/r;J)V
+.method public final invoke-0AR0LA0(Landroidx/compose/ui/input/pointer/n;Landroidx/compose/ui/input/pointer/n;J)V
     .locals 0
 
     .line 1
-    iget-object p1, p0, Landroidx/compose/foundation/gestures/DragGestureDetectorKt$detectDragGestures$5;->$onDragStart:Lzh/c;
+    iget-object p1, p0, Landroidx/compose/foundation/gestures/DragGestureDetectorKt$detectDragGestures$5;->$onDragStart:Lka/c;
 
     .line 2
     .line 3
-    iget-wide p2, p2, Landroidx/compose/ui/input/pointer/r;->c:J
+    iget-wide p2, p2, Landroidx/compose/ui/input/pointer/n;->c:J
 
     .line 4
     .line 5
-    new-instance p4, Ln1/c;
+    new-instance p4, Lr0/c;
 
     .line 6
     .line 7
-    invoke-direct {p4, p2, p3}, Ln1/c;-><init>(J)V
+    invoke-direct {p4, p2, p3}, Lr0/c;-><init>(J)V
 
     .line 8
     .line 9
     .line 10
-    invoke-interface {p1, p4}, Lzh/c;->invoke(Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-interface {p1, p4}, Lka/c;->invoke(Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 11
     .line 12

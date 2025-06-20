@@ -8,7 +8,7 @@
 
 
 # instance fields
-.field public final a:Lfi/d;
+.field public final a:Lqa/d;
 
 .field public final b:I
 
@@ -22,19 +22,19 @@
 
     .line 2
     .line 3
-    new-instance v1, Lfi/d;
+    new-instance v1, Lqa/d;
 
     .line 4
     .line 5
     const/4 v2, 0x0
 
     .line 6
-    invoke-direct {v1, v2, v2}, Lfi/d;-><init>(FF)V
+    invoke-direct {v1, v2, v2}, Lqa/d;-><init>(FF)V
 
     .line 7
     .line 8
     .line 9
-    invoke-direct {v0, v1}, Landroidx/compose/ui/semantics/f;-><init>(Lfi/d;)V
+    invoke-direct {v0, v1}, Landroidx/compose/ui/semantics/f;-><init>(Lqa/d;)V
 
     .line 10
     .line 11
@@ -46,7 +46,7 @@
     return-void
 .end method
 
-.method public constructor <init>(Lfi/d;)V
+.method public constructor <init>(Lqa/d;)V
     .locals 1
 
     .line 1
@@ -55,7 +55,7 @@
     .line 2
     .line 3
     .line 4
-    iput-object p1, p0, Landroidx/compose/ui/semantics/f;->a:Lfi/d;
+    iput-object p1, p0, Landroidx/compose/ui/semantics/f;->a:Lqa/d;
 
     .line 5
     .line 6
@@ -77,39 +77,27 @@
     move-result p1
 
     .line 14
-    xor-int/lit8 p1, p1, 0x1
+    if-nez p1, :cond_0
 
     .line 15
     .line 16
-    if-eqz p1, :cond_0
-
-    .line 17
-    .line 18
     return-void
 
-    .line 19
+    .line 17
     :cond_0
     new-instance p1, Ljava/lang/IllegalArgumentException;
 
+    .line 18
+    .line 19
+    const-string v0, "current must not be NaN"
+
     .line 20
     .line 21
-    const-string v0, "current must not be NaN"
+    invoke-direct {p1, v0}, Ljava/lang/IllegalArgumentException;-><init>(Ljava/lang/String;)V
 
     .line 22
     .line 23
-    invoke-virtual {v0}, Ljava/lang/Object;->toString()Ljava/lang/String;
-
     .line 24
-    .line 25
-    .line 26
-    move-result-object v0
-
-    .line 27
-    invoke-direct {p1, v0}, Ljava/lang/IllegalArgumentException;-><init>(Ljava/lang/String;)V
-
-    .line 28
-    .line 29
-    .line 30
     throw p1
 .end method
 
@@ -154,15 +142,15 @@
     .line 14
     .line 15
     .line 16
-    iget-object v1, p0, Landroidx/compose/ui/semantics/f;->a:Lfi/d;
+    iget-object v1, p0, Landroidx/compose/ui/semantics/f;->a:Lqa/d;
 
     .line 17
     .line 18
-    iget-object v3, p1, Landroidx/compose/ui/semantics/f;->a:Lfi/d;
+    iget-object v3, p1, Landroidx/compose/ui/semantics/f;->a:Lqa/d;
 
     .line 19
     .line 20
-    invoke-static {v1, v3}, Lrb/h;->d(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-virtual {v1, v3}, Lqa/d;->equals(Ljava/lang/Object;)Z
 
     .line 21
     .line 22
@@ -216,11 +204,11 @@
 
     .line 7
     .line 8
-    iget-object v1, p0, Landroidx/compose/ui/semantics/f;->a:Lfi/d;
+    iget-object v1, p0, Landroidx/compose/ui/semantics/f;->a:Lqa/d;
 
     .line 9
     .line 10
-    invoke-virtual {v1}, Lfi/d;->hashCode()I
+    invoke-virtual {v1}, Lqa/d;->hashCode()I
 
     .line 11
     .line 12
@@ -262,7 +250,7 @@
     .line 6
     .line 7
     .line 8
-    iget-object v1, p0, Landroidx/compose/ui/semantics/f;->a:Lfi/d;
+    iget-object v1, p0, Landroidx/compose/ui/semantics/f;->a:Lqa/d;
 
     .line 9
     .line 10
@@ -288,7 +276,7 @@
 
     .line 21
     .line 22
-    invoke-static {v0, v1, v2}, Landroid/support/v4/media/session/a;->F(Ljava/lang/StringBuilder;IC)Ljava/lang/String;
+    invoke-static {v0, v1, v2}, LB/u;->v(Ljava/lang/StringBuilder;IC)Ljava/lang/String;
 
     .line 23
     .line 24

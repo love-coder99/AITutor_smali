@@ -106,21 +106,23 @@
 .method public static a()Lcom/apm/insight/runtime/j;
     .locals 2
 
+    .line 1
     sget-object v0, Lcom/apm/insight/runtime/j;->a:Lcom/apm/insight/runtime/j;
 
     if-nez v0, :cond_1
 
+    .line 2
     const-class v0, Lcom/apm/insight/runtime/j;
 
-    .line 1
     monitor-enter v0
 
+    .line 3
     :try_start_0
     sget-object v1, Lcom/apm/insight/runtime/j;->a:Lcom/apm/insight/runtime/j;
 
     if-nez v1, :cond_0
 
-    .line 2
+    .line 4
     new-instance v1, Lcom/apm/insight/runtime/j;
 
     invoke-direct {v1}, Lcom/apm/insight/runtime/j;-><init>()V
@@ -134,7 +136,7 @@
 
     goto :goto_1
 
-    .line 3
+    .line 5
     :cond_0
     :goto_0
     monitor-exit v0
@@ -148,6 +150,7 @@
 
     throw v1
 
+    .line 6
     :cond_1
     :goto_2
     sget-object v0, Lcom/apm/insight/runtime/j;->a:Lcom/apm/insight/runtime/j;
@@ -171,7 +174,7 @@
 
     if-eqz p0, :cond_2
 
-    .line 6
+    .line 10
     invoke-interface {p0}, Ljava/util/List;->isEmpty()Z
 
     move-result v0
@@ -180,7 +183,7 @@
 
     goto :goto_2
 
-    .line 7
+    .line 11
     :cond_0
     :try_start_0
     invoke-interface {p0}, Ljava/util/List;->size()I
@@ -192,7 +195,7 @@
     :goto_0
     if-ge v1, v0, :cond_1
 
-    .line 8
+    .line 12
     invoke-interface {p0, v1}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
     move-result-object v2
@@ -201,7 +204,7 @@
 
     if-eqz v2, :cond_1
 
-    .line 9
+    .line 13
     invoke-interface {v2, p1}, Landroid/util/Printer;->println(Ljava/lang/String;)V
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
@@ -218,7 +221,7 @@
     :cond_1
     return-void
 
-    .line 10
+    .line 14
     :goto_1
     invoke-static {p0}, Lcom/apm/insight/a;->a(Ljava/lang/Throwable;)V
 
@@ -242,12 +245,13 @@
 
     const-wide/16 v0, -0x1
 
+    .line 7
     iput-wide v0, p0, Lcom/apm/insight/runtime/j;->b:J
 
+    .line 8
     :try_start_0
     iget-object v0, p0, Lcom/apm/insight/runtime/j;->c:Ljava/util/List;
 
-    .line 4
     invoke-static {v0, p1}, Lcom/apm/insight/runtime/j;->a(Ljava/util/List;Ljava/lang/String;)V
     :try_end_0
     .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
@@ -257,7 +261,7 @@
     :catch_0
     move-exception p1
 
-    .line 5
+    .line 9
     invoke-static {p1}, Lcom/apm/insight/a;->a(Ljava/lang/Throwable;)V
 
     return-void
@@ -273,10 +277,10 @@
 
     iput-wide v0, p0, Lcom/apm/insight/runtime/j;->b:J
 
+    .line 3
     :try_start_0
     iget-object v0, p0, Lcom/apm/insight/runtime/j;->d:Ljava/util/List;
 
-    .line 3
     invoke-static {v0, p1}, Lcom/apm/insight/runtime/j;->a(Ljava/util/List;Ljava/lang/String;)V
     :try_end_0
     .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
@@ -295,6 +299,7 @@
 .method public final b()Z
     .locals 5
 
+    .line 1
     iget-wide v0, p0, Lcom/apm/insight/runtime/j;->b:J
 
     const-wide/16 v2, -0x1
@@ -303,7 +308,6 @@
 
     if-eqz v4, :cond_0
 
-    .line 1
     invoke-static {}, Landroid/os/SystemClock;->uptimeMillis()J
 
     move-result-wide v0

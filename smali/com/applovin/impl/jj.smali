@@ -105,10 +105,10 @@
     .line 2
     .line 3
     .line 4
-    const/4 v0, 0x1
+    const/4 v0, 0x0
 
     .line 5
-    const/4 v1, 0x0
+    const/4 v1, 0x1
 
     .line 6
     const-wide/16 v2, 0x0
@@ -147,27 +147,23 @@
 
     .line 21
     .line 22
-    goto :goto_1
+    const/4 v0, 0x1
 
     .line 23
     :cond_1
-    const/4 v0, 0x0
-
-    .line 24
-    :goto_1
     invoke-static {v0}, Lcom/applovin/impl/b1;->a(Z)V
 
+    .line 24
     .line 25
     .line 26
-    .line 27
     iput-wide p1, p0, Lcom/applovin/impl/jj;->a:J
 
+    .line 27
     .line 28
-    .line 29
     iput-wide p3, p0, Lcom/applovin/impl/jj;->b:J
 
+    .line 29
     .line 30
-    .line 31
     return-void
 .end method
 
@@ -463,17 +459,27 @@
 .method public hashCode()I
     .locals 4
 
+    .line 1
     iget-wide v0, p0, Lcom/applovin/impl/jj;->a:J
 
+    .line 2
+    .line 3
     long-to-int v1, v0
 
+    .line 4
     mul-int/lit8 v1, v1, 0x1f
 
+    .line 5
+    .line 6
     iget-wide v2, p0, Lcom/applovin/impl/jj;->b:J
 
+    .line 7
+    .line 8
     long-to-int v0, v2
 
+    .line 9
     add-int/2addr v1, v0
 
+    .line 10
     return v1
 .end method

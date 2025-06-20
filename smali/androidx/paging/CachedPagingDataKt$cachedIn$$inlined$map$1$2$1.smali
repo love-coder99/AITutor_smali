@@ -4,6 +4,15 @@
 
 
 # annotations
+.annotation runtime Lca/c;
+    c = "androidx.paging.CachedPagingDataKt$cachedIn$$inlined$map$1$2"
+    f = "CachedPagingData.kt"
+    l = {
+        0xdf
+    }
+    m = "emit"
+.end annotation
+
 .annotation runtime Lkotlin/Metadata;
     k = 0x3
     mv = {
@@ -12,15 +21,6 @@
         0x0
     }
     xi = 0x30
-.end annotation
-
-.annotation runtime Lth/c;
-    c = "androidx.paging.CachedPagingDataKt$cachedIn$$inlined$map$1$2"
-    f = "CachedPagingData.kt"
-    l = {
-        0xdf
-    }
-    m = "emit"
 .end annotation
 
 

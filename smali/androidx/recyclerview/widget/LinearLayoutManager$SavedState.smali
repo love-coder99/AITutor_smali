@@ -42,7 +42,7 @@
     .locals 1
 
     .line 1
-    new-instance v0, Landroidx/recyclerview/widget/x;
+    new-instance v0, Landroidx/recyclerview/widget/t;
 
     .line 2
     .line 3

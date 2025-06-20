@@ -28,15 +28,15 @@
     .locals 2
 
     .line 1
-    new-instance v0, Lcom/applovin/impl/vu;
+    new-instance v0, Lcom/applovin/impl/M1;
 
     .line 2
     .line 3
-    const/16 v1, 0x1b
+    const/16 v1, 0x1c
 
     .line 4
     .line 5
-    invoke-direct {v0, v1}, Lcom/applovin/impl/vu;-><init>(I)V
+    invoke-direct {v0, v1}, Lcom/applovin/impl/M1;-><init>(I)V
 
     .line 6
     .line 7
@@ -51,6 +51,10 @@
 .method private constructor <init>(ILjava/lang/Throwable;I)V
     .locals 10
 
+    const/4 v8, 0x4
+
+    const/4 v9, 0x0
+
     const/4 v3, 0x0
 
     const/4 v5, 0x0
@@ -58,10 +62,6 @@
     const/4 v6, -0x1
 
     const/4 v7, 0x0
-
-    const/4 v8, 0x4
-
-    const/4 v9, 0x0
 
     move-object v0, p0
 
@@ -233,6 +233,7 @@
 
     const/4 p1, 0x0
 
+    .line 15
     iput-object p1, p0, Lcom/applovin/impl/z7;->j:Lcom/applovin/impl/xd;
 
     return-void
@@ -257,7 +258,7 @@
 
     move-wide/from16 v4, p10
 
-    .line 15
+    .line 16
     invoke-direct/range {v0 .. v5}, Lcom/applovin/impl/nh;-><init>(Ljava/lang/String;Ljava/lang/Throwable;IJ)V
 
     const/4 v0, 0x0
@@ -279,7 +280,7 @@
     :goto_0
     const/4 v2, 0x1
 
-    .line 16
+    .line 17
     :goto_1
     invoke-static {v2}, Lcom/applovin/impl/b1;->a(Z)V
 
@@ -292,32 +293,39 @@
     :cond_2
     const/4 v0, 0x1
 
-    .line 17
+    .line 18
     :cond_3
     invoke-static {v0}, Lcom/applovin/impl/b1;->a(Z)V
 
+    .line 19
     iput v7, v6, Lcom/applovin/impl/z7;->d:I
 
     move-object v0, p5
 
+    .line 20
     iput-object v0, v6, Lcom/applovin/impl/z7;->f:Ljava/lang/String;
 
     move v0, p6
 
+    .line 21
     iput v0, v6, Lcom/applovin/impl/z7;->g:I
 
     move-object/from16 v0, p7
 
+    .line 22
     iput-object v0, v6, Lcom/applovin/impl/z7;->h:Lcom/applovin/impl/e9;
 
     move/from16 v0, p8
 
+    .line 23
     iput v0, v6, Lcom/applovin/impl/z7;->i:I
 
     move-object/from16 v0, p9
 
+    .line 24
     iput-object v0, v6, Lcom/applovin/impl/z7;->j:Lcom/applovin/impl/xd;
 
+    .line 25
     iput-boolean v8, v6, Lcom/applovin/impl/z7;->k:Z
 
     return-void
@@ -326,7 +334,7 @@
 .method public static a(Ljava/io/IOException;I)Lcom/applovin/impl/z7;
     .locals 2
 
-    .line 14
+    .line 18
     new-instance v0, Lcom/applovin/impl/z7;
 
     const/4 v1, 0x0
@@ -352,7 +360,7 @@
 .method public static a(Ljava/lang/RuntimeException;I)Lcom/applovin/impl/z7;
     .locals 2
 
-    .line 15
+    .line 19
     new-instance v0, Lcom/applovin/impl/z7;
 
     const/4 v1, 0x2
@@ -368,10 +376,6 @@
     .line 1
     new-instance v10, Lcom/applovin/impl/z7;
 
-    const/4 v1, 0x1
-
-    const/4 v3, 0x0
-
     if-nez p3, :cond_0
 
     const/4 v0, 0x4
@@ -384,6 +388,10 @@
     move v8, p4
 
     :goto_0
+    const/4 v1, 0x1
+
+    const/4 v3, 0x0
+
     move-object v0, v10
 
     move-object v2, p0
@@ -417,16 +425,18 @@
 
     if-eq p0, p2, :cond_0
 
+    .line 4
     const-string p0, "Unexpected runtime error"
 
     goto :goto_0
 
+    .line 5
     :cond_0
     const-string p0, "Remote error"
 
     goto :goto_0
 
-    .line 4
+    .line 6
     :cond_1
     new-instance p0, Ljava/lang/StringBuilder;
 
@@ -450,7 +460,7 @@
 
     invoke-virtual {p0, p2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    .line 5
+    .line 7
     invoke-static {p5}, Lcom/applovin/impl/t2;->b(I)Ljava/lang/String;
 
     move-result-object p2
@@ -463,10 +473,11 @@
 
     goto :goto_0
 
+    .line 8
     :cond_2
     const-string p0, "Source error"
 
-    .line 6
+    .line 9
     :goto_0
     invoke-static {p1}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
 
@@ -474,10 +485,11 @@
 
     if-nez p2, :cond_3
 
+    .line 10
     const-string p2, ": "
 
-    .line 7
-    invoke-static {p0, p2, p1}, Lj0/d;->j(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+    .line 11
+    invoke-static {p0, p2, p1}, LB/u;->u(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object p0
 
@@ -501,10 +513,10 @@
 .method public a(Lcom/applovin/impl/xd;)Lcom/applovin/impl/z7;
     .locals 14
 
-    .line 16
+    .line 20
     new-instance v13, Lcom/applovin/impl/z7;
 
-    .line 17
+    .line 21
     invoke-virtual {p0}, Ljava/lang/Throwable;->getMessage()Ljava/lang/String;
 
     move-result-object v0
@@ -517,7 +529,7 @@
 
     check-cast v1, Ljava/lang/String;
 
-    .line 18
+    .line 22
     invoke-virtual {p0}, Ljava/lang/Throwable;->getCause()Ljava/lang/Throwable;
 
     move-result-object v2

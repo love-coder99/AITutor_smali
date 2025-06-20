@@ -3,14 +3,14 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lzh/c;
+.implements Lka/c;
 
 
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "Lkotlin/jvm/internal/Lambda;",
-        "Lzh/c;"
+        "Lka/c;"
     }
 .end annotation
 
@@ -19,10 +19,10 @@
         "\u0000\u000c\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0008\u0003\u0010\u0004\u001a\u00020\u0001*\u00020\u0000H\n\u00a2\u0006\u0004\u0008\u0002\u0010\u0003"
     }
     d2 = {
-        "Lo1/h;",
-        "Lqh/r;",
+        "Ls0/e;",
+        "LX9/j;",
         "invoke",
-        "(Lo1/h;)V",
+        "(Ls0/e;)V",
         "<anonymous>"
     }
     k = 0x3
@@ -35,14 +35,14 @@
 
 
 # instance fields
-.field final synthetic this$0:Landroidx/compose/ui/graphics/layer/b;
+.field final synthetic this$0:Landroidx/compose/ui/graphics/layer/a;
 
 
 # direct methods
-.method public constructor <init>(Landroidx/compose/ui/graphics/layer/b;)V
+.method public constructor <init>(Landroidx/compose/ui/graphics/layer/a;)V
     .locals 0
 
-    iput-object p1, p0, Landroidx/compose/ui/graphics/layer/GraphicsLayer$clipDrawBlock$1;->this$0:Landroidx/compose/ui/graphics/layer/b;
+    iput-object p1, p0, Landroidx/compose/ui/graphics/layer/GraphicsLayer$clipDrawBlock$1;->this$0:Landroidx/compose/ui/graphics/layer/a;
 
     const/4 p1, 0x1
 
@@ -56,96 +56,100 @@
 .method public bridge synthetic invoke(Ljava/lang/Object;)Ljava/lang/Object;
     .locals 0
 
-    .line 19
-    check-cast p1, Lo1/h;
+    .line 1
+    check-cast p1, Ls0/e;
 
-    invoke-virtual {p0, p1}, Landroidx/compose/ui/graphics/layer/GraphicsLayer$clipDrawBlock$1;->invoke(Lo1/h;)V
+    invoke-virtual {p0, p1}, Landroidx/compose/ui/graphics/layer/GraphicsLayer$clipDrawBlock$1;->invoke(Ls0/e;)V
 
-    sget-object p1, Lqh/r;->a:Lqh/r;
+    sget-object p1, LX9/j;->a:LX9/j;
 
     return-object p1
 .end method
 
-.method public final invoke(Lo1/h;)V
+.method public final invoke(Ls0/e;)V
     .locals 7
 
-    iget-object v0, p0, Landroidx/compose/ui/graphics/layer/GraphicsLayer$clipDrawBlock$1;->this$0:Landroidx/compose/ui/graphics/layer/b;
-
-    .line 1
-    iget-object v1, v0, Landroidx/compose/ui/graphics/layer/b;->l:Landroidx/compose/ui/graphics/q0;
-
     .line 2
-    iget-boolean v2, v0, Landroidx/compose/ui/graphics/layer/b;->n:Z
+    iget-object v0, p0, Landroidx/compose/ui/graphics/layer/GraphicsLayer$clipDrawBlock$1;->this$0:Landroidx/compose/ui/graphics/layer/a;
+
+    .line 3
+    iget-object v1, v0, Landroidx/compose/ui/graphics/layer/a;->l:Landroidx/compose/ui/graphics/j;
+
+    .line 4
+    iget-boolean v2, v0, Landroidx/compose/ui/graphics/layer/a;->n:Z
 
     if-eqz v2, :cond_0
 
-    .line 3
-    iget-boolean v2, v0, Landroidx/compose/ui/graphics/layer/b;->v:Z
+    .line 5
+    iget-boolean v2, v0, Landroidx/compose/ui/graphics/layer/a;->v:Z
 
     if-eqz v2, :cond_0
 
     if-eqz v1, :cond_0
 
-    .line 4
-    iget-object v0, v0, Landroidx/compose/ui/graphics/layer/b;->d:Lzh/c;
+    .line 6
+    iget-object v0, v0, Landroidx/compose/ui/graphics/layer/a;->d:Lkotlin/jvm/internal/Lambda;
 
-    .line 5
-    invoke-interface {p1}, Lo1/h;->U()Lo1/b;
+    .line 7
+    invoke-interface {p1}, Ls0/e;->U()Lcom/google/android/gms/internal/measurement/c;
 
     move-result-object v2
 
-    .line 6
-    invoke-virtual {v2}, Lo1/b;->e()J
+    .line 8
+    invoke-virtual {v2}, Lcom/google/android/gms/internal/measurement/c;->A()J
 
     move-result-wide v3
 
-    .line 7
-    invoke-virtual {v2}, Lo1/b;->a()Landroidx/compose/ui/graphics/t;
+    .line 9
+    invoke-virtual {v2}, Lcom/google/android/gms/internal/measurement/c;->r()Landroidx/compose/ui/graphics/t;
 
     move-result-object v5
 
-    invoke-interface {v5}, Landroidx/compose/ui/graphics/t;->f()V
-
-    .line 8
-    :try_start_0
-    iget-object v5, v2, Lo1/b;->a:Lo1/d;
-
-    .line 9
-    iget-object v5, v5, Lo1/d;->a:Lo1/b;
+    invoke-interface {v5}, Landroidx/compose/ui/graphics/t;->g()V
 
     .line 10
-    invoke-virtual {v5}, Lo1/b;->a()Landroidx/compose/ui/graphics/t;
+    :try_start_0
+    iget-object v5, v2, Lcom/google/android/gms/internal/measurement/c;->c:Ljava/lang/Object;
+
+    check-cast v5, Lcom/google/android/play/core/integrity/h;
+
+    .line 11
+    iget-object v5, v5, Lcom/google/android/play/core/integrity/h;->c:Ljava/lang/Object;
+
+    check-cast v5, Lcom/google/android/gms/internal/measurement/c;
+
+    invoke-virtual {v5}, Lcom/google/android/gms/internal/measurement/c;->r()Landroidx/compose/ui/graphics/t;
 
     move-result-object v5
 
     const/4 v6, 0x1
 
-    invoke-interface {v5, v1, v6}, Landroidx/compose/ui/graphics/t;->o(Landroidx/compose/ui/graphics/q0;I)V
+    invoke-interface {v5, v1, v6}, Landroidx/compose/ui/graphics/t;->p(Landroidx/compose/ui/graphics/S;I)V
 
-    .line 11
-    invoke-interface {v0, p1}, Lzh/c;->invoke(Ljava/lang/Object;)Ljava/lang/Object;
+    .line 12
+    invoke-interface {v0, p1}, Lka/c;->invoke(Ljava/lang/Object;)Ljava/lang/Object;
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    .line 12
-    invoke-static {v2, v3, v4}, Landroid/support/v4/media/session/a;->R(Lo1/b;J)V
+    .line 13
+    invoke-static {v2, v3, v4}, Landroidx/appcompat/view/menu/F;->N(Lcom/google/android/gms/internal/measurement/c;J)V
 
     goto :goto_0
 
     :catchall_0
     move-exception p1
 
-    invoke-static {v2, v3, v4}, Landroid/support/v4/media/session/a;->R(Lo1/b;J)V
-
-    .line 13
-    throw p1
+    invoke-static {v2, v3, v4}, Landroidx/appcompat/view/menu/F;->N(Lcom/google/android/gms/internal/measurement/c;J)V
 
     .line 14
-    :cond_0
-    iget-object v0, v0, Landroidx/compose/ui/graphics/layer/b;->d:Lzh/c;
+    throw p1
 
     .line 15
-    invoke-interface {v0, p1}, Lzh/c;->invoke(Ljava/lang/Object;)Ljava/lang/Object;
+    :cond_0
+    iget-object v0, v0, Landroidx/compose/ui/graphics/layer/a;->d:Lkotlin/jvm/internal/Lambda;
+
+    .line 16
+    invoke-interface {v0, p1}, Lka/c;->invoke(Ljava/lang/Object;)Ljava/lang/Object;
 
     :goto_0
     return-void

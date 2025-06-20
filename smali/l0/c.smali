@@ -1,179 +1,74 @@
-.class public final synthetic Ll0/c;
+.class public abstract LL0/c;
 .super Ljava/lang/Object;
 .source "SourceFile"
 
-# interfaces
-.implements Landroidx/camera/core/impl/b2;
-
 
 # instance fields
-.field public final synthetic a:Ll0/d;
+.field public final a:Ljava/lang/Object;
 
-.field public final synthetic b:Ljava/lang/String;
+.field public final b:Ljava/lang/String;
 
-.field public final synthetic c:Ljava/lang/String;
+.field public final c:LL0/h;
 
-.field public final synthetic d:Landroidx/camera/core/impl/m2;
+.field public final d:Ljava/lang/Object;
 
-.field public final synthetic e:Landroidx/camera/core/impl/j;
+.field public final e:LM0/i;
 
-.field public final synthetic f:Landroidx/camera/core/impl/j;
+.field public final f:Ljava/lang/Object;
+
+.field public final g:Ljava/lang/Object;
 
 
 # direct methods
-.method public synthetic constructor <init>(Ll0/d;Ljava/lang/String;Ljava/lang/String;Landroidx/camera/core/impl/m2;Landroidx/camera/core/impl/j;Landroidx/camera/core/impl/j;)V
+.method public constructor <init>(Ljava/lang/Object;Ljava/lang/String;LL0/h;Ljava/lang/Object;LM0/i;Ljava/util/Collection;Ljava/util/Collection;)V
     .locals 0
 
     .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    iput-object p1, p0, Ll0/c;->a:Ll0/d;
+    .line 2
+    .line 3
+    .line 4
+    iput-object p1, p0, LL0/c;->a:Ljava/lang/Object;
 
-    iput-object p2, p0, Ll0/c;->b:Ljava/lang/String;
+    .line 5
+    .line 6
+    iput-object p2, p0, LL0/c;->b:Ljava/lang/String;
 
-    iput-object p3, p0, Ll0/c;->c:Ljava/lang/String;
+    .line 7
+    .line 8
+    iput-object p3, p0, LL0/c;->c:LL0/h;
 
-    iput-object p4, p0, Ll0/c;->d:Landroidx/camera/core/impl/m2;
+    .line 9
+    .line 10
+    iput-object p4, p0, LL0/c;->d:Ljava/lang/Object;
 
-    iput-object p5, p0, Ll0/c;->e:Landroidx/camera/core/impl/j;
+    .line 11
+    .line 12
+    iput-object p5, p0, LL0/c;->e:LM0/i;
 
-    iput-object p6, p0, Ll0/c;->f:Landroidx/camera/core/impl/j;
+    .line 13
+    .line 14
+    iput-object p6, p0, LL0/c;->f:Ljava/lang/Object;
 
+    .line 15
+    .line 16
+    iput-object p7, p0, LL0/c;->g:Ljava/lang/Object;
+
+    .line 17
+    .line 18
     return-void
 .end method
 
 
 # virtual methods
-.method public final a(Landroidx/camera/core/impl/e2;Landroidx/camera/core/impl/SessionConfig$SessionError;)V
-    .locals 6
+.method public a()Ljava/util/List;
+    .locals 1
 
     .line 1
-    iget-object v1, p0, Ll0/c;->b:Ljava/lang/String;
+    sget-object v0, Lkotlin/collections/EmptyList;->INSTANCE:Lkotlin/collections/EmptyList;
 
     .line 2
     .line 3
-    iget-object v2, p0, Ll0/c;->c:Ljava/lang/String;
-
-    .line 4
-    .line 5
-    iget-object v3, p0, Ll0/c;->d:Landroidx/camera/core/impl/m2;
-
-    .line 6
-    .line 7
-    iget-object v4, p0, Ll0/c;->e:Landroidx/camera/core/impl/j;
-
-    .line 8
-    .line 9
-    iget-object v5, p0, Ll0/c;->f:Landroidx/camera/core/impl/j;
-
-    .line 10
-    .line 11
-    iget-object p1, p0, Ll0/c;->a:Ll0/d;
-
-    .line 12
-    .line 13
-    invoke-virtual {p1}, Landroidx/camera/core/f;->b()Landroidx/camera/core/impl/y;
-
-    .line 14
-    .line 15
-    .line 16
-    move-result-object p2
-
-    .line 17
-    if-nez p2, :cond_0
-
-    .line 18
-    .line 19
-    goto :goto_1
-
-    .line 20
-    :cond_0
-    invoke-virtual {p1}, Ll0/d;->C()V
-
-    .line 21
-    .line 22
-    .line 23
-    move-object v0, p1
-
-    .line 24
-    invoke-virtual/range {v0 .. v5}, Ll0/d;->D(Ljava/lang/String;Ljava/lang/String;Landroidx/camera/core/impl/m2;Landroidx/camera/core/impl/j;Landroidx/camera/core/impl/j;)Ljava/util/List;
-
-    .line 25
-    .line 26
-    .line 27
-    move-result-object p2
-
-    .line 28
-    invoke-virtual {p1, p2}, Landroidx/camera/core/f;->B(Ljava/util/List;)V
-
-    .line 29
-    .line 30
-    .line 31
-    invoke-virtual {p1}, Landroidx/camera/core/f;->n()V
-
-    .line 32
-    .line 33
-    .line 34
-    iget-object p1, p1, Ll0/d;->p:Ll0/g;
-
-    .line 35
-    .line 36
-    invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
-
-    .line 37
-    .line 38
-    .line 39
-    invoke-static {}, Laf/g0;->h()V
-
-    .line 40
-    .line 41
-    .line 42
-    iget-object p2, p1, Ll0/g;->b:Ljava/util/Set;
-
-    .line 43
-    .line 44
-    invoke-interface {p2}, Ljava/util/Set;->iterator()Ljava/util/Iterator;
-
-    .line 45
-    .line 46
-    .line 47
-    move-result-object p2
-
-    .line 48
-    :goto_0
-    invoke-interface {p2}, Ljava/util/Iterator;->hasNext()Z
-
-    .line 49
-    .line 50
-    .line 51
-    move-result v0
-
-    .line 52
-    if-eqz v0, :cond_1
-
-    .line 53
-    .line 54
-    invoke-interface {p2}, Ljava/util/Iterator;->next()Ljava/lang/Object;
-
-    .line 55
-    .line 56
-    .line 57
-    move-result-object v0
-
-    .line 58
-    check-cast v0, Landroidx/camera/core/f;
-
-    .line 59
-    .line 60
-    invoke-virtual {p1, v0}, Ll0/g;->d(Landroidx/camera/core/f;)V
-
-    .line 61
-    .line 62
-    .line 63
-    goto :goto_0
-
-    .line 64
-    :cond_1
-    :goto_1
-    return-void
+    return-object v0
 .end method

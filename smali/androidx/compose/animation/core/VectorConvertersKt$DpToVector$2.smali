@@ -3,14 +3,14 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lzh/c;
+.implements Lka/c;
 
 
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "Lkotlin/jvm/internal/Lambda;",
-        "Lzh/c;"
+        "Lka/c;"
     }
 .end annotation
 
@@ -19,11 +19,11 @@
         "\u0000\u000e\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0008\u0003\u0010\u0005\u001a\u00020\u00022\u0006\u0010\u0001\u001a\u00020\u0000H\n\u00a2\u0006\u0004\u0008\u0003\u0010\u0004"
     }
     d2 = {
-        "Landroidx/compose/animation/core/i;",
+        "Landroidx/compose/animation/core/h;",
         "it",
-        "Lh2/e;",
+        "LM0/e;",
         "invoke-u2uoSUM",
-        "(Landroidx/compose/animation/core/i;)F",
+        "(Landroidx/compose/animation/core/h;)F",
         "<anonymous>"
     }
     k = 0x3
@@ -68,11 +68,11 @@
     .locals 1
 
     .line 1
-    check-cast p1, Landroidx/compose/animation/core/i;
+    check-cast p1, Landroidx/compose/animation/core/h;
 
     .line 2
     .line 3
-    invoke-virtual {p0, p1}, Landroidx/compose/animation/core/VectorConvertersKt$DpToVector$2;->invoke-u2uoSUM(Landroidx/compose/animation/core/i;)F
+    invoke-virtual {p0, p1}, Landroidx/compose/animation/core/VectorConvertersKt$DpToVector$2;->invoke-u2uoSUM(Landroidx/compose/animation/core/h;)F
 
     .line 4
     .line 5
@@ -80,11 +80,11 @@
     move-result p1
 
     .line 7
-    new-instance v0, Lh2/e;
+    new-instance v0, LM0/e;
 
     .line 8
     .line 9
-    invoke-direct {v0, p1}, Lh2/e;-><init>(F)V
+    invoke-direct {v0, p1}, LM0/e;-><init>(F)V
 
     .line 10
     .line 11
@@ -92,11 +92,11 @@
     return-object v0
 .end method
 
-.method public final invoke-u2uoSUM(Landroidx/compose/animation/core/i;)F
+.method public final invoke-u2uoSUM(Landroidx/compose/animation/core/h;)F
     .locals 0
 
     .line 1
-    iget p1, p1, Landroidx/compose/animation/core/i;->a:F
+    iget p1, p1, Landroidx/compose/animation/core/h;->a:F
 
     .line 2
     .line 3

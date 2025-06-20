@@ -15,15 +15,10 @@
     .locals 0
 
     .line 1
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
-
-    .line 2
-    .line 3
-    .line 4
     iput p1, p0, Lcom/applovin/exoplayer2/ui/m;->b:I
 
-    .line 5
-    .line 6
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
     return-void
 .end method
 
@@ -41,14 +36,14 @@
 
     packed-switch v0, :pswitch_data_0
 
-    invoke-static {p1, p2}, Lcom/applovin/exoplayer2/ui/f$c;->c(Lcom/applovin/exoplayer2/ui/f$c;Lcom/applovin/exoplayer2/ui/f$c;)I
+    invoke-static {p1, p2}, Lcom/applovin/exoplayer2/ui/f$c;->d(Lcom/applovin/exoplayer2/ui/f$c;Lcom/applovin/exoplayer2/ui/f$c;)I
 
     move-result p1
 
     return p1
 
     :pswitch_0
-    invoke-static {p1, p2}, Lcom/applovin/exoplayer2/ui/f$c;->d(Lcom/applovin/exoplayer2/ui/f$c;Lcom/applovin/exoplayer2/ui/f$c;)I
+    invoke-static {p1, p2}, Lcom/applovin/exoplayer2/ui/f$c;->c(Lcom/applovin/exoplayer2/ui/f$c;Lcom/applovin/exoplayer2/ui/f$c;)I
 
     move-result p1
 

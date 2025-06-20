@@ -83,25 +83,25 @@
 
     const/4 v0, 0x1
 
-    .line 13
+    .line 14
     invoke-static {p2, p0, p1, v0, v0}, Lcom/applovin/impl/xp;->b([JJZZ)I
 
     move-result v1
 
-    .line 14
+    .line 15
     aget-wide v2, p2, v1
 
-    .line 15
+    .line 16
     aget-wide v4, p3, v1
 
     add-int/2addr v1, v0
 
-    .line 16
+    .line 17
     array-length v0, p2
 
     if-ne v1, v0, :cond_0
 
-    .line 17
+    .line 18
     invoke-static {v2, v3}, Ljava/lang/Long;->valueOf(J)Ljava/lang/Long;
 
     move-result-object p0
@@ -116,11 +116,11 @@
 
     return-object p0
 
-    .line 18
+    .line 19
     :cond_0
     aget-wide v6, p2, v1
 
-    .line 19
+    .line 20
     aget-wide p2, p3, v1
 
     cmp-long v0, v6, v2
@@ -155,7 +155,7 @@
 
     add-long/2addr p2, v4
 
-    .line 20
+    .line 21
     invoke-static {p0, p1}, Ljava/lang/Long;->valueOf(J)Ljava/lang/Long;
 
     move-result-object p0
@@ -254,16 +254,17 @@
 .method public a(J)J
     .locals 2
 
+    .line 11
     iget-object v0, p0, Lcom/applovin/impl/jf;->a:[J
 
     iget-object v1, p0, Lcom/applovin/impl/jf;->b:[J
 
-    .line 11
+    .line 12
     invoke-static {p1, p2, v0, v1}, Lcom/applovin/impl/jf;->a(J[J[J)Landroid/util/Pair;
 
     move-result-object p1
 
-    .line 12
+    .line 13
     iget-object p1, p1, Landroid/util/Pair;->second:Ljava/lang/Object;
 
     check-cast p1, Ljava/lang/Long;
@@ -282,13 +283,13 @@
 .method public b(J)Lcom/applovin/impl/ij$a;
     .locals 6
 
+    .line 2
     iget-wide v4, p0, Lcom/applovin/impl/jf;->c:J
 
     const-wide/16 v2, 0x0
 
     move-wide v0, p1
 
-    .line 2
     invoke-static/range {v0 .. v5}, Lcom/applovin/impl/xp;->b(JJJ)J
 
     move-result-wide p1
@@ -360,7 +361,10 @@
 .method public d()J
     .locals 2
 
+    .line 1
     iget-wide v0, p0, Lcom/applovin/impl/jf;->c:J
 
+    .line 2
+    .line 3
     return-wide v0
 .end method

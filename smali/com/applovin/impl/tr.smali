@@ -8,11 +8,11 @@
     .locals 2
 
     .line 1
-    new-instance v0, Lcom/applovin/impl/mv;
+    new-instance v0, Lcom/applovin/impl/D2;
 
-    const/4 v1, 0x2
+    const/4 v1, 0x1
 
-    invoke-direct {v0, p0, v1}, Lcom/applovin/impl/mv;-><init>(Landroid/webkit/WebView;I)V
+    invoke-direct {v0, p0, v1}, Lcom/applovin/impl/D2;-><init>(Landroid/webkit/WebView;I)V
 
     invoke-static {v0}, Lcom/applovin/sdk/AppLovinSdkUtils;->runOnUiThread(Ljava/lang/Runnable;)V
 
@@ -28,11 +28,11 @@
 
     .line 2
     :cond_0
-    new-instance v0, Lcom/applovin/impl/pw;
+    new-instance v0, Lcom/applovin/impl/F3;
 
     const/4 v1, 0x1
 
-    invoke-direct {v0, p0, v1, p1}, Lcom/applovin/impl/pw;-><init>(Landroid/webkit/WebView;ILjava/lang/String;)V
+    invoke-direct {v0, p0, v1, p1}, Lcom/applovin/impl/F3;-><init>(Landroid/webkit/WebView;ILjava/lang/String;)V
 
     invoke-static {v0}, Lcom/applovin/sdk/AppLovinSdkUtils;->runOnUiThread(Ljava/lang/Runnable;)V
 
@@ -42,13 +42,14 @@
 .method public static a(Landroid/webkit/WebView;Ljava/lang/String;Ljava/lang/String;Lcom/applovin/impl/sdk/j;)V
     .locals 3
 
+    .line 3
     const-string v0, "Forwarding \""
 
     if-nez p0, :cond_0
 
     return-void
 
-    .line 3
+    .line 4
     :cond_0
     :try_start_0
     invoke-virtual {p3}, Lcom/applovin/impl/sdk/j;->I()Lcom/applovin/impl/sdk/n;
@@ -86,14 +87,14 @@
 
     goto :goto_1
 
-    .line 4
+    .line 5
     :cond_1
     :goto_0
-    new-instance v0, Lcom/applovin/impl/pw;
+    new-instance v0, Lcom/applovin/impl/F3;
 
     const/4 v1, 0x0
 
-    invoke-direct {v0, p0, v1, p1}, Lcom/applovin/impl/pw;-><init>(Landroid/webkit/WebView;ILjava/lang/String;)V
+    invoke-direct {v0, p0, v1, p1}, Lcom/applovin/impl/F3;-><init>(Landroid/webkit/WebView;ILjava/lang/String;)V
 
     invoke-static {v0}, Lcom/applovin/sdk/AppLovinSdkUtils;->runOnUiThread(Ljava/lang/Runnable;)V
     :try_end_0
@@ -101,7 +102,7 @@
 
     goto :goto_2
 
-    .line 5
+    .line 6
     :goto_1
     invoke-virtual {p3}, Lcom/applovin/impl/sdk/j;->I()Lcom/applovin/impl/sdk/n;
 
@@ -119,15 +120,15 @@
 
     invoke-virtual {v0, p2, v1, p0}, Lcom/applovin/impl/sdk/n;->a(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)V
 
+    .line 7
     :cond_2
     const-string v0, "operation"
 
-    .line 6
     invoke-static {v0, p1}, Lcom/applovin/impl/sdk/utils/CollectionUtils;->hashMap(Ljava/lang/String;Ljava/lang/String;)Ljava/util/HashMap;
 
     move-result-object p1
 
-    .line 7
+    .line 8
     invoke-virtual {p3}, Lcom/applovin/impl/sdk/j;->D()Lcom/applovin/impl/la;
 
     move-result-object p3
@@ -156,10 +157,10 @@
 
     invoke-virtual {v0, p0}, Landroid/view/ViewGroup;->removeView(Landroid/view/View;)V
 
+    .line 4
     :cond_0
     const-string v0, "about:blank"
 
-    .line 4
     invoke-virtual {p0, v0}, Landroid/webkit/WebView;->loadUrl(Ljava/lang/String;)V
 
     .line 5
@@ -235,54 +236,24 @@
 .method public static d(Landroid/webkit/WebView;)V
     .locals 2
 
-    .line 1
     if-nez p0, :cond_0
 
-    .line 2
-    .line 3
     return-void
 
-    .line 4
+    .line 2
     :cond_0
-    new-instance v0, Lcom/applovin/impl/mv;
+    new-instance v0, Lcom/applovin/impl/D2;
 
-    .line 5
-    .line 6
-    const/4 v1, 0x1
+    const/4 v1, 0x2
 
-    .line 7
-    invoke-direct {v0, p0, v1}, Lcom/applovin/impl/mv;-><init>(Landroid/webkit/WebView;I)V
+    invoke-direct {v0, p0, v1}, Lcom/applovin/impl/D2;-><init>(Landroid/webkit/WebView;I)V
 
-    .line 8
-    .line 9
-    .line 10
     invoke-static {v0}, Lcom/applovin/sdk/AppLovinSdkUtils;->runOnUiThread(Ljava/lang/Runnable;)V
 
-    .line 11
-    .line 12
-    .line 13
     return-void
 .end method
 
-.method public static synthetic e(Landroid/webkit/WebView;)V
-    .locals 0
-
-    .line 1
-    invoke-static {p0}, Lcom/applovin/impl/tr;->b(Landroid/webkit/WebView;)V
-
-    return-void
-.end method
-
-.method public static synthetic f(Landroid/webkit/WebView;)V
-    .locals 0
-
-    .line 1
-    invoke-static {p0}, Lcom/applovin/impl/tr;->c(Landroid/webkit/WebView;)V
-
-    return-void
-.end method
-
-.method public static synthetic g(Landroid/webkit/WebView;Ljava/lang/String;)V
+.method public static synthetic d(Landroid/webkit/WebView;Ljava/lang/String;)V
     .locals 0
 
     .line 1
@@ -291,11 +262,29 @@
     return-void
 .end method
 
-.method public static synthetic h(Landroid/webkit/WebView;Ljava/lang/String;)V
+.method public static synthetic e(Landroid/webkit/WebView;)V
+    .locals 0
+
+    .line 1
+    invoke-static {p0}, Lcom/applovin/impl/tr;->c(Landroid/webkit/WebView;)V
+
+    return-void
+.end method
+
+.method public static synthetic f(Landroid/webkit/WebView;Ljava/lang/String;)V
     .locals 0
 
     .line 1
     invoke-static {p0, p1}, Lcom/applovin/impl/tr;->b(Landroid/webkit/WebView;Ljava/lang/String;)V
+
+    return-void
+.end method
+
+.method public static synthetic g(Landroid/webkit/WebView;)V
+    .locals 0
+
+    .line 1
+    invoke-static {p0}, Lcom/applovin/impl/tr;->b(Landroid/webkit/WebView;)V
 
     return-void
 .end method

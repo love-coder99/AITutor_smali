@@ -28,6 +28,9 @@
 .field private mAsyncFontPending:Z
 
 .field private final mAutoSizeTextHelper:Landroidx/appcompat/widget/AppCompatTextViewAutoSizeHelper;
+    .annotation build Landroidx/annotation/NonNull;
+    .end annotation
+.end field
 
 .field private mDrawableBottomTint:Landroidx/appcompat/widget/TintInfo;
 
@@ -50,11 +53,18 @@
 .field private mStyle:I
 
 .field private final mView:Landroid/widget/TextView;
+    .annotation build Landroidx/annotation/NonNull;
+    .end annotation
+.end field
 
 
 # direct methods
 .method public constructor <init>(Landroid/widget/TextView;)V
     .locals 1
+    .param p1    # Landroid/widget/TextView;
+        .annotation build Landroidx/annotation/NonNull;
+        .end annotation
+    .end param
 
     .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -455,20 +465,35 @@
 .method private setCompoundTints()V
     .locals 1
 
+    .line 1
     iget-object v0, p0, Landroidx/appcompat/widget/AppCompatTextHelper;->mDrawableTint:Landroidx/appcompat/widget/TintInfo;
 
+    .line 2
+    .line 3
     iput-object v0, p0, Landroidx/appcompat/widget/AppCompatTextHelper;->mDrawableLeftTint:Landroidx/appcompat/widget/TintInfo;
 
+    .line 4
+    .line 5
     iput-object v0, p0, Landroidx/appcompat/widget/AppCompatTextHelper;->mDrawableTopTint:Landroidx/appcompat/widget/TintInfo;
 
+    .line 6
+    .line 7
     iput-object v0, p0, Landroidx/appcompat/widget/AppCompatTextHelper;->mDrawableRightTint:Landroidx/appcompat/widget/TintInfo;
 
+    .line 8
+    .line 9
     iput-object v0, p0, Landroidx/appcompat/widget/AppCompatTextHelper;->mDrawableBottomTint:Landroidx/appcompat/widget/TintInfo;
 
+    .line 10
+    .line 11
     iput-object v0, p0, Landroidx/appcompat/widget/AppCompatTextHelper;->mDrawableStartTint:Landroidx/appcompat/widget/TintInfo;
 
+    .line 12
+    .line 13
     iput-object v0, p0, Landroidx/appcompat/widget/AppCompatTextHelper;->mDrawableEndTint:Landroidx/appcompat/widget/TintInfo;
 
+    .line 14
+    .line 15
     return-void
 .end method
 
@@ -492,7 +517,7 @@
     .locals 10
 
     .line 1
-    sget v0, Lg/j;->TextAppearance_android_textStyle:I
+    sget v0, Li/j;->TextAppearance_android_textStyle:I
 
     .line 2
     .line 3
@@ -530,7 +555,7 @@
 
     .line 18
     .line 19
-    sget v4, Lg/j;->TextAppearance_android_textFontWeight:I
+    sget v4, Li/j;->TextAppearance_android_textFontWeight:I
 
     .line 20
     .line 21
@@ -562,7 +587,7 @@
     .line 33
     .line 34
     :cond_0
-    sget v4, Lg/j;->TextAppearance_android_fontFamily:I
+    sget v4, Li/j;->TextAppearance_android_fontFamily:I
 
     .line 35
     .line 36
@@ -584,7 +609,7 @@
 
     .line 43
     .line 44
-    sget v4, Lg/j;->TextAppearance_fontFamily:I
+    sget v4, Li/j;->TextAppearance_fontFamily:I
 
     .line 45
     .line 46
@@ -604,7 +629,7 @@
 
     .line 53
     :cond_1
-    sget p1, Lg/j;->TextAppearance_android_typeface:I
+    sget p1, Li/j;->TextAppearance_android_typeface:I
 
     .line 54
     .line 55
@@ -624,7 +649,7 @@
 
     .line 62
     .line 63
-    sget p1, Lg/j;->TextAppearance_android_typeface:I
+    sget p1, Li/j;->TextAppearance_android_typeface:I
 
     .line 64
     .line 65
@@ -701,7 +726,7 @@
 
     .line 94
     .line 95
-    sget v4, Lg/j;->TextAppearance_fontFamily:I
+    sget v4, Li/j;->TextAppearance_fontFamily:I
 
     .line 96
     .line 97
@@ -717,7 +742,7 @@
 
     .line 102
     .line 103
-    sget v4, Lg/j;->TextAppearance_fontFamily:I
+    sget v4, Li/j;->TextAppearance_fontFamily:I
 
     .line 104
     .line 105
@@ -725,7 +750,7 @@
 
     .line 106
     :cond_7
-    sget v4, Lg/j;->TextAppearance_android_fontFamily:I
+    sget v4, Li/j;->TextAppearance_android_fontFamily:I
 
     .line 107
     .line 108
@@ -777,7 +802,7 @@
 
     .line 131
     .line 132
-    invoke-virtual {p2, v4, p1, v9}, Landroidx/appcompat/widget/TintTypedArray;->getFont(IILe3/j;)Landroid/graphics/Typeface;
+    invoke-virtual {p2, v4, p1, v9}, Landroidx/appcompat/widget/TintTypedArray;->getFont(IILk1/j;)Landroid/graphics/Typeface;
 
     .line 133
     .line 134
@@ -1284,6 +1309,8 @@
 
 .method public getCompoundDrawableTintList()Landroid/content/res/ColorStateList;
     .locals 1
+    .annotation build Landroidx/annotation/Nullable;
+    .end annotation
 
     .line 1
     iget-object v0, p0, Landroidx/appcompat/widget/AppCompatTextHelper;->mDrawableTint:Landroidx/appcompat/widget/TintInfo;
@@ -1311,6 +1338,8 @@
 
 .method public getCompoundDrawableTintMode()Landroid/graphics/PorterDuff$Mode;
     .locals 1
+    .annotation build Landroidx/annotation/Nullable;
+    .end annotation
 
     .line 1
     iget-object v0, p0, Landroidx/appcompat/widget/AppCompatTextHelper;->mDrawableTint:Landroidx/appcompat/widget/TintInfo;
@@ -1357,6 +1386,10 @@
 
 .method public loadFromAttributes(Landroid/util/AttributeSet;I)V
     .locals 17
+    .param p1    # Landroid/util/AttributeSet;
+        .annotation build Landroidx/annotation/Nullable;
+        .end annotation
+    .end param
 
     .line 1
     move-object/from16 v7, p0
@@ -1391,7 +1424,7 @@
     move-result-object v10
 
     .line 17
-    sget-object v0, Lg/j;->AppCompatTextHelper:[I
+    sget-object v0, Li/j;->AppCompatTextHelper:[I
 
     .line 18
     .line 19
@@ -1418,7 +1451,7 @@
     move-result-object v1
 
     .line 30
-    sget-object v2, Lg/j;->AppCompatTextHelper:[I
+    sget-object v2, Li/j;->AppCompatTextHelper:[I
 
     .line 31
     .line 32
@@ -1438,12 +1471,12 @@
 
     .line 39
     .line 40
-    invoke-static/range {v0 .. v5}, Landroidx/core/view/y0;->r(Landroid/view/View;Landroid/content/Context;[ILandroid/util/AttributeSet;Landroid/content/res/TypedArray;I)V
+    invoke-static/range {v0 .. v5}, Landroidx/core/view/e0;->r(Landroid/view/View;Landroid/content/Context;[ILandroid/util/AttributeSet;Landroid/content/res/TypedArray;I)V
 
     .line 41
     .line 42
     .line 43
-    sget v0, Lg/j;->AppCompatTextHelper_android_textAppearance:I
+    sget v0, Li/j;->AppCompatTextHelper_android_textAppearance:I
 
     .line 44
     .line 45
@@ -1458,7 +1491,7 @@
     move-result v0
 
     .line 50
-    sget v1, Lg/j;->AppCompatTextHelper_android_drawableLeft:I
+    sget v1, Li/j;->AppCompatTextHelper_android_drawableLeft:I
 
     .line 51
     .line 52
@@ -1474,7 +1507,7 @@
 
     .line 57
     .line 58
-    sget v1, Lg/j;->AppCompatTextHelper_android_drawableLeft:I
+    sget v1, Li/j;->AppCompatTextHelper_android_drawableLeft:I
 
     .line 59
     .line 60
@@ -1499,7 +1532,7 @@
     .line 69
     .line 70
     :cond_0
-    sget v1, Lg/j;->AppCompatTextHelper_android_drawableTop:I
+    sget v1, Li/j;->AppCompatTextHelper_android_drawableTop:I
 
     .line 71
     .line 72
@@ -1515,7 +1548,7 @@
 
     .line 77
     .line 78
-    sget v1, Lg/j;->AppCompatTextHelper_android_drawableTop:I
+    sget v1, Li/j;->AppCompatTextHelper_android_drawableTop:I
 
     .line 79
     .line 80
@@ -1540,7 +1573,7 @@
     .line 89
     .line 90
     :cond_1
-    sget v1, Lg/j;->AppCompatTextHelper_android_drawableRight:I
+    sget v1, Li/j;->AppCompatTextHelper_android_drawableRight:I
 
     .line 91
     .line 92
@@ -1556,7 +1589,7 @@
 
     .line 97
     .line 98
-    sget v1, Lg/j;->AppCompatTextHelper_android_drawableRight:I
+    sget v1, Li/j;->AppCompatTextHelper_android_drawableRight:I
 
     .line 99
     .line 100
@@ -1581,7 +1614,7 @@
     .line 109
     .line 110
     :cond_2
-    sget v1, Lg/j;->AppCompatTextHelper_android_drawableBottom:I
+    sget v1, Li/j;->AppCompatTextHelper_android_drawableBottom:I
 
     .line 111
     .line 112
@@ -1597,7 +1630,7 @@
 
     .line 117
     .line 118
-    sget v1, Lg/j;->AppCompatTextHelper_android_drawableBottom:I
+    sget v1, Li/j;->AppCompatTextHelper_android_drawableBottom:I
 
     .line 119
     .line 120
@@ -1622,7 +1655,7 @@
     .line 129
     .line 130
     :cond_3
-    sget v1, Lg/j;->AppCompatTextHelper_android_drawableStart:I
+    sget v1, Li/j;->AppCompatTextHelper_android_drawableStart:I
 
     .line 131
     .line 132
@@ -1638,7 +1671,7 @@
 
     .line 137
     .line 138
-    sget v1, Lg/j;->AppCompatTextHelper_android_drawableStart:I
+    sget v1, Li/j;->AppCompatTextHelper_android_drawableStart:I
 
     .line 139
     .line 140
@@ -1663,7 +1696,7 @@
     .line 149
     .line 150
     :cond_4
-    sget v1, Lg/j;->AppCompatTextHelper_android_drawableEnd:I
+    sget v1, Li/j;->AppCompatTextHelper_android_drawableEnd:I
 
     .line 151
     .line 152
@@ -1679,7 +1712,7 @@
 
     .line 157
     .line 158
-    sget v1, Lg/j;->AppCompatTextHelper_android_drawableEnd:I
+    sget v1, Li/j;->AppCompatTextHelper_android_drawableEnd:I
 
     .line 159
     .line 160
@@ -1737,7 +1770,7 @@
 
     .line 186
     .line 187
-    sget-object v5, Lg/j;->TextAppearance:[I
+    sget-object v5, Li/j;->TextAppearance:[I
 
     .line 188
     .line 189
@@ -1753,7 +1786,7 @@
 
     .line 194
     .line 195
-    sget v5, Lg/j;->TextAppearance_textAllCaps:I
+    sget v5, Li/j;->TextAppearance_textAllCaps:I
 
     .line 196
     .line 197
@@ -1769,7 +1802,7 @@
 
     .line 202
     .line 203
-    sget v5, Lg/j;->TextAppearance_textAllCaps:I
+    sget v5, Li/j;->TextAppearance_textAllCaps:I
 
     .line 204
     .line 205
@@ -1808,7 +1841,7 @@
 
     .line 219
     .line 220
-    sget v4, Lg/j;->TextAppearance_android_textColor:I
+    sget v4, Li/j;->TextAppearance_android_textColor:I
 
     .line 221
     .line 222
@@ -1824,7 +1857,7 @@
 
     .line 227
     .line 228
-    sget v4, Lg/j;->TextAppearance_android_textColor:I
+    sget v4, Li/j;->TextAppearance_android_textColor:I
 
     .line 229
     .line 230
@@ -1844,7 +1877,7 @@
 
     .line 236
     :goto_1
-    sget v12, Lg/j;->TextAppearance_android_textColorHint:I
+    sget v12, Li/j;->TextAppearance_android_textColorHint:I
 
     .line 237
     .line 238
@@ -1860,7 +1893,7 @@
 
     .line 243
     .line 244
-    sget v12, Lg/j;->TextAppearance_android_textColorHint:I
+    sget v12, Li/j;->TextAppearance_android_textColorHint:I
 
     .line 245
     .line 246
@@ -1880,7 +1913,7 @@
 
     .line 252
     :goto_2
-    sget v13, Lg/j;->TextAppearance_android_textColorLink:I
+    sget v13, Li/j;->TextAppearance_android_textColorLink:I
 
     .line 253
     .line 254
@@ -1896,7 +1929,7 @@
 
     .line 259
     .line 260
-    sget v13, Lg/j;->TextAppearance_android_textColorLink:I
+    sget v13, Li/j;->TextAppearance_android_textColorLink:I
 
     .line 261
     .line 262
@@ -1930,7 +1963,7 @@
 
     .line 272
     :goto_4
-    sget v3, Lg/j;->TextAppearance_textLocale:I
+    sget v3, Li/j;->TextAppearance_textLocale:I
 
     .line 273
     .line 274
@@ -1946,7 +1979,7 @@
 
     .line 279
     .line 280
-    sget v3, Lg/j;->TextAppearance_textLocale:I
+    sget v3, Li/j;->TextAppearance_textLocale:I
 
     .line 281
     .line 282
@@ -1970,7 +2003,7 @@
 
     .line 289
     .line 290
-    sget v15, Lg/j;->TextAppearance_fontVariationSettings:I
+    sget v15, Li/j;->TextAppearance_fontVariationSettings:I
 
     .line 291
     .line 292
@@ -1986,7 +2019,7 @@
 
     .line 297
     .line 298
-    sget v15, Lg/j;->TextAppearance_fontVariationSettings:I
+    sget v15, Li/j;->TextAppearance_fontVariationSettings:I
 
     .line 299
     .line 300
@@ -2037,7 +2070,7 @@
 
     .line 317
     :goto_7
-    sget-object v0, Lg/j;->TextAppearance:[I
+    sget-object v0, Li/j;->TextAppearance:[I
 
     .line 318
     .line 319
@@ -2053,7 +2086,7 @@
 
     .line 324
     .line 325
-    sget v2, Lg/j;->TextAppearance_textAllCaps:I
+    sget v2, Li/j;->TextAppearance_textAllCaps:I
 
     .line 326
     .line 327
@@ -2069,7 +2102,7 @@
 
     .line 332
     .line 333
-    sget v2, Lg/j;->TextAppearance_textAllCaps:I
+    sget v2, Li/j;->TextAppearance_textAllCaps:I
 
     .line 334
     .line 335
@@ -2097,7 +2130,7 @@
 
     .line 345
     .line 346
-    sget v11, Lg/j;->TextAppearance_android_textColor:I
+    sget v11, Li/j;->TextAppearance_android_textColor:I
 
     .line 347
     .line 348
@@ -2113,7 +2146,7 @@
 
     .line 353
     .line 354
-    sget v4, Lg/j;->TextAppearance_android_textColor:I
+    sget v4, Li/j;->TextAppearance_android_textColor:I
 
     .line 355
     .line 356
@@ -2126,7 +2159,7 @@
 
     .line 360
     :cond_f
-    sget v11, Lg/j;->TextAppearance_android_textColorHint:I
+    sget v11, Li/j;->TextAppearance_android_textColorHint:I
 
     .line 361
     .line 362
@@ -2142,7 +2175,7 @@
 
     .line 367
     .line 368
-    sget v11, Lg/j;->TextAppearance_android_textColorHint:I
+    sget v11, Li/j;->TextAppearance_android_textColorHint:I
 
     .line 369
     .line 370
@@ -2155,7 +2188,7 @@
 
     .line 374
     :cond_10
-    sget v11, Lg/j;->TextAppearance_android_textColorLink:I
+    sget v11, Li/j;->TextAppearance_android_textColorLink:I
 
     .line 375
     .line 376
@@ -2171,7 +2204,7 @@
 
     .line 381
     .line 382
-    sget v11, Lg/j;->TextAppearance_android_textColorLink:I
+    sget v11, Li/j;->TextAppearance_android_textColorLink:I
 
     .line 383
     .line 384
@@ -2184,7 +2217,7 @@
 
     .line 388
     :cond_11
-    sget v11, Lg/j;->TextAppearance_textLocale:I
+    sget v11, Li/j;->TextAppearance_textLocale:I
 
     .line 389
     .line 390
@@ -2200,7 +2233,7 @@
 
     .line 395
     .line 396
-    sget v3, Lg/j;->TextAppearance_textLocale:I
+    sget v3, Li/j;->TextAppearance_textLocale:I
 
     .line 397
     .line 398
@@ -2221,7 +2254,7 @@
 
     .line 405
     .line 406
-    sget v11, Lg/j;->TextAppearance_fontVariationSettings:I
+    sget v11, Li/j;->TextAppearance_fontVariationSettings:I
 
     .line 407
     .line 408
@@ -2237,7 +2270,7 @@
 
     .line 413
     .line 414
-    sget v11, Lg/j;->TextAppearance_fontVariationSettings:I
+    sget v11, Li/j;->TextAppearance_fontVariationSettings:I
 
     .line 415
     .line 416
@@ -2258,7 +2291,7 @@
 
     .line 423
     .line 424
-    sget v11, Lg/j;->TextAppearance_android_textSize:I
+    sget v11, Li/j;->TextAppearance_android_textSize:I
 
     .line 425
     .line 426
@@ -2274,7 +2307,7 @@
 
     .line 431
     .line 432
-    sget v11, Lg/j;->TextAppearance_android_textSize:I
+    sget v11, Li/j;->TextAppearance_android_textSize:I
 
     .line 433
     .line 434
@@ -2669,7 +2702,7 @@
     .line 622
     :cond_20
     :goto_b
-    sget-object v0, Lg/j;->AppCompatTextView:[I
+    sget-object v0, Li/j;->AppCompatTextView:[I
 
     .line 623
     .line 624
@@ -2681,7 +2714,7 @@
     move-result-object v11
 
     .line 628
-    sget v0, Lg/j;->AppCompatTextView_drawableLeftCompat:I
+    sget v0, Li/j;->AppCompatTextView_drawableLeftCompat:I
 
     .line 629
     .line 630
@@ -2723,7 +2756,7 @@
 
     .line 646
     :goto_c
-    sget v0, Lg/j;->AppCompatTextView_drawableTopCompat:I
+    sget v0, Li/j;->AppCompatTextView_drawableTopCompat:I
 
     .line 647
     .line 648
@@ -2758,7 +2791,7 @@
 
     .line 661
     :goto_d
-    sget v0, Lg/j;->AppCompatTextView_drawableRightCompat:I
+    sget v0, Li/j;->AppCompatTextView_drawableRightCompat:I
 
     .line 662
     .line 663
@@ -2793,7 +2826,7 @@
 
     .line 676
     :goto_e
-    sget v0, Lg/j;->AppCompatTextView_drawableBottomCompat:I
+    sget v0, Li/j;->AppCompatTextView_drawableBottomCompat:I
 
     .line 677
     .line 678
@@ -2828,7 +2861,7 @@
 
     .line 691
     :goto_f
-    sget v0, Lg/j;->AppCompatTextView_drawableStartCompat:I
+    sget v0, Li/j;->AppCompatTextView_drawableStartCompat:I
 
     .line 692
     .line 693
@@ -2863,7 +2896,7 @@
 
     .line 706
     :goto_10
-    sget v0, Lg/j;->AppCompatTextView_drawableEndCompat:I
+    sget v0, Li/j;->AppCompatTextView_drawableEndCompat:I
 
     .line 707
     .line 708
@@ -2928,7 +2961,7 @@
     .line 731
     .line 732
     .line 733
-    sget v0, Lg/j;->AppCompatTextView_drawableTint:I
+    sget v0, Li/j;->AppCompatTextView_drawableTint:I
 
     .line 734
     .line 735
@@ -2944,7 +2977,7 @@
 
     .line 740
     .line 741
-    sget v0, Lg/j;->AppCompatTextView_drawableTint:I
+    sget v0, Li/j;->AppCompatTextView_drawableTint:I
 
     .line 742
     .line 743
@@ -2969,7 +3002,7 @@
 
     .line 753
     .line 754
-    invoke-static {v1, v0}, Ls/x0;->A(Landroid/widget/TextView;Landroid/content/res/ColorStateList;)V
+    invoke-static {v1, v0}, LI/a;->q(Landroid/widget/TextView;Landroid/content/res/ColorStateList;)V
 
     .line 755
     .line 756
@@ -2978,7 +3011,7 @@
 
     .line 758
     :cond_27
-    instance-of v2, v1, Landroidx/core/widget/l;
+    instance-of v2, v1, Landroidx/core/widget/n;
 
     .line 759
     .line 760
@@ -2986,18 +3019,18 @@
 
     .line 761
     .line 762
-    check-cast v1, Landroidx/core/widget/l;
+    check-cast v1, Landroidx/core/widget/n;
 
     .line 763
     .line 764
-    invoke-interface {v1, v0}, Landroidx/core/widget/l;->setSupportCompoundDrawablesTintList(Landroid/content/res/ColorStateList;)V
+    invoke-interface {v1, v0}, Landroidx/core/widget/n;->setSupportCompoundDrawablesTintList(Landroid/content/res/ColorStateList;)V
 
     .line 765
     .line 766
     .line 767
     :cond_28
     :goto_12
-    sget v0, Lg/j;->AppCompatTextView_drawableTintMode:I
+    sget v0, Li/j;->AppCompatTextView_drawableTintMode:I
 
     .line 768
     .line 769
@@ -3013,7 +3046,7 @@
 
     .line 774
     .line 775
-    sget v0, Lg/j;->AppCompatTextView_drawableTintMode:I
+    sget v0, Li/j;->AppCompatTextView_drawableTintMode:I
 
     .line 776
     .line 777
@@ -3052,7 +3085,7 @@
 
     .line 793
     .line 794
-    invoke-static {v1, v0}, Ls/x0;->B(Landroid/widget/TextView;Landroid/graphics/PorterDuff$Mode;)V
+    invoke-static {v1, v0}, LI/a;->r(Landroid/widget/TextView;Landroid/graphics/PorterDuff$Mode;)V
 
     .line 795
     .line 796
@@ -3061,7 +3094,7 @@
 
     .line 798
     :cond_29
-    instance-of v2, v1, Landroidx/core/widget/l;
+    instance-of v2, v1, Landroidx/core/widget/n;
 
     .line 799
     .line 800
@@ -3069,18 +3102,18 @@
 
     .line 801
     .line 802
-    check-cast v1, Landroidx/core/widget/l;
+    check-cast v1, Landroidx/core/widget/n;
 
     .line 803
     .line 804
-    invoke-interface {v1, v0}, Landroidx/core/widget/l;->setSupportCompoundDrawablesTintMode(Landroid/graphics/PorterDuff$Mode;)V
+    invoke-interface {v1, v0}, Landroidx/core/widget/n;->setSupportCompoundDrawablesTintMode(Landroid/graphics/PorterDuff$Mode;)V
 
     .line 805
     .line 806
     .line 807
     :cond_2a
     :goto_13
-    sget v0, Lg/j;->AppCompatTextView_firstBaselineToTopHeight:I
+    sget v0, Li/j;->AppCompatTextView_firstBaselineToTopHeight:I
 
     .line 808
     .line 809
@@ -3095,7 +3128,7 @@
     move-result v0
 
     .line 814
-    sget v2, Lg/j;->AppCompatTextView_lastBaselineToBottomHeight:I
+    sget v2, Li/j;->AppCompatTextView_lastBaselineToBottomHeight:I
 
     .line 815
     .line 816
@@ -3107,7 +3140,7 @@
     move-result v2
 
     .line 820
-    sget v1, Lg/j;->AppCompatTextView_lineHeight:I
+    sget v1, Li/j;->AppCompatTextView_lineHeight:I
 
     .line 821
     .line 822
@@ -3123,7 +3156,7 @@
 
     .line 827
     .line 828
-    sget v1, Lg/j;->AppCompatTextView_lineHeight:I
+    sget v1, Li/j;->AppCompatTextView_lineHeight:I
 
     .line 829
     .line 830
@@ -3176,7 +3209,7 @@
 
     .line 852
     :cond_2b
-    sget v1, Lg/j;->AppCompatTextView_lineHeight:I
+    sget v1, Li/j;->AppCompatTextView_lineHeight:I
 
     .line 853
     .line 854
@@ -3226,7 +3259,7 @@
 
     .line 872
     .line 873
-    invoke-static {v4, v0}, Le3/b;->t(Landroid/widget/TextView;I)V
+    invoke-static {v4, v0}, LE/p;->G(Landroid/widget/TextView;I)V
 
     .line 874
     .line 875
@@ -3240,7 +3273,7 @@
 
     .line 879
     .line 880
-    invoke-static {v0, v2}, Le3/b;->u(Landroid/widget/TextView;I)V
+    invoke-static {v0, v2}, LE/p;->I(Landroid/widget/TextView;I)V
 
     .line 881
     .line 882
@@ -3265,7 +3298,7 @@
     float-to-int v1, v1
 
     .line 892
-    invoke-static {v0, v1}, Le3/b;->w(Landroid/widget/TextView;I)V
+    invoke-static {v0, v1}, LE/p;->J(Landroid/widget/TextView;I)V
 
     .line 893
     .line 894
@@ -3286,7 +3319,7 @@
 
     .line 901
     .line 902
-    invoke-static {v0, v3, v1}, Lz/i;->m(Landroid/widget/TextView;IF)V
+    invoke-static {v0, v3, v1}, LC/g;->i(Landroid/widget/TextView;IF)V
 
     .line 903
     .line 904
@@ -3327,7 +3360,7 @@
     move-result v1
 
     .line 922
-    invoke-static {v0, v1}, Le3/b;->w(Landroid/widget/TextView;I)V
+    invoke-static {v0, v1}, LE/p;->J(Landroid/widget/TextView;I)V
 
     .line 923
     .line 924
@@ -3464,7 +3497,7 @@
     .locals 4
 
     .line 1
-    sget-object v0, Lg/j;->TextAppearance:[I
+    sget-object v0, Li/j;->TextAppearance:[I
 
     .line 2
     .line 3
@@ -3476,7 +3509,7 @@
     move-result-object p2
 
     .line 7
-    sget v0, Lg/j;->TextAppearance_textAllCaps:I
+    sget v0, Li/j;->TextAppearance_textAllCaps:I
 
     .line 8
     .line 9
@@ -3495,7 +3528,7 @@
 
     .line 15
     .line 16
-    sget v0, Lg/j;->TextAppearance_textAllCaps:I
+    sget v0, Li/j;->TextAppearance_textAllCaps:I
 
     .line 17
     .line 18
@@ -3525,7 +3558,7 @@
 
     .line 30
     .line 31
-    sget v2, Lg/j;->TextAppearance_android_textColor:I
+    sget v2, Li/j;->TextAppearance_android_textColor:I
 
     .line 32
     .line 33
@@ -3541,7 +3574,7 @@
 
     .line 38
     .line 39
-    sget v2, Lg/j;->TextAppearance_android_textColor:I
+    sget v2, Li/j;->TextAppearance_android_textColor:I
 
     .line 40
     .line 41
@@ -3567,7 +3600,7 @@
     .line 51
     .line 52
     :cond_1
-    sget v2, Lg/j;->TextAppearance_android_textColorLink:I
+    sget v2, Li/j;->TextAppearance_android_textColorLink:I
 
     .line 53
     .line 54
@@ -3583,7 +3616,7 @@
 
     .line 59
     .line 60
-    sget v2, Lg/j;->TextAppearance_android_textColorLink:I
+    sget v2, Li/j;->TextAppearance_android_textColorLink:I
 
     .line 61
     .line 62
@@ -3609,7 +3642,7 @@
     .line 72
     .line 73
     :cond_2
-    sget v2, Lg/j;->TextAppearance_android_textColorHint:I
+    sget v2, Li/j;->TextAppearance_android_textColorHint:I
 
     .line 74
     .line 75
@@ -3625,7 +3658,7 @@
 
     .line 80
     .line 81
-    sget v2, Lg/j;->TextAppearance_android_textColorHint:I
+    sget v2, Li/j;->TextAppearance_android_textColorHint:I
 
     .line 82
     .line 83
@@ -3651,7 +3684,7 @@
     .line 93
     .line 94
     :cond_3
-    sget v2, Lg/j;->TextAppearance_android_textSize:I
+    sget v2, Li/j;->TextAppearance_android_textSize:I
 
     .line 95
     .line 96
@@ -3667,7 +3700,7 @@
 
     .line 101
     .line 102
-    sget v2, Lg/j;->TextAppearance_android_textSize:I
+    sget v2, Li/j;->TextAppearance_android_textSize:I
 
     .line 103
     .line 104
@@ -3712,7 +3745,7 @@
 
     .line 123
     .line 124
-    sget p1, Lg/j;->TextAppearance_fontVariationSettings:I
+    sget p1, Li/j;->TextAppearance_fontVariationSettings:I
 
     .line 125
     .line 126
@@ -3728,7 +3761,7 @@
 
     .line 131
     .line 132
-    sget p1, Lg/j;->TextAppearance_fontVariationSettings:I
+    sget p1, Li/j;->TextAppearance_fontVariationSettings:I
 
     .line 133
     .line 134
@@ -3786,6 +3819,18 @@
 
 .method public populateSurroundingTextIfNeeded(Landroid/widget/TextView;Landroid/view/inputmethod/InputConnection;Landroid/view/inputmethod/EditorInfo;)V
     .locals 2
+    .param p1    # Landroid/widget/TextView;
+        .annotation build Landroidx/annotation/NonNull;
+        .end annotation
+    .end param
+    .param p2    # Landroid/view/inputmethod/InputConnection;
+        .annotation build Landroidx/annotation/Nullable;
+        .end annotation
+    .end param
+    .param p3    # Landroid/view/inputmethod/EditorInfo;
+        .annotation build Landroidx/annotation/NonNull;
+        .end annotation
+    .end param
 
     .line 1
     sget v0, Landroid/os/Build$VERSION;->SDK_INT:I
@@ -3812,7 +3857,7 @@
     move-result-object p1
 
     .line 13
-    invoke-static {p3, p1}, Lo3/c;->a(Landroid/view/inputmethod/EditorInfo;Ljava/lang/CharSequence;)V
+    invoke-static {p3, p1}, Lw1/c;->a(Landroid/view/inputmethod/EditorInfo;Ljava/lang/CharSequence;)V
 
     .line 14
     .line 15
@@ -3860,6 +3905,10 @@
 
 .method public setAutoSizeTextTypeUniformWithPresetSizes([II)V
     .locals 1
+    .param p1    # [I
+        .annotation build Landroidx/annotation/NonNull;
+        .end annotation
+    .end param
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/lang/IllegalArgumentException;
@@ -3897,6 +3946,10 @@
 
 .method public setCompoundDrawableTintList(Landroid/content/res/ColorStateList;)V
     .locals 1
+    .param p1    # Landroid/content/res/ColorStateList;
+        .annotation build Landroidx/annotation/Nullable;
+        .end annotation
+    .end param
 
     .line 1
     iget-object v0, p0, Landroidx/appcompat/widget/AppCompatTextHelper;->mDrawableTint:Landroidx/appcompat/widget/TintInfo;
@@ -3958,6 +4011,10 @@
 
 .method public setCompoundDrawableTintMode(Landroid/graphics/PorterDuff$Mode;)V
     .locals 1
+    .param p1    # Landroid/graphics/PorterDuff$Mode;
+        .annotation build Landroidx/annotation/Nullable;
+        .end annotation
+    .end param
 
     .line 1
     iget-object v0, p0, Landroidx/appcompat/widget/AppCompatTextHelper;->mDrawableTint:Landroidx/appcompat/widget/TintInfo;

@@ -4,6 +4,16 @@
 
 
 # annotations
+.annotation runtime Lca/c;
+    c = "androidx.paging.SingleRunner$Holder"
+    f = "SingleRunner.kt"
+    l = {
+        0x83,
+        0x66
+    }
+    m = "tryEnqueue"
+.end annotation
+
 .annotation runtime Lkotlin/Metadata;
     k = 0x3
     mv = {
@@ -12,16 +22,6 @@
         0x0
     }
     xi = 0x30
-.end annotation
-
-.annotation runtime Lth/c;
-    c = "androidx.paging.SingleRunner$Holder"
-    f = "SingleRunner.kt"
-    l = {
-        0x83,
-        0x66
-    }
-    m = "tryEnqueue"
 .end annotation
 
 
@@ -38,16 +38,16 @@
 
 .field synthetic result:Ljava/lang/Object;
 
-.field final synthetic this$0:Landroidx/paging/c2;
+.field final synthetic this$0:Landroidx/paging/E0;
 
 
 # direct methods
-.method public constructor <init>(Landroidx/paging/c2;Lkotlin/coroutines/Continuation;)V
+.method public constructor <init>(Landroidx/paging/E0;Lkotlin/coroutines/Continuation;)V
     .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
-            "Landroidx/paging/c2;",
+            "Landroidx/paging/E0;",
             "Lkotlin/coroutines/Continuation<",
             "-",
             "Landroidx/paging/SingleRunner$Holder$tryEnqueue$1;",
@@ -55,7 +55,7 @@
         }
     .end annotation
 
-    iput-object p1, p0, Landroidx/paging/SingleRunner$Holder$tryEnqueue$1;->this$0:Landroidx/paging/c2;
+    iput-object p1, p0, Landroidx/paging/SingleRunner$Holder$tryEnqueue$1;->this$0:Landroidx/paging/E0;
 
     invoke-direct {p0, p2}, Lkotlin/coroutines/jvm/internal/ContinuationImpl;-><init>(Lkotlin/coroutines/Continuation;)V
 
@@ -77,13 +77,13 @@
 
     iput p1, p0, Landroidx/paging/SingleRunner$Holder$tryEnqueue$1;->label:I
 
-    iget-object p1, p0, Landroidx/paging/SingleRunner$Holder$tryEnqueue$1;->this$0:Landroidx/paging/c2;
+    iget-object p1, p0, Landroidx/paging/SingleRunner$Holder$tryEnqueue$1;->this$0:Landroidx/paging/E0;
 
     const/4 v0, 0x0
 
     const/4 v1, 0x0
 
-    invoke-virtual {p1, v0, v1, p0}, Landroidx/paging/c2;->b(ILkotlinx/coroutines/z0;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
+    invoke-virtual {p1, v0, v1, p0}, Landroidx/paging/E0;->b(ILkotlinx/coroutines/a0;Lkotlin/coroutines/jvm/internal/ContinuationImpl;)Ljava/lang/Object;
 
     move-result-object p1
 

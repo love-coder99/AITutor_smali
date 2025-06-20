@@ -53,215 +53,215 @@
     .line 19
     .line 20
     :cond_1
-    const-string v3, "mcv1s"
+    const-string v54, "SGINO6"
 
     .line 21
     .line 22
-    const-string v4, "mcv3"
+    const-string v55, "st18c10bnn"
 
     .line 23
     .line 24
-    const-string v5, "mcv5a"
+    const-string v3, "mcv1s"
 
     .line 25
     .line 26
-    const-string v6, "mcv7a"
+    const-string v4, "mcv3"
 
     .line 27
     .line 28
-    const-string v7, "A30ATMO"
+    const-string v5, "mcv5a"
 
     .line 29
     .line 30
-    const-string v8, "A70AXLTMO"
+    const-string v6, "mcv7a"
 
     .line 31
     .line 32
-    const-string v9, "A3A_8_4G_TMO"
+    const-string v7, "A30ATMO"
 
     .line 33
     .line 34
-    const-string v10, "Edison_CKT"
+    const-string v8, "A70AXLTMO"
 
     .line 35
     .line 36
-    const-string v11, "EDISON_TF"
+    const-string v9, "A3A_8_4G_TMO"
 
     .line 37
     .line 38
-    const-string v12, "FERMI_TF"
+    const-string v10, "Edison_CKT"
 
     .line 39
     .line 40
-    const-string v13, "U50A_ATT"
+    const-string v11, "EDISON_TF"
 
     .line 41
     .line 42
-    const-string v14, "U50A_PLUS_ATT"
+    const-string v12, "FERMI_TF"
 
     .line 43
     .line 44
-    const-string v15, "U50A_PLUS_TF"
+    const-string v13, "U50A_ATT"
 
     .line 45
     .line 46
-    const-string v16, "U50APLUSTMO"
+    const-string v14, "U50A_PLUS_ATT"
 
     .line 47
     .line 48
-    const-string v17, "U5A_PLUS_4G"
+    const-string v15, "U50A_PLUS_TF"
 
     .line 49
     .line 50
-    const-string v18, "RCT6513W87DK5e"
+    const-string v16, "U50APLUSTMO"
 
     .line 51
     .line 52
-    const-string v19, "RCT6873W42BMF9A"
+    const-string v17, "U5A_PLUS_4G"
 
     .line 53
     .line 54
-    const-string v20, "RCT6A03W13"
+    const-string v18, "RCT6513W87DK5e"
 
     .line 55
     .line 56
-    const-string v21, "RCT6B03W12"
+    const-string v19, "RCT6873W42BMF9A"
 
     .line 57
     .line 58
-    const-string v22, "RCT6B03W13"
+    const-string v20, "RCT6A03W13"
 
     .line 59
     .line 60
-    const-string v23, "RCT6T06E13"
+    const-string v21, "RCT6B03W12"
 
     .line 61
     .line 62
-    const-string v24, "A3_Pro"
+    const-string v22, "RCT6B03W13"
 
     .line 63
     .line 64
-    const-string v25, "One"
+    const-string v23, "RCT6T06E13"
 
     .line 65
     .line 66
-    const-string v26, "One_Max"
+    const-string v24, "A3_Pro"
 
     .line 67
     .line 68
-    const-string v27, "One_Pro"
+    const-string v25, "One"
 
     .line 69
     .line 70
-    const-string v28, "Z2"
+    const-string v26, "One_Max"
 
     .line 71
     .line 72
-    const-string v29, "Z2_PRO"
+    const-string v27, "One_Pro"
 
     .line 73
     .line 74
-    const-string v30, "Armor_3"
+    const-string v28, "Z2"
 
     .line 75
     .line 76
-    const-string v31, "Armor_6"
+    const-string v29, "Z2_PRO"
 
     .line 77
     .line 78
-    const-string v32, "Blackview"
+    const-string v30, "Armor_3"
 
     .line 79
     .line 80
-    const-string v33, "BV9500"
+    const-string v31, "Armor_6"
 
     .line 81
     .line 82
-    const-string v34, "BV9500Pro"
+    const-string v32, "Blackview"
 
     .line 83
     .line 84
-    const-string v35, "A6L-C"
+    const-string v33, "BV9500"
 
     .line 85
     .line 86
-    const-string v36, "N5002LA"
+    const-string v34, "BV9500Pro"
 
     .line 87
     .line 88
-    const-string v37, "N5501LA"
+    const-string v35, "A6L-C"
 
     .line 89
     .line 90
-    const-string v38, "Power_2_Pro"
+    const-string v36, "N5002LA"
 
     .line 91
     .line 92
-    const-string v39, "Power_5"
+    const-string v37, "N5501LA"
 
     .line 93
     .line 94
-    const-string v40, "Z9"
+    const-string v38, "Power_2_Pro"
 
     .line 95
     .line 96
-    const-string v41, "V0310WW"
+    const-string v39, "Power_5"
 
     .line 97
     .line 98
-    const-string v42, "V0330WW"
+    const-string v40, "Z9"
 
     .line 99
     .line 100
-    const-string v43, "A3"
+    const-string v41, "V0310WW"
 
     .line 101
     .line 102
-    const-string v44, "ASUS_X018_4"
+    const-string v42, "V0330WW"
 
     .line 103
     .line 104
-    const-string v45, "C210AE"
+    const-string v43, "A3"
 
     .line 105
     .line 106
-    const-string v46, "fireball"
+    const-string v44, "ASUS_X018_4"
 
     .line 107
     .line 108
-    const-string v47, "ILA_X1"
+    const-string v45, "C210AE"
 
     .line 109
     .line 110
-    const-string v48, "Infinix-X605_sprout"
+    const-string v46, "fireball"
 
     .line 111
     .line 112
-    const-string v49, "j7maxlte"
+    const-string v47, "ILA_X1"
 
     .line 113
     .line 114
-    const-string v50, "KING_KONG_3"
+    const-string v48, "Infinix-X605_sprout"
 
     .line 115
     .line 116
-    const-string v51, "M10500"
+    const-string v49, "j7maxlte"
 
     .line 117
     .line 118
-    const-string v52, "S70"
+    const-string v50, "KING_KONG_3"
 
     .line 119
     .line 120
-    const-string v53, "S80Lite"
+    const-string v51, "M10500"
 
     .line 121
     .line 122
-    const-string v54, "SGINO6"
+    const-string v52, "S70"
 
     .line 123
     .line 124
-    const-string v55, "st18c10bnn"
+    const-string v53, "S80Lite"
 
     .line 125
     .line 126
@@ -281,7 +281,7 @@
     move-result-object v1
 
     .line 134
-    invoke-static {v1, v0}, Lkotlin/collections/q;->P([Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v1, v0}, LY9/o;->E([Ljava/lang/Object;Ljava/lang/Object;)Z
 
     .line 135
     .line 136
@@ -309,7 +309,7 @@
 
     .line 145
     .line 146
-    invoke-static {v0, v1}, Lkotlin/text/p;->C0(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v0, v1}, Lkotlin/text/m;->k0(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     .line 147
     .line 148
@@ -352,143 +352,143 @@
 
     .line 165
     :cond_5
-    const-string v3, "nora"
+    const-string v36, "CatS41"
 
     .line 166
     .line 167
-    const-string v4, "nora_8917"
+    const-string v37, "Hi9Pro"
 
     .line 168
     .line 169
-    const-string v5, "nora_8917_n"
+    const-string v3, "nora"
 
     .line 170
     .line 171
-    const-string v6, "james"
+    const-string v4, "nora_8917"
 
     .line 172
     .line 173
-    const-string v7, "rjames_f"
+    const-string v5, "nora_8917_n"
 
     .line 174
     .line 175
-    const-string v8, "rjames_go"
+    const-string v6, "james"
 
     .line 176
     .line 177
-    const-string v9, "pettyl"
+    const-string v7, "rjames_f"
 
     .line 178
     .line 179
-    const-string v10, "hannah"
+    const-string v8, "rjames_go"
 
     .line 180
     .line 181
-    const-string v11, "ahannah"
+    const-string v9, "pettyl"
 
     .line 182
     .line 183
-    const-string v12, "rhannah"
+    const-string v10, "hannah"
 
     .line 184
     .line 185
-    const-string v13, "ali"
+    const-string v11, "ahannah"
 
     .line 186
     .line 187
-    const-string v14, "ali_n"
+    const-string v12, "rhannah"
 
     .line 188
     .line 189
-    const-string v15, "aljeter"
+    const-string v13, "ali"
 
     .line 190
     .line 191
-    const-string v16, "aljeter_n"
+    const-string v14, "ali_n"
 
     .line 192
     .line 193
-    const-string v17, "jeter"
+    const-string v15, "aljeter"
 
     .line 194
     .line 195
-    const-string v18, "evert"
+    const-string v16, "aljeter_n"
 
     .line 196
     .line 197
-    const-string v19, "evert_n"
+    const-string v17, "jeter"
 
     .line 198
     .line 199
-    const-string v20, "evert_nt"
+    const-string v18, "evert"
 
     .line 200
     .line 201
-    const-string v21, "G3112"
+    const-string v19, "evert_n"
 
     .line 202
     .line 203
-    const-string v22, "G3116"
+    const-string v20, "evert_nt"
 
     .line 204
     .line 205
-    const-string v23, "G3121"
+    const-string v21, "G3112"
 
     .line 206
     .line 207
-    const-string v24, "G3123"
+    const-string v22, "G3116"
 
     .line 208
     .line 209
-    const-string v25, "G3125"
+    const-string v23, "G3121"
 
     .line 210
     .line 211
-    const-string v26, "G3412"
+    const-string v24, "G3123"
 
     .line 212
     .line 213
-    const-string v27, "G3416"
+    const-string v25, "G3125"
 
     .line 214
     .line 215
-    const-string v28, "G3421"
+    const-string v26, "G3412"
 
     .line 216
     .line 217
-    const-string v29, "G3423"
+    const-string v27, "G3416"
 
     .line 218
     .line 219
-    const-string v30, "G3426"
+    const-string v28, "G3421"
 
     .line 220
     .line 221
-    const-string v31, "G3212"
+    const-string v29, "G3423"
 
     .line 222
     .line 223
-    const-string v32, "G3221"
+    const-string v30, "G3426"
 
     .line 224
     .line 225
-    const-string v33, "G3223"
+    const-string v31, "G3212"
 
     .line 226
     .line 227
-    const-string v34, "G3226"
+    const-string v32, "G3221"
 
     .line 228
     .line 229
-    const-string v35, "BV6800Pro"
+    const-string v33, "G3223"
 
     .line 230
     .line 231
-    const-string v36, "CatS41"
+    const-string v34, "G3226"
 
     .line 232
     .line 233
-    const-string v37, "Hi9Pro"
+    const-string v35, "BV6800Pro"
 
     .line 234
     .line 235
@@ -508,7 +508,7 @@
     move-result-object v1
 
     .line 243
-    invoke-static {v1, v0}, Lkotlin/collections/q;->P([Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v1, v0}, LY9/o;->E([Ljava/lang/Object;Ljava/lang/Object;)Z
 
     .line 244
     .line 245

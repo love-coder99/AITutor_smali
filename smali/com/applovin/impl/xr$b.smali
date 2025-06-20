@@ -29,14 +29,14 @@
     .locals 2
 
     .line 1
-    new-instance v0, Lcom/applovin/impl/rs;
+    new-instance v0, Lcom/applovin/impl/J;
 
     .line 2
     .line 3
     const/4 v1, 0x3
 
     .line 4
-    invoke-direct {v0, v1}, Lcom/applovin/impl/rs;-><init>(I)V
+    invoke-direct {v0, v1}, Lcom/applovin/impl/J;-><init>(I)V
 
     .line 5
     .line 6
@@ -54,8 +54,10 @@
     .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
+    .line 2
     iput-object p1, p0, Lcom/applovin/impl/xr$b;->a:Lcom/applovin/impl/xr$c;
 
+    .line 3
     iput p2, p0, Lcom/applovin/impl/xr$b;->b:I
 
     return-void
@@ -64,7 +66,7 @@
 .method public synthetic constructor <init>(Lcom/applovin/impl/xr$c;ILcom/applovin/impl/xr$a;)V
     .locals 0
 
-    .line 2
+    .line 4
     invoke-direct {p0, p1, p2}, Lcom/applovin/impl/xr$b;-><init>(Lcom/applovin/impl/xr$c;I)V
 
     return-void
@@ -73,7 +75,7 @@
 .method private static synthetic a(Lcom/applovin/impl/xr$b;Lcom/applovin/impl/xr$b;)I
     .locals 0
 
-    .line 3
+    .line 2
     iget-object p0, p0, Lcom/applovin/impl/xr$b;->a:Lcom/applovin/impl/xr$c;
 
     iget p0, p0, Lcom/applovin/impl/xr$c;->b:I
@@ -92,7 +94,7 @@
 .method public static synthetic a(Lcom/applovin/impl/xr$b;)Lcom/applovin/impl/xr$c;
     .locals 0
 
-    .line 2
+    .line 1
     iget-object p0, p0, Lcom/applovin/impl/xr$b;->a:Lcom/applovin/impl/xr$c;
 
     return-object p0
@@ -101,7 +103,7 @@
 .method public static synthetic a()Ljava/util/Comparator;
     .locals 1
 
-    .line 1
+    .line 3
     sget-object v0, Lcom/applovin/impl/xr$b;->c:Ljava/util/Comparator;
 
     return-object v0

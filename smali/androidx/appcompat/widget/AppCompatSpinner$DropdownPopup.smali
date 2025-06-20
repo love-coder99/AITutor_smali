@@ -476,16 +476,22 @@
 .method public getHintText()Ljava/lang/CharSequence;
     .locals 1
 
+    .line 1
     iget-object v0, p0, Landroidx/appcompat/widget/AppCompatSpinner$DropdownPopup;->mHintText:Ljava/lang/CharSequence;
 
+    .line 2
+    .line 3
     return-object v0
 .end method
 
 .method public getHorizontalOriginalOffset()I
     .locals 1
 
+    .line 1
     iget v0, p0, Landroidx/appcompat/widget/AppCompatSpinner$DropdownPopup;->mOriginalHorizontalOffset:I
 
+    .line 2
+    .line 3
     return v0
 .end method
 
@@ -554,16 +560,22 @@
 .method public setHorizontalOriginalOffset(I)V
     .locals 0
 
+    .line 1
     iput p1, p0, Landroidx/appcompat/widget/AppCompatSpinner$DropdownPopup;->mOriginalHorizontalOffset:I
 
+    .line 2
+    .line 3
     return-void
 .end method
 
 .method public setPromptText(Ljava/lang/CharSequence;)V
     .locals 0
 
+    .line 1
     iput-object p1, p0, Landroidx/appcompat/widget/AppCompatSpinner$DropdownPopup;->mHintText:Ljava/lang/CharSequence;
 
+    .line 2
+    .line 3
     return-void
 .end method
 

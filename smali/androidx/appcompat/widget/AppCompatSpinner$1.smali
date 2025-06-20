@@ -43,11 +43,14 @@
 
 
 # virtual methods
-.method public getPopup()Landroidx/appcompat/view/menu/f0;
+.method public getPopup()Landroidx/appcompat/view/menu/D;
     .locals 1
 
+    .line 1
     iget-object v0, p0, Landroidx/appcompat/widget/AppCompatSpinner$1;->val$popup:Landroidx/appcompat/widget/AppCompatSpinner$DropdownPopup;
 
+    .line 2
+    .line 3
     return-object v0
 .end method
 

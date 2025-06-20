@@ -1,5 +1,5 @@
 .class public final Landroidx/compose/ui/k;
-.super Landroidx/compose/ui/platform/g0;
+.super Landroidx/compose/ui/platform/d0;
 .source "SourceFile"
 
 # interfaces
@@ -7,11 +7,11 @@
 
 
 # instance fields
-.field public final d:Lzh/f;
+.field public final c:Lkotlin/jvm/internal/Lambda;
 
 
 # direct methods
-.method public constructor <init>(Lzh/f;)V
+.method public constructor <init>(Lka/f;)V
     .locals 0
 
     .line 1
@@ -20,20 +20,57 @@
     .line 2
     .line 3
     .line 4
-    iput-object p1, p0, Landroidx/compose/ui/k;->d:Lzh/f;
+    check-cast p1, Lkotlin/jvm/internal/Lambda;
 
     .line 5
     .line 6
+    iput-object p1, p0, Landroidx/compose/ui/k;->c:Lkotlin/jvm/internal/Lambda;
+
+    .line 7
+    .line 8
     return-void
 .end method
 
 
 # virtual methods
-.method public final a(Ljava/lang/Object;Lzh/e;)Ljava/lang/Object;
+.method public final synthetic b(Lka/c;)Z
     .locals 0
 
     .line 1
-    invoke-interface {p2, p1, p0}, Lzh/e;->invoke(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-static {p0, p1}, Landroidx/compose/runtime/a0;->a(Landroidx/compose/ui/m;Lka/c;)Z
+
+    move-result p1
+
+    return p1
+.end method
+
+.method public final synthetic g(Landroidx/compose/ui/o;)Landroidx/compose/ui/o;
+    .locals 0
+
+    .line 1
+    invoke-static {p0, p1}, Landroidx/compose/runtime/a0;->e(Landroidx/compose/ui/o;Landroidx/compose/ui/o;)Landroidx/compose/ui/o;
+
+    move-result-object p1
+
+    return-object p1
+.end method
+
+.method public final synthetic i(Lka/c;)Z
+    .locals 0
+
+    .line 1
+    invoke-static {p0, p1}, Landroidx/compose/runtime/a0;->b(Landroidx/compose/ui/m;Lka/c;)Z
+
+    move-result p1
+
+    return p1
+.end method
+
+.method public final k(Ljava/lang/Object;Lka/e;)Ljava/lang/Object;
+    .locals 0
+
+    .line 1
+    invoke-interface {p2, p1, p0}, Lka/e;->invoke(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 2
     .line 3
@@ -42,69 +79,4 @@
 
     .line 5
     return-object p1
-.end method
-
-.method public final synthetic e(Landroidx/compose/ui/o;)Landroidx/compose/ui/o;
-    .locals 0
-
-    .line 1
-    invoke-static {p0, p1}, Landroidx/compose/foundation/text/modifiers/f;->b(Landroidx/compose/ui/o;Landroidx/compose/ui/o;)Landroidx/compose/ui/o;
-
-    move-result-object p1
-
-    return-object p1
-.end method
-
-.method public final i(Lzh/c;)Z
-    .locals 0
-
-    .line 1
-    invoke-interface {p1, p0}, Lzh/c;->invoke(Ljava/lang/Object;)Ljava/lang/Object;
-
-    .line 2
-    .line 3
-    .line 4
-    move-result-object p1
-
-    .line 5
-    check-cast p1, Ljava/lang/Boolean;
-
-    .line 6
-    .line 7
-    invoke-virtual {p1}, Ljava/lang/Boolean;->booleanValue()Z
-
-    .line 8
-    .line 9
-    .line 10
-    move-result p1
-
-    .line 11
-    return p1
-.end method
-
-.method public final l(Lzh/c;)Z
-    .locals 0
-
-    .line 1
-    invoke-interface {p1, p0}, Lzh/c;->invoke(Ljava/lang/Object;)Ljava/lang/Object;
-
-    .line 2
-    .line 3
-    .line 4
-    move-result-object p1
-
-    .line 5
-    check-cast p1, Ljava/lang/Boolean;
-
-    .line 6
-    .line 7
-    invoke-virtual {p1}, Ljava/lang/Boolean;->booleanValue()Z
-
-    .line 8
-    .line 9
-    .line 10
-    move-result p1
-
-    .line 11
-    return p1
 .end method

@@ -277,9 +277,9 @@
 
     if-ne p1, v0, :cond_1
 
+    .line 8
     iget-object v0, p0, Lcom/applovin/impl/yl;->a:Lcom/applovin/impl/sdk/j;
 
-    .line 8
     invoke-virtual {v0}, Lcom/applovin/impl/sdk/j;->C()Lcom/applovin/impl/ca;
 
     move-result-object v0
@@ -294,9 +294,9 @@
 
     invoke-direct {v0, p1, p2}, Lcom/applovin/impl/sdk/AppLovinError;-><init>(ILjava/lang/String;)V
 
+    .line 10
     iget-object p1, p0, Lcom/applovin/impl/yl;->a:Lcom/applovin/impl/sdk/j;
 
-    .line 10
     invoke-virtual {p1}, Lcom/applovin/impl/sdk/j;->D()Lcom/applovin/impl/la;
 
     move-result-object p1

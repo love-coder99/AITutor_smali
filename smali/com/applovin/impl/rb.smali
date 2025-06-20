@@ -47,9 +47,9 @@
 .method public constructor <init>(Landroid/os/Parcel;)V
     .locals 1
 
+    .line 1
     const-string v0, "----"
 
-    .line 1
     invoke-direct {p0, v0}, Lcom/applovin/impl/xa;-><init>(Ljava/lang/String;)V
 
     .line 2
@@ -97,15 +97,18 @@
 .method public constructor <init>(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
     .locals 1
 
+    .line 5
     const-string v0, "----"
 
-    .line 5
     invoke-direct {p0, v0}, Lcom/applovin/impl/xa;-><init>(Ljava/lang/String;)V
 
+    .line 6
     iput-object p1, p0, Lcom/applovin/impl/rb;->b:Ljava/lang/String;
 
+    .line 7
     iput-object p2, p0, Lcom/applovin/impl/rb;->c:Ljava/lang/String;
 
+    .line 8
     iput-object p3, p0, Lcom/applovin/impl/rb;->d:Ljava/lang/String;
 
     return-void

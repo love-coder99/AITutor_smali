@@ -3,14 +3,14 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lzh/e;
+.implements Lka/e;
 
 
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "Lkotlin/jvm/internal/Lambda;",
-        "Lzh/e;"
+        "Lka/e;"
     }
 .end annotation
 
@@ -36,14 +36,14 @@
 
 .field final synthetic $modifier:Landroidx/compose/ui/o;
 
-.field final synthetic $tmp0_rcvr:Landroidx/compose/material3/n1;
+.field final synthetic $tmp0_rcvr:Landroidx/compose/material3/J0;
 
 
 # direct methods
-.method public constructor <init>(Landroidx/compose/material3/n1;Landroidx/compose/ui/o;FJII)V
+.method public constructor <init>(Landroidx/compose/material3/J0;Landroidx/compose/ui/o;FJII)V
     .locals 0
 
-    iput-object p1, p0, Landroidx/compose/material3/TabRowDefaults$SecondaryIndicator$1;->$tmp0_rcvr:Landroidx/compose/material3/n1;
+    iput-object p1, p0, Landroidx/compose/material3/TabRowDefaults$SecondaryIndicator$1;->$tmp0_rcvr:Landroidx/compose/material3/J0;
 
     iput-object p2, p0, Landroidx/compose/material3/TabRowDefaults$SecondaryIndicator$1;->$modifier:Landroidx/compose/ui/o;
 
@@ -68,7 +68,7 @@
     .locals 0
 
     .line 1
-    check-cast p1, Landroidx/compose/runtime/l;
+    check-cast p1, Landroidx/compose/runtime/j;
 
     check-cast p2, Ljava/lang/Number;
 
@@ -76,18 +76,18 @@
 
     move-result p2
 
-    invoke-virtual {p0, p1, p2}, Landroidx/compose/material3/TabRowDefaults$SecondaryIndicator$1;->invoke(Landroidx/compose/runtime/l;I)V
+    invoke-virtual {p0, p1, p2}, Landroidx/compose/material3/TabRowDefaults$SecondaryIndicator$1;->invoke(Landroidx/compose/runtime/j;I)V
 
-    sget-object p1, Lqh/r;->a:Lqh/r;
+    sget-object p1, LX9/j;->a:LX9/j;
 
     return-object p1
 .end method
 
-.method public final invoke(Landroidx/compose/runtime/l;I)V
+.method public final invoke(Landroidx/compose/runtime/j;I)V
     .locals 8
 
     .line 2
-    iget-object v0, p0, Landroidx/compose/material3/TabRowDefaults$SecondaryIndicator$1;->$tmp0_rcvr:Landroidx/compose/material3/n1;
+    iget-object v0, p0, Landroidx/compose/material3/TabRowDefaults$SecondaryIndicator$1;->$tmp0_rcvr:Landroidx/compose/material3/J0;
 
     iget-object v1, p0, Landroidx/compose/material3/TabRowDefaults$SecondaryIndicator$1;->$modifier:Landroidx/compose/ui/o;
 
@@ -99,7 +99,7 @@
 
     or-int/lit8 p2, p2, 0x1
 
-    invoke-static {p2}, Landroidx/compose/runtime/q;->A(I)I
+    invoke-static {p2}, Landroidx/compose/runtime/o;->f0(I)I
 
     move-result v6
 
@@ -107,7 +107,7 @@
 
     move-object v5, p1
 
-    invoke-virtual/range {v0 .. v7}, Landroidx/compose/material3/n1;->b(Landroidx/compose/ui/o;FJLandroidx/compose/runtime/l;II)V
+    invoke-virtual/range {v0 .. v7}, Landroidx/compose/material3/J0;->b(Landroidx/compose/ui/o;FJLandroidx/compose/runtime/j;II)V
 
     return-void
 .end method

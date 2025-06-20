@@ -3,14 +3,14 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lzh/c;
+.implements Lka/c;
 
 
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "Lkotlin/jvm/internal/Lambda;",
-        "Lzh/c;"
+        "Lka/c;"
     }
 .end annotation
 
@@ -210,20 +210,16 @@
     move-result-object p1
 
     .line 19
-    sget-object v0, Landroidx/compose/ui/text/z;->g:Landroidx/compose/runtime/saveable/l;
-
-    sget-object v5, Ljava/lang/Boolean;->FALSE:Ljava/lang/Boolean;
+    sget-object v0, Landroidx/compose/ui/text/z;->g:LB2/c;
 
     .line 20
-    invoke-static {p1, v5}, Lrb/h;->d(Ljava/lang/Object;Ljava/lang/Object;)Z
+    sget-object v5, Ljava/lang/Boolean;->FALSE:Ljava/lang/Boolean;
+
+    invoke-static {p1, v5}, Lkotlin/jvm/internal/h;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result v5
 
     if-eqz v5, :cond_5
-
-    instance-of v5, v0, Landroidx/compose/ui/text/y;
-
-    if-nez v5, :cond_5
 
     goto :goto_4
 
@@ -231,17 +227,19 @@
     if-eqz p1, :cond_6
 
     .line 21
-    iget-object v0, v0, Landroidx/compose/runtime/saveable/l;->b:Lzh/c;
+    iget-object v0, v0, LB2/c;->d:Ljava/lang/Object;
+
+    check-cast v0, Lka/c;
 
     .line 22
-    invoke-interface {v0, p1}, Lzh/c;->invoke(Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-interface {v0, p1}, Lka/c;->invoke(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object p1
 
     .line 23
     move-object v1, p1
 
-    check-cast v1, Landroidx/compose/ui/text/i;
+    check-cast v1, Landroidx/compose/ui/text/j;
 
     .line 24
     :cond_6
@@ -259,20 +257,16 @@
     move-result-object p1
 
     .line 26
-    sget-object v0, Landroidx/compose/ui/text/z;->f:Landroidx/compose/runtime/saveable/l;
-
-    sget-object v5, Ljava/lang/Boolean;->FALSE:Ljava/lang/Boolean;
+    sget-object v0, Landroidx/compose/ui/text/z;->f:LB2/c;
 
     .line 27
-    invoke-static {p1, v5}, Lrb/h;->d(Ljava/lang/Object;Ljava/lang/Object;)Z
+    sget-object v5, Ljava/lang/Boolean;->FALSE:Ljava/lang/Boolean;
+
+    invoke-static {p1, v5}, Lkotlin/jvm/internal/h;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result v5
 
     if-eqz v5, :cond_7
-
-    instance-of v5, v0, Landroidx/compose/ui/text/y;
-
-    if-nez v5, :cond_7
 
     goto :goto_5
 
@@ -280,17 +274,19 @@
     if-eqz p1, :cond_8
 
     .line 28
-    iget-object v0, v0, Landroidx/compose/runtime/saveable/l;->b:Lzh/c;
+    iget-object v0, v0, LB2/c;->d:Ljava/lang/Object;
+
+    check-cast v0, Lka/c;
 
     .line 29
-    invoke-interface {v0, p1}, Lzh/c;->invoke(Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-interface {v0, p1}, Lka/c;->invoke(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object p1
 
     .line 30
     move-object v1, p1
 
-    check-cast v1, Landroidx/compose/ui/text/j;
+    check-cast v1, Landroidx/compose/ui/text/k;
 
     .line 31
     :cond_8
@@ -308,20 +304,16 @@
     move-result-object p1
 
     .line 33
-    sget-object v0, Landroidx/compose/ui/text/z;->e:Landroidx/compose/runtime/saveable/l;
-
-    sget-object v5, Ljava/lang/Boolean;->FALSE:Ljava/lang/Boolean;
+    sget-object v0, Landroidx/compose/ui/text/z;->e:LB2/c;
 
     .line 34
-    invoke-static {p1, v5}, Lrb/h;->d(Ljava/lang/Object;Ljava/lang/Object;)Z
+    sget-object v5, Ljava/lang/Boolean;->FALSE:Ljava/lang/Boolean;
+
+    invoke-static {p1, v5}, Lkotlin/jvm/internal/h;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result v5
 
     if-eqz v5, :cond_9
-
-    instance-of v5, v0, Landroidx/compose/ui/text/y;
-
-    if-nez v5, :cond_9
 
     goto :goto_6
 
@@ -329,17 +321,19 @@
     if-eqz p1, :cond_a
 
     .line 35
-    iget-object v0, v0, Landroidx/compose/runtime/saveable/l;->b:Lzh/c;
+    iget-object v0, v0, LB2/c;->d:Ljava/lang/Object;
+
+    check-cast v0, Lka/c;
 
     .line 36
-    invoke-interface {v0, p1}, Lzh/c;->invoke(Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-interface {v0, p1}, Lka/c;->invoke(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object p1
 
     .line 37
     move-object v1, p1
 
-    check-cast v1, Landroidx/compose/ui/text/l0;
+    check-cast v1, Landroidx/compose/ui/text/L;
 
     .line 38
     :cond_a
@@ -348,7 +342,7 @@
 
     invoke-direct {p1, v1, v4, v2, v3}, Landroidx/compose/ui/text/e;-><init>(Ljava/lang/Object;Ljava/lang/String;II)V
 
-    goto/16 :goto_a
+    goto :goto_a
 
     .line 39
     :pswitch_4
@@ -357,20 +351,16 @@
     move-result-object p1
 
     .line 40
-    sget-object v0, Landroidx/compose/ui/text/z;->d:Landroidx/compose/runtime/saveable/l;
-
-    sget-object v5, Ljava/lang/Boolean;->FALSE:Ljava/lang/Boolean;
+    sget-object v0, Landroidx/compose/ui/text/z;->d:LB2/c;
 
     .line 41
-    invoke-static {p1, v5}, Lrb/h;->d(Ljava/lang/Object;Ljava/lang/Object;)Z
+    sget-object v5, Ljava/lang/Boolean;->FALSE:Ljava/lang/Boolean;
+
+    invoke-static {p1, v5}, Lkotlin/jvm/internal/h;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result v5
 
     if-eqz v5, :cond_b
-
-    instance-of v5, v0, Landroidx/compose/ui/text/y;
-
-    if-nez v5, :cond_b
 
     goto :goto_7
 
@@ -378,17 +368,19 @@
     if-eqz p1, :cond_c
 
     .line 42
-    iget-object v0, v0, Landroidx/compose/runtime/saveable/l;->b:Lzh/c;
+    iget-object v0, v0, LB2/c;->d:Ljava/lang/Object;
+
+    check-cast v0, Lka/c;
 
     .line 43
-    invoke-interface {v0, p1}, Lzh/c;->invoke(Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-interface {v0, p1}, Lka/c;->invoke(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object p1
 
     .line 44
     move-object v1, p1
 
-    check-cast v1, Landroidx/compose/ui/text/m0;
+    check-cast v1, Landroidx/compose/ui/text/M;
 
     .line 45
     :cond_c
@@ -406,20 +398,16 @@
     move-result-object p1
 
     .line 47
-    sget-object v0, Landroidx/compose/ui/text/z;->i:Landroidx/compose/runtime/saveable/l;
-
-    sget-object v5, Ljava/lang/Boolean;->FALSE:Ljava/lang/Boolean;
+    sget-object v0, Landroidx/compose/ui/text/z;->i:LB2/c;
 
     .line 48
-    invoke-static {p1, v5}, Lrb/h;->d(Ljava/lang/Object;Ljava/lang/Object;)Z
+    sget-object v5, Ljava/lang/Boolean;->FALSE:Ljava/lang/Boolean;
+
+    invoke-static {p1, v5}, Lkotlin/jvm/internal/h;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result v5
 
     if-eqz v5, :cond_d
-
-    instance-of v5, v0, Landroidx/compose/ui/text/y;
-
-    if-nez v5, :cond_d
 
     goto :goto_8
 
@@ -427,17 +415,19 @@
     if-eqz p1, :cond_e
 
     .line 49
-    iget-object v0, v0, Landroidx/compose/runtime/saveable/l;->b:Lzh/c;
+    iget-object v0, v0, LB2/c;->d:Ljava/lang/Object;
+
+    check-cast v0, Lka/c;
 
     .line 50
-    invoke-interface {v0, p1}, Lzh/c;->invoke(Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-interface {v0, p1}, Lka/c;->invoke(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object p1
 
     .line 51
     move-object v1, p1
 
-    check-cast v1, Landroidx/compose/ui/text/a0;
+    check-cast v1, Landroidx/compose/ui/text/A;
 
     .line 52
     :cond_e
@@ -455,20 +445,16 @@
     move-result-object p1
 
     .line 54
-    sget-object v0, Landroidx/compose/ui/text/z;->h:Landroidx/compose/runtime/saveable/l;
-
-    sget-object v5, Ljava/lang/Boolean;->FALSE:Ljava/lang/Boolean;
+    sget-object v0, Landroidx/compose/ui/text/z;->h:LB2/c;
 
     .line 55
-    invoke-static {p1, v5}, Lrb/h;->d(Ljava/lang/Object;Ljava/lang/Object;)Z
+    sget-object v5, Ljava/lang/Boolean;->FALSE:Ljava/lang/Boolean;
+
+    invoke-static {p1, v5}, Lkotlin/jvm/internal/h;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result v5
 
     if-eqz v5, :cond_f
-
-    instance-of v5, v0, Landroidx/compose/ui/text/y;
-
-    if-nez v5, :cond_f
 
     goto :goto_9
 
@@ -476,10 +462,12 @@
     if-eqz p1, :cond_10
 
     .line 56
-    iget-object v0, v0, Landroidx/compose/runtime/saveable/l;->b:Lzh/c;
+    iget-object v0, v0, LB2/c;->d:Ljava/lang/Object;
+
+    check-cast v0, Lka/c;
 
     .line 57
-    invoke-interface {v0, p1}, Lzh/c;->invoke(Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-interface {v0, p1}, Lka/c;->invoke(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object p1
 
@@ -497,6 +485,8 @@
 
     :goto_a
     return-object p1
+
+    nop
 
     :pswitch_data_0
     .packed-switch 0x1

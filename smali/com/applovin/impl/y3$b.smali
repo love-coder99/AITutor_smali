@@ -77,7 +77,10 @@
 .method public d()I
     .locals 1
 
+    .line 1
     iget v0, p0, Lcom/applovin/impl/y3$b;->d:I
 
+    .line 2
+    .line 3
     return v0
 .end method

@@ -4,6 +4,15 @@
 
 
 # annotations
+.annotation runtime Lca/c;
+    c = "androidx.paging.PagingDataPresenter"
+    f = "PagingDataPresenter.kt"
+    l = {
+        0x1de
+    }
+    m = "presentNewList"
+.end annotation
+
 .annotation runtime Lkotlin/Metadata;
     k = 0x3
     mv = {
@@ -12,15 +21,6 @@
         0x0
     }
     xi = 0x30
-.end annotation
-
-.annotation runtime Lth/c;
-    c = "androidx.paging.PagingDataPresenter"
-    f = "PagingDataPresenter.kt"
-    l = {
-        0x1de
-    }
-    m = "presentNewList"
 .end annotation
 
 
@@ -47,22 +47,22 @@
 
 .field synthetic result:Ljava/lang/Object;
 
-.field final synthetic this$0:Landroidx/paging/k1;
+.field final synthetic this$0:Landroidx/paging/m0;
     .annotation system Ldalvik/annotation/Signature;
         value = {
-            "Landroidx/paging/k1;"
+            "Landroidx/paging/m0;"
         }
     .end annotation
 .end field
 
 
 # direct methods
-.method public constructor <init>(Landroidx/paging/k1;Lkotlin/coroutines/Continuation;)V
+.method public constructor <init>(Landroidx/paging/m0;Lkotlin/coroutines/Continuation;)V
     .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
-            "Landroidx/paging/k1;",
+            "Landroidx/paging/m0;",
             "Lkotlin/coroutines/Continuation<",
             "-",
             "Landroidx/paging/PagingDataPresenter$presentNewList$1;",
@@ -70,7 +70,7 @@
         }
     .end annotation
 
-    iput-object p1, p0, Landroidx/paging/PagingDataPresenter$presentNewList$1;->this$0:Landroidx/paging/k1;
+    iput-object p1, p0, Landroidx/paging/PagingDataPresenter$presentNewList$1;->this$0:Landroidx/paging/m0;
 
     invoke-direct {p0, p2}, Lkotlin/coroutines/jvm/internal/ContinuationImpl;-><init>(Lkotlin/coroutines/Continuation;)V
 
@@ -92,7 +92,11 @@
 
     iput p1, p0, Landroidx/paging/PagingDataPresenter$presentNewList$1;->label:I
 
-    iget-object v0, p0, Landroidx/paging/PagingDataPresenter$presentNewList$1;->this$0:Landroidx/paging/k1;
+    iget-object v0, p0, Landroidx/paging/PagingDataPresenter$presentNewList$1;->this$0:Landroidx/paging/m0;
+
+    const/4 v4, 0x0
+
+    const/4 v5, 0x0
 
     const/4 v1, 0x0
 
@@ -100,17 +104,13 @@
 
     const/4 v3, 0x0
 
-    const/4 v4, 0x0
-
-    const/4 v5, 0x0
-
     const/4 v6, 0x0
 
     const/4 v7, 0x0
 
     move-object v8, p0
 
-    invoke-static/range {v0 .. v8}, Landroidx/paging/k1;->a(Landroidx/paging/k1;Ljava/util/List;IIZLandroidx/paging/c0;Landroidx/paging/c0;Landroidx/paging/u;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
+    invoke-static/range {v0 .. v8}, Landroidx/paging/m0;->a(Landroidx/paging/m0;Ljava/util/List;IIZLandroidx/paging/A;Landroidx/paging/A;Landroidx/paging/t;Lkotlin/coroutines/jvm/internal/ContinuationImpl;)Ljava/lang/Object;
 
     move-result-object p1
 

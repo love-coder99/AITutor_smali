@@ -76,11 +76,13 @@
 
     return-object p1
 
+    .line 3
     :cond_0
     const-string p1, "uniform"
 
     return-object p1
 
+    .line 4
     :cond_1
     const-string p1, "none"
 

@@ -3,14 +3,14 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lzh/e;
+.implements Lka/e;
 
 
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "Lkotlin/jvm/internal/Lambda;",
-        "Lzh/e;"
+        "Lka/e;"
     }
 .end annotation
 
@@ -32,17 +32,17 @@
 
 .field final synthetic $containerColor:J
 
-.field final synthetic $content:Lzh/f;
+.field final synthetic $content:Lka/f;
     .annotation system Ldalvik/annotation/Signature;
         value = {
-            "Lzh/f;"
+            "Lka/f;"
         }
     .end annotation
 .end field
 
 .field final synthetic $contentColor:J
 
-.field final synthetic $contentPadding:Landroidx/compose/foundation/layout/p0;
+.field final synthetic $contentPadding:Landroidx/compose/foundation/layout/M;
 
 .field final synthetic $modifier:Landroidx/compose/ui/o;
 
@@ -50,21 +50,21 @@
 
 .field final synthetic $tonalElevation:F
 
-.field final synthetic $windowInsets:Landroidx/compose/foundation/layout/f1;
+.field final synthetic $windowInsets:Landroidx/compose/foundation/layout/c0;
 
 
 # direct methods
-.method public constructor <init>(Landroidx/compose/ui/o;JJFLandroidx/compose/foundation/layout/p0;Landroidx/compose/foundation/layout/f1;Landroidx/compose/material3/g;Lzh/f;II)V
+.method public constructor <init>(Landroidx/compose/ui/o;JJFLandroidx/compose/foundation/layout/M;Landroidx/compose/foundation/layout/c0;Landroidx/compose/material3/g;Lka/f;II)V
     .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
             "Landroidx/compose/ui/o;",
             "JJF",
-            "Landroidx/compose/foundation/layout/p0;",
-            "Landroidx/compose/foundation/layout/f1;",
+            "Landroidx/compose/foundation/layout/M;",
+            "Landroidx/compose/foundation/layout/c0;",
             "Landroidx/compose/material3/g;",
-            "Lzh/f;",
+            "Lka/f;",
             "II)V"
         }
     .end annotation
@@ -72,26 +72,48 @@
     .line 1
     iput-object p1, p0, Landroidx/compose/material3/AppBarKt$BottomAppBar$7;->$modifier:Landroidx/compose/ui/o;
 
+    .line 2
+    .line 3
     iput-wide p2, p0, Landroidx/compose/material3/AppBarKt$BottomAppBar$7;->$containerColor:J
 
+    .line 4
+    .line 5
     iput-wide p4, p0, Landroidx/compose/material3/AppBarKt$BottomAppBar$7;->$contentColor:J
 
+    .line 6
+    .line 7
     iput p6, p0, Landroidx/compose/material3/AppBarKt$BottomAppBar$7;->$tonalElevation:F
 
-    iput-object p7, p0, Landroidx/compose/material3/AppBarKt$BottomAppBar$7;->$contentPadding:Landroidx/compose/foundation/layout/p0;
+    .line 8
+    .line 9
+    iput-object p7, p0, Landroidx/compose/material3/AppBarKt$BottomAppBar$7;->$contentPadding:Landroidx/compose/foundation/layout/M;
 
-    iput-object p8, p0, Landroidx/compose/material3/AppBarKt$BottomAppBar$7;->$windowInsets:Landroidx/compose/foundation/layout/f1;
+    .line 10
+    .line 11
+    iput-object p8, p0, Landroidx/compose/material3/AppBarKt$BottomAppBar$7;->$windowInsets:Landroidx/compose/foundation/layout/c0;
 
-    iput-object p10, p0, Landroidx/compose/material3/AppBarKt$BottomAppBar$7;->$content:Lzh/f;
+    .line 12
+    .line 13
+    iput-object p10, p0, Landroidx/compose/material3/AppBarKt$BottomAppBar$7;->$content:Lka/f;
 
+    .line 14
+    .line 15
     iput p11, p0, Landroidx/compose/material3/AppBarKt$BottomAppBar$7;->$$changed:I
 
+    .line 16
+    .line 17
     iput p12, p0, Landroidx/compose/material3/AppBarKt$BottomAppBar$7;->$$default:I
 
+    .line 18
+    .line 19
     const/4 p1, 0x2
 
+    .line 20
     invoke-direct {p0, p1}, Lkotlin/jvm/internal/Lambda;-><init>(I)V
 
+    .line 21
+    .line 22
+    .line 23
     return-void
 .end method
 
@@ -101,7 +123,7 @@
     .locals 0
 
     .line 1
-    check-cast p1, Landroidx/compose/runtime/l;
+    check-cast p1, Landroidx/compose/runtime/j;
 
     check-cast p2, Ljava/lang/Number;
 
@@ -109,14 +131,14 @@
 
     move-result p2
 
-    invoke-virtual {p0, p1, p2}, Landroidx/compose/material3/AppBarKt$BottomAppBar$7;->invoke(Landroidx/compose/runtime/l;I)V
+    invoke-virtual {p0, p1, p2}, Landroidx/compose/material3/AppBarKt$BottomAppBar$7;->invoke(Landroidx/compose/runtime/j;I)V
 
-    sget-object p1, Lqh/r;->a:Lqh/r;
+    sget-object p1, LX9/j;->a:LX9/j;
 
     return-object p1
 .end method
 
-.method public final invoke(Landroidx/compose/runtime/l;I)V
+.method public final invoke(Landroidx/compose/runtime/j;I)V
     .locals 12
 
     .line 2
@@ -128,17 +150,17 @@
 
     iget v5, p0, Landroidx/compose/material3/AppBarKt$BottomAppBar$7;->$tonalElevation:F
 
-    iget-object v6, p0, Landroidx/compose/material3/AppBarKt$BottomAppBar$7;->$contentPadding:Landroidx/compose/foundation/layout/p0;
+    iget-object v6, p0, Landroidx/compose/material3/AppBarKt$BottomAppBar$7;->$contentPadding:Landroidx/compose/foundation/layout/M;
 
-    iget-object v7, p0, Landroidx/compose/material3/AppBarKt$BottomAppBar$7;->$windowInsets:Landroidx/compose/foundation/layout/f1;
+    iget-object v7, p0, Landroidx/compose/material3/AppBarKt$BottomAppBar$7;->$windowInsets:Landroidx/compose/foundation/layout/c0;
 
-    iget-object v8, p0, Landroidx/compose/material3/AppBarKt$BottomAppBar$7;->$content:Lzh/f;
+    iget-object v8, p0, Landroidx/compose/material3/AppBarKt$BottomAppBar$7;->$content:Lka/f;
 
     iget p2, p0, Landroidx/compose/material3/AppBarKt$BottomAppBar$7;->$$changed:I
 
     or-int/lit8 p2, p2, 0x1
 
-    invoke-static {p2}, Landroidx/compose/runtime/q;->A(I)I
+    invoke-static {p2}, Landroidx/compose/runtime/o;->f0(I)I
 
     move-result v10
 
@@ -146,7 +168,7 @@
 
     move-object v9, p1
 
-    invoke-static/range {v0 .. v11}, Landroidx/compose/material3/e;->b(Landroidx/compose/ui/o;JJFLandroidx/compose/foundation/layout/p0;Landroidx/compose/foundation/layout/f1;Lzh/f;Landroidx/compose/runtime/l;II)V
+    invoke-static/range {v0 .. v11}, Landroidx/compose/material3/e;->b(Landroidx/compose/ui/o;JJFLandroidx/compose/foundation/layout/M;Landroidx/compose/foundation/layout/c0;Lka/f;Landroidx/compose/runtime/j;II)V
 
     return-void
 .end method

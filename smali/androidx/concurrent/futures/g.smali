@@ -3,7 +3,7 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lcom/google/common/util/concurrent/c;
+.implements Lcom/google/common/util/concurrent/d;
 
 
 # static fields
@@ -26,211 +26,207 @@
 
 # direct methods
 .method static constructor <clinit>()V
-    .locals 9
+    .locals 10
 
     .line 1
-    const-class v0, Landroidx/concurrent/futures/f;
+    const-string v0, "b"
 
     .line 2
     .line 3
-    const-string v1, "guava.concurrent.generate_cancellation_cause"
+    const-class v1, Landroidx/concurrent/futures/f;
 
     .line 4
     .line 5
-    const-string v2, "false"
+    const-string v2, "guava.concurrent.generate_cancellation_cause"
 
     .line 6
     .line 7
-    invoke-static {v1, v2}, Ljava/lang/System;->getProperty(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+    const-string v3, "false"
 
     .line 8
     .line 9
+    invoke-static {v2, v3}, Ljava/lang/System;->getProperty(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+
     .line 10
-    move-result-object v1
-
     .line 11
-    invoke-static {v1}, Ljava/lang/Boolean;->parseBoolean(Ljava/lang/String;)Z
-
     .line 12
+    move-result-object v2
+
     .line 13
+    invoke-static {v2}, Ljava/lang/Boolean;->parseBoolean(Ljava/lang/String;)Z
+
     .line 14
-    move-result v1
-
     .line 15
-    sput-boolean v1, Landroidx/concurrent/futures/g;->f:Z
-
     .line 16
+    move-result v2
+
     .line 17
-    const-class v1, Landroidx/concurrent/futures/g;
+    sput-boolean v2, Landroidx/concurrent/futures/g;->f:Z
 
     .line 18
     .line 19
-    invoke-virtual {v1}, Ljava/lang/Class;->getName()Ljava/lang/String;
+    const-class v2, Landroidx/concurrent/futures/g;
 
     .line 20
     .line 21
+    invoke-virtual {v2}, Ljava/lang/Class;->getName()Ljava/lang/String;
+
     .line 22
-    move-result-object v2
-
     .line 23
-    invoke-static {v2}, Ljava/util/logging/Logger;->getLogger(Ljava/lang/String;)Ljava/util/logging/Logger;
-
     .line 24
+    move-result-object v3
+
     .line 25
+    invoke-static {v3}, Ljava/util/logging/Logger;->getLogger(Ljava/lang/String;)Ljava/util/logging/Logger;
+
     .line 26
-    move-result-object v2
-
     .line 27
-    sput-object v2, Landroidx/concurrent/futures/g;->g:Ljava/util/logging/Logger;
-
     .line 28
+    move-result-object v3
+
     .line 29
-    :try_start_0
-    new-instance v2, Landroidx/concurrent/futures/d;
+    sput-object v3, Landroidx/concurrent/futures/g;->g:Ljava/util/logging/Logger;
 
     .line 30
     .line 31
-    const-class v3, Ljava/lang/Thread;
+    :try_start_0
+    new-instance v3, Landroidx/concurrent/futures/d;
 
     .line 32
     .line 33
-    const-string v4, "a"
+    const-class v4, Ljava/lang/Thread;
 
     .line 34
     .line 35
-    invoke-static {v0, v3, v4}, Ljava/util/concurrent/atomic/AtomicReferenceFieldUpdater;->newUpdater(Ljava/lang/Class;Ljava/lang/Class;Ljava/lang/String;)Ljava/util/concurrent/atomic/AtomicReferenceFieldUpdater;
+    const-string v5, "a"
 
     .line 36
     .line 37
+    invoke-static {v1, v4, v5}, Ljava/util/concurrent/atomic/AtomicReferenceFieldUpdater;->newUpdater(Ljava/lang/Class;Ljava/lang/Class;Ljava/lang/String;)Ljava/util/concurrent/atomic/AtomicReferenceFieldUpdater;
+
     .line 38
-    move-result-object v4
-
     .line 39
-    const-string v3, "b"
-
     .line 40
+    move-result-object v5
+
     .line 41
-    invoke-static {v0, v0, v3}, Ljava/util/concurrent/atomic/AtomicReferenceFieldUpdater;->newUpdater(Ljava/lang/Class;Ljava/lang/Class;Ljava/lang/String;)Ljava/util/concurrent/atomic/AtomicReferenceFieldUpdater;
+    invoke-static {v1, v1, v0}, Ljava/util/concurrent/atomic/AtomicReferenceFieldUpdater;->newUpdater(Ljava/lang/Class;Ljava/lang/Class;Ljava/lang/String;)Ljava/util/concurrent/atomic/AtomicReferenceFieldUpdater;
 
     .line 42
     .line 43
     .line 44
-    move-result-object v5
+    move-result-object v6
 
     .line 45
-    const-string v3, "d"
+    const-string v4, "d"
 
     .line 46
     .line 47
-    invoke-static {v1, v0, v3}, Ljava/util/concurrent/atomic/AtomicReferenceFieldUpdater;->newUpdater(Ljava/lang/Class;Ljava/lang/Class;Ljava/lang/String;)Ljava/util/concurrent/atomic/AtomicReferenceFieldUpdater;
+    invoke-static {v2, v1, v4}, Ljava/util/concurrent/atomic/AtomicReferenceFieldUpdater;->newUpdater(Ljava/lang/Class;Ljava/lang/Class;Ljava/lang/String;)Ljava/util/concurrent/atomic/AtomicReferenceFieldUpdater;
 
     .line 48
     .line 49
     .line 50
-    move-result-object v6
+    move-result-object v7
 
     .line 51
-    const-class v0, Landroidx/concurrent/futures/c;
+    const-class v1, Landroidx/concurrent/futures/c;
 
     .line 52
     .line 53
-    const-string v3, "c"
+    const-string v4, "c"
 
     .line 54
     .line 55
-    invoke-static {v1, v0, v3}, Ljava/util/concurrent/atomic/AtomicReferenceFieldUpdater;->newUpdater(Ljava/lang/Class;Ljava/lang/Class;Ljava/lang/String;)Ljava/util/concurrent/atomic/AtomicReferenceFieldUpdater;
+    invoke-static {v2, v1, v4}, Ljava/util/concurrent/atomic/AtomicReferenceFieldUpdater;->newUpdater(Ljava/lang/Class;Ljava/lang/Class;Ljava/lang/String;)Ljava/util/concurrent/atomic/AtomicReferenceFieldUpdater;
 
     .line 56
     .line 57
     .line 58
-    move-result-object v7
+    move-result-object v8
 
     .line 59
-    const-class v0, Ljava/lang/Object;
+    const-class v1, Ljava/lang/Object;
 
     .line 60
     .line 61
-    const-string v3, "b"
+    invoke-static {v2, v1, v0}, Ljava/util/concurrent/atomic/AtomicReferenceFieldUpdater;->newUpdater(Ljava/lang/Class;Ljava/lang/Class;Ljava/lang/String;)Ljava/util/concurrent/atomic/AtomicReferenceFieldUpdater;
 
     .line 62
     .line 63
-    invoke-static {v1, v0, v3}, Ljava/util/concurrent/atomic/AtomicReferenceFieldUpdater;->newUpdater(Ljava/lang/Class;Ljava/lang/Class;Ljava/lang/String;)Ljava/util/concurrent/atomic/AtomicReferenceFieldUpdater;
-
     .line 64
+    move-result-object v9
+
     .line 65
+    move-object v4, v3
+
     .line 66
-    move-result-object v8
-
-    .line 67
-    move-object v3, v2
-
-    .line 68
-    invoke-direct/range {v3 .. v8}, Landroidx/concurrent/futures/d;-><init>(Ljava/util/concurrent/atomic/AtomicReferenceFieldUpdater;Ljava/util/concurrent/atomic/AtomicReferenceFieldUpdater;Ljava/util/concurrent/atomic/AtomicReferenceFieldUpdater;Ljava/util/concurrent/atomic/AtomicReferenceFieldUpdater;Ljava/util/concurrent/atomic/AtomicReferenceFieldUpdater;)V
+    invoke-direct/range {v4 .. v9}, Landroidx/concurrent/futures/d;-><init>(Ljava/util/concurrent/atomic/AtomicReferenceFieldUpdater;Ljava/util/concurrent/atomic/AtomicReferenceFieldUpdater;Ljava/util/concurrent/atomic/AtomicReferenceFieldUpdater;Ljava/util/concurrent/atomic/AtomicReferenceFieldUpdater;Ljava/util/concurrent/atomic/AtomicReferenceFieldUpdater;)V
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
+    .line 67
+    .line 68
     .line 69
-    .line 70
-    .line 71
     const/4 v0, 0x0
 
-    .line 72
+    .line 70
     goto :goto_0
 
-    .line 73
+    .line 71
     :catchall_0
     move-exception v0
 
+    .line 72
+    new-instance v3, Landroidx/concurrent/futures/e;
+
+    .line 73
     .line 74
-    new-instance v2, Landroidx/concurrent/futures/e;
+    invoke-direct {v3}, Ljava/lang/Object;-><init>()V
 
     .line 75
     .line 76
-    invoke-direct {v2}, Ljava/lang/Object;-><init>()V
-
     .line 77
+    :goto_0
+    sput-object v3, Landroidx/concurrent/futures/g;->h:Landroidx/concurrent/futures/l;
+
     .line 78
     .line 79
-    :goto_0
-    sput-object v2, Landroidx/concurrent/futures/g;->h:Landroidx/concurrent/futures/l;
+    if-eqz v0, :cond_0
 
     .line 80
     .line 81
-    if-eqz v0, :cond_0
+    sget-object v1, Landroidx/concurrent/futures/g;->g:Ljava/util/logging/Logger;
 
     .line 82
     .line 83
-    sget-object v1, Landroidx/concurrent/futures/g;->g:Ljava/util/logging/Logger;
+    sget-object v2, Ljava/util/logging/Level;->SEVERE:Ljava/util/logging/Level;
 
     .line 84
     .line 85
-    sget-object v2, Ljava/util/logging/Level;->SEVERE:Ljava/util/logging/Level;
+    const-string v3, "SafeAtomicHelper is broken!"
 
     .line 86
     .line 87
-    const-string v3, "SafeAtomicHelper is broken!"
+    invoke-virtual {v1, v2, v3, v0}, Ljava/util/logging/Logger;->log(Ljava/util/logging/Level;Ljava/lang/String;Ljava/lang/Throwable;)V
 
     .line 88
     .line 89
-    invoke-virtual {v1, v2, v3, v0}, Ljava/util/logging/Logger;->log(Ljava/util/logging/Level;Ljava/lang/String;Ljava/lang/Throwable;)V
-
     .line 90
-    .line 91
-    .line 92
     :cond_0
     new-instance v0, Ljava/lang/Object;
 
-    .line 93
-    .line 94
+    .line 91
+    .line 92
     invoke-direct {v0}, Ljava/lang/Object;-><init>()V
 
+    .line 93
+    .line 94
     .line 95
-    .line 96
-    .line 97
     sput-object v0, Landroidx/concurrent/futures/g;->i:Ljava/lang/Object;
 
-    .line 98
-    .line 99
+    .line 96
+    .line 97
     return-void
 .end method
 
@@ -519,7 +515,7 @@
 
     .line 26
     .line 27
-    iget-object p0, p0, Landroidx/concurrent/futures/a;->b:Ljava/lang/Throwable;
+    iget-object p0, p0, Landroidx/concurrent/futures/a;->b:Ljava/util/concurrent/CancellationException;
 
     .line 28
     .line 29
@@ -623,76 +619,71 @@
     .locals 4
 
     .line 1
-    invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+    invoke-virtual {p2}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
     .line 2
     .line 3
     .line 4
-    invoke-virtual {p2}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+    iget-object v0, p0, Landroidx/concurrent/futures/g;->c:Landroidx/concurrent/futures/c;
 
     .line 5
     .line 6
-    .line 7
-    iget-object v0, p0, Landroidx/concurrent/futures/g;->c:Landroidx/concurrent/futures/c;
-
-    .line 8
-    .line 9
     sget-object v1, Landroidx/concurrent/futures/c;->d:Landroidx/concurrent/futures/c;
 
-    .line 10
-    .line 11
+    .line 7
+    .line 8
     if-eq v0, v1, :cond_2
 
-    .line 12
-    .line 13
+    .line 9
+    .line 10
     new-instance v2, Landroidx/concurrent/futures/c;
 
-    .line 14
-    .line 15
+    .line 11
+    .line 12
     invoke-direct {v2, p1, p2}, Landroidx/concurrent/futures/c;-><init>(Ljava/lang/Runnable;Ljava/util/concurrent/Executor;)V
 
-    .line 16
-    .line 17
-    .line 18
+    .line 13
+    .line 14
+    .line 15
     :cond_0
     iput-object v0, v2, Landroidx/concurrent/futures/c;->c:Landroidx/concurrent/futures/c;
 
-    .line 19
-    .line 20
+    .line 16
+    .line 17
     sget-object v3, Landroidx/concurrent/futures/g;->h:Landroidx/concurrent/futures/l;
 
-    .line 21
-    .line 22
+    .line 18
+    .line 19
     invoke-virtual {v3, p0, v0, v2}, Landroidx/concurrent/futures/l;->b(Landroidx/concurrent/futures/g;Landroidx/concurrent/futures/c;Landroidx/concurrent/futures/c;)Z
 
-    .line 23
-    .line 24
-    .line 25
+    .line 20
+    .line 21
+    .line 22
     move-result v0
 
-    .line 26
+    .line 23
     if-eqz v0, :cond_1
 
-    .line 27
-    .line 28
+    .line 24
+    .line 25
     return-void
 
-    .line 29
+    .line 26
     :cond_1
     iget-object v0, p0, Landroidx/concurrent/futures/g;->c:Landroidx/concurrent/futures/c;
 
-    .line 30
-    .line 31
+    .line 27
+    .line 28
     if-ne v0, v1, :cond_0
 
-    .line 32
-    .line 33
+    .line 29
+    .line 30
     :cond_2
     invoke-static {p1, p2}, Landroidx/concurrent/futures/g;->f(Ljava/lang/Runnable;Ljava/util/concurrent/Executor;)V
 
-    .line 34
-    .line 35
-    .line 36
+    .line 31
+    .line 32
+    .line 33
     return-void
 .end method
 
@@ -855,118 +846,96 @@
 .end method
 
 .method public final cancel(Z)Z
-    .locals 6
+    .locals 5
 
     .line 1
     iget-object v0, p0, Landroidx/concurrent/futures/g;->b:Ljava/lang/Object;
 
     .line 2
     .line 3
-    const/4 v1, 0x1
+    const/4 v1, 0x0
 
     .line 4
-    const/4 v2, 0x0
+    if-nez v0, :cond_2
 
     .line 5
-    if-nez v0, :cond_0
-
     .line 6
-    .line 7
-    const/4 v3, 0x1
+    sget-boolean v2, Landroidx/concurrent/futures/g;->f:Z
 
+    .line 7
     .line 8
-    goto :goto_0
+    if-eqz v2, :cond_0
 
     .line 9
-    :cond_0
-    const/4 v3, 0x0
-
     .line 10
-    :goto_0
-    if-eqz v3, :cond_3
+    new-instance v2, Landroidx/concurrent/futures/a;
 
     .line 11
     .line 12
-    sget-boolean v3, Landroidx/concurrent/futures/g;->f:Z
+    new-instance v3, Ljava/util/concurrent/CancellationException;
 
     .line 13
     .line 14
-    if-eqz v3, :cond_1
+    const-string v4, "Future.cancel() was called."
 
     .line 15
     .line 16
-    new-instance v3, Landroidx/concurrent/futures/a;
+    invoke-direct {v3, v4}, Ljava/util/concurrent/CancellationException;-><init>(Ljava/lang/String;)V
 
     .line 17
     .line 18
-    new-instance v4, Ljava/util/concurrent/CancellationException;
-
     .line 19
-    .line 20
-    const-string v5, "Future.cancel() was called."
+    invoke-direct {v2, p1, v3}, Landroidx/concurrent/futures/a;-><init>(ZLjava/util/concurrent/CancellationException;)V
 
+    .line 20
     .line 21
     .line 22
-    invoke-direct {v4, v5}, Ljava/util/concurrent/CancellationException;-><init>(Ljava/lang/String;)V
+    goto :goto_0
 
     .line 23
+    :cond_0
+    if-eqz p1, :cond_1
+
     .line 24
     .line 25
-    invoke-direct {v3, v4, p1}, Landroidx/concurrent/futures/a;-><init>(Ljava/lang/Throwable;Z)V
+    sget-object v2, Landroidx/concurrent/futures/a;->c:Landroidx/concurrent/futures/a;
 
     .line 26
     .line 27
+    goto :goto_0
+
     .line 28
-    goto :goto_1
+    :cond_1
+    sget-object v2, Landroidx/concurrent/futures/a;->d:Landroidx/concurrent/futures/a;
 
     .line 29
-    :cond_1
-    if-eqz p1, :cond_2
-
     .line 30
-    .line 31
-    sget-object v3, Landroidx/concurrent/futures/a;->c:Landroidx/concurrent/futures/a;
-
-    .line 32
-    .line 33
-    goto :goto_1
-
-    .line 34
-    :cond_2
-    sget-object v3, Landroidx/concurrent/futures/a;->d:Landroidx/concurrent/futures/a;
-
-    .line 35
-    .line 36
-    :goto_1
+    :goto_0
     sget-object p1, Landroidx/concurrent/futures/g;->h:Landroidx/concurrent/futures/l;
+
+    .line 31
+    .line 32
+    invoke-virtual {p1, p0, v0, v2}, Landroidx/concurrent/futures/l;->c(Landroidx/concurrent/futures/g;Ljava/lang/Object;Ljava/lang/Object;)Z
+
+    .line 33
+    .line 34
+    .line 35
+    move-result p1
+
+    .line 36
+    if-eqz p1, :cond_2
 
     .line 37
     .line 38
-    invoke-virtual {p1, p0, v0, v3}, Landroidx/concurrent/futures/l;->c(Landroidx/concurrent/futures/g;Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {p0}, Landroidx/concurrent/futures/g;->e(Landroidx/concurrent/futures/g;)V
 
     .line 39
     .line 40
     .line 41
-    move-result p1
+    const/4 v1, 0x1
 
     .line 42
-    if-eqz p1, :cond_3
-
-    .line 43
-    .line 44
-    invoke-static {p0}, Landroidx/concurrent/futures/g;->e(Landroidx/concurrent/futures/g;)V
-
-    .line 45
-    .line 46
-    .line 47
-    goto :goto_2
-
-    .line 48
-    :cond_3
-    const/4 v1, 0x0
-
-    .line 49
-    :goto_2
+    :cond_2
     return v1
 .end method
 
@@ -978,129 +947,106 @@
 .end method
 
 .method public final get()Ljava/lang/Object;
-    .locals 6
+    .locals 4
 
-    .line 75
+    .line 85
     invoke-static {}, Ljava/lang/Thread;->interrupted()Z
 
     move-result v0
 
-    if-nez v0, :cond_8
+    if-nez v0, :cond_6
 
+    .line 86
     iget-object v0, p0, Landroidx/concurrent/futures/g;->b:Ljava/lang/Object;
-
-    const/4 v1, 0x0
-
-    const/4 v2, 0x1
 
     if-eqz v0, :cond_0
 
-    const/4 v3, 0x1
-
-    goto :goto_0
-
-    :cond_0
-    const/4 v3, 0x0
-
-    :goto_0
-    and-int/2addr v3, v2
-
-    if-eqz v3, :cond_1
-
-    .line 76
+    .line 87
     invoke-static {v0}, Landroidx/concurrent/futures/g;->g(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object v0
 
     return-object v0
 
-    :cond_1
+    .line 88
+    :cond_0
     iget-object v0, p0, Landroidx/concurrent/futures/g;->d:Landroidx/concurrent/futures/f;
 
-    sget-object v3, Landroidx/concurrent/futures/f;->c:Landroidx/concurrent/futures/f;
+    .line 89
+    sget-object v1, Landroidx/concurrent/futures/f;->c:Landroidx/concurrent/futures/f;
 
-    if-eq v0, v3, :cond_7
+    if-eq v0, v1, :cond_5
 
-    .line 77
-    new-instance v4, Landroidx/concurrent/futures/f;
+    .line 90
+    new-instance v2, Landroidx/concurrent/futures/f;
 
-    invoke-direct {v4}, Landroidx/concurrent/futures/f;-><init>()V
+    invoke-direct {v2}, Landroidx/concurrent/futures/f;-><init>()V
 
-    :cond_2
-    sget-object v5, Landroidx/concurrent/futures/g;->h:Landroidx/concurrent/futures/l;
+    .line 91
+    :cond_1
+    sget-object v3, Landroidx/concurrent/futures/g;->h:Landroidx/concurrent/futures/l;
 
-    .line 78
-    invoke-virtual {v5, v4, v0}, Landroidx/concurrent/futures/l;->f(Landroidx/concurrent/futures/f;Landroidx/concurrent/futures/f;)V
+    invoke-virtual {v3, v2, v0}, Landroidx/concurrent/futures/l;->f(Landroidx/concurrent/futures/f;Landroidx/concurrent/futures/f;)V
 
-    .line 79
-    invoke-virtual {v5, p0, v0, v4}, Landroidx/concurrent/futures/l;->d(Landroidx/concurrent/futures/g;Landroidx/concurrent/futures/f;Landroidx/concurrent/futures/f;)Z
+    .line 92
+    invoke-virtual {v3, p0, v0, v2}, Landroidx/concurrent/futures/l;->d(Landroidx/concurrent/futures/g;Landroidx/concurrent/futures/f;Landroidx/concurrent/futures/f;)Z
 
     move-result v0
 
-    if-eqz v0, :cond_6
+    if-eqz v0, :cond_4
 
-    .line 80
-    :cond_3
+    .line 93
+    :cond_2
     invoke-static {p0}, Ljava/util/concurrent/locks/LockSupport;->park(Ljava/lang/Object;)V
 
-    .line 81
+    .line 94
     invoke-static {}, Ljava/lang/Thread;->interrupted()Z
 
     move-result v0
 
-    if-nez v0, :cond_5
+    if-nez v0, :cond_3
 
+    .line 95
     iget-object v0, p0, Landroidx/concurrent/futures/g;->b:Ljava/lang/Object;
 
-    if-eqz v0, :cond_4
+    if-eqz v0, :cond_2
 
-    const/4 v3, 0x1
-
-    goto :goto_1
-
-    :cond_4
-    const/4 v3, 0x0
-
-    :goto_1
-    and-int/2addr v3, v2
-
-    if-eqz v3, :cond_3
-
-    .line 82
+    .line 96
     invoke-static {v0}, Landroidx/concurrent/futures/g;->g(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object v0
 
     return-object v0
 
-    .line 83
-    :cond_5
-    invoke-virtual {p0, v4}, Landroidx/concurrent/futures/g;->j(Landroidx/concurrent/futures/f;)V
+    .line 97
+    :cond_3
+    invoke-virtual {p0, v2}, Landroidx/concurrent/futures/g;->j(Landroidx/concurrent/futures/f;)V
 
-    .line 84
+    .line 98
     new-instance v0, Ljava/lang/InterruptedException;
 
     invoke-direct {v0}, Ljava/lang/InterruptedException;-><init>()V
 
     throw v0
 
-    :cond_6
+    .line 99
+    :cond_4
     iget-object v0, p0, Landroidx/concurrent/futures/g;->d:Landroidx/concurrent/futures/f;
 
-    if-ne v0, v3, :cond_2
+    if-ne v0, v1, :cond_1
 
-    :cond_7
+    .line 100
+    :cond_5
     iget-object v0, p0, Landroidx/concurrent/futures/g;->b:Ljava/lang/Object;
 
-    .line 85
     invoke-static {v0}, Landroidx/concurrent/futures/g;->g(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object v0
 
     return-object v0
 
-    .line 86
-    :cond_8
+    .line 101
+    :cond_6
     new-instance v0, Ljava/lang/InterruptedException;
 
     invoke-direct {v0}, Ljava/lang/InterruptedException;-><init>()V
@@ -1109,437 +1055,396 @@
 .end method
 
 .method public final get(JLjava/util/concurrent/TimeUnit;)Ljava/lang/Object;
-    .locals 19
-
-    move-object/from16 v0, p0
-
-    move-wide/from16 v1, p1
-
-    move-object/from16 v3, p3
+    .locals 12
 
     .line 1
-    invoke-virtual {v3, v1, v2}, Ljava/util/concurrent/TimeUnit;->toNanos(J)J
+    invoke-virtual {p3, p1, p2}, Ljava/util/concurrent/TimeUnit;->toNanos(J)J
 
-    move-result-wide v4
+    move-result-wide v0
 
     .line 2
     invoke-static {}, Ljava/lang/Thread;->interrupted()Z
 
-    move-result v6
+    move-result v2
 
-    if-nez v6, :cond_16
+    if-nez v2, :cond_13
 
-    iget-object v6, v0, Landroidx/concurrent/futures/g;->b:Ljava/lang/Object;
+    .line 3
+    iget-object v2, p0, Landroidx/concurrent/futures/g;->b:Ljava/lang/Object;
 
-    const/4 v8, 0x1
+    if-eqz v2, :cond_0
 
-    if-eqz v6, :cond_0
+    .line 4
+    invoke-static {v2}, Landroidx/concurrent/futures/g;->g(Ljava/lang/Object;)Ljava/lang/Object;
 
-    const/4 v9, 0x1
+    move-result-object p1
+
+    return-object p1
+
+    :cond_0
+    const-wide/16 v2, 0x0
+
+    cmp-long v4, v0, v2
+
+    if-lez v4, :cond_1
+
+    .line 5
+    invoke-static {}, Ljava/lang/System;->nanoTime()J
+
+    move-result-wide v4
+
+    add-long/2addr v4, v0
 
     goto :goto_0
 
-    :cond_0
-    const/4 v9, 0x0
+    :cond_1
+    move-wide v4, v2
 
     :goto_0
-    and-int/2addr v9, v8
+    const-wide/16 v6, 0x3e8
 
-    if-eqz v9, :cond_1
+    cmp-long v8, v0, v6
 
-    .line 3
-    invoke-static {v6}, Landroidx/concurrent/futures/g;->g(Ljava/lang/Object;)Ljava/lang/Object;
+    if-ltz v8, :cond_8
 
-    move-result-object v1
+    .line 6
+    iget-object v8, p0, Landroidx/concurrent/futures/g;->d:Landroidx/concurrent/futures/f;
 
-    return-object v1
+    .line 7
+    sget-object v9, Landroidx/concurrent/futures/f;->c:Landroidx/concurrent/futures/f;
 
-    :cond_1
-    const-wide/16 v9, 0x0
+    if-eq v8, v9, :cond_7
 
-    cmp-long v6, v4, v9
+    .line 8
+    new-instance v10, Landroidx/concurrent/futures/f;
 
-    if-lez v6, :cond_2
+    invoke-direct {v10}, Landroidx/concurrent/futures/f;-><init>()V
 
-    .line 4
+    .line 9
+    :cond_2
+    sget-object v11, Landroidx/concurrent/futures/g;->h:Landroidx/concurrent/futures/l;
+
+    invoke-virtual {v11, v10, v8}, Landroidx/concurrent/futures/l;->f(Landroidx/concurrent/futures/f;Landroidx/concurrent/futures/f;)V
+
+    .line 10
+    invoke-virtual {v11, p0, v8, v10}, Landroidx/concurrent/futures/l;->d(Landroidx/concurrent/futures/g;Landroidx/concurrent/futures/f;Landroidx/concurrent/futures/f;)Z
+
+    move-result v8
+
+    if-eqz v8, :cond_6
+
+    .line 11
+    :cond_3
+    invoke-static {p0, v0, v1}, Ljava/util/concurrent/locks/LockSupport;->parkNanos(Ljava/lang/Object;J)V
+
+    .line 12
+    invoke-static {}, Ljava/lang/Thread;->interrupted()Z
+
+    move-result v0
+
+    if-nez v0, :cond_5
+
+    .line 13
+    iget-object v0, p0, Landroidx/concurrent/futures/g;->b:Ljava/lang/Object;
+
+    if-eqz v0, :cond_4
+
+    .line 14
+    invoke-static {v0}, Landroidx/concurrent/futures/g;->g(Ljava/lang/Object;)Ljava/lang/Object;
+
+    move-result-object p1
+
+    return-object p1
+
+    .line 15
+    :cond_4
     invoke-static {}, Ljava/lang/System;->nanoTime()J
 
-    move-result-wide v11
+    move-result-wide v0
 
-    add-long/2addr v11, v4
+    sub-long v0, v4, v0
+
+    cmp-long v8, v0, v6
+
+    if-gez v8, :cond_3
+
+    .line 16
+    invoke-virtual {p0, v10}, Landroidx/concurrent/futures/g;->j(Landroidx/concurrent/futures/f;)V
 
     goto :goto_1
 
-    :cond_2
-    move-wide v11, v9
+    .line 17
+    :cond_5
+    invoke-virtual {p0, v10}, Landroidx/concurrent/futures/g;->j(Landroidx/concurrent/futures/f;)V
 
+    .line 18
+    new-instance p1, Ljava/lang/InterruptedException;
+
+    invoke-direct {p1}, Ljava/lang/InterruptedException;-><init>()V
+
+    throw p1
+
+    .line 19
+    :cond_6
+    iget-object v8, p0, Landroidx/concurrent/futures/g;->d:Landroidx/concurrent/futures/f;
+
+    if-ne v8, v9, :cond_2
+
+    .line 20
+    :cond_7
+    iget-object p1, p0, Landroidx/concurrent/futures/g;->b:Ljava/lang/Object;
+
+    invoke-static {p1}, Landroidx/concurrent/futures/g;->g(Ljava/lang/Object;)Ljava/lang/Object;
+
+    move-result-object p1
+
+    return-object p1
+
+    :cond_8
     :goto_1
-    const-wide/16 v13, 0x3e8
+    cmp-long v8, v0, v2
 
-    cmp-long v6, v4, v13
+    if-lez v8, :cond_b
 
-    if-ltz v6, :cond_a
+    .line 21
+    iget-object v0, p0, Landroidx/concurrent/futures/g;->b:Ljava/lang/Object;
 
-    iget-object v6, v0, Landroidx/concurrent/futures/g;->d:Landroidx/concurrent/futures/f;
+    if-eqz v0, :cond_9
 
-    sget-object v15, Landroidx/concurrent/futures/f;->c:Landroidx/concurrent/futures/f;
+    .line 22
+    invoke-static {v0}, Landroidx/concurrent/futures/g;->g(Ljava/lang/Object;)Ljava/lang/Object;
 
-    if-eq v6, v15, :cond_9
+    move-result-object p1
 
-    .line 5
-    new-instance v7, Landroidx/concurrent/futures/f;
+    return-object p1
 
-    invoke-direct {v7}, Landroidx/concurrent/futures/f;-><init>()V
-
-    :cond_3
-    sget-object v9, Landroidx/concurrent/futures/g;->h:Landroidx/concurrent/futures/l;
-
-    .line 6
-    invoke-virtual {v9, v7, v6}, Landroidx/concurrent/futures/l;->f(Landroidx/concurrent/futures/f;Landroidx/concurrent/futures/f;)V
-
-    .line 7
-    invoke-virtual {v9, v0, v6, v7}, Landroidx/concurrent/futures/l;->d(Landroidx/concurrent/futures/g;Landroidx/concurrent/futures/f;Landroidx/concurrent/futures/f;)Z
-
-    move-result v6
-
-    if-eqz v6, :cond_8
-
-    .line 8
-    :cond_4
-    invoke-static {v0, v4, v5}, Ljava/util/concurrent/locks/LockSupport;->parkNanos(Ljava/lang/Object;J)V
-
-    .line 9
+    .line 23
+    :cond_9
     invoke-static {}, Ljava/lang/Thread;->interrupted()Z
 
-    move-result v4
+    move-result v0
 
-    if-nez v4, :cond_7
+    if-nez v0, :cond_a
 
-    iget-object v4, v0, Landroidx/concurrent/futures/g;->b:Ljava/lang/Object;
+    .line 24
+    invoke-static {}, Ljava/lang/System;->nanoTime()J
 
-    if-eqz v4, :cond_5
+    move-result-wide v0
 
-    const/4 v5, 0x1
+    sub-long v0, v4, v0
+
+    goto :goto_1
+
+    .line 25
+    :cond_a
+    new-instance p1, Ljava/lang/InterruptedException;
+
+    invoke-direct {p1}, Ljava/lang/InterruptedException;-><init>()V
+
+    throw p1
+
+    .line 26
+    :cond_b
+    invoke-virtual {p0}, Landroidx/concurrent/futures/g;->toString()Ljava/lang/String;
+
+    move-result-object v4
+
+    .line 27
+    invoke-virtual {p3}, Ljava/lang/Object;->toString()Ljava/lang/String;
+
+    move-result-object v5
+
+    sget-object v8, Ljava/util/Locale;->ROOT:Ljava/util/Locale;
+
+    invoke-virtual {v5, v8}, Ljava/lang/String;->toLowerCase(Ljava/util/Locale;)Ljava/lang/String;
+
+    move-result-object v5
+
+    .line 28
+    const-string v9, "Waited "
+
+    const-string v10, " "
+
+    .line 29
+    invoke-static {v9, v10, p1, p2}, Landroidx/compose/runtime/a0;->u(Ljava/lang/String;Ljava/lang/String;J)Ljava/lang/StringBuilder;
+
+    move-result-object p1
+
+    .line 30
+    invoke-virtual {p3}, Ljava/lang/Object;->toString()Ljava/lang/String;
+
+    move-result-object p2
+
+    invoke-virtual {p2, v8}, Ljava/lang/String;->toLowerCase(Ljava/util/Locale;)Ljava/lang/String;
+
+    move-result-object p2
+
+    invoke-virtual {p1, p2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {p1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object p1
+
+    add-long v8, v0, v6
+
+    cmp-long p2, v8, v2
+
+    if-gez p2, :cond_11
+
+    .line 31
+    const-string p2, " (plus "
+
+    .line 32
+    invoke-static {p1, p2}, Landroidx/appcompat/view/menu/F;->F(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object p1
+
+    neg-long v0, v0
+
+    .line 33
+    sget-object p2, Ljava/util/concurrent/TimeUnit;->NANOSECONDS:Ljava/util/concurrent/TimeUnit;
+
+    invoke-virtual {p3, v0, v1, p2}, Ljava/util/concurrent/TimeUnit;->convert(JLjava/util/concurrent/TimeUnit;)J
+
+    move-result-wide v8
+
+    .line 34
+    invoke-virtual {p3, v8, v9}, Ljava/util/concurrent/TimeUnit;->toNanos(J)J
+
+    move-result-wide p2
+
+    sub-long/2addr v0, p2
+
+    cmp-long p2, v8, v2
+
+    if-eqz p2, :cond_d
+
+    cmp-long p3, v0, v6
+
+    if-lez p3, :cond_c
 
     goto :goto_2
 
-    :cond_5
-    const/4 v5, 0x0
-
-    :goto_2
-    and-int/2addr v5, v8
-
-    if-eqz v5, :cond_6
-
-    .line 10
-    invoke-static {v4}, Landroidx/concurrent/futures/g;->g(Ljava/lang/Object;)Ljava/lang/Object;
-
-    move-result-object v1
-
-    return-object v1
-
-    .line 11
-    :cond_6
-    invoke-static {}, Ljava/lang/System;->nanoTime()J
-
-    move-result-wide v4
-
-    sub-long v4, v11, v4
-
-    cmp-long v6, v4, v13
-
-    if-gez v6, :cond_4
-
-    .line 12
-    invoke-virtual {v0, v7}, Landroidx/concurrent/futures/g;->j(Landroidx/concurrent/futures/f;)V
-
-    :goto_3
-    const-wide/16 v6, 0x0
-
-    goto :goto_4
-
-    .line 13
-    :cond_7
-    invoke-virtual {v0, v7}, Landroidx/concurrent/futures/g;->j(Landroidx/concurrent/futures/f;)V
-
-    .line 14
-    new-instance v1, Ljava/lang/InterruptedException;
-
-    invoke-direct {v1}, Ljava/lang/InterruptedException;-><init>()V
-
-    throw v1
-
-    :cond_8
-    iget-object v6, v0, Landroidx/concurrent/futures/g;->d:Landroidx/concurrent/futures/f;
-
-    if-ne v6, v15, :cond_3
-
-    :cond_9
-    iget-object v1, v0, Landroidx/concurrent/futures/g;->b:Ljava/lang/Object;
-
-    .line 15
-    invoke-static {v1}, Landroidx/concurrent/futures/g;->g(Ljava/lang/Object;)Ljava/lang/Object;
-
-    move-result-object v1
-
-    return-object v1
-
-    :cond_a
-    move-wide v6, v9
-
-    :goto_4
-    cmp-long v9, v4, v6
-
-    if-lez v9, :cond_e
-
-    iget-object v4, v0, Landroidx/concurrent/futures/g;->b:Ljava/lang/Object;
-
-    if-eqz v4, :cond_b
-
-    const/4 v5, 0x1
-
-    goto :goto_5
-
-    :cond_b
-    const/4 v5, 0x0
-
-    :goto_5
-    and-int/2addr v5, v8
-
-    if-eqz v5, :cond_c
-
-    .line 16
-    invoke-static {v4}, Landroidx/concurrent/futures/g;->g(Ljava/lang/Object;)Ljava/lang/Object;
-
-    move-result-object v1
-
-    return-object v1
-
-    .line 17
     :cond_c
-    invoke-static {}, Ljava/lang/Thread;->interrupted()Z
-
-    move-result v4
-
-    if-nez v4, :cond_d
-
-    .line 18
-    invoke-static {}, Ljava/lang/System;->nanoTime()J
-
-    move-result-wide v4
-
-    sub-long v4, v11, v4
+    const/4 p3, 0x0
 
     goto :goto_3
 
-    .line 19
     :cond_d
-    new-instance v1, Ljava/lang/InterruptedException;
-
-    invoke-direct {v1}, Ljava/lang/InterruptedException;-><init>()V
-
-    throw v1
-
-    .line 20
-    :cond_e
-    invoke-virtual/range {p0 .. p0}, Landroidx/concurrent/futures/g;->toString()Ljava/lang/String;
-
-    move-result-object v6
-
-    .line 21
-    invoke-virtual/range {p3 .. p3}, Ljava/lang/Object;->toString()Ljava/lang/String;
-
-    move-result-object v7
-
-    sget-object v9, Ljava/util/Locale;->ROOT:Ljava/util/Locale;
-
-    invoke-virtual {v7, v9}, Ljava/lang/String;->toLowerCase(Ljava/util/Locale;)Ljava/lang/String;
-
-    move-result-object v7
-
-    const-string v10, "Waited "
-
-    const-string v11, " "
-
-    .line 22
-    invoke-static {v10, v1, v2, v11}, Lj0/d;->r(Ljava/lang/String;JLjava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v1
-
-    .line 23
-    invoke-virtual/range {p3 .. p3}, Ljava/lang/Object;->toString()Ljava/lang/String;
-
-    move-result-object v2
-
-    invoke-virtual {v2, v9}, Ljava/lang/String;->toLowerCase(Ljava/util/Locale;)Ljava/lang/String;
-
-    move-result-object v2
-
-    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object v1
-
-    add-long v9, v4, v13
-
-    const-wide/16 v17, 0x0
-
-    cmp-long v2, v9, v17
-
-    if-gez v2, :cond_14
-
-    const-string v2, " (plus "
-
-    .line 24
-    invoke-static {v1, v2}, Landroid/support/v4/media/session/a;->S(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
-
-    move-result-object v1
-
-    neg-long v4, v4
-
-    .line 25
-    sget-object v2, Ljava/util/concurrent/TimeUnit;->NANOSECONDS:Ljava/util/concurrent/TimeUnit;
-
-    invoke-virtual {v3, v4, v5, v2}, Ljava/util/concurrent/TimeUnit;->convert(JLjava/util/concurrent/TimeUnit;)J
-
-    move-result-wide v9
-
-    .line 26
-    invoke-virtual {v3, v9, v10}, Ljava/util/concurrent/TimeUnit;->toNanos(J)J
-
-    move-result-wide v2
-
-    sub-long/2addr v4, v2
-
-    cmp-long v2, v9, v17
-
-    if-eqz v2, :cond_10
-
-    cmp-long v3, v4, v13
-
-    if-lez v3, :cond_f
-
-    goto :goto_6
-
-    :cond_f
-    const/16 v16, 0x0
-
-    goto :goto_7
-
-    :cond_10
-    :goto_6
-    const/16 v16, 0x1
-
-    :goto_7
-    if-lez v2, :cond_12
-
-    .line 27
-    new-instance v2, Ljava/lang/StringBuilder;
-
-    invoke-direct {v2}, Ljava/lang/StringBuilder;-><init>()V
-
-    invoke-virtual {v2, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v2, v9, v10}, Ljava/lang/StringBuilder;->append(J)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v2, v11}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v2, v7}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object v1
-
-    if-eqz v16, :cond_11
-
-    const-string v2, ","
-
-    .line 28
-    invoke-static {v1, v2}, Landroid/support/v4/media/session/a;->S(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
-
-    move-result-object v1
-
-    .line 29
-    :cond_11
-    invoke-static {v1, v11}, Landroid/support/v4/media/session/a;->S(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
-
-    move-result-object v1
-
-    :cond_12
-    if-eqz v16, :cond_13
-
-    .line 30
-    new-instance v2, Ljava/lang/StringBuilder;
-
-    invoke-direct {v2}, Ljava/lang/StringBuilder;-><init>()V
-
-    invoke-virtual {v2, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v2, v4, v5}, Ljava/lang/StringBuilder;->append(J)Ljava/lang/StringBuilder;
-
-    const-string v1, " nanoseconds "
-
-    invoke-virtual {v2, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object v1
-
-    :cond_13
-    const-string v2, "delay)"
-
-    .line 31
-    invoke-static {v1, v2}, Landroid/support/v4/media/session/a;->S(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
-
-    move-result-object v1
-
-    .line 32
-    :cond_14
-    invoke-virtual/range {p0 .. p0}, Landroidx/concurrent/futures/g;->isDone()Z
-
-    move-result v2
-
-    if-eqz v2, :cond_15
-
-    .line 33
-    new-instance v2, Ljava/util/concurrent/TimeoutException;
-
-    const-string v3, " but future completed as timeout expired"
-
-    .line 34
-    invoke-static {v1, v3}, Landroid/support/v4/media/session/a;->S(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
-
-    move-result-object v1
+    :goto_2
+    const/4 p3, 0x1
+
+    :goto_3
+    if-lez p2, :cond_f
 
     .line 35
-    invoke-direct {v2, v1}, Ljava/util/concurrent/TimeoutException;-><init>(Ljava/lang/String;)V
+    new-instance p2, Ljava/lang/StringBuilder;
 
-    throw v2
+    invoke-direct {p2}, Ljava/lang/StringBuilder;-><init>()V
+
+    invoke-virtual {p2, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {p2, v8, v9}, Ljava/lang/StringBuilder;->append(J)Ljava/lang/StringBuilder;
+
+    invoke-virtual {p2, v10}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {p2, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {p2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object p1
+
+    if-eqz p3, :cond_e
 
     .line 36
-    :cond_15
-    new-instance v2, Ljava/util/concurrent/TimeoutException;
-
-    const-string v3, " for "
+    const-string p2, ","
 
     .line 37
-    invoke-static {v1, v3, v6}, Lj0/d;->j(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {p1, p2}, Landroidx/appcompat/view/menu/F;->F(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
-    move-result-object v1
+    move-result-object p1
 
     .line 38
-    invoke-direct {v2, v1}, Ljava/util/concurrent/TimeoutException;-><init>(Ljava/lang/String;)V
+    :cond_e
+    invoke-static {p1, v10}, Landroidx/appcompat/view/menu/F;->F(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
-    throw v2
+    move-result-object p1
+
+    :cond_f
+    if-eqz p3, :cond_10
 
     .line 39
-    :cond_16
-    new-instance v1, Ljava/lang/InterruptedException;
+    new-instance p2, Ljava/lang/StringBuilder;
 
-    invoke-direct {v1}, Ljava/lang/InterruptedException;-><init>()V
+    invoke-direct {p2}, Ljava/lang/StringBuilder;-><init>()V
 
-    throw v1
+    invoke-virtual {p2, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {p2, v0, v1}, Ljava/lang/StringBuilder;->append(J)Ljava/lang/StringBuilder;
+
+    const-string p1, " nanoseconds "
+
+    invoke-virtual {p2, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {p2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object p1
+
+    .line 40
+    :cond_10
+    const-string p2, "delay)"
+
+    .line 41
+    invoke-static {p1, p2}, Landroidx/appcompat/view/menu/F;->F(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object p1
+
+    .line 42
+    :cond_11
+    invoke-virtual {p0}, Landroidx/concurrent/futures/g;->isDone()Z
+
+    move-result p2
+
+    if-eqz p2, :cond_12
+
+    .line 43
+    new-instance p2, Ljava/util/concurrent/TimeoutException;
+
+    const-string p3, " but future completed as timeout expired"
+
+    .line 44
+    invoke-static {p1, p3}, Landroidx/appcompat/view/menu/F;->F(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object p1
+
+    .line 45
+    invoke-direct {p2, p1}, Ljava/util/concurrent/TimeoutException;-><init>(Ljava/lang/String;)V
+
+    throw p2
+
+    .line 46
+    :cond_12
+    new-instance p2, Ljava/util/concurrent/TimeoutException;
+
+    const-string p3, " for "
+
+    .line 47
+    invoke-static {p1, p3, v4}, LB/u;->u(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object p1
+
+    .line 48
+    invoke-direct {p2, p1}, Ljava/util/concurrent/TimeoutException;-><init>(Ljava/lang/String;)V
+
+    throw p2
+
+    .line 49
+    :cond_13
+    new-instance p1, Ljava/lang/InterruptedException;
+
+    invoke-direct {p1}, Ljava/lang/InterruptedException;-><init>()V
+
+    throw p1
 .end method
 
 .method public i()Ljava/lang/String;
@@ -1634,24 +1539,28 @@
 .end method
 
 .method public final isDone()Z
-    .locals 2
+    .locals 1
 
+    .line 1
     iget-object v0, p0, Landroidx/concurrent/futures/g;->b:Ljava/lang/Object;
 
-    const/4 v1, 0x1
-
+    .line 2
+    .line 3
     if-eqz v0, :cond_0
 
+    .line 4
+    .line 5
     const/4 v0, 0x1
 
+    .line 6
     goto :goto_0
 
+    .line 7
     :cond_0
     const/4 v0, 0x0
 
+    .line 8
     :goto_0
-    and-int/2addr v0, v1
-
     return v0
 .end method
 
@@ -2024,68 +1933,58 @@
 
     .line 75
     .line 76
-    invoke-virtual {v0, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-static {v0, v3, v1, v2}, Landroidx/compose/runtime/a0;->A(Ljava/lang/StringBuilder;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
 
     .line 77
     .line 78
     .line 79
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    .line 80
-    .line 81
-    .line 82
-    invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    .line 83
-    .line 84
-    .line 85
     goto :goto_1
 
-    .line 86
+    .line 80
     :cond_2
     invoke-virtual {p0}, Landroidx/concurrent/futures/g;->isDone()Z
+
+    .line 81
+    .line 82
+    .line 83
+    move-result v1
+
+    .line 84
+    if-eqz v1, :cond_3
+
+    .line 85
+    .line 86
+    invoke-virtual {p0, v0}, Landroidx/concurrent/futures/g;->c(Ljava/lang/StringBuilder;)V
 
     .line 87
     .line 88
     .line 89
-    move-result v1
+    goto :goto_1
 
     .line 90
-    if-eqz v1, :cond_3
+    :cond_3
+    const-string v1, "PENDING"
 
     .line 91
     .line 92
-    invoke-virtual {p0, v0}, Landroidx/concurrent/futures/g;->c(Ljava/lang/StringBuilder;)V
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     .line 93
     .line 94
     .line 95
-    goto :goto_1
+    :goto_1
+    invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     .line 96
-    :cond_3
-    const-string v1, "PENDING"
-
     .line 97
     .line 98
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
     .line 99
     .line 100
     .line 101
-    :goto_1
-    invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    .line 102
-    .line 103
-    .line 104
-    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    .line 105
-    .line 106
-    .line 107
     move-result-object v0
 
-    .line 108
+    .line 102
     return-object v0
 .end method

@@ -222,6 +222,10 @@
 
 .method public setTextClassifier(Landroid/view/textclassifier/TextClassifier;)V
     .locals 1
+    .param p1    # Landroid/view/textclassifier/TextClassifier;
+        .annotation build Landroidx/annotation/Nullable;
+        .end annotation
+    .end param
 
     .line 1
     iget-object v0, p0, Landroidx/appcompat/widget/AppCompatTextView$SuperCallerApi26;->this$0:Landroidx/appcompat/widget/AppCompatTextView;

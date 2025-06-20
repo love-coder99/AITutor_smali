@@ -52,6 +52,10 @@
 # direct methods
 .method public constructor <init>(Lcom/android/billingclient/api/BillingResult;Lcom/android/billingclient/api/AlternativeBillingOnlyReportingDetails;)V
     .locals 0
+    .param p1    # Lcom/android/billingclient/api/BillingResult;
+        .annotation build Landroidx/annotation/RecentlyNonNull;
+        .end annotation
+    .end param
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -64,6 +68,24 @@
 
 .method public static synthetic copy$default(Lcom/android/billingclient/api/CreateAlternativeBillingOnlyReportingDetailsResult;Lcom/android/billingclient/api/BillingResult;Lcom/android/billingclient/api/AlternativeBillingOnlyReportingDetails;ILjava/lang/Object;)Lcom/android/billingclient/api/CreateAlternativeBillingOnlyReportingDetailsResult;
     .locals 0
+    .param p0    # Lcom/android/billingclient/api/CreateAlternativeBillingOnlyReportingDetailsResult;
+        .annotation build Landroidx/annotation/RecentlyNonNull;
+        .end annotation
+    .end param
+    .param p1    # Lcom/android/billingclient/api/BillingResult;
+        .annotation build Landroidx/annotation/RecentlyNonNull;
+        .end annotation
+    .end param
+    .param p2    # Lcom/android/billingclient/api/AlternativeBillingOnlyReportingDetails;
+        .annotation build Landroidx/annotation/RecentlyNonNull;
+        .end annotation
+    .end param
+    .param p4    # Ljava/lang/Object;
+        .annotation build Landroidx/annotation/RecentlyNonNull;
+        .end annotation
+    .end param
+    .annotation build Landroidx/annotation/RecentlyNonNull;
+    .end annotation
 
     and-int/lit8 p4, p3, 0x1
 
@@ -98,6 +120,8 @@
 
 .method public final component2()Lcom/android/billingclient/api/AlternativeBillingOnlyReportingDetails;
     .locals 1
+    .annotation build Landroidx/annotation/RecentlyNullable;
+    .end annotation
 
     iget-object v0, p0, Lcom/android/billingclient/api/CreateAlternativeBillingOnlyReportingDetailsResult;->zzb:Lcom/android/billingclient/api/AlternativeBillingOnlyReportingDetails;
 
@@ -106,6 +130,10 @@
 
 .method public final copy(Lcom/android/billingclient/api/BillingResult;Lcom/android/billingclient/api/AlternativeBillingOnlyReportingDetails;)Lcom/android/billingclient/api/CreateAlternativeBillingOnlyReportingDetailsResult;
     .locals 1
+    .param p1    # Lcom/android/billingclient/api/BillingResult;
+        .annotation build Landroidx/annotation/RecentlyNonNull;
+        .end annotation
+    .end param
 
     new-instance v0, Lcom/android/billingclient/api/CreateAlternativeBillingOnlyReportingDetailsResult;
 
@@ -139,7 +167,7 @@
 
     iget-object v3, p1, Lcom/android/billingclient/api/CreateAlternativeBillingOnlyReportingDetailsResult;->zza:Lcom/android/billingclient/api/BillingResult;
 
-    invoke-static {v1, v3}, Lrb/h;->d(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v1, v3}, Lkotlin/jvm/internal/h;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result v1
 
@@ -152,7 +180,7 @@
 
     iget-object p1, p1, Lcom/android/billingclient/api/CreateAlternativeBillingOnlyReportingDetailsResult;->zzb:Lcom/android/billingclient/api/AlternativeBillingOnlyReportingDetails;
 
-    invoke-static {v1, p1}, Lrb/h;->d(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v1, p1}, Lkotlin/jvm/internal/h;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result p1
 
@@ -166,6 +194,8 @@
 
 .method public final getAlternativeBillingOnlyReportingDetails()Lcom/android/billingclient/api/AlternativeBillingOnlyReportingDetails;
     .locals 1
+    .annotation build Landroidx/annotation/RecentlyNullable;
+    .end annotation
 
     iget-object v0, p0, Lcom/android/billingclient/api/CreateAlternativeBillingOnlyReportingDetailsResult;->zzb:Lcom/android/billingclient/api/AlternativeBillingOnlyReportingDetails;
 

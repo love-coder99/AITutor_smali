@@ -61,9 +61,9 @@
 .method public a(Lcom/applovin/impl/o9;)V
     .locals 1
 
+    .line 1
     iget-object v0, p0, Lcom/applovin/impl/adview/activity/a$a$a;->a:Lcom/applovin/adview/AppLovinFullscreenActivity;
 
-    .line 1
     invoke-virtual {v0, p1}, Lcom/applovin/adview/AppLovinFullscreenActivity;->setPresenter(Lcom/applovin/impl/o9;)V
 
     .line 2
@@ -75,9 +75,9 @@
 .method public a(Ljava/lang/String;Ljava/lang/Throwable;)V
     .locals 3
 
+    .line 3
     iget-object v0, p0, Lcom/applovin/impl/adview/activity/a$a$a;->b:Lcom/applovin/sdk/AppLovinAd;
 
-    .line 3
     check-cast v0, Lcom/applovin/impl/sdk/ad/b;
 
     iget-object v1, p0, Lcom/applovin/impl/adview/activity/a$a$a;->c:Lcom/applovin/impl/adview/activity/a$b;

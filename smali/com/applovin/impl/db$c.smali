@@ -248,8 +248,11 @@
 .method public size()I
     .locals 1
 
+    .line 1
     iget v0, p0, Lcom/applovin/impl/db$c;->d:I
 
+    .line 2
+    .line 3
     return v0
 .end method
 

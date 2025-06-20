@@ -12,7 +12,7 @@
 
     .line 2
     .line 3
-    invoke-static {v0}, Landroidx/work/u;->b(Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v0}, Landroidx/work/A;->b(Ljava/lang/String;)Ljava/lang/String;
 
     .line 4
     .line 5
@@ -22,15 +22,15 @@
 
 
 # virtual methods
-.method public final c(Lh5/q;)Z
+.method public final c(LB2/p;)Z
     .locals 1
 
     .line 1
-    iget-object p1, p1, Lh5/q;->j:Landroidx/work/f;
+    iget-object p1, p1, LB2/p;->j:Landroidx/work/e;
 
     .line 2
     .line 3
-    iget-object p1, p1, Landroidx/work/f;->a:Landroidx/work/NetworkType;
+    iget-object p1, p1, Landroidx/work/e;->a:Landroidx/work/NetworkType;
 
     .line 4
     .line 5
@@ -95,7 +95,7 @@
 
     .line 12
     .line 13
-    invoke-static {}, Landroidx/work/u;->a()Landroidx/work/u;
+    invoke-static {}, Landroidx/work/A;->a()Landroidx/work/A;
 
     .line 14
     .line 15

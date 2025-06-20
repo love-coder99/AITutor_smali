@@ -178,18 +178,18 @@
 
     invoke-direct {v0}, Lcom/applovin/impl/jq;-><init>()V
 
+    .line 15
     const-string v1, "name"
 
-    .line 15
     invoke-static {p0, v1, p1}, Lcom/applovin/impl/sdk/utils/JsonUtils;->getString(Lorg/json/JSONObject;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v1
 
     iput-object v1, v0, Lcom/applovin/impl/jq;->a:Ljava/lang/String;
 
+    .line 16
     const-string v1, "version"
 
-    .line 16
     invoke-static {p0, v1, p1}, Lcom/applovin/impl/sdk/utils/JsonUtils;->getString(Lorg/json/JSONObject;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object p0
@@ -209,18 +209,18 @@
 
     invoke-direct {v0}, Lorg/json/JSONObject;-><init>()V
 
+    .line 18
     iget-object v1, p0, Lcom/applovin/impl/jq;->a:Ljava/lang/String;
 
     const-string v2, "name"
 
-    .line 18
     invoke-static {v0, v2, v1}, Lcom/applovin/impl/sdk/utils/JsonUtils;->putString(Lorg/json/JSONObject;Ljava/lang/String;Ljava/lang/String;)V
 
+    .line 19
     iget-object v1, p0, Lcom/applovin/impl/jq;->b:Ljava/lang/String;
 
     const-string v2, "version"
 
-    .line 19
     invoke-static {v0, v2, v1}, Lcom/applovin/impl/sdk/utils/JsonUtils;->putString(Lorg/json/JSONObject;Ljava/lang/String;Ljava/lang/String;)V
 
     return-object v0
@@ -441,7 +441,7 @@
 
     .line 21
     .line 22
-    invoke-static {v0, v1, v2}, Landroid/support/v4/media/session/a;->I(Ljava/lang/StringBuilder;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v0, v1, v2}, LB/u;->w(Ljava/lang/StringBuilder;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     .line 23
     .line 24

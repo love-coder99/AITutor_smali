@@ -8,11 +8,11 @@
 
 .field public final b:Lkotlinx/coroutines/channels/b;
 
-.field public final c:Lkotlinx/coroutines/q1;
+.field public final c:Lkotlinx/coroutines/r0;
 
 
 # direct methods
-.method public constructor <init>(Lkotlinx/coroutines/w;ZLzh/e;Landroidx/activity/i0;)V
+.method public constructor <init>(Lkotlinx/coroutines/internal/e;ZLka/e;Landroidx/activity/compose/k;)V
     .locals 2
 
     .line 1
@@ -35,7 +35,7 @@
     const/4 v1, 0x4
 
     .line 10
-    invoke-static {v0, p2, v1}, Lcom/google/android/material/internal/f0;->a(ILkotlinx/coroutines/channels/BufferOverflow;I)Lkotlinx/coroutines/channels/b;
+    invoke-static {v0, v1, p2}, Lkotlinx/coroutines/channels/k;->a(IILkotlinx/coroutines/channels/BufferOverflow;)Lkotlinx/coroutines/channels/b;
 
     .line 11
     .line 12
@@ -54,7 +54,7 @@
     const/4 v0, 0x0
 
     .line 19
-    invoke-direct {p2, p4, p3, p0, v0}, Landroidx/activity/compose/OnBackInstance$job$1;-><init>(Landroidx/activity/i0;Lzh/e;Landroidx/activity/compose/j;Lkotlin/coroutines/Continuation;)V
+    invoke-direct {p2, p4, p3, p0, v0}, Landroidx/activity/compose/OnBackInstance$job$1;-><init>(Landroidx/activity/C;Lka/e;Landroidx/activity/compose/j;Lkotlin/coroutines/Continuation;)V
 
     .line 20
     .line 21
@@ -62,7 +62,7 @@
     const/4 p3, 0x3
 
     .line 23
-    invoke-static {p1, v0, v0, p2, p3}, Lf7/l;->D(Lkotlinx/coroutines/w;Lkotlin/coroutines/g;Lkotlinx/coroutines/CoroutineStart;Lzh/e;I)Lkotlinx/coroutines/q1;
+    invoke-static {p1, v0, v0, p2, p3}, Lkotlinx/coroutines/w;->w(Lkotlinx/coroutines/u;Lba/g;Lkotlinx/coroutines/CoroutineStart;Lka/e;I)Lkotlinx/coroutines/r0;
 
     .line 24
     .line 25
@@ -70,7 +70,7 @@
     move-result-object p1
 
     .line 27
-    iput-object p1, p0, Landroidx/activity/compose/j;->c:Lkotlinx/coroutines/q1;
+    iput-object p1, p0, Landroidx/activity/compose/j;->c:Lkotlinx/coroutines/r0;
 
     .line 28
     .line 29
@@ -80,7 +80,7 @@
 
 # virtual methods
 .method public final a()V
-    .locals 2
+    .locals 3
 
     .line 1
     new-instance v0, Ljava/util/concurrent/CancellationException;
@@ -96,26 +96,29 @@
     .line 6
     .line 7
     .line 8
-    iget-object v1, p0, Landroidx/activity/compose/j;->b:Lkotlinx/coroutines/channels/b;
+    const/4 v1, 0x1
 
     .line 9
-    .line 10
-    invoke-virtual {v1, v0}, Lkotlinx/coroutines/channels/b;->a(Ljava/util/concurrent/CancellationException;)V
+    iget-object v2, p0, Landroidx/activity/compose/j;->b:Lkotlinx/coroutines/channels/b;
 
+    .line 10
     .line 11
+    invoke-virtual {v2, v0, v1}, Lkotlinx/coroutines/channels/b;->i(Ljava/lang/Throwable;Z)Z
+
     .line 12
     .line 13
+    .line 14
     const/4 v0, 0x0
 
-    .line 14
-    iget-object v1, p0, Landroidx/activity/compose/j;->c:Lkotlinx/coroutines/q1;
-
     .line 15
-    .line 16
-    invoke-virtual {v1, v0}, Lkotlinx/coroutines/h1;->a(Ljava/util/concurrent/CancellationException;)V
+    iget-object v1, p0, Landroidx/activity/compose/j;->c:Lkotlinx/coroutines/r0;
 
+    .line 16
     .line 17
+    invoke-virtual {v1, v0}, Lkotlinx/coroutines/i0;->b(Ljava/util/concurrent/CancellationException;)V
+
     .line 18
     .line 19
+    .line 20
     return-void
 .end method

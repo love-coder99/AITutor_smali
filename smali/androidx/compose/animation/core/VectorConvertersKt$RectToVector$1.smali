@@ -3,14 +3,14 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lzh/c;
+.implements Lka/c;
 
 
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "Lkotlin/jvm/internal/Lambda;",
-        "Lzh/c;"
+        "Lka/c;"
     }
 .end annotation
 
@@ -19,11 +19,11 @@
         "\u0000\u000e\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0008\u0003\u0010\u0005\u001a\u00020\u00022\u0006\u0010\u0001\u001a\u00020\u0000H\n\u00a2\u0006\u0004\u0008\u0003\u0010\u0004"
     }
     d2 = {
-        "Ln1/e;",
+        "Lr0/d;",
         "it",
-        "Landroidx/compose/animation/core/l;",
+        "Landroidx/compose/animation/core/k;",
         "invoke",
-        "(Ln1/e;)Landroidx/compose/animation/core/l;",
+        "(Lr0/d;)Landroidx/compose/animation/core/k;",
         "<anonymous>"
     }
     k = 0x3
@@ -64,23 +64,23 @@
 
 
 # virtual methods
-.method public final invoke(Ln1/e;)Landroidx/compose/animation/core/l;
+.method public final invoke(Lr0/d;)Landroidx/compose/animation/core/k;
     .locals 4
 
     .line 2
-    new-instance v0, Landroidx/compose/animation/core/l;
+    new-instance v0, Landroidx/compose/animation/core/k;
 
     .line 3
-    iget v1, p1, Ln1/e;->a:F
+    iget v1, p1, Lr0/d;->a:F
 
     .line 4
-    iget v2, p1, Ln1/e;->b:F
+    iget v2, p1, Lr0/d;->b:F
 
-    iget v3, p1, Ln1/e;->c:F
+    iget v3, p1, Lr0/d;->c:F
 
-    iget p1, p1, Ln1/e;->d:F
+    iget p1, p1, Lr0/d;->d:F
 
-    invoke-direct {v0, v1, v2, v3, p1}, Landroidx/compose/animation/core/l;-><init>(FFFF)V
+    invoke-direct {v0, v1, v2, v3, p1}, Landroidx/compose/animation/core/k;-><init>(FFFF)V
 
     return-object v0
 .end method
@@ -89,9 +89,9 @@
     .locals 0
 
     .line 1
-    check-cast p1, Ln1/e;
+    check-cast p1, Lr0/d;
 
-    invoke-virtual {p0, p1}, Landroidx/compose/animation/core/VectorConvertersKt$RectToVector$1;->invoke(Ln1/e;)Landroidx/compose/animation/core/l;
+    invoke-virtual {p0, p1}, Landroidx/compose/animation/core/VectorConvertersKt$RectToVector$1;->invoke(Lr0/d;)Landroidx/compose/animation/core/k;
 
     move-result-object p1
 

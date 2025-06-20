@@ -3,14 +3,14 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lzh/c;
+.implements Lka/c;
 
 
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "Lkotlin/jvm/internal/Lambda;",
-        "Lzh/c;"
+        "Lka/c;"
     }
 .end annotation
 
@@ -19,10 +19,10 @@
         "\u0000\u000c\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0008\u0003\u0010\u0004\u001a\u00020\u0001*\u00020\u0000H\n\u00a2\u0006\u0004\u0008\u0002\u0010\u0003"
     }
     d2 = {
-        "Landroidx/compose/foundation/text/selection/w;",
-        "Lqh/r;",
+        "Landroidx/compose/foundation/text/selection/t;",
+        "LX9/j;",
         "invoke",
-        "(Landroidx/compose/foundation/text/selection/w;)V",
+        "(Landroidx/compose/foundation/text/selection/t;)V",
         "<anonymous>"
     }
     k = 0x3
@@ -39,16 +39,16 @@
 
 .field final synthetic $consumed:Lkotlin/jvm/internal/Ref$BooleanRef;
 
-.field final synthetic this$0:Landroidx/compose/foundation/text/d0;
+.field final synthetic this$0:Landroidx/compose/foundation/text/D;
 
 
 # direct methods
-.method public constructor <init>(Landroidx/compose/foundation/text/KeyCommand;Landroidx/compose/foundation/text/d0;Lkotlin/jvm/internal/Ref$BooleanRef;)V
+.method public constructor <init>(Landroidx/compose/foundation/text/KeyCommand;Landroidx/compose/foundation/text/D;Lkotlin/jvm/internal/Ref$BooleanRef;)V
     .locals 0
 
     iput-object p1, p0, Landroidx/compose/foundation/text/TextFieldKeyInput$process$2;->$command:Landroidx/compose/foundation/text/KeyCommand;
 
-    iput-object p2, p0, Landroidx/compose/foundation/text/TextFieldKeyInput$process$2;->this$0:Landroidx/compose/foundation/text/d0;
+    iput-object p2, p0, Landroidx/compose/foundation/text/TextFieldKeyInput$process$2;->this$0:Landroidx/compose/foundation/text/D;
 
     iput-object p3, p0, Landroidx/compose/foundation/text/TextFieldKeyInput$process$2;->$consumed:Lkotlin/jvm/internal/Ref$BooleanRef;
 
@@ -65,22 +65,22 @@
     .locals 0
 
     .line 1
-    check-cast p1, Landroidx/compose/foundation/text/selection/w;
+    check-cast p1, Landroidx/compose/foundation/text/selection/t;
 
-    invoke-virtual {p0, p1}, Landroidx/compose/foundation/text/TextFieldKeyInput$process$2;->invoke(Landroidx/compose/foundation/text/selection/w;)V
+    invoke-virtual {p0, p1}, Landroidx/compose/foundation/text/TextFieldKeyInput$process$2;->invoke(Landroidx/compose/foundation/text/selection/t;)V
 
-    sget-object p1, Lqh/r;->a:Lqh/r;
+    sget-object p1, LX9/j;->a:LX9/j;
 
     return-object p1
 .end method
 
-.method public final invoke(Landroidx/compose/foundation/text/selection/w;)V
-    .locals 8
-
-    iget-object v0, p0, Landroidx/compose/foundation/text/TextFieldKeyInput$process$2;->$command:Landroidx/compose/foundation/text/KeyCommand;
+.method public final invoke(Landroidx/compose/foundation/text/selection/t;)V
+    .locals 7
 
     .line 2
-    sget-object v1, Landroidx/compose/foundation/text/c0;->a:[I
+    iget-object v0, p0, Landroidx/compose/foundation/text/TextFieldKeyInput$process$2;->$command:Landroidx/compose/foundation/text/KeyCommand;
+
+    sget-object v1, Landroidx/compose/foundation/text/C;->a:[I
 
     invoke-virtual {v0}, Ljava/lang/Enum;->ordinal()I
 
@@ -94,578 +94,564 @@
 
     const/4 v4, 0x1
 
-    const/4 v5, 0x4
+    const/4 v5, 0x0
 
     const/4 v6, 0x0
-
-    const/4 v7, 0x0
 
     packed-switch v0, :pswitch_data_0
 
     goto/16 :goto_6
 
-    :pswitch_0
-    iget-object p1, p0, Landroidx/compose/foundation/text/TextFieldKeyInput$process$2;->this$0:Landroidx/compose/foundation/text/d0;
-
     .line 3
-    iget-object p1, p1, Landroidx/compose/foundation/text/d0;->h:Landroidx/compose/foundation/text/o0;
+    :pswitch_0
+    iget-object p1, p0, Landroidx/compose/foundation/text/TextFieldKeyInput$process$2;->this$0:Landroidx/compose/foundation/text/D;
+
+    .line 4
+    iget-object p1, p1, Landroidx/compose/foundation/text/D;->h:Landroidx/compose/foundation/text/O;
 
     if-eqz p1, :cond_1f
 
-    .line 4
-    iget-object v0, p1, Landroidx/compose/foundation/text/o0;->c:Lh5/e;
+    .line 5
+    iget-object v0, p1, Landroidx/compose/foundation/text/O;->c:Landroidx/compose/foundation/text/N;
 
     if-eqz v0, :cond_0
 
-    .line 5
-    iget-object v1, v0, Lh5/e;->c:Ljava/lang/Object;
-
-    check-cast v1, Lh5/e;
-
     .line 6
-    iput-object v1, p1, Landroidx/compose/foundation/text/o0;->c:Lh5/e;
+    iget-object v1, v0, Landroidx/compose/foundation/text/N;->a:Landroidx/compose/foundation/text/N;
 
     .line 7
-    iget-object v1, v0, Lh5/e;->d:Ljava/lang/Object;
-
-    check-cast v1, Landroidx/compose/ui/text/input/h0;
+    iput-object v1, p1, Landroidx/compose/foundation/text/O;->c:Landroidx/compose/foundation/text/N;
 
     .line 8
-    iget-object v2, p1, Landroidx/compose/foundation/text/o0;->b:Lh5/e;
+    iget-object v1, v0, Landroidx/compose/foundation/text/N;->b:Landroidx/compose/ui/text/input/C;
 
     .line 9
-    new-instance v3, Lh5/e;
-
-    invoke-direct {v3, v2, v1, v5}, Lh5/e;-><init>(Ljava/lang/Object;Ljava/lang/Object;I)V
-
-    iput-object v3, p1, Landroidx/compose/foundation/text/o0;->b:Lh5/e;
+    iget-object v2, p1, Landroidx/compose/foundation/text/O;->b:Landroidx/compose/foundation/text/N;
 
     .line 10
-    iget v2, p1, Landroidx/compose/foundation/text/o0;->d:I
+    new-instance v3, Landroidx/compose/foundation/text/N;
+
+    invoke-direct {v3, v2, v1}, Landroidx/compose/foundation/text/N;-><init>(Landroidx/compose/foundation/text/N;Landroidx/compose/ui/text/input/C;)V
+
+    iput-object v3, p1, Landroidx/compose/foundation/text/O;->b:Landroidx/compose/foundation/text/N;
 
     .line 11
-    iget-object v1, v1, Landroidx/compose/ui/text/input/h0;->a:Landroidx/compose/ui/text/f;
+    iget v2, p1, Landroidx/compose/foundation/text/O;->d:I
 
     .line 12
-    iget-object v1, v1, Landroidx/compose/ui/text/f;->b:Ljava/lang/String;
+    iget-object v1, v1, Landroidx/compose/ui/text/input/C;->a:Landroidx/compose/ui/text/g;
 
     .line 13
+    iget-object v1, v1, Landroidx/compose/ui/text/g;->b:Ljava/lang/String;
+
+    .line 14
     invoke-virtual {v1}, Ljava/lang/String;->length()I
 
     move-result v1
 
     add-int/2addr v1, v2
 
-    iput v1, p1, Landroidx/compose/foundation/text/o0;->d:I
-
-    .line 14
-    iget-object p1, v0, Lh5/e;->d:Ljava/lang/Object;
-
-    move-object v7, p1
-
-    check-cast v7, Landroidx/compose/ui/text/input/h0;
-
-    :cond_0
-    if-eqz v7, :cond_1f
-
-    iget-object p1, p0, Landroidx/compose/foundation/text/TextFieldKeyInput$process$2;->this$0:Landroidx/compose/foundation/text/d0;
+    iput v1, p1, Landroidx/compose/foundation/text/O;->d:I
 
     .line 15
-    iget-object p1, p1, Landroidx/compose/foundation/text/d0;->k:Lzh/c;
+    iget-object v6, v0, Landroidx/compose/foundation/text/N;->b:Landroidx/compose/ui/text/input/C;
+
+    :cond_0
+    if-eqz v6, :cond_1f
 
     .line 16
-    invoke-interface {p1, v7}, Lzh/c;->invoke(Ljava/lang/Object;)Ljava/lang/Object;
+    iget-object p1, p0, Landroidx/compose/foundation/text/TextFieldKeyInput$process$2;->this$0:Landroidx/compose/foundation/text/D;
+
+    .line 17
+    iget-object p1, p1, Landroidx/compose/foundation/text/D;->k:Lka/c;
+
+    .line 18
+    invoke-interface {p1, v6}, Lka/c;->invoke(Ljava/lang/Object;)Ljava/lang/Object;
 
     goto/16 :goto_6
 
+    .line 19
     :pswitch_1
-    iget-object v0, p0, Landroidx/compose/foundation/text/TextFieldKeyInput$process$2;->this$0:Landroidx/compose/foundation/text/d0;
+    iget-object v0, p0, Landroidx/compose/foundation/text/TextFieldKeyInput$process$2;->this$0:Landroidx/compose/foundation/text/D;
 
-    .line 17
-    iget-object v0, v0, Landroidx/compose/foundation/text/d0;->h:Landroidx/compose/foundation/text/o0;
+    .line 20
+    iget-object v0, v0, Landroidx/compose/foundation/text/D;->h:Landroidx/compose/foundation/text/O;
 
     if-eqz v0, :cond_1
 
-    .line 18
-    iget-object v1, p1, Landroidx/compose/foundation/text/selection/b;->g:Landroidx/compose/ui/text/f;
+    .line 21
+    iget-wide v1, p1, Landroidx/compose/foundation/text/selection/t;->f:J
 
-    .line 19
-    iget-wide v2, p1, Landroidx/compose/foundation/text/selection/b;->f:J
+    .line 22
+    iget-object v3, p1, Landroidx/compose/foundation/text/selection/t;->g:Landroidx/compose/ui/text/g;
 
-    .line 20
-    iget-object p1, p1, Landroidx/compose/foundation/text/selection/w;->h:Landroidx/compose/ui/text/input/h0;
+    const/4 v4, 0x4
 
-    invoke-static {p1, v1, v2, v3, v5}, Landroidx/compose/ui/text/input/h0;->a(Landroidx/compose/ui/text/input/h0;Landroidx/compose/ui/text/f;JI)Landroidx/compose/ui/text/input/h0;
+    iget-object p1, p1, Landroidx/compose/foundation/text/selection/t;->h:Landroidx/compose/ui/text/input/C;
+
+    invoke-static {p1, v3, v1, v2, v4}, Landroidx/compose/ui/text/input/C;->a(Landroidx/compose/ui/text/input/C;Landroidx/compose/ui/text/g;JI)Landroidx/compose/ui/text/input/C;
 
     move-result-object p1
 
-    .line 21
-    invoke-virtual {v0, p1}, Landroidx/compose/foundation/text/o0;->a(Landroidx/compose/ui/text/input/h0;)V
+    .line 23
+    invoke-virtual {v0, p1}, Landroidx/compose/foundation/text/O;->a(Landroidx/compose/ui/text/input/C;)V
 
+    .line 24
     :cond_1
-    iget-object p1, p0, Landroidx/compose/foundation/text/TextFieldKeyInput$process$2;->this$0:Landroidx/compose/foundation/text/d0;
+    iget-object p1, p0, Landroidx/compose/foundation/text/TextFieldKeyInput$process$2;->this$0:Landroidx/compose/foundation/text/D;
 
-    .line 22
-    iget-object p1, p1, Landroidx/compose/foundation/text/d0;->h:Landroidx/compose/foundation/text/o0;
+    .line 25
+    iget-object p1, p1, Landroidx/compose/foundation/text/D;->h:Landroidx/compose/foundation/text/O;
 
     if-eqz p1, :cond_1f
 
-    .line 23
-    iget-object v0, p1, Landroidx/compose/foundation/text/o0;->b:Lh5/e;
+    .line 26
+    iget-object v0, p1, Landroidx/compose/foundation/text/O;->b:Landroidx/compose/foundation/text/N;
 
     if-eqz v0, :cond_2
 
-    .line 24
-    iget-object v1, v0, Lh5/e;->c:Ljava/lang/Object;
-
-    check-cast v1, Lh5/e;
+    .line 27
+    iget-object v1, v0, Landroidx/compose/foundation/text/N;->a:Landroidx/compose/foundation/text/N;
 
     if-eqz v1, :cond_2
 
-    .line 25
-    iput-object v1, p1, Landroidx/compose/foundation/text/o0;->b:Lh5/e;
-
-    .line 26
-    iget v2, p1, Landroidx/compose/foundation/text/o0;->d:I
-
-    .line 27
-    iget-object v3, v0, Lh5/e;->d:Ljava/lang/Object;
-
-    check-cast v3, Landroidx/compose/ui/text/input/h0;
-
     .line 28
-    iget-object v3, v3, Landroidx/compose/ui/text/input/h0;->a:Landroidx/compose/ui/text/f;
+    iput-object v1, p1, Landroidx/compose/foundation/text/O;->b:Landroidx/compose/foundation/text/N;
 
     .line 29
-    iget-object v3, v3, Landroidx/compose/ui/text/f;->b:Ljava/lang/String;
+    iget v2, p1, Landroidx/compose/foundation/text/O;->d:I
 
     .line 30
+    iget-object v3, v0, Landroidx/compose/foundation/text/N;->b:Landroidx/compose/ui/text/input/C;
+
+    .line 31
+    iget-object v3, v3, Landroidx/compose/ui/text/input/C;->a:Landroidx/compose/ui/text/g;
+
+    .line 32
+    iget-object v3, v3, Landroidx/compose/ui/text/g;->b:Ljava/lang/String;
+
+    .line 33
     invoke-virtual {v3}, Ljava/lang/String;->length()I
 
     move-result v3
 
     sub-int/2addr v2, v3
 
-    iput v2, p1, Landroidx/compose/foundation/text/o0;->d:I
-
-    .line 31
-    iget-object v0, v0, Lh5/e;->d:Ljava/lang/Object;
-
-    check-cast v0, Landroidx/compose/ui/text/input/h0;
-
-    .line 32
-    iget-object v2, p1, Landroidx/compose/foundation/text/o0;->c:Lh5/e;
-
-    .line 33
-    new-instance v3, Lh5/e;
-
-    invoke-direct {v3, v2, v0, v5}, Lh5/e;-><init>(Ljava/lang/Object;Ljava/lang/Object;I)V
-
-    iput-object v3, p1, Landroidx/compose/foundation/text/o0;->c:Lh5/e;
+    iput v2, p1, Landroidx/compose/foundation/text/O;->d:I
 
     .line 34
-    iget-object p1, v1, Lh5/e;->d:Ljava/lang/Object;
-
-    move-object v7, p1
-
-    check-cast v7, Landroidx/compose/ui/text/input/h0;
-
-    :cond_2
-    if-eqz v7, :cond_1f
-
-    iget-object p1, p0, Landroidx/compose/foundation/text/TextFieldKeyInput$process$2;->this$0:Landroidx/compose/foundation/text/d0;
+    iget-object v0, v0, Landroidx/compose/foundation/text/N;->b:Landroidx/compose/ui/text/input/C;
 
     .line 35
-    iget-object p1, p1, Landroidx/compose/foundation/text/d0;->k:Lzh/c;
+    iget-object v2, p1, Landroidx/compose/foundation/text/O;->c:Landroidx/compose/foundation/text/N;
 
     .line 36
-    invoke-interface {p1, v7}, Lzh/c;->invoke(Ljava/lang/Object;)Ljava/lang/Object;
+    new-instance v3, Landroidx/compose/foundation/text/N;
+
+    invoke-direct {v3, v2, v0}, Landroidx/compose/foundation/text/N;-><init>(Landroidx/compose/foundation/text/N;Landroidx/compose/ui/text/input/C;)V
+
+    iput-object v3, p1, Landroidx/compose/foundation/text/O;->c:Landroidx/compose/foundation/text/N;
+
+    .line 37
+    iget-object v6, v1, Landroidx/compose/foundation/text/N;->b:Landroidx/compose/ui/text/input/C;
+
+    :cond_2
+    if-eqz v6, :cond_1f
+
+    .line 38
+    iget-object p1, p0, Landroidx/compose/foundation/text/TextFieldKeyInput$process$2;->this$0:Landroidx/compose/foundation/text/D;
+
+    .line 39
+    iget-object p1, p1, Landroidx/compose/foundation/text/D;->k:Lka/c;
+
+    .line 40
+    invoke-interface {p1, v6}, Lka/c;->invoke(Ljava/lang/Object;)Ljava/lang/Object;
 
     goto/16 :goto_6
 
-    .line 37
+    .line 41
     :pswitch_2
-    iget-object v0, p1, Landroidx/compose/foundation/text/selection/b;->e:Landroidx/compose/foundation/text/selection/d0;
+    iget-object v0, p1, Landroidx/compose/foundation/text/selection/t;->e:Landroidx/compose/foundation/text/selection/A;
 
-    .line 38
-    iput-object v7, v0, Landroidx/compose/foundation/text/selection/d0;->a:Ljava/lang/Float;
+    .line 42
+    iput-object v6, v0, Landroidx/compose/foundation/text/selection/A;->a:Ljava/lang/Float;
 
-    .line 39
-    iget-object v0, p1, Landroidx/compose/foundation/text/selection/b;->g:Landroidx/compose/ui/text/f;
+    .line 43
+    iget-object v0, p1, Landroidx/compose/foundation/text/selection/t;->g:Landroidx/compose/ui/text/g;
 
-    iget-object v0, v0, Landroidx/compose/ui/text/f;->b:Ljava/lang/String;
+    iget-object v0, v0, Landroidx/compose/ui/text/g;->b:Ljava/lang/String;
 
-    .line 40
+    .line 44
     invoke-virtual {v0}, Ljava/lang/String;->length()I
 
     move-result v0
 
     if-lez v0, :cond_1f
 
-    .line 41
-    iget-wide v3, p1, Landroidx/compose/foundation/text/selection/b;->f:J
+    .line 45
+    iget-wide v3, p1, Landroidx/compose/foundation/text/selection/t;->f:J
 
-    sget v0, Landroidx/compose/ui/text/h0;->c:I
+    sget v0, Landroidx/compose/ui/text/H;->c:I
 
     and-long v0, v3, v1
 
     long-to-int v1, v0
 
-    .line 42
-    invoke-virtual {p1, v1, v1}, Landroidx/compose/foundation/text/selection/b;->l(II)V
+    .line 46
+    invoke-virtual {p1, v1, v1}, Landroidx/compose/foundation/text/selection/t;->n(II)V
 
     goto/16 :goto_6
 
-    .line 43
+    .line 47
     :pswitch_3
-    iget-object v0, p1, Landroidx/compose/foundation/text/selection/b;->e:Landroidx/compose/foundation/text/selection/d0;
+    iget-object v0, p1, Landroidx/compose/foundation/text/selection/t;->e:Landroidx/compose/foundation/text/selection/A;
 
-    .line 44
-    iput-object v7, v0, Landroidx/compose/foundation/text/selection/d0;->a:Ljava/lang/Float;
+    .line 48
+    iput-object v6, v0, Landroidx/compose/foundation/text/selection/A;->a:Ljava/lang/Float;
 
-    .line 45
-    iget-object v0, p1, Landroidx/compose/foundation/text/selection/b;->g:Landroidx/compose/ui/text/f;
+    .line 49
+    iget-object v0, p1, Landroidx/compose/foundation/text/selection/t;->g:Landroidx/compose/ui/text/g;
 
-    iget-object v1, v0, Landroidx/compose/ui/text/f;->b:Ljava/lang/String;
+    iget-object v1, v0, Landroidx/compose/ui/text/g;->b:Ljava/lang/String;
 
-    .line 46
+    .line 50
     invoke-virtual {v1}, Ljava/lang/String;->length()I
 
     move-result v1
 
     if-lez v1, :cond_3
 
-    .line 47
-    iget-object v0, v0, Landroidx/compose/ui/text/f;->b:Ljava/lang/String;
+    .line 51
+    iget-object v0, v0, Landroidx/compose/ui/text/g;->b:Ljava/lang/String;
 
     invoke-virtual {v0}, Ljava/lang/String;->length()I
 
     move-result v0
 
-    .line 48
-    invoke-virtual {p1, v0, v0}, Landroidx/compose/foundation/text/selection/b;->l(II)V
+    .line 52
+    invoke-virtual {p1, v0, v0}, Landroidx/compose/foundation/text/selection/t;->n(II)V
 
-    .line 49
+    .line 53
     :cond_3
-    invoke-virtual {p1}, Landroidx/compose/foundation/text/selection/b;->k()V
+    invoke-virtual {p1}, Landroidx/compose/foundation/text/selection/t;->m()V
 
     goto/16 :goto_6
 
-    .line 50
+    .line 54
     :pswitch_4
-    iget-object v0, p1, Landroidx/compose/foundation/text/selection/b;->e:Landroidx/compose/foundation/text/selection/d0;
+    iget-object v0, p1, Landroidx/compose/foundation/text/selection/t;->e:Landroidx/compose/foundation/text/selection/A;
 
-    .line 51
-    iput-object v7, v0, Landroidx/compose/foundation/text/selection/d0;->a:Ljava/lang/Float;
+    .line 55
+    iput-object v6, v0, Landroidx/compose/foundation/text/selection/A;->a:Ljava/lang/Float;
 
-    .line 52
-    iget-object v0, p1, Landroidx/compose/foundation/text/selection/b;->g:Landroidx/compose/ui/text/f;
+    .line 56
+    iget-object v0, p1, Landroidx/compose/foundation/text/selection/t;->g:Landroidx/compose/ui/text/g;
 
-    iget-object v0, v0, Landroidx/compose/ui/text/f;->b:Ljava/lang/String;
+    iget-object v0, v0, Landroidx/compose/ui/text/g;->b:Ljava/lang/String;
 
-    .line 53
+    .line 57
     invoke-virtual {v0}, Ljava/lang/String;->length()I
 
     move-result v0
 
     if-lez v0, :cond_4
 
-    .line 54
-    invoke-virtual {p1, v6, v6}, Landroidx/compose/foundation/text/selection/b;->l(II)V
+    .line 58
+    invoke-virtual {p1, v5, v5}, Landroidx/compose/foundation/text/selection/t;->n(II)V
 
-    .line 55
+    .line 59
     :cond_4
-    invoke-virtual {p1}, Landroidx/compose/foundation/text/selection/b;->k()V
+    invoke-virtual {p1}, Landroidx/compose/foundation/text/selection/t;->m()V
 
     goto/16 :goto_6
 
-    .line 56
+    .line 60
     :pswitch_5
-    iget-object v0, p1, Landroidx/compose/foundation/text/selection/b;->g:Landroidx/compose/ui/text/f;
+    iget-object v0, p1, Landroidx/compose/foundation/text/selection/t;->g:Landroidx/compose/ui/text/g;
 
-    .line 57
-    iget-object v0, v0, Landroidx/compose/ui/text/f;->b:Ljava/lang/String;
+    .line 61
+    iget-object v0, v0, Landroidx/compose/ui/text/g;->b:Ljava/lang/String;
 
-    .line 58
+    .line 62
     invoke-virtual {v0}, Ljava/lang/String;->length()I
 
     move-result v0
 
     if-lez v0, :cond_5
 
-    .line 59
-    iget-object v0, p1, Landroidx/compose/foundation/text/selection/w;->i:Landroidx/compose/foundation/text/i0;
+    .line 63
+    iget-object v0, p1, Landroidx/compose/foundation/text/selection/t;->i:Landroidx/compose/foundation/text/J;
 
     if-eqz v0, :cond_5
 
-    invoke-virtual {p1, v0, v4}, Landroidx/compose/foundation/text/selection/w;->o(Landroidx/compose/foundation/text/i0;I)I
+    invoke-virtual {p1, v0, v4}, Landroidx/compose/foundation/text/selection/t;->h(Landroidx/compose/foundation/text/J;I)I
 
     move-result v0
 
-    .line 60
-    invoke-virtual {p1, v0, v0}, Landroidx/compose/foundation/text/selection/b;->l(II)V
+    .line 64
+    invoke-virtual {p1, v0, v0}, Landroidx/compose/foundation/text/selection/t;->n(II)V
 
-    .line 61
+    .line 65
     :cond_5
-    invoke-virtual {p1}, Landroidx/compose/foundation/text/selection/b;->k()V
+    invoke-virtual {p1}, Landroidx/compose/foundation/text/selection/t;->m()V
 
     goto/16 :goto_6
 
-    .line 62
+    .line 66
     :pswitch_6
-    iget-object v0, p1, Landroidx/compose/foundation/text/selection/b;->g:Landroidx/compose/ui/text/f;
+    iget-object v0, p1, Landroidx/compose/foundation/text/selection/t;->g:Landroidx/compose/ui/text/g;
 
-    .line 63
-    iget-object v0, v0, Landroidx/compose/ui/text/f;->b:Ljava/lang/String;
+    .line 67
+    iget-object v0, v0, Landroidx/compose/ui/text/g;->b:Ljava/lang/String;
 
-    .line 64
+    .line 68
     invoke-virtual {v0}, Ljava/lang/String;->length()I
 
     move-result v0
 
     if-lez v0, :cond_6
 
-    .line 65
-    iget-object v0, p1, Landroidx/compose/foundation/text/selection/w;->i:Landroidx/compose/foundation/text/i0;
+    .line 69
+    iget-object v0, p1, Landroidx/compose/foundation/text/selection/t;->i:Landroidx/compose/foundation/text/J;
 
     if-eqz v0, :cond_6
 
-    invoke-virtual {p1, v0, v3}, Landroidx/compose/foundation/text/selection/w;->o(Landroidx/compose/foundation/text/i0;I)I
+    invoke-virtual {p1, v0, v3}, Landroidx/compose/foundation/text/selection/t;->h(Landroidx/compose/foundation/text/J;I)I
 
     move-result v0
 
-    .line 66
-    invoke-virtual {p1, v0, v0}, Landroidx/compose/foundation/text/selection/b;->l(II)V
+    .line 70
+    invoke-virtual {p1, v0, v0}, Landroidx/compose/foundation/text/selection/t;->n(II)V
 
-    .line 67
+    .line 71
     :cond_6
-    invoke-virtual {p1}, Landroidx/compose/foundation/text/selection/b;->k()V
+    invoke-virtual {p1}, Landroidx/compose/foundation/text/selection/t;->m()V
 
     goto/16 :goto_6
 
-    .line 68
+    .line 72
     :pswitch_7
-    iget-object v0, p1, Landroidx/compose/foundation/text/selection/b;->g:Landroidx/compose/ui/text/f;
+    iget-object v0, p1, Landroidx/compose/foundation/text/selection/t;->g:Landroidx/compose/ui/text/g;
 
-    .line 69
-    iget-object v0, v0, Landroidx/compose/ui/text/f;->b:Ljava/lang/String;
+    .line 73
+    iget-object v0, v0, Landroidx/compose/ui/text/g;->b:Ljava/lang/String;
 
-    .line 70
+    .line 74
     invoke-virtual {v0}, Ljava/lang/String;->length()I
 
     move-result v0
 
     if-lez v0, :cond_7
 
-    .line 71
-    iget-object v0, p1, Landroidx/compose/foundation/text/selection/b;->c:Landroidx/compose/ui/text/f0;
+    .line 75
+    iget-object v0, p1, Landroidx/compose/foundation/text/selection/t;->c:Landroidx/compose/ui/text/F;
 
     if-eqz v0, :cond_7
 
-    invoke-virtual {p1, v0, v4}, Landroidx/compose/foundation/text/selection/b;->f(Landroidx/compose/ui/text/f0;I)I
+    invoke-virtual {p1, v0, v4}, Landroidx/compose/foundation/text/selection/t;->g(Landroidx/compose/ui/text/F;I)I
 
     move-result v0
 
-    .line 72
-    invoke-virtual {p1, v0, v0}, Landroidx/compose/foundation/text/selection/b;->l(II)V
+    .line 76
+    invoke-virtual {p1, v0, v0}, Landroidx/compose/foundation/text/selection/t;->n(II)V
 
-    .line 73
+    .line 77
     :cond_7
-    invoke-virtual {p1}, Landroidx/compose/foundation/text/selection/b;->k()V
+    invoke-virtual {p1}, Landroidx/compose/foundation/text/selection/t;->m()V
 
     goto/16 :goto_6
 
-    .line 74
+    .line 78
     :pswitch_8
-    iget-object v0, p1, Landroidx/compose/foundation/text/selection/b;->g:Landroidx/compose/ui/text/f;
+    iget-object v0, p1, Landroidx/compose/foundation/text/selection/t;->g:Landroidx/compose/ui/text/g;
 
-    .line 75
-    iget-object v0, v0, Landroidx/compose/ui/text/f;->b:Ljava/lang/String;
+    .line 79
+    iget-object v0, v0, Landroidx/compose/ui/text/g;->b:Ljava/lang/String;
 
-    .line 76
+    .line 80
     invoke-virtual {v0}, Ljava/lang/String;->length()I
 
     move-result v0
 
     if-lez v0, :cond_8
 
-    .line 77
-    iget-object v0, p1, Landroidx/compose/foundation/text/selection/b;->c:Landroidx/compose/ui/text/f0;
+    .line 81
+    iget-object v0, p1, Landroidx/compose/foundation/text/selection/t;->c:Landroidx/compose/ui/text/F;
 
     if-eqz v0, :cond_8
 
-    invoke-virtual {p1, v0, v3}, Landroidx/compose/foundation/text/selection/b;->f(Landroidx/compose/ui/text/f0;I)I
+    invoke-virtual {p1, v0, v3}, Landroidx/compose/foundation/text/selection/t;->g(Landroidx/compose/ui/text/F;I)I
 
     move-result v0
 
-    .line 78
-    invoke-virtual {p1, v0, v0}, Landroidx/compose/foundation/text/selection/b;->l(II)V
+    .line 82
+    invoke-virtual {p1, v0, v0}, Landroidx/compose/foundation/text/selection/t;->n(II)V
 
-    .line 79
+    .line 83
     :cond_8
-    invoke-virtual {p1}, Landroidx/compose/foundation/text/selection/b;->k()V
+    invoke-virtual {p1}, Landroidx/compose/foundation/text/selection/t;->m()V
 
     goto/16 :goto_6
 
-    .line 80
+    .line 84
     :pswitch_9
-    iget-object v0, p1, Landroidx/compose/foundation/text/selection/b;->e:Landroidx/compose/foundation/text/selection/d0;
+    iget-object v0, p1, Landroidx/compose/foundation/text/selection/t;->e:Landroidx/compose/foundation/text/selection/A;
 
-    .line 81
-    iput-object v7, v0, Landroidx/compose/foundation/text/selection/d0;->a:Ljava/lang/Float;
+    .line 85
+    iput-object v6, v0, Landroidx/compose/foundation/text/selection/A;->a:Ljava/lang/Float;
 
-    .line 82
-    iget-object v0, p1, Landroidx/compose/foundation/text/selection/b;->g:Landroidx/compose/ui/text/f;
+    .line 86
+    iget-object v0, p1, Landroidx/compose/foundation/text/selection/t;->g:Landroidx/compose/ui/text/g;
 
-    iget-object v0, v0, Landroidx/compose/ui/text/f;->b:Ljava/lang/String;
+    iget-object v0, v0, Landroidx/compose/ui/text/g;->b:Ljava/lang/String;
 
-    .line 83
+    .line 87
     invoke-virtual {v0}, Ljava/lang/String;->length()I
 
     move-result v0
 
     if-lez v0, :cond_a
 
-    .line 84
-    invoke-virtual {p1}, Landroidx/compose/foundation/text/selection/b;->e()Z
+    .line 88
+    invoke-virtual {p1}, Landroidx/compose/foundation/text/selection/t;->f()Z
 
     move-result v0
 
     if-eqz v0, :cond_9
 
-    .line 85
-    invoke-virtual {p1}, Landroidx/compose/foundation/text/selection/b;->i()V
+    .line 89
+    invoke-virtual {p1}, Landroidx/compose/foundation/text/selection/t;->k()V
 
     goto :goto_0
 
-    .line 86
+    .line 90
     :cond_9
-    invoke-virtual {p1}, Landroidx/compose/foundation/text/selection/b;->j()V
+    invoke-virtual {p1}, Landroidx/compose/foundation/text/selection/t;->l()V
 
-    .line 87
+    .line 91
     :cond_a
     :goto_0
-    invoke-virtual {p1}, Landroidx/compose/foundation/text/selection/b;->k()V
+    invoke-virtual {p1}, Landroidx/compose/foundation/text/selection/t;->m()V
 
     goto/16 :goto_6
 
-    .line 88
+    .line 92
     :pswitch_a
-    iget-object v0, p1, Landroidx/compose/foundation/text/selection/b;->e:Landroidx/compose/foundation/text/selection/d0;
+    iget-object v0, p1, Landroidx/compose/foundation/text/selection/t;->e:Landroidx/compose/foundation/text/selection/A;
 
-    .line 89
-    iput-object v7, v0, Landroidx/compose/foundation/text/selection/d0;->a:Ljava/lang/Float;
+    .line 93
+    iput-object v6, v0, Landroidx/compose/foundation/text/selection/A;->a:Ljava/lang/Float;
 
-    .line 90
-    iget-object v0, p1, Landroidx/compose/foundation/text/selection/b;->g:Landroidx/compose/ui/text/f;
+    .line 94
+    iget-object v0, p1, Landroidx/compose/foundation/text/selection/t;->g:Landroidx/compose/ui/text/g;
 
-    iget-object v0, v0, Landroidx/compose/ui/text/f;->b:Ljava/lang/String;
+    iget-object v0, v0, Landroidx/compose/ui/text/g;->b:Ljava/lang/String;
 
-    .line 91
+    .line 95
     invoke-virtual {v0}, Ljava/lang/String;->length()I
 
     move-result v0
 
     if-lez v0, :cond_c
 
-    .line 92
-    invoke-virtual {p1}, Landroidx/compose/foundation/text/selection/b;->e()Z
+    .line 96
+    invoke-virtual {p1}, Landroidx/compose/foundation/text/selection/t;->f()Z
 
     move-result v0
 
     if-eqz v0, :cond_b
 
-    .line 93
-    invoke-virtual {p1}, Landroidx/compose/foundation/text/selection/b;->j()V
+    .line 97
+    invoke-virtual {p1}, Landroidx/compose/foundation/text/selection/t;->l()V
 
     goto :goto_1
 
-    .line 94
-    :cond_b
-    invoke-virtual {p1}, Landroidx/compose/foundation/text/selection/b;->i()V
-
-    .line 95
-    :cond_c
-    :goto_1
-    invoke-virtual {p1}, Landroidx/compose/foundation/text/selection/b;->k()V
-
-    goto/16 :goto_6
-
-    .line 96
-    :pswitch_b
-    invoke-virtual {p1}, Landroidx/compose/foundation/text/selection/b;->i()V
-
-    invoke-virtual {p1}, Landroidx/compose/foundation/text/selection/b;->k()V
-
-    goto/16 :goto_6
-
-    .line 97
-    :pswitch_c
-    invoke-virtual {p1}, Landroidx/compose/foundation/text/selection/b;->j()V
-
-    invoke-virtual {p1}, Landroidx/compose/foundation/text/selection/b;->k()V
-
-    goto/16 :goto_6
-
     .line 98
-    :pswitch_d
-    invoke-virtual {p1}, Landroidx/compose/foundation/text/selection/b;->g()V
-
-    invoke-virtual {p1}, Landroidx/compose/foundation/text/selection/b;->k()V
-
-    goto/16 :goto_6
+    :cond_b
+    invoke-virtual {p1}, Landroidx/compose/foundation/text/selection/t;->k()V
 
     .line 99
-    :pswitch_e
-    invoke-virtual {p1}, Landroidx/compose/foundation/text/selection/b;->h()V
-
-    invoke-virtual {p1}, Landroidx/compose/foundation/text/selection/b;->k()V
+    :cond_c
+    :goto_1
+    invoke-virtual {p1}, Landroidx/compose/foundation/text/selection/t;->m()V
 
     goto/16 :goto_6
 
     .line 100
-    :pswitch_f
-    iget-object v0, p1, Landroidx/compose/foundation/text/selection/b;->e:Landroidx/compose/foundation/text/selection/d0;
+    :pswitch_b
+    invoke-virtual {p1}, Landroidx/compose/foundation/text/selection/t;->k()V
+
+    invoke-virtual {p1}, Landroidx/compose/foundation/text/selection/t;->m()V
+
+    goto/16 :goto_6
 
     .line 101
-    iput-object v7, v0, Landroidx/compose/foundation/text/selection/d0;->a:Ljava/lang/Float;
+    :pswitch_c
+    invoke-virtual {p1}, Landroidx/compose/foundation/text/selection/t;->l()V
+
+    invoke-virtual {p1}, Landroidx/compose/foundation/text/selection/t;->m()V
+
+    goto/16 :goto_6
 
     .line 102
-    iget-object v1, p1, Landroidx/compose/foundation/text/selection/b;->g:Landroidx/compose/ui/text/f;
+    :pswitch_d
+    invoke-virtual {p1}, Landroidx/compose/foundation/text/selection/t;->i()V
 
-    iget-object v1, v1, Landroidx/compose/ui/text/f;->b:Ljava/lang/String;
+    invoke-virtual {p1}, Landroidx/compose/foundation/text/selection/t;->m()V
+
+    goto/16 :goto_6
 
     .line 103
+    :pswitch_e
+    invoke-virtual {p1}, Landroidx/compose/foundation/text/selection/t;->j()V
+
+    invoke-virtual {p1}, Landroidx/compose/foundation/text/selection/t;->m()V
+
+    goto/16 :goto_6
+
+    .line 104
+    :pswitch_f
+    iget-object v0, p1, Landroidx/compose/foundation/text/selection/t;->e:Landroidx/compose/foundation/text/selection/A;
+
+    .line 105
+    iput-object v6, v0, Landroidx/compose/foundation/text/selection/A;->a:Ljava/lang/Float;
+
+    .line 106
+    iget-object v1, p1, Landroidx/compose/foundation/text/selection/t;->g:Landroidx/compose/ui/text/g;
+
+    iget-object v1, v1, Landroidx/compose/ui/text/g;->b:Ljava/lang/String;
+
+    .line 107
     invoke-virtual {v1}, Ljava/lang/String;->length()I
 
     move-result v1
 
     if-lez v1, :cond_e
 
-    .line 104
-    invoke-virtual {p1}, Landroidx/compose/foundation/text/selection/b;->e()Z
+    .line 108
+    invoke-virtual {p1}, Landroidx/compose/foundation/text/selection/t;->f()Z
 
     move-result v1
 
     if-eqz v1, :cond_d
 
-    .line 105
-    iput-object v7, v0, Landroidx/compose/foundation/text/selection/d0;->a:Ljava/lang/Float;
+    .line 109
+    iput-object v6, v0, Landroidx/compose/foundation/text/selection/A;->a:Ljava/lang/Float;
 
-    .line 106
-    iget-object v0, p1, Landroidx/compose/foundation/text/selection/b;->g:Landroidx/compose/ui/text/f;
+    .line 110
+    iget-object v0, p1, Landroidx/compose/foundation/text/selection/t;->g:Landroidx/compose/ui/text/g;
 
-    iget-object v0, v0, Landroidx/compose/ui/text/f;->b:Ljava/lang/String;
+    iget-object v0, v0, Landroidx/compose/ui/text/g;->b:Ljava/lang/String;
 
-    .line 107
+    .line 111
     invoke-virtual {v0}, Ljava/lang/String;->length()I
 
     move-result v0
 
     if-lez v0, :cond_e
 
-    .line 108
-    invoke-virtual {p1}, Landroidx/compose/foundation/text/selection/b;->c()Ljava/lang/Integer;
+    .line 112
+    invoke-virtual {p1}, Landroidx/compose/foundation/text/selection/t;->d()Ljava/lang/Integer;
 
     move-result-object v0
 
@@ -675,29 +661,29 @@
 
     move-result v0
 
-    .line 109
-    invoke-virtual {p1, v0, v0}, Landroidx/compose/foundation/text/selection/b;->l(II)V
+    .line 113
+    invoke-virtual {p1, v0, v0}, Landroidx/compose/foundation/text/selection/t;->n(II)V
 
     goto :goto_2
 
-    .line 110
+    .line 114
     :cond_d
-    iput-object v7, v0, Landroidx/compose/foundation/text/selection/d0;->a:Ljava/lang/Float;
+    iput-object v6, v0, Landroidx/compose/foundation/text/selection/A;->a:Ljava/lang/Float;
 
-    .line 111
-    iget-object v0, p1, Landroidx/compose/foundation/text/selection/b;->g:Landroidx/compose/ui/text/f;
+    .line 115
+    iget-object v0, p1, Landroidx/compose/foundation/text/selection/t;->g:Landroidx/compose/ui/text/g;
 
-    iget-object v0, v0, Landroidx/compose/ui/text/f;->b:Ljava/lang/String;
+    iget-object v0, v0, Landroidx/compose/ui/text/g;->b:Ljava/lang/String;
 
-    .line 112
+    .line 116
     invoke-virtual {v0}, Ljava/lang/String;->length()I
 
     move-result v0
 
     if-lez v0, :cond_e
 
-    .line 113
-    invoke-virtual {p1}, Landroidx/compose/foundation/text/selection/b;->d()Ljava/lang/Integer;
+    .line 117
+    invoke-virtual {p1}, Landroidx/compose/foundation/text/selection/t;->e()Ljava/lang/Integer;
 
     move-result-object v0
 
@@ -707,59 +693,59 @@
 
     move-result v0
 
-    .line 114
-    invoke-virtual {p1, v0, v0}, Landroidx/compose/foundation/text/selection/b;->l(II)V
+    .line 118
+    invoke-virtual {p1, v0, v0}, Landroidx/compose/foundation/text/selection/t;->n(II)V
 
-    .line 115
+    .line 119
     :cond_e
     :goto_2
-    invoke-virtual {p1}, Landroidx/compose/foundation/text/selection/b;->k()V
+    invoke-virtual {p1}, Landroidx/compose/foundation/text/selection/t;->m()V
 
     goto/16 :goto_6
 
-    .line 116
+    .line 120
     :pswitch_10
-    iget-object v0, p1, Landroidx/compose/foundation/text/selection/b;->e:Landroidx/compose/foundation/text/selection/d0;
+    iget-object v0, p1, Landroidx/compose/foundation/text/selection/t;->e:Landroidx/compose/foundation/text/selection/A;
 
-    .line 117
-    iput-object v7, v0, Landroidx/compose/foundation/text/selection/d0;->a:Ljava/lang/Float;
+    .line 121
+    iput-object v6, v0, Landroidx/compose/foundation/text/selection/A;->a:Ljava/lang/Float;
 
-    .line 118
-    iget-object v1, p1, Landroidx/compose/foundation/text/selection/b;->g:Landroidx/compose/ui/text/f;
+    .line 122
+    iget-object v1, p1, Landroidx/compose/foundation/text/selection/t;->g:Landroidx/compose/ui/text/g;
 
-    iget-object v1, v1, Landroidx/compose/ui/text/f;->b:Ljava/lang/String;
+    iget-object v1, v1, Landroidx/compose/ui/text/g;->b:Ljava/lang/String;
 
-    .line 119
+    .line 123
     invoke-virtual {v1}, Ljava/lang/String;->length()I
 
     move-result v1
 
     if-lez v1, :cond_10
 
-    .line 120
-    invoke-virtual {p1}, Landroidx/compose/foundation/text/selection/b;->e()Z
+    .line 124
+    invoke-virtual {p1}, Landroidx/compose/foundation/text/selection/t;->f()Z
 
     move-result v1
 
     if-eqz v1, :cond_f
 
-    .line 121
-    iput-object v7, v0, Landroidx/compose/foundation/text/selection/d0;->a:Ljava/lang/Float;
+    .line 125
+    iput-object v6, v0, Landroidx/compose/foundation/text/selection/A;->a:Ljava/lang/Float;
 
-    .line 122
-    iget-object v0, p1, Landroidx/compose/foundation/text/selection/b;->g:Landroidx/compose/ui/text/f;
+    .line 126
+    iget-object v0, p1, Landroidx/compose/foundation/text/selection/t;->g:Landroidx/compose/ui/text/g;
 
-    iget-object v0, v0, Landroidx/compose/ui/text/f;->b:Ljava/lang/String;
+    iget-object v0, v0, Landroidx/compose/ui/text/g;->b:Ljava/lang/String;
 
-    .line 123
+    .line 127
     invoke-virtual {v0}, Ljava/lang/String;->length()I
 
     move-result v0
 
     if-lez v0, :cond_10
 
-    .line 124
-    invoke-virtual {p1}, Landroidx/compose/foundation/text/selection/b;->d()Ljava/lang/Integer;
+    .line 128
+    invoke-virtual {p1}, Landroidx/compose/foundation/text/selection/t;->e()Ljava/lang/Integer;
 
     move-result-object v0
 
@@ -769,29 +755,29 @@
 
     move-result v0
 
-    .line 125
-    invoke-virtual {p1, v0, v0}, Landroidx/compose/foundation/text/selection/b;->l(II)V
+    .line 129
+    invoke-virtual {p1, v0, v0}, Landroidx/compose/foundation/text/selection/t;->n(II)V
 
     goto :goto_3
 
-    .line 126
+    .line 130
     :cond_f
-    iput-object v7, v0, Landroidx/compose/foundation/text/selection/d0;->a:Ljava/lang/Float;
+    iput-object v6, v0, Landroidx/compose/foundation/text/selection/A;->a:Ljava/lang/Float;
 
-    .line 127
-    iget-object v0, p1, Landroidx/compose/foundation/text/selection/b;->g:Landroidx/compose/ui/text/f;
+    .line 131
+    iget-object v0, p1, Landroidx/compose/foundation/text/selection/t;->g:Landroidx/compose/ui/text/g;
 
-    iget-object v0, v0, Landroidx/compose/ui/text/f;->b:Ljava/lang/String;
+    iget-object v0, v0, Landroidx/compose/ui/text/g;->b:Ljava/lang/String;
 
-    .line 128
+    .line 132
     invoke-virtual {v0}, Ljava/lang/String;->length()I
 
     move-result v0
 
     if-lez v0, :cond_10
 
-    .line 129
-    invoke-virtual {p1}, Landroidx/compose/foundation/text/selection/b;->c()Ljava/lang/Integer;
+    .line 133
+    invoke-virtual {p1}, Landroidx/compose/foundation/text/selection/t;->d()Ljava/lang/Integer;
 
     move-result-object v0
 
@@ -801,315 +787,283 @@
 
     move-result v0
 
-    .line 130
-    invoke-virtual {p1, v0, v0}, Landroidx/compose/foundation/text/selection/b;->l(II)V
+    .line 134
+    invoke-virtual {p1, v0, v0}, Landroidx/compose/foundation/text/selection/t;->n(II)V
 
-    .line 131
+    .line 135
     :cond_10
     :goto_3
-    invoke-virtual {p1}, Landroidx/compose/foundation/text/selection/b;->k()V
+    invoke-virtual {p1}, Landroidx/compose/foundation/text/selection/t;->m()V
 
     goto/16 :goto_6
 
-    .line 132
+    .line 136
     :pswitch_11
-    iget-object v0, p1, Landroidx/compose/foundation/text/selection/b;->e:Landroidx/compose/foundation/text/selection/d0;
+    iget-object v0, p1, Landroidx/compose/foundation/text/selection/t;->e:Landroidx/compose/foundation/text/selection/A;
 
-    .line 133
-    iput-object v7, v0, Landroidx/compose/foundation/text/selection/d0;->a:Ljava/lang/Float;
+    .line 137
+    iput-object v6, v0, Landroidx/compose/foundation/text/selection/A;->a:Ljava/lang/Float;
 
-    .line 134
-    iget-object v4, p1, Landroidx/compose/foundation/text/selection/b;->g:Landroidx/compose/ui/text/f;
+    .line 138
+    iget-object v4, p1, Landroidx/compose/foundation/text/selection/t;->g:Landroidx/compose/ui/text/g;
 
-    iget-object v4, v4, Landroidx/compose/ui/text/f;->b:Ljava/lang/String;
+    iget-object v4, v4, Landroidx/compose/ui/text/g;->b:Ljava/lang/String;
 
-    .line 135
+    .line 139
     invoke-virtual {v4}, Ljava/lang/String;->length()I
 
     move-result v4
 
     if-lez v4, :cond_12
 
-    .line 136
-    invoke-virtual {p1}, Landroidx/compose/foundation/text/selection/b;->e()Z
+    .line 140
+    invoke-virtual {p1}, Landroidx/compose/foundation/text/selection/t;->f()Z
 
     move-result v4
 
     if-eqz v4, :cond_11
 
-    .line 137
-    iput-object v7, v0, Landroidx/compose/foundation/text/selection/d0;->a:Ljava/lang/Float;
+    .line 141
+    iput-object v6, v0, Landroidx/compose/foundation/text/selection/A;->a:Ljava/lang/Float;
 
-    .line 138
-    iget-object v0, p1, Landroidx/compose/foundation/text/selection/b;->g:Landroidx/compose/ui/text/f;
+    .line 142
+    iget-object v0, p1, Landroidx/compose/foundation/text/selection/t;->g:Landroidx/compose/ui/text/g;
 
-    iget-object v0, v0, Landroidx/compose/ui/text/f;->b:Ljava/lang/String;
+    iget-object v0, v0, Landroidx/compose/ui/text/g;->b:Ljava/lang/String;
 
-    .line 139
+    .line 143
     invoke-virtual {v0}, Ljava/lang/String;->length()I
 
     move-result v0
 
     if-lez v0, :cond_12
 
-    .line 140
-    iget-object v0, p1, Landroidx/compose/foundation/text/selection/b;->g:Landroidx/compose/ui/text/f;
+    .line 144
+    iget-object v0, p1, Landroidx/compose/foundation/text/selection/t;->g:Landroidx/compose/ui/text/g;
 
-    iget-object v0, v0, Landroidx/compose/ui/text/f;->b:Ljava/lang/String;
+    iget-object v0, v0, Landroidx/compose/ui/text/g;->b:Ljava/lang/String;
 
-    .line 141
-    iget-wide v4, p1, Landroidx/compose/foundation/text/selection/b;->f:J
+    .line 145
+    iget-wide v4, p1, Landroidx/compose/foundation/text/selection/t;->f:J
 
-    sget v6, Landroidx/compose/ui/text/h0;->c:I
+    sget v6, Landroidx/compose/ui/text/H;->c:I
 
     and-long/2addr v1, v4
 
     long-to-int v2, v1
 
-    invoke-static {v2, v0}, Lb0/h;->B(ILjava/lang/String;)I
+    invoke-static {v2, v0}, Landroidx/compose/foundation/text/e;->q(ILjava/lang/String;)I
 
     move-result v0
 
     if-eq v0, v3, :cond_12
 
-    .line 142
-    invoke-virtual {p1, v0, v0}, Landroidx/compose/foundation/text/selection/b;->l(II)V
+    .line 146
+    invoke-virtual {p1, v0, v0}, Landroidx/compose/foundation/text/selection/t;->n(II)V
 
     goto :goto_4
 
-    .line 143
+    .line 147
     :cond_11
-    iput-object v7, v0, Landroidx/compose/foundation/text/selection/d0;->a:Ljava/lang/Float;
+    iput-object v6, v0, Landroidx/compose/foundation/text/selection/A;->a:Ljava/lang/Float;
 
-    .line 144
-    iget-object v0, p1, Landroidx/compose/foundation/text/selection/b;->g:Landroidx/compose/ui/text/f;
+    .line 148
+    iget-object v0, p1, Landroidx/compose/foundation/text/selection/t;->g:Landroidx/compose/ui/text/g;
 
-    iget-object v0, v0, Landroidx/compose/ui/text/f;->b:Ljava/lang/String;
+    iget-object v0, v0, Landroidx/compose/ui/text/g;->b:Ljava/lang/String;
 
-    .line 145
+    .line 149
     invoke-virtual {v0}, Ljava/lang/String;->length()I
 
     move-result v0
 
     if-lez v0, :cond_12
 
-    .line 146
-    iget-object v0, p1, Landroidx/compose/foundation/text/selection/b;->g:Landroidx/compose/ui/text/f;
+    .line 150
+    iget-object v0, p1, Landroidx/compose/foundation/text/selection/t;->g:Landroidx/compose/ui/text/g;
 
-    iget-object v0, v0, Landroidx/compose/ui/text/f;->b:Ljava/lang/String;
+    iget-object v0, v0, Landroidx/compose/ui/text/g;->b:Ljava/lang/String;
 
-    .line 147
-    iget-wide v4, p1, Landroidx/compose/foundation/text/selection/b;->f:J
+    .line 151
+    iget-wide v4, p1, Landroidx/compose/foundation/text/selection/t;->f:J
 
-    sget v6, Landroidx/compose/ui/text/h0;->c:I
+    sget v6, Landroidx/compose/ui/text/H;->c:I
 
     and-long/2addr v1, v4
 
     long-to-int v2, v1
 
-    invoke-static {v2, v0}, Lb0/h;->D(ILjava/lang/String;)I
+    invoke-static {v2, v0}, Landroidx/compose/foundation/text/e;->t(ILjava/lang/String;)I
 
     move-result v0
 
     if-eq v0, v3, :cond_12
 
-    .line 148
-    invoke-virtual {p1, v0, v0}, Landroidx/compose/foundation/text/selection/b;->l(II)V
+    .line 152
+    invoke-virtual {p1, v0, v0}, Landroidx/compose/foundation/text/selection/t;->n(II)V
 
-    .line 149
+    .line 153
     :cond_12
     :goto_4
-    invoke-virtual {p1}, Landroidx/compose/foundation/text/selection/b;->k()V
+    invoke-virtual {p1}, Landroidx/compose/foundation/text/selection/t;->m()V
 
     goto/16 :goto_6
 
-    .line 150
+    .line 154
     :pswitch_12
-    iget-object v0, p1, Landroidx/compose/foundation/text/selection/b;->e:Landroidx/compose/foundation/text/selection/d0;
+    iget-object v0, p1, Landroidx/compose/foundation/text/selection/t;->e:Landroidx/compose/foundation/text/selection/A;
 
-    .line 151
-    iput-object v7, v0, Landroidx/compose/foundation/text/selection/d0;->a:Ljava/lang/Float;
+    .line 155
+    iput-object v6, v0, Landroidx/compose/foundation/text/selection/A;->a:Ljava/lang/Float;
 
-    .line 152
-    iget-object v4, p1, Landroidx/compose/foundation/text/selection/b;->g:Landroidx/compose/ui/text/f;
+    .line 156
+    iget-object v4, p1, Landroidx/compose/foundation/text/selection/t;->g:Landroidx/compose/ui/text/g;
 
-    iget-object v4, v4, Landroidx/compose/ui/text/f;->b:Ljava/lang/String;
+    iget-object v4, v4, Landroidx/compose/ui/text/g;->b:Ljava/lang/String;
 
-    .line 153
+    .line 157
     invoke-virtual {v4}, Ljava/lang/String;->length()I
 
     move-result v4
 
     if-lez v4, :cond_14
 
-    .line 154
-    invoke-virtual {p1}, Landroidx/compose/foundation/text/selection/b;->e()Z
+    .line 158
+    invoke-virtual {p1}, Landroidx/compose/foundation/text/selection/t;->f()Z
 
     move-result v4
 
     if-eqz v4, :cond_13
 
-    .line 155
-    iput-object v7, v0, Landroidx/compose/foundation/text/selection/d0;->a:Ljava/lang/Float;
+    .line 159
+    iput-object v6, v0, Landroidx/compose/foundation/text/selection/A;->a:Ljava/lang/Float;
 
-    .line 156
-    iget-object v0, p1, Landroidx/compose/foundation/text/selection/b;->g:Landroidx/compose/ui/text/f;
+    .line 160
+    iget-object v0, p1, Landroidx/compose/foundation/text/selection/t;->g:Landroidx/compose/ui/text/g;
 
-    iget-object v0, v0, Landroidx/compose/ui/text/f;->b:Ljava/lang/String;
+    iget-object v0, v0, Landroidx/compose/ui/text/g;->b:Ljava/lang/String;
 
-    .line 157
+    .line 161
     invoke-virtual {v0}, Ljava/lang/String;->length()I
 
     move-result v0
 
     if-lez v0, :cond_14
 
-    .line 158
-    iget-object v0, p1, Landroidx/compose/foundation/text/selection/b;->g:Landroidx/compose/ui/text/f;
+    .line 162
+    iget-object v0, p1, Landroidx/compose/foundation/text/selection/t;->g:Landroidx/compose/ui/text/g;
 
-    iget-object v0, v0, Landroidx/compose/ui/text/f;->b:Ljava/lang/String;
+    iget-object v0, v0, Landroidx/compose/ui/text/g;->b:Ljava/lang/String;
 
-    .line 159
-    iget-wide v4, p1, Landroidx/compose/foundation/text/selection/b;->f:J
+    .line 163
+    iget-wide v4, p1, Landroidx/compose/foundation/text/selection/t;->f:J
 
-    sget v6, Landroidx/compose/ui/text/h0;->c:I
+    sget v6, Landroidx/compose/ui/text/H;->c:I
 
     and-long/2addr v1, v4
 
     long-to-int v2, v1
 
-    invoke-static {v2, v0}, Lb0/h;->D(ILjava/lang/String;)I
+    invoke-static {v2, v0}, Landroidx/compose/foundation/text/e;->t(ILjava/lang/String;)I
 
     move-result v0
 
     if-eq v0, v3, :cond_14
 
-    .line 160
-    invoke-virtual {p1, v0, v0}, Landroidx/compose/foundation/text/selection/b;->l(II)V
+    .line 164
+    invoke-virtual {p1, v0, v0}, Landroidx/compose/foundation/text/selection/t;->n(II)V
 
     goto :goto_5
 
-    .line 161
+    .line 165
     :cond_13
-    iput-object v7, v0, Landroidx/compose/foundation/text/selection/d0;->a:Ljava/lang/Float;
+    iput-object v6, v0, Landroidx/compose/foundation/text/selection/A;->a:Ljava/lang/Float;
 
-    .line 162
-    iget-object v0, p1, Landroidx/compose/foundation/text/selection/b;->g:Landroidx/compose/ui/text/f;
+    .line 166
+    iget-object v0, p1, Landroidx/compose/foundation/text/selection/t;->g:Landroidx/compose/ui/text/g;
 
-    iget-object v0, v0, Landroidx/compose/ui/text/f;->b:Ljava/lang/String;
+    iget-object v0, v0, Landroidx/compose/ui/text/g;->b:Ljava/lang/String;
 
-    .line 163
+    .line 167
     invoke-virtual {v0}, Ljava/lang/String;->length()I
 
     move-result v0
 
     if-lez v0, :cond_14
 
-    .line 164
-    iget-object v0, p1, Landroidx/compose/foundation/text/selection/b;->g:Landroidx/compose/ui/text/f;
+    .line 168
+    iget-object v0, p1, Landroidx/compose/foundation/text/selection/t;->g:Landroidx/compose/ui/text/g;
 
-    iget-object v0, v0, Landroidx/compose/ui/text/f;->b:Ljava/lang/String;
+    iget-object v0, v0, Landroidx/compose/ui/text/g;->b:Ljava/lang/String;
 
-    .line 165
-    iget-wide v4, p1, Landroidx/compose/foundation/text/selection/b;->f:J
+    .line 169
+    iget-wide v4, p1, Landroidx/compose/foundation/text/selection/t;->f:J
 
-    sget v6, Landroidx/compose/ui/text/h0;->c:I
+    sget v6, Landroidx/compose/ui/text/H;->c:I
 
     and-long/2addr v1, v4
 
     long-to-int v2, v1
 
-    invoke-static {v2, v0}, Lb0/h;->B(ILjava/lang/String;)I
+    invoke-static {v2, v0}, Landroidx/compose/foundation/text/e;->q(ILjava/lang/String;)I
 
     move-result v0
 
     if-eq v0, v3, :cond_14
 
-    .line 166
-    invoke-virtual {p1, v0, v0}, Landroidx/compose/foundation/text/selection/b;->l(II)V
+    .line 170
+    invoke-virtual {p1, v0, v0}, Landroidx/compose/foundation/text/selection/t;->n(II)V
 
-    .line 167
+    .line 171
     :cond_14
     :goto_5
-    invoke-virtual {p1}, Landroidx/compose/foundation/text/selection/b;->k()V
+    invoke-virtual {p1}, Landroidx/compose/foundation/text/selection/t;->m()V
 
     goto/16 :goto_6
 
-    .line 168
+    .line 172
     :pswitch_13
-    iget-object v0, p1, Landroidx/compose/foundation/text/selection/b;->e:Landroidx/compose/foundation/text/selection/d0;
+    iget-object v0, p1, Landroidx/compose/foundation/text/selection/t;->e:Landroidx/compose/foundation/text/selection/A;
 
-    .line 169
-    iput-object v7, v0, Landroidx/compose/foundation/text/selection/d0;->a:Ljava/lang/Float;
+    .line 173
+    iput-object v6, v0, Landroidx/compose/foundation/text/selection/A;->a:Ljava/lang/Float;
 
-    .line 170
-    iget-object v0, p1, Landroidx/compose/foundation/text/selection/b;->g:Landroidx/compose/ui/text/f;
+    .line 174
+    iget-object v0, p1, Landroidx/compose/foundation/text/selection/t;->g:Landroidx/compose/ui/text/g;
 
-    iget-object v1, v0, Landroidx/compose/ui/text/f;->b:Ljava/lang/String;
+    iget-object v1, v0, Landroidx/compose/ui/text/g;->b:Ljava/lang/String;
 
-    .line 171
+    .line 175
     invoke-virtual {v1}, Ljava/lang/String;->length()I
 
     move-result v1
 
     if-lez v1, :cond_1f
 
-    .line 172
-    iget-object v0, v0, Landroidx/compose/ui/text/f;->b:Ljava/lang/String;
+    .line 176
+    iget-object v0, v0, Landroidx/compose/ui/text/g;->b:Ljava/lang/String;
 
     invoke-virtual {v0}, Ljava/lang/String;->length()I
 
     move-result v0
 
-    invoke-virtual {p1, v6, v0}, Landroidx/compose/foundation/text/selection/b;->l(II)V
+    invoke-virtual {p1, v5, v0}, Landroidx/compose/foundation/text/selection/t;->n(II)V
 
     goto/16 :goto_6
-
-    :pswitch_14
-    iget-object p1, p0, Landroidx/compose/foundation/text/TextFieldKeyInput$process$2;->this$0:Landroidx/compose/foundation/text/d0;
-
-    .line 173
-    iget-boolean v0, p1, Landroidx/compose/foundation/text/d0;->e:Z
-
-    if-nez v0, :cond_15
-
-    .line 174
-    new-instance v0, Landroidx/compose/ui/text/input/a;
-
-    const-string v1, "\t"
-
-    invoke-direct {v0, v1, v4}, Landroidx/compose/ui/text/input/a;-><init>(Ljava/lang/String;I)V
-
-    .line 175
-    invoke-static {v0}, Ljava/util/Collections;->singletonList(Ljava/lang/Object;)Ljava/util/List;
-
-    move-result-object v0
-
-    .line 176
-    invoke-virtual {p1, v0}, Landroidx/compose/foundation/text/d0;->a(Ljava/util/List;)V
-
-    goto/16 :goto_6
-
-    :cond_15
-    iget-object p1, p0, Landroidx/compose/foundation/text/TextFieldKeyInput$process$2;->$consumed:Lkotlin/jvm/internal/Ref$BooleanRef;
 
     .line 177
-    iput-boolean v6, p1, Lkotlin/jvm/internal/Ref$BooleanRef;->element:Z
-
-    goto/16 :goto_6
-
-    :pswitch_15
-    iget-object p1, p0, Landroidx/compose/foundation/text/TextFieldKeyInput$process$2;->this$0:Landroidx/compose/foundation/text/d0;
+    :pswitch_14
+    iget-object p1, p0, Landroidx/compose/foundation/text/TextFieldKeyInput$process$2;->this$0:Landroidx/compose/foundation/text/D;
 
     .line 178
-    iget-boolean v0, p1, Landroidx/compose/foundation/text/d0;->e:Z
+    iget-boolean v0, p1, Landroidx/compose/foundation/text/D;->e:Z
 
-    if-nez v0, :cond_16
+    if-nez v0, :cond_15
 
     .line 179
     new-instance v0, Landroidx/compose/ui/text/input/a;
 
-    const-string v1, "\n"
+    const-string v1, "\t"
 
     invoke-direct {v0, v1, v4}, Landroidx/compose/ui/text/input/a;-><init>(Ljava/lang/String;I)V
 
@@ -1119,233 +1073,212 @@
     move-result-object v0
 
     .line 181
-    invoke-virtual {p1, v0}, Landroidx/compose/foundation/text/d0;->a(Ljava/util/List;)V
+    invoke-virtual {p1, v0}, Landroidx/compose/foundation/text/D;->a(Ljava/util/List;)V
 
     goto/16 :goto_6
 
     .line 182
-    :cond_16
-    iget-object v0, p1, Landroidx/compose/foundation/text/d0;->a:Landroidx/compose/foundation/text/t;
+    :cond_15
+    iget-object p1, p0, Landroidx/compose/foundation/text/TextFieldKeyInput$process$2;->$consumed:Lkotlin/jvm/internal/Ref$BooleanRef;
 
-    iget-object v0, v0, Landroidx/compose/foundation/text/t;->u:Lzh/c;
+    iput-boolean v5, p1, Lkotlin/jvm/internal/Ref$BooleanRef;->element:Z
+
+    goto/16 :goto_6
 
     .line 183
-    new-instance v1, Landroidx/compose/ui/text/input/m;
-
-    iget p1, p1, Landroidx/compose/foundation/text/d0;->l:I
-
-    invoke-direct {v1, p1}, Landroidx/compose/ui/text/input/m;-><init>(I)V
+    :pswitch_15
+    iget-object p1, p0, Landroidx/compose/foundation/text/TextFieldKeyInput$process$2;->this$0:Landroidx/compose/foundation/text/D;
 
     .line 184
-    invoke-interface {v0, v1}, Lzh/c;->invoke(Ljava/lang/Object;)Ljava/lang/Object;
+    iget-boolean v0, p1, Landroidx/compose/foundation/text/D;->e:Z
 
-    goto/16 :goto_6
+    if-nez v0, :cond_16
 
     .line 185
-    :pswitch_16
-    sget-object v0, Landroidx/compose/foundation/text/TextFieldKeyInput$process$2$8;->INSTANCE:Landroidx/compose/foundation/text/TextFieldKeyInput$process$2$8;
+    new-instance v0, Landroidx/compose/ui/text/input/a;
 
-    invoke-virtual {p1, v0}, Landroidx/compose/foundation/text/selection/w;->n(Lzh/c;)Ljava/util/List;
+    const-string v1, "\n"
 
-    move-result-object p1
-
-    if-eqz p1, :cond_1f
-
-    iget-object v0, p0, Landroidx/compose/foundation/text/TextFieldKeyInput$process$2;->this$0:Landroidx/compose/foundation/text/d0;
+    invoke-direct {v0, v1, v4}, Landroidx/compose/ui/text/input/a;-><init>(Ljava/lang/String;I)V
 
     .line 186
-    invoke-virtual {v0, p1}, Landroidx/compose/foundation/text/d0;->a(Ljava/util/List;)V
+    invoke-static {v0}, Ljava/util/Collections;->singletonList(Ljava/lang/Object;)Ljava/util/List;
 
-    goto/16 :goto_6
+    move-result-object v0
 
     .line 187
-    :pswitch_17
-    sget-object v0, Landroidx/compose/foundation/text/TextFieldKeyInput$process$2$7;->INSTANCE:Landroidx/compose/foundation/text/TextFieldKeyInput$process$2$7;
-
-    invoke-virtual {p1, v0}, Landroidx/compose/foundation/text/selection/w;->n(Lzh/c;)Ljava/util/List;
-
-    move-result-object p1
-
-    if-eqz p1, :cond_1f
-
-    iget-object v0, p0, Landroidx/compose/foundation/text/TextFieldKeyInput$process$2;->this$0:Landroidx/compose/foundation/text/d0;
-
-    .line 188
-    invoke-virtual {v0, p1}, Landroidx/compose/foundation/text/d0;->a(Ljava/util/List;)V
+    invoke-virtual {p1, v0}, Landroidx/compose/foundation/text/D;->a(Ljava/util/List;)V
 
     goto/16 :goto_6
 
+    .line 188
+    :cond_16
+    iget-object v0, p1, Landroidx/compose/foundation/text/D;->a:Landroidx/compose/foundation/text/s;
+
+    iget-object v0, v0, Landroidx/compose/foundation/text/s;->u:Lka/c;
+
     .line 189
-    :pswitch_18
-    sget-object v0, Landroidx/compose/foundation/text/TextFieldKeyInput$process$2$6;->INSTANCE:Landroidx/compose/foundation/text/TextFieldKeyInput$process$2$6;
+    new-instance v1, Landroidx/compose/ui/text/input/l;
 
-    invoke-virtual {p1, v0}, Landroidx/compose/foundation/text/selection/w;->n(Lzh/c;)Ljava/util/List;
+    iget p1, p1, Landroidx/compose/foundation/text/D;->l:I
 
-    move-result-object p1
-
-    if-eqz p1, :cond_1f
-
-    iget-object v0, p0, Landroidx/compose/foundation/text/TextFieldKeyInput$process$2;->this$0:Landroidx/compose/foundation/text/d0;
+    invoke-direct {v1, p1}, Landroidx/compose/ui/text/input/l;-><init>(I)V
 
     .line 190
-    invoke-virtual {v0, p1}, Landroidx/compose/foundation/text/d0;->a(Ljava/util/List;)V
+    invoke-interface {v0, v1}, Lka/c;->invoke(Ljava/lang/Object;)Ljava/lang/Object;
 
     goto/16 :goto_6
 
     .line 191
-    :pswitch_19
-    sget-object v0, Landroidx/compose/foundation/text/TextFieldKeyInput$process$2$5;->INSTANCE:Landroidx/compose/foundation/text/TextFieldKeyInput$process$2$5;
+    :pswitch_16
+    sget-object v0, Landroidx/compose/foundation/text/TextFieldKeyInput$process$2$8;->INSTANCE:Landroidx/compose/foundation/text/TextFieldKeyInput$process$2$8;
 
-    invoke-virtual {p1, v0}, Landroidx/compose/foundation/text/selection/w;->n(Lzh/c;)Ljava/util/List;
+    invoke-virtual {p1, v0}, Landroidx/compose/foundation/text/selection/t;->a(Lka/c;)Ljava/util/List;
 
     move-result-object p1
 
     if-eqz p1, :cond_1f
-
-    iget-object v0, p0, Landroidx/compose/foundation/text/TextFieldKeyInput$process$2;->this$0:Landroidx/compose/foundation/text/d0;
 
     .line 192
-    invoke-virtual {v0, p1}, Landroidx/compose/foundation/text/d0;->a(Ljava/util/List;)V
-
-    goto/16 :goto_6
+    iget-object v0, p0, Landroidx/compose/foundation/text/TextFieldKeyInput$process$2;->this$0:Landroidx/compose/foundation/text/D;
 
     .line 193
-    :pswitch_1a
-    sget-object v0, Landroidx/compose/foundation/text/TextFieldKeyInput$process$2$4;->INSTANCE:Landroidx/compose/foundation/text/TextFieldKeyInput$process$2$4;
-
-    invoke-virtual {p1, v0}, Landroidx/compose/foundation/text/selection/w;->n(Lzh/c;)Ljava/util/List;
-
-    move-result-object p1
-
-    if-eqz p1, :cond_1f
-
-    iget-object v0, p0, Landroidx/compose/foundation/text/TextFieldKeyInput$process$2;->this$0:Landroidx/compose/foundation/text/d0;
-
-    .line 194
-    invoke-virtual {v0, p1}, Landroidx/compose/foundation/text/d0;->a(Ljava/util/List;)V
+    invoke-virtual {v0, p1}, Landroidx/compose/foundation/text/D;->a(Ljava/util/List;)V
 
     goto/16 :goto_6
 
-    .line 195
-    :pswitch_1b
-    sget-object v0, Landroidx/compose/foundation/text/TextFieldKeyInput$process$2$3;->INSTANCE:Landroidx/compose/foundation/text/TextFieldKeyInput$process$2$3;
+    .line 194
+    :pswitch_17
+    sget-object v0, Landroidx/compose/foundation/text/TextFieldKeyInput$process$2$7;->INSTANCE:Landroidx/compose/foundation/text/TextFieldKeyInput$process$2$7;
 
-    invoke-virtual {p1, v0}, Landroidx/compose/foundation/text/selection/w;->n(Lzh/c;)Ljava/util/List;
+    invoke-virtual {p1, v0}, Landroidx/compose/foundation/text/selection/t;->a(Lka/c;)Ljava/util/List;
 
     move-result-object p1
 
     if-eqz p1, :cond_1f
 
-    iget-object v0, p0, Landroidx/compose/foundation/text/TextFieldKeyInput$process$2;->this$0:Landroidx/compose/foundation/text/d0;
+    .line 195
+    iget-object v0, p0, Landroidx/compose/foundation/text/TextFieldKeyInput$process$2;->this$0:Landroidx/compose/foundation/text/D;
 
     .line 196
-    invoke-virtual {v0, p1}, Landroidx/compose/foundation/text/d0;->a(Ljava/util/List;)V
+    invoke-virtual {v0, p1}, Landroidx/compose/foundation/text/D;->a(Ljava/util/List;)V
 
     goto/16 :goto_6
 
     .line 197
-    :pswitch_1c
-    iget-object v0, p1, Landroidx/compose/foundation/text/selection/b;->e:Landroidx/compose/foundation/text/selection/d0;
+    :pswitch_18
+    sget-object v0, Landroidx/compose/foundation/text/TextFieldKeyInput$process$2$6;->INSTANCE:Landroidx/compose/foundation/text/TextFieldKeyInput$process$2$6;
+
+    invoke-virtual {p1, v0}, Landroidx/compose/foundation/text/selection/t;->a(Lka/c;)Ljava/util/List;
+
+    move-result-object p1
+
+    if-eqz p1, :cond_1f
 
     .line 198
-    iput-object v7, v0, Landroidx/compose/foundation/text/selection/d0;->a:Ljava/lang/Float;
+    iget-object v0, p0, Landroidx/compose/foundation/text/TextFieldKeyInput$process$2;->this$0:Landroidx/compose/foundation/text/D;
 
     .line 199
-    iget-object v0, p1, Landroidx/compose/foundation/text/selection/b;->g:Landroidx/compose/ui/text/f;
+    invoke-virtual {v0, p1}, Landroidx/compose/foundation/text/D;->a(Ljava/util/List;)V
 
-    iget-object v1, v0, Landroidx/compose/ui/text/f;->b:Ljava/lang/String;
+    goto/16 :goto_6
 
     .line 200
+    :pswitch_19
+    sget-object v0, Landroidx/compose/foundation/text/TextFieldKeyInput$process$2$5;->INSTANCE:Landroidx/compose/foundation/text/TextFieldKeyInput$process$2$5;
+
+    invoke-virtual {p1, v0}, Landroidx/compose/foundation/text/selection/t;->a(Lka/c;)Ljava/util/List;
+
+    move-result-object p1
+
+    if-eqz p1, :cond_1f
+
+    .line 201
+    iget-object v0, p0, Landroidx/compose/foundation/text/TextFieldKeyInput$process$2;->this$0:Landroidx/compose/foundation/text/D;
+
+    .line 202
+    invoke-virtual {v0, p1}, Landroidx/compose/foundation/text/D;->a(Ljava/util/List;)V
+
+    goto/16 :goto_6
+
+    .line 203
+    :pswitch_1a
+    sget-object v0, Landroidx/compose/foundation/text/TextFieldKeyInput$process$2$4;->INSTANCE:Landroidx/compose/foundation/text/TextFieldKeyInput$process$2$4;
+
+    invoke-virtual {p1, v0}, Landroidx/compose/foundation/text/selection/t;->a(Lka/c;)Ljava/util/List;
+
+    move-result-object p1
+
+    if-eqz p1, :cond_1f
+
+    .line 204
+    iget-object v0, p0, Landroidx/compose/foundation/text/TextFieldKeyInput$process$2;->this$0:Landroidx/compose/foundation/text/D;
+
+    .line 205
+    invoke-virtual {v0, p1}, Landroidx/compose/foundation/text/D;->a(Ljava/util/List;)V
+
+    goto/16 :goto_6
+
+    .line 206
+    :pswitch_1b
+    sget-object v0, Landroidx/compose/foundation/text/TextFieldKeyInput$process$2$3;->INSTANCE:Landroidx/compose/foundation/text/TextFieldKeyInput$process$2$3;
+
+    invoke-virtual {p1, v0}, Landroidx/compose/foundation/text/selection/t;->a(Lka/c;)Ljava/util/List;
+
+    move-result-object p1
+
+    if-eqz p1, :cond_1f
+
+    .line 207
+    iget-object v0, p0, Landroidx/compose/foundation/text/TextFieldKeyInput$process$2;->this$0:Landroidx/compose/foundation/text/D;
+
+    .line 208
+    invoke-virtual {v0, p1}, Landroidx/compose/foundation/text/D;->a(Ljava/util/List;)V
+
+    goto/16 :goto_6
+
+    .line 209
+    :pswitch_1c
+    iget-object v0, p1, Landroidx/compose/foundation/text/selection/t;->e:Landroidx/compose/foundation/text/selection/A;
+
+    .line 210
+    iput-object v6, v0, Landroidx/compose/foundation/text/selection/A;->a:Ljava/lang/Float;
+
+    .line 211
+    iget-object v0, p1, Landroidx/compose/foundation/text/selection/t;->g:Landroidx/compose/ui/text/g;
+
+    iget-object v1, v0, Landroidx/compose/ui/text/g;->b:Ljava/lang/String;
+
+    .line 212
     invoke-virtual {v1}, Ljava/lang/String;->length()I
 
     move-result v1
 
     if-lez v1, :cond_1f
 
-    .line 201
-    iget-object v0, v0, Landroidx/compose/ui/text/f;->b:Ljava/lang/String;
-
-    invoke-virtual {v0}, Ljava/lang/String;->length()I
-
-    move-result v0
-
-    .line 202
-    invoke-virtual {p1, v0, v0}, Landroidx/compose/foundation/text/selection/b;->l(II)V
-
-    goto/16 :goto_6
-
-    .line 203
-    :pswitch_1d
-    iget-object v0, p1, Landroidx/compose/foundation/text/selection/b;->e:Landroidx/compose/foundation/text/selection/d0;
-
-    .line 204
-    iput-object v7, v0, Landroidx/compose/foundation/text/selection/d0;->a:Ljava/lang/Float;
-
-    .line 205
-    iget-object v0, p1, Landroidx/compose/foundation/text/selection/b;->g:Landroidx/compose/ui/text/f;
-
-    iget-object v0, v0, Landroidx/compose/ui/text/f;->b:Ljava/lang/String;
-
-    .line 206
-    invoke-virtual {v0}, Ljava/lang/String;->length()I
-
-    move-result v0
-
-    if-lez v0, :cond_1f
-
-    .line 207
-    invoke-virtual {p1, v6, v6}, Landroidx/compose/foundation/text/selection/b;->l(II)V
-
-    goto/16 :goto_6
-
-    .line 208
-    :pswitch_1e
-    iget-object v0, p1, Landroidx/compose/foundation/text/selection/b;->e:Landroidx/compose/foundation/text/selection/d0;
-
-    .line 209
-    iput-object v7, v0, Landroidx/compose/foundation/text/selection/d0;->a:Ljava/lang/Float;
-
-    .line 210
-    iget-object v0, p1, Landroidx/compose/foundation/text/selection/b;->g:Landroidx/compose/ui/text/f;
-
-    iget-object v0, v0, Landroidx/compose/ui/text/f;->b:Ljava/lang/String;
-
-    .line 211
-    invoke-virtual {v0}, Ljava/lang/String;->length()I
-
-    move-result v0
-
-    if-lez v0, :cond_1f
-
-    .line 212
-    invoke-virtual {p1}, Landroidx/compose/foundation/text/selection/b;->e()Z
-
-    move-result v0
-
-    if-eqz v0, :cond_17
-
     .line 213
-    invoke-virtual {p1}, Landroidx/compose/foundation/text/selection/b;->i()V
+    iget-object v0, v0, Landroidx/compose/ui/text/g;->b:Ljava/lang/String;
 
-    goto/16 :goto_6
+    invoke-virtual {v0}, Ljava/lang/String;->length()I
+
+    move-result v0
 
     .line 214
-    :cond_17
-    invoke-virtual {p1}, Landroidx/compose/foundation/text/selection/b;->j()V
+    invoke-virtual {p1, v0, v0}, Landroidx/compose/foundation/text/selection/t;->n(II)V
 
     goto/16 :goto_6
 
     .line 215
-    :pswitch_1f
-    iget-object v0, p1, Landroidx/compose/foundation/text/selection/b;->e:Landroidx/compose/foundation/text/selection/d0;
+    :pswitch_1d
+    iget-object v0, p1, Landroidx/compose/foundation/text/selection/t;->e:Landroidx/compose/foundation/text/selection/A;
 
     .line 216
-    iput-object v7, v0, Landroidx/compose/foundation/text/selection/d0;->a:Ljava/lang/Float;
+    iput-object v6, v0, Landroidx/compose/foundation/text/selection/A;->a:Ljava/lang/Float;
 
     .line 217
-    iget-object v0, p1, Landroidx/compose/foundation/text/selection/b;->g:Landroidx/compose/ui/text/f;
+    iget-object v0, p1, Landroidx/compose/foundation/text/selection/t;->g:Landroidx/compose/ui/text/g;
 
-    iget-object v0, v0, Landroidx/compose/ui/text/f;->b:Ljava/lang/String;
+    iget-object v0, v0, Landroidx/compose/ui/text/g;->b:Ljava/lang/String;
 
     .line 218
     invoke-virtual {v0}, Ljava/lang/String;->length()I
@@ -1355,192 +1288,186 @@
     if-lez v0, :cond_1f
 
     .line 219
-    invoke-virtual {p1}, Landroidx/compose/foundation/text/selection/b;->e()Z
+    invoke-virtual {p1, v5, v5}, Landroidx/compose/foundation/text/selection/t;->n(II)V
+
+    goto/16 :goto_6
+
+    .line 220
+    :pswitch_1e
+    iget-object v0, p1, Landroidx/compose/foundation/text/selection/t;->e:Landroidx/compose/foundation/text/selection/A;
+
+    .line 221
+    iput-object v6, v0, Landroidx/compose/foundation/text/selection/A;->a:Ljava/lang/Float;
+
+    .line 222
+    iget-object v0, p1, Landroidx/compose/foundation/text/selection/t;->g:Landroidx/compose/ui/text/g;
+
+    iget-object v0, v0, Landroidx/compose/ui/text/g;->b:Ljava/lang/String;
+
+    .line 223
+    invoke-virtual {v0}, Ljava/lang/String;->length()I
+
+    move-result v0
+
+    if-lez v0, :cond_1f
+
+    .line 224
+    invoke-virtual {p1}, Landroidx/compose/foundation/text/selection/t;->f()Z
+
+    move-result v0
+
+    if-eqz v0, :cond_17
+
+    .line 225
+    invoke-virtual {p1}, Landroidx/compose/foundation/text/selection/t;->k()V
+
+    goto/16 :goto_6
+
+    .line 226
+    :cond_17
+    invoke-virtual {p1}, Landroidx/compose/foundation/text/selection/t;->l()V
+
+    goto/16 :goto_6
+
+    .line 227
+    :pswitch_1f
+    iget-object v0, p1, Landroidx/compose/foundation/text/selection/t;->e:Landroidx/compose/foundation/text/selection/A;
+
+    .line 228
+    iput-object v6, v0, Landroidx/compose/foundation/text/selection/A;->a:Ljava/lang/Float;
+
+    .line 229
+    iget-object v0, p1, Landroidx/compose/foundation/text/selection/t;->g:Landroidx/compose/ui/text/g;
+
+    iget-object v0, v0, Landroidx/compose/ui/text/g;->b:Ljava/lang/String;
+
+    .line 230
+    invoke-virtual {v0}, Ljava/lang/String;->length()I
+
+    move-result v0
+
+    if-lez v0, :cond_1f
+
+    .line 231
+    invoke-virtual {p1}, Landroidx/compose/foundation/text/selection/t;->f()Z
 
     move-result v0
 
     if-eqz v0, :cond_18
 
-    .line 220
-    invoke-virtual {p1}, Landroidx/compose/foundation/text/selection/b;->j()V
-
-    goto/16 :goto_6
-
-    .line 221
-    :cond_18
-    invoke-virtual {p1}, Landroidx/compose/foundation/text/selection/b;->i()V
-
-    goto/16 :goto_6
-
-    .line 222
-    :pswitch_20
-    invoke-virtual {p1}, Landroidx/compose/foundation/text/selection/b;->i()V
-
-    goto/16 :goto_6
-
-    .line 223
-    :pswitch_21
-    invoke-virtual {p1}, Landroidx/compose/foundation/text/selection/b;->j()V
-
-    goto/16 :goto_6
-
-    .line 224
-    :pswitch_22
-    iget-object v0, p1, Landroidx/compose/foundation/text/selection/b;->g:Landroidx/compose/ui/text/f;
-
-    .line 225
-    iget-object v0, v0, Landroidx/compose/ui/text/f;->b:Ljava/lang/String;
-
-    .line 226
-    invoke-virtual {v0}, Ljava/lang/String;->length()I
-
-    move-result v0
-
-    if-lez v0, :cond_1f
-
-    .line 227
-    iget-object v0, p1, Landroidx/compose/foundation/text/selection/w;->i:Landroidx/compose/foundation/text/i0;
-
-    if-eqz v0, :cond_1f
-
-    invoke-virtual {p1, v0, v4}, Landroidx/compose/foundation/text/selection/w;->o(Landroidx/compose/foundation/text/i0;I)I
-
-    move-result v0
-
-    .line 228
-    invoke-virtual {p1, v0, v0}, Landroidx/compose/foundation/text/selection/b;->l(II)V
-
-    goto/16 :goto_6
-
-    .line 229
-    :pswitch_23
-    iget-object v0, p1, Landroidx/compose/foundation/text/selection/b;->g:Landroidx/compose/ui/text/f;
-
-    .line 230
-    iget-object v0, v0, Landroidx/compose/ui/text/f;->b:Ljava/lang/String;
-
-    .line 231
-    invoke-virtual {v0}, Ljava/lang/String;->length()I
-
-    move-result v0
-
-    if-lez v0, :cond_1f
-
     .line 232
-    iget-object v0, p1, Landroidx/compose/foundation/text/selection/w;->i:Landroidx/compose/foundation/text/i0;
+    invoke-virtual {p1}, Landroidx/compose/foundation/text/selection/t;->l()V
 
-    if-eqz v0, :cond_1f
-
-    invoke-virtual {p1, v0, v3}, Landroidx/compose/foundation/text/selection/w;->o(Landroidx/compose/foundation/text/i0;I)I
-
-    move-result v0
+    goto/16 :goto_6
 
     .line 233
-    invoke-virtual {p1, v0, v0}, Landroidx/compose/foundation/text/selection/b;->l(II)V
+    :cond_18
+    invoke-virtual {p1}, Landroidx/compose/foundation/text/selection/t;->k()V
 
     goto/16 :goto_6
 
     .line 234
-    :pswitch_24
-    iget-object v0, p1, Landroidx/compose/foundation/text/selection/b;->g:Landroidx/compose/ui/text/f;
+    :pswitch_20
+    invoke-virtual {p1}, Landroidx/compose/foundation/text/selection/t;->k()V
+
+    goto/16 :goto_6
 
     .line 235
-    iget-object v0, v0, Landroidx/compose/ui/text/f;->b:Ljava/lang/String;
+    :pswitch_21
+    invoke-virtual {p1}, Landroidx/compose/foundation/text/selection/t;->l()V
+
+    goto/16 :goto_6
 
     .line 236
-    invoke-virtual {v0}, Ljava/lang/String;->length()I
-
-    move-result v0
-
-    if-lez v0, :cond_1f
+    :pswitch_22
+    iget-object v0, p1, Landroidx/compose/foundation/text/selection/t;->g:Landroidx/compose/ui/text/g;
 
     .line 237
-    iget-object v0, p1, Landroidx/compose/foundation/text/selection/b;->c:Landroidx/compose/ui/text/f0;
-
-    if-eqz v0, :cond_1f
-
-    invoke-virtual {p1, v0, v4}, Landroidx/compose/foundation/text/selection/b;->f(Landroidx/compose/ui/text/f0;I)I
-
-    move-result v0
+    iget-object v0, v0, Landroidx/compose/ui/text/g;->b:Ljava/lang/String;
 
     .line 238
-    invoke-virtual {p1, v0, v0}, Landroidx/compose/foundation/text/selection/b;->l(II)V
-
-    goto/16 :goto_6
-
-    .line 239
-    :pswitch_25
-    iget-object v0, p1, Landroidx/compose/foundation/text/selection/b;->g:Landroidx/compose/ui/text/f;
-
-    .line 240
-    iget-object v0, v0, Landroidx/compose/ui/text/f;->b:Ljava/lang/String;
-
-    .line 241
     invoke-virtual {v0}, Ljava/lang/String;->length()I
 
     move-result v0
 
     if-lez v0, :cond_1f
 
-    .line 242
-    iget-object v0, p1, Landroidx/compose/foundation/text/selection/b;->c:Landroidx/compose/ui/text/f0;
+    .line 239
+    iget-object v0, p1, Landroidx/compose/foundation/text/selection/t;->i:Landroidx/compose/foundation/text/J;
 
     if-eqz v0, :cond_1f
 
-    invoke-virtual {p1, v0, v3}, Landroidx/compose/foundation/text/selection/b;->f(Landroidx/compose/ui/text/f0;I)I
+    invoke-virtual {p1, v0, v4}, Landroidx/compose/foundation/text/selection/t;->h(Landroidx/compose/foundation/text/J;I)I
 
     move-result v0
 
-    .line 243
-    invoke-virtual {p1, v0, v0}, Landroidx/compose/foundation/text/selection/b;->l(II)V
+    .line 240
+    invoke-virtual {p1, v0, v0}, Landroidx/compose/foundation/text/selection/t;->n(II)V
 
     goto/16 :goto_6
+
+    .line 241
+    :pswitch_23
+    iget-object v0, p1, Landroidx/compose/foundation/text/selection/t;->g:Landroidx/compose/ui/text/g;
+
+    .line 242
+    iget-object v0, v0, Landroidx/compose/ui/text/g;->b:Ljava/lang/String;
+
+    .line 243
+    invoke-virtual {v0}, Ljava/lang/String;->length()I
+
+    move-result v0
+
+    if-lez v0, :cond_1f
 
     .line 244
-    :pswitch_26
-    invoke-virtual {p1}, Landroidx/compose/foundation/text/selection/b;->g()V
+    iget-object v0, p1, Landroidx/compose/foundation/text/selection/t;->i:Landroidx/compose/foundation/text/J;
 
-    goto/16 :goto_6
+    if-eqz v0, :cond_1f
+
+    invoke-virtual {p1, v0, v3}, Landroidx/compose/foundation/text/selection/t;->h(Landroidx/compose/foundation/text/J;I)I
+
+    move-result v0
 
     .line 245
-    :pswitch_27
-    invoke-virtual {p1}, Landroidx/compose/foundation/text/selection/b;->h()V
+    invoke-virtual {p1, v0, v0}, Landroidx/compose/foundation/text/selection/t;->n(II)V
 
     goto/16 :goto_6
 
     .line 246
-    :pswitch_28
-    iget-object v0, p1, Landroidx/compose/foundation/text/selection/b;->e:Landroidx/compose/foundation/text/selection/d0;
+    :pswitch_24
+    iget-object v0, p1, Landroidx/compose/foundation/text/selection/t;->g:Landroidx/compose/ui/text/g;
 
     .line 247
-    iput-object v7, v0, Landroidx/compose/foundation/text/selection/d0;->a:Ljava/lang/Float;
+    iget-object v0, v0, Landroidx/compose/ui/text/g;->b:Ljava/lang/String;
 
     .line 248
-    iget-object v1, p1, Landroidx/compose/foundation/text/selection/b;->g:Landroidx/compose/ui/text/f;
+    invoke-virtual {v0}, Ljava/lang/String;->length()I
 
-    iget-object v1, v1, Landroidx/compose/ui/text/f;->b:Ljava/lang/String;
+    move-result v0
+
+    if-lez v0, :cond_1f
 
     .line 249
-    invoke-virtual {v1}, Ljava/lang/String;->length()I
+    iget-object v0, p1, Landroidx/compose/foundation/text/selection/t;->c:Landroidx/compose/ui/text/F;
 
-    move-result v1
+    if-eqz v0, :cond_1f
 
-    if-lez v1, :cond_1f
+    invoke-virtual {p1, v0, v4}, Landroidx/compose/foundation/text/selection/t;->g(Landroidx/compose/ui/text/F;I)I
+
+    move-result v0
 
     .line 250
-    invoke-virtual {p1}, Landroidx/compose/foundation/text/selection/b;->e()Z
+    invoke-virtual {p1, v0, v0}, Landroidx/compose/foundation/text/selection/t;->n(II)V
 
-    move-result v1
-
-    if-eqz v1, :cond_19
+    goto/16 :goto_6
 
     .line 251
-    iput-object v7, v0, Landroidx/compose/foundation/text/selection/d0;->a:Ljava/lang/Float;
+    :pswitch_25
+    iget-object v0, p1, Landroidx/compose/foundation/text/selection/t;->g:Landroidx/compose/ui/text/g;
 
     .line 252
-    iget-object v0, p1, Landroidx/compose/foundation/text/selection/b;->g:Landroidx/compose/ui/text/f;
-
-    iget-object v0, v0, Landroidx/compose/ui/text/f;->b:Ljava/lang/String;
+    iget-object v0, v0, Landroidx/compose/ui/text/g;->b:Ljava/lang/String;
 
     .line 253
     invoke-virtual {v0}, Ljava/lang/String;->length()I
@@ -1550,225 +1477,223 @@
     if-lez v0, :cond_1f
 
     .line 254
-    invoke-virtual {p1}, Landroidx/compose/foundation/text/selection/b;->c()Ljava/lang/Integer;
-
-    move-result-object v0
+    iget-object v0, p1, Landroidx/compose/foundation/text/selection/t;->c:Landroidx/compose/ui/text/F;
 
     if-eqz v0, :cond_1f
 
-    invoke-virtual {v0}, Ljava/lang/Number;->intValue()I
+    invoke-virtual {p1, v0, v3}, Landroidx/compose/foundation/text/selection/t;->g(Landroidx/compose/ui/text/F;I)I
 
     move-result v0
 
     .line 255
-    invoke-virtual {p1, v0, v0}, Landroidx/compose/foundation/text/selection/b;->l(II)V
+    invoke-virtual {p1, v0, v0}, Landroidx/compose/foundation/text/selection/t;->n(II)V
 
     goto/16 :goto_6
 
     .line 256
-    :cond_19
-    iput-object v7, v0, Landroidx/compose/foundation/text/selection/d0;->a:Ljava/lang/Float;
-
-    .line 257
-    iget-object v0, p1, Landroidx/compose/foundation/text/selection/b;->g:Landroidx/compose/ui/text/f;
-
-    iget-object v0, v0, Landroidx/compose/ui/text/f;->b:Ljava/lang/String;
-
-    .line 258
-    invoke-virtual {v0}, Ljava/lang/String;->length()I
-
-    move-result v0
-
-    if-lez v0, :cond_1f
-
-    .line 259
-    invoke-virtual {p1}, Landroidx/compose/foundation/text/selection/b;->d()Ljava/lang/Integer;
-
-    move-result-object v0
-
-    if-eqz v0, :cond_1f
-
-    invoke-virtual {v0}, Ljava/lang/Number;->intValue()I
-
-    move-result v0
-
-    .line 260
-    invoke-virtual {p1, v0, v0}, Landroidx/compose/foundation/text/selection/b;->l(II)V
+    :pswitch_26
+    invoke-virtual {p1}, Landroidx/compose/foundation/text/selection/t;->i()V
 
     goto/16 :goto_6
 
+    .line 257
+    :pswitch_27
+    invoke-virtual {p1}, Landroidx/compose/foundation/text/selection/t;->j()V
+
+    goto/16 :goto_6
+
+    .line 258
+    :pswitch_28
+    iget-object v0, p1, Landroidx/compose/foundation/text/selection/t;->e:Landroidx/compose/foundation/text/selection/A;
+
+    .line 259
+    iput-object v6, v0, Landroidx/compose/foundation/text/selection/A;->a:Ljava/lang/Float;
+
+    .line 260
+    iget-object v1, p1, Landroidx/compose/foundation/text/selection/t;->g:Landroidx/compose/ui/text/g;
+
+    iget-object v1, v1, Landroidx/compose/ui/text/g;->b:Ljava/lang/String;
+
     .line 261
-    :pswitch_29
-    iget-object v0, p1, Landroidx/compose/foundation/text/selection/b;->e:Landroidx/compose/foundation/text/selection/d0;
-
-    .line 262
-    iput-object v7, v0, Landroidx/compose/foundation/text/selection/d0;->a:Ljava/lang/Float;
-
-    .line 263
-    iget-object v1, p1, Landroidx/compose/foundation/text/selection/b;->g:Landroidx/compose/ui/text/f;
-
-    iget-object v1, v1, Landroidx/compose/ui/text/f;->b:Ljava/lang/String;
-
-    .line 264
     invoke-virtual {v1}, Ljava/lang/String;->length()I
 
     move-result v1
 
     if-lez v1, :cond_1f
 
+    .line 262
+    invoke-virtual {p1}, Landroidx/compose/foundation/text/selection/t;->f()Z
+
+    move-result v1
+
+    if-eqz v1, :cond_19
+
+    .line 263
+    iput-object v6, v0, Landroidx/compose/foundation/text/selection/A;->a:Ljava/lang/Float;
+
+    .line 264
+    iget-object v0, p1, Landroidx/compose/foundation/text/selection/t;->g:Landroidx/compose/ui/text/g;
+
+    iget-object v0, v0, Landroidx/compose/ui/text/g;->b:Ljava/lang/String;
+
     .line 265
-    invoke-virtual {p1}, Landroidx/compose/foundation/text/selection/b;->e()Z
+    invoke-virtual {v0}, Ljava/lang/String;->length()I
+
+    move-result v0
+
+    if-lez v0, :cond_1f
+
+    .line 266
+    invoke-virtual {p1}, Landroidx/compose/foundation/text/selection/t;->d()Ljava/lang/Integer;
+
+    move-result-object v0
+
+    if-eqz v0, :cond_1f
+
+    invoke-virtual {v0}, Ljava/lang/Number;->intValue()I
+
+    move-result v0
+
+    .line 267
+    invoke-virtual {p1, v0, v0}, Landroidx/compose/foundation/text/selection/t;->n(II)V
+
+    goto/16 :goto_6
+
+    .line 268
+    :cond_19
+    iput-object v6, v0, Landroidx/compose/foundation/text/selection/A;->a:Ljava/lang/Float;
+
+    .line 269
+    iget-object v0, p1, Landroidx/compose/foundation/text/selection/t;->g:Landroidx/compose/ui/text/g;
+
+    iget-object v0, v0, Landroidx/compose/ui/text/g;->b:Ljava/lang/String;
+
+    .line 270
+    invoke-virtual {v0}, Ljava/lang/String;->length()I
+
+    move-result v0
+
+    if-lez v0, :cond_1f
+
+    .line 271
+    invoke-virtual {p1}, Landroidx/compose/foundation/text/selection/t;->e()Ljava/lang/Integer;
+
+    move-result-object v0
+
+    if-eqz v0, :cond_1f
+
+    invoke-virtual {v0}, Ljava/lang/Number;->intValue()I
+
+    move-result v0
+
+    .line 272
+    invoke-virtual {p1, v0, v0}, Landroidx/compose/foundation/text/selection/t;->n(II)V
+
+    goto/16 :goto_6
+
+    .line 273
+    :pswitch_29
+    iget-object v0, p1, Landroidx/compose/foundation/text/selection/t;->e:Landroidx/compose/foundation/text/selection/A;
+
+    .line 274
+    iput-object v6, v0, Landroidx/compose/foundation/text/selection/A;->a:Ljava/lang/Float;
+
+    .line 275
+    iget-object v1, p1, Landroidx/compose/foundation/text/selection/t;->g:Landroidx/compose/ui/text/g;
+
+    iget-object v1, v1, Landroidx/compose/ui/text/g;->b:Ljava/lang/String;
+
+    .line 276
+    invoke-virtual {v1}, Ljava/lang/String;->length()I
+
+    move-result v1
+
+    if-lez v1, :cond_1f
+
+    .line 277
+    invoke-virtual {p1}, Landroidx/compose/foundation/text/selection/t;->f()Z
 
     move-result v1
 
     if-eqz v1, :cond_1a
 
-    .line 266
-    iput-object v7, v0, Landroidx/compose/foundation/text/selection/d0;->a:Ljava/lang/Float;
-
-    .line 267
-    iget-object v0, p1, Landroidx/compose/foundation/text/selection/b;->g:Landroidx/compose/ui/text/f;
-
-    iget-object v0, v0, Landroidx/compose/ui/text/f;->b:Ljava/lang/String;
-
-    .line 268
-    invoke-virtual {v0}, Ljava/lang/String;->length()I
-
-    move-result v0
-
-    if-lez v0, :cond_1f
-
-    .line 269
-    invoke-virtual {p1}, Landroidx/compose/foundation/text/selection/b;->d()Ljava/lang/Integer;
-
-    move-result-object v0
-
-    if-eqz v0, :cond_1f
-
-    invoke-virtual {v0}, Ljava/lang/Number;->intValue()I
-
-    move-result v0
-
-    .line 270
-    invoke-virtual {p1, v0, v0}, Landroidx/compose/foundation/text/selection/b;->l(II)V
-
-    goto/16 :goto_6
-
-    .line 271
-    :cond_1a
-    iput-object v7, v0, Landroidx/compose/foundation/text/selection/d0;->a:Ljava/lang/Float;
-
-    .line 272
-    iget-object v0, p1, Landroidx/compose/foundation/text/selection/b;->g:Landroidx/compose/ui/text/f;
-
-    iget-object v0, v0, Landroidx/compose/ui/text/f;->b:Ljava/lang/String;
-
-    .line 273
-    invoke-virtual {v0}, Ljava/lang/String;->length()I
-
-    move-result v0
-
-    if-lez v0, :cond_1f
-
-    .line 274
-    invoke-virtual {p1}, Landroidx/compose/foundation/text/selection/b;->c()Ljava/lang/Integer;
-
-    move-result-object v0
-
-    if-eqz v0, :cond_1f
-
-    invoke-virtual {v0}, Ljava/lang/Number;->intValue()I
-
-    move-result v0
-
-    .line 275
-    invoke-virtual {p1, v0, v0}, Landroidx/compose/foundation/text/selection/b;->l(II)V
-
-    goto/16 :goto_6
-
-    .line 276
-    :pswitch_2a
-    sget-object v0, Landroidx/compose/foundation/text/TextFieldKeyInput$process$2$2;->INSTANCE:Landroidx/compose/foundation/text/TextFieldKeyInput$process$2$2;
-
-    .line 277
-    iget-object v1, p1, Landroidx/compose/foundation/text/selection/b;->e:Landroidx/compose/foundation/text/selection/d0;
-
     .line 278
-    iput-object v7, v1, Landroidx/compose/foundation/text/selection/d0;->a:Ljava/lang/Float;
+    iput-object v6, v0, Landroidx/compose/foundation/text/selection/A;->a:Ljava/lang/Float;
 
     .line 279
-    iget-object v1, p1, Landroidx/compose/foundation/text/selection/b;->g:Landroidx/compose/ui/text/f;
+    iget-object v0, p1, Landroidx/compose/foundation/text/selection/t;->g:Landroidx/compose/ui/text/g;
 
-    iget-object v1, v1, Landroidx/compose/ui/text/f;->b:Ljava/lang/String;
+    iget-object v0, v0, Landroidx/compose/ui/text/g;->b:Ljava/lang/String;
 
     .line 280
-    invoke-virtual {v1}, Ljava/lang/String;->length()I
+    invoke-virtual {v0}, Ljava/lang/String;->length()I
 
-    move-result v1
+    move-result v0
 
-    if-lez v1, :cond_1f
+    if-lez v0, :cond_1f
 
     .line 281
-    iget-wide v1, p1, Landroidx/compose/foundation/text/selection/b;->f:J
+    invoke-virtual {p1}, Landroidx/compose/foundation/text/selection/t;->e()Ljava/lang/Integer;
 
-    invoke-static {v1, v2}, Landroidx/compose/ui/text/h0;->b(J)Z
+    move-result-object v0
 
-    move-result v1
+    if-eqz v0, :cond_1f
 
-    if-eqz v1, :cond_1b
+    invoke-virtual {v0}, Ljava/lang/Number;->intValue()I
+
+    move-result v0
 
     .line 282
-    invoke-interface {v0, p1}, Lzh/c;->invoke(Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {p1, v0, v0}, Landroidx/compose/foundation/text/selection/t;->n(II)V
 
-    goto :goto_6
+    goto/16 :goto_6
 
     .line 283
-    :cond_1b
-    invoke-virtual {p1}, Landroidx/compose/foundation/text/selection/b;->e()Z
-
-    move-result v0
-
-    if-eqz v0, :cond_1c
+    :cond_1a
+    iput-object v6, v0, Landroidx/compose/foundation/text/selection/A;->a:Ljava/lang/Float;
 
     .line 284
-    iget-wide v0, p1, Landroidx/compose/foundation/text/selection/b;->f:J
+    iget-object v0, p1, Landroidx/compose/foundation/text/selection/t;->g:Landroidx/compose/ui/text/g;
 
-    invoke-static {v0, v1}, Landroidx/compose/ui/text/h0;->d(J)I
+    iget-object v0, v0, Landroidx/compose/ui/text/g;->b:Ljava/lang/String;
+
+    .line 285
+    invoke-virtual {v0}, Ljava/lang/String;->length()I
 
     move-result v0
 
-    .line 285
-    invoke-virtual {p1, v0, v0}, Landroidx/compose/foundation/text/selection/b;->l(II)V
-
-    goto :goto_6
+    if-lez v0, :cond_1f
 
     .line 286
-    :cond_1c
-    iget-wide v0, p1, Landroidx/compose/foundation/text/selection/b;->f:J
+    invoke-virtual {p1}, Landroidx/compose/foundation/text/selection/t;->d()Ljava/lang/Integer;
 
-    invoke-static {v0, v1}, Landroidx/compose/ui/text/h0;->e(J)I
+    move-result-object v0
+
+    if-eqz v0, :cond_1f
+
+    invoke-virtual {v0}, Ljava/lang/Number;->intValue()I
 
     move-result v0
 
     .line 287
-    invoke-virtual {p1, v0, v0}, Landroidx/compose/foundation/text/selection/b;->l(II)V
+    invoke-virtual {p1, v0, v0}, Landroidx/compose/foundation/text/selection/t;->n(II)V
 
-    goto :goto_6
+    goto/16 :goto_6
 
     .line 288
-    :pswitch_2b
-    sget-object v0, Landroidx/compose/foundation/text/TextFieldKeyInput$process$2$1;->INSTANCE:Landroidx/compose/foundation/text/TextFieldKeyInput$process$2$1;
+    :pswitch_2a
+    sget-object v0, Landroidx/compose/foundation/text/TextFieldKeyInput$process$2$2;->INSTANCE:Landroidx/compose/foundation/text/TextFieldKeyInput$process$2$2;
 
     .line 289
-    iget-object v1, p1, Landroidx/compose/foundation/text/selection/b;->e:Landroidx/compose/foundation/text/selection/d0;
+    iget-object v1, p1, Landroidx/compose/foundation/text/selection/t;->e:Landroidx/compose/foundation/text/selection/A;
 
     .line 290
-    iput-object v7, v1, Landroidx/compose/foundation/text/selection/d0;->a:Ljava/lang/Float;
+    iput-object v6, v1, Landroidx/compose/foundation/text/selection/A;->a:Ljava/lang/Float;
 
     .line 291
-    iget-object v1, p1, Landroidx/compose/foundation/text/selection/b;->g:Landroidx/compose/ui/text/f;
+    iget-object v1, p1, Landroidx/compose/foundation/text/selection/t;->g:Landroidx/compose/ui/text/g;
 
-    iget-object v1, v1, Landroidx/compose/ui/text/f;->b:Ljava/lang/String;
+    iget-object v1, v1, Landroidx/compose/ui/text/g;->b:Ljava/lang/String;
 
     .line 292
     invoke-virtual {v1}, Ljava/lang/String;->length()I
@@ -1778,82 +1703,154 @@
     if-lez v1, :cond_1f
 
     .line 293
-    iget-wide v1, p1, Landroidx/compose/foundation/text/selection/b;->f:J
+    iget-wide v1, p1, Landroidx/compose/foundation/text/selection/t;->f:J
 
-    invoke-static {v1, v2}, Landroidx/compose/ui/text/h0;->b(J)Z
+    invoke-static {v1, v2}, Landroidx/compose/ui/text/H;->b(J)Z
+
+    move-result v1
+
+    if-eqz v1, :cond_1b
+
+    .line 294
+    invoke-interface {v0, p1}, Lka/c;->invoke(Ljava/lang/Object;)Ljava/lang/Object;
+
+    goto :goto_6
+
+    .line 295
+    :cond_1b
+    invoke-virtual {p1}, Landroidx/compose/foundation/text/selection/t;->f()Z
+
+    move-result v0
+
+    if-eqz v0, :cond_1c
+
+    .line 296
+    iget-wide v0, p1, Landroidx/compose/foundation/text/selection/t;->f:J
+
+    invoke-static {v0, v1}, Landroidx/compose/ui/text/H;->d(J)I
+
+    move-result v0
+
+    .line 297
+    invoke-virtual {p1, v0, v0}, Landroidx/compose/foundation/text/selection/t;->n(II)V
+
+    goto :goto_6
+
+    .line 298
+    :cond_1c
+    iget-wide v0, p1, Landroidx/compose/foundation/text/selection/t;->f:J
+
+    invoke-static {v0, v1}, Landroidx/compose/ui/text/H;->e(J)I
+
+    move-result v0
+
+    .line 299
+    invoke-virtual {p1, v0, v0}, Landroidx/compose/foundation/text/selection/t;->n(II)V
+
+    goto :goto_6
+
+    .line 300
+    :pswitch_2b
+    sget-object v0, Landroidx/compose/foundation/text/TextFieldKeyInput$process$2$1;->INSTANCE:Landroidx/compose/foundation/text/TextFieldKeyInput$process$2$1;
+
+    .line 301
+    iget-object v1, p1, Landroidx/compose/foundation/text/selection/t;->e:Landroidx/compose/foundation/text/selection/A;
+
+    .line 302
+    iput-object v6, v1, Landroidx/compose/foundation/text/selection/A;->a:Ljava/lang/Float;
+
+    .line 303
+    iget-object v1, p1, Landroidx/compose/foundation/text/selection/t;->g:Landroidx/compose/ui/text/g;
+
+    iget-object v1, v1, Landroidx/compose/ui/text/g;->b:Ljava/lang/String;
+
+    .line 304
+    invoke-virtual {v1}, Ljava/lang/String;->length()I
+
+    move-result v1
+
+    if-lez v1, :cond_1f
+
+    .line 305
+    iget-wide v1, p1, Landroidx/compose/foundation/text/selection/t;->f:J
+
+    invoke-static {v1, v2}, Landroidx/compose/ui/text/H;->b(J)Z
 
     move-result v1
 
     if-eqz v1, :cond_1d
 
-    .line 294
-    invoke-interface {v0, p1}, Lzh/c;->invoke(Ljava/lang/Object;)Ljava/lang/Object;
+    .line 306
+    invoke-interface {v0, p1}, Lka/c;->invoke(Ljava/lang/Object;)Ljava/lang/Object;
 
     goto :goto_6
 
-    .line 295
+    .line 307
     :cond_1d
-    invoke-virtual {p1}, Landroidx/compose/foundation/text/selection/b;->e()Z
+    invoke-virtual {p1}, Landroidx/compose/foundation/text/selection/t;->f()Z
 
     move-result v0
 
     if-eqz v0, :cond_1e
 
-    .line 296
-    iget-wide v0, p1, Landroidx/compose/foundation/text/selection/b;->f:J
+    .line 308
+    iget-wide v0, p1, Landroidx/compose/foundation/text/selection/t;->f:J
 
-    invoke-static {v0, v1}, Landroidx/compose/ui/text/h0;->e(J)I
+    invoke-static {v0, v1}, Landroidx/compose/ui/text/H;->e(J)I
 
     move-result v0
 
-    .line 297
-    invoke-virtual {p1, v0, v0}, Landroidx/compose/foundation/text/selection/b;->l(II)V
+    .line 309
+    invoke-virtual {p1, v0, v0}, Landroidx/compose/foundation/text/selection/t;->n(II)V
 
     goto :goto_6
 
-    .line 298
+    .line 310
     :cond_1e
-    iget-wide v0, p1, Landroidx/compose/foundation/text/selection/b;->f:J
+    iget-wide v0, p1, Landroidx/compose/foundation/text/selection/t;->f:J
 
-    invoke-static {v0, v1}, Landroidx/compose/ui/text/h0;->d(J)I
+    invoke-static {v0, v1}, Landroidx/compose/ui/text/H;->d(J)I
 
     move-result v0
 
-    .line 299
-    invoke-virtual {p1, v0, v0}, Landroidx/compose/foundation/text/selection/b;->l(II)V
+    .line 311
+    invoke-virtual {p1, v0, v0}, Landroidx/compose/foundation/text/selection/t;->n(II)V
 
     goto :goto_6
 
+    .line 312
     :pswitch_2c
-    iget-object p1, p0, Landroidx/compose/foundation/text/TextFieldKeyInput$process$2;->this$0:Landroidx/compose/foundation/text/d0;
+    iget-object p1, p0, Landroidx/compose/foundation/text/TextFieldKeyInput$process$2;->this$0:Landroidx/compose/foundation/text/D;
 
-    .line 300
-    iget-object p1, p1, Landroidx/compose/foundation/text/d0;->b:Landroidx/compose/foundation/text/selection/a0;
+    .line 313
+    iget-object p1, p1, Landroidx/compose/foundation/text/D;->b:Landroidx/compose/foundation/text/selection/x;
 
-    .line 301
-    invoke-virtual {p1}, Landroidx/compose/foundation/text/selection/a0;->f()V
+    .line 314
+    invoke-virtual {p1}, Landroidx/compose/foundation/text/selection/x;->e()V
 
     goto :goto_6
 
+    .line 315
     :pswitch_2d
-    iget-object p1, p0, Landroidx/compose/foundation/text/TextFieldKeyInput$process$2;->this$0:Landroidx/compose/foundation/text/d0;
+    iget-object p1, p0, Landroidx/compose/foundation/text/TextFieldKeyInput$process$2;->this$0:Landroidx/compose/foundation/text/D;
 
-    .line 302
-    iget-object p1, p1, Landroidx/compose/foundation/text/d0;->b:Landroidx/compose/foundation/text/selection/a0;
+    .line 316
+    iget-object p1, p1, Landroidx/compose/foundation/text/D;->b:Landroidx/compose/foundation/text/selection/x;
 
-    .line 303
-    invoke-virtual {p1}, Landroidx/compose/foundation/text/selection/a0;->n()V
+    .line 317
+    invoke-virtual {p1}, Landroidx/compose/foundation/text/selection/x;->m()V
 
     goto :goto_6
 
+    .line 318
     :pswitch_2e
-    iget-object p1, p0, Landroidx/compose/foundation/text/TextFieldKeyInput$process$2;->this$0:Landroidx/compose/foundation/text/d0;
+    iget-object p1, p0, Landroidx/compose/foundation/text/TextFieldKeyInput$process$2;->this$0:Landroidx/compose/foundation/text/D;
 
-    .line 304
-    iget-object p1, p1, Landroidx/compose/foundation/text/d0;->b:Landroidx/compose/foundation/text/selection/a0;
+    .line 319
+    iget-object p1, p1, Landroidx/compose/foundation/text/D;->b:Landroidx/compose/foundation/text/selection/x;
 
-    .line 305
-    invoke-virtual {p1, v6}, Landroidx/compose/foundation/text/selection/a0;->d(Z)V
+    .line 320
+    invoke-virtual {p1, v5}, Landroidx/compose/foundation/text/selection/x;->c(Z)V
 
     :cond_1f
     :goto_6

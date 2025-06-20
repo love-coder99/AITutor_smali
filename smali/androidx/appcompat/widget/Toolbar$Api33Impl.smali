@@ -29,6 +29,12 @@
 
 .method public static findOnBackInvokedDispatcher(Landroid/view/View;)Landroid/window/OnBackInvokedDispatcher;
     .locals 0
+    .param p0    # Landroid/view/View;
+        .annotation build Landroidx/annotation/NonNull;
+        .end annotation
+    .end param
+    .annotation build Landroidx/annotation/Nullable;
+    .end annotation
 
     .line 1
     invoke-virtual {p0}, Landroid/view/View;->findOnBackInvokedDispatcher()Landroid/window/OnBackInvokedDispatcher;
@@ -44,6 +50,12 @@
 
 .method public static newOnBackInvokedCallback(Ljava/lang/Runnable;)Landroid/window/OnBackInvokedCallback;
     .locals 1
+    .param p0    # Ljava/lang/Runnable;
+        .annotation build Landroidx/annotation/NonNull;
+        .end annotation
+    .end param
+    .annotation build Landroidx/annotation/NonNull;
+    .end annotation
 
     .line 1
     invoke-static {p0}, Ljava/util/Objects;->requireNonNull(Ljava/lang/Object;)Ljava/lang/Object;
@@ -51,11 +63,11 @@
     .line 2
     .line 3
     .line 4
-    new-instance v0, Landroidx/appcompat/widget/d;
+    new-instance v0, Landroidx/appcompat/widget/e;
 
     .line 5
     .line 6
-    invoke-direct {v0, p0}, Landroidx/appcompat/widget/d;-><init>(Ljava/lang/Runnable;)V
+    invoke-direct {v0, p0}, Landroidx/appcompat/widget/e;-><init>(Ljava/lang/Runnable;)V
 
     .line 7
     .line 8
@@ -65,6 +77,14 @@
 
 .method public static tryRegisterOnBackInvokedCallback(Ljava/lang/Object;Ljava/lang/Object;)V
     .locals 1
+    .param p0    # Ljava/lang/Object;
+        .annotation build Landroidx/annotation/NonNull;
+        .end annotation
+    .end param
+    .param p1    # Ljava/lang/Object;
+        .annotation build Landroidx/annotation/NonNull;
+        .end annotation
+    .end param
 
     .line 1
     check-cast p0, Landroid/window/OnBackInvokedDispatcher;
@@ -90,6 +110,14 @@
 
 .method public static tryUnregisterOnBackInvokedCallback(Ljava/lang/Object;Ljava/lang/Object;)V
     .locals 0
+    .param p0    # Ljava/lang/Object;
+        .annotation build Landroidx/annotation/NonNull;
+        .end annotation
+    .end param
+    .param p1    # Ljava/lang/Object;
+        .annotation build Landroidx/annotation/NonNull;
+        .end annotation
+    .end param
 
     .line 1
     check-cast p0, Landroid/window/OnBackInvokedDispatcher;

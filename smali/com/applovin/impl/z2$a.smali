@@ -29,14 +29,14 @@
     .locals 2
 
     .line 1
-    new-instance v0, Lcom/applovin/impl/rs;
+    new-instance v0, Lcom/applovin/impl/J;
 
     .line 2
     .line 3
     const/4 v1, 0x4
 
     .line 4
-    invoke-direct {v0, v1}, Lcom/applovin/impl/rs;-><init>(I)V
+    invoke-direct {v0, v1}, Lcom/applovin/impl/J;-><init>(I)V
 
     .line 5
     .line 6
@@ -154,7 +154,7 @@
 .method private static synthetic a(Lcom/applovin/impl/z2$a;Lcom/applovin/impl/z2$a;)I
     .locals 0
 
-    .line 2
+    .line 1
     iget p1, p1, Lcom/applovin/impl/z2$a;->b:I
 
     iget p0, p0, Lcom/applovin/impl/z2$a;->b:I
@@ -169,7 +169,7 @@
 .method public static synthetic a()Ljava/util/Comparator;
     .locals 1
 
-    .line 1
+    .line 2
     sget-object v0, Lcom/applovin/impl/z2$a;->c:Ljava/util/Comparator;
 
     return-object v0

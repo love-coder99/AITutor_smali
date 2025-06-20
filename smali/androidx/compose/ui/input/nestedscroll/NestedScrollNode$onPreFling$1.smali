@@ -4,6 +4,16 @@
 
 
 # annotations
+.annotation runtime Lca/c;
+    c = "androidx.compose.ui.input.nestedscroll.NestedScrollNode"
+    f = "NestedScrollNode.kt"
+    l = {
+        0x61,
+        0x62
+    }
+    m = "onPreFling-QWom1Mo"
+.end annotation
+
 .annotation runtime Lkotlin/Metadata;
     k = 0x3
     mv = {
@@ -12,16 +22,6 @@
         0x0
     }
     xi = 0x30
-.end annotation
-
-.annotation runtime Lth/c;
-    c = "androidx.compose.ui.input.nestedscroll.NestedScrollNode"
-    f = "NestedScrollNode.kt"
-    l = {
-        0x61,
-        0x62
-    }
-    m = "onPreFling-QWom1Mo"
 .end annotation
 
 

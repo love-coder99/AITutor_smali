@@ -105,6 +105,8 @@
 
 .method public collectDirectDownloadEnabled(Lcom/applovin/array/apphub/aidl/IAppHubService;)Ljava/lang/Boolean;
     .locals 3
+    .annotation build Landroidx/annotation/Nullable;
+    .end annotation
 
     .line 1
     :try_start_0
@@ -183,6 +185,8 @@
 
 .method public collectRandomUserToken(Lcom/applovin/array/apphub/aidl/IAppHubService;)Ljava/lang/String;
     .locals 3
+    .annotation build Landroidx/annotation/Nullable;
+    .end annotation
 
     .line 1
     :try_start_0

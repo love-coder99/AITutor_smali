@@ -52,4 +52,8 @@
 .end method
 
 .method public abstract setTextClassifier(Landroid/view/textclassifier/TextClassifier;)V
+    .param p1    # Landroid/view/textclassifier/TextClassifier;
+        .annotation build Landroidx/annotation/Nullable;
+        .end annotation
+    .end param
 .end method

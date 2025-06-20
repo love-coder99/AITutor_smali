@@ -26,5 +26,11 @@
 
 # static fields
 .field public static final INAPP:Ljava/lang/String; = "inapp"
+    .annotation build Landroidx/annotation/NonNull;
+    .end annotation
+.end field
 
 .field public static final SUBS:Ljava/lang/String; = "subs"
+    .annotation build Landroidx/annotation/NonNull;
+    .end annotation
+.end field

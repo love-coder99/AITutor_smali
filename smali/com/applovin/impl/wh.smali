@@ -96,7 +96,7 @@
 
     .line 6
     .line 7
-    invoke-static {}, Lcom/applovin/impl/sdk/z;->q()Z
+    invoke-static {}, Lcom/applovin/impl/M3;->g()Z
 
     .line 8
     .line 9

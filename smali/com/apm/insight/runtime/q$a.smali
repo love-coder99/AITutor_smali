@@ -33,11 +33,13 @@
 
     const/4 v0, 0x0
 
+    .line 3
     iput-object v0, p0, Lcom/apm/insight/runtime/q$a;->d:Lorg/json/JSONObject;
 
+    .line 4
     iput-object p1, p0, Lcom/apm/insight/runtime/q$a;->c:Ljava/io/File;
 
-    .line 3
+    .line 5
     invoke-virtual {p1}, Ljava/io/File;->getName()Ljava/lang/String;
 
     move-result-object v0
@@ -48,7 +50,7 @@
 
     move-result-object v0
 
-    .line 4
+    .line 6
     array-length v1, v0
 
     const/4 v2, 0x2
@@ -57,7 +59,7 @@
 
     if-lt v1, v2, :cond_0
 
-    .line 5
+    .line 7
     aget-object p1, v0, v3
 
     invoke-static {p1}, Ljava/lang/Long;->parseLong(Ljava/lang/String;)J
@@ -68,7 +70,7 @@
 
     const/4 p1, 0x1
 
-    .line 6
+    .line 8
     aget-object p1, v0, p1
 
     invoke-static {p1}, Ljava/lang/Long;->parseLong(Ljava/lang/String;)J
@@ -79,13 +81,13 @@
 
     return-void
 
-    .line 7
+    .line 9
     :cond_0
     invoke-virtual {p1}, Ljava/io/File;->getName()Ljava/lang/String;
 
     move-result-object p1
 
-    .line 8
+    .line 10
     invoke-static {p1}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
 
     move-result v0
@@ -100,25 +102,26 @@
 
     if-lt v0, v1, :cond_1
 
-    .line 9
+    .line 11
     invoke-virtual {p1, v3, v1}, Ljava/lang/String;->substring(II)Ljava/lang/String;
 
     move-result-object p1
 
-    .line 10
+    .line 12
     invoke-static {p1}, Landroid/text/TextUtils;->isDigitsOnly(Ljava/lang/CharSequence;)Z
 
     move-result v0
 
     if-eqz v0, :cond_1
 
-    .line 11
+    .line 13
     invoke-static {p1}, Ljava/lang/Long;->parseLong(Ljava/lang/String;)J
 
     move-result-wide v0
 
     iput-wide v0, p0, Lcom/apm/insight/runtime/q$a;->a:J
 
+    .line 14
     iput-wide v0, p0, Lcom/apm/insight/runtime/q$a;->b:J
 
     :cond_1
@@ -137,11 +140,12 @@
 .method private a()Lorg/json/JSONObject;
     .locals 3
 
+    .line 2
     iget-object v0, p0, Lcom/apm/insight/runtime/q$a;->d:Lorg/json/JSONObject;
 
     if-nez v0, :cond_0
 
-    .line 2
+    .line 3
     :try_start_0
     new-instance v0, Lorg/json/JSONObject;
 
@@ -151,16 +155,17 @@
 
     move-result-object v1
 
+    .line 4
     const-string v2, "\n"
 
-    .line 3
     invoke-static {v1, v2}, Lcom/apm/insight/l/f;->a(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v1
 
-    .line 4
+    .line 5
     invoke-direct {v0, v1}, Lorg/json/JSONObject;-><init>(Ljava/lang/String;)V
 
+    .line 6
     iput-object v0, p0, Lcom/apm/insight/runtime/q$a;->d:Lorg/json/JSONObject;
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
@@ -170,18 +175,20 @@
     :catchall_0
     nop
 
+    .line 7
     :goto_0
     iget-object v0, p0, Lcom/apm/insight/runtime/q$a;->d:Lorg/json/JSONObject;
 
     if-nez v0, :cond_0
 
-    .line 5
+    .line 8
     new-instance v0, Lorg/json/JSONObject;
 
     invoke-direct {v0}, Lorg/json/JSONObject;-><init>()V
 
     iput-object v0, p0, Lcom/apm/insight/runtime/q$a;->d:Lorg/json/JSONObject;
 
+    .line 9
     :cond_0
     iget-object v0, p0, Lcom/apm/insight/runtime/q$a;->d:Lorg/json/JSONObject;
 
@@ -202,7 +209,7 @@
 .method public static synthetic a(Lcom/apm/insight/runtime/q$a;J)Z
     .locals 5
 
-    .line 6
+    .line 10
     iget-wide v0, p0, Lcom/apm/insight/runtime/q$a;->a:J
 
     const-wide/32 v2, 0x240c8400
@@ -233,7 +240,7 @@
     :cond_1
     iget-object v0, p0, Lcom/apm/insight/runtime/q$a;->c:Ljava/io/File;
 
-    .line 7
+    .line 11
     invoke-virtual {v0}, Ljava/io/File;->lastModified()J
 
     move-result-wide v0

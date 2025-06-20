@@ -3,7 +3,7 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lzh/c;
+.implements Lka/c;
 
 
 # annotations
@@ -19,7 +19,7 @@
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "Lkotlin/jvm/internal/Lambda;",
-        "Lzh/c;"
+        "Lka/c;"
     }
 .end annotation
 
@@ -28,11 +28,11 @@
         "\u0000\u0014\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0008\u0003\u0010\u0007\u001a\u00020\u0004\"\u0008\u0008\u0000\u0010\u0001*\u00020\u00002\u0006\u0010\u0003\u001a\u00020\u0002H\n\u00a2\u0006\u0004\u0008\u0005\u0010\u0006"
     }
     d2 = {
-        "Ly4/a;",
+        "Ls2/a;",
         "T",
         "Landroidx/fragment/app/FragmentContainerView;",
         "container",
-        "Lqh/r;",
+        "LX9/j;",
         "invoke",
         "(Landroidx/fragment/app/FragmentContainerView;)V",
         "<anonymous>"
@@ -47,14 +47,14 @@
 
 
 # instance fields
-.field final synthetic $fragmentManager:Landroidx/fragment/app/v0;
+.field final synthetic $fragmentManager:Landroidx/fragment/app/Y;
 
 
 # direct methods
-.method public constructor <init>(Landroidx/fragment/app/v0;)V
+.method public constructor <init>(Landroidx/fragment/app/Y;)V
     .locals 0
 
-    iput-object p1, p0, Landroidx/compose/ui/viewinterop/AndroidViewBindingKt$AndroidViewBinding$7$1$1$1;->$fragmentManager:Landroidx/fragment/app/v0;
+    iput-object p1, p0, Landroidx/compose/ui/viewinterop/AndroidViewBindingKt$AndroidViewBinding$7$1$1$1;->$fragmentManager:Landroidx/fragment/app/Y;
 
     const/4 p1, 0x1
 
@@ -73,7 +73,7 @@
 
     invoke-virtual {p0, p1}, Landroidx/compose/ui/viewinterop/AndroidViewBindingKt$AndroidViewBinding$7$1$1$1;->invoke(Landroidx/fragment/app/FragmentContainerView;)V
 
-    sget-object p1, Lqh/r;->a:Lqh/r;
+    sget-object p1, LX9/j;->a:LX9/j;
 
     return-object p1
 .end method
@@ -81,16 +81,16 @@
 .method public final invoke(Landroidx/fragment/app/FragmentContainerView;)V
     .locals 2
 
-    iget-object v0, p0, Landroidx/compose/ui/viewinterop/AndroidViewBindingKt$AndroidViewBinding$7$1$1$1;->$fragmentManager:Landroidx/fragment/app/v0;
+    .line 2
+    iget-object v0, p0, Landroidx/compose/ui/viewinterop/AndroidViewBindingKt$AndroidViewBinding$7$1$1$1;->$fragmentManager:Landroidx/fragment/app/Y;
 
     if-eqz v0, :cond_0
 
-    .line 2
     invoke-virtual {p1}, Landroid/view/View;->getId()I
 
     move-result p1
 
-    invoke-virtual {v0, p1}, Landroidx/fragment/app/v0;->A(I)Landroidx/fragment/app/Fragment;
+    invoke-virtual {v0, p1}, Landroidx/fragment/app/Y;->A(I)Landroidx/fragment/app/Fragment;
 
     move-result-object p1
 
@@ -102,42 +102,44 @@
     :goto_0
     if-eqz p1, :cond_2
 
-    iget-object v0, p0, Landroidx/compose/ui/viewinterop/AndroidViewBindingKt$AndroidViewBinding$7$1$1$1;->$fragmentManager:Landroidx/fragment/app/v0;
-
     .line 3
-    invoke-virtual {v0}, Landroidx/fragment/app/v0;->K()Z
+    iget-object v0, p0, Landroidx/compose/ui/viewinterop/AndroidViewBindingKt$AndroidViewBinding$7$1$1$1;->$fragmentManager:Landroidx/fragment/app/Y;
+
+    invoke-virtual {v0}, Landroidx/fragment/app/Y;->K()Z
 
     move-result v0
 
     if-nez v0, :cond_2
 
-    iget-object v0, p0, Landroidx/compose/ui/viewinterop/AndroidViewBindingKt$AndroidViewBinding$7$1$1$1;->$fragmentManager:Landroidx/fragment/app/v0;
-
     .line 4
-    invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+    iget-object v0, p0, Landroidx/compose/ui/viewinterop/AndroidViewBindingKt$AndroidViewBinding$7$1$1$1;->$fragmentManager:Landroidx/fragment/app/Y;
 
     .line 5
-    new-instance v1, Landroidx/fragment/app/a;
-
-    invoke-direct {v1, v0}, Landroidx/fragment/app/a;-><init>(Landroidx/fragment/app/v0;)V
+    invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
     .line 6
+    new-instance v1, Landroidx/fragment/app/a;
+
+    invoke-direct {v1, v0}, Landroidx/fragment/app/a;-><init>(Landroidx/fragment/app/Y;)V
+
+    .line 7
     invoke-virtual {v1, p1}, Landroidx/fragment/app/a;->g(Landroidx/fragment/app/Fragment;)V
 
+    .line 8
     iget-boolean p1, v1, Landroidx/fragment/app/a;->g:Z
 
     if-nez p1, :cond_1
 
-    iget-object p1, v1, Landroidx/fragment/app/a;->p:Landroidx/fragment/app/v0;
+    .line 9
+    iget-object p1, v1, Landroidx/fragment/app/a;->p:Landroidx/fragment/app/Y;
 
     const/4 v0, 0x0
 
-    .line 7
-    invoke-virtual {p1, v1, v0}, Landroidx/fragment/app/v0;->y(Landroidx/fragment/app/t0;Z)V
+    invoke-virtual {p1, v1, v0}, Landroidx/fragment/app/Y;->y(Landroidx/fragment/app/a;Z)V
 
     goto :goto_1
 
-    .line 8
+    .line 10
     :cond_1
     new-instance p1, Ljava/lang/IllegalStateException;
 

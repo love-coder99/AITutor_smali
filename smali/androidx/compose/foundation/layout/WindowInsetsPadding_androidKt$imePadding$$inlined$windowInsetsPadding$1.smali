@@ -3,14 +3,14 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lzh/f;
+.implements Lka/f;
 
 
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "Lkotlin/jvm/internal/Lambda;",
-        "Lzh/f;"
+        "Lka/f;"
     }
 .end annotation
 
@@ -21,7 +21,7 @@
     d2 = {
         "Landroidx/compose/ui/o;",
         "invoke",
-        "(Landroidx/compose/ui/o;Landroidx/compose/runtime/l;I)Landroidx/compose/ui/o;",
+        "(Landroidx/compose/ui/o;Landroidx/compose/runtime/j;I)Landroidx/compose/ui/o;",
         "<anonymous>"
     }
     k = 0x3
@@ -46,57 +46,58 @@
 
 
 # virtual methods
-.method public final invoke(Landroidx/compose/ui/o;Landroidx/compose/runtime/l;I)Landroidx/compose/ui/o;
+.method public final invoke(Landroidx/compose/ui/o;Landroidx/compose/runtime/j;I)Landroidx/compose/ui/o;
     .locals 1
 
-    check-cast p2, Landroidx/compose/runtime/p;
+    check-cast p2, Landroidx/compose/runtime/n;
 
     const p1, 0x15733969
 
-    invoke-virtual {p2, p1}, Landroidx/compose/runtime/p;->T(I)V
+    invoke-virtual {p2, p1}, Landroidx/compose/runtime/n;->R(I)V
 
     .line 2
-    sget-object p1, Landroidx/compose/foundation/layout/g1;->u:Ljava/util/WeakHashMap;
+    sget-object p1, Landroidx/compose/foundation/layout/e0;->v:Ljava/util/WeakHashMap;
 
-    invoke-static {p2}, Landroidx/compose/foundation/layout/p;->d(Landroidx/compose/runtime/l;)Landroidx/compose/foundation/layout/g1;
+    invoke-static {p2}, Landroidx/compose/foundation/layout/d0;->f(Landroidx/compose/runtime/j;)Landroidx/compose/foundation/layout/e0;
 
     move-result-object p1
 
     .line 3
-    invoke-virtual {p2, p1}, Landroidx/compose/runtime/p;->g(Ljava/lang/Object;)Z
+    invoke-virtual {p2, p1}, Landroidx/compose/runtime/n;->f(Ljava/lang/Object;)Z
 
     move-result p3
 
     .line 4
-    invoke-virtual {p2}, Landroidx/compose/runtime/p;->I()Ljava/lang/Object;
+    invoke-virtual {p2}, Landroidx/compose/runtime/n;->G()Ljava/lang/Object;
 
     move-result-object v0
 
     if-nez p3, :cond_0
 
-    sget-object p3, Landroidx/compose/runtime/k;->b:Lxd/e;
+    .line 5
+    sget-object p3, Landroidx/compose/runtime/i;->a:Landroidx/compose/runtime/T;
 
     if-ne v0, p3, :cond_1
 
-    .line 5
-    :cond_0
-    new-instance v0, Landroidx/compose/foundation/layout/f0;
-
-    iget-object p1, p1, Landroidx/compose/foundation/layout/g1;->c:Landroidx/compose/foundation/layout/c;
-
-    invoke-direct {v0, p1}, Landroidx/compose/foundation/layout/f0;-><init>(Landroidx/compose/foundation/layout/f1;)V
-
     .line 6
-    invoke-virtual {p2, v0}, Landroidx/compose/runtime/p;->d0(Ljava/lang/Object;)V
+    :cond_0
+    new-instance v0, Landroidx/compose/foundation/layout/D;
+
+    iget-object p1, p1, Landroidx/compose/foundation/layout/e0;->c:Landroidx/compose/foundation/layout/c;
+
+    invoke-direct {v0, p1}, Landroidx/compose/foundation/layout/D;-><init>(Landroidx/compose/foundation/layout/c0;)V
 
     .line 7
+    invoke-virtual {p2, v0}, Landroidx/compose/runtime/n;->b0(Ljava/lang/Object;)V
+
+    .line 8
     :cond_1
-    check-cast v0, Landroidx/compose/foundation/layout/f0;
+    check-cast v0, Landroidx/compose/foundation/layout/D;
 
     const/4 p1, 0x0
 
-    .line 8
-    invoke-virtual {p2, p1}, Landroidx/compose/runtime/p;->q(Z)V
+    .line 9
+    invoke-virtual {p2, p1}, Landroidx/compose/runtime/n;->p(Z)V
 
     return-object v0
 .end method
@@ -107,7 +108,7 @@
     .line 1
     check-cast p1, Landroidx/compose/ui/o;
 
-    check-cast p2, Landroidx/compose/runtime/l;
+    check-cast p2, Landroidx/compose/runtime/j;
 
     check-cast p3, Ljava/lang/Number;
 
@@ -115,7 +116,7 @@
 
     move-result p3
 
-    invoke-virtual {p0, p1, p2, p3}, Landroidx/compose/foundation/layout/WindowInsetsPadding_androidKt$imePadding$$inlined$windowInsetsPadding$1;->invoke(Landroidx/compose/ui/o;Landroidx/compose/runtime/l;I)Landroidx/compose/ui/o;
+    invoke-virtual {p0, p1, p2, p3}, Landroidx/compose/foundation/layout/WindowInsetsPadding_androidKt$imePadding$$inlined$windowInsetsPadding$1;->invoke(Landroidx/compose/ui/o;Landroidx/compose/runtime/j;I)Landroidx/compose/ui/o;
 
     move-result-object p1
 

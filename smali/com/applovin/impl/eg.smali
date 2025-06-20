@@ -222,17 +222,18 @@
 .method private a(I)V
     .locals 3
 
+    .line 10
     iget-object v0, p0, Lcom/applovin/impl/eg;->c:Ljava/lang/Object;
 
-    .line 10
     monitor-enter v0
 
+    .line 11
     :try_start_0
     iget v1, p0, Lcom/applovin/impl/eg;->d:I
 
     if-ne v1, p1, :cond_0
 
-    .line 11
+    .line 12
     monitor-exit v0
 
     return-void
@@ -242,17 +243,18 @@
 
     goto :goto_1
 
+    .line 13
     :cond_0
     iput p1, p0, Lcom/applovin/impl/eg;->d:I
 
-    .line 12
+    .line 14
     monitor-exit v0
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
+    .line 15
     iget-object v0, p0, Lcom/applovin/impl/eg;->b:Ljava/util/concurrent/CopyOnWriteArrayList;
 
-    .line 13
     invoke-virtual {v0}, Ljava/util/concurrent/CopyOnWriteArrayList;->iterator()Ljava/util/Iterator;
 
     move-result-object v0
@@ -270,7 +272,7 @@
 
     check-cast v1, Ljava/lang/ref/WeakReference;
 
-    .line 14
+    .line 16
     invoke-virtual {v1}, Ljava/lang/ref/Reference;->get()Ljava/lang/Object;
 
     move-result-object v2
@@ -279,15 +281,15 @@
 
     if-eqz v2, :cond_1
 
-    .line 15
+    .line 17
     invoke-interface {v2, p1}, Lcom/applovin/impl/eg$c;->a(I)V
 
     goto :goto_0
 
+    .line 18
     :cond_1
     iget-object v2, p0, Lcom/applovin/impl/eg;->b:Ljava/util/concurrent/CopyOnWriteArrayList;
 
-    .line 16
     invoke-virtual {v2, v1}, Ljava/util/concurrent/CopyOnWriteArrayList;->remove(Ljava/lang/Object;)Z
 
     goto :goto_0
@@ -295,7 +297,7 @@
     :cond_2
     return-void
 
-    .line 17
+    .line 19
     :goto_1
     :try_start_1
     monitor-exit v0
@@ -343,12 +345,13 @@
 
     monitor-enter v0
 
+    .line 7
     :try_start_0
     sget-object v1, Lcom/applovin/impl/eg;->e:Lcom/applovin/impl/eg;
 
     if-nez v1, :cond_0
 
-    .line 7
+    .line 8
     new-instance v1, Lcom/applovin/impl/eg;
 
     invoke-direct {v1, p0}, Lcom/applovin/impl/eg;-><init>(Landroid/content/Context;)V
@@ -362,19 +365,22 @@
 
     goto :goto_1
 
+    .line 9
     :cond_0
     :goto_0
     sget-object p0, Lcom/applovin/impl/eg;->e:Lcom/applovin/impl/eg;
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    .line 8
     monitor-exit v0
 
     return-object p0
 
     :goto_1
+    :try_start_1
     monitor-exit v0
+    :try_end_1
+    .catchall {:try_start_1 .. :try_end_1} :catchall_0
 
     throw p0
 .end method
@@ -382,9 +388,9 @@
 .method private b()V
     .locals 3
 
+    .line 4
     iget-object v0, p0, Lcom/applovin/impl/eg;->b:Ljava/util/concurrent/CopyOnWriteArrayList;
 
-    .line 4
     invoke-virtual {v0}, Ljava/util/concurrent/CopyOnWriteArrayList;->iterator()Ljava/util/Iterator;
 
     move-result-object v0
@@ -410,9 +416,9 @@
 
     if-nez v2, :cond_0
 
+    .line 6
     iget-object v2, p0, Lcom/applovin/impl/eg;->b:Ljava/util/concurrent/CopyOnWriteArrayList;
 
-    .line 6
     invoke-virtual {v2, v1}, Ljava/util/concurrent/CopyOnWriteArrayList;->remove(Ljava/lang/Object;)Z
 
     goto :goto_0
@@ -579,15 +585,15 @@
 .method public a()I
     .locals 2
 
+    .line 6
     iget-object v0, p0, Lcom/applovin/impl/eg;->c:Ljava/lang/Object;
 
-    .line 6
     monitor-enter v0
 
+    .line 7
     :try_start_0
     iget v1, p0, Lcom/applovin/impl/eg;->d:I
 
-    .line 7
     monitor-exit v0
 
     return v1
@@ -609,23 +615,23 @@
     .line 1
     invoke-direct {p0}, Lcom/applovin/impl/eg;->b()V
 
+    .line 2
     iget-object v0, p0, Lcom/applovin/impl/eg;->b:Ljava/util/concurrent/CopyOnWriteArrayList;
 
-    .line 2
     new-instance v1, Ljava/lang/ref/WeakReference;
 
     invoke-direct {v1, p1}, Ljava/lang/ref/WeakReference;-><init>(Ljava/lang/Object;)V
 
     invoke-virtual {v0, v1}, Ljava/util/concurrent/CopyOnWriteArrayList;->add(Ljava/lang/Object;)Z
 
+    .line 3
     iget-object v0, p0, Lcom/applovin/impl/eg;->a:Landroid/os/Handler;
 
-    .line 3
-    new-instance v1, Lcom/applovin/impl/ps;
+    new-instance v1, Lcom/applovin/impl/H;
 
     const/16 v2, 0x9
 
-    invoke-direct {v1, p0, v2, p1}, Lcom/applovin/impl/ps;-><init>(Ljava/lang/Object;ILjava/lang/Object;)V
+    invoke-direct {v1, p0, v2, p1}, Lcom/applovin/impl/H;-><init>(Ljava/lang/Object;ILjava/lang/Object;)V
 
     invoke-virtual {v0, v1}, Landroid/os/Handler;->post(Ljava/lang/Runnable;)Z
 

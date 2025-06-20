@@ -3,133 +3,114 @@
 .source "SourceFile"
 
 # interfaces
-.implements Landroidx/compose/ui/graphics/colorspace/j;
+.implements Landroidx/compose/ui/graphics/colorspace/i;
 
 
 # instance fields
 .field public final synthetic b:I
 
-.field public final synthetic c:Landroidx/compose/ui/graphics/colorspace/q;
+.field public final synthetic c:D
 
 
 # direct methods
-.method public synthetic constructor <init>(Landroidx/compose/ui/graphics/colorspace/q;I)V
+.method public synthetic constructor <init>(DI)V
     .locals 0
 
     .line 1
+    iput p3, p0, Landroidx/compose/ui/graphics/colorspace/n;->b:I
+
+    iput-wide p1, p0, Landroidx/compose/ui/graphics/colorspace/n;->c:D
+
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 2
-    .line 3
-    .line 4
-    iput p2, p0, Landroidx/compose/ui/graphics/colorspace/n;->b:I
-
-    .line 5
-    .line 6
-    iput-object p1, p0, Landroidx/compose/ui/graphics/colorspace/n;->c:Landroidx/compose/ui/graphics/colorspace/q;
-
-    .line 7
-    .line 8
     return-void
 .end method
 
 
 # virtual methods
-.method public final a(D)D
-    .locals 9
+.method public final f(D)D
+    .locals 4
 
     .line 1
     iget v0, p0, Landroidx/compose/ui/graphics/colorspace/n;->b:I
 
     .line 2
     .line 3
-    iget-object v1, p0, Landroidx/compose/ui/graphics/colorspace/n;->c:Landroidx/compose/ui/graphics/colorspace/q;
+    packed-switch v0, :pswitch_data_0
 
     .line 4
     .line 5
-    packed-switch v0, :pswitch_data_0
-
     .line 6
+    const-wide/16 v0, 0x0
+
     .line 7
     .line 8
-    iget-object v0, v1, Landroidx/compose/ui/graphics/colorspace/q;->n:Landroidx/compose/ui/graphics/colorspace/j;
+    cmpg-double v2, p1, v0
 
     .line 9
     .line 10
-    iget v2, v1, Landroidx/compose/ui/graphics/colorspace/q;->e:F
+    if-gez v2, :cond_0
 
     .line 11
     .line 12
-    float-to-double v5, v2
+    move-wide p1, v0
 
     .line 13
-    iget v1, v1, Landroidx/compose/ui/graphics/colorspace/q;->f:F
+    :cond_0
+    iget-wide v0, p0, Landroidx/compose/ui/graphics/colorspace/n;->c:D
 
     .line 14
     .line 15
-    float-to-double v7, v1
+    invoke-static {p1, p2, v0, v1}, Ljava/lang/Math;->pow(DD)D
 
     .line 16
-    move-wide v3, p1
-
     .line 17
-    invoke-static/range {v3 .. v8}, Lma/a;->o(DDD)D
-
     .line 18
+    move-result-wide p1
+
     .line 19
-    .line 20
-    move-result-wide p1
-
-    .line 21
-    invoke-interface {v0, p1, p2}, Landroidx/compose/ui/graphics/colorspace/j;->a(D)D
-
-    .line 22
-    .line 23
-    .line 24
-    move-result-wide p1
-
-    .line 25
     return-wide p1
 
-    .line 26
+    .line 20
     :pswitch_0
-    iget-object v0, v1, Landroidx/compose/ui/graphics/colorspace/q;->k:Landroidx/compose/ui/graphics/colorspace/j;
+    const-wide/16 v0, 0x0
+
+    .line 21
+    .line 22
+    cmpg-double v2, p1, v0
+
+    .line 23
+    .line 24
+    if-gez v2, :cond_1
+
+    .line 25
+    .line 26
+    move-wide p1, v0
 
     .line 27
-    .line 28
-    invoke-interface {v0, p1, p2}, Landroidx/compose/ui/graphics/colorspace/j;->a(D)D
+    :cond_1
+    const-wide/high16 v0, 0x3ff0000000000000L    # 1.0
 
+    .line 28
     .line 29
+    iget-wide v2, p0, Landroidx/compose/ui/graphics/colorspace/n;->c:D
+
     .line 30
     .line 31
-    move-result-wide v2
+    div-double/2addr v0, v2
 
     .line 32
-    iget p1, v1, Landroidx/compose/ui/graphics/colorspace/q;->e:F
+    invoke-static {p1, p2, v0, v1}, Ljava/lang/Math;->pow(DD)D
 
     .line 33
     .line 34
-    float-to-double v4, p1
-
     .line 35
-    iget p1, v1, Landroidx/compose/ui/graphics/colorspace/q;->f:F
-
-    .line 36
-    .line 37
-    float-to-double v6, p1
-
-    .line 38
-    invoke-static/range {v2 .. v7}, Lma/a;->o(DDD)D
-
-    .line 39
-    .line 40
-    .line 41
     move-result-wide p1
 
-    .line 42
+    .line 36
     return-wide p1
 
-    .line 43
+    .line 37
     :pswitch_data_0
     .packed-switch 0x0
         :pswitch_0

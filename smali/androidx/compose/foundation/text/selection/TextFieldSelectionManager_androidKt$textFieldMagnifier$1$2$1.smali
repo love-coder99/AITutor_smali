@@ -3,12 +3,12 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lzh/c;
+.implements Lka/c;
 
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Landroidx/compose/foundation/text/selection/TextFieldSelectionManager_androidKt$textFieldMagnifier$1;->invoke(Landroidx/compose/ui/o;Landroidx/compose/runtime/l;I)Landroidx/compose/ui/o;
+    value = Landroidx/compose/foundation/text/selection/TextFieldSelectionManager_androidKt$textFieldMagnifier$1;->invoke(Landroidx/compose/ui/o;Landroidx/compose/runtime/j;I)Landroidx/compose/ui/o;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -19,7 +19,7 @@
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "Lkotlin/jvm/internal/Lambda;",
-        "Lzh/c;"
+        "Lka/c;"
     }
 .end annotation
 
@@ -29,11 +29,11 @@
     }
     d2 = {
         "Lkotlin/Function0;",
-        "Ln1/c;",
+        "Lr0/c;",
         "center",
         "Landroidx/compose/ui/o;",
         "invoke",
-        "(Lzh/a;)Landroidx/compose/ui/o;",
+        "(Lka/a;)Landroidx/compose/ui/o;",
         "<anonymous>"
     }
     k = 0x3
@@ -46,95 +46,119 @@
 
 
 # instance fields
-.field final synthetic $density:Lh2/b;
+.field final synthetic $density:LM0/b;
 
-.field final synthetic $magnifierSize$delegate:Landroidx/compose/runtime/j1;
+.field final synthetic $magnifierSize$delegate:Landroidx/compose/runtime/Z;
     .annotation system Ldalvik/annotation/Signature;
         value = {
-            "Landroidx/compose/runtime/j1;"
+            "Landroidx/compose/runtime/Z;"
         }
     .end annotation
 .end field
 
 
 # direct methods
-.method public constructor <init>(Lh2/b;Landroidx/compose/runtime/j1;)V
+.method public constructor <init>(LM0/b;Landroidx/compose/runtime/Z;)V
     .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
-            "Lh2/b;",
-            "Landroidx/compose/runtime/j1;",
+            "LM0/b;",
+            "Landroidx/compose/runtime/Z;",
             ")V"
         }
     .end annotation
 
     .line 1
-    iput-object p1, p0, Landroidx/compose/foundation/text/selection/TextFieldSelectionManager_androidKt$textFieldMagnifier$1$2$1;->$density:Lh2/b;
+    iput-object p1, p0, Landroidx/compose/foundation/text/selection/TextFieldSelectionManager_androidKt$textFieldMagnifier$1$2$1;->$density:LM0/b;
 
-    iput-object p2, p0, Landroidx/compose/foundation/text/selection/TextFieldSelectionManager_androidKt$textFieldMagnifier$1$2$1;->$magnifierSize$delegate:Landroidx/compose/runtime/j1;
+    .line 2
+    .line 3
+    iput-object p2, p0, Landroidx/compose/foundation/text/selection/TextFieldSelectionManager_androidKt$textFieldMagnifier$1$2$1;->$magnifierSize$delegate:Landroidx/compose/runtime/Z;
 
+    .line 4
+    .line 5
     const/4 p1, 0x1
 
+    .line 6
     invoke-direct {p0, p1}, Lkotlin/jvm/internal/Lambda;-><init>(I)V
 
+    .line 7
+    .line 8
+    .line 9
     return-void
 .end method
 
 
 # virtual methods
-.method public final invoke(Lzh/a;)Landroidx/compose/ui/o;
+.method public final invoke(Lka/a;)Landroidx/compose/ui/o;
     .locals 13
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
-            "Lzh/a;",
+            "Lka/a;",
             ")",
             "Landroidx/compose/ui/o;"
         }
     .end annotation
 
-    sget-object v0, Landroidx/compose/ui/l;->c:Landroidx/compose/ui/l;
-
     .line 2
+    sget-object v0, Landroidx/compose/ui/l;->a:Landroidx/compose/ui/l;
+
     new-instance v2, Landroidx/compose/foundation/text/selection/TextFieldSelectionManager_androidKt$textFieldMagnifier$1$2$1$1;
 
-    invoke-direct {v2, p1}, Landroidx/compose/foundation/text/selection/TextFieldSelectionManager_androidKt$textFieldMagnifier$1$2$1$1;-><init>(Lzh/a;)V
+    invoke-direct {v2, p1}, Landroidx/compose/foundation/text/selection/TextFieldSelectionManager_androidKt$textFieldMagnifier$1$2$1$1;-><init>(Lka/a;)V
 
     new-instance v4, Landroidx/compose/foundation/text/selection/TextFieldSelectionManager_androidKt$textFieldMagnifier$1$2$1$2;
 
-    iget-object p1, p0, Landroidx/compose/foundation/text/selection/TextFieldSelectionManager_androidKt$textFieldMagnifier$1$2$1;->$density:Lh2/b;
+    iget-object p1, p0, Landroidx/compose/foundation/text/selection/TextFieldSelectionManager_androidKt$textFieldMagnifier$1$2$1;->$density:LM0/b;
 
-    iget-object v1, p0, Landroidx/compose/foundation/text/selection/TextFieldSelectionManager_androidKt$textFieldMagnifier$1$2$1;->$magnifierSize$delegate:Landroidx/compose/runtime/j1;
+    iget-object v1, p0, Landroidx/compose/foundation/text/selection/TextFieldSelectionManager_androidKt$textFieldMagnifier$1$2$1;->$magnifierSize$delegate:Landroidx/compose/runtime/Z;
 
-    invoke-direct {v4, p1, v1}, Landroidx/compose/foundation/text/selection/TextFieldSelectionManager_androidKt$textFieldMagnifier$1$2$1$2;-><init>(Lh2/b;Landroidx/compose/runtime/j1;)V
+    invoke-direct {v4, p1, v1}, Landroidx/compose/foundation/text/selection/TextFieldSelectionManager_androidKt$textFieldMagnifier$1$2$1$2;-><init>(LM0/b;Landroidx/compose/runtime/Z;)V
 
     .line 3
-    invoke-static {}, Landroidx/compose/foundation/k0;->a()Z
+    invoke-static {}, Landroidx/compose/foundation/I;->a()Z
 
     move-result p1
 
     if-eqz p1, :cond_2
 
+    .line 4
     sget p1, Landroid/os/Build$VERSION;->SDK_INT:I
 
     const/16 v1, 0x1c
 
     if-ne p1, v1, :cond_0
 
-    sget-object p1, Landroidx/compose/foundation/u0;->a:Landroidx/compose/foundation/u0;
+    sget-object p1, Landroidx/compose/foundation/T;->a:Landroidx/compose/foundation/T;
 
     :goto_0
     move-object v12, p1
 
     goto :goto_1
 
+    .line 5
     :cond_0
-    sget-object p1, Landroidx/compose/foundation/w0;->a:Landroidx/compose/foundation/w0;
+    sget-object p1, Landroidx/compose/foundation/V;->a:Landroidx/compose/foundation/V;
 
     goto :goto_0
 
+    .line 6
     :goto_1
+    invoke-static {}, Landroidx/compose/foundation/I;->a()Z
+
+    move-result p1
+
+    if-eqz p1, :cond_1
+
+    .line 7
+    new-instance v0, Landroidx/compose/foundation/MagnifierElement;
+
+    const/high16 v10, 0x7fc00000    # Float.NaN
+
+    const/4 v11, 0x1
+
     const/4 v3, 0x0
 
     const/high16 v5, 0x7fc00000    # Float.NaN
@@ -145,33 +169,21 @@
 
     const/high16 v9, 0x7fc00000    # Float.NaN
 
-    const/high16 v10, 0x7fc00000    # Float.NaN
-
-    const/4 v11, 0x1
-
-    .line 4
-    invoke-static {}, Landroidx/compose/foundation/k0;->a()Z
-
-    move-result p1
-
-    if-eqz p1, :cond_1
-
-    .line 5
-    new-instance v0, Landroidx/compose/foundation/MagnifierElement;
-
     move-object v1, v0
 
-    invoke-direct/range {v1 .. v12}, Landroidx/compose/foundation/MagnifierElement;-><init>(Lzh/c;Lzh/c;Lzh/c;FZJFFZLandroidx/compose/foundation/s0;)V
+    invoke-direct/range {v1 .. v12}, Landroidx/compose/foundation/MagnifierElement;-><init>(Lka/c;Lka/c;Lka/c;FZJFFZLandroidx/compose/foundation/Q;)V
 
     :cond_1
     return-object v0
 
-    .line 6
+    .line 8
     :cond_2
     new-instance p1, Ljava/lang/UnsupportedOperationException;
 
+    .line 9
     const-string v0, "Magnifier is only supported on API level 28 and higher."
 
+    .line 10
     invoke-direct {p1, v0}, Ljava/lang/UnsupportedOperationException;-><init>(Ljava/lang/String;)V
 
     throw p1
@@ -181,9 +193,9 @@
     .locals 0
 
     .line 1
-    check-cast p1, Lzh/a;
+    check-cast p1, Lka/a;
 
-    invoke-virtual {p0, p1}, Landroidx/compose/foundation/text/selection/TextFieldSelectionManager_androidKt$textFieldMagnifier$1$2$1;->invoke(Lzh/a;)Landroidx/compose/ui/o;
+    invoke-virtual {p0, p1}, Landroidx/compose/foundation/text/selection/TextFieldSelectionManager_androidKt$textFieldMagnifier$1$2$1;->invoke(Lka/a;)Landroidx/compose/ui/o;
 
     move-result-object p1
 

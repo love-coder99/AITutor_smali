@@ -119,15 +119,21 @@
 .method public final getRequestCode()I
     .locals 1
 
+    .line 1
     iget v0, p0, Landroidx/fragment/app/strictmode/SetTargetFragmentUsageViolation;->requestCode:I
 
+    .line 2
+    .line 3
     return v0
 .end method
 
 .method public final getTargetFragment()Landroidx/fragment/app/Fragment;
     .locals 1
 
+    .line 1
     iget-object v0, p0, Landroidx/fragment/app/strictmode/SetTargetFragmentUsageViolation;->targetFragment:Landroidx/fragment/app/Fragment;
 
+    .line 2
+    .line 3
     return-object v0
 .end method

@@ -462,9 +462,9 @@
 
     sput-object v0, Lcom/applovin/mediation/R$styleable;->AppLovinStyledPlayerView:[I
 
-    const v0, 0x7f040423
+    const v0, 0x7f04044b
 
-    const v1, 0x7f040475
+    const v1, 0x7f040499
 
     filled-new-array {v0, v1}, [I
 
@@ -474,7 +474,7 @@
 
     const v0, 0x7f04005f
 
-    const v1, 0x7f0402d5
+    const v1, 0x7f0402fd
 
     const v2, 0x10101a5
 
@@ -520,9 +520,9 @@
 
     sput-object v0, Lcom/applovin/mediation/R$styleable;->GradientColorItem:[I
 
-    const v0, 0x7f04029d
+    const v0, 0x7f0402c5
 
-    const v1, 0x7f04029e
+    const v1, 0x7f0402c6
 
     const v2, 0x7f040113
 
@@ -534,7 +534,7 @@
 
     const v0, 0x7f04015e
 
-    const v1, 0x7f040441
+    const v1, 0x7f040465
 
     const v2, 0x7f0400d6
 
@@ -697,14 +697,14 @@
 
     :array_5
     .array-data 4
-        0x7f04025b
-        0x7f04025c
-        0x7f04025d
-        0x7f04025e
-        0x7f04025f
-        0x7f040260
-        0x7f040261
-        0x7f040262
+        0x7f040283
+        0x7f040284
+        0x7f040285
+        0x7f040286
+        0x7f040287
+        0x7f040288
+        0x7f040289
+        0x7f04028a
     .end array-data
 
     :array_6
@@ -714,11 +714,11 @@
         0x101053f
         0x101056f
         0x1010570
-        0x7f040259
-        0x7f040263
-        0x7f040264
-        0x7f040265
-        0x7f040581
+        0x7f040281
+        0x7f04028b
+        0x7f04028c
+        0x7f04028d
+        0x7f0405a5
     .end array-data
 
     :array_7

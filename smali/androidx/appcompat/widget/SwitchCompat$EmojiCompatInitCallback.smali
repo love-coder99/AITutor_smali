@@ -1,5 +1,5 @@
 .class Landroidx/appcompat/widget/SwitchCompat$EmojiCompatInitCallback;
-.super Lx3/j;
+.super LH1/h;
 .source "SourceFile"
 
 
@@ -56,6 +56,10 @@
 # virtual methods
 .method public onFailed(Ljava/lang/Throwable;)V
     .locals 0
+    .param p1    # Ljava/lang/Throwable;
+        .annotation build Landroidx/annotation/Nullable;
+        .end annotation
+    .end param
 
     .line 1
     iget-object p1, p0, Landroidx/appcompat/widget/SwitchCompat$EmojiCompatInitCallback;->mOuterWeakRef:Ljava/lang/ref/Reference;

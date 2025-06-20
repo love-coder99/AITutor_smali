@@ -114,11 +114,11 @@
     .line 47
     .line 48
     .line 49
-    const/high16 v0, 0x2000000
+    const/high16 p2, 0x2000000
 
     .line 50
     .line 51
-    invoke-virtual {p0, v0}, Landroid/view/View;->setScrollBarStyle(I)V
+    invoke-virtual {p0, p2}, Landroid/view/View;->setScrollBarStyle(I)V
 
     .line 52
     .line 53
@@ -128,51 +128,51 @@
     .line 55
     .line 56
     .line 57
-    move-result v0
+    move-result p2
 
     .line 58
-    if-eqz v0, :cond_0
+    if-eqz p2, :cond_0
 
     .line 59
     .line 60
-    sget-object v0, Lcom/applovin/impl/sj;->K5:Lcom/applovin/impl/sj;
+    sget-object p2, Lcom/applovin/impl/sj;->K5:Lcom/applovin/impl/sj;
 
     .line 61
     .line 62
-    invoke-virtual {p1, v0}, Lcom/applovin/impl/sdk/j;->a(Lcom/applovin/impl/sj;)Ljava/lang/Object;
+    invoke-virtual {p1, p2}, Lcom/applovin/impl/sdk/j;->a(Lcom/applovin/impl/sj;)Ljava/lang/Object;
 
     .line 63
     .line 64
     .line 65
-    move-result-object v0
+    move-result-object p2
 
     .line 66
-    check-cast v0, Ljava/lang/Boolean;
+    check-cast p2, Ljava/lang/Boolean;
 
     .line 67
     .line 68
-    invoke-virtual {v0}, Ljava/lang/Boolean;->booleanValue()Z
+    invoke-virtual {p2}, Ljava/lang/Boolean;->booleanValue()Z
 
     .line 69
     .line 70
     .line 71
-    move-result v0
+    move-result p2
 
     .line 72
-    if-eqz v0, :cond_0
+    if-eqz p2, :cond_0
 
     .line 73
     .line 74
-    new-instance v0, Lcom/applovin/impl/adview/d;
+    new-instance p2, Lcom/applovin/impl/adview/d;
 
     .line 75
     .line 76
-    invoke-direct {v0, p1}, Lcom/applovin/impl/adview/d;-><init>(Lcom/applovin/impl/sdk/j;)V
+    invoke-direct {p2, p1}, Lcom/applovin/impl/adview/d;-><init>(Lcom/applovin/impl/sdk/j;)V
 
     .line 77
     .line 78
     .line 79
-    invoke-virtual {v0}, Lcom/applovin/impl/adview/d;->a()Landroid/webkit/WebViewRenderProcessClient;
+    invoke-virtual {p2}, Lcom/applovin/impl/adview/d;->a()Landroid/webkit/WebViewRenderProcessClient;
 
     .line 80
     .line 81
@@ -180,7 +180,7 @@
     move-result-object p1
 
     .line 83
-    invoke-static {p0, p1}, Landroidx/core/view/r1;->q(Landroid/webkit/WebView;Landroid/webkit/WebViewRenderProcessClient;)V
+    invoke-static {p0, p1}, Lcom/applovin/exoplayer2/ui/k;->u(Lcom/applovin/impl/adview/b;Landroid/webkit/WebViewRenderProcessClient;)V
 
     .line 84
     .line 85
@@ -190,63 +190,66 @@
 
     .line 87
     .line 88
-    invoke-direct {p1, p2}, Lcom/applovin/impl/adview/r;-><init>(I)V
+    const/4 p2, 0x0
 
     .line 89
+    invoke-direct {p1, p2}, Lcom/applovin/impl/adview/r;-><init>(I)V
+
     .line 90
     .line 91
+    .line 92
     invoke-virtual {p0, p1}, Landroid/view/View;->setOnTouchListener(Landroid/view/View$OnTouchListener;)V
 
-    .line 92
     .line 93
     .line 94
+    .line 95
     new-instance p1, Lcom/applovin/impl/adview/s;
 
-    .line 95
     .line 96
+    .line 97
     invoke-direct {p1, p0}, Lcom/applovin/impl/adview/s;-><init>(Lcom/applovin/impl/adview/b;)V
 
-    .line 97
     .line 98
     .line 99
+    .line 100
     invoke-virtual {p0, p1}, Landroid/view/View;->setOnLongClickListener(Landroid/view/View$OnLongClickListener;)V
 
-    .line 100
     .line 101
     .line 102
+    .line 103
     return-void
 
-    .line 103
+    .line 104
     :cond_1
     new-instance p1, Ljava/lang/IllegalArgumentException;
 
-    .line 104
     .line 105
+    .line 106
     const-string p2, "No sdk specified."
 
-    .line 106
     .line 107
+    .line 108
     invoke-direct {p1, p2}, Ljava/lang/IllegalArgumentException;-><init>(Ljava/lang/String;)V
 
-    .line 108
     .line 109
     .line 110
+    .line 111
     throw p1
 .end method
 
 .method private a(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
     .locals 1
 
-    .line 101
+    .line 105
     invoke-static {p1}, Lcom/applovin/impl/sdk/utils/StringUtils;->isValidString(Ljava/lang/String;)Z
 
     move-result v0
 
     if-eqz v0, :cond_0
 
+    .line 106
     const-string v0, "{SOURCE}"
 
-    .line 102
     invoke-virtual {p1, v0, p2}, Ljava/lang/String;->replace(Ljava/lang/CharSequence;Ljava/lang/CharSequence;)Ljava/lang/String;
 
     move-result-object p1
@@ -288,20 +291,20 @@
     iget-object p1, p0, Lcom/applovin/impl/adview/b;->c:Lcom/applovin/impl/sdk/n;
 
     .line 4
-    invoke-static {v0, v2, p1, v1}, Landroidx/compose/foundation/text/modifiers/f;->A(Ljava/lang/String;Ljava/lang/String;Lcom/applovin/impl/sdk/n;Ljava/lang/String;)V
+    invoke-static {v0, v2, p1, v1}, Lcom/android/billingclient/api/a;->w(Ljava/lang/String;Ljava/lang/String;Lcom/applovin/impl/sdk/n;Ljava/lang/String;)V
 
     :cond_0
-    const-string v3, "text/html"
-
     const/4 v4, 0x0
 
+    .line 5
     const-string v5, ""
+
+    const-string v3, "text/html"
 
     move-object v0, p0
 
     move-object v1, p2
 
-    .line 5
     invoke-virtual/range {v0 .. v5}, Landroid/webkit/WebView;->loadDataWithBaseURL(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
 
     goto :goto_0
@@ -363,20 +366,20 @@
     iget-object p1, p0, Lcom/applovin/impl/adview/b;->c:Lcom/applovin/impl/sdk/n;
 
     .line 12
-    invoke-static {v0, v4, p1, v1}, Landroidx/compose/foundation/text/modifiers/f;->A(Ljava/lang/String;Ljava/lang/String;Lcom/applovin/impl/sdk/n;Ljava/lang/String;)V
+    invoke-static {v0, v4, p1, v1}, Lcom/android/billingclient/api/a;->w(Ljava/lang/String;Ljava/lang/String;Lcom/applovin/impl/sdk/n;Ljava/lang/String;)V
 
     :cond_3
-    const-string v5, "text/html"
-
     const/4 v6, 0x0
 
+    .line 13
     const-string v7, ""
+
+    const-string v5, "text/html"
 
     move-object v2, p0
 
     move-object v3, p2
 
-    .line 13
     invoke-virtual/range {v2 .. v7}, Landroid/webkit/WebView;->loadDataWithBaseURL(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
 
     goto :goto_0
@@ -394,7 +397,7 @@
     const-string p3, "Rendering webview for VAST ad with resourceURL : "
 
     .line 15
-    invoke-static {p3, p1, p2, v1}, Landroidx/compose/foundation/text/modifiers/f;->A(Ljava/lang/String;Ljava/lang/String;Lcom/applovin/impl/sdk/n;Ljava/lang/String;)V
+    invoke-static {p3, p1, p2, v1}, Lcom/android/billingclient/api/a;->w(Ljava/lang/String;Ljava/lang/String;Lcom/applovin/impl/sdk/n;Ljava/lang/String;)V
 
     .line 16
     :cond_5
@@ -450,15 +453,15 @@
 .method private b()V
     .locals 5
 
+    .line 2
     iget-object v0, p0, Lcom/applovin/impl/adview/b;->j:Ljava/lang/Object;
 
-    .line 2
     monitor-enter v0
 
+    .line 3
     :try_start_0
     iget-object v1, p0, Lcom/applovin/impl/adview/b;->i:Ljava/util/List;
 
-    .line 3
     invoke-interface {v1}, Ljava/util/List;->iterator()Ljava/util/Iterator;
 
     move-result-object v1
@@ -476,11 +479,11 @@
 
     check-cast v2, Ljava/lang/String;
 
+    .line 4
     const-string v3, "AdWebView"
 
     iget-object v4, p0, Lcom/applovin/impl/adview/b;->d:Lcom/applovin/impl/sdk/j;
 
-    .line 4
     invoke-static {p0, v2, v3, v4}, Lcom/applovin/impl/tr;->a(Landroid/webkit/WebView;Ljava/lang/String;Ljava/lang/String;Lcom/applovin/impl/sdk/j;)V
 
     goto :goto_0
@@ -490,10 +493,10 @@
 
     goto :goto_1
 
+    .line 5
     :cond_0
     iget-object v1, p0, Lcom/applovin/impl/adview/b;->i:Ljava/util/List;
 
-    .line 5
     invoke-interface {v1}, Ljava/util/List;->clear()V
 
     .line 6
@@ -510,22 +513,22 @@
     throw v1
 .end method
 
-.method public static synthetic b(Landroid/view/View;Landroid/view/MotionEvent;)Z
+.method public static synthetic b(Lcom/applovin/impl/adview/b;Landroid/view/View;)Z
     .locals 0
 
     .line 1
-    invoke-static {p0, p1}, Lcom/applovin/impl/adview/b;->a(Landroid/view/View;Landroid/view/MotionEvent;)Z
+    invoke-direct {p0, p1}, Lcom/applovin/impl/adview/b;->a(Landroid/view/View;)Z
 
     move-result p0
 
     return p0
 .end method
 
-.method public static synthetic c(Lcom/applovin/impl/adview/b;Landroid/view/View;)Z
+.method public static synthetic c(Landroid/view/View;Landroid/view/MotionEvent;)Z
     .locals 0
 
     .line 1
-    invoke-direct {p0, p1}, Lcom/applovin/impl/adview/b;->a(Landroid/view/View;)Z
+    invoke-static {p0, p1}, Lcom/applovin/impl/adview/b;->a(Landroid/view/View;Landroid/view/MotionEvent;)Z
 
     move-result p0
 
@@ -537,9 +540,9 @@
 .method public a(Lcom/applovin/impl/adview/c;)V
     .locals 2
 
+    .line 35
     iget-object v0, p0, Lcom/applovin/impl/adview/b;->d:Lcom/applovin/impl/sdk/j;
 
-    .line 35
     sget-object v1, Lcom/applovin/impl/sj;->t1:Lcom/applovin/impl/sj;
 
     invoke-virtual {v0, v1}, Lcom/applovin/impl/sdk/j;->a(Lcom/applovin/impl/sj;)Ljava/lang/Object;
@@ -554,9 +557,9 @@
 
     if-eqz v0, :cond_0
 
+    .line 36
     const-string v0, "about:blank"
 
-    .line 36
     invoke-virtual {p0, v0}, Landroid/webkit/WebView;->loadUrl(Ljava/lang/String;)V
 
     .line 37
@@ -601,15 +604,15 @@
 
     invoke-virtual {p0, v0}, Landroid/webkit/WebView;->setWebChromeClient(Landroid/webkit/WebChromeClient;)V
 
+    .line 42
     iget-object p1, p0, Lcom/applovin/impl/adview/b;->i:Ljava/util/List;
 
-    .line 42
     monitor-enter p1
 
+    .line 43
     :try_start_0
     iget-object v0, p0, Lcom/applovin/impl/adview/b;->i:Ljava/util/List;
 
-    .line 43
     invoke-interface {v0}, Ljava/util/List;->clear()V
 
     .line 44
@@ -637,6 +640,7 @@
 .method public a(Lcom/applovin/impl/sdk/ad/b;)V
     .locals 11
 
+    .line 47
     const-string v0, "Rendering WebView for iFrame VAST ad with resourceContents: "
 
     const-string v1, "Rendering WebView for HTML VAST ad with resourceContents: "
@@ -647,13 +651,14 @@
 
     if-nez v2, :cond_14
 
+    .line 48
     iput-object p1, p0, Lcom/applovin/impl/adview/b;->f:Lcom/applovin/impl/sdk/ad/b;
 
-    .line 47
+    .line 49
     :try_start_0
     invoke-virtual {p0, p1}, Lcom/applovin/impl/adview/AppLovinWebViewBase;->applySettings(Lcom/applovin/impl/sdk/ad/b;)V
 
-    .line 48
+    .line 50
     invoke-virtual {p1}, Lcom/applovin/impl/sdk/ad/AppLovinAdImpl;->getSize()Lcom/applovin/sdk/AppLovinAdSize;
 
     move-result-object v2
@@ -666,7 +671,7 @@
 
     const/4 v2, 0x0
 
-    .line 49
+    .line 51
     invoke-virtual {p0, v2}, Landroid/view/View;->setVisibility(I)V
 
     goto :goto_0
@@ -676,39 +681,39 @@
 
     goto/16 :goto_6
 
-    .line 50
+    .line 52
     :cond_0
     :goto_0
     instance-of v2, p1, Lcom/applovin/impl/sdk/ad/a;
 
     if-eqz v2, :cond_1
 
-    .line 51
+    .line 53
     move-object v0, p1
 
     check-cast v0, Lcom/applovin/impl/sdk/ad/a;
 
-    .line 52
+    .line 54
     invoke-virtual {v0}, Lcom/applovin/impl/sdk/ad/a;->l1()Ljava/lang/String;
 
     move-result-object v6
 
-    .line 53
+    .line 55
     invoke-virtual {p1}, Lcom/applovin/impl/sdk/ad/b;->h()Ljava/lang/String;
 
     move-result-object v5
 
     const-string v7, "text/html"
 
-    const/4 v8, 0x0
-
     const-string v9, ""
+
+    const/4 v8, 0x0
 
     move-object v4, p0
 
     invoke-virtual/range {v4 .. v9}, Landroid/webkit/WebView;->loadDataWithBaseURL(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 54
+    .line 56
     invoke-static {}, Lcom/applovin/impl/sdk/n;->a()Z
 
     move-result v0
@@ -723,37 +728,37 @@
 
     goto/16 :goto_8
 
-    .line 55
+    .line 57
     :cond_1
     instance-of v2, p1, Lcom/applovin/impl/aq;
 
     if-eqz v2, :cond_15
 
-    .line 56
+    .line 58
     move-object v9, p1
 
     check-cast v9, Lcom/applovin/impl/aq;
 
-    .line 57
+    .line 59
     invoke-virtual {v9}, Lcom/applovin/impl/aq;->l1()Lcom/applovin/impl/dq;
 
     move-result-object v2
 
     if-eqz v2, :cond_12
 
-    .line 58
+    .line 60
     invoke-virtual {v2}, Lcom/applovin/impl/dq;->e()Lcom/applovin/impl/iq;
 
     move-result-object v2
 
-    .line 59
+    .line 61
     invoke-virtual {v2}, Lcom/applovin/impl/iq;->c()Landroid/net/Uri;
 
     move-result-object v4
 
     if-eqz v4, :cond_2
 
-    .line 60
+    .line 62
     invoke-virtual {v4}, Landroid/net/Uri;->toString()Ljava/lang/String;
 
     move-result-object v4
@@ -763,23 +768,24 @@
 
     goto :goto_2
 
+    .line 63
     :cond_2
     const-string v4, ""
 
     goto :goto_1
 
-    .line 61
+    .line 64
     :goto_2
     invoke-virtual {v2}, Lcom/applovin/impl/iq;->b()Ljava/lang/String;
 
     move-result-object v4
 
-    .line 62
+    .line 65
     invoke-virtual {v9}, Lcom/applovin/impl/aq;->n1()Ljava/lang/String;
 
     move-result-object v7
 
-    .line 63
+    .line 66
     invoke-static {v5}, Lcom/applovin/impl/sdk/utils/StringUtils;->isValidString(Ljava/lang/String;)Z
 
     move-result v6
@@ -794,7 +800,7 @@
 
     goto :goto_3
 
-    .line 64
+    .line 67
     :cond_3
     invoke-static {}, Lcom/applovin/impl/sdk/n;->a()Z
 
@@ -810,7 +816,7 @@
 
     goto/16 :goto_8
 
-    .line 65
+    .line 68
     :cond_4
     :goto_3
     invoke-virtual {v2}, Lcom/applovin/impl/iq;->d()Lcom/applovin/impl/iq$a;
@@ -821,7 +827,7 @@
 
     if-ne v6, v8, :cond_7
 
-    .line 66
+    .line 69
     invoke-static {}, Lcom/applovin/impl/sdk/n;->a()Z
 
     move-result v0
@@ -834,10 +840,10 @@
 
     invoke-virtual {v0, v3, v1}, Lcom/applovin/impl/sdk/n;->a(Ljava/lang/String;Ljava/lang/String;)V
 
+    .line 70
     :cond_5
     iget-object v0, p0, Lcom/applovin/impl/adview/b;->d:Lcom/applovin/impl/sdk/j;
 
-    .line 67
     sget-object v1, Lcom/applovin/impl/sj;->D4:Lcom/applovin/impl/sj;
 
     invoke-virtual {v0, v1}, Lcom/applovin/impl/sdk/j;->a(Lcom/applovin/impl/sj;)Ljava/lang/Object;
@@ -846,12 +852,12 @@
 
     check-cast v0, Ljava/lang/String;
 
-    .line 68
+    .line 71
     invoke-direct {p0, v0, v5}, Lcom/applovin/impl/adview/b;->a(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v0
 
-    .line 69
+    .line 72
     invoke-virtual {v9}, Lcom/applovin/impl/aq;->D1()Z
 
     move-result v1
@@ -870,9 +876,9 @@
 
     if-eqz v1, :cond_6
 
+    .line 73
     iget-object v1, p0, Lcom/applovin/impl/adview/b;->d:Lcom/applovin/impl/sdk/j;
 
-    .line 70
     invoke-virtual {v1}, Lcom/applovin/impl/sdk/j;->V()Lcom/applovin/impl/pg;
 
     move-result-object v1
@@ -884,16 +890,16 @@
     :cond_6
     move-object v3, v0
 
-    .line 71
+    .line 74
     invoke-virtual {p1}, Lcom/applovin/impl/sdk/ad/b;->h()Ljava/lang/String;
 
     move-result-object v2
 
     const-string v4, "text/html"
 
-    const/4 v5, 0x0
-
     const-string v6, ""
+
+    const/4 v5, 0x0
 
     move-object v1, p0
 
@@ -901,7 +907,7 @@
 
     goto/16 :goto_8
 
-    .line 72
+    .line 75
     :cond_7
     invoke-virtual {v2}, Lcom/applovin/impl/iq;->d()Lcom/applovin/impl/iq$a;
 
@@ -911,19 +917,19 @@
 
     if-ne v6, v8, :cond_c
 
-    .line 73
+    .line 76
     invoke-static {v4}, Lcom/applovin/impl/sdk/utils/StringUtils;->isValidString(Ljava/lang/String;)Z
 
     move-result v0
 
     if-eqz v0, :cond_a
 
-    .line 74
+    .line 77
     invoke-direct {p0, v7, v4}, Lcom/applovin/impl/adview/b;->a(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v0
 
-    .line 75
+    .line 78
     invoke-static {v0}, Lcom/applovin/impl/sdk/utils/StringUtils;->isValidString(Ljava/lang/String;)Z
 
     move-result v2
@@ -937,7 +943,7 @@
     :cond_8
     move-object v7, v4
 
-    .line 76
+    .line 79
     :goto_4
     invoke-static {}, Lcom/applovin/impl/sdk/n;->a()Z
 
@@ -959,7 +965,7 @@
 
     invoke-virtual {v0, v3, v1}, Lcom/applovin/impl/sdk/n;->a(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 77
+    .line 80
     :cond_9
     invoke-virtual {p1}, Lcom/applovin/impl/sdk/ad/b;->h()Ljava/lang/String;
 
@@ -967,9 +973,9 @@
 
     const-string v8, "text/html"
 
-    const/4 v9, 0x0
-
     const-string v10, ""
+
+    const/4 v9, 0x0
 
     move-object v5, p0
 
@@ -977,7 +983,7 @@
 
     goto/16 :goto_8
 
-    .line 78
+    .line 81
     :cond_a
     invoke-static {v5}, Lcom/applovin/impl/sdk/utils/StringUtils;->isValidString(Ljava/lang/String;)Z
 
@@ -985,7 +991,7 @@
 
     if-eqz v0, :cond_15
 
-    .line 79
+    .line 82
     invoke-static {}, Lcom/applovin/impl/sdk/n;->a()Z
 
     move-result v0
@@ -998,7 +1004,7 @@
 
     invoke-virtual {v0, v3, v1}, Lcom/applovin/impl/sdk/n;->a(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 80
+    .line 83
     :cond_b
     invoke-virtual {p1}, Lcom/applovin/impl/sdk/ad/b;->h()Ljava/lang/String;
 
@@ -1012,7 +1018,7 @@
 
     goto/16 :goto_8
 
-    .line 81
+    .line 84
     :cond_c
     invoke-virtual {v2}, Lcom/applovin/impl/iq;->d()Lcom/applovin/impl/iq$a;
 
@@ -1022,14 +1028,14 @@
 
     if-ne v1, v2, :cond_11
 
-    .line 82
+    .line 85
     invoke-static {v5}, Lcom/applovin/impl/sdk/utils/StringUtils;->isValidString(Ljava/lang/String;)Z
 
     move-result v1
 
     if-eqz v1, :cond_e
 
-    .line 83
+    .line 86
     invoke-static {}, Lcom/applovin/impl/sdk/n;->a()Z
 
     move-result v0
@@ -1042,7 +1048,7 @@
 
     invoke-virtual {v0, v3, v1}, Lcom/applovin/impl/sdk/n;->a(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 84
+    .line 87
     :cond_d
     invoke-virtual {p1}, Lcom/applovin/impl/sdk/ad/b;->h()Ljava/lang/String;
 
@@ -1056,7 +1062,7 @@
 
     goto/16 :goto_8
 
-    .line 85
+    .line 88
     :cond_e
     invoke-static {v4}, Lcom/applovin/impl/sdk/utils/StringUtils;->isValidString(Ljava/lang/String;)Z
 
@@ -1064,12 +1070,12 @@
 
     if-eqz v1, :cond_15
 
-    .line 86
+    .line 89
     invoke-direct {p0, v7, v4}, Lcom/applovin/impl/adview/b;->a(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v1
 
-    .line 87
+    .line 90
     invoke-static {v1}, Lcom/applovin/impl/sdk/utils/StringUtils;->isValidString(Ljava/lang/String;)Z
 
     move-result v2
@@ -1083,7 +1089,7 @@
     :cond_f
     move-object v7, v4
 
-    .line 88
+    .line 91
     :goto_5
     invoke-static {}, Lcom/applovin/impl/sdk/n;->a()Z
 
@@ -1105,7 +1111,7 @@
 
     invoke-virtual {v1, v3, v0}, Lcom/applovin/impl/sdk/n;->a(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 89
+    .line 92
     :cond_10
     invoke-virtual {p1}, Lcom/applovin/impl/sdk/ad/b;->h()Ljava/lang/String;
 
@@ -1113,9 +1119,9 @@
 
     const-string v8, "text/html"
 
-    const/4 v9, 0x0
-
     const-string v10, ""
+
+    const/4 v9, 0x0
 
     move-object v5, p0
 
@@ -1123,7 +1129,7 @@
 
     goto :goto_8
 
-    .line 90
+    .line 93
     :cond_11
     invoke-static {}, Lcom/applovin/impl/sdk/n;->a()Z
 
@@ -1139,7 +1145,7 @@
 
     goto :goto_8
 
-    .line 91
+    .line 94
     :cond_12
     invoke-static {}, Lcom/applovin/impl/sdk/n;->a()Z
 
@@ -1160,7 +1166,7 @@
     :goto_6
     if-eqz p1, :cond_13
 
-    .line 92
+    .line 95
     invoke-virtual {p1}, Lcom/applovin/impl/sdk/ad/AppLovinAdImpl;->getAdIdNumber()J
 
     move-result-wide v1
@@ -1174,7 +1180,7 @@
     :cond_13
     const-string p1, "null"
 
-    .line 93
+    .line 96
     :goto_7
     new-instance v1, Ljava/lang/RuntimeException;
 
@@ -1200,10 +1206,10 @@
 
     throw v1
 
+    .line 97
     :cond_14
     const-string p1, "Ad can not be loaded in a destroyed webview"
 
-    .line 94
     invoke-static {v3, p1}, Lcom/applovin/impl/sdk/n;->h(Ljava/lang/String;Ljava/lang/String;)V
 
     :cond_15
@@ -1214,9 +1220,9 @@
 .method public a(Ljava/lang/String;)V
     .locals 2
 
+    .line 98
     iget-object v0, p0, Lcom/applovin/impl/adview/b;->d:Lcom/applovin/impl/sdk/j;
 
-    .line 95
     sget-object v1, Lcom/applovin/impl/sj;->e6:Lcom/applovin/impl/sj;
 
     invoke-virtual {v0, v1}, Lcom/applovin/impl/sdk/j;->a(Lcom/applovin/impl/sj;)Ljava/lang/Object;
@@ -1231,32 +1237,33 @@
 
     if-eqz v0, :cond_1
 
+    .line 99
     iget-boolean v0, p0, Lcom/applovin/impl/adview/b;->h:Z
 
     if-eqz v0, :cond_0
 
+    .line 100
     iget-object v0, p0, Lcom/applovin/impl/adview/b;->d:Lcom/applovin/impl/sdk/j;
 
     const-string v1, "AdWebView"
 
-    .line 96
     invoke-static {p0, p1, v1, v0}, Lcom/applovin/impl/tr;->a(Landroid/webkit/WebView;Ljava/lang/String;Ljava/lang/String;Lcom/applovin/impl/sdk/j;)V
 
     goto :goto_0
 
+    .line 101
     :cond_0
     iget-object v0, p0, Lcom/applovin/impl/adview/b;->i:Ljava/util/List;
 
-    .line 97
     monitor-enter v0
 
+    .line 102
     :try_start_0
     iget-object v1, p0, Lcom/applovin/impl/adview/b;->i:Ljava/util/List;
 
-    .line 98
     invoke-interface {v1, p1}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
-    .line 99
+    .line 103
     monitor-exit v0
 
     goto :goto_0
@@ -1270,12 +1277,12 @@
 
     throw p1
 
+    .line 104
     :cond_1
     iget-object v0, p0, Lcom/applovin/impl/adview/b;->d:Lcom/applovin/impl/sdk/j;
 
     const-string v1, "AdWebView"
 
-    .line 100
     invoke-static {p0, p1, v1, v0}, Lcom/applovin/impl/tr;->a(Landroid/webkit/WebView;Ljava/lang/String;Ljava/lang/String;Lcom/applovin/impl/sdk/j;)V
 
     :goto_0
@@ -1317,8 +1324,11 @@
 .method public getCurrentAd()Lcom/applovin/impl/sdk/ad/b;
     .locals 1
 
+    .line 1
     iget-object v0, p0, Lcom/applovin/impl/adview/b;->f:Lcom/applovin/impl/sdk/ad/b;
 
+    .line 2
+    .line 3
     return-object v0
 .end method
 

@@ -1,12 +1,12 @@
 .class final Landroidx/compose/foundation/layout/FillElement;
-.super Landroidx/compose/ui/node/w0;
+.super Landroidx/compose/ui/node/V;
 .source "SourceFile"
 
 
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
-        "Landroidx/compose/ui/node/w0;"
+        "Landroidx/compose/ui/node/V;"
     }
 .end annotation
 
@@ -16,8 +16,8 @@
     }
     d2 = {
         "Landroidx/compose/foundation/layout/FillElement;",
-        "Landroidx/compose/ui/node/w0;",
-        "Landroidx/compose/foundation/layout/a0;",
+        "Landroidx/compose/ui/node/V;",
+        "Landroidx/compose/foundation/layout/y;",
         "foundation-layout_release"
     }
     k = 0x1
@@ -26,13 +26,14 @@
         0x8,
         0x0
     }
+    xi = 0x30
 .end annotation
 
 
 # instance fields
-.field public final c:Landroidx/compose/foundation/layout/Direction;
+.field public final a:Landroidx/compose/foundation/layout/Direction;
 
-.field public final d:F
+.field public final b:F
 
 
 # direct methods
@@ -45,11 +46,11 @@
     .line 2
     .line 3
     .line 4
-    iput-object p1, p0, Landroidx/compose/foundation/layout/FillElement;->c:Landroidx/compose/foundation/layout/Direction;
+    iput-object p1, p0, Landroidx/compose/foundation/layout/FillElement;->a:Landroidx/compose/foundation/layout/Direction;
 
     .line 5
     .line 6
-    iput p2, p0, Landroidx/compose/foundation/layout/FillElement;->d:F
+    iput p2, p0, Landroidx/compose/foundation/layout/FillElement;->b:F
 
     .line 7
     .line 8
@@ -92,11 +93,11 @@
 
     .line 12
     .line 13
-    iget-object v1, p1, Landroidx/compose/foundation/layout/FillElement;->c:Landroidx/compose/foundation/layout/Direction;
+    iget-object v1, p1, Landroidx/compose/foundation/layout/FillElement;->a:Landroidx/compose/foundation/layout/Direction;
 
     .line 14
     .line 15
-    iget-object v3, p0, Landroidx/compose/foundation/layout/FillElement;->c:Landroidx/compose/foundation/layout/Direction;
+    iget-object v3, p0, Landroidx/compose/foundation/layout/FillElement;->a:Landroidx/compose/foundation/layout/Direction;
 
     .line 16
     .line 17
@@ -108,11 +109,11 @@
 
     .line 20
     :cond_2
-    iget v1, p0, Landroidx/compose/foundation/layout/FillElement;->d:F
+    iget v1, p0, Landroidx/compose/foundation/layout/FillElement;->b:F
 
     .line 21
     .line 22
-    iget p1, p1, Landroidx/compose/foundation/layout/FillElement;->d:F
+    iget p1, p1, Landroidx/compose/foundation/layout/FillElement;->b:F
 
     .line 23
     .line 24
@@ -135,7 +136,7 @@
     .locals 2
 
     .line 1
-    iget-object v0, p0, Landroidx/compose/foundation/layout/FillElement;->c:Landroidx/compose/foundation/layout/Direction;
+    iget-object v0, p0, Landroidx/compose/foundation/layout/FillElement;->a:Landroidx/compose/foundation/layout/Direction;
 
     .line 2
     .line 3
@@ -151,7 +152,7 @@
 
     .line 8
     .line 9
-    iget v1, p0, Landroidx/compose/foundation/layout/FillElement;->d:F
+    iget v1, p0, Landroidx/compose/foundation/layout/FillElement;->b:F
 
     .line 10
     .line 11
@@ -173,7 +174,7 @@
     .locals 2
 
     .line 1
-    new-instance v0, Landroidx/compose/foundation/layout/a0;
+    new-instance v0, Landroidx/compose/foundation/layout/y;
 
     .line 2
     .line 3
@@ -182,19 +183,19 @@
     .line 4
     .line 5
     .line 6
-    iget-object v1, p0, Landroidx/compose/foundation/layout/FillElement;->c:Landroidx/compose/foundation/layout/Direction;
+    iget-object v1, p0, Landroidx/compose/foundation/layout/FillElement;->a:Landroidx/compose/foundation/layout/Direction;
 
     .line 7
     .line 8
-    iput-object v1, v0, Landroidx/compose/foundation/layout/a0;->p:Landroidx/compose/foundation/layout/Direction;
+    iput-object v1, v0, Landroidx/compose/foundation/layout/y;->p:Landroidx/compose/foundation/layout/Direction;
 
     .line 9
     .line 10
-    iget v1, p0, Landroidx/compose/foundation/layout/FillElement;->d:F
+    iget v1, p0, Landroidx/compose/foundation/layout/FillElement;->b:F
 
     .line 11
     .line 12
-    iput v1, v0, Landroidx/compose/foundation/layout/a0;->q:F
+    iput v1, v0, Landroidx/compose/foundation/layout/y;->q:F
 
     .line 13
     .line 14
@@ -205,23 +206,23 @@
     .locals 1
 
     .line 1
-    check-cast p1, Landroidx/compose/foundation/layout/a0;
+    check-cast p1, Landroidx/compose/foundation/layout/y;
 
     .line 2
     .line 3
-    iget-object v0, p0, Landroidx/compose/foundation/layout/FillElement;->c:Landroidx/compose/foundation/layout/Direction;
+    iget-object v0, p0, Landroidx/compose/foundation/layout/FillElement;->a:Landroidx/compose/foundation/layout/Direction;
 
     .line 4
     .line 5
-    iput-object v0, p1, Landroidx/compose/foundation/layout/a0;->p:Landroidx/compose/foundation/layout/Direction;
+    iput-object v0, p1, Landroidx/compose/foundation/layout/y;->p:Landroidx/compose/foundation/layout/Direction;
 
     .line 6
     .line 7
-    iget v0, p0, Landroidx/compose/foundation/layout/FillElement;->d:F
+    iget v0, p0, Landroidx/compose/foundation/layout/FillElement;->b:F
 
     .line 8
     .line 9
-    iput v0, p1, Landroidx/compose/foundation/layout/a0;->q:F
+    iput v0, p1, Landroidx/compose/foundation/layout/y;->q:F
 
     .line 10
     .line 11

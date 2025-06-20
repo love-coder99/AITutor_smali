@@ -3,14 +3,14 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lzh/c;
+.implements Lka/c;
 
 
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "Lkotlin/jvm/internal/Lambda;",
-        "Lzh/c;"
+        "Lka/c;"
     }
 .end annotation
 
@@ -21,7 +21,7 @@
     d2 = {
         "",
         "throwable",
-        "Lqh/r;",
+        "LX9/j;",
         "invoke",
         "(Ljava/lang/Throwable;)V",
         "<anonymous>"
@@ -36,14 +36,14 @@
 
 
 # instance fields
-.field final synthetic this$0:Landroidx/compose/runtime/z1;
+.field final synthetic this$0:Landroidx/compose/runtime/m0;
 
 
 # direct methods
-.method public constructor <init>(Landroidx/compose/runtime/z1;)V
+.method public constructor <init>(Landroidx/compose/runtime/m0;)V
     .locals 0
 
-    iput-object p1, p0, Landroidx/compose/runtime/Recomposer$effectJob$1$1;->this$0:Landroidx/compose/runtime/z1;
+    iput-object p1, p0, Landroidx/compose/runtime/Recomposer$effectJob$1$1;->this$0:Landroidx/compose/runtime/m0;
 
     const/4 p1, 0x1
 
@@ -57,12 +57,12 @@
 .method public bridge synthetic invoke(Ljava/lang/Object;)Ljava/lang/Object;
     .locals 0
 
-    .line 14
+    .line 1
     check-cast p1, Ljava/lang/Throwable;
 
     invoke-virtual {p0, p1}, Landroidx/compose/runtime/Recomposer$effectJob$1$1;->invoke(Ljava/lang/Throwable;)V
 
-    sget-object p1, Lqh/r;->a:Lqh/r;
+    sget-object p1, LX9/j;->a:LX9/j;
 
     return-object p1
 .end method
@@ -70,51 +70,56 @@
 .method public final invoke(Ljava/lang/Throwable;)V
     .locals 6
 
+    .line 2
     const-string v0, "Recomposer effect job completed"
 
-    .line 1
+    .line 3
     new-instance v1, Ljava/util/concurrent/CancellationException;
 
     invoke-direct {v1, v0}, Ljava/util/concurrent/CancellationException;-><init>(Ljava/lang/String;)V
 
     invoke-virtual {v1, p1}, Ljava/lang/Throwable;->initCause(Ljava/lang/Throwable;)Ljava/lang/Throwable;
 
-    iget-object v0, p0, Landroidx/compose/runtime/Recomposer$effectJob$1$1;->this$0:Landroidx/compose/runtime/z1;
+    .line 4
+    iget-object v0, p0, Landroidx/compose/runtime/Recomposer$effectJob$1$1;->this$0:Landroidx/compose/runtime/m0;
 
-    .line 2
-    iget-object v2, v0, Landroidx/compose/runtime/z1;->b:Ljava/lang/Object;
+    .line 5
+    iget-object v2, v0, Landroidx/compose/runtime/m0;->b:Ljava/lang/Object;
 
-    .line 3
+    .line 6
     monitor-enter v2
 
-    .line 4
+    .line 7
     :try_start_0
-    iget-object v3, v0, Landroidx/compose/runtime/z1;->c:Lkotlinx/coroutines/z0;
+    iget-object v3, v0, Landroidx/compose/runtime/m0;->c:Lkotlinx/coroutines/a0;
 
     if-eqz v3, :cond_0
 
-    .line 5
-    iget-object v4, v0, Landroidx/compose/runtime/z1;->r:Lkotlinx/coroutines/flow/v0;
+    .line 8
+    iget-object v4, v0, Landroidx/compose/runtime/m0;->r:Lkotlinx/coroutines/flow/T;
 
+    .line 9
     sget-object v5, Landroidx/compose/runtime/Recomposer$State;->ShuttingDown:Landroidx/compose/runtime/Recomposer$State;
 
-    .line 6
-    invoke-virtual {v4, v5}, Lkotlinx/coroutines/flow/v0;->l(Ljava/lang/Object;)V
+    invoke-virtual {v4, v5}, Lkotlinx/coroutines/flow/T;->l(Ljava/lang/Object;)V
 
-    .line 7
-    invoke-interface {v3, v1}, Lkotlinx/coroutines/z0;->a(Ljava/util/concurrent/CancellationException;)V
+    .line 10
+    sget-object v4, Landroidx/compose/runtime/m0;->v:Lkotlinx/coroutines/flow/T;
+
+    .line 11
+    invoke-interface {v3, v1}, Lkotlinx/coroutines/a0;->b(Ljava/util/concurrent/CancellationException;)V
 
     const/4 v1, 0x0
 
-    .line 8
-    iput-object v1, v0, Landroidx/compose/runtime/z1;->o:Lkotlinx/coroutines/g;
+    .line 12
+    iput-object v1, v0, Landroidx/compose/runtime/m0;->o:Lkotlinx/coroutines/g;
 
-    .line 9
+    .line 13
     new-instance v1, Landroidx/compose/runtime/Recomposer$effectJob$1$1$1$1;
 
-    invoke-direct {v1, v0, p1}, Landroidx/compose/runtime/Recomposer$effectJob$1$1$1$1;-><init>(Landroidx/compose/runtime/z1;Ljava/lang/Throwable;)V
+    invoke-direct {v1, v0, p1}, Landroidx/compose/runtime/Recomposer$effectJob$1$1$1$1;-><init>(Landroidx/compose/runtime/m0;Ljava/lang/Throwable;)V
 
-    invoke-interface {v3, v1}, Lkotlinx/coroutines/z0;->y(Lzh/c;)Lkotlinx/coroutines/j0;
+    invoke-interface {v3, v1}, Lkotlinx/coroutines/a0;->v(Lka/c;)Lkotlinx/coroutines/H;
 
     goto :goto_0
 
@@ -123,21 +128,21 @@
 
     goto :goto_1
 
-    .line 10
+    .line 14
     :cond_0
-    iput-object v1, v0, Landroidx/compose/runtime/z1;->d:Ljava/lang/Throwable;
+    iput-object v1, v0, Landroidx/compose/runtime/m0;->d:Ljava/lang/Throwable;
 
-    .line 11
-    iget-object p1, v0, Landroidx/compose/runtime/z1;->r:Lkotlinx/coroutines/flow/v0;
+    .line 15
+    iget-object p1, v0, Landroidx/compose/runtime/m0;->r:Lkotlinx/coroutines/flow/T;
 
+    .line 16
     sget-object v0, Landroidx/compose/runtime/Recomposer$State;->ShutDown:Landroidx/compose/runtime/Recomposer$State;
 
-    .line 12
-    invoke-virtual {p1, v0}, Lkotlinx/coroutines/flow/v0;->l(Ljava/lang/Object;)V
+    invoke-virtual {p1, v0}, Lkotlinx/coroutines/flow/T;->l(Ljava/lang/Object;)V
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    .line 13
+    .line 17
     :goto_0
     monitor-exit v2
 

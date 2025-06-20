@@ -1,11 +1,51 @@
-.class public interface abstract Landroidx/compose/ui/graphics/e0;
+.class public final Landroidx/compose/ui/graphics/e0;
 .super Ljava/lang/Object;
 .source "SourceFile"
 
 
-# virtual methods
-.method public abstract a(Landroidx/compose/ui/graphics/layer/b;)V
+# static fields
+.field public static final a:Landroidx/compose/ui/graphics/e0;
+
+
+# direct methods
+.method static constructor <clinit>()V
+    .locals 1
+
+    .line 1
+    new-instance v0, Landroidx/compose/ui/graphics/e0;
+
+    .line 2
+    .line 3
+    invoke-direct {v0}, Ljava/lang/Object;-><init>()V
+
+    .line 4
+    .line 5
+    .line 6
+    sput-object v0, Landroidx/compose/ui/graphics/e0;->a:Landroidx/compose/ui/graphics/e0;
+
+    .line 7
+    .line 8
+    return-void
 .end method
 
-.method public abstract b()Landroidx/compose/ui/graphics/layer/b;
+
+# virtual methods
+.method public final a(Landroid/graphics/Paint;I)V
+    .locals 0
+
+    .line 1
+    invoke-static {p2}, Landroidx/compose/ui/graphics/G;->B(I)Landroid/graphics/BlendMode;
+
+    .line 2
+    .line 3
+    .line 4
+    move-result-object p2
+
+    .line 5
+    invoke-static {p1, p2}, Landroidx/compose/ui/graphics/a;->i(Landroid/graphics/Paint;Landroid/graphics/BlendMode;)V
+
+    .line 6
+    .line 7
+    .line 8
+    return-void
 .end method

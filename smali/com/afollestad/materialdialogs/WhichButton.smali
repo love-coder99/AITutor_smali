@@ -25,7 +25,7 @@
         "getIndex",
         "()I",
         "Companion",
-        "r5/d",
+        "K2/d",
         "POSITIVE",
         "NEGATIVE",
         "NEUTRAL",
@@ -41,7 +41,7 @@
 
 
 # static fields
-.field public static final Companion:Lr5/d;
+.field public static final Companion:LK2/d;
 
 .field public static final enum NEGATIVE:Lcom/afollestad/materialdialogs/WhichButton;
 
@@ -58,93 +58,93 @@
 
 # direct methods
 .method static constructor <clinit>()V
-    .locals 4
+    .locals 7
 
     .line 1
-    const/4 v0, 0x3
+    new-instance v0, Lcom/afollestad/materialdialogs/WhichButton;
 
     .line 2
-    new-array v0, v0, [Lcom/afollestad/materialdialogs/WhichButton;
-
     .line 3
-    .line 4
-    new-instance v1, Lcom/afollestad/materialdialogs/WhichButton;
+    const-string v1, "POSITIVE"
 
+    .line 4
     .line 5
+    const/4 v2, 0x0
+
     .line 6
-    const-string v2, "POSITIVE"
+    invoke-direct {v0, v1, v2, v2}, Lcom/afollestad/materialdialogs/WhichButton;-><init>(Ljava/lang/String;II)V
 
     .line 7
     .line 8
-    const/4 v3, 0x0
-
     .line 9
-    invoke-direct {v1, v2, v3, v3}, Lcom/afollestad/materialdialogs/WhichButton;-><init>(Ljava/lang/String;II)V
+    sput-object v0, Lcom/afollestad/materialdialogs/WhichButton;->POSITIVE:Lcom/afollestad/materialdialogs/WhichButton;
 
     .line 10
     .line 11
-    .line 12
-    sput-object v1, Lcom/afollestad/materialdialogs/WhichButton;->POSITIVE:Lcom/afollestad/materialdialogs/WhichButton;
-
-    .line 13
-    .line 14
-    aput-object v1, v0, v3
-
-    .line 15
-    .line 16
     new-instance v1, Lcom/afollestad/materialdialogs/WhichButton;
+
+    .line 12
+    .line 13
+    const-string v3, "NEGATIVE"
+
+    .line 14
+    .line 15
+    const/4 v4, 0x1
+
+    .line 16
+    invoke-direct {v1, v3, v4, v4}, Lcom/afollestad/materialdialogs/WhichButton;-><init>(Ljava/lang/String;II)V
 
     .line 17
     .line 18
-    const-string v2, "NEGATIVE"
-
     .line 19
-    .line 20
-    const/4 v3, 0x1
+    sput-object v1, Lcom/afollestad/materialdialogs/WhichButton;->NEGATIVE:Lcom/afollestad/materialdialogs/WhichButton;
 
+    .line 20
     .line 21
-    invoke-direct {v1, v2, v3, v3}, Lcom/afollestad/materialdialogs/WhichButton;-><init>(Ljava/lang/String;II)V
+    new-instance v3, Lcom/afollestad/materialdialogs/WhichButton;
 
     .line 22
     .line 23
-    .line 24
-    sput-object v1, Lcom/afollestad/materialdialogs/WhichButton;->NEGATIVE:Lcom/afollestad/materialdialogs/WhichButton;
+    const-string v5, "NEUTRAL"
 
+    .line 24
     .line 25
+    const/4 v6, 0x2
+
     .line 26
-    aput-object v1, v0, v3
+    invoke-direct {v3, v5, v6, v6}, Lcom/afollestad/materialdialogs/WhichButton;-><init>(Ljava/lang/String;II)V
 
     .line 27
     .line 28
-    new-instance v1, Lcom/afollestad/materialdialogs/WhichButton;
-
     .line 29
-    .line 30
-    const-string v2, "NEUTRAL"
+    sput-object v3, Lcom/afollestad/materialdialogs/WhichButton;->NEUTRAL:Lcom/afollestad/materialdialogs/WhichButton;
 
+    .line 30
     .line 31
+    const/4 v5, 0x3
+
     .line 32
-    const/4 v3, 0x2
+    new-array v5, v5, [Lcom/afollestad/materialdialogs/WhichButton;
 
     .line 33
-    invoke-direct {v1, v2, v3, v3}, Lcom/afollestad/materialdialogs/WhichButton;-><init>(Ljava/lang/String;II)V
-
     .line 34
+    aput-object v0, v5, v2
+
     .line 35
     .line 36
-    sput-object v1, Lcom/afollestad/materialdialogs/WhichButton;->NEUTRAL:Lcom/afollestad/materialdialogs/WhichButton;
+    aput-object v1, v5, v4
 
     .line 37
     .line 38
-    aput-object v1, v0, v3
+    aput-object v3, v5, v6
 
     .line 39
     .line 40
-    sput-object v0, Lcom/afollestad/materialdialogs/WhichButton;->b:[Lcom/afollestad/materialdialogs/WhichButton;
+    sput-object v5, Lcom/afollestad/materialdialogs/WhichButton;->b:[Lcom/afollestad/materialdialogs/WhichButton;
 
     .line 41
     .line 42
-    new-instance v0, Lr5/d;
+    new-instance v0, LK2/d;
 
     .line 43
     .line 44
@@ -153,7 +153,7 @@
     .line 45
     .line 46
     .line 47
-    sput-object v0, Lcom/afollestad/materialdialogs/WhichButton;->Companion:Lr5/d;
+    sput-object v0, Lcom/afollestad/materialdialogs/WhichButton;->Companion:LK2/d;
 
     .line 48
     .line 49
@@ -209,7 +209,10 @@
 .method public final getIndex()I
     .locals 1
 
+    .line 1
     iget v0, p0, Lcom/afollestad/materialdialogs/WhichButton;->index:I
 
+    .line 2
+    .line 3
     return v0
 .end method

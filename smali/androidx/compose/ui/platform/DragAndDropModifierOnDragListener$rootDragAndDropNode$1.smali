@@ -3,14 +3,14 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lzh/c;
+.implements Lka/c;
 
 
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "Lkotlin/jvm/internal/Lambda;",
-        "Lzh/c;"
+        "Lka/c;"
     }
 .end annotation
 
@@ -21,9 +21,9 @@
     d2 = {
         "Landroidx/compose/ui/draganddrop/b;",
         "it",
-        "Landroidx/compose/ui/draganddrop/g;",
+        "Landroidx/compose/ui/draganddrop/f;",
         "invoke",
-        "(Landroidx/compose/ui/draganddrop/b;)Landroidx/compose/ui/draganddrop/g;",
+        "(Landroidx/compose/ui/draganddrop/b;)Landroidx/compose/ui/draganddrop/f;",
         "<anonymous>"
     }
     k = 0x3
@@ -64,7 +64,7 @@
 
 
 # virtual methods
-.method public final invoke(Landroidx/compose/ui/draganddrop/b;)Landroidx/compose/ui/draganddrop/g;
+.method public final invoke(Landroidx/compose/ui/draganddrop/b;)Landroidx/compose/ui/draganddrop/f;
     .locals 0
 
     .line 1
@@ -79,7 +79,7 @@
     .line 2
     check-cast p1, Landroidx/compose/ui/draganddrop/b;
 
-    invoke-virtual {p0, p1}, Landroidx/compose/ui/platform/DragAndDropModifierOnDragListener$rootDragAndDropNode$1;->invoke(Landroidx/compose/ui/draganddrop/b;)Landroidx/compose/ui/draganddrop/g;
+    invoke-virtual {p0, p1}, Landroidx/compose/ui/platform/DragAndDropModifierOnDragListener$rootDragAndDropNode$1;->invoke(Landroidx/compose/ui/draganddrop/b;)Landroidx/compose/ui/draganddrop/f;
 
     move-result-object p1
 

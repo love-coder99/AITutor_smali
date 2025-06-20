@@ -3,14 +3,14 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lzh/c;
+.implements Lka/c;
 
 
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "Lkotlin/jvm/internal/Lambda;",
-        "Lzh/c;"
+        "Lka/c;"
     }
 .end annotation
 
@@ -19,7 +19,7 @@
         "\u0000\u0014\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0008\u0003\u0010\u0007\u001a\u00020\u0004\"\u0008\u0008\u0000\u0010\u0001*\u00020\u00002\u0006\u0010\u0003\u001a\u00020\u0002H\n\u00a2\u0006\u0004\u0008\u0005\u0010\u0006"
     }
     d2 = {
-        "Ly4/a;",
+        "Ls2/a;",
         "T",
         "Landroid/content/Context;",
         "context",
@@ -38,10 +38,10 @@
 
 
 # instance fields
-.field final synthetic $factory:Lzh/f;
+.field final synthetic $factory:Lka/f;
     .annotation system Ldalvik/annotation/Signature;
         value = {
-            "Lzh/f;"
+            "Lka/f;"
         }
     .end annotation
 .end field
@@ -50,13 +50,13 @@
 
 
 # direct methods
-.method public constructor <init>(Landroidx/fragment/app/Fragment;Lzh/f;)V
+.method public constructor <init>(Landroidx/fragment/app/Fragment;Lka/f;)V
     .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
             "Landroidx/fragment/app/Fragment;",
-            "Lzh/f;",
+            "Lka/f;",
             ")V"
         }
     .end annotation
@@ -64,12 +64,20 @@
     .line 1
     iput-object p1, p0, Landroidx/compose/ui/viewinterop/AndroidViewBindingKt$AndroidViewBinding$5$1;->$parentFragment:Landroidx/fragment/app/Fragment;
 
-    iput-object p2, p0, Landroidx/compose/ui/viewinterop/AndroidViewBindingKt$AndroidViewBinding$5$1;->$factory:Lzh/f;
+    .line 2
+    .line 3
+    iput-object p2, p0, Landroidx/compose/ui/viewinterop/AndroidViewBindingKt$AndroidViewBinding$5$1;->$factory:Lka/f;
 
+    .line 4
+    .line 5
     const/4 p1, 0x1
 
+    .line 6
     invoke-direct {p0, p1}, Lkotlin/jvm/internal/Lambda;-><init>(I)V
 
+    .line 7
+    .line 8
+    .line 9
     return-void
 .end method
 
@@ -78,11 +86,11 @@
 .method public final invoke(Landroid/content/Context;)Landroid/view/View;
     .locals 3
 
+    .line 2
     iget-object v0, p0, Landroidx/compose/ui/viewinterop/AndroidViewBindingKt$AndroidViewBinding$5$1;->$parentFragment:Landroidx/fragment/app/Fragment;
 
     if-eqz v0, :cond_0
 
-    .line 2
     invoke-virtual {v0}, Landroidx/fragment/app/Fragment;->getLayoutInflater()Landroid/view/LayoutInflater;
 
     move-result-object v0
@@ -94,32 +102,30 @@
 
     move-result-object v0
 
-    :cond_1
-    iget-object v1, p0, Landroidx/compose/ui/viewinterop/AndroidViewBindingKt$AndroidViewBinding$5$1;->$factory:Lzh/f;
-
     .line 3
+    :cond_1
+    iget-object v1, p0, Landroidx/compose/ui/viewinterop/AndroidViewBindingKt$AndroidViewBinding$5$1;->$factory:Lka/f;
+
     new-instance v2, Landroid/widget/FrameLayout;
 
     invoke-direct {v2, p1}, Landroid/widget/FrameLayout;-><init>(Landroid/content/Context;)V
 
     sget-object p1, Ljava/lang/Boolean;->FALSE:Ljava/lang/Boolean;
 
-    invoke-interface {v1, v0, v2, p1}, Lzh/f;->invoke(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-interface {v1, v0, v2, p1}, Lka/f;->invoke(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object p1
 
-    check-cast p1, Ly4/a;
-
-    move-object v0, p1
-
-    check-cast v0, Landroidx/databinding/o;
+    check-cast p1, Ls2/a;
 
     .line 4
-    iget-object v0, v0, Landroidx/databinding/o;->g:Landroid/view/View;
+    invoke-interface {p1}, Ls2/a;->c()Landroid/view/View;
 
-    sget v1, Lk2/a;->binding_reference:I
+    move-result-object v0
 
     .line 5
+    sget v1, LP0/a;->binding_reference:I
+
     invoke-virtual {v0, v1, p1}, Landroid/view/View;->setTag(ILjava/lang/Object;)V
 
     return-object v0

@@ -162,8 +162,11 @@
 .method public negate()Lcom/applovin/exoplayer2/common/base/CharMatcher;
     .locals 1
 
+    .line 1
     iget-object v0, p0, Lcom/applovin/exoplayer2/common/base/CharMatcher$u;->a:Lcom/applovin/exoplayer2/common/base/CharMatcher;
 
+    .line 2
+    .line 3
     return-object v0
 .end method
 

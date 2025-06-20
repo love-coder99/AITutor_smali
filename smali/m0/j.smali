@@ -1,413 +1,252 @@
-.class public abstract Lm0/j;
+.class public final LM0/j;
 .super Ljava/lang/Object;
 .source "SourceFile"
 
 
-# static fields
-.field public static final a:Lm0/e;
-
-.field public static final b:Lm0/e;
-
-.field public static final c:Lm0/e;
-
-.field public static final d:Lm0/e;
-
-.field public static final e:Lm0/e;
-
-.field public static final f:Lm0/e;
-
-.field public static final g:Lm0/e;
-
-.field public static final h:Ljava/util/HashSet;
-
-.field public static final i:Ljava/util/List;
+# instance fields
+.field public final a:J
 
 
 # direct methods
-.method static constructor <clinit>()V
-    .locals 16
+.method public synthetic constructor <init>(J)V
+    .locals 0
 
     .line 1
-    const/4 v0, 0x2
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 2
-    new-array v1, v0, [Landroid/util/Size;
-
     .line 3
     .line 4
-    new-instance v2, Landroid/util/Size;
+    iput-wide p1, p0, LM0/j;->a:J
 
     .line 5
     .line 6
-    const/16 v3, 0x2d0
+    return-void
+.end method
+
+.method public static final a(JJ)Z
+    .locals 1
+
+    .line 1
+    cmp-long v0, p0, p2
+
+    .line 2
+    .line 3
+    if-nez v0, :cond_0
+
+    .line 4
+    .line 5
+    const/4 p0, 0x1
+
+    .line 6
+    goto :goto_0
+
+    .line 7
+    :cond_0
+    const/4 p0, 0x0
+
+    .line 8
+    :goto_0
+    return p0
+.end method
+
+.method public static final b(J)I
+    .locals 2
+
+    .line 1
+    const-wide v0, 0xffffffffL
+
+    .line 2
+    .line 3
+    .line 4
+    .line 5
+    .line 6
+    and-long/2addr p0, v0
+
+    .line 7
+    long-to-int p1, p0
+
+    .line 8
+    return p1
+.end method
+
+.method public static final c(J)I
+    .locals 1
+
+    .line 1
+    const/16 v0, 0x20
+
+    .line 2
+    .line 3
+    shr-long/2addr p0, v0
+
+    .line 4
+    long-to-int p1, p0
+
+    .line 5
+    return p1
+.end method
+
+.method public static d(J)Ljava/lang/String;
+    .locals 3
+
+    .line 1
+    new-instance v0, Ljava/lang/StringBuilder;
+
+    .line 2
+    .line 3
+    invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
+
+    .line 4
+    .line 5
+    .line 6
+    const/16 v1, 0x20
 
     .line 7
     .line 8
-    const/16 v4, 0x1e0
+    shr-long v1, p0, v1
 
     .line 9
     .line 10
-    invoke-direct {v2, v3, v4}, Landroid/util/Size;-><init>(II)V
+    long-to-int v2, v1
 
     .line 11
+    invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+
     .line 12
     .line 13
-    const/4 v5, 0x0
-
     .line 14
-    aput-object v2, v1, v5
+    const-string v1, " x "
 
     .line 15
     .line 16
-    new-instance v2, Landroid/util/Size;
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     .line 17
     .line 18
-    const/16 v6, 0x280
-
     .line 19
-    .line 20
-    invoke-direct {v2, v6, v4}, Landroid/util/Size;-><init>(II)V
+    const-wide v1, 0xffffffffL
 
+    .line 20
     .line 21
     .line 22
     .line 23
-    const/4 v4, 0x1
-
     .line 24
-    aput-object v2, v1, v4
+    and-long/2addr p0, v1
 
     .line 25
+    long-to-int p1, p0
+
     .line 26
-    invoke-static {v1}, Ljava/util/Arrays;->asList([Ljava/lang/Object;)Ljava/util/List;
+    invoke-virtual {v0, p1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
     .line 27
     .line 28
     .line 29
-    move-result-object v1
+    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
     .line 30
-    invoke-static {v1}, Ljava/util/Collections;->unmodifiableList(Ljava/util/List;)Ljava/util/List;
-
     .line 31
     .line 32
+    move-result-object p0
+
     .line 33
-    move-result-object v1
-
-    .line 34
-    new-instance v2, Lm0/e;
+    return-object p0
+.end method
 
-    .line 35
-    .line 36
-    const-string v6, "SD"
 
-    .line 37
-    .line 38
-    const/4 v7, 0x4
+# virtual methods
+.method public final equals(Ljava/lang/Object;)Z
+    .locals 6
 
-    .line 39
-    invoke-direct {v2, v7, v6, v1}, Lm0/e;-><init>(ILjava/lang/String;Ljava/util/List;)V
+    .line 1
+    instance-of v0, p1, LM0/j;
 
-    .line 40
-    .line 41
-    .line 42
-    sput-object v2, Lm0/j;->a:Lm0/e;
+    .line 2
+    .line 3
+    const/4 v1, 0x0
 
-    .line 43
-    .line 44
-    new-instance v1, Landroid/util/Size;
+    .line 4
+    if-nez v0, :cond_0
 
-    .line 45
-    .line 46
-    const/16 v6, 0x500
+    .line 5
+    .line 6
+    goto :goto_0
 
-    .line 47
-    .line 48
-    invoke-direct {v1, v6, v3}, Landroid/util/Size;-><init>(II)V
-
-    .line 49
-    .line 50
-    .line 51
-    invoke-static {v1}, Ljava/util/Collections;->singletonList(Ljava/lang/Object;)Ljava/util/List;
-
-    .line 52
-    .line 53
-    .line 54
-    move-result-object v1
-
-    .line 55
-    new-instance v3, Lm0/e;
-
-    .line 56
-    .line 57
-    const-string v6, "HD"
-
-    .line 58
-    .line 59
-    const/4 v8, 0x5
-
-    .line 60
-    invoke-direct {v3, v8, v6, v1}, Lm0/e;-><init>(ILjava/lang/String;Ljava/util/List;)V
-
-    .line 61
-    .line 62
-    .line 63
-    sput-object v3, Lm0/j;->b:Lm0/e;
-
-    .line 64
-    .line 65
-    new-instance v1, Landroid/util/Size;
-
-    .line 66
-    .line 67
-    const/16 v6, 0x780
-
-    .line 68
-    .line 69
-    const/16 v9, 0x438
-
-    .line 70
-    .line 71
-    invoke-direct {v1, v6, v9}, Landroid/util/Size;-><init>(II)V
-
-    .line 72
-    .line 73
-    .line 74
-    invoke-static {v1}, Ljava/util/Collections;->singletonList(Ljava/lang/Object;)Ljava/util/List;
-
-    .line 75
-    .line 76
-    .line 77
-    move-result-object v1
-
-    .line 78
-    new-instance v6, Lm0/e;
-
-    .line 79
-    .line 80
-    const-string v9, "FHD"
-
-    .line 81
-    .line 82
-    const/4 v10, 0x6
-
-    .line 83
-    invoke-direct {v6, v10, v9, v1}, Lm0/e;-><init>(ILjava/lang/String;Ljava/util/List;)V
-
-    .line 84
-    .line 85
-    .line 86
-    sput-object v6, Lm0/j;->c:Lm0/e;
-
-    .line 87
-    .line 88
-    new-instance v1, Landroid/util/Size;
-
-    .line 89
-    .line 90
-    const/16 v9, 0xf00
-
-    .line 91
-    .line 92
-    const/16 v11, 0x870
-
-    .line 93
-    .line 94
-    invoke-direct {v1, v9, v11}, Landroid/util/Size;-><init>(II)V
-
-    .line 95
-    .line 96
-    .line 97
-    invoke-static {v1}, Ljava/util/Collections;->singletonList(Ljava/lang/Object;)Ljava/util/List;
-
-    .line 98
-    .line 99
-    .line 100
-    move-result-object v1
-
-    .line 101
-    new-instance v9, Lm0/e;
-
-    .line 102
-    .line 103
-    const/16 v11, 0x8
-
-    .line 104
-    .line 105
-    const-string v12, "UHD"
-
-    .line 106
-    .line 107
-    invoke-direct {v9, v11, v12, v1}, Lm0/e;-><init>(ILjava/lang/String;Ljava/util/List;)V
-
-    .line 108
-    .line 109
-    .line 110
-    sput-object v9, Lm0/j;->d:Lm0/e;
-
-    .line 111
-    .line 112
-    invoke-static {}, Ljava/util/Collections;->emptyList()Ljava/util/List;
-
-    .line 113
-    .line 114
-    .line 115
-    move-result-object v1
-
-    .line 116
-    new-instance v11, Lm0/e;
-
-    .line 117
-    .line 118
-    const-string v12, "LOWEST"
-
-    .line 119
-    .line 120
-    invoke-direct {v11, v5, v12, v1}, Lm0/e;-><init>(ILjava/lang/String;Ljava/util/List;)V
-
-    .line 121
-    .line 122
-    .line 123
-    sput-object v11, Lm0/j;->e:Lm0/e;
-
-    .line 124
-    .line 125
-    invoke-static {}, Ljava/util/Collections;->emptyList()Ljava/util/List;
-
-    .line 126
-    .line 127
-    .line 128
-    move-result-object v1
-
-    .line 129
-    new-instance v12, Lm0/e;
-
-    .line 130
-    .line 131
-    const-string v13, "HIGHEST"
-
-    .line 132
-    .line 133
-    invoke-direct {v12, v4, v13, v1}, Lm0/e;-><init>(ILjava/lang/String;Ljava/util/List;)V
-
-    .line 134
-    .line 135
-    .line 136
-    sput-object v12, Lm0/j;->f:Lm0/e;
-
-    .line 137
-    .line 138
-    invoke-static {}, Ljava/util/Collections;->emptyList()Ljava/util/List;
-
-    .line 139
-    .line 140
-    .line 141
-    move-result-object v1
-
-    .line 142
-    new-instance v13, Lm0/e;
-
-    .line 143
-    .line 144
-    const/4 v14, -0x1
-
-    .line 145
-    const-string v15, "NONE"
-
-    .line 146
-    .line 147
-    invoke-direct {v13, v14, v15, v1}, Lm0/e;-><init>(ILjava/lang/String;Ljava/util/List;)V
-
-    .line 148
-    .line 149
-    .line 150
-    sput-object v13, Lm0/j;->g:Lm0/e;
-
-    .line 151
-    .line 152
-    new-instance v1, Ljava/util/HashSet;
-
-    .line 153
-    .line 154
-    new-array v10, v10, [Lm0/j;
-
-    .line 155
-    .line 156
-    aput-object v11, v10, v5
-
-    .line 157
-    .line 158
-    aput-object v12, v10, v4
-
-    .line 159
-    .line 160
-    aput-object v2, v10, v0
-
-    .line 161
-    .line 162
-    const/4 v11, 0x3
-
-    .line 163
-    aput-object v3, v10, v11
-
-    .line 164
-    .line 165
-    aput-object v6, v10, v7
-
-    .line 166
-    .line 167
-    aput-object v9, v10, v8
-
-    .line 168
-    .line 169
-    invoke-static {v10}, Ljava/util/Arrays;->asList([Ljava/lang/Object;)Ljava/util/List;
-
-    .line 170
-    .line 171
-    .line 172
-    move-result-object v8
-
-    .line 173
-    invoke-direct {v1, v8}, Ljava/util/HashSet;-><init>(Ljava/util/Collection;)V
-
-    .line 174
-    .line 175
-    .line 176
-    sput-object v1, Lm0/j;->h:Ljava/util/HashSet;
-
-    .line 177
-    .line 178
-    new-array v1, v7, [Lm0/j;
-
-    .line 179
-    .line 180
-    aput-object v9, v1, v5
-
-    .line 181
-    .line 182
-    aput-object v6, v1, v4
-
-    .line 183
-    .line 184
-    aput-object v3, v1, v0
-
-    .line 185
-    .line 186
-    aput-object v2, v1, v11
-
-    .line 187
-    .line 188
-    invoke-static {v1}, Ljava/util/Arrays;->asList([Ljava/lang/Object;)Ljava/util/List;
-
-    .line 189
-    .line 190
-    .line 191
+    .line 7
+    :cond_0
+    check-cast p1, LM0/j;
+
+    .line 8
+    .line 9
+    iget-wide v2, p1, LM0/j;->a:J
+
+    .line 10
+    .line 11
+    iget-wide v4, p0, LM0/j;->a:J
+
+    .line 12
+    .line 13
+    cmp-long p1, v4, v2
+
+    .line 14
+    .line 15
+    if-eqz p1, :cond_1
+
+    .line 16
+    .line 17
+    goto :goto_0
+
+    .line 18
+    :cond_1
+    const/4 v1, 0x1
+
+    .line 19
+    :goto_0
+    return v1
+.end method
+
+.method public final hashCode()I
+    .locals 5
+
+    .line 1
+    const/16 v0, 0x20
+
+    .line 2
+    .line 3
+    iget-wide v1, p0, LM0/j;->a:J
+
+    .line 4
+    .line 5
+    ushr-long v3, v1, v0
+
+    .line 6
+    .line 7
+    xor-long v0, v1, v3
+
+    .line 8
+    .line 9
+    long-to-int v1, v0
+
+    .line 10
+    return v1
+.end method
+
+.method public final toString()Ljava/lang/String;
+    .locals 2
+
+    .line 1
+    iget-wide v0, p0, LM0/j;->a:J
+
+    .line 2
+    .line 3
+    invoke-static {v0, v1}, LM0/j;->d(J)Ljava/lang/String;
+
+    .line 4
+    .line 5
+    .line 6
     move-result-object v0
 
-    .line 192
-    sput-object v0, Lm0/j;->i:Ljava/util/List;
-
-    .line 193
-    .line 194
-    return-void
+    .line 7
+    return-object v0
 .end method

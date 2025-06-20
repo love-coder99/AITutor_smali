@@ -1,105 +1,117 @@
-.class public final Landroidx/compose/ui/node/g;
+.class public abstract synthetic Landroidx/compose/ui/node/G;
 .super Ljava/lang/Object;
 .source "SourceFile"
 
 
 # static fields
-.field public static final synthetic a:Landroidx/compose/ui/node/g;
+.field public static final synthetic a:[I
 
-.field public static final b:Lzh/a;
-
-.field public static final c:Lzh/a;
-
-.field public static final d:Lzh/e;
-
-.field public static final e:Lzh/e;
-
-.field public static final f:Lzh/e;
-
-.field public static final g:Lzh/e;
+.field public static final synthetic b:[I
 
 
 # direct methods
 .method static constructor <clinit>()V
-    .locals 1
+    .locals 5
 
-    .line 1
-    new-instance v0, Landroidx/compose/ui/node/g;
+    invoke-static {}, Landroidx/compose/ui/node/LayoutNode$LayoutState;->values()[Landroidx/compose/ui/node/LayoutNode$LayoutState;
 
-    .line 2
-    .line 3
-    invoke-direct {v0}, Ljava/lang/Object;-><init>()V
+    move-result-object v0
 
-    .line 4
-    .line 5
-    .line 6
-    sput-object v0, Landroidx/compose/ui/node/g;->a:Landroidx/compose/ui/node/g;
+    array-length v0, v0
 
-    .line 7
-    .line 8
-    sget-object v0, Landroidx/compose/ui/node/e0;->L:Landroidx/compose/ui/node/b0;
+    new-array v0, v0, [I
 
-    .line 9
-    .line 10
-    sget-object v0, Landroidx/compose/ui/node/e0;->M:Lzh/a;
+    const/4 v1, 0x1
 
-    .line 11
-    .line 12
-    sput-object v0, Landroidx/compose/ui/node/g;->b:Lzh/a;
+    :try_start_0
+    sget-object v2, Landroidx/compose/ui/node/LayoutNode$LayoutState;->LookaheadMeasuring:Landroidx/compose/ui/node/LayoutNode$LayoutState;
 
-    .line 13
-    .line 14
-    sget-object v0, Landroidx/compose/ui/node/ComposeUiNode$Companion$VirtualConstructor$1;->INSTANCE:Landroidx/compose/ui/node/ComposeUiNode$Companion$VirtualConstructor$1;
+    invoke-virtual {v2}, Ljava/lang/Enum;->ordinal()I
 
-    .line 15
-    .line 16
-    sput-object v0, Landroidx/compose/ui/node/g;->c:Lzh/a;
+    move-result v2
 
-    .line 17
-    .line 18
-    sget-object v0, Landroidx/compose/ui/node/ComposeUiNode$Companion$SetModifier$1;->INSTANCE:Landroidx/compose/ui/node/ComposeUiNode$Companion$SetModifier$1;
+    aput v1, v0, v2
+    :try_end_0
+    .catch Ljava/lang/NoSuchFieldError; {:try_start_0 .. :try_end_0} :catch_0
 
-    .line 19
-    .line 20
-    sput-object v0, Landroidx/compose/ui/node/g;->d:Lzh/e;
+    :catch_0
+    const/4 v2, 0x2
 
-    .line 21
-    .line 22
-    sget-object v0, Landroidx/compose/ui/node/ComposeUiNode$Companion$SetDensity$1;->INSTANCE:Landroidx/compose/ui/node/ComposeUiNode$Companion$SetDensity$1;
+    :try_start_1
+    sget-object v3, Landroidx/compose/ui/node/LayoutNode$LayoutState;->Measuring:Landroidx/compose/ui/node/LayoutNode$LayoutState;
 
-    .line 23
-    .line 24
-    sget-object v0, Landroidx/compose/ui/node/ComposeUiNode$Companion$SetResolvedCompositionLocals$1;->INSTANCE:Landroidx/compose/ui/node/ComposeUiNode$Companion$SetResolvedCompositionLocals$1;
+    invoke-virtual {v3}, Ljava/lang/Enum;->ordinal()I
 
-    .line 25
-    .line 26
-    sput-object v0, Landroidx/compose/ui/node/g;->e:Lzh/e;
+    move-result v3
 
-    .line 27
-    .line 28
-    sget-object v0, Landroidx/compose/ui/node/ComposeUiNode$Companion$SetMeasurePolicy$1;->INSTANCE:Landroidx/compose/ui/node/ComposeUiNode$Companion$SetMeasurePolicy$1;
+    aput v2, v0, v3
+    :try_end_1
+    .catch Ljava/lang/NoSuchFieldError; {:try_start_1 .. :try_end_1} :catch_1
 
-    .line 29
-    .line 30
-    sput-object v0, Landroidx/compose/ui/node/g;->f:Lzh/e;
+    :catch_1
+    :try_start_2
+    sget-object v3, Landroidx/compose/ui/node/LayoutNode$LayoutState;->LayingOut:Landroidx/compose/ui/node/LayoutNode$LayoutState;
 
-    .line 31
-    .line 32
-    sget-object v0, Landroidx/compose/ui/node/ComposeUiNode$Companion$SetLayoutDirection$1;->INSTANCE:Landroidx/compose/ui/node/ComposeUiNode$Companion$SetLayoutDirection$1;
+    invoke-virtual {v3}, Ljava/lang/Enum;->ordinal()I
 
-    .line 33
-    .line 34
-    sget-object v0, Landroidx/compose/ui/node/ComposeUiNode$Companion$SetViewConfiguration$1;->INSTANCE:Landroidx/compose/ui/node/ComposeUiNode$Companion$SetViewConfiguration$1;
+    move-result v3
 
-    .line 35
-    .line 36
-    sget-object v0, Landroidx/compose/ui/node/ComposeUiNode$Companion$SetCompositeKeyHash$1;->INSTANCE:Landroidx/compose/ui/node/ComposeUiNode$Companion$SetCompositeKeyHash$1;
+    const/4 v4, 0x3
 
-    .line 37
-    .line 38
-    sput-object v0, Landroidx/compose/ui/node/g;->g:Lzh/e;
+    aput v4, v0, v3
+    :try_end_2
+    .catch Ljava/lang/NoSuchFieldError; {:try_start_2 .. :try_end_2} :catch_2
 
-    .line 39
-    .line 40
+    :catch_2
+    :try_start_3
+    sget-object v3, Landroidx/compose/ui/node/LayoutNode$LayoutState;->LookaheadLayingOut:Landroidx/compose/ui/node/LayoutNode$LayoutState;
+
+    invoke-virtual {v3}, Ljava/lang/Enum;->ordinal()I
+
+    move-result v3
+
+    const/4 v4, 0x4
+
+    aput v4, v0, v3
+    :try_end_3
+    .catch Ljava/lang/NoSuchFieldError; {:try_start_3 .. :try_end_3} :catch_3
+
+    :catch_3
+    sput-object v0, Landroidx/compose/ui/node/G;->a:[I
+
+    invoke-static {}, Landroidx/compose/ui/node/LayoutNode$UsageByParent;->values()[Landroidx/compose/ui/node/LayoutNode$UsageByParent;
+
+    move-result-object v0
+
+    array-length v0, v0
+
+    new-array v0, v0, [I
+
+    :try_start_4
+    sget-object v3, Landroidx/compose/ui/node/LayoutNode$UsageByParent;->InMeasureBlock:Landroidx/compose/ui/node/LayoutNode$UsageByParent;
+
+    invoke-virtual {v3}, Ljava/lang/Enum;->ordinal()I
+
+    move-result v3
+
+    aput v1, v0, v3
+    :try_end_4
+    .catch Ljava/lang/NoSuchFieldError; {:try_start_4 .. :try_end_4} :catch_4
+
+    :catch_4
+    :try_start_5
+    sget-object v1, Landroidx/compose/ui/node/LayoutNode$UsageByParent;->InLayoutBlock:Landroidx/compose/ui/node/LayoutNode$UsageByParent;
+
+    invoke-virtual {v1}, Ljava/lang/Enum;->ordinal()I
+
+    move-result v1
+
+    aput v2, v0, v1
+    :try_end_5
+    .catch Ljava/lang/NoSuchFieldError; {:try_start_5 .. :try_end_5} :catch_5
+
+    :catch_5
+    sput-object v0, Landroidx/compose/ui/node/G;->b:[I
+
     return-void
 .end method

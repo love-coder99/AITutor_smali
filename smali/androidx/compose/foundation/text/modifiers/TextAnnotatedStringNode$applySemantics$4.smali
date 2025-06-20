@@ -3,14 +3,14 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lzh/a;
+.implements Lka/a;
 
 
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "Lkotlin/jvm/internal/Lambda;",
-        "Lzh/a;"
+        "Lka/a;"
     }
 .end annotation
 
@@ -35,14 +35,14 @@
 
 
 # instance fields
-.field final synthetic this$0:Landroidx/compose/foundation/text/modifiers/i;
+.field final synthetic this$0:Landroidx/compose/foundation/text/modifiers/h;
 
 
 # direct methods
-.method public constructor <init>(Landroidx/compose/foundation/text/modifiers/i;)V
+.method public constructor <init>(Landroidx/compose/foundation/text/modifiers/h;)V
     .locals 0
 
-    iput-object p1, p0, Landroidx/compose/foundation/text/modifiers/TextAnnotatedStringNode$applySemantics$4;->this$0:Landroidx/compose/foundation/text/modifiers/i;
+    iput-object p1, p0, Landroidx/compose/foundation/text/modifiers/TextAnnotatedStringNode$applySemantics$4;->this$0:Landroidx/compose/foundation/text/modifiers/h;
 
     const/4 p1, 0x0
 
@@ -56,22 +56,24 @@
 .method public final invoke()Ljava/lang/Boolean;
     .locals 2
 
-    iget-object v0, p0, Landroidx/compose/foundation/text/modifiers/TextAnnotatedStringNode$applySemantics$4;->this$0:Landroidx/compose/foundation/text/modifiers/i;
+    .line 2
+    iget-object v0, p0, Landroidx/compose/foundation/text/modifiers/TextAnnotatedStringNode$applySemantics$4;->this$0:Landroidx/compose/foundation/text/modifiers/h;
 
     const/4 v1, 0x0
 
-    .line 1
-    iput-object v1, v0, Landroidx/compose/foundation/text/modifiers/i;->E:Landroidx/compose/foundation/text/modifiers/h;
-
-    .line 2
-    invoke-static {v0}, Lcom/google/android/play/core/appupdate/b;->C(Landroidx/compose/ui/node/v1;)V
-
     .line 3
-    invoke-static {v0}, Lcom/google/android/play/core/appupdate/b;->B(Landroidx/compose/ui/node/y;)V
+    iput-object v1, v0, Landroidx/compose/foundation/text/modifiers/h;->E:Landroidx/compose/foundation/text/modifiers/g;
 
     .line 4
-    invoke-static {v0}, Lcom/google/android/play/core/appupdate/b;->A(Landroidx/compose/ui/node/o;)V
+    invoke-static {v0}, LT6/b;->x(Landroidx/compose/ui/node/p0;)V
 
+    .line 5
+    invoke-static {v0}, Landroidx/datastore/preferences/protobuf/y0;->l(Landroidx/compose/ui/node/v;)V
+
+    .line 6
+    invoke-static {v0}, LE/p;->v(Landroidx/compose/ui/node/m;)V
+
+    .line 7
     sget-object v0, Ljava/lang/Boolean;->TRUE:Ljava/lang/Boolean;
 
     return-object v0
@@ -80,7 +82,7 @@
 .method public bridge synthetic invoke()Ljava/lang/Object;
     .locals 1
 
-    .line 5
+    .line 1
     invoke-virtual {p0}, Landroidx/compose/foundation/text/modifiers/TextAnnotatedStringNode$applySemantics$4;->invoke()Ljava/lang/Boolean;
 
     move-result-object v0

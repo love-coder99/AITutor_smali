@@ -3,36 +3,11 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lzh/e;
+.implements Lka/e;
 
 
 # annotations
-.annotation system Ldalvik/annotation/Signature;
-    value = {
-        "Lkotlin/coroutines/jvm/internal/RestrictedSuspendLambda;",
-        "Lzh/e;"
-    }
-.end annotation
-
-.annotation runtime Lkotlin/Metadata;
-    d1 = {
-        "\u0000\u000e\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\u0010\u0003\u001a\u00020\u0002*\u0008\u0012\u0004\u0012\u00020\u00010\u0000H\u008a@"
-    }
-    d2 = {
-        "Lkotlin/sequences/k;",
-        "Landroidx/compose/ui/tooling/k;",
-        "Lqh/r;",
-        "<anonymous>"
-    }
-    k = 0x3
-    mv = {
-        0x1,
-        0x8,
-        0x0
-    }
-.end annotation
-
-.annotation runtime Lth/c;
+.annotation runtime Lca/c;
     c = "androidx.compose.ui.tooling.ShadowViewInfo$allNodes$1"
     f = "ShadowViewInfo.android.kt"
     l = {
@@ -40,6 +15,32 @@
         0x2e
     }
     m = "invokeSuspend"
+.end annotation
+
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "Lkotlin/coroutines/jvm/internal/RestrictedSuspendLambda;",
+        "Lka/e;"
+    }
+.end annotation
+
+.annotation runtime Lkotlin/Metadata;
+    d1 = {
+        "\u0000\u0010\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0008\u0002\u0010\u0003\u001a\u00020\u0002*\u0008\u0012\u0004\u0012\u00020\u00010\u0000H\u008a@\u00a2\u0006\u0004\u0008\u0003\u0010\u0004"
+    }
+    d2 = {
+        "Lsa/i;",
+        "Landroidx/compose/ui/tooling/k;",
+        "LX9/j;",
+        "<anonymous>",
+        "(Lsa/i;)V"
+    }
+    k = 0x3
+    mv = {
+        0x1,
+        0x8,
+        0x0
+    }
 .end annotation
 
 
@@ -87,7 +88,7 @@
             "Lkotlin/coroutines/Continuation<",
             "*>;)",
             "Lkotlin/coroutines/Continuation<",
-            "Lqh/r;",
+            "LX9/j;",
             ">;"
         }
     .end annotation
@@ -107,26 +108,26 @@
     .locals 0
 
     .line 1
-    check-cast p1, Lkotlin/sequences/k;
+    check-cast p1, Lsa/i;
 
     check-cast p2, Lkotlin/coroutines/Continuation;
 
-    invoke-virtual {p0, p1, p2}, Landroidx/compose/ui/tooling/ShadowViewInfo$allNodes$1;->invoke(Lkotlin/sequences/k;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
+    invoke-virtual {p0, p1, p2}, Landroidx/compose/ui/tooling/ShadowViewInfo$allNodes$1;->invoke(Lsa/i;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
 
     move-result-object p1
 
     return-object p1
 .end method
 
-.method public final invoke(Lkotlin/sequences/k;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
+.method public final invoke(Lsa/i;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
     .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
-            "Lkotlin/sequences/k;",
+            "Lsa/i;",
             "Lkotlin/coroutines/Continuation<",
             "-",
-            "Lqh/r;",
+            "LX9/j;",
             ">;)",
             "Ljava/lang/Object;"
         }
@@ -139,7 +140,7 @@
 
     check-cast p1, Landroidx/compose/ui/tooling/ShadowViewInfo$allNodes$1;
 
-    sget-object p2, Lqh/r;->a:Lqh/r;
+    sget-object p2, LX9/j;->a:LX9/j;
 
     invoke-virtual {p1, p2}, Landroidx/compose/ui/tooling/ShadowViewInfo$allNodes$1;->invokeSuspend(Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -190,7 +191,7 @@
 
     .line 18
     .line 19
-    check-cast v3, Lkotlin/sequences/k;
+    check-cast v3, Lsa/i;
 
     .line 20
     .line 21
@@ -224,7 +225,7 @@
 
     .line 34
     .line 35
-    check-cast v1, Lkotlin/sequences/k;
+    check-cast v1, Lsa/i;
 
     .line 36
     .line 37
@@ -249,7 +250,7 @@
     move-object v1, p1
 
     .line 47
-    check-cast v1, Lkotlin/sequences/k;
+    check-cast v1, Lsa/i;
 
     .line 48
     .line 49
@@ -265,7 +266,7 @@
 
     .line 54
     .line 55
-    invoke-virtual {v1, p1, p0}, Lkotlin/sequences/k;->a(Ljava/lang/Object;Lkotlin/coroutines/Continuation;)Lkotlin/coroutines/intrinsics/CoroutineSingletons;
+    invoke-virtual {v1, p1, p0}, Lsa/i;->a(Ljava/lang/Object;Lkotlin/coroutines/jvm/internal/RestrictedSuspendLambda;)Lkotlin/coroutines/intrinsics/CoroutineSingletons;
 
     .line 56
     .line 57
@@ -332,122 +333,127 @@
 
     .line 86
     .line 87
-    iget-object v4, v4, Landroidx/compose/ui/tooling/k;->d:Lkotlin/collections/v;
+    iget-object v4, v4, Landroidx/compose/ui/tooling/k;->d:LY9/x;
 
     .line 88
     .line 89
-    invoke-virtual {v4}, Lkotlin/collections/v;->iterator()Ljava/util/Iterator;
+    iget-object v4, v4, LY9/x;->b:Ljava/lang/Object;
 
     .line 90
     .line 91
-    .line 92
-    move-result-object v4
+    check-cast v4, Lkotlin/coroutines/jvm/internal/RestrictedSuspendLambda;
 
+    .line 92
     .line 93
-    :goto_1
-    invoke-interface {v4}, Ljava/util/Iterator;->hasNext()Z
+    invoke-static {v4}, Lcom/google/android/play/core/appupdate/b;->h(Lka/e;)Lsa/h;
 
     .line 94
     .line 95
     .line 96
-    move-result v5
+    move-result-object v4
 
     .line 97
-    if-eqz v5, :cond_4
+    :goto_1
+    invoke-virtual {v4}, Lsa/h;->hasNext()Z
 
     .line 98
     .line 99
-    invoke-interface {v4}, Ljava/util/Iterator;->next()Ljava/lang/Object;
-
     .line 100
-    .line 101
-    .line 102
-    move-result-object v5
+    move-result v5
 
+    .line 101
+    if-eqz v5, :cond_4
+
+    .line 102
     .line 103
-    invoke-virtual {v3, v5}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
+    invoke-virtual {v4}, Lsa/h;->next()Ljava/lang/Object;
 
     .line 104
     .line 105
     .line 106
-    goto :goto_1
+    move-result-object v5
 
     .line 107
-    :cond_5
-    invoke-virtual {v3}, Ljava/util/ArrayList;->iterator()Ljava/util/Iterator;
+    invoke-virtual {v3, v5}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
     .line 108
     .line 109
     .line 110
-    move-result-object p1
+    goto :goto_1
 
     .line 111
-    move-object v3, v1
+    :cond_5
+    invoke-virtual {v3}, Ljava/util/ArrayList;->iterator()Ljava/util/Iterator;
 
     .line 112
-    move-object v1, p1
-
     .line 113
-    :goto_2
-    move-object p1, p0
-
     .line 114
-    :cond_6
-    invoke-interface {v1}, Ljava/util/Iterator;->hasNext()Z
+    move-result-object p1
 
     .line 115
+    move-object v3, v1
+
     .line 116
+    move-object v1, p1
+
     .line 117
-    move-result v4
+    :cond_6
+    :goto_2
+    invoke-interface {v1}, Ljava/util/Iterator;->hasNext()Z
 
     .line 118
-    if-eqz v4, :cond_7
-
     .line 119
     .line 120
-    invoke-interface {v1}, Ljava/util/Iterator;->next()Ljava/lang/Object;
+    move-result p1
 
     .line 121
+    if-eqz p1, :cond_7
+
     .line 122
     .line 123
-    move-result-object v4
+    invoke-interface {v1}, Ljava/util/Iterator;->next()Ljava/lang/Object;
 
     .line 124
-    check-cast v4, Landroidx/compose/ui/tooling/k;
-
     .line 125
     .line 126
-    iput-object v3, p1, Landroidx/compose/ui/tooling/ShadowViewInfo$allNodes$1;->L$0:Ljava/lang/Object;
+    move-result-object p1
 
     .line 127
+    check-cast p1, Landroidx/compose/ui/tooling/k;
+
     .line 128
-    iput-object v1, p1, Landroidx/compose/ui/tooling/ShadowViewInfo$allNodes$1;->L$1:Ljava/lang/Object;
-
     .line 129
+    iput-object v3, p0, Landroidx/compose/ui/tooling/ShadowViewInfo$allNodes$1;->L$0:Ljava/lang/Object;
+
     .line 130
-    iput v2, p1, Landroidx/compose/ui/tooling/ShadowViewInfo$allNodes$1;->label:I
-
     .line 131
-    .line 132
-    invoke-virtual {v3, v4, p1}, Lkotlin/sequences/k;->a(Ljava/lang/Object;Lkotlin/coroutines/Continuation;)Lkotlin/coroutines/intrinsics/CoroutineSingletons;
+    iput-object v1, p0, Landroidx/compose/ui/tooling/ShadowViewInfo$allNodes$1;->L$1:Ljava/lang/Object;
 
+    .line 132
     .line 133
+    iput v2, p0, Landroidx/compose/ui/tooling/ShadowViewInfo$allNodes$1;->label:I
+
     .line 134
     .line 135
-    move-result-object v4
+    invoke-virtual {v3, p1, p0}, Lsa/i;->a(Ljava/lang/Object;Lkotlin/coroutines/jvm/internal/RestrictedSuspendLambda;)Lkotlin/coroutines/intrinsics/CoroutineSingletons;
 
     .line 136
-    if-ne v4, v0, :cond_6
-
     .line 137
     .line 138
-    return-object v0
+    move-result-object p1
 
     .line 139
-    :cond_7
-    sget-object p1, Lqh/r;->a:Lqh/r;
+    if-ne p1, v0, :cond_6
 
     .line 140
     .line 141
+    return-object v0
+
+    .line 142
+    :cond_7
+    sget-object p1, LX9/j;->a:LX9/j;
+
+    .line 143
+    .line 144
     return-object p1
 .end method

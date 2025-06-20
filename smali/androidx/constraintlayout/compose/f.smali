@@ -1,35 +1,36 @@
 .class public final Landroidx/constraintlayout/compose/f;
-.super Ljava/lang/Object;
+.super Landroidx/compose/ui/platform/d0;
 .source "SourceFile"
+
+# interfaces
+.implements Landroidx/compose/ui/layout/T;
 
 
 # instance fields
-.field public final a:Ljava/lang/Object;
+.field public final c:Landroidx/constraintlayout/compose/b;
 
-.field public final b:I
-
-.field public final c:Landroidx/constraintlayout/compose/s;
+.field public final d:Lka/c;
 
 
 # direct methods
-.method public constructor <init>(Ljava/lang/Object;ILandroidx/constraintlayout/compose/s;)V
-    .locals 0
+.method public constructor <init>(Landroidx/constraintlayout/compose/b;Lka/c;)V
+    .locals 1
 
     .line 1
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    sget v0, Landroidx/compose/ui/platform/k0;->a:I
 
     .line 2
     .line 3
-    .line 4
-    iput-object p1, p0, Landroidx/constraintlayout/compose/f;->a:Ljava/lang/Object;
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
+    .line 4
     .line 5
     .line 6
-    iput p2, p0, Landroidx/constraintlayout/compose/f;->b:I
+    iput-object p1, p0, Landroidx/constraintlayout/compose/f;->c:Landroidx/constraintlayout/compose/b;
 
     .line 7
     .line 8
-    iput-object p3, p0, Landroidx/constraintlayout/compose/f;->c:Landroidx/constraintlayout/compose/s;
+    iput-object p2, p0, Landroidx/constraintlayout/compose/f;->d:Lka/c;
 
     .line 9
     .line 10
@@ -38,129 +39,151 @@
 
 
 # virtual methods
-.method public final equals(Ljava/lang/Object;)Z
-    .locals 4
+.method public final synthetic b(Lka/c;)Z
+    .locals 0
 
-    const/4 v0, 0x1
-
-    if-ne p0, p1, :cond_0
-
-    return v0
-
-    :cond_0
-    instance-of v1, p1, Landroidx/constraintlayout/compose/f;
-
-    const/4 v2, 0x0
-
-    if-nez v1, :cond_1
-
-    return v2
-
-    :cond_1
-    check-cast p1, Landroidx/constraintlayout/compose/f;
-
-    iget-object v1, p1, Landroidx/constraintlayout/compose/f;->a:Ljava/lang/Object;
-
-    iget-object v3, p0, Landroidx/constraintlayout/compose/f;->a:Ljava/lang/Object;
-
-    invoke-static {v3, v1}, Lrb/h;->d(Ljava/lang/Object;Ljava/lang/Object;)Z
-
-    move-result v1
-
-    if-nez v1, :cond_2
-
-    return v2
-
-    :cond_2
-    iget v1, p0, Landroidx/constraintlayout/compose/f;->b:I
-
-    iget v3, p1, Landroidx/constraintlayout/compose/f;->b:I
-
-    if-eq v1, v3, :cond_3
-
-    return v2
-
-    :cond_3
-    iget-object v1, p0, Landroidx/constraintlayout/compose/f;->c:Landroidx/constraintlayout/compose/s;
-
-    iget-object p1, p1, Landroidx/constraintlayout/compose/f;->c:Landroidx/constraintlayout/compose/s;
-
-    invoke-static {v1, p1}, Lrb/h;->d(Ljava/lang/Object;Ljava/lang/Object;)Z
+    .line 1
+    invoke-static {p0, p1}, Landroidx/compose/runtime/a0;->a(Landroidx/compose/ui/m;Lka/c;)Z
 
     move-result p1
 
-    if-nez p1, :cond_4
+    return p1
+.end method
 
-    return v2
+.method public final equals(Ljava/lang/Object;)Z
+    .locals 2
 
-    :cond_4
-    return v0
+    .line 1
+    instance-of v0, p1, Landroidx/constraintlayout/compose/f;
+
+    .line 2
+    .line 3
+    const/4 v1, 0x0
+
+    .line 4
+    if-eqz v0, :cond_0
+
+    .line 5
+    .line 6
+    check-cast p1, Landroidx/constraintlayout/compose/f;
+
+    .line 7
+    .line 8
+    goto :goto_0
+
+    .line 9
+    :cond_0
+    move-object p1, v1
+
+    .line 10
+    :goto_0
+    if-eqz p1, :cond_1
+
+    .line 11
+    .line 12
+    iget-object v1, p1, Landroidx/constraintlayout/compose/f;->d:Lka/c;
+
+    .line 13
+    .line 14
+    :cond_1
+    iget-object p1, p0, Landroidx/constraintlayout/compose/f;->d:Lka/c;
+
+    .line 15
+    .line 16
+    if-ne p1, v1, :cond_2
+
+    .line 17
+    .line 18
+    const/4 p1, 0x1
+
+    .line 19
+    goto :goto_1
+
+    .line 20
+    :cond_2
+    const/4 p1, 0x0
+
+    .line 21
+    :goto_1
+    return p1
+.end method
+
+.method public final synthetic g(Landroidx/compose/ui/o;)Landroidx/compose/ui/o;
+    .locals 0
+
+    .line 1
+    invoke-static {p0, p1}, Landroidx/compose/runtime/a0;->e(Landroidx/compose/ui/o;Landroidx/compose/ui/o;)Landroidx/compose/ui/o;
+
+    move-result-object p1
+
+    return-object p1
 .end method
 
 .method public final hashCode()I
-    .locals 2
+    .locals 1
 
-    iget-object v0, p0, Landroidx/constraintlayout/compose/f;->a:Ljava/lang/Object;
+    .line 1
+    iget-object v0, p0, Landroidx/constraintlayout/compose/f;->d:Lka/c;
 
+    .line 2
+    .line 3
     invoke-virtual {v0}, Ljava/lang/Object;->hashCode()I
 
+    .line 4
+    .line 5
+    .line 6
     move-result v0
 
-    mul-int/lit8 v0, v0, 0x1f
-
-    iget v1, p0, Landroidx/constraintlayout/compose/f;->b:I
-
-    add-int/2addr v0, v1
-
-    mul-int/lit8 v0, v0, 0x1f
-
-    iget-object v1, p0, Landroidx/constraintlayout/compose/f;->c:Landroidx/constraintlayout/compose/s;
-
-    invoke-virtual {v1}, Landroidx/constraintlayout/compose/s;->hashCode()I
-
-    move-result v1
-
-    add-int/2addr v1, v0
-
-    return v1
+    .line 7
+    return v0
 .end method
 
-.method public final toString()Ljava/lang/String;
-    .locals 2
+.method public final synthetic i(Lka/c;)Z
+    .locals 0
 
-    new-instance v0, Ljava/lang/StringBuilder;
+    .line 1
+    invoke-static {p0, p1}, Landroidx/compose/runtime/a0;->b(Landroidx/compose/ui/m;Lka/c;)Z
 
-    const-string v1, "HorizontalAnchor(id="
+    move-result p1
 
-    invoke-direct {v0, v1}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+    return p1
+.end method
 
-    iget-object v1, p0, Landroidx/constraintlayout/compose/f;->a:Ljava/lang/Object;
+.method public final k(Ljava/lang/Object;Lka/e;)Ljava/lang/Object;
+    .locals 0
 
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+    .line 1
+    invoke-interface {p2, p1, p0}, Lka/e;->invoke(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    const-string v1, ", index="
+    .line 2
+    .line 3
+    .line 4
+    move-result-object p1
 
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    .line 5
+    return-object p1
+.end method
 
-    iget v1, p0, Landroidx/constraintlayout/compose/f;->b:I
+.method public final l()Ljava/lang/Object;
+    .locals 3
 
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+    .line 1
+    new-instance v0, Landroidx/constraintlayout/compose/e;
 
-    const-string v1, ", reference="
+    .line 2
+    .line 3
+    iget-object v1, p0, Landroidx/constraintlayout/compose/f;->c:Landroidx/constraintlayout/compose/b;
 
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    .line 4
+    .line 5
+    iget-object v2, p0, Landroidx/constraintlayout/compose/f;->d:Lka/c;
 
-    iget-object v1, p0, Landroidx/constraintlayout/compose/f;->c:Landroidx/constraintlayout/compose/s;
+    .line 6
+    .line 7
+    invoke-direct {v0, v1, v2}, Landroidx/constraintlayout/compose/e;-><init>(Landroidx/constraintlayout/compose/b;Lka/c;)V
 
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
-
-    const/16 v1, 0x29
-
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object v0
-
+    .line 8
+    .line 9
+    .line 10
     return-object v0
 .end method

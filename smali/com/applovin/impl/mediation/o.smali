@@ -48,19 +48,19 @@
     .locals 6
 
     .line 1
-    iget-object v0, p0, Lcom/applovin/impl/mediation/o;->b:Lcom/applovin/impl/mediation/g;
-
-    iget-object v1, p0, Lcom/applovin/impl/mediation/o;->c:Lcom/applovin/impl/zj;
-
     iget-object v2, p0, Lcom/applovin/impl/mediation/o;->d:Lcom/applovin/impl/mediation/g$f;
 
     iget-object v3, p0, Lcom/applovin/impl/mediation/o;->f:Lcom/applovin/mediation/adapter/MaxSignalProvider;
+
+    iget-object v0, p0, Lcom/applovin/impl/mediation/o;->b:Lcom/applovin/impl/mediation/g;
+
+    iget-object v1, p0, Lcom/applovin/impl/mediation/o;->c:Lcom/applovin/impl/zj;
 
     iget-object v4, p0, Lcom/applovin/impl/mediation/o;->g:Lcom/applovin/mediation/adapter/parameters/MaxAdapterSignalCollectionParameters;
 
     iget-object v5, p0, Lcom/applovin/impl/mediation/o;->h:Landroid/app/Activity;
 
-    invoke-static/range {v0 .. v5}, Lcom/applovin/impl/mediation/g;->h(Lcom/applovin/impl/mediation/g;Lcom/applovin/impl/zj;Lcom/applovin/impl/mediation/g$f;Lcom/applovin/mediation/adapter/MaxSignalProvider;Lcom/applovin/mediation/adapter/parameters/MaxAdapterSignalCollectionParameters;Landroid/app/Activity;)V
+    invoke-static/range {v0 .. v5}, Lcom/applovin/impl/mediation/g;->m(Lcom/applovin/impl/mediation/g;Lcom/applovin/impl/zj;Lcom/applovin/impl/mediation/g$f;Lcom/applovin/mediation/adapter/MaxSignalProvider;Lcom/applovin/mediation/adapter/parameters/MaxAdapterSignalCollectionParameters;Landroid/app/Activity;)V
 
     return-void
 .end method

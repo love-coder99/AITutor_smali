@@ -165,11 +165,11 @@
 .method public static c(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)V
     .locals 0
 
+    .line 1
     sget-boolean p0, Lcom/applovin/impl/sdk/n;->b:Z
 
     if-eqz p0, :cond_0
 
-    .line 1
     invoke-static {}, Lcom/applovin/impl/sdk/n;->a()Z
 
     :cond_0

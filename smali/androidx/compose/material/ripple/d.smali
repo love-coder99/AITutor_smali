@@ -3,7 +3,7 @@
 .source "SourceFile"
 
 # interfaces
-.implements Landroidx/compose/material/ripple/q;
+.implements Landroidx/compose/material/ripple/o;
 
 
 # static fields
@@ -33,11 +33,11 @@
 
 
 # virtual methods
-.method public final a(Landroidx/compose/runtime/l;)J
+.method public final a(Landroidx/compose/runtime/j;)J
     .locals 3
 
     .line 1
-    check-cast p1, Landroidx/compose/runtime/p;
+    check-cast p1, Landroidx/compose/runtime/n;
 
     .line 2
     .line 3
@@ -46,7 +46,7 @@
     .line 4
     .line 5
     .line 6
-    invoke-virtual {p1, v0}, Landroidx/compose/runtime/p;->T(I)V
+    invoke-virtual {p1, v0}, Landroidx/compose/runtime/n;->R(I)V
 
     .line 7
     .line 8
@@ -55,7 +55,7 @@
 
     .line 10
     .line 11
-    invoke-static {v0, v1}, Landroidx/compose/ui/graphics/f0;->y(J)F
+    invoke-static {v0, v1}, Landroidx/compose/ui/graphics/G;->y(J)F
 
     .line 12
     .line 13
@@ -63,7 +63,7 @@
     const/4 v2, 0x0
 
     .line 15
-    invoke-virtual {p1, v2}, Landroidx/compose/runtime/p;->q(Z)V
+    invoke-virtual {p1, v2}, Landroidx/compose/runtime/n;->p(Z)V
 
     .line 16
     .line 17
@@ -71,11 +71,11 @@
     return-wide v0
 .end method
 
-.method public final b(Landroidx/compose/runtime/l;)Landroidx/compose/material/ripple/g;
+.method public final b(Landroidx/compose/runtime/j;)Landroidx/compose/material/ripple/f;
     .locals 5
 
     .line 1
-    check-cast p1, Landroidx/compose/runtime/p;
+    check-cast p1, Landroidx/compose/runtime/n;
 
     .line 2
     .line 3
@@ -84,7 +84,7 @@
     .line 4
     .line 5
     .line 6
-    invoke-virtual {p1, v0}, Landroidx/compose/runtime/p;->T(I)V
+    invoke-virtual {p1, v0}, Landroidx/compose/runtime/n;->R(I)V
 
     .line 7
     .line 8
@@ -93,7 +93,7 @@
 
     .line 10
     .line 11
-    invoke-static {v0, v1}, Landroidx/compose/ui/graphics/f0;->y(J)F
+    invoke-static {v0, v1}, Landroidx/compose/ui/graphics/G;->y(J)F
 
     .line 12
     .line 13
@@ -116,7 +116,7 @@
 
     .line 21
     .line 22
-    sget-object v0, Landroidx/compose/material/ripple/r;->b:Landroidx/compose/material/ripple/g;
+    sget-object v0, Landroidx/compose/material/ripple/p;->b:Landroidx/compose/material/ripple/f;
 
     .line 23
     .line 24
@@ -124,7 +124,7 @@
 
     .line 25
     :cond_0
-    sget-object v0, Landroidx/compose/material/ripple/r;->c:Landroidx/compose/material/ripple/g;
+    sget-object v0, Landroidx/compose/material/ripple/p;->c:Landroidx/compose/material/ripple/f;
 
     .line 26
     .line 27
@@ -132,7 +132,7 @@
     const/4 v1, 0x0
 
     .line 28
-    invoke-virtual {p1, v1}, Landroidx/compose/runtime/p;->q(Z)V
+    invoke-virtual {p1, v1}, Landroidx/compose/runtime/n;->p(Z)V
 
     .line 29
     .line 30

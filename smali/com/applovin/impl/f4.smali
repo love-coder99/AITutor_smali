@@ -45,8 +45,11 @@
 .method public a()I
     .locals 1
 
+    .line 1
     iget v0, p0, Lcom/applovin/impl/f4;->a:I
 
+    .line 2
+    .line 3
     return v0
 .end method
 
@@ -93,7 +96,7 @@
 
     .line 21
     .line 22
-    invoke-static {v0, v1, v2}, Landroid/support/v4/media/session/a;->I(Ljava/lang/StringBuilder;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v0, v1, v2}, LB/u;->w(Ljava/lang/StringBuilder;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     .line 23
     .line 24

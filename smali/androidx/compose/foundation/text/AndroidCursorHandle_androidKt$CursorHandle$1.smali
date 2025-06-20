@@ -3,14 +3,14 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lzh/e;
+.implements Lka/e;
 
 
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "Lkotlin/jvm/internal/Lambda;",
-        "Lzh/e;"
+        "Lka/e;"
     }
 .end annotation
 
@@ -19,9 +19,9 @@
         "\u0000\u0008\n\u0002\u0018\u0002\n\u0002\u0008\u0003\u0010\u0003\u001a\u00020\u0000H\u000b\u00a2\u0006\u0004\u0008\u0001\u0010\u0002"
     }
     d2 = {
-        "Lqh/r;",
+        "LX9/j;",
         "invoke",
-        "(Landroidx/compose/runtime/l;I)V",
+        "(Landroidx/compose/runtime/j;I)V",
         "<anonymous>"
     }
     k = 0x3
@@ -60,7 +60,7 @@
     .locals 0
 
     .line 1
-    check-cast p1, Landroidx/compose/runtime/l;
+    check-cast p1, Landroidx/compose/runtime/j;
 
     check-cast p2, Ljava/lang/Number;
 
@@ -68,14 +68,14 @@
 
     move-result p2
 
-    invoke-virtual {p0, p1, p2}, Landroidx/compose/foundation/text/AndroidCursorHandle_androidKt$CursorHandle$1;->invoke(Landroidx/compose/runtime/l;I)V
+    invoke-virtual {p0, p1, p2}, Landroidx/compose/foundation/text/AndroidCursorHandle_androidKt$CursorHandle$1;->invoke(Landroidx/compose/runtime/j;I)V
 
-    sget-object p1, Lqh/r;->a:Lqh/r;
+    sget-object p1, LX9/j;->a:LX9/j;
 
     return-object p1
 .end method
 
-.method public final invoke(Landroidx/compose/runtime/l;I)V
+.method public final invoke(Landroidx/compose/runtime/j;I)V
     .locals 7
 
     and-int/lit8 p2, p2, 0x3
@@ -84,12 +84,12 @@
 
     if-ne p2, v0, :cond_1
 
+    .line 2
     move-object p2, p1
 
-    check-cast p2, Landroidx/compose/runtime/p;
+    check-cast p2, Landroidx/compose/runtime/n;
 
-    .line 2
-    invoke-virtual {p2}, Landroidx/compose/runtime/p;->y()Z
+    invoke-virtual {p2}, Landroidx/compose/runtime/n;->x()Z
 
     move-result v0
 
@@ -99,10 +99,11 @@
 
     .line 3
     :cond_0
-    invoke-virtual {p2}, Landroidx/compose/runtime/p;->N()V
+    invoke-virtual {p2}, Landroidx/compose/runtime/n;->L()V
 
     goto/16 :goto_2
 
+    .line 4
     :cond_1
     :goto_0
     iget-wide v0, p0, Landroidx/compose/foundation/text/AndroidCursorHandle_androidKt$CursorHandle$1;->$minTouchTargetSize:J
@@ -113,28 +114,28 @@
 
     cmp-long v4, v0, v2
 
-    if-eqz v4, :cond_6
+    if-eqz v4, :cond_5
 
-    check-cast p1, Landroidx/compose/runtime/p;
+    check-cast p1, Landroidx/compose/runtime/n;
 
     const v0, 0x6d028268
 
-    .line 4
-    invoke-virtual {p1, v0}, Landroidx/compose/runtime/p;->T(I)V
-
-    iget-object v1, p0, Landroidx/compose/foundation/text/AndroidCursorHandle_androidKt$CursorHandle$1;->$finalModifier:Landroidx/compose/ui/o;
-
-    iget-wide v2, p0, Landroidx/compose/foundation/text/AndroidCursorHandle_androidKt$CursorHandle$1;->$minTouchTargetSize:J
+    invoke-virtual {p1, v0}, Landroidx/compose/runtime/n;->R(I)V
 
     .line 5
-    invoke-static {v2, v3}, Lh2/g;->b(J)F
+    iget-object v1, p0, Landroidx/compose/foundation/text/AndroidCursorHandle_androidKt$CursorHandle$1;->$finalModifier:Landroidx/compose/ui/o;
+
+    .line 6
+    iget-wide v2, p0, Landroidx/compose/foundation/text/AndroidCursorHandle_androidKt$CursorHandle$1;->$minTouchTargetSize:J
+
+    invoke-static {v2, v3}, LM0/g;->b(J)F
 
     move-result v2
 
+    .line 7
     iget-wide v3, p0, Landroidx/compose/foundation/text/AndroidCursorHandle_androidKt$CursorHandle$1;->$minTouchTargetSize:J
 
-    .line 6
-    invoke-static {v3, v4}, Lh2/g;->a(J)F
+    invoke-static {v3, v4}, LM0/g;->a(J)F
 
     move-result v3
 
@@ -144,88 +145,80 @@
 
     const/16 v6, 0xc
 
-    .line 7
-    invoke-static/range {v1 .. v6}, Landroidx/compose/foundation/layout/y0;->e(Landroidx/compose/ui/o;FFFFI)Landroidx/compose/ui/o;
+    .line 8
+    invoke-static/range {v1 .. v6}, Landroidx/compose/foundation/layout/W;->f(Landroidx/compose/ui/o;FFFFI)Landroidx/compose/ui/o;
 
     move-result-object v0
 
+    .line 9
     sget-object v1, Landroidx/compose/ui/b;->c:Landroidx/compose/ui/i;
 
-    .line 8
-    invoke-static {v1, p2}, Landroidx/compose/foundation/layout/n;->e(Landroidx/compose/ui/e;Z)Landroidx/compose/ui/layout/m0;
+    .line 10
+    invoke-static {v1, p2}, Landroidx/compose/foundation/layout/k;->e(Landroidx/compose/ui/e;Z)Landroidx/compose/ui/layout/J;
 
     move-result-object v1
 
-    .line 9
-    iget v2, p1, Landroidx/compose/runtime/p;->P:I
+    .line 11
+    iget v2, p1, Landroidx/compose/runtime/n;->P:I
 
-    .line 10
-    invoke-virtual {p1}, Landroidx/compose/runtime/p;->n()Landroidx/compose/runtime/q1;
+    .line 12
+    invoke-virtual {p1}, Landroidx/compose/runtime/n;->m()Landroidx/compose/runtime/g0;
 
     move-result-object v3
 
-    .line 11
-    invoke-static {p1, v0}, Landroidx/compose/ui/a;->c(Landroidx/compose/runtime/l;Landroidx/compose/ui/o;)Landroidx/compose/ui/o;
+    .line 13
+    invoke-static {p1, v0}, Landroidx/compose/ui/a;->d(Landroidx/compose/runtime/j;Landroidx/compose/ui/o;)Landroidx/compose/ui/o;
 
     move-result-object v0
 
-    .line 12
-    sget-object v4, Landroidx/compose/ui/node/h;->y8:Landroidx/compose/ui/node/g;
+    .line 14
+    sget-object v4, Landroidx/compose/ui/node/h;->A8:Landroidx/compose/ui/node/g;
 
     invoke-virtual {v4}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
-    .line 13
-    sget-object v4, Landroidx/compose/ui/node/g;->b:Lzh/a;
-
-    .line 14
-    iget-object v5, p1, Landroidx/compose/runtime/p;->a:Landroidx/compose/runtime/e;
-
-    instance-of v5, v5, Landroidx/compose/runtime/e;
-
-    const/4 v6, 0x0
-
-    if-eqz v5, :cond_5
-
     .line 15
-    invoke-virtual {p1}, Landroidx/compose/runtime/p;->X()V
+    sget-object v4, Landroidx/compose/ui/node/g;->b:Lka/a;
 
     .line 16
-    iget-boolean v5, p1, Landroidx/compose/runtime/p;->O:Z
+    invoke-virtual {p1}, Landroidx/compose/runtime/n;->V()V
+
+    .line 17
+    iget-boolean v5, p1, Landroidx/compose/runtime/n;->O:Z
 
     if-eqz v5, :cond_2
 
-    .line 17
-    invoke-virtual {p1, v4}, Landroidx/compose/runtime/p;->m(Lzh/a;)V
+    .line 18
+    invoke-virtual {p1, v4}, Landroidx/compose/runtime/n;->l(Lka/a;)V
 
     goto :goto_1
 
-    .line 18
-    :cond_2
-    invoke-virtual {p1}, Landroidx/compose/runtime/p;->g0()V
-
     .line 19
-    :goto_1
-    sget-object v4, Landroidx/compose/ui/node/g;->f:Lzh/e;
+    :cond_2
+    invoke-virtual {p1}, Landroidx/compose/runtime/n;->e0()V
 
     .line 20
-    invoke-static {p1, v1, v4}, Landroidx/compose/runtime/q;->x(Landroidx/compose/runtime/l;Ljava/lang/Object;Lzh/e;)V
+    :goto_1
+    sget-object v4, Landroidx/compose/ui/node/g;->f:Lka/e;
 
     .line 21
-    sget-object v1, Landroidx/compose/ui/node/g;->e:Lzh/e;
+    invoke-static {p1, v1, v4}, Landroidx/compose/runtime/o;->a0(Landroidx/compose/runtime/j;Ljava/lang/Object;Lka/e;)V
 
     .line 22
-    invoke-static {p1, v3, v1}, Landroidx/compose/runtime/q;->x(Landroidx/compose/runtime/l;Ljava/lang/Object;Lzh/e;)V
+    sget-object v1, Landroidx/compose/ui/node/g;->e:Lka/e;
 
     .line 23
-    sget-object v1, Landroidx/compose/ui/node/g;->g:Lzh/e;
+    invoke-static {p1, v3, v1}, Landroidx/compose/runtime/o;->a0(Landroidx/compose/runtime/j;Ljava/lang/Object;Lka/e;)V
 
     .line 24
-    iget-boolean v3, p1, Landroidx/compose/runtime/p;->O:Z
+    sget-object v1, Landroidx/compose/ui/node/g;->g:Lka/e;
+
+    .line 25
+    iget-boolean v3, p1, Landroidx/compose/runtime/n;->O:Z
 
     if-nez v3, :cond_3
 
-    .line 25
-    invoke-virtual {p1}, Landroidx/compose/runtime/p;->I()Ljava/lang/Object;
+    .line 26
+    invoke-virtual {p1}, Landroidx/compose/runtime/n;->G()Ljava/lang/Object;
 
     move-result-object v3
 
@@ -233,57 +226,53 @@
 
     move-result-object v4
 
-    invoke-static {v3, v4}, Lrb/h;->d(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v3, v4}, Lkotlin/jvm/internal/h;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result v3
 
     if-nez v3, :cond_4
 
-    .line 26
-    :cond_3
-    invoke-static {v2, p1, v2, v1}, Landroid/support/v4/media/session/a;->N(ILandroidx/compose/runtime/p;ILzh/e;)V
-
     .line 27
-    :cond_4
-    sget-object v1, Landroidx/compose/ui/node/g;->d:Lzh/e;
+    :cond_3
+    invoke-static {v2, p1, v2, v1}, Landroidx/appcompat/view/menu/F;->K(ILandroidx/compose/runtime/n;ILka/e;)V
 
     .line 28
-    invoke-static {p1, v0, v1}, Landroidx/compose/runtime/q;->x(Landroidx/compose/runtime/l;Ljava/lang/Object;Lzh/e;)V
-
-    const/4 v0, 0x1
+    :cond_4
+    sget-object v1, Landroidx/compose/ui/node/g;->d:Lka/e;
 
     .line 29
-    invoke-static {v6, p1, p2, v0}, Landroidx/compose/foundation/text/a;->b(Landroidx/compose/ui/o;Landroidx/compose/runtime/l;II)V
+    invoke-static {p1, v0, v1}, Landroidx/compose/runtime/o;->a0(Landroidx/compose/runtime/j;Ljava/lang/Object;Lka/e;)V
+
+    const/4 v0, 0x0
+
+    const/4 v1, 0x1
 
     .line 30
-    invoke-virtual {p1, v0}, Landroidx/compose/runtime/p;->q(Z)V
+    invoke-static {p2, v1, p1, v0}, Landroidx/compose/foundation/text/a;->b(IILandroidx/compose/runtime/j;Landroidx/compose/ui/o;)V
 
     .line 31
-    invoke-virtual {p1, p2}, Landroidx/compose/runtime/p;->q(Z)V
+    invoke-virtual {p1, v1}, Landroidx/compose/runtime/n;->p(Z)V
+
+    .line 32
+    invoke-virtual {p1, p2}, Landroidx/compose/runtime/n;->p(Z)V
 
     goto :goto_2
 
-    .line 32
+    .line 33
     :cond_5
-    invoke-static {}, Lb0/h;->N()V
-
-    throw v6
-
-    :cond_6
-    check-cast p1, Landroidx/compose/runtime/p;
+    check-cast p1, Landroidx/compose/runtime/n;
 
     const v0, 0x6d07a484
 
-    .line 33
-    invoke-virtual {p1, v0}, Landroidx/compose/runtime/p;->T(I)V
-
-    iget-object v0, p0, Landroidx/compose/foundation/text/AndroidCursorHandle_androidKt$CursorHandle$1;->$finalModifier:Landroidx/compose/ui/o;
+    invoke-virtual {p1, v0}, Landroidx/compose/runtime/n;->R(I)V
 
     .line 34
-    invoke-static {v0, p1, p2, p2}, Landroidx/compose/foundation/text/a;->b(Landroidx/compose/ui/o;Landroidx/compose/runtime/l;II)V
+    iget-object v0, p0, Landroidx/compose/foundation/text/AndroidCursorHandle_androidKt$CursorHandle$1;->$finalModifier:Landroidx/compose/ui/o;
+
+    invoke-static {p2, p2, p1, v0}, Landroidx/compose/foundation/text/a;->b(IILandroidx/compose/runtime/j;Landroidx/compose/ui/o;)V
 
     .line 35
-    invoke-virtual {p1, p2}, Landroidx/compose/runtime/p;->q(Z)V
+    invoke-virtual {p1, p2}, Landroidx/compose/runtime/n;->p(Z)V
 
     :goto_2
     return-void

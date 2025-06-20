@@ -3,14 +3,14 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lzh/a;
+.implements Lka/a;
 
 
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "Lkotlin/jvm/internal/Lambda;",
-        "Lzh/a;"
+        "Lka/a;"
     }
 .end annotation
 
@@ -35,14 +35,14 @@
 
 
 # instance fields
-.field final synthetic this$0:Landroidx/compose/foundation/y0;
+.field final synthetic this$0:Landroidx/compose/foundation/X;
 
 
 # direct methods
-.method public constructor <init>(Landroidx/compose/foundation/y0;)V
+.method public constructor <init>(Landroidx/compose/foundation/X;)V
     .locals 0
 
-    iput-object p1, p0, Landroidx/compose/foundation/ScrollState$canScrollBackward$2;->this$0:Landroidx/compose/foundation/y0;
+    iput-object p1, p0, Landroidx/compose/foundation/ScrollState$canScrollBackward$2;->this$0:Landroidx/compose/foundation/X;
 
     const/4 p1, 0x0
 
@@ -56,10 +56,14 @@
 .method public final invoke()Ljava/lang/Boolean;
     .locals 1
 
-    iget-object v0, p0, Landroidx/compose/foundation/ScrollState$canScrollBackward$2;->this$0:Landroidx/compose/foundation/y0;
-
     .line 1
-    invoke-virtual {v0}, Landroidx/compose/foundation/y0;->f()I
+    iget-object v0, p0, Landroidx/compose/foundation/ScrollState$canScrollBackward$2;->this$0:Landroidx/compose/foundation/X;
+
+    .line 2
+    iget-object v0, v0, Landroidx/compose/foundation/X;->a:Landroidx/compose/runtime/ParcelableSnapshotMutableIntState;
+
+    .line 3
+    invoke-virtual {v0}, Landroidx/compose/runtime/ParcelableSnapshotMutableIntState;->k()I
 
     move-result v0
 
@@ -72,6 +76,7 @@
     :cond_0
     const/4 v0, 0x0
 
+    .line 4
     :goto_0
     invoke-static {v0}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
 
@@ -83,7 +88,7 @@
 .method public bridge synthetic invoke()Ljava/lang/Object;
     .locals 1
 
-    .line 2
+    .line 5
     invoke-virtual {p0}, Landroidx/compose/foundation/ScrollState$canScrollBackward$2;->invoke()Ljava/lang/Boolean;
 
     move-result-object v0

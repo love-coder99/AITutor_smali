@@ -8,6 +8,9 @@
 
 # instance fields
 .field private mMatrix:Landroid/graphics/Matrix;
+    .annotation build Landroidx/annotation/Nullable;
+    .end annotation
+.end field
 
 .field private final mOnPreDrawListener:Landroid/view/ViewTreeObserver$OnPreDrawListener;
 
@@ -495,6 +498,14 @@
 
 .method public static setGhostView(Landroid/view/View;Landroidx/transition/GhostViewPort;)V
     .locals 1
+    .param p0    # Landroid/view/View;
+        .annotation build Landroidx/annotation/NonNull;
+        .end annotation
+    .end param
+    .param p1    # Landroidx/transition/GhostViewPort;
+        .annotation build Landroidx/annotation/Nullable;
+        .end annotation
+    .end param
 
     .line 1
     sget v0, Landroidx/transition/R$id;->ghost_view:I
@@ -700,6 +711,10 @@
 
 .method public onDraw(Landroid/graphics/Canvas;)V
     .locals 4
+    .param p1    # Landroid/graphics/Canvas;
+        .annotation build Landroidx/annotation/NonNull;
+        .end annotation
+    .end param
 
     .line 1
     const/4 v0, 0x1
@@ -786,18 +801,30 @@
 .method public reserveEndViewTransition(Landroid/view/ViewGroup;Landroid/view/View;)V
     .locals 0
 
+    .line 1
     iput-object p1, p0, Landroidx/transition/GhostViewPort;->mStartParent:Landroid/view/ViewGroup;
 
+    .line 2
+    .line 3
     iput-object p2, p0, Landroidx/transition/GhostViewPort;->mStartView:Landroid/view/View;
 
+    .line 4
+    .line 5
     return-void
 .end method
 
 .method public setMatrix(Landroid/graphics/Matrix;)V
     .locals 0
+    .param p1    # Landroid/graphics/Matrix;
+        .annotation build Landroidx/annotation/NonNull;
+        .end annotation
+    .end param
 
+    .line 1
     iput-object p1, p0, Landroidx/transition/GhostViewPort;->mMatrix:Landroid/graphics/Matrix;
 
+    .line 2
+    .line 3
     return-void
 .end method
 

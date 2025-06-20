@@ -42,7 +42,7 @@
     .line 2
     .line 3
     .line 4
-    invoke-static {}, Landroidx/compose/foundation/text/modifiers/f;->t()Ljava/util/Map;
+    invoke-static {}, Landroidx/compose/runtime/a0;->v()Ljava/util/Map;
 
     .line 5
     .line 6
@@ -112,7 +112,7 @@
 .method private a()Lcom/applovin/sdk/AppLovinAdRewardListener;
     .locals 1
 
-    .line 59
+    .line 66
     new-instance v0, Lcom/applovin/impl/ib$a;
 
     invoke-direct {v0, p0}, Lcom/applovin/impl/ib$a;-><init>(Lcom/applovin/impl/ib;)V
@@ -134,11 +134,12 @@
 .method private a(Lcom/applovin/sdk/AppLovinAd;Lcom/applovin/sdk/AppLovinAd;)Ljava/lang/String;
     .locals 2
 
+    .line 53
     const-string v0, "IncentivizedAdController"
 
     if-nez p1, :cond_0
 
-    .line 50
+    .line 54
     new-instance p1, Ljava/lang/StringBuilder;
 
     const-string v1, "Unable to retrieve the loaded ad. This can occur when attempting to show an expired ad.: "
@@ -153,11 +154,12 @@
 
     invoke-static {v0, p1}, Lcom/applovin/impl/sdk/n;->h(Ljava/lang/String;Ljava/lang/String;)V
 
+    .line 55
     const-string p1, "Unable to retrieve the loaded ad. This can occur when attempting to show an expired ad."
 
     return-object p1
 
-    .line 51
+    .line 56
     :cond_0
     invoke-interface {p2}, Lcom/applovin/sdk/AppLovinAd;->getType()Lcom/applovin/sdk/AppLovinAdType;
 
@@ -175,7 +177,7 @@
 
     if-eq p1, v1, :cond_1
 
-    .line 52
+    .line 57
     new-instance p1, Ljava/lang/StringBuilder;
 
     const-string v1, "Attempting to display ad with invalid ad type: "
@@ -194,6 +196,7 @@
 
     invoke-static {v0, p1}, Lcom/applovin/impl/sdk/n;->h(Ljava/lang/String;Ljava/lang/String;)V
 
+    .line 58
     const-string p1, "Attempting to display ad with invalid ad type"
 
     return-object p1
@@ -246,9 +249,9 @@
 
     invoke-direct/range {v0 .. v7}, Lcom/applovin/impl/ib$c;-><init>(Lcom/applovin/impl/ib;Lcom/applovin/sdk/AppLovinAd;Lcom/applovin/sdk/AppLovinAdRewardListener;Lcom/applovin/sdk/AppLovinAdVideoPlaybackListener;Lcom/applovin/sdk/AppLovinAdDisplayListener;Lcom/applovin/sdk/AppLovinAdClickListener;Lcom/applovin/impl/ib$a;)V
 
+    .line 19
     iget-object p3, p0, Lcom/applovin/impl/ib;->b:Lcom/applovin/impl/sdk/j;
 
-    .line 19
     invoke-static {p1, p3}, Lcom/applovin/impl/yp;->a(Lcom/applovin/sdk/AppLovinAd;Lcom/applovin/impl/sdk/j;)Lcom/applovin/sdk/AppLovinAd;
 
     move-result-object p3
@@ -270,10 +273,10 @@
 
     return-void
 
+    .line 23
     :cond_0
     iget-object p1, p0, Lcom/applovin/impl/ib;->b:Lcom/applovin/impl/sdk/j;
 
-    .line 23
     invoke-virtual {p1}, Lcom/applovin/impl/sdk/j;->q0()Lcom/applovin/sdk/AppLovinSdk;
 
     move-result-object p1
@@ -282,9 +285,9 @@
 
     move-result-object p1
 
+    .line 24
     iget-object p2, p0, Lcom/applovin/impl/ib;->a:Ljava/util/Map;
 
-    .line 24
     invoke-interface {p2}, Ljava/util/Map;->keySet()Ljava/util/Set;
 
     move-result-object p2
@@ -306,9 +309,9 @@
 
     check-cast p4, Ljava/lang/String;
 
+    .line 25
     iget-object p5, p0, Lcom/applovin/impl/ib;->a:Ljava/util/Map;
 
-    .line 25
     invoke-interface {p5, p4}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object p5
@@ -338,7 +341,7 @@
     return-void
 .end method
 
-.method private a(Lcom/applovin/impl/sdk/ad/AppLovinAdImpl;Landroid/view/ViewGroup;Landroidx/lifecycle/p;Landroid/content/Context;Lcom/applovin/sdk/AppLovinAdRewardListener;Lcom/applovin/sdk/AppLovinAdVideoPlaybackListener;Lcom/applovin/sdk/AppLovinAdDisplayListener;Lcom/applovin/sdk/AppLovinAdClickListener;)V
+.method private a(Lcom/applovin/impl/sdk/ad/AppLovinAdImpl;Landroid/view/ViewGroup;Landroidx/lifecycle/r;Landroid/content/Context;Lcom/applovin/sdk/AppLovinAdRewardListener;Lcom/applovin/sdk/AppLovinAdVideoPlaybackListener;Lcom/applovin/sdk/AppLovinAdDisplayListener;Lcom/applovin/sdk/AppLovinAdClickListener;)V
     .locals 11
 
     move-object v8, p0
@@ -366,9 +369,9 @@
 
     invoke-direct/range {v0 .. v7}, Lcom/applovin/impl/ib$c;-><init>(Lcom/applovin/impl/ib;Lcom/applovin/sdk/AppLovinAd;Lcom/applovin/sdk/AppLovinAdRewardListener;Lcom/applovin/sdk/AppLovinAdVideoPlaybackListener;Lcom/applovin/sdk/AppLovinAdDisplayListener;Lcom/applovin/sdk/AppLovinAdClickListener;Lcom/applovin/impl/ib$a;)V
 
+    .line 32
     iget-object v0, v8, Lcom/applovin/impl/ib;->b:Lcom/applovin/impl/sdk/j;
 
-    .line 32
     invoke-static {p1, v0}, Lcom/applovin/impl/yp;->a(Lcom/applovin/sdk/AppLovinAd;Lcom/applovin/impl/sdk/j;)Lcom/applovin/sdk/AppLovinAd;
 
     move-result-object v0
@@ -390,10 +393,10 @@
 
     return-void
 
+    .line 36
     :cond_0
     iget-object v1, v8, Lcom/applovin/impl/ib;->b:Lcom/applovin/impl/sdk/j;
 
-    .line 36
     invoke-virtual {v1}, Lcom/applovin/impl/sdk/j;->q0()Lcom/applovin/sdk/AppLovinSdk;
 
     move-result-object v1
@@ -404,9 +407,9 @@
 
     move-result-object v1
 
+    .line 37
     iget-object v2, v8, Lcom/applovin/impl/ib;->a:Ljava/util/Map;
 
-    .line 37
     invoke-interface {v2}, Ljava/util/Map;->keySet()Ljava/util/Set;
 
     move-result-object v2
@@ -428,9 +431,9 @@
 
     check-cast v3, Ljava/lang/String;
 
+    .line 38
     iget-object v4, v8, Lcom/applovin/impl/ib;->a:Ljava/util/Map;
 
-    .line 38
     invoke-interface {v4, v3}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object v4
@@ -454,7 +457,7 @@
     move-object v3, p3
 
     .line 42
-    invoke-interface {v1, v0, p2, p3}, Lcom/applovin/adview/AppLovinInterstitialAdDialog;->showAndRender(Lcom/applovin/sdk/AppLovinAd;Landroid/view/ViewGroup;Landroidx/lifecycle/p;)V
+    invoke-interface {v1, v0, p2, p3}, Lcom/applovin/adview/AppLovinInterstitialAdDialog;->showAndRender(Lcom/applovin/sdk/AppLovinAd;Landroid/view/ViewGroup;Landroidx/lifecycle/r;)V
 
     .line 43
     check-cast v0, Lcom/applovin/impl/sdk/ad/b;
@@ -474,9 +477,9 @@
 
     invoke-direct {v0, p1, p2, v1}, Lcom/applovin/impl/kn;-><init>(Lcom/applovin/impl/sdk/ad/b;Lcom/applovin/sdk/AppLovinAdRewardListener;Lcom/applovin/impl/sdk/j;)V
 
+    .line 45
     iget-object p1, p0, Lcom/applovin/impl/ib;->b:Lcom/applovin/impl/sdk/j;
 
-    .line 45
     invoke-virtual {p1}, Lcom/applovin/impl/sdk/j;->i0()Lcom/applovin/impl/tm;
 
     move-result-object p1
@@ -491,13 +494,14 @@
 .method private a(Lcom/applovin/sdk/AppLovinAd;)V
     .locals 3
 
+    .line 47
     iget-object v0, p0, Lcom/applovin/impl/ib;->d:Lcom/applovin/sdk/AppLovinAd;
 
     if-nez v0, :cond_0
 
     return-void
 
-    .line 47
+    .line 48
     :cond_0
     instance-of v1, v0, Lcom/applovin/impl/sdk/ad/c;
 
@@ -505,10 +509,10 @@
 
     if-eqz v1, :cond_2
 
-    .line 48
+    .line 49
     check-cast v0, Lcom/applovin/impl/sdk/ad/c;
 
-    .line 49
+    .line 50
     invoke-virtual {v0}, Lcom/applovin/impl/sdk/ad/c;->f()Lcom/applovin/sdk/AppLovinAd;
 
     move-result-object v1
@@ -521,6 +525,7 @@
 
     if-ne p1, v0, :cond_3
 
+    .line 51
     :cond_1
     iput-object v2, p0, Lcom/applovin/impl/ib;->d:Lcom/applovin/sdk/AppLovinAd;
 
@@ -529,6 +534,7 @@
     :cond_2
     if-ne p1, v0, :cond_3
 
+    .line 52
     iput-object v2, p0, Lcom/applovin/impl/ib;->d:Lcom/applovin/sdk/AppLovinAd;
 
     :cond_3
@@ -549,10 +555,10 @@
 
     goto :goto_1
 
+    .line 9
     :cond_0
     iget-object p1, p0, Lcom/applovin/impl/ib;->d:Lcom/applovin/sdk/AppLovinAd;
 
-    .line 9
     check-cast p1, Lcom/applovin/impl/sdk/ad/AppLovinAdImpl;
 
     goto :goto_0
@@ -577,12 +583,12 @@
 
     goto :goto_2
 
+    .line 11
     :cond_1
     const-string p1, "IncentivizedAdController"
 
     const-string p2, "Skipping incentivized video playback: user attempted to play an incentivized video before one was preloaded."
 
-    .line 11
     invoke-static {p1, p2}, Lcom/applovin/impl/sdk/n;->h(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 12
@@ -592,7 +598,7 @@
     return-void
 .end method
 
-.method private a(Lcom/applovin/sdk/AppLovinAd;Landroid/view/ViewGroup;Landroidx/lifecycle/p;Landroid/content/Context;Lcom/applovin/sdk/AppLovinAdRewardListener;Lcom/applovin/sdk/AppLovinAdVideoPlaybackListener;Lcom/applovin/sdk/AppLovinAdDisplayListener;Lcom/applovin/sdk/AppLovinAdClickListener;)V
+.method private a(Lcom/applovin/sdk/AppLovinAd;Landroid/view/ViewGroup;Landroidx/lifecycle/r;Landroid/content/Context;Lcom/applovin/sdk/AppLovinAdRewardListener;Lcom/applovin/sdk/AppLovinAdVideoPlaybackListener;Lcom/applovin/sdk/AppLovinAdDisplayListener;Lcom/applovin/sdk/AppLovinAdClickListener;)V
     .locals 10
 
     if-eqz p1, :cond_0
@@ -611,9 +617,9 @@
     :cond_0
     move-object v0, p0
 
+    .line 14
     iget-object v1, v0, Lcom/applovin/impl/ib;->d:Lcom/applovin/sdk/AppLovinAd;
 
-    .line 14
     check-cast v1, Lcom/applovin/impl/sdk/ad/AppLovinAdImpl;
 
     move-object v2, v1
@@ -638,16 +644,16 @@
     move-object/from16 v9, p8
 
     .line 15
-    invoke-direct/range {v1 .. v9}, Lcom/applovin/impl/ib;->a(Lcom/applovin/impl/sdk/ad/AppLovinAdImpl;Landroid/view/ViewGroup;Landroidx/lifecycle/p;Landroid/content/Context;Lcom/applovin/sdk/AppLovinAdRewardListener;Lcom/applovin/sdk/AppLovinAdVideoPlaybackListener;Lcom/applovin/sdk/AppLovinAdDisplayListener;Lcom/applovin/sdk/AppLovinAdClickListener;)V
+    invoke-direct/range {v1 .. v9}, Lcom/applovin/impl/ib;->a(Lcom/applovin/impl/sdk/ad/AppLovinAdImpl;Landroid/view/ViewGroup;Landroidx/lifecycle/r;Landroid/content/Context;Lcom/applovin/sdk/AppLovinAdRewardListener;Lcom/applovin/sdk/AppLovinAdVideoPlaybackListener;Lcom/applovin/sdk/AppLovinAdDisplayListener;Lcom/applovin/sdk/AppLovinAdClickListener;)V
 
     goto :goto_1
 
+    .line 16
     :cond_1
     const-string v1, "IncentivizedAdController"
 
     const-string v2, "Skipping incentivized video playback: user attempted to play an incentivized video before one was preloaded."
 
-    .line 16
     invoke-static {v1, v2}, Lcom/applovin/impl/sdk/n;->h(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 17
@@ -660,9 +666,9 @@
 .method private a(Lcom/applovin/sdk/AppLovinAd;Ljava/lang/String;Lcom/applovin/sdk/AppLovinAdVideoPlaybackListener;Lcom/applovin/impl/pb;)V
     .locals 3
 
+    .line 5
     iget-object v0, p0, Lcom/applovin/impl/ib;->b:Lcom/applovin/impl/sdk/j;
 
-    .line 5
     invoke-virtual {v0}, Lcom/applovin/impl/sdk/j;->C()Lcom/applovin/impl/ca;
 
     move-result-object v0
@@ -687,11 +693,11 @@
 .method private a(Lcom/applovin/sdk/AppLovinAdLoadListener;)V
     .locals 2
 
+    .line 46
     iget-object v0, p0, Lcom/applovin/impl/ib;->c:Lcom/applovin/impl/sdk/AppLovinAdServiceImpl;
 
     iget-object v1, p0, Lcom/applovin/impl/ib;->e:Ljava/lang/String;
 
-    .line 46
     invoke-virtual {v0, v1, p1}, Lcom/applovin/impl/sdk/AppLovinAdServiceImpl;->loadNextIncentivizedAd(Ljava/lang/String;Lcom/applovin/sdk/AppLovinAdLoadListener;)V
 
     return-void
@@ -700,15 +706,16 @@
 .method private a(Ljava/lang/String;)V
     .locals 1
 
+    .line 60
     iget-object v0, p0, Lcom/applovin/impl/ib;->g:Ljava/lang/Object;
 
-    .line 54
     monitor-enter v0
 
+    .line 61
     :try_start_0
     iput-object p1, p0, Lcom/applovin/impl/ib;->h:Ljava/lang/String;
 
-    .line 55
+    .line 62
     monitor-exit v0
 
     return-void
@@ -716,7 +723,7 @@
     :catchall_0
     move-exception p1
 
-    .line 56
+    .line 63
     monitor-exit v0
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
@@ -745,15 +752,15 @@
 .method private b()Ljava/lang/String;
     .locals 2
 
+    .line 3
     iget-object v0, p0, Lcom/applovin/impl/ib;->g:Ljava/lang/Object;
 
-    .line 3
     monitor-enter v0
 
+    .line 4
     :try_start_0
     iget-object v1, p0, Lcom/applovin/impl/ib;->h:Ljava/lang/String;
 
-    .line 4
     monitor-exit v0
 
     return-object v1
@@ -826,7 +833,7 @@
 
     if-nez p4, :cond_0
 
-    .line 57
+    .line 64
     invoke-direct {p0}, Lcom/applovin/impl/ib;->a()Lcom/applovin/sdk/AppLovinAdRewardListener;
 
     move-result-object p4
@@ -846,7 +853,7 @@
 
     move-object v6, p7
 
-    .line 58
+    .line 65
     invoke-direct/range {v0 .. v6}, Lcom/applovin/impl/ib;->a(Lcom/applovin/sdk/AppLovinAd;Landroid/content/Context;Lcom/applovin/sdk/AppLovinAdRewardListener;Lcom/applovin/sdk/AppLovinAdVideoPlaybackListener;Lcom/applovin/sdk/AppLovinAdDisplayListener;Lcom/applovin/sdk/AppLovinAdClickListener;)V
 
     return-void
@@ -855,15 +862,15 @@
 .method public a(Ljava/lang/String;Ljava/lang/Object;)V
     .locals 1
 
+    .line 59
     iget-object v0, p0, Lcom/applovin/impl/ib;->a:Ljava/util/Map;
 
-    .line 53
     invoke-interface {v0, p1, p2}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     return-void
 .end method
 
-.method public b(Lcom/applovin/sdk/AppLovinAd;Landroid/view/ViewGroup;Landroidx/lifecycle/p;Landroid/content/Context;Lcom/applovin/sdk/AppLovinAdRewardListener;Lcom/applovin/sdk/AppLovinAdVideoPlaybackListener;Lcom/applovin/sdk/AppLovinAdDisplayListener;Lcom/applovin/sdk/AppLovinAdClickListener;)V
+.method public b(Lcom/applovin/sdk/AppLovinAd;Landroid/view/ViewGroup;Landroidx/lifecycle/r;Landroid/content/Context;Lcom/applovin/sdk/AppLovinAdRewardListener;Lcom/applovin/sdk/AppLovinAdVideoPlaybackListener;Lcom/applovin/sdk/AppLovinAdDisplayListener;Lcom/applovin/sdk/AppLovinAdClickListener;)V
     .locals 10
 
     if-nez p5, :cond_0
@@ -898,7 +905,7 @@
     move-object/from16 v9, p8
 
     .line 13
-    invoke-direct/range {v1 .. v9}, Lcom/applovin/impl/ib;->a(Lcom/applovin/sdk/AppLovinAd;Landroid/view/ViewGroup;Landroidx/lifecycle/p;Landroid/content/Context;Lcom/applovin/sdk/AppLovinAdRewardListener;Lcom/applovin/sdk/AppLovinAdVideoPlaybackListener;Lcom/applovin/sdk/AppLovinAdDisplayListener;Lcom/applovin/sdk/AppLovinAdClickListener;)V
+    invoke-direct/range {v1 .. v9}, Lcom/applovin/impl/ib;->a(Lcom/applovin/sdk/AppLovinAd;Landroid/view/ViewGroup;Landroidx/lifecycle/r;Landroid/content/Context;Lcom/applovin/sdk/AppLovinAdRewardListener;Lcom/applovin/sdk/AppLovinAdVideoPlaybackListener;Lcom/applovin/sdk/AppLovinAdDisplayListener;Lcom/applovin/sdk/AppLovinAdClickListener;)V
 
     return-void
 .end method
@@ -906,9 +913,9 @@
 .method public b(Lcom/applovin/sdk/AppLovinAdLoadListener;)V
     .locals 3
 
+    .line 6
     iget-object v0, p0, Lcom/applovin/impl/ib;->b:Lcom/applovin/impl/sdk/j;
 
-    .line 6
     invoke-virtual {v0}, Lcom/applovin/impl/sdk/j;->I()Lcom/applovin/impl/sdk/n;
 
     invoke-static {}, Lcom/applovin/impl/sdk/n;->a()Z
@@ -944,16 +951,16 @@
 
     if-eqz v0, :cond_2
 
+    .line 9
     const-string v0, "Attempted to call preloadAndNotify: while an ad was already loaded or currently being played. Do not call preloadAndNotify: again until the last ad has been closed (adHidden)."
 
-    .line 9
     invoke-static {v1, v0}, Lcom/applovin/impl/sdk/n;->h(Ljava/lang/String;Ljava/lang/String;)V
 
     if-eqz p1, :cond_1
 
+    .line 10
     iget-object v0, p0, Lcom/applovin/impl/ib;->d:Lcom/applovin/sdk/AppLovinAd;
 
-    .line 10
     invoke-interface {p1, v0}, Lcom/applovin/sdk/AppLovinAdLoadListener;->adReceived(Lcom/applovin/sdk/AppLovinAd;)V
 
     :cond_1
@@ -973,25 +980,36 @@
 .method public c()Ljava/lang/String;
     .locals 1
 
+    .line 1
     iget-object v0, p0, Lcom/applovin/impl/ib;->e:Ljava/lang/String;
 
+    .line 2
+    .line 3
     return-object v0
 .end method
 
 .method public d()Z
     .locals 1
 
+    .line 1
     iget-object v0, p0, Lcom/applovin/impl/ib;->d:Lcom/applovin/sdk/AppLovinAd;
 
+    .line 2
+    .line 3
     if-eqz v0, :cond_0
 
+    .line 4
+    .line 5
     const/4 v0, 0x1
 
+    .line 6
     goto :goto_0
 
+    .line 7
     :cond_0
     const/4 v0, 0x0
 
+    .line 8
     :goto_0
     return v0
 .end method

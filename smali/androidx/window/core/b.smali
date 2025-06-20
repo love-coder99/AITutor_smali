@@ -66,10 +66,15 @@
     .line 1
     iget v0, p0, Landroidx/window/core/b;->d:I
 
+    .line 2
+    .line 3
     iget v1, p0, Landroidx/window/core/b;->b:I
 
+    .line 4
+    .line 5
     sub-int/2addr v0, v1
 
+    .line 6
     return v0
 .end method
 
@@ -79,10 +84,15 @@
     .line 1
     iget v0, p0, Landroidx/window/core/b;->c:I
 
+    .line 2
+    .line 3
     iget v1, p0, Landroidx/window/core/b;->a:I
 
+    .line 4
+    .line 5
     sub-int/2addr v0, v1
 
+    .line 6
     return v0
 .end method
 
@@ -157,7 +167,7 @@
 
     .line 14
     .line 15
-    invoke-static {v2, v1}, Lrb/h;->d(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-virtual {v2, v1}, Ljava/lang/Object;->equals(Ljava/lang/Object;)Z
 
     .line 16
     .line 17
@@ -271,26 +281,44 @@
 .method public final hashCode()I
     .locals 2
 
+    .line 1
     iget v0, p0, Landroidx/window/core/b;->a:I
 
+    .line 2
+    .line 3
     mul-int/lit8 v0, v0, 0x1f
 
+    .line 4
+    .line 5
     iget v1, p0, Landroidx/window/core/b;->b:I
 
+    .line 6
+    .line 7
     add-int/2addr v0, v1
 
+    .line 8
     mul-int/lit8 v0, v0, 0x1f
 
+    .line 9
+    .line 10
     iget v1, p0, Landroidx/window/core/b;->c:I
 
+    .line 11
+    .line 12
     add-int/2addr v0, v1
 
+    .line 13
     mul-int/lit8 v0, v0, 0x1f
 
+    .line 14
+    .line 15
     iget v1, p0, Landroidx/window/core/b;->d:I
 
+    .line 16
+    .line 17
     add-int/2addr v0, v1
 
+    .line 18
     return v0
 .end method
 
@@ -387,7 +415,7 @@
 
     .line 49
     .line 50
-    invoke-static {v0, v1, v2}, Lj0/d;->m(Ljava/lang/StringBuilder;ILjava/lang/String;)Ljava/lang/String;
+    invoke-static {v1, v2, v0}, LB/u;->o(ILjava/lang/String;Ljava/lang/StringBuilder;)Ljava/lang/String;
 
     .line 51
     .line 52

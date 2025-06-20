@@ -1,346 +1,198 @@
-.class public final Landroidx/camera/camera2/internal/compat/m;
-.super Ljava/lang/Object;
+.class public Landroidx/camera/camera2/internal/compat/m;
+.super LB2/e;
 .source "SourceFile"
 
 
-# instance fields
-.field public final a:Ljava/util/HashMap;
-
-.field public final b:Landroidx/camera/camera2/internal/compat/h;
-
-.field public final c:Ljava/lang/String;
-
-.field public d:Landroidx/camera/camera2/internal/compat/z;
-
-
-# direct methods
-.method public constructor <init>(Landroid/hardware/camera2/CameraCharacteristics;Ljava/lang/String;)V
-    .locals 2
+# virtual methods
+.method public s(Lw/v;)V
+    .locals 5
 
     .line 1
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    iget-object v0, p0, LB2/e;->c:Ljava/lang/Object;
 
     .line 2
     .line 3
+    check-cast v0, Landroid/hardware/camera2/CameraDevice;
+
     .line 4
-    new-instance v0, Ljava/util/HashMap;
-
     .line 5
-    .line 6
-    invoke-direct {v0}, Ljava/util/HashMap;-><init>()V
+    invoke-static {v0, p1}, LB2/e;->r(Landroid/hardware/camera2/CameraDevice;Lw/v;)V
 
+    .line 6
     .line 7
     .line 8
+    new-instance v1, Landroidx/camera/camera2/internal/compat/f;
+
     .line 9
-    iput-object v0, p0, Landroidx/camera/camera2/internal/compat/m;->a:Ljava/util/HashMap;
-
     .line 10
-    .line 11
-    const/4 v0, 0x0
+    iget-object p1, p1, Lw/v;->a:Lw/u;
 
+    .line 11
     .line 12
-    iput-object v0, p0, Landroidx/camera/camera2/internal/compat/m;->d:Landroidx/camera/camera2/internal/compat/z;
+    invoke-interface {p1}, Lw/u;->c()Ljava/util/concurrent/Executor;
 
     .line 13
     .line 14
-    sget v0, Landroid/os/Build$VERSION;->SDK_INT:I
-
     .line 15
+    move-result-object v2
+
     .line 16
-    const/16 v1, 0x1c
+    invoke-interface {p1}, Lw/u;->e()Landroid/hardware/camera2/CameraCaptureSession$StateCallback;
 
     .line 17
     .line 18
-    if-lt v0, v1, :cond_0
-
     .line 19
+    move-result-object v3
+
     .line 20
-    new-instance v0, Landroidx/camera/camera2/internal/compat/k;
+    invoke-direct {v1, v2, v3}, Landroidx/camera/camera2/internal/compat/f;-><init>(Ljava/util/concurrent/Executor;Landroid/hardware/camera2/CameraCaptureSession$StateCallback;)V
 
     .line 21
     .line 22
-    invoke-direct {v0, p1}, Landroidx/camera/camera2/internal/compat/h;-><init>(Ljava/lang/Object;)V
-
     .line 23
+    invoke-interface {p1}, Lw/u;->f()Ljava/util/List;
+
     .line 24
     .line 25
-    iput-object v0, p0, Landroidx/camera/camera2/internal/compat/m;->b:Landroidx/camera/camera2/internal/compat/h;
-
     .line 26
+    move-result-object v2
+
     .line 27
-    goto :goto_0
+    invoke-static {v2}, LB2/e;->M(Ljava/util/List;)Ljava/util/ArrayList;
 
     .line 28
-    :cond_0
-    new-instance v0, Landroidx/camera/camera2/internal/compat/h;
-
     .line 29
     .line 30
-    invoke-direct {v0, p1}, Landroidx/camera/camera2/internal/compat/h;-><init>(Ljava/lang/Object;)V
+    move-result-object v2
 
     .line 31
+    iget-object v3, p0, LB2/e;->d:Ljava/lang/Object;
+
     .line 32
     .line 33
-    iput-object v0, p0, Landroidx/camera/camera2/internal/compat/m;->b:Landroidx/camera/camera2/internal/compat/h;
+    check-cast v3, LQ/d;
 
     .line 34
     .line 35
-    :goto_0
-    iput-object p2, p0, Landroidx/camera/camera2/internal/compat/m;->c:Ljava/lang/String;
+    invoke-virtual {v3}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
     .line 36
     .line 37
-    return-void
-.end method
+    .line 38
+    invoke-interface {p1}, Lw/u;->b()Lw/h;
 
+    .line 39
+    .line 40
+    .line 41
+    move-result-object v4
 
-# virtual methods
-.method public final a(Landroid/hardware/camera2/CameraCharacteristics$Key;)Ljava/lang/Object;
-    .locals 2
+    .line 42
+    iget-object v3, v3, LQ/d;->c:Ljava/lang/Object;
 
-    .line 1
-    sget-object v0, Landroid/hardware/camera2/CameraCharacteristics;->SENSOR_ORIENTATION:Landroid/hardware/camera2/CameraCharacteristics$Key;
+    .line 43
+    .line 44
+    check-cast v3, Landroid/os/Handler;
 
-    .line 2
-    .line 3
-    invoke-virtual {p1, v0}, Landroid/hardware/camera2/CameraCharacteristics$Key;->equals(Ljava/lang/Object;)Z
+    .line 45
+    .line 46
+    if-eqz v4, :cond_0
 
-    .line 4
-    .line 5
-    .line 6
-    move-result v0
-
-    .line 7
-    if-eqz v0, :cond_0
-
-    .line 8
-    .line 9
-    iget-object v0, p0, Landroidx/camera/camera2/internal/compat/m;->b:Landroidx/camera/camera2/internal/compat/h;
-
-    .line 10
-    .line 11
-    iget-object v0, v0, Landroidx/camera/camera2/internal/compat/h;->a:Ljava/lang/Object;
-
-    .line 12
-    .line 13
-    check-cast v0, Landroid/hardware/camera2/CameraCharacteristics;
-
-    .line 14
-    .line 15
-    invoke-virtual {v0, p1}, Landroid/hardware/camera2/CameraCharacteristics;->get(Landroid/hardware/camera2/CameraCharacteristics$Key;)Ljava/lang/Object;
-
-    .line 16
-    .line 17
-    .line 18
-    move-result-object p1
-
-    .line 19
-    return-object p1
-
-    .line 20
-    :cond_0
-    monitor-enter p0
-
-    .line 21
+    .line 47
+    .line 48
     :try_start_0
-    iget-object v0, p0, Landroidx/camera/camera2/internal/compat/m;->a:Ljava/util/HashMap;
+    iget-object p1, v4, Lw/h;->a:Lw/e;
 
-    .line 22
-    .line 23
-    invoke-virtual {v0, p1}, Ljava/util/HashMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
+    .line 49
+    .line 50
+    iget-object p1, p1, Lw/e;->a:Landroid/hardware/camera2/params/InputConfiguration;
 
-    .line 24
-    .line 25
-    .line 26
-    move-result-object v0
+    .line 51
+    .line 52
+    invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
-    .line 27
-    if-eqz v0, :cond_1
+    .line 53
+    .line 54
+    .line 55
+    invoke-virtual {v0, p1, v2, v1, v3}, Landroid/hardware/camera2/CameraDevice;->createReprocessableCaptureSession(Landroid/hardware/camera2/params/InputConfiguration;Ljava/util/List;Landroid/hardware/camera2/CameraCaptureSession$StateCallback;Landroid/os/Handler;)V
 
-    .line 28
-    .line 29
-    monitor-exit p0
+    .line 56
+    .line 57
+    .line 58
+    goto :goto_0
 
-    .line 30
-    return-object v0
-
-    .line 31
-    :catchall_0
+    .line 59
+    :catch_0
     move-exception p1
 
-    .line 32
-    goto :goto_0
-
-    .line 33
-    :cond_1
-    iget-object v0, p0, Landroidx/camera/camera2/internal/compat/m;->b:Landroidx/camera/camera2/internal/compat/h;
-
-    .line 34
-    .line 35
-    iget-object v0, v0, Landroidx/camera/camera2/internal/compat/h;->a:Ljava/lang/Object;
-
-    .line 36
-    .line 37
-    check-cast v0, Landroid/hardware/camera2/CameraCharacteristics;
-
-    .line 38
-    .line 39
-    invoke-virtual {v0, p1}, Landroid/hardware/camera2/CameraCharacteristics;->get(Landroid/hardware/camera2/CameraCharacteristics$Key;)Ljava/lang/Object;
-
-    .line 40
-    .line 41
-    .line 42
-    move-result-object v0
-
-    .line 43
-    if-eqz v0, :cond_2
-
-    .line 44
-    .line 45
-    iget-object v1, p0, Landroidx/camera/camera2/internal/compat/m;->a:Ljava/util/HashMap;
-
-    .line 46
-    .line 47
-    invoke-virtual {v1, p1, v0}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
-
-    .line 48
-    .line 49
-    .line 50
-    :cond_2
-    monitor-exit p0
-
-    .line 51
-    return-object v0
-
-    .line 52
-    :goto_0
-    monitor-exit p0
-    :try_end_0
-    .catchall {:try_start_0 .. :try_end_0} :catchall_0
-
-    .line 53
-    throw p1
-.end method
-
-.method public final b()Landroidx/camera/camera2/internal/compat/z;
-    .locals 3
-
-    .line 1
-    iget-object v0, p0, Landroidx/camera/camera2/internal/compat/m;->d:Landroidx/camera/camera2/internal/compat/z;
-
-    .line 2
-    .line 3
-    if-nez v0, :cond_1
-
-    .line 4
-    .line 5
-    :try_start_0
-    sget-object v0, Landroid/hardware/camera2/CameraCharacteristics;->SCALER_STREAM_CONFIGURATION_MAP:Landroid/hardware/camera2/CameraCharacteristics$Key;
-
-    .line 6
-    .line 7
-    invoke-virtual {p0, v0}, Landroidx/camera/camera2/internal/compat/m;->a(Landroid/hardware/camera2/CameraCharacteristics$Key;)Ljava/lang/Object;
-
-    .line 8
-    .line 9
-    .line 10
-    move-result-object v0
-
-    .line 11
-    check-cast v0, Landroid/hardware/camera2/params/StreamConfigurationMap;
-    :try_end_0
-    .catch Ljava/lang/NullPointerException; {:try_start_0 .. :try_end_0} :catch_1
-    .catch Ljava/lang/AssertionError; {:try_start_0 .. :try_end_0} :catch_0
-
-    .line 12
-    .line 13
-    if-eqz v0, :cond_0
-
-    .line 14
-    .line 15
-    new-instance v1, Lh5/v;
-
-    .line 16
-    .line 17
-    iget-object v2, p0, Landroidx/camera/camera2/internal/compat/m;->c:Ljava/lang/String;
-
-    .line 18
-    .line 19
-    invoke-direct {v1, v2}, Lh5/v;-><init>(Ljava/lang/String;)V
-
-    .line 20
-    .line 21
-    .line 22
-    new-instance v2, Landroidx/camera/camera2/internal/compat/z;
-
-    .line 23
-    .line 24
-    invoke-direct {v2, v0, v1}, Landroidx/camera/camera2/internal/compat/z;-><init>(Landroid/hardware/camera2/params/StreamConfigurationMap;Lh5/v;)V
-
-    .line 25
-    .line 26
-    .line 27
-    iput-object v2, p0, Landroidx/camera/camera2/internal/compat/m;->d:Landroidx/camera/camera2/internal/compat/z;
-
-    .line 28
-    .line 29
+    .line 60
     goto :goto_1
 
-    .line 30
+    .line 61
     :cond_0
-    new-instance v0, Ljava/lang/IllegalArgumentException;
+    invoke-interface {p1}, Lw/u;->d()I
 
-    .line 31
-    .line 32
-    const-string v1, "StreamConfigurationMap is null!"
+    .line 62
+    .line 63
+    .line 64
+    move-result p1
 
-    .line 33
-    .line 34
-    invoke-direct {v0, v1}, Ljava/lang/IllegalArgumentException;-><init>(Ljava/lang/String;)V
+    .line 65
+    const/4 v4, 0x1
 
-    .line 35
-    .line 36
-    .line 37
-    throw v0
+    .line 66
+    if-ne p1, v4, :cond_1
 
-    .line 38
-    :catch_0
-    move-exception v0
+    .line 67
+    .line 68
+    invoke-virtual {v0, v2, v1, v3}, Landroid/hardware/camera2/CameraDevice;->createConstrainedHighSpeedCaptureSession(Ljava/util/List;Landroid/hardware/camera2/CameraCaptureSession$StateCallback;Landroid/os/Handler;)V
+    :try_end_0
+    .catch Landroid/hardware/camera2/CameraAccessException; {:try_start_0 .. :try_end_0} :catch_0
 
-    .line 39
+    .line 69
+    .line 70
+    .line 71
     goto :goto_0
 
-    .line 40
-    :catch_1
-    move-exception v0
-
-    .line 41
-    :goto_0
-    new-instance v1, Ljava/lang/IllegalArgumentException;
-
-    .line 42
-    .line 43
-    invoke-virtual {v0}, Ljava/lang/Throwable;->getMessage()Ljava/lang/String;
-
-    .line 44
-    .line 45
-    .line 46
-    move-result-object v0
-
-    .line 47
-    invoke-direct {v1, v0}, Ljava/lang/IllegalArgumentException;-><init>(Ljava/lang/String;)V
-
-    .line 48
-    .line 49
-    .line 50
-    throw v1
-
-    .line 51
+    .line 72
     :cond_1
-    :goto_1
-    iget-object v0, p0, Landroidx/camera/camera2/internal/compat/m;->d:Landroidx/camera/camera2/internal/compat/z;
+    :try_start_1
+    invoke-virtual {v0, v2, v1, v3}, Landroid/hardware/camera2/CameraDevice;->createCaptureSession(Ljava/util/List;Landroid/hardware/camera2/CameraCaptureSession$StateCallback;Landroid/os/Handler;)V
+    :try_end_1
+    .catch Landroid/hardware/camera2/CameraAccessException; {:try_start_1 .. :try_end_1} :catch_1
 
-    .line 52
-    .line 53
-    return-object v0
+    .line 73
+    .line 74
+    .line 75
+    :goto_0
+    return-void
+
+    .line 76
+    :catch_1
+    move-exception p1
+
+    .line 77
+    :try_start_2
+    invoke-static {p1}, Landroidx/camera/camera2/internal/compat/CameraAccessExceptionCompat;->toCameraAccessExceptionCompat(Landroid/hardware/camera2/CameraAccessException;)Landroidx/camera/camera2/internal/compat/CameraAccessExceptionCompat;
+
+    .line 78
+    .line 79
+    .line 80
+    move-result-object p1
+
+    .line 81
+    throw p1
+    :try_end_2
+    .catch Landroid/hardware/camera2/CameraAccessException; {:try_start_2 .. :try_end_2} :catch_0
+
+    .line 82
+    :goto_1
+    invoke-static {p1}, Landroidx/camera/camera2/internal/compat/CameraAccessExceptionCompat;->toCameraAccessExceptionCompat(Landroid/hardware/camera2/CameraAccessException;)Landroidx/camera/camera2/internal/compat/CameraAccessExceptionCompat;
+
+    .line 83
+    .line 84
+    .line 85
+    move-result-object p1
+
+    .line 86
+    throw p1
 .end method

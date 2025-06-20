@@ -4,6 +4,16 @@
 
 
 # annotations
+.annotation runtime Lca/c;
+    c = "androidx.compose.foundation.AndroidEdgeEffectOverscrollEffect"
+    f = "AndroidOverscroll.android.kt"
+    l = {
+        0x215,
+        0x22f
+    }
+    m = "applyToFling-BMRW4eQ"
+.end annotation
+
 .annotation runtime Lkotlin/Metadata;
     k = 0x3
     mv = {
@@ -12,16 +22,6 @@
         0x0
     }
     xi = 0x30
-.end annotation
-
-.annotation runtime Lth/c;
-    c = "androidx.compose.foundation.AndroidEdgeEffectOverscrollEffect"
-    f = "AndroidOverscroll.android.kt"
-    l = {
-        0x215,
-        0x22f
-    }
-    m = "applyToFling-BMRW4eQ"
 .end annotation
 
 
@@ -79,7 +79,7 @@
 
     const/4 v2, 0x0
 
-    invoke-virtual {p1, v0, v1, v2, p0}, Landroidx/compose/foundation/b;->a(JLzh/e;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
+    invoke-virtual {p1, v0, v1, v2, p0}, Landroidx/compose/foundation/b;->e(JLka/e;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
 
     move-result-object p1
 

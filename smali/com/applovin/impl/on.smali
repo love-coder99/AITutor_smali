@@ -708,10 +708,6 @@
     .line 274
     .line 275
     .line 276
-    .line 277
-    .line 278
-    .line 279
-    .line 280
     :pswitch_data_0
     .packed-switch 0x15e
         :pswitch_2

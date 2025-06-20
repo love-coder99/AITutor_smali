@@ -42,7 +42,7 @@
 
     iget-object v2, p0, Lcom/applovin/impl/sdk/r;->b:Lcom/applovin/impl/sdk/AppLovinAdServiceImpl;
 
-    invoke-static {v2, v0, v1, p1}, Lcom/applovin/impl/sdk/AppLovinAdServiceImpl;->f(Lcom/applovin/impl/sdk/AppLovinAdServiceImpl;Lcom/applovin/impl/sdk/AppLovinAdServiceImpl$c;Lcom/applovin/impl/h0;Lcom/applovin/impl/sdk/ad/b;)V
+    invoke-static {v2, v0, v1, p1}, Lcom/applovin/impl/sdk/AppLovinAdServiceImpl;->b(Lcom/applovin/impl/sdk/AppLovinAdServiceImpl;Lcom/applovin/impl/sdk/AppLovinAdServiceImpl$c;Lcom/applovin/impl/h0;Lcom/applovin/impl/sdk/ad/b;)V
 
     return-void
 .end method

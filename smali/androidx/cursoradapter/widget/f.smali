@@ -120,15 +120,21 @@
 .method public setDropDownViewResource(I)V
     .locals 0
 
+    .line 1
     iput p1, p0, Landroidx/cursoradapter/widget/f;->mDropDownLayout:I
 
+    .line 2
+    .line 3
     return-void
 .end method
 
 .method public setViewResource(I)V
     .locals 0
 
+    .line 1
     iput p1, p0, Landroidx/cursoradapter/widget/f;->mLayout:I
 
+    .line 2
+    .line 3
     return-void
 .end method

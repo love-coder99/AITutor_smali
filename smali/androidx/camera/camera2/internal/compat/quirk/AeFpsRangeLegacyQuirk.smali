@@ -3,7 +3,7 @@
 .source "SourceFile"
 
 # interfaces
-.implements Landroidx/camera/core/impl/o1;
+.implements Landroidx/camera/core/impl/i0;
 
 
 # instance fields
@@ -11,7 +11,7 @@
 
 
 # direct methods
-.method public constructor <init>(Landroidx/camera/camera2/internal/compat/m;)V
+.method public constructor <init>(Landroidx/camera/camera2/internal/compat/j;)V
     .locals 8
 
     .line 1
@@ -24,7 +24,7 @@
 
     .line 5
     .line 6
-    invoke-virtual {p1, v0}, Landroidx/camera/camera2/internal/compat/m;->a(Landroid/hardware/camera2/CameraCharacteristics$Key;)Ljava/lang/Object;
+    invoke-virtual {p1, v0}, Landroidx/camera/camera2/internal/compat/j;->a(Landroid/hardware/camera2/CameraCharacteristics$Key;)Ljava/lang/Object;
 
     .line 7
     .line 8

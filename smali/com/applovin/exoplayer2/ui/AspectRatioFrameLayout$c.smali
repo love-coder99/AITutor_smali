@@ -33,9 +33,9 @@
 .method private constructor <init>(Lcom/applovin/exoplayer2/ui/AspectRatioFrameLayout;)V
     .locals 0
 
+    .line 1
     iput-object p1, p0, Lcom/applovin/exoplayer2/ui/AspectRatioFrameLayout$c;->f:Lcom/applovin/exoplayer2/ui/AspectRatioFrameLayout;
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void

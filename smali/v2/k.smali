@@ -1,150 +1,80 @@
-.class public final Lv2/k;
-.super Lv2/l;
+.class public final LV2/k;
+.super Ljava/lang/Object;
 .source "SourceFile"
+
+# interfaces
+.implements Ljava/lang/Iterable;
 
 
 # instance fields
-.field public f:Z
+.field public final synthetic b:I
+
+.field public final c:Ljava/lang/Iterable;
+
+
+# direct methods
+.method public synthetic constructor <init>(Ljava/lang/Iterable;I)V
+    .locals 0
+
+    .line 1
+    iput p2, p0, LV2/k;->b:I
+
+    iput-object p1, p0, LV2/k;->c:Ljava/lang/Iterable;
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    return-void
+.end method
 
 
 # virtual methods
-.method public final c(Landroid/view/View;F)V
-    .locals 6
+.method public final iterator()Ljava/util/Iterator;
+    .locals 1
 
     .line 1
-    instance-of v0, p1, Landroidx/constraintlayout/motion/widget/MotionLayout;
+    iget v0, p0, LV2/k;->b:I
 
     .line 2
     .line 3
-    if-eqz v0, :cond_0
+    packed-switch v0, :pswitch_data_0
 
     .line 4
     .line 5
-    check-cast p1, Landroidx/constraintlayout/motion/widget/MotionLayout;
-
     .line 6
-    .line 7
-    invoke-virtual {p0, p2}, Lv2/l;->a(F)F
+    new-instance v0, Lcom/google/common/base/i;
 
+    .line 7
     .line 8
+    invoke-direct {v0, p0}, Lcom/google/common/base/i;-><init>(LV2/k;)V
+
     .line 9
     .line 10
-    move-result p2
-
     .line 11
-    invoke-virtual {p1, p2}, Landroidx/constraintlayout/motion/widget/MotionLayout;->setProgress(F)V
+    return-object v0
 
     .line 12
+    :pswitch_0
+    iget-object v0, p0, LV2/k;->c:Ljava/lang/Iterable;
+
     .line 13
     .line 14
-    goto :goto_1
+    check-cast v0, Ljava/util/ArrayList;
 
     .line 15
-    :cond_0
-    iget-boolean v0, p0, Lv2/k;->f:Z
-
     .line 16
-    .line 17
-    if-eqz v0, :cond_1
+    invoke-virtual {v0}, Ljava/util/ArrayList;->iterator()Ljava/util/Iterator;
 
+    .line 17
     .line 18
     .line 19
-    return-void
+    move-result-object v0
 
     .line 20
-    :cond_1
-    const/4 v0, 0x0
+    return-object v0
 
     .line 21
-    const/4 v1, 0x1
-
-    .line 22
-    :try_start_0
-    invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
-
-    .line 23
-    .line 24
-    .line 25
-    move-result-object v2
-
-    .line 26
-    const-string v3, "setProgress"
-
-    .line 27
-    .line 28
-    new-array v4, v1, [Ljava/lang/Class;
-
-    .line 29
-    .line 30
-    sget-object v5, Ljava/lang/Float;->TYPE:Ljava/lang/Class;
-
-    .line 31
-    .line 32
-    aput-object v5, v4, v0
-
-    .line 33
-    .line 34
-    invoke-virtual {v2, v3, v4}, Ljava/lang/Class;->getMethod(Ljava/lang/String;[Ljava/lang/Class;)Ljava/lang/reflect/Method;
-
-    .line 35
-    .line 36
-    .line 37
-    move-result-object v2
-    :try_end_0
-    .catch Ljava/lang/NoSuchMethodException; {:try_start_0 .. :try_end_0} :catch_0
-
-    .line 38
-    goto :goto_0
-
-    .line 39
-    :catch_0
-    iput-boolean v1, p0, Lv2/k;->f:Z
-
-    .line 40
-    .line 41
-    const/4 v2, 0x0
-
-    .line 42
-    :goto_0
-    if-eqz v2, :cond_2
-
-    .line 43
-    .line 44
-    :try_start_1
-    new-array v1, v1, [Ljava/lang/Object;
-
-    .line 45
-    .line 46
-    invoke-virtual {p0, p2}, Lv2/l;->a(F)F
-
-    .line 47
-    .line 48
-    .line 49
-    move-result p2
-
-    .line 50
-    invoke-static {p2}, Ljava/lang/Float;->valueOf(F)Ljava/lang/Float;
-
-    .line 51
-    .line 52
-    .line 53
-    move-result-object p2
-
-    .line 54
-    aput-object p2, v1, v0
-
-    .line 55
-    .line 56
-    invoke-virtual {v2, p1, v1}, Ljava/lang/reflect/Method;->invoke(Ljava/lang/Object;[Ljava/lang/Object;)Ljava/lang/Object;
-    :try_end_1
-    .catch Ljava/lang/IllegalAccessException; {:try_start_1 .. :try_end_1} :catch_1
-    .catch Ljava/lang/reflect/InvocationTargetException; {:try_start_1 .. :try_end_1} :catch_1
-
-    .line 57
-    .line 58
-    .line 59
-    :catch_1
-    :cond_2
-    :goto_1
-    return-void
+    :pswitch_data_0
+    .packed-switch 0x0
+        :pswitch_0
+    .end packed-switch
 .end method

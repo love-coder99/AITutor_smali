@@ -53,9 +53,9 @@
     :cond_0
     new-instance v0, Landroid/util/Pair;
 
+    .line 5
     const-string v1, "LicenseDurationRemaining"
 
-    .line 5
     invoke-static {p0, v1}, Lcom/applovin/impl/bs;->a(Ljava/util/Map;Ljava/lang/String;)J
 
     move-result-wide v1
@@ -64,9 +64,9 @@
 
     move-result-object v1
 
+    .line 6
     const-string v2, "PlaybackDurationRemaining"
 
-    .line 6
     invoke-static {p0, v2}, Lcom/applovin/impl/bs;->a(Ljava/util/Map;Ljava/lang/String;)J
 
     move-result-wide v2

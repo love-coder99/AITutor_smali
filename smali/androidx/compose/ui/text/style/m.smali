@@ -10,7 +10,7 @@
 .method public abstract b()J
 .end method
 
-.method public abstract c(Lzh/a;)Landroidx/compose/ui/text/style/m;
+.method public abstract c(Lka/a;)Landroidx/compose/ui/text/style/m;
 .end method
 
 .method public abstract d(Landroidx/compose/ui/text/style/m;)Landroidx/compose/ui/text/style/m;

@@ -4,6 +4,15 @@
 
 
 # annotations
+.annotation runtime Lca/c;
+    c = "androidx.compose.foundation.gestures.DragGestureNode"
+    f = "Draggable.kt"
+    l = {
+        0x236
+    }
+    m = "processDragCancel"
+.end annotation
+
 .annotation runtime Lkotlin/Metadata;
     k = 0x3
     mv = {
@@ -12,15 +21,6 @@
         0x0
     }
     xi = 0x30
-.end annotation
-
-.annotation runtime Lth/c;
-    c = "androidx.compose.foundation.gestures.DragGestureNode"
-    f = "Draggable.kt"
-    l = {
-        0x236
-    }
-    m = "processDragCancel"
 .end annotation
 
 
@@ -72,7 +72,7 @@
 
     iget-object p1, p0, Landroidx/compose/foundation/gestures/DragGestureNode$processDragCancel$1;->this$0:Landroidx/compose/foundation/gestures/t;
 
-    invoke-static {p1, p0}, Landroidx/compose/foundation/gestures/t;->D0(Landroidx/compose/foundation/gestures/t;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
+    invoke-static {p1, p0}, Landroidx/compose/foundation/gestures/t;->B0(Landroidx/compose/foundation/gestures/t;Lkotlin/coroutines/jvm/internal/ContinuationImpl;)Ljava/lang/Object;
 
     move-result-object p1
 

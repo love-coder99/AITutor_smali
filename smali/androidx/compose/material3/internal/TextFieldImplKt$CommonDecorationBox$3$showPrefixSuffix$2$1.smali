@@ -3,14 +3,14 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lzh/a;
+.implements Lka/a;
 
 
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "Lkotlin/jvm/internal/Lambda;",
-        "Lzh/a;"
+        "Lka/a;"
     }
 .end annotation
 
@@ -35,27 +35,27 @@
 
 
 # instance fields
-.field final synthetic $prefixSuffixAlpha:Landroidx/compose/runtime/d3;
+.field final synthetic $prefixSuffixAlpha:Landroidx/compose/runtime/H0;
     .annotation system Ldalvik/annotation/Signature;
         value = {
-            "Landroidx/compose/runtime/d3;"
+            "Landroidx/compose/runtime/H0;"
         }
     .end annotation
 .end field
 
 
 # direct methods
-.method public constructor <init>(Landroidx/compose/runtime/d3;)V
+.method public constructor <init>(Landroidx/compose/runtime/H0;)V
     .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
-            "Landroidx/compose/runtime/d3;",
+            "Landroidx/compose/runtime/H0;",
             ")V"
         }
     .end annotation
 
-    iput-object p1, p0, Landroidx/compose/material3/internal/TextFieldImplKt$CommonDecorationBox$3$showPrefixSuffix$2$1;->$prefixSuffixAlpha:Landroidx/compose/runtime/d3;
+    iput-object p1, p0, Landroidx/compose/material3/internal/TextFieldImplKt$CommonDecorationBox$3$showPrefixSuffix$2$1;->$prefixSuffixAlpha:Landroidx/compose/runtime/H0;
 
     const/4 p1, 0x0
 
@@ -69,10 +69,10 @@
 .method public final invoke()Ljava/lang/Boolean;
     .locals 2
 
-    iget-object v0, p0, Landroidx/compose/material3/internal/TextFieldImplKt$CommonDecorationBox$3$showPrefixSuffix$2$1;->$prefixSuffixAlpha:Landroidx/compose/runtime/d3;
-
     .line 1
-    invoke-interface {v0}, Landroidx/compose/runtime/d3;->getValue()Ljava/lang/Object;
+    iget-object v0, p0, Landroidx/compose/material3/internal/TextFieldImplKt$CommonDecorationBox$3$showPrefixSuffix$2$1;->$prefixSuffixAlpha:Landroidx/compose/runtime/H0;
+
+    invoke-interface {v0}, Landroidx/compose/runtime/H0;->getValue()Ljava/lang/Object;
 
     move-result-object v0
 

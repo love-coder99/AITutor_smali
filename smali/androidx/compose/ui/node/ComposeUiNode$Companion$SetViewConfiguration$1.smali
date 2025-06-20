@@ -3,14 +3,14 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lzh/e;
+.implements Lka/e;
 
 
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "Lkotlin/jvm/internal/Lambda;",
-        "Lzh/e;"
+        "Lka/e;"
     }
 .end annotation
 
@@ -20,11 +20,11 @@
     }
     d2 = {
         "Landroidx/compose/ui/node/h;",
-        "Landroidx/compose/ui/platform/x2;",
+        "Landroidx/compose/ui/platform/M0;",
         "it",
-        "Lqh/r;",
+        "LX9/j;",
         "invoke",
-        "(Landroidx/compose/ui/node/h;Landroidx/compose/ui/platform/x2;)V",
+        "(Landroidx/compose/ui/node/h;Landroidx/compose/ui/platform/M0;)V",
         "<anonymous>"
     }
     k = 0x3
@@ -71,22 +71,22 @@
     .line 1
     check-cast p1, Landroidx/compose/ui/node/h;
 
-    check-cast p2, Landroidx/compose/ui/platform/x2;
+    check-cast p2, Landroidx/compose/ui/platform/M0;
 
-    invoke-virtual {p0, p1, p2}, Landroidx/compose/ui/node/ComposeUiNode$Companion$SetViewConfiguration$1;->invoke(Landroidx/compose/ui/node/h;Landroidx/compose/ui/platform/x2;)V
+    invoke-virtual {p0, p1, p2}, Landroidx/compose/ui/node/ComposeUiNode$Companion$SetViewConfiguration$1;->invoke(Landroidx/compose/ui/node/h;Landroidx/compose/ui/platform/M0;)V
 
-    sget-object p1, Lqh/r;->a:Lqh/r;
+    sget-object p1, LX9/j;->a:LX9/j;
 
     return-object p1
 .end method
 
-.method public final invoke(Landroidx/compose/ui/node/h;Landroidx/compose/ui/platform/x2;)V
+.method public final invoke(Landroidx/compose/ui/node/h;Landroidx/compose/ui/platform/M0;)V
     .locals 0
 
-    check-cast p1, Landroidx/compose/ui/node/e0;
-
     .line 2
-    invoke-virtual {p1, p2}, Landroidx/compose/ui/node/e0;->c0(Landroidx/compose/ui/platform/x2;)V
+    check-cast p1, Landroidx/compose/ui/node/C;
+
+    invoke-virtual {p1, p2}, Landroidx/compose/ui/node/C;->c0(Landroidx/compose/ui/platform/M0;)V
 
     return-void
 .end method

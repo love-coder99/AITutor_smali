@@ -61,8 +61,11 @@
 .method public a()J
     .locals 2
 
+    .line 1
     iget-wide v0, p0, Lcom/applovin/impl/t1$a;->e:J
 
+    .line 2
+    .line 3
     return-wide v0
 .end method
 

@@ -4,7 +4,7 @@
 
 
 # static fields
-.field public static final a:Landroidx/compose/runtime/e3;
+.field public static final a:Landroidx/compose/runtime/I0;
 
 
 # direct methods
@@ -16,16 +16,16 @@
 
     .line 2
     .line 3
-    new-instance v1, Landroidx/compose/runtime/e3;
+    new-instance v1, Landroidx/compose/runtime/I0;
 
     .line 4
     .line 5
-    invoke-direct {v1, v0}, Landroidx/compose/runtime/x;-><init>(Lzh/a;)V
+    invoke-direct {v1, v0}, Landroidx/compose/runtime/j0;-><init>(Lka/a;)V
 
     .line 6
     .line 7
     .line 8
-    sput-object v1, Landroidx/compose/runtime/tooling/a;->a:Landroidx/compose/runtime/e3;
+    sput-object v1, Landroidx/compose/runtime/tooling/a;->a:Landroidx/compose/runtime/I0;
 
     .line 9
     .line 10

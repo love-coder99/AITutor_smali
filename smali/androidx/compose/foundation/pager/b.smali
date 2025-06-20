@@ -1,12 +1,10 @@
 .class public final Landroidx/compose/foundation/pager/b;
-.super Landroidx/compose/foundation/pager/u;
+.super Landroidx/compose/foundation/pager/o;
 .source "SourceFile"
 
 
 # static fields
-.field public static final H:Lzb/f;
-
-.field public static final I:Landroidx/compose/runtime/saveable/l;
+.field public static final H:LB2/c;
 
 
 # instance fields
@@ -15,66 +13,46 @@
 
 # direct methods
 .method static constructor <clinit>()V
-    .locals 3
+    .locals 2
 
     .line 1
-    new-instance v0, Lzb/f;
+    sget-object v0, Landroidx/compose/foundation/pager/DefaultPagerState$Companion$Saver$1;->INSTANCE:Landroidx/compose/foundation/pager/DefaultPagerState$Companion$Saver$1;
 
     .line 2
     .line 3
-    const/16 v1, 0x10
+    sget-object v1, Landroidx/compose/foundation/pager/DefaultPagerState$Companion$Saver$2;->INSTANCE:Landroidx/compose/foundation/pager/DefaultPagerState$Companion$Saver$2;
 
     .line 4
     .line 5
-    const/4 v2, 0x0
+    invoke-static {v0, v1}, Landroidx/compose/runtime/saveable/a;->b(Lka/e;Lka/c;)LB2/c;
 
     .line 6
-    invoke-direct {v0, v1, v2}, Lzb/f;-><init>(II)V
-
     .line 7
     .line 8
+    move-result-object v0
+
     .line 9
-    sput-object v0, Landroidx/compose/foundation/pager/b;->H:Lzb/f;
+    sput-object v0, Landroidx/compose/foundation/pager/b;->H:LB2/c;
 
     .line 10
     .line 11
-    sget-object v0, Landroidx/compose/foundation/pager/DefaultPagerState$Companion$Saver$1;->INSTANCE:Landroidx/compose/foundation/pager/DefaultPagerState$Companion$Saver$1;
-
-    .line 12
-    .line 13
-    sget-object v1, Landroidx/compose/foundation/pager/DefaultPagerState$Companion$Saver$2;->INSTANCE:Landroidx/compose/foundation/pager/DefaultPagerState$Companion$Saver$2;
-
-    .line 14
-    .line 15
-    invoke-static {v0, v1}, Landroidx/compose/runtime/saveable/a;->b(Lzh/e;Lzh/c;)Landroidx/compose/runtime/saveable/l;
-
-    .line 16
-    .line 17
-    .line 18
-    move-result-object v0
-
-    .line 19
-    sput-object v0, Landroidx/compose/foundation/pager/b;->I:Landroidx/compose/runtime/saveable/l;
-
-    .line 20
-    .line 21
     return-void
 .end method
 
-.method public constructor <init>(IFLzh/a;)V
+.method public constructor <init>(IFLka/a;)V
     .locals 0
 
     .line 1
-    invoke-direct {p0, p1, p2}, Landroidx/compose/foundation/pager/u;-><init>(IF)V
+    invoke-direct {p0, p1, p2}, Landroidx/compose/foundation/pager/o;-><init>(IF)V
 
     .line 2
     .line 3
     .line 4
-    sget-object p1, Landroidx/compose/runtime/g3;->a:Landroidx/compose/runtime/g3;
+    sget-object p1, Landroidx/compose/runtime/T;->h:Landroidx/compose/runtime/T;
 
     .line 5
     .line 6
-    invoke-static {p3, p1}, Lma/a;->Z(Ljava/lang/Object;Landroidx/compose/runtime/u2;)Landroidx/compose/runtime/ParcelableSnapshotMutableState;
+    invoke-static {p3, p1}, Landroidx/compose/runtime/o;->R(Ljava/lang/Object;Landroidx/compose/runtime/A0;)Landroidx/compose/runtime/ParcelableSnapshotMutableState;
 
     .line 7
     .line 8
@@ -99,7 +77,7 @@
 
     .line 2
     .line 3
-    invoke-virtual {v0}, Landroidx/compose/runtime/t2;->getValue()Ljava/lang/Object;
+    invoke-virtual {v0}, Landroidx/compose/runtime/ParcelableSnapshotMutableState;->getValue()Ljava/lang/Object;
 
     .line 4
     .line 5
@@ -107,11 +85,11 @@
     move-result-object v0
 
     .line 7
-    check-cast v0, Lzh/a;
+    check-cast v0, Lka/a;
 
     .line 8
     .line 9
-    invoke-interface {v0}, Lzh/a;->invoke()Ljava/lang/Object;
+    invoke-interface {v0}, Lka/a;->invoke()Ljava/lang/Object;
 
     .line 10
     .line 11

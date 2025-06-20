@@ -1,23 +1,11 @@
-.class public interface abstract Ll1/b;
+.class public abstract LL1/b;
 .super Ljava/lang/Object;
 .source "SourceFile"
 
-# interfaces
-.implements Ll1/a;
 
+# static fields
+.field public static fragment_container_view_tag:I = 0x7f0a0172
 
-# virtual methods
-.method public abstract a()Ljava/lang/String;
-.end method
+.field public static special_effects_controller_view_tag:I = 0x7f0a0360
 
-.method public abstract b()Ljava/lang/Object;
-.end method
-
-.method public abstract d()Ljava/lang/Object;
-.end method
-
-.method public abstract getData()Ljava/lang/Iterable;
-.end method
-
-.method public abstract getKey()Ljava/lang/Object;
-.end method
+.field public static visible_removing_fragment_view_tag:I = 0x7f0a03ca

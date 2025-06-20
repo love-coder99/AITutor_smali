@@ -33,11 +33,11 @@
     .locals 5
 
     .line 1
-    new-instance p1, Lcoil/fetch/l;
+    new-instance p1, Lcoil/fetch/k;
 
     .line 2
     .line 3
-    sget-object v0, Lxi/x;->c:Ljava/lang/String;
+    sget-object v0, LIa/z;->c:Ljava/lang/String;
 
     .line 4
     .line 5
@@ -45,7 +45,7 @@
 
     .line 6
     .line 7
-    invoke-static {v0}, Lfi/h;->o(Ljava/io/File;)Lxi/x;
+    invoke-static {v0}, LV9/c;->q(Ljava/io/File;)LIa/z;
 
     .line 8
     .line 9
@@ -53,7 +53,7 @@
     move-result-object v1
 
     .line 11
-    sget-object v2, Lxi/m;->a:Lxi/t;
+    sget-object v2, LIa/o;->a:LIa/v;
 
     .line 12
     .line 13
@@ -64,7 +64,7 @@
     const/4 v4, 0x0
 
     .line 16
-    invoke-direct {v3, v1, v2, v4, v4}, Lcoil/decode/m;-><init>(Lxi/x;Lxi/m;Ljava/lang/String;Ljava/io/Closeable;)V
+    invoke-direct {v3, v1, v2, v4, v4}, Lcoil/decode/m;-><init>(LIa/z;LIa/o;Ljava/lang/String;Ljava/io/Closeable;)V
 
     .line 17
     .line 18
@@ -93,7 +93,7 @@
 
     .line 30
     .line 31
-    invoke-static {v2, v0, v4}, Lkotlin/text/p;->L0(CLjava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v2, v0, v4}, Lkotlin/text/m;->s0(CLjava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     .line 32
     .line 33
@@ -113,7 +113,7 @@
 
     .line 40
     .line 41
-    invoke-direct {p1, v3, v0, v1}, Lcoil/fetch/l;-><init>(Lcoil/decode/n;Ljava/lang/String;Lcoil/decode/DataSource;)V
+    invoke-direct {p1, v3, v0, v1}, Lcoil/fetch/k;-><init>(Lcoil/decode/n;Ljava/lang/String;Lcoil/decode/DataSource;)V
 
     .line 42
     .line 43

@@ -44,14 +44,14 @@
     .locals 2
 
     .line 1
-    new-instance v0, Lcom/applovin/impl/rs;
+    new-instance v0, Lcom/applovin/impl/J;
 
     .line 2
     .line 3
     const/4 v1, 0x6
 
     .line 4
-    invoke-direct {v0, v1}, Lcom/applovin/impl/rs;-><init>(I)V
+    invoke-direct {v0, v1}, Lcom/applovin/impl/J;-><init>(I)V
 
     .line 5
     .line 6

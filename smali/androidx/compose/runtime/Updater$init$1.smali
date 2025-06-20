@@ -3,14 +3,14 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lzh/e;
+.implements Lka/e;
 
 
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "Lkotlin/jvm/internal/Lambda;",
-        "Lzh/e;"
+        "Lka/e;"
     }
 .end annotation
 
@@ -20,10 +20,10 @@
     }
     d2 = {
         "T",
-        "Lqh/r;",
+        "LX9/j;",
         "it",
         "invoke",
-        "(Ljava/lang/Object;Lqh/r;)V",
+        "(Ljava/lang/Object;LX9/j;)V",
         "<anonymous>"
     }
     k = 0x3
@@ -36,33 +36,39 @@
 
 
 # instance fields
-.field final synthetic $block:Lzh/c;
+.field final synthetic $block:Lka/c;
     .annotation system Ldalvik/annotation/Signature;
         value = {
-            "Lzh/c;"
+            "Lka/c;"
         }
     .end annotation
 .end field
 
 
 # direct methods
-.method public constructor <init>(Lzh/c;)V
+.method public constructor <init>(Lka/c;)V
     .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
-            "Lzh/c;",
+            "Lka/c;",
             ")V"
         }
     .end annotation
 
     .line 1
-    iput-object p1, p0, Landroidx/compose/runtime/Updater$init$1;->$block:Lzh/c;
+    iput-object p1, p0, Landroidx/compose/runtime/Updater$init$1;->$block:Lka/c;
 
+    .line 2
+    .line 3
     const/4 p1, 0x2
 
+    .line 4
     invoke-direct {p0, p1}, Lkotlin/jvm/internal/Lambda;-><init>(I)V
 
+    .line 5
+    .line 6
+    .line 7
     return-void
 .end method
 
@@ -72,30 +78,30 @@
     .locals 0
 
     .line 1
-    check-cast p2, Lqh/r;
+    check-cast p2, LX9/j;
 
-    invoke-virtual {p0, p1, p2}, Landroidx/compose/runtime/Updater$init$1;->invoke(Ljava/lang/Object;Lqh/r;)V
+    invoke-virtual {p0, p1, p2}, Landroidx/compose/runtime/Updater$init$1;->invoke(Ljava/lang/Object;LX9/j;)V
 
-    sget-object p1, Lqh/r;->a:Lqh/r;
+    sget-object p1, LX9/j;->a:LX9/j;
 
     return-object p1
 .end method
 
-.method public final invoke(Ljava/lang/Object;Lqh/r;)V
+.method public final invoke(Ljava/lang/Object;LX9/j;)V
     .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
             "Ljava/lang/Object;",
-            "Lqh/r;",
+            "LX9/j;",
             ")V"
         }
     .end annotation
 
-    iget-object p2, p0, Landroidx/compose/runtime/Updater$init$1;->$block:Lzh/c;
-
     .line 2
-    invoke-interface {p2, p1}, Lzh/c;->invoke(Ljava/lang/Object;)Ljava/lang/Object;
+    iget-object p2, p0, Landroidx/compose/runtime/Updater$init$1;->$block:Lka/c;
+
+    invoke-interface {p2, p1}, Lka/c;->invoke(Ljava/lang/Object;)Ljava/lang/Object;
 
     return-void
 .end method

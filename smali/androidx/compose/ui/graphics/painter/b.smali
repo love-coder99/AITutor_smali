@@ -56,7 +56,7 @@
 .method public abstract c(F)V
 .end method
 
-.method public abstract d(Landroidx/compose/ui/graphics/x;)V
+.method public abstract e(Landroidx/compose/ui/graphics/x;)V
 .end method
 
 .method public f(Landroidx/compose/ui/unit/LayoutDirection;)V
@@ -66,7 +66,7 @@
     return-void
 .end method
 
-.method public final g(Lo1/h;JFLandroidx/compose/ui/graphics/x;)V
+.method public final g(Ls0/e;JFLandroidx/compose/ui/graphics/x;)V
     .locals 3
 
     .line 1
@@ -100,7 +100,7 @@
 
     .line 14
     .line 15
-    invoke-static {v0, p5}, Lrb/h;->d(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v0, p5}, Lkotlin/jvm/internal/h;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     .line 16
     .line 17
@@ -112,7 +112,7 @@
 
     .line 20
     .line 21
-    invoke-virtual {p0, p5}, Landroidx/compose/ui/graphics/painter/b;->d(Landroidx/compose/ui/graphics/x;)V
+    invoke-virtual {p0, p5}, Landroidx/compose/ui/graphics/painter/b;->e(Landroidx/compose/ui/graphics/x;)V
 
     .line 22
     .line 23
@@ -122,7 +122,7 @@
     .line 25
     .line 26
     :cond_1
-    invoke-interface {p1}, Lo1/h;->getLayoutDirection()Landroidx/compose/ui/unit/LayoutDirection;
+    invoke-interface {p1}, Ls0/e;->getLayoutDirection()Landroidx/compose/ui/unit/LayoutDirection;
 
     .line 27
     .line 28
@@ -148,7 +148,7 @@
     .line 38
     .line 39
     :cond_2
-    invoke-interface {p1}, Lo1/h;->e()J
+    invoke-interface {p1}, Ls0/e;->g()J
 
     .line 40
     .line 41
@@ -156,7 +156,7 @@
     move-result-wide v0
 
     .line 43
-    invoke-static {v0, v1}, Ln1/g;->d(J)F
+    invoke-static {v0, v1}, Lr0/f;->d(J)F
 
     .line 44
     .line 45
@@ -164,7 +164,7 @@
     move-result p5
 
     .line 47
-    invoke-static {p2, p3}, Ln1/g;->d(J)F
+    invoke-static {p2, p3}, Lr0/f;->d(J)F
 
     .line 48
     .line 49
@@ -175,7 +175,7 @@
     sub-float/2addr p5, v0
 
     .line 52
-    invoke-interface {p1}, Lo1/h;->e()J
+    invoke-interface {p1}, Ls0/e;->g()J
 
     .line 53
     .line 54
@@ -183,7 +183,7 @@
     move-result-wide v0
 
     .line 56
-    invoke-static {v0, v1}, Ln1/g;->b(J)F
+    invoke-static {v0, v1}, Lr0/f;->b(J)F
 
     .line 57
     .line 58
@@ -191,7 +191,7 @@
     move-result v0
 
     .line 60
-    invoke-static {p2, p3}, Ln1/g;->b(J)F
+    invoke-static {p2, p3}, Lr0/f;->b(J)F
 
     .line 61
     .line 62
@@ -202,7 +202,7 @@
     sub-float/2addr v0, v1
 
     .line 65
-    invoke-interface {p1}, Lo1/h;->U()Lo1/b;
+    invoke-interface {p1}, Ls0/e;->U()Lcom/google/android/gms/internal/measurement/c;
 
     .line 66
     .line 67
@@ -210,133 +210,145 @@
     move-result-object v1
 
     .line 69
-    iget-object v1, v1, Lo1/b;->a:Lo1/d;
+    iget-object v1, v1, Lcom/google/android/gms/internal/measurement/c;->c:Ljava/lang/Object;
 
     .line 70
     .line 71
-    const/4 v2, 0x0
+    check-cast v1, Lcom/google/android/play/core/integrity/h;
 
     .line 72
-    invoke-virtual {v1, v2, v2, p5, v0}, Lo1/d;->a(FFFF)V
-
     .line 73
-    .line 74
-    .line 75
-    const/high16 v1, -0x80000000
+    const/4 v2, 0x0
 
+    .line 74
+    invoke-virtual {v1, v2, v2, p5, v0}, Lcom/google/android/play/core/integrity/h;->j(FFFF)V
+
+    .line 75
     .line 76
     .line 77
-    cmpl-float p4, p4, v2
+    const/high16 v1, -0x80000000
 
     .line 78
     .line 79
-    if-lez p4, :cond_3
+    cmpl-float p4, p4, v2
 
     .line 80
     .line 81
-    :try_start_0
-    invoke-static {p2, p3}, Ln1/g;->d(J)F
+    if-lez p4, :cond_3
 
     .line 82
     .line 83
+    :try_start_0
+    invoke-static {p2, p3}, Lr0/f;->d(J)F
+
     .line 84
+    .line 85
+    .line 86
     move-result p4
 
-    .line 85
-    cmpl-float p4, p4, v2
-
-    .line 86
     .line 87
-    if-lez p4, :cond_3
+    cmpl-float p4, p4, v2
 
     .line 88
     .line 89
-    invoke-static {p2, p3}, Ln1/g;->b(J)F
+    if-lez p4, :cond_3
 
     .line 90
     .line 91
+    invoke-static {p2, p3}, Lr0/f;->b(J)F
+
     .line 92
+    .line 93
+    .line 94
     move-result p2
 
-    .line 93
-    cmpl-float p2, p2, v2
-
-    .line 94
     .line 95
-    if-lez p2, :cond_3
+    cmpl-float p2, p2, v2
 
     .line 96
     .line 97
-    invoke-virtual {p0, p1}, Landroidx/compose/ui/graphics/painter/b;->i(Lo1/h;)V
-    :try_end_0
-    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+    if-lez p2, :cond_3
 
     .line 98
     .line 99
+    invoke-virtual {p0, p1}, Landroidx/compose/ui/graphics/painter/b;->i(Ls0/e;)V
+    :try_end_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+
     .line 100
+    .line 101
+    .line 102
     goto :goto_1
 
-    .line 101
+    .line 103
     :catchall_0
     move-exception p2
 
-    .line 102
-    invoke-interface {p1}, Lo1/h;->U()Lo1/b;
-
-    .line 103
     .line 104
+    invoke-interface {p1}, Ls0/e;->U()Lcom/google/android/gms/internal/measurement/c;
+
     .line 105
+    .line 106
+    .line 107
     move-result-object p1
 
-    .line 106
-    iget-object p1, p1, Lo1/b;->a:Lo1/d;
-
-    .line 107
     .line 108
-    neg-float p3, p5
+    iget-object p1, p1, Lcom/google/android/gms/internal/measurement/c;->c:Ljava/lang/Object;
 
     .line 109
-    neg-float p4, v0
-
     .line 110
-    invoke-virtual {p1, v1, v1, p3, p4}, Lo1/d;->a(FFFF)V
+    check-cast p1, Lcom/google/android/play/core/integrity/h;
 
     .line 111
     .line 112
+    neg-float p3, p5
+
     .line 113
-    throw p2
+    neg-float p4, v0
 
     .line 114
-    :cond_3
-    :goto_1
-    invoke-interface {p1}, Lo1/h;->U()Lo1/b;
+    invoke-virtual {p1, v1, v1, p3, p4}, Lcom/google/android/play/core/integrity/h;->j(FFFF)V
 
     .line 115
     .line 116
     .line 117
-    move-result-object p1
+    throw p2
 
     .line 118
-    iget-object p1, p1, Lo1/b;->a:Lo1/d;
+    :cond_3
+    :goto_1
+    invoke-interface {p1}, Ls0/e;->U()Lcom/google/android/gms/internal/measurement/c;
 
     .line 119
     .line 120
-    neg-float p2, p5
-
     .line 121
-    neg-float p3, v0
+    move-result-object p1
 
     .line 122
-    invoke-virtual {p1, v1, v1, p2, p3}, Lo1/d;->a(FFFF)V
+    iget-object p1, p1, Lcom/google/android/gms/internal/measurement/c;->c:Ljava/lang/Object;
 
     .line 123
     .line 124
+    check-cast p1, Lcom/google/android/play/core/integrity/h;
+
     .line 125
+    .line 126
+    neg-float p2, p5
+
+    .line 127
+    neg-float p3, v0
+
+    .line 128
+    invoke-virtual {p1, v1, v1, p2, p3}, Lcom/google/android/play/core/integrity/h;->j(FFFF)V
+
+    .line 129
+    .line 130
+    .line 131
     return-void
 .end method
 
 .method public abstract h()J
 .end method
 
-.method public abstract i(Lo1/h;)V
+.method public abstract i(Ls0/e;)V
 .end method

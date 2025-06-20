@@ -3,14 +3,14 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lzh/f;
+.implements Lka/f;
 
 
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "Lkotlin/jvm/internal/Lambda;",
-        "Lzh/f;"
+        "Lka/f;"
     }
 .end annotation
 
@@ -21,9 +21,9 @@
     d2 = {
         "Landroidx/compose/foundation/contextmenu/b;",
         "colors",
-        "Lqh/r;",
+        "LX9/j;",
         "invoke",
-        "(Landroidx/compose/foundation/contextmenu/b;Landroidx/compose/runtime/l;I)V",
+        "(Landroidx/compose/foundation/contextmenu/b;Landroidx/compose/runtime/j;I)V",
         "<anonymous>"
     }
     k = 0x3
@@ -38,63 +38,77 @@
 # instance fields
 .field final synthetic $enabled:Z
 
-.field final synthetic $label:Lzh/e;
+.field final synthetic $label:Lka/e;
     .annotation system Ldalvik/annotation/Signature;
         value = {
-            "Lzh/e;"
+            "Lka/e;"
         }
     .end annotation
 .end field
 
-.field final synthetic $leadingIcon:Lzh/f;
+.field final synthetic $leadingIcon:Lka/f;
     .annotation system Ldalvik/annotation/Signature;
         value = {
-            "Lzh/f;"
+            "Lka/f;"
         }
     .end annotation
 .end field
 
 .field final synthetic $modifier:Landroidx/compose/ui/o;
 
-.field final synthetic $onClick:Lzh/a;
+.field final synthetic $onClick:Lka/a;
     .annotation system Ldalvik/annotation/Signature;
         value = {
-            "Lzh/a;"
+            "Lka/a;"
         }
     .end annotation
 .end field
 
 
 # direct methods
-.method public constructor <init>(Lzh/e;ZLandroidx/compose/ui/o;Lzh/f;Lzh/a;)V
+.method public constructor <init>(Lka/e;ZLandroidx/compose/ui/o;Lka/f;Lka/a;)V
     .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
-            "Lzh/e;",
+            "Lka/e;",
             "Z",
             "Landroidx/compose/ui/o;",
-            "Lzh/f;",
-            "Lzh/a;",
+            "Lka/f;",
+            "Lka/a;",
             ")V"
         }
     .end annotation
 
     .line 1
-    iput-object p1, p0, Landroidx/compose/foundation/contextmenu/ContextMenuScope$item$1;->$label:Lzh/e;
+    iput-object p1, p0, Landroidx/compose/foundation/contextmenu/ContextMenuScope$item$1;->$label:Lka/e;
 
+    .line 2
+    .line 3
     iput-boolean p2, p0, Landroidx/compose/foundation/contextmenu/ContextMenuScope$item$1;->$enabled:Z
 
+    .line 4
+    .line 5
     iput-object p3, p0, Landroidx/compose/foundation/contextmenu/ContextMenuScope$item$1;->$modifier:Landroidx/compose/ui/o;
 
-    iput-object p4, p0, Landroidx/compose/foundation/contextmenu/ContextMenuScope$item$1;->$leadingIcon:Lzh/f;
+    .line 6
+    .line 7
+    iput-object p4, p0, Landroidx/compose/foundation/contextmenu/ContextMenuScope$item$1;->$leadingIcon:Lka/f;
 
-    iput-object p5, p0, Landroidx/compose/foundation/contextmenu/ContextMenuScope$item$1;->$onClick:Lzh/a;
+    .line 8
+    .line 9
+    iput-object p5, p0, Landroidx/compose/foundation/contextmenu/ContextMenuScope$item$1;->$onClick:Lka/a;
 
+    .line 10
+    .line 11
     const/4 p1, 0x3
 
+    .line 12
     invoke-direct {p0, p1}, Lkotlin/jvm/internal/Lambda;-><init>(I)V
 
+    .line 13
+    .line 14
+    .line 15
     return-void
 .end method
 
@@ -106,7 +120,7 @@
     .line 1
     check-cast p1, Landroidx/compose/foundation/contextmenu/b;
 
-    check-cast p2, Landroidx/compose/runtime/l;
+    check-cast p2, Landroidx/compose/runtime/j;
 
     check-cast p3, Ljava/lang/Number;
 
@@ -114,14 +128,14 @@
 
     move-result p3
 
-    invoke-virtual {p0, p1, p2, p3}, Landroidx/compose/foundation/contextmenu/ContextMenuScope$item$1;->invoke(Landroidx/compose/foundation/contextmenu/b;Landroidx/compose/runtime/l;I)V
+    invoke-virtual {p0, p1, p2, p3}, Landroidx/compose/foundation/contextmenu/ContextMenuScope$item$1;->invoke(Landroidx/compose/foundation/contextmenu/b;Landroidx/compose/runtime/j;I)V
 
-    sget-object p1, Lqh/r;->a:Lqh/r;
+    sget-object p1, LX9/j;->a:LX9/j;
 
     return-object p1
 .end method
 
-.method public final invoke(Landroidx/compose/foundation/contextmenu/b;Landroidx/compose/runtime/l;I)V
+.method public final invoke(Landroidx/compose/foundation/contextmenu/b;Landroidx/compose/runtime/j;I)V
     .locals 10
 
     and-int/lit8 v0, p3, 0x6
@@ -130,9 +144,9 @@
 
     move-object v0, p2
 
-    check-cast v0, Landroidx/compose/runtime/p;
+    check-cast v0, Landroidx/compose/runtime/n;
 
-    invoke-virtual {v0, p1}, Landroidx/compose/runtime/p;->g(Ljava/lang/Object;)Z
+    invoke-virtual {v0, p1}, Landroidx/compose/runtime/n;->f(Ljava/lang/Object;)Z
 
     move-result v0
 
@@ -155,12 +169,12 @@
 
     if-ne v0, v1, :cond_3
 
+    .line 2
     move-object v0, p2
 
-    check-cast v0, Landroidx/compose/runtime/p;
+    check-cast v0, Landroidx/compose/runtime/n;
 
-    .line 2
-    invoke-virtual {v0}, Landroidx/compose/runtime/p;->y()Z
+    invoke-virtual {v0}, Landroidx/compose/runtime/n;->x()Z
 
     move-result v1
 
@@ -170,22 +184,22 @@
 
     .line 3
     :cond_2
-    invoke-virtual {v0}, Landroidx/compose/runtime/p;->N()V
+    invoke-virtual {v0}, Landroidx/compose/runtime/n;->L()V
 
     goto :goto_2
 
+    .line 4
     :cond_3
     :goto_1
-    iget-object v0, p0, Landroidx/compose/foundation/contextmenu/ContextMenuScope$item$1;->$label:Lzh/e;
+    iget-object v0, p0, Landroidx/compose/foundation/contextmenu/ContextMenuScope$item$1;->$label:Lka/e;
 
     const/4 v1, 0x0
 
-    .line 4
     invoke-static {v1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
     move-result-object v1
 
-    invoke-interface {v0, p2, v1}, Lzh/e;->invoke(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-interface {v0, p2, v1}, Lka/e;->invoke(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object v0
 
@@ -194,21 +208,23 @@
     check-cast v1, Ljava/lang/String;
 
     .line 5
-    invoke-static {v1}, Lkotlin/text/o;->j0(Ljava/lang/CharSequence;)Z
+    invoke-static {v1}, Lkotlin/text/m;->f0(Ljava/lang/CharSequence;)Z
 
     move-result v0
 
-    xor-int/lit8 v0, v0, 0x1
+    if-nez v0, :cond_4
 
-    if-eqz v0, :cond_4
-
+    .line 6
     iget-boolean v2, p0, Landroidx/compose/foundation/contextmenu/ContextMenuScope$item$1;->$enabled:Z
 
+    .line 7
     iget-object v4, p0, Landroidx/compose/foundation/contextmenu/ContextMenuScope$item$1;->$modifier:Landroidx/compose/ui/o;
 
-    iget-object v5, p0, Landroidx/compose/foundation/contextmenu/ContextMenuScope$item$1;->$leadingIcon:Lzh/f;
+    .line 8
+    iget-object v5, p0, Landroidx/compose/foundation/contextmenu/ContextMenuScope$item$1;->$leadingIcon:Lka/f;
 
-    iget-object v6, p0, Landroidx/compose/foundation/contextmenu/ContextMenuScope$item$1;->$onClick:Lzh/a;
+    .line 9
+    iget-object v6, p0, Landroidx/compose/foundation/contextmenu/ContextMenuScope$item$1;->$onClick:Lka/a;
 
     shl-int/lit8 p3, p3, 0x6
 
@@ -220,21 +236,17 @@
 
     move-object v7, p2
 
-    .line 6
-    invoke-static/range {v1 .. v9}, Landroidx/compose/foundation/contextmenu/k;->b(Ljava/lang/String;ZLandroidx/compose/foundation/contextmenu/b;Landroidx/compose/ui/o;Lzh/f;Lzh/a;Landroidx/compose/runtime/l;II)V
+    .line 10
+    invoke-static/range {v1 .. v9}, Landroidx/compose/foundation/contextmenu/k;->b(Ljava/lang/String;ZLandroidx/compose/foundation/contextmenu/b;Landroidx/compose/ui/o;Lka/f;Lka/a;Landroidx/compose/runtime/j;II)V
 
     :goto_2
     return-void
 
-    .line 7
+    .line 11
     :cond_4
     new-instance p1, Ljava/lang/IllegalStateException;
 
     const-string p2, "Label must not be blank"
-
-    invoke-virtual {p2}, Ljava/lang/Object;->toString()Ljava/lang/String;
-
-    move-result-object p2
 
     invoke-direct {p1, p2}, Ljava/lang/IllegalStateException;-><init>(Ljava/lang/String;)V
 

@@ -4,6 +4,15 @@
 
 
 # annotations
+.annotation runtime Lca/c;
+    c = "coil.intercept.EngineInterceptor"
+    f = "EngineInterceptor.kt"
+    l = {
+        0x4b
+    }
+    m = "intercept"
+.end annotation
+
 .annotation runtime Lkotlin/Metadata;
     k = 0x3
     mv = {
@@ -12,15 +21,6 @@
         0x0
     }
     xi = 0x30
-.end annotation
-
-.annotation runtime Lth/c;
-    c = "coil.intercept.EngineInterceptor"
-    f = "EngineInterceptor.kt"
-    l = {
-        0x4b
-    }
-    m = "intercept"
 .end annotation
 
 
@@ -76,7 +76,7 @@
 
     const/4 v0, 0x0
 
-    invoke-virtual {p1, v0, p0}, Lcoil/intercept/b;->d(Lcoil/intercept/e;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
+    invoke-virtual {p1, v0, p0}, Lcoil/intercept/b;->d(Lcoil/intercept/d;Lkotlin/coroutines/jvm/internal/ContinuationImpl;)Ljava/lang/Object;
 
     move-result-object p1
 

@@ -3,14 +3,14 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lzh/c;
+.implements Lka/c;
 
 
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "Lkotlin/jvm/internal/Lambda;",
-        "Lzh/c;"
+        "Lka/c;"
     }
 .end annotation
 
@@ -87,7 +87,7 @@
 
     .line 2
     .line 3
-    invoke-static {p1, v0}, Lrb/h;->d(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {p1, v0}, Lkotlin/jvm/internal/h;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     .line 4
     .line 5
@@ -132,7 +132,7 @@
     move-result p1
 
     .line 25
-    invoke-static {p1}, Landroidx/compose/ui/graphics/f0;->c(I)J
+    invoke-static {p1}, Landroidx/compose/ui/graphics/G;->c(I)J
 
     .line 26
     .line 27

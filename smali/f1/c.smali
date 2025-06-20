@@ -1,352 +1,790 @@
-.class public abstract Lf1/c;
-.super Ljava/lang/Object;
+.class public final LF1/c;
+.super Landroidx/core/view/b;
 .source "SourceFile"
 
 
-# static fields
-.field public static final A:J
-
-.field public static final B:J
-
-.field public static final C:J
-
-.field public static final D:J
-
-.field public static final E:J
-
-.field public static final F:J
-
-.field public static final G:J
-
-.field public static final H:J
-
-.field public static final I:J
-
-.field public static final a:J
-
-.field public static final b:J
-
-.field public static final c:J
-
-.field public static final d:J
-
-.field public static final e:J
-
-.field public static final f:J
-
-.field public static final g:J
-
-.field public static final h:J
-
-.field public static final i:J
-
-.field public static final j:J
-
-.field public static final k:J
-
-.field public static final l:J
-
-.field public static final m:J
-
-.field public static final n:J
-
-.field public static final o:J
-
-.field public static final p:J
-
-.field public static final q:J
-
-.field public static final r:J
-
-.field public static final s:J
-
-.field public static final t:J
-
-.field public static final u:J
-
-.field public static final v:J
-
-.field public static final w:J
-
-.field public static final x:J
-
-.field public static final y:J
-
-.field public static final z:J
+# instance fields
+.field public final synthetic d:I
 
 
 # direct methods
-.method static constructor <clinit>()V
-    .locals 6
+.method public synthetic constructor <init>(I)V
+    .locals 0
 
     .line 1
-    sget-wide v0, Lf1/r;->x:J
+    iput p1, p0, LF1/c;->d:I
+
+    invoke-direct {p0}, Landroidx/core/view/b;-><init>()V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public c(Landroid/view/View;Landroid/view/accessibility/AccessibilityEvent;)V
+    .locals 1
+
+    .line 1
+    iget v0, p0, LF1/c;->d:I
 
     .line 2
     .line 3
-    sput-wide v0, Lf1/c;->a:J
+    packed-switch v0, :pswitch_data_0
 
     .line 4
     .line 5
-    sget-wide v2, Lf1/r;->e:J
-
     .line 6
-    .line 7
-    sput-wide v2, Lf1/c;->b:J
+    invoke-super {p0, p1, p2}, Landroidx/core/view/b;->c(Landroid/view/View;Landroid/view/accessibility/AccessibilityEvent;)V
 
+    .line 7
     .line 8
     .line 9
-    sget-wide v2, Lf1/r;->g:J
+    return-void
 
     .line 10
-    .line 11
-    sput-wide v2, Lf1/c;->c:J
+    :pswitch_0
+    invoke-super {p0, p1, p2}, Landroidx/core/view/b;->c(Landroid/view/View;Landroid/view/accessibility/AccessibilityEvent;)V
 
+    .line 11
     .line 12
     .line 13
-    sget-wide v2, Lf1/r;->v:J
+    check-cast p1, Landroidx/core/widget/NestedScrollView;
 
     .line 14
     .line 15
-    sput-wide v2, Lf1/c;->d:J
+    const-class v0, Landroid/widget/ScrollView;
 
     .line 16
     .line 17
-    sget-wide v2, Lf1/r;->I:J
+    invoke-virtual {v0}, Ljava/lang/Class;->getName()Ljava/lang/String;
 
     .line 18
     .line 19
-    sput-wide v2, Lf1/c;->e:J
-
     .line 20
+    move-result-object v0
+
     .line 21
-    sget-wide v2, Lf1/r;->m:J
+    invoke-virtual {p2, v0}, Landroid/view/accessibility/AccessibilityRecord;->setClassName(Ljava/lang/CharSequence;)V
 
     .line 22
     .line 23
-    sput-wide v2, Lf1/c;->f:J
-
     .line 24
-    .line 25
-    sget-wide v2, Lf1/r;->i:J
+    invoke-virtual {p1}, Landroidx/core/widget/NestedScrollView;->getScrollRange()I
 
+    .line 25
     .line 26
     .line 27
-    sput-wide v2, Lf1/c;->g:J
+    move-result v0
 
     .line 28
-    .line 29
-    sget-wide v4, Lf1/r;->b:J
+    if-lez v0, :cond_0
 
+    .line 29
     .line 30
+    const/4 v0, 0x1
+
     .line 31
-    sput-wide v4, Lf1/c;->h:J
+    goto :goto_0
 
     .line 32
+    :cond_0
+    const/4 v0, 0x0
+
     .line 33
-    sget-wide v4, Lf1/r;->a:J
+    :goto_0
+    invoke-virtual {p2, v0}, Landroid/view/accessibility/AccessibilityRecord;->setScrollable(Z)V
 
     .line 34
     .line 35
-    sput-wide v4, Lf1/c;->i:J
-
     .line 36
-    .line 37
-    sget-wide v4, Lf1/r;->E:J
+    invoke-virtual {p1}, Landroid/view/View;->getScrollX()I
 
+    .line 37
     .line 38
     .line 39
-    sput-wide v4, Lf1/c;->j:J
+    move-result v0
 
     .line 40
-    .line 41
-    sget-wide v4, Lf1/r;->D:J
+    invoke-virtual {p2, v0}, Landroid/view/accessibility/AccessibilityRecord;->setScrollX(I)V
 
+    .line 41
     .line 42
     .line 43
-    sput-wide v4, Lf1/c;->k:J
+    invoke-virtual {p1}, Landroid/view/View;->getScrollY()I
 
     .line 44
     .line 45
-    sget-wide v4, Lf1/r;->L:J
-
     .line 46
+    move-result v0
+
     .line 47
-    sput-wide v4, Lf1/c;->l:J
+    invoke-virtual {p2, v0}, Landroid/view/accessibility/AccessibilityRecord;->setScrollY(I)V
 
     .line 48
     .line 49
-    sget-wide v4, Lf1/r;->K:J
-
     .line 50
-    .line 51
-    sput-wide v4, Lf1/c;->m:J
+    invoke-virtual {p1}, Landroid/view/View;->getScrollX()I
 
+    .line 51
     .line 52
     .line 53
-    sput-wide v2, Lf1/c;->n:J
+    move-result v0
 
     .line 54
-    .line 55
-    sget-wide v2, Lf1/r;->y:J
+    invoke-virtual {p2, v0}, Landroid/view/accessibility/AccessibilityRecord;->setMaxScrollX(I)V
 
+    .line 55
     .line 56
     .line 57
-    sput-wide v2, Lf1/c;->o:J
+    invoke-virtual {p1}, Landroidx/core/widget/NestedScrollView;->getScrollRange()I
 
     .line 58
     .line 59
-    sget-wide v2, Lf1/r;->S:J
-
     .line 60
+    move-result p1
+
     .line 61
-    sput-wide v2, Lf1/c;->p:J
+    invoke-virtual {p2, p1}, Landroid/view/accessibility/AccessibilityRecord;->setMaxScrollY(I)V
 
     .line 62
     .line 63
-    sget-wide v2, Lf1/r;->R:J
+    .line 64
+    return-void
+
+    .line 65
+    :pswitch_data_0
+    .packed-switch 0x1
+        :pswitch_0
+    .end packed-switch
+.end method
+
+.method public final d(Landroid/view/View;Lv1/e;)V
+    .locals 2
+
+    .line 1
+    iget v0, p0, LF1/c;->d:I
+
+    .line 2
+    .line 3
+    packed-switch v0, :pswitch_data_0
+
+    .line 4
+    .line 5
+    .line 6
+    iget-object v0, p0, Landroidx/core/view/b;->a:Landroid/view/View$AccessibilityDelegate;
+
+    .line 7
+    .line 8
+    iget-object v1, p2, Lv1/e;->a:Landroid/view/accessibility/AccessibilityNodeInfo;
+
+    .line 9
+    .line 10
+    invoke-virtual {v0, p1, v1}, Landroid/view/View$AccessibilityDelegate;->onInitializeAccessibilityNodeInfo(Landroid/view/View;Landroid/view/accessibility/AccessibilityNodeInfo;)V
+
+    .line 11
+    .line 12
+    .line 13
+    const/4 p1, 0x0
+
+    .line 14
+    invoke-virtual {p2, p1}, Lv1/e;->l(Lcom/jellystudio/trustedapp/monetization/iap/a;)V
+
+    .line 15
+    .line 16
+    .line 17
+    return-void
+
+    .line 18
+    :pswitch_0
+    iget-object v0, p0, Landroidx/core/view/b;->a:Landroid/view/View$AccessibilityDelegate;
+
+    .line 19
+    .line 20
+    iget-object v1, p2, Lv1/e;->a:Landroid/view/accessibility/AccessibilityNodeInfo;
+
+    .line 21
+    .line 22
+    invoke-virtual {v0, p1, v1}, Landroid/view/View$AccessibilityDelegate;->onInitializeAccessibilityNodeInfo(Landroid/view/View;Landroid/view/accessibility/AccessibilityNodeInfo;)V
+
+    .line 23
+    .line 24
+    .line 25
+    const/4 p1, 0x0
+
+    .line 26
+    invoke-virtual {p2, p1}, Lv1/e;->p(Z)V
+
+    .line 27
+    .line 28
+    .line 29
+    return-void
+
+    .line 30
+    :pswitch_1
+    iget-object v0, p0, Landroidx/core/view/b;->a:Landroid/view/View$AccessibilityDelegate;
+
+    .line 31
+    .line 32
+    iget-object v1, p2, Lv1/e;->a:Landroid/view/accessibility/AccessibilityNodeInfo;
+
+    .line 33
+    .line 34
+    invoke-virtual {v0, p1, v1}, Landroid/view/View$AccessibilityDelegate;->onInitializeAccessibilityNodeInfo(Landroid/view/View;Landroid/view/accessibility/AccessibilityNodeInfo;)V
+
+    .line 35
+    .line 36
+    .line 37
+    const/4 p1, 0x0
+
+    .line 38
+    invoke-virtual {p2, p1}, Lv1/e;->l(Lcom/jellystudio/trustedapp/monetization/iap/a;)V
+
+    .line 39
+    .line 40
+    .line 41
+    return-void
+
+    .line 42
+    :pswitch_2
+    iget-object v0, p0, Landroidx/core/view/b;->a:Landroid/view/View$AccessibilityDelegate;
+
+    .line 43
+    .line 44
+    iget-object v1, p2, Lv1/e;->a:Landroid/view/accessibility/AccessibilityNodeInfo;
+
+    .line 45
+    .line 46
+    invoke-virtual {v0, p1, v1}, Landroid/view/View$AccessibilityDelegate;->onInitializeAccessibilityNodeInfo(Landroid/view/View;Landroid/view/accessibility/AccessibilityNodeInfo;)V
+
+    .line 47
+    .line 48
+    .line 49
+    check-cast p1, Landroidx/core/widget/NestedScrollView;
+
+    .line 50
+    .line 51
+    const-class v0, Landroid/widget/ScrollView;
+
+    .line 52
+    .line 53
+    invoke-virtual {v0}, Ljava/lang/Class;->getName()Ljava/lang/String;
+
+    .line 54
+    .line 55
+    .line 56
+    move-result-object v0
+
+    .line 57
+    invoke-virtual {p2, v0}, Lv1/e;->k(Ljava/lang/CharSequence;)V
+
+    .line 58
+    .line 59
+    .line 60
+    invoke-virtual {p1}, Landroid/view/View;->isEnabled()Z
+
+    .line 61
+    .line 62
+    .line 63
+    move-result v0
 
     .line 64
+    if-eqz v0, :cond_1
+
     .line 65
-    sput-wide v2, Lf1/c;->q:J
-
     .line 66
-    .line 67
-    sget-wide v2, Lf1/r;->z:J
+    invoke-virtual {p1}, Landroidx/core/widget/NestedScrollView;->getScrollRange()I
 
+    .line 67
     .line 68
     .line 69
-    sput-wide v2, Lf1/c;->r:J
+    move-result v0
 
     .line 70
-    .line 71
-    sget-wide v2, Lf1/r;->B:J
+    if-lez v0, :cond_1
 
+    .line 71
     .line 72
+    const/4 v1, 0x1
+
     .line 73
-    sput-wide v2, Lf1/c;->s:J
+    invoke-virtual {p2, v1}, Lv1/e;->p(Z)V
 
     .line 74
     .line 75
-    sget-wide v2, Lf1/r;->H:J
-
     .line 76
-    .line 77
-    sput-wide v2, Lf1/c;->t:J
+    invoke-virtual {p1}, Landroid/view/View;->getScrollY()I
 
+    .line 77
     .line 78
     .line 79
-    sget-wide v2, Lf1/r;->J:J
+    move-result v1
 
     .line 80
+    if-lez v1, :cond_0
+
     .line 81
-    sput-wide v2, Lf1/c;->u:J
-
     .line 82
+    sget-object v1, Lv1/d;->k:Lv1/d;
+
     .line 83
-    sget-wide v2, Lf1/r;->h:J
-
     .line 84
-    .line 85
-    sput-wide v2, Lf1/c;->v:J
+    invoke-virtual {p2, v1}, Lv1/e;->b(Lv1/d;)V
 
+    .line 85
     .line 86
     .line 87
-    sget-wide v2, Lf1/r;->O:J
+    sget-object v1, Lv1/d;->o:Lv1/d;
 
     .line 88
     .line 89
-    sput-wide v2, Lf1/c;->w:J
+    invoke-virtual {p2, v1}, Lv1/e;->b(Lv1/d;)V
 
     .line 90
     .line 91
-    sget-wide v2, Lf1/r;->Q:J
-
     .line 92
-    .line 93
-    sput-wide v2, Lf1/c;->x:J
+    :cond_0
+    invoke-virtual {p1}, Landroid/view/View;->getScrollY()I
 
+    .line 93
     .line 94
     .line 95
-    sput-wide v0, Lf1/c;->y:J
+    move-result p1
 
     .line 96
+    if-ge p1, v0, :cond_1
+
     .line 97
-    sput-wide v0, Lf1/c;->z:J
-
     .line 98
+    sget-object p1, Lv1/d;->j:Lv1/d;
+
     .line 99
-    sget-wide v0, Lf1/r;->u:J
-
     .line 100
-    .line 101
-    sput-wide v0, Lf1/c;->A:J
+    invoke-virtual {p2, p1}, Lv1/e;->b(Lv1/d;)V
 
+    .line 101
     .line 102
     .line 103
-    sget-wide v0, Lf1/r;->t:J
+    sget-object p1, Lv1/d;->q:Lv1/d;
 
     .line 104
     .line 105
-    sput-wide v0, Lf1/c;->B:J
+    invoke-virtual {p2, p1}, Lv1/e;->b(Lv1/d;)V
 
     .line 106
     .line 107
-    sget-wide v0, Lf1/r;->s:J
-
     .line 108
+    :cond_1
+    return-void
+
     .line 109
-    sput-wide v0, Lf1/c;->C:J
+    :pswitch_3
+    iget-object v0, p0, Landroidx/core/view/b;->a:Landroid/view/View$AccessibilityDelegate;
 
     .line 110
     .line 111
-    sget-wide v0, Lf1/r;->w:J
+    iget-object v1, p2, Lv1/e;->a:Landroid/view/accessibility/AccessibilityNodeInfo;
 
     .line 112
     .line 113
-    sput-wide v0, Lf1/c;->D:J
+    invoke-virtual {v0, p1, v1}, Landroid/view/View$AccessibilityDelegate;->onInitializeAccessibilityNodeInfo(Landroid/view/View;Landroid/view/accessibility/AccessibilityNodeInfo;)V
 
     .line 114
     .line 115
-    sget-wide v0, Lf1/r;->j:J
-
     .line 116
-    .line 117
-    sput-wide v0, Lf1/c;->E:J
+    invoke-static {p1}, Landroidx/drawerlayout/widget/DrawerLayout;->i(Landroid/view/View;)Z
 
+    .line 117
     .line 118
     .line 119
-    sget-wide v0, Lf1/r;->r:J
+    move-result p1
 
     .line 120
-    .line 121
-    sput-wide v0, Lf1/c;->F:J
+    if-nez p1, :cond_2
 
+    .line 121
     .line 122
+    const/4 p1, -0x1
+
     .line 123
-    sget-wide v0, Lf1/r;->C:J
+    iput p1, p2, Lv1/e;->b:I
 
     .line 124
     .line 125
-    sput-wide v0, Lf1/c;->G:J
+    const/4 p1, 0x0
 
     .line 126
-    .line 127
-    sget-wide v0, Lf1/r;->V:J
+    invoke-virtual {v1, p1}, Landroid/view/accessibility/AccessibilityNodeInfo;->setParent(Landroid/view/View;)V
 
+    .line 127
     .line 128
     .line 129
-    sput-wide v0, Lf1/c;->H:J
+    :cond_2
+    return-void
+
+    .line 130
+    nop
+
+    .line 131
+    :pswitch_data_0
+    .packed-switch 0x0
+        :pswitch_3
+        :pswitch_2
+        :pswitch_1
+        :pswitch_0
+    .end packed-switch
+.end method
+
+.method public g(Landroid/view/View;ILandroid/os/Bundle;)Z
+    .locals 4
+
+    .line 1
+    iget v0, p0, LF1/c;->d:I
+
+    .line 2
+    .line 3
+    packed-switch v0, :pswitch_data_0
+
+    .line 4
+    .line 5
+    .line 6
+    invoke-super {p0, p1, p2, p3}, Landroidx/core/view/b;->g(Landroid/view/View;ILandroid/os/Bundle;)Z
+
+    .line 7
+    .line 8
+    .line 9
+    move-result p1
+
+    .line 10
+    return p1
+
+    .line 11
+    :pswitch_0
+    invoke-super {p0, p1, p2, p3}, Landroidx/core/view/b;->g(Landroid/view/View;ILandroid/os/Bundle;)Z
+
+    .line 12
+    .line 13
+    .line 14
+    move-result p3
+
+    .line 15
+    const/4 v0, 0x1
+
+    .line 16
+    if-eqz p3, :cond_0
+
+    .line 17
+    .line 18
+    goto/16 :goto_1
+
+    .line 19
+    .line 20
+    :cond_0
+    check-cast p1, Landroidx/core/widget/NestedScrollView;
+
+    .line 21
+    .line 22
+    invoke-virtual {p1}, Landroid/view/View;->isEnabled()Z
+
+    .line 23
+    .line 24
+    .line 25
+    move-result p3
+
+    .line 26
+    const/4 v1, 0x0
+
+    .line 27
+    if-nez p3, :cond_2
+
+    .line 28
+    .line 29
+    :cond_1
+    :goto_0
+    const/4 v0, 0x0
+
+    .line 30
+    goto/16 :goto_1
+
+    .line 31
+    .line 32
+    :cond_2
+    invoke-virtual {p1}, Landroid/view/View;->getHeight()I
+
+    .line 33
+    .line 34
+    .line 35
+    move-result p3
+
+    .line 36
+    new-instance v2, Landroid/graphics/Rect;
+
+    .line 37
+    .line 38
+    invoke-direct {v2}, Landroid/graphics/Rect;-><init>()V
+
+    .line 39
+    .line 40
+    .line 41
+    invoke-virtual {p1}, Landroid/view/View;->getMatrix()Landroid/graphics/Matrix;
+
+    .line 42
+    .line 43
+    .line 44
+    move-result-object v3
+
+    .line 45
+    invoke-virtual {v3}, Landroid/graphics/Matrix;->isIdentity()Z
+
+    .line 46
+    .line 47
+    .line 48
+    move-result v3
+
+    .line 49
+    if-eqz v3, :cond_3
+
+    .line 50
+    .line 51
+    invoke-virtual {p1, v2}, Landroid/view/View;->getGlobalVisibleRect(Landroid/graphics/Rect;)Z
+
+    .line 52
+    .line 53
+    .line 54
+    move-result v3
+
+    .line 55
+    if-eqz v3, :cond_3
+
+    .line 56
+    .line 57
+    invoke-virtual {v2}, Landroid/graphics/Rect;->height()I
+
+    .line 58
+    .line 59
+    .line 60
+    move-result p3
+
+    .line 61
+    :cond_3
+    const/16 v2, 0x1000
+
+    .line 62
+    .line 63
+    if-eq p2, v2, :cond_5
+
+    .line 64
+    .line 65
+    const/16 v2, 0x2000
+
+    .line 66
+    .line 67
+    if-eq p2, v2, :cond_4
+
+    .line 68
+    .line 69
+    const v2, 0x1020038
+
+    .line 70
+    .line 71
+    .line 72
+    if-eq p2, v2, :cond_4
+
+    .line 73
+    .line 74
+    const v2, 0x102003a
+
+    .line 75
+    .line 76
+    .line 77
+    if-eq p2, v2, :cond_5
+
+    .line 78
+    .line 79
+    goto :goto_0
+
+    .line 80
+    :cond_4
+    invoke-virtual {p1}, Landroid/view/View;->getPaddingBottom()I
+
+    .line 81
+    .line 82
+    .line 83
+    move-result p2
+
+    .line 84
+    sub-int/2addr p3, p2
+
+    .line 85
+    invoke-virtual {p1}, Landroid/view/View;->getPaddingTop()I
+
+    .line 86
+    .line 87
+    .line 88
+    move-result p2
+
+    .line 89
+    sub-int/2addr p3, p2
+
+    .line 90
+    invoke-virtual {p1}, Landroid/view/View;->getScrollY()I
+
+    .line 91
+    .line 92
+    .line 93
+    move-result p2
+
+    .line 94
+    sub-int/2addr p2, p3
+
+    .line 95
+    invoke-static {p2, v1}, Ljava/lang/Math;->max(II)I
+
+    .line 96
+    .line 97
+    .line 98
+    move-result p2
+
+    .line 99
+    invoke-virtual {p1}, Landroid/view/View;->getScrollY()I
+
+    .line 100
+    .line 101
+    .line 102
+    move-result p3
+
+    .line 103
+    if-eq p2, p3, :cond_1
+
+    .line 104
+    .line 105
+    invoke-virtual {p1}, Landroid/view/View;->getScrollX()I
+
+    .line 106
+    .line 107
+    .line 108
+    move-result p3
+
+    .line 109
+    sub-int/2addr v1, p3
+
+    .line 110
+    invoke-virtual {p1}, Landroid/view/View;->getScrollY()I
+
+    .line 111
+    .line 112
+    .line 113
+    move-result p3
+
+    .line 114
+    sub-int/2addr p2, p3
+
+    .line 115
+    invoke-virtual {p1, v1, p2, v0}, Landroidx/core/widget/NestedScrollView;->p(IIZ)V
+
+    .line 116
+    .line 117
+    .line 118
+    goto :goto_1
+
+    .line 119
+    :cond_5
+    invoke-virtual {p1}, Landroid/view/View;->getPaddingBottom()I
+
+    .line 120
+    .line 121
+    .line 122
+    move-result p2
+
+    .line 123
+    sub-int/2addr p3, p2
+
+    .line 124
+    invoke-virtual {p1}, Landroid/view/View;->getPaddingTop()I
+
+    .line 125
+    .line 126
+    .line 127
+    move-result p2
+
+    .line 128
+    sub-int/2addr p3, p2
+
+    .line 129
+    invoke-virtual {p1}, Landroid/view/View;->getScrollY()I
 
     .line 130
     .line 131
-    sget-wide v0, Lf1/r;->X:J
-
     .line 132
+    move-result p2
+
     .line 133
-    sput-wide v0, Lf1/c;->I:J
+    add-int/2addr p2, p3
 
     .line 134
+    invoke-virtual {p1}, Landroidx/core/widget/NestedScrollView;->getScrollRange()I
+
     .line 135
-    return-void
+    .line 136
+    .line 137
+    move-result p3
+
+    .line 138
+    invoke-static {p2, p3}, Ljava/lang/Math;->min(II)I
+
+    .line 139
+    .line 140
+    .line 141
+    move-result p2
+
+    .line 142
+    invoke-virtual {p1}, Landroid/view/View;->getScrollY()I
+
+    .line 143
+    .line 144
+    .line 145
+    move-result p3
+
+    .line 146
+    if-eq p2, p3, :cond_1
+
+    .line 147
+    .line 148
+    invoke-virtual {p1}, Landroid/view/View;->getScrollX()I
+
+    .line 149
+    .line 150
+    .line 151
+    move-result p3
+
+    .line 152
+    sub-int/2addr v1, p3
+
+    .line 153
+    invoke-virtual {p1}, Landroid/view/View;->getScrollY()I
+
+    .line 154
+    .line 155
+    .line 156
+    move-result p3
+
+    .line 157
+    sub-int/2addr p2, p3
+
+    .line 158
+    invoke-virtual {p1, v1, p2, v0}, Landroidx/core/widget/NestedScrollView;->p(IIZ)V
+
+    .line 159
+    .line 160
+    .line 161
+    :goto_1
+    return v0
+
+    .line 162
+    nop
+
+    .line 163
+    :pswitch_data_0
+    .packed-switch 0x1
+        :pswitch_0
+    .end packed-switch
 .end method

@@ -25,9 +25,9 @@
 .method private constructor <init>(Lcom/applovin/impl/u9;)V
     .locals 0
 
+    .line 1
     iput-object p1, p0, Lcom/applovin/impl/u9$d;->a:Lcom/applovin/impl/u9;
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -47,9 +47,9 @@
 .method public a(Landroid/net/Uri;Lcom/applovin/impl/adview/l;)V
     .locals 2
 
+    .line 5
     iget-object p2, p0, Lcom/applovin/impl/u9$d;->a:Lcom/applovin/impl/u9;
 
-    .line 5
     iget-object p2, p2, Lcom/applovin/impl/o9;->c:Lcom/applovin/impl/sdk/n;
 
     invoke-static {}, Lcom/applovin/impl/sdk/n;->a()Z
@@ -68,10 +68,10 @@
 
     invoke-virtual {p2, v0, v1}, Lcom/applovin/impl/sdk/n;->a(Ljava/lang/String;Ljava/lang/String;)V
 
+    .line 6
     :cond_0
     iget-object p2, p0, Lcom/applovin/impl/u9$d;->a:Lcom/applovin/impl/u9;
 
-    .line 6
     iget-object p2, p2, Lcom/applovin/impl/o9;->i:Lcom/applovin/adview/AppLovinAdView;
 
     invoke-virtual {p2}, Lcom/applovin/adview/AppLovinAdView;->getController()Lcom/applovin/impl/adview/a;
@@ -90,9 +90,9 @@
 .method public a(Lcom/applovin/impl/adview/l;)V
     .locals 2
 
+    .line 1
     iget-object p1, p0, Lcom/applovin/impl/u9$d;->a:Lcom/applovin/impl/u9;
 
-    .line 1
     iget-object p1, p1, Lcom/applovin/impl/o9;->c:Lcom/applovin/impl/sdk/n;
 
     invoke-static {}, Lcom/applovin/impl/sdk/n;->a()Z
@@ -111,10 +111,10 @@
 
     invoke-virtual {p1, v0, v1}, Lcom/applovin/impl/sdk/n;->a(Ljava/lang/String;Ljava/lang/String;)V
 
+    .line 2
     :cond_0
     iget-object p1, p0, Lcom/applovin/impl/u9$d;->a:Lcom/applovin/impl/u9;
 
-    .line 2
     invoke-virtual {p1}, Lcom/applovin/impl/u9;->f()V
 
     return-void
@@ -123,9 +123,9 @@
 .method public a(Lcom/applovin/impl/adview/l;Landroid/os/Bundle;)V
     .locals 3
 
+    .line 3
     iget-object v0, p0, Lcom/applovin/impl/u9$d;->a:Lcom/applovin/impl/u9;
 
-    .line 3
     iget-object v0, v0, Lcom/applovin/impl/o9;->c:Lcom/applovin/impl/sdk/n;
 
     invoke-static {}, Lcom/applovin/impl/sdk/n;->a()Z
@@ -144,10 +144,10 @@
 
     invoke-virtual {v0, v1, v2}, Lcom/applovin/impl/sdk/n;->a(Ljava/lang/String;Ljava/lang/String;)V
 
+    .line 4
     :cond_0
     iget-object v0, p0, Lcom/applovin/impl/u9$d;->a:Lcom/applovin/impl/u9;
 
-    .line 4
     invoke-virtual {p1}, Lcom/applovin/impl/j3;->getAndClearLastClickEvent()Landroid/view/MotionEvent;
 
     move-result-object p1
@@ -160,9 +160,9 @@
 .method public b(Landroid/net/Uri;Lcom/applovin/impl/adview/l;)V
     .locals 2
 
+    .line 3
     iget-object p2, p0, Lcom/applovin/impl/u9$d;->a:Lcom/applovin/impl/u9;
 
-    .line 3
     iget-object p2, p2, Lcom/applovin/impl/o9;->c:Lcom/applovin/impl/sdk/n;
 
     invoke-static {}, Lcom/applovin/impl/sdk/n;->a()Z
@@ -181,10 +181,10 @@
 
     invoke-virtual {p2, v0, v1}, Lcom/applovin/impl/sdk/n;->a(Ljava/lang/String;Ljava/lang/String;)V
 
+    .line 4
     :cond_0
     iget-object p2, p0, Lcom/applovin/impl/u9$d;->a:Lcom/applovin/impl/u9;
 
-    .line 4
     iget-object p2, p2, Lcom/applovin/impl/o9;->i:Lcom/applovin/adview/AppLovinAdView;
 
     invoke-virtual {p2}, Lcom/applovin/adview/AppLovinAdView;->getController()Lcom/applovin/impl/adview/a;
@@ -207,9 +207,9 @@
 .method public b(Lcom/applovin/impl/adview/l;)V
     .locals 3
 
+    .line 1
     iget-object v0, p0, Lcom/applovin/impl/u9$d;->a:Lcom/applovin/impl/u9;
 
-    .line 1
     iget-object v0, v0, Lcom/applovin/impl/o9;->c:Lcom/applovin/impl/sdk/n;
 
     invoke-static {}, Lcom/applovin/impl/sdk/n;->a()Z
@@ -228,10 +228,10 @@
 
     invoke-virtual {v0, v1, v2}, Lcom/applovin/impl/sdk/n;->a(Ljava/lang/String;Ljava/lang/String;)V
 
+    .line 2
     :cond_0
     iget-object v0, p0, Lcom/applovin/impl/u9$d;->a:Lcom/applovin/impl/u9;
 
-    .line 2
     invoke-virtual {p1}, Lcom/applovin/impl/j3;->getAndClearLastClickEvent()Landroid/view/MotionEvent;
 
     move-result-object p1

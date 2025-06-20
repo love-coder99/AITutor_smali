@@ -3,14 +3,14 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lzh/c;
+.implements Lka/c;
 
 
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "Lkotlin/jvm/internal/Lambda;",
-        "Lzh/c;"
+        "Lka/c;"
     }
 .end annotation
 
@@ -22,9 +22,9 @@
         "",
         "",
         "restored",
-        "Landroidx/compose/foundation/text/g0;",
+        "Landroidx/compose/foundation/text/H;",
         "invoke",
-        "(Ljava/util/List;)Landroidx/compose/foundation/text/g0;",
+        "(Ljava/util/List;)Landroidx/compose/foundation/text/H;",
         "<anonymous>"
     }
     k = 0x3
@@ -65,7 +65,7 @@
 
 
 # virtual methods
-.method public final invoke(Ljava/util/List;)Landroidx/compose/foundation/text/g0;
+.method public final invoke(Ljava/util/List;)Landroidx/compose/foundation/text/H;
     .locals 3
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -74,12 +74,12 @@
             "+",
             "Ljava/lang/Object;",
             ">;)",
-            "Landroidx/compose/foundation/text/g0;"
+            "Landroidx/compose/foundation/text/H;"
         }
     .end annotation
 
     .line 2
-    new-instance v0, Landroidx/compose/foundation/text/g0;
+    new-instance v0, Landroidx/compose/foundation/text/H;
 
     const/4 v1, 0x1
 
@@ -118,7 +118,7 @@
     move-result p1
 
     .line 5
-    invoke-direct {v0, v1, p1}, Landroidx/compose/foundation/text/g0;-><init>(Landroidx/compose/foundation/gestures/Orientation;F)V
+    invoke-direct {v0, v1, p1}, Landroidx/compose/foundation/text/H;-><init>(Landroidx/compose/foundation/gestures/Orientation;F)V
 
     return-object v0
 .end method
@@ -129,7 +129,7 @@
     .line 1
     check-cast p1, Ljava/util/List;
 
-    invoke-virtual {p0, p1}, Landroidx/compose/foundation/text/TextFieldScrollerPosition$Companion$Saver$2;->invoke(Ljava/util/List;)Landroidx/compose/foundation/text/g0;
+    invoke-virtual {p0, p1}, Landroidx/compose/foundation/text/TextFieldScrollerPosition$Companion$Saver$2;->invoke(Ljava/util/List;)Landroidx/compose/foundation/text/H;
 
     move-result-object p1
 

@@ -52,8 +52,10 @@
 
     iput-object v0, p0, Lcom/applovin/impl/o5;->b:Lcom/applovin/impl/z4;
 
+    .line 4
     iput p1, p0, Lcom/applovin/impl/o5;->h:I
 
+    .line 5
     iput p2, p0, Lcom/applovin/impl/o5;->i:I
 
     return-void
@@ -212,19 +214,21 @@
 .method public final g()V
     .locals 1
 
+    .line 12
     iget-object v0, p0, Lcom/applovin/impl/o5;->c:Ljava/nio/ByteBuffer;
 
     if-eqz v0, :cond_0
 
-    .line 8
+    .line 13
     invoke-virtual {v0}, Ljava/nio/ByteBuffer;->flip()Ljava/nio/Buffer;
 
+    .line 14
     :cond_0
     iget-object v0, p0, Lcom/applovin/impl/o5;->g:Ljava/nio/ByteBuffer;
 
     if-eqz v0, :cond_1
 
-    .line 9
+    .line 15
     invoke-virtual {v0}, Ljava/nio/ByteBuffer;->flip()Ljava/nio/Buffer;
 
     :cond_1
@@ -234,15 +238,17 @@
 .method public g(I)V
     .locals 3
 
+    .line 1
     iget v0, p0, Lcom/applovin/impl/o5;->i:I
 
     add-int/2addr p1, v0
 
+    .line 2
     iget-object v0, p0, Lcom/applovin/impl/o5;->c:Ljava/nio/ByteBuffer;
 
     if-nez v0, :cond_0
 
-    .line 1
+    .line 3
     invoke-direct {p0, p1}, Lcom/applovin/impl/o5;->f(I)Ljava/nio/ByteBuffer;
 
     move-result-object p1
@@ -251,13 +257,13 @@
 
     return-void
 
-    .line 2
+    .line 4
     :cond_0
     invoke-virtual {v0}, Ljava/nio/Buffer;->capacity()I
 
     move-result v1
 
-    .line 3
+    .line 5
     invoke-virtual {v0}, Ljava/nio/Buffer;->position()I
 
     move-result v2
@@ -266,17 +272,18 @@
 
     if-lt v1, p1, :cond_1
 
+    .line 6
     iput-object v0, p0, Lcom/applovin/impl/o5;->c:Ljava/nio/ByteBuffer;
 
     return-void
 
-    .line 4
+    .line 7
     :cond_1
     invoke-direct {p0, p1}, Lcom/applovin/impl/o5;->f(I)Ljava/nio/ByteBuffer;
 
     move-result-object p1
 
-    .line 5
+    .line 8
     invoke-virtual {v0}, Ljava/nio/ByteBuffer;->order()Ljava/nio/ByteOrder;
 
     move-result-object v1
@@ -285,12 +292,13 @@
 
     if-lez v2, :cond_2
 
-    .line 6
+    .line 9
     invoke-virtual {v0}, Ljava/nio/ByteBuffer;->flip()Ljava/nio/Buffer;
 
-    .line 7
+    .line 10
     invoke-virtual {p1, v0}, Ljava/nio/ByteBuffer;->put(Ljava/nio/ByteBuffer;)Ljava/nio/ByteBuffer;
 
+    .line 11
     :cond_2
     iput-object p1, p0, Lcom/applovin/impl/o5;->c:Ljava/nio/ByteBuffer;
 
@@ -300,11 +308,11 @@
 .method public h(I)V
     .locals 1
 
+    .line 2
     iget-object v0, p0, Lcom/applovin/impl/o5;->g:Ljava/nio/ByteBuffer;
 
     if-eqz v0, :cond_1
 
-    .line 2
     invoke-virtual {v0}, Ljava/nio/Buffer;->capacity()I
 
     move-result v0
@@ -313,10 +321,10 @@
 
     goto :goto_0
 
+    .line 3
     :cond_0
     iget-object p1, p0, Lcom/applovin/impl/o5;->g:Ljava/nio/ByteBuffer;
 
-    .line 3
     invoke-virtual {p1}, Ljava/nio/ByteBuffer;->clear()Ljava/nio/Buffer;
 
     goto :goto_1

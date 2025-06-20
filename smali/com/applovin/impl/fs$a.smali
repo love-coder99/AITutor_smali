@@ -182,7 +182,7 @@
 
     .line 38
     .line 39
-    invoke-static {v3, v0, v1, v4}, Lj0/d;->h(Ljava/lang/String;JLjava/lang/String;)Ljava/lang/String;
+    invoke-static {v3, v4, v0, v1}, Landroidx/compose/runtime/a0;->q(Ljava/lang/String;Ljava/lang/String;J)Ljava/lang/String;
 
     .line 40
     .line 41
@@ -580,7 +580,7 @@
 
     .line 75
     .line 76
-    invoke-static {p4, p2, v0}, Ly/d;->c(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {p4, p2, v0}, LB/u;->H(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     .line 77
     .line 78

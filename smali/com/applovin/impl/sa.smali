@@ -248,19 +248,21 @@
 .method public a([BII)I
     .locals 3
 
+    .line 3
     iget v0, p0, Lcom/applovin/impl/sa;->e:I
 
     const/4 v1, -0x1
 
     if-nez v0, :cond_1
 
-    .line 3
+    .line 4
     invoke-direct {p0}, Lcom/applovin/impl/sa;->g()Z
 
     move-result v0
 
     if-eqz v0, :cond_0
 
+    .line 5
     iget v0, p0, Lcom/applovin/impl/sa;->b:I
 
     iput v0, p0, Lcom/applovin/impl/sa;->e:I
@@ -270,13 +272,13 @@
     :cond_0
     return v1
 
+    .line 6
     :cond_1
     :goto_0
     iget-object v0, p0, Lcom/applovin/impl/sa;->a:Lcom/applovin/impl/h5;
 
     iget v2, p0, Lcom/applovin/impl/sa;->e:I
 
-    .line 4
     invoke-static {v2, p3}, Ljava/lang/Math;->min(II)I
 
     move-result p3
@@ -287,6 +289,7 @@
 
     if-eq p1, v1, :cond_2
 
+    .line 7
     iget p2, p0, Lcom/applovin/impl/sa;->e:I
 
     sub-int/2addr p2, p1
@@ -300,7 +303,7 @@
 .method public a(Lcom/applovin/impl/k5;)J
     .locals 0
 
-    .line 5
+    .line 8
     new-instance p1, Ljava/lang/UnsupportedOperationException;
 
     invoke-direct {p1}, Ljava/lang/UnsupportedOperationException;-><init>()V
@@ -314,9 +317,9 @@
     .line 1
     invoke-static {p1}, Lcom/applovin/impl/b1;->a(Ljava/lang/Object;)Ljava/lang/Object;
 
+    .line 2
     iget-object v0, p0, Lcom/applovin/impl/sa;->a:Lcom/applovin/impl/h5;
 
-    .line 2
     invoke-interface {v0, p1}, Lcom/applovin/impl/h5;->a(Lcom/applovin/impl/xo;)V
 
     return-void

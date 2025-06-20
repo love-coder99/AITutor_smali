@@ -166,7 +166,7 @@
     </entry>
     <entry>
         <key>list_rewarded_interstitial_ads_unit_id</key>
-        <value> [""] </value>
+        <value> [] </value>
     </entry>
     <entry>
         <key>list_ads_unit_id_banner_answer</key>
@@ -214,7 +214,7 @@
     </entry>
     <entry>
         <key>prompt_model</key>
-        <value>gpt-4o-mini</value>
+        <value>gpt-4.1-nano</value>
     </entry>
     <entry>
         <key>prompt_max_token_input</key>
@@ -230,11 +230,11 @@
     </entry>
     <entry>
         <key>vision_model</key>
-        <value>gemini-1.5-flash-latest</value>
+        <value>gemini-2.0-flash-lite</value>
     </entry>
     <entry>
         <key>vision_max_token_input</key>
-        <value>700</value>
+        <value>1000</value>
     </entry>
     <entry>
         <key>vision_max_token_output</key>
@@ -259,5 +259,41 @@
     <entry>
         <key>show_full_noti_by_worker</key>
         <value>false</value>
+    </entry>
+    <entry>
+        <key>doc_model</key>
+        <value>gemini-2.0-flash-lite</value>
+    </entry>
+    <entry>
+        <key>max_doc_input_token</key>
+        <value>5200</value>
+    </entry>
+    <entry>
+        <key>max_doc_output_token</key>
+        <value>5200</value>
+    </entry>
+    <entry>
+        <key>essay_word_count_limit</key>
+        <value>1000</value>
+    </entry>
+    <entry>
+        <key>essay_model</key>
+        <value>gpt-4.1-nano</value>
+    </entry>
+    <entry>
+        <key>max_essay_input_token</key>
+        <value>5200</value>
+    </entry>
+    <entry>
+        <key>max_essay_output_token</key>
+        <value>5200</value>
+    </entry>
+    <entry>
+        <key>free_step_by_step_daily</key>
+        <value>2</value>
+    </entry>
+    <entry>
+        <key>max_ocr_text_length_output</key>
+        <value>1500</value>
     </entry>
 </defaults>

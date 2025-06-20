@@ -25,6 +25,7 @@
     .line 1
     invoke-direct {p0, p1}, Ljava/lang/Exception;-><init>(Ljava/lang/String;)V
 
+    .line 2
     iput-object p2, p0, Lcom/applovin/impl/r1$a;->a:Lcom/applovin/impl/e9;
 
     return-void
@@ -33,9 +34,10 @@
 .method public constructor <init>(Ljava/lang/Throwable;Lcom/applovin/impl/e9;)V
     .locals 0
 
-    .line 2
+    .line 3
     invoke-direct {p0, p1}, Ljava/lang/Exception;-><init>(Ljava/lang/Throwable;)V
 
+    .line 4
     iput-object p2, p0, Lcom/applovin/impl/r1$a;->a:Lcom/applovin/impl/e9;
 
     return-void

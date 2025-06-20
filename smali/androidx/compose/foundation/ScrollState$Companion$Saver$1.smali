@@ -3,14 +3,14 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lzh/e;
+.implements Lka/e;
 
 
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "Lkotlin/jvm/internal/Lambda;",
-        "Lzh/e;"
+        "Lka/e;"
     }
 .end annotation
 
@@ -19,12 +19,12 @@
         "\u0000\u0012\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u0008\n\u0002\u0008\u0003\u0010\u0006\u001a\u0004\u0018\u00010\u0003*\u00020\u00002\u0006\u0010\u0002\u001a\u00020\u0001H\n\u00a2\u0006\u0004\u0008\u0004\u0010\u0005"
     }
     d2 = {
-        "Landroidx/compose/runtime/saveable/n;",
-        "Landroidx/compose/foundation/y0;",
+        "Landroidx/compose/runtime/saveable/l;",
+        "Landroidx/compose/foundation/X;",
         "it",
         "",
         "invoke",
-        "(Landroidx/compose/runtime/saveable/n;Landroidx/compose/foundation/y0;)Ljava/lang/Integer;",
+        "(Landroidx/compose/runtime/saveable/l;Landroidx/compose/foundation/X;)Ljava/lang/Integer;",
         "<anonymous>"
     }
     k = 0x3
@@ -65,14 +65,18 @@
 
 
 # virtual methods
-.method public final invoke(Landroidx/compose/runtime/saveable/n;Landroidx/compose/foundation/y0;)Ljava/lang/Integer;
+.method public final invoke(Landroidx/compose/runtime/saveable/l;Landroidx/compose/foundation/X;)Ljava/lang/Integer;
     .locals 0
 
+    .line 1
+    iget-object p1, p2, Landroidx/compose/foundation/X;->a:Landroidx/compose/runtime/ParcelableSnapshotMutableIntState;
+
     .line 2
-    invoke-virtual {p2}, Landroidx/compose/foundation/y0;->f()I
+    invoke-virtual {p1}, Landroidx/compose/runtime/ParcelableSnapshotMutableIntState;->k()I
 
     move-result p1
 
+    .line 3
     invoke-static {p1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
     move-result-object p1
@@ -83,12 +87,12 @@
 .method public bridge synthetic invoke(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
     .locals 0
 
-    .line 1
-    check-cast p1, Landroidx/compose/runtime/saveable/n;
+    .line 4
+    check-cast p1, Landroidx/compose/runtime/saveable/l;
 
-    check-cast p2, Landroidx/compose/foundation/y0;
+    check-cast p2, Landroidx/compose/foundation/X;
 
-    invoke-virtual {p0, p1, p2}, Landroidx/compose/foundation/ScrollState$Companion$Saver$1;->invoke(Landroidx/compose/runtime/saveable/n;Landroidx/compose/foundation/y0;)Ljava/lang/Integer;
+    invoke-virtual {p0, p1, p2}, Landroidx/compose/foundation/ScrollState$Companion$Saver$1;->invoke(Landroidx/compose/runtime/saveable/l;Landroidx/compose/foundation/X;)Ljava/lang/Integer;
 
     move-result-object p1
 

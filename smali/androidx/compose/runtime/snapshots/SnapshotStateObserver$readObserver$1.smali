@@ -3,14 +3,14 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lzh/c;
+.implements Lka/c;
 
 
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "Lkotlin/jvm/internal/Lambda;",
-        "Lzh/c;"
+        "Lka/c;"
     }
 .end annotation
 
@@ -21,7 +21,7 @@
     d2 = {
         "",
         "state",
-        "Lqh/r;",
+        "LX9/j;",
         "invoke",
         "(Ljava/lang/Object;)V",
         "<anonymous>"
@@ -36,14 +36,14 @@
 
 
 # instance fields
-.field final synthetic this$0:Landroidx/compose/runtime/snapshots/s;
+.field final synthetic this$0:Landroidx/compose/runtime/snapshots/q;
 
 
 # direct methods
-.method public constructor <init>(Landroidx/compose/runtime/snapshots/s;)V
+.method public constructor <init>(Landroidx/compose/runtime/snapshots/q;)V
     .locals 0
 
-    iput-object p1, p0, Landroidx/compose/runtime/snapshots/SnapshotStateObserver$readObserver$1;->this$0:Landroidx/compose/runtime/snapshots/s;
+    iput-object p1, p0, Landroidx/compose/runtime/snapshots/SnapshotStateObserver$readObserver$1;->this$0:Landroidx/compose/runtime/snapshots/q;
 
     const/4 p1, 0x1
 
@@ -57,10 +57,10 @@
 .method public bridge synthetic invoke(Ljava/lang/Object;)Ljava/lang/Object;
     .locals 0
 
-    .line 12
+    .line 1
     invoke-virtual {p0, p1}, Landroidx/compose/runtime/snapshots/SnapshotStateObserver$readObserver$1;->invoke(Ljava/lang/Object;)V
 
-    sget-object p1, Lqh/r;->a:Lqh/r;
+    sget-object p1, LX9/j;->a:LX9/j;
 
     return-object p1
 .end method
@@ -68,56 +68,55 @@
 .method public final invoke(Ljava/lang/Object;)V
     .locals 6
 
-    iget-object v0, p0, Landroidx/compose/runtime/snapshots/SnapshotStateObserver$readObserver$1;->this$0:Landroidx/compose/runtime/snapshots/s;
-
-    .line 1
-    iget-boolean v1, v0, Landroidx/compose/runtime/snapshots/s;->h:Z
-
-    if-nez v1, :cond_1
-
     .line 2
-    iget-object v1, v0, Landroidx/compose/runtime/snapshots/s;->f:Landroidx/compose/runtime/collection/e;
+    iget-object v0, p0, Landroidx/compose/runtime/snapshots/SnapshotStateObserver$readObserver$1;->this$0:Landroidx/compose/runtime/snapshots/q;
 
     .line 3
-    monitor-enter v1
+    invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
     .line 4
-    :try_start_0
-    iget-object v0, v0, Landroidx/compose/runtime/snapshots/s;->i:Landroidx/compose/runtime/snapshots/r;
+    iget-object v1, v0, Landroidx/compose/runtime/snapshots/q;->f:Landroidx/compose/runtime/collection/d;
 
     .line 5
-    iget-object v2, v0, Landroidx/compose/runtime/snapshots/r;->b:Ljava/lang/Object;
+    monitor-enter v1
 
     .line 6
-    iget v3, v0, Landroidx/compose/runtime/snapshots/r;->d:I
+    :try_start_0
+    iget-object v0, v0, Landroidx/compose/runtime/snapshots/q;->h:Landroidx/compose/runtime/snapshots/p;
 
     .line 7
-    iget-object v4, v0, Landroidx/compose/runtime/snapshots/r;->c:Landroidx/collection/y;
+    iget-object v2, v0, Landroidx/compose/runtime/snapshots/p;->b:Ljava/lang/Object;
+
+    .line 8
+    iget v3, v0, Landroidx/compose/runtime/snapshots/p;->d:I
+
+    .line 9
+    iget-object v4, v0, Landroidx/compose/runtime/snapshots/p;->c:Landroidx/collection/x;
 
     if-nez v4, :cond_0
 
-    new-instance v4, Landroidx/collection/y;
+    new-instance v4, Landroidx/collection/x;
 
-    invoke-direct {v4}, Landroidx/collection/y;-><init>()V
-
-    .line 8
-    iput-object v4, v0, Landroidx/compose/runtime/snapshots/r;->c:Landroidx/collection/y;
-
-    .line 9
-    iget-object v5, v0, Landroidx/compose/runtime/snapshots/r;->f:Landroidx/collection/b0;
-
-    invoke-virtual {v5, v2, v4}, Landroidx/collection/b0;->k(Ljava/lang/Object;Ljava/lang/Object;)V
+    invoke-direct {v4}, Landroidx/collection/x;-><init>()V
 
     .line 10
+    iput-object v4, v0, Landroidx/compose/runtime/snapshots/p;->c:Landroidx/collection/x;
+
+    .line 11
+    iget-object v5, v0, Landroidx/compose/runtime/snapshots/p;->f:Landroidx/collection/A;
+
+    invoke-virtual {v5, v2, v4}, Landroidx/collection/A;->i(Ljava/lang/Object;Ljava/lang/Object;)V
+
+    .line 12
     :cond_0
-    invoke-virtual {v0, p1, v3, v2, v4}, Landroidx/compose/runtime/snapshots/r;->c(Ljava/lang/Object;ILjava/lang/Object;Landroidx/collection/y;)V
+    invoke-virtual {v0, p1, v3, v2, v4}, Landroidx/compose/runtime/snapshots/p;->c(Ljava/lang/Object;ILjava/lang/Object;Landroidx/collection/x;)V
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    .line 11
+    .line 13
     monitor-exit v1
 
-    goto :goto_0
+    return-void
 
     :catchall_0
     move-exception p1
@@ -125,8 +124,4 @@
     monitor-exit v1
 
     throw p1
-
-    :cond_1
-    :goto_0
-    return-void
 .end method

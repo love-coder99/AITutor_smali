@@ -100,8 +100,11 @@
 .method public b()I
     .locals 1
 
+    .line 1
     iget v0, p0, Lcom/applovin/impl/k1$e;->b:I
 
+    .line 2
+    .line 3
     return v0
 .end method
 

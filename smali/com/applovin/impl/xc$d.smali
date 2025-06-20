@@ -60,11 +60,12 @@
 .method public a()V
     .locals 1
 
-    .line 1
     const/4 v0, 0x0
 
+    .line 4
     iput-boolean v0, p0, Lcom/applovin/impl/xc$d;->b:Z
 
+    .line 5
     iput v0, p0, Lcom/applovin/impl/xc$d;->c:I
 
     return-void
@@ -73,12 +74,14 @@
 .method public a(Lcom/applovin/impl/k8;)V
     .locals 3
 
+    .line 14
     iget-boolean v0, p0, Lcom/applovin/impl/xc$d;->b:Z
 
     if-eqz v0, :cond_0
 
     return-void
 
+    .line 15
     :cond_0
     iget-object v0, p0, Lcom/applovin/impl/xc$d;->a:[B
 
@@ -86,15 +89,14 @@
 
     const/16 v2, 0xa
 
-    .line 4
     invoke-interface {p1, v0, v1, v2}, Lcom/applovin/impl/k8;->c([BII)V
 
-    .line 5
+    .line 16
     invoke-interface {p1}, Lcom/applovin/impl/k8;->b()V
 
+    .line 17
     iget-object p1, p0, Lcom/applovin/impl/xc$d;->a:[B
 
-    .line 6
     invoke-static {p1}, Lcom/applovin/impl/k;->b([B)I
 
     move-result p1
@@ -106,6 +108,7 @@
     :cond_1
     const/4 p1, 0x1
 
+    .line 18
     iput-boolean p1, p0, Lcom/applovin/impl/xc$d;->b:Z
 
     return-void
@@ -114,6 +117,7 @@
 .method public a(Lcom/applovin/impl/xc$c;)V
     .locals 8
 
+    .line 1
     iget v0, p0, Lcom/applovin/impl/xc$d;->c:I
 
     if-lez v0, :cond_0
@@ -135,6 +139,7 @@
 
     const/4 p1, 0x0
 
+    .line 3
     iput p1, p0, Lcom/applovin/impl/xc$d;->c:I
 
     :cond_0
@@ -144,12 +149,14 @@
 .method public a(Lcom/applovin/impl/xc$c;JIII)V
     .locals 2
 
+    .line 6
     iget-boolean v0, p0, Lcom/applovin/impl/xc$d;->b:Z
 
     if-nez v0, :cond_0
 
     return-void
 
+    .line 7
     :cond_0
     iget v0, p0, Lcom/applovin/impl/xc$d;->c:I
 
@@ -159,14 +166,18 @@
 
     if-nez v0, :cond_1
 
+    .line 8
     iput-wide p2, p0, Lcom/applovin/impl/xc$d;->d:J
 
+    .line 9
     iput p4, p0, Lcom/applovin/impl/xc$d;->e:I
 
     const/4 p2, 0x0
 
+    .line 10
     iput p2, p0, Lcom/applovin/impl/xc$d;->f:I
 
+    .line 11
     :cond_1
     iget p2, p0, Lcom/applovin/impl/xc$d;->f:I
 
@@ -174,13 +185,14 @@
 
     iput p2, p0, Lcom/applovin/impl/xc$d;->f:I
 
+    .line 12
     iput p6, p0, Lcom/applovin/impl/xc$d;->g:I
 
     const/16 p2, 0x10
 
     if-lt v1, p2, :cond_2
 
-    .line 3
+    .line 13
     invoke-virtual {p0, p1}, Lcom/applovin/impl/xc$d;->a(Lcom/applovin/impl/xc$c;)V
 
     :cond_2

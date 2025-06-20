@@ -3,14 +3,14 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lzh/e;
+.implements Lka/e;
 
 
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "Lkotlin/jvm/internal/Lambda;",
-        "Lzh/e;"
+        "Lka/e;"
     }
 .end annotation
 
@@ -19,9 +19,9 @@
         "\u0000\u0008\n\u0002\u0018\u0002\n\u0002\u0008\u0003\u0010\u0003\u001a\u00020\u0000H\u000b\u00a2\u0006\u0004\u0008\u0001\u0010\u0002"
     }
     d2 = {
-        "Lqh/r;",
+        "LX9/j;",
         "invoke",
-        "(Landroidx/compose/runtime/l;I)V",
+        "(Landroidx/compose/runtime/j;I)V",
         "<anonymous>"
     }
     k = 0x3
@@ -34,14 +34,14 @@
 
 
 # instance fields
-.field final synthetic $snackbarData:Landroidx/compose/material3/a1;
+.field final synthetic $snackbarData:Landroidx/compose/material3/w0;
 
 
 # direct methods
-.method public constructor <init>(Landroidx/compose/material3/a1;)V
+.method public constructor <init>(Landroidx/compose/material3/w0;)V
     .locals 0
 
-    iput-object p1, p0, Landroidx/compose/material3/SnackbarKt$Snackbar$dismissActionComposable$1;->$snackbarData:Landroidx/compose/material3/a1;
+    iput-object p1, p0, Landroidx/compose/material3/SnackbarKt$Snackbar$dismissActionComposable$1;->$snackbarData:Landroidx/compose/material3/w0;
 
     const/4 p1, 0x2
 
@@ -56,7 +56,7 @@
     .locals 0
 
     .line 1
-    check-cast p1, Landroidx/compose/runtime/l;
+    check-cast p1, Landroidx/compose/runtime/j;
 
     check-cast p2, Ljava/lang/Number;
 
@@ -64,14 +64,14 @@
 
     move-result p2
 
-    invoke-virtual {p0, p1, p2}, Landroidx/compose/material3/SnackbarKt$Snackbar$dismissActionComposable$1;->invoke(Landroidx/compose/runtime/l;I)V
+    invoke-virtual {p0, p1, p2}, Landroidx/compose/material3/SnackbarKt$Snackbar$dismissActionComposable$1;->invoke(Landroidx/compose/runtime/j;I)V
 
-    sget-object p1, Lqh/r;->a:Lqh/r;
+    sget-object p1, LX9/j;->a:LX9/j;
 
     return-object p1
 .end method
 
-.method public final invoke(Landroidx/compose/runtime/l;I)V
+.method public final invoke(Landroidx/compose/runtime/j;I)V
     .locals 9
 
     and-int/lit8 p2, p2, 0x3
@@ -80,12 +80,12 @@
 
     if-ne p2, v0, :cond_1
 
+    .line 2
     move-object p2, p1
 
-    check-cast p2, Landroidx/compose/runtime/p;
+    check-cast p2, Landroidx/compose/runtime/n;
 
-    .line 2
-    invoke-virtual {p2}, Landroidx/compose/runtime/p;->y()Z
+    invoke-virtual {p2}, Landroidx/compose/runtime/n;->x()Z
 
     move-result v0
 
@@ -95,66 +95,67 @@
 
     .line 3
     :cond_0
-    invoke-virtual {p2}, Landroidx/compose/runtime/p;->N()V
+    invoke-virtual {p2}, Landroidx/compose/runtime/n;->L()V
 
     goto :goto_1
 
+    .line 4
     :cond_1
     :goto_0
-    iget-object p2, p0, Landroidx/compose/material3/SnackbarKt$Snackbar$dismissActionComposable$1;->$snackbarData:Landroidx/compose/material3/a1;
+    iget-object p2, p0, Landroidx/compose/material3/SnackbarKt$Snackbar$dismissActionComposable$1;->$snackbarData:Landroidx/compose/material3/w0;
 
     move-object v6, p1
 
-    check-cast v6, Landroidx/compose/runtime/p;
+    check-cast v6, Landroidx/compose/runtime/n;
 
-    .line 4
-    invoke-virtual {v6, p2}, Landroidx/compose/runtime/p;->g(Ljava/lang/Object;)Z
+    invoke-virtual {v6, p2}, Landroidx/compose/runtime/n;->f(Ljava/lang/Object;)Z
 
     move-result p1
 
-    iget-object p2, p0, Landroidx/compose/material3/SnackbarKt$Snackbar$dismissActionComposable$1;->$snackbarData:Landroidx/compose/material3/a1;
+    iget-object p2, p0, Landroidx/compose/material3/SnackbarKt$Snackbar$dismissActionComposable$1;->$snackbarData:Landroidx/compose/material3/w0;
 
     .line 5
-    invoke-virtual {v6}, Landroidx/compose/runtime/p;->I()Ljava/lang/Object;
+    invoke-virtual {v6}, Landroidx/compose/runtime/n;->G()Ljava/lang/Object;
 
     move-result-object v0
 
     if-nez p1, :cond_2
 
-    sget-object p1, Landroidx/compose/runtime/k;->b:Lxd/e;
+    .line 6
+    sget-object p1, Landroidx/compose/runtime/i;->a:Landroidx/compose/runtime/T;
 
     if-ne v0, p1, :cond_3
 
-    .line 6
+    .line 7
     :cond_2
     new-instance v0, Landroidx/compose/material3/SnackbarKt$Snackbar$dismissActionComposable$1$1$1;
 
-    invoke-direct {v0, p2}, Landroidx/compose/material3/SnackbarKt$Snackbar$dismissActionComposable$1$1$1;-><init>(Landroidx/compose/material3/a1;)V
-
-    .line 7
-    invoke-virtual {v6, v0}, Landroidx/compose/runtime/p;->d0(Ljava/lang/Object;)V
+    invoke-direct {v0, p2}, Landroidx/compose/material3/SnackbarKt$Snackbar$dismissActionComposable$1$1$1;-><init>(Landroidx/compose/material3/w0;)V
 
     .line 8
+    invoke-virtual {v6, v0}, Landroidx/compose/runtime/n;->b0(Ljava/lang/Object;)V
+
+    .line 9
     :cond_3
-    check-cast v0, Lzh/a;
+    check-cast v0, Lka/a;
 
-    const/4 v1, 0x0
-
-    const/4 v2, 0x0
+    .line 10
+    sget-object v5, Landroidx/compose/material3/x;->a:Landroidx/compose/runtime/internal/a;
 
     const/4 v3, 0x0
 
     const/4 v4, 0x0
 
-    .line 9
-    sget-object v5, Landroidx/compose/material3/t;->a:Landroidx/compose/runtime/internal/b;
+    const/4 v1, 0x0
+
+    const/4 v2, 0x0
 
     const/high16 v7, 0x30000
 
     const/16 v8, 0x1e
 
-    .line 10
-    invoke-static/range {v0 .. v8}, Landroidx/compose/material3/d;->g(Lzh/a;Landroidx/compose/ui/o;ZLandroidx/compose/material3/g0;Landroidx/compose/foundation/interaction/l;Lzh/e;Landroidx/compose/runtime/l;II)V
+    .line 11
+    invoke-static/range {v0 .. v8}, Landroidx/compose/material3/d;->g(Lka/a;Landroidx/compose/ui/o;ZLandroidx/compose/material3/L;Landroidx/compose/foundation/interaction/l;Lka/e;Landroidx/compose/runtime/j;II)V
 
     :goto_1
     return-void

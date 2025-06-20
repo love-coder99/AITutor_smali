@@ -3,14 +3,14 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lzh/e;
+.implements Lka/e;
 
 
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "Lkotlin/jvm/internal/Lambda;",
-        "Lzh/e;"
+        "Lka/e;"
     }
 .end annotation
 
@@ -19,9 +19,9 @@
         "\u0000\u0008\n\u0002\u0018\u0002\n\u0002\u0008\u0003\u0010\u0003\u001a\u00020\u0000H\u000b\u00a2\u0006\u0004\u0008\u0001\u0010\u0002"
     }
     d2 = {
-        "Lqh/r;",
+        "LX9/j;",
         "invoke",
-        "(Landroidx/compose/runtime/l;I)V",
+        "(Landroidx/compose/runtime/j;I)V",
         "<anonymous>"
     }
     k = 0x3
@@ -34,63 +34,63 @@
 
 
 # instance fields
-.field final synthetic $bottomBar:Lzh/e;
+.field final synthetic $bottomBar:Lka/e;
     .annotation system Ldalvik/annotation/Signature;
         value = {
-            "Lzh/e;"
+            "Lka/e;"
         }
     .end annotation
 .end field
 
-.field final synthetic $content:Lzh/f;
+.field final synthetic $content:Lka/f;
     .annotation system Ldalvik/annotation/Signature;
         value = {
-            "Lzh/f;"
+            "Lka/f;"
         }
     .end annotation
 .end field
 
-.field final synthetic $floatingActionButton:Lzh/e;
+.field final synthetic $floatingActionButton:Lka/e;
     .annotation system Ldalvik/annotation/Signature;
         value = {
-            "Lzh/e;"
+            "Lka/e;"
         }
     .end annotation
 .end field
 
 .field final synthetic $floatingActionButtonPosition:I
 
-.field final synthetic $safeInsets:Landroidx/compose/material3/internal/c;
+.field final synthetic $safeInsets:Landroidx/compose/material3/internal/p;
 
-.field final synthetic $snackbarHost:Lzh/e;
+.field final synthetic $snackbarHost:Lka/e;
     .annotation system Ldalvik/annotation/Signature;
         value = {
-            "Lzh/e;"
+            "Lka/e;"
         }
     .end annotation
 .end field
 
-.field final synthetic $topBar:Lzh/e;
+.field final synthetic $topBar:Lka/e;
     .annotation system Ldalvik/annotation/Signature;
         value = {
-            "Lzh/e;"
+            "Lka/e;"
         }
     .end annotation
 .end field
 
 
 # direct methods
-.method public constructor <init>(ILzh/e;Lzh/f;Lzh/e;Lzh/e;Landroidx/compose/material3/internal/c;Lzh/e;)V
+.method public constructor <init>(ILka/e;Lka/f;Lka/e;Lka/e;Landroidx/compose/material3/internal/p;Lka/e;)V
     .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(I",
-            "Lzh/e;",
-            "Lzh/f;",
-            "Lzh/e;",
-            "Lzh/e;",
-            "Landroidx/compose/material3/internal/c;",
-            "Lzh/e;",
+            "Lka/e;",
+            "Lka/f;",
+            "Lka/e;",
+            "Lka/e;",
+            "Landroidx/compose/material3/internal/p;",
+            "Lka/e;",
             ")V"
         }
     .end annotation
@@ -98,22 +98,40 @@
     .line 1
     iput p1, p0, Landroidx/compose/material3/ScaffoldKt$Scaffold$2;->$floatingActionButtonPosition:I
 
-    iput-object p2, p0, Landroidx/compose/material3/ScaffoldKt$Scaffold$2;->$topBar:Lzh/e;
+    .line 2
+    .line 3
+    iput-object p2, p0, Landroidx/compose/material3/ScaffoldKt$Scaffold$2;->$topBar:Lka/e;
 
-    iput-object p3, p0, Landroidx/compose/material3/ScaffoldKt$Scaffold$2;->$content:Lzh/f;
+    .line 4
+    .line 5
+    iput-object p3, p0, Landroidx/compose/material3/ScaffoldKt$Scaffold$2;->$content:Lka/f;
 
-    iput-object p4, p0, Landroidx/compose/material3/ScaffoldKt$Scaffold$2;->$snackbarHost:Lzh/e;
+    .line 6
+    .line 7
+    iput-object p4, p0, Landroidx/compose/material3/ScaffoldKt$Scaffold$2;->$snackbarHost:Lka/e;
 
-    iput-object p5, p0, Landroidx/compose/material3/ScaffoldKt$Scaffold$2;->$floatingActionButton:Lzh/e;
+    .line 8
+    .line 9
+    iput-object p5, p0, Landroidx/compose/material3/ScaffoldKt$Scaffold$2;->$floatingActionButton:Lka/e;
 
-    iput-object p6, p0, Landroidx/compose/material3/ScaffoldKt$Scaffold$2;->$safeInsets:Landroidx/compose/material3/internal/c;
+    .line 10
+    .line 11
+    iput-object p6, p0, Landroidx/compose/material3/ScaffoldKt$Scaffold$2;->$safeInsets:Landroidx/compose/material3/internal/p;
 
-    iput-object p7, p0, Landroidx/compose/material3/ScaffoldKt$Scaffold$2;->$bottomBar:Lzh/e;
+    .line 12
+    .line 13
+    iput-object p7, p0, Landroidx/compose/material3/ScaffoldKt$Scaffold$2;->$bottomBar:Lka/e;
 
+    .line 14
+    .line 15
     const/4 p1, 0x2
 
+    .line 16
     invoke-direct {p0, p1}, Lkotlin/jvm/internal/Lambda;-><init>(I)V
 
+    .line 17
+    .line 18
+    .line 19
     return-void
 .end method
 
@@ -123,7 +141,7 @@
     .locals 0
 
     .line 1
-    check-cast p1, Landroidx/compose/runtime/l;
+    check-cast p1, Landroidx/compose/runtime/j;
 
     check-cast p2, Ljava/lang/Number;
 
@@ -131,14 +149,14 @@
 
     move-result p2
 
-    invoke-virtual {p0, p1, p2}, Landroidx/compose/material3/ScaffoldKt$Scaffold$2;->invoke(Landroidx/compose/runtime/l;I)V
+    invoke-virtual {p0, p1, p2}, Landroidx/compose/material3/ScaffoldKt$Scaffold$2;->invoke(Landroidx/compose/runtime/j;I)V
 
-    sget-object p1, Lqh/r;->a:Lqh/r;
+    sget-object p1, LX9/j;->a:LX9/j;
 
     return-object p1
 .end method
 
-.method public final invoke(Landroidx/compose/runtime/l;I)V
+.method public final invoke(Landroidx/compose/runtime/j;I)V
     .locals 10
 
     and-int/lit8 p2, p2, 0x3
@@ -147,12 +165,12 @@
 
     if-ne p2, v0, :cond_1
 
+    .line 2
     move-object p2, p1
 
-    check-cast p2, Landroidx/compose/runtime/p;
+    check-cast p2, Landroidx/compose/runtime/n;
 
-    .line 2
-    invoke-virtual {p2}, Landroidx/compose/runtime/p;->y()Z
+    invoke-virtual {p2}, Landroidx/compose/runtime/n;->x()Z
 
     move-result v0
 
@@ -162,32 +180,39 @@
 
     .line 3
     :cond_0
-    invoke-virtual {p2}, Landroidx/compose/runtime/p;->N()V
+    invoke-virtual {p2}, Landroidx/compose/runtime/n;->L()V
 
     goto :goto_1
 
+    .line 4
     :cond_1
     :goto_0
     iget v1, p0, Landroidx/compose/material3/ScaffoldKt$Scaffold$2;->$floatingActionButtonPosition:I
 
-    iget-object v2, p0, Landroidx/compose/material3/ScaffoldKt$Scaffold$2;->$topBar:Lzh/e;
+    .line 5
+    iget-object v2, p0, Landroidx/compose/material3/ScaffoldKt$Scaffold$2;->$topBar:Lka/e;
 
-    iget-object v3, p0, Landroidx/compose/material3/ScaffoldKt$Scaffold$2;->$content:Lzh/f;
+    .line 6
+    iget-object v3, p0, Landroidx/compose/material3/ScaffoldKt$Scaffold$2;->$content:Lka/f;
 
-    iget-object v4, p0, Landroidx/compose/material3/ScaffoldKt$Scaffold$2;->$snackbarHost:Lzh/e;
+    .line 7
+    iget-object v4, p0, Landroidx/compose/material3/ScaffoldKt$Scaffold$2;->$snackbarHost:Lka/e;
 
-    iget-object v5, p0, Landroidx/compose/material3/ScaffoldKt$Scaffold$2;->$floatingActionButton:Lzh/e;
+    .line 8
+    iget-object v5, p0, Landroidx/compose/material3/ScaffoldKt$Scaffold$2;->$floatingActionButton:Lka/e;
 
-    iget-object v6, p0, Landroidx/compose/material3/ScaffoldKt$Scaffold$2;->$safeInsets:Landroidx/compose/material3/internal/c;
+    .line 9
+    iget-object v6, p0, Landroidx/compose/material3/ScaffoldKt$Scaffold$2;->$safeInsets:Landroidx/compose/material3/internal/p;
 
-    iget-object v7, p0, Landroidx/compose/material3/ScaffoldKt$Scaffold$2;->$bottomBar:Lzh/e;
+    .line 10
+    iget-object v7, p0, Landroidx/compose/material3/ScaffoldKt$Scaffold$2;->$bottomBar:Lka/e;
 
     const/4 v9, 0x0
 
     move-object v8, p1
 
-    .line 4
-    invoke-static/range {v1 .. v9}, Landroidx/compose/material3/v0;->b(ILzh/e;Lzh/f;Lzh/e;Lzh/e;Landroidx/compose/foundation/layout/f1;Lzh/e;Landroidx/compose/runtime/l;I)V
+    .line 11
+    invoke-static/range {v1 .. v9}, Landroidx/compose/material3/o0;->b(ILka/e;Lka/f;Lka/e;Lka/e;Landroidx/compose/foundation/layout/c0;Lka/e;Landroidx/compose/runtime/j;I)V
 
     :goto_1
     return-void

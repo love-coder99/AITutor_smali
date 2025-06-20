@@ -119,19 +119,19 @@
 
     .line 44
     :cond_3
-    const-string p1, "app_count"
+    invoke-static {v0}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
     .line 45
     .line 46
-    invoke-static {v0}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
-
     .line 47
-    .line 48
-    .line 49
-    move-result-object v0
+    move-result-object p1
 
+    .line 48
+    const-string v0, "app_count"
+
+    .line 49
     .line 50
-    invoke-virtual {p2, p1, v0}, Lcom/apm/insight/entity/a;->a(Ljava/lang/String;Ljava/lang/Object;)V
+    invoke-virtual {p2, v0, p1}, Lcom/apm/insight/entity/a;->a(Ljava/lang/String;Ljava/lang/Object;)V
 
     .line 51
     .line 52

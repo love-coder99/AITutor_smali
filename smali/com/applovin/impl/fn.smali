@@ -76,9 +76,9 @@
 .method public a(Lorg/json/JSONObject;)V
     .locals 2
 
+    .line 3
     iget-object v0, p0, Lcom/applovin/impl/fn;->h:Lcom/applovin/impl/he;
 
-    .line 3
     invoke-virtual {v0}, Lcom/applovin/impl/oe;->getAdUnitId()Ljava/lang/String;
 
     move-result-object v0
@@ -87,9 +87,9 @@
 
     invoke-static {p1, v1, v0}, Lcom/applovin/impl/sdk/utils/JsonUtils;->putString(Lorg/json/JSONObject;Ljava/lang/String;Ljava/lang/String;)V
 
+    .line 4
     iget-object v0, p0, Lcom/applovin/impl/fn;->h:Lcom/applovin/impl/he;
 
-    .line 4
     invoke-virtual {v0}, Lcom/applovin/impl/oe;->getPlacement()Ljava/lang/String;
 
     move-result-object v0
@@ -98,9 +98,9 @@
 
     invoke-static {p1, v1, v0}, Lcom/applovin/impl/sdk/utils/JsonUtils;->putString(Lorg/json/JSONObject;Ljava/lang/String;Ljava/lang/String;)V
 
+    .line 5
     iget-object v0, p0, Lcom/applovin/impl/fn;->h:Lcom/applovin/impl/he;
 
-    .line 5
     invoke-virtual {v0}, Lcom/applovin/impl/oe;->e()Ljava/lang/String;
 
     move-result-object v0
@@ -109,9 +109,9 @@
 
     invoke-static {p1, v1, v0}, Lcom/applovin/impl/sdk/utils/JsonUtils;->putString(Lorg/json/JSONObject;Ljava/lang/String;Ljava/lang/String;)V
 
+    .line 6
     iget-object v0, p0, Lcom/applovin/impl/fn;->h:Lcom/applovin/impl/he;
 
-    .line 6
     invoke-virtual {v0}, Lcom/applovin/impl/he;->o0()Ljava/lang/String;
 
     move-result-object v0
@@ -133,9 +133,9 @@
 
     invoke-static {p1, v1, v0}, Lcom/applovin/impl/sdk/utils/JsonUtils;->putString(Lorg/json/JSONObject;Ljava/lang/String;Ljava/lang/String;)V
 
+    .line 8
     iget-object v0, p0, Lcom/applovin/impl/fn;->h:Lcom/applovin/impl/he;
 
-    .line 8
     invoke-virtual {v0}, Lcom/applovin/impl/fe;->B()Ljava/lang/String;
 
     move-result-object v0
@@ -226,8 +226,11 @@
 .method public f()Ljava/lang/String;
     .locals 1
 
+    .line 1
     const-string v0, "2.0/mcr"
 
+    .line 2
+    .line 3
     return-object v0
 .end method
 

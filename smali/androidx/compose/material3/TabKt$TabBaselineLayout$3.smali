@@ -3,14 +3,14 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lzh/e;
+.implements Lka/e;
 
 
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "Lkotlin/jvm/internal/Lambda;",
-        "Lzh/e;"
+        "Lka/e;"
     }
 .end annotation
 
@@ -28,46 +28,56 @@
 # instance fields
 .field final synthetic $$changed:I
 
-.field final synthetic $icon:Lzh/e;
+.field final synthetic $icon:Lka/e;
     .annotation system Ldalvik/annotation/Signature;
         value = {
-            "Lzh/e;"
+            "Lka/e;"
         }
     .end annotation
 .end field
 
-.field final synthetic $text:Lzh/e;
+.field final synthetic $text:Lka/e;
     .annotation system Ldalvik/annotation/Signature;
         value = {
-            "Lzh/e;"
+            "Lka/e;"
         }
     .end annotation
 .end field
 
 
 # direct methods
-.method public constructor <init>(Lzh/e;Lzh/e;I)V
+.method public constructor <init>(Lka/e;Lka/e;I)V
     .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
-            "Lzh/e;",
-            "Lzh/e;",
+            "Lka/e;",
+            "Lka/e;",
             "I)V"
         }
     .end annotation
 
     .line 1
-    iput-object p1, p0, Landroidx/compose/material3/TabKt$TabBaselineLayout$3;->$text:Lzh/e;
+    iput-object p1, p0, Landroidx/compose/material3/TabKt$TabBaselineLayout$3;->$text:Lka/e;
 
-    iput-object p2, p0, Landroidx/compose/material3/TabKt$TabBaselineLayout$3;->$icon:Lzh/e;
+    .line 2
+    .line 3
+    iput-object p2, p0, Landroidx/compose/material3/TabKt$TabBaselineLayout$3;->$icon:Lka/e;
 
+    .line 4
+    .line 5
     iput p3, p0, Landroidx/compose/material3/TabKt$TabBaselineLayout$3;->$$changed:I
 
+    .line 6
+    .line 7
     const/4 p1, 0x2
 
+    .line 8
     invoke-direct {p0, p1}, Lkotlin/jvm/internal/Lambda;-><init>(I)V
 
+    .line 9
+    .line 10
+    .line 11
     return-void
 .end method
 
@@ -77,7 +87,7 @@
     .locals 0
 
     .line 1
-    check-cast p1, Landroidx/compose/runtime/l;
+    check-cast p1, Landroidx/compose/runtime/j;
 
     check-cast p2, Ljava/lang/Number;
 
@@ -85,30 +95,30 @@
 
     move-result p2
 
-    invoke-virtual {p0, p1, p2}, Landroidx/compose/material3/TabKt$TabBaselineLayout$3;->invoke(Landroidx/compose/runtime/l;I)V
+    invoke-virtual {p0, p1, p2}, Landroidx/compose/material3/TabKt$TabBaselineLayout$3;->invoke(Landroidx/compose/runtime/j;I)V
 
-    sget-object p1, Lqh/r;->a:Lqh/r;
+    sget-object p1, LX9/j;->a:LX9/j;
 
     return-object p1
 .end method
 
-.method public final invoke(Landroidx/compose/runtime/l;I)V
+.method public final invoke(Landroidx/compose/runtime/j;I)V
     .locals 2
 
     .line 2
-    iget-object p2, p0, Landroidx/compose/material3/TabKt$TabBaselineLayout$3;->$text:Lzh/e;
+    iget-object p2, p0, Landroidx/compose/material3/TabKt$TabBaselineLayout$3;->$text:Lka/e;
 
-    iget-object v0, p0, Landroidx/compose/material3/TabKt$TabBaselineLayout$3;->$icon:Lzh/e;
+    iget-object v0, p0, Landroidx/compose/material3/TabKt$TabBaselineLayout$3;->$icon:Lka/e;
 
     iget v1, p0, Landroidx/compose/material3/TabKt$TabBaselineLayout$3;->$$changed:I
 
     or-int/lit8 v1, v1, 0x1
 
-    invoke-static {v1}, Landroidx/compose/runtime/q;->A(I)I
+    invoke-static {v1}, Landroidx/compose/runtime/o;->f0(I)I
 
     move-result v1
 
-    invoke-static {p2, v0, p1, v1}, Landroidx/compose/material3/l1;->d(Lzh/e;Lzh/e;Landroidx/compose/runtime/l;I)V
+    invoke-static {p2, v0, p1, v1}, Landroidx/compose/material3/H0;->d(Lka/e;Lka/e;Landroidx/compose/runtime/j;I)V
 
     return-void
 .end method

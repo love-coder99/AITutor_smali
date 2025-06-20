@@ -3,14 +3,14 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lzh/c;
+.implements Lka/c;
 
 
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "Lkotlin/jvm/internal/Lambda;",
-        "Lzh/c;"
+        "Lka/c;"
     }
 .end annotation
 
@@ -117,12 +117,12 @@
     move-result-object v3
 
     .line 6
-    sget-object v4, Landroidx/compose/ui/text/z;->c:Landroidx/compose/runtime/saveable/l;
-
-    sget-object v5, Ljava/lang/Boolean;->FALSE:Ljava/lang/Boolean;
+    sget-object v4, Landroidx/compose/ui/text/z;->c:LB2/c;
 
     .line 7
-    invoke-static {v3, v5}, Lrb/h;->d(Ljava/lang/Object;Ljava/lang/Object;)Z
+    sget-object v5, Ljava/lang/Boolean;->FALSE:Ljava/lang/Boolean;
+
+    invoke-static {v3, v5}, Lkotlin/jvm/internal/h;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result v5
 
@@ -130,20 +130,18 @@
 
     if-eqz v5, :cond_0
 
-    instance-of v5, v4, Landroidx/compose/ui/text/y;
-
-    if-nez v5, :cond_0
-
     goto :goto_1
 
     :cond_0
     if-eqz v3, :cond_1
 
     .line 8
-    iget-object v4, v4, Landroidx/compose/runtime/saveable/l;->b:Lzh/c;
+    iget-object v4, v4, LB2/c;->d:Ljava/lang/Object;
+
+    check-cast v4, Lka/c;
 
     .line 9
-    invoke-interface {v4, v3}, Lzh/c;->invoke(Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-interface {v4, v3}, Lka/c;->invoke(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object v3
 

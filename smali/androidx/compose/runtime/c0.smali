@@ -1,87 +1,92 @@
-.class public final Landroidx/compose/runtime/c0;
+.class public final Landroidx/compose/runtime/C0;
 .super Ljava/lang/Object;
 .source "SourceFile"
 
 # interfaces
-.implements Landroidx/compose/runtime/c2;
+.implements Lkotlinx/coroutines/flow/g;
 
 
 # instance fields
-.field public final b:Lkotlinx/coroutines/w;
+.field public final synthetic b:I
+
+.field public final synthetic c:Landroidx/compose/runtime/h0;
 
 
 # direct methods
-.method public constructor <init>(Lkotlinx/coroutines/internal/e;)V
+.method public synthetic constructor <init>(Landroidx/compose/runtime/h0;I)V
     .locals 0
 
     .line 1
+    iput p2, p0, Landroidx/compose/runtime/C0;->b:I
+
+    iput-object p1, p0, Landroidx/compose/runtime/C0;->c:Landroidx/compose/runtime/h0;
+
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 2
-    .line 3
-    .line 4
-    iput-object p1, p0, Landroidx/compose/runtime/c0;->b:Lkotlinx/coroutines/w;
-
-    .line 5
-    .line 6
     return-void
 .end method
 
 
 # virtual methods
-.method public final a()V
-    .locals 2
-
-    .line 1
-    new-instance v0, Landroidx/compose/runtime/LeftCompositionCancellationException;
-
-    .line 2
-    .line 3
-    invoke-direct {v0}, Landroidx/compose/runtime/LeftCompositionCancellationException;-><init>()V
-
-    .line 4
-    .line 5
-    .line 6
-    iget-object v1, p0, Landroidx/compose/runtime/c0;->b:Lkotlinx/coroutines/w;
-
-    .line 7
-    .line 8
-    invoke-static {v1, v0}, Lrb/h;->f(Lkotlinx/coroutines/w;Ljava/util/concurrent/CancellationException;)V
-
-    .line 9
-    .line 10
-    .line 11
-    return-void
-.end method
-
-.method public final b()V
-    .locals 2
-
-    .line 1
-    new-instance v0, Landroidx/compose/runtime/LeftCompositionCancellationException;
-
-    .line 2
-    .line 3
-    invoke-direct {v0}, Landroidx/compose/runtime/LeftCompositionCancellationException;-><init>()V
-
-    .line 4
-    .line 5
-    .line 6
-    iget-object v1, p0, Landroidx/compose/runtime/c0;->b:Lkotlinx/coroutines/w;
-
-    .line 7
-    .line 8
-    invoke-static {v1, v0}, Lrb/h;->f(Lkotlinx/coroutines/w;Ljava/util/concurrent/CancellationException;)V
-
-    .line 9
-    .line 10
-    .line 11
-    return-void
-.end method
-
-.method public final e()V
+.method public final emit(Ljava/lang/Object;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
     .locals 0
 
     .line 1
-    return-void
+    iget p2, p0, Landroidx/compose/runtime/C0;->b:I
+
+    .line 2
+    .line 3
+    packed-switch p2, :pswitch_data_0
+
+    .line 4
+    .line 5
+    .line 6
+    iget-object p2, p0, Landroidx/compose/runtime/C0;->c:Landroidx/compose/runtime/h0;
+
+    .line 7
+    .line 8
+    check-cast p2, Landroidx/compose/runtime/i0;
+
+    .line 9
+    .line 10
+    invoke-virtual {p2, p1}, Landroidx/compose/runtime/i0;->setValue(Ljava/lang/Object;)V
+
+    .line 11
+    .line 12
+    .line 13
+    sget-object p1, LX9/j;->a:LX9/j;
+
+    .line 14
+    .line 15
+    return-object p1
+
+    .line 16
+    :pswitch_0
+    iget-object p2, p0, Landroidx/compose/runtime/C0;->c:Landroidx/compose/runtime/h0;
+
+    .line 17
+    .line 18
+    check-cast p2, Landroidx/compose/runtime/i0;
+
+    .line 19
+    .line 20
+    invoke-virtual {p2, p1}, Landroidx/compose/runtime/i0;->setValue(Ljava/lang/Object;)V
+
+    .line 21
+    .line 22
+    .line 23
+    sget-object p1, LX9/j;->a:LX9/j;
+
+    .line 24
+    .line 25
+    return-object p1
+
+    .line 26
+    nop
+
+    .line 27
+    :pswitch_data_0
+    .packed-switch 0x0
+        :pswitch_0
+    .end packed-switch
 .end method

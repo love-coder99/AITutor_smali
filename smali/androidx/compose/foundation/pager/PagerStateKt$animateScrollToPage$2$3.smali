@@ -3,7 +3,7 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lzh/e;
+.implements Lka/e;
 
 
 # annotations
@@ -19,7 +19,7 @@
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "Lkotlin/jvm/internal/Lambda;",
-        "Lzh/e;"
+        "Lka/e;"
     }
 .end annotation
 
@@ -31,7 +31,7 @@
         "",
         "currentValue",
         "<anonymous parameter 1>",
-        "Lqh/r;",
+        "LX9/j;",
         "invoke",
         "(FF)V",
         "<anonymous>"
@@ -46,18 +46,18 @@
 
 
 # instance fields
-.field final synthetic $$this$scroll:Landroidx/compose/foundation/gestures/a0;
+.field final synthetic $$this$scroll:Landroidx/compose/foundation/gestures/C;
 
 .field final synthetic $previousValue:Lkotlin/jvm/internal/Ref$FloatRef;
 
 
 # direct methods
-.method public constructor <init>(Lkotlin/jvm/internal/Ref$FloatRef;Landroidx/compose/foundation/gestures/a0;)V
+.method public constructor <init>(Lkotlin/jvm/internal/Ref$FloatRef;Landroidx/compose/foundation/gestures/C;)V
     .locals 0
 
     iput-object p1, p0, Landroidx/compose/foundation/pager/PagerStateKt$animateScrollToPage$2$3;->$previousValue:Lkotlin/jvm/internal/Ref$FloatRef;
 
-    iput-object p2, p0, Landroidx/compose/foundation/pager/PagerStateKt$animateScrollToPage$2$3;->$$this$scroll:Landroidx/compose/foundation/gestures/a0;
+    iput-object p2, p0, Landroidx/compose/foundation/pager/PagerStateKt$animateScrollToPage$2$3;->$$this$scroll:Landroidx/compose/foundation/gestures/C;
 
     const/4 p1, 0x2
 
@@ -86,7 +86,7 @@
 
     invoke-virtual {p0, p1, p2}, Landroidx/compose/foundation/pager/PagerStateKt$animateScrollToPage$2$3;->invoke(FF)V
 
-    sget-object p1, Lqh/r;->a:Lqh/r;
+    sget-object p1, LX9/j;->a:LX9/j;
 
     return-object p1
 .end method
@@ -94,23 +94,23 @@
 .method public final invoke(FF)V
     .locals 1
 
+    .line 2
     iget-object p2, p0, Landroidx/compose/foundation/pager/PagerStateKt$animateScrollToPage$2$3;->$previousValue:Lkotlin/jvm/internal/Ref$FloatRef;
 
-    .line 2
     iget p2, p2, Lkotlin/jvm/internal/Ref$FloatRef;->element:F
 
     sub-float/2addr p1, p2
 
-    iget-object p2, p0, Landroidx/compose/foundation/pager/PagerStateKt$animateScrollToPage$2$3;->$$this$scroll:Landroidx/compose/foundation/gestures/a0;
-
     .line 3
-    invoke-interface {p2, p1}, Landroidx/compose/foundation/gestures/a0;->a(F)F
+    iget-object p2, p0, Landroidx/compose/foundation/pager/PagerStateKt$animateScrollToPage$2$3;->$$this$scroll:Landroidx/compose/foundation/gestures/C;
+
+    invoke-interface {p2, p1}, Landroidx/compose/foundation/gestures/C;->a(F)F
 
     move-result p1
 
+    .line 4
     iget-object p2, p0, Landroidx/compose/foundation/pager/PagerStateKt$animateScrollToPage$2$3;->$previousValue:Lkotlin/jvm/internal/Ref$FloatRef;
 
-    .line 4
     iget v0, p2, Lkotlin/jvm/internal/Ref$FloatRef;->element:F
 
     add-float/2addr v0, p1

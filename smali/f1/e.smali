@@ -1,28 +1,13 @@
-.class public abstract Lf1/e;
-.super Ljava/lang/Object;
+.class public final LF1/e;
+.super Landroid/view/ViewGroup$MarginLayoutParams;
 .source "SourceFile"
 
 
-# static fields
-.field public static final a:Landroidx/compose/material3/tokens/ColorSchemeKeyTokens;
+# instance fields
+.field public a:I
 
-.field public static final b:F
+.field public b:F
 
+.field public c:Z
 
-# direct methods
-.method static constructor <clinit>()V
-    .locals 2
-
-    .line 1
-    sget-object v0, Landroidx/compose/material3/tokens/ColorSchemeKeyTokens;->OutlineVariant:Landroidx/compose/material3/tokens/ColorSchemeKeyTokens;
-
-    sput-object v0, Lf1/e;->a:Landroidx/compose/material3/tokens/ColorSchemeKeyTokens;
-
-    const-wide/high16 v0, 0x3ff0000000000000L    # 1.0
-
-    double-to-float v0, v0
-
-    sput v0, Lf1/e;->b:F
-
-    return-void
-.end method
+.field public d:I

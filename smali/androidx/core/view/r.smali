@@ -4,13 +4,13 @@
 
 
 # instance fields
-.field public final a:Landroidx/lifecycle/p;
+.field public final a:Landroidx/lifecycle/r;
 
-.field public b:Landroidx/lifecycle/u;
+.field public b:Landroidx/lifecycle/v;
 
 
 # direct methods
-.method public constructor <init>(Landroidx/lifecycle/p;Landroidx/lifecycle/u;)V
+.method public constructor <init>(Landroidx/lifecycle/r;Landroidx/lifecycle/v;)V
     .locals 0
 
     .line 1
@@ -19,15 +19,15 @@
     .line 2
     .line 3
     .line 4
-    iput-object p1, p0, Landroidx/core/view/r;->a:Landroidx/lifecycle/p;
+    iput-object p1, p0, Landroidx/core/view/r;->a:Landroidx/lifecycle/r;
 
     .line 5
     .line 6
-    iput-object p2, p0, Landroidx/core/view/r;->b:Landroidx/lifecycle/u;
+    iput-object p2, p0, Landroidx/core/view/r;->b:Landroidx/lifecycle/v;
 
     .line 7
     .line 8
-    invoke-virtual {p1, p2}, Landroidx/lifecycle/p;->a(Landroidx/lifecycle/v;)V
+    invoke-virtual {p1, p2}, Landroidx/lifecycle/r;->a(Landroidx/lifecycle/w;)V
 
     .line 9
     .line 10

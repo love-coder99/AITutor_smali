@@ -1,53 +1,66 @@
-.class public abstract synthetic Landroidx/compose/ui/viewinterop/e;
+.class public final Landroidx/compose/ui/viewinterop/e;
 .super Ljava/lang/Object;
 .source "SourceFile"
 
+# interfaces
+.implements Landroidx/compose/ui/input/nestedscroll/a;
 
-# static fields
-.field public static final synthetic a:[I
 
+# virtual methods
+.method public final synthetic D(IJ)J
+    .locals 0
 
-# direct methods
-.method static constructor <clinit>()V
-    .locals 3
+    .line 1
+    const-wide/16 p1, 0x0
 
-    invoke-static {}, Landroidx/compose/ui/unit/LayoutDirection;->values()[Landroidx/compose/ui/unit/LayoutDirection;
+    return-wide p1
+.end method
 
-    move-result-object v0
+.method public final V(JLkotlin/coroutines/Continuation;)Ljava/lang/Object;
+    .locals 0
 
-    array-length v0, v0
+    .line 1
+    new-instance p1, LM0/n;
 
-    new-array v0, v0, [I
+    .line 2
+    .line 3
+    const-wide/16 p2, 0x0
 
-    :try_start_0
-    sget-object v1, Landroidx/compose/ui/unit/LayoutDirection;->Ltr:Landroidx/compose/ui/unit/LayoutDirection;
+    .line 4
+    .line 5
+    invoke-direct {p1, p2, p3}, LM0/n;-><init>(J)V
 
-    invoke-virtual {v1}, Ljava/lang/Enum;->ordinal()I
+    .line 6
+    .line 7
+    .line 8
+    return-object p1
+.end method
 
-    move-result v1
+.method public final synthetic a0(IJJ)J
+    .locals 0
 
-    const/4 v2, 0x1
+    .line 1
+    const-wide/16 p1, 0x0
 
-    aput v2, v0, v1
-    :try_end_0
-    .catch Ljava/lang/NoSuchFieldError; {:try_start_0 .. :try_end_0} :catch_0
+    return-wide p1
+.end method
 
-    :catch_0
-    :try_start_1
-    sget-object v1, Landroidx/compose/ui/unit/LayoutDirection;->Rtl:Landroidx/compose/ui/unit/LayoutDirection;
+.method public final n(JJLkotlin/coroutines/Continuation;)Ljava/lang/Object;
+    .locals 0
 
-    invoke-virtual {v1}, Ljava/lang/Enum;->ordinal()I
+    .line 1
+    new-instance p1, LM0/n;
 
-    move-result v1
+    .line 2
+    .line 3
+    const-wide/16 p2, 0x0
 
-    const/4 v2, 0x2
+    .line 4
+    .line 5
+    invoke-direct {p1, p2, p3}, LM0/n;-><init>(J)V
 
-    aput v2, v0, v1
-    :try_end_1
-    .catch Ljava/lang/NoSuchFieldError; {:try_start_1 .. :try_end_1} :catch_1
-
-    :catch_1
-    sput-object v0, Landroidx/compose/ui/viewinterop/e;->a:[I
-
-    return-void
+    .line 6
+    .line 7
+    .line 8
+    return-object p1
 .end method

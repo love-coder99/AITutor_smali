@@ -3,44 +3,11 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lzh/e;
+.implements Lka/e;
 
 
 # annotations
-.annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Landroidx/compose/foundation/gestures/TapGestureDetectorKt$detectTapGestures$2;->invokeSuspend(Ljava/lang/Object;)Ljava/lang/Object;
-.end annotation
-
-.annotation system Ldalvik/annotation/InnerClass;
-    accessFlags = 0x19
-    name = null
-.end annotation
-
-.annotation system Ldalvik/annotation/Signature;
-    value = {
-        "Lkotlin/coroutines/jvm/internal/RestrictedSuspendLambda;",
-        "Lzh/e;"
-    }
-.end annotation
-
-.annotation runtime Lkotlin/Metadata;
-    d1 = {
-        "\u0000\n\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\u0010\u0002\u001a\u00020\u0001*\u00020\u0000H\u008a@"
-    }
-    d2 = {
-        "Landroidx/compose/ui/input/pointer/b;",
-        "Lqh/r;",
-        "<anonymous>"
-    }
-    k = 0x3
-    mv = {
-        0x1,
-        0x8,
-        0x0
-    }
-.end annotation
-
-.annotation runtime Lth/c;
+.annotation runtime Lca/c;
     c = "androidx.compose.foundation.gestures.TapGestureDetectorKt$detectTapGestures$2$1"
     f = "TapGestureDetector.kt"
     l = {
@@ -54,43 +21,77 @@
     m = "invokeSuspend"
 .end annotation
 
+.annotation system Ldalvik/annotation/EnclosingMethod;
+    value = Landroidx/compose/foundation/gestures/TapGestureDetectorKt$detectTapGestures$2;->invokeSuspend(Ljava/lang/Object;)Ljava/lang/Object;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x19
+    name = null
+.end annotation
+
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "Lkotlin/coroutines/jvm/internal/RestrictedSuspendLambda;",
+        "Lka/e;"
+    }
+.end annotation
+
+.annotation runtime Lkotlin/Metadata;
+    d1 = {
+        "\u0000\u000c\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0008\u0002\u0010\u0002\u001a\u00020\u0001*\u00020\u0000H\u008a@\u00a2\u0006\u0004\u0008\u0002\u0010\u0003"
+    }
+    d2 = {
+        "Landroidx/compose/ui/input/pointer/b;",
+        "LX9/j;",
+        "<anonymous>",
+        "(Landroidx/compose/ui/input/pointer/b;)V"
+    }
+    k = 0x3
+    mv = {
+        0x1,
+        0x8,
+        0x0
+    }
+.end annotation
+
 
 # instance fields
-.field final synthetic $$this$coroutineScope:Lkotlinx/coroutines/w;
+.field final synthetic $$this$coroutineScope:Lkotlinx/coroutines/u;
 
-.field final synthetic $onDoubleTap:Lzh/c;
+.field final synthetic $onDoubleTap:Lka/c;
     .annotation system Ldalvik/annotation/Signature;
         value = {
-            "Lzh/c;"
+            "Lka/c;"
         }
     .end annotation
 .end field
 
-.field final synthetic $onLongPress:Lzh/c;
+.field final synthetic $onLongPress:Lka/c;
     .annotation system Ldalvik/annotation/Signature;
         value = {
-            "Lzh/c;"
+            "Lka/c;"
         }
     .end annotation
 .end field
 
-.field final synthetic $onPress:Lzh/f;
+.field final synthetic $onPress:Lka/f;
     .annotation system Ldalvik/annotation/Signature;
         value = {
-            "Lzh/f;"
+            "Lka/f;"
         }
     .end annotation
 .end field
 
-.field final synthetic $onTap:Lzh/c;
+.field final synthetic $onTap:Lka/c;
     .annotation system Ldalvik/annotation/Signature;
         value = {
-            "Lzh/c;"
+            "Lka/c;"
         }
     .end annotation
 .end field
 
-.field final synthetic $pressScope:Landroidx/compose/foundation/gestures/z;
+.field final synthetic $pressScope:Landroidx/compose/foundation/gestures/B;
 
 .field J$0:J
 
@@ -106,17 +107,17 @@
 
 
 # direct methods
-.method public constructor <init>(Lkotlinx/coroutines/w;Lzh/f;Lzh/c;Lzh/c;Lzh/c;Landroidx/compose/foundation/gestures/z;Lkotlin/coroutines/Continuation;)V
+.method public constructor <init>(Lkotlinx/coroutines/u;Lka/f;Lka/c;Lka/c;Lka/c;Landroidx/compose/foundation/gestures/B;Lkotlin/coroutines/Continuation;)V
     .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
-            "Lkotlinx/coroutines/w;",
-            "Lzh/f;",
-            "Lzh/c;",
-            "Lzh/c;",
-            "Lzh/c;",
-            "Landroidx/compose/foundation/gestures/z;",
+            "Lkotlinx/coroutines/u;",
+            "Lka/f;",
+            "Lka/c;",
+            "Lka/c;",
+            "Lka/c;",
+            "Landroidx/compose/foundation/gestures/B;",
             "Lkotlin/coroutines/Continuation<",
             "-",
             "Landroidx/compose/foundation/gestures/TapGestureDetectorKt$detectTapGestures$2$1;",
@@ -125,22 +126,38 @@
     .end annotation
 
     .line 1
-    iput-object p1, p0, Landroidx/compose/foundation/gestures/TapGestureDetectorKt$detectTapGestures$2$1;->$$this$coroutineScope:Lkotlinx/coroutines/w;
+    iput-object p1, p0, Landroidx/compose/foundation/gestures/TapGestureDetectorKt$detectTapGestures$2$1;->$$this$coroutineScope:Lkotlinx/coroutines/u;
 
-    iput-object p2, p0, Landroidx/compose/foundation/gestures/TapGestureDetectorKt$detectTapGestures$2$1;->$onPress:Lzh/f;
+    .line 2
+    .line 3
+    iput-object p2, p0, Landroidx/compose/foundation/gestures/TapGestureDetectorKt$detectTapGestures$2$1;->$onPress:Lka/f;
 
-    iput-object p3, p0, Landroidx/compose/foundation/gestures/TapGestureDetectorKt$detectTapGestures$2$1;->$onLongPress:Lzh/c;
+    .line 4
+    .line 5
+    iput-object p3, p0, Landroidx/compose/foundation/gestures/TapGestureDetectorKt$detectTapGestures$2$1;->$onLongPress:Lka/c;
 
-    iput-object p4, p0, Landroidx/compose/foundation/gestures/TapGestureDetectorKt$detectTapGestures$2$1;->$onDoubleTap:Lzh/c;
+    .line 6
+    .line 7
+    iput-object p4, p0, Landroidx/compose/foundation/gestures/TapGestureDetectorKt$detectTapGestures$2$1;->$onDoubleTap:Lka/c;
 
-    iput-object p5, p0, Landroidx/compose/foundation/gestures/TapGestureDetectorKt$detectTapGestures$2$1;->$onTap:Lzh/c;
+    .line 8
+    .line 9
+    iput-object p5, p0, Landroidx/compose/foundation/gestures/TapGestureDetectorKt$detectTapGestures$2$1;->$onTap:Lka/c;
 
-    iput-object p6, p0, Landroidx/compose/foundation/gestures/TapGestureDetectorKt$detectTapGestures$2$1;->$pressScope:Landroidx/compose/foundation/gestures/z;
+    .line 10
+    .line 11
+    iput-object p6, p0, Landroidx/compose/foundation/gestures/TapGestureDetectorKt$detectTapGestures$2$1;->$pressScope:Landroidx/compose/foundation/gestures/B;
 
+    .line 12
+    .line 13
     const/4 p1, 0x2
 
+    .line 14
     invoke-direct {p0, p1, p7}, Lkotlin/coroutines/jvm/internal/RestrictedSuspendLambda;-><init>(ILkotlin/coroutines/Continuation;)V
 
+    .line 15
+    .line 16
+    .line 17
     return-void
 .end method
 
@@ -155,30 +172,30 @@
             "Lkotlin/coroutines/Continuation<",
             "*>;)",
             "Lkotlin/coroutines/Continuation<",
-            "Lqh/r;",
+            "LX9/j;",
             ">;"
         }
     .end annotation
 
     new-instance v8, Landroidx/compose/foundation/gestures/TapGestureDetectorKt$detectTapGestures$2$1;
 
-    iget-object v1, p0, Landroidx/compose/foundation/gestures/TapGestureDetectorKt$detectTapGestures$2$1;->$$this$coroutineScope:Lkotlinx/coroutines/w;
+    iget-object v1, p0, Landroidx/compose/foundation/gestures/TapGestureDetectorKt$detectTapGestures$2$1;->$$this$coroutineScope:Lkotlinx/coroutines/u;
 
-    iget-object v2, p0, Landroidx/compose/foundation/gestures/TapGestureDetectorKt$detectTapGestures$2$1;->$onPress:Lzh/f;
+    iget-object v2, p0, Landroidx/compose/foundation/gestures/TapGestureDetectorKt$detectTapGestures$2$1;->$onPress:Lka/f;
 
-    iget-object v3, p0, Landroidx/compose/foundation/gestures/TapGestureDetectorKt$detectTapGestures$2$1;->$onLongPress:Lzh/c;
+    iget-object v3, p0, Landroidx/compose/foundation/gestures/TapGestureDetectorKt$detectTapGestures$2$1;->$onLongPress:Lka/c;
 
-    iget-object v4, p0, Landroidx/compose/foundation/gestures/TapGestureDetectorKt$detectTapGestures$2$1;->$onDoubleTap:Lzh/c;
+    iget-object v4, p0, Landroidx/compose/foundation/gestures/TapGestureDetectorKt$detectTapGestures$2$1;->$onDoubleTap:Lka/c;
 
-    iget-object v5, p0, Landroidx/compose/foundation/gestures/TapGestureDetectorKt$detectTapGestures$2$1;->$onTap:Lzh/c;
+    iget-object v5, p0, Landroidx/compose/foundation/gestures/TapGestureDetectorKt$detectTapGestures$2$1;->$onTap:Lka/c;
 
-    iget-object v6, p0, Landroidx/compose/foundation/gestures/TapGestureDetectorKt$detectTapGestures$2$1;->$pressScope:Landroidx/compose/foundation/gestures/z;
+    iget-object v6, p0, Landroidx/compose/foundation/gestures/TapGestureDetectorKt$detectTapGestures$2$1;->$pressScope:Landroidx/compose/foundation/gestures/B;
 
     move-object v0, v8
 
     move-object v7, p2
 
-    invoke-direct/range {v0 .. v7}, Landroidx/compose/foundation/gestures/TapGestureDetectorKt$detectTapGestures$2$1;-><init>(Lkotlinx/coroutines/w;Lzh/f;Lzh/c;Lzh/c;Lzh/c;Landroidx/compose/foundation/gestures/z;Lkotlin/coroutines/Continuation;)V
+    invoke-direct/range {v0 .. v7}, Landroidx/compose/foundation/gestures/TapGestureDetectorKt$detectTapGestures$2$1;-><init>(Lkotlinx/coroutines/u;Lka/f;Lka/c;Lka/c;Lka/c;Landroidx/compose/foundation/gestures/B;Lkotlin/coroutines/Continuation;)V
 
     iput-object p1, v8, Landroidx/compose/foundation/gestures/TapGestureDetectorKt$detectTapGestures$2$1;->L$0:Ljava/lang/Object;
 
@@ -193,7 +210,7 @@
             "Landroidx/compose/ui/input/pointer/b;",
             "Lkotlin/coroutines/Continuation<",
             "-",
-            "Lqh/r;",
+            "LX9/j;",
             ">;)",
             "Ljava/lang/Object;"
         }
@@ -206,7 +223,7 @@
 
     check-cast p1, Landroidx/compose/foundation/gestures/TapGestureDetectorKt$detectTapGestures$2$1;
 
-    sget-object p2, Lqh/r;->a:Lqh/r;
+    sget-object p2, LX9/j;->a:LX9/j;
 
     invoke-virtual {p1, p2}, Landroidx/compose/foundation/gestures/TapGestureDetectorKt$detectTapGestures$2$1;->invokeSuspend(Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -288,7 +305,7 @@
 
     .line 26
     .line 27
-    check-cast v2, Landroidx/compose/ui/input/pointer/r;
+    check-cast v2, Landroidx/compose/ui/input/pointer/n;
 
     .line 28
     .line 29
@@ -423,7 +440,7 @@
 
     .line 90
     .line 91
-    check-cast v8, Landroidx/compose/ui/input/pointer/r;
+    check-cast v8, Landroidx/compose/ui/input/pointer/n;
 
     .line 92
     .line 93
@@ -523,7 +540,7 @@
 
     .line 134
     .line 135
-    invoke-static {v2, v0, v3}, Landroidx/compose/foundation/gestures/m0;->c(Landroidx/compose/ui/input/pointer/b;Lkotlin/coroutines/Continuation;I)Ljava/lang/Object;
+    invoke-static {v2, v0, v3}, Landroidx/compose/foundation/gestures/O;->c(Landroidx/compose/ui/input/pointer/b;Lkotlin/coroutines/jvm/internal/RestrictedSuspendLambda;I)Ljava/lang/Object;
 
     .line 136
     .line 137
@@ -543,16 +560,16 @@
     move-object v8, v5
 
     .line 143
-    check-cast v8, Landroidx/compose/ui/input/pointer/r;
+    check-cast v8, Landroidx/compose/ui/input/pointer/n;
 
     .line 144
     .line 145
-    invoke-virtual {v8}, Landroidx/compose/ui/input/pointer/r;->a()V
+    invoke-virtual {v8}, Landroidx/compose/ui/input/pointer/n;->a()V
 
     .line 146
     .line 147
     .line 148
-    iget-object v5, v0, Landroidx/compose/foundation/gestures/TapGestureDetectorKt$detectTapGestures$2$1;->$$this$coroutineScope:Lkotlinx/coroutines/w;
+    iget-object v5, v0, Landroidx/compose/foundation/gestures/TapGestureDetectorKt$detectTapGestures$2$1;->$$this$coroutineScope:Lkotlinx/coroutines/u;
 
     .line 149
     .line 150
@@ -560,25 +577,25 @@
 
     .line 151
     .line 152
-    iget-object v7, v0, Landroidx/compose/foundation/gestures/TapGestureDetectorKt$detectTapGestures$2$1;->$pressScope:Landroidx/compose/foundation/gestures/z;
+    iget-object v7, v0, Landroidx/compose/foundation/gestures/TapGestureDetectorKt$detectTapGestures$2$1;->$pressScope:Landroidx/compose/foundation/gestures/B;
 
     .line 153
     .line 154
-    invoke-direct {v6, v7, v4}, Landroidx/compose/foundation/gestures/TapGestureDetectorKt$detectTapGestures$2$1$1;-><init>(Landroidx/compose/foundation/gestures/z;Lkotlin/coroutines/Continuation;)V
+    invoke-direct {v6, v7, v4}, Landroidx/compose/foundation/gestures/TapGestureDetectorKt$detectTapGestures$2$1$1;-><init>(Landroidx/compose/foundation/gestures/B;Lkotlin/coroutines/Continuation;)V
 
     .line 155
     .line 156
     .line 157
-    invoke-static {v5, v4, v4, v6, v3}, Lf7/l;->D(Lkotlinx/coroutines/w;Lkotlin/coroutines/g;Lkotlinx/coroutines/CoroutineStart;Lzh/e;I)Lkotlinx/coroutines/q1;
+    invoke-static {v5, v4, v4, v6, v3}, Lkotlinx/coroutines/w;->w(Lkotlinx/coroutines/u;Lba/g;Lkotlinx/coroutines/CoroutineStart;Lka/e;I)Lkotlinx/coroutines/r0;
 
     .line 158
     .line 159
     .line 160
-    iget-object v5, v0, Landroidx/compose/foundation/gestures/TapGestureDetectorKt$detectTapGestures$2$1;->$onPress:Lzh/f;
+    iget-object v5, v0, Landroidx/compose/foundation/gestures/TapGestureDetectorKt$detectTapGestures$2$1;->$onPress:Lka/f;
 
     .line 161
     .line 162
-    sget-object v6, Landroidx/compose/foundation/gestures/m0;->a:Lzh/f;
+    sget-object v6, Landroidx/compose/foundation/gestures/O;->a:Lka/f;
 
     .line 163
     .line 164
@@ -586,7 +603,7 @@
 
     .line 165
     .line 166
-    iget-object v6, v0, Landroidx/compose/foundation/gestures/TapGestureDetectorKt$detectTapGestures$2$1;->$$this$coroutineScope:Lkotlinx/coroutines/w;
+    iget-object v6, v0, Landroidx/compose/foundation/gestures/TapGestureDetectorKt$detectTapGestures$2$1;->$$this$coroutineScope:Lkotlinx/coroutines/u;
 
     .line 167
     .line 168
@@ -594,22 +611,22 @@
 
     .line 169
     .line 170
-    iget-object v9, v0, Landroidx/compose/foundation/gestures/TapGestureDetectorKt$detectTapGestures$2$1;->$pressScope:Landroidx/compose/foundation/gestures/z;
+    iget-object v9, v0, Landroidx/compose/foundation/gestures/TapGestureDetectorKt$detectTapGestures$2$1;->$pressScope:Landroidx/compose/foundation/gestures/B;
 
     .line 171
     .line 172
-    invoke-direct {v7, v5, v9, v8, v4}, Landroidx/compose/foundation/gestures/TapGestureDetectorKt$detectTapGestures$2$1$2;-><init>(Lzh/f;Landroidx/compose/foundation/gestures/z;Landroidx/compose/ui/input/pointer/r;Lkotlin/coroutines/Continuation;)V
+    invoke-direct {v7, v5, v9, v8, v4}, Landroidx/compose/foundation/gestures/TapGestureDetectorKt$detectTapGestures$2$1$2;-><init>(Lka/f;Landroidx/compose/foundation/gestures/B;Landroidx/compose/ui/input/pointer/n;Lkotlin/coroutines/Continuation;)V
 
     .line 173
     .line 174
     .line 175
-    invoke-static {v6, v4, v4, v7, v3}, Lf7/l;->D(Lkotlinx/coroutines/w;Lkotlin/coroutines/g;Lkotlinx/coroutines/CoroutineStart;Lzh/e;I)Lkotlinx/coroutines/q1;
+    invoke-static {v6, v4, v4, v7, v3}, Lkotlinx/coroutines/w;->w(Lkotlinx/coroutines/u;Lba/g;Lkotlinx/coroutines/CoroutineStart;Lka/e;I)Lkotlinx/coroutines/r0;
 
     .line 176
     .line 177
     .line 178
     :cond_1
-    iget-object v5, v0, Landroidx/compose/foundation/gestures/TapGestureDetectorKt$detectTapGestures$2$1;->$onLongPress:Lzh/c;
+    iget-object v5, v0, Landroidx/compose/foundation/gestures/TapGestureDetectorKt$detectTapGestures$2$1;->$onLongPress:Lka/c;
 
     .line 179
     .line 180
@@ -620,11 +637,11 @@
     move-object v5, v2
 
     .line 183
-    check-cast v5, Landroidx/compose/ui/input/pointer/f0;
+    check-cast v5, Landroidx/compose/ui/input/pointer/x;
 
     .line 184
     .line 185
-    invoke-virtual {v5}, Landroidx/compose/ui/input/pointer/f0;->d()Landroidx/compose/ui/platform/x2;
+    invoke-virtual {v5}, Landroidx/compose/ui/input/pointer/x;->d()Landroidx/compose/ui/platform/M0;
 
     .line 186
     .line 187
@@ -632,7 +649,7 @@
     move-result-object v5
 
     .line 189
-    invoke-interface {v5}, Landroidx/compose/ui/platform/x2;->c()J
+    invoke-interface {v5}, Landroidx/compose/ui/platform/M0;->b()J
 
     .line 190
     .line 191
@@ -701,11 +718,11 @@
     move-object v10, v2
 
     .line 223
-    check-cast v10, Landroidx/compose/ui/input/pointer/f0;
+    check-cast v10, Landroidx/compose/ui/input/pointer/x;
 
     .line 224
     .line 225
-    invoke-virtual {v10, v5, v6, v9, v0}, Landroidx/compose/ui/input/pointer/f0;->f(JLzh/e;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
+    invoke-virtual {v10, v5, v6, v9, v0}, Landroidx/compose/ui/input/pointer/x;->e(JLka/e;Lkotlin/coroutines/jvm/internal/BaseContinuationImpl;)Ljava/lang/Object;
 
     .line 226
     .line 227
@@ -743,7 +760,7 @@
 
     .line 239
     .line 240
-    iget-object v2, v0, Landroidx/compose/foundation/gestures/TapGestureDetectorKt$detectTapGestures$2$1;->$$this$coroutineScope:Lkotlinx/coroutines/w;
+    iget-object v2, v0, Landroidx/compose/foundation/gestures/TapGestureDetectorKt$detectTapGestures$2$1;->$$this$coroutineScope:Lkotlinx/coroutines/u;
 
     .line 241
     .line 242
@@ -751,16 +768,16 @@
 
     .line 243
     .line 244
-    iget-object v11, v0, Landroidx/compose/foundation/gestures/TapGestureDetectorKt$detectTapGestures$2$1;->$pressScope:Landroidx/compose/foundation/gestures/z;
+    iget-object v11, v0, Landroidx/compose/foundation/gestures/TapGestureDetectorKt$detectTapGestures$2$1;->$pressScope:Landroidx/compose/foundation/gestures/B;
 
     .line 245
     .line 246
-    invoke-direct {v7, v11, v4}, Landroidx/compose/foundation/gestures/TapGestureDetectorKt$detectTapGestures$2$1$4;-><init>(Landroidx/compose/foundation/gestures/z;Lkotlin/coroutines/Continuation;)V
+    invoke-direct {v7, v11, v4}, Landroidx/compose/foundation/gestures/TapGestureDetectorKt$detectTapGestures$2$1$4;-><init>(Landroidx/compose/foundation/gestures/B;Lkotlin/coroutines/Continuation;)V
 
     .line 247
     .line 248
     .line 249
-    invoke-static {v2, v4, v4, v7, v3}, Lf7/l;->D(Lkotlinx/coroutines/w;Lkotlin/coroutines/g;Lkotlinx/coroutines/CoroutineStart;Lzh/e;I)Lkotlinx/coroutines/q1;
+    invoke-static {v2, v4, v4, v7, v3}, Lkotlinx/coroutines/w;->w(Lkotlinx/coroutines/u;Lba/g;Lkotlinx/coroutines/CoroutineStart;Lka/e;I)Lkotlinx/coroutines/r0;
 
     .line 250
     .line 251
@@ -785,16 +802,16 @@
 
     .line 258
     :cond_4
-    check-cast v2, Landroidx/compose/ui/input/pointer/r;
+    check-cast v2, Landroidx/compose/ui/input/pointer/n;
 
     .line 259
     .line 260
-    invoke-virtual {v2}, Landroidx/compose/ui/input/pointer/r;->a()V
+    invoke-virtual {v2}, Landroidx/compose/ui/input/pointer/n;->a()V
 
     .line 261
     .line 262
     .line 263
-    iget-object v2, v0, Landroidx/compose/foundation/gestures/TapGestureDetectorKt$detectTapGestures$2$1;->$$this$coroutineScope:Lkotlinx/coroutines/w;
+    iget-object v2, v0, Landroidx/compose/foundation/gestures/TapGestureDetectorKt$detectTapGestures$2$1;->$$this$coroutineScope:Lkotlinx/coroutines/u;
 
     .line 264
     .line 265
@@ -802,16 +819,16 @@
 
     .line 266
     .line 267
-    iget-object v11, v0, Landroidx/compose/foundation/gestures/TapGestureDetectorKt$detectTapGestures$2$1;->$pressScope:Landroidx/compose/foundation/gestures/z;
+    iget-object v11, v0, Landroidx/compose/foundation/gestures/TapGestureDetectorKt$detectTapGestures$2$1;->$pressScope:Landroidx/compose/foundation/gestures/B;
 
     .line 268
     .line 269
-    invoke-direct {v7, v11, v4}, Landroidx/compose/foundation/gestures/TapGestureDetectorKt$detectTapGestures$2$1$5;-><init>(Landroidx/compose/foundation/gestures/z;Lkotlin/coroutines/Continuation;)V
+    invoke-direct {v7, v11, v4}, Landroidx/compose/foundation/gestures/TapGestureDetectorKt$detectTapGestures$2$1$5;-><init>(Landroidx/compose/foundation/gestures/B;Lkotlin/coroutines/Continuation;)V
 
     .line 270
     .line 271
     .line 272
-    invoke-static {v2, v4, v4, v7, v3}, Lf7/l;->D(Lkotlinx/coroutines/w;Lkotlin/coroutines/g;Lkotlinx/coroutines/CoroutineStart;Lzh/e;I)Lkotlinx/coroutines/q1;
+    invoke-static {v2, v4, v4, v7, v3}, Lkotlinx/coroutines/w;->w(Lkotlinx/coroutines/u;Lba/g;Lkotlinx/coroutines/CoroutineStart;Lka/e;I)Lkotlinx/coroutines/r0;
     :try_end_3
     .catch Landroidx/compose/ui/input/pointer/PointerEventTimeoutCancellationException; {:try_start_3 .. :try_end_3} :catch_2
 
@@ -844,7 +861,7 @@
 
     .line 284
     :goto_4
-    iget-object v9, v0, Landroidx/compose/foundation/gestures/TapGestureDetectorKt$detectTapGestures$2$1;->$onLongPress:Lzh/c;
+    iget-object v9, v0, Landroidx/compose/foundation/gestures/TapGestureDetectorKt$detectTapGestures$2$1;->$onLongPress:Lka/c;
 
     .line 285
     .line 286
@@ -852,20 +869,20 @@
 
     .line 287
     .line 288
-    iget-wide v10, v8, Landroidx/compose/ui/input/pointer/r;->c:J
+    iget-wide v10, v8, Landroidx/compose/ui/input/pointer/n;->c:J
 
     .line 289
     .line 290
-    new-instance v8, Ln1/c;
+    new-instance v8, Lr0/c;
 
     .line 291
     .line 292
-    invoke-direct {v8, v10, v11}, Ln1/c;-><init>(J)V
+    invoke-direct {v8, v10, v11}, Lr0/c;-><init>(J)V
 
     .line 293
     .line 294
     .line 295
-    invoke-interface {v9, v8}, Lzh/c;->invoke(Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-interface {v9, v8}, Lka/c;->invoke(Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 296
     .line 297
@@ -895,7 +912,7 @@
 
     .line 309
     .line 310
-    invoke-static {v7, v0}, Landroidx/compose/foundation/gestures/m0;->a(Landroidx/compose/ui/input/pointer/b;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
+    invoke-static {v7, v0}, Landroidx/compose/foundation/gestures/O;->a(Landroidx/compose/ui/input/pointer/b;Lkotlin/coroutines/jvm/internal/BaseContinuationImpl;)Ljava/lang/Object;
 
     .line 311
     .line 312
@@ -912,7 +929,7 @@
     .line 317
     :cond_6
     :goto_5
-    iget-object v8, v0, Landroidx/compose/foundation/gestures/TapGestureDetectorKt$detectTapGestures$2$1;->$$this$coroutineScope:Lkotlinx/coroutines/w;
+    iget-object v8, v0, Landroidx/compose/foundation/gestures/TapGestureDetectorKt$detectTapGestures$2$1;->$$this$coroutineScope:Lkotlinx/coroutines/u;
 
     .line 318
     .line 319
@@ -920,16 +937,16 @@
 
     .line 320
     .line 321
-    iget-object v10, v0, Landroidx/compose/foundation/gestures/TapGestureDetectorKt$detectTapGestures$2$1;->$pressScope:Landroidx/compose/foundation/gestures/z;
+    iget-object v10, v0, Landroidx/compose/foundation/gestures/TapGestureDetectorKt$detectTapGestures$2$1;->$pressScope:Landroidx/compose/foundation/gestures/B;
 
     .line 322
     .line 323
-    invoke-direct {v9, v10, v4}, Landroidx/compose/foundation/gestures/TapGestureDetectorKt$detectTapGestures$2$1$6;-><init>(Landroidx/compose/foundation/gestures/z;Lkotlin/coroutines/Continuation;)V
+    invoke-direct {v9, v10, v4}, Landroidx/compose/foundation/gestures/TapGestureDetectorKt$detectTapGestures$2$1$6;-><init>(Landroidx/compose/foundation/gestures/B;Lkotlin/coroutines/Continuation;)V
 
     .line 324
     .line 325
     .line 326
-    invoke-static {v8, v4, v4, v9, v3}, Lf7/l;->D(Lkotlinx/coroutines/w;Lkotlin/coroutines/g;Lkotlinx/coroutines/CoroutineStart;Lzh/e;I)Lkotlinx/coroutines/q1;
+    invoke-static {v8, v4, v4, v9, v3}, Lkotlinx/coroutines/w;->w(Lkotlinx/coroutines/u;Lba/g;Lkotlinx/coroutines/CoroutineStart;Lka/e;I)Lkotlinx/coroutines/r0;
 
     .line 327
     .line 328
@@ -949,7 +966,7 @@
 
     .line 334
     .line 335
-    iget-object v7, v0, Landroidx/compose/foundation/gestures/TapGestureDetectorKt$detectTapGestures$2$1;->$onDoubleTap:Lzh/c;
+    iget-object v7, v0, Landroidx/compose/foundation/gestures/TapGestureDetectorKt$detectTapGestures$2$1;->$onDoubleTap:Lka/c;
 
     .line 336
     .line 337
@@ -957,7 +974,7 @@
 
     .line 338
     .line 339
-    iget-object v1, v0, Landroidx/compose/foundation/gestures/TapGestureDetectorKt$detectTapGestures$2$1;->$onTap:Lzh/c;
+    iget-object v1, v0, Landroidx/compose/foundation/gestures/TapGestureDetectorKt$detectTapGestures$2$1;->$onTap:Lka/c;
 
     .line 340
     .line 341
@@ -965,24 +982,24 @@
 
     .line 342
     .line 343
-    check-cast v2, Landroidx/compose/ui/input/pointer/r;
+    check-cast v2, Landroidx/compose/ui/input/pointer/n;
 
     .line 344
     .line 345
-    new-instance v3, Ln1/c;
+    new-instance v3, Lr0/c;
 
     .line 346
     .line 347
-    iget-wide v4, v2, Landroidx/compose/ui/input/pointer/r;->c:J
+    iget-wide v4, v2, Landroidx/compose/ui/input/pointer/n;->c:J
 
     .line 348
     .line 349
-    invoke-direct {v3, v4, v5}, Ln1/c;-><init>(J)V
+    invoke-direct {v3, v4, v5}, Lr0/c;-><init>(J)V
 
     .line 350
     .line 351
     .line 352
-    invoke-interface {v1, v3}, Lzh/c;->invoke(Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-interface {v1, v3}, Lka/c;->invoke(Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 353
     .line 354
@@ -992,7 +1009,7 @@
     .line 356
     .line 357
     :cond_7
-    check-cast v2, Landroidx/compose/ui/input/pointer/r;
+    check-cast v2, Landroidx/compose/ui/input/pointer/n;
 
     .line 358
     .line 359
@@ -1023,18 +1040,18 @@
 
     .line 371
     .line 372
-    sget-object v7, Landroidx/compose/foundation/gestures/m0;->a:Lzh/f;
+    sget-object v7, Landroidx/compose/foundation/gestures/O;->a:Lka/f;
 
     .line 373
     .line 374
     move-object v7, v10
 
     .line 375
-    check-cast v7, Landroidx/compose/ui/input/pointer/f0;
+    check-cast v7, Landroidx/compose/ui/input/pointer/x;
 
     .line 376
     .line 377
-    invoke-virtual {v7}, Landroidx/compose/ui/input/pointer/f0;->d()Landroidx/compose/ui/platform/x2;
+    invoke-virtual {v7}, Landroidx/compose/ui/input/pointer/x;->d()Landroidx/compose/ui/platform/M0;
 
     .line 378
     .line 379
@@ -1042,7 +1059,7 @@
     move-result-object v9
 
     .line 381
-    invoke-interface {v9}, Landroidx/compose/ui/platform/x2;->a()J
+    invoke-interface {v9}, Landroidx/compose/ui/platform/M0;->a()J
 
     .line 382
     .line 383
@@ -1054,12 +1071,12 @@
 
     .line 386
     .line 387
-    invoke-direct {v9, v2, v4}, Landroidx/compose/foundation/gestures/TapGestureDetectorKt$awaitSecondDown$2;-><init>(Landroidx/compose/ui/input/pointer/r;Lkotlin/coroutines/Continuation;)V
+    invoke-direct {v9, v2, v4}, Landroidx/compose/foundation/gestures/TapGestureDetectorKt$awaitSecondDown$2;-><init>(Landroidx/compose/ui/input/pointer/n;Lkotlin/coroutines/Continuation;)V
 
     .line 388
     .line 389
     .line 390
-    invoke-virtual {v7, v11, v12, v9, v0}, Landroidx/compose/ui/input/pointer/f0;->h(JLzh/e;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
+    invoke-virtual {v7, v11, v12, v9, v0}, Landroidx/compose/ui/input/pointer/x;->f(JLka/e;Lkotlin/coroutines/jvm/internal/BaseContinuationImpl;)Ljava/lang/Object;
 
     .line 391
     .line 392
@@ -1082,7 +1099,7 @@
 
     .line 399
     :goto_7
-    check-cast v2, Landroidx/compose/ui/input/pointer/r;
+    check-cast v2, Landroidx/compose/ui/input/pointer/n;
 
     .line 400
     .line 401
@@ -1090,7 +1107,7 @@
 
     .line 402
     .line 403
-    iget-object v1, v0, Landroidx/compose/foundation/gestures/TapGestureDetectorKt$detectTapGestures$2$1;->$onTap:Lzh/c;
+    iget-object v1, v0, Landroidx/compose/foundation/gestures/TapGestureDetectorKt$detectTapGestures$2$1;->$onTap:Lka/c;
 
     .line 404
     .line 405
@@ -1102,24 +1119,24 @@
 
     .line 408
     .line 409
-    check-cast v2, Landroidx/compose/ui/input/pointer/r;
+    check-cast v2, Landroidx/compose/ui/input/pointer/n;
 
     .line 410
     .line 411
-    iget-wide v2, v2, Landroidx/compose/ui/input/pointer/r;->c:J
+    iget-wide v2, v2, Landroidx/compose/ui/input/pointer/n;->c:J
 
     .line 412
     .line 413
-    new-instance v4, Ln1/c;
+    new-instance v4, Lr0/c;
 
     .line 414
     .line 415
-    invoke-direct {v4, v2, v3}, Ln1/c;-><init>(J)V
+    invoke-direct {v4, v2, v3}, Lr0/c;-><init>(J)V
 
     .line 416
     .line 417
     .line 418
-    invoke-interface {v1, v4}, Lzh/c;->invoke(Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-interface {v1, v4}, Lka/c;->invoke(Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 419
     .line 420
@@ -1129,7 +1146,7 @@
     .line 422
     .line 423
     :cond_9
-    iget-object v7, v0, Landroidx/compose/foundation/gestures/TapGestureDetectorKt$detectTapGestures$2$1;->$$this$coroutineScope:Lkotlinx/coroutines/w;
+    iget-object v7, v0, Landroidx/compose/foundation/gestures/TapGestureDetectorKt$detectTapGestures$2$1;->$$this$coroutineScope:Lkotlinx/coroutines/u;
 
     .line 424
     .line 425
@@ -1137,25 +1154,25 @@
 
     .line 426
     .line 427
-    iget-object v9, v0, Landroidx/compose/foundation/gestures/TapGestureDetectorKt$detectTapGestures$2$1;->$pressScope:Landroidx/compose/foundation/gestures/z;
+    iget-object v9, v0, Landroidx/compose/foundation/gestures/TapGestureDetectorKt$detectTapGestures$2$1;->$pressScope:Landroidx/compose/foundation/gestures/B;
 
     .line 428
     .line 429
-    invoke-direct {v8, v9, v4}, Landroidx/compose/foundation/gestures/TapGestureDetectorKt$detectTapGestures$2$1$7;-><init>(Landroidx/compose/foundation/gestures/z;Lkotlin/coroutines/Continuation;)V
+    invoke-direct {v8, v9, v4}, Landroidx/compose/foundation/gestures/TapGestureDetectorKt$detectTapGestures$2$1$7;-><init>(Landroidx/compose/foundation/gestures/B;Lkotlin/coroutines/Continuation;)V
 
     .line 430
     .line 431
     .line 432
-    invoke-static {v7, v4, v4, v8, v3}, Lf7/l;->D(Lkotlinx/coroutines/w;Lkotlin/coroutines/g;Lkotlinx/coroutines/CoroutineStart;Lzh/e;I)Lkotlinx/coroutines/q1;
+    invoke-static {v7, v4, v4, v8, v3}, Lkotlinx/coroutines/w;->w(Lkotlinx/coroutines/u;Lba/g;Lkotlinx/coroutines/CoroutineStart;Lka/e;I)Lkotlinx/coroutines/r0;
 
     .line 433
     .line 434
     .line 435
-    iget-object v7, v0, Landroidx/compose/foundation/gestures/TapGestureDetectorKt$detectTapGestures$2$1;->$onPress:Lzh/f;
+    iget-object v7, v0, Landroidx/compose/foundation/gestures/TapGestureDetectorKt$detectTapGestures$2$1;->$onPress:Lka/f;
 
     .line 436
     .line 437
-    sget-object v8, Landroidx/compose/foundation/gestures/m0;->a:Lzh/f;
+    sget-object v8, Landroidx/compose/foundation/gestures/O;->a:Lka/f;
 
     .line 438
     .line 439
@@ -1163,7 +1180,7 @@
 
     .line 440
     .line 441
-    iget-object v8, v0, Landroidx/compose/foundation/gestures/TapGestureDetectorKt$detectTapGestures$2$1;->$$this$coroutineScope:Lkotlinx/coroutines/w;
+    iget-object v8, v0, Landroidx/compose/foundation/gestures/TapGestureDetectorKt$detectTapGestures$2$1;->$$this$coroutineScope:Lkotlinx/coroutines/u;
 
     .line 442
     .line 443
@@ -1171,16 +1188,16 @@
 
     .line 444
     .line 445
-    iget-object v10, v0, Landroidx/compose/foundation/gestures/TapGestureDetectorKt$detectTapGestures$2$1;->$pressScope:Landroidx/compose/foundation/gestures/z;
+    iget-object v10, v0, Landroidx/compose/foundation/gestures/TapGestureDetectorKt$detectTapGestures$2$1;->$pressScope:Landroidx/compose/foundation/gestures/B;
 
     .line 446
     .line 447
-    invoke-direct {v9, v7, v10, v2, v4}, Landroidx/compose/foundation/gestures/TapGestureDetectorKt$detectTapGestures$2$1$8;-><init>(Lzh/f;Landroidx/compose/foundation/gestures/z;Landroidx/compose/ui/input/pointer/r;Lkotlin/coroutines/Continuation;)V
+    invoke-direct {v9, v7, v10, v2, v4}, Landroidx/compose/foundation/gestures/TapGestureDetectorKt$detectTapGestures$2$1$8;-><init>(Lka/f;Landroidx/compose/foundation/gestures/B;Landroidx/compose/ui/input/pointer/n;Lkotlin/coroutines/Continuation;)V
 
     .line 448
     .line 449
     .line 450
-    invoke-static {v8, v4, v4, v9, v3}, Lf7/l;->D(Lkotlinx/coroutines/w;Lkotlin/coroutines/g;Lkotlinx/coroutines/CoroutineStart;Lzh/e;I)Lkotlinx/coroutines/q1;
+    invoke-static {v8, v4, v4, v9, v3}, Lkotlinx/coroutines/w;->w(Lkotlinx/coroutines/u;Lba/g;Lkotlinx/coroutines/CoroutineStart;Lka/e;I)Lkotlinx/coroutines/r0;
 
     .line 451
     .line 452
@@ -1191,19 +1208,19 @@
 
     .line 454
     .line 455
-    iget-object v8, v0, Landroidx/compose/foundation/gestures/TapGestureDetectorKt$detectTapGestures$2$1;->$$this$coroutineScope:Lkotlinx/coroutines/w;
+    iget-object v8, v0, Landroidx/compose/foundation/gestures/TapGestureDetectorKt$detectTapGestures$2$1;->$$this$coroutineScope:Lkotlinx/coroutines/u;
 
     .line 456
     .line 457
-    iget-object v9, v0, Landroidx/compose/foundation/gestures/TapGestureDetectorKt$detectTapGestures$2$1;->$onDoubleTap:Lzh/c;
+    iget-object v9, v0, Landroidx/compose/foundation/gestures/TapGestureDetectorKt$detectTapGestures$2$1;->$onDoubleTap:Lka/c;
 
     .line 458
     .line 459
-    iget-object v10, v0, Landroidx/compose/foundation/gestures/TapGestureDetectorKt$detectTapGestures$2$1;->$onTap:Lzh/c;
+    iget-object v10, v0, Landroidx/compose/foundation/gestures/TapGestureDetectorKt$detectTapGestures$2$1;->$onTap:Lka/c;
 
     .line 460
     .line 461
-    iget-object v12, v0, Landroidx/compose/foundation/gestures/TapGestureDetectorKt$detectTapGestures$2$1;->$pressScope:Landroidx/compose/foundation/gestures/z;
+    iget-object v12, v0, Landroidx/compose/foundation/gestures/TapGestureDetectorKt$detectTapGestures$2$1;->$pressScope:Landroidx/compose/foundation/gestures/B;
 
     .line 462
     .line 463
@@ -1224,7 +1241,7 @@
 
     .line 469
     .line 470
-    invoke-direct/range {v7 .. v13}, Landroidx/compose/foundation/gestures/TapGestureDetectorKt$detectTapGestures$2$1$9;-><init>(Lkotlinx/coroutines/w;Lzh/c;Lzh/c;Lkotlin/jvm/internal/Ref$ObjectRef;Landroidx/compose/foundation/gestures/z;Lkotlin/coroutines/Continuation;)V
+    invoke-direct/range {v7 .. v13}, Landroidx/compose/foundation/gestures/TapGestureDetectorKt$detectTapGestures$2$1$9;-><init>(Lkotlinx/coroutines/u;Lka/c;Lka/c;Lkotlin/jvm/internal/Ref$ObjectRef;Landroidx/compose/foundation/gestures/B;Lkotlin/coroutines/Continuation;)V
 
     .line 471
     .line 472
@@ -1251,11 +1268,11 @@
     move-object v7, v15
 
     .line 483
-    check-cast v7, Landroidx/compose/ui/input/pointer/f0;
+    check-cast v7, Landroidx/compose/ui/input/pointer/x;
 
     .line 484
     .line 485
-    invoke-virtual {v7, v5, v6, v3, v0}, Landroidx/compose/ui/input/pointer/f0;->f(JLzh/e;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
+    invoke-virtual {v7, v5, v6, v3, v0}, Landroidx/compose/ui/input/pointer/x;->e(JLka/e;Lkotlin/coroutines/jvm/internal/BaseContinuationImpl;)Ljava/lang/Object;
 
     .line 486
     .line 487
@@ -1290,7 +1307,7 @@
 
     .line 497
     :goto_9
-    iget-object v3, v0, Landroidx/compose/foundation/gestures/TapGestureDetectorKt$detectTapGestures$2$1;->$onTap:Lzh/c;
+    iget-object v3, v0, Landroidx/compose/foundation/gestures/TapGestureDetectorKt$detectTapGestures$2$1;->$onTap:Lka/c;
 
     .line 498
     .line 499
@@ -1302,30 +1319,30 @@
 
     .line 502
     .line 503
-    check-cast v5, Landroidx/compose/ui/input/pointer/r;
+    check-cast v5, Landroidx/compose/ui/input/pointer/n;
 
     .line 504
     .line 505
-    iget-wide v7, v5, Landroidx/compose/ui/input/pointer/r;->c:J
+    iget-wide v7, v5, Landroidx/compose/ui/input/pointer/n;->c:J
 
     .line 506
     .line 507
-    new-instance v5, Ln1/c;
+    new-instance v5, Lr0/c;
 
     .line 508
     .line 509
-    invoke-direct {v5, v7, v8}, Ln1/c;-><init>(J)V
+    invoke-direct {v5, v7, v8}, Lr0/c;-><init>(J)V
 
     .line 510
     .line 511
     .line 512
-    invoke-interface {v3, v5}, Lzh/c;->invoke(Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-interface {v3, v5}, Lka/c;->invoke(Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 513
     .line 514
     .line 515
     :cond_b
-    iget-object v3, v0, Landroidx/compose/foundation/gestures/TapGestureDetectorKt$detectTapGestures$2$1;->$onLongPress:Lzh/c;
+    iget-object v3, v0, Landroidx/compose/foundation/gestures/TapGestureDetectorKt$detectTapGestures$2$1;->$onLongPress:Lka/c;
 
     .line 516
     .line 517
@@ -1333,20 +1350,20 @@
 
     .line 518
     .line 519
-    iget-wide v7, v2, Landroidx/compose/ui/input/pointer/r;->c:J
+    iget-wide v7, v2, Landroidx/compose/ui/input/pointer/n;->c:J
 
     .line 520
     .line 521
-    new-instance v2, Ln1/c;
+    new-instance v2, Lr0/c;
 
     .line 522
     .line 523
-    invoke-direct {v2, v7, v8}, Ln1/c;-><init>(J)V
+    invoke-direct {v2, v7, v8}, Lr0/c;-><init>(J)V
 
     .line 524
     .line 525
     .line 526
-    invoke-interface {v3, v2}, Lzh/c;->invoke(Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-interface {v3, v2}, Lka/c;->invoke(Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 527
     .line 528
@@ -1371,7 +1388,7 @@
 
     .line 537
     .line 538
-    invoke-static {v6, v0}, Landroidx/compose/foundation/gestures/m0;->a(Landroidx/compose/ui/input/pointer/b;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
+    invoke-static {v6, v0}, Landroidx/compose/foundation/gestures/O;->a(Landroidx/compose/ui/input/pointer/b;Lkotlin/coroutines/jvm/internal/BaseContinuationImpl;)Ljava/lang/Object;
 
     .line 539
     .line 540
@@ -1388,7 +1405,7 @@
     .line 545
     :cond_d
     :goto_a
-    iget-object v1, v0, Landroidx/compose/foundation/gestures/TapGestureDetectorKt$detectTapGestures$2$1;->$$this$coroutineScope:Lkotlinx/coroutines/w;
+    iget-object v1, v0, Landroidx/compose/foundation/gestures/TapGestureDetectorKt$detectTapGestures$2$1;->$$this$coroutineScope:Lkotlinx/coroutines/u;
 
     .line 546
     .line 547
@@ -1396,11 +1413,11 @@
 
     .line 548
     .line 549
-    iget-object v3, v0, Landroidx/compose/foundation/gestures/TapGestureDetectorKt$detectTapGestures$2$1;->$pressScope:Landroidx/compose/foundation/gestures/z;
+    iget-object v3, v0, Landroidx/compose/foundation/gestures/TapGestureDetectorKt$detectTapGestures$2$1;->$pressScope:Landroidx/compose/foundation/gestures/B;
 
     .line 550
     .line 551
-    invoke-direct {v2, v3, v4}, Landroidx/compose/foundation/gestures/TapGestureDetectorKt$detectTapGestures$2$1$10;-><init>(Landroidx/compose/foundation/gestures/z;Lkotlin/coroutines/Continuation;)V
+    invoke-direct {v2, v3, v4}, Landroidx/compose/foundation/gestures/TapGestureDetectorKt$detectTapGestures$2$1$10;-><init>(Landroidx/compose/foundation/gestures/B;Lkotlin/coroutines/Continuation;)V
 
     .line 552
     .line 553
@@ -1408,14 +1425,14 @@
     const/4 v3, 0x3
 
     .line 555
-    invoke-static {v1, v4, v4, v2, v3}, Lf7/l;->D(Lkotlinx/coroutines/w;Lkotlin/coroutines/g;Lkotlinx/coroutines/CoroutineStart;Lzh/e;I)Lkotlinx/coroutines/q1;
+    invoke-static {v1, v4, v4, v2, v3}, Lkotlinx/coroutines/w;->w(Lkotlinx/coroutines/u;Lba/g;Lkotlinx/coroutines/CoroutineStart;Lka/e;I)Lkotlinx/coroutines/r0;
 
     .line 556
     .line 557
     .line 558
     :cond_e
     :goto_b
-    sget-object v1, Lqh/r;->a:Lqh/r;
+    sget-object v1, LX9/j;->a:LX9/j;
 
     .line 559
     .line 560

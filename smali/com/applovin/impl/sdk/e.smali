@@ -167,15 +167,15 @@
 .method private b(Lcom/applovin/impl/h0;)Lcom/applovin/impl/sdk/p;
     .locals 3
 
+    .line 1
     iget-object v0, p0, Lcom/applovin/impl/sdk/e;->c:Ljava/lang/Object;
 
-    .line 1
     monitor-enter v0
 
+    .line 2
     :try_start_0
     iget-object v1, p0, Lcom/applovin/impl/sdk/e;->e:Ljava/util/Map;
 
-    .line 2
     invoke-interface {v1, p1}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object v1
@@ -189,9 +189,9 @@
 
     invoke-direct {v1}, Lcom/applovin/impl/sdk/p;-><init>()V
 
+    .line 4
     iget-object v2, p0, Lcom/applovin/impl/sdk/e;->e:Ljava/util/Map;
 
-    .line 4
     invoke-interface {v2, p1, v1}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     goto :goto_0
@@ -368,9 +368,9 @@
 .method public a(Lcom/applovin/impl/h0;)Lcom/applovin/impl/sdk/ad/AppLovinAdImpl;
     .locals 1
 
+    .line 1
     iget-object v0, p0, Lcom/applovin/impl/sdk/e;->c:Ljava/lang/Object;
 
-    .line 1
     monitor-enter v0
 
     .line 2
@@ -402,11 +402,11 @@
 .method public a(Lcom/applovin/impl/sdk/ad/AppLovinAdImpl;)V
     .locals 5
 
+    .line 5
     const-string v0, "Ad enqueued: "
 
     iget-object v1, p0, Lcom/applovin/impl/sdk/e;->c:Ljava/lang/Object;
 
-    .line 5
     monitor-enter v1
 
     .line 6
@@ -471,9 +471,9 @@
 .method public b(Lcom/applovin/impl/sdk/ad/AppLovinAdImpl;)V
     .locals 2
 
+    .line 7
     iget-object v0, p0, Lcom/applovin/impl/sdk/e;->c:Ljava/lang/Object;
 
-    .line 7
     monitor-enter v0
 
     .line 8

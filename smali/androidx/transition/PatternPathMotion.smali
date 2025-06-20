@@ -7,6 +7,9 @@
 .field private mOriginalPatternPath:Landroid/graphics/Path;
 
 .field private final mPatternPath:Landroid/graphics/Path;
+    .annotation build Landroidx/annotation/NonNull;
+    .end annotation
+.end field
 
 .field private final mTempMatrix:Landroid/graphics/Matrix;
 
@@ -39,6 +42,7 @@
     .line 4
     invoke-virtual {v0, v1, v2}, Landroid/graphics/Path;->lineTo(FF)V
 
+    .line 5
     iput-object v0, p0, Landroidx/transition/PatternPathMotion;->mOriginalPatternPath:Landroid/graphics/Path;
 
     return-void
@@ -46,32 +50,40 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
     .locals 2
-
-    .line 5
-    invoke-direct {p0}, Landroidx/transition/PathMotion;-><init>()V
+    .param p1    # Landroid/content/Context;
+        .annotation build Landroidx/annotation/NonNull;
+        .end annotation
+    .end param
+    .param p2    # Landroid/util/AttributeSet;
+        .annotation build Landroidx/annotation/NonNull;
+        .end annotation
+    .end param
 
     .line 6
+    invoke-direct {p0}, Landroidx/transition/PathMotion;-><init>()V
+
+    .line 7
     new-instance v0, Landroid/graphics/Path;
 
     invoke-direct {v0}, Landroid/graphics/Path;-><init>()V
 
     iput-object v0, p0, Landroidx/transition/PatternPathMotion;->mPatternPath:Landroid/graphics/Path;
 
-    .line 7
+    .line 8
     new-instance v0, Landroid/graphics/Matrix;
 
     invoke-direct {v0}, Landroid/graphics/Matrix;-><init>()V
 
     iput-object v0, p0, Landroidx/transition/PatternPathMotion;->mTempMatrix:Landroid/graphics/Matrix;
 
+    .line 9
     sget-object v0, Landroidx/transition/Styleable;->PATTERN_PATH_MOTION:[I
 
-    .line 8
     invoke-virtual {p1, p2, v0}, Landroid/content/Context;->obtainStyledAttributes(Landroid/util/AttributeSet;[I)Landroid/content/res/TypedArray;
 
     move-result-object p1
 
-    .line 9
+    .line 10
     :try_start_0
     check-cast p2, Lorg/xmlpull/v1/XmlPullParser;
 
@@ -79,23 +91,23 @@
 
     const/4 v1, 0x0
 
-    invoke-static {p1, p2, v0, v1}, Lnc/b;->n(Landroid/content/res/TypedArray;Lorg/xmlpull/v1/XmlPullParser;Ljava/lang/String;I)Ljava/lang/String;
+    invoke-static {p1, p2, v0, v1}, Lk1/a;->d(Landroid/content/res/TypedArray;Lorg/xmlpull/v1/XmlPullParser;Ljava/lang/String;I)Ljava/lang/String;
 
     move-result-object p2
 
     if-eqz p2, :cond_0
 
-    .line 10
-    invoke-static {p2}, Lb0/h;->w(Ljava/lang/String;)Landroid/graphics/Path;
+    .line 11
+    invoke-static {p2}, LX3/j;->h(Ljava/lang/String;)Landroid/graphics/Path;
 
     move-result-object p2
 
-    .line 11
+    .line 12
     invoke-virtual {p0, p2}, Landroidx/transition/PatternPathMotion;->setPatternPath(Landroid/graphics/Path;)V
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    .line 12
+    .line 13
     invoke-virtual {p1}, Landroid/content/res/TypedArray;->recycle()V
 
     return-void
@@ -105,7 +117,7 @@
 
     goto :goto_0
 
-    .line 13
+    .line 14
     :cond_0
     :try_start_1
     new-instance p2, Ljava/lang/RuntimeException;
@@ -118,35 +130,39 @@
     :try_end_1
     .catchall {:try_start_1 .. :try_end_1} :catchall_0
 
-    .line 14
+    .line 15
     :goto_0
     invoke-virtual {p1}, Landroid/content/res/TypedArray;->recycle()V
 
-    .line 15
+    .line 16
     throw p2
 .end method
 
 .method public constructor <init>(Landroid/graphics/Path;)V
     .locals 1
-
-    .line 16
-    invoke-direct {p0}, Landroidx/transition/PathMotion;-><init>()V
+    .param p1    # Landroid/graphics/Path;
+        .annotation build Landroidx/annotation/NonNull;
+        .end annotation
+    .end param
 
     .line 17
+    invoke-direct {p0}, Landroidx/transition/PathMotion;-><init>()V
+
+    .line 18
     new-instance v0, Landroid/graphics/Path;
 
     invoke-direct {v0}, Landroid/graphics/Path;-><init>()V
 
     iput-object v0, p0, Landroidx/transition/PatternPathMotion;->mPatternPath:Landroid/graphics/Path;
 
-    .line 18
+    .line 19
     new-instance v0, Landroid/graphics/Matrix;
 
     invoke-direct {v0}, Landroid/graphics/Matrix;-><init>()V
 
     iput-object v0, p0, Landroidx/transition/PatternPathMotion;->mTempMatrix:Landroid/graphics/Matrix;
 
-    .line 19
+    .line 20
     invoke-virtual {p0, p1}, Landroidx/transition/PatternPathMotion;->setPatternPath(Landroid/graphics/Path;)V
 
     return-void
@@ -188,6 +204,8 @@
 # virtual methods
 .method public getPath(FFFF)Landroid/graphics/Path;
     .locals 3
+    .annotation build Landroidx/annotation/NonNull;
+    .end annotation
 
     .line 1
     sub-float/2addr p3, p1
@@ -283,14 +301,23 @@
 
 .method public getPatternPath()Landroid/graphics/Path;
     .locals 1
+    .annotation build Landroidx/annotation/NonNull;
+    .end annotation
 
+    .line 1
     iget-object v0, p0, Landroidx/transition/PatternPathMotion;->mOriginalPatternPath:Landroid/graphics/Path;
 
+    .line 2
+    .line 3
     return-object v0
 .end method
 
 .method public setPatternPath(Landroid/graphics/Path;)V
     .locals 8
+    .param p1    # Landroid/graphics/Path;
+        .annotation build Landroidx/annotation/NonNull;
+        .end annotation
+    .end param
 
     .line 1
     new-instance v0, Landroid/graphics/PathMeasure;

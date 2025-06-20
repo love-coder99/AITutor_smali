@@ -3,14 +3,14 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lzh/e;
+.implements Lka/e;
 
 
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "Lkotlin/jvm/internal/Lambda;",
-        "Lzh/e;"
+        "Lka/e;"
     }
 .end annotation
 
@@ -19,9 +19,9 @@
         "\u0000\u0008\n\u0002\u0018\u0002\n\u0002\u0008\u0003\u0010\u0003\u001a\u00020\u0000H\u000b\u00a2\u0006\u0004\u0008\u0001\u0010\u0002"
     }
     d2 = {
-        "Lqh/r;",
+        "LX9/j;",
         "invoke",
-        "(Landroidx/compose/runtime/l;I)V",
+        "(Landroidx/compose/runtime/j;I)V",
         "<anonymous>"
     }
     k = 0x3
@@ -36,14 +36,14 @@
 # instance fields
 .field final synthetic $index:I
 
-.field final synthetic this$0:Landroidx/compose/foundation/lazy/grid/l;
+.field final synthetic this$0:Landroidx/compose/foundation/lazy/grid/i;
 
 
 # direct methods
-.method public constructor <init>(Landroidx/compose/foundation/lazy/grid/l;I)V
+.method public constructor <init>(Landroidx/compose/foundation/lazy/grid/i;I)V
     .locals 0
 
-    iput-object p1, p0, Landroidx/compose/foundation/lazy/grid/LazyGridItemProviderImpl$Item$1;->this$0:Landroidx/compose/foundation/lazy/grid/l;
+    iput-object p1, p0, Landroidx/compose/foundation/lazy/grid/LazyGridItemProviderImpl$Item$1;->this$0:Landroidx/compose/foundation/lazy/grid/i;
 
     iput p2, p0, Landroidx/compose/foundation/lazy/grid/LazyGridItemProviderImpl$Item$1;->$index:I
 
@@ -60,7 +60,7 @@
     .locals 0
 
     .line 1
-    check-cast p1, Landroidx/compose/runtime/l;
+    check-cast p1, Landroidx/compose/runtime/j;
 
     check-cast p2, Ljava/lang/Number;
 
@@ -68,14 +68,14 @@
 
     move-result p2
 
-    invoke-virtual {p0, p1, p2}, Landroidx/compose/foundation/lazy/grid/LazyGridItemProviderImpl$Item$1;->invoke(Landroidx/compose/runtime/l;I)V
+    invoke-virtual {p0, p1, p2}, Landroidx/compose/foundation/lazy/grid/LazyGridItemProviderImpl$Item$1;->invoke(Landroidx/compose/runtime/j;I)V
 
-    sget-object p1, Lqh/r;->a:Lqh/r;
+    sget-object p1, LX9/j;->a:LX9/j;
 
     return-object p1
 .end method
 
-.method public final invoke(Landroidx/compose/runtime/l;I)V
+.method public final invoke(Landroidx/compose/runtime/j;I)V
     .locals 3
 
     and-int/lit8 p2, p2, 0x3
@@ -84,12 +84,12 @@
 
     if-ne p2, v0, :cond_1
 
+    .line 2
     move-object p2, p1
 
-    check-cast p2, Landroidx/compose/runtime/p;
+    check-cast p2, Landroidx/compose/runtime/n;
 
-    .line 2
-    invoke-virtual {p2}, Landroidx/compose/runtime/p;->y()Z
+    invoke-virtual {p2}, Landroidx/compose/runtime/n;->x()Z
 
     move-result v0
 
@@ -99,43 +99,45 @@
 
     .line 3
     :cond_0
-    invoke-virtual {p2}, Landroidx/compose/runtime/p;->N()V
+    invoke-virtual {p2}, Landroidx/compose/runtime/n;->L()V
 
     goto :goto_1
 
+    .line 4
     :cond_1
     :goto_0
-    iget-object p2, p0, Landroidx/compose/foundation/lazy/grid/LazyGridItemProviderImpl$Item$1;->this$0:Landroidx/compose/foundation/lazy/grid/l;
-
-    .line 4
-    iget-object p2, p2, Landroidx/compose/foundation/lazy/grid/l;->b:Landroidx/compose/foundation/lazy/grid/i;
-
-    iget v0, p0, Landroidx/compose/foundation/lazy/grid/LazyGridItemProviderImpl$Item$1;->$index:I
+    iget-object p2, p0, Landroidx/compose/foundation/lazy/grid/LazyGridItemProviderImpl$Item$1;->this$0:Landroidx/compose/foundation/lazy/grid/i;
 
     .line 5
-    iget-object p2, p2, Landroidx/compose/foundation/lazy/grid/i;->c:Landroidx/compose/foundation/lazy/layout/s0;
+    iget-object p2, p2, Landroidx/compose/foundation/lazy/grid/i;->b:Landroidx/compose/foundation/lazy/grid/h;
 
     .line 6
-    invoke-virtual {p2, v0}, Landroidx/compose/foundation/lazy/layout/s0;->c(I)Landroidx/compose/foundation/lazy/layout/f;
+    iget v0, p0, Landroidx/compose/foundation/lazy/grid/LazyGridItemProviderImpl$Item$1;->$index:I
+
+    .line 7
+    iget-object p2, p2, Landroidx/compose/foundation/lazy/grid/h;->c:LBa/i;
+
+    .line 8
+    invoke-virtual {p2, v0}, LBa/i;->d(I)Landroidx/compose/foundation/lazy/layout/f;
 
     move-result-object p2
 
-    .line 7
+    .line 9
     iget v1, p2, Landroidx/compose/foundation/lazy/layout/f;->a:I
 
     sub-int/2addr v0, v1
 
-    .line 8
-    iget-object p2, p2, Landroidx/compose/foundation/lazy/layout/f;->c:Ljava/lang/Object;
-
-    check-cast p2, Landroidx/compose/foundation/lazy/grid/h;
-
-    .line 9
-    iget-object p2, p2, Landroidx/compose/foundation/lazy/grid/h;->d:Lzh/g;
-
-    sget-object v1, Landroidx/compose/foundation/lazy/grid/n;->a:Landroidx/compose/foundation/lazy/grid/n;
-
     .line 10
+    iget-object p2, p2, Landroidx/compose/foundation/lazy/layout/f;->c:Landroidx/compose/foundation/lazy/layout/q;
+
+    check-cast p2, Landroidx/compose/foundation/lazy/grid/g;
+
+    .line 11
+    iget-object p2, p2, Landroidx/compose/foundation/lazy/grid/g;->d:Landroidx/compose/runtime/internal/a;
+
+    .line 12
+    sget-object v1, Landroidx/compose/foundation/lazy/grid/k;->a:Landroidx/compose/foundation/lazy/grid/k;
+
     invoke-static {v0}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
     move-result-object v0
@@ -146,7 +148,7 @@
 
     move-result-object v2
 
-    invoke-interface {p2, v1, v0, p1, v2}, Lzh/g;->invoke(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {p2, v1, v0, p1, v2}, Landroidx/compose/runtime/internal/a;->invoke(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     :goto_1
     return-void

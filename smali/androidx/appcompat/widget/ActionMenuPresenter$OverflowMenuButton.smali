@@ -33,7 +33,7 @@
     const/4 v0, 0x0
 
     .line 4
-    sget v1, Lg/a;->actionOverflowButtonStyle:I
+    sget v1, Li/a;->actionOverflowButtonStyle:I
 
     .line 5
     .line 6

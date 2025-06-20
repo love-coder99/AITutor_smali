@@ -64,15 +64,15 @@
     .locals 2
 
     .line 1
-    new-instance v0, Lcom/applovin/impl/bt;
+    new-instance v0, Lcom/applovin/impl/T;
 
     .line 2
     .line 3
-    const/16 v1, 0x9
+    const/16 v1, 0xa
 
     .line 4
     .line 5
-    invoke-direct {v0, v1}, Lcom/applovin/impl/bt;-><init>(I)V
+    invoke-direct {v0, v1}, Lcom/applovin/impl/T;-><init>(I)V
 
     .line 6
     .line 7
@@ -142,8 +142,10 @@
 
     iput-object p3, p0, Lcom/applovin/impl/cp;->f:Lcom/applovin/impl/dp$c;
 
+    .line 6
     iput p4, p0, Lcom/applovin/impl/cp;->b:I
 
+    .line 7
     iput p1, p0, Lcom/applovin/impl/cp;->a:I
 
     const/4 p3, 0x1
@@ -156,7 +158,7 @@
 
     goto :goto_0
 
-    .line 6
+    .line 8
     :cond_0
     new-instance p1, Ljava/util/ArrayList;
 
@@ -164,12 +166,12 @@
 
     iput-object p1, p0, Lcom/applovin/impl/cp;->c:Ljava/util/List;
 
-    .line 7
+    .line 9
     invoke-virtual {p1, p2}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
     goto :goto_1
 
-    .line 8
+    .line 10
     :cond_1
     :goto_0
     invoke-static {p2}, Ljava/util/Collections;->singletonList(Ljava/lang/Object;)Ljava/util/List;
@@ -178,7 +180,7 @@
 
     iput-object p1, p0, Lcom/applovin/impl/cp;->c:Ljava/util/List;
 
-    .line 9
+    .line 11
     :goto_1
     new-instance p1, Lcom/applovin/impl/ah;
 
@@ -192,51 +194,52 @@
 
     iput-object p1, p0, Lcom/applovin/impl/cp;->d:Lcom/applovin/impl/ah;
 
-    .line 10
+    .line 12
     new-instance p1, Landroid/util/SparseBooleanArray;
 
     invoke-direct {p1}, Landroid/util/SparseBooleanArray;-><init>()V
 
     iput-object p1, p0, Lcom/applovin/impl/cp;->h:Landroid/util/SparseBooleanArray;
 
-    .line 11
+    .line 13
     new-instance p1, Landroid/util/SparseBooleanArray;
 
     invoke-direct {p1}, Landroid/util/SparseBooleanArray;-><init>()V
 
     iput-object p1, p0, Lcom/applovin/impl/cp;->i:Landroid/util/SparseBooleanArray;
 
-    .line 12
+    .line 14
     new-instance p1, Landroid/util/SparseArray;
 
     invoke-direct {p1}, Landroid/util/SparseArray;-><init>()V
 
     iput-object p1, p0, Lcom/applovin/impl/cp;->g:Landroid/util/SparseArray;
 
-    .line 13
+    .line 15
     new-instance p1, Landroid/util/SparseIntArray;
 
     invoke-direct {p1}, Landroid/util/SparseIntArray;-><init>()V
 
     iput-object p1, p0, Lcom/applovin/impl/cp;->e:Landroid/util/SparseIntArray;
 
-    .line 14
+    .line 16
     new-instance p1, Lcom/applovin/impl/bp;
 
     invoke-direct {p1, p4}, Lcom/applovin/impl/bp;-><init>(I)V
 
     iput-object p1, p0, Lcom/applovin/impl/cp;->j:Lcom/applovin/impl/bp;
 
-    .line 15
+    .line 17
     sget-object p1, Lcom/applovin/impl/l8;->e:Lcom/applovin/impl/l8;
 
     iput-object p1, p0, Lcom/applovin/impl/cp;->l:Lcom/applovin/impl/l8;
 
     const/4 p1, -0x1
 
+    .line 18
     iput p1, p0, Lcom/applovin/impl/cp;->s:I
 
-    .line 16
+    .line 19
     invoke-direct {p0}, Lcom/applovin/impl/cp;->d()V
 
     return-void
@@ -245,7 +248,7 @@
 .method public static synthetic a(Lcom/applovin/impl/cp;I)I
     .locals 0
 
-    .line 5
+    .line 4
     iput p1, p0, Lcom/applovin/impl/cp;->m:I
 
     return p1
@@ -254,7 +257,7 @@
 .method public static synthetic a(Lcom/applovin/impl/cp;)Landroid/util/SparseArray;
     .locals 0
 
-    .line 3
+    .line 2
     iget-object p0, p0, Lcom/applovin/impl/cp;->g:Landroid/util/SparseArray;
 
     return-object p0
@@ -263,7 +266,7 @@
 .method public static synthetic a(Lcom/applovin/impl/cp;Lcom/applovin/impl/dp;)Lcom/applovin/impl/dp;
     .locals 0
 
-    .line 6
+    .line 5
     iput-object p1, p0, Lcom/applovin/impl/cp;->q:Lcom/applovin/impl/dp;
 
     return-object p1
@@ -272,17 +275,19 @@
 .method private a(J)V
     .locals 13
 
+    .line 7
     iget-boolean v0, p0, Lcom/applovin/impl/cp;->o:Z
 
     if-nez v0, :cond_1
 
     const/4 v0, 0x1
 
+    .line 8
     iput-boolean v0, p0, Lcom/applovin/impl/cp;->o:Z
 
+    .line 9
     iget-object v0, p0, Lcom/applovin/impl/cp;->j:Lcom/applovin/impl/bp;
 
-    .line 7
     invoke-virtual {v0}, Lcom/applovin/impl/bp;->a()J
 
     move-result-wide v0
@@ -293,19 +298,19 @@
 
     if-eqz v4, :cond_0
 
-    .line 8
+    .line 10
     new-instance v0, Lcom/applovin/impl/ap;
 
     iget-object v1, p0, Lcom/applovin/impl/cp;->j:Lcom/applovin/impl/bp;
 
-    .line 9
+    .line 11
     invoke-virtual {v1}, Lcom/applovin/impl/bp;->b()Lcom/applovin/impl/ho;
 
     move-result-object v6
 
     iget-object v1, p0, Lcom/applovin/impl/cp;->j:Lcom/applovin/impl/bp;
 
-    .line 10
+    .line 12
     invoke-virtual {v1}, Lcom/applovin/impl/bp;->a()J
 
     move-result-wide v7
@@ -322,9 +327,9 @@
 
     iput-object v0, p0, Lcom/applovin/impl/cp;->k:Lcom/applovin/impl/ap;
 
+    .line 13
     iget-object p1, p0, Lcom/applovin/impl/cp;->l:Lcom/applovin/impl/l8;
 
-    .line 11
     invoke-virtual {v0}, Lcom/applovin/impl/i2;->a()Lcom/applovin/impl/ij;
 
     move-result-object p2
@@ -333,10 +338,10 @@
 
     goto :goto_0
 
+    .line 14
     :cond_0
     iget-object p1, p0, Lcom/applovin/impl/cp;->l:Lcom/applovin/impl/l8;
 
-    .line 12
     new-instance p2, Lcom/applovin/impl/ij$b;
 
     iget-object v0, p0, Lcom/applovin/impl/cp;->j:Lcom/applovin/impl/bp;
@@ -357,6 +362,7 @@
 .method private a(I)Z
     .locals 2
 
+    .line 64
     iget v0, p0, Lcom/applovin/impl/cp;->a:I
 
     const/4 v1, 0x2
@@ -371,7 +377,7 @@
 
     const/4 v1, 0x0
 
-    .line 52
+    .line 65
     invoke-virtual {v0, p1, v1}, Landroid/util/SparseBooleanArray;->get(IZ)Z
 
     move-result p1
@@ -388,7 +394,7 @@
 .method public static synthetic a(Lcom/applovin/impl/cp;Z)Z
     .locals 0
 
-    .line 4
+    .line 3
     iput-boolean p1, p0, Lcom/applovin/impl/cp;->n:Z
 
     return p1
@@ -397,23 +403,24 @@
 .method private b()I
     .locals 4
 
+    .line 12
     iget-object v0, p0, Lcom/applovin/impl/cp;->d:Lcom/applovin/impl/ah;
 
-    .line 12
     invoke-virtual {v0}, Lcom/applovin/impl/ah;->d()I
 
     move-result v0
 
+    .line 13
     iget-object v1, p0, Lcom/applovin/impl/cp;->d:Lcom/applovin/impl/ah;
 
-    .line 13
     invoke-virtual {v1}, Lcom/applovin/impl/ah;->e()I
 
     move-result v1
 
+    .line 14
     iget-object v2, p0, Lcom/applovin/impl/cp;->d:Lcom/applovin/impl/ah;
 
-    .line 14
+    .line 15
     invoke-virtual {v2}, Lcom/applovin/impl/ah;->c()[B
 
     move-result-object v2
@@ -422,15 +429,16 @@
 
     move-result v2
 
+    .line 16
     iget-object v3, p0, Lcom/applovin/impl/cp;->d:Lcom/applovin/impl/ah;
 
-    .line 15
     invoke-virtual {v3, v2}, Lcom/applovin/impl/ah;->f(I)V
 
     add-int/lit16 v3, v2, 0xbc
 
     if-le v3, v1, :cond_1
 
+    .line 17
     iget v1, p0, Lcom/applovin/impl/cp;->r:I
 
     sub-int/2addr v2, v0
@@ -439,6 +447,7 @@
 
     iput v2, p0, Lcom/applovin/impl/cp;->r:I
 
+    .line 18
     iget v0, p0, Lcom/applovin/impl/cp;->a:I
 
     const/4 v1, 0x2
@@ -451,12 +460,12 @@
 
     goto :goto_0
 
+    .line 19
     :cond_0
     const-string v0, "Cannot find sync byte. Most likely not a Transport Stream."
 
     const/4 v1, 0x0
 
-    .line 16
     invoke-static {v0, v1}, Lcom/applovin/impl/ch;->a(Ljava/lang/String;Ljava/lang/Throwable;)Lcom/applovin/impl/ch;
 
     move-result-object v0
@@ -466,6 +475,7 @@
     :cond_1
     const/4 v0, 0x0
 
+    .line 20
     iput v0, p0, Lcom/applovin/impl/cp;->r:I
 
     :cond_2
@@ -494,16 +504,16 @@
 .method private b(Lcom/applovin/impl/k8;)Z
     .locals 6
 
+    .line 3
     iget-object v0, p0, Lcom/applovin/impl/cp;->d:Lcom/applovin/impl/ah;
 
-    .line 3
     invoke-virtual {v0}, Lcom/applovin/impl/ah;->c()[B
 
     move-result-object v0
 
+    .line 4
     iget-object v1, p0, Lcom/applovin/impl/cp;->d:Lcom/applovin/impl/ah;
 
-    .line 4
     invoke-virtual {v1}, Lcom/applovin/impl/ah;->d()I
 
     move-result v1
@@ -516,44 +526,44 @@
 
     if-ge v1, v3, :cond_1
 
+    .line 5
     iget-object v1, p0, Lcom/applovin/impl/cp;->d:Lcom/applovin/impl/ah;
 
-    .line 5
     invoke-virtual {v1}, Lcom/applovin/impl/ah;->a()I
 
     move-result v1
 
     if-lez v1, :cond_0
 
+    .line 6
     iget-object v4, p0, Lcom/applovin/impl/cp;->d:Lcom/applovin/impl/ah;
 
-    .line 6
     invoke-virtual {v4}, Lcom/applovin/impl/ah;->d()I
 
     move-result v4
 
     invoke-static {v0, v4, v0, v2, v1}, Ljava/lang/System;->arraycopy(Ljava/lang/Object;ILjava/lang/Object;II)V
 
+    .line 7
     :cond_0
     iget-object v4, p0, Lcom/applovin/impl/cp;->d:Lcom/applovin/impl/ah;
 
-    .line 7
     invoke-virtual {v4, v0, v1}, Lcom/applovin/impl/ah;->a([BI)V
 
+    .line 8
     :cond_1
     :goto_0
     iget-object v1, p0, Lcom/applovin/impl/cp;->d:Lcom/applovin/impl/ah;
 
-    .line 8
     invoke-virtual {v1}, Lcom/applovin/impl/ah;->a()I
 
     move-result v1
 
     if-ge v1, v3, :cond_3
 
+    .line 9
     iget-object v1, p0, Lcom/applovin/impl/cp;->d:Lcom/applovin/impl/ah;
 
-    .line 9
     invoke-virtual {v1}, Lcom/applovin/impl/ah;->e()I
 
     move-result v1
@@ -571,12 +581,12 @@
 
     return v2
 
+    .line 11
     :cond_2
     iget-object v5, p0, Lcom/applovin/impl/cp;->d:Lcom/applovin/impl/ah;
 
     add-int/2addr v1, v4
 
-    .line 11
     invoke-virtual {v5, v1}, Lcom/applovin/impl/ah;->e(I)V
 
     goto :goto_0
@@ -631,24 +641,25 @@
 .method private d()V
     .locals 7
 
+    .line 2
     iget-object v0, p0, Lcom/applovin/impl/cp;->h:Landroid/util/SparseBooleanArray;
 
-    .line 2
     invoke-virtual {v0}, Landroid/util/SparseBooleanArray;->clear()V
 
+    .line 3
     iget-object v0, p0, Lcom/applovin/impl/cp;->g:Landroid/util/SparseArray;
 
-    .line 3
     invoke-virtual {v0}, Landroid/util/SparseArray;->clear()V
 
+    .line 4
     iget-object v0, p0, Lcom/applovin/impl/cp;->f:Lcom/applovin/impl/dp$c;
 
-    .line 4
+    .line 5
     invoke-interface {v0}, Lcom/applovin/impl/dp$c;->a()Landroid/util/SparseArray;
 
     move-result-object v0
 
-    .line 5
+    .line 6
     invoke-virtual {v0}, Landroid/util/SparseArray;->size()I
 
     move-result v1
@@ -660,9 +671,9 @@
     :goto_0
     if-ge v3, v1, :cond_0
 
+    .line 7
     iget-object v4, p0, Lcom/applovin/impl/cp;->g:Landroid/util/SparseArray;
 
-    .line 6
     invoke-virtual {v0, v3}, Landroid/util/SparseArray;->keyAt(I)I
 
     move-result v5
@@ -679,10 +690,10 @@
 
     goto :goto_0
 
+    .line 8
     :cond_0
     iget-object v0, p0, Lcom/applovin/impl/cp;->g:Landroid/util/SparseArray;
 
-    .line 7
     new-instance v1, Lcom/applovin/impl/hj;
 
     new-instance v3, Lcom/applovin/impl/cp$a;
@@ -695,6 +706,7 @@
 
     const/4 v0, 0x0
 
+    .line 9
     iput-object v0, p0, Lcom/applovin/impl/cp;->q:Lcom/applovin/impl/dp;
 
     return-void
@@ -797,11 +809,12 @@
 
     move-object/from16 v2, p2
 
-    .line 13
+    .line 15
     invoke-interface/range {p1 .. p1}, Lcom/applovin/impl/k8;->a()J
 
     move-result-wide v3
 
+    .line 16
     iget-boolean v5, v0, Lcom/applovin/impl/cp;->n:Z
 
     const-wide/16 v6, -0x1
@@ -818,46 +831,49 @@
 
     if-eqz v5, :cond_0
 
+    .line 17
     iget v5, v0, Lcom/applovin/impl/cp;->a:I
 
     if-eq v5, v8, :cond_0
 
+    .line 18
     iget-object v5, v0, Lcom/applovin/impl/cp;->j:Lcom/applovin/impl/bp;
 
-    .line 14
     invoke-virtual {v5}, Lcom/applovin/impl/bp;->c()Z
 
     move-result v5
 
     if-nez v5, :cond_0
 
+    .line 19
     iget-object v3, v0, Lcom/applovin/impl/cp;->j:Lcom/applovin/impl/bp;
 
     iget v4, v0, Lcom/applovin/impl/cp;->s:I
 
-    .line 15
     invoke-virtual {v3, v1, v2, v4}, Lcom/applovin/impl/bp;->a(Lcom/applovin/impl/k8;Lcom/applovin/impl/th;I)I
 
     move-result v1
 
     return v1
 
-    .line 16
+    .line 20
     :cond_0
     invoke-direct {v0, v3, v4}, Lcom/applovin/impl/cp;->a(J)V
 
+    .line 21
     iget-boolean v5, v0, Lcom/applovin/impl/cp;->p:Z
 
     if-eqz v5, :cond_1
 
+    .line 22
     iput-boolean v10, v0, Lcom/applovin/impl/cp;->p:Z
 
     const-wide/16 v11, 0x0
 
-    .line 17
+    .line 23
     invoke-virtual {v0, v11, v12, v11, v12}, Lcom/applovin/impl/cp;->a(JJ)V
 
-    .line 18
+    .line 24
     invoke-interface/range {p1 .. p1}, Lcom/applovin/impl/k8;->f()J
 
     move-result-wide v13
@@ -866,33 +882,33 @@
 
     if-eqz v5, :cond_1
 
-    .line 19
+    .line 25
     iput-wide v11, v2, Lcom/applovin/impl/th;->a:J
 
     return v9
 
+    .line 26
     :cond_1
     iget-object v5, v0, Lcom/applovin/impl/cp;->k:Lcom/applovin/impl/ap;
 
     if-eqz v5, :cond_2
 
-    .line 20
     invoke-virtual {v5}, Lcom/applovin/impl/i2;->b()Z
 
     move-result v5
 
     if-eqz v5, :cond_2
 
+    .line 27
     iget-object v3, v0, Lcom/applovin/impl/cp;->k:Lcom/applovin/impl/ap;
 
-    .line 21
     invoke-virtual {v3, v1, v2}, Lcom/applovin/impl/i2;->a(Lcom/applovin/impl/k8;Lcom/applovin/impl/th;)I
 
     move-result v1
 
     return v1
 
-    .line 22
+    .line 28
     :cond_2
     invoke-direct/range {p0 .. p1}, Lcom/applovin/impl/cp;->b(Lcom/applovin/impl/k8;)Z
 
@@ -904,15 +920,15 @@
 
     return v1
 
-    .line 23
+    .line 29
     :cond_3
     invoke-direct/range {p0 .. p0}, Lcom/applovin/impl/cp;->b()I
 
     move-result v1
 
+    .line 30
     iget-object v2, v0, Lcom/applovin/impl/cp;->d:Lcom/applovin/impl/ah;
 
-    .line 24
     invoke-virtual {v2}, Lcom/applovin/impl/ah;->e()I
 
     move-result v2
@@ -921,10 +937,10 @@
 
     return v10
 
+    .line 31
     :cond_4
     iget-object v5, v0, Lcom/applovin/impl/cp;->d:Lcom/applovin/impl/ah;
 
-    .line 25
     invoke-virtual {v5}, Lcom/applovin/impl/ah;->j()I
 
     move-result v5
@@ -935,9 +951,9 @@
 
     if-eqz v11, :cond_5
 
+    .line 32
     iget-object v2, v0, Lcom/applovin/impl/cp;->d:Lcom/applovin/impl/ah;
 
-    .line 26
     invoke-virtual {v2, v1}, Lcom/applovin/impl/ah;->f(I)V
 
     return v10
@@ -979,9 +995,9 @@
 
     if-eqz v14, :cond_8
 
+    .line 33
     iget-object v14, v0, Lcom/applovin/impl/cp;->g:Landroid/util/SparseArray;
 
-    .line 27
     invoke-virtual {v14, v12}, Landroid/util/SparseArray;->get(I)Ljava/lang/Object;
 
     move-result-object v14
@@ -996,13 +1012,14 @@
     :goto_2
     if-nez v14, :cond_9
 
+    .line 34
     iget-object v2, v0, Lcom/applovin/impl/cp;->d:Lcom/applovin/impl/ah;
 
-    .line 28
     invoke-virtual {v2, v1}, Lcom/applovin/impl/ah;->f(I)V
 
     return v10
 
+    .line 35
     :cond_9
     iget v15, v0, Lcom/applovin/impl/cp;->a:I
 
@@ -1010,25 +1027,25 @@
 
     and-int/lit8 v5, v5, 0xf
 
+    .line 36
     iget-object v15, v0, Lcom/applovin/impl/cp;->e:Landroid/util/SparseIntArray;
 
     add-int/lit8 v6, v5, -0x1
 
-    .line 29
     invoke-virtual {v15, v12, v6}, Landroid/util/SparseIntArray;->get(II)I
 
     move-result v6
 
+    .line 37
     iget-object v7, v0, Lcom/applovin/impl/cp;->e:Landroid/util/SparseIntArray;
 
-    .line 30
     invoke-virtual {v7, v12, v5}, Landroid/util/SparseIntArray;->put(II)V
 
     if-ne v6, v5, :cond_a
 
+    .line 38
     iget-object v2, v0, Lcom/applovin/impl/cp;->d:Lcom/applovin/impl/ah;
 
-    .line 31
     invoke-virtual {v2, v1}, Lcom/applovin/impl/ah;->f(I)V
 
     return v10
@@ -1040,22 +1057,22 @@
 
     if-eq v5, v6, :cond_b
 
-    .line 32
+    .line 39
     invoke-interface {v14}, Lcom/applovin/impl/dp;->a()V
 
     :cond_b
     if-eqz v13, :cond_d
 
+    .line 40
     iget-object v5, v0, Lcom/applovin/impl/cp;->d:Lcom/applovin/impl/ah;
 
-    .line 33
     invoke-virtual {v5}, Lcom/applovin/impl/ah;->w()I
 
     move-result v5
 
+    .line 41
     iget-object v6, v0, Lcom/applovin/impl/cp;->d:Lcom/applovin/impl/ah;
 
-    .line 34
     invoke-virtual {v6}, Lcom/applovin/impl/ah;->w()I
 
     move-result v6
@@ -1074,38 +1091,40 @@
     :goto_3
     or-int/2addr v11, v6
 
+    .line 42
     iget-object v6, v0, Lcom/applovin/impl/cp;->d:Lcom/applovin/impl/ah;
 
     sub-int/2addr v5, v9
 
-    .line 35
     invoke-virtual {v6, v5}, Lcom/applovin/impl/ah;->g(I)V
 
+    .line 43
     :cond_d
     iget-boolean v5, v0, Lcom/applovin/impl/cp;->n:Z
 
-    .line 36
+    .line 44
     invoke-direct {v0, v12}, Lcom/applovin/impl/cp;->a(I)Z
 
     move-result v6
 
     if-eqz v6, :cond_e
 
+    .line 45
     iget-object v6, v0, Lcom/applovin/impl/cp;->d:Lcom/applovin/impl/ah;
 
-    .line 37
     invoke-virtual {v6, v1}, Lcom/applovin/impl/ah;->e(I)V
 
+    .line 46
     iget-object v6, v0, Lcom/applovin/impl/cp;->d:Lcom/applovin/impl/ah;
 
-    .line 38
     invoke-interface {v14, v6, v11}, Lcom/applovin/impl/dp;->a(Lcom/applovin/impl/ah;I)V
 
+    .line 47
     iget-object v6, v0, Lcom/applovin/impl/cp;->d:Lcom/applovin/impl/ah;
 
-    .line 39
     invoke-virtual {v6, v2}, Lcom/applovin/impl/ah;->e(I)V
 
+    .line 48
     :cond_e
     iget v2, v0, Lcom/applovin/impl/cp;->a:I
 
@@ -1123,12 +1142,13 @@
 
     if-eqz v2, :cond_f
 
+    .line 49
     iput-boolean v9, v0, Lcom/applovin/impl/cp;->p:Z
 
+    .line 50
     :cond_f
     iget-object v2, v0, Lcom/applovin/impl/cp;->d:Lcom/applovin/impl/ah;
 
-    .line 40
     invoke-virtual {v2, v1}, Lcom/applovin/impl/ah;->f(I)V
 
     return v10
@@ -1144,6 +1164,7 @@
 .method public a(JJ)V
     .locals 10
 
+    .line 51
     iget p1, p0, Lcom/applovin/impl/cp;->a:I
 
     const/4 p2, 0x2
@@ -1161,13 +1182,12 @@
     :cond_0
     const/4 p1, 0x0
 
-    .line 41
     :goto_0
     invoke-static {p1}, Lcom/applovin/impl/b1;->b(Z)V
 
+    .line 52
     iget-object p1, p0, Lcom/applovin/impl/cp;->c:Ljava/util/List;
 
-    .line 42
     invoke-interface {p1}, Ljava/util/List;->size()I
 
     move-result p1
@@ -1179,16 +1199,16 @@
 
     if-ge p2, p1, :cond_4
 
+    .line 53
     iget-object v4, p0, Lcom/applovin/impl/cp;->c:Ljava/util/List;
 
-    .line 43
     invoke-interface {v4, p2}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
     move-result-object v4
 
     check-cast v4, Lcom/applovin/impl/ho;
 
-    .line 44
+    .line 54
     invoke-virtual {v4}, Lcom/applovin/impl/ho;->c()J
 
     move-result-wide v5
@@ -1209,7 +1229,7 @@
     :goto_2
     if-nez v5, :cond_2
 
-    .line 45
+    .line 55
     invoke-virtual {v4}, Lcom/applovin/impl/ho;->a()J
 
     move-result-wide v5
@@ -1231,7 +1251,7 @@
     :cond_2
     if-eqz v5, :cond_3
 
-    .line 46
+    .line 56
     :goto_3
     invoke-virtual {v4, p3, p4}, Lcom/applovin/impl/ho;->d(J)V
 
@@ -1245,39 +1265,40 @@
 
     if-eqz p1, :cond_5
 
+    .line 57
     iget-object p1, p0, Lcom/applovin/impl/cp;->k:Lcom/applovin/impl/ap;
 
     if-eqz p1, :cond_5
 
-    .line 47
+    .line 58
     invoke-virtual {p1, p3, p4}, Lcom/applovin/impl/i2;->b(J)V
 
+    .line 59
     :cond_5
     iget-object p1, p0, Lcom/applovin/impl/cp;->d:Lcom/applovin/impl/ah;
 
-    .line 48
     invoke-virtual {p1, v1}, Lcom/applovin/impl/ah;->d(I)V
 
+    .line 60
     iget-object p1, p0, Lcom/applovin/impl/cp;->e:Landroid/util/SparseIntArray;
 
-    .line 49
     invoke-virtual {p1}, Landroid/util/SparseIntArray;->clear()V
 
     const/4 p1, 0x0
 
+    .line 61
     :goto_4
     iget-object p2, p0, Lcom/applovin/impl/cp;->g:Landroid/util/SparseArray;
 
-    .line 50
     invoke-virtual {p2}, Landroid/util/SparseArray;->size()I
 
     move-result p2
 
     if-ge p1, p2, :cond_6
 
+    .line 62
     iget-object p2, p0, Lcom/applovin/impl/cp;->g:Landroid/util/SparseArray;
 
-    .line 51
     invoke-virtual {p2, p1}, Landroid/util/SparseArray;->valueAt(I)Ljava/lang/Object;
 
     move-result-object p2
@@ -1290,6 +1311,7 @@
 
     goto :goto_4
 
+    .line 63
     :cond_6
     iput v1, p0, Lcom/applovin/impl/cp;->r:I
 
@@ -1299,7 +1321,7 @@
 .method public a(Lcom/applovin/impl/l8;)V
     .locals 0
 
-    .line 2
+    .line 6
     iput-object p1, p0, Lcom/applovin/impl/cp;->l:Lcom/applovin/impl/l8;
 
     return-void
@@ -1308,9 +1330,9 @@
 .method public a(Lcom/applovin/impl/k8;)Z
     .locals 6
 
+    .line 66
     iget-object v0, p0, Lcom/applovin/impl/cp;->d:Lcom/applovin/impl/ah;
 
-    .line 53
     invoke-virtual {v0}, Lcom/applovin/impl/ah;->c()[B
 
     move-result-object v0
@@ -1319,7 +1341,7 @@
 
     const/4 v2, 0x0
 
-    .line 54
+    .line 67
     invoke-interface {p1, v0, v2, v1}, Lcom/applovin/impl/k8;->c([BII)V
 
     const/4 v1, 0x0
@@ -1340,7 +1362,7 @@
 
     add-int/2addr v4, v1
 
-    .line 55
+    .line 68
     aget-byte v4, v0, v4
 
     const/16 v5, 0x47
@@ -1356,7 +1378,7 @@
 
     goto :goto_1
 
-    .line 56
+    .line 69
     :cond_1
     invoke-interface {p1, v1}, Lcom/applovin/impl/k8;->a(I)V
 

@@ -202,95 +202,131 @@
 .method public setAdFormat(Lcom/applovin/mediation/MaxAdFormat;)Lcom/applovin/mediation/nativeAds/MaxNativeAd$Builder;
     .locals 0
 
+    .line 1
     iput-object p1, p0, Lcom/applovin/mediation/nativeAds/MaxNativeAd$Builder;->a:Lcom/applovin/mediation/MaxAdFormat;
 
+    .line 2
+    .line 3
     return-object p0
 .end method
 
 .method public setAdvertiser(Ljava/lang/String;)Lcom/applovin/mediation/nativeAds/MaxNativeAd$Builder;
     .locals 0
 
+    .line 1
     iput-object p1, p0, Lcom/applovin/mediation/nativeAds/MaxNativeAd$Builder;->c:Ljava/lang/String;
 
+    .line 2
+    .line 3
     return-object p0
 .end method
 
 .method public setBody(Ljava/lang/String;)Lcom/applovin/mediation/nativeAds/MaxNativeAd$Builder;
     .locals 0
 
+    .line 1
     iput-object p1, p0, Lcom/applovin/mediation/nativeAds/MaxNativeAd$Builder;->d:Ljava/lang/String;
 
+    .line 2
+    .line 3
     return-object p0
 .end method
 
 .method public setCallToAction(Ljava/lang/String;)Lcom/applovin/mediation/nativeAds/MaxNativeAd$Builder;
     .locals 0
 
+    .line 1
     iput-object p1, p0, Lcom/applovin/mediation/nativeAds/MaxNativeAd$Builder;->e:Ljava/lang/String;
 
+    .line 2
+    .line 3
     return-object p0
 .end method
 
 .method public setIcon(Lcom/applovin/mediation/nativeAds/MaxNativeAd$MaxNativeAdImage;)Lcom/applovin/mediation/nativeAds/MaxNativeAd$Builder;
     .locals 0
 
+    .line 1
     iput-object p1, p0, Lcom/applovin/mediation/nativeAds/MaxNativeAd$Builder;->f:Lcom/applovin/mediation/nativeAds/MaxNativeAd$MaxNativeAdImage;
 
+    .line 2
+    .line 3
     return-object p0
 .end method
 
 .method public setIconView(Landroid/view/View;)Lcom/applovin/mediation/nativeAds/MaxNativeAd$Builder;
     .locals 0
 
+    .line 1
     iput-object p1, p0, Lcom/applovin/mediation/nativeAds/MaxNativeAd$Builder;->g:Landroid/view/View;
 
+    .line 2
+    .line 3
     return-object p0
 .end method
 
 .method public setMainImage(Lcom/applovin/mediation/nativeAds/MaxNativeAd$MaxNativeAdImage;)Lcom/applovin/mediation/nativeAds/MaxNativeAd$Builder;
     .locals 0
 
+    .line 1
     iput-object p1, p0, Lcom/applovin/mediation/nativeAds/MaxNativeAd$Builder;->j:Lcom/applovin/mediation/nativeAds/MaxNativeAd$MaxNativeAdImage;
 
+    .line 2
+    .line 3
     return-object p0
 .end method
 
 .method public setMediaContentAspectRatio(F)Lcom/applovin/mediation/nativeAds/MaxNativeAd$Builder;
     .locals 0
 
+    .line 1
     iput p1, p0, Lcom/applovin/mediation/nativeAds/MaxNativeAd$Builder;->k:F
 
+    .line 2
+    .line 3
     return-object p0
 .end method
 
 .method public setMediaView(Landroid/view/View;)Lcom/applovin/mediation/nativeAds/MaxNativeAd$Builder;
     .locals 0
 
+    .line 1
     iput-object p1, p0, Lcom/applovin/mediation/nativeAds/MaxNativeAd$Builder;->i:Landroid/view/View;
 
+    .line 2
+    .line 3
     return-object p0
 .end method
 
 .method public setOptionsView(Landroid/view/View;)Lcom/applovin/mediation/nativeAds/MaxNativeAd$Builder;
     .locals 0
 
+    .line 1
     iput-object p1, p0, Lcom/applovin/mediation/nativeAds/MaxNativeAd$Builder;->h:Landroid/view/View;
 
+    .line 2
+    .line 3
     return-object p0
 .end method
 
 .method public setStarRating(Ljava/lang/Double;)Lcom/applovin/mediation/nativeAds/MaxNativeAd$Builder;
     .locals 0
 
+    .line 1
     iput-object p1, p0, Lcom/applovin/mediation/nativeAds/MaxNativeAd$Builder;->l:Ljava/lang/Double;
 
+    .line 2
+    .line 3
     return-object p0
 .end method
 
 .method public setTitle(Ljava/lang/String;)Lcom/applovin/mediation/nativeAds/MaxNativeAd$Builder;
     .locals 0
 
+    .line 1
     iput-object p1, p0, Lcom/applovin/mediation/nativeAds/MaxNativeAd$Builder;->b:Ljava/lang/String;
 
+    .line 2
+    .line 3
     return-object p0
 .end method

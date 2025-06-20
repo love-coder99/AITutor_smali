@@ -3,14 +3,14 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lzh/c;
+.implements Lka/c;
 
 
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "Lkotlin/jvm/internal/Lambda;",
-        "Lzh/c;"
+        "Lka/c;"
     }
 .end annotation
 
@@ -20,12 +20,12 @@
     }
     d2 = {
         "T",
-        "Landroidx/compose/animation/core/m;",
+        "Landroidx/compose/animation/core/l;",
         "V",
-        "Landroidx/compose/runtime/p0;",
-        "Landroidx/compose/runtime/o0;",
+        "Landroidx/compose/runtime/H;",
+        "Landroidx/compose/runtime/G;",
         "invoke",
-        "(Landroidx/compose/runtime/p0;)Landroidx/compose/runtime/o0;",
+        "(Landroidx/compose/runtime/H;)Landroidx/compose/runtime/G;",
         "<anonymous>"
     }
     k = 0x3
@@ -38,32 +38,32 @@
 
 
 # instance fields
-.field final synthetic $this_animateValue:Landroidx/compose/animation/core/g0;
+.field final synthetic $this_animateValue:Landroidx/compose/animation/core/C;
 
-.field final synthetic $transitionAnimation:Landroidx/compose/animation/core/f0;
+.field final synthetic $transitionAnimation:Landroidx/compose/animation/core/B;
     .annotation system Ldalvik/annotation/Signature;
         value = {
-            "Landroidx/compose/animation/core/f0;"
+            "Landroidx/compose/animation/core/B;"
         }
     .end annotation
 .end field
 
 
 # direct methods
-.method public constructor <init>(Landroidx/compose/animation/core/g0;Landroidx/compose/animation/core/f0;)V
+.method public constructor <init>(Landroidx/compose/animation/core/C;Landroidx/compose/animation/core/B;)V
     .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
-            "Landroidx/compose/animation/core/g0;",
-            "Landroidx/compose/animation/core/f0;",
+            "Landroidx/compose/animation/core/C;",
+            "Landroidx/compose/animation/core/B;",
             ")V"
         }
     .end annotation
 
-    iput-object p1, p0, Landroidx/compose/animation/core/InfiniteTransitionKt$animateValue$2$1;->$this_animateValue:Landroidx/compose/animation/core/g0;
+    iput-object p1, p0, Landroidx/compose/animation/core/InfiniteTransitionKt$animateValue$2$1;->$this_animateValue:Landroidx/compose/animation/core/C;
 
-    iput-object p2, p0, Landroidx/compose/animation/core/InfiniteTransitionKt$animateValue$2$1;->$transitionAnimation:Landroidx/compose/animation/core/f0;
+    iput-object p2, p0, Landroidx/compose/animation/core/InfiniteTransitionKt$animateValue$2$1;->$transitionAnimation:Landroidx/compose/animation/core/B;
 
     const/4 p1, 0x1
 
@@ -74,37 +74,39 @@
 
 
 # virtual methods
-.method public final invoke(Landroidx/compose/runtime/p0;)Landroidx/compose/runtime/o0;
+.method public final invoke(Landroidx/compose/runtime/H;)Landroidx/compose/runtime/G;
     .locals 3
 
-    iget-object p1, p0, Landroidx/compose/animation/core/InfiniteTransitionKt$animateValue$2$1;->$this_animateValue:Landroidx/compose/animation/core/g0;
-
-    iget-object v0, p0, Landroidx/compose/animation/core/InfiniteTransitionKt$animateValue$2$1;->$transitionAnimation:Landroidx/compose/animation/core/f0;
-
-    .line 1
-    iget-object v1, p1, Landroidx/compose/animation/core/g0;->a:Landroidx/compose/runtime/collection/e;
-
     .line 2
-    invoke-virtual {v1, v0}, Landroidx/compose/runtime/collection/e;->b(Ljava/lang/Object;)V
+    iget-object p1, p0, Landroidx/compose/animation/core/InfiniteTransitionKt$animateValue$2$1;->$this_animateValue:Landroidx/compose/animation/core/C;
+
+    iget-object v0, p0, Landroidx/compose/animation/core/InfiniteTransitionKt$animateValue$2$1;->$transitionAnimation:Landroidx/compose/animation/core/B;
 
     .line 3
-    iget-object p1, p1, Landroidx/compose/animation/core/g0;->b:Landroidx/compose/runtime/ParcelableSnapshotMutableState;
-
-    sget-object v0, Ljava/lang/Boolean;->TRUE:Ljava/lang/Boolean;
+    iget-object v1, p1, Landroidx/compose/animation/core/C;->a:Landroidx/compose/runtime/collection/d;
 
     .line 4
-    invoke-virtual {p1, v0}, Landroidx/compose/runtime/t2;->setValue(Ljava/lang/Object;)V
-
-    iget-object p1, p0, Landroidx/compose/animation/core/InfiniteTransitionKt$animateValue$2$1;->$this_animateValue:Landroidx/compose/animation/core/g0;
-
-    iget-object v0, p0, Landroidx/compose/animation/core/InfiniteTransitionKt$animateValue$2$1;->$transitionAnimation:Landroidx/compose/animation/core/f0;
+    invoke-virtual {v1, v0}, Landroidx/compose/runtime/collection/d;->b(Ljava/lang/Object;)V
 
     .line 5
-    new-instance v1, Landroidx/compose/animation/core/h0;
+    sget-object v0, Ljava/lang/Boolean;->TRUE:Ljava/lang/Boolean;
+
+    .line 6
+    iget-object p1, p1, Landroidx/compose/animation/core/C;->b:Landroidx/compose/runtime/ParcelableSnapshotMutableState;
+
+    invoke-virtual {p1, v0}, Landroidx/compose/runtime/ParcelableSnapshotMutableState;->setValue(Ljava/lang/Object;)V
+
+    .line 7
+    iget-object p1, p0, Landroidx/compose/animation/core/InfiniteTransitionKt$animateValue$2$1;->$this_animateValue:Landroidx/compose/animation/core/C;
+
+    iget-object v0, p0, Landroidx/compose/animation/core/InfiniteTransitionKt$animateValue$2$1;->$transitionAnimation:Landroidx/compose/animation/core/B;
+
+    .line 8
+    new-instance v1, Landroidx/compose/animation/core/D;
 
     const/4 v2, 0x0
 
-    invoke-direct {v1, p1, v2, v0}, Landroidx/compose/animation/core/h0;-><init>(Ljava/lang/Object;ILjava/lang/Object;)V
+    invoke-direct {v1, p1, v2, v0}, Landroidx/compose/animation/core/D;-><init>(Ljava/lang/Object;ILjava/lang/Object;)V
 
     return-object v1
 .end method
@@ -112,10 +114,10 @@
 .method public bridge synthetic invoke(Ljava/lang/Object;)Ljava/lang/Object;
     .locals 0
 
-    .line 6
-    check-cast p1, Landroidx/compose/runtime/p0;
+    .line 1
+    check-cast p1, Landroidx/compose/runtime/H;
 
-    invoke-virtual {p0, p1}, Landroidx/compose/animation/core/InfiniteTransitionKt$animateValue$2$1;->invoke(Landroidx/compose/runtime/p0;)Landroidx/compose/runtime/o0;
+    invoke-virtual {p0, p1}, Landroidx/compose/animation/core/InfiniteTransitionKt$animateValue$2$1;->invoke(Landroidx/compose/runtime/H;)Landroidx/compose/runtime/G;
 
     move-result-object p1
 

@@ -3,158 +3,142 @@
 .source "SourceFile"
 
 # interfaces
-.implements Landroid/view/View$OnAttachStateChangeListener;
+.implements Landroid/transition/Transition$TransitionListener;
 
 
 # instance fields
-.field public final synthetic b:I
+.field public final synthetic a:Landroid/view/View;
 
-.field public final synthetic c:Landroidx/fragment/app/b1;
-
-.field public final synthetic d:Ljava/lang/Object;
+.field public final synthetic b:Ljava/util/ArrayList;
 
 
 # direct methods
-.method public constructor <init>(Landroidx/fragment/app/b1;Landroid/view/View;)V
-    .locals 1
-
-    .line 2
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
-
-    const/4 v0, 0x1
-
-    iput v0, p0, Landroidx/fragment/app/k0;->b:I
-
-    iput-object p1, p0, Landroidx/fragment/app/k0;->c:Landroidx/fragment/app/b1;
-
-    iput-object p2, p0, Landroidx/fragment/app/k0;->d:Ljava/lang/Object;
-
-    return-void
-.end method
-
-.method public constructor <init>(Landroidx/fragment/app/l0;Landroidx/fragment/app/b1;)V
-    .locals 1
+.method public constructor <init>(Landroid/view/View;Ljava/util/ArrayList;)V
+    .locals 0
 
     .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    const/4 v0, 0x0
+    .line 2
+    .line 3
+    .line 4
+    iput-object p1, p0, Landroidx/fragment/app/k0;->a:Landroid/view/View;
 
-    iput v0, p0, Landroidx/fragment/app/k0;->b:I
+    .line 5
+    .line 6
+    iput-object p2, p0, Landroidx/fragment/app/k0;->b:Ljava/util/ArrayList;
 
-    iput-object p1, p0, Landroidx/fragment/app/k0;->d:Ljava/lang/Object;
-
-    iput-object p2, p0, Landroidx/fragment/app/k0;->c:Landroidx/fragment/app/b1;
-
+    .line 7
+    .line 8
     return-void
 .end method
 
 
 # virtual methods
-.method public final onViewAttachedToWindow(Landroid/view/View;)V
-    .locals 2
+.method public final onTransitionCancel(Landroid/transition/Transition;)V
+    .locals 0
+
+    return-void
+.end method
+
+.method public final onTransitionEnd(Landroid/transition/Transition;)V
+    .locals 4
 
     .line 1
-    iget p1, p0, Landroidx/fragment/app/k0;->b:I
+    invoke-virtual {p1, p0}, Landroid/transition/Transition;->removeListener(Landroid/transition/Transition$TransitionListener;)Landroid/transition/Transition;
 
     .line 2
     .line 3
-    iget-object v0, p0, Landroidx/fragment/app/k0;->d:Ljava/lang/Object;
-
     .line 4
-    .line 5
-    packed-switch p1, :pswitch_data_0
+    iget-object p1, p0, Landroidx/fragment/app/k0;->a:Landroid/view/View;
 
+    .line 5
     .line 6
+    const/16 v0, 0x8
+
     .line 7
     .line 8
-    check-cast v0, Landroid/view/View;
+    invoke-virtual {p1, v0}, Landroid/view/View;->setVisibility(I)V
 
     .line 9
     .line 10
-    invoke-virtual {v0, p0}, Landroid/view/View;->removeOnAttachStateChangeListener(Landroid/view/View$OnAttachStateChangeListener;)V
-
     .line 11
+    iget-object p1, p0, Landroidx/fragment/app/k0;->b:Ljava/util/ArrayList;
+
     .line 12
     .line 13
-    sget-object p1, Landroidx/core/view/y0;->a:Ljava/util/WeakHashMap;
+    invoke-virtual {p1}, Ljava/util/ArrayList;->size()I
 
     .line 14
     .line 15
-    invoke-static {v0}, Landroidx/core/view/n0;->c(Landroid/view/View;)V
-
     .line 16
+    move-result v0
+
     .line 17
+    const/4 v1, 0x0
+
     .line 18
-    return-void
+    const/4 v2, 0x0
 
     .line 19
-    :pswitch_0
-    iget-object p1, p0, Landroidx/fragment/app/k0;->c:Landroidx/fragment/app/b1;
+    :goto_0
+    if-ge v2, v0, :cond_0
 
     .line 20
     .line 21
-    iget-object v1, p1, Landroidx/fragment/app/b1;->c:Landroidx/fragment/app/Fragment;
+    invoke-virtual {p1, v2}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
 
     .line 22
     .line 23
-    invoke-virtual {p1}, Landroidx/fragment/app/b1;->i()V
-
     .line 24
+    move-result-object v3
+
     .line 25
+    check-cast v3, Landroid/view/View;
+
     .line 26
-    iget-object p1, v1, Landroidx/fragment/app/Fragment;->mView:Landroid/view/View;
-
     .line 27
-    .line 28
-    invoke-virtual {p1}, Landroid/view/View;->getParent()Landroid/view/ViewParent;
+    invoke-virtual {v3, v1}, Landroid/view/View;->setVisibility(I)V
 
+    .line 28
     .line 29
     .line 30
-    .line 31
-    move-result-object p1
+    add-int/lit8 v2, v2, 0x1
 
+    .line 31
     .line 32
-    check-cast p1, Landroid/view/ViewGroup;
+    goto :goto_0
 
     .line 33
-    .line 34
-    check-cast v0, Landroidx/fragment/app/l0;
-
-    .line 35
-    .line 36
-    iget-object v0, v0, Landroidx/fragment/app/l0;->b:Landroidx/fragment/app/v0;
-
-    .line 37
-    .line 38
-    invoke-static {p1, v0}, Landroidx/fragment/app/v1;->f(Landroid/view/ViewGroup;Landroidx/fragment/app/v0;)Landroidx/fragment/app/v1;
-
-    .line 39
-    .line 40
-    .line 41
-    move-result-object p1
-
-    .line 42
-    invoke-virtual {p1}, Landroidx/fragment/app/v1;->e()V
-
-    .line 43
-    .line 44
-    .line 45
+    :cond_0
     return-void
-
-    .line 46
-    nop
-
-    .line 47
-    :pswitch_data_0
-    .packed-switch 0x0
-        :pswitch_0
-    .end packed-switch
 .end method
 
-.method public final onViewDetachedFromWindow(Landroid/view/View;)V
+.method public final onTransitionPause(Landroid/transition/Transition;)V
+    .locals 0
+
+    return-void
+.end method
+
+.method public final onTransitionResume(Landroid/transition/Transition;)V
+    .locals 0
+
+    return-void
+.end method
+
+.method public final onTransitionStart(Landroid/transition/Transition;)V
     .locals 0
 
     .line 1
+    invoke-virtual {p1, p0}, Landroid/transition/Transition;->removeListener(Landroid/transition/Transition$TransitionListener;)Landroid/transition/Transition;
+
+    .line 2
+    .line 3
+    .line 4
+    invoke-virtual {p1, p0}, Landroid/transition/Transition;->addListener(Landroid/transition/Transition$TransitionListener;)Landroid/transition/Transition;
+
+    .line 5
+    .line 6
+    .line 7
     return-void
 .end method

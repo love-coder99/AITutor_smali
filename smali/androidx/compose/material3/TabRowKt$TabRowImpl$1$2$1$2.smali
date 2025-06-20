@@ -3,14 +3,14 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lzh/c;
+.implements Lka/c;
 
 
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "Lkotlin/jvm/internal/Lambda;",
-        "Lzh/c;"
+        "Lka/c;"
     }
 .end annotation
 
@@ -19,10 +19,10 @@
         "\u0000\u000c\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0008\u0003\u0010\u0004\u001a\u00020\u0001*\u00020\u0000H\n\u00a2\u0006\u0004\u0008\u0002\u0010\u0003"
     }
     d2 = {
-        "Landroidx/compose/ui/layout/z0;",
-        "Lqh/r;",
+        "Landroidx/compose/ui/layout/W;",
+        "LX9/j;",
         "invoke",
-        "(Landroidx/compose/ui/layout/z0;)V",
+        "(Landroidx/compose/ui/layout/W;)V",
         "<anonymous>"
     }
     k = 0x3
@@ -39,7 +39,7 @@
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/List<",
-            "Landroidx/compose/ui/layout/a1;",
+            "Landroidx/compose/ui/layout/X;",
             ">;"
         }
     .end annotation
@@ -49,7 +49,7 @@
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/List<",
-            "Landroidx/compose/ui/layout/a1;",
+            "Landroidx/compose/ui/layout/X;",
             ">;"
         }
     .end annotation
@@ -59,7 +59,7 @@
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/List<",
-            "Landroidx/compose/ui/layout/a1;",
+            "Landroidx/compose/ui/layout/X;",
             ">;"
         }
     .end annotation
@@ -78,15 +78,15 @@
             "(",
             "Ljava/util/List<",
             "+",
-            "Landroidx/compose/ui/layout/a1;",
+            "Landroidx/compose/ui/layout/X;",
             ">;",
             "Ljava/util/List<",
             "+",
-            "Landroidx/compose/ui/layout/a1;",
+            "Landroidx/compose/ui/layout/X;",
             ">;",
             "Ljava/util/List<",
             "+",
-            "Landroidx/compose/ui/layout/a1;",
+            "Landroidx/compose/ui/layout/X;",
             ">;",
             "Lkotlin/jvm/internal/Ref$IntRef;",
             "I)V"
@@ -116,23 +116,24 @@
     .locals 0
 
     .line 1
-    check-cast p1, Landroidx/compose/ui/layout/z0;
+    check-cast p1, Landroidx/compose/ui/layout/W;
 
-    invoke-virtual {p0, p1}, Landroidx/compose/material3/TabRowKt$TabRowImpl$1$2$1$2;->invoke(Landroidx/compose/ui/layout/z0;)V
+    invoke-virtual {p0, p1}, Landroidx/compose/material3/TabRowKt$TabRowImpl$1$2$1$2;->invoke(Landroidx/compose/ui/layout/W;)V
 
-    sget-object p1, Lqh/r;->a:Lqh/r;
+    sget-object p1, LX9/j;->a:LX9/j;
 
     return-object p1
 .end method
 
-.method public final invoke(Landroidx/compose/ui/layout/z0;)V
+.method public final invoke(Landroidx/compose/ui/layout/W;)V
     .locals 7
 
+    .line 2
     iget-object v0, p0, Landroidx/compose/material3/TabRowKt$TabRowImpl$1$2$1$2;->$tabPlaceables:Ljava/util/List;
 
     iget-object v1, p0, Landroidx/compose/material3/TabRowKt$TabRowImpl$1$2$1$2;->$tabWidth:Lkotlin/jvm/internal/Ref$IntRef;
 
-    .line 2
+    .line 3
     invoke-interface {v0}, Ljava/util/List;->size()I
 
     move-result v2
@@ -144,31 +145,32 @@
     :goto_0
     if-ge v4, v2, :cond_0
 
-    .line 3
+    .line 4
     invoke-interface {v0, v4}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
     move-result-object v5
 
-    .line 4
-    check-cast v5, Landroidx/compose/ui/layout/a1;
-
     .line 5
+    check-cast v5, Landroidx/compose/ui/layout/X;
+
+    .line 6
     iget v6, v1, Lkotlin/jvm/internal/Ref$IntRef;->element:I
 
     mul-int v6, v6, v4
 
-    invoke-static {p1, v5, v6, v3}, Landroidx/compose/ui/layout/z0;->f(Landroidx/compose/ui/layout/z0;Landroidx/compose/ui/layout/a1;II)V
+    invoke-static {p1, v5, v6, v3}, Landroidx/compose/ui/layout/W;->f(Landroidx/compose/ui/layout/W;Landroidx/compose/ui/layout/X;II)V
 
     add-int/lit8 v4, v4, 0x1
 
     goto :goto_0
 
+    .line 7
     :cond_0
     iget-object v0, p0, Landroidx/compose/material3/TabRowKt$TabRowImpl$1$2$1$2;->$dividerPlaceables:Ljava/util/List;
 
     iget v1, p0, Landroidx/compose/material3/TabRowKt$TabRowImpl$1$2$1$2;->$tabRowHeight:I
 
-    .line 6
+    .line 8
     invoke-interface {v0}, Ljava/util/List;->size()I
 
     move-result v2
@@ -178,32 +180,33 @@
     :goto_1
     if-ge v4, v2, :cond_1
 
-    .line 7
+    .line 9
     invoke-interface {v0, v4}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
     move-result-object v5
 
-    .line 8
-    check-cast v5, Landroidx/compose/ui/layout/a1;
+    .line 10
+    check-cast v5, Landroidx/compose/ui/layout/X;
 
-    .line 9
-    iget v6, v5, Landroidx/compose/ui/layout/a1;->c:I
+    .line 11
+    iget v6, v5, Landroidx/compose/ui/layout/X;->c:I
 
     sub-int v6, v1, v6
 
-    .line 10
-    invoke-static {p1, v5, v3, v6}, Landroidx/compose/ui/layout/z0;->f(Landroidx/compose/ui/layout/z0;Landroidx/compose/ui/layout/a1;II)V
+    .line 12
+    invoke-static {p1, v5, v3, v6}, Landroidx/compose/ui/layout/W;->f(Landroidx/compose/ui/layout/W;Landroidx/compose/ui/layout/X;II)V
 
     add-int/lit8 v4, v4, 0x1
 
     goto :goto_1
 
+    .line 13
     :cond_1
     iget-object v0, p0, Landroidx/compose/material3/TabRowKt$TabRowImpl$1$2$1$2;->$indicatorPlaceables:Ljava/util/List;
 
     iget v1, p0, Landroidx/compose/material3/TabRowKt$TabRowImpl$1$2$1$2;->$tabRowHeight:I
 
-    .line 11
+    .line 14
     invoke-interface {v0}, Ljava/util/List;->size()I
 
     move-result v2
@@ -213,21 +216,21 @@
     :goto_2
     if-ge v4, v2, :cond_2
 
-    .line 12
+    .line 15
     invoke-interface {v0, v4}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
     move-result-object v5
 
-    .line 13
-    check-cast v5, Landroidx/compose/ui/layout/a1;
+    .line 16
+    check-cast v5, Landroidx/compose/ui/layout/X;
 
-    .line 14
-    iget v6, v5, Landroidx/compose/ui/layout/a1;->c:I
+    .line 17
+    iget v6, v5, Landroidx/compose/ui/layout/X;->c:I
 
     sub-int v6, v1, v6
 
-    .line 15
-    invoke-static {p1, v5, v3, v6}, Landroidx/compose/ui/layout/z0;->f(Landroidx/compose/ui/layout/z0;Landroidx/compose/ui/layout/a1;II)V
+    .line 18
+    invoke-static {p1, v5, v3, v6}, Landroidx/compose/ui/layout/W;->f(Landroidx/compose/ui/layout/W;Landroidx/compose/ui/layout/X;II)V
 
     add-int/lit8 v4, v4, 0x1
 

@@ -3,14 +3,14 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lzh/a;
+.implements Lka/a;
 
 
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "Lkotlin/jvm/internal/Lambda;",
-        "Lzh/a;"
+        "Lka/a;"
     }
 .end annotation
 
@@ -19,9 +19,9 @@
         "\u0000\u0008\n\u0002\u0018\u0002\n\u0002\u0008\u0003\u0010\u0003\u001a\u00020\u0000H\n\u00a2\u0006\u0004\u0008\u0001\u0010\u0002"
     }
     d2 = {
-        "Landroidx/compose/ui/text/font/l;",
+        "Landroidx/compose/ui/text/font/j;",
         "invoke",
-        "()Landroidx/compose/ui/text/font/l;",
+        "()Landroidx/compose/ui/text/font/j;",
         "<anonymous>"
     }
     k = 0x3
@@ -62,13 +62,13 @@
 
 
 # virtual methods
-.method public final invoke()Landroidx/compose/ui/text/font/l;
+.method public final invoke()Landroidx/compose/ui/text/font/j;
     .locals 1
 
+    .line 2
     const-string v0, "LocalFontFamilyResolver"
 
-    .line 2
-    invoke-static {v0}, Landroidx/compose/ui/platform/i1;->b(Ljava/lang/String;)V
+    invoke-static {v0}, Landroidx/compose/ui/platform/Z;->b(Ljava/lang/String;)V
 
     const/4 v0, 0x0
 
@@ -79,7 +79,7 @@
     .locals 1
 
     .line 1
-    invoke-virtual {p0}, Landroidx/compose/ui/platform/CompositionLocalsKt$LocalFontFamilyResolver$1;->invoke()Landroidx/compose/ui/text/font/l;
+    invoke-virtual {p0}, Landroidx/compose/ui/platform/CompositionLocalsKt$LocalFontFamilyResolver$1;->invoke()Landroidx/compose/ui/text/font/j;
 
     move-result-object v0
 

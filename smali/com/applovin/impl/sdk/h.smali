@@ -141,9 +141,9 @@
 .method private b()V
     .locals 3
 
+    .line 9
     iget-object v0, p0, Lcom/applovin/impl/sdk/h;->c:Lcom/applovin/impl/sdk/j;
 
-    .line 9
     invoke-virtual {v0}, Lcom/applovin/impl/sdk/j;->I()Lcom/applovin/impl/sdk/n;
 
     invoke-static {}, Lcom/applovin/impl/sdk/n;->a()Z
@@ -164,14 +164,15 @@
 
     invoke-virtual {v0, v1, v2}, Lcom/applovin/impl/sdk/n;->a(Ljava/lang/String;Ljava/lang/String;)V
 
+    .line 10
     :cond_0
     sget v0, Lcom/applovin/impl/sdk/h;->i:I
 
     iput v0, p0, Lcom/applovin/impl/sdk/h;->h:I
 
+    .line 11
     iget-object v0, p0, Lcom/applovin/impl/sdk/h;->b:Landroid/content/Context;
 
-    .line 10
     new-instance v1, Landroid/content/IntentFilter;
 
     const-string v2, "android.media.RINGER_MODE_CHANGED"
@@ -180,7 +181,7 @@
 
     invoke-virtual {v0, p0, v1}, Landroid/content/Context;->registerReceiver(Landroid/content/BroadcastReceiver;Landroid/content/IntentFilter;)Landroid/content/Intent;
 
-    .line 11
+    .line 12
     new-instance v0, Landroid/content/IntentFilter;
 
     const-string v1, "com.applovin.application_paused"
@@ -189,7 +190,7 @@
 
     invoke-static {p0, v0}, Lcom/applovin/impl/sdk/AppLovinBroadcastManager;->registerReceiver(Lcom/applovin/impl/sdk/AppLovinBroadcastManager$Receiver;Landroid/content/IntentFilter;)V
 
-    .line 12
+    .line 13
     new-instance v0, Landroid/content/IntentFilter;
 
     const-string v1, "com.applovin.application_resumed"
@@ -204,16 +205,17 @@
 .method private b(I)V
     .locals 5
 
+    .line 14
     iget-boolean v0, p0, Lcom/applovin/impl/sdk/h;->g:Z
 
     if-eqz v0, :cond_0
 
     return-void
 
+    .line 15
     :cond_0
     iget-object v0, p0, Lcom/applovin/impl/sdk/h;->c:Lcom/applovin/impl/sdk/j;
 
-    .line 13
     invoke-virtual {v0}, Lcom/applovin/impl/sdk/j;->I()Lcom/applovin/impl/sdk/n;
 
     invoke-static {}, Lcom/applovin/impl/sdk/n;->a()Z
@@ -244,16 +246,16 @@
 
     invoke-virtual {v0, v2, v1}, Lcom/applovin/impl/sdk/n;->a(Ljava/lang/String;Ljava/lang/String;)V
 
+    .line 16
     :cond_1
     iget-object v0, p0, Lcom/applovin/impl/sdk/h;->f:Ljava/lang/Object;
 
-    .line 14
     monitor-enter v0
 
+    .line 17
     :try_start_0
     iget-object v1, p0, Lcom/applovin/impl/sdk/h;->d:Ljava/util/Set;
 
-    .line 15
     invoke-interface {v1}, Ljava/util/Set;->iterator()Ljava/util/Iterator;
 
     move-result-object v1
@@ -271,12 +273,12 @@
 
     check-cast v2, Lcom/applovin/impl/sdk/h$a;
 
-    .line 16
-    new-instance v3, Ls/k;
+    .line 18
+    new-instance v3, LE6/c;
 
-    const/16 v4, 0x8
+    const/4 v4, 0x5
 
-    invoke-direct {v3, v2, p1, v4}, Ls/k;-><init>(Ljava/lang/Object;II)V
+    invoke-direct {v3, v2, p1, v4}, LE6/c;-><init>(Ljava/lang/Object;II)V
 
     invoke-static {v3}, Lcom/applovin/sdk/AppLovinSdkUtils;->runOnUiThread(Ljava/lang/Runnable;)V
 
@@ -287,13 +289,13 @@
 
     goto :goto_1
 
-    .line 17
+    .line 19
     :cond_2
     monitor-exit v0
 
     return-void
 
-    .line 18
+    .line 20
     :goto_1
     monitor-exit v0
     :try_end_0
@@ -384,9 +386,9 @@
 .method public a()I
     .locals 1
 
+    .line 2
     iget-object v0, p0, Lcom/applovin/impl/sdk/h;->a:Landroid/media/AudioManager;
 
-    .line 2
     invoke-virtual {v0}, Landroid/media/AudioManager;->getRingerMode()I
 
     move-result v0
@@ -397,15 +399,15 @@
 .method public a(Lcom/applovin/impl/sdk/h$a;)V
     .locals 2
 
+    .line 3
     iget-object v0, p0, Lcom/applovin/impl/sdk/h;->f:Ljava/lang/Object;
 
-    .line 3
     monitor-enter v0
 
+    .line 4
     :try_start_0
     iget-object v1, p0, Lcom/applovin/impl/sdk/h;->d:Ljava/util/Set;
 
-    .line 4
     invoke-interface {v1, p1}, Ljava/util/Set;->contains(Ljava/lang/Object;)Z
 
     move-result v1
@@ -421,15 +423,15 @@
 
     goto :goto_0
 
+    .line 5
     :cond_0
     iget-object v1, p0, Lcom/applovin/impl/sdk/h;->d:Ljava/util/Set;
 
-    .line 5
     invoke-interface {v1, p1}, Ljava/util/Set;->add(Ljava/lang/Object;)Z
 
+    .line 6
     iget-object p1, p0, Lcom/applovin/impl/sdk/h;->d:Ljava/util/Set;
 
-    .line 6
     invoke-interface {p1}, Ljava/util/Set;->size()I
 
     move-result p1
@@ -459,15 +461,15 @@
 .method public b(Lcom/applovin/impl/sdk/h$a;)V
     .locals 2
 
+    .line 2
     iget-object v0, p0, Lcom/applovin/impl/sdk/h;->f:Ljava/lang/Object;
 
-    .line 2
     monitor-enter v0
 
+    .line 3
     :try_start_0
     iget-object v1, p0, Lcom/applovin/impl/sdk/h;->d:Ljava/util/Set;
 
-    .line 3
     invoke-interface {v1, p1}, Ljava/util/Set;->contains(Ljava/lang/Object;)Z
 
     move-result v1
@@ -483,15 +485,15 @@
 
     goto :goto_0
 
+    .line 4
     :cond_0
     iget-object v1, p0, Lcom/applovin/impl/sdk/h;->d:Ljava/util/Set;
 
-    .line 4
     invoke-interface {v1, p1}, Ljava/util/Set;->remove(Ljava/lang/Object;)Z
 
+    .line 5
     iget-object p1, p0, Lcom/applovin/impl/sdk/h;->d:Ljava/util/Set;
 
-    .line 5
     invoke-interface {p1}, Ljava/util/Set;->isEmpty()Z
 
     move-result p1
@@ -532,9 +534,9 @@
 
     if-eqz p1, :cond_0
 
+    .line 2
     iget-object p1, p0, Lcom/applovin/impl/sdk/h;->a:Landroid/media/AudioManager;
 
-    .line 2
     invoke-virtual {p1}, Landroid/media/AudioManager;->getRingerMode()I
 
     move-result p1
@@ -553,9 +555,9 @@
 
     move-result-object p1
 
+    .line 4
     const-string p2, "com.applovin.application_paused"
 
-    .line 4
     invoke-virtual {p2, p1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
     move-result p2
@@ -564,11 +566,12 @@
 
     const/4 p1, 0x1
 
+    .line 5
     iput-boolean p1, p0, Lcom/applovin/impl/sdk/h;->g:Z
 
+    .line 6
     iget-object p1, p0, Lcom/applovin/impl/sdk/h;->a:Landroid/media/AudioManager;
 
-    .line 5
     invoke-virtual {p1}, Landroid/media/AudioManager;->getRingerMode()I
 
     move-result p1
@@ -577,10 +580,10 @@
 
     goto :goto_0
 
+    .line 7
     :cond_0
     const-string p2, "com.applovin.application_resumed"
 
-    .line 6
     invoke-virtual {p2, p1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
     move-result p1
@@ -589,26 +592,28 @@
 
     const/4 p1, 0x0
 
+    .line 8
     iput-boolean p1, p0, Lcom/applovin/impl/sdk/h;->g:Z
 
+    .line 9
     iget p1, p0, Lcom/applovin/impl/sdk/h;->h:I
 
     iget-object p2, p0, Lcom/applovin/impl/sdk/h;->a:Landroid/media/AudioManager;
 
-    .line 7
     invoke-virtual {p2}, Landroid/media/AudioManager;->getRingerMode()I
 
     move-result p2
 
     if-eq p1, p2, :cond_1
 
+    .line 10
     sget p1, Lcom/applovin/impl/sdk/h;->i:I
 
     iput p1, p0, Lcom/applovin/impl/sdk/h;->h:I
 
+    .line 11
     iget-object p1, p0, Lcom/applovin/impl/sdk/h;->a:Landroid/media/AudioManager;
 
-    .line 8
     invoke-virtual {p1}, Landroid/media/AudioManager;->getRingerMode()I
 
     move-result p1

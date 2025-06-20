@@ -56,7 +56,7 @@
 
     .line 6
     .line 7
-    invoke-static {v0}, Lcom/applovin/mediation/ApplovinAdapter;->access$500(Lcom/applovin/mediation/ApplovinAdapter;)Lv9/s;
+    invoke-static {v0}, Lcom/applovin/mediation/ApplovinAdapter;->access$500(Lcom/applovin/mediation/ApplovinAdapter;)Lo5/s;
 
     .line 8
     .line 9
@@ -76,11 +76,11 @@
 
     .line 16
     .line 17
-    check-cast v0, Lcom/google/android/gms/internal/ads/i6;
+    check-cast v0, Lcom/google/android/gms/internal/ads/Wa;
 
     .line 18
     .line 19
-    invoke-virtual {v0}, Lcom/google/android/gms/internal/ads/i6;->m()V
+    invoke-virtual {v0}, Lcom/google/android/gms/internal/ads/Wa;->l()V
 
     .line 20
     .line 21

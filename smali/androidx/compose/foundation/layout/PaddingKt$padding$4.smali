@@ -3,14 +3,14 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lzh/c;
+.implements Lka/c;
 
 
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "Lkotlin/jvm/internal/Lambda;",
-        "Lzh/c;"
+        "Lka/c;"
     }
 .end annotation
 
@@ -19,10 +19,10 @@
         "\u0000\u000c\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0008\u0003\u0010\u0004\u001a\u00020\u0001*\u00020\u0000H\n\u00a2\u0006\u0004\u0008\u0002\u0010\u0003"
     }
     d2 = {
-        "Landroidx/compose/ui/platform/w1;",
-        "Lqh/r;",
+        "Landroidx/compose/ui/platform/m0;",
+        "LX9/j;",
         "invoke",
-        "(Landroidx/compose/ui/platform/w1;)V",
+        "(Landroidx/compose/ui/platform/m0;)V",
         "<anonymous>"
     }
     k = 0x3
@@ -35,14 +35,14 @@
 
 
 # instance fields
-.field final synthetic $paddingValues:Landroidx/compose/foundation/layout/p0;
+.field final synthetic $paddingValues:Landroidx/compose/foundation/layout/M;
 
 
 # direct methods
-.method public constructor <init>(Landroidx/compose/foundation/layout/p0;)V
+.method public constructor <init>(Landroidx/compose/foundation/layout/M;)V
     .locals 0
 
-    iput-object p1, p0, Landroidx/compose/foundation/layout/PaddingKt$padding$4;->$paddingValues:Landroidx/compose/foundation/layout/p0;
+    iput-object p1, p0, Landroidx/compose/foundation/layout/PaddingKt$padding$4;->$paddingValues:Landroidx/compose/foundation/layout/M;
 
     const/4 p1, 0x1
 
@@ -57,18 +57,18 @@
     .locals 0
 
     .line 1
-    invoke-static {p1}, Landroid/support/v4/media/session/a;->P(Ljava/lang/Object;)V
+    invoke-static {p1}, Landroidx/appcompat/view/menu/F;->O(Ljava/lang/Object;)V
 
     const/4 p1, 0x0
 
-    invoke-virtual {p0, p1}, Landroidx/compose/foundation/layout/PaddingKt$padding$4;->invoke(Landroidx/compose/ui/platform/w1;)V
+    invoke-virtual {p0, p1}, Landroidx/compose/foundation/layout/PaddingKt$padding$4;->invoke(Landroidx/compose/ui/platform/m0;)V
 
-    sget-object p1, Lqh/r;->a:Lqh/r;
+    sget-object p1, LX9/j;->a:LX9/j;
 
     return-object p1
 .end method
 
-.method public final invoke(Landroidx/compose/ui/platform/w1;)V
+.method public final invoke(Landroidx/compose/ui/platform/m0;)V
     .locals 0
 
     const/4 p1, 0x0

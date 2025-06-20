@@ -3,14 +3,14 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lzh/c;
+.implements Lka/c;
 
 
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "Lkotlin/jvm/internal/Lambda;",
-        "Lzh/c;"
+        "Lka/c;"
     }
 .end annotation
 
@@ -21,9 +21,9 @@
     d2 = {
         "",
         "it",
-        "Ld2/c;",
+        "LI0/b;",
         "invoke",
-        "(Ljava/lang/Object;)Ld2/c;",
+        "(Ljava/lang/Object;)LI0/b;",
         "<anonymous>"
     }
     k = 0x3
@@ -64,7 +64,7 @@
 
 
 # virtual methods
-.method public final invoke(Ljava/lang/Object;)Ld2/c;
+.method public final invoke(Ljava/lang/Object;)LI0/b;
     .locals 7
 
     .line 2
@@ -95,12 +95,12 @@
     move-result-object v3
 
     .line 6
-    sget-object v4, Landroidx/compose/ui/text/z;->v:Landroidx/compose/runtime/saveable/l;
-
-    sget-object v5, Ljava/lang/Boolean;->FALSE:Ljava/lang/Boolean;
+    sget-object v4, Landroidx/compose/ui/text/z;->v:LB2/c;
 
     .line 7
-    invoke-static {v3, v5}, Lrb/h;->d(Ljava/lang/Object;Ljava/lang/Object;)Z
+    sget-object v5, Ljava/lang/Boolean;->FALSE:Ljava/lang/Boolean;
+
+    invoke-static {v3, v5}, Lkotlin/jvm/internal/h;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result v5
 
@@ -108,27 +108,25 @@
 
     if-eqz v5, :cond_0
 
-    instance-of v5, v4, Landroidx/compose/ui/text/y;
-
-    if-nez v5, :cond_0
-
     goto :goto_1
 
     :cond_0
     if-eqz v3, :cond_1
 
     .line 8
-    iget-object v4, v4, Landroidx/compose/runtime/saveable/l;->b:Lzh/c;
+    iget-object v4, v4, LB2/c;->d:Ljava/lang/Object;
+
+    check-cast v4, Lka/c;
 
     .line 9
-    invoke-interface {v4, v3}, Lzh/c;->invoke(Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-interface {v4, v3}, Lka/c;->invoke(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object v3
 
     .line 10
     move-object v6, v3
 
-    check-cast v6, Ld2/b;
+    check-cast v6, LI0/a;
 
     .line 11
     :cond_1
@@ -141,9 +139,9 @@
 
     .line 12
     :cond_2
-    new-instance p1, Ld2/c;
+    new-instance p1, LI0/b;
 
-    invoke-direct {p1, v0}, Ld2/c;-><init>(Ljava/util/List;)V
+    invoke-direct {p1, v0}, LI0/b;-><init>(Ljava/util/List;)V
 
     return-object p1
 .end method
@@ -152,7 +150,7 @@
     .locals 0
 
     .line 1
-    invoke-virtual {p0, p1}, Landroidx/compose/ui/text/SaversKt$LocaleListSaver$2;->invoke(Ljava/lang/Object;)Ld2/c;
+    invoke-virtual {p0, p1}, Landroidx/compose/ui/text/SaversKt$LocaleListSaver$2;->invoke(Ljava/lang/Object;)LI0/b;
 
     move-result-object p1
 

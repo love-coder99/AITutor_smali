@@ -3,14 +3,14 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lzh/c;
+.implements Lka/c;
 
 
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "Lkotlin/jvm/internal/Lambda;",
-        "Lzh/c;"
+        "Lka/c;"
     }
 .end annotation
 
@@ -21,10 +21,10 @@
     d2 = {
         "Ljava/lang/Void;",
         "it",
-        "Lcom/google/common/util/concurrent/c;",
+        "Lcom/google/common/util/concurrent/d;",
         "kotlin.jvm.PlatformType",
         "invoke",
-        "(Ljava/lang/Void;)Lcom/google/common/util/concurrent/c;",
+        "(Ljava/lang/Void;)Lcom/google/common/util/concurrent/d;",
         "<anonymous>"
     }
     k = 0x3
@@ -55,20 +55,21 @@
 
 
 # virtual methods
-.method public final invoke(Ljava/lang/Void;)Lcom/google/common/util/concurrent/c;
+.method public final invoke(Ljava/lang/Void;)Lcom/google/common/util/concurrent/d;
     .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
             "Ljava/lang/Void;",
             ")",
-            "Lcom/google/common/util/concurrent/c;"
+            "Lcom/google/common/util/concurrent/d;"
         }
     .end annotation
 
+    .line 2
     iget-object p1, p0, Landroidx/camera/lifecycle/ProcessCameraProvider$getOrCreateCameraXInstance$1$1$1$future$1;->$cameraX:Landroidx/camera/core/b;
 
-    .line 1
+    .line 3
     iget-object p1, p1, Landroidx/camera/core/b;->j:Landroidx/concurrent/futures/k;
 
     return-object p1
@@ -77,10 +78,10 @@
 .method public bridge synthetic invoke(Ljava/lang/Object;)Ljava/lang/Object;
     .locals 0
 
-    .line 2
+    .line 1
     check-cast p1, Ljava/lang/Void;
 
-    invoke-virtual {p0, p1}, Landroidx/camera/lifecycle/ProcessCameraProvider$getOrCreateCameraXInstance$1$1$1$future$1;->invoke(Ljava/lang/Void;)Lcom/google/common/util/concurrent/c;
+    invoke-virtual {p0, p1}, Landroidx/camera/lifecycle/ProcessCameraProvider$getOrCreateCameraXInstance$1$1$1$future$1;->invoke(Ljava/lang/Void;)Lcom/google/common/util/concurrent/d;
 
     move-result-object p1
 

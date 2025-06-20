@@ -1,32 +1,32 @@
-.class public final Landroidx/appcompat/view/menu/g;
-.super Ljava/lang/Object;
+.class public Landroidx/appcompat/view/menu/G;
+.super Landroidx/appcompat/view/menu/n;
 .source "SourceFile"
 
 # interfaces
-.implements Landroid/view/View$OnAttachStateChangeListener;
+.implements Landroid/view/SubMenu;
 
 
 # instance fields
-.field public final synthetic b:I
+.field public final B:Landroidx/appcompat/view/menu/n;
 
-.field public final synthetic c:Ljava/lang/Object;
+.field public final C:Landroidx/appcompat/view/menu/p;
 
 
 # direct methods
-.method public synthetic constructor <init>(Ljava/lang/Object;I)V
+.method public constructor <init>(Landroid/content/Context;Landroidx/appcompat/view/menu/n;Landroidx/appcompat/view/menu/p;)V
     .locals 0
 
     .line 1
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    invoke-direct {p0, p1}, Landroidx/appcompat/view/menu/n;-><init>(Landroid/content/Context;)V
 
     .line 2
     .line 3
     .line 4
-    iput p2, p0, Landroidx/appcompat/view/menu/g;->b:I
+    iput-object p2, p0, Landroidx/appcompat/view/menu/G;->B:Landroidx/appcompat/view/menu/n;
 
     .line 5
     .line 6
-    iput-object p1, p0, Landroidx/appcompat/view/menu/g;->c:Ljava/lang/Object;
+    iput-object p3, p0, Landroidx/appcompat/view/menu/G;->C:Landroidx/appcompat/view/menu/p;
 
     .line 7
     .line 8
@@ -35,479 +35,396 @@
 
 
 # virtual methods
-.method public final onViewAttachedToWindow(Landroid/view/View;)V
-    .locals 2
+.method public final d(Landroidx/appcompat/view/menu/p;)Z
+    .locals 1
 
     .line 1
-    iget v0, p0, Landroidx/appcompat/view/menu/g;->b:I
+    iget-object v0, p0, Landroidx/appcompat/view/menu/G;->B:Landroidx/appcompat/view/menu/n;
 
     .line 2
     .line 3
-    iget-object v1, p0, Landroidx/appcompat/view/menu/g;->c:Ljava/lang/Object;
+    invoke-virtual {v0, p1}, Landroidx/appcompat/view/menu/n;->d(Landroidx/appcompat/view/menu/p;)Z
 
     .line 4
     .line 5
-    packed-switch v0, :pswitch_data_0
-
     .line 6
+    move-result p1
+
     .line 7
-    .line 8
-    invoke-virtual {p1}, Landroid/view/View;->getViewTreeObserver()Landroid/view/ViewTreeObserver;
-
-    .line 9
-    .line 10
-    .line 11
-    move-result-object v0
-
-    .line 12
-    check-cast v1, Lcom/google/firebase/perf/util/b;
-
-    .line 13
-    .line 14
-    invoke-virtual {v0, v1}, Landroid/view/ViewTreeObserver;->addOnDrawListener(Landroid/view/ViewTreeObserver$OnDrawListener;)V
-
-    .line 15
-    .line 16
-    .line 17
-    invoke-virtual {p1, p0}, Landroid/view/View;->removeOnAttachStateChangeListener(Landroid/view/View$OnAttachStateChangeListener;)V
-
-    .line 18
-    .line 19
-    .line 20
-    return-void
-
-    .line 21
-    :pswitch_0
-    check-cast v1, Lcom/google/android/material/textfield/m;
-
-    .line 22
-    .line 23
-    sget p1, Lcom/google/android/material/textfield/m;->y:I
-
-    .line 24
-    .line 25
-    iget-object p1, v1, Lcom/google/android/material/textfield/m;->w:Ln3/b;
-
-    .line 26
-    .line 27
-    if-eqz p1, :cond_0
-
-    .line 28
-    .line 29
-    iget-object p1, v1, Lcom/google/android/material/textfield/m;->v:Landroid/view/accessibility/AccessibilityManager;
-
-    .line 30
-    .line 31
-    if-eqz p1, :cond_0
-
-    .line 32
-    .line 33
-    sget-object v0, Landroidx/core/view/y0;->a:Ljava/util/WeakHashMap;
-
-    .line 34
-    .line 35
-    invoke-virtual {v1}, Landroid/view/View;->isAttachedToWindow()Z
-
-    .line 36
-    .line 37
-    .line 38
-    move-result v0
-
-    .line 39
-    if-eqz v0, :cond_0
-
-    .line 40
-    .line 41
-    iget-object v0, v1, Lcom/google/android/material/textfield/m;->w:Ln3/b;
-
-    .line 42
-    .line 43
-    new-instance v1, Ln3/c;
-
-    .line 44
-    .line 45
-    invoke-direct {v1, v0}, Ln3/c;-><init>(Ln3/b;)V
-
-    .line 46
-    .line 47
-    .line 48
-    invoke-virtual {p1, v1}, Landroid/view/accessibility/AccessibilityManager;->addTouchExplorationStateChangeListener(Landroid/view/accessibility/AccessibilityManager$TouchExplorationStateChangeListener;)Z
-
-    .line 49
-    .line 50
-    .line 51
-    :cond_0
-    return-void
-
-    .line 52
-    :pswitch_1
-    check-cast v1, Lcom/google/android/material/search/SearchBar;
-
-    .line 53
-    .line 54
-    iget-object p1, v1, Lcom/google/android/material/search/SearchBar;->p:Landroid/view/accessibility/AccessibilityManager;
-
-    .line 55
-    .line 56
-    new-instance v0, Ln3/c;
-
-    .line 57
-    .line 58
-    iget-object v1, v1, Lcom/google/android/material/search/SearchBar;->q:Le9/g;
-
-    .line 59
-    .line 60
-    invoke-direct {v0, v1}, Ln3/c;-><init>(Ln3/b;)V
-
-    .line 61
-    .line 62
-    .line 63
-    invoke-virtual {p1, v0}, Landroid/view/accessibility/AccessibilityManager;->addTouchExplorationStateChangeListener(Landroid/view/accessibility/AccessibilityManager$TouchExplorationStateChangeListener;)Z
-
-    .line 64
-    .line 65
-    .line 66
-    :pswitch_2
-    return-void
-
-    .line 67
-    :pswitch_3
-    check-cast v1, Landroidx/compose/ui/platform/f0;
-
-    .line 68
-    .line 69
-    iget-object p1, v1, Landroidx/compose/ui/platform/f0;->g:Landroid/view/accessibility/AccessibilityManager;
-
-    .line 70
-    .line 71
-    iget-object v0, v1, Landroidx/compose/ui/platform/f0;->i:Landroidx/compose/ui/platform/t;
-
-    .line 72
-    .line 73
-    invoke-virtual {p1, v0}, Landroid/view/accessibility/AccessibilityManager;->addAccessibilityStateChangeListener(Landroid/view/accessibility/AccessibilityManager$AccessibilityStateChangeListener;)Z
-
-    .line 74
-    .line 75
-    .line 76
-    iget-object v0, v1, Landroidx/compose/ui/platform/f0;->j:Landroidx/compose/ui/platform/u;
-
-    .line 77
-    .line 78
-    invoke-virtual {p1, v0}, Landroid/view/accessibility/AccessibilityManager;->addTouchExplorationStateChangeListener(Landroid/view/accessibility/AccessibilityManager$TouchExplorationStateChangeListener;)Z
-
-    .line 79
-    .line 80
-    .line 81
-    :pswitch_4
-    return-void
-
-    .line 82
-    nop
-
-    .line 83
-    :pswitch_data_0
-    .packed-switch 0x0
-        :pswitch_4
-        :pswitch_4
-        :pswitch_3
-        :pswitch_2
-        :pswitch_1
-        :pswitch_0
-    .end packed-switch
+    return p1
 .end method
 
-.method public final onViewDetachedFromWindow(Landroid/view/View;)V
-    .locals 2
+.method public final e(Landroidx/appcompat/view/menu/n;Landroid/view/MenuItem;)Z
+    .locals 1
 
     .line 1
-    iget v0, p0, Landroidx/appcompat/view/menu/g;->b:I
+    invoke-super {p0, p1, p2}, Landroidx/appcompat/view/menu/n;->e(Landroidx/appcompat/view/menu/n;Landroid/view/MenuItem;)Z
 
     .line 2
     .line 3
-    iget-object v1, p0, Landroidx/appcompat/view/menu/g;->c:Ljava/lang/Object;
-
     .line 4
+    move-result v0
+
     .line 5
-    packed-switch v0, :pswitch_data_0
+    if-nez v0, :cond_1
 
     .line 6
     .line 7
-    .line 8
-    invoke-virtual {p1, p0}, Landroid/view/View;->removeOnAttachStateChangeListener(Landroid/view/View$OnAttachStateChangeListener;)V
+    iget-object v0, p0, Landroidx/appcompat/view/menu/G;->B:Landroidx/appcompat/view/menu/n;
 
+    .line 8
     .line 9
+    invoke-virtual {v0, p1, p2}, Landroidx/appcompat/view/menu/n;->e(Landroidx/appcompat/view/menu/n;Landroid/view/MenuItem;)Z
+
     .line 10
     .line 11
-    return-void
-
     .line 12
-    :pswitch_0
-    check-cast v1, Lcom/google/android/material/textfield/m;
+    move-result p1
 
     .line 13
-    .line 14
-    sget p1, Lcom/google/android/material/textfield/m;->y:I
-
-    .line 15
-    .line 16
-    iget-object p1, v1, Lcom/google/android/material/textfield/m;->w:Ln3/b;
-
-    .line 17
-    .line 18
     if-eqz p1, :cond_0
 
-    .line 19
-    .line 20
-    iget-object v0, v1, Lcom/google/android/material/textfield/m;->v:Landroid/view/accessibility/AccessibilityManager;
+    .line 14
+    .line 15
+    goto :goto_0
 
-    .line 21
-    .line 22
-    if-eqz v0, :cond_0
-
-    .line 23
-    .line 24
-    new-instance v1, Ln3/c;
-
-    .line 25
-    .line 26
-    invoke-direct {v1, p1}, Ln3/c;-><init>(Ln3/b;)V
-
-    .line 27
-    .line 28
-    .line 29
-    invoke-virtual {v0, v1}, Landroid/view/accessibility/AccessibilityManager;->removeTouchExplorationStateChangeListener(Landroid/view/accessibility/AccessibilityManager$TouchExplorationStateChangeListener;)Z
-
-    .line 30
-    .line 31
-    .line 32
+    .line 16
     :cond_0
-    return-void
-
-    .line 33
-    :pswitch_1
-    check-cast v1, Lcom/google/android/material/search/SearchBar;
-
-    .line 34
-    .line 35
-    iget-object p1, v1, Lcom/google/android/material/search/SearchBar;->p:Landroid/view/accessibility/AccessibilityManager;
-
-    .line 36
-    .line 37
-    new-instance v0, Ln3/c;
-
-    .line 38
-    .line 39
-    iget-object v1, v1, Lcom/google/android/material/search/SearchBar;->q:Le9/g;
-
-    .line 40
-    .line 41
-    invoke-direct {v0, v1}, Ln3/c;-><init>(Ln3/b;)V
-
-    .line 42
-    .line 43
-    .line 44
-    invoke-virtual {p1, v0}, Landroid/view/accessibility/AccessibilityManager;->removeTouchExplorationStateChangeListener(Landroid/view/accessibility/AccessibilityManager$TouchExplorationStateChangeListener;)Z
-
-    .line 45
-    .line 46
-    .line 47
-    return-void
-
-    .line 48
-    :pswitch_2
-    invoke-virtual {p1, p0}, Landroid/view/View;->removeOnAttachStateChangeListener(Landroid/view/View$OnAttachStateChangeListener;)V
-
-    .line 49
-    .line 50
-    .line 51
-    check-cast v1, Lkotlinx/coroutines/z0;
-
-    .line 52
-    .line 53
     const/4 p1, 0x0
 
-    .line 54
-    invoke-interface {v1, p1}, Lkotlinx/coroutines/z0;->a(Ljava/util/concurrent/CancellationException;)V
+    .line 17
+    goto :goto_1
 
-    .line 55
-    .line 56
-    .line 57
-    return-void
+    .line 18
+    :cond_1
+    :goto_0
+    const/4 p1, 0x1
 
-    .line 58
-    :pswitch_3
-    check-cast v1, Landroidx/compose/ui/platform/f0;
+    .line 19
+    :goto_1
+    return p1
+.end method
 
-    .line 59
-    .line 60
-    iget-object p1, v1, Landroidx/compose/ui/platform/f0;->l:Landroid/os/Handler;
+.method public final f(Landroidx/appcompat/view/menu/p;)Z
+    .locals 1
 
-    .line 61
-    .line 62
-    iget-object v0, v1, Landroidx/compose/ui/platform/f0;->K:Landroidx/compose/ui/platform/q;
+    .line 1
+    iget-object v0, p0, Landroidx/appcompat/view/menu/G;->B:Landroidx/appcompat/view/menu/n;
 
-    .line 63
-    .line 64
-    invoke-virtual {p1, v0}, Landroid/os/Handler;->removeCallbacks(Ljava/lang/Runnable;)V
+    .line 2
+    .line 3
+    invoke-virtual {v0, p1}, Landroidx/appcompat/view/menu/n;->f(Landroidx/appcompat/view/menu/p;)Z
 
-    .line 65
-    .line 66
-    .line 67
-    iget-object p1, v1, Landroidx/compose/ui/platform/f0;->g:Landroid/view/accessibility/AccessibilityManager;
+    .line 4
+    .line 5
+    .line 6
+    move-result p1
 
-    .line 68
-    .line 69
-    iget-object v0, v1, Landroidx/compose/ui/platform/f0;->i:Landroidx/compose/ui/platform/t;
+    .line 7
+    return p1
+.end method
 
-    .line 70
-    .line 71
-    invoke-virtual {p1, v0}, Landroid/view/accessibility/AccessibilityManager;->removeAccessibilityStateChangeListener(Landroid/view/accessibility/AccessibilityManager$AccessibilityStateChangeListener;)Z
+.method public final getItem()Landroid/view/MenuItem;
+    .locals 1
 
-    .line 72
-    .line 73
-    .line 74
-    iget-object v0, v1, Landroidx/compose/ui/platform/f0;->j:Landroidx/compose/ui/platform/u;
+    .line 1
+    iget-object v0, p0, Landroidx/appcompat/view/menu/G;->C:Landroidx/appcompat/view/menu/p;
 
-    .line 75
-    .line 76
-    invoke-virtual {p1, v0}, Landroid/view/accessibility/AccessibilityManager;->removeTouchExplorationStateChangeListener(Landroid/view/accessibility/AccessibilityManager$TouchExplorationStateChangeListener;)Z
+    .line 2
+    .line 3
+    return-object v0
+.end method
 
-    .line 77
-    .line 78
-    .line 79
-    return-void
+.method public final j()Ljava/lang/String;
+    .locals 2
 
-    .line 80
-    :pswitch_4
-    check-cast v1, Landroidx/appcompat/view/menu/g0;
+    .line 1
+    iget-object v0, p0, Landroidx/appcompat/view/menu/G;->C:Landroidx/appcompat/view/menu/p;
 
-    .line 81
-    .line 82
-    iget-object v0, v1, Landroidx/appcompat/view/menu/g0;->r:Landroid/view/ViewTreeObserver;
+    .line 2
+    .line 3
+    if-eqz v0, :cond_0
 
-    .line 83
-    .line 84
-    if-eqz v0, :cond_2
+    .line 4
+    .line 5
+    iget v0, v0, Landroidx/appcompat/view/menu/p;->b:I
 
-    .line 85
-    .line 86
-    invoke-virtual {v0}, Landroid/view/ViewTreeObserver;->isAlive()Z
+    .line 6
+    .line 7
+    goto :goto_0
 
-    .line 87
-    .line 88
-    .line 89
-    move-result v0
+    .line 8
+    :cond_0
+    const/4 v0, 0x0
 
-    .line 90
+    .line 9
+    :goto_0
     if-nez v0, :cond_1
 
-    .line 91
-    .line 92
-    invoke-virtual {p1}, Landroid/view/View;->getViewTreeObserver()Landroid/view/ViewTreeObserver;
+    .line 10
+    .line 11
+    const/4 v0, 0x0
 
-    .line 93
-    .line 94
-    .line 95
+    .line 12
+    return-object v0
+
+    .line 13
+    :cond_1
+    const-string v1, "android:menu:actionviewstates:"
+
+    .line 14
+    .line 15
+    invoke-static {v0, v1}, Landroidx/appcompat/view/menu/F;->D(ILjava/lang/String;)Ljava/lang/String;
+
+    .line 16
+    .line 17
+    .line 18
     move-result-object v0
 
-    .line 96
-    iput-object v0, v1, Landroidx/appcompat/view/menu/g0;->r:Landroid/view/ViewTreeObserver;
+    .line 19
+    return-object v0
+.end method
 
-    .line 97
-    .line 98
-    :cond_1
-    iget-object v0, v1, Landroidx/appcompat/view/menu/g0;->r:Landroid/view/ViewTreeObserver;
+.method public final k()Landroidx/appcompat/view/menu/n;
+    .locals 1
 
-    .line 99
-    .line 100
-    iget-object v1, v1, Landroidx/appcompat/view/menu/g0;->l:Landroidx/appcompat/view/menu/f;
+    .line 1
+    iget-object v0, p0, Landroidx/appcompat/view/menu/G;->B:Landroidx/appcompat/view/menu/n;
 
-    .line 101
-    .line 102
-    invoke-virtual {v0, v1}, Landroid/view/ViewTreeObserver;->removeGlobalOnLayoutListener(Landroid/view/ViewTreeObserver$OnGlobalLayoutListener;)V
+    .line 2
+    .line 3
+    invoke-virtual {v0}, Landroidx/appcompat/view/menu/n;->k()Landroidx/appcompat/view/menu/n;
 
-    .line 103
-    .line 104
-    .line 105
-    :cond_2
-    invoke-virtual {p1, p0}, Landroid/view/View;->removeOnAttachStateChangeListener(Landroid/view/View$OnAttachStateChangeListener;)V
+    .line 4
+    .line 5
+    .line 6
+    move-result-object v0
 
-    .line 106
-    .line 107
-    .line 108
-    return-void
+    .line 7
+    return-object v0
+.end method
 
-    .line 109
-    :pswitch_5
-    check-cast v1, Landroidx/appcompat/view/menu/j;
+.method public final m()Z
+    .locals 1
 
-    .line 110
-    .line 111
-    iget-object v0, v1, Landroidx/appcompat/view/menu/j;->A:Landroid/view/ViewTreeObserver;
+    .line 1
+    iget-object v0, p0, Landroidx/appcompat/view/menu/G;->B:Landroidx/appcompat/view/menu/n;
 
-    .line 112
-    .line 113
-    if-eqz v0, :cond_4
+    .line 2
+    .line 3
+    invoke-virtual {v0}, Landroidx/appcompat/view/menu/n;->m()Z
 
-    .line 114
-    .line 115
-    invoke-virtual {v0}, Landroid/view/ViewTreeObserver;->isAlive()Z
-
-    .line 116
-    .line 117
-    .line 118
+    .line 4
+    .line 5
+    .line 6
     move-result v0
 
-    .line 119
-    if-nez v0, :cond_3
+    .line 7
+    return v0
+.end method
 
-    .line 120
-    .line 121
-    invoke-virtual {p1}, Landroid/view/View;->getViewTreeObserver()Landroid/view/ViewTreeObserver;
+.method public final n()Z
+    .locals 1
 
-    .line 122
-    .line 123
-    .line 124
-    move-result-object v0
+    .line 1
+    iget-object v0, p0, Landroidx/appcompat/view/menu/G;->B:Landroidx/appcompat/view/menu/n;
 
-    .line 125
-    iput-object v0, v1, Landroidx/appcompat/view/menu/j;->A:Landroid/view/ViewTreeObserver;
+    .line 2
+    .line 3
+    invoke-virtual {v0}, Landroidx/appcompat/view/menu/n;->n()Z
 
-    .line 126
-    .line 127
-    :cond_3
-    iget-object v0, v1, Landroidx/appcompat/view/menu/j;->A:Landroid/view/ViewTreeObserver;
+    .line 4
+    .line 5
+    .line 6
+    move-result v0
 
-    .line 128
-    .line 129
-    iget-object v1, v1, Landroidx/appcompat/view/menu/j;->l:Landroidx/appcompat/view/menu/f;
+    .line 7
+    return v0
+.end method
 
-    .line 130
-    .line 131
-    invoke-virtual {v0, v1}, Landroid/view/ViewTreeObserver;->removeGlobalOnLayoutListener(Landroid/view/ViewTreeObserver$OnGlobalLayoutListener;)V
+.method public final o()Z
+    .locals 1
 
-    .line 132
-    .line 133
-    .line 134
-    :cond_4
-    invoke-virtual {p1, p0}, Landroid/view/View;->removeOnAttachStateChangeListener(Landroid/view/View$OnAttachStateChangeListener;)V
+    .line 1
+    iget-object v0, p0, Landroidx/appcompat/view/menu/G;->B:Landroidx/appcompat/view/menu/n;
 
-    .line 135
-    .line 136
-    .line 137
+    .line 2
+    .line 3
+    invoke-virtual {v0}, Landroidx/appcompat/view/menu/n;->o()Z
+
+    .line 4
+    .line 5
+    .line 6
+    move-result v0
+
+    .line 7
+    return v0
+.end method
+
+.method public final setGroupDividerEnabled(Z)V
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, Landroidx/appcompat/view/menu/G;->B:Landroidx/appcompat/view/menu/n;
+
+    .line 2
+    .line 3
+    invoke-virtual {v0, p1}, Landroidx/appcompat/view/menu/n;->setGroupDividerEnabled(Z)V
+
+    .line 4
+    .line 5
+    .line 6
     return-void
+.end method
 
-    .line 138
-    nop
+.method public final setHeaderIcon(I)Landroid/view/SubMenu;
+    .locals 6
 
-    .line 139
-    :pswitch_data_0
-    .packed-switch 0x0
-        :pswitch_5
-        :pswitch_4
-        :pswitch_3
-        :pswitch_2
-        :pswitch_1
-        :pswitch_0
-    .end packed-switch
+    const/4 v1, 0x0
+
+    const/4 v2, 0x0
+
+    const/4 v4, 0x0
+
+    const/4 v5, 0x0
+
+    move-object v0, p0
+
+    move v3, p1
+
+    .line 2
+    invoke-virtual/range {v0 .. v5}, Landroidx/appcompat/view/menu/n;->w(ILjava/lang/CharSequence;ILandroid/graphics/drawable/Drawable;Landroid/view/View;)V
+
+    return-object p0
+.end method
+
+.method public final setHeaderIcon(Landroid/graphics/drawable/Drawable;)Landroid/view/SubMenu;
+    .locals 6
+
+    const/4 v1, 0x0
+
+    const/4 v2, 0x0
+
+    const/4 v3, 0x0
+
+    const/4 v5, 0x0
+
+    move-object v0, p0
+
+    move-object v4, p1
+
+    .line 1
+    invoke-virtual/range {v0 .. v5}, Landroidx/appcompat/view/menu/n;->w(ILjava/lang/CharSequence;ILandroid/graphics/drawable/Drawable;Landroid/view/View;)V
+
+    return-object p0
+.end method
+
+.method public final setHeaderTitle(I)Landroid/view/SubMenu;
+    .locals 6
+
+    const/4 v2, 0x0
+
+    const/4 v3, 0x0
+
+    const/4 v4, 0x0
+
+    const/4 v5, 0x0
+
+    move-object v0, p0
+
+    move v1, p1
+
+    .line 2
+    invoke-virtual/range {v0 .. v5}, Landroidx/appcompat/view/menu/n;->w(ILjava/lang/CharSequence;ILandroid/graphics/drawable/Drawable;Landroid/view/View;)V
+
+    return-object p0
+.end method
+
+.method public final setHeaderTitle(Ljava/lang/CharSequence;)Landroid/view/SubMenu;
+    .locals 6
+
+    const/4 v1, 0x0
+
+    const/4 v3, 0x0
+
+    const/4 v4, 0x0
+
+    const/4 v5, 0x0
+
+    move-object v0, p0
+
+    move-object v2, p1
+
+    .line 1
+    invoke-virtual/range {v0 .. v5}, Landroidx/appcompat/view/menu/n;->w(ILjava/lang/CharSequence;ILandroid/graphics/drawable/Drawable;Landroid/view/View;)V
+
+    return-object p0
+.end method
+
+.method public final setHeaderView(Landroid/view/View;)Landroid/view/SubMenu;
+    .locals 6
+
+    .line 1
+    const/4 v1, 0x0
+
+    .line 2
+    const/4 v2, 0x0
+
+    .line 3
+    const/4 v3, 0x0
+
+    .line 4
+    const/4 v4, 0x0
+
+    .line 5
+    move-object v0, p0
+
+    .line 6
+    move-object v5, p1
+
+    .line 7
+    invoke-virtual/range {v0 .. v5}, Landroidx/appcompat/view/menu/n;->w(ILjava/lang/CharSequence;ILandroid/graphics/drawable/Drawable;Landroid/view/View;)V
+
+    .line 8
+    .line 9
+    .line 10
+    return-object p0
+.end method
+
+.method public final setIcon(I)Landroid/view/SubMenu;
+    .locals 1
+
+    .line 2
+    iget-object v0, p0, Landroidx/appcompat/view/menu/G;->C:Landroidx/appcompat/view/menu/p;
+
+    invoke-virtual {v0, p1}, Landroidx/appcompat/view/menu/p;->setIcon(I)Landroid/view/MenuItem;
+
+    return-object p0
+.end method
+
+.method public final setIcon(Landroid/graphics/drawable/Drawable;)Landroid/view/SubMenu;
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, Landroidx/appcompat/view/menu/G;->C:Landroidx/appcompat/view/menu/p;
+
+    invoke-virtual {v0, p1}, Landroidx/appcompat/view/menu/p;->setIcon(Landroid/graphics/drawable/Drawable;)Landroid/view/MenuItem;
+
+    return-object p0
+.end method
+
+.method public final setQwertyMode(Z)V
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, Landroidx/appcompat/view/menu/G;->B:Landroidx/appcompat/view/menu/n;
+
+    .line 2
+    .line 3
+    invoke-virtual {v0, p1}, Landroidx/appcompat/view/menu/n;->setQwertyMode(Z)V
+
+    .line 4
+    .line 5
+    .line 6
+    return-void
 .end method

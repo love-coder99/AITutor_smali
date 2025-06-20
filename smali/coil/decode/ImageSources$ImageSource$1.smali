@@ -3,14 +3,14 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lzh/a;
+.implements Lka/a;
 
 
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "Lkotlin/jvm/internal/Lambda;",
-        "Lzh/a;"
+        "Lka/a;"
     }
 .end annotation
 
@@ -53,22 +53,40 @@
 
 # virtual methods
 .method public final invoke()Ljava/io/File;
-    .locals 1
-
-    iget-object v0, p0, Lcoil/decode/ImageSources$ImageSource$1;->$context:Landroid/content/Context;
+    .locals 2
 
     .line 1
-    invoke-static {v0}, Lcoil/util/g;->c(Landroid/content/Context;)Ljava/io/File;
+    iget-object v0, p0, Lcoil/decode/ImageSources$ImageSource$1;->$context:Landroid/content/Context;
+
+    sget-object v1, Lcoil/util/g;->a:[Landroid/graphics/Bitmap$Config;
+
+    .line 2
+    invoke-virtual {v0}, Landroid/content/Context;->getCacheDir()Ljava/io/File;
 
     move-result-object v0
 
+    if-eqz v0, :cond_0
+
+    .line 3
+    invoke-virtual {v0}, Ljava/io/File;->mkdirs()Z
+
     return-object v0
+
+    .line 4
+    :cond_0
+    new-instance v0, Ljava/lang/IllegalStateException;
+
+    const-string v1, "cacheDir == null"
+
+    invoke-direct {v0, v1}, Ljava/lang/IllegalStateException;-><init>(Ljava/lang/String;)V
+
+    throw v0
 .end method
 
 .method public bridge synthetic invoke()Ljava/lang/Object;
     .locals 1
 
-    .line 2
+    .line 5
     invoke-virtual {p0}, Lcoil/decode/ImageSources$ImageSource$1;->invoke()Ljava/io/File;
 
     move-result-object v0

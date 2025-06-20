@@ -42,6 +42,8 @@
 # virtual methods
 .method public final b(Ljava/lang/String;)Ljava/lang/Object;
     .locals 1
+    .annotation build Landroidx/annotation/Nullable;
+    .end annotation
 
     .line 1
     iget-object v0, p0, Lcom/apm/insight/runtime/e$1;->a:Lcom/apm/insight/entity/Header;

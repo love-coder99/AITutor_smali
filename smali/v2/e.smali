@@ -1,12 +1,11 @@
-.class public final Lv2/e;
-.super Lv2/g;
+.class public interface abstract LV2/e;
+.super Ljava/lang/Object;
 .source "SourceFile"
 
 
 # virtual methods
-.method public final e(Landroid/view/View;F)V
-    .locals 0
+.method public abstract a()Z
+.end method
 
-    .line 1
-    return-void
+.method public abstract cancel()V
 .end method

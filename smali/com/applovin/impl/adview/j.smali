@@ -142,10 +142,10 @@
 
     const/4 v1, 0x0
 
+    .line 3
     :goto_0
     iget-object v2, p0, Lcom/applovin/impl/adview/j;->c:[F
 
-    .line 3
     array-length v3, v2
 
     if-ge v1, v3, :cond_0
@@ -175,9 +175,9 @@
 
     iput-object v1, p0, Lcom/applovin/impl/adview/j;->d:Landroid/graphics/Path;
 
+    .line 6
     iget-object v2, p0, Lcom/applovin/impl/adview/j;->c:[F
 
-    .line 6
     aget v0, v2, v0
 
     const/4 v3, 0x1
@@ -186,13 +186,13 @@
 
     invoke-virtual {v1, v0, v2}, Landroid/graphics/Path;->moveTo(FF)V
 
+    .line 7
     iget-object v0, p0, Lcom/applovin/impl/adview/j;->d:Landroid/graphics/Path;
 
     iget-object v1, p0, Lcom/applovin/impl/adview/j;->c:[F
 
     const/4 v2, 0x2
 
-    .line 7
     aget v2, v1, v2
 
     const/4 v3, 0x3
@@ -201,13 +201,13 @@
 
     invoke-virtual {v0, v2, v1}, Landroid/graphics/Path;->lineTo(FF)V
 
+    .line 8
     iget-object v0, p0, Lcom/applovin/impl/adview/j;->d:Landroid/graphics/Path;
 
     iget-object v1, p0, Lcom/applovin/impl/adview/j;->c:[F
 
     const/4 v2, 0x4
 
-    .line 8
     aget v2, v1, v2
 
     const/4 v3, 0x5
@@ -216,13 +216,13 @@
 
     invoke-virtual {v0, v2, v1}, Landroid/graphics/Path;->lineTo(FF)V
 
+    .line 9
     iget-object v0, p0, Lcom/applovin/impl/adview/j;->d:Landroid/graphics/Path;
 
     iget-object v1, p0, Lcom/applovin/impl/adview/j;->c:[F
 
     const/4 v2, 0x6
 
-    .line 9
     aget v2, v1, v2
 
     const/4 v3, 0x7
@@ -231,13 +231,13 @@
 
     invoke-virtual {v0, v2, v1}, Landroid/graphics/Path;->moveTo(FF)V
 
+    .line 10
     iget-object v0, p0, Lcom/applovin/impl/adview/j;->d:Landroid/graphics/Path;
 
     iget-object v1, p0, Lcom/applovin/impl/adview/j;->c:[F
 
     const/16 v2, 0x8
 
-    .line 10
     aget v2, v1, v2
 
     const/16 v3, 0x9
@@ -246,13 +246,13 @@
 
     invoke-virtual {v0, v2, v1}, Landroid/graphics/Path;->lineTo(FF)V
 
+    .line 11
     iget-object v0, p0, Lcom/applovin/impl/adview/j;->d:Landroid/graphics/Path;
 
     iget-object v1, p0, Lcom/applovin/impl/adview/j;->c:[F
 
     const/16 v2, 0xa
 
-    .line 11
     aget v2, v1, v2
 
     const/16 v3, 0xb
@@ -309,12 +309,19 @@
 .method public getStrokeWidth()F
     .locals 2
 
+    .line 1
     iget v0, p0, Lcom/applovin/impl/adview/e;->a:F
 
+    .line 2
+    .line 3
     const/high16 v1, 0x40000000    # 2.0f
 
+    .line 4
+    .line 5
     mul-float v0, v0, v1
 
+    .line 6
+    .line 7
     return v0
 .end method
 

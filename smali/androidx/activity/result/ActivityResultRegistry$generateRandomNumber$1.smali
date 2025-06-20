@@ -3,14 +3,14 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lzh/a;
+.implements Lka/a;
 
 
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "Lkotlin/jvm/internal/Lambda;",
-        "Lzh/a;"
+        "Lka/a;"
     }
 .end annotation
 
@@ -67,7 +67,7 @@
     .locals 2
 
     .line 2
-    sget-object v0, Ldi/c;->Default:Lkotlin/random/Random$Default;
+    sget-object v0, Loa/c;->Default:Lkotlin/random/Random$Default;
 
     const/high16 v1, 0x7fff0000
 

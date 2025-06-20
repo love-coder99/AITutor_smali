@@ -1,14 +1,14 @@
 .class public final Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableList/f;
-.super Lkotlin/collections/i;
+.super LY9/j;
 .source "SourceFile"
 
 # interfaces
 .implements Ljava/util/Collection;
-.implements Lai/b;
+.implements Lla/b;
 
 
 # instance fields
-.field public b:Lh1/c;
+.field public b:Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableList/b;
 
 .field public c:[Ljava/lang/Object;
 
@@ -16,7 +16,7 @@
 
 .field public f:I
 
-.field public g:Lk1/b;
+.field public g:Lo0/b;
 
 .field public h:[Ljava/lang/Object;
 
@@ -26,16 +26,16 @@
 
 
 # direct methods
-.method public constructor <init>(Lh1/c;[Ljava/lang/Object;[Ljava/lang/Object;I)V
+.method public constructor <init>(Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableList/b;[Ljava/lang/Object;[Ljava/lang/Object;I)V
     .locals 0
 
     .line 1
-    invoke-direct {p0}, Lkotlin/collections/i;-><init>()V
+    invoke-direct {p0}, LY9/j;-><init>()V
 
     .line 2
     .line 3
     .line 4
-    iput-object p1, p0, Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableList/f;->b:Lh1/c;
+    iput-object p1, p0, Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableList/f;->b:Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableList/b;
 
     .line 5
     .line 6
@@ -51,7 +51,7 @@
 
     .line 11
     .line 12
-    new-instance p4, Lk1/b;
+    new-instance p4, Lo0/b;
 
     .line 13
     .line 14
@@ -60,7 +60,7 @@
     .line 15
     .line 16
     .line 17
-    iput-object p4, p0, Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableList/f;->g:Lk1/b;
+    iput-object p4, p0, Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableList/f;->g:Lo0/b;
 
     .line 18
     .line 19
@@ -72,7 +72,7 @@
 
     .line 22
     .line 23
-    invoke-interface {p1}, Ljava/util/List;->size()I
+    invoke-virtual {p1}, LY9/b;->size()I
 
     .line 24
     .line 25
@@ -140,708 +140,7 @@
 
 
 # virtual methods
-.method public final A([Ljava/lang/Object;IILjava/util/Iterator;)[Ljava/lang/Object;
-    .locals 4
-
-    .line 1
-    invoke-interface {p4}, Ljava/util/Iterator;->hasNext()Z
-
-    .line 2
-    .line 3
-    .line 4
-    move-result v0
-
-    .line 5
-    const/4 v1, 0x0
-
-    .line 6
-    if-eqz v0, :cond_4
-
-    .line 7
-    .line 8
-    const/4 v0, 0x0
-
-    .line 9
-    const/4 v2, 0x1
-
-    .line 10
-    if-ltz p3, :cond_0
-
-    .line 11
-    .line 12
-    const/4 v3, 0x1
-
-    .line 13
-    goto :goto_0
-
-    .line 14
-    :cond_0
-    const/4 v3, 0x0
-
-    .line 15
-    :goto_0
-    if-eqz v3, :cond_3
-
-    .line 16
-    .line 17
-    if-nez p3, :cond_1
-
-    .line 18
-    .line 19
-    invoke-interface {p4}, Ljava/util/Iterator;->next()Ljava/lang/Object;
-
-    .line 20
-    .line 21
-    .line 22
-    move-result-object p1
-
-    .line 23
-    check-cast p1, [Ljava/lang/Object;
-
-    .line 24
-    .line 25
-    return-object p1
-
-    .line 26
-    :cond_1
-    invoke-virtual {p0, p1}, Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableList/f;->q([Ljava/lang/Object;)[Ljava/lang/Object;
-
-    .line 27
-    .line 28
-    .line 29
-    move-result-object p1
-
-    .line 30
-    invoke-static {p2, p3}, Lma/a;->Q(II)I
-
-    .line 31
-    .line 32
-    .line 33
-    move-result v1
-
-    .line 34
-    aget-object v3, p1, v1
-
-    .line 35
-    .line 36
-    check-cast v3, [Ljava/lang/Object;
-
-    .line 37
-    .line 38
-    add-int/lit8 p3, p3, -0x5
-
-    .line 39
-    .line 40
-    invoke-virtual {p0, v3, p2, p3, p4}, Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableList/f;->A([Ljava/lang/Object;IILjava/util/Iterator;)[Ljava/lang/Object;
-
-    .line 41
-    .line 42
-    .line 43
-    move-result-object p2
-
-    .line 44
-    aput-object p2, p1, v1
-
-    .line 45
-    .line 46
-    :goto_1
-    add-int/2addr v1, v2
-
-    .line 47
-    const/16 p2, 0x20
-
-    .line 48
-    .line 49
-    if-ge v1, p2, :cond_2
-
-    .line 50
-    .line 51
-    invoke-interface {p4}, Ljava/util/Iterator;->hasNext()Z
-
-    .line 52
-    .line 53
-    .line 54
-    move-result p2
-
-    .line 55
-    if-eqz p2, :cond_2
-
-    .line 56
-    .line 57
-    aget-object p2, p1, v1
-
-    .line 58
-    .line 59
-    check-cast p2, [Ljava/lang/Object;
-
-    .line 60
-    .line 61
-    invoke-virtual {p0, p2, v0, p3, p4}, Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableList/f;->A([Ljava/lang/Object;IILjava/util/Iterator;)[Ljava/lang/Object;
-
-    .line 62
-    .line 63
-    .line 64
-    move-result-object p2
-
-    .line 65
-    aput-object p2, p1, v1
-
-    .line 66
-    .line 67
-    goto :goto_1
-
-    .line 68
-    :cond_2
-    return-object p1
-
-    .line 69
-    :cond_3
-    const-string p1, "negative shift"
-
-    .line 70
-    .line 71
-    invoke-static {p1}, Lcom/google/android/gms/internal/consent_sdk/z;->u(Ljava/lang/String;)V
-
-    .line 72
-    .line 73
-    .line 74
-    throw v1
-
-    .line 75
-    :cond_4
-    const-string p1, "invalid buffersIterator"
-
-    .line 76
-    .line 77
-    invoke-static {p1}, Lcom/google/android/gms/internal/consent_sdk/z;->u(Ljava/lang/String;)V
-
-    .line 78
-    .line 79
-    .line 80
-    throw v1
-.end method
-
-.method public final B([Ljava/lang/Object;I[[Ljava/lang/Object;)[Ljava/lang/Object;
-    .locals 4
-
-    .line 1
-    new-instance v0, Landroidx/collection/r0;
-
-    .line 2
-    .line 3
-    invoke-direct {v0, p3}, Landroidx/collection/r0;-><init>([Ljava/lang/Object;)V
-
-    .line 4
-    .line 5
-    .line 6
-    shr-int/lit8 p3, p2, 0x5
-
-    .line 7
-    .line 8
-    iget v1, p0, Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableList/f;->f:I
-
-    .line 9
-    .line 10
-    const/4 v2, 0x1
-
-    .line 11
-    shl-int v3, v2, v1
-
-    .line 12
-    .line 13
-    if-ge p3, v3, :cond_0
-
-    .line 14
-    .line 15
-    invoke-virtual {p0, p1, p2, v1, v0}, Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableList/f;->A([Ljava/lang/Object;IILjava/util/Iterator;)[Ljava/lang/Object;
-
-    .line 16
-    .line 17
-    .line 18
-    move-result-object p1
-
-    .line 19
-    goto :goto_0
-
-    .line 20
-    :cond_0
-    invoke-virtual {p0, p1}, Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableList/f;->q([Ljava/lang/Object;)[Ljava/lang/Object;
-
-    .line 21
-    .line 22
-    .line 23
-    move-result-object p1
-
-    .line 24
-    :goto_0
-    invoke-virtual {v0}, Landroidx/collection/r0;->hasNext()Z
-
-    .line 25
-    .line 26
-    .line 27
-    move-result p2
-
-    .line 28
-    if-eqz p2, :cond_1
-
-    .line 29
-    .line 30
-    iget p2, p0, Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableList/f;->f:I
-
-    .line 31
-    .line 32
-    add-int/lit8 p2, p2, 0x5
-
-    .line 33
-    .line 34
-    iput p2, p0, Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableList/f;->f:I
-
-    .line 35
-    .line 36
-    invoke-virtual {p0, p1}, Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableList/f;->w(Ljava/lang/Object;)[Ljava/lang/Object;
-
-    .line 37
-    .line 38
-    .line 39
-    move-result-object p1
-
-    .line 40
-    iget p2, p0, Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableList/f;->f:I
-
-    .line 41
-    .line 42
-    shl-int p3, v2, p2
-
-    .line 43
-    .line 44
-    invoke-virtual {p0, p1, p3, p2, v0}, Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableList/f;->A([Ljava/lang/Object;IILjava/util/Iterator;)[Ljava/lang/Object;
-
-    .line 45
-    .line 46
-    .line 47
-    goto :goto_0
-
-    .line 48
-    :cond_1
-    return-object p1
-.end method
-
-.method public final C([Ljava/lang/Object;[Ljava/lang/Object;[Ljava/lang/Object;)V
-    .locals 4
-
-    .line 1
-    invoke-virtual {p0}, Lkotlin/collections/i;->size()I
-
-    .line 2
-    .line 3
-    .line 4
-    move-result v0
-
-    .line 5
-    shr-int/lit8 v0, v0, 0x5
-
-    .line 6
-    .line 7
-    iget v1, p0, Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableList/f;->f:I
-
-    .line 8
-    .line 9
-    const/4 v2, 0x1
-
-    .line 10
-    shl-int v3, v2, v1
-
-    .line 11
-    .line 12
-    if-le v0, v3, :cond_0
-
-    .line 13
-    .line 14
-    invoke-virtual {p0, p1}, Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableList/f;->w(Ljava/lang/Object;)[Ljava/lang/Object;
-
-    .line 15
-    .line 16
-    .line 17
-    move-result-object p1
-
-    .line 18
-    iget v0, p0, Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableList/f;->f:I
-
-    .line 19
-    .line 20
-    add-int/lit8 v0, v0, 0x5
-
-    .line 21
-    .line 22
-    invoke-virtual {p0, v0, p1, p2}, Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableList/f;->D(I[Ljava/lang/Object;[Ljava/lang/Object;)[Ljava/lang/Object;
-
-    .line 23
-    .line 24
-    .line 25
-    move-result-object p1
-
-    .line 26
-    iput-object p1, p0, Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableList/f;->h:[Ljava/lang/Object;
-
-    .line 27
-    .line 28
-    iput-object p3, p0, Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableList/f;->i:[Ljava/lang/Object;
-
-    .line 29
-    .line 30
-    iget p1, p0, Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableList/f;->f:I
-
-    .line 31
-    .line 32
-    add-int/lit8 p1, p1, 0x5
-
-    .line 33
-    .line 34
-    iput p1, p0, Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableList/f;->f:I
-
-    .line 35
-    .line 36
-    invoke-virtual {p0}, Lkotlin/collections/i;->size()I
-
-    .line 37
-    .line 38
-    .line 39
-    move-result p1
-
-    .line 40
-    add-int/2addr p1, v2
-
-    .line 41
-    iput p1, p0, Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableList/f;->j:I
-
-    .line 42
-    .line 43
-    goto :goto_0
-
-    .line 44
-    :cond_0
-    if-nez p1, :cond_1
-
-    .line 45
-    .line 46
-    iput-object p2, p0, Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableList/f;->h:[Ljava/lang/Object;
-
-    .line 47
-    .line 48
-    iput-object p3, p0, Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableList/f;->i:[Ljava/lang/Object;
-
-    .line 49
-    .line 50
-    invoke-virtual {p0}, Lkotlin/collections/i;->size()I
-
-    .line 51
-    .line 52
-    .line 53
-    move-result p1
-
-    .line 54
-    add-int/2addr p1, v2
-
-    .line 55
-    iput p1, p0, Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableList/f;->j:I
-
-    .line 56
-    .line 57
-    goto :goto_0
-
-    .line 58
-    :cond_1
-    invoke-virtual {p0, v1, p1, p2}, Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableList/f;->D(I[Ljava/lang/Object;[Ljava/lang/Object;)[Ljava/lang/Object;
-
-    .line 59
-    .line 60
-    .line 61
-    move-result-object p1
-
-    .line 62
-    iput-object p1, p0, Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableList/f;->h:[Ljava/lang/Object;
-
-    .line 63
-    .line 64
-    iput-object p3, p0, Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableList/f;->i:[Ljava/lang/Object;
-
-    .line 65
-    .line 66
-    invoke-virtual {p0}, Lkotlin/collections/i;->size()I
-
-    .line 67
-    .line 68
-    .line 69
-    move-result p1
-
-    .line 70
-    add-int/2addr p1, v2
-
-    .line 71
-    iput p1, p0, Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableList/f;->j:I
-
-    .line 72
-    .line 73
-    :goto_0
-    return-void
-.end method
-
-.method public final D(I[Ljava/lang/Object;[Ljava/lang/Object;)[Ljava/lang/Object;
-    .locals 3
-
-    .line 1
-    invoke-virtual {p0}, Lkotlin/collections/i;->size()I
-
-    .line 2
-    .line 3
-    .line 4
-    move-result v0
-
-    .line 5
-    add-int/lit8 v0, v0, -0x1
-
-    .line 6
-    .line 7
-    invoke-static {v0, p1}, Lma/a;->Q(II)I
-
-    .line 8
-    .line 9
-    .line 10
-    move-result v0
-
-    .line 11
-    invoke-virtual {p0, p2}, Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableList/f;->q([Ljava/lang/Object;)[Ljava/lang/Object;
-
-    .line 12
-    .line 13
-    .line 14
-    move-result-object p2
-
-    .line 15
-    const/4 v1, 0x5
-
-    .line 16
-    if-ne p1, v1, :cond_0
-
-    .line 17
-    .line 18
-    aput-object p3, p2, v0
-
-    .line 19
-    .line 20
-    goto :goto_0
-
-    .line 21
-    :cond_0
-    aget-object v2, p2, v0
-
-    .line 22
-    .line 23
-    check-cast v2, [Ljava/lang/Object;
-
-    .line 24
-    .line 25
-    sub-int/2addr p1, v1
-
-    .line 26
-    invoke-virtual {p0, p1, v2, p3}, Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableList/f;->D(I[Ljava/lang/Object;[Ljava/lang/Object;)[Ljava/lang/Object;
-
-    .line 27
-    .line 28
-    .line 29
-    move-result-object p1
-
-    .line 30
-    aput-object p1, p2, v0
-
-    .line 31
-    .line 32
-    :goto_0
-    return-object p2
-.end method
-
-.method public final E(Lzh/c;[Ljava/lang/Object;IILandroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableList/d;Ljava/util/ArrayList;Ljava/util/ArrayList;)I
-    .locals 6
-
-    .line 1
-    invoke-virtual {p0, p2}, Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableList/f;->o([Ljava/lang/Object;)Z
-
-    .line 2
-    .line 3
-    .line 4
-    move-result v0
-
-    .line 5
-    if-eqz v0, :cond_0
-
-    .line 6
-    .line 7
-    invoke-virtual {p6, p2}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
-
-    .line 8
-    .line 9
-    .line 10
-    :cond_0
-    iget-object v0, p5, Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableList/d;->a:Ljava/lang/Object;
-
-    .line 11
-    .line 12
-    check-cast v0, [Ljava/lang/Object;
-
-    .line 13
-    .line 14
-    const/4 v1, 0x0
-
-    .line 15
-    move-object v3, v0
-
-    .line 16
-    const/4 v2, 0x0
-
-    .line 17
-    :goto_0
-    if-ge v2, p3, :cond_4
-
-    .line 18
-    .line 19
-    aget-object v4, p2, v2
-
-    .line 20
-    .line 21
-    invoke-interface {p1, v4}, Lzh/c;->invoke(Ljava/lang/Object;)Ljava/lang/Object;
-
-    .line 22
-    .line 23
-    .line 24
-    move-result-object v5
-
-    .line 25
-    check-cast v5, Ljava/lang/Boolean;
-
-    .line 26
-    .line 27
-    invoke-virtual {v5}, Ljava/lang/Boolean;->booleanValue()Z
-
-    .line 28
-    .line 29
-    .line 30
-    move-result v5
-
-    .line 31
-    if-nez v5, :cond_3
-
-    .line 32
-    .line 33
-    const/16 v5, 0x20
-
-    .line 34
-    .line 35
-    if-ne p4, v5, :cond_2
-
-    .line 36
-    .line 37
-    invoke-interface {p6}, Ljava/util/Collection;->isEmpty()Z
-
-    .line 38
-    .line 39
-    .line 40
-    move-result p4
-
-    .line 41
-    xor-int/lit8 p4, p4, 0x1
-
-    .line 42
-    .line 43
-    if-eqz p4, :cond_1
-
-    .line 44
-    .line 45
-    invoke-virtual {p6}, Ljava/util/ArrayList;->size()I
-
-    .line 46
-    .line 47
-    .line 48
-    move-result p4
-
-    .line 49
-    add-int/lit8 p4, p4, -0x1
-
-    .line 50
-    .line 51
-    invoke-virtual {p6, p4}, Ljava/util/ArrayList;->remove(I)Ljava/lang/Object;
-
-    .line 52
-    .line 53
-    .line 54
-    move-result-object p4
-
-    .line 55
-    check-cast p4, [Ljava/lang/Object;
-
-    .line 56
-    .line 57
-    :goto_1
-    move-object v3, p4
-
-    .line 58
-    goto :goto_2
-
-    .line 59
-    :cond_1
-    invoke-virtual {p0}, Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableList/f;->v()[Ljava/lang/Object;
-
-    .line 60
-    .line 61
-    .line 62
-    move-result-object p4
-
-    .line 63
-    goto :goto_1
-
-    .line 64
-    :goto_2
-    const/4 p4, 0x0
-
-    .line 65
-    :cond_2
-    add-int/lit8 v5, p4, 0x1
-
-    .line 66
-    .line 67
-    aput-object v4, v3, p4
-
-    .line 68
-    .line 69
-    move p4, v5
-
-    .line 70
-    :cond_3
-    add-int/lit8 v2, v2, 0x1
-
-    .line 71
-    .line 72
-    goto :goto_0
-
-    .line 73
-    :cond_4
-    iput-object v3, p5, Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableList/d;->a:Ljava/lang/Object;
-
-    .line 74
-    .line 75
-    if-eq v0, v3, :cond_5
-
-    .line 76
-    .line 77
-    invoke-virtual {p7, v0}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
-
-    .line 78
-    .line 79
-    .line 80
-    :cond_5
-    return p4
-.end method
-
-.method public final F(Lzh/c;[Ljava/lang/Object;ILandroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableList/d;)I
+.method public final A(Lka/c;[Ljava/lang/Object;ILandroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableList/d;)I
     .locals 6
 
     .line 1
@@ -866,7 +165,7 @@
 
     .line 8
     .line 9
-    invoke-interface {p1, v4}, Lzh/c;->invoke(Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-interface {p1, v4}, Lka/c;->invoke(Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 10
     .line 11
@@ -894,7 +193,7 @@
 
     .line 22
     .line 23
-    invoke-virtual {p0, p2}, Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableList/f;->q([Ljava/lang/Object;)[Ljava/lang/Object;
+    invoke-virtual {p0, p2}, Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableList/f;->n([Ljava/lang/Object;)[Ljava/lang/Object;
 
     .line 24
     .line 25
@@ -944,7 +243,7 @@
     return v3
 .end method
 
-.method public final G(Lzh/c;)Z
+.method public final B(Lka/c;)Z
     .locals 18
 
     .line 1
@@ -956,7 +255,7 @@
 
     .line 4
     .line 5
-    invoke-virtual/range {p0 .. p0}, Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableList/f;->M()I
+    invoke-virtual/range {p0 .. p0}, Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableList/f;->H()I
 
     .line 6
     .line 7
@@ -994,7 +293,7 @@
 
     .line 22
     .line 23
-    invoke-virtual {v8, v9, v0, v10, v11}, Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableList/f;->F(Lzh/c;[Ljava/lang/Object;ILandroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableList/d;)I
+    invoke-virtual {v8, v9, v0, v10, v11}, Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableList/f;->A(Lka/c;[Ljava/lang/Object;ILandroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableList/d;)I
 
     .line 24
     .line 25
@@ -1030,7 +329,7 @@
 
     .line 39
     .line 40
-    invoke-virtual/range {p0 .. p0}, Lkotlin/collections/i;->size()I
+    invoke-virtual/range {p0 .. p0}, LY9/j;->size()I
 
     .line 41
     .line 42
@@ -1060,7 +359,7 @@
     .line 52
     .line 53
     :cond_1
-    invoke-virtual {v8, v14}, Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableList/f;->p(I)Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableList/a;
+    invoke-virtual {v8, v14}, Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableList/f;->m(I)Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableList/a;
 
     .line 54
     .line 55
@@ -1105,7 +404,7 @@
 
     .line 74
     .line 75
-    invoke-virtual {v8, v9, v0, v7, v11}, Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableList/f;->F(Lzh/c;[Ljava/lang/Object;ILandroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableList/d;)I
+    invoke-virtual {v8, v9, v0, v7, v11}, Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableList/f;->A(Lka/c;[Ljava/lang/Object;ILandroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableList/d;)I
 
     .line 76
     .line 77
@@ -1125,7 +424,7 @@
 
     .line 83
     .line 84
-    invoke-virtual {v8, v9, v0, v10, v11}, Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableList/f;->F(Lzh/c;[Ljava/lang/Object;ILandroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableList/d;)I
+    invoke-virtual {v8, v9, v0, v10, v11}, Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableList/f;->A(Lka/c;[Ljava/lang/Object;ILandroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableList/d;)I
 
     .line 85
     .line 86
@@ -1161,7 +460,7 @@
 
     .line 100
     .line 101
-    invoke-virtual/range {p0 .. p0}, Lkotlin/collections/i;->size()I
+    invoke-virtual/range {p0 .. p0}, LY9/j;->size()I
 
     .line 102
     .line 103
@@ -1189,7 +488,7 @@
 
     .line 113
     .line 114
-    invoke-virtual/range {p0 .. p0}, Lkotlin/collections/i;->size()I
+    invoke-virtual/range {p0 .. p0}, LY9/j;->size()I
 
     .line 115
     .line 116
@@ -1201,7 +500,7 @@
 
     .line 119
     .line 120
-    invoke-virtual {v8, v2, v3, v1}, Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableList/f;->z(II[Ljava/lang/Object;)V
+    invoke-virtual {v8, v1, v2, v3}, Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableList/f;->t([Ljava/lang/Object;II)V
 
     .line 121
     .line 122
@@ -1305,7 +604,7 @@
 
     .line 168
     .line 169
-    invoke-virtual/range {v0 .. v7}, Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableList/f;->E(Lzh/c;[Ljava/lang/Object;IILandroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableList/d;Ljava/util/ArrayList;Ljava/util/ArrayList;)I
+    invoke-virtual/range {v0 .. v7}, Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableList/f;->z(Lka/c;[Ljava/lang/Object;IILandroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableList/d;Ljava/util/ArrayList;Ljava/util/ArrayList;)I
 
     .line 170
     .line 171
@@ -1363,7 +662,7 @@
 
     .line 193
     .line 194
-    invoke-virtual/range {v0 .. v7}, Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableList/f;->E(Lzh/c;[Ljava/lang/Object;IILandroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableList/d;Ljava/util/ArrayList;Ljava/util/ArrayList;)I
+    invoke-virtual/range {v0 .. v7}, Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableList/f;->z(Lka/c;[Ljava/lang/Object;IILandroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableList/d;Ljava/util/ArrayList;Ljava/util/ArrayList;)I
 
     .line 195
     .line 196
@@ -1420,7 +719,7 @@
     move-result-object v4
 
     .line 222
-    invoke-virtual {v8, v2, v13, v3, v4}, Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableList/f;->A([Ljava/lang/Object;IILjava/util/Iterator;)[Ljava/lang/Object;
+    invoke-virtual {v8, v2, v13, v3, v4}, Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableList/f;->u([Ljava/lang/Object;IILjava/util/Iterator;)[Ljava/lang/Object;
 
     .line 223
     .line 224
@@ -1508,7 +807,7 @@
 
     .line 262
     :cond_9
-    invoke-virtual {v8, v4, v5, v2}, Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableList/f;->x(II[Ljava/lang/Object;)[Ljava/lang/Object;
+    invoke-virtual {v8, v2, v4, v5}, Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableList/f;->r([Ljava/lang/Object;II)[Ljava/lang/Object;
 
     .line 263
     .line 264
@@ -1564,7 +863,7 @@
 
     .line 284
     .line 285
-    invoke-static {v0}, Lcom/google/android/gms/internal/consent_sdk/z;->u(Ljava/lang/String;)V
+    invoke-static {v0}, Landroidx/compose/runtime/o;->d0(Ljava/lang/String;)V
 
     .line 286
     .line 287
@@ -1572,11 +871,11 @@
     throw v12
 .end method
 
-.method public final H([Ljava/lang/Object;IILandroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableList/d;)[Ljava/lang/Object;
+.method public final C([Ljava/lang/Object;IILandroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableList/d;)[Ljava/lang/Object;
     .locals 5
 
     .line 1
-    invoke-static {p3, p2}, Lma/a;->Q(II)I
+    invoke-static {p3, p2}, Lcom/google/android/gms/internal/measurement/Q1;->o(II)I
 
     .line 2
     .line 3
@@ -1596,7 +895,7 @@
 
     .line 10
     .line 11
-    invoke-virtual {p0, p1}, Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableList/f;->q([Ljava/lang/Object;)[Ljava/lang/Object;
+    invoke-virtual {p0, p1}, Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableList/f;->n([Ljava/lang/Object;)[Ljava/lang/Object;
 
     .line 12
     .line 13
@@ -1641,7 +940,7 @@
 
     .line 32
     .line 33
-    invoke-virtual {p0}, Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableList/f;->J()I
+    invoke-virtual {p0}, Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableList/f;->E()I
 
     .line 34
     .line 35
@@ -1653,7 +952,7 @@
 
     .line 38
     .line 39
-    invoke-static {v1, p2}, Lma/a;->Q(II)I
+    invoke-static {v1, p2}, Lcom/google/android/gms/internal/measurement/Q1;->o(II)I
 
     .line 40
     .line 41
@@ -1662,7 +961,7 @@
 
     .line 43
     :cond_1
-    invoke-virtual {p0, p1}, Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableList/f;->q([Ljava/lang/Object;)[Ljava/lang/Object;
+    invoke-virtual {p0, p1}, Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableList/f;->n([Ljava/lang/Object;)[Ljava/lang/Object;
 
     .line 44
     .line 45
@@ -1694,7 +993,7 @@
     const/4 v4, 0x0
 
     .line 58
-    invoke-virtual {p0, v3, p2, v4, p4}, Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableList/f;->H([Ljava/lang/Object;IILandroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableList/d;)[Ljava/lang/Object;
+    invoke-virtual {p0, v3, p2, v4, p4}, Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableList/f;->C([Ljava/lang/Object;IILandroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableList/d;)[Ljava/lang/Object;
 
     .line 59
     .line 60
@@ -1726,7 +1025,7 @@
 
     .line 72
     .line 73
-    invoke-virtual {p0, v1, p2, p3, p4}, Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableList/f;->H([Ljava/lang/Object;IILandroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableList/d;)[Ljava/lang/Object;
+    invoke-virtual {p0, v1, p2, p3, p4}, Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableList/f;->C([Ljava/lang/Object;IILandroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableList/d;)[Ljava/lang/Object;
 
     .line 74
     .line 75
@@ -1741,11 +1040,11 @@
     return-object p1
 .end method
 
-.method public final I([Ljava/lang/Object;III)Ljava/lang/Object;
+.method public final D([Ljava/lang/Object;III)Ljava/lang/Object;
     .locals 7
 
     .line 1
-    invoke-virtual {p0}, Lkotlin/collections/i;->size()I
+    invoke-virtual {p0}, LY9/j;->size()I
 
     .line 2
     .line 3
@@ -1774,7 +1073,7 @@
 
     .line 13
     .line 14
-    invoke-virtual {p0, p2, p3, p1}, Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableList/f;->z(II[Ljava/lang/Object;)V
+    invoke-virtual {p0, p1, p2, p3}, Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableList/f;->t([Ljava/lang/Object;II)V
 
     .line 15
     .line 16
@@ -1791,7 +1090,7 @@
 
     .line 21
     .line 22
-    invoke-virtual {p0, v2}, Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableList/f;->q([Ljava/lang/Object;)[Ljava/lang/Object;
+    invoke-virtual {p0, v2}, Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableList/f;->n([Ljava/lang/Object;)[Ljava/lang/Object;
 
     .line 23
     .line 24
@@ -1852,11 +1151,11 @@
     return-object p4
 .end method
 
-.method public final J()I
+.method public final E()I
     .locals 2
 
     .line 1
-    invoke-virtual {p0}, Lkotlin/collections/i;->size()I
+    invoke-virtual {p0}, LY9/j;->size()I
 
     .line 2
     .line 3
@@ -1879,7 +1178,7 @@
 
     .line 11
     :cond_0
-    invoke-virtual {p0}, Lkotlin/collections/i;->size()I
+    invoke-virtual {p0}, LY9/j;->size()I
 
     .line 12
     .line 13
@@ -1898,11 +1197,11 @@
     return v0
 .end method
 
-.method public final K([Ljava/lang/Object;IILjava/lang/Object;Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableList/d;)[Ljava/lang/Object;
+.method public final F([Ljava/lang/Object;IILjava/lang/Object;Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableList/d;)[Ljava/lang/Object;
     .locals 8
 
     .line 1
-    invoke-static {p3, p2}, Lma/a;->Q(II)I
+    invoke-static {p3, p2}, Lcom/google/android/gms/internal/measurement/Q1;->o(II)I
 
     .line 2
     .line 3
@@ -1910,7 +1209,7 @@
     move-result v0
 
     .line 5
-    invoke-virtual {p0, p1}, Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableList/f;->q([Ljava/lang/Object;)[Ljava/lang/Object;
+    invoke-virtual {p0, p1}, Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableList/f;->n([Ljava/lang/Object;)[Ljava/lang/Object;
 
     .line 6
     .line 7
@@ -1982,7 +1281,7 @@
     move-object v7, p5
 
     .line 37
-    invoke-virtual/range {v2 .. v7}, Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableList/f;->K([Ljava/lang/Object;IILjava/lang/Object;Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableList/d;)[Ljava/lang/Object;
+    invoke-virtual/range {v2 .. v7}, Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableList/f;->F([Ljava/lang/Object;IILjava/lang/Object;Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableList/d;)[Ljava/lang/Object;
 
     .line 38
     .line 39
@@ -1997,7 +1296,7 @@
     return-object v1
 .end method
 
-.method public final L(Ljava/util/Collection;I[Ljava/lang/Object;I[[Ljava/lang/Object;I[Ljava/lang/Object;)V
+.method public final G(Ljava/util/Collection;I[Ljava/lang/Object;I[[Ljava/lang/Object;I[Ljava/lang/Object;)V
     .locals 5
 
     .line 1
@@ -2008,7 +1307,7 @@
 
     .line 3
     .line 4
-    invoke-virtual {p0, p3}, Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableList/f;->q([Ljava/lang/Object;)[Ljava/lang/Object;
+    invoke-virtual {p0, p3}, Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableList/f;->n([Ljava/lang/Object;)[Ljava/lang/Object;
 
     .line 5
     .line 6
@@ -2063,7 +1362,7 @@
     add-int/2addr p2, v0
 
     .line 29
-    invoke-static {p3, p2, p7, v2, p4}, Lkotlin/collections/o;->G([Ljava/lang/Object;I[Ljava/lang/Object;II)V
+    invoke-static {p3, p2, p7, v2, p4}, LY9/o;->J([Ljava/lang/Object;I[Ljava/lang/Object;II)V
 
     .line 30
     .line 31
@@ -2087,7 +1386,7 @@
 
     .line 39
     :cond_1
-    invoke-virtual {p0}, Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableList/f;->v()[Ljava/lang/Object;
+    invoke-virtual {p0}, Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableList/f;->p()[Ljava/lang/Object;
 
     .line 40
     .line 41
@@ -2108,7 +1407,7 @@
 
     .line 48
     .line 49
-    invoke-static {p3, v1, p7, v3, p4}, Lkotlin/collections/o;->G([Ljava/lang/Object;I[Ljava/lang/Object;II)V
+    invoke-static {p3, v1, p7, v3, p4}, LY9/o;->J([Ljava/lang/Object;I[Ljava/lang/Object;II)V
 
     .line 50
     .line 51
@@ -2116,7 +1415,7 @@
     add-int/2addr p2, v0
 
     .line 53
-    invoke-static {p3, p2, v4, v2, v3}, Lkotlin/collections/o;->G([Ljava/lang/Object;I[Ljava/lang/Object;II)V
+    invoke-static {p3, p2, v4, v2, v3}, LY9/o;->J([Ljava/lang/Object;I[Ljava/lang/Object;II)V
 
     .line 54
     .line 55
@@ -2143,7 +1442,7 @@
 
     .line 65
     .line 66
-    invoke-virtual {p0}, Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableList/f;->v()[Ljava/lang/Object;
+    invoke-virtual {p0}, Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableList/f;->p()[Ljava/lang/Object;
 
     .line 67
     .line 68
@@ -2181,7 +1480,7 @@
 
     .line 83
     .line 84
-    invoke-static {p1}, Lcom/google/android/gms/internal/consent_sdk/z;->u(Ljava/lang/String;)V
+    invoke-static {p1}, Landroidx/compose/runtime/o;->d0(Ljava/lang/String;)V
 
     .line 85
     .line 86
@@ -2192,11 +1491,11 @@
     throw p1
 .end method
 
-.method public final M()I
+.method public final H()I
     .locals 2
 
     .line 1
-    invoke-virtual {p0}, Lkotlin/collections/i;->size()I
+    invoke-virtual {p0}, LY9/j;->size()I
 
     .line 2
     .line 3
@@ -2231,7 +1530,7 @@
     return v0
 .end method
 
-.method public final a()Lh1/c;
+.method public final a()Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableList/b;
     .locals 5
 
     .line 1
@@ -2259,7 +1558,7 @@
 
     .line 12
     .line 13
-    iget-object v0, p0, Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableList/f;->b:Lh1/c;
+    iget-object v0, p0, Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableList/f;->b:Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableList/b;
 
     .line 14
     .line 15
@@ -2267,7 +1566,7 @@
 
     .line 16
     :cond_0
-    new-instance v1, Lk1/b;
+    new-instance v1, Lo0/b;
 
     .line 17
     .line 18
@@ -2276,7 +1575,7 @@
     .line 19
     .line 20
     .line 21
-    iput-object v1, p0, Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableList/f;->g:Lk1/b;
+    iput-object v1, p0, Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableList/f;->g:Lo0/b;
 
     .line 22
     .line 23
@@ -2303,7 +1602,7 @@
 
     .line 33
     .line 34
-    sget-object v0, Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableList/j;->c:Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableList/j;
+    sget-object v0, Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableList/i;->c:Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableList/i;
 
     .line 35
     .line 36
@@ -2311,7 +1610,7 @@
 
     .line 37
     :cond_1
-    new-instance v0, Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableList/j;
+    new-instance v0, Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableList/i;
 
     .line 38
     .line 39
@@ -2319,7 +1618,7 @@
 
     .line 40
     .line 41
-    invoke-virtual {p0}, Lkotlin/collections/i;->size()I
+    invoke-virtual {p0}, LY9/j;->size()I
 
     .line 42
     .line 43
@@ -2335,7 +1634,7 @@
     move-result-object v1
 
     .line 49
-    invoke-direct {v0, v1}, Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableList/j;-><init>([Ljava/lang/Object;)V
+    invoke-direct {v0, v1}, Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableList/i;-><init>([Ljava/lang/Object;)V
 
     .line 50
     .line 51
@@ -2348,7 +1647,7 @@
 
     .line 54
     .line 55
-    invoke-virtual {p0}, Lkotlin/collections/i;->size()I
+    invoke-virtual {p0}, LY9/j;->size()I
 
     .line 56
     .line 57
@@ -2369,7 +1668,7 @@
 
     .line 65
     :goto_0
-    iput-object v0, p0, Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableList/f;->b:Lh1/c;
+    iput-object v0, p0, Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableList/f;->b:Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableList/b;
 
     .line 66
     .line 67
@@ -2379,25 +1678,26 @@
 .method public final add(ILjava/lang/Object;)V
     .locals 8
 
-    .line 7
-    invoke-virtual {p0}, Lkotlin/collections/i;->size()I
+    .line 9
+    invoke-virtual {p0}, LY9/j;->size()I
 
     move-result v0
 
-    invoke-static {p1, v0}, Lcom/facebook/appevents/g;->b(II)V
+    invoke-static {p1, v0}, Lf4/g;->j(II)V
 
-    .line 8
-    invoke-virtual {p0}, Lkotlin/collections/i;->size()I
+    .line 10
+    invoke-virtual {p0}, LY9/j;->size()I
 
     move-result v0
 
     if-ne p1, v0, :cond_0
 
-    .line 9
+    .line 11
     invoke-virtual {p0, p2}, Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableList/f;->add(Ljava/lang/Object;)Z
 
     return-void
 
+    .line 12
     :cond_0
     iget v0, p0, Ljava/util/AbstractList;->modCount:I
 
@@ -2405,23 +1705,23 @@
 
     iput v0, p0, Ljava/util/AbstractList;->modCount:I
 
-    .line 10
-    invoke-virtual {p0}, Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableList/f;->J()I
+    .line 13
+    invoke-virtual {p0}, Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableList/f;->E()I
 
     move-result v0
 
     if-lt p1, v0, :cond_1
 
+    .line 14
     iget-object v1, p0, Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableList/f;->h:[Ljava/lang/Object;
 
     sub-int/2addr p1, v0
 
-    .line 11
-    invoke-virtual {p0, p1, p2, v1}, Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableList/f;->i(ILjava/lang/Object;[Ljava/lang/Object;)V
+    invoke-virtual {p0, p1, p2, v1}, Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableList/f;->h(ILjava/lang/Object;[Ljava/lang/Object;)V
 
     return-void
 
-    .line 12
+    .line 15
     :cond_1
     new-instance v0, Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableList/d;
 
@@ -2429,6 +1729,7 @@
 
     invoke-direct {v0, v1}, Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableList/d;-><init>(Ljava/lang/Object;)V
 
+    .line 16
     iget-object v3, p0, Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableList/f;->h:[Ljava/lang/Object;
 
     iget v4, p0, Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableList/f;->f:I
@@ -2441,17 +1742,17 @@
 
     move-object v7, v0
 
-    .line 13
     invoke-virtual/range {v2 .. v7}, Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableList/f;->g([Ljava/lang/Object;IILjava/lang/Object;Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableList/d;)[Ljava/lang/Object;
 
     move-result-object p1
 
+    .line 17
     iget-object p2, v0, Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableList/d;->a:Ljava/lang/Object;
 
     const/4 v0, 0x0
 
-    .line 14
-    invoke-virtual {p0, v0, p2, p1}, Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableList/f;->i(ILjava/lang/Object;[Ljava/lang/Object;)V
+    .line 18
+    invoke-virtual {p0, v0, p2, p1}, Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableList/f;->h(ILjava/lang/Object;[Ljava/lang/Object;)V
 
     return-void
 .end method
@@ -2459,6 +1760,7 @@
 .method public final add(Ljava/lang/Object;)Z
     .locals 3
 
+    .line 1
     iget v0, p0, Ljava/util/AbstractList;->modCount:I
 
     const/4 v1, 0x1
@@ -2467,8 +1769,8 @@
 
     iput v0, p0, Ljava/util/AbstractList;->modCount:I
 
-    .line 1
-    invoke-virtual {p0}, Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableList/f;->M()I
+    .line 2
+    invoke-virtual {p0}, Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableList/f;->H()I
 
     move-result v0
 
@@ -2476,20 +1778,21 @@
 
     if-ge v0, v2, :cond_0
 
+    .line 3
     iget-object v2, p0, Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableList/f;->i:[Ljava/lang/Object;
 
-    .line 2
-    invoke-virtual {p0, v2}, Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableList/f;->q([Ljava/lang/Object;)[Ljava/lang/Object;
+    invoke-virtual {p0, v2}, Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableList/f;->n([Ljava/lang/Object;)[Ljava/lang/Object;
 
     move-result-object v2
 
-    .line 3
+    .line 4
     aput-object p1, v2, v0
 
+    .line 5
     iput-object v2, p0, Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableList/f;->i:[Ljava/lang/Object;
 
-    .line 4
-    invoke-virtual {p0}, Lkotlin/collections/i;->size()I
+    .line 6
+    invoke-virtual {p0}, LY9/j;->size()I
 
     move-result p1
 
@@ -2499,18 +1802,18 @@
 
     goto :goto_0
 
-    .line 5
+    .line 7
     :cond_0
-    invoke-virtual {p0, p1}, Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableList/f;->w(Ljava/lang/Object;)[Ljava/lang/Object;
+    invoke-virtual {p0, p1}, Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableList/f;->q(Ljava/lang/Object;)[Ljava/lang/Object;
 
     move-result-object p1
 
+    .line 8
     iget-object v0, p0, Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableList/f;->h:[Ljava/lang/Object;
 
     iget-object v2, p0, Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableList/f;->i:[Ljava/lang/Object;
 
-    .line 6
-    invoke-virtual {p0, v0, v2, p1}, Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableList/f;->C([Ljava/lang/Object;[Ljava/lang/Object;[Ljava/lang/Object;)V
+    invoke-virtual {p0, v0, v2, p1}, Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableList/f;->w([Ljava/lang/Object;[Ljava/lang/Object;[Ljava/lang/Object;)V
 
     :goto_0
     return v1
@@ -2523,15 +1826,15 @@
 
     move v2, p1
 
-    .line 14
-    invoke-virtual {p0}, Lkotlin/collections/i;->size()I
+    .line 15
+    invoke-virtual {p0}, LY9/j;->size()I
 
     move-result v0
 
-    invoke-static {p1, v0}, Lcom/facebook/appevents/g;->b(II)V
+    invoke-static {p1, v0}, Lf4/g;->j(II)V
 
-    .line 15
-    invoke-virtual {p0}, Lkotlin/collections/i;->size()I
+    .line 16
+    invoke-virtual {p0}, LY9/j;->size()I
 
     move-result v0
 
@@ -2539,7 +1842,7 @@
 
     move-object/from16 v9, p2
 
-    .line 16
+    .line 17
     invoke-virtual {p0, v9}, Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableList/f;->addAll(Ljava/util/Collection;)Z
 
     move-result v0
@@ -2549,7 +1852,7 @@
     :cond_0
     move-object/from16 v9, p2
 
-    .line 17
+    .line 18
     invoke-interface/range {p2 .. p2}, Ljava/util/Collection;->isEmpty()Z
 
     move-result v0
@@ -2560,6 +1863,7 @@
 
     return v1
 
+    .line 19
     :cond_1
     iget v0, v8, Ljava/util/AbstractList;->modCount:I
 
@@ -2573,8 +1877,8 @@
 
     shl-int/lit8 v11, v0, 0x5
 
-    .line 18
-    invoke-virtual {p0}, Lkotlin/collections/i;->size()I
+    .line 20
+    invoke-virtual {p0}, LY9/j;->size()I
 
     move-result v0
 
@@ -2594,12 +1898,12 @@
 
     if-nez v6, :cond_2
 
-    .line 19
-    invoke-virtual {p0}, Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableList/f;->J()I
+    .line 21
+    invoke-virtual {p0}, Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableList/f;->E()I
 
     and-int/lit8 v0, v2, 0x1f
 
-    .line 20
+    .line 22
     invoke-interface/range {p2 .. p2}, Ljava/util/Collection;->size()I
 
     move-result v1
@@ -2610,35 +1914,36 @@
 
     and-int/lit8 v1, v1, 0x1f
 
+    .line 23
     iget-object v2, v8, Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableList/f;->i:[Ljava/lang/Object;
 
-    .line 21
-    invoke-virtual {p0, v2}, Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableList/f;->q([Ljava/lang/Object;)[Ljava/lang/Object;
+    invoke-virtual {p0, v2}, Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableList/f;->n([Ljava/lang/Object;)[Ljava/lang/Object;
 
     move-result-object v3
 
     add-int/2addr v1, v10
 
-    invoke-virtual {p0}, Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableList/f;->M()I
+    invoke-virtual {p0}, Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableList/f;->H()I
 
     move-result v4
 
     sub-int/2addr v4, v0
 
-    .line 22
+    .line 24
     invoke-static {v2, v0, v3, v1, v4}, Ljava/lang/System;->arraycopy(Ljava/lang/Object;ILjava/lang/Object;II)V
 
-    .line 23
+    .line 25
     invoke-interface/range {p2 .. p2}, Ljava/util/Collection;->iterator()Ljava/util/Iterator;
 
     move-result-object v1
 
     invoke-static {v3, v0, v1}, Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableList/f;->b([Ljava/lang/Object;ILjava/util/Iterator;)V
 
+    .line 26
     iput-object v3, v8, Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableList/f;->i:[Ljava/lang/Object;
 
-    .line 24
-    invoke-virtual {p0}, Lkotlin/collections/i;->size()I
+    .line 27
+    invoke-virtual {p0}, LY9/j;->size()I
 
     move-result v0
 
@@ -2652,17 +1957,17 @@
 
     return v10
 
-    .line 25
+    .line 28
     :cond_2
     new-array v12, v6, [[Ljava/lang/Object;
 
-    .line 26
-    invoke-virtual {p0}, Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableList/f;->M()I
+    .line 29
+    invoke-virtual {p0}, Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableList/f;->H()I
 
     move-result v4
 
-    .line 27
-    invoke-virtual {p0}, Lkotlin/collections/i;->size()I
+    .line 30
+    invoke-virtual {p0}, LY9/j;->size()I
 
     move-result v3
 
@@ -2683,19 +1988,20 @@
 
     sub-int/2addr v5, v3
 
-    .line 28
+    .line 31
     :goto_0
-    invoke-virtual {p0}, Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableList/f;->J()I
+    invoke-virtual {p0}, Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableList/f;->E()I
 
     move-result v3
 
     if-lt v2, v3, :cond_4
 
-    .line 29
-    invoke-virtual {p0}, Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableList/f;->v()[Ljava/lang/Object;
+    .line 32
+    invoke-virtual {p0}, Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableList/f;->p()[Ljava/lang/Object;
 
     move-result-object v13
 
+    .line 33
     iget-object v3, v8, Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableList/f;->i:[Ljava/lang/Object;
 
     move-object v0, p0
@@ -2708,8 +2014,7 @@
 
     move-object v7, v13
 
-    .line 30
-    invoke-virtual/range {v0 .. v7}, Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableList/f;->L(Ljava/util/Collection;I[Ljava/lang/Object;I[[Ljava/lang/Object;I[Ljava/lang/Object;)V
+    invoke-virtual/range {v0 .. v7}, Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableList/f;->G(Ljava/util/Collection;I[Ljava/lang/Object;I[[Ljava/lang/Object;I[Ljava/lang/Object;)V
 
     goto :goto_1
 
@@ -2718,10 +2023,10 @@
 
     sub-int v3, v5, v4
 
+    .line 34
     iget-object v0, v8, Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableList/f;->i:[Ljava/lang/Object;
 
-    .line 31
-    invoke-virtual {p0, v3, v0}, Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableList/f;->t(I[Ljava/lang/Object;)[Ljava/lang/Object;
+    invoke-virtual {p0, v3, v0}, Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableList/f;->o(I[Ljava/lang/Object;)[Ljava/lang/Object;
 
     move-result-object v13
 
@@ -2737,16 +2042,16 @@
 
     move-object v6, v13
 
-    .line 32
+    .line 35
     invoke-virtual/range {v0 .. v6}, Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableList/f;->e(Ljava/util/Collection;II[[Ljava/lang/Object;I[Ljava/lang/Object;)V
 
     goto :goto_1
 
+    .line 36
     :cond_5
     iget-object v3, v8, Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableList/f;->i:[Ljava/lang/Object;
 
-    .line 33
-    invoke-virtual {p0}, Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableList/f;->v()[Ljava/lang/Object;
+    invoke-virtual {p0}, Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableList/f;->p()[Ljava/lang/Object;
 
     move-result-object v13
 
@@ -2754,21 +2059,21 @@
 
     sub-int/2addr v4, v5
 
-    .line 34
+    .line 37
     invoke-static {v3, v5, v13, v1, v4}, Ljava/lang/System;->arraycopy(Ljava/lang/Object;ILjava/lang/Object;II)V
 
     rsub-int/lit8 v3, v5, 0x20
 
+    .line 38
     iget-object v0, v8, Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableList/f;->i:[Ljava/lang/Object;
 
-    .line 35
-    invoke-virtual {p0, v3, v0}, Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableList/f;->t(I[Ljava/lang/Object;)[Ljava/lang/Object;
+    invoke-virtual {p0, v3, v0}, Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableList/f;->o(I[Ljava/lang/Object;)[Ljava/lang/Object;
 
     move-result-object v7
 
     add-int/lit8 v5, v6, -0x1
 
-    .line 36
+    .line 39
     aput-object v7, v12, v5
 
     move-object v0, p0
@@ -2781,23 +2086,24 @@
 
     move-object v6, v7
 
-    .line 37
+    .line 40
     invoke-virtual/range {v0 .. v6}, Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableList/f;->e(Ljava/util/Collection;II[[Ljava/lang/Object;I[Ljava/lang/Object;)V
 
+    .line 41
     :goto_1
     iget-object v0, v8, Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableList/f;->h:[Ljava/lang/Object;
 
-    .line 38
-    invoke-virtual {p0, v0, v11, v12}, Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableList/f;->B([Ljava/lang/Object;I[[Ljava/lang/Object;)[Ljava/lang/Object;
+    invoke-virtual {p0, v0, v11, v12}, Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableList/f;->v([Ljava/lang/Object;I[[Ljava/lang/Object;)[Ljava/lang/Object;
 
     move-result-object v0
 
     iput-object v0, v8, Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableList/f;->h:[Ljava/lang/Object;
 
+    .line 42
     iput-object v13, v8, Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableList/f;->i:[Ljava/lang/Object;
 
-    .line 39
-    invoke-virtual {p0}, Lkotlin/collections/i;->size()I
+    .line 43
+    invoke-virtual {p0}, LY9/j;->size()I
 
     move-result v0
 
@@ -2826,6 +2132,7 @@
 
     return v1
 
+    .line 2
     :cond_0
     iget v0, p0, Ljava/util/AbstractList;->modCount:I
 
@@ -2835,29 +2142,29 @@
 
     iput v0, p0, Ljava/util/AbstractList;->modCount:I
 
-    .line 2
-    invoke-virtual {p0}, Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableList/f;->M()I
+    .line 3
+    invoke-virtual {p0}, Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableList/f;->H()I
 
     move-result v0
 
-    .line 3
+    .line 4
     invoke-interface {p1}, Ljava/util/Collection;->iterator()Ljava/util/Iterator;
 
     move-result-object v3
 
     rsub-int/lit8 v4, v0, 0x20
 
-    .line 4
+    .line 5
     invoke-interface {p1}, Ljava/util/Collection;->size()I
 
     move-result v5
 
     if-lt v4, v5, :cond_1
 
+    .line 6
     iget-object v1, p0, Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableList/f;->i:[Ljava/lang/Object;
 
-    .line 5
-    invoke-virtual {p0, v1}, Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableList/f;->q([Ljava/lang/Object;)[Ljava/lang/Object;
+    invoke-virtual {p0, v1}, Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableList/f;->n([Ljava/lang/Object;)[Ljava/lang/Object;
 
     move-result-object v1
 
@@ -2865,8 +2172,8 @@
 
     iput-object v1, p0, Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableList/f;->i:[Ljava/lang/Object;
 
-    .line 6
-    invoke-virtual {p0}, Lkotlin/collections/i;->size()I
+    .line 7
+    invoke-virtual {p0}, LY9/j;->size()I
 
     move-result v0
 
@@ -2880,7 +2187,7 @@
 
     goto :goto_1
 
-    .line 7
+    .line 8
     :cond_1
     invoke-interface {p1}, Ljava/util/Collection;->size()I
 
@@ -2892,13 +2199,13 @@
 
     div-int/lit8 v4, v4, 0x20
 
-    .line 8
+    .line 9
     new-array v5, v4, [[Ljava/lang/Object;
 
+    .line 10
     iget-object v6, p0, Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableList/f;->i:[Ljava/lang/Object;
 
-    .line 9
-    invoke-virtual {p0, v6}, Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableList/f;->q([Ljava/lang/Object;)[Ljava/lang/Object;
+    invoke-virtual {p0, v6}, Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableList/f;->n([Ljava/lang/Object;)[Ljava/lang/Object;
 
     move-result-object v6
 
@@ -2911,8 +2218,8 @@
     :goto_0
     if-ge v0, v4, :cond_2
 
-    .line 10
-    invoke-virtual {p0}, Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableList/f;->v()[Ljava/lang/Object;
+    .line 11
+    invoke-virtual {p0}, Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableList/f;->p()[Ljava/lang/Object;
 
     move-result-object v6
 
@@ -2924,22 +2231,22 @@
 
     goto :goto_0
 
+    .line 12
     :cond_2
     iget-object v0, p0, Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableList/f;->h:[Ljava/lang/Object;
 
-    .line 11
-    invoke-virtual {p0}, Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableList/f;->J()I
+    invoke-virtual {p0}, Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableList/f;->E()I
 
     move-result v4
 
-    invoke-virtual {p0, v0, v4, v5}, Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableList/f;->B([Ljava/lang/Object;I[[Ljava/lang/Object;)[Ljava/lang/Object;
+    invoke-virtual {p0, v0, v4, v5}, Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableList/f;->v([Ljava/lang/Object;I[[Ljava/lang/Object;)[Ljava/lang/Object;
 
     move-result-object v0
 
     iput-object v0, p0, Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableList/f;->h:[Ljava/lang/Object;
 
-    .line 12
-    invoke-virtual {p0}, Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableList/f;->v()[Ljava/lang/Object;
+    .line 13
+    invoke-virtual {p0}, Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableList/f;->p()[Ljava/lang/Object;
 
     move-result-object v0
 
@@ -2947,8 +2254,8 @@
 
     iput-object v0, p0, Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableList/f;->i:[Ljava/lang/Object;
 
-    .line 13
-    invoke-virtual {p0}, Lkotlin/collections/i;->size()I
+    .line 14
+    invoke-virtual {p0}, LY9/j;->size()I
 
     move-result v0
 
@@ -2964,12 +2271,14 @@
     return v2
 .end method
 
-.method public final d()I
+.method public final c()I
     .locals 1
 
     .line 1
     iget v0, p0, Ljava/util/AbstractList;->modCount:I
 
+    .line 2
+    .line 3
     return v0
 .end method
 
@@ -2989,7 +2298,7 @@
 
     .line 6
     .line 7
-    invoke-virtual {p0}, Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableList/f;->J()I
+    invoke-virtual {p0}, Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableList/f;->E()I
 
     .line 8
     .line 9
@@ -3001,7 +2310,7 @@
 
     .line 12
     .line 13
-    invoke-virtual {p0, v1}, Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableList/f;->p(I)Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableList/a;
+    invoke-virtual {p0, v1}, Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableList/f;->m(I)Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableList/a;
 
     .line 14
     .line 15
@@ -3051,12 +2360,12 @@
 
     .line 35
     .line 36
-    invoke-static {v4, v6, v2, v5, v7}, Lkotlin/collections/o;->G([Ljava/lang/Object;I[Ljava/lang/Object;II)V
+    invoke-static {v4, v6, v2, v5, v7}, LY9/o;->J([Ljava/lang/Object;I[Ljava/lang/Object;II)V
 
     .line 37
     .line 38
     .line 39
-    invoke-virtual {p0, p3, v4}, Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableList/f;->t(I[Ljava/lang/Object;)[Ljava/lang/Object;
+    invoke-virtual {p0, p3, v4}, Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableList/f;->o(I[Ljava/lang/Object;)[Ljava/lang/Object;
 
     .line 40
     .line 41
@@ -3091,7 +2400,7 @@
 
     .line 54
     .line 55
-    invoke-virtual {p0}, Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableList/f;->J()I
+    invoke-virtual {p0}, Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableList/f;->E()I
 
     .line 56
     .line 57
@@ -3142,7 +2451,7 @@
     move-object v6, p4
 
     .line 77
-    invoke-virtual/range {v1 .. v8}, Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableList/f;->L(Ljava/util/Collection;I[Ljava/lang/Object;I[[Ljava/lang/Object;I[Ljava/lang/Object;)V
+    invoke-virtual/range {v1 .. v8}, Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableList/f;->G(Ljava/util/Collection;I[Ljava/lang/Object;I[[Ljava/lang/Object;I[Ljava/lang/Object;)V
 
     .line 78
     .line 79
@@ -3159,19 +2468,11 @@
 
     .line 84
     .line 85
-    invoke-virtual {p2}, Ljava/lang/Object;->toString()Ljava/lang/String;
+    invoke-direct {p1, p2}, Ljava/lang/IllegalStateException;-><init>(Ljava/lang/String;)V
 
     .line 86
     .line 87
     .line 88
-    move-result-object p2
-
-    .line 89
-    invoke-direct {p1, p2}, Ljava/lang/IllegalStateException;-><init>(Ljava/lang/String;)V
-
-    .line 90
-    .line 91
-    .line 92
     throw p1
 .end method
 
@@ -3179,7 +2480,7 @@
     .locals 7
 
     .line 1
-    invoke-static {p3, p2}, Lma/a;->Q(II)I
+    invoke-static {p3, p2}, Lcom/google/android/gms/internal/measurement/Q1;->o(II)I
 
     .line 2
     .line 3
@@ -3203,7 +2504,7 @@
 
     .line 12
     .line 13
-    invoke-virtual {p0, p1}, Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableList/f;->q([Ljava/lang/Object;)[Ljava/lang/Object;
+    invoke-virtual {p0, p1}, Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableList/f;->n([Ljava/lang/Object;)[Ljava/lang/Object;
 
     .line 14
     .line 15
@@ -3232,7 +2533,7 @@
 
     .line 27
     :cond_0
-    invoke-virtual {p0, p1}, Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableList/f;->q([Ljava/lang/Object;)[Ljava/lang/Object;
+    invoke-virtual {p0, p1}, Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableList/f;->n([Ljava/lang/Object;)[Ljava/lang/Object;
 
     .line 28
     .line 29
@@ -3310,12 +2611,12 @@
 
     .line 61
     .line 62
-    const/4 v4, 0x0
-
-    .line 63
     iget-object v5, p5, Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableList/d;->a:Ljava/lang/Object;
 
+    .line 63
     .line 64
+    const/4 v4, 0x0
+
     .line 65
     move-object v1, p0
 
@@ -3349,7 +2650,7 @@
     .locals 3
 
     .line 1
-    invoke-virtual {p0}, Lkotlin/collections/i;->size()I
+    invoke-virtual {p0}, LY9/j;->size()I
 
     .line 2
     .line 3
@@ -3357,12 +2658,12 @@
     move-result v0
 
     .line 5
-    invoke-static {p1, v0}, Lcom/facebook/appevents/g;->a(II)V
+    invoke-static {p1, v0}, Lf4/g;->h(II)V
 
     .line 6
     .line 7
     .line 8
-    invoke-virtual {p0}, Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableList/f;->J()I
+    invoke-virtual {p0}, Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableList/f;->E()I
 
     .line 9
     .line 10
@@ -3395,7 +2696,7 @@
 
     .line 22
     .line 23
-    invoke-static {p1, v1}, Lma/a;->Q(II)I
+    invoke-static {p1, v1}, Lcom/google/android/gms/internal/measurement/Q1;->o(II)I
 
     .line 24
     .line 25
@@ -3434,16 +2735,19 @@
 .method public final getSize()I
     .locals 1
 
+    .line 1
     iget v0, p0, Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableList/f;->j:I
 
+    .line 2
+    .line 3
     return v0
 .end method
 
-.method public final i(ILjava/lang/Object;[Ljava/lang/Object;)V
+.method public final h(ILjava/lang/Object;[Ljava/lang/Object;)V
     .locals 5
 
     .line 1
-    invoke-virtual {p0}, Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableList/f;->M()I
+    invoke-virtual {p0}, Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableList/f;->H()I
 
     .line 2
     .line 3
@@ -3455,7 +2759,7 @@
 
     .line 6
     .line 7
-    invoke-virtual {p0, v1}, Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableList/f;->q([Ljava/lang/Object;)[Ljava/lang/Object;
+    invoke-virtual {p0, v1}, Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableList/f;->n([Ljava/lang/Object;)[Ljava/lang/Object;
 
     .line 8
     .line 9
@@ -3479,7 +2783,7 @@
 
     .line 18
     .line 19
-    invoke-static {v2, v3, v1, p1, v0}, Lkotlin/collections/o;->G([Ljava/lang/Object;I[Ljava/lang/Object;II)V
+    invoke-static {v2, v3, v1, p1, v0}, LY9/o;->J([Ljava/lang/Object;I[Ljava/lang/Object;II)V
 
     .line 20
     .line 21
@@ -3496,7 +2800,7 @@
 
     .line 27
     .line 28
-    invoke-virtual {p0}, Lkotlin/collections/i;->size()I
+    invoke-virtual {p0}, LY9/j;->size()I
 
     .line 29
     .line 30
@@ -3532,7 +2836,7 @@
 
     .line 44
     .line 45
-    invoke-static {v0, v4, v1, p1, v2}, Lkotlin/collections/o;->G([Ljava/lang/Object;I[Ljava/lang/Object;II)V
+    invoke-static {v0, v4, v1, p1, v2}, LY9/o;->J([Ljava/lang/Object;I[Ljava/lang/Object;II)V
 
     .line 46
     .line 47
@@ -3541,7 +2845,7 @@
 
     .line 49
     .line 50
-    invoke-virtual {p0, v3}, Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableList/f;->w(Ljava/lang/Object;)[Ljava/lang/Object;
+    invoke-virtual {p0, v3}, Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableList/f;->q(Ljava/lang/Object;)[Ljava/lang/Object;
 
     .line 51
     .line 52
@@ -3549,7 +2853,7 @@
     move-result-object p1
 
     .line 54
-    invoke-virtual {p0, p3, v1, p1}, Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableList/f;->C([Ljava/lang/Object;[Ljava/lang/Object;[Ljava/lang/Object;)V
+    invoke-virtual {p0, p3, v1, p1}, Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableList/f;->w([Ljava/lang/Object;[Ljava/lang/Object;[Ljava/lang/Object;)V
 
     .line 55
     .line 56
@@ -3576,38 +2880,7 @@
     return-object v0
 .end method
 
-.method public final listIterator()Ljava/util/ListIterator;
-    .locals 1
-
-    const/4 v0, 0x0
-
-    .line 1
-    invoke-virtual {p0, v0}, Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableList/f;->listIterator(I)Ljava/util/ListIterator;
-
-    move-result-object v0
-
-    return-object v0
-.end method
-
-.method public final listIterator(I)Ljava/util/ListIterator;
-    .locals 1
-
-    .line 2
-    invoke-virtual {p0}, Lkotlin/collections/i;->size()I
-
-    move-result v0
-
-    invoke-static {p1, v0}, Lcom/facebook/appevents/g;->b(II)V
-
-    .line 3
-    new-instance v0, Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableList/h;
-
-    invoke-direct {v0, p0, p1}, Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableList/h;-><init>(Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableList/f;I)V
-
-    return-object v0
-.end method
-
-.method public final o([Ljava/lang/Object;)Z
+.method public final l([Ljava/lang/Object;)Z
     .locals 2
 
     .line 1
@@ -3630,7 +2903,7 @@
 
     .line 9
     .line 10
-    iget-object v0, p0, Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableList/f;->g:Lk1/b;
+    iget-object v0, p0, Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableList/f;->g:Lo0/b;
 
     .line 11
     .line 12
@@ -3652,7 +2925,38 @@
     return p1
 .end method
 
-.method public final p(I)Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableList/a;
+.method public final listIterator()Ljava/util/ListIterator;
+    .locals 1
+
+    const/4 v0, 0x0
+
+    .line 1
+    invoke-virtual {p0, v0}, Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableList/f;->listIterator(I)Ljava/util/ListIterator;
+
+    move-result-object v0
+
+    return-object v0
+.end method
+
+.method public final listIterator(I)Ljava/util/ListIterator;
+    .locals 1
+
+    .line 2
+    invoke-virtual {p0}, LY9/j;->size()I
+
+    move-result v0
+
+    invoke-static {p1, v0}, Lf4/g;->j(II)V
+
+    .line 3
+    new-instance v0, Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableList/h;
+
+    invoke-direct {v0, p0, p1}, Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableList/h;-><init>(Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableList/f;I)V
+
+    return-object v0
+.end method
+
+.method public final m(I)Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableList/a;
     .locals 4
 
     .line 1
@@ -3664,7 +2968,7 @@
 
     .line 4
     .line 5
-    invoke-virtual {p0}, Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableList/f;->J()I
+    invoke-virtual {p0}, Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableList/f;->E()I
 
     .line 6
     .line 7
@@ -3676,7 +2980,7 @@
 
     .line 10
     .line 11
-    invoke-static {p1, v1}, Lcom/facebook/appevents/g;->b(II)V
+    invoke-static {p1, v1}, Lf4/g;->j(II)V
 
     .line 12
     .line 13
@@ -3689,11 +2993,11 @@
 
     .line 17
     .line 18
-    new-instance v1, Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableList/i;
+    new-instance v1, Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableList/c;
 
     .line 19
     .line 20
-    invoke-direct {v1, v0, p1}, Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableList/i;-><init>(Ljava/lang/Object;I)V
+    invoke-direct {v1, v0, p1}, Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableList/c;-><init>(Ljava/lang/Object;I)V
 
     .line 21
     .line 22
@@ -3706,11 +3010,11 @@
 
     .line 25
     .line 26
-    new-instance v3, Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableList/k;
+    new-instance v3, Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableList/j;
 
     .line 27
     .line 28
-    invoke-direct {v3, v0, p1, v1, v2}, Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableList/k;-><init>([Ljava/lang/Object;III)V
+    invoke-direct {v3, v0, p1, v1, v2}, Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableList/j;-><init>([Ljava/lang/Object;III)V
 
     .line 29
     .line 30
@@ -3727,23 +3031,15 @@
 
     .line 35
     .line 36
-    invoke-virtual {v0}, Ljava/lang/Object;->toString()Ljava/lang/String;
+    invoke-direct {p1, v0}, Ljava/lang/IllegalStateException;-><init>(Ljava/lang/String;)V
 
     .line 37
     .line 38
     .line 39
-    move-result-object v0
-
-    .line 40
-    invoke-direct {p1, v0}, Ljava/lang/IllegalStateException;-><init>(Ljava/lang/String;)V
-
-    .line 41
-    .line 42
-    .line 43
     throw p1
 .end method
 
-.method public final q([Ljava/lang/Object;)[Ljava/lang/Object;
+.method public final n([Ljava/lang/Object;)[Ljava/lang/Object;
     .locals 4
 
     .line 1
@@ -3751,7 +3047,7 @@
 
     .line 2
     .line 3
-    invoke-virtual {p0}, Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableList/f;->v()[Ljava/lang/Object;
+    invoke-virtual {p0}, Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableList/f;->p()[Ljava/lang/Object;
 
     .line 4
     .line 5
@@ -3763,7 +3059,7 @@
 
     .line 8
     :cond_0
-    invoke-virtual {p0, p1}, Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableList/f;->o([Ljava/lang/Object;)Z
+    invoke-virtual {p0, p1}, Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableList/f;->l([Ljava/lang/Object;)Z
 
     .line 9
     .line 10
@@ -3779,7 +3075,7 @@
 
     .line 15
     :cond_1
-    invoke-virtual {p0}, Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableList/f;->v()[Ljava/lang/Object;
+    invoke-virtual {p0}, Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableList/f;->p()[Ljava/lang/Object;
 
     .line 16
     .line 17
@@ -3809,12 +3105,286 @@
     const/4 v3, 0x0
 
     .line 28
-    invoke-static {p1, v0, v3, v1, v2}, Lkotlin/collections/o;->J([Ljava/lang/Object;[Ljava/lang/Object;III)V
+    invoke-static {p1, v3, v0, v1, v2}, LY9/o;->M([Ljava/lang/Object;I[Ljava/lang/Object;II)V
 
     .line 29
     .line 30
     .line 31
     return-object v0
+.end method
+
+.method public final o(I[Ljava/lang/Object;)[Ljava/lang/Object;
+    .locals 3
+
+    .line 1
+    invoke-virtual {p0, p2}, Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableList/f;->l([Ljava/lang/Object;)Z
+
+    .line 2
+    .line 3
+    .line 4
+    move-result v0
+
+    .line 5
+    const/4 v1, 0x0
+
+    .line 6
+    if-eqz v0, :cond_0
+
+    .line 7
+    .line 8
+    rsub-int/lit8 v0, p1, 0x20
+
+    .line 9
+    .line 10
+    invoke-static {p2, v1, p2, p1, v0}, Ljava/lang/System;->arraycopy(Ljava/lang/Object;ILjava/lang/Object;II)V
+
+    .line 11
+    .line 12
+    .line 13
+    return-object p2
+
+    .line 14
+    :cond_0
+    invoke-virtual {p0}, Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableList/f;->p()[Ljava/lang/Object;
+
+    .line 15
+    .line 16
+    .line 17
+    move-result-object v0
+
+    .line 18
+    rsub-int/lit8 v2, p1, 0x20
+
+    .line 19
+    .line 20
+    invoke-static {p2, v1, v0, p1, v2}, Ljava/lang/System;->arraycopy(Ljava/lang/Object;ILjava/lang/Object;II)V
+
+    .line 21
+    .line 22
+    .line 23
+    return-object v0
+.end method
+
+.method public final p()[Ljava/lang/Object;
+    .locals 3
+
+    .line 1
+    const/16 v0, 0x21
+
+    .line 2
+    .line 3
+    new-array v0, v0, [Ljava/lang/Object;
+
+    .line 4
+    .line 5
+    const/16 v1, 0x20
+
+    .line 6
+    .line 7
+    iget-object v2, p0, Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableList/f;->g:Lo0/b;
+
+    .line 8
+    .line 9
+    aput-object v2, v0, v1
+
+    .line 10
+    .line 11
+    return-object v0
+.end method
+
+.method public final q(Ljava/lang/Object;)[Ljava/lang/Object;
+    .locals 2
+
+    .line 1
+    const/16 v0, 0x21
+
+    .line 2
+    .line 3
+    new-array v0, v0, [Ljava/lang/Object;
+
+    .line 4
+    .line 5
+    const/4 v1, 0x0
+
+    .line 6
+    aput-object p1, v0, v1
+
+    .line 7
+    .line 8
+    const/16 p1, 0x20
+
+    .line 9
+    .line 10
+    iget-object v1, p0, Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableList/f;->g:Lo0/b;
+
+    .line 11
+    .line 12
+    aput-object v1, v0, p1
+
+    .line 13
+    .line 14
+    return-object v0
+.end method
+
+.method public final r([Ljava/lang/Object;II)[Ljava/lang/Object;
+    .locals 4
+
+    .line 1
+    const/4 v0, 0x0
+
+    .line 2
+    if-ltz p3, :cond_0
+
+    .line 3
+    .line 4
+    const/4 v1, 0x1
+
+    .line 5
+    goto :goto_0
+
+    .line 6
+    :cond_0
+    const/4 v1, 0x0
+
+    .line 7
+    :goto_0
+    const/4 v2, 0x0
+
+    .line 8
+    if-eqz v1, :cond_5
+
+    .line 9
+    .line 10
+    if-nez p3, :cond_1
+
+    .line 11
+    .line 12
+    return-object p1
+
+    .line 13
+    :cond_1
+    invoke-static {p2, p3}, Lcom/google/android/gms/internal/measurement/Q1;->o(II)I
+
+    .line 14
+    .line 15
+    .line 16
+    move-result v1
+
+    .line 17
+    aget-object v3, p1, v1
+
+    .line 18
+    .line 19
+    check-cast v3, [Ljava/lang/Object;
+
+    .line 20
+    .line 21
+    add-int/lit8 p3, p3, -0x5
+
+    .line 22
+    .line 23
+    invoke-virtual {p0, v3, p2, p3}, Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableList/f;->r([Ljava/lang/Object;II)[Ljava/lang/Object;
+
+    .line 24
+    .line 25
+    .line 26
+    move-result-object p2
+
+    .line 27
+    const/16 p3, 0x1f
+
+    .line 28
+    .line 29
+    if-ge v1, p3, :cond_3
+
+    .line 30
+    .line 31
+    add-int/lit8 p3, v1, 0x1
+
+    .line 32
+    .line 33
+    aget-object v3, p1, p3
+
+    .line 34
+    .line 35
+    if-eqz v3, :cond_3
+
+    .line 36
+    .line 37
+    invoke-virtual {p0, p1}, Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableList/f;->l([Ljava/lang/Object;)Z
+
+    .line 38
+    .line 39
+    .line 40
+    move-result v3
+
+    .line 41
+    if-eqz v3, :cond_2
+
+    .line 42
+    .line 43
+    const/16 v3, 0x20
+
+    .line 44
+    .line 45
+    invoke-static {p1, p3, v3, v2}, Ljava/util/Arrays;->fill([Ljava/lang/Object;IILjava/lang/Object;)V
+
+    .line 46
+    .line 47
+    .line 48
+    :cond_2
+    invoke-virtual {p0}, Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableList/f;->p()[Ljava/lang/Object;
+
+    .line 49
+    .line 50
+    .line 51
+    move-result-object v2
+
+    .line 52
+    invoke-static {p1, v0, v2, v0, p3}, Ljava/lang/System;->arraycopy(Ljava/lang/Object;ILjava/lang/Object;II)V
+
+    .line 53
+    .line 54
+    .line 55
+    move-object p1, v2
+
+    .line 56
+    :cond_3
+    aget-object p3, p1, v1
+
+    .line 57
+    .line 58
+    if-eq p2, p3, :cond_4
+
+    .line 59
+    .line 60
+    invoke-virtual {p0, p1}, Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableList/f;->n([Ljava/lang/Object;)[Ljava/lang/Object;
+
+    .line 61
+    .line 62
+    .line 63
+    move-result-object p1
+
+    .line 64
+    aput-object p2, p1, v1
+
+    .line 65
+    .line 66
+    :cond_4
+    return-object p1
+
+    .line 67
+    :cond_5
+    const-string p1, "shift should be positive"
+
+    .line 68
+    .line 69
+    invoke-static {p1}, Landroidx/compose/runtime/o;->d0(Ljava/lang/String;)V
+
+    .line 70
+    .line 71
+    .line 72
+    throw v2
 .end method
 
 .method public final removeAll(Ljava/util/Collection;)Z
@@ -3830,7 +3400,7 @@
     .line 4
     .line 5
     .line 6
-    invoke-virtual {p0, v0}, Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableList/f;->G(Lzh/c;)Z
+    invoke-virtual {p0, v0}, Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableList/f;->B(Lka/c;)Z
 
     .line 7
     .line 8
@@ -3845,7 +3415,7 @@
     .locals 5
 
     .line 1
-    invoke-virtual {p0}, Lkotlin/collections/i;->size()I
+    invoke-virtual {p0}, LY9/j;->size()I
 
     .line 2
     .line 3
@@ -3853,7 +3423,7 @@
     move-result v0
 
     .line 5
-    invoke-static {p1, v0}, Lcom/facebook/appevents/g;->a(II)V
+    invoke-static {p1, v0}, Lf4/g;->h(II)V
 
     .line 6
     .line 7
@@ -3870,7 +3440,7 @@
 
     .line 13
     .line 14
-    invoke-virtual {p0}, Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableList/f;->J()I
+    invoke-virtual {p0}, Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableList/f;->E()I
 
     .line 15
     .line 16
@@ -3893,7 +3463,7 @@
     sub-int/2addr p1, v0
 
     .line 25
-    invoke-virtual {p0, v1, v0, v2, p1}, Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableList/f;->I([Ljava/lang/Object;III)Ljava/lang/Object;
+    invoke-virtual {p0, v1, v0, v2, p1}, Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableList/f;->D([Ljava/lang/Object;III)Ljava/lang/Object;
 
     .line 26
     .line 27
@@ -3933,7 +3503,7 @@
 
     .line 43
     .line 44
-    invoke-virtual {p0, v2, v4, p1, v1}, Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableList/f;->H([Ljava/lang/Object;IILandroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableList/d;)[Ljava/lang/Object;
+    invoke-virtual {p0, v2, v4, p1, v1}, Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableList/f;->C([Ljava/lang/Object;IILandroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableList/d;)[Ljava/lang/Object;
 
     .line 45
     .line 46
@@ -3945,7 +3515,7 @@
 
     .line 49
     .line 50
-    invoke-virtual {p0, p1, v0, v2, v3}, Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableList/f;->I([Ljava/lang/Object;III)Ljava/lang/Object;
+    invoke-virtual {p0, p1, v0, v2, v3}, Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableList/f;->D([Ljava/lang/Object;III)Ljava/lang/Object;
 
     .line 51
     .line 52
@@ -3957,11 +3527,99 @@
     return-object p1
 .end method
 
+.method public final s([Ljava/lang/Object;IILandroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableList/d;)[Ljava/lang/Object;
+    .locals 4
+
+    .line 1
+    add-int/lit8 v0, p3, -0x1
+
+    .line 2
+    .line 3
+    invoke-static {v0, p2}, Lcom/google/android/gms/internal/measurement/Q1;->o(II)I
+
+    .line 4
+    .line 5
+    .line 6
+    move-result v0
+
+    .line 7
+    const/4 v1, 0x0
+
+    .line 8
+    const/4 v2, 0x5
+
+    .line 9
+    if-ne p2, v2, :cond_0
+
+    .line 10
+    .line 11
+    aget-object p2, p1, v0
+
+    .line 12
+    .line 13
+    iput-object p2, p4, Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableList/d;->a:Ljava/lang/Object;
+
+    .line 14
+    .line 15
+    move-object p2, v1
+
+    .line 16
+    goto :goto_0
+
+    .line 17
+    :cond_0
+    aget-object v3, p1, v0
+
+    .line 18
+    .line 19
+    check-cast v3, [Ljava/lang/Object;
+
+    .line 20
+    .line 21
+    sub-int/2addr p2, v2
+
+    .line 22
+    invoke-virtual {p0, v3, p2, p3, p4}, Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableList/f;->s([Ljava/lang/Object;IILandroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableList/d;)[Ljava/lang/Object;
+
+    .line 23
+    .line 24
+    .line 25
+    move-result-object p2
+
+    .line 26
+    :goto_0
+    if-nez p2, :cond_1
+
+    .line 27
+    .line 28
+    if-nez v0, :cond_1
+
+    .line 29
+    .line 30
+    return-object v1
+
+    .line 31
+    :cond_1
+    invoke-virtual {p0, p1}, Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableList/f;->n([Ljava/lang/Object;)[Ljava/lang/Object;
+
+    .line 32
+    .line 33
+    .line 34
+    move-result-object p1
+
+    .line 35
+    aput-object p2, p1, v0
+
+    .line 36
+    .line 37
+    return-object p1
+.end method
+
 .method public final set(ILjava/lang/Object;)Ljava/lang/Object;
     .locals 8
 
     .line 1
-    invoke-virtual {p0}, Lkotlin/collections/i;->size()I
+    invoke-virtual {p0}, LY9/j;->size()I
 
     .line 2
     .line 3
@@ -3969,12 +3627,12 @@
     move-result v0
 
     .line 5
-    invoke-static {p1, v0}, Lcom/facebook/appevents/g;->a(II)V
+    invoke-static {p1, v0}, Lf4/g;->h(II)V
 
     .line 6
     .line 7
     .line 8
-    invoke-virtual {p0}, Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableList/f;->J()I
+    invoke-virtual {p0}, Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableList/f;->E()I
 
     .line 9
     .line 10
@@ -3990,7 +3648,7 @@
 
     .line 15
     .line 16
-    invoke-virtual {p0, v0}, Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableList/f;->q([Ljava/lang/Object;)[Ljava/lang/Object;
+    invoke-virtual {p0, v0}, Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableList/f;->n([Ljava/lang/Object;)[Ljava/lang/Object;
 
     .line 17
     .line 18
@@ -4071,7 +3729,7 @@
     move-object v7, v0
 
     .line 53
-    invoke-virtual/range {v2 .. v7}, Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableList/f;->K([Ljava/lang/Object;IILjava/lang/Object;Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableList/d;)[Ljava/lang/Object;
+    invoke-virtual/range {v2 .. v7}, Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableList/f;->F([Ljava/lang/Object;IILjava/lang/Object;Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableList/d;)[Ljava/lang/Object;
 
     .line 54
     .line 55
@@ -4090,346 +3748,7 @@
     return-object p1
 .end method
 
-.method public final t(I[Ljava/lang/Object;)[Ljava/lang/Object;
-    .locals 3
-
-    .line 1
-    invoke-virtual {p0, p2}, Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableList/f;->o([Ljava/lang/Object;)Z
-
-    .line 2
-    .line 3
-    .line 4
-    move-result v0
-
-    .line 5
-    const/4 v1, 0x0
-
-    .line 6
-    if-eqz v0, :cond_0
-
-    .line 7
-    .line 8
-    rsub-int/lit8 v0, p1, 0x20
-
-    .line 9
-    .line 10
-    invoke-static {p2, v1, p2, p1, v0}, Ljava/lang/System;->arraycopy(Ljava/lang/Object;ILjava/lang/Object;II)V
-
-    .line 11
-    .line 12
-    .line 13
-    return-object p2
-
-    .line 14
-    :cond_0
-    invoke-virtual {p0}, Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableList/f;->v()[Ljava/lang/Object;
-
-    .line 15
-    .line 16
-    .line 17
-    move-result-object v0
-
-    .line 18
-    rsub-int/lit8 v2, p1, 0x20
-
-    .line 19
-    .line 20
-    invoke-static {p2, v1, v0, p1, v2}, Ljava/lang/System;->arraycopy(Ljava/lang/Object;ILjava/lang/Object;II)V
-
-    .line 21
-    .line 22
-    .line 23
-    return-object v0
-.end method
-
-.method public final v()[Ljava/lang/Object;
-    .locals 3
-
-    .line 1
-    const/16 v0, 0x21
-
-    new-array v0, v0, [Ljava/lang/Object;
-
-    const/16 v1, 0x20
-
-    iget-object v2, p0, Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableList/f;->g:Lk1/b;
-
-    aput-object v2, v0, v1
-
-    return-object v0
-.end method
-
-.method public final w(Ljava/lang/Object;)[Ljava/lang/Object;
-    .locals 2
-
-    .line 1
-    const/16 v0, 0x21
-
-    new-array v0, v0, [Ljava/lang/Object;
-
-    const/4 v1, 0x0
-
-    aput-object p1, v0, v1
-
-    const/16 p1, 0x20
-
-    iget-object v1, p0, Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableList/f;->g:Lk1/b;
-
-    aput-object v1, v0, p1
-
-    return-object v0
-.end method
-
-.method public final x(II[Ljava/lang/Object;)[Ljava/lang/Object;
-    .locals 4
-
-    .line 1
-    const/4 v0, 0x0
-
-    .line 2
-    if-ltz p2, :cond_0
-
-    .line 3
-    .line 4
-    const/4 v1, 0x1
-
-    .line 5
-    goto :goto_0
-
-    .line 6
-    :cond_0
-    const/4 v1, 0x0
-
-    .line 7
-    :goto_0
-    const/4 v2, 0x0
-
-    .line 8
-    if-eqz v1, :cond_5
-
-    .line 9
-    .line 10
-    if-nez p2, :cond_1
-
-    .line 11
-    .line 12
-    return-object p3
-
-    .line 13
-    :cond_1
-    invoke-static {p1, p2}, Lma/a;->Q(II)I
-
-    .line 14
-    .line 15
-    .line 16
-    move-result v1
-
-    .line 17
-    aget-object v3, p3, v1
-
-    .line 18
-    .line 19
-    check-cast v3, [Ljava/lang/Object;
-
-    .line 20
-    .line 21
-    add-int/lit8 p2, p2, -0x5
-
-    .line 22
-    .line 23
-    invoke-virtual {p0, p1, p2, v3}, Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableList/f;->x(II[Ljava/lang/Object;)[Ljava/lang/Object;
-
-    .line 24
-    .line 25
-    .line 26
-    move-result-object p1
-
-    .line 27
-    const/16 p2, 0x1f
-
-    .line 28
-    .line 29
-    if-ge v1, p2, :cond_3
-
-    .line 30
-    .line 31
-    add-int/lit8 p2, v1, 0x1
-
-    .line 32
-    .line 33
-    aget-object v3, p3, p2
-
-    .line 34
-    .line 35
-    if-eqz v3, :cond_3
-
-    .line 36
-    .line 37
-    invoke-virtual {p0, p3}, Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableList/f;->o([Ljava/lang/Object;)Z
-
-    .line 38
-    .line 39
-    .line 40
-    move-result v3
-
-    .line 41
-    if-eqz v3, :cond_2
-
-    .line 42
-    .line 43
-    const/16 v3, 0x20
-
-    .line 44
-    .line 45
-    invoke-static {p3, p2, v3, v2}, Ljava/util/Arrays;->fill([Ljava/lang/Object;IILjava/lang/Object;)V
-
-    .line 46
-    .line 47
-    .line 48
-    :cond_2
-    invoke-virtual {p0}, Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableList/f;->v()[Ljava/lang/Object;
-
-    .line 49
-    .line 50
-    .line 51
-    move-result-object v2
-
-    .line 52
-    invoke-static {p3, v0, v2, v0, p2}, Ljava/lang/System;->arraycopy(Ljava/lang/Object;ILjava/lang/Object;II)V
-
-    .line 53
-    .line 54
-    .line 55
-    move-object p3, v2
-
-    .line 56
-    :cond_3
-    aget-object p2, p3, v1
-
-    .line 57
-    .line 58
-    if-eq p1, p2, :cond_4
-
-    .line 59
-    .line 60
-    invoke-virtual {p0, p3}, Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableList/f;->q([Ljava/lang/Object;)[Ljava/lang/Object;
-
-    .line 61
-    .line 62
-    .line 63
-    move-result-object p3
-
-    .line 64
-    aput-object p1, p3, v1
-
-    .line 65
-    .line 66
-    :cond_4
-    return-object p3
-
-    .line 67
-    :cond_5
-    const-string p1, "shift should be positive"
-
-    .line 68
-    .line 69
-    invoke-static {p1}, Lcom/google/android/gms/internal/consent_sdk/z;->u(Ljava/lang/String;)V
-
-    .line 70
-    .line 71
-    .line 72
-    throw v2
-.end method
-
-.method public final y([Ljava/lang/Object;IILandroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableList/d;)[Ljava/lang/Object;
-    .locals 4
-
-    .line 1
-    add-int/lit8 v0, p3, -0x1
-
-    .line 2
-    .line 3
-    invoke-static {v0, p2}, Lma/a;->Q(II)I
-
-    .line 4
-    .line 5
-    .line 6
-    move-result v0
-
-    .line 7
-    const/4 v1, 0x0
-
-    .line 8
-    const/4 v2, 0x5
-
-    .line 9
-    if-ne p2, v2, :cond_0
-
-    .line 10
-    .line 11
-    aget-object p2, p1, v0
-
-    .line 12
-    .line 13
-    iput-object p2, p4, Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableList/d;->a:Ljava/lang/Object;
-
-    .line 14
-    .line 15
-    move-object p2, v1
-
-    .line 16
-    goto :goto_0
-
-    .line 17
-    :cond_0
-    aget-object v3, p1, v0
-
-    .line 18
-    .line 19
-    check-cast v3, [Ljava/lang/Object;
-
-    .line 20
-    .line 21
-    sub-int/2addr p2, v2
-
-    .line 22
-    invoke-virtual {p0, v3, p2, p3, p4}, Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableList/f;->y([Ljava/lang/Object;IILandroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableList/d;)[Ljava/lang/Object;
-
-    .line 23
-    .line 24
-    .line 25
-    move-result-object p2
-
-    .line 26
-    :goto_0
-    if-nez p2, :cond_1
-
-    .line 27
-    .line 28
-    if-nez v0, :cond_1
-
-    .line 29
-    .line 30
-    return-object v1
-
-    .line 31
-    :cond_1
-    invoke-virtual {p0, p1}, Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableList/f;->q([Ljava/lang/Object;)[Ljava/lang/Object;
-
-    .line 32
-    .line 33
-    .line 34
-    move-result-object p1
-
-    .line 35
-    aput-object p2, p1, v0
-
-    .line 36
-    .line 37
-    return-object p1
-.end method
-
-.method public final z(II[Ljava/lang/Object;)V
+.method public final t([Ljava/lang/Object;II)V
     .locals 3
 
     .line 1
@@ -4439,7 +3758,7 @@
     const/4 v1, 0x0
 
     .line 3
-    if-nez p2, :cond_1
+    if-nez p3, :cond_1
 
     .line 4
     .line 5
@@ -4447,24 +3766,24 @@
 
     .line 6
     .line 7
-    if-nez p3, :cond_0
+    if-nez p1, :cond_0
 
     .line 8
     .line 9
-    new-array p3, v0, [Ljava/lang/Object;
+    new-array p1, v0, [Ljava/lang/Object;
 
     .line 10
     .line 11
     :cond_0
-    iput-object p3, p0, Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableList/f;->i:[Ljava/lang/Object;
+    iput-object p1, p0, Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableList/f;->i:[Ljava/lang/Object;
 
     .line 12
     .line 13
-    iput p1, p0, Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableList/f;->j:I
+    iput p2, p0, Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableList/f;->j:I
 
     .line 14
     .line 15
-    iput p2, p0, Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableList/f;->f:I
+    iput p3, p0, Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableList/f;->f:I
 
     .line 16
     .line 17
@@ -4481,12 +3800,12 @@
     .line 21
     .line 22
     .line 23
-    invoke-virtual {p0, p3, p2, p1, v2}, Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableList/f;->y([Ljava/lang/Object;IILandroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableList/d;)[Ljava/lang/Object;
+    invoke-virtual {p0, p1, p3, p2, v2}, Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableList/f;->s([Ljava/lang/Object;IILandroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableList/d;)[Ljava/lang/Object;
 
     .line 24
     .line 25
     .line 26
-    move-result-object p3
+    move-result-object p1
 
     .line 27
     iget-object v1, v2, Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableList/d;->a:Ljava/lang/Object;
@@ -4501,22 +3820,22 @@
 
     .line 32
     .line 33
-    iput p1, p0, Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableList/f;->j:I
+    iput p2, p0, Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableList/f;->j:I
 
     .line 34
     .line 35
-    const/4 p1, 0x1
+    const/4 p2, 0x1
 
     .line 36
-    aget-object p1, p3, p1
+    aget-object p2, p1, p2
 
     .line 37
     .line 38
-    if-nez p1, :cond_2
+    if-nez p2, :cond_2
 
     .line 39
     .line 40
-    aget-object p1, p3, v0
+    aget-object p1, p1, v0
 
     .line 41
     .line 42
@@ -4528,11 +3847,11 @@
 
     .line 45
     .line 46
-    add-int/lit8 p2, p2, -0x5
+    add-int/lit8 p3, p3, -0x5
 
     .line 47
     .line 48
-    iput p2, p0, Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableList/f;->f:I
+    iput p3, p0, Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableList/f;->f:I
 
     .line 49
     .line 50
@@ -4540,14 +3859,714 @@
 
     .line 51
     :cond_2
-    iput-object p3, p0, Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableList/f;->h:[Ljava/lang/Object;
+    iput-object p1, p0, Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableList/f;->h:[Ljava/lang/Object;
 
     .line 52
     .line 53
-    iput p2, p0, Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableList/f;->f:I
+    iput p3, p0, Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableList/f;->f:I
 
     .line 54
     .line 55
     :goto_0
     return-void
+.end method
+
+.method public final u([Ljava/lang/Object;IILjava/util/Iterator;)[Ljava/lang/Object;
+    .locals 4
+
+    .line 1
+    invoke-interface {p4}, Ljava/util/Iterator;->hasNext()Z
+
+    .line 2
+    .line 3
+    .line 4
+    move-result v0
+
+    .line 5
+    const/4 v1, 0x0
+
+    .line 6
+    if-eqz v0, :cond_4
+
+    .line 7
+    .line 8
+    const/4 v0, 0x0
+
+    .line 9
+    const/4 v2, 0x1
+
+    .line 10
+    if-ltz p3, :cond_0
+
+    .line 11
+    .line 12
+    const/4 v3, 0x1
+
+    .line 13
+    goto :goto_0
+
+    .line 14
+    :cond_0
+    const/4 v3, 0x0
+
+    .line 15
+    :goto_0
+    if-eqz v3, :cond_3
+
+    .line 16
+    .line 17
+    if-nez p3, :cond_1
+
+    .line 18
+    .line 19
+    invoke-interface {p4}, Ljava/util/Iterator;->next()Ljava/lang/Object;
+
+    .line 20
+    .line 21
+    .line 22
+    move-result-object p1
+
+    .line 23
+    check-cast p1, [Ljava/lang/Object;
+
+    .line 24
+    .line 25
+    return-object p1
+
+    .line 26
+    :cond_1
+    invoke-virtual {p0, p1}, Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableList/f;->n([Ljava/lang/Object;)[Ljava/lang/Object;
+
+    .line 27
+    .line 28
+    .line 29
+    move-result-object p1
+
+    .line 30
+    invoke-static {p2, p3}, Lcom/google/android/gms/internal/measurement/Q1;->o(II)I
+
+    .line 31
+    .line 32
+    .line 33
+    move-result v1
+
+    .line 34
+    aget-object v3, p1, v1
+
+    .line 35
+    .line 36
+    check-cast v3, [Ljava/lang/Object;
+
+    .line 37
+    .line 38
+    add-int/lit8 p3, p3, -0x5
+
+    .line 39
+    .line 40
+    invoke-virtual {p0, v3, p2, p3, p4}, Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableList/f;->u([Ljava/lang/Object;IILjava/util/Iterator;)[Ljava/lang/Object;
+
+    .line 41
+    .line 42
+    .line 43
+    move-result-object p2
+
+    .line 44
+    aput-object p2, p1, v1
+
+    .line 45
+    .line 46
+    :goto_1
+    add-int/2addr v1, v2
+
+    .line 47
+    const/16 p2, 0x20
+
+    .line 48
+    .line 49
+    if-ge v1, p2, :cond_2
+
+    .line 50
+    .line 51
+    invoke-interface {p4}, Ljava/util/Iterator;->hasNext()Z
+
+    .line 52
+    .line 53
+    .line 54
+    move-result p2
+
+    .line 55
+    if-eqz p2, :cond_2
+
+    .line 56
+    .line 57
+    aget-object p2, p1, v1
+
+    .line 58
+    .line 59
+    check-cast p2, [Ljava/lang/Object;
+
+    .line 60
+    .line 61
+    invoke-virtual {p0, p2, v0, p3, p4}, Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableList/f;->u([Ljava/lang/Object;IILjava/util/Iterator;)[Ljava/lang/Object;
+
+    .line 62
+    .line 63
+    .line 64
+    move-result-object p2
+
+    .line 65
+    aput-object p2, p1, v1
+
+    .line 66
+    .line 67
+    goto :goto_1
+
+    .line 68
+    :cond_2
+    return-object p1
+
+    .line 69
+    :cond_3
+    const-string p1, "negative shift"
+
+    .line 70
+    .line 71
+    invoke-static {p1}, Landroidx/compose/runtime/o;->d0(Ljava/lang/String;)V
+
+    .line 72
+    .line 73
+    .line 74
+    throw v1
+
+    .line 75
+    :cond_4
+    const-string p1, "invalid buffersIterator"
+
+    .line 76
+    .line 77
+    invoke-static {p1}, Landroidx/compose/runtime/o;->d0(Ljava/lang/String;)V
+
+    .line 78
+    .line 79
+    .line 80
+    throw v1
+.end method
+
+.method public final v([Ljava/lang/Object;I[[Ljava/lang/Object;)[Ljava/lang/Object;
+    .locals 4
+
+    .line 1
+    new-instance v0, LY9/d;
+
+    .line 2
+    .line 3
+    const/4 v1, 0x3
+
+    .line 4
+    invoke-direct {v0, p3, v1}, LY9/d;-><init>(Ljava/lang/Object;I)V
+
+    .line 5
+    .line 6
+    .line 7
+    shr-int/lit8 p3, p2, 0x5
+
+    .line 8
+    .line 9
+    iget v1, p0, Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableList/f;->f:I
+
+    .line 10
+    .line 11
+    const/4 v2, 0x1
+
+    .line 12
+    shl-int v3, v2, v1
+
+    .line 13
+    .line 14
+    if-ge p3, v3, :cond_0
+
+    .line 15
+    .line 16
+    invoke-virtual {p0, p1, p2, v1, v0}, Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableList/f;->u([Ljava/lang/Object;IILjava/util/Iterator;)[Ljava/lang/Object;
+
+    .line 17
+    .line 18
+    .line 19
+    move-result-object p1
+
+    .line 20
+    goto :goto_0
+
+    .line 21
+    :cond_0
+    invoke-virtual {p0, p1}, Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableList/f;->n([Ljava/lang/Object;)[Ljava/lang/Object;
+
+    .line 22
+    .line 23
+    .line 24
+    move-result-object p1
+
+    .line 25
+    :goto_0
+    invoke-virtual {v0}, LY9/d;->hasNext()Z
+
+    .line 26
+    .line 27
+    .line 28
+    move-result p2
+
+    .line 29
+    if-eqz p2, :cond_1
+
+    .line 30
+    .line 31
+    iget p2, p0, Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableList/f;->f:I
+
+    .line 32
+    .line 33
+    add-int/lit8 p2, p2, 0x5
+
+    .line 34
+    .line 35
+    iput p2, p0, Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableList/f;->f:I
+
+    .line 36
+    .line 37
+    invoke-virtual {p0, p1}, Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableList/f;->q(Ljava/lang/Object;)[Ljava/lang/Object;
+
+    .line 38
+    .line 39
+    .line 40
+    move-result-object p1
+
+    .line 41
+    iget p2, p0, Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableList/f;->f:I
+
+    .line 42
+    .line 43
+    shl-int p3, v2, p2
+
+    .line 44
+    .line 45
+    invoke-virtual {p0, p1, p3, p2, v0}, Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableList/f;->u([Ljava/lang/Object;IILjava/util/Iterator;)[Ljava/lang/Object;
+
+    .line 46
+    .line 47
+    .line 48
+    goto :goto_0
+
+    .line 49
+    :cond_1
+    return-object p1
+.end method
+
+.method public final w([Ljava/lang/Object;[Ljava/lang/Object;[Ljava/lang/Object;)V
+    .locals 4
+
+    .line 1
+    invoke-virtual {p0}, LY9/j;->size()I
+
+    .line 2
+    .line 3
+    .line 4
+    move-result v0
+
+    .line 5
+    shr-int/lit8 v0, v0, 0x5
+
+    .line 6
+    .line 7
+    iget v1, p0, Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableList/f;->f:I
+
+    .line 8
+    .line 9
+    const/4 v2, 0x1
+
+    .line 10
+    shl-int v3, v2, v1
+
+    .line 11
+    .line 12
+    if-le v0, v3, :cond_0
+
+    .line 13
+    .line 14
+    invoke-virtual {p0, p1}, Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableList/f;->q(Ljava/lang/Object;)[Ljava/lang/Object;
+
+    .line 15
+    .line 16
+    .line 17
+    move-result-object p1
+
+    .line 18
+    iget v0, p0, Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableList/f;->f:I
+
+    .line 19
+    .line 20
+    add-int/lit8 v0, v0, 0x5
+
+    .line 21
+    .line 22
+    invoke-virtual {p0, v0, p1, p2}, Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableList/f;->y(I[Ljava/lang/Object;[Ljava/lang/Object;)[Ljava/lang/Object;
+
+    .line 23
+    .line 24
+    .line 25
+    move-result-object p1
+
+    .line 26
+    iput-object p1, p0, Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableList/f;->h:[Ljava/lang/Object;
+
+    .line 27
+    .line 28
+    iput-object p3, p0, Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableList/f;->i:[Ljava/lang/Object;
+
+    .line 29
+    .line 30
+    iget p1, p0, Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableList/f;->f:I
+
+    .line 31
+    .line 32
+    add-int/lit8 p1, p1, 0x5
+
+    .line 33
+    .line 34
+    iput p1, p0, Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableList/f;->f:I
+
+    .line 35
+    .line 36
+    invoke-virtual {p0}, LY9/j;->size()I
+
+    .line 37
+    .line 38
+    .line 39
+    move-result p1
+
+    .line 40
+    add-int/2addr p1, v2
+
+    .line 41
+    iput p1, p0, Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableList/f;->j:I
+
+    .line 42
+    .line 43
+    goto :goto_0
+
+    .line 44
+    :cond_0
+    if-nez p1, :cond_1
+
+    .line 45
+    .line 46
+    iput-object p2, p0, Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableList/f;->h:[Ljava/lang/Object;
+
+    .line 47
+    .line 48
+    iput-object p3, p0, Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableList/f;->i:[Ljava/lang/Object;
+
+    .line 49
+    .line 50
+    invoke-virtual {p0}, LY9/j;->size()I
+
+    .line 51
+    .line 52
+    .line 53
+    move-result p1
+
+    .line 54
+    add-int/2addr p1, v2
+
+    .line 55
+    iput p1, p0, Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableList/f;->j:I
+
+    .line 56
+    .line 57
+    goto :goto_0
+
+    .line 58
+    :cond_1
+    invoke-virtual {p0, v1, p1, p2}, Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableList/f;->y(I[Ljava/lang/Object;[Ljava/lang/Object;)[Ljava/lang/Object;
+
+    .line 59
+    .line 60
+    .line 61
+    move-result-object p1
+
+    .line 62
+    iput-object p1, p0, Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableList/f;->h:[Ljava/lang/Object;
+
+    .line 63
+    .line 64
+    iput-object p3, p0, Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableList/f;->i:[Ljava/lang/Object;
+
+    .line 65
+    .line 66
+    invoke-virtual {p0}, LY9/j;->size()I
+
+    .line 67
+    .line 68
+    .line 69
+    move-result p1
+
+    .line 70
+    add-int/2addr p1, v2
+
+    .line 71
+    iput p1, p0, Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableList/f;->j:I
+
+    .line 72
+    .line 73
+    :goto_0
+    return-void
+.end method
+
+.method public final y(I[Ljava/lang/Object;[Ljava/lang/Object;)[Ljava/lang/Object;
+    .locals 3
+
+    .line 1
+    invoke-virtual {p0}, LY9/j;->size()I
+
+    .line 2
+    .line 3
+    .line 4
+    move-result v0
+
+    .line 5
+    add-int/lit8 v0, v0, -0x1
+
+    .line 6
+    .line 7
+    invoke-static {v0, p1}, Lcom/google/android/gms/internal/measurement/Q1;->o(II)I
+
+    .line 8
+    .line 9
+    .line 10
+    move-result v0
+
+    .line 11
+    invoke-virtual {p0, p2}, Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableList/f;->n([Ljava/lang/Object;)[Ljava/lang/Object;
+
+    .line 12
+    .line 13
+    .line 14
+    move-result-object p2
+
+    .line 15
+    const/4 v1, 0x5
+
+    .line 16
+    if-ne p1, v1, :cond_0
+
+    .line 17
+    .line 18
+    aput-object p3, p2, v0
+
+    .line 19
+    .line 20
+    goto :goto_0
+
+    .line 21
+    :cond_0
+    aget-object v2, p2, v0
+
+    .line 22
+    .line 23
+    check-cast v2, [Ljava/lang/Object;
+
+    .line 24
+    .line 25
+    sub-int/2addr p1, v1
+
+    .line 26
+    invoke-virtual {p0, p1, v2, p3}, Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableList/f;->y(I[Ljava/lang/Object;[Ljava/lang/Object;)[Ljava/lang/Object;
+
+    .line 27
+    .line 28
+    .line 29
+    move-result-object p1
+
+    .line 30
+    aput-object p1, p2, v0
+
+    .line 31
+    .line 32
+    :goto_0
+    return-object p2
+.end method
+
+.method public final z(Lka/c;[Ljava/lang/Object;IILandroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableList/d;Ljava/util/ArrayList;Ljava/util/ArrayList;)I
+    .locals 6
+
+    .line 1
+    invoke-virtual {p0, p2}, Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableList/f;->l([Ljava/lang/Object;)Z
+
+    .line 2
+    .line 3
+    .line 4
+    move-result v0
+
+    .line 5
+    if-eqz v0, :cond_0
+
+    .line 6
+    .line 7
+    invoke-virtual {p6, p2}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
+
+    .line 8
+    .line 9
+    .line 10
+    :cond_0
+    iget-object v0, p5, Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableList/d;->a:Ljava/lang/Object;
+
+    .line 11
+    .line 12
+    check-cast v0, [Ljava/lang/Object;
+
+    .line 13
+    .line 14
+    const/4 v1, 0x0
+
+    .line 15
+    move-object v3, v0
+
+    .line 16
+    const/4 v2, 0x0
+
+    .line 17
+    :goto_0
+    if-ge v2, p3, :cond_4
+
+    .line 18
+    .line 19
+    aget-object v4, p2, v2
+
+    .line 20
+    .line 21
+    invoke-interface {p1, v4}, Lka/c;->invoke(Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 22
+    .line 23
+    .line 24
+    move-result-object v5
+
+    .line 25
+    check-cast v5, Ljava/lang/Boolean;
+
+    .line 26
+    .line 27
+    invoke-virtual {v5}, Ljava/lang/Boolean;->booleanValue()Z
+
+    .line 28
+    .line 29
+    .line 30
+    move-result v5
+
+    .line 31
+    if-nez v5, :cond_3
+
+    .line 32
+    .line 33
+    const/16 v5, 0x20
+
+    .line 34
+    .line 35
+    if-ne p4, v5, :cond_2
+
+    .line 36
+    .line 37
+    invoke-virtual {p6}, Ljava/util/ArrayList;->isEmpty()Z
+
+    .line 38
+    .line 39
+    .line 40
+    move-result p4
+
+    .line 41
+    if-nez p4, :cond_1
+
+    .line 42
+    .line 43
+    invoke-virtual {p6}, Ljava/util/ArrayList;->size()I
+
+    .line 44
+    .line 45
+    .line 46
+    move-result p4
+
+    .line 47
+    add-int/lit8 p4, p4, -0x1
+
+    .line 48
+    .line 49
+    invoke-virtual {p6, p4}, Ljava/util/ArrayList;->remove(I)Ljava/lang/Object;
+
+    .line 50
+    .line 51
+    .line 52
+    move-result-object p4
+
+    .line 53
+    check-cast p4, [Ljava/lang/Object;
+
+    .line 54
+    .line 55
+    :goto_1
+    move-object v3, p4
+
+    .line 56
+    goto :goto_2
+
+    .line 57
+    :cond_1
+    invoke-virtual {p0}, Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableList/f;->p()[Ljava/lang/Object;
+
+    .line 58
+    .line 59
+    .line 60
+    move-result-object p4
+
+    .line 61
+    goto :goto_1
+
+    .line 62
+    :goto_2
+    const/4 p4, 0x0
+
+    .line 63
+    :cond_2
+    add-int/lit8 v5, p4, 0x1
+
+    .line 64
+    .line 65
+    aput-object v4, v3, p4
+
+    .line 66
+    .line 67
+    move p4, v5
+
+    .line 68
+    :cond_3
+    add-int/lit8 v2, v2, 0x1
+
+    .line 69
+    .line 70
+    goto :goto_0
+
+    .line 71
+    :cond_4
+    iput-object v3, p5, Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableList/d;->a:Ljava/lang/Object;
+
+    .line 72
+    .line 73
+    if-eq v0, v3, :cond_5
+
+    .line 74
+    .line 75
+    invoke-virtual {p7, v0}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
+
+    .line 76
+    .line 77
+    .line 78
+    :cond_5
+    return p4
 .end method

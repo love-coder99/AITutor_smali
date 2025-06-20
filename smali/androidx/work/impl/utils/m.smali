@@ -1,223 +1,124 @@
-.class public final Landroidx/work/impl/utils/m;
+.class public abstract Landroidx/work/impl/utils/m;
 .super Ljava/lang/Object;
 .source "SourceFile"
 
-# interfaces
-.implements Ljava/util/concurrent/Executor;
 
-
-# instance fields
-.field public final b:Ljava/util/ArrayDeque;
-
-.field public final c:Ljava/util/concurrent/Executor;
-
-.field public d:Ljava/lang/Runnable;
-
-.field public final f:Ljava/lang/Object;
+# static fields
+.field public static final synthetic a:I
 
 
 # direct methods
-.method public constructor <init>(Ljava/util/concurrent/ExecutorService;)V
-    .locals 0
+.method static constructor <clinit>()V
+    .locals 1
 
     .line 1
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    const-string v0, "WorkForegroundRunnable"
 
     .line 2
     .line 3
-    .line 4
-    iput-object p1, p0, Landroidx/work/impl/utils/m;->c:Ljava/util/concurrent/Executor;
+    invoke-static {v0}, Landroidx/work/A;->b(Ljava/lang/String;)Ljava/lang/String;
 
+    .line 4
     .line 5
     .line 6
-    new-instance p1, Ljava/util/ArrayDeque;
-
-    .line 7
-    .line 8
-    invoke-direct {p1}, Ljava/util/ArrayDeque;-><init>()V
-
-    .line 9
-    .line 10
-    .line 11
-    iput-object p1, p0, Landroidx/work/impl/utils/m;->b:Ljava/util/ArrayDeque;
-
-    .line 12
-    .line 13
-    new-instance p1, Ljava/lang/Object;
-
-    .line 14
-    .line 15
-    invoke-direct {p1}, Ljava/lang/Object;-><init>()V
-
-    .line 16
-    .line 17
-    .line 18
-    iput-object p1, p0, Landroidx/work/impl/utils/m;->f:Ljava/lang/Object;
-
-    .line 19
-    .line 20
     return-void
 .end method
 
-
-# virtual methods
-.method public final a()Z
-    .locals 2
+.method public static final a(Landroid/content/Context;LB2/p;Landroidx/work/t;Landroidx/work/k;LC2/a;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
+    .locals 8
 
     .line 1
-    iget-object v0, p0, Landroidx/work/impl/utils/m;->f:Ljava/lang/Object;
+    iget-boolean v0, p1, LB2/p;->q:Z
 
     .line 2
     .line 3
-    monitor-enter v0
-
-    .line 4
-    :try_start_0
-    iget-object v1, p0, Landroidx/work/impl/utils/m;->b:Ljava/util/ArrayDeque;
-
-    .line 5
-    .line 6
-    invoke-virtual {v1}, Ljava/util/ArrayDeque;->isEmpty()Z
-
-    .line 7
-    .line 8
-    .line 9
-    move-result v1
-
-    .line 10
-    xor-int/lit8 v1, v1, 0x1
-
-    .line 11
-    .line 12
-    monitor-exit v0
-
-    .line 13
-    return v1
-
-    .line 14
-    :catchall_0
-    move-exception v1
-
-    .line 15
-    monitor-exit v0
-    :try_end_0
-    .catchall {:try_start_0 .. :try_end_0} :catchall_0
-
-    .line 16
-    throw v1
-.end method
-
-.method public final b()V
-    .locals 2
-
-    .line 1
-    iget-object v0, p0, Landroidx/work/impl/utils/m;->b:Ljava/util/ArrayDeque;
-
-    .line 2
-    .line 3
-    invoke-virtual {v0}, Ljava/util/ArrayDeque;->poll()Ljava/lang/Object;
+    sget-object v1, LX9/j;->a:LX9/j;
 
     .line 4
     .line 5
-    .line 6
-    move-result-object v0
+    if-eqz v0, :cond_1
 
+    .line 6
     .line 7
-    check-cast v0, Ljava/lang/Runnable;
+    sget v0, Landroid/os/Build$VERSION;->SDK_INT:I
 
     .line 8
     .line 9
-    iput-object v0, p0, Landroidx/work/impl/utils/m;->d:Ljava/lang/Runnable;
+    const/16 v2, 0x1f
 
     .line 10
     .line 11
-    if-eqz v0, :cond_0
+    if-lt v0, v2, :cond_0
 
     .line 12
     .line 13
-    iget-object v1, p0, Landroidx/work/impl/utils/m;->c:Ljava/util/concurrent/Executor;
-
-    .line 14
-    .line 15
-    invoke-interface {v1, v0}, Ljava/util/concurrent/Executor;->execute(Ljava/lang/Runnable;)V
-
-    .line 16
-    .line 17
-    .line 18
-    :cond_0
-    return-void
-.end method
-
-.method public final execute(Ljava/lang/Runnable;)V
-    .locals 4
-
-    .line 1
-    iget-object v0, p0, Landroidx/work/impl/utils/m;->f:Ljava/lang/Object;
-
-    .line 2
-    .line 3
-    monitor-enter v0
-
-    .line 4
-    :try_start_0
-    iget-object v1, p0, Landroidx/work/impl/utils/m;->b:Ljava/util/ArrayDeque;
-
-    .line 5
-    .line 6
-    new-instance v2, Lb0/i;
-
-    .line 7
-    .line 8
-    const/16 v3, 0x9
-
-    .line 9
-    .line 10
-    invoke-direct {v2, p0, v3, p1}, Lb0/i;-><init>(Ljava/lang/Object;ILjava/lang/Object;)V
-
-    .line 11
-    .line 12
-    .line 13
-    invoke-virtual {v1, v2}, Ljava/util/ArrayDeque;->add(Ljava/lang/Object;)Z
-
-    .line 14
-    .line 15
-    .line 16
-    iget-object p1, p0, Landroidx/work/impl/utils/m;->d:Ljava/lang/Runnable;
-
-    .line 17
-    .line 18
-    if-nez p1, :cond_0
-
-    .line 19
-    .line 20
-    invoke-virtual {p0}, Landroidx/work/impl/utils/m;->b()V
-
-    .line 21
-    .line 22
-    .line 23
     goto :goto_0
 
+    .line 14
+    :cond_0
+    check-cast p4, LC2/b;
+
+    .line 15
+    .line 16
+    iget-object p4, p4, LC2/b;->d:LF/f;
+
+    .line 17
+    .line 18
+    invoke-static {p4}, Lkotlinx/coroutines/w;->l(Ljava/util/concurrent/Executor;)Lkotlinx/coroutines/r;
+
+    .line 19
+    .line 20
+    .line 21
+    move-result-object p4
+
+    .line 22
+    new-instance v0, Landroidx/work/impl/utils/WorkForegroundKt$workForeground$2;
+
+    .line 23
     .line 24
-    :catchall_0
-    move-exception p1
+    const/4 v7, 0x0
 
     .line 25
-    goto :goto_1
+    move-object v2, v0
 
     .line 26
-    :cond_0
-    :goto_0
-    monitor-exit v0
+    move-object v3, p2
 
     .line 27
-    return-void
+    move-object v4, p1
 
     .line 28
-    :goto_1
-    monitor-exit v0
-    :try_end_0
-    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+    move-object v5, p3
 
     .line 29
-    throw p1
+    move-object v6, p0
+
+    .line 30
+    invoke-direct/range {v2 .. v7}, Landroidx/work/impl/utils/WorkForegroundKt$workForeground$2;-><init>(Landroidx/work/t;LB2/p;Landroidx/work/k;Landroid/content/Context;Lkotlin/coroutines/Continuation;)V
+
+    .line 31
+    .line 32
+    .line 33
+    invoke-static {p4, v0, p5}, Lkotlinx/coroutines/w;->H(Lba/g;Lka/e;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
+
+    .line 34
+    .line 35
+    .line 36
+    move-result-object p0
+
+    .line 37
+    sget-object p1, Lkotlin/coroutines/intrinsics/CoroutineSingletons;->COROUTINE_SUSPENDED:Lkotlin/coroutines/intrinsics/CoroutineSingletons;
+
+    .line 38
+    .line 39
+    if-ne p0, p1, :cond_1
+
+    .line 40
+    .line 41
+    return-object p0
+
+    .line 42
+    :cond_1
+    :goto_0
+    return-object v1
 .end method

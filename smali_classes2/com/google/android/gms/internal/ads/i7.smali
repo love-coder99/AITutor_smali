@@ -1,8 +1,0 @@
-.class public interface abstract Lcom/google/android/gms/internal/ads/i7;
-.super Ljava/lang/Object;
-.source "SourceFile"
-
-
-# virtual methods
-.method public abstract g(Lcom/google/android/gms/internal/ads/l7;)Lcom/google/android/gms/internal/ads/k7;
-.end method

@@ -65,16 +65,18 @@
 
     invoke-static {p1, v2, v0, v2, v1}, Ljava/lang/System;->arraycopy(Ljava/lang/Object;ILjava/lang/Object;II)V
 
+    .line 5
     iput-object p2, p0, Lcom/applovin/impl/r5$d;->b:Lcom/applovin/impl/ak;
 
+    .line 6
     iput-object p3, p0, Lcom/applovin/impl/r5$d;->c:Lcom/applovin/impl/ok;
 
-    .line 5
+    .line 7
     array-length v1, p1
 
     aput-object p2, v0, v1
 
-    .line 6
+    .line 8
     array-length p1, p1
 
     add-int/lit8 p1, p1, 0x1
@@ -89,9 +91,9 @@
 .method public a(J)J
     .locals 1
 
+    .line 5
     iget-object v0, p0, Lcom/applovin/impl/r5$d;->c:Lcom/applovin/impl/ok;
 
-    .line 5
     invoke-virtual {v0, p1, p2}, Lcom/applovin/impl/ok;->a(J)J
 
     move-result-wide p1
@@ -102,16 +104,16 @@
 .method public a(Lcom/applovin/impl/ph;)Lcom/applovin/impl/ph;
     .locals 2
 
+    .line 1
     iget-object v0, p0, Lcom/applovin/impl/r5$d;->c:Lcom/applovin/impl/ok;
 
-    .line 2
     iget v1, p1, Lcom/applovin/impl/ph;->a:F
 
     invoke-virtual {v0, v1}, Lcom/applovin/impl/ok;->b(F)V
 
+    .line 2
     iget-object v0, p0, Lcom/applovin/impl/r5$d;->c:Lcom/applovin/impl/ok;
 
-    .line 3
     iget v1, p1, Lcom/applovin/impl/ph;->b:F
 
     invoke-virtual {v0, v1}, Lcom/applovin/impl/ok;->a(F)V
@@ -122,9 +124,9 @@
 .method public a(Z)Z
     .locals 1
 
+    .line 3
     iget-object v0, p0, Lcom/applovin/impl/r5$d;->b:Lcom/applovin/impl/ak;
 
-    .line 4
     invoke-virtual {v0, p1}, Lcom/applovin/impl/ak;->a(Z)V
 
     return p1
@@ -133,7 +135,7 @@
 .method public a()[Lcom/applovin/impl/p1;
     .locals 1
 
-    .line 1
+    .line 4
     iget-object v0, p0, Lcom/applovin/impl/r5$d;->a:[Lcom/applovin/impl/p1;
 
     return-object v0

@@ -1,512 +1,599 @@
-.class public final Landroidx/compose/foundation/lazy/layout/v;
+.class public final Landroidx/compose/foundation/lazy/layout/V;
 .super Ljava/lang/Object;
 .source "SourceFile"
 
+# interfaces
+.implements Lcom/google/android/gms/internal/ads/k1;
+
 
 # instance fields
-.field public a:[Landroidx/compose/foundation/lazy/layout/s;
+.field public b:J
 
-.field public b:Lh2/a;
+.field public c:J
 
-.field public c:I
+.field public d:Ljava/lang/Object;
 
-.field public d:I
-
-.field public e:I
-
-.field public f:I
-
-.field public g:I
-
-.field public final synthetic h:Landroidx/compose/foundation/lazy/layout/x;
+.field public f:Ljava/lang/Object;
 
 
 # direct methods
-.method public constructor <init>(Landroidx/compose/foundation/lazy/layout/x;)V
+.method public constructor <init>(J)V
+    .locals 2
+
+    .line 2
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    .line 3
+    iget-object v0, p0, Landroidx/compose/foundation/lazy/layout/V;->d:Ljava/lang/Object;
+
+    check-cast v0, Lcom/google/android/gms/internal/ads/vE;
+
+    if-nez v0, :cond_0
+
+    const/4 v0, 0x1
+
+    goto :goto_0
+
+    :cond_0
+    const/4 v0, 0x0
+
+    :goto_0
+    invoke-static {v0}, Lcom/google/android/gms/internal/ads/Tq;->e0(Z)V
+
+    iput-wide p1, p0, Landroidx/compose/foundation/lazy/layout/V;->b:J
+
+    const-wide/32 v0, 0x10000
+
+    add-long/2addr p1, v0
+
+    iput-wide p1, p0, Landroidx/compose/foundation/lazy/layout/V;->c:J
+
+    return-void
+.end method
+
+.method public constructor <init>(Ljava/lang/String;[BJJ)V
     .locals 0
 
     .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 2
-    .line 3
-    .line 4
-    iput-object p1, p0, Landroidx/compose/foundation/lazy/layout/v;->h:Landroidx/compose/foundation/lazy/layout/x;
+    iput-object p1, p0, Landroidx/compose/foundation/lazy/layout/V;->d:Ljava/lang/Object;
 
-    .line 5
-    .line 6
-    sget-object p1, Landroidx/compose/foundation/lazy/layout/p;->a:[Landroidx/compose/foundation/lazy/layout/s;
+    iput-object p2, p0, Landroidx/compose/foundation/lazy/layout/V;->f:Ljava/lang/Object;
 
-    .line 7
-    .line 8
-    iput-object p1, p0, Landroidx/compose/foundation/lazy/layout/v;->a:[Landroidx/compose/foundation/lazy/layout/s;
+    iput-wide p3, p0, Landroidx/compose/foundation/lazy/layout/V;->b:J
 
-    .line 9
-    .line 10
-    const/4 p1, 0x1
+    iput-wide p5, p0, Landroidx/compose/foundation/lazy/layout/V;->c:J
 
-    .line 11
-    iput p1, p0, Landroidx/compose/foundation/lazy/layout/v;->e:I
-
-    .line 12
-    .line 13
     return-void
 .end method
 
-.method public static b(Landroidx/compose/foundation/lazy/layout/v;Landroidx/compose/foundation/lazy/layout/g0;Lkotlinx/coroutines/w;Landroidx/compose/ui/graphics/e0;II)V
-    .locals 9
+.method public static final a(Landroidx/compose/foundation/lazy/layout/V;JJ)J
+    .locals 4
 
     .line 1
-    iget-object v0, p0, Landroidx/compose/foundation/lazy/layout/v;->h:Landroidx/compose/foundation/lazy/layout/x;
+    invoke-virtual {p0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
     .line 2
     .line 3
-    invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
-
     .line 4
+    const-wide/16 v0, 0x0
+
     .line 5
     .line 6
-    const/4 v0, 0x0
+    cmp-long p0, p3, v0
 
     .line 7
-    invoke-interface {p1, v0}, Landroidx/compose/foundation/lazy/layout/g0;->i(I)J
-
     .line 8
+    if-nez p0, :cond_0
+
     .line 9
     .line 10
-    move-result-wide v0
-
-    .line 11
-    invoke-interface {p1}, Landroidx/compose/foundation/lazy/layout/g0;->g()Z
-
-    .line 12
-    .line 13
-    .line 14
-    move-result v2
-
-    .line 15
-    if-nez v2, :cond_0
-
-    .line 16
-    .line 17
-    const-wide v2, 0xffffffffL
-
-    .line 18
-    .line 19
-    .line 20
-    .line 21
-    .line 22
-    and-long/2addr v0, v2
-
-    .line 23
-    :goto_0
-    long-to-int v1, v0
-
-    .line 24
-    move v8, v1
-
-    .line 25
-    goto :goto_1
-
-    .line 26
-    :cond_0
-    const/16 v2, 0x20
-
-    .line 27
-    .line 28
-    shr-long/2addr v0, v2
-
-    .line 29
     goto :goto_0
 
-    .line 30
-    :goto_1
-    move-object v2, p0
+    .line 11
+    :cond_0
+    const/4 p0, 0x4
 
-    .line 31
-    move-object v3, p1
+    .line 12
+    int-to-long v0, p0
 
-    .line 32
-    move-object v4, p2
+    .line 13
+    div-long/2addr p3, v0
 
-    .line 33
-    move-object v5, p3
+    .line 14
+    const/4 p0, 0x3
 
-    .line 34
-    move v6, p4
+    .line 15
+    int-to-long v2, p0
 
-    .line 35
-    move v7, p5
+    .line 16
+    mul-long p3, p3, v2
 
-    .line 36
-    invoke-virtual/range {v2 .. v8}, Landroidx/compose/foundation/lazy/layout/v;->a(Landroidx/compose/foundation/lazy/layout/g0;Lkotlinx/coroutines/w;Landroidx/compose/ui/graphics/e0;III)V
+    .line 17
+    .line 18
+    div-long/2addr p1, v0
 
-    .line 37
-    .line 38
-    .line 39
-    return-void
+    .line 19
+    add-long/2addr p1, p3
+
+    .line 20
+    :goto_0
+    return-wide p1
 .end method
 
 
 # virtual methods
-.method public final a(Landroidx/compose/foundation/lazy/layout/g0;Lkotlinx/coroutines/w;Landroidx/compose/ui/graphics/e0;III)V
+.method public b(JZZ)Z
     .locals 6
 
     .line 1
-    iget-object v0, p0, Landroidx/compose/foundation/lazy/layout/v;->a:[Landroidx/compose/foundation/lazy/layout/s;
+    iget-object v0, p0, Landroidx/compose/foundation/lazy/layout/V;->f:Ljava/lang/Object;
 
     .line 2
     .line 3
-    array-length v1, v0
+    check-cast v0, Lb6/c1;
 
     .line 4
-    const/4 v2, 0x0
-
     .line 5
-    const/4 v3, 0x0
+    invoke-virtual {v0}, Lb6/u;->R()V
 
     .line 6
-    :goto_0
-    if-ge v3, v1, :cond_1
-
     .line 7
     .line 8
-    aget-object v4, v0, v3
+    invoke-virtual {v0}, Lb6/v;->P()V
 
     .line 9
     .line 10
-    if-eqz v4, :cond_0
-
     .line 11
+    iget-object v0, v0, LO9/i0;->c:Ljava/lang/Object;
+
     .line 12
-    iget-boolean v4, v4, Landroidx/compose/foundation/lazy/layout/s;->g:Z
-
     .line 13
-    .line 14
-    const/4 v5, 0x1
+    check-cast v0, Lb6/f0;
 
+    .line 14
     .line 15
-    if-ne v4, v5, :cond_0
+    invoke-virtual {v0}, Lb6/f0;->a()Z
 
     .line 16
     .line 17
-    goto :goto_1
-
     .line 18
-    :cond_0
-    add-int/lit8 v3, v3, 0x1
+    move-result v1
 
     .line 19
-    .line 20
-    goto :goto_0
+    if-eqz v1, :cond_0
 
+    .line 20
     .line 21
-    :cond_1
-    iput p4, p0, Landroidx/compose/foundation/lazy/layout/v;->f:I
+    iget-object v1, v0, Lb6/f0;->j:Lb6/W;
 
     .line 22
     .line 23
-    iput p5, p0, Landroidx/compose/foundation/lazy/layout/v;->g:I
+    invoke-static {v1}, Lb6/f0;->e(LO9/i0;)V
 
     .line 24
     .line 25
-    :goto_1
-    invoke-interface {p1}, Landroidx/compose/foundation/lazy/layout/g0;->b()I
-
     .line 26
+    iget-object v2, v0, Lb6/f0;->p:LL5/a;
+
     .line 27
     .line 28
-    move-result p4
+    invoke-virtual {v2}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
     .line 29
-    iget-object p5, p0, Landroidx/compose/foundation/lazy/layout/v;->a:[Landroidx/compose/foundation/lazy/layout/s;
-
     .line 30
     .line 31
-    array-length p5, p5
+    invoke-static {}, Ljava/lang/System;->currentTimeMillis()J
 
     .line 32
-    :goto_2
-    if-ge p4, p5, :cond_3
-
     .line 33
     .line 34
-    iget-object v0, p0, Landroidx/compose/foundation/lazy/layout/v;->a:[Landroidx/compose/foundation/lazy/layout/s;
+    move-result-wide v2
 
     .line 35
+    iget-object v1, v1, Lb6/W;->t:Lb6/V;
+
     .line 36
-    aget-object v0, v0, p4
-
     .line 37
-    .line 38
-    if-eqz v0, :cond_2
+    invoke-virtual {v1, v2, v3}, Lb6/V;->b(J)V
 
+    .line 38
     .line 39
     .line 40
-    invoke-virtual {v0}, Landroidx/compose/foundation/lazy/layout/s;->d()V
+    :cond_0
+    iget-wide v1, p0, Landroidx/compose/foundation/lazy/layout/V;->b:J
 
     .line 41
     .line 42
+    sub-long v1, p1, v1
+
     .line 43
-    :cond_2
-    add-int/lit8 p4, p4, 0x1
-
     .line 44
-    .line 45
-    goto :goto_2
+    iget-object v3, v0, Lb6/f0;->k:Lb6/O;
 
+    .line 45
     .line 46
-    :cond_3
-    iget-object p4, p0, Landroidx/compose/foundation/lazy/layout/v;->a:[Landroidx/compose/foundation/lazy/layout/s;
+    if-nez p3, :cond_2
 
     .line 47
     .line 48
-    array-length p4, p4
+    const-wide/16 v4, 0x3e8
 
     .line 49
-    invoke-interface {p1}, Landroidx/compose/foundation/lazy/layout/g0;->b()I
-
     .line 50
+    cmp-long p3, v1, v4
+
     .line 51
     .line 52
-    move-result p5
+    if-ltz p3, :cond_1
 
     .line 53
-    if-eq p4, p5, :cond_4
-
     .line 54
+    goto :goto_0
+
     .line 55
-    iget-object p4, p0, Landroidx/compose/foundation/lazy/layout/v;->a:[Landroidx/compose/foundation/lazy/layout/s;
+    :cond_1
+    invoke-static {v3}, Lb6/f0;->g(Lb6/m0;)V
 
     .line 56
     .line 57
-    invoke-interface {p1}, Landroidx/compose/foundation/lazy/layout/g0;->b()I
-
     .line 58
+    invoke-static {v1, v2}, Ljava/lang/Long;->valueOf(J)Ljava/lang/Long;
+
     .line 59
     .line 60
-    move-result p5
-
     .line 61
-    invoke-static {p4, p5}, Ljava/util/Arrays;->copyOf([Ljava/lang/Object;I)[Ljava/lang/Object;
+    move-result-object p1
 
     .line 62
+    iget-object p2, v3, Lb6/O;->q:Lb6/M;
+
     .line 63
     .line 64
-    move-result-object p4
+    const-string p3, "Screen exposed for less than 1000 ms. Event not sent. time"
 
     .line 65
-    check-cast p4, [Landroidx/compose/foundation/lazy/layout/s;
-
     .line 66
-    .line 67
-    iput-object p4, p0, Landroidx/compose/foundation/lazy/layout/v;->a:[Landroidx/compose/foundation/lazy/layout/s;
+    invoke-virtual {p2, p1, p3}, Lb6/M;->f(Ljava/lang/Object;Ljava/lang/String;)V
 
+    .line 67
     .line 68
     .line 69
-    :cond_4
-    invoke-interface {p1}, Landroidx/compose/foundation/lazy/layout/g0;->f()J
+    const/4 p1, 0x0
 
     .line 70
-    .line 71
-    .line 72
-    move-result-wide p4
+    return p1
 
+    .line 71
+    :cond_2
+    :goto_0
+    if-nez p4, :cond_3
+
+    .line 72
     .line 73
-    new-instance v0, Lh2/a;
+    iget-wide v1, p0, Landroidx/compose/foundation/lazy/layout/V;->c:J
 
     .line 74
     .line 75
-    invoke-direct {v0, p4, p5}, Lh2/a;-><init>(J)V
+    sub-long v1, p1, v1
 
     .line 76
     .line 77
+    iput-wide p1, p0, Landroidx/compose/foundation/lazy/layout/V;->c:J
+
     .line 78
-    iput-object v0, p0, Landroidx/compose/foundation/lazy/layout/v;->b:Lh2/a;
-
     .line 79
-    .line 80
-    iput p6, p0, Landroidx/compose/foundation/lazy/layout/v;->c:I
+    :cond_3
+    invoke-static {v3}, Lb6/f0;->g(Lb6/m0;)V
 
+    .line 80
     .line 81
     .line 82
-    invoke-interface {p1}, Landroidx/compose/foundation/lazy/layout/g0;->j()I
+    invoke-static {v1, v2}, Ljava/lang/Long;->valueOf(J)Ljava/lang/Long;
 
     .line 83
     .line 84
     .line 85
-    move-result p4
+    move-result-object p3
 
     .line 86
-    iput p4, p0, Landroidx/compose/foundation/lazy/layout/v;->d:I
+    iget-object v3, v3, Lb6/O;->q:Lb6/M;
 
     .line 87
     .line 88
-    invoke-interface {p1}, Landroidx/compose/foundation/lazy/layout/g0;->d()I
+    const-string v4, "Recording user engagement, ms"
 
     .line 89
     .line 90
+    invoke-virtual {v3, p3, v4}, Lb6/M;->f(Ljava/lang/Object;Ljava/lang/String;)V
+
     .line 91
-    move-result p4
-
     .line 92
-    iput p4, p0, Landroidx/compose/foundation/lazy/layout/v;->e:I
-
     .line 93
-    .line 94
-    invoke-interface {p1}, Landroidx/compose/foundation/lazy/layout/g0;->b()I
+    new-instance p3, Landroid/os/Bundle;
 
+    .line 94
     .line 95
+    invoke-direct {p3}, Landroid/os/Bundle;-><init>()V
+
     .line 96
     .line 97
-    move-result p4
-
     .line 98
-    :goto_3
-    if-ge v2, p4, :cond_9
+    const-string v3, "_et"
 
     .line 99
     .line 100
-    invoke-interface {p1, v2}, Landroidx/compose/foundation/lazy/layout/g0;->e(I)Ljava/lang/Object;
+    invoke-virtual {p3, v3, v1, v2}, Landroid/os/BaseBundle;->putLong(Ljava/lang/String;J)V
 
     .line 101
     .line 102
     .line 103
-    move-result-object p5
+    iget-object v1, v0, Lb6/f0;->i:Lb6/e;
 
     .line 104
-    instance-of p6, p5, Landroidx/compose/foundation/lazy/layout/h;
-
     .line 105
+    invoke-virtual {v1}, Lb6/e;->f0()Z
+
     .line 106
-    const/4 v0, 0x0
-
     .line 107
-    if-eqz p6, :cond_5
-
     .line 108
+    move-result v1
+
     .line 109
-    check-cast p5, Landroidx/compose/foundation/lazy/layout/h;
+    const/4 v2, 0x1
 
     .line 110
+    xor-int/2addr v1, v2
+
     .line 111
-    goto :goto_4
+    iget-object v3, v0, Lb6/f0;->q:Lb6/L0;
 
     .line 112
-    :cond_5
-    move-object p5, v0
-
     .line 113
-    :goto_4
-    if-nez p5, :cond_7
+    invoke-static {v3}, Lb6/f0;->f(Lb6/v;)V
 
     .line 114
     .line 115
-    iget-object p5, p0, Landroidx/compose/foundation/lazy/layout/v;->a:[Landroidx/compose/foundation/lazy/layout/s;
-
     .line 116
-    .line 117
-    aget-object p5, p5, v2
+    invoke-virtual {v3, v1}, Lb6/L0;->X(Z)Lb6/I0;
 
+    .line 117
     .line 118
     .line 119
-    if-eqz p5, :cond_6
+    move-result-object v1
 
     .line 120
-    .line 121
-    invoke-virtual {p5}, Landroidx/compose/foundation/lazy/layout/s;->d()V
+    invoke-static {v1, p3, v2}, Lb6/o1;->g0(Lb6/I0;Landroid/os/Bundle;Z)V
 
+    .line 121
     .line 122
     .line 123
+    if-nez p4, :cond_4
+
     .line 124
-    :cond_6
-    iget-object p5, p0, Landroidx/compose/foundation/lazy/layout/v;->a:[Landroidx/compose/foundation/lazy/layout/s;
-
     .line 125
+    iget-object p4, v0, Lb6/f0;->r:Lcom/google/android/gms/measurement/internal/b;
+
     .line 126
-    aput-object v0, p5, v2
-
     .line 127
+    invoke-static {p4}, Lb6/f0;->f(Lb6/v;)V
+
     .line 128
-    goto :goto_5
-
     .line 129
-    :cond_7
-    iget-object p6, p0, Landroidx/compose/foundation/lazy/layout/v;->a:[Landroidx/compose/foundation/lazy/layout/s;
-
     .line 130
+    const-string v0, "auto"
+
     .line 131
-    aget-object p6, p6, v2
-
     .line 132
+    const-string v1, "_e"
+
     .line 133
-    if-nez p6, :cond_8
-
     .line 134
-    .line 135
-    new-instance p6, Landroidx/compose/foundation/lazy/layout/s;
+    invoke-virtual {p4, p3, v0, v1}, Lcom/google/android/gms/measurement/internal/b;->b0(Landroid/os/Bundle;Ljava/lang/String;Ljava/lang/String;)V
 
+    .line 135
     .line 136
     .line 137
-    new-instance v0, Landroidx/compose/foundation/lazy/layout/LazyLayoutItemAnimator$ItemInfo$updateAnimation$1$animation$1;
+    :cond_4
+    iput-wide p1, p0, Landroidx/compose/foundation/lazy/layout/V;->b:J
 
     .line 138
     .line 139
-    iget-object v1, p0, Landroidx/compose/foundation/lazy/layout/v;->h:Landroidx/compose/foundation/lazy/layout/x;
+    iget-object p1, p0, Landroidx/compose/foundation/lazy/layout/V;->d:Ljava/lang/Object;
 
     .line 140
     .line 141
-    invoke-direct {v0, v1}, Landroidx/compose/foundation/lazy/layout/LazyLayoutItemAnimator$ItemInfo$updateAnimation$1$animation$1;-><init>(Landroidx/compose/foundation/lazy/layout/x;)V
+    check-cast p1, Lb6/b1;
 
     .line 142
     .line 143
-    .line 144
-    invoke-direct {p6, p2, p3, v0}, Landroidx/compose/foundation/lazy/layout/s;-><init>(Lkotlinx/coroutines/w;Landroidx/compose/ui/graphics/e0;Lzh/a;)V
+    invoke-virtual {p1}, Lb6/j;->a()V
 
+    .line 144
     .line 145
     .line 146
-    .line 147
-    iget-object v0, p0, Landroidx/compose/foundation/lazy/layout/v;->a:[Landroidx/compose/foundation/lazy/layout/s;
+    sget-object p2, Lb6/y;->q0:Lb6/x;
 
+    .line 147
     .line 148
+    const/4 p3, 0x0
+
     .line 149
-    aput-object p6, v0, v2
+    invoke-virtual {p2, p3}, Lb6/x;->a(Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 150
     .line 151
-    :cond_8
-    iget-object v0, p5, Landroidx/compose/foundation/lazy/layout/h;->p:Landroidx/compose/animation/core/z;
-
     .line 152
+    move-result-object p2
+
     .line 153
-    iput-object v0, p6, Landroidx/compose/foundation/lazy/layout/s;->d:Landroidx/compose/animation/core/z;
+    check-cast p2, Ljava/lang/Long;
 
     .line 154
     .line 155
-    iget-object v0, p5, Landroidx/compose/foundation/lazy/layout/h;->q:Landroidx/compose/animation/core/z;
+    invoke-virtual {p2}, Ljava/lang/Long;->longValue()J
 
     .line 156
     .line 157
-    iput-object v0, p6, Landroidx/compose/foundation/lazy/layout/s;->e:Landroidx/compose/animation/core/z;
-
     .line 158
+    move-result-wide p2
+
     .line 159
-    iget-object p5, p5, Landroidx/compose/foundation/lazy/layout/h;->r:Landroidx/compose/animation/core/z;
+    invoke-virtual {p1, p2, p3}, Lb6/j;->c(J)V
 
     .line 160
     .line 161
-    iput-object p5, p6, Landroidx/compose/foundation/lazy/layout/s;->f:Landroidx/compose/animation/core/z;
-
     .line 162
-    .line 163
-    :goto_5
-    add-int/lit8 v2, v2, 0x1
+    return v2
+.end method
 
-    .line 164
-    .line 165
-    goto :goto_3
+.method public d(J)V
+    .locals 2
 
-    .line 166
-    :cond_9
+    .line 1
+    iget-object v0, p0, Landroidx/compose/foundation/lazy/layout/V;->f:Ljava/lang/Object;
+
+    .line 2
+    .line 3
+    check-cast v0, Lcom/google/android/gms/internal/ads/ai;
+
+    .line 4
+    .line 5
+    const/4 v1, 0x1
+
+    .line 6
+    iget-object v0, v0, Lcom/google/android/gms/internal/ads/ai;->c:Ljava/lang/Object;
+
+    .line 7
+    .line 8
+    check-cast v0, [J
+
+    .line 9
+    .line 10
+    invoke-static {v0, p1, p2, v1}, Lcom/google/android/gms/internal/ads/Jm;->j([JJZ)I
+
+    .line 11
+    .line 12
+    .line 13
+    move-result p1
+
+    .line 14
+    aget-wide p1, v0, p1
+
+    .line 15
+    .line 16
+    iput-wide p1, p0, Landroidx/compose/foundation/lazy/layout/V;->c:J
+
+    .line 17
+    .line 18
     return-void
+.end method
+
+.method public i(Lcom/google/android/gms/internal/ads/z;)J
+    .locals 6
+
+    .line 1
+    iget-wide v0, p0, Landroidx/compose/foundation/lazy/layout/V;->c:J
+
+    .line 2
+    .line 3
+    const-wide/16 v2, 0x0
+
+    .line 4
+    .line 5
+    const-wide/16 v4, -0x1
+
+    .line 6
+    .line 7
+    cmp-long p1, v0, v2
+
+    .line 8
+    .line 9
+    if-ltz p1, :cond_0
+
+    .line 10
+    .line 11
+    const-wide/16 v2, 0x2
+
+    .line 12
+    .line 13
+    add-long/2addr v0, v2
+
+    .line 14
+    iput-wide v4, p0, Landroidx/compose/foundation/lazy/layout/V;->c:J
+
+    .line 15
+    .line 16
+    neg-long v0, v0
+
+    .line 17
+    return-wide v0
+
+    .line 18
+    :cond_0
+    return-wide v4
+.end method
+
+.method public zze()Lcom/google/android/gms/internal/ads/S;
+    .locals 5
+
+    .line 1
+    iget-wide v0, p0, Landroidx/compose/foundation/lazy/layout/V;->b:J
+
+    .line 2
+    .line 3
+    const-wide/16 v2, -0x1
+
+    .line 4
+    .line 5
+    cmp-long v4, v0, v2
+
+    .line 6
+    .line 7
+    if-eqz v4, :cond_0
+
+    .line 8
+    .line 9
+    const/4 v0, 0x1
+
+    .line 10
+    goto :goto_0
+
+    .line 11
+    :cond_0
+    const/4 v0, 0x0
+
+    .line 12
+    :goto_0
+    invoke-static {v0}, Lcom/google/android/gms/internal/ads/Tq;->e0(Z)V
+
+    .line 13
+    .line 14
+    .line 15
+    new-instance v0, Lcom/google/android/gms/internal/ads/H;
+
+    .line 16
+    .line 17
+    iget-wide v1, p0, Landroidx/compose/foundation/lazy/layout/V;->b:J
+
+    .line 18
+    .line 19
+    iget-object v3, p0, Landroidx/compose/foundation/lazy/layout/V;->d:Ljava/lang/Object;
+
+    .line 20
+    .line 21
+    check-cast v3, Lcom/google/android/gms/internal/ads/I;
+
+    .line 22
+    .line 23
+    const/4 v4, 0x0
+
+    .line 24
+    invoke-direct {v0, v3, v1, v2, v4}, Lcom/google/android/gms/internal/ads/H;-><init>(Ljava/lang/Object;JI)V
+
+    .line 25
+    .line 26
+    .line 27
+    return-object v0
 .end method

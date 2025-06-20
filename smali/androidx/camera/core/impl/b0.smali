@@ -1,244 +1,186 @@
-.class public final Landroidx/camera/core/impl/b0;
+.class public final Landroidx/camera/core/impl/B0;
 .super Ljava/lang/Object;
 .source "SourceFile"
 
-# interfaces
-.implements Landroidx/camera/core/impl/x1;
-
 
 # instance fields
-.field public final synthetic b:I
+.field public final a:Landroidx/camera/core/impl/v0;
 
-.field public final c:Ly/m1;
+.field public final b:Landroidx/camera/core/impl/D0;
+
+.field public final c:Landroidx/camera/core/impl/j;
+
+.field public final d:Ljava/util/List;
+
+.field public e:Z
+
+.field public f:Z
 
 
 # direct methods
-.method public constructor <init>(JI)V
+.method public constructor <init>(Landroidx/camera/core/impl/v0;Landroidx/camera/core/impl/D0;Landroidx/camera/core/impl/j;Ljava/util/List;)V
     .locals 1
 
     .line 1
-    iput p3, p0, Landroidx/camera/core/impl/b0;->b:I
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 2
     .line 3
-    const/4 v0, 0x1
-
     .line 4
-    if-eq p3, v0, :cond_0
+    const/4 v0, 0x0
 
     .line 5
-    .line 6
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    iput-boolean v0, p0, Landroidx/camera/core/impl/B0;->e:Z
 
+    .line 6
     .line 7
+    iput-boolean v0, p0, Landroidx/camera/core/impl/B0;->f:Z
+
     .line 8
     .line 9
-    new-instance p3, Landroidx/camera/core/impl/b0;
+    iput-object p1, p0, Landroidx/camera/core/impl/B0;->a:Landroidx/camera/core/impl/v0;
 
     .line 10
     .line 11
-    invoke-direct {p3, p1, p2, v0}, Landroidx/camera/core/impl/b0;-><init>(JI)V
+    iput-object p2, p0, Landroidx/camera/core/impl/B0;->b:Landroidx/camera/core/impl/D0;
 
     .line 12
     .line 13
+    iput-object p3, p0, Landroidx/camera/core/impl/B0;->c:Landroidx/camera/core/impl/j;
+
     .line 14
-    iput-object p3, p0, Landroidx/camera/core/impl/b0;->c:Ly/m1;
-
     .line 15
+    iput-object p4, p0, Landroidx/camera/core/impl/B0;->d:Ljava/util/List;
+
     .line 16
-    return-void
-
     .line 17
-    :cond_0
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
-
-    .line 18
-    .line 19
-    .line 20
-    new-instance p3, Landroidx/camera/core/impl/a0;
-
-    .line 21
-    .line 22
-    new-instance v0, Landroidx/camera/core/impl/a0;
-
-    .line 23
-    .line 24
-    invoke-direct {v0, p0, p1, p2}, Landroidx/camera/core/impl/a0;-><init>(Landroidx/camera/core/impl/b0;J)V
-
-    .line 25
-    .line 26
-    .line 27
-    invoke-direct {p3, p1, p2, v0}, Landroidx/camera/core/impl/a0;-><init>(JLy/m1;)V
-
-    .line 28
-    .line 29
-    .line 30
-    iput-object p3, p0, Landroidx/camera/core/impl/b0;->c:Ly/m1;
-
-    .line 31
-    .line 32
     return-void
 .end method
 
 
 # virtual methods
-.method public final a()J
-    .locals 2
+.method public final toString()Ljava/lang/String;
+    .locals 3
 
     .line 1
-    iget v0, p0, Landroidx/camera/core/impl/b0;->b:I
+    new-instance v0, Ljava/lang/StringBuilder;
 
     .line 2
     .line 3
-    iget-object v1, p0, Landroidx/camera/core/impl/b0;->c:Ly/m1;
+    const-string v1, "UseCaseAttachInfo{mSessionConfig="
 
     .line 4
     .line 5
-    packed-switch v0, :pswitch_data_0
+    invoke-direct {v0, v1}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
 
     .line 6
     .line 7
     .line 8
-    invoke-interface {v1}, Ly/m1;->a()J
+    iget-object v1, p0, Landroidx/camera/core/impl/B0;->a:Landroidx/camera/core/impl/v0;
 
     .line 9
     .line 10
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+
     .line 11
-    move-result-wide v0
-
     .line 12
-    return-wide v0
-
     .line 13
-    :pswitch_0
-    invoke-interface {v1}, Ly/m1;->a()J
+    const-string v1, ", mUseCaseConfig="
 
     .line 14
     .line 15
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
     .line 16
-    move-result-wide v0
-
     .line 17
-    return-wide v0
-
     .line 18
-    nop
+    iget-object v1, p0, Landroidx/camera/core/impl/B0;->b:Landroidx/camera/core/impl/D0;
 
     .line 19
-    :pswitch_data_0
-    .packed-switch 0x0
-        :pswitch_0
-    .end packed-switch
-.end method
-
-.method public final b(Landroidx/camera/core/impl/z;)Ly/l1;
-    .locals 2
-
-    .line 1
-    iget v0, p0, Landroidx/camera/core/impl/b0;->b:I
-
-    .line 2
-    .line 3
-    iget-object v1, p0, Landroidx/camera/core/impl/b0;->c:Ly/m1;
-
-    .line 4
-    .line 5
-    packed-switch v0, :pswitch_data_0
-
-    .line 6
-    .line 7
-    .line 8
-    invoke-interface {v1, p1}, Ly/m1;->b(Landroidx/camera/core/impl/z;)Ly/l1;
-
-    .line 9
-    .line 10
-    .line 11
-    move-result-object p1
-
-    .line 12
-    return-object p1
-
-    .line 13
-    :pswitch_0
-    invoke-interface {v1, p1}, Ly/m1;->b(Landroidx/camera/core/impl/z;)Ly/l1;
-
-    .line 14
-    .line 15
-    .line 16
-    move-result-object v0
-
-    .line 17
-    iget-boolean v0, v0, Ly/l1;->b:Z
-
-    .line 18
-    .line 19
-    if-nez v0, :cond_1
-
     .line 20
-    .line 21
-    iget-object p1, p1, Landroidx/camera/core/impl/z;->c:Ljava/lang/Throwable;
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 
+    .line 21
     .line 22
     .line 23
-    instance-of v0, p1, Landroidx/camera/core/impl/CameraValidator$CameraIdListIncorrectException;
+    const-string v1, ", mStreamSpec="
 
     .line 24
     .line 25
-    if-eqz v0, :cond_0
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     .line 26
     .line 27
-    const-string v0, "CameraX"
-
     .line 28
-    .line 29
-    invoke-static {v0}, Lcom/facebook/appevents/g;->i(Ljava/lang/String;)Ljava/lang/String;
+    iget-object v1, p0, Landroidx/camera/core/impl/B0;->c:Landroidx/camera/core/impl/j;
 
+    .line 29
     .line 30
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+
     .line 31
     .line 32
-    check-cast p1, Landroidx/camera/core/impl/CameraValidator$CameraIdListIncorrectException;
-
     .line 33
-    .line 34
-    invoke-virtual {p1}, Landroidx/camera/core/impl/CameraValidator$CameraIdListIncorrectException;->getAvailableCameraCount()I
+    const-string v1, ", mCaptureTypes="
 
+    .line 34
     .line 35
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
     .line 36
     .line 37
-    move-result p1
-
     .line 38
-    if-lez p1, :cond_0
+    iget-object v1, p0, Landroidx/camera/core/impl/B0;->d:Ljava/util/List;
 
     .line 39
     .line 40
-    sget-object p1, Ly/l1;->f:Ly/l1;
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 
     .line 41
     .line 42
-    goto :goto_0
-
     .line 43
-    :cond_0
-    sget-object p1, Ly/l1;->d:Ly/l1;
+    const-string v1, ", mAttached="
 
     .line 44
     .line 45
-    goto :goto_0
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     .line 46
-    :cond_1
-    sget-object p1, Ly/l1;->e:Ly/l1;
-
     .line 47
     .line 48
-    :goto_0
-    return-object p1
+    iget-boolean v1, p0, Landroidx/camera/core/impl/B0;->e:Z
 
     .line 49
-    :pswitch_data_0
-    .packed-switch 0x0
-        :pswitch_0
-    .end packed-switch
+    .line 50
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
+
+    .line 51
+    .line 52
+    .line 53
+    const-string v1, ", mActive="
+
+    .line 54
+    .line 55
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 56
+    .line 57
+    .line 58
+    iget-boolean v1, p0, Landroidx/camera/core/impl/B0;->f:Z
+
+    .line 59
+    .line 60
+    const/16 v2, 0x7d
+
+    .line 61
+    .line 62
+    invoke-static {v0, v1, v2}, Landroidx/appcompat/view/menu/F;->I(Ljava/lang/StringBuilder;ZC)Ljava/lang/String;
+
+    .line 63
+    .line 64
+    .line 65
+    move-result-object v0
+
+    .line 66
+    return-object v0
 .end method

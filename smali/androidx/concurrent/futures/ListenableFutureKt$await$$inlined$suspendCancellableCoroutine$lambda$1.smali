@@ -3,14 +3,14 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lzh/c;
+.implements Lka/c;
 
 
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "Lkotlin/jvm/internal/Lambda;",
-        "Lzh/c;"
+        "Lka/c;"
     }
 .end annotation
 
@@ -22,7 +22,7 @@
         "T",
         "L;",
         "it",
-        "Lqh/r;",
+        "LX9/j;",
         "invoke",
         "(L;)V",
         "kotlin/Throwable",
@@ -38,14 +38,14 @@
 
 
 # instance fields
-.field final synthetic $this_await$inlined:Lcom/google/common/util/concurrent/c;
+.field final synthetic $this_await$inlined:Lcom/google/common/util/concurrent/d;
 
 
 # direct methods
-.method public constructor <init>(Lcom/google/common/util/concurrent/c;)V
+.method public constructor <init>(Lcom/google/common/util/concurrent/d;)V
     .locals 0
 
-    iput-object p1, p0, Landroidx/concurrent/futures/ListenableFutureKt$await$$inlined$suspendCancellableCoroutine$lambda$1;->$this_await$inlined:Lcom/google/common/util/concurrent/c;
+    iput-object p1, p0, Landroidx/concurrent/futures/ListenableFutureKt$await$$inlined$suspendCancellableCoroutine$lambda$1;->$this_await$inlined:Lcom/google/common/util/concurrent/d;
 
     const/4 p1, 0x1
 
@@ -64,7 +64,7 @@
 
     invoke-virtual {p0, p1}, Landroidx/concurrent/futures/ListenableFutureKt$await$$inlined$suspendCancellableCoroutine$lambda$1;->invoke(Ljava/lang/Throwable;)V
 
-    sget-object p1, Lqh/r;->a:Lqh/r;
+    sget-object p1, LX9/j;->a:LX9/j;
 
     return-object p1
 .end method
@@ -72,11 +72,11 @@
 .method public final invoke(Ljava/lang/Throwable;)V
     .locals 1
 
-    iget-object p1, p0, Landroidx/concurrent/futures/ListenableFutureKt$await$$inlined$suspendCancellableCoroutine$lambda$1;->$this_await$inlined:Lcom/google/common/util/concurrent/c;
+    .line 2
+    iget-object p1, p0, Landroidx/concurrent/futures/ListenableFutureKt$await$$inlined$suspendCancellableCoroutine$lambda$1;->$this_await$inlined:Lcom/google/common/util/concurrent/d;
 
     const/4 v0, 0x0
 
-    .line 2
     invoke-interface {p1, v0}, Ljava/util/concurrent/Future;->cancel(Z)Z
 
     return-void

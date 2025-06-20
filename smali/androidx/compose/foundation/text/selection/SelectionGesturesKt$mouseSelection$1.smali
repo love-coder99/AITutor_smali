@@ -4,6 +4,16 @@
 
 
 # annotations
+.annotation runtime Lca/c;
+    c = "androidx.compose.foundation.text.selection.SelectionGesturesKt"
+    f = "SelectionGestures.kt"
+    l = {
+        0x9e,
+        0xb5
+    }
+    m = "mouseSelection"
+.end annotation
+
 .annotation runtime Lkotlin/Metadata;
     k = 0x3
     mv = {
@@ -12,16 +22,6 @@
         0x0
     }
     xi = 0x30
-.end annotation
-
-.annotation runtime Lth/c;
-    c = "androidx.compose.foundation.text.selection.SelectionGesturesKt"
-    f = "SelectionGestures.kt"
-    l = {
-        0x9e,
-        0xb5
-    }
-    m = "mouseSelection"
 .end annotation
 
 
@@ -70,7 +70,7 @@
 
     const/4 p1, 0x0
 
-    invoke-static {p1, p1, p1, p1, p0}, Landroidx/compose/foundation/text/selection/a;->g(Landroidx/compose/ui/input/pointer/b;Landroidx/compose/foundation/text/selection/e;Landroidx/compose/foundation/text/selection/c;Landroidx/compose/ui/input/pointer/k;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
+    invoke-static {p1, p1, p1, p1, p0}, Landroidx/compose/foundation/text/selection/a;->h(Landroidx/compose/ui/input/pointer/b;Landroidx/compose/foundation/text/selection/e;Landroidx/compose/foundation/text/selection/c;Landroidx/compose/ui/input/pointer/g;Lkotlin/coroutines/jvm/internal/BaseContinuationImpl;)Ljava/lang/Object;
 
     move-result-object p1
 

@@ -40,9 +40,9 @@
 .method public a(I)Z
     .locals 1
 
+    .line 1
     iget-object v0, p0, Lcom/applovin/impl/qh$d;->a:Lcom/applovin/impl/a9;
 
-    .line 1
     invoke-virtual {v0, p1}, Lcom/applovin/impl/a9;->a(I)Z
 
     move-result p1
@@ -53,9 +53,9 @@
 .method public varargs a([I)Z
     .locals 1
 
+    .line 2
     iget-object v0, p0, Lcom/applovin/impl/qh$d;->a:Lcom/applovin/impl/a9;
 
-    .line 2
     invoke-virtual {v0, p1}, Lcom/applovin/impl/a9;->a([I)Z
 
     move-result p1

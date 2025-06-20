@@ -4,15 +4,15 @@
 
 
 # instance fields
-.field public final a:Lzh/a;
+.field public final a:Lkotlin/jvm/internal/Lambda;
 
-.field public final b:Lzh/a;
+.field public final b:Lkotlin/jvm/internal/Lambda;
 
 .field public final c:Z
 
 
 # direct methods
-.method public constructor <init>(Lzh/a;Lzh/a;Z)V
+.method public constructor <init>(Lka/a;Lka/a;Z)V
     .locals 0
 
     .line 1
@@ -21,23 +21,42 @@
     .line 2
     .line 3
     .line 4
-    iput-object p1, p0, Landroidx/compose/ui/semantics/h;->a:Lzh/a;
+    check-cast p1, Lkotlin/jvm/internal/Lambda;
 
     .line 5
     .line 6
-    iput-object p2, p0, Landroidx/compose/ui/semantics/h;->b:Lzh/a;
+    iput-object p1, p0, Landroidx/compose/ui/semantics/h;->a:Lkotlin/jvm/internal/Lambda;
 
     .line 7
     .line 8
-    iput-boolean p3, p0, Landroidx/compose/ui/semantics/h;->c:Z
+    check-cast p2, Lkotlin/jvm/internal/Lambda;
 
     .line 9
     .line 10
+    iput-object p2, p0, Landroidx/compose/ui/semantics/h;->b:Lkotlin/jvm/internal/Lambda;
+
+    .line 11
+    .line 12
+    iput-boolean p3, p0, Landroidx/compose/ui/semantics/h;->c:Z
+
+    .line 13
+    .line 14
     return-void
 .end method
 
 
 # virtual methods
+.method public final a()Lka/a;
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, Landroidx/compose/ui/semantics/h;->b:Lkotlin/jvm/internal/Lambda;
+
+    .line 2
+    .line 3
+    return-object v0
+.end method
+
 .method public final toString()Ljava/lang/String;
     .locals 3
 
@@ -55,11 +74,11 @@
     .line 6
     .line 7
     .line 8
-    iget-object v1, p0, Landroidx/compose/ui/semantics/h;->a:Lzh/a;
+    iget-object v1, p0, Landroidx/compose/ui/semantics/h;->a:Lkotlin/jvm/internal/Lambda;
 
     .line 9
     .line 10
-    invoke-interface {v1}, Lzh/a;->invoke()Ljava/lang/Object;
+    invoke-interface {v1}, Lka/a;->invoke()Ljava/lang/Object;
 
     .line 11
     .line 12
@@ -93,11 +112,11 @@
     .line 26
     .line 27
     .line 28
-    iget-object v1, p0, Landroidx/compose/ui/semantics/h;->b:Lzh/a;
+    iget-object v1, p0, Landroidx/compose/ui/semantics/h;->b:Lkotlin/jvm/internal/Lambda;
 
     .line 29
     .line 30
-    invoke-interface {v1}, Lzh/a;->invoke()Ljava/lang/Object;
+    invoke-interface {v1}, Lka/a;->invoke()Ljava/lang/Object;
 
     .line 31
     .line 32
@@ -139,7 +158,7 @@
 
     .line 51
     .line 52
-    invoke-static {v0, v1, v2}, Landroid/support/v4/media/session/a;->J(Ljava/lang/StringBuilder;ZC)Ljava/lang/String;
+    invoke-static {v0, v1, v2}, Landroidx/appcompat/view/menu/F;->I(Ljava/lang/StringBuilder;ZC)Ljava/lang/String;
 
     .line 53
     .line 54

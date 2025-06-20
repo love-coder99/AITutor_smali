@@ -3,14 +3,14 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lzh/e;
+.implements Lka/e;
 
 
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "Lkotlin/jvm/internal/FunctionReferenceImpl;",
-        "Lzh/e;"
+        "Lka/e;"
     }
 .end annotation
 
@@ -45,15 +45,15 @@
 .method public constructor <init>()V
     .locals 6
 
-    const/4 v1, 0x2
-
-    const-class v2, Lbi/a;
-
-    const-string v3, "max"
-
     const-string v4, "max(II)I"
 
     const/4 v5, 0x1
+
+    const/4 v1, 0x2
+
+    const-class v2, Lma/a;
+
+    const-string v3, "max"
 
     move-object v0, p0
 

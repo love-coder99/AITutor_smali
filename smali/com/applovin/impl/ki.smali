@@ -15,15 +15,15 @@
     .locals 2
 
     .line 1
-    new-instance v0, Lcom/applovin/impl/bt;
+    new-instance v0, Lcom/applovin/impl/T;
 
     .line 2
     .line 3
-    const/16 v1, 0x15
+    const/16 v1, 0x16
 
     .line 4
     .line 5
-    invoke-direct {v0, v1}, Lcom/applovin/impl/bt;-><init>(I)V
+    invoke-direct {v0, v1}, Lcom/applovin/impl/T;-><init>(I)V
 
     .line 6
     .line 7
@@ -73,9 +73,9 @@
 
     if-ne v0, v1, :cond_0
 
+    .line 2
     sget-object v0, Lcom/applovin/impl/co;->d:Lcom/applovin/impl/o2$a;
 
-    .line 2
     invoke-interface {v0, p0}, Lcom/applovin/impl/o2$a;->a(Landroid/os/Bundle;)Lcom/applovin/impl/o2;
 
     move-result-object p0
@@ -91,7 +91,7 @@
     const-string v1, "Encountered unknown rating type: "
 
     .line 4
-    invoke-static {v1, v0}, Lcom/google/android/gms/internal/play_billing/v3;->s(Ljava/lang/String;I)Ljava/lang/String;
+    invoke-static {v0, v1}, Landroidx/appcompat/view/menu/F;->D(ILjava/lang/String;)Ljava/lang/String;
 
     move-result-object v0
 
@@ -100,10 +100,10 @@
 
     throw p0
 
+    .line 6
     :cond_1
     sget-object v0, Lcom/applovin/impl/cl;->d:Lcom/applovin/impl/o2$a;
 
-    .line 6
     invoke-interface {v0, p0}, Lcom/applovin/impl/o2$a;->a(Landroid/os/Bundle;)Lcom/applovin/impl/o2;
 
     move-result-object p0
@@ -112,10 +112,10 @@
 
     return-object p0
 
+    .line 7
     :cond_2
     sget-object v0, Lcom/applovin/impl/fh;->c:Lcom/applovin/impl/o2$a;
 
-    .line 7
     invoke-interface {v0, p0}, Lcom/applovin/impl/o2$a;->a(Landroid/os/Bundle;)Lcom/applovin/impl/o2;
 
     move-result-object p0
@@ -124,10 +124,10 @@
 
     return-object p0
 
+    .line 8
     :cond_3
     sget-object v0, Lcom/applovin/impl/ma;->d:Lcom/applovin/impl/o2$a;
 
-    .line 8
     invoke-interface {v0, p0}, Lcom/applovin/impl/o2$a;->a(Landroid/os/Bundle;)Lcom/applovin/impl/o2;
 
     move-result-object p0

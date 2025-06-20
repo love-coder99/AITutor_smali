@@ -3,14 +3,14 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lzh/c;
+.implements Lka/c;
 
 
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "Lkotlin/jvm/internal/Lambda;",
-        "Lzh/c;"
+        "Lka/c;"
     }
 .end annotation
 
@@ -19,10 +19,10 @@
         "\u0000\u000c\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0008\u0003\u0010\u0004\u001a\u00020\u0001*\u00020\u0000H\n\u00a2\u0006\u0004\u0008\u0002\u0010\u0003"
     }
     d2 = {
-        "Landroidx/compose/runtime/y;",
+        "Landroidx/compose/runtime/t;",
         "Landroidx/compose/foundation/gestures/e;",
         "invoke",
-        "(Landroidx/compose/runtime/y;)Landroidx/compose/foundation/gestures/e;",
+        "(Landroidx/compose/runtime/t;)Landroidx/compose/foundation/gestures/e;",
         "<anonymous>"
     }
     k = 0x3
@@ -63,19 +63,19 @@
 
 
 # virtual methods
-.method public final invoke(Landroidx/compose/runtime/y;)Landroidx/compose/foundation/gestures/e;
+.method public final invoke(Landroidx/compose/runtime/t;)Landroidx/compose/foundation/gestures/e;
     .locals 1
 
     .line 2
-    sget-object v0, Landroidx/compose/ui/platform/AndroidCompositionLocals_androidKt;->b:Landroidx/compose/runtime/e3;
-
-    check-cast p1, Landroidx/compose/runtime/internal/f;
+    sget-object v0, Landroidx/compose/ui/platform/AndroidCompositionLocals_androidKt;->b:Landroidx/compose/runtime/I0;
 
     .line 3
+    check-cast p1, Landroidx/compose/runtime/internal/e;
+
     invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
     .line 4
-    invoke-static {p1, v0}, Lh5/f;->J(Landroidx/compose/runtime/q1;Landroidx/compose/runtime/u1;)Ljava/lang/Object;
+    invoke-static {p1, v0}, Landroidx/compose/runtime/o;->U(Landroidx/compose/runtime/g0;Landroidx/compose/runtime/j0;)Ljava/lang/Object;
 
     move-result-object p1
 
@@ -116,9 +116,9 @@
     .locals 0
 
     .line 1
-    check-cast p1, Landroidx/compose/runtime/y;
+    check-cast p1, Landroidx/compose/runtime/t;
 
-    invoke-virtual {p0, p1}, Landroidx/compose/foundation/gestures/BringIntoViewSpec_androidKt$LocalBringIntoViewSpec$1;->invoke(Landroidx/compose/runtime/y;)Landroidx/compose/foundation/gestures/e;
+    invoke-virtual {p0, p1}, Landroidx/compose/foundation/gestures/BringIntoViewSpec_androidKt$LocalBringIntoViewSpec$1;->invoke(Landroidx/compose/runtime/t;)Landroidx/compose/foundation/gestures/e;
 
     move-result-object p1
 

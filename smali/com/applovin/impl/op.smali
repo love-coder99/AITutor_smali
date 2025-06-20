@@ -40,9 +40,9 @@
 
     move-result-object v0
 
+    .line 3
     const-string v1, "Consent Flow Geography"
 
-    .line 3
     invoke-virtual {v0, v1}, Lcom/applovin/impl/cc$b;->d(Ljava/lang/String;)Lcom/applovin/impl/cc$b;
 
     move-result-object v0
@@ -100,9 +100,9 @@
 
     invoke-direct {v0, v1}, Ljava/util/ArrayList;-><init>(I)V
 
+    .line 8
     iget-object v1, p0, Lcom/applovin/impl/op;->a:Lcom/applovin/impl/sdk/j;
 
-    .line 8
     invoke-virtual {v1}, Lcom/applovin/impl/sdk/j;->s()Lcom/applovin/sdk/AppLovinSdkConfiguration;
 
     move-result-object v1
@@ -111,9 +111,9 @@
 
     move-result-object v1
 
+    .line 9
     iget-object v2, p0, Lcom/applovin/impl/op;->a:Lcom/applovin/impl/sdk/j;
 
-    .line 9
     invoke-virtual {v2}, Lcom/applovin/impl/sdk/j;->u()Lcom/applovin/impl/h4;
 
     move-result-object v2
@@ -122,9 +122,9 @@
 
     move-result-object v2
 
+    .line 10
     iget-object v3, p0, Lcom/applovin/impl/op;->a:Lcom/applovin/impl/sdk/j;
 
-    .line 10
     invoke-static {v3}, Lcom/applovin/impl/yp;->c(Lcom/applovin/impl/sdk/j;)Z
 
     move-result v3
@@ -193,9 +193,9 @@
 .method private b()Lcom/applovin/impl/cc;
     .locals 4
 
+    .line 7
     iget-object v0, p0, Lcom/applovin/impl/op;->a:Lcom/applovin/impl/sdk/j;
 
-    .line 7
     invoke-virtual {v0}, Lcom/applovin/impl/sdk/j;->u()Lcom/applovin/impl/h4;
 
     move-result-object v0
@@ -221,15 +221,16 @@
 
     move-result-object v2
 
+    .line 9
     const-string v3, "Privacy Policy URL"
 
-    .line 9
     invoke-virtual {v2, v3}, Lcom/applovin/impl/cc$b;->d(Ljava/lang/String;)Lcom/applovin/impl/cc$b;
 
     move-result-object v2
 
     if-eqz v0, :cond_1
 
+    .line 10
     sget v3, Lcom/applovin/sdk/R$drawable;->applovin_ic_check_mark_bordered:I
 
     goto :goto_1
@@ -237,7 +238,6 @@
     :cond_1
     sget v3, Lcom/applovin/sdk/R$drawable;->applovin_ic_x_mark:I
 
-    .line 10
     :goto_1
     invoke-virtual {v2, v3}, Lcom/applovin/impl/cc$b;->a(I)Lcom/applovin/impl/cc$b;
 
@@ -245,6 +245,7 @@
 
     if-eqz v0, :cond_2
 
+    .line 11
     sget v0, Lcom/applovin/sdk/R$color;->applovin_sdk_checkmarkColor:I
 
     goto :goto_2
@@ -252,7 +253,6 @@
     :cond_2
     sget v0, Lcom/applovin/sdk/R$color;->applovin_sdk_xmarkColor:I
 
-    .line 11
     :goto_2
     invoke-static {v0, p0}, Lcom/applovin/impl/t3;->a(ILandroid/content/Context;)I
 
@@ -283,9 +283,9 @@
 
     move-result-object v0
 
+    .line 3
     const-string v1, "Debug User Geography"
 
-    .line 3
     invoke-virtual {v0, v1}, Lcom/applovin/impl/cc$b;->d(Ljava/lang/String;)Lcom/applovin/impl/cc$b;
 
     move-result-object v0
@@ -513,8 +513,11 @@
 .method public getSdk()Lcom/applovin/impl/sdk/j;
     .locals 1
 
+    .line 1
     iget-object v0, p0, Lcom/applovin/impl/op;->a:Lcom/applovin/impl/sdk/j;
 
+    .line 2
+    .line 3
     return-object v0
 .end method
 

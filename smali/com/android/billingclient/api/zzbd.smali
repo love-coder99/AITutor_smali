@@ -37,7 +37,7 @@
 
 # virtual methods
 .method public final zza(Landroid/os/Bundle;)V
-    .locals 8
+    .locals 7
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -84,7 +84,7 @@
 
     .line 18
     .line 19
-    sget v1, Lcom/google/android/gms/internal/play_billing/h1;->a:I
+    sget v1, Lcom/google/android/gms/internal/play_billing/i0;->a:I
 
     .line 20
     .line 21
@@ -105,7 +105,7 @@
 
     .line 28
     .line 29
-    invoke-static {p1, v2}, Lcom/google/android/gms/internal/play_billing/h1;->a(Landroid/os/Bundle;Ljava/lang/String;)I
+    invoke-static {p1, v2}, Lcom/google/android/gms/internal/play_billing/i0;->a(Landroid/os/Bundle;Ljava/lang/String;)I
 
     .line 30
     .line 31
@@ -146,27 +146,27 @@
 
     .line 48
     .line 49
-    const/4 v5, 0x0
-
-    .line 50
     if-nez v4, :cond_3
 
+    .line 50
     .line 51
-    .line 52
     const-string v0, "User has acknowledged the alternative billing only dialog before."
 
+    .line 52
     .line 53
-    .line 54
-    invoke-static {v2, v0}, Lcom/google/android/gms/internal/play_billing/h1;->h(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v2, v0}, Lcom/google/android/gms/internal/play_billing/i0;->h(Ljava/lang/String;Ljava/lang/String;)V
 
+    .line 54
     .line 55
     .line 56
-    .line 57
     iget-object v0, p0, Lcom/android/billingclient/api/zzbd;->zzb:Landroid/os/ResultReceiver;
 
+    .line 57
     .line 58
+    const/4 v1, 0x0
+
     .line 59
-    invoke-virtual {v0, v5, p1}, Landroid/os/ResultReceiver;->send(ILandroid/os/Bundle;)V
+    invoke-virtual {v0, v1, p1}, Landroid/os/ResultReceiver;->send(ILandroid/os/Bundle;)V
 
     .line 60
     .line 61
@@ -196,24 +196,24 @@
 
     .line 72
     .line 73
-    const-class v6, Lcom/android/billingclient/api/ProxyBillingActivityV2;
+    const-class v5, Lcom/android/billingclient/api/ProxyBillingActivityV2;
 
     .line 74
     .line 75
-    invoke-direct {v2, p1, v6}, Landroid/content/Intent;-><init>(Landroid/content/Context;Ljava/lang/Class;)V
+    invoke-direct {v2, p1, v5}, Landroid/content/Intent;-><init>(Landroid/content/Context;Ljava/lang/Class;)V
 
     .line 76
     .line 77
     .line 78
-    const-string v6, "alternative_billing_only_dialog_result_receiver"
+    const-string v5, "alternative_billing_only_dialog_result_receiver"
 
     .line 79
     .line 80
-    iget-object v7, p0, Lcom/android/billingclient/api/zzbd;->zzb:Landroid/os/ResultReceiver;
+    iget-object v6, p0, Lcom/android/billingclient/api/zzbd;->zzb:Landroid/os/ResultReceiver;
 
     .line 81
     .line 82
-    invoke-virtual {v2, v6, v7}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Landroid/os/Parcelable;)Landroid/content/Intent;
+    invoke-virtual {v2, v5, v6}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Landroid/os/Parcelable;)Landroid/content/Intent;
 
     .line 83
     .line 84
@@ -237,7 +237,7 @@
     move-exception p1
 
     .line 93
-    sget v2, Lcom/google/android/gms/internal/play_billing/h1;->a:I
+    sget v2, Lcom/google/android/gms/internal/play_billing/i0;->a:I
 
     .line 94
     .line 95
@@ -289,78 +289,84 @@
     move-result-object v1
 
     .line 121
-    const/4 v3, 0x2
-
-    .line 122
-    new-array v3, v3, [Ljava/lang/Object;
-
-    .line 123
-    .line 124
     invoke-virtual {v1}, Ljava/lang/Class;->getName()Ljava/lang/String;
 
-    .line 125
-    .line 126
-    .line 127
+    .line 122
+    .line 123
+    .line 124
     move-result-object v1
 
-    .line 128
-    aput-object v1, v3, v5
-
-    .line 129
-    .line 130
+    .line 125
     invoke-virtual {p1}, Ljava/lang/Throwable;->getMessage()Ljava/lang/String;
 
-    .line 131
-    .line 132
-    .line 133
+    .line 126
+    .line 127
+    .line 128
     move-result-object p1
 
-    .line 134
+    .line 129
     if-nez p1, :cond_4
 
-    .line 135
-    .line 136
+    .line 130
+    .line 131
     const-string p1, ""
 
+    .line 132
+    .line 133
+    :cond_4
+    new-instance v3, Ljava/lang/StringBuilder;
+
+    .line 134
+    .line 135
+    invoke-direct {v3}, Ljava/lang/StringBuilder;-><init>()V
+
+    .line 136
     .line 137
     .line 138
-    :cond_4
-    const/4 v1, 0x1
+    invoke-virtual {v3, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     .line 139
-    aput-object p1, v3, v1
-
     .line 140
     .line 141
-    const-string p1, "%s: %s"
+    const-string v1, ": "
 
     .line 142
     .line 143
-    invoke-static {p1, v3}, Ljava/lang/String;->format(Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;
+    invoke-virtual {v3, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     .line 144
     .line 145
     .line 146
-    move-result-object p1
+    invoke-virtual {v3, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     .line 147
-    const-string v1, "INTERNAL_LOG_ERROR_ADDITIONAL_DETAILS"
-
     .line 148
     .line 149
-    invoke-virtual {v2, v1, p1}, Landroid/os/BaseBundle;->putString(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-virtual {v3}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
     .line 150
     .line 151
     .line 152
-    iget-object p1, p0, Lcom/android/billingclient/api/zzbd;->zzb:Landroid/os/ResultReceiver;
+    move-result-object p1
 
     .line 153
-    .line 154
-    invoke-virtual {p1, v0, v2}, Landroid/os/ResultReceiver;->send(ILandroid/os/Bundle;)V
+    const-string v1, "INTERNAL_LOG_ERROR_ADDITIONAL_DETAILS"
 
+    .line 154
     .line 155
+    invoke-virtual {v2, v1, p1}, Landroid/os/BaseBundle;->putString(Ljava/lang/String;Ljava/lang/String;)V
+
     .line 156
     .line 157
+    .line 158
+    iget-object p1, p0, Lcom/android/billingclient/api/zzbd;->zzb:Landroid/os/ResultReceiver;
+
+    .line 159
+    .line 160
+    invoke-virtual {p1, v0, v2}, Landroid/os/ResultReceiver;->send(ILandroid/os/Bundle;)V
+
+    .line 161
+    .line 162
+    .line 163
     return-void
 .end method

@@ -4,6 +4,16 @@
 
 
 # annotations
+.annotation runtime Lca/c;
+    c = "androidx.compose.runtime.PausableMonotonicFrameClock"
+    f = "PausableMonotonicFrameClock.kt"
+    l = {
+        0x3e,
+        0x3f
+    }
+    m = "withFrameNanos"
+.end annotation
+
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "<R:",
@@ -23,16 +33,6 @@
     xi = 0x30
 .end annotation
 
-.annotation runtime Lth/c;
-    c = "androidx.compose.runtime.PausableMonotonicFrameClock"
-    f = "PausableMonotonicFrameClock.kt"
-    l = {
-        0x3e,
-        0x3f
-    }
-    m = "withFrameNanos"
-.end annotation
-
 
 # instance fields
 .field L$0:Ljava/lang/Object;
@@ -43,16 +43,16 @@
 
 .field synthetic result:Ljava/lang/Object;
 
-.field final synthetic this$0:Landroidx/compose/runtime/o1;
+.field final synthetic this$0:Landroidx/compose/runtime/e0;
 
 
 # direct methods
-.method public constructor <init>(Landroidx/compose/runtime/o1;Lkotlin/coroutines/Continuation;)V
+.method public constructor <init>(Landroidx/compose/runtime/e0;Lkotlin/coroutines/Continuation;)V
     .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
-            "Landroidx/compose/runtime/o1;",
+            "Landroidx/compose/runtime/e0;",
             "Lkotlin/coroutines/Continuation<",
             "-",
             "Landroidx/compose/runtime/PausableMonotonicFrameClock$withFrameNanos$1;",
@@ -60,7 +60,7 @@
         }
     .end annotation
 
-    iput-object p1, p0, Landroidx/compose/runtime/PausableMonotonicFrameClock$withFrameNanos$1;->this$0:Landroidx/compose/runtime/o1;
+    iput-object p1, p0, Landroidx/compose/runtime/PausableMonotonicFrameClock$withFrameNanos$1;->this$0:Landroidx/compose/runtime/e0;
 
     invoke-direct {p0, p2}, Lkotlin/coroutines/jvm/internal/ContinuationImpl;-><init>(Lkotlin/coroutines/Continuation;)V
 
@@ -82,11 +82,11 @@
 
     iput p1, p0, Landroidx/compose/runtime/PausableMonotonicFrameClock$withFrameNanos$1;->label:I
 
-    iget-object p1, p0, Landroidx/compose/runtime/PausableMonotonicFrameClock$withFrameNanos$1;->this$0:Landroidx/compose/runtime/o1;
+    iget-object p1, p0, Landroidx/compose/runtime/PausableMonotonicFrameClock$withFrameNanos$1;->this$0:Landroidx/compose/runtime/e0;
 
     const/4 v0, 0x0
 
-    invoke-virtual {p1, v0, p0}, Landroidx/compose/runtime/o1;->c(Lzh/c;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
+    invoke-virtual {p1, v0, p0}, Landroidx/compose/runtime/e0;->s(Lka/c;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
 
     move-result-object p1
 

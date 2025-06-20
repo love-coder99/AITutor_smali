@@ -87,8 +87,11 @@
 .method public getCursor()Landroid/database/Cursor;
     .locals 1
 
+    .line 1
     iget-object v0, p0, Landroidx/cursoradapter/widget/c;->mCursor:Landroid/database/Cursor;
 
+    .line 2
+    .line 3
     return-object v0
 .end method
 
@@ -178,7 +181,7 @@
     .line 8
     .line 9
     .line 10
-    iput-object p0, v0, Landroidx/cursoradapter/widget/e;->a:Landroidx/cursoradapter/widget/d;
+    iput-object p0, v0, Landroidx/cursoradapter/widget/e;->a:Landroidx/cursoradapter/widget/c;
 
     .line 11
     .line 12
@@ -197,8 +200,11 @@
 .method public getFilterQueryProvider()Landroid/widget/FilterQueryProvider;
     .locals 1
 
+    .line 1
     iget-object v0, p0, Landroidx/cursoradapter/widget/c;->mFilterQueryProvider:Landroid/widget/FilterQueryProvider;
 
+    .line 2
+    .line 3
     return-object v0
 .end method
 
@@ -374,7 +380,7 @@
 
     .line 34
     .line 35
-    invoke-static {p3, p1}, Lcom/google/android/gms/internal/play_billing/v3;->s(Ljava/lang/String;I)Ljava/lang/String;
+    invoke-static {p1, p3}, Landroidx/appcompat/view/menu/F;->D(ILjava/lang/String;)Ljava/lang/String;
 
     .line 36
     .line 37
@@ -420,10 +426,12 @@
 
     or-int/lit8 p3, p3, 0x2
 
+    .line 2
     iput-boolean v2, p0, Landroidx/cursoradapter/widget/c;->mAutoRequery:Z
 
     goto :goto_0
 
+    .line 3
     :cond_0
     iput-boolean v1, p0, Landroidx/cursoradapter/widget/c;->mAutoRequery:Z
 
@@ -432,18 +440,21 @@
 
     const/4 v1, 0x1
 
+    .line 4
     :cond_1
     iput-object p2, p0, Landroidx/cursoradapter/widget/c;->mCursor:Landroid/database/Cursor;
 
+    .line 5
     iput-boolean v1, p0, Landroidx/cursoradapter/widget/c;->mDataValid:Z
 
+    .line 6
     iput-object p1, p0, Landroidx/cursoradapter/widget/c;->mContext:Landroid/content/Context;
 
     if-eqz v1, :cond_2
 
+    .line 7
     const-string p1, "_id"
 
-    .line 2
     invoke-interface {p2, p1}, Landroid/database/Cursor;->getColumnIndexOrThrow(Ljava/lang/String;)I
 
     move-result p1
@@ -462,14 +473,14 @@
 
     if-ne p3, p1, :cond_3
 
-    .line 3
+    .line 8
     new-instance p1, Landroidx/cursoradapter/widget/a;
 
     invoke-direct {p1, p0}, Landroidx/cursoradapter/widget/a;-><init>(Landroidx/cursoradapter/widget/c;)V
 
     iput-object p1, p0, Landroidx/cursoradapter/widget/c;->mChangeObserver:Landroidx/cursoradapter/widget/a;
 
-    .line 4
+    .line 9
     new-instance p1, Landroidx/cursoradapter/widget/b;
 
     invoke-direct {p1, p0}, Landroidx/cursoradapter/widget/b;-><init>(Landroidx/cursoradapter/widget/c;)V
@@ -481,26 +492,28 @@
     :cond_3
     const/4 p1, 0x0
 
+    .line 10
     iput-object p1, p0, Landroidx/cursoradapter/widget/c;->mChangeObserver:Landroidx/cursoradapter/widget/a;
 
+    .line 11
     iput-object p1, p0, Landroidx/cursoradapter/widget/c;->mDataSetObserver:Landroid/database/DataSetObserver;
 
     :goto_2
     if-eqz v1, :cond_5
 
+    .line 12
     iget-object p1, p0, Landroidx/cursoradapter/widget/c;->mChangeObserver:Landroidx/cursoradapter/widget/a;
 
     if-eqz p1, :cond_4
 
-    .line 5
     invoke-interface {p2, p1}, Landroid/database/Cursor;->registerContentObserver(Landroid/database/ContentObserver;)V
 
+    .line 13
     :cond_4
     iget-object p1, p0, Landroidx/cursoradapter/widget/c;->mDataSetObserver:Landroid/database/DataSetObserver;
 
     if-eqz p1, :cond_5
 
-    .line 6
     invoke-interface {p2, p1}, Landroid/database/Cursor;->registerDataSetObserver(Landroid/database/DataSetObserver;)V
 
     :cond_5
@@ -589,8 +602,11 @@
 .method public setFilterQueryProvider(Landroid/widget/FilterQueryProvider;)V
     .locals 0
 
+    .line 1
     iput-object p1, p0, Landroidx/cursoradapter/widget/c;->mFilterQueryProvider:Landroid/widget/FilterQueryProvider;
 
+    .line 2
+    .line 3
     return-void
 .end method
 

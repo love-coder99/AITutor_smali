@@ -3,14 +3,14 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lzh/a;
+.implements Lka/a;
 
 
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "Lkotlin/jvm/internal/Lambda;",
-        "Lzh/a;"
+        "Lka/a;"
     }
 .end annotation
 
@@ -35,14 +35,14 @@
 
 
 # instance fields
-.field final synthetic $state:Landroidx/compose/foundation/pager/u;
+.field final synthetic $state:Landroidx/compose/foundation/pager/o;
 
 
 # direct methods
-.method public constructor <init>(Landroidx/compose/foundation/pager/u;)V
+.method public constructor <init>(Landroidx/compose/foundation/pager/o;)V
     .locals 0
 
-    iput-object p1, p0, Landroidx/compose/foundation/pager/LazyLayoutPagerKt$Pager$measurePolicy$1$1;->$state:Landroidx/compose/foundation/pager/u;
+    iput-object p1, p0, Landroidx/compose/foundation/pager/LazyLayoutPagerKt$Pager$measurePolicy$1$1;->$state:Landroidx/compose/foundation/pager/o;
 
     const/4 p1, 0x0
 
@@ -56,10 +56,10 @@
 .method public final invoke()Ljava/lang/Integer;
     .locals 1
 
-    iget-object v0, p0, Landroidx/compose/foundation/pager/LazyLayoutPagerKt$Pager$measurePolicy$1$1;->$state:Landroidx/compose/foundation/pager/u;
-
     .line 1
-    invoke-virtual {v0}, Landroidx/compose/foundation/pager/u;->l()I
+    iget-object v0, p0, Landroidx/compose/foundation/pager/LazyLayoutPagerKt$Pager$measurePolicy$1$1;->$state:Landroidx/compose/foundation/pager/o;
+
+    invoke-virtual {v0}, Landroidx/compose/foundation/pager/o;->l()I
 
     move-result v0
 

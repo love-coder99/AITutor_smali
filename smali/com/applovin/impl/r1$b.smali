@@ -39,7 +39,7 @@
 
     .line 6
     .line 7
-    invoke-static {v0, p1, v1, p2, v2}, Landroid/support/v4/media/session/a;->L(Ljava/lang/String;ILjava/lang/String;ILjava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-static {p1, p2, v0, v1, v2}, Landroidx/appcompat/view/menu/F;->J(IILjava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     .line 8
     .line 9
@@ -51,7 +51,7 @@
 
     .line 12
     .line 13
-    invoke-static {p2, p3, v2, p4, v0}, Landroidx/compose/foundation/text/modifiers/f;->C(Ljava/lang/StringBuilder;ILjava/lang/String;ILjava/lang/String;)V
+    invoke-static {p2, p3, v2, p4, v0}, Landroidx/compose/runtime/a0;->z(Ljava/lang/StringBuilder;ILjava/lang/String;ILjava/lang/String;)V
 
     .line 14
     .line 15

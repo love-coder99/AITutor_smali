@@ -3,7 +3,7 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lzh/c;
+.implements Lka/c;
 
 
 # annotations
@@ -13,12 +13,12 @@
     }
     d2 = {
         "T",
-        "Landroidx/compose/animation/core/m;",
+        "Landroidx/compose/animation/core/l;",
         "V",
-        "Landroidx/compose/animation/core/f;",
-        "Lqh/r;",
+        "Landroidx/compose/animation/core/e;",
+        "LX9/j;",
         "invoke",
-        "(Landroidx/compose/animation/core/f;)V",
+        "(Landroidx/compose/animation/core/e;)V",
         "<anonymous>"
     }
     k = 0x3
@@ -63,16 +63,16 @@
     .locals 0
 
     .line 2
-    check-cast p1, Landroidx/compose/animation/core/f;
+    check-cast p1, Landroidx/compose/animation/core/e;
 
-    invoke-virtual {p0, p1}, Landroidx/compose/animation/core/SuspendAnimationKt$animateTo$2;->invoke(Landroidx/compose/animation/core/f;)V
+    invoke-virtual {p0, p1}, Landroidx/compose/animation/core/SuspendAnimationKt$animateTo$2;->invoke(Landroidx/compose/animation/core/e;)V
 
-    sget-object p1, Lqh/r;->a:Lqh/r;
+    sget-object p1, LX9/j;->a:LX9/j;
 
     return-object p1
 .end method
 
-.method public final invoke(Landroidx/compose/animation/core/f;)V
+.method public final invoke(Landroidx/compose/animation/core/e;)V
     .locals 0
 
     .line 1

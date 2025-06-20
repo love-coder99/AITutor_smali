@@ -11,7 +11,7 @@
 
 
 # virtual methods
-.method public final v(Landroidx/compose/ui/focus/l;)V
+.method public final u(Landroidx/compose/ui/focus/l;)V
     .locals 1
 
     .line 1
@@ -19,11 +19,11 @@
 
     .line 2
     .line 3
-    iget-object v0, v0, Landroidx/compose/ui/focus/n;->b:Lzh/c;
+    iget-object v0, v0, Landroidx/compose/ui/focus/n;->b:Lka/c;
 
     .line 4
     .line 5
-    invoke-interface {v0, p1}, Lzh/c;->invoke(Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-interface {v0, p1}, Lka/c;->invoke(Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 6
     .line 7

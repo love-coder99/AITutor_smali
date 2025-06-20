@@ -3,14 +3,14 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lzh/a;
+.implements Lka/a;
 
 
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "Lkotlin/jvm/internal/Lambda;",
-        "Lzh/a;"
+        "Lka/a;"
     }
 .end annotation
 
@@ -21,7 +21,7 @@
     d2 = {
         "",
         "T",
-        "Landroidx/compose/runtime/e;",
+        "Landroidx/compose/ui/node/s0;",
         "E",
         "invoke",
         "()Ljava/lang/Object;",
@@ -38,20 +38,26 @@
 
 
 # instance fields
-.field final synthetic $factory:Lzh/a;
+.field final synthetic $factory:Lka/a;
 
 
 # direct methods
-.method public constructor <init>(Lzh/a;)V
+.method public constructor <init>(Lka/a;)V
     .locals 0
 
     .line 1
-    iput-object p1, p0, Lcoil/compose/AsyncImageKt$Content$$inlined$Layout$1;->$factory:Lzh/a;
+    iput-object p1, p0, Lcoil/compose/AsyncImageKt$Content$$inlined$Layout$1;->$factory:Lka/a;
 
+    .line 2
+    .line 3
     const/4 p1, 0x0
 
+    .line 4
     invoke-direct {p0, p1}, Lkotlin/jvm/internal/Lambda;-><init>(I)V
 
+    .line 5
+    .line 6
+    .line 7
     return-void
 .end method
 
@@ -67,11 +73,11 @@
     .end annotation
 
     .line 1
-    iget-object v0, p0, Lcoil/compose/AsyncImageKt$Content$$inlined$Layout$1;->$factory:Lzh/a;
+    iget-object v0, p0, Lcoil/compose/AsyncImageKt$Content$$inlined$Layout$1;->$factory:Lka/a;
 
     .line 2
     .line 3
-    invoke-interface {v0}, Lzh/a;->invoke()Ljava/lang/Object;
+    invoke-interface {v0}, Lka/a;->invoke()Ljava/lang/Object;
 
     .line 4
     .line 5

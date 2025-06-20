@@ -20,6 +20,7 @@
     .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
+    .line 2
     iput p1, p0, Lcom/apm/insight/l/f;->a:I
 
     return-void
@@ -28,12 +29,13 @@
 .method public constructor <init>(ILjava/lang/Throwable;)V
     .locals 0
 
-    .line 3
+    .line 6
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
+    .line 7
     iput p1, p0, Lcom/apm/insight/l/f;->a:I
 
-    .line 4
+    .line 8
     invoke-virtual {p2}, Ljava/lang/Throwable;->getMessage()Ljava/lang/String;
 
     move-result-object p1
@@ -46,13 +48,15 @@
 .method public constructor <init>(Ljava/lang/String;)V
     .locals 1
 
-    .line 5
+    .line 9
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     const/16 v0, 0xce
 
+    .line 10
     iput v0, p0, Lcom/apm/insight/l/f;->a:I
 
+    .line 11
     iput-object p1, p0, Lcom/apm/insight/l/f;->b:Ljava/lang/String;
 
     return-void
@@ -61,13 +65,15 @@
 .method public constructor <init>(Lorg/json/JSONObject;)V
     .locals 1
 
-    .line 6
+    .line 12
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     const/4 v0, 0x0
 
+    .line 13
     iput v0, p0, Lcom/apm/insight/l/f;->a:I
 
+    .line 14
     iput-object p1, p0, Lcom/apm/insight/l/f;->c:Lorg/json/JSONObject;
 
     return-void
@@ -76,13 +82,15 @@
 .method public constructor <init>([B)V
     .locals 1
 
-    .line 2
+    .line 3
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     const/16 v0, 0xcc
 
+    .line 4
     iput v0, p0, Lcom/apm/insight/l/f;->a:I
 
+    .line 5
     iput-object p1, p0, Lcom/apm/insight/l/f;->d:[B
 
     return-void
@@ -91,14 +99,14 @@
 .method private static a(Ljava/io/File;Z)Lcom/apm/insight/entity/a;
     .locals 17
 
+    .line 57
     const-string v0, "\n"
 
-    .line 58
     new-instance v1, Lcom/apm/insight/entity/a;
 
     invoke-direct {v1}, Lcom/apm/insight/entity/a;-><init>()V
 
-    .line 59
+    .line 58
     invoke-virtual/range {p0 .. p0}, Ljava/io/File;->exists()Z
 
     move-result v2
@@ -109,7 +117,7 @@
 
     if-eqz v2, :cond_12
 
-    .line 60
+    .line 59
     :try_start_0
     invoke-virtual/range {p0 .. p0}, Ljava/io/File;->getAbsolutePath()Ljava/lang/String;
 
@@ -128,7 +136,7 @@
 
     const/4 v2, 0x0
 
-    .line 61
+    .line 60
     :goto_0
     invoke-static {v2}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
 
@@ -148,28 +156,28 @@
 
     goto/16 :goto_9
 
-    .line 62
+    .line 61
     :cond_1
     invoke-virtual {v2, v0}, Ljava/lang/String;->split(Ljava/lang/String;)[Ljava/lang/String;
 
     move-result-object v2
 
-    .line 63
+    .line 62
     new-instance v6, Ljava/util/ArrayList;
 
     invoke-direct {v6}, Ljava/util/ArrayList;-><init>()V
 
-    .line 64
+    .line 63
     new-instance v7, Ljava/lang/StringBuilder;
 
     invoke-direct {v7}, Ljava/lang/StringBuilder;-><init>()V
 
-    .line 65
+    .line 64
     new-instance v8, Ljava/lang/StringBuilder;
 
     invoke-direct {v8}, Ljava/lang/StringBuilder;-><init>()V
 
-    .line 66
+    .line 65
     array-length v9, v2
 
     const/4 v10, 0x0
@@ -189,9 +197,9 @@
 
     if-nez v12, :cond_2
 
+    .line 66
     const-string v5, "stack:"
 
-    .line 67
     invoke-virtual {v15, v5}, Ljava/lang/String;->startsWith(Ljava/lang/String;)Z
 
     move-result v5
@@ -205,9 +213,9 @@
     :cond_2
     if-nez v13, :cond_3
 
+    .line 67
     const-string v5, "err:"
 
-    .line 68
     invoke-virtual {v15, v5}, Ljava/lang/String;->startsWith(Ljava/lang/String;)Z
 
     move-result v5
@@ -221,7 +229,7 @@
     :cond_3
     if-eqz v13, :cond_4
 
-    .line 69
+    .line 68
     invoke-virtual {v8, v15}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     invoke-virtual {v8, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
@@ -231,14 +239,14 @@
     :cond_4
     if-eqz v12, :cond_5
 
-    .line 70
+    .line 69
     invoke-virtual {v7, v15}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     invoke-virtual {v7, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     goto :goto_3
 
-    .line 71
+    .line 70
     :cond_5
     invoke-virtual {v6, v15}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
@@ -247,7 +255,7 @@
 
     goto :goto_2
 
-    .line 72
+    .line 71
     :cond_6
     invoke-virtual {v6}, Ljava/util/ArrayList;->size()I
 
@@ -266,7 +274,7 @@
     :cond_7
     const/4 v0, 0x0
 
-    .line 73
+    .line 72
     :goto_4
     invoke-virtual {v6}, Ljava/util/ArrayList;->size()I
 
@@ -287,7 +295,7 @@
     :cond_8
     const/4 v2, 0x0
 
-    .line 74
+    .line 73
     :goto_5
     invoke-virtual {v6}, Ljava/util/ArrayList;->size()I
 
@@ -308,7 +316,7 @@
     :cond_9
     const/4 v5, 0x0
 
-    .line 75
+    .line 74
     :goto_6
     invoke-virtual {v6}, Ljava/util/ArrayList;->size()I
 
@@ -334,27 +342,28 @@
     :goto_7
     if-eqz v12, :cond_b
 
-    .line 76
+    .line 75
     invoke-virtual {v7}, Ljava/lang/StringBuilder;->length()I
 
     move-result v6
 
     if-lez v6, :cond_b
 
-    .line 77
+    .line 76
     invoke-virtual {v7}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
     move-result-object v3
 
     goto :goto_8
 
+    .line 77
     :cond_b
     const-string v6, "\nCaused by: "
 
     if-eqz v5, :cond_d
 
     .line 78
-    invoke-static {v5, v6}, Lj0/d;->s(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-static {v5, v6}, LB/u;->z(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object v2
 
@@ -376,7 +385,7 @@
     if-eqz v2, :cond_f
 
     .line 80
-    invoke-static {v2, v6}, Lj0/d;->s(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-static {v2, v6}, LB/u;->z(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object v2
 
@@ -441,30 +450,30 @@
 
     goto/16 :goto_1
 
+    .line 84
     :goto_9
     const-string v2, "data"
 
-    .line 84
     invoke-virtual {v1, v2, v3}, Lcom/apm/insight/entity/a;->a(Ljava/lang/String;Ljava/lang/Object;)V
 
+    .line 85
     const-string v2, "process_name"
 
-    .line 85
     invoke-virtual {v1, v2, v5}, Lcom/apm/insight/entity/a;->a(Ljava/lang/String;Ljava/lang/Object;)V
 
+    .line 86
     const-string v2, "crash_thread_name"
 
-    .line 86
     invoke-virtual {v1, v2, v0}, Lcom/apm/insight/entity/a;->a(Ljava/lang/String;Ljava/lang/Object;)V
-
-    const-string v0, "isOOM"
 
     .line 87
     invoke-static/range {p1 .. p1}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
 
-    move-result-object v2
+    move-result-object v0
 
-    invoke-virtual {v1, v0, v2}, Lcom/apm/insight/entity/a;->a(Ljava/lang/String;Ljava/lang/Object;)V
+    const-string v2, "isOOM"
+
+    invoke-virtual {v1, v2, v0}, Lcom/apm/insight/entity/a;->a(Ljava/lang/String;Ljava/lang/Object;)V
 
     return-object v1
 .end method
@@ -472,21 +481,21 @@
 .method public static a(Ljava/io/File;Lcom/apm/insight/CrashType;)Lcom/apm/insight/f/b;
     .locals 6
 
+    .line 41
     const-string v0, "_"
 
-    .line 42
     invoke-static {p0}, Lcom/apm/insight/l/f;->f(Ljava/io/File;)Lcom/apm/insight/entity/a;
 
     move-result-object v1
 
-    .line 43
+    .line 42
     invoke-virtual {p0}, Ljava/io/File;->getName()Ljava/lang/String;
 
     move-result-object p0
 
     const/16 v2, 0x5f
 
-    .line 44
+    .line 43
     invoke-virtual {p0, v2}, Ljava/lang/String;->lastIndexOf(I)I
 
     move-result v2
@@ -497,7 +506,7 @@
 
     move-result-object p0
 
-    .line 45
+    .line 44
     invoke-virtual {v1}, Lcom/apm/insight/entity/a;->c()Lorg/json/JSONObject;
 
     move-result-object v2
@@ -510,16 +519,16 @@
 
     const/4 v3, 0x0
 
+    .line 45
     const-string v4, "unique_key"
 
-    .line 46
     invoke-virtual {v2, v4, v3}, Lorg/json/JSONObject;->optString(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v3
 
     if-nez v3, :cond_0
 
-    .line 47
+    .line 46
     :try_start_0
     new-instance v3, Ljava/lang/StringBuilder;
 
@@ -527,7 +536,7 @@
 
     invoke-direct {v3, v5}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
 
-    .line 48
+    .line 47
     invoke-static {}, Lcom/apm/insight/e;->c()Lcom/apm/insight/runtime/h;
 
     move-result-object v5
@@ -552,7 +561,7 @@
 
     move-result-object p0
 
-    .line 49
+    .line 48
     invoke-virtual {v2, v4, p0}, Lorg/json/JSONObject;->put(Ljava/lang/String;Ljava/lang/Object;)Lorg/json/JSONObject;
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
@@ -562,46 +571,46 @@
     :catchall_0
     move-exception p0
 
-    .line 50
+    .line 49
     invoke-virtual {p0}, Ljava/lang/Throwable;->printStackTrace()V
 
-    .line 51
+    .line 50
     :cond_0
     :goto_0
     new-instance p0, Lcom/apm/insight/f/b;
 
     invoke-direct {p0}, Lcom/apm/insight/f/b;-><init>()V
 
-    .line 52
+    .line 51
     sget-object v0, Lcom/apm/insight/CrashType;->LAUNCH:Lcom/apm/insight/CrashType;
 
     if-ne p1, v0, :cond_1
 
-    .line 53
+    .line 52
     invoke-static {}, Lcom/apm/insight/k/e;->e()Ljava/lang/String;
 
     move-result-object p1
 
     goto :goto_1
 
-    .line 54
+    .line 53
     :cond_1
     invoke-static {}, Lcom/apm/insight/k/e;->c()Ljava/lang/String;
 
     move-result-object p1
 
-    .line 55
+    .line 54
     :goto_1
     invoke-virtual {p0, p1}, Lcom/apm/insight/f/b;->a(Ljava/lang/String;)V
 
-    .line 56
+    .line 55
     invoke-virtual {v1}, Lcom/apm/insight/entity/a;->c()Lorg/json/JSONObject;
 
     move-result-object p1
 
     invoke-virtual {p0, p1}, Lcom/apm/insight/f/b;->a(Lorg/json/JSONObject;)V
 
-    .line 57
+    .line 56
     invoke-static {}, Lcom/apm/insight/k/e;->a()Z
 
     move-result p1
@@ -619,7 +628,7 @@
         }
     .end annotation
 
-    .line 31
+    .line 30
     invoke-static {p0, p1}, Lcom/apm/insight/l/f;->b(Ljava/io/File;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object p0
@@ -646,7 +655,7 @@
         }
     .end annotation
 
-    .line 28
+    .line 27
     invoke-static {p0}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
 
     move-result v0
@@ -657,13 +666,13 @@
 
     return-object p0
 
-    .line 29
+    .line 28
     :cond_0
     new-instance v0, Ljava/io/File;
 
     invoke-direct {v0, p0}, Ljava/io/File;-><init>(Ljava/lang/String;)V
 
-    .line 30
+    .line 29
     invoke-static {v0, p1}, Lcom/apm/insight/l/f;->b(Ljava/io/File;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object p0
@@ -673,20 +682,24 @@
 
 .method public static a(Ljava/io/File;J)Lorg/json/JSONArray;
     .locals 5
+    .param p0    # Ljava/io/File;
+        .annotation build Landroidx/annotation/NonNull;
+        .end annotation
+    .end param
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
         }
     .end annotation
 
-    .line 35
+    .line 34
     new-instance v0, Lorg/json/JSONArray;
 
     invoke-direct {v0}, Lorg/json/JSONArray;-><init>()V
 
     const/4 v1, 0x0
 
-    .line 36
+    .line 35
     :try_start_0
     new-instance v2, Ljava/io/BufferedReader;
 
@@ -704,11 +717,11 @@
 
     if-lez p0, :cond_0
 
-    .line 37
+    .line 36
     :try_start_1
     invoke-virtual {v2, p1, p2}, Ljava/io/BufferedReader;->skip(J)J
 
-    .line 38
+    .line 37
     invoke-virtual {v2}, Ljava/io/BufferedReader;->readLine()Ljava/lang/String;
 
     goto :goto_0
@@ -720,7 +733,7 @@
 
     goto :goto_1
 
-    .line 39
+    .line 38
     :cond_0
     :goto_0
     invoke-virtual {v2}, Ljava/io/BufferedReader;->readLine()Ljava/lang/String;
@@ -729,14 +742,14 @@
 
     if-eqz p0, :cond_1
 
-    .line 40
+    .line 39
     invoke-virtual {v0, p0}, Lorg/json/JSONArray;->put(Ljava/lang/Object;)Lorg/json/JSONArray;
     :try_end_1
     .catchall {:try_start_1 .. :try_end_1} :catchall_0
 
     goto :goto_0
 
-    .line 41
+    .line 40
     :cond_1
     invoke-static {v2}, Lcom/apm/insight/a;->a(Ljava/io/Closeable;)V
 
@@ -759,7 +772,7 @@
         }
     .end annotation
 
-    .line 32
+    .line 31
     invoke-static {p0}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
 
     move-result v0
@@ -770,7 +783,7 @@
 
     return-object p0
 
-    .line 33
+    .line 32
     :cond_0
     new-instance v0, Ljava/io/File;
 
@@ -778,7 +791,7 @@
 
     const-wide/16 v1, -0x1
 
-    .line 34
+    .line 33
     invoke-static {v0, v1, v2}, Lcom/apm/insight/l/f;->a(Ljava/io/File;J)Lorg/json/JSONArray;
 
     move-result-object p0
@@ -823,10 +836,11 @@
 
     const/16 p1, 0x2000
 
+    .line 109
     :try_start_2
     new-array p1, p1, [B
 
-    .line 109
+    .line 110
     :goto_0
     invoke-virtual {v1, p1}, Ljava/io/FileInputStream;->read([B)I
 
@@ -836,7 +850,7 @@
 
     const/4 v2, 0x0
 
-    .line 110
+    .line 111
     invoke-virtual {p0, p1, v2, v0}, Ljava/io/FileOutputStream;->write([BII)V
     :try_end_2
     .catch Ljava/lang/Exception; {:try_start_2 .. :try_end_2} :catch_0
@@ -860,11 +874,11 @@
 
     goto :goto_4
 
-    .line 111
+    .line 112
     :cond_1
     invoke-static {v1}, Lcom/apm/insight/a;->a(Ljava/io/Closeable;)V
 
-    .line 112
+    .line 113
     :goto_3
     invoke-static {p0}, Lcom/apm/insight/a;->a(Ljava/io/Closeable;)V
 
@@ -896,14 +910,14 @@
 
     move-object p0, v0
 
-    .line 113
+    .line 114
     :goto_4
     :try_start_3
     invoke-virtual {p1}, Ljava/lang/Throwable;->printStackTrace()V
     :try_end_3
     .catchall {:try_start_3 .. :try_end_3} :catchall_3
 
-    .line 114
+    .line 115
     invoke-static {v0}, Lcom/apm/insight/a;->a(Ljava/io/Closeable;)V
 
     goto :goto_3
@@ -914,7 +928,7 @@
     :goto_5
     invoke-static {v0}, Lcom/apm/insight/a;->a(Ljava/io/Closeable;)V
 
-    .line 115
+    .line 116
     invoke-static {p0}, Lcom/apm/insight/a;->a(Ljava/io/Closeable;)V
 
     throw p1
@@ -922,13 +936,21 @@
 
 .method public static a(Ljava/io/File;Ljava/lang/String;Z)V
     .locals 2
+    .param p0    # Ljava/io/File;
+        .annotation build Landroidx/annotation/NonNull;
+        .end annotation
+    .end param
+    .param p1    # Ljava/lang/String;
+        .annotation build Landroidx/annotation/NonNull;
+        .end annotation
+    .end param
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
         }
     .end annotation
 
-    .line 2
+    .line 1
     invoke-static {p1}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
 
     move-result v0
@@ -937,7 +959,7 @@
 
     return-void
 
-    .line 3
+    .line 2
     :cond_0
     invoke-virtual {p0}, Ljava/io/File;->getParentFile()Ljava/io/File;
 
@@ -947,7 +969,7 @@
 
     const/4 v0, 0x0
 
-    .line 4
+    .line 3
     :try_start_0
     new-instance v1, Ljava/io/FileOutputStream;
 
@@ -955,7 +977,7 @@
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_1
 
-    .line 5
+    .line 4
     :try_start_1
     invoke-virtual {p1}, Ljava/lang/String;->getBytes()[B
 
@@ -963,12 +985,12 @@
 
     invoke-virtual {v1, p0}, Ljava/io/OutputStream;->write([B)V
 
-    .line 6
+    .line 5
     invoke-virtual {v1}, Ljava/io/OutputStream;->flush()V
     :try_end_1
     .catchall {:try_start_1 .. :try_end_1} :catchall_0
 
-    .line 7
+    .line 6
     invoke-static {v1}, Lcom/apm/insight/a;->a(Ljava/io/Closeable;)V
 
     return-void
@@ -991,6 +1013,9 @@
 
 .method public static a(Ljava/io/File;Ljava/util/Map;)V
     .locals 3
+    .annotation build Landroidx/annotation/Nullable;
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -1084,10 +1109,10 @@
 
     goto :goto_1
 
+    .line 101
     :cond_1
     const-string p0, "no"
 
-    .line 101
     invoke-virtual {v1, v2, p0}, Ljava/util/Properties;->store(Ljava/io/OutputStream;Ljava/lang/String;)V
     :try_end_1
     .catch Ljava/io/IOException; {:try_start_1 .. :try_end_1} :catch_0
@@ -1130,6 +1155,14 @@
 
 .method public static a(Ljava/io/File;Lorg/json/JSONArray;)V
     .locals 2
+    .param p0    # Ljava/io/File;
+        .annotation build Landroidx/annotation/NonNull;
+        .end annotation
+    .end param
+    .param p1    # Lorg/json/JSONArray;
+        .annotation build Landroidx/annotation/NonNull;
+        .end annotation
+    .end param
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -1140,7 +1173,7 @@
 
     return-void
 
-    .line 12
+    .line 11
     :cond_0
     invoke-virtual {p0}, Ljava/io/File;->getParentFile()Ljava/io/File;
 
@@ -1148,7 +1181,7 @@
 
     invoke-virtual {v0}, Ljava/io/File;->mkdirs()Z
 
-    .line 13
+    .line 12
     :try_start_0
     new-instance v0, Ljava/io/BufferedWriter;
 
@@ -1160,13 +1193,13 @@
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    .line 14
+    .line 13
     :try_start_1
     invoke-static {p1, v0}, Lcom/apm/insight/l/h;->a(Lorg/json/JSONArray;Ljava/io/Writer;)V
     :try_end_1
     .catchall {:try_start_1 .. :try_end_1} :catchall_1
 
-    .line 15
+    .line 14
     invoke-static {v0}, Lcom/apm/insight/a;->a(Ljava/io/Closeable;)V
 
     return-void
@@ -1182,6 +1215,14 @@
 
 .method public static a(Ljava/io/File;Lorg/json/JSONObject;)V
     .locals 2
+    .param p0    # Ljava/io/File;
+        .annotation build Landroidx/annotation/NonNull;
+        .end annotation
+    .end param
+    .param p1    # Lorg/json/JSONObject;
+        .annotation build Landroidx/annotation/NonNull;
+        .end annotation
+    .end param
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -1192,7 +1233,7 @@
 
     return-void
 
-    .line 8
+    .line 7
     :cond_0
     invoke-virtual {p0}, Ljava/io/File;->getParentFile()Ljava/io/File;
 
@@ -1200,7 +1241,7 @@
 
     invoke-virtual {v0}, Ljava/io/File;->mkdirs()Z
 
-    .line 9
+    .line 8
     :try_start_0
     new-instance v0, Ljava/io/BufferedWriter;
 
@@ -1212,13 +1253,13 @@
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    .line 10
+    .line 9
     :try_start_1
     invoke-static {p1, v0}, Lcom/apm/insight/l/h;->a(Lorg/json/JSONObject;Ljava/io/Writer;)V
     :try_end_1
     .catchall {:try_start_1 .. :try_end_1} :catchall_1
 
-    .line 11
+    .line 10
     invoke-static {v0}, Lcom/apm/insight/a;->a(Ljava/io/Closeable;)V
 
     return-void
@@ -1242,7 +1283,7 @@
 
     const/4 v0, 0x0
 
-    .line 116
+    .line 117
     :try_start_0
     new-instance v1, Ljava/util/zip/ZipOutputStream;
 
@@ -1250,7 +1291,7 @@
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_1
 
-    .line 117
+    .line 118
     :try_start_1
     new-instance p0, Ljava/util/zip/ZipEntry;
 
@@ -1260,7 +1301,7 @@
 
     invoke-virtual {v1, p0}, Ljava/util/zip/ZipOutputStream;->putNextEntry(Ljava/util/zip/ZipEntry;)V
 
-    .line 118
+    .line 119
     array-length p0, p1
 
     const/4 v0, 0x0
@@ -1270,7 +1311,7 @@
 
     aget-object v2, p1, v0
 
-    .line 119
+    .line 120
     invoke-static {v1, v2}, Lcom/apm/insight/l/f;->a(Ljava/util/zip/ZipOutputStream;Ljava/io/File;)V
     :try_end_1
     .catchall {:try_start_1 .. :try_end_1} :catchall_0
@@ -1286,7 +1327,7 @@
 
     goto :goto_1
 
-    .line 120
+    .line 121
     :cond_0
     invoke-static {v1}, Lcom/apm/insight/a;->a(Ljava/io/Closeable;)V
 
@@ -1311,7 +1352,7 @@
 
     if-eqz p1, :cond_3
 
-    .line 121
+    .line 122
     invoke-virtual {p1}, Ljava/io/File;->exists()Z
 
     move-result v0
@@ -1320,7 +1361,7 @@
 
     goto :goto_2
 
-    .line 122
+    .line 123
     :cond_0
     invoke-virtual {p1}, Ljava/io/File;->isDirectory()Z
 
@@ -1350,14 +1391,14 @@
 
     return-void
 
-    .line 123
+    .line 124
     :cond_2
     :goto_1
     array-length v0, p1
 
     if-ge v1, v0, :cond_3
 
-    .line 124
+    .line 125
     aget-object v0, p1, v1
 
     invoke-virtual {v0}, Ljava/io/File;->getName()Ljava/lang/String;
@@ -1385,7 +1426,7 @@
 
     if-eqz p1, :cond_6
 
-    .line 125
+    .line 126
     invoke-virtual {p1}, Ljava/io/File;->exists()Z
 
     move-result v0
@@ -1394,7 +1435,7 @@
 
     goto/16 :goto_3
 
-    .line 126
+    .line 127
     :cond_0
     invoke-virtual {p1}, Ljava/io/File;->isDirectory()Z
 
@@ -1404,7 +1445,7 @@
 
     if-eqz v0, :cond_4
 
-    .line 127
+    .line 128
     invoke-virtual {p1}, Ljava/io/File;->listFiles()[Ljava/io/File;
 
     move-result-object p1
@@ -1413,23 +1454,23 @@
 
     return-void
 
-    .line 128
+    .line 129
     :cond_1
     new-instance v0, Ljava/util/zip/ZipEntry;
 
     const-string v2, "/"
 
-    .line 129
-    invoke-static {p2, v2}, Landroid/support/v4/media/session/a;->S(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+    .line 130
+    invoke-static {p2, v2}, Landroidx/appcompat/view/menu/F;->F(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v3
 
-    .line 130
+    .line 131
     invoke-direct {v0, v3}, Ljava/util/zip/ZipEntry;-><init>(Ljava/lang/String;)V
 
     invoke-virtual {p0, v0}, Ljava/util/zip/ZipOutputStream;->putNextEntry(Ljava/util/zip/ZipEntry;)V
 
-    .line 131
+    .line 132
     invoke-virtual {p2}, Ljava/lang/String;->length()I
 
     move-result v0
@@ -1445,21 +1486,21 @@
 
     move-result-object p2
 
-    .line 132
+    .line 133
     :goto_0
     array-length v0, p1
 
     if-ge v1, v0, :cond_3
 
-    .line 133
+    .line 134
     aget-object v0, p1, v1
 
-    .line 134
-    invoke-static {p2}, Lj0/d;->p(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    .line 135
+    invoke-static {p2}, Landroidx/compose/runtime/a0;->t(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object v2
 
-    .line 135
+    .line 136
     aget-object v3, p1, v1
 
     invoke-virtual {v3}, Ljava/io/File;->getName()Ljava/lang/String;
@@ -1481,7 +1522,7 @@
     :cond_3
     return-void
 
-    .line 136
+    .line 137
     :cond_4
     new-instance v0, Ljava/util/zip/ZipEntry;
 
@@ -1491,7 +1532,7 @@
 
     const/4 p2, 0x0
 
-    .line 137
+    .line 138
     :try_start_0
     new-instance v0, Ljava/io/FileInputStream;
 
@@ -1501,10 +1542,11 @@
 
     const/16 p1, 0x1000
 
+    .line 139
     :try_start_1
     new-array p1, p1, [B
 
-    .line 138
+    .line 140
     :goto_1
     invoke-virtual {v0, p1}, Ljava/io/FileInputStream;->read([B)I
 
@@ -1514,7 +1556,7 @@
 
     if-eq v2, p2, :cond_5
 
-    .line 139
+    .line 141
     invoke-virtual {p0, p1, v1, p2}, Ljava/util/zip/ZipOutputStream;->write([BII)V
     :try_end_1
     .catchall {:try_start_1 .. :try_end_1} :catchall_0
@@ -1528,7 +1570,7 @@
 
     goto :goto_2
 
-    .line 140
+    .line 142
     :cond_5
     invoke-static {v0}, Lcom/apm/insight/a;->a(Ljava/io/Closeable;)V
 
@@ -1549,8 +1591,12 @@
 
 .method public static a(Ljava/io/File;)Z
     .locals 5
+    .param p0    # Ljava/io/File;
+        .annotation build Landroidx/annotation/NonNull;
+        .end annotation
+    .end param
 
-    .line 16
+    .line 15
     invoke-virtual {p0}, Ljava/io/File;->exists()Z
 
     move-result v0
@@ -1561,7 +1607,7 @@
 
     return v1
 
-    .line 17
+    .line 16
     :cond_0
     invoke-virtual {p0}, Ljava/io/File;->canWrite()Z
 
@@ -1573,7 +1619,7 @@
 
     return v2
 
-    .line 18
+    .line 17
     :cond_1
     invoke-virtual {p0}, Ljava/io/File;->isFile()Z
 
@@ -1581,14 +1627,14 @@
 
     if-eqz v0, :cond_2
 
-    .line 19
+    .line 18
     invoke-virtual {p0}, Ljava/io/File;->delete()Z
 
     move-result p0
 
     return p0
 
-    .line 20
+    .line 19
     :cond_2
     invoke-virtual {p0}, Ljava/io/File;->isDirectory()Z
 
@@ -1596,7 +1642,7 @@
 
     if-eqz v0, :cond_6
 
-    .line 21
+    .line 20
     invoke-virtual {p0}, Ljava/io/File;->listFiles()[Ljava/io/File;
 
     move-result-object v0
@@ -1606,12 +1652,12 @@
     :goto_0
     if-eqz v0, :cond_5
 
-    .line 22
+    .line 21
     array-length v4, v0
 
     if-ge v3, v4, :cond_5
 
-    .line 23
+    .line 22
     aget-object v4, v0, v3
 
     invoke-virtual {v4}, Ljava/io/File;->isFile()Z
@@ -1620,7 +1666,7 @@
 
     if-eqz v4, :cond_4
 
-    .line 24
+    .line 23
     aget-object v4, v0, v3
 
     invoke-virtual {v4}, Ljava/io/File;->canWrite()Z
@@ -1629,7 +1675,7 @@
 
     if-eqz v4, :cond_3
 
-    .line 25
+    .line 24
     aget-object v4, v0, v3
 
     invoke-virtual {v4}, Ljava/io/File;->delete()Z
@@ -1646,7 +1692,7 @@
 
     goto :goto_2
 
-    .line 26
+    .line 25
     :cond_4
     aget-object v4, v0, v3
 
@@ -1661,7 +1707,7 @@
 
     goto :goto_0
 
-    .line 27
+    .line 26
     :cond_5
     invoke-virtual {p0}, Ljava/io/File;->delete()Z
 
@@ -1678,10 +1724,10 @@
 
     const/4 v0, 0x0
 
+    .line 29
     :try_start_0
     const-string v1, "\n"
 
-    .line 30
     invoke-static {p0, v1}, Lcom/apm/insight/l/f;->a(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object p0
@@ -1690,49 +1736,49 @@
 
     return-object v0
 
-    .line 31
+    .line 30
     :cond_0
     new-instance v1, Lorg/json/JSONObject;
 
     invoke-direct {v1, p0}, Lorg/json/JSONObject;-><init>(Ljava/lang/String;)V
 
-    .line 32
+    .line 31
     new-instance p0, Lcom/apm/insight/f/b;
 
     invoke-direct {p0}, Lcom/apm/insight/f/b;-><init>()V
 
+    .line 32
     const-string v2, "url"
 
-    .line 33
     invoke-virtual {v1, v2}, Lorg/json/JSONObject;->optString(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v2
 
     invoke-virtual {p0, v2}, Lcom/apm/insight/f/b;->a(Ljava/lang/String;)V
 
+    .line 33
     const-string v2, "body"
 
-    .line 34
     invoke-virtual {v1, v2}, Lorg/json/JSONObject;->optJSONObject(Ljava/lang/String;)Lorg/json/JSONObject;
 
     move-result-object v2
 
     invoke-virtual {p0, v2}, Lcom/apm/insight/f/b;->a(Lorg/json/JSONObject;)V
 
+    .line 34
     const-string v2, "dump_file"
 
-    .line 35
     invoke-virtual {v1, v2}, Lorg/json/JSONObject;->optString(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v2
 
     invoke-virtual {p0, v2}, Lcom/apm/insight/f/b;->b(Ljava/lang/String;)V
 
+    .line 35
     const-string v2, "encrypt"
 
     const/4 v3, 0x0
 
-    .line 36
     invoke-virtual {v1, v2, v3}, Lorg/json/JSONObject;->optBoolean(Ljava/lang/String;Z)Z
 
     move-result v1
@@ -1755,14 +1801,14 @@
         }
     .end annotation
 
-    .line 2
+    .line 1
     new-instance v0, Ljava/lang/StringBuilder;
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
 
     const/4 v1, 0x0
 
-    .line 3
+    .line 2
     :try_start_0
     new-instance v2, Ljava/io/BufferedReader;
 
@@ -1774,7 +1820,7 @@
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_1
 
-    .line 4
+    .line 3
     :goto_0
     :try_start_1
     invoke-virtual {v2}, Ljava/io/BufferedReader;->readLine()Ljava/lang/String;
@@ -1783,7 +1829,7 @@
 
     if-eqz p0, :cond_1
 
-    .line 5
+    .line 4
     invoke-virtual {v0}, Ljava/lang/StringBuilder;->length()I
 
     move-result v1
@@ -1792,7 +1838,7 @@
 
     if-eqz p1, :cond_0
 
-    .line 6
+    .line 5
     invoke-virtual {v0, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     goto :goto_1
@@ -1804,7 +1850,7 @@
 
     goto :goto_2
 
-    .line 7
+    .line 6
     :cond_0
     :goto_1
     invoke-virtual {v0, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
@@ -1813,11 +1859,11 @@
 
     goto :goto_0
 
-    .line 8
+    .line 7
     :cond_1
     invoke-static {v2}, Lcom/apm/insight/a;->a(Ljava/io/Closeable;)V
 
-    .line 9
+    .line 8
     invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
     move-result-object p0
@@ -1827,7 +1873,7 @@
     :catchall_1
     move-exception p0
 
-    .line 10
+    .line 9
     :goto_2
     invoke-static {v1}, Lcom/apm/insight/a;->a(Ljava/io/Closeable;)V
 
@@ -1837,51 +1883,51 @@
 .method private static b(Ljava/io/File;Ljava/lang/String;Ljava/lang/String;Lorg/json/JSONObject;Z)Ljava/lang/String;
     .locals 1
 
-    .line 13
+    .line 12
     invoke-virtual {p0}, Ljava/io/File;->exists()Z
 
     move-result v0
 
     if-nez v0, :cond_0
 
-    .line 14
+    .line 13
     invoke-virtual {p0}, Ljava/io/File;->mkdirs()Z
 
-    .line 15
+    .line 14
     :cond_0
     new-instance v0, Ljava/io/File;
 
     invoke-direct {v0, p0, p1}, Ljava/io/File;-><init>(Ljava/io/File;Ljava/lang/String;)V
 
-    .line 16
+    .line 15
     new-instance p0, Lorg/json/JSONObject;
 
     invoke-direct {p0}, Lorg/json/JSONObject;-><init>()V
 
+    .line 16
     :try_start_0
     const-string p1, "url"
 
-    .line 17
     invoke-virtual {p0, p1, p2}, Lorg/json/JSONObject;->put(Ljava/lang/String;Ljava/lang/Object;)Lorg/json/JSONObject;
 
+    .line 17
     const-string p1, "body"
 
-    .line 18
     invoke-virtual {p0, p1, p3}, Lorg/json/JSONObject;->put(Ljava/lang/String;Ljava/lang/Object;)Lorg/json/JSONObject;
 
+    .line 18
     const-string p1, "dump_file"
 
     const-string p2, ""
 
-    .line 19
     invoke-virtual {p0, p1, p2}, Lorg/json/JSONObject;->put(Ljava/lang/String;Ljava/lang/Object;)Lorg/json/JSONObject;
 
+    .line 19
     const-string p1, "encrypt"
 
-    .line 20
     invoke-virtual {p0, p1, p4}, Lorg/json/JSONObject;->put(Ljava/lang/String;Z)Lorg/json/JSONObject;
 
-    .line 21
+    .line 20
     invoke-static {v0, p0}, Lcom/apm/insight/l/f;->a(Ljava/io/File;Lorg/json/JSONObject;)V
     :try_end_0
     .catch Lorg/json/JSONException; {:try_start_0 .. :try_end_0} :catch_1
@@ -1899,17 +1945,17 @@
 
     goto :goto_1
 
-    .line 22
+    .line 21
     :goto_0
     invoke-virtual {p0}, Ljava/lang/Throwable;->printStackTrace()V
 
     goto :goto_2
 
-    .line 23
+    .line 22
     :goto_1
     invoke-virtual {p0}, Ljava/lang/Throwable;->printStackTrace()V
 
-    .line 24
+    .line 23
     :goto_2
     invoke-virtual {v0}, Ljava/io/File;->getAbsolutePath()Ljava/lang/String;
 
@@ -1926,14 +1972,14 @@
         }
     .end annotation
 
-    .line 25
+    .line 24
     new-instance v0, Ljava/io/File;
 
     invoke-direct {v0, p0}, Ljava/io/File;-><init>(Ljava/lang/String;)V
 
     const/4 p0, 0x0
 
-    .line 26
+    .line 25
     :try_start_0
     new-instance v1, Ljava/io/File;
 
@@ -1945,7 +1991,7 @@
 
     invoke-virtual {v1}, Ljava/io/File;->mkdirs()Z
 
-    .line 27
+    .line 26
     new-instance v1, Ljava/util/zip/ZipOutputStream;
 
     new-instance v2, Ljava/io/FileOutputStream;
@@ -1956,15 +2002,15 @@
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_1
 
+    .line 27
     :try_start_1
     const-string p0, ""
 
-    .line 28
     invoke-static {v1, v0, p0}, Lcom/apm/insight/l/f;->a(Ljava/util/zip/ZipOutputStream;Ljava/io/File;Ljava/lang/String;)V
     :try_end_1
     .catchall {:try_start_1 .. :try_end_1} :catchall_0
 
-    .line 29
+    .line 28
     invoke-static {v1}, Lcom/apm/insight/a;->a(Ljava/io/Closeable;)V
 
     return-void
@@ -1990,14 +2036,14 @@
 .method public static b(Ljava/io/File;)Z
     .locals 0
 
-    .line 11
+    .line 10
     invoke-virtual {p0}, Ljava/io/File;->list()[Ljava/lang/String;
 
     move-result-object p0
 
     if-eqz p0, :cond_1
 
-    .line 12
+    .line 11
     array-length p0, p0
 
     if-nez p0, :cond_0
@@ -2019,10 +2065,10 @@
 .method public static c(Ljava/lang/String;)Lcom/apm/insight/f/b;
     .locals 4
 
+    .line 11
     :try_start_0
     const-string v0, "\n"
 
-    .line 11
     invoke-static {p0, v0}, Lcom/apm/insight/l/f;->a(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object p0
@@ -2037,27 +2083,27 @@
 
     invoke-direct {p0}, Lcom/apm/insight/f/b;-><init>()V
 
+    .line 14
     const-string v1, "aid"
 
-    .line 14
     invoke-virtual {v0, v1}, Lorg/json/JSONObject;->optString(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v1
 
     invoke-virtual {p0, v1}, Lcom/apm/insight/f/b;->d(Ljava/lang/String;)V
 
+    .line 15
     const-string v1, "did"
 
-    .line 15
     invoke-virtual {v0, v1}, Lorg/json/JSONObject;->optString(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v1
 
     invoke-virtual {p0, v1}, Lcom/apm/insight/f/b;->c(Ljava/lang/String;)V
 
+    .line 16
     const-string v1, "processName"
 
-    .line 16
     invoke-virtual {v0, v1}, Lorg/json/JSONObject;->optString(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v1
@@ -2069,9 +2115,9 @@
 
     invoke-direct {v1}, Ljava/util/ArrayList;-><init>()V
 
+    .line 18
     const-string v2, "alogFiles"
 
-    .line 18
     invoke-virtual {v0, v2}, Lorg/json/JSONObject;->optJSONArray(Ljava/lang/String;)Lorg/json/JSONArray;
 
     move-result-object v0
@@ -2137,6 +2183,9 @@
 
 .method public static c(Ljava/io/File;)Ljava/util/Map;
     .locals 6
+    .annotation build Landroidx/annotation/Nullable;
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -2704,7 +2753,7 @@
 .method public final a()Z
     .locals 2
 
-    .line 1
+    .line 151
     iget v0, p0, Lcom/apm/insight/l/f;->a:I
 
     const/16 v1, 0xcf
@@ -2723,8 +2772,10 @@
 
 .method public final b()[B
     .locals 1
+    .annotation build Landroidx/annotation/Nullable;
+    .end annotation
 
-    .line 1
+    .line 36
     iget-object v0, p0, Lcom/apm/insight/l/f;->d:[B
 
     return-object v0

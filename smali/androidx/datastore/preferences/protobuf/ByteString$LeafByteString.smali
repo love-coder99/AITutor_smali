@@ -14,16 +14,26 @@
 .end annotation
 
 
+# static fields
+.field private static final serialVersionUID:J = 0x1L
+
+
 # direct methods
-.method public constructor <init>()V
+.method private constructor <init>()V
+    .locals 0
+
+    .line 2
+    invoke-direct {p0}, Landroidx/datastore/preferences/protobuf/ByteString;-><init>()V
+
+    return-void
+.end method
+
+.method public synthetic constructor <init>(Landroidx/datastore/preferences/protobuf/f;)V
     .locals 0
 
     .line 1
-    invoke-direct {p0}, Landroidx/datastore/preferences/protobuf/ByteString;-><init>()V
+    invoke-direct {p0}, Landroidx/datastore/preferences/protobuf/ByteString$LeafByteString;-><init>()V
 
-    .line 2
-    .line 3
-    .line 4
     return-void
 .end method
 
@@ -52,7 +62,7 @@
     .locals 1
 
     .line 1
-    invoke-super {p0}, Landroidx/datastore/preferences/protobuf/ByteString;->iterator()Landroidx/datastore/preferences/protobuf/k;
+    invoke-super {p0}, Landroidx/datastore/preferences/protobuf/ByteString;->iterator()Landroidx/datastore/preferences/protobuf/j;
 
     .line 2
     .line 3
@@ -63,7 +73,7 @@
     return-object v0
 .end method
 
-.method public writeToReverse(Landroidx/datastore/preferences/protobuf/g;)V
+.method public writeToReverse(Landroidx/datastore/preferences/protobuf/e;)V
     .locals 0
     .annotation system Ldalvik/annotation/Throws;
         value = {
@@ -72,7 +82,7 @@
     .end annotation
 
     .line 1
-    invoke-virtual {p0, p1}, Landroidx/datastore/preferences/protobuf/ByteString;->writeTo(Landroidx/datastore/preferences/protobuf/g;)V
+    invoke-virtual {p0, p1}, Landroidx/datastore/preferences/protobuf/ByteString;->writeTo(Landroidx/datastore/preferences/protobuf/e;)V
 
     .line 2
     .line 3

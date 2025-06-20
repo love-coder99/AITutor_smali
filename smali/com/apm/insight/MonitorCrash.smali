@@ -58,13 +58,16 @@
 
     iput-object v0, p0, Lcom/apm/insight/MonitorCrash;->mConfig:Lcom/apm/insight/MonitorCrash$Config;
 
+    .line 4
     iput-object p2, v0, Lcom/apm/insight/MonitorCrash$Config;->mAid:Ljava/lang/String;
 
+    .line 5
     iput-wide p3, v0, Lcom/apm/insight/MonitorCrash$Config;->mVersionInt:J
 
+    .line 6
     iput-object p5, v0, Lcom/apm/insight/MonitorCrash$Config;->mVersionStr:Ljava/lang/String;
 
-    .line 4
+    .line 7
     invoke-static {p1, p0}, Lcom/apm/insight/d;->a(Landroid/content/Context;Lcom/apm/insight/MonitorCrash;)V
 
     return-void
@@ -73,32 +76,36 @@
 .method private varargs constructor <init>(Ljava/lang/String;JLjava/lang/String;[Ljava/lang/String;)V
     .locals 1
 
-    .line 5
+    .line 8
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 6
+    .line 9
     new-instance v0, Ljava/util/HashMap;
 
     invoke-direct {v0}, Ljava/util/HashMap;-><init>()V
 
     iput-object v0, p0, Lcom/apm/insight/MonitorCrash;->mTagMap:Ljava/util/HashMap;
 
-    .line 7
+    .line 10
     new-instance v0, Lcom/apm/insight/MonitorCrash$Config;
 
     invoke-direct {v0, p0}, Lcom/apm/insight/MonitorCrash$Config;-><init>(Lcom/apm/insight/MonitorCrash;)V
 
     iput-object v0, p0, Lcom/apm/insight/MonitorCrash;->mConfig:Lcom/apm/insight/MonitorCrash$Config;
 
+    .line 11
     iput-object p1, v0, Lcom/apm/insight/MonitorCrash$Config;->mAid:Ljava/lang/String;
 
+    .line 12
     iput-wide p2, v0, Lcom/apm/insight/MonitorCrash$Config;->mVersionInt:J
 
+    .line 13
     iput-object p4, v0, Lcom/apm/insight/MonitorCrash$Config;->mVersionStr:Ljava/lang/String;
 
+    .line 14
     iput-object p5, v0, Lcom/apm/insight/MonitorCrash$Config;->mPackageName:[Ljava/lang/String;
 
-    .line 8
+    .line 15
     invoke-static {p0}, Lcom/apm/insight/d;->a(Lcom/apm/insight/MonitorCrash;)V
 
     return-void
@@ -106,6 +113,8 @@
 
 .method public static init(Landroid/content/Context;Ljava/lang/String;JLjava/lang/String;)Lcom/apm/insight/MonitorCrash;
     .locals 8
+    .annotation build Landroidx/annotation/Nullable;
+    .end annotation
 
     .line 1
     sget-boolean v0, Lcom/apm/insight/MonitorCrash;->sAppMonitorCrashInit:Z
@@ -361,9 +370,14 @@
 
 .method public config()Lcom/apm/insight/MonitorCrash$Config;
     .locals 1
+    .annotation build Landroidx/annotation/NonNull;
+    .end annotation
 
+    .line 1
     iget-object v0, p0, Lcom/apm/insight/MonitorCrash;->mConfig:Lcom/apm/insight/MonitorCrash$Config;
 
+    .line 2
+    .line 3
     return-object v0
 .end method
 
@@ -478,8 +492,11 @@
 .method public setCustomDataCallback(Lcom/apm/insight/AttachUserData;)Lcom/apm/insight/MonitorCrash;
     .locals 0
 
+    .line 1
     iput-object p1, p0, Lcom/apm/insight/MonitorCrash;->mCustomData:Lcom/apm/insight/AttachUserData;
 
+    .line 2
+    .line 3
     return-object p0
 .end method
 
@@ -778,8 +795,15 @@
 
 .method public withOtherHeaders(Lcom/apm/insight/MonitorCrash$HeaderParams;)Lcom/apm/insight/MonitorCrash;
     .locals 0
+    .param p1    # Lcom/apm/insight/MonitorCrash$HeaderParams;
+        .annotation build Landroidx/annotation/Nullable;
+        .end annotation
+    .end param
 
+    .line 1
     iput-object p1, p0, Lcom/apm/insight/MonitorCrash;->mParams:Lcom/apm/insight/MonitorCrash$HeaderParams;
 
+    .line 2
+    .line 3
     return-object p0
 .end method

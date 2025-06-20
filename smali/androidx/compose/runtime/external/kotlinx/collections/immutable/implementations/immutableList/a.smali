@@ -4,7 +4,7 @@
 
 # interfaces
 .implements Ljava/util/ListIterator;
-.implements Lai/a;
+.implements Lla/a;
 
 
 # instance fields
@@ -51,19 +51,29 @@
 .method public final hasNext()Z
     .locals 2
 
+    .line 1
     iget v0, p0, Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableList/a;->b:I
 
+    .line 2
+    .line 3
     iget v1, p0, Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableList/a;->c:I
 
+    .line 4
+    .line 5
     if-ge v0, v1, :cond_0
 
+    .line 6
+    .line 7
     const/4 v0, 0x1
 
+    .line 8
     goto :goto_0
 
+    .line 9
     :cond_0
     const/4 v0, 0x0
 
+    .line 10
     :goto_0
     return v0
 .end method
@@ -71,17 +81,25 @@
 .method public final hasPrevious()Z
     .locals 1
 
+    .line 1
     iget v0, p0, Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableList/a;->b:I
 
+    .line 2
+    .line 3
     if-lez v0, :cond_0
 
+    .line 4
+    .line 5
     const/4 v0, 0x1
 
+    .line 6
     goto :goto_0
 
+    .line 7
     :cond_0
     const/4 v0, 0x0
 
+    .line 8
     :goto_0
     return v0
 .end method
@@ -89,18 +107,26 @@
 .method public final nextIndex()I
     .locals 1
 
+    .line 1
     iget v0, p0, Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableList/a;->b:I
 
+    .line 2
+    .line 3
     return v0
 .end method
 
 .method public final previousIndex()I
     .locals 1
 
+    .line 1
     iget v0, p0, Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableList/a;->b:I
 
+    .line 2
+    .line 3
     add-int/lit8 v0, v0, -0x1
 
+    .line 4
+    .line 5
     return v0
 .end method
 

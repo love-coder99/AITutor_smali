@@ -3,14 +3,14 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lzh/c;
+.implements Lka/c;
 
 
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "Lkotlin/jvm/internal/Lambda;",
-        "Lzh/c;"
+        "Lka/c;"
     }
 .end annotation
 
@@ -22,7 +22,7 @@
         "R",
         "",
         "it",
-        "Lqh/r;",
+        "LX9/j;",
         "invoke",
         "(Ljava/lang/Throwable;)V",
         "<anonymous>"
@@ -39,14 +39,14 @@
 # instance fields
 .field final synthetic $callback:Landroid/view/Choreographer$FrameCallback;
 
-.field final synthetic this$0:Landroidx/compose/ui/platform/w0;
+.field final synthetic this$0:Landroidx/compose/ui/platform/M;
 
 
 # direct methods
-.method public constructor <init>(Landroidx/compose/ui/platform/w0;Landroid/view/Choreographer$FrameCallback;)V
+.method public constructor <init>(Landroidx/compose/ui/platform/M;Landroid/view/Choreographer$FrameCallback;)V
     .locals 0
 
-    iput-object p1, p0, Landroidx/compose/ui/platform/AndroidUiFrameClock$withFrameNanos$2$2;->this$0:Landroidx/compose/ui/platform/w0;
+    iput-object p1, p0, Landroidx/compose/ui/platform/AndroidUiFrameClock$withFrameNanos$2$2;->this$0:Landroidx/compose/ui/platform/M;
 
     iput-object p2, p0, Landroidx/compose/ui/platform/AndroidUiFrameClock$withFrameNanos$2$2;->$callback:Landroid/view/Choreographer$FrameCallback;
 
@@ -62,12 +62,12 @@
 .method public bridge synthetic invoke(Ljava/lang/Object;)Ljava/lang/Object;
     .locals 0
 
-    .line 3
+    .line 1
     check-cast p1, Ljava/lang/Throwable;
 
     invoke-virtual {p0, p1}, Landroidx/compose/ui/platform/AndroidUiFrameClock$withFrameNanos$2$2;->invoke(Ljava/lang/Throwable;)V
 
-    sget-object p1, Lqh/r;->a:Lqh/r;
+    sget-object p1, LX9/j;->a:LX9/j;
 
     return-object p1
 .end method
@@ -75,14 +75,15 @@
 .method public final invoke(Ljava/lang/Throwable;)V
     .locals 1
 
-    iget-object p1, p0, Landroidx/compose/ui/platform/AndroidUiFrameClock$withFrameNanos$2$2;->this$0:Landroidx/compose/ui/platform/w0;
+    .line 2
+    iget-object p1, p0, Landroidx/compose/ui/platform/AndroidUiFrameClock$withFrameNanos$2$2;->this$0:Landroidx/compose/ui/platform/M;
 
-    .line 1
-    iget-object p1, p1, Landroidx/compose/ui/platform/w0;->b:Landroid/view/Choreographer;
+    .line 3
+    iget-object p1, p1, Landroidx/compose/ui/platform/M;->b:Landroid/view/Choreographer;
 
+    .line 4
     iget-object v0, p0, Landroidx/compose/ui/platform/AndroidUiFrameClock$withFrameNanos$2$2;->$callback:Landroid/view/Choreographer$FrameCallback;
 
-    .line 2
     invoke-virtual {p1, v0}, Landroid/view/Choreographer;->removeFrameCallback(Landroid/view/Choreographer$FrameCallback;)V
 
     return-void

@@ -3,14 +3,14 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lzh/a;
+.implements Lka/a;
 
 
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "Lkotlin/jvm/internal/Lambda;",
-        "Lzh/a;"
+        "Lka/a;"
     }
 .end annotation
 
@@ -19,7 +19,7 @@
         "\u0000\u0008\n\u0002\u0018\u0002\n\u0002\u0008\u0003\u0010\u0003\u001a\u00020\u0000H\n\u00a2\u0006\u0004\u0008\u0001\u0010\u0002"
     }
     d2 = {
-        "Lh2/h;",
+        "LM0/h;",
         "invoke-nOcc-ac",
         "()J",
         "<anonymous>"
@@ -34,20 +34,26 @@
 
 
 # instance fields
-.field final synthetic $bounds:Lh2/i;
+.field final synthetic $bounds:LM0/i;
 
 
 # direct methods
-.method public constructor <init>(Lh2/i;)V
+.method public constructor <init>(LM0/i;)V
     .locals 0
 
     .line 1
-    iput-object p1, p0, Landroidx/compose/foundation/text/TextLinkScope$textRange$1$1;->$bounds:Lh2/i;
+    iput-object p1, p0, Landroidx/compose/foundation/text/TextLinkScope$textRange$1$1;->$bounds:LM0/i;
 
+    .line 2
+    .line 3
     const/4 p1, 0x0
 
+    .line 4
     invoke-direct {p0, p1}, Lkotlin/jvm/internal/Lambda;-><init>(I)V
 
+    .line 5
+    .line 6
+    .line 7
     return-void
 .end method
 
@@ -65,11 +71,11 @@
     move-result-wide v0
 
     .line 5
-    new-instance v2, Lh2/h;
+    new-instance v2, LM0/h;
 
     .line 6
     .line 7
-    invoke-direct {v2, v0, v1}, Lh2/h;-><init>(J)V
+    invoke-direct {v2, v0, v1}, LM0/h;-><init>(J)V
 
     .line 8
     .line 9
@@ -81,19 +87,19 @@
     .locals 2
 
     .line 1
-    iget-object v0, p0, Landroidx/compose/foundation/text/TextLinkScope$textRange$1$1;->$bounds:Lh2/i;
+    iget-object v0, p0, Landroidx/compose/foundation/text/TextLinkScope$textRange$1$1;->$bounds:LM0/i;
 
     .line 2
     .line 3
-    iget v1, v0, Lh2/i;->a:I
+    iget v1, v0, LM0/i;->a:I
 
     .line 4
     .line 5
-    iget v0, v0, Lh2/i;->b:I
+    iget v0, v0, LM0/i;->b:I
 
     .line 6
     .line 7
-    invoke-static {v1, v0}, Ly/f;->a(II)J
+    invoke-static {v1, v0}, Landroid/support/v4/media/session/a;->a(II)J
 
     .line 8
     .line 9

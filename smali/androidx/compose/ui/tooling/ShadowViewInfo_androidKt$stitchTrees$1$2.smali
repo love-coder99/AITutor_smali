@@ -3,14 +3,14 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lzh/c;
+.implements Lka/c;
 
 
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "Lkotlin/jvm/internal/Lambda;",
-        "Lzh/c;"
+        "Lka/c;"
     }
 .end annotation
 
@@ -20,7 +20,7 @@
     }
     d2 = {
         "Lkotlin/Pair;",
-        "Landroidx/compose/ui/layout/w;",
+        "Landroidx/compose/ui/layout/t;",
         "Landroidx/compose/ui/tooling/k;",
         "it",
         "",
@@ -63,7 +63,7 @@
             "(",
             "Lkotlin/Pair<",
             "+",
-            "Landroidx/compose/ui/layout/w;",
+            "Landroidx/compose/ui/layout/t;",
             "Landroidx/compose/ui/tooling/k;",
             ">;)",
             "Ljava/lang/Boolean;"
@@ -83,7 +83,7 @@
 
     iget-object v0, p0, Landroidx/compose/ui/tooling/ShadowViewInfo_androidKt$stitchTrees$1$2;->$rootToAttach:Landroidx/compose/ui/tooling/k;
 
-    invoke-static {p1, v0}, Lrb/h;->d(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {p1, v0}, Lkotlin/jvm/internal/h;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result p1
 

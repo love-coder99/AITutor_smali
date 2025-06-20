@@ -123,17 +123,27 @@
 .method public hashCode()I
     .locals 4
 
+    .line 1
     iget-wide v0, p0, Lcom/applovin/impl/i0$a;->a:J
 
+    .line 2
+    .line 3
     long-to-int v1, v0
 
+    .line 4
     mul-int/lit8 v1, v1, 0x1f
 
+    .line 5
+    .line 6
     iget-wide v2, p0, Lcom/applovin/impl/i0$a;->b:J
 
+    .line 7
+    .line 8
     long-to-int v0, v2
 
+    .line 9
     add-int/2addr v1, v0
 
+    .line 10
     return v1
 .end method

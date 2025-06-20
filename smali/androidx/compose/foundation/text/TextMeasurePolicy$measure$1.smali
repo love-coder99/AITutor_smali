@@ -3,14 +3,14 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lzh/c;
+.implements Lka/c;
 
 
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "Lkotlin/jvm/internal/Lambda;",
-        "Lzh/c;"
+        "Lka/c;"
     }
 .end annotation
 
@@ -19,10 +19,10 @@
         "\u0000\u000c\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0008\u0003\u0010\u0004\u001a\u00020\u0001*\u00020\u0000H\n\u00a2\u0006\u0004\u0008\u0002\u0010\u0003"
     }
     d2 = {
-        "Landroidx/compose/ui/layout/z0;",
-        "Lqh/r;",
+        "Landroidx/compose/ui/layout/W;",
+        "LX9/j;",
         "invoke",
-        "(Landroidx/compose/ui/layout/z0;)V",
+        "(Landroidx/compose/ui/layout/W;)V",
         "<anonymous>"
     }
     k = 0x3
@@ -40,8 +40,8 @@
         value = {
             "Ljava/util/List<",
             "Lkotlin/Pair<",
-            "Landroidx/compose/ui/layout/a1;",
-            "Lh2/h;",
+            "Landroidx/compose/ui/layout/X;",
+            "LM0/h;",
             ">;>;"
         }
     .end annotation
@@ -52,8 +52,8 @@
         value = {
             "Ljava/util/List<",
             "Lkotlin/Pair<",
-            "Landroidx/compose/ui/layout/a1;",
-            "Lzh/a;",
+            "Landroidx/compose/ui/layout/X;",
+            "Lka/a;",
             ">;>;"
         }
     .end annotation
@@ -70,16 +70,16 @@
             "+",
             "Lkotlin/Pair<",
             "+",
-            "Landroidx/compose/ui/layout/a1;",
-            "Lh2/h;",
+            "Landroidx/compose/ui/layout/X;",
+            "LM0/h;",
             ">;>;",
             "Ljava/util/List<",
             "+",
             "Lkotlin/Pair<",
             "+",
-            "Landroidx/compose/ui/layout/a1;",
+            "Landroidx/compose/ui/layout/X;",
             "+",
-            "Lzh/a;",
+            "Lka/a;",
             ">;>;)V"
         }
     .end annotation
@@ -101,25 +101,26 @@
     .locals 0
 
     .line 1
-    check-cast p1, Landroidx/compose/ui/layout/z0;
+    check-cast p1, Landroidx/compose/ui/layout/W;
 
-    invoke-virtual {p0, p1}, Landroidx/compose/foundation/text/TextMeasurePolicy$measure$1;->invoke(Landroidx/compose/ui/layout/z0;)V
+    invoke-virtual {p0, p1}, Landroidx/compose/foundation/text/TextMeasurePolicy$measure$1;->invoke(Landroidx/compose/ui/layout/W;)V
 
-    sget-object p1, Lqh/r;->a:Lqh/r;
+    sget-object p1, LX9/j;->a:LX9/j;
 
     return-object p1
 .end method
 
-.method public final invoke(Landroidx/compose/ui/layout/z0;)V
+.method public final invoke(Landroidx/compose/ui/layout/W;)V
     .locals 8
 
+    .line 2
     iget-object v0, p0, Landroidx/compose/foundation/text/TextMeasurePolicy$measure$1;->$inlineContentToPlace:Ljava/util/List;
 
     const/4 v1, 0x0
 
     if-eqz v0, :cond_0
 
-    .line 2
+    .line 3
     invoke-interface {v0}, Ljava/util/List;->size()I
 
     move-result v2
@@ -129,43 +130,44 @@
     :goto_0
     if-ge v3, v2, :cond_0
 
-    .line 3
+    .line 4
     invoke-interface {v0, v3}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
     move-result-object v4
 
-    .line 4
+    .line 5
     check-cast v4, Lkotlin/Pair;
 
-    .line 5
+    .line 6
     invoke-virtual {v4}, Lkotlin/Pair;->component1()Ljava/lang/Object;
 
     move-result-object v5
 
-    check-cast v5, Landroidx/compose/ui/layout/a1;
+    check-cast v5, Landroidx/compose/ui/layout/X;
 
     invoke-virtual {v4}, Lkotlin/Pair;->component2()Ljava/lang/Object;
 
     move-result-object v4
 
-    check-cast v4, Lh2/h;
-
-    .line 6
-    iget-wide v6, v4, Lh2/h;->a:J
+    check-cast v4, LM0/h;
 
     .line 7
-    invoke-static {p1, v5, v6, v7}, Landroidx/compose/ui/layout/z0;->e(Landroidx/compose/ui/layout/z0;Landroidx/compose/ui/layout/a1;J)V
+    iget-wide v6, v4, LM0/h;->a:J
+
+    .line 8
+    invoke-static {p1, v5, v6, v7}, Landroidx/compose/ui/layout/W;->e(Landroidx/compose/ui/layout/W;Landroidx/compose/ui/layout/X;J)V
 
     add-int/lit8 v3, v3, 0x1
 
     goto :goto_0
 
+    .line 9
     :cond_0
     iget-object v0, p0, Landroidx/compose/foundation/text/TextMeasurePolicy$measure$1;->$linksToPlace:Ljava/util/List;
 
     if-eqz v0, :cond_2
 
-    .line 8
+    .line 10
     invoke-interface {v0}, Ljava/util/List;->size()I
 
     move-result v2
@@ -173,47 +175,47 @@
     :goto_1
     if-ge v1, v2, :cond_2
 
-    .line 9
+    .line 11
     invoke-interface {v0, v1}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
     move-result-object v3
 
-    .line 10
+    .line 12
     check-cast v3, Lkotlin/Pair;
 
-    .line 11
+    .line 13
     invoke-virtual {v3}, Lkotlin/Pair;->component1()Ljava/lang/Object;
 
     move-result-object v4
 
-    check-cast v4, Landroidx/compose/ui/layout/a1;
+    check-cast v4, Landroidx/compose/ui/layout/X;
 
     invoke-virtual {v3}, Lkotlin/Pair;->component2()Ljava/lang/Object;
 
     move-result-object v3
 
-    check-cast v3, Lzh/a;
+    check-cast v3, Lka/a;
 
     if-eqz v3, :cond_1
 
-    .line 12
-    invoke-interface {v3}, Lzh/a;->invoke()Ljava/lang/Object;
+    .line 14
+    invoke-interface {v3}, Lka/a;->invoke()Ljava/lang/Object;
 
     move-result-object v3
 
-    check-cast v3, Lh2/h;
+    check-cast v3, LM0/h;
 
-    .line 13
-    iget-wide v5, v3, Lh2/h;->a:J
+    .line 15
+    iget-wide v5, v3, LM0/h;->a:J
 
     goto :goto_2
 
     :cond_1
     const-wide/16 v5, 0x0
 
-    .line 14
+    .line 16
     :goto_2
-    invoke-static {p1, v4, v5, v6}, Landroidx/compose/ui/layout/z0;->e(Landroidx/compose/ui/layout/z0;Landroidx/compose/ui/layout/a1;J)V
+    invoke-static {p1, v4, v5, v6}, Landroidx/compose/ui/layout/W;->e(Landroidx/compose/ui/layout/W;Landroidx/compose/ui/layout/X;J)V
 
     add-int/lit8 v1, v1, 0x1
 

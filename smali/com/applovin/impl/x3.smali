@@ -1,152 +1,86 @@
-.class final Lcom/applovin/impl/x3;
-.super Lcom/applovin/impl/vg;
+.class public final synthetic Lcom/applovin/impl/X3;
+.super Ljava/lang/Object;
 .source "SourceFile"
 
 # interfaces
-.implements Ljava/io/Serializable;
+.implements Ljava/lang/Runnable;
 
 
 # instance fields
-.field final a:Ljava/util/Comparator;
+.field public final synthetic b:I
+
+.field public final synthetic c:Lcom/applovin/impl/z6$a;
+
+.field public final synthetic d:Lcom/applovin/impl/z6;
 
 
 # direct methods
-.method public constructor <init>(Ljava/util/Comparator;)V
+.method public synthetic constructor <init>(Lcom/applovin/impl/z6$a;Lcom/applovin/impl/z6;I)V
     .locals 0
 
     .line 1
-    invoke-direct {p0}, Lcom/applovin/impl/vg;-><init>()V
+    iput p3, p0, Lcom/applovin/impl/X3;->b:I
 
-    .line 2
-    .line 3
-    .line 4
-    invoke-static {p1}, Lcom/applovin/exoplayer2/common/base/Preconditions;->checkNotNull(Ljava/lang/Object;)Ljava/lang/Object;
+    iput-object p1, p0, Lcom/applovin/impl/X3;->c:Lcom/applovin/impl/z6$a;
 
-    .line 5
-    .line 6
-    .line 7
-    move-result-object p1
+    iput-object p2, p0, Lcom/applovin/impl/X3;->d:Lcom/applovin/impl/z6;
 
-    .line 8
-    check-cast p1, Ljava/util/Comparator;
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 9
-    .line 10
-    iput-object p1, p0, Lcom/applovin/impl/x3;->a:Ljava/util/Comparator;
-
-    .line 11
-    .line 12
     return-void
 .end method
 
 
 # virtual methods
-.method public compare(Ljava/lang/Object;Ljava/lang/Object;)I
-    .locals 1
+.method public final run()V
+    .locals 2
 
     .line 1
-    iget-object v0, p0, Lcom/applovin/impl/x3;->a:Ljava/util/Comparator;
+    iget v0, p0, Lcom/applovin/impl/X3;->b:I
 
-    .line 2
-    .line 3
-    invoke-interface {v0, p1, p2}, Ljava/util/Comparator;->compare(Ljava/lang/Object;Ljava/lang/Object;)I
+    packed-switch v0, :pswitch_data_0
 
-    .line 4
-    .line 5
-    .line 6
-    move-result p1
+    iget-object v0, p0, Lcom/applovin/impl/X3;->c:Lcom/applovin/impl/z6$a;
 
-    .line 7
-    return p1
-.end method
+    iget-object v1, p0, Lcom/applovin/impl/X3;->d:Lcom/applovin/impl/z6;
 
-.method public equals(Ljava/lang/Object;)Z
-    .locals 1
+    invoke-static {v0, v1}, Lcom/applovin/impl/z6$a;->b(Lcom/applovin/impl/z6$a;Lcom/applovin/impl/z6;)V
 
-    .line 1
-    if-ne p1, p0, :cond_0
+    return-void
 
-    .line 2
-    .line 3
-    const/4 p1, 0x1
+    :pswitch_0
+    iget-object v0, p0, Lcom/applovin/impl/X3;->c:Lcom/applovin/impl/z6$a;
 
-    .line 4
-    return p1
+    iget-object v1, p0, Lcom/applovin/impl/X3;->d:Lcom/applovin/impl/z6;
 
-    .line 5
-    :cond_0
-    instance-of v0, p1, Lcom/applovin/impl/x3;
+    invoke-static {v0, v1}, Lcom/applovin/impl/z6$a;->d(Lcom/applovin/impl/z6$a;Lcom/applovin/impl/z6;)V
 
-    .line 6
-    .line 7
-    if-eqz v0, :cond_1
+    return-void
 
-    .line 8
-    .line 9
-    check-cast p1, Lcom/applovin/impl/x3;
+    :pswitch_1
+    iget-object v0, p0, Lcom/applovin/impl/X3;->c:Lcom/applovin/impl/z6$a;
 
-    .line 10
-    .line 11
-    iget-object v0, p0, Lcom/applovin/impl/x3;->a:Ljava/util/Comparator;
+    iget-object v1, p0, Lcom/applovin/impl/X3;->d:Lcom/applovin/impl/z6;
 
-    .line 12
-    .line 13
-    iget-object p1, p1, Lcom/applovin/impl/x3;->a:Ljava/util/Comparator;
+    invoke-static {v0, v1}, Lcom/applovin/impl/z6$a;->e(Lcom/applovin/impl/z6$a;Lcom/applovin/impl/z6;)V
 
-    .line 14
-    .line 15
-    invoke-interface {v0, p1}, Ljava/util/Comparator;->equals(Ljava/lang/Object;)Z
+    return-void
 
-    .line 16
-    .line 17
-    .line 18
-    move-result p1
+    :pswitch_2
+    iget-object v0, p0, Lcom/applovin/impl/X3;->c:Lcom/applovin/impl/z6$a;
 
-    .line 19
-    return p1
+    iget-object v1, p0, Lcom/applovin/impl/X3;->d:Lcom/applovin/impl/z6;
 
-    .line 20
-    :cond_1
-    const/4 p1, 0x0
+    invoke-static {v0, v1}, Lcom/applovin/impl/z6$a;->c(Lcom/applovin/impl/z6$a;Lcom/applovin/impl/z6;)V
 
-    .line 21
-    return p1
-.end method
+    return-void
 
-.method public hashCode()I
-    .locals 1
+    nop
 
-    .line 1
-    iget-object v0, p0, Lcom/applovin/impl/x3;->a:Ljava/util/Comparator;
-
-    .line 2
-    .line 3
-    invoke-virtual {v0}, Ljava/lang/Object;->hashCode()I
-
-    .line 4
-    .line 5
-    .line 6
-    move-result v0
-
-    .line 7
-    return v0
-.end method
-
-.method public toString()Ljava/lang/String;
-    .locals 1
-
-    .line 1
-    iget-object v0, p0, Lcom/applovin/impl/x3;->a:Ljava/util/Comparator;
-
-    .line 2
-    .line 3
-    invoke-virtual {v0}, Ljava/lang/Object;->toString()Ljava/lang/String;
-
-    .line 4
-    .line 5
-    .line 6
-    move-result-object v0
-
-    .line 7
-    return-object v0
+    :pswitch_data_0
+    .packed-switch 0x0
+        :pswitch_2
+        :pswitch_1
+        :pswitch_0
+    .end packed-switch
 .end method

@@ -3,12 +3,12 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lzh/a;
+.implements Lka/a;
 
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Landroidx/compose/ui/tooling/ComposeViewAdapter$init$3$1;->invoke(Landroidx/compose/runtime/l;I)V
+    value = Landroidx/compose/ui/tooling/ComposeViewAdapter$init$3$1;->invoke(Landroidx/compose/runtime/j;I)V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -19,7 +19,7 @@
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "Lkotlin/jvm/internal/Lambda;",
-        "Lzh/a;"
+        "Lka/a;"
     }
 .end annotation
 
@@ -28,7 +28,7 @@
         "\u0000\u0008\n\u0002\u0018\u0002\n\u0002\u0008\u0003\u0010\u0003\u001a\u00020\u0000H\n\u00a2\u0006\u0004\u0008\u0001\u0010\u0002"
     }
     d2 = {
-        "Lqh/r;",
+        "LX9/j;",
         "invoke",
         "()V",
         "<anonymous>"
@@ -45,7 +45,7 @@
 # instance fields
 .field final synthetic $className:Ljava/lang/String;
 
-.field final synthetic $composer:Landroidx/compose/runtime/l;
+.field final synthetic $composer:Landroidx/compose/runtime/j;
 
 .field final synthetic $methodName:Ljava/lang/String;
 
@@ -65,14 +65,14 @@
 
 
 # direct methods
-.method public constructor <init>(Ljava/lang/String;Ljava/lang/String;Landroidx/compose/runtime/l;Ljava/lang/Class;ILandroidx/compose/ui/tooling/ComposeViewAdapter;)V
+.method public constructor <init>(Ljava/lang/String;Ljava/lang/String;Landroidx/compose/runtime/j;Ljava/lang/Class;ILandroidx/compose/ui/tooling/ComposeViewAdapter;)V
     .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
             "Ljava/lang/String;",
             "Ljava/lang/String;",
-            "Landroidx/compose/runtime/l;",
+            "Landroidx/compose/runtime/j;",
             "Ljava/lang/Class<",
             "Ljava/lang/Object;",
             ">;I",
@@ -85,7 +85,7 @@
 
     iput-object p2, p0, Landroidx/compose/ui/tooling/ComposeViewAdapter$init$3$1$composable$1$1;->$methodName:Ljava/lang/String;
 
-    iput-object p3, p0, Landroidx/compose/ui/tooling/ComposeViewAdapter$init$3$1$composable$1$1;->$composer:Landroidx/compose/runtime/l;
+    iput-object p3, p0, Landroidx/compose/ui/tooling/ComposeViewAdapter$init$3$1$composable$1$1;->$composer:Landroidx/compose/runtime/j;
 
     iput-object p4, p0, Landroidx/compose/ui/tooling/ComposeViewAdapter$init$3$1$composable$1$1;->$parameterProvider:Ljava/lang/Class;
 
@@ -108,7 +108,7 @@
     .line 1
     invoke-virtual {p0}, Landroidx/compose/ui/tooling/ComposeViewAdapter$init$3$1$composable$1$1;->invoke()V
 
-    sget-object v0, Lqh/r;->a:Lqh/r;
+    sget-object v0, LX9/j;->a:LX9/j;
 
     return-object v0
 .end method
@@ -116,19 +116,22 @@
 .method public final invoke()V
     .locals 5
 
+    .line 2
     :try_start_0
     iget-object v0, p0, Landroidx/compose/ui/tooling/ComposeViewAdapter$init$3$1$composable$1$1;->$className:Ljava/lang/String;
 
+    .line 3
     iget-object v1, p0, Landroidx/compose/ui/tooling/ComposeViewAdapter$init$3$1$composable$1$1;->$methodName:Ljava/lang/String;
 
-    iget-object v2, p0, Landroidx/compose/ui/tooling/ComposeViewAdapter$init$3$1$composable$1$1;->$composer:Landroidx/compose/runtime/l;
+    .line 4
+    iget-object v2, p0, Landroidx/compose/ui/tooling/ComposeViewAdapter$init$3$1$composable$1$1;->$composer:Landroidx/compose/runtime/j;
 
+    .line 5
     iget-object v3, p0, Landroidx/compose/ui/tooling/ComposeViewAdapter$init$3$1$composable$1$1;->$parameterProvider:Ljava/lang/Class;
 
     iget v4, p0, Landroidx/compose/ui/tooling/ComposeViewAdapter$init$3$1$composable$1$1;->$parameterProviderIndex:I
 
-    .line 2
-    invoke-static {v3, v4}, Lb0/h;->L(Ljava/lang/Class;I)[Ljava/lang/Object;
+    invoke-static {v4, v3}, Landroidx/compose/ui/tooling/j;->e(ILjava/lang/Class;)[Ljava/lang/Object;
 
     move-result-object v3
 
@@ -138,8 +141,8 @@
 
     move-result-object v3
 
-    .line 3
-    invoke-static {v0, v1, v2, v3}, Landroidx/compose/ui/tooling/j;->e(Ljava/lang/String;Ljava/lang/String;Landroidx/compose/runtime/l;[Ljava/lang/Object;)V
+    .line 6
+    invoke-static {v0, v1, v2, v3}, Landroidx/compose/ui/tooling/j;->f(Ljava/lang/String;Ljava/lang/String;Landroidx/compose/runtime/j;[Ljava/lang/Object;)V
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
@@ -150,13 +153,13 @@
 
     move-object v1, v0
 
-    .line 4
+    .line 7
     :goto_0
     instance-of v2, v1, Ljava/lang/ReflectiveOperationException;
 
     if-eqz v2, :cond_0
 
-    .line 5
+    .line 8
     invoke-virtual {v1}, Ljava/lang/Throwable;->getCause()Ljava/lang/Throwable;
 
     move-result-object v2
@@ -167,34 +170,35 @@
 
     goto :goto_0
 
+    .line 9
     :cond_0
     iget-object v2, p0, Landroidx/compose/ui/tooling/ComposeViewAdapter$init$3$1$composable$1$1;->this$0:Landroidx/compose/ui/tooling/ComposeViewAdapter;
 
-    .line 6
-    iget-object v2, v2, Landroidx/compose/ui/tooling/ComposeViewAdapter;->j:Landroidx/compose/ui/tooling/l;
+    .line 10
+    iget-object v2, v2, Landroidx/compose/ui/tooling/ComposeViewAdapter;->j:LB2/c;
 
-    .line 7
-    iget-object v3, v2, Landroidx/compose/ui/tooling/l;->b:Ljava/lang/Object;
+    .line 11
+    iget-object v3, v2, LB2/c;->d:Ljava/lang/Object;
 
-    .line 8
+    .line 12
     monitor-enter v3
 
-    .line 9
+    .line 13
     :try_start_1
-    iput-object v1, v2, Landroidx/compose/ui/tooling/l;->a:Ljava/lang/Throwable;
+    iput-object v1, v2, LB2/c;->c:Ljava/lang/Object;
     :try_end_1
     .catchall {:try_start_1 .. :try_end_1} :catchall_1
 
-    .line 10
+    .line 14
     monitor-exit v3
 
-    .line 11
+    .line 15
     throw v0
 
     :catchall_1
     move-exception v0
 
-    .line 12
+    .line 16
     monitor-exit v3
 
     throw v0

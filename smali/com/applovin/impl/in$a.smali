@@ -57,9 +57,9 @@
 .method public a(Ljava/lang/String;ILjava/lang/String;Lorg/json/JSONObject;)V
     .locals 1
 
+    .line 2
     iget-object v0, p0, Lcom/applovin/impl/in$a;->n:Lcom/applovin/impl/d4$e;
 
-    .line 2
     invoke-interface {v0, p1, p2, p3, p4}, Lcom/applovin/impl/d4$e;->a(Ljava/lang/String;ILjava/lang/String;Ljava/lang/Object;)V
 
     return-void
@@ -79,9 +79,9 @@
 .method public a(Ljava/lang/String;Lorg/json/JSONObject;I)V
     .locals 1
 
+    .line 4
     iget-object v0, p0, Lcom/applovin/impl/in$a;->n:Lcom/applovin/impl/d4$e;
 
-    .line 4
     invoke-interface {v0, p1, p2, p3}, Lcom/applovin/impl/d4$e;->a(Ljava/lang/String;Ljava/lang/Object;I)V
 
     return-void

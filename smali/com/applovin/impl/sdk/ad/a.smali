@@ -87,10 +87,10 @@
 
     return-object v0
 
+    .line 1
     :cond_0
     const-string v1, "full_response"
 
-    .line 1
     invoke-static {p0, v1, v0}, Lcom/applovin/impl/sdk/utils/JsonUtils;->getJSONObject(Lorg/json/JSONObject;Ljava/lang/String;Lorg/json/JSONObject;)Lorg/json/JSONObject;
 
     move-result-object v1
@@ -122,12 +122,12 @@
 
     return-object v0
 
+    .line 4
     :cond_2
     const-string v4, "html"
 
     const-string v5, ""
 
-    .line 4
     invoke-static {v2, v4, v5}, Lcom/applovin/impl/sdk/utils/JsonUtils;->getString(Lorg/json/JSONObject;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v6
@@ -141,26 +141,26 @@
 
     return-object v0
 
+    .line 6
     :cond_3
     const-string v7, "video"
 
-    .line 6
     invoke-static {v2, v7, v5}, Lcom/applovin/impl/sdk/utils/JsonUtils;->getString(Lorg/json/JSONObject;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v8
 
+    .line 7
     const-string v9, "original_html_source"
 
-    .line 7
     invoke-static {p0, v9, v5}, Lcom/applovin/impl/sdk/utils/JsonUtils;->getString(Lorg/json/JSONObject;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v9
 
     invoke-static {v2, v4, v9}, Lcom/applovin/impl/sdk/utils/JsonUtils;->putString(Lorg/json/JSONObject;Ljava/lang/String;Ljava/lang/String;)V
 
+    .line 8
     const-string v4, "original_video_uri_string"
 
-    .line 8
     invoke-static {p0, v4, v5}, Lcom/applovin/impl/sdk/utils/JsonUtils;->getString(Lorg/json/JSONObject;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v4
@@ -172,14 +172,15 @@
 
     invoke-direct {v4, v2, v1, p1}, Lcom/applovin/impl/sdk/ad/a;-><init>(Lorg/json/JSONObject;Lorg/json/JSONObject;Lcom/applovin/impl/sdk/j;)V
 
+    .line 10
     const-string p1, "cached_ad_html_resources_urls"
 
-    .line 10
-    invoke-static {p0, p1}, Landroidx/compose/foundation/text/modifiers/f;->v(Lorg/json/JSONObject;Ljava/lang/String;)Lorg/json/JSONArray;
+    .line 11
+    invoke-static {p1, p0}, Lcom/android/billingclient/api/a;->h(Ljava/lang/String;Lorg/json/JSONObject;)Lorg/json/JSONArray;
 
     move-result-object p0
 
-    .line 11
+    .line 12
     :goto_0
     invoke-virtual {p0}, Lorg/json/JSONArray;->length()I
 
@@ -187,23 +188,23 @@
 
     if-ge v3, p1, :cond_6
 
-    .line 12
+    .line 13
     invoke-static {p0, v3, v0}, Lcom/applovin/impl/sdk/utils/JsonUtils;->getObjectAtIndex(Lorg/json/JSONArray;ILjava/lang/Object;)Ljava/lang/Object;
 
     move-result-object p1
 
-    .line 13
+    .line 14
     instance-of v1, p1, Ljava/lang/String;
 
     if-nez v1, :cond_4
 
     goto :goto_1
 
-    .line 14
+    .line 15
     :cond_4
     check-cast p1, Ljava/lang/String;
 
-    .line 15
+    .line 16
     invoke-static {p1}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
 
     move-result v1
@@ -212,7 +213,7 @@
 
     goto :goto_1
 
-    .line 16
+    .line 17
     :cond_5
     invoke-static {p1}, Landroid/net/Uri;->parse(Ljava/lang/String;)Landroid/net/Uri;
 
@@ -225,18 +226,18 @@
 
     goto :goto_0
 
-    .line 17
+    .line 18
     :cond_6
     invoke-virtual {v4, v6}, Lcom/applovin/impl/sdk/ad/a;->b(Ljava/lang/String;)V
 
-    .line 18
+    .line 19
     invoke-static {v8}, Lcom/applovin/impl/sdk/utils/StringUtils;->isValidString(Ljava/lang/String;)Z
 
     move-result p0
 
     if-eqz p0, :cond_7
 
-    .line 19
+    .line 20
     invoke-static {v8}, Landroid/net/Uri;->parse(Ljava/lang/String;)Landroid/net/Uri;
 
     move-result-object p0
@@ -367,19 +368,19 @@
 
     .line 4
     .line 5
-    new-instance v1, Lh0/v;
+    new-instance v1, LM/r;
 
     .line 6
     .line 7
-    const/4 v2, 0x4
+    const/4 v2, 0x5
 
     .line 8
-    invoke-direct {v1, p0, v2}, Lh0/v;-><init>(Ljava/lang/Object;I)V
+    invoke-direct {v1, p0, v2}, LM/r;-><init>(Ljava/lang/Object;I)V
 
     .line 9
     .line 10
     .line 11
-    invoke-virtual {v0, v1}, Lcom/applovin/impl/tl;->a(Lm3/a;)V
+    invoke-virtual {v0, v1}, Lcom/applovin/impl/tl;->a(Lu1/a;)V
 
     .line 12
     .line 13
@@ -452,46 +453,49 @@
 .method public Q()Ljava/lang/String;
     .locals 1
 
+    .line 1
     iget-object v0, p0, Lcom/applovin/impl/sdk/ad/a;->m:Ljava/lang/String;
 
+    .line 2
+    .line 3
     return-object v0
 .end method
 
 .method public a()Lorg/json/JSONObject;
     .locals 4
 
-    .line 23
+    .line 24
     new-instance v0, Lorg/json/JSONObject;
 
     invoke-direct {v0}, Lorg/json/JSONObject;-><init>()V
 
+    .line 25
     iget-object v1, p0, Lcom/applovin/impl/sdk/ad/a;->l:Ljava/lang/String;
 
     const-string v2, "original_html_source"
 
-    .line 24
     invoke-static {v0, v2, v1}, Lcom/applovin/impl/sdk/utils/JsonUtils;->putString(Lorg/json/JSONObject;Ljava/lang/String;Ljava/lang/String;)V
 
+    .line 26
     iget-object v1, p0, Lcom/applovin/impl/sdk/ad/a;->m:Ljava/lang/String;
 
     const-string v2, "original_video_uri_string"
 
-    .line 25
     invoke-static {v0, v2, v1}, Lcom/applovin/impl/sdk/utils/JsonUtils;->putString(Lorg/json/JSONObject;Ljava/lang/String;Ljava/lang/String;)V
 
+    .line 27
     iget-object v1, p0, Lcom/applovin/impl/sdk/ad/a;->n:Ljava/lang/String;
 
     const-string v2, "original_video_stream_uri_string"
 
-    .line 26
     invoke-static {v0, v2, v1}, Lcom/applovin/impl/sdk/utils/JsonUtils;->putString(Lorg/json/JSONObject;Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 27
+    .line 28
     new-instance v1, Ljava/util/ArrayList;
 
     invoke-direct {v1}, Ljava/util/ArrayList;-><init>()V
 
-    .line 28
+    .line 29
     invoke-virtual {p0}, Lcom/applovin/impl/sdk/ad/b;->i()Ljava/util/List;
 
     move-result-object v2
@@ -513,7 +517,7 @@
 
     check-cast v3, Landroid/net/Uri;
 
-    .line 29
+    .line 30
     invoke-virtual {v3}, Landroid/net/Uri;->toString()Ljava/lang/String;
 
     move-result-object v3
@@ -522,7 +526,7 @@
 
     goto :goto_0
 
-    .line 30
+    .line 31
     :cond_0
     new-instance v2, Lorg/json/JSONArray;
 
@@ -532,11 +536,12 @@
 
     invoke-static {v0, v1, v2}, Lcom/applovin/impl/sdk/utils/JsonUtils;->putJsonArray(Lorg/json/JSONObject;Ljava/lang/String;Lorg/json/JSONArray;)V
 
+    .line 32
     iget-object v1, p0, Lcom/applovin/impl/sdk/AppLovinAdBase;->synchronizedFullResponse:Lcom/applovin/impl/tl;
 
     if-eqz v1, :cond_1
 
-    .line 31
+    .line 33
     invoke-virtual {v1}, Lcom/applovin/impl/tl;->a()Lorg/json/JSONObject;
 
     move-result-object v1
@@ -547,21 +552,21 @@
 
     goto :goto_1
 
+    .line 34
     :cond_1
     iget-object v1, p0, Lcom/applovin/impl/sdk/AppLovinAdBase;->fullResponseLock:Ljava/lang/Object;
 
-    .line 32
     monitor-enter v1
 
+    .line 35
     :try_start_0
     const-string v2, "full_response"
 
     iget-object v3, p0, Lcom/applovin/impl/sdk/AppLovinAdBase;->fullResponse:Lorg/json/JSONObject;
 
-    .line 33
     invoke-static {v0, v2, v3}, Lcom/applovin/impl/sdk/utils/JsonUtils;->putJSONObject(Lorg/json/JSONObject;Ljava/lang/String;Lorg/json/JSONObject;)V
 
-    .line 34
+    .line 36
     monitor-exit v1
 
     :goto_1
@@ -570,7 +575,7 @@
     :catchall_0
     move-exception v0
 
-    .line 35
+    .line 37
     monitor-exit v1
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
@@ -727,7 +732,7 @@
 .method public bridge synthetic getAdEventTracker()Lcom/applovin/impl/lg;
     .locals 1
 
-    .line 2
+    .line 1
     invoke-virtual {p0}, Lcom/applovin/impl/sdk/ad/a;->getAdEventTracker()Lcom/applovin/impl/mg;
 
     move-result-object v0
@@ -738,7 +743,7 @@
 .method public getAdEventTracker()Lcom/applovin/impl/mg;
     .locals 1
 
-    .line 1
+    .line 2
     iget-object v0, p0, Lcom/applovin/impl/sdk/ad/a;->o:Lcom/applovin/impl/mg;
 
     return-object v0
@@ -801,7 +806,7 @@
 
     .line 22
     .line 23
-    invoke-static {v0, v1}, Landroidx/compose/foundation/text/modifiers/f;->v(Lorg/json/JSONObject;Ljava/lang/String;)Lorg/json/JSONArray;
+    invoke-static {v1, v0}, Lcom/android/billingclient/api/a;->h(Ljava/lang/String;Lorg/json/JSONObject;)Lorg/json/JSONArray;
 
     .line 24
     .line 25
@@ -1181,8 +1186,11 @@
 .method public o1()Ljava/lang/String;
     .locals 1
 
+    .line 1
     iget-object v0, p0, Lcom/applovin/impl/sdk/ad/a;->n:Ljava/lang/String;
 
+    .line 2
+    .line 3
     return-object v0
 .end method
 

@@ -3,131 +3,219 @@
 .source "SourceFile"
 
 
-# static fields
-.field public static final c:Landroidx/compose/ui/text/font/q;
-
-
 # instance fields
-.field public final a:Landroidx/compose/ui/text/font/g;
-
-.field public final b:Lkotlinx/coroutines/internal/e;
+.field public final a:I
 
 
 # direct methods
-.method static constructor <clinit>()V
-    .locals 2
+.method public synthetic constructor <init>(I)V
+    .locals 0
 
     .line 1
-    sget-object v0, Lkotlinx/coroutines/u;->b:Lkotlinx/coroutines/u;
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 2
     .line 3
-    new-instance v1, Landroidx/compose/ui/text/font/q;
-
     .line 4
+    iput p1, p0, Landroidx/compose/ui/text/font/r;->a:I
+
     .line 5
-    invoke-direct {v1, v0}, Lkotlin/coroutines/a;-><init>(Lkotlin/coroutines/h;)V
-
     .line 6
-    .line 7
-    .line 8
-    sput-object v1, Landroidx/compose/ui/text/font/r;->c:Landroidx/compose/ui/text/font/q;
-
-    .line 9
-    .line 10
     return-void
 .end method
 
-.method public constructor <init>(Landroidx/compose/ui/text/font/g;)V
-    .locals 2
+.method public static final a(II)Z
+    .locals 0
 
     .line 1
-    sget-object v0, Lkotlin/coroutines/EmptyCoroutineContext;->INSTANCE:Lkotlin/coroutines/EmptyCoroutineContext;
+    if-ne p0, p1, :cond_0
+
+    const/4 p0, 0x1
+
+    goto :goto_0
+
+    :cond_0
+    const/4 p0, 0x0
+
+    :goto_0
+    return p0
+.end method
+
+.method public static b(I)Ljava/lang/String;
+    .locals 1
+
+    .line 1
+    const/4 v0, 0x0
 
     .line 2
-    .line 3
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    invoke-static {p0, v0}, Landroidx/compose/ui/text/font/r;->a(II)Z
 
+    .line 3
     .line 4
     .line 5
+    move-result v0
+
     .line 6
-    iput-object p1, p0, Landroidx/compose/ui/text/font/r;->a:Landroidx/compose/ui/text/font/g;
+    if-eqz v0, :cond_0
 
     .line 7
     .line 8
-    sget-object p1, Landroidx/compose/ui/text/platform/h;->a:Lkotlinx/coroutines/k1;
+    const-string p0, "None"
 
     .line 9
     .line 10
-    sget-object v1, Landroidx/compose/ui/text/font/r;->c:Landroidx/compose/ui/text/font/q;
+    goto :goto_0
 
     .line 11
+    :cond_0
+    const/4 v0, 0x1
+
     .line 12
-    invoke-virtual {v1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+    invoke-static {p0, v0}, Landroidx/compose/ui/text/font/r;->a(II)Z
 
     .line 13
     .line 14
     .line 15
-    invoke-static {v1, p1}, Lkotlin/coroutines/f;->a(Lkotlin/coroutines/i;Lkotlin/coroutines/i;)Lkotlin/coroutines/i;
+    move-result v0
 
     .line 16
+    if-eqz v0, :cond_1
+
     .line 17
     .line 18
-    move-result-object p1
+    const-string p0, "All"
 
     .line 19
-    invoke-interface {p1, v0}, Lkotlin/coroutines/i;->plus(Lkotlin/coroutines/i;)Lkotlin/coroutines/i;
-
     .line 20
+    goto :goto_0
+
     .line 21
+    :cond_1
+    const/4 v0, 0x2
+
     .line 22
-    move-result-object p1
+    invoke-static {p0, v0}, Landroidx/compose/ui/text/font/r;->a(II)Z
 
     .line 23
-    sget-object v1, Lkotlinx/coroutines/u;->c:Lkotlinx/coroutines/u;
-
     .line 24
     .line 25
-    invoke-interface {v0, v1}, Lkotlin/coroutines/i;->get(Lkotlin/coroutines/h;)Lkotlin/coroutines/g;
+    move-result v0
 
     .line 26
+    if-eqz v0, :cond_2
+
     .line 27
     .line 28
-    move-result-object v0
+    const-string p0, "Weight"
 
     .line 29
-    check-cast v0, Lkotlinx/coroutines/z0;
-
     .line 30
+    goto :goto_0
+
     .line 31
-    new-instance v1, Lkotlinx/coroutines/r1;
+    :cond_2
+    const/4 v0, 0x3
 
     .line 32
-    .line 33
-    invoke-direct {v1, v0}, Lkotlinx/coroutines/b1;-><init>(Lkotlinx/coroutines/z0;)V
+    invoke-static {p0, v0}, Landroidx/compose/ui/text/font/r;->a(II)Z
 
+    .line 33
     .line 34
     .line 35
+    move-result p0
+
     .line 36
-    invoke-interface {p1, v1}, Lkotlin/coroutines/i;->plus(Lkotlin/coroutines/i;)Lkotlin/coroutines/i;
+    if-eqz p0, :cond_3
 
     .line 37
     .line 38
-    .line 39
-    move-result-object p1
+    const-string p0, "Style"
 
+    .line 39
     .line 40
-    invoke-static {p1}, Lrb/h;->a(Lkotlin/coroutines/i;)Lkotlinx/coroutines/internal/e;
+    goto :goto_0
 
     .line 41
+    :cond_3
+    const-string p0, "Invalid"
+
     .line 42
     .line 43
-    move-result-object p1
+    :goto_0
+    return-object p0
+.end method
 
-    .line 44
-    iput-object p1, p0, Landroidx/compose/ui/text/font/r;->b:Lkotlinx/coroutines/internal/e;
 
-    .line 45
-    .line 46
-    return-void
+# virtual methods
+.method public final equals(Ljava/lang/Object;)Z
+    .locals 2
+
+    .line 1
+    instance-of v0, p1, Landroidx/compose/ui/text/font/r;
+
+    .line 2
+    .line 3
+    const/4 v1, 0x0
+
+    .line 4
+    if-nez v0, :cond_0
+
+    .line 5
+    .line 6
+    goto :goto_0
+
+    .line 7
+    :cond_0
+    check-cast p1, Landroidx/compose/ui/text/font/r;
+
+    .line 8
+    .line 9
+    iget p1, p1, Landroidx/compose/ui/text/font/r;->a:I
+
+    .line 10
+    .line 11
+    iget v0, p0, Landroidx/compose/ui/text/font/r;->a:I
+
+    .line 12
+    .line 13
+    if-eq v0, p1, :cond_1
+
+    .line 14
+    .line 15
+    goto :goto_0
+
+    .line 16
+    :cond_1
+    const/4 v1, 0x1
+
+    .line 17
+    :goto_0
+    return v1
+.end method
+
+.method public final hashCode()I
+    .locals 1
+
+    iget v0, p0, Landroidx/compose/ui/text/font/r;->a:I
+
+    return v0
+.end method
+
+.method public final toString()Ljava/lang/String;
+    .locals 1
+
+    .line 1
+    iget v0, p0, Landroidx/compose/ui/text/font/r;->a:I
+
+    .line 2
+    .line 3
+    invoke-static {v0}, Landroidx/compose/ui/text/font/r;->b(I)Ljava/lang/String;
+
+    .line 4
+    .line 5
+    .line 6
+    move-result-object v0
+
+    .line 7
+    return-object v0
 .end method

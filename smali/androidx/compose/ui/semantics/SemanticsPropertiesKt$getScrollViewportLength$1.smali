@@ -3,14 +3,14 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lzh/c;
+.implements Lka/c;
 
 
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "Lkotlin/jvm/internal/Lambda;",
-        "Lzh/c;"
+        "Lka/c;"
     }
 .end annotation
 
@@ -38,33 +38,39 @@
 
 
 # instance fields
-.field final synthetic $action:Lzh/a;
+.field final synthetic $action:Lka/a;
     .annotation system Ldalvik/annotation/Signature;
         value = {
-            "Lzh/a;"
+            "Lka/a;"
         }
     .end annotation
 .end field
 
 
 # direct methods
-.method public constructor <init>(Lzh/a;)V
+.method public constructor <init>(Lka/a;)V
     .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
-            "Lzh/a;",
+            "Lka/a;",
             ")V"
         }
     .end annotation
 
     .line 1
-    iput-object p1, p0, Landroidx/compose/ui/semantics/SemanticsPropertiesKt$getScrollViewportLength$1;->$action:Lzh/a;
+    iput-object p1, p0, Landroidx/compose/ui/semantics/SemanticsPropertiesKt$getScrollViewportLength$1;->$action:Lka/a;
 
+    .line 2
+    .line 3
     const/4 p1, 0x1
 
+    .line 4
     invoke-direct {p0, p1}, Lkotlin/jvm/internal/Lambda;-><init>(I)V
 
+    .line 5
+    .line 6
+    .line 7
     return-void
 .end method
 
@@ -82,10 +88,10 @@
         }
     .end annotation
 
-    iget-object v0, p0, Landroidx/compose/ui/semantics/SemanticsPropertiesKt$getScrollViewportLength$1;->$action:Lzh/a;
-
     .line 2
-    invoke-interface {v0}, Lzh/a;->invoke()Ljava/lang/Object;
+    iget-object v0, p0, Landroidx/compose/ui/semantics/SemanticsPropertiesKt$getScrollViewportLength$1;->$action:Lka/a;
+
+    invoke-interface {v0}, Lka/a;->invoke()Ljava/lang/Object;
 
     move-result-object v0
 

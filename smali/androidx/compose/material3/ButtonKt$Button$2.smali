@@ -3,14 +3,14 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lzh/e;
+.implements Lka/e;
 
 
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "Lkotlin/jvm/internal/Lambda;",
-        "Lzh/e;"
+        "Lka/e;"
     }
 .end annotation
 
@@ -19,9 +19,9 @@
         "\u0000\u0008\n\u0002\u0018\u0002\n\u0002\u0008\u0003\u0010\u0003\u001a\u00020\u0000H\u000b\u00a2\u0006\u0004\u0008\u0001\u0010\u0002"
     }
     d2 = {
-        "Lqh/r;",
+        "LX9/j;",
         "invoke",
-        "(Landroidx/compose/runtime/l;I)V",
+        "(Landroidx/compose/runtime/j;I)V",
         "<anonymous>"
     }
     k = 0x3
@@ -34,27 +34,27 @@
 
 
 # instance fields
-.field final synthetic $content:Lzh/f;
+.field final synthetic $content:Lka/f;
     .annotation system Ldalvik/annotation/Signature;
         value = {
-            "Lzh/f;"
+            "Lka/f;"
         }
     .end annotation
 .end field
 
 .field final synthetic $contentColor:J
 
-.field final synthetic $contentPadding:Landroidx/compose/foundation/layout/p0;
+.field final synthetic $contentPadding:Landroidx/compose/foundation/layout/M;
 
 
 # direct methods
-.method public constructor <init>(JLandroidx/compose/foundation/layout/p0;Lzh/f;)V
+.method public constructor <init>(JLandroidx/compose/foundation/layout/M;Lka/f;)V
     .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(J",
-            "Landroidx/compose/foundation/layout/p0;",
-            "Lzh/f;",
+            "Landroidx/compose/foundation/layout/M;",
+            "Lka/f;",
             ")V"
         }
     .end annotation
@@ -62,14 +62,24 @@
     .line 1
     iput-wide p1, p0, Landroidx/compose/material3/ButtonKt$Button$2;->$contentColor:J
 
-    iput-object p3, p0, Landroidx/compose/material3/ButtonKt$Button$2;->$contentPadding:Landroidx/compose/foundation/layout/p0;
+    .line 2
+    .line 3
+    iput-object p3, p0, Landroidx/compose/material3/ButtonKt$Button$2;->$contentPadding:Landroidx/compose/foundation/layout/M;
 
-    iput-object p4, p0, Landroidx/compose/material3/ButtonKt$Button$2;->$content:Lzh/f;
+    .line 4
+    .line 5
+    iput-object p4, p0, Landroidx/compose/material3/ButtonKt$Button$2;->$content:Lka/f;
 
+    .line 6
+    .line 7
     const/4 p1, 0x2
 
+    .line 8
     invoke-direct {p0, p1}, Lkotlin/jvm/internal/Lambda;-><init>(I)V
 
+    .line 9
+    .line 10
+    .line 11
     return-void
 .end method
 
@@ -79,7 +89,7 @@
     .locals 0
 
     .line 1
-    check-cast p1, Landroidx/compose/runtime/l;
+    check-cast p1, Landroidx/compose/runtime/j;
 
     check-cast p2, Ljava/lang/Number;
 
@@ -87,14 +97,14 @@
 
     move-result p2
 
-    invoke-virtual {p0, p1, p2}, Landroidx/compose/material3/ButtonKt$Button$2;->invoke(Landroidx/compose/runtime/l;I)V
+    invoke-virtual {p0, p1, p2}, Landroidx/compose/material3/ButtonKt$Button$2;->invoke(Landroidx/compose/runtime/j;I)V
 
-    sget-object p1, Lqh/r;->a:Lqh/r;
+    sget-object p1, LX9/j;->a:LX9/j;
 
     return-object p1
 .end method
 
-.method public final invoke(Landroidx/compose/runtime/l;I)V
+.method public final invoke(Landroidx/compose/runtime/j;I)V
     .locals 7
 
     and-int/lit8 p2, p2, 0x3
@@ -103,12 +113,12 @@
 
     if-ne p2, v0, :cond_1
 
+    .line 2
     move-object p2, p1
 
-    check-cast p2, Landroidx/compose/runtime/p;
+    check-cast p2, Landroidx/compose/runtime/n;
 
-    .line 2
-    invoke-virtual {p2}, Landroidx/compose/runtime/p;->y()Z
+    invoke-virtual {p2}, Landroidx/compose/runtime/n;->x()Z
 
     move-result v0
 
@@ -118,44 +128,45 @@
 
     .line 3
     :cond_0
-    invoke-virtual {p2}, Landroidx/compose/runtime/p;->N()V
+    invoke-virtual {p2}, Landroidx/compose/runtime/n;->L()V
 
     goto :goto_1
 
+    .line 4
     :cond_1
     :goto_0
     iget-wide v1, p0, Landroidx/compose/material3/ButtonKt$Button$2;->$contentColor:J
 
-    .line 4
-    sget-object p2, Landroidx/compose/material3/a2;->a:Landroidx/compose/runtime/e3;
+    .line 5
+    sget-object p2, Landroidx/compose/material3/W0;->a:Landroidx/compose/runtime/I0;
 
+    .line 6
     move-object v0, p1
 
-    check-cast v0, Landroidx/compose/runtime/p;
+    check-cast v0, Landroidx/compose/runtime/n;
 
-    .line 5
-    invoke-virtual {v0, p2}, Landroidx/compose/runtime/p;->l(Landroidx/compose/runtime/u1;)Ljava/lang/Object;
+    invoke-virtual {v0, p2}, Landroidx/compose/runtime/n;->k(Landroidx/compose/runtime/j0;)Ljava/lang/Object;
 
     move-result-object p2
 
-    .line 6
-    check-cast p2, Landroidx/compose/material3/y1;
-
     .line 7
-    iget-object v3, p2, Landroidx/compose/material3/y1;->m:Landroidx/compose/ui/text/i0;
+    check-cast p2, Landroidx/compose/material3/U0;
 
     .line 8
+    iget-object v3, p2, Landroidx/compose/material3/U0;->m:Landroidx/compose/ui/text/I;
+
+    .line 9
     new-instance p2, Landroidx/compose/material3/ButtonKt$Button$2$1;
 
-    iget-object v0, p0, Landroidx/compose/material3/ButtonKt$Button$2;->$contentPadding:Landroidx/compose/foundation/layout/p0;
+    iget-object v0, p0, Landroidx/compose/material3/ButtonKt$Button$2;->$contentPadding:Landroidx/compose/foundation/layout/M;
 
-    iget-object v4, p0, Landroidx/compose/material3/ButtonKt$Button$2;->$content:Lzh/f;
+    iget-object v4, p0, Landroidx/compose/material3/ButtonKt$Button$2;->$content:Lka/f;
 
-    invoke-direct {p2, v0, v4}, Landroidx/compose/material3/ButtonKt$Button$2$1;-><init>(Landroidx/compose/foundation/layout/p0;Lzh/f;)V
+    invoke-direct {p2, v0, v4}, Landroidx/compose/material3/ButtonKt$Button$2$1;-><init>(Landroidx/compose/foundation/layout/M;Lka/f;)V
 
     const v0, 0x4f204156
 
-    invoke-static {v0, p2, p1}, Landroidx/compose/runtime/internal/c;->b(ILkotlin/jvm/internal/Lambda;Landroidx/compose/runtime/l;)Landroidx/compose/runtime/internal/b;
+    invoke-static {v0, p2, p1}, Landroidx/compose/runtime/internal/b;->d(ILX9/b;Landroidx/compose/runtime/j;)Landroidx/compose/runtime/internal/a;
 
     move-result-object v4
 
@@ -163,8 +174,8 @@
 
     move-object v5, p1
 
-    .line 9
-    invoke-static/range {v1 .. v6}, Landroidx/compose/material3/internal/d;->a(JLandroidx/compose/ui/text/i0;Lzh/e;Landroidx/compose/runtime/l;I)V
+    .line 10
+    invoke-static/range {v1 .. v6}, Landroidx/compose/material3/internal/c;->a(JLandroidx/compose/ui/text/I;Lka/e;Landroidx/compose/runtime/j;I)V
 
     :goto_1
     return-void

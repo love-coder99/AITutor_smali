@@ -1,5 +1,5 @@
 .class public Landroidx/databinding/MergedDataBinderMapper;
-.super Landroidx/databinding/e;
+.super Landroidx/databinding/d;
 .source "SourceFile"
 
 
@@ -14,7 +14,7 @@
             "Ljava/util/Set<",
             "Ljava/lang/Class<",
             "+",
-            "Landroidx/databinding/e;",
+            "Landroidx/databinding/d;",
             ">;>;"
         }
     .end annotation
@@ -34,7 +34,7 @@
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/List<",
-            "Landroidx/databinding/e;",
+            "Landroidx/databinding/d;",
             ">;"
         }
     .end annotation
@@ -147,7 +147,7 @@
     move-result-object v3
 
     .line 24
-    const-class v4, Landroidx/databinding/e;
+    const-class v4, Landroidx/databinding/d;
 
     .line 25
     .line 26
@@ -171,11 +171,11 @@
     move-result-object v3
 
     .line 36
-    check-cast v3, Landroidx/databinding/e;
+    check-cast v3, Landroidx/databinding/d;
 
     .line 37
     .line 38
-    invoke-virtual {p0, v3}, Landroidx/databinding/MergedDataBinderMapper;->addMapper(Landroidx/databinding/e;)V
+    invoke-virtual {p0, v3}, Landroidx/databinding/MergedDataBinderMapper;->addMapper(Landroidx/databinding/d;)V
 
     .line 39
     .line 40
@@ -212,7 +212,7 @@
 
 
 # virtual methods
-.method public addMapper(Landroidx/databinding/e;)V
+.method public addMapper(Landroidx/databinding/d;)V
     .locals 2
 
     .line 1
@@ -220,22 +220,22 @@
 
     move-result-object v0
 
+    .line 2
     iget-object v1, p0, Landroidx/databinding/MergedDataBinderMapper;->mExistingMappers:Ljava/util/Set;
 
-    .line 2
     invoke-interface {v1, v0}, Ljava/util/Set;->add(Ljava/lang/Object;)Z
 
     move-result v0
 
     if-eqz v0, :cond_0
 
+    .line 3
     iget-object v0, p0, Landroidx/databinding/MergedDataBinderMapper;->mMappers:Ljava/util/List;
 
-    .line 3
     invoke-interface {v0, p1}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
     .line 4
-    invoke-virtual {p1}, Landroidx/databinding/e;->collectDependencies()Ljava/util/List;
+    invoke-virtual {p1}, Landroidx/databinding/d;->collectDependencies()Ljava/util/List;
 
     move-result-object p1
 
@@ -255,10 +255,10 @@
 
     move-result-object v0
 
-    check-cast v0, Landroidx/databinding/e;
+    check-cast v0, Landroidx/databinding/d;
 
     .line 6
-    invoke-virtual {p0, v0}, Landroidx/databinding/MergedDataBinderMapper;->addMapper(Landroidx/databinding/e;)V
+    invoke-virtual {p0, v0}, Landroidx/databinding/MergedDataBinderMapper;->addMapper(Landroidx/databinding/d;)V
 
     goto :goto_0
 
@@ -269,9 +269,9 @@
 .method public addMapper(Ljava/lang/String;)V
     .locals 2
 
+    .line 7
     iget-object v0, p0, Landroidx/databinding/MergedDataBinderMapper;->mFeatureBindingMappers:Ljava/util/List;
 
-    .line 7
     new-instance v1, Ljava/lang/StringBuilder;
 
     invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
@@ -328,11 +328,11 @@
     move-result-object v1
 
     .line 17
-    check-cast v1, Landroidx/databinding/e;
+    check-cast v1, Landroidx/databinding/d;
 
     .line 18
     .line 19
-    invoke-virtual {v1, p1}, Landroidx/databinding/e;->convertBrIdToString(I)Ljava/lang/String;
+    invoke-virtual {v1, p1}, Landroidx/databinding/d;->convertBrIdToString(I)Ljava/lang/String;
 
     .line 20
     .line 21
@@ -378,12 +378,12 @@
     return-object p1
 .end method
 
-.method public getDataBinder(Landroidx/databinding/f;Landroid/view/View;I)Landroidx/databinding/o;
+.method public getDataBinder(Landroidx/databinding/e;Landroid/view/View;I)Landroidx/databinding/m;
     .locals 2
 
+    .line 1
     iget-object v0, p0, Landroidx/databinding/MergedDataBinderMapper;->mMappers:Ljava/util/List;
 
-    .line 1
     invoke-interface {v0}, Ljava/util/List;->iterator()Ljava/util/Iterator;
 
     move-result-object v0
@@ -399,10 +399,10 @@
 
     move-result-object v1
 
-    check-cast v1, Landroidx/databinding/e;
+    check-cast v1, Landroidx/databinding/d;
 
     .line 2
-    invoke-virtual {v1, p1, p2, p3}, Landroidx/databinding/e;->getDataBinder(Landroidx/databinding/f;Landroid/view/View;I)Landroidx/databinding/o;
+    invoke-virtual {v1, p1, p2, p3}, Landroidx/databinding/d;->getDataBinder(Landroidx/databinding/e;Landroid/view/View;I)Landroidx/databinding/m;
 
     move-result-object v1
 
@@ -419,7 +419,7 @@
     if-eqz v0, :cond_2
 
     .line 4
-    invoke-virtual {p0, p1, p2, p3}, Landroidx/databinding/MergedDataBinderMapper;->getDataBinder(Landroidx/databinding/f;Landroid/view/View;I)Landroidx/databinding/o;
+    invoke-virtual {p0, p1, p2, p3}, Landroidx/databinding/MergedDataBinderMapper;->getDataBinder(Landroidx/databinding/e;Landroid/view/View;I)Landroidx/databinding/m;
 
     move-result-object p1
 
@@ -431,12 +431,12 @@
     return-object p1
 .end method
 
-.method public getDataBinder(Landroidx/databinding/f;[Landroid/view/View;I)Landroidx/databinding/o;
+.method public getDataBinder(Landroidx/databinding/e;[Landroid/view/View;I)Landroidx/databinding/m;
     .locals 2
 
+    .line 5
     iget-object v0, p0, Landroidx/databinding/MergedDataBinderMapper;->mMappers:Ljava/util/List;
 
-    .line 5
     invoke-interface {v0}, Ljava/util/List;->iterator()Ljava/util/Iterator;
 
     move-result-object v0
@@ -452,10 +452,10 @@
 
     move-result-object v1
 
-    check-cast v1, Landroidx/databinding/e;
+    check-cast v1, Landroidx/databinding/d;
 
     .line 6
-    invoke-virtual {v1, p1, p2, p3}, Landroidx/databinding/e;->getDataBinder(Landroidx/databinding/f;[Landroid/view/View;I)Landroidx/databinding/o;
+    invoke-virtual {v1, p1, p2, p3}, Landroidx/databinding/d;->getDataBinder(Landroidx/databinding/e;[Landroid/view/View;I)Landroidx/databinding/m;
 
     move-result-object v1
 
@@ -472,7 +472,7 @@
     if-eqz v0, :cond_2
 
     .line 8
-    invoke-virtual {p0, p1, p2, p3}, Landroidx/databinding/MergedDataBinderMapper;->getDataBinder(Landroidx/databinding/f;[Landroid/view/View;I)Landroidx/databinding/o;
+    invoke-virtual {p0, p1, p2, p3}, Landroidx/databinding/MergedDataBinderMapper;->getDataBinder(Landroidx/databinding/e;[Landroid/view/View;I)Landroidx/databinding/m;
 
     move-result-object p1
 
@@ -521,11 +521,11 @@
     move-result-object v1
 
     .line 17
-    check-cast v1, Landroidx/databinding/e;
+    check-cast v1, Landroidx/databinding/d;
 
     .line 18
     .line 19
-    invoke-virtual {v1, p1}, Landroidx/databinding/e;->getLayoutId(Ljava/lang/String;)I
+    invoke-virtual {v1, p1}, Landroidx/databinding/d;->getLayoutId(Ljava/lang/String;)I
 
     .line 20
     .line 21

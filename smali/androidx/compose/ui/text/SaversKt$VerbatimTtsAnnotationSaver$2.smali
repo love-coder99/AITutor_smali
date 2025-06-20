@@ -3,14 +3,14 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lzh/c;
+.implements Lka/c;
 
 
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "Lkotlin/jvm/internal/Lambda;",
-        "Lzh/c;"
+        "Lka/c;"
     }
 .end annotation
 
@@ -21,9 +21,9 @@
     d2 = {
         "",
         "it",
-        "Landroidx/compose/ui/text/m0;",
+        "Landroidx/compose/ui/text/M;",
         "invoke",
-        "(Ljava/lang/Object;)Landroidx/compose/ui/text/m0;",
+        "(Ljava/lang/Object;)Landroidx/compose/ui/text/M;",
         "<anonymous>"
     }
     k = 0x3
@@ -64,11 +64,11 @@
 
 
 # virtual methods
-.method public final invoke(Ljava/lang/Object;)Landroidx/compose/ui/text/m0;
+.method public final invoke(Ljava/lang/Object;)Landroidx/compose/ui/text/M;
     .locals 1
 
     .line 2
-    new-instance v0, Landroidx/compose/ui/text/m0;
+    new-instance v0, Landroidx/compose/ui/text/M;
 
     if-eqz p1, :cond_0
 
@@ -82,7 +82,7 @@
 
     .line 4
     :goto_0
-    invoke-direct {v0, p1}, Landroidx/compose/ui/text/m0;-><init>(Ljava/lang/String;)V
+    invoke-direct {v0, p1}, Landroidx/compose/ui/text/M;-><init>(Ljava/lang/String;)V
 
     return-object v0
 .end method
@@ -91,7 +91,7 @@
     .locals 0
 
     .line 1
-    invoke-virtual {p0, p1}, Landroidx/compose/ui/text/SaversKt$VerbatimTtsAnnotationSaver$2;->invoke(Ljava/lang/Object;)Landroidx/compose/ui/text/m0;
+    invoke-virtual {p0, p1}, Landroidx/compose/ui/text/SaversKt$VerbatimTtsAnnotationSaver$2;->invoke(Ljava/lang/Object;)Landroidx/compose/ui/text/M;
 
     move-result-object p1
 

@@ -104,7 +104,7 @@
 .end method
 
 .method public constructor <init>()V
-    .locals 1
+    .locals 2
 
     .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -116,33 +116,40 @@
 
     .line 5
     .line 6
-    invoke-direct {v0}, Landroidx/collection/n0;-><init>()V
+    const/4 v1, 0x0
 
     .line 7
+    invoke-direct {v0, v1}, Landroidx/collection/L;-><init>(I)V
+
     .line 8
     .line 9
+    .line 10
     iput-object v0, p0, Landroidx/transition/TransitionManager;->mSceneTransitions:Landroidx/collection/f;
 
-    .line 10
     .line 11
+    .line 12
     new-instance v0, Landroidx/collection/f;
 
-    .line 12
     .line 13
-    invoke-direct {v0}, Landroidx/collection/n0;-><init>()V
-
     .line 14
+    invoke-direct {v0, v1}, Landroidx/collection/L;-><init>(I)V
+
     .line 15
     .line 16
+    .line 17
     iput-object v0, p0, Landroidx/transition/TransitionManager;->mScenePairTransitions:Landroidx/collection/f;
 
-    .line 17
     .line 18
+    .line 19
     return-void
 .end method
 
 .method public static beginDelayedTransition(Landroid/view/ViewGroup;)V
     .locals 1
+    .param p0    # Landroid/view/ViewGroup;
+        .annotation build Landroidx/annotation/NonNull;
+        .end annotation
+    .end param
 
     const/4 v0, 0x0
 
@@ -154,10 +161,18 @@
 
 .method public static beginDelayedTransition(Landroid/view/ViewGroup;Landroidx/transition/Transition;)V
     .locals 1
-
-    sget-object v0, Landroidx/transition/TransitionManager;->sPendingTransitions:Ljava/util/ArrayList;
+    .param p0    # Landroid/view/ViewGroup;
+        .annotation build Landroidx/annotation/NonNull;
+        .end annotation
+    .end param
+    .param p1    # Landroidx/transition/Transition;
+        .annotation build Landroidx/annotation/Nullable;
+        .end annotation
+    .end param
 
     .line 2
+    sget-object v0, Landroidx/transition/TransitionManager;->sPendingTransitions:Ljava/util/ArrayList;
+
     invoke-virtual {v0, p0}, Ljava/util/ArrayList;->contains(Ljava/lang/Object;)Z
 
     move-result v0
@@ -170,30 +185,31 @@
 
     if-eqz v0, :cond_1
 
+    .line 3
     sget-object v0, Landroidx/transition/TransitionManager;->sPendingTransitions:Ljava/util/ArrayList;
 
-    .line 3
     invoke-virtual {v0, p0}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
     if-nez p1, :cond_0
 
+    .line 4
     sget-object p1, Landroidx/transition/TransitionManager;->sDefaultTransition:Landroidx/transition/Transition;
 
-    .line 4
+    .line 5
     :cond_0
     invoke-virtual {p1}, Landroidx/transition/Transition;->clone()Landroidx/transition/Transition;
 
     move-result-object p1
 
-    .line 5
+    .line 6
     invoke-static {p0, p1}, Landroidx/transition/TransitionManager;->sceneChangeSetup(Landroid/view/ViewGroup;Landroidx/transition/Transition;)V
 
     const/4 v0, 0x0
 
-    .line 6
+    .line 7
     invoke-static {p0, v0}, Landroidx/transition/Scene;->setCurrentScene(Landroid/view/ViewGroup;Landroidx/transition/Scene;)V
 
-    .line 7
+    .line 8
     invoke-static {p0, p1}, Landroidx/transition/TransitionManager;->sceneChangeRunTransition(Landroid/view/ViewGroup;Landroidx/transition/Transition;)V
 
     :cond_1
@@ -323,6 +339,16 @@
 
 .method public static controlDelayedTransition(Landroid/view/ViewGroup;Landroidx/transition/Transition;)Landroidx/transition/TransitionSeekController;
     .locals 3
+    .param p0    # Landroid/view/ViewGroup;
+        .annotation build Landroidx/annotation/NonNull;
+        .end annotation
+    .end param
+    .param p1    # Landroidx/transition/Transition;
+        .annotation build Landroidx/annotation/NonNull;
+        .end annotation
+    .end param
+    .annotation build Landroidx/annotation/Nullable;
+    .end annotation
 
     .line 1
     sget-object v0, Landroidx/transition/TransitionManager;->sPendingTransitions:Ljava/util/ArrayList;
@@ -470,6 +496,16 @@
 
 .method public static createSeekController(Landroidx/transition/Scene;Landroidx/transition/Transition;)Landroidx/transition/TransitionSeekController;
     .locals 5
+    .param p0    # Landroidx/transition/Scene;
+        .annotation build Landroidx/annotation/NonNull;
+        .end annotation
+    .end param
+    .param p1    # Landroidx/transition/Transition;
+        .annotation build Landroidx/annotation/NonNull;
+        .end annotation
+    .end param
+    .annotation build Landroidx/annotation/Nullable;
+    .end annotation
 
     .line 1
     invoke-virtual {p0}, Landroidx/transition/Scene;->getSceneRoot()Landroid/view/ViewGroup;
@@ -672,6 +708,10 @@
 
 .method public static endTransitions(Landroid/view/ViewGroup;)V
     .locals 3
+    .param p0    # Landroid/view/ViewGroup;
+        .annotation build Landroidx/annotation/Nullable;
+        .end annotation
+    .end param
 
     .line 1
     sget-object v0, Landroidx/transition/TransitionManager;->sPendingTransitions:Ljava/util/ArrayList;
@@ -691,7 +731,7 @@
     move-result-object v0
 
     .line 10
-    invoke-virtual {v0, p0}, Landroidx/collection/f;->get(Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v0, p0}, Landroidx/collection/L;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 11
     .line 12
@@ -827,29 +867,32 @@
 
     .line 21
     .line 22
-    invoke-direct {v0}, Landroidx/collection/n0;-><init>()V
+    const/4 v1, 0x0
 
     .line 23
+    invoke-direct {v0, v1}, Landroidx/collection/L;-><init>(I)V
+
     .line 24
     .line 25
+    .line 26
     new-instance v1, Ljava/lang/ref/WeakReference;
 
-    .line 26
     .line 27
+    .line 28
     invoke-direct {v1, v0}, Ljava/lang/ref/WeakReference;-><init>(Ljava/lang/Object;)V
 
-    .line 28
     .line 29
     .line 30
+    .line 31
     sget-object v2, Landroidx/transition/TransitionManager;->sRunningTransitions:Ljava/lang/ThreadLocal;
 
-    .line 31
     .line 32
+    .line 33
     invoke-virtual {v2, v1}, Ljava/lang/ThreadLocal;->set(Ljava/lang/Object;)V
 
-    .line 33
     .line 34
     .line 35
+    .line 36
     return-object v0
 .end method
 
@@ -881,7 +924,7 @@
 
     .line 12
     .line 13
-    invoke-virtual {v1, p1}, Landroidx/collection/f;->get(Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v1, p1}, Landroidx/collection/L;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 14
     .line 15
@@ -897,7 +940,7 @@
 
     .line 20
     .line 21
-    invoke-virtual {v1, v0}, Landroidx/collection/f;->get(Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v1, v0}, Landroidx/collection/L;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 22
     .line 23
@@ -921,7 +964,7 @@
 
     .line 31
     .line 32
-    invoke-virtual {v0, p1}, Landroidx/collection/f;->get(Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v0, p1}, Landroidx/collection/L;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 33
     .line 34
@@ -951,10 +994,14 @@
 
 .method public static go(Landroidx/transition/Scene;)V
     .locals 1
-
-    sget-object v0, Landroidx/transition/TransitionManager;->sDefaultTransition:Landroidx/transition/Transition;
+    .param p0    # Landroidx/transition/Scene;
+        .annotation build Landroidx/annotation/NonNull;
+        .end annotation
+    .end param
 
     .line 1
+    sget-object v0, Landroidx/transition/TransitionManager;->sDefaultTransition:Landroidx/transition/Transition;
+
     invoke-static {p0, v0}, Landroidx/transition/TransitionManager;->changeScene(Landroidx/transition/Scene;Landroidx/transition/Transition;)V
 
     return-void
@@ -962,6 +1009,14 @@
 
 .method public static go(Landroidx/transition/Scene;Landroidx/transition/Transition;)V
     .locals 0
+    .param p0    # Landroidx/transition/Scene;
+        .annotation build Landroidx/annotation/NonNull;
+        .end annotation
+    .end param
+    .param p1    # Landroidx/transition/Transition;
+        .annotation build Landroidx/annotation/Nullable;
+        .end annotation
+    .end param
 
     .line 2
     invoke-static {p0, p1}, Landroidx/transition/TransitionManager;->changeScene(Landroidx/transition/Scene;Landroidx/transition/Transition;)V
@@ -1024,7 +1079,7 @@
     move-result-object v0
 
     .line 5
-    invoke-virtual {v0, p0}, Landroidx/collection/f;->get(Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v0, p0}, Landroidx/collection/L;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 6
     .line 7
@@ -1132,11 +1187,23 @@
 # virtual methods
 .method public setTransition(Landroidx/transition/Scene;Landroidx/transition/Scene;Landroidx/transition/Transition;)V
     .locals 2
-
-    iget-object v0, p0, Landroidx/transition/TransitionManager;->mScenePairTransitions:Landroidx/collection/f;
+    .param p1    # Landroidx/transition/Scene;
+        .annotation build Landroidx/annotation/NonNull;
+        .end annotation
+    .end param
+    .param p2    # Landroidx/transition/Scene;
+        .annotation build Landroidx/annotation/NonNull;
+        .end annotation
+    .end param
+    .param p3    # Landroidx/transition/Transition;
+        .annotation build Landroidx/annotation/Nullable;
+        .end annotation
+    .end param
 
     .line 2
-    invoke-virtual {v0, p2}, Landroidx/collection/f;->get(Ljava/lang/Object;)Ljava/lang/Object;
+    iget-object v0, p0, Landroidx/transition/TransitionManager;->mScenePairTransitions:Landroidx/collection/f;
+
+    invoke-virtual {v0, p2}, Landroidx/collection/L;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object v0
 
@@ -1147,34 +1214,48 @@
     .line 3
     new-instance v0, Landroidx/collection/f;
 
-    .line 4
-    invoke-direct {v0}, Landroidx/collection/n0;-><init>()V
+    const/4 v1, 0x0
 
-    iget-object v1, p0, Landroidx/transition/TransitionManager;->mScenePairTransitions:Landroidx/collection/f;
+    .line 4
+    invoke-direct {v0, v1}, Landroidx/collection/L;-><init>(I)V
 
     .line 5
-    invoke-virtual {v1, p2, v0}, Landroidx/collection/n0;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    iget-object v1, p0, Landroidx/transition/TransitionManager;->mScenePairTransitions:Landroidx/collection/f;
+
+    invoke-virtual {v1, p2, v0}, Landroidx/collection/L;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 6
     :cond_0
-    invoke-virtual {v0, p1, p3}, Landroidx/collection/n0;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v0, p1, p3}, Landroidx/collection/L;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     return-void
 .end method
 
 .method public setTransition(Landroidx/transition/Scene;Landroidx/transition/Transition;)V
     .locals 1
-
-    iget-object v0, p0, Landroidx/transition/TransitionManager;->mSceneTransitions:Landroidx/collection/f;
+    .param p1    # Landroidx/transition/Scene;
+        .annotation build Landroidx/annotation/NonNull;
+        .end annotation
+    .end param
+    .param p2    # Landroidx/transition/Transition;
+        .annotation build Landroidx/annotation/Nullable;
+        .end annotation
+    .end param
 
     .line 1
-    invoke-virtual {v0, p1, p2}, Landroidx/collection/n0;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    iget-object v0, p0, Landroidx/transition/TransitionManager;->mSceneTransitions:Landroidx/collection/f;
+
+    invoke-virtual {v0, p1, p2}, Landroidx/collection/L;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     return-void
 .end method
 
 .method public transitionTo(Landroidx/transition/Scene;)V
     .locals 1
+    .param p1    # Landroidx/transition/Scene;
+        .annotation build Landroidx/annotation/NonNull;
+        .end annotation
+    .end param
 
     .line 1
     invoke-direct {p0, p1}, Landroidx/transition/TransitionManager;->getTransition(Landroidx/transition/Scene;)Landroidx/transition/Transition;

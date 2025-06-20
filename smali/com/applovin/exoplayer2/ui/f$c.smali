@@ -76,12 +76,16 @@
     .line 2
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
+    .line 3
     iput p1, p0, Lcom/applovin/exoplayer2/ui/f$c;->a:I
 
+    .line 4
     iput p2, p0, Lcom/applovin/exoplayer2/ui/f$c;->b:I
 
+    .line 5
     iput-object p3, p0, Lcom/applovin/exoplayer2/ui/f$c;->c:Ljava/lang/String;
 
+    .line 6
     iput-object p4, p0, Lcom/applovin/exoplayer2/ui/f$c;->d:Ljava/lang/String;
 
     return-void
@@ -204,7 +208,7 @@
     .locals 0
 
     .line 1
-    invoke-static {p0, p1}, Lcom/applovin/exoplayer2/ui/f$c;->b(Lcom/applovin/exoplayer2/ui/f$c;Lcom/applovin/exoplayer2/ui/f$c;)I
+    invoke-static {p0, p1}, Lcom/applovin/exoplayer2/ui/f$c;->a(Lcom/applovin/exoplayer2/ui/f$c;Lcom/applovin/exoplayer2/ui/f$c;)I
 
     move-result p0
 
@@ -215,7 +219,7 @@
     .locals 0
 
     .line 1
-    invoke-static {p0, p1}, Lcom/applovin/exoplayer2/ui/f$c;->a(Lcom/applovin/exoplayer2/ui/f$c;Lcom/applovin/exoplayer2/ui/f$c;)I
+    invoke-static {p0, p1}, Lcom/applovin/exoplayer2/ui/f$c;->b(Lcom/applovin/exoplayer2/ui/f$c;Lcom/applovin/exoplayer2/ui/f$c;)I
 
     move-result p0
 

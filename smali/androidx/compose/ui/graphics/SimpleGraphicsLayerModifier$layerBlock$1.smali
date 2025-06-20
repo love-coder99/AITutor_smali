@@ -3,14 +3,14 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lzh/c;
+.implements Lka/c;
 
 
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "Lkotlin/jvm/internal/Lambda;",
-        "Lzh/c;"
+        "Lka/c;"
     }
 .end annotation
 
@@ -19,10 +19,10 @@
         "\u0000\u000c\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0008\u0003\u0010\u0004\u001a\u00020\u0001*\u00020\u0000H\n\u00a2\u0006\u0004\u0008\u0002\u0010\u0003"
     }
     d2 = {
-        "Landroidx/compose/ui/graphics/g0;",
-        "Lqh/r;",
+        "Landroidx/compose/ui/graphics/H;",
+        "LX9/j;",
         "invoke",
-        "(Landroidx/compose/ui/graphics/g0;)V",
+        "(Landroidx/compose/ui/graphics/H;)V",
         "<anonymous>"
     }
     k = 0x3
@@ -35,14 +35,14 @@
 
 
 # instance fields
-.field final synthetic this$0:Landroidx/compose/ui/graphics/a1;
+.field final synthetic this$0:Landroidx/compose/ui/graphics/a0;
 
 
 # direct methods
-.method public constructor <init>(Landroidx/compose/ui/graphics/a1;)V
+.method public constructor <init>(Landroidx/compose/ui/graphics/a0;)V
     .locals 0
 
-    iput-object p1, p0, Landroidx/compose/ui/graphics/SimpleGraphicsLayerModifier$layerBlock$1;->this$0:Landroidx/compose/ui/graphics/a1;
+    iput-object p1, p0, Landroidx/compose/ui/graphics/SimpleGraphicsLayerModifier$layerBlock$1;->this$0:Landroidx/compose/ui/graphics/a0;
 
     const/4 p1, 0x1
 
@@ -56,100 +56,110 @@
 .method public bridge synthetic invoke(Ljava/lang/Object;)Ljava/lang/Object;
     .locals 0
 
-    .line 40
-    check-cast p1, Landroidx/compose/ui/graphics/g0;
+    .line 1
+    check-cast p1, Landroidx/compose/ui/graphics/H;
 
-    invoke-virtual {p0, p1}, Landroidx/compose/ui/graphics/SimpleGraphicsLayerModifier$layerBlock$1;->invoke(Landroidx/compose/ui/graphics/g0;)V
+    invoke-virtual {p0, p1}, Landroidx/compose/ui/graphics/SimpleGraphicsLayerModifier$layerBlock$1;->invoke(Landroidx/compose/ui/graphics/H;)V
 
-    sget-object p1, Lqh/r;->a:Lqh/r;
+    sget-object p1, LX9/j;->a:LX9/j;
 
     return-object p1
 .end method
 
-.method public final invoke(Landroidx/compose/ui/graphics/g0;)V
+.method public final invoke(Landroidx/compose/ui/graphics/H;)V
     .locals 3
 
-    iget-object v0, p0, Landroidx/compose/ui/graphics/SimpleGraphicsLayerModifier$layerBlock$1;->this$0:Landroidx/compose/ui/graphics/a1;
-
-    .line 1
-    iget v0, v0, Landroidx/compose/ui/graphics/a1;->p:F
-
-    check-cast p1, Landroidx/compose/ui/graphics/w0;
-
     .line 2
-    invoke-virtual {p1, v0}, Landroidx/compose/ui/graphics/w0;->j(F)V
-
-    iget-object v0, p0, Landroidx/compose/ui/graphics/SimpleGraphicsLayerModifier$layerBlock$1;->this$0:Landroidx/compose/ui/graphics/a1;
+    iget-object v0, p0, Landroidx/compose/ui/graphics/SimpleGraphicsLayerModifier$layerBlock$1;->this$0:Landroidx/compose/ui/graphics/a0;
 
     .line 3
-    iget v0, v0, Landroidx/compose/ui/graphics/a1;->q:F
+    iget v0, v0, Landroidx/compose/ui/graphics/a0;->p:F
 
     .line 4
-    invoke-virtual {p1, v0}, Landroidx/compose/ui/graphics/w0;->k(F)V
+    check-cast p1, Landroidx/compose/ui/graphics/W;
 
-    iget-object v0, p0, Landroidx/compose/ui/graphics/SimpleGraphicsLayerModifier$layerBlock$1;->this$0:Landroidx/compose/ui/graphics/a1;
+    invoke-virtual {p1, v0}, Landroidx/compose/ui/graphics/W;->i(F)V
 
     .line 5
-    iget v0, v0, Landroidx/compose/ui/graphics/a1;->r:F
+    iget-object v0, p0, Landroidx/compose/ui/graphics/SimpleGraphicsLayerModifier$layerBlock$1;->this$0:Landroidx/compose/ui/graphics/a0;
 
     .line 6
-    invoke-virtual {p1, v0}, Landroidx/compose/ui/graphics/w0;->b(F)V
-
-    iget-object v0, p0, Landroidx/compose/ui/graphics/SimpleGraphicsLayerModifier$layerBlock$1;->this$0:Landroidx/compose/ui/graphics/a1;
+    iget v0, v0, Landroidx/compose/ui/graphics/a0;->q:F
 
     .line 7
-    iget v0, v0, Landroidx/compose/ui/graphics/a1;->s:F
+    invoke-virtual {p1, v0}, Landroidx/compose/ui/graphics/W;->k(F)V
 
     .line 8
-    invoke-virtual {p1, v0}, Landroidx/compose/ui/graphics/w0;->v(F)V
-
-    iget-object v0, p0, Landroidx/compose/ui/graphics/SimpleGraphicsLayerModifier$layerBlock$1;->this$0:Landroidx/compose/ui/graphics/a1;
+    iget-object v0, p0, Landroidx/compose/ui/graphics/SimpleGraphicsLayerModifier$layerBlock$1;->this$0:Landroidx/compose/ui/graphics/a0;
 
     .line 9
-    iget v0, v0, Landroidx/compose/ui/graphics/a1;->t:F
+    iget v0, v0, Landroidx/compose/ui/graphics/a0;->r:F
 
     .line 10
-    invoke-virtual {p1, v0}, Landroidx/compose/ui/graphics/w0;->w(F)V
-
-    iget-object v0, p0, Landroidx/compose/ui/graphics/SimpleGraphicsLayerModifier$layerBlock$1;->this$0:Landroidx/compose/ui/graphics/a1;
+    invoke-virtual {p1, v0}, Landroidx/compose/ui/graphics/W;->a(F)V
 
     .line 11
-    iget v0, v0, Landroidx/compose/ui/graphics/a1;->u:F
+    iget-object v0, p0, Landroidx/compose/ui/graphics/SimpleGraphicsLayerModifier$layerBlock$1;->this$0:Landroidx/compose/ui/graphics/a0;
 
     .line 12
-    invoke-virtual {p1, v0}, Landroidx/compose/ui/graphics/w0;->l(F)V
-
-    iget-object v0, p0, Landroidx/compose/ui/graphics/SimpleGraphicsLayerModifier$layerBlock$1;->this$0:Landroidx/compose/ui/graphics/a1;
+    iget v0, v0, Landroidx/compose/ui/graphics/a0;->s:F
 
     .line 13
-    iget v0, v0, Landroidx/compose/ui/graphics/a1;->v:F
+    invoke-virtual {p1, v0}, Landroidx/compose/ui/graphics/W;->r(F)V
 
     .line 14
-    invoke-virtual {p1, v0}, Landroidx/compose/ui/graphics/w0;->f(F)V
-
-    iget-object v0, p0, Landroidx/compose/ui/graphics/SimpleGraphicsLayerModifier$layerBlock$1;->this$0:Landroidx/compose/ui/graphics/a1;
+    iget-object v0, p0, Landroidx/compose/ui/graphics/SimpleGraphicsLayerModifier$layerBlock$1;->this$0:Landroidx/compose/ui/graphics/a0;
 
     .line 15
-    iget v0, v0, Landroidx/compose/ui/graphics/a1;->w:F
+    iget v0, v0, Landroidx/compose/ui/graphics/a0;->t:F
 
     .line 16
-    invoke-virtual {p1, v0}, Landroidx/compose/ui/graphics/w0;->g(F)V
-
-    iget-object v0, p0, Landroidx/compose/ui/graphics/SimpleGraphicsLayerModifier$layerBlock$1;->this$0:Landroidx/compose/ui/graphics/a1;
+    invoke-virtual {p1, v0}, Landroidx/compose/ui/graphics/W;->s(F)V
 
     .line 17
-    iget v0, v0, Landroidx/compose/ui/graphics/a1;->x:F
+    iget-object v0, p0, Landroidx/compose/ui/graphics/SimpleGraphicsLayerModifier$layerBlock$1;->this$0:Landroidx/compose/ui/graphics/a0;
 
     .line 18
-    invoke-virtual {p1, v0}, Landroidx/compose/ui/graphics/w0;->h(F)V
-
-    iget-object v0, p0, Landroidx/compose/ui/graphics/SimpleGraphicsLayerModifier$layerBlock$1;->this$0:Landroidx/compose/ui/graphics/a1;
+    iget v0, v0, Landroidx/compose/ui/graphics/a0;->u:F
 
     .line 19
-    iget v1, v0, Landroidx/compose/ui/graphics/a1;->y:F
+    invoke-virtual {p1, v0}, Landroidx/compose/ui/graphics/W;->m(F)V
 
     .line 20
-    iget v2, p1, Landroidx/compose/ui/graphics/w0;->o:F
+    iget-object v0, p0, Landroidx/compose/ui/graphics/SimpleGraphicsLayerModifier$layerBlock$1;->this$0:Landroidx/compose/ui/graphics/a0;
+
+    .line 21
+    iget v0, v0, Landroidx/compose/ui/graphics/a0;->v:F
+
+    .line 22
+    invoke-virtual {p1, v0}, Landroidx/compose/ui/graphics/W;->e(F)V
+
+    .line 23
+    iget-object v0, p0, Landroidx/compose/ui/graphics/SimpleGraphicsLayerModifier$layerBlock$1;->this$0:Landroidx/compose/ui/graphics/a0;
+
+    .line 24
+    iget v0, v0, Landroidx/compose/ui/graphics/a0;->w:F
+
+    .line 25
+    invoke-virtual {p1, v0}, Landroidx/compose/ui/graphics/W;->f(F)V
+
+    .line 26
+    iget-object v0, p0, Landroidx/compose/ui/graphics/SimpleGraphicsLayerModifier$layerBlock$1;->this$0:Landroidx/compose/ui/graphics/a0;
+
+    .line 27
+    iget v0, v0, Landroidx/compose/ui/graphics/a0;->x:F
+
+    .line 28
+    invoke-virtual {p1, v0}, Landroidx/compose/ui/graphics/W;->h(F)V
+
+    .line 29
+    iget-object v0, p0, Landroidx/compose/ui/graphics/SimpleGraphicsLayerModifier$layerBlock$1;->this$0:Landroidx/compose/ui/graphics/a0;
+
+    .line 30
+    iget v1, v0, Landroidx/compose/ui/graphics/a0;->y:F
+
+    .line 31
+    iget v2, p1, Landroidx/compose/ui/graphics/W;->o:F
 
     cmpg-float v2, v2, v1
 
@@ -157,105 +167,110 @@
 
     goto :goto_0
 
-    .line 21
+    .line 32
     :cond_0
-    iget v2, p1, Landroidx/compose/ui/graphics/w0;->b:I
+    iget v2, p1, Landroidx/compose/ui/graphics/W;->b:I
 
     or-int/lit16 v2, v2, 0x800
 
-    iput v2, p1, Landroidx/compose/ui/graphics/w0;->b:I
+    iput v2, p1, Landroidx/compose/ui/graphics/W;->b:I
 
-    .line 22
-    iput v1, p1, Landroidx/compose/ui/graphics/w0;->o:F
+    .line 33
+    iput v1, p1, Landroidx/compose/ui/graphics/W;->o:F
 
-    .line 23
+    .line 34
     :goto_0
-    iget-wide v0, v0, Landroidx/compose/ui/graphics/a1;->z:J
+    iget-wide v0, v0, Landroidx/compose/ui/graphics/a0;->z:J
 
-    .line 24
-    invoke-virtual {p1, v0, v1}, Landroidx/compose/ui/graphics/w0;->q(J)V
+    .line 35
+    invoke-virtual {p1, v0, v1}, Landroidx/compose/ui/graphics/W;->q(J)V
 
-    iget-object v0, p0, Landroidx/compose/ui/graphics/SimpleGraphicsLayerModifier$layerBlock$1;->this$0:Landroidx/compose/ui/graphics/a1;
+    .line 36
+    iget-object v0, p0, Landroidx/compose/ui/graphics/SimpleGraphicsLayerModifier$layerBlock$1;->this$0:Landroidx/compose/ui/graphics/a0;
 
-    .line 25
-    iget-object v0, v0, Landroidx/compose/ui/graphics/a1;->A:Landroidx/compose/ui/graphics/z0;
+    .line 37
+    iget-object v0, v0, Landroidx/compose/ui/graphics/a0;->A:Landroidx/compose/ui/graphics/Z;
 
-    .line 26
-    invoke-virtual {p1, v0}, Landroidx/compose/ui/graphics/w0;->m(Landroidx/compose/ui/graphics/z0;)V
+    .line 38
+    invoke-virtual {p1, v0}, Landroidx/compose/ui/graphics/W;->n(Landroidx/compose/ui/graphics/Z;)V
 
-    iget-object v0, p0, Landroidx/compose/ui/graphics/SimpleGraphicsLayerModifier$layerBlock$1;->this$0:Landroidx/compose/ui/graphics/a1;
+    .line 39
+    iget-object v0, p0, Landroidx/compose/ui/graphics/SimpleGraphicsLayerModifier$layerBlock$1;->this$0:Landroidx/compose/ui/graphics/a0;
 
-    .line 27
-    iget-boolean v0, v0, Landroidx/compose/ui/graphics/a1;->B:Z
+    .line 40
+    iget-boolean v0, v0, Landroidx/compose/ui/graphics/a0;->B:Z
 
-    .line 28
-    invoke-virtual {p1, v0}, Landroidx/compose/ui/graphics/w0;->d(Z)V
+    .line 41
+    invoke-virtual {p1, v0}, Landroidx/compose/ui/graphics/W;->d(Z)V
 
-    iget-object v0, p0, Landroidx/compose/ui/graphics/SimpleGraphicsLayerModifier$layerBlock$1;->this$0:Landroidx/compose/ui/graphics/a1;
+    .line 42
+    iget-object v0, p0, Landroidx/compose/ui/graphics/SimpleGraphicsLayerModifier$layerBlock$1;->this$0:Landroidx/compose/ui/graphics/a0;
 
-    .line 29
     invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
     const/4 v0, 0x0
 
-    .line 30
-    invoke-static {v0, v0}, Lrb/h;->d(Ljava/lang/Object;Ljava/lang/Object;)Z
+    .line 43
+    invoke-static {v0, v0}, Lkotlin/jvm/internal/h;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result v0
 
     if-nez v0, :cond_1
 
-    .line 31
-    iget v0, p1, Landroidx/compose/ui/graphics/w0;->b:I
+    .line 44
+    iget v0, p1, Landroidx/compose/ui/graphics/W;->b:I
 
     const/high16 v1, 0x20000
 
     or-int/2addr v0, v1
 
-    iput v0, p1, Landroidx/compose/ui/graphics/w0;->b:I
+    iput v0, p1, Landroidx/compose/ui/graphics/W;->b:I
 
+    .line 45
     :cond_1
-    iget-object v0, p0, Landroidx/compose/ui/graphics/SimpleGraphicsLayerModifier$layerBlock$1;->this$0:Landroidx/compose/ui/graphics/a1;
+    iget-object v0, p0, Landroidx/compose/ui/graphics/SimpleGraphicsLayerModifier$layerBlock$1;->this$0:Landroidx/compose/ui/graphics/a0;
 
-    .line 32
-    iget-wide v0, v0, Landroidx/compose/ui/graphics/a1;->C:J
+    .line 46
+    iget-wide v0, v0, Landroidx/compose/ui/graphics/a0;->C:J
 
-    .line 33
-    invoke-virtual {p1, v0, v1}, Landroidx/compose/ui/graphics/w0;->c(J)V
+    .line 47
+    invoke-virtual {p1, v0, v1}, Landroidx/compose/ui/graphics/W;->c(J)V
 
-    iget-object v0, p0, Landroidx/compose/ui/graphics/SimpleGraphicsLayerModifier$layerBlock$1;->this$0:Landroidx/compose/ui/graphics/a1;
+    .line 48
+    iget-object v0, p0, Landroidx/compose/ui/graphics/SimpleGraphicsLayerModifier$layerBlock$1;->this$0:Landroidx/compose/ui/graphics/a0;
 
-    .line 34
-    iget-wide v0, v0, Landroidx/compose/ui/graphics/a1;->D:J
+    .line 49
+    iget-wide v0, v0, Landroidx/compose/ui/graphics/a0;->D:J
 
-    .line 35
-    invoke-virtual {p1, v0, v1}, Landroidx/compose/ui/graphics/w0;->p(J)V
+    .line 50
+    invoke-virtual {p1, v0, v1}, Landroidx/compose/ui/graphics/W;->p(J)V
 
-    iget-object v0, p0, Landroidx/compose/ui/graphics/SimpleGraphicsLayerModifier$layerBlock$1;->this$0:Landroidx/compose/ui/graphics/a1;
+    .line 51
+    iget-object v0, p0, Landroidx/compose/ui/graphics/SimpleGraphicsLayerModifier$layerBlock$1;->this$0:Landroidx/compose/ui/graphics/a0;
 
-    .line 36
-    iget v0, v0, Landroidx/compose/ui/graphics/a1;->E:I
+    .line 52
+    iget v0, v0, Landroidx/compose/ui/graphics/a0;->E:I
 
-    .line 37
-    iget v1, p1, Landroidx/compose/ui/graphics/w0;->s:I
+    .line 53
+    iget v1, p1, Landroidx/compose/ui/graphics/W;->s:I
 
-    invoke-static {v1, v0}, Landroidx/compose/ui/graphics/f0;->q(II)Z
+    invoke-static {v1, v0}, Landroidx/compose/ui/graphics/G;->q(II)Z
 
     move-result v1
 
     if-nez v1, :cond_2
 
-    .line 38
-    iget v1, p1, Landroidx/compose/ui/graphics/w0;->b:I
+    .line 54
+    iget v1, p1, Landroidx/compose/ui/graphics/W;->b:I
 
     const v2, 0x8000
 
     or-int/2addr v1, v2
 
-    iput v1, p1, Landroidx/compose/ui/graphics/w0;->b:I
+    iput v1, p1, Landroidx/compose/ui/graphics/W;->b:I
 
-    .line 39
-    iput v0, p1, Landroidx/compose/ui/graphics/w0;->s:I
+    .line 55
+    iput v0, p1, Landroidx/compose/ui/graphics/W;->s:I
 
     :cond_2
     return-void

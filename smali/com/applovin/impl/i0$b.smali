@@ -38,15 +38,15 @@
     .line 1
     sget-object v6, Lcom/applovin/impl/l3;->a:Lcom/applovin/impl/l3;
 
+    const v4, 0x3f333333    # 0.7f
+
+    const/high16 v5, 0x3f400000    # 0.75f
+
     const/16 v1, 0x2710
 
     const/16 v2, 0x61a8
 
     const/16 v3, 0x61a8
-
-    const v4, 0x3f333333    # 0.7f
-
-    const/high16 v5, 0x3f400000    # 0.75f
 
     move-object v0, p0
 
@@ -61,16 +61,22 @@
     .line 2
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
+    .line 3
     iput p1, p0, Lcom/applovin/impl/i0$b;->a:I
 
+    .line 4
     iput p2, p0, Lcom/applovin/impl/i0$b;->b:I
 
+    .line 5
     iput p3, p0, Lcom/applovin/impl/i0$b;->c:I
 
+    .line 6
     iput p4, p0, Lcom/applovin/impl/i0$b;->d:F
 
+    .line 7
     iput p5, p0, Lcom/applovin/impl/i0$b;->e:F
 
+    .line 8
     iput-object p6, p0, Lcom/applovin/impl/i0$b;->f:Lcom/applovin/impl/l3;
 
     return-void

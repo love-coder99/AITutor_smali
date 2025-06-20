@@ -54,9 +54,9 @@
 .method public a(Lcom/applovin/mediation/MaxDebuggerMultiAdActivity;)V
     .locals 1
 
+    .line 2
     iget-object v0, p0, Lcom/applovin/impl/ke$a$a;->a:Lcom/applovin/impl/ke$a;
 
-    .line 2
     iget-object v0, v0, Lcom/applovin/impl/ke$a;->a:Lcom/applovin/impl/je;
 
     invoke-virtual {p1, v0}, Lcom/applovin/impl/mediation/debugger/ui/testmode/a;->initialize(Lcom/applovin/impl/je;)V

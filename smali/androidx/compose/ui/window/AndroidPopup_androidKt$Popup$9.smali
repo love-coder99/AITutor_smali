@@ -3,14 +3,14 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lzh/e;
+.implements Lka/e;
 
 
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "Lkotlin/jvm/internal/Lambda;",
-        "Lzh/e;"
+        "Lka/e;"
     }
 .end annotation
 
@@ -30,58 +30,74 @@
 
 .field final synthetic $$default:I
 
-.field final synthetic $content:Lzh/e;
+.field final synthetic $content:Lka/e;
     .annotation system Ldalvik/annotation/Signature;
         value = {
-            "Lzh/e;"
+            "Lka/e;"
         }
     .end annotation
 .end field
 
-.field final synthetic $onDismissRequest:Lzh/a;
+.field final synthetic $onDismissRequest:Lka/a;
     .annotation system Ldalvik/annotation/Signature;
         value = {
-            "Lzh/a;"
+            "Lka/a;"
         }
     .end annotation
 .end field
 
-.field final synthetic $popupPositionProvider:Landroidx/compose/ui/window/t;
+.field final synthetic $popupPositionProvider:Landroidx/compose/ui/window/r;
 
-.field final synthetic $properties:Landroidx/compose/ui/window/u;
+.field final synthetic $properties:Landroidx/compose/ui/window/s;
 
 
 # direct methods
-.method public constructor <init>(Landroidx/compose/ui/window/t;Lzh/a;Landroidx/compose/ui/window/u;Lzh/e;II)V
+.method public constructor <init>(Landroidx/compose/ui/window/r;Lka/a;Landroidx/compose/ui/window/s;Lka/e;II)V
     .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
-            "Landroidx/compose/ui/window/t;",
-            "Lzh/a;",
-            "Landroidx/compose/ui/window/u;",
-            "Lzh/e;",
+            "Landroidx/compose/ui/window/r;",
+            "Lka/a;",
+            "Landroidx/compose/ui/window/s;",
+            "Lka/e;",
             "II)V"
         }
     .end annotation
 
     .line 1
-    iput-object p1, p0, Landroidx/compose/ui/window/AndroidPopup_androidKt$Popup$9;->$popupPositionProvider:Landroidx/compose/ui/window/t;
+    iput-object p1, p0, Landroidx/compose/ui/window/AndroidPopup_androidKt$Popup$9;->$popupPositionProvider:Landroidx/compose/ui/window/r;
 
-    iput-object p2, p0, Landroidx/compose/ui/window/AndroidPopup_androidKt$Popup$9;->$onDismissRequest:Lzh/a;
+    .line 2
+    .line 3
+    iput-object p2, p0, Landroidx/compose/ui/window/AndroidPopup_androidKt$Popup$9;->$onDismissRequest:Lka/a;
 
-    iput-object p3, p0, Landroidx/compose/ui/window/AndroidPopup_androidKt$Popup$9;->$properties:Landroidx/compose/ui/window/u;
+    .line 4
+    .line 5
+    iput-object p3, p0, Landroidx/compose/ui/window/AndroidPopup_androidKt$Popup$9;->$properties:Landroidx/compose/ui/window/s;
 
-    iput-object p4, p0, Landroidx/compose/ui/window/AndroidPopup_androidKt$Popup$9;->$content:Lzh/e;
+    .line 6
+    .line 7
+    iput-object p4, p0, Landroidx/compose/ui/window/AndroidPopup_androidKt$Popup$9;->$content:Lka/e;
 
+    .line 8
+    .line 9
     iput p5, p0, Landroidx/compose/ui/window/AndroidPopup_androidKt$Popup$9;->$$changed:I
 
+    .line 10
+    .line 11
     iput p6, p0, Landroidx/compose/ui/window/AndroidPopup_androidKt$Popup$9;->$$default:I
 
+    .line 12
+    .line 13
     const/4 p1, 0x2
 
+    .line 14
     invoke-direct {p0, p1}, Lkotlin/jvm/internal/Lambda;-><init>(I)V
 
+    .line 15
+    .line 16
+    .line 17
     return-void
 .end method
 
@@ -91,7 +107,7 @@
     .locals 0
 
     .line 1
-    check-cast p1, Landroidx/compose/runtime/l;
+    check-cast p1, Landroidx/compose/runtime/j;
 
     check-cast p2, Ljava/lang/Number;
 
@@ -99,30 +115,30 @@
 
     move-result p2
 
-    invoke-virtual {p0, p1, p2}, Landroidx/compose/ui/window/AndroidPopup_androidKt$Popup$9;->invoke(Landroidx/compose/runtime/l;I)V
+    invoke-virtual {p0, p1, p2}, Landroidx/compose/ui/window/AndroidPopup_androidKt$Popup$9;->invoke(Landroidx/compose/runtime/j;I)V
 
-    sget-object p1, Lqh/r;->a:Lqh/r;
+    sget-object p1, LX9/j;->a:LX9/j;
 
     return-object p1
 .end method
 
-.method public final invoke(Landroidx/compose/runtime/l;I)V
+.method public final invoke(Landroidx/compose/runtime/j;I)V
     .locals 7
 
     .line 2
-    iget-object v0, p0, Landroidx/compose/ui/window/AndroidPopup_androidKt$Popup$9;->$popupPositionProvider:Landroidx/compose/ui/window/t;
+    iget-object v0, p0, Landroidx/compose/ui/window/AndroidPopup_androidKt$Popup$9;->$popupPositionProvider:Landroidx/compose/ui/window/r;
 
-    iget-object v1, p0, Landroidx/compose/ui/window/AndroidPopup_androidKt$Popup$9;->$onDismissRequest:Lzh/a;
+    iget-object v1, p0, Landroidx/compose/ui/window/AndroidPopup_androidKt$Popup$9;->$onDismissRequest:Lka/a;
 
-    iget-object v2, p0, Landroidx/compose/ui/window/AndroidPopup_androidKt$Popup$9;->$properties:Landroidx/compose/ui/window/u;
+    iget-object v2, p0, Landroidx/compose/ui/window/AndroidPopup_androidKt$Popup$9;->$properties:Landroidx/compose/ui/window/s;
 
-    iget-object v3, p0, Landroidx/compose/ui/window/AndroidPopup_androidKt$Popup$9;->$content:Lzh/e;
+    iget-object v3, p0, Landroidx/compose/ui/window/AndroidPopup_androidKt$Popup$9;->$content:Lka/e;
 
     iget p2, p0, Landroidx/compose/ui/window/AndroidPopup_androidKt$Popup$9;->$$changed:I
 
     or-int/lit8 p2, p2, 0x1
 
-    invoke-static {p2}, Landroidx/compose/runtime/q;->A(I)I
+    invoke-static {p2}, Landroidx/compose/runtime/o;->f0(I)I
 
     move-result v5
 
@@ -130,7 +146,7 @@
 
     move-object v4, p1
 
-    invoke-static/range {v0 .. v6}, Landroidx/compose/ui/window/f;->a(Landroidx/compose/ui/window/t;Lzh/a;Landroidx/compose/ui/window/u;Lzh/e;Landroidx/compose/runtime/l;II)V
+    invoke-static/range {v0 .. v6}, Landroidx/compose/ui/window/f;->a(Landroidx/compose/ui/window/r;Lka/a;Landroidx/compose/ui/window/s;Lka/e;Landroidx/compose/runtime/j;II)V
 
     return-void
 .end method

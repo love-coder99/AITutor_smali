@@ -1,71 +1,35 @@
-.class public interface abstract Landroidx/camera/core/impl/w;
+.class public interface abstract Landroidx/camera/core/impl/W;
 .super Ljava/lang/Object;
 .source "SourceFile"
 
-# interfaces
-.implements Ly/o;
-
-
-# static fields
-.field public static final X7:Lle/b;
-
-
-# direct methods
-.method static constructor <clinit>()V
-    .locals 2
-
-    .line 1
-    new-instance v0, Lle/b;
-
-    .line 2
-    .line 3
-    const/16 v1, 0x8
-
-    .line 4
-    .line 5
-    invoke-direct {v0, v1}, Lle/b;-><init>(I)V
-
-    .line 6
-    .line 7
-    .line 8
-    sput-object v0, Landroidx/camera/core/impl/w;->X7:Lle/b;
-
-    .line 9
-    .line 10
-    return-void
-.end method
-
 
 # virtual methods
-.method public abstract a(Landroidx/camera/core/impl/z1;)V
+.method public abstract b()LB/V;
 .end method
 
-.method public abstract c()V
+.method public abstract close()V
 .end method
 
-.method public abstract g(Landroidx/camera/core/impl/j0;)V
+.method public abstract f()I
 .end method
 
-.method public abstract i()Landroid/graphics/Rect;
+.method public abstract getHeight()I
 .end method
 
-.method public abstract j(Ld0/h;)V
+.method public abstract getWidth()I
 .end method
 
-.method public abstract k(I)V
+.method public abstract h()V
 .end method
 
-.method public abstract l(IILjava/util/List;)Lcom/google/common/util/concurrent/c;
+.method public abstract j()Landroid/view/Surface;
 .end method
 
-.method public abstract n(II)Lcom/google/common/util/concurrent/c;
+.method public abstract n()I
 .end method
 
-.method public abstract o()Landroidx/camera/core/impl/j0;
+.method public abstract o()LB/V;
 .end method
 
-.method public abstract q()V
-.end method
-
-.method public abstract r()V
+.method public abstract p(Landroidx/camera/core/impl/V;Ljava/util/concurrent/Executor;)V
 .end method

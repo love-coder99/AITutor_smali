@@ -7,12 +7,16 @@
 .method public constructor <init>()V
     .locals 0
 
+    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
+    .line 2
+    .line 3
+    .line 4
     return-void
 .end method
 
-.method public static read(Lx4/a;)Landroidx/media/AudioAttributesImplBase;
+.method public static read(Lr2/a;)Landroidx/media/AudioAttributesImplBase;
     .locals 3
 
     .line 1
@@ -32,7 +36,7 @@
     const/4 v2, 0x1
 
     .line 9
-    invoke-virtual {p0, v1, v2}, Lx4/a;->f(II)I
+    invoke-virtual {p0, v1, v2}, Lr2/a;->f(II)I
 
     .line 10
     .line 11
@@ -51,7 +55,7 @@
     const/4 v2, 0x2
 
     .line 18
-    invoke-virtual {p0, v1, v2}, Lx4/a;->f(II)I
+    invoke-virtual {p0, v1, v2}, Lr2/a;->f(II)I
 
     .line 19
     .line 20
@@ -70,7 +74,7 @@
     const/4 v2, 0x3
 
     .line 27
-    invoke-virtual {p0, v1, v2}, Lx4/a;->f(II)I
+    invoke-virtual {p0, v1, v2}, Lr2/a;->f(II)I
 
     .line 28
     .line 29
@@ -89,7 +93,7 @@
     const/4 v2, 0x4
 
     .line 36
-    invoke-virtual {p0, v1, v2}, Lx4/a;->f(II)I
+    invoke-virtual {p0, v1, v2}, Lr2/a;->f(II)I
 
     .line 37
     .line 38
@@ -104,7 +108,7 @@
     return-object v0
 .end method
 
-.method public static write(Landroidx/media/AudioAttributesImplBase;Lx4/a;)V
+.method public static write(Landroidx/media/AudioAttributesImplBase;Lr2/a;)V
     .locals 2
 
     .line 1
@@ -120,7 +124,7 @@
     const/4 v1, 0x1
 
     .line 7
-    invoke-virtual {p1, v0, v1}, Lx4/a;->j(II)V
+    invoke-virtual {p1, v0, v1}, Lr2/a;->j(II)V
 
     .line 8
     .line 9
@@ -132,7 +136,7 @@
     const/4 v1, 0x2
 
     .line 13
-    invoke-virtual {p1, v0, v1}, Lx4/a;->j(II)V
+    invoke-virtual {p1, v0, v1}, Lr2/a;->j(II)V
 
     .line 14
     .line 15
@@ -144,7 +148,7 @@
     const/4 v1, 0x3
 
     .line 19
-    invoke-virtual {p1, v0, v1}, Lx4/a;->j(II)V
+    invoke-virtual {p1, v0, v1}, Lr2/a;->j(II)V
 
     .line 20
     .line 21
@@ -156,7 +160,7 @@
     const/4 v0, 0x4
 
     .line 25
-    invoke-virtual {p1, p0, v0}, Lx4/a;->j(II)V
+    invoke-virtual {p1, p0, v0}, Lr2/a;->j(II)V
 
     .line 26
     .line 27

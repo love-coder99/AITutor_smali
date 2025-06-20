@@ -236,9 +236,9 @@
 .method private a(Lcom/applovin/impl/aq$d;Lcom/applovin/impl/fq;)V
     .locals 1
 
+    .line 7
     const-string v0, ""
 
-    .line 7
     invoke-direct {p0, p1, v0, p2}, Lcom/applovin/impl/r9;->a(Lcom/applovin/impl/aq$d;Ljava/lang/String;Lcom/applovin/impl/fq;)V
 
     return-void
@@ -258,9 +258,9 @@
 .method private a(Lcom/applovin/impl/aq$d;Ljava/lang/String;Lcom/applovin/impl/fq;)V
     .locals 1
 
+    .line 9
     iget-object v0, p0, Lcom/applovin/impl/r9;->k0:Lcom/applovin/impl/aq;
 
-    .line 9
     invoke-virtual {v0, p1, p2}, Lcom/applovin/impl/aq;->a(Lcom/applovin/impl/aq$d;Ljava/lang/String;)Ljava/util/Set;
 
     move-result-object p1
@@ -316,9 +316,9 @@
 
     move-result-wide v4
 
+    .line 14
     iget-object v0, p0, Lcom/applovin/impl/r9;->k0:Lcom/applovin/impl/aq;
 
-    .line 14
     invoke-virtual {v0}, Lcom/applovin/impl/aq;->w1()Lcom/applovin/impl/oq;
 
     move-result-object v0
@@ -376,6 +376,7 @@
 
     invoke-virtual {v0, v2, v1}, Lcom/applovin/impl/sdk/n;->a(Ljava/lang/String;Ljava/lang/String;)V
 
+    .line 17
     :cond_1
     iget-object v8, p0, Lcom/applovin/impl/o9;->b:Lcom/applovin/impl/sdk/j;
 
@@ -383,7 +384,6 @@
 
     move-object v7, p2
 
-    .line 17
     invoke-static/range {v3 .. v8}, Lcom/applovin/impl/mq;->a(Ljava/util/Set;JLandroid/net/Uri;Lcom/applovin/impl/fq;Lcom/applovin/impl/sdk/j;)V
 
     :cond_2
@@ -937,9 +937,9 @@
 
     invoke-direct {p0, v0}, Lcom/applovin/impl/r9;->a(Lcom/applovin/impl/aq$d;)V
 
+    .line 4
     iget-object v0, p0, Lcom/applovin/impl/r9;->k0:Lcom/applovin/impl/aq;
 
-    .line 4
     invoke-virtual {v0}, Lcom/applovin/impl/aq;->getAdEventTracker()Lcom/applovin/impl/rg;
 
     move-result-object v0
@@ -958,9 +958,9 @@
     .line 18
     invoke-super {p0, p1}, Lcom/applovin/impl/t9;->a(Landroid/view/ViewGroup;)V
 
+    .line 19
     iget-object p1, p0, Lcom/applovin/impl/t9;->X:Lcom/applovin/impl/u4;
 
-    .line 19
     sget-object v0, Ljava/util/concurrent/TimeUnit;->SECONDS:Ljava/util/concurrent/TimeUnit;
 
     const-wide/16 v1, 0x1
@@ -982,11 +982,12 @@
 
     invoke-direct {p1}, Ljava/util/ArrayList;-><init>()V
 
+    .line 21
     iget-object v0, p0, Lcom/applovin/impl/t9;->N:Lcom/applovin/impl/o;
 
     if-eqz v0, :cond_0
 
-    .line 21
+    .line 22
     new-instance v1, Lcom/applovin/impl/ng;
 
     sget-object v2, Lcom/iab/omid/library/applovin/adsession/FriendlyObstructionPurpose;->OTHER:Lcom/iab/omid/library/applovin/adsession/FriendlyObstructionPurpose;
@@ -997,12 +998,13 @@
 
     invoke-virtual {p1, v1}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
+    .line 23
     :cond_0
     iget-object v0, p0, Lcom/applovin/impl/t9;->O:Lcom/applovin/impl/adview/g;
 
     if-eqz v0, :cond_1
 
-    .line 22
+    .line 24
     new-instance v1, Lcom/applovin/impl/ng;
 
     sget-object v2, Lcom/iab/omid/library/applovin/adsession/FriendlyObstructionPurpose;->CLOSE_AD:Lcom/iab/omid/library/applovin/adsession/FriendlyObstructionPurpose;
@@ -1013,12 +1015,13 @@
 
     invoke-virtual {p1, v1}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
+    .line 25
     :cond_1
     iget-object v0, p0, Lcom/applovin/impl/t9;->P:Lcom/applovin/impl/h3;
 
     if-eqz v0, :cond_2
 
-    .line 23
+    .line 26
     new-instance v1, Lcom/applovin/impl/ng;
 
     sget-object v2, Lcom/iab/omid/library/applovin/adsession/FriendlyObstructionPurpose;->OTHER:Lcom/iab/omid/library/applovin/adsession/FriendlyObstructionPurpose;
@@ -1029,12 +1032,13 @@
 
     invoke-virtual {p1, v1}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
+    .line 27
     :cond_2
     iget-object v0, p0, Lcom/applovin/impl/t9;->S:Landroid/widget/ProgressBar;
 
     if-eqz v0, :cond_3
 
-    .line 24
+    .line 28
     new-instance v1, Lcom/applovin/impl/ng;
 
     sget-object v2, Lcom/iab/omid/library/applovin/adsession/FriendlyObstructionPurpose;->OTHER:Lcom/iab/omid/library/applovin/adsession/FriendlyObstructionPurpose;
@@ -1045,12 +1049,13 @@
 
     invoke-virtual {p1, v1}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
+    .line 29
     :cond_3
     iget-object v0, p0, Lcom/applovin/impl/t9;->T:Landroid/widget/ProgressBar;
 
     if-eqz v0, :cond_4
 
-    .line 25
+    .line 30
     new-instance v1, Lcom/applovin/impl/ng;
 
     sget-object v2, Lcom/iab/omid/library/applovin/adsession/FriendlyObstructionPurpose;->OTHER:Lcom/iab/omid/library/applovin/adsession/FriendlyObstructionPurpose;
@@ -1061,12 +1066,13 @@
 
     invoke-virtual {p1, v1}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
+    .line 31
     :cond_4
     iget-object v0, p0, Lcom/applovin/impl/t9;->Q:Landroid/widget/ImageView;
 
     if-eqz v0, :cond_5
 
-    .line 26
+    .line 32
     new-instance v1, Lcom/applovin/impl/ng;
 
     sget-object v2, Lcom/iab/omid/library/applovin/adsession/FriendlyObstructionPurpose;->VIDEO_CONTROLS:Lcom/iab/omid/library/applovin/adsession/FriendlyObstructionPurpose;
@@ -1077,12 +1083,13 @@
 
     invoke-virtual {p1, v1}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
+    .line 33
     :cond_5
     iget-object v0, p0, Lcom/applovin/impl/t9;->R:Lcom/applovin/impl/adview/l;
 
     if-eqz v0, :cond_6
 
-    .line 27
+    .line 34
     new-instance v1, Lcom/applovin/impl/ng;
 
     sget-object v2, Lcom/iab/omid/library/applovin/adsession/FriendlyObstructionPurpose;->VIDEO_CONTROLS:Lcom/iab/omid/library/applovin/adsession/FriendlyObstructionPurpose;
@@ -1093,39 +1100,39 @@
 
     invoke-virtual {p1, v1}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
+    .line 35
     :cond_6
     iget-object v0, p0, Lcom/applovin/impl/o9;->j:Lcom/applovin/impl/adview/k;
 
     if-eqz v0, :cond_7
 
-    .line 28
     invoke-virtual {v0}, Lcom/applovin/impl/adview/k;->a()Z
 
     move-result v0
 
     if-eqz v0, :cond_7
 
-    .line 29
+    .line 36
     new-instance v0, Lcom/applovin/impl/ng;
 
     iget-object v1, p0, Lcom/applovin/impl/o9;->j:Lcom/applovin/impl/adview/k;
 
     sget-object v2, Lcom/iab/omid/library/applovin/adsession/FriendlyObstructionPurpose;->NOT_VISIBLE:Lcom/iab/omid/library/applovin/adsession/FriendlyObstructionPurpose;
 
-    .line 30
+    .line 37
     invoke-virtual {v1}, Lcom/applovin/impl/adview/k;->getIdentifier()Ljava/lang/String;
 
     move-result-object v3
 
     invoke-direct {v0, v1, v2, v3}, Lcom/applovin/impl/ng;-><init>(Landroid/view/View;Lcom/iab/omid/library/applovin/adsession/FriendlyObstructionPurpose;Ljava/lang/String;)V
 
-    .line 31
+    .line 38
     invoke-virtual {p1, v0}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
+    .line 39
     :cond_7
     iget-object v0, p0, Lcom/applovin/impl/r9;->k0:Lcom/applovin/impl/aq;
 
-    .line 32
     invoke-virtual {v0}, Lcom/applovin/impl/aq;->getAdEventTracker()Lcom/applovin/impl/rg;
 
     move-result-object v0
@@ -1249,7 +1256,7 @@
 
     .line 26
     .line 27
-    invoke-static {v1, p1, v0, v2}, Landroidx/compose/foundation/text/modifiers/f;->A(Ljava/lang/String;Ljava/lang/String;Lcom/applovin/impl/sdk/n;Ljava/lang/String;)V
+    invoke-static {v1, p1, v0, v2}, Lcom/android/billingclient/api/a;->w(Ljava/lang/String;Ljava/lang/String;Lcom/applovin/impl/sdk/n;Ljava/lang/String;)V
 
     .line 28
     .line 29

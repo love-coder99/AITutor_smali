@@ -152,24 +152,39 @@
 .method public final hashCode()I
     .locals 2
 
+    .line 1
     iget v0, p0, Landroidx/compose/ui/text/style/p;->a:I
 
+    .line 2
+    .line 3
     mul-int/lit8 v0, v0, 0x1f
 
+    .line 4
+    .line 5
     iget-boolean v1, p0, Landroidx/compose/ui/text/style/p;->b:Z
 
+    .line 6
+    .line 7
     if-eqz v1, :cond_0
 
+    .line 8
+    .line 9
     const/16 v1, 0x4cf
 
+    .line 10
+    .line 11
     goto :goto_0
 
+    .line 12
     :cond_0
     const/16 v1, 0x4d5
 
+    .line 13
+    .line 14
     :goto_0
     add-int/2addr v0, v1
 
+    .line 15
     return v0
 .end method
 
@@ -181,7 +196,7 @@
 
     .line 2
     .line 3
-    invoke-static {p0, v0}, Lrb/h;->d(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-virtual {p0, v0}, Landroidx/compose/ui/text/style/p;->equals(Ljava/lang/Object;)Z
 
     .line 4
     .line 5
@@ -205,7 +220,7 @@
 
     .line 13
     .line 14
-    invoke-static {p0, v0}, Lrb/h;->d(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-virtual {p0, v0}, Landroidx/compose/ui/text/style/p;->equals(Ljava/lang/Object;)Z
 
     .line 15
     .line 16

@@ -4,6 +4,15 @@
 
 
 # annotations
+.annotation runtime Lca/c;
+    c = "androidx.compose.foundation.gestures.ForEachGestureKt"
+    f = "ForEachGesture.kt"
+    l = {
+        0x56
+    }
+    m = "awaitAllPointersUp"
+.end annotation
+
 .annotation runtime Lkotlin/Metadata;
     k = 0x3
     mv = {
@@ -12,15 +21,6 @@
         0x0
     }
     xi = 0x30
-.end annotation
-
-.annotation runtime Lth/c;
-    c = "androidx.compose.foundation.gestures.ForEachGestureKt"
-    f = "ForEachGesture.kt"
-    l = {
-        0x56
-    }
-    m = "awaitAllPointersUp"
 .end annotation
 
 
@@ -67,7 +67,7 @@
 
     const/4 p1, 0x0
 
-    invoke-static {p1, p0}, Landroidx/compose/foundation/gestures/w;->a(Landroidx/compose/ui/input/pointer/b;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
+    invoke-static {p1, p0}, Landroidx/compose/foundation/gestures/y;->a(Landroidx/compose/ui/input/pointer/b;Lkotlin/coroutines/jvm/internal/BaseContinuationImpl;)Ljava/lang/Object;
 
     move-result-object p1
 

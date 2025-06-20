@@ -4,6 +4,16 @@
 
 
 # annotations
+.annotation runtime Lca/c;
+    c = "androidx.datastore.core.DataMigrationInitializer$Companion"
+    f = "DataMigrationInitializer.kt"
+    l = {
+        0x2a,
+        0x39
+    }
+    m = "runMigrations"
+.end annotation
+
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "<T:",
@@ -17,20 +27,10 @@
     k = 0x3
     mv = {
         0x1,
-        0x5,
-        0x1
+        0x8,
+        0x0
     }
     xi = 0x30
-.end annotation
-
-.annotation runtime Lth/c;
-    c = "androidx.datastore.core.DataMigrationInitializer$Companion"
-    f = "DataMigrationInitializer.kt"
-    l = {
-        0x2a,
-        0x39
-    }
-    m = "runMigrations"
 .end annotation
 
 
@@ -43,16 +43,16 @@
 
 .field synthetic result:Ljava/lang/Object;
 
-.field final synthetic this$0:Landroidx/datastore/core/d;
+.field final synthetic this$0:Landroidx/datastore/core/f;
 
 
 # direct methods
-.method public constructor <init>(Landroidx/datastore/core/d;Lkotlin/coroutines/Continuation;)V
+.method public constructor <init>(Landroidx/datastore/core/f;Lkotlin/coroutines/Continuation;)V
     .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
-            "Landroidx/datastore/core/d;",
+            "Landroidx/datastore/core/f;",
             "Lkotlin/coroutines/Continuation<",
             "-",
             "Landroidx/datastore/core/DataMigrationInitializer$Companion$runMigrations$1;",
@@ -60,7 +60,7 @@
         }
     .end annotation
 
-    iput-object p1, p0, Landroidx/datastore/core/DataMigrationInitializer$Companion$runMigrations$1;->this$0:Landroidx/datastore/core/d;
+    iput-object p1, p0, Landroidx/datastore/core/DataMigrationInitializer$Companion$runMigrations$1;->this$0:Landroidx/datastore/core/f;
 
     invoke-direct {p0, p2}, Lkotlin/coroutines/jvm/internal/ContinuationImpl;-><init>(Lkotlin/coroutines/Continuation;)V
 
@@ -82,11 +82,11 @@
 
     iput p1, p0, Landroidx/datastore/core/DataMigrationInitializer$Companion$runMigrations$1;->label:I
 
-    iget-object p1, p0, Landroidx/datastore/core/DataMigrationInitializer$Companion$runMigrations$1;->this$0:Landroidx/datastore/core/d;
+    iget-object p1, p0, Landroidx/datastore/core/DataMigrationInitializer$Companion$runMigrations$1;->this$0:Landroidx/datastore/core/f;
 
     const/4 v0, 0x0
 
-    invoke-static {p1, v0, v0, p0}, Landroidx/datastore/core/d;->a(Landroidx/datastore/core/d;Ljava/util/List;Landroidx/datastore/core/h;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
+    invoke-static {p1, v0, v0, p0}, Landroidx/datastore/core/f;->a(Landroidx/datastore/core/f;Ljava/util/List;Landroidx/datastore/core/t;Lkotlin/coroutines/jvm/internal/ContinuationImpl;)Ljava/lang/Object;
 
     move-result-object p1
 

@@ -3,14 +3,14 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lzh/c;
+.implements Lka/c;
 
 
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "Lkotlin/jvm/internal/Lambda;",
-        "Lzh/c;"
+        "Lka/c;"
     }
 .end annotation
 
@@ -21,7 +21,7 @@
     d2 = {
         "",
         "it",
-        "Lqh/r;",
+        "LX9/j;",
         "invoke",
         "(Ljava/lang/Object;)V",
         "<anonymous>"
@@ -73,7 +73,7 @@
     .line 4
     invoke-virtual {p0, p1}, Landroidx/compose/ui/platform/GlobalSnapshotManager$ensureStarted$2;->invoke(Ljava/lang/Object;)V
 
-    sget-object p1, Lqh/r;->a:Lqh/r;
+    sget-object p1, LX9/j;->a:LX9/j;
 
     return-object p1
 .end method
@@ -82,7 +82,7 @@
     .locals 2
 
     .line 1
-    sget-object p1, Landroidx/compose/ui/platform/q1;->b:Ljava/util/concurrent/atomic/AtomicBoolean;
+    sget-object p1, Landroidx/compose/ui/platform/g0;->b:Ljava/util/concurrent/atomic/AtomicBoolean;
 
     const/4 v0, 0x0
 
@@ -95,12 +95,12 @@
 
     if-eqz p1, :cond_0
 
+    .line 3
     iget-object p1, p0, Landroidx/compose/ui/platform/GlobalSnapshotManager$ensureStarted$2;->$channel:Lkotlinx/coroutines/channels/e;
 
-    sget-object v0, Lqh/r;->a:Lqh/r;
+    sget-object v0, LX9/j;->a:LX9/j;
 
-    .line 3
-    invoke-interface {p1, v0}, Lkotlinx/coroutines/channels/p;->o(Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-interface {p1, v0}, Lkotlinx/coroutines/channels/p;->l(Ljava/lang/Object;)Ljava/lang/Object;
 
     :cond_0
     return-void

@@ -78,44 +78,55 @@
 
     const/4 p1, 0x0
 
+    .line 3
     iput p1, p0, Lcom/apm/insight/b/g;->b:I
 
+    .line 4
     iput p1, p0, Lcom/apm/insight/b/g;->c:I
 
     const/16 v0, 0x64
 
+    .line 5
     iput v0, p0, Lcom/apm/insight/b/g;->d:I
 
     const/16 v0, 0xc8
 
+    .line 6
     iput v0, p0, Lcom/apm/insight/b/g;->e:I
 
     const-wide/16 v0, -0x1
 
+    .line 7
     iput-wide v0, p0, Lcom/apm/insight/b/g;->g:J
 
+    .line 8
     iput-wide v0, p0, Lcom/apm/insight/b/g;->h:J
 
     const/4 v2, -0x1
 
+    .line 9
     iput v2, p0, Lcom/apm/insight/b/g;->i:I
 
+    .line 10
     iput-wide v0, p0, Lcom/apm/insight/b/g;->j:J
 
+    .line 11
     iput-boolean p1, p0, Lcom/apm/insight/b/g;->n:Z
 
+    .line 12
     iput-boolean p1, p0, Lcom/apm/insight/b/g;->o:Z
 
+    .line 13
     iput-boolean p1, p0, Lcom/apm/insight/b/g;->q:Z
 
-    .line 3
+    .line 14
     new-instance p1, Lcom/apm/insight/b/g$2;
 
     invoke-direct {p1, p0}, Lcom/apm/insight/b/g$2;-><init>(Lcom/apm/insight/b/g;)V
 
     iput-object p1, p0, Lcom/apm/insight/b/g;->s:Ljava/lang/Runnable;
 
-    .line 4
+    .line 15
     new-instance p1, Lcom/apm/insight/b/g$1;
 
     invoke-direct {p1, p0}, Lcom/apm/insight/b/g$1;-><init>(Lcom/apm/insight/b/g;)V
@@ -124,6 +135,7 @@
 
     const/4 p1, 0x0
 
+    .line 16
     iput-object p1, p0, Lcom/apm/insight/b/g;->p:Lcom/apm/insight/runtime/r;
 
     return-void
@@ -147,7 +159,7 @@
 
     return-wide v0
 
-    .line 46
+    .line 59
     :cond_0
     :try_start_0
     invoke-static {p0}, Lcom/apm/insight/runtime/f;->a(I)J
@@ -172,33 +184,34 @@
 .method public static a(Ljava/lang/String;)Ljava/lang/String;
     .locals 9
 
+    .line 36
     const-string v0, " "
 
     const-string v1, ")"
 
     const-string v2, "@"
 
-    .line 24
     invoke-static {p0}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
 
     move-result v3
 
     if-eqz v3, :cond_0
 
+    .line 37
     const-string p0, "unknown message"
 
     return-object p0
 
+    .line 38
     :cond_0
     :try_start_0
     const-string v3, ":"
 
-    .line 25
     invoke-virtual {p0, v3}, Ljava/lang/String;->split(Ljava/lang/String;)[Ljava/lang/String;
 
     move-result-object v3
 
-    .line 26
+    .line 39
     array-length v4, v3
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_1
@@ -211,7 +224,7 @@
 
     if-ne v4, v5, :cond_1
 
-    .line 27
+    .line 40
     :try_start_1
     aget-object v3, v3, v7
 
@@ -220,10 +233,10 @@
     :cond_1
     move-object v3, v6
 
+    .line 41
     :goto_0
     const-string v4, "{"
 
-    .line 28
     invoke-virtual {p0, v4}, Ljava/lang/String;->contains(Ljava/lang/CharSequence;)Z
 
     move-result v4
@@ -240,30 +253,30 @@
 
     if-eqz v4, :cond_2
 
+    .line 42
     const-string v4, "\\{"
 
-    .line 29
     invoke-virtual {p0, v4}, Ljava/lang/String;->split(Ljava/lang/String;)[Ljava/lang/String;
 
     move-result-object v4
 
-    .line 30
+    .line 43
     aget-object v4, v4, v5
     :try_end_1
     .catchall {:try_start_1 .. :try_end_1} :catchall_1
 
+    .line 44
     :try_start_2
     const-string v8, "\\}"
 
-    .line 31
     invoke-virtual {p0, v8}, Ljava/lang/String;->split(Ljava/lang/String;)[Ljava/lang/String;
 
     move-result-object p0
 
-    .line 32
+    .line 45
     aget-object p0, p0, v7
 
-    .line 33
+    .line 46
     new-instance v8, Ljava/lang/StringBuilder;
 
     invoke-direct {v8}, Ljava/lang/StringBuilder;-><init>()V
@@ -286,7 +299,7 @@
     :cond_2
     move-object v4, p0
 
-    .line 34
+    .line 47
     :goto_1
     invoke-virtual {p0, v2}, Ljava/lang/String;->contains(Ljava/lang/CharSequence;)Z
 
@@ -294,23 +307,23 @@
 
     if-eqz v8, :cond_3
 
-    .line 35
+    .line 48
     invoke-virtual {p0, v2}, Ljava/lang/String;->split(Ljava/lang/String;)[Ljava/lang/String;
 
     move-result-object v2
 
-    .line 36
+    .line 49
     array-length v8, v2
 
     if-le v8, v7, :cond_3
 
-    .line 37
+    .line 50
     aget-object p0, v2, v5
 
+    .line 51
     :cond_3
     const-string v2, "("
 
-    .line 38
     invoke-virtual {p0, v2}, Ljava/lang/String;->contains(Ljava/lang/CharSequence;)Z
 
     move-result v2
@@ -331,28 +344,28 @@
 
     if-nez v2, :cond_5
 
+    .line 52
     const-string v2, "\\("
 
-    .line 39
     invoke-virtual {p0, v2}, Ljava/lang/String;->split(Ljava/lang/String;)[Ljava/lang/String;
 
     move-result-object v2
 
-    .line 40
+    .line 53
     array-length v5, v2
 
     if-le v5, v7, :cond_4
 
-    .line 41
+    .line 54
     aget-object p0, v2, v7
 
-    .line 42
+    .line 55
     :cond_4
     invoke-virtual {p0, v1, v6}, Ljava/lang/String;->replace(Ljava/lang/CharSequence;Ljava/lang/CharSequence;)Ljava/lang/String;
 
     move-result-object p0
 
-    .line 43
+    .line 56
     :cond_5
     invoke-virtual {p0, v0}, Ljava/lang/String;->startsWith(Ljava/lang/String;)Z
 
@@ -360,12 +373,12 @@
 
     if-eqz v1, :cond_6
 
-    .line 44
+    .line 57
     invoke-virtual {p0, v0, v6}, Ljava/lang/String;->replace(Ljava/lang/CharSequence;Ljava/lang/CharSequence;)Ljava/lang/String;
 
     move-result-object p0
 
-    .line 45
+    .line 58
     :cond_6
     new-instance v0, Ljava/lang/StringBuilder;
 
@@ -399,7 +412,7 @@
 
     move-object v4, p4
 
-    .line 9
+    .line 13
     invoke-direct/range {v0 .. v5}, Lcom/apm/insight/b/g;->a(IJLjava/lang/String;Z)V
 
     return-void
@@ -410,36 +423,38 @@
 
     const/4 v0, 0x1
 
+    .line 14
     iput-boolean v0, p0, Lcom/apm/insight/b/g;->o:Z
 
+    .line 15
     iget-object v0, p0, Lcom/apm/insight/b/g;->f:Lcom/apm/insight/b/g$f;
 
-    .line 10
     invoke-virtual {v0, p1}, Lcom/apm/insight/b/g$f;->a(I)Lcom/apm/insight/b/g$e;
 
     move-result-object p1
 
+    .line 16
     iget-wide v0, p0, Lcom/apm/insight/b/g;->g:J
 
     sub-long v0, p2, v0
 
-    .line 11
     iput-wide v0, p1, Lcom/apm/insight/b/g$e;->f:J
 
     if-eqz p5, :cond_0
 
-    .line 12
+    .line 17
     invoke-static {}, Landroid/os/SystemClock;->currentThreadTimeMillis()J
 
     move-result-wide v0
 
+    .line 18
     iget-wide v2, p0, Lcom/apm/insight/b/g;->j:J
 
     sub-long v2, v0, v2
 
-    .line 13
     iput-wide v2, p1, Lcom/apm/insight/b/g$e;->g:J
 
+    .line 19
     iput-wide v0, p0, Lcom/apm/insight/b/g;->j:J
 
     goto :goto_0
@@ -447,45 +462,47 @@
     :cond_0
     const-wide/16 v0, -0x1
 
-    .line 14
+    .line 20
     iput-wide v0, p1, Lcom/apm/insight/b/g$e;->g:J
 
+    .line 21
     :goto_0
     iget p5, p0, Lcom/apm/insight/b/g;->b:I
 
-    .line 15
     iput p5, p1, Lcom/apm/insight/b/g$e;->e:I
 
-    .line 16
+    .line 22
     iput-object p4, p1, Lcom/apm/insight/b/g$e;->h:Ljava/lang/String;
 
+    .line 23
     iget-object p4, p0, Lcom/apm/insight/b/g;->k:Ljava/lang/String;
 
-    .line 17
     iput-object p4, p1, Lcom/apm/insight/b/g$e;->i:Ljava/lang/String;
 
+    .line 24
     iget-wide p4, p0, Lcom/apm/insight/b/g;->g:J
 
-    .line 18
     iput-wide p4, p1, Lcom/apm/insight/b/g$e;->a:J
 
-    .line 19
+    .line 25
     iput-wide p2, p1, Lcom/apm/insight/b/g$e;->b:J
 
+    .line 26
     iget-wide p4, p0, Lcom/apm/insight/b/g;->h:J
 
-    .line 20
     iput-wide p4, p1, Lcom/apm/insight/b/g$e;->c:J
 
+    .line 27
     iget-object p4, p0, Lcom/apm/insight/b/g;->f:Lcom/apm/insight/b/g$f;
 
-    .line 21
     invoke-virtual {p4, p1}, Lcom/apm/insight/b/g$f;->a(Lcom/apm/insight/b/g$e;)V
 
     const/4 p1, 0x0
 
+    .line 28
     iput p1, p0, Lcom/apm/insight/b/g;->b:I
 
+    .line 29
     iput-wide p2, p0, Lcom/apm/insight/b/g;->g:J
 
     return-void
@@ -494,7 +511,7 @@
 .method public static synthetic a(Lcom/apm/insight/b/g;ZJ)V
     .locals 9
 
-    .line 47
+    .line 60
     iget v0, p0, Lcom/apm/insight/b/g;->c:I
 
     const/4 v1, 0x1
@@ -511,10 +528,10 @@
 
     const/4 v0, 0x0
 
-    .line 48
+    .line 61
     iput-boolean v0, p0, Lcom/apm/insight/b/g;->o:Z
 
-    .line 49
+    .line 62
     iget-wide v2, p0, Lcom/apm/insight/b/g;->g:J
 
     const-wide/16 v4, 0x0
@@ -523,10 +540,10 @@
 
     if-gez v0, :cond_0
 
-    .line 50
+    .line 63
     iput-wide p2, p0, Lcom/apm/insight/b/g;->g:J
 
-    .line 51
+    .line 64
     :cond_0
     iget-wide v2, p0, Lcom/apm/insight/b/g;->h:J
 
@@ -534,30 +551,30 @@
 
     if-gez v0, :cond_1
 
-    .line 52
+    .line 65
     iput-wide p2, p0, Lcom/apm/insight/b/g;->h:J
 
-    .line 53
+    .line 66
     :cond_1
     iget v0, p0, Lcom/apm/insight/b/g;->i:I
 
     if-gez v0, :cond_2
 
-    .line 54
+    .line 67
     invoke-static {}, Landroid/os/Process;->myTid()I
 
     move-result v0
 
     iput v0, p0, Lcom/apm/insight/b/g;->i:I
 
-    .line 55
+    .line 68
     invoke-static {}, Landroid/os/SystemClock;->currentThreadTimeMillis()J
 
     move-result-wide v2
 
     iput-wide v2, p0, Lcom/apm/insight/b/g;->j:J
 
-    .line 56
+    .line 69
     :cond_2
     iget-wide v2, p0, Lcom/apm/insight/b/g;->g:J
 
@@ -571,7 +588,7 @@
 
     if-lez v6, :cond_7
 
-    .line 57
+    .line 70
     iget-wide v2, p0, Lcom/apm/insight/b/g;->h:J
 
     sub-long v4, p2, v2
@@ -586,51 +603,51 @@
 
     if-eqz p1, :cond_4
 
-    .line 58
+    .line 71
     iget v4, p0, Lcom/apm/insight/b/g;->b:I
 
     if-nez v4, :cond_3
 
+    .line 72
     const-string v0, "no message running"
 
-    .line 59
     invoke-direct {p0, v1, p2, p3, v0}, Lcom/apm/insight/b/g;->a(IJLjava/lang/String;)V
 
     goto :goto_0
 
-    .line 60
+    .line 73
     :cond_3
     iget-object v1, p0, Lcom/apm/insight/b/g;->k:Ljava/lang/String;
 
     invoke-direct {p0, v0, v2, v3, v1}, Lcom/apm/insight/b/g;->a(IJLjava/lang/String;)V
 
-    const/4 v1, 0x1
-
+    .line 74
     const-string v4, "no message running"
 
     const/4 v5, 0x0
+
+    const/4 v1, 0x1
 
     move-object v0, p0
 
     move-wide v2, p2
 
-    .line 61
     invoke-direct/range {v0 .. v5}, Lcom/apm/insight/b/g;->a(IJLjava/lang/String;Z)V
 
     goto :goto_0
 
-    .line 62
+    .line 75
     :cond_4
     iget v0, p0, Lcom/apm/insight/b/g;->b:I
 
     if-nez v0, :cond_5
 
-    const/16 v1, 0x8
-
-    .line 63
+    .line 76
     iget-object v4, p0, Lcom/apm/insight/b/g;->l:Ljava/lang/String;
 
     const/4 v5, 0x1
+
+    const/16 v1, 0x8
 
     move-object v0, p0
 
@@ -640,24 +657,24 @@
 
     goto :goto_0
 
+    .line 77
     :cond_5
-    const/16 v1, 0x9
-
-    .line 64
     iget-object v4, p0, Lcom/apm/insight/b/g;->k:Ljava/lang/String;
 
     const/4 v5, 0x0
 
+    const/16 v1, 0x9
+
     move-object v0, p0
 
     invoke-direct/range {v0 .. v5}, Lcom/apm/insight/b/g;->a(IJLjava/lang/String;Z)V
 
-    const/16 v1, 0x8
-
-    .line 65
+    .line 78
     iget-object v4, p0, Lcom/apm/insight/b/g;->l:Ljava/lang/String;
 
     const/4 v5, 0x1
+
+    const/16 v1, 0x8
 
     move-wide v2, p2
 
@@ -665,13 +682,13 @@
 
     goto :goto_0
 
-    .line 66
+    .line 79
     :cond_6
     iget-object v1, p0, Lcom/apm/insight/b/g;->l:Ljava/lang/String;
 
     invoke-direct {p0, v0, p2, p3, v1}, Lcom/apm/insight/b/g;->a(IJLjava/lang/String;)V
 
-    .line 67
+    .line 80
     :cond_7
     :goto_0
     iput-wide p2, p0, Lcom/apm/insight/b/g;->h:J
@@ -769,28 +786,31 @@
 .method public final a(J)Lcom/apm/insight/b/g$e;
     .locals 3
 
-    .line 22
+    .line 30
     new-instance v0, Lcom/apm/insight/b/g$e;
 
     invoke-direct {v0}, Lcom/apm/insight/b/g$e;-><init>()V
 
+    .line 31
     iget-object v1, p0, Lcom/apm/insight/b/g;->l:Ljava/lang/String;
 
     iput-object v1, v0, Lcom/apm/insight/b/g$e;->h:Ljava/lang/String;
 
+    .line 32
     iget-object v1, p0, Lcom/apm/insight/b/g;->k:Ljava/lang/String;
 
     iput-object v1, v0, Lcom/apm/insight/b/g$e;->i:Ljava/lang/String;
 
+    .line 33
     iget-wide v1, p0, Lcom/apm/insight/b/g;->h:J
 
     sub-long/2addr p1, v1
 
     iput-wide p1, v0, Lcom/apm/insight/b/g$e;->f:J
 
+    .line 34
     iget p1, p0, Lcom/apm/insight/b/g;->i:I
 
-    .line 23
     invoke-static {p1}, Lcom/apm/insight/b/g;->a(I)J
 
     move-result-wide p1
@@ -801,6 +821,7 @@
 
     iput-wide p1, v0, Lcom/apm/insight/b/g$e;->g:J
 
+    .line 35
     iget p1, p0, Lcom/apm/insight/b/g;->b:I
 
     iput p1, v0, Lcom/apm/insight/b/g$e;->e:I
@@ -811,6 +832,7 @@
 .method public final a()V
     .locals 2
 
+    .line 4
     iget-boolean v0, p0, Lcom/apm/insight/b/g;->n:Z
 
     if-eqz v0, :cond_0
@@ -820,39 +842,42 @@
     :cond_0
     const/4 v0, 0x1
 
+    .line 5
     iput-boolean v0, p0, Lcom/apm/insight/b/g;->n:Z
 
     const/16 v0, 0x64
 
+    .line 6
     iput v0, p0, Lcom/apm/insight/b/g;->d:I
 
     const/16 v1, 0x12c
 
+    .line 7
     iput v1, p0, Lcom/apm/insight/b/g;->e:I
 
-    .line 4
+    .line 8
     new-instance v1, Lcom/apm/insight/b/g$f;
 
     invoke-direct {v1, v0}, Lcom/apm/insight/b/g$f;-><init>(I)V
 
     iput-object v1, p0, Lcom/apm/insight/b/g;->f:Lcom/apm/insight/b/g$f;
 
-    .line 5
+    .line 9
     new-instance v0, Lcom/apm/insight/b/g$3;
 
     invoke-direct {v0, p0}, Lcom/apm/insight/b/g$3;-><init>(Lcom/apm/insight/b/g;)V
 
     iput-object v0, p0, Lcom/apm/insight/b/g;->m:Lcom/apm/insight/b/e;
 
-    .line 6
+    .line 10
     invoke-static {}, Lcom/apm/insight/b/h;->a()V
 
+    .line 11
     iget-object v0, p0, Lcom/apm/insight/b/g;->m:Lcom/apm/insight/b/e;
 
-    .line 7
     invoke-static {v0}, Lcom/apm/insight/b/h;->a(Lcom/apm/insight/b/e;)V
 
-    .line 8
+    .line 12
     invoke-static {}, Lcom/apm/insight/b/j;->a()Landroid/os/MessageQueue;
 
     move-result-object v0
@@ -870,10 +895,10 @@
 
     invoke-direct {v0}, Lorg/json/JSONArray;-><init>()V
 
+    .line 4
     :try_start_0
     iget-object v1, p0, Lcom/apm/insight/b/g;->f:Lcom/apm/insight/b/g$f;
 
-    .line 4
     invoke-virtual {v1}, Lcom/apm/insight/b/g$f;->a()Ljava/util/List;
 
     move-result-object v1

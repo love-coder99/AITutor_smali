@@ -3,14 +3,14 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lzh/c;
+.implements Lka/c;
 
 
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "Lkotlin/jvm/internal/Lambda;",
-        "Lzh/c;"
+        "Lka/c;"
     }
 .end annotation
 
@@ -84,9 +84,9 @@
         }
     .end annotation
 
+    .line 1
     iget-object v0, p0, Landroidx/compose/runtime/snapshots/SnapshotStateList$retainAll$1;->$elements:Ljava/util/Collection;
 
-    .line 1
     invoke-interface {p1, v0}, Ljava/util/List;->retainAll(Ljava/util/Collection;)Z
 
     move-result p1

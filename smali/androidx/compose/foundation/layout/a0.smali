@@ -1,310 +1,379 @@
 .class public final Landroidx/compose/foundation/layout/a0;
-.super Landroidx/compose/ui/n;
+.super Ljava/lang/Object;
 .source "SourceFile"
 
 # interfaces
-.implements Landroidx/compose/ui/node/y;
+.implements Landroidx/compose/foundation/layout/c0;
 
 
 # instance fields
-.field public p:Landroidx/compose/foundation/layout/Direction;
+.field public final a:Ljava/lang/String;
 
-.field public q:F
+.field public final b:Landroidx/compose/runtime/ParcelableSnapshotMutableState;
 
 
-# virtual methods
-.method public final synthetic b(Landroidx/compose/ui/layout/p;Landroidx/compose/ui/layout/o;I)I
+# direct methods
+.method public constructor <init>(Landroidx/compose/foundation/layout/F;Ljava/lang/String;)V
     .locals 0
 
     .line 1
-    invoke-static {p0, p1, p2, p3}, Landroidx/compose/ui/node/x;->a(Landroidx/compose/ui/node/y;Landroidx/compose/ui/layout/p;Landroidx/compose/ui/layout/o;I)I
-
-    move-result p1
-
-    return p1
-.end method
-
-.method public final synthetic c(Landroidx/compose/ui/layout/p;Landroidx/compose/ui/layout/o;I)I
-    .locals 0
-
-    .line 1
-    invoke-static {p0, p1, p2, p3}, Landroidx/compose/ui/node/x;->d(Landroidx/compose/ui/node/y;Landroidx/compose/ui/layout/p;Landroidx/compose/ui/layout/o;I)I
-
-    move-result p1
-
-    return p1
-.end method
-
-.method public final synthetic d(Landroidx/compose/ui/layout/p;Landroidx/compose/ui/layout/o;I)I
-    .locals 0
-
-    .line 1
-    invoke-static {p0, p1, p2, p3}, Landroidx/compose/ui/node/x;->b(Landroidx/compose/ui/node/y;Landroidx/compose/ui/layout/p;Landroidx/compose/ui/layout/o;I)I
-
-    move-result p1
-
-    return p1
-.end method
-
-.method public final f(Landroidx/compose/ui/layout/o0;Landroidx/compose/ui/layout/l0;J)Landroidx/compose/ui/layout/n0;
-    .locals 4
-
-    .line 1
-    invoke-static {p3, p4}, Lh2/a;->e(J)Z
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 2
     .line 3
     .line 4
-    move-result v0
+    iput-object p2, p0, Landroidx/compose/foundation/layout/a0;->a:Ljava/lang/String;
 
     .line 5
-    if-eqz v0, :cond_0
+    .line 6
+    sget-object p2, Landroidx/compose/runtime/T;->h:Landroidx/compose/runtime/T;
+
+    .line 7
+    .line 8
+    invoke-static {p1, p2}, Landroidx/compose/runtime/o;->R(Ljava/lang/Object;Landroidx/compose/runtime/A0;)Landroidx/compose/runtime/ParcelableSnapshotMutableState;
+
+    .line 9
+    .line 10
+    .line 11
+    move-result-object p1
+
+    .line 12
+    iput-object p1, p0, Landroidx/compose/foundation/layout/a0;->b:Landroidx/compose/runtime/ParcelableSnapshotMutableState;
+
+    .line 13
+    .line 14
+    return-void
+.end method
+
+
+# virtual methods
+.method public final a(LM0/b;)I
+    .locals 0
+
+    .line 1
+    invoke-virtual {p0}, Landroidx/compose/foundation/layout/a0;->e()Landroidx/compose/foundation/layout/F;
+
+    .line 2
+    .line 3
+    .line 4
+    move-result-object p1
+
+    .line 5
+    iget p1, p1, Landroidx/compose/foundation/layout/F;->b:I
 
     .line 6
     .line 7
-    iget-object v0, p0, Landroidx/compose/foundation/layout/a0;->p:Landroidx/compose/foundation/layout/Direction;
+    return p1
+.end method
+
+.method public final b(LM0/b;)I
+    .locals 0
+
+    .line 1
+    invoke-virtual {p0}, Landroidx/compose/foundation/layout/a0;->e()Landroidx/compose/foundation/layout/F;
+
+    .line 2
+    .line 3
+    .line 4
+    move-result-object p1
+
+    .line 5
+    iget p1, p1, Landroidx/compose/foundation/layout/F;->d:I
+
+    .line 6
+    .line 7
+    return p1
+.end method
+
+.method public final c(LM0/b;Landroidx/compose/ui/unit/LayoutDirection;)I
+    .locals 0
+
+    .line 1
+    invoke-virtual {p0}, Landroidx/compose/foundation/layout/a0;->e()Landroidx/compose/foundation/layout/F;
+
+    .line 2
+    .line 3
+    .line 4
+    move-result-object p1
+
+    .line 5
+    iget p1, p1, Landroidx/compose/foundation/layout/F;->a:I
+
+    .line 6
+    .line 7
+    return p1
+.end method
+
+.method public final d(LM0/b;Landroidx/compose/ui/unit/LayoutDirection;)I
+    .locals 0
+
+    .line 1
+    invoke-virtual {p0}, Landroidx/compose/foundation/layout/a0;->e()Landroidx/compose/foundation/layout/F;
+
+    .line 2
+    .line 3
+    .line 4
+    move-result-object p1
+
+    .line 5
+    iget p1, p1, Landroidx/compose/foundation/layout/F;->c:I
+
+    .line 6
+    .line 7
+    return p1
+.end method
+
+.method public final e()Landroidx/compose/foundation/layout/F;
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, Landroidx/compose/foundation/layout/a0;->b:Landroidx/compose/runtime/ParcelableSnapshotMutableState;
+
+    .line 2
+    .line 3
+    invoke-virtual {v0}, Landroidx/compose/runtime/ParcelableSnapshotMutableState;->getValue()Ljava/lang/Object;
+
+    .line 4
+    .line 5
+    .line 6
+    move-result-object v0
+
+    .line 7
+    check-cast v0, Landroidx/compose/foundation/layout/F;
 
     .line 8
     .line 9
-    sget-object v1, Landroidx/compose/foundation/layout/Direction;->Vertical:Landroidx/compose/foundation/layout/Direction;
+    return-object v0
+.end method
+
+.method public final equals(Ljava/lang/Object;)Z
+    .locals 1
+
+    .line 1
+    if-ne p1, p0, :cond_0
+
+    .line 2
+    .line 3
+    const/4 p1, 0x1
+
+    .line 4
+    return p1
+
+    .line 5
+    :cond_0
+    instance-of v0, p1, Landroidx/compose/foundation/layout/a0;
+
+    .line 6
+    .line 7
+    if-nez v0, :cond_1
+
+    .line 8
+    .line 9
+    const/4 p1, 0x0
 
     .line 10
+    return p1
+
     .line 11
-    if-eq v0, v1, :cond_0
+    :cond_1
+    invoke-virtual {p0}, Landroidx/compose/foundation/layout/a0;->e()Landroidx/compose/foundation/layout/F;
 
     .line 12
     .line 13
-    invoke-static {p3, p4}, Lh2/a;->i(J)I
+    .line 14
+    move-result-object v0
+
+    .line 15
+    check-cast p1, Landroidx/compose/foundation/layout/a0;
+
+    .line 16
+    .line 17
+    invoke-virtual {p1}, Landroidx/compose/foundation/layout/a0;->e()Landroidx/compose/foundation/layout/F;
+
+    .line 18
+    .line 19
+    .line 20
+    move-result-object p1
+
+    .line 21
+    invoke-static {v0, p1}, Lkotlin/jvm/internal/h;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
+
+    .line 22
+    .line 23
+    .line 24
+    move-result p1
+
+    .line 25
+    return p1
+.end method
+
+.method public final f(Landroidx/compose/foundation/layout/F;)V
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, Landroidx/compose/foundation/layout/a0;->b:Landroidx/compose/runtime/ParcelableSnapshotMutableState;
+
+    .line 2
+    .line 3
+    invoke-virtual {v0, p1}, Landroidx/compose/runtime/ParcelableSnapshotMutableState;->setValue(Ljava/lang/Object;)V
+
+    .line 4
+    .line 5
+    .line 6
+    return-void
+.end method
+
+.method public final hashCode()I
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, Landroidx/compose/foundation/layout/a0;->a:Ljava/lang/String;
+
+    .line 2
+    .line 3
+    invoke-virtual {v0}, Ljava/lang/String;->hashCode()I
+
+    .line 4
+    .line 5
+    .line 6
+    move-result v0
+
+    .line 7
+    return v0
+.end method
+
+.method public final toString()Ljava/lang/String;
+    .locals 3
+
+    .line 1
+    new-instance v0, Ljava/lang/StringBuilder;
+
+    .line 2
+    .line 3
+    invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
+
+    .line 4
+    .line 5
+    .line 6
+    iget-object v1, p0, Landroidx/compose/foundation/layout/a0;->a:Ljava/lang/String;
+
+    .line 7
+    .line 8
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 9
+    .line 10
+    .line 11
+    const-string v1, "(left="
+
+    .line 12
+    .line 13
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     .line 14
     .line 15
     .line 16
-    move-result v0
+    invoke-virtual {p0}, Landroidx/compose/foundation/layout/a0;->e()Landroidx/compose/foundation/layout/F;
 
     .line 17
-    int-to-float v0, v0
-
     .line 18
-    iget v1, p0, Landroidx/compose/foundation/layout/a0;->q:F
-
     .line 19
+    move-result-object v1
+
     .line 20
-    mul-float v0, v0, v1
+    iget v1, v1, Landroidx/compose/foundation/layout/F;->a:I
 
     .line 21
     .line 22
-    invoke-static {v0}, Ljava/lang/Math;->round(F)I
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
     .line 23
     .line 24
     .line 25
-    move-result v0
+    const-string v1, ", top="
 
     .line 26
-    invoke-static {p3, p4}, Lh2/a;->k(J)I
-
     .line 27
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
     .line 28
     .line 29
-    move-result v1
-
     .line 30
-    invoke-static {p3, p4}, Lh2/a;->i(J)I
+    invoke-virtual {p0}, Landroidx/compose/foundation/layout/a0;->e()Landroidx/compose/foundation/layout/F;
 
     .line 31
     .line 32
     .line 33
-    move-result v2
+    move-result-object v1
 
     .line 34
-    invoke-static {v0, v1, v2}, Lma/a;->q(III)I
+    iget v1, v1, Landroidx/compose/foundation/layout/F;->b:I
 
     .line 35
     .line 36
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+
     .line 37
-    move-result v0
-
     .line 38
-    move v1, v0
-
     .line 39
-    goto :goto_0
+    const-string v1, ", right="
 
     .line 40
-    :cond_0
-    invoke-static {p3, p4}, Lh2/a;->k(J)I
-
     .line 41
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
     .line 42
     .line 43
-    move-result v0
-
     .line 44
-    invoke-static {p3, p4}, Lh2/a;->i(J)I
+    invoke-virtual {p0}, Landroidx/compose/foundation/layout/a0;->e()Landroidx/compose/foundation/layout/F;
 
     .line 45
     .line 46
     .line 47
-    move-result v1
+    move-result-object v1
 
     .line 48
-    :goto_0
-    invoke-static {p3, p4}, Lh2/a;->d(J)Z
+    iget v1, v1, Landroidx/compose/foundation/layout/F;->c:I
 
     .line 49
     .line 50
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+
     .line 51
-    move-result v2
-
     .line 52
-    if-eqz v2, :cond_1
-
     .line 53
+    const-string v1, ", bottom="
+
     .line 54
-    iget-object v2, p0, Landroidx/compose/foundation/layout/a0;->p:Landroidx/compose/foundation/layout/Direction;
-
     .line 55
-    .line 56
-    sget-object v3, Landroidx/compose/foundation/layout/Direction;->Horizontal:Landroidx/compose/foundation/layout/Direction;
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    .line 56
     .line 57
     .line 58
-    if-eq v2, v3, :cond_1
+    invoke-virtual {p0}, Landroidx/compose/foundation/layout/a0;->e()Landroidx/compose/foundation/layout/F;
 
     .line 59
     .line 60
-    invoke-static {p3, p4}, Lh2/a;->h(J)I
-
     .line 61
-    .line 62
-    .line 63
-    move-result v2
+    move-result-object v1
 
+    .line 62
+    iget v1, v1, Landroidx/compose/foundation/layout/F;->d:I
+
+    .line 63
     .line 64
-    int-to-float v2, v2
+    const/16 v2, 0x29
 
     .line 65
-    iget v3, p0, Landroidx/compose/foundation/layout/a0;->q:F
-
     .line 66
-    .line 67
-    mul-float v2, v2, v3
+    invoke-static {v0, v1, v2}, LB/u;->v(Ljava/lang/StringBuilder;IC)Ljava/lang/String;
 
+    .line 67
     .line 68
     .line 69
-    invoke-static {v2}, Ljava/lang/Math;->round(F)I
+    move-result-object v0
 
     .line 70
-    .line 71
-    .line 72
-    move-result v2
-
-    .line 73
-    invoke-static {p3, p4}, Lh2/a;->j(J)I
-
-    .line 74
-    .line 75
-    .line 76
-    move-result v3
-
-    .line 77
-    invoke-static {p3, p4}, Lh2/a;->h(J)I
-
-    .line 78
-    .line 79
-    .line 80
-    move-result p3
-
-    .line 81
-    invoke-static {v2, v3, p3}, Lma/a;->q(III)I
-
-    .line 82
-    .line 83
-    .line 84
-    move-result p3
-
-    .line 85
-    move p4, p3
-
-    .line 86
-    goto :goto_1
-
-    .line 87
-    :cond_1
-    invoke-static {p3, p4}, Lh2/a;->j(J)I
-
-    .line 88
-    .line 89
-    .line 90
-    move-result v2
-
-    .line 91
-    invoke-static {p3, p4}, Lh2/a;->h(J)I
-
-    .line 92
-    .line 93
-    .line 94
-    move-result p3
-
-    .line 95
-    move p4, p3
-
-    .line 96
-    move p3, v2
-
-    .line 97
-    :goto_1
-    invoke-static {v0, v1, p3, p4}, Lcom/google/android/gms/internal/consent_sdk/z;->a(IIII)J
-
-    .line 98
-    .line 99
-    .line 100
-    move-result-wide p3
-
-    .line 101
-    invoke-interface {p2, p3, p4}, Landroidx/compose/ui/layout/l0;->y(J)Landroidx/compose/ui/layout/a1;
-
-    .line 102
-    .line 103
-    .line 104
-    move-result-object p2
-
-    .line 105
-    iget p3, p2, Landroidx/compose/ui/layout/a1;->b:I
-
-    .line 106
-    .line 107
-    iget p4, p2, Landroidx/compose/ui/layout/a1;->c:I
-
-    .line 108
-    .line 109
-    new-instance v0, Landroidx/compose/foundation/layout/FillNode$measure$1;
-
-    .line 110
-    .line 111
-    invoke-direct {v0, p2}, Landroidx/compose/foundation/layout/FillNode$measure$1;-><init>(Landroidx/compose/ui/layout/a1;)V
-
-    .line 112
-    .line 113
-    .line 114
-    invoke-static {p1, p3, p4, v0}, Landroidx/compose/ui/layout/x;->i(Landroidx/compose/ui/layout/o0;IILzh/c;)Landroidx/compose/ui/layout/n0;
-
-    .line 115
-    .line 116
-    .line 117
-    move-result-object p1
-
-    .line 118
-    return-object p1
-.end method
-
-.method public final synthetic h(Landroidx/compose/ui/layout/p;Landroidx/compose/ui/layout/o;I)I
-    .locals 0
-
-    .line 1
-    invoke-static {p0, p1, p2, p3}, Landroidx/compose/ui/node/x;->c(Landroidx/compose/ui/node/y;Landroidx/compose/ui/layout/p;Landroidx/compose/ui/layout/o;I)I
-
-    move-result p1
-
-    return p1
+    return-object v0
 .end method

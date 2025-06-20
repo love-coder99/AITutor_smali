@@ -77,9 +77,9 @@
 .method public static a(Ljava/lang/String;)Lcom/apm/insight/d;
     .locals 1
 
+    .line 11
     sget-object v0, Lcom/apm/insight/d;->c:Ljava/util/concurrent/ConcurrentHashMap;
 
-    .line 10
     invoke-virtual {v0, p0}, Ljava/util/concurrent/ConcurrentHashMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object p0
@@ -92,7 +92,7 @@
 .method public static a()Ljava/lang/Object;
     .locals 1
 
-    .line 1
+    .line 3
     sget-object v0, Lcom/apm/insight/d;->a:Lcom/apm/insight/MonitorCrash;
 
     return-object v0
@@ -101,7 +101,7 @@
 .method public static synthetic a(Lcom/apm/insight/d;)Lorg/json/JSONObject;
     .locals 0
 
-    .line 3
+    .line 1
     invoke-direct {p0}, Lcom/apm/insight/d;->d()Lorg/json/JSONObject;
 
     move-result-object p0
@@ -112,19 +112,20 @@
 .method public static a(Landroid/content/Context;Lcom/apm/insight/MonitorCrash;)V
     .locals 3
 
+    .line 4
     sput-object p1, Lcom/apm/insight/d;->a:Lcom/apm/insight/MonitorCrash;
 
-    .line 4
+    .line 5
     new-instance v0, Lcom/apm/insight/d;
 
     invoke-direct {v0, p1}, Lcom/apm/insight/d;-><init>(Lcom/apm/insight/MonitorCrash;)V
 
-    .line 5
+    .line 6
     invoke-static {}, Lcom/apm/insight/e;->a()Lcom/apm/insight/nativecrash/b;
 
     move-result-object v1
 
-    .line 6
+    .line 7
     new-instance v2, Lcom/apm/insight/d$1;
 
     invoke-direct {v2, v0, p1, v1}, Lcom/apm/insight/d$1;-><init>(Lcom/apm/insight/d;Lcom/apm/insight/MonitorCrash;Lcom/apm/insight/nativecrash/b;)V
@@ -137,19 +138,19 @@
 .method public static a(Lcom/apm/insight/MonitorCrash;)V
     .locals 2
 
-    .line 7
+    .line 8
     new-instance v0, Lcom/apm/insight/d;
 
     invoke-direct {v0, p0}, Lcom/apm/insight/d;-><init>(Lcom/apm/insight/MonitorCrash;)V
 
-    .line 8
+    .line 9
     iget-object v1, p0, Lcom/apm/insight/MonitorCrash;->mConfig:Lcom/apm/insight/MonitorCrash$Config;
 
     if-eqz v1, :cond_0
 
+    .line 10
     sget-object v1, Lcom/apm/insight/d;->c:Ljava/util/concurrent/ConcurrentHashMap;
 
-    .line 9
     iget-object p0, p0, Lcom/apm/insight/MonitorCrash;->mConfig:Lcom/apm/insight/MonitorCrash$Config;
 
     iget-object p0, p0, Lcom/apm/insight/MonitorCrash$Config;->mAid:Ljava/lang/String;
@@ -162,6 +163,8 @@
 
 .method private d()Lorg/json/JSONObject;
     .locals 8
+    .annotation build Landroidx/annotation/Nullable;
+    .end annotation
 
     .line 1
     new-instance v0, Lorg/json/JSONObject;
@@ -678,10 +681,12 @@
 # virtual methods
 .method public final a([Ljava/lang/StackTraceElement;Ljava/lang/Throwable;)Lorg/json/JSONArray;
     .locals 1
+    .annotation build Landroidx/annotation/Nullable;
+    .end annotation
 
     const/4 v0, 0x0
 
-    .line 11
+    .line 12
     invoke-virtual {p0, p1, p2, v0}, Lcom/apm/insight/d;->a([Ljava/lang/StackTraceElement;Ljava/lang/Throwable;Ljava/lang/String;)Lorg/json/JSONArray;
 
     move-result-object p1
@@ -691,10 +696,12 @@
 
 .method public final a([Ljava/lang/StackTraceElement;Ljava/lang/Throwable;Ljava/lang/String;)Lorg/json/JSONArray;
     .locals 6
+    .annotation build Landroidx/annotation/Nullable;
+    .end annotation
 
+    .line 13
     iget-object v0, p0, Lcom/apm/insight/d;->b:Lcom/apm/insight/MonitorCrash;
 
-    .line 12
     iget-object v0, v0, Lcom/apm/insight/MonitorCrash;->mConfig:Lcom/apm/insight/MonitorCrash$Config;
 
     iget-object v0, v0, Lcom/apm/insight/MonitorCrash$Config;->mPackageName:[Ljava/lang/String;
@@ -703,7 +710,7 @@
 
     if-nez v0, :cond_0
 
-    .line 13
+    .line 14
     new-instance p2, Lorg/json/JSONArray;
 
     invoke-direct {p2}, Lorg/json/JSONArray;-><init>()V
@@ -731,7 +738,7 @@
 
     goto :goto_1
 
-    .line 14
+    .line 15
     :cond_1
     invoke-static {p1, v0}, Lcom/apm/insight/l/m;->a([Ljava/lang/StackTraceElement;[Ljava/lang/String;)Lorg/json/JSONArray;
 
@@ -739,9 +746,9 @@
 
     if-eqz p3, :cond_3
 
+    .line 16
     iget-object v0, p0, Lcom/apm/insight/d;->b:Lcom/apm/insight/MonitorCrash;
 
-    .line 15
     iget-object v0, v0, Lcom/apm/insight/MonitorCrash;->mConfig:Lcom/apm/insight/MonitorCrash$Config;
 
     iget-object v0, v0, Lcom/apm/insight/MonitorCrash$Config;->mThreadList:[Ljava/lang/String;
@@ -754,9 +761,9 @@
 
     if-eqz v0, :cond_3
 
+    .line 17
     iget-object v0, p0, Lcom/apm/insight/d;->b:Lcom/apm/insight/MonitorCrash;
 
-    .line 16
     iget-object v0, v0, Lcom/apm/insight/MonitorCrash;->mConfig:Lcom/apm/insight/MonitorCrash$Config;
 
     iget-object v0, v0, Lcom/apm/insight/MonitorCrash$Config;->mThreadList:[Ljava/lang/String;
@@ -770,21 +777,21 @@
 
     aget-object v4, v0, v3
 
-    .line 17
+    .line 18
     invoke-static {v4, p3}, Landroid/text/TextUtils;->equals(Ljava/lang/CharSequence;Ljava/lang/CharSequence;)Z
 
     move-result v4
 
     if-eqz v4, :cond_2
 
-    .line 18
+    .line 19
     new-instance v4, Lcom/apm/insight/l/m$a;
 
     array-length v5, p1
 
     invoke-direct {v4, v1, v5}, Lcom/apm/insight/l/m$a;-><init>(II)V
 
-    .line 19
+    .line 20
     invoke-virtual {v4}, Lcom/apm/insight/l/m$a;->a()Lorg/json/JSONObject;
 
     move-result-object v4
@@ -809,9 +816,9 @@
 .method public final a([Ljava/lang/String;)Lorg/json/JSONArray;
     .locals 3
 
+    .line 21
     iget-object v0, p0, Lcom/apm/insight/d;->b:Lcom/apm/insight/MonitorCrash;
 
-    .line 20
     invoke-virtual {v0}, Lcom/apm/insight/MonitorCrash;->config()Lcom/apm/insight/MonitorCrash$Config;
 
     move-result-object v0
@@ -820,7 +827,7 @@
 
     if-nez v0, :cond_0
 
-    .line 21
+    .line 22
     new-instance v0, Lorg/json/JSONArray;
 
     invoke-direct {v0}, Lorg/json/JSONArray;-><init>()V
@@ -843,10 +850,10 @@
 
     return-object p1
 
+    .line 23
     :cond_0
     iget-object v0, p0, Lcom/apm/insight/d;->b:Lcom/apm/insight/MonitorCrash;
 
-    .line 22
     iget-object v0, v0, Lcom/apm/insight/MonitorCrash;->mConfig:Lcom/apm/insight/MonitorCrash$Config;
 
     iget-object v0, v0, Lcom/apm/insight/MonitorCrash$Config;->mPackageName:[Ljava/lang/String;
@@ -861,15 +868,15 @@
 .method public final a(Lcom/apm/insight/CrashType;Lorg/json/JSONArray;)Lorg/json/JSONObject;
     .locals 3
 
-    .line 25
+    .line 26
     new-instance v0, Lorg/json/JSONObject;
 
     invoke-direct {v0}, Lorg/json/JSONObject;-><init>()V
 
+    .line 27
     :try_start_0
     const-string v1, "header"
 
-    .line 26
     invoke-direct {p0}, Lcom/apm/insight/d;->d()Lorg/json/JSONObject;
 
     move-result-object v2
@@ -878,23 +885,24 @@
 
     if-eqz p1, :cond_1
 
+    .line 28
     const-string v1, "custom"
 
+    .line 29
     iget-object v2, p0, Lcom/apm/insight/d;->b:Lcom/apm/insight/MonitorCrash;
 
-    .line 27
     iget-object v2, v2, Lcom/apm/insight/MonitorCrash;->mCustomData:Lcom/apm/insight/AttachUserData;
 
     if-eqz v2, :cond_0
 
-    .line 28
+    .line 30
     invoke-interface {v2, p1}, Lcom/apm/insight/AttachUserData;->getUserData(Lcom/apm/insight/CrashType;)Ljava/util/Map;
 
     move-result-object p1
 
     if-eqz p1, :cond_0
 
-    .line 29
+    .line 31
     new-instance v2, Lorg/json/JSONObject;
 
     invoke-direct {v2, p1}, Lorg/json/JSONObject;-><init>(Ljava/util/Map;)V
@@ -904,13 +912,14 @@
     :cond_0
     const/4 v2, 0x0
 
-    .line 30
+    .line 32
     :goto_0
     invoke-virtual {v0, v1, v2}, Lorg/json/JSONObject;->put(Ljava/lang/String;Ljava/lang/Object;)Lorg/json/JSONObject;
 
+    .line 33
     const-string p1, "filters"
 
-    .line 31
+    .line 34
     new-instance v1, Lorg/json/JSONObject;
 
     iget-object v2, p0, Lcom/apm/insight/d;->b:Lcom/apm/insight/MonitorCrash;
@@ -919,13 +928,13 @@
 
     invoke-direct {v1, v2}, Lorg/json/JSONObject;-><init>(Ljava/util/Map;)V
 
-    .line 32
+    .line 35
     invoke-virtual {v0, p1, v1}, Lorg/json/JSONObject;->put(Ljava/lang/String;Ljava/lang/Object;)Lorg/json/JSONObject;
 
+    .line 36
     :cond_1
     const-string p1, "line_num"
 
-    .line 33
     invoke-virtual {v0, p1, p2}, Lorg/json/JSONObject;->put(Ljava/lang/String;Ljava/lang/Object;)Lorg/json/JSONObject;
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
@@ -955,9 +964,9 @@
 .method public final a(Ljava/lang/String;Ljava/lang/String;)Z
     .locals 2
 
+    .line 24
     iget-object v0, p0, Lcom/apm/insight/d;->b:Lcom/apm/insight/MonitorCrash;
 
-    .line 23
     invoke-virtual {v0}, Lcom/apm/insight/MonitorCrash;->config()Lcom/apm/insight/MonitorCrash$Config;
 
     move-result-object v0
@@ -970,10 +979,10 @@
 
     return p1
 
+    .line 25
     :cond_0
     iget-object v0, p0, Lcom/apm/insight/d;->b:Lcom/apm/insight/MonitorCrash;
 
-    .line 24
     iget-object v0, v0, Lcom/apm/insight/MonitorCrash;->mConfig:Lcom/apm/insight/MonitorCrash$Config;
 
     iget-object v0, v0, Lcom/apm/insight/MonitorCrash$Config;->mSoList:[Ljava/lang/String;

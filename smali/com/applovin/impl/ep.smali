@@ -103,14 +103,15 @@
 
     const/4 p1, 0x6
 
+    .line 9
     new-array p2, p1, [B
 
     const/4 v0, 0x0
 
-    .line 9
+    .line 10
     invoke-virtual {p0, p2, v0, p1}, Lcom/applovin/impl/ah;->a([BII)V
 
-    .line 10
+    .line 11
     invoke-static {p2}, Lcom/applovin/impl/ep;->a([B)J
 
     move-result-wide p0
@@ -126,7 +127,7 @@
 
     const/4 v0, 0x0
 
-    .line 11
+    .line 12
     aget-byte v0, p0, v0
 
     int-to-long v0, v0

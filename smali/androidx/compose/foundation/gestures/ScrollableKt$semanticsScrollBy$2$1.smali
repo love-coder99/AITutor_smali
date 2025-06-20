@@ -3,7 +3,7 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lzh/e;
+.implements Lka/e;
 
 
 # annotations
@@ -19,7 +19,7 @@
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "Lkotlin/jvm/internal/Lambda;",
-        "Lzh/e;"
+        "Lka/e;"
     }
 .end annotation
 
@@ -31,7 +31,7 @@
         "",
         "currentValue",
         "<anonymous parameter 1>",
-        "Lqh/r;",
+        "LX9/j;",
         "invoke",
         "(FF)V",
         "<anonymous>"
@@ -46,22 +46,22 @@
 
 
 # instance fields
-.field final synthetic $$this$scroll:Landroidx/compose/foundation/gestures/x;
+.field final synthetic $$this$scroll:Landroidx/compose/foundation/gestures/z;
 
 .field final synthetic $previousValue:Lkotlin/jvm/internal/Ref$FloatRef;
 
-.field final synthetic $this_semanticsScrollBy:Landroidx/compose/foundation/gestures/l0;
+.field final synthetic $this_semanticsScrollBy:Landroidx/compose/foundation/gestures/N;
 
 
 # direct methods
-.method public constructor <init>(Lkotlin/jvm/internal/Ref$FloatRef;Landroidx/compose/foundation/gestures/l0;Landroidx/compose/foundation/gestures/x;)V
+.method public constructor <init>(Lkotlin/jvm/internal/Ref$FloatRef;Landroidx/compose/foundation/gestures/N;Landroidx/compose/foundation/gestures/z;)V
     .locals 0
 
     iput-object p1, p0, Landroidx/compose/foundation/gestures/ScrollableKt$semanticsScrollBy$2$1;->$previousValue:Lkotlin/jvm/internal/Ref$FloatRef;
 
-    iput-object p2, p0, Landroidx/compose/foundation/gestures/ScrollableKt$semanticsScrollBy$2$1;->$this_semanticsScrollBy:Landroidx/compose/foundation/gestures/l0;
+    iput-object p2, p0, Landroidx/compose/foundation/gestures/ScrollableKt$semanticsScrollBy$2$1;->$this_semanticsScrollBy:Landroidx/compose/foundation/gestures/N;
 
-    iput-object p3, p0, Landroidx/compose/foundation/gestures/ScrollableKt$semanticsScrollBy$2$1;->$$this$scroll:Landroidx/compose/foundation/gestures/x;
+    iput-object p3, p0, Landroidx/compose/foundation/gestures/ScrollableKt$semanticsScrollBy$2$1;->$$this$scroll:Landroidx/compose/foundation/gestures/z;
 
     const/4 p1, 0x2
 
@@ -90,7 +90,7 @@
 
     invoke-virtual {p0, p1, p2}, Landroidx/compose/foundation/gestures/ScrollableKt$semanticsScrollBy$2$1;->invoke(FF)V
 
-    sget-object p1, Lqh/r;->a:Lqh/r;
+    sget-object p1, LX9/j;->a:LX9/j;
 
     return-object p1
 .end method
@@ -98,53 +98,56 @@
 .method public final invoke(FF)V
     .locals 4
 
+    .line 2
     iget-object p2, p0, Landroidx/compose/foundation/gestures/ScrollableKt$semanticsScrollBy$2$1;->$previousValue:Lkotlin/jvm/internal/Ref$FloatRef;
 
-    .line 2
     iget p2, p2, Lkotlin/jvm/internal/Ref$FloatRef;->element:F
 
     sub-float/2addr p1, p2
 
-    iget-object p2, p0, Landroidx/compose/foundation/gestures/ScrollableKt$semanticsScrollBy$2$1;->$this_semanticsScrollBy:Landroidx/compose/foundation/gestures/l0;
-
-    iget-object v0, p0, Landroidx/compose/foundation/gestures/ScrollableKt$semanticsScrollBy$2$1;->$$this$scroll:Landroidx/compose/foundation/gestures/x;
-
     .line 3
-    invoke-virtual {p2, p1}, Landroidx/compose/foundation/gestures/l0;->c(F)F
+    iget-object p2, p0, Landroidx/compose/foundation/gestures/ScrollableKt$semanticsScrollBy$2$1;->$this_semanticsScrollBy:Landroidx/compose/foundation/gestures/N;
+
+    .line 4
+    iget-object v0, p0, Landroidx/compose/foundation/gestures/ScrollableKt$semanticsScrollBy$2$1;->$$this$scroll:Landroidx/compose/foundation/gestures/z;
+
+    .line 5
+    invoke-virtual {p2, p1}, Landroidx/compose/foundation/gestures/N;->c(F)F
 
     move-result p1
 
-    invoke-virtual {p2, p1}, Landroidx/compose/foundation/gestures/l0;->g(F)J
+    invoke-virtual {p2, p1}, Landroidx/compose/foundation/gestures/N;->g(F)J
 
     move-result-wide v1
 
-    check-cast v0, Landroidx/compose/foundation/gestures/k0;
+    .line 6
+    check-cast v0, Landroidx/compose/foundation/gestures/M;
 
-    .line 4
-    iget-object p1, v0, Landroidx/compose/foundation/gestures/k0;->a:Landroidx/compose/foundation/gestures/l0;
+    .line 7
+    iget-object p1, v0, Landroidx/compose/foundation/gestures/M;->a:Landroidx/compose/foundation/gestures/N;
 
-    .line 5
-    iget-object v0, p1, Landroidx/compose/foundation/gestures/l0;->h:Landroidx/compose/foundation/gestures/a0;
+    .line 8
+    iget-object v0, p1, Landroidx/compose/foundation/gestures/N;->h:Landroidx/compose/foundation/gestures/C;
 
     const/4 v3, 0x1
 
-    .line 6
-    invoke-static {p1, v0, v1, v2, v3}, Landroidx/compose/foundation/gestures/l0;->a(Landroidx/compose/foundation/gestures/l0;Landroidx/compose/foundation/gestures/a0;JI)J
+    .line 9
+    invoke-static {p1, v0, v1, v2, v3}, Landroidx/compose/foundation/gestures/N;->a(Landroidx/compose/foundation/gestures/N;Landroidx/compose/foundation/gestures/C;JI)J
 
     move-result-wide v0
 
-    .line 7
-    invoke-virtual {p2, v0, v1}, Landroidx/compose/foundation/gestures/l0;->f(J)F
+    .line 10
+    invoke-virtual {p2, v0, v1}, Landroidx/compose/foundation/gestures/N;->f(J)F
 
     move-result p1
 
-    invoke-virtual {p2, p1}, Landroidx/compose/foundation/gestures/l0;->c(F)F
+    invoke-virtual {p2, p1}, Landroidx/compose/foundation/gestures/N;->c(F)F
 
     move-result p1
 
+    .line 11
     iget-object p2, p0, Landroidx/compose/foundation/gestures/ScrollableKt$semanticsScrollBy$2$1;->$previousValue:Lkotlin/jvm/internal/Ref$FloatRef;
 
-    .line 8
     iget v0, p2, Lkotlin/jvm/internal/Ref$FloatRef;->element:F
 
     add-float/2addr v0, p1

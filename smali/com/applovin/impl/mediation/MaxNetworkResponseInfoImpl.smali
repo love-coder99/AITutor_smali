@@ -25,6 +25,10 @@
 # direct methods
 .method public constructor <init>(Lcom/applovin/mediation/MaxNetworkResponseInfo$AdLoadState;Lcom/applovin/mediation/MaxMediatedNetworkInfo;Landroid/os/Bundle;ZJLjava/lang/String;Lcom/applovin/mediation/MaxError;)V
     .locals 0
+    .param p8    # Lcom/applovin/mediation/MaxError;
+        .annotation build Landroidx/annotation/Nullable;
+        .end annotation
+    .end param
 
     .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -409,48 +413,68 @@
 .method public getAdLoadState()Lcom/applovin/mediation/MaxNetworkResponseInfo$AdLoadState;
     .locals 1
 
+    .line 1
     iget-object v0, p0, Lcom/applovin/impl/mediation/MaxNetworkResponseInfoImpl;->a:Lcom/applovin/mediation/MaxNetworkResponseInfo$AdLoadState;
 
+    .line 2
+    .line 3
     return-object v0
 .end method
 
 .method public getBCode()Ljava/lang/String;
     .locals 1
 
+    .line 1
     iget-object v0, p0, Lcom/applovin/impl/mediation/MaxNetworkResponseInfoImpl;->f:Ljava/lang/String;
 
+    .line 2
+    .line 3
     return-object v0
 .end method
 
 .method public getCredentials()Landroid/os/Bundle;
     .locals 1
 
+    .line 1
     iget-object v0, p0, Lcom/applovin/impl/mediation/MaxNetworkResponseInfoImpl;->c:Landroid/os/Bundle;
 
+    .line 2
+    .line 3
     return-object v0
 .end method
 
 .method public getError()Lcom/applovin/mediation/MaxError;
     .locals 1
+    .annotation build Landroidx/annotation/Nullable;
+    .end annotation
 
+    .line 1
     iget-object v0, p0, Lcom/applovin/impl/mediation/MaxNetworkResponseInfoImpl;->g:Lcom/applovin/mediation/MaxError;
 
+    .line 2
+    .line 3
     return-object v0
 .end method
 
 .method public getLatencyMillis()J
     .locals 2
 
+    .line 1
     iget-wide v0, p0, Lcom/applovin/impl/mediation/MaxNetworkResponseInfoImpl;->e:J
 
+    .line 2
+    .line 3
     return-wide v0
 .end method
 
 .method public getMediatedNetwork()Lcom/applovin/mediation/MaxMediatedNetworkInfo;
     .locals 1
 
+    .line 1
     iget-object v0, p0, Lcom/applovin/impl/mediation/MaxNetworkResponseInfoImpl;->b:Lcom/applovin/mediation/MaxMediatedNetworkInfo;
 
+    .line 2
+    .line 3
     return-object v0
 .end method
 
@@ -702,13 +726,18 @@
 .method public isBidding()Z
     .locals 1
 
+    .line 1
     iget-boolean v0, p0, Lcom/applovin/impl/mediation/MaxNetworkResponseInfoImpl;->d:Z
 
+    .line 2
+    .line 3
     return v0
 .end method
 
 .method public toString()Ljava/lang/String;
     .locals 3
+    .annotation build Landroidx/annotation/NonNull;
+    .end annotation
 
     .line 1
     new-instance v0, Ljava/lang/StringBuilder;

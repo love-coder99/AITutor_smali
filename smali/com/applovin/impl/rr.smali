@@ -105,18 +105,18 @@
 
     move-result-object v4
 
+    .line 9
     iget-object v5, p0, Lcom/applovin/impl/rr;->b:Ljava/lang/ref/WeakReference;
 
-    .line 9
     invoke-virtual {v5}, Ljava/lang/ref/Reference;->get()Ljava/lang/Object;
 
     move-result-object v5
 
     check-cast v5, Lcom/applovin/impl/rr$a;
 
+    .line 10
     const-string v6, "applovin"
 
-    .line 10
     invoke-virtual {v6, v2}, Ljava/lang/String;->equalsIgnoreCase(Ljava/lang/String;)Z
 
     move-result v2
@@ -133,9 +133,9 @@
 
     if-eqz v5, :cond_9
 
+    .line 11
     const-string v2, "/track_click"
 
-    .line 11
     invoke-virtual {v2, v4}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
     move-result v2
@@ -147,10 +147,10 @@
 
     goto/16 :goto_0
 
+    .line 13
     :cond_1
     const-string v2, "/close_ad"
 
-    .line 13
     invoke-virtual {v2, v4}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
     move-result v2
@@ -162,10 +162,10 @@
 
     goto :goto_0
 
+    .line 15
     :cond_2
     const-string v2, "/skip_ad"
 
-    .line 15
     invoke-virtual {v2, v4}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
     move-result v2
@@ -177,10 +177,10 @@
 
     goto :goto_0
 
+    .line 17
     :cond_3
     const-string v2, "/direct_download"
 
-    .line 17
     invoke-virtual {v2, v4}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
     move-result v2
@@ -197,10 +197,10 @@
 
     goto :goto_0
 
+    .line 20
     :cond_4
     const-string v2, "/load_url"
 
-    .line 20
     invoke-virtual {v2, v4}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
     move-result v2
@@ -212,10 +212,10 @@
 
     goto :goto_0
 
+    .line 22
     :cond_5
     const-string v2, "/template_error"
 
-    .line 22
     invoke-virtual {v2, v4}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
     move-result v2
@@ -227,10 +227,10 @@
 
     goto :goto_0
 
+    .line 24
     :cond_6
     const-string v0, "/fully_watched"
 
-    .line 24
     invoke-virtual {v0, v4}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
     move-result v0

@@ -3,14 +3,14 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lzh/a;
+.implements Lka/a;
 
 
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "Lkotlin/jvm/internal/Lambda;",
-        "Lzh/a;"
+        "Lka/a;"
     }
 .end annotation
 
@@ -19,9 +19,9 @@
         "\u0000\u0008\n\u0002\u0018\u0002\n\u0002\u0008\u0003\u0010\u0003\u001a\u00020\u0000H\n\u00a2\u0006\u0004\u0008\u0001\u0010\u0002"
     }
     d2 = {
-        "Landroidx/compose/foundation/text/selection/e0;",
+        "Landroidx/compose/foundation/text/selection/B;",
         "invoke",
-        "()Landroidx/compose/foundation/text/selection/e0;",
+        "()Landroidx/compose/foundation/text/selection/B;",
         "<anonymous>"
     }
     k = 0x3
@@ -62,11 +62,11 @@
 
 
 # virtual methods
-.method public final invoke()Landroidx/compose/foundation/text/selection/e0;
+.method public final invoke()Landroidx/compose/foundation/text/selection/B;
     .locals 1
 
     .line 1
-    sget-object v0, Landroidx/compose/foundation/text/selection/f0;->b:Landroidx/compose/foundation/text/selection/e0;
+    sget-object v0, Landroidx/compose/foundation/text/selection/C;->b:Landroidx/compose/foundation/text/selection/B;
 
     return-object v0
 .end method
@@ -75,7 +75,7 @@
     .locals 1
 
     .line 2
-    invoke-virtual {p0}, Landroidx/compose/foundation/text/selection/TextSelectionColorsKt$LocalTextSelectionColors$1;->invoke()Landroidx/compose/foundation/text/selection/e0;
+    invoke-virtual {p0}, Landroidx/compose/foundation/text/selection/TextSelectionColorsKt$LocalTextSelectionColors$1;->invoke()Landroidx/compose/foundation/text/selection/B;
 
     move-result-object v0
 

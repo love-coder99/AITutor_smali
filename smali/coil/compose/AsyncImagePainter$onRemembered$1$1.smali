@@ -3,7 +3,7 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lzh/a;
+.implements Lka/a;
 
 
 # annotations
@@ -19,7 +19,7 @@
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "Lkotlin/jvm/internal/Lambda;",
-        "Lzh/a;"
+        "Lka/a;"
     }
 .end annotation
 
@@ -28,9 +28,9 @@
         "\u0000\u0008\n\u0002\u0018\u0002\n\u0002\u0008\u0003\u0010\u0003\u001a\u00020\u0000H\n\u00a2\u0006\u0004\u0008\u0001\u0010\u0002"
     }
     d2 = {
-        "Ln5/i;",
+        "LH2/h;",
         "invoke",
-        "()Ln5/i;",
+        "()LH2/h;",
         "<anonymous>"
     }
     k = 0x3
@@ -61,31 +61,32 @@
 
 
 # virtual methods
-.method public bridge synthetic invoke()Ljava/lang/Object;
+.method public final invoke()LH2/h;
     .locals 1
 
+    .line 1
+    iget-object v0, p0, Lcoil/compose/AsyncImagePainter$onRemembered$1$1;->this$0:Lcoil/compose/l;
+
+    .line 2
+    iget-object v0, v0, Lcoil/compose/l;->t:Landroidx/compose/runtime/ParcelableSnapshotMutableState;
+
     .line 3
-    invoke-virtual {p0}, Lcoil/compose/AsyncImagePainter$onRemembered$1$1;->invoke()Ln5/i;
+    invoke-virtual {v0}, Landroidx/compose/runtime/ParcelableSnapshotMutableState;->getValue()Ljava/lang/Object;
 
     move-result-object v0
+
+    check-cast v0, LH2/h;
 
     return-object v0
 .end method
 
-.method public final invoke()Ln5/i;
+.method public bridge synthetic invoke()Ljava/lang/Object;
     .locals 1
 
-    iget-object v0, p0, Lcoil/compose/AsyncImagePainter$onRemembered$1$1;->this$0:Lcoil/compose/l;
-
-    .line 1
-    iget-object v0, v0, Lcoil/compose/l;->t:Landroidx/compose/runtime/ParcelableSnapshotMutableState;
-
-    .line 2
-    invoke-virtual {v0}, Landroidx/compose/runtime/t2;->getValue()Ljava/lang/Object;
+    .line 4
+    invoke-virtual {p0}, Lcoil/compose/AsyncImagePainter$onRemembered$1$1;->invoke()LH2/h;
 
     move-result-object v0
-
-    check-cast v0, Ln5/i;
 
     return-object v0
 .end method

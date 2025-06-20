@@ -32,6 +32,8 @@
     .line 1
     iget-object v0, p0, Lcoil/compose/e;->a:Landroidx/compose/ui/graphics/painter/b;
 
+    .line 2
+    .line 3
     return-object v0
 .end method
 
@@ -60,7 +62,7 @@
 
     iget-object p1, p1, Lcoil/compose/e;->a:Landroidx/compose/ui/graphics/painter/b;
 
-    invoke-static {v1, p1}, Lrb/h;->d(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v1, p1}, Lkotlin/jvm/internal/h;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result p1
 

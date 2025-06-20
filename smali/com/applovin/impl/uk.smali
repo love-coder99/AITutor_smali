@@ -82,33 +82,40 @@
 
     move-wide v1, p1
 
+    .line 2
     iput-wide v1, v0, Lcom/applovin/impl/uk;->a:J
 
     move v1, p3
 
+    .line 3
     iput-boolean v1, v0, Lcom/applovin/impl/uk;->b:Z
 
     move v1, p4
 
+    .line 4
     iput-boolean v1, v0, Lcom/applovin/impl/uk;->c:Z
 
     move v1, p5
 
+    .line 5
     iput-boolean v1, v0, Lcom/applovin/impl/uk;->d:Z
 
     move v1, p6
 
+    .line 6
     iput-boolean v1, v0, Lcom/applovin/impl/uk;->f:Z
 
     move-wide v1, p7
 
+    .line 7
     iput-wide v1, v0, Lcom/applovin/impl/uk;->g:J
 
     move-wide v1, p9
 
+    .line 8
     iput-wide v1, v0, Lcom/applovin/impl/uk;->h:J
 
-    .line 2
+    .line 9
     invoke-static {p11}, Ljava/util/Collections;->unmodifiableList(Ljava/util/List;)Ljava/util/List;
 
     move-result-object v1
@@ -117,22 +124,27 @@
 
     move v1, p12
 
+    .line 10
     iput-boolean v1, v0, Lcom/applovin/impl/uk;->j:Z
 
     move-wide/from16 v1, p13
 
+    .line 11
     iput-wide v1, v0, Lcom/applovin/impl/uk;->k:J
 
     move/from16 v1, p15
 
+    .line 12
     iput v1, v0, Lcom/applovin/impl/uk;->l:I
 
     move/from16 v1, p16
 
+    .line 13
     iput v1, v0, Lcom/applovin/impl/uk;->m:I
 
     move/from16 v1, p17
 
+    .line 14
     iput v1, v0, Lcom/applovin/impl/uk;->n:I
 
     return-void
@@ -141,17 +153,17 @@
 .method private constructor <init>(Landroid/os/Parcel;)V
     .locals 6
 
-    .line 3
+    .line 15
     invoke-direct {p0}, Lcom/applovin/impl/sk;-><init>()V
 
-    .line 4
+    .line 16
     invoke-virtual {p1}, Landroid/os/Parcel;->readLong()J
 
     move-result-wide v0
 
     iput-wide v0, p0, Lcom/applovin/impl/uk;->a:J
 
-    .line 5
+    .line 17
     invoke-virtual {p1}, Landroid/os/Parcel;->readByte()B
 
     move-result v0
@@ -172,7 +184,7 @@
     :goto_0
     iput-boolean v0, p0, Lcom/applovin/impl/uk;->b:Z
 
-    .line 6
+    .line 18
     invoke-virtual {p1}, Landroid/os/Parcel;->readByte()B
 
     move-result v0
@@ -189,7 +201,7 @@
     :goto_1
     iput-boolean v0, p0, Lcom/applovin/impl/uk;->c:Z
 
-    .line 7
+    .line 19
     invoke-virtual {p1}, Landroid/os/Parcel;->readByte()B
 
     move-result v0
@@ -206,7 +218,7 @@
     :goto_2
     iput-boolean v0, p0, Lcom/applovin/impl/uk;->d:Z
 
-    .line 8
+    .line 20
     invoke-virtual {p1}, Landroid/os/Parcel;->readByte()B
 
     move-result v0
@@ -223,26 +235,26 @@
     :goto_3
     iput-boolean v0, p0, Lcom/applovin/impl/uk;->f:Z
 
-    .line 9
+    .line 21
     invoke-virtual {p1}, Landroid/os/Parcel;->readLong()J
 
     move-result-wide v3
 
     iput-wide v3, p0, Lcom/applovin/impl/uk;->g:J
 
-    .line 10
+    .line 22
     invoke-virtual {p1}, Landroid/os/Parcel;->readLong()J
 
     move-result-wide v3
 
     iput-wide v3, p0, Lcom/applovin/impl/uk;->h:J
 
-    .line 11
+    .line 23
     invoke-virtual {p1}, Landroid/os/Parcel;->readInt()I
 
     move-result v0
 
-    .line 12
+    .line 24
     new-instance v3, Ljava/util/ArrayList;
 
     invoke-direct {v3, v0}, Ljava/util/ArrayList;-><init>(I)V
@@ -252,7 +264,7 @@
     :goto_4
     if-ge v4, v0, :cond_4
 
-    .line 13
+    .line 25
     invoke-static {p1}, Lcom/applovin/impl/uk$b;->a(Landroid/os/Parcel;)Lcom/applovin/impl/uk$b;
 
     move-result-object v5
@@ -263,7 +275,7 @@
 
     goto :goto_4
 
-    .line 14
+    .line 26
     :cond_4
     invoke-static {v3}, Ljava/util/Collections;->unmodifiableList(Ljava/util/List;)Ljava/util/List;
 
@@ -271,7 +283,7 @@
 
     iput-object v0, p0, Lcom/applovin/impl/uk;->i:Ljava/util/List;
 
-    .line 15
+    .line 27
     invoke-virtual {p1}, Landroid/os/Parcel;->readByte()B
 
     move-result v0
@@ -283,28 +295,28 @@
     :cond_5
     iput-boolean v1, p0, Lcom/applovin/impl/uk;->j:Z
 
-    .line 16
+    .line 28
     invoke-virtual {p1}, Landroid/os/Parcel;->readLong()J
 
     move-result-wide v0
 
     iput-wide v0, p0, Lcom/applovin/impl/uk;->k:J
 
-    .line 17
+    .line 29
     invoke-virtual {p1}, Landroid/os/Parcel;->readInt()I
 
     move-result v0
 
     iput v0, p0, Lcom/applovin/impl/uk;->l:I
 
-    .line 18
+    .line 30
     invoke-virtual {p1}, Landroid/os/Parcel;->readInt()I
 
     move-result v0
 
     iput v0, p0, Lcom/applovin/impl/uk;->m:I
 
-    .line 19
+    .line 31
     invoke-virtual {p1}, Landroid/os/Parcel;->readInt()I
 
     move-result p1
@@ -317,7 +329,7 @@
 .method public synthetic constructor <init>(Landroid/os/Parcel;Lcom/applovin/impl/uk$a;)V
     .locals 0
 
-    .line 20
+    .line 32
     invoke-direct {p0, p1}, Lcom/applovin/impl/uk;-><init>(Landroid/os/Parcel;)V
 
     return-void

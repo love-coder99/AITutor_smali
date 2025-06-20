@@ -1,5 +1,5 @@
 .class public Landroidx/transition/FragmentTransitionSupport;
-.super Landroidx/fragment/app/l1;
+.super Landroidx/fragment/app/p0;
 .source "SourceFile"
 
 
@@ -37,7 +37,7 @@
     move-result-object v0
 
     .line 5
-    invoke-static {v0}, Landroidx/fragment/app/l1;->isNullOrEmpty(Ljava/util/List;)Z
+    invoke-static {v0}, Landroidx/fragment/app/p0;->isNullOrEmpty(Ljava/util/List;)Z
 
     .line 6
     .line 7
@@ -57,7 +57,7 @@
     move-result-object v0
 
     .line 15
-    invoke-static {v0}, Landroidx/fragment/app/l1;->isNullOrEmpty(Ljava/util/List;)Z
+    invoke-static {v0}, Landroidx/fragment/app/p0;->isNullOrEmpty(Ljava/util/List;)Z
 
     .line 16
     .line 17
@@ -77,7 +77,7 @@
     move-result-object p0
 
     .line 25
-    invoke-static {p0}, Landroidx/fragment/app/l1;->isNullOrEmpty(Ljava/util/List;)Z
+    invoke-static {p0}, Landroidx/fragment/app/p0;->isNullOrEmpty(Ljava/util/List;)Z
 
     .line 26
     .line 27
@@ -143,6 +143,14 @@
 # virtual methods
 .method public addTarget(Ljava/lang/Object;Landroid/view/View;)V
     .locals 0
+    .param p1    # Ljava/lang/Object;
+        .annotation build Landroidx/annotation/NonNull;
+        .end annotation
+    .end param
+    .param p2    # Landroid/view/View;
+        .annotation build Landroidx/annotation/NonNull;
+        .end annotation
+    .end param
 
     .line 1
     if-eqz p1, :cond_0
@@ -164,6 +172,14 @@
 
 .method public addTargets(Ljava/lang/Object;Ljava/util/ArrayList;)V
     .locals 3
+    .param p1    # Ljava/lang/Object;
+        .annotation build Landroidx/annotation/NonNull;
+        .end annotation
+    .end param
+    .param p2    # Ljava/util/ArrayList;
+        .annotation build Landroidx/annotation/NonNull;
+        .end annotation
+    .end param
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -256,7 +272,7 @@
     move-result-object v0
 
     .line 39
-    invoke-static {v0}, Landroidx/fragment/app/l1;->isNullOrEmpty(Ljava/util/List;)Z
+    invoke-static {v0}, Landroidx/fragment/app/p0;->isNullOrEmpty(Ljava/util/List;)Z
 
     .line 40
     .line 41
@@ -311,6 +327,10 @@
 
 .method public animateToEnd(Ljava/lang/Object;)V
     .locals 0
+    .param p1    # Ljava/lang/Object;
+        .annotation build Landroidx/annotation/NonNull;
+        .end annotation
+    .end param
 
     .line 1
     check-cast p1, Landroidx/transition/TransitionSeekController;
@@ -327,6 +347,14 @@
 
 .method public animateToStart(Ljava/lang/Object;Ljava/lang/Runnable;)V
     .locals 0
+    .param p1    # Ljava/lang/Object;
+        .annotation build Landroidx/annotation/NonNull;
+        .end annotation
+    .end param
+    .param p2    # Ljava/lang/Runnable;
+        .annotation build Landroidx/annotation/NonNull;
+        .end annotation
+    .end param
 
     .line 1
     check-cast p1, Landroidx/transition/TransitionSeekController;
@@ -343,6 +371,14 @@
 
 .method public beginDelayedTransition(Landroid/view/ViewGroup;Ljava/lang/Object;)V
     .locals 0
+    .param p1    # Landroid/view/ViewGroup;
+        .annotation build Landroidx/annotation/NonNull;
+        .end annotation
+    .end param
+    .param p2    # Ljava/lang/Object;
+        .annotation build Landroidx/annotation/Nullable;
+        .end annotation
+    .end param
 
     .line 1
     check-cast p2, Landroidx/transition/Transition;
@@ -359,6 +395,10 @@
 
 .method public canHandle(Ljava/lang/Object;)Z
     .locals 0
+    .param p1    # Ljava/lang/Object;
+        .annotation build Landroidx/annotation/NonNull;
+        .end annotation
+    .end param
 
     .line 1
     instance-of p1, p1, Landroidx/transition/Transition;
@@ -370,6 +410,12 @@
 
 .method public cloneTransition(Ljava/lang/Object;)Ljava/lang/Object;
     .locals 0
+    .param p1    # Ljava/lang/Object;
+        .annotation build Landroidx/annotation/Nullable;
+        .end annotation
+    .end param
+    .annotation build Landroidx/annotation/Nullable;
+    .end annotation
 
     .line 1
     if-eqz p1, :cond_0
@@ -401,6 +447,16 @@
 
 .method public controlDelayedTransition(Landroid/view/ViewGroup;Ljava/lang/Object;)Ljava/lang/Object;
     .locals 0
+    .param p1    # Landroid/view/ViewGroup;
+        .annotation build Landroidx/annotation/NonNull;
+        .end annotation
+    .end param
+    .param p2    # Ljava/lang/Object;
+        .annotation build Landroidx/annotation/NonNull;
+        .end annotation
+    .end param
+    .annotation build Landroidx/annotation/Nullable;
+    .end annotation
 
     .line 1
     check-cast p2, Landroidx/transition/Transition;
@@ -429,6 +485,10 @@
 
 .method public isSeekingSupported(Ljava/lang/Object;)Z
     .locals 1
+    .param p1    # Ljava/lang/Object;
+        .annotation build Landroidx/annotation/NonNull;
+        .end annotation
+    .end param
 
     .line 2
     move-object v0, p1
@@ -450,6 +510,20 @@
 
 .method public mergeTransitionsInSequence(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
     .locals 1
+    .param p1    # Ljava/lang/Object;
+        .annotation build Landroidx/annotation/Nullable;
+        .end annotation
+    .end param
+    .param p2    # Ljava/lang/Object;
+        .annotation build Landroidx/annotation/Nullable;
+        .end annotation
+    .end param
+    .param p3    # Ljava/lang/Object;
+        .annotation build Landroidx/annotation/Nullable;
+        .end annotation
+    .end param
+    .annotation build Landroidx/annotation/Nullable;
+    .end annotation
 
     .line 1
     check-cast p1, Landroidx/transition/Transition;
@@ -572,6 +646,20 @@
 
 .method public mergeTransitionsTogether(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
     .locals 1
+    .param p1    # Ljava/lang/Object;
+        .annotation build Landroidx/annotation/Nullable;
+        .end annotation
+    .end param
+    .param p2    # Ljava/lang/Object;
+        .annotation build Landroidx/annotation/Nullable;
+        .end annotation
+    .end param
+    .param p3    # Ljava/lang/Object;
+        .annotation build Landroidx/annotation/Nullable;
+        .end annotation
+    .end param
+    .annotation build Landroidx/annotation/NonNull;
+    .end annotation
 
     .line 1
     new-instance v0, Landroidx/transition/TransitionSet;
@@ -630,6 +718,14 @@
 
 .method public removeTarget(Ljava/lang/Object;Landroid/view/View;)V
     .locals 0
+    .param p1    # Ljava/lang/Object;
+        .annotation build Landroidx/annotation/NonNull;
+        .end annotation
+    .end param
+    .param p2    # Landroid/view/View;
+        .annotation build Landroidx/annotation/NonNull;
+        .end annotation
+    .end param
 
     .line 1
     if-eqz p1, :cond_0
@@ -651,6 +747,10 @@
 
 .method public replaceTargets(Ljava/lang/Object;Ljava/util/ArrayList;Ljava/util/ArrayList;)V
     .locals 4
+    .param p1    # Ljava/lang/Object;
+        .annotation build Landroidx/annotation/NonNull;
+        .end annotation
+    .end param
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -866,6 +966,18 @@
 
 .method public scheduleHideFragmentView(Ljava/lang/Object;Landroid/view/View;Ljava/util/ArrayList;)V
     .locals 1
+    .param p1    # Ljava/lang/Object;
+        .annotation build Landroidx/annotation/NonNull;
+        .end annotation
+    .end param
+    .param p2    # Landroid/view/View;
+        .annotation build Landroidx/annotation/NonNull;
+        .end annotation
+    .end param
+    .param p3    # Ljava/util/ArrayList;
+        .annotation build Landroidx/annotation/NonNull;
+        .end annotation
+    .end param
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -901,6 +1013,34 @@
 
 .method public scheduleRemoveTargets(Ljava/lang/Object;Ljava/lang/Object;Ljava/util/ArrayList;Ljava/lang/Object;Ljava/util/ArrayList;Ljava/lang/Object;Ljava/util/ArrayList;)V
     .locals 10
+    .param p1    # Ljava/lang/Object;
+        .annotation build Landroidx/annotation/NonNull;
+        .end annotation
+    .end param
+    .param p2    # Ljava/lang/Object;
+        .annotation build Landroidx/annotation/Nullable;
+        .end annotation
+    .end param
+    .param p3    # Ljava/util/ArrayList;
+        .annotation build Landroidx/annotation/Nullable;
+        .end annotation
+    .end param
+    .param p4    # Ljava/lang/Object;
+        .annotation build Landroidx/annotation/Nullable;
+        .end annotation
+    .end param
+    .param p5    # Ljava/util/ArrayList;
+        .annotation build Landroidx/annotation/Nullable;
+        .end annotation
+    .end param
+    .param p6    # Ljava/lang/Object;
+        .annotation build Landroidx/annotation/Nullable;
+        .end annotation
+    .end param
+    .param p7    # Ljava/util/ArrayList;
+        .annotation build Landroidx/annotation/Nullable;
+        .end annotation
+    .end param
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -973,6 +1113,10 @@
 
 .method public setCurrentPlayTime(Ljava/lang/Object;F)V
     .locals 6
+    .param p1    # Ljava/lang/Object;
+        .annotation build Landroidx/annotation/NonNull;
+        .end annotation
+    .end param
 
     .line 1
     check-cast p1, Landroidx/transition/TransitionSeekController;
@@ -1068,6 +1212,14 @@
 
 .method public setEpicenter(Ljava/lang/Object;Landroid/graphics/Rect;)V
     .locals 1
+    .param p1    # Ljava/lang/Object;
+        .annotation build Landroidx/annotation/NonNull;
+        .end annotation
+    .end param
+    .param p2    # Landroid/graphics/Rect;
+        .annotation build Landroidx/annotation/NonNull;
+        .end annotation
+    .end param
 
     if-eqz p1, :cond_0
 
@@ -1087,6 +1239,14 @@
 
 .method public setEpicenter(Ljava/lang/Object;Landroid/view/View;)V
     .locals 1
+    .param p1    # Ljava/lang/Object;
+        .annotation build Landroidx/annotation/NonNull;
+        .end annotation
+    .end param
+    .param p2    # Landroid/view/View;
+        .annotation build Landroidx/annotation/Nullable;
+        .end annotation
+    .end param
 
     if-eqz p2, :cond_0
 
@@ -1099,7 +1259,7 @@
     invoke-direct {v0}, Landroid/graphics/Rect;-><init>()V
 
     .line 3
-    invoke-virtual {p0, p2, v0}, Landroidx/fragment/app/l1;->getBoundsOnScreen(Landroid/view/View;Landroid/graphics/Rect;)V
+    invoke-virtual {p0, p2, v0}, Landroidx/fragment/app/p0;->getBoundsOnScreen(Landroid/view/View;Landroid/graphics/Rect;)V
 
     .line 4
     new-instance p2, Landroidx/transition/FragmentTransitionSupport$1;
@@ -1112,8 +1272,24 @@
     return-void
 .end method
 
-.method public setListenerForTransitionEnd(Landroidx/fragment/app/Fragment;Ljava/lang/Object;Li3/d;Ljava/lang/Runnable;)V
+.method public setListenerForTransitionEnd(Landroidx/fragment/app/Fragment;Ljava/lang/Object;Lq1/b;Ljava/lang/Runnable;)V
     .locals 6
+    .param p1    # Landroidx/fragment/app/Fragment;
+        .annotation build Landroidx/annotation/NonNull;
+        .end annotation
+    .end param
+    .param p2    # Ljava/lang/Object;
+        .annotation build Landroidx/annotation/NonNull;
+        .end annotation
+    .end param
+    .param p3    # Lq1/b;
+        .annotation build Landroidx/annotation/NonNull;
+        .end annotation
+    .end param
+    .param p4    # Ljava/lang/Runnable;
+        .annotation build Landroidx/annotation/NonNull;
+        .end annotation
+    .end param
 
     const/4 v4, 0x0
 
@@ -1128,25 +1304,45 @@
     move-object v5, p4
 
     .line 1
-    invoke-virtual/range {v0 .. v5}, Landroidx/transition/FragmentTransitionSupport;->setListenerForTransitionEnd(Landroidx/fragment/app/Fragment;Ljava/lang/Object;Li3/d;Ljava/lang/Runnable;Ljava/lang/Runnable;)V
+    invoke-virtual/range {v0 .. v5}, Landroidx/transition/FragmentTransitionSupport;->setListenerForTransitionEnd(Landroidx/fragment/app/Fragment;Ljava/lang/Object;Lq1/b;Ljava/lang/Runnable;Ljava/lang/Runnable;)V
 
     return-void
 .end method
 
-.method public setListenerForTransitionEnd(Landroidx/fragment/app/Fragment;Ljava/lang/Object;Li3/d;Ljava/lang/Runnable;Ljava/lang/Runnable;)V
+.method public setListenerForTransitionEnd(Landroidx/fragment/app/Fragment;Ljava/lang/Object;Lq1/b;Ljava/lang/Runnable;Ljava/lang/Runnable;)V
     .locals 1
+    .param p1    # Landroidx/fragment/app/Fragment;
+        .annotation build Landroidx/annotation/NonNull;
+        .end annotation
+    .end param
+    .param p2    # Ljava/lang/Object;
+        .annotation build Landroidx/annotation/NonNull;
+        .end annotation
+    .end param
+    .param p3    # Lq1/b;
+        .annotation build Landroidx/annotation/NonNull;
+        .end annotation
+    .end param
+    .param p4    # Ljava/lang/Runnable;
+        .annotation build Landroidx/annotation/Nullable;
+        .end annotation
+    .end param
+    .param p5    # Ljava/lang/Runnable;
+        .annotation build Landroidx/annotation/NonNull;
+        .end annotation
+    .end param
 
     .line 2
     check-cast p2, Landroidx/transition/Transition;
 
     .line 3
-    new-instance p1, Lh0/d;
+    new-instance p1, LC7/n;
 
-    const/4 v0, 0x5
+    const/16 v0, 0xd
 
-    invoke-direct {p1, p4, v0, p2, p5}, Lh0/d;-><init>(Ljava/lang/Object;ILjava/lang/Object;Ljava/lang/Object;)V
+    invoke-direct {p1, p4, v0, p2, p5}, LC7/n;-><init>(Ljava/lang/Object;ILjava/lang/Object;Ljava/lang/Object;)V
 
-    invoke-virtual {p3, p1}, Li3/d;->a(Li3/c;)V
+    invoke-virtual {p3, p1}, Lq1/b;->a(Lq1/a;)V
 
     .line 4
     new-instance p1, Landroidx/transition/FragmentTransitionSupport$4;
@@ -1160,6 +1356,18 @@
 
 .method public setSharedElementTargets(Ljava/lang/Object;Landroid/view/View;Ljava/util/ArrayList;)V
     .locals 4
+    .param p1    # Ljava/lang/Object;
+        .annotation build Landroidx/annotation/NonNull;
+        .end annotation
+    .end param
+    .param p2    # Landroid/view/View;
+        .annotation build Landroidx/annotation/NonNull;
+        .end annotation
+    .end param
+    .param p3    # Ljava/util/ArrayList;
+        .annotation build Landroidx/annotation/NonNull;
+        .end annotation
+    .end param
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -1217,7 +1425,7 @@
 
     .line 22
     .line 23
-    invoke-static {v0, v3}, Landroidx/fragment/app/l1;->bfsAddViewChildren(Ljava/util/List;Landroid/view/View;)V
+    invoke-static {v0, v3}, Landroidx/fragment/app/p0;->bfsAddViewChildren(Ljava/util/List;Landroid/view/View;)V
 
     .line 24
     .line 25
@@ -1250,6 +1458,18 @@
 
 .method public swapSharedElementTargets(Ljava/lang/Object;Ljava/util/ArrayList;Ljava/util/ArrayList;)V
     .locals 1
+    .param p1    # Ljava/lang/Object;
+        .annotation build Landroidx/annotation/Nullable;
+        .end annotation
+    .end param
+    .param p2    # Ljava/util/ArrayList;
+        .annotation build Landroidx/annotation/Nullable;
+        .end annotation
+    .end param
+    .param p3    # Ljava/util/ArrayList;
+        .annotation build Landroidx/annotation/Nullable;
+        .end annotation
+    .end param
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -1309,6 +1529,12 @@
 
 .method public wrapTransitionInSet(Ljava/lang/Object;)Ljava/lang/Object;
     .locals 1
+    .param p1    # Ljava/lang/Object;
+        .annotation build Landroidx/annotation/Nullable;
+        .end annotation
+    .end param
+    .annotation build Landroidx/annotation/Nullable;
+    .end annotation
 
     .line 1
     if-nez p1, :cond_0

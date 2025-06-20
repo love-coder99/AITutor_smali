@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <item type="id" name="CropOverlayView" />
+    <item type="id" name="CropProgressBar" />
+    <item type="id" name="ImageView_image" />
     <item type="id" name="accessibility_action_clickable_span" />
     <item type="id" name="accessibility_custom_action_0" />
     <item type="id" name="accessibility_custom_action_1" />
@@ -62,6 +65,7 @@
     <item type="id" name="ad_view_container" />
     <item type="id" name="ads" />
     <item type="id" name="ads_badge_loading" />
+    <item type="id" name="ads_container" />
     <item type="id" name="al_exo_ad_overlay" />
     <item type="id" name="al_exo_artwork" />
     <item type="id" name="al_exo_audio_track" />
@@ -184,6 +188,8 @@
     <item type="id" name="content" />
     <item type="id" name="contentPanel" />
     <item type="id" name="coordinator" />
+    <item type="id" name="cropImageView" />
+    <item type="id" name="crop_image_menu_crop" />
     <item type="id" name="customPanel" />
     <item type="id" name="dataBinding" />
     <item type="id" name="date_picker_actions" />
@@ -223,6 +229,11 @@
     <item type="id" name="hide_ime_id" />
     <item type="id" name="hide_in_inspector_tag" />
     <item type="id" name="home" />
+    <item type="id" name="ic_flip_24" />
+    <item type="id" name="ic_flip_24_horizontally" />
+    <item type="id" name="ic_flip_24_vertically" />
+    <item type="id" name="ic_rotate_left_24" />
+    <item type="id" name="ic_rotate_right_24" />
     <item type="id" name="icon" />
     <item type="id" name="icon_group" />
     <item type="id" name="image" />
@@ -523,11 +534,9 @@
     <item type="id" name="notification_background" />
     <item type="id" name="notification_main_column" />
     <item type="id" name="notification_main_column_container" />
-    <item type="id" name="off" />
     <item type="id" name="offline_dialog_advertiser_name" />
     <item type="id" name="offline_dialog_image" />
     <item type="id" name="offline_dialog_text" />
-    <item type="id" name="on" />
     <item type="id" name="onAttachStateChangeListener" />
     <item type="id" name="onDateChanged" />
     <item type="id" name="open_search_bar_text_view" />
@@ -546,7 +555,6 @@
     <item type="id" name="open_search_view_toolbar_container" />
     <item type="id" name="parentPanel" />
     <item type="id" name="parent_matrix" />
-    <item type="id" name="pdfView" />
     <item type="id" name="pooling_container_listener_holder_tag" />
     <item type="id" name="pressed" />
     <item type="id" name="progress_bar" />
@@ -600,11 +608,13 @@
     <item type="id" name="tag_accessibility_clickable_spans" />
     <item type="id" name="tag_accessibility_heading" />
     <item type="id" name="tag_accessibility_pane_title" />
+    <item type="id" name="tag_compat_insets_dispatch" />
     <item type="id" name="tag_on_apply_window_listener" />
     <item type="id" name="tag_on_receive_content_listener" />
     <item type="id" name="tag_on_receive_content_mime_types" />
     <item type="id" name="tag_screen_reader_focusable" />
     <item type="id" name="tag_state_description" />
+    <item type="id" name="tag_system_bar_state_monitor" />
     <item type="id" name="tag_transition_group" />
     <item type="id" name="tag_unhandled_key_event_manager" />
     <item type="id" name="tag_unhandled_key_listeners" />
@@ -647,6 +657,7 @@
     <item type="id" name="video_loading" />
     <item type="id" name="view_offset_helper" />
     <item type="id" name="view_transition" />
+    <item type="id" name="view_tree_disjoint_parent" />
     <item type="id" name="view_tree_lifecycle_owner" />
     <item type="id" name="view_tree_on_back_pressed_dispatcher_owner" />
     <item type="id" name="view_tree_saved_state_registry_owner" />

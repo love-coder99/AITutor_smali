@@ -58,7 +58,7 @@
 .method public a(J)I
     .locals 3
 
-    .line 2
+    .line 4
     iget-wide v0, p0, Lcom/applovin/impl/h8$a;->a:J
 
     cmp-long v2, v0, p1
@@ -88,10 +88,11 @@
     :cond_0
     const/4 p1, 0x0
 
-    .line 3
+    .line 2
     :goto_0
     invoke-static {p1}, Lcom/applovin/impl/b1;->a(Z)V
 
+    .line 3
     iget-wide v0, p0, Lcom/applovin/impl/h8$a;->a:J
 
     return-wide v0

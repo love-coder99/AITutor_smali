@@ -1,30 +1,23 @@
-.class public final Lb0/a;
-.super Ljava/lang/Object;
+.class public final LB0/a;
+.super Landroid/view/ActionMode$Callback2;
 .source "SourceFile"
-
-# interfaces
-.implements Ljava/util/concurrent/Executor;
-
-
-# static fields
-.field public static volatile c:Lb0/a;
 
 
 # instance fields
-.field public final synthetic b:I
+.field public final a:Lv/Y;
 
 
 # direct methods
-.method public synthetic constructor <init>(I)V
+.method public constructor <init>(Lv/Y;)V
     .locals 0
 
     .line 1
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    invoke-direct {p0}, Landroid/view/ActionMode$Callback2;-><init>()V
 
     .line 2
     .line 3
     .line 4
-    iput p1, p0, Lb0/a;->b:I
+    iput-object p1, p0, LB0/a;->a:Lv/Y;
 
     .line 5
     .line 6
@@ -33,41 +26,145 @@
 
 
 # virtual methods
-.method public final execute(Ljava/lang/Runnable;)V
+.method public final onActionItemClicked(Landroid/view/ActionMode;Landroid/view/MenuItem;)Z
     .locals 1
 
     .line 1
-    iget v0, p0, Lb0/a;->b:I
+    iget-object v0, p0, LB0/a;->a:Lv/Y;
 
     .line 2
     .line 3
-    packed-switch v0, :pswitch_data_0
+    invoke-virtual {v0, p1, p2}, Lv/Y;->p(Landroid/view/ActionMode;Landroid/view/MenuItem;)Z
 
     .line 4
     .line 5
     .line 6
-    invoke-interface {p1}, Ljava/lang/Runnable;->run()V
+    move-result p1
 
     .line 7
+    return p1
+.end method
+
+.method public final onCreateActionMode(Landroid/view/ActionMode;Landroid/view/Menu;)Z
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, LB0/a;->a:Lv/Y;
+
+    .line 2
+    .line 3
+    invoke-virtual {v0, p1, p2}, Lv/Y;->r(Landroid/view/ActionMode;Landroid/view/Menu;)V
+
+    .line 4
+    .line 5
+    .line 6
+    const/4 p1, 0x1
+
+    .line 7
+    return p1
+.end method
+
+.method public final onDestroyActionMode(Landroid/view/ActionMode;)V
+    .locals 0
+
+    .line 1
+    iget-object p1, p0, LB0/a;->a:Lv/Y;
+
+    .line 2
+    .line 3
+    iget-object p1, p1, Lv/Y;->c:Ljava/lang/Object;
+
+    .line 4
+    .line 5
+    check-cast p1, Lka/a;
+
+    .line 6
+    .line 7
+    if-eqz p1, :cond_0
+
     .line 8
     .line 9
-    return-void
+    invoke-interface {p1}, Lka/a;->invoke()Ljava/lang/Object;
 
     .line 10
-    :pswitch_0
-    invoke-interface {p1}, Ljava/lang/Runnable;->run()V
-
     .line 11
     .line 12
-    .line 13
+    :cond_0
     return-void
+.end method
 
+.method public final onGetContentRect(Landroid/view/ActionMode;Landroid/view/View;Landroid/graphics/Rect;)V
+    .locals 2
+
+    .line 1
+    iget-object p1, p0, LB0/a;->a:Lv/Y;
+
+    .line 2
+    .line 3
+    iget-object p1, p1, Lv/Y;->d:Ljava/lang/Object;
+
+    .line 4
+    .line 5
+    check-cast p1, Lr0/d;
+
+    .line 6
+    .line 7
+    if-eqz p3, :cond_0
+
+    .line 8
+    .line 9
+    iget p2, p1, Lr0/d;->a:F
+
+    .line 10
+    .line 11
+    float-to-int p2, p2
+
+    .line 12
+    iget v0, p1, Lr0/d;->b:F
+
+    .line 13
     .line 14
-    nop
+    float-to-int v0, v0
 
     .line 15
-    :pswitch_data_0
-    .packed-switch 0x0
-        :pswitch_0
-    .end packed-switch
+    iget v1, p1, Lr0/d;->c:F
+
+    .line 16
+    .line 17
+    float-to-int v1, v1
+
+    .line 18
+    iget p1, p1, Lr0/d;->d:F
+
+    .line 19
+    .line 20
+    float-to-int p1, p1
+
+    .line 21
+    invoke-virtual {p3, p2, v0, v1, p1}, Landroid/graphics/Rect;->set(IIII)V
+
+    .line 22
+    .line 23
+    .line 24
+    :cond_0
+    return-void
+.end method
+
+.method public final onPrepareActionMode(Landroid/view/ActionMode;Landroid/view/Menu;)Z
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, LB0/a;->a:Lv/Y;
+
+    .line 2
+    .line 3
+    invoke-virtual {v0, p1, p2}, Lv/Y;->t(Landroid/view/ActionMode;Landroid/view/Menu;)Z
+
+    .line 4
+    .line 5
+    .line 6
+    move-result p1
+
+    .line 7
+    return p1
 .end method

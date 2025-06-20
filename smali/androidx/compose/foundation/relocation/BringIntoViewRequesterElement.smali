@@ -1,12 +1,12 @@
 .class final Landroidx/compose/foundation/relocation/BringIntoViewRequesterElement;
-.super Landroidx/compose/ui/node/w0;
+.super Landroidx/compose/ui/node/V;
 .source "SourceFile"
 
 
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
-        "Landroidx/compose/ui/node/w0;"
+        "Landroidx/compose/ui/node/V;"
     }
 .end annotation
 
@@ -16,7 +16,7 @@
     }
     d2 = {
         "Landroidx/compose/foundation/relocation/BringIntoViewRequesterElement;",
-        "Landroidx/compose/ui/node/w0;",
+        "Landroidx/compose/ui/node/V;",
         "Landroidx/compose/foundation/relocation/e;",
         "foundation_release"
     }
@@ -26,11 +26,12 @@
         0x8,
         0x0
     }
+    xi = 0x30
 .end annotation
 
 
 # instance fields
-.field public final c:Landroidx/compose/foundation/relocation/b;
+.field public final a:Landroidx/compose/foundation/relocation/b;
 
 
 # direct methods
@@ -43,7 +44,7 @@
     .line 2
     .line 3
     .line 4
-    iput-object p1, p0, Landroidx/compose/foundation/relocation/BringIntoViewRequesterElement;->c:Landroidx/compose/foundation/relocation/b;
+    iput-object p1, p0, Landroidx/compose/foundation/relocation/BringIntoViewRequesterElement;->a:Landroidx/compose/foundation/relocation/b;
 
     .line 5
     .line 6
@@ -72,15 +73,15 @@
 
     .line 8
     .line 9
-    iget-object p1, p1, Landroidx/compose/foundation/relocation/BringIntoViewRequesterElement;->c:Landroidx/compose/foundation/relocation/b;
+    iget-object p1, p1, Landroidx/compose/foundation/relocation/BringIntoViewRequesterElement;->a:Landroidx/compose/foundation/relocation/b;
 
     .line 10
     .line 11
-    iget-object v0, p0, Landroidx/compose/foundation/relocation/BringIntoViewRequesterElement;->c:Landroidx/compose/foundation/relocation/b;
+    iget-object v0, p0, Landroidx/compose/foundation/relocation/BringIntoViewRequesterElement;->a:Landroidx/compose/foundation/relocation/b;
 
     .line 12
     .line 13
-    invoke-static {v0, p1}, Lrb/h;->d(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v0, p1}, Lkotlin/jvm/internal/h;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     .line 14
     .line 15
@@ -115,7 +116,7 @@
     .locals 1
 
     .line 1
-    iget-object v0, p0, Landroidx/compose/foundation/relocation/BringIntoViewRequesterElement;->c:Landroidx/compose/foundation/relocation/b;
+    iget-object v0, p0, Landroidx/compose/foundation/relocation/BringIntoViewRequesterElement;->a:Landroidx/compose/foundation/relocation/b;
 
     .line 2
     .line 3
@@ -143,7 +144,7 @@
     .line 4
     .line 5
     .line 6
-    iget-object v1, p0, Landroidx/compose/foundation/relocation/BringIntoViewRequesterElement;->c:Landroidx/compose/foundation/relocation/b;
+    iget-object v1, p0, Landroidx/compose/foundation/relocation/BringIntoViewRequesterElement;->a:Landroidx/compose/foundation/relocation/b;
 
     .line 7
     .line 8
@@ -178,17 +179,17 @@
 
     .line 10
     .line 11
-    iget-object v0, v0, Landroidx/compose/foundation/relocation/c;->a:Landroidx/compose/runtime/collection/e;
+    iget-object v0, v0, Landroidx/compose/foundation/relocation/c;->a:Landroidx/compose/runtime/collection/d;
 
     .line 12
     .line 13
-    invoke-virtual {v0, p1}, Landroidx/compose/runtime/collection/e;->p(Ljava/lang/Object;)Z
+    invoke-virtual {v0, p1}, Landroidx/compose/runtime/collection/d;->p(Ljava/lang/Object;)Z
 
     .line 14
     .line 15
     .line 16
     :cond_0
-    iget-object v0, p0, Landroidx/compose/foundation/relocation/BringIntoViewRequesterElement;->c:Landroidx/compose/foundation/relocation/b;
+    iget-object v0, p0, Landroidx/compose/foundation/relocation/BringIntoViewRequesterElement;->a:Landroidx/compose/foundation/relocation/b;
 
     .line 17
     .line 18
@@ -207,11 +208,11 @@
 
     .line 24
     .line 25
-    iget-object v1, v1, Landroidx/compose/foundation/relocation/c;->a:Landroidx/compose/runtime/collection/e;
+    iget-object v1, v1, Landroidx/compose/foundation/relocation/c;->a:Landroidx/compose/runtime/collection/d;
 
     .line 26
     .line 27
-    invoke-virtual {v1, p1}, Landroidx/compose/runtime/collection/e;->b(Ljava/lang/Object;)V
+    invoke-virtual {v1, p1}, Landroidx/compose/runtime/collection/d;->b(Ljava/lang/Object;)V
 
     .line 28
     .line 29

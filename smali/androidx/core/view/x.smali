@@ -1,11 +1,17 @@
-.class public interface abstract Landroidx/core/view/x;
+.class public abstract Landroidx/core/view/X;
 .super Ljava/lang/Object;
 .source "SourceFile"
 
-# interfaces
-.implements Landroidx/core/view/w;
 
+# direct methods
+.method public static a(Landroid/view/View;Landroid/view/PointerIcon;)V
+    .locals 0
 
-# virtual methods
-.method public abstract onNestedScroll(Landroid/view/View;IIIII[I)V
+    .line 1
+    invoke-virtual {p0, p1}, Landroid/view/View;->setPointerIcon(Landroid/view/PointerIcon;)V
+
+    .line 2
+    .line 3
+    .line 4
+    return-void
 .end method

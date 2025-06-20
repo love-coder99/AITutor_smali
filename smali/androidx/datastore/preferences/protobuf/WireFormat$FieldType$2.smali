@@ -9,7 +9,7 @@
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
-    accessFlags = 0x4009
+    accessFlags = 0x4011
     name = null
 .end annotation
 
@@ -37,7 +37,7 @@
     move v4, p4
 
     .line 7
-    invoke-direct/range {v0 .. v5}, Landroidx/datastore/preferences/protobuf/WireFormat$FieldType;-><init>(Ljava/lang/String;ILandroidx/datastore/preferences/protobuf/WireFormat$JavaType;ILandroidx/datastore/preferences/protobuf/l2;)V
+    invoke-direct/range {v0 .. v5}, Landroidx/datastore/preferences/protobuf/WireFormat$FieldType;-><init>(Ljava/lang/String;ILandroidx/datastore/preferences/protobuf/WireFormat$JavaType;ILandroidx/datastore/preferences/protobuf/A0;)V
 
     .line 8
     .line 9

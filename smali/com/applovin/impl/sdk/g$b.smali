@@ -128,7 +128,7 @@
 .method public static synthetic a(Lcom/applovin/impl/sdk/g$b;Lcom/applovin/impl/sdk/g$c;)V
     .locals 0
 
-    .line 2
+    .line 1
     invoke-direct {p0, p1}, Lcom/applovin/impl/sdk/g$b;->a(Lcom/applovin/impl/sdk/g$c;)V
 
     return-void
@@ -144,9 +144,9 @@
 
     iput-wide v0, p0, Lcom/applovin/impl/sdk/g$b;->i:J
 
+    .line 4
     iget-object v0, p0, Lcom/applovin/impl/sdk/g$b;->j:Ljava/util/ArrayDeque;
 
-    .line 4
     invoke-virtual {v0, p1}, Ljava/util/ArrayDeque;->add(Ljava/lang/Object;)Z
 
     return-void
@@ -157,7 +157,7 @@
 .method public a()Ljava/lang/String;
     .locals 1
 
-    .line 1
+    .line 2
     iget-object v0, p0, Lcom/applovin/impl/sdk/g$b;->a:Ljava/lang/String;
 
     return-object v0
@@ -166,56 +166,77 @@
 .method public b()Ljava/lang/String;
     .locals 1
 
+    .line 1
     iget-object v0, p0, Lcom/applovin/impl/sdk/g$b;->d:Ljava/lang/String;
 
+    .line 2
+    .line 3
     return-object v0
 .end method
 
 .method public c()Ljava/lang/String;
     .locals 1
 
+    .line 1
     iget-object v0, p0, Lcom/applovin/impl/sdk/g$b;->c:Ljava/lang/String;
 
+    .line 2
+    .line 3
     return-object v0
 .end method
 
 .method public d()Ljava/lang/String;
     .locals 1
 
+    .line 1
     iget-object v0, p0, Lcom/applovin/impl/sdk/g$b;->e:Ljava/lang/String;
 
+    .line 2
+    .line 3
     return-object v0
 .end method
 
 .method public e()Ljava/lang/String;
     .locals 1
 
+    .line 1
     iget-object v0, p0, Lcom/applovin/impl/sdk/g$b;->f:Ljava/lang/String;
 
+    .line 2
+    .line 3
     return-object v0
 .end method
 
 .method public f()Ljava/lang/String;
     .locals 1
 
+    .line 1
     iget-object v0, p0, Lcom/applovin/impl/sdk/g$b;->g:Ljava/lang/String;
 
+    .line 2
+    .line 3
     return-object v0
 .end method
 
 .method public g()Ljava/lang/String;
     .locals 1
 
+    .line 1
     iget-object v0, p0, Lcom/applovin/impl/sdk/g$b;->b:Ljava/lang/String;
 
+    .line 2
+    .line 3
     return-object v0
 .end method
 
 .method public h()I
     .locals 1
 
+    .line 1
     iget v0, p0, Lcom/applovin/impl/sdk/g$b;->h:I
 
+    .line 2
+    .line 3
     return v0
 .end method
 

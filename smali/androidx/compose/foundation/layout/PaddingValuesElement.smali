@@ -1,12 +1,12 @@
 .class final Landroidx/compose/foundation/layout/PaddingValuesElement;
-.super Landroidx/compose/ui/node/w0;
+.super Landroidx/compose/ui/node/V;
 .source "SourceFile"
 
 
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
-        "Landroidx/compose/ui/node/w0;"
+        "Landroidx/compose/ui/node/V;"
     }
 .end annotation
 
@@ -16,8 +16,8 @@
     }
     d2 = {
         "Landroidx/compose/foundation/layout/PaddingValuesElement;",
-        "Landroidx/compose/ui/node/w0;",
-        "Landroidx/compose/foundation/layout/r0;",
+        "Landroidx/compose/ui/node/V;",
+        "Landroidx/compose/foundation/layout/O;",
         "foundation-layout_release"
     }
     k = 0x1
@@ -26,15 +26,16 @@
         0x8,
         0x0
     }
+    xi = 0x30
 .end annotation
 
 
 # instance fields
-.field public final c:Landroidx/compose/foundation/layout/p0;
+.field public final a:Landroidx/compose/foundation/layout/M;
 
 
 # direct methods
-.method public constructor <init>(Landroidx/compose/foundation/layout/p0;)V
+.method public constructor <init>(Landroidx/compose/foundation/layout/M;)V
     .locals 0
 
     .line 1
@@ -43,7 +44,7 @@
     .line 2
     .line 3
     .line 4
-    iput-object p1, p0, Landroidx/compose/foundation/layout/PaddingValuesElement;->c:Landroidx/compose/foundation/layout/p0;
+    iput-object p1, p0, Landroidx/compose/foundation/layout/PaddingValuesElement;->a:Landroidx/compose/foundation/layout/M;
 
     .line 5
     .line 6
@@ -87,15 +88,15 @@
 
     .line 13
     :cond_1
-    iget-object v0, p0, Landroidx/compose/foundation/layout/PaddingValuesElement;->c:Landroidx/compose/foundation/layout/p0;
+    iget-object v0, p0, Landroidx/compose/foundation/layout/PaddingValuesElement;->a:Landroidx/compose/foundation/layout/M;
 
     .line 14
     .line 15
-    iget-object p1, p1, Landroidx/compose/foundation/layout/PaddingValuesElement;->c:Landroidx/compose/foundation/layout/p0;
+    iget-object p1, p1, Landroidx/compose/foundation/layout/PaddingValuesElement;->a:Landroidx/compose/foundation/layout/M;
 
     .line 16
     .line 17
-    invoke-static {v0, p1}, Lrb/h;->d(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v0, p1}, Lkotlin/jvm/internal/h;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     .line 18
     .line 19
@@ -110,7 +111,7 @@
     .locals 1
 
     .line 1
-    iget-object v0, p0, Landroidx/compose/foundation/layout/PaddingValuesElement;->c:Landroidx/compose/foundation/layout/p0;
+    iget-object v0, p0, Landroidx/compose/foundation/layout/PaddingValuesElement;->a:Landroidx/compose/foundation/layout/M;
 
     .line 2
     .line 3
@@ -129,7 +130,7 @@
     .locals 2
 
     .line 1
-    new-instance v0, Landroidx/compose/foundation/layout/r0;
+    new-instance v0, Landroidx/compose/foundation/layout/O;
 
     .line 2
     .line 3
@@ -138,11 +139,11 @@
     .line 4
     .line 5
     .line 6
-    iget-object v1, p0, Landroidx/compose/foundation/layout/PaddingValuesElement;->c:Landroidx/compose/foundation/layout/p0;
+    iget-object v1, p0, Landroidx/compose/foundation/layout/PaddingValuesElement;->a:Landroidx/compose/foundation/layout/M;
 
     .line 7
     .line 8
-    iput-object v1, v0, Landroidx/compose/foundation/layout/r0;->p:Landroidx/compose/foundation/layout/p0;
+    iput-object v1, v0, Landroidx/compose/foundation/layout/O;->p:Landroidx/compose/foundation/layout/M;
 
     .line 9
     .line 10
@@ -153,15 +154,15 @@
     .locals 1
 
     .line 1
-    check-cast p1, Landroidx/compose/foundation/layout/r0;
+    check-cast p1, Landroidx/compose/foundation/layout/O;
 
     .line 2
     .line 3
-    iget-object v0, p0, Landroidx/compose/foundation/layout/PaddingValuesElement;->c:Landroidx/compose/foundation/layout/p0;
+    iget-object v0, p0, Landroidx/compose/foundation/layout/PaddingValuesElement;->a:Landroidx/compose/foundation/layout/M;
 
     .line 4
     .line 5
-    iput-object v0, p1, Landroidx/compose/foundation/layout/r0;->p:Landroidx/compose/foundation/layout/p0;
+    iput-object v0, p1, Landroidx/compose/foundation/layout/O;->p:Landroidx/compose/foundation/layout/M;
 
     .line 6
     .line 7

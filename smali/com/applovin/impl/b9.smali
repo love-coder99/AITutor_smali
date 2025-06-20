@@ -59,18 +59,19 @@
 
     move-result p0
 
+    .line 19
     sget v0, Lcom/applovin/impl/b9;->i:I
 
     if-ne p0, v0, :cond_0
 
     const/4 p0, 0x0
 
-    .line 19
+    .line 20
     invoke-static {p0}, Ljava/lang/Float;->floatToIntBits(F)I
 
     move-result p0
 
-    .line 20
+    .line 21
     :cond_0
     invoke-virtual {p1, p0}, Ljava/nio/ByteBuffer;->putInt(I)Ljava/nio/ByteBuffer;
 
@@ -94,9 +95,9 @@
 
     sub-int v2, v1, v0
 
+    .line 3
     iget-object v3, p0, Lcom/applovin/impl/z1;->b:Lcom/applovin/impl/p1$a;
 
-    .line 3
     iget v3, v3, Lcom/applovin/impl/p1$a;->c:I
 
     const/high16 v4, 0x20000000

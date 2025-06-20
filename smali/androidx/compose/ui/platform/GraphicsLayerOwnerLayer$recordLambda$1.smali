@@ -3,14 +3,14 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lzh/c;
+.implements Lka/c;
 
 
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "Lkotlin/jvm/internal/Lambda;",
-        "Lzh/c;"
+        "Lka/c;"
     }
 .end annotation
 
@@ -19,10 +19,10 @@
         "\u0000\u000c\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0008\u0003\u0010\u0004\u001a\u00020\u0001*\u00020\u0000H\n\u00a2\u0006\u0004\u0008\u0002\u0010\u0003"
     }
     d2 = {
-        "Lo1/h;",
-        "Lqh/r;",
+        "Ls0/e;",
+        "LX9/j;",
         "invoke",
-        "(Lo1/h;)V",
+        "(Ls0/e;)V",
         "<anonymous>"
     }
     k = 0x3
@@ -35,14 +35,14 @@
 
 
 # instance fields
-.field final synthetic this$0:Landroidx/compose/ui/platform/r1;
+.field final synthetic this$0:Landroidx/compose/ui/platform/h0;
 
 
 # direct methods
-.method public constructor <init>(Landroidx/compose/ui/platform/r1;)V
+.method public constructor <init>(Landroidx/compose/ui/platform/h0;)V
     .locals 0
 
-    iput-object p1, p0, Landroidx/compose/ui/platform/GraphicsLayerOwnerLayer$recordLambda$1;->this$0:Landroidx/compose/ui/platform/r1;
+    iput-object p1, p0, Landroidx/compose/ui/platform/GraphicsLayerOwnerLayer$recordLambda$1;->this$0:Landroidx/compose/ui/platform/h0;
 
     const/4 p1, 0x1
 
@@ -57,44 +57,47 @@
     .locals 0
 
     .line 1
-    check-cast p1, Lo1/h;
+    check-cast p1, Ls0/e;
 
-    invoke-virtual {p0, p1}, Landroidx/compose/ui/platform/GraphicsLayerOwnerLayer$recordLambda$1;->invoke(Lo1/h;)V
+    invoke-virtual {p0, p1}, Landroidx/compose/ui/platform/GraphicsLayerOwnerLayer$recordLambda$1;->invoke(Ls0/e;)V
 
-    sget-object p1, Lqh/r;->a:Lqh/r;
+    sget-object p1, LX9/j;->a:LX9/j;
 
     return-object p1
 .end method
 
-.method public final invoke(Lo1/h;)V
+.method public final invoke(Ls0/e;)V
     .locals 2
 
-    iget-object v0, p0, Landroidx/compose/ui/platform/GraphicsLayerOwnerLayer$recordLambda$1;->this$0:Landroidx/compose/ui/platform/r1;
-
     .line 2
-    invoke-interface {p1}, Lo1/h;->U()Lo1/b;
-
-    move-result-object v1
-
-    invoke-virtual {v1}, Lo1/b;->a()Landroidx/compose/ui/graphics/t;
-
-    move-result-object v1
+    iget-object v0, p0, Landroidx/compose/ui/platform/GraphicsLayerOwnerLayer$recordLambda$1;->this$0:Landroidx/compose/ui/platform/h0;
 
     .line 3
-    iget-object v0, v0, Landroidx/compose/ui/platform/r1;->f:Lzh/e;
+    invoke-interface {p1}, Ls0/e;->U()Lcom/google/android/gms/internal/measurement/c;
+
+    move-result-object v1
+
+    invoke-virtual {v1}, Lcom/google/android/gms/internal/measurement/c;->r()Landroidx/compose/ui/graphics/t;
+
+    move-result-object v1
+
+    .line 4
+    iget-object v0, v0, Landroidx/compose/ui/platform/h0;->f:Lka/e;
 
     if-eqz v0, :cond_0
 
-    .line 4
-    invoke-interface {p1}, Lo1/h;->U()Lo1/b;
+    .line 5
+    invoke-interface {p1}, Ls0/e;->U()Lcom/google/android/gms/internal/measurement/c;
 
     move-result-object p1
 
-    .line 5
-    iget-object p1, p1, Lo1/b;->b:Landroidx/compose/ui/graphics/layer/b;
-
     .line 6
-    invoke-interface {v0, v1, p1}, Lzh/e;->invoke(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    iget-object p1, p1, Lcom/google/android/gms/internal/measurement/c;->d:Ljava/lang/Object;
+
+    check-cast p1, Landroidx/compose/ui/graphics/layer/a;
+
+    .line 7
+    invoke-interface {v0, v1, p1}, Lka/e;->invoke(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     :cond_0
     return-void

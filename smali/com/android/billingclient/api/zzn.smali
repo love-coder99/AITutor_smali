@@ -122,6 +122,8 @@
 # virtual methods
 .method public final zzd()Lcom/android/billingclient/api/PurchasesUpdatedListener;
     .locals 1
+    .annotation build Landroidx/annotation/Nullable;
+    .end annotation
 
     iget-object v0, p0, Lcom/android/billingclient/api/zzn;->zzb:Lcom/android/billingclient/api/PurchasesUpdatedListener;
 

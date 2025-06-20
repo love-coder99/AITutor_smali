@@ -201,6 +201,7 @@
 .method private a()V
     .locals 6
 
+    .line 9
     iget-object v0, p0, Lcom/applovin/impl/rk$a;->e:[F
 
     iget v1, p0, Lcom/applovin/impl/rk$a;->g:F
@@ -211,7 +212,7 @@
 
     float-to-double v3, v1
 
-    .line 8
+    .line 10
     invoke-static {v3, v4}, Ljava/lang/Math;->cos(D)D
 
     move-result-wide v3
@@ -222,7 +223,7 @@
 
     float-to-double v4, v1
 
-    .line 9
+    .line 11
     invoke-static {v4, v5}, Ljava/lang/Math;->sin(D)D
 
     move-result-wide v4
@@ -233,7 +234,7 @@
 
     const/4 v5, 0x0
 
-    .line 10
+    .line 12
     invoke-static/range {v0 .. v5}, Landroid/opengl/Matrix;->setRotateM([FIFFFF)V
 
     return-void
@@ -246,29 +247,29 @@
 
     monitor-enter p0
 
-    .line 5
+    .line 6
     :try_start_0
     iget v0, p1, Landroid/graphics/PointF;->y:F
 
     iput v0, p0, Lcom/applovin/impl/rk$a;->g:F
 
-    .line 6
+    .line 7
     invoke-direct {p0}, Lcom/applovin/impl/rk$a;->a()V
 
+    .line 8
     iget-object v1, p0, Lcom/applovin/impl/rk$a;->f:[F
 
-    .line 7
     iget p1, p1, Landroid/graphics/PointF;->x:F
 
     neg-float v3, p1
 
-    const/4 v2, 0x0
-
-    const/4 v4, 0x0
-
     const/high16 v5, 0x3f800000    # 1.0f
 
     const/4 v6, 0x0
+
+    const/4 v2, 0x0
+
+    const/4 v4, 0x0
 
     invoke-static/range {v1 .. v6}, Landroid/opengl/Matrix;->setRotateM([FIFFFF)V
     :try_end_0
@@ -281,7 +282,10 @@
     :catchall_0
     move-exception p1
 
+    :try_start_1
     monitor-exit p0
+    :try_end_1
+    .catchall {:try_start_1 .. :try_end_1} :catchall_0
 
     throw p1
 .end method
@@ -291,10 +295,10 @@
 
     monitor-enter p0
 
+    .line 3
     :try_start_0
     iget-object v0, p0, Lcom/applovin/impl/rk$a;->d:[F
 
-    .line 3
     array-length v1, v0
 
     const/4 v2, 0x0
@@ -303,9 +307,10 @@
 
     neg-float p1, p2
 
+    .line 4
     iput p1, p0, Lcom/applovin/impl/rk$a;->h:F
 
-    .line 4
+    .line 5
     invoke-direct {p0}, Lcom/applovin/impl/rk$a;->a()V
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
@@ -317,7 +322,10 @@
     :catchall_0
     move-exception p1
 
+    :try_start_1
     monitor-exit p0
+    :try_end_1
+    .catchall {:try_start_1 .. :try_end_1} :catchall_0
 
     throw p1
 .end method
@@ -334,21 +342,21 @@
 
     .line 3
     .line 4
-    const/4 v1, 0x0
-
-    .line 5
     iget-object v2, p0, Lcom/applovin/impl/rk$a;->d:[F
 
+    .line 5
     .line 6
-    .line 7
-    const/4 v3, 0x0
-
-    .line 8
     iget-object v4, p0, Lcom/applovin/impl/rk$a;->f:[F
 
-    .line 9
-    .line 10
+    .line 7
+    .line 8
     const/4 v5, 0x0
+
+    .line 9
+    const/4 v1, 0x0
+
+    .line 10
+    const/4 v3, 0x0
 
     .line 11
     invoke-static/range {v0 .. v5}, Landroid/opengl/Matrix;->multiplyMM([FI[FI[FI)V
@@ -360,21 +368,21 @@
 
     .line 15
     .line 16
-    const/4 v7, 0x0
-
-    .line 17
     iget-object v8, p0, Lcom/applovin/impl/rk$a;->e:[F
 
+    .line 17
     .line 18
-    .line 19
-    const/4 v9, 0x0
-
-    .line 20
     iget-object v10, p0, Lcom/applovin/impl/rk$a;->j:[F
 
-    .line 21
-    .line 22
+    .line 19
+    .line 20
     const/4 v11, 0x0
+
+    .line 21
+    const/4 v7, 0x0
+
+    .line 22
+    const/4 v9, 0x0
 
     .line 23
     invoke-static/range {v6 .. v11}, Landroid/opengl/Matrix;->multiplyMM([FI[FI[FI)V
@@ -399,13 +407,13 @@
 
     .line 32
     .line 33
-    const/4 v1, 0x0
-
-    .line 34
     const/4 v3, 0x0
 
-    .line 35
+    .line 34
     const/4 v5, 0x0
+
+    .line 35
+    const/4 v1, 0x0
 
     .line 36
     invoke-static/range {v0 .. v5}, Landroid/opengl/Matrix;->multiplyMM([FI[FI[FI)V
@@ -495,17 +503,17 @@
 
     .line 14
     .line 15
-    const/4 v1, 0x0
-
-    .line 16
     const v4, 0x3dcccccd    # 0.1f
 
+    .line 16
     .line 17
     .line 18
-    .line 19
     const/high16 v5, 0x42c80000    # 100.0f
 
+    .line 19
     .line 20
+    const/4 v1, 0x0
+
     .line 21
     invoke-static/range {v0 .. v5}, Landroid/opengl/Matrix;->perspectiveM([FIFFFF)V
 
@@ -556,7 +564,10 @@
     move-exception p1
 
     .line 16
+    :try_start_1
     monitor-exit p0
+    :try_end_1
+    .catchall {:try_start_1 .. :try_end_1} :catchall_0
 
     .line 17
     throw p1

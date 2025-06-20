@@ -10,8 +10,12 @@
 .method public constructor <init>()V
     .locals 0
 
+    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
+    .line 2
+    .line 3
+    .line 4
     return-void
 .end method
 
@@ -157,7 +161,7 @@
 
 
 # virtual methods
-.method public final c(Landroidx/camera/core/impl/x;Lm0/j;)Z
+.method public final c(Landroidx/camera/core/impl/w;LR/e;)Z
     .locals 5
 
     .line 1
@@ -222,7 +226,7 @@
 
     .line 27
     .line 28
-    sget-object p1, Lm0/j;->c:Lm0/e;
+    sget-object p1, LR/e;->f:LR/e;
 
     .line 29
     .line 30
@@ -230,7 +234,7 @@
 
     .line 31
     .line 32
-    sget-object p1, Lm0/j;->d:Lm0/e;
+    sget-object p1, LR/e;->g:LR/e;
 
     .line 33
     .line 34
@@ -424,7 +428,7 @@
     .line 120
     :cond_9
     :goto_1
-    sget-object p1, Lm0/j;->c:Lm0/e;
+    sget-object p1, LR/e;->f:LR/e;
 
     .line 121
     .line 122

@@ -99,8 +99,11 @@
 .method public getUniqueId()Ljava/lang/String;
     .locals 1
 
+    .line 1
     iget-object v0, p0, Lcom/applovin/impl/communicator/CommunicatorMessageImpl;->a:Ljava/lang/String;
 
+    .line 2
+    .line 3
     return-object v0
 .end method
 

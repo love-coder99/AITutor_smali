@@ -43,9 +43,9 @@
 .method public a(Lcom/applovin/impl/o9;)V
     .locals 1
 
+    .line 1
     iget-object v0, p0, Lcom/applovin/adview/AppLovinFullscreenActivity$a;->a:Lcom/applovin/adview/AppLovinFullscreenActivity;
 
-    .line 1
     invoke-static {v0, p1}, Lcom/applovin/adview/AppLovinFullscreenActivity;->a(Lcom/applovin/adview/AppLovinFullscreenActivity;Lcom/applovin/impl/o9;)Lcom/applovin/impl/o9;
 
     .line 2

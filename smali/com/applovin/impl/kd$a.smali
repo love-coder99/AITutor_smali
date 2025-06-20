@@ -142,14 +142,19 @@
     .line 7
     invoke-direct {p0, p1, p2}, Ljava/lang/Exception;-><init>(Ljava/lang/String;Ljava/lang/Throwable;)V
 
+    .line 8
     iput-object p3, p0, Lcom/applovin/impl/kd$a;->a:Ljava/lang/String;
 
+    .line 9
     iput-boolean p4, p0, Lcom/applovin/impl/kd$a;->b:Z
 
+    .line 10
     iput-object p5, p0, Lcom/applovin/impl/kd$a;->c:Lcom/applovin/impl/jd;
 
+    .line 11
     iput-object p6, p0, Lcom/applovin/impl/kd$a;->d:Ljava/lang/String;
 
+    .line 12
     iput-object p7, p0, Lcom/applovin/impl/kd$a;->f:Lcom/applovin/impl/kd$a;
 
     return-void
@@ -158,15 +163,15 @@
 .method private a(Lcom/applovin/impl/kd$a;)Lcom/applovin/impl/kd$a;
     .locals 9
 
-    .line 6
+    .line 7
     new-instance v8, Lcom/applovin/impl/kd$a;
 
-    .line 7
+    .line 8
     invoke-virtual {p0}, Ljava/lang/Throwable;->getMessage()Ljava/lang/String;
 
     move-result-object v1
 
-    .line 8
+    .line 9
     invoke-virtual {p0}, Ljava/lang/Throwable;->getCause()Ljava/lang/Throwable;
 
     move-result-object v2
@@ -204,6 +209,7 @@
 
     if-gez p0, :cond_0
 
+    .line 2
     const-string v0, "neg_"
 
     goto :goto_0
@@ -211,7 +217,7 @@
     :cond_0
     const-string v0, ""
 
-    .line 2
+    .line 3
     :goto_0
     new-instance v1, Ljava/lang/StringBuilder;
 
@@ -221,7 +227,7 @@
 
     invoke-virtual {v1, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    .line 3
+    .line 4
     invoke-static {p0}, Ljava/lang/Math;->abs(I)I
 
     move-result p0
@@ -238,12 +244,12 @@
 .method private static a(Ljava/lang/Throwable;)Ljava/lang/String;
     .locals 1
 
-    .line 4
+    .line 5
     instance-of v0, p0, Landroid/media/MediaCodec$CodecException;
 
     if-eqz v0, :cond_0
 
-    .line 5
+    .line 6
     check-cast p0, Landroid/media/MediaCodec$CodecException;
 
     invoke-virtual {p0}, Landroid/media/MediaCodec$CodecException;->getDiagnosticInfo()Ljava/lang/String;

@@ -224,18 +224,18 @@
 
     .line 80
     .line 81
-    sget-object v13, Landroidx/datastore/preferences/protobuf/WireFormat$JavaType;->BOOLEAN:Landroidx/datastore/preferences/protobuf/WireFormat$JavaType;
+    const/4 v13, 0x7
 
     .line 82
+    sget-object v4, Landroidx/datastore/preferences/protobuf/WireFormat$JavaType;->BOOLEAN:Landroidx/datastore/preferences/protobuf/WireFormat$JavaType;
+
     .line 83
-    const-string v4, "BOOL"
-
     .line 84
-    .line 85
-    const/4 v6, 0x7
+    const-string v6, "BOOL"
 
+    .line 85
     .line 86
-    invoke-direct {v15, v4, v6, v13, v3}, Landroidx/datastore/preferences/protobuf/WireFormat$FieldType;-><init>(Ljava/lang/String;ILandroidx/datastore/preferences/protobuf/WireFormat$JavaType;I)V
+    invoke-direct {v15, v6, v13, v4, v3}, Landroidx/datastore/preferences/protobuf/WireFormat$FieldType;-><init>(Ljava/lang/String;ILandroidx/datastore/preferences/protobuf/WireFormat$JavaType;I)V
 
     .line 87
     .line 88
@@ -248,19 +248,19 @@
 
     .line 92
     .line 93
-    sget-object v13, Landroidx/datastore/preferences/protobuf/WireFormat$JavaType;->STRING:Landroidx/datastore/preferences/protobuf/WireFormat$JavaType;
+    const/16 v6, 0x8
 
     .line 94
     .line 95
-    const-string v6, "STRING"
+    sget-object v13, Landroidx/datastore/preferences/protobuf/WireFormat$JavaType;->STRING:Landroidx/datastore/preferences/protobuf/WireFormat$JavaType;
 
     .line 96
     .line 97
-    const/16 v3, 0x8
+    const-string v3, "STRING"
 
     .line 98
     .line 99
-    invoke-direct {v4, v6, v3, v13, v8}, Landroidx/datastore/preferences/protobuf/WireFormat$FieldType$1;-><init>(Ljava/lang/String;ILandroidx/datastore/preferences/protobuf/WireFormat$JavaType;I)V
+    invoke-direct {v4, v3, v6, v13, v8}, Landroidx/datastore/preferences/protobuf/WireFormat$FieldType$1;-><init>(Ljava/lang/String;ILandroidx/datastore/preferences/protobuf/WireFormat$JavaType;I)V
 
     .line 100
     .line 101
@@ -269,7 +269,7 @@
 
     .line 103
     .line 104
-    new-instance v6, Landroidx/datastore/preferences/protobuf/WireFormat$FieldType$2;
+    new-instance v3, Landroidx/datastore/preferences/protobuf/WireFormat$FieldType$2;
 
     .line 105
     .line 106
@@ -277,7 +277,7 @@
 
     .line 107
     .line 108
-    const-string v3, "GROUP"
+    const-string v6, "GROUP"
 
     .line 109
     .line 110
@@ -285,16 +285,16 @@
 
     .line 111
     .line 112
-    invoke-direct {v6, v3, v8, v13, v10}, Landroidx/datastore/preferences/protobuf/WireFormat$FieldType$2;-><init>(Ljava/lang/String;ILandroidx/datastore/preferences/protobuf/WireFormat$JavaType;I)V
+    invoke-direct {v3, v6, v8, v13, v10}, Landroidx/datastore/preferences/protobuf/WireFormat$FieldType$2;-><init>(Ljava/lang/String;ILandroidx/datastore/preferences/protobuf/WireFormat$JavaType;I)V
 
     .line 113
     .line 114
     .line 115
-    sput-object v6, Landroidx/datastore/preferences/protobuf/WireFormat$FieldType;->GROUP:Landroidx/datastore/preferences/protobuf/WireFormat$FieldType;
+    sput-object v3, Landroidx/datastore/preferences/protobuf/WireFormat$FieldType;->GROUP:Landroidx/datastore/preferences/protobuf/WireFormat$FieldType;
 
     .line 116
     .line 117
-    new-instance v3, Landroidx/datastore/preferences/protobuf/WireFormat$FieldType$3;
+    new-instance v6, Landroidx/datastore/preferences/protobuf/WireFormat$FieldType$3;
 
     .line 118
     .line 119
@@ -306,19 +306,19 @@
 
     .line 122
     .line 123
-    move-object/from16 v16, v6
+    move-object/from16 v16, v3
 
     .line 124
     .line 125
-    const/4 v6, 0x2
+    const/4 v3, 0x2
 
     .line 126
-    invoke-direct {v3, v8, v10, v13, v6}, Landroidx/datastore/preferences/protobuf/WireFormat$FieldType$3;-><init>(Ljava/lang/String;ILandroidx/datastore/preferences/protobuf/WireFormat$JavaType;I)V
+    invoke-direct {v6, v8, v10, v13, v3}, Landroidx/datastore/preferences/protobuf/WireFormat$FieldType$3;-><init>(Ljava/lang/String;ILandroidx/datastore/preferences/protobuf/WireFormat$JavaType;I)V
 
     .line 127
     .line 128
     .line 129
-    sput-object v3, Landroidx/datastore/preferences/protobuf/WireFormat$FieldType;->MESSAGE:Landroidx/datastore/preferences/protobuf/WireFormat$FieldType;
+    sput-object v6, Landroidx/datastore/preferences/protobuf/WireFormat$FieldType;->MESSAGE:Landroidx/datastore/preferences/protobuf/WireFormat$FieldType;
 
     .line 130
     .line 131
@@ -326,23 +326,23 @@
 
     .line 132
     .line 133
-    sget-object v13, Landroidx/datastore/preferences/protobuf/WireFormat$JavaType;->BYTE_STRING:Landroidx/datastore/preferences/protobuf/WireFormat$JavaType;
+    const/16 v13, 0xb
 
     .line 134
     .line 135
-    const-string v10, "BYTES"
+    sget-object v10, Landroidx/datastore/preferences/protobuf/WireFormat$JavaType;->BYTE_STRING:Landroidx/datastore/preferences/protobuf/WireFormat$JavaType;
 
     .line 136
     .line 137
-    move-object/from16 v17, v3
+    move-object/from16 v17, v6
 
     .line 138
     .line 139
-    const/16 v3, 0xb
+    const-string v6, "BYTES"
 
     .line 140
     .line 141
-    invoke-direct {v8, v10, v3, v13, v6}, Landroidx/datastore/preferences/protobuf/WireFormat$FieldType$4;-><init>(Ljava/lang/String;ILandroidx/datastore/preferences/protobuf/WireFormat$JavaType;I)V
+    invoke-direct {v8, v6, v13, v10, v3}, Landroidx/datastore/preferences/protobuf/WireFormat$FieldType$4;-><init>(Ljava/lang/String;ILandroidx/datastore/preferences/protobuf/WireFormat$JavaType;I)V
 
     .line 142
     .line 143
@@ -351,43 +351,43 @@
 
     .line 145
     .line 146
-    new-instance v6, Landroidx/datastore/preferences/protobuf/WireFormat$FieldType;
+    new-instance v3, Landroidx/datastore/preferences/protobuf/WireFormat$FieldType;
 
     .line 147
     .line 148
-    const-string v10, "UINT32"
+    const-string v6, "UINT32"
 
     .line 149
     .line 150
-    const/16 v13, 0xc
+    const/16 v10, 0xc
 
     .line 151
     .line 152
-    const/4 v3, 0x0
+    const/4 v13, 0x0
 
     .line 153
-    invoke-direct {v6, v10, v13, v11, v3}, Landroidx/datastore/preferences/protobuf/WireFormat$FieldType;-><init>(Ljava/lang/String;ILandroidx/datastore/preferences/protobuf/WireFormat$JavaType;I)V
+    invoke-direct {v3, v6, v10, v11, v13}, Landroidx/datastore/preferences/protobuf/WireFormat$FieldType;-><init>(Ljava/lang/String;ILandroidx/datastore/preferences/protobuf/WireFormat$JavaType;I)V
 
     .line 154
     .line 155
     .line 156
-    sput-object v6, Landroidx/datastore/preferences/protobuf/WireFormat$FieldType;->UINT32:Landroidx/datastore/preferences/protobuf/WireFormat$FieldType;
+    sput-object v3, Landroidx/datastore/preferences/protobuf/WireFormat$FieldType;->UINT32:Landroidx/datastore/preferences/protobuf/WireFormat$FieldType;
 
     .line 157
     .line 158
-    new-instance v10, Landroidx/datastore/preferences/protobuf/WireFormat$FieldType;
+    new-instance v6, Landroidx/datastore/preferences/protobuf/WireFormat$FieldType;
 
     .line 159
     .line 160
-    sget-object v13, Landroidx/datastore/preferences/protobuf/WireFormat$JavaType;->ENUM:Landroidx/datastore/preferences/protobuf/WireFormat$JavaType;
+    const/16 v10, 0xd
 
     .line 161
     .line 162
-    move-object/from16 v18, v6
+    move-object/from16 v18, v3
 
     .line 163
     .line 164
-    const-string v6, "ENUM"
+    sget-object v3, Landroidx/datastore/preferences/protobuf/WireFormat$JavaType;->ENUM:Landroidx/datastore/preferences/protobuf/WireFormat$JavaType;
 
     .line 165
     .line 166
@@ -395,16 +395,16 @@
 
     .line 167
     .line 168
-    const/16 v8, 0xd
+    const-string v8, "ENUM"
 
     .line 169
     .line 170
-    invoke-direct {v10, v6, v8, v13, v3}, Landroidx/datastore/preferences/protobuf/WireFormat$FieldType;-><init>(Ljava/lang/String;ILandroidx/datastore/preferences/protobuf/WireFormat$JavaType;I)V
+    invoke-direct {v6, v8, v10, v3, v13}, Landroidx/datastore/preferences/protobuf/WireFormat$FieldType;-><init>(Ljava/lang/String;ILandroidx/datastore/preferences/protobuf/WireFormat$JavaType;I)V
 
     .line 171
     .line 172
     .line 173
-    sput-object v10, Landroidx/datastore/preferences/protobuf/WireFormat$FieldType;->ENUM:Landroidx/datastore/preferences/protobuf/WireFormat$FieldType;
+    sput-object v6, Landroidx/datastore/preferences/protobuf/WireFormat$FieldType;->ENUM:Landroidx/datastore/preferences/protobuf/WireFormat$FieldType;
 
     .line 174
     .line 175
@@ -412,7 +412,7 @@
 
     .line 176
     .line 177
-    const-string v6, "SFIXED32"
+    const-string v8, "SFIXED32"
 
     .line 178
     .line 179
@@ -420,10 +420,10 @@
 
     .line 180
     .line 181
-    const/4 v8, 0x5
+    const/4 v10, 0x5
 
     .line 182
-    invoke-direct {v3, v6, v13, v11, v8}, Landroidx/datastore/preferences/protobuf/WireFormat$FieldType;-><init>(Ljava/lang/String;ILandroidx/datastore/preferences/protobuf/WireFormat$JavaType;I)V
+    invoke-direct {v3, v8, v13, v11, v10}, Landroidx/datastore/preferences/protobuf/WireFormat$FieldType;-><init>(Ljava/lang/String;ILandroidx/datastore/preferences/protobuf/WireFormat$JavaType;I)V
 
     .line 183
     .line 184
@@ -432,11 +432,11 @@
 
     .line 186
     .line 187
-    new-instance v6, Landroidx/datastore/preferences/protobuf/WireFormat$FieldType;
+    new-instance v8, Landroidx/datastore/preferences/protobuf/WireFormat$FieldType;
 
     .line 188
     .line 189
-    const-string v8, "SFIXED64"
+    const-string v10, "SFIXED64"
 
     .line 190
     .line 191
@@ -451,12 +451,12 @@
     const/4 v3, 0x1
 
     .line 196
-    invoke-direct {v6, v8, v13, v5, v3}, Landroidx/datastore/preferences/protobuf/WireFormat$FieldType;-><init>(Ljava/lang/String;ILandroidx/datastore/preferences/protobuf/WireFormat$JavaType;I)V
+    invoke-direct {v8, v10, v13, v5, v3}, Landroidx/datastore/preferences/protobuf/WireFormat$FieldType;-><init>(Ljava/lang/String;ILandroidx/datastore/preferences/protobuf/WireFormat$JavaType;I)V
 
     .line 197
     .line 198
     .line 199
-    sput-object v6, Landroidx/datastore/preferences/protobuf/WireFormat$FieldType;->SFIXED64:Landroidx/datastore/preferences/protobuf/WireFormat$FieldType;
+    sput-object v8, Landroidx/datastore/preferences/protobuf/WireFormat$FieldType;->SFIXED64:Landroidx/datastore/preferences/protobuf/WireFormat$FieldType;
 
     .line 200
     .line 201
@@ -464,7 +464,7 @@
 
     .line 202
     .line 203
-    const-string v8, "SINT32"
+    const-string v10, "SINT32"
 
     .line 204
     .line 205
@@ -472,14 +472,14 @@
 
     .line 206
     .line 207
-    move-object/from16 v21, v6
+    move-object/from16 v21, v8
 
     .line 208
     .line 209
-    const/4 v6, 0x0
+    const/4 v8, 0x0
 
     .line 210
-    invoke-direct {v3, v8, v13, v11, v6}, Landroidx/datastore/preferences/protobuf/WireFormat$FieldType;-><init>(Ljava/lang/String;ILandroidx/datastore/preferences/protobuf/WireFormat$JavaType;I)V
+    invoke-direct {v3, v10, v13, v11, v8}, Landroidx/datastore/preferences/protobuf/WireFormat$FieldType;-><init>(Ljava/lang/String;ILandroidx/datastore/preferences/protobuf/WireFormat$JavaType;I)V
 
     .line 211
     .line 212
@@ -488,7 +488,7 @@
 
     .line 214
     .line 215
-    new-instance v8, Landroidx/datastore/preferences/protobuf/WireFormat$FieldType;
+    new-instance v10, Landroidx/datastore/preferences/protobuf/WireFormat$FieldType;
 
     .line 216
     .line 217
@@ -500,12 +500,12 @@
 
     .line 220
     .line 221
-    invoke-direct {v8, v11, v13, v5, v6}, Landroidx/datastore/preferences/protobuf/WireFormat$FieldType;-><init>(Ljava/lang/String;ILandroidx/datastore/preferences/protobuf/WireFormat$JavaType;I)V
+    invoke-direct {v10, v11, v13, v5, v8}, Landroidx/datastore/preferences/protobuf/WireFormat$FieldType;-><init>(Ljava/lang/String;ILandroidx/datastore/preferences/protobuf/WireFormat$JavaType;I)V
 
     .line 222
     .line 223
     .line 224
-    sput-object v8, Landroidx/datastore/preferences/protobuf/WireFormat$FieldType;->SINT64:Landroidx/datastore/preferences/protobuf/WireFormat$FieldType;
+    sput-object v10, Landroidx/datastore/preferences/protobuf/WireFormat$FieldType;->SINT64:Landroidx/datastore/preferences/protobuf/WireFormat$FieldType;
 
     .line 225
     .line 226
@@ -517,7 +517,7 @@
 
     .line 229
     .line 230
-    aput-object v0, v5, v6
+    aput-object v0, v5, v8
 
     .line 231
     .line 232
@@ -614,7 +614,7 @@
 
     .line 274
     .line 275
-    aput-object v10, v5, v0
+    aput-object v6, v5, v0
 
     .line 276
     .line 277
@@ -642,7 +642,7 @@
 
     .line 288
     .line 289
-    aput-object v8, v5, v13
+    aput-object v10, v5, v13
 
     .line 290
     .line 291
@@ -659,14 +659,16 @@
     .line 2
     invoke-direct {p0, p1, p2}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
 
+    .line 3
     iput-object p3, p0, Landroidx/datastore/preferences/protobuf/WireFormat$FieldType;->javaType:Landroidx/datastore/preferences/protobuf/WireFormat$JavaType;
 
+    .line 4
     iput p4, p0, Landroidx/datastore/preferences/protobuf/WireFormat$FieldType;->wireType:I
 
     return-void
 .end method
 
-.method public synthetic constructor <init>(Ljava/lang/String;ILandroidx/datastore/preferences/protobuf/WireFormat$JavaType;ILandroidx/datastore/preferences/protobuf/l2;)V
+.method public synthetic constructor <init>(Ljava/lang/String;ILandroidx/datastore/preferences/protobuf/WireFormat$JavaType;ILandroidx/datastore/preferences/protobuf/A0;)V
     .locals 0
 
     .line 1
@@ -726,16 +728,22 @@
 .method public getJavaType()Landroidx/datastore/preferences/protobuf/WireFormat$JavaType;
     .locals 1
 
+    .line 1
     iget-object v0, p0, Landroidx/datastore/preferences/protobuf/WireFormat$FieldType;->javaType:Landroidx/datastore/preferences/protobuf/WireFormat$JavaType;
 
+    .line 2
+    .line 3
     return-object v0
 .end method
 
 .method public getWireType()I
     .locals 1
 
+    .line 1
     iget v0, p0, Landroidx/datastore/preferences/protobuf/WireFormat$FieldType;->wireType:I
 
+    .line 2
+    .line 3
     return v0
 .end method
 

@@ -35,16 +35,21 @@
 
     const-wide v0, -0x7fffffffffffffffL    # -4.9E-324
 
+    .line 2
     iput-wide v0, p0, Lcom/applovin/impl/sd$f$a;->a:J
 
+    .line 3
     iput-wide v0, p0, Lcom/applovin/impl/sd$f$a;->b:J
 
+    .line 4
     iput-wide v0, p0, Lcom/applovin/impl/sd$f$a;->c:J
 
     const v0, -0x800001
 
+    .line 5
     iput v0, p0, Lcom/applovin/impl/sd$f$a;->d:F
 
+    .line 6
     iput v0, p0, Lcom/applovin/impl/sd$f$a;->e:F
 
     return-void
@@ -53,30 +58,30 @@
 .method private constructor <init>(Lcom/applovin/impl/sd$f;)V
     .locals 2
 
-    .line 2
+    .line 7
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 3
+    .line 8
     iget-wide v0, p1, Lcom/applovin/impl/sd$f;->a:J
 
     iput-wide v0, p0, Lcom/applovin/impl/sd$f$a;->a:J
 
-    .line 4
+    .line 9
     iget-wide v0, p1, Lcom/applovin/impl/sd$f;->b:J
 
     iput-wide v0, p0, Lcom/applovin/impl/sd$f$a;->b:J
 
-    .line 5
+    .line 10
     iget-wide v0, p1, Lcom/applovin/impl/sd$f;->c:J
 
     iput-wide v0, p0, Lcom/applovin/impl/sd$f$a;->c:J
 
-    .line 6
+    .line 11
     iget v0, p1, Lcom/applovin/impl/sd$f;->d:F
 
     iput v0, p0, Lcom/applovin/impl/sd$f$a;->d:F
 
-    .line 7
+    .line 12
     iget p1, p1, Lcom/applovin/impl/sd$f;->f:F
 
     iput p1, p0, Lcom/applovin/impl/sd$f$a;->e:F
@@ -87,7 +92,7 @@
 .method public synthetic constructor <init>(Lcom/applovin/impl/sd$f;Lcom/applovin/impl/sd$a;)V
     .locals 0
 
-    .line 8
+    .line 13
     invoke-direct {p0, p1}, Lcom/applovin/impl/sd$f$a;-><init>(Lcom/applovin/impl/sd$f;)V
 
     return-void

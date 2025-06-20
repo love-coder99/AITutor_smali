@@ -1,352 +1,366 @@
-.class public final Lm2/a;
-.super Ljava/lang/Object;
+.class public final LM2/a;
+.super Landroidx/recyclerview/widget/O;
 .source "SourceFile"
 
 
 # instance fields
-.field public a:Ljava/lang/String;
+.field public final synthetic a:I
 
-.field public b:I
-
-.field public c:I
-
-.field public d:F
-
-.field public e:Ljava/lang/String;
-
-.field public f:Z
+.field public final synthetic b:Ljava/lang/Object;
 
 
 # direct methods
-.method public static a(I)Ljava/lang/String;
-    .locals 2
+.method public synthetic constructor <init>(Ljava/lang/Object;I)V
+    .locals 0
 
     .line 1
-    new-instance v0, Ljava/lang/StringBuilder;
+    iput p2, p0, LM2/a;->a:I
 
-    .line 2
-    .line 3
-    const-string v1, "00000000"
+    iput-object p1, p0, LM2/a;->b:Ljava/lang/Object;
 
-    .line 4
-    .line 5
-    invoke-direct {v0, v1}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 6
-    .line 7
-    .line 8
-    invoke-static {p0, v0}, Lcom/google/android/gms/internal/play_billing/v3;->q(ILjava/lang/StringBuilder;)Ljava/lang/String;
-
-    .line 9
-    .line 10
-    .line 11
-    move-result-object p0
-
-    .line 12
-    new-instance v0, Ljava/lang/StringBuilder;
-
-    .line 13
-    .line 14
-    const-string v1, "#"
-
-    .line 15
-    .line 16
-    invoke-direct {v0, v1}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
-
-    .line 17
-    .line 18
-    .line 19
-    invoke-virtual {p0}, Ljava/lang/String;->length()I
-
-    .line 20
-    .line 21
-    .line 22
-    move-result v1
-
-    .line 23
-    add-int/lit8 v1, v1, -0x8
-
-    .line 24
-    .line 25
-    invoke-virtual {p0, v1}, Ljava/lang/String;->substring(I)Ljava/lang/String;
-
-    .line 26
-    .line 27
-    .line 28
-    move-result-object p0
-
-    .line 29
-    invoke-virtual {v0, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    .line 30
-    .line 31
-    .line 32
-    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    .line 33
-    .line 34
-    .line 35
-    move-result-object p0
-
-    .line 36
-    return-object p0
+    return-void
 .end method
 
 
 # virtual methods
-.method public final toString()Ljava/lang/String;
-    .locals 3
+.method public final b(Landroidx/recyclerview/widget/RecyclerView;II)V
+    .locals 8
 
     .line 1
-    new-instance v0, Ljava/lang/StringBuilder;
+    iget p2, p0, LM2/a;->a:I
 
     .line 2
     .line 3
-    invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
+    packed-switch p2, :pswitch_data_0
 
     .line 4
     .line 5
     .line 6
-    iget-object v1, p0, Lm2/a;->a:Ljava/lang/String;
+    invoke-virtual {p1}, Landroidx/recyclerview/widget/RecyclerView;->computeHorizontalScrollOffset()I
 
     .line 7
     .line 8
-    const/16 v2, 0x3a
-
     .line 9
+    move-result p2
+
     .line 10
-    invoke-static {v0, v1, v2}, Lj0/d;->n(Ljava/lang/StringBuilder;Ljava/lang/String;C)Ljava/lang/String;
+    invoke-virtual {p1}, Landroidx/recyclerview/widget/RecyclerView;->computeVerticalScrollOffset()I
 
     .line 11
     .line 12
     .line 13
-    move-result-object v0
+    move-result p1
 
     .line 14
-    iget v1, p0, Lm2/a;->b:I
+    iget-object p3, p0, LM2/a;->b:Ljava/lang/Object;
 
     .line 15
     .line 16
-    packed-switch v1, :pswitch_data_0
+    check-cast p3, Landroidx/recyclerview/widget/k;
 
     .line 17
     .line 18
+    iget-object v0, p3, Landroidx/recyclerview/widget/k;->s:Landroidx/recyclerview/widget/RecyclerView;
+
     .line 19
-    const-string v1, "????"
-
     .line 20
-    .line 21
-    invoke-static {v0, v1}, Landroid/support/v4/media/session/a;->S(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+    invoke-virtual {v0}, Landroidx/recyclerview/widget/RecyclerView;->computeVerticalScrollRange()I
 
+    .line 21
     .line 22
     .line 23
+    move-result v0
+
     .line 24
-    move-result-object v0
+    iget v1, p3, Landroidx/recyclerview/widget/k;->r:I
 
     .line 25
-    return-object v0
-
     .line 26
-    :pswitch_0
-    invoke-static {v0}, Lj0/d;->p(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    sub-int v2, v0, v1
 
     .line 27
     .line 28
-    .line 29
-    move-result-object v0
+    iget v3, p3, Landroidx/recyclerview/widget/k;->a:I
 
+    .line 29
     .line 30
-    iget v1, p0, Lm2/a;->d:F
+    const/4 v4, 0x0
 
     .line 31
+    const/4 v5, 0x1
+
     .line 32
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(F)Ljava/lang/StringBuilder;
+    if-lez v2, :cond_0
 
     .line 33
     .line 34
-    .line 35
-    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    if-lt v1, v3, :cond_0
 
+    .line 35
     .line 36
+    const/4 v2, 0x1
+
     .line 37
+    goto :goto_0
+
     .line 38
-    move-result-object v0
+    :cond_0
+    const/4 v2, 0x0
 
     .line 39
-    return-object v0
+    :goto_0
+    iput-boolean v2, p3, Landroidx/recyclerview/widget/k;->t:Z
 
     .line 40
-    :pswitch_1
-    invoke-static {v0}, Lj0/d;->p(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
     .line 41
+    iget-object v2, p3, Landroidx/recyclerview/widget/k;->s:Landroidx/recyclerview/widget/RecyclerView;
+
     .line 42
     .line 43
-    move-result-object v0
+    invoke-virtual {v2}, Landroidx/recyclerview/widget/RecyclerView;->computeHorizontalScrollRange()I
 
     .line 44
-    iget-boolean v1, p0, Lm2/a;->f:Z
-
     .line 45
     .line 46
-    invoke-static {v1}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
+    move-result v2
 
     .line 47
+    iget v6, p3, Landroidx/recyclerview/widget/k;->q:I
+
     .line 48
     .line 49
-    move-result-object v1
+    sub-int v7, v2, v6
 
     .line 50
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
-
     .line 51
+    if-lez v7, :cond_1
+
     .line 52
     .line 53
-    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    if-lt v6, v3, :cond_1
 
     .line 54
     .line 55
+    const/4 v3, 0x1
+
     .line 56
-    move-result-object v0
+    goto :goto_1
 
     .line 57
-    return-object v0
+    :cond_1
+    const/4 v3, 0x0
 
     .line 58
-    :pswitch_2
-    invoke-static {v0}, Lj0/d;->p(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    :goto_1
+    iput-boolean v3, p3, Landroidx/recyclerview/widget/k;->u:Z
 
     .line 59
     .line 60
-    .line 61
-    move-result-object v0
+    iget-boolean v7, p3, Landroidx/recyclerview/widget/k;->t:Z
 
+    .line 61
     .line 62
-    iget-object v1, p0, Lm2/a;->e:Ljava/lang/String;
+    if-nez v7, :cond_2
 
     .line 63
     .line 64
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    if-nez v3, :cond_2
 
     .line 65
     .line 66
-    .line 67
-    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    iget p1, p3, Landroidx/recyclerview/widget/k;->v:I
 
+    .line 67
     .line 68
+    if-eqz p1, :cond_6
+
     .line 69
     .line 70
-    move-result-object v0
+    invoke-virtual {p3, v4}, Landroidx/recyclerview/widget/k;->f(I)V
 
     .line 71
-    return-object v0
-
     .line 72
-    :pswitch_3
-    invoke-static {v0}, Lj0/d;->p(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
     .line 73
-    .line 74
-    .line 75
-    move-result-object v0
+    goto :goto_2
 
+    .line 74
+    :cond_2
+    const/high16 v3, 0x40000000    # 2.0f
+
+    .line 75
     .line 76
-    iget v1, p0, Lm2/a;->c:I
+    if-eqz v7, :cond_3
 
     .line 77
     .line 78
-    invoke-static {v1}, Lm2/a;->a(I)Ljava/lang/String;
+    int-to-float p1, p1
 
     .line 79
-    .line 80
-    .line 81
-    move-result-object v1
+    int-to-float v4, v1
 
+    .line 80
+    div-float v7, v4, v3
+
+    .line 81
     .line 82
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    add-float/2addr v7, p1
 
     .line 83
+    mul-float v7, v7, v4
+
     .line 84
     .line 85
-    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    int-to-float p1, v0
 
     .line 86
+    div-float/2addr v7, p1
+
     .line 87
+    float-to-int p1, v7
+
     .line 88
-    move-result-object v0
+    iput p1, p3, Landroidx/recyclerview/widget/k;->l:I
 
     .line 89
-    return-object v0
-
     .line 90
-    :pswitch_4
-    invoke-static {v0}, Lj0/d;->p(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    mul-int p1, v1, v1
 
     .line 91
     .line 92
+    div-int/2addr p1, v0
+
     .line 93
-    move-result-object v0
+    invoke-static {v1, p1}, Ljava/lang/Math;->min(II)I
 
     .line 94
-    iget v1, p0, Lm2/a;->d:F
-
     .line 95
     .line 96
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(F)Ljava/lang/StringBuilder;
+    move-result p1
 
     .line 97
+    iput p1, p3, Landroidx/recyclerview/widget/k;->k:I
+
     .line 98
     .line 99
-    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    :cond_3
+    iget-boolean p1, p3, Landroidx/recyclerview/widget/k;->u:Z
 
     .line 100
     .line 101
-    .line 102
-    move-result-object v0
+    if-eqz p1, :cond_4
 
+    .line 102
     .line 103
-    return-object v0
+    int-to-float p1, p2
 
     .line 104
-    :pswitch_5
-    invoke-static {v0}, Lj0/d;->p(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    int-to-float p2, v6
 
     .line 105
+    div-float v0, p2, v3
+
     .line 106
     .line 107
-    move-result-object v0
+    add-float/2addr v0, p1
 
     .line 108
-    iget v1, p0, Lm2/a;->c:I
+    mul-float v0, v0, p2
 
     .line 109
     .line 110
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+    int-to-float p1, v2
 
     .line 111
+    div-float/2addr v0, p1
+
     .line 112
+    float-to-int p1, v0
+
     .line 113
-    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    iput p1, p3, Landroidx/recyclerview/widget/k;->o:I
 
     .line 114
     .line 115
-    .line 116
-    move-result-object v0
+    mul-int p1, v6, v6
 
+    .line 116
     .line 117
-    return-object v0
+    div-int/2addr p1, v2
 
     .line 118
-    nop
+    invoke-static {v6, p1}, Ljava/lang/Math;->min(II)I
 
     .line 119
+    .line 120
+    .line 121
+    move-result p1
+
+    .line 122
+    iput p1, p3, Landroidx/recyclerview/widget/k;->n:I
+
+    .line 123
+    .line 124
+    :cond_4
+    iget p1, p3, Landroidx/recyclerview/widget/k;->v:I
+
+    .line 125
+    .line 126
+    if-eqz p1, :cond_5
+
+    .line 127
+    .line 128
+    if-ne p1, v5, :cond_6
+
+    .line 129
+    .line 130
+    :cond_5
+    invoke-virtual {p3, v5}, Landroidx/recyclerview/widget/k;->f(I)V
+
+    .line 131
+    .line 132
+    .line 133
+    :cond_6
+    :goto_2
+    return-void
+
+    .line 134
+    :pswitch_0
+    iget-object p1, p0, LM2/a;->b:Ljava/lang/Object;
+
+    .line 135
+    .line 136
+    check-cast p1, Lcom/afollestad/materialdialogs/internal/list/DialogRecyclerView;
+
+    .line 137
+    .line 138
+    invoke-virtual {p1}, Landroid/view/ViewGroup;->getChildCount()I
+
+    .line 139
+    .line 140
+    .line 141
+    move-result p2
+
+    .line 142
+    if-eqz p2, :cond_7
+
+    .line 143
+    .line 144
+    invoke-virtual {p1}, Landroid/view/View;->getMeasuredHeight()I
+
+    .line 145
+    .line 146
+    .line 147
+    :cond_7
+    return-void
+
+    .line 148
+    nop
+
+    .line 149
     :pswitch_data_0
-    .packed-switch 0x384
-        :pswitch_5
-        :pswitch_4
-        :pswitch_3
-        :pswitch_2
-        :pswitch_1
+    .packed-switch 0x0
         :pswitch_0
     .end packed-switch
 .end method

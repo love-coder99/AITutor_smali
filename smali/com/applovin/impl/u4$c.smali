@@ -29,10 +29,13 @@
     .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
+    .line 2
     iput-object p1, p0, Lcom/applovin/impl/u4$c;->a:Ljava/lang/String;
 
+    .line 3
     iput-wide p2, p0, Lcom/applovin/impl/u4$c;->c:J
 
+    .line 4
     iput-object p4, p0, Lcom/applovin/impl/u4$c;->b:Lcom/applovin/impl/u4$b;
 
     return-void
@@ -41,7 +44,7 @@
 .method public synthetic constructor <init>(Ljava/lang/String;JLcom/applovin/impl/u4$b;Lcom/applovin/impl/u4$a;)V
     .locals 0
 
-    .line 2
+    .line 5
     invoke-direct {p0, p1, p2, p3, p4}, Lcom/applovin/impl/u4$c;-><init>(Ljava/lang/String;JLcom/applovin/impl/u4$b;)V
 
     return-void
@@ -50,7 +53,7 @@
 .method private a()Lcom/applovin/impl/u4$b;
     .locals 1
 
-    .line 1
+    .line 2
     iget-object v0, p0, Lcom/applovin/impl/u4$c;->b:Lcom/applovin/impl/u4$b;
 
     return-object v0
@@ -59,7 +62,7 @@
 .method public static synthetic a(Lcom/applovin/impl/u4$c;)Ljava/lang/String;
     .locals 0
 
-    .line 2
+    .line 1
     invoke-direct {p0}, Lcom/applovin/impl/u4$c;->c()Ljava/lang/String;
 
     move-result-object p0
@@ -70,7 +73,7 @@
 .method private b()J
     .locals 2
 
-    .line 1
+    .line 2
     iget-wide v0, p0, Lcom/applovin/impl/u4$c;->c:J
 
     return-wide v0
@@ -79,7 +82,7 @@
 .method public static synthetic b(Lcom/applovin/impl/u4$c;)J
     .locals 2
 
-    .line 2
+    .line 1
     invoke-direct {p0}, Lcom/applovin/impl/u4$c;->b()J
 
     move-result-wide v0
@@ -90,7 +93,7 @@
 .method public static synthetic c(Lcom/applovin/impl/u4$c;)Lcom/applovin/impl/u4$b;
     .locals 0
 
-    .line 2
+    .line 1
     invoke-direct {p0}, Lcom/applovin/impl/u4$c;->a()Lcom/applovin/impl/u4$b;
 
     move-result-object p0
@@ -101,7 +104,7 @@
 .method private c()Ljava/lang/String;
     .locals 1
 
-    .line 1
+    .line 2
     iget-object v0, p0, Lcom/applovin/impl/u4$c;->a:Ljava/lang/String;
 
     return-object v0

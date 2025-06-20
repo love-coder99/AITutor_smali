@@ -4,6 +4,16 @@
 
 
 # annotations
+.annotation runtime Lca/c;
+    c = "androidx.compose.animation.core.SeekableTransitionState"
+    f = "Transition.kt"
+    l = {
+        0x21e,
+        0x88a
+    }
+    m = "waitForCompositionAfterTargetStateChange"
+.end annotation
+
 .annotation runtime Lkotlin/Metadata;
     k = 0x3
     mv = {
@@ -12,16 +22,6 @@
         0x0
     }
     xi = 0x30
-.end annotation
-
-.annotation runtime Lth/c;
-    c = "androidx.compose.animation.core.SeekableTransitionState"
-    f = "Transition.kt"
-    l = {
-        0x21e,
-        0x88a
-    }
-    m = "waitForCompositionAfterTargetStateChange"
 .end annotation
 
 
@@ -34,22 +34,22 @@
 
 .field synthetic result:Ljava/lang/Object;
 
-.field final synthetic this$0:Landroidx/compose/animation/core/s0;
+.field final synthetic this$0:Landroidx/compose/animation/core/M;
     .annotation system Ldalvik/annotation/Signature;
         value = {
-            "Landroidx/compose/animation/core/s0;"
+            "Landroidx/compose/animation/core/M;"
         }
     .end annotation
 .end field
 
 
 # direct methods
-.method public constructor <init>(Landroidx/compose/animation/core/s0;Lkotlin/coroutines/Continuation;)V
+.method public constructor <init>(Landroidx/compose/animation/core/M;Lkotlin/coroutines/Continuation;)V
     .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
-            "Landroidx/compose/animation/core/s0;",
+            "Landroidx/compose/animation/core/M;",
             "Lkotlin/coroutines/Continuation<",
             "-",
             "Landroidx/compose/animation/core/SeekableTransitionState$waitForCompositionAfterTargetStateChange$1;",
@@ -57,7 +57,7 @@
         }
     .end annotation
 
-    iput-object p1, p0, Landroidx/compose/animation/core/SeekableTransitionState$waitForCompositionAfterTargetStateChange$1;->this$0:Landroidx/compose/animation/core/s0;
+    iput-object p1, p0, Landroidx/compose/animation/core/SeekableTransitionState$waitForCompositionAfterTargetStateChange$1;->this$0:Landroidx/compose/animation/core/M;
 
     invoke-direct {p0, p2}, Lkotlin/coroutines/jvm/internal/ContinuationImpl;-><init>(Lkotlin/coroutines/Continuation;)V
 
@@ -79,9 +79,9 @@
 
     iput p1, p0, Landroidx/compose/animation/core/SeekableTransitionState$waitForCompositionAfterTargetStateChange$1;->label:I
 
-    iget-object p1, p0, Landroidx/compose/animation/core/SeekableTransitionState$waitForCompositionAfterTargetStateChange$1;->this$0:Landroidx/compose/animation/core/s0;
+    iget-object p1, p0, Landroidx/compose/animation/core/SeekableTransitionState$waitForCompositionAfterTargetStateChange$1;->this$0:Landroidx/compose/animation/core/M;
 
-    invoke-static {p1, p0}, Landroidx/compose/animation/core/s0;->j(Landroidx/compose/animation/core/s0;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
+    invoke-static {p1, p0}, Landroidx/compose/animation/core/M;->j(Landroidx/compose/animation/core/M;Lkotlin/coroutines/jvm/internal/ContinuationImpl;)Ljava/lang/Object;
 
     move-result-object p1
 

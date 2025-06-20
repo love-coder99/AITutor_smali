@@ -3,14 +3,14 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lzh/a;
+.implements Lka/a;
 
 
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "Lkotlin/jvm/internal/Lambda;",
-        "Lzh/a;"
+        "Lka/a;"
     }
 .end annotation
 
@@ -19,9 +19,9 @@
         "\u0000\u0008\n\u0002\u0018\u0002\n\u0002\u0008\u0003\u0010\u0003\u001a\u00020\u0000H\n\u00a2\u0006\u0004\u0008\u0001\u0010\u0002"
     }
     d2 = {
-        "Landroidx/compose/ui/text/f;",
+        "Landroidx/compose/ui/text/g;",
         "invoke",
-        "()Landroidx/compose/ui/text/f;",
+        "()Landroidx/compose/ui/text/g;",
         "<anonymous>"
     }
     k = 0x3
@@ -34,14 +34,14 @@
 
 
 # instance fields
-.field final synthetic $text:Landroidx/compose/ui/text/f;
+.field final synthetic $text:Landroidx/compose/ui/text/g;
 
 
 # direct methods
-.method public constructor <init>(Landroidx/compose/ui/text/f;)V
+.method public constructor <init>(Landroidx/compose/ui/text/g;)V
     .locals 0
 
-    iput-object p1, p0, Landroidx/compose/foundation/text/BasicTextKt$LayoutWithLinksAndInlineContent$styledText$2$1;->$text:Landroidx/compose/ui/text/f;
+    iput-object p1, p0, Landroidx/compose/foundation/text/BasicTextKt$LayoutWithLinksAndInlineContent$styledText$2$1;->$text:Landroidx/compose/ui/text/g;
 
     const/4 p1, 0x0
 
@@ -52,11 +52,11 @@
 
 
 # virtual methods
-.method public final invoke()Landroidx/compose/ui/text/f;
+.method public final invoke()Landroidx/compose/ui/text/g;
     .locals 1
 
     .line 1
-    iget-object v0, p0, Landroidx/compose/foundation/text/BasicTextKt$LayoutWithLinksAndInlineContent$styledText$2$1;->$text:Landroidx/compose/ui/text/f;
+    iget-object v0, p0, Landroidx/compose/foundation/text/BasicTextKt$LayoutWithLinksAndInlineContent$styledText$2$1;->$text:Landroidx/compose/ui/text/g;
 
     return-object v0
 .end method
@@ -65,7 +65,7 @@
     .locals 1
 
     .line 2
-    invoke-virtual {p0}, Landroidx/compose/foundation/text/BasicTextKt$LayoutWithLinksAndInlineContent$styledText$2$1;->invoke()Landroidx/compose/ui/text/f;
+    invoke-virtual {p0}, Landroidx/compose/foundation/text/BasicTextKt$LayoutWithLinksAndInlineContent$styledText$2$1;->invoke()Landroidx/compose/ui/text/g;
 
     move-result-object v0
 

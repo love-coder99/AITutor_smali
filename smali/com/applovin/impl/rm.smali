@@ -37,7 +37,7 @@
 
     .line 7
     .line 8
-    invoke-static {p1, v0}, Landroid/support/v4/media/session/a;->S(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {p1, v0}, Landroidx/appcompat/view/menu/F;->F(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     .line 9
     .line 10
@@ -324,9 +324,10 @@
     :cond_0
     const/4 v1, 0x0
 
+    .line 14
     const-string v0, ""
 
-    .line 14
+    .line 15
     :goto_0
     invoke-interface {p2}, Lcom/applovin/mediation/MaxError;->getCode()I
 
@@ -342,7 +343,7 @@
 
     move-result-object p1
 
-    .line 15
+    .line 16
     invoke-interface {p2}, Lcom/applovin/mediation/MaxError;->getMessage()Ljava/lang/String;
 
     move-result-object p2
@@ -357,7 +358,7 @@
 
     move-result-object p1
 
-    .line 16
+    .line 17
     invoke-static {v1}, Ljava/lang/String;->valueOf(I)Ljava/lang/String;
 
     move-result-object p2
@@ -368,7 +369,7 @@
 
     move-result-object p1
 
-    .line 17
+    .line 18
     invoke-static {v0}, Lcom/applovin/impl/sdk/utils/StringUtils;->encodeUriString(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object p2
@@ -395,9 +396,9 @@
 
     move-result-object p1
 
+    .line 3
     const-string v0, "POST"
 
-    .line 3
     invoke-virtual {p1, v0}, Lcom/applovin/impl/sdk/network/d$b;->c(Ljava/lang/String;)Lcom/applovin/impl/sdk/network/d$b;
 
     move-result-object p1

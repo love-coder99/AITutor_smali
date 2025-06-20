@@ -47,9 +47,9 @@
     .line 1
     invoke-super {p0, p1, p2}, Lcom/applovin/impl/hm;->a(ILjava/lang/String;)V
 
+    .line 2
     iget-object v0, p0, Lcom/applovin/impl/pm;->j:Lcom/applovin/impl/sdk/nativeAd/AppLovinNativeAdLoadListener;
 
-    .line 2
     new-instance v1, Lcom/applovin/impl/sdk/AppLovinError;
 
     invoke-direct {v1, p1, p2}, Lcom/applovin/impl/sdk/AppLovinError;-><init>(ILjava/lang/String;)V

@@ -1,380 +1,371 @@
-.class public final Lz1/j;
-.super Ljava/lang/Object;
+.class public final LZ1/J;
+.super LZ1/N;
 .source "SourceFile"
-
-# interfaces
-.implements Ljava/text/CharacterIterator;
 
 
 # instance fields
-.field public final b:Ljava/lang/CharSequence;
-
-.field public final c:I
-
-.field public final d:I
-
-.field public f:I
+.field public final l:Ljava/lang/Class;
 
 
 # direct methods
-.method public constructor <init>(Ljava/lang/CharSequence;I)V
-    .locals 0
+.method public constructor <init>(Ljava/lang/Class;)V
+    .locals 2
 
     .line 1
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    const-string v0, "[L"
 
     .line 2
     .line 3
+    const/4 v1, 0x1
+
     .line 4
-    iput-object p1, p0, Lz1/j;->b:Ljava/lang/CharSequence;
+    invoke-direct {p0, v1}, LZ1/N;-><init>(Z)V
 
     .line 5
     .line 6
-    const/4 p1, 0x0
-
     .line 7
-    iput p1, p0, Lz1/j;->c:I
+    const-class v1, Landroid/os/Parcelable;
 
     .line 8
     .line 9
-    iput p2, p0, Lz1/j;->d:I
+    invoke-virtual {v1, p1}, Ljava/lang/Class;->isAssignableFrom(Ljava/lang/Class;)Z
 
     .line 10
     .line 11
-    iput p1, p0, Lz1/j;->f:I
-
     .line 12
+    move-result v1
+
     .line 13
+    if-eqz v1, :cond_0
+
+    .line 14
+    .line 15
+    :try_start_0
+    new-instance v1, Ljava/lang/StringBuilder;
+
+    .line 16
+    .line 17
+    invoke-direct {v1, v0}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+
+    .line 18
+    .line 19
+    .line 20
+    invoke-virtual {p1}, Ljava/lang/Class;->getName()Ljava/lang/String;
+
+    .line 21
+    .line 22
+    .line 23
+    move-result-object p1
+
+    .line 24
+    invoke-virtual {v1, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 25
+    .line 26
+    .line 27
+    const/16 p1, 0x3b
+
+    .line 28
+    .line 29
+    invoke-virtual {v1, p1}, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
+
+    .line 30
+    .line 31
+    .line 32
+    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    .line 33
+    .line 34
+    .line 35
+    move-result-object p1
+
+    .line 36
+    invoke-static {p1}, Ljava/lang/Class;->forName(Ljava/lang/String;)Ljava/lang/Class;
+
+    .line 37
+    .line 38
+    .line 39
+    move-result-object p1
+    :try_end_0
+    .catch Ljava/lang/ClassNotFoundException; {:try_start_0 .. :try_end_0} :catch_0
+
+    .line 40
+    iput-object p1, p0, LZ1/J;->l:Ljava/lang/Class;
+
+    .line 41
+    .line 42
     return-void
+
+    .line 43
+    :catch_0
+    move-exception p1
+
+    .line 44
+    new-instance v0, Ljava/lang/RuntimeException;
+
+    .line 45
+    .line 46
+    invoke-direct {v0, p1}, Ljava/lang/RuntimeException;-><init>(Ljava/lang/Throwable;)V
+
+    .line 47
+    .line 48
+    .line 49
+    throw v0
+
+    .line 50
+    :cond_0
+    new-instance v0, Ljava/lang/StringBuilder;
+
+    .line 51
+    .line 52
+    invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
+
+    .line 53
+    .line 54
+    .line 55
+    invoke-virtual {v0, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+
+    .line 56
+    .line 57
+    .line 58
+    const-string p1, " does not implement Parcelable."
+
+    .line 59
+    .line 60
+    invoke-virtual {v0, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 61
+    .line 62
+    .line 63
+    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    .line 64
+    .line 65
+    .line 66
+    move-result-object p1
+
+    .line 67
+    new-instance v0, Ljava/lang/IllegalArgumentException;
+
+    .line 68
+    .line 69
+    invoke-virtual {p1}, Ljava/lang/Object;->toString()Ljava/lang/String;
+
+    .line 70
+    .line 71
+    .line 72
+    move-result-object p1
+
+    .line 73
+    invoke-direct {v0, p1}, Ljava/lang/IllegalArgumentException;-><init>(Ljava/lang/String;)V
+
+    .line 74
+    .line 75
+    .line 76
+    throw v0
 .end method
 
 
 # virtual methods
-.method public final clone()Ljava/lang/Object;
-    .locals 1
+.method public final a(Landroid/os/Bundle;Ljava/lang/String;)Ljava/lang/Object;
+    .locals 0
 
     .line 1
-    :try_start_0
-    invoke-super {p0}, Ljava/lang/Object;->clone()Ljava/lang/Object;
+    invoke-virtual {p1, p2}, Landroid/os/BaseBundle;->get(Ljava/lang/String;)Ljava/lang/Object;
 
     .line 2
     .line 3
     .line 4
+    move-result-object p1
+
+    .line 5
+    check-cast p1, [Landroid/os/Parcelable;
+
+    .line 6
+    .line 7
+    return-object p1
+.end method
+
+.method public final b()Ljava/lang/String;
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, LZ1/J;->l:Ljava/lang/Class;
+
+    .line 2
+    .line 3
+    invoke-virtual {v0}, Ljava/lang/Class;->getName()Ljava/lang/String;
+
+    .line 4
+    .line 5
+    .line 6
     move-result-object v0
-    :try_end_0
-    .catch Ljava/lang/CloneNotSupportedException; {:try_start_0 .. :try_end_0} :catch_0
 
-    .line 5
+    .line 7
     return-object v0
+.end method
+
+.method public final d(Ljava/lang/String;)Ljava/lang/Object;
+    .locals 1
+
+    .line 1
+    new-instance p1, Ljava/lang/UnsupportedOperationException;
+
+    .line 2
+    .line 3
+    const-string v0, "Arrays don\'t support default values."
+
+    .line 4
+    .line 5
+    invoke-direct {p1, v0}, Ljava/lang/UnsupportedOperationException;-><init>(Ljava/lang/String;)V
 
     .line 6
-    :catch_0
-    new-instance v0, Ljava/lang/InternalError;
-
     .line 7
     .line 8
-    invoke-direct {v0}, Ljava/lang/InternalError;-><init>()V
+    throw p1
+.end method
+
+.method public final e(Ljava/lang/String;Ljava/lang/Object;Landroid/os/Bundle;)V
+    .locals 1
+
+    .line 1
+    check-cast p2, [Landroid/os/Parcelable;
+
+    .line 2
+    .line 3
+    iget-object v0, p0, LZ1/J;->l:Ljava/lang/Class;
+
+    .line 4
+    .line 5
+    invoke-virtual {v0, p2}, Ljava/lang/Class;->cast(Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 6
+    .line 7
+    .line 8
+    invoke-virtual {p3, p1, p2}, Landroid/os/Bundle;->putParcelableArray(Ljava/lang/String;[Landroid/os/Parcelable;)V
 
     .line 9
     .line 10
     .line 11
-    throw v0
+    return-void
 .end method
 
-.method public final current()C
+.method public final equals(Ljava/lang/Object;)Z
     .locals 2
 
     .line 1
-    iget v0, p0, Lz1/j;->f:I
+    if-ne p0, p1, :cond_0
 
     .line 2
     .line 3
-    iget v1, p0, Lz1/j;->d:I
+    const/4 p1, 0x1
 
     .line 4
-    .line 5
-    if-ne v0, v1, :cond_0
-
-    .line 6
-    .line 7
-    const v0, 0xffff
-
-    .line 8
-    .line 9
-    .line 10
-    goto :goto_0
-
-    .line 11
-    :cond_0
-    iget-object v1, p0, Lz1/j;->b:Ljava/lang/CharSequence;
-
-    .line 12
-    .line 13
-    invoke-interface {v1, v0}, Ljava/lang/CharSequence;->charAt(I)C
-
-    .line 14
-    .line 15
-    .line 16
-    move-result v0
-
-    .line 17
-    :goto_0
-    return v0
-.end method
-
-.method public final first()C
-    .locals 1
-
-    .line 1
-    iget v0, p0, Lz1/j;->c:I
-
-    .line 2
-    .line 3
-    iput v0, p0, Lz1/j;->f:I
-
-    .line 4
-    .line 5
-    invoke-virtual {p0}, Lz1/j;->current()C
-
-    .line 6
-    .line 7
-    .line 8
-    move-result v0
-
-    .line 9
-    return v0
-.end method
-
-.method public final getBeginIndex()I
-    .locals 1
-
-    .line 1
-    iget v0, p0, Lz1/j;->c:I
-
-    return v0
-.end method
-
-.method public final getEndIndex()I
-    .locals 1
-
-    .line 1
-    iget v0, p0, Lz1/j;->d:I
-
-    return v0
-.end method
-
-.method public final getIndex()I
-    .locals 1
-
-    .line 1
-    iget v0, p0, Lz1/j;->f:I
-
-    return v0
-.end method
-
-.method public final last()C
-    .locals 2
-
-    .line 1
-    iget v0, p0, Lz1/j;->c:I
-
-    .line 2
-    .line 3
-    iget v1, p0, Lz1/j;->d:I
-
-    .line 4
-    .line 5
-    if-ne v0, v1, :cond_0
-
-    .line 6
-    .line 7
-    iput v1, p0, Lz1/j;->f:I
-
-    .line 8
-    .line 9
-    const v0, 0xffff
-
-    .line 10
-    .line 11
-    .line 12
-    goto :goto_0
-
-    .line 13
-    :cond_0
-    add-int/lit8 v1, v1, -0x1
-
-    .line 14
-    .line 15
-    iput v1, p0, Lz1/j;->f:I
-
-    .line 16
-    .line 17
-    iget-object v0, p0, Lz1/j;->b:Ljava/lang/CharSequence;
-
-    .line 18
-    .line 19
-    invoke-interface {v0, v1}, Ljava/lang/CharSequence;->charAt(I)C
-
-    .line 20
-    .line 21
-    .line 22
-    move-result v0
-
-    .line 23
-    :goto_0
-    return v0
-.end method
-
-.method public final next()C
-    .locals 2
-
-    .line 1
-    iget v0, p0, Lz1/j;->f:I
-
-    .line 2
-    .line 3
-    add-int/lit8 v0, v0, 0x1
-
-    .line 4
-    .line 5
-    iput v0, p0, Lz1/j;->f:I
-
-    .line 6
-    .line 7
-    iget v1, p0, Lz1/j;->d:I
-
-    .line 8
-    .line 9
-    if-lt v0, v1, :cond_0
-
-    .line 10
-    .line 11
-    iput v1, p0, Lz1/j;->f:I
-
-    .line 12
-    .line 13
-    const v0, 0xffff
-
-    .line 14
-    .line 15
-    .line 16
-    goto :goto_0
-
-    .line 17
-    :cond_0
-    iget-object v1, p0, Lz1/j;->b:Ljava/lang/CharSequence;
-
-    .line 18
-    .line 19
-    invoke-interface {v1, v0}, Ljava/lang/CharSequence;->charAt(I)C
-
-    .line 20
-    .line 21
-    .line 22
-    move-result v0
-
-    .line 23
-    :goto_0
-    return v0
-.end method
-
-.method public final previous()C
-    .locals 2
-
-    .line 1
-    iget v0, p0, Lz1/j;->f:I
-
-    .line 2
-    .line 3
-    iget v1, p0, Lz1/j;->c:I
-
-    .line 4
-    .line 5
-    if-gt v0, v1, :cond_0
-
-    .line 6
-    .line 7
-    const v0, 0xffff
-
-    .line 8
-    .line 9
-    .line 10
-    goto :goto_0
-
-    .line 11
-    :cond_0
-    add-int/lit8 v0, v0, -0x1
-
-    .line 12
-    .line 13
-    iput v0, p0, Lz1/j;->f:I
-
-    .line 14
-    .line 15
-    iget-object v1, p0, Lz1/j;->b:Ljava/lang/CharSequence;
-
-    .line 16
-    .line 17
-    invoke-interface {v1, v0}, Ljava/lang/CharSequence;->charAt(I)C
-
-    .line 18
-    .line 19
-    .line 20
-    move-result v0
-
-    .line 21
-    :goto_0
-    return v0
-.end method
-
-.method public final setIndex(I)C
-    .locals 1
-
-    .line 1
-    iget v0, p0, Lz1/j;->d:I
-
-    .line 2
-    .line 3
-    if-gt p1, v0, :cond_0
-
-    .line 4
-    .line 5
-    iget v0, p0, Lz1/j;->c:I
-
-    .line 6
-    .line 7
-    if-gt v0, p1, :cond_0
-
-    .line 8
-    .line 9
-    iput p1, p0, Lz1/j;->f:I
-
-    .line 10
-    .line 11
-    invoke-virtual {p0}, Lz1/j;->current()C
-
-    .line 12
-    .line 13
-    .line 14
-    move-result p1
-
-    .line 15
     return p1
 
-    .line 16
+    .line 5
     :cond_0
-    new-instance p1, Ljava/lang/IllegalArgumentException;
+    if-eqz p1, :cond_2
+
+    .line 6
+    .line 7
+    invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    .line 8
+    .line 9
+    .line 10
+    move-result-object v0
+
+    .line 11
+    const-class v1, LZ1/J;
+
+    .line 12
+    .line 13
+    invoke-virtual {v1, v0}, Ljava/lang/Object;->equals(Ljava/lang/Object;)Z
+
+    .line 14
+    .line 15
+    .line 16
+    move-result v0
 
     .line 17
-    .line 18
-    const-string v0, "invalid position"
+    if-nez v0, :cond_1
 
+    .line 18
     .line 19
+    goto :goto_0
+
     .line 20
-    invoke-direct {p1, v0}, Ljava/lang/IllegalArgumentException;-><init>(Ljava/lang/String;)V
+    :cond_1
+    check-cast p1, LZ1/J;
 
     .line 21
     .line 22
+    iget-object v0, p0, LZ1/J;->l:Ljava/lang/Class;
+
     .line 23
-    throw p1
+    .line 24
+    iget-object p1, p1, LZ1/J;->l:Ljava/lang/Class;
+
+    .line 25
+    .line 26
+    invoke-static {v0, p1}, Lkotlin/jvm/internal/h;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
+
+    .line 27
+    .line 28
+    .line 29
+    move-result p1
+
+    .line 30
+    return p1
+
+    .line 31
+    :cond_2
+    :goto_0
+    const/4 p1, 0x0
+
+    .line 32
+    return p1
+.end method
+
+.method public final f(Ljava/lang/Object;Ljava/lang/Object;)Z
+    .locals 0
+
+    .line 1
+    check-cast p1, [Landroid/os/Parcelable;
+
+    .line 2
+    .line 3
+    check-cast p2, [Landroid/os/Parcelable;
+
+    .line 4
+    .line 5
+    invoke-static {p1, p2}, LY9/o;->F([Ljava/lang/Object;[Ljava/lang/Object;)Z
+
+    .line 6
+    .line 7
+    .line 8
+    move-result p1
+
+    .line 9
+    return p1
+.end method
+
+.method public final hashCode()I
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, LZ1/J;->l:Ljava/lang/Class;
+
+    .line 2
+    .line 3
+    invoke-virtual {v0}, Ljava/lang/Object;->hashCode()I
+
+    .line 4
+    .line 5
+    .line 6
+    move-result v0
+
+    .line 7
+    return v0
 .end method

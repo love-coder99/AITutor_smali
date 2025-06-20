@@ -4,6 +4,15 @@
 
 
 # annotations
+.annotation runtime Lca/c;
+    c = "androidx.compose.material3.FloatingActionButtonElevationAnimatable"
+    f = "FloatingActionButton.kt"
+    l = {
+        0x28a
+    }
+    m = "animateElevation"
+.end annotation
+
 .annotation runtime Lkotlin/Metadata;
     k = 0x3
     mv = {
@@ -12,15 +21,6 @@
         0x0
     }
     xi = 0x30
-.end annotation
-
-.annotation runtime Lth/c;
-    c = "androidx.compose.material3.FloatingActionButtonElevationAnimatable"
-    f = "FloatingActionButton.kt"
-    l = {
-        0x28a
-    }
-    m = "animateElevation"
 .end annotation
 
 
@@ -33,16 +33,16 @@
 
 .field synthetic result:Ljava/lang/Object;
 
-.field final synthetic this$0:Landroidx/compose/material3/e0;
+.field final synthetic this$0:Landroidx/compose/material3/J;
 
 
 # direct methods
-.method public constructor <init>(Landroidx/compose/material3/e0;Lkotlin/coroutines/Continuation;)V
+.method public constructor <init>(Landroidx/compose/material3/J;Lkotlin/coroutines/Continuation;)V
     .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
-            "Landroidx/compose/material3/e0;",
+            "Landroidx/compose/material3/J;",
             "Lkotlin/coroutines/Continuation<",
             "-",
             "Landroidx/compose/material3/FloatingActionButtonElevationAnimatable$animateElevation$1;",
@@ -50,7 +50,7 @@
         }
     .end annotation
 
-    iput-object p1, p0, Landroidx/compose/material3/FloatingActionButtonElevationAnimatable$animateElevation$1;->this$0:Landroidx/compose/material3/e0;
+    iput-object p1, p0, Landroidx/compose/material3/FloatingActionButtonElevationAnimatable$animateElevation$1;->this$0:Landroidx/compose/material3/J;
 
     invoke-direct {p0, p2}, Lkotlin/coroutines/jvm/internal/ContinuationImpl;-><init>(Lkotlin/coroutines/Continuation;)V
 
@@ -72,11 +72,11 @@
 
     iput p1, p0, Landroidx/compose/material3/FloatingActionButtonElevationAnimatable$animateElevation$1;->label:I
 
-    iget-object p1, p0, Landroidx/compose/material3/FloatingActionButtonElevationAnimatable$animateElevation$1;->this$0:Landroidx/compose/material3/e0;
+    iget-object p1, p0, Landroidx/compose/material3/FloatingActionButtonElevationAnimatable$animateElevation$1;->this$0:Landroidx/compose/material3/J;
 
     const/4 v0, 0x0
 
-    invoke-virtual {p1, v0, p0}, Landroidx/compose/material3/e0;->a(Landroidx/compose/foundation/interaction/j;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
+    invoke-virtual {p1, v0, p0}, Landroidx/compose/material3/J;->a(Landroidx/compose/foundation/interaction/j;Lkotlin/coroutines/jvm/internal/ContinuationImpl;)Ljava/lang/Object;
 
     move-result-object p1
 

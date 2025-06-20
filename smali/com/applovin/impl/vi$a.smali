@@ -130,9 +130,9 @@
 .method public static a(I)Lcom/applovin/impl/vi$a;
     .locals 1
 
-    .line 1
     if-nez p0, :cond_0
 
+    .line 2
     sget-object p0, Lcom/applovin/impl/vi$a;->c:Lcom/applovin/impl/vi$a;
 
     return-object p0
@@ -142,10 +142,12 @@
 
     if-ne p0, v0, :cond_1
 
+    .line 3
     sget-object p0, Lcom/applovin/impl/vi$a;->d:Lcom/applovin/impl/vi$a;
 
     return-object p0
 
+    .line 4
     :cond_1
     sget-object p0, Lcom/applovin/impl/vi$a;->c:Lcom/applovin/impl/vi$a;
 
@@ -155,9 +157,9 @@
 .method private static synthetic a()[Lcom/applovin/impl/vi$a;
     .locals 3
 
-    .line 2
     const/4 v0, 0x3
 
+    .line 1
     new-array v0, v0, [Lcom/applovin/impl/vi$a;
 
     sget-object v1, Lcom/applovin/impl/vi$a;->b:Lcom/applovin/impl/vi$a;
@@ -232,7 +234,10 @@
 .method public b()I
     .locals 1
 
+    .line 1
     iget v0, p0, Lcom/applovin/impl/vi$a;->a:I
 
+    .line 2
+    .line 3
     return v0
 .end method

@@ -76,9 +76,9 @@
 .method public a(Lorg/json/JSONObject;)V
     .locals 2
 
+    .line 3
     iget-object v0, p0, Lcom/applovin/impl/en;->h:Lcom/applovin/impl/sdk/ad/b;
 
-    .line 3
     invoke-virtual {v0}, Lcom/applovin/impl/sdk/ad/AppLovinAdImpl;->getAdZone()Lcom/applovin/impl/h0;
 
     move-result-object v0
@@ -91,9 +91,9 @@
 
     invoke-static {p1, v1, v0}, Lcom/applovin/impl/sdk/utils/JsonUtils;->putString(Lorg/json/JSONObject;Ljava/lang/String;Ljava/lang/String;)V
 
+    .line 4
     iget-object v0, p0, Lcom/applovin/impl/en;->h:Lcom/applovin/impl/sdk/ad/b;
 
-    .line 4
     invoke-virtual {v0}, Lcom/applovin/impl/sdk/ad/b;->W()I
 
     move-result v0
@@ -102,9 +102,9 @@
 
     invoke-static {p1, v1, v0}, Lcom/applovin/impl/sdk/utils/JsonUtils;->putInt(Lorg/json/JSONObject;Ljava/lang/String;I)V
 
+    .line 5
     iget-object v0, p0, Lcom/applovin/impl/en;->h:Lcom/applovin/impl/sdk/ad/b;
 
-    .line 5
     invoke-virtual {v0}, Lcom/applovin/impl/sdk/AppLovinAdBase;->getClCode()Ljava/lang/String;
 
     move-result-object v0
@@ -195,8 +195,11 @@
 .method public f()Ljava/lang/String;
     .locals 1
 
+    .line 1
     const-string v0, "2.0/cr"
 
+    .line 2
+    .line 3
     return-object v0
 .end method
 

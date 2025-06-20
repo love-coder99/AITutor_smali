@@ -3,14 +3,14 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lzh/e;
+.implements Lka/e;
 
 
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "Lkotlin/jvm/internal/Lambda;",
-        "Lzh/e;"
+        "Lka/e;"
     }
 .end annotation
 
@@ -19,11 +19,11 @@
         "\u0000\u0014\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0008\u0003\u0010\u0007\u001a\u00020\u00042\u0006\u0010\u0001\u001a\u00020\u00002\u0006\u0010\u0003\u001a\u00020\u0002H\n\u00a2\u0006\u0004\u0008\u0005\u0010\u0006"
     }
     d2 = {
-        "Lh2/j;",
+        "LM0/j;",
         "size",
         "Landroidx/compose/ui/unit/LayoutDirection;",
         "layoutDirection",
-        "Lh2/h;",
+        "LM0/h;",
         "invoke-5SAbXVA",
         "(JLandroidx/compose/ui/unit/LayoutDirection;)J",
         "<anonymous>"
@@ -60,11 +60,11 @@
     .locals 2
 
     .line 1
-    check-cast p1, Lh2/j;
+    check-cast p1, LM0/j;
 
     .line 2
     .line 3
-    iget-wide v0, p1, Lh2/j;->a:J
+    iget-wide v0, p1, LM0/j;->a:J
 
     .line 4
     .line 5
@@ -80,11 +80,11 @@
     move-result-wide p1
 
     .line 11
-    new-instance v0, Lh2/h;
+    new-instance v0, LM0/h;
 
     .line 12
     .line 13
-    invoke-direct {v0, p1, p2}, Lh2/h;-><init>(J)V
+    invoke-direct {v0, p1, p2}, LM0/h;-><init>(J)V
 
     .line 14
     .line 15
@@ -125,7 +125,7 @@
     move-result p2
 
     .line 14
-    invoke-static {p2, p1}, Ly/f;->a(II)J
+    invoke-static {p2, p1}, Landroid/support/v4/media/session/a;->a(II)J
 
     .line 15
     .line 16

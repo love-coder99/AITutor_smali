@@ -4,7 +4,7 @@
 
 # interfaces
 .implements Landroidx/transition/TransitionSeekController;
-.implements Lw3/f;
+.implements LG1/f;
 
 
 # annotations
@@ -25,11 +25,11 @@
 
 .field private mIsReady:Z
 
-.field private mListenerCache:[Lm3/a;
+.field private mListenerCache:[Lu1/a;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "[",
-            "Lm3/a;"
+            "Lu1/a;"
         }
     .end annotation
 .end field
@@ -38,7 +38,7 @@
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/ArrayList<",
-            "Lm3/a;",
+            "Lu1/a;",
             ">;"
         }
     .end annotation
@@ -48,7 +48,7 @@
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/ArrayList<",
-            "Lm3/a;",
+            "Lu1/a;",
             ">;"
         }
     .end annotation
@@ -56,7 +56,7 @@
 
 .field private mResetToStartState:Ljava/lang/Runnable;
 
-.field private mSpringAnimation:Lw3/j;
+.field private mSpringAnimation:LG1/h;
 
 .field private final mVelocityTracker:Landroidx/transition/VelocityTracker1D;
 
@@ -96,7 +96,7 @@
 
     .line 14
     .line 15
-    iput-object p1, p0, Landroidx/transition/Transition$SeekController;->mListenerCache:[Lm3/a;
+    iput-object p1, p0, Landroidx/transition/Transition$SeekController;->mListenerCache:[Lu1/a;
 
     .line 16
     .line 17
@@ -116,13 +116,13 @@
     return-void
 .end method
 
-.method public static synthetic a(Landroidx/transition/Transition$SeekController;Lw3/h;FF)V
+.method public static synthetic a(Landroidx/transition/Transition$SeekController;LG1/g;FF)V
     .locals 1
 
     .line 1
     const/4 v0, 0x0
 
-    invoke-direct {p0, p1, v0, p2, p3}, Landroidx/transition/Transition$SeekController;->lambda$ensureAnimation$0(Lw3/h;ZFF)V
+    invoke-direct {p0, p1, v0, p2, p3}, Landroidx/transition/Transition$SeekController;->lambda$ensureAnimation$0(LG1/g;ZFF)V
 
     return-void
 .end method
@@ -167,7 +167,7 @@
     move-result v0
 
     .line 18
-    iget-object v1, p0, Landroidx/transition/Transition$SeekController;->mListenerCache:[Lm3/a;
+    iget-object v1, p0, Landroidx/transition/Transition$SeekController;->mListenerCache:[Lu1/a;
 
     .line 19
     .line 20
@@ -175,11 +175,11 @@
 
     .line 21
     .line 22
-    new-array v1, v0, [Lm3/a;
+    new-array v1, v0, [Lu1/a;
 
     .line 23
     .line 24
-    iput-object v1, p0, Landroidx/transition/Transition$SeekController;->mListenerCache:[Lm3/a;
+    iput-object v1, p0, Landroidx/transition/Transition$SeekController;->mListenerCache:[Lu1/a;
 
     .line 25
     .line 26
@@ -188,7 +188,7 @@
 
     .line 27
     .line 28
-    iget-object v2, p0, Landroidx/transition/Transition$SeekController;->mListenerCache:[Lm3/a;
+    iget-object v2, p0, Landroidx/transition/Transition$SeekController;->mListenerCache:[Lu1/a;
 
     .line 29
     .line 30
@@ -200,14 +200,14 @@
     move-result-object v1
 
     .line 34
-    check-cast v1, [Lm3/a;
+    check-cast v1, [Lu1/a;
 
     .line 35
     .line 36
     const/4 v2, 0x0
 
     .line 37
-    iput-object v2, p0, Landroidx/transition/Transition$SeekController;->mListenerCache:[Lm3/a;
+    iput-object v2, p0, Landroidx/transition/Transition$SeekController;->mListenerCache:[Lu1/a;
 
     .line 38
     .line 39
@@ -223,7 +223,7 @@
 
     .line 43
     .line 44
-    invoke-interface {v4, p0}, Lm3/a;->accept(Ljava/lang/Object;)V
+    invoke-interface {v4, p0}, Lu1/a;->accept(Ljava/lang/Object;)V
 
     .line 45
     .line 46
@@ -240,7 +240,7 @@
 
     .line 52
     :cond_2
-    iput-object v1, p0, Landroidx/transition/Transition$SeekController;->mListenerCache:[Lm3/a;
+    iput-object v1, p0, Landroidx/transition/Transition$SeekController;->mListenerCache:[Lu1/a;
 
     .line 53
     .line 54
@@ -253,7 +253,7 @@
     .locals 5
 
     .line 1
-    iget-object v0, p0, Landroidx/transition/Transition$SeekController;->mSpringAnimation:Lw3/j;
+    iget-object v0, p0, Landroidx/transition/Transition$SeekController;->mSpringAnimation:LG1/h;
 
     .line 2
     .line 3
@@ -289,258 +289,268 @@
     .line 16
     .line 17
     .line 18
-    new-instance v0, Lw3/j;
+    new-instance v0, LG1/h;
 
     .line 19
     .line 20
-    new-instance v1, Lw3/i;
+    new-instance v1, LD6/h;
 
     .line 21
     .line 22
-    invoke-direct {v1}, Lw3/i;-><init>()V
+    const/4 v2, 0x1
 
     .line 23
+    invoke-direct {v1, v2}, LD6/h;-><init>(I)V
+
     .line 24
     .line 25
-    invoke-direct {v0, v1}, Lw3/h;-><init>(Lw3/i;)V
-
     .line 26
-    .line 27
-    .line 28
-    const/4 v1, 0x0
+    const/4 v2, 0x0
 
+    .line 27
+    iput v2, v1, LD6/h;->c:F
+
+    .line 28
     .line 29
-    iput-object v1, v0, Lw3/j;->s:Lw3/k;
+    invoke-direct {v0, v1}, LG1/g;-><init>(LD6/h;)V
 
     .line 30
     .line 31
-    const v1, 0x7f7fffff    # Float.MAX_VALUE
-
     .line 32
-    .line 33
-    .line 34
-    iput v1, v0, Lw3/j;->t:F
-
-    .line 35
-    .line 36
     const/4 v1, 0x0
 
+    .line 33
+    iput-object v1, v0, LG1/h;->s:LG1/i;
+
+    .line 34
+    .line 35
+    const v1, 0x7f7fffff    # Float.MAX_VALUE
+
+    .line 36
     .line 37
-    iput-boolean v1, v0, Lw3/j;->u:Z
-
     .line 38
-    .line 39
-    iput-object v0, p0, Landroidx/transition/Transition$SeekController;->mSpringAnimation:Lw3/j;
+    iput v1, v0, LG1/h;->t:F
 
+    .line 39
     .line 40
+    const/4 v1, 0x0
+
     .line 41
-    new-instance v0, Lw3/k;
+    iput-boolean v1, v0, LG1/h;->u:Z
 
     .line 42
     .line 43
-    invoke-direct {v0}, Lw3/k;-><init>()V
+    iput-object v0, p0, Landroidx/transition/Transition$SeekController;->mSpringAnimation:LG1/h;
 
     .line 44
     .line 45
+    new-instance v0, LG1/i;
+
     .line 46
+    .line 47
+    invoke-direct {v0}, LG1/i;-><init>()V
+
+    .line 48
+    .line 49
+    .line 50
     const/high16 v2, 0x3f800000    # 1.0f
 
-    .line 47
-    .line 48
+    .line 51
+    .line 52
     float-to-double v2, v2
 
-    .line 49
-    iput-wide v2, v0, Lw3/k;->b:D
-
-    .line 50
-    .line 51
-    iput-boolean v1, v0, Lw3/k;->c:Z
-
-    .line 52
     .line 53
-    const/high16 v1, 0x43480000    # 200.0f
+    iput-wide v2, v0, LG1/i;->b:D
 
     .line 54
     .line 55
-    invoke-virtual {v0, v1}, Lw3/k;->a(F)V
+    iput-boolean v1, v0, LG1/i;->c:Z
 
     .line 56
     .line 57
+    const/high16 v1, 0x43480000    # 200.0f
+
     .line 58
-    iget-object v1, p0, Landroidx/transition/Transition$SeekController;->mSpringAnimation:Lw3/j;
-
     .line 59
-    .line 60
-    iput-object v0, v1, Lw3/j;->s:Lw3/k;
+    invoke-virtual {v0, v1}, LG1/i;->a(F)V
 
+    .line 60
     .line 61
     .line 62
-    iget-wide v2, p0, Landroidx/transition/Transition$SeekController;->mCurrentPlayTime:J
+    iget-object v1, p0, Landroidx/transition/Transition$SeekController;->mSpringAnimation:LG1/h;
 
     .line 63
     .line 64
-    long-to-float v0, v2
+    iput-object v0, v1, LG1/h;->s:LG1/i;
 
     .line 65
-    iput v0, v1, Lw3/h;->b:F
-
     .line 66
-    .line 67
-    const/4 v0, 0x1
+    iget-wide v2, p0, Landroidx/transition/Transition$SeekController;->mCurrentPlayTime:J
 
+    .line 67
     .line 68
-    iput-boolean v0, v1, Lw3/h;->c:Z
+    long-to-float v0, v2
 
     .line 69
-    .line 70
-    iget-boolean v0, v1, Lw3/h;->f:Z
+    iput v0, v1, LG1/g;->b:F
 
+    .line 70
     .line 71
+    const/4 v0, 0x1
+
     .line 72
-    if-nez v0, :cond_3
+    iput-boolean v0, v1, LG1/g;->c:Z
 
     .line 73
     .line 74
-    iget-object v0, v1, Lw3/h;->l:Ljava/util/ArrayList;
+    iget-boolean v0, v1, LG1/g;->f:Z
 
     .line 75
     .line 76
-    invoke-virtual {v0, p0}, Ljava/util/ArrayList;->contains(Ljava/lang/Object;)Z
+    if-nez v0, :cond_3
 
     .line 77
     .line 78
-    .line 79
-    move-result v1
+    iget-object v0, v1, LG1/g;->l:Ljava/util/ArrayList;
 
+    .line 79
     .line 80
-    if-nez v1, :cond_1
+    invoke-virtual {v0, p0}, Ljava/util/ArrayList;->contains(Ljava/lang/Object;)Z
 
     .line 81
     .line 82
+    .line 83
+    move-result v1
+
+    .line 84
+    if-nez v1, :cond_1
+
+    .line 85
+    .line 86
     invoke-virtual {v0, p0}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
-    .line 83
-    .line 84
-    .line 85
-    :cond_1
-    iget-object v0, p0, Landroidx/transition/Transition$SeekController;->mSpringAnimation:Lw3/j;
-
-    .line 86
     .line 87
-    iget-object v1, p0, Landroidx/transition/Transition$SeekController;->mVelocityTracker:Landroidx/transition/VelocityTracker1D;
-
     .line 88
     .line 89
-    invoke-virtual {v1}, Landroidx/transition/VelocityTracker1D;->calculateVelocity()F
+    :cond_1
+    iget-object v0, p0, Landroidx/transition/Transition$SeekController;->mSpringAnimation:LG1/h;
 
     .line 90
     .line 91
-    .line 92
-    move-result v1
+    iget-object v1, p0, Landroidx/transition/Transition$SeekController;->mVelocityTracker:Landroidx/transition/VelocityTracker1D;
 
+    .line 92
     .line 93
-    iput v1, v0, Lw3/h;->a:F
+    invoke-virtual {v1}, Landroidx/transition/VelocityTracker1D;->calculateVelocity()F
 
     .line 94
     .line 95
-    iget-object v0, p0, Landroidx/transition/Transition$SeekController;->mSpringAnimation:Lw3/j;
-
     .line 96
+    move-result v1
+
     .line 97
-    invoke-virtual {p0}, Landroidx/transition/Transition$SeekController;->getDurationMillis()J
+    iput v1, v0, LG1/g;->a:F
 
     .line 98
     .line 99
-    .line 100
-    move-result-wide v1
+    iget-object v0, p0, Landroidx/transition/Transition$SeekController;->mSpringAnimation:LG1/h;
 
+    .line 100
     .line 101
-    const-wide/16 v3, 0x1
+    invoke-virtual {p0}, Landroidx/transition/Transition$SeekController;->getDurationMillis()J
 
     .line 102
     .line 103
-    add-long/2addr v1, v3
-
     .line 104
-    long-to-float v1, v1
+    move-result-wide v1
 
     .line 105
-    iput v1, v0, Lw3/h;->g:F
+    const-wide/16 v3, 0x1
 
     .line 106
     .line 107
-    iget-object v0, p0, Landroidx/transition/Transition$SeekController;->mSpringAnimation:Lw3/j;
+    add-long/2addr v1, v3
 
     .line 108
+    long-to-float v1, v1
+
     .line 109
-    const/high16 v1, -0x40800000    # -1.0f
+    iput v1, v0, LG1/g;->g:F
 
     .line 110
     .line 111
-    iput v1, v0, Lw3/h;->h:F
+    iget-object v0, p0, Landroidx/transition/Transition$SeekController;->mSpringAnimation:LG1/h;
 
     .line 112
     .line 113
-    const/high16 v1, 0x40800000    # 4.0f
+    const/high16 v1, -0x40800000    # -1.0f
 
     .line 114
     .line 115
-    iput v1, v0, Lw3/h;->j:F
+    iput v1, v0, LG1/g;->h:F
 
     .line 116
     .line 117
-    new-instance v1, Landroidx/transition/b;
+    const/high16 v1, 0x40800000    # 4.0f
 
     .line 118
     .line 119
-    invoke-direct {v1, p0}, Landroidx/transition/b;-><init>(Landroidx/transition/Transition$SeekController;)V
+    iput v1, v0, LG1/g;->j:F
 
     .line 120
     .line 121
+    new-instance v1, Landroidx/transition/a;
+
     .line 122
-    iget-object v0, v0, Lw3/h;->k:Ljava/util/ArrayList;
-
     .line 123
-    .line 124
-    invoke-virtual {v0, v1}, Ljava/util/ArrayList;->contains(Ljava/lang/Object;)Z
+    invoke-direct {v1, p0}, Landroidx/transition/a;-><init>(Landroidx/transition/Transition$SeekController;)V
 
+    .line 124
     .line 125
     .line 126
-    .line 127
-    move-result v2
+    iget-object v0, v0, LG1/g;->k:Ljava/util/ArrayList;
 
+    .line 127
     .line 128
-    if-nez v2, :cond_2
+    invoke-virtual {v0, v1}, Ljava/util/ArrayList;->contains(Ljava/lang/Object;)Z
 
     .line 129
     .line 130
-    invoke-virtual {v0, v1}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
-
     .line 131
-    .line 132
-    .line 133
-    :cond_2
-    return-void
+    move-result v2
 
+    .line 132
+    if-nez v2, :cond_2
+
+    .line 133
     .line 134
-    :cond_3
-    new-instance v0, Ljava/lang/UnsupportedOperationException;
+    invoke-virtual {v0, v1}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
     .line 135
     .line 136
-    const-string v1, "Error: Update listeners must be added beforethe animation."
-
     .line 137
+    :cond_2
+    return-void
+
     .line 138
-    invoke-direct {v0, v1}, Ljava/lang/UnsupportedOperationException;-><init>(Ljava/lang/String;)V
+    :cond_3
+    new-instance v0, Ljava/lang/UnsupportedOperationException;
 
     .line 139
     .line 140
+    const-string v1, "Error: Update listeners must be added beforethe animation."
+
     .line 141
+    .line 142
+    invoke-direct {v0, v1}, Ljava/lang/UnsupportedOperationException;-><init>(Ljava/lang/String;)V
+
+    .line 143
+    .line 144
+    .line 145
     throw v0
 .end method
 
-.method private synthetic lambda$ensureAnimation$0(Lw3/h;ZFF)V
+.method private synthetic lambda$ensureAnimation$0(LG1/g;ZFF)V
     .locals 4
 
     .line 1
@@ -700,12 +710,16 @@
 
 
 # virtual methods
-.method public addOnProgressChangedListener(Lm3/a;)V
+.method public addOnProgressChangedListener(Lu1/a;)V
     .locals 1
+    .param p1    # Lu1/a;
+        .annotation build Landroidx/annotation/NonNull;
+        .end annotation
+    .end param
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
-            "Lm3/a;",
+            "Lu1/a;",
             ")V"
         }
     .end annotation
@@ -745,12 +759,16 @@
     return-void
 .end method
 
-.method public addOnReadyListener(Lm3/a;)V
+.method public addOnReadyListener(Lu1/a;)V
     .locals 1
+    .param p1    # Lu1/a;
+        .annotation build Landroidx/annotation/NonNull;
+        .end annotation
+    .end param
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
-            "Lm3/a;",
+            "Lu1/a;",
             ")V"
         }
     .end annotation
@@ -768,7 +786,7 @@
 
     .line 6
     .line 7
-    invoke-interface {p1, p0}, Lm3/a;->accept(Ljava/lang/Object;)V
+    invoke-interface {p1, p0}, Lu1/a;->accept(Ljava/lang/Object;)V
 
     .line 8
     .line 9
@@ -820,7 +838,7 @@
     .line 2
     .line 3
     .line 4
-    iget-object v0, p0, Landroidx/transition/Transition$SeekController;->mSpringAnimation:Lw3/j;
+    iget-object v0, p0, Landroidx/transition/Transition$SeekController;->mSpringAnimation:LG1/h;
 
     .line 5
     .line 6
@@ -842,7 +860,7 @@
     long-to-float v1, v1
 
     .line 14
-    invoke-virtual {v0, v1}, Lw3/j;->b(F)V
+    invoke-virtual {v0, v1}, LG1/h;->b(F)V
 
     .line 15
     .line 16
@@ -852,6 +870,10 @@
 
 .method public animateToStart(Ljava/lang/Runnable;)V
     .locals 1
+    .param p1    # Ljava/lang/Runnable;
+        .annotation build Landroidx/annotation/NonNull;
+        .end annotation
+    .end param
 
     .line 1
     iput-object p1, p0, Landroidx/transition/Transition$SeekController;->mResetToStartState:Ljava/lang/Runnable;
@@ -863,14 +885,14 @@
     .line 4
     .line 5
     .line 6
-    iget-object p1, p0, Landroidx/transition/Transition$SeekController;->mSpringAnimation:Lw3/j;
+    iget-object p1, p0, Landroidx/transition/Transition$SeekController;->mSpringAnimation:LG1/h;
 
     .line 7
     .line 8
     const/4 v0, 0x0
 
     .line 9
-    invoke-virtual {p1, v0}, Lw3/j;->b(F)V
+    invoke-virtual {p1, v0}, LG1/h;->b(F)V
 
     .line 10
     .line 11
@@ -1020,12 +1042,15 @@
 .method public isReady()Z
     .locals 1
 
+    .line 1
     iget-boolean v0, p0, Landroidx/transition/Transition$SeekController;->mIsReady:Z
 
+    .line 2
+    .line 3
     return v0
 .end method
 
-.method public onAnimationUpdate(Lw3/h;FF)V
+.method public onAnimationUpdate(LG1/g;FF)V
     .locals 4
 
     .line 1
@@ -1102,11 +1127,19 @@
 
 .method public onTransitionCancel(Landroidx/transition/Transition;)V
     .locals 0
+    .param p1    # Landroidx/transition/Transition;
+        .annotation build Landroidx/annotation/NonNull;
+        .end annotation
+    .end param
 
+    .line 1
     const/4 p1, 0x1
 
+    .line 2
     iput-boolean p1, p0, Landroidx/transition/Transition$SeekController;->mIsCanceled:Z
 
+    .line 3
+    .line 4
     return-void
 .end method
 
@@ -1160,11 +1193,11 @@
     move-result-object v2
 
     .line 22
-    check-cast v2, Lm3/a;
+    check-cast v2, Lu1/a;
 
     .line 23
     .line 24
-    invoke-interface {v2, p0}, Lm3/a;->accept(Ljava/lang/Object;)V
+    invoke-interface {v2, p0}, Lu1/a;->accept(Ljava/lang/Object;)V
 
     .line 25
     .line 26
@@ -1185,12 +1218,16 @@
     return-void
 .end method
 
-.method public removeOnProgressChangedListener(Lm3/a;)V
+.method public removeOnProgressChangedListener(Lu1/a;)V
     .locals 1
+    .param p1    # Lu1/a;
+        .annotation build Landroidx/annotation/NonNull;
+        .end annotation
+    .end param
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
-            "Lm3/a;",
+            "Lu1/a;",
             ")V"
         }
     .end annotation
@@ -1213,12 +1250,16 @@
     return-void
 .end method
 
-.method public removeOnReadyListener(Lm3/a;)V
+.method public removeOnReadyListener(Lu1/a;)V
     .locals 1
+    .param p1    # Lu1/a;
+        .annotation build Landroidx/annotation/NonNull;
+        .end annotation
+    .end param
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
-            "Lm3/a;",
+            "Lu1/a;",
             ")V"
         }
     .end annotation
@@ -1268,7 +1309,7 @@
     .locals 2
 
     .line 1
-    iget-object v0, p0, Landroidx/transition/Transition$SeekController;->mSpringAnimation:Lw3/j;
+    iget-object v0, p0, Landroidx/transition/Transition$SeekController;->mSpringAnimation:LG1/h;
 
     .line 2
     .line 3
@@ -1323,7 +1364,7 @@
     .locals 5
 
     .line 1
-    iget-object v0, p0, Landroidx/transition/Transition$SeekController;->mSpringAnimation:Lw3/j;
+    iget-object v0, p0, Landroidx/transition/Transition$SeekController;->mSpringAnimation:LG1/h;
 
     .line 2
     .line 3

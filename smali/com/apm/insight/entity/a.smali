@@ -32,6 +32,7 @@
     .line 3
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
+    .line 4
     iput-object p1, p0, Lcom/apm/insight/entity/a;->a:Lorg/json/JSONObject;
 
     return-void
@@ -39,6 +40,10 @@
 
 .method public static a(JLandroid/content/Context;Ljava/lang/Throwable;)Lcom/apm/insight/entity/a;
     .locals 4
+    .param p3    # Ljava/lang/Throwable;
+        .annotation build Landroidx/annotation/NonNull;
+        .end annotation
+    .end param
 
     const-wide/16 v0, 0x0
 
@@ -57,38 +62,38 @@
 
     invoke-direct {v0}, Lcom/apm/insight/entity/a;-><init>()V
 
-    const-string v1, "isJava"
-
-    const/4 v2, 0x1
+    const/4 v1, 0x1
 
     .line 3
-    invoke-static {v2}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+    invoke-static {v1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
-    move-result-object v3
+    move-result-object v2
 
-    invoke-virtual {v0, v1, v3}, Lcom/apm/insight/entity/a;->a(Ljava/lang/String;Ljava/lang/Object;)V
+    const-string v3, "isJava"
 
-    const-string v1, "data"
+    invoke-virtual {v0, v3, v2}, Lcom/apm/insight/entity/a;->a(Ljava/lang/String;Ljava/lang/Object;)V
 
     .line 4
+    const-string v2, "data"
+
     invoke-static {p3}, Lcom/apm/insight/l/m;->a(Ljava/lang/Throwable;)Ljava/lang/String;
 
     move-result-object p3
 
-    invoke-virtual {v0, v1, p3}, Lcom/apm/insight/entity/a;->a(Ljava/lang/String;Ljava/lang/Object;)V
-
-    const-string p3, "crash_time"
+    invoke-virtual {v0, v2, p3}, Lcom/apm/insight/entity/a;->a(Ljava/lang/String;Ljava/lang/Object;)V
 
     .line 5
     invoke-static {p0, p1}, Ljava/lang/Long;->valueOf(J)Ljava/lang/Long;
 
     move-result-object p0
 
-    invoke-virtual {v0, p3, p0}, Lcom/apm/insight/entity/a;->a(Ljava/lang/String;Ljava/lang/Object;)V
+    const-string p1, "crash_time"
 
-    const-string p0, "process_name"
+    invoke-virtual {v0, p1, p0}, Lcom/apm/insight/entity/a;->a(Ljava/lang/String;Ljava/lang/Object;)V
 
     .line 6
+    const-string p0, "process_name"
+
     invoke-static {p2}, Lcom/apm/insight/l/a;->d(Landroid/content/Context;)Ljava/lang/String;
 
     move-result-object p1
@@ -102,14 +107,14 @@
 
     if-nez p0, :cond_1
 
-    const-string p0, "remote_process"
-
     .line 8
-    invoke-static {v2}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+    invoke-static {v1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
-    move-result-object p1
+    move-result-object p0
 
-    invoke-virtual {v0, p0, p1}, Lcom/apm/insight/entity/a;->a(Ljava/lang/String;Ljava/lang/Object;)V
+    const-string p1, "remote_process"
+
+    invoke-virtual {v0, p1, p0}, Lcom/apm/insight/entity/a;->a(Ljava/lang/String;Ljava/lang/Object;)V
 
     :cond_1
     return-object v0
@@ -118,26 +123,27 @@
 .method private a(Ljava/lang/String;Lorg/json/JSONArray;)Lcom/apm/insight/entity/a;
     .locals 2
 
+    .line 63
     iget-object v0, p0, Lcom/apm/insight/entity/a;->a:Lorg/json/JSONObject;
 
+    .line 64
     const-string v1, "custom_long"
 
-    .line 53
     invoke-virtual {v0, v1}, Lorg/json/JSONObject;->optJSONObject(Ljava/lang/String;)Lorg/json/JSONObject;
 
     move-result-object v0
 
     if-nez v0, :cond_0
 
-    .line 54
+    .line 65
     new-instance v0, Lorg/json/JSONObject;
 
     invoke-direct {v0}, Lorg/json/JSONObject;-><init>()V
 
-    .line 55
+    .line 66
     invoke-virtual {p0, v1, v0}, Lcom/apm/insight/entity/a;->a(Ljava/lang/String;Ljava/lang/Object;)V
 
-    .line 56
+    .line 67
     :cond_0
     :try_start_0
     invoke-virtual {v0, p1, p2}, Lorg/json/JSONObject;->put(Ljava/lang/String;Ljava/lang/Object;)Lorg/json/JSONObject;
@@ -155,7 +161,7 @@
 
     return-void
 
-    .line 61
+    .line 52
     :cond_0
     invoke-virtual {p0, p1}, Lorg/json/JSONObject;->optJSONObject(Ljava/lang/String;)Lorg/json/JSONObject;
 
@@ -163,16 +169,16 @@
 
     if-nez v0, :cond_1
 
-    .line 62
+    .line 53
     :try_start_0
     new-instance v0, Lorg/json/JSONObject;
 
     invoke-direct {v0}, Lorg/json/JSONObject;-><init>()V
 
-    .line 63
+    .line 54
     invoke-virtual {p0, p1, v0}, Lorg/json/JSONObject;->put(Ljava/lang/String;Ljava/lang/Object;)Lorg/json/JSONObject;
 
-    .line 64
+    .line 55
     :cond_1
     invoke-virtual {v0, p2, p3}, Lorg/json/JSONObject;->put(Ljava/lang/String;Ljava/lang/Object;)Lorg/json/JSONObject;
     :try_end_0
@@ -185,16 +191,16 @@
 .method public static a(Lorg/json/JSONObject;Ljava/lang/Throwable;)V
     .locals 3
 
+    .line 15
     const-string v0, "npth_err_info"
 
-    .line 18
     invoke-virtual {p0, v0}, Lorg/json/JSONObject;->opt(Ljava/lang/String;)Ljava/lang/Object;
 
     move-result-object v1
 
     if-nez v1, :cond_0
 
-    .line 19
+    .line 16
     :try_start_0
     invoke-static {p1}, Lcom/apm/insight/l/m;->a(Ljava/lang/Throwable;)Ljava/lang/String;
 
@@ -215,7 +221,7 @@
 
     if-ge v1, v2, :cond_2
 
-    .line 20
+    .line 17
     new-instance v2, Ljava/lang/StringBuilder;
 
     invoke-direct {v2, v0}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
@@ -232,7 +238,7 @@
 
     if-nez v2, :cond_1
 
-    .line 21
+    .line 18
     :try_start_1
     new-instance v2, Ljava/lang/StringBuilder;
 
@@ -283,7 +289,7 @@
 
     if-eqz p1, :cond_0
 
-    .line 16
+    .line 13
     :try_start_0
     invoke-interface {p1}, Ljava/util/Map;->entrySet()Ljava/util/Set;
 
@@ -306,7 +312,7 @@
 
     check-cast v0, Ljava/util/Map$Entry;
 
-    .line 17
+    .line 14
     invoke-interface {v0}, Ljava/util/Map$Entry;->getKey()Ljava/lang/Object;
 
     move-result-object v1
@@ -335,10 +341,10 @@
 
     move-object/from16 v1, p1
 
+    .line 44
     :try_start_0
     const-string v2, "storage"
 
-    .line 46
     invoke-virtual {v0, v2, v1}, Lorg/json/JSONObject;->put(Ljava/lang/String;Ljava/lang/Object;)Lorg/json/JSONObject;
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
@@ -348,28 +354,29 @@
     :catchall_0
     nop
 
+    .line 45
     :goto_0
     const-string v2, "inner_free"
 
-    .line 47
     invoke-virtual {v1, v2}, Lorg/json/JSONObject;->optLong(Ljava/lang/String;)J
 
     move-result-wide v3
 
+    .line 46
     const-string v5, "sdcard_free"
 
-    .line 48
     invoke-virtual {v1, v5}, Lorg/json/JSONObject;->optLong(Ljava/lang/String;)J
 
     move-result-wide v6
 
+    .line 47
     const-string v8, "inner_free_real"
 
-    .line 49
     invoke-virtual {v1, v8}, Lorg/json/JSONObject;->optLong(Ljava/lang/String;)J
 
     move-result-wide v9
 
+    .line 48
     const-string v1, "64M - "
 
     const-string v11, "1M - 64M"
@@ -530,17 +537,17 @@
 
     move-object v1, v11
 
+    .line 49
     :cond_e
     :goto_3
     const-string v6, "filters"
 
-    .line 50
     invoke-static {v0, v6, v2, v3}, Lcom/apm/insight/entity/a;->a(Lorg/json/JSONObject;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 51
+    .line 50
     invoke-static {v0, v6, v8, v4}, Lcom/apm/insight/entity/a;->a(Lorg/json/JSONObject;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 52
+    .line 51
     invoke-static {v0, v6, v5, v1}, Lcom/apm/insight/entity/a;->a(Lorg/json/JSONObject;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
 
     return-void
@@ -549,7 +556,7 @@
 .method public static a(Ljava/lang/String;)Z
     .locals 4
 
-    .line 13
+    .line 9
     invoke-static {p0}, Lcom/apm/insight/nativecrash/b;->c(Ljava/lang/String;)I
 
     move-result p0
@@ -581,7 +588,7 @@
 
     if-eqz p1, :cond_7
 
-    .line 15
+    .line 11
     invoke-virtual {p1}, Lorg/json/JSONObject;->length()I
 
     move-result v0
@@ -590,14 +597,14 @@
 
     goto/16 :goto_3
 
-    .line 16
+    .line 12
     :cond_0
     :try_start_0
     invoke-virtual {p1}, Lorg/json/JSONObject;->keys()Ljava/util/Iterator;
 
     move-result-object v0
 
-    .line 17
+    .line 13
     :cond_1
     :goto_0
     invoke-interface {v0}, Ljava/util/Iterator;->hasNext()Z
@@ -606,21 +613,21 @@
 
     if-eqz v1, :cond_6
 
-    .line 18
+    .line 14
     invoke-interface {v0}, Ljava/util/Iterator;->next()Ljava/lang/Object;
 
     move-result-object v1
 
     check-cast v1, Ljava/lang/String;
 
-    .line 19
+    .line 15
     invoke-virtual {p0, v1}, Lorg/json/JSONObject;->opt(Ljava/lang/String;)Ljava/lang/Object;
 
     move-result-object v2
 
     if-nez v2, :cond_2
 
-    .line 20
+    .line 16
     invoke-virtual {p1, v1}, Lorg/json/JSONObject;->opt(Ljava/lang/String;)Ljava/lang/Object;
 
     move-result-object v2
@@ -634,13 +641,13 @@
 
     goto :goto_2
 
-    .line 21
+    .line 17
     :cond_2
     instance-of v3, v2, Lorg/json/JSONObject;
 
     if-eqz v3, :cond_3
 
-    .line 22
+    .line 18
     invoke-virtual {p0, v1}, Lorg/json/JSONObject;->getJSONObject(Ljava/lang/String;)Lorg/json/JSONObject;
 
     move-result-object v2
@@ -653,23 +660,23 @@
 
     goto :goto_0
 
-    .line 23
+    .line 19
     :cond_3
     instance-of v3, v2, Lorg/json/JSONArray;
 
     if-eqz v3, :cond_5
 
-    .line 24
+    .line 20
     invoke-virtual {p1, v1}, Lorg/json/JSONObject;->optJSONArray(Ljava/lang/String;)Lorg/json/JSONArray;
 
     move-result-object v1
 
     if-eqz v1, :cond_1
 
-    .line 25
+    .line 21
     check-cast v2, Lorg/json/JSONArray;
 
-    .line 26
+    .line 22
     invoke-virtual {v2}, Lorg/json/JSONArray;->length()I
 
     move-result v3
@@ -680,7 +687,7 @@
 
     if-ne v3, v4, :cond_4
 
-    .line 27
+    .line 23
     invoke-virtual {v2, v5}, Lorg/json/JSONArray;->opt(I)Ljava/lang/Object;
 
     move-result-object v3
@@ -689,7 +696,7 @@
 
     if-eqz v3, :cond_4
 
-    .line 28
+    .line 24
     invoke-virtual {v1, v5}, Lorg/json/JSONArray;->opt(I)Ljava/lang/Object;
 
     move-result-object v3
@@ -698,7 +705,7 @@
 
     if-eqz v3, :cond_4
 
-    .line 29
+    .line 25
     invoke-virtual {v2, v5}, Lorg/json/JSONArray;->getJSONObject(I)Lorg/json/JSONObject;
 
     move-result-object v2
@@ -711,7 +718,7 @@
 
     goto :goto_0
 
-    .line 30
+    .line 26
     :cond_4
     :goto_1
     invoke-virtual {v1}, Lorg/json/JSONArray;->length()I
@@ -720,7 +727,7 @@
 
     if-ge v5, v3, :cond_1
 
-    .line 31
+    .line 27
     invoke-virtual {v1, v5}, Lorg/json/JSONArray;->get(I)Ljava/lang/Object;
 
     move-result-object v3
@@ -731,7 +738,7 @@
 
     goto :goto_1
 
-    .line 32
+    .line 28
     :cond_5
     invoke-virtual {p1, v1}, Lorg/json/JSONObject;->opt(Ljava/lang/String;)Ljava/lang/Object;
 
@@ -746,7 +753,7 @@
     :cond_6
     return-void
 
-    .line 33
+    .line 29
     :goto_2
     invoke-virtual {p0}, Ljava/lang/Throwable;->printStackTrace()V
 
@@ -780,7 +787,7 @@
 .method public static c(Ljava/lang/String;)Z
     .locals 1
 
-    .line 2
+    .line 1
     invoke-static {p0}, Lcom/apm/insight/nativecrash/b;->b(Ljava/lang/String;)I
 
     move-result p0
@@ -804,19 +811,19 @@
 .method public final a(ILjava/lang/String;)Lcom/apm/insight/entity/a;
     .locals 2
 
+    .line 35
     :try_start_0
     iget-object v0, p0, Lcom/apm/insight/entity/a;->a:Lorg/json/JSONObject;
 
     const-string v1, "miniapp_id"
 
-    .line 37
     invoke-virtual {v0, v1, p1}, Lorg/json/JSONObject;->put(Ljava/lang/String;I)Lorg/json/JSONObject;
 
+    .line 36
     iget-object p1, p0, Lcom/apm/insight/entity/a;->a:Lorg/json/JSONObject;
 
     const-string v0, "miniapp_version"
 
-    .line 38
     invoke-virtual {p1, v0, p2}, Lorg/json/JSONObject;->put(Ljava/lang/String;Ljava/lang/Object;)Lorg/json/JSONObject;
     :try_end_0
     .catch Lorg/json/JSONException; {:try_start_0 .. :try_end_0} :catch_0
@@ -826,7 +833,7 @@
     :catch_0
     move-exception p1
 
-    .line 39
+    .line 37
     invoke-virtual {p1}, Ljava/lang/Throwable;->printStackTrace()V
 
     :goto_0
@@ -836,17 +843,17 @@
 .method public final a(J)Lcom/apm/insight/entity/a;
     .locals 3
 
+    .line 19
     :try_start_0
     const-string v0, "app_start_time"
 
-    .line 22
     invoke-static {p1, p2}, Ljava/lang/Long;->valueOf(J)Ljava/lang/Long;
 
     move-result-object v1
 
     invoke-virtual {p0, v0, v1}, Lcom/apm/insight/entity/a;->a(Ljava/lang/String;Ljava/lang/Object;)V
 
-    .line 23
+    .line 20
     new-instance v0, Ljava/text/SimpleDateFormat;
 
     const-string v1, "yyyy_MM_dd_HH_mm_ss"
@@ -857,7 +864,7 @@
 
     invoke-direct {v0, v1, v2}, Ljava/text/SimpleDateFormat;-><init>(Ljava/lang/String;Ljava/util/Locale;)V
 
-    .line 24
+    .line 21
     new-instance v1, Ljava/util/Date;
 
     invoke-direct {v1, p1, p2}, Ljava/util/Date;-><init>(J)V
@@ -866,9 +873,9 @@
 
     move-result-object p1
 
+    .line 22
     const-string p2, "app_start_time_readable"
 
-    .line 25
     invoke-virtual {p0, p2, p1}, Lcom/apm/insight/entity/a;->a(Ljava/lang/String;Ljava/lang/Object;)V
     :try_end_0
     .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
@@ -878,7 +885,7 @@
     :catch_0
     move-exception p1
 
-    .line 26
+    .line 23
     invoke-virtual {p1}, Ljava/lang/Throwable;->printStackTrace()V
 
     :goto_0
@@ -888,7 +895,7 @@
 .method public final a(Lcom/apm/insight/entity/Header;)Lcom/apm/insight/entity/a;
     .locals 2
 
-    .line 14
+    .line 10
     invoke-virtual {p1}, Lcom/apm/insight/entity/Header;->f()Lorg/json/JSONObject;
 
     move-result-object v0
@@ -897,6 +904,7 @@
 
     invoke-virtual {p0, v1, v0}, Lcom/apm/insight/entity/a;->a(Ljava/lang/String;Ljava/lang/Object;)V
 
+    .line 11
     iput-object p1, p0, Lcom/apm/insight/entity/a;->b:Lcom/apm/insight/entity/Header;
 
     return-object p0
@@ -905,7 +913,7 @@
 .method public final a(Lcom/apm/insight/runtime/a/b;)Lcom/apm/insight/entity/a;
     .locals 2
 
-    .line 27
+    .line 24
     invoke-virtual {p1}, Lcom/apm/insight/runtime/a/b;->g()Lorg/json/JSONObject;
 
     move-result-object v0
@@ -914,9 +922,9 @@
 
     invoke-virtual {p0, v1, v0}, Lcom/apm/insight/entity/a;->a(Ljava/lang/String;Ljava/lang/Object;)V
 
+    .line 25
     const-string v0, "activity_track"
 
-    .line 28
     invoke-virtual {p1}, Lcom/apm/insight/runtime/a/b;->i()Lorg/json/JSONArray;
 
     move-result-object p1
@@ -929,23 +937,24 @@
 .method public final a(Ljava/lang/String;Ljava/lang/String;)Lcom/apm/insight/entity/a;
     .locals 3
 
+    .line 68
     iget-object v0, p0, Lcom/apm/insight/entity/a;->a:Lorg/json/JSONObject;
 
+    .line 69
     const-string v1, "data"
 
-    .line 57
     invoke-virtual {v0, v1}, Lorg/json/JSONObject;->opt(Ljava/lang/String;)Ljava/lang/Object;
 
     move-result-object v0
 
-    .line 58
+    .line 70
     instance-of v1, v0, Lorg/json/JSONArray;
 
     const-string v2, "filters"
 
     if-eqz v1, :cond_0
 
-    .line 59
+    .line 71
     check-cast v0, Lorg/json/JSONArray;
 
     const/4 v1, 0x0
@@ -958,10 +967,11 @@
 
     goto :goto_0
 
+    .line 72
     :cond_0
     iget-object v0, p0, Lcom/apm/insight/entity/a;->a:Lorg/json/JSONObject;
 
-    .line 60
+    .line 73
     invoke-static {v0, v2, p1, p2}, Lcom/apm/insight/entity/a;->a(Lorg/json/JSONObject;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
 
     :goto_0
@@ -980,16 +990,16 @@
         }
     .end annotation
 
-    .line 40
+    .line 38
     new-instance v0, Lorg/json/JSONArray;
 
     invoke-direct {v0}, Lorg/json/JSONArray;-><init>()V
 
+    .line 39
     const-string v1, "patch_info"
 
     if-eqz p1, :cond_2
 
-    .line 41
     invoke-interface {p1}, Ljava/util/List;->isEmpty()Z
 
     move-result v2
@@ -998,7 +1008,7 @@
 
     goto :goto_1
 
-    .line 42
+    .line 40
     :cond_0
     invoke-interface {p1}, Ljava/util/List;->iterator()Ljava/util/Iterator;
 
@@ -1017,18 +1027,18 @@
 
     check-cast v2, Ljava/lang/String;
 
-    .line 43
+    .line 41
     invoke-virtual {v0, v2}, Lorg/json/JSONArray;->put(Ljava/lang/Object;)Lorg/json/JSONArray;
 
     goto :goto_0
 
-    .line 44
+    .line 42
     :cond_1
     invoke-virtual {p0, v1, v0}, Lcom/apm/insight/entity/a;->a(Ljava/lang/String;Ljava/lang/Object;)V
 
     return-object p0
 
-    .line 45
+    .line 43
     :cond_2
     :goto_1
     invoke-virtual {p0, v1, v0}, Lcom/apm/insight/entity/a;->a(Ljava/lang/String;Ljava/lang/Object;)V
@@ -1049,24 +1059,25 @@
         }
     .end annotation
 
-    .line 29
+    .line 26
     new-instance v0, Lorg/json/JSONArray;
 
     invoke-direct {v0}, Lorg/json/JSONArray;-><init>()V
 
+    .line 27
     const-string v1, "plugin_info"
 
     if-nez p1, :cond_0
 
+    .line 28
     :try_start_0
     iget-object p1, p0, Lcom/apm/insight/entity/a;->a:Lorg/json/JSONObject;
 
-    .line 30
     invoke-virtual {p1, v1, v0}, Lorg/json/JSONObject;->put(Ljava/lang/String;Ljava/lang/Object;)Lorg/json/JSONObject;
 
     return-object p0
 
-    .line 31
+    .line 29
     :cond_0
     invoke-interface {p1}, Ljava/util/Map;->keySet()Ljava/util/Set;
 
@@ -1089,34 +1100,34 @@
 
     check-cast v3, Ljava/lang/String;
 
-    .line 32
+    .line 30
     new-instance v4, Lorg/json/JSONObject;
 
     invoke-direct {v4}, Lorg/json/JSONObject;-><init>()V
 
+    .line 31
     const-string v5, "package_name"
 
-    .line 33
     invoke-virtual {v4, v5, v3}, Lorg/json/JSONObject;->put(Ljava/lang/String;Ljava/lang/Object;)Lorg/json/JSONObject;
 
+    .line 32
     const-string v5, "version_code"
 
-    .line 34
     invoke-interface {p1, v3}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object v3
 
     invoke-virtual {v4, v5, v3}, Lorg/json/JSONObject;->put(Ljava/lang/String;Ljava/lang/Object;)Lorg/json/JSONObject;
 
-    .line 35
+    .line 33
     invoke-virtual {v0, v4}, Lorg/json/JSONArray;->put(Ljava/lang/Object;)Lorg/json/JSONArray;
 
     goto :goto_0
 
+    .line 34
     :cond_1
     iget-object p1, p0, Lcom/apm/insight/entity/a;->a:Lorg/json/JSONObject;
 
-    .line 36
     invoke-virtual {p1, v1, v0}, Lorg/json/JSONObject;->put(Ljava/lang/String;Ljava/lang/Object;)Lorg/json/JSONObject;
     :try_end_0
     .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
@@ -1128,9 +1139,9 @@
 .method public final a(Lorg/json/JSONObject;)Lcom/apm/insight/entity/a;
     .locals 1
 
+    .line 12
     const-string v0, "header"
 
-    .line 15
     invoke-virtual {p0, v0, p1}, Lcom/apm/insight/entity/a;->a(Ljava/lang/String;Ljava/lang/Object;)V
 
     return-object p0
@@ -1138,11 +1149,19 @@
 
 .method public final a(Ljava/lang/String;Ljava/lang/Object;)V
     .locals 1
+    .param p1    # Ljava/lang/String;
+        .annotation build Landroidx/annotation/NonNull;
+        .end annotation
+    .end param
+    .param p2    # Ljava/lang/Object;
+        .annotation build Landroidx/annotation/Nullable;
+        .end annotation
+    .end param
 
+    .line 56
     :try_start_0
     iget-object v0, p0, Lcom/apm/insight/entity/a;->a:Lorg/json/JSONObject;
 
-    .line 65
     invoke-virtual {v0, p1, p2}, Lorg/json/JSONObject;->put(Ljava/lang/String;Ljava/lang/Object;)Lorg/json/JSONObject;
     :try_end_0
     .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
@@ -1152,7 +1171,7 @@
     :catch_0
     move-exception p1
 
-    .line 66
+    .line 57
     invoke-static {p1}, Lcom/apm/insight/a;->b(Ljava/lang/Throwable;)V
 
     return-void
@@ -1161,16 +1180,17 @@
 .method public final a()Z
     .locals 5
 
+    .line 58
     iget-object v0, p0, Lcom/apm/insight/entity/a;->a:Lorg/json/JSONObject;
 
+    .line 59
     const-string v1, "data"
 
-    .line 9
     invoke-virtual {v0, v1}, Lorg/json/JSONObject;->opt(Ljava/lang/String;)Ljava/lang/Object;
 
     move-result-object v0
 
-    .line 10
+    .line 60
     instance-of v1, v0, Lorg/json/JSONArray;
 
     const/4 v2, 0x1
@@ -1181,7 +1201,7 @@
 
     if-eqz v1, :cond_1
 
-    .line 11
+    .line 61
     check-cast v0, Lorg/json/JSONArray;
 
     invoke-virtual {v0, v4}, Lorg/json/JSONArray;->optJSONObject(I)Lorg/json/JSONObject;
@@ -1199,10 +1219,10 @@
     :cond_0
     return v4
 
+    .line 62
     :cond_1
     iget-object v0, p0, Lcom/apm/insight/entity/a;->a:Lorg/json/JSONObject;
 
-    .line 12
     invoke-static {v0, v3}, Lcom/apm/insight/a;->a(Lorg/json/JSONObject;Ljava/lang/String;)Z
 
     move-result v0
@@ -1218,23 +1238,24 @@
 .method public final b(Ljava/lang/String;Ljava/lang/String;)Lcom/apm/insight/entity/a;
     .locals 3
 
+    .line 30
     iget-object v0, p0, Lcom/apm/insight/entity/a;->a:Lorg/json/JSONObject;
 
+    .line 31
     const-string v1, "data"
 
-    .line 11
     invoke-virtual {v0, v1}, Lorg/json/JSONObject;->opt(Ljava/lang/String;)Ljava/lang/Object;
 
     move-result-object v0
 
-    .line 12
+    .line 32
     instance-of v1, v0, Lorg/json/JSONArray;
 
     const-string v2, "custom"
 
     if-eqz v1, :cond_0
 
-    .line 13
+    .line 33
     check-cast v0, Lorg/json/JSONArray;
 
     const/4 v1, 0x0
@@ -1247,10 +1268,11 @@
 
     goto :goto_0
 
+    .line 34
     :cond_0
     iget-object v0, p0, Lcom/apm/insight/entity/a;->a:Lorg/json/JSONObject;
 
-    .line 14
+    .line 35
     invoke-static {v0, v2, p1, p2}, Lcom/apm/insight/entity/a;->a(Lorg/json/JSONObject;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
 
     :goto_0
@@ -1330,13 +1352,13 @@
 
     goto :goto_0
 
+    .line 8
     :cond_0
     :try_start_1
     iget-object p1, p0, Lcom/apm/insight/entity/a;->a:Lorg/json/JSONObject;
 
     const-string v1, "sdk_info"
 
-    .line 8
     invoke-virtual {p1, v1, v0}, Lorg/json/JSONObject;->put(Ljava/lang/String;Ljava/lang/Object;)Lorg/json/JSONObject;
     :try_end_1
     .catch Lorg/json/JSONException; {:try_start_1 .. :try_end_1} :catch_1
@@ -1357,9 +1379,9 @@
 .method public final b(Lorg/json/JSONObject;)Lcom/apm/insight/entity/a;
     .locals 1
 
+    .line 10
     iget-object v0, p0, Lcom/apm/insight/entity/a;->a:Lorg/json/JSONObject;
 
-    .line 10
     invoke-static {v0, p1}, Lcom/apm/insight/entity/a;->a(Lorg/json/JSONObject;Lorg/json/JSONObject;)V
 
     return-object p0
@@ -1401,21 +1423,22 @@
 
     if-eqz p1, :cond_4
 
+    .line 4
     iget-object v0, p0, Lcom/apm/insight/entity/a;->a:Lorg/json/JSONObject;
 
+    .line 5
     const-string v1, "data"
 
-    .line 4
     invoke-virtual {v0, v1}, Lorg/json/JSONObject;->opt(Ljava/lang/String;)Ljava/lang/Object;
 
     move-result-object v0
 
-    .line 5
+    .line 6
     instance-of v1, v0, Lorg/json/JSONArray;
 
     if-eqz v1, :cond_0
 
-    .line 6
+    .line 7
     check-cast v0, Lorg/json/JSONArray;
 
     const/4 v1, 0x0
@@ -1426,22 +1449,24 @@
 
     goto :goto_0
 
+    .line 8
     :cond_0
     iget-object v0, p0, Lcom/apm/insight/entity/a;->a:Lorg/json/JSONObject;
 
+    .line 9
     :goto_0
     const-string v1, "filters"
 
     if-nez v0, :cond_1
 
-    .line 7
+    .line 10
     new-instance v0, Lorg/json/JSONObject;
 
     invoke-direct {v0}, Lorg/json/JSONObject;-><init>()V
 
     goto :goto_1
 
-    .line 8
+    .line 11
     :cond_1
     invoke-virtual {v0, v1}, Lorg/json/JSONObject;->optJSONObject(Ljava/lang/String;)Lorg/json/JSONObject;
 
@@ -1449,15 +1474,15 @@
 
     if-nez v0, :cond_2
 
-    .line 9
+    .line 12
     new-instance v0, Lorg/json/JSONObject;
 
     invoke-direct {v0}, Lorg/json/JSONObject;-><init>()V
 
-    .line 10
+    .line 13
     invoke-virtual {p0, v1, v0}, Lcom/apm/insight/entity/a;->a(Ljava/lang/String;Ljava/lang/Object;)V
 
-    .line 11
+    .line 14
     :cond_2
     :goto_1
     invoke-interface {p1}, Ljava/util/Map;->entrySet()Ljava/util/Set;
@@ -1481,7 +1506,7 @@
 
     check-cast v2, Ljava/util/Map$Entry;
 
-    .line 12
+    .line 15
     :try_start_0
     invoke-interface {v2}, Ljava/util/Map$Entry;->getKey()Ljava/lang/Object;
 
@@ -1504,7 +1529,7 @@
 
     goto :goto_2
 
-    .line 13
+    .line 16
     :cond_3
     invoke-virtual {p0, v1, v0}, Lcom/apm/insight/entity/a;->a(Ljava/lang/String;Ljava/lang/Object;)V
 
@@ -1515,7 +1540,7 @@
 .method public final c()Lorg/json/JSONObject;
     .locals 1
 
-    .line 1
+    .line 2
     iget-object v0, p0, Lcom/apm/insight/entity/a;->a:Lorg/json/JSONObject;
 
     return-object v0
@@ -1523,10 +1548,14 @@
 
 .method public final c(Lorg/json/JSONObject;)V
     .locals 1
-
-    iget-object v0, p0, Lcom/apm/insight/entity/a;->a:Lorg/json/JSONObject;
+    .param p1    # Lorg/json/JSONObject;
+        .annotation build Landroidx/annotation/NonNull;
+        .end annotation
+    .end param
 
     .line 3
+    iget-object v0, p0, Lcom/apm/insight/entity/a;->a:Lorg/json/JSONObject;
+
     invoke-static {v0, p1}, Lcom/apm/insight/entity/a;->b(Lorg/json/JSONObject;Lorg/json/JSONObject;)V
 
     return-void

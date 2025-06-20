@@ -94,7 +94,7 @@
 .method private static a(Lcom/applovin/impl/pa$e;I)Ljava/lang/String;
     .locals 3
 
-    .line 22
+    .line 25
     iget v0, p0, Lcom/applovin/impl/pa$e;->d:I
 
     const/16 v1, 0x133
@@ -112,14 +112,14 @@
 
     if-ge p1, v0, :cond_1
 
-    .line 23
+    .line 26
     iget-object p0, p0, Lcom/applovin/impl/pa$e;->g:Ljava/util/Map;
 
     if-eqz p0, :cond_1
 
+    .line 27
     const-string p1, "Location"
 
-    .line 24
     invoke-interface {p0, p1}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object p0
@@ -128,7 +128,7 @@
 
     if-eqz p0, :cond_1
 
-    .line 25
+    .line 28
     invoke-interface {p0}, Ljava/util/List;->isEmpty()Z
 
     move-result p1
@@ -137,7 +137,7 @@
 
     const/4 p1, 0x0
 
-    .line 26
+    .line 29
     invoke-interface {p0, p1}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
     move-result-object p0
@@ -153,7 +153,7 @@
 .method private static a(Lcom/applovin/impl/pa$b;Ljava/lang/String;[BLjava/util/Map;)[B
     .locals 8
 
-    .line 33
+    .line 36
     new-instance v0, Lcom/applovin/impl/fl;
 
     invoke-interface {p0}, Lcom/applovin/impl/pa$b;->a()Lcom/applovin/impl/pa;
@@ -162,41 +162,41 @@
 
     invoke-direct {v0, p0}, Lcom/applovin/impl/fl;-><init>(Lcom/applovin/impl/h5;)V
 
-    .line 34
+    .line 37
     new-instance p0, Lcom/applovin/impl/k5$b;
 
     invoke-direct {p0}, Lcom/applovin/impl/k5$b;-><init>()V
 
-    .line 35
+    .line 38
     invoke-virtual {p0, p1}, Lcom/applovin/impl/k5$b;->b(Ljava/lang/String;)Lcom/applovin/impl/k5$b;
 
     move-result-object p0
 
-    .line 36
+    .line 39
     invoke-virtual {p0, p3}, Lcom/applovin/impl/k5$b;->a(Ljava/util/Map;)Lcom/applovin/impl/k5$b;
 
     move-result-object p0
 
     const/4 p1, 0x2
 
-    .line 37
+    .line 40
     invoke-virtual {p0, p1}, Lcom/applovin/impl/k5$b;->b(I)Lcom/applovin/impl/k5$b;
 
     move-result-object p0
 
-    .line 38
+    .line 41
     invoke-virtual {p0, p2}, Lcom/applovin/impl/k5$b;->a([B)Lcom/applovin/impl/k5$b;
 
     move-result-object p0
 
     const/4 p1, 0x1
 
-    .line 39
+    .line 42
     invoke-virtual {p0, p1}, Lcom/applovin/impl/k5$b;->a(I)Lcom/applovin/impl/k5$b;
 
     move-result-object p0
 
-    .line 40
+    .line 43
     invoke-virtual {p0}, Lcom/applovin/impl/k5$b;->a()Lcom/applovin/impl/k5;
 
     move-result-object v2
@@ -205,7 +205,7 @@
 
     move-object p1, v2
 
-    .line 41
+    .line 44
     :goto_0
     :try_start_0
     new-instance p2, Lcom/applovin/impl/j5;
@@ -214,7 +214,7 @@
     :try_end_0
     .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
 
-    .line 42
+    .line 45
     :try_start_1
     invoke-static {p2}, Lcom/applovin/impl/xp;->a(Ljava/io/InputStream;)[B
 
@@ -223,7 +223,7 @@
     .catch Lcom/applovin/impl/pa$e; {:try_start_1 .. :try_end_1} :catch_1
     .catchall {:try_start_1 .. :try_end_1} :catchall_0
 
-    .line 43
+    .line 46
     :try_start_2
     invoke-static {p2}, Lcom/applovin/impl/xp;->a(Ljava/io/Closeable;)V
     :try_end_2
@@ -246,7 +246,7 @@
     :catch_1
     move-exception p3
 
-    .line 44
+    .line 47
     :try_start_3
     invoke-static {p3, p0}, Lcom/applovin/impl/qa;->a(Lcom/applovin/impl/pa$e;I)Ljava/lang/String;
 
@@ -256,7 +256,7 @@
 
     add-int/lit8 p0, p0, 0x1
 
-    .line 45
+    .line 48
     invoke-virtual {p1}, Lcom/applovin/impl/k5;->a()Lcom/applovin/impl/k5$b;
 
     move-result-object p1
@@ -271,7 +271,7 @@
     :try_end_3
     .catchall {:try_start_3 .. :try_end_3} :catchall_0
 
-    .line 46
+    .line 49
     :try_start_4
     invoke-static {p2}, Lcom/applovin/impl/xp;->a(Ljava/io/Closeable;)V
     :try_end_4
@@ -279,28 +279,28 @@
 
     goto :goto_0
 
-    .line 47
+    .line 50
     :cond_0
     :try_start_5
     throw p3
     :try_end_5
     .catchall {:try_start_5 .. :try_end_5} :catchall_0
 
-    .line 48
+    .line 51
     :goto_1
     :try_start_6
     invoke-static {p2}, Lcom/applovin/impl/xp;->a(Ljava/io/Closeable;)V
 
-    .line 49
+    .line 52
     throw p0
     :try_end_6
     .catch Ljava/lang/Exception; {:try_start_6 .. :try_end_6} :catch_0
 
-    .line 50
+    .line 53
     :goto_2
     new-instance p0, Lcom/applovin/impl/qd;
 
-    .line 51
+    .line 54
     invoke-virtual {v0}, Lcom/applovin/impl/fl;->h()Landroid/net/Uri;
 
     move-result-object p1
@@ -313,12 +313,12 @@
 
     check-cast v3, Landroid/net/Uri;
 
-    .line 52
+    .line 55
     invoke-virtual {v0}, Lcom/applovin/impl/fl;->e()Ljava/util/Map;
 
     move-result-object v4
 
-    .line 53
+    .line 56
     invoke-virtual {v0}, Lcom/applovin/impl/fl;->g()J
 
     move-result-wide v5
@@ -335,24 +335,24 @@
 .method public a(Ljava/lang/String;Ljava/lang/String;)V
     .locals 2
 
-    .line 27
+    .line 30
     invoke-static {p1}, Lcom/applovin/impl/b1;->a(Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 28
+    .line 31
     invoke-static {p2}, Lcom/applovin/impl/b1;->a(Ljava/lang/Object;)Ljava/lang/Object;
 
+    .line 32
     iget-object v0, p0, Lcom/applovin/impl/qa;->d:Ljava/util/Map;
 
-    .line 29
     monitor-enter v0
 
+    .line 33
     :try_start_0
     iget-object v1, p0, Lcom/applovin/impl/qa;->d:Ljava/util/Map;
 
-    .line 30
     invoke-interface {v1, p1, p2}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 31
+    .line 34
     monitor-exit v0
 
     return-void
@@ -360,7 +360,7 @@
     :catchall_0
     move-exception p1
 
-    .line 32
+    .line 35
     monitor-exit v0
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
@@ -376,21 +376,22 @@
 
     move-result-object v0
 
+    .line 2
     iget-boolean v1, p0, Lcom/applovin/impl/qa;->c:Z
 
     if-nez v1, :cond_0
 
-    .line 2
     invoke-static {v0}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
 
     move-result v1
 
     if-eqz v1, :cond_1
 
+    .line 3
     :cond_0
     iget-object v0, p0, Lcom/applovin/impl/qa;->b:Ljava/lang/String;
 
-    .line 3
+    .line 4
     :cond_1
     invoke-static {v0}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
 
@@ -398,12 +399,12 @@
 
     if-nez v1, :cond_5
 
-    .line 4
+    .line 5
     new-instance v1, Ljava/util/HashMap;
 
     invoke-direct {v1}, Ljava/util/HashMap;-><init>()V
 
-    .line 5
+    .line 6
     sget-object v2, Lcom/applovin/impl/t2;->e:Ljava/util/UUID;
 
     invoke-virtual {v2, p1}, Ljava/util/UUID;->equals(Ljava/lang/Object;)Z
@@ -412,11 +413,12 @@
 
     if-eqz v3, :cond_2
 
+    .line 7
     const-string v3, "text/xml"
 
     goto :goto_0
 
-    .line 6
+    .line 8
     :cond_2
     sget-object v3, Lcom/applovin/impl/t2;->c:Ljava/util/UUID;
 
@@ -433,46 +435,46 @@
     :cond_3
     const-string v3, "application/octet-stream"
 
+    .line 9
     :goto_0
     const-string v4, "Content-Type"
 
-    .line 7
     invoke-virtual {v1, v4, v3}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 8
+    .line 10
     invoke-virtual {v2, p1}, Ljava/util/UUID;->equals(Ljava/lang/Object;)Z
 
     move-result p1
 
     if-eqz p1, :cond_4
 
+    .line 11
     const-string p1, "SOAPAction"
 
     const-string v2, "http://schemas.microsoft.com/DRM/2007/03/protocols/AcquireLicense"
 
-    .line 9
     invoke-virtual {v1, p1, v2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
+    .line 12
     :cond_4
     iget-object p1, p0, Lcom/applovin/impl/qa;->d:Ljava/util/Map;
 
-    .line 10
     monitor-enter p1
 
+    .line 13
     :try_start_0
     iget-object v2, p0, Lcom/applovin/impl/qa;->d:Ljava/util/Map;
 
-    .line 11
     invoke-virtual {v1, v2}, Ljava/util/HashMap;->putAll(Ljava/util/Map;)V
 
-    .line 12
+    .line 14
     monitor-exit p1
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
+    .line 15
     iget-object p1, p0, Lcom/applovin/impl/qa;->a:Lcom/applovin/impl/pa$b;
 
-    .line 13
     invoke-virtual {p2}, Lcom/applovin/impl/y7$a;->a()[B
 
     move-result-object p2
@@ -486,7 +488,7 @@
     :catchall_0
     move-exception p2
 
-    .line 14
+    .line 16
     :try_start_1
     monitor-exit p1
     :try_end_1
@@ -494,7 +496,7 @@
 
     throw p2
 
-    .line 15
+    .line 17
     :cond_5
     new-instance p1, Lcom/applovin/impl/qd;
 
@@ -504,7 +506,7 @@
 
     sget-object v2, Landroid/net/Uri;->EMPTY:Landroid/net/Uri;
 
-    .line 16
+    .line 18
     invoke-virtual {p2, v2}, Lcom/applovin/impl/k5$b;->a(Landroid/net/Uri;)Lcom/applovin/impl/k5$b;
 
     move-result-object p2
@@ -513,7 +515,7 @@
 
     move-result-object v1
 
-    .line 17
+    .line 19
     invoke-static {}, Lcom/applovin/impl/fb;->h()Lcom/applovin/impl/fb;
 
     move-result-object v3
@@ -536,12 +538,12 @@
 .method public a(Ljava/util/UUID;Lcom/applovin/impl/y7$d;)[B
     .locals 2
 
-    .line 18
+    .line 20
     new-instance p1, Ljava/lang/StringBuilder;
 
     invoke-direct {p1}, Ljava/lang/StringBuilder;-><init>()V
 
-    .line 19
+    .line 21
     invoke-virtual {p2}, Lcom/applovin/impl/y7$d;->b()Ljava/lang/String;
 
     move-result-object v0
@@ -566,16 +568,17 @@
 
     move-result-object p1
 
+    .line 22
     iget-object p2, p0, Lcom/applovin/impl/qa;->a:Lcom/applovin/impl/pa$b;
 
-    .line 20
+    .line 23
     invoke-static {}, Ljava/util/Collections;->emptyMap()Ljava/util/Map;
 
     move-result-object v0
 
     const/4 v1, 0x0
 
-    .line 21
+    .line 24
     invoke-static {p2, p1, v1, v0}, Lcom/applovin/impl/qa;->a(Lcom/applovin/impl/pa$b;Ljava/lang/String;[BLjava/util/Map;)[B
 
     move-result-object p1

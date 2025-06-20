@@ -15,67 +15,67 @@
     .locals 16
 
     .line 1
-    const-string v0, "SM-G9300"
+    const-string v14, "SM-G935U"
 
     .line 2
     .line 3
-    const-string v1, "SM-G930R"
+    const-string v15, "SM-G935P"
 
     .line 4
     .line 5
-    const-string v2, "SM-G930A"
+    const-string v0, "SM-G9300"
 
     .line 6
     .line 7
-    const-string v3, "SM-G930V"
+    const-string v1, "SM-G930R"
 
     .line 8
     .line 9
-    const-string v4, "SM-G930T"
+    const-string v2, "SM-G930A"
 
     .line 10
     .line 11
-    const-string v5, "SM-G930U"
+    const-string v3, "SM-G930V"
 
     .line 12
     .line 13
-    const-string v6, "SM-G930P"
+    const-string v4, "SM-G930T"
 
     .line 14
     .line 15
-    const-string v7, "SM-SC02H"
+    const-string v5, "SM-G930U"
 
     .line 16
     .line 17
-    const-string v8, "SM-SCV33"
+    const-string v6, "SM-G930P"
 
     .line 18
     .line 19
-    const-string v9, "SM-G9350"
+    const-string v7, "SM-SC02H"
 
     .line 20
     .line 21
-    const-string v10, "SM-G935R"
+    const-string v8, "SM-SCV33"
 
     .line 22
     .line 23
-    const-string v11, "SM-G935A"
+    const-string v9, "SM-G9350"
 
     .line 24
     .line 25
-    const-string v12, "SM-G935V"
+    const-string v10, "SM-G935R"
 
     .line 26
     .line 27
-    const-string v13, "SM-G935T"
+    const-string v11, "SM-G935A"
 
     .line 28
     .line 29
-    const-string v14, "SM-G935U"
+    const-string v12, "SM-G935V"
 
     .line 30
     .line 31
-    const-string v15, "SM-G935P"
+    const-string v13, "SM-G935T"
 
     .line 32
     .line 33
@@ -105,7 +105,11 @@
 .method public constructor <init>()V
     .locals 0
 
+    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
+    .line 2
+    .line 3
+    .line 4
     return-void
 .end method

@@ -1,33 +1,17 @@
-.class public abstract Landroidx/camera/core/impl/m;
+.class public interface abstract Landroidx/camera/core/impl/M;
 .super Ljava/lang/Object;
 .source "SourceFile"
 
 
 # virtual methods
-.method public a(I)V
-    .locals 0
-
-    .line 1
-    return-void
+.method public abstract a()I
 .end method
 
-.method public b(ILandroidx/camera/core/impl/q;)V
-    .locals 0
-
-    .line 1
-    return-void
+.method public abstract b()I
 .end method
 
-.method public c(ILandroidx/camera/core/impl/p;)V
-    .locals 0
-
-    .line 1
-    return-void
+.method public abstract c()Ljava/util/List;
 .end method
 
-.method public d(I)V
-    .locals 0
-
-    .line 1
-    return-void
+.method public abstract d()Ljava/util/List;
 .end method

@@ -3,10 +3,19 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lzh/e;
+.implements Lka/e;
 
 
 # annotations
+.annotation runtime Lca/c;
+    c = "androidx.compose.foundation.gestures.DragGestureNode$startListeningForEvents$1$1"
+    f = "Draggable.kt"
+    l = {
+        0x1b6
+    }
+    m = "invokeSuspend"
+.end annotation
+
 .annotation system Ldalvik/annotation/EnclosingMethod;
     value = Landroidx/compose/foundation/gestures/DragGestureNode$startListeningForEvents$1;->invokeSuspend(Ljava/lang/Object;)Ljava/lang/Object;
 .end annotation
@@ -19,20 +28,21 @@
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "Lkotlin/coroutines/jvm/internal/SuspendLambda;",
-        "Lzh/e;"
+        "Lka/e;"
     }
 .end annotation
 
 .annotation runtime Lkotlin/Metadata;
     d1 = {
-        "\u0000\u0010\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0008\u0002\u0010\u0004\u001a\u00020\u00022\u0012\u0010\u0003\u001a\u000e\u0012\u0004\u0012\u00020\u0001\u0012\u0004\u0012\u00020\u00020\u0000H\u008a@"
+        "\u0000\u0010\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0008\u0003\u0010\u0004\u001a\u00020\u00022\u0012\u0010\u0003\u001a\u000e\u0012\u0004\u0012\u00020\u0001\u0012\u0004\u0012\u00020\u00020\u0000H\u008a@\u00a2\u0006\u0004\u0008\u0004\u0010\u0005"
     }
     d2 = {
         "Lkotlin/Function1;",
         "Landroidx/compose/foundation/gestures/o;",
-        "Lqh/r;",
+        "LX9/j;",
         "processDelta",
-        "<anonymous>"
+        "<anonymous>",
+        "(Lka/c;)V"
     }
     k = 0x3
     mv = {
@@ -40,15 +50,6 @@
         0x8,
         0x0
     }
-.end annotation
-
-.annotation runtime Lth/c;
-    c = "androidx.compose.foundation.gestures.DragGestureNode$startListeningForEvents$1$1"
-    f = "Draggable.kt"
-    l = {
-        0x1b6
-    }
-    m = "invokeSuspend"
 .end annotation
 
 
@@ -111,7 +112,7 @@
             "Lkotlin/coroutines/Continuation<",
             "*>;)",
             "Lkotlin/coroutines/Continuation<",
-            "Lqh/r;",
+            "LX9/j;",
             ">;"
         }
     .end annotation
@@ -133,26 +134,26 @@
     .locals 0
 
     .line 1
-    check-cast p1, Lzh/c;
+    check-cast p1, Lka/c;
 
     check-cast p2, Lkotlin/coroutines/Continuation;
 
-    invoke-virtual {p0, p1, p2}, Landroidx/compose/foundation/gestures/DragGestureNode$startListeningForEvents$1$1;->invoke(Lzh/c;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
+    invoke-virtual {p0, p1, p2}, Landroidx/compose/foundation/gestures/DragGestureNode$startListeningForEvents$1$1;->invoke(Lka/c;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
 
     move-result-object p1
 
     return-object p1
 .end method
 
-.method public final invoke(Lzh/c;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
+.method public final invoke(Lka/c;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
     .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
-            "Lzh/c;",
+            "Lka/c;",
             "Lkotlin/coroutines/Continuation<",
             "-",
-            "Lqh/r;",
+            "LX9/j;",
             ">;)",
             "Ljava/lang/Object;"
         }
@@ -165,7 +166,7 @@
 
     check-cast p1, Landroidx/compose/foundation/gestures/DragGestureNode$startListeningForEvents$1$1;
 
-    sget-object p2, Lqh/r;->a:Lqh/r;
+    sget-object p2, LX9/j;->a:LX9/j;
 
     invoke-virtual {p1, p2}, Landroidx/compose/foundation/gestures/DragGestureNode$startListeningForEvents$1$1;->invokeSuspend(Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -175,7 +176,7 @@
 .end method
 
 .method public final invokeSuspend(Ljava/lang/Object;)Ljava/lang/Object;
-    .locals 7
+    .locals 5
 
     .line 1
     sget-object v0, Lkotlin/coroutines/intrinsics/CoroutineSingletons;->COROUTINE_SUSPENDED:Lkotlin/coroutines/intrinsics/CoroutineSingletons;
@@ -209,7 +210,7 @@
 
     .line 15
     .line 16
-    check-cast v3, Lzh/c;
+    check-cast v3, Lka/c;
 
     .line 17
     .line 18
@@ -218,210 +219,165 @@
     .line 19
     .line 20
     .line 21
-    move-object v4, v3
-
-    .line 22
-    move-object v3, v1
-
-    .line 23
-    move-object v1, v0
-
-    .line 24
-    move-object v0, p0
-
-    .line 25
     goto :goto_2
 
-    .line 26
+    .line 22
     :cond_0
     new-instance p1, Ljava/lang/IllegalStateException;
 
-    .line 27
-    .line 28
+    .line 23
+    .line 24
     const-string v0, "call to \'resume\' before \'invoke\' with coroutine"
 
-    .line 29
-    .line 30
+    .line 25
+    .line 26
     invoke-direct {p1, v0}, Ljava/lang/IllegalStateException;-><init>(Ljava/lang/String;)V
+
+    .line 27
+    .line 28
+    .line 29
+    throw p1
+
+    .line 30
+    :cond_1
+    invoke-static {p1}, Lkotlin/b;->a(Ljava/lang/Object;)V
 
     .line 31
     .line 32
     .line 33
-    throw p1
-
-    .line 34
-    :cond_1
-    invoke-static {p1}, Lkotlin/b;->a(Ljava/lang/Object;)V
-
-    .line 35
-    .line 36
-    .line 37
     iget-object p1, p0, Landroidx/compose/foundation/gestures/DragGestureNode$startListeningForEvents$1$1;->L$0:Ljava/lang/Object;
 
-    .line 38
-    .line 39
-    check-cast p1, Lzh/c;
+    .line 34
+    .line 35
+    check-cast p1, Lka/c;
 
-    .line 40
-    .line 41
+    .line 36
+    .line 37
     move-object v3, p1
 
+    .line 38
+    :goto_0
+    iget-object p1, p0, Landroidx/compose/foundation/gestures/DragGestureNode$startListeningForEvents$1$1;->$event:Lkotlin/jvm/internal/Ref$ObjectRef;
+
+    .line 39
+    .line 40
+    iget-object p1, p1, Lkotlin/jvm/internal/Ref$ObjectRef;->element:Ljava/lang/Object;
+
+    .line 41
     .line 42
-    move-object p1, p0
+    instance-of v1, p1, Landroidx/compose/foundation/gestures/q;
 
     .line 43
-    :goto_0
-    iget-object v1, p1, Landroidx/compose/foundation/gestures/DragGestureNode$startListeningForEvents$1$1;->$event:Lkotlin/jvm/internal/Ref$ObjectRef;
-
     .line 44
+    if-nez v1, :cond_6
+
     .line 45
-    iget-object v1, v1, Lkotlin/jvm/internal/Ref$ObjectRef;->element:Ljava/lang/Object;
-
     .line 46
+    instance-of v1, p1, Landroidx/compose/foundation/gestures/n;
+
     .line 47
-    instance-of v4, v1, Landroidx/compose/foundation/gestures/q;
-
     .line 48
+    if-nez v1, :cond_6
+
     .line 49
-    if-nez v4, :cond_6
-
     .line 50
-    .line 51
-    instance-of v4, v1, Landroidx/compose/foundation/gestures/n;
+    instance-of v1, p1, Landroidx/compose/foundation/gestures/o;
 
+    .line 51
     .line 52
+    const/4 v4, 0x0
+
     .line 53
-    if-nez v4, :cond_6
+    if-eqz v1, :cond_2
 
     .line 54
     .line 55
-    instance-of v4, v1, Landroidx/compose/foundation/gestures/o;
+    check-cast p1, Landroidx/compose/foundation/gestures/o;
 
     .line 56
     .line 57
-    const/4 v5, 0x0
-
-    .line 58
-    if-eqz v4, :cond_2
-
-    .line 59
-    .line 60
-    check-cast v1, Landroidx/compose/foundation/gestures/o;
-
-    .line 61
-    .line 62
     goto :goto_1
 
-    .line 63
+    .line 58
     :cond_2
-    move-object v1, v5
+    move-object p1, v4
 
-    .line 64
+    .line 59
     :goto_1
-    if-eqz v1, :cond_3
+    if-eqz p1, :cond_3
+
+    .line 60
+    .line 61
+    invoke-interface {v3, p1}, Lka/c;->invoke(Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 62
+    .line 63
+    .line 64
+    :cond_3
+    iget-object v1, p0, Landroidx/compose/foundation/gestures/DragGestureNode$startListeningForEvents$1$1;->$event:Lkotlin/jvm/internal/Ref$ObjectRef;
 
     .line 65
     .line 66
-    invoke-interface {v3, v1}, Lzh/c;->invoke(Ljava/lang/Object;)Ljava/lang/Object;
+    iget-object p1, p0, Landroidx/compose/foundation/gestures/DragGestureNode$startListeningForEvents$1$1;->this$0:Landroidx/compose/foundation/gestures/t;
 
     .line 67
     .line 68
+    iget-object p1, p1, Landroidx/compose/foundation/gestures/t;->v:Lkotlinx/coroutines/channels/b;
+
     .line 69
-    :cond_3
-    iget-object v1, p1, Landroidx/compose/foundation/gestures/DragGestureNode$startListeningForEvents$1$1;->$event:Lkotlin/jvm/internal/Ref$ObjectRef;
-
     .line 70
+    if-eqz p1, :cond_5
+
     .line 71
-    iget-object v4, p1, Landroidx/compose/foundation/gestures/DragGestureNode$startListeningForEvents$1$1;->this$0:Landroidx/compose/foundation/gestures/t;
-
     .line 72
+    iput-object v3, p0, Landroidx/compose/foundation/gestures/DragGestureNode$startListeningForEvents$1$1;->L$0:Ljava/lang/Object;
+
     .line 73
-    iget-object v4, v4, Landroidx/compose/foundation/gestures/t;->v:Lkotlinx/coroutines/channels/e;
-
     .line 74
+    iput-object v1, p0, Landroidx/compose/foundation/gestures/DragGestureNode$startListeningForEvents$1$1;->L$1:Ljava/lang/Object;
+
     .line 75
-    if-eqz v4, :cond_5
-
     .line 76
+    iput v2, p0, Landroidx/compose/foundation/gestures/DragGestureNode$startListeningForEvents$1$1;->label:I
+
     .line 77
-    iput-object v3, p1, Landroidx/compose/foundation/gestures/DragGestureNode$startListeningForEvents$1$1;->L$0:Ljava/lang/Object;
-
     .line 78
-    .line 79
-    iput-object v1, p1, Landroidx/compose/foundation/gestures/DragGestureNode$startListeningForEvents$1$1;->L$1:Ljava/lang/Object;
+    invoke-virtual {p1, p0}, Lkotlinx/coroutines/channels/b;->r(Lkotlin/coroutines/jvm/internal/SuspendLambda;)Ljava/lang/Object;
 
+    .line 79
     .line 80
     .line 81
-    iput v2, p1, Landroidx/compose/foundation/gestures/DragGestureNode$startListeningForEvents$1$1;->label:I
+    move-result-object p1
 
     .line 82
+    if-ne p1, v0, :cond_4
+
     .line 83
-    invoke-interface {v4, p1}, Lkotlinx/coroutines/channels/o;->t(Lkotlin/coroutines/jvm/internal/SuspendLambda;)Ljava/lang/Object;
-
     .line 84
-    .line 85
-    .line 86
-    move-result-object v4
-
-    .line 87
-    if-ne v4, v0, :cond_4
-
-    .line 88
-    .line 89
     return-object v0
 
-    .line 90
+    .line 85
     :cond_4
-    move-object v6, v0
-
-    .line 91
-    move-object v0, p1
-
-    .line 92
-    move-object p1, v4
-
-    .line 93
-    move-object v4, v3
-
-    .line 94
-    move-object v3, v1
-
-    .line 95
-    move-object v1, v6
-
-    .line 96
     :goto_2
-    move-object v5, p1
+    move-object v4, p1
 
-    .line 97
-    check-cast v5, Landroidx/compose/foundation/gestures/r;
+    .line 86
+    check-cast v4, Landroidx/compose/foundation/gestures/r;
 
-    .line 98
-    .line 99
-    move-object p1, v0
-
-    .line 100
-    move-object v0, v1
-
-    .line 101
-    move-object v1, v3
-
-    .line 102
-    move-object v3, v4
-
-    .line 103
+    .line 87
+    .line 88
     :cond_5
-    iput-object v5, v1, Lkotlin/jvm/internal/Ref$ObjectRef;->element:Ljava/lang/Object;
+    iput-object v4, v1, Lkotlin/jvm/internal/Ref$ObjectRef;->element:Ljava/lang/Object;
 
-    .line 104
-    .line 105
+    .line 89
+    .line 90
     goto :goto_0
 
-    .line 106
+    .line 91
     :cond_6
-    sget-object p1, Lqh/r;->a:Lqh/r;
+    sget-object p1, LX9/j;->a:LX9/j;
 
-    .line 107
-    .line 108
+    .line 92
+    .line 93
     return-object p1
 .end method

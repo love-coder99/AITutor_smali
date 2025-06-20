@@ -3,14 +3,14 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lzh/a;
+.implements Lka/a;
 
 
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "Lkotlin/jvm/internal/Lambda;",
-        "Lzh/a;"
+        "Lka/a;"
     }
 .end annotation
 
@@ -19,9 +19,9 @@
         "\u0000\u0008\n\u0002\u0018\u0002\n\u0002\u0008\u0003\u0010\u0003\u001a\u0004\u0018\u00010\u0000H\n\u00a2\u0006\u0004\u0008\u0001\u0010\u0002"
     }
     d2 = {
-        "Le/g;",
+        "Lg/g;",
         "invoke",
-        "()Le/g;",
+        "()Lg/g;",
         "<anonymous>"
     }
     k = 0x3
@@ -62,7 +62,7 @@
 
 
 # virtual methods
-.method public final invoke()Le/g;
+.method public final invoke()Lg/g;
     .locals 1
 
     .line 1
@@ -75,7 +75,7 @@
     .locals 1
 
     .line 2
-    invoke-virtual {p0}, Landroidx/activity/compose/LocalActivityResultRegistryOwner$LocalComposition$1;->invoke()Le/g;
+    invoke-virtual {p0}, Landroidx/activity/compose/LocalActivityResultRegistryOwner$LocalComposition$1;->invoke()Lg/g;
 
     move-result-object v0
 

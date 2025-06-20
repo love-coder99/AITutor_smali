@@ -1,176 +1,244 @@
-.class public final Lm0/f;
+.class public final LM0/f;
 .super Ljava/lang/Object;
 .source "SourceFile"
 
 
 # instance fields
-.field public a:Lh5/c;
-
-.field public b:Landroid/util/Range;
-
-.field public c:Landroid/util/Range;
-
-.field public d:Ljava/lang/Integer;
+.field public final a:J
 
 
-# virtual methods
-.method public final a()Lm0/g;
-    .locals 5
+# direct methods
+.method public synthetic constructor <init>(J)V
+    .locals 0
 
     .line 1
-    iget-object v0, p0, Lm0/f;->a:Lh5/c;
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 2
     .line 3
+    .line 4
+    iput-wide p1, p0, LM0/f;->a:J
+
+    .line 5
+    .line 6
+    return-void
+.end method
+
+
+# virtual methods
+.method public final equals(Ljava/lang/Object;)Z
+    .locals 6
+
+    .line 1
+    instance-of v0, p1, LM0/f;
+
+    .line 2
+    .line 3
+    const/4 v1, 0x0
+
+    .line 4
     if-nez v0, :cond_0
+
+    .line 5
+    .line 6
+    goto :goto_0
+
+    .line 7
+    :cond_0
+    check-cast p1, LM0/f;
+
+    .line 8
+    .line 9
+    iget-wide v2, p1, LM0/f;->a:J
+
+    .line 10
+    .line 11
+    iget-wide v4, p0, LM0/f;->a:J
+
+    .line 12
+    .line 13
+    cmp-long p1, v4, v2
+
+    .line 14
+    .line 15
+    if-eqz p1, :cond_1
+
+    .line 16
+    .line 17
+    goto :goto_0
+
+    .line 18
+    :cond_1
+    const/4 v1, 0x1
+
+    .line 19
+    :goto_0
+    return v1
+.end method
+
+.method public final hashCode()I
+    .locals 5
+
+    .line 1
+    const/16 v0, 0x20
+
+    .line 2
+    .line 3
+    iget-wide v1, p0, LM0/f;->a:J
 
     .line 4
     .line 5
-    const-string v0, " qualitySelector"
+    ushr-long v3, v1, v0
 
     .line 6
     .line 7
-    goto :goto_0
+    xor-long v0, v1, v3
 
     .line 8
-    :cond_0
-    const-string v0, ""
+    .line 9
+    long-to-int v1, v0
+
+    .line 10
+    return v1
+.end method
+
+.method public final toString()Ljava/lang/String;
+    .locals 6
+
+    .line 1
+    const-wide v0, 0x7fc000007fc00000L    # 2.247117487993712E307
+
+    .line 2
+    .line 3
+    .line 4
+    .line 5
+    .line 6
+    iget-wide v2, p0, LM0/f;->a:J
+
+    .line 7
+    .line 8
+    cmp-long v4, v2, v0
 
     .line 9
     .line 10
-    :goto_0
-    iget-object v1, p0, Lm0/f;->b:Landroid/util/Range;
+    if-eqz v4, :cond_0
 
     .line 11
     .line 12
-    if-nez v1, :cond_1
+    new-instance v0, Ljava/lang/StringBuilder;
 
     .line 13
     .line 14
-    const-string v1, " frameRate"
+    const-string v1, "("
 
     .line 15
     .line 16
-    invoke-virtual {v0, v1}, Ljava/lang/String;->concat(Ljava/lang/String;)Ljava/lang/String;
+    invoke-direct {v0, v1}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
 
     .line 17
     .line 18
     .line 19
-    move-result-object v0
+    const/16 v1, 0x20
 
     .line 20
-    :cond_1
-    iget-object v1, p0, Lm0/f;->c:Landroid/util/Range;
-
     .line 21
-    .line 22
-    if-nez v1, :cond_2
+    shr-long v4, v2, v1
 
+    .line 22
     .line 23
+    long-to-int v1, v4
+
     .line 24
-    const-string v1, " bitrate"
+    invoke-static {v1}, Ljava/lang/Float;->intBitsToFloat(I)F
 
     .line 25
     .line 26
-    invoke-static {v0, v1}, Landroid/support/v4/media/session/a;->S(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
-
     .line 27
+    move-result v1
+
     .line 28
+    invoke-static {v1}, LM0/e;->b(F)Ljava/lang/String;
+
     .line 29
-    move-result-object v0
-
     .line 30
-    :cond_2
-    iget-object v1, p0, Lm0/f;->d:Ljava/lang/Integer;
-
     .line 31
+    move-result-object v1
+
     .line 32
-    if-nez v1, :cond_3
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 
     .line 33
     .line 34
-    const-string v1, " aspectRatio"
-
     .line 35
-    .line 36
-    invoke-static {v0, v1}, Landroid/support/v4/media/session/a;->S(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+    const-string v1, ", "
 
+    .line 36
     .line 37
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
     .line 38
     .line 39
-    move-result-object v0
-
     .line 40
-    :cond_3
-    invoke-virtual {v0}, Ljava/lang/String;->isEmpty()Z
+    const-wide v4, 0xffffffffL
 
     .line 41
     .line 42
     .line 43
-    move-result v1
-
     .line 44
-    if-eqz v1, :cond_4
-
     .line 45
-    .line 46
-    new-instance v0, Lm0/g;
+    and-long v1, v2, v4
 
+    .line 46
     .line 47
+    long-to-int v2, v1
+
     .line 48
-    iget-object v1, p0, Lm0/f;->a:Lh5/c;
+    invoke-static {v2}, Ljava/lang/Float;->intBitsToFloat(I)F
 
     .line 49
     .line 50
-    iget-object v2, p0, Lm0/f;->b:Landroid/util/Range;
-
     .line 51
+    move-result v1
+
     .line 52
-    iget-object v3, p0, Lm0/f;->c:Landroid/util/Range;
+    invoke-static {v1}, LM0/e;->b(F)Ljava/lang/String;
 
     .line 53
     .line 54
-    iget-object v4, p0, Lm0/f;->d:Ljava/lang/Integer;
-
     .line 55
+    move-result-object v1
+
     .line 56
-    invoke-virtual {v4}, Ljava/lang/Integer;->intValue()I
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 
     .line 57
     .line 58
     .line 59
-    move-result v4
+    const/16 v1, 0x29
 
     .line 60
-    invoke-direct {v0, v1, v2, v3, v4}, Lm0/g;-><init>(Lh5/c;Landroid/util/Range;Landroid/util/Range;I)V
-
     .line 61
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
+
     .line 62
     .line 63
-    return-object v0
-
     .line 64
-    :cond_4
-    new-instance v1, Ljava/lang/IllegalStateException;
+    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
     .line 65
     .line 66
-    const-string v2, "Missing required properties:"
-
     .line 67
-    .line 68
-    invoke-virtual {v2, v0}, Ljava/lang/String;->concat(Ljava/lang/String;)Ljava/lang/String;
-
-    .line 69
-    .line 70
-    .line 71
     move-result-object v0
 
-    .line 72
-    invoke-direct {v1, v0}, Ljava/lang/IllegalStateException;-><init>(Ljava/lang/String;)V
+    .line 68
+    goto :goto_0
 
-    .line 73
-    .line 74
-    .line 75
-    throw v1
+    .line 69
+    :cond_0
+    const-string v0, "DpOffset.Unspecified"
+
+    .line 70
+    .line 71
+    :goto_0
+    return-object v0
 .end method

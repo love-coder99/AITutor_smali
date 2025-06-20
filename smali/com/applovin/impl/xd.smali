@@ -88,14 +88,19 @@
     .line 9
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
+    .line 10
     iput-object p1, p0, Lcom/applovin/impl/xd;->a:Ljava/lang/Object;
 
+    .line 11
     iput p2, p0, Lcom/applovin/impl/xd;->b:I
 
+    .line 12
     iput p3, p0, Lcom/applovin/impl/xd;->c:I
 
+    .line 13
     iput-wide p4, p0, Lcom/applovin/impl/xd;->d:J
 
+    .line 14
     iput p6, p0, Lcom/applovin/impl/xd;->e:I
 
     return-void
@@ -104,11 +109,11 @@
 .method public constructor <init>(Ljava/lang/Object;J)V
     .locals 7
 
-    const/4 v2, -0x1
-
     const/4 v3, -0x1
 
     const/4 v6, -0x1
+
+    const/4 v2, -0x1
 
     move-object v0, p0
 
@@ -116,7 +121,7 @@
 
     move-wide v4, p2
 
-    .line 10
+    .line 15
     invoke-direct/range {v0 .. v6}, Lcom/applovin/impl/xd;-><init>(Ljava/lang/Object;IIJI)V
 
     return-void
@@ -137,7 +142,7 @@
 
     move v6, p4
 
-    .line 11
+    .line 16
     invoke-direct/range {v0 .. v6}, Lcom/applovin/impl/xd;-><init>(Ljava/lang/Object;IIJI)V
 
     return-void
@@ -148,9 +153,9 @@
 .method public a(Ljava/lang/Object;)Lcom/applovin/impl/xd;
     .locals 8
 
+    .line 1
     iget-object v0, p0, Lcom/applovin/impl/xd;->a:Ljava/lang/Object;
 
-    .line 2
     invoke-virtual {v0, p1}, Ljava/lang/Object;->equals(Ljava/lang/Object;)Z
 
     move-result v0
@@ -161,7 +166,7 @@
 
     goto :goto_0
 
-    .line 3
+    .line 2
     :cond_0
     new-instance v0, Lcom/applovin/impl/xd;
 
@@ -186,7 +191,7 @@
 .method public a()Z
     .locals 2
 
-    .line 1
+    .line 3
     iget v0, p0, Lcom/applovin/impl/xd;->b:I
 
     const/4 v1, -0x1

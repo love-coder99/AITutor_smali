@@ -1,36 +1,29 @@
-.class public Landroidx/compose/ui/text/input/x;
-.super Landroidx/compose/ui/text/input/v;
+.class public interface abstract Landroidx/compose/ui/text/input/x;
+.super Ljava/lang/Object;
 .source "SourceFile"
 
 
 # virtual methods
-.method public final commitContent(Landroid/view/inputmethod/InputContentInfo;ILandroid/os/Bundle;)Z
-    .locals 1
+.method public abstract a(Landroidx/compose/ui/text/input/C;Landroidx/compose/ui/text/input/w;Landroidx/compose/ui/text/F;Lka/c;Lr0/d;Lr0/d;)V
+.end method
 
-    .line 1
-    iget-object v0, p0, Landroidx/compose/ui/text/input/u;->b:Landroid/view/inputmethod/InputConnection;
+.method public abstract b()V
+.end method
 
-    .line 2
-    .line 3
-    if-eqz v0, :cond_0
+.method public abstract c(Landroidx/compose/ui/text/input/C;Landroidx/compose/ui/text/input/m;Lka/c;Lka/c;)V
+.end method
 
-    .line 4
-    .line 5
-    invoke-static {v0, p1, p2, p3}, Landroidx/compose/ui/text/input/w;->d(Landroid/view/inputmethod/InputConnection;Landroid/view/inputmethod/InputContentInfo;ILandroid/os/Bundle;)Z
+.method public abstract d()V
+.end method
 
-    .line 6
-    .line 7
-    .line 8
-    move-result p1
+.method public abstract e()V
+.end method
 
-    .line 9
-    goto :goto_0
+.method public abstract f(Lr0/d;)V
+.end method
 
-    .line 10
-    :cond_0
-    const/4 p1, 0x0
+.method public abstract g()V
+.end method
 
-    .line 11
-    :goto_0
-    return p1
+.method public abstract h(Landroidx/compose/ui/text/input/C;Landroidx/compose/ui/text/input/C;)V
 .end method

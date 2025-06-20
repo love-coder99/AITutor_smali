@@ -182,8 +182,11 @@
 .method public g()Lcom/applovin/impl/fb;
     .locals 1
 
+    .line 1
     iget-object v0, p0, Lcom/applovin/impl/gb;->d:Lcom/applovin/impl/fb;
 
+    .line 2
+    .line 3
     return-object v0
 .end method
 
@@ -272,8 +275,11 @@
 .method public size()I
     .locals 1
 
+    .line 1
     iget v0, p0, Lcom/applovin/impl/gb;->f:I
 
+    .line 2
+    .line 3
     return v0
 .end method
 

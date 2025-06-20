@@ -1,23 +1,36 @@
-.class public interface abstract Landroidx/compose/ui/node/y;
+.class public abstract Landroidx/compose/ui/node/Y;
 .super Ljava/lang/Object;
 .source "SourceFile"
 
-# interfaces
-.implements Landroidx/compose/ui/node/j;
+
+# static fields
+.field public static final a:Landroidx/compose/ui/node/X;
 
 
-# virtual methods
-.method public abstract b(Landroidx/compose/ui/layout/p;Landroidx/compose/ui/layout/o;I)I
-.end method
+# direct methods
+.method static constructor <clinit>()V
+    .locals 2
 
-.method public abstract c(Landroidx/compose/ui/layout/p;Landroidx/compose/ui/layout/o;I)I
-.end method
+    .line 1
+    new-instance v0, Landroidx/compose/ui/node/X;
 
-.method public abstract d(Landroidx/compose/ui/layout/p;Landroidx/compose/ui/layout/o;I)I
-.end method
+    .line 2
+    .line 3
+    invoke-direct {v0}, Landroidx/compose/ui/n;-><init>()V
 
-.method public abstract f(Landroidx/compose/ui/layout/o0;Landroidx/compose/ui/layout/l0;J)Landroidx/compose/ui/layout/n0;
-.end method
+    .line 4
+    .line 5
+    .line 6
+    const/4 v1, -0x1
 
-.method public abstract h(Landroidx/compose/ui/layout/p;Landroidx/compose/ui/layout/o;I)I
+    .line 7
+    iput v1, v0, Landroidx/compose/ui/n;->f:I
+
+    .line 8
+    .line 9
+    sput-object v0, Landroidx/compose/ui/node/Y;->a:Landroidx/compose/ui/node/X;
+
+    .line 10
+    .line 11
+    return-void
 .end method

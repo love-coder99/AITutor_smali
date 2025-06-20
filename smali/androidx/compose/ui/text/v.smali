@@ -10,32 +10,23 @@
 
 
 # direct methods
-.method public constructor <init>()V
-    .locals 2
-
-    .line 2
-    new-instance v0, Landroidx/compose/ui/text/t;
-
-    invoke-direct {v0}, Landroidx/compose/ui/text/t;-><init>()V
-
-    const/4 v1, 0x0
-
-    .line 3
-    invoke-direct {p0, v1, v0}, Landroidx/compose/ui/text/v;-><init>(Landroidx/compose/ui/text/u;Landroidx/compose/ui/text/t;)V
-
-    return-void
-.end method
-
 .method public constructor <init>(Landroidx/compose/ui/text/u;Landroidx/compose/ui/text/t;)V
     .locals 0
 
     .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
+    .line 2
+    .line 3
+    .line 4
     iput-object p1, p0, Landroidx/compose/ui/text/v;->a:Landroidx/compose/ui/text/u;
 
+    .line 5
+    .line 6
     iput-object p2, p0, Landroidx/compose/ui/text/v;->b:Landroidx/compose/ui/text/t;
 
+    .line 7
+    .line 8
     return-void
 .end method
 
@@ -83,7 +74,7 @@
 
     .line 16
     .line 17
-    invoke-static {v3, v1}, Lrb/h;->d(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v3, v1}, Lkotlin/jvm/internal/h;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     .line 18
     .line 19
@@ -107,7 +98,7 @@
 
     .line 27
     .line 28
-    invoke-static {v1, p1}, Lrb/h;->d(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v1, p1}, Lkotlin/jvm/internal/h;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     .line 29
     .line 30
@@ -141,7 +132,7 @@
 
     .line 5
     .line 6
-    invoke-virtual {v1}, Landroidx/compose/ui/text/u;->hashCode()I
+    invoke-virtual {v1}, Ljava/lang/Object;->hashCode()I
 
     .line 7
     .line 8

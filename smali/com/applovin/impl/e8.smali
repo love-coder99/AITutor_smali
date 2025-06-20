@@ -37,7 +37,7 @@
 
     .line 11
     .line 12
-    invoke-static {v0, v1, v2}, Landroid/support/v4/media/session/a;->I(Ljava/lang/StringBuilder;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v0, v1, v2}, LB/u;->w(Ljava/lang/StringBuilder;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     .line 13
     .line 14
@@ -80,12 +80,12 @@
 
     monitor-enter v0
 
+    .line 1
     :try_start_0
     sget-object v1, Lcom/applovin/impl/e8;->c:Ljava/lang/String;
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    .line 1
     monitor-exit v0
 
     return-object v1
@@ -93,7 +93,10 @@
     :catchall_0
     move-exception v1
 
+    :try_start_1
     monitor-exit v0
+    :try_end_1
+    .catchall {:try_start_1 .. :try_end_1} :catchall_0
 
     throw v1
 .end method
@@ -105,10 +108,10 @@
 
     monitor-enter v0
 
+    .line 2
     :try_start_0
     sget-object v1, Lcom/applovin/impl/e8;->b:Ljava/util/HashSet;
 
-    .line 2
     invoke-virtual {v1, p0}, Ljava/util/HashSet;->add(Ljava/lang/Object;)Z
 
     move-result v1
@@ -152,7 +155,10 @@
     return-void
 
     :goto_1
+    :try_start_1
     monitor-exit v0
+    :try_end_1
+    .catchall {:try_start_1 .. :try_end_1} :catchall_0
 
     throw p0
 .end method

@@ -1,15 +1,29 @@
-.class public abstract Lcom/applovin/impl/l2;
+.class public final synthetic Lcom/applovin/impl/L2;
 .super Ljava/lang/Object;
 .source "SourceFile"
 
+# interfaces
+.implements Lcom/applovin/impl/gc$a;
+
 
 # instance fields
-.field private a:I
+.field public final synthetic b:I
+
+.field public final synthetic c:Lcom/applovin/impl/s0$a;
+
+.field public final synthetic d:Ljava/lang/Exception;
 
 
 # direct methods
-.method public constructor <init>()V
+.method public synthetic constructor <init>(Lcom/applovin/impl/s0$a;Ljava/lang/Exception;I)V
     .locals 0
+
+    .line 1
+    iput p3, p0, Lcom/applovin/impl/L2;->b:I
+
+    iput-object p1, p0, Lcom/applovin/impl/L2;->c:Lcom/applovin/impl/s0$a;
+
+    iput-object p2, p0, Lcom/applovin/impl/L2;->d:Ljava/lang/Exception;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -18,128 +32,63 @@
 
 
 # virtual methods
-.method public b()V
-    .locals 1
+.method public final a(Ljava/lang/Object;)V
+    .locals 2
 
     .line 1
-    const/4 v0, 0x0
+    iget v0, p0, Lcom/applovin/impl/L2;->b:I
 
-    iput v0, p0, Lcom/applovin/impl/l2;->a:I
+    packed-switch v0, :pswitch_data_0
+
+    iget-object v0, p0, Lcom/applovin/impl/L2;->d:Ljava/lang/Exception;
+
+    check-cast p1, Lcom/applovin/impl/s0;
+
+    iget-object v1, p0, Lcom/applovin/impl/L2;->c:Lcom/applovin/impl/s0$a;
+
+    invoke-static {v1, v0, p1}, Lcom/applovin/impl/r0;->m(Lcom/applovin/impl/s0$a;Ljava/lang/Exception;Lcom/applovin/impl/s0;)V
 
     return-void
-.end method
 
-.method public final b(I)V
-    .locals 1
+    :pswitch_0
+    iget-object v0, p0, Lcom/applovin/impl/L2;->d:Ljava/lang/Exception;
 
-    .line 2
-    iget v0, p0, Lcom/applovin/impl/l2;->a:I
+    check-cast p1, Lcom/applovin/impl/s0;
 
-    or-int/2addr p1, v0
+    iget-object v1, p0, Lcom/applovin/impl/L2;->c:Lcom/applovin/impl/s0$a;
 
-    iput p1, p0, Lcom/applovin/impl/l2;->a:I
+    invoke-static {v1, v0, p1}, Lcom/applovin/impl/r0;->s(Lcom/applovin/impl/s0$a;Ljava/lang/Exception;Lcom/applovin/impl/s0;)V
 
     return-void
-.end method
 
-.method public final c(I)V
-    .locals 1
+    :pswitch_1
+    iget-object v0, p0, Lcom/applovin/impl/L2;->d:Ljava/lang/Exception;
 
-    .line 1
-    iget v0, p0, Lcom/applovin/impl/l2;->a:I
+    check-cast p1, Lcom/applovin/impl/s0;
 
-    not-int p1, p1
+    iget-object v1, p0, Lcom/applovin/impl/L2;->c:Lcom/applovin/impl/s0$a;
 
-    and-int/2addr p1, v0
-
-    iput p1, p0, Lcom/applovin/impl/l2;->a:I
+    invoke-static {v1, v0, p1}, Lcom/applovin/impl/r0;->d0(Lcom/applovin/impl/s0$a;Ljava/lang/Exception;Lcom/applovin/impl/s0;)V
 
     return-void
-.end method
 
-.method public final c()Z
-    .locals 1
+    :pswitch_2
+    iget-object v0, p0, Lcom/applovin/impl/L2;->d:Ljava/lang/Exception;
 
-    const/high16 v0, 0x10000000
+    check-cast p1, Lcom/applovin/impl/s0;
 
-    .line 2
-    invoke-virtual {p0, v0}, Lcom/applovin/impl/l2;->d(I)Z
+    iget-object v1, p0, Lcom/applovin/impl/L2;->c:Lcom/applovin/impl/s0$a;
 
-    move-result v0
-
-    return v0
-.end method
-
-.method public final d()Z
-    .locals 1
-
-    const/high16 v0, -0x80000000
-
-    .line 2
-    invoke-virtual {p0, v0}, Lcom/applovin/impl/l2;->d(I)Z
-
-    move-result v0
-
-    return v0
-.end method
-
-.method public final d(I)Z
-    .locals 1
-
-    .line 1
-    iget v0, p0, Lcom/applovin/impl/l2;->a:I
-
-    and-int/2addr v0, p1
-
-    if-ne v0, p1, :cond_0
-
-    const/4 p1, 0x1
-
-    goto :goto_0
-
-    :cond_0
-    const/4 p1, 0x0
-
-    :goto_0
-    return p1
-.end method
-
-.method public final e(I)V
-    .locals 0
-
-    .line 1
-    iput p1, p0, Lcom/applovin/impl/l2;->a:I
+    invoke-static {v1, v0, p1}, Lcom/applovin/impl/r0;->A(Lcom/applovin/impl/s0$a;Ljava/lang/Exception;Lcom/applovin/impl/s0;)V
 
     return-void
-.end method
 
-.method public final e()Z
-    .locals 1
+    nop
 
-    const/4 v0, 0x4
-
-    .line 2
-    invoke-virtual {p0, v0}, Lcom/applovin/impl/l2;->d(I)Z
-
-    move-result v0
-
-    return v0
-.end method
-
-.method public final f()Z
-    .locals 1
-
-    .line 1
-    const/4 v0, 0x1
-
-    .line 2
-    invoke-virtual {p0, v0}, Lcom/applovin/impl/l2;->d(I)Z
-
-    .line 3
-    .line 4
-    .line 5
-    move-result v0
-
-    .line 6
-    return v0
+    :pswitch_data_0
+    .packed-switch 0x0
+        :pswitch_2
+        :pswitch_1
+        :pswitch_0
+    .end packed-switch
 .end method

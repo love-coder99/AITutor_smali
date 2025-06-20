@@ -15,15 +15,27 @@
 .method static constructor <clinit>()V
     .locals 1
 
+    .line 1
     const/4 v0, 0x0
 
+    .line 2
     sput-boolean v0, Landroidx/appcompat/widget/AppCompatPopupWindow;->COMPAT_OVERLAP_ANCHOR:Z
 
+    .line 3
+    .line 4
     return-void
 .end method
 
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
     .locals 1
+    .param p1    # Landroid/content/Context;
+        .annotation build Landroidx/annotation/NonNull;
+        .end annotation
+    .end param
+    .param p2    # Landroid/util/AttributeSet;
+        .annotation build Landroidx/annotation/Nullable;
+        .end annotation
+    .end param
 
     .line 1
     invoke-direct {p0, p1, p2, p3}, Landroid/widget/PopupWindow;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
@@ -38,6 +50,14 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;II)V
     .locals 0
+    .param p1    # Landroid/content/Context;
+        .annotation build Landroidx/annotation/NonNull;
+        .end annotation
+    .end param
+    .param p2    # Landroid/util/AttributeSet;
+        .annotation build Landroidx/annotation/Nullable;
+        .end annotation
+    .end param
 
     .line 3
     invoke-direct {p0, p1, p2, p3, p4}, Landroid/widget/PopupWindow;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;II)V
@@ -52,7 +72,7 @@
     .locals 1
 
     .line 1
-    sget-object v0, Lg/j;->PopupWindow:[I
+    sget-object v0, Li/j;->PopupWindow:[I
 
     .line 2
     .line 3
@@ -64,7 +84,7 @@
     move-result-object p1
 
     .line 7
-    sget p2, Lg/j;->PopupWindow_overlapAnchor:I
+    sget p2, Li/j;->PopupWindow_overlapAnchor:I
 
     .line 8
     .line 9
@@ -80,7 +100,7 @@
 
     .line 14
     .line 15
-    sget p2, Lg/j;->PopupWindow_overlapAnchor:I
+    sget p2, Li/j;->PopupWindow_overlapAnchor:I
 
     .line 16
     .line 17
@@ -101,7 +121,7 @@
     .line 24
     .line 25
     :cond_0
-    sget p2, Lg/j;->PopupWindow_android_popupBackground:I
+    sget p2, Li/j;->PopupWindow_android_popupBackground:I
 
     .line 26
     .line 27
@@ -146,7 +166,7 @@
 
     .line 8
     :cond_0
-    invoke-static {p0, p1}, Landroidx/constraintlayout/compose/i;->z(Landroid/widget/PopupWindow;Z)V
+    invoke-static {p0, p1}, LB2/f;->B(Landroid/widget/PopupWindow;Z)V
 
     .line 9
     .line 10
@@ -160,6 +180,7 @@
 .method public showAsDropDown(Landroid/view/View;II)V
     .locals 1
 
+    .line 1
     sget-boolean v0, Landroidx/appcompat/widget/AppCompatPopupWindow;->COMPAT_OVERLAP_ANCHOR:Z
 
     if-eqz v0, :cond_0
@@ -168,14 +189,14 @@
 
     if-eqz v0, :cond_0
 
-    .line 1
+    .line 2
     invoke-virtual {p1}, Landroid/view/View;->getHeight()I
 
     move-result v0
 
     sub-int/2addr p3, v0
 
-    .line 2
+    .line 3
     :cond_0
     invoke-super {p0, p1, p2, p3}, Landroid/widget/PopupWindow;->showAsDropDown(Landroid/view/View;II)V
 
@@ -185,6 +206,7 @@
 .method public showAsDropDown(Landroid/view/View;III)V
     .locals 1
 
+    .line 4
     sget-boolean v0, Landroidx/appcompat/widget/AppCompatPopupWindow;->COMPAT_OVERLAP_ANCHOR:Z
 
     if-eqz v0, :cond_0
@@ -193,14 +215,14 @@
 
     if-eqz v0, :cond_0
 
-    .line 3
+    .line 5
     invoke-virtual {p1}, Landroid/view/View;->getHeight()I
 
     move-result v0
 
     sub-int/2addr p3, v0
 
-    .line 4
+    .line 6
     :cond_0
     invoke-super {p0, p1, p2, p3, p4}, Landroid/widget/PopupWindow;->showAsDropDown(Landroid/view/View;III)V
 

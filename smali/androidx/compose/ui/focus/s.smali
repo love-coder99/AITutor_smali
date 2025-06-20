@@ -11,7 +11,7 @@
 
 
 # virtual methods
-.method public final s0()V
+.method public final q0()V
     .locals 1
 
     .line 1
@@ -19,11 +19,11 @@
 
     .line 2
     .line 3
-    iget-object v0, v0, Landroidx/compose/ui/focus/q;->a:Landroidx/compose/runtime/collection/e;
+    iget-object v0, v0, Landroidx/compose/ui/focus/q;->a:Landroidx/compose/runtime/collection/d;
 
     .line 4
     .line 5
-    invoke-virtual {v0, p0}, Landroidx/compose/runtime/collection/e;->b(Ljava/lang/Object;)V
+    invoke-virtual {v0, p0}, Landroidx/compose/runtime/collection/d;->b(Ljava/lang/Object;)V
 
     .line 6
     .line 7
@@ -31,7 +31,7 @@
     return-void
 .end method
 
-.method public final t0()V
+.method public final r0()V
     .locals 1
 
     .line 1
@@ -39,11 +39,11 @@
 
     .line 2
     .line 3
-    iget-object v0, v0, Landroidx/compose/ui/focus/q;->a:Landroidx/compose/runtime/collection/e;
+    iget-object v0, v0, Landroidx/compose/ui/focus/q;->a:Landroidx/compose/runtime/collection/d;
 
     .line 4
     .line 5
-    invoke-virtual {v0, p0}, Landroidx/compose/runtime/collection/e;->p(Ljava/lang/Object;)Z
+    invoke-virtual {v0, p0}, Landroidx/compose/runtime/collection/d;->p(Ljava/lang/Object;)Z
 
     .line 6
     .line 7

@@ -7,7 +7,7 @@
 
 
 # instance fields
-.field public final b:F
+.field public final a:F
 
 
 # direct methods
@@ -20,7 +20,7 @@
     .line 2
     .line 3
     .line 4
-    iput p1, p0, Landroidx/compose/ui/f;->b:F
+    iput p1, p0, Landroidx/compose/ui/f;->a:F
 
     .line 5
     .line 6
@@ -76,7 +76,7 @@
     sub-int/2addr p4, p2
 
     .line 20
-    invoke-static {v1, p4}, Lv5/a;->b(II)J
+    invoke-static {v1, p4}, Lc4/s;->a(II)J
 
     .line 21
     .line 22
@@ -119,7 +119,7 @@
     int-to-float p2, p2
 
     .line 37
-    iget p4, p0, Landroidx/compose/ui/f;->b:F
+    iget p4, p0, Landroidx/compose/ui/f;->a:F
 
     .line 38
     .line 39
@@ -157,7 +157,7 @@
     move-result p2
 
     .line 55
-    invoke-static {p1, p2}, Ly/f;->a(II)J
+    invoke-static {p1, p2}, Landroid/support/v4/media/session/a;->a(II)J
 
     .line 56
     .line 57
@@ -189,9 +189,9 @@
     :cond_1
     check-cast p1, Landroidx/compose/ui/f;
 
-    iget p1, p1, Landroidx/compose/ui/f;->b:F
+    iget p1, p1, Landroidx/compose/ui/f;->a:F
 
-    iget v1, p0, Landroidx/compose/ui/f;->b:F
+    iget v1, p0, Landroidx/compose/ui/f;->a:F
 
     invoke-static {v1, p1}, Ljava/lang/Float;->compare(FF)I
 
@@ -219,22 +219,38 @@
 .method public final hashCode()I
     .locals 2
 
-    iget v0, p0, Landroidx/compose/ui/f;->b:F
+    .line 1
+    iget v0, p0, Landroidx/compose/ui/f;->a:F
 
+    .line 2
+    .line 3
     invoke-static {v0}, Ljava/lang/Float;->floatToIntBits(F)I
 
+    .line 4
+    .line 5
+    .line 6
     move-result v0
 
+    .line 7
     mul-int/lit8 v0, v0, 0x1f
 
+    .line 8
+    .line 9
     const/high16 v1, -0x40800000    # -1.0f
 
+    .line 10
+    .line 11
     invoke-static {v1}, Ljava/lang/Float;->floatToIntBits(F)I
 
+    .line 12
+    .line 13
+    .line 14
     move-result v1
 
+    .line 15
     add-int/2addr v1, v0
 
+    .line 16
     return v1
 .end method
 
@@ -247,7 +263,7 @@
 
     invoke-direct {v0, v1}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
 
-    iget v1, p0, Landroidx/compose/ui/f;->b:F
+    iget v1, p0, Landroidx/compose/ui/f;->a:F
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(F)Ljava/lang/StringBuilder;
 

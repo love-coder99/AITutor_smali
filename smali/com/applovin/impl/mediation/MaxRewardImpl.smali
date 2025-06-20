@@ -97,21 +97,29 @@
 .method public final getAmount()I
     .locals 1
 
+    .line 1
     iget v0, p0, Lcom/applovin/impl/mediation/MaxRewardImpl;->b:I
 
+    .line 2
+    .line 3
     return v0
 .end method
 
 .method public final getLabel()Ljava/lang/String;
     .locals 1
 
+    .line 1
     iget-object v0, p0, Lcom/applovin/impl/mediation/MaxRewardImpl;->a:Ljava/lang/String;
 
+    .line 2
+    .line 3
     return-object v0
 .end method
 
 .method public toString()Ljava/lang/String;
     .locals 3
+    .annotation build Landroidx/annotation/NonNull;
+    .end annotation
 
     .line 1
     new-instance v0, Ljava/lang/StringBuilder;
@@ -153,7 +161,7 @@
 
     .line 21
     .line 22
-    invoke-static {v0, v1, v2}, Landroid/support/v4/media/session/a;->I(Ljava/lang/StringBuilder;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v0, v1, v2}, LB/u;->w(Ljava/lang/StringBuilder;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     .line 23
     .line 24

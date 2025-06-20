@@ -103,10 +103,14 @@
 .method public a([FF)V
     .locals 0
 
+    .line 1
     neg-float p1, p2
 
+    .line 2
     iput p1, p0, Lcom/applovin/impl/jo;->f:F
 
+    .line 3
+    .line 4
     return-void
 .end method
 

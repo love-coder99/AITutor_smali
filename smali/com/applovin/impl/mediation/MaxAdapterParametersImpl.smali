@@ -164,48 +164,68 @@
 .method public getAdFormat()Lcom/applovin/mediation/MaxAdFormat;
     .locals 1
 
+    .line 1
     iget-object v0, p0, Lcom/applovin/impl/mediation/MaxAdapterParametersImpl;->l:Lcom/applovin/mediation/MaxAdFormat;
 
+    .line 2
+    .line 3
     return-object v0
 .end method
 
 .method public getAdUnitId()Ljava/lang/String;
     .locals 1
 
+    .line 1
     iget-object v0, p0, Lcom/applovin/impl/mediation/MaxAdapterParametersImpl;->a:Ljava/lang/String;
 
+    .line 2
+    .line 3
     return-object v0
 .end method
 
 .method public getBidExpirationMillis()J
     .locals 2
 
+    .line 1
     iget-wide v0, p0, Lcom/applovin/impl/mediation/MaxAdapterParametersImpl;->k:J
 
+    .line 2
+    .line 3
     return-wide v0
 .end method
 
 .method public getBidResponse()Ljava/lang/String;
     .locals 1
 
+    .line 1
     iget-object v0, p0, Lcom/applovin/impl/mediation/MaxAdapterParametersImpl;->j:Ljava/lang/String;
 
+    .line 2
+    .line 3
     return-object v0
 .end method
 
 .method public getConsentString()Ljava/lang/String;
     .locals 1
+    .annotation build Landroidx/annotation/Nullable;
+    .end annotation
 
+    .line 1
     iget-object v0, p0, Lcom/applovin/impl/mediation/MaxAdapterParametersImpl;->g:Ljava/lang/String;
 
+    .line 2
+    .line 3
     return-object v0
 .end method
 
 .method public getCustomParameters()Landroid/os/Bundle;
     .locals 1
 
+    .line 1
     iget-object v0, p0, Lcom/applovin/impl/mediation/MaxAdapterParametersImpl;->d:Landroid/os/Bundle;
 
+    .line 2
+    .line 3
     return-object v0
 .end method
 
@@ -221,37 +241,53 @@
         }
     .end annotation
 
+    .line 1
     iget-object v0, p0, Lcom/applovin/impl/mediation/MaxAdapterParametersImpl;->b:Ljava/util/Map;
 
+    .line 2
+    .line 3
     return-object v0
 .end method
 
 .method public getServerParameters()Landroid/os/Bundle;
     .locals 1
 
+    .line 1
     iget-object v0, p0, Lcom/applovin/impl/mediation/MaxAdapterParametersImpl;->c:Landroid/os/Bundle;
 
+    .line 2
+    .line 3
     return-object v0
 .end method
 
 .method public getThirdPartyAdPlacementId()Ljava/lang/String;
     .locals 1
 
+    .line 1
     iget-object v0, p0, Lcom/applovin/impl/mediation/MaxAdapterParametersImpl;->i:Ljava/lang/String;
 
+    .line 2
+    .line 3
     return-object v0
 .end method
 
 .method public hasUserConsent()Ljava/lang/Boolean;
     .locals 1
+    .annotation build Landroidx/annotation/Nullable;
+    .end annotation
 
+    .line 1
     iget-object v0, p0, Lcom/applovin/impl/mediation/MaxAdapterParametersImpl;->e:Ljava/lang/Boolean;
 
+    .line 2
+    .line 3
     return-object v0
 .end method
 
 .method public isAgeRestrictedUser()Ljava/lang/Boolean;
     .locals 1
+    .annotation build Landroidx/annotation/Nullable;
+    .end annotation
 
     const/4 v0, 0x0
 
@@ -260,16 +296,24 @@
 
 .method public isDoNotSell()Ljava/lang/Boolean;
     .locals 1
+    .annotation build Landroidx/annotation/Nullable;
+    .end annotation
 
+    .line 1
     iget-object v0, p0, Lcom/applovin/impl/mediation/MaxAdapterParametersImpl;->f:Ljava/lang/Boolean;
 
+    .line 2
+    .line 3
     return-object v0
 .end method
 
 .method public isTesting()Z
     .locals 1
 
+    .line 1
     iget-boolean v0, p0, Lcom/applovin/impl/mediation/MaxAdapterParametersImpl;->h:Z
 
+    .line 2
+    .line 3
     return v0
 .end method

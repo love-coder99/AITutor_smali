@@ -3,14 +3,14 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lzh/c;
+.implements Lka/c;
 
 
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "Lkotlin/jvm/internal/Lambda;",
-        "Lzh/c;"
+        "Lka/c;"
     }
 .end annotation
 
@@ -22,9 +22,9 @@
         "Landroidx/camera/core/b;",
         "kotlin.jvm.PlatformType",
         "cameraX",
-        "Landroidx/camera/lifecycle/d;",
+        "Landroidx/camera/lifecycle/e;",
         "invoke",
-        "(Landroidx/camera/core/b;)Landroidx/camera/lifecycle/d;",
+        "(Landroidx/camera/core/b;)Landroidx/camera/lifecycle/e;",
         "<anonymous>"
     }
     k = 0x3
@@ -55,24 +55,24 @@
 
 
 # virtual methods
-.method public final invoke(Landroidx/camera/core/b;)Landroidx/camera/lifecycle/d;
+.method public final invoke(Landroidx/camera/core/b;)Landroidx/camera/lifecycle/e;
     .locals 1
 
     .line 1
-    sget-object v0, Landroidx/camera/lifecycle/d;->h:Landroidx/camera/lifecycle/d;
+    sget-object v0, Landroidx/camera/lifecycle/e;->g:Landroidx/camera/lifecycle/e;
 
     .line 2
-    iput-object p1, v0, Landroidx/camera/lifecycle/d;->e:Landroidx/camera/core/b;
-
-    iget-object p1, p0, Landroidx/camera/lifecycle/ProcessCameraProvider$Companion$getInstance$1;->$context:Landroid/content/Context;
+    iput-object p1, v0, Landroidx/camera/lifecycle/e;->d:Landroidx/camera/core/b;
 
     .line 3
-    invoke-static {p1}, Lb0/h;->F(Landroid/content/Context;)Landroid/content/Context;
+    iget-object p1, p0, Landroidx/camera/lifecycle/ProcessCameraProvider$Companion$getInstance$1;->$context:Landroid/content/Context;
+
+    invoke-static {p1}, LEa/d;->j(Landroid/content/Context;)Landroid/content/Context;
 
     move-result-object p1
 
     .line 4
-    iput-object p1, v0, Landroidx/camera/lifecycle/d;->f:Landroid/content/Context;
+    iput-object p1, v0, Landroidx/camera/lifecycle/e;->e:Landroid/content/Context;
 
     return-object v0
 .end method
@@ -83,7 +83,7 @@
     .line 5
     check-cast p1, Landroidx/camera/core/b;
 
-    invoke-virtual {p0, p1}, Landroidx/camera/lifecycle/ProcessCameraProvider$Companion$getInstance$1;->invoke(Landroidx/camera/core/b;)Landroidx/camera/lifecycle/d;
+    invoke-virtual {p0, p1}, Landroidx/camera/lifecycle/ProcessCameraProvider$Companion$getInstance$1;->invoke(Landroidx/camera/core/b;)Landroidx/camera/lifecycle/e;
 
     move-result-object p1
 

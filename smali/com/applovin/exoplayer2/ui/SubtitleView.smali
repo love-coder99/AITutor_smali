@@ -50,6 +50,10 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
     .locals 1
+    .param p2    # Landroid/util/AttributeSet;
+        .annotation build Landroidx/annotation/Nullable;
+        .end annotation
+    .end param
 
     .line 2
     invoke-direct {p0, p1, p2}, Landroid/widget/FrameLayout;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
@@ -68,34 +72,42 @@
 
     const/4 p2, 0x0
 
+    .line 5
     iput p2, p0, Lcom/applovin/exoplayer2/ui/SubtitleView;->c:I
 
     const p2, 0x3d5a511a    # 0.0533f
 
+    .line 6
     iput p2, p0, Lcom/applovin/exoplayer2/ui/SubtitleView;->d:F
 
     const p2, 0x3da3d70a    # 0.08f
 
+    .line 7
     iput p2, p0, Lcom/applovin/exoplayer2/ui/SubtitleView;->f:F
 
     const/4 p2, 0x1
 
+    .line 8
     iput-boolean p2, p0, Lcom/applovin/exoplayer2/ui/SubtitleView;->g:Z
 
+    .line 9
     iput-boolean p2, p0, Lcom/applovin/exoplayer2/ui/SubtitleView;->h:Z
 
-    .line 5
+    .line 10
     new-instance v0, Lcom/applovin/exoplayer2/ui/a;
 
     invoke-direct {v0, p1}, Lcom/applovin/exoplayer2/ui/a;-><init>(Landroid/content/Context;)V
 
+    .line 11
     iput-object v0, p0, Lcom/applovin/exoplayer2/ui/SubtitleView;->j:Lcom/applovin/exoplayer2/ui/SubtitleView$a;
 
+    .line 12
     iput-object v0, p0, Lcom/applovin/exoplayer2/ui/SubtitleView;->k:Landroid/view/View;
 
-    .line 6
+    .line 13
     invoke-virtual {p0, v0}, Landroid/view/ViewGroup;->addView(Landroid/view/View;)V
 
+    .line 14
     iput p2, p0, Lcom/applovin/exoplayer2/ui/SubtitleView;->i:I
 
     return-void
@@ -109,24 +121,26 @@
 
     move-result-object p1
 
+    .line 20
     iget-boolean v0, p0, Lcom/applovin/exoplayer2/ui/SubtitleView;->g:Z
 
     if-nez v0, :cond_0
 
-    .line 20
+    .line 21
     invoke-static {p1}, Lcom/applovin/exoplayer2/ui/h;->a(Lcom/applovin/impl/a5$b;)V
 
     goto :goto_0
 
+    .line 22
     :cond_0
     iget-boolean v0, p0, Lcom/applovin/exoplayer2/ui/SubtitleView;->h:Z
 
     if-nez v0, :cond_1
 
-    .line 21
+    .line 23
     invoke-static {p1}, Lcom/applovin/exoplayer2/ui/h;->b(Lcom/applovin/impl/a5$b;)V
 
-    .line 22
+    .line 24
     :cond_1
     :goto_0
     invoke-virtual {p1}, Lcom/applovin/impl/a5$b;->a()Lcom/applovin/impl/a5;
@@ -139,11 +153,13 @@
 .method private a(IF)V
     .locals 0
 
+    .line 27
     iput p1, p0, Lcom/applovin/exoplayer2/ui/SubtitleView;->c:I
 
+    .line 28
     iput p2, p0, Lcom/applovin/exoplayer2/ui/SubtitleView;->d:F
 
-    .line 25
+    .line 29
     invoke-direct {p0}, Lcom/applovin/exoplayer2/ui/SubtitleView;->e()V
 
     return-void
@@ -152,9 +168,10 @@
 .method private e()V
     .locals 6
 
+    .line 3
     iget-object v0, p0, Lcom/applovin/exoplayer2/ui/SubtitleView;->j:Lcom/applovin/exoplayer2/ui/SubtitleView$a;
 
-    .line 3
+    .line 4
     invoke-direct {p0}, Lcom/applovin/exoplayer2/ui/SubtitleView;->getCuesWithStylingPreferencesApplied()Ljava/util/List;
 
     move-result-object v1
@@ -167,7 +184,7 @@
 
     iget v5, p0, Lcom/applovin/exoplayer2/ui/SubtitleView;->f:F
 
-    .line 4
+    .line 5
     invoke-interface/range {v0 .. v5}, Lcom/applovin/exoplayer2/ui/SubtitleView$a;->a(Ljava/util/List;Lcom/applovin/impl/x2;FIF)V
 
     return-void
@@ -561,7 +578,7 @@
     .locals 0
 
     .line 1
-    invoke-static {p0}, Lcom/applovin/impl/iv;->a(Lcom/applovin/impl/qh$e;)V
+    invoke-static {p0}, Lcom/applovin/impl/Z1;->a(Lcom/applovin/impl/qh$e;)V
 
     return-void
 .end method
@@ -570,7 +587,7 @@
     .locals 0
 
     .line 2
-    invoke-static {p0, p1}, Lcom/applovin/impl/iv;->b(Lcom/applovin/impl/qh$e;F)V
+    invoke-static {p0, p1}, Lcom/applovin/impl/Z1;->b(Lcom/applovin/impl/qh$e;F)V
 
     return-void
 .end method
@@ -578,7 +595,7 @@
 .method public a(FZ)V
     .locals 0
 
-    .line 24
+    .line 26
     invoke-direct {p0, p2, p1}, Lcom/applovin/exoplayer2/ui/SubtitleView;->a(IF)V
 
     return-void
@@ -588,7 +605,7 @@
     .locals 0
 
     .line 3
-    invoke-static {p0, p1}, Lcom/applovin/impl/iv;->c(Lcom/applovin/impl/qh$e;I)V
+    invoke-static {p0, p1}, Lcom/applovin/impl/Z1;->c(Lcom/applovin/impl/qh$e;I)V
 
     return-void
 .end method
@@ -597,7 +614,7 @@
     .locals 0
 
     .line 4
-    invoke-static {p0, p1, p2}, Lcom/applovin/impl/iv;->d(Lcom/applovin/impl/qh$e;II)V
+    invoke-static {p0, p1, p2}, Lcom/applovin/impl/Z1;->d(Lcom/applovin/impl/qh$e;II)V
 
     return-void
 .end method
@@ -606,7 +623,7 @@
     .locals 0
 
     .line 5
-    invoke-static {p0, p1}, Lcom/applovin/impl/iv;->e(Lcom/applovin/impl/qh$e;Lcom/applovin/impl/af;)V
+    invoke-static {p0, p1}, Lcom/applovin/impl/Z1;->e(Lcom/applovin/impl/qh$e;Lcom/applovin/impl/af;)V
 
     return-void
 .end method
@@ -615,7 +632,7 @@
     .locals 0
 
     .line 6
-    invoke-static {p0, p1, p2}, Lcom/applovin/impl/iv;->f(Lcom/applovin/impl/qh$e;Lcom/applovin/impl/fo;I)V
+    invoke-static {p0, p1, p2}, Lcom/applovin/impl/Z1;->f(Lcom/applovin/impl/qh$e;Lcom/applovin/impl/fo;I)V
 
     return-void
 .end method
@@ -624,7 +641,7 @@
     .locals 0
 
     .line 7
-    invoke-static {p0, p1}, Lcom/applovin/impl/iv;->g(Lcom/applovin/impl/qh$e;Lcom/applovin/impl/nh;)V
+    invoke-static {p0, p1}, Lcom/applovin/impl/Z1;->g(Lcom/applovin/impl/qh$e;Lcom/applovin/impl/nh;)V
 
     return-void
 .end method
@@ -633,7 +650,7 @@
     .locals 0
 
     .line 8
-    invoke-static {p0, p1}, Lcom/applovin/impl/iv;->h(Lcom/applovin/impl/qh$e;Lcom/applovin/impl/ph;)V
+    invoke-static {p0, p1}, Lcom/applovin/impl/Z1;->h(Lcom/applovin/impl/qh$e;Lcom/applovin/impl/ph;)V
 
     return-void
 .end method
@@ -642,7 +659,7 @@
     .locals 0
 
     .line 9
-    invoke-static {p0, p1, p2}, Lcom/applovin/impl/iv;->i(Lcom/applovin/impl/qh$e;Lcom/applovin/impl/po;Lcom/applovin/impl/to;)V
+    invoke-static {p0, p1, p2}, Lcom/applovin/impl/Z1;->i(Lcom/applovin/impl/qh$e;Lcom/applovin/impl/po;Lcom/applovin/impl/to;)V
 
     return-void
 .end method
@@ -651,7 +668,7 @@
     .locals 0
 
     .line 10
-    invoke-static {p0, p1}, Lcom/applovin/impl/iv;->j(Lcom/applovin/impl/qh$e;Lcom/applovin/impl/q6;)V
+    invoke-static {p0, p1}, Lcom/applovin/impl/Z1;->j(Lcom/applovin/impl/qh$e;Lcom/applovin/impl/q6;)V
 
     return-void
 .end method
@@ -660,7 +677,7 @@
     .locals 0
 
     .line 11
-    invoke-static {p0, p1}, Lcom/applovin/impl/iv;->k(Lcom/applovin/impl/qh$e;Lcom/applovin/impl/qh$b;)V
+    invoke-static {p0, p1}, Lcom/applovin/impl/Z1;->k(Lcom/applovin/impl/qh$e;Lcom/applovin/impl/qh$b;)V
 
     return-void
 .end method
@@ -669,7 +686,7 @@
     .locals 0
 
     .line 12
-    invoke-static {p0, p1, p2, p3}, Lcom/applovin/impl/iv;->l(Lcom/applovin/impl/qh$e;Lcom/applovin/impl/qh$f;Lcom/applovin/impl/qh$f;I)V
+    invoke-static {p0, p1, p2, p3}, Lcom/applovin/impl/Z1;->l(Lcom/applovin/impl/qh$e;Lcom/applovin/impl/qh$f;Lcom/applovin/impl/qh$f;I)V
 
     return-void
 .end method
@@ -678,7 +695,7 @@
     .locals 0
 
     .line 13
-    invoke-static {p0, p1, p2}, Lcom/applovin/impl/iv;->m(Lcom/applovin/impl/qh$e;Lcom/applovin/impl/qh;Lcom/applovin/impl/qh$d;)V
+    invoke-static {p0, p1, p2}, Lcom/applovin/impl/Z1;->m(Lcom/applovin/impl/qh$e;Lcom/applovin/impl/qh;Lcom/applovin/impl/qh$d;)V
 
     return-void
 .end method
@@ -687,7 +704,7 @@
     .locals 0
 
     .line 14
-    invoke-static {p0, p1, p2}, Lcom/applovin/impl/iv;->n(Lcom/applovin/impl/qh$e;Lcom/applovin/impl/sd;I)V
+    invoke-static {p0, p1, p2}, Lcom/applovin/impl/Z1;->n(Lcom/applovin/impl/qh$e;Lcom/applovin/impl/sd;I)V
 
     return-void
 .end method
@@ -696,7 +713,7 @@
     .locals 0
 
     .line 15
-    invoke-static {p0, p1}, Lcom/applovin/impl/iv;->o(Lcom/applovin/impl/qh$e;Lcom/applovin/impl/ud;)V
+    invoke-static {p0, p1}, Lcom/applovin/impl/Z1;->o(Lcom/applovin/impl/qh$e;Lcom/applovin/impl/ud;)V
 
     return-void
 .end method
@@ -705,7 +722,7 @@
     .locals 0
 
     .line 16
-    invoke-static {p0, p1}, Lcom/applovin/impl/iv;->p(Lcom/applovin/impl/qh$e;Lcom/applovin/impl/xq;)V
+    invoke-static {p0, p1}, Lcom/applovin/impl/Z1;->p(Lcom/applovin/impl/qh$e;Lcom/applovin/impl/xq;)V
 
     return-void
 .end method
@@ -713,7 +730,7 @@
 .method public a(Ljava/util/List;)V
     .locals 0
 
-    .line 23
+    .line 25
     invoke-virtual {p0, p1}, Lcom/applovin/exoplayer2/ui/SubtitleView;->setCues(Ljava/util/List;)V
 
     return-void
@@ -723,7 +740,7 @@
     .locals 0
 
     .line 17
-    invoke-static {p0, p1}, Lcom/applovin/impl/iv;->r(Lcom/applovin/impl/qh$e;Z)V
+    invoke-static {p0, p1}, Lcom/applovin/impl/Z1;->r(Lcom/applovin/impl/qh$e;Z)V
 
     return-void
 .end method
@@ -732,7 +749,7 @@
     .locals 0
 
     .line 18
-    invoke-static {p0, p1, p2}, Lcom/applovin/impl/iv;->s(Lcom/applovin/impl/qh$e;ZI)V
+    invoke-static {p0, p1, p2}, Lcom/applovin/impl/Z1;->s(Lcom/applovin/impl/qh$e;ZI)V
 
     return-void
 .end method
@@ -741,7 +758,7 @@
     .locals 0
 
     .line 1
-    invoke-static {p0}, Lcom/applovin/impl/hv;->l(Lcom/applovin/impl/qh$c;)V
+    invoke-static {p0}, Lcom/applovin/impl/Y1;->l(Lcom/applovin/impl/qh$c;)V
 
     return-void
 .end method
@@ -750,7 +767,7 @@
     .locals 0
 
     .line 2
-    invoke-static {p0, p1}, Lcom/applovin/impl/iv;->t(Lcom/applovin/impl/qh$e;I)V
+    invoke-static {p0, p1}, Lcom/applovin/impl/Z1;->t(Lcom/applovin/impl/qh$e;I)V
 
     return-void
 .end method
@@ -759,7 +776,7 @@
     .locals 0
 
     .line 3
-    invoke-static {p0, p1, p2}, Lcom/applovin/impl/iv;->u(Lcom/applovin/impl/qh$e;IZ)V
+    invoke-static {p0, p1, p2}, Lcom/applovin/impl/Z1;->u(Lcom/applovin/impl/qh$e;IZ)V
 
     return-void
 .end method
@@ -768,7 +785,7 @@
     .locals 0
 
     .line 4
-    invoke-static {p0, p1}, Lcom/applovin/impl/iv;->v(Lcom/applovin/impl/qh$e;Lcom/applovin/impl/nh;)V
+    invoke-static {p0, p1}, Lcom/applovin/impl/Z1;->v(Lcom/applovin/impl/qh$e;Lcom/applovin/impl/nh;)V
 
     return-void
 .end method
@@ -777,7 +794,7 @@
     .locals 0
 
     .line 5
-    invoke-static {p0, p1}, Lcom/applovin/impl/iv;->w(Lcom/applovin/impl/qh$e;Z)V
+    invoke-static {p0, p1}, Lcom/applovin/impl/Z1;->w(Lcom/applovin/impl/qh$e;Z)V
 
     return-void
 .end method
@@ -786,7 +803,7 @@
     .locals 0
 
     .line 6
-    invoke-static {p0, p1, p2}, Lcom/applovin/impl/hv;->o(Lcom/applovin/impl/qh$c;ZI)V
+    invoke-static {p0, p1, p2}, Lcom/applovin/impl/Y1;->o(Lcom/applovin/impl/qh$c;ZI)V
 
     return-void
 .end method
@@ -808,7 +825,7 @@
     .locals 0
 
     .line 1
-    invoke-static {p0, p1}, Lcom/applovin/impl/iv;->x(Lcom/applovin/impl/qh$e;I)V
+    invoke-static {p0, p1}, Lcom/applovin/impl/Z1;->x(Lcom/applovin/impl/qh$e;I)V
 
     return-void
 .end method
@@ -817,7 +834,7 @@
     .locals 0
 
     .line 2
-    invoke-static {p0, p1}, Lcom/applovin/impl/iv;->y(Lcom/applovin/impl/qh$e;Z)V
+    invoke-static {p0, p1}, Lcom/applovin/impl/Z1;->y(Lcom/applovin/impl/qh$e;Z)V
 
     return-void
 .end method
@@ -843,7 +860,7 @@
     .locals 0
 
     .line 1
-    invoke-static {p0, p1}, Lcom/applovin/impl/iv;->z(Lcom/applovin/impl/qh$e;Z)V
+    invoke-static {p0, p1}, Lcom/applovin/impl/Z1;->z(Lcom/applovin/impl/qh$e;Z)V
 
     return-void
 .end method
@@ -852,7 +869,7 @@
     .locals 0
 
     .line 1
-    invoke-static {p0, p1}, Lcom/applovin/impl/hv;->s(Lcom/applovin/impl/qh$c;I)V
+    invoke-static {p0, p1}, Lcom/applovin/impl/Y1;->s(Lcom/applovin/impl/qh$c;I)V
 
     return-void
 .end method
@@ -861,7 +878,7 @@
     .locals 0
 
     .line 2
-    invoke-static {p0, p1}, Lcom/applovin/impl/hv;->t(Lcom/applovin/impl/qh$c;Z)V
+    invoke-static {p0, p1}, Lcom/applovin/impl/Y1;->t(Lcom/applovin/impl/qh$c;Z)V
 
     return-void
 .end method
@@ -916,6 +933,10 @@
 
 .method public setCues(Ljava/util/List;)V
     .locals 0
+    .param p1    # Ljava/util/List;
+        .annotation build Landroidx/annotation/Nullable;
+        .end annotation
+    .end param
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",

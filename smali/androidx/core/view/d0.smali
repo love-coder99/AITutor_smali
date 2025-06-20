@@ -1,96 +1,51 @@
-.class public Landroidx/core/view/d0;
-.super Landroidx/compose/ui/text/input/j;
+.class public Landroidx/core/view/D0;
+.super Landroidx/core/view/C0;
 .source "SourceFile"
 
 
 # instance fields
-.field public final b:Landroid/view/View;
+.field public o:Ll1/c;
+
+.field public p:Ll1/c;
+
+.field public q:Ll1/c;
 
 
 # direct methods
-.method public constructor <init>(Landroid/view/View;)V
-    .locals 1
+.method public constructor <init>(Landroidx/core/view/K0;Landroid/view/WindowInsets;)V
+    .locals 0
 
     .line 1
-    const/16 v0, 0x10
+    invoke-direct {p0, p1, p2}, Landroidx/core/view/C0;-><init>(Landroidx/core/view/K0;Landroid/view/WindowInsets;)V
 
     .line 2
     .line 3
-    invoke-direct {p0, v0}, Landroidx/compose/ui/text/input/j;-><init>(I)V
-
     .line 4
-    .line 5
-    .line 6
-    iput-object p1, p0, Landroidx/core/view/d0;->b:Landroid/view/View;
+    const/4 p1, 0x0
 
+    .line 5
+    iput-object p1, p0, Landroidx/core/view/D0;->o:Ll1/c;
+
+    .line 6
     .line 7
+    iput-object p1, p0, Landroidx/core/view/D0;->p:Ll1/c;
+
     .line 8
+    .line 9
+    iput-object p1, p0, Landroidx/core/view/D0;->q:Ll1/c;
+
+    .line 10
+    .line 11
     return-void
 .end method
 
 
 # virtual methods
-.method public h()V
-    .locals 3
+.method public h()Ll1/c;
+    .locals 1
 
     .line 1
-    iget-object v0, p0, Landroidx/core/view/d0;->b:Landroid/view/View;
-
-    .line 2
-    .line 3
-    if-eqz v0, :cond_0
-
-    .line 4
-    .line 5
-    invoke-virtual {v0}, Landroid/view/View;->getContext()Landroid/content/Context;
-
-    .line 6
-    .line 7
-    .line 8
-    move-result-object v1
-
-    .line 9
-    const-string v2, "input_method"
-
-    .line 10
-    .line 11
-    invoke-virtual {v1, v2}, Landroid/content/Context;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
-
-    .line 12
-    .line 13
-    .line 14
-    move-result-object v1
-
-    .line 15
-    check-cast v1, Landroid/view/inputmethod/InputMethodManager;
-
-    .line 16
-    .line 17
-    invoke-virtual {v0}, Landroid/view/View;->getWindowToken()Landroid/os/IBinder;
-
-    .line 18
-    .line 19
-    .line 20
-    move-result-object v0
-
-    .line 21
-    const/4 v2, 0x0
-
-    .line 22
-    invoke-virtual {v1, v0, v2}, Landroid/view/inputmethod/InputMethodManager;->hideSoftInputFromWindow(Landroid/os/IBinder;I)Z
-
-    .line 23
-    .line 24
-    .line 25
-    :cond_0
-    return-void
-.end method
-
-.method public l()V
-    .locals 3
-
-    .line 1
-    iget-object v0, p0, Landroidx/core/view/d0;->b:Landroid/view/View;
+    iget-object v0, p0, Landroidx/core/view/D0;->p:Ll1/c;
 
     .line 2
     .line 3
@@ -98,127 +53,159 @@
 
     .line 4
     .line 5
-    return-void
+    iget-object v0, p0, Landroidx/core/view/A0;->c:Landroid/view/WindowInsets;
 
     .line 6
-    :cond_0
-    invoke-virtual {v0}, Landroid/view/View;->isInEditMode()Z
-
     .line 7
+    invoke-static {v0}, Landroidx/compose/ui/platform/v0;->t(Landroid/view/WindowInsets;)Landroid/graphics/Insets;
+
     .line 8
     .line 9
-    move-result v1
-
     .line 10
-    if-nez v1, :cond_2
-
-    .line 11
-    .line 12
-    invoke-virtual {v0}, Landroid/view/View;->onCheckIsTextEditor()Z
-
-    .line 13
-    .line 14
-    .line 15
-    move-result v1
-
-    .line 16
-    if-eqz v1, :cond_1
-
-    .line 17
-    .line 18
-    goto :goto_0
-
-    .line 19
-    :cond_1
-    invoke-virtual {v0}, Landroid/view/View;->getRootView()Landroid/view/View;
-
-    .line 20
-    .line 21
-    .line 22
-    move-result-object v1
-
-    .line 23
-    invoke-virtual {v1}, Landroid/view/View;->findFocus()Landroid/view/View;
-
-    .line 24
-    .line 25
-    .line 26
-    move-result-object v1
-
-    .line 27
-    goto :goto_1
-
-    .line 28
-    :cond_2
-    :goto_0
-    invoke-virtual {v0}, Landroid/view/View;->requestFocus()Z
-
-    .line 29
-    .line 30
-    .line 31
-    move-object v1, v0
-
-    .line 32
-    :goto_1
-    if-nez v1, :cond_3
-
-    .line 33
-    .line 34
-    invoke-virtual {v0}, Landroid/view/View;->getRootView()Landroid/view/View;
-
-    .line 35
-    .line 36
-    .line 37
     move-result-object v0
 
-    .line 38
-    const v1, 0x1020002
+    .line 11
+    invoke-static {v0}, Ll1/c;->d(Landroid/graphics/Insets;)Ll1/c;
 
-    .line 39
-    .line 40
-    .line 41
-    invoke-virtual {v0, v1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
+    .line 12
+    .line 13
+    .line 14
+    move-result-object v0
 
-    .line 42
-    .line 43
-    .line 44
-    move-result-object v1
+    .line 15
+    iput-object v0, p0, Landroidx/core/view/D0;->p:Ll1/c;
 
-    .line 45
-    :cond_3
-    if-eqz v1, :cond_4
+    .line 16
+    .line 17
+    :cond_0
+    iget-object v0, p0, Landroidx/core/view/D0;->p:Ll1/c;
 
-    .line 46
-    .line 47
-    invoke-virtual {v1}, Landroid/view/View;->hasWindowFocus()Z
+    .line 18
+    .line 19
+    return-object v0
+.end method
 
-    .line 48
-    .line 49
-    .line 50
-    move-result v0
+.method public j()Ll1/c;
+    .locals 1
 
-    .line 51
-    if-eqz v0, :cond_4
+    .line 1
+    iget-object v0, p0, Landroidx/core/view/D0;->o:Ll1/c;
 
-    .line 52
-    .line 53
-    new-instance v0, Landroidx/core/view/c0;
+    .line 2
+    .line 3
+    if-nez v0, :cond_0
 
-    .line 54
-    .line 55
-    const/4 v2, 0x0
+    .line 4
+    .line 5
+    iget-object v0, p0, Landroidx/core/view/A0;->c:Landroid/view/WindowInsets;
 
-    .line 56
-    invoke-direct {v0, v1, v2}, Landroidx/core/view/c0;-><init>(Landroid/view/View;I)V
+    .line 6
+    .line 7
+    invoke-static {v0}, Landroidx/compose/ui/platform/v0;->y(Landroid/view/WindowInsets;)Landroid/graphics/Insets;
 
-    .line 57
-    .line 58
-    .line 59
-    invoke-virtual {v1, v0}, Landroid/view/View;->post(Ljava/lang/Runnable;)Z
+    .line 8
+    .line 9
+    .line 10
+    move-result-object v0
 
-    .line 60
-    .line 61
-    .line 62
-    :cond_4
+    .line 11
+    invoke-static {v0}, Ll1/c;->d(Landroid/graphics/Insets;)Ll1/c;
+
+    .line 12
+    .line 13
+    .line 14
+    move-result-object v0
+
+    .line 15
+    iput-object v0, p0, Landroidx/core/view/D0;->o:Ll1/c;
+
+    .line 16
+    .line 17
+    :cond_0
+    iget-object v0, p0, Landroidx/core/view/D0;->o:Ll1/c;
+
+    .line 18
+    .line 19
+    return-object v0
+.end method
+
+.method public l()Ll1/c;
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, Landroidx/core/view/D0;->q:Ll1/c;
+
+    .line 2
+    .line 3
+    if-nez v0, :cond_0
+
+    .line 4
+    .line 5
+    iget-object v0, p0, Landroidx/core/view/A0;->c:Landroid/view/WindowInsets;
+
+    .line 6
+    .line 7
+    invoke-static {v0}, Landroidx/compose/ui/platform/v0;->e(Landroid/view/WindowInsets;)Landroid/graphics/Insets;
+
+    .line 8
+    .line 9
+    .line 10
+    move-result-object v0
+
+    .line 11
+    invoke-static {v0}, Ll1/c;->d(Landroid/graphics/Insets;)Ll1/c;
+
+    .line 12
+    .line 13
+    .line 14
+    move-result-object v0
+
+    .line 15
+    iput-object v0, p0, Landroidx/core/view/D0;->q:Ll1/c;
+
+    .line 16
+    .line 17
+    :cond_0
+    iget-object v0, p0, Landroidx/core/view/D0;->q:Ll1/c;
+
+    .line 18
+    .line 19
+    return-object v0
+.end method
+
+.method public m(IIII)Landroidx/core/view/K0;
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, Landroidx/core/view/A0;->c:Landroid/view/WindowInsets;
+
+    .line 2
+    .line 3
+    invoke-static {v0, p1, p2, p3, p4}, Landroidx/compose/ui/platform/v0;->h(Landroid/view/WindowInsets;IIII)Landroid/view/WindowInsets;
+
+    .line 4
+    .line 5
+    .line 6
+    move-result-object p1
+
+    .line 7
+    const/4 p2, 0x0
+
+    .line 8
+    invoke-static {p2, p1}, Landroidx/core/view/K0;->h(Landroid/view/View;Landroid/view/WindowInsets;)Landroidx/core/view/K0;
+
+    .line 9
+    .line 10
+    .line 11
+    move-result-object p1
+
+    .line 12
+    return-object p1
+.end method
+
+.method public s(Ll1/c;)V
+    .locals 0
+
+    .line 1
     return-void
 .end method

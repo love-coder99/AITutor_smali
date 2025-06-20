@@ -1,53 +1,39 @@
-.class public final Landroidx/fragment/app/x0;
+.class public abstract synthetic Landroidx/fragment/app/x0;
 .super Ljava/lang/Object;
 .source "SourceFile"
 
-# interfaces
-.implements Landroidx/lifecycle/g1;
+
+# static fields
+.field public static final synthetic a:[I
 
 
-# virtual methods
-.method public final a(Ljava/lang/Class;)Landroidx/lifecycle/d1;
-    .locals 1
+# direct methods
+.method static constructor <clinit>()V
+    .locals 3
 
-    .line 1
-    new-instance p1, Landroidx/fragment/app/y0;
+    invoke-static {}, Landroidx/fragment/app/SpecialEffectsController$Operation$LifecycleImpact;->values()[Landroidx/fragment/app/SpecialEffectsController$Operation$LifecycleImpact;
 
-    .line 2
-    .line 3
-    const/4 v0, 0x1
+    move-result-object v0
 
-    .line 4
-    invoke-direct {p1, v0}, Landroidx/fragment/app/y0;-><init>(Z)V
+    array-length v0, v0
 
-    .line 5
-    .line 6
-    .line 7
-    return-object p1
-.end method
+    new-array v0, v0, [I
 
-.method public final b(Ljava/lang/Class;Lh4/c;)Landroidx/lifecycle/d1;
-    .locals 0
+    :try_start_0
+    sget-object v1, Landroidx/fragment/app/SpecialEffectsController$Operation$LifecycleImpact;->NONE:Landroidx/fragment/app/SpecialEffectsController$Operation$LifecycleImpact;
 
-    .line 1
-    invoke-virtual {p0, p1}, Landroidx/fragment/app/x0;->a(Ljava/lang/Class;)Landroidx/lifecycle/d1;
+    invoke-virtual {v1}, Ljava/lang/Enum;->ordinal()I
 
-    .line 2
-    .line 3
-    .line 4
-    move-result-object p1
+    move-result v1
 
-    .line 5
-    return-object p1
-.end method
+    const/4 v2, 0x1
 
-.method public final synthetic c(Lgi/c;Lh4/d;)Landroidx/lifecycle/d1;
-    .locals 0
+    aput v2, v0, v1
+    :try_end_0
+    .catch Ljava/lang/NoSuchFieldError; {:try_start_0 .. :try_end_0} :catch_0
 
-    .line 1
-    invoke-static {p0, p1, p2}, Landroidx/compose/foundation/text/modifiers/f;->a(Landroidx/lifecycle/g1;Lgi/c;Lh4/c;)Landroidx/lifecycle/d1;
+    :catch_0
+    sput-object v0, Landroidx/fragment/app/x0;->a:[I
 
-    move-result-object p1
-
-    return-object p1
+    return-void
 .end method

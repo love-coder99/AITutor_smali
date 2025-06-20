@@ -85,9 +85,9 @@
 
     move-object v0, p0
 
+    .line 5
     iget-object v1, v0, Lcom/applovin/impl/y1$a$a;->a:Ljava/util/concurrent/CopyOnWriteArrayList;
 
-    .line 5
     invoke-virtual {v1}, Ljava/util/concurrent/CopyOnWriteArrayList;->iterator()Ljava/util/Iterator;
 
     move-result-object v1
@@ -120,7 +120,7 @@
 
     move-result-object v2
 
-    new-instance v11, Lcom/applovin/impl/dx;
+    new-instance v11, Lcom/applovin/impl/U3;
 
     const/4 v10, 0x0
 
@@ -132,7 +132,7 @@
 
     move-wide/from16 v8, p4
 
-    invoke-direct/range {v3 .. v10}, Lcom/applovin/impl/dx;-><init>(Ljava/lang/Object;IJJI)V
+    invoke-direct/range {v3 .. v10}, Lcom/applovin/impl/U3;-><init>(Ljava/lang/Object;IJJI)V
 
     invoke-virtual {v2, v11}, Landroid/os/Handler;->post(Ljava/lang/Runnable;)Z
 
@@ -154,9 +154,9 @@
     .line 3
     invoke-virtual {p0, p2}, Lcom/applovin/impl/y1$a$a;->a(Lcom/applovin/impl/y1$a;)V
 
+    .line 4
     iget-object v0, p0, Lcom/applovin/impl/y1$a$a;->a:Ljava/util/concurrent/CopyOnWriteArrayList;
 
-    .line 4
     new-instance v1, Lcom/applovin/impl/y1$a$a$a;
 
     invoke-direct {v1, p1, p2}, Lcom/applovin/impl/y1$a$a$a;-><init>(Landroid/os/Handler;Lcom/applovin/impl/y1$a;)V
@@ -169,9 +169,9 @@
 .method public a(Lcom/applovin/impl/y1$a;)V
     .locals 3
 
+    .line 9
     iget-object v0, p0, Lcom/applovin/impl/y1$a$a;->a:Ljava/util/concurrent/CopyOnWriteArrayList;
 
-    .line 9
     invoke-virtual {v0}, Ljava/util/concurrent/CopyOnWriteArrayList;->iterator()Ljava/util/Iterator;
 
     move-result-object v0
@@ -200,9 +200,9 @@
     .line 11
     invoke-virtual {v1}, Lcom/applovin/impl/y1$a$a$a;->a()V
 
+    .line 12
     iget-object v2, p0, Lcom/applovin/impl/y1$a$a;->a:Ljava/util/concurrent/CopyOnWriteArrayList;
 
-    .line 12
     invoke-virtual {v2, v1}, Ljava/util/concurrent/CopyOnWriteArrayList;->remove(Ljava/lang/Object;)Z
 
     goto :goto_0

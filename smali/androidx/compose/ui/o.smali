@@ -3,19 +3,15 @@
 .source "SourceFile"
 
 
-# static fields
-.field public static final synthetic a:I
-
-
 # virtual methods
-.method public abstract a(Ljava/lang/Object;Lzh/e;)Ljava/lang/Object;
+.method public abstract b(Lka/c;)Z
 .end method
 
-.method public abstract e(Landroidx/compose/ui/o;)Landroidx/compose/ui/o;
+.method public abstract g(Landroidx/compose/ui/o;)Landroidx/compose/ui/o;
 .end method
 
-.method public abstract i(Lzh/c;)Z
+.method public abstract i(Lka/c;)Z
 .end method
 
-.method public abstract l(Lzh/c;)Z
+.method public abstract k(Ljava/lang/Object;Lka/e;)Ljava/lang/Object;
 .end method

@@ -11,9 +11,9 @@
 .method public static a()V
     .locals 1
 
-    .line 1
     const/4 v0, 0x1
 
+    .line 1
     sput-boolean v0, Lcom/applovin/impl/ob;->a:Z
 
     return-void
@@ -22,13 +22,14 @@
 .method private static synthetic a(Lcom/applovin/impl/sdk/j;)V
     .locals 2
 
+    .line 2
     sget-boolean v0, Lcom/applovin/impl/ob;->a:Z
 
     if-eqz v0, :cond_0
 
     return-void
 
-    .line 2
+    .line 3
     :cond_0
     invoke-virtual {p0}, Lcom/applovin/impl/sdk/j;->D()Lcom/applovin/impl/la;
 
@@ -99,14 +100,14 @@
 
     .line 25
     .line 26
-    new-instance v3, Lcom/applovin/impl/yu;
+    new-instance v3, Lcom/applovin/impl/P1;
 
     .line 27
     .line 28
     const/4 v4, 0x0
 
     .line 29
-    invoke-direct {v3, v4, p0}, Lcom/applovin/impl/yu;-><init>(ILcom/applovin/impl/sdk/j;)V
+    invoke-direct {v3, v4, p0}, Lcom/applovin/impl/P1;-><init>(ILcom/applovin/impl/sdk/j;)V
 
     .line 30
     .line 31

@@ -22,9 +22,9 @@
 .method private constructor <init>(Lcom/applovin/impl/il;)V
     .locals 0
 
+    .line 1
     iput-object p1, p0, Lcom/applovin/impl/il$c;->a:Lcom/applovin/impl/il;
 
-    .line 1
     invoke-direct {p0}, Landroid/content/BroadcastReceiver;-><init>()V
 
     return-void
@@ -82,14 +82,14 @@
 
     .line 8
     .line 9
-    new-instance v0, Lcom/applovin/impl/wt;
+    new-instance v0, Lcom/applovin/impl/P0;
 
     .line 10
     .line 11
     const/4 v1, 0x1
 
     .line 12
-    invoke-direct {v0, p2, v1}, Lcom/applovin/impl/wt;-><init>(Ljava/lang/Object;I)V
+    invoke-direct {v0, p2, v1}, Lcom/applovin/impl/P0;-><init>(Ljava/lang/Object;I)V
 
     .line 13
     .line 14

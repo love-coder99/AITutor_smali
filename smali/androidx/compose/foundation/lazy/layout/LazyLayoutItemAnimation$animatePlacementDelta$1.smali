@@ -3,35 +3,11 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lzh/e;
+.implements Lka/e;
 
 
 # annotations
-.annotation system Ldalvik/annotation/Signature;
-    value = {
-        "Lkotlin/coroutines/jvm/internal/SuspendLambda;",
-        "Lzh/e;"
-    }
-.end annotation
-
-.annotation runtime Lkotlin/Metadata;
-    d1 = {
-        "\u0000\n\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\u0010\u0002\u001a\u00020\u0001*\u00020\u0000H\u008a@"
-    }
-    d2 = {
-        "Lkotlinx/coroutines/w;",
-        "Lqh/r;",
-        "<anonymous>"
-    }
-    k = 0x3
-    mv = {
-        0x1,
-        0x8,
-        0x0
-    }
-.end annotation
-
-.annotation runtime Lth/c;
+.annotation runtime Lca/c;
     c = "androidx.compose.foundation.lazy.layout.LazyLayoutItemAnimation$animatePlacementDelta$1"
     f = "LazyLayoutItemAnimation.kt"
     l = {
@@ -41,12 +17,37 @@
     m = "invokeSuspend"
 .end annotation
 
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "Lkotlin/coroutines/jvm/internal/SuspendLambda;",
+        "Lka/e;"
+    }
+.end annotation
+
+.annotation runtime Lkotlin/Metadata;
+    d1 = {
+        "\u0000\u000c\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0008\u0002\u0010\u0002\u001a\u00020\u0001*\u00020\u0000H\u008a@\u00a2\u0006\u0004\u0008\u0002\u0010\u0003"
+    }
+    d2 = {
+        "Lkotlinx/coroutines/u;",
+        "LX9/j;",
+        "<anonymous>",
+        "(Lkotlinx/coroutines/u;)V"
+    }
+    k = 0x3
+    mv = {
+        0x1,
+        0x8,
+        0x0
+    }
+.end annotation
+
 
 # instance fields
-.field final synthetic $spec:Landroidx/compose/animation/core/z;
+.field final synthetic $spec:Landroidx/compose/animation/core/w;
     .annotation system Ldalvik/annotation/Signature;
         value = {
-            "Landroidx/compose/animation/core/z;"
+            "Landroidx/compose/animation/core/w;"
         }
     .end annotation
 .end field
@@ -61,13 +62,13 @@
 
 
 # direct methods
-.method public constructor <init>(Landroidx/compose/foundation/lazy/layout/s;Landroidx/compose/animation/core/z;JLkotlin/coroutines/Continuation;)V
+.method public constructor <init>(Landroidx/compose/foundation/lazy/layout/s;Landroidx/compose/animation/core/w;JLkotlin/coroutines/Continuation;)V
     .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
             "Landroidx/compose/foundation/lazy/layout/s;",
-            "Landroidx/compose/animation/core/z;",
+            "Landroidx/compose/animation/core/w;",
             "J",
             "Lkotlin/coroutines/Continuation<",
             "-",
@@ -78,7 +79,7 @@
 
     iput-object p1, p0, Landroidx/compose/foundation/lazy/layout/LazyLayoutItemAnimation$animatePlacementDelta$1;->this$0:Landroidx/compose/foundation/lazy/layout/s;
 
-    iput-object p2, p0, Landroidx/compose/foundation/lazy/layout/LazyLayoutItemAnimation$animatePlacementDelta$1;->$spec:Landroidx/compose/animation/core/z;
+    iput-object p2, p0, Landroidx/compose/foundation/lazy/layout/LazyLayoutItemAnimation$animatePlacementDelta$1;->$spec:Landroidx/compose/animation/core/w;
 
     iput-wide p3, p0, Landroidx/compose/foundation/lazy/layout/LazyLayoutItemAnimation$animatePlacementDelta$1;->$totalDelta:J
 
@@ -100,7 +101,7 @@
             "Lkotlin/coroutines/Continuation<",
             "*>;)",
             "Lkotlin/coroutines/Continuation<",
-            "Lqh/r;",
+            "LX9/j;",
             ">;"
         }
     .end annotation
@@ -109,7 +110,7 @@
 
     iget-object v1, p0, Landroidx/compose/foundation/lazy/layout/LazyLayoutItemAnimation$animatePlacementDelta$1;->this$0:Landroidx/compose/foundation/lazy/layout/s;
 
-    iget-object v2, p0, Landroidx/compose/foundation/lazy/layout/LazyLayoutItemAnimation$animatePlacementDelta$1;->$spec:Landroidx/compose/animation/core/z;
+    iget-object v2, p0, Landroidx/compose/foundation/lazy/layout/LazyLayoutItemAnimation$animatePlacementDelta$1;->$spec:Landroidx/compose/animation/core/w;
 
     iget-wide v3, p0, Landroidx/compose/foundation/lazy/layout/LazyLayoutItemAnimation$animatePlacementDelta$1;->$totalDelta:J
 
@@ -117,7 +118,7 @@
 
     move-object v5, p2
 
-    invoke-direct/range {v0 .. v5}, Landroidx/compose/foundation/lazy/layout/LazyLayoutItemAnimation$animatePlacementDelta$1;-><init>(Landroidx/compose/foundation/lazy/layout/s;Landroidx/compose/animation/core/z;JLkotlin/coroutines/Continuation;)V
+    invoke-direct/range {v0 .. v5}, Landroidx/compose/foundation/lazy/layout/LazyLayoutItemAnimation$animatePlacementDelta$1;-><init>(Landroidx/compose/foundation/lazy/layout/s;Landroidx/compose/animation/core/w;JLkotlin/coroutines/Continuation;)V
 
     return-object p1
 .end method
@@ -126,26 +127,26 @@
     .locals 0
 
     .line 1
-    check-cast p1, Lkotlinx/coroutines/w;
+    check-cast p1, Lkotlinx/coroutines/u;
 
     check-cast p2, Lkotlin/coroutines/Continuation;
 
-    invoke-virtual {p0, p1, p2}, Landroidx/compose/foundation/lazy/layout/LazyLayoutItemAnimation$animatePlacementDelta$1;->invoke(Lkotlinx/coroutines/w;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
+    invoke-virtual {p0, p1, p2}, Landroidx/compose/foundation/lazy/layout/LazyLayoutItemAnimation$animatePlacementDelta$1;->invoke(Lkotlinx/coroutines/u;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
 
     move-result-object p1
 
     return-object p1
 .end method
 
-.method public final invoke(Lkotlinx/coroutines/w;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
+.method public final invoke(Lkotlinx/coroutines/u;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
     .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
-            "Lkotlinx/coroutines/w;",
+            "Lkotlinx/coroutines/u;",
             "Lkotlin/coroutines/Continuation<",
             "-",
-            "Lqh/r;",
+            "LX9/j;",
             ">;)",
             "Ljava/lang/Object;"
         }
@@ -158,7 +159,7 @@
 
     check-cast p1, Landroidx/compose/foundation/lazy/layout/LazyLayoutItemAnimation$animatePlacementDelta$1;
 
-    sget-object p2, Lqh/r;->a:Lqh/r;
+    sget-object p2, LX9/j;->a:LX9/j;
 
     invoke-virtual {p1, p2}, Landroidx/compose/foundation/lazy/layout/LazyLayoutItemAnimation$animatePlacementDelta$1;->invokeSuspend(Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -231,7 +232,7 @@
 
     .line 27
     .line 28
-    check-cast v1, Landroidx/compose/animation/core/z;
+    check-cast v1, Landroidx/compose/animation/core/w;
 
     .line 29
     .line 30
@@ -265,7 +266,7 @@
 
     .line 42
     .line 43
-    invoke-virtual {p1}, Landroidx/compose/runtime/t2;->getValue()Ljava/lang/Object;
+    invoke-virtual {p1}, Landroidx/compose/runtime/ParcelableSnapshotMutableState;->getValue()Ljava/lang/Object;
 
     .line 44
     .line 45
@@ -289,11 +290,11 @@
 
     .line 54
     .line 55
-    iget-object p1, p0, Landroidx/compose/foundation/lazy/layout/LazyLayoutItemAnimation$animatePlacementDelta$1;->$spec:Landroidx/compose/animation/core/z;
+    iget-object p1, p0, Landroidx/compose/foundation/lazy/layout/LazyLayoutItemAnimation$animatePlacementDelta$1;->$spec:Landroidx/compose/animation/core/w;
 
     .line 56
     .line 57
-    instance-of v1, p1, Landroidx/compose/animation/core/u0;
+    instance-of v1, p1, Landroidx/compose/animation/core/O;
 
     .line 58
     .line 59
@@ -301,7 +302,7 @@
 
     .line 60
     .line 61
-    check-cast p1, Landroidx/compose/animation/core/u0;
+    check-cast p1, Landroidx/compose/animation/core/O;
 
     .line 62
     .line 63
@@ -309,7 +310,7 @@
 
     .line 64
     :cond_3
-    sget-object p1, Landroidx/compose/foundation/lazy/layout/t;->a:Landroidx/compose/animation/core/u0;
+    sget-object p1, Landroidx/compose/foundation/lazy/layout/t;->a:Landroidx/compose/animation/core/O;
 
     .line 65
     .line 66
@@ -321,7 +322,7 @@
 
     .line 68
     :cond_4
-    iget-object p1, p0, Landroidx/compose/foundation/lazy/layout/LazyLayoutItemAnimation$animatePlacementDelta$1;->$spec:Landroidx/compose/animation/core/z;
+    iget-object p1, p0, Landroidx/compose/foundation/lazy/layout/LazyLayoutItemAnimation$animatePlacementDelta$1;->$spec:Landroidx/compose/animation/core/w;
 
     .line 69
     .line 70
@@ -341,7 +342,7 @@
 
     .line 76
     .line 77
-    invoke-virtual {p1}, Landroidx/compose/runtime/t2;->getValue()Ljava/lang/Object;
+    invoke-virtual {p1}, Landroidx/compose/runtime/ParcelableSnapshotMutableState;->getValue()Ljava/lang/Object;
 
     .line 78
     .line 79
@@ -377,11 +378,11 @@
 
     .line 94
     .line 95
-    new-instance v6, Lh2/h;
+    new-instance v6, LM0/h;
 
     .line 96
     .line 97
-    invoke-direct {v6, v4, v5}, Lh2/h;-><init>(J)V
+    invoke-direct {v6, v4, v5}, LM0/h;-><init>(J)V
 
     .line 98
     .line 99
@@ -415,11 +416,11 @@
 
     .line 112
     .line 113
-    iget-object p1, p1, Landroidx/compose/foundation/lazy/layout/s;->c:Lzh/a;
+    iget-object p1, p1, Landroidx/compose/foundation/lazy/layout/s;->c:Lka/a;
 
     .line 114
     .line 115
-    invoke-interface {p1}, Lzh/a;->invoke()Ljava/lang/Object;
+    invoke-interface {p1}, Lka/a;->invoke()Ljava/lang/Object;
 
     .line 116
     .line 117
@@ -444,11 +445,11 @@
     move-result-object p1
 
     .line 127
-    check-cast p1, Lh2/h;
+    check-cast p1, LM0/h;
 
     .line 128
     .line 129
-    iget-wide v3, p1, Lh2/h;->a:J
+    iget-wide v3, p1, LM0/h;->a:J
 
     .line 130
     .line 131
@@ -456,7 +457,7 @@
 
     .line 132
     .line 133
-    invoke-static {v3, v4, v6, v7}, Lh2/h;->c(JJ)J
+    invoke-static {v3, v4, v6, v7}, LM0/h;->c(JJ)J
 
     .line 134
     .line 135
@@ -472,11 +473,11 @@
 
     .line 140
     .line 141
-    new-instance v6, Lh2/h;
+    new-instance v6, LM0/h;
 
     .line 142
     .line 143
-    invoke-direct {v6, v3, v4}, Lh2/h;-><init>(J)V
+    invoke-direct {v6, v3, v4}, LM0/h;-><init>(J)V
 
     .line 144
     .line 145
@@ -490,19 +491,19 @@
     .line 149
     .line 150
     .line 151
-    const/4 v8, 0x4
-
-    .line 152
     const/4 p1, 0x0
 
-    .line 153
+    .line 152
     iput-object p1, p0, Landroidx/compose/foundation/lazy/layout/LazyLayoutItemAnimation$animatePlacementDelta$1;->L$0:Ljava/lang/Object;
 
+    .line 153
     .line 154
-    .line 155
     iput v2, p0, Landroidx/compose/foundation/lazy/layout/LazyLayoutItemAnimation$animatePlacementDelta$1;->label:I
 
+    .line 155
     .line 156
+    const/4 v8, 0x4
+
     .line 157
     move-object v3, v1
 
@@ -516,7 +517,7 @@
     move-object v7, p0
 
     .line 161
-    invoke-static/range {v3 .. v8}, Landroidx/compose/animation/core/a;->c(Landroidx/compose/animation/core/a;Ljava/lang/Object;Landroidx/compose/animation/core/g;Lzh/c;Lkotlin/coroutines/Continuation;I)Ljava/lang/Object;
+    invoke-static/range {v3 .. v8}, Landroidx/compose/animation/core/a;->c(Landroidx/compose/animation/core/a;Ljava/lang/Object;Landroidx/compose/animation/core/f;Lka/c;Lkotlin/coroutines/Continuation;I)Ljava/lang/Object;
 
     .line 162
     .line 163
@@ -560,7 +561,7 @@
     .line 179
     .line 180
     :catch_0
-    sget-object p1, Lqh/r;->a:Lqh/r;
+    sget-object p1, LX9/j;->a:LX9/j;
 
     .line 181
     .line 182

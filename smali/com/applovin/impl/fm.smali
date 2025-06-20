@@ -50,7 +50,7 @@
 
     .line 7
     .line 8
-    invoke-static {}, Landroidx/compose/foundation/text/modifiers/f;->t()Ljava/util/Map;
+    invoke-static {}, Landroidx/compose/runtime/a0;->v()Ljava/util/Map;
 
     .line 9
     .line 10
@@ -112,20 +112,20 @@
     if-eqz v0, :cond_0
 
     .line 2
-    new-instance v0, Lcom/applovin/impl/hx;
+    new-instance v0, Lcom/applovin/impl/Y3;
 
     const/4 v1, 0x6
 
-    invoke-direct {v0, p0, v1, p1, p2}, Lcom/applovin/impl/hx;-><init>(Ljava/lang/Object;ILjava/lang/Object;Ljava/lang/Object;)V
+    invoke-direct {v0, p0, v1, p1, p2}, Lcom/applovin/impl/Y3;-><init>(Ljava/lang/Object;ILjava/lang/Object;Ljava/lang/Object;)V
 
     invoke-static {v0}, Lcom/applovin/sdk/AppLovinSdkUtils;->runOnUiThread(Ljava/lang/Runnable;)V
 
     goto :goto_0
 
+    .line 3
     :cond_0
     iget-object v0, p0, Lcom/applovin/impl/yl;->a:Lcom/applovin/impl/sdk/j;
 
-    .line 3
     invoke-virtual {v0}, Lcom/applovin/impl/sdk/j;->P()Lcom/applovin/impl/mediation/MediationServiceImpl;
 
     move-result-object v1
@@ -174,12 +174,13 @@
 
     invoke-virtual {v0, v1, p1, p2}, Lcom/applovin/impl/sdk/n;->a(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)V
 
+    .line 21
     :cond_0
     iget-object p1, p0, Lcom/applovin/impl/fm;->l:Lcom/applovin/impl/fm$b;
 
     if-eqz p1, :cond_1
 
-    .line 21
+    .line 22
     new-instance p2, Lorg/json/JSONArray;
 
     invoke-direct {p2}, Lorg/json/JSONArray;-><init>()V
@@ -208,9 +209,9 @@
 
     invoke-direct {v0, v1, v2, v3, v4}, Lcom/applovin/impl/fm$c;-><init>(ILcom/applovin/impl/fm$b;Lcom/applovin/impl/sdk/j;Lcom/applovin/impl/fm$a;)V
 
+    .line 5
     iget-object v1, p0, Lcom/applovin/impl/yl;->a:Lcom/applovin/impl/sdk/j;
 
-    .line 5
     invoke-virtual {v1}, Lcom/applovin/impl/sdk/j;->i0()Lcom/applovin/impl/tm;
 
     move-result-object v1
@@ -281,15 +282,16 @@
 .method public static a(Lorg/json/JSONObject;)V
     .locals 1
 
+    .line 23
     sget-object v0, Lcom/applovin/impl/fm;->n:Ljava/lang/Object;
 
-    .line 22
     monitor-enter v0
 
+    .line 24
     :try_start_0
     sput-object p0, Lcom/applovin/impl/fm;->m:Lorg/json/JSONObject;
 
-    .line 23
+    .line 25
     monitor-exit v0
 
     return-void
@@ -297,7 +299,7 @@
     :catchall_0
     move-exception p0
 
-    .line 24
+    .line 26
     monitor-exit v0
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
@@ -308,12 +310,12 @@
 .method public static a(Lorg/json/JSONObject;Lcom/applovin/impl/sdk/j;)V
     .locals 6
 
+    .line 12
     :try_start_0
     const-string v0, "ad_unit_signal_providers"
 
     const/4 v1, 0x0
 
-    .line 12
     invoke-static {p0, v0, v1}, Lcom/applovin/impl/sdk/utils/JsonUtils;->getJSONObject(Lorg/json/JSONObject;Ljava/lang/String;Lorg/json/JSONObject;)Lorg/json/JSONObject;
 
     move-result-object v0
@@ -357,9 +359,9 @@
 
     invoke-direct {v5, v4}, Ljava/util/HashSet;-><init>(Ljava/util/Collection;)V
 
+    .line 17
     sget-object v4, Lcom/applovin/impl/fm;->o:Ljava/util/Map;
 
-    .line 17
     invoke-interface {v4, v3, v5}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
     :try_end_0
     .catch Lorg/json/JSONException; {:try_start_0 .. :try_end_0} :catch_0
@@ -402,9 +404,9 @@
 .method private synthetic b(Lcom/applovin/impl/zj;Lcom/applovin/impl/yj$a;)V
     .locals 7
 
+    .line 1
     iget-object v0, p0, Lcom/applovin/impl/yl;->a:Lcom/applovin/impl/sdk/j;
 
-    .line 1
     invoke-virtual {v0}, Lcom/applovin/impl/sdk/j;->P()Lcom/applovin/impl/mediation/MediationServiceImpl;
 
     move-result-object v1
@@ -427,11 +429,11 @@
 .method private b(Lorg/json/JSONArray;Lorg/json/JSONObject;)V
     .locals 6
 
+    .line 2
     sget-object v0, Lcom/applovin/impl/fm;->o:Ljava/util/Map;
 
     iget-object v1, p0, Lcom/applovin/impl/fm;->h:Ljava/lang/String;
 
-    .line 2
     invoke-interface {v0, v1}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object v0
@@ -472,9 +474,9 @@
 
     move-result-object v4
 
+    .line 7
     const-string v5, "name"
 
-    .line 7
     invoke-static {v4, v5, v1}, Lcom/applovin/impl/sdk/utils/JsonUtils;->getString(Lorg/json/JSONObject;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v5

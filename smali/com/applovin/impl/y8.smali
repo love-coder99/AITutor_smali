@@ -84,16 +84,16 @@
 .method public b(J)Lcom/applovin/impl/ij$a;
     .locals 9
 
+    .line 2
     iget-object v0, p0, Lcom/applovin/impl/y8;->a:Lcom/applovin/impl/z8;
 
-    .line 2
     iget-object v0, v0, Lcom/applovin/impl/z8;->k:Lcom/applovin/impl/z8$a;
 
     invoke-static {v0}, Lcom/applovin/impl/b1;->b(Ljava/lang/Object;)Ljava/lang/Object;
 
+    .line 3
     iget-object v0, p0, Lcom/applovin/impl/y8;->a:Lcom/applovin/impl/z8;
 
-    .line 3
     iget-object v1, v0, Lcom/applovin/impl/z8;->k:Lcom/applovin/impl/z8$a;
 
     iget-object v2, v1, Lcom/applovin/impl/z8$a;->a:[J

@@ -961,22 +961,22 @@
 .method public static a(Ljava/lang/String;)Lcom/applovin/mediation/MaxMediatedNetworkInfo;
     .locals 2
 
+    .line 55
     sget-object v0, Lcom/applovin/impl/ze;->f:Ljava/lang/Object;
 
-    .line 53
     monitor-enter v0
 
+    .line 56
     :try_start_0
     sget-object v1, Lcom/applovin/impl/ze;->e:Ljava/util/Map;
 
-    .line 54
     invoke-interface {v1, p0}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object v1
 
     check-cast v1, Lcom/applovin/mediation/MaxMediatedNetworkInfo;
 
-    .line 55
+    .line 57
     monitor-exit v0
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
@@ -985,18 +985,18 @@
 
     return-object v1
 
-    .line 56
+    .line 58
     :cond_0
     new-instance v0, Lorg/json/JSONObject;
 
     invoke-direct {v0}, Lorg/json/JSONObject;-><init>()V
 
+    .line 59
     const-string v1, "class"
 
-    .line 57
     invoke-static {v0, v1, p0}, Lcom/applovin/impl/sdk/utils/JsonUtils;->putString(Lorg/json/JSONObject;Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 58
+    .line 60
     new-instance p0, Lcom/applovin/impl/mediation/MaxMediatedNetworkInfoImpl;
 
     invoke-direct {p0, v0}, Lcom/applovin/impl/mediation/MaxMediatedNetworkInfoImpl;-><init>(Lorg/json/JSONObject;)V
@@ -1006,7 +1006,7 @@
     :catchall_0
     move-exception p0
 
-    .line 59
+    .line 61
     :try_start_1
     monitor-exit v0
     :try_end_1
@@ -1018,18 +1018,22 @@
 .method public static a(Ljava/lang/String;Lcom/applovin/impl/sdk/j;)Lcom/applovin/mediation/adapter/MaxAdapter;
     .locals 7
 
-    const-class v0, Lcom/applovin/mediation/adapter/MaxAdapter;
+    const/4 v0, 0x0
+
+    const/4 v1, 0x1
 
     .line 1
+    const-class v2, Lcom/applovin/mediation/adapter/MaxAdapter;
+
     invoke-static {p0}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
 
-    move-result v1
+    move-result v3
 
-    const/4 v2, 0x0
+    const/4 v4, 0x0
 
-    const-string v3, "AppLovinSdk"
+    const-string v5, "AppLovinSdk"
 
-    if-eqz v1, :cond_1
+    if-eqz v3, :cond_1
 
     .line 2
     invoke-virtual {p1}, Lcom/applovin/impl/sdk/j;->I()Lcom/applovin/impl/sdk/n;
@@ -1046,50 +1050,46 @@
 
     const-string p1, "Failed to create adapter instance. No class name provided"
 
-    invoke-virtual {p0, v3, p1}, Lcom/applovin/impl/sdk/n;->b(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-virtual {p0, v5, p1}, Lcom/applovin/impl/sdk/n;->b(Ljava/lang/String;Ljava/lang/String;)V
 
     :cond_0
-    return-object v2
+    return-object v4
 
     .line 3
     :cond_1
     :try_start_0
     invoke-static {p0}, Ljava/lang/Class;->forName(Ljava/lang/String;)Ljava/lang/Class;
 
-    move-result-object v1
+    move-result-object v3
 
     .line 4
-    invoke-virtual {v0, v1}, Ljava/lang/Class;->isAssignableFrom(Ljava/lang/Class;)Z
+    invoke-virtual {v2, v3}, Ljava/lang/Class;->isAssignableFrom(Ljava/lang/Class;)Z
 
-    move-result v4
+    move-result v6
 
-    if-eqz v4, :cond_2
-
-    const/4 v0, 0x1
-
-    new-array v4, v0, [Ljava/lang/Class;
-
-    const-class v5, Lcom/applovin/sdk/AppLovinSdk;
-
-    const/4 v6, 0x0
-
-    aput-object v5, v4, v6
+    if-eqz v6, :cond_2
 
     .line 5
-    invoke-virtual {v1, v4}, Ljava/lang/Class;->getConstructor([Ljava/lang/Class;)Ljava/lang/reflect/Constructor;
+    new-array v2, v1, [Ljava/lang/Class;
 
-    move-result-object v1
+    const-class v6, Lcom/applovin/sdk/AppLovinSdk;
 
-    new-array v0, v0, [Ljava/lang/Object;
+    aput-object v6, v2, v0
+
+    invoke-virtual {v3, v2}, Ljava/lang/Class;->getConstructor([Ljava/lang/Class;)Ljava/lang/reflect/Constructor;
+
+    move-result-object v2
 
     .line 6
     invoke-virtual {p1}, Lcom/applovin/impl/sdk/j;->q0()Lcom/applovin/sdk/AppLovinSdk;
 
-    move-result-object v4
+    move-result-object v3
 
-    aput-object v4, v0, v6
+    new-array v1, v1, [Ljava/lang/Object;
 
-    invoke-virtual {v1, v0}, Ljava/lang/reflect/Constructor;->newInstance([Ljava/lang/Object;)Ljava/lang/Object;
+    aput-object v3, v1, v0
+
+    invoke-virtual {v2, v1}, Ljava/lang/reflect/Constructor;->newInstance([Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object v0
 
@@ -1108,39 +1108,39 @@
 
     invoke-static {}, Lcom/applovin/impl/sdk/n;->a()Z
 
-    move-result v1
+    move-result v0
 
-    if-eqz v1, :cond_3
+    if-eqz v0, :cond_3
 
     invoke-virtual {p1}, Lcom/applovin/impl/sdk/j;->I()Lcom/applovin/impl/sdk/n;
 
+    move-result-object v0
+
+    new-instance v1, Ljava/lang/StringBuilder;
+
+    invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
+
+    invoke-virtual {v1, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    const-string v3, " error: not an instance of \'"
+
+    invoke-virtual {v1, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v2}, Ljava/lang/Class;->getName()Ljava/lang/String;
+
+    move-result-object v2
+
+    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    const-string v2, "\'."
+
+    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
     move-result-object v1
 
-    new-instance v4, Ljava/lang/StringBuilder;
-
-    invoke-direct {v4}, Ljava/lang/StringBuilder;-><init>()V
-
-    invoke-virtual {v4, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    const-string v5, " error: not an instance of \'"
-
-    invoke-virtual {v4, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v0}, Ljava/lang/Class;->getName()Ljava/lang/String;
-
-    move-result-object v0
-
-    invoke-virtual {v4, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    const-string v0, "\'."
-
-    invoke-virtual {v4, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v4}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object v0
-
-    invoke-virtual {v1, v3, v0}, Lcom/applovin/impl/sdk/n;->b(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-virtual {v0, v5, v1}, Lcom/applovin/impl/sdk/n;->b(Ljava/lang/String;Ljava/lang/String;)V
     :try_end_0
     .catch Ljava/lang/ClassNotFoundException; {:try_start_0 .. :try_end_0} :catch_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
@@ -1163,9 +1163,9 @@
 
     new-instance v1, Ljava/lang/StringBuilder;
 
-    const-string v4, "Failed to load: "
+    const-string v2, "Failed to load: "
 
-    invoke-direct {v1, v4}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+    invoke-direct {v1, v2}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
 
     invoke-virtual {v1, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -1173,16 +1173,22 @@
 
     move-result-object p0
 
-    invoke-virtual {p1, v3, p0, v0}, Lcom/applovin/impl/sdk/n;->a(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)V
+    invoke-virtual {p1, v5, p0, v0}, Lcom/applovin/impl/sdk/n;->a(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)V
 
     :catch_0
     :cond_3
     :goto_1
-    return-object v2
+    return-object v4
 .end method
 
 .method public static a(ILcom/applovin/mediation/MaxAdFormat;Landroid/content/Context;)Lcom/applovin/sdk/AppLovinSdkUtils$Size;
     .locals 9
+
+    const/4 v0, 0x1
+
+    const/4 v1, 0x0
+
+    const/4 v2, 0x2
 
     if-gez p0, :cond_0
 
@@ -1199,105 +1205,91 @@
 
     move-result p0
 
-    :cond_0
-    sget-object v0, Lcom/applovin/impl/ze;->g:Ljava/util/Map;
-
     .line 13
+    :cond_0
+    sget-object v3, Lcom/applovin/impl/ze;->g:Ljava/util/Map;
+
     invoke-static {p0}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
-
-    move-result-object v1
-
-    invoke-interface {v0, v1}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
-
-    move-result-object v1
-
-    check-cast v1, Lcom/applovin/sdk/AppLovinSdkUtils$Size;
-
-    if-eqz v1, :cond_1
-
-    return-object v1
-
-    :cond_1
-    const-class v1, Lj9/g;
-
-    .line 14
-    sget-object v2, Lj9/g;->i:Lj9/g;
-
-    const-string v2, "getCurrentOrientationAnchoredAdaptiveBannerAdSize"
-
-    const/4 v3, 0x2
-
-    new-array v4, v3, [Ljava/lang/Class;
-
-    const-class v5, Landroid/content/Context;
-
-    const/4 v6, 0x0
-
-    aput-object v5, v4, v6
-
-    sget-object v5, Ljava/lang/Integer;->TYPE:Ljava/lang/Class;
-
-    const/4 v7, 0x1
-
-    aput-object v5, v4, v7
-
-    .line 15
-    invoke-virtual {v1, v2, v4}, Ljava/lang/Class;->getMethod(Ljava/lang/String;[Ljava/lang/Class;)Ljava/lang/reflect/Method;
-
-    move-result-object v2
-
-    const-string v4, "getWidth"
-
-    new-array v5, v6, [Ljava/lang/Class;
-
-    .line 16
-    invoke-virtual {v1, v4, v5}, Ljava/lang/Class;->getMethod(Ljava/lang/String;[Ljava/lang/Class;)Ljava/lang/reflect/Method;
 
     move-result-object v4
 
-    const-string v5, "getHeight"
+    invoke-interface {v3, v4}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
-    new-array v8, v6, [Ljava/lang/Class;
+    move-result-object v4
+
+    check-cast v4, Lcom/applovin/sdk/AppLovinSdkUtils$Size;
+
+    if-eqz v4, :cond_1
+
+    return-object v4
+
+    .line 14
+    :cond_1
+    const-class v4, Lb5/f;
+
+    sget-object v5, Lb5/f;->i:Lb5/f;
+
+    .line 15
+    const-string v5, "getCurrentOrientationAnchoredAdaptiveBannerAdSize"
+
+    new-array v6, v2, [Ljava/lang/Class;
+
+    const-class v7, Landroid/content/Context;
+
+    aput-object v7, v6, v1
+
+    sget-object v7, Ljava/lang/Integer;->TYPE:Ljava/lang/Class;
+
+    aput-object v7, v6, v0
+
+    invoke-virtual {v4, v5, v6}, Ljava/lang/Class;->getMethod(Ljava/lang/String;[Ljava/lang/Class;)Ljava/lang/reflect/Method;
+
+    move-result-object v5
+
+    .line 16
+    const-string v6, "getWidth"
+
+    const/4 v7, 0x0
+
+    invoke-virtual {v4, v6, v7}, Ljava/lang/Class;->getMethod(Ljava/lang/String;[Ljava/lang/Class;)Ljava/lang/reflect/Method;
+
+    move-result-object v6
 
     .line 17
-    invoke-virtual {v1, v5, v8}, Ljava/lang/Class;->getMethod(Ljava/lang/String;[Ljava/lang/Class;)Ljava/lang/reflect/Method;
+    const-string v8, "getHeight"
 
-    move-result-object v1
+    invoke-virtual {v4, v8, v7}, Ljava/lang/Class;->getMethod(Ljava/lang/String;[Ljava/lang/Class;)Ljava/lang/reflect/Method;
 
-    new-array v3, v3, [Ljava/lang/Object;
-
-    aput-object p2, v3, v6
+    move-result-object v4
 
     .line 18
     invoke-static {p0}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
+    move-result-object v8
+
+    new-array v2, v2, [Ljava/lang/Object;
+
+    aput-object p2, v2, v1
+
+    aput-object v8, v2, v0
+
+    invoke-virtual {v5, v7, v2}, Ljava/lang/reflect/Method;->invoke(Ljava/lang/Object;[Ljava/lang/Object;)Ljava/lang/Object;
+
     move-result-object p2
-
-    aput-object p2, v3, v7
-
-    const/4 p2, 0x0
-
-    invoke-virtual {v2, p2, v3}, Ljava/lang/reflect/Method;->invoke(Ljava/lang/Object;[Ljava/lang/Object;)Ljava/lang/Object;
-
-    move-result-object p2
-
-    new-array v2, v6, [Ljava/lang/Object;
 
     .line 19
-    invoke-virtual {v4, p2, v2}, Ljava/lang/reflect/Method;->invoke(Ljava/lang/Object;[Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v6, p2, v7}, Ljava/lang/reflect/Method;->invoke(Ljava/lang/Object;[Ljava/lang/Object;)Ljava/lang/Object;
 
-    move-result-object v2
+    move-result-object v0
 
-    check-cast v2, Ljava/lang/Integer;
+    check-cast v0, Ljava/lang/Integer;
 
-    invoke-virtual {v2}, Ljava/lang/Integer;->intValue()I
+    invoke-virtual {v0}, Ljava/lang/Integer;->intValue()I
 
-    move-result v2
-
-    new-array v3, v6, [Ljava/lang/Object;
+    move-result v0
 
     .line 20
-    invoke-virtual {v1, p2, v3}, Ljava/lang/reflect/Method;->invoke(Ljava/lang/Object;[Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v4, p2, v7}, Ljava/lang/reflect/Method;->invoke(Ljava/lang/Object;[Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object p2
 
@@ -1310,14 +1302,14 @@
     .line 21
     new-instance v1, Lcom/applovin/sdk/AppLovinSdkUtils$Size;
 
-    invoke-direct {v1, v2, p2}, Lcom/applovin/sdk/AppLovinSdkUtils$Size;-><init>(II)V
+    invoke-direct {v1, v0, p2}, Lcom/applovin/sdk/AppLovinSdkUtils$Size;-><init>(II)V
 
     .line 22
     invoke-static {p0}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
     move-result-object p0
 
-    invoke-interface {v0, p0, v1}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-interface {v3, p0, v1}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
@@ -1378,22 +1370,23 @@
 .method public static a(Lcom/applovin/impl/sdk/j;)Lorg/json/JSONArray;
     .locals 7
 
+    .line 37
     sget-object v0, Lcom/applovin/impl/ze;->f:Ljava/lang/Object;
 
-    .line 36
     monitor-enter v0
 
+    .line 38
     :try_start_0
     sget-object v1, Lcom/applovin/impl/ze;->d:Lorg/json/JSONArray;
 
     if-eqz v1, :cond_0
 
-    .line 37
+    .line 39
     invoke-static {p0}, Lcom/applovin/impl/ze;->b(Lcom/applovin/impl/sdk/j;)V
 
+    .line 40
     sget-object p0, Lcom/applovin/impl/ze;->d:Lorg/json/JSONArray;
 
-    .line 38
     monitor-exit v0
 
     return-object p0
@@ -1403,7 +1396,7 @@
 
     goto :goto_1
 
-    .line 39
+    .line 41
     :cond_0
     new-instance v1, Lorg/json/JSONArray;
 
@@ -1411,9 +1404,9 @@
 
     sput-object v1, Lcom/applovin/impl/ze;->d:Lorg/json/JSONArray;
 
+    .line 42
     sget-object v1, Lcom/applovin/impl/ze;->c:Ljava/util/List;
 
-    .line 40
     invoke-interface {v1}, Ljava/util/List;->iterator()Ljava/util/Iterator;
 
     move-result-object v1
@@ -1432,60 +1425,60 @@
 
     check-cast v2, Ljava/lang/String;
 
-    .line 41
+    .line 43
     invoke-static {v2, p0}, Lcom/applovin/impl/ze;->a(Ljava/lang/String;Lcom/applovin/impl/sdk/j;)Lcom/applovin/mediation/adapter/MaxAdapter;
 
     move-result-object v3
 
     if-eqz v3, :cond_1
 
-    .line 42
+    .line 44
     new-instance v4, Lorg/json/JSONObject;
 
     invoke-direct {v4}, Lorg/json/JSONObject;-><init>()V
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
+    .line 45
     :try_start_1
     const-string v5, "name"
 
     sget-object v6, Lcom/applovin/impl/ze;->a:Ljava/util/TreeMap;
 
-    .line 43
     invoke-virtual {v6, v2}, Ljava/util/TreeMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object v6
 
     invoke-virtual {v4, v5, v6}, Lorg/json/JSONObject;->put(Ljava/lang/String;Ljava/lang/Object;)Lorg/json/JSONObject;
 
+    .line 46
     const-string v5, "class"
 
-    .line 44
     invoke-virtual {v4, v5, v2}, Lorg/json/JSONObject;->put(Ljava/lang/String;Ljava/lang/Object;)Lorg/json/JSONObject;
 
+    .line 47
     const-string v5, "sdk_version"
 
-    .line 45
     invoke-static {v3}, Lcom/applovin/impl/ze;->a(Lcom/applovin/mediation/adapter/MaxAdapter;)Ljava/lang/String;
 
     move-result-object v6
 
     invoke-virtual {v4, v5, v6}, Lorg/json/JSONObject;->put(Ljava/lang/String;Ljava/lang/Object;)Lorg/json/JSONObject;
 
+    .line 48
     const-string v5, "version"
 
-    .line 46
     invoke-interface {v3}, Lcom/applovin/mediation/adapter/MaxAdapter;->getAdapterVersion()Ljava/lang/String;
 
     move-result-object v6
 
     invoke-virtual {v4, v5, v6}, Lorg/json/JSONObject;->put(Ljava/lang/String;Ljava/lang/Object;)Lorg/json/JSONObject;
 
+    .line 49
     const-string v5, "is_supported"
 
     sget-object v6, Lcom/applovin/impl/ze;->b:Ljava/util/Map;
 
-    .line 47
     invoke-interface {v6, v2}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object v6
@@ -1500,34 +1493,34 @@
     :try_end_1
     .catchall {:try_start_1 .. :try_end_1} :catchall_1
 
+    .line 50
     :catchall_1
     :try_start_2
     sget-object v3, Lcom/applovin/impl/ze;->d:Lorg/json/JSONArray;
 
-    .line 48
     invoke-virtual {v3, v4}, Lorg/json/JSONArray;->put(Ljava/lang/Object;)Lorg/json/JSONArray;
 
-    .line 49
+    .line 51
     new-instance v3, Lcom/applovin/impl/mediation/MaxMediatedNetworkInfoImpl;
 
     invoke-direct {v3, v4}, Lcom/applovin/impl/mediation/MaxMediatedNetworkInfoImpl;-><init>(Lorg/json/JSONObject;)V
 
+    .line 52
     sget-object v4, Lcom/applovin/impl/ze;->e:Ljava/util/Map;
 
-    .line 50
     invoke-interface {v4, v2, v3}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     goto :goto_0
 
+    .line 53
     :cond_2
     sget-object p0, Lcom/applovin/impl/ze;->d:Lorg/json/JSONArray;
 
-    .line 51
     monitor-exit v0
 
     return-object p0
 
-    .line 52
+    .line 54
     :goto_1
     monitor-exit v0
     :try_end_2
@@ -1605,39 +1598,40 @@
 .method public static a(Lorg/json/JSONObject;Ljava/lang/String;Lcom/applovin/impl/sdk/j;)Z
     .locals 2
 
+    .line 27
     const-string v0, "no_fill_reason"
 
-    .line 27
     invoke-virtual {p0, v0}, Lorg/json/JSONObject;->optJSONArray(Ljava/lang/String;)Lorg/json/JSONArray;
 
     move-result-object p0
 
     const/16 v0, 0x40b
 
+    .line 28
     const-string v1, "code"
 
-    .line 28
     invoke-static {p0, v0, v1}, Lcom/applovin/impl/sdk/utils/JsonUtils;->containsJSONObjectContainingInt(Lorg/json/JSONArray;ILjava/lang/String;)Z
 
     move-result p0
 
     if-eqz p0, :cond_0
 
+    .line 29
     const-string p0, "invalid_or_disabled_ad_unit_id"
 
-    .line 29
-    invoke-static {p0, p1}, Landroid/support/v4/media/session/a;->D(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+    .line 30
+    invoke-static {p0, p1}, LB/u;->t(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v0
 
+    .line 31
     const-string v1, "ad_unit_id"
 
-    .line 30
     invoke-static {v1, p1}, Lcom/applovin/impl/sdk/utils/CollectionUtils;->hashMap(Ljava/lang/String;Ljava/lang/String;)Ljava/util/HashMap;
 
     move-result-object p1
 
-    .line 31
+    .line 32
     invoke-virtual {p2}, Lcom/applovin/impl/sdk/j;->D()Lcom/applovin/impl/la;
 
     move-result-object p2
@@ -1659,47 +1653,47 @@
 .method private static b(Lcom/applovin/impl/sdk/j;)V
     .locals 6
 
+    .line 2
     sget-object v0, Lcom/applovin/impl/ze;->f:Ljava/lang/Object;
 
-    .line 2
     monitor-enter v0
 
     const/4 v1, 0x0
 
+    .line 3
     :goto_0
     :try_start_0
     sget-object v2, Lcom/applovin/impl/ze;->d:Lorg/json/JSONArray;
 
-    .line 3
     invoke-virtual {v2}, Lorg/json/JSONArray;->length()I
 
     move-result v2
 
     if-ge v1, v2, :cond_3
 
+    .line 4
     sget-object v2, Lcom/applovin/impl/ze;->d:Lorg/json/JSONArray;
 
     const/4 v3, 0x0
 
-    .line 4
     invoke-static {v2, v1, v3}, Lcom/applovin/impl/sdk/utils/JsonUtils;->getJSONObject(Lorg/json/JSONArray;ILorg/json/JSONObject;)Lorg/json/JSONObject;
 
     move-result-object v2
 
+    .line 5
     const-string v3, "class"
 
     const-string v4, ""
 
-    .line 5
     invoke-static {v2, v3, v4}, Lcom/applovin/impl/sdk/utils/JsonUtils;->getString(Lorg/json/JSONObject;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v3
 
+    .line 6
     const-string v4, "sdk_version"
 
     const-string v5, ""
 
-    .line 6
     invoke-static {v2, v4, v5}, Lcom/applovin/impl/sdk/utils/JsonUtils;->getString(Lorg/json/JSONObject;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v4
@@ -1736,9 +1730,9 @@
 
     if-eqz v5, :cond_2
 
+    .line 11
     const-string v5, "sdk_version"
 
-    .line 11
     invoke-static {v2, v5, v4}, Lcom/applovin/impl/sdk/utils/JsonUtils;->putString(Lorg/json/JSONObject;Ljava/lang/String;Ljava/lang/String;)V
 
     .line 12
@@ -1746,9 +1740,9 @@
 
     invoke-direct {v4, v2}, Lcom/applovin/impl/mediation/MaxMediatedNetworkInfoImpl;-><init>(Lorg/json/JSONObject;)V
 
+    .line 13
     sget-object v2, Lcom/applovin/impl/ze;->e:Ljava/util/Map;
 
-    .line 13
     invoke-interface {v2, v3, v4}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     goto :goto_1

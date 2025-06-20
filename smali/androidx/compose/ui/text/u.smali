@@ -63,25 +63,13 @@
     return v0
 .end method
 
-.method public final hashCode()I
-    .locals 1
-
-    .line 1
-    invoke-super {p0}, Ljava/lang/Object;->hashCode()I
-
-    .line 2
-    .line 3
-    .line 4
-    move-result v0
-
-    .line 5
-    return v0
-.end method
-
 .method public final toString()Ljava/lang/String;
     .locals 1
 
+    .line 1
     const-string v0, "PlatformSpanStyle()"
 
+    .line 2
+    .line 3
     return-object v0
 .end method

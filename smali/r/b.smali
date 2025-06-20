@@ -1,176 +1,205 @@
-.class public final Lr/b;
-.super Le/i;
+.class public final LR/b;
+.super Ljava/lang/Object;
 .source "SourceFile"
 
 
 # static fields
-.field public static final d:Landroidx/camera/core/impl/c;
+.field public static final c:LR/b;
 
-.field public static final f:Landroidx/camera/core/impl/c;
 
-.field public static final g:Landroidx/camera/core/impl/c;
+# instance fields
+.field public final a:LR/e;
 
-.field public static final h:Landroidx/camera/core/impl/c;
-
-.field public static final i:Landroidx/camera/core/impl/c;
-
-.field public static final j:Landroidx/camera/core/impl/c;
+.field public final b:I
 
 
 # direct methods
 .method static constructor <clinit>()V
-    .locals 4
+    .locals 3
 
     .line 1
-    sget-object v0, Ljava/lang/Integer;->TYPE:Ljava/lang/Class;
+    new-instance v0, LR/b;
 
     .line 2
     .line 3
-    new-instance v1, Landroidx/camera/core/impl/c;
+    sget-object v1, LR/e;->j:LR/e;
 
     .line 4
     .line 5
-    const-string v2, "camera2.captureRequest.templateType"
+    const/4 v2, 0x0
 
     .line 6
-    .line 7
-    const/4 v3, 0x0
+    invoke-direct {v0, v1, v2}, LR/b;-><init>(LR/e;I)V
 
+    .line 7
     .line 8
-    invoke-direct {v1, v2, v0, v3}, Landroidx/camera/core/impl/c;-><init>(Ljava/lang/String;Ljava/lang/Class;Ljava/lang/Object;)V
+    .line 9
+    sput-object v0, LR/b;->c:LR/b;
+
+    .line 10
+    .line 11
+    return-void
+.end method
+
+.method public constructor <init>(LR/e;I)V
+    .locals 0
+
+    .line 1
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    .line 2
+    .line 3
+    .line 4
+    if-eqz p1, :cond_0
+
+    .line 5
+    .line 6
+    iput-object p1, p0, LR/b;->a:LR/e;
+
+    .line 7
+    .line 8
+    iput p2, p0, LR/b;->b:I
 
     .line 9
     .line 10
+    return-void
+
     .line 11
-    sput-object v1, Lr/b;->d:Landroidx/camera/core/impl/c;
+    :cond_0
+    new-instance p1, Ljava/lang/NullPointerException;
 
     .line 12
     .line 13
-    sget-object v0, Ljava/lang/Long;->TYPE:Ljava/lang/Class;
+    const-string p2, "Null fallbackQuality"
 
     .line 14
     .line 15
-    new-instance v1, Landroidx/camera/core/impl/c;
+    invoke-direct {p1, p2}, Ljava/lang/NullPointerException;-><init>(Ljava/lang/String;)V
 
     .line 16
     .line 17
-    const-string v2, "camera2.cameraCaptureSession.streamUseCase"
+    .line 18
+    throw p1
+.end method
 
+
+# virtual methods
+.method public final equals(Ljava/lang/Object;)Z
+    .locals 4
+
+    .line 1
+    const/4 v0, 0x1
+
+    .line 2
+    if-ne p1, p0, :cond_0
+
+    .line 3
+    .line 4
+    return v0
+
+    .line 5
+    :cond_0
+    instance-of v1, p1, LR/b;
+
+    .line 6
+    .line 7
+    const/4 v2, 0x0
+
+    .line 8
+    if-eqz v1, :cond_2
+
+    .line 9
+    .line 10
+    check-cast p1, LR/b;
+
+    .line 11
+    .line 12
+    iget-object v1, p1, LR/b;->a:LR/e;
+
+    .line 13
+    .line 14
+    iget-object v3, p0, LR/b;->a:LR/e;
+
+    .line 15
+    .line 16
+    invoke-virtual {v3, v1}, LR/e;->equals(Ljava/lang/Object;)Z
+
+    .line 17
     .line 18
     .line 19
-    invoke-direct {v1, v2, v0, v3}, Landroidx/camera/core/impl/c;-><init>(Ljava/lang/String;Ljava/lang/Class;Ljava/lang/Object;)V
+    move-result v1
 
     .line 20
+    if-eqz v1, :cond_1
+
     .line 21
     .line 22
-    sput-object v1, Lr/b;->f:Landroidx/camera/core/impl/c;
+    iget v1, p0, LR/b;->b:I
 
     .line 23
     .line 24
-    new-instance v0, Landroidx/camera/core/impl/c;
+    iget p1, p1, LR/b;->b:I
 
     .line 25
     .line 26
-    const-string v1, "camera2.cameraDevice.stateCallback"
+    if-ne v1, p1, :cond_1
 
     .line 27
     .line 28
-    const-class v2, Landroid/hardware/camera2/CameraDevice$StateCallback;
+    goto :goto_0
 
     .line 29
+    :cond_1
+    const/4 v0, 0x0
+
     .line 30
-    invoke-direct {v0, v1, v2, v3}, Landroidx/camera/core/impl/c;-><init>(Ljava/lang/String;Ljava/lang/Class;Ljava/lang/Object;)V
+    :goto_0
+    return v0
 
     .line 31
-    .line 32
-    .line 33
-    sput-object v0, Lr/b;->g:Landroidx/camera/core/impl/c;
-
-    .line 34
-    .line 35
-    new-instance v0, Landroidx/camera/core/impl/c;
-
-    .line 36
-    .line 37
-    const-string v1, "camera2.cameraCaptureSession.stateCallback"
-
-    .line 38
-    .line 39
-    const-class v2, Landroid/hardware/camera2/CameraCaptureSession$StateCallback;
-
-    .line 40
-    .line 41
-    invoke-direct {v0, v1, v2, v3}, Landroidx/camera/core/impl/c;-><init>(Ljava/lang/String;Ljava/lang/Class;Ljava/lang/Object;)V
-
-    .line 42
-    .line 43
-    .line 44
-    sput-object v0, Lr/b;->h:Landroidx/camera/core/impl/c;
-
-    .line 45
-    .line 46
-    new-instance v0, Landroidx/camera/core/impl/c;
-
-    .line 47
-    .line 48
-    const-string v1, "camera2.cameraCaptureSession.captureCallback"
-
-    .line 49
-    .line 50
-    const-class v2, Landroid/hardware/camera2/CameraCaptureSession$CaptureCallback;
-
-    .line 51
-    .line 52
-    invoke-direct {v0, v1, v2, v3}, Landroidx/camera/core/impl/c;-><init>(Ljava/lang/String;Ljava/lang/Class;Ljava/lang/Object;)V
-
-    .line 53
-    .line 54
-    .line 55
-    sput-object v0, Lr/b;->i:Landroidx/camera/core/impl/c;
-
-    .line 56
-    .line 57
-    new-instance v0, Landroidx/camera/core/impl/c;
-
-    .line 58
-    .line 59
-    const-string v1, "camera2.cameraCaptureSession.physicalCameraId"
-
-    .line 60
-    .line 61
-    const-class v2, Ljava/lang/String;
-
-    .line 62
-    .line 63
-    invoke-direct {v0, v1, v2, v3}, Landroidx/camera/core/impl/c;-><init>(Ljava/lang/String;Ljava/lang/Class;Ljava/lang/Object;)V
-
-    .line 64
-    .line 65
-    .line 66
-    sput-object v0, Lr/b;->j:Landroidx/camera/core/impl/c;
-
-    .line 67
-    .line 68
-    return-void
+    :cond_2
+    return v2
 .end method
 
-.method public constructor <init>(Landroidx/camera/core/impl/j0;)V
-    .locals 1
+.method public final hashCode()I
+    .locals 2
 
     .line 1
-    const/16 v0, 0xc
+    iget-object v0, p0, LR/b;->a:LR/e;
 
     .line 2
     .line 3
-    invoke-direct {p0, p1, v0}, Le/i;-><init>(Ljava/lang/Object;I)V
+    invoke-virtual {v0}, LR/e;->hashCode()I
 
     .line 4
     .line 5
     .line 6
-    return-void
+    move-result v0
+
+    .line 7
+    const v1, 0xf4243
+
+    .line 8
+    .line 9
+    .line 10
+    xor-int/2addr v0, v1
+
+    .line 11
+    mul-int v0, v0, v1
+
+    .line 12
+    .line 13
+    iget v1, p0, LR/b;->b:I
+
+    .line 14
+    .line 15
+    xor-int/2addr v0, v1
+
+    .line 16
+    return v0
 .end method
 
-.method public static Y(Landroid/hardware/camera2/CaptureRequest$Key;)Landroidx/camera/core/impl/c;
+.method public final toString()Ljava/lang/String;
     .locals 3
 
     .line 1
@@ -178,7 +207,7 @@
 
     .line 2
     .line 3
-    const-string v1, "camera2.captureRequest.option."
+    const-string v1, "RuleStrategy{fallbackQuality="
 
     .line 4
     .line 5
@@ -187,39 +216,39 @@
     .line 6
     .line 7
     .line 8
-    invoke-virtual {p0}, Landroid/hardware/camera2/CaptureRequest$Key;->getName()Ljava/lang/String;
+    iget-object v1, p0, LR/b;->a:LR/e;
 
     .line 9
     .line 10
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+
     .line 11
-    move-result-object v1
-
     .line 12
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
     .line 13
+    const-string v1, ", fallbackRule="
+
     .line 14
     .line 15
-    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     .line 16
     .line 17
     .line 18
-    move-result-object v0
+    iget v1, p0, LR/b;->b:I
 
     .line 19
-    new-instance v1, Landroidx/camera/core/impl/c;
-
     .line 20
+    const-string v2, "}"
+
     .line 21
-    const-class v2, Ljava/lang/Object;
-
     .line 22
-    .line 23
-    invoke-direct {v1, v0, v2, p0}, Landroidx/camera/core/impl/c;-><init>(Ljava/lang/String;Ljava/lang/Class;Ljava/lang/Object;)V
+    invoke-static {v1, v2, v0}, LB/u;->o(ILjava/lang/String;Ljava/lang/StringBuilder;)Ljava/lang/String;
 
+    .line 23
     .line 24
     .line 25
+    move-result-object v0
+
     .line 26
-    return-object v1
+    return-object v0
 .end method

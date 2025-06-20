@@ -52,7 +52,7 @@
 .method public static a(Ljava/lang/String;)J
     .locals 3
 
-    .line 19
+    .line 22
     invoke-static {p0}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
 
     move-result v0
@@ -63,15 +63,15 @@
 
     return-wide v1
 
+    .line 23
     :cond_0
     sget-object v0, Lcom/applovin/impl/ra;->b:Ljava/util/regex/Pattern;
 
-    .line 20
     invoke-virtual {v0, p0}, Ljava/util/regex/Pattern;->matcher(Ljava/lang/CharSequence;)Ljava/util/regex/Matcher;
 
     move-result-object p0
 
-    .line 21
+    .line 24
     invoke-virtual {p0}, Ljava/util/regex/Matcher;->matches()Z
 
     move-result v0
@@ -101,9 +101,10 @@
 .method public static a(Ljava/lang/String;Ljava/lang/String;)J
     .locals 10
 
+    .line 10
     const-string v0, "Inconsistent headers ["
 
-    .line 8
+    .line 11
     invoke-static {p0}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
 
     move-result v1
@@ -114,7 +115,7 @@
 
     if-nez v1, :cond_0
 
-    .line 9
+    .line 12
     :try_start_0
     invoke-static {p0}, Ljava/lang/Long;->parseLong(Ljava/lang/String;)J
 
@@ -124,7 +125,7 @@
 
     goto :goto_0
 
-    .line 10
+    .line 13
     :catch_0
     new-instance v1, Ljava/lang/StringBuilder;
 
@@ -145,7 +146,7 @@
     :cond_0
     const-wide/16 v4, -0x1
 
-    .line 11
+    .line 14
     :goto_0
     invoke-static {p1}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
 
@@ -153,14 +154,14 @@
 
     if-nez v1, :cond_2
 
+    .line 15
     sget-object v1, Lcom/applovin/impl/ra;->a:Ljava/util/regex/Pattern;
 
-    .line 12
     invoke-virtual {v1, p1}, Ljava/util/regex/Pattern;->matcher(Ljava/lang/CharSequence;)Ljava/util/regex/Matcher;
 
     move-result-object v1
 
-    .line 13
+    .line 16
     invoke-virtual {v1}, Ljava/util/regex/Matcher;->matches()Z
 
     move-result v6
@@ -169,7 +170,7 @@
 
     const/4 v6, 0x2
 
-    .line 14
+    .line 17
     :try_start_1
     invoke-virtual {v1, v6}, Ljava/util/regex/Matcher;->group(I)Ljava/lang/String;
 
@@ -187,7 +188,7 @@
 
     const/4 v8, 0x1
 
-    .line 15
+    .line 18
     invoke-virtual {v1, v8}, Ljava/util/regex/Matcher;->group(I)Ljava/lang/String;
 
     move-result-object v1
@@ -223,7 +224,7 @@
 
     if-eqz v1, :cond_2
 
-    .line 16
+    .line 19
     new-instance v1, Ljava/lang/StringBuilder;
 
     invoke-direct {v1, v0}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
@@ -244,7 +245,7 @@
 
     invoke-static {v2, p0}, Lcom/applovin/impl/oc;->d(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 17
+    .line 20
     invoke-static {v4, v5, v6, v7}, Ljava/lang/Math;->max(JJ)J
 
     move-result-wide v4
@@ -253,7 +254,7 @@
 
     goto :goto_1
 
-    .line 18
+    .line 21
     :catch_1
     new-instance p0, Ljava/lang/StringBuilder;
 
@@ -295,13 +296,15 @@
 
     return-object p0
 
+    .line 1
     :cond_0
     const-string v0, "bytes="
 
+    .line 2
     const-string v1, "-"
 
-    .line 1
-    invoke-static {v0, p0, p1, v1}, Lj0/d;->r(Ljava/lang/String;JLjava/lang/String;)Ljava/lang/StringBuilder;
+    .line 3
+    invoke-static {v0, v1, p0, p1}, Landroidx/compose/runtime/a0;->u(Ljava/lang/String;Ljava/lang/String;J)Ljava/lang/StringBuilder;
 
     move-result-object v0
 
@@ -315,10 +318,10 @@
 
     sub-long/2addr p0, p2
 
-    .line 2
+    .line 4
     invoke-virtual {v0, p0, p1}, Ljava/lang/StringBuilder;->append(J)Ljava/lang/StringBuilder;
 
-    .line 3
+    .line 5
     :cond_1
     invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 

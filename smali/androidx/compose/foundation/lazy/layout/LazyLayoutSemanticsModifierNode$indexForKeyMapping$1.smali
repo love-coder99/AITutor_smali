@@ -3,14 +3,14 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lzh/c;
+.implements Lka/c;
 
 
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "Lkotlin/jvm/internal/Lambda;",
-        "Lzh/c;"
+        "Lka/c;"
     }
 .end annotation
 
@@ -37,14 +37,14 @@
 
 
 # instance fields
-.field final synthetic this$0:Landroidx/compose/foundation/lazy/layout/q0;
+.field final synthetic this$0:Landroidx/compose/foundation/lazy/layout/P;
 
 
 # direct methods
-.method public constructor <init>(Landroidx/compose/foundation/lazy/layout/q0;)V
+.method public constructor <init>(Landroidx/compose/foundation/lazy/layout/P;)V
     .locals 0
 
-    iput-object p1, p0, Landroidx/compose/foundation/lazy/layout/LazyLayoutSemanticsModifierNode$indexForKeyMapping$1;->this$0:Landroidx/compose/foundation/lazy/layout/q0;
+    iput-object p1, p0, Landroidx/compose/foundation/lazy/layout/LazyLayoutSemanticsModifierNode$indexForKeyMapping$1;->this$0:Landroidx/compose/foundation/lazy/layout/P;
 
     const/4 p1, 0x1
 
@@ -58,20 +58,21 @@
 .method public final invoke(Ljava/lang/Object;)Ljava/lang/Integer;
     .locals 4
 
-    iget-object v0, p0, Landroidx/compose/foundation/lazy/layout/LazyLayoutSemanticsModifierNode$indexForKeyMapping$1;->this$0:Landroidx/compose/foundation/lazy/layout/q0;
-
-    .line 1
-    iget-object v0, v0, Landroidx/compose/foundation/lazy/layout/q0;->p:Lzh/a;
-
     .line 2
-    invoke-interface {v0}, Lzh/a;->invoke()Ljava/lang/Object;
+    iget-object v0, p0, Landroidx/compose/foundation/lazy/layout/LazyLayoutSemanticsModifierNode$indexForKeyMapping$1;->this$0:Landroidx/compose/foundation/lazy/layout/P;
+
+    .line 3
+    iget-object v0, v0, Landroidx/compose/foundation/lazy/layout/P;->p:Lra/m;
+
+    .line 4
+    invoke-interface {v0}, Lka/a;->invoke()Ljava/lang/Object;
 
     move-result-object v0
 
-    check-cast v0, Landroidx/compose/foundation/lazy/layout/a0;
+    check-cast v0, Landroidx/compose/foundation/lazy/layout/A;
 
-    .line 3
-    invoke-interface {v0}, Landroidx/compose/foundation/lazy/layout/a0;->c()I
+    .line 5
+    invoke-interface {v0}, Landroidx/compose/foundation/lazy/layout/A;->b()I
 
     move-result v1
 
@@ -80,12 +81,13 @@
     :goto_0
     if-ge v2, v1, :cond_1
 
-    .line 4
-    invoke-interface {v0, v2}, Landroidx/compose/foundation/lazy/layout/a0;->a(I)Ljava/lang/Object;
+    .line 6
+    invoke-interface {v0, v2}, Landroidx/compose/foundation/lazy/layout/A;->c(I)Ljava/lang/Object;
 
     move-result-object v3
 
-    invoke-static {v3, p1}, Lrb/h;->d(Ljava/lang/Object;Ljava/lang/Object;)Z
+    .line 7
+    invoke-virtual {v3, p1}, Ljava/lang/Object;->equals(Ljava/lang/Object;)Z
 
     move-result v3
 
@@ -101,7 +103,7 @@
     :cond_1
     const/4 v2, -0x1
 
-    .line 5
+    .line 8
     :goto_1
     invoke-static {v2}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -113,7 +115,7 @@
 .method public bridge synthetic invoke(Ljava/lang/Object;)Ljava/lang/Object;
     .locals 0
 
-    .line 6
+    .line 1
     invoke-virtual {p0, p1}, Landroidx/compose/foundation/lazy/layout/LazyLayoutSemanticsModifierNode$indexForKeyMapping$1;->invoke(Ljava/lang/Object;)Ljava/lang/Integer;
 
     move-result-object p1

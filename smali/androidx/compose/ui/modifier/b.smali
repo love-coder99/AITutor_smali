@@ -1,10 +1,10 @@
 .class public final Landroidx/compose/ui/modifier/b;
-.super Lcom/facebook/appevents/cloudbridge/d;
+.super Ll8/H;
 .source "SourceFile"
 
 
 # static fields
-.field public static final c:Landroidx/compose/ui/modifier/b;
+.field public static final d:Landroidx/compose/ui/modifier/b;
 
 
 # direct methods
@@ -21,7 +21,7 @@
     .line 4
     .line 5
     .line 6
-    sput-object v0, Landroidx/compose/ui/modifier/b;->c:Landroidx/compose/ui/modifier/b;
+    sput-object v0, Landroidx/compose/ui/modifier/b;->d:Landroidx/compose/ui/modifier/b;
 
     .line 7
     .line 8
@@ -30,16 +30,17 @@
 
 
 # virtual methods
-.method public final a(Landroidx/compose/ui/modifier/c;)Z
+.method public final e(Landroidx/compose/ui/modifier/h;)Z
     .locals 0
 
     .line 1
     const/4 p1, 0x0
 
+    .line 2
     return p1
 .end method
 
-.method public final d(Landroidx/compose/ui/modifier/i;)Ljava/lang/Object;
+.method public final g(Landroidx/compose/ui/modifier/h;)Ljava/lang/Object;
     .locals 1
 
     .line 1
@@ -51,18 +52,10 @@
 
     .line 4
     .line 5
-    invoke-virtual {v0}, Ljava/lang/Object;->toString()Ljava/lang/String;
+    invoke-direct {p1, v0}, Ljava/lang/IllegalStateException;-><init>(Ljava/lang/String;)V
 
     .line 6
     .line 7
     .line 8
-    move-result-object v0
-
-    .line 9
-    invoke-direct {p1, v0}, Ljava/lang/IllegalStateException;-><init>(Ljava/lang/String;)V
-
-    .line 10
-    .line 11
-    .line 12
     throw p1
 .end method

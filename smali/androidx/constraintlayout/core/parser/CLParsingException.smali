@@ -12,7 +12,7 @@
 
 
 # direct methods
-.method public constructor <init>(Ljava/lang/String;Lo2/c;)V
+.method public constructor <init>(Ljava/lang/String;LT0/c;)V
     .locals 0
 
     .line 1
@@ -32,7 +32,7 @@
 
     .line 8
     .line 9
-    invoke-virtual {p2}, Lo2/c;->g()Ljava/lang/String;
+    invoke-virtual {p2}, LT0/c;->g()Ljava/lang/String;
 
     .line 10
     .line 11
@@ -127,7 +127,7 @@
 
     .line 29
     .line 30
-    invoke-static {v0, v1, v2}, Lj0/d;->m(Ljava/lang/StringBuilder;ILjava/lang/String;)Ljava/lang/String;
+    invoke-static {v1, v2, v0}, LB/u;->o(ILjava/lang/String;Ljava/lang/StringBuilder;)Ljava/lang/String;
 
     .line 31
     .line 32

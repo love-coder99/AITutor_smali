@@ -143,7 +143,7 @@
 .method public static synthetic b(Lcom/apm/insight/nativecrash/a$b;)Lcom/apm/insight/nativecrash/c;
     .locals 0
 
-    .line 2
+    .line 1
     iget-object p0, p0, Lcom/apm/insight/nativecrash/a$b;->a:Lcom/apm/insight/nativecrash/c;
 
     return-object p0
@@ -163,9 +163,9 @@
 .method public final a()J
     .locals 2
 
+    .line 2
     iget-object v0, p0, Lcom/apm/insight/nativecrash/a$b;->b:Lcom/apm/insight/h/b;
 
-    .line 2
     invoke-virtual {v0}, Lcom/apm/insight/h/b;->f()Ljava/util/Map;
 
     move-result-object v0
@@ -180,9 +180,9 @@
 
     if-nez v1, :cond_0
 
+    .line 4
     const-string v1, "start_time"
 
-    .line 4
     invoke-interface {v0, v1}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object v0
@@ -232,7 +232,7 @@
 .method public final b()Ljava/io/File;
     .locals 1
 
-    .line 1
+    .line 2
     iget-object v0, p0, Lcom/apm/insight/nativecrash/a$b;->c:Ljava/io/File;
 
     return-object v0
@@ -241,9 +241,9 @@
 .method public final c()Z
     .locals 1
 
+    .line 2
     iget-object v0, p0, Lcom/apm/insight/nativecrash/a$b;->b:Lcom/apm/insight/h/b;
 
-    .line 2
     invoke-virtual {v0}, Lcom/apm/insight/h/b;->d()Z
 
     move-result v0

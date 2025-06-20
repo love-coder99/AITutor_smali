@@ -374,13 +374,13 @@
 
     .line 57
     .line 58
-    const/4 v7, 0x0
-
-    .line 59
     const/4 v8, 0x0
 
-    .line 60
+    .line 59
     const/4 v10, 0x1
+
+    .line 60
+    const/4 v7, 0x0
 
     .line 61
     invoke-virtual/range {v2 .. v10}, Lcom/applovin/impl/sdk/l;->a(Landroid/content/Context;Ljava/lang/String;Ljava/lang/String;Ljava/util/List;ZZLcom/applovin/impl/u2;I)Ljava/lang/String;

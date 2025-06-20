@@ -3,14 +3,14 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lzh/f;
+.implements Lka/f;
 
 
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "Lkotlin/jvm/internal/Lambda;",
-        "Lzh/f;"
+        "Lka/f;"
     }
 .end annotation
 
@@ -21,7 +21,7 @@
     d2 = {
         "Landroidx/compose/ui/o;",
         "invoke",
-        "(Landroidx/compose/ui/o;Landroidx/compose/runtime/l;I)Landroidx/compose/ui/o;",
+        "(Landroidx/compose/ui/o;Landroidx/compose/runtime/j;I)Landroidx/compose/ui/o;",
         "<anonymous>"
     }
     k = 0x3
@@ -36,10 +36,10 @@
 # instance fields
 .field final synthetic $enabled:Z
 
-.field final synthetic $onClick:Lzh/a;
+.field final synthetic $onClick:Lka/a;
     .annotation system Ldalvik/annotation/Signature;
         value = {
-            "Lzh/a;"
+            "Lka/a;"
         }
     .end annotation
 .end field
@@ -50,14 +50,14 @@
 
 
 # direct methods
-.method public constructor <init>(ZLjava/lang/String;Landroidx/compose/ui/semantics/g;Lzh/a;)V
+.method public constructor <init>(ZLjava/lang/String;Landroidx/compose/ui/semantics/g;Lka/a;)V
     .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(Z",
             "Ljava/lang/String;",
             "Landroidx/compose/ui/semantics/g;",
-            "Lzh/a;",
+            "Lka/a;",
             ")V"
         }
     .end annotation
@@ -65,45 +65,57 @@
     .line 1
     iput-boolean p1, p0, Landroidx/compose/foundation/ClickableKt$clickable$2;->$enabled:Z
 
+    .line 2
+    .line 3
     iput-object p2, p0, Landroidx/compose/foundation/ClickableKt$clickable$2;->$onClickLabel:Ljava/lang/String;
 
+    .line 4
+    .line 5
     iput-object p3, p0, Landroidx/compose/foundation/ClickableKt$clickable$2;->$role:Landroidx/compose/ui/semantics/g;
 
-    iput-object p4, p0, Landroidx/compose/foundation/ClickableKt$clickable$2;->$onClick:Lzh/a;
+    .line 6
+    .line 7
+    iput-object p4, p0, Landroidx/compose/foundation/ClickableKt$clickable$2;->$onClick:Lka/a;
 
+    .line 8
+    .line 9
     const/4 p1, 0x3
 
+    .line 10
     invoke-direct {p0, p1}, Lkotlin/jvm/internal/Lambda;-><init>(I)V
 
+    .line 11
+    .line 12
+    .line 13
     return-void
 .end method
 
 
 # virtual methods
-.method public final invoke(Landroidx/compose/ui/o;Landroidx/compose/runtime/l;I)Landroidx/compose/ui/o;
-    .locals 9
+.method public final invoke(Landroidx/compose/ui/o;Landroidx/compose/runtime/j;I)Landroidx/compose/ui/o;
+    .locals 10
 
-    check-cast p2, Landroidx/compose/runtime/p;
+    check-cast p2, Landroidx/compose/runtime/n;
 
     const p1, -0x2d10e1f7
 
-    invoke-virtual {p2, p1}, Landroidx/compose/runtime/p;->T(I)V
+    invoke-virtual {p2, p1}, Landroidx/compose/runtime/n;->R(I)V
 
     .line 2
-    sget-object p1, Landroidx/compose/foundation/f0;->a:Landroidx/compose/runtime/e3;
+    sget-object p1, Landroidx/compose/foundation/D;->a:Landroidx/compose/runtime/I0;
 
     .line 3
-    invoke-virtual {p2, p1}, Landroidx/compose/runtime/p;->l(Landroidx/compose/runtime/u1;)Ljava/lang/Object;
+    invoke-virtual {p2, p1}, Landroidx/compose/runtime/n;->k(Landroidx/compose/runtime/j0;)Ljava/lang/Object;
 
     move-result-object p1
 
     .line 4
     move-object v1, p1
 
-    check-cast v1, Landroidx/compose/foundation/d0;
+    check-cast v1, Landroidx/compose/foundation/B;
 
     .line 5
-    instance-of p1, v1, Landroidx/compose/foundation/i0;
+    instance-of p1, v1, Landroidx/compose/foundation/G;
 
     const/4 p3, 0x0
 
@@ -111,10 +123,10 @@
 
     const v0, 0x24c8cff8
 
-    invoke-virtual {p2, v0}, Landroidx/compose/runtime/p;->T(I)V
+    invoke-virtual {p2, v0}, Landroidx/compose/runtime/n;->R(I)V
 
     .line 6
-    invoke-virtual {p2, p3}, Landroidx/compose/runtime/p;->q(Z)V
+    invoke-virtual {p2, p3}, Landroidx/compose/runtime/n;->p(Z)V
 
     const/4 v0, 0x0
 
@@ -127,101 +139,109 @@
     const v0, 0x24ca75bd
 
     .line 7
-    invoke-virtual {p2, v0}, Landroidx/compose/runtime/p;->T(I)V
+    invoke-virtual {p2, v0}, Landroidx/compose/runtime/n;->R(I)V
 
     .line 8
-    invoke-virtual {p2}, Landroidx/compose/runtime/p;->I()Ljava/lang/Object;
+    invoke-virtual {p2}, Landroidx/compose/runtime/n;->G()Ljava/lang/Object;
 
     move-result-object v0
 
-    sget-object v2, Landroidx/compose/runtime/k;->b:Lxd/e;
+    .line 9
+    sget-object v2, Landroidx/compose/runtime/i;->a:Landroidx/compose/runtime/T;
 
     if-ne v0, v2, :cond_1
 
-    .line 9
+    .line 10
     new-instance v0, Landroidx/compose/foundation/interaction/m;
 
     invoke-direct {v0}, Landroidx/compose/foundation/interaction/m;-><init>()V
 
-    .line 10
-    invoke-virtual {p2, v0}, Landroidx/compose/runtime/p;->d0(Ljava/lang/Object;)V
-
     .line 11
+    invoke-virtual {p2, v0}, Landroidx/compose/runtime/n;->b0(Ljava/lang/Object;)V
+
+    .line 12
     :cond_1
     check-cast v0, Landroidx/compose/foundation/interaction/l;
 
-    .line 12
-    invoke-virtual {p2, p3}, Landroidx/compose/runtime/p;->q(Z)V
+    .line 13
+    invoke-virtual {p2, p3}, Landroidx/compose/runtime/n;->p(Z)V
 
     goto :goto_0
 
+    .line 14
     :goto_1
     iget-boolean v5, p0, Landroidx/compose/foundation/ClickableKt$clickable$2;->$enabled:Z
 
+    .line 15
     iget-object v6, p0, Landroidx/compose/foundation/ClickableKt$clickable$2;->$onClickLabel:Ljava/lang/String;
 
+    .line 16
     iget-object v7, p0, Landroidx/compose/foundation/ClickableKt$clickable$2;->$role:Landroidx/compose/ui/semantics/g;
 
-    iget-object v8, p0, Landroidx/compose/foundation/ClickableKt$clickable$2;->$onClick:Lzh/a;
+    .line 17
+    iget-object v8, p0, Landroidx/compose/foundation/ClickableKt$clickable$2;->$onClick:Lka/a;
 
     if-eqz p1, :cond_2
 
-    .line 13
+    .line 18
     move-object v4, v1
 
-    check-cast v4, Landroidx/compose/foundation/i0;
+    check-cast v4, Landroidx/compose/foundation/G;
 
-    .line 14
+    .line 19
     new-instance p1, Landroidx/compose/foundation/ClickableElement;
 
     move-object v2, p1
 
-    invoke-direct/range {v2 .. v8}, Landroidx/compose/foundation/ClickableElement;-><init>(Landroidx/compose/foundation/interaction/l;Landroidx/compose/foundation/i0;ZLjava/lang/String;Landroidx/compose/ui/semantics/g;Lzh/a;)V
+    invoke-direct/range {v2 .. v8}, Landroidx/compose/foundation/ClickableElement;-><init>(Landroidx/compose/foundation/interaction/l;Landroidx/compose/foundation/G;ZLjava/lang/String;Landroidx/compose/ui/semantics/g;Lka/a;)V
 
     goto :goto_2
 
     :cond_2
     if-nez v1, :cond_3
 
-    const/4 v4, 0x0
-
     new-instance p1, Landroidx/compose/foundation/ClickableElement;
+
+    const/4 v4, 0x0
 
     move-object v2, p1
 
-    invoke-direct/range {v2 .. v8}, Landroidx/compose/foundation/ClickableElement;-><init>(Landroidx/compose/foundation/interaction/l;Landroidx/compose/foundation/i0;ZLjava/lang/String;Landroidx/compose/ui/semantics/g;Lzh/a;)V
+    invoke-direct/range {v2 .. v8}, Landroidx/compose/foundation/ClickableElement;-><init>(Landroidx/compose/foundation/interaction/l;Landroidx/compose/foundation/G;ZLjava/lang/String;Landroidx/compose/ui/semantics/g;Lka/a;)V
 
     goto :goto_2
 
+    .line 20
     :cond_3
+    sget-object p1, Landroidx/compose/ui/l;->a:Landroidx/compose/ui/l;
+
     if-eqz v3, :cond_4
 
-    .line 15
-    invoke-static {v3, v1}, Landroidx/compose/foundation/f0;->a(Landroidx/compose/foundation/interaction/k;Landroidx/compose/foundation/d0;)Landroidx/compose/ui/o;
+    .line 21
+    invoke-static {v3, v1}, Landroidx/compose/foundation/D;->a(Landroidx/compose/foundation/interaction/l;Landroidx/compose/foundation/B;)Landroidx/compose/ui/o;
 
     move-result-object p1
+
+    .line 22
+    new-instance v0, Landroidx/compose/foundation/ClickableElement;
 
     const/4 v4, 0x0
 
-    .line 16
-    new-instance v0, Landroidx/compose/foundation/ClickableElement;
-
     move-object v2, v0
 
-    invoke-direct/range {v2 .. v8}, Landroidx/compose/foundation/ClickableElement;-><init>(Landroidx/compose/foundation/interaction/l;Landroidx/compose/foundation/i0;ZLjava/lang/String;Landroidx/compose/ui/semantics/g;Lzh/a;)V
+    invoke-direct/range {v2 .. v8}, Landroidx/compose/foundation/ClickableElement;-><init>(Landroidx/compose/foundation/interaction/l;Landroidx/compose/foundation/G;ZLjava/lang/String;Landroidx/compose/ui/semantics/g;Lka/a;)V
 
-    .line 17
-    invoke-interface {p1, v0}, Landroidx/compose/ui/o;->e(Landroidx/compose/ui/o;)Landroidx/compose/ui/o;
+    .line 23
+    invoke-interface {p1, v0}, Landroidx/compose/ui/o;->g(Landroidx/compose/ui/o;)Landroidx/compose/ui/o;
 
     move-result-object p1
 
     goto :goto_2
 
-    .line 18
+    .line 24
     :cond_4
-    new-instance p1, Landroidx/compose/foundation/ClickableKt$clickable-O2vRcR0$$inlined$clickableWithIndicationIfNeeded$1;
+    new-instance v9, Landroidx/compose/foundation/ClickableKt$clickable-O2vRcR0$$inlined$clickableWithIndicationIfNeeded$1;
 
-    move-object v0, p1
+    move-object v0, v9
 
     move v2, v5
 
@@ -231,21 +251,19 @@
 
     move-object v5, v8
 
-    invoke-direct/range {v0 .. v5}, Landroidx/compose/foundation/ClickableKt$clickable-O2vRcR0$$inlined$clickableWithIndicationIfNeeded$1;-><init>(Landroidx/compose/foundation/d0;ZLjava/lang/String;Landroidx/compose/ui/semantics/g;Lzh/a;)V
+    invoke-direct/range {v0 .. v5}, Landroidx/compose/foundation/ClickableKt$clickable-O2vRcR0$$inlined$clickableWithIndicationIfNeeded$1;-><init>(Landroidx/compose/foundation/B;ZLjava/lang/String;Landroidx/compose/ui/semantics/g;Lka/a;)V
 
-    .line 19
-    sget v0, Landroidx/compose/ui/platform/u1;->a:I
+    .line 25
+    sget v0, Landroidx/compose/ui/platform/k0;->a:I
 
-    .line 20
-    new-instance v0, Landroidx/compose/ui/k;
+    .line 26
+    invoke-static {p1, v9}, Landroidx/compose/ui/a;->b(Landroidx/compose/ui/o;Lka/f;)Landroidx/compose/ui/o;
 
-    invoke-direct {v0, p1}, Landroidx/compose/ui/k;-><init>(Lzh/f;)V
+    move-result-object p1
 
-    move-object p1, v0
-
-    .line 21
+    .line 27
     :goto_2
-    invoke-virtual {p2, p3}, Landroidx/compose/runtime/p;->q(Z)V
+    invoke-virtual {p2, p3}, Landroidx/compose/runtime/n;->p(Z)V
 
     return-object p1
 .end method
@@ -256,7 +274,7 @@
     .line 1
     check-cast p1, Landroidx/compose/ui/o;
 
-    check-cast p2, Landroidx/compose/runtime/l;
+    check-cast p2, Landroidx/compose/runtime/j;
 
     check-cast p3, Ljava/lang/Number;
 
@@ -264,7 +282,7 @@
 
     move-result p3
 
-    invoke-virtual {p0, p1, p2, p3}, Landroidx/compose/foundation/ClickableKt$clickable$2;->invoke(Landroidx/compose/ui/o;Landroidx/compose/runtime/l;I)Landroidx/compose/ui/o;
+    invoke-virtual {p0, p1, p2, p3}, Landroidx/compose/foundation/ClickableKt$clickable$2;->invoke(Landroidx/compose/ui/o;Landroidx/compose/runtime/j;I)Landroidx/compose/ui/o;
 
     move-result-object p1
 

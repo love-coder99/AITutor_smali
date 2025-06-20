@@ -16,7 +16,7 @@
 
     .line 2
     .line 3
-    invoke-static {v0}, Landroidx/work/u;->b(Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v0}, Landroidx/work/A;->b(Ljava/lang/String;)Ljava/lang/String;
 
     .line 4
     .line 5
@@ -78,7 +78,7 @@
 
     .line 16
     .line 17
-    invoke-static {}, Landroidx/work/u;->a()Landroidx/work/u;
+    invoke-static {}, Landroidx/work/A;->a()Landroidx/work/A;
 
     .line 18
     .line 19
@@ -100,10 +100,10 @@
     .line 26
     .line 27
     .line 28
-    move-result-object v4
+    move-result-object v3
 
     .line 29
-    invoke-static {p1}, Landroidx/work/impl/i0;->g(Landroid/content/Context;)Landroidx/work/impl/i0;
+    invoke-static {p1}, Landroidx/work/impl/n;->A(Landroid/content/Context;)Landroidx/work/impl/n;
 
     .line 30
     .line 31
@@ -111,43 +111,44 @@
     move-result-object v0
 
     .line 33
-    iget-object v6, v0, Landroidx/work/impl/i0;->d:Li5/a;
+    iget-object v6, v0, Landroidx/work/impl/n;->f:LC2/a;
 
     .line 34
     .line 35
-    new-instance v7, Landroidx/appcompat/view/menu/h;
+    new-instance v7, LJ8/i;
 
     .line 36
     .line 37
-    const/4 v5, 0x1
+    const/16 v5, 0x1b
 
     .line 38
-    move-object v0, v7
-
     .line 39
-    move-object v1, p0
+    const/4 v4, 0x0
 
     .line 40
-    move-object v2, p2
+    move-object v0, v7
 
     .line 41
-    move-object v3, p1
+    move-object v1, p2
 
     .line 42
-    invoke-direct/range {v0 .. v5}, Landroidx/appcompat/view/menu/h;-><init>(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;I)V
+    move-object v2, p1
 
     .line 43
+    invoke-direct/range {v0 .. v5}, LJ8/i;-><init>(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;ZI)V
+
     .line 44
     .line 45
-    check-cast v6, Li5/c;
-
     .line 46
-    .line 47
-    invoke-virtual {v6, v7}, Li5/c;->a(Ljava/lang/Runnable;)V
+    check-cast v6, LC2/b;
 
+    .line 47
     .line 48
+    invoke-virtual {v6, v7}, LC2/b;->a(Ljava/lang/Runnable;)V
+
     .line 49
     .line 50
+    .line 51
     :goto_1
     return-void
 .end method

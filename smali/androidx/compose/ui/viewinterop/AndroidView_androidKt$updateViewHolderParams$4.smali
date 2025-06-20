@@ -3,14 +3,14 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lzh/e;
+.implements Lka/e;
 
 
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "Lkotlin/jvm/internal/Lambda;",
-        "Lzh/e;"
+        "Lka/e;"
     }
 .end annotation
 
@@ -21,12 +21,12 @@
     d2 = {
         "Landroid/view/View;",
         "T",
-        "Landroidx/compose/ui/node/e0;",
-        "Lr4/g;",
+        "Landroidx/compose/ui/node/C;",
+        "Lh2/g;",
         "it",
-        "Lqh/r;",
+        "LX9/j;",
         "invoke",
-        "(Landroidx/compose/ui/node/e0;Lr4/g;)V",
+        "(Landroidx/compose/ui/node/C;Lh2/g;)V",
         "<anonymous>"
     }
     k = 0x3
@@ -71,26 +71,26 @@
     .locals 0
 
     .line 1
-    check-cast p1, Landroidx/compose/ui/node/e0;
+    check-cast p1, Landroidx/compose/ui/node/C;
 
-    check-cast p2, Lr4/g;
+    check-cast p2, Lh2/g;
 
-    invoke-virtual {p0, p1, p2}, Landroidx/compose/ui/viewinterop/AndroidView_androidKt$updateViewHolderParams$4;->invoke(Landroidx/compose/ui/node/e0;Lr4/g;)V
+    invoke-virtual {p0, p1, p2}, Landroidx/compose/ui/viewinterop/AndroidView_androidKt$updateViewHolderParams$4;->invoke(Landroidx/compose/ui/node/C;Lh2/g;)V
 
-    sget-object p1, Lqh/r;->a:Lqh/r;
+    sget-object p1, LX9/j;->a:LX9/j;
 
     return-object p1
 .end method
 
-.method public final invoke(Landroidx/compose/ui/node/e0;Lr4/g;)V
+.method public final invoke(Landroidx/compose/ui/node/C;Lh2/g;)V
     .locals 0
 
     .line 2
-    invoke-static {p1}, Landroidx/compose/ui/viewinterop/f;->c(Landroidx/compose/ui/node/e0;)Landroidx/compose/ui/viewinterop/ViewFactoryHolder;
+    invoke-static {p1}, Landroidx/compose/ui/viewinterop/g;->c(Landroidx/compose/ui/node/C;)Landroidx/compose/ui/viewinterop/ViewFactoryHolder;
 
     move-result-object p1
 
-    invoke-virtual {p1, p2}, Landroidx/compose/ui/viewinterop/d;->setSavedStateRegistryOwner(Lr4/g;)V
+    invoke-virtual {p1, p2}, Landroidx/compose/ui/viewinterop/d;->setSavedStateRegistryOwner(Lh2/g;)V
 
     return-void
 .end method

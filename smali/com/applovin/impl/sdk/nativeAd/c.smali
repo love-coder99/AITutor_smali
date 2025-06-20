@@ -3,7 +3,7 @@
 .source "SourceFile"
 
 # interfaces
-.implements Ln/a;
+.implements Lq/a;
 
 
 # instance fields
@@ -17,61 +17,58 @@
     .locals 0
 
     .line 1
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
-
-    .line 2
-    .line 3
-    .line 4
     iput p2, p0, Lcom/applovin/impl/sdk/nativeAd/c;->a:I
 
-    .line 5
-    .line 6
     iput-object p1, p0, Lcom/applovin/impl/sdk/nativeAd/c;->b:Ljava/lang/Object;
 
-    .line 7
-    .line 8
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
     return-void
 .end method
 
 
 # virtual methods
 .method public final apply(Ljava/lang/Object;)Ljava/lang/Object;
-    .locals 2
+    .locals 1
 
     .line 1
     iget v0, p0, Lcom/applovin/impl/sdk/nativeAd/c;->a:I
 
-    iget-object v1, p0, Lcom/applovin/impl/sdk/nativeAd/c;->b:Ljava/lang/Object;
-
     packed-switch v0, :pswitch_data_0
 
-    check-cast v1, Ln/a;
+    iget-object v0, p0, Lcom/applovin/impl/sdk/nativeAd/c;->b:Ljava/lang/Object;
+
+    check-cast v0, Lcom/applovin/impl/sdk/nativeAd/c;
 
     check-cast p1, Lcom/applovin/impl/tl;
 
-    invoke-static {v1, p1}, Lcom/applovin/impl/sdk/nativeAd/AppLovinNativeAdImpl;->d(Ln/a;Lcom/applovin/impl/tl;)Ljava/util/List;
+    invoke-static {v0, p1}, Lcom/applovin/impl/sdk/nativeAd/AppLovinNativeAdImpl;->y(Lcom/applovin/impl/sdk/nativeAd/c;Lcom/applovin/impl/tl;)Ljava/util/List;
 
     move-result-object p1
 
     return-object p1
 
     :pswitch_0
-    check-cast v1, Lcom/applovin/impl/sdk/nativeAd/AppLovinNativeAdImpl;
+    iget-object v0, p0, Lcom/applovin/impl/sdk/nativeAd/c;->b:Ljava/lang/Object;
 
-    check-cast p1, Lcom/applovin/impl/tl;
+    check-cast v0, Lcom/applovin/impl/sdk/nativeAd/AppLovinNativeAdImpl;
 
-    invoke-static {v1, p1}, Lcom/applovin/impl/sdk/nativeAd/AppLovinNativeAdImpl;->c(Lcom/applovin/impl/sdk/nativeAd/AppLovinNativeAdImpl;Lcom/applovin/impl/tl;)Ljava/util/List;
+    check-cast p1, Lorg/json/JSONArray;
+
+    invoke-static {v0, p1}, Lcom/applovin/impl/sdk/nativeAd/AppLovinNativeAdImpl;->c(Lcom/applovin/impl/sdk/nativeAd/AppLovinNativeAdImpl;Lorg/json/JSONArray;)Ljava/util/List;
 
     move-result-object p1
 
     return-object p1
 
     :pswitch_1
-    check-cast v1, Lcom/applovin/impl/sdk/nativeAd/AppLovinNativeAdImpl;
+    iget-object v0, p0, Lcom/applovin/impl/sdk/nativeAd/c;->b:Ljava/lang/Object;
 
-    check-cast p1, Lorg/json/JSONArray;
+    check-cast v0, Lcom/applovin/impl/sdk/nativeAd/AppLovinNativeAdImpl;
 
-    invoke-static {v1, p1}, Lcom/applovin/impl/sdk/nativeAd/AppLovinNativeAdImpl;->a(Lcom/applovin/impl/sdk/nativeAd/AppLovinNativeAdImpl;Lorg/json/JSONArray;)Ljava/util/List;
+    check-cast p1, Lcom/applovin/impl/tl;
+
+    invoke-static {v0, p1}, Lcom/applovin/impl/sdk/nativeAd/AppLovinNativeAdImpl;->a(Lcom/applovin/impl/sdk/nativeAd/AppLovinNativeAdImpl;Lcom/applovin/impl/tl;)Ljava/util/List;
 
     move-result-object p1
 

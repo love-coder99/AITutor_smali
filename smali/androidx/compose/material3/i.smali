@@ -1,350 +1,245 @@
-.class public abstract Landroidx/compose/material3/i;
+.class public final Landroidx/compose/material3/I;
 .super Ljava/lang/Object;
 .source "SourceFile"
 
 
-# static fields
-.field public static final a:Landroidx/compose/foundation/layout/q0;
+# instance fields
+.field public final a:F
 
-.field public static final b:Landroidx/compose/foundation/layout/q0;
+.field public final b:F
 
-.field public static final c:F
+.field public final c:F
 
-.field public static final d:F
+.field public final d:F
 
 
 # direct methods
-.method static constructor <clinit>()V
-    .locals 4
+.method public constructor <init>(FFFF)V
+    .locals 0
 
     .line 1
-    const/16 v0, 0x18
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 2
     .line 3
-    int-to-float v0, v0
-
     .line 4
-    const/16 v1, 0x8
+    iput p1, p0, Landroidx/compose/material3/I;->a:F
 
     .line 5
     .line 6
-    int-to-float v1, v1
+    iput p2, p0, Landroidx/compose/material3/I;->b:F
 
     .line 7
-    new-instance v2, Landroidx/compose/foundation/layout/q0;
-
     .line 8
-    .line 9
-    invoke-direct {v2, v0, v1, v0, v1}, Landroidx/compose/foundation/layout/q0;-><init>(FFFF)V
+    iput p3, p0, Landroidx/compose/material3/I;->c:F
 
+    .line 9
     .line 10
+    iput p4, p0, Landroidx/compose/material3/I;->d:F
+
     .line 11
     .line 12
-    sput-object v2, Landroidx/compose/material3/i;->a:Landroidx/compose/foundation/layout/q0;
-
-    .line 13
-    .line 14
-    const/16 v2, 0x10
-
-    .line 15
-    .line 16
-    int-to-float v2, v2
-
-    .line 17
-    invoke-static {v2, v1, v0, v1}, Landroidx/compose/foundation/layout/a;->b(FFFF)Landroidx/compose/foundation/layout/q0;
-
-    .line 18
-    .line 19
-    .line 20
-    const/16 v0, 0xc
-
-    .line 21
-    .line 22
-    int-to-float v0, v0
-
-    .line 23
-    new-instance v3, Landroidx/compose/foundation/layout/q0;
-
-    .line 24
-    .line 25
-    invoke-direct {v3, v0, v1, v0, v1}, Landroidx/compose/foundation/layout/q0;-><init>(FFFF)V
-
-    .line 26
-    .line 27
-    .line 28
-    sput-object v3, Landroidx/compose/material3/i;->b:Landroidx/compose/foundation/layout/q0;
-
-    .line 29
-    .line 30
-    invoke-static {v0, v1, v2, v1}, Landroidx/compose/foundation/layout/a;->b(FFFF)Landroidx/compose/foundation/layout/q0;
-
-    .line 31
-    .line 32
-    .line 33
-    const/16 v0, 0x3a
-
-    .line 34
-    .line 35
-    int-to-float v0, v0
-
-    .line 36
-    sput v0, Landroidx/compose/material3/i;->c:F
-
-    .line 37
-    .line 38
-    const/16 v0, 0x28
-
-    .line 39
-    .line 40
-    int-to-float v0, v0
-
-    .line 41
-    sput v0, Landroidx/compose/material3/i;->d:F
-
-    .line 42
-    .line 43
-    sget-object v0, Lf1/k;->a:Landroidx/compose/material3/tokens/ColorSchemeKeyTokens;
-
-    .line 44
-    .line 45
     return-void
 .end method
 
-.method public static a(JLandroidx/compose/runtime/l;)Landroidx/compose/material3/h;
-    .locals 9
+
+# virtual methods
+.method public final equals(Ljava/lang/Object;)Z
+    .locals 3
 
     .line 1
-    sget-wide v7, Landroidx/compose/ui/graphics/w;->h:J
+    if-ne p0, p1, :cond_0
 
     .line 2
     .line 3
-    sget-object v0, Landroidx/compose/material3/p;->a:Landroidx/compose/runtime/e3;
+    const/4 p1, 0x1
 
     .line 4
+    return p1
+
     .line 5
-    check-cast p2, Landroidx/compose/runtime/p;
+    :cond_0
+    const/4 v0, 0x0
 
     .line 6
-    .line 7
-    invoke-virtual {p2, v0}, Landroidx/compose/runtime/p;->l(Landroidx/compose/runtime/u1;)Ljava/lang/Object;
+    if-eqz p1, :cond_5
 
+    .line 7
     .line 8
+    instance-of v1, p1, Landroidx/compose/material3/I;
+
     .line 9
     .line 10
-    move-result-object p2
+    if-nez v1, :cond_1
 
     .line 11
-    check-cast p2, Landroidx/compose/material3/n;
-
     .line 12
+    goto :goto_0
+
     .line 13
-    invoke-static {p2}, Landroidx/compose/material3/i;->b(Landroidx/compose/material3/n;)Landroidx/compose/material3/h;
+    :cond_1
+    check-cast p1, Landroidx/compose/material3/I;
 
     .line 14
     .line 15
-    .line 16
-    move-result-object v0
-
-    .line 17
-    move-wide v1, p0
-
-    .line 18
-    move-wide v3, v7
-
-    .line 19
-    move-wide v5, v7
-
-    .line 20
-    invoke-virtual/range {v0 .. v8}, Landroidx/compose/material3/h;->a(JJJJ)Landroidx/compose/material3/h;
-
-    .line 21
-    .line 22
-    .line 23
-    move-result-object p0
-
-    .line 24
-    return-object p0
-.end method
-
-.method public static b(Landroidx/compose/material3/n;)Landroidx/compose/material3/h;
-    .locals 10
-
-    .line 1
-    iget-object v0, p0, Landroidx/compose/material3/n;->K:Landroidx/compose/material3/h;
-
-    .line 2
-    .line 3
-    if-nez v0, :cond_0
-
-    .line 4
-    .line 5
-    new-instance v0, Landroidx/compose/material3/h;
-
-    .line 6
-    .line 7
-    sget-object v1, Lf1/k;->a:Landroidx/compose/material3/tokens/ColorSchemeKeyTokens;
-
-    .line 8
-    .line 9
-    invoke-static {p0, v1}, Landroidx/compose/material3/p;->d(Landroidx/compose/material3/n;Landroidx/compose/material3/tokens/ColorSchemeKeyTokens;)J
-
-    .line 10
-    .line 11
-    .line 12
-    move-result-wide v2
-
-    .line 13
-    sget-object v1, Lf1/k;->i:Landroidx/compose/material3/tokens/ColorSchemeKeyTokens;
-
-    .line 14
-    .line 15
-    invoke-static {p0, v1}, Landroidx/compose/material3/p;->d(Landroidx/compose/material3/n;Landroidx/compose/material3/tokens/ColorSchemeKeyTokens;)J
+    iget v1, p1, Landroidx/compose/material3/I;->a:F
 
     .line 16
     .line 17
-    .line 18
-    move-result-wide v4
+    iget v2, p0, Landroidx/compose/material3/I;->a:F
 
+    .line 18
     .line 19
-    sget-object v1, Lf1/k;->d:Landroidx/compose/material3/tokens/ColorSchemeKeyTokens;
+    invoke-static {v2, v1}, LM0/e;->a(FF)Z
 
     .line 20
     .line 21
-    invoke-static {p0, v1}, Landroidx/compose/material3/p;->d(Landroidx/compose/material3/n;Landroidx/compose/material3/tokens/ColorSchemeKeyTokens;)J
-
     .line 22
-    .line 23
-    .line 24
-    move-result-wide v6
+    move-result v1
 
+    .line 23
+    if-nez v1, :cond_2
+
+    .line 24
     .line 25
-    const v1, 0x3df5c28f    # 0.12f
+    return v0
 
     .line 26
+    :cond_2
+    iget v1, p0, Landroidx/compose/material3/I;->b:F
+
     .line 27
     .line 28
-    invoke-static {v6, v7, v1}, Landroidx/compose/ui/graphics/w;->b(JF)J
+    iget v2, p1, Landroidx/compose/material3/I;->b:F
 
     .line 29
     .line 30
+    invoke-static {v1, v2}, LM0/e;->a(FF)Z
+
     .line 31
-    move-result-wide v6
-
     .line 32
-    sget-object v1, Lf1/k;->f:Landroidx/compose/material3/tokens/ColorSchemeKeyTokens;
-
     .line 33
+    move-result v1
+
     .line 34
-    invoke-static {p0, v1}, Landroidx/compose/material3/p;->d(Landroidx/compose/material3/n;Landroidx/compose/material3/tokens/ColorSchemeKeyTokens;)J
+    if-nez v1, :cond_3
 
     .line 35
     .line 36
+    return v0
+
     .line 37
-    move-result-wide v8
+    :cond_3
+    iget v1, p0, Landroidx/compose/material3/I;->c:F
 
     .line 38
-    const v1, 0x3ec28f5c    # 0.38f
-
     .line 39
+    iget v2, p1, Landroidx/compose/material3/I;->c:F
+
     .line 40
     .line 41
-    invoke-static {v8, v9, v1}, Landroidx/compose/ui/graphics/w;->b(JF)J
+    invoke-static {v1, v2}, LM0/e;->a(FF)Z
 
     .line 42
     .line 43
     .line 44
-    move-result-wide v8
+    move-result v1
 
     .line 45
-    move-object v1, v0
+    if-nez v1, :cond_4
 
     .line 46
-    invoke-direct/range {v1 .. v9}, Landroidx/compose/material3/h;-><init>(JJJJ)V
-
     .line 47
-    .line 48
-    .line 49
-    iput-object v0, p0, Landroidx/compose/material3/n;->K:Landroidx/compose/material3/h;
+    return v0
 
+    .line 48
+    :cond_4
+    iget v0, p0, Landroidx/compose/material3/I;->d:F
+
+    .line 49
     .line 50
+    iget p1, p1, Landroidx/compose/material3/I;->d:F
+
     .line 51
-    :cond_0
-    return-object v0
+    .line 52
+    invoke-static {v0, p1}, LM0/e;->a(FF)Z
+
+    .line 53
+    .line 54
+    .line 55
+    move-result p1
+
+    .line 56
+    return p1
+
+    .line 57
+    :cond_5
+    :goto_0
+    return v0
 .end method
 
-.method public static c(Landroidx/compose/material3/n;)Landroidx/compose/material3/h;
-    .locals 10
+.method public final hashCode()I
+    .locals 3
 
     .line 1
-    iget-object v0, p0, Landroidx/compose/material3/n;->M:Landroidx/compose/material3/h;
+    iget v0, p0, Landroidx/compose/material3/I;->a:F
 
     .line 2
     .line 3
-    if-nez v0, :cond_0
+    invoke-static {v0}, Ljava/lang/Float;->floatToIntBits(F)I
 
     .line 4
     .line 5
-    new-instance v0, Landroidx/compose/material3/h;
-
     .line 6
+    move-result v0
+
     .line 7
-    sget-wide v6, Landroidx/compose/ui/graphics/w;->g:J
+    const/16 v1, 0x1f
 
     .line 8
     .line 9
-    sget-object v1, Lf1/w;->c:Landroidx/compose/material3/tokens/ColorSchemeKeyTokens;
+    mul-int/lit8 v0, v0, 0x1f
 
     .line 10
     .line 11
-    invoke-static {p0, v1}, Landroidx/compose/material3/p;->d(Landroidx/compose/material3/n;Landroidx/compose/material3/tokens/ColorSchemeKeyTokens;)J
+    iget v2, p0, Landroidx/compose/material3/I;->b:F
 
     .line 12
     .line 13
+    invoke-static {v2, v0, v1}, Landroidx/appcompat/view/menu/F;->v(FII)I
+
     .line 14
-    move-result-wide v4
-
     .line 15
-    sget-object v1, Lf1/w;->b:Landroidx/compose/material3/tokens/ColorSchemeKeyTokens;
-
     .line 16
+    move-result v0
+
     .line 17
-    invoke-static {p0, v1}, Landroidx/compose/material3/p;->d(Landroidx/compose/material3/n;Landroidx/compose/material3/tokens/ColorSchemeKeyTokens;)J
+    iget v2, p0, Landroidx/compose/material3/I;->c:F
 
     .line 18
     .line 19
+    invoke-static {v2, v0, v1}, Landroidx/appcompat/view/menu/F;->v(FII)I
+
     .line 20
-    move-result-wide v1
-
     .line 21
-    const v3, 0x3ec28f5c    # 0.38f
-
     .line 22
-    .line 23
-    .line 24
-    invoke-static {v1, v2, v3}, Landroidx/compose/ui/graphics/w;->b(JF)J
+    move-result v0
 
+    .line 23
+    iget v1, p0, Landroidx/compose/material3/I;->d:F
+
+    .line 24
     .line 25
+    invoke-static {v1}, Ljava/lang/Float;->floatToIntBits(F)I
+
     .line 26
     .line 27
-    move-result-wide v8
-
     .line 28
-    move-object v1, v0
+    move-result v1
 
     .line 29
-    move-wide v2, v6
+    add-int/2addr v1, v0
 
     .line 30
-    invoke-direct/range {v1 .. v9}, Landroidx/compose/material3/h;-><init>(JJJJ)V
-
-    .line 31
-    .line 32
-    .line 33
-    iput-object v0, p0, Landroidx/compose/material3/n;->M:Landroidx/compose/material3/h;
-
-    .line 34
-    .line 35
-    :cond_0
-    return-object v0
+    return v1
 .end method

@@ -53,6 +53,10 @@
 # direct methods
 .method public constructor <init>(Lcom/android/billingclient/api/BillingResult;Ljava/util/List;)V
     .locals 0
+    .param p1    # Lcom/android/billingclient/api/BillingResult;
+        .annotation build Landroidx/annotation/RecentlyNonNull;
+        .end annotation
+    .end param
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -75,6 +79,24 @@
 
 .method public static synthetic copy$default(Lcom/android/billingclient/api/SkuDetailsResult;Lcom/android/billingclient/api/BillingResult;Ljava/util/List;ILjava/lang/Object;)Lcom/android/billingclient/api/SkuDetailsResult;
     .locals 0
+    .param p0    # Lcom/android/billingclient/api/SkuDetailsResult;
+        .annotation build Landroidx/annotation/RecentlyNonNull;
+        .end annotation
+    .end param
+    .param p1    # Lcom/android/billingclient/api/BillingResult;
+        .annotation build Landroidx/annotation/RecentlyNonNull;
+        .end annotation
+    .end param
+    .param p2    # Ljava/util/List;
+        .annotation build Landroidx/annotation/RecentlyNonNull;
+        .end annotation
+    .end param
+    .param p4    # Ljava/lang/Object;
+        .annotation build Landroidx/annotation/RecentlyNonNull;
+        .end annotation
+    .end param
+    .annotation build Landroidx/annotation/RecentlyNonNull;
+    .end annotation
 
     and-int/lit8 p4, p3, 0x1
 
@@ -109,6 +131,9 @@
 
 .method public final component2()Ljava/util/List;
     .locals 1
+    .annotation build Landroidx/annotation/RecentlyNullable;
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "()",
@@ -125,6 +150,10 @@
 
 .method public final copy(Lcom/android/billingclient/api/BillingResult;Ljava/util/List;)Lcom/android/billingclient/api/SkuDetailsResult;
     .locals 1
+    .param p1    # Lcom/android/billingclient/api/BillingResult;
+        .annotation build Landroidx/annotation/RecentlyNonNull;
+        .end annotation
+    .end param
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -169,7 +198,7 @@
 
     iget-object v3, p1, Lcom/android/billingclient/api/SkuDetailsResult;->zza:Lcom/android/billingclient/api/BillingResult;
 
-    invoke-static {v1, v3}, Lrb/h;->d(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v1, v3}, Lkotlin/jvm/internal/h;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result v1
 
@@ -182,7 +211,7 @@
 
     iget-object p1, p1, Lcom/android/billingclient/api/SkuDetailsResult;->zzb:Ljava/util/List;
 
-    invoke-static {v1, p1}, Lrb/h;->d(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v1, p1}, Lkotlin/jvm/internal/h;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result p1
 
@@ -204,6 +233,9 @@
 
 .method public final getSkuDetailsList()Ljava/util/List;
     .locals 1
+    .annotation build Landroidx/annotation/RecentlyNullable;
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "()",
@@ -249,55 +281,33 @@
 .end method
 
 .method public toString()Ljava/lang/String;
-    .locals 3
+    .locals 2
 
-    .line 1
     new-instance v0, Ljava/lang/StringBuilder;
 
-    .line 2
-    .line 3
     const-string v1, "SkuDetailsResult(billingResult="
 
-    .line 4
-    .line 5
     invoke-direct {v0, v1}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
 
-    .line 6
-    .line 7
-    .line 8
     iget-object v1, p0, Lcom/android/billingclient/api/SkuDetailsResult;->zza:Lcom/android/billingclient/api/BillingResult;
 
-    .line 9
-    .line 10
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 
-    .line 11
-    .line 12
-    .line 13
     const-string v1, ", skuDetailsList="
 
-    .line 14
-    .line 15
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    .line 16
-    .line 17
-    .line 18
     iget-object v1, p0, Lcom/android/billingclient/api/SkuDetailsResult;->zzb:Ljava/util/List;
 
-    .line 19
-    .line 20
-    const-string v2, ")"
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 
-    .line 21
-    .line 22
-    invoke-static {v0, v1, v2}, Lj0/d;->o(Ljava/lang/StringBuilder;Ljava/util/List;Ljava/lang/String;)Ljava/lang/String;
+    const-string v1, ")"
 
-    .line 23
-    .line 24
-    .line 25
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
     move-result-object v0
 
-    .line 26
     return-object v0
 .end method

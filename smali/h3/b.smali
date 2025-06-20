@@ -1,53 +1,37 @@
-.class public interface abstract Lh3/b;
+.class public final Lh3/b;
 .super Ljava/lang/Object;
 .source "SourceFile"
 
-# interfaces
-.implements Landroid/view/MenuItem;
+
+# instance fields
+.field public final a:Ljava/lang/Class;
+
+.field public final b:Ljava/lang/Class;
+
+.field public final c:Lh3/a;
 
 
-# virtual methods
-.method public abstract a(Landroidx/core/view/e;)Lh3/b;
-.end method
+# direct methods
+.method public constructor <init>(Ljava/lang/Class;Ljava/lang/Class;Lh3/a;)V
+    .locals 0
 
-.method public abstract b()Landroidx/core/view/e;
-.end method
+    .line 1
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-.method public abstract getAlphabeticModifiers()I
-.end method
+    .line 2
+    .line 3
+    .line 4
+    iput-object p1, p0, Lh3/b;->a:Ljava/lang/Class;
 
-.method public abstract getContentDescription()Ljava/lang/CharSequence;
-.end method
+    .line 5
+    .line 6
+    iput-object p2, p0, Lh3/b;->b:Ljava/lang/Class;
 
-.method public abstract getIconTintList()Landroid/content/res/ColorStateList;
-.end method
+    .line 7
+    .line 8
+    iput-object p3, p0, Lh3/b;->c:Lh3/a;
 
-.method public abstract getIconTintMode()Landroid/graphics/PorterDuff$Mode;
-.end method
-
-.method public abstract getNumericModifiers()I
-.end method
-
-.method public abstract getTooltipText()Ljava/lang/CharSequence;
-.end method
-
-.method public abstract setAlphabeticShortcut(CI)Landroid/view/MenuItem;
-.end method
-
-.method public abstract setContentDescription(Ljava/lang/CharSequence;)Lh3/b;
-.end method
-
-.method public abstract setIconTintList(Landroid/content/res/ColorStateList;)Landroid/view/MenuItem;
-.end method
-
-.method public abstract setIconTintMode(Landroid/graphics/PorterDuff$Mode;)Landroid/view/MenuItem;
-.end method
-
-.method public abstract setNumericShortcut(CI)Landroid/view/MenuItem;
-.end method
-
-.method public abstract setShortcut(CCII)Landroid/view/MenuItem;
-.end method
-
-.method public abstract setTooltipText(Ljava/lang/CharSequence;)Lh3/b;
+    .line 9
+    .line 10
+    return-void
 .end method

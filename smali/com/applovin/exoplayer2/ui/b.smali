@@ -297,10 +297,10 @@
 
     move-result-object v5
 
+    .line 28
     :try_start_0
     sget v0, Lcom/applovin/sdk/R$styleable;->AppLovinDefaultTimeBar_al_scrubber_drawable:I
 
-    .line 28
     invoke-virtual {v5, v0}, Landroid/content/res/TypedArray;->getDrawable(I)Landroid/graphics/drawable/Drawable;
 
     move-result-object v0
@@ -328,213 +328,232 @@
 
     goto/16 :goto_1
 
+    .line 31
     :cond_0
     :goto_0
     sget v0, Lcom/applovin/sdk/R$styleable;->AppLovinDefaultTimeBar_al_bar_height:I
 
-    .line 31
+    .line 32
     invoke-virtual {v5, v0, v11}, Landroid/content/res/TypedArray;->getDimensionPixelSize(II)I
 
     move-result v0
 
     iput v0, v1, Lcom/applovin/exoplayer2/ui/b;->m:I
 
+    .line 33
     sget v0, Lcom/applovin/sdk/R$styleable;->AppLovinDefaultTimeBar_al_touch_target_height:I
 
-    .line 32
+    .line 34
     invoke-virtual {v5, v0, v12}, Landroid/content/res/TypedArray;->getDimensionPixelSize(II)I
 
     move-result v0
 
     iput v0, v1, Lcom/applovin/exoplayer2/ui/b;->n:I
 
+    .line 35
     sget v0, Lcom/applovin/sdk/R$styleable;->AppLovinDefaultTimeBar_al_bar_gravity:I
 
     const/4 v6, 0x0
 
-    .line 33
     invoke-virtual {v5, v0, v6}, Landroid/content/res/TypedArray;->getInt(II)I
 
     move-result v0
 
     iput v0, v1, Lcom/applovin/exoplayer2/ui/b;->o:I
 
+    .line 36
     sget v0, Lcom/applovin/sdk/R$styleable;->AppLovinDefaultTimeBar_al_ad_marker_width:I
 
-    .line 34
+    .line 37
     invoke-virtual {v5, v0, v10}, Landroid/content/res/TypedArray;->getDimensionPixelSize(II)I
 
     move-result v0
 
     iput v0, v1, Lcom/applovin/exoplayer2/ui/b;->p:I
 
+    .line 38
     sget v0, Lcom/applovin/sdk/R$styleable;->AppLovinDefaultTimeBar_al_scrubber_enabled_size:I
 
-    .line 35
+    .line 39
     invoke-virtual {v5, v0, v13}, Landroid/content/res/TypedArray;->getDimensionPixelSize(II)I
 
     move-result v0
 
     iput v0, v1, Lcom/applovin/exoplayer2/ui/b;->q:I
 
+    .line 40
     sget v0, Lcom/applovin/sdk/R$styleable;->AppLovinDefaultTimeBar_al_scrubber_disabled_size:I
 
-    .line 36
+    .line 41
     invoke-virtual {v5, v0, v15}, Landroid/content/res/TypedArray;->getDimensionPixelSize(II)I
 
     move-result v0
 
     iput v0, v1, Lcom/applovin/exoplayer2/ui/b;->r:I
 
+    .line 42
     sget v0, Lcom/applovin/sdk/R$styleable;->AppLovinDefaultTimeBar_al_scrubber_dragged_size:I
 
-    .line 37
+    .line 43
     invoke-virtual {v5, v0, v8}, Landroid/content/res/TypedArray;->getDimensionPixelSize(II)I
 
     move-result v0
 
     iput v0, v1, Lcom/applovin/exoplayer2/ui/b;->s:I
 
+    .line 44
     sget v0, Lcom/applovin/sdk/R$styleable;->AppLovinDefaultTimeBar_al_played_color:I
 
     const/4 v6, -0x1
 
-    .line 38
     invoke-virtual {v5, v0, v6}, Landroid/content/res/TypedArray;->getInt(II)I
 
     move-result v0
 
+    .line 45
     sget v8, Lcom/applovin/sdk/R$styleable;->AppLovinDefaultTimeBar_al_scrubber_color:I
 
-    .line 39
+    .line 46
     invoke-virtual {v5, v8, v6}, Landroid/content/res/TypedArray;->getInt(II)I
 
     move-result v6
 
+    .line 47
     sget v8, Lcom/applovin/sdk/R$styleable;->AppLovinDefaultTimeBar_al_buffered_color:I
 
     const v9, -0x33000001    # -1.3421772E8f
 
-    .line 40
+    .line 48
     invoke-virtual {v5, v8, v9}, Landroid/content/res/TypedArray;->getInt(II)I
 
     move-result v8
 
+    .line 49
     sget v9, Lcom/applovin/sdk/R$styleable;->AppLovinDefaultTimeBar_al_unplayed_color:I
 
     const v10, 0x33ffffff
 
-    .line 41
+    .line 50
     invoke-virtual {v5, v9, v10}, Landroid/content/res/TypedArray;->getInt(II)I
 
     move-result v9
 
+    .line 51
     sget v10, Lcom/applovin/sdk/R$styleable;->AppLovinDefaultTimeBar_al_ad_marker_color:I
 
     const v11, -0x4d000100
 
-    .line 42
+    .line 52
     invoke-virtual {v5, v10, v11}, Landroid/content/res/TypedArray;->getInt(II)I
 
     move-result v10
 
+    .line 53
     sget v11, Lcom/applovin/sdk/R$styleable;->AppLovinDefaultTimeBar_al_played_ad_marker_color:I
 
     const v12, 0x33ffff00
 
-    .line 43
+    .line 54
     invoke-virtual {v5, v11, v12}, Landroid/content/res/TypedArray;->getInt(II)I
 
     move-result v11
 
-    .line 44
+    .line 55
     invoke-virtual {v2, v0}, Landroid/graphics/Paint;->setColor(I)V
 
-    .line 45
+    .line 56
     invoke-virtual {v7, v6}, Landroid/graphics/Paint;->setColor(I)V
 
-    .line 46
+    .line 57
     invoke-virtual {v3, v8}, Landroid/graphics/Paint;->setColor(I)V
 
-    .line 47
+    .line 58
     invoke-virtual {v4, v9}, Landroid/graphics/Paint;->setColor(I)V
 
     move-object/from16 v0, v17
 
-    .line 48
+    .line 59
     invoke-virtual {v0, v10}, Landroid/graphics/Paint;->setColor(I)V
 
     move-object/from16 v6, v16
 
-    .line 49
+    .line 60
     invoke-virtual {v6, v11}, Landroid/graphics/Paint;->setColor(I)V
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    .line 50
+    .line 61
     invoke-virtual {v5}, Landroid/content/res/TypedArray;->recycle()V
 
     goto :goto_2
 
-    .line 51
+    .line 62
     :goto_1
     invoke-virtual {v5}, Landroid/content/res/TypedArray;->recycle()V
 
-    .line 52
+    .line 63
     throw v0
 
     :cond_1
     move-object v0, v5
 
+    .line 64
     iput v11, v1, Lcom/applovin/exoplayer2/ui/b;->m:I
 
+    .line 65
     iput v12, v1, Lcom/applovin/exoplayer2/ui/b;->n:I
 
     const/4 v5, 0x0
 
+    .line 66
     iput v5, v1, Lcom/applovin/exoplayer2/ui/b;->o:I
 
+    .line 67
     iput v10, v1, Lcom/applovin/exoplayer2/ui/b;->p:I
 
+    .line 68
     iput v13, v1, Lcom/applovin/exoplayer2/ui/b;->q:I
 
+    .line 69
     iput v15, v1, Lcom/applovin/exoplayer2/ui/b;->r:I
 
+    .line 70
     iput v8, v1, Lcom/applovin/exoplayer2/ui/b;->s:I
 
     const/4 v5, -0x1
 
-    .line 53
+    .line 71
     invoke-virtual {v2, v5}, Landroid/graphics/Paint;->setColor(I)V
 
-    .line 54
+    .line 72
     invoke-virtual {v7, v5}, Landroid/graphics/Paint;->setColor(I)V
 
     const v2, -0x33000001    # -1.3421772E8f
 
-    .line 55
+    .line 73
     invoke-virtual {v3, v2}, Landroid/graphics/Paint;->setColor(I)V
 
     const v2, 0x33ffffff
 
-    .line 56
+    .line 74
     invoke-virtual {v4, v2}, Landroid/graphics/Paint;->setColor(I)V
 
     const v2, -0x4d000100
 
-    .line 57
+    .line 75
     invoke-virtual {v0, v2}, Landroid/graphics/Paint;->setColor(I)V
 
     const v0, 0x33ffff00
 
-    .line 58
+    .line 76
     invoke-virtual {v6, v0}, Landroid/graphics/Paint;->setColor(I)V
 
     const/4 v0, 0x0
 
+    .line 77
     iput-object v0, v1, Lcom/applovin/exoplayer2/ui/b;->l:Landroid/graphics/drawable/Drawable;
 
-    .line 59
+    .line 78
     :goto_2
     new-instance v0, Ljava/lang/StringBuilder;
 
@@ -542,7 +561,7 @@
 
     iput-object v0, v1, Lcom/applovin/exoplayer2/ui/b;->v:Ljava/lang/StringBuilder;
 
-    .line 60
+    .line 79
     new-instance v2, Ljava/util/Formatter;
 
     invoke-static {}, Ljava/util/Locale;->getDefault()Ljava/util/Locale;
@@ -553,20 +572,21 @@
 
     iput-object v2, v1, Lcom/applovin/exoplayer2/ui/b;->w:Ljava/util/Formatter;
 
-    .line 61
-    new-instance v0, Lc3/a;
+    .line 80
+    new-instance v0, Landroidx/activity/l;
 
-    const/4 v2, 0x7
+    const/16 v2, 0xe
 
-    invoke-direct {v0, v1, v2}, Lc3/a;-><init>(Ljava/lang/Object;I)V
+    invoke-direct {v0, v1, v2}, Landroidx/activity/l;-><init>(Ljava/lang/Object;I)V
 
     iput-object v0, v1, Lcom/applovin/exoplayer2/ui/b;->x:Ljava/lang/Runnable;
 
+    .line 81
     iget-object v0, v1, Lcom/applovin/exoplayer2/ui/b;->l:Landroid/graphics/drawable/Drawable;
 
     if-eqz v0, :cond_2
 
-    .line 62
+    .line 82
     invoke-virtual {v0}, Landroid/graphics/drawable/Drawable;->getMinimumWidth()I
 
     move-result v0
@@ -584,13 +604,14 @@
     :cond_2
     const/4 v2, 0x1
 
+    .line 83
     iget v0, v1, Lcom/applovin/exoplayer2/ui/b;->r:I
 
     iget v3, v1, Lcom/applovin/exoplayer2/ui/b;->q:I
 
     iget v4, v1, Lcom/applovin/exoplayer2/ui/b;->s:I
 
-    .line 63
+    .line 84
     invoke-static {v3, v4}, Ljava/lang/Math;->max(II)I
 
     move-result v3
@@ -608,47 +629,51 @@
     :goto_3
     const/high16 v0, 0x3f800000    # 1.0f
 
+    .line 85
     iput v0, v1, Lcom/applovin/exoplayer2/ui/b;->G:F
 
-    .line 64
+    .line 86
     new-instance v0, Landroid/animation/ValueAnimator;
 
     invoke-direct {v0}, Landroid/animation/ValueAnimator;-><init>()V
 
     iput-object v0, v1, Lcom/applovin/exoplayer2/ui/b;->F:Landroid/animation/ValueAnimator;
 
-    .line 65
-    new-instance v2, Lcom/applovin/exoplayer2/ui/k;
+    .line 87
+    new-instance v2, LZ/q;
 
-    const/4 v3, 0x0
+    const/4 v3, 0x1
 
-    invoke-direct {v2, v1, v3}, Lcom/applovin/exoplayer2/ui/k;-><init>(Ljava/lang/Object;I)V
+    invoke-direct {v2, v1, v3}, LZ/q;-><init>(Ljava/lang/Object;I)V
 
     invoke-virtual {v0, v2}, Landroid/animation/ValueAnimator;->addUpdateListener(Landroid/animation/ValueAnimator$AnimatorUpdateListener;)V
 
     const-wide v2, -0x7fffffffffffffffL    # -4.9E-324
 
+    .line 88
     iput-wide v2, v1, Lcom/applovin/exoplayer2/ui/b;->K:J
 
+    .line 89
     iput-wide v2, v1, Lcom/applovin/exoplayer2/ui/b;->C:J
 
     const/16 v0, 0x14
 
+    .line 90
     iput v0, v1, Lcom/applovin/exoplayer2/ui/b;->B:I
 
     const/4 v0, 0x1
 
-    .line 66
+    .line 91
     invoke-virtual {v1, v0}, Landroid/view/View;->setFocusable(Z)V
 
-    .line 67
+    .line 92
     invoke-virtual/range {p0 .. p0}, Landroid/view/View;->getImportantForAccessibility()I
 
     move-result v2
 
     if-nez v2, :cond_3
 
-    .line 68
+    .line 93
     invoke-virtual {v1, v0}, Landroid/view/View;->setImportantForAccessibility(I)V
 
     :cond_3
@@ -675,9 +700,9 @@
 .method private a(Landroid/view/MotionEvent;)Landroid/graphics/Point;
     .locals 2
 
+    .line 29
     iget-object v0, p0, Lcom/applovin/exoplayer2/ui/b;->z:Landroid/graphics/Point;
 
-    .line 22
     invoke-virtual {p1}, Landroid/view/MotionEvent;->getX()F
 
     move-result v1
@@ -692,6 +717,7 @@
 
     invoke-virtual {v0, v1, p1}, Landroid/graphics/Point;->set(II)V
 
+    .line 30
     iget-object p1, p0, Lcom/applovin/exoplayer2/ui/b;->z:Landroid/graphics/Point;
 
     return-object p1
@@ -711,13 +737,13 @@
 .method private a(F)V
     .locals 3
 
+    .line 28
     iget-object v0, p0, Lcom/applovin/exoplayer2/ui/b;->d:Landroid/graphics/Rect;
 
     float-to-int p1, p1
 
     iget-object v1, p0, Lcom/applovin/exoplayer2/ui/b;->b:Landroid/graphics/Rect;
 
-    .line 21
     iget v2, v1, Landroid/graphics/Rect;->left:I
 
     iget v1, v1, Landroid/graphics/Rect;->right:I
@@ -734,11 +760,12 @@
 .method private a(II)V
     .locals 2
 
+    .line 45
     iget-object v0, p0, Lcom/applovin/exoplayer2/ui/b;->E:Landroid/graphics/Rect;
 
     if-eqz v0, :cond_0
 
-    .line 33
+    .line 46
     invoke-virtual {v0}, Landroid/graphics/Rect;->width()I
 
     move-result v0
@@ -747,7 +774,7 @@
 
     iget-object v0, p0, Lcom/applovin/exoplayer2/ui/b;->E:Landroid/graphics/Rect;
 
-    .line 34
+    .line 47
     invoke-virtual {v0}, Landroid/graphics/Rect;->height()I
 
     move-result v0
@@ -756,7 +783,7 @@
 
     return-void
 
-    .line 35
+    .line 48
     :cond_0
     new-instance v0, Landroid/graphics/Rect;
 
@@ -766,12 +793,12 @@
 
     iput-object v0, p0, Lcom/applovin/exoplayer2/ui/b;->E:Landroid/graphics/Rect;
 
-    .line 36
+    .line 49
     invoke-static {v0}, Ljava/util/Collections;->singletonList(Ljava/lang/Object;)Ljava/util/List;
 
     move-result-object p1
 
-    invoke-static {p0, p1}, Landroidx/core/view/r1;->o(Landroid/view/View;Ljava/util/List;)V
+    invoke-static {p0, p1}, Lcom/applovin/exoplayer2/ui/k;->t(Lcom/applovin/exoplayer2/ui/b;Ljava/util/List;)V
 
     return-void
 .end method
@@ -792,9 +819,9 @@
 
     iput p1, p0, Lcom/applovin/exoplayer2/ui/b;->G:F
 
+    .line 5
     iget-object p1, p0, Lcom/applovin/exoplayer2/ui/b;->a:Landroid/graphics/Rect;
 
-    .line 5
     invoke-virtual {p0, p1}, Landroid/view/View;->invalidate(Landroid/graphics/Rect;)V
 
     return-void
@@ -803,6 +830,7 @@
 .method private a(Landroid/graphics/Canvas;)V
     .locals 7
 
+    .line 32
     iget-wide v0, p0, Lcom/applovin/exoplayer2/ui/b;->K:J
 
     const-wide/16 v2, 0x0
@@ -813,10 +841,10 @@
 
     return-void
 
+    .line 33
     :cond_0
     iget-object v0, p0, Lcom/applovin/exoplayer2/ui/b;->d:Landroid/graphics/Rect;
 
-    .line 24
     iget v1, v0, Landroid/graphics/Rect;->right:I
 
     iget v0, v0, Landroid/graphics/Rect;->left:I
@@ -829,22 +857,23 @@
 
     move-result v0
 
+    .line 34
     iget-object v1, p0, Lcom/applovin/exoplayer2/ui/b;->d:Landroid/graphics/Rect;
 
-    .line 25
     invoke-virtual {v1}, Landroid/graphics/Rect;->centerY()I
 
     move-result v1
 
+    .line 35
     iget-object v2, p0, Lcom/applovin/exoplayer2/ui/b;->l:Landroid/graphics/drawable/Drawable;
 
     if-nez v2, :cond_4
 
+    .line 36
     iget-boolean v2, p0, Lcom/applovin/exoplayer2/ui/b;->I:Z
 
     if-nez v2, :cond_3
 
-    .line 26
     invoke-virtual {p0}, Landroid/view/View;->isFocused()Z
 
     move-result v2
@@ -853,7 +882,7 @@
 
     goto :goto_0
 
-    .line 27
+    .line 37
     :cond_1
     invoke-virtual {p0}, Landroid/view/View;->isEnabled()Z
 
@@ -870,6 +899,7 @@
 
     goto :goto_1
 
+    .line 38
     :cond_3
     :goto_0
     iget v2, p0, Lcom/applovin/exoplayer2/ui/b;->s:I
@@ -877,6 +907,7 @@
     :goto_1
     int-to-float v2, v2
 
+    .line 39
     iget v3, p0, Lcom/applovin/exoplayer2/ui/b;->G:F
 
     mul-float v2, v2, v3
@@ -893,14 +924,14 @@
 
     int-to-float v2, v2
 
+    .line 40
     iget-object v3, p0, Lcom/applovin/exoplayer2/ui/b;->k:Landroid/graphics/Paint;
 
-    .line 28
     invoke-virtual {p1, v0, v1, v2, v3}, Landroid/graphics/Canvas;->drawCircle(FFFLandroid/graphics/Paint;)V
 
     goto :goto_2
 
-    .line 29
+    .line 41
     :cond_4
     invoke-virtual {v2}, Landroid/graphics/drawable/Drawable;->getIntrinsicWidth()I
 
@@ -914,9 +945,9 @@
 
     float-to-int v2, v2
 
+    .line 42
     iget-object v3, p0, Lcom/applovin/exoplayer2/ui/b;->l:Landroid/graphics/drawable/Drawable;
 
-    .line 30
     invoke-virtual {v3}, Landroid/graphics/drawable/Drawable;->getIntrinsicHeight()I
 
     move-result v3
@@ -929,9 +960,9 @@
 
     float-to-int v3, v3
 
+    .line 43
     iget-object v4, p0, Lcom/applovin/exoplayer2/ui/b;->l:Landroid/graphics/drawable/Drawable;
 
-    .line 31
     div-int/lit8 v2, v2, 0x2
 
     sub-int v5, v0, v2
@@ -946,9 +977,9 @@
 
     invoke-virtual {v4, v5, v6, v0, v1}, Landroid/graphics/drawable/Drawable;->setBounds(IIII)V
 
+    .line 44
     iget-object v0, p0, Lcom/applovin/exoplayer2/ui/b;->l:Landroid/graphics/drawable/Drawable;
 
-    .line 32
     invoke-virtual {v0, p1}, Landroid/graphics/drawable/Drawable;->draw(Landroid/graphics/Canvas;)V
 
     :goto_2
@@ -967,35 +998,36 @@
 .method private a(Z)V
     .locals 4
 
+    .line 13
     iget-object v0, p0, Lcom/applovin/exoplayer2/ui/b;->x:Ljava/lang/Runnable;
 
-    .line 10
     invoke-virtual {p0, v0}, Landroid/view/View;->removeCallbacks(Ljava/lang/Runnable;)Z
 
     const/4 v0, 0x0
 
+    .line 14
     iput-boolean v0, p0, Lcom/applovin/exoplayer2/ui/b;->I:Z
 
-    .line 11
+    .line 15
     invoke-virtual {p0, v0}, Landroid/view/View;->setPressed(Z)V
 
-    .line 12
+    .line 16
     invoke-virtual {p0}, Landroid/view/View;->getParent()Landroid/view/ViewParent;
 
     move-result-object v1
 
     if-eqz v1, :cond_0
 
-    .line 13
+    .line 17
     invoke-interface {v1, v0}, Landroid/view/ViewParent;->requestDisallowInterceptTouchEvent(Z)V
 
-    .line 14
+    .line 18
     :cond_0
     invoke-virtual {p0}, Landroid/view/View;->invalidate()V
 
+    .line 19
     iget-object v0, p0, Lcom/applovin/exoplayer2/ui/b;->y:Ljava/util/concurrent/CopyOnWriteArraySet;
 
-    .line 15
     invoke-virtual {v0}, Ljava/util/concurrent/CopyOnWriteArraySet;->iterator()Ljava/util/Iterator;
 
     move-result-object v0
@@ -1013,9 +1045,9 @@
 
     check-cast v1, Lcom/applovin/exoplayer2/ui/i$a;
 
+    .line 20
     iget-wide v2, p0, Lcom/applovin/exoplayer2/ui/b;->J:J
 
-    .line 16
     invoke-interface {v1, p0, v2, v3, p1}, Lcom/applovin/exoplayer2/ui/i$a;->a(Lcom/applovin/exoplayer2/ui/i;JZ)V
 
     goto :goto_0
@@ -1027,13 +1059,13 @@
 .method private a(FF)Z
     .locals 1
 
+    .line 31
     iget-object v0, p0, Lcom/applovin/exoplayer2/ui/b;->a:Landroid/graphics/Rect;
 
     float-to-int p1, p1
 
     float-to-int p2, p2
 
-    .line 23
     invoke-virtual {v0, p1, p2}, Landroid/graphics/Rect;->contains(II)Z
 
     move-result p1
@@ -1044,6 +1076,7 @@
 .method private a(J)Z
     .locals 9
 
+    .line 21
     iget-wide v4, p0, Lcom/applovin/exoplayer2/ui/b;->K:J
 
     const-wide/16 v0, 0x0
@@ -1056,6 +1089,7 @@
 
     return v6
 
+    .line 22
     :cond_0
     iget-boolean v0, p0, Lcom/applovin/exoplayer2/ui/b;->I:Z
 
@@ -1078,7 +1112,7 @@
 
     const-wide/16 v2, 0x0
 
-    .line 17
+    .line 23
     invoke-static/range {v0 .. v5}, Lcom/applovin/impl/xp;->b(JJJ)J
 
     move-result-wide p1
@@ -1089,21 +1123,22 @@
 
     return v6
 
+    .line 24
     :cond_2
     iget-boolean v0, p0, Lcom/applovin/exoplayer2/ui/b;->I:Z
 
     if-nez v0, :cond_3
 
-    .line 18
+    .line 25
     invoke-direct {p0, p1, p2}, Lcom/applovin/exoplayer2/ui/b;->b(J)V
 
     goto :goto_2
 
-    .line 19
+    .line 26
     :cond_3
     invoke-direct {p0, p1, p2}, Lcom/applovin/exoplayer2/ui/b;->c(J)V
 
-    .line 20
+    .line 27
     :goto_2
     invoke-direct {p0}, Lcom/applovin/exoplayer2/ui/b;->b()V
 
@@ -1115,7 +1150,7 @@
 .method private a(Landroid/graphics/drawable/Drawable;)Z
     .locals 2
 
-    .line 37
+    .line 50
     sget v0, Lcom/applovin/impl/xp;->a:I
 
     const/16 v1, 0x17
@@ -1146,14 +1181,14 @@
 .method private static a(Landroid/graphics/drawable/Drawable;I)Z
     .locals 2
 
-    .line 38
+    .line 51
     sget v0, Lcom/applovin/impl/xp;->a:I
 
     const/16 v1, 0x17
 
     if-lt v0, v1, :cond_0
 
-    invoke-static {p0, p1}, Landroidx/compose/ui/platform/r2;->y(Landroid/graphics/drawable/Drawable;I)Z
+    invoke-static {p0, p1}, Lc3/A;->x(Landroid/graphics/drawable/Drawable;I)Z
 
     move-result p0
 
@@ -1186,20 +1221,21 @@
 .method private b()V
     .locals 7
 
+    .line 10
     iget-object v0, p0, Lcom/applovin/exoplayer2/ui/b;->c:Landroid/graphics/Rect;
 
     iget-object v1, p0, Lcom/applovin/exoplayer2/ui/b;->b:Landroid/graphics/Rect;
 
-    .line 8
     invoke-virtual {v0, v1}, Landroid/graphics/Rect;->set(Landroid/graphics/Rect;)V
 
+    .line 11
     iget-object v0, p0, Lcom/applovin/exoplayer2/ui/b;->d:Landroid/graphics/Rect;
 
     iget-object v1, p0, Lcom/applovin/exoplayer2/ui/b;->b:Landroid/graphics/Rect;
 
-    .line 9
     invoke-virtual {v0, v1}, Landroid/graphics/Rect;->set(Landroid/graphics/Rect;)V
 
+    .line 12
     iget-boolean v0, p0, Lcom/applovin/exoplayer2/ui/b;->I:Z
 
     if-eqz v0, :cond_0
@@ -1211,6 +1247,7 @@
     :cond_0
     iget-wide v0, p0, Lcom/applovin/exoplayer2/ui/b;->L:J
 
+    .line 13
     :goto_0
     iget-wide v2, p0, Lcom/applovin/exoplayer2/ui/b;->K:J
 
@@ -1220,9 +1257,9 @@
 
     if-lez v6, :cond_1
 
+    .line 14
     iget-object v2, p0, Lcom/applovin/exoplayer2/ui/b;->b:Landroid/graphics/Rect;
 
-    .line 10
     invoke-virtual {v2}, Landroid/graphics/Rect;->width()I
 
     move-result v2
@@ -1239,11 +1276,11 @@
 
     long-to-int v3, v2
 
+    .line 15
     iget-object v2, p0, Lcom/applovin/exoplayer2/ui/b;->c:Landroid/graphics/Rect;
 
     iget-object v4, p0, Lcom/applovin/exoplayer2/ui/b;->b:Landroid/graphics/Rect;
 
-    .line 11
     iget v5, v4, Landroid/graphics/Rect;->left:I
 
     add-int/2addr v5, v3
@@ -1256,9 +1293,9 @@
 
     iput v3, v2, Landroid/graphics/Rect;->right:I
 
+    .line 16
     iget-object v2, p0, Lcom/applovin/exoplayer2/ui/b;->b:Landroid/graphics/Rect;
 
-    .line 12
     invoke-virtual {v2}, Landroid/graphics/Rect;->width()I
 
     move-result v2
@@ -1273,11 +1310,11 @@
 
     long-to-int v0, v2
 
+    .line 17
     iget-object v1, p0, Lcom/applovin/exoplayer2/ui/b;->d:Landroid/graphics/Rect;
 
     iget-object v2, p0, Lcom/applovin/exoplayer2/ui/b;->b:Landroid/graphics/Rect;
 
-    .line 13
     iget v3, v2, Landroid/graphics/Rect;->left:I
 
     add-int/2addr v3, v0
@@ -1292,25 +1329,25 @@
 
     goto :goto_1
 
+    .line 18
     :cond_1
     iget-object v0, p0, Lcom/applovin/exoplayer2/ui/b;->c:Landroid/graphics/Rect;
 
     iget-object v1, p0, Lcom/applovin/exoplayer2/ui/b;->b:Landroid/graphics/Rect;
 
-    .line 14
     iget v1, v1, Landroid/graphics/Rect;->left:I
 
     iput v1, v0, Landroid/graphics/Rect;->right:I
 
+    .line 19
     iget-object v0, p0, Lcom/applovin/exoplayer2/ui/b;->d:Landroid/graphics/Rect;
 
-    .line 15
     iput v1, v0, Landroid/graphics/Rect;->right:I
 
+    .line 20
     :goto_1
     iget-object v0, p0, Lcom/applovin/exoplayer2/ui/b;->a:Landroid/graphics/Rect;
 
-    .line 16
     invoke-virtual {p0, v0}, Landroid/view/View;->invalidate(Landroid/graphics/Rect;)V
 
     return-void
@@ -1319,29 +1356,31 @@
 .method private b(J)V
     .locals 2
 
+    .line 3
     iput-wide p1, p0, Lcom/applovin/exoplayer2/ui/b;->J:J
 
     const/4 v0, 0x1
 
+    .line 4
     iput-boolean v0, p0, Lcom/applovin/exoplayer2/ui/b;->I:Z
 
-    .line 3
+    .line 5
     invoke-virtual {p0, v0}, Landroid/view/View;->setPressed(Z)V
 
-    .line 4
+    .line 6
     invoke-virtual {p0}, Landroid/view/View;->getParent()Landroid/view/ViewParent;
 
     move-result-object v1
 
     if-eqz v1, :cond_0
 
-    .line 5
+    .line 7
     invoke-interface {v1, v0}, Landroid/view/ViewParent;->requestDisallowInterceptTouchEvent(Z)V
 
+    .line 8
     :cond_0
     iget-object v0, p0, Lcom/applovin/exoplayer2/ui/b;->y:Ljava/util/concurrent/CopyOnWriteArraySet;
 
-    .line 6
     invoke-virtual {v0}, Ljava/util/concurrent/CopyOnWriteArraySet;->iterator()Ljava/util/Iterator;
 
     move-result-object v0
@@ -1359,7 +1398,7 @@
 
     check-cast v1, Lcom/applovin/exoplayer2/ui/i$a;
 
-    .line 7
+    .line 9
     invoke-interface {v1, p0, p1, p2}, Lcom/applovin/exoplayer2/ui/i$a;->a(Lcom/applovin/exoplayer2/ui/i;J)V
 
     goto :goto_0
@@ -1373,16 +1412,16 @@
 
     move-object/from16 v0, p0
 
+    .line 21
     iget-object v1, v0, Lcom/applovin/exoplayer2/ui/b;->b:Landroid/graphics/Rect;
 
-    .line 17
     invoke-virtual {v1}, Landroid/graphics/Rect;->height()I
 
     move-result v1
 
+    .line 22
     iget-object v2, v0, Lcom/applovin/exoplayer2/ui/b;->b:Landroid/graphics/Rect;
 
-    .line 18
     invoke-virtual {v2}, Landroid/graphics/Rect;->centerY()I
 
     move-result v2
@@ -1393,6 +1432,7 @@
 
     add-int/2addr v1, v2
 
+    .line 23
     iget-wide v3, v0, Lcom/applovin/exoplayer2/ui/b;->K:J
 
     const-wide/16 v5, 0x0
@@ -1401,9 +1441,9 @@
 
     if-gtz v7, :cond_0
 
+    .line 24
     iget-object v3, v0, Lcom/applovin/exoplayer2/ui/b;->b:Landroid/graphics/Rect;
 
-    .line 19
     iget v4, v3, Landroid/graphics/Rect;->left:I
 
     int-to-float v6, v4
@@ -1424,18 +1464,18 @@
 
     return-void
 
+    .line 25
     :cond_0
     iget-object v3, v0, Lcom/applovin/exoplayer2/ui/b;->c:Landroid/graphics/Rect;
 
-    .line 20
     iget v4, v3, Landroid/graphics/Rect;->left:I
 
-    .line 21
+    .line 26
     iget v3, v3, Landroid/graphics/Rect;->right:I
 
+    .line 27
     iget-object v5, v0, Lcom/applovin/exoplayer2/ui/b;->b:Landroid/graphics/Rect;
 
-    .line 22
     iget v5, v5, Landroid/graphics/Rect;->left:I
 
     invoke-static {v5, v3}, Ljava/lang/Math;->max(II)I
@@ -1450,9 +1490,9 @@
 
     move-result v5
 
+    .line 28
     iget-object v6, v0, Lcom/applovin/exoplayer2/ui/b;->b:Landroid/graphics/Rect;
 
-    .line 23
     iget v6, v6, Landroid/graphics/Rect;->right:I
 
     if-ge v5, v6, :cond_1
@@ -1465,17 +1505,17 @@
 
     int-to-float v11, v1
 
+    .line 29
     iget-object v12, v0, Lcom/applovin/exoplayer2/ui/b;->h:Landroid/graphics/Paint;
 
     move-object/from16 v7, p1
 
-    .line 24
     invoke-virtual/range {v7 .. v12}, Landroid/graphics/Canvas;->drawRect(FFFFLandroid/graphics/Paint;)V
 
+    .line 30
     :cond_1
     iget-object v5, v0, Lcom/applovin/exoplayer2/ui/b;->d:Landroid/graphics/Rect;
 
-    .line 25
     iget v5, v5, Landroid/graphics/Rect;->right:I
 
     invoke-static {v4, v5}, Ljava/lang/Math;->max(II)I
@@ -1492,26 +1532,26 @@
 
     int-to-float v9, v1
 
+    .line 31
     iget-object v10, v0, Lcom/applovin/exoplayer2/ui/b;->g:Landroid/graphics/Paint;
 
     move-object/from16 v5, p1
 
-    .line 26
     invoke-virtual/range {v5 .. v10}, Landroid/graphics/Canvas;->drawRect(FFFFLandroid/graphics/Paint;)V
 
+    .line 32
     :cond_2
     iget-object v3, v0, Lcom/applovin/exoplayer2/ui/b;->d:Landroid/graphics/Rect;
 
-    .line 27
     invoke-virtual {v3}, Landroid/graphics/Rect;->width()I
 
     move-result v3
 
     if-lez v3, :cond_3
 
+    .line 33
     iget-object v3, v0, Lcom/applovin/exoplayer2/ui/b;->d:Landroid/graphics/Rect;
 
-    .line 28
     iget v4, v3, Landroid/graphics/Rect;->left:I
 
     int-to-float v6, v4
@@ -1530,6 +1570,7 @@
 
     invoke-virtual/range {v5 .. v10}, Landroid/graphics/Canvas;->drawRect(FFFFLandroid/graphics/Paint;)V
 
+    .line 34
     :cond_3
     iget v3, v0, Lcom/applovin/exoplayer2/ui/b;->N:I
 
@@ -1537,40 +1578,41 @@
 
     return-void
 
+    .line 35
     :cond_4
     iget-object v3, v0, Lcom/applovin/exoplayer2/ui/b;->O:[J
 
-    .line 29
     invoke-static {v3}, Lcom/applovin/impl/b1;->a(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object v3
 
     check-cast v3, [J
 
+    .line 36
     iget-object v4, v0, Lcom/applovin/exoplayer2/ui/b;->P:[Z
 
-    .line 30
     invoke-static {v4}, Lcom/applovin/impl/b1;->a(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object v4
 
     check-cast v4, [Z
 
+    .line 37
     iget v5, v0, Lcom/applovin/exoplayer2/ui/b;->p:I
 
-    .line 31
     div-int/lit8 v5, v5, 0x2
 
     const/4 v6, 0x0
 
     const/4 v7, 0x0
 
+    .line 38
     :goto_0
     iget v8, v0, Lcom/applovin/exoplayer2/ui/b;->N:I
 
     if-ge v7, v8, :cond_6
 
-    .line 32
+    .line 39
     aget-wide v9, v3, v7
 
     iget-wide v13, v0, Lcom/applovin/exoplayer2/ui/b;->K:J
@@ -1581,9 +1623,10 @@
 
     move-result-wide v8
 
+    .line 40
     iget-object v10, v0, Lcom/applovin/exoplayer2/ui/b;->b:Landroid/graphics/Rect;
 
-    .line 33
+    .line 41
     invoke-virtual {v10}, Landroid/graphics/Rect;->width()I
 
     move-result v10
@@ -1600,12 +1643,12 @@
 
     sub-int/2addr v8, v5
 
+    .line 42
     iget-object v9, v0, Lcom/applovin/exoplayer2/ui/b;->b:Landroid/graphics/Rect;
 
-    .line 34
     iget v10, v9, Landroid/graphics/Rect;->left:I
 
-    .line 35
+    .line 43
     invoke-virtual {v9}, Landroid/graphics/Rect;->width()I
 
     move-result v9
@@ -1624,7 +1667,7 @@
 
     add-int/2addr v8, v10
 
-    .line 36
+    .line 44
     aget-boolean v9, v4, v7
 
     if-eqz v9, :cond_5
@@ -1646,6 +1689,7 @@
 
     int-to-float v12, v2
 
+    .line 45
     iget v9, v0, Lcom/applovin/exoplayer2/ui/b;->p:I
 
     add-int/2addr v8, v9
@@ -1656,7 +1700,6 @@
 
     move-object/from16 v10, p1
 
-    .line 37
     invoke-virtual/range {v10 .. v15}, Landroid/graphics/Canvas;->drawRect(FFFFLandroid/graphics/Paint;)V
 
     add-int/lit8 v7, v7, 0x1
@@ -1679,11 +1722,12 @@
 .method private c()V
     .locals 2
 
+    .line 5
     iget-object v0, p0, Lcom/applovin/exoplayer2/ui/b;->l:Landroid/graphics/drawable/Drawable;
 
     if-eqz v0, :cond_0
 
-    .line 3
+    .line 6
     invoke-virtual {v0}, Landroid/graphics/drawable/Drawable;->isStateful()Z
 
     move-result v0
@@ -1692,7 +1736,7 @@
 
     iget-object v0, p0, Lcom/applovin/exoplayer2/ui/b;->l:Landroid/graphics/drawable/Drawable;
 
-    .line 4
+    .line 7
     invoke-virtual {p0}, Landroid/view/View;->getDrawableState()[I
 
     move-result-object v1
@@ -1703,7 +1747,7 @@
 
     if-eqz v0, :cond_0
 
-    .line 5
+    .line 8
     invoke-virtual {p0}, Landroid/view/View;->invalidate()V
 
     :cond_0
@@ -1713,6 +1757,7 @@
 .method private c(J)V
     .locals 3
 
+    .line 1
     iget-wide v0, p0, Lcom/applovin/exoplayer2/ui/b;->J:J
 
     cmp-long v2, v0, p1
@@ -1721,12 +1766,13 @@
 
     return-void
 
+    .line 2
     :cond_0
     iput-wide p1, p0, Lcom/applovin/exoplayer2/ui/b;->J:J
 
+    .line 3
     iget-object v0, p0, Lcom/applovin/exoplayer2/ui/b;->y:Ljava/util/concurrent/CopyOnWriteArraySet;
 
-    .line 1
     invoke-virtual {v0}, Ljava/util/concurrent/CopyOnWriteArraySet;->iterator()Ljava/util/Iterator;
 
     move-result-object v0
@@ -1744,7 +1790,7 @@
 
     check-cast v1, Lcom/applovin/exoplayer2/ui/i$a;
 
-    .line 2
+    .line 4
     invoke-interface {v1, p0, p1, p2}, Lcom/applovin/exoplayer2/ui/i$a;->b(Lcom/applovin/exoplayer2/ui/i;J)V
 
     goto :goto_0
@@ -1942,9 +1988,9 @@
     .line 6
     invoke-static {p1}, Lcom/applovin/impl/b1;->a(Ljava/lang/Object;)Ljava/lang/Object;
 
+    .line 7
     iget-object v0, p0, Lcom/applovin/exoplayer2/ui/b;->y:Ljava/util/concurrent/CopyOnWriteArraySet;
 
-    .line 7
     invoke-virtual {v0, p1}, Ljava/util/concurrent/CopyOnWriteArraySet;->add(Ljava/lang/Object;)Z
 
     return-void
@@ -1974,13 +2020,16 @@
     :goto_1
     invoke-static {v0}, Lcom/applovin/impl/b1;->a(Z)V
 
+    .line 9
     iput p3, p0, Lcom/applovin/exoplayer2/ui/b;->N:I
 
+    .line 10
     iput-object p1, p0, Lcom/applovin/exoplayer2/ui/b;->O:[J
 
+    .line 11
     iput-object p2, p0, Lcom/applovin/exoplayer2/ui/b;->P:[Z
 
-    .line 9
+    .line 12
     invoke-direct {p0}, Lcom/applovin/exoplayer2/ui/b;->b()V
 
     return-void

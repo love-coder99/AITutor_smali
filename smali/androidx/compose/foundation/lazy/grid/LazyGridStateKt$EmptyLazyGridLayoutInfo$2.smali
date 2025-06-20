@@ -3,14 +3,14 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lzh/c;
+.implements Lka/c;
 
 
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "Lkotlin/jvm/internal/Lambda;",
-        "Lzh/c;"
+        "Lka/c;"
     }
 .end annotation
 
@@ -23,7 +23,7 @@
         "it",
         "",
         "Lkotlin/Pair;",
-        "Lh2/a;",
+        "LM0/a;",
         "invoke",
         "(I)Ljava/util/List;",
         "<anonymous>"
@@ -91,7 +91,7 @@
             "Ljava/util/List<",
             "Lkotlin/Pair<",
             "Ljava/lang/Integer;",
-            "Lh2/a;",
+            "LM0/a;",
             ">;>;"
         }
     .end annotation

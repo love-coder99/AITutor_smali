@@ -1,17 +1,31 @@
-.class public abstract Lk3/a;
+.class public final Lk3/a;
 .super Ljava/lang/Object;
 .source "SourceFile"
 
 
-# static fields
-.field public static postSplashScreenTheme:I = 0x7f040414
+# instance fields
+.field public final a:Ljava/lang/Class;
 
-.field public static splashScreenIconSize:I = 0x7f040493
+.field public final b:LT2/a;
 
-.field public static windowSplashScreenAnimatedIcon:I = 0x7f0405a2
 
-.field public static windowSplashScreenAnimationDuration:I = 0x7f0405a3
+# direct methods
+.method public constructor <init>(Ljava/lang/Class;LT2/a;)V
+    .locals 0
 
-.field public static windowSplashScreenBackground:I = 0x7f0405a4
+    .line 1
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-.field public static windowSplashScreenIconBackgroundColor:I = 0x7f0405a5
+    .line 2
+    .line 3
+    .line 4
+    iput-object p1, p0, Lk3/a;->a:Ljava/lang/Class;
+
+    .line 5
+    .line 6
+    iput-object p2, p0, Lk3/a;->b:LT2/a;
+
+    .line 7
+    .line 8
+    return-void
+.end method

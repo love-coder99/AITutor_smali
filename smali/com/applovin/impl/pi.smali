@@ -50,7 +50,7 @@
 
     .line 14
     .line 15
-    invoke-static {p2}, Landroidx/transition/a;->A(Landroid/webkit/RenderProcessGoneDetail;)Z
+    invoke-static {p2}, Lcoil/decode/b;->w(Landroid/webkit/RenderProcessGoneDetail;)Z
 
     .line 16
     .line 17
@@ -97,7 +97,7 @@
     .line 36
     .line 37
     .line 38
-    invoke-static {p2}, Landroidx/transition/a;->b(Landroid/webkit/RenderProcessGoneDetail;)I
+    invoke-static {p2}, Lcoil/decode/b;->b(Landroid/webkit/RenderProcessGoneDetail;)I
 
     .line 39
     .line 40

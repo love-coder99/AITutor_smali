@@ -1,17 +1,17 @@
-.class public final Landroidx/compose/animation/core/j;
-.super Landroidx/compose/animation/core/m;
+.class public final Landroidx/compose/animation/core/J;
+.super Ljava/lang/Object;
 .source "SourceFile"
 
 
 # instance fields
-.field public a:F
+.field public final a:Ljava/util/concurrent/atomic/AtomicReference;
 
-.field public b:F
+.field public final b:Lkotlinx/coroutines/sync/c;
 
 
 # direct methods
-.method public constructor <init>(FF)V
-    .locals 0
+.method public constructor <init>()V
+    .locals 2
 
     .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -19,261 +19,69 @@
     .line 2
     .line 3
     .line 4
-    iput p1, p0, Landroidx/compose/animation/core/j;->a:F
+    new-instance v0, Ljava/util/concurrent/atomic/AtomicReference;
 
     .line 5
     .line 6
-    iput p2, p0, Landroidx/compose/animation/core/j;->b:F
-
-    .line 7
-    .line 8
-    return-void
-.end method
-
-
-# virtual methods
-.method public final a(I)F
-    .locals 1
-
-    .line 1
-    if-eqz p1, :cond_1
-
-    const/4 v0, 0x1
-
-    if-eq p1, v0, :cond_0
-
-    const/4 p1, 0x0
-
-    goto :goto_0
-
-    :cond_0
-    iget p1, p0, Landroidx/compose/animation/core/j;->b:F
-
-    goto :goto_0
-
-    :cond_1
-    iget p1, p0, Landroidx/compose/animation/core/j;->a:F
-
-    :goto_0
-    return p1
-.end method
-
-.method public final b()I
-    .locals 1
-
-    .line 1
-    const/4 v0, 0x2
-
-    return v0
-.end method
-
-.method public final c()Landroidx/compose/animation/core/m;
-    .locals 2
-
-    .line 1
-    new-instance v0, Landroidx/compose/animation/core/j;
-
-    .line 2
-    .line 3
     const/4 v1, 0x0
 
-    .line 4
-    invoke-direct {v0, v1, v1}, Landroidx/compose/animation/core/j;-><init>(FF)V
-
-    .line 5
-    .line 6
     .line 7
-    return-object v0
-.end method
-
-.method public final d()V
-    .locals 1
-
-    .line 1
-    const/4 v0, 0x0
-
-    iput v0, p0, Landroidx/compose/animation/core/j;->a:F
-
-    iput v0, p0, Landroidx/compose/animation/core/j;->b:F
-
-    return-void
-.end method
-
-.method public final e(FI)V
-    .locals 1
-
-    .line 1
-    if-eqz p2, :cond_1
-
-    const/4 v0, 0x1
-
-    if-eq p2, v0, :cond_0
-
-    goto :goto_0
-
-    :cond_0
-    iput p1, p0, Landroidx/compose/animation/core/j;->b:F
-
-    goto :goto_0
-
-    :cond_1
-    iput p1, p0, Landroidx/compose/animation/core/j;->a:F
-
-    :goto_0
-    return-void
-.end method
-
-.method public final equals(Ljava/lang/Object;)Z
-    .locals 2
-
-    .line 1
-    instance-of v0, p1, Landroidx/compose/animation/core/j;
-
-    .line 2
-    .line 3
-    if-eqz v0, :cond_0
-
-    .line 4
-    .line 5
-    check-cast p1, Landroidx/compose/animation/core/j;
-
-    .line 6
-    .line 7
-    iget v0, p1, Landroidx/compose/animation/core/j;->a:F
+    invoke-direct {v0, v1}, Ljava/util/concurrent/atomic/AtomicReference;-><init>(Ljava/lang/Object;)V
 
     .line 8
     .line 9
-    iget v1, p0, Landroidx/compose/animation/core/j;->a:F
-
     .line 10
-    .line 11
-    cmpg-float v0, v0, v1
-
-    .line 12
-    .line 13
-    if-nez v0, :cond_0
-
-    .line 14
-    .line 15
-    iget p1, p1, Landroidx/compose/animation/core/j;->b:F
-
-    .line 16
-    .line 17
-    iget v0, p0, Landroidx/compose/animation/core/j;->b:F
-
-    .line 18
-    .line 19
-    cmpg-float p1, p1, v0
-
-    .line 20
-    .line 21
-    if-nez p1, :cond_0
-
-    .line 22
-    .line 23
-    const/4 p1, 0x1
-
-    .line 24
-    goto :goto_0
-
-    .line 25
-    :cond_0
-    const/4 p1, 0x0
-
-    .line 26
-    :goto_0
-    return p1
-.end method
-
-.method public final hashCode()I
-    .locals 2
-
-    .line 1
-    iget v0, p0, Landroidx/compose/animation/core/j;->a:F
-
-    .line 2
-    .line 3
-    invoke-static {v0}, Ljava/lang/Float;->floatToIntBits(F)I
-
-    .line 4
-    .line 5
-    .line 6
-    move-result v0
-
-    .line 7
-    mul-int/lit8 v0, v0, 0x1f
-
-    .line 8
-    .line 9
-    iget v1, p0, Landroidx/compose/animation/core/j;->b:F
-
-    .line 10
-    .line 11
-    invoke-static {v1}, Ljava/lang/Float;->floatToIntBits(F)I
-
-    .line 12
-    .line 13
-    .line 14
-    move-result v1
-
-    .line 15
-    add-int/2addr v1, v0
-
-    .line 16
-    return v1
-.end method
-
-.method public final toString()Ljava/lang/String;
-    .locals 2
-
-    .line 1
-    new-instance v0, Ljava/lang/StringBuilder;
-
-    .line 2
-    .line 3
-    const-string v1, "AnimationVector2D: v1 = "
-
-    .line 4
-    .line 5
-    invoke-direct {v0, v1}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
-
-    .line 6
-    .line 7
-    .line 8
-    iget v1, p0, Landroidx/compose/animation/core/j;->a:F
-
-    .line 9
-    .line 10
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(F)Ljava/lang/StringBuilder;
+    iput-object v0, p0, Landroidx/compose/animation/core/J;->a:Ljava/util/concurrent/atomic/AtomicReference;
 
     .line 11
     .line 12
-    .line 13
-    const-string v1, ", v2 = "
+    invoke-static {}, Lkotlinx/coroutines/sync/d;->a()Lkotlinx/coroutines/sync/c;
 
+    .line 13
     .line 14
     .line 15
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    .line 16
-    .line 17
-    .line 18
-    iget v1, p0, Landroidx/compose/animation/core/j;->b:F
-
-    .line 19
-    .line 20
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(F)Ljava/lang/StringBuilder;
-
-    .line 21
-    .line 22
-    .line 23
-    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    .line 24
-    .line 25
-    .line 26
     move-result-object v0
 
-    .line 27
-    return-object v0
+    .line 16
+    iput-object v0, p0, Landroidx/compose/animation/core/J;->b:Lkotlinx/coroutines/sync/c;
+
+    .line 17
+    .line 18
+    return-void
+.end method
+
+.method public static a(Landroidx/compose/animation/core/J;Lka/c;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
+    .locals 3
+
+    .line 1
+    sget-object v0, Landroidx/compose/animation/core/MutatePriority;->Default:Landroidx/compose/animation/core/MutatePriority;
+
+    .line 2
+    .line 3
+    invoke-virtual {p0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    .line 4
+    .line 5
+    .line 6
+    new-instance v1, Landroidx/compose/animation/core/MutatorMutex$mutate$2;
+
+    .line 7
+    .line 8
+    const/4 v2, 0x0
+
+    .line 9
+    invoke-direct {v1, v0, p0, p1, v2}, Landroidx/compose/animation/core/MutatorMutex$mutate$2;-><init>(Landroidx/compose/animation/core/MutatePriority;Landroidx/compose/animation/core/J;Lka/c;Lkotlin/coroutines/Continuation;)V
+
+    .line 10
+    .line 11
+    .line 12
+    invoke-static {v1, p2}, Lkotlinx/coroutines/w;->h(Lka/e;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
+
+    .line 13
+    .line 14
+    .line 15
+    move-result-object p0
+
+    .line 16
+    return-object p0
 .end method

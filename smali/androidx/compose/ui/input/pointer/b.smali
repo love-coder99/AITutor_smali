@@ -3,4 +3,4 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lh2/b;
+.implements LM0/b;

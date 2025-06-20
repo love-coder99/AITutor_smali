@@ -13,7 +13,7 @@
     return-void
 .end method
 
-.method public varargs constructor <init>([Landroidx/databinding/i;)V
+.method public varargs constructor <init>([Landroidx/databinding/h;)V
     .locals 3
 
     .line 2
@@ -42,7 +42,7 @@
     .line 6
     aget-object v2, p1, v1
 
-    invoke-interface {v2, v0}, Landroidx/databinding/i;->addOnPropertyChangedCallback(Landroidx/databinding/h;)V
+    invoke-interface {v2, v0}, Landroidx/databinding/h;->addOnPropertyChangedCallback(Landroidx/databinding/g;)V
 
     add-int/lit8 v1, v1, 0x1
 

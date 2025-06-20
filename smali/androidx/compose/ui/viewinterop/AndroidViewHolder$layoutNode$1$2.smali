@@ -3,14 +3,14 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lzh/c;
+.implements Lka/c;
 
 
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "Lkotlin/jvm/internal/Lambda;",
-        "Lzh/c;"
+        "Lka/c;"
     }
 .end annotation
 
@@ -19,11 +19,11 @@
         "\u0000\u000e\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0008\u0003\u0010\u0005\u001a\u00020\u00022\u0006\u0010\u0001\u001a\u00020\u0000H\n\u00a2\u0006\u0004\u0008\u0003\u0010\u0004"
     }
     d2 = {
-        "Lh2/b;",
+        "LM0/b;",
         "it",
-        "Lqh/r;",
+        "LX9/j;",
         "invoke",
-        "(Lh2/b;)V",
+        "(LM0/b;)V",
         "<anonymous>"
     }
     k = 0x3
@@ -36,14 +36,14 @@
 
 
 # instance fields
-.field final synthetic $layoutNode:Landroidx/compose/ui/node/e0;
+.field final synthetic $layoutNode:Landroidx/compose/ui/node/C;
 
 
 # direct methods
-.method public constructor <init>(Landroidx/compose/ui/node/e0;)V
+.method public constructor <init>(Landroidx/compose/ui/node/C;)V
     .locals 0
 
-    iput-object p1, p0, Landroidx/compose/ui/viewinterop/AndroidViewHolder$layoutNode$1$2;->$layoutNode:Landroidx/compose/ui/node/e0;
+    iput-object p1, p0, Landroidx/compose/ui/viewinterop/AndroidViewHolder$layoutNode$1$2;->$layoutNode:Landroidx/compose/ui/node/C;
 
     const/4 p1, 0x1
 
@@ -58,22 +58,22 @@
     .locals 0
 
     .line 1
-    check-cast p1, Lh2/b;
+    check-cast p1, LM0/b;
 
-    invoke-virtual {p0, p1}, Landroidx/compose/ui/viewinterop/AndroidViewHolder$layoutNode$1$2;->invoke(Lh2/b;)V
+    invoke-virtual {p0, p1}, Landroidx/compose/ui/viewinterop/AndroidViewHolder$layoutNode$1$2;->invoke(LM0/b;)V
 
-    sget-object p1, Lqh/r;->a:Lqh/r;
+    sget-object p1, LX9/j;->a:LX9/j;
 
     return-object p1
 .end method
 
-.method public final invoke(Lh2/b;)V
+.method public final invoke(LM0/b;)V
     .locals 1
 
-    iget-object v0, p0, Landroidx/compose/ui/viewinterop/AndroidViewHolder$layoutNode$1$2;->$layoutNode:Landroidx/compose/ui/node/e0;
-
     .line 2
-    invoke-virtual {v0, p1}, Landroidx/compose/ui/node/e0;->X(Lh2/b;)V
+    iget-object v0, p0, Landroidx/compose/ui/viewinterop/AndroidViewHolder$layoutNode$1$2;->$layoutNode:Landroidx/compose/ui/node/C;
+
+    invoke-virtual {v0, p1}, Landroidx/compose/ui/node/C;->X(LM0/b;)V
 
     return-void
 .end method

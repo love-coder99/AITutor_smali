@@ -30,18 +30,18 @@
 
 
 # virtual methods
-.method public final a(Landroidx/compose/foundation/text/t;Landroidx/compose/foundation/text/selection/a0;Landroid/view/inputmethod/HandwritingGesture;Landroidx/compose/ui/platform/x2;Ljava/util/concurrent/Executor;Ljava/util/function/IntConsumer;Lzh/c;)V
+.method public final a(Landroidx/compose/foundation/text/s;Landroidx/compose/foundation/text/selection/x;Landroid/view/inputmethod/HandwritingGesture;Landroidx/compose/ui/platform/M0;Ljava/util/concurrent/Executor;Ljava/util/function/IntConsumer;Lka/c;)V
     .locals 6
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
-            "Landroidx/compose/foundation/text/t;",
-            "Landroidx/compose/foundation/text/selection/a0;",
+            "Landroidx/compose/foundation/text/s;",
+            "Landroidx/compose/foundation/text/selection/x;",
             "Landroid/view/inputmethod/HandwritingGesture;",
-            "Landroidx/compose/ui/platform/x2;",
+            "Landroidx/compose/ui/platform/M0;",
             "Ljava/util/concurrent/Executor;",
             "Ljava/util/function/IntConsumer;",
-            "Lzh/c;",
+            "Lka/c;",
             ")V"
         }
     .end annotation
@@ -70,7 +70,7 @@
     move-object v5, p7
 
     .line 10
-    invoke-virtual/range {v0 .. v5}, Landroidx/compose/foundation/text/input/internal/HandwritingGestureApi34;->i(Landroidx/compose/foundation/text/t;Landroid/view/inputmethod/HandwritingGesture;Landroidx/compose/foundation/text/selection/a0;Landroidx/compose/ui/platform/x2;Lzh/c;)I
+    invoke-virtual/range {v0 .. v5}, Landroidx/compose/foundation/text/input/internal/HandwritingGestureApi34;->i(Landroidx/compose/foundation/text/s;Landroid/view/inputmethod/HandwritingGesture;Landroidx/compose/foundation/text/selection/x;Landroidx/compose/ui/platform/M0;Lka/c;)I
 
     .line 11
     .line 12
@@ -98,14 +98,14 @@
 
     .line 20
     .line 21
-    new-instance p2, Ls/k;
+    new-instance p2, LE6/c;
 
     .line 22
     .line 23
-    const/4 p3, 0x5
+    const/4 p3, 0x3
 
     .line 24
-    invoke-direct {p2, p6, p1, p3}, Ls/k;-><init>(Ljava/lang/Object;II)V
+    invoke-direct {p2, p6, p1, p3}, LE6/c;-><init>(Ljava/lang/Object;II)V
 
     .line 25
     .line 26
@@ -119,7 +119,7 @@
 
     .line 31
     :cond_2
-    invoke-static {p6, p1}, Landroidx/appcompat/app/e0;->z(Ljava/util/function/IntConsumer;I)V
+    invoke-static {p6, p1}, LC7/d;->y(Ljava/util/function/IntConsumer;I)V
 
     .line 32
     .line 33
@@ -128,7 +128,7 @@
     return-void
 .end method
 
-.method public final b(Landroidx/compose/foundation/text/t;Landroidx/compose/foundation/text/selection/a0;Landroid/view/inputmethod/PreviewableHandwritingGesture;Landroid/os/CancellationSignal;)Z
+.method public final b(Landroidx/compose/foundation/text/s;Landroidx/compose/foundation/text/selection/x;Landroid/view/inputmethod/PreviewableHandwritingGesture;Landroid/os/CancellationSignal;)Z
     .locals 1
 
     .line 1
@@ -140,7 +140,7 @@
 
     .line 4
     .line 5
-    invoke-virtual {v0, p1, p3, p2, p4}, Landroidx/compose/foundation/text/input/internal/HandwritingGestureApi34;->A(Landroidx/compose/foundation/text/t;Landroid/view/inputmethod/PreviewableHandwritingGesture;Landroidx/compose/foundation/text/selection/a0;Landroid/os/CancellationSignal;)Z
+    invoke-virtual {v0, p1, p3, p2, p4}, Landroidx/compose/foundation/text/input/internal/HandwritingGestureApi34;->A(Landroidx/compose/foundation/text/s;Landroid/view/inputmethod/PreviewableHandwritingGesture;Landroidx/compose/foundation/text/selection/x;Landroid/os/CancellationSignal;)Z
 
     .line 6
     .line 7

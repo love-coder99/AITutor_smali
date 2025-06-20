@@ -17,50 +17,49 @@
     .locals 0
 
     .line 1
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
-
-    .line 2
-    .line 3
-    .line 4
     iput p2, p0, Lcom/applovin/impl/mediation/debugger/ui/testmode/b;->b:I
 
-    .line 5
-    .line 6
     iput-object p1, p0, Lcom/applovin/impl/mediation/debugger/ui/testmode/b;->c:Lcom/applovin/impl/mediation/debugger/ui/testmode/a;
 
-    .line 7
-    .line 8
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
     return-void
 .end method
 
 
 # virtual methods
 .method public final onClick(Landroid/view/View;)V
-    .locals 2
+    .locals 1
 
     .line 1
     iget v0, p0, Lcom/applovin/impl/mediation/debugger/ui/testmode/b;->b:I
 
-    iget-object v1, p0, Lcom/applovin/impl/mediation/debugger/ui/testmode/b;->c:Lcom/applovin/impl/mediation/debugger/ui/testmode/a;
-
     packed-switch v0, :pswitch_data_0
 
-    invoke-static {v1, p1}, Lcom/applovin/impl/mediation/debugger/ui/testmode/a;->d(Lcom/applovin/impl/mediation/debugger/ui/testmode/a;Landroid/view/View;)V
+    iget-object v0, p0, Lcom/applovin/impl/mediation/debugger/ui/testmode/b;->c:Lcom/applovin/impl/mediation/debugger/ui/testmode/a;
+
+    invoke-static {v0, p1}, Lcom/applovin/impl/mediation/debugger/ui/testmode/a;->a(Lcom/applovin/impl/mediation/debugger/ui/testmode/a;Landroid/view/View;)V
 
     return-void
 
     :pswitch_0
-    invoke-static {v1, p1}, Lcom/applovin/impl/mediation/debugger/ui/testmode/a;->a(Lcom/applovin/impl/mediation/debugger/ui/testmode/a;Landroid/view/View;)V
+    iget-object v0, p0, Lcom/applovin/impl/mediation/debugger/ui/testmode/b;->c:Lcom/applovin/impl/mediation/debugger/ui/testmode/a;
+
+    invoke-static {v0, p1}, Lcom/applovin/impl/mediation/debugger/ui/testmode/a;->b(Lcom/applovin/impl/mediation/debugger/ui/testmode/a;Landroid/view/View;)V
 
     return-void
 
     :pswitch_1
-    invoke-static {v1, p1}, Lcom/applovin/impl/mediation/debugger/ui/testmode/a;->c(Lcom/applovin/impl/mediation/debugger/ui/testmode/a;Landroid/view/View;)V
+    iget-object v0, p0, Lcom/applovin/impl/mediation/debugger/ui/testmode/b;->c:Lcom/applovin/impl/mediation/debugger/ui/testmode/a;
+
+    invoke-static {v0, p1}, Lcom/applovin/impl/mediation/debugger/ui/testmode/a;->c(Lcom/applovin/impl/mediation/debugger/ui/testmode/a;Landroid/view/View;)V
 
     return-void
 
     :pswitch_2
-    invoke-static {v1, p1}, Lcom/applovin/impl/mediation/debugger/ui/testmode/a;->b(Lcom/applovin/impl/mediation/debugger/ui/testmode/a;Landroid/view/View;)V
+    iget-object v0, p0, Lcom/applovin/impl/mediation/debugger/ui/testmode/b;->c:Lcom/applovin/impl/mediation/debugger/ui/testmode/a;
+
+    invoke-static {v0, p1}, Lcom/applovin/impl/mediation/debugger/ui/testmode/a;->d(Lcom/applovin/impl/mediation/debugger/ui/testmode/a;Landroid/view/View;)V
 
     return-void
 

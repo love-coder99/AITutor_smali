@@ -1,5 +1,5 @@
 .class public final Landroidx/viewpager2/adapter/f;
-.super Landroidx/recyclerview/widget/i0;
+.super Landroidx/recyclerview/widget/E;
 .source "SourceFile"
 
 

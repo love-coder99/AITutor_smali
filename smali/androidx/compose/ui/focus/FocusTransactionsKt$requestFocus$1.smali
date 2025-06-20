@@ -3,14 +3,14 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lzh/a;
+.implements Lka/a;
 
 
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "Lkotlin/jvm/internal/Lambda;",
-        "Lzh/a;"
+        "Lka/a;"
     }
 .end annotation
 
@@ -19,7 +19,7 @@
         "\u0000\u0008\n\u0002\u0018\u0002\n\u0002\u0008\u0003\u0010\u0003\u001a\u00020\u0000H\n\u00a2\u0006\u0004\u0008\u0001\u0010\u0002"
     }
     d2 = {
-        "Lqh/r;",
+        "LX9/j;",
         "invoke",
         "()V",
         "<anonymous>"
@@ -58,7 +58,7 @@
     .line 1
     invoke-virtual {p0}, Landroidx/compose/ui/focus/FocusTransactionsKt$requestFocus$1;->invoke()V
 
-    sget-object v0, Lqh/r;->a:Lqh/r;
+    sget-object v0, LX9/j;->a:LX9/j;
 
     return-object v0
 .end method
@@ -66,17 +66,18 @@
 .method public final invoke()V
     .locals 2
 
+    .line 2
     iget-object v0, p0, Landroidx/compose/ui/focus/FocusTransactionsKt$requestFocus$1;->$this_requestFocus:Landroidx/compose/ui/focus/w;
 
-    .line 2
+    .line 3
     iget-object v1, v0, Landroidx/compose/ui/n;->b:Landroidx/compose/ui/n;
 
-    .line 3
+    .line 4
     iget-boolean v1, v1, Landroidx/compose/ui/n;->o:Z
 
     if-eqz v1, :cond_0
 
-    .line 4
+    .line 5
     invoke-static {v0}, Landroidx/compose/ui/focus/a;->C(Landroidx/compose/ui/focus/w;)V
 
     :cond_0

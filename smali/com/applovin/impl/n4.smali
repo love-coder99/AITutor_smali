@@ -32,21 +32,22 @@
 
     if-eqz p0, :cond_1
 
+    .line 4
     const-string v0, "states"
 
-    .line 4
-    invoke-static {p0, v0}, Landroidx/compose/foundation/text/modifiers/f;->v(Lorg/json/JSONObject;Ljava/lang/String;)Lorg/json/JSONArray;
+    .line 5
+    invoke-static {v0, p0}, Lcom/android/billingclient/api/a;->h(Ljava/lang/String;Lorg/json/JSONObject;)Lorg/json/JSONArray;
 
     move-result-object p0
 
-    .line 5
+    .line 6
     new-instance v0, Ljava/util/ArrayList;
 
     invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
 
     const/4 v1, 0x0
 
-    .line 6
+    .line 7
     :goto_0
     invoke-virtual {p0}, Lorg/json/JSONArray;->length()I
 
@@ -54,7 +55,7 @@
 
     if-ge v1, v2, :cond_0
 
-    .line 7
+    .line 8
     new-instance v2, Lorg/json/JSONObject;
 
     invoke-direct {v2}, Lorg/json/JSONObject;-><init>()V
@@ -63,7 +64,7 @@
 
     move-result-object v2
 
-    .line 8
+    .line 9
     invoke-static {v2, p1}, Lcom/applovin/impl/i4;->a(Lorg/json/JSONObject;Lcom/applovin/impl/sdk/j;)Lcom/applovin/impl/i4;
 
     move-result-object v2
@@ -77,7 +78,7 @@
     :cond_0
     return-object v0
 
-    .line 9
+    .line 10
     :cond_1
     new-instance p0, Ljava/lang/IllegalStateException;
 
@@ -87,7 +88,7 @@
 
     throw p0
 
-    .line 10
+    .line 11
     :cond_2
     new-instance p0, Ljava/lang/IllegalStateException;
 
@@ -101,9 +102,9 @@
 .method public static a(Lcom/applovin/impl/sdk/j;)Ljava/util/List;
     .locals 1
 
+    .line 15
     sget v0, Lcom/applovin/sdk/R$raw;->applovin_consent_flow_privacy_policy:I
 
-    .line 14
     invoke-static {v0, p0}, Lcom/applovin/impl/n4;->a(ILcom/applovin/impl/sdk/j;)Ljava/util/List;
 
     move-result-object p0

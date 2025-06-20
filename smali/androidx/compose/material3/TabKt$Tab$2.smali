@@ -3,14 +3,14 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lzh/e;
+.implements Lka/e;
 
 
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "Lkotlin/jvm/internal/Lambda;",
-        "Lzh/e;"
+        "Lka/e;"
     }
 .end annotation
 
@@ -32,10 +32,10 @@
 
 .field final synthetic $enabled:Z
 
-.field final synthetic $icon:Lzh/e;
+.field final synthetic $icon:Lka/e;
     .annotation system Ldalvik/annotation/Signature;
         value = {
-            "Lzh/e;"
+            "Lka/e;"
         }
     .end annotation
 .end field
@@ -44,10 +44,10 @@
 
 .field final synthetic $modifier:Landroidx/compose/ui/o;
 
-.field final synthetic $onClick:Lzh/a;
+.field final synthetic $onClick:Lka/a;
     .annotation system Ldalvik/annotation/Signature;
         value = {
-            "Lzh/a;"
+            "Lka/a;"
         }
     .end annotation
 .end field
@@ -56,10 +56,10 @@
 
 .field final synthetic $selectedContentColor:J
 
-.field final synthetic $text:Lzh/e;
+.field final synthetic $text:Lka/e;
     .annotation system Ldalvik/annotation/Signature;
         value = {
-            "Lzh/e;"
+            "Lka/e;"
         }
     .end annotation
 .end field
@@ -68,16 +68,16 @@
 
 
 # direct methods
-.method public constructor <init>(ZLzh/a;Landroidx/compose/ui/o;ZLzh/e;Lzh/e;JJLandroidx/compose/foundation/interaction/l;II)V
+.method public constructor <init>(ZLka/a;Landroidx/compose/ui/o;ZLka/e;Lka/e;JJLandroidx/compose/foundation/interaction/l;II)V
     .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(Z",
-            "Lzh/a;",
+            "Lka/a;",
             "Landroidx/compose/ui/o;",
             "Z",
-            "Lzh/e;",
-            "Lzh/e;",
+            "Lka/e;",
+            "Lka/e;",
             "JJ",
             "Landroidx/compose/foundation/interaction/l;",
             "II)V"
@@ -87,30 +87,56 @@
     .line 1
     iput-boolean p1, p0, Landroidx/compose/material3/TabKt$Tab$2;->$selected:Z
 
-    iput-object p2, p0, Landroidx/compose/material3/TabKt$Tab$2;->$onClick:Lzh/a;
+    .line 2
+    .line 3
+    iput-object p2, p0, Landroidx/compose/material3/TabKt$Tab$2;->$onClick:Lka/a;
 
+    .line 4
+    .line 5
     iput-object p3, p0, Landroidx/compose/material3/TabKt$Tab$2;->$modifier:Landroidx/compose/ui/o;
 
+    .line 6
+    .line 7
     iput-boolean p4, p0, Landroidx/compose/material3/TabKt$Tab$2;->$enabled:Z
 
-    iput-object p5, p0, Landroidx/compose/material3/TabKt$Tab$2;->$text:Lzh/e;
+    .line 8
+    .line 9
+    iput-object p5, p0, Landroidx/compose/material3/TabKt$Tab$2;->$text:Lka/e;
 
-    iput-object p6, p0, Landroidx/compose/material3/TabKt$Tab$2;->$icon:Lzh/e;
+    .line 10
+    .line 11
+    iput-object p6, p0, Landroidx/compose/material3/TabKt$Tab$2;->$icon:Lka/e;
 
+    .line 12
+    .line 13
     iput-wide p7, p0, Landroidx/compose/material3/TabKt$Tab$2;->$selectedContentColor:J
 
+    .line 14
+    .line 15
     iput-wide p9, p0, Landroidx/compose/material3/TabKt$Tab$2;->$unselectedContentColor:J
 
+    .line 16
+    .line 17
     iput-object p11, p0, Landroidx/compose/material3/TabKt$Tab$2;->$interactionSource:Landroidx/compose/foundation/interaction/l;
 
+    .line 18
+    .line 19
     iput p12, p0, Landroidx/compose/material3/TabKt$Tab$2;->$$changed:I
 
+    .line 20
+    .line 21
     iput p13, p0, Landroidx/compose/material3/TabKt$Tab$2;->$$default:I
 
+    .line 22
+    .line 23
     const/4 p1, 0x2
 
+    .line 24
     invoke-direct {p0, p1}, Lkotlin/jvm/internal/Lambda;-><init>(I)V
 
+    .line 25
+    .line 26
+    .line 27
     return-void
 .end method
 
@@ -120,7 +146,7 @@
     .locals 0
 
     .line 1
-    check-cast p1, Landroidx/compose/runtime/l;
+    check-cast p1, Landroidx/compose/runtime/j;
 
     check-cast p2, Ljava/lang/Number;
 
@@ -128,14 +154,14 @@
 
     move-result p2
 
-    invoke-virtual {p0, p1, p2}, Landroidx/compose/material3/TabKt$Tab$2;->invoke(Landroidx/compose/runtime/l;I)V
+    invoke-virtual {p0, p1, p2}, Landroidx/compose/material3/TabKt$Tab$2;->invoke(Landroidx/compose/runtime/j;I)V
 
-    sget-object p1, Lqh/r;->a:Lqh/r;
+    sget-object p1, LX9/j;->a:LX9/j;
 
     return-object p1
 .end method
 
-.method public final invoke(Landroidx/compose/runtime/l;I)V
+.method public final invoke(Landroidx/compose/runtime/j;I)V
     .locals 15
 
     .line 2
@@ -143,15 +169,15 @@
 
     iget-boolean v1, v0, Landroidx/compose/material3/TabKt$Tab$2;->$selected:Z
 
-    iget-object v2, v0, Landroidx/compose/material3/TabKt$Tab$2;->$onClick:Lzh/a;
+    iget-object v2, v0, Landroidx/compose/material3/TabKt$Tab$2;->$onClick:Lka/a;
 
     iget-object v3, v0, Landroidx/compose/material3/TabKt$Tab$2;->$modifier:Landroidx/compose/ui/o;
 
     iget-boolean v4, v0, Landroidx/compose/material3/TabKt$Tab$2;->$enabled:Z
 
-    iget-object v5, v0, Landroidx/compose/material3/TabKt$Tab$2;->$text:Lzh/e;
+    iget-object v5, v0, Landroidx/compose/material3/TabKt$Tab$2;->$text:Lka/e;
 
-    iget-object v6, v0, Landroidx/compose/material3/TabKt$Tab$2;->$icon:Lzh/e;
+    iget-object v6, v0, Landroidx/compose/material3/TabKt$Tab$2;->$icon:Lka/e;
 
     iget-wide v7, v0, Landroidx/compose/material3/TabKt$Tab$2;->$selectedContentColor:J
 
@@ -163,7 +189,7 @@
 
     or-int/lit8 v12, v12, 0x1
 
-    invoke-static {v12}, Landroidx/compose/runtime/q;->A(I)I
+    invoke-static {v12}, Landroidx/compose/runtime/o;->f0(I)I
 
     move-result v13
 
@@ -171,7 +197,7 @@
 
     move-object/from16 v12, p1
 
-    invoke-static/range {v1 .. v14}, Landroidx/compose/material3/l1;->b(ZLzh/a;Landroidx/compose/ui/o;ZLzh/e;Lzh/e;JJLandroidx/compose/foundation/interaction/l;Landroidx/compose/runtime/l;II)V
+    invoke-static/range {v1 .. v14}, Landroidx/compose/material3/H0;->b(ZLka/a;Landroidx/compose/ui/o;ZLka/e;Lka/e;JJLandroidx/compose/foundation/interaction/l;Landroidx/compose/runtime/j;II)V
 
     return-void
 .end method

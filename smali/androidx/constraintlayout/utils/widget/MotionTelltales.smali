@@ -35,11 +35,12 @@
 
     const/4 v0, 0x2
 
+    .line 3
     new-array v0, v0, [F
 
     iput-object v0, p0, Landroidx/constraintlayout/utils/widget/MotionTelltales;->p:[F
 
-    .line 3
+    .line 4
     new-instance v0, Landroid/graphics/Matrix;
 
     invoke-direct {v0}, Landroid/graphics/Matrix;-><init>()V
@@ -48,17 +49,20 @@
 
     const/4 v0, 0x0
 
+    .line 5
     iput v0, p0, Landroidx/constraintlayout/utils/widget/MotionTelltales;->r:I
 
     const v0, -0xff01
 
+    .line 6
     iput v0, p0, Landroidx/constraintlayout/utils/widget/MotionTelltales;->s:I
 
     const/high16 v0, 0x3e800000    # 0.25f
 
+    .line 7
     iput v0, p0, Landroidx/constraintlayout/utils/widget/MotionTelltales;->t:F
 
-    .line 4
+    .line 8
     invoke-virtual {p0, p1, p2}, Landroidx/constraintlayout/utils/widget/MotionTelltales;->b(Landroid/content/Context;Landroid/util/AttributeSet;)V
 
     return-void
@@ -67,10 +71,10 @@
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
     .locals 0
 
-    .line 5
+    .line 9
     invoke-direct {p0, p1, p2, p3}, Landroidx/constraintlayout/utils/widget/MockView;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
 
-    .line 6
+    .line 10
     new-instance p3, Landroid/graphics/Paint;
 
     invoke-direct {p3}, Landroid/graphics/Paint;-><init>()V
@@ -79,11 +83,12 @@
 
     const/4 p3, 0x2
 
+    .line 11
     new-array p3, p3, [F
 
     iput-object p3, p0, Landroidx/constraintlayout/utils/widget/MotionTelltales;->p:[F
 
-    .line 7
+    .line 12
     new-instance p3, Landroid/graphics/Matrix;
 
     invoke-direct {p3}, Landroid/graphics/Matrix;-><init>()V
@@ -92,17 +97,20 @@
 
     const/4 p3, 0x0
 
+    .line 13
     iput p3, p0, Landroidx/constraintlayout/utils/widget/MotionTelltales;->r:I
 
     const p3, -0xff01
 
+    .line 14
     iput p3, p0, Landroidx/constraintlayout/utils/widget/MotionTelltales;->s:I
 
     const/high16 p3, 0x3e800000    # 0.25f
 
+    .line 15
     iput p3, p0, Landroidx/constraintlayout/utils/widget/MotionTelltales;->t:F
 
-    .line 8
+    .line 16
     invoke-virtual {p0, p1, p2}, Landroidx/constraintlayout/utils/widget/MotionTelltales;->b(Landroid/content/Context;Landroid/util/AttributeSet;)V
 
     return-void
@@ -118,7 +126,7 @@
 
     .line 2
     .line 3
-    sget-object v0, Ly2/r;->MotionTelltales:[I
+    sget-object v0, Ld1/r;->MotionTelltales:[I
 
     .line 4
     .line 5
@@ -154,7 +162,7 @@
     move-result v1
 
     .line 20
-    sget v2, Ly2/r;->MotionTelltales_telltales_tailColor:I
+    sget v2, Ld1/r;->MotionTelltales_telltales_tailColor:I
 
     .line 21
     .line 22
@@ -182,7 +190,7 @@
 
     .line 33
     :cond_0
-    sget v2, Ly2/r;->MotionTelltales_telltales_velocityMode:I
+    sget v2, Ld1/r;->MotionTelltales_telltales_velocityMode:I
 
     .line 34
     .line 35
@@ -210,7 +218,7 @@
 
     .line 46
     :cond_1
-    sget v2, Ly2/r;->MotionTelltales_telltales_tailScale:I
+    sget v2, Ld1/r;->MotionTelltales_telltales_tailScale:I
 
     .line 47
     .line 48
@@ -295,1988 +303,2068 @@
 
     .line 2
     .line 3
-    invoke-super/range {p0 .. p1}, Landroidx/constraintlayout/utils/widget/MockView;->onDraw(Landroid/graphics/Canvas;)V
+    const/4 v1, 0x5
 
     .line 4
-    .line 5
-    .line 6
-    invoke-virtual/range {p0 .. p0}, Landroid/view/View;->getMatrix()Landroid/graphics/Matrix;
+    const/4 v2, 0x1
 
+    .line 5
+    invoke-super/range {p0 .. p1}, Landroidx/constraintlayout/utils/widget/MockView;->onDraw(Landroid/graphics/Canvas;)V
+
+    .line 6
     .line 7
     .line 8
+    invoke-virtual/range {p0 .. p0}, Landroid/view/View;->getMatrix()Landroid/graphics/Matrix;
+
     .line 9
-    move-result-object v1
-
     .line 10
-    iget-object v2, v0, Landroidx/constraintlayout/utils/widget/MotionTelltales;->q:Landroid/graphics/Matrix;
-
     .line 11
+    move-result-object v3
+
     .line 12
-    invoke-virtual {v1, v2}, Landroid/graphics/Matrix;->invert(Landroid/graphics/Matrix;)Z
+    iget-object v4, v0, Landroidx/constraintlayout/utils/widget/MotionTelltales;->q:Landroid/graphics/Matrix;
 
     .line 13
     .line 14
-    .line 15
-    iget-object v1, v0, Landroidx/constraintlayout/utils/widget/MotionTelltales;->o:Landroidx/constraintlayout/motion/widget/MotionLayout;
+    invoke-virtual {v3, v4}, Landroid/graphics/Matrix;->invert(Landroid/graphics/Matrix;)Z
 
+    .line 15
     .line 16
     .line 17
-    if-nez v1, :cond_1
+    iget-object v3, v0, Landroidx/constraintlayout/utils/widget/MotionTelltales;->o:Landroidx/constraintlayout/motion/widget/MotionLayout;
 
     .line 18
     .line 19
-    invoke-virtual/range {p0 .. p0}, Landroid/view/View;->getParent()Landroid/view/ViewParent;
+    if-nez v3, :cond_1
 
     .line 20
     .line 21
+    invoke-virtual/range {p0 .. p0}, Landroid/view/View;->getParent()Landroid/view/ViewParent;
+
     .line 22
+    .line 23
+    .line 24
     move-result-object v1
 
-    .line 23
-    instance-of v2, v1, Landroidx/constraintlayout/motion/widget/MotionLayout;
-
-    .line 24
     .line 25
-    if-eqz v2, :cond_0
+    instance-of v2, v1, Landroidx/constraintlayout/motion/widget/MotionLayout;
 
     .line 26
     .line 27
-    check-cast v1, Landroidx/constraintlayout/motion/widget/MotionLayout;
+    if-eqz v2, :cond_0
 
     .line 28
     .line 29
-    iput-object v1, v0, Landroidx/constraintlayout/utils/widget/MotionTelltales;->o:Landroidx/constraintlayout/motion/widget/MotionLayout;
+    check-cast v1, Landroidx/constraintlayout/motion/widget/MotionLayout;
 
     .line 30
     .line 31
+    iput-object v1, v0, Landroidx/constraintlayout/utils/widget/MotionTelltales;->o:Landroidx/constraintlayout/motion/widget/MotionLayout;
+
+    .line 32
+    .line 33
     :cond_0
     return-void
 
-    .line 32
+    .line 34
     :cond_1
     invoke-virtual/range {p0 .. p0}, Landroid/view/View;->getWidth()I
 
-    .line 33
-    .line 34
     .line 35
-    move-result v1
-
     .line 36
-    invoke-virtual/range {p0 .. p0}, Landroid/view/View;->getHeight()I
-
     .line 37
-    .line 38
-    .line 39
     move-result v3
 
-    .line 40
-    const/4 v4, 0x5
-
-    .line 41
-    new-array v5, v4, [F
-
-    .line 42
-    .line 43
-    fill-array-data v5, :array_0
-
-    .line 44
-    .line 45
-    .line 46
-    const/4 v7, 0x0
-
-    .line 47
-    :goto_0
-    if-ge v7, v4, :cond_29
-
-    .line 48
-    .line 49
-    aget v14, v5, v7
-
-    .line 50
-    .line 51
-    const/4 v15, 0x0
-
-    .line 52
-    :goto_1
-    if-ge v15, v4, :cond_28
-
-    .line 53
-    .line 54
-    aget v13, v5, v15
-
-    .line 55
-    .line 56
-    iget-object v8, v0, Landroidx/constraintlayout/utils/widget/MotionTelltales;->o:Landroidx/constraintlayout/motion/widget/MotionLayout;
-
-    .line 57
-    .line 58
-    iget-object v12, v0, Landroidx/constraintlayout/utils/widget/MotionTelltales;->p:[F
-
-    .line 59
-    .line 60
-    iget v11, v0, Landroidx/constraintlayout/utils/widget/MotionTelltales;->r:I
-
-    .line 61
-    .line 62
-    iget v9, v8, Landroidx/constraintlayout/motion/widget/MotionLayout;->v:F
-
-    .line 63
-    .line 64
-    iget v10, v8, Landroidx/constraintlayout/motion/widget/MotionLayout;->G:F
-
-    .line 65
-    .line 66
-    iget-object v4, v8, Landroidx/constraintlayout/motion/widget/MotionLayout;->t:Lw2/r;
-
-    .line 67
-    .line 68
-    if-eqz v4, :cond_2
-
-    .line 69
-    .line 70
-    iget v4, v8, Landroidx/constraintlayout/motion/widget/MotionLayout;->I:F
-
-    .line 71
-    .line 72
-    sub-float/2addr v4, v10
-
-    .line 73
-    invoke-static {v4}, Ljava/lang/Math;->signum(F)F
-
-    .line 74
-    .line 75
-    .line 76
-    move-result v4
-
-    .line 77
-    iget-object v9, v8, Landroidx/constraintlayout/motion/widget/MotionLayout;->t:Lw2/r;
-
-    .line 78
-    .line 79
-    iget v10, v8, Landroidx/constraintlayout/motion/widget/MotionLayout;->G:F
-
-    .line 80
-    .line 81
-    const v16, 0x3727c5ac    # 1.0E-5f
-
-    .line 82
-    .line 83
-    .line 84
-    add-float v10, v10, v16
-
-    .line 85
-    .line 86
-    invoke-interface {v9, v10}, Landroid/animation/TimeInterpolator;->getInterpolation(F)F
-
-    .line 87
-    .line 88
-    .line 89
-    move-result v9
-
-    .line 90
-    iget-object v10, v8, Landroidx/constraintlayout/motion/widget/MotionLayout;->t:Lw2/r;
-
-    .line 91
-    .line 92
-    iget v6, v8, Landroidx/constraintlayout/motion/widget/MotionLayout;->G:F
-
-    .line 93
-    .line 94
-    invoke-interface {v10, v6}, Landroid/animation/TimeInterpolator;->getInterpolation(F)F
-
-    .line 95
-    .line 96
-    .line 97
-    move-result v10
-
-    .line 98
-    sub-float/2addr v9, v10
-
-    .line 99
-    div-float v9, v9, v16
-
-    .line 100
-    .line 101
-    mul-float v9, v9, v4
-
-    .line 102
-    .line 103
-    iget v4, v8, Landroidx/constraintlayout/motion/widget/MotionLayout;->E:F
-
-    .line 104
-    .line 105
-    div-float/2addr v9, v4
-
-    .line 106
-    :cond_2
-    iget-object v4, v8, Landroidx/constraintlayout/motion/widget/MotionLayout;->t:Lw2/r;
-
-    .line 107
-    .line 108
-    instance-of v6, v4, Lw2/r;
-
-    .line 109
-    .line 110
-    if-eqz v6, :cond_3
-
-    .line 111
-    .line 112
-    invoke-virtual {v4}, Lw2/r;->a()F
-
-    .line 113
-    .line 114
-    .line 115
-    move-result v9
-
-    .line 116
-    :cond_3
-    move v4, v9
-
-    .line 117
-    iget-object v6, v8, Landroidx/constraintlayout/motion/widget/MotionLayout;->C:Ljava/util/HashMap;
-
-    .line 118
-    .line 119
-    invoke-virtual {v6, v0}, Ljava/util/HashMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
-
-    .line 120
-    .line 121
-    .line 122
-    move-result-object v6
-
-    .line 123
-    check-cast v6, Lw2/q;
-
-    .line 124
-    .line 125
-    and-int/lit8 v8, v11, 0x1
-
-    .line 126
-    .line 127
-    const/16 v16, 0x1
-
-    .line 128
-    .line 129
-    if-nez v8, :cond_26
-
-    .line 130
-    .line 131
-    invoke-virtual/range {p0 .. p0}, Landroid/view/View;->getWidth()I
-
-    .line 132
-    .line 133
-    .line 134
-    move-result v17
-
-    .line 135
+    .line 38
     invoke-virtual/range {p0 .. p0}, Landroid/view/View;->getHeight()I
 
-    .line 136
-    .line 137
-    .line 138
-    move-result v18
-
-    .line 139
-    iget-object v8, v6, Lw2/q;->v:[F
-
-    .line 140
-    .line 141
-    invoke-virtual {v6, v8, v10}, Lw2/q;->b([FF)F
-
-    .line 142
-    .line 143
-    .line 144
-    move-result v9
-
-    .line 145
-    iget-object v10, v6, Lw2/q;->y:Ljava/util/HashMap;
-
-    .line 146
-    .line 147
-    move-object/from16 v19, v5
-
-    .line 148
-    .line 149
-    const-string v5, "translationX"
-
-    .line 150
-    .line 151
-    const/16 v20, 0x0
-
-    .line 152
-    .line 153
-    if-nez v10, :cond_4
-
-    .line 154
-    .line 155
-    move/from16 v21, v11
-
-    .line 156
-    .line 157
-    move-object/from16 v10, v20
-
-    .line 158
-    .line 159
-    goto :goto_2
-
-    .line 160
-    :cond_4
-    invoke-virtual {v10, v5}, Ljava/util/HashMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
-
-    .line 161
-    .line 162
-    .line 163
-    move-result-object v10
-
-    .line 164
-    check-cast v10, Lv2/l;
-
-    .line 165
-    .line 166
-    move/from16 v21, v11
-
-    .line 167
-    .line 168
-    :goto_2
-    iget-object v11, v6, Lw2/q;->y:Ljava/util/HashMap;
-
-    .line 169
-    .line 170
-    move/from16 v22, v7
-
-    .line 171
-    .line 172
-    const-string v7, "translationY"
-
-    .line 173
-    .line 174
-    if-nez v11, :cond_5
-
-    .line 175
-    .line 176
-    move/from16 v23, v15
-
-    .line 177
-    .line 178
-    move-object/from16 v11, v20
-
-    .line 179
-    .line 180
-    goto :goto_3
-
-    .line 181
-    :cond_5
-    invoke-virtual {v11, v7}, Ljava/util/HashMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
-
-    .line 182
-    .line 183
-    .line 184
-    move-result-object v11
-
-    .line 185
-    check-cast v11, Lv2/l;
+    .line 39
+    .line 40
+    .line 41
+    move-result v5
+
+    .line 42
+    new-array v6, v1, [F
+
+    .line 43
+    .line 44
+    fill-array-data v6, :array_0
+
+    .line 45
+    .line 46
+    .line 47
+    const/4 v8, 0x0
+
+    .line 48
+    :goto_0
+    if-ge v8, v1, :cond_29
+
+    .line 49
+    .line 50
+    aget v15, v6, v8
 
-    .line 186
-    .line 187
-    move/from16 v23, v15
+    .line 51
+    .line 52
+    const/4 v14, 0x0
 
-    .line 188
-    .line 189
-    :goto_3
-    iget-object v15, v6, Lw2/q;->y:Ljava/util/HashMap;
-
-    .line 190
-    .line 191
-    move/from16 v24, v3
-
-    .line 192
-    .line 193
-    const-string v3, "rotation"
-
-    .line 194
-    .line 195
-    if-nez v15, :cond_6
-
-    .line 196
-    .line 197
-    move/from16 v25, v1
-
-    .line 198
-    .line 199
-    move-object/from16 v15, v20
-
-    .line 200
-    .line 201
-    goto :goto_4
-
-    .line 202
-    :cond_6
-    invoke-virtual {v15, v3}, Ljava/util/HashMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
-
-    .line 203
-    .line 204
-    .line 205
-    move-result-object v15
-
-    .line 206
-    check-cast v15, Lv2/l;
-
-    .line 207
-    .line 208
-    move/from16 v25, v1
-
-    .line 209
-    .line 210
-    :goto_4
-    iget-object v1, v6, Lw2/q;->y:Ljava/util/HashMap;
-
-    .line 211
-    .line 212
-    move-object/from16 v26, v2
-
-    .line 213
-    .line 214
-    const-string v2, "scaleX"
-
-    .line 215
-    .line 216
-    if-nez v1, :cond_7
-
-    .line 217
-    .line 218
-    move-object/from16 v1, v20
-
-    .line 219
-    .line 220
-    goto :goto_5
-
-    .line 221
-    :cond_7
-    invoke-virtual {v1, v2}, Ljava/util/HashMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
-
-    .line 222
-    .line 223
-    .line 224
-    move-result-object v1
-
-    .line 225
-    check-cast v1, Lv2/l;
-
-    .line 226
-    .line 227
-    :goto_5
-    iget-object v0, v6, Lw2/q;->y:Ljava/util/HashMap;
-
-    .line 228
-    .line 229
-    move/from16 v27, v4
-
-    .line 230
-    .line 231
-    const-string v4, "scaleY"
-
-    .line 232
-    .line 233
-    if-nez v0, :cond_8
-
-    .line 234
-    .line 235
-    move-object/from16 v28, v8
-
-    .line 236
-    .line 237
-    move-object/from16 v0, v20
-
-    .line 238
-    .line 239
-    goto :goto_6
-
-    .line 240
-    :cond_8
-    invoke-virtual {v0, v4}, Ljava/util/HashMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
-
-    .line 241
-    .line 242
-    .line 243
-    move-result-object v0
-
-    .line 244
-    check-cast v0, Lv2/l;
-
-    .line 245
-    .line 246
-    move-object/from16 v28, v8
-
-    .line 247
-    .line 248
-    :goto_6
-    iget-object v8, v6, Lw2/q;->z:Ljava/util/HashMap;
-
-    .line 249
-    .line 250
-    if-nez v8, :cond_9
-
-    .line 251
-    .line 252
-    move-object/from16 v5, v20
-
-    .line 253
-    .line 254
-    goto :goto_7
-
-    .line 255
-    :cond_9
-    invoke-virtual {v8, v5}, Ljava/util/HashMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
-
-    .line 256
-    .line 257
-    .line 258
-    move-result-object v5
-
-    .line 259
-    check-cast v5, Lv2/g;
-
-    .line 260
-    .line 261
-    :goto_7
-    iget-object v8, v6, Lw2/q;->z:Ljava/util/HashMap;
-
-    .line 262
-    .line 263
-    if-nez v8, :cond_a
-
-    .line 264
-    .line 265
-    move-object/from16 v7, v20
-
-    .line 266
-    .line 267
-    goto :goto_8
-
-    .line 268
-    :cond_a
-    invoke-virtual {v8, v7}, Ljava/util/HashMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
-
-    .line 269
-    .line 270
-    .line 271
+    .line 53
+    :goto_1
+    if-ge v14, v1, :cond_28
+
+    .line 54
+    .line 55
+    aget v13, v6, v14
+
+    .line 56
+    .line 57
+    iget-object v9, v0, Landroidx/constraintlayout/utils/widget/MotionTelltales;->o:Landroidx/constraintlayout/motion/widget/MotionLayout;
+
+    .line 58
+    .line 59
+    iget v12, v0, Landroidx/constraintlayout/utils/widget/MotionTelltales;->r:I
+
+    .line 60
+    .line 61
+    iget v10, v9, Landroidx/constraintlayout/motion/widget/MotionLayout;->v:F
+
+    .line 62
+    .line 63
+    iget v11, v9, Landroidx/constraintlayout/motion/widget/MotionLayout;->G:F
+
+    .line 64
+    .line 65
+    iget-object v1, v9, Landroidx/constraintlayout/motion/widget/MotionLayout;->t:Lb1/r;
+
+    .line 66
+    .line 67
+    if-eqz v1, :cond_2
+
+    .line 68
+    .line 69
+    iget v1, v9, Landroidx/constraintlayout/motion/widget/MotionLayout;->I:F
+
+    .line 70
+    .line 71
+    sub-float/2addr v1, v11
+
+    .line 72
+    invoke-static {v1}, Ljava/lang/Math;->signum(F)F
+
+    .line 73
+    .line 74
+    .line 75
+    move-result v1
+
+    .line 76
+    iget-object v10, v9, Landroidx/constraintlayout/motion/widget/MotionLayout;->t:Lb1/r;
+
+    .line 77
+    .line 78
+    iget v11, v9, Landroidx/constraintlayout/motion/widget/MotionLayout;->G:F
+
+    .line 79
+    .line 80
+    const v16, 0x3727c5ac    # 1.0E-5f
+
+    .line 81
+    .line 82
+    .line 83
+    add-float v11, v11, v16
+
+    .line 84
+    .line 85
+    invoke-interface {v10, v11}, Landroid/animation/TimeInterpolator;->getInterpolation(F)F
+
+    .line 86
+    .line 87
+    .line 88
+    move-result v10
+
+    .line 89
+    iget-object v11, v9, Landroidx/constraintlayout/motion/widget/MotionLayout;->t:Lb1/r;
+
+    .line 90
+    .line 91
+    iget v7, v9, Landroidx/constraintlayout/motion/widget/MotionLayout;->G:F
+
+    .line 92
+    .line 93
+    invoke-interface {v11, v7}, Landroid/animation/TimeInterpolator;->getInterpolation(F)F
+
+    .line 94
+    .line 95
+    .line 96
+    move-result v11
+
+    .line 97
+    sub-float/2addr v10, v11
+
+    .line 98
+    div-float v10, v10, v16
+
+    .line 99
+    .line 100
+    mul-float v10, v10, v1
+
+    .line 101
+    .line 102
+    iget v1, v9, Landroidx/constraintlayout/motion/widget/MotionLayout;->E:F
+
+    .line 103
+    .line 104
+    div-float/2addr v10, v1
+
+    .line 105
+    :cond_2
+    iget-object v1, v9, Landroidx/constraintlayout/motion/widget/MotionLayout;->t:Lb1/r;
+
+    .line 106
+    .line 107
+    instance-of v7, v1, Lb1/r;
+
+    .line 108
+    .line 109
+    if-eqz v7, :cond_3
+
+    .line 110
+    .line 111
+    invoke-virtual {v1}, Lb1/r;->a()F
+
+    .line 112
+    .line 113
+    .line 114
+    move-result v10
+
+    .line 115
+    :cond_3
+    move v1, v10
+
+    .line 116
+    iget-object v7, v9, Landroidx/constraintlayout/motion/widget/MotionLayout;->C:Ljava/util/HashMap;
+
+    .line 117
+    .line 118
+    invoke-virtual {v7, v0}, Ljava/util/HashMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 119
+    .line 120
+    .line 121
     move-result-object v7
 
-    .line 272
-    check-cast v7, Lv2/g;
+    .line 122
+    check-cast v7, Lb1/q;
 
-    .line 273
-    .line 274
-    :goto_8
-    iget-object v8, v6, Lw2/q;->z:Ljava/util/HashMap;
+    .line 123
+    .line 124
+    and-int/lit8 v9, v12, 0x1
 
-    .line 275
-    .line 276
-    if-nez v8, :cond_b
+    .line 125
+    .line 126
+    iget-object v10, v0, Landroidx/constraintlayout/utils/widget/MotionTelltales;->p:[F
 
-    .line 277
-    .line 278
-    move-object/from16 v3, v20
+    .line 127
+    .line 128
+    if-nez v9, :cond_26
 
-    .line 279
-    .line 280
-    goto :goto_9
+    .line 129
+    .line 130
+    invoke-virtual/range {p0 .. p0}, Landroid/view/View;->getWidth()I
 
-    .line 281
-    :cond_b
-    invoke-virtual {v8, v3}, Ljava/util/HashMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
+    .line 131
+    .line 132
+    .line 133
+    move-result v16
 
-    .line 282
-    .line 283
-    .line 284
-    move-result-object v3
+    .line 134
+    invoke-virtual/range {p0 .. p0}, Landroid/view/View;->getHeight()I
 
-    .line 285
-    check-cast v3, Lv2/g;
+    .line 135
+    .line 136
+    .line 137
+    move-result v17
 
-    .line 286
-    .line 287
-    :goto_9
-    iget-object v8, v6, Lw2/q;->z:Ljava/util/HashMap;
+    .line 138
+    iget-object v9, v7, Lb1/q;->v:[F
 
-    .line 288
-    .line 289
-    if-nez v8, :cond_c
+    .line 139
+    .line 140
+    invoke-virtual {v7, v9, v11}, Lb1/q;->b([FF)F
 
-    .line 290
-    .line 291
-    move-object/from16 v2, v20
+    .line 141
+    .line 142
+    .line 143
+    move-result v11
 
-    .line 292
-    .line 293
-    goto :goto_a
+    .line 144
+    iget-object v2, v7, Lb1/q;->y:Ljava/util/HashMap;
 
-    .line 294
-    :cond_c
-    invoke-virtual {v8, v2}, Ljava/util/HashMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
+    .line 145
+    .line 146
+    move-object/from16 v18, v6
 
-    .line 295
-    .line 296
-    .line 297
+    .line 147
+    .line 148
+    const-string v6, "translationX"
+
+    .line 149
+    .line 150
+    const/16 v19, 0x0
+
+    .line 151
+    .line 152
+    if-nez v2, :cond_4
+
+    .line 153
+    .line 154
+    move-object/from16 v20, v10
+
+    .line 155
+    .line 156
+    move-object/from16 v2, v19
+
+    .line 157
+    .line 158
+    goto :goto_2
+
+    .line 159
+    :cond_4
+    invoke-virtual {v2, v6}, Ljava/util/HashMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 160
+    .line 161
+    .line 162
     move-result-object v2
 
-    .line 298
-    check-cast v2, Lv2/g;
+    .line 163
+    check-cast v2, La1/l;
 
-    .line 299
-    .line 300
-    :goto_a
-    iget-object v8, v6, Lw2/q;->z:Ljava/util/HashMap;
+    .line 164
+    .line 165
+    move-object/from16 v20, v10
 
-    .line 301
-    .line 302
-    if-nez v8, :cond_d
+    .line 166
+    .line 167
+    :goto_2
+    iget-object v10, v7, Lb1/q;->y:Ljava/util/HashMap;
 
-    .line 303
-    .line 304
-    :goto_b
-    move-object/from16 v4, v20
+    .line 168
+    .line 169
+    move/from16 v21, v12
 
-    .line 305
-    .line 306
-    goto :goto_c
+    .line 170
+    .line 171
+    const-string v12, "translationY"
 
-    .line 307
-    :cond_d
-    invoke-virtual {v8, v4}, Ljava/util/HashMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
+    .line 172
+    .line 173
+    if-nez v10, :cond_5
 
-    .line 308
-    .line 309
-    .line 310
+    .line 174
+    .line 175
+    move/from16 v22, v14
+
+    .line 176
+    .line 177
+    move-object/from16 v10, v19
+
+    .line 178
+    .line 179
+    goto :goto_3
+
+    .line 180
+    :cond_5
+    invoke-virtual {v10, v12}, Ljava/util/HashMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 181
+    .line 182
+    .line 183
+    move-result-object v10
+
+    .line 184
+    check-cast v10, La1/l;
+
+    .line 185
+    .line 186
+    move/from16 v22, v14
+
+    .line 187
+    .line 188
+    :goto_3
+    iget-object v14, v7, Lb1/q;->y:Ljava/util/HashMap;
+
+    .line 189
+    .line 190
+    move/from16 v23, v8
+
+    .line 191
+    .line 192
+    const-string v8, "rotation"
+
+    .line 193
+    .line 194
+    if-nez v14, :cond_6
+
+    .line 195
+    .line 196
+    move/from16 v24, v5
+
+    .line 197
+    .line 198
+    move-object/from16 v14, v19
+
+    .line 199
+    .line 200
+    goto :goto_4
+
+    .line 201
+    :cond_6
+    invoke-virtual {v14, v8}, Ljava/util/HashMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 202
+    .line 203
+    .line 204
+    move-result-object v14
+
+    .line 205
+    check-cast v14, La1/l;
+
+    .line 206
+    .line 207
+    move/from16 v24, v5
+
+    .line 208
+    .line 209
+    :goto_4
+    iget-object v5, v7, Lb1/q;->y:Ljava/util/HashMap;
+
+    .line 210
+    .line 211
+    move/from16 v25, v3
+
+    .line 212
+    .line 213
+    const-string v3, "scaleX"
+
+    .line 214
+    .line 215
+    if-nez v5, :cond_7
+
+    .line 216
+    .line 217
+    move-object/from16 v26, v4
+
+    .line 218
+    .line 219
+    move-object/from16 v5, v19
+
+    .line 220
+    .line 221
+    goto :goto_5
+
+    .line 222
+    :cond_7
+    invoke-virtual {v5, v3}, Ljava/util/HashMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 223
+    .line 224
+    .line 225
+    move-result-object v5
+
+    .line 226
+    check-cast v5, La1/l;
+
+    .line 227
+    .line 228
+    move-object/from16 v26, v4
+
+    .line 229
+    .line 230
+    :goto_5
+    iget-object v4, v7, Lb1/q;->y:Ljava/util/HashMap;
+
+    .line 231
+    .line 232
+    const-string v0, "scaleY"
+
+    .line 233
+    .line 234
+    if-nez v4, :cond_8
+
+    .line 235
+    .line 236
+    move/from16 v27, v1
+
+    .line 237
+    .line 238
+    move-object/from16 v4, v19
+
+    .line 239
+    .line 240
+    goto :goto_6
+
+    .line 241
+    :cond_8
+    invoke-virtual {v4, v0}, Ljava/util/HashMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 242
+    .line 243
+    .line 244
     move-result-object v4
 
+    .line 245
+    check-cast v4, La1/l;
+
+    .line 246
+    .line 247
+    move/from16 v27, v1
+
+    .line 248
+    .line 249
+    :goto_6
+    iget-object v1, v7, Lb1/q;->z:Ljava/util/HashMap;
+
+    .line 250
+    .line 251
+    if-nez v1, :cond_9
+
+    .line 252
+    .line 253
+    move-object/from16 v1, v19
+
+    .line 254
+    .line 255
+    goto :goto_7
+
+    .line 256
+    :cond_9
+    invoke-virtual {v1, v6}, Ljava/util/HashMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 257
+    .line 258
+    .line 259
+    move-result-object v1
+
+    .line 260
+    check-cast v1, La1/g;
+
+    .line 261
+    .line 262
+    :goto_7
+    iget-object v6, v7, Lb1/q;->z:Ljava/util/HashMap;
+
+    .line 263
+    .line 264
+    if-nez v6, :cond_a
+
+    .line 265
+    .line 266
+    move-object/from16 v6, v19
+
+    .line 267
+    .line 268
+    goto :goto_8
+
+    .line 269
+    :cond_a
+    invoke-virtual {v6, v12}, Ljava/util/HashMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 270
+    .line 271
+    .line 272
+    move-result-object v6
+
+    .line 273
+    check-cast v6, La1/g;
+
+    .line 274
+    .line 275
+    :goto_8
+    iget-object v12, v7, Lb1/q;->z:Ljava/util/HashMap;
+
+    .line 276
+    .line 277
+    if-nez v12, :cond_b
+
+    .line 278
+    .line 279
+    move-object/from16 v8, v19
+
+    .line 280
+    .line 281
+    goto :goto_9
+
+    .line 282
+    :cond_b
+    invoke-virtual {v12, v8}, Ljava/util/HashMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 283
+    .line 284
+    .line 285
+    move-result-object v8
+
+    .line 286
+    check-cast v8, La1/g;
+
+    .line 287
+    .line 288
+    :goto_9
+    iget-object v12, v7, Lb1/q;->z:Ljava/util/HashMap;
+
+    .line 289
+    .line 290
+    if-nez v12, :cond_c
+
+    .line 291
+    .line 292
+    move-object/from16 v3, v19
+
+    .line 293
+    .line 294
+    goto :goto_a
+
+    .line 295
+    :cond_c
+    invoke-virtual {v12, v3}, Ljava/util/HashMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 296
+    .line 297
+    .line 298
+    move-result-object v3
+
+    .line 299
+    check-cast v3, La1/g;
+
+    .line 300
+    .line 301
+    :goto_a
+    iget-object v12, v7, Lb1/q;->z:Ljava/util/HashMap;
+
+    .line 302
+    .line 303
+    if-nez v12, :cond_d
+
+    .line 304
+    .line 305
+    :goto_b
+    move-object/from16 v0, v19
+
+    .line 306
+    .line 307
+    goto :goto_c
+
+    .line 308
+    :cond_d
+    invoke-virtual {v12, v0}, Ljava/util/HashMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 309
+    .line 310
     .line 311
-    move-object/from16 v20, v4
+    move-result-object v0
 
     .line 312
-    .line 313
-    check-cast v20, Lv2/g;
+    move-object/from16 v19, v0
 
+    .line 313
     .line 314
+    check-cast v19, La1/g;
+
     .line 315
+    .line 316
     goto :goto_b
 
-    .line 316
-    :goto_c
-    new-instance v8, Le3/a;
-
     .line 317
-    .line 318
-    invoke-direct {v8}, Ljava/lang/Object;-><init>()V
+    :goto_c
+    new-instance v12, LS0/p;
 
+    .line 318
     .line 319
+    invoke-direct {v12}, Ljava/lang/Object;-><init>()V
+
     .line 320
     .line 321
-    move-object/from16 v20, v12
-
     .line 322
-    .line 323
-    const/4 v12, 0x0
+    move-object/from16 v19, v9
 
+    .line 323
     .line 324
-    iput v12, v8, Le3/a;->e:F
+    const/4 v9, 0x0
 
     .line 325
+    iput v9, v12, LS0/p;->e:F
+
     .line 326
-    iput v12, v8, Le3/a;->d:F
-
     .line 327
+    iput v9, v12, LS0/p;->d:F
+
     .line 328
-    iput v12, v8, Le3/a;->c:F
-
     .line 329
+    iput v9, v12, LS0/p;->c:F
+
     .line 330
-    iput v12, v8, Le3/a;->b:F
-
     .line 331
+    iput v9, v12, LS0/p;->b:F
+
     .line 332
-    iput v12, v8, Le3/a;->a:F
-
     .line 333
+    iput v9, v12, LS0/p;->a:F
+
     .line 334
-    if-eqz v15, :cond_e
-
     .line 335
+    if-eqz v14, :cond_e
+
     .line 336
-    iget-object v12, v15, Lv2/l;->a:Lcom/facebook/appevents/l;
-
     .line 337
+    iget-object v9, v14, La1/l;->a:LN5/a;
+
     .line 338
-    move/from16 v30, v13
-
     .line 339
+    move-object/from16 v29, v6
+
     .line 340
-    move/from16 v29, v14
-
     .line 341
-    .line 342
-    float-to-double v13, v9
+    move-object/from16 v28, v7
 
+    .line 342
     .line 343
-    invoke-virtual {v12, v13, v14}, Lcom/facebook/appevents/l;->h(D)D
+    float-to-double v6, v11
 
     .line 344
+    invoke-virtual {v9, v6, v7}, LN5/a;->q(D)D
+
     .line 345
     .line 346
-    move-result-wide v12
-
     .line 347
-    double-to-float v12, v12
+    move-result-wide v6
 
     .line 348
-    iput v12, v8, Le3/a;->e:F
+    double-to-float v6, v6
 
     .line 349
-    .line 350
-    invoke-virtual {v15, v9}, Lv2/l;->a(F)F
+    iput v6, v12, LS0/p;->e:F
 
+    .line 350
     .line 351
+    invoke-virtual {v14, v11}, La1/l;->a(F)F
+
     .line 352
     .line 353
-    move-result v12
-
     .line 354
-    iput v12, v8, Le3/a;->f:F
+    move-result v6
 
     .line 355
+    iput v6, v12, LS0/p;->f:F
+
     .line 356
+    .line 357
     goto :goto_d
 
-    .line 357
-    :cond_e
-    move/from16 v30, v13
-
     .line 358
+    :cond_e
+    move-object/from16 v29, v6
+
     .line 359
-    move/from16 v29, v14
-
     .line 360
+    move-object/from16 v28, v7
+
     .line 361
-    :goto_d
-    if-eqz v10, :cond_f
-
     .line 362
+    :goto_d
+    if-eqz v2, :cond_f
+
     .line 363
-    iget-object v12, v10, Lv2/l;->a:Lcom/facebook/appevents/l;
-
     .line 364
-    .line 365
-    float-to-double v13, v9
+    iget-object v6, v2, La1/l;->a:LN5/a;
 
+    .line 365
     .line 366
-    invoke-virtual {v12, v13, v14}, Lcom/facebook/appevents/l;->h(D)D
+    move-object v9, v14
 
     .line 367
+    move v7, v15
+
     .line 368
+    float-to-double v14, v11
+
     .line 369
-    move-result-wide v12
+    invoke-virtual {v6, v14, v15}, LN5/a;->q(D)D
 
     .line 370
-    double-to-float v12, v12
-
     .line 371
-    iput v12, v8, Le3/a;->c:F
-
     .line 372
+    move-result-wide v14
+
     .line 373
-    :cond_f
-    if-eqz v11, :cond_10
+    double-to-float v6, v14
 
     .line 374
-    .line 375
-    iget-object v12, v11, Lv2/l;->a:Lcom/facebook/appevents/l;
+    iput v6, v12, LS0/p;->c:F
 
+    .line 375
     .line 376
+    goto :goto_e
+
     .line 377
-    float-to-double v13, v9
+    :cond_f
+    move-object v9, v14
 
     .line 378
-    invoke-virtual {v12, v13, v14}, Lcom/facebook/appevents/l;->h(D)D
+    move v7, v15
 
     .line 379
+    :goto_e
+    if-eqz v10, :cond_10
+
     .line 380
     .line 381
-    move-result-wide v12
+    iget-object v6, v10, La1/l;->a:LN5/a;
 
     .line 382
-    double-to-float v12, v12
-
     .line 383
-    iput v12, v8, Le3/a;->d:F
+    float-to-double v14, v11
 
     .line 384
-    .line 385
-    :cond_10
-    if-eqz v1, :cond_11
+    invoke-virtual {v6, v14, v15}, LN5/a;->q(D)D
 
+    .line 385
     .line 386
     .line 387
-    iget-object v12, v1, Lv2/l;->a:Lcom/facebook/appevents/l;
+    move-result-wide v14
 
     .line 388
+    double-to-float v6, v14
+
     .line 389
-    float-to-double v13, v9
+    iput v6, v12, LS0/p;->d:F
 
     .line 390
-    invoke-virtual {v12, v13, v14}, Lcom/facebook/appevents/l;->h(D)D
-
     .line 391
+    :cond_10
+    if-eqz v5, :cond_11
+
     .line 392
     .line 393
-    move-result-wide v12
+    iget-object v6, v5, La1/l;->a:LN5/a;
 
     .line 394
-    double-to-float v12, v12
-
     .line 395
-    iput v12, v8, Le3/a;->a:F
+    float-to-double v14, v11
 
     .line 396
-    .line 397
-    :cond_11
-    if-eqz v0, :cond_12
+    invoke-virtual {v6, v14, v15}, LN5/a;->q(D)D
 
+    .line 397
     .line 398
     .line 399
-    iget-object v12, v0, Lv2/l;->a:Lcom/facebook/appevents/l;
+    move-result-wide v14
 
     .line 400
+    double-to-float v6, v14
+
     .line 401
-    float-to-double v13, v9
+    iput v6, v12, LS0/p;->a:F
 
     .line 402
-    invoke-virtual {v12, v13, v14}, Lcom/facebook/appevents/l;->h(D)D
-
     .line 403
+    :cond_11
+    if-eqz v4, :cond_12
+
     .line 404
     .line 405
-    move-result-wide v12
+    iget-object v6, v4, La1/l;->a:LN5/a;
 
     .line 406
-    double-to-float v12, v12
-
     .line 407
-    iput v12, v8, Le3/a;->b:F
+    float-to-double v14, v11
 
     .line 408
-    .line 409
-    :cond_12
-    if-eqz v3, :cond_13
+    invoke-virtual {v6, v14, v15}, LN5/a;->q(D)D
 
+    .line 409
     .line 410
     .line 411
-    invoke-virtual {v3, v9}, Lv2/g;->b(F)F
+    move-result-wide v14
 
     .line 412
-    .line 413
-    .line 414
-    move-result v12
+    double-to-float v6, v14
 
+    .line 413
+    iput v6, v12, LS0/p;->b:F
+
+    .line 414
     .line 415
-    iput v12, v8, Le3/a;->e:F
+    :cond_12
+    if-eqz v8, :cond_13
 
     .line 416
     .line 417
-    :cond_13
-    if-eqz v5, :cond_14
+    invoke-virtual {v8, v11}, La1/g;->b(F)F
 
     .line 418
     .line 419
-    invoke-virtual {v5, v9}, Lv2/g;->b(F)F
-
     .line 420
-    .line 421
-    .line 422
-    move-result v12
+    move-result v6
 
+    .line 421
+    iput v6, v12, LS0/p;->e:F
+
+    .line 422
     .line 423
-    iput v12, v8, Le3/a;->c:F
+    :cond_13
+    if-eqz v1, :cond_14
 
     .line 424
     .line 425
-    :cond_14
-    if-eqz v7, :cond_15
+    invoke-virtual {v1, v11}, La1/g;->b(F)F
 
     .line 426
     .line 427
-    invoke-virtual {v7, v9}, Lv2/g;->b(F)F
-
     .line 428
-    .line 429
-    .line 430
-    move-result v12
+    move-result v6
 
+    .line 429
+    iput v6, v12, LS0/p;->c:F
+
+    .line 430
     .line 431
-    iput v12, v8, Le3/a;->d:F
+    :cond_14
+    move-object/from16 v6, v29
 
     .line 432
     .line 433
-    :cond_15
-    if-eqz v2, :cond_16
+    if-eqz v29, :cond_15
 
     .line 434
     .line 435
-    invoke-virtual {v2, v9}, Lv2/g;->b(F)F
+    invoke-virtual {v6, v11}, La1/g;->b(F)F
 
     .line 436
     .line 437
     .line 438
-    move-result v12
+    move-result v14
 
     .line 439
-    iput v12, v8, Le3/a;->a:F
+    iput v14, v12, LS0/p;->d:F
 
     .line 440
     .line 441
-    :cond_16
-    if-eqz v4, :cond_17
+    :cond_15
+    if-eqz v3, :cond_16
 
     .line 442
     .line 443
-    invoke-virtual {v4, v9}, Lv2/g;->b(F)F
+    invoke-virtual {v3, v11}, La1/g;->b(F)F
 
     .line 444
     .line 445
     .line 446
-    move-result v12
+    move-result v14
 
     .line 447
-    iput v12, v8, Le3/a;->b:F
+    iput v14, v12, LS0/p;->a:F
 
     .line 448
     .line 449
-    :cond_17
-    iget-object v12, v6, Lw2/q;->k:Ln2/b;
+    :cond_16
+    if-eqz v0, :cond_17
 
     .line 450
     .line 451
-    if-eqz v12, :cond_19
+    invoke-virtual {v0, v11}, La1/g;->b(F)F
 
     .line 452
     .line 453
-    iget-object v0, v6, Lw2/q;->p:[D
-
     .line 454
+    move-result v14
+
     .line 455
-    array-length v1, v0
+    iput v14, v12, LS0/p;->b:F
 
     .line 456
-    if-lez v1, :cond_18
-
     .line 457
-    .line 458
-    float-to-double v1, v9
+    :cond_17
+    move-object/from16 v14, v28
 
+    .line 458
     .line 459
-    invoke-virtual {v12, v1, v2, v0}, Ln2/b;->f(D[D)V
+    iget-object v15, v14, Lb1/q;->k:LS0/b;
 
     .line 460
     .line 461
+    if-eqz v15, :cond_19
+
     .line 462
-    iget-object v0, v6, Lw2/q;->k:Ln2/b;
-
     .line 463
-    .line 464
-    iget-object v3, v6, Lw2/q;->q:[D
+    iget-object v0, v14, Lb1/q;->p:[D
 
+    .line 464
     .line 465
+    array-length v1, v0
+
     .line 466
-    invoke-virtual {v0, v1, v2, v3}, Ln2/b;->i(D[D)V
+    if-lez v1, :cond_18
 
     .line 467
     .line 468
+    float-to-double v1, v11
+
     .line 469
-    iget-object v0, v6, Lw2/q;->f:Lw2/x;
+    invoke-virtual {v15, v1, v2, v0}, LS0/b;->n(D[D)V
 
     .line 470
     .line 471
-    iget-object v11, v6, Lw2/q;->o:[I
-
     .line 472
+    iget-object v0, v14, Lb1/q;->k:LS0/b;
+
     .line 473
-    iget-object v12, v6, Lw2/q;->q:[D
-
     .line 474
+    iget-object v3, v14, Lb1/q;->q:[D
+
     .line 475
-    iget-object v13, v6, Lw2/q;->p:[D
-
     .line 476
-    .line 477
-    invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+    invoke-virtual {v0, v1, v2, v3}, LS0/b;->r(D[D)V
 
+    .line 477
     .line 478
     .line 479
-    .line 480
-    move-object v14, v8
+    iget-object v0, v14, Lb1/q;->o:[I
 
+    .line 480
     .line 481
-    move/from16 v8, v30
+    iget-object v1, v14, Lb1/q;->q:[D
 
     .line 482
     .line 483
-    move/from16 v9, v29
+    iget-object v2, v14, Lb1/q;->p:[D
 
     .line 484
     .line 485
-    move-object/from16 v10, v20
+    iget-object v3, v14, Lb1/q;->f:Lb1/x;
 
     .line 486
     .line 487
-    move/from16 v0, v21
+    invoke-virtual {v3}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
     .line 488
     .line 489
-    move-object/from16 v1, v20
-
     .line 490
+    move v9, v13
+
     .line 491
-    move/from16 v2, v30
+    move-object/from16 v15, v20
 
     .line 492
     .line 493
-    invoke-static/range {v8 .. v13}, Lw2/x;->h(FF[F[I[D[D)V
+    move v10, v7
 
     .line 494
+    move-object v11, v15
+
     .line 495
+    move-object v4, v12
+
     .line 496
-    goto :goto_e
+    move/from16 v3, v21
 
     .line 497
-    :cond_18
-    move-object v14, v8
-
     .line 498
-    move-object/from16 v1, v20
+    move-object v12, v0
 
     .line 499
+    move v0, v13
+
     .line 500
-    move/from16 v0, v21
+    move-object v13, v1
 
     .line 501
-    .line 502
-    move/from16 v2, v30
+    move/from16 v20, v22
 
+    .line 502
     .line 503
+    move-object v14, v2
+
     .line 504
-    :goto_e
-    move-object v8, v14
+    invoke-static/range {v9 .. v14}, Lb1/x;->e(FF[F[I[D[D)V
 
     .line 505
-    move v9, v2
-
     .line 506
-    move/from16 v10, v29
-
     .line 507
+    goto :goto_f
+
     .line 508
-    move/from16 v11, v17
+    :cond_18
+    move-object v4, v12
 
     .line 509
+    move v0, v13
+
     .line 510
-    move/from16 v12, v18
+    move-object/from16 v15, v20
 
     .line 511
     .line 512
-    move-object v13, v1
+    move/from16 v3, v21
 
     .line 513
-    invoke-virtual/range {v8 .. v13}, Le3/a;->a(FFII[F)V
-
     .line 514
+    move/from16 v20, v22
+
     .line 515
     .line 516
-    goto/16 :goto_10
+    :goto_f
+    move-object v9, v4
 
     .line 517
+    move v10, v0
+
     .line 518
-    :cond_19
-    move-object v14, v8
+    move v11, v7
 
     .line 519
-    move-object/from16 v12, v20
+    move/from16 v12, v16
 
     .line 520
     .line 521
-    move/from16 v13, v30
+    move/from16 v13, v17
 
     .line 522
     .line 523
-    iget-object v8, v6, Lw2/q;->j:[Lcom/facebook/appevents/l;
+    move-object v14, v15
 
     .line 524
-    .line 525
-    if-eqz v8, :cond_1b
+    invoke-virtual/range {v9 .. v14}, LS0/p;->a(FFII[F)V
 
+    .line 525
     .line 526
     .line 527
-    move-object/from16 v8, v28
+    move v1, v0
 
     .line 528
+    move v0, v3
+
     .line 529
-    invoke-virtual {v6, v8, v9}, Lw2/q;->b([FF)F
+    :goto_10
+    move-object v3, v15
 
     .line 530
+    goto/16 :goto_13
+
     .line 531
     .line 532
-    move-result v0
+    :cond_19
+    move-object/from16 v15, v20
 
     .line 533
-    iget-object v1, v6, Lw2/q;->j:[Lcom/facebook/appevents/l;
-
     .line 534
-    .line 535
-    const/4 v2, 0x0
+    move/from16 v20, v22
 
+    .line 535
     .line 536
-    aget-object v1, v1, v2
+    move/from16 v22, v21
 
     .line 537
     .line 538
-    float-to-double v3, v0
+    move-object/from16 v21, v12
 
     .line 539
-    iget-object v0, v6, Lw2/q;->q:[D
-
     .line 540
-    .line 541
-    invoke-virtual {v1, v3, v4, v0}, Lcom/facebook/appevents/l;->i(D[D)V
+    iget-object v12, v14, Lb1/q;->j:[LN5/a;
 
+    .line 541
     .line 542
+    if-eqz v12, :cond_1b
+
     .line 543
     .line 544
-    iget-object v0, v6, Lw2/q;->j:[Lcom/facebook/appevents/l;
+    move-object/from16 v12, v19
 
     .line 545
     .line 546
-    aget-object v0, v0, v2
+    invoke-virtual {v14, v12, v11}, Lb1/q;->b([FF)F
 
     .line 547
     .line 548
-    iget-object v1, v6, Lw2/q;->p:[D
-
     .line 549
+    move-result v0
+
     .line 550
-    invoke-virtual {v0, v3, v4, v1}, Lcom/facebook/appevents/l;->f(D[D)V
+    iget-object v1, v14, Lb1/q;->j:[LN5/a;
 
     .line 551
     .line 552
+    const/4 v2, 0x0
+
     .line 553
-    aget v0, v8, v2
+    aget-object v1, v1, v2
 
     .line 554
     .line 555
-    const/4 v1, 0x0
+    float-to-double v3, v0
 
     .line 556
-    :goto_f
-    iget-object v2, v6, Lw2/q;->q:[D
+    iget-object v0, v14, Lb1/q;->q:[D
 
     .line 557
     .line 558
-    array-length v3, v2
+    invoke-virtual {v1, v3, v4, v0}, LN5/a;->r(D[D)V
 
     .line 559
-    if-ge v1, v3, :cond_1a
-
     .line 560
     .line 561
-    aget-wide v3, v2, v1
+    iget-object v0, v14, Lb1/q;->j:[LN5/a;
 
     .line 562
     .line 563
-    float-to-double v7, v0
+    aget-object v0, v0, v2
 
     .line 564
-    mul-double v3, v3, v7
-
     .line 565
+    iget-object v1, v14, Lb1/q;->p:[D
+
     .line 566
-    aput-wide v3, v2, v1
-
     .line 567
-    .line 568
-    add-int/lit8 v1, v1, 0x1
+    invoke-virtual {v0, v3, v4, v1}, LN5/a;->n(D[D)V
 
+    .line 568
     .line 569
     .line 570
-    goto :goto_f
+    aget v0, v12, v2
 
     .line 571
-    :cond_1a
-    iget-object v0, v6, Lw2/q;->f:Lw2/x;
-
     .line 572
+    const/4 v1, 0x0
+
     .line 573
-    iget-object v11, v6, Lw2/q;->o:[I
+    :goto_11
+    iget-object v2, v14, Lb1/q;->q:[D
 
     .line 574
     .line 575
-    iget-object v1, v6, Lw2/q;->p:[D
+    array-length v3, v2
 
     .line 576
-    .line 577
-    invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+    if-ge v1, v3, :cond_1a
 
+    .line 577
     .line 578
+    aget-wide v3, v2, v1
+
     .line 579
     .line 580
-    move/from16 v0, v21
+    float-to-double v5, v0
 
     .line 581
-    .line 582
-    move v8, v13
+    mul-double v3, v3, v5
 
+    .line 582
     .line 583
-    move/from16 v9, v29
+    aput-wide v3, v2, v1
 
     .line 584
     .line 585
-    move-object v10, v12
+    const/4 v2, 0x1
 
     .line 586
-    move-object v3, v12
+    add-int/2addr v1, v2
 
     .line 587
-    move-object v12, v2
+    goto :goto_11
 
     .line 588
-    move v2, v13
+    :cond_1a
+    iget-object v12, v14, Lb1/q;->o:[I
 
     .line 589
-    move-object v13, v1
-
     .line 590
-    invoke-static/range {v8 .. v13}, Lw2/x;->h(FF[F[I[D[D)V
+    iget-object v0, v14, Lb1/q;->p:[D
 
     .line 591
     .line 592
-    .line 593
-    move-object v8, v14
+    iget-object v1, v14, Lb1/q;->f:Lb1/x;
 
+    .line 593
     .line 594
-    move v9, v2
+    invoke-virtual {v1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
     .line 595
-    move/from16 v10, v29
-
     .line 596
     .line 597
-    move/from16 v11, v17
+    move v9, v13
 
     .line 598
+    move v10, v7
+
     .line 599
-    move/from16 v12, v18
+    move-object v11, v15
 
     .line 600
-    .line 601
-    move-object v13, v3
+    move/from16 v1, v22
 
+    .line 601
     .line 602
-    invoke-virtual/range {v8 .. v13}, Le3/a;->a(FFII[F)V
+    move v3, v13
 
     .line 603
+    move-object v13, v2
+
     .line 604
+    move-object v14, v0
+
     .line 605
-    move-object v1, v3
+    invoke-static/range {v9 .. v14}, Lb1/x;->e(FF[F[I[D[D)V
 
     .line 606
-    goto/16 :goto_10
-
     .line 607
     .line 608
-    :cond_1b
-    iget-object v8, v6, Lw2/q;->g:Lw2/x;
+    move-object/from16 v9, v21
 
     .line 609
     .line 610
-    move-object/from16 v20, v4
+    move v10, v3
 
     .line 611
+    move v11, v7
+
     .line 612
-    iget v4, v8, Lw2/x;->g:F
+    move/from16 v12, v16
 
     .line 613
     .line 614
-    iget-object v6, v6, Lw2/q;->f:Lw2/x;
+    move/from16 v13, v17
 
     .line 615
     .line 616
-    move-object/from16 v28, v2
+    move-object v14, v15
 
     .line 617
-    .line 618
-    iget v2, v6, Lw2/x;->g:F
+    invoke-virtual/range {v9 .. v14}, LS0/p;->a(FFII[F)V
 
+    .line 618
     .line 619
     .line 620
-    sub-float/2addr v4, v2
+    move v0, v1
 
     .line 621
-    iget v2, v8, Lw2/x;->h:F
+    move v1, v3
 
     .line 622
+    goto :goto_10
+
     .line 623
-    move-object/from16 v30, v7
+    :cond_1b
+    iget-object v12, v14, Lb1/q;->g:Lb1/x;
 
     .line 624
     .line 625
-    iget v7, v6, Lw2/x;->h:F
+    move-object/from16 v19, v0
 
     .line 626
     .line 627
-    sub-float/2addr v2, v7
+    iget v0, v12, Lb1/x;->g:F
 
     .line 628
-    iget v7, v8, Lw2/x;->i:F
-
     .line 629
+    iget-object v14, v14, Lb1/q;->f:Lb1/x;
+
     .line 630
-    move-object/from16 v31, v5
-
     .line 631
+    move-object/from16 v28, v3
+
     .line 632
-    iget v5, v6, Lw2/x;->i:F
-
     .line 633
-    .line 634
-    sub-float/2addr v7, v5
+    iget v3, v14, Lb1/x;->g:F
 
+    .line 634
     .line 635
-    iget v5, v8, Lw2/x;->j:F
+    sub-float/2addr v0, v3
 
     .line 636
+    iget v3, v12, Lb1/x;->h:F
+
     .line 637
-    iget v6, v6, Lw2/x;->j:F
-
     .line 638
-    .line 639
-    sub-float/2addr v5, v6
+    move-object/from16 v29, v6
 
+    .line 639
     .line 640
-    add-float/2addr v7, v4
+    iget v6, v14, Lb1/x;->h:F
 
     .line 641
-    add-float/2addr v5, v2
-
     .line 642
-    const/high16 v6, 0x3f800000    # 1.0f
+    sub-float/2addr v3, v6
 
     .line 643
+    iget v6, v12, Lb1/x;->i:F
+
     .line 644
-    sub-float v8, v6, v13
-
     .line 645
+    move-object/from16 v30, v1
+
     .line 646
-    mul-float v8, v8, v4
-
     .line 647
-    .line 648
-    mul-float v7, v7, v13
+    iget v1, v14, Lb1/x;->i:F
 
+    .line 648
     .line 649
+    sub-float/2addr v6, v1
+
     .line 650
-    add-float/2addr v7, v8
+    iget v1, v12, Lb1/x;->j:F
 
     .line 651
-    const/4 v4, 0x0
-
     .line 652
-    aput v7, v12, v4
+    iget v12, v14, Lb1/x;->j:F
 
     .line 653
     .line 654
-    sub-float v6, v6, v29
+    sub-float/2addr v1, v12
 
     .line 655
+    add-float/2addr v6, v0
+
     .line 656
-    mul-float v6, v6, v2
+    add-float/2addr v1, v3
 
     .line 657
+    const/high16 v12, 0x3f800000    # 1.0f
+
     .line 658
-    mul-float v5, v5, v29
-
     .line 659
-    .line 660
-    add-float/2addr v5, v6
+    sub-float v14, v12, v13
 
+    .line 660
     .line 661
-    aput v5, v12, v16
+    mul-float v14, v14, v0
 
     .line 662
     .line 663
-    const/4 v2, 0x0
+    mul-float v6, v6, v13
 
     .line 664
-    iput v2, v14, Le3/a;->e:F
-
     .line 665
+    add-float/2addr v6, v14
+
     .line 666
-    iput v2, v14, Le3/a;->d:F
+    const/4 v0, 0x0
 
     .line 667
-    .line 668
-    iput v2, v14, Le3/a;->c:F
+    aput v6, v15, v0
 
+    .line 668
     .line 669
+    sub-float/2addr v12, v7
+
     .line 670
-    iput v2, v14, Le3/a;->b:F
+    mul-float v12, v12, v3
 
     .line 671
     .line 672
-    iput v2, v14, Le3/a;->a:F
+    mul-float v1, v1, v7
 
     .line 673
     .line 674
-    if-eqz v15, :cond_1c
+    add-float/2addr v1, v12
 
     .line 675
+    const/4 v0, 0x1
+
     .line 676
-    iget-object v2, v15, Lv2/l;->a:Lcom/facebook/appevents/l;
+    aput v1, v15, v0
 
     .line 677
     .line 678
-    float-to-double v4, v9
+    move-object/from16 v0, v21
 
     .line 679
-    invoke-virtual {v2, v4, v5}, Lcom/facebook/appevents/l;->h(D)D
-
     .line 680
-    .line 681
-    .line 682
-    move-result-wide v4
+    const/4 v1, 0x0
 
+    .line 681
+    iput v1, v0, LS0/p;->e:F
+
+    .line 682
     .line 683
-    double-to-float v2, v4
+    iput v1, v0, LS0/p;->d:F
 
     .line 684
-    iput v2, v14, Le3/a;->e:F
-
     .line 685
-    .line 686
-    invoke-virtual {v15, v9}, Lv2/l;->a(F)F
+    iput v1, v0, LS0/p;->c:F
 
+    .line 686
     .line 687
+    iput v1, v0, LS0/p;->b:F
+
     .line 688
     .line 689
-    move-result v2
+    iput v1, v0, LS0/p;->a:F
 
     .line 690
-    iput v2, v14, Le3/a;->f:F
-
     .line 691
+    if-eqz v9, :cond_1c
+
     .line 692
-    :cond_1c
-    if-eqz v10, :cond_1d
-
     .line 693
-    .line 694
-    iget-object v2, v10, Lv2/l;->a:Lcom/facebook/appevents/l;
+    iget-object v1, v9, La1/l;->a:LN5/a;
 
+    .line 694
     .line 695
+    move-object v3, v15
+
     .line 696
-    float-to-double v4, v9
+    float-to-double v14, v11
 
     .line 697
-    invoke-virtual {v2, v4, v5}, Lcom/facebook/appevents/l;->h(D)D
+    invoke-virtual {v1, v14, v15}, LN5/a;->q(D)D
 
     .line 698
     .line 699
     .line 700
-    move-result-wide v4
+    move-result-wide v14
 
     .line 701
-    double-to-float v2, v4
+    double-to-float v1, v14
 
     .line 702
-    iput v2, v14, Le3/a;->c:F
+    iput v1, v0, LS0/p;->e:F
 
     .line 703
     .line 704
-    :cond_1d
-    if-eqz v11, :cond_1e
+    invoke-virtual {v9, v11}, La1/l;->a(F)F
 
     .line 705
     .line 706
-    iget-object v2, v11, Lv2/l;->a:Lcom/facebook/appevents/l;
-
     .line 707
+    move-result v1
+
     .line 708
-    float-to-double v4, v9
+    iput v1, v0, LS0/p;->f:F
 
     .line 709
-    invoke-virtual {v2, v4, v5}, Lcom/facebook/appevents/l;->h(D)D
-
     .line 710
+    goto :goto_12
+
     .line 711
+    :cond_1c
+    move-object v3, v15
+
     .line 712
-    move-result-wide v4
+    :goto_12
+    if-eqz v2, :cond_1d
 
     .line 713
-    double-to-float v2, v4
-
     .line 714
-    iput v2, v14, Le3/a;->d:F
+    iget-object v1, v2, La1/l;->a:LN5/a;
 
     .line 715
     .line 716
-    :cond_1e
-    if-eqz v1, :cond_1f
+    float-to-double v14, v11
 
     .line 717
-    .line 718
-    iget-object v1, v1, Lv2/l;->a:Lcom/facebook/appevents/l;
+    invoke-virtual {v1, v14, v15}, LN5/a;->q(D)D
 
+    .line 718
     .line 719
     .line 720
-    float-to-double v4, v9
-
-    .line 721
-    invoke-virtual {v1, v4, v5}, Lcom/facebook/appevents/l;->h(D)D
-
-    .line 722
-    .line 723
-    .line 724
     move-result-wide v1
 
-    .line 725
+    .line 721
     double-to-float v1, v1
 
+    .line 722
+    iput v1, v0, LS0/p;->c:F
+
+    .line 723
+    .line 724
+    :cond_1d
+    if-eqz v10, :cond_1e
+
+    .line 725
     .line 726
-    iput v1, v14, Le3/a;->a:F
+    iget-object v1, v10, La1/l;->a:LN5/a;
 
     .line 727
     .line 728
-    :cond_1f
-    if-eqz v0, :cond_20
+    float-to-double v9, v11
 
     .line 729
-    .line 730
-    iget-object v0, v0, Lv2/l;->a:Lcom/facebook/appevents/l;
+    invoke-virtual {v1, v9, v10}, LN5/a;->q(D)D
 
+    .line 730
     .line 731
     .line 732
-    float-to-double v1, v9
+    move-result-wide v1
 
     .line 733
-    invoke-virtual {v0, v1, v2}, Lcom/facebook/appevents/l;->h(D)D
+    double-to-float v1, v1
 
     .line 734
+    iput v1, v0, LS0/p;->d:F
+
     .line 735
     .line 736
-    move-result-wide v0
+    :cond_1e
+    if-eqz v5, :cond_1f
 
     .line 737
-    double-to-float v0, v0
-
     .line 738
-    iput v0, v14, Le3/a;->b:F
+    iget-object v1, v5, La1/l;->a:LN5/a;
 
     .line 739
     .line 740
-    :cond_20
-    if-eqz v3, :cond_21
+    float-to-double v5, v11
 
     .line 741
-    .line 742
-    invoke-virtual {v3, v9}, Lv2/g;->b(F)F
+    invoke-virtual {v1, v5, v6}, LN5/a;->q(D)D
 
+    .line 742
     .line 743
     .line 744
+    move-result-wide v1
+
     .line 745
-    move-result v0
+    double-to-float v1, v1
 
     .line 746
-    iput v0, v14, Le3/a;->e:F
+    iput v1, v0, LS0/p;->a:F
 
     .line 747
     .line 748
-    :cond_21
-    if-eqz v31, :cond_22
+    :cond_1f
+    if-eqz v4, :cond_20
 
     .line 749
     .line 750
-    move-object/from16 v5, v31
+    iget-object v1, v4, La1/l;->a:LN5/a;
 
     .line 751
     .line 752
-    invoke-virtual {v5, v9}, Lv2/g;->b(F)F
+    float-to-double v4, v11
 
     .line 753
+    invoke-virtual {v1, v4, v5}, LN5/a;->q(D)D
+
     .line 754
     .line 755
-    move-result v0
-
     .line 756
-    iput v0, v14, Le3/a;->c:F
+    move-result-wide v1
 
     .line 757
+    double-to-float v1, v1
+
     .line 758
-    :cond_22
-    if-eqz v30, :cond_23
+    iput v1, v0, LS0/p;->b:F
 
     .line 759
     .line 760
-    move-object/from16 v7, v30
+    :cond_20
+    if-eqz v8, :cond_21
 
     .line 761
     .line 762
-    invoke-virtual {v7, v9}, Lv2/g;->b(F)F
+    invoke-virtual {v8, v11}, La1/g;->b(F)F
 
     .line 763
     .line 764
     .line 765
-    move-result v0
+    move-result v1
 
     .line 766
-    iput v0, v14, Le3/a;->d:F
+    iput v1, v0, LS0/p;->e:F
 
     .line 767
     .line 768
-    :cond_23
-    if-eqz v28, :cond_24
+    :cond_21
+    if-eqz v30, :cond_22
 
     .line 769
     .line 770
-    move-object/from16 v2, v28
+    move-object/from16 v1, v30
 
     .line 771
     .line 772
-    invoke-virtual {v2, v9}, Lv2/g;->b(F)F
+    invoke-virtual {v1, v11}, La1/g;->b(F)F
 
     .line 773
     .line 774
     .line 775
-    move-result v0
+    move-result v1
 
     .line 776
-    iput v0, v14, Le3/a;->a:F
+    iput v1, v0, LS0/p;->c:F
 
     .line 777
     .line 778
-    :cond_24
-    if-eqz v20, :cond_25
+    :cond_22
+    if-eqz v29, :cond_23
 
     .line 779
     .line 780
-    move-object/from16 v0, v20
+    move-object/from16 v6, v29
 
     .line 781
     .line 782
-    invoke-virtual {v0, v9}, Lv2/g;->b(F)F
+    invoke-virtual {v6, v11}, La1/g;->b(F)F
 
     .line 783
     .line 784
     .line 785
-    move-result v0
+    move-result v1
 
     .line 786
-    iput v0, v14, Le3/a;->b:F
+    iput v1, v0, LS0/p;->d:F
 
     .line 787
     .line 788
-    :cond_25
-    move/from16 v0, v21
+    :cond_23
+    if-eqz v28, :cond_24
 
     .line 789
     .line 790
-    move-object v8, v14
+    move-object/from16 v1, v28
 
     .line 791
-    move v9, v13
-
     .line 792
-    move/from16 v10, v29
+    invoke-virtual {v1, v11}, La1/g;->b(F)F
 
     .line 793
     .line 794
-    move/from16 v11, v17
-
     .line 795
+    move-result v1
+
     .line 796
-    move-object v1, v12
+    iput v1, v0, LS0/p;->a:F
 
     .line 797
-    move/from16 v12, v18
-
     .line 798
-    .line 799
-    move v2, v13
+    :cond_24
+    if-eqz v19, :cond_25
 
+    .line 799
     .line 800
-    move-object v13, v1
+    move-object/from16 v1, v19
 
     .line 801
-    invoke-virtual/range {v8 .. v13}, Le3/a;->a(FFII[F)V
-
     .line 802
+    invoke-virtual {v1, v11}, La1/g;->b(F)F
+
     .line 803
     .line 804
-    :goto_10
-    move/from16 v3, v29
-
     .line 805
+    move-result v1
+
     .line 806
-    goto :goto_11
+    iput v1, v0, LS0/p;->b:F
 
     .line 807
-    :cond_26
-    move/from16 v25, v1
-
     .line 808
+    :cond_25
+    move-object v9, v0
+
     .line 809
-    move-object/from16 v26, v2
+    move v10, v13
 
     .line 810
+    move v11, v7
+
     .line 811
-    move/from16 v24, v3
+    move/from16 v0, v22
 
     .line 812
     .line 813
-    move/from16 v27, v4
+    move/from16 v12, v16
 
     .line 814
     .line 815
-    move-object/from16 v19, v5
+    move v1, v13
 
     .line 816
-    .line 817
-    move/from16 v22, v7
+    move/from16 v13, v17
 
+    .line 817
     .line 818
+    move-object v14, v3
+
     .line 819
-    move v0, v11
+    invoke-virtual/range {v9 .. v14}, LS0/p;->a(FFII[F)V
 
     .line 820
-    move-object v1, v12
-
     .line 821
-    move v2, v13
-
     .line 822
-    move v3, v14
+    goto :goto_13
 
     .line 823
-    move/from16 v23, v15
+    :cond_26
+    move/from16 v27, v1
 
     .line 824
     .line 825
-    invoke-virtual {v6, v10, v2, v3, v1}, Lw2/q;->d(FFF[F)V
+    move/from16 v25, v3
 
     .line 826
     .line 827
-    .line 828
-    :goto_11
-    const/4 v4, 0x2
+    move-object/from16 v26, v4
 
+    .line 828
     .line 829
-    if-ge v0, v4, :cond_27
+    move/from16 v24, v5
 
     .line 830
     .line 831
-    const/4 v0, 0x0
+    move-object/from16 v18, v6
 
     .line 832
-    aget v4, v1, v0
-
     .line 833
-    .line 834
-    mul-float v4, v4, v27
+    move/from16 v23, v8
 
+    .line 834
     .line 835
+    move-object v3, v10
+
     .line 836
-    aput v4, v1, v0
+    move v0, v12
 
     .line 837
+    move v1, v13
+
     .line 838
-    aget v0, v1, v16
+    move/from16 v20, v14
 
     .line 839
     .line 840
-    mul-float v0, v0, v27
+    move-object v14, v7
 
     .line 841
+    move v7, v15
+
     .line 842
-    aput v0, v1, v16
+    invoke-virtual {v14, v11, v1, v7, v3}, Lb1/q;->d(FFF[F)V
 
     .line 843
     .line 844
-    :cond_27
-    move-object/from16 v0, p0
-
     .line 845
+    :goto_13
+    const/4 v2, 0x2
+
     .line 846
-    iget-object v1, v0, Landroidx/constraintlayout/utils/widget/MotionTelltales;->p:[F
+    if-ge v0, v2, :cond_27
 
     .line 847
     .line 848
-    move-object/from16 v4, v26
+    const/4 v0, 0x0
 
     .line 849
-    .line 850
-    invoke-virtual {v4, v1}, Landroid/graphics/Matrix;->mapVectors([F)V
+    aget v2, v3, v0
 
+    .line 850
     .line 851
+    mul-float v2, v2, v27
+
     .line 852
     .line 853
-    move/from16 v5, v25
+    aput v2, v3, v0
 
     .line 854
     .line 855
-    int-to-float v6, v5
+    const/4 v0, 0x1
 
     .line 856
-    mul-float v8, v6, v2
+    aget v2, v3, v0
 
     .line 857
     .line 858
-    move/from16 v2, v24
+    mul-float v2, v2, v27
 
     .line 859
     .line 860
-    int-to-float v6, v2
+    aput v2, v3, v0
 
     .line 861
-    mul-float v9, v6, v3
-
     .line 862
-    .line 863
-    const/4 v6, 0x0
+    :cond_27
+    move-object/from16 v0, p0
 
+    .line 863
     .line 864
-    aget v7, v1, v6
+    iget-object v2, v0, Landroidx/constraintlayout/utils/widget/MotionTelltales;->p:[F
 
     .line 865
     .line 866
-    iget v10, v0, Landroidx/constraintlayout/utils/widget/MotionTelltales;->t:F
+    move-object/from16 v3, v26
 
     .line 867
     .line 868
-    mul-float v7, v7, v10
+    invoke-virtual {v3, v2}, Landroid/graphics/Matrix;->mapVectors([F)V
 
     .line 869
     .line 870
-    sub-float v11, v8, v7
-
     .line 871
-    .line 872
-    aget v7, v1, v16
+    move/from16 v4, v25
 
+    .line 872
     .line 873
+    int-to-float v5, v4
+
     .line 874
-    mul-float v7, v7, v10
+    mul-float v9, v5, v1
 
     .line 875
     .line 876
-    sub-float v12, v9, v7
+    move/from16 v1, v24
 
     .line 877
     .line 878
-    invoke-virtual {v4, v1}, Landroid/graphics/Matrix;->mapVectors([F)V
+    int-to-float v5, v1
 
     .line 879
+    mul-float v10, v5, v7
+
     .line 880
     .line 881
-    iget-object v1, v0, Landroidx/constraintlayout/utils/widget/MotionTelltales;->n:Landroid/graphics/Paint;
+    const/4 v5, 0x0
 
     .line 882
+    aget v6, v2, v5
+
     .line 883
-    move-object/from16 v7, p1
-
     .line 884
-    .line 885
-    move v10, v11
+    iget v8, v0, Landroidx/constraintlayout/utils/widget/MotionTelltales;->t:F
 
+    .line 885
     .line 886
-    move v11, v12
+    mul-float v6, v6, v8
 
     .line 887
-    move-object v12, v1
-
     .line 888
-    invoke-virtual/range {v7 .. v12}, Landroid/graphics/Canvas;->drawLine(FFFFLandroid/graphics/Paint;)V
+    sub-float v11, v9, v6
 
     .line 889
     .line 890
+    const/4 v6, 0x1
+
     .line 891
-    add-int/lit8 v15, v23, 0x1
+    aget v12, v2, v6
 
     .line 892
     .line 893
-    move v14, v3
+    mul-float v12, v12, v8
 
     .line 894
-    move v1, v5
-
     .line 895
-    move-object/from16 v5, v19
+    sub-float v12, v10, v12
 
     .line 896
     .line 897
-    move/from16 v7, v22
+    invoke-virtual {v3, v2}, Landroid/graphics/Matrix;->mapVectors([F)V
 
     .line 898
     .line 899
-    move v3, v2
-
     .line 900
-    move-object v2, v4
+    iget-object v13, v0, Landroidx/constraintlayout/utils/widget/MotionTelltales;->n:Landroid/graphics/Paint;
 
     .line 901
-    const/4 v4, 0x5
-
     .line 902
-    goto/16 :goto_1
+    move-object/from16 v8, p1
 
     .line 903
     .line 904
-    :cond_28
-    move-object v4, v2
+    invoke-virtual/range {v8 .. v13}, Landroid/graphics/Canvas;->drawLine(FFFFLandroid/graphics/Paint;)V
 
     .line 905
-    move v2, v3
-
     .line 906
-    move-object/from16 v19, v5
-
     .line 907
+    const/4 v2, 0x1
+
     .line 908
-    move/from16 v22, v7
+    add-int/lit8 v14, v20, 0x1
 
     .line 909
     .line 910
-    const/4 v6, 0x0
-
-    .line 911
     move v5, v1
 
+    .line 911
+    move v15, v7
+
     .line 912
-    add-int/lit8 v7, v22, 0x1
+    move-object/from16 v6, v18
 
     .line 913
     .line 914
-    move-object v2, v4
+    move/from16 v8, v23
 
     .line 915
-    move-object/from16 v5, v19
-
     .line 916
+    const/4 v1, 0x5
+
     .line 917
-    const/4 v4, 0x5
+    move/from16 v31, v4
 
     .line 918
+    .line 919
+    move-object v4, v3
+
+    .line 920
+    move/from16 v3, v31
+
+    .line 921
+    .line 922
+    goto/16 :goto_1
+
+    .line 923
+    .line 924
+    :cond_28
+    move v1, v5
+
+    .line 925
+    move-object/from16 v18, v6
+
+    .line 926
+    .line 927
+    move/from16 v23, v8
+
+    .line 928
+    .line 929
+    const/4 v5, 0x0
+
+    .line 930
+    move-object/from16 v31, v4
+
+    .line 931
+    .line 932
+    move v4, v3
+
+    .line 933
+    move-object/from16 v3, v31
+
+    .line 934
+    .line 935
+    add-int/lit8 v8, v23, 0x1
+
+    .line 936
+    .line 937
+    move v5, v1
+
+    .line 938
+    const/4 v1, 0x5
+
+    .line 939
+    move/from16 v31, v4
+
+    .line 940
+    .line 941
+    move-object v4, v3
+
+    .line 942
+    move/from16 v3, v31
+
+    .line 943
+    .line 944
     goto/16 :goto_0
 
-    .line 919
-    .line 920
+    .line 945
+    .line 946
     :cond_29
     return-void
 
-    .line 921
+    .line 947
     :array_0
     .array-data 4
         0x3dcccccd    # 0.1f

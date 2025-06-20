@@ -1,11 +1,11 @@
 .class Landroidx/appcompat/widget/ToolbarWidgetWrapper$2;
-.super Lcom/facebook/appevents/cloudbridge/d;
+.super Landroidx/core/view/h0;
 .source "SourceFile"
 
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Landroidx/appcompat/widget/ToolbarWidgetWrapper;->setupAnimatorToVisibility(IJ)Landroidx/core/view/e1;
+    value = Landroidx/appcompat/widget/ToolbarWidgetWrapper;->setupAnimatorToVisibility(IJ)Landroidx/core/view/k0;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -55,10 +55,14 @@
 .method public onAnimationCancel(Landroid/view/View;)V
     .locals 0
 
+    .line 1
     const/4 p1, 0x1
 
+    .line 2
     iput-boolean p1, p0, Landroidx/appcompat/widget/ToolbarWidgetWrapper$2;->mCanceled:Z
 
+    .line 3
+    .line 4
     return-void
 .end method
 

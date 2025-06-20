@@ -100,11 +100,11 @@
 .method public setPackageName(Ljava/lang/String;)Lcom/apm/insight/MonitorCrash$Config;
     .locals 0
 
+    .line 3
     filled-new-array {p1}, [Ljava/lang/String;
 
     move-result-object p1
 
-    .line 2
     invoke-virtual {p0, p1}, Lcom/apm/insight/MonitorCrash$Config;->setPackageName([Ljava/lang/String;)Lcom/apm/insight/MonitorCrash$Config;
 
     move-result-object p1
@@ -115,9 +115,10 @@
 .method public varargs setPackageName([Ljava/lang/String;)Lcom/apm/insight/MonitorCrash$Config;
     .locals 0
 
+    .line 1
     iput-object p1, p0, Lcom/apm/insight/MonitorCrash$Config;->mPackageName:[Ljava/lang/String;
 
-    .line 1
+    .line 2
     invoke-static {}, Lcom/apm/insight/j/b;->c()V
 
     return-object p0

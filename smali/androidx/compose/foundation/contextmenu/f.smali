@@ -26,7 +26,7 @@
 
 .field public static final k:J
 
-.field public static final l:Landroidx/compose/ui/text/font/w;
+.field public static final l:Landroidx/compose/ui/text/font/u;
 
 .field public static final m:J
 
@@ -143,7 +143,7 @@
 
     .line 47
     .line 48
-    invoke-static {v0}, Lh5/f;->B(I)J
+    invoke-static {v0}, Lcom/bumptech/glide/c;->l(I)J
 
     .line 49
     .line 50
@@ -155,11 +155,11 @@
 
     .line 53
     .line 54
-    sget-object v0, Landroidx/compose/ui/text/font/w;->h:Landroidx/compose/ui/text/font/w;
+    sget-object v0, Landroidx/compose/ui/text/font/u;->h:Landroidx/compose/ui/text/font/u;
 
     .line 55
     .line 56
-    sput-object v0, Landroidx/compose/foundation/contextmenu/f;->l:Landroidx/compose/ui/text/font/w;
+    sput-object v0, Landroidx/compose/foundation/contextmenu/f;->l:Landroidx/compose/ui/text/font/u;
 
     .line 57
     .line 58
@@ -167,7 +167,7 @@
 
     .line 59
     .line 60
-    invoke-static {v0}, Lh5/f;->B(I)J
+    invoke-static {v0}, Lcom/bumptech/glide/c;->l(I)J
 
     .line 61
     .line 62
@@ -191,7 +191,7 @@
     .line 72
     .line 73
     .line 74
-    invoke-static {v2, v0, v1}, Lh5/f;->G(FJ)J
+    invoke-static {v2, v0, v1}, Lcom/bumptech/glide/c;->w(FJ)J
 
     .line 75
     .line 76

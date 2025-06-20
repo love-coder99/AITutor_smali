@@ -194,16 +194,22 @@
 .method public a()I
     .locals 1
 
+    .line 1
     iget v0, p0, Lcom/applovin/impl/k1$d;->a:I
 
+    .line 2
+    .line 3
     return v0
 .end method
 
 .method public b()I
     .locals 1
 
+    .line 1
     iget v0, p0, Lcom/applovin/impl/k1$d;->b:I
 
+    .line 2
+    .line 3
     return v0
 .end method
 

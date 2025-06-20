@@ -161,8 +161,11 @@
 .method public getDataModel()Landroidx/appcompat/widget/ActivityChooserModel;
     .locals 1
 
+    .line 1
     iget-object v0, p0, Landroidx/appcompat/widget/ActivityChooserView$ActivityChooserViewAdapter;->mDataModel:Landroidx/appcompat/widget/ActivityChooserModel;
 
+    .line 2
+    .line 3
     return-object v0
 .end method
 
@@ -342,8 +345,11 @@
 .method public getShowDefaultActivity()Z
     .locals 1
 
+    .line 1
     iget-boolean v0, p0, Landroidx/appcompat/widget/ActivityChooserView$ActivityChooserViewAdapter;->mShowDefaultActivity:Z
 
+    .line 2
+    .line 3
     return v0
 .end method
 
@@ -410,7 +416,7 @@
     move-result-object p1
 
     .line 29
-    sget p2, Lg/g;->abc_activity_chooser_view_list_item:I
+    sget p2, Li/g;->abc_activity_chooser_view_list_item:I
 
     .line 30
     .line 31
@@ -427,7 +433,7 @@
     .line 36
     .line 37
     .line 38
-    sget p1, Lg/f;->title:I
+    sget p1, Li/f;->title:I
 
     .line 39
     .line 40
@@ -455,7 +461,7 @@
     move-result-object p3
 
     .line 52
-    sget v0, Lg/h;->abc_activity_chooser_view_see_all:I
+    sget v0, Li/h;->abc_activity_chooser_view_see_all:I
 
     .line 53
     .line 54
@@ -502,7 +508,7 @@
     move-result v0
 
     .line 74
-    sget v3, Lg/f;->list_item:I
+    sget v3, Li/f;->list_item:I
 
     .line 75
     .line 76
@@ -531,7 +537,7 @@
     move-result-object p2
 
     .line 88
-    sget v0, Lg/g;->abc_activity_chooser_view_list_item:I
+    sget v0, Li/g;->abc_activity_chooser_view_list_item:I
 
     .line 89
     .line 90
@@ -564,7 +570,7 @@
     move-result-object p3
 
     .line 104
-    sget v0, Lg/f;->icon:I
+    sget v0, Li/f;->icon:I
 
     .line 105
     .line 106
@@ -605,7 +611,7 @@
     .line 123
     .line 124
     .line 125
-    sget v0, Lg/f;->title:I
+    sget v0, Li/f;->title:I
 
     .line 126
     .line 127

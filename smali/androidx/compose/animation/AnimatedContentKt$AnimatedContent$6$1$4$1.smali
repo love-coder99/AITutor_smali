@@ -3,12 +3,12 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lzh/e;
+.implements Lka/e;
 
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Landroidx/compose/animation/AnimatedContentKt$AnimatedContent$6$1;->invoke(Landroidx/compose/runtime/l;I)V
+    value = Landroidx/compose/animation/AnimatedContentKt$AnimatedContent$6$1;->invoke(Landroidx/compose/runtime/j;I)V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -19,7 +19,7 @@
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "Lkotlin/jvm/internal/Lambda;",
-        "Lzh/e;"
+        "Lka/e;"
     }
 .end annotation
 
@@ -48,14 +48,14 @@
 
 
 # instance fields
-.field final synthetic $exit:Landroidx/compose/animation/c0;
+.field final synthetic $exit:Landroidx/compose/animation/B;
 
 
 # direct methods
-.method public constructor <init>(Landroidx/compose/animation/c0;)V
+.method public constructor <init>(Landroidx/compose/animation/B;)V
     .locals 0
 
-    iput-object p1, p0, Landroidx/compose/animation/AnimatedContentKt$AnimatedContent$6$1$4$1;->$exit:Landroidx/compose/animation/c0;
+    iput-object p1, p0, Landroidx/compose/animation/AnimatedContentKt$AnimatedContent$6$1$4$1;->$exit:Landroidx/compose/animation/B;
 
     const/4 p1, 0x2
 
@@ -69,21 +69,23 @@
 .method public final invoke(Landroidx/compose/animation/EnterExitState;Landroidx/compose/animation/EnterExitState;)Ljava/lang/Boolean;
     .locals 1
 
+    .line 2
     sget-object v0, Landroidx/compose/animation/EnterExitState;->PostExit:Landroidx/compose/animation/EnterExitState;
 
     if-ne p1, v0, :cond_0
 
     if-ne p2, v0, :cond_0
 
-    iget-object p1, p0, Landroidx/compose/animation/AnimatedContentKt$AnimatedContent$6$1$4$1;->$exit:Landroidx/compose/animation/c0;
-
-    check-cast p1, Landroidx/compose/animation/d0;
-
-    .line 2
-    iget-object p1, p1, Landroidx/compose/animation/d0;->c:Landroidx/compose/animation/r0;
-
     .line 3
-    iget-boolean p1, p1, Landroidx/compose/animation/r0;->d:Z
+    iget-object p1, p0, Landroidx/compose/animation/AnimatedContentKt$AnimatedContent$6$1$4$1;->$exit:Landroidx/compose/animation/B;
+
+    check-cast p1, Landroidx/compose/animation/C;
+
+    .line 4
+    iget-object p1, p1, Landroidx/compose/animation/C;->c:Landroidx/compose/animation/L;
+
+    .line 5
+    iget-boolean p1, p1, Landroidx/compose/animation/L;->d:Z
 
     if-nez p1, :cond_0
 
@@ -94,7 +96,7 @@
     :cond_0
     const/4 p1, 0x0
 
-    .line 4
+    .line 6
     :goto_0
     invoke-static {p1}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
 

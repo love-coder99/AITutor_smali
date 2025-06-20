@@ -60,9 +60,9 @@
 .method public a(Lcom/applovin/mediation/MaxDebuggerDetailActivity;)V
     .locals 1
 
+    .line 2
     iget-object v0, p0, Lcom/applovin/impl/qe$b$h;->a:Lcom/applovin/impl/cc;
 
-    .line 2
     check-cast v0, Lcom/applovin/impl/bg;
 
     invoke-virtual {v0}, Lcom/applovin/impl/bg;->r()Lcom/applovin/impl/je;

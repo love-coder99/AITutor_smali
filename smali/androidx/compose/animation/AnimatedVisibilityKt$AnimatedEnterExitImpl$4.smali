@@ -3,14 +3,14 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lzh/e;
+.implements Lka/e;
 
 
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "Lkotlin/jvm/internal/Lambda;",
-        "Lzh/e;"
+        "Lka/e;"
     }
 .end annotation
 
@@ -30,88 +30,110 @@
 
 .field final synthetic $$default:I
 
-.field final synthetic $content:Lzh/f;
+.field final synthetic $content:Lka/f;
     .annotation system Ldalvik/annotation/Signature;
         value = {
-            "Lzh/f;"
+            "Lka/f;"
         }
     .end annotation
 .end field
 
-.field final synthetic $enter:Landroidx/compose/animation/a0;
+.field final synthetic $enter:Landroidx/compose/animation/z;
 
-.field final synthetic $exit:Landroidx/compose/animation/c0;
+.field final synthetic $exit:Landroidx/compose/animation/B;
 
 .field final synthetic $modifier:Landroidx/compose/ui/o;
 
-.field final synthetic $onLookaheadMeasured:Landroidx/compose/animation/k0;
+.field final synthetic $onLookaheadMeasured:Landroidx/compose/animation/G;
 
-.field final synthetic $shouldDisposeBlock:Lzh/e;
+.field final synthetic $shouldDisposeBlock:Lka/e;
     .annotation system Ldalvik/annotation/Signature;
         value = {
-            "Lzh/e;"
+            "Lka/e;"
         }
     .end annotation
 .end field
 
-.field final synthetic $transition:Landroidx/compose/animation/core/e1;
+.field final synthetic $transition:Landroidx/compose/animation/core/Z;
     .annotation system Ldalvik/annotation/Signature;
         value = {
-            "Landroidx/compose/animation/core/e1;"
+            "Landroidx/compose/animation/core/Z;"
         }
     .end annotation
 .end field
 
-.field final synthetic $visible:Lzh/c;
+.field final synthetic $visible:Lka/c;
     .annotation system Ldalvik/annotation/Signature;
         value = {
-            "Lzh/c;"
+            "Lka/c;"
         }
     .end annotation
 .end field
 
 
 # direct methods
-.method public constructor <init>(Landroidx/compose/animation/core/e1;Lzh/c;Landroidx/compose/ui/o;Landroidx/compose/animation/a0;Landroidx/compose/animation/c0;Lzh/e;Landroidx/compose/animation/k0;Lzh/f;II)V
+.method public constructor <init>(Landroidx/compose/animation/core/Z;Lka/c;Landroidx/compose/ui/o;Landroidx/compose/animation/z;Landroidx/compose/animation/B;Lka/e;Landroidx/compose/animation/G;Lka/f;II)V
     .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
-            "Landroidx/compose/animation/core/e1;",
-            "Lzh/c;",
+            "Landroidx/compose/animation/core/Z;",
+            "Lka/c;",
             "Landroidx/compose/ui/o;",
-            "Landroidx/compose/animation/a0;",
-            "Landroidx/compose/animation/c0;",
-            "Lzh/e;",
-            "Landroidx/compose/animation/k0;",
-            "Lzh/f;",
+            "Landroidx/compose/animation/z;",
+            "Landroidx/compose/animation/B;",
+            "Lka/e;",
+            "Landroidx/compose/animation/G;",
+            "Lka/f;",
             "II)V"
         }
     .end annotation
 
     .line 1
-    iput-object p1, p0, Landroidx/compose/animation/AnimatedVisibilityKt$AnimatedEnterExitImpl$4;->$transition:Landroidx/compose/animation/core/e1;
+    iput-object p1, p0, Landroidx/compose/animation/AnimatedVisibilityKt$AnimatedEnterExitImpl$4;->$transition:Landroidx/compose/animation/core/Z;
 
-    iput-object p2, p0, Landroidx/compose/animation/AnimatedVisibilityKt$AnimatedEnterExitImpl$4;->$visible:Lzh/c;
+    .line 2
+    .line 3
+    iput-object p2, p0, Landroidx/compose/animation/AnimatedVisibilityKt$AnimatedEnterExitImpl$4;->$visible:Lka/c;
 
+    .line 4
+    .line 5
     iput-object p3, p0, Landroidx/compose/animation/AnimatedVisibilityKt$AnimatedEnterExitImpl$4;->$modifier:Landroidx/compose/ui/o;
 
-    iput-object p4, p0, Landroidx/compose/animation/AnimatedVisibilityKt$AnimatedEnterExitImpl$4;->$enter:Landroidx/compose/animation/a0;
+    .line 6
+    .line 7
+    iput-object p4, p0, Landroidx/compose/animation/AnimatedVisibilityKt$AnimatedEnterExitImpl$4;->$enter:Landroidx/compose/animation/z;
 
-    iput-object p5, p0, Landroidx/compose/animation/AnimatedVisibilityKt$AnimatedEnterExitImpl$4;->$exit:Landroidx/compose/animation/c0;
+    .line 8
+    .line 9
+    iput-object p5, p0, Landroidx/compose/animation/AnimatedVisibilityKt$AnimatedEnterExitImpl$4;->$exit:Landroidx/compose/animation/B;
 
-    iput-object p6, p0, Landroidx/compose/animation/AnimatedVisibilityKt$AnimatedEnterExitImpl$4;->$shouldDisposeBlock:Lzh/e;
+    .line 10
+    .line 11
+    iput-object p6, p0, Landroidx/compose/animation/AnimatedVisibilityKt$AnimatedEnterExitImpl$4;->$shouldDisposeBlock:Lka/e;
 
-    iput-object p8, p0, Landroidx/compose/animation/AnimatedVisibilityKt$AnimatedEnterExitImpl$4;->$content:Lzh/f;
+    .line 12
+    .line 13
+    iput-object p8, p0, Landroidx/compose/animation/AnimatedVisibilityKt$AnimatedEnterExitImpl$4;->$content:Lka/f;
 
+    .line 14
+    .line 15
     iput p9, p0, Landroidx/compose/animation/AnimatedVisibilityKt$AnimatedEnterExitImpl$4;->$$changed:I
 
+    .line 16
+    .line 17
     iput p10, p0, Landroidx/compose/animation/AnimatedVisibilityKt$AnimatedEnterExitImpl$4;->$$default:I
 
+    .line 18
+    .line 19
     const/4 p1, 0x2
 
+    .line 20
     invoke-direct {p0, p1}, Lkotlin/jvm/internal/Lambda;-><init>(I)V
 
+    .line 21
+    .line 22
+    .line 23
     return-void
 .end method
 
@@ -121,7 +143,7 @@
     .locals 0
 
     .line 1
-    check-cast p1, Landroidx/compose/runtime/l;
+    check-cast p1, Landroidx/compose/runtime/j;
 
     check-cast p2, Ljava/lang/Number;
 
@@ -129,36 +151,36 @@
 
     move-result p2
 
-    invoke-virtual {p0, p1, p2}, Landroidx/compose/animation/AnimatedVisibilityKt$AnimatedEnterExitImpl$4;->invoke(Landroidx/compose/runtime/l;I)V
+    invoke-virtual {p0, p1, p2}, Landroidx/compose/animation/AnimatedVisibilityKt$AnimatedEnterExitImpl$4;->invoke(Landroidx/compose/runtime/j;I)V
 
-    sget-object p1, Lqh/r;->a:Lqh/r;
+    sget-object p1, LX9/j;->a:LX9/j;
 
     return-object p1
 .end method
 
-.method public final invoke(Landroidx/compose/runtime/l;I)V
+.method public final invoke(Landroidx/compose/runtime/j;I)V
     .locals 10
 
     .line 2
-    iget-object v0, p0, Landroidx/compose/animation/AnimatedVisibilityKt$AnimatedEnterExitImpl$4;->$transition:Landroidx/compose/animation/core/e1;
+    iget-object v0, p0, Landroidx/compose/animation/AnimatedVisibilityKt$AnimatedEnterExitImpl$4;->$transition:Landroidx/compose/animation/core/Z;
 
-    iget-object v1, p0, Landroidx/compose/animation/AnimatedVisibilityKt$AnimatedEnterExitImpl$4;->$visible:Lzh/c;
+    iget-object v1, p0, Landroidx/compose/animation/AnimatedVisibilityKt$AnimatedEnterExitImpl$4;->$visible:Lka/c;
 
     iget-object v2, p0, Landroidx/compose/animation/AnimatedVisibilityKt$AnimatedEnterExitImpl$4;->$modifier:Landroidx/compose/ui/o;
 
-    iget-object v3, p0, Landroidx/compose/animation/AnimatedVisibilityKt$AnimatedEnterExitImpl$4;->$enter:Landroidx/compose/animation/a0;
+    iget-object v3, p0, Landroidx/compose/animation/AnimatedVisibilityKt$AnimatedEnterExitImpl$4;->$enter:Landroidx/compose/animation/z;
 
-    iget-object v4, p0, Landroidx/compose/animation/AnimatedVisibilityKt$AnimatedEnterExitImpl$4;->$exit:Landroidx/compose/animation/c0;
+    iget-object v4, p0, Landroidx/compose/animation/AnimatedVisibilityKt$AnimatedEnterExitImpl$4;->$exit:Landroidx/compose/animation/B;
 
-    iget-object v5, p0, Landroidx/compose/animation/AnimatedVisibilityKt$AnimatedEnterExitImpl$4;->$shouldDisposeBlock:Lzh/e;
+    iget-object v5, p0, Landroidx/compose/animation/AnimatedVisibilityKt$AnimatedEnterExitImpl$4;->$shouldDisposeBlock:Lka/e;
 
-    iget-object v6, p0, Landroidx/compose/animation/AnimatedVisibilityKt$AnimatedEnterExitImpl$4;->$content:Lzh/f;
+    iget-object v6, p0, Landroidx/compose/animation/AnimatedVisibilityKt$AnimatedEnterExitImpl$4;->$content:Lka/f;
 
     iget p2, p0, Landroidx/compose/animation/AnimatedVisibilityKt$AnimatedEnterExitImpl$4;->$$changed:I
 
     or-int/lit8 p2, p2, 0x1
 
-    invoke-static {p2}, Landroidx/compose/runtime/q;->A(I)I
+    invoke-static {p2}, Landroidx/compose/runtime/o;->f0(I)I
 
     move-result v8
 
@@ -166,7 +188,7 @@
 
     move-object v7, p1
 
-    invoke-static/range {v0 .. v9}, Landroidx/compose/animation/d;->b(Landroidx/compose/animation/core/e1;Lzh/c;Landroidx/compose/ui/o;Landroidx/compose/animation/a0;Landroidx/compose/animation/c0;Lzh/e;Lzh/f;Landroidx/compose/runtime/l;II)V
+    invoke-static/range {v0 .. v9}, Landroidx/compose/animation/d;->b(Landroidx/compose/animation/core/Z;Lka/c;Landroidx/compose/ui/o;Landroidx/compose/animation/z;Landroidx/compose/animation/B;Lka/e;Lka/f;Landroidx/compose/runtime/j;II)V
 
     return-void
 .end method

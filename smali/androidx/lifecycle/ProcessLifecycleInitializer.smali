@@ -3,14 +3,14 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lu4/b;
+.implements Lo2/b;
 
 
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "Ljava/lang/Object;",
-        "Lu4/b;"
+        "Lo2/b;"
     }
 .end annotation
 
@@ -20,18 +20,19 @@
     }
     d2 = {
         "Landroidx/lifecycle/ProcessLifecycleInitializer;",
-        "Lu4/b;",
-        "Landroidx/lifecycle/w;",
+        "Lo2/b;",
+        "Landroidx/lifecycle/x;",
         "<init>",
         "()V",
         "lifecycle-process_release"
     }
     k = 0x1
     mv = {
-        0x1,
-        0x8,
+        0x2,
+        0x0,
         0x0
     }
+    xi = 0x30
 .end annotation
 
 
@@ -39,8 +40,12 @@
 .method public constructor <init>()V
     .locals 0
 
+    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
+    .line 2
+    .line 3
+    .line 4
     return-void
 .end method
 
@@ -61,7 +66,7 @@
     .locals 3
 
     .line 1
-    invoke-static {p1}, Lu4/a;->c(Landroid/content/Context;)Lu4/a;
+    invoke-static {p1}, Lo2/a;->c(Landroid/content/Context;)Lo2/a;
 
     .line 2
     .line 3
@@ -69,7 +74,7 @@
     move-result-object v0
 
     .line 5
-    iget-object v0, v0, Lu4/a;->b:Ljava/util/HashSet;
+    iget-object v0, v0, Lo2/a;->b:Ljava/util/HashSet;
 
     .line 6
     .line 7
@@ -89,7 +94,7 @@
 
     .line 14
     .line 15
-    sget-object v0, Landroidx/lifecycle/t;->a:Ljava/util/concurrent/atomic/AtomicBoolean;
+    sget-object v0, Landroidx/lifecycle/u;->a:Ljava/util/concurrent/atomic/AtomicBoolean;
 
     .line 16
     .line 17
@@ -124,11 +129,11 @@
 
     .line 30
     .line 31
-    new-instance v1, Landroidx/lifecycle/s;
+    new-instance v1, Landroidx/lifecycle/t;
 
     .line 32
     .line 33
-    invoke-direct {v1}, Landroidx/lifecycle/s;-><init>()V
+    invoke-direct {v1}, Landroidx/lifecycle/t;-><init>()V
 
     .line 34
     .line 35
@@ -139,7 +144,7 @@
     .line 38
     .line 39
     :goto_0
-    sget-object v0, Landroidx/lifecycle/p0;->k:Landroidx/lifecycle/p0;
+    sget-object v0, Landroidx/lifecycle/P;->k:Landroidx/lifecycle/P;
 
     .line 40
     .line 41
@@ -157,11 +162,11 @@
     .line 47
     .line 48
     .line 49
-    iput-object v1, v0, Landroidx/lifecycle/p0;->g:Landroid/os/Handler;
+    iput-object v1, v0, Landroidx/lifecycle/P;->g:Landroid/os/Handler;
 
     .line 50
     .line 51
-    iget-object v1, v0, Landroidx/lifecycle/p0;->h:Landroidx/lifecycle/y;
+    iget-object v1, v0, Landroidx/lifecycle/P;->h:Landroidx/lifecycle/z;
 
     .line 52
     .line 53
@@ -169,7 +174,7 @@
 
     .line 54
     .line 55
-    invoke-virtual {v1, v2}, Landroidx/lifecycle/y;->f(Landroidx/lifecycle/Lifecycle$Event;)V
+    invoke-virtual {v1, v2}, Landroidx/lifecycle/z;->f(Landroidx/lifecycle/Lifecycle$Event;)V
 
     .line 56
     .line 57
@@ -186,11 +191,11 @@
 
     .line 63
     .line 64
-    new-instance v1, Landroidx/lifecycle/n0;
+    new-instance v1, Landroidx/lifecycle/O;
 
     .line 65
     .line 66
-    invoke-direct {v1, v0}, Landroidx/lifecycle/n0;-><init>(Landroidx/lifecycle/p0;)V
+    invoke-direct {v1, v0}, Landroidx/lifecycle/O;-><init>(Landroidx/lifecycle/P;)V
 
     .line 67
     .line 68
@@ -212,18 +217,10 @@
 
     .line 76
     .line 77
-    invoke-virtual {v0}, Ljava/lang/Object;->toString()Ljava/lang/String;
+    invoke-direct {p1, v0}, Ljava/lang/IllegalStateException;-><init>(Ljava/lang/String;)V
 
     .line 78
     .line 79
     .line 80
-    move-result-object v0
-
-    .line 81
-    invoke-direct {p1, v0}, Ljava/lang/IllegalStateException;-><init>(Ljava/lang/String;)V
-
-    .line 82
-    .line 83
-    .line 84
     throw p1
 .end method

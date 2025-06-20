@@ -3,14 +3,14 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lzh/a;
+.implements Lka/a;
 
 
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "Lkotlin/jvm/internal/Lambda;",
-        "Lzh/a;"
+        "Lka/a;"
     }
 .end annotation
 
@@ -21,9 +21,9 @@
     d2 = {
         "",
         "T",
-        "Landroidx/paging/j0;",
+        "Landroidx/paging/G;",
         "invoke",
-        "()Landroidx/paging/j0;",
+        "()Landroidx/paging/G;",
         "<anonymous>"
     }
     k = 0x3
@@ -36,27 +36,27 @@
 
 
 # instance fields
-.field final synthetic this$0:Landroidx/paging/d0;
+.field final synthetic this$0:Landroidx/paging/B;
     .annotation system Ldalvik/annotation/Signature;
         value = {
-            "Landroidx/paging/d0;"
+            "Landroidx/paging/B;"
         }
     .end annotation
 .end field
 
 
 # direct methods
-.method public constructor <init>(Landroidx/paging/d0;)V
+.method public constructor <init>(Landroidx/paging/B;)V
     .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
-            "Landroidx/paging/d0;",
+            "Landroidx/paging/B;",
             ")V"
         }
     .end annotation
 
-    iput-object p1, p0, Landroidx/paging/MulticastedPagingData$asPagingData$3;->this$0:Landroidx/paging/d0;
+    iput-object p1, p0, Landroidx/paging/MulticastedPagingData$asPagingData$3;->this$0:Landroidx/paging/B;
 
     const/4 p1, 0x0
 
@@ -67,51 +67,52 @@
 
 
 # virtual methods
-.method public final invoke()Landroidx/paging/j0;
+.method public final invoke()Landroidx/paging/G;
     .locals 4
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "()",
-            "Landroidx/paging/j0;"
+            "Landroidx/paging/G;"
         }
     .end annotation
 
-    iget-object v0, p0, Landroidx/paging/MulticastedPagingData$asPagingData$3;->this$0:Landroidx/paging/d0;
-
     .line 1
-    iget-object v0, v0, Landroidx/paging/d0;->b:Landroidx/paging/d;
+    iget-object v0, p0, Landroidx/paging/MulticastedPagingData$asPagingData$3;->this$0:Landroidx/paging/B;
 
     .line 2
-    iget-object v0, v0, Landroidx/paging/d;->a:Landroidx/paging/k;
+    iget-object v0, v0, Landroidx/paging/B;->b:Landroidx/paging/d;
 
     .line 3
-    iget-object v0, v0, Landroidx/paging/k;->a:Landroidx/paging/m;
+    iget-object v0, v0, Landroidx/paging/d;->a:Landroidx/paging/l;
 
     .line 4
-    invoke-virtual {v0}, Landroidx/paging/m;->b()Ljava/util/List;
+    iget-object v0, v0, Landroidx/paging/l;->a:Landroidx/paging/n;
+
+    .line 5
+    invoke-virtual {v0}, Landroidx/paging/n;->b()Ljava/util/List;
 
     move-result-object v0
 
-    invoke-static {v0}, Lkotlin/collections/w;->K0(Ljava/util/List;)Ljava/lang/Object;
+    invoke-static {v0}, LY9/q;->Q(Ljava/util/List;)Ljava/lang/Object;
 
     move-result-object v0
 
-    check-cast v0, Landroidx/paging/l0;
+    check-cast v0, Landroidx/paging/J;
 
     const/4 v1, 0x0
 
     if-eqz v0, :cond_0
 
-    .line 5
-    instance-of v2, v0, Landroidx/paging/j0;
+    .line 6
+    instance-of v2, v0, Landroidx/paging/G;
 
     if-eqz v2, :cond_0
 
-    check-cast v0, Landroidx/paging/j0;
+    check-cast v0, Landroidx/paging/G;
 
     sget-object v2, Landroidx/paging/LoadType;->REFRESH:Landroidx/paging/LoadType;
 
-    iget-object v3, v0, Landroidx/paging/j0;->a:Landroidx/paging/LoadType;
+    iget-object v3, v0, Landroidx/paging/G;->a:Landroidx/paging/LoadType;
 
     if-ne v3, v2, :cond_0
 
@@ -124,8 +125,8 @@
 .method public bridge synthetic invoke()Ljava/lang/Object;
     .locals 1
 
-    .line 6
-    invoke-virtual {p0}, Landroidx/paging/MulticastedPagingData$asPagingData$3;->invoke()Landroidx/paging/j0;
+    .line 7
+    invoke-virtual {p0}, Landroidx/paging/MulticastedPagingData$asPagingData$3;->invoke()Landroidx/paging/G;
 
     move-result-object v0
 

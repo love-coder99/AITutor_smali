@@ -297,9 +297,9 @@
 .method public a(Ljava/lang/String;Lcom/applovin/impl/sj;)Lcom/applovin/impl/sj;
     .locals 4
 
+    .line 53
     iget-object v0, p0, Lcom/applovin/impl/tj;->e:Ljava/lang/Object;
 
-    .line 53
     monitor-enter v0
 
     .line 54
@@ -366,15 +366,15 @@
 
     if-eqz p1, :cond_1
 
+    .line 6
     iget-object v0, p0, Lcom/applovin/impl/tj;->e:Ljava/lang/Object;
 
-    .line 6
     monitor-enter v0
 
+    .line 7
     :try_start_0
     iget-object v1, p0, Lcom/applovin/impl/tj;->d:Ljava/util/Map;
 
-    .line 7
     invoke-virtual {p1}, Lcom/applovin/impl/sj;->b()Ljava/lang/String;
 
     move-result-object v2
@@ -431,15 +431,15 @@
 .method public a()V
     .locals 2
 
+    .line 1
     iget-object v0, p0, Lcom/applovin/impl/tj;->e:Ljava/lang/Object;
 
-    .line 1
     monitor-enter v0
 
+    .line 2
     :try_start_0
     iget-object v1, p0, Lcom/applovin/impl/tj;->d:Ljava/util/Map;
 
-    .line 2
     invoke-interface {v1}, Ljava/util/Map;->clear()V
 
     .line 3
@@ -447,11 +447,11 @@
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
+    .line 4
     iget-object v0, p0, Lcom/applovin/impl/tj;->a:Lcom/applovin/impl/sdk/j;
 
     iget-object v1, p0, Lcom/applovin/impl/tj;->c:Landroid/content/SharedPreferences;
 
-    .line 4
     invoke-virtual {v0, v1}, Lcom/applovin/impl/sdk/j;->a(Landroid/content/SharedPreferences;)V
 
     return-void
@@ -475,15 +475,15 @@
 
     if-eqz p2, :cond_0
 
+    .line 59
     iget-object v0, p0, Lcom/applovin/impl/tj;->e:Ljava/lang/Object;
 
-    .line 59
     monitor-enter v0
 
+    .line 60
     :try_start_0
     iget-object v1, p0, Lcom/applovin/impl/tj;->d:Ljava/util/Map;
 
-    .line 60
     invoke-virtual {p1}, Lcom/applovin/impl/sj;->b()Ljava/lang/String;
 
     move-result-object p1
@@ -529,9 +529,9 @@
 .method public a(Lorg/json/JSONObject;)V
     .locals 12
 
+    .line 25
     iget-object v0, p0, Lcom/applovin/impl/tj;->e:Ljava/lang/Object;
 
-    .line 25
     monitor-enter v0
 
     .line 26
@@ -644,9 +644,9 @@
 
     move-result-object v5
 
+    .line 35
     iget-object v8, p0, Lcom/applovin/impl/tj;->d:Ljava/util/Map;
 
-    .line 35
     invoke-virtual {v6}, Lcom/applovin/impl/sj;->b()Ljava/lang/String;
 
     move-result-object v9
@@ -658,9 +658,9 @@
 
     if-ne v6, v8, :cond_3
 
+    .line 37
     iget-object v8, p0, Lcom/applovin/impl/tj;->d:Ljava/util/Map;
 
-    .line 37
     sget-object v9, Lcom/applovin/impl/sj;->w5:Lcom/applovin/impl/sj;
 
     invoke-virtual {v9}, Lcom/applovin/impl/sj;->b()Ljava/lang/String;
@@ -695,18 +695,18 @@
 
     goto :goto_1
 
+    .line 40
     :goto_3
     :try_start_2
     const-string v6, "SettingsManager"
 
     const-string v7, "Unable to convert setting object "
 
-    .line 40
     invoke-static {v6, v7, v5}, Lcom/applovin/impl/sdk/n;->c(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)V
 
+    .line 41
     iget-object v6, p0, Lcom/applovin/impl/tj;->a:Lcom/applovin/impl/sdk/j;
 
-    .line 41
     invoke-virtual {v6}, Lcom/applovin/impl/sdk/j;->D()Lcom/applovin/impl/la;
 
     move-result-object v6
@@ -719,17 +719,17 @@
 
     goto :goto_1
 
+    .line 42
     :goto_4
     const-string v6, "SettingsManager"
 
     const-string v7, "Unable to parse JSON settingsValues array"
 
-    .line 42
     invoke-static {v6, v7, v5}, Lcom/applovin/impl/sdk/n;->c(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)V
 
+    .line 43
     iget-object v6, p0, Lcom/applovin/impl/tj;->a:Lcom/applovin/impl/sdk/j;
 
-    .line 43
     invoke-virtual {v6}, Lcom/applovin/impl/sdk/j;->D()Lcom/applovin/impl/la;
 
     move-result-object v6
@@ -757,9 +757,9 @@
 
     invoke-direct {p1}, Lcom/applovin/impl/pc;-><init>()V
 
+    .line 46
     const-string v1, "========== UPDATED SETTINGS =========="
 
-    .line 46
     invoke-virtual {p1, v1}, Lcom/applovin/impl/pc;->a(Ljava/lang/String;)Lcom/applovin/impl/pc;
 
     .line 47
@@ -821,15 +821,15 @@
 
     goto :goto_5
 
+    .line 49
     :cond_5
     const-string v1, "========== END =========="
 
-    .line 49
     invoke-virtual {p1, v1}, Lcom/applovin/impl/pc;->a(Ljava/lang/String;)Lcom/applovin/impl/pc;
 
+    .line 50
     iget-object v1, p0, Lcom/applovin/impl/tj;->a:Lcom/applovin/impl/sdk/j;
 
-    .line 50
     invoke-virtual {v1}, Lcom/applovin/impl/sdk/j;->I()Lcom/applovin/impl/sdk/n;
 
     invoke-static {}, Lcom/applovin/impl/sdk/n;->a()Z
@@ -934,9 +934,9 @@
 .method public c()Z
     .locals 1
 
+    .line 3
     iget-object v0, p0, Lcom/applovin/impl/tj;->a:Lcom/applovin/impl/sdk/j;
 
-    .line 3
     invoke-virtual {v0}, Lcom/applovin/impl/sdk/j;->f0()Lcom/applovin/sdk/AppLovinSdkSettings;
 
     move-result-object v0

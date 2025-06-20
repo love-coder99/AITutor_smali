@@ -71,7 +71,7 @@
 
     const/4 v0, 0x0
 
-    .line 10
+    .line 16
     invoke-static {p0, p1, v0, p2, p3}, Lcom/applovin/impl/go;->a(JZLcom/applovin/impl/sdk/j;Ljava/lang/Runnable;)Lcom/applovin/impl/go;
 
     move-result-object p0
@@ -90,25 +90,28 @@
 
     if-eqz p4, :cond_1
 
-    .line 11
+    .line 17
     new-instance v0, Lcom/applovin/impl/go;
 
     invoke-direct {v0, p3, p4}, Lcom/applovin/impl/go;-><init>(Lcom/applovin/impl/sdk/j;Ljava/lang/Runnable;)V
 
-    .line 12
+    .line 18
     invoke-static {}, Ljava/lang/System;->currentTimeMillis()J
 
     move-result-wide v1
 
     iput-wide v1, v0, Lcom/applovin/impl/go;->c:J
 
+    .line 19
     iput-wide p0, v0, Lcom/applovin/impl/go;->d:J
 
+    .line 20
     iput-boolean p2, v0, Lcom/applovin/impl/go;->f:Z
 
+    .line 21
     iput-wide p0, v0, Lcom/applovin/impl/go;->e:J
 
-    .line 13
+    .line 22
     :try_start_0
     new-instance p4, Ljava/util/Timer;
 
@@ -116,7 +119,7 @@
 
     iput-object p4, v0, Lcom/applovin/impl/go;->b:Ljava/util/Timer;
 
-    .line 14
+    .line 23
     invoke-direct {v0}, Lcom/applovin/impl/go;->b()Ljava/util/TimerTask;
 
     move-result-object v4
@@ -138,7 +141,7 @@
     :catch_0
     move-exception p0
 
-    .line 15
+    .line 24
     invoke-virtual {p3}, Lcom/applovin/impl/sdk/j;->I()Lcom/applovin/impl/sdk/n;
 
     invoke-static {}, Lcom/applovin/impl/sdk/n;->a()Z
@@ -161,7 +164,7 @@
     :goto_0
     return-object v0
 
-    .line 16
+    .line 25
     :cond_1
     new-instance p0, Ljava/lang/IllegalArgumentException;
 
@@ -171,7 +174,7 @@
 
     throw p0
 
-    .line 17
+    .line 26
     :cond_2
     new-instance p2, Ljava/lang/IllegalArgumentException;
 
@@ -179,12 +182,12 @@
 
     const-string p4, "."
 
-    .line 18
-    invoke-static {p3, p0, p1, p4}, Lj0/d;->h(Ljava/lang/String;JLjava/lang/String;)Ljava/lang/String;
+    .line 27
+    invoke-static {p3, p4, p0, p1}, Landroidx/compose/runtime/a0;->q(Ljava/lang/String;Ljava/lang/String;J)Ljava/lang/String;
 
     move-result-object p0
 
-    .line 19
+    .line 28
     invoke-direct {p2, p0}, Ljava/lang/IllegalArgumentException;-><init>(Ljava/lang/String;)V
 
     throw p2
@@ -213,6 +216,7 @@
 
     if-eqz p4, :cond_0
 
+    .line 34
     iget-object v0, p0, Lcom/applovin/impl/go;->b:Ljava/util/Timer;
 
     move-object v1, p1
@@ -221,15 +225,14 @@
 
     move-wide v4, p5
 
-    .line 25
     invoke-virtual/range {v0 .. v5}, Ljava/util/Timer;->schedule(Ljava/util/TimerTask;JJ)V
 
     goto :goto_0
 
+    .line 35
     :cond_0
     iget-object p4, p0, Lcom/applovin/impl/go;->b:Ljava/util/Timer;
 
-    .line 26
     invoke-virtual {p4, p1, p2, p3}, Ljava/util/Timer;->schedule(Ljava/util/TimerTask;J)V
 
     :goto_0
@@ -297,11 +300,12 @@
 .method public a()V
     .locals 8
 
+    .line 4
     iget-object v0, p0, Lcom/applovin/impl/go;->i:Ljava/lang/Object;
 
-    .line 4
     monitor-enter v0
 
+    .line 5
     :try_start_0
     iget-object v1, p0, Lcom/applovin/impl/go;->b:Ljava/util/Timer;
     :try_end_0
@@ -313,12 +317,13 @@
 
     const/4 v4, 0x0
 
-    .line 5
+    .line 6
     :try_start_1
     invoke-virtual {v1}, Ljava/util/Timer;->cancel()V
     :try_end_1
     .catchall {:try_start_1 .. :try_end_1} :catchall_1
 
+    .line 7
     :try_start_2
     iput-object v4, p0, Lcom/applovin/impl/go;->b:Ljava/util/Timer;
     :try_end_2
@@ -334,12 +339,12 @@
     :catchall_1
     move-exception v1
 
+    .line 8
     :try_start_3
     iget-object v5, p0, Lcom/applovin/impl/go;->a:Lcom/applovin/impl/sdk/j;
 
     if-eqz v5, :cond_0
 
-    .line 6
     invoke-virtual {v5}, Lcom/applovin/impl/sdk/j;->I()Lcom/applovin/impl/sdk/n;
 
     invoke-static {}, Lcom/applovin/impl/sdk/n;->a()Z
@@ -379,32 +384,36 @@
 
     goto :goto_2
 
+    .line 9
     :cond_0
     :goto_0
     :try_start_4
     iput-object v4, p0, Lcom/applovin/impl/go;->b:Ljava/util/Timer;
 
+    .line 10
     :goto_1
     iput-wide v2, p0, Lcom/applovin/impl/go;->h:J
 
     goto :goto_3
 
+    .line 11
     :goto_2
     iput-object v4, p0, Lcom/applovin/impl/go;->b:Ljava/util/Timer;
 
+    .line 12
     iput-wide v2, p0, Lcom/applovin/impl/go;->h:J
 
-    .line 7
+    .line 13
     throw v1
 
-    .line 8
+    .line 14
     :cond_1
     :goto_3
     monitor-exit v0
 
     return-void
 
-    .line 9
+    .line 15
     :goto_4
     monitor-exit v0
     :try_end_4
@@ -416,11 +425,12 @@
 .method public c()J
     .locals 4
 
+    .line 2
     iget-object v0, p0, Lcom/applovin/impl/go;->b:Ljava/util/Timer;
 
     if-eqz v0, :cond_0
 
-    .line 2
+    .line 3
     invoke-static {}, Ljava/lang/System;->currentTimeMillis()J
 
     move-result-wide v0
@@ -429,12 +439,14 @@
 
     sub-long/2addr v0, v2
 
+    .line 4
     iget-wide v2, p0, Lcom/applovin/impl/go;->d:J
 
     sub-long/2addr v2, v0
 
     return-wide v2
 
+    .line 5
     :cond_0
     iget-wide v0, p0, Lcom/applovin/impl/go;->d:J
 
@@ -448,11 +460,12 @@
 .method public d()V
     .locals 7
 
+    .line 2
     iget-object v0, p0, Lcom/applovin/impl/go;->i:Ljava/lang/Object;
 
-    .line 2
     monitor-enter v0
 
+    .line 3
     :try_start_0
     iget-object v1, p0, Lcom/applovin/impl/go;->b:Ljava/util/Timer;
     :try_end_0
@@ -462,11 +475,11 @@
 
     const/4 v2, 0x0
 
-    .line 3
+    .line 4
     :try_start_1
     invoke-virtual {v1}, Ljava/util/Timer;->cancel()V
 
-    .line 4
+    .line 5
     invoke-static {}, Ljava/lang/System;->currentTimeMillis()J
 
     move-result-wide v3
@@ -485,6 +498,7 @@
     :try_end_1
     .catchall {:try_start_1 .. :try_end_1} :catchall_1
 
+    .line 6
     :try_start_2
     iput-object v2, p0, Lcom/applovin/impl/go;->b:Ljava/util/Timer;
     :try_end_2
@@ -500,12 +514,12 @@
     :catchall_1
     move-exception v1
 
+    .line 7
     :try_start_3
     iget-object v3, p0, Lcom/applovin/impl/go;->a:Lcom/applovin/impl/sdk/j;
 
     if-eqz v3, :cond_0
 
-    .line 5
     invoke-virtual {v3}, Lcom/applovin/impl/sdk/j;->I()Lcom/applovin/impl/sdk/n;
 
     invoke-static {}, Lcom/applovin/impl/sdk/n;->a()Z
@@ -545,6 +559,7 @@
 
     goto :goto_1
 
+    .line 8
     :cond_0
     :goto_0
     :try_start_4
@@ -552,20 +567,21 @@
 
     goto :goto_2
 
+    .line 9
     :goto_1
     iput-object v2, p0, Lcom/applovin/impl/go;->b:Ljava/util/Timer;
 
-    .line 6
+    .line 10
     throw v1
 
-    .line 7
+    .line 11
     :cond_1
     :goto_2
     monitor-exit v0
 
     return-void
 
-    .line 8
+    .line 12
     :goto_3
     monitor-exit v0
     :try_end_4
@@ -577,11 +593,12 @@
 .method public e()V
     .locals 12
 
+    .line 2
     iget-object v0, p0, Lcom/applovin/impl/go;->i:Ljava/lang/Object;
 
-    .line 2
     monitor-enter v0
 
+    .line 3
     :try_start_0
     iget-wide v1, p0, Lcom/applovin/impl/go;->h:J
     :try_end_0
@@ -593,6 +610,7 @@
 
     if-lez v5, :cond_2
 
+    .line 4
     :try_start_1
     iget-wide v5, p0, Lcom/applovin/impl/go;->d:J
 
@@ -604,6 +622,7 @@
 
     if-gez v1, :cond_0
 
+    .line 5
     iput-wide v3, p0, Lcom/applovin/impl/go;->d:J
 
     goto :goto_0
@@ -613,7 +632,7 @@
 
     goto :goto_1
 
-    .line 3
+    .line 6
     :cond_0
     :goto_0
     new-instance v1, Ljava/util/Timer;
@@ -622,7 +641,7 @@
 
     iput-object v1, p0, Lcom/applovin/impl/go;->b:Ljava/util/Timer;
 
-    .line 4
+    .line 7
     invoke-direct {p0}, Lcom/applovin/impl/go;->b()Ljava/util/TimerTask;
 
     move-result-object v6
@@ -637,7 +656,7 @@
 
     invoke-direct/range {v5 .. v11}, Lcom/applovin/impl/go;->a(Ljava/util/TimerTask;JZJ)V
 
-    .line 5
+    .line 8
     invoke-static {}, Ljava/lang/System;->currentTimeMillis()J
 
     move-result-wide v1
@@ -646,6 +665,7 @@
     :try_end_1
     .catchall {:try_start_1 .. :try_end_1} :catchall_0
 
+    .line 9
     :try_start_2
     iput-wide v3, p0, Lcom/applovin/impl/go;->h:J
     :try_end_2
@@ -658,13 +678,13 @@
 
     goto :goto_5
 
+    .line 10
     :goto_1
     :try_start_3
     iget-object v2, p0, Lcom/applovin/impl/go;->a:Lcom/applovin/impl/sdk/j;
 
     if-eqz v2, :cond_1
 
-    .line 6
     invoke-virtual {v2}, Lcom/applovin/impl/sdk/j;->I()Lcom/applovin/impl/sdk/n;
 
     invoke-static {}, Lcom/applovin/impl/sdk/n;->a()Z
@@ -704,6 +724,7 @@
 
     goto :goto_3
 
+    .line 11
     :cond_1
     :goto_2
     :try_start_4
@@ -711,20 +732,21 @@
 
     goto :goto_4
 
+    .line 12
     :goto_3
     iput-wide v3, p0, Lcom/applovin/impl/go;->h:J
 
-    .line 7
+    .line 13
     throw v1
 
-    .line 8
+    .line 14
     :cond_2
     :goto_4
     monitor-exit v0
 
     return-void
 
-    .line 9
+    .line 15
     :goto_5
     monitor-exit v0
     :try_end_4

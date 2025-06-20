@@ -3,14 +3,14 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lzh/c;
+.implements Lka/c;
 
 
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "Lkotlin/jvm/internal/Lambda;",
-        "Lzh/c;"
+        "Lka/c;"
     }
 .end annotation
 
@@ -21,9 +21,9 @@
     d2 = {
         "",
         "it",
-        "Landroidx/compose/ui/text/font/w;",
+        "Landroidx/compose/ui/text/font/u;",
         "invoke",
-        "(Ljava/lang/Object;)Landroidx/compose/ui/text/font/w;",
+        "(Ljava/lang/Object;)Landroidx/compose/ui/text/font/u;",
         "<anonymous>"
     }
     k = 0x3
@@ -64,11 +64,11 @@
 
 
 # virtual methods
-.method public final invoke(Ljava/lang/Object;)Landroidx/compose/ui/text/font/w;
+.method public final invoke(Ljava/lang/Object;)Landroidx/compose/ui/text/font/u;
     .locals 1
 
     .line 2
-    new-instance v0, Landroidx/compose/ui/text/font/w;
+    new-instance v0, Landroidx/compose/ui/text/font/u;
 
     check-cast p1, Ljava/lang/Integer;
 
@@ -76,7 +76,7 @@
 
     move-result p1
 
-    invoke-direct {v0, p1}, Landroidx/compose/ui/text/font/w;-><init>(I)V
+    invoke-direct {v0, p1}, Landroidx/compose/ui/text/font/u;-><init>(I)V
 
     return-object v0
 .end method
@@ -85,7 +85,7 @@
     .locals 0
 
     .line 1
-    invoke-virtual {p0, p1}, Landroidx/compose/ui/text/SaversKt$FontWeightSaver$2;->invoke(Ljava/lang/Object;)Landroidx/compose/ui/text/font/w;
+    invoke-virtual {p0, p1}, Landroidx/compose/ui/text/SaversKt$FontWeightSaver$2;->invoke(Ljava/lang/Object;)Landroidx/compose/ui/text/font/u;
 
     move-result-object p1
 

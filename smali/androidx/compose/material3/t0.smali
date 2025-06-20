@@ -1,311 +1,312 @@
-.class public abstract Landroidx/compose/material3/t0;
+.class public final Landroidx/compose/material3/T0;
 .super Ljava/lang/Object;
 .source "SourceFile"
 
 
-# static fields
-.field public static final a:Landroidx/compose/runtime/e3;
+# instance fields
+.field public final A:J
 
-.field public static final b:Landroidx/compose/runtime/q0;
+.field public final B:J
 
-.field public static final c:Landroidx/compose/material3/u0;
+.field public final C:J
 
-.field public static final d:Landroidx/compose/material3/u0;
+.field public final D:J
+
+.field public final E:J
+
+.field public final F:J
+
+.field public final G:J
+
+.field public final H:J
+
+.field public final I:J
+
+.field public final J:J
+
+.field public final K:J
+
+.field public final L:J
+
+.field public final M:J
+
+.field public final N:J
+
+.field public final O:J
+
+.field public final P:J
+
+.field public final a:J
+
+.field public final b:J
+
+.field public final c:J
+
+.field public final d:J
+
+.field public final e:J
+
+.field public final f:J
+
+.field public final g:J
+
+.field public final h:J
+
+.field public final i:J
+
+.field public final j:J
+
+.field public final k:J
+
+.field public final l:J
+
+.field public final m:J
+
+.field public final n:J
+
+.field public final o:J
+
+.field public final p:J
+
+.field public final q:J
+
+.field public final r:J
+
+.field public final s:J
+
+.field public final t:J
+
+.field public final u:J
+
+.field public final v:J
+
+.field public final w:J
+
+.field public final x:J
+
+.field public final y:J
+
+.field public final z:J
 
 
 # direct methods
-.method static constructor <clinit>()V
-    .locals 5
+.method public constructor <init>(JJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJ)V
+    .locals 3
+
+    move-object v0, p0
 
     .line 1
-    sget-object v0, Landroidx/compose/material3/RippleKt$LocalUseFallbackRippleImplementation$1;->INSTANCE:Landroidx/compose/material3/RippleKt$LocalUseFallbackRippleImplementation$1;
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    move-wide v1, p1
 
     .line 2
+    iput-wide v1, v0, Landroidx/compose/material3/T0;->a:J
+
+    move-wide v1, p3
+
     .line 3
-    new-instance v1, Landroidx/compose/runtime/e3;
+    iput-wide v1, v0, Landroidx/compose/material3/T0;->b:J
+
+    move-wide v1, p5
 
     .line 4
+    iput-wide v1, v0, Landroidx/compose/material3/T0;->c:J
+
+    move-wide v1, p7
+
     .line 5
-    invoke-direct {v1, v0}, Landroidx/compose/runtime/x;-><init>(Lzh/a;)V
+    iput-wide v1, v0, Landroidx/compose/material3/T0;->d:J
+
+    move-wide v1, p9
 
     .line 6
-    .line 7
-    .line 8
-    sput-object v1, Landroidx/compose/material3/t0;->a:Landroidx/compose/runtime/e3;
+    iput-wide v1, v0, Landroidx/compose/material3/T0;->e:J
 
-    .line 9
-    .line 10
-    sget-object v0, Landroidx/compose/material3/RippleKt$LocalRippleConfiguration$1;->INSTANCE:Landroidx/compose/material3/RippleKt$LocalRippleConfiguration$1;
-
-    .line 11
-    .line 12
-    invoke-static {v0}, Landroidx/compose/runtime/q;->n(Lzh/a;)Landroidx/compose/runtime/q0;
-
-    .line 13
-    .line 14
-    .line 15
-    move-result-object v0
-
-    .line 16
-    sput-object v0, Landroidx/compose/material3/t0;->b:Landroidx/compose/runtime/q0;
-
-    .line 17
-    .line 18
-    new-instance v0, Landroidx/compose/material3/u0;
-
-    .line 19
-    .line 20
-    sget-wide v1, Landroidx/compose/ui/graphics/w;->h:J
-
-    .line 21
-    .line 22
-    const/4 v3, 0x1
-
-    .line 23
-    const/high16 v4, 0x7fc00000    # Float.NaN
-
-    .line 24
-    .line 25
-    invoke-direct {v0, v3, v4, v1, v2}, Landroidx/compose/material3/u0;-><init>(ZFJ)V
-
-    .line 26
-    .line 27
-    .line 28
-    sput-object v0, Landroidx/compose/material3/t0;->c:Landroidx/compose/material3/u0;
-
-    .line 29
-    .line 30
-    new-instance v0, Landroidx/compose/material3/u0;
-
-    .line 31
-    .line 32
-    const/4 v3, 0x0
-
-    .line 33
-    invoke-direct {v0, v3, v4, v1, v2}, Landroidx/compose/material3/u0;-><init>(ZFJ)V
-
-    .line 34
-    .line 35
-    .line 36
-    sput-object v0, Landroidx/compose/material3/t0;->d:Landroidx/compose/material3/u0;
-
-    .line 37
-    .line 38
-    return-void
-.end method
-
-.method public static final a(ZFJLandroidx/compose/runtime/l;II)Landroidx/compose/foundation/d0;
-    .locals 5
-
-    .line 1
-    and-int/lit8 v0, p6, 0x1
-
-    .line 2
-    .line 3
-    if-eqz v0, :cond_0
-
-    .line 4
-    .line 5
-    const/4 p0, 0x1
-
-    .line 6
-    :cond_0
-    and-int/lit8 v0, p6, 0x2
+    move-wide v1, p11
 
     .line 7
+    iput-wide v1, v0, Landroidx/compose/material3/T0;->f:J
+
+    move-wide/from16 v1, p13
+
     .line 8
-    const/high16 v1, 0x7fc00000    # Float.NaN
+    iput-wide v1, v0, Landroidx/compose/material3/T0;->g:J
+
+    move-wide/from16 v1, p15
 
     .line 9
+    iput-wide v1, v0, Landroidx/compose/material3/T0;->h:J
+
+    move-wide/from16 v1, p17
+
     .line 10
-    if-eqz v0, :cond_1
+    iput-wide v1, v0, Landroidx/compose/material3/T0;->i:J
+
+    move-wide/from16 v1, p19
 
     .line 11
+    iput-wide v1, v0, Landroidx/compose/material3/T0;->j:J
+
+    move-wide/from16 v1, p21
+
     .line 12
-    const/high16 v0, 0x7fc00000    # Float.NaN
+    iput-wide v1, v0, Landroidx/compose/material3/T0;->k:J
+
+    move-wide/from16 v1, p23
 
     .line 13
+    iput-wide v1, v0, Landroidx/compose/material3/T0;->l:J
+
+    move-wide/from16 v1, p25
+
     .line 14
-    goto :goto_0
+    iput-wide v1, v0, Landroidx/compose/material3/T0;->m:J
+
+    move-wide/from16 v1, p27
 
     .line 15
-    :cond_1
-    move v0, p1
+    iput-wide v1, v0, Landroidx/compose/material3/T0;->n:J
+
+    move-wide/from16 v1, p29
 
     .line 16
-    :goto_0
-    and-int/lit8 p1, p6, 0x4
+    iput-wide v1, v0, Landroidx/compose/material3/T0;->o:J
+
+    move-wide/from16 v1, p31
 
     .line 17
+    iput-wide v1, v0, Landroidx/compose/material3/T0;->p:J
+
+    move-wide/from16 v1, p33
+
     .line 18
-    if-eqz p1, :cond_2
+    iput-wide v1, v0, Landroidx/compose/material3/T0;->q:J
+
+    move-wide/from16 v1, p35
 
     .line 19
+    iput-wide v1, v0, Landroidx/compose/material3/T0;->r:J
+
+    move-wide/from16 v1, p37
+
     .line 20
-    sget-wide p2, Landroidx/compose/ui/graphics/w;->h:J
+    iput-wide v1, v0, Landroidx/compose/material3/T0;->s:J
+
+    move-wide/from16 v1, p39
 
     .line 21
+    iput-wide v1, v0, Landroidx/compose/material3/T0;->t:J
+
+    move-wide/from16 v1, p41
+
     .line 22
-    :cond_2
-    move-wide v2, p2
+    iput-wide v1, v0, Landroidx/compose/material3/T0;->u:J
+
+    move-wide/from16 v1, p43
 
     .line 23
-    move-object v4, p4
+    iput-wide v1, v0, Landroidx/compose/material3/T0;->v:J
+
+    move-wide/from16 v1, p45
 
     .line 24
-    check-cast v4, Landroidx/compose/runtime/p;
+    iput-wide v1, v0, Landroidx/compose/material3/T0;->w:J
+
+    move-wide/from16 v1, p47
 
     .line 25
+    iput-wide v1, v0, Landroidx/compose/material3/T0;->x:J
+
+    move-wide/from16 v1, p49
+
     .line 26
-    const p1, -0x4c54e819
+    iput-wide v1, v0, Landroidx/compose/material3/T0;->y:J
+
+    move-wide/from16 v1, p51
 
     .line 27
+    iput-wide v1, v0, Landroidx/compose/material3/T0;->z:J
+
+    move-wide/from16 v1, p53
+
     .line 28
+    iput-wide v1, v0, Landroidx/compose/material3/T0;->A:J
+
+    move-wide/from16 v1, p55
+
     .line 29
-    invoke-virtual {v4, p1}, Landroidx/compose/runtime/p;->T(I)V
+    iput-wide v1, v0, Landroidx/compose/material3/T0;->B:J
+
+    move-wide/from16 v1, p57
 
     .line 30
+    iput-wide v1, v0, Landroidx/compose/material3/T0;->C:J
+
+    move-wide/from16 v1, p59
+
     .line 31
+    iput-wide v1, v0, Landroidx/compose/material3/T0;->D:J
+
+    move-wide/from16 v1, p61
+
     .line 32
-    sget-object p1, Landroidx/compose/material3/t0;->a:Landroidx/compose/runtime/e3;
+    iput-wide v1, v0, Landroidx/compose/material3/T0;->E:J
+
+    move-wide/from16 v1, p63
 
     .line 33
+    iput-wide v1, v0, Landroidx/compose/material3/T0;->F:J
+
+    move-wide/from16 v1, p65
+
     .line 34
-    invoke-virtual {v4, p1}, Landroidx/compose/runtime/p;->l(Landroidx/compose/runtime/u1;)Ljava/lang/Object;
+    iput-wide v1, v0, Landroidx/compose/material3/T0;->G:J
+
+    move-wide/from16 v1, p67
 
     .line 35
+    iput-wide v1, v0, Landroidx/compose/material3/T0;->H:J
+
+    move-wide/from16 v1, p69
+
     .line 36
+    iput-wide v1, v0, Landroidx/compose/material3/T0;->I:J
+
+    move-wide/from16 v1, p71
+
     .line 37
-    move-result-object p1
+    iput-wide v1, v0, Landroidx/compose/material3/T0;->J:J
+
+    move-wide/from16 v1, p73
 
     .line 38
-    check-cast p1, Ljava/lang/Boolean;
+    iput-wide v1, v0, Landroidx/compose/material3/T0;->K:J
+
+    move-wide/from16 v1, p75
 
     .line 39
+    iput-wide v1, v0, Landroidx/compose/material3/T0;->L:J
+
+    move-wide/from16 v1, p77
+
     .line 40
-    invoke-virtual {p1}, Ljava/lang/Boolean;->booleanValue()Z
+    iput-wide v1, v0, Landroidx/compose/material3/T0;->M:J
+
+    move-wide/from16 v1, p79
 
     .line 41
+    iput-wide v1, v0, Landroidx/compose/material3/T0;->N:J
+
+    move-wide/from16 v1, p81
+
     .line 42
+    iput-wide v1, v0, Landroidx/compose/material3/T0;->O:J
+
+    move-wide/from16 v1, p83
+
     .line 43
-    move-result p1
+    iput-wide v1, v0, Landroidx/compose/material3/T0;->P:J
 
-    .line 44
-    if-eqz p1, :cond_3
-
-    .line 45
-    .line 46
-    and-int/lit8 p1, p5, 0xe
-
-    .line 47
-    .line 48
-    and-int/lit8 p2, p5, 0x70
-
-    .line 49
-    .line 50
-    or-int/2addr p1, p2
-
-    .line 51
-    and-int/lit16 p2, p5, 0x380
-
-    .line 52
-    .line 53
-    or-int p6, p1, p2
-
-    .line 54
-    .line 55
-    move p1, p0
-
-    .line 56
-    move p2, v0
-
-    .line 57
-    move-wide p3, v2
-
-    .line 58
-    move-object p5, v4
-
-    .line 59
-    invoke-static/range {p1 .. p6}, Landroidx/compose/material/ripple/o;->a(ZFJLandroidx/compose/runtime/l;I)Landroidx/compose/material/ripple/e;
-
-    .line 60
-    .line 61
-    .line 62
-    move-result-object p0
-
-    .line 63
-    goto :goto_1
-
-    .line 64
-    :cond_3
-    invoke-static {v0, v1}, Lh2/e;->a(FF)Z
-
-    .line 65
-    .line 66
-    .line 67
-    move-result p1
-
-    .line 68
-    if-eqz p1, :cond_5
-
-    .line 69
-    .line 70
-    sget-wide p1, Landroidx/compose/ui/graphics/w;->h:J
-
-    .line 71
-    .line 72
-    invoke-static {v2, v3, p1, p2}, Landroidx/compose/ui/graphics/w;->c(JJ)Z
-
-    .line 73
-    .line 74
-    .line 75
-    move-result p1
-
-    .line 76
-    if-eqz p1, :cond_5
-
-    .line 77
-    .line 78
-    if-eqz p0, :cond_4
-
-    .line 79
-    .line 80
-    sget-object p0, Landroidx/compose/material3/t0;->c:Landroidx/compose/material3/u0;
-
-    .line 81
-    .line 82
-    goto :goto_1
-
-    .line 83
-    :cond_4
-    sget-object p0, Landroidx/compose/material3/t0;->d:Landroidx/compose/material3/u0;
-
-    .line 84
-    .line 85
-    goto :goto_1
-
-    .line 86
-    :cond_5
-    new-instance p1, Landroidx/compose/material3/u0;
-
-    .line 87
-    .line 88
-    invoke-direct {p1, p0, v0, v2, v3}, Landroidx/compose/material3/u0;-><init>(ZFJ)V
-
-    .line 89
-    .line 90
-    .line 91
-    move-object p0, p1
-
-    .line 92
-    :goto_1
-    const/4 p1, 0x0
-
-    .line 93
-    invoke-virtual {v4, p1}, Landroidx/compose/runtime/p;->q(Z)V
-
-    .line 94
-    .line 95
-    .line 96
-    return-object p0
+    return-void
 .end method

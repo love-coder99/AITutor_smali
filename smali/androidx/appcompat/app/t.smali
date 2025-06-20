@@ -1,1877 +1,949 @@
-.class public final synthetic Landroidx/appcompat/app/t;
+.class public final Landroidx/appcompat/app/t;
 .super Ljava/lang/Object;
 .source "SourceFile"
 
 # interfaces
-.implements Ljava/lang/Runnable;
+.implements Landroidx/core/view/A;
+.implements Landroidx/appcompat/view/menu/y;
 
 
 # instance fields
-.field public final synthetic b:I
-
-.field public final synthetic c:Ljava/lang/Object;
-
-.field public final synthetic d:Ljava/lang/Object;
+.field public final synthetic b:Landroidx/appcompat/app/F;
 
 
 # direct methods
-.method public synthetic constructor <init>(Ljava/lang/Object;ILjava/lang/Object;)V
+.method public synthetic constructor <init>(Landroidx/appcompat/app/F;)V
     .locals 0
 
     .line 1
+    iput-object p1, p0, Landroidx/appcompat/app/t;->b:Landroidx/appcompat/app/F;
+
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 2
-    .line 3
-    .line 4
-    iput p2, p0, Landroidx/appcompat/app/t;->b:I
-
-    .line 5
-    .line 6
-    iput-object p1, p0, Landroidx/appcompat/app/t;->c:Ljava/lang/Object;
-
-    .line 7
-    .line 8
-    iput-object p3, p0, Landroidx/appcompat/app/t;->d:Ljava/lang/Object;
-
-    .line 9
-    .line 10
     return-void
 .end method
 
 
 # virtual methods
-.method public final run()V
-    .locals 8
+.method public l(Landroid/view/View;Landroidx/core/view/K0;)Landroidx/core/view/K0;
+    .locals 17
 
     .line 1
-    iget v0, p0, Landroidx/appcompat/app/t;->b:I
+    invoke-virtual/range {p2 .. p2}, Landroidx/core/view/K0;->d()I
 
     .line 2
     .line 3
-    const/4 v1, 0x0
-
     .line 4
-    packed-switch v0, :pswitch_data_0
+    move-result v0
 
     .line 5
+    move-object/from16 v1, p0
+
     .line 6
     .line 7
-    :pswitch_0
-    iget-object v0, p0, Landroidx/appcompat/app/t;->c:Ljava/lang/Object;
+    iget-object v2, v1, Landroidx/appcompat/app/t;->b:Landroidx/appcompat/app/F;
 
     .line 8
     .line 9
-    check-cast v0, Landroidx/camera/core/impl/e1;
+    invoke-virtual {v2}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
     .line 10
     .line 11
-    iget-object v1, p0, Landroidx/appcompat/app/t;->d:Ljava/lang/Object;
-
     .line 12
-    .line 13
-    check-cast v1, Landroidx/camera/core/impl/f1;
+    invoke-virtual/range {p2 .. p2}, Landroidx/core/view/K0;->d()I
 
+    .line 13
     .line 14
     .line 15
-    iget-object v2, v0, Landroidx/camera/core/impl/e1;->b:Ljava/util/concurrent/atomic/AtomicBoolean;
+    move-result v3
 
     .line 16
+    iget-object v4, v2, Landroidx/appcompat/app/F;->x:Landroidx/appcompat/widget/ActionBarContextView;
+
     .line 17
-    invoke-virtual {v2}, Ljava/util/concurrent/atomic/AtomicBoolean;->get()Z
-
     .line 18
-    .line 19
-    .line 20
-    move-result v2
+    const/4 v5, 0x0
 
+    .line 19
+    const/16 v6, 0x8
+
+    .line 20
     .line 21
-    if-nez v2, :cond_0
+    if-eqz v4, :cond_e
 
     .line 22
     .line 23
-    goto :goto_0
+    invoke-virtual {v4}, Landroid/view/View;->getLayoutParams()Landroid/view/ViewGroup$LayoutParams;
 
     .line 24
-    :cond_0
-    invoke-virtual {v1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
-
     .line 25
     .line 26
+    move-result-object v4
+
     .line 27
-    iget-object v0, v0, Landroidx/camera/core/impl/e1;->c:Landroidx/camera/core/impl/k1;
+    instance-of v4, v4, Landroid/view/ViewGroup$MarginLayoutParams;
 
     .line 28
     .line 29
-    iget-object v1, v1, Landroidx/camera/core/impl/f1;->a:Ljava/lang/Object;
+    if-eqz v4, :cond_e
 
     .line 30
     .line 31
-    invoke-interface {v0, v1}, Landroidx/camera/core/impl/k1;->b(Ljava/lang/Object;)V
+    iget-object v4, v2, Landroidx/appcompat/app/F;->x:Landroidx/appcompat/widget/ActionBarContextView;
 
     .line 32
     .line 33
+    invoke-virtual {v4}, Landroid/view/View;->getLayoutParams()Landroid/view/ViewGroup$LayoutParams;
+
     .line 34
-    :goto_0
-    return-void
-
     .line 35
-    :pswitch_1
-    iget-object v0, p0, Landroidx/appcompat/app/t;->c:Ljava/lang/Object;
-
     .line 36
+    move-result-object v4
+
     .line 37
-    check-cast v0, Lh5/l;
+    check-cast v4, Landroid/view/ViewGroup$MarginLayoutParams;
 
     .line 38
     .line 39
-    iget-object v1, p0, Landroidx/appcompat/app/t;->d:Ljava/lang/Object;
+    iget-object v7, v2, Landroidx/appcompat/app/F;->x:Landroidx/appcompat/widget/ActionBarContextView;
 
     .line 40
     .line 41
-    check-cast v1, Landroidx/camera/core/impl/e1;
+    invoke-virtual {v7}, Landroid/view/View;->isShown()Z
 
     .line 42
     .line 43
-    iget-object v0, v0, Lh5/l;->c:Ljava/lang/Object;
-
     .line 44
+    move-result v7
+
     .line 45
-    check-cast v0, Landroidx/lifecycle/i0;
+    const/4 v8, 0x1
 
     .line 46
-    .line 47
-    invoke-virtual {v0, v1}, Landroidx/lifecycle/e0;->i(Landroidx/lifecycle/j0;)V
+    if-eqz v7, :cond_c
 
+    .line 47
     .line 48
+    iget-object v7, v2, Landroidx/appcompat/app/F;->e0:Landroid/graphics/Rect;
+
     .line 49
     .line 50
-    return-void
+    if-nez v7, :cond_0
 
     .line 51
-    :pswitch_2
-    iget-object v0, p0, Landroidx/appcompat/app/t;->c:Ljava/lang/Object;
-
     .line 52
+    new-instance v7, Landroid/graphics/Rect;
+
     .line 53
-    check-cast v0, Lh5/l;
-
     .line 54
-    .line 55
-    iget-object v1, p0, Landroidx/appcompat/app/t;->d:Ljava/lang/Object;
+    invoke-direct {v7}, Landroid/graphics/Rect;-><init>()V
 
+    .line 55
     .line 56
     .line 57
-    check-cast v1, Landroidx/concurrent/futures/h;
+    iput-object v7, v2, Landroidx/appcompat/app/F;->e0:Landroid/graphics/Rect;
 
     .line 58
     .line 59
-    iget-object v0, v0, Lh5/l;->c:Ljava/lang/Object;
+    new-instance v7, Landroid/graphics/Rect;
 
     .line 60
     .line 61
-    check-cast v0, Landroidx/lifecycle/i0;
+    invoke-direct {v7}, Landroid/graphics/Rect;-><init>()V
 
     .line 62
     .line 63
-    invoke-virtual {v0}, Landroidx/lifecycle/e0;->d()Ljava/lang/Object;
-
     .line 64
+    iput-object v7, v2, Landroidx/appcompat/app/F;->f0:Landroid/graphics/Rect;
+
     .line 65
     .line 66
-    move-result-object v0
+    :cond_0
+    iget-object v7, v2, Landroidx/appcompat/app/F;->e0:Landroid/graphics/Rect;
 
     .line 67
-    check-cast v0, Landroidx/camera/core/impl/f1;
-
     .line 68
+    iget-object v9, v2, Landroidx/appcompat/app/F;->f0:Landroid/graphics/Rect;
+
     .line 69
-    if-nez v0, :cond_1
-
     .line 70
-    .line 71
-    new-instance v0, Ljava/lang/IllegalStateException;
+    invoke-virtual/range {p2 .. p2}, Landroidx/core/view/K0;->b()I
 
+    .line 71
     .line 72
     .line 73
-    const-string v2, "Observable has not yet been initialized with a value."
+    move-result v10
 
     .line 74
-    .line 75
-    invoke-direct {v0, v2}, Ljava/lang/IllegalStateException;-><init>(Ljava/lang/String;)V
+    invoke-virtual/range {p2 .. p2}, Landroidx/core/view/K0;->d()I
 
+    .line 75
     .line 76
     .line 77
+    move-result v11
+
     .line 78
-    invoke-virtual {v1, v0}, Landroidx/concurrent/futures/h;->d(Ljava/lang/Throwable;)Z
+    invoke-virtual/range {p2 .. p2}, Landroidx/core/view/K0;->c()I
 
     .line 79
     .line 80
     .line 81
-    goto :goto_1
+    move-result v12
 
     .line 82
-    :cond_1
-    iget-object v0, v0, Landroidx/camera/core/impl/f1;->a:Ljava/lang/Object;
+    invoke-virtual/range {p2 .. p2}, Landroidx/core/view/K0;->a()I
 
     .line 83
     .line 84
-    invoke-virtual {v1, v0}, Landroidx/concurrent/futures/h;->b(Ljava/lang/Object;)Z
-
     .line 85
+    move-result v13
+
     .line 86
+    invoke-virtual {v7, v10, v11, v12, v13}, Landroid/graphics/Rect;->set(IIII)V
+
     .line 87
-    :goto_1
-    return-void
-
     .line 88
-    :pswitch_3
-    iget-object v0, p0, Landroidx/appcompat/app/t;->c:Ljava/lang/Object;
-
     .line 89
+    iget-object v10, v2, Landroidx/appcompat/app/F;->C:Landroid/view/ViewGroup;
+
     .line 90
-    check-cast v0, Landroidx/camera/core/impl/n0;
-
     .line 91
-    .line 92
-    sget-object v2, Landroidx/camera/core/impl/n0;->k:Landroid/util/Size;
+    invoke-static {v10, v7, v9}, Landroidx/appcompat/widget/ViewUtils;->computeFitSystemWindows(Landroid/view/View;Landroid/graphics/Rect;Landroid/graphics/Rect;)V
 
+    .line 92
     .line 93
     .line 94
-    invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+    iget v9, v7, Landroid/graphics/Rect;->top:I
 
     .line 95
     .line 96
+    iget v10, v7, Landroid/graphics/Rect;->left:I
+
     .line 97
-    :try_start_0
-    iget-object v2, v0, Landroidx/camera/core/impl/n0;->e:Landroidx/concurrent/futures/k;
-
     .line 98
-    .line 99
-    invoke-virtual {v2}, Landroidx/concurrent/futures/k;->get()Ljava/lang/Object;
+    iget v7, v7, Landroid/graphics/Rect;->right:I
 
+    .line 99
     .line 100
+    iget-object v11, v2, Landroidx/appcompat/app/F;->C:Landroid/view/ViewGroup;
+
     .line 101
     .line 102
-    sget-object v2, Landroidx/camera/core/impl/n0;->n:Ljava/util/concurrent/atomic/AtomicInteger;
+    invoke-static {v11}, Landroidx/core/view/e0;->i(Landroid/view/View;)Landroidx/core/view/K0;
 
     .line 103
     .line 104
-    invoke-virtual {v2}, Ljava/util/concurrent/atomic/AtomicInteger;->decrementAndGet()I
-
     .line 105
-    .line 106
-    .line 107
-    sget-object v2, Landroidx/camera/core/impl/n0;->m:Ljava/util/concurrent/atomic/AtomicInteger;
+    move-result-object v11
 
+    .line 106
+    if-nez v11, :cond_1
+
+    .line 107
     .line 108
+    const/4 v12, 0x0
+
     .line 109
-    invoke-virtual {v2}, Ljava/util/concurrent/atomic/AtomicInteger;->get()I
+    goto :goto_0
 
     .line 110
+    :cond_1
+    invoke-virtual {v11}, Landroidx/core/view/K0;->b()I
+
     .line 111
     .line 112
-    invoke-virtual {v0}, Landroidx/camera/core/impl/n0;->e()V
-    :try_end_0
-    .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
-
     .line 113
-    .line 114
-    .line 115
-    return-void
+    move-result v12
 
+    .line 114
+    :goto_0
+    if-nez v11, :cond_2
+
+    .line 115
     .line 116
-    :catch_0
-    move-exception v2
+    const/4 v11, 0x0
 
     .line 117
-    const-string v3, "DeferrableSurface"
+    goto :goto_1
 
     .line 118
-    .line 119
-    invoke-virtual {v0}, Ljava/lang/Object;->toString()Ljava/lang/String;
+    :cond_2
+    invoke-virtual {v11}, Landroidx/core/view/K0;->c()I
 
+    .line 119
     .line 120
     .line 121
+    move-result v11
+
     .line 122
-    invoke-static {v3}, Lcom/facebook/appevents/g;->i(Ljava/lang/String;)Ljava/lang/String;
+    :goto_1
+    iget v13, v4, Landroid/view/ViewGroup$MarginLayoutParams;->topMargin:I
 
     .line 123
     .line 124
+    if-ne v13, v9, :cond_4
+
     .line 125
-    iget-object v3, v0, Landroidx/camera/core/impl/n0;->a:Ljava/lang/Object;
-
     .line 126
-    .line 127
-    monitor-enter v3
+    iget v13, v4, Landroid/view/ViewGroup$MarginLayoutParams;->leftMargin:I
 
+    .line 127
     .line 128
-    :try_start_1
-    new-instance v4, Ljava/lang/IllegalArgumentException;
+    if-ne v13, v10, :cond_4
 
     .line 129
     .line 130
-    const-string v5, "DeferrableSurface %s [closed: %b, use_count: %s] terminated with unexpected exception."
+    iget v13, v4, Landroid/view/ViewGroup$MarginLayoutParams;->rightMargin:I
 
     .line 131
     .line 132
-    const/4 v6, 0x3
+    if-eq v13, v7, :cond_3
 
     .line 133
-    new-array v6, v6, [Ljava/lang/Object;
-
     .line 134
+    goto :goto_2
+
     .line 135
-    aput-object v0, v6, v1
+    :cond_3
+    const/4 v7, 0x0
 
     .line 136
+    goto :goto_3
+
     .line 137
-    iget-boolean v1, v0, Landroidx/camera/core/impl/n0;->c:Z
+    :cond_4
+    :goto_2
+    iput v9, v4, Landroid/view/ViewGroup$MarginLayoutParams;->topMargin:I
 
     .line 138
     .line 139
-    invoke-static {v1}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
+    iput v10, v4, Landroid/view/ViewGroup$MarginLayoutParams;->leftMargin:I
 
     .line 140
     .line 141
-    .line 142
-    move-result-object v1
+    iput v7, v4, Landroid/view/ViewGroup$MarginLayoutParams;->rightMargin:I
 
+    .line 142
     .line 143
     const/4 v7, 0x1
 
     .line 144
-    aput-object v1, v6, v7
+    :goto_3
+    iget-object v10, v2, Landroidx/appcompat/app/F;->m:Landroid/content/Context;
 
     .line 145
     .line 146
-    iget v0, v0, Landroidx/camera/core/impl/n0;->b:I
+    if-lez v9, :cond_5
 
     .line 147
     .line 148
-    invoke-static {v0}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+    iget-object v9, v2, Landroidx/appcompat/app/F;->E:Landroid/view/View;
 
     .line 149
     .line 150
-    .line 151
-    move-result-object v0
+    if-nez v9, :cond_5
 
+    .line 151
     .line 152
-    const/4 v1, 0x2
+    new-instance v9, Landroid/view/View;
 
     .line 153
-    aput-object v0, v6, v1
-
     .line 154
-    .line 155
-    invoke-static {v5, v6}, Ljava/lang/String;->format(Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;
+    invoke-direct {v9, v10}, Landroid/view/View;-><init>(Landroid/content/Context;)V
 
+    .line 155
     .line 156
     .line 157
-    .line 158
-    move-result-object v0
+    iput-object v9, v2, Landroidx/appcompat/app/F;->E:Landroid/view/View;
 
+    .line 158
     .line 159
-    invoke-direct {v4, v0, v2}, Ljava/lang/IllegalArgumentException;-><init>(Ljava/lang/String;Ljava/lang/Throwable;)V
+    invoke-virtual {v9, v6}, Landroid/view/View;->setVisibility(I)V
 
     .line 160
     .line 161
     .line 162
-    throw v4
+    new-instance v9, Landroid/widget/FrameLayout$LayoutParams;
 
     .line 163
-    :catchall_0
-    move-exception v0
-
     .line 164
-    monitor-exit v3
-    :try_end_1
-    .catchall {:try_start_1 .. :try_end_1} :catchall_0
+    iget v13, v4, Landroid/view/ViewGroup$MarginLayoutParams;->topMargin:I
 
     .line 165
-    throw v0
-
     .line 166
-    :pswitch_4
-    iget-object v0, p0, Landroidx/appcompat/app/t;->c:Ljava/lang/Object;
+    const/16 v14, 0x33
 
     .line 167
     .line 168
-    check-cast v0, Landroidx/camera/core/impl/k0;
+    const/4 v15, -0x1
 
     .line 169
-    .line 170
-    iget-object v1, p0, Landroidx/appcompat/app/t;->d:Ljava/lang/Object;
+    invoke-direct {v9, v15, v13, v14}, Landroid/widget/FrameLayout$LayoutParams;-><init>(III)V
 
+    .line 170
     .line 171
     .line 172
-    check-cast v1, Landroidx/camera/core/impl/k1;
+    iput v12, v9, Landroid/widget/FrameLayout$LayoutParams;->leftMargin:I
 
     .line 173
     .line 174
-    sget-object v2, Landroidx/camera/core/impl/k0;->c:Landroidx/camera/core/impl/k0;
+    iput v11, v9, Landroid/widget/FrameLayout$LayoutParams;->rightMargin:I
 
     .line 175
     .line 176
-    invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+    iget-object v11, v2, Landroidx/appcompat/app/F;->C:Landroid/view/ViewGroup;
 
     .line 177
     .line 178
+    iget-object v12, v2, Landroidx/appcompat/app/F;->E:Landroid/view/View;
+
     .line 179
-    :try_start_2
-    iget-object v0, v0, Landroidx/camera/core/impl/k0;->b:Lc0/o;
-
     .line 180
-    .line 181
-    iget-object v0, v0, Lc0/o;->b:Ljava/lang/Object;
+    invoke-virtual {v11, v12, v15, v9}, Landroid/view/ViewGroup;->addView(Landroid/view/View;ILandroid/view/ViewGroup$LayoutParams;)V
 
+    .line 181
     .line 182
     .line 183
-    invoke-interface {v1, v0}, Landroidx/camera/core/impl/k1;->b(Ljava/lang/Object;)V
-    :try_end_2
-    .catch Ljava/util/concurrent/ExecutionException; {:try_start_2 .. :try_end_2} :catch_1
-    .catch Ljava/lang/InterruptedException; {:try_start_2 .. :try_end_2} :catch_1
+    goto :goto_4
 
     .line 184
+    :cond_5
+    iget-object v9, v2, Landroidx/appcompat/app/F;->E:Landroid/view/View;
+
     .line 185
     .line 186
-    goto :goto_2
+    if-eqz v9, :cond_7
 
     .line 187
-    :catch_1
-    invoke-interface {v1}, Landroidx/camera/core/impl/k1;->a()V
-
     .line 188
+    invoke-virtual {v9}, Landroid/view/View;->getLayoutParams()Landroid/view/ViewGroup$LayoutParams;
+
     .line 189
     .line 190
-    :goto_2
-    return-void
-
     .line 191
-    :pswitch_5
-    iget-object v0, p0, Landroidx/appcompat/app/t;->c:Ljava/lang/Object;
+    move-result-object v9
 
     .line 192
+    check-cast v9, Landroid/view/ViewGroup$MarginLayoutParams;
+
     .line 193
-    check-cast v0, Lz/h;
-
     .line 194
-    .line 195
-    invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+    iget v13, v9, Landroid/view/ViewGroup$MarginLayoutParams;->height:I
 
+    .line 195
     .line 196
+    iget v14, v4, Landroid/view/ViewGroup$MarginLayoutParams;->topMargin:I
+
     .line 197
     .line 198
-    const/4 v0, 0x0
+    if-ne v13, v14, :cond_6
 
     .line 199
-    throw v0
-
     .line 200
-    :pswitch_6
-    iget-object v0, p0, Landroidx/appcompat/app/t;->c:Ljava/lang/Object;
+    iget v13, v9, Landroid/view/ViewGroup$MarginLayoutParams;->leftMargin:I
 
     .line 201
     .line 202
-    check-cast v0, Lz/h;
+    if-ne v13, v12, :cond_6
 
     .line 203
     .line 204
-    iget-object v2, p0, Landroidx/appcompat/app/t;->d:Ljava/lang/Object;
+    iget v13, v9, Landroid/view/ViewGroup$MarginLayoutParams;->rightMargin:I
 
     .line 205
     .line 206
-    check-cast v2, Ly/t0;
+    if-eq v13, v11, :cond_7
 
     .line 207
     .line 208
-    iget-object v0, v0, Lz/h;->c:Lcom/jellystudio/trustedapp/mathai/presentation/ui/camera/c;
+    :cond_6
+    iput v14, v9, Landroid/view/ViewGroup$MarginLayoutParams;->height:I
 
     .line 209
     .line 210
-    invoke-static {v0}, Ljava/util/Objects;->requireNonNull(Ljava/lang/Object;)Ljava/lang/Object;
+    iput v12, v9, Landroid/view/ViewGroup$MarginLayoutParams;->leftMargin:I
 
     .line 211
     .line 212
-    .line 213
-    invoke-static {v2}, Ljava/util/Objects;->requireNonNull(Ljava/lang/Object;)Ljava/lang/Object;
+    iput v11, v9, Landroid/view/ViewGroup$MarginLayoutParams;->rightMargin:I
 
+    .line 213
     .line 214
+    iget-object v11, v2, Landroidx/appcompat/app/F;->E:Landroid/view/View;
+
     .line 215
     .line 216
-    iget-object v0, v0, Lcom/jellystudio/trustedapp/mathai/presentation/ui/camera/c;->a:Lcom/jellystudio/trustedapp/mathai/presentation/ui/camera/d;
+    invoke-virtual {v11, v9}, Landroid/view/View;->setLayoutParams(Landroid/view/ViewGroup$LayoutParams;)V
 
     .line 217
     .line 218
-    iget-object v2, v2, Ly/t0;->a:Landroid/net/Uri;
-
     .line 219
+    :cond_7
+    :goto_4
+    iget-object v9, v2, Landroidx/appcompat/app/F;->E:Landroid/view/View;
+
     .line 220
-    if-eqz v2, :cond_2
-
     .line 221
-    .line 222
-    iget-object v3, v0, Lcom/jellystudio/trustedapp/mathai/presentation/ui/camera/d;->e:Lcom/jellystudio/trustedapp/mathai/presentation/ui/camera/b;
+    if-eqz v9, :cond_8
 
+    .line 222
     .line 223
+    goto :goto_5
+
     .line 224
-    invoke-virtual {v3, v1}, Lcom/jellystudio/trustedapp/mathai/presentation/ui/camera/b;->b(Z)V
+    :cond_8
+    const/4 v8, 0x0
 
     .line 225
+    :goto_5
+    if-eqz v8, :cond_a
+
     .line 226
     .line 227
-    iget-object v0, v0, Lcom/jellystudio/trustedapp/mathai/presentation/ui/camera/d;->e:Lcom/jellystudio/trustedapp/mathai/presentation/ui/camera/b;
+    invoke-virtual {v9}, Landroid/view/View;->getVisibility()I
 
     .line 228
     .line 229
-    iget-object v1, v0, Lcom/jellystudio/trustedapp/mathai/presentation/ui/camera/b;->f:Landroidx/compose/runtime/ParcelableSnapshotMutableState;
-
     .line 230
+    move-result v9
+
     .line 231
-    invoke-virtual {v1, v2}, Landroidx/compose/runtime/t2;->setValue(Ljava/lang/Object;)V
+    if-eqz v9, :cond_a
 
     .line 232
     .line 233
+    iget-object v9, v2, Landroidx/appcompat/app/F;->E:Landroid/view/View;
+
     .line 234
-    iget-object v0, v0, Lcom/jellystudio/trustedapp/mathai/presentation/ui/camera/b;->g:Landroidx/compose/runtime/ParcelableSnapshotMutableState;
-
     .line 235
-    .line 236
-    sget-object v1, Ljava/lang/Boolean;->TRUE:Ljava/lang/Boolean;
+    invoke-virtual {v9}, Landroid/view/View;->getWindowSystemUiVisibility()I
 
+    .line 236
     .line 237
     .line 238
-    invoke-virtual {v0, v1}, Landroidx/compose/runtime/t2;->setValue(Ljava/lang/Object;)V
+    move-result v11
 
     .line 239
+    and-int/lit16 v11, v11, 0x2000
+
     .line 240
     .line 241
-    goto :goto_3
+    if-eqz v11, :cond_9
 
     .line 242
-    :cond_2
-    iget-object v0, v0, Lcom/jellystudio/trustedapp/mathai/presentation/ui/camera/d;->e:Lcom/jellystudio/trustedapp/mathai/presentation/ui/camera/b;
-
     .line 243
-    .line 244
-    invoke-virtual {v0, v1}, Lcom/jellystudio/trustedapp/mathai/presentation/ui/camera/b;->b(Z)V
+    sget v11, Li/c;->abc_decor_view_status_guard_light:I
 
+    .line 244
     .line 245
+    invoke-static {v10, v11}, Li1/f;->c(Landroid/content/Context;I)I
+
     .line 246
     .line 247
-    new-instance v0, Ljava/lang/Exception;
-
     .line 248
+    move-result v10
+
     .line 249
-    const-string v1, "Bitmap is null"
+    goto :goto_6
 
     .line 250
-    .line 251
-    invoke-direct {v0, v1}, Ljava/lang/Exception;-><init>(Ljava/lang/String;)V
+    :cond_9
+    sget v11, Li/c;->abc_decor_view_status_guard:I
 
+    .line 251
     .line 252
+    invoke-static {v10, v11}, Li1/f;->c(Landroid/content/Context;I)I
+
     .line 253
     .line 254
-    sget-object v1, Ldj/a;->a:Lretrofit2/e0;
-
     .line 255
+    move-result v10
+
     .line 256
-    invoke-virtual {v1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+    :goto_6
+    invoke-virtual {v9, v10}, Landroid/view/View;->setBackgroundColor(I)V
 
     .line 257
     .line 258
     .line 259
-    invoke-static {}, Lretrofit2/e0;->e()V
+    :cond_a
+    iget-boolean v9, v2, Landroidx/appcompat/app/F;->J:Z
 
     .line 260
     .line 261
+    if-nez v9, :cond_b
+
     .line 262
-    sget-object v1, Lnc/c;->a:Lnc/c;
-
     .line 263
+    if-eqz v8, :cond_b
+
     .line 264
-    invoke-static {v1}, Lcom/google/firebase/crashlytics/FirebaseCrashlyticsKt;->getCrashlytics(Lnc/c;)Lcom/google/firebase/crashlytics/FirebaseCrashlytics;
-
     .line 265
-    .line 266
-    .line 267
-    move-result-object v1
+    const/4 v3, 0x0
 
+    .line 266
+    :cond_b
+    move/from16 v16, v8
+
+    .line 267
     .line 268
-    invoke-virtual {v1, v0}, Lcom/google/firebase/crashlytics/FirebaseCrashlytics;->recordException(Ljava/lang/Throwable;)V
+    move v8, v7
 
     .line 269
+    move/from16 v7, v16
+
     .line 270
     .line 271
-    :goto_3
-    return-void
+    goto :goto_7
 
     .line 272
-    :pswitch_7
-    iget-object v0, p0, Landroidx/appcompat/app/t;->c:Ljava/lang/Object;
+    :cond_c
+    iget v7, v4, Landroid/view/ViewGroup$MarginLayoutParams;->topMargin:I
 
     .line 273
     .line 274
-    check-cast v0, Lz/h;
+    if-eqz v7, :cond_d
 
     .line 275
     .line 276
-    invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+    iput v5, v4, Landroid/view/ViewGroup$MarginLayoutParams;->topMargin:I
 
     .line 277
     .line 278
+    const/4 v7, 0x0
+
     .line 279
-    return-void
+    goto :goto_7
 
     .line 280
-    :pswitch_8
-    iget-object v0, p0, Landroidx/appcompat/app/t;->c:Ljava/lang/Object;
+    :cond_d
+    const/4 v7, 0x0
 
     .line 281
+    const/4 v8, 0x0
+
     .line 282
-    check-cast v0, Lz/h;
+    :goto_7
+    if-eqz v8, :cond_f
 
     .line 283
     .line 284
-    iget-object v2, p0, Landroidx/appcompat/app/t;->d:Ljava/lang/Object;
+    iget-object v8, v2, Landroidx/appcompat/app/F;->x:Landroidx/appcompat/widget/ActionBarContextView;
 
     .line 285
     .line 286
-    check-cast v2, Landroidx/camera/core/ImageCaptureException;
+    invoke-virtual {v8, v4}, Landroid/view/View;->setLayoutParams(Landroid/view/ViewGroup$LayoutParams;)V
 
     .line 287
     .line 288
-    iget-object v0, v0, Lz/h;->c:Lcom/jellystudio/trustedapp/mathai/presentation/ui/camera/c;
-
     .line 289
+    goto :goto_8
+
     .line 290
-    if-eqz v0, :cond_4
+    :cond_e
+    const/4 v7, 0x0
 
     .line 291
+    :cond_f
+    :goto_8
+    iget-object v2, v2, Landroidx/appcompat/app/F;->E:Landroid/view/View;
+
     .line 292
-    iget-object v0, v0, Lcom/jellystudio/trustedapp/mathai/presentation/ui/camera/c;->a:Lcom/jellystudio/trustedapp/mathai/presentation/ui/camera/d;
-
     .line 293
+    if-eqz v2, :cond_11
+
     .line 294
-    iget-object v0, v0, Lcom/jellystudio/trustedapp/mathai/presentation/ui/camera/d;->e:Lcom/jellystudio/trustedapp/mathai/presentation/ui/camera/b;
-
     .line 295
+    if-eqz v7, :cond_10
+
     .line 296
-    invoke-virtual {v0, v1}, Lcom/jellystudio/trustedapp/mathai/presentation/ui/camera/b;->b(Z)V
-
     .line 297
+    goto :goto_9
+
     .line 298
+    :cond_10
+    const/16 v5, 0x8
+
     .line 299
-    sget-object v0, Ldj/a;->a:Lretrofit2/e0;
-
     .line 300
-    .line 301
-    invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+    :goto_9
+    invoke-virtual {v2, v5}, Landroid/view/View;->setVisibility(I)V
 
+    .line 301
     .line 302
     .line 303
-    .line 304
-    invoke-static {}, Lretrofit2/e0;->e()V
+    :cond_11
+    if-eq v0, v3, :cond_12
 
+    .line 304
     .line 305
+    invoke-virtual/range {p2 .. p2}, Landroidx/core/view/K0;->b()I
+
     .line 306
     .line 307
-    instance-of v0, v2, Ljava/util/concurrent/CancellationException;
-
     .line 308
+    move-result v0
+
     .line 309
-    if-nez v0, :cond_3
+    invoke-virtual/range {p2 .. p2}, Landroidx/core/view/K0;->c()I
 
     .line 310
     .line 311
-    sget-object v0, Lnc/c;->a:Lnc/c;
-
     .line 312
+    move-result v2
+
     .line 313
-    invoke-static {v0}, Lcom/google/firebase/crashlytics/FirebaseCrashlyticsKt;->getCrashlytics(Lnc/c;)Lcom/google/firebase/crashlytics/FirebaseCrashlytics;
+    invoke-virtual/range {p2 .. p2}, Landroidx/core/view/K0;->a()I
 
     .line 314
     .line 315
     .line 316
-    move-result-object v0
+    move-result v4
 
     .line 317
-    invoke-virtual {v0, v2}, Lcom/google/firebase/crashlytics/FirebaseCrashlytics;->recordException(Ljava/lang/Throwable;)V
+    move-object/from16 v5, p2
 
     .line 318
     .line 319
+    invoke-virtual {v5, v0, v3, v2, v4}, Landroidx/core/view/K0;->f(IIII)Landroidx/core/view/K0;
+
     .line 320
-    :cond_3
-    return-void
-
     .line 321
-    :cond_4
-    new-instance v0, Ljava/lang/IllegalStateException;
-
     .line 322
+    move-result-object v0
+
     .line 323
-    const-string v1, "One and only one callback is allowed."
+    move-object/from16 v2, p1
 
     .line 324
     .line 325
-    invoke-direct {v0, v1}, Ljava/lang/IllegalStateException;-><init>(Ljava/lang/String;)V
+    goto :goto_a
 
     .line 326
+    :cond_12
+    move-object/from16 v5, p2
+
     .line 327
     .line 328
-    throw v0
+    move-object/from16 v2, p1
 
     .line 329
-    :pswitch_9
-    iget-object v0, p0, Landroidx/appcompat/app/t;->c:Ljava/lang/Object;
-
     .line 330
+    move-object v0, v5
+
     .line 331
-    check-cast v0, Lz/z;
+    :goto_a
+    invoke-static {v2, v0}, Landroidx/core/view/e0;->n(Landroid/view/View;Landroidx/core/view/K0;)Landroidx/core/view/K0;
 
     .line 332
     .line 333
-    iget-object v1, p0, Landroidx/appcompat/app/t;->d:Ljava/lang/Object;
-
     .line 334
+    move-result-object v0
+
     .line 335
-    check-cast v1, Lz/t;
+    return-object v0
+.end method
 
-    .line 336
-    .line 337
-    iget-object v0, v0, Lz/z;->g:Ljava/util/ArrayList;
+.method public onCloseMenu(Landroidx/appcompat/view/menu/n;Z)V
+    .locals 9
 
-    .line 338
-    .line 339
-    invoke-virtual {v0, v1}, Ljava/util/ArrayList;->remove(Ljava/lang/Object;)Z
+    .line 1
+    invoke-virtual {p1}, Landroidx/appcompat/view/menu/n;->k()Landroidx/appcompat/view/menu/n;
 
-    .line 340
-    .line 341
-    .line 342
-    return-void
+    .line 2
+    .line 3
+    .line 4
+    move-result-object v0
 
-    .line 343
-    :pswitch_a
-    iget-object v0, p0, Landroidx/appcompat/app/t;->c:Ljava/lang/Object;
+    .line 5
+    const/4 v1, 0x0
 
-    .line 344
-    .line 345
-    check-cast v0, Lz/r;
+    .line 6
+    const/4 v2, 0x1
 
-    .line 346
-    .line 347
-    iget-object v1, p0, Landroidx/appcompat/app/t;->d:Ljava/lang/Object;
+    .line 7
+    if-eq v0, p1, :cond_0
 
-    .line 348
-    .line 349
-    check-cast v1, Landroidx/camera/core/ImageCaptureException;
+    .line 8
+    .line 9
+    const/4 v3, 0x1
 
-    .line 350
-    .line 351
-    iget-object v0, v0, Lz/r;->g:Lz/x;
+    .line 10
+    goto :goto_0
 
-    .line 352
-    .line 353
-    check-cast v0, Lz/t;
+    .line 11
+    :cond_0
+    const/4 v3, 0x0
 
-    .line 354
-    .line 355
-    invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+    .line 12
+    :goto_0
+    if-eqz v3, :cond_1
 
-    .line 356
-    .line 357
-    .line 358
-    invoke-static {}, Laf/g0;->h()V
+    .line 13
+    .line 14
+    move-object p1, v0
 
-    .line 359
-    .line 360
-    .line 361
-    iget-boolean v2, v0, Lz/t;->g:Z
+    .line 15
+    :cond_1
+    iget-object v4, p0, Landroidx/appcompat/app/t;->b:Landroidx/appcompat/app/F;
 
-    .line 362
-    .line 363
-    if-eqz v2, :cond_5
+    .line 16
+    .line 17
+    iget-object v5, v4, Landroidx/appcompat/app/F;->N:[Landroidx/appcompat/app/E;
 
-    .line 364
-    .line 365
-    goto :goto_4
+    .line 18
+    .line 19
+    if-eqz v5, :cond_2
 
-    .line 366
+    .line 20
+    .line 21
+    array-length v6, v5
+
+    .line 22
+    goto :goto_1
+
+    .line 23
+    :cond_2
+    const/4 v6, 0x0
+
+    .line 24
+    :goto_1
+    if-ge v1, v6, :cond_4
+
+    .line 25
+    .line 26
+    aget-object v7, v5, v1
+
+    .line 27
+    .line 28
+    if-eqz v7, :cond_3
+
+    .line 29
+    .line 30
+    iget-object v8, v7, Landroidx/appcompat/app/E;->h:Landroidx/appcompat/view/menu/n;
+
+    .line 31
+    .line 32
+    if-ne v8, p1, :cond_3
+
+    .line 33
+    .line 34
+    goto :goto_2
+
+    .line 35
+    :cond_3
+    add-int/lit8 v1, v1, 0x1
+
+    .line 36
+    .line 37
+    goto :goto_1
+
+    .line 38
+    :cond_4
+    const/4 v7, 0x0
+
+    .line 39
+    :goto_2
+    if-eqz v7, :cond_6
+
+    .line 40
+    .line 41
+    if-eqz v3, :cond_5
+
+    .line 42
+    .line 43
+    iget p1, v7, Landroidx/appcompat/app/E;->a:I
+
+    .line 44
+    .line 45
+    invoke-virtual {v4, p1, v7, v0}, Landroidx/appcompat/app/F;->s(ILandroidx/appcompat/app/E;Landroidx/appcompat/view/menu/n;)V
+
+    .line 46
+    .line 47
+    .line 48
+    invoke-virtual {v4, v7, v2}, Landroidx/appcompat/app/F;->u(Landroidx/appcompat/app/E;Z)V
+
+    .line 49
+    .line 50
+    .line 51
+    goto :goto_3
+
+    .line 52
     :cond_5
-    iget-object v2, v0, Lz/t;->c:Landroidx/concurrent/futures/k;
+    invoke-virtual {v4, v7, p2}, Landroidx/appcompat/app/F;->u(Landroidx/appcompat/app/E;Z)V
 
-    .line 367
-    .line 368
-    iget-object v2, v2, Landroidx/concurrent/futures/k;->c:Landroidx/concurrent/futures/j;
-
-    .line 369
-    .line 370
-    invoke-virtual {v2}, Landroidx/concurrent/futures/g;->isDone()Z
-
-    .line 371
-    .line 372
-    .line 373
-    move-result v2
-
-    .line 374
-    const-string v3, "onImageCaptured() must be called before onFinalResult()"
-
-    .line 375
-    .line 376
-    invoke-static {v3, v2}, Le3/b;->f(Ljava/lang/String;Z)V
-
-    .line 377
-    .line 378
-    .line 379
-    invoke-virtual {v0}, Lz/t;->a()V
-
-    .line 380
-    .line 381
-    .line 382
-    invoke-static {}, Laf/g0;->h()V
-
-    .line 383
-    .line 384
-    .line 385
-    iget-object v0, v0, Lz/t;->a:Lz/h;
-
-    .line 386
-    .line 387
-    invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
-
-    .line 388
-    .line 389
-    .line 390
-    new-instance v2, Landroidx/appcompat/app/t;
-
-    .line 391
-    .line 392
-    const/16 v3, 0x15
-
-    .line 393
-    .line 394
-    invoke-direct {v2, v0, v3, v1}, Landroidx/appcompat/app/t;-><init>(Ljava/lang/Object;ILjava/lang/Object;)V
-
-    .line 395
-    .line 396
-    .line 397
-    iget-object v0, v0, Lz/h;->b:Ljava/util/concurrent/Executor;
-
-    .line 398
-    .line 399
-    invoke-interface {v0, v2}, Ljava/util/concurrent/Executor;->execute(Ljava/lang/Runnable;)V
-
-    .line 400
-    .line 401
-    .line 402
-    :goto_4
-    return-void
-
-    .line 403
-    :pswitch_b
-    iget-object v0, p0, Landroidx/appcompat/app/t;->c:Ljava/lang/Object;
-
-    .line 404
-    .line 405
-    check-cast v0, Lz/r;
-
-    .line 406
-    .line 407
-    iget-object v1, p0, Landroidx/appcompat/app/t;->d:Ljava/lang/Object;
-
-    .line 408
-    .line 409
-    check-cast v1, Ly/t0;
-
-    .line 410
-    .line 411
-    iget-object v0, v0, Lz/r;->g:Lz/x;
-
-    .line 412
-    .line 413
-    check-cast v0, Lz/t;
-
-    .line 414
-    .line 415
-    invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
-
-    .line 416
-    .line 417
-    .line 418
-    invoke-static {}, Laf/g0;->h()V
-
-    .line 419
-    .line 420
-    .line 421
-    iget-boolean v2, v0, Lz/t;->g:Z
-
-    .line 422
-    .line 423
-    if-eqz v2, :cond_6
-
-    .line 424
-    .line 425
-    goto :goto_5
-
-    .line 426
+    .line 53
+    .line 54
+    .line 55
     :cond_6
-    iget-object v2, v0, Lz/t;->c:Landroidx/concurrent/futures/k;
-
-    .line 427
-    .line 428
-    iget-object v2, v2, Landroidx/concurrent/futures/k;->c:Landroidx/concurrent/futures/j;
-
-    .line 429
-    .line 430
-    invoke-virtual {v2}, Landroidx/concurrent/futures/g;->isDone()Z
-
-    .line 431
-    .line 432
-    .line 433
-    move-result v2
-
-    .line 434
-    const-string v3, "onImageCaptured() must be called before onFinalResult()"
-
-    .line 435
-    .line 436
-    invoke-static {v3, v2}, Le3/b;->f(Ljava/lang/String;Z)V
-
-    .line 437
-    .line 438
-    .line 439
-    invoke-virtual {v0}, Lz/t;->a()V
-
-    .line 440
-    .line 441
-    .line 442
-    iget-object v0, v0, Lz/t;->a:Lz/h;
-
-    .line 443
-    .line 444
-    invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
-
-    .line 445
-    .line 446
-    .line 447
-    new-instance v2, Landroidx/appcompat/app/t;
-
-    .line 448
-    .line 449
-    const/16 v3, 0x17
-
-    .line 450
-    .line 451
-    invoke-direct {v2, v0, v3, v1}, Landroidx/appcompat/app/t;-><init>(Ljava/lang/Object;ILjava/lang/Object;)V
-
-    .line 452
-    .line 453
-    .line 454
-    iget-object v0, v0, Lz/h;->b:Ljava/util/concurrent/Executor;
-
-    .line 455
-    .line 456
-    invoke-interface {v0, v2}, Ljava/util/concurrent/Executor;->execute(Ljava/lang/Runnable;)V
-
-    .line 457
-    .line 458
-    .line 459
-    :goto_5
+    :goto_3
     return-void
+.end method
 
-    .line 460
-    :pswitch_c
-    iget-object v0, p0, Landroidx/appcompat/app/t;->c:Ljava/lang/Object;
+.method public onOpenSubMenu(Landroidx/appcompat/view/menu/n;)Z
+    .locals 2
 
-    .line 461
-    .line 462
-    check-cast v0, Lz/r;
+    .line 1
+    invoke-virtual {p1}, Landroidx/appcompat/view/menu/n;->k()Landroidx/appcompat/view/menu/n;
 
-    .line 463
-    .line 464
-    iget-object v1, p0, Landroidx/appcompat/app/t;->d:Ljava/lang/Object;
-
-    .line 465
-    .line 466
-    check-cast v1, Ly/a1;
-
-    .line 467
-    .line 468
-    iget-object v0, v0, Lz/r;->g:Lz/x;
-
-    .line 469
-    .line 470
-    check-cast v0, Lz/t;
-
-    .line 471
-    .line 472
-    invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
-
-    .line 473
-    .line 474
-    .line 475
-    invoke-static {}, Laf/g0;->h()V
-
-    .line 476
-    .line 477
-    .line 478
-    iget-boolean v2, v0, Lz/t;->g:Z
-
-    .line 479
-    .line 480
-    if-eqz v2, :cond_7
-
-    .line 481
-    .line 482
-    invoke-interface {v1}, Ljava/lang/AutoCloseable;->close()V
-
-    .line 483
-    .line 484
-    .line 485
-    goto :goto_6
-
-    .line 486
-    :cond_7
-    iget-object v2, v0, Lz/t;->c:Landroidx/concurrent/futures/k;
-
-    .line 487
-    .line 488
-    iget-object v2, v2, Landroidx/concurrent/futures/k;->c:Landroidx/concurrent/futures/j;
-
-    .line 489
-    .line 490
-    invoke-virtual {v2}, Landroidx/concurrent/futures/g;->isDone()Z
-
-    .line 491
-    .line 492
-    .line 493
-    move-result v2
-
-    .line 494
-    const-string v3, "onImageCaptured() must be called before onFinalResult()"
-
-    .line 495
-    .line 496
-    invoke-static {v3, v2}, Le3/b;->f(Ljava/lang/String;Z)V
-
-    .line 497
-    .line 498
-    .line 499
-    invoke-virtual {v0}, Lz/t;->a()V
-
-    .line 500
-    .line 501
-    .line 502
-    iget-object v0, v0, Lz/t;->a:Lz/h;
-
-    .line 503
-    .line 504
-    invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
-
-    .line 505
-    .line 506
-    .line 507
-    new-instance v2, Landroidx/appcompat/app/t;
-
-    .line 508
-    .line 509
-    const/16 v3, 0x18
-
-    .line 510
-    .line 511
-    invoke-direct {v2, v0, v3, v1}, Landroidx/appcompat/app/t;-><init>(Ljava/lang/Object;ILjava/lang/Object;)V
-
-    .line 512
-    .line 513
-    .line 514
-    iget-object v0, v0, Lz/h;->b:Ljava/util/concurrent/Executor;
-
-    .line 515
-    .line 516
-    invoke-interface {v0, v2}, Ljava/util/concurrent/Executor;->execute(Ljava/lang/Runnable;)V
-
-    .line 517
-    .line 518
-    .line 519
-    :goto_6
-    return-void
-
-    .line 520
-    :pswitch_d
-    iget-object v0, p0, Landroidx/appcompat/app/t;->c:Ljava/lang/Object;
-
-    .line 521
-    .line 522
-    check-cast v0, Lz/r;
-
-    .line 523
-    .line 524
-    iget-object v1, p0, Landroidx/appcompat/app/t;->d:Ljava/lang/Object;
-
-    .line 525
-    .line 526
-    check-cast v1, Landroid/graphics/Bitmap;
-
-    .line 527
-    .line 528
-    iget-object v0, v0, Lz/r;->g:Lz/x;
-
-    .line 529
-    .line 530
-    check-cast v0, Lz/t;
-
-    .line 531
-    .line 532
-    invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
-
-    .line 533
-    .line 534
-    .line 535
-    invoke-static {}, Laf/g0;->h()V
-
-    .line 536
-    .line 537
-    .line 538
-    iget-boolean v2, v0, Lz/t;->g:Z
-
-    .line 539
-    .line 540
-    if-eqz v2, :cond_8
-
-    .line 541
-    .line 542
-    goto :goto_7
-
-    .line 543
-    :cond_8
-    iget-object v0, v0, Lz/t;->a:Lz/h;
-
-    .line 544
-    .line 545
-    invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
-
-    .line 546
-    .line 547
-    .line 548
-    new-instance v2, Landroidx/appcompat/app/t;
-
-    .line 549
-    .line 550
-    const/16 v3, 0x16
-
-    .line 551
-    .line 552
-    invoke-direct {v2, v0, v3, v1}, Landroidx/appcompat/app/t;-><init>(Ljava/lang/Object;ILjava/lang/Object;)V
-
-    .line 553
-    .line 554
-    .line 555
-    iget-object v0, v0, Lz/h;->b:Ljava/util/concurrent/Executor;
-
-    .line 556
-    .line 557
-    invoke-interface {v0, v2}, Ljava/util/concurrent/Executor;->execute(Ljava/lang/Runnable;)V
-
-    .line 558
-    .line 559
-    .line 560
-    :goto_7
-    return-void
-
-    .line 561
-    :pswitch_e
-    iget-object v0, p0, Landroidx/appcompat/app/t;->c:Ljava/lang/Object;
-
-    .line 562
-    .line 563
-    check-cast v0, Ly/j1;
-
-    .line 564
-    .line 565
-    iget-object v1, p0, Landroidx/appcompat/app/t;->d:Ljava/lang/Object;
-
-    .line 566
-    .line 567
-    check-cast v1, Ly/x1;
-
-    .line 568
-    .line 569
-    sget-object v2, Landroidx/camera/core/c;->v:Ly/i1;
-
-    .line 570
-    .line 571
-    invoke-interface {v0, v1}, Ly/j1;->a(Ly/x1;)V
-
-    .line 572
-    .line 573
-    .line 574
-    return-void
-
-    .line 575
-    :pswitch_f
-    iget-object v0, p0, Landroidx/appcompat/app/t;->c:Ljava/lang/Object;
-
-    .line 576
-    .line 577
-    check-cast v0, Ly/e1;
-
-    .line 578
-    .line 579
-    iget-object v1, p0, Landroidx/appcompat/app/t;->d:Ljava/lang/Object;
-
-    .line 580
-    .line 581
-    check-cast v1, Landroidx/camera/core/impl/b1;
-
-    .line 582
-    .line 583
-    invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
-
-    .line 584
-    .line 585
-    .line 586
-    invoke-interface {v1, v0}, Landroidx/camera/core/impl/b1;->b(Landroidx/camera/core/impl/c1;)V
-
-    .line 587
-    .line 588
-    .line 589
-    return-void
-
-    .line 590
-    :pswitch_10
-    iget-object v0, p0, Landroidx/appcompat/app/t;->c:Ljava/lang/Object;
-
-    .line 591
-    .line 592
-    check-cast v0, Ly/o1;
-
-    .line 593
-    .line 594
-    iget-object v1, p0, Landroidx/appcompat/app/t;->d:Ljava/lang/Object;
-
-    .line 595
-    .line 596
-    check-cast v1, Ly/o1;
-
-    .line 597
-    .line 598
-    sget-object v2, Ly/h0;->t:Ly/f0;
-
-    .line 599
-    .line 600
-    invoke-virtual {v0}, Ly/o1;->a()V
-
-    .line 601
-    .line 602
-    .line 603
-    if-eqz v1, :cond_9
-
-    .line 604
-    .line 605
-    invoke-virtual {v1}, Ly/o1;->a()V
-
-    .line 606
-    .line 607
-    .line 608
-    :cond_9
-    return-void
-
-    .line 609
-    :pswitch_11
-    iget-object v0, p0, Landroidx/appcompat/app/t;->c:Ljava/lang/Object;
-
-    .line 610
-    .line 611
-    check-cast v0, Ly/e;
-
-    .line 612
-    .line 613
-    iget-object v1, p0, Landroidx/appcompat/app/t;->d:Ljava/lang/Object;
-
-    .line 614
-    .line 615
-    check-cast v1, Landroidx/camera/core/impl/b1;
-
-    .line 616
-    .line 617
-    invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
-
-    .line 618
-    .line 619
-    .line 620
-    invoke-interface {v1, v0}, Landroidx/camera/core/impl/b1;->b(Landroidx/camera/core/impl/c1;)V
-
-    .line 621
-    .line 622
-    .line 623
-    return-void
-
-    .line 624
-    :pswitch_12
-    iget-object v0, p0, Landroidx/appcompat/app/t;->c:Ljava/lang/Object;
-
-    .line 625
-    .line 626
-    check-cast v0, Ls/a2;
-
-    .line 627
-    .line 628
-    iget-object v1, p0, Landroidx/appcompat/app/t;->d:Ljava/lang/Object;
-
-    .line 629
-    .line 630
-    check-cast v1, Landroidx/concurrent/futures/h;
-
-    .line 631
-    .line 632
-    invoke-virtual {v0, v1}, Ls/a2;->e(Landroidx/concurrent/futures/h;)V
-
-    .line 633
-    .line 634
-    .line 635
-    return-void
-
-    .line 636
-    :pswitch_13
-    iget-object v0, p0, Landroidx/appcompat/app/t;->c:Ljava/lang/Object;
-
-    .line 637
-    .line 638
-    check-cast v0, Ls/n;
-
-    .line 639
-    .line 640
-    iget-object v1, p0, Landroidx/appcompat/app/t;->d:Ljava/lang/Object;
-
-    .line 641
-    .line 642
-    check-cast v1, Ls/p0;
-
-    .line 643
-    .line 644
-    invoke-virtual {v0, v1}, Ls/n;->y(Ls/m;)V
-
-    .line 645
-    .line 646
-    .line 647
-    return-void
-
-    .line 648
-    :pswitch_14
-    iget-object v0, p0, Landroidx/appcompat/app/t;->c:Ljava/lang/Object;
-
-    .line 649
-    .line 650
-    check-cast v0, Landroidx/camera/core/impl/b2;
-
-    .line 651
-    .line 652
-    iget-object v1, p0, Landroidx/appcompat/app/t;->d:Ljava/lang/Object;
-
-    .line 653
-    .line 654
-    check-cast v1, Landroidx/camera/core/impl/e2;
-
-    .line 655
-    .line 656
-    sget-object v2, Landroidx/camera/core/impl/SessionConfig$SessionError;->SESSION_ERROR_SURFACE_NEEDS_RESET:Landroidx/camera/core/impl/SessionConfig$SessionError;
-
-    .line 657
-    .line 658
-    invoke-interface {v0, v1, v2}, Landroidx/camera/core/impl/b2;->a(Landroidx/camera/core/impl/e2;Landroidx/camera/core/impl/SessionConfig$SessionError;)V
-
-    .line 659
-    .line 660
-    .line 661
-    return-void
-
-    .line 662
-    :pswitch_15
-    iget-object v0, p0, Landroidx/appcompat/app/t;->c:Ljava/lang/Object;
-
-    .line 663
-    .line 664
-    check-cast v0, Landroidx/camera/camera2/internal/i;
-
-    .line 665
-    .line 666
-    iget-object v1, p0, Landroidx/appcompat/app/t;->d:Ljava/lang/Object;
-
-    .line 667
-    .line 668
-    check-cast v1, Ljava/lang/String;
-
-    .line 669
-    .line 670
-    invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
-
-    .line 671
-    .line 672
-    .line 673
-    new-instance v2, Ljava/lang/StringBuilder;
-
-    .line 674
-    .line 675
-    const-string v3, "Use case "
-
-    .line 676
-    .line 677
-    invoke-direct {v2, v3}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
-
-    .line 678
-    .line 679
-    .line 680
-    invoke-virtual {v2, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    .line 681
-    .line 682
-    .line 683
-    const-string v3, " INACTIVE"
-
-    .line 684
-    .line 685
-    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    .line 686
-    .line 687
-    .line 688
-    invoke-virtual {v2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    .line 689
-    .line 690
-    .line 691
-    move-result-object v2
-
-    .line 692
-    invoke-virtual {v0, v2}, Landroidx/camera/camera2/internal/i;->u(Ljava/lang/String;)V
-
-    .line 693
-    .line 694
-    .line 695
-    iget-object v2, v0, Landroidx/camera/camera2/internal/i;->b:Landroidx/camera/core/impl/k2;
-
-    .line 696
-    .line 697
-    invoke-virtual {v2, v1}, Landroidx/camera/core/impl/k2;->g(Ljava/lang/String;)V
-
-    .line 698
-    .line 699
-    .line 700
-    invoke-virtual {v0}, Landroidx/camera/camera2/internal/i;->L()V
-
-    .line 701
-    .line 702
-    .line 703
-    return-void
-
-    .line 704
-    :pswitch_16
-    iget-object v0, p0, Landroidx/appcompat/app/t;->c:Ljava/lang/Object;
-
-    .line 705
-    .line 706
-    check-cast v0, Landroidx/camera/camera2/internal/i;
-
-    .line 707
-    .line 708
-    iget-object v1, p0, Landroidx/appcompat/app/t;->d:Ljava/lang/Object;
-
-    .line 709
-    .line 710
-    check-cast v1, Landroidx/concurrent/futures/h;
-
-    .line 711
-    .line 712
-    iget-object v2, v0, Landroidx/camera/camera2/internal/i;->z:Ls/g2;
-
-    .line 713
-    .line 714
-    if-nez v2, :cond_a
-
-    .line 715
-    .line 716
-    sget-object v0, Ljava/lang/Boolean;->FALSE:Ljava/lang/Boolean;
-
-    .line 717
-    .line 718
-    invoke-virtual {v1, v0}, Landroidx/concurrent/futures/h;->b(Ljava/lang/Object;)Z
-
-    .line 719
-    .line 720
-    .line 721
-    goto :goto_8
-
-    .line 722
-    :cond_a
-    invoke-static {v2}, Landroidx/camera/camera2/internal/i;->x(Ls/g2;)Ljava/lang/String;
-
-    .line 723
-    .line 724
-    .line 725
-    move-result-object v2
-
-    .line 726
-    iget-object v0, v0, Landroidx/camera/camera2/internal/i;->b:Landroidx/camera/core/impl/k2;
-
-    .line 727
-    .line 728
-    invoke-virtual {v0, v2}, Landroidx/camera/core/impl/k2;->f(Ljava/lang/String;)Z
-
-    .line 729
-    .line 730
-    .line 731
-    move-result v0
-
-    .line 732
-    invoke-static {v0}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
-
-    .line 733
-    .line 734
-    .line 735
+    .line 2
+    .line 3
+    .line 4
     move-result-object v0
 
-    .line 736
-    invoke-virtual {v1, v0}, Landroidx/concurrent/futures/h;->b(Ljava/lang/Object;)Z
-
-    .line 737
-    .line 738
-    .line 739
-    :goto_8
-    return-void
-
-    .line 740
-    :pswitch_17
-    iget-object v0, p0, Landroidx/appcompat/app/t;->c:Ljava/lang/Object;
-
-    .line 741
-    .line 742
-    check-cast v0, Landroid/view/Surface;
-
-    .line 743
-    .line 744
-    iget-object v1, p0, Landroidx/appcompat/app/t;->d:Ljava/lang/Object;
-
-    .line 745
-    .line 746
-    check-cast v1, Landroid/graphics/SurfaceTexture;
-
-    .line 747
-    .line 748
-    invoke-virtual {v0}, Landroid/view/Surface;->release()V
-
-    .line 749
-    .line 750
-    .line 751
-    invoke-virtual {v1}, Landroid/graphics/SurfaceTexture;->release()V
-
-    .line 752
-    .line 753
-    .line 754
-    return-void
-
-    .line 755
-    :pswitch_18
-    iget-object v0, p0, Landroidx/appcompat/app/t;->c:Ljava/lang/Object;
-
-    .line 756
-    .line 757
-    check-cast v0, Ls/d1;
-
-    .line 758
-    .line 759
-    iget-object v1, p0, Landroidx/appcompat/app/t;->d:Ljava/lang/Object;
-
-    .line 760
-    .line 761
-    check-cast v1, Landroid/hardware/camera2/TotalCaptureResult;
-
-    .line 762
-    .line 763
-    sget v2, Ls/d1;->d:I
-
-    .line 764
-    .line 765
-    invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
-
-    .line 766
-    .line 767
-    .line 768
-    new-instance v2, Ljava/util/HashSet;
-
-    .line 769
-    .line 770
-    invoke-direct {v2}, Ljava/util/HashSet;-><init>()V
-
-    .line 771
-    .line 772
-    .line 773
-    iget-object v0, v0, Ls/d1;->b:Ljava/lang/Object;
-
-    .line 774
-    .line 775
-    check-cast v0, Ljava/util/Set;
-
-    .line 776
-    .line 777
-    invoke-interface {v0}, Ljava/util/Set;->iterator()Ljava/util/Iterator;
-
-    .line 778
-    .line 779
-    .line 780
-    move-result-object v3
-
-    .line 781
-    :cond_b
-    :goto_9
-    invoke-interface {v3}, Ljava/util/Iterator;->hasNext()Z
-
-    .line 782
-    .line 783
-    .line 784
-    move-result v4
-
-    .line 785
-    if-eqz v4, :cond_c
-
-    .line 786
-    .line 787
-    invoke-interface {v3}, Ljava/util/Iterator;->next()Ljava/lang/Object;
-
-    .line 788
-    .line 789
-    .line 790
-    move-result-object v4
-
-    .line 791
-    check-cast v4, Ls/m;
-
-    .line 792
-    .line 793
-    invoke-interface {v4, v1}, Ls/m;->a(Landroid/hardware/camera2/TotalCaptureResult;)Z
-
-    .line 794
-    .line 795
-    .line 796
-    move-result v5
-
-    .line 797
-    if-eqz v5, :cond_b
-
-    .line 798
-    .line 799
-    invoke-virtual {v2, v4}, Ljava/util/HashSet;->add(Ljava/lang/Object;)Z
-
-    .line 800
-    .line 801
-    .line 802
-    goto :goto_9
-
-    .line 803
-    :cond_c
-    invoke-virtual {v2}, Ljava/util/HashSet;->isEmpty()Z
-
-    .line 804
-    .line 805
-    .line 806
-    move-result v1
-
-    .line 807
-    if-nez v1, :cond_d
-
-    .line 808
-    .line 809
-    invoke-interface {v0, v2}, Ljava/util/Set;->removeAll(Ljava/util/Collection;)Z
-
-    .line 810
-    .line 811
-    .line 812
-    :cond_d
-    return-void
-
-    .line 813
-    :pswitch_19
-    iget-object v0, p0, Landroidx/appcompat/app/t;->c:Ljava/lang/Object;
-
-    .line 814
-    .line 815
-    check-cast v0, Ls/n;
-
-    .line 816
-    .line 817
-    iget-object v2, p0, Landroidx/appcompat/app/t;->d:Ljava/lang/Object;
-
-    .line 818
-    .line 819
-    check-cast v2, Landroidx/concurrent/futures/h;
-
-    .line 820
-    .line 821
-    invoke-virtual {v0}, Ls/n;->B()J
-
-    .line 822
-    .line 823
-    .line 824
-    move-result-wide v3
-
-    .line 825
-    new-instance v5, Ls/j;
-
-    .line 826
-    .line 827
-    invoke-direct {v5, v0, v3, v4, v1}, Ls/j;-><init>(Ljava/lang/Object;JI)V
-
-    .line 828
-    .line 829
-    .line 830
-    invoke-static {v5}, Landroidx/concurrent/futures/l;->e(Landroidx/concurrent/futures/i;)Landroidx/concurrent/futures/k;
-
-    .line 831
-    .line 832
-    .line 833
-    move-result-object v0
-
-    .line 834
-    invoke-static {v0, v2}, Lc0/l;->g(Lcom/google/common/util/concurrent/c;Landroidx/concurrent/futures/h;)V
-
-    .line 835
-    .line 836
-    .line 837
-    return-void
-
-    .line 838
-    :pswitch_1a
-    iget-object v0, p0, Landroidx/appcompat/app/t;->c:Ljava/lang/Object;
-
-    .line 839
-    .line 840
-    check-cast v0, Ls/n;
-
-    .line 841
-    .line 842
-    iget-object v1, p0, Landroidx/appcompat/app/t;->d:Ljava/lang/Object;
-
-    .line 843
-    .line 844
-    check-cast v1, Landroidx/camera/core/impl/m;
-
-    .line 845
-    .line 846
-    iget-object v0, v0, Ls/n;->A:Ls/l;
-
-    .line 847
-    .line 848
-    iget-object v2, v0, Ls/l;->b:Ljava/lang/Object;
-
-    .line 849
-    .line 850
-    check-cast v2, Ljava/util/Set;
-
-    .line 851
-    .line 852
-    invoke-interface {v2, v1}, Ljava/util/Set;->remove(Ljava/lang/Object;)Z
-
-    .line 853
-    .line 854
-    .line 855
-    iget-object v0, v0, Ls/l;->c:Ljava/lang/Object;
-
-    .line 856
-    .line 857
-    check-cast v0, Ljava/util/Map;
-
-    .line 858
-    .line 859
-    invoke-interface {v0, v1}, Ljava/util/Map;->remove(Ljava/lang/Object;)Ljava/lang/Object;
-
-    .line 860
-    .line 861
-    .line 862
-    return-void
-
-    .line 863
-    :pswitch_1b
-    iget-object v0, p0, Landroidx/appcompat/app/t;->c:Ljava/lang/Object;
-
-    .line 864
-    .line 865
-    check-cast v0, Landroidx/appcompat/app/u;
-
-    .line 866
-    .line 867
-    iget-object v1, p0, Landroidx/appcompat/app/t;->d:Ljava/lang/Object;
-
-    .line 868
-    .line 869
-    check-cast v1, Ljava/lang/Runnable;
-
-    .line 870
-    .line 871
-    invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
-
-    .line 872
-    .line 873
-    .line 874
-    :try_start_3
-    invoke-interface {v1}, Ljava/lang/Runnable;->run()V
-    :try_end_3
-    .catchall {:try_start_3 .. :try_end_3} :catchall_1
-
-    .line 875
-    .line 876
-    .line 877
-    invoke-virtual {v0}, Landroidx/appcompat/app/u;->a()V
-
-    .line 878
-    .line 879
-    .line 880
-    return-void
-
-    .line 881
-    :catchall_1
-    move-exception v1
-
-    .line 882
-    invoke-virtual {v0}, Landroidx/appcompat/app/u;->a()V
-
-    .line 883
-    .line 884
-    .line 885
-    throw v1
-
-    .line 886
-    nop
-
-    .line 887
-    :pswitch_data_0
-    .packed-switch 0x0
-        :pswitch_1b
-        :pswitch_1a
-        :pswitch_19
-        :pswitch_18
-        :pswitch_17
-        :pswitch_16
-        :pswitch_15
-        :pswitch_14
-        :pswitch_13
-        :pswitch_12
-        :pswitch_0
-        :pswitch_11
-        :pswitch_10
-        :pswitch_f
-        :pswitch_0
-        :pswitch_e
-        :pswitch_d
-        :pswitch_c
-        :pswitch_b
-        :pswitch_a
-        :pswitch_9
-        :pswitch_8
-        :pswitch_7
-        :pswitch_6
-        :pswitch_5
-        :pswitch_4
-        :pswitch_3
-        :pswitch_2
-        :pswitch_1
-    .end packed-switch
+    .line 5
+    if-ne p1, v0, :cond_0
+
+    .line 6
+    .line 7
+    iget-object v0, p0, Landroidx/appcompat/app/t;->b:Landroidx/appcompat/app/F;
+
+    .line 8
+    .line 9
+    iget-boolean v1, v0, Landroidx/appcompat/app/F;->H:Z
+
+    .line 10
+    .line 11
+    if-eqz v1, :cond_0
+
+    .line 12
+    .line 13
+    iget-object v1, v0, Landroidx/appcompat/app/F;->n:Landroid/view/Window;
+
+    .line 14
+    .line 15
+    invoke-virtual {v1}, Landroid/view/Window;->getCallback()Landroid/view/Window$Callback;
+
+    .line 16
+    .line 17
+    .line 18
+    move-result-object v1
+
+    .line 19
+    if-eqz v1, :cond_0
+
+    .line 20
+    .line 21
+    iget-boolean v0, v0, Landroidx/appcompat/app/F;->S:Z
+
+    .line 22
+    .line 23
+    if-nez v0, :cond_0
+
+    .line 24
+    .line 25
+    const/16 v0, 0x6c
+
+    .line 26
+    .line 27
+    invoke-interface {v1, v0, p1}, Landroid/view/Window$Callback;->onMenuOpened(ILandroid/view/Menu;)Z
+
+    .line 28
+    .line 29
+    .line 30
+    :cond_0
+    const/4 p1, 0x1
+
+    .line 31
+    return p1
 .end method

@@ -42,6 +42,7 @@
     .line 2
     invoke-direct {p0, p2}, Ljava/lang/RuntimeException;-><init>(Ljava/lang/String;)V
 
+    .line 3
     iput-object p1, p0, Landroidx/fragment/app/strictmode/Violation;->fragment:Landroidx/fragment/app/Fragment;
 
     return-void
@@ -68,7 +69,10 @@
 .method public final getFragment()Landroidx/fragment/app/Fragment;
     .locals 1
 
+    .line 1
     iget-object v0, p0, Landroidx/fragment/app/strictmode/Violation;->fragment:Landroidx/fragment/app/Fragment;
 
+    .line 2
+    .line 3
     return-object v0
 .end method

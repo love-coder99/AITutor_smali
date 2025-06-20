@@ -80,11 +80,11 @@
     .line 4
     .line 5
     .line 6
-    new-instance v1, Lcom/applovin/impl/ew;
+    new-instance v1, Lcom/applovin/impl/U2;
 
     .line 7
     .line 8
-    invoke-direct {v1, v0}, Lcom/applovin/impl/ew;-><init>(Landroid/os/Handler;)V
+    invoke-direct {v1, v0}, Lcom/applovin/impl/U2;-><init>(Landroid/os/Handler;)V
 
     .line 9
     .line 10
@@ -93,7 +93,7 @@
 
     .line 12
     .line 13
-    invoke-static {p1, v1, v0}, Lcom/applovin/impl/dw;->t(Landroid/media/AudioTrack;Lcom/applovin/impl/ew;Landroid/media/AudioTrack$StreamEventCallback;)V
+    invoke-static {p1, v1, v0}, Lcom/applovin/exoplayer2/ui/k;->q(Landroid/media/AudioTrack;Lcom/applovin/impl/U2;Landroid/media/AudioTrack$StreamEventCallback;)V
 
     .line 14
     .line 15
@@ -109,7 +109,7 @@
 
     .line 2
     .line 3
-    invoke-static {p1, v0}, Lcom/applovin/impl/dw;->s(Landroid/media/AudioTrack;Landroid/media/AudioTrack$StreamEventCallback;)V
+    invoke-static {p1, v0}, Lcom/applovin/exoplayer2/ui/k;->p(Landroid/media/AudioTrack;Landroid/media/AudioTrack$StreamEventCallback;)V
 
     .line 4
     .line 5

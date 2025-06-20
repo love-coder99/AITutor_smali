@@ -2,30 +2,21 @@
 .super Ljava/lang/Object;
 .source "SourceFile"
 
+# interfaces
+.implements Ljava/io/Closeable;
+
 
 # instance fields
-.field public final a:Ljava/lang/String;
+.field public final b:Lcoil/disk/c;
 
-.field public final b:[J
+.field public c:Z
 
-.field public final c:Ljava/util/ArrayList;
-
-.field public final d:Ljava/util/ArrayList;
-
-.field public e:Z
-
-.field public f:Z
-
-.field public g:Lm0/q;
-
-.field public h:I
-
-.field public final synthetic i:Lcoil/disk/g;
+.field public final synthetic d:Lcoil/disk/f;
 
 
 # direct methods
-.method public constructor <init>(Lcoil/disk/g;Ljava/lang/String;)V
-    .locals 5
+.method public constructor <init>(Lcoil/disk/f;Lcoil/disk/c;)V
+    .locals 0
 
     .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -33,340 +24,103 @@
     .line 2
     .line 3
     .line 4
-    iput-object p1, p0, Lcoil/disk/d;->i:Lcoil/disk/g;
+    iput-object p1, p0, Lcoil/disk/d;->d:Lcoil/disk/f;
 
     .line 5
     .line 6
-    iput-object p2, p0, Lcoil/disk/d;->a:Ljava/lang/String;
+    iput-object p2, p0, Lcoil/disk/d;->b:Lcoil/disk/c;
 
     .line 7
     .line 8
-    invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
-
-    .line 9
-    .line 10
-    .line 11
-    const/4 v0, 0x2
-
-    .line 12
-    new-array v1, v0, [J
-
-    .line 13
-    .line 14
-    iput-object v1, p0, Lcoil/disk/d;->b:[J
-
-    .line 15
-    .line 16
-    new-instance v1, Ljava/util/ArrayList;
-
-    .line 17
-    .line 18
-    invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
-
-    .line 19
-    .line 20
-    .line 21
-    invoke-direct {v1, v0}, Ljava/util/ArrayList;-><init>(I)V
-
-    .line 22
-    .line 23
-    .line 24
-    iput-object v1, p0, Lcoil/disk/d;->c:Ljava/util/ArrayList;
-
-    .line 25
-    .line 26
-    new-instance v1, Ljava/util/ArrayList;
-
-    .line 27
-    .line 28
-    invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
-
-    .line 29
-    .line 30
-    .line 31
-    invoke-direct {v1, v0}, Ljava/util/ArrayList;-><init>(I)V
-
-    .line 32
-    .line 33
-    .line 34
-    iput-object v1, p0, Lcoil/disk/d;->d:Ljava/util/ArrayList;
-
-    .line 35
-    .line 36
-    new-instance v1, Ljava/lang/StringBuilder;
-
-    .line 37
-    .line 38
-    invoke-direct {v1, p2}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
-
-    .line 39
-    .line 40
-    .line 41
-    const/16 p2, 0x2e
-
-    .line 42
-    .line 43
-    invoke-virtual {v1, p2}, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
-
-    .line 44
-    .line 45
-    .line 46
-    invoke-virtual {v1}, Ljava/lang/StringBuilder;->length()I
-
-    .line 47
-    .line 48
-    .line 49
-    move-result p2
-
-    .line 50
-    invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
-
-    .line 51
-    .line 52
-    .line 53
-    const/4 p1, 0x0
-
-    .line 54
-    :goto_0
-    if-ge p1, v0, :cond_0
-
-    .line 55
-    .line 56
-    invoke-virtual {v1, p1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
-
-    .line 57
-    .line 58
-    .line 59
-    iget-object v2, p0, Lcoil/disk/d;->c:Ljava/util/ArrayList;
-
-    .line 60
-    .line 61
-    iget-object v3, p0, Lcoil/disk/d;->i:Lcoil/disk/g;
-
-    .line 62
-    .line 63
-    iget-object v3, v3, Lcoil/disk/g;->b:Lxi/x;
-
-    .line 64
-    .line 65
-    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    .line 66
-    .line 67
-    .line 68
-    move-result-object v4
-
-    .line 69
-    invoke-virtual {v3, v4}, Lxi/x;->d(Ljava/lang/String;)Lxi/x;
-
-    .line 70
-    .line 71
-    .line 72
-    move-result-object v3
-
-    .line 73
-    invoke-interface {v2, v3}, Ljava/util/Collection;->add(Ljava/lang/Object;)Z
-
-    .line 74
-    .line 75
-    .line 76
-    const-string v2, ".tmp"
-
-    .line 77
-    .line 78
-    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    .line 79
-    .line 80
-    .line 81
-    iget-object v2, p0, Lcoil/disk/d;->d:Ljava/util/ArrayList;
-
-    .line 82
-    .line 83
-    iget-object v3, p0, Lcoil/disk/d;->i:Lcoil/disk/g;
-
-    .line 84
-    .line 85
-    iget-object v3, v3, Lcoil/disk/g;->b:Lxi/x;
-
-    .line 86
-    .line 87
-    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    .line 88
-    .line 89
-    .line 90
-    move-result-object v4
-
-    .line 91
-    invoke-virtual {v3, v4}, Lxi/x;->d(Ljava/lang/String;)Lxi/x;
-
-    .line 92
-    .line 93
-    .line 94
-    move-result-object v3
-
-    .line 95
-    invoke-interface {v2, v3}, Ljava/util/Collection;->add(Ljava/lang/Object;)Z
-
-    .line 96
-    .line 97
-    .line 98
-    invoke-virtual {v1, p2}, Ljava/lang/StringBuilder;->setLength(I)V
-
-    .line 99
-    .line 100
-    .line 101
-    add-int/lit8 p1, p1, 0x1
-
-    .line 102
-    .line 103
-    goto :goto_0
-
-    .line 104
-    :cond_0
     return-void
 .end method
 
 
 # virtual methods
-.method public final a()Lcoil/disk/e;
-    .locals 7
+.method public final close()V
+    .locals 3
 
     .line 1
-    iget-boolean v0, p0, Lcoil/disk/d;->e:Z
+    iget-boolean v0, p0, Lcoil/disk/d;->c:Z
 
     .line 2
     .line 3
-    const/4 v1, 0x0
+    if-nez v0, :cond_1
 
     .line 4
-    if-nez v0, :cond_0
-
     .line 5
+    const/4 v0, 0x1
+
     .line 6
-    return-object v1
+    iput-boolean v0, p0, Lcoil/disk/d;->c:Z
 
     .line 7
-    :cond_0
-    iget-object v0, p0, Lcoil/disk/d;->g:Lm0/q;
-
     .line 8
-    .line 9
-    if-nez v0, :cond_4
+    iget-object v0, p0, Lcoil/disk/d;->d:Lcoil/disk/f;
 
+    .line 9
     .line 10
+    monitor-enter v0
+
     .line 11
-    iget-boolean v0, p0, Lcoil/disk/d;->f:Z
+    :try_start_0
+    iget-object v1, p0, Lcoil/disk/d;->b:Lcoil/disk/c;
 
     .line 12
     .line 13
-    if-eqz v0, :cond_1
+    iget v2, v1, Lcoil/disk/c;->h:I
 
     .line 14
     .line 15
-    goto :goto_1
+    add-int/lit8 v2, v2, -0x1
 
     .line 16
-    :cond_1
-    iget-object v0, p0, Lcoil/disk/d;->c:Ljava/util/ArrayList;
-
     .line 17
-    .line 18
-    invoke-virtual {v0}, Ljava/util/ArrayList;->size()I
+    iput v2, v1, Lcoil/disk/c;->h:I
 
+    .line 18
     .line 19
+    if-nez v2, :cond_0
+
     .line 20
     .line 21
-    move-result v2
+    iget-boolean v2, v1, Lcoil/disk/c;->f:Z
 
     .line 22
-    const/4 v3, 0x0
-
     .line 23
-    :goto_0
-    iget-object v4, p0, Lcoil/disk/d;->i:Lcoil/disk/g;
+    if-eqz v2, :cond_0
 
     .line 24
     .line 25
-    if-ge v3, v2, :cond_3
+    sget-object v2, Lcoil/disk/f;->s:Lkotlin/text/Regex;
 
     .line 26
     .line 27
-    invoke-virtual {v0, v3}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
+    invoke-virtual {v0, v1}, Lcoil/disk/f;->n(Lcoil/disk/c;)V
+    :try_end_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
     .line 28
     .line 29
     .line 30
-    move-result-object v5
+    :cond_0
+    monitor-exit v0
 
     .line 31
-    check-cast v5, Lxi/x;
-
-    .line 32
-    .line 33
-    iget-object v6, v4, Lcoil/disk/g;->r:Lcoil/disk/f;
-
-    .line 34
-    .line 35
-    invoke-virtual {v6, v5}, Lxi/m;->e(Lxi/x;)Z
-
-    .line 36
-    .line 37
-    .line 38
-    move-result v5
-
-    .line 39
-    if-nez v5, :cond_2
-
-    .line 40
-    .line 41
-    :try_start_0
-    invoke-virtual {v4, p0}, Lcoil/disk/g;->l(Lcoil/disk/d;)V
-    :try_end_0
-    .catch Ljava/io/IOException; {:try_start_0 .. :try_end_0} :catch_0
-
-    .line 42
-    .line 43
-    .line 44
-    :catch_0
-    return-object v1
-
-    .line 45
-    :cond_2
-    add-int/lit8 v3, v3, 0x1
-
-    .line 46
-    .line 47
     goto :goto_0
 
-    .line 48
-    :cond_3
-    iget v0, p0, Lcoil/disk/d;->h:I
+    .line 32
+    :catchall_0
+    move-exception v1
 
-    .line 49
-    .line 50
-    add-int/lit8 v0, v0, 0x1
+    .line 33
+    monitor-exit v0
 
-    .line 51
-    .line 52
-    iput v0, p0, Lcoil/disk/d;->h:I
+    .line 34
+    throw v1
 
-    .line 53
-    .line 54
-    new-instance v0, Lcoil/disk/e;
-
-    .line 55
-    .line 56
-    invoke-direct {v0, v4, p0}, Lcoil/disk/e;-><init>(Lcoil/disk/g;Lcoil/disk/d;)V
-
-    .line 57
-    .line 58
-    .line 59
-    return-object v0
-
-    .line 60
-    :cond_4
-    :goto_1
-    return-object v1
+    .line 35
+    :cond_1
+    :goto_0
+    return-void
 .end method

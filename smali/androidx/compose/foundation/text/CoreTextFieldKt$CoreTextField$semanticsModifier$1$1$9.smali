@@ -3,12 +3,12 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lzh/a;
+.implements Lka/a;
 
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Landroidx/compose/foundation/text/CoreTextFieldKt$CoreTextField$semanticsModifier$1$1;->invoke(Landroidx/compose/ui/semantics/u;)V
+    value = Landroidx/compose/foundation/text/CoreTextFieldKt$CoreTextField$semanticsModifier$1$1;->invoke(Landroidx/compose/ui/semantics/t;)V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -19,7 +19,7 @@
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "Lkotlin/jvm/internal/Lambda;",
-        "Lzh/a;"
+        "Lka/a;"
     }
 .end annotation
 
@@ -44,14 +44,14 @@
 
 
 # instance fields
-.field final synthetic $manager:Landroidx/compose/foundation/text/selection/a0;
+.field final synthetic $manager:Landroidx/compose/foundation/text/selection/x;
 
 
 # direct methods
-.method public constructor <init>(Landroidx/compose/foundation/text/selection/a0;)V
+.method public constructor <init>(Landroidx/compose/foundation/text/selection/x;)V
     .locals 0
 
-    iput-object p1, p0, Landroidx/compose/foundation/text/CoreTextFieldKt$CoreTextField$semanticsModifier$1$1$9;->$manager:Landroidx/compose/foundation/text/selection/a0;
+    iput-object p1, p0, Landroidx/compose/foundation/text/CoreTextFieldKt$CoreTextField$semanticsModifier$1$1$9;->$manager:Landroidx/compose/foundation/text/selection/x;
 
     const/4 p1, 0x0
 
@@ -65,11 +65,12 @@
 .method public final invoke()Ljava/lang/Boolean;
     .locals 1
 
-    iget-object v0, p0, Landroidx/compose/foundation/text/CoreTextFieldKt$CoreTextField$semanticsModifier$1$1$9;->$manager:Landroidx/compose/foundation/text/selection/a0;
-
     .line 2
-    invoke-virtual {v0}, Landroidx/compose/foundation/text/selection/a0;->f()V
+    iget-object v0, p0, Landroidx/compose/foundation/text/CoreTextFieldKt$CoreTextField$semanticsModifier$1$1$9;->$manager:Landroidx/compose/foundation/text/selection/x;
 
+    invoke-virtual {v0}, Landroidx/compose/foundation/text/selection/x;->e()V
+
+    .line 3
     sget-object v0, Ljava/lang/Boolean;->TRUE:Ljava/lang/Boolean;
 
     return-object v0

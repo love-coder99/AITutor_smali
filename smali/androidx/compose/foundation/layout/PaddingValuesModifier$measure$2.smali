@@ -3,14 +3,14 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lzh/c;
+.implements Lka/c;
 
 
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "Lkotlin/jvm/internal/Lambda;",
-        "Lzh/c;"
+        "Lka/c;"
     }
 .end annotation
 
@@ -19,10 +19,10 @@
         "\u0000\u000c\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0008\u0003\u0010\u0004\u001a\u00020\u0001*\u00020\u0000H\n\u00a2\u0006\u0004\u0008\u0002\u0010\u0003"
     }
     d2 = {
-        "Landroidx/compose/ui/layout/z0;",
-        "Lqh/r;",
+        "Landroidx/compose/ui/layout/W;",
+        "LX9/j;",
         "invoke",
-        "(Landroidx/compose/ui/layout/z0;)V",
+        "(Landroidx/compose/ui/layout/W;)V",
         "<anonymous>"
     }
     k = 0x3
@@ -35,22 +35,22 @@
 
 
 # instance fields
-.field final synthetic $placeable:Landroidx/compose/ui/layout/a1;
+.field final synthetic $placeable:Landroidx/compose/ui/layout/X;
 
-.field final synthetic $this_measure:Landroidx/compose/ui/layout/o0;
+.field final synthetic $this_measure:Landroidx/compose/ui/layout/L;
 
-.field final synthetic this$0:Landroidx/compose/foundation/layout/r0;
+.field final synthetic this$0:Landroidx/compose/foundation/layout/O;
 
 
 # direct methods
-.method public constructor <init>(Landroidx/compose/ui/layout/a1;Landroidx/compose/ui/layout/o0;Landroidx/compose/foundation/layout/r0;)V
+.method public constructor <init>(Landroidx/compose/ui/layout/X;Landroidx/compose/ui/layout/L;Landroidx/compose/foundation/layout/O;)V
     .locals 0
 
-    iput-object p1, p0, Landroidx/compose/foundation/layout/PaddingValuesModifier$measure$2;->$placeable:Landroidx/compose/ui/layout/a1;
+    iput-object p1, p0, Landroidx/compose/foundation/layout/PaddingValuesModifier$measure$2;->$placeable:Landroidx/compose/ui/layout/X;
 
-    iput-object p2, p0, Landroidx/compose/foundation/layout/PaddingValuesModifier$measure$2;->$this_measure:Landroidx/compose/ui/layout/o0;
+    iput-object p2, p0, Landroidx/compose/foundation/layout/PaddingValuesModifier$measure$2;->$this_measure:Landroidx/compose/ui/layout/L;
 
-    iput-object p3, p0, Landroidx/compose/foundation/layout/PaddingValuesModifier$measure$2;->this$0:Landroidx/compose/foundation/layout/r0;
+    iput-object p3, p0, Landroidx/compose/foundation/layout/PaddingValuesModifier$measure$2;->this$0:Landroidx/compose/foundation/layout/O;
 
     const/4 p1, 0x1
 
@@ -64,59 +64,62 @@
 .method public bridge synthetic invoke(Ljava/lang/Object;)Ljava/lang/Object;
     .locals 0
 
-    .line 6
-    check-cast p1, Landroidx/compose/ui/layout/z0;
+    .line 1
+    check-cast p1, Landroidx/compose/ui/layout/W;
 
-    invoke-virtual {p0, p1}, Landroidx/compose/foundation/layout/PaddingValuesModifier$measure$2;->invoke(Landroidx/compose/ui/layout/z0;)V
+    invoke-virtual {p0, p1}, Landroidx/compose/foundation/layout/PaddingValuesModifier$measure$2;->invoke(Landroidx/compose/ui/layout/W;)V
 
-    sget-object p1, Lqh/r;->a:Lqh/r;
+    sget-object p1, LX9/j;->a:LX9/j;
 
     return-object p1
 .end method
 
-.method public final invoke(Landroidx/compose/ui/layout/z0;)V
+.method public final invoke(Landroidx/compose/ui/layout/W;)V
     .locals 4
 
-    iget-object v0, p0, Landroidx/compose/foundation/layout/PaddingValuesModifier$measure$2;->$placeable:Landroidx/compose/ui/layout/a1;
-
-    iget-object v1, p0, Landroidx/compose/foundation/layout/PaddingValuesModifier$measure$2;->$this_measure:Landroidx/compose/ui/layout/o0;
-
-    iget-object v2, p0, Landroidx/compose/foundation/layout/PaddingValuesModifier$measure$2;->this$0:Landroidx/compose/foundation/layout/r0;
-
-    .line 1
-    iget-object v2, v2, Landroidx/compose/foundation/layout/r0;->p:Landroidx/compose/foundation/layout/p0;
-
     .line 2
-    invoke-interface {v1}, Landroidx/compose/ui/layout/p;->getLayoutDirection()Landroidx/compose/ui/unit/LayoutDirection;
+    iget-object v0, p0, Landroidx/compose/foundation/layout/PaddingValuesModifier$measure$2;->$placeable:Landroidx/compose/ui/layout/X;
+
+    .line 3
+    iget-object v1, p0, Landroidx/compose/foundation/layout/PaddingValuesModifier$measure$2;->$this_measure:Landroidx/compose/ui/layout/L;
+
+    iget-object v2, p0, Landroidx/compose/foundation/layout/PaddingValuesModifier$measure$2;->this$0:Landroidx/compose/foundation/layout/O;
+
+    .line 4
+    iget-object v2, v2, Landroidx/compose/foundation/layout/O;->p:Landroidx/compose/foundation/layout/M;
+
+    .line 5
+    invoke-interface {v1}, Landroidx/compose/ui/layout/m;->getLayoutDirection()Landroidx/compose/ui/unit/LayoutDirection;
 
     move-result-object v3
 
-    invoke-interface {v2, v3}, Landroidx/compose/foundation/layout/p0;->b(Landroidx/compose/ui/unit/LayoutDirection;)F
+    invoke-interface {v2, v3}, Landroidx/compose/foundation/layout/M;->b(Landroidx/compose/ui/unit/LayoutDirection;)F
 
     move-result v2
 
-    invoke-interface {v1, v2}, Lh2/b;->c0(F)I
+    invoke-interface {v1, v2}, LM0/b;->b0(F)I
 
     move-result v1
 
-    iget-object v2, p0, Landroidx/compose/foundation/layout/PaddingValuesModifier$measure$2;->$this_measure:Landroidx/compose/ui/layout/o0;
+    .line 6
+    iget-object v2, p0, Landroidx/compose/foundation/layout/PaddingValuesModifier$measure$2;->$this_measure:Landroidx/compose/ui/layout/L;
 
-    iget-object v3, p0, Landroidx/compose/foundation/layout/PaddingValuesModifier$measure$2;->this$0:Landroidx/compose/foundation/layout/r0;
+    iget-object v3, p0, Landroidx/compose/foundation/layout/PaddingValuesModifier$measure$2;->this$0:Landroidx/compose/foundation/layout/O;
 
-    .line 3
-    iget-object v3, v3, Landroidx/compose/foundation/layout/r0;->p:Landroidx/compose/foundation/layout/p0;
+    .line 7
+    iget-object v3, v3, Landroidx/compose/foundation/layout/O;->p:Landroidx/compose/foundation/layout/M;
 
-    .line 4
-    invoke-interface {v3}, Landroidx/compose/foundation/layout/p0;->d()F
+    .line 8
+    invoke-interface {v3}, Landroidx/compose/foundation/layout/M;->d()F
 
     move-result v3
 
-    invoke-interface {v2, v3}, Lh2/b;->c0(F)I
+    invoke-interface {v2, v3}, LM0/b;->b0(F)I
 
     move-result v2
 
-    .line 5
-    invoke-static {p1, v0, v1, v2}, Landroidx/compose/ui/layout/z0;->d(Landroidx/compose/ui/layout/z0;Landroidx/compose/ui/layout/a1;II)V
+    .line 9
+    invoke-static {p1, v0, v1, v2}, Landroidx/compose/ui/layout/W;->d(Landroidx/compose/ui/layout/W;Landroidx/compose/ui/layout/X;II)V
 
     return-void
 .end method

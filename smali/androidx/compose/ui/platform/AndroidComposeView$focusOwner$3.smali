@@ -3,14 +3,14 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lzh/c;
+.implements Lka/c;
 
 
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "Lkotlin/jvm/internal/FunctionReferenceImpl;",
-        "Lzh/c;"
+        "Lka/c;"
     }
 .end annotation
 
@@ -29,15 +29,15 @@
 .method public constructor <init>(Ljava/lang/Object;)V
     .locals 7
 
-    const/4 v1, 0x1
-
-    const-class v3, Landroidx/compose/ui/platform/r;
-
-    const-string v4, "onMoveFocusInChildren"
-
     const-string v5, "onMoveFocusInChildren-3ESFkO8(I)Z"
 
     const/4 v6, 0x0
+
+    const/4 v1, 0x1
+
+    const-class v3, Landroidx/compose/ui/platform/o;
+
+    const-string v4, "onMoveFocusInChildren"
 
     move-object v0, p0
 
@@ -81,11 +81,11 @@
 
     .line 2
     .line 3
-    check-cast v0, Landroidx/compose/ui/platform/r;
+    check-cast v0, Landroidx/compose/ui/platform/o;
 
     .line 4
     .line 5
-    sget-object v1, Landroidx/compose/ui/platform/r;->B0:Ljava/lang/Class;
+    sget-object v1, Landroidx/compose/ui/platform/o;->B0:Ljava/lang/Class;
 
     .line 6
     .line 7
@@ -152,7 +152,7 @@
     move-result p1
 
     .line 37
-    invoke-virtual {v0}, Landroidx/compose/ui/platform/r;->w()Ln1/e;
+    invoke-virtual {v0}, Landroidx/compose/ui/platform/o;->w()Lr0/d;
 
     .line 38
     .line 39
@@ -164,7 +164,7 @@
 
     .line 42
     .line 43
-    invoke-static {v1}, Landroidx/compose/ui/graphics/f0;->D(Ln1/e;)Landroid/graphics/Rect;
+    invoke-static {v1}, Landroidx/compose/ui/graphics/G;->D(Lr0/d;)Landroid/graphics/Rect;
 
     .line 44
     .line 45
@@ -253,31 +253,23 @@
 
     .line 82
     .line 83
-    invoke-virtual {v0}, Ljava/lang/Object;->toString()Ljava/lang/String;
+    invoke-direct {p1, v0}, Ljava/lang/IllegalStateException;-><init>(Ljava/lang/String;)V
 
     .line 84
     .line 85
     .line 86
-    move-result-object v0
-
-    .line 87
-    invoke-direct {p1, v0}, Ljava/lang/IllegalStateException;-><init>(Ljava/lang/String;)V
-
-    .line 88
-    .line 89
-    .line 90
     throw p1
 
-    .line 91
+    .line 87
     :cond_4
     :goto_2
     invoke-static {v2}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
 
-    .line 92
-    .line 93
-    .line 94
+    .line 88
+    .line 89
+    .line 90
     move-result-object p1
 
-    .line 95
+    .line 91
     return-object p1
 .end method

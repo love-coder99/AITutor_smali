@@ -4,6 +4,15 @@
 
 
 # annotations
+.annotation runtime Lca/c;
+    c = "androidx.work.impl.WorkerWrapper"
+    f = "WorkerWrapper.kt"
+    l = {
+        0x12b
+    }
+    m = "runWorker"
+.end annotation
+
 .annotation runtime Lkotlin/Metadata;
     k = 0x3
     mv = {
@@ -12,15 +21,6 @@
         0x0
     }
     xi = 0x30
-.end annotation
-
-.annotation runtime Lth/c;
-    c = "androidx.work.impl.WorkerWrapper"
-    f = "WorkerWrapper.kt"
-    l = {
-        0x12b
-    }
-    m = "runWorker"
 .end annotation
 
 
@@ -33,16 +33,16 @@
 
 .field synthetic result:Ljava/lang/Object;
 
-.field final synthetic this$0:Landroidx/work/impl/r0;
+.field final synthetic this$0:Landroidx/work/impl/v;
 
 
 # direct methods
-.method public constructor <init>(Landroidx/work/impl/r0;Lkotlin/coroutines/Continuation;)V
+.method public constructor <init>(Landroidx/work/impl/v;Lkotlin/coroutines/Continuation;)V
     .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
-            "Landroidx/work/impl/r0;",
+            "Landroidx/work/impl/v;",
             "Lkotlin/coroutines/Continuation<",
             "-",
             "Landroidx/work/impl/WorkerWrapper$runWorker$1;",
@@ -50,7 +50,7 @@
         }
     .end annotation
 
-    iput-object p1, p0, Landroidx/work/impl/WorkerWrapper$runWorker$1;->this$0:Landroidx/work/impl/r0;
+    iput-object p1, p0, Landroidx/work/impl/WorkerWrapper$runWorker$1;->this$0:Landroidx/work/impl/v;
 
     invoke-direct {p0, p2}, Lkotlin/coroutines/jvm/internal/ContinuationImpl;-><init>(Lkotlin/coroutines/Continuation;)V
 
@@ -72,9 +72,9 @@
 
     iput p1, p0, Landroidx/work/impl/WorkerWrapper$runWorker$1;->label:I
 
-    iget-object p1, p0, Landroidx/work/impl/WorkerWrapper$runWorker$1;->this$0:Landroidx/work/impl/r0;
+    iget-object p1, p0, Landroidx/work/impl/WorkerWrapper$runWorker$1;->this$0:Landroidx/work/impl/v;
 
-    invoke-static {p1, p0}, Landroidx/work/impl/r0;->a(Landroidx/work/impl/r0;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
+    invoke-static {p1, p0}, Landroidx/work/impl/v;->a(Landroidx/work/impl/v;Lkotlin/coroutines/jvm/internal/ContinuationImpl;)Ljava/lang/Object;
 
     move-result-object p1
 

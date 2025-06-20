@@ -3,25 +3,35 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lzh/e;
+.implements Lka/e;
 
 
 # annotations
+.annotation runtime Lca/c;
+    c = "androidx.compose.material3.FloatingActionButtonElevation$animateElevation$1$1"
+    f = "FloatingActionButton.kt"
+    l = {
+        0x21a
+    }
+    m = "invokeSuspend"
+.end annotation
+
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "Lkotlin/coroutines/jvm/internal/SuspendLambda;",
-        "Lzh/e;"
+        "Lka/e;"
     }
 .end annotation
 
 .annotation runtime Lkotlin/Metadata;
     d1 = {
-        "\u0000\n\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\u0010\u0002\u001a\u00020\u0001*\u00020\u0000H\u008a@"
+        "\u0000\u000c\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0008\u0002\u0010\u0002\u001a\u00020\u0001*\u00020\u0000H\u008a@\u00a2\u0006\u0004\u0008\u0002\u0010\u0003"
     }
     d2 = {
-        "Lkotlinx/coroutines/w;",
-        "Lqh/r;",
-        "<anonymous>"
+        "Lkotlinx/coroutines/u;",
+        "LX9/j;",
+        "<anonymous>",
+        "(Lkotlinx/coroutines/u;)V"
     }
     k = 0x3
     mv = {
@@ -31,32 +41,23 @@
     }
 .end annotation
 
-.annotation runtime Lth/c;
-    c = "androidx.compose.material3.FloatingActionButtonElevation$animateElevation$1$1"
-    f = "FloatingActionButton.kt"
-    l = {
-        0x21a
-    }
-    m = "invokeSuspend"
-.end annotation
-
 
 # instance fields
-.field final synthetic $animatable:Landroidx/compose/material3/e0;
+.field final synthetic $animatable:Landroidx/compose/material3/J;
 
 .field label:I
 
-.field final synthetic this$0:Landroidx/compose/material3/d0;
+.field final synthetic this$0:Landroidx/compose/material3/I;
 
 
 # direct methods
-.method public constructor <init>(Landroidx/compose/material3/e0;Landroidx/compose/material3/d0;Lkotlin/coroutines/Continuation;)V
+.method public constructor <init>(Landroidx/compose/material3/J;Landroidx/compose/material3/I;Lkotlin/coroutines/Continuation;)V
     .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
-            "Landroidx/compose/material3/e0;",
-            "Landroidx/compose/material3/d0;",
+            "Landroidx/compose/material3/J;",
+            "Landroidx/compose/material3/I;",
             "Lkotlin/coroutines/Continuation<",
             "-",
             "Landroidx/compose/material3/FloatingActionButtonElevation$animateElevation$1$1;",
@@ -64,9 +65,9 @@
         }
     .end annotation
 
-    iput-object p1, p0, Landroidx/compose/material3/FloatingActionButtonElevation$animateElevation$1$1;->$animatable:Landroidx/compose/material3/e0;
+    iput-object p1, p0, Landroidx/compose/material3/FloatingActionButtonElevation$animateElevation$1$1;->$animatable:Landroidx/compose/material3/J;
 
-    iput-object p2, p0, Landroidx/compose/material3/FloatingActionButtonElevation$animateElevation$1$1;->this$0:Landroidx/compose/material3/d0;
+    iput-object p2, p0, Landroidx/compose/material3/FloatingActionButtonElevation$animateElevation$1$1;->this$0:Landroidx/compose/material3/I;
 
     const/4 p1, 0x2
 
@@ -86,18 +87,18 @@
             "Lkotlin/coroutines/Continuation<",
             "*>;)",
             "Lkotlin/coroutines/Continuation<",
-            "Lqh/r;",
+            "LX9/j;",
             ">;"
         }
     .end annotation
 
     new-instance p1, Landroidx/compose/material3/FloatingActionButtonElevation$animateElevation$1$1;
 
-    iget-object v0, p0, Landroidx/compose/material3/FloatingActionButtonElevation$animateElevation$1$1;->$animatable:Landroidx/compose/material3/e0;
+    iget-object v0, p0, Landroidx/compose/material3/FloatingActionButtonElevation$animateElevation$1$1;->$animatable:Landroidx/compose/material3/J;
 
-    iget-object v1, p0, Landroidx/compose/material3/FloatingActionButtonElevation$animateElevation$1$1;->this$0:Landroidx/compose/material3/d0;
+    iget-object v1, p0, Landroidx/compose/material3/FloatingActionButtonElevation$animateElevation$1$1;->this$0:Landroidx/compose/material3/I;
 
-    invoke-direct {p1, v0, v1, p2}, Landroidx/compose/material3/FloatingActionButtonElevation$animateElevation$1$1;-><init>(Landroidx/compose/material3/e0;Landroidx/compose/material3/d0;Lkotlin/coroutines/Continuation;)V
+    invoke-direct {p1, v0, v1, p2}, Landroidx/compose/material3/FloatingActionButtonElevation$animateElevation$1$1;-><init>(Landroidx/compose/material3/J;Landroidx/compose/material3/I;Lkotlin/coroutines/Continuation;)V
 
     return-object p1
 .end method
@@ -106,26 +107,26 @@
     .locals 0
 
     .line 1
-    check-cast p1, Lkotlinx/coroutines/w;
+    check-cast p1, Lkotlinx/coroutines/u;
 
     check-cast p2, Lkotlin/coroutines/Continuation;
 
-    invoke-virtual {p0, p1, p2}, Landroidx/compose/material3/FloatingActionButtonElevation$animateElevation$1$1;->invoke(Lkotlinx/coroutines/w;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
+    invoke-virtual {p0, p1, p2}, Landroidx/compose/material3/FloatingActionButtonElevation$animateElevation$1$1;->invoke(Lkotlinx/coroutines/u;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
 
     move-result-object p1
 
     return-object p1
 .end method
 
-.method public final invoke(Lkotlinx/coroutines/w;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
+.method public final invoke(Lkotlinx/coroutines/u;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
     .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
-            "Lkotlinx/coroutines/w;",
+            "Lkotlinx/coroutines/u;",
             "Lkotlin/coroutines/Continuation<",
             "-",
-            "Lqh/r;",
+            "LX9/j;",
             ">;)",
             "Ljava/lang/Object;"
         }
@@ -138,7 +139,7 @@
 
     check-cast p1, Landroidx/compose/material3/FloatingActionButtonElevation$animateElevation$1$1;
 
-    sget-object p2, Lqh/r;->a:Lqh/r;
+    sget-object p2, LX9/j;->a:LX9/j;
 
     invoke-virtual {p1, p2}, Landroidx/compose/material3/FloatingActionButtonElevation$animateElevation$1$1;->invokeSuspend(Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -148,7 +149,7 @@
 .end method
 
 .method public final invokeSuspend(Ljava/lang/Object;)Ljava/lang/Object;
-    .locals 7
+    .locals 5
 
     .line 1
     sget-object v0, Lkotlin/coroutines/intrinsics/CoroutineSingletons;->COROUTINE_SUSPENDED:Lkotlin/coroutines/intrinsics/CoroutineSingletons;
@@ -159,7 +160,7 @@
 
     .line 4
     .line 5
-    sget-object v2, Lqh/r;->a:Lqh/r;
+    sget-object v2, LX9/j;->a:LX9/j;
 
     .line 6
     .line 7
@@ -205,51 +206,51 @@
     .line 25
     .line 26
     .line 27
-    iget-object p1, p0, Landroidx/compose/material3/FloatingActionButtonElevation$animateElevation$1$1;->$animatable:Landroidx/compose/material3/e0;
+    iget-object p1, p0, Landroidx/compose/material3/FloatingActionButtonElevation$animateElevation$1$1;->$animatable:Landroidx/compose/material3/J;
 
     .line 28
     .line 29
-    iget-object v1, p0, Landroidx/compose/material3/FloatingActionButtonElevation$animateElevation$1$1;->this$0:Landroidx/compose/material3/d0;
+    iget-object v1, p0, Landroidx/compose/material3/FloatingActionButtonElevation$animateElevation$1$1;->this$0:Landroidx/compose/material3/I;
 
     .line 30
     .line 31
-    iget v4, v1, Landroidx/compose/material3/d0;->a:F
+    iget v4, v1, Landroidx/compose/material3/I;->a:F
 
     .line 32
     .line 33
-    iget v5, v1, Landroidx/compose/material3/d0;->b:F
+    iput v3, p0, Landroidx/compose/material3/FloatingActionButtonElevation$animateElevation$1$1;->label:I
 
     .line 34
     .line 35
-    iget v6, v1, Landroidx/compose/material3/d0;->d:F
+    iput v4, p1, Landroidx/compose/material3/J;->a:F
 
     .line 36
     .line 37
-    iget v1, v1, Landroidx/compose/material3/d0;->c:F
+    iget v3, v1, Landroidx/compose/material3/I;->b:F
 
     .line 38
     .line 39
-    iput v3, p0, Landroidx/compose/material3/FloatingActionButtonElevation$animateElevation$1$1;->label:I
+    iput v3, p1, Landroidx/compose/material3/J;->b:F
 
     .line 40
     .line 41
-    iput v4, p1, Landroidx/compose/material3/e0;->a:F
+    iget v3, v1, Landroidx/compose/material3/I;->d:F
 
     .line 42
     .line 43
-    iput v5, p1, Landroidx/compose/material3/e0;->b:F
+    iput v3, p1, Landroidx/compose/material3/J;->c:F
 
     .line 44
     .line 45
-    iput v6, p1, Landroidx/compose/material3/e0;->c:F
+    iget v1, v1, Landroidx/compose/material3/I;->c:F
 
     .line 46
     .line 47
-    iput v1, p1, Landroidx/compose/material3/e0;->d:F
+    iput v1, p1, Landroidx/compose/material3/J;->d:F
 
     .line 48
     .line 49
-    invoke-virtual {p1, p0}, Landroidx/compose/material3/e0;->b(Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
+    invoke-virtual {p1, p0}, Landroidx/compose/material3/J;->b(Lkotlin/coroutines/jvm/internal/ContinuationImpl;)Ljava/lang/Object;
 
     .line 50
     .line 51

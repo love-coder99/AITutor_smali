@@ -3,14 +3,14 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lzh/a;
+.implements Lka/a;
 
 
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "Lkotlin/jvm/internal/Lambda;",
-        "Lzh/a;"
+        "Lka/a;"
     }
 .end annotation
 
@@ -19,9 +19,9 @@
         "\u0000\u0008\n\u0002\u0018\u0002\n\u0002\u0008\u0003\u0010\u0003\u001a\u00020\u0000H\n\u00a2\u0006\u0004\u0008\u0001\u0010\u0002"
     }
     d2 = {
-        "Landroidx/compose/foundation/y0;",
+        "Landroidx/compose/foundation/X;",
         "invoke",
-        "()Landroidx/compose/foundation/y0;",
+        "()Landroidx/compose/foundation/X;",
         "<anonymous>"
     }
     k = 0x3
@@ -52,15 +52,15 @@
 
 
 # virtual methods
-.method public final invoke()Landroidx/compose/foundation/y0;
+.method public final invoke()Landroidx/compose/foundation/X;
     .locals 2
 
     .line 2
-    new-instance v0, Landroidx/compose/foundation/y0;
+    new-instance v0, Landroidx/compose/foundation/X;
 
     iget v1, p0, Landroidx/compose/foundation/ScrollKt$rememberScrollState$1$1;->$initial:I
 
-    invoke-direct {v0, v1}, Landroidx/compose/foundation/y0;-><init>(I)V
+    invoke-direct {v0, v1}, Landroidx/compose/foundation/X;-><init>(I)V
 
     return-object v0
 .end method
@@ -69,7 +69,7 @@
     .locals 1
 
     .line 1
-    invoke-virtual {p0}, Landroidx/compose/foundation/ScrollKt$rememberScrollState$1$1;->invoke()Landroidx/compose/foundation/y0;
+    invoke-virtual {p0}, Landroidx/compose/foundation/ScrollKt$rememberScrollState$1$1;->invoke()Landroidx/compose/foundation/X;
 
     move-result-object v0
 

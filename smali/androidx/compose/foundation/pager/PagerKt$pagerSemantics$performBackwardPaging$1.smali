@@ -3,25 +3,35 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lzh/e;
+.implements Lka/e;
 
 
 # annotations
+.annotation runtime Lca/c;
+    c = "androidx.compose.foundation.pager.PagerKt$pagerSemantics$performBackwardPaging$1"
+    f = "Pager.kt"
+    l = {
+        0x1da
+    }
+    m = "invokeSuspend"
+.end annotation
+
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "Lkotlin/coroutines/jvm/internal/SuspendLambda;",
-        "Lzh/e;"
+        "Lka/e;"
     }
 .end annotation
 
 .annotation runtime Lkotlin/Metadata;
     d1 = {
-        "\u0000\n\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\u0010\u0002\u001a\u00020\u0001*\u00020\u0000H\u008a@"
+        "\u0000\u000c\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0008\u0002\u0010\u0002\u001a\u00020\u0001*\u00020\u0000H\u008a@\u00a2\u0006\u0004\u0008\u0002\u0010\u0003"
     }
     d2 = {
-        "Lkotlinx/coroutines/w;",
-        "Lqh/r;",
-        "<anonymous>"
+        "Lkotlinx/coroutines/u;",
+        "LX9/j;",
+        "<anonymous>",
+        "(Lkotlinx/coroutines/u;)V"
     }
     k = 0x3
     mv = {
@@ -31,29 +41,20 @@
     }
 .end annotation
 
-.annotation runtime Lth/c;
-    c = "androidx.compose.foundation.pager.PagerKt$pagerSemantics$performBackwardPaging$1"
-    f = "Pager.kt"
-    l = {
-        0x1da
-    }
-    m = "invokeSuspend"
-.end annotation
-
 
 # instance fields
-.field final synthetic $state:Landroidx/compose/foundation/pager/u;
+.field final synthetic $state:Landroidx/compose/foundation/pager/o;
 
 .field label:I
 
 
 # direct methods
-.method public constructor <init>(Landroidx/compose/foundation/pager/u;Lkotlin/coroutines/Continuation;)V
+.method public constructor <init>(Landroidx/compose/foundation/pager/o;Lkotlin/coroutines/Continuation;)V
     .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
-            "Landroidx/compose/foundation/pager/u;",
+            "Landroidx/compose/foundation/pager/o;",
             "Lkotlin/coroutines/Continuation<",
             "-",
             "Landroidx/compose/foundation/pager/PagerKt$pagerSemantics$performBackwardPaging$1;",
@@ -61,7 +62,7 @@
         }
     .end annotation
 
-    iput-object p1, p0, Landroidx/compose/foundation/pager/PagerKt$pagerSemantics$performBackwardPaging$1;->$state:Landroidx/compose/foundation/pager/u;
+    iput-object p1, p0, Landroidx/compose/foundation/pager/PagerKt$pagerSemantics$performBackwardPaging$1;->$state:Landroidx/compose/foundation/pager/o;
 
     const/4 p1, 0x2
 
@@ -81,16 +82,16 @@
             "Lkotlin/coroutines/Continuation<",
             "*>;)",
             "Lkotlin/coroutines/Continuation<",
-            "Lqh/r;",
+            "LX9/j;",
             ">;"
         }
     .end annotation
 
     new-instance p1, Landroidx/compose/foundation/pager/PagerKt$pagerSemantics$performBackwardPaging$1;
 
-    iget-object v0, p0, Landroidx/compose/foundation/pager/PagerKt$pagerSemantics$performBackwardPaging$1;->$state:Landroidx/compose/foundation/pager/u;
+    iget-object v0, p0, Landroidx/compose/foundation/pager/PagerKt$pagerSemantics$performBackwardPaging$1;->$state:Landroidx/compose/foundation/pager/o;
 
-    invoke-direct {p1, v0, p2}, Landroidx/compose/foundation/pager/PagerKt$pagerSemantics$performBackwardPaging$1;-><init>(Landroidx/compose/foundation/pager/u;Lkotlin/coroutines/Continuation;)V
+    invoke-direct {p1, v0, p2}, Landroidx/compose/foundation/pager/PagerKt$pagerSemantics$performBackwardPaging$1;-><init>(Landroidx/compose/foundation/pager/o;Lkotlin/coroutines/Continuation;)V
 
     return-object p1
 .end method
@@ -99,26 +100,26 @@
     .locals 0
 
     .line 1
-    check-cast p1, Lkotlinx/coroutines/w;
+    check-cast p1, Lkotlinx/coroutines/u;
 
     check-cast p2, Lkotlin/coroutines/Continuation;
 
-    invoke-virtual {p0, p1, p2}, Landroidx/compose/foundation/pager/PagerKt$pagerSemantics$performBackwardPaging$1;->invoke(Lkotlinx/coroutines/w;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
+    invoke-virtual {p0, p1, p2}, Landroidx/compose/foundation/pager/PagerKt$pagerSemantics$performBackwardPaging$1;->invoke(Lkotlinx/coroutines/u;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
 
     move-result-object p1
 
     return-object p1
 .end method
 
-.method public final invoke(Lkotlinx/coroutines/w;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
+.method public final invoke(Lkotlinx/coroutines/u;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
     .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
-            "Lkotlinx/coroutines/w;",
+            "Lkotlinx/coroutines/u;",
             "Lkotlin/coroutines/Continuation<",
             "-",
-            "Lqh/r;",
+            "LX9/j;",
             ">;)",
             "Ljava/lang/Object;"
         }
@@ -131,7 +132,7 @@
 
     check-cast p1, Landroidx/compose/foundation/pager/PagerKt$pagerSemantics$performBackwardPaging$1;
 
-    sget-object p2, Lqh/r;->a:Lqh/r;
+    sget-object p2, LX9/j;->a:LX9/j;
 
     invoke-virtual {p1, p2}, Landroidx/compose/foundation/pager/PagerKt$pagerSemantics$performBackwardPaging$1;->invokeSuspend(Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -152,7 +153,7 @@
 
     .line 4
     .line 5
-    sget-object v2, Lqh/r;->a:Lqh/r;
+    sget-object v2, LX9/j;->a:LX9/j;
 
     .line 6
     .line 7
@@ -198,7 +199,7 @@
     .line 25
     .line 26
     .line 27
-    iget-object p1, p0, Landroidx/compose/foundation/pager/PagerKt$pagerSemantics$performBackwardPaging$1;->$state:Landroidx/compose/foundation/pager/u;
+    iget-object p1, p0, Landroidx/compose/foundation/pager/PagerKt$pagerSemantics$performBackwardPaging$1;->$state:Landroidx/compose/foundation/pager/o;
 
     .line 28
     .line 29
@@ -206,11 +207,11 @@
 
     .line 30
     .line 31
-    sget v1, Landroidx/compose/foundation/pager/w;->a:F
+    sget v1, Landroidx/compose/foundation/pager/q;->a:F
 
     .line 32
     .line 33
-    invoke-virtual {p1}, Landroidx/compose/foundation/pager/u;->j()I
+    invoke-virtual {p1}, Landroidx/compose/foundation/pager/o;->j()I
 
     .line 34
     .line 35
@@ -225,7 +226,7 @@
 
     .line 39
     .line 40
-    invoke-virtual {p1}, Landroidx/compose/foundation/pager/u;->j()I
+    invoke-virtual {p1}, Landroidx/compose/foundation/pager/o;->j()I
 
     .line 41
     .line 42
@@ -236,7 +237,7 @@
     sub-int/2addr v1, v3
 
     .line 45
-    invoke-static {p1, v1, p0}, Landroidx/compose/foundation/pager/u;->g(Landroidx/compose/foundation/pager/u;ILkotlin/coroutines/Continuation;)Ljava/lang/Object;
+    invoke-static {p1, v1, p0}, Landroidx/compose/foundation/pager/o;->g(Landroidx/compose/foundation/pager/o;ILkotlin/coroutines/jvm/internal/SuspendLambda;)Ljava/lang/Object;
 
     .line 46
     .line 47

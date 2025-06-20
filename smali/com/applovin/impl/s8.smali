@@ -34,15 +34,17 @@
 .method public constructor <init>(Lcom/applovin/impl/oo;IIILjava/lang/Object;)V
     .locals 0
 
+    .line 2
     filled-new-array {p2}, [I
 
     move-result-object p2
 
-    .line 2
     invoke-direct {p0, p1, p2, p3}, Lcom/applovin/impl/f2;-><init>(Lcom/applovin/impl/oo;[II)V
 
+    .line 3
     iput p4, p0, Lcom/applovin/impl/s8;->h:I
 
+    .line 4
     iput-object p5, p0, Lcom/applovin/impl/s8;->i:Ljava/lang/Object;
 
     return-void

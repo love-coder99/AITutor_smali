@@ -62,9 +62,9 @@
 .method public a(I)Z
     .locals 1
 
+    .line 6
     iget-object v0, p0, Lcom/applovin/impl/wo;->b:[Lcom/applovin/impl/si;
 
-    .line 6
     aget-object p1, v0, p1
 
     if-eqz p1, :cond_0
@@ -103,10 +103,10 @@
     :cond_0
     const/4 v1, 0x0
 
+    .line 2
     :goto_0
     iget-object v2, p0, Lcom/applovin/impl/wo;->c:[Lcom/applovin/impl/g8;
 
-    .line 2
     array-length v2, v2
 
     if-ge v1, v2, :cond_2
@@ -144,10 +144,10 @@
 
     return v0
 
+    .line 4
     :cond_0
     iget-object v1, p0, Lcom/applovin/impl/wo;->b:[Lcom/applovin/impl/si;
 
-    .line 4
     aget-object v1, v1, p2
 
     iget-object v2, p1, Lcom/applovin/impl/wo;->b:[Lcom/applovin/impl/si;

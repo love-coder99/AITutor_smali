@@ -3,14 +3,14 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lzh/e;
+.implements Lka/e;
 
 
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "Lkotlin/jvm/internal/Lambda;",
-        "Lzh/e;"
+        "Lka/e;"
     }
 .end annotation
 
@@ -30,47 +30,61 @@
 
 .field final synthetic $$default:I
 
-.field final synthetic $hostState:Landroidx/compose/material3/e1;
+.field final synthetic $hostState:Landroidx/compose/material3/A0;
 
 .field final synthetic $modifier:Landroidx/compose/ui/o;
 
-.field final synthetic $snackbar:Lzh/f;
+.field final synthetic $snackbar:Lka/f;
     .annotation system Ldalvik/annotation/Signature;
         value = {
-            "Lzh/f;"
+            "Lka/f;"
         }
     .end annotation
 .end field
 
 
 # direct methods
-.method public constructor <init>(Landroidx/compose/material3/e1;Landroidx/compose/ui/o;Lzh/f;II)V
+.method public constructor <init>(Landroidx/compose/material3/A0;Landroidx/compose/ui/o;Lka/f;II)V
     .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
-            "Landroidx/compose/material3/e1;",
+            "Landroidx/compose/material3/A0;",
             "Landroidx/compose/ui/o;",
-            "Lzh/f;",
+            "Lka/f;",
             "II)V"
         }
     .end annotation
 
     .line 1
-    iput-object p1, p0, Landroidx/compose/material3/SnackbarHostKt$SnackbarHost$2;->$hostState:Landroidx/compose/material3/e1;
+    iput-object p1, p0, Landroidx/compose/material3/SnackbarHostKt$SnackbarHost$2;->$hostState:Landroidx/compose/material3/A0;
 
+    .line 2
+    .line 3
     iput-object p2, p0, Landroidx/compose/material3/SnackbarHostKt$SnackbarHost$2;->$modifier:Landroidx/compose/ui/o;
 
-    iput-object p3, p0, Landroidx/compose/material3/SnackbarHostKt$SnackbarHost$2;->$snackbar:Lzh/f;
+    .line 4
+    .line 5
+    iput-object p3, p0, Landroidx/compose/material3/SnackbarHostKt$SnackbarHost$2;->$snackbar:Lka/f;
 
+    .line 6
+    .line 7
     iput p4, p0, Landroidx/compose/material3/SnackbarHostKt$SnackbarHost$2;->$$changed:I
 
+    .line 8
+    .line 9
     iput p5, p0, Landroidx/compose/material3/SnackbarHostKt$SnackbarHost$2;->$$default:I
 
+    .line 10
+    .line 11
     const/4 p1, 0x2
 
+    .line 12
     invoke-direct {p0, p1}, Lkotlin/jvm/internal/Lambda;-><init>(I)V
 
+    .line 13
+    .line 14
+    .line 15
     return-void
 .end method
 
@@ -80,7 +94,7 @@
     .locals 0
 
     .line 1
-    check-cast p1, Landroidx/compose/runtime/l;
+    check-cast p1, Landroidx/compose/runtime/j;
 
     check-cast p2, Ljava/lang/Number;
 
@@ -88,28 +102,28 @@
 
     move-result p2
 
-    invoke-virtual {p0, p1, p2}, Landroidx/compose/material3/SnackbarHostKt$SnackbarHost$2;->invoke(Landroidx/compose/runtime/l;I)V
+    invoke-virtual {p0, p1, p2}, Landroidx/compose/material3/SnackbarHostKt$SnackbarHost$2;->invoke(Landroidx/compose/runtime/j;I)V
 
-    sget-object p1, Lqh/r;->a:Lqh/r;
+    sget-object p1, LX9/j;->a:LX9/j;
 
     return-object p1
 .end method
 
-.method public final invoke(Landroidx/compose/runtime/l;I)V
+.method public final invoke(Landroidx/compose/runtime/j;I)V
     .locals 6
 
     .line 2
-    iget-object v0, p0, Landroidx/compose/material3/SnackbarHostKt$SnackbarHost$2;->$hostState:Landroidx/compose/material3/e1;
+    iget-object v0, p0, Landroidx/compose/material3/SnackbarHostKt$SnackbarHost$2;->$hostState:Landroidx/compose/material3/A0;
 
     iget-object v1, p0, Landroidx/compose/material3/SnackbarHostKt$SnackbarHost$2;->$modifier:Landroidx/compose/ui/o;
 
-    iget-object v2, p0, Landroidx/compose/material3/SnackbarHostKt$SnackbarHost$2;->$snackbar:Lzh/f;
+    iget-object v2, p0, Landroidx/compose/material3/SnackbarHostKt$SnackbarHost$2;->$snackbar:Lka/f;
 
     iget p2, p0, Landroidx/compose/material3/SnackbarHostKt$SnackbarHost$2;->$$changed:I
 
     or-int/lit8 p2, p2, 0x1
 
-    invoke-static {p2}, Landroidx/compose/runtime/q;->A(I)I
+    invoke-static {p2}, Landroidx/compose/runtime/o;->f0(I)I
 
     move-result v4
 
@@ -117,7 +131,7 @@
 
     move-object v3, p1
 
-    invoke-static/range {v0 .. v5}, Landroidx/compose/material3/d;->k(Landroidx/compose/material3/e1;Landroidx/compose/ui/o;Lzh/f;Landroidx/compose/runtime/l;II)V
+    invoke-static/range {v0 .. v5}, Landroidx/compose/material3/d;->l(Landroidx/compose/material3/A0;Landroidx/compose/ui/o;Lka/f;Landroidx/compose/runtime/j;II)V
 
     return-void
 .end method

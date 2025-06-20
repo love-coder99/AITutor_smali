@@ -3,14 +3,14 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lzh/a;
+.implements Lka/a;
 
 
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "Lkotlin/jvm/internal/Lambda;",
-        "Lzh/a;"
+        "Lka/a;"
     }
 .end annotation
 
@@ -65,7 +65,7 @@
 .method public bridge synthetic invoke()Ljava/lang/Object;
     .locals 1
 
-    .line 2
+    .line 1
     invoke-virtual {p0}, Landroidx/compose/ui/window/AndroidPopup_androidKt$LocalPopupTestTag$1;->invoke()Ljava/lang/String;
 
     move-result-object v0
@@ -76,7 +76,7 @@
 .method public final invoke()Ljava/lang/String;
     .locals 1
 
-    .line 1
+    .line 2
     const-string v0, "DEFAULT_TEST_TAG"
 
     return-object v0

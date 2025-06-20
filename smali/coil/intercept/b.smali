@@ -2,22 +2,19 @@
 .super Ljava/lang/Object;
 .source "SourceFile"
 
-# interfaces
-.implements Lcoil/intercept/d;
-
 
 # instance fields
-.field public final a:Lcoil/g;
+.field public final a:Lcoil/i;
 
 .field public final b:Lcoil/util/m;
 
-.field public final c:Lh5/v;
+.field public final c:LB2/e;
 
-.field public final d:Lm5/e;
+.field public final d:Lv2/j;
 
 
 # direct methods
-.method public constructor <init>(Lcoil/g;Lcoil/util/m;Lh5/v;)V
+.method public constructor <init>(Lcoil/i;Lcoil/util/m;LB2/e;)V
     .locals 0
 
     .line 1
@@ -26,7 +23,7 @@
     .line 2
     .line 3
     .line 4
-    iput-object p1, p0, Lcoil/intercept/b;->a:Lcoil/g;
+    iput-object p1, p0, Lcoil/intercept/b;->a:Lcoil/i;
 
     .line 5
     .line 6
@@ -34,27 +31,27 @@
 
     .line 7
     .line 8
-    iput-object p3, p0, Lcoil/intercept/b;->c:Lh5/v;
+    iput-object p3, p0, Lcoil/intercept/b;->c:LB2/e;
 
     .line 9
     .line 10
-    new-instance p2, Lm5/e;
+    new-instance p2, Lv2/j;
 
     .line 11
     .line 12
-    invoke-direct {p2, p1, p3}, Lm5/e;-><init>(Lcoil/g;Lh5/v;)V
+    invoke-direct {p2, p1, p3}, Lv2/j;-><init>(Lcoil/i;LB2/e;)V
 
     .line 13
     .line 14
     .line 15
-    iput-object p2, p0, Lcoil/intercept/b;->d:Lm5/e;
+    iput-object p2, p0, Lcoil/intercept/b;->d:Lv2/j;
 
     .line 16
     .line 17
     return-void
 .end method
 
-.method public static final a(Lcoil/intercept/b;Lcoil/fetch/l;Lcoil/c;Ln5/i;Ljava/lang/Object;Ln5/l;Lcoil/e;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
+.method public static final a(Lcoil/intercept/b;Lcoil/fetch/k;Lcoil/b;LH2/h;Ljava/lang/Object;LH2/k;Lcoil/d;Lkotlin/coroutines/jvm/internal/ContinuationImpl;)Ljava/lang/Object;
     .locals 19
 
     .line 1
@@ -161,7 +158,7 @@
 
     .line 49
     .line 50
-    check-cast v4, Lcoil/decode/g;
+    check-cast v4, Lcoil/decode/e;
 
     .line 51
     .line 52
@@ -169,7 +166,7 @@
 
     .line 53
     .line 54
-    check-cast v4, Lcoil/e;
+    check-cast v4, Lcoil/d;
 
     .line 55
     .line 56
@@ -177,7 +174,7 @@
 
     .line 57
     .line 58
-    check-cast v7, Ln5/l;
+    check-cast v7, LH2/k;
 
     .line 59
     .line 60
@@ -189,7 +186,7 @@
 
     .line 63
     .line 64
-    check-cast v9, Ln5/i;
+    check-cast v9, LH2/h;
 
     .line 65
     .line 66
@@ -197,7 +194,7 @@
 
     .line 67
     .line 68
-    check-cast v10, Lcoil/c;
+    check-cast v10, Lcoil/b;
 
     .line 69
     .line 70
@@ -205,7 +202,7 @@
 
     .line 71
     .line 72
-    check-cast v11, Lcoil/fetch/l;
+    check-cast v11, Lcoil/fetch/k;
 
     .line 73
     .line 74
@@ -222,31 +219,31 @@
     .line 79
     .line 80
     .line 81
-    move-object/from16 v16, v10
+    move-object/from16 v16, v12
 
     .line 82
     .line 83
-    move-object v10, v1
+    move-object v12, v1
 
     .line 84
-    move-object/from16 v1, v16
+    move-object v1, v10
 
     .line 85
+    move v10, v2
+
     .line 86
-    move-object/from16 v17, v9
+    move-object/from16 v2, v16
 
     .line 87
     .line 88
-    move v9, v2
+    move-object/from16 v17, v9
 
     .line 89
-    move-object v2, v12
-
     .line 90
-    move-object v12, v3
+    move-object v9, v4
 
     .line 91
-    move-object/from16 v3, v17
+    move-object/from16 v4, v17
 
     .line 92
     .line 93
@@ -254,10 +251,10 @@
 
     .line 94
     .line 95
-    move-object v8, v4
+    move-object v8, v7
 
     .line 96
-    move-object/from16 v4, v18
+    move-object/from16 v7, v18
 
     .line 97
     .line 98
@@ -295,1719 +292,1378 @@
 
     .line 113
     .line 114
-    move-object/from16 v4, p4
+    move-object/from16 v4, p3
 
     .line 115
     .line 116
-    move-object/from16 v7, p5
+    move-object/from16 v7, p4
 
     .line 117
     .line 118
-    move-object/from16 v8, p6
+    move-object/from16 v8, p5
 
     .line 119
     .line 120
-    move-object v10, v1
+    move-object/from16 v9, p6
 
     .line 121
-    move-object v11, v3
-
     .line 122
-    const/4 v9, 0x0
+    move-object v11, v1
 
     .line 123
-    move-object/from16 v1, p2
+    const/4 v10, 0x0
 
     .line 124
+    move-object/from16 v1, p2
+
     .line 125
-    move-object/from16 v3, p3
-
     .line 126
-    .line 127
     :goto_1
-    iget-object v12, v2, Lcoil/intercept/b;->a:Lcoil/g;
+    iget-object v12, v2, Lcoil/intercept/b;->a:Lcoil/i;
 
+    .line 127
     .line 128
-    .line 129
-    iget-object v12, v1, Lcoil/c;->e:Ljava/util/List;
+    iget-object v12, v1, Lcoil/b;->e:Ljava/util/List;
 
+    .line 129
     .line 130
-    .line 131
     invoke-interface {v12}, Ljava/util/List;->size()I
 
+    .line 131
     .line 132
     .line 133
-    .line 134
     move-result v13
 
+    .line 134
+    if-ge v10, v13, :cond_3
+
     .line 135
-    if-ge v9, v13, :cond_3
-
     .line 136
-    .line 137
-    invoke-interface {v12, v9}, Ljava/util/List;->get(I)Ljava/lang/Object;
+    invoke-interface {v12, v10}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
+    .line 137
     .line 138
     .line 139
-    .line 140
     move-result-object v12
 
-    .line 141
-    check-cast v12, Lcoil/decode/c;
+    .line 140
+    check-cast v12, Lcoil/decode/d;
 
+    .line 141
     .line 142
-    .line 143
     invoke-virtual {v12}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
+    .line 143
     .line 144
     .line 145
+    new-instance v13, Lcoil/decode/e;
+
     .line 146
-    new-instance v13, Lcoil/decode/d;
-
     .line 147
+    iget-object v14, v0, Lcoil/fetch/k;->a:Lcoil/decode/n;
+
     .line 148
-    iget-object v14, v0, Lcoil/fetch/l;->a:Lcoil/decode/n;
-
     .line 149
+    iget-object v15, v12, Lcoil/decode/d;->b:Lkotlinx/coroutines/sync/f;
+
     .line 150
-    iget-object v15, v12, Lcoil/decode/c;->b:Lkotlinx/coroutines/sync/f;
-
     .line 151
+    iget-object v12, v12, Lcoil/decode/d;->a:Lcoil/decode/ExifOrientationPolicy;
+
     .line 152
-    iget-object v12, v12, Lcoil/decode/c;->a:Lcoil/decode/ExifOrientationPolicy;
-
     .line 153
-    .line 154
-    invoke-direct {v13, v14, v7, v15, v12}, Lcoil/decode/d;-><init>(Lcoil/decode/n;Ln5/l;Lkotlinx/coroutines/sync/f;Lcoil/decode/ExifOrientationPolicy;)V
+    invoke-direct {v13, v14, v8, v15, v12}, Lcoil/decode/e;-><init>(Lcoil/decode/n;LH2/k;Lkotlinx/coroutines/sync/f;Lcoil/decode/ExifOrientationPolicy;)V
 
+    .line 154
     .line 155
     .line 156
-    .line 157
-    invoke-static {v9}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+    invoke-static {v10}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
+    .line 157
     .line 158
     .line 159
-    .line 160
-    move-result-object v9
+    move-result-object v10
 
-    .line 161
+    .line 160
     new-instance v12, Lkotlin/Pair;
 
+    .line 161
     .line 162
-    .line 163
-    invoke-direct {v12, v13, v9}, Lkotlin/Pair;-><init>(Ljava/lang/Object;Ljava/lang/Object;)V
+    invoke-direct {v12, v13, v10}, Lkotlin/Pair;-><init>(Ljava/lang/Object;Ljava/lang/Object;)V
 
+    .line 163
     .line 164
     .line 165
-    .line 166
     goto :goto_2
 
-    .line 167
+    .line 166
     :cond_3
     move-object v12, v5
 
-    .line 168
+    .line 167
     :goto_2
     if-eqz v12, :cond_8
 
+    .line 168
     .line 169
-    .line 170
     invoke-virtual {v12}, Lkotlin/Pair;->getFirst()Ljava/lang/Object;
 
+    .line 170
     .line 171
     .line 172
+    move-result-object v10
+
     .line 173
-    move-result-object v9
+    check-cast v10, Lcoil/decode/e;
 
     .line 174
-    check-cast v9, Lcoil/decode/g;
-
     .line 175
-    .line 176
     invoke-virtual {v12}, Lkotlin/Pair;->getSecond()Ljava/lang/Object;
 
+    .line 176
     .line 177
     .line 178
-    .line 179
     move-result-object v12
 
-    .line 180
+    .line 179
     check-cast v12, Ljava/lang/Number;
 
+    .line 180
     .line 181
-    .line 182
     invoke-virtual {v12}, Ljava/lang/Number;->intValue()I
 
+    .line 182
     .line 183
     .line 184
-    .line 185
     move-result v12
 
-    .line 186
+    .line 185
     add-int/2addr v12, v6
 
-    .line 187
-    invoke-virtual {v8}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+    .line 186
+    invoke-virtual {v9}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
+    .line 187
     .line 188
     .line 189
+    iput-object v2, v11, Lcoil/intercept/EngineInterceptor$decode$1;->L$0:Ljava/lang/Object;
+
     .line 190
-    iput-object v2, v10, Lcoil/intercept/EngineInterceptor$decode$1;->L$0:Ljava/lang/Object;
-
     .line 191
+    iput-object v0, v11, Lcoil/intercept/EngineInterceptor$decode$1;->L$1:Ljava/lang/Object;
+
     .line 192
-    iput-object v0, v10, Lcoil/intercept/EngineInterceptor$decode$1;->L$1:Ljava/lang/Object;
-
     .line 193
+    iput-object v1, v11, Lcoil/intercept/EngineInterceptor$decode$1;->L$2:Ljava/lang/Object;
+
     .line 194
-    iput-object v1, v10, Lcoil/intercept/EngineInterceptor$decode$1;->L$2:Ljava/lang/Object;
-
     .line 195
+    iput-object v4, v11, Lcoil/intercept/EngineInterceptor$decode$1;->L$3:Ljava/lang/Object;
+
     .line 196
-    iput-object v3, v10, Lcoil/intercept/EngineInterceptor$decode$1;->L$3:Ljava/lang/Object;
-
     .line 197
+    iput-object v7, v11, Lcoil/intercept/EngineInterceptor$decode$1;->L$4:Ljava/lang/Object;
+
     .line 198
-    iput-object v4, v10, Lcoil/intercept/EngineInterceptor$decode$1;->L$4:Ljava/lang/Object;
-
     .line 199
+    iput-object v8, v11, Lcoil/intercept/EngineInterceptor$decode$1;->L$5:Ljava/lang/Object;
+
     .line 200
-    iput-object v7, v10, Lcoil/intercept/EngineInterceptor$decode$1;->L$5:Ljava/lang/Object;
-
     .line 201
+    iput-object v9, v11, Lcoil/intercept/EngineInterceptor$decode$1;->L$6:Ljava/lang/Object;
+
     .line 202
-    iput-object v8, v10, Lcoil/intercept/EngineInterceptor$decode$1;->L$6:Ljava/lang/Object;
-
     .line 203
+    iput-object v10, v11, Lcoil/intercept/EngineInterceptor$decode$1;->L$7:Ljava/lang/Object;
+
     .line 204
-    iput-object v9, v10, Lcoil/intercept/EngineInterceptor$decode$1;->L$7:Ljava/lang/Object;
-
     .line 205
+    iput v12, v11, Lcoil/intercept/EngineInterceptor$decode$1;->I$0:I
+
     .line 206
-    iput v12, v10, Lcoil/intercept/EngineInterceptor$decode$1;->I$0:I
-
     .line 207
+    iput v6, v11, Lcoil/intercept/EngineInterceptor$decode$1;->label:I
+
     .line 208
-    iput v6, v10, Lcoil/intercept/EngineInterceptor$decode$1;->label:I
-
     .line 209
-    .line 210
-    check-cast v9, Lcoil/decode/d;
+    invoke-virtual {v10, v11}, Lcoil/decode/e;->a(Lkotlin/coroutines/jvm/internal/ContinuationImpl;)Ljava/lang/Object;
 
+    .line 210
     .line 211
     .line 212
-    invoke-virtual {v9, v10}, Lcoil/decode/d;->a(Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
+    move-result-object v10
 
     .line 213
+    if-ne v10, v3, :cond_4
+
     .line 214
     .line 215
-    move-result-object v9
-
-    .line 216
-    if-ne v9, v11, :cond_4
-
-    .line 217
-    .line 218
     goto :goto_5
 
-    .line 219
+    .line 216
     :cond_4
     move-object/from16 v16, v11
 
-    .line 220
-    .line 221
+    .line 217
+    .line 218
     move-object v11, v0
 
-    .line 222
-    move-object v0, v9
+    .line 219
+    move-object v0, v10
 
-    .line 223
-    move v9, v12
+    .line 220
+    move v10, v12
 
-    .line 224
+    .line 221
     move-object/from16 v12, v16
 
-    .line 225
-    .line 226
+    .line 222
+    .line 223
     :goto_3
-    check-cast v0, Lcoil/decode/e;
+    check-cast v0, Lcoil/decode/f;
 
+    .line 224
+    .line 225
+    invoke-virtual {v9}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    .line 226
     .line 227
     .line 228
-    invoke-virtual {v8}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+    if-eqz v0, :cond_7
 
     .line 229
     .line 230
+    new-instance v3, Lcoil/intercept/a;
+
     .line 231
-    if-eqz v0, :cond_7
-
     .line 232
+    iget-object v1, v11, Lcoil/fetch/k;->c:Lcoil/decode/DataSource;
+
     .line 233
-    new-instance v1, Lcoil/intercept/a;
-
     .line 234
+    iget-object v2, v11, Lcoil/fetch/k;->a:Lcoil/decode/n;
+
     .line 235
-    iget-object v2, v11, Lcoil/fetch/l;->c:Lcoil/decode/DataSource;
-
     .line 236
+    instance-of v4, v2, Lcoil/decode/m;
+
     .line 237
-    iget-object v3, v11, Lcoil/fetch/l;->a:Lcoil/decode/n;
-
     .line 238
-    .line 239
-    instance-of v4, v3, Lcoil/decode/m;
-
-    .line 240
-    .line 241
     if-eqz v4, :cond_5
 
-    .line 242
-    .line 243
-    check-cast v3, Lcoil/decode/m;
+    .line 239
+    .line 240
+    check-cast v2, Lcoil/decode/m;
 
-    .line 244
-    .line 245
+    .line 241
+    .line 242
     goto :goto_4
 
-    .line 246
+    .line 243
     :cond_5
-    move-object v3, v5
+    move-object v2, v5
+
+    .line 244
+    :goto_4
+    if-eqz v2, :cond_6
+
+    .line 245
+    .line 246
+    iget-object v5, v2, Lcoil/decode/m;->d:Ljava/lang/String;
 
     .line 247
-    :goto_4
-    if-eqz v3, :cond_6
-
     .line 248
-    .line 249
-    iget-object v5, v3, Lcoil/decode/m;->d:Ljava/lang/String;
-
-    .line 250
-    .line 251
     :cond_6
-    iget-object v3, v0, Lcoil/decode/e;->a:Landroid/graphics/drawable/Drawable;
+    iget-object v2, v0, Lcoil/decode/f;->a:Landroid/graphics/drawable/BitmapDrawable;
 
+    .line 249
+    .line 250
+    iget-boolean v0, v0, Lcoil/decode/f;->b:Z
+
+    .line 251
     .line 252
-    .line 253
-    iget-boolean v0, v0, Lcoil/decode/e;->b:Z
+    invoke-direct {v3, v2, v0, v1, v5}, Lcoil/intercept/a;-><init>(Landroid/graphics/drawable/Drawable;ZLcoil/decode/DataSource;Ljava/lang/String;)V
 
+    .line 253
     .line 254
     .line 255
-    invoke-direct {v1, v3, v0, v2, v5}, Lcoil/intercept/a;-><init>(Landroid/graphics/drawable/Drawable;ZLcoil/decode/DataSource;Ljava/lang/String;)V
+    :goto_5
+    return-object v3
 
     .line 256
-    .line 257
-    .line 258
-    move-object v11, v1
-
-    .line 259
-    :goto_5
-    return-object v11
-
-    .line 260
     :cond_7
     move-object v0, v11
 
-    .line 261
+    .line 257
     move-object v11, v12
 
-    .line 262
+    .line 258
     goto/16 :goto_1
 
-    .line 263
-    .line 264
+    .line 259
+    .line 260
     :cond_8
     const-string v0, "Unable to create a decoder that supports: "
 
+    .line 261
+    .line 262
+    invoke-static {v7, v0}, LB/u;->s(Ljava/lang/Object;Ljava/lang/String;)Ljava/lang/String;
+
+    .line 263
+    .line 264
     .line 265
+    move-result-object v0
+
     .line 266
-    invoke-static {v0, v4}, Lj0/d;->i(Ljava/lang/String;Ljava/lang/Object;)Ljava/lang/String;
+    new-instance v1, Ljava/lang/IllegalStateException;
 
     .line 267
     .line 268
+    invoke-virtual {v0}, Ljava/lang/Object;->toString()Ljava/lang/String;
+
     .line 269
+    .line 270
+    .line 271
     move-result-object v0
 
-    .line 270
-    new-instance v1, Ljava/lang/IllegalStateException;
-
-    .line 271
     .line 272
-    invoke-virtual {v0}, Ljava/lang/Object;->toString()Ljava/lang/String;
+    invoke-direct {v1, v0}, Ljava/lang/IllegalStateException;-><init>(Ljava/lang/String;)V
 
     .line 273
     .line 274
     .line 275
-    move-result-object v0
-
-    .line 276
-    invoke-direct {v1, v0}, Ljava/lang/IllegalStateException;-><init>(Ljava/lang/String;)V
-
-    .line 277
-    .line 278
-    .line 279
     throw v1
 .end method
 
-.method public static final b(Lcoil/intercept/b;Ln5/i;Ljava/lang/Object;Ln5/l;Lcoil/e;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
-    .locals 27
+.method public static final b(Lcoil/intercept/b;LH2/h;Ljava/lang/Object;LH2/k;Lcoil/d;Lkotlin/coroutines/jvm/internal/ContinuationImpl;)Ljava/lang/Object;
+    .locals 25
 
     .line 1
     move-object/from16 v0, p0
 
     .line 2
     .line 3
-    move-object/from16 v8, p1
+    move-object/from16 v1, p5
 
     .line 4
     .line 5
-    move-object/from16 v1, p5
+    invoke-virtual/range {p0 .. p0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
     .line 6
     .line 7
-    invoke-virtual/range {p0 .. p0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
-
     .line 8
+    instance-of v2, v1, Lcoil/intercept/EngineInterceptor$execute$1;
+
     .line 9
     .line 10
-    instance-of v2, v1, Lcoil/intercept/EngineInterceptor$execute$1;
+    if-eqz v2, :cond_0
 
     .line 11
     .line 12
-    if-eqz v2, :cond_0
-
-    .line 13
-    .line 14
     move-object v2, v1
 
-    .line 15
+    .line 13
     check-cast v2, Lcoil/intercept/EngineInterceptor$execute$1;
+
+    .line 14
+    .line 15
+    iget v3, v2, Lcoil/intercept/EngineInterceptor$execute$1;->label:I
 
     .line 16
     .line 17
-    iget v3, v2, Lcoil/intercept/EngineInterceptor$execute$1;->label:I
+    const/high16 v4, -0x80000000
 
     .line 18
     .line 19
-    const/high16 v4, -0x80000000
+    and-int v5, v3, v4
 
     .line 20
     .line 21
-    and-int v5, v3, v4
+    if-eqz v5, :cond_0
 
     .line 22
     .line 23
-    if-eqz v5, :cond_0
-
-    .line 24
-    .line 25
     sub-int/2addr v3, v4
 
-    .line 26
+    .line 24
     iput v3, v2, Lcoil/intercept/EngineInterceptor$execute$1;->label:I
 
-    .line 27
-    .line 28
+    .line 25
+    .line 26
     :goto_0
-    move-object v9, v2
+    move-object v8, v2
 
-    .line 29
+    .line 27
     goto :goto_1
 
-    .line 30
+    .line 28
     :cond_0
     new-instance v2, Lcoil/intercept/EngineInterceptor$execute$1;
 
-    .line 31
-    .line 32
+    .line 29
+    .line 30
     invoke-direct {v2, v0, v1}, Lcoil/intercept/EngineInterceptor$execute$1;-><init>(Lcoil/intercept/b;Lkotlin/coroutines/Continuation;)V
 
+    .line 31
+    .line 32
     .line 33
-    .line 34
-    .line 35
     goto :goto_0
 
-    .line 36
+    .line 34
     :goto_1
-    iget-object v1, v9, Lcoil/intercept/EngineInterceptor$execute$1;->result:Ljava/lang/Object;
+    iget-object v1, v8, Lcoil/intercept/EngineInterceptor$execute$1;->result:Ljava/lang/Object;
+
+    .line 35
+    .line 36
+    sget-object v9, Lkotlin/coroutines/intrinsics/CoroutineSingletons;->COROUTINE_SUSPENDED:Lkotlin/coroutines/intrinsics/CoroutineSingletons;
 
     .line 37
     .line 38
-    sget-object v10, Lkotlin/coroutines/intrinsics/CoroutineSingletons;->COROUTINE_SUSPENDED:Lkotlin/coroutines/intrinsics/CoroutineSingletons;
+    iget v2, v8, Lcoil/intercept/EngineInterceptor$execute$1;->label:I
 
     .line 39
     .line 40
-    iget v2, v9, Lcoil/intercept/EngineInterceptor$execute$1;->label:I
+    const/4 v10, 0x3
 
     .line 41
+    const/4 v11, 0x2
+
     .line 42
-    const/4 v11, 0x3
-
-    .line 43
-    const/4 v12, 0x2
-
-    .line 44
     const/4 v3, 0x1
 
-    .line 45
+    .line 43
+    const/4 v12, 0x0
+
+    .line 44
     if-eqz v2, :cond_4
 
+    .line 45
     .line 46
-    .line 47
     if-eq v2, v3, :cond_3
 
+    .line 47
     .line 48
+    if-eq v2, v11, :cond_2
+
     .line 49
-    if-eq v2, v12, :cond_2
-
     .line 50
-    .line 51
-    if-ne v2, v11, :cond_1
+    if-ne v2, v10, :cond_1
 
+    .line 51
     .line 52
-    .line 53
     invoke-static {v1}, Lkotlin/b;->a(Ljava/lang/Object;)V
 
+    .line 53
     .line 54
     .line 55
+    goto/16 :goto_7
+
     .line 56
-    const/4 v3, 0x0
-
     .line 57
-    goto/16 :goto_9
-
-    .line 58
-    .line 59
     :cond_1
     new-instance v0, Ljava/lang/IllegalStateException;
 
+    .line 58
+    .line 59
+    const-string v1, "call to \'resume\' before \'invoke\' with coroutine"
+
     .line 60
     .line 61
-    const-string v1, "call to \'resume\' before \'invoke\' with coroutine"
+    invoke-direct {v0, v1}, Ljava/lang/IllegalStateException;-><init>(Ljava/lang/String;)V
 
     .line 62
     .line 63
-    invoke-direct {v0, v1}, Ljava/lang/IllegalStateException;-><init>(Ljava/lang/String;)V
-
     .line 64
-    .line 65
-    .line 66
     throw v0
 
-    .line 67
+    .line 65
     :cond_2
-    iget-object v0, v9, Lcoil/intercept/EngineInterceptor$execute$1;->L$4:Ljava/lang/Object;
+    iget-object v0, v8, Lcoil/intercept/EngineInterceptor$execute$1;->L$4:Ljava/lang/Object;
 
-    .line 68
-    .line 69
+    .line 66
+    .line 67
     move-object v2, v0
 
-    .line 70
+    .line 68
     check-cast v2, Lkotlin/jvm/internal/Ref$ObjectRef;
+
+    .line 69
+    .line 70
+    iget-object v0, v8, Lcoil/intercept/EngineInterceptor$execute$1;->L$3:Ljava/lang/Object;
 
     .line 71
     .line 72
-    iget-object v0, v9, Lcoil/intercept/EngineInterceptor$execute$1;->L$3:Ljava/lang/Object;
+    check-cast v0, Lkotlin/jvm/internal/Ref$ObjectRef;
 
     .line 73
     .line 74
-    check-cast v0, Lkotlin/jvm/internal/Ref$ObjectRef;
+    iget-object v3, v8, Lcoil/intercept/EngineInterceptor$execute$1;->L$2:Ljava/lang/Object;
 
     .line 75
     .line 76
-    iget-object v3, v9, Lcoil/intercept/EngineInterceptor$execute$1;->L$2:Ljava/lang/Object;
+    check-cast v3, Lcoil/d;
 
     .line 77
     .line 78
-    check-cast v3, Lcoil/e;
+    iget-object v4, v8, Lcoil/intercept/EngineInterceptor$execute$1;->L$1:Ljava/lang/Object;
 
     .line 79
     .line 80
-    iget-object v4, v9, Lcoil/intercept/EngineInterceptor$execute$1;->L$1:Ljava/lang/Object;
+    check-cast v4, LH2/h;
 
     .line 81
     .line 82
-    check-cast v4, Ln5/i;
+    iget-object v5, v8, Lcoil/intercept/EngineInterceptor$execute$1;->L$0:Ljava/lang/Object;
 
     .line 83
     .line 84
-    iget-object v5, v9, Lcoil/intercept/EngineInterceptor$execute$1;->L$0:Ljava/lang/Object;
+    check-cast v5, Lcoil/intercept/b;
 
     .line 85
     .line 86
-    check-cast v5, Lcoil/intercept/b;
-
-    .line 87
-    .line 88
     :try_start_0
     invoke-static {v1}, Lkotlin/b;->a(Ljava/lang/Object;)V
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
+    .line 87
+    .line 88
     .line 89
+    goto/16 :goto_3
+
     .line 90
     .line 91
-    goto/16 :goto_5
-
-    .line 92
-    .line 93
     :catchall_0
     move-exception v0
 
+    .line 92
+    goto/16 :goto_a
+
+    .line 93
     .line 94
-    :goto_2
-    const/4 v3, 0x0
+    :cond_3
+    iget-object v0, v8, Lcoil/intercept/EngineInterceptor$execute$1;->L$7:Ljava/lang/Object;
 
     .line 95
-    goto/16 :goto_d
-
     .line 96
-    .line 97
-    :cond_3
-    iget-object v0, v9, Lcoil/intercept/EngineInterceptor$execute$1;->L$7:Ljava/lang/Object;
-
-    .line 98
-    .line 99
     check-cast v0, Lkotlin/jvm/internal/Ref$ObjectRef;
 
-    .line 100
-    .line 101
-    iget-object v2, v9, Lcoil/intercept/EngineInterceptor$execute$1;->L$6:Ljava/lang/Object;
+    .line 97
+    .line 98
+    iget-object v2, v8, Lcoil/intercept/EngineInterceptor$execute$1;->L$6:Ljava/lang/Object;
 
-    .line 102
-    .line 103
+    .line 99
+    .line 100
     check-cast v2, Lkotlin/jvm/internal/Ref$ObjectRef;
 
-    .line 104
-    .line 105
-    iget-object v3, v9, Lcoil/intercept/EngineInterceptor$execute$1;->L$5:Ljava/lang/Object;
+    .line 101
+    .line 102
+    iget-object v3, v8, Lcoil/intercept/EngineInterceptor$execute$1;->L$5:Ljava/lang/Object;
 
-    .line 106
-    .line 107
+    .line 103
+    .line 104
     check-cast v3, Lkotlin/jvm/internal/Ref$ObjectRef;
 
-    .line 108
-    .line 109
-    iget-object v4, v9, Lcoil/intercept/EngineInterceptor$execute$1;->L$4:Ljava/lang/Object;
+    .line 105
+    .line 106
+    iget-object v4, v8, Lcoil/intercept/EngineInterceptor$execute$1;->L$4:Ljava/lang/Object;
 
-    .line 110
-    .line 111
+    .line 107
+    .line 108
     check-cast v4, Lkotlin/jvm/internal/Ref$ObjectRef;
 
+    .line 109
+    .line 110
+    iget-object v5, v8, Lcoil/intercept/EngineInterceptor$execute$1;->L$3:Ljava/lang/Object;
+
+    .line 111
     .line 112
+    check-cast v5, Lcoil/d;
+
     .line 113
-    iget-object v5, v9, Lcoil/intercept/EngineInterceptor$execute$1;->L$3:Ljava/lang/Object;
-
     .line 114
+    iget-object v6, v8, Lcoil/intercept/EngineInterceptor$execute$1;->L$2:Ljava/lang/Object;
+
     .line 115
-    check-cast v5, Lcoil/e;
-
     .line 116
+    iget-object v7, v8, Lcoil/intercept/EngineInterceptor$execute$1;->L$1:Ljava/lang/Object;
+
     .line 117
-    iget-object v6, v9, Lcoil/intercept/EngineInterceptor$execute$1;->L$2:Ljava/lang/Object;
-
     .line 118
+    check-cast v7, LH2/h;
+
     .line 119
-    iget-object v7, v9, Lcoil/intercept/EngineInterceptor$execute$1;->L$1:Ljava/lang/Object;
-
     .line 120
+    iget-object v13, v8, Lcoil/intercept/EngineInterceptor$execute$1;->L$0:Ljava/lang/Object;
+
     .line 121
-    check-cast v7, Ln5/i;
-
     .line 122
+    check-cast v13, Lcoil/intercept/b;
+
     .line 123
-    iget-object v8, v9, Lcoil/intercept/EngineInterceptor$execute$1;->L$0:Ljava/lang/Object;
-
     .line 124
-    .line 125
-    check-cast v8, Lcoil/intercept/b;
-
-    .line 126
-    .line 127
     :try_start_1
     invoke-static {v1}, Lkotlin/b;->a(Ljava/lang/Object;)V
     :try_end_1
     .catchall {:try_start_1 .. :try_end_1} :catchall_0
 
+    .line 125
+    .line 126
+    .line 127
+    move-object/from16 v19, v3
+
     .line 128
     .line 129
-    .line 130
-    move-object v13, v0
+    move-object/from16 v21, v6
 
+    .line 130
     .line 131
-    move-object/from16 v21, v3
+    goto/16 :goto_2
 
     .line 132
     .line 133
-    move-object v14, v4
-
-    .line 134
-    move-object v12, v5
-
-    .line 135
-    move-object/from16 v23, v6
-
-    .line 136
-    .line 137
-    move-object v0, v8
-
-    .line 138
-    goto/16 :goto_4
-
-    .line 139
-    .line 140
     :cond_4
     invoke-static {v1}, Lkotlin/b;->a(Ljava/lang/Object;)V
 
+    .line 134
+    .line 135
+    .line 136
+    new-instance v13, Lkotlin/jvm/internal/Ref$ObjectRef;
+
+    .line 137
+    .line 138
+    invoke-direct {v13}, Lkotlin/jvm/internal/Ref$ObjectRef;-><init>()V
+
+    .line 139
+    .line 140
     .line 141
+    move-object/from16 v1, p3
+
     .line 142
     .line 143
-    new-instance v14, Lkotlin/jvm/internal/Ref$ObjectRef;
+    iput-object v1, v13, Lkotlin/jvm/internal/Ref$ObjectRef;->element:Ljava/lang/Object;
 
     .line 144
     .line 145
-    invoke-direct {v14}, Lkotlin/jvm/internal/Ref$ObjectRef;-><init>()V
+    new-instance v14, Lkotlin/jvm/internal/Ref$ObjectRef;
 
     .line 146
     .line 147
-    .line 148
-    move-object/from16 v1, p3
+    invoke-direct {v14}, Lkotlin/jvm/internal/Ref$ObjectRef;-><init>()V
 
+    .line 148
     .line 149
     .line 150
-    iput-object v1, v14, Lkotlin/jvm/internal/Ref$ObjectRef;->element:Ljava/lang/Object;
+    iget-object v1, v0, Lcoil/intercept/b;->a:Lcoil/i;
 
     .line 151
     .line 152
-    new-instance v15, Lkotlin/jvm/internal/Ref$ObjectRef;
+    iget-object v1, v1, Lcoil/i;->f:Lcoil/b;
 
     .line 153
     .line 154
-    invoke-direct {v15}, Lkotlin/jvm/internal/Ref$ObjectRef;-><init>()V
+    iput-object v1, v14, Lkotlin/jvm/internal/Ref$ObjectRef;->element:Ljava/lang/Object;
 
     .line 155
     .line 156
+    new-instance v15, Lkotlin/jvm/internal/Ref$ObjectRef;
+
     .line 157
-    iget-object v1, v0, Lcoil/intercept/b;->a:Lcoil/g;
-
     .line 158
-    .line 159
-    check-cast v1, Lcoil/i;
+    invoke-direct {v15}, Lkotlin/jvm/internal/Ref$ObjectRef;-><init>()V
 
+    .line 159
     .line 160
     .line 161
-    iget-object v1, v1, Lcoil/i;->f:Lcoil/c;
+    :try_start_2
+    iget-object v1, v0, Lcoil/intercept/b;->c:LB2/e;
 
     .line 162
     .line 163
-    iput-object v1, v15, Lkotlin/jvm/internal/Ref$ObjectRef;->element:Ljava/lang/Object;
+    iget-object v2, v13, Lkotlin/jvm/internal/Ref$ObjectRef;->element:Ljava/lang/Object;
 
     .line 164
     .line 165
-    new-instance v7, Lkotlin/jvm/internal/Ref$ObjectRef;
+    check-cast v2, LH2/k;
 
     .line 166
     .line 167
-    invoke-direct {v7}, Lkotlin/jvm/internal/Ref$ObjectRef;-><init>()V
+    invoke-virtual {v1, v2}, LB2/e;->O(LH2/k;)LH2/k;
 
     .line 168
     .line 169
     .line 170
-    :try_start_2
-    iget-object v1, v0, Lcoil/intercept/b;->c:Lh5/v;
-    :try_end_2
-    .catchall {:try_start_2 .. :try_end_2} :catchall_6
+    move-result-object v1
 
     .line 171
+    iput-object v1, v13, Lkotlin/jvm/internal/Ref$ObjectRef;->element:Ljava/lang/Object;
+
     .line 172
-    :try_start_3
-    iget-object v2, v14, Lkotlin/jvm/internal/Ref$ObjectRef;->element:Ljava/lang/Object;
-
     .line 173
-    .line 174
-    check-cast v2, Ln5/l;
+    invoke-virtual/range {p1 .. p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
+    .line 174
     .line 175
     .line 176
-    invoke-virtual {v1, v2}, Lh5/v;->T(Ln5/l;)Ln5/l;
+    iget-object v1, v14, Lkotlin/jvm/internal/Ref$ObjectRef;->element:Ljava/lang/Object;
 
     .line 177
     .line 178
+    move-object v2, v1
+
     .line 179
-    move-result-object v1
+    check-cast v2, Lcoil/b;
 
     .line 180
-    iput-object v1, v14, Lkotlin/jvm/internal/Ref$ObjectRef;->element:Ljava/lang/Object;
-    :try_end_3
-    .catchall {:try_start_3 .. :try_end_3} :catchall_5
-
     .line 181
-    .line 182
-    :try_start_4
-    iget-object v1, v8, Ln5/i;->j:Lkotlin/Pair;
-    :try_end_4
-    .catchall {:try_start_4 .. :try_end_4} :catchall_6
+    iget-object v1, v13, Lkotlin/jvm/internal/Ref$ObjectRef;->element:Ljava/lang/Object;
 
+    .line 182
     .line 183
+    move-object v5, v1
+
     .line 184
-    iget-object v2, v8, Ln5/i;->k:Lcoil/decode/c;
+    check-cast v5, LH2/k;
 
     .line 185
     .line 186
-    if-nez v1, :cond_5
+    iput-object v0, v8, Lcoil/intercept/EngineInterceptor$execute$1;->L$0:Ljava/lang/Object;
 
     .line 187
     .line 188
-    if-eqz v2, :cond_8
+    move-object/from16 v7, p1
 
     .line 189
     .line 190
-    :cond_5
-    :try_start_5
-    iget-object v1, v15, Lkotlin/jvm/internal/Ref$ObjectRef;->element:Ljava/lang/Object;
+    iput-object v7, v8, Lcoil/intercept/EngineInterceptor$execute$1;->L$1:Ljava/lang/Object;
 
     .line 191
     .line 192
-    check-cast v1, Lcoil/c;
-    :try_end_5
-    .catchall {:try_start_5 .. :try_end_5} :catchall_5
+    move-object/from16 v6, p2
 
     .line 193
     .line 194
-    :try_start_6
-    invoke-virtual {v1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+    iput-object v6, v8, Lcoil/intercept/EngineInterceptor$execute$1;->L$2:Ljava/lang/Object;
 
     .line 195
     .line 196
+    move-object/from16 v4, p4
+
     .line 197
-    iget-object v4, v1, Lcoil/c;->a:Ljava/util/List;
-
     .line 198
+    iput-object v4, v8, Lcoil/intercept/EngineInterceptor$execute$1;->L$3:Ljava/lang/Object;
+
     .line 199
-    check-cast v4, Ljava/util/Collection;
-
     .line 200
+    iput-object v13, v8, Lcoil/intercept/EngineInterceptor$execute$1;->L$4:Ljava/lang/Object;
+
     .line 201
-    new-instance v5, Ljava/util/ArrayList;
-
     .line 202
-    .line 203
-    invoke-direct {v5, v4}, Ljava/util/ArrayList;-><init>(Ljava/util/Collection;)V
+    iput-object v14, v8, Lcoil/intercept/EngineInterceptor$execute$1;->L$5:Ljava/lang/Object;
 
+    .line 203
     .line 204
+    iput-object v15, v8, Lcoil/intercept/EngineInterceptor$execute$1;->L$6:Ljava/lang/Object;
+
     .line 205
     .line 206
-    iget-object v4, v1, Lcoil/c;->b:Ljava/util/List;
+    iput-object v15, v8, Lcoil/intercept/EngineInterceptor$execute$1;->L$7:Ljava/lang/Object;
 
     .line 207
     .line 208
-    check-cast v4, Ljava/util/Collection;
+    iput v3, v8, Lcoil/intercept/EngineInterceptor$execute$1;->label:I
 
     .line 209
     .line 210
-    new-instance v6, Ljava/util/ArrayList;
+    move-object/from16 v1, p0
 
     .line 211
     .line 212
-    invoke-direct {v6, v4}, Ljava/util/ArrayList;-><init>(Ljava/util/Collection;)V
+    move-object/from16 v3, p1
 
     .line 213
     .line 214
+    move-object/from16 v4, p2
+
     .line 215
-    iget-object v4, v1, Lcoil/c;->c:Ljava/util/List;
-
     .line 216
-    .line 217
-    check-cast v4, Ljava/util/Collection;
+    move-object/from16 v6, p4
 
+    .line 217
     .line 218
+    move-object v7, v8
+
     .line 219
-    new-instance v11, Ljava/util/ArrayList;
+    invoke-virtual/range {v1 .. v7}, Lcoil/intercept/b;->c(Lcoil/b;LH2/h;Ljava/lang/Object;LH2/k;Lcoil/d;Lkotlin/coroutines/jvm/internal/ContinuationImpl;)Ljava/lang/Object;
 
     .line 220
     .line 221
-    invoke-direct {v11, v4}, Ljava/util/ArrayList;-><init>(Ljava/util/Collection;)V
-
     .line 222
+    move-result-object v1
+    :try_end_2
+    .catchall {:try_start_2 .. :try_end_2} :catchall_1
+
     .line 223
+    if-ne v1, v9, :cond_5
+
     .line 224
-    iget-object v4, v1, Lcoil/c;->d:Ljava/util/List;
-
     .line 225
+    goto/16 :goto_8
+
     .line 226
-    check-cast v4, Ljava/util/Collection;
-
     .line 227
+    :cond_5
+    move-object/from16 v7, p1
+
     .line 228
-    new-instance v12, Ljava/util/ArrayList;
-
     .line 229
-    .line 230
-    invoke-direct {v12, v4}, Ljava/util/ArrayList;-><init>(Ljava/util/Collection;)V
+    move-object/from16 v21, p2
 
+    .line 230
     .line 231
+    move-object/from16 v5, p4
+
     .line 232
     .line 233
-    iget-object v1, v1, Lcoil/c;->e:Ljava/util/List;
+    move-object v4, v13
 
     .line 234
-    .line 235
-    check-cast v1, Ljava/util/Collection;
+    move-object/from16 v19, v14
 
+    .line 235
     .line 236
+    move-object v2, v15
+
     .line 237
-    new-instance v4, Ljava/util/ArrayList;
+    move-object v13, v0
 
     .line 238
+    move-object v0, v2
+
     .line 239
-    invoke-direct {v4, v1}, Ljava/util/ArrayList;-><init>(Ljava/util/Collection;)V
+    :goto_2
+    :try_start_3
+    iput-object v1, v0, Lkotlin/jvm/internal/Ref$ObjectRef;->element:Ljava/lang/Object;
 
     .line 240
     .line 241
-    .line 242
-    iget-object v1, v8, Ln5/i;->j:Lkotlin/Pair;
-    :try_end_6
-    .catchall {:try_start_6 .. :try_end_6} :catchall_6
+    iget-object v0, v2, Lkotlin/jvm/internal/Ref$ObjectRef;->element:Ljava/lang/Object;
 
+    .line 242
     .line 243
+    move-object v1, v0
+
     .line 244
-    const/4 v13, 0x0
+    check-cast v1, Lcoil/fetch/e;
 
     .line 245
-    if-eqz v1, :cond_6
-
     .line 246
-    .line 247
-    :try_start_7
-    invoke-virtual {v12, v13, v1}, Ljava/util/ArrayList;->add(ILjava/lang/Object;)V
+    instance-of v3, v1, Lcoil/fetch/k;
 
+    .line 247
     .line 248
+    if-eqz v3, :cond_7
+
     .line 249
     .line 250
-    goto :goto_3
+    iget-object v0, v7, LH2/h;->s:Lkotlinx/coroutines/r;
 
     .line 251
-    :catchall_1
-    move-exception v0
-
     .line 252
-    move-object v2, v7
+    new-instance v1, Lcoil/intercept/EngineInterceptor$execute$executeResult$1;
 
     .line 253
-    goto/16 :goto_2
-
     .line 254
+    const/16 v24, 0x0
+
     .line 255
-    :cond_6
-    :goto_3
-    if-eqz v2, :cond_7
-
     .line 256
-    .line 257
-    invoke-virtual {v4, v13, v2}, Ljava/util/ArrayList;->add(ILjava/lang/Object;)V
-    :try_end_7
-    .catchall {:try_start_7 .. :try_end_7} :catchall_1
+    move-object/from16 v16, v1
 
+    .line 257
     .line 258
+    move-object/from16 v17, v13
+
     .line 259
     .line 260
-    :cond_7
-    :try_start_8
-    new-instance v1, Lcoil/c;
+    move-object/from16 v18, v2
 
     .line 261
     .line 262
-    invoke-static {v5}, Lrb/h;->Z(Ljava/util/ArrayList;)Ljava/util/List;
+    move-object/from16 v20, v7
 
     .line 263
     .line 264
-    .line 265
-    move-result-object v19
+    move-object/from16 v22, v4
 
+    .line 265
     .line 266
-    invoke-static {v6}, Lrb/h;->Z(Ljava/util/ArrayList;)Ljava/util/List;
+    move-object/from16 v23, v5
 
     .line 267
     .line 268
+    invoke-direct/range {v16 .. v24}, Lcoil/intercept/EngineInterceptor$execute$executeResult$1;-><init>(Lcoil/intercept/b;Lkotlin/jvm/internal/Ref$ObjectRef;Lkotlin/jvm/internal/Ref$ObjectRef;LH2/h;Ljava/lang/Object;Lkotlin/jvm/internal/Ref$ObjectRef;Lcoil/d;Lkotlin/coroutines/Continuation;)V
+
     .line 269
-    move-result-object v20
-
     .line 270
-    invoke-static {v11}, Lrb/h;->Z(Ljava/util/ArrayList;)Ljava/util/List;
-
     .line 271
+    iput-object v13, v8, Lcoil/intercept/EngineInterceptor$execute$1;->L$0:Ljava/lang/Object;
+
     .line 272
     .line 273
-    move-result-object v21
+    iput-object v7, v8, Lcoil/intercept/EngineInterceptor$execute$1;->L$1:Ljava/lang/Object;
 
     .line 274
-    invoke-static {v12}, Lrb/h;->Z(Ljava/util/ArrayList;)Ljava/util/List;
-
     .line 275
+    iput-object v5, v8, Lcoil/intercept/EngineInterceptor$execute$1;->L$2:Ljava/lang/Object;
+
     .line 276
     .line 277
-    move-result-object v22
+    iput-object v4, v8, Lcoil/intercept/EngineInterceptor$execute$1;->L$3:Ljava/lang/Object;
 
     .line 278
-    invoke-static {v4}, Lrb/h;->Z(Ljava/util/ArrayList;)Ljava/util/List;
-
     .line 279
+    iput-object v2, v8, Lcoil/intercept/EngineInterceptor$execute$1;->L$4:Ljava/lang/Object;
+
     .line 280
     .line 281
-    move-result-object v23
+    iput-object v12, v8, Lcoil/intercept/EngineInterceptor$execute$1;->L$5:Ljava/lang/Object;
 
     .line 282
-    move-object/from16 v18, v1
-
     .line 283
-    .line 284
-    invoke-direct/range {v18 .. v23}, Lcoil/c;-><init>(Ljava/util/List;Ljava/util/List;Ljava/util/List;Ljava/util/List;Ljava/util/List;)V
-    :try_end_8
-    .catchall {:try_start_8 .. :try_end_8} :catchall_6
+    iput-object v12, v8, Lcoil/intercept/EngineInterceptor$execute$1;->L$6:Ljava/lang/Object;
 
+    .line 284
     .line 285
+    iput-object v12, v8, Lcoil/intercept/EngineInterceptor$execute$1;->L$7:Ljava/lang/Object;
+
     .line 286
     .line 287
-    :try_start_9
-    iput-object v1, v15, Lkotlin/jvm/internal/Ref$ObjectRef;->element:Ljava/lang/Object;
+    iput v11, v8, Lcoil/intercept/EngineInterceptor$execute$1;->label:I
 
     .line 288
     .line 289
-    :cond_8
-    iget-object v1, v15, Lkotlin/jvm/internal/Ref$ObjectRef;->element:Ljava/lang/Object;
+    invoke-static {v0, v1, v8}, Lkotlinx/coroutines/w;->H(Lba/g;Lka/e;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
 
     .line 290
     .line 291
-    move-object v2, v1
-
     .line 292
-    check-cast v2, Lcoil/c;
+    move-result-object v1
 
     .line 293
+    if-ne v1, v9, :cond_6
+
     .line 294
-    iget-object v1, v14, Lkotlin/jvm/internal/Ref$ObjectRef;->element:Ljava/lang/Object;
-
     .line 295
-    .line 296
-    move-object v5, v1
+    goto/16 :goto_8
 
+    .line 296
     .line 297
-    check-cast v5, Ln5/l;
+    :cond_6
+    move-object v0, v4
 
     .line 298
+    move-object v3, v5
+
     .line 299
-    iput-object v0, v9, Lcoil/intercept/EngineInterceptor$execute$1;->L$0:Ljava/lang/Object;
+    move-object v4, v7
 
     .line 300
+    move-object v5, v13
+
     .line 301
-    iput-object v8, v9, Lcoil/intercept/EngineInterceptor$execute$1;->L$1:Ljava/lang/Object;
+    :goto_3
+    check-cast v1, Lcoil/intercept/a;
 
     .line 302
     .line 303
-    move-object/from16 v11, p2
+    move-object/from16 v19, v3
 
     .line 304
     .line 305
-    iput-object v11, v9, Lcoil/intercept/EngineInterceptor$execute$1;->L$2:Ljava/lang/Object;
+    move-object v7, v4
 
     .line 306
+    move-object v15, v5
+
     .line 307
-    move-object/from16 v12, p4
+    move-object v4, v0
 
     .line 308
+    goto :goto_4
+
     .line 309
-    iput-object v12, v9, Lcoil/intercept/EngineInterceptor$execute$1;->L$3:Ljava/lang/Object;
+    :cond_7
+    instance-of v1, v1, Lcoil/fetch/d;
 
     .line 310
     .line 311
-    iput-object v14, v9, Lcoil/intercept/EngineInterceptor$execute$1;->L$4:Ljava/lang/Object;
+    if-eqz v1, :cond_f
 
     .line 312
     .line 313
-    iput-object v15, v9, Lcoil/intercept/EngineInterceptor$execute$1;->L$5:Ljava/lang/Object;
+    new-instance v1, Lcoil/intercept/a;
 
     .line 314
     .line 315
-    iput-object v7, v9, Lcoil/intercept/EngineInterceptor$execute$1;->L$6:Ljava/lang/Object;
+    move-object v3, v0
 
     .line 316
+    check-cast v3, Lcoil/fetch/d;
+
     .line 317
-    iput-object v7, v9, Lcoil/intercept/EngineInterceptor$execute$1;->L$7:Ljava/lang/Object;
-
     .line 318
-    .line 319
-    iput v3, v9, Lcoil/intercept/EngineInterceptor$execute$1;->label:I
-    :try_end_9
-    .catchall {:try_start_9 .. :try_end_9} :catchall_5
+    iget-object v3, v3, Lcoil/fetch/d;->a:Landroid/graphics/drawable/Drawable;
 
+    .line 319
     .line 320
+    move-object v6, v0
+
     .line 321
-    move-object/from16 v1, p0
+    check-cast v6, Lcoil/fetch/d;
 
     .line 322
     .line 323
-    move-object/from16 v3, p1
+    iget-boolean v6, v6, Lcoil/fetch/d;->b:Z
 
     .line 324
     .line 325
-    move-object/from16 v4, p2
+    check-cast v0, Lcoil/fetch/d;
 
     .line 326
     .line 327
-    move-object/from16 v6, p4
+    iget-object v0, v0, Lcoil/fetch/d;->c:Lcoil/decode/DataSource;
 
     .line 328
     .line 329
-    move-object v13, v7
+    invoke-direct {v1, v3, v6, v0, v12}, Lcoil/intercept/a;-><init>(Landroid/graphics/drawable/Drawable;ZLcoil/decode/DataSource;Ljava/lang/String;)V
+    :try_end_3
+    .catchall {:try_start_3 .. :try_end_3} :catchall_0
 
     .line 330
-    move-object v7, v9
-
     .line 331
-    :try_start_a
-    invoke-virtual/range {v1 .. v7}, Lcoil/intercept/b;->c(Lcoil/c;Ln5/i;Ljava/lang/Object;Ln5/l;Lcoil/e;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
-
     .line 332
+    move-object/from16 v19, v5
+
     .line 333
     .line 334
-    move-result-object v1
-    :try_end_a
-    .catchall {:try_start_a .. :try_end_a} :catchall_4
+    move-object v15, v13
 
     .line 335
-    if-ne v1, v10, :cond_9
+    :goto_4
+    iget-object v0, v2, Lkotlin/jvm/internal/Ref$ObjectRef;->element:Ljava/lang/Object;
 
     .line 336
     .line 337
-    goto/16 :goto_b
+    instance-of v2, v0, Lcoil/fetch/k;
 
     .line 338
     .line 339
-    :cond_9
-    move-object v7, v8
+    if-eqz v2, :cond_8
 
     .line 340
-    move-object/from16 v23, v11
-
     .line 341
-    .line 342
-    move-object v2, v13
+    check-cast v0, Lcoil/fetch/k;
 
+    .line 342
     .line 343
-    move-object/from16 v21, v15
+    goto :goto_5
 
     .line 344
+    :cond_8
+    move-object v0, v12
+
     .line 345
-    :goto_4
-    :try_start_b
-    iput-object v1, v13, Lkotlin/jvm/internal/Ref$ObjectRef;->element:Ljava/lang/Object;
+    :goto_5
+    if-eqz v0, :cond_9
 
     .line 346
     .line 347
-    iget-object v1, v2, Lkotlin/jvm/internal/Ref$ObjectRef;->element:Ljava/lang/Object;
+    iget-object v0, v0, Lcoil/fetch/k;->a:Lcoil/decode/n;
 
     .line 348
     .line 349
-    move-object v3, v1
+    invoke-static {v0}, Lcoil/util/g;->a(Ljava/io/Closeable;)V
 
     .line 350
-    check-cast v3, Lcoil/fetch/e;
-
     .line 351
     .line 352
-    instance-of v4, v3, Lcoil/fetch/l;
+    :cond_9
+    iget-object v0, v4, Lkotlin/jvm/internal/Ref$ObjectRef;->element:Ljava/lang/Object;
 
     .line 353
     .line 354
-    if-eqz v4, :cond_b
+    move-object/from16 v17, v0
 
     .line 355
     .line 356
-    iget-object v1, v7, Ln5/i;->y:Lkotlinx/coroutines/t;
+    check-cast v17, LH2/k;
 
     .line 357
     .line 358
-    new-instance v3, Lcoil/intercept/EngineInterceptor$execute$executeResult$1;
+    iput-object v12, v8, Lcoil/intercept/EngineInterceptor$execute$1;->L$0:Ljava/lang/Object;
 
     .line 359
     .line 360
-    const/16 v26, 0x0
+    iput-object v12, v8, Lcoil/intercept/EngineInterceptor$execute$1;->L$1:Ljava/lang/Object;
 
     .line 361
     .line 362
-    move-object/from16 v18, v3
+    iput-object v12, v8, Lcoil/intercept/EngineInterceptor$execute$1;->L$2:Ljava/lang/Object;
 
     .line 363
     .line 364
-    move-object/from16 v19, v0
+    iput-object v12, v8, Lcoil/intercept/EngineInterceptor$execute$1;->L$3:Ljava/lang/Object;
 
     .line 365
     .line 366
-    move-object/from16 v20, v2
+    iput-object v12, v8, Lcoil/intercept/EngineInterceptor$execute$1;->L$4:Ljava/lang/Object;
 
     .line 367
     .line 368
-    move-object/from16 v22, v7
+    iput-object v12, v8, Lcoil/intercept/EngineInterceptor$execute$1;->L$5:Ljava/lang/Object;
 
     .line 369
     .line 370
-    move-object/from16 v24, v14
+    iput-object v12, v8, Lcoil/intercept/EngineInterceptor$execute$1;->L$6:Ljava/lang/Object;
 
     .line 371
     .line 372
-    move-object/from16 v25, v12
+    iput-object v12, v8, Lcoil/intercept/EngineInterceptor$execute$1;->L$7:Ljava/lang/Object;
 
     .line 373
     .line 374
-    invoke-direct/range {v18 .. v26}, Lcoil/intercept/EngineInterceptor$execute$executeResult$1;-><init>(Lcoil/intercept/b;Lkotlin/jvm/internal/Ref$ObjectRef;Lkotlin/jvm/internal/Ref$ObjectRef;Ln5/i;Ljava/lang/Object;Lkotlin/jvm/internal/Ref$ObjectRef;Lcoil/e;Lkotlin/coroutines/Continuation;)V
+    iput v10, v8, Lcoil/intercept/EngineInterceptor$execute$1;->label:I
 
     .line 375
     .line 376
-    .line 377
-    iput-object v0, v9, Lcoil/intercept/EngineInterceptor$execute$1;->L$0:Ljava/lang/Object;
+    invoke-virtual {v15}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
+    .line 377
     .line 378
     .line 379
-    iput-object v7, v9, Lcoil/intercept/EngineInterceptor$execute$1;->L$1:Ljava/lang/Object;
+    iget-object v0, v7, LH2/h;->f:Lkotlin/collections/EmptyList;
 
     .line 380
     .line 381
-    iput-object v12, v9, Lcoil/intercept/EngineInterceptor$execute$1;->L$2:Ljava/lang/Object;
+    invoke-interface {v0}, Ljava/util/List;->isEmpty()Z
 
     .line 382
     .line 383
-    iput-object v14, v9, Lcoil/intercept/EngineInterceptor$execute$1;->L$3:Ljava/lang/Object;
-
     .line 384
+    move-result v2
+
     .line 385
-    iput-object v2, v9, Lcoil/intercept/EngineInterceptor$execute$1;->L$4:Ljava/lang/Object;
+    if-eqz v2, :cond_a
 
     .line 386
     .line 387
-    const/4 v4, 0x0
+    goto :goto_6
 
     .line 388
-    iput-object v4, v9, Lcoil/intercept/EngineInterceptor$execute$1;->L$5:Ljava/lang/Object;
+    :cond_a
+    iget-object v2, v1, Lcoil/intercept/a;->a:Landroid/graphics/drawable/Drawable;
 
     .line 389
     .line 390
-    iput-object v4, v9, Lcoil/intercept/EngineInterceptor$execute$1;->L$6:Ljava/lang/Object;
+    instance-of v2, v2, Landroid/graphics/drawable/BitmapDrawable;
 
     .line 391
     .line 392
-    iput-object v4, v9, Lcoil/intercept/EngineInterceptor$execute$1;->L$7:Ljava/lang/Object;
+    if-nez v2, :cond_b
 
     .line 393
     .line 394
-    const/4 v4, 0x2
+    iget-boolean v2, v7, LH2/h;->j:Z
 
     .line 395
-    iput v4, v9, Lcoil/intercept/EngineInterceptor$execute$1;->label:I
-
     .line 396
+    if-nez v2, :cond_b
+
     .line 397
-    invoke-static {v1, v3, v9}, Lf7/l;->S(Lkotlin/coroutines/i;Lzh/e;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
-
     .line 398
-    .line 399
-    .line 400
-    move-result-object v1
+    goto :goto_6
 
+    .line 399
+    :cond_b
+    new-instance v2, Lcoil/intercept/EngineInterceptor$transform$3;
+
+    .line 400
     .line 401
-    if-ne v1, v10, :cond_a
+    const/16 v21, 0x0
 
     .line 402
     .line 403
-    goto/16 :goto_b
+    move-object v14, v2
 
     .line 404
-    .line 405
-    :cond_a
-    move-object v5, v0
+    move-object/from16 v16, v1
 
+    .line 405
     .line 406
-    move-object v4, v7
+    move-object/from16 v18, v0
 
     .line 407
-    move-object v3, v12
-
     .line 408
-    move-object v0, v14
+    move-object/from16 v20, v7
 
     .line 409
-    :goto_5
-    check-cast v1, Lcoil/intercept/a;
-
     .line 410
+    invoke-direct/range {v14 .. v21}, Lcoil/intercept/EngineInterceptor$transform$3;-><init>(Lcoil/intercept/b;Lcoil/intercept/a;LH2/k;Ljava/util/List;Lcoil/d;LH2/h;Lkotlin/coroutines/Continuation;)V
+
     .line 411
-    move-object v14, v0
-
     .line 412
-    move-object/from16 v20, v3
-
     .line 413
-    .line 414
-    move-object v7, v4
+    iget-object v0, v7, LH2/h;->t:Lkotlinx/coroutines/r;
 
+    .line 414
     .line 415
-    move-object/from16 v16, v5
+    invoke-static {v0, v2, v8}, Lkotlinx/coroutines/w;->H(Lba/g;Lka/e;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
 
     .line 416
     .line 417
-    goto :goto_6
-
     .line 418
-    :cond_b
-    instance-of v3, v3, Lcoil/fetch/d;
+    move-result-object v0
 
     .line 419
+    move-object v1, v0
+
     .line 420
-    if-eqz v3, :cond_13
+    :goto_6
+    if-ne v1, v9, :cond_c
 
     .line 421
     .line 422
-    new-instance v3, Lcoil/intercept/a;
+    goto :goto_8
 
     .line 423
+    :cond_c
+    :goto_7
+    move-object v9, v1
+
     .line 424
-    move-object v4, v1
+    check-cast v9, Lcoil/intercept/a;
 
     .line 425
-    check-cast v4, Lcoil/fetch/d;
-
     .line 426
+    iget-object v0, v9, Lcoil/intercept/a;->a:Landroid/graphics/drawable/Drawable;
+
     .line 427
-    iget-object v4, v4, Lcoil/fetch/d;->a:Landroid/graphics/drawable/Drawable;
-
     .line 428
-    .line 429
-    move-object v5, v1
+    instance-of v1, v0, Landroid/graphics/drawable/BitmapDrawable;
 
+    .line 429
     .line 430
-    check-cast v5, Lcoil/fetch/d;
+    if-eqz v1, :cond_d
 
     .line 431
     .line 432
-    iget-boolean v5, v5, Lcoil/fetch/d;->b:Z
+    move-object v12, v0
 
     .line 433
+    check-cast v12, Landroid/graphics/drawable/BitmapDrawable;
+
     .line 434
-    check-cast v1, Lcoil/fetch/d;
-
     .line 435
+    :cond_d
+    if-eqz v12, :cond_e
+
     .line 436
-    iget-object v1, v1, Lcoil/fetch/d;->c:Lcoil/decode/DataSource;
-    :try_end_b
-    .catchall {:try_start_b .. :try_end_b} :catchall_0
-
     .line 437
+    invoke-virtual {v12}, Landroid/graphics/drawable/BitmapDrawable;->getBitmap()Landroid/graphics/Bitmap;
+
     .line 438
-    const/4 v6, 0x0
-
     .line 439
-    :try_start_c
-    invoke-direct {v3, v4, v5, v1, v6}, Lcoil/intercept/a;-><init>(Landroid/graphics/drawable/Drawable;ZLcoil/decode/DataSource;Ljava/lang/String;)V
-    :try_end_c
-    .catchall {:try_start_c .. :try_end_c} :catchall_2
-
     .line 440
+    move-result-object v0
+
     .line 441
+    if-eqz v0, :cond_e
+
     .line 442
-    move-object/from16 v16, v0
-
     .line 443
+    invoke-virtual {v0}, Landroid/graphics/Bitmap;->prepareToDraw()V
+
     .line 444
-    move-object v1, v3
-
     .line 445
-    move-object/from16 v20, v12
-
     .line 446
+    :cond_e
+    :goto_8
+    return-object v9
+
     .line 447
-    :goto_6
-    iget-object v0, v2, Lkotlin/jvm/internal/Ref$ObjectRef;->element:Ljava/lang/Object;
+    :cond_f
+    :try_start_4
+    new-instance v0, Lkotlin/NoWhenBranchMatchedException;
 
     .line 448
     .line 449
-    instance-of v2, v0, Lcoil/fetch/l;
+    invoke-direct {v0}, Lkotlin/NoWhenBranchMatchedException;-><init>()V
 
     .line 450
     .line 451
-    if-eqz v2, :cond_c
-
     .line 452
+    throw v0
+    :try_end_4
+    .catchall {:try_start_4 .. :try_end_4} :catchall_0
+
     .line 453
-    move-object v4, v0
+    :goto_9
+    move-object v2, v15
 
     .line 454
-    check-cast v4, Lcoil/fetch/l;
+    goto :goto_a
 
     .line 455
+    :catchall_1
+    move-exception v0
+
     .line 456
-    goto :goto_7
+    goto :goto_9
 
     .line 457
-    :cond_c
-    const/4 v4, 0x0
+    :goto_a
+    iget-object v1, v2, Lkotlin/jvm/internal/Ref$ObjectRef;->element:Ljava/lang/Object;
 
     .line 458
-    :goto_7
-    if-eqz v4, :cond_d
-
     .line 459
+    instance-of v2, v1, Lcoil/fetch/k;
+
     .line 460
-    iget-object v0, v4, Lcoil/fetch/l;->a:Lcoil/decode/n;
-
     .line 461
-    .line 462
-    if-eqz v0, :cond_d
+    if-eqz v2, :cond_10
 
+    .line 462
     .line 463
+    move-object v12, v1
+
     .line 464
-    invoke-static {v0}, Lcoil/util/g;->a(Ljava/io/Closeable;)V
+    check-cast v12, Lcoil/fetch/k;
 
     .line 465
     .line 466
-    .line 467
-    :cond_d
-    iget-object v0, v14, Lkotlin/jvm/internal/Ref$ObjectRef;->element:Ljava/lang/Object;
-
-    .line 468
-    .line 469
-    move-object/from16 v18, v0
-
-    .line 470
-    .line 471
-    check-cast v18, Ln5/l;
-
-    .line 472
-    .line 473
-    const/4 v3, 0x0
-
-    .line 474
-    iput-object v3, v9, Lcoil/intercept/EngineInterceptor$execute$1;->L$0:Ljava/lang/Object;
-
-    .line 475
-    .line 476
-    iput-object v3, v9, Lcoil/intercept/EngineInterceptor$execute$1;->L$1:Ljava/lang/Object;
-
-    .line 477
-    .line 478
-    iput-object v3, v9, Lcoil/intercept/EngineInterceptor$execute$1;->L$2:Ljava/lang/Object;
-
-    .line 479
-    .line 480
-    iput-object v3, v9, Lcoil/intercept/EngineInterceptor$execute$1;->L$3:Ljava/lang/Object;
-
-    .line 481
-    .line 482
-    iput-object v3, v9, Lcoil/intercept/EngineInterceptor$execute$1;->L$4:Ljava/lang/Object;
-
-    .line 483
-    .line 484
-    iput-object v3, v9, Lcoil/intercept/EngineInterceptor$execute$1;->L$5:Ljava/lang/Object;
-
-    .line 485
-    .line 486
-    iput-object v3, v9, Lcoil/intercept/EngineInterceptor$execute$1;->L$6:Ljava/lang/Object;
-
-    .line 487
-    .line 488
-    iput-object v3, v9, Lcoil/intercept/EngineInterceptor$execute$1;->L$7:Ljava/lang/Object;
-
-    .line 489
-    .line 490
-    const/4 v0, 0x3
-
-    .line 491
-    iput v0, v9, Lcoil/intercept/EngineInterceptor$execute$1;->label:I
-
-    .line 492
-    .line 493
-    invoke-virtual/range {v16 .. v16}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
-
-    .line 494
-    .line 495
-    .line 496
-    iget-object v0, v7, Ln5/i;->l:Ljava/util/List;
-
-    .line 497
-    .line 498
-    invoke-interface {v0}, Ljava/util/List;->isEmpty()Z
-
-    .line 499
-    .line 500
-    .line 501
-    move-result v2
-
-    .line 502
-    if-eqz v2, :cond_e
-
-    .line 503
-    .line 504
-    goto :goto_8
-
-    .line 505
-    :cond_e
-    iget-object v2, v1, Lcoil/intercept/a;->a:Landroid/graphics/drawable/Drawable;
-
-    .line 506
-    .line 507
-    instance-of v2, v2, Landroid/graphics/drawable/BitmapDrawable;
-
-    .line 508
-    .line 509
-    if-nez v2, :cond_f
-
-    .line 510
-    .line 511
-    iget-boolean v2, v7, Ln5/i;->p:Z
-
-    .line 512
-    .line 513
-    if-nez v2, :cond_f
-
-    .line 514
-    .line 515
-    goto :goto_8
-
-    .line 516
-    :cond_f
-    new-instance v2, Lcoil/intercept/EngineInterceptor$transform$3;
-
-    .line 517
-    .line 518
-    const/16 v22, 0x0
-
-    .line 519
-    .line 520
-    move-object v15, v2
-
-    .line 521
-    move-object/from16 v17, v1
-
-    .line 522
-    .line 523
-    move-object/from16 v19, v0
-
-    .line 524
-    .line 525
-    move-object/from16 v21, v7
-
-    .line 526
-    .line 527
-    invoke-direct/range {v15 .. v22}, Lcoil/intercept/EngineInterceptor$transform$3;-><init>(Lcoil/intercept/b;Lcoil/intercept/a;Ln5/l;Ljava/util/List;Lcoil/e;Ln5/i;Lkotlin/coroutines/Continuation;)V
-
-    .line 528
-    .line 529
-    .line 530
-    iget-object v0, v7, Ln5/i;->z:Lkotlinx/coroutines/t;
-
-    .line 531
-    .line 532
-    invoke-static {v0, v2, v9}, Lf7/l;->S(Lkotlin/coroutines/i;Lzh/e;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
-
-    .line 533
-    .line 534
-    .line 535
-    move-result-object v0
-
-    .line 536
-    move-object v1, v0
-
-    .line 537
-    :goto_8
-    if-ne v1, v10, :cond_10
-
-    .line 538
-    .line 539
-    goto :goto_b
-
-    .line 540
     :cond_10
-    :goto_9
-    move-object v10, v1
+    if-eqz v12, :cond_11
 
-    .line 541
-    check-cast v10, Lcoil/intercept/a;
+    .line 467
+    .line 468
+    iget-object v1, v12, Lcoil/fetch/k;->a:Lcoil/decode/n;
 
-    .line 542
-    .line 543
-    iget-object v0, v10, Lcoil/intercept/a;->a:Landroid/graphics/drawable/Drawable;
-
-    .line 544
-    .line 545
-    instance-of v1, v0, Landroid/graphics/drawable/BitmapDrawable;
-
-    .line 546
-    .line 547
-    if-eqz v1, :cond_11
-
-    .line 548
-    .line 549
-    move-object v13, v0
-
-    .line 550
-    check-cast v13, Landroid/graphics/drawable/BitmapDrawable;
-
-    .line 551
-    .line 552
-    goto :goto_a
-
-    .line 553
-    :cond_11
-    move-object v13, v3
-
-    .line 554
-    :goto_a
-    if-eqz v13, :cond_12
-
-    .line 555
-    .line 556
-    invoke-virtual {v13}, Landroid/graphics/drawable/BitmapDrawable;->getBitmap()Landroid/graphics/Bitmap;
-
-    .line 557
-    .line 558
-    .line 559
-    move-result-object v0
-
-    .line 560
-    if-eqz v0, :cond_12
-
-    .line 561
-    .line 562
-    invoke-virtual {v0}, Landroid/graphics/Bitmap;->prepareToDraw()V
-
-    .line 563
-    .line 564
-    .line 565
-    :cond_12
-    :goto_b
-    return-object v10
-
-    .line 566
-    :catchall_2
-    move-exception v0
-
-    .line 567
-    move-object v3, v6
-
-    .line 568
-    goto :goto_d
-
-    .line 569
-    :cond_13
-    const/4 v3, 0x0
-
-    .line 570
-    :try_start_d
-    new-instance v0, Lkotlin/NoWhenBranchMatchedException;
-
-    .line 571
-    .line 572
-    invoke-direct {v0}, Lkotlin/NoWhenBranchMatchedException;-><init>()V
-
-    .line 573
-    .line 574
-    .line 575
-    throw v0
-    :try_end_d
-    .catchall {:try_start_d .. :try_end_d} :catchall_3
-
-    .line 576
-    :catchall_3
-    move-exception v0
-
-    .line 577
-    goto :goto_d
-
-    .line 578
-    :catchall_4
-    move-exception v0
-
-    .line 579
-    :goto_c
-    const/4 v3, 0x0
-
-    .line 580
-    move-object v2, v13
-
-    .line 581
-    goto :goto_d
-
-    .line 582
-    :catchall_5
-    move-exception v0
-
-    .line 583
-    move-object v13, v7
-
-    .line 584
-    goto :goto_c
-
-    .line 585
-    :catchall_6
-    move-exception v0
-
-    .line 586
-    move-object v13, v7
-
-    .line 587
-    goto :goto_c
-
-    .line 588
-    :goto_d
-    iget-object v1, v2, Lkotlin/jvm/internal/Ref$ObjectRef;->element:Ljava/lang/Object;
-
-    .line 589
-    .line 590
-    instance-of v2, v1, Lcoil/fetch/l;
-
-    .line 591
-    .line 592
-    if-eqz v2, :cond_14
-
-    .line 593
-    .line 594
-    move-object v13, v1
-
-    .line 595
-    check-cast v13, Lcoil/fetch/l;
-
-    .line 596
-    .line 597
-    goto :goto_e
-
-    .line 598
-    :cond_14
-    move-object v13, v3
-
-    .line 599
-    :goto_e
-    if-eqz v13, :cond_15
-
-    .line 600
-    .line 601
-    iget-object v1, v13, Lcoil/fetch/l;->a:Lcoil/decode/n;
-
-    .line 602
-    .line 603
-    if-eqz v1, :cond_15
-
-    .line 604
-    .line 605
+    .line 469
+    .line 470
     invoke-static {v1}, Lcoil/util/g;->a(Ljava/io/Closeable;)V
 
-    .line 606
-    .line 607
-    .line 608
-    :cond_15
+    .line 471
+    .line 472
+    .line 473
+    :cond_11
     throw v0
 .end method
 
 
 # virtual methods
-.method public final c(Lcoil/c;Ln5/i;Ljava/lang/Object;Ln5/l;Lcoil/e;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
-    .locals 18
+.method public final c(Lcoil/b;LH2/h;Ljava/lang/Object;LH2/k;Lcoil/d;Lkotlin/coroutines/jvm/internal/ContinuationImpl;)Ljava/lang/Object;
+    .locals 19
 
     .line 1
     move-object/from16 v0, p6
@@ -2086,14 +1742,14 @@
 
     .line 36
     .line 37
-    const/4 v6, 0x1
+    const/4 v5, 0x1
 
     .line 38
     if-eqz v4, :cond_2
 
     .line 39
     .line 40
-    if-ne v4, v6, :cond_1
+    if-ne v4, v5, :cond_1
 
     .line 41
     .line 42
@@ -2113,7 +1769,7 @@
 
     .line 49
     .line 50
-    check-cast v7, Lcoil/e;
+    check-cast v7, Lcoil/d;
 
     .line 51
     .line 52
@@ -2121,7 +1777,7 @@
 
     .line 53
     .line 54
-    check-cast v8, Ln5/l;
+    check-cast v8, LH2/k;
 
     .line 55
     .line 56
@@ -2133,7 +1789,7 @@
 
     .line 59
     .line 60
-    check-cast v10, Ln5/i;
+    check-cast v10, LH2/h;
 
     .line 61
     .line 62
@@ -2141,7 +1797,7 @@
 
     .line 63
     .line 64
-    check-cast v11, Lcoil/c;
+    check-cast v11, Lcoil/b;
 
     .line 65
     .line 66
@@ -2158,447 +1814,431 @@
     .line 71
     .line 72
     .line 73
-    move v6, v4
+    move-object/from16 v16, v10
 
     .line 74
-    move-object v4, v8
-
     .line 75
-    const/4 v8, 0x1
+    move-object v10, v1
 
     .line 76
-    move-object/from16 v17, v9
+    move-object/from16 v1, v16
 
     .line 77
     .line 78
-    move-object v9, v1
+    move-object/from16 v17, v9
 
     .line 79
-    move-object v1, v10
-
     .line 80
-    move-object v10, v3
+    move v9, v4
 
     .line 81
-    move-object/from16 v3, v17
+    move-object/from16 v4, v17
 
     .line 82
     .line 83
-    goto/16 :goto_4
+    move-object/from16 v18, v8
 
     .line 84
     .line 85
+    move-object v8, v7
+
+    .line 86
+    move-object/from16 v7, v18
+
+    .line 87
+    .line 88
+    goto/16 :goto_4
+
+    .line 89
+    .line 90
     :cond_1
     new-instance v0, Ljava/lang/IllegalStateException;
 
-    .line 86
-    .line 87
-    const-string v1, "call to \'resume\' before \'invoke\' with coroutine"
-
-    .line 88
-    .line 89
-    invoke-direct {v0, v1}, Ljava/lang/IllegalStateException;-><init>(Ljava/lang/String;)V
-
-    .line 90
     .line 91
     .line 92
-    throw v0
+    const-string v1, "call to \'resume\' before \'invoke\' with coroutine"
 
     .line 93
+    .line 94
+    invoke-direct {v0, v1}, Ljava/lang/IllegalStateException;-><init>(Ljava/lang/String;)V
+
+    .line 95
+    .line 96
+    .line 97
+    throw v0
+
+    .line 98
     :cond_2
     invoke-static {v0}, Lkotlin/b;->a(Ljava/lang/Object;)V
 
-    .line 94
-    .line 95
-    .line 96
-    const/4 v0, 0x0
-
-    .line 97
-    move-object/from16 v0, p1
-
-    .line 98
     .line 99
-    move-object/from16 v4, p4
-
     .line 100
     .line 101
-    move-object/from16 v7, p5
+    const/4 v0, 0x0
 
     .line 102
-    .line 103
-    move-object v9, v1
+    move-object/from16 v0, p1
 
+    .line 103
     .line 104
-    move-object v12, v2
+    move-object/from16 v4, p3
 
     .line 105
-    move-object v10, v3
-
     .line 106
-    const/4 v8, 0x0
+    move-object/from16 v7, p4
 
     .line 107
-    move-object/from16 v1, p2
-
     .line 108
-    .line 109
-    move-object/from16 v3, p3
+    move-object/from16 v8, p5
 
+    .line 109
     .line 110
+    move-object v10, v1
+
     .line 111
-    :goto_1
-    iget-object v11, v12, Lcoil/intercept/b;->a:Lcoil/g;
+    move-object v12, v2
 
     .line 112
+    const/4 v9, 0x0
+
     .line 113
-    iget-object v13, v0, Lcoil/c;->d:Ljava/util/List;
+    move-object/from16 v1, p2
 
     .line 114
     .line 115
-    invoke-interface {v13}, Ljava/util/List;->size()I
+    :goto_1
+    iget-object v11, v12, Lcoil/intercept/b;->a:Lcoil/i;
 
     .line 116
     .line 117
-    .line 118
-    move-result v14
+    iget-object v11, v0, Lcoil/b;->d:Ljava/util/List;
 
+    .line 118
     .line 119
-    :goto_2
-    if-ge v8, v14, :cond_4
+    invoke-interface {v11}, Ljava/util/List;->size()I
 
     .line 120
     .line 121
-    invoke-interface {v13, v8}, Ljava/util/List;->get(I)Ljava/lang/Object;
-
     .line 122
-    .line 123
-    .line 124
-    move-result-object v15
+    move-result v13
 
+    .line 123
+    :goto_2
+    if-ge v9, v13, :cond_4
+
+    .line 124
     .line 125
-    check-cast v15, Lkotlin/Pair;
+    invoke-interface {v11, v9}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
     .line 126
     .line 127
-    invoke-virtual {v15}, Lkotlin/Pair;->component1()Ljava/lang/Object;
-
     .line 128
-    .line 129
-    .line 130
-    move-result-object v16
+    move-result-object v14
 
+    .line 129
+    check-cast v14, Lkotlin/Pair;
+
+    .line 130
     .line 131
-    move-object/from16 v5, v16
+    invoke-virtual {v14}, Lkotlin/Pair;->component1()Ljava/lang/Object;
 
     .line 132
     .line 133
-    check-cast v5, Lcoil/fetch/f;
-
     .line 134
+    move-result-object v15
+
     .line 135
-    invoke-virtual {v15}, Lkotlin/Pair;->component2()Ljava/lang/Object;
+    check-cast v15, Lcoil/fetch/f;
 
     .line 136
     .line 137
+    invoke-virtual {v14}, Lkotlin/Pair;->component2()Ljava/lang/Object;
+
     .line 138
-    move-result-object v15
-
     .line 139
-    check-cast v15, Ljava/lang/Class;
-
     .line 140
+    move-result-object v14
+
     .line 141
-    invoke-virtual {v3}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+    check-cast v14, Ljava/lang/Class;
 
     .line 142
     .line 143
+    invoke-virtual {v4}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
     .line 144
+    .line 145
+    .line 146
     move-result-object v6
 
-    .line 145
-    invoke-virtual {v15, v6}, Ljava/lang/Class;->isAssignableFrom(Ljava/lang/Class;)Z
-
-    .line 146
     .line 147
+    invoke-virtual {v14, v6}, Ljava/lang/Class;->isAssignableFrom(Ljava/lang/Class;)Z
+
     .line 148
+    .line 149
+    .line 150
     move-result v6
 
-    .line 149
-    if-eqz v6, :cond_3
-
-    .line 150
     .line 151
-    invoke-interface {v5, v3, v4, v11}, Lcoil/fetch/f;->a(Ljava/lang/Object;Ln5/l;Lcoil/g;)Lcoil/fetch/g;
+    if-eqz v6, :cond_3
 
     .line 152
     .line 153
+    invoke-interface {v15, v4, v7}, Lcoil/fetch/f;->a(Ljava/lang/Object;LH2/k;)Lcoil/fetch/g;
+
     .line 154
-    move-result-object v5
-
     .line 155
-    if-eqz v5, :cond_3
-
     .line 156
+    move-result-object v6
+
     .line 157
-    invoke-static {v8}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+    if-eqz v6, :cond_3
 
     .line 158
     .line 159
+    invoke-static {v9}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
     .line 160
-    move-result-object v6
-
     .line 161
-    new-instance v8, Lkotlin/Pair;
-
     .line 162
+    move-result-object v9
+
     .line 163
-    invoke-direct {v8, v5, v6}, Lkotlin/Pair;-><init>(Ljava/lang/Object;Ljava/lang/Object;)V
+    new-instance v11, Lkotlin/Pair;
 
     .line 164
     .line 165
+    invoke-direct {v11, v6, v9}, Lkotlin/Pair;-><init>(Ljava/lang/Object;Ljava/lang/Object;)V
+
     .line 166
+    .line 167
+    .line 168
     goto :goto_3
 
-    .line 167
-    :cond_3
-    add-int/lit8 v8, v8, 0x1
-
-    .line 168
     .line 169
-    const/4 v6, 0x1
+    :cond_3
+    add-int/lit8 v9, v9, 0x1
 
     .line 170
+    .line 171
     goto :goto_2
 
-    .line 171
-    :cond_4
-    const/4 v8, 0x0
-
     .line 172
-    :goto_3
-    if-eqz v8, :cond_9
+    :cond_4
+    const/4 v11, 0x0
 
     .line 173
-    .line 174
-    invoke-virtual {v8}, Lkotlin/Pair;->getFirst()Ljava/lang/Object;
+    :goto_3
+    if-eqz v11, :cond_9
 
+    .line 174
     .line 175
+    invoke-virtual {v11}, Lkotlin/Pair;->getFirst()Ljava/lang/Object;
+
     .line 176
     .line 177
-    move-result-object v5
-
     .line 178
-    check-cast v5, Lcoil/fetch/g;
-
-    .line 179
-    .line 180
-    invoke-virtual {v8}, Lkotlin/Pair;->getSecond()Ljava/lang/Object;
-
-    .line 181
-    .line 182
-    .line 183
     move-result-object v6
 
+    .line 179
+    check-cast v6, Lcoil/fetch/g;
+
+    .line 180
+    .line 181
+    invoke-virtual {v11}, Lkotlin/Pair;->getSecond()Ljava/lang/Object;
+
+    .line 182
+    .line 183
     .line 184
-    check-cast v6, Ljava/lang/Number;
+    move-result-object v9
 
     .line 185
-    .line 186
-    invoke-virtual {v6}, Ljava/lang/Number;->intValue()I
+    check-cast v9, Ljava/lang/Number;
 
+    .line 186
     .line 187
+    invoke-virtual {v9}, Ljava/lang/Number;->intValue()I
+
     .line 188
     .line 189
-    move-result v6
-
     .line 190
-    const/4 v8, 0x1
+    move-result v9
 
     .line 191
-    add-int/2addr v6, v8
+    add-int/2addr v9, v5
 
     .line 192
-    invoke-virtual {v7}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+    invoke-virtual {v8}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
     .line 193
     .line 194
     .line 195
-    iput-object v12, v9, Lcoil/intercept/EngineInterceptor$fetch$1;->L$0:Ljava/lang/Object;
+    iput-object v12, v10, Lcoil/intercept/EngineInterceptor$fetch$1;->L$0:Ljava/lang/Object;
 
     .line 196
     .line 197
-    iput-object v0, v9, Lcoil/intercept/EngineInterceptor$fetch$1;->L$1:Ljava/lang/Object;
+    iput-object v0, v10, Lcoil/intercept/EngineInterceptor$fetch$1;->L$1:Ljava/lang/Object;
 
     .line 198
     .line 199
-    iput-object v1, v9, Lcoil/intercept/EngineInterceptor$fetch$1;->L$2:Ljava/lang/Object;
+    iput-object v1, v10, Lcoil/intercept/EngineInterceptor$fetch$1;->L$2:Ljava/lang/Object;
 
     .line 200
     .line 201
-    iput-object v3, v9, Lcoil/intercept/EngineInterceptor$fetch$1;->L$3:Ljava/lang/Object;
+    iput-object v4, v10, Lcoil/intercept/EngineInterceptor$fetch$1;->L$3:Ljava/lang/Object;
 
     .line 202
     .line 203
-    iput-object v4, v9, Lcoil/intercept/EngineInterceptor$fetch$1;->L$4:Ljava/lang/Object;
+    iput-object v7, v10, Lcoil/intercept/EngineInterceptor$fetch$1;->L$4:Ljava/lang/Object;
 
     .line 204
     .line 205
-    iput-object v7, v9, Lcoil/intercept/EngineInterceptor$fetch$1;->L$5:Ljava/lang/Object;
+    iput-object v8, v10, Lcoil/intercept/EngineInterceptor$fetch$1;->L$5:Ljava/lang/Object;
 
     .line 206
     .line 207
-    iput-object v5, v9, Lcoil/intercept/EngineInterceptor$fetch$1;->L$6:Ljava/lang/Object;
+    iput-object v6, v10, Lcoil/intercept/EngineInterceptor$fetch$1;->L$6:Ljava/lang/Object;
 
     .line 208
     .line 209
-    iput v6, v9, Lcoil/intercept/EngineInterceptor$fetch$1;->I$0:I
+    iput v9, v10, Lcoil/intercept/EngineInterceptor$fetch$1;->I$0:I
 
     .line 210
     .line 211
-    iput v8, v9, Lcoil/intercept/EngineInterceptor$fetch$1;->label:I
+    iput v5, v10, Lcoil/intercept/EngineInterceptor$fetch$1;->label:I
 
     .line 212
     .line 213
-    invoke-interface {v5, v9}, Lcoil/fetch/g;->a(Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
+    invoke-interface {v6, v10}, Lcoil/fetch/g;->a(Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
 
     .line 214
     .line 215
     .line 216
-    move-result-object v5
+    move-result-object v6
 
     .line 217
-    if-ne v5, v10, :cond_5
+    if-ne v6, v3, :cond_5
 
     .line 218
     .line 219
-    return-object v10
+    return-object v3
 
     .line 220
     :cond_5
     move-object v11, v0
 
     .line 221
-    move-object v0, v5
+    move-object v0, v6
 
     .line 222
     :goto_4
-    move-object v5, v0
+    move-object v6, v0
 
     .line 223
-    check-cast v5, Lcoil/fetch/e;
+    check-cast v6, Lcoil/fetch/e;
 
     .line 224
     .line 225
     :try_start_0
-    invoke-virtual {v7}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+    invoke-virtual {v8}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
     .line 226
     .line 227
     .line 228
-    if-eqz v5, :cond_6
+    if-eqz v6, :cond_6
 
     .line 229
     .line 230
-    return-object v5
+    return-object v6
 
     .line 231
     :cond_6
-    move v8, v6
-
-    .line 232
     move-object v0, v11
 
-    .line 233
-    const/4 v6, 0x1
-
-    .line 234
+    .line 232
     goto :goto_1
 
-    .line 235
+    .line 233
     :catchall_0
     move-exception v0
 
-    .line 236
+    .line 234
     move-object v1, v0
 
+    .line 235
+    instance-of v0, v6, Lcoil/fetch/k;
+
+    .line 236
     .line 237
-    instance-of v0, v5, Lcoil/fetch/l;
+    if-eqz v0, :cond_7
 
     .line 238
     .line 239
-    if-eqz v0, :cond_7
+    check-cast v6, Lcoil/fetch/k;
 
     .line 240
     .line 241
-    check-cast v5, Lcoil/fetch/l;
-
-    .line 242
-    .line 243
     goto :goto_5
 
-    .line 244
+    .line 242
     :cond_7
-    const/4 v5, 0x0
+    const/4 v6, 0x0
 
-    .line 245
+    .line 243
     :goto_5
-    if-eqz v5, :cond_8
+    if-eqz v6, :cond_8
+
+    .line 244
+    .line 245
+    iget-object v0, v6, Lcoil/fetch/k;->a:Lcoil/decode/n;
 
     .line 246
     .line 247
-    iget-object v0, v5, Lcoil/fetch/l;->a:Lcoil/decode/n;
+    invoke-static {v0}, Lcoil/util/g;->a(Ljava/io/Closeable;)V
 
     .line 248
     .line 249
-    if-eqz v0, :cond_8
-
     .line 250
-    .line 251
-    invoke-static {v0}, Lcoil/util/g;->a(Ljava/io/Closeable;)V
-
-    .line 252
-    .line 253
-    .line 254
     :cond_8
     throw v1
 
-    .line 255
+    .line 251
     :cond_9
     const-string v0, "Unable to create a fetcher that supports: "
 
+    .line 252
+    .line 253
+    invoke-static {v4, v0}, LB/u;->s(Ljava/lang/Object;Ljava/lang/String;)Ljava/lang/String;
+
+    .line 254
+    .line 255
     .line 256
+    move-result-object v0
+
     .line 257
-    invoke-static {v0, v3}, Lj0/d;->i(Ljava/lang/String;Ljava/lang/Object;)Ljava/lang/String;
+    new-instance v1, Ljava/lang/IllegalStateException;
 
     .line 258
     .line 259
+    invoke-virtual {v0}, Ljava/lang/Object;->toString()Ljava/lang/String;
+
     .line 260
+    .line 261
+    .line 262
     move-result-object v0
 
-    .line 261
-    new-instance v1, Ljava/lang/IllegalStateException;
-
-    .line 262
     .line 263
-    invoke-virtual {v0}, Ljava/lang/Object;->toString()Ljava/lang/String;
+    invoke-direct {v1, v0}, Ljava/lang/IllegalStateException;-><init>(Ljava/lang/String;)V
 
     .line 264
     .line 265
     .line 266
-    move-result-object v0
-
-    .line 267
-    invoke-direct {v1, v0}, Ljava/lang/IllegalStateException;-><init>(Ljava/lang/String;)V
-
-    .line 268
-    .line 269
-    .line 270
     throw v1
 .end method
 
-.method public final d(Lcoil/intercept/e;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
+.method public final d(Lcoil/intercept/d;Lkotlin/coroutines/jvm/internal/ContinuationImpl;)Ljava/lang/Object;
     .locals 17
 
     .line 1
@@ -2614,89 +2254,89 @@
 
     .line 6
     .line 7
-    iget-object v1, v10, Lcoil/intercept/b;->d:Lm5/e;
+    const/4 v12, 0x1
 
     .line 8
+    iget-object v1, v10, Lcoil/intercept/b;->d:Lv2/j;
+
     .line 9
+    .line 10
     instance-of v2, v0, Lcoil/intercept/EngineInterceptor$intercept$1;
 
-    .line 10
     .line 11
+    .line 12
     if-eqz v2, :cond_0
 
-    .line 12
     .line 13
+    .line 14
     move-object v2, v0
 
-    .line 14
+    .line 15
     check-cast v2, Lcoil/intercept/EngineInterceptor$intercept$1;
 
-    .line 15
     .line 16
+    .line 17
     iget v3, v2, Lcoil/intercept/EngineInterceptor$intercept$1;->label:I
 
-    .line 17
     .line 18
+    .line 19
     const/high16 v4, -0x80000000
 
-    .line 19
     .line 20
+    .line 21
     and-int v5, v3, v4
 
-    .line 21
     .line 22
+    .line 23
     if-eqz v5, :cond_0
 
-    .line 23
     .line 24
+    .line 25
     sub-int/2addr v3, v4
 
-    .line 25
+    .line 26
     iput v3, v2, Lcoil/intercept/EngineInterceptor$intercept$1;->label:I
 
-    .line 26
     .line 27
+    .line 28
     :goto_0
     move-object v0, v2
 
-    .line 28
+    .line 29
     goto :goto_1
 
-    .line 29
+    .line 30
     :cond_0
     new-instance v2, Lcoil/intercept/EngineInterceptor$intercept$1;
 
-    .line 30
     .line 31
+    .line 32
     invoke-direct {v2, v10, v0}, Lcoil/intercept/EngineInterceptor$intercept$1;-><init>(Lcoil/intercept/b;Lkotlin/coroutines/Continuation;)V
 
-    .line 32
     .line 33
     .line 34
+    .line 35
     goto :goto_0
 
-    .line 35
+    .line 36
     :goto_1
     iget-object v2, v0, Lcoil/intercept/EngineInterceptor$intercept$1;->result:Ljava/lang/Object;
 
-    .line 36
     .line 37
-    sget-object v12, Lkotlin/coroutines/intrinsics/CoroutineSingletons;->COROUTINE_SUSPENDED:Lkotlin/coroutines/intrinsics/CoroutineSingletons;
-
     .line 38
+    sget-object v13, Lkotlin/coroutines/intrinsics/CoroutineSingletons;->COROUTINE_SUSPENDED:Lkotlin/coroutines/intrinsics/CoroutineSingletons;
+
     .line 39
+    .line 40
     iget v3, v0, Lcoil/intercept/EngineInterceptor$intercept$1;->label:I
 
-    .line 40
     .line 41
-    const/4 v13, 0x1
-
     .line 42
     if-eqz v3, :cond_2
 
     .line 43
     .line 44
-    if-ne v3, v13, :cond_1
+    if-ne v3, v12, :cond_1
 
     .line 45
     .line 46
@@ -2727,7 +2367,7 @@
     .line 56
     .line 57
     .line 58
-    goto/16 :goto_5
+    goto/16 :goto_6
 
     .line 59
     .line 60
@@ -2738,7 +2378,7 @@
     move-object v11, v1
 
     .line 62
-    goto/16 :goto_6
+    goto/16 :goto_7
 
     .line 63
     .line 64
@@ -2766,15 +2406,15 @@
     .line 74
     .line 75
     :try_start_1
-    iget-object v3, v11, Lcoil/intercept/e;->d:Ln5/i;
+    iget-object v3, v11, Lcoil/intercept/d;->d:LH2/h;
 
     .line 76
     .line 77
-    iget-object v2, v3, Ln5/i;->b:Ljava/lang/Object;
+    iget-object v2, v3, LH2/h;->b:Ljava/lang/Object;
 
     .line 78
     .line 79
-    iget-object v4, v11, Lcoil/intercept/e;->e:Lo5/e;
+    iget-object v4, v11, Lcoil/intercept/d;->e:LI2/e;
 
     .line 80
     .line 81
@@ -2782,7 +2422,7 @@
 
     .line 82
     .line 83
-    instance-of v5, v11, Lcoil/intercept/e;
+    instance-of v5, v11, Lcoil/intercept/d;
 
     .line 84
     .line 85
@@ -2790,7 +2430,7 @@
 
     .line 86
     .line 87
-    iget-object v5, v11, Lcoil/intercept/e;->f:Lcoil/e;
+    iget-object v5, v11, Lcoil/intercept/d;->f:Lcoil/d;
 
     .line 88
     .line 89
@@ -2802,7 +2442,7 @@
 
     .line 91
     :cond_3
-    sget-object v5, Lcoil/e;->a:Lcoil/d;
+    sget-object v5, Lcoil/d;->a:Lcoil/c;
 
     .line 92
     .line 93
@@ -2810,11 +2450,11 @@
 
     .line 94
     :goto_3
-    iget-object v5, v10, Lcoil/intercept/b;->c:Lh5/v;
+    iget-object v5, v10, Lcoil/intercept/b;->c:LB2/e;
 
     .line 95
     .line 96
-    invoke-virtual {v5, v3, v4}, Lh5/v;->L(Ln5/i;Lo5/e;)Ln5/l;
+    invoke-virtual {v5, v3, v4}, LB2/e;->I(LH2/h;LI2/e;)LH2/k;
 
     .line 97
     .line 98
@@ -2822,7 +2462,7 @@
     move-result-object v5
 
     .line 100
-    iget-object v7, v5, Ln5/l;->e:Lcoil/size/Scale;
+    iget-object v7, v5, LH2/k;->e:Lcoil/size/Scale;
 
     .line 101
     .line 102
@@ -2831,179 +2471,180 @@
     .line 103
     .line 104
     .line 105
-    iget-object v8, v10, Lcoil/intercept/b;->a:Lcoil/g;
+    iget-object v8, v10, Lcoil/intercept/b;->a:Lcoil/i;
 
     .line 106
     .line 107
-    check-cast v8, Lcoil/i;
+    iget-object v8, v8, Lcoil/i;->f:Lcoil/b;
 
     .line 108
     .line 109
-    iget-object v8, v8, Lcoil/i;->f:Lcoil/c;
+    iget-object v8, v8, Lcoil/b;->b:Ljava/util/List;
 
     .line 110
     .line 111
-    invoke-virtual {v8, v2, v5}, Lcoil/c;->a(Ljava/lang/Object;Ln5/l;)Ljava/lang/Object;
+    invoke-interface {v8}, Ljava/util/List;->size()I
 
     .line 112
     .line 113
     .line 114
-    move-result-object v8
+    move-result v9
 
     .line 115
-    invoke-virtual {v1, v3, v8, v5, v6}, Lm5/e;->b(Ln5/i;Ljava/lang/Object;Ln5/l;Lcoil/e;)Lcoil/memory/MemoryCache$Key;
+    const/4 v14, 0x0
 
     .line 116
+    move-object v14, v2
+
     .line 117
+    const/4 v2, 0x0
+
     .line 118
-    move-result-object v9
+    :goto_4
+    if-ge v2, v9, :cond_5
 
     .line 119
-    if-eqz v9, :cond_4
-
     .line 120
-    .line 121
-    invoke-virtual {v1, v3, v9, v4, v7}, Lm5/e;->a(Ln5/i;Lcoil/memory/MemoryCache$Key;Lo5/e;Lcoil/size/Scale;)Lm5/c;
+    invoke-interface {v8, v2}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
+    .line 121
     .line 122
     .line 123
+    move-result-object v15
+
     .line 124
-    move-result-object v1
+    check-cast v15, Lkotlin/Pair;
 
     .line 125
-    goto :goto_4
-
     .line 126
-    :catchall_1
-    move-exception v0
+    invoke-virtual {v15}, Lkotlin/Pair;->component1()Ljava/lang/Object;
 
     .line 127
-    move-object v3, v10
-
     .line 128
-    goto :goto_6
-
     .line 129
-    :cond_4
-    const/4 v1, 0x0
+    move-result-object v16
 
     .line 130
-    :goto_4
-    if-eqz v1, :cond_5
+    move-object/from16 v12, v16
 
     .line 131
     .line 132
-    invoke-static {v11, v3, v9, v1}, Lm5/e;->c(Lcoil/intercept/e;Ln5/i;Lcoil/memory/MemoryCache$Key;Lm5/c;)Ln5/o;
+    check-cast v12, LF2/a;
 
     .line 133
     .line 134
+    invoke-virtual {v15}, Lkotlin/Pair;->component2()Ljava/lang/Object;
+
     .line 135
-    move-result-object v0
-
     .line 136
-    return-object v0
-
     .line 137
-    :cond_5
-    iget-object v14, v3, Ln5/i;->x:Lkotlinx/coroutines/t;
+    move-result-object v15
 
     .line 138
+    check-cast v15, Ljava/lang/Class;
+
     .line 139
-    new-instance v15, Lcoil/intercept/EngineInterceptor$intercept$2;
-
     .line 140
+    move-object/from16 v16, v8
+
     .line 141
-    const/16 v16, 0x0
-
     .line 142
+    invoke-virtual {v14}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
     .line 143
-    move-object v1, v15
-
     .line 144
-    move-object/from16 v2, p0
-
     .line 145
+    move-result-object v8
+
     .line 146
-    move-object v4, v8
+    invoke-virtual {v15, v8}, Ljava/lang/Class;->isAssignableFrom(Ljava/lang/Class;)Z
 
     .line 147
-    move-object v7, v9
-
     .line 148
-    move-object/from16 v8, p1
-
     .line 149
+    move-result v8
+
     .line 150
-    move-object/from16 v9, v16
+    if-eqz v8, :cond_4
 
     .line 151
     .line 152
-    invoke-direct/range {v1 .. v9}, Lcoil/intercept/EngineInterceptor$intercept$2;-><init>(Lcoil/intercept/b;Ln5/i;Ljava/lang/Object;Ln5/l;Lcoil/e;Lcoil/memory/MemoryCache$Key;Lcoil/intercept/c;Lkotlin/coroutines/Continuation;)V
+    invoke-virtual {v12, v14, v5}, LF2/a;->a(Ljava/lang/Object;LH2/k;)Ljava/lang/Object;
 
     .line 153
     .line 154
     .line 155
-    iput-object v10, v0, Lcoil/intercept/EngineInterceptor$intercept$1;->L$0:Ljava/lang/Object;
+    move-result-object v8
 
     .line 156
-    .line 157
-    iput-object v11, v0, Lcoil/intercept/EngineInterceptor$intercept$1;->L$1:Ljava/lang/Object;
+    if-eqz v8, :cond_4
 
+    .line 157
     .line 158
+    move-object v14, v8
+
     .line 159
-    iput v13, v0, Lcoil/intercept/EngineInterceptor$intercept$1;->label:I
+    :cond_4
+    const/4 v8, 0x1
 
     .line 160
+    add-int/2addr v2, v8
+
     .line 161
-    invoke-static {v14, v15, v0}, Lf7/l;->S(Lkotlin/coroutines/i;Lzh/e;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
+    move-object/from16 v8, v16
 
     .line 162
     .line 163
+    const/4 v12, 0x1
+
     .line 164
-    move-result-object v2
-    :try_end_1
-    .catchall {:try_start_1 .. :try_end_1} :catchall_1
+    goto :goto_4
 
     .line 165
-    if-ne v2, v12, :cond_6
+    :cond_5
+    invoke-virtual {v1, v3, v14, v5, v6}, Lv2/j;->j(LH2/h;Ljava/lang/Object;LH2/k;Lcoil/d;)Lcoil/memory/MemoryCache$Key;
 
     .line 166
     .line 167
-    return-object v12
-
     .line 168
-    :cond_6
-    :goto_5
-    return-object v2
+    move-result-object v8
 
     .line 169
-    :goto_6
-    instance-of v1, v0, Ljava/util/concurrent/CancellationException;
+    if-eqz v8, :cond_6
 
     .line 170
     .line 171
-    if-nez v1, :cond_7
+    invoke-virtual {v1, v3, v8, v4, v7}, Lv2/j;->i(LH2/h;Lcoil/memory/MemoryCache$Key;LI2/e;Lcoil/size/Scale;)LG2/b;
 
     .line 172
     .line 173
-    iget-object v1, v3, Lcoil/intercept/b;->c:Lh5/v;
-
     .line 174
+    move-result-object v1
+
     .line 175
-    check-cast v11, Lcoil/intercept/e;
+    goto :goto_5
 
     .line 176
+    :catchall_1
+    move-exception v0
+
     .line 177
-    iget-object v2, v11, Lcoil/intercept/e;->d:Ln5/i;
+    move-object v3, v10
 
     .line 178
+    goto :goto_7
+
     .line 179
-    invoke-virtual {v1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+    :cond_6
+    const/4 v1, 0x0
 
     .line 180
+    :goto_5
+    if-eqz v1, :cond_7
+
     .line 181
     .line 182
-    invoke-static {v2, v0}, Lh5/v;->w(Ln5/i;Ljava/lang/Throwable;)Ln5/d;
+    invoke-static {v11, v3, v8, v1}, Lv2/j;->k(Lcoil/intercept/d;LH2/h;Lcoil/memory/MemoryCache$Key;LG2/b;)LH2/n;
 
     .line 183
     .line 184
@@ -3015,5 +2656,108 @@
 
     .line 187
     :cond_7
+    iget-object v12, v3, LH2/h;->r:Lkotlinx/coroutines/r;
+
+    .line 188
+    .line 189
+    new-instance v15, Lcoil/intercept/EngineInterceptor$intercept$2;
+
+    .line 190
+    .line 191
+    const/4 v9, 0x0
+
+    .line 192
+    move-object v1, v15
+
+    .line 193
+    move-object/from16 v2, p0
+
+    .line 194
+    .line 195
+    move-object v4, v14
+
+    .line 196
+    move-object v7, v8
+
+    .line 197
+    move-object/from16 v8, p1
+
+    .line 198
+    .line 199
+    invoke-direct/range {v1 .. v9}, Lcoil/intercept/EngineInterceptor$intercept$2;-><init>(Lcoil/intercept/b;LH2/h;Ljava/lang/Object;LH2/k;Lcoil/d;Lcoil/memory/MemoryCache$Key;Lcoil/intercept/c;Lkotlin/coroutines/Continuation;)V
+
+    .line 200
+    .line 201
+    .line 202
+    iput-object v10, v0, Lcoil/intercept/EngineInterceptor$intercept$1;->L$0:Ljava/lang/Object;
+
+    .line 203
+    .line 204
+    iput-object v11, v0, Lcoil/intercept/EngineInterceptor$intercept$1;->L$1:Ljava/lang/Object;
+
+    .line 205
+    .line 206
+    const/4 v1, 0x1
+
+    .line 207
+    iput v1, v0, Lcoil/intercept/EngineInterceptor$intercept$1;->label:I
+
+    .line 208
+    .line 209
+    invoke-static {v12, v15, v0}, Lkotlinx/coroutines/w;->H(Lba/g;Lka/e;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
+
+    .line 210
+    .line 211
+    .line 212
+    move-result-object v2
+    :try_end_1
+    .catchall {:try_start_1 .. :try_end_1} :catchall_1
+
+    .line 213
+    if-ne v2, v13, :cond_8
+
+    .line 214
+    .line 215
+    return-object v13
+
+    .line 216
+    :cond_8
+    :goto_6
+    return-object v2
+
+    .line 217
+    :goto_7
+    instance-of v1, v0, Ljava/util/concurrent/CancellationException;
+
+    .line 218
+    .line 219
+    if-nez v1, :cond_9
+
+    .line 220
+    .line 221
+    iget-object v1, v3, Lcoil/intercept/b;->c:LB2/e;
+
+    .line 222
+    .line 223
+    check-cast v11, Lcoil/intercept/d;
+
+    .line 224
+    .line 225
+    iget-object v1, v11, Lcoil/intercept/d;->d:LH2/h;
+
+    .line 226
+    .line 227
+    invoke-static {v1, v0}, LB2/e;->u(LH2/h;Ljava/lang/Throwable;)LH2/d;
+
+    .line 228
+    .line 229
+    .line 230
+    move-result-object v0
+
+    .line 231
+    return-object v0
+
+    .line 232
+    :cond_9
     throw v0
 .end method

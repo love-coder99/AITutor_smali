@@ -3,7 +3,7 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lzh/c;
+.implements Lka/c;
 
 
 # annotations
@@ -19,7 +19,7 @@
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "Lkotlin/jvm/internal/Lambda;",
-        "Lzh/c;"
+        "Lka/c;"
     }
 .end annotation
 
@@ -30,8 +30,8 @@
     d2 = {
         "Landroidx/compose/animation/core/a;",
         "",
-        "Landroidx/compose/animation/core/i;",
-        "Lqh/r;",
+        "Landroidx/compose/animation/core/h;",
+        "LX9/j;",
         "invoke",
         "(Landroidx/compose/animation/core/a;)V",
         "<anonymous>"
@@ -46,16 +46,16 @@
 
 
 # instance fields
-.field final synthetic $layer:Landroidx/compose/ui/graphics/layer/b;
+.field final synthetic $layer:Landroidx/compose/ui/graphics/layer/a;
 
 .field final synthetic this$0:Landroidx/compose/foundation/lazy/layout/s;
 
 
 # direct methods
-.method public constructor <init>(Landroidx/compose/ui/graphics/layer/b;Landroidx/compose/foundation/lazy/layout/s;)V
+.method public constructor <init>(Landroidx/compose/ui/graphics/layer/a;Landroidx/compose/foundation/lazy/layout/s;)V
     .locals 0
 
-    iput-object p1, p0, Landroidx/compose/foundation/lazy/layout/LazyLayoutItemAnimation$animateDisappearance$1$1;->$layer:Landroidx/compose/ui/graphics/layer/b;
+    iput-object p1, p0, Landroidx/compose/foundation/lazy/layout/LazyLayoutItemAnimation$animateDisappearance$1$1;->$layer:Landroidx/compose/ui/graphics/layer/a;
 
     iput-object p2, p0, Landroidx/compose/foundation/lazy/layout/LazyLayoutItemAnimation$animateDisappearance$1$1;->this$0:Landroidx/compose/foundation/lazy/layout/s;
 
@@ -76,7 +76,7 @@
 
     invoke-virtual {p0, p1}, Landroidx/compose/foundation/lazy/layout/LazyLayoutItemAnimation$animateDisappearance$1$1;->invoke(Landroidx/compose/animation/core/a;)V
 
-    sget-object p1, Lqh/r;->a:Lqh/r;
+    sget-object p1, LX9/j;->a:LX9/j;
 
     return-object p1
 .end method
@@ -91,9 +91,9 @@
         }
     .end annotation
 
-    iget-object v0, p0, Landroidx/compose/foundation/lazy/layout/LazyLayoutItemAnimation$animateDisappearance$1$1;->$layer:Landroidx/compose/ui/graphics/layer/b;
-
     .line 2
+    iget-object v0, p0, Landroidx/compose/foundation/lazy/layout/LazyLayoutItemAnimation$animateDisappearance$1$1;->$layer:Landroidx/compose/ui/graphics/layer/a;
+
     invoke-virtual {p1}, Landroidx/compose/animation/core/a;->d()Ljava/lang/Object;
 
     move-result-object p1
@@ -104,15 +104,16 @@
 
     move-result p1
 
-    invoke-virtual {v0, p1}, Landroidx/compose/ui/graphics/layer/b;->f(F)V
-
-    iget-object p1, p0, Landroidx/compose/foundation/lazy/layout/LazyLayoutItemAnimation$animateDisappearance$1$1;->this$0:Landroidx/compose/foundation/lazy/layout/s;
+    invoke-virtual {v0, p1}, Landroidx/compose/ui/graphics/layer/a;->f(F)V
 
     .line 3
-    iget-object p1, p1, Landroidx/compose/foundation/lazy/layout/s;->c:Lzh/a;
+    iget-object p1, p0, Landroidx/compose/foundation/lazy/layout/LazyLayoutItemAnimation$animateDisappearance$1$1;->this$0:Landroidx/compose/foundation/lazy/layout/s;
 
     .line 4
-    invoke-interface {p1}, Lzh/a;->invoke()Ljava/lang/Object;
+    iget-object p1, p1, Landroidx/compose/foundation/lazy/layout/s;->c:Lka/a;
+
+    .line 5
+    invoke-interface {p1}, Lka/a;->invoke()Ljava/lang/Object;
 
     return-void
 .end method

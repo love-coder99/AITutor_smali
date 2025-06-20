@@ -48,7 +48,7 @@
 
     iget-object v3, p0, Lcom/applovin/impl/mediation/ads/h;->b:Ljava/lang/String;
 
-    invoke-static {v2, v3, v0, v1}, Lcom/applovin/impl/mediation/ads/MaxFullscreenAdImpl;->o(Lcom/applovin/impl/mediation/ads/MaxFullscreenAdImpl;Ljava/lang/String;Ljava/lang/String;Landroid/app/Activity;)V
+    invoke-static {v2, v3, v0, v1}, Lcom/applovin/impl/mediation/ads/MaxFullscreenAdImpl;->l(Lcom/applovin/impl/mediation/ads/MaxFullscreenAdImpl;Ljava/lang/String;Ljava/lang/String;Landroid/app/Activity;)V
 
     return-void
 .end method

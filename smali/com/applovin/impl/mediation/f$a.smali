@@ -134,8 +134,11 @@
 .method public a()Lorg/json/JSONObject;
     .locals 1
 
+    .line 1
     iget-object v0, p0, Lcom/applovin/impl/mediation/f$a;->d:Lorg/json/JSONObject;
 
+    .line 2
+    .line 3
     return-object v0
 .end method
 
@@ -310,7 +313,7 @@
 
     .line 12
     .line 13
-    invoke-static {v2, v0, v1}, Landroidx/compose/foundation/text/modifiers/f;->k(Ljava/lang/String;II)I
+    invoke-static {v0, v1, v2}, Landroidx/appcompat/view/menu/F;->y(IILjava/lang/String;)I
 
     .line 14
     .line 15

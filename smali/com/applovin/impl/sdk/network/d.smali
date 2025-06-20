@@ -45,10 +45,10 @@
 .method private constructor <init>(Lcom/applovin/impl/sdk/network/d$b;)V
     .locals 1
 
-    .line 26
+    .line 35
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 27
+    .line 36
     invoke-static {}, Ljava/util/UUID;->randomUUID()Ljava/util/UUID;
 
     move-result-object v0
@@ -59,84 +59,84 @@
 
     iput-object v0, p0, Lcom/applovin/impl/sdk/network/d;->a:Ljava/lang/String;
 
-    .line 28
+    .line 37
     invoke-static {p1}, Lcom/applovin/impl/sdk/network/d$b;->a(Lcom/applovin/impl/sdk/network/d$b;)Ljava/lang/String;
 
     move-result-object v0
 
     iput-object v0, p0, Lcom/applovin/impl/sdk/network/d;->b:Ljava/lang/String;
 
-    .line 29
+    .line 38
     invoke-static {p1}, Lcom/applovin/impl/sdk/network/d$b;->b(Lcom/applovin/impl/sdk/network/d$b;)Ljava/lang/String;
 
     move-result-object v0
 
     iput-object v0, p0, Lcom/applovin/impl/sdk/network/d;->c:Ljava/lang/String;
 
-    .line 30
+    .line 39
     invoke-static {p1}, Lcom/applovin/impl/sdk/network/d$b;->e(Lcom/applovin/impl/sdk/network/d$b;)Ljava/lang/String;
 
     move-result-object v0
 
     iput-object v0, p0, Lcom/applovin/impl/sdk/network/d;->d:Ljava/lang/String;
 
-    .line 31
+    .line 40
     invoke-static {p1}, Lcom/applovin/impl/sdk/network/d$b;->f(Lcom/applovin/impl/sdk/network/d$b;)Ljava/util/Map;
 
     move-result-object v0
 
     iput-object v0, p0, Lcom/applovin/impl/sdk/network/d;->e:Ljava/util/Map;
 
-    .line 32
+    .line 41
     invoke-static {p1}, Lcom/applovin/impl/sdk/network/d$b;->g(Lcom/applovin/impl/sdk/network/d$b;)Ljava/util/Map;
 
     move-result-object v0
 
     iput-object v0, p0, Lcom/applovin/impl/sdk/network/d;->f:Ljava/util/Map;
 
-    .line 33
+    .line 42
     invoke-static {p1}, Lcom/applovin/impl/sdk/network/d$b;->h(Lcom/applovin/impl/sdk/network/d$b;)Ljava/util/Map;
 
     move-result-object v0
 
     iput-object v0, p0, Lcom/applovin/impl/sdk/network/d;->g:Ljava/util/Map;
 
-    .line 34
+    .line 43
     invoke-static {p1}, Lcom/applovin/impl/sdk/network/d$b;->i(Lcom/applovin/impl/sdk/network/d$b;)Lcom/applovin/impl/vi$a;
 
     move-result-object v0
 
     iput-object v0, p0, Lcom/applovin/impl/sdk/network/d;->h:Lcom/applovin/impl/vi$a;
 
-    .line 35
+    .line 44
     invoke-static {p1}, Lcom/applovin/impl/sdk/network/d$b;->j(Lcom/applovin/impl/sdk/network/d$b;)Z
 
     move-result v0
 
     iput-boolean v0, p0, Lcom/applovin/impl/sdk/network/d;->i:Z
 
-    .line 36
+    .line 45
     invoke-static {p1}, Lcom/applovin/impl/sdk/network/d$b;->k(Lcom/applovin/impl/sdk/network/d$b;)Z
 
     move-result v0
 
     iput-boolean v0, p0, Lcom/applovin/impl/sdk/network/d;->j:Z
 
-    .line 37
+    .line 46
     invoke-static {p1}, Lcom/applovin/impl/sdk/network/d$b;->l(Lcom/applovin/impl/sdk/network/d$b;)Z
 
     move-result v0
 
     iput-boolean v0, p0, Lcom/applovin/impl/sdk/network/d;->k:Z
 
-    .line 38
+    .line 47
     invoke-static {p1}, Lcom/applovin/impl/sdk/network/d$b;->c(Lcom/applovin/impl/sdk/network/d$b;)Z
 
     move-result v0
 
     iput-boolean v0, p0, Lcom/applovin/impl/sdk/network/d;->l:Z
 
-    .line 39
+    .line 48
     invoke-static {p1}, Lcom/applovin/impl/sdk/network/d$b;->d(Lcom/applovin/impl/sdk/network/d$b;)Ljava/lang/String;
 
     move-result-object p1
@@ -145,6 +145,7 @@
 
     const/4 p1, 0x0
 
+    .line 49
     iput p1, p0, Lcom/applovin/impl/sdk/network/d;->n:I
 
     return-void
@@ -180,46 +181,46 @@
 
     move-result-object p2
 
+    .line 4
     const-string v0, "communicatorRequestId"
 
     const-string v1, ""
 
-    .line 4
     invoke-static {p1, v0, v1}, Lcom/applovin/impl/sdk/utils/JsonUtils;->getString(Lorg/json/JSONObject;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v0
 
+    .line 5
     const-string v2, "httpMethod"
 
-    .line 5
     invoke-static {p1, v2, v1}, Lcom/applovin/impl/sdk/utils/JsonUtils;->getString(Lorg/json/JSONObject;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v2
 
+    .line 6
     const-string v3, "targetUrl"
 
-    .line 6
     invoke-virtual {p1, v3}, Lorg/json/JSONObject;->getString(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v3
 
+    .line 7
     const-string v4, "backupUrl"
 
-    .line 7
     invoke-static {p1, v4, v1}, Lcom/applovin/impl/sdk/utils/JsonUtils;->getString(Lorg/json/JSONObject;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v1
 
+    .line 8
     const-string v4, "attemptNumber"
 
-    .line 8
     invoke-virtual {p1, v4}, Lorg/json/JSONObject;->getInt(Ljava/lang/String;)I
 
     move-result v4
 
+    .line 9
     const-string v5, "parameters"
 
-    .line 9
     invoke-static {p1, v5}, Lcom/applovin/impl/sdk/utils/JsonUtils;->valueExists(Lorg/json/JSONObject;Ljava/lang/String;)Z
 
     move-result v6
@@ -248,10 +249,10 @@
 
     invoke-direct {v5}, Ljava/util/HashMap;-><init>()V
 
+    .line 13
     :goto_0
     const-string v6, "httpHeaders"
 
-    .line 13
     invoke-static {p1, v6}, Lcom/applovin/impl/sdk/utils/JsonUtils;->valueExists(Lorg/json/JSONObject;Ljava/lang/String;)Z
 
     move-result v7
@@ -280,10 +281,10 @@
 
     invoke-direct {v6}, Ljava/util/HashMap;-><init>()V
 
+    .line 17
     :goto_1
     const-string v7, "requestBody"
 
-    .line 17
     invoke-static {p1, v7}, Lcom/applovin/impl/sdk/utils/JsonUtils;->valueExists(Lorg/json/JSONObject;Ljava/lang/String;)Z
 
     move-result v8
@@ -312,24 +313,32 @@
 
     invoke-direct {v7}, Ljava/util/HashMap;-><init>()V
 
+    .line 21
     :goto_2
     iput-object p2, p0, Lcom/applovin/impl/sdk/network/d;->a:Ljava/lang/String;
 
+    .line 22
     iput-object v2, p0, Lcom/applovin/impl/sdk/network/d;->b:Ljava/lang/String;
 
+    .line 23
     iput-object v0, p0, Lcom/applovin/impl/sdk/network/d;->m:Ljava/lang/String;
 
+    .line 24
     iput-object v3, p0, Lcom/applovin/impl/sdk/network/d;->c:Ljava/lang/String;
 
+    .line 25
     iput-object v1, p0, Lcom/applovin/impl/sdk/network/d;->d:Ljava/lang/String;
 
+    .line 26
     iput-object v5, p0, Lcom/applovin/impl/sdk/network/d;->e:Ljava/util/Map;
 
+    .line 27
     iput-object v6, p0, Lcom/applovin/impl/sdk/network/d;->f:Ljava/util/Map;
 
+    .line 28
     iput-object v7, p0, Lcom/applovin/impl/sdk/network/d;->g:Ljava/util/Map;
 
-    .line 21
+    .line 29
     sget-object p2, Lcom/applovin/impl/vi$a;->c:Lcom/applovin/impl/vi$a;
 
     invoke-virtual {p2}, Lcom/applovin/impl/vi$a;->b()I
@@ -348,44 +357,45 @@
 
     iput-object p2, p0, Lcom/applovin/impl/sdk/network/d;->h:Lcom/applovin/impl/vi$a;
 
+    .line 30
     const-string p2, "isEncodingEnabled"
 
     const/4 v0, 0x0
 
-    .line 22
     invoke-virtual {p1, p2, v0}, Lorg/json/JSONObject;->optBoolean(Ljava/lang/String;Z)Z
 
     move-result p2
 
     iput-boolean p2, p0, Lcom/applovin/impl/sdk/network/d;->i:Z
 
+    .line 31
     const-string p2, "gzipBodyEncoding"
 
-    .line 23
     invoke-virtual {p1, p2, v0}, Lorg/json/JSONObject;->optBoolean(Ljava/lang/String;Z)Z
 
     move-result p2
 
     iput-boolean p2, p0, Lcom/applovin/impl/sdk/network/d;->j:Z
 
+    .line 32
     const-string p2, "isAllowedPreInitEvent"
 
-    .line 24
     invoke-virtual {p1, p2, v0}, Lorg/json/JSONObject;->optBoolean(Ljava/lang/String;Z)Z
 
     move-result p2
 
     iput-boolean p2, p0, Lcom/applovin/impl/sdk/network/d;->k:Z
 
+    .line 33
     const-string p2, "shouldFireInWebView"
 
-    .line 25
     invoke-virtual {p1, p2, v0}, Lorg/json/JSONObject;->optBoolean(Ljava/lang/String;Z)Z
 
     move-result p1
 
     iput-boolean p1, p0, Lcom/applovin/impl/sdk/network/d;->l:Z
 
+    .line 34
     iput v4, p0, Lcom/applovin/impl/sdk/network/d;->n:I
 
     return-void
@@ -460,24 +470,33 @@
 .method public c()I
     .locals 1
 
+    .line 1
     iget v0, p0, Lcom/applovin/impl/sdk/network/d;->n:I
 
+    .line 2
+    .line 3
     return v0
 .end method
 
 .method public d()Ljava/lang/String;
     .locals 1
 
+    .line 1
     iget-object v0, p0, Lcom/applovin/impl/sdk/network/d;->d:Ljava/lang/String;
 
+    .line 2
+    .line 3
     return-object v0
 .end method
 
 .method public e()Ljava/lang/String;
     .locals 1
 
+    .line 1
     iget-object v0, p0, Lcom/applovin/impl/sdk/network/d;->m:Ljava/lang/String;
 
+    .line 2
+    .line 3
     return-object v0
 .end method
 
@@ -558,24 +577,33 @@
 .method public f()Lcom/applovin/impl/vi$a;
     .locals 1
 
+    .line 1
     iget-object v0, p0, Lcom/applovin/impl/sdk/network/d;->h:Lcom/applovin/impl/vi$a;
 
+    .line 2
+    .line 3
     return-object v0
 .end method
 
 .method public g()Ljava/util/Map;
     .locals 1
 
+    .line 1
     iget-object v0, p0, Lcom/applovin/impl/sdk/network/d;->f:Ljava/util/Map;
 
+    .line 2
+    .line 3
     return-object v0
 .end method
 
 .method public h()Ljava/lang/String;
     .locals 1
 
+    .line 1
     iget-object v0, p0, Lcom/applovin/impl/sdk/network/d;->b:Ljava/lang/String;
 
+    .line 2
+    .line 3
     return-object v0
 .end method
 
@@ -601,68 +629,96 @@
 .method public i()Ljava/util/Map;
     .locals 1
 
+    .line 1
     iget-object v0, p0, Lcom/applovin/impl/sdk/network/d;->e:Ljava/util/Map;
 
+    .line 2
+    .line 3
     return-object v0
 .end method
 
 .method public j()Ljava/util/Map;
     .locals 1
 
+    .line 1
     iget-object v0, p0, Lcom/applovin/impl/sdk/network/d;->g:Ljava/util/Map;
 
+    .line 2
+    .line 3
     return-object v0
 .end method
 
 .method public k()Ljava/lang/String;
     .locals 1
 
+    .line 1
     iget-object v0, p0, Lcom/applovin/impl/sdk/network/d;->c:Ljava/lang/String;
 
+    .line 2
+    .line 3
     return-object v0
 .end method
 
 .method public l()V
     .locals 1
 
+    .line 1
     iget v0, p0, Lcom/applovin/impl/sdk/network/d;->n:I
 
+    .line 2
+    .line 3
     add-int/lit8 v0, v0, 0x1
 
+    .line 4
+    .line 5
     iput v0, p0, Lcom/applovin/impl/sdk/network/d;->n:I
 
+    .line 6
+    .line 7
     return-void
 .end method
 
 .method public m()Z
     .locals 1
 
+    .line 1
     iget-boolean v0, p0, Lcom/applovin/impl/sdk/network/d;->k:Z
 
+    .line 2
+    .line 3
     return v0
 .end method
 
 .method public n()Z
     .locals 1
 
+    .line 1
     iget-boolean v0, p0, Lcom/applovin/impl/sdk/network/d;->i:Z
 
+    .line 2
+    .line 3
     return v0
 .end method
 
 .method public o()Z
     .locals 1
 
+    .line 1
     iget-boolean v0, p0, Lcom/applovin/impl/sdk/network/d;->j:Z
 
+    .line 2
+    .line 3
     return v0
 .end method
 
 .method public p()Z
     .locals 1
 
+    .line 1
     iget-boolean v0, p0, Lcom/applovin/impl/sdk/network/d;->l:Z
 
+    .line 2
+    .line 3
     return v0
 .end method
 
@@ -1092,7 +1148,7 @@
 
     .line 101
     .line 102
-    invoke-static {v0, v1, v2}, Landroid/support/v4/media/session/a;->J(Ljava/lang/StringBuilder;ZC)Ljava/lang/String;
+    invoke-static {v0, v1, v2}, Landroidx/appcompat/view/menu/F;->I(Ljava/lang/StringBuilder;ZC)Ljava/lang/String;
 
     .line 103
     .line 104

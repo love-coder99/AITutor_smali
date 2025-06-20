@@ -43,6 +43,10 @@
 
     invoke-direct {v1, v0, v2}, Lcom/applovin/impl/q5;-><init>(ZI)V
 
+    const/4 v8, 0x0
+
+    const/4 v9, 0x0
+
     const v2, 0xc350
 
     const v3, 0xc350
@@ -54,10 +58,6 @@
     const/4 v6, -0x1
 
     const/4 v7, 0x0
-
-    const/4 v8, 0x0
-
-    const/4 v9, 0x0
 
     move-object v0, p0
 
@@ -74,41 +74,42 @@
 
     const/4 v0, 0x0
 
+    .line 3
     const-string v1, "bufferForPlaybackMs"
 
     const-string v2, "0"
 
-    .line 3
     invoke-static {p4, v0, v1, v2}, Lcom/applovin/impl/e6;->a(IILjava/lang/String;Ljava/lang/String;)V
 
+    .line 4
     const-string v3, "bufferForPlaybackAfterRebufferMs"
 
-    .line 4
     invoke-static {p5, v0, v3, v2}, Lcom/applovin/impl/e6;->a(IILjava/lang/String;Ljava/lang/String;)V
 
+    .line 5
     const-string v4, "minBufferMs"
 
-    .line 5
     invoke-static {p2, p4, v4, v1}, Lcom/applovin/impl/e6;->a(IILjava/lang/String;Ljava/lang/String;)V
 
     .line 6
     invoke-static {p2, p5, v4, v3}, Lcom/applovin/impl/e6;->a(IILjava/lang/String;Ljava/lang/String;)V
 
+    .line 7
     const-string v1, "maxBufferMs"
 
-    .line 7
     invoke-static {p3, p2, v1, v4}, Lcom/applovin/impl/e6;->a(IILjava/lang/String;Ljava/lang/String;)V
 
+    .line 8
     const-string v1, "backBufferDurationMs"
 
-    .line 8
     invoke-static {p8, v0, v1, v2}, Lcom/applovin/impl/e6;->a(IILjava/lang/String;Ljava/lang/String;)V
 
+    .line 9
     iput-object p1, p0, Lcom/applovin/impl/e6;->a:Lcom/applovin/impl/q5;
 
     int-to-long p1, p2
 
-    .line 9
+    .line 10
     invoke-static {p1, p2}, Lcom/applovin/impl/t2;->a(J)J
 
     move-result-wide p1
@@ -117,7 +118,7 @@
 
     int-to-long p1, p3
 
-    .line 10
+    .line 11
     invoke-static {p1, p2}, Lcom/applovin/impl/t2;->a(J)J
 
     move-result-wide p1
@@ -126,7 +127,7 @@
 
     int-to-long p1, p4
 
-    .line 11
+    .line 12
     invoke-static {p1, p2}, Lcom/applovin/impl/t2;->a(J)J
 
     move-result-wide p1
@@ -135,13 +136,14 @@
 
     int-to-long p1, p5
 
-    .line 12
+    .line 13
     invoke-static {p1, p2}, Lcom/applovin/impl/t2;->a(J)J
 
     move-result-wide p1
 
     iput-wide p1, p0, Lcom/applovin/impl/e6;->e:J
 
+    .line 14
     iput p6, p0, Lcom/applovin/impl/e6;->f:I
 
     const/4 p1, -0x1
@@ -153,20 +155,23 @@
     :cond_0
     const/high16 p6, 0xc80000
 
+    .line 15
     :goto_0
     iput p6, p0, Lcom/applovin/impl/e6;->j:I
 
+    .line 16
     iput-boolean p7, p0, Lcom/applovin/impl/e6;->g:Z
 
     int-to-long p1, p8
 
-    .line 13
+    .line 17
     invoke-static {p1, p2}, Lcom/applovin/impl/t2;->a(J)J
 
     move-result-wide p1
 
     iput-wide p1, p0, Lcom/applovin/impl/e6;->h:J
 
+    .line 18
     iput-boolean p9, p0, Lcom/applovin/impl/e6;->i:Z
 
     return-void
@@ -179,7 +184,7 @@
 
     packed-switch p0, :pswitch_data_0
 
-    .line 7
+    .line 6
     :pswitch_0
     new-instance p0, Ljava/lang/IllegalArgumentException;
 
@@ -238,7 +243,7 @@
     :cond_0
     const/4 p0, 0x0
 
-    .line 2
+    .line 1
     :goto_0
     new-instance p1, Ljava/lang/StringBuilder;
 
@@ -264,6 +269,7 @@
 .method private a(Z)V
     .locals 2
 
+    .line 11
     iget v0, p0, Lcom/applovin/impl/e6;->f:I
 
     const/4 v1, -0x1
@@ -272,18 +278,20 @@
 
     const/high16 v0, 0xc80000
 
+    .line 12
     :cond_0
     iput v0, p0, Lcom/applovin/impl/e6;->j:I
 
     const/4 v0, 0x0
 
+    .line 13
     iput-boolean v0, p0, Lcom/applovin/impl/e6;->k:Z
 
     if-eqz p1, :cond_1
 
+    .line 14
     iget-object p1, p0, Lcom/applovin/impl/e6;->a:Lcom/applovin/impl/q5;
 
-    .line 10
     invoke-virtual {p1}, Lcom/applovin/impl/q5;->e()V
 
     :cond_1
@@ -299,18 +307,18 @@
 
     const/4 v1, 0x0
 
-    .line 3
+    .line 2
     :goto_0
     array-length v2, p1
 
     if-ge v0, v2, :cond_1
 
-    .line 4
+    .line 3
     aget-object v2, p2, v0
 
     if-eqz v2, :cond_0
 
-    .line 5
+    .line 4
     aget-object v2, p1, v0
 
     invoke-interface {v2}, Lcom/applovin/impl/qi;->e()I
@@ -331,7 +339,7 @@
     :cond_1
     const/high16 p1, 0xc80000
 
-    .line 6
+    .line 5
     invoke-static {p1, v1}, Ljava/lang/Math;->max(II)I
 
     move-result p1
@@ -342,6 +350,7 @@
 .method public a([Lcom/applovin/impl/qi;Lcom/applovin/impl/po;[Lcom/applovin/impl/g8;)V
     .locals 1
 
+    .line 7
     iget p2, p0, Lcom/applovin/impl/e6;->f:I
 
     const/4 v0, -0x1
@@ -353,12 +362,13 @@
 
     move-result p2
 
+    .line 9
     :cond_0
     iput p2, p0, Lcom/applovin/impl/e6;->j:I
 
+    .line 10
     iget-object p1, p0, Lcom/applovin/impl/e6;->a:Lcom/applovin/impl/q5;
 
-    .line 9
     invoke-virtual {p1, p2}, Lcom/applovin/impl/q5;->a(I)V
 
     return-void
@@ -367,7 +377,7 @@
 .method public a()Z
     .locals 1
 
-    .line 1
+    .line 15
     iget-boolean v0, p0, Lcom/applovin/impl/e6;->i:Z
 
     return v0
@@ -376,13 +386,14 @@
 .method public a(JFZJ)Z
     .locals 3
 
-    .line 16
+    .line 26
     invoke-static {p1, p2, p3}, Lcom/applovin/impl/xp;->b(JF)J
 
     move-result-wide p1
 
     if-eqz p4, :cond_0
 
+    .line 27
     iget-wide p3, p0, Lcom/applovin/impl/e6;->e:J
 
     goto :goto_0
@@ -399,7 +410,7 @@
 
     const-wide/16 v0, 0x2
 
-    .line 17
+    .line 28
     div-long/2addr p5, v0
 
     invoke-static {p5, p6, p3, p4}, Ljava/lang/Math;->min(JJ)J
@@ -417,13 +428,14 @@
 
     if-gez p5, :cond_3
 
+    .line 29
     iget-boolean p1, p0, Lcom/applovin/impl/e6;->g:Z
 
     if-nez p1, :cond_2
 
     iget-object p1, p0, Lcom/applovin/impl/e6;->a:Lcom/applovin/impl/q5;
 
-    .line 18
+    .line 30
     invoke-virtual {p1}, Lcom/applovin/impl/q5;->d()I
 
     move-result p1
@@ -450,9 +462,9 @@
 .method public a(JJF)Z
     .locals 6
 
+    .line 16
     iget-object p1, p0, Lcom/applovin/impl/e6;->a:Lcom/applovin/impl/q5;
 
-    .line 11
     invoke-virtual {p1}, Lcom/applovin/impl/q5;->d()I
 
     move-result p1
@@ -472,6 +484,7 @@
     :cond_0
     const/4 p1, 0x0
 
+    .line 17
     :goto_0
     iget-wide v2, p0, Lcom/applovin/impl/e6;->b:J
 
@@ -481,14 +494,14 @@
 
     if-lez p2, :cond_1
 
-    .line 12
+    .line 18
     invoke-static {v2, v3, p5}, Lcom/applovin/impl/xp;->a(JF)J
 
     move-result-wide v2
 
+    .line 19
     iget-wide v4, p0, Lcom/applovin/impl/e6;->c:J
 
-    .line 13
     invoke-static {v2, v3, v4, v5}, Ljava/lang/Math;->min(JJ)J
 
     move-result-wide v2
@@ -496,7 +509,7 @@
     :cond_1
     const-wide/32 v4, 0x7a120
 
-    .line 14
+    .line 20
     invoke-static {v2, v3, v4, v5}, Ljava/lang/Math;->max(JJ)J
 
     move-result-wide v2
@@ -505,6 +518,7 @@
 
     if-gez p2, :cond_4
 
+    .line 21
     iget-boolean p2, p0, Lcom/applovin/impl/e6;->g:Z
 
     if-nez p2, :cond_3
@@ -526,15 +540,16 @@
 
     if-gez p1, :cond_6
 
+    .line 22
     const-string p1, "DefaultLoadControl"
 
     const-string p2, "Target buffer size reached with less than 500ms of buffered media data."
 
-    .line 15
     invoke-static {p1, p2}, Lcom/applovin/impl/oc;->d(Ljava/lang/String;Ljava/lang/String;)V
 
     goto :goto_2
 
+    .line 23
     :cond_4
     iget-wide v2, p0, Lcom/applovin/impl/e6;->c:J
 
@@ -544,9 +559,11 @@
 
     if-eqz p1, :cond_6
 
+    .line 24
     :cond_5
     iput-boolean v1, p0, Lcom/applovin/impl/e6;->k:Z
 
+    .line 25
     :cond_6
     :goto_2
     iget-boolean p1, p0, Lcom/applovin/impl/e6;->k:Z
@@ -557,8 +574,11 @@
 .method public b()Lcom/applovin/impl/n0;
     .locals 1
 
+    .line 1
     iget-object v0, p0, Lcom/applovin/impl/e6;->a:Lcom/applovin/impl/q5;
 
+    .line 2
+    .line 3
     return-object v0
 .end method
 
@@ -580,8 +600,11 @@
 .method public d()J
     .locals 2
 
+    .line 1
     iget-wide v0, p0, Lcom/applovin/impl/e6;->h:J
 
+    .line 2
+    .line 3
     return-wide v0
 .end method
 

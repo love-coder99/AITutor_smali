@@ -3,14 +3,14 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lzh/c;
+.implements Lka/c;
 
 
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "Lkotlin/jvm/internal/Lambda;",
-        "Lzh/c;"
+        "Lka/c;"
     }
 .end annotation
 
@@ -36,14 +36,14 @@
 
 
 # instance fields
-.field final synthetic this$0:Landroidx/compose/ui/graphics/colorspace/q;
+.field final synthetic this$0:Landroidx/compose/ui/graphics/colorspace/p;
 
 
 # direct methods
-.method public constructor <init>(Landroidx/compose/ui/graphics/colorspace/q;)V
+.method public constructor <init>(Landroidx/compose/ui/graphics/colorspace/p;)V
     .locals 0
 
-    iput-object p1, p0, Landroidx/compose/ui/graphics/colorspace/Rgb$oetf$1;->this$0:Landroidx/compose/ui/graphics/colorspace/q;
+    iput-object p1, p0, Landroidx/compose/ui/graphics/colorspace/Rgb$oetf$1;->this$0:Landroidx/compose/ui/graphics/colorspace/p;
 
     const/4 p1, 0x1
 
@@ -57,30 +57,31 @@
 .method public final invoke(D)Ljava/lang/Double;
     .locals 7
 
-    iget-object v0, p0, Landroidx/compose/ui/graphics/colorspace/Rgb$oetf$1;->this$0:Landroidx/compose/ui/graphics/colorspace/q;
-
-    .line 1
-    iget-object v0, v0, Landroidx/compose/ui/graphics/colorspace/q;->k:Landroidx/compose/ui/graphics/colorspace/j;
-
     .line 2
-    invoke-interface {v0, p1, p2}, Landroidx/compose/ui/graphics/colorspace/j;->a(D)D
+    iget-object v0, p0, Landroidx/compose/ui/graphics/colorspace/Rgb$oetf$1;->this$0:Landroidx/compose/ui/graphics/colorspace/p;
+
+    .line 3
+    iget-object v0, v0, Landroidx/compose/ui/graphics/colorspace/p;->k:Landroidx/compose/ui/graphics/colorspace/i;
+
+    .line 4
+    invoke-interface {v0, p1, p2}, Landroidx/compose/ui/graphics/colorspace/i;->f(D)D
 
     move-result-wide v1
 
-    iget-object p1, p0, Landroidx/compose/ui/graphics/colorspace/Rgb$oetf$1;->this$0:Landroidx/compose/ui/graphics/colorspace/q;
+    iget-object p1, p0, Landroidx/compose/ui/graphics/colorspace/Rgb$oetf$1;->this$0:Landroidx/compose/ui/graphics/colorspace/p;
 
-    .line 3
-    iget p2, p1, Landroidx/compose/ui/graphics/colorspace/q;->e:F
+    .line 5
+    iget p2, p1, Landroidx/compose/ui/graphics/colorspace/p;->e:F
 
     float-to-double v3, p2
 
-    .line 4
-    iget p1, p1, Landroidx/compose/ui/graphics/colorspace/q;->f:F
+    .line 6
+    iget p1, p1, Landroidx/compose/ui/graphics/colorspace/p;->f:F
 
     float-to-double v5, p1
 
-    .line 5
-    invoke-static/range {v1 .. v6}, Lma/a;->o(DDD)D
+    .line 7
+    invoke-static/range {v1 .. v6}, Landroid/support/v4/media/session/a;->h(DDD)D
 
     move-result-wide p1
 
@@ -94,7 +95,7 @@
 .method public bridge synthetic invoke(Ljava/lang/Object;)Ljava/lang/Object;
     .locals 2
 
-    .line 6
+    .line 1
     check-cast p1, Ljava/lang/Number;
 
     invoke-virtual {p1}, Ljava/lang/Number;->doubleValue()D

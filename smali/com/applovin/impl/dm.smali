@@ -835,7 +835,7 @@
 
     .line 286
     .line 287
-    invoke-static {v4, v2, v1, v3}, Landroidx/compose/foundation/text/modifiers/f;->A(Ljava/lang/String;Ljava/lang/String;Lcom/applovin/impl/sdk/n;Ljava/lang/String;)V
+    invoke-static {v4, v2, v1, v3}, Lcom/android/billingclient/api/a;->w(Ljava/lang/String;Ljava/lang/String;Lcom/applovin/impl/sdk/n;Ljava/lang/String;)V
 
     .line 288
     .line 289
@@ -2356,7 +2356,7 @@
 
     .line 307
     .line 308
-    invoke-static {v4, v2, v1, v3}, Landroidx/compose/foundation/text/modifiers/f;->A(Ljava/lang/String;Ljava/lang/String;Lcom/applovin/impl/sdk/n;Ljava/lang/String;)V
+    invoke-static {v4, v2, v1, v3}, Lcom/android/billingclient/api/a;->w(Ljava/lang/String;Ljava/lang/String;Lcom/applovin/impl/sdk/n;Ljava/lang/String;)V
 
     .line 309
     .line 310
@@ -2446,9 +2446,9 @@
 .method public a(I)V
     .locals 1
 
+    .line 2
     iget-object v0, p0, Lcom/applovin/impl/dm;->r:Lcom/applovin/impl/aq;
 
-    .line 2
     invoke-virtual {v0}, Lcom/applovin/impl/aq;->getAdEventTracker()Lcom/applovin/impl/rg;
 
     move-result-object v0

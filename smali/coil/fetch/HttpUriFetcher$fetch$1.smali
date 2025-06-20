@@ -4,6 +4,16 @@
 
 
 # annotations
+.annotation runtime Lca/c;
+    c = "coil.fetch.HttpUriFetcher"
+    f = "HttpUriFetcher.kt"
+    l = {
+        0x4d,
+        0x6a
+    }
+    m = "fetch"
+.end annotation
+
 .annotation runtime Lkotlin/Metadata;
     k = 0x3
     mv = {
@@ -12,16 +22,6 @@
         0x0
     }
     xi = 0x30
-.end annotation
-
-.annotation runtime Lth/c;
-    c = "coil.fetch.HttpUriFetcher"
-    f = "HttpUriFetcher.kt"
-    l = {
-        0x4d,
-        0x6a
-    }
-    m = "fetch"
 .end annotation
 
 

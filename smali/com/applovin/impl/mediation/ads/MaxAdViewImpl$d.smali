@@ -22,11 +22,11 @@
 .method private constructor <init>(Lcom/applovin/impl/mediation/ads/MaxAdViewImpl;)V
     .locals 1
 
+    .line 1
     iput-object p1, p0, Lcom/applovin/impl/mediation/ads/MaxAdViewImpl$d;->c:Lcom/applovin/impl/mediation/ads/MaxAdViewImpl;
 
     const/4 v0, 0x0
 
-    .line 1
     invoke-direct {p0, p1, v0}, Lcom/applovin/impl/mediation/ads/MaxAdViewImpl$c;-><init>(Lcom/applovin/impl/mediation/ads/MaxAdViewImpl;Lcom/applovin/impl/mediation/ads/MaxAdViewImpl$a;)V
 
     return-void

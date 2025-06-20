@@ -3,14 +3,14 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lzh/c;
+.implements Lka/c;
 
 
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "Lkotlin/jvm/internal/Lambda;",
-        "Lzh/c;"
+        "Lka/c;"
     }
 .end annotation
 
@@ -22,7 +22,7 @@
         "T",
         "",
         "it",
-        "Lqh/r;",
+        "LX9/j;",
         "invoke",
         "(Ljava/lang/Object;)V",
         "<anonymous>"
@@ -37,45 +37,45 @@
 
 
 # instance fields
-.field final synthetic $calculationLevelRef:Landroidx/compose/runtime/internal/d;
+.field final synthetic $calculationLevelRef:Landroidx/compose/runtime/internal/c;
 
 .field final synthetic $nestedCalculationLevel:I
 
-.field final synthetic $newDependencies:Landroidx/collection/y;
+.field final synthetic $newDependencies:Landroidx/collection/x;
     .annotation system Ldalvik/annotation/Signature;
         value = {
-            "Landroidx/collection/y;"
+            "Landroidx/collection/x;"
         }
     .end annotation
 .end field
 
-.field final synthetic this$0:Landroidx/compose/runtime/k0;
+.field final synthetic this$0:Landroidx/compose/runtime/E;
     .annotation system Ldalvik/annotation/Signature;
         value = {
-            "Landroidx/compose/runtime/k0;"
+            "Landroidx/compose/runtime/E;"
         }
     .end annotation
 .end field
 
 
 # direct methods
-.method public constructor <init>(Landroidx/compose/runtime/k0;Landroidx/compose/runtime/internal/d;Landroidx/collection/y;I)V
+.method public constructor <init>(Landroidx/compose/runtime/E;Landroidx/compose/runtime/internal/c;Landroidx/collection/x;I)V
     .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
-            "Landroidx/compose/runtime/k0;",
-            "Landroidx/compose/runtime/internal/d;",
-            "Landroidx/collection/y;",
+            "Landroidx/compose/runtime/E;",
+            "Landroidx/compose/runtime/internal/c;",
+            "Landroidx/collection/x;",
             "I)V"
         }
     .end annotation
 
-    iput-object p1, p0, Landroidx/compose/runtime/DerivedSnapshotState$currentRecord$result$1$1$result$1;->this$0:Landroidx/compose/runtime/k0;
+    iput-object p1, p0, Landroidx/compose/runtime/DerivedSnapshotState$currentRecord$result$1$1$result$1;->this$0:Landroidx/compose/runtime/E;
 
-    iput-object p2, p0, Landroidx/compose/runtime/DerivedSnapshotState$currentRecord$result$1$1$result$1;->$calculationLevelRef:Landroidx/compose/runtime/internal/d;
+    iput-object p2, p0, Landroidx/compose/runtime/DerivedSnapshotState$currentRecord$result$1$1$result$1;->$calculationLevelRef:Landroidx/compose/runtime/internal/c;
 
-    iput-object p3, p0, Landroidx/compose/runtime/DerivedSnapshotState$currentRecord$result$1$1$result$1;->$newDependencies:Landroidx/collection/y;
+    iput-object p3, p0, Landroidx/compose/runtime/DerivedSnapshotState$currentRecord$result$1$1$result$1;->$newDependencies:Landroidx/collection/x;
 
     iput p4, p0, Landroidx/compose/runtime/DerivedSnapshotState$currentRecord$result$1$1$result$1;->$nestedCalculationLevel:I
 
@@ -94,7 +94,7 @@
     .line 1
     invoke-virtual {p0, p1}, Landroidx/compose/runtime/DerivedSnapshotState$currentRecord$result$1$1$result$1;->invoke(Ljava/lang/Object;)V
 
-    sget-object p1, Lqh/r;->a:Lqh/r;
+    sget-object p1, LX9/j;->a:LX9/j;
 
     return-object p1
 .end method
@@ -102,35 +102,39 @@
 .method public final invoke(Ljava/lang/Object;)V
     .locals 4
 
-    iget-object v0, p0, Landroidx/compose/runtime/DerivedSnapshotState$currentRecord$result$1$1$result$1;->this$0:Landroidx/compose/runtime/k0;
+    .line 2
+    iget-object v0, p0, Landroidx/compose/runtime/DerivedSnapshotState$currentRecord$result$1$1$result$1;->this$0:Landroidx/compose/runtime/E;
 
     if-eq p1, v0, :cond_2
 
-    .line 2
-    instance-of v0, p1, Landroidx/compose/runtime/snapshots/v;
+    .line 3
+    instance-of v0, p1, Landroidx/compose/runtime/snapshots/r;
 
     if-eqz v0, :cond_1
 
-    iget-object v0, p0, Landroidx/compose/runtime/DerivedSnapshotState$currentRecord$result$1$1$result$1;->$calculationLevelRef:Landroidx/compose/runtime/internal/d;
+    .line 4
+    iget-object v0, p0, Landroidx/compose/runtime/DerivedSnapshotState$currentRecord$result$1$1$result$1;->$calculationLevelRef:Landroidx/compose/runtime/internal/c;
 
-    .line 3
-    iget v0, v0, Landroidx/compose/runtime/internal/d;->a:I
+    .line 5
+    iget v0, v0, Landroidx/compose/runtime/internal/c;->a:I
 
-    iget-object v1, p0, Landroidx/compose/runtime/DerivedSnapshotState$currentRecord$result$1$1$result$1;->$newDependencies:Landroidx/collection/y;
+    .line 6
+    iget-object v1, p0, Landroidx/compose/runtime/DerivedSnapshotState$currentRecord$result$1$1$result$1;->$newDependencies:Landroidx/collection/x;
 
+    .line 7
     iget v2, p0, Landroidx/compose/runtime/DerivedSnapshotState$currentRecord$result$1$1$result$1;->$nestedCalculationLevel:I
 
     sub-int/2addr v0, v2
 
-    .line 4
-    invoke-virtual {v1, p1}, Landroidx/collection/y;->d(Ljava/lang/Object;)I
+    .line 8
+    invoke-virtual {v1, p1}, Landroidx/collection/x;->c(Ljava/lang/Object;)I
 
     move-result v2
 
     if-ltz v2, :cond_0
 
-    .line 5
-    iget-object v3, v1, Landroidx/collection/y;->c:[I
+    .line 9
+    iget-object v3, v1, Landroidx/collection/x;->c:[I
 
     aget v2, v3, v2
 
@@ -139,28 +143,24 @@
     :cond_0
     const v2, 0x7fffffff
 
-    .line 6
+    .line 10
     :goto_0
     invoke-static {v0, v2}, Ljava/lang/Math;->min(II)I
 
     move-result v0
 
-    .line 7
-    invoke-virtual {v1, v0, p1}, Landroidx/collection/y;->h(ILjava/lang/Object;)V
+    .line 11
+    invoke-virtual {v1, v0, p1}, Landroidx/collection/x;->f(ILjava/lang/Object;)V
 
     :cond_1
     return-void
 
-    .line 8
+    .line 12
     :cond_2
     new-instance p1, Ljava/lang/IllegalStateException;
 
+    .line 13
     const-string v0, "A derived state calculation cannot read itself"
-
-    .line 9
-    invoke-virtual {v0}, Ljava/lang/Object;->toString()Ljava/lang/String;
-
-    move-result-object v0
 
     invoke-direct {p1, v0}, Ljava/lang/IllegalStateException;-><init>(Ljava/lang/String;)V
 

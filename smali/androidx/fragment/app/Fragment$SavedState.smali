@@ -19,6 +19,9 @@
 
 # static fields
 .field public static final CREATOR:Landroid/os/Parcelable$Creator;
+    .annotation build Landroidx/annotation/NonNull;
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Landroid/os/Parcelable$Creator<",
@@ -38,7 +41,7 @@
     .locals 1
 
     .line 1
-    new-instance v0, Landroidx/fragment/app/z;
+    new-instance v0, Landroidx/fragment/app/B;
 
     .line 2
     .line 3

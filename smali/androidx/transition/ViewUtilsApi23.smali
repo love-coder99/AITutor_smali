@@ -32,6 +32,10 @@
 # virtual methods
 .method public setTransitionVisibility(Landroid/view/View;I)V
     .locals 2
+    .param p1    # Landroid/view/View;
+        .annotation build Landroidx/annotation/NonNull;
+        .end annotation
+    .end param
 
     .line 1
     sget v0, Landroid/os/Build$VERSION;->SDK_INT:I

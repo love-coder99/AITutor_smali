@@ -3,25 +3,35 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lzh/e;
+.implements Lka/e;
 
 
 # annotations
+.annotation runtime Lca/c;
+    c = "androidx.activity.compose.OnBackInstance$job$1"
+    f = "PredictiveBackHandler.kt"
+    l = {
+        0x79
+    }
+    m = "invokeSuspend"
+.end annotation
+
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "Lkotlin/coroutines/jvm/internal/SuspendLambda;",
-        "Lzh/e;"
+        "Lka/e;"
     }
 .end annotation
 
 .annotation runtime Lkotlin/Metadata;
     d1 = {
-        "\u0000\n\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\u0010\u0002\u001a\u00020\u0001*\u00020\u0000H\u008a@"
+        "\u0000\u000c\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0008\u0002\u0010\u0002\u001a\u00020\u0001*\u00020\u0000H\u008a@\u00a2\u0006\u0004\u0008\u0002\u0010\u0003"
     }
     d2 = {
-        "Lkotlinx/coroutines/w;",
-        "Lqh/r;",
-        "<anonymous>"
+        "Lkotlinx/coroutines/u;",
+        "LX9/j;",
+        "<anonymous>",
+        "(Lkotlinx/coroutines/u;)V"
     }
     k = 0x3
     mv = {
@@ -31,23 +41,14 @@
     }
 .end annotation
 
-.annotation runtime Lth/c;
-    c = "androidx.activity.compose.OnBackInstance$job$1"
-    f = "PredictiveBackHandler.kt"
-    l = {
-        0x79
-    }
-    m = "invokeSuspend"
-.end annotation
-
 
 # instance fields
-.field final synthetic $callback:Landroidx/activity/i0;
+.field final synthetic $callback:Landroidx/activity/C;
 
-.field final synthetic $onBack:Lzh/e;
+.field final synthetic $onBack:Lka/e;
     .annotation system Ldalvik/annotation/Signature;
         value = {
-            "Lzh/e;"
+            "Lka/e;"
         }
     .end annotation
 .end field
@@ -60,13 +61,13 @@
 
 
 # direct methods
-.method public constructor <init>(Landroidx/activity/i0;Lzh/e;Landroidx/activity/compose/j;Lkotlin/coroutines/Continuation;)V
+.method public constructor <init>(Landroidx/activity/C;Lka/e;Landroidx/activity/compose/j;Lkotlin/coroutines/Continuation;)V
     .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
-            "Landroidx/activity/i0;",
-            "Lzh/e;",
+            "Landroidx/activity/C;",
+            "Lka/e;",
             "Landroidx/activity/compose/j;",
             "Lkotlin/coroutines/Continuation<",
             "-",
@@ -76,16 +77,26 @@
     .end annotation
 
     .line 1
-    iput-object p1, p0, Landroidx/activity/compose/OnBackInstance$job$1;->$callback:Landroidx/activity/i0;
+    iput-object p1, p0, Landroidx/activity/compose/OnBackInstance$job$1;->$callback:Landroidx/activity/C;
 
-    iput-object p2, p0, Landroidx/activity/compose/OnBackInstance$job$1;->$onBack:Lzh/e;
+    .line 2
+    .line 3
+    iput-object p2, p0, Landroidx/activity/compose/OnBackInstance$job$1;->$onBack:Lka/e;
 
+    .line 4
+    .line 5
     iput-object p3, p0, Landroidx/activity/compose/OnBackInstance$job$1;->this$0:Landroidx/activity/compose/j;
 
+    .line 6
+    .line 7
     const/4 p1, 0x2
 
+    .line 8
     invoke-direct {p0, p1, p4}, Lkotlin/coroutines/jvm/internal/SuspendLambda;-><init>(ILkotlin/coroutines/Continuation;)V
 
+    .line 9
+    .line 10
+    .line 11
     return-void
 .end method
 
@@ -100,20 +111,20 @@
             "Lkotlin/coroutines/Continuation<",
             "*>;)",
             "Lkotlin/coroutines/Continuation<",
-            "Lqh/r;",
+            "LX9/j;",
             ">;"
         }
     .end annotation
 
     new-instance p1, Landroidx/activity/compose/OnBackInstance$job$1;
 
-    iget-object v0, p0, Landroidx/activity/compose/OnBackInstance$job$1;->$callback:Landroidx/activity/i0;
+    iget-object v0, p0, Landroidx/activity/compose/OnBackInstance$job$1;->$callback:Landroidx/activity/C;
 
-    iget-object v1, p0, Landroidx/activity/compose/OnBackInstance$job$1;->$onBack:Lzh/e;
+    iget-object v1, p0, Landroidx/activity/compose/OnBackInstance$job$1;->$onBack:Lka/e;
 
     iget-object v2, p0, Landroidx/activity/compose/OnBackInstance$job$1;->this$0:Landroidx/activity/compose/j;
 
-    invoke-direct {p1, v0, v1, v2, p2}, Landroidx/activity/compose/OnBackInstance$job$1;-><init>(Landroidx/activity/i0;Lzh/e;Landroidx/activity/compose/j;Lkotlin/coroutines/Continuation;)V
+    invoke-direct {p1, v0, v1, v2, p2}, Landroidx/activity/compose/OnBackInstance$job$1;-><init>(Landroidx/activity/C;Lka/e;Landroidx/activity/compose/j;Lkotlin/coroutines/Continuation;)V
 
     return-object p1
 .end method
@@ -122,26 +133,26 @@
     .locals 0
 
     .line 1
-    check-cast p1, Lkotlinx/coroutines/w;
+    check-cast p1, Lkotlinx/coroutines/u;
 
     check-cast p2, Lkotlin/coroutines/Continuation;
 
-    invoke-virtual {p0, p1, p2}, Landroidx/activity/compose/OnBackInstance$job$1;->invoke(Lkotlinx/coroutines/w;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
+    invoke-virtual {p0, p1, p2}, Landroidx/activity/compose/OnBackInstance$job$1;->invoke(Lkotlinx/coroutines/u;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
 
     move-result-object p1
 
     return-object p1
 .end method
 
-.method public final invoke(Lkotlinx/coroutines/w;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
+.method public final invoke(Lkotlinx/coroutines/u;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
     .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
-            "Lkotlinx/coroutines/w;",
+            "Lkotlinx/coroutines/u;",
             "Lkotlin/coroutines/Continuation<",
             "-",
-            "Lqh/r;",
+            "LX9/j;",
             ">;)",
             "Ljava/lang/Object;"
         }
@@ -154,7 +165,7 @@
 
     check-cast p1, Landroidx/activity/compose/OnBackInstance$job$1;
 
-    sget-object p2, Lqh/r;->a:Lqh/r;
+    sget-object p2, LX9/j;->a:LX9/j;
 
     invoke-virtual {p1, p2}, Landroidx/activity/compose/OnBackInstance$job$1;->invokeSuspend(Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -225,11 +236,11 @@
     .line 27
     .line 28
     .line 29
-    iget-object p1, p0, Landroidx/activity/compose/OnBackInstance$job$1;->$callback:Landroidx/activity/i0;
+    iget-object p1, p0, Landroidx/activity/compose/OnBackInstance$job$1;->$callback:Landroidx/activity/C;
 
     .line 30
     .line 31
-    iget-boolean p1, p1, Landroidx/activity/i0;->a:Z
+    iget-boolean p1, p1, Landroidx/activity/C;->a:Z
 
     .line 32
     .line 33
@@ -246,7 +257,7 @@
     .line 38
     .line 39
     .line 40
-    iget-object v1, p0, Landroidx/activity/compose/OnBackInstance$job$1;->$onBack:Lzh/e;
+    iget-object v1, p0, Landroidx/activity/compose/OnBackInstance$job$1;->$onBack:Lka/e;
 
     .line 41
     .line 42
@@ -258,7 +269,7 @@
 
     .line 45
     .line 46
-    invoke-static {v3}, Lkotlinx/coroutines/flow/j;->k(Lkotlinx/coroutines/channels/e;)Lkotlinx/coroutines/flow/c;
+    invoke-static {v3}, Lkotlinx/coroutines/flow/h;->j(Lkotlinx/coroutines/channels/o;)Lkotlinx/coroutines/flow/c;
 
     .line 47
     .line 48
@@ -278,11 +289,11 @@
     .line 54
     .line 55
     .line 56
-    new-instance v5, Lkotlinx/coroutines/flow/m;
+    new-instance v5, Lkotlinx/coroutines/flow/k;
 
     .line 57
     .line 58
-    invoke-direct {v5, v3, v4}, Lkotlinx/coroutines/flow/m;-><init>(Lkotlinx/coroutines/flow/h;Lzh/f;)V
+    invoke-direct {v5, v3, v4}, Lkotlinx/coroutines/flow/k;-><init>(Lkotlinx/coroutines/flow/f;Lka/f;)V
 
     .line 59
     .line 60
@@ -295,7 +306,7 @@
 
     .line 64
     .line 65
-    invoke-interface {v1, v5, p0}, Lzh/e;->invoke(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-interface {v1, v5, p0}, Lka/e;->invoke(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 66
     .line 67
@@ -335,27 +346,19 @@
 
     .line 81
     .line 82
-    invoke-virtual {v0}, Ljava/lang/Object;->toString()Ljava/lang/String;
+    invoke-direct {p1, v0}, Ljava/lang/IllegalStateException;-><init>(Ljava/lang/String;)V
 
     .line 83
     .line 84
     .line 85
-    move-result-object v0
+    throw p1
 
     .line 86
-    invoke-direct {p1, v0}, Ljava/lang/IllegalStateException;-><init>(Ljava/lang/String;)V
+    :cond_4
+    :goto_1
+    sget-object p1, LX9/j;->a:LX9/j;
 
     .line 87
     .line 88
-    .line 89
-    throw p1
-
-    .line 90
-    :cond_4
-    :goto_1
-    sget-object p1, Lqh/r;->a:Lqh/r;
-
-    .line 91
-    .line 92
     return-object p1
 .end method

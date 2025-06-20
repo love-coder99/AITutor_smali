@@ -25,9 +25,9 @@
 .method private constructor <init>(Lcom/applovin/impl/w9;)V
     .locals 0
 
+    .line 1
     iput-object p1, p0, Lcom/applovin/impl/w9$b;->a:Lcom/applovin/impl/w9;
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void

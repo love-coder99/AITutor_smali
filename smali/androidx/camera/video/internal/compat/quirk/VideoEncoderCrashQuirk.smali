@@ -10,14 +10,18 @@
 .method public constructor <init>()V
     .locals 0
 
+    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
+    .line 2
+    .line 3
+    .line 4
     return-void
 .end method
 
 
 # virtual methods
-.method public final c(Landroidx/camera/core/impl/x;Lm0/j;)Z
+.method public final c(Landroidx/camera/core/impl/w;LR/e;)Z
     .locals 4
 
     .line 1
@@ -82,7 +86,7 @@
 
     .line 27
     .line 28
-    invoke-interface {p1}, Ly/t;->h()I
+    invoke-interface {p1}, Landroidx/camera/core/impl/w;->h()I
 
     .line 29
     .line 30
@@ -94,7 +98,7 @@
 
     .line 33
     .line 34
-    sget-object p1, Lm0/j;->a:Lm0/e;
+    sget-object p1, LR/e;->d:LR/e;
 
     .line 35
     .line 36

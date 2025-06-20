@@ -32,8 +32,10 @@
     .line 3
     invoke-direct {p0}, Lcom/applovin/impl/hb;-><init>()V
 
+    .line 4
     iput-object p1, p0, Lcom/applovin/impl/hk;->c:Ljava/lang/Object;
 
+    .line 5
     iput p2, p0, Lcom/applovin/impl/hk;->d:I
 
     return-void
@@ -109,17 +111,25 @@
 .method public g()Z
     .locals 1
 
+    .line 1
     iget v0, p0, Lcom/applovin/impl/hk;->d:I
 
+    .line 2
+    .line 3
     if-eqz v0, :cond_0
 
+    .line 4
+    .line 5
     const/4 v0, 0x1
 
+    .line 6
     goto :goto_0
 
+    .line 7
     :cond_0
     const/4 v0, 0x0
 
+    .line 8
     :goto_0
     return v0
 .end method
@@ -159,9 +169,9 @@
 .method public iterator()Lcom/applovin/impl/pp;
     .locals 1
 
+    .line 1
     iget-object v0, p0, Lcom/applovin/impl/hk;->c:Ljava/lang/Object;
 
-    .line 1
     invoke-static {v0}, Lcom/applovin/impl/wb;->a(Ljava/lang/Object;)Lcom/applovin/impl/pp;
 
     move-result-object v0

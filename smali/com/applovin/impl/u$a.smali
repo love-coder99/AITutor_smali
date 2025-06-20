@@ -42,15 +42,15 @@
     .locals 2
 
     .line 1
-    new-instance v0, Lcom/applovin/impl/vu;
+    new-instance v0, Lcom/applovin/impl/M1;
 
     .line 2
     .line 3
-    const/16 v1, 0x10
+    const/16 v1, 0x11
 
     .line 4
     .line 5
-    invoke-direct {v0, v1}, Lcom/applovin/impl/vu;-><init>(I)V
+    invoke-direct {v0, v1}, Lcom/applovin/impl/M1;-><init>(I)V
 
     .line 6
     .line 7
@@ -67,23 +67,23 @@
 
     const/4 v0, 0x0
 
+    .line 1
     new-array v5, v0, [I
 
     new-array v6, v0, [Landroid/net/Uri;
 
     new-array v7, v0, [J
 
-    const/4 v4, -0x1
-
     const-wide/16 v8, 0x0
 
     const/4 v10, 0x0
+
+    const/4 v4, -0x1
 
     move-object v1, p0
 
     move-wide v2, p1
 
-    .line 1
     invoke-direct/range {v1 .. v10}, Lcom/applovin/impl/u$a;-><init>(JI[I[Landroid/net/Uri;[JJZ)V
 
     return-void
@@ -112,18 +112,25 @@
     :goto_0
     invoke-static {v0}, Lcom/applovin/impl/b1;->a(Z)V
 
+    .line 4
     iput-wide p1, p0, Lcom/applovin/impl/u$a;->a:J
 
+    .line 5
     iput p3, p0, Lcom/applovin/impl/u$a;->b:I
 
+    .line 6
     iput-object p4, p0, Lcom/applovin/impl/u$a;->d:[I
 
+    .line 7
     iput-object p5, p0, Lcom/applovin/impl/u$a;->c:[Landroid/net/Uri;
 
+    .line 8
     iput-object p6, p0, Lcom/applovin/impl/u$a;->f:[J
 
+    .line 9
     iput-wide p7, p0, Lcom/applovin/impl/u$a;->g:J
 
+    .line 10
     iput-boolean p9, p0, Lcom/applovin/impl/u$a;->h:Z
 
     return-void
@@ -216,6 +223,7 @@
 
     if-nez v2, :cond_0
 
+    .line 17
     new-array v2, v0, [I
 
     :cond_0
@@ -223,6 +231,7 @@
 
     if-nez v1, :cond_1
 
+    .line 18
     new-array v1, v0, [Landroid/net/Uri;
 
     goto :goto_0
@@ -230,7 +239,6 @@
     :cond_1
     new-array v2, v0, [Landroid/net/Uri;
 
-    .line 17
     invoke-virtual {v1, v2}, Ljava/util/ArrayList;->toArray([Ljava/lang/Object;)[Ljava/lang/Object;
 
     move-result-object v1
@@ -240,6 +248,7 @@
     :goto_0
     if-nez v6, :cond_2
 
+    .line 19
     new-array v0, v0, [J
 
     move-object v8, v0
@@ -256,7 +265,6 @@
 
     move-object v7, v1
 
-    .line 18
     invoke-direct/range {v2 .. v11}, Lcom/applovin/impl/u$a;-><init>(JI[I[Landroid/net/Uri;[JJZ)V
 
     return-object p0
@@ -326,7 +334,7 @@
 
     const/16 v0, 0x24
 
-    .line 3
+    .line 5
     invoke-static {p0, v0}, Ljava/lang/Integer;->toString(II)Ljava/lang/String;
 
     move-result-object p0
@@ -341,7 +349,7 @@
 
     const/4 v0, -0x1
 
-    .line 19
+    .line 20
     invoke-virtual {p0, v0}, Lcom/applovin/impl/u$a;->a(I)I
 
     move-result v0
@@ -356,19 +364,19 @@
 
     add-int/2addr p1, v0
 
+    .line 21
     :goto_0
     iget-object v1, p0, Lcom/applovin/impl/u$a;->d:[I
 
-    .line 20
     array-length v2, v1
 
     if-ge p1, v2, :cond_1
 
+    .line 22
     iget-boolean v2, p0, Lcom/applovin/impl/u$a;->h:Z
 
     if-nez v2, :cond_1
 
-    .line 21
     aget v1, v1, p1
 
     if-eqz v1, :cond_1
@@ -390,6 +398,7 @@
 .method public b()Z
     .locals 4
 
+    .line 2
     iget v0, p0, Lcom/applovin/impl/u$a;->b:I
 
     const/4 v1, -0x1
@@ -405,14 +414,15 @@
 
     const/4 v1, 0x0
 
+    .line 3
     :goto_0
     iget v3, p0, Lcom/applovin/impl/u$a;->b:I
 
     if-ge v1, v3, :cond_3
 
+    .line 4
     iget-object v3, p0, Lcom/applovin/impl/u$a;->d:[I
 
-    .line 2
     aget v3, v3, v1
 
     if-eqz v3, :cond_2
@@ -437,23 +447,23 @@
 .method public c(I)Lcom/applovin/impl/u$a;
     .locals 11
 
+    .line 2
     iget-object v0, p0, Lcom/applovin/impl/u$a;->d:[I
 
-    .line 2
     invoke-static {v0, p1}, Lcom/applovin/impl/u$a;->a([II)[I
 
     move-result-object v5
 
+    .line 3
     iget-object v0, p0, Lcom/applovin/impl/u$a;->f:[J
 
-    .line 3
     invoke-static {v0, p1}, Lcom/applovin/impl/u$a;->a([JI)[J
 
     move-result-object v7
 
+    .line 4
     iget-object v0, p0, Lcom/applovin/impl/u$a;->c:[Landroid/net/Uri;
 
-    .line 4
     invoke-static {v0, p1}, Ljava/util/Arrays;->copyOf([Ljava/lang/Object;I)[Ljava/lang/Object;
 
     move-result-object v0
@@ -483,13 +493,13 @@
 .method public c()Z
     .locals 2
 
+    .line 1
     iget v0, p0, Lcom/applovin/impl/u$a;->b:I
 
     const/4 v1, -0x1
 
     if-eq v0, v1, :cond_1
 
-    .line 1
     invoke-virtual {p0}, Lcom/applovin/impl/u$a;->a()I
 
     move-result v0

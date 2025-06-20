@@ -3,14 +3,14 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lzh/a;
+.implements Lka/a;
 
 
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "Lkotlin/jvm/internal/Lambda;",
-        "Lzh/a;"
+        "Lka/a;"
     }
 .end annotation
 
@@ -35,14 +35,14 @@
 
 
 # instance fields
-.field final synthetic this$0:Landroidx/window/core/h;
+.field final synthetic this$0:Landroidx/window/core/g;
 
 
 # direct methods
-.method public constructor <init>(Landroidx/window/core/h;)V
+.method public constructor <init>(Landroidx/window/core/g;)V
     .locals 0
 
-    iput-object p1, p0, Landroidx/window/core/Version$bigInteger$2;->this$0:Landroidx/window/core/h;
+    iput-object p1, p0, Landroidx/window/core/Version$bigInteger$2;->this$0:Landroidx/window/core/g;
 
     const/4 p1, 0x0
 
@@ -56,7 +56,7 @@
 .method public bridge synthetic invoke()Ljava/lang/Object;
     .locals 1
 
-    .line 8
+    .line 1
     invoke-virtual {p0}, Landroidx/window/core/Version$bigInteger$2;->invoke()Ljava/math/BigInteger;
 
     move-result-object v0
@@ -67,14 +67,15 @@
 .method public final invoke()Ljava/math/BigInteger;
     .locals 4
 
-    iget-object v0, p0, Landroidx/window/core/Version$bigInteger$2;->this$0:Landroidx/window/core/h;
+    .line 2
+    iget-object v0, p0, Landroidx/window/core/Version$bigInteger$2;->this$0:Landroidx/window/core/g;
 
-    .line 1
-    iget v0, v0, Landroidx/window/core/h;->b:I
+    .line 3
+    iget v0, v0, Landroidx/window/core/g;->b:I
 
     int-to-long v0, v0
 
-    .line 2
+    .line 4
     invoke-static {v0, v1}, Ljava/math/BigInteger;->valueOf(J)Ljava/math/BigInteger;
 
     move-result-object v0
@@ -85,14 +86,15 @@
 
     move-result-object v0
 
-    iget-object v2, p0, Landroidx/window/core/Version$bigInteger$2;->this$0:Landroidx/window/core/h;
+    .line 5
+    iget-object v2, p0, Landroidx/window/core/Version$bigInteger$2;->this$0:Landroidx/window/core/g;
 
-    .line 3
-    iget v2, v2, Landroidx/window/core/h;->c:I
+    .line 6
+    iget v2, v2, Landroidx/window/core/g;->c:I
 
     int-to-long v2, v2
 
-    .line 4
+    .line 7
     invoke-static {v2, v3}, Ljava/math/BigInteger;->valueOf(J)Ljava/math/BigInteger;
 
     move-result-object v2
@@ -101,19 +103,20 @@
 
     move-result-object v0
 
-    .line 5
+    .line 8
     invoke-virtual {v0, v1}, Ljava/math/BigInteger;->shiftLeft(I)Ljava/math/BigInteger;
 
     move-result-object v0
 
-    iget-object v1, p0, Landroidx/window/core/Version$bigInteger$2;->this$0:Landroidx/window/core/h;
+    .line 9
+    iget-object v1, p0, Landroidx/window/core/Version$bigInteger$2;->this$0:Landroidx/window/core/g;
 
-    .line 6
-    iget v1, v1, Landroidx/window/core/h;->d:I
+    .line 10
+    iget v1, v1, Landroidx/window/core/g;->d:I
 
     int-to-long v1, v1
 
-    .line 7
+    .line 11
     invoke-static {v1, v2}, Ljava/math/BigInteger;->valueOf(J)Ljava/math/BigInteger;
 
     move-result-object v1

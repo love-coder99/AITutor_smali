@@ -1,10 +1,10 @@
-.class public final Landroidx/work/impl/m;
-.super Lo4/b;
+.class public abstract Landroidx/work/impl/m;
+.super Ljava/lang/Object;
 .source "SourceFile"
 
 
 # static fields
-.field public static final c:Landroidx/work/impl/m;
+.field public static final a:[Ljava/lang/String;
 
 
 # direct methods
@@ -12,44 +12,38 @@
     .locals 3
 
     .line 1
-    new-instance v0, Landroidx/work/impl/m;
+    const-string v0, "WrkDbPathHelper"
 
     .line 2
     .line 3
-    const/16 v1, 0x8
+    invoke-static {v0}, Landroidx/work/A;->b(Ljava/lang/String;)Ljava/lang/String;
 
     .line 4
     .line 5
-    const/16 v2, 0x9
-
     .line 6
-    .line 7
-    invoke-direct {v0, v1, v2}, Lo4/b;-><init>(II)V
+    const-string v0, "-wal"
 
+    .line 7
     .line 8
+    const-string v1, "-journal"
+
     .line 9
     .line 10
-    sput-object v0, Landroidx/work/impl/m;->c:Landroidx/work/impl/m;
+    const-string v2, "-shm"
 
     .line 11
     .line 12
-    return-void
-.end method
+    filled-new-array {v1, v2, v0}, [Ljava/lang/String;
 
+    .line 13
+    .line 14
+    .line 15
+    move-result-object v0
 
-# virtual methods
-.method public final a(Landroidx/sqlite/db/framework/b;)V
-    .locals 1
+    .line 16
+    sput-object v0, Landroidx/work/impl/m;->a:[Ljava/lang/String;
 
-    .line 1
-    const-string v0, "ALTER TABLE workspec ADD COLUMN `run_in_foreground` INTEGER NOT NULL DEFAULT 0"
-
-    .line 2
-    .line 3
-    invoke-virtual {p1, v0}, Landroidx/sqlite/db/framework/b;->D(Ljava/lang/String;)V
-
-    .line 4
-    .line 5
-    .line 6
+    .line 17
+    .line 18
     return-void
 .end method

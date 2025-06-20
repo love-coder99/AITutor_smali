@@ -1,12 +1,12 @@
 .class public final Landroidx/compose/ui/platform/DragAndDropModifierOnDragListener$modifier$1;
-.super Landroidx/compose/ui/node/w0;
+.super Landroidx/compose/ui/node/V;
 .source "SourceFile"
 
 
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
-        "Landroidx/compose/ui/node/w0;"
+        "Landroidx/compose/ui/node/V;"
     }
 .end annotation
 
@@ -16,8 +16,8 @@
     }
     d2 = {
         "androidx/compose/ui/platform/DragAndDropModifierOnDragListener$modifier$1",
-        "Landroidx/compose/ui/node/w0;",
-        "Landroidx/compose/ui/draganddrop/f;",
+        "Landroidx/compose/ui/node/V;",
+        "Landroidx/compose/ui/draganddrop/e;",
         "ui_release"
     }
     k = 0x1
@@ -26,15 +26,16 @@
         0x8,
         0x0
     }
+    xi = 0x30
 .end annotation
 
 
 # instance fields
-.field public final synthetic c:Landroidx/compose/ui/platform/o1;
+.field public final synthetic a:Landroidx/compose/ui/platform/e0;
 
 
 # direct methods
-.method public constructor <init>(Landroidx/compose/ui/platform/o1;)V
+.method public constructor <init>(Landroidx/compose/ui/platform/e0;)V
     .locals 0
 
     .line 1
@@ -43,7 +44,7 @@
     .line 2
     .line 3
     .line 4
-    iput-object p1, p0, Landroidx/compose/ui/platform/DragAndDropModifierOnDragListener$modifier$1;->c:Landroidx/compose/ui/platform/o1;
+    iput-object p1, p0, Landroidx/compose/ui/platform/DragAndDropModifierOnDragListener$modifier$1;->a:Landroidx/compose/ui/platform/e0;
 
     .line 5
     .line 6
@@ -72,11 +73,11 @@
     .locals 1
 
     .line 1
-    iget-object v0, p0, Landroidx/compose/ui/platform/DragAndDropModifierOnDragListener$modifier$1;->c:Landroidx/compose/ui/platform/o1;
+    iget-object v0, p0, Landroidx/compose/ui/platform/DragAndDropModifierOnDragListener$modifier$1;->a:Landroidx/compose/ui/platform/e0;
 
     .line 2
     .line 3
-    iget-object v0, v0, Landroidx/compose/ui/platform/o1;->a:Landroidx/compose/ui/draganddrop/f;
+    iget-object v0, v0, Landroidx/compose/ui/platform/e0;->a:Landroidx/compose/ui/draganddrop/e;
 
     .line 4
     .line 5
@@ -95,11 +96,11 @@
     .locals 1
 
     .line 1
-    iget-object v0, p0, Landroidx/compose/ui/platform/DragAndDropModifierOnDragListener$modifier$1;->c:Landroidx/compose/ui/platform/o1;
+    iget-object v0, p0, Landroidx/compose/ui/platform/DragAndDropModifierOnDragListener$modifier$1;->a:Landroidx/compose/ui/platform/e0;
 
     .line 2
     .line 3
-    iget-object v0, v0, Landroidx/compose/ui/platform/o1;->a:Landroidx/compose/ui/draganddrop/f;
+    iget-object v0, v0, Landroidx/compose/ui/platform/e0;->a:Landroidx/compose/ui/draganddrop/e;
 
     .line 4
     .line 5
@@ -110,7 +111,7 @@
     .locals 0
 
     .line 1
-    check-cast p1, Landroidx/compose/ui/draganddrop/f;
+    check-cast p1, Landroidx/compose/ui/draganddrop/e;
 
     .line 2
     .line 3

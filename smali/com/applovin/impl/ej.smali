@@ -156,7 +156,7 @@
 .method private static b(Lcom/applovin/impl/ah;)Ljava/lang/Boolean;
     .locals 1
 
-    .line 26
+    .line 29
     invoke-virtual {p0}, Lcom/applovin/impl/ah;->w()I
 
     move-result p0
@@ -503,7 +503,7 @@
 .method public a()J
     .locals 2
 
-    .line 1
+    .line 2
     iget-wide v0, p0, Lcom/applovin/impl/ej;->b:J
 
     return-wide v0
@@ -512,7 +512,7 @@
 .method public a(Lcom/applovin/impl/ah;)Z
     .locals 0
 
-    .line 2
+    .line 1
     const/4 p1, 0x1
 
     return p1
@@ -540,9 +540,9 @@
 
     move-result-object p2
 
+    .line 4
     const-string p3, "onMetaData"
 
-    .line 4
     invoke-virtual {p3, p2}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
     move-result p2
@@ -569,9 +569,9 @@
 
     move-result-object p1
 
+    .line 7
     const-string p2, "duration"
 
-    .line 7
     invoke-interface {p1, p2}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object p2
@@ -600,39 +600,40 @@
 
     double-to-long p2, p2
 
+    .line 10
     iput-wide p2, p0, Lcom/applovin/impl/ej;->b:J
 
+    .line 11
     :cond_3
     const-string p2, "keyframes"
 
-    .line 10
     invoke-interface {p1, p2}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object p1
 
-    .line 11
+    .line 12
     instance-of p2, p1, Ljava/util/Map;
 
     if-eqz p2, :cond_5
 
-    .line 12
+    .line 13
     check-cast p1, Ljava/util/Map;
 
+    .line 14
     const-string p2, "filepositions"
 
-    .line 13
     invoke-interface {p1, p2}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object p2
 
+    .line 15
     const-string p3, "times"
 
-    .line 14
     invoke-interface {p1, p3}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object p1
 
-    .line 15
+    .line 16
     instance-of p3, p2, Ljava/util/List;
 
     if-eqz p3, :cond_5
@@ -641,23 +642,23 @@
 
     if-eqz p3, :cond_5
 
-    .line 16
+    .line 17
     check-cast p2, Ljava/util/List;
 
-    .line 17
+    .line 18
     check-cast p1, Ljava/util/List;
 
-    .line 18
+    .line 19
     invoke-interface {p1}, Ljava/util/List;->size()I
 
     move-result p3
 
-    .line 19
+    .line 20
     new-array v3, p3, [J
 
     iput-object v3, p0, Lcom/applovin/impl/ej;->c:[J
 
-    .line 20
+    .line 21
     new-array v3, p3, [J
 
     iput-object v3, p0, Lcom/applovin/impl/ej;->d:[J
@@ -667,17 +668,17 @@
     :goto_0
     if-ge v3, p3, :cond_5
 
-    .line 21
+    .line 22
     invoke-interface {p2, v3}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
     move-result-object v4
 
-    .line 22
+    .line 23
     invoke-interface {p1, v3}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
     move-result-object v5
 
-    .line 23
+    .line 24
     instance-of v6, v5, Ljava/lang/Double;
 
     if-eqz v6, :cond_4
@@ -686,9 +687,9 @@
 
     if-eqz v6, :cond_4
 
+    .line 25
     iget-object v6, p0, Lcom/applovin/impl/ej;->c:[J
 
-    .line 24
     check-cast v5, Ljava/lang/Double;
 
     invoke-virtual {v5}, Ljava/lang/Double;->doubleValue()D
@@ -701,9 +702,9 @@
 
     aput-wide v7, v6, v3
 
+    .line 26
     iget-object v5, p0, Lcom/applovin/impl/ej;->d:[J
 
-    .line 25
     check-cast v4, Ljava/lang/Double;
 
     invoke-virtual {v4}, Ljava/lang/Double;->longValue()J
@@ -716,11 +717,13 @@
 
     goto :goto_0
 
+    .line 27
     :cond_4
     new-array p1, v0, [J
 
     iput-object p1, p0, Lcom/applovin/impl/ej;->c:[J
 
+    .line 28
     new-array p1, v0, [J
 
     iput-object p1, p0, Lcom/applovin/impl/ej;->d:[J

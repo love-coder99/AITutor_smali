@@ -4,6 +4,15 @@
 
 
 # annotations
+.annotation runtime Lca/c;
+    c = "androidx.compose.foundation.gestures.DragGestureDetectorKt"
+    f = "DragGestureDetector.kt"
+    l = {
+        0x6c
+    }
+    m = "drag-jO51t88"
+.end annotation
+
 .annotation runtime Lkotlin/Metadata;
     k = 0x3
     mv = {
@@ -12,15 +21,6 @@
         0x0
     }
     xi = 0x30
-.end annotation
-
-.annotation runtime Lth/c;
-    c = "androidx.compose.foundation.gestures.DragGestureDetectorKt"
-    f = "DragGestureDetector.kt"
-    l = {
-        0x6c
-    }
-    m = "drag-jO51t88"
 .end annotation
 
 
@@ -71,7 +71,7 @@
 
     const-wide/16 v0, 0x0
 
-    invoke-static {p1, v0, v1, p1, p0}, Landroidx/compose/foundation/gestures/s;->e(Landroidx/compose/ui/input/pointer/b;JLzh/c;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
+    invoke-static {p1, v0, v1, p1, p0}, Landroidx/compose/foundation/gestures/s;->d(Landroidx/compose/ui/input/pointer/b;JLka/c;Lkotlin/coroutines/jvm/internal/ContinuationImpl;)Ljava/lang/Object;
 
     move-result-object p1
 

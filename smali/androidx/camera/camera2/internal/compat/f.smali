@@ -1,153 +1,230 @@
-.class public final synthetic Landroidx/camera/camera2/internal/compat/f;
-.super Ljava/lang/Object;
+.class public final Landroidx/camera/camera2/internal/compat/f;
+.super Landroid/hardware/camera2/CameraCaptureSession$StateCallback;
 .source "SourceFile"
-
-# interfaces
-.implements Ljava/lang/Runnable;
 
 
 # instance fields
-.field public final synthetic b:I
+.field public final a:Landroid/hardware/camera2/CameraCaptureSession$StateCallback;
 
-.field public final synthetic c:Landroidx/camera/camera2/internal/compat/g;
-
-.field public final synthetic d:Landroid/hardware/camera2/CameraCaptureSession;
+.field public final b:Ljava/util/concurrent/Executor;
 
 
 # direct methods
-.method public synthetic constructor <init>(Landroidx/camera/camera2/internal/compat/g;Landroid/hardware/camera2/CameraCaptureSession;I)V
+.method public constructor <init>(Ljava/util/concurrent/Executor;Landroid/hardware/camera2/CameraCaptureSession$StateCallback;)V
     .locals 0
 
     .line 1
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    invoke-direct {p0}, Landroid/hardware/camera2/CameraCaptureSession$StateCallback;-><init>()V
 
     .line 2
     .line 3
     .line 4
-    iput p3, p0, Landroidx/camera/camera2/internal/compat/f;->b:I
+    iput-object p1, p0, Landroidx/camera/camera2/internal/compat/f;->b:Ljava/util/concurrent/Executor;
 
     .line 5
     .line 6
-    iput-object p1, p0, Landroidx/camera/camera2/internal/compat/f;->c:Landroidx/camera/camera2/internal/compat/g;
+    iput-object p2, p0, Landroidx/camera/camera2/internal/compat/f;->a:Landroid/hardware/camera2/CameraCaptureSession$StateCallback;
 
     .line 7
     .line 8
-    iput-object p2, p0, Landroidx/camera/camera2/internal/compat/f;->d:Landroid/hardware/camera2/CameraCaptureSession;
-
-    .line 9
-    .line 10
     return-void
 .end method
 
 
 # virtual methods
-.method public final run()V
-    .locals 3
+.method public final onActive(Landroid/hardware/camera2/CameraCaptureSession;)V
+    .locals 2
 
     .line 1
-    iget v0, p0, Landroidx/camera/camera2/internal/compat/f;->b:I
+    new-instance v0, Landroidx/camera/camera2/internal/compat/e;
 
     .line 2
     .line 3
-    iget-object v1, p0, Landroidx/camera/camera2/internal/compat/f;->d:Landroid/hardware/camera2/CameraCaptureSession;
+    const/4 v1, 0x0
 
     .line 4
-    .line 5
-    iget-object v2, p0, Landroidx/camera/camera2/internal/compat/f;->c:Landroidx/camera/camera2/internal/compat/g;
+    invoke-direct {v0, p0, p1, v1}, Landroidx/camera/camera2/internal/compat/e;-><init>(Landroidx/camera/camera2/internal/compat/f;Landroid/hardware/camera2/CameraCaptureSession;I)V
 
+    .line 5
     .line 6
     .line 7
-    packed-switch v0, :pswitch_data_0
+    iget-object p1, p0, Landroidx/camera/camera2/internal/compat/f;->b:Ljava/util/concurrent/Executor;
 
     .line 8
     .line 9
+    invoke-interface {p1, v0}, Ljava/util/concurrent/Executor;->execute(Ljava/lang/Runnable;)V
+
     .line 10
-    iget-object v0, v2, Landroidx/camera/camera2/internal/compat/g;->a:Landroid/hardware/camera2/CameraCaptureSession$StateCallback;
+    .line 11
+    .line 12
+    return-void
+.end method
+
+.method public final onCaptureQueueEmpty(Landroid/hardware/camera2/CameraCaptureSession;)V
+    .locals 2
+
+    .line 1
+    new-instance v0, Landroidx/camera/camera2/internal/compat/e;
+
+    .line 2
+    .line 3
+    const/4 v1, 0x2
+
+    .line 4
+    invoke-direct {v0, p0, p1, v1}, Landroidx/camera/camera2/internal/compat/e;-><init>(Landroidx/camera/camera2/internal/compat/f;Landroid/hardware/camera2/CameraCaptureSession;I)V
+
+    .line 5
+    .line 6
+    .line 7
+    iget-object p1, p0, Landroidx/camera/camera2/internal/compat/f;->b:Ljava/util/concurrent/Executor;
+
+    .line 8
+    .line 9
+    invoke-interface {p1, v0}, Ljava/util/concurrent/Executor;->execute(Ljava/lang/Runnable;)V
+
+    .line 10
+    .line 11
+    .line 12
+    return-void
+.end method
+
+.method public final onClosed(Landroid/hardware/camera2/CameraCaptureSession;)V
+    .locals 2
+
+    .line 1
+    new-instance v0, Landroidx/camera/camera2/internal/compat/e;
+
+    .line 2
+    .line 3
+    const/4 v1, 0x1
+
+    .line 4
+    invoke-direct {v0, p0, p1, v1}, Landroidx/camera/camera2/internal/compat/e;-><init>(Landroidx/camera/camera2/internal/compat/f;Landroid/hardware/camera2/CameraCaptureSession;I)V
+
+    .line 5
+    .line 6
+    .line 7
+    iget-object p1, p0, Landroidx/camera/camera2/internal/compat/f;->b:Ljava/util/concurrent/Executor;
+
+    .line 8
+    .line 9
+    invoke-interface {p1, v0}, Ljava/util/concurrent/Executor;->execute(Ljava/lang/Runnable;)V
+
+    .line 10
+    .line 11
+    .line 12
+    return-void
+.end method
+
+.method public final onConfigureFailed(Landroid/hardware/camera2/CameraCaptureSession;)V
+    .locals 2
+
+    .line 1
+    new-instance v0, Landroidx/camera/camera2/internal/compat/e;
+
+    .line 2
+    .line 3
+    const/4 v1, 0x5
+
+    .line 4
+    invoke-direct {v0, p0, p1, v1}, Landroidx/camera/camera2/internal/compat/e;-><init>(Landroidx/camera/camera2/internal/compat/f;Landroid/hardware/camera2/CameraCaptureSession;I)V
+
+    .line 5
+    .line 6
+    .line 7
+    iget-object p1, p0, Landroidx/camera/camera2/internal/compat/f;->b:Ljava/util/concurrent/Executor;
+
+    .line 8
+    .line 9
+    invoke-interface {p1, v0}, Ljava/util/concurrent/Executor;->execute(Ljava/lang/Runnable;)V
+
+    .line 10
+    .line 11
+    .line 12
+    return-void
+.end method
+
+.method public final onConfigured(Landroid/hardware/camera2/CameraCaptureSession;)V
+    .locals 2
+
+    .line 1
+    new-instance v0, Landroidx/camera/camera2/internal/compat/e;
+
+    .line 2
+    .line 3
+    const/4 v1, 0x3
+
+    .line 4
+    invoke-direct {v0, p0, p1, v1}, Landroidx/camera/camera2/internal/compat/e;-><init>(Landroidx/camera/camera2/internal/compat/f;Landroid/hardware/camera2/CameraCaptureSession;I)V
+
+    .line 5
+    .line 6
+    .line 7
+    iget-object p1, p0, Landroidx/camera/camera2/internal/compat/f;->b:Ljava/util/concurrent/Executor;
+
+    .line 8
+    .line 9
+    invoke-interface {p1, v0}, Ljava/util/concurrent/Executor;->execute(Ljava/lang/Runnable;)V
+
+    .line 10
+    .line 11
+    .line 12
+    return-void
+.end method
+
+.method public final onReady(Landroid/hardware/camera2/CameraCaptureSession;)V
+    .locals 2
+
+    .line 1
+    new-instance v0, Landroidx/camera/camera2/internal/compat/e;
+
+    .line 2
+    .line 3
+    const/4 v1, 0x4
+
+    .line 4
+    invoke-direct {v0, p0, p1, v1}, Landroidx/camera/camera2/internal/compat/e;-><init>(Landroidx/camera/camera2/internal/compat/f;Landroid/hardware/camera2/CameraCaptureSession;I)V
+
+    .line 5
+    .line 6
+    .line 7
+    iget-object p1, p0, Landroidx/camera/camera2/internal/compat/f;->b:Ljava/util/concurrent/Executor;
+
+    .line 8
+    .line 9
+    invoke-interface {p1, v0}, Ljava/util/concurrent/Executor;->execute(Ljava/lang/Runnable;)V
+
+    .line 10
+    .line 11
+    .line 12
+    return-void
+.end method
+
+.method public final onSurfacePrepared(Landroid/hardware/camera2/CameraCaptureSession;Landroid/view/Surface;)V
+    .locals 2
+
+    .line 1
+    new-instance v0, LH1/l;
+
+    .line 2
+    .line 3
+    const/16 v1, 0xd
+
+    .line 4
+    .line 5
+    invoke-direct {v0, p0, v1, p1, p2}, LH1/l;-><init>(Ljava/lang/Object;ILjava/lang/Object;Ljava/lang/Object;)V
+
+    .line 6
+    .line 7
+    .line 8
+    iget-object p1, p0, Landroidx/camera/camera2/internal/compat/f;->b:Ljava/util/concurrent/Executor;
+
+    .line 9
+    .line 10
+    invoke-interface {p1, v0}, Ljava/util/concurrent/Executor;->execute(Ljava/lang/Runnable;)V
 
     .line 11
     .line 12
-    invoke-virtual {v0, v1}, Landroid/hardware/camera2/CameraCaptureSession$StateCallback;->onReady(Landroid/hardware/camera2/CameraCaptureSession;)V
-
     .line 13
-    .line 14
-    .line 15
     return-void
-
-    .line 16
-    :pswitch_0
-    iget-object v0, v2, Landroidx/camera/camera2/internal/compat/g;->a:Landroid/hardware/camera2/CameraCaptureSession$StateCallback;
-
-    .line 17
-    .line 18
-    invoke-virtual {v0, v1}, Landroid/hardware/camera2/CameraCaptureSession$StateCallback;->onConfigureFailed(Landroid/hardware/camera2/CameraCaptureSession;)V
-
-    .line 19
-    .line 20
-    .line 21
-    return-void
-
-    .line 22
-    :pswitch_1
-    iget-object v0, v2, Landroidx/camera/camera2/internal/compat/g;->a:Landroid/hardware/camera2/CameraCaptureSession$StateCallback;
-
-    .line 23
-    .line 24
-    invoke-virtual {v0, v1}, Landroid/hardware/camera2/CameraCaptureSession$StateCallback;->onActive(Landroid/hardware/camera2/CameraCaptureSession;)V
-
-    .line 25
-    .line 26
-    .line 27
-    return-void
-
-    .line 28
-    :pswitch_2
-    iget-object v0, v2, Landroidx/camera/camera2/internal/compat/g;->a:Landroid/hardware/camera2/CameraCaptureSession$StateCallback;
-
-    .line 29
-    .line 30
-    invoke-static {v0, v1}, La7/a;->p(Landroid/hardware/camera2/CameraCaptureSession$StateCallback;Landroid/hardware/camera2/CameraCaptureSession;)V
-
-    .line 31
-    .line 32
-    .line 33
-    return-void
-
-    .line 34
-    :pswitch_3
-    iget-object v0, v2, Landroidx/camera/camera2/internal/compat/g;->a:Landroid/hardware/camera2/CameraCaptureSession$StateCallback;
-
-    .line 35
-    .line 36
-    invoke-virtual {v0, v1}, Landroid/hardware/camera2/CameraCaptureSession$StateCallback;->onClosed(Landroid/hardware/camera2/CameraCaptureSession;)V
-
-    .line 37
-    .line 38
-    .line 39
-    return-void
-
-    .line 40
-    :pswitch_4
-    iget-object v0, v2, Landroidx/camera/camera2/internal/compat/g;->a:Landroid/hardware/camera2/CameraCaptureSession$StateCallback;
-
-    .line 41
-    .line 42
-    invoke-virtual {v0, v1}, Landroid/hardware/camera2/CameraCaptureSession$StateCallback;->onConfigured(Landroid/hardware/camera2/CameraCaptureSession;)V
-
-    .line 43
-    .line 44
-    .line 45
-    return-void
-
-    .line 46
-    nop
-
-    .line 47
-    :pswitch_data_0
-    .packed-switch 0x0
-        :pswitch_4
-        :pswitch_3
-        :pswitch_2
-        :pswitch_1
-        :pswitch_0
-    .end packed-switch
 .end method

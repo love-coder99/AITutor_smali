@@ -3,14 +3,14 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lzh/c;
+.implements Lka/c;
 
 
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "Lkotlin/jvm/internal/Lambda;",
-        "Lzh/c;"
+        "Lka/c;"
     }
 .end annotation
 
@@ -19,11 +19,11 @@
         "\u0000\u000e\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0008\u0003\u0010\u0005\u001a\u00020\u00022\u0006\u0010\u0001\u001a\u00020\u0000H\n\u00a2\u0006\u0004\u0008\u0003\u0010\u0004"
     }
     d2 = {
-        "Landroidx/compose/ui/platform/l2;",
+        "Landroidx/compose/ui/platform/C0;",
         "it",
-        "Lqh/r;",
+        "LX9/j;",
         "invoke",
-        "(Landroidx/compose/ui/platform/l2;)V",
+        "(Landroidx/compose/ui/platform/C0;)V",
         "<anonymous>"
     }
     k = 0x3
@@ -36,14 +36,14 @@
 
 
 # instance fields
-.field final synthetic this$0:Landroidx/compose/ui/platform/f0;
+.field final synthetic this$0:Landroidx/compose/ui/platform/x;
 
 
 # direct methods
-.method public constructor <init>(Landroidx/compose/ui/platform/f0;)V
+.method public constructor <init>(Landroidx/compose/ui/platform/x;)V
     .locals 0
 
-    iput-object p1, p0, Landroidx/compose/ui/platform/AndroidComposeViewAccessibilityDelegateCompat$scheduleScrollEventIfNeededLambda$1;->this$0:Landroidx/compose/ui/platform/f0;
+    iput-object p1, p0, Landroidx/compose/ui/platform/AndroidComposeViewAccessibilityDelegateCompat$scheduleScrollEventIfNeededLambda$1;->this$0:Landroidx/compose/ui/platform/x;
 
     const/4 p1, 0x1
 
@@ -58,31 +58,31 @@
     .locals 0
 
     .line 1
-    check-cast p1, Landroidx/compose/ui/platform/l2;
+    check-cast p1, Landroidx/compose/ui/platform/C0;
 
-    invoke-virtual {p0, p1}, Landroidx/compose/ui/platform/AndroidComposeViewAccessibilityDelegateCompat$scheduleScrollEventIfNeededLambda$1;->invoke(Landroidx/compose/ui/platform/l2;)V
+    invoke-virtual {p0, p1}, Landroidx/compose/ui/platform/AndroidComposeViewAccessibilityDelegateCompat$scheduleScrollEventIfNeededLambda$1;->invoke(Landroidx/compose/ui/platform/C0;)V
 
-    sget-object p1, Lqh/r;->a:Lqh/r;
+    sget-object p1, LX9/j;->a:LX9/j;
 
     return-object p1
 .end method
 
-.method public final invoke(Landroidx/compose/ui/platform/l2;)V
+.method public final invoke(Landroidx/compose/ui/platform/C0;)V
     .locals 4
 
-    iget-object v0, p0, Landroidx/compose/ui/platform/AndroidComposeViewAccessibilityDelegateCompat$scheduleScrollEventIfNeededLambda$1;->this$0:Landroidx/compose/ui/platform/f0;
-
     .line 2
-    sget-object v1, Landroidx/compose/ui/platform/f0;->N:Landroidx/collection/s;
+    iget-object v0, p0, Landroidx/compose/ui/platform/AndroidComposeViewAccessibilityDelegateCompat$scheduleScrollEventIfNeededLambda$1;->this$0:Landroidx/compose/ui/platform/x;
+
+    sget-object v1, Landroidx/compose/ui/platform/x;->N:Landroidx/collection/r;
 
     .line 3
     invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
     .line 4
-    iget-object v1, p1, Landroidx/compose/ui/platform/l2;->c:Ljava/util/List;
+    iget-object v1, p1, Landroidx/compose/ui/platform/C0;->c:Ljava/util/ArrayList;
 
     .line 5
-    invoke-interface {v1, p1}, Ljava/util/List;->contains(Ljava/lang/Object;)Z
+    invoke-virtual {v1, p1}, Ljava/util/ArrayList;->contains(Ljava/lang/Object;)Z
 
     move-result v1
 
@@ -92,21 +92,21 @@
 
     .line 6
     :cond_0
-    iget-object v1, v0, Landroidx/compose/ui/platform/f0;->d:Landroidx/compose/ui/platform/r;
+    iget-object v1, v0, Landroidx/compose/ui/platform/x;->d:Landroidx/compose/ui/platform/o;
 
-    invoke-virtual {v1}, Landroidx/compose/ui/platform/r;->getSnapshotObserver()Landroidx/compose/ui/node/q1;
+    invoke-virtual {v1}, Landroidx/compose/ui/platform/o;->getSnapshotObserver()Landroidx/compose/ui/node/k0;
 
     move-result-object v1
 
     .line 7
-    iget-object v2, v0, Landroidx/compose/ui/platform/f0;->M:Lzh/c;
+    iget-object v2, v0, Landroidx/compose/ui/platform/x;->M:Lka/c;
 
     .line 8
     new-instance v3, Landroidx/compose/ui/platform/AndroidComposeViewAccessibilityDelegateCompat$scheduleScrollEventIfNeeded$1;
 
-    invoke-direct {v3, p1, v0}, Landroidx/compose/ui/platform/AndroidComposeViewAccessibilityDelegateCompat$scheduleScrollEventIfNeeded$1;-><init>(Landroidx/compose/ui/platform/l2;Landroidx/compose/ui/platform/f0;)V
+    invoke-direct {v3, p1, v0}, Landroidx/compose/ui/platform/AndroidComposeViewAccessibilityDelegateCompat$scheduleScrollEventIfNeeded$1;-><init>(Landroidx/compose/ui/platform/C0;Landroidx/compose/ui/platform/x;)V
 
-    invoke-virtual {v1, p1, v2, v3}, Landroidx/compose/ui/node/q1;->b(Landroidx/compose/ui/node/p1;Lzh/c;Lzh/a;)V
+    invoke-virtual {v1, p1, v2, v3}, Landroidx/compose/ui/node/k0;->b(Landroidx/compose/ui/node/j0;Lka/c;Lka/a;)V
 
     :goto_0
     return-void

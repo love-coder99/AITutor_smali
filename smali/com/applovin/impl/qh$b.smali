@@ -59,15 +59,15 @@
 
     .line 11
     .line 12
-    new-instance v0, Lcom/applovin/impl/vu;
+    new-instance v0, Lcom/applovin/impl/M1;
 
     .line 13
     .line 14
-    const/16 v1, 0x8
+    const/16 v1, 0x9
 
     .line 15
     .line 16
-    invoke-direct {v0, v1}, Lcom/applovin/impl/vu;-><init>(I)V
+    invoke-direct {v0, v1}, Lcom/applovin/impl/M1;-><init>(I)V
 
     .line 17
     .line 18
@@ -85,6 +85,7 @@
     .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
+    .line 2
     iput-object p1, p0, Lcom/applovin/impl/qh$b;->a:Lcom/applovin/impl/a9;
 
     return-void
@@ -93,7 +94,7 @@
 .method public synthetic constructor <init>(Lcom/applovin/impl/a9;Lcom/applovin/impl/qh$a;)V
     .locals 0
 
-    .line 2
+    .line 3
     invoke-direct {p0, p1}, Lcom/applovin/impl/qh$b;-><init>(Lcom/applovin/impl/a9;)V
 
     return-void
@@ -124,17 +125,18 @@
 
     if-nez p0, :cond_0
 
+    .line 4
     sget-object p0, Lcom/applovin/impl/qh$b;->b:Lcom/applovin/impl/qh$b;
 
     return-object p0
 
-    .line 4
+    .line 5
     :cond_0
     new-instance v1, Lcom/applovin/impl/qh$b$a;
 
     invoke-direct {v1}, Lcom/applovin/impl/qh$b$a;-><init>()V
 
-    .line 5
+    .line 6
     :goto_0
     invoke-virtual {p0}, Ljava/util/ArrayList;->size()I
 
@@ -142,7 +144,7 @@
 
     if-ge v0, v2, :cond_1
 
-    .line 6
+    .line 7
     invoke-virtual {p0, v0}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
 
     move-result-object v2
@@ -159,7 +161,7 @@
 
     goto :goto_0
 
-    .line 7
+    .line 8
     :cond_1
     invoke-virtual {v1}, Lcom/applovin/impl/qh$b$a;->a()Lcom/applovin/impl/qh$b;
 
@@ -197,9 +199,9 @@
 .method public a(I)Z
     .locals 1
 
+    .line 2
     iget-object v0, p0, Lcom/applovin/impl/qh$b;->a:Lcom/applovin/impl/a9;
 
-    .line 2
     invoke-virtual {v0, p1}, Lcom/applovin/impl/a9;->a(I)Z
 
     move-result p1

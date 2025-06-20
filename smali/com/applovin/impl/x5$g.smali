@@ -62,21 +62,23 @@
 
     const/4 v0, 0x0
 
+    .line 1
     iput-object v0, p0, Lcom/applovin/impl/x5$g;->b:Lcom/applovin/impl/w5;
 
+    .line 2
     iget-object v0, p0, Lcom/applovin/impl/x5$g;->a:Ljava/util/Set;
 
-    .line 1
+    .line 3
     invoke-static {v0}, Lcom/applovin/impl/db;->a(Ljava/util/Collection;)Lcom/applovin/impl/db;
 
     move-result-object v0
 
+    .line 4
     iget-object v1, p0, Lcom/applovin/impl/x5$g;->a:Ljava/util/Set;
 
-    .line 2
     invoke-interface {v1}, Ljava/util/Set;->clear()V
 
-    .line 3
+    .line 5
     invoke-virtual {v0}, Lcom/applovin/impl/db;->iterator()Lcom/applovin/impl/pp;
 
     move-result-object v0
@@ -94,7 +96,7 @@
 
     check-cast v1, Lcom/applovin/impl/w5;
 
-    .line 4
+    .line 6
     invoke-virtual {v1}, Lcom/applovin/impl/w5;->i()V
 
     goto :goto_0
@@ -106,21 +108,23 @@
 .method public a(Lcom/applovin/impl/w5;)V
     .locals 1
 
+    .line 13
     iget-object v0, p0, Lcom/applovin/impl/x5$g;->a:Ljava/util/Set;
 
-    .line 9
     invoke-interface {v0, p1}, Ljava/util/Set;->add(Ljava/lang/Object;)Z
 
+    .line 14
     iget-object v0, p0, Lcom/applovin/impl/x5$g;->b:Lcom/applovin/impl/w5;
 
     if-eqz v0, :cond_0
 
     return-void
 
+    .line 15
     :cond_0
     iput-object p1, p0, Lcom/applovin/impl/x5$g;->b:Lcom/applovin/impl/w5;
 
-    .line 10
+    .line 16
     invoke-virtual {p1}, Lcom/applovin/impl/w5;->k()V
 
     return-void
@@ -131,21 +135,23 @@
 
     const/4 v0, 0x0
 
+    .line 7
     iput-object v0, p0, Lcom/applovin/impl/x5$g;->b:Lcom/applovin/impl/w5;
 
+    .line 8
     iget-object v0, p0, Lcom/applovin/impl/x5$g;->a:Ljava/util/Set;
 
-    .line 5
+    .line 9
     invoke-static {v0}, Lcom/applovin/impl/db;->a(Ljava/util/Collection;)Lcom/applovin/impl/db;
 
     move-result-object v0
 
+    .line 10
     iget-object v1, p0, Lcom/applovin/impl/x5$g;->a:Ljava/util/Set;
 
-    .line 6
     invoke-interface {v1}, Ljava/util/Set;->clear()V
 
-    .line 7
+    .line 11
     invoke-virtual {v0}, Lcom/applovin/impl/db;->iterator()Lcom/applovin/impl/pp;
 
     move-result-object v0
@@ -163,7 +169,7 @@
 
     check-cast v1, Lcom/applovin/impl/w5;
 
-    .line 8
+    .line 12
     invoke-virtual {v1, p1, p2}, Lcom/applovin/impl/w5;->b(Ljava/lang/Exception;Z)V
 
     goto :goto_0

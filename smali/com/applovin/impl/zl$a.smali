@@ -51,9 +51,9 @@
 .method public a(Ljava/lang/String;ILjava/lang/String;Lorg/json/JSONObject;)V
     .locals 0
 
+    .line 2
     iget-object p1, p0, Lcom/applovin/impl/yl;->a:Lcom/applovin/impl/sdk/j;
 
-    .line 2
     invoke-static {p2, p1}, Lcom/applovin/impl/e4;->a(ILcom/applovin/impl/sdk/j;)V
 
     return-void
@@ -73,9 +73,9 @@
 .method public a(Ljava/lang/String;Lorg/json/JSONObject;I)V
     .locals 0
 
+    .line 4
     iget-object p1, p0, Lcom/applovin/impl/zl$a;->n:Lcom/applovin/impl/zl;
 
-    .line 4
     invoke-static {p1, p2}, Lcom/applovin/impl/zl;->a(Lcom/applovin/impl/zl;Lorg/json/JSONObject;)V
 
     return-void

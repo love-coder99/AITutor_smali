@@ -54,6 +54,12 @@
 
 .method public static a(Lorg/json/JSONObject;)Ljava/lang/String;
     .locals 2
+    .param p0    # Lorg/json/JSONObject;
+        .annotation build Landroidx/annotation/Nullable;
+        .end annotation
+    .end param
+    .annotation build Landroidx/annotation/Nullable;
+    .end annotation
 
     const/4 v0, 0x0
 
@@ -61,19 +67,19 @@
 
     return-object v0
 
+    .line 19
     :cond_0
     const-string v1, "exception_modules"
 
-    .line 19
     invoke-virtual {p0, v1}, Lorg/json/JSONObject;->optJSONObject(Ljava/lang/String;)Lorg/json/JSONObject;
 
     move-result-object p0
 
     if-eqz p0, :cond_1
 
+    .line 20
     const-string v0, "npth"
 
-    .line 20
     invoke-virtual {p0, v0}, Lorg/json/JSONObject;->optString(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object p0
@@ -86,6 +92,8 @@
 
 .method private static a(Lorg/json/JSONArray;Ljava/lang/String;)Lorg/json/JSONObject;
     .locals 3
+    .annotation build Landroidx/annotation/Nullable;
+    .end annotation
 
     const/4 v0, 0x0
 
@@ -326,6 +334,8 @@
 
 .method public static b()Lorg/json/JSONArray;
     .locals 5
+    .annotation build Landroidx/annotation/Nullable;
+    .end annotation
 
     .line 4
     invoke-static {}, Lcom/apm/insight/runtime/a;->i()Lorg/json/JSONObject;
@@ -449,6 +459,7 @@
 .method public static c()Z
     .locals 3
 
+    .line 1
     const-string v0, "npth_simple_setting"
 
     const-string v1, "disable_looper_monitor"
@@ -459,7 +470,6 @@
 
     move-result-object v0
 
-    .line 1
     invoke-static {v0}, Lcom/apm/insight/runtime/a;->a([Ljava/lang/String;)I
 
     move-result v0
@@ -745,6 +755,8 @@
 
 .method private static i()Lorg/json/JSONObject;
     .locals 1
+    .annotation build Landroidx/annotation/Nullable;
+    .end annotation
 
     .line 1
     invoke-static {}, Lcom/apm/insight/e;->a()Lcom/apm/insight/nativecrash/b;

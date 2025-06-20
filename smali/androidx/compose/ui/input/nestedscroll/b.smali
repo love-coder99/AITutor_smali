@@ -6,9 +6,9 @@
 # instance fields
 .field public a:Landroidx/compose/ui/input/nestedscroll/d;
 
-.field public b:Lzh/a;
+.field public b:Lkotlin/jvm/internal/Lambda;
 
-.field public c:Lkotlinx/coroutines/w;
+.field public c:Lkotlinx/coroutines/u;
 
 
 # direct methods
@@ -30,7 +30,7 @@
     .line 7
     .line 8
     .line 9
-    iput-object v0, p0, Landroidx/compose/ui/input/nestedscroll/b;->b:Lzh/a;
+    iput-object v0, p0, Landroidx/compose/ui/input/nestedscroll/b;->b:Lkotlin/jvm/internal/Lambda;
 
     .line 10
     .line 11
@@ -39,7 +39,7 @@
 
 
 # virtual methods
-.method public final a(JJLkotlin/coroutines/Continuation;)Ljava/lang/Object;
+.method public final a(JJLkotlin/coroutines/jvm/internal/ContinuationImpl;)Ljava/lang/Object;
     .locals 7
 
     .line 1
@@ -175,7 +175,7 @@
 
     .line 61
     .line 62
-    invoke-static {p5}, Lcom/google/android/play/core/appupdate/b;->v(Landroidx/compose/ui/node/x1;)Landroidx/compose/ui/node/x1;
+    invoke-static {p5}, La/a;->m(Landroidx/compose/ui/node/r0;)Landroidx/compose/ui/node/r0;
 
     .line 63
     .line 64
@@ -205,7 +205,7 @@
     move-wide v4, p3
 
     .line 75
-    invoke-virtual/range {v1 .. v6}, Landroidx/compose/ui/input/nestedscroll/d;->m(JJLkotlin/coroutines/Continuation;)Ljava/lang/Object;
+    invoke-virtual/range {v1 .. v6}, Landroidx/compose/ui/input/nestedscroll/d;->n(JJLkotlin/coroutines/Continuation;)Ljava/lang/Object;
 
     .line 76
     .line 77
@@ -222,11 +222,11 @@
     .line 82
     :cond_4
     :goto_2
-    check-cast p5, Lh2/n;
+    check-cast p5, LM0/n;
 
     .line 83
     .line 84
-    iget-wide p1, p5, Lh2/n;->a:J
+    iget-wide p1, p5, LM0/n;->a:J
 
     .line 85
     .line 86
@@ -239,11 +239,11 @@
     .line 88
     .line 89
     :goto_3
-    new-instance p3, Lh2/n;
+    new-instance p3, LM0/n;
 
     .line 90
     .line 91
-    invoke-direct {p3, p1, p2}, Lh2/n;-><init>(J)V
+    invoke-direct {p3, p1, p2}, LM0/n;-><init>(J)V
 
     .line 92
     .line 93
@@ -251,7 +251,7 @@
     return-object p3
 .end method
 
-.method public final b(JLkotlin/coroutines/Continuation;)Ljava/lang/Object;
+.method public final b(JLkotlin/coroutines/jvm/internal/ContinuationImpl;)Ljava/lang/Object;
     .locals 5
 
     .line 1
@@ -380,7 +380,7 @@
 
     .line 59
     .line 60
-    invoke-static {p3}, Lcom/google/android/play/core/appupdate/b;->v(Landroidx/compose/ui/node/x1;)Landroidx/compose/ui/node/x1;
+    invoke-static {p3}, La/a;->m(Landroidx/compose/ui/node/r0;)Landroidx/compose/ui/node/r0;
 
     .line 61
     .line 62
@@ -421,11 +421,11 @@
     .line 78
     :cond_4
     :goto_1
-    check-cast p3, Lh2/n;
+    check-cast p3, LM0/n;
 
     .line 79
     .line 80
-    iget-wide p1, p3, Lh2/n;->a:J
+    iget-wide p1, p3, LM0/n;->a:J
 
     .line 81
     .line 82
@@ -438,11 +438,11 @@
     .line 84
     .line 85
     :goto_2
-    new-instance p3, Lh2/n;
+    new-instance p3, LM0/n;
 
     .line 86
     .line 87
-    invoke-direct {p3, p1, p2}, Lh2/n;-><init>(J)V
+    invoke-direct {p3, p1, p2}, LM0/n;-><init>(J)V
 
     .line 88
     .line 89
@@ -450,15 +450,15 @@
     return-object p3
 .end method
 
-.method public final c()Lkotlinx/coroutines/w;
+.method public final c()Lkotlinx/coroutines/u;
     .locals 2
 
     .line 1
-    iget-object v0, p0, Landroidx/compose/ui/input/nestedscroll/b;->b:Lzh/a;
+    iget-object v0, p0, Landroidx/compose/ui/input/nestedscroll/b;->b:Lkotlin/jvm/internal/Lambda;
 
     .line 2
     .line 3
-    invoke-interface {v0}, Lzh/a;->invoke()Ljava/lang/Object;
+    invoke-interface {v0}, Lka/a;->invoke()Ljava/lang/Object;
 
     .line 4
     .line 5
@@ -466,7 +466,7 @@
     move-result-object v0
 
     .line 7
-    check-cast v0, Lkotlinx/coroutines/w;
+    check-cast v0, Lkotlinx/coroutines/u;
 
     .line 8
     .line 9

@@ -435,12 +435,12 @@
 
     goto :goto_1
 
+    .line 54
     :cond_2
     const-string p0, "framing bit expected to be set"
 
     const/4 p1, 0x0
 
-    .line 54
     invoke-static {p0, p1}, Lcom/applovin/impl/ch;->a(Ljava/lang/String;Ljava/lang/Throwable;)Lcom/applovin/impl/ch;
 
     move-result-object p0
@@ -621,12 +621,12 @@
 
     goto :goto_0
 
+    .line 42
     :cond_5
     const-string p0, "to reserved bits must be zero after mapping coupling steps"
 
     const/4 p1, 0x0
 
-    .line 42
     invoke-static {p0, p1}, Lcom/applovin/impl/ch;->a(Ljava/lang/String;Ljava/lang/Throwable;)Lcom/applovin/impl/ch;
 
     move-result-object p0
@@ -789,10 +789,10 @@
 
     return v3
 
+    .line 84
     :cond_6
     const-string p0, "expected characters \'vorbis\'"
 
-    .line 84
     invoke-static {p0, v2}, Lcom/applovin/impl/ch;->a(Ljava/lang/String;Ljava/lang/Throwable;)Lcom/applovin/impl/ch;
 
     move-result-object p0
@@ -875,10 +875,10 @@
 
     goto :goto_1
 
+    .line 63
     :cond_1
     const-string p0, "placeholder of time domain transforms not zeroed out"
 
-    .line 63
     invoke-static {p0, v0}, Lcom/applovin/impl/ch;->a(Ljava/lang/String;Ljava/lang/Throwable;)Lcom/applovin/impl/ch;
 
     move-result-object p0
@@ -909,10 +909,10 @@
 
     return-object p0
 
+    .line 69
     :cond_3
     const-string p0, "framing bit after modes not set as expected"
 
-    .line 69
     invoke-static {p0, v0}, Lcom/applovin/impl/ch;->a(Ljava/lang/String;Ljava/lang/Throwable;)Lcom/applovin/impl/ch;
 
     move-result-object p0

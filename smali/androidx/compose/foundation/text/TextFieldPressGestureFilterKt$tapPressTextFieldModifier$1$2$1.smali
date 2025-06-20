@@ -3,12 +3,21 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lzh/e;
+.implements Lka/e;
 
 
 # annotations
+.annotation runtime Lca/c;
+    c = "androidx.compose.foundation.text.TextFieldPressGestureFilterKt$tapPressTextFieldModifier$1$2$1"
+    f = "TextFieldPressGestureFilter.kt"
+    l = {
+        0x36
+    }
+    m = "invokeSuspend"
+.end annotation
+
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Landroidx/compose/foundation/text/TextFieldPressGestureFilterKt$tapPressTextFieldModifier$1;->invoke(Landroidx/compose/ui/o;Landroidx/compose/runtime/l;I)Landroidx/compose/ui/o;
+    value = Landroidx/compose/foundation/text/TextFieldPressGestureFilterKt$tapPressTextFieldModifier$1;->invoke(Landroidx/compose/ui/o;Landroidx/compose/runtime/j;I)Landroidx/compose/ui/o;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -19,18 +28,19 @@
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "Lkotlin/coroutines/jvm/internal/SuspendLambda;",
-        "Lzh/e;"
+        "Lka/e;"
     }
 .end annotation
 
 .annotation runtime Lkotlin/Metadata;
     d1 = {
-        "\u0000\n\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\u0010\u0002\u001a\u00020\u0001*\u00020\u0000H\u008a@"
+        "\u0000\u000c\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0008\u0002\u0010\u0002\u001a\u00020\u0001*\u00020\u0000H\u008a@\u00a2\u0006\u0004\u0008\u0002\u0010\u0003"
     }
     d2 = {
-        "Landroidx/compose/ui/input/pointer/x;",
-        "Lqh/r;",
-        "<anonymous>"
+        "Landroidx/compose/ui/input/pointer/r;",
+        "LX9/j;",
+        "<anonymous>",
+        "(Landroidx/compose/ui/input/pointer/r;)V"
     }
     k = 0x3
     mv = {
@@ -40,36 +50,27 @@
     }
 .end annotation
 
-.annotation runtime Lth/c;
-    c = "androidx.compose.foundation.text.TextFieldPressGestureFilterKt$tapPressTextFieldModifier$1$2$1"
-    f = "TextFieldPressGestureFilter.kt"
-    l = {
-        0x36
-    }
-    m = "invokeSuspend"
-.end annotation
-
 
 # instance fields
 .field final synthetic $interactionSource:Landroidx/compose/foundation/interaction/l;
 
-.field final synthetic $onTapState:Landroidx/compose/runtime/d3;
+.field final synthetic $onTapState:Landroidx/compose/runtime/H0;
     .annotation system Ldalvik/annotation/Signature;
         value = {
-            "Landroidx/compose/runtime/d3;"
+            "Landroidx/compose/runtime/H0;"
         }
     .end annotation
 .end field
 
-.field final synthetic $pressedInteraction:Landroidx/compose/runtime/j1;
+.field final synthetic $pressedInteraction:Landroidx/compose/runtime/Z;
     .annotation system Ldalvik/annotation/Signature;
         value = {
-            "Landroidx/compose/runtime/j1;"
+            "Landroidx/compose/runtime/Z;"
         }
     .end annotation
 .end field
 
-.field final synthetic $scope:Lkotlinx/coroutines/w;
+.field final synthetic $scope:Lkotlinx/coroutines/u;
 
 .field private synthetic L$0:Ljava/lang/Object;
 
@@ -77,15 +78,15 @@
 
 
 # direct methods
-.method public constructor <init>(Lkotlinx/coroutines/w;Landroidx/compose/runtime/j1;Landroidx/compose/foundation/interaction/l;Landroidx/compose/runtime/d3;Lkotlin/coroutines/Continuation;)V
+.method public constructor <init>(Lkotlinx/coroutines/u;Landroidx/compose/runtime/Z;Landroidx/compose/foundation/interaction/l;Landroidx/compose/runtime/H0;Lkotlin/coroutines/Continuation;)V
     .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
-            "Lkotlinx/coroutines/w;",
-            "Landroidx/compose/runtime/j1;",
+            "Lkotlinx/coroutines/u;",
+            "Landroidx/compose/runtime/Z;",
             "Landroidx/compose/foundation/interaction/l;",
-            "Landroidx/compose/runtime/d3;",
+            "Landroidx/compose/runtime/H0;",
             "Lkotlin/coroutines/Continuation<",
             "-",
             "Landroidx/compose/foundation/text/TextFieldPressGestureFilterKt$tapPressTextFieldModifier$1$2$1;",
@@ -93,13 +94,13 @@
         }
     .end annotation
 
-    iput-object p1, p0, Landroidx/compose/foundation/text/TextFieldPressGestureFilterKt$tapPressTextFieldModifier$1$2$1;->$scope:Lkotlinx/coroutines/w;
+    iput-object p1, p0, Landroidx/compose/foundation/text/TextFieldPressGestureFilterKt$tapPressTextFieldModifier$1$2$1;->$scope:Lkotlinx/coroutines/u;
 
-    iput-object p2, p0, Landroidx/compose/foundation/text/TextFieldPressGestureFilterKt$tapPressTextFieldModifier$1$2$1;->$pressedInteraction:Landroidx/compose/runtime/j1;
+    iput-object p2, p0, Landroidx/compose/foundation/text/TextFieldPressGestureFilterKt$tapPressTextFieldModifier$1$2$1;->$pressedInteraction:Landroidx/compose/runtime/Z;
 
     iput-object p3, p0, Landroidx/compose/foundation/text/TextFieldPressGestureFilterKt$tapPressTextFieldModifier$1$2$1;->$interactionSource:Landroidx/compose/foundation/interaction/l;
 
-    iput-object p4, p0, Landroidx/compose/foundation/text/TextFieldPressGestureFilterKt$tapPressTextFieldModifier$1$2$1;->$onTapState:Landroidx/compose/runtime/d3;
+    iput-object p4, p0, Landroidx/compose/foundation/text/TextFieldPressGestureFilterKt$tapPressTextFieldModifier$1$2$1;->$onTapState:Landroidx/compose/runtime/H0;
 
     const/4 p1, 0x2
 
@@ -119,41 +120,41 @@
             "Lkotlin/coroutines/Continuation<",
             "*>;)",
             "Lkotlin/coroutines/Continuation<",
-            "Lqh/r;",
+            "LX9/j;",
             ">;"
         }
     .end annotation
 
     new-instance v6, Landroidx/compose/foundation/text/TextFieldPressGestureFilterKt$tapPressTextFieldModifier$1$2$1;
 
-    iget-object v1, p0, Landroidx/compose/foundation/text/TextFieldPressGestureFilterKt$tapPressTextFieldModifier$1$2$1;->$scope:Lkotlinx/coroutines/w;
+    iget-object v1, p0, Landroidx/compose/foundation/text/TextFieldPressGestureFilterKt$tapPressTextFieldModifier$1$2$1;->$scope:Lkotlinx/coroutines/u;
 
-    iget-object v2, p0, Landroidx/compose/foundation/text/TextFieldPressGestureFilterKt$tapPressTextFieldModifier$1$2$1;->$pressedInteraction:Landroidx/compose/runtime/j1;
+    iget-object v2, p0, Landroidx/compose/foundation/text/TextFieldPressGestureFilterKt$tapPressTextFieldModifier$1$2$1;->$pressedInteraction:Landroidx/compose/runtime/Z;
 
     iget-object v3, p0, Landroidx/compose/foundation/text/TextFieldPressGestureFilterKt$tapPressTextFieldModifier$1$2$1;->$interactionSource:Landroidx/compose/foundation/interaction/l;
 
-    iget-object v4, p0, Landroidx/compose/foundation/text/TextFieldPressGestureFilterKt$tapPressTextFieldModifier$1$2$1;->$onTapState:Landroidx/compose/runtime/d3;
+    iget-object v4, p0, Landroidx/compose/foundation/text/TextFieldPressGestureFilterKt$tapPressTextFieldModifier$1$2$1;->$onTapState:Landroidx/compose/runtime/H0;
 
     move-object v0, v6
 
     move-object v5, p2
 
-    invoke-direct/range {v0 .. v5}, Landroidx/compose/foundation/text/TextFieldPressGestureFilterKt$tapPressTextFieldModifier$1$2$1;-><init>(Lkotlinx/coroutines/w;Landroidx/compose/runtime/j1;Landroidx/compose/foundation/interaction/l;Landroidx/compose/runtime/d3;Lkotlin/coroutines/Continuation;)V
+    invoke-direct/range {v0 .. v5}, Landroidx/compose/foundation/text/TextFieldPressGestureFilterKt$tapPressTextFieldModifier$1$2$1;-><init>(Lkotlinx/coroutines/u;Landroidx/compose/runtime/Z;Landroidx/compose/foundation/interaction/l;Landroidx/compose/runtime/H0;Lkotlin/coroutines/Continuation;)V
 
     iput-object p1, v6, Landroidx/compose/foundation/text/TextFieldPressGestureFilterKt$tapPressTextFieldModifier$1$2$1;->L$0:Ljava/lang/Object;
 
     return-object v6
 .end method
 
-.method public final invoke(Landroidx/compose/ui/input/pointer/x;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
+.method public final invoke(Landroidx/compose/ui/input/pointer/r;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
     .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
-            "Landroidx/compose/ui/input/pointer/x;",
+            "Landroidx/compose/ui/input/pointer/r;",
             "Lkotlin/coroutines/Continuation<",
             "-",
-            "Lqh/r;",
+            "LX9/j;",
             ">;)",
             "Ljava/lang/Object;"
         }
@@ -166,7 +167,7 @@
 
     check-cast p1, Landroidx/compose/foundation/text/TextFieldPressGestureFilterKt$tapPressTextFieldModifier$1$2$1;
 
-    sget-object p2, Lqh/r;->a:Lqh/r;
+    sget-object p2, LX9/j;->a:LX9/j;
 
     invoke-virtual {p1, p2}, Landroidx/compose/foundation/text/TextFieldPressGestureFilterKt$tapPressTextFieldModifier$1$2$1;->invokeSuspend(Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -179,11 +180,11 @@
     .locals 0
 
     .line 2
-    check-cast p1, Landroidx/compose/ui/input/pointer/x;
+    check-cast p1, Landroidx/compose/ui/input/pointer/r;
 
     check-cast p2, Lkotlin/coroutines/Continuation;
 
-    invoke-virtual {p0, p1, p2}, Landroidx/compose/foundation/text/TextFieldPressGestureFilterKt$tapPressTextFieldModifier$1$2$1;->invoke(Landroidx/compose/ui/input/pointer/x;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
+    invoke-virtual {p0, p1, p2}, Landroidx/compose/foundation/text/TextFieldPressGestureFilterKt$tapPressTextFieldModifier$1$2$1;->invoke(Landroidx/compose/ui/input/pointer/r;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
 
     move-result-object p1
 
@@ -248,7 +249,7 @@
 
     .line 26
     .line 27
-    check-cast p1, Landroidx/compose/ui/input/pointer/x;
+    check-cast p1, Landroidx/compose/ui/input/pointer/r;
 
     .line 28
     .line 29
@@ -256,11 +257,11 @@
 
     .line 30
     .line 31
-    iget-object v3, p0, Landroidx/compose/foundation/text/TextFieldPressGestureFilterKt$tapPressTextFieldModifier$1$2$1;->$scope:Lkotlinx/coroutines/w;
+    iget-object v3, p0, Landroidx/compose/foundation/text/TextFieldPressGestureFilterKt$tapPressTextFieldModifier$1$2$1;->$scope:Lkotlinx/coroutines/u;
 
     .line 32
     .line 33
-    iget-object v4, p0, Landroidx/compose/foundation/text/TextFieldPressGestureFilterKt$tapPressTextFieldModifier$1$2$1;->$pressedInteraction:Landroidx/compose/runtime/j1;
+    iget-object v4, p0, Landroidx/compose/foundation/text/TextFieldPressGestureFilterKt$tapPressTextFieldModifier$1$2$1;->$pressedInteraction:Landroidx/compose/runtime/Z;
 
     .line 34
     .line 35
@@ -271,7 +272,7 @@
     const/4 v6, 0x0
 
     .line 38
-    invoke-direct {v1, v3, v4, v5, v6}, Landroidx/compose/foundation/text/TextFieldPressGestureFilterKt$tapPressTextFieldModifier$1$2$1$1;-><init>(Lkotlinx/coroutines/w;Landroidx/compose/runtime/j1;Landroidx/compose/foundation/interaction/l;Lkotlin/coroutines/Continuation;)V
+    invoke-direct {v1, v3, v4, v5, v6}, Landroidx/compose/foundation/text/TextFieldPressGestureFilterKt$tapPressTextFieldModifier$1$2$1$1;-><init>(Lkotlinx/coroutines/u;Landroidx/compose/runtime/Z;Landroidx/compose/foundation/interaction/l;Lkotlin/coroutines/Continuation;)V
 
     .line 39
     .line 40
@@ -280,11 +281,11 @@
 
     .line 42
     .line 43
-    iget-object v4, p0, Landroidx/compose/foundation/text/TextFieldPressGestureFilterKt$tapPressTextFieldModifier$1$2$1;->$onTapState:Landroidx/compose/runtime/d3;
+    iget-object v4, p0, Landroidx/compose/foundation/text/TextFieldPressGestureFilterKt$tapPressTextFieldModifier$1$2$1;->$onTapState:Landroidx/compose/runtime/H0;
 
     .line 44
     .line 45
-    invoke-direct {v3, v4}, Landroidx/compose/foundation/text/TextFieldPressGestureFilterKt$tapPressTextFieldModifier$1$2$1$2;-><init>(Landroidx/compose/runtime/d3;)V
+    invoke-direct {v3, v4}, Landroidx/compose/foundation/text/TextFieldPressGestureFilterKt$tapPressTextFieldModifier$1$2$1$2;-><init>(Landroidx/compose/runtime/H0;)V
 
     .line 46
     .line 47
@@ -293,7 +294,7 @@
 
     .line 49
     .line 50
-    invoke-static {p1, v1, v3, p0}, Landroidx/compose/foundation/gestures/m0;->d(Landroidx/compose/ui/input/pointer/x;Lzh/f;Lzh/c;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
+    invoke-static {p1, v1, v3, p0}, Landroidx/compose/foundation/gestures/O;->d(Landroidx/compose/ui/input/pointer/r;Lka/f;Lka/c;Lkotlin/coroutines/jvm/internal/SuspendLambda;)Ljava/lang/Object;
 
     .line 51
     .line 52
@@ -310,7 +311,7 @@
     .line 57
     :cond_2
     :goto_0
-    sget-object p1, Lqh/r;->a:Lqh/r;
+    sget-object p1, LX9/j;->a:LX9/j;
 
     .line 58
     .line 59

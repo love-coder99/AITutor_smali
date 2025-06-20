@@ -88,9 +88,9 @@
 .method public a(I)I
     .locals 1
 
+    .line 2
     iget-object v0, p0, Lcom/applovin/impl/sc$a;->c:[I
 
-    .line 2
     aget p1, v0, p1
 
     return p1

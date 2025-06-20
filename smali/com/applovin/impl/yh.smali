@@ -50,10 +50,13 @@
     .line 1
     invoke-direct {p0}, Lcom/applovin/impl/sk;-><init>()V
 
+    .line 2
     iput-wide p4, p0, Lcom/applovin/impl/yh;->a:J
 
+    .line 3
     iput-wide p1, p0, Lcom/applovin/impl/yh;->b:J
 
+    .line 4
     iput-object p3, p0, Lcom/applovin/impl/yh;->c:[B
 
     return-void
@@ -62,24 +65,24 @@
 .method private constructor <init>(Landroid/os/Parcel;)V
     .locals 2
 
-    .line 2
+    .line 5
     invoke-direct {p0}, Lcom/applovin/impl/sk;-><init>()V
 
-    .line 3
+    .line 6
     invoke-virtual {p1}, Landroid/os/Parcel;->readLong()J
 
     move-result-wide v0
 
     iput-wide v0, p0, Lcom/applovin/impl/yh;->a:J
 
-    .line 4
+    .line 7
     invoke-virtual {p1}, Landroid/os/Parcel;->readLong()J
 
     move-result-wide v0
 
     iput-wide v0, p0, Lcom/applovin/impl/yh;->b:J
 
-    .line 5
+    .line 8
     invoke-virtual {p1}, Landroid/os/Parcel;->createByteArray()[B
 
     move-result-object p1
@@ -98,7 +101,7 @@
 .method public synthetic constructor <init>(Landroid/os/Parcel;Lcom/applovin/impl/yh$a;)V
     .locals 0
 
-    .line 6
+    .line 9
     invoke-direct {p0, p1}, Lcom/applovin/impl/yh;-><init>(Landroid/os/Parcel;)V
 
     return-void

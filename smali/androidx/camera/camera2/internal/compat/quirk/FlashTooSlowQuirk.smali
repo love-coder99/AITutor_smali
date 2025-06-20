@@ -15,35 +15,35 @@
     .locals 8
 
     .line 1
-    const-string v0, "PIXEL 3A"
+    const-string v6, "ITEL L6006"
 
     .line 2
     .line 3
-    const-string v1, "PIXEL 3A XL"
+    const-string v7, "RMX3231"
 
     .line 4
     .line 5
-    const-string v2, "PIXEL 4"
+    const-string v0, "PIXEL 3A"
 
     .line 6
     .line 7
-    const-string v3, "PIXEL 5"
+    const-string v1, "PIXEL 3A XL"
 
     .line 8
     .line 9
-    const-string v4, "SM-A320"
+    const-string v2, "PIXEL 4"
 
     .line 10
     .line 11
-    const-string v5, "MOTO G(20)"
+    const-string v3, "PIXEL 5"
 
     .line 12
     .line 13
-    const-string v6, "ITEL L6006"
+    const-string v4, "SM-A320"
 
     .line 14
     .line 15
-    const-string v7, "RMX3231"
+    const-string v5, "MOTO G(20)"
 
     .line 16
     .line 17
@@ -73,7 +73,11 @@
 .method public constructor <init>()V
     .locals 0
 
+    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
+    .line 2
+    .line 3
+    .line 4
     return-void
 .end method

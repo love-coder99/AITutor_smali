@@ -3,14 +3,14 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lzh/c;
+.implements Lka/c;
 
 
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "Lkotlin/jvm/internal/Lambda;",
-        "Lzh/c;"
+        "Lka/c;"
     }
 .end annotation
 
@@ -21,9 +21,9 @@
     d2 = {
         "",
         "it",
-        "Landroidx/compose/ui/text/h0;",
+        "Landroidx/compose/ui/text/H;",
         "invoke-VqIyPBM",
-        "(Ljava/lang/Object;)Landroidx/compose/ui/text/h0;",
+        "(Ljava/lang/Object;)Landroidx/compose/ui/text/H;",
         "<anonymous>"
     }
     k = 0x3
@@ -68,7 +68,7 @@
     .locals 0
 
     .line 1
-    invoke-virtual {p0, p1}, Landroidx/compose/ui/text/SaversKt$TextRangeSaver$2;->invoke-VqIyPBM(Ljava/lang/Object;)Landroidx/compose/ui/text/h0;
+    invoke-virtual {p0, p1}, Landroidx/compose/ui/text/SaversKt$TextRangeSaver$2;->invoke-VqIyPBM(Ljava/lang/Object;)Landroidx/compose/ui/text/H;
 
     .line 2
     .line 3
@@ -79,7 +79,7 @@
     return-object p1
 .end method
 
-.method public final invoke-VqIyPBM(Ljava/lang/Object;)Landroidx/compose/ui/text/h0;
+.method public final invoke-VqIyPBM(Ljava/lang/Object;)Landroidx/compose/ui/text/H;
     .locals 3
 
     .line 1
@@ -156,7 +156,7 @@
     move-result p1
 
     .line 33
-    invoke-static {v0, p1}, Lh5/f;->a(II)J
+    invoke-static {v0, p1}, Landroidx/compose/ui/text/K;->b(II)J
 
     .line 34
     .line 35
@@ -164,11 +164,11 @@
     move-result-wide v0
 
     .line 37
-    new-instance p1, Landroidx/compose/ui/text/h0;
+    new-instance p1, Landroidx/compose/ui/text/H;
 
     .line 38
     .line 39
-    invoke-direct {p1, v0, v1}, Landroidx/compose/ui/text/h0;-><init>(J)V
+    invoke-direct {p1, v0, v1}, Landroidx/compose/ui/text/H;-><init>(J)V
 
     .line 40
     .line 41

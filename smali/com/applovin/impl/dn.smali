@@ -35,9 +35,9 @@
 .method public constructor <init>(Lcom/applovin/impl/sdk/network/a;Lcom/applovin/impl/sdk/j;Z)V
     .locals 1
 
+    .line 2
     const-string v0, "TaskRepeatRequest"
 
-    .line 2
     invoke-direct {p0, v0, p2, p3}, Lcom/applovin/impl/yl;-><init>(Ljava/lang/String;Lcom/applovin/impl/sdk/j;Z)V
 
     .line 3
@@ -47,29 +47,32 @@
 
     const/4 p3, 0x0
 
+    .line 4
     iput-object p3, p0, Lcom/applovin/impl/dn;->k:Lcom/applovin/impl/sj;
 
+    .line 5
     iput-object p3, p0, Lcom/applovin/impl/dn;->l:Lcom/applovin/impl/sj;
 
     if-eqz p1, :cond_0
 
-    .line 4
+    .line 6
     invoke-virtual {p1}, Lcom/applovin/impl/sdk/network/a;->f()Ljava/lang/String;
 
     move-result-object p3
 
     invoke-virtual {p0, p3}, Lcom/applovin/impl/yl;->a(Ljava/lang/String;)V
 
+    .line 7
     iput-object p1, p0, Lcom/applovin/impl/dn;->h:Lcom/applovin/impl/sdk/network/a;
 
-    .line 5
+    .line 8
     new-instance p1, Lcom/applovin/impl/d4$b;
 
     invoke-direct {p1}, Lcom/applovin/impl/d4$b;-><init>()V
 
     iput-object p1, p0, Lcom/applovin/impl/dn;->m:Lcom/applovin/impl/d4$b;
 
-    .line 6
+    .line 9
     new-instance p1, Lcom/applovin/impl/dn$a;
 
     invoke-direct {p1, p0, p2}, Lcom/applovin/impl/dn$a;-><init>(Lcom/applovin/impl/dn;Lcom/applovin/impl/sdk/j;)V
@@ -78,7 +81,7 @@
 
     return-void
 
-    .line 7
+    .line 10
     :cond_0
     new-instance p1, Ljava/lang/IllegalArgumentException;
 
@@ -92,7 +95,7 @@
 .method public static synthetic a(Lcom/applovin/impl/dn;)Lcom/applovin/impl/sdk/network/a;
     .locals 0
 
-    .line 2
+    .line 1
     iget-object p0, p0, Lcom/applovin/impl/dn;->h:Lcom/applovin/impl/sdk/network/a;
 
     return-object p0
@@ -101,7 +104,7 @@
 .method public static synthetic a(Lcom/applovin/impl/dn;Lcom/applovin/impl/sj;)V
     .locals 0
 
-    .line 3
+    .line 2
     invoke-direct {p0, p1}, Lcom/applovin/impl/dn;->a(Lcom/applovin/impl/sj;)V
 
     return-void
@@ -112,7 +115,7 @@
 
     if-eqz p1, :cond_0
 
-    .line 4
+    .line 3
     invoke-virtual {p0}, Lcom/applovin/impl/yl;->b()Lcom/applovin/impl/sdk/j;
 
     move-result-object v0
@@ -121,7 +124,7 @@
 
     move-result-object v0
 
-    .line 5
+    .line 4
     invoke-virtual {p1}, Lcom/applovin/impl/sj;->a()Ljava/lang/Object;
 
     move-result-object v1
@@ -135,7 +138,7 @@
 .method public static synthetic b(Lcom/applovin/impl/dn;)Lcom/applovin/impl/sj;
     .locals 0
 
-    .line 2
+    .line 1
     iget-object p0, p0, Lcom/applovin/impl/dn;->k:Lcom/applovin/impl/sj;
 
     return-object p0
@@ -144,7 +147,7 @@
 .method public static synthetic c(Lcom/applovin/impl/dn;)Lcom/applovin/impl/tm$b;
     .locals 0
 
-    .line 2
+    .line 1
     iget-object p0, p0, Lcom/applovin/impl/dn;->j:Lcom/applovin/impl/tm$b;
 
     return-object p0
@@ -166,7 +169,7 @@
 .method public a(Lcom/applovin/impl/tm$b;)V
     .locals 0
 
-    .line 1
+    .line 5
     iput-object p1, p0, Lcom/applovin/impl/dn;->j:Lcom/applovin/impl/tm$b;
 
     return-void
@@ -181,7 +184,7 @@
 .method public b(Lcom/applovin/impl/sj;)V
     .locals 0
 
-    .line 1
+    .line 2
     iput-object p1, p0, Lcom/applovin/impl/dn;->l:Lcom/applovin/impl/sj;
 
     return-void
@@ -190,7 +193,7 @@
 .method public c(Lcom/applovin/impl/sj;)V
     .locals 0
 
-    .line 1
+    .line 2
     iput-object p1, p0, Lcom/applovin/impl/dn;->k:Lcom/applovin/impl/sj;
 
     return-void

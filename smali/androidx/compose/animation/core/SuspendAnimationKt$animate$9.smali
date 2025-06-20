@@ -3,14 +3,14 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lzh/c;
+.implements Lka/c;
 
 
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "Lkotlin/jvm/internal/Lambda;",
-        "Lzh/c;"
+        "Lka/c;"
     }
 .end annotation
 
@@ -20,11 +20,11 @@
     }
     d2 = {
         "T",
-        "Landroidx/compose/animation/core/m;",
+        "Landroidx/compose/animation/core/l;",
         "V",
         "",
         "it",
-        "Lqh/r;",
+        "LX9/j;",
         "invoke",
         "(J)V",
         "<anonymous>"
@@ -47,10 +47,10 @@
     .end annotation
 .end field
 
-.field final synthetic $block:Lzh/c;
+.field final synthetic $block:Lka/c;
     .annotation system Ldalvik/annotation/Signature;
         value = {
-            "Lzh/c;"
+            "Lka/c;"
         }
     .end annotation
 .end field
@@ -61,33 +61,33 @@
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Lkotlin/jvm/internal/Ref$ObjectRef<",
-            "Landroidx/compose/animation/core/f;",
+            "Landroidx/compose/animation/core/e;",
             ">;"
         }
     .end annotation
 .end field
 
-.field final synthetic $this_animate:Landroidx/compose/animation/core/h;
+.field final synthetic $this_animate:Landroidx/compose/animation/core/g;
     .annotation system Ldalvik/annotation/Signature;
         value = {
-            "Landroidx/compose/animation/core/h;"
+            "Landroidx/compose/animation/core/g;"
         }
     .end annotation
 .end field
 
 
 # direct methods
-.method public constructor <init>(Lkotlin/jvm/internal/Ref$ObjectRef;FLandroidx/compose/animation/core/d;Landroidx/compose/animation/core/h;Lzh/c;)V
+.method public constructor <init>(Lkotlin/jvm/internal/Ref$ObjectRef;FLandroidx/compose/animation/core/d;Landroidx/compose/animation/core/g;Lka/c;)V
     .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
             "Lkotlin/jvm/internal/Ref$ObjectRef<",
-            "Landroidx/compose/animation/core/f;",
+            "Landroidx/compose/animation/core/e;",
             ">;F",
             "Landroidx/compose/animation/core/d;",
-            "Landroidx/compose/animation/core/h;",
-            "Lzh/c;",
+            "Landroidx/compose/animation/core/g;",
+            "Lka/c;",
             ")V"
         }
     .end annotation
@@ -95,18 +95,32 @@
     .line 1
     iput-object p1, p0, Landroidx/compose/animation/core/SuspendAnimationKt$animate$9;->$lateInitScope:Lkotlin/jvm/internal/Ref$ObjectRef;
 
+    .line 2
+    .line 3
     iput p2, p0, Landroidx/compose/animation/core/SuspendAnimationKt$animate$9;->$durationScale:F
 
+    .line 4
+    .line 5
     iput-object p3, p0, Landroidx/compose/animation/core/SuspendAnimationKt$animate$9;->$animation:Landroidx/compose/animation/core/d;
 
-    iput-object p4, p0, Landroidx/compose/animation/core/SuspendAnimationKt$animate$9;->$this_animate:Landroidx/compose/animation/core/h;
+    .line 6
+    .line 7
+    iput-object p4, p0, Landroidx/compose/animation/core/SuspendAnimationKt$animate$9;->$this_animate:Landroidx/compose/animation/core/g;
 
-    iput-object p5, p0, Landroidx/compose/animation/core/SuspendAnimationKt$animate$9;->$block:Lzh/c;
+    .line 8
+    .line 9
+    iput-object p5, p0, Landroidx/compose/animation/core/SuspendAnimationKt$animate$9;->$block:Lka/c;
 
+    .line 10
+    .line 11
     const/4 p1, 0x1
 
+    .line 12
     invoke-direct {p0, p1}, Lkotlin/jvm/internal/Lambda;-><init>(I)V
 
+    .line 13
+    .line 14
+    .line 15
     return-void
 .end method
 
@@ -124,7 +138,7 @@
 
     invoke-virtual {p0, v0, v1}, Landroidx/compose/animation/core/SuspendAnimationKt$animate$9;->invoke(J)V
 
-    sget-object p1, Lqh/r;->a:Lqh/r;
+    sget-object p1, LX9/j;->a:LX9/j;
 
     return-object p1
 .end method
@@ -132,27 +146,27 @@
 .method public final invoke(J)V
     .locals 8
 
+    .line 2
     iget-object v0, p0, Landroidx/compose/animation/core/SuspendAnimationKt$animate$9;->$lateInitScope:Lkotlin/jvm/internal/Ref$ObjectRef;
 
-    .line 2
     iget-object v0, v0, Lkotlin/jvm/internal/Ref$ObjectRef;->element:Ljava/lang/Object;
 
     move-object v1, v0
 
-    check-cast v1, Landroidx/compose/animation/core/f;
+    check-cast v1, Landroidx/compose/animation/core/e;
 
     iget v4, p0, Landroidx/compose/animation/core/SuspendAnimationKt$animate$9;->$durationScale:F
 
     iget-object v5, p0, Landroidx/compose/animation/core/SuspendAnimationKt$animate$9;->$animation:Landroidx/compose/animation/core/d;
 
-    iget-object v6, p0, Landroidx/compose/animation/core/SuspendAnimationKt$animate$9;->$this_animate:Landroidx/compose/animation/core/h;
+    iget-object v6, p0, Landroidx/compose/animation/core/SuspendAnimationKt$animate$9;->$this_animate:Landroidx/compose/animation/core/g;
 
-    iget-object v7, p0, Landroidx/compose/animation/core/SuspendAnimationKt$animate$9;->$block:Lzh/c;
+    iget-object v7, p0, Landroidx/compose/animation/core/SuspendAnimationKt$animate$9;->$block:Lka/c;
 
     move-wide v2, p1
 
     .line 3
-    invoke-static/range {v1 .. v7}, Landroidx/compose/animation/core/b;->m(Landroidx/compose/animation/core/f;JFLandroidx/compose/animation/core/d;Landroidx/compose/animation/core/h;Lzh/c;)V
+    invoke-static/range {v1 .. v7}, Landroidx/compose/animation/core/b;->m(Landroidx/compose/animation/core/e;JFLandroidx/compose/animation/core/d;Landroidx/compose/animation/core/g;Lka/c;)V
 
     return-void
 .end method

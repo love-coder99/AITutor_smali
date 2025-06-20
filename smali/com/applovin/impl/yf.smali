@@ -100,6 +100,11 @@
     .end array-data
 
     .line 34
+    .line 35
+    .line 36
+    .line 37
+    .line 38
+    .line 39
     :array_1
     .array-data 4
         0x3f800000    # 1.0f
@@ -575,9 +580,9 @@
 .method public static a(Ljava/lang/String;B)Z
     .locals 3
 
+    .line 33
     const-string v0, "video/avc"
 
-    .line 33
     invoke-virtual {v0, p0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
     move-result v0
@@ -592,10 +597,10 @@
 
     if-eq v0, v2, :cond_2
 
+    .line 34
     :cond_0
     const-string v0, "video/hevc"
 
-    .line 34
     invoke-virtual {v0, p0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
     move-result p0
@@ -675,9 +680,9 @@
 .method public static c([BI)I
     .locals 8
 
+    .line 1
     sget-object v0, Lcom/applovin/impl/yf;->c:Ljava/lang/Object;
 
-    .line 1
     monitor-enter v0
 
     const/4 v1, 0x0
@@ -698,9 +703,9 @@
 
     if-ge v2, p1, :cond_0
 
+    .line 3
     sget-object v4, Lcom/applovin/impl/yf;->d:[I
 
-    .line 3
     array-length v5, v4
 
     if-gt v5, v3, :cond_1
@@ -724,13 +729,13 @@
 
     goto :goto_3
 
+    .line 6
     :cond_1
     :goto_1
     sget-object v4, Lcom/applovin/impl/yf;->d:[I
 
     add-int/lit8 v5, v3, 0x1
 
-    .line 6
     aput v2, v4, v3
 
     add-int/lit8 v2, v2, 0x3
@@ -751,9 +756,9 @@
     :goto_2
     if-ge v2, v3, :cond_3
 
+    .line 7
     sget-object v6, Lcom/applovin/impl/yf;->d:[I
 
-    .line 7
     aget v6, v6, v2
 
     sub-int/2addr v6, v4
@@ -1229,10 +1234,10 @@
 
     goto :goto_b
 
+    .line 53
     :cond_f
     sget-object v0, Lcom/applovin/impl/yf;->b:[F
 
-    .line 53
     array-length v2, v0
 
     if-ge v1, v2, :cond_10
@@ -1244,20 +1249,21 @@
 
     goto :goto_b
 
+    .line 55
     :cond_10
     const-string v0, "Unexpected aspect_ratio_idc value: "
 
     const-string v2, "NalUnitUtil"
 
-    .line 55
-    invoke-static {v0, v1, v2}, Landroidx/compose/foundation/text/modifiers/f;->z(Ljava/lang/String;ILjava/lang/String;)V
+    .line 56
+    invoke-static {v1, v0, v2}, Lcom/android/billingclient/api/a;->m(ILjava/lang/String;Ljava/lang/String;)V
 
     :cond_11
     const/high16 v0, 0x3f800000    # 1.0f
 
     const/high16 v9, 0x3f800000    # 1.0f
 
-    .line 56
+    .line 57
     :goto_b
     new-instance v0, Lcom/applovin/impl/yf$b;
 

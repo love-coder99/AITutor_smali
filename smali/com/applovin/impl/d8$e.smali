@@ -50,7 +50,7 @@
 .method public static synthetic a(Lcom/applovin/impl/d8$e;)Z
     .locals 0
 
-    .line 3
+    .line 1
     iget-boolean p0, p0, Lcom/applovin/impl/d8$e;->a:Z
 
     return p0
@@ -61,7 +61,7 @@
 .method public a(I)V
     .locals 2
 
-    .line 1
+    .line 2
     iget-boolean v0, p0, Lcom/applovin/impl/d8$e;->a:Z
 
     if-lez p1, :cond_0
@@ -78,6 +78,7 @@
 
     iput-boolean v0, p0, Lcom/applovin/impl/d8$e;->a:Z
 
+    .line 3
     iget v0, p0, Lcom/applovin/impl/d8$e;->c:I
 
     add-int/2addr v0, p1
@@ -90,7 +91,7 @@
 .method public a(Lcom/applovin/impl/oh;)V
     .locals 2
 
-    .line 2
+    .line 4
     iget-boolean v0, p0, Lcom/applovin/impl/d8$e;->a:Z
 
     iget-object v1, p0, Lcom/applovin/impl/d8$e;->b:Lcom/applovin/impl/oh;
@@ -109,6 +110,7 @@
 
     iput-boolean v0, p0, Lcom/applovin/impl/d8$e;->a:Z
 
+    .line 5
     iput-object p1, p0, Lcom/applovin/impl/d8$e;->b:Lcom/applovin/impl/oh;
 
     return-void
@@ -117,14 +119,22 @@
 .method public b(I)V
     .locals 1
 
+    .line 1
     const/4 v0, 0x1
 
+    .line 2
     iput-boolean v0, p0, Lcom/applovin/impl/d8$e;->a:Z
 
+    .line 3
+    .line 4
     iput-boolean v0, p0, Lcom/applovin/impl/d8$e;->f:Z
 
+    .line 5
+    .line 6
     iput p1, p0, Lcom/applovin/impl/d8$e;->g:I
 
+    .line 7
+    .line 8
     return-void
 .end method
 

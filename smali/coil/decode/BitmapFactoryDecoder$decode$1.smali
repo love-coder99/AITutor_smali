@@ -4,6 +4,16 @@
 
 
 # annotations
+.annotation runtime Lca/c;
+    c = "coil.decode.BitmapFactoryDecoder"
+    f = "BitmapFactoryDecoder.kt"
+    l = {
+        0xe8,
+        0x2e
+    }
+    m = "decode"
+.end annotation
+
 .annotation runtime Lkotlin/Metadata;
     k = 0x3
     mv = {
@@ -12,16 +22,6 @@
         0x0
     }
     xi = 0x30
-.end annotation
-
-.annotation runtime Lth/c;
-    c = "coil.decode.BitmapFactoryDecoder"
-    f = "BitmapFactoryDecoder.kt"
-    l = {
-        0xe8,
-        0x2e
-    }
-    m = "decode"
 .end annotation
 
 
@@ -34,16 +34,16 @@
 
 .field synthetic result:Ljava/lang/Object;
 
-.field final synthetic this$0:Lcoil/decode/d;
+.field final synthetic this$0:Lcoil/decode/e;
 
 
 # direct methods
-.method public constructor <init>(Lcoil/decode/d;Lkotlin/coroutines/Continuation;)V
+.method public constructor <init>(Lcoil/decode/e;Lkotlin/coroutines/Continuation;)V
     .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
-            "Lcoil/decode/d;",
+            "Lcoil/decode/e;",
             "Lkotlin/coroutines/Continuation<",
             "-",
             "Lcoil/decode/BitmapFactoryDecoder$decode$1;",
@@ -51,7 +51,7 @@
         }
     .end annotation
 
-    iput-object p1, p0, Lcoil/decode/BitmapFactoryDecoder$decode$1;->this$0:Lcoil/decode/d;
+    iput-object p1, p0, Lcoil/decode/BitmapFactoryDecoder$decode$1;->this$0:Lcoil/decode/e;
 
     invoke-direct {p0, p2}, Lkotlin/coroutines/jvm/internal/ContinuationImpl;-><init>(Lkotlin/coroutines/Continuation;)V
 
@@ -73,9 +73,9 @@
 
     iput p1, p0, Lcoil/decode/BitmapFactoryDecoder$decode$1;->label:I
 
-    iget-object p1, p0, Lcoil/decode/BitmapFactoryDecoder$decode$1;->this$0:Lcoil/decode/d;
+    iget-object p1, p0, Lcoil/decode/BitmapFactoryDecoder$decode$1;->this$0:Lcoil/decode/e;
 
-    invoke-virtual {p1, p0}, Lcoil/decode/d;->a(Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
+    invoke-virtual {p1, p0}, Lcoil/decode/e;->a(Lkotlin/coroutines/jvm/internal/ContinuationImpl;)Ljava/lang/Object;
 
     move-result-object p1
 

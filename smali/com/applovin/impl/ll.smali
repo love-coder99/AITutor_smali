@@ -55,9 +55,9 @@
 .method private a(Ljava/lang/String;Lcom/applovin/communicator/AppLovinCommunicatorSubscriber;)Lcom/applovin/impl/ml;
     .locals 3
 
+    .line 7
     iget-object v0, p0, Lcom/applovin/impl/ll;->a:Ljava/util/Set;
 
-    .line 7
     invoke-interface {v0}, Ljava/util/Set;->iterator()Ljava/util/Iterator;
 
     move-result-object v0
@@ -109,11 +109,12 @@
 .method public a(Lcom/applovin/communicator/AppLovinCommunicatorSubscriber;Ljava/lang/String;)Z
     .locals 6
 
+    .line 9
     const-string v0, "Attempting to re-subscribe subscriber ("
 
     if-eqz p1, :cond_3
 
-    .line 9
+    .line 10
     invoke-static {p2}, Lcom/applovin/impl/sdk/utils/StringUtils;->isValidString(Ljava/lang/String;)Z
 
     move-result v1
@@ -122,13 +123,13 @@
 
     goto :goto_2
 
+    .line 11
     :cond_0
     iget-object v1, p0, Lcom/applovin/impl/ll;->b:Ljava/lang/Object;
 
-    .line 10
     monitor-enter v1
 
-    .line 11
+    .line 12
     :try_start_0
     invoke-direct {p0, p2, p1}, Lcom/applovin/impl/ll;->a(Ljava/lang/String;Lcom/applovin/communicator/AppLovinCommunicatorSubscriber;)Lcom/applovin/impl/ml;
 
@@ -138,9 +139,9 @@
 
     if-eqz v2, :cond_2
 
+    .line 13
     const-string v4, "AppLovinCommunicator"
 
-    .line 12
     new-instance v5, Ljava/lang/StringBuilder;
 
     invoke-direct {v5, v0}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
@@ -163,17 +164,17 @@
 
     invoke-static {v4, p1}, Lcom/applovin/impl/sdk/n;->h(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 13
+    .line 14
     invoke-virtual {v2}, Lcom/applovin/impl/ml;->c()Z
 
     move-result p1
 
     if-nez p1, :cond_1
 
-    .line 14
+    .line 15
     invoke-virtual {v2, v3}, Lcom/applovin/impl/ml;->a(Z)V
 
-    .line 15
+    .line 16
     new-instance p1, Landroid/content/IntentFilter;
 
     invoke-direct {p1, p2}, Landroid/content/IntentFilter;-><init>(Ljava/lang/String;)V
@@ -187,30 +188,30 @@
 
     goto :goto_1
 
-    .line 16
+    .line 17
     :cond_1
     :goto_0
     monitor-exit v1
 
     return v3
 
-    .line 17
+    .line 18
     :cond_2
     new-instance v0, Lcom/applovin/impl/ml;
 
     invoke-direct {v0, p2, p1}, Lcom/applovin/impl/ml;-><init>(Ljava/lang/String;Lcom/applovin/communicator/AppLovinCommunicatorSubscriber;)V
 
+    .line 19
     iget-object p1, p0, Lcom/applovin/impl/ll;->a:Ljava/util/Set;
 
-    .line 18
     invoke-interface {p1, v0}, Ljava/util/Set;->add(Ljava/lang/Object;)Z
 
-    .line 19
+    .line 20
     monitor-exit v1
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    .line 20
+    .line 21
     new-instance p1, Landroid/content/IntentFilter;
 
     invoke-direct {p1, p2}, Landroid/content/IntentFilter;-><init>(Ljava/lang/String;)V
@@ -219,7 +220,7 @@
 
     return v3
 
-    .line 21
+    .line 22
     :goto_1
     :try_start_1
     monitor-exit v1
@@ -228,7 +229,7 @@
 
     throw p1
 
-    .line 22
+    .line 23
     :cond_3
     :goto_2
     new-instance v0, Ljava/lang/StringBuilder;
@@ -265,15 +266,15 @@
 .method public a(Ljava/lang/String;)Z
     .locals 3
 
+    .line 1
     iget-object v0, p0, Lcom/applovin/impl/ll;->b:Ljava/lang/Object;
 
-    .line 1
     monitor-enter v0
 
+    .line 2
     :try_start_0
     iget-object v1, p0, Lcom/applovin/impl/ll;->a:Ljava/util/Set;
 
-    .line 2
     invoke-interface {v1}, Ljava/util/Set;->iterator()Ljava/util/Iterator;
 
     move-result-object v1

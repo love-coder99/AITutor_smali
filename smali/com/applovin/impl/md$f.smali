@@ -113,9 +113,9 @@
     .line 1
     invoke-direct {p0}, Lcom/applovin/impl/md$f;->c()V
 
+    .line 2
     iget-object v0, p0, Lcom/applovin/impl/md$f;->b:[Landroid/media/MediaCodecInfo;
 
-    .line 2
     array-length v0, v0
 
     return v0
@@ -127,9 +127,9 @@
     .line 3
     invoke-direct {p0}, Lcom/applovin/impl/md$f;->c()V
 
+    .line 4
     iget-object v0, p0, Lcom/applovin/impl/md$f;->b:[Landroid/media/MediaCodecInfo;
 
-    .line 4
     aget-object p1, v0, p1
 
     return-object p1

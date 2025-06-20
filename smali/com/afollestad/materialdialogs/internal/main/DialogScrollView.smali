@@ -6,11 +6,17 @@
 # annotations
 .annotation runtime Lkotlin/Metadata;
     d1 = {
-        "\u0000\u001e\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0008\u0007\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0008\u0004\u0008\u0007\u0018\u00002\u00020\u0001B\u001d\u0012\u0008\u0010\u000b\u001a\u0004\u0018\u00010\n\u0012\n\u0008\u0002\u0010\r\u001a\u0004\u0018\u00010\u000c\u00a2\u0006\u0004\u0008\u000e\u0010\u000fR$\u0010\t\u001a\u0004\u0018\u00010\u00028\u0006@\u0006X\u0086\u000e\u00a2\u0006\u0012\n\u0004\u0008\u0003\u0010\u0004\u001a\u0004\u0008\u0005\u0010\u0006\"\u0004\u0008\u0007\u0010\u0008\u00a8\u0006\u0010"
+        "\u0000\u001e\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0008\u0003\n\u0002\u0018\u0002\n\u0002\u0008\u0008\u0008\u0007\u0018\u00002\u00020\u0001B\u001d\u0012\u0008\u0010\u0003\u001a\u0004\u0018\u00010\u0002\u0012\n\u0008\u0002\u0010\u0005\u001a\u0004\u0018\u00010\u0004\u00a2\u0006\u0004\u0008\u0006\u0010\u0007R$\u0010\u000f\u001a\u0004\u0018\u00010\u00088\u0006@\u0006X\u0086\u000e\u00a2\u0006\u0012\n\u0004\u0008\t\u0010\n\u001a\u0004\u0008\u000b\u0010\u000c\"\u0004\u0008\r\u0010\u000e\u00a8\u0006\u0010"
     }
     d2 = {
         "Lcom/afollestad/materialdialogs/internal/main/DialogScrollView;",
         "Landroid/widget/ScrollView;",
+        "Landroid/content/Context;",
+        "context",
+        "Landroid/util/AttributeSet;",
+        "attrs",
+        "<init>",
+        "(Landroid/content/Context;Landroid/util/AttributeSet;)V",
         "Lcom/afollestad/materialdialogs/internal/main/DialogLayout;",
         "b",
         "Lcom/afollestad/materialdialogs/internal/main/DialogLayout;",
@@ -19,12 +25,6 @@
         "setRootView",
         "(Lcom/afollestad/materialdialogs/internal/main/DialogLayout;)V",
         "rootView",
-        "Landroid/content/Context;",
-        "context",
-        "Landroid/util/AttributeSet;",
-        "attrs",
-        "<init>",
-        "(Landroid/content/Context;Landroid/util/AttributeSet;)V",
         "core"
     }
     k = 0x1
@@ -209,7 +209,7 @@
 
     .line 69
     .line 70
-    invoke-virtual {v0, v4}, Lt5/a;->setDrawDivider(Z)V
+    invoke-virtual {v0, v4}, LN2/a;->setDrawDivider(Z)V
 
     .line 71
     .line 72
@@ -222,7 +222,7 @@
 
     .line 76
     .line 77
-    invoke-virtual {v0, v1}, Lt5/a;->setDrawDivider(Z)V
+    invoke-virtual {v0, v1}, LN2/a;->setDrawDivider(Z)V
 
     .line 78
     .line 79
@@ -244,7 +244,7 @@
 
     .line 86
     .line 87
-    invoke-virtual {v2, v1}, Lt5/a;->setDrawDivider(Z)V
+    invoke-virtual {v2, v1}, LN2/a;->setDrawDivider(Z)V
 
     .line 88
     .line 89
@@ -257,7 +257,7 @@
 
     .line 93
     .line 94
-    invoke-virtual {v0, v1}, Lt5/a;->setDrawDivider(Z)V
+    invoke-virtual {v0, v1}, LN2/a;->setDrawDivider(Z)V
 
     .line 95
     .line 96
@@ -269,8 +269,11 @@
 .method public final getRootView()Lcom/afollestad/materialdialogs/internal/main/DialogLayout;
     .locals 1
 
+    .line 1
     iget-object v0, p0, Lcom/afollestad/materialdialogs/internal/main/DialogScrollView;->b:Lcom/afollestad/materialdialogs/internal/main/DialogLayout;
 
+    .line 2
+    .line 3
     return-object v0
 .end method
 
@@ -311,7 +314,7 @@
 
     .line 17
     .line 18
-    invoke-interface {v0, p0}, Lzh/c;->invoke(Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-interface {v0, p0}, Lka/c;->invoke(Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 19
     .line 20
@@ -328,11 +331,11 @@
     move-result-object v1
 
     .line 26
-    new-instance v2, Lu5/a;
+    new-instance v2, LO2/a;
 
     .line 27
     .line 28
-    invoke-direct {v2, p0, v0}, Lu5/a;-><init>(Landroid/view/View;Lzh/c;)V
+    invoke-direct {v2, p0, v0}, LO2/a;-><init>(Landroid/view/ViewGroup;Lka/c;)V
 
     .line 29
     .line 30
@@ -366,7 +369,10 @@
 .method public final setRootView(Lcom/afollestad/materialdialogs/internal/main/DialogLayout;)V
     .locals 0
 
+    .line 1
     iput-object p1, p0, Lcom/afollestad/materialdialogs/internal/main/DialogScrollView;->b:Lcom/afollestad/materialdialogs/internal/main/DialogLayout;
 
+    .line 2
+    .line 3
     return-void
 .end method

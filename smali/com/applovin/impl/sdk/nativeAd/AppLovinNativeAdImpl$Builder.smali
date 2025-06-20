@@ -420,40 +420,55 @@
 .method public setAdvertiser(Ljava/lang/String;)Lcom/applovin/impl/sdk/nativeAd/AppLovinNativeAdImpl$Builder;
     .locals 0
 
+    .line 1
     iput-object p1, p0, Lcom/applovin/impl/sdk/nativeAd/AppLovinNativeAdImpl$Builder;->advertiser:Ljava/lang/String;
 
+    .line 2
+    .line 3
     return-object p0
 .end method
 
 .method public setBody(Ljava/lang/String;)Lcom/applovin/impl/sdk/nativeAd/AppLovinNativeAdImpl$Builder;
     .locals 0
 
+    .line 1
     iput-object p1, p0, Lcom/applovin/impl/sdk/nativeAd/AppLovinNativeAdImpl$Builder;->body:Ljava/lang/String;
 
+    .line 2
+    .line 3
     return-object p0
 .end method
 
 .method public setCallToAction(Ljava/lang/String;)Lcom/applovin/impl/sdk/nativeAd/AppLovinNativeAdImpl$Builder;
     .locals 0
 
+    .line 1
     iput-object p1, p0, Lcom/applovin/impl/sdk/nativeAd/AppLovinNativeAdImpl$Builder;->callToAction:Ljava/lang/String;
 
+    .line 2
+    .line 3
     return-object p0
 .end method
 
 .method public setClickDestinationBackupUri(Landroid/net/Uri;)Lcom/applovin/impl/sdk/nativeAd/AppLovinNativeAdImpl$Builder;
     .locals 0
 
+    .line 1
     iput-object p1, p0, Lcom/applovin/impl/sdk/nativeAd/AppLovinNativeAdImpl$Builder;->clickDestinationBackupUri:Landroid/net/Uri;
 
+    .line 2
+    .line 3
     return-object p0
 .end method
 
 .method public setClickDestinationUri(Landroid/net/Uri;)Lcom/applovin/impl/sdk/nativeAd/AppLovinNativeAdImpl$Builder;
     .locals 0
 
+    .line 1
     iput-object p1, p0, Lcom/applovin/impl/sdk/nativeAd/AppLovinNativeAdImpl$Builder;->clickDestinationUri:Landroid/net/Uri;
 
+    .line 2
+    .line 3
     return-object p0
 .end method
 
@@ -469,8 +484,11 @@
         }
     .end annotation
 
+    .line 1
     iput-object p1, p0, Lcom/applovin/impl/sdk/nativeAd/AppLovinNativeAdImpl$Builder;->clickTrackingRequests:Ljava/util/List;
 
+    .line 2
+    .line 3
     return-object p0
 .end method
 
@@ -486,16 +504,22 @@
         }
     .end annotation
 
+    .line 1
     iput-object p1, p0, Lcom/applovin/impl/sdk/nativeAd/AppLovinNativeAdImpl$Builder;->clickTrackingUrls:Ljava/util/List;
 
+    .line 2
+    .line 3
     return-object p0
 .end method
 
 .method public setIconUri(Landroid/net/Uri;)Lcom/applovin/impl/sdk/nativeAd/AppLovinNativeAdImpl$Builder;
     .locals 0
 
+    .line 1
     iput-object p1, p0, Lcom/applovin/impl/sdk/nativeAd/AppLovinNativeAdImpl$Builder;->iconUri:Landroid/net/Uri;
 
+    .line 2
+    .line 3
     return-object p0
 .end method
 
@@ -511,8 +535,11 @@
         }
     .end annotation
 
+    .line 1
     iput-object p1, p0, Lcom/applovin/impl/sdk/nativeAd/AppLovinNativeAdImpl$Builder;->impressionRequests:Ljava/util/List;
 
+    .line 2
+    .line 3
     return-object p0
 .end method
 
@@ -528,56 +555,77 @@
         }
     .end annotation
 
+    .line 1
     iput-object p1, p0, Lcom/applovin/impl/sdk/nativeAd/AppLovinNativeAdImpl$Builder;->jsTrackers:Ljava/util/List;
 
+    .line 2
+    .line 3
     return-object p0
 .end method
 
 .method public setMainImageUri(Landroid/net/Uri;)Lcom/applovin/impl/sdk/nativeAd/AppLovinNativeAdImpl$Builder;
     .locals 0
 
+    .line 1
     iput-object p1, p0, Lcom/applovin/impl/sdk/nativeAd/AppLovinNativeAdImpl$Builder;->mainImageUri:Landroid/net/Uri;
 
+    .line 2
+    .line 3
     return-object p0
 .end method
 
 .method public setPrivacyDestinationUri(Landroid/net/Uri;)Lcom/applovin/impl/sdk/nativeAd/AppLovinNativeAdImpl$Builder;
     .locals 0
 
+    .line 1
     iput-object p1, p0, Lcom/applovin/impl/sdk/nativeAd/AppLovinNativeAdImpl$Builder;->privacyDestinationUri:Landroid/net/Uri;
 
+    .line 2
+    .line 3
     return-object p0
 .end method
 
 .method public setPrivacyIconUri(Landroid/net/Uri;)Lcom/applovin/impl/sdk/nativeAd/AppLovinNativeAdImpl$Builder;
     .locals 0
 
+    .line 1
     iput-object p1, p0, Lcom/applovin/impl/sdk/nativeAd/AppLovinNativeAdImpl$Builder;->privacyIconUri:Landroid/net/Uri;
 
+    .line 2
+    .line 3
     return-object p0
 .end method
 
 .method public setStarRating(Ljava/lang/Double;)Lcom/applovin/impl/sdk/nativeAd/AppLovinNativeAdImpl$Builder;
     .locals 0
 
+    .line 1
     iput-object p1, p0, Lcom/applovin/impl/sdk/nativeAd/AppLovinNativeAdImpl$Builder;->starRating:Ljava/lang/Double;
 
+    .line 2
+    .line 3
     return-object p0
 .end method
 
 .method public setTitle(Ljava/lang/String;)Lcom/applovin/impl/sdk/nativeAd/AppLovinNativeAdImpl$Builder;
     .locals 0
 
+    .line 1
     iput-object p1, p0, Lcom/applovin/impl/sdk/nativeAd/AppLovinNativeAdImpl$Builder;->title:Ljava/lang/String;
 
+    .line 2
+    .line 3
     return-object p0
 .end method
 
 .method public setVastAd(Lcom/applovin/impl/aq;)Lcom/applovin/impl/sdk/nativeAd/AppLovinNativeAdImpl$Builder;
     .locals 0
 
+    .line 1
     iput-object p1, p0, Lcom/applovin/impl/sdk/nativeAd/AppLovinNativeAdImpl$Builder;->vastAd:Lcom/applovin/impl/aq;
 
+    .line 2
+    .line 3
     return-object p0
 .end method
 
@@ -593,8 +641,11 @@
         }
     .end annotation
 
+    .line 1
     iput-object p1, p0, Lcom/applovin/impl/sdk/nativeAd/AppLovinNativeAdImpl$Builder;->viewableMRC100Requests:Ljava/util/List;
 
+    .line 2
+    .line 3
     return-object p0
 .end method
 
@@ -610,8 +661,11 @@
         }
     .end annotation
 
+    .line 1
     iput-object p1, p0, Lcom/applovin/impl/sdk/nativeAd/AppLovinNativeAdImpl$Builder;->viewableMRC50Requests:Ljava/util/List;
 
+    .line 2
+    .line 3
     return-object p0
 .end method
 
@@ -627,7 +681,10 @@
         }
     .end annotation
 
+    .line 1
     iput-object p1, p0, Lcom/applovin/impl/sdk/nativeAd/AppLovinNativeAdImpl$Builder;->viewableVideo50Requests:Ljava/util/List;
 
+    .line 2
+    .line 3
     return-object p0
 .end method

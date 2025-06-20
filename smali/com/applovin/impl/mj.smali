@@ -100,23 +100,23 @@
 .method private static a(Ljava/lang/String;)I
     .locals 2
 
-    .line 7
+    .line 8
     invoke-virtual {p0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    const/4 v0, -0x1
 
     invoke-virtual {p0}, Ljava/lang/String;->hashCode()I
 
-    move-result v0
+    move-result v1
 
-    const/4 v1, -0x1
-
-    sparse-switch v0, :sswitch_data_0
+    sparse-switch v1, :sswitch_data_0
 
     goto :goto_0
 
     :sswitch_0
-    const-string v0, "Super_SlowMotion_BGM"
+    const-string v1, "Super_SlowMotion_BGM"
 
-    invoke-virtual {p0, v0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+    invoke-virtual {p0, v1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
     move-result p0
 
@@ -125,14 +125,14 @@
     goto :goto_0
 
     :cond_0
-    const/4 v1, 0x4
+    const/4 v0, 0x4
 
     goto :goto_0
 
     :sswitch_1
-    const-string v0, "Super_SlowMotion_Deflickering_On"
+    const-string v1, "Super_SlowMotion_Deflickering_On"
 
-    invoke-virtual {p0, v0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+    invoke-virtual {p0, v1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
     move-result p0
 
@@ -141,14 +141,14 @@
     goto :goto_0
 
     :cond_1
-    const/4 v1, 0x3
+    const/4 v0, 0x3
 
     goto :goto_0
 
     :sswitch_2
-    const-string v0, "Super_SlowMotion_Data"
+    const-string v1, "Super_SlowMotion_Data"
 
-    invoke-virtual {p0, v0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+    invoke-virtual {p0, v1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
     move-result p0
 
@@ -157,14 +157,14 @@
     goto :goto_0
 
     :cond_2
-    const/4 v1, 0x2
+    const/4 v0, 0x2
 
     goto :goto_0
 
     :sswitch_3
-    const-string v0, "Super_SlowMotion_Edit_Data"
+    const-string v1, "Super_SlowMotion_Edit_Data"
 
-    invoke-virtual {p0, v0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+    invoke-virtual {p0, v1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
     move-result p0
 
@@ -173,14 +173,14 @@
     goto :goto_0
 
     :cond_3
-    const/4 v1, 0x1
+    const/4 v0, 0x1
 
     goto :goto_0
 
     :sswitch_4
-    const-string v0, "SlowMotion_Data"
+    const-string v1, "SlowMotion_Data"
 
-    invoke-virtual {p0, v0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+    invoke-virtual {p0, v1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
     move-result p0
 
@@ -189,16 +189,16 @@
     goto :goto_0
 
     :cond_4
-    const/4 v1, 0x0
+    const/4 v0, 0x0
 
     :goto_0
-    packed-switch v1, :pswitch_data_0
+    packed-switch v0, :pswitch_data_0
 
+    .line 9
     const-string p0, "Invalid SEF name"
 
     const/4 v0, 0x0
 
-    .line 8
     invoke-static {p0, v0}, Lcom/applovin/impl/ch;->a(Ljava/lang/String;Ljava/lang/Throwable;)Lcom/applovin/impl/ch;
 
     move-result-object p0
@@ -252,19 +252,19 @@
 .method private static a(Lcom/applovin/impl/ah;I)Lcom/applovin/impl/jk;
     .locals 12
 
-    .line 31
+    .line 34
     new-instance v0, Ljava/util/ArrayList;
 
     invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
 
-    .line 32
+    .line 35
     invoke-virtual {p0, p1}, Lcom/applovin/impl/ah;->c(I)Ljava/lang/String;
 
     move-result-object p0
 
+    .line 36
     sget-object p1, Lcom/applovin/impl/mj;->e:Lcom/applovin/exoplayer2/common/base/Splitter;
 
-    .line 33
     invoke-virtual {p1, p0}, Lcom/applovin/exoplayer2/common/base/Splitter;->splitToList(Ljava/lang/CharSequence;)Ljava/util/List;
 
     move-result-object p0
@@ -273,7 +273,7 @@
 
     const/4 v1, 0x0
 
-    .line 34
+    .line 37
     :goto_0
     invoke-interface {p0}, Ljava/util/List;->size()I
 
@@ -281,9 +281,9 @@
 
     if-ge v1, v2, :cond_1
 
+    .line 38
     sget-object v2, Lcom/applovin/impl/mj;->d:Lcom/applovin/exoplayer2/common/base/Splitter;
 
-    .line 35
     invoke-interface {p0, v1}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
     move-result-object v3
@@ -294,7 +294,7 @@
 
     move-result-object v2
 
-    .line 36
+    .line 39
     invoke-interface {v2}, Ljava/util/List;->size()I
 
     move-result v3
@@ -305,7 +305,7 @@
 
     if-ne v3, v4, :cond_0
 
-    .line 37
+    .line 40
     :try_start_0
     invoke-interface {v2, p1}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
@@ -319,7 +319,7 @@
 
     const/4 v3, 0x1
 
-    .line 38
+    .line 41
     invoke-interface {v2, v3}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
     move-result-object v4
@@ -332,7 +332,7 @@
 
     const/4 v4, 0x2
 
-    .line 39
+    .line 42
     invoke-interface {v2, v4}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
     move-result-object v2
@@ -347,7 +347,7 @@
 
     shl-int v11, v3, v2
 
-    .line 40
+    .line 43
     new-instance v2, Lcom/applovin/impl/jk$b;
 
     move-object v6, v2
@@ -365,14 +365,14 @@
     :catch_0
     move-exception p0
 
-    .line 41
+    .line 44
     invoke-static {v5, p0}, Lcom/applovin/impl/ch;->a(Ljava/lang/String;Ljava/lang/Throwable;)Lcom/applovin/impl/ch;
 
     move-result-object p0
 
     throw p0
 
-    .line 42
+    .line 45
     :cond_0
     invoke-static {v5, v5}, Lcom/applovin/impl/ch;->a(Ljava/lang/String;Ljava/lang/Throwable;)Lcom/applovin/impl/ch;
 
@@ -380,7 +380,7 @@
 
     throw p0
 
-    .line 43
+    .line 46
     :cond_1
     new-instance p0, Lcom/applovin/impl/jk;
 
@@ -451,6 +451,7 @@
 
     const/4 p1, 0x2
 
+    .line 7
     iput p1, p0, Lcom/applovin/impl/mj;->b:I
 
     return-void
@@ -459,12 +460,12 @@
 .method private a(Lcom/applovin/impl/k8;Ljava/util/List;)V
     .locals 6
 
-    .line 16
+    .line 19
     invoke-interface {p1}, Lcom/applovin/impl/k8;->f()J
 
     move-result-wide v0
 
-    .line 17
+    .line 20
     invoke-interface {p1}, Lcom/applovin/impl/k8;->a()J
 
     move-result-wide v2
@@ -483,12 +484,12 @@
 
     long-to-int v3, v2
 
-    .line 18
+    .line 21
     new-instance v2, Lcom/applovin/impl/ah;
 
     invoke-direct {v2, v3}, Lcom/applovin/impl/ah;-><init>(I)V
 
-    .line 19
+    .line 22
     invoke-virtual {v2}, Lcom/applovin/impl/ah;->c()[B
 
     move-result-object v4
@@ -497,56 +498,56 @@
 
     invoke-interface {p1, v4, v5, v3}, Lcom/applovin/impl/k8;->d([BII)V
 
+    .line 23
     :goto_0
     iget-object p1, p0, Lcom/applovin/impl/mj;->a:Ljava/util/List;
 
-    .line 20
     invoke-interface {p1}, Ljava/util/List;->size()I
 
     move-result p1
 
     if-ge v5, p1, :cond_3
 
+    .line 24
     iget-object p1, p0, Lcom/applovin/impl/mj;->a:Ljava/util/List;
 
-    .line 21
     invoke-interface {p1, v5}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
     move-result-object p1
 
     check-cast p1, Lcom/applovin/impl/mj$a;
 
-    .line 22
+    .line 25
     iget-wide v3, p1, Lcom/applovin/impl/mj$a;->b:J
 
     sub-long/2addr v3, v0
 
     long-to-int v4, v3
 
-    .line 23
+    .line 26
     invoke-virtual {v2, v4}, Lcom/applovin/impl/ah;->f(I)V
 
     const/4 v3, 0x4
 
-    .line 24
+    .line 27
     invoke-virtual {v2, v3}, Lcom/applovin/impl/ah;->g(I)V
 
-    .line 25
+    .line 28
     invoke-virtual {v2}, Lcom/applovin/impl/ah;->m()I
 
     move-result v3
 
-    .line 26
+    .line 29
     invoke-virtual {v2, v3}, Lcom/applovin/impl/ah;->c(I)Ljava/lang/String;
 
     move-result-object v4
 
-    .line 27
+    .line 30
     invoke-static {v4}, Lcom/applovin/impl/mj;->a(Ljava/lang/String;)I
 
     move-result v4
 
-    .line 28
+    .line 31
     iget p1, p1, Lcom/applovin/impl/mj$a;->c:I
 
     add-int/lit8 v3, v3, 0x8
@@ -575,7 +576,7 @@
 
     goto :goto_1
 
-    .line 29
+    .line 32
     :cond_0
     new-instance p1, Ljava/lang/IllegalStateException;
 
@@ -583,7 +584,7 @@
 
     throw p1
 
-    .line 30
+    .line 33
     :cond_1
     invoke-static {v2, p1}, Lcom/applovin/impl/mj;->a(Lcom/applovin/impl/ah;I)Lcom/applovin/impl/jk;
 
@@ -854,6 +855,7 @@
 .method public a(Lcom/applovin/impl/k8;Lcom/applovin/impl/th;Ljava/util/List;)I
     .locals 8
 
+    .line 10
     iget v0, p0, Lcom/applovin/impl/mj;->b:I
 
     const-wide/16 v1, 0x0
@@ -872,15 +874,15 @@
 
     if-ne v0, v4, :cond_0
 
-    .line 9
+    .line 11
     invoke-direct {p0, p1, p3}, Lcom/applovin/impl/mj;->a(Lcom/applovin/impl/k8;Ljava/util/List;)V
 
-    .line 10
+    .line 12
     iput-wide v1, p2, Lcom/applovin/impl/th;->a:J
 
     goto :goto_1
 
-    .line 11
+    .line 13
     :cond_0
     new-instance p1, Ljava/lang/IllegalStateException;
 
@@ -888,19 +890,19 @@
 
     throw p1
 
-    .line 12
+    .line 14
     :cond_1
     invoke-direct {p0, p1, p2}, Lcom/applovin/impl/mj;->b(Lcom/applovin/impl/k8;Lcom/applovin/impl/th;)V
 
     goto :goto_1
 
-    .line 13
+    .line 15
     :cond_2
     invoke-direct {p0, p1, p2}, Lcom/applovin/impl/mj;->a(Lcom/applovin/impl/k8;Lcom/applovin/impl/th;)V
 
     goto :goto_1
 
-    .line 14
+    .line 16
     :cond_3
     invoke-interface {p1}, Lcom/applovin/impl/k8;->a()J
 
@@ -923,11 +925,12 @@
     :cond_4
     sub-long v1, v4, v6
 
-    .line 15
+    .line 17
     :cond_5
     :goto_0
     iput-wide v1, p2, Lcom/applovin/impl/th;->a:J
 
+    .line 18
     iput v3, p0, Lcom/applovin/impl/mj;->b:I
 
     :goto_1
@@ -937,13 +940,14 @@
 .method public a()V
     .locals 1
 
+    .line 47
     iget-object v0, p0, Lcom/applovin/impl/mj;->a:Ljava/util/List;
 
-    .line 44
     invoke-interface {v0}, Ljava/util/List;->clear()V
 
     const/4 v0, 0x0
 
+    .line 48
     iput v0, p0, Lcom/applovin/impl/mj;->b:I
 
     return-void

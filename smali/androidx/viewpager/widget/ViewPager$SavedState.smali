@@ -28,14 +28,14 @@
     .locals 2
 
     .line 1
-    new-instance v0, Landroidx/compose/runtime/n1;
+    new-instance v0, LF6/a;
 
     .line 2
     .line 3
     const/4 v1, 0x2
 
     .line 4
-    invoke-direct {v0, v1}, Landroidx/compose/runtime/n1;-><init>(I)V
+    invoke-direct {v0, v1}, LF6/a;-><init>(I)V
 
     .line 5
     .line 6
@@ -165,7 +165,7 @@
 
     .line 27
     .line 28
-    invoke-static {v0, v1, v2}, Lj0/d;->m(Ljava/lang/StringBuilder;ILjava/lang/String;)Ljava/lang/String;
+    invoke-static {v1, v2, v0}, LB/u;->o(ILjava/lang/String;Ljava/lang/StringBuilder;)Ljava/lang/String;
 
     .line 29
     .line 30

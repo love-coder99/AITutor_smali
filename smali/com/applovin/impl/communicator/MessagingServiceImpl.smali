@@ -41,7 +41,7 @@
 .method private static synthetic a(Ljava/lang/Runnable;)Ljava/lang/Thread;
     .locals 2
 
-    .line 8
+    .line 6
     new-instance v0, Ljava/lang/Thread;
 
     const-string v1, "AppLovinSdk:communicator"
@@ -50,10 +50,10 @@
 
     const/4 p0, 0x1
 
-    .line 9
+    .line 7
     invoke-virtual {v0, p0}, Ljava/lang/Thread;->setPriority(I)V
 
-    .line 10
+    .line 8
     invoke-virtual {v0, p0}, Ljava/lang/Thread;->setDaemon(Z)V
 
     return-object v0
@@ -62,17 +62,17 @@
 .method private a()Ljava/util/concurrent/ScheduledThreadPoolExecutor;
     .locals 4
 
+    .line 2
     iget-object v0, p0, Lcom/applovin/impl/communicator/MessagingServiceImpl;->b:Ljava/lang/Object;
 
-    .line 2
     monitor-enter v0
 
+    .line 3
     :try_start_0
     iget-object v1, p0, Lcom/applovin/impl/communicator/MessagingServiceImpl;->a:Ljava/util/concurrent/ScheduledThreadPoolExecutor;
 
     if-eqz v1, :cond_0
 
-    .line 3
     monitor-exit v0
 
     return-object v1
@@ -88,19 +88,17 @@
 
     new-instance v2, Lcom/applovin/impl/communicator/a;
 
-    .line 5
     invoke-direct {v2}, Ljava/lang/Object;-><init>()V
 
     const/4 v3, 0x1
 
-    .line 6
     invoke-direct {v1, v3, v2}, Ljava/util/concurrent/ScheduledThreadPoolExecutor;-><init>(ILjava/util/concurrent/ThreadFactory;)V
 
     monitor-exit v0
 
     return-object v1
 
-    .line 7
+    .line 5
     :goto_0
     monitor-exit v0
     :try_end_0
@@ -120,16 +118,7 @@
     return-void
 .end method
 
-.method public static synthetic b(Lcom/applovin/communicator/AppLovinCommunicatorMessage;)V
-    .locals 0
-
-    .line 1
-    invoke-static {p0}, Lcom/applovin/impl/communicator/MessagingServiceImpl;->a(Lcom/applovin/communicator/AppLovinCommunicatorMessage;)V
-
-    return-void
-.end method
-
-.method public static synthetic c(Ljava/lang/Runnable;)Ljava/lang/Thread;
+.method public static synthetic b(Ljava/lang/Runnable;)Ljava/lang/Thread;
     .locals 0
 
     .line 1
@@ -138,6 +127,15 @@
     move-result-object p0
 
     return-object p0
+.end method
+
+.method public static synthetic c(Lcom/applovin/communicator/AppLovinCommunicatorMessage;)V
+    .locals 0
+
+    .line 1
+    invoke-static {p0}, Lcom/applovin/impl/communicator/MessagingServiceImpl;->a(Lcom/applovin/communicator/AppLovinCommunicatorMessage;)V
+
+    return-void
 .end method
 
 
@@ -158,15 +156,15 @@
 
     .line 6
     .line 7
-    new-instance v1, Lc3/a;
+    new-instance v1, Landroidx/activity/l;
 
     .line 8
     .line 9
-    const/16 v2, 0x8
+    const/16 v2, 0xf
 
     .line 10
     .line 11
-    invoke-direct {v1, p1, v2}, Lc3/a;-><init>(Ljava/lang/Object;I)V
+    invoke-direct {v1, p1, v2}, Landroidx/activity/l;-><init>(Ljava/lang/Object;I)V
 
     .line 12
     .line 13
@@ -182,7 +180,10 @@
 .method public toString()Ljava/lang/String;
     .locals 1
 
+    .line 1
     const-string v0, "MessagingServiceImpl{}"
 
+    .line 2
+    .line 3
     return-object v0
 .end method

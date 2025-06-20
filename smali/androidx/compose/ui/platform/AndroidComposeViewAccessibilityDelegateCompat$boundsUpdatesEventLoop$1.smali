@@ -4,6 +4,16 @@
 
 
 # annotations
+.annotation runtime Lca/c;
+    c = "androidx.compose.ui.platform.AndroidComposeViewAccessibilityDelegateCompat"
+    f = "AndroidComposeViewAccessibilityDelegateCompat.android.kt"
+    l = {
+        0x8c7,
+        0x8e8
+    }
+    m = "boundsUpdatesEventLoop$ui_release"
+.end annotation
+
 .annotation runtime Lkotlin/Metadata;
     k = 0x3
     mv = {
@@ -12,16 +22,6 @@
         0x0
     }
     xi = 0x30
-.end annotation
-
-.annotation runtime Lth/c;
-    c = "androidx.compose.ui.platform.AndroidComposeViewAccessibilityDelegateCompat"
-    f = "AndroidComposeViewAccessibilityDelegateCompat.android.kt"
-    l = {
-        0x8c7,
-        0x8e8
-    }
-    m = "boundsUpdatesEventLoop$ui_release"
 .end annotation
 
 
@@ -36,16 +36,16 @@
 
 .field synthetic result:Ljava/lang/Object;
 
-.field final synthetic this$0:Landroidx/compose/ui/platform/f0;
+.field final synthetic this$0:Landroidx/compose/ui/platform/x;
 
 
 # direct methods
-.method public constructor <init>(Landroidx/compose/ui/platform/f0;Lkotlin/coroutines/Continuation;)V
+.method public constructor <init>(Landroidx/compose/ui/platform/x;Lkotlin/coroutines/Continuation;)V
     .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
-            "Landroidx/compose/ui/platform/f0;",
+            "Landroidx/compose/ui/platform/x;",
             "Lkotlin/coroutines/Continuation<",
             "-",
             "Landroidx/compose/ui/platform/AndroidComposeViewAccessibilityDelegateCompat$boundsUpdatesEventLoop$1;",
@@ -53,7 +53,7 @@
         }
     .end annotation
 
-    iput-object p1, p0, Landroidx/compose/ui/platform/AndroidComposeViewAccessibilityDelegateCompat$boundsUpdatesEventLoop$1;->this$0:Landroidx/compose/ui/platform/f0;
+    iput-object p1, p0, Landroidx/compose/ui/platform/AndroidComposeViewAccessibilityDelegateCompat$boundsUpdatesEventLoop$1;->this$0:Landroidx/compose/ui/platform/x;
 
     invoke-direct {p0, p2}, Lkotlin/coroutines/jvm/internal/ContinuationImpl;-><init>(Lkotlin/coroutines/Continuation;)V
 
@@ -75,9 +75,9 @@
 
     iput p1, p0, Landroidx/compose/ui/platform/AndroidComposeViewAccessibilityDelegateCompat$boundsUpdatesEventLoop$1;->label:I
 
-    iget-object p1, p0, Landroidx/compose/ui/platform/AndroidComposeViewAccessibilityDelegateCompat$boundsUpdatesEventLoop$1;->this$0:Landroidx/compose/ui/platform/f0;
+    iget-object p1, p0, Landroidx/compose/ui/platform/AndroidComposeViewAccessibilityDelegateCompat$boundsUpdatesEventLoop$1;->this$0:Landroidx/compose/ui/platform/x;
 
-    invoke-virtual {p1, p0}, Landroidx/compose/ui/platform/f0;->l(Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
+    invoke-virtual {p1, p0}, Landroidx/compose/ui/platform/x;->l(Lkotlin/coroutines/jvm/internal/ContinuationImpl;)Ljava/lang/Object;
 
     move-result-object p1
 

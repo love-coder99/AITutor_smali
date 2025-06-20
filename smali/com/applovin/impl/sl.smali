@@ -30,9 +30,9 @@
 .method public a()I
     .locals 1
 
+    .line 2
     iget-object v0, p0, Lcom/applovin/impl/sl;->d:Lcom/applovin/impl/nl;
 
-    .line 3
     invoke-static {v0}, Lcom/applovin/impl/b1;->a(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object v0
@@ -49,9 +49,9 @@
 .method public a(J)I
     .locals 3
 
+    .line 3
     iget-object v0, p0, Lcom/applovin/impl/sl;->d:Lcom/applovin/impl/nl;
 
-    .line 4
     invoke-static {v0}, Lcom/applovin/impl/b1;->a(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object v0
@@ -72,9 +72,9 @@
 .method public a(I)J
     .locals 4
 
+    .line 1
     iget-object v0, p0, Lcom/applovin/impl/sl;->d:Lcom/applovin/impl/nl;
 
-    .line 2
     invoke-static {v0}, Lcom/applovin/impl/b1;->a(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object v0
@@ -95,9 +95,10 @@
 .method public a(JLcom/applovin/impl/nl;J)V
     .locals 2
 
-    .line 1
+    .line 4
     iput-wide p1, p0, Lcom/applovin/impl/yg;->b:J
 
+    .line 5
     iput-object p3, p0, Lcom/applovin/impl/sl;->d:Lcom/applovin/impl/nl;
 
     const-wide v0, 0x7fffffffffffffffL
@@ -111,6 +112,7 @@
     :cond_0
     move-wide p1, p4
 
+    .line 6
     :goto_0
     iput-wide p1, p0, Lcom/applovin/impl/sl;->f:J
 
@@ -120,9 +122,9 @@
 .method public b(J)Ljava/util/List;
     .locals 3
 
+    .line 3
     iget-object v0, p0, Lcom/applovin/impl/sl;->d:Lcom/applovin/impl/nl;
 
-    .line 2
     invoke-static {v0}, Lcom/applovin/impl/b1;->a(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object v0
@@ -148,6 +150,7 @@
 
     const/4 v0, 0x0
 
+    .line 2
     iput-object v0, p0, Lcom/applovin/impl/sl;->d:Lcom/applovin/impl/nl;
 
     return-void

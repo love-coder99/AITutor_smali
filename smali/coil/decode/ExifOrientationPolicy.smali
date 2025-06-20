@@ -30,6 +30,7 @@
         0x9,
         0x0
     }
+    xi = 0x30
 .end annotation
 
 
@@ -42,7 +43,7 @@
 
 .field public static final synthetic b:[Lcoil/decode/ExifOrientationPolicy;
 
-.field public static final synthetic c:Luh/a;
+.field public static final synthetic c:Lda/a;
 
 
 # direct methods
@@ -50,90 +51,90 @@
     .locals 7
 
     .line 1
-    new-instance v0, Lcoil/decode/ExifOrientationPolicy;
+    const/4 v0, 0x2
 
     .line 2
-    .line 3
-    const-string v1, "IGNORE"
+    const/4 v1, 0x1
 
-    .line 4
-    .line 5
+    .line 3
     const/4 v2, 0x0
 
+    .line 4
+    new-instance v3, Lcoil/decode/ExifOrientationPolicy;
+
+    .line 5
     .line 6
-    invoke-direct {v0, v1, v2}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
+    const-string v4, "IGNORE"
 
     .line 7
     .line 8
-    .line 9
-    sput-object v0, Lcoil/decode/ExifOrientationPolicy;->IGNORE:Lcoil/decode/ExifOrientationPolicy;
+    invoke-direct {v3, v4, v2}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
 
+    .line 9
     .line 10
     .line 11
-    new-instance v1, Lcoil/decode/ExifOrientationPolicy;
+    sput-object v3, Lcoil/decode/ExifOrientationPolicy;->IGNORE:Lcoil/decode/ExifOrientationPolicy;
 
     .line 12
     .line 13
-    const-string v3, "RESPECT_PERFORMANCE"
+    new-instance v4, Lcoil/decode/ExifOrientationPolicy;
 
     .line 14
     .line 15
-    const/4 v4, 0x1
+    const-string v5, "RESPECT_PERFORMANCE"
 
     .line 16
-    invoke-direct {v1, v3, v4}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
-
     .line 17
+    invoke-direct {v4, v5, v1}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
+
     .line 18
     .line 19
-    sput-object v1, Lcoil/decode/ExifOrientationPolicy;->RESPECT_PERFORMANCE:Lcoil/decode/ExifOrientationPolicy;
-
     .line 20
+    sput-object v4, Lcoil/decode/ExifOrientationPolicy;->RESPECT_PERFORMANCE:Lcoil/decode/ExifOrientationPolicy;
+
     .line 21
-    new-instance v3, Lcoil/decode/ExifOrientationPolicy;
-
     .line 22
+    new-instance v5, Lcoil/decode/ExifOrientationPolicy;
+
     .line 23
-    const-string v5, "RESPECT_ALL"
-
     .line 24
-    .line 25
-    const/4 v6, 0x2
+    const-string v6, "RESPECT_ALL"
 
+    .line 25
     .line 26
-    invoke-direct {v3, v5, v6}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
+    invoke-direct {v5, v6, v0}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
 
     .line 27
     .line 28
     .line 29
-    sput-object v3, Lcoil/decode/ExifOrientationPolicy;->RESPECT_ALL:Lcoil/decode/ExifOrientationPolicy;
+    sput-object v5, Lcoil/decode/ExifOrientationPolicy;->RESPECT_ALL:Lcoil/decode/ExifOrientationPolicy;
 
     .line 30
     .line 31
-    const/4 v5, 0x3
+    const/4 v6, 0x3
 
     .line 32
-    new-array v5, v5, [Lcoil/decode/ExifOrientationPolicy;
+    new-array v6, v6, [Lcoil/decode/ExifOrientationPolicy;
 
     .line 33
     .line 34
-    aput-object v0, v5, v2
+    aput-object v3, v6, v2
 
     .line 35
     .line 36
-    aput-object v1, v5, v4
+    aput-object v4, v6, v1
 
     .line 37
     .line 38
-    aput-object v3, v5, v6
+    aput-object v5, v6, v0
 
     .line 39
     .line 40
-    sput-object v5, Lcoil/decode/ExifOrientationPolicy;->b:[Lcoil/decode/ExifOrientationPolicy;
+    sput-object v6, Lcoil/decode/ExifOrientationPolicy;->b:[Lcoil/decode/ExifOrientationPolicy;
 
     .line 41
     .line 42
-    invoke-static {v5}, Lkotlin/enums/a;->a([Ljava/lang/Enum;)Luh/a;
+    invoke-static {v6}, Lkotlin/enums/a;->a([Ljava/lang/Enum;)Lda/a;
 
     .line 43
     .line 44
@@ -141,25 +142,27 @@
     move-result-object v0
 
     .line 46
-    sput-object v0, Lcoil/decode/ExifOrientationPolicy;->c:Luh/a;
+    sput-object v0, Lcoil/decode/ExifOrientationPolicy;->c:Lda/a;
 
     .line 47
     .line 48
     return-void
 .end method
 
-.method public static getEntries()Luh/a;
+.method public static getEntries()Lda/a;
     .locals 1
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "()",
-            "Luh/a;"
+            "Lda/a;"
         }
     .end annotation
 
     .line 1
-    sget-object v0, Lcoil/decode/ExifOrientationPolicy;->c:Luh/a;
+    sget-object v0, Lcoil/decode/ExifOrientationPolicy;->c:Lda/a;
 
+    .line 2
+    .line 3
     return-object v0
 .end method
 

@@ -3,14 +3,14 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lzh/c;
+.implements Lka/c;
 
 
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "Lkotlin/jvm/internal/Lambda;",
-        "Lzh/c;"
+        "Lka/c;"
     }
 .end annotation
 
@@ -21,7 +21,7 @@
     d2 = {
         "Landroidx/compose/ui/tooling/animation/f;",
         "it",
-        "Lqh/r;",
+        "LX9/j;",
         "invoke",
         "(Landroidx/compose/ui/tooling/animation/f;)V",
         "<anonymous>"
@@ -36,14 +36,14 @@
 
 
 # instance fields
-.field final synthetic this$0:Landroidx/compose/ui/tooling/animation/o;
+.field final synthetic this$0:Landroidx/compose/ui/tooling/animation/j;
 
 
 # direct methods
-.method public constructor <init>(Landroidx/compose/ui/tooling/animation/o;)V
+.method public constructor <init>(Landroidx/compose/ui/tooling/animation/j;)V
     .locals 0
 
-    iput-object p1, p0, Landroidx/compose/ui/tooling/animation/AnimationSearch$animateXAsStateSearch$1;->this$0:Landroidx/compose/ui/tooling/animation/o;
+    iput-object p1, p0, Landroidx/compose/ui/tooling/animation/AnimationSearch$animateXAsStateSearch$1;->this$0:Landroidx/compose/ui/tooling/animation/j;
 
     const/4 p1, 0x1
 
@@ -57,12 +57,12 @@
 .method public bridge synthetic invoke(Ljava/lang/Object;)Ljava/lang/Object;
     .locals 0
 
-    .line 5
+    .line 1
     check-cast p1, Landroidx/compose/ui/tooling/animation/f;
 
     invoke-virtual {p0, p1}, Landroidx/compose/ui/tooling/animation/AnimationSearch$animateXAsStateSearch$1;->invoke(Landroidx/compose/ui/tooling/animation/f;)V
 
-    sget-object p1, Lqh/r;->a:Lqh/r;
+    sget-object p1, LX9/j;->a:LX9/j;
 
     return-object p1
 .end method
@@ -77,29 +77,30 @@
         }
     .end annotation
 
-    iget-object v0, p0, Landroidx/compose/ui/tooling/animation/AnimationSearch$animateXAsStateSearch$1;->this$0:Landroidx/compose/ui/tooling/animation/o;
-
-    .line 1
-    iget-object v0, v0, Landroidx/compose/ui/tooling/animation/o;->a:Lzh/a;
-
     .line 2
-    invoke-interface {v0}, Lzh/a;->invoke()Ljava/lang/Object;
+    iget-object v0, p0, Landroidx/compose/ui/tooling/animation/AnimationSearch$animateXAsStateSearch$1;->this$0:Landroidx/compose/ui/tooling/animation/j;
+
+    .line 3
+    iget-object v0, v0, Landroidx/compose/ui/tooling/animation/j;->a:Lka/a;
+
+    .line 4
+    invoke-interface {v0}, Lka/a;->invoke()Ljava/lang/Object;
 
     move-result-object v0
 
-    check-cast v0, Landroidx/compose/ui/tooling/animation/q;
+    check-cast v0, Landroidx/compose/ui/tooling/animation/l;
 
     invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
-    .line 3
+    .line 5
     iget-object v1, p1, Landroidx/compose/ui/tooling/animation/f;->a:Landroidx/compose/animation/core/a;
 
-    .line 4
+    .line 6
     new-instance v2, Landroidx/compose/ui/tooling/animation/PreviewAnimationClock$trackAnimateXAsState$1;
 
-    invoke-direct {v2, p1, v0}, Landroidx/compose/ui/tooling/animation/PreviewAnimationClock$trackAnimateXAsState$1;-><init>(Landroidx/compose/ui/tooling/animation/f;Landroidx/compose/ui/tooling/animation/q;)V
+    invoke-direct {v2, p1, v0}, Landroidx/compose/ui/tooling/animation/PreviewAnimationClock$trackAnimateXAsState$1;-><init>(Landroidx/compose/ui/tooling/animation/f;Landroidx/compose/ui/tooling/animation/l;)V
 
-    invoke-virtual {v0, v1, v2}, Landroidx/compose/ui/tooling/animation/q;->h(Ljava/lang/Object;Lzh/c;)V
+    invoke-virtual {v0, v1, v2}, Landroidx/compose/ui/tooling/animation/l;->h(Ljava/lang/Object;Lka/c;)V
 
     return-void
 .end method

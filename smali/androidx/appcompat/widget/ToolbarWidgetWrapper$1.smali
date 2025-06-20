@@ -25,7 +25,7 @@
 
 # direct methods
 .method public constructor <init>(Landroidx/appcompat/widget/ToolbarWidgetWrapper;)V
-    .locals 2
+    .locals 3
 
     .line 1
     iput-object p1, p0, Landroidx/appcompat/widget/ToolbarWidgetWrapper$1;->this$0:Landroidx/appcompat/widget/ToolbarWidgetWrapper;
@@ -57,15 +57,65 @@
 
     .line 15
     .line 16
-    invoke-direct {v0, v1, p1}, Landroidx/appcompat/view/menu/a;-><init>(Landroid/content/Context;Ljava/lang/CharSequence;)V
+    invoke-direct {v0}, Ljava/lang/Object;-><init>()V
 
     .line 17
     .line 18
     .line 19
-    iput-object v0, p0, Landroidx/appcompat/widget/ToolbarWidgetWrapper$1;->mNavItem:Landroidx/appcompat/view/menu/a;
+    const/16 v2, 0x1000
 
     .line 20
     .line 21
+    iput v2, v0, Landroidx/appcompat/view/menu/a;->g:I
+
+    .line 22
+    .line 23
+    iput v2, v0, Landroidx/appcompat/view/menu/a;->i:I
+
+    .line 24
+    .line 25
+    const/4 v2, 0x0
+
+    .line 26
+    iput-object v2, v0, Landroidx/appcompat/view/menu/a;->n:Landroid/content/res/ColorStateList;
+
+    .line 27
+    .line 28
+    iput-object v2, v0, Landroidx/appcompat/view/menu/a;->o:Landroid/graphics/PorterDuff$Mode;
+
+    .line 29
+    .line 30
+    const/4 v2, 0x0
+
+    .line 31
+    iput-boolean v2, v0, Landroidx/appcompat/view/menu/a;->p:Z
+
+    .line 32
+    .line 33
+    iput-boolean v2, v0, Landroidx/appcompat/view/menu/a;->q:Z
+
+    .line 34
+    .line 35
+    const/16 v2, 0x10
+
+    .line 36
+    .line 37
+    iput v2, v0, Landroidx/appcompat/view/menu/a;->r:I
+
+    .line 38
+    .line 39
+    iput-object v1, v0, Landroidx/appcompat/view/menu/a;->k:Landroid/content/Context;
+
+    .line 40
+    .line 41
+    iput-object p1, v0, Landroidx/appcompat/view/menu/a;->b:Ljava/lang/CharSequence;
+
+    .line 42
+    .line 43
+    iput-object v0, p0, Landroidx/appcompat/widget/ToolbarWidgetWrapper$1;->mNavItem:Landroidx/appcompat/view/menu/a;
+
+    .line 44
+    .line 45
     return-void
 .end method
 

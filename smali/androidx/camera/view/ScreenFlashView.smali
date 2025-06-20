@@ -8,16 +8,24 @@
 
 
 # instance fields
-.field public b:Lv0/d;
+.field public b:LZ/d;
 
 .field public c:Landroid/view/Window;
 
-.field public d:Lv0/t;
+.field public d:LZ/r;
 
 
 # direct methods
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
     .locals 1
+    .param p1    # Landroid/content/Context;
+        .annotation build Landroidx/annotation/NonNull;
+        .end annotation
+    .end param
+    .param p2    # Landroid/util/AttributeSet;
+        .annotation build Landroidx/annotation/Nullable;
+        .end annotation
+    .end param
 
     const/4 v0, 0x0
 
@@ -29,6 +37,14 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
     .locals 1
+    .param p1    # Landroid/content/Context;
+        .annotation build Landroidx/annotation/NonNull;
+        .end annotation
+    .end param
+    .param p2    # Landroid/util/AttributeSet;
+        .annotation build Landroidx/annotation/Nullable;
+        .end annotation
+    .end param
 
     const/4 v0, 0x0
 
@@ -96,7 +112,7 @@
 
     .line 6
     .line 7
-    invoke-static {v0}, Lcom/facebook/appevents/g;->i(Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v0}, Landroidx/work/B;->k(Ljava/lang/String;)Ljava/lang/String;
 
     .line 8
     .line 9
@@ -140,7 +156,7 @@
 
     .line 6
     .line 7
-    invoke-static {v1}, Lcom/facebook/appevents/g;->i(Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v1}, Landroidx/work/B;->k(Ljava/lang/String;)Ljava/lang/String;
 
     .line 8
     .line 9
@@ -161,7 +177,7 @@
 
     .line 16
     .line 17
-    invoke-static {v1}, Lcom/facebook/appevents/g;->i(Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v1}, Landroidx/work/B;->k(Ljava/lang/String;)Ljava/lang/String;
 
     .line 18
     .line 19
@@ -195,7 +211,7 @@
     .line 32
     .line 33
     .line 34
-    invoke-static {v1}, Lcom/facebook/appevents/g;->i(Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v1}, Landroidx/work/B;->k(Ljava/lang/String;)Ljava/lang/String;
 
     .line 35
     .line 36
@@ -203,11 +219,11 @@
     return-void
 .end method
 
-.method private setScreenFlashUiInfo(Ly/u0;)V
+.method private setScreenFlashUiInfo(LB/S;)V
     .locals 4
 
     .line 1
-    iget-object v0, p0, Landroidx/camera/view/ScreenFlashView;->b:Lv0/d;
+    iget-object v0, p0, Landroidx/camera/view/ScreenFlashView;->b:LZ/d;
 
     .line 2
     .line 3
@@ -219,7 +235,7 @@
 
     .line 6
     .line 7
-    invoke-static {p1}, Lcom/facebook/appevents/g;->i(Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {p1}, Landroidx/work/B;->k(Ljava/lang/String;)Ljava/lang/String;
 
     .line 8
     .line 9
@@ -228,7 +244,7 @@
 
     .line 11
     :cond_0
-    new-instance v1, Lx0/a;
+    new-instance v1, Lb0/a;
 
     .line 12
     .line 13
@@ -236,12 +252,12 @@
 
     .line 14
     .line 15
-    invoke-direct {v1, v2, p1}, Lx0/a;-><init>(Landroidx/camera/view/internal/ScreenFlashUiInfo$ProviderType;Ly/u0;)V
+    invoke-direct {v1, v2, p1}, Lb0/a;-><init>(Landroidx/camera/view/internal/ScreenFlashUiInfo$ProviderType;LB/S;)V
 
     .line 16
     .line 17
     .line 18
-    invoke-virtual {v0}, Lv0/d;->h()Lx0/a;
+    invoke-virtual {v0}, LZ/d;->g()Lb0/a;
 
     .line 19
     .line 20
@@ -249,7 +265,7 @@
     move-result-object p1
 
     .line 22
-    iget-object v3, v0, Lv0/d;->A:Ljava/util/HashMap;
+    iget-object v3, v0, LZ/d;->A:Ljava/util/HashMap;
 
     .line 23
     .line 24
@@ -258,7 +274,7 @@
     .line 25
     .line 26
     .line 27
-    invoke-virtual {v0}, Lv0/d;->h()Lx0/a;
+    invoke-virtual {v0}, LZ/d;->g()Lb0/a;
 
     .line 28
     .line 29
@@ -270,7 +286,7 @@
 
     .line 32
     .line 33
-    invoke-virtual {v1, p1}, Lx0/a;->equals(Ljava/lang/Object;)Z
+    invoke-virtual {v1, p1}, Lb0/a;->equals(Ljava/lang/Object;)Z
 
     .line 34
     .line 35
@@ -282,7 +298,7 @@
 
     .line 38
     .line 39
-    invoke-virtual {v0}, Lv0/d;->p()V
+    invoke-virtual {v0}, LZ/d;->p()V
 
     .line 40
     .line 41
@@ -293,12 +309,16 @@
 
 
 # virtual methods
-.method public getScreenFlash()Ly/u0;
+.method public getScreenFlash()LB/S;
     .locals 1
+    .annotation build Landroidx/annotation/Nullable;
+    .end annotation
 
     .line 1
-    iget-object v0, p0, Landroidx/camera/view/ScreenFlashView;->d:Lv0/t;
+    iget-object v0, p0, Landroidx/camera/view/ScreenFlashView;->d:LZ/r;
 
+    .line 2
+    .line 3
     return-object v0
 .end method
 
@@ -310,16 +330,20 @@
     return-wide v0
 .end method
 
-.method public setController(Lv0/d;)V
+.method public setController(LZ/d;)V
     .locals 1
+    .param p1    # LZ/d;
+        .annotation build Landroidx/annotation/Nullable;
+        .end annotation
+    .end param
 
     .line 1
-    invoke-static {}, Laf/g0;->h()V
+    invoke-static {}, Landroidx/datastore/preferences/protobuf/y0;->b()V
 
     .line 2
     .line 3
     .line 4
-    iget-object v0, p0, Landroidx/camera/view/ScreenFlashView;->b:Lv0/d;
+    iget-object v0, p0, Landroidx/camera/view/ScreenFlashView;->b:LZ/d;
 
     .line 5
     .line 6
@@ -334,13 +358,13 @@
     const/4 v0, 0x0
 
     .line 11
-    invoke-direct {p0, v0}, Landroidx/camera/view/ScreenFlashView;->setScreenFlashUiInfo(Ly/u0;)V
+    invoke-direct {p0, v0}, Landroidx/camera/view/ScreenFlashView;->setScreenFlashUiInfo(LB/S;)V
 
     .line 12
     .line 13
     .line 14
     :cond_0
-    iput-object p1, p0, Landroidx/camera/view/ScreenFlashView;->b:Lv0/d;
+    iput-object p1, p0, Landroidx/camera/view/ScreenFlashView;->b:LZ/d;
 
     .line 15
     .line 16
@@ -352,16 +376,16 @@
 
     .line 19
     :cond_1
-    invoke-static {}, Laf/g0;->h()V
+    invoke-static {}, Landroidx/datastore/preferences/protobuf/y0;->b()V
 
     .line 20
     .line 21
     .line 22
-    iget-object p1, p1, Lv0/d;->d:Ly/w0;
+    iget-object p1, p1, LZ/d;->d:LB/T;
 
     .line 23
     .line 24
-    invoke-virtual {p1}, Ly/w0;->E()I
+    invoke-virtual {p1}, LB/T;->E()I
 
     .line 25
     .line 26
@@ -406,7 +430,7 @@
     .line 44
     :cond_3
     :goto_0
-    invoke-virtual {p0}, Landroidx/camera/view/ScreenFlashView;->getScreenFlash()Ly/u0;
+    invoke-virtual {p0}, Landroidx/camera/view/ScreenFlashView;->getScreenFlash()LB/S;
 
     .line 45
     .line 46
@@ -414,7 +438,7 @@
     move-result-object p1
 
     .line 48
-    invoke-direct {p0, p1}, Landroidx/camera/view/ScreenFlashView;->setScreenFlashUiInfo(Ly/u0;)V
+    invoke-direct {p0, p1}, Landroidx/camera/view/ScreenFlashView;->setScreenFlashUiInfo(LB/S;)V
 
     .line 49
     .line 50
@@ -424,9 +448,13 @@
 
 .method public setScreenFlashWindow(Landroid/view/Window;)V
     .locals 1
+    .param p1    # Landroid/view/Window;
+        .annotation build Landroidx/annotation/Nullable;
+        .end annotation
+    .end param
 
     .line 1
-    invoke-static {}, Laf/g0;->h()V
+    invoke-static {}, Landroidx/datastore/preferences/protobuf/y0;->b()V
 
     .line 2
     .line 3
@@ -450,17 +478,17 @@
 
     .line 12
     :cond_0
-    new-instance v0, Lv0/t;
+    new-instance v0, LZ/r;
 
     .line 13
     .line 14
-    invoke-direct {v0, p0}, Lv0/t;-><init>(Landroidx/camera/view/ScreenFlashView;)V
+    invoke-direct {v0, p0}, LZ/r;-><init>(Landroidx/camera/view/ScreenFlashView;)V
 
     .line 15
     .line 16
     .line 17
     :goto_0
-    iput-object v0, p0, Landroidx/camera/view/ScreenFlashView;->d:Lv0/t;
+    iput-object v0, p0, Landroidx/camera/view/ScreenFlashView;->d:LZ/r;
 
     .line 18
     .line 19
@@ -469,7 +497,7 @@
 
     .line 20
     .line 21
-    invoke-virtual {p0}, Landroidx/camera/view/ScreenFlashView;->getScreenFlash()Ly/u0;
+    invoke-virtual {p0}, Landroidx/camera/view/ScreenFlashView;->getScreenFlash()LB/S;
 
     .line 22
     .line 23
@@ -477,7 +505,7 @@
     move-result-object p1
 
     .line 25
-    invoke-direct {p0, p1}, Landroidx/camera/view/ScreenFlashView;->setScreenFlashUiInfo(Ly/u0;)V
+    invoke-direct {p0, p1}, Landroidx/camera/view/ScreenFlashView;->setScreenFlashUiInfo(LB/S;)V
 
     .line 26
     .line 27

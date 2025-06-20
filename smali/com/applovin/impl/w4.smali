@@ -110,58 +110,61 @@
 .method public a(Ljava/util/List;Lcom/applovin/impl/sdk/j;)V
     .locals 1
 
+    .line 4
     iput-object p2, p0, Lcom/applovin/impl/w4;->f:Lcom/applovin/impl/sdk/j;
 
+    .line 5
     iput-object p1, p0, Lcom/applovin/impl/w4;->g:Ljava/util/List;
 
+    .line 6
     iget-object v0, p0, Lcom/applovin/impl/dc;->a:Landroid/content/Context;
 
-    .line 4
     instance-of v0, v0, Landroid/app/Activity;
 
     if-nez v0, :cond_0
 
-    .line 5
+    .line 7
     invoke-virtual {p2}, Lcom/applovin/impl/sdk/j;->m0()Landroid/app/Activity;
 
     move-result-object p2
 
     if-eqz p2, :cond_0
 
+    .line 8
     iput-object p2, p0, Lcom/applovin/impl/dc;->a:Landroid/content/Context;
 
     :cond_0
     if-eqz p1, :cond_1
 
+    .line 9
     iget-object p1, p0, Lcom/applovin/impl/w4;->h:Ljava/util/concurrent/atomic/AtomicBoolean;
 
     const/4 p2, 0x0
 
     const/4 v0, 0x1
 
-    .line 6
     invoke-virtual {p1, p2, v0}, Ljava/util/concurrent/atomic/AtomicBoolean;->compareAndSet(ZZ)Z
 
     move-result p1
 
     if-eqz p1, :cond_1
 
+    .line 10
     iget-object p1, p0, Lcom/applovin/impl/w4;->g:Ljava/util/List;
 
-    .line 7
     invoke-direct {p0, p1}, Lcom/applovin/impl/w4;->a(Ljava/util/List;)Ljava/util/List;
 
     move-result-object p1
 
     iput-object p1, p0, Lcom/applovin/impl/w4;->i:Ljava/util/List;
 
-    .line 8
+    .line 11
     :cond_1
-    new-instance p1, Lcom/applovin/impl/wt;
+    new-instance p1, Lcom/applovin/impl/P0;
 
     const/16 p2, 0x14
 
-    invoke-direct {p1, p0, p2}, Lcom/applovin/impl/wt;-><init>(Ljava/lang/Object;I)V
+    invoke-direct {p1, p0, p2}, Lcom/applovin/impl/P0;-><init>(Ljava/lang/Object;I)V
 
     invoke-static {p1}, Lcom/applovin/sdk/AppLovinSdkUtils;->runOnUiThread(Ljava/lang/Runnable;)V
 
@@ -190,17 +193,20 @@
 .method public c(I)Ljava/util/List;
     .locals 0
 
+    .line 1
     iget-object p1, p0, Lcom/applovin/impl/w4;->i:Ljava/util/List;
 
+    .line 2
+    .line 3
     return-object p1
 .end method
 
 .method public d(I)I
     .locals 0
 
+    .line 2
     iget-object p1, p0, Lcom/applovin/impl/w4;->i:Ljava/util/List;
 
-    .line 2
     invoke-interface {p1}, Ljava/util/List;->size()I
 
     move-result p1

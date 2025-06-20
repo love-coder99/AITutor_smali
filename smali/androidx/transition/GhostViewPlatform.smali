@@ -36,6 +36,10 @@
 # direct methods
 .method private constructor <init>(Landroid/view/View;)V
     .locals 0
+    .param p1    # Landroid/view/View;
+        .annotation build Landroidx/annotation/NonNull;
+        .end annotation
+    .end param
 
     .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -159,16 +163,16 @@
     .locals 6
 
     .line 1
-    sget-boolean v0, Landroidx/transition/GhostViewPlatform;->sAddGhostMethodFetched:Z
-
-    .line 2
-    .line 3
-    if-nez v0, :cond_0
-
-    .line 4
-    .line 5
     const/4 v0, 0x1
 
+    .line 2
+    sget-boolean v1, Landroidx/transition/GhostViewPlatform;->sAddGhostMethodFetched:Z
+
+    .line 3
+    .line 4
+    if-nez v1, :cond_0
+
+    .line 5
     .line 6
     :try_start_0
     invoke-static {}, Landroidx/transition/GhostViewPlatform;->fetchGhostViewClass()V
@@ -296,16 +300,16 @@
     .locals 6
 
     .line 1
-    sget-boolean v0, Landroidx/transition/GhostViewPlatform;->sRemoveGhostMethodFetched:Z
-
-    .line 2
-    .line 3
-    if-nez v0, :cond_0
-
-    .line 4
-    .line 5
     const/4 v0, 0x1
 
+    .line 2
+    sget-boolean v1, Landroidx/transition/GhostViewPlatform;->sRemoveGhostMethodFetched:Z
+
+    .line 3
+    .line 4
+    if-nez v1, :cond_0
+
+    .line 5
     .line 6
     :try_start_0
     invoke-static {}, Landroidx/transition/GhostViewPlatform;->fetchGhostViewClass()V

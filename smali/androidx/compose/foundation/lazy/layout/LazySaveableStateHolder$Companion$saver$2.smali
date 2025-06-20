@@ -3,14 +3,14 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lzh/c;
+.implements Lka/c;
 
 
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "Lkotlin/jvm/internal/Lambda;",
-        "Lzh/c;"
+        "Lka/c;"
     }
 .end annotation
 
@@ -24,9 +24,9 @@
         "",
         "",
         "restored",
-        "Landroidx/compose/foundation/lazy/layout/r0;",
+        "Landroidx/compose/foundation/lazy/layout/Q;",
         "invoke",
-        "(Ljava/util/Map;)Landroidx/compose/foundation/lazy/layout/r0;",
+        "(Ljava/util/Map;)Landroidx/compose/foundation/lazy/layout/Q;",
         "<anonymous>"
     }
     k = 0x3
@@ -57,7 +57,7 @@
 
 
 # virtual methods
-.method public final invoke(Ljava/util/Map;)Landroidx/compose/foundation/lazy/layout/r0;
+.method public final invoke(Ljava/util/Map;)Landroidx/compose/foundation/lazy/layout/Q;
     .locals 2
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -69,16 +69,16 @@
             "+",
             "Ljava/lang/Object;",
             ">;>;)",
-            "Landroidx/compose/foundation/lazy/layout/r0;"
+            "Landroidx/compose/foundation/lazy/layout/Q;"
         }
     .end annotation
 
     .line 2
-    new-instance v0, Landroidx/compose/foundation/lazy/layout/r0;
+    new-instance v0, Landroidx/compose/foundation/lazy/layout/Q;
 
     iget-object v1, p0, Landroidx/compose/foundation/lazy/layout/LazySaveableStateHolder$Companion$saver$2;->$parentRegistry:Landroidx/compose/runtime/saveable/g;
 
-    invoke-direct {v0, v1, p1}, Landroidx/compose/foundation/lazy/layout/r0;-><init>(Landroidx/compose/runtime/saveable/g;Ljava/util/Map;)V
+    invoke-direct {v0, v1, p1}, Landroidx/compose/foundation/lazy/layout/Q;-><init>(Landroidx/compose/runtime/saveable/g;Ljava/util/Map;)V
 
     return-object v0
 .end method
@@ -89,7 +89,7 @@
     .line 1
     check-cast p1, Ljava/util/Map;
 
-    invoke-virtual {p0, p1}, Landroidx/compose/foundation/lazy/layout/LazySaveableStateHolder$Companion$saver$2;->invoke(Ljava/util/Map;)Landroidx/compose/foundation/lazy/layout/r0;
+    invoke-virtual {p0, p1}, Landroidx/compose/foundation/lazy/layout/LazySaveableStateHolder$Companion$saver$2;->invoke(Ljava/util/Map;)Landroidx/compose/foundation/lazy/layout/Q;
 
     move-result-object p1
 

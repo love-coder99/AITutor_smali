@@ -118,7 +118,7 @@
 
     .line 39
     .line 40
-    invoke-static {v1, v7, v8, v2}, Lj0/d;->r(Ljava/lang/String;JLjava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-static {v1, v2, v7, v8}, Landroidx/compose/runtime/a0;->u(Ljava/lang/String;Ljava/lang/String;J)Ljava/lang/StringBuilder;
 
     .line 41
     .line 42
@@ -525,7 +525,7 @@
 
     .line 46
     .line 47
-    invoke-static {v2, v7, v8, v3}, Lj0/d;->r(Ljava/lang/String;JLjava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-static {v2, v3, v7, v8}, Landroidx/compose/runtime/a0;->u(Ljava/lang/String;Ljava/lang/String;J)Ljava/lang/StringBuilder;
 
     .line 48
     .line 49

@@ -1,99 +1,58 @@
-.class public abstract Lcom/applovin/impl/d1;
+.class public final synthetic Lcom/applovin/impl/D1;
 .super Ljava/lang/Object;
 .source "SourceFile"
 
 # interfaces
-.implements Ljava/util/concurrent/Callable;
+.implements Landroid/content/DialogInterface$OnClickListener;
 
 
 # instance fields
-.field protected final a:Lcom/applovin/impl/sdk/j;
+.field public final synthetic b:I
 
-.field protected final b:Ljava/lang/String;
-
-.field protected final c:Lcom/applovin/impl/sdk/n;
-
-.field private final d:Landroid/content/Context;
-
-.field protected final e:Ljava/util/concurrent/atomic/AtomicBoolean;
+.field public final synthetic c:Lcom/applovin/impl/jb;
 
 
 # direct methods
-.method public constructor <init>(Ljava/lang/String;Lcom/applovin/impl/sdk/j;)V
-    .locals 1
+.method public synthetic constructor <init>(Lcom/applovin/impl/jb;I)V
+    .locals 0
 
     .line 1
+    iput p2, p0, Lcom/applovin/impl/D1;->b:I
+
+    iput-object p1, p0, Lcom/applovin/impl/D1;->c:Lcom/applovin/impl/jb;
+
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 2
-    .line 3
-    .line 4
-    new-instance v0, Ljava/util/concurrent/atomic/AtomicBoolean;
-
-    .line 5
-    .line 6
-    invoke-direct {v0}, Ljava/util/concurrent/atomic/AtomicBoolean;-><init>()V
-
-    .line 7
-    .line 8
-    .line 9
-    iput-object v0, p0, Lcom/applovin/impl/d1;->e:Ljava/util/concurrent/atomic/AtomicBoolean;
-
-    .line 10
-    .line 11
-    iput-object p1, p0, Lcom/applovin/impl/d1;->b:Ljava/lang/String;
-
-    .line 12
-    .line 13
-    iput-object p2, p0, Lcom/applovin/impl/d1;->a:Lcom/applovin/impl/sdk/j;
-
-    .line 14
-    .line 15
-    invoke-virtual {p2}, Lcom/applovin/impl/sdk/j;->I()Lcom/applovin/impl/sdk/n;
-
-    .line 16
-    .line 17
-    .line 18
-    move-result-object p1
-
-    .line 19
-    iput-object p1, p0, Lcom/applovin/impl/d1;->c:Lcom/applovin/impl/sdk/n;
-
-    .line 20
-    .line 21
-    invoke-static {}, Lcom/applovin/impl/sdk/j;->m()Landroid/content/Context;
-
-    .line 22
-    .line 23
-    .line 24
-    move-result-object p1
-
-    .line 25
-    iput-object p1, p0, Lcom/applovin/impl/d1;->d:Landroid/content/Context;
-
-    .line 26
-    .line 27
     return-void
 .end method
 
 
 # virtual methods
-.method public a()Landroid/content/Context;
+.method public final onClick(Landroid/content/DialogInterface;I)V
     .locals 1
 
     .line 1
-    iget-object v0, p0, Lcom/applovin/impl/d1;->d:Landroid/content/Context;
+    iget v0, p0, Lcom/applovin/impl/D1;->b:I
 
-    return-object v0
-.end method
+    packed-switch v0, :pswitch_data_0
 
-.method public a(Z)V
-    .locals 1
+    iget-object v0, p0, Lcom/applovin/impl/D1;->c:Lcom/applovin/impl/jb;
 
-    iget-object v0, p0, Lcom/applovin/impl/d1;->e:Ljava/util/concurrent/atomic/AtomicBoolean;
-
-    .line 2
-    invoke-virtual {v0, p1}, Ljava/util/concurrent/atomic/AtomicBoolean;->set(Z)V
+    invoke-static {v0, p1, p2}, Lcom/applovin/impl/jb;->a(Lcom/applovin/impl/jb;Landroid/content/DialogInterface;I)V
 
     return-void
+
+    :pswitch_0
+    iget-object v0, p0, Lcom/applovin/impl/D1;->c:Lcom/applovin/impl/jb;
+
+    invoke-static {v0, p1, p2}, Lcom/applovin/impl/jb;->b(Lcom/applovin/impl/jb;Landroid/content/DialogInterface;I)V
+
+    return-void
+
+    nop
+
+    :pswitch_data_0
+    .packed-switch 0x0
+        :pswitch_0
+    .end packed-switch
 .end method

@@ -23,9 +23,9 @@
 
     if-ge p0, v0, :cond_0
 
+    .line 1
     const-string v0, "expectedSize"
 
-    .line 1
     invoke-static {p0, v0}, Lcom/applovin/impl/p3;->a(ILjava/lang/String;)I
 
     add-int/lit8 p0, p0, 0x1
@@ -108,9 +108,9 @@
 
     if-nez v1, :cond_0
 
+    .line 7
     const-string v1, ", "
 
-    .line 7
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     .line 8

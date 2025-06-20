@@ -21,7 +21,7 @@
         "",
         "",
         "resolvedString",
-        "(Landroidx/compose/runtime/l;I)Ljava/lang/String;",
+        "(Landroidx/compose/runtime/j;I)Ljava/lang/String;",
         "",
         "stringId",
         "I",
@@ -37,6 +37,7 @@
         0x8,
         0x0
     }
+    xi = 0x30
 .end annotation
 
 
@@ -237,7 +238,7 @@
 
 
 # virtual methods
-.method public final resolvedString(Landroidx/compose/runtime/l;I)Ljava/lang/String;
+.method public final resolvedString(Landroidx/compose/runtime/j;I)Ljava/lang/String;
     .locals 0
 
     .line 1
@@ -245,7 +246,7 @@
 
     .line 2
     .line 3
-    invoke-static {p2, p1}, Lh5/f;->L(ILandroidx/compose/runtime/l;)Ljava/lang/String;
+    invoke-static {p1, p2}, Lcom/google/android/gms/internal/measurement/Q1;->y(Landroidx/compose/runtime/j;I)Ljava/lang/String;
 
     .line 4
     .line 5

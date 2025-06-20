@@ -3,14 +3,14 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lzh/c;
+.implements Lka/c;
 
 
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "Lkotlin/jvm/internal/Lambda;",
-        "Lzh/c;"
+        "Lka/c;"
     }
 .end annotation
 
@@ -20,7 +20,7 @@
     }
     d2 = {
         "Lkotlin/Pair;",
-        "Landroidx/compose/ui/layout/w;",
+        "Landroidx/compose/ui/layout/t;",
         "Landroidx/compose/ui/tooling/k;",
         "<name for destructuring parameter 0>",
         "invoke",
@@ -72,7 +72,7 @@
             "(",
             "Lkotlin/Pair<",
             "+",
-            "Landroidx/compose/ui/layout/w;",
+            "Landroidx/compose/ui/layout/t;",
             "Landroidx/compose/ui/tooling/k;",
             ">;)",
             "Landroidx/compose/ui/tooling/k;"

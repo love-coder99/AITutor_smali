@@ -6,11 +6,17 @@
 # annotations
 .annotation runtime Lkotlin/Metadata;
     d1 = {
-        "\u0000V\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0010\u0008\n\u0002\u0008\u0007\n\u0002\u0010\u000b\n\u0002\u0008\u0008\n\u0002\u0010\u0014\n\u0002\u0008\r\n\u0002\u0018\u0002\n\u0002\u0008\u0007\n\u0002\u0018\u0002\n\u0002\u0008\u0007\n\u0002\u0018\u0002\n\u0002\u0008\u0007\n\u0002\u0018\u0002\n\u0002\u0008\u0007\n\u0002\u0018\u0002\n\u0002\u0008\u0006\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0008\u0004\u0018\u00002\u00020\u0001B\u0019\u0012\u0006\u0010I\u001a\u00020H\u0012\u0008\u0010K\u001a\u0004\u0018\u00010J\u00a2\u0006\u0004\u0008L\u0010MR\"\u0010\t\u001a\u00020\u00028\u0006@\u0006X\u0086\u000e\u00a2\u0006\u0012\n\u0004\u0008\u0003\u0010\u0004\u001a\u0004\u0008\u0005\u0010\u0006\"\u0004\u0008\u0007\u0010\u0008R*\u0010\u0012\u001a\u00020\n2\u0006\u0010\u000b\u001a\u00020\n8\u0006@FX\u0086\u000e\u00a2\u0006\u0012\n\u0004\u0008\u000c\u0010\r\u001a\u0004\u0008\u000e\u0010\u000f\"\u0004\u0008\u0010\u0010\u0011R*\u0010\u001a\u001a\u00020\u00132\u0006\u0010\u000b\u001a\u00020\u00138\u0006@FX\u0086\u000e\u00a2\u0006\u0012\n\u0004\u0008\u0014\u0010\u0015\u001a\u0004\u0008\u0016\u0010\u0017\"\u0004\u0008\u0018\u0010\u0019R\u001a\u0010\u001d\u001a\u00020\u00028\u0000X\u0080\u0004\u00a2\u0006\u000c\n\u0004\u0008\u001b\u0010\u0004\u001a\u0004\u0008\u001c\u0010\u0006R\u001a\u0010 \u001a\u00020\u00028\u0000X\u0080\u0004\u00a2\u0006\u000c\n\u0004\u0008\u001e\u0010\u0004\u001a\u0004\u0008\u001f\u0010\u0006R\"\u0010(\u001a\u00020!8\u0006@\u0006X\u0086.\u00a2\u0006\u0012\n\u0004\u0008\"\u0010#\u001a\u0004\u0008$\u0010%\"\u0004\u0008&\u0010\'R\"\u00100\u001a\u00020)8\u0006@\u0006X\u0086.\u00a2\u0006\u0012\n\u0004\u0008*\u0010+\u001a\u0004\u0008,\u0010-\"\u0004\u0008.\u0010/R$\u00108\u001a\u0004\u0018\u0001018\u0006@\u0006X\u0086\u000e\u00a2\u0006\u0012\n\u0004\u00082\u00103\u001a\u0004\u00084\u00105\"\u0004\u00086\u00107R\"\u0010@\u001a\u0002098\u0006@\u0006X\u0086\u000e\u00a2\u0006\u0012\n\u0004\u0008:\u0010;\u001a\u0004\u0008<\u0010=\"\u0004\u0008>\u0010?R\"\u0010B\u001a\u00020A8\u0006@\u0006X\u0086.\u00a2\u0006\u0012\n\u0004\u0008B\u0010C\u001a\u0004\u0008D\u0010E\"\u0004\u0008F\u0010G\u00a8\u0006N"
+        "\u0000V\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0008\u0003\n\u0002\u0010\u0008\n\u0002\u0008\u0007\n\u0002\u0010\u000b\n\u0002\u0008\u0008\n\u0002\u0010\u0014\n\u0002\u0008\r\n\u0002\u0018\u0002\n\u0002\u0008\u0007\n\u0002\u0018\u0002\n\u0002\u0008\u0007\n\u0002\u0018\u0002\n\u0002\u0008\u0007\n\u0002\u0018\u0002\n\u0002\u0008\u0007\n\u0002\u0018\u0002\n\u0002\u0008\u0007\u0018\u00002\u00020\u0001B\u0019\u0012\u0006\u0010\u0003\u001a\u00020\u0002\u0012\u0008\u0010\u0005\u001a\u0004\u0018\u00010\u0004\u00a2\u0006\u0004\u0008\u0006\u0010\u0007R\"\u0010\u000f\u001a\u00020\u00088\u0006@\u0006X\u0086\u000e\u00a2\u0006\u0012\n\u0004\u0008\t\u0010\n\u001a\u0004\u0008\u000b\u0010\u000c\"\u0004\u0008\r\u0010\u000eR*\u0010\u0018\u001a\u00020\u00102\u0006\u0010\u0011\u001a\u00020\u00108\u0006@FX\u0086\u000e\u00a2\u0006\u0012\n\u0004\u0008\u0012\u0010\u0013\u001a\u0004\u0008\u0014\u0010\u0015\"\u0004\u0008\u0016\u0010\u0017R*\u0010 \u001a\u00020\u00192\u0006\u0010\u0011\u001a\u00020\u00198\u0006@FX\u0086\u000e\u00a2\u0006\u0012\n\u0004\u0008\u001a\u0010\u001b\u001a\u0004\u0008\u001c\u0010\u001d\"\u0004\u0008\u001e\u0010\u001fR\u001a\u0010#\u001a\u00020\u00088\u0000X\u0080\u0004\u00a2\u0006\u000c\n\u0004\u0008!\u0010\n\u001a\u0004\u0008\"\u0010\u000cR\u001a\u0010&\u001a\u00020\u00088\u0000X\u0080\u0004\u00a2\u0006\u000c\n\u0004\u0008$\u0010\n\u001a\u0004\u0008%\u0010\u000cR\"\u0010.\u001a\u00020\'8\u0006@\u0006X\u0086.\u00a2\u0006\u0012\n\u0004\u0008(\u0010)\u001a\u0004\u0008*\u0010+\"\u0004\u0008,\u0010-R\"\u00106\u001a\u00020/8\u0006@\u0006X\u0086.\u00a2\u0006\u0012\n\u0004\u00080\u00101\u001a\u0004\u00082\u00103\"\u0004\u00084\u00105R$\u0010>\u001a\u0004\u0018\u0001078\u0006@\u0006X\u0086\u000e\u00a2\u0006\u0012\n\u0004\u00088\u00109\u001a\u0004\u0008:\u0010;\"\u0004\u0008<\u0010=R\"\u0010F\u001a\u00020?8\u0006@\u0006X\u0086\u000e\u00a2\u0006\u0012\n\u0004\u0008@\u0010A\u001a\u0004\u0008B\u0010C\"\u0004\u0008D\u0010ER\"\u0010H\u001a\u00020G8\u0006@\u0006X\u0086.\u00a2\u0006\u0012\n\u0004\u0008H\u0010I\u001a\u0004\u0008J\u0010K\"\u0004\u0008L\u0010M\u00a8\u0006N"
     }
     d2 = {
         "Lcom/afollestad/materialdialogs/internal/main/DialogLayout;",
         "Landroid/widget/FrameLayout;",
+        "Landroid/content/Context;",
+        "context",
+        "Landroid/util/AttributeSet;",
+        "attrs",
+        "<init>",
+        "(Landroid/content/Context;Landroid/util/AttributeSet;)V",
         "",
         "b",
         "I",
@@ -74,19 +80,13 @@
         "setLayoutMode",
         "(Lcom/afollestad/materialdialogs/LayoutMode;)V",
         "layoutMode",
-        "Lr5/a;",
+        "LK2/a;",
         "dialog",
-        "Lr5/a;",
+        "LK2/a;",
         "getDialog",
-        "()Lr5/a;",
+        "()LK2/a;",
         "setDialog",
-        "(Lr5/a;)V",
-        "Landroid/content/Context;",
-        "context",
-        "Landroid/util/AttributeSet;",
-        "attrs",
-        "<init>",
-        "(Landroid/content/Context;Landroid/util/AttributeSet;)V",
+        "(LK2/a;)V",
         "core"
     }
     k = 0x1
@@ -149,7 +149,7 @@
 
     .line 8
     .line 9
-    sget p1, Lr5/b;->md_dialog_frame_margin_vertical:I
+    sget p1, LK2/b;->md_dialog_frame_margin_vertical:I
 
     .line 10
     .line 11
@@ -181,7 +181,7 @@
 
     .line 24
     .line 25
-    sget p1, Lr5/b;->md_dialog_frame_margin_vertical_less:I
+    sget p1, LK2/b;->md_dialog_frame_margin_vertical_less:I
 
     .line 26
     .line 27
@@ -265,45 +265,45 @@
 .end method
 
 .method public static a(Lcom/afollestad/materialdialogs/internal/main/DialogLayout;Landroid/graphics/Canvas;IF)V
-    .locals 6
+    .locals 7
 
     .line 1
-    const/4 v1, 0x0
-
-    .line 2
     invoke-virtual {p0}, Landroid/view/View;->getMeasuredWidth()I
 
+    .line 2
     .line 3
     .line 4
-    .line 5
     move-result v0
 
-    .line 6
-    int-to-float v3, v0
+    .line 5
+    int-to-float v4, v0
 
-    .line 7
+    .line 6
     const/high16 v0, 0x3f800000    # 1.0f
 
+    .line 7
     .line 8
-    .line 9
     invoke-virtual {p0, v0, p2}, Lcom/afollestad/materialdialogs/internal/main/DialogLayout;->b(FI)Landroid/graphics/Paint;
 
+    .line 9
     .line 10
     .line 11
+    move-result-object v6
+
     .line 12
-    move-result-object v5
+    const/4 v2, 0x0
 
     .line 13
-    move-object v0, p1
+    move-object v1, p1
 
     .line 14
-    move v2, p3
+    move v3, p3
 
     .line 15
-    move v4, p3
+    move v5, p3
 
     .line 16
-    invoke-virtual/range {v0 .. v5}, Landroid/graphics/Canvas;->drawLine(FFFFLandroid/graphics/Paint;)V
+    invoke-virtual/range {v1 .. v6}, Landroid/graphics/Canvas;->drawLine(FFFFLandroid/graphics/Paint;)V
 
     .line 17
     .line 18
@@ -312,45 +312,45 @@
 .end method
 
 .method public static c(Lcom/afollestad/materialdialogs/internal/main/DialogLayout;Landroid/graphics/Canvas;IF)V
-    .locals 6
+    .locals 7
 
     .line 1
-    const/4 v2, 0x0
-
-    .line 2
     invoke-virtual {p0}, Landroid/view/View;->getMeasuredHeight()I
 
+    .line 2
     .line 3
     .line 4
-    .line 5
     move-result v0
 
-    .line 6
-    int-to-float v4, v0
+    .line 5
+    int-to-float v5, v0
 
-    .line 7
+    .line 6
     const/high16 v0, 0x3f800000    # 1.0f
 
+    .line 7
     .line 8
-    .line 9
     invoke-virtual {p0, v0, p2}, Lcom/afollestad/materialdialogs/internal/main/DialogLayout;->b(FI)Landroid/graphics/Paint;
 
+    .line 9
     .line 10
     .line 11
+    move-result-object v6
+
     .line 12
-    move-result-object v5
+    const/4 v3, 0x0
 
     .line 13
-    move-object v0, p1
+    move-object v1, p1
 
     .line 14
-    move v1, p3
+    move v2, p3
 
     .line 15
-    move v3, p3
+    move v4, p3
 
     .line 16
-    invoke-virtual/range {v0 .. v5}, Landroid/graphics/Canvas;->drawLine(FFFFLandroid/graphics/Paint;)V
+    invoke-virtual/range {v1 .. v6}, Landroid/graphics/Canvas;->drawLine(FFFFLandroid/graphics/Paint;)V
 
     .line 17
     .line 18
@@ -384,7 +384,7 @@
     const/4 v1, 0x1
 
     .line 11
-    invoke-static {v1, p0}, Landroidx/constraintlayout/compose/i;->l(ILandroid/view/View;)F
+    invoke-static {p0, v1}, Lma/a;->h(Lcom/afollestad/materialdialogs/internal/main/DialogLayout;I)F
 
     .line 12
     .line 13
@@ -438,7 +438,7 @@
 
     .line 39
     :cond_1
-    invoke-static {}, Lrb/h;->W()V
+    invoke-static {}, Lkotlin/jvm/internal/h;->e()V
 
     .line 40
     .line 41
@@ -450,7 +450,7 @@
 .end method
 
 .method public final dispatchDraw(Landroid/graphics/Canvas;)V
-    .locals 2
+    .locals 1
 
     .line 1
     iget-object v0, p0, Lcom/afollestad/materialdialogs/internal/main/DialogLayout;->d:[F
@@ -460,127 +460,149 @@
     array-length v0, v0
 
     .line 4
-    const/4 v1, 0x1
-
-    .line 5
     if-nez v0, :cond_0
 
+    .line 5
     .line 6
-    .line 7
     const/4 v0, 0x1
 
-    .line 8
+    .line 7
     goto :goto_0
 
-    .line 9
+    .line 8
     :cond_0
     const/4 v0, 0x0
 
-    .line 10
+    .line 9
     :goto_0
-    xor-int/2addr v0, v1
+    if-nez v0, :cond_1
 
+    .line 10
     .line 11
-    if-eqz v0, :cond_1
+    iget-object v0, p0, Lcom/afollestad/materialdialogs/internal/main/DialogLayout;->o:Landroid/graphics/Path;
 
     .line 12
     .line 13
-    iget-object v0, p0, Lcom/afollestad/materialdialogs/internal/main/DialogLayout;->o:Landroid/graphics/Path;
+    invoke-virtual {p1, v0}, Landroid/graphics/Canvas;->clipPath(Landroid/graphics/Path;)Z
 
     .line 14
     .line 15
-    invoke-virtual {p1, v0}, Landroid/graphics/Canvas;->clipPath(Landroid/graphics/Path;)Z
-
     .line 16
-    .line 17
-    .line 18
     :cond_1
     invoke-super {p0, p1}, Landroid/widget/FrameLayout;->dispatchDraw(Landroid/graphics/Canvas;)V
 
+    .line 17
+    .line 18
     .line 19
-    .line 20
-    .line 21
     return-void
 .end method
 
 .method public final getButtonsLayout()Lcom/afollestad/materialdialogs/internal/button/DialogActionButtonLayout;
     .locals 1
 
+    .line 1
     iget-object v0, p0, Lcom/afollestad/materialdialogs/internal/main/DialogLayout;->k:Lcom/afollestad/materialdialogs/internal/button/DialogActionButtonLayout;
 
+    .line 2
+    .line 3
     return-object v0
 .end method
 
 .method public final getContentLayout()Lcom/afollestad/materialdialogs/internal/message/DialogContentLayout;
     .locals 1
 
+    .line 1
     iget-object v0, p0, Lcom/afollestad/materialdialogs/internal/main/DialogLayout;->j:Lcom/afollestad/materialdialogs/internal/message/DialogContentLayout;
 
+    .line 2
+    .line 3
     return-object v0
 .end method
 
 .method public final getCornerRadii()[F
     .locals 1
 
+    .line 1
     iget-object v0, p0, Lcom/afollestad/materialdialogs/internal/main/DialogLayout;->d:[F
 
+    .line 2
+    .line 3
     return-object v0
 .end method
 
 .method public final getDebugMode()Z
     .locals 1
 
+    .line 1
     iget-boolean v0, p0, Lcom/afollestad/materialdialogs/internal/main/DialogLayout;->c:Z
 
+    .line 2
+    .line 3
     return v0
 .end method
 
-.method public final getDialog()Lr5/a;
+.method public final getDialog()LK2/a;
     .locals 1
 
     .line 1
     const/4 v0, 0x0
 
+    .line 2
     return-object v0
 .end method
 
 .method public final getFrameMarginVertical$core()I
     .locals 1
 
+    .line 1
     iget v0, p0, Lcom/afollestad/materialdialogs/internal/main/DialogLayout;->g:I
 
+    .line 2
+    .line 3
     return v0
 .end method
 
 .method public final getFrameMarginVerticalLess$core()I
     .locals 1
 
+    .line 1
     iget v0, p0, Lcom/afollestad/materialdialogs/internal/main/DialogLayout;->h:I
 
+    .line 2
+    .line 3
     return v0
 .end method
 
 .method public final getLayoutMode()Lcom/afollestad/materialdialogs/LayoutMode;
     .locals 1
 
+    .line 1
     iget-object v0, p0, Lcom/afollestad/materialdialogs/internal/main/DialogLayout;->l:Lcom/afollestad/materialdialogs/LayoutMode;
 
+    .line 2
+    .line 3
     return-object v0
 .end method
 
 .method public final getMaxHeight()I
     .locals 1
 
+    .line 1
     iget v0, p0, Lcom/afollestad/materialdialogs/internal/main/DialogLayout;->b:I
 
+    .line 2
+    .line 3
     return v0
 .end method
 
 .method public final getTitleLayout()Lcom/afollestad/materialdialogs/internal/main/DialogTitleLayout;
     .locals 1
 
+    .line 1
     iget-object v0, p0, Lcom/afollestad/materialdialogs/internal/main/DialogLayout;->i:Lcom/afollestad/materialdialogs/internal/main/DialogTitleLayout;
 
+    .line 2
+    .line 3
     return-object v0
 .end method
 
@@ -753,7 +775,7 @@
 
     .line 14
     .line 15
-    invoke-static {v1, v0}, Landroidx/constraintlayout/compose/i;->l(ILandroid/view/View;)F
+    invoke-static {v0, v1}, Lma/a;->h(Lcom/afollestad/materialdialogs/internal/main/DialogLayout;I)F
 
     .line 16
     .line 17
@@ -771,7 +793,7 @@
     .line 23
     .line 24
     .line 25
-    invoke-static {v1, v0}, Landroidx/constraintlayout/compose/i;->l(ILandroid/view/View;)F
+    invoke-static {v0, v1}, Lma/a;->h(Lcom/afollestad/materialdialogs/internal/main/DialogLayout;I)F
 
     .line 26
     .line 27
@@ -795,7 +817,7 @@
     int-to-float v2, v2
 
     .line 37
-    invoke-static {v1, v0}, Landroidx/constraintlayout/compose/i;->l(ILandroid/view/View;)F
+    invoke-static {v0, v1}, Lma/a;->h(Lcom/afollestad/materialdialogs/internal/main/DialogLayout;I)F
 
     .line 38
     .line 39
@@ -815,7 +837,7 @@
 
     .line 46
     .line 47
-    invoke-static {v1}, Le3/b;->p(Landroid/view/View;)Z
+    invoke-static {v1}, Lx0/c;->u(Landroid/view/View;)Z
 
     .line 48
     .line 49
@@ -856,7 +878,7 @@
 
     .line 66
     .line 67
-    invoke-static {v1}, Le3/b;->p(Landroid/view/View;)Z
+    invoke-static {v1}, Lx0/c;->u(Landroid/view/View;)Z
 
     .line 68
     .line 69
@@ -897,7 +919,7 @@
 
     .line 86
     .line 87
-    invoke-static {v1}, Lb0/h;->X(Lcom/afollestad/materialdialogs/internal/button/DialogActionButtonLayout;)Z
+    invoke-static {v1}, LE5/b;->n(Lcom/afollestad/materialdialogs/internal/button/DialogActionButtonLayout;)Z
 
     .line 88
     .line 89
@@ -913,7 +935,7 @@
 
     .line 94
     :cond_3
-    invoke-static/range {p0 .. p0}, Le3/b;->o(Landroid/view/View;)Z
+    invoke-static/range {p0 .. p0}, Lx0/c;->t(Landroid/view/ViewGroup;)Z
 
     .line 95
     .line 96
@@ -929,7 +951,7 @@
 
     .line 101
     .line 102
-    invoke-static {v10, v0}, Landroidx/constraintlayout/compose/i;->l(ILandroid/view/View;)F
+    invoke-static {v0, v10}, Lma/a;->h(Lcom/afollestad/materialdialogs/internal/main/DialogLayout;I)F
 
     .line 103
     .line 104
@@ -952,7 +974,7 @@
     int-to-float v1, v1
 
     .line 112
-    invoke-static {v10, v0}, Landroidx/constraintlayout/compose/i;->l(ILandroid/view/View;)F
+    invoke-static {v0, v10}, Lma/a;->h(Lcom/afollestad/materialdialogs/internal/main/DialogLayout;I)F
 
     .line 113
     .line 114
@@ -1027,7 +1049,7 @@
     int-to-float v1, v1
 
     .line 148
-    invoke-static {v10, v0}, Landroidx/constraintlayout/compose/i;->l(ILandroid/view/View;)F
+    invoke-static {v0, v10}, Lma/a;->h(Lcom/afollestad/materialdialogs/internal/main/DialogLayout;I)F
 
     .line 149
     .line 150
@@ -1073,7 +1095,7 @@
 
     .line 168
     .line 169
-    invoke-static {v2, v0}, Landroidx/constraintlayout/compose/i;->l(ILandroid/view/View;)F
+    invoke-static {v0, v2}, Lma/a;->h(Lcom/afollestad/materialdialogs/internal/main/DialogLayout;I)F
 
     .line 170
     .line 171
@@ -1107,7 +1129,7 @@
     int-to-float v1, v1
 
     .line 185
-    invoke-static {v10, v0}, Landroidx/constraintlayout/compose/i;->l(ILandroid/view/View;)F
+    invoke-static {v0, v10}, Lma/a;->h(Lcom/afollestad/materialdialogs/internal/main/DialogLayout;I)F
 
     .line 186
     .line 187
@@ -1152,7 +1174,7 @@
 
     .line 207
     .line 208
-    invoke-static {v1, v0}, Landroidx/constraintlayout/compose/i;->l(ILandroid/view/View;)F
+    invoke-static {v0, v1}, Lma/a;->h(Lcom/afollestad/materialdialogs/internal/main/DialogLayout;I)F
 
     .line 209
     .line 210
@@ -1215,7 +1237,7 @@
     int-to-float v1, v1
 
     .line 238
-    invoke-static {v10, v0}, Landroidx/constraintlayout/compose/i;->l(ILandroid/view/View;)F
+    invoke-static {v0, v10}, Lma/a;->h(Lcom/afollestad/materialdialogs/internal/main/DialogLayout;I)F
 
     .line 239
     .line 240
@@ -1237,7 +1259,7 @@
     int-to-float v1, v1
 
     .line 248
-    invoke-static {v10, v0}, Landroidx/constraintlayout/compose/i;->l(ILandroid/view/View;)F
+    invoke-static {v0, v10}, Lma/a;->h(Lcom/afollestad/materialdialogs/internal/main/DialogLayout;I)F
 
     .line 249
     .line 250
@@ -1263,7 +1285,7 @@
     .line 260
     .line 261
     :cond_6
-    invoke-static {}, Lrb/h;->W()V
+    invoke-static {}, Lkotlin/jvm/internal/h;->e()V
 
     .line 262
     .line 263
@@ -1272,7 +1294,7 @@
 
     .line 265
     :cond_7
-    invoke-static {}, Lrb/h;->W()V
+    invoke-static {}, Lkotlin/jvm/internal/h;->e()V
 
     .line 266
     .line 267
@@ -1281,7 +1303,7 @@
 
     .line 269
     :cond_8
-    invoke-static {}, Lrb/h;->W()V
+    invoke-static {}, Lkotlin/jvm/internal/h;->e()V
 
     .line 270
     .line 271
@@ -1290,7 +1312,7 @@
 
     .line 273
     :cond_9
-    invoke-static {}, Lrb/h;->W()V
+    invoke-static {}, Lkotlin/jvm/internal/h;->e()V
 
     .line 274
     .line 275
@@ -1363,7 +1385,7 @@
     add-float/2addr v2, v3
 
     .line 306
-    invoke-static {v10, v0}, Landroidx/constraintlayout/compose/i;->l(ILandroid/view/View;)F
+    invoke-static {v0, v10}, Lma/a;->h(Lcom/afollestad/materialdialogs/internal/main/DialogLayout;I)F
 
     .line 307
     .line 308
@@ -1393,7 +1415,7 @@
     int-to-float v2, v2
 
     .line 320
-    invoke-static {v10, v0}, Landroidx/constraintlayout/compose/i;->l(ILandroid/view/View;)F
+    invoke-static {v0, v10}, Lma/a;->h(Lcom/afollestad/materialdialogs/internal/main/DialogLayout;I)F
 
     .line 321
     .line 322
@@ -1419,7 +1441,7 @@
     const/4 v4, 0x4
 
     .line 332
-    invoke-static {v4, v0}, Landroidx/constraintlayout/compose/i;->l(ILandroid/view/View;)F
+    invoke-static {v0, v4}, Lma/a;->h(Lcom/afollestad/materialdialogs/internal/main/DialogLayout;I)F
 
     .line 333
     .line 334
@@ -1442,7 +1464,7 @@
     int-to-float v1, v1
 
     .line 343
-    invoke-static {v4, v0}, Landroidx/constraintlayout/compose/i;->l(ILandroid/view/View;)F
+    invoke-static {v0, v4}, Lma/a;->h(Lcom/afollestad/materialdialogs/internal/main/DialogLayout;I)F
 
     .line 344
     .line 345
@@ -1487,7 +1509,7 @@
 
     .line 365
     :cond_b
-    invoke-static {}, Lrb/h;->W()V
+    invoke-static {}, Lkotlin/jvm/internal/h;->e()V
 
     .line 366
     .line 367
@@ -1496,7 +1518,7 @@
 
     .line 369
     :cond_c
-    invoke-static {}, Lrb/h;->W()V
+    invoke-static {}, Lkotlin/jvm/internal/h;->e()V
 
     .line 370
     .line 371
@@ -1549,7 +1571,7 @@
 
     .line 394
     .line 395
-    invoke-static {v2, v0}, Landroidx/constraintlayout/compose/i;->l(ILandroid/view/View;)F
+    invoke-static {v0, v2}, Lma/a;->h(Lcom/afollestad/materialdialogs/internal/main/DialogLayout;I)F
 
     .line 396
     .line 397
@@ -1557,7 +1579,7 @@
     move-result v2
 
     .line 399
-    invoke-static {v10, v0}, Landroidx/constraintlayout/compose/i;->l(ILandroid/view/View;)F
+    invoke-static {v0, v10}, Lma/a;->h(Lcom/afollestad/materialdialogs/internal/main/DialogLayout;I)F
 
     .line 400
     .line 401
@@ -1582,7 +1604,7 @@
     int-to-float v2, v2
 
     .line 410
-    invoke-static {v10, v0}, Landroidx/constraintlayout/compose/i;->l(ILandroid/view/View;)F
+    invoke-static {v0, v10}, Lma/a;->h(Lcom/afollestad/materialdialogs/internal/main/DialogLayout;I)F
 
     .line 411
     .line 412
@@ -1603,7 +1625,7 @@
     .line 419
     .line 420
     .line 421
-    invoke-static {v10, v0}, Landroidx/constraintlayout/compose/i;->l(ILandroid/view/View;)F
+    invoke-static {v0, v10}, Lma/a;->h(Lcom/afollestad/materialdialogs/internal/main/DialogLayout;I)F
 
     .line 422
     .line 423
@@ -1623,7 +1645,7 @@
 
     .line 430
     :cond_e
-    invoke-static {}, Lrb/h;->W()V
+    invoke-static {}, Lkotlin/jvm/internal/h;->e()V
 
     .line 431
     .line 432
@@ -1645,7 +1667,7 @@
     .line 2
     .line 3
     .line 4
-    sget v0, Lr5/c;->md_title_layout:I
+    sget v0, LK2/c;->md_title_layout:I
 
     .line 5
     .line 6
@@ -1665,7 +1687,7 @@
 
     .line 13
     .line 14
-    sget v0, Lr5/c;->md_content_layout:I
+    sget v0, LK2/c;->md_content_layout:I
 
     .line 15
     .line 16
@@ -1685,7 +1707,7 @@
 
     .line 23
     .line 24
-    sget v0, Lr5/c;->md_button_layout:I
+    sget v0, LK2/c;->md_button_layout:I
 
     .line 25
     .line 26
@@ -1791,7 +1813,7 @@
 
     .line 37
     .line 38
-    invoke-static {p3}, Lb0/h;->X(Lcom/afollestad/materialdialogs/internal/button/DialogActionButtonLayout;)Z
+    invoke-static {p3}, LE5/b;->n(Lcom/afollestad/materialdialogs/internal/button/DialogActionButtonLayout;)Z
 
     .line 39
     .line 40
@@ -1836,7 +1858,7 @@
 
     .line 60
     :cond_1
-    invoke-static {}, Lrb/h;->W()V
+    invoke-static {}, Lkotlin/jvm/internal/h;->e()V
 
     .line 61
     .line 62
@@ -1958,7 +1980,7 @@
 
     .line 35
     .line 36
-    invoke-static {v0}, Lb0/h;->X(Lcom/afollestad/materialdialogs/internal/button/DialogActionButtonLayout;)Z
+    invoke-static {v0}, LE5/b;->n(Lcom/afollestad/materialdialogs/internal/button/DialogActionButtonLayout;)Z
 
     .line 37
     .line 38
@@ -2003,7 +2025,7 @@
 
     .line 58
     :cond_2
-    invoke-static {}, Lrb/h;->W()V
+    invoke-static {}, Lkotlin/jvm/internal/h;->e()V
 
     .line 59
     .line 60
@@ -2183,80 +2205,80 @@
 
     .line 139
     .line 140
-    const/4 v4, 0x1
+    goto :goto_5
 
     .line 141
     :cond_7
-    xor-int/lit8 p1, v4, 0x1
+    const/4 v1, 0x0
 
     .line 142
-    .line 143
-    if-eqz p1, :cond_8
+    :goto_5
+    if-nez v1, :cond_8
 
+    .line 143
     .line 144
-    .line 145
     iget-object p1, p0, Lcom/afollestad/materialdialogs/internal/main/DialogLayout;->p:Landroid/graphics/RectF;
 
+    .line 145
     .line 146
-    .line 147
     const/4 p2, 0x0
 
-    .line 148
+    .line 147
     iput p2, p1, Landroid/graphics/RectF;->left:F
 
+    .line 148
     .line 149
-    .line 150
     iput p2, p1, Landroid/graphics/RectF;->top:F
 
+    .line 150
     .line 151
-    .line 152
     invoke-virtual {p0}, Landroid/view/View;->getMeasuredWidth()I
 
+    .line 152
     .line 153
     .line 154
-    .line 155
     move-result p2
+
+    .line 155
+    int-to-float p2, p2
 
     .line 156
-    int-to-float p2, p2
-
-    .line 157
     iput p2, p1, Landroid/graphics/RectF;->right:F
 
+    .line 157
     .line 158
-    .line 159
     invoke-virtual {p0}, Landroid/view/View;->getMeasuredHeight()I
 
+    .line 159
     .line 160
     .line 161
-    .line 162
     move-result p2
 
-    .line 163
+    .line 162
     int-to-float p2, p2
 
-    .line 164
+    .line 163
     iput p2, p1, Landroid/graphics/RectF;->bottom:F
 
+    .line 164
     .line 165
-    .line 166
     iget-object p2, p0, Lcom/afollestad/materialdialogs/internal/main/DialogLayout;->o:Landroid/graphics/Path;
 
+    .line 166
     .line 167
-    .line 168
     iget-object v0, p0, Lcom/afollestad/materialdialogs/internal/main/DialogLayout;->d:[F
 
+    .line 168
     .line 169
-    .line 170
     sget-object v1, Landroid/graphics/Path$Direction;->CW:Landroid/graphics/Path$Direction;
 
+    .line 170
     .line 171
-    .line 172
     invoke-virtual {p2, p1, v0, v1}, Landroid/graphics/Path;->addRoundRect(Landroid/graphics/RectF;[FLandroid/graphics/Path$Direction;)V
 
+    .line 172
     .line 173
     .line 174
-    .line 175
     :cond_8
     return-void
 .end method
@@ -2264,16 +2286,22 @@
 .method public final setButtonsLayout(Lcom/afollestad/materialdialogs/internal/button/DialogActionButtonLayout;)V
     .locals 0
 
+    .line 1
     iput-object p1, p0, Lcom/afollestad/materialdialogs/internal/main/DialogLayout;->k:Lcom/afollestad/materialdialogs/internal/button/DialogActionButtonLayout;
 
+    .line 2
+    .line 3
     return-void
 .end method
 
 .method public final setContentLayout(Lcom/afollestad/materialdialogs/internal/message/DialogContentLayout;)V
     .locals 0
 
+    .line 1
     iput-object p1, p0, Lcom/afollestad/materialdialogs/internal/main/DialogLayout;->j:Lcom/afollestad/materialdialogs/internal/message/DialogContentLayout;
 
+    .line 2
+    .line 3
     return-void
 .end method
 
@@ -2335,7 +2363,7 @@
     return-void
 .end method
 
-.method public final setDialog(Lr5/a;)V
+.method public final setDialog(LK2/a;)V
     .locals 0
 
     .line 1
@@ -2345,23 +2373,32 @@
 .method public final setLayoutMode(Lcom/afollestad/materialdialogs/LayoutMode;)V
     .locals 0
 
+    .line 1
     iput-object p1, p0, Lcom/afollestad/materialdialogs/internal/main/DialogLayout;->l:Lcom/afollestad/materialdialogs/LayoutMode;
 
+    .line 2
+    .line 3
     return-void
 .end method
 
 .method public final setMaxHeight(I)V
     .locals 0
 
+    .line 1
     iput p1, p0, Lcom/afollestad/materialdialogs/internal/main/DialogLayout;->b:I
 
+    .line 2
+    .line 3
     return-void
 .end method
 
 .method public final setTitleLayout(Lcom/afollestad/materialdialogs/internal/main/DialogTitleLayout;)V
     .locals 0
 
+    .line 1
     iput-object p1, p0, Lcom/afollestad/materialdialogs/internal/main/DialogLayout;->i:Lcom/afollestad/materialdialogs/internal/main/DialogTitleLayout;
 
+    .line 2
+    .line 3
     return-void
 .end method

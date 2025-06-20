@@ -1,95 +1,204 @@
-.class public abstract synthetic Landroidx/compose/ui/node/s0;
+.class public final Landroidx/compose/ui/node/s0;
 .super Ljava/lang/Object;
 .source "SourceFile"
 
 
-# static fields
-.field public static final synthetic a:[I
+# instance fields
+.field public final a:Landroidx/compose/ui/node/C;
+
+.field public final b:Ljava/util/ArrayList;
+
+.field public c:Ljava/lang/Object;
 
 
 # direct methods
-.method static constructor <clinit>()V
-    .locals 3
+.method public constructor <init>(Landroidx/compose/ui/node/C;)V
+    .locals 1
 
-    invoke-static {}, Landroidx/compose/ui/node/LayoutNode$LayoutState;->values()[Landroidx/compose/ui/node/LayoutNode$LayoutState;
+    .line 1
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
+    .line 2
+    .line 3
+    .line 4
+    iput-object p1, p0, Landroidx/compose/ui/node/s0;->a:Landroidx/compose/ui/node/C;
+
+    .line 5
+    .line 6
+    new-instance v0, Ljava/util/ArrayList;
+
+    .line 7
+    .line 8
+    invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
+
+    .line 9
+    .line 10
+    .line 11
+    iput-object v0, p0, Landroidx/compose/ui/node/s0;->b:Ljava/util/ArrayList;
+
+    .line 12
+    .line 13
+    iput-object p1, p0, Landroidx/compose/ui/node/s0;->c:Ljava/lang/Object;
+
+    .line 14
+    .line 15
+    return-void
+.end method
+
+
+# virtual methods
+.method public final a()V
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, Landroidx/compose/ui/node/s0;->b:Ljava/util/ArrayList;
+
+    .line 2
+    .line 3
+    invoke-virtual {v0}, Ljava/util/ArrayList;->clear()V
+
+    .line 4
+    .line 5
+    .line 6
+    iget-object v0, p0, Landroidx/compose/ui/node/s0;->a:Landroidx/compose/ui/node/C;
+
+    .line 7
+    .line 8
+    iput-object v0, p0, Landroidx/compose/ui/node/s0;->c:Ljava/lang/Object;
+
+    .line 9
+    .line 10
+    iget-object v0, p0, Landroidx/compose/ui/node/s0;->a:Landroidx/compose/ui/node/C;
+
+    .line 11
+    .line 12
+    invoke-virtual {v0}, Landroidx/compose/ui/node/C;->O()V
+
+    .line 13
+    .line 14
+    .line 15
+    return-void
+.end method
+
+.method public final b(Ljava/lang/Object;)V
+    .locals 2
+
+    .line 1
+    iget-object v0, p0, Landroidx/compose/ui/node/s0;->b:Ljava/util/ArrayList;
+
+    .line 2
+    .line 3
+    iget-object v1, p0, Landroidx/compose/ui/node/s0;->c:Ljava/lang/Object;
+
+    .line 4
+    .line 5
+    invoke-virtual {v0, v1}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
+
+    .line 6
+    .line 7
+    .line 8
+    iput-object p1, p0, Landroidx/compose/ui/node/s0;->c:Ljava/lang/Object;
+
+    .line 9
+    .line 10
+    return-void
+.end method
+
+.method public final c()Ljava/lang/Object;
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, Landroidx/compose/ui/node/s0;->c:Ljava/lang/Object;
+
+    .line 2
+    .line 3
+    return-object v0
+.end method
+
+.method public final d()V
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, Landroidx/compose/ui/node/s0;->a:Landroidx/compose/ui/node/C;
+
+    .line 2
+    .line 3
+    iget-object v0, v0, Landroidx/compose/ui/node/C;->k:Landroidx/compose/ui/platform/o;
+
+    .line 4
+    .line 5
+    if-eqz v0, :cond_0
+
+    .line 6
+    .line 7
+    invoke-virtual {v0}, Landroidx/compose/ui/platform/o;->v()V
+
+    .line 8
+    .line 9
+    .line 10
+    :cond_0
+    return-void
+.end method
+
+.method public final e()V
+    .locals 2
+
+    .line 1
+    iget-object v0, p0, Landroidx/compose/ui/node/s0;->b:Ljava/util/ArrayList;
+
+    .line 2
+    .line 3
+    invoke-virtual {v0}, Ljava/util/ArrayList;->isEmpty()Z
+
+    .line 4
+    .line 5
+    .line 6
+    move-result v1
+
+    .line 7
+    if-nez v1, :cond_0
+
+    .line 8
+    .line 9
+    invoke-virtual {v0}, Ljava/util/ArrayList;->size()I
+
+    .line 10
+    .line 11
+    .line 12
+    move-result v1
+
+    .line 13
+    add-int/lit8 v1, v1, -0x1
+
+    .line 14
+    .line 15
+    invoke-virtual {v0, v1}, Ljava/util/ArrayList;->remove(I)Ljava/lang/Object;
+
+    .line 16
+    .line 17
+    .line 18
     move-result-object v0
 
-    array-length v0, v0
+    .line 19
+    iput-object v0, p0, Landroidx/compose/ui/node/s0;->c:Ljava/lang/Object;
 
-    new-array v0, v0, [I
-
-    :try_start_0
-    sget-object v1, Landroidx/compose/ui/node/LayoutNode$LayoutState;->LookaheadMeasuring:Landroidx/compose/ui/node/LayoutNode$LayoutState;
-
-    invoke-virtual {v1}, Ljava/lang/Enum;->ordinal()I
-
-    move-result v1
-
-    const/4 v2, 0x1
-
-    aput v2, v0, v1
-    :try_end_0
-    .catch Ljava/lang/NoSuchFieldError; {:try_start_0 .. :try_end_0} :catch_0
-
-    :catch_0
-    :try_start_1
-    sget-object v1, Landroidx/compose/ui/node/LayoutNode$LayoutState;->Measuring:Landroidx/compose/ui/node/LayoutNode$LayoutState;
-
-    invoke-virtual {v1}, Ljava/lang/Enum;->ordinal()I
-
-    move-result v1
-
-    const/4 v2, 0x2
-
-    aput v2, v0, v1
-    :try_end_1
-    .catch Ljava/lang/NoSuchFieldError; {:try_start_1 .. :try_end_1} :catch_1
-
-    :catch_1
-    :try_start_2
-    sget-object v1, Landroidx/compose/ui/node/LayoutNode$LayoutState;->LookaheadLayingOut:Landroidx/compose/ui/node/LayoutNode$LayoutState;
-
-    invoke-virtual {v1}, Ljava/lang/Enum;->ordinal()I
-
-    move-result v1
-
-    const/4 v2, 0x3
-
-    aput v2, v0, v1
-    :try_end_2
-    .catch Ljava/lang/NoSuchFieldError; {:try_start_2 .. :try_end_2} :catch_2
-
-    :catch_2
-    :try_start_3
-    sget-object v1, Landroidx/compose/ui/node/LayoutNode$LayoutState;->LayingOut:Landroidx/compose/ui/node/LayoutNode$LayoutState;
-
-    invoke-virtual {v1}, Ljava/lang/Enum;->ordinal()I
-
-    move-result v1
-
-    const/4 v2, 0x4
-
-    aput v2, v0, v1
-    :try_end_3
-    .catch Ljava/lang/NoSuchFieldError; {:try_start_3 .. :try_end_3} :catch_3
-
-    :catch_3
-    :try_start_4
-    sget-object v1, Landroidx/compose/ui/node/LayoutNode$LayoutState;->Idle:Landroidx/compose/ui/node/LayoutNode$LayoutState;
-
-    invoke-virtual {v1}, Ljava/lang/Enum;->ordinal()I
-
-    move-result v1
-
-    const/4 v2, 0x5
-
-    aput v2, v0, v1
-    :try_end_4
-    .catch Ljava/lang/NoSuchFieldError; {:try_start_4 .. :try_end_4} :catch_4
-
-    :catch_4
-    sput-object v0, Landroidx/compose/ui/node/s0;->a:[I
-
+    .line 20
+    .line 21
     return-void
+
+    .line 22
+    :cond_0
+    const-string v0, "empty stack"
+
+    .line 23
+    .line 24
+    invoke-static {v0}, Landroidx/compose/runtime/o;->e0(Ljava/lang/String;)V
+
+    .line 25
+    .line 26
+    .line 27
+    const/4 v0, 0x0
+
+    .line 28
+    throw v0
 .end method

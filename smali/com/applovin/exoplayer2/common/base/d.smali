@@ -90,8 +90,11 @@
 .method public get()Ljava/lang/Object;
     .locals 1
 
+    .line 1
     iget-object v0, p0, Lcom/applovin/exoplayer2/common/base/d;->a:Ljava/lang/Object;
 
+    .line 2
+    .line 3
     return-object v0
 .end method
 
@@ -133,7 +136,7 @@
 .method public or(Lcom/applovin/exoplayer2/common/base/Optional;)Lcom/applovin/exoplayer2/common/base/Optional;
     .locals 0
 
-    .line 2
+    .line 3
     invoke-static {p1}, Lcom/applovin/exoplayer2/common/base/Preconditions;->checkNotNull(Ljava/lang/Object;)Ljava/lang/Object;
 
     return-object p0
@@ -142,9 +145,10 @@
 .method public or(Lcom/applovin/exoplayer2/common/base/Supplier;)Ljava/lang/Object;
     .locals 0
 
-    .line 3
+    .line 4
     invoke-static {p1}, Lcom/applovin/exoplayer2/common/base/Preconditions;->checkNotNull(Ljava/lang/Object;)Ljava/lang/Object;
 
+    .line 5
     iget-object p1, p0, Lcom/applovin/exoplayer2/common/base/d;->a:Ljava/lang/Object;
 
     return-object p1
@@ -153,11 +157,12 @@
 .method public or(Ljava/lang/Object;)Ljava/lang/Object;
     .locals 1
 
+    .line 1
     const-string v0, "use Optional.orNull() instead of Optional.or(null)"
 
-    .line 1
     invoke-static {p1, v0}, Lcom/applovin/exoplayer2/common/base/Preconditions;->checkNotNull(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
+    .line 2
     iget-object p1, p0, Lcom/applovin/exoplayer2/common/base/d;->a:Ljava/lang/Object;
 
     return-object p1
@@ -166,8 +171,11 @@
 .method public orNull()Ljava/lang/Object;
     .locals 1
 
+    .line 1
     iget-object v0, p0, Lcom/applovin/exoplayer2/common/base/d;->a:Ljava/lang/Object;
 
+    .line 2
+    .line 3
     return-object v0
 .end method
 
@@ -196,7 +204,7 @@
 
     .line 11
     .line 12
-    invoke-static {v0, v1, v2}, Landroid/support/v4/media/session/a;->H(Ljava/lang/StringBuilder;Ljava/lang/Object;Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v0, v1, v2}, Landroidx/appcompat/view/menu/F;->H(Ljava/lang/StringBuilder;Ljava/lang/Object;Ljava/lang/String;)Ljava/lang/String;
 
     .line 13
     .line 14

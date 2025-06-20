@@ -27,9 +27,9 @@
 .method private constructor <init>(Lcom/applovin/impl/adview/activity/a;)V
     .locals 0
 
+    .line 1
     iput-object p1, p0, Lcom/applovin/impl/adview/activity/a$b;->a:Lcom/applovin/impl/adview/activity/a;
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -63,11 +63,11 @@
     .line 3
     invoke-virtual {v0, p1}, Landroid/os/Message;->setData(Landroid/os/Bundle;)V
 
+    .line 4
     :cond_0
     :try_start_0
     iget-object p1, p0, Lcom/applovin/impl/adview/activity/a$b;->a:Lcom/applovin/impl/adview/activity/a;
 
-    .line 4
     invoke-static {p1}, Lcom/applovin/impl/adview/activity/a;->e(Lcom/applovin/impl/adview/activity/a;)Landroid/os/Messenger;
 
     move-result-object p1
@@ -81,9 +81,9 @@
     :catch_0
     move-exception p1
 
+    .line 5
     iget-object v0, p0, Lcom/applovin/impl/adview/activity/a$b;->a:Lcom/applovin/impl/adview/activity/a;
 
-    .line 5
     invoke-static {v0}, Lcom/applovin/impl/adview/activity/a;->b(Lcom/applovin/impl/adview/activity/a;)Lcom/applovin/impl/sdk/n;
 
     invoke-static {}, Lcom/applovin/impl/sdk/n;->a()Z

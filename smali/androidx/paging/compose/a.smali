@@ -4,7 +4,7 @@
 
 
 # direct methods
-.method public static final a(Landroidx/paging/compose/c;Lzh/c;)Lzh/c;
+.method public static final a(Landroidx/paging/compose/c;Lcom/jellystudio/trustedapp/mathai/presentation/navigation/F;)Lka/c;
     .locals 1
 
     .line 1
@@ -12,7 +12,7 @@
 
     .line 2
     .line 3
-    invoke-direct {v0, p1, p0}, Landroidx/paging/compose/LazyFoundationExtensionsKt$itemKey$1;-><init>(Lzh/c;Landroidx/paging/compose/c;)V
+    invoke-direct {v0, p1, p0}, Landroidx/paging/compose/LazyFoundationExtensionsKt$itemKey$1;-><init>(Lka/c;Landroidx/paging/compose/c;)V
 
     .line 4
     .line 5

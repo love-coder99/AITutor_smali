@@ -3,25 +3,35 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lzh/e;
+.implements Lka/e;
 
 
 # annotations
+.annotation runtime Lca/c;
+    c = "coil.intercept.EngineInterceptor$intercept$2"
+    f = "EngineInterceptor.kt"
+    l = {
+        0x4d
+    }
+    m = "invokeSuspend"
+.end annotation
+
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "Lkotlin/coroutines/jvm/internal/SuspendLambda;",
-        "Lzh/e;"
+        "Lka/e;"
     }
 .end annotation
 
 .annotation runtime Lkotlin/Metadata;
     d1 = {
-        "\u0000\n\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\u0010\u0002\u001a\u00020\u0001*\u00020\u0000H\u008a@"
+        "\u0000\u000c\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0008\u0002\u0010\u0002\u001a\u00020\u0001*\u00020\u0000H\u008a@\u00a2\u0006\u0004\u0008\u0002\u0010\u0003"
     }
     d2 = {
-        "Lkotlinx/coroutines/w;",
-        "Ln5/o;",
-        "<anonymous>"
+        "Lkotlinx/coroutines/u;",
+        "LH2/n;",
+        "<anonymous>",
+        "(Lkotlinx/coroutines/u;)LH2/n;"
     }
     k = 0x3
     mv = {
@@ -31,28 +41,19 @@
     }
 .end annotation
 
-.annotation runtime Lth/c;
-    c = "coil.intercept.EngineInterceptor$intercept$2"
-    f = "EngineInterceptor.kt"
-    l = {
-        0x4d
-    }
-    m = "invokeSuspend"
-.end annotation
-
 
 # instance fields
 .field final synthetic $cacheKey:Lcoil/memory/MemoryCache$Key;
 
 .field final synthetic $chain:Lcoil/intercept/c;
 
-.field final synthetic $eventListener:Lcoil/e;
+.field final synthetic $eventListener:Lcoil/d;
 
 .field final synthetic $mappedData:Ljava/lang/Object;
 
-.field final synthetic $options:Ln5/l;
+.field final synthetic $options:LH2/k;
 
-.field final synthetic $request:Ln5/i;
+.field final synthetic $request:LH2/h;
 
 .field label:I
 
@@ -60,16 +61,16 @@
 
 
 # direct methods
-.method public constructor <init>(Lcoil/intercept/b;Ln5/i;Ljava/lang/Object;Ln5/l;Lcoil/e;Lcoil/memory/MemoryCache$Key;Lcoil/intercept/c;Lkotlin/coroutines/Continuation;)V
+.method public constructor <init>(Lcoil/intercept/b;LH2/h;Ljava/lang/Object;LH2/k;Lcoil/d;Lcoil/memory/MemoryCache$Key;Lcoil/intercept/c;Lkotlin/coroutines/Continuation;)V
     .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
             "Lcoil/intercept/b;",
-            "Ln5/i;",
+            "LH2/h;",
             "Ljava/lang/Object;",
-            "Ln5/l;",
-            "Lcoil/e;",
+            "LH2/k;",
+            "Lcoil/d;",
             "Lcoil/memory/MemoryCache$Key;",
             "Lcoil/intercept/c;",
             "Lkotlin/coroutines/Continuation<",
@@ -82,22 +83,40 @@
     .line 1
     iput-object p1, p0, Lcoil/intercept/EngineInterceptor$intercept$2;->this$0:Lcoil/intercept/b;
 
-    iput-object p2, p0, Lcoil/intercept/EngineInterceptor$intercept$2;->$request:Ln5/i;
+    .line 2
+    .line 3
+    iput-object p2, p0, Lcoil/intercept/EngineInterceptor$intercept$2;->$request:LH2/h;
 
+    .line 4
+    .line 5
     iput-object p3, p0, Lcoil/intercept/EngineInterceptor$intercept$2;->$mappedData:Ljava/lang/Object;
 
-    iput-object p4, p0, Lcoil/intercept/EngineInterceptor$intercept$2;->$options:Ln5/l;
+    .line 6
+    .line 7
+    iput-object p4, p0, Lcoil/intercept/EngineInterceptor$intercept$2;->$options:LH2/k;
 
-    iput-object p5, p0, Lcoil/intercept/EngineInterceptor$intercept$2;->$eventListener:Lcoil/e;
+    .line 8
+    .line 9
+    iput-object p5, p0, Lcoil/intercept/EngineInterceptor$intercept$2;->$eventListener:Lcoil/d;
 
+    .line 10
+    .line 11
     iput-object p6, p0, Lcoil/intercept/EngineInterceptor$intercept$2;->$cacheKey:Lcoil/memory/MemoryCache$Key;
 
+    .line 12
+    .line 13
     iput-object p7, p0, Lcoil/intercept/EngineInterceptor$intercept$2;->$chain:Lcoil/intercept/c;
 
+    .line 14
+    .line 15
     const/4 p1, 0x2
 
+    .line 16
     invoke-direct {p0, p1, p8}, Lkotlin/coroutines/jvm/internal/SuspendLambda;-><init>(ILkotlin/coroutines/Continuation;)V
 
+    .line 17
+    .line 18
+    .line 19
     return-void
 .end method
 
@@ -112,7 +131,7 @@
             "Lkotlin/coroutines/Continuation<",
             "*>;)",
             "Lkotlin/coroutines/Continuation<",
-            "Lqh/r;",
+            "LX9/j;",
             ">;"
         }
     .end annotation
@@ -121,13 +140,13 @@
 
     iget-object v1, p0, Lcoil/intercept/EngineInterceptor$intercept$2;->this$0:Lcoil/intercept/b;
 
-    iget-object v2, p0, Lcoil/intercept/EngineInterceptor$intercept$2;->$request:Ln5/i;
+    iget-object v2, p0, Lcoil/intercept/EngineInterceptor$intercept$2;->$request:LH2/h;
 
     iget-object v3, p0, Lcoil/intercept/EngineInterceptor$intercept$2;->$mappedData:Ljava/lang/Object;
 
-    iget-object v4, p0, Lcoil/intercept/EngineInterceptor$intercept$2;->$options:Ln5/l;
+    iget-object v4, p0, Lcoil/intercept/EngineInterceptor$intercept$2;->$options:LH2/k;
 
-    iget-object v5, p0, Lcoil/intercept/EngineInterceptor$intercept$2;->$eventListener:Lcoil/e;
+    iget-object v5, p0, Lcoil/intercept/EngineInterceptor$intercept$2;->$eventListener:Lcoil/d;
 
     iget-object v6, p0, Lcoil/intercept/EngineInterceptor$intercept$2;->$cacheKey:Lcoil/memory/MemoryCache$Key;
 
@@ -137,7 +156,7 @@
 
     move-object v8, p2
 
-    invoke-direct/range {v0 .. v8}, Lcoil/intercept/EngineInterceptor$intercept$2;-><init>(Lcoil/intercept/b;Ln5/i;Ljava/lang/Object;Ln5/l;Lcoil/e;Lcoil/memory/MemoryCache$Key;Lcoil/intercept/c;Lkotlin/coroutines/Continuation;)V
+    invoke-direct/range {v0 .. v8}, Lcoil/intercept/EngineInterceptor$intercept$2;-><init>(Lcoil/intercept/b;LH2/h;Ljava/lang/Object;LH2/k;Lcoil/d;Lcoil/memory/MemoryCache$Key;Lcoil/intercept/c;Lkotlin/coroutines/Continuation;)V
 
     return-object p1
 .end method
@@ -146,26 +165,26 @@
     .locals 0
 
     .line 1
-    check-cast p1, Lkotlinx/coroutines/w;
+    check-cast p1, Lkotlinx/coroutines/u;
 
     check-cast p2, Lkotlin/coroutines/Continuation;
 
-    invoke-virtual {p0, p1, p2}, Lcoil/intercept/EngineInterceptor$intercept$2;->invoke(Lkotlinx/coroutines/w;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
+    invoke-virtual {p0, p1, p2}, Lcoil/intercept/EngineInterceptor$intercept$2;->invoke(Lkotlinx/coroutines/u;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
 
     move-result-object p1
 
     return-object p1
 .end method
 
-.method public final invoke(Lkotlinx/coroutines/w;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
+.method public final invoke(Lkotlinx/coroutines/u;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
     .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
-            "Lkotlinx/coroutines/w;",
+            "Lkotlinx/coroutines/u;",
             "Lkotlin/coroutines/Continuation<",
             "-",
-            "Ln5/o;",
+            "LH2/n;",
             ">;)",
             "Ljava/lang/Object;"
         }
@@ -178,7 +197,7 @@
 
     check-cast p1, Lcoil/intercept/EngineInterceptor$intercept$2;
 
-    sget-object p2, Lqh/r;->a:Lqh/r;
+    sget-object p2, LX9/j;->a:LX9/j;
 
     invoke-virtual {p1, p2}, Lcoil/intercept/EngineInterceptor$intercept$2;->invokeSuspend(Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -245,7 +264,7 @@
 
     .line 26
     .line 27
-    iget-object v4, p0, Lcoil/intercept/EngineInterceptor$intercept$2;->$request:Ln5/i;
+    iget-object v4, p0, Lcoil/intercept/EngineInterceptor$intercept$2;->$request:LH2/h;
 
     .line 28
     .line 29
@@ -253,11 +272,11 @@
 
     .line 30
     .line 31
-    iget-object v6, p0, Lcoil/intercept/EngineInterceptor$intercept$2;->$options:Ln5/l;
+    iget-object v6, p0, Lcoil/intercept/EngineInterceptor$intercept$2;->$options:LH2/k;
 
     .line 32
     .line 33
-    iget-object v7, p0, Lcoil/intercept/EngineInterceptor$intercept$2;->$eventListener:Lcoil/e;
+    iget-object v7, p0, Lcoil/intercept/EngineInterceptor$intercept$2;->$eventListener:Lcoil/d;
 
     .line 34
     .line 35
@@ -268,7 +287,7 @@
     move-object v8, p0
 
     .line 38
-    invoke-static/range {v3 .. v8}, Lcoil/intercept/b;->b(Lcoil/intercept/b;Ln5/i;Ljava/lang/Object;Ln5/l;Lcoil/e;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
+    invoke-static/range {v3 .. v8}, Lcoil/intercept/b;->b(Lcoil/intercept/b;LH2/h;Ljava/lang/Object;LH2/k;Lcoil/d;Lkotlin/coroutines/jvm/internal/ContinuationImpl;)Ljava/lang/Object;
 
     .line 39
     .line 40
@@ -358,7 +377,7 @@
     .line 78
     :cond_3
     :goto_1
-    sget-object v1, Lqh/r;->a:Lqh/r;
+    sget-object v1, LX9/j;->a:LX9/j;
 
     .line 79
     .line 80
@@ -389,7 +408,7 @@
 
     .line 89
     .line 90
-    iget-object v0, v0, Lcoil/intercept/b;->d:Lm5/e;
+    iget-object v0, v0, Lcoil/intercept/b;->d:Lv2/j;
 
     .line 91
     .line 92
@@ -397,317 +416,315 @@
 
     .line 93
     .line 94
-    iget-object v4, p0, Lcoil/intercept/EngineInterceptor$intercept$2;->$request:Ln5/i;
+    iget-object v4, p0, Lcoil/intercept/EngineInterceptor$intercept$2;->$request:LH2/h;
 
     .line 95
     .line 96
-    invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+    iget-object v4, v4, LH2/h;->n:Lcoil/request/CachePolicy;
 
     .line 97
     .line 98
-    .line 99
-    iget-object v4, v4, Ln5/i;->t:Lcoil/request/CachePolicy;
-
-    .line 100
-    .line 101
     invoke-virtual {v4}, Lcoil/request/CachePolicy;->getWriteEnabled()Z
 
-    .line 102
-    .line 103
-    .line 104
+    .line 99
+    .line 100
+    .line 101
     move-result v4
 
-    .line 105
+    .line 102
     const/4 v5, 0x0
 
-    .line 106
+    .line 103
     if-nez v4, :cond_7
 
-    .line 107
-    .line 108
+    .line 104
+    .line 105
     :cond_6
     :goto_3
     const/4 v0, 0x0
 
-    .line 109
+    .line 106
     goto :goto_5
 
-    .line 110
+    .line 107
     :cond_7
-    iget-object v0, v0, Lm5/e;->a:Lcoil/g;
+    iget-object v0, v0, Lv2/j;->c:Ljava/lang/Object;
 
-    .line 111
-    .line 112
+    .line 108
+    .line 109
     check-cast v0, Lcoil/i;
 
-    .line 113
-    .line 114
-    iget-object v0, v0, Lcoil/i;->c:Lqh/d;
+    .line 110
+    .line 111
+    iget-object v0, v0, Lcoil/i;->c:LX9/d;
 
+    .line 112
+    .line 113
+    invoke-interface {v0}, LX9/d;->getValue()Ljava/lang/Object;
+
+    .line 114
     .line 115
     .line 116
-    invoke-interface {v0}, Lqh/d;->getValue()Ljava/lang/Object;
-
-    .line 117
-    .line 118
-    .line 119
     move-result-object v0
 
-    .line 120
-    check-cast v0, Lm5/d;
+    .line 117
+    check-cast v0, LG2/c;
 
-    .line 121
-    .line 122
+    .line 118
+    .line 119
     if-eqz v0, :cond_6
 
-    .line 123
-    .line 124
+    .line 120
+    .line 121
     if-nez v1, :cond_8
 
-    .line 125
-    .line 126
+    .line 122
+    .line 123
     goto :goto_3
 
-    .line 127
+    .line 124
     :cond_8
     iget-object v4, p1, Lcoil/intercept/a;->a:Landroid/graphics/drawable/Drawable;
 
-    .line 128
-    .line 129
+    .line 125
+    .line 126
     instance-of v6, v4, Landroid/graphics/drawable/BitmapDrawable;
 
-    .line 130
-    .line 131
+    .line 127
+    .line 128
     if-eqz v6, :cond_9
 
-    .line 132
-    .line 133
+    .line 129
+    .line 130
     check-cast v4, Landroid/graphics/drawable/BitmapDrawable;
 
-    .line 134
-    .line 135
+    .line 131
+    .line 132
     goto :goto_4
 
-    .line 136
+    .line 133
     :cond_9
     move-object v4, v3
 
-    .line 137
+    .line 134
     :goto_4
     if-eqz v4, :cond_6
 
-    .line 138
-    .line 139
+    .line 135
+    .line 136
     invoke-virtual {v4}, Landroid/graphics/drawable/BitmapDrawable;->getBitmap()Landroid/graphics/Bitmap;
 
-    .line 140
-    .line 141
-    .line 142
+    .line 137
+    .line 138
+    .line 139
     move-result-object v4
 
-    .line 143
+    .line 140
     if-nez v4, :cond_a
 
-    .line 144
-    .line 145
+    .line 141
+    .line 142
     goto :goto_3
 
-    .line 146
+    .line 143
     :cond_a
     new-instance v6, Ljava/util/LinkedHashMap;
 
+    .line 144
+    .line 145
+    invoke-direct {v6}, Ljava/util/LinkedHashMap;-><init>()V
+
+    .line 146
     .line 147
     .line 148
-    invoke-direct {v6}, Ljava/util/LinkedHashMap;-><init>()V
+    iget-boolean v7, p1, Lcoil/intercept/a;->b:Z
 
     .line 149
     .line 150
-    .line 151
-    iget-boolean v7, p1, Lcoil/intercept/a;->b:Z
-
-    .line 152
-    .line 153
     invoke-static {v7}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
 
-    .line 154
-    .line 155
-    .line 156
+    .line 151
+    .line 152
+    .line 153
     move-result-object v7
 
-    .line 157
+    .line 154
     const-string v8, "coil#is_sampled"
 
+    .line 155
+    .line 156
+    invoke-interface {v6, v8, v7}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 157
     .line 158
     .line 159
-    invoke-interface {v6, v8, v7}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    iget-object v7, p1, Lcoil/intercept/a;->d:Ljava/lang/String;
 
     .line 160
     .line 161
-    .line 162
-    iget-object v7, p1, Lcoil/intercept/a;->d:Ljava/lang/String;
-
-    .line 163
-    .line 164
     if-eqz v7, :cond_b
 
-    .line 165
-    .line 166
+    .line 162
+    .line 163
     const-string v8, "coil#disk_cache_key"
 
+    .line 164
+    .line 165
+    invoke-interface {v6, v8, v7}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 166
     .line 167
     .line 168
-    invoke-interface {v6, v8, v7}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    :cond_b
+    check-cast v0, LG2/d;
 
     .line 169
     .line 170
-    .line 171
-    :cond_b
-    check-cast v0, Lm5/f;
-
-    .line 172
-    .line 173
     iget-object v7, v1, Lcoil/memory/MemoryCache$Key;->c:Ljava/util/Map;
 
+    .line 171
+    .line 172
+    invoke-static {v7}, Lcoil/util/c;->g(Ljava/util/Map;)Ljava/util/Map;
+
+    .line 173
     .line 174
     .line 175
-    invoke-static {v7}, Lrb/h;->a0(Ljava/util/Map;)Ljava/util/Map;
-
-    .line 176
-    .line 177
-    .line 178
     move-result-object v7
 
-    .line 179
+    .line 176
     new-instance v8, Lcoil/memory/MemoryCache$Key;
 
-    .line 180
-    .line 181
+    .line 177
+    .line 178
     iget-object v1, v1, Lcoil/memory/MemoryCache$Key;->b:Ljava/lang/String;
 
+    .line 179
+    .line 180
+    invoke-direct {v8, v1, v7}, Lcoil/memory/MemoryCache$Key;-><init>(Ljava/lang/String;Ljava/util/Map;)V
+
+    .line 181
     .line 182
     .line 183
-    invoke-direct {v8, v1, v7}, Lcoil/memory/MemoryCache$Key;-><init>(Ljava/lang/String;Ljava/util/Map;)V
+    invoke-static {v6}, Lcoil/util/c;->g(Ljava/util/Map;)Ljava/util/Map;
 
     .line 184
     .line 185
     .line 186
-    invoke-static {v6}, Lrb/h;->a0(Ljava/util/Map;)Ljava/util/Map;
-
-    .line 187
-    .line 188
-    .line 189
     move-result-object v1
 
-    .line 190
-    iget-object v0, v0, Lm5/f;->a:Lm5/l;
+    .line 187
+    iget-object v0, v0, LG2/d;->a:LG2/h;
 
+    .line 188
+    .line 189
+    invoke-interface {v0, v8, v4, v1}, LG2/h;->e(Lcoil/memory/MemoryCache$Key;Landroid/graphics/Bitmap;Ljava/util/Map;)V
+
+    .line 190
     .line 191
     .line 192
-    invoke-interface {v0, v8, v4, v1}, Lm5/l;->d(Lcoil/memory/MemoryCache$Key;Landroid/graphics/Bitmap;Ljava/util/Map;)V
-
-    .line 193
-    .line 194
-    .line 195
     const/4 v0, 0x1
 
-    .line 196
+    .line 193
     :goto_5
     iget-object v7, p1, Lcoil/intercept/a;->a:Landroid/graphics/drawable/Drawable;
 
-    .line 197
-    .line 198
-    iget-object v8, p0, Lcoil/intercept/EngineInterceptor$intercept$2;->$request:Ln5/i;
+    .line 194
+    .line 195
+    iget-object v8, p0, Lcoil/intercept/EngineInterceptor$intercept$2;->$request:LH2/h;
 
-    .line 199
-    .line 200
+    .line 196
+    .line 197
     iget-object v9, p1, Lcoil/intercept/a;->c:Lcoil/decode/DataSource;
 
-    .line 201
-    .line 202
+    .line 198
+    .line 199
     iget-object v1, p0, Lcoil/intercept/EngineInterceptor$intercept$2;->$cacheKey:Lcoil/memory/MemoryCache$Key;
 
-    .line 203
-    .line 204
+    .line 200
+    .line 201
     if-eqz v0, :cond_c
 
-    .line 205
-    .line 206
+    .line 202
+    .line 203
     move-object v10, v1
 
-    .line 207
+    .line 204
     goto :goto_6
 
-    .line 208
+    .line 205
     :cond_c
     move-object v10, v3
 
-    .line 209
+    .line 206
     :goto_6
     iget-object v11, p1, Lcoil/intercept/a;->d:Ljava/lang/String;
 
-    .line 210
-    .line 211
+    .line 207
+    .line 208
     iget-boolean v12, p1, Lcoil/intercept/a;->b:Z
 
-    .line 212
-    .line 213
+    .line 209
+    .line 210
     iget-object p1, p0, Lcoil/intercept/EngineInterceptor$intercept$2;->$chain:Lcoil/intercept/c;
 
-    .line 214
-    .line 215
+    .line 211
+    .line 212
     sget-object v0, Lcoil/util/g;->a:[Landroid/graphics/Bitmap$Config;
 
-    .line 216
-    .line 217
-    instance-of v0, p1, Lcoil/intercept/e;
+    .line 213
+    .line 214
+    instance-of v0, p1, Lcoil/intercept/d;
 
-    .line 218
-    .line 219
+    .line 215
+    .line 216
     if-eqz v0, :cond_d
 
+    .line 217
+    .line 218
+    check-cast p1, Lcoil/intercept/d;
+
+    .line 219
     .line 220
+    iget-boolean p1, p1, Lcoil/intercept/d;->g:Z
+
     .line 221
-    check-cast p1, Lcoil/intercept/e;
-
     .line 222
-    .line 223
-    iget-boolean p1, p1, Lcoil/intercept/e;->g:Z
-
-    .line 224
-    .line 225
     if-eqz p1, :cond_d
 
-    .line 226
-    .line 227
+    .line 223
+    .line 224
     const/4 v13, 0x1
 
-    .line 228
+    .line 225
     goto :goto_7
 
-    .line 229
+    .line 226
     :cond_d
     const/4 v13, 0x0
 
-    .line 230
+    .line 227
     :goto_7
-    new-instance p1, Ln5/o;
+    new-instance p1, LH2/n;
+
+    .line 228
+    .line 229
+    move-object v6, p1
+
+    .line 230
+    invoke-direct/range {v6 .. v13}, LH2/n;-><init>(Landroid/graphics/drawable/Drawable;LH2/h;Lcoil/decode/DataSource;Lcoil/memory/MemoryCache$Key;Ljava/lang/String;ZZ)V
 
     .line 231
     .line 232
-    move-object v6, p1
-
     .line 233
-    invoke-direct/range {v6 .. v13}, Ln5/o;-><init>(Landroid/graphics/drawable/Drawable;Ln5/i;Lcoil/decode/DataSource;Lcoil/memory/MemoryCache$Key;Ljava/lang/String;ZZ)V
-
-    .line 234
-    .line 235
-    .line 236
     return-object p1
 
-    .line 237
+    .line 234
     :goto_8
+    :try_start_1
     monitor-exit v0
+    :try_end_1
+    .catchall {:try_start_1 .. :try_end_1} :catchall_0
 
-    .line 238
+    .line 235
     throw p1
 .end method

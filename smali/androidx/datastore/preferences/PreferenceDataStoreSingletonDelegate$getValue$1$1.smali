@@ -3,31 +3,33 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lzh/a;
+.implements Lka/a;
 
 
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "Lkotlin/jvm/internal/Lambda;",
-        "Lzh/a;"
+        "Lka/a;"
     }
 .end annotation
 
 .annotation runtime Lkotlin/Metadata;
     d1 = {
-        "\u0000\u0006\n\u0002\u0018\u0002\n\u0000\u0010\u0001\u001a\u00020\u0000H\n"
+        "\u0000\u0008\n\u0000\n\u0002\u0018\u0002\n\u0000\u0010\u0000\u001a\u00020\u0001H\n\u00a2\u0006\u0002\u0008\u0002"
     }
     d2 = {
+        "<anonymous>",
         "Ljava/io/File;",
-        "<anonymous>"
+        "invoke"
     }
     k = 0x3
     mv = {
         0x1,
-        0x5,
-        0x1
+        0x8,
+        0x0
     }
+    xi = 0x30
 .end annotation
 
 
@@ -55,48 +57,28 @@
 
 # virtual methods
 .method public final invoke()Ljava/io/File;
-    .locals 4
+    .locals 2
 
+    .line 2
     iget-object v0, p0, Landroidx/datastore/preferences/PreferenceDataStoreSingletonDelegate$getValue$1$1;->$applicationContext:Landroid/content/Context;
 
     iget-object v1, p0, Landroidx/datastore/preferences/PreferenceDataStoreSingletonDelegate$getValue$1$1;->this$0:Landroidx/datastore/preferences/b;
 
-    .line 1
-    iget-object v1, v1, Landroidx/datastore/preferences/b;->a:Ljava/lang/String;
-
-    const-string v2, ".preferences_pb"
-
-    .line 2
-    invoke-static {v2, v1}, Lrb/h;->U(Ljava/lang/Object;Ljava/lang/String;)Ljava/lang/String;
-
-    move-result-object v1
-
     .line 3
-    new-instance v2, Ljava/io/File;
+    iget-object v1, v1, Landroidx/datastore/preferences/b;->b:Ljava/lang/String;
 
-    invoke-virtual {v0}, Landroid/content/Context;->getApplicationContext()Landroid/content/Context;
-
-    move-result-object v0
-
-    invoke-virtual {v0}, Landroid/content/Context;->getFilesDir()Ljava/io/File;
+    .line 4
+    invoke-static {v0, v1}, Landroidx/datastore/preferences/a;->b(Landroid/content/Context;Ljava/lang/String;)Ljava/io/File;
 
     move-result-object v0
 
-    const-string v3, "datastore/"
-
-    invoke-static {v1, v3}, Lrb/h;->U(Ljava/lang/Object;Ljava/lang/String;)Ljava/lang/String;
-
-    move-result-object v1
-
-    invoke-direct {v2, v0, v1}, Ljava/io/File;-><init>(Ljava/io/File;Ljava/lang/String;)V
-
-    return-object v2
+    return-object v0
 .end method
 
 .method public bridge synthetic invoke()Ljava/lang/Object;
     .locals 1
 
-    .line 4
+    .line 1
     invoke-virtual {p0}, Landroidx/datastore/preferences/PreferenceDataStoreSingletonDelegate$getValue$1$1;->invoke()Ljava/io/File;
 
     move-result-object v0

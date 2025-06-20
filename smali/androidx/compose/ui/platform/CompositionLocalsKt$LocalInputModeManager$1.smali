@@ -3,14 +3,14 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lzh/a;
+.implements Lka/a;
 
 
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "Lkotlin/jvm/internal/Lambda;",
-        "Lzh/a;"
+        "Lka/a;"
     }
 .end annotation
 
@@ -19,9 +19,9 @@
         "\u0000\u0008\n\u0002\u0018\u0002\n\u0002\u0008\u0003\u0010\u0003\u001a\u00020\u0000H\n\u00a2\u0006\u0004\u0008\u0001\u0010\u0002"
     }
     d2 = {
-        "Ls1/b;",
+        "Lw0/b;",
         "invoke",
-        "()Ls1/b;",
+        "()Lw0/b;",
         "<anonymous>"
     }
     k = 0x3
@@ -66,20 +66,20 @@
     .locals 1
 
     .line 1
-    invoke-virtual {p0}, Landroidx/compose/ui/platform/CompositionLocalsKt$LocalInputModeManager$1;->invoke()Ls1/b;
+    invoke-virtual {p0}, Landroidx/compose/ui/platform/CompositionLocalsKt$LocalInputModeManager$1;->invoke()Lw0/b;
 
     move-result-object v0
 
     return-object v0
 .end method
 
-.method public final invoke()Ls1/b;
+.method public final invoke()Lw0/b;
     .locals 1
 
+    .line 2
     const-string v0, "LocalInputManager"
 
-    .line 2
-    invoke-static {v0}, Landroidx/compose/ui/platform/i1;->b(Ljava/lang/String;)V
+    invoke-static {v0}, Landroidx/compose/ui/platform/Z;->b(Ljava/lang/String;)V
 
     const/4 v0, 0x0
 

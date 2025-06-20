@@ -4,8 +4,17 @@
 
 
 # annotations
+.annotation runtime Lca/c;
+    c = "androidx.privacysandbox.ads.adservices.topics.TopicsManagerImplCommon"
+    f = "TopicsManagerImplCommon.kt"
+    l = {
+        0x28
+    }
+    m = "getTopics$suspendImpl"
+.end annotation
+
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Landroidx/privacysandbox/ads/adservices/topics/TopicsManagerImplCommon;->T(Landroidx/privacysandbox/ads/adservices/topics/TopicsManagerImplCommon;Landroidx/privacysandbox/ads/adservices/topics/a;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
+    value = Landroidx/privacysandbox/ads/adservices/topics/TopicsManagerImplCommon;->d(Landroidx/privacysandbox/ads/adservices/topics/TopicsManagerImplCommon;Landroidx/privacysandbox/ads/adservices/topics/a;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -21,15 +30,6 @@
         0x0
     }
     xi = 0x30
-.end annotation
-
-.annotation runtime Lth/c;
-    c = "androidx.privacysandbox.ads.adservices.topics.TopicsManagerImplCommon"
-    f = "TopicsManagerImplCommon.kt"
-    l = {
-        0x16
-    }
-    m = "getTopics$suspendImpl"
 .end annotation
 
 
@@ -83,7 +83,7 @@
 
     const/4 v0, 0x0
 
-    invoke-static {p1, v0, p0}, Landroidx/privacysandbox/ads/adservices/topics/TopicsManagerImplCommon;->T(Landroidx/privacysandbox/ads/adservices/topics/TopicsManagerImplCommon;Landroidx/privacysandbox/ads/adservices/topics/a;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
+    invoke-static {p1, v0, p0}, Landroidx/privacysandbox/ads/adservices/topics/TopicsManagerImplCommon;->d(Landroidx/privacysandbox/ads/adservices/topics/TopicsManagerImplCommon;Landroidx/privacysandbox/ads/adservices/topics/a;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
 
     move-result-object p1
 

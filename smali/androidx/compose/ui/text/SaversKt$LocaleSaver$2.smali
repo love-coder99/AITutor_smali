@@ -3,14 +3,14 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lzh/c;
+.implements Lka/c;
 
 
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "Lkotlin/jvm/internal/Lambda;",
-        "Lzh/c;"
+        "Lka/c;"
     }
 .end annotation
 
@@ -21,9 +21,9 @@
     d2 = {
         "",
         "it",
-        "Ld2/b;",
+        "LI0/a;",
         "invoke",
-        "(Ljava/lang/Object;)Ld2/b;",
+        "(Ljava/lang/Object;)LI0/a;",
         "<anonymous>"
     }
     k = 0x3
@@ -64,23 +64,23 @@
 
 
 # virtual methods
-.method public final invoke(Ljava/lang/Object;)Ld2/b;
+.method public final invoke(Ljava/lang/Object;)LI0/a;
     .locals 2
 
     .line 2
-    new-instance v0, Ld2/b;
+    new-instance v0, LI0/a;
 
     check-cast p1, Ljava/lang/String;
 
     .line 3
-    sget-object v1, Ld2/e;->a:Ld2/d;
+    sget-object v1, LI0/d;->a:LI0/c;
 
     .line 4
-    invoke-interface {v1, p1}, Ld2/d;->j(Ljava/lang/String;)Ljava/util/Locale;
+    invoke-interface {v1, p1}, LI0/c;->h(Ljava/lang/String;)Ljava/util/Locale;
 
     move-result-object p1
 
-    invoke-direct {v0, p1}, Ld2/b;-><init>(Ljava/util/Locale;)V
+    invoke-direct {v0, p1}, LI0/a;-><init>(Ljava/util/Locale;)V
 
     return-object v0
 .end method
@@ -89,7 +89,7 @@
     .locals 0
 
     .line 1
-    invoke-virtual {p0, p1}, Landroidx/compose/ui/text/SaversKt$LocaleSaver$2;->invoke(Ljava/lang/Object;)Ld2/b;
+    invoke-virtual {p0, p1}, Landroidx/compose/ui/text/SaversKt$LocaleSaver$2;->invoke(Ljava/lang/Object;)LI0/a;
 
     move-result-object p1
 

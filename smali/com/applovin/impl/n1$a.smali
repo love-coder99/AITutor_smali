@@ -150,7 +150,7 @@
     move-result-object v7
 
     .line 65
-    invoke-static {v6, v7}, Landroidx/core/view/r1;->r(Landroid/media/AudioFormat;Landroid/media/AudioAttributes;)Z
+    invoke-static {v6, v7}, Lcom/applovin/exoplayer2/ui/k;->w(Landroid/media/AudioFormat;Landroid/media/AudioAttributes;)Z
 
     .line 66
     .line 67

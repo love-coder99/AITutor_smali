@@ -4,9 +4,9 @@
 
 
 # instance fields
-.field public final a:Lqh/d;
+.field public final a:Ljava/lang/Object;
 
-.field public final b:Lqh/d;
+.field public final b:Ljava/lang/Object;
 
 .field public final c:J
 
@@ -14,241 +14,165 @@
 
 .field public final e:Z
 
-.field public final f:Lokhttp3/t;
+.field public final f:Lokhttp3/o;
 
 
 # direct methods
-.method public constructor <init>(Lokhttp3/j0;)V
-    .locals 2
+.method public constructor <init>(LIa/C;)V
+    .locals 10
 
-    .line 24
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
-
-    .line 25
-    sget-object v0, Lkotlin/LazyThreadSafetyMode;->NONE:Lkotlin/LazyThreadSafetyMode;
-
-    new-instance v1, Lcoil/network/CacheResponse$cacheControl$2;
-
-    invoke-direct {v1, p0}, Lcoil/network/CacheResponse$cacheControl$2;-><init>(Lcoil/network/a;)V
-
-    invoke-static {v0, v1}, Lkotlin/a;->b(Lkotlin/LazyThreadSafetyMode;Lzh/a;)Lqh/d;
-
-    move-result-object v1
-
-    iput-object v1, p0, Lcoil/network/a;->a:Lqh/d;
-
-    .line 26
-    new-instance v1, Lcoil/network/CacheResponse$contentType$2;
-
-    invoke-direct {v1, p0}, Lcoil/network/CacheResponse$contentType$2;-><init>(Lcoil/network/a;)V
-
-    invoke-static {v0, v1}, Lkotlin/a;->b(Lkotlin/LazyThreadSafetyMode;Lzh/a;)Lqh/d;
-
-    move-result-object v0
-
-    iput-object v0, p0, Lcoil/network/a;->b:Lqh/d;
-
-    .line 27
-    iget-wide v0, p1, Lokhttp3/j0;->m:J
-
-    iput-wide v0, p0, Lcoil/network/a;->c:J
-
-    .line 28
-    iget-wide v0, p1, Lokhttp3/j0;->n:J
-
-    iput-wide v0, p0, Lcoil/network/a;->d:J
-
-    .line 29
-    iget-object v0, p1, Lokhttp3/j0;->g:Lokhttp3/r;
-
-    if-eqz v0, :cond_0
-
-    const/4 v0, 0x1
-
-    goto :goto_0
-
-    :cond_0
     const/4 v0, 0x0
 
-    :goto_0
-    iput-boolean v0, p0, Lcoil/network/a;->e:Z
-
-    .line 30
-    iget-object p1, p1, Lokhttp3/j0;->h:Lokhttp3/t;
-
-    iput-object p1, p0, Lcoil/network/a;->f:Lokhttp3/t;
-
-    return-void
-.end method
-
-.method public constructor <init>(Lxi/a0;)V
-    .locals 9
+    const/4 v1, 0x1
 
     .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 2
-    sget-object v0, Lkotlin/LazyThreadSafetyMode;->NONE:Lkotlin/LazyThreadSafetyMode;
+    sget-object v2, Lkotlin/LazyThreadSafetyMode;->NONE:Lkotlin/LazyThreadSafetyMode;
 
-    new-instance v1, Lcoil/network/CacheResponse$cacheControl$2;
+    new-instance v3, Lcoil/network/CacheResponse$cacheControl$2;
 
-    invoke-direct {v1, p0}, Lcoil/network/CacheResponse$cacheControl$2;-><init>(Lcoil/network/a;)V
+    invoke-direct {v3, p0}, Lcoil/network/CacheResponse$cacheControl$2;-><init>(Lcoil/network/a;)V
 
-    invoke-static {v0, v1}, Lkotlin/a;->b(Lkotlin/LazyThreadSafetyMode;Lzh/a;)Lqh/d;
+    invoke-static {v2, v3}, Lkotlin/a;->b(Lkotlin/LazyThreadSafetyMode;Lka/a;)LX9/d;
 
-    move-result-object v1
+    move-result-object v3
 
-    iput-object v1, p0, Lcoil/network/a;->a:Lqh/d;
+    iput-object v3, p0, Lcoil/network/a;->a:Ljava/lang/Object;
 
     .line 3
-    new-instance v1, Lcoil/network/CacheResponse$contentType$2;
+    new-instance v3, Lcoil/network/CacheResponse$contentType$2;
 
-    invoke-direct {v1, p0}, Lcoil/network/CacheResponse$contentType$2;-><init>(Lcoil/network/a;)V
+    invoke-direct {v3, p0}, Lcoil/network/CacheResponse$contentType$2;-><init>(Lcoil/network/a;)V
 
-    invoke-static {v0, v1}, Lkotlin/a;->b(Lkotlin/LazyThreadSafetyMode;Lzh/a;)Lqh/d;
+    invoke-static {v2, v3}, Lkotlin/a;->b(Lkotlin/LazyThreadSafetyMode;Lka/a;)LX9/d;
 
-    move-result-object v0
+    move-result-object v2
 
-    iput-object v0, p0, Lcoil/network/a;->b:Lqh/d;
+    iput-object v2, p0, Lcoil/network/a;->b:Ljava/lang/Object;
 
-    const-wide v0, 0x7fffffffffffffffL
+    const-wide v2, 0x7fffffffffffffffL
 
     .line 4
-    invoke-virtual {p1, v0, v1}, Lxi/a0;->readUtf8LineStrict(J)Ljava/lang/String;
+    invoke-virtual {p1, v2, v3}, LIa/C;->readUtf8LineStrict(J)Ljava/lang/String;
 
-    move-result-object v2
+    move-result-object v4
 
     .line 5
-    invoke-static {v2}, Ljava/lang/Long;->parseLong(Ljava/lang/String;)J
+    invoke-static {v4}, Ljava/lang/Long;->parseLong(Ljava/lang/String;)J
 
-    move-result-wide v2
+    move-result-wide v4
 
-    iput-wide v2, p0, Lcoil/network/a;->c:J
+    iput-wide v4, p0, Lcoil/network/a;->c:J
 
     .line 6
-    invoke-virtual {p1, v0, v1}, Lxi/a0;->readUtf8LineStrict(J)Ljava/lang/String;
+    invoke-virtual {p1, v2, v3}, LIa/C;->readUtf8LineStrict(J)Ljava/lang/String;
 
-    move-result-object v2
+    move-result-object v4
 
     .line 7
-    invoke-static {v2}, Ljava/lang/Long;->parseLong(Ljava/lang/String;)J
+    invoke-static {v4}, Ljava/lang/Long;->parseLong(Ljava/lang/String;)J
 
-    move-result-wide v2
+    move-result-wide v4
 
-    iput-wide v2, p0, Lcoil/network/a;->d:J
+    iput-wide v4, p0, Lcoil/network/a;->d:J
 
     .line 8
-    invoke-virtual {p1, v0, v1}, Lxi/a0;->readUtf8LineStrict(J)Ljava/lang/String;
+    invoke-virtual {p1, v2, v3}, LIa/C;->readUtf8LineStrict(J)Ljava/lang/String;
 
-    move-result-object v2
+    move-result-object v4
 
     .line 9
-    invoke-static {v2}, Ljava/lang/Integer;->parseInt(Ljava/lang/String;)I
+    invoke-static {v4}, Ljava/lang/Integer;->parseInt(Ljava/lang/String;)I
 
-    move-result v2
+    move-result v4
 
-    const/4 v3, 0x0
+    if-lez v4, :cond_0
 
-    if-lez v2, :cond_0
-
-    const/4 v2, 0x1
+    const/4 v4, 0x1
 
     goto :goto_0
 
     :cond_0
-    const/4 v2, 0x0
+    const/4 v4, 0x0
 
     :goto_0
-    iput-boolean v2, p0, Lcoil/network/a;->e:Z
+    iput-boolean v4, p0, Lcoil/network/a;->e:Z
 
     .line 10
-    invoke-virtual {p1, v0, v1}, Lxi/a0;->readUtf8LineStrict(J)Ljava/lang/String;
+    invoke-virtual {p1, v2, v3}, LIa/C;->readUtf8LineStrict(J)Ljava/lang/String;
 
-    move-result-object v2
+    move-result-object v4
 
     .line 11
-    invoke-static {v2}, Ljava/lang/Integer;->parseInt(Ljava/lang/String;)I
+    invoke-static {v4}, Ljava/lang/Integer;->parseInt(Ljava/lang/String;)I
 
-    move-result v2
+    move-result v4
 
     .line 12
-    new-instance v4, Ljava/util/ArrayList;
+    new-instance v5, LO9/j0;
 
-    const/16 v5, 0x14
+    const/4 v6, 0x4
 
-    invoke-direct {v4, v5}, Ljava/util/ArrayList;-><init>(I)V
+    invoke-direct {v5, v0, v6}, LO9/j0;-><init>(BI)V
 
-    const/4 v5, 0x0
+    const/4 v6, 0x0
 
     :goto_1
-    if-ge v5, v2, :cond_2
+    if-ge v6, v4, :cond_2
 
     .line 13
-    invoke-virtual {p1, v0, v1}, Lxi/a0;->readUtf8LineStrict(J)Ljava/lang/String;
+    invoke-virtual {p1, v2, v3}, LIa/C;->readUtf8LineStrict(J)Ljava/lang/String;
 
-    move-result-object v6
+    move-result-object v7
 
     .line 14
-    sget-object v7, Lcoil/util/g;->a:[Landroid/graphics/Bitmap$Config;
+    sget-object v8, Lcoil/util/g;->a:[Landroid/graphics/Bitmap$Config;
 
-    const/16 v7, 0x3a
+    const/16 v8, 0x3a
 
-    const/4 v8, 0x6
+    const/4 v9, 0x6
 
     .line 15
-    invoke-static {v6, v7, v3, v3, v8}, Lkotlin/text/p;->u0(Ljava/lang/CharSequence;CIZI)I
+    invoke-static {v7, v8, v0, v0, v9}, Lkotlin/text/m;->c0(Ljava/lang/CharSequence;CIZI)I
 
-    move-result v7
+    move-result v8
 
-    const/4 v8, -0x1
+    const/4 v9, -0x1
 
-    if-eq v7, v8, :cond_1
+    if-eq v8, v9, :cond_1
 
     .line 16
-    invoke-virtual {v6, v3, v7}, Ljava/lang/String;->substring(II)Ljava/lang/String;
+    invoke-virtual {v7, v0, v8}, Ljava/lang/String;->substring(II)Ljava/lang/String;
 
-    move-result-object v8
+    move-result-object v9
 
-    invoke-static {v8}, Lkotlin/text/p;->N0(Ljava/lang/CharSequence;)Ljava/lang/CharSequence;
+    invoke-static {v9}, Lkotlin/text/m;->v0(Ljava/lang/CharSequence;)Ljava/lang/CharSequence;
 
-    move-result-object v8
+    move-result-object v9
 
-    invoke-virtual {v8}, Ljava/lang/Object;->toString()Ljava/lang/String;
+    invoke-virtual {v9}, Ljava/lang/Object;->toString()Ljava/lang/String;
 
-    move-result-object v8
+    move-result-object v9
 
-    add-int/lit8 v7, v7, 0x1
+    add-int/2addr v8, v1
 
-    invoke-virtual {v6, v7}, Ljava/lang/String;->substring(I)Ljava/lang/String;
+    invoke-virtual {v7, v8}, Ljava/lang/String;->substring(I)Ljava/lang/String;
 
-    move-result-object v6
+    move-result-object v7
 
-    .line 17
-    invoke-static {v8}, Lfi/k;->e(Ljava/lang/String;)V
+    invoke-virtual {v5, v9, v7}, LO9/j0;->d(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 18
-    invoke-virtual {v4, v8}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
-
-    .line 19
-    invoke-static {v6}, Lkotlin/text/p;->N0(Ljava/lang/CharSequence;)Ljava/lang/CharSequence;
-
-    move-result-object v6
-
-    invoke-virtual {v6}, Ljava/lang/Object;->toString()Ljava/lang/String;
-
-    move-result-object v6
-
-    invoke-virtual {v4, v6}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
-
-    add-int/lit8 v5, v5, 0x1
+    add-int/2addr v6, v1
 
     goto :goto_1
 
+    .line 17
     :cond_1
     const-string p1, "Unexpected header: "
 
-    .line 20
-    invoke-virtual {p1, v6}, Ljava/lang/String;->concat(Ljava/lang/String;)Ljava/lang/String;
+    invoke-virtual {p1, v7}, Ljava/lang/String;->concat(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object p1
 
@@ -262,30 +186,83 @@
 
     throw v0
 
-    .line 21
+    .line 18
     :cond_2
-    new-instance p1, Lokhttp3/t;
+    invoke-virtual {v5}, LO9/j0;->f()Lokhttp3/o;
 
-    new-array v0, v3, [Ljava/lang/String;
+    move-result-object p1
 
-    .line 22
-    invoke-virtual {v4, v0}, Ljava/util/ArrayList;->toArray([Ljava/lang/Object;)[Ljava/lang/Object;
+    iput-object p1, p0, Lcoil/network/a;->f:Lokhttp3/o;
+
+    return-void
+.end method
+
+.method public constructor <init>(Lokhttp3/B;)V
+    .locals 2
+
+    .line 19
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    .line 20
+    sget-object v0, Lkotlin/LazyThreadSafetyMode;->NONE:Lkotlin/LazyThreadSafetyMode;
+
+    new-instance v1, Lcoil/network/CacheResponse$cacheControl$2;
+
+    invoke-direct {v1, p0}, Lcoil/network/CacheResponse$cacheControl$2;-><init>(Lcoil/network/a;)V
+
+    invoke-static {v0, v1}, Lkotlin/a;->b(Lkotlin/LazyThreadSafetyMode;Lka/a;)LX9/d;
+
+    move-result-object v1
+
+    iput-object v1, p0, Lcoil/network/a;->a:Ljava/lang/Object;
+
+    .line 21
+    new-instance v1, Lcoil/network/CacheResponse$contentType$2;
+
+    invoke-direct {v1, p0}, Lcoil/network/CacheResponse$contentType$2;-><init>(Lcoil/network/a;)V
+
+    invoke-static {v0, v1}, Lkotlin/a;->b(Lkotlin/LazyThreadSafetyMode;Lka/a;)LX9/d;
 
     move-result-object v0
 
-    check-cast v0, [Ljava/lang/String;
+    iput-object v0, p0, Lcoil/network/a;->b:Ljava/lang/Object;
+
+    .line 22
+    iget-wide v0, p1, Lokhttp3/B;->m:J
+
+    iput-wide v0, p0, Lcoil/network/a;->c:J
 
     .line 23
-    invoke-direct {p1, v0}, Lokhttp3/t;-><init>([Ljava/lang/String;)V
+    iget-wide v0, p1, Lokhttp3/B;->n:J
 
-    iput-object p1, p0, Lcoil/network/a;->f:Lokhttp3/t;
+    iput-wide v0, p0, Lcoil/network/a;->d:J
+
+    .line 24
+    iget-object v0, p1, Lokhttp3/B;->g:Lokhttp3/n;
+
+    if-eqz v0, :cond_0
+
+    const/4 v0, 0x1
+
+    goto :goto_0
+
+    :cond_0
+    const/4 v0, 0x0
+
+    :goto_0
+    iput-boolean v0, p0, Lcoil/network/a;->e:Z
+
+    .line 25
+    iget-object p1, p1, Lokhttp3/B;->h:Lokhttp3/o;
+
+    iput-object p1, p0, Lcoil/network/a;->f:Lokhttp3/o;
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final a(Lxi/z;)V
+.method public final a(LIa/B;)V
     .locals 5
 
     .line 1
@@ -293,7 +270,7 @@
 
     .line 2
     .line 3
-    invoke-virtual {p1, v0, v1}, Lxi/z;->writeDecimalLong(J)Lxi/h;
+    invoke-virtual {p1, v0, v1}, LIa/B;->writeDecimalLong(J)LIa/j;
 
     .line 4
     .line 5
@@ -302,7 +279,7 @@
 
     .line 7
     .line 8
-    invoke-virtual {p1, v0}, Lxi/z;->writeByte(I)Lxi/h;
+    invoke-virtual {p1, v0}, LIa/B;->writeByte(I)LIa/j;
 
     .line 9
     .line 10
@@ -311,12 +288,12 @@
 
     .line 12
     .line 13
-    invoke-virtual {p1, v1, v2}, Lxi/z;->writeDecimalLong(J)Lxi/h;
+    invoke-virtual {p1, v1, v2}, LIa/B;->writeDecimalLong(J)LIa/j;
 
     .line 14
     .line 15
     .line 16
-    invoke-virtual {p1, v0}, Lxi/z;->writeByte(I)Lxi/h;
+    invoke-virtual {p1, v0}, LIa/B;->writeByte(I)LIa/j;
 
     .line 17
     .line 18
@@ -342,21 +319,21 @@
     .line 27
     .line 28
     :goto_0
-    invoke-virtual {p1, v1, v2}, Lxi/z;->writeDecimalLong(J)Lxi/h;
+    invoke-virtual {p1, v1, v2}, LIa/B;->writeDecimalLong(J)LIa/j;
 
     .line 29
     .line 30
     .line 31
-    invoke-virtual {p1, v0}, Lxi/z;->writeByte(I)Lxi/h;
+    invoke-virtual {p1, v0}, LIa/B;->writeByte(I)LIa/j;
 
     .line 32
     .line 33
     .line 34
-    iget-object v1, p0, Lcoil/network/a;->f:Lokhttp3/t;
+    iget-object v1, p0, Lcoil/network/a;->f:Lokhttp3/o;
 
     .line 35
     .line 36
-    invoke-virtual {v1}, Lokhttp3/t;->size()I
+    invoke-virtual {v1}, Lokhttp3/o;->size()I
 
     .line 37
     .line 38
@@ -367,17 +344,17 @@
     int-to-long v2, v2
 
     .line 41
-    invoke-virtual {p1, v2, v3}, Lxi/z;->writeDecimalLong(J)Lxi/h;
+    invoke-virtual {p1, v2, v3}, LIa/B;->writeDecimalLong(J)LIa/j;
 
     .line 42
     .line 43
     .line 44
-    invoke-virtual {p1, v0}, Lxi/z;->writeByte(I)Lxi/h;
+    invoke-virtual {p1, v0}, LIa/B;->writeByte(I)LIa/j;
 
     .line 45
     .line 46
     .line 47
-    invoke-virtual {v1}, Lokhttp3/t;->size()I
+    invoke-virtual {v1}, Lokhttp3/o;->size()I
 
     .line 48
     .line 49
@@ -393,7 +370,7 @@
 
     .line 53
     .line 54
-    invoke-virtual {v1, v3}, Lokhttp3/t;->b(I)Ljava/lang/String;
+    invoke-virtual {v1, v3}, Lokhttp3/o;->c(I)Ljava/lang/String;
 
     .line 55
     .line 56
@@ -401,7 +378,7 @@
     move-result-object v4
 
     .line 58
-    invoke-virtual {p1, v4}, Lxi/z;->writeUtf8(Ljava/lang/String;)Lxi/h;
+    invoke-virtual {p1, v4}, LIa/B;->writeUtf8(Ljava/lang/String;)LIa/j;
 
     .line 59
     .line 60
@@ -410,12 +387,12 @@
 
     .line 62
     .line 63
-    invoke-virtual {p1, v4}, Lxi/z;->writeUtf8(Ljava/lang/String;)Lxi/h;
+    invoke-virtual {p1, v4}, LIa/B;->writeUtf8(Ljava/lang/String;)LIa/j;
 
     .line 64
     .line 65
     .line 66
-    invoke-virtual {v1, v3}, Lokhttp3/t;->e(I)Ljava/lang/String;
+    invoke-virtual {v1, v3}, Lokhttp3/o;->g(I)Ljava/lang/String;
 
     .line 67
     .line 68
@@ -423,12 +400,12 @@
     move-result-object v4
 
     .line 70
-    invoke-interface {p1, v4}, Lxi/h;->writeUtf8(Ljava/lang/String;)Lxi/h;
+    invoke-interface {p1, v4}, LIa/j;->writeUtf8(Ljava/lang/String;)LIa/j;
 
     .line 71
     .line 72
     .line 73
-    invoke-interface {p1, v0}, Lxi/h;->writeByte(I)Lxi/h;
+    invoke-interface {p1, v0}, LIa/j;->writeByte(I)LIa/j;
 
     .line 74
     .line 75

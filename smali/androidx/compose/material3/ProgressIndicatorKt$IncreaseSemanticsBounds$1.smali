@@ -3,14 +3,14 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lzh/f;
+.implements Lka/f;
 
 
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "Lkotlin/jvm/internal/Lambda;",
-        "Lzh/f;"
+        "Lka/f;"
     }
 .end annotation
 
@@ -19,14 +19,14 @@
         "\u0000\u0018\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0008\u0003\u0010\u0008\u001a\u00020\u0005*\u00020\u00002\u0006\u0010\u0002\u001a\u00020\u00012\u0006\u0010\u0004\u001a\u00020\u0003H\n\u00a2\u0006\u0004\u0008\u0006\u0010\u0007"
     }
     d2 = {
-        "Landroidx/compose/ui/layout/o0;",
-        "Landroidx/compose/ui/layout/l0;",
+        "Landroidx/compose/ui/layout/L;",
+        "Landroidx/compose/ui/layout/I;",
         "measurable",
-        "Lh2/a;",
+        "LM0/a;",
         "constraints",
-        "Landroidx/compose/ui/layout/n0;",
+        "Landroidx/compose/ui/layout/K;",
         "invoke-3p2s80s",
-        "(Landroidx/compose/ui/layout/o0;Landroidx/compose/ui/layout/l0;J)Landroidx/compose/ui/layout/n0;",
+        "(Landroidx/compose/ui/layout/L;Landroidx/compose/ui/layout/I;J)Landroidx/compose/ui/layout/K;",
         "<anonymous>"
     }
     k = 0x3
@@ -71,23 +71,23 @@
     .locals 2
 
     .line 1
-    check-cast p1, Landroidx/compose/ui/layout/o0;
+    check-cast p1, Landroidx/compose/ui/layout/L;
 
     .line 2
     .line 3
-    check-cast p2, Landroidx/compose/ui/layout/l0;
+    check-cast p2, Landroidx/compose/ui/layout/I;
 
     .line 4
     .line 5
-    check-cast p3, Lh2/a;
+    check-cast p3, LM0/a;
 
     .line 6
     .line 7
-    iget-wide v0, p3, Lh2/a;->a:J
+    iget-wide v0, p3, LM0/a;->a:J
 
     .line 8
     .line 9
-    invoke-virtual {p0, p1, p2, v0, v1}, Landroidx/compose/material3/ProgressIndicatorKt$IncreaseSemanticsBounds$1;->invoke-3p2s80s(Landroidx/compose/ui/layout/o0;Landroidx/compose/ui/layout/l0;J)Landroidx/compose/ui/layout/n0;
+    invoke-virtual {p0, p1, p2, v0, v1}, Landroidx/compose/material3/ProgressIndicatorKt$IncreaseSemanticsBounds$1;->invoke-3p2s80s(Landroidx/compose/ui/layout/L;Landroidx/compose/ui/layout/I;J)Landroidx/compose/ui/layout/K;
 
     .line 10
     .line 11
@@ -98,15 +98,15 @@
     return-object p1
 .end method
 
-.method public final invoke-3p2s80s(Landroidx/compose/ui/layout/o0;Landroidx/compose/ui/layout/l0;J)Landroidx/compose/ui/layout/n0;
+.method public final invoke-3p2s80s(Landroidx/compose/ui/layout/L;Landroidx/compose/ui/layout/I;J)Landroidx/compose/ui/layout/K;
     .locals 3
 
     .line 1
-    sget v0, Landroidx/compose/material3/q0;->a:F
+    sget v0, Landroidx/compose/material3/i0;->a:F
 
     .line 2
     .line 3
-    invoke-interface {p1, v0}, Lh2/b;->c0(F)I
+    invoke-interface {p1, v0}, LM0/b;->b0(F)I
 
     .line 4
     .line 5
@@ -121,7 +121,7 @@
     const/4 v2, 0x0
 
     .line 10
-    invoke-static {v2, v1, p3, p4}, Lcom/google/android/gms/internal/consent_sdk/z;->q(IIJ)J
+    invoke-static {v2, v1, p3, p4}, LP5/f;->F(IIJ)J
 
     .line 11
     .line 12
@@ -129,7 +129,7 @@
     move-result-wide p3
 
     .line 14
-    invoke-interface {p2, p3, p4}, Landroidx/compose/ui/layout/l0;->y(J)Landroidx/compose/ui/layout/a1;
+    invoke-interface {p2, p3, p4}, Landroidx/compose/ui/layout/I;->u(J)Landroidx/compose/ui/layout/X;
 
     .line 15
     .line 16
@@ -137,14 +137,14 @@
     move-result-object p2
 
     .line 18
-    iget p3, p2, Landroidx/compose/ui/layout/a1;->c:I
+    iget p3, p2, Landroidx/compose/ui/layout/X;->c:I
 
     .line 19
     .line 20
     sub-int/2addr p3, v1
 
     .line 21
-    iget p4, p2, Landroidx/compose/ui/layout/a1;->b:I
+    iget p4, p2, Landroidx/compose/ui/layout/X;->b:I
 
     .line 22
     .line 23
@@ -152,12 +152,12 @@
 
     .line 24
     .line 25
-    invoke-direct {v1, p2, v0}, Landroidx/compose/material3/ProgressIndicatorKt$IncreaseSemanticsBounds$1$1;-><init>(Landroidx/compose/ui/layout/a1;I)V
+    invoke-direct {v1, p2, v0}, Landroidx/compose/material3/ProgressIndicatorKt$IncreaseSemanticsBounds$1$1;-><init>(Landroidx/compose/ui/layout/X;I)V
 
     .line 26
     .line 27
     .line 28
-    invoke-static {p1, p4, p3, v1}, Landroidx/compose/ui/layout/x;->i(Landroidx/compose/ui/layout/o0;IILzh/c;)Landroidx/compose/ui/layout/n0;
+    invoke-static {p1, p4, p3, v1}, Landroidx/compose/ui/layout/u;->i(Landroidx/compose/ui/layout/L;IILka/c;)Landroidx/compose/ui/layout/K;
 
     .line 29
     .line 30

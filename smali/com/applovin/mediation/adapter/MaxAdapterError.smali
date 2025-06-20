@@ -516,11 +516,11 @@
 .method public constructor <init>(I)V
     .locals 2
 
+    .line 1
     const-string v0, ""
 
     const/4 v1, 0x0
 
-    .line 1
     invoke-direct {p0, p1, v0, v1, v0}, Lcom/applovin/mediation/adapter/MaxAdapterError;-><init>(ILjava/lang/String;ILjava/lang/String;)V
 
     return-void
@@ -529,9 +529,9 @@
 .method public constructor <init>(II)V
     .locals 1
 
+    .line 2
     const-string v0, ""
 
-    .line 2
     invoke-direct {p0, p1, v0, p2, v0}, Lcom/applovin/mediation/adapter/MaxAdapterError;-><init>(ILjava/lang/String;ILjava/lang/String;)V
 
     return-void
@@ -542,9 +542,9 @@
 
     const/4 v0, 0x0
 
+    .line 3
     const-string v1, ""
 
-    .line 3
     invoke-direct {p0, p1, p2, v0, v1}, Lcom/applovin/mediation/adapter/MaxAdapterError;-><init>(ILjava/lang/String;ILjava/lang/String;)V
 
     return-void

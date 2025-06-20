@@ -3,12 +3,12 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lzh/c;
+.implements Lka/c;
 
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Landroidx/compose/foundation/text/TextFieldKeyInput$process$2;->invoke(Landroidx/compose/foundation/text/selection/w;)V
+    value = Landroidx/compose/foundation/text/TextFieldKeyInput$process$2;->invoke(Landroidx/compose/foundation/text/selection/t;)V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -19,7 +19,7 @@
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "Lkotlin/jvm/internal/Lambda;",
-        "Lzh/c;"
+        "Lka/c;"
     }
 .end annotation
 
@@ -28,10 +28,10 @@
         "\u0000\u000c\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0008\u0003\u0010\u0004\u001a\u0004\u0018\u00010\u0001*\u00020\u0000H\n\u00a2\u0006\u0004\u0008\u0002\u0010\u0003"
     }
     d2 = {
-        "Landroidx/compose/foundation/text/selection/w;",
+        "Landroidx/compose/foundation/text/selection/t;",
         "Landroidx/compose/ui/text/input/h;",
         "invoke",
-        "(Landroidx/compose/foundation/text/selection/w;)Landroidx/compose/ui/text/input/h;",
+        "(Landroidx/compose/foundation/text/selection/t;)Landroidx/compose/ui/text/input/h;",
         "<anonymous>"
     }
     k = 0x3
@@ -72,19 +72,19 @@
 
 
 # virtual methods
-.method public final invoke(Landroidx/compose/foundation/text/selection/w;)Landroidx/compose/ui/text/input/h;
+.method public final invoke(Landroidx/compose/foundation/text/selection/t;)Landroidx/compose/ui/text/input/h;
     .locals 7
 
     .line 1
-    iget-object v0, p1, Landroidx/compose/foundation/text/selection/b;->g:Landroidx/compose/ui/text/f;
+    iget-object v0, p1, Landroidx/compose/foundation/text/selection/t;->g:Landroidx/compose/ui/text/g;
 
     .line 2
-    iget-object v0, v0, Landroidx/compose/ui/text/f;->b:Ljava/lang/String;
+    iget-object v0, v0, Landroidx/compose/ui/text/g;->b:Ljava/lang/String;
 
     .line 3
-    iget-wide v1, p1, Landroidx/compose/foundation/text/selection/b;->f:J
+    iget-wide v1, p1, Landroidx/compose/foundation/text/selection/t;->f:J
 
-    sget v3, Landroidx/compose/ui/text/h0;->c:I
+    sget v3, Landroidx/compose/ui/text/H;->c:I
 
     const-wide v3, 0xffffffffL
 
@@ -92,7 +92,7 @@
 
     long-to-int v2, v1
 
-    invoke-static {v2, v0}, Lb0/h;->B(ILjava/lang/String;)I
+    invoke-static {v2, v0}, Landroidx/compose/foundation/text/e;->q(ILjava/lang/String;)I
 
     move-result v0
 
@@ -104,7 +104,7 @@
     new-instance v1, Landroidx/compose/ui/text/input/f;
 
     .line 5
-    iget-wide v5, p1, Landroidx/compose/foundation/text/selection/b;->f:J
+    iget-wide v5, p1, Landroidx/compose/foundation/text/selection/t;->f:J
 
     and-long v2, v5, v3
 
@@ -130,9 +130,9 @@
     .locals 0
 
     .line 7
-    check-cast p1, Landroidx/compose/foundation/text/selection/w;
+    check-cast p1, Landroidx/compose/foundation/text/selection/t;
 
-    invoke-virtual {p0, p1}, Landroidx/compose/foundation/text/TextFieldKeyInput$process$2$4;->invoke(Landroidx/compose/foundation/text/selection/w;)Landroidx/compose/ui/text/input/h;
+    invoke-virtual {p0, p1}, Landroidx/compose/foundation/text/TextFieldKeyInput$process$2$4;->invoke(Landroidx/compose/foundation/text/selection/t;)Landroidx/compose/ui/text/input/h;
 
     move-result-object p1
 

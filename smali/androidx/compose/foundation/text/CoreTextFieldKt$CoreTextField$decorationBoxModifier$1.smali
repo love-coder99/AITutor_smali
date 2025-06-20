@@ -3,14 +3,14 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lzh/c;
+.implements Lka/c;
 
 
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "Lkotlin/jvm/internal/Lambda;",
-        "Lzh/c;"
+        "Lka/c;"
     }
 .end annotation
 
@@ -19,11 +19,11 @@
         "\u0000\u000e\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0008\u0003\u0010\u0005\u001a\u00020\u00022\u0006\u0010\u0001\u001a\u00020\u0000H\n\u00a2\u0006\u0004\u0008\u0003\u0010\u0004"
     }
     d2 = {
-        "Landroidx/compose/ui/layout/s;",
+        "Landroidx/compose/ui/layout/p;",
         "it",
-        "Lqh/r;",
+        "LX9/j;",
         "invoke",
-        "(Landroidx/compose/ui/layout/s;)V",
+        "(Landroidx/compose/ui/layout/p;)V",
         "<anonymous>"
     }
     k = 0x3
@@ -36,14 +36,14 @@
 
 
 # instance fields
-.field final synthetic $state:Landroidx/compose/foundation/text/t;
+.field final synthetic $state:Landroidx/compose/foundation/text/s;
 
 
 # direct methods
-.method public constructor <init>(Landroidx/compose/foundation/text/t;)V
+.method public constructor <init>(Landroidx/compose/foundation/text/s;)V
     .locals 0
 
-    iput-object p1, p0, Landroidx/compose/foundation/text/CoreTextFieldKt$CoreTextField$decorationBoxModifier$1;->$state:Landroidx/compose/foundation/text/t;
+    iput-object p1, p0, Landroidx/compose/foundation/text/CoreTextFieldKt$CoreTextField$decorationBoxModifier$1;->$state:Landroidx/compose/foundation/text/s;
 
     const/4 p1, 0x1
 
@@ -58,22 +58,22 @@
     .locals 0
 
     .line 1
-    check-cast p1, Landroidx/compose/ui/layout/s;
+    check-cast p1, Landroidx/compose/ui/layout/p;
 
-    invoke-virtual {p0, p1}, Landroidx/compose/foundation/text/CoreTextFieldKt$CoreTextField$decorationBoxModifier$1;->invoke(Landroidx/compose/ui/layout/s;)V
+    invoke-virtual {p0, p1}, Landroidx/compose/foundation/text/CoreTextFieldKt$CoreTextField$decorationBoxModifier$1;->invoke(Landroidx/compose/ui/layout/p;)V
 
-    sget-object p1, Lqh/r;->a:Lqh/r;
+    sget-object p1, LX9/j;->a:LX9/j;
 
     return-object p1
 .end method
 
-.method public final invoke(Landroidx/compose/ui/layout/s;)V
+.method public final invoke(Landroidx/compose/ui/layout/p;)V
     .locals 1
 
-    iget-object v0, p0, Landroidx/compose/foundation/text/CoreTextFieldKt$CoreTextField$decorationBoxModifier$1;->$state:Landroidx/compose/foundation/text/t;
-
     .line 2
-    invoke-virtual {v0}, Landroidx/compose/foundation/text/t;->d()Landroidx/compose/foundation/text/i0;
+    iget-object v0, p0, Landroidx/compose/foundation/text/CoreTextFieldKt$CoreTextField$decorationBoxModifier$1;->$state:Landroidx/compose/foundation/text/s;
+
+    invoke-virtual {v0}, Landroidx/compose/foundation/text/s;->d()Landroidx/compose/foundation/text/J;
 
     move-result-object v0
 
@@ -83,7 +83,7 @@
 
     .line 3
     :cond_0
-    iput-object p1, v0, Landroidx/compose/foundation/text/i0;->c:Landroidx/compose/ui/layout/s;
+    iput-object p1, v0, Landroidx/compose/foundation/text/J;->c:Landroidx/compose/ui/layout/p;
 
     :goto_0
     return-void

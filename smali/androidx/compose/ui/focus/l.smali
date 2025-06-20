@@ -7,10 +7,10 @@
 .method public abstract a()Z
 .end method
 
-.method public abstract b(Lzh/c;)V
+.method public abstract b(Lka/c;)V
 .end method
 
-.method public abstract c(Lzh/c;)V
+.method public abstract c(Lka/c;)V
 .end method
 
 .method public abstract d(Z)V

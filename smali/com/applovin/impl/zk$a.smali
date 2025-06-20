@@ -84,42 +84,42 @@
 .end method
 
 .method public static a(Ljava/lang/String;)Lcom/applovin/impl/zk$a;
-    .locals 14
+    .locals 15
 
     .line 1
-    const/4 v0, 0x7
+    const/4 v0, 0x1
 
     .line 2
-    invoke-virtual {p0, v0}, Ljava/lang/String;->substring(I)Ljava/lang/String;
+    const/4 v1, 0x7
 
     .line 3
+    invoke-virtual {p0, v1}, Ljava/lang/String;->substring(I)Ljava/lang/String;
+
     .line 4
     .line 5
-    move-result-object p0
-
     .line 6
-    const-string v1, ","
+    move-result-object p0
 
     .line 7
-    .line 8
-    invoke-static {p0, v1}, Landroid/text/TextUtils;->split(Ljava/lang/String;Ljava/lang/String;)[Ljava/lang/String;
+    const-string v2, ","
 
+    .line 8
     .line 9
+    invoke-static {p0, v2}, Landroid/text/TextUtils;->split(Ljava/lang/String;Ljava/lang/String;)[Ljava/lang/String;
+
     .line 10
     .line 11
+    .line 12
     move-result-object p0
 
-    .line 12
-    const/4 v1, -0x1
-
     .line 13
-    const/4 v2, 0x0
+    const/4 v2, -0x1
 
     .line 14
     const/4 v3, 0x0
 
     .line 15
-    const/4 v5, -0x1
+    const/4 v4, 0x0
 
     .line 16
     const/4 v6, -0x1
@@ -143,346 +143,348 @@
     const/4 v12, -0x1
 
     .line 23
-    :goto_0
-    array-length v4, p0
+    const/4 v13, -0x1
 
     .line 24
-    if-ge v3, v4, :cond_8
+    :goto_0
+    array-length v5, p0
 
     .line 25
+    if-ge v4, v5, :cond_8
+
     .line 26
-    aget-object v4, p0, v3
-
     .line 27
-    .line 28
-    invoke-virtual {v4}, Ljava/lang/String;->trim()Ljava/lang/String;
+    aget-object v5, p0, v4
 
+    .line 28
     .line 29
+    invoke-virtual {v5}, Ljava/lang/String;->trim()Ljava/lang/String;
+
     .line 30
     .line 31
-    move-result-object v4
-
     .line 32
-    invoke-static {v4}, Lcom/applovin/exoplayer2/common/base/Ascii;->toLowerCase(Ljava/lang/String;)Ljava/lang/String;
+    move-result-object v5
 
     .line 33
+    invoke-static {v5}, Lcom/applovin/exoplayer2/common/base/Ascii;->toLowerCase(Ljava/lang/String;)Ljava/lang/String;
+
     .line 34
     .line 35
-    move-result-object v4
-
     .line 36
-    invoke-virtual {v4}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+    move-result-object v5
 
     .line 37
+    invoke-virtual {v5}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
     .line 38
     .line 39
-    invoke-virtual {v4}, Ljava/lang/String;->hashCode()I
-
     .line 40
+    invoke-virtual {v5}, Ljava/lang/String;->hashCode()I
+
     .line 41
     .line 42
-    move-result v13
-
     .line 43
-    sparse-switch v13, :sswitch_data_0
+    move-result v14
 
     .line 44
+    sparse-switch v14, :sswitch_data_0
+
     .line 45
     .line 46
-    :goto_1
-    const/4 v4, -0x1
-
     .line 47
-    goto/16 :goto_2
+    :goto_1
+    const/4 v5, -0x1
 
     .line 48
+    goto/16 :goto_2
+
     .line 49
-    :sswitch_0
-    const-string v13, "alignment"
-
     .line 50
-    .line 51
-    invoke-virtual {v4, v13}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+    :sswitch_0
+    const-string v14, "alignment"
 
+    .line 51
     .line 52
+    invoke-virtual {v5, v14}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
     .line 53
     .line 54
-    move-result v4
-
     .line 55
-    if-nez v4, :cond_0
+    move-result v5
 
     .line 56
-    .line 57
-    goto :goto_1
+    if-nez v5, :cond_0
 
+    .line 57
     .line 58
-    :cond_0
-    const/4 v4, 0x7
+    goto :goto_1
 
     .line 59
-    goto :goto_2
+    :cond_0
+    const/4 v5, 0x7
 
     .line 60
-    :sswitch_1
-    const-string v13, "fontsize"
+    goto :goto_2
 
     .line 61
-    .line 62
-    invoke-virtual {v4, v13}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+    :sswitch_1
+    const-string v14, "fontsize"
 
+    .line 62
     .line 63
+    invoke-virtual {v5, v14}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
     .line 64
     .line 65
-    move-result v4
-
     .line 66
-    if-nez v4, :cond_1
+    move-result v5
 
     .line 67
-    .line 68
-    goto :goto_1
+    if-nez v5, :cond_1
 
+    .line 68
     .line 69
-    :cond_1
-    const/4 v4, 0x6
+    goto :goto_1
 
     .line 70
-    goto :goto_2
+    :cond_1
+    const/4 v5, 0x6
 
     .line 71
-    :sswitch_2
-    const-string v13, "name"
+    goto :goto_2
 
     .line 72
-    .line 73
-    invoke-virtual {v4, v13}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+    :sswitch_2
+    const-string v14, "name"
 
+    .line 73
     .line 74
+    invoke-virtual {v5, v14}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
     .line 75
     .line 76
-    move-result v4
-
     .line 77
-    if-nez v4, :cond_2
+    move-result v5
 
     .line 78
-    .line 79
-    goto :goto_1
+    if-nez v5, :cond_2
 
+    .line 79
     .line 80
-    :cond_2
-    const/4 v4, 0x5
+    goto :goto_1
 
     .line 81
-    goto :goto_2
+    :cond_2
+    const/4 v5, 0x5
 
     .line 82
-    :sswitch_3
-    const-string v13, "bold"
+    goto :goto_2
 
     .line 83
-    .line 84
-    invoke-virtual {v4, v13}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+    :sswitch_3
+    const-string v14, "bold"
 
+    .line 84
     .line 85
+    invoke-virtual {v5, v14}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
     .line 86
     .line 87
-    move-result v4
-
     .line 88
-    if-nez v4, :cond_3
+    move-result v5
 
     .line 89
-    .line 90
-    goto :goto_1
+    if-nez v5, :cond_3
 
+    .line 90
     .line 91
-    :cond_3
-    const/4 v4, 0x4
+    goto :goto_1
 
     .line 92
-    goto :goto_2
+    :cond_3
+    const/4 v5, 0x4
 
     .line 93
-    :sswitch_4
-    const-string v13, "primarycolour"
+    goto :goto_2
 
     .line 94
-    .line 95
-    invoke-virtual {v4, v13}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+    :sswitch_4
+    const-string v14, "primarycolour"
 
+    .line 95
     .line 96
+    invoke-virtual {v5, v14}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
     .line 97
     .line 98
-    move-result v4
-
     .line 99
-    if-nez v4, :cond_4
+    move-result v5
 
     .line 100
-    .line 101
-    goto :goto_1
+    if-nez v5, :cond_4
 
+    .line 101
     .line 102
-    :cond_4
-    const/4 v4, 0x3
+    goto :goto_1
 
     .line 103
-    goto :goto_2
+    :cond_4
+    const/4 v5, 0x3
 
     .line 104
-    :sswitch_5
-    const-string v13, "strikeout"
+    goto :goto_2
 
     .line 105
-    .line 106
-    invoke-virtual {v4, v13}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+    :sswitch_5
+    const-string v14, "strikeout"
 
+    .line 106
     .line 107
+    invoke-virtual {v5, v14}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
     .line 108
     .line 109
-    move-result v4
-
     .line 110
-    if-nez v4, :cond_5
+    move-result v5
 
     .line 111
-    .line 112
-    goto :goto_1
+    if-nez v5, :cond_5
 
+    .line 112
     .line 113
-    :cond_5
-    const/4 v4, 0x2
+    goto :goto_1
 
     .line 114
-    goto :goto_2
+    :cond_5
+    const/4 v5, 0x2
 
     .line 115
-    :sswitch_6
-    const-string v13, "underline"
-
-    .line 116
-    .line 117
-    invoke-virtual {v4, v13}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
-
-    .line 118
-    .line 119
-    .line 120
-    move-result v4
-
-    .line 121
-    if-nez v4, :cond_6
-
-    .line 122
-    .line 123
-    goto :goto_1
-
-    .line 124
-    :cond_6
-    const/4 v4, 0x1
-
-    .line 125
     goto :goto_2
 
-    .line 126
-    :sswitch_7
-    const-string v13, "italic"
+    .line 116
+    :sswitch_6
+    const-string v14, "underline"
 
-    .line 127
-    .line 128
-    invoke-virtual {v4, v13}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+    .line 117
+    .line 118
+    invoke-virtual {v5, v14}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
-    .line 129
-    .line 130
-    .line 131
-    move-result v4
+    .line 119
+    .line 120
+    .line 121
+    move-result v5
 
-    .line 132
-    if-nez v4, :cond_7
+    .line 122
+    if-nez v5, :cond_6
 
-    .line 133
-    .line 134
+    .line 123
+    .line 124
     goto :goto_1
 
+    .line 125
+    :cond_6
+    const/4 v5, 0x1
+
+    .line 126
+    goto :goto_2
+
+    .line 127
+    :sswitch_7
+    const-string v14, "italic"
+
+    .line 128
+    .line 129
+    invoke-virtual {v5, v14}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    .line 130
+    .line 131
+    .line 132
+    move-result v5
+
+    .line 133
+    if-nez v5, :cond_7
+
+    .line 134
     .line 135
-    :cond_7
-    const/4 v4, 0x0
+    goto :goto_1
 
     .line 136
-    :goto_2
-    packed-switch v4, :pswitch_data_0
+    :cond_7
+    const/4 v5, 0x0
 
     .line 137
+    :goto_2
+    packed-switch v5, :pswitch_data_0
+
     .line 138
     .line 139
-    goto :goto_3
-
     .line 140
-    :pswitch_0
-    move v6, v3
+    goto :goto_3
 
     .line 141
-    goto :goto_3
+    :pswitch_0
+    move v7, v4
 
     .line 142
-    :pswitch_1
-    move v8, v3
+    goto :goto_3
 
     .line 143
-    goto :goto_3
+    :pswitch_1
+    move v9, v4
 
     .line 144
-    :pswitch_2
-    move v5, v3
+    goto :goto_3
 
     .line 145
-    goto :goto_3
+    :pswitch_2
+    move v6, v4
 
     .line 146
-    :pswitch_3
-    move v9, v3
+    goto :goto_3
 
     .line 147
-    goto :goto_3
+    :pswitch_3
+    move v10, v4
 
     .line 148
-    :pswitch_4
-    move v7, v3
+    goto :goto_3
 
     .line 149
-    goto :goto_3
+    :pswitch_4
+    move v8, v4
 
     .line 150
-    :pswitch_5
-    move v12, v3
+    goto :goto_3
 
     .line 151
-    goto :goto_3
+    :pswitch_5
+    move v13, v4
 
     .line 152
-    :pswitch_6
-    move v11, v3
-
-    .line 153
     goto :goto_3
 
+    .line 153
+    :pswitch_6
+    move v12, v4
+
     .line 154
-    :pswitch_7
-    move v10, v3
+    goto :goto_3
 
     .line 155
-    :goto_3
-    add-int/lit8 v3, v3, 0x1
+    :pswitch_7
+    move v11, v4
 
     .line 156
+    :goto_3
+    add-int/2addr v4, v0
+
     .line 157
     goto/16 :goto_0
 
     .line 158
     .line 159
     :cond_8
-    if-eq v5, v1, :cond_9
+    if-eq v6, v2, :cond_9
 
     .line 160
     .line 161
@@ -490,13 +492,13 @@
 
     .line 162
     .line 163
-    array-length v13, p0
+    array-length v14, p0
 
     .line 164
-    move-object v4, v0
+    move-object v5, v0
 
     .line 165
-    invoke-direct/range {v4 .. v13}, Lcom/applovin/impl/zk$a;-><init>(IIIIIIIII)V
+    invoke-direct/range {v5 .. v14}, Lcom/applovin/impl/zk$a;-><init>(IIIIIIIII)V
 
     .line 166
     .line 167

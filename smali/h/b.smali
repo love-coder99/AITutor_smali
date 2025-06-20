@@ -1,229 +1,481 @@
-.class public final Lh/b;
-.super Lh/k;
+.class public final LH/b;
+.super Ljava/lang/Object;
 .source "SourceFile"
+
+# interfaces
+.implements LB/u0;
 
 
 # instance fields
-.field public I:Landroidx/collection/o;
+.field public final a:F
 
-.field public J:Landroidx/collection/o0;
+.field public final b:F
+
+.field public final c:F
+
+.field public final d:F
 
 
 # direct methods
-.method public constructor <init>(Lh/b;Lh/e;Landroid/content/res/Resources;)V
+.method public constructor <init>(FFFF)V
     .locals 0
 
     .line 1
-    invoke-direct {p0, p1, p2, p3}, Lh/h;-><init>(Lh/h;Lh/i;Landroid/content/res/Resources;)V
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 2
     .line 3
     .line 4
-    if-eqz p1, :cond_0
+    iput p1, p0, LH/b;->a:F
 
     .line 5
     .line 6
-    iget-object p2, p1, Lh/k;->H:[[I
+    iput p2, p0, LH/b;->b:F
 
     .line 7
     .line 8
-    iput-object p2, p0, Lh/k;->H:[[I
+    iput p3, p0, LH/b;->c:F
 
     .line 9
     .line 10
-    goto :goto_0
+    iput p4, p0, LH/b;->d:F
 
     .line 11
-    :cond_0
-    iget-object p2, p0, Lh/h;->g:[Landroid/graphics/drawable/Drawable;
+    .line 12
+    return-void
+.end method
+
+.method public static e(LB/u0;)LH/b;
+    .locals 4
+
+    .line 1
+    new-instance v0, LH/b;
+
+    .line 2
+    .line 3
+    invoke-interface {p0}, LB/u0;->c()F
+
+    .line 4
+    .line 5
+    .line 6
+    move-result v1
+
+    .line 7
+    invoke-interface {p0}, LB/u0;->a()F
+
+    .line 8
+    .line 9
+    .line 10
+    move-result v2
+
+    .line 11
+    invoke-interface {p0}, LB/u0;->b()F
 
     .line 12
     .line 13
-    array-length p2, p2
-
     .line 14
-    new-array p2, p2, [[I
+    move-result v3
 
     .line 15
-    .line 16
-    iput-object p2, p0, Lh/k;->H:[[I
+    invoke-interface {p0}, LB/u0;->d()F
 
+    .line 16
     .line 17
     .line 18
-    :goto_0
-    if-eqz p1, :cond_1
+    move-result p0
 
     .line 19
-    .line 20
-    iget-object p2, p1, Lh/b;->I:Landroidx/collection/o;
+    invoke-direct {v0, v1, v2, v3, p0}, LH/b;-><init>(FFFF)V
 
+    .line 20
     .line 21
     .line 22
-    iput-object p2, p0, Lh/b;->I:Landroidx/collection/o;
-
-    .line 23
-    .line 24
-    iget-object p1, p1, Lh/b;->J:Landroidx/collection/o0;
-
-    .line 25
-    .line 26
-    iput-object p1, p0, Lh/b;->J:Landroidx/collection/o0;
-
-    .line 27
-    .line 28
-    goto :goto_1
-
-    .line 29
-    :cond_1
-    new-instance p1, Landroidx/collection/o;
-
-    .line 30
-    .line 31
-    invoke-direct {p1}, Landroidx/collection/o;-><init>()V
-
-    .line 32
-    .line 33
-    .line 34
-    iput-object p1, p0, Lh/b;->I:Landroidx/collection/o;
-
-    .line 35
-    .line 36
-    new-instance p1, Landroidx/collection/o0;
-
-    .line 37
-    .line 38
-    invoke-direct {p1}, Landroidx/collection/o0;-><init>()V
-
-    .line 39
-    .line 40
-    .line 41
-    iput-object p1, p0, Lh/b;->J:Landroidx/collection/o0;
-
-    .line 42
-    .line 43
-    :goto_1
-    return-void
+    return-object v0
 .end method
 
 
 # virtual methods
-.method public final e(I)I
+.method public final a()F
+    .locals 1
+
+    .line 1
+    iget v0, p0, LH/b;->b:F
+
+    .line 2
+    .line 3
+    return v0
+.end method
+
+.method public final b()F
+    .locals 1
+
+    .line 1
+    iget v0, p0, LH/b;->c:F
+
+    .line 2
+    .line 3
+    return v0
+.end method
+
+.method public final c()F
+    .locals 1
+
+    .line 1
+    iget v0, p0, LH/b;->a:F
+
+    .line 2
+    .line 3
+    return v0
+.end method
+
+.method public final d()F
+    .locals 1
+
+    .line 1
+    iget v0, p0, LH/b;->d:F
+
+    .line 2
+    .line 3
+    return v0
+.end method
+
+.method public final equals(Ljava/lang/Object;)Z
     .locals 4
 
     .line 1
-    const/4 v0, 0x0
+    const/4 v0, 0x1
 
     .line 2
-    if-gez p1, :cond_0
+    if-ne p1, p0, :cond_0
 
     .line 3
     .line 4
-    goto :goto_1
+    return v0
 
     .line 5
     :cond_0
-    iget-object v1, p0, Lh/b;->J:Landroidx/collection/o0;
+    instance-of v1, p1, LH/b;
 
     .line 6
     .line 7
-    invoke-static {v0}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+    const/4 v2, 0x0
 
     .line 8
+    if-eqz v1, :cond_2
+
     .line 9
     .line 10
-    move-result-object v0
+    check-cast p1, LH/b;
 
     .line 11
-    invoke-virtual {v1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
-
     .line 12
+    iget v1, p0, LH/b;->a:F
+
     .line 13
     .line 14
-    sget-object v2, Landroidx/collection/p0;->a:Ljava/lang/Object;
+    invoke-static {v1}, Ljava/lang/Float;->floatToIntBits(F)I
 
     .line 15
     .line 16
-    iget-object v2, v1, Landroidx/collection/o0;->c:[I
-
     .line 17
+    move-result v1
+
     .line 18
-    iget v3, v1, Landroidx/collection/o0;->f:I
+    iget v3, p1, LH/b;->a:F
 
     .line 19
     .line 20
-    invoke-static {v3, p1, v2}, Lc1/a;->a(II[I)I
+    invoke-static {v3}, Ljava/lang/Float;->floatToIntBits(F)I
 
     .line 21
     .line 22
     .line 23
-    move-result p1
+    move-result v3
 
     .line 24
-    if-ltz p1, :cond_2
+    if-ne v1, v3, :cond_1
 
     .line 25
     .line 26
-    iget-object v1, v1, Landroidx/collection/o0;->d:[Ljava/lang/Object;
+    iget v1, p0, LH/b;->b:F
 
     .line 27
     .line 28
-    aget-object p1, v1, p1
+    invoke-static {v1}, Ljava/lang/Float;->floatToIntBits(F)I
 
     .line 29
     .line 30
-    sget-object v1, Landroidx/collection/p0;->a:Ljava/lang/Object;
-
     .line 31
+    move-result v1
+
     .line 32
-    if-ne p1, v1, :cond_1
+    iget v3, p1, LH/b;->b:F
 
     .line 33
     .line 34
-    goto :goto_0
+    invoke-static {v3}, Ljava/lang/Float;->floatToIntBits(F)I
 
     .line 35
-    :cond_1
-    move-object v0, p1
-
     .line 36
-    :cond_2
-    :goto_0
-    check-cast v0, Ljava/lang/Integer;
-
     .line 37
+    move-result v3
+
     .line 38
-    invoke-virtual {v0}, Ljava/lang/Integer;->intValue()I
+    if-ne v1, v3, :cond_1
 
     .line 39
     .line 40
+    iget v1, p0, LH/b;->c:F
+
     .line 41
+    .line 42
+    invoke-static {v1}, Ljava/lang/Float;->floatToIntBits(F)I
+
+    .line 43
+    .line 44
+    .line 45
+    move-result v1
+
+    .line 46
+    iget v3, p1, LH/b;->c:F
+
+    .line 47
+    .line 48
+    invoke-static {v3}, Ljava/lang/Float;->floatToIntBits(F)I
+
+    .line 49
+    .line 50
+    .line 51
+    move-result v3
+
+    .line 52
+    if-ne v1, v3, :cond_1
+
+    .line 53
+    .line 54
+    iget v1, p0, LH/b;->d:F
+
+    .line 55
+    .line 56
+    invoke-static {v1}, Ljava/lang/Float;->floatToIntBits(F)I
+
+    .line 57
+    .line 58
+    .line 59
+    move-result v1
+
+    .line 60
+    iget p1, p1, LH/b;->d:F
+
+    .line 61
+    .line 62
+    invoke-static {p1}, Ljava/lang/Float;->floatToIntBits(F)I
+
+    .line 63
+    .line 64
+    .line 65
+    move-result p1
+
+    .line 66
+    if-ne v1, p1, :cond_1
+
+    .line 67
+    .line 68
+    goto :goto_0
+
+    .line 69
+    :cond_1
+    const/4 v0, 0x0
+
+    .line 70
+    :goto_0
+    return v0
+
+    .line 71
+    :cond_2
+    return v2
+.end method
+
+.method public final hashCode()I
+    .locals 3
+
+    .line 1
+    iget v0, p0, LH/b;->a:F
+
+    .line 2
+    .line 3
+    invoke-static {v0}, Ljava/lang/Float;->floatToIntBits(F)I
+
+    .line 4
+    .line 5
+    .line 6
     move-result v0
 
-    .line 42
-    :goto_1
+    .line 7
+    const v1, 0xf4243
+
+    .line 8
+    .line 9
+    .line 10
+    xor-int/2addr v0, v1
+
+    .line 11
+    mul-int v0, v0, v1
+
+    .line 12
+    .line 13
+    iget v2, p0, LH/b;->b:F
+
+    .line 14
+    .line 15
+    invoke-static {v2}, Ljava/lang/Float;->floatToIntBits(F)I
+
+    .line 16
+    .line 17
+    .line 18
+    move-result v2
+
+    .line 19
+    xor-int/2addr v0, v2
+
+    .line 20
+    mul-int v0, v0, v1
+
+    .line 21
+    .line 22
+    iget v2, p0, LH/b;->c:F
+
+    .line 23
+    .line 24
+    invoke-static {v2}, Ljava/lang/Float;->floatToIntBits(F)I
+
+    .line 25
+    .line 26
+    .line 27
+    move-result v2
+
+    .line 28
+    xor-int/2addr v0, v2
+
+    .line 29
+    mul-int v0, v0, v1
+
+    .line 30
+    .line 31
+    iget v1, p0, LH/b;->d:F
+
+    .line 32
+    .line 33
+    invoke-static {v1}, Ljava/lang/Float;->floatToIntBits(F)I
+
+    .line 34
+    .line 35
+    .line 36
+    move-result v1
+
+    .line 37
+    xor-int/2addr v0, v1
+
+    .line 38
     return v0
 .end method
 
-.method public final newDrawable()Landroid/graphics/drawable/Drawable;
+.method public final toString()Ljava/lang/String;
     .locals 2
 
     .line 1
-    new-instance v0, Lh/e;
-
-    const/4 v1, 0x0
-
-    invoke-direct {v0, p0, v1}, Lh/e;-><init>(Lh/b;Landroid/content/res/Resources;)V
-
-    return-object v0
-.end method
-
-.method public final newDrawable(Landroid/content/res/Resources;)Landroid/graphics/drawable/Drawable;
-    .locals 1
+    new-instance v0, Ljava/lang/StringBuilder;
 
     .line 2
-    new-instance v0, Lh/e;
+    .line 3
+    const-string v1, "ImmutableZoomState{zoomRatio="
 
-    invoke-direct {v0, p0, p1}, Lh/e;-><init>(Lh/b;Landroid/content/res/Resources;)V
+    .line 4
+    .line 5
+    invoke-direct {v0, v1}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
 
+    .line 6
+    .line 7
+    .line 8
+    iget v1, p0, LH/b;->a:F
+
+    .line 9
+    .line 10
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(F)Ljava/lang/StringBuilder;
+
+    .line 11
+    .line 12
+    .line 13
+    const-string v1, ", maxZoomRatio="
+
+    .line 14
+    .line 15
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 16
+    .line 17
+    .line 18
+    iget v1, p0, LH/b;->b:F
+
+    .line 19
+    .line 20
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(F)Ljava/lang/StringBuilder;
+
+    .line 21
+    .line 22
+    .line 23
+    const-string v1, ", minZoomRatio="
+
+    .line 24
+    .line 25
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 26
+    .line 27
+    .line 28
+    iget v1, p0, LH/b;->c:F
+
+    .line 29
+    .line 30
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(F)Ljava/lang/StringBuilder;
+
+    .line 31
+    .line 32
+    .line 33
+    const-string v1, ", linearZoom="
+
+    .line 34
+    .line 35
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 36
+    .line 37
+    .line 38
+    iget v1, p0, LH/b;->d:F
+
+    .line 39
+    .line 40
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(F)Ljava/lang/StringBuilder;
+
+    .line 41
+    .line 42
+    .line 43
+    const-string v1, "}"
+
+    .line 44
+    .line 45
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 46
+    .line 47
+    .line 48
+    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    .line 49
+    .line 50
+    .line 51
+    move-result-object v0
+
+    .line 52
     return-object v0
 .end method

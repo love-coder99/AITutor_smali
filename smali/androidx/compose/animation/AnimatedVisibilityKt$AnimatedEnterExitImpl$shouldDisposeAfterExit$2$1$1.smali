@@ -3,7 +3,7 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lzh/a;
+.implements Lka/a;
 
 
 # annotations
@@ -19,7 +19,7 @@
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "Lkotlin/jvm/internal/Lambda;",
-        "Lzh/a;"
+        "Lka/a;"
     }
 .end annotation
 
@@ -45,27 +45,27 @@
 
 
 # instance fields
-.field final synthetic $childTransition:Landroidx/compose/animation/core/e1;
+.field final synthetic $childTransition:Landroidx/compose/animation/core/Z;
     .annotation system Ldalvik/annotation/Signature;
         value = {
-            "Landroidx/compose/animation/core/e1;"
+            "Landroidx/compose/animation/core/Z;"
         }
     .end annotation
 .end field
 
 
 # direct methods
-.method public constructor <init>(Landroidx/compose/animation/core/e1;)V
+.method public constructor <init>(Landroidx/compose/animation/core/Z;)V
     .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
-            "Landroidx/compose/animation/core/e1;",
+            "Landroidx/compose/animation/core/Z;",
             ")V"
         }
     .end annotation
 
-    iput-object p1, p0, Landroidx/compose/animation/AnimatedVisibilityKt$AnimatedEnterExitImpl$shouldDisposeAfterExit$2$1$1;->$childTransition:Landroidx/compose/animation/core/e1;
+    iput-object p1, p0, Landroidx/compose/animation/AnimatedVisibilityKt$AnimatedEnterExitImpl$shouldDisposeAfterExit$2$1$1;->$childTransition:Landroidx/compose/animation/core/Z;
 
     const/4 p1, 0x0
 
@@ -79,25 +79,27 @@
 .method public final invoke()Ljava/lang/Boolean;
     .locals 3
 
-    iget-object v0, p0, Landroidx/compose/animation/AnimatedVisibilityKt$AnimatedEnterExitImpl$shouldDisposeAfterExit$2$1$1;->$childTransition:Landroidx/compose/animation/core/e1;
-
     .line 2
-    iget-object v1, v0, Landroidx/compose/animation/core/e1;->a:Landroidx/compose/animation/core/h1;
+    iget-object v0, p0, Landroidx/compose/animation/AnimatedVisibilityKt$AnimatedEnterExitImpl$shouldDisposeAfterExit$2$1$1;->$childTransition:Landroidx/compose/animation/core/Z;
 
     .line 3
-    invoke-virtual {v1}, Landroidx/compose/animation/core/h1;->a()Ljava/lang/Object;
+    iget-object v1, v0, Landroidx/compose/animation/core/Z;->a:Landroidx/compose/animation/core/c0;
+
+    .line 4
+    invoke-virtual {v1}, Landroidx/compose/animation/core/c0;->a()Ljava/lang/Object;
 
     move-result-object v1
 
+    .line 5
     sget-object v2, Landroidx/compose/animation/EnterExitState;->PostExit:Landroidx/compose/animation/EnterExitState;
 
     if-ne v1, v2, :cond_0
 
-    .line 4
-    iget-object v0, v0, Landroidx/compose/animation/core/e1;->d:Landroidx/compose/runtime/ParcelableSnapshotMutableState;
+    .line 6
+    iget-object v0, v0, Landroidx/compose/animation/core/Z;->d:Landroidx/compose/runtime/ParcelableSnapshotMutableState;
 
-    .line 5
-    invoke-virtual {v0}, Landroidx/compose/runtime/t2;->getValue()Ljava/lang/Object;
+    .line 7
+    invoke-virtual {v0}, Landroidx/compose/runtime/ParcelableSnapshotMutableState;->getValue()Ljava/lang/Object;
 
     move-result-object v0
 
@@ -110,7 +112,7 @@
     :cond_0
     const/4 v0, 0x0
 
-    .line 6
+    .line 8
     :goto_0
     invoke-static {v0}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
 

@@ -30,9 +30,10 @@
 .method private constructor <init>(Lcom/applovin/impl/xm;ILjava/util/List;)V
     .locals 2
 
+    .line 1
     iput-object p1, p0, Lcom/applovin/impl/xm$b;->l:Lcom/applovin/impl/xm;
 
-    .line 1
+    .line 2
     invoke-static {p1}, Lcom/applovin/impl/xm;->a(Lcom/applovin/impl/xm;)Ljava/lang/String;
 
     move-result-object v0
@@ -47,16 +48,17 @@
 
     invoke-direct {p0, v0, v1, p1}, Lcom/applovin/impl/yl;-><init>(Ljava/lang/String;Lcom/applovin/impl/sdk/j;Ljava/lang/String;)V
 
-    .line 2
+    .line 3
     invoke-static {}, Landroid/os/SystemClock;->elapsedRealtime()J
 
     move-result-wide v0
 
     iput-wide v0, p0, Lcom/applovin/impl/xm$b;->h:J
 
+    .line 4
     iput p2, p0, Lcom/applovin/impl/xm$b;->i:I
 
-    .line 3
+    .line 5
     invoke-interface {p3, p2}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
     move-result-object p1
@@ -65,6 +67,7 @@
 
     iput-object p1, p0, Lcom/applovin/impl/xm$b;->j:Lcom/applovin/impl/fe;
 
+    .line 6
     iput-object p3, p0, Lcom/applovin/impl/xm$b;->k:Ljava/util/List;
 
     return-void
@@ -73,7 +76,7 @@
 .method public synthetic constructor <init>(Lcom/applovin/impl/xm;ILjava/util/List;Lcom/applovin/impl/xm$a;)V
     .locals 0
 
-    .line 4
+    .line 7
     invoke-direct {p0, p1, p2, p3}, Lcom/applovin/impl/xm$b;-><init>(Lcom/applovin/impl/xm;ILjava/util/List;)V
 
     return-void
@@ -126,9 +129,9 @@
 
     invoke-direct/range {v0 .. v8}, Lcom/applovin/impl/mediation/MaxNetworkResponseInfoImpl;-><init>(Lcom/applovin/mediation/MaxNetworkResponseInfo$AdLoadState;Lcom/applovin/mediation/MaxMediatedNetworkInfo;Landroid/os/Bundle;ZJLjava/lang/String;Lcom/applovin/mediation/MaxError;)V
 
+    .line 7
     iget-object p1, p0, Lcom/applovin/impl/xm$b;->l:Lcom/applovin/impl/xm;
 
-    .line 7
     invoke-static {p1}, Lcom/applovin/impl/xm;->c(Lcom/applovin/impl/xm;)Ljava/util/List;
 
     move-result-object p1

@@ -3,14 +3,14 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lzh/c;
+.implements Lka/c;
 
 
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "Lkotlin/jvm/internal/FunctionReferenceImpl;",
-        "Lzh/c;"
+        "Lka/c;"
     }
 .end annotation
 
@@ -29,15 +29,15 @@
 .method public constructor <init>(Ljava/lang/Object;)V
     .locals 7
 
-    const/4 v1, 0x1
-
-    const-class v3, Landroidx/compose/ui/viewinterop/g;
-
-    const-string v4, "onEnter"
-
     const-string v5, "onEnter-3ESFkO8(I)Landroidx/compose/ui/focus/FocusRequester;"
 
     const/4 v6, 0x0
+
+    const/4 v1, 0x1
+
+    const-class v3, Landroidx/compose/ui/viewinterop/h;
+
+    const-string v4, "onEnter"
 
     move-object v0, p0
 
@@ -81,7 +81,7 @@
 
     .line 2
     .line 3
-    check-cast v0, Landroidx/compose/ui/viewinterop/g;
+    check-cast v0, Landroidx/compose/ui/viewinterop/h;
 
     .line 4
     .line 5
@@ -126,7 +126,7 @@
 
     .line 25
     :cond_0
-    invoke-static {v0}, Lcom/google/android/play/core/appupdate/b;->N(Landroidx/compose/ui/node/j;)Landroidx/compose/ui/node/o1;
+    invoke-static {v0}, Lx0/c;->y(Landroidx/compose/ui/node/j;)Landroidx/compose/ui/node/i0;
 
     .line 26
     .line 27
@@ -134,11 +134,11 @@
     move-result-object v2
 
     .line 29
-    check-cast v2, Landroidx/compose/ui/platform/r;
+    check-cast v2, Landroidx/compose/ui/platform/o;
 
     .line 30
     .line 31
-    invoke-virtual {v2}, Landroidx/compose/ui/platform/r;->getFocusOwner()Landroidx/compose/ui/focus/i;
+    invoke-virtual {v2}, Landroidx/compose/ui/platform/o;->getFocusOwner()Landroidx/compose/ui/focus/i;
 
     .line 32
     .line 33
@@ -146,7 +146,7 @@
     move-result-object v2
 
     .line 35
-    invoke-static {v0}, Lcom/google/android/play/core/appupdate/b;->N(Landroidx/compose/ui/node/j;)Landroidx/compose/ui/node/o1;
+    invoke-static {v0}, Lx0/c;->y(Landroidx/compose/ui/node/j;)Landroidx/compose/ui/node/i0;
 
     .line 36
     .line 37

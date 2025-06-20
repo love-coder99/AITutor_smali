@@ -5,6 +5,9 @@
 
 # virtual methods
 .method public abstract getUserData(Lcom/apm/insight/CrashType;)Ljava/util/Map;
+    .annotation build Landroidx/annotation/Nullable;
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",

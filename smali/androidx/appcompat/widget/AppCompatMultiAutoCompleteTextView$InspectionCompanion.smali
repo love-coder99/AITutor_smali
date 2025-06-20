@@ -53,13 +53,17 @@
 # virtual methods
 .method public mapProperties(Landroid/view/inspector/PropertyMapper;)V
     .locals 1
+    .param p1    # Landroid/view/inspector/PropertyMapper;
+        .annotation build Landroidx/annotation/NonNull;
+        .end annotation
+    .end param
 
     .line 1
-    sget v0, Lg/a;->backgroundTint:I
+    sget v0, Li/a;->backgroundTint:I
 
     .line 2
     .line 3
-    invoke-static {p1, v0}, La2/c;->c(Landroid/view/inspector/PropertyMapper;I)I
+    invoke-static {p1, v0}, LC0/b;->a(Landroid/view/inspector/PropertyMapper;I)I
 
     .line 4
     .line 5
@@ -71,11 +75,11 @@
 
     .line 8
     .line 9
-    sget v0, Lg/a;->backgroundTintMode:I
+    sget v0, Li/a;->backgroundTintMode:I
 
     .line 10
     .line 11
-    invoke-static {p1, v0}, La2/c;->o(Landroid/view/inspector/PropertyMapper;I)I
+    invoke-static {p1, v0}, LC0/b;->v(Landroid/view/inspector/PropertyMapper;I)I
 
     .line 12
     .line 13
@@ -87,11 +91,11 @@
 
     .line 16
     .line 17
-    sget v0, Lg/a;->drawableTint:I
+    sget v0, Li/a;->drawableTint:I
 
     .line 18
     .line 19
-    invoke-static {p1, v0}, La2/c;->w(Landroid/view/inspector/PropertyMapper;I)I
+    invoke-static {p1, v0}, LC0/b;->A(Landroid/view/inspector/PropertyMapper;I)I
 
     .line 20
     .line 21
@@ -103,11 +107,11 @@
 
     .line 24
     .line 25
-    sget v0, Lg/a;->drawableTintMode:I
+    sget v0, Li/a;->drawableTintMode:I
 
     .line 26
     .line 27
-    invoke-static {p1, v0}, La2/c;->x(Landroid/view/inspector/PropertyMapper;I)I
+    invoke-static {p1, v0}, LC0/b;->B(Landroid/view/inspector/PropertyMapper;I)I
 
     .line 28
     .line 29
@@ -131,52 +135,61 @@
 
 .method public readProperties(Landroidx/appcompat/widget/AppCompatMultiAutoCompleteTextView;Landroid/view/inspector/PropertyReader;)V
     .locals 2
+    .param p1    # Landroidx/appcompat/widget/AppCompatMultiAutoCompleteTextView;
+        .annotation build Landroidx/annotation/NonNull;
+        .end annotation
+    .end param
+    .param p2    # Landroid/view/inspector/PropertyReader;
+        .annotation build Landroidx/annotation/NonNull;
+        .end annotation
+    .end param
 
+    .line 2
     iget-boolean v0, p0, Landroidx/appcompat/widget/AppCompatMultiAutoCompleteTextView$InspectionCompanion;->mPropertiesMapped:Z
 
     if-eqz v0, :cond_0
 
+    .line 3
     iget v0, p0, Landroidx/appcompat/widget/AppCompatMultiAutoCompleteTextView$InspectionCompanion;->mBackgroundTintId:I
 
-    .line 2
     invoke-virtual {p1}, Landroid/view/View;->getBackgroundTintList()Landroid/content/res/ColorStateList;
 
     move-result-object v1
 
-    invoke-static {p2, v0, v1}, La2/c;->i(Landroid/view/inspector/PropertyReader;ILandroid/content/res/ColorStateList;)V
+    invoke-static {p2, v0, v1}, LC0/b;->r(Landroid/view/inspector/PropertyReader;ILandroid/content/res/ColorStateList;)V
 
+    .line 4
     iget v0, p0, Landroidx/appcompat/widget/AppCompatMultiAutoCompleteTextView$InspectionCompanion;->mBackgroundTintModeId:I
 
-    .line 3
     invoke-virtual {p1}, Landroid/view/View;->getBackgroundTintMode()Landroid/graphics/PorterDuff$Mode;
 
     move-result-object v1
 
-    invoke-static {p2, v0, v1}, La2/c;->j(Landroid/view/inspector/PropertyReader;ILandroid/graphics/PorterDuff$Mode;)V
+    invoke-static {p2, v0, v1}, LC0/b;->s(Landroid/view/inspector/PropertyReader;ILandroid/graphics/PorterDuff$Mode;)V
 
+    .line 5
     iget v0, p0, Landroidx/appcompat/widget/AppCompatMultiAutoCompleteTextView$InspectionCompanion;->mDrawableTintId:I
 
-    .line 4
-    invoke-static {p1}, Landroid/support/v4/media/c;->g(Landroidx/appcompat/widget/AppCompatMultiAutoCompleteTextView;)Landroid/content/res/ColorStateList;
+    invoke-static {p1}, Landroidx/appcompat/widget/a;->f(Landroidx/appcompat/widget/AppCompatMultiAutoCompleteTextView;)Landroid/content/res/ColorStateList;
 
     move-result-object v1
 
-    invoke-static {p2, v0, v1}, La2/c;->i(Landroid/view/inspector/PropertyReader;ILandroid/content/res/ColorStateList;)V
+    invoke-static {p2, v0, v1}, LC0/b;->r(Landroid/view/inspector/PropertyReader;ILandroid/content/res/ColorStateList;)V
 
+    .line 6
     iget v0, p0, Landroidx/appcompat/widget/AppCompatMultiAutoCompleteTextView$InspectionCompanion;->mDrawableTintModeId:I
 
-    .line 5
-    invoke-static {p1}, Landroid/support/v4/media/c;->p(Landroidx/appcompat/widget/AppCompatMultiAutoCompleteTextView;)Landroid/graphics/PorterDuff$Mode;
+    invoke-static {p1}, Landroidx/appcompat/widget/a;->o(Landroidx/appcompat/widget/AppCompatMultiAutoCompleteTextView;)Landroid/graphics/PorterDuff$Mode;
 
     move-result-object p1
 
-    invoke-static {p2, v0, p1}, La2/c;->j(Landroid/view/inspector/PropertyReader;ILandroid/graphics/PorterDuff$Mode;)V
+    invoke-static {p2, v0, p1}, LC0/b;->s(Landroid/view/inspector/PropertyReader;ILandroid/graphics/PorterDuff$Mode;)V
 
     return-void
 
-    .line 6
+    .line 7
     :cond_0
-    invoke-static {}, La2/c;->f()Landroid/view/inspector/InspectionCompanion$UninitializedPropertyMapException;
+    invoke-static {}, LC0/b;->e()Landroid/view/inspector/InspectionCompanion$UninitializedPropertyMapException;
 
     move-result-object p1
 
@@ -185,6 +198,14 @@
 
 .method public bridge synthetic readProperties(Ljava/lang/Object;Landroid/view/inspector/PropertyReader;)V
     .locals 0
+    .param p1    # Ljava/lang/Object;
+        .annotation build Landroidx/annotation/NonNull;
+        .end annotation
+    .end param
+    .param p2    # Landroid/view/inspector/PropertyReader;
+        .annotation build Landroidx/annotation/NonNull;
+        .end annotation
+    .end param
 
     .line 1
     check-cast p1, Landroidx/appcompat/widget/AppCompatMultiAutoCompleteTextView;

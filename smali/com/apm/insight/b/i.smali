@@ -26,6 +26,7 @@
 .method public static a()V
     .locals 2
 
+    .line 1
     sget-boolean v0, Lcom/apm/insight/b/i;->c:Z
 
     if-eqz v0, :cond_0
@@ -35,32 +36,34 @@
     :cond_0
     const/4 v0, 0x1
 
+    .line 2
     sput-boolean v0, Lcom/apm/insight/b/i;->c:Z
 
-    .line 1
+    .line 3
     new-instance v0, Lcom/apm/insight/b/i$b;
 
     invoke-direct {v0}, Lcom/apm/insight/b/i$b;-><init>()V
 
     sput-object v0, Lcom/apm/insight/b/i;->b:Lcom/apm/insight/b/i$b;
 
-    .line 2
+    .line 4
     invoke-static {}, Lcom/apm/insight/b/i;->d()Landroid/util/Printer;
 
     move-result-object v0
 
+    .line 5
     sput-object v0, Lcom/apm/insight/b/i;->d:Landroid/util/Printer;
 
     if-eqz v0, :cond_1
 
+    .line 6
     sget-object v1, Lcom/apm/insight/b/i;->b:Lcom/apm/insight/b/i$b;
 
-    .line 3
     iget-object v1, v1, Lcom/apm/insight/b/i$b;->a:Ljava/util/List;
 
     invoke-interface {v1, v0}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
-    .line 4
+    .line 7
     :cond_1
     invoke-static {}, Lcom/apm/insight/e;->s()Z
 
@@ -68,7 +71,7 @@
 
     if-eqz v0, :cond_2
 
-    .line 5
+    .line 8
     invoke-static {}, Landroid/os/Looper;->getMainLooper()Landroid/os/Looper;
 
     move-result-object v0
@@ -86,9 +89,9 @@
 
     if-eqz p0, :cond_0
 
+    .line 9
     sget-object v0, Lcom/apm/insight/b/i;->b:Lcom/apm/insight/b/i$b;
 
-    .line 6
     iget-object v0, v0, Lcom/apm/insight/b/i$b;->b:Ljava/util/List;
 
     invoke-interface {v0, p0}, Ljava/util/List;->contains(Ljava/lang/Object;)Z
@@ -97,18 +100,18 @@
 
     if-nez v0, :cond_0
 
+    .line 10
     sget-object v0, Lcom/apm/insight/b/i;->b:Lcom/apm/insight/b/i$b;
 
-    .line 7
     iget-object v0, v0, Lcom/apm/insight/b/i$b;->b:Ljava/util/List;
 
     invoke-interface {v0, p0}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
+    .line 11
     sget-object p0, Lcom/apm/insight/b/i;->b:Lcom/apm/insight/b/i$b;
 
     const/4 v0, 0x1
 
-    .line 8
     iput-boolean v0, p0, Lcom/apm/insight/b/i$b;->c:Z
 
     :cond_0
@@ -126,8 +129,11 @@
 .method public static synthetic c()I
     .locals 1
 
+    .line 1
     sget v0, Lcom/apm/insight/b/i;->a:I
 
+    .line 2
+    .line 3
     return v0
 .end method
 

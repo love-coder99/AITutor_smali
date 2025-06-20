@@ -4,6 +4,15 @@
 
 
 # annotations
+.annotation runtime Lca/c;
+    c = "coil.fetch.HttpUriFetcher"
+    f = "HttpUriFetcher.kt"
+    l = {
+        0xe0
+    }
+    m = "executeNetworkRequest"
+.end annotation
+
 .annotation runtime Lkotlin/Metadata;
     k = 0x3
     mv = {
@@ -12,15 +21,6 @@
         0x0
     }
     xi = 0x30
-.end annotation
-
-.annotation runtime Lth/c;
-    c = "coil.fetch.HttpUriFetcher"
-    f = "HttpUriFetcher.kt"
-    l = {
-        0xe0
-    }
-    m = "executeNetworkRequest"
 .end annotation
 
 
@@ -89,7 +89,7 @@
     const/4 v0, 0x0
 
     .line 15
-    invoke-virtual {p1, v0, p0}, Lcoil/fetch/j;->b(Ly/r0;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
+    invoke-virtual {p1, v0, p0}, Lcoil/fetch/j;->b(Lv/Y;Lkotlin/coroutines/jvm/internal/ContinuationImpl;)Ljava/lang/Object;
 
     .line 16
     .line 17

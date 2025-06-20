@@ -1,500 +1,205 @@
-.class public abstract synthetic Landroidx/datastore/preferences/protobuf/r;
+.class public abstract Landroidx/datastore/preferences/protobuf/r;
 .super Ljava/lang/Object;
 .source "SourceFile"
 
 
-# static fields
-.field public static final synthetic a:[I
+# instance fields
+.field public a:I
+
+.field public b:Landroidx/datastore/preferences/protobuf/t;
 
 
 # direct methods
-.method static constructor <clinit>()V
+.method public static d([BIIZ)Landroidx/datastore/preferences/protobuf/n;
+    .locals 1
+
+    .line 1
+    new-instance v0, Landroidx/datastore/preferences/protobuf/n;
+
+    .line 2
+    .line 3
+    invoke-direct {v0, p0, p1, p2, p3}, Landroidx/datastore/preferences/protobuf/n;-><init>([BIIZ)V
+
+    .line 4
+    .line 5
+    .line 6
+    :try_start_0
+    invoke-virtual {v0, p2}, Landroidx/datastore/preferences/protobuf/n;->f(I)I
+    :try_end_0
+    .catch Landroidx/datastore/preferences/protobuf/InvalidProtocolBufferException; {:try_start_0 .. :try_end_0} :catch_0
+
+    .line 7
+    .line 8
+    .line 9
+    return-object v0
+
+    .line 10
+    :catch_0
+    move-exception p0
+
+    .line 11
+    new-instance p1, Ljava/lang/IllegalArgumentException;
+
+    .line 12
+    .line 13
+    invoke-direct {p1, p0}, Ljava/lang/IllegalArgumentException;-><init>(Ljava/lang/Throwable;)V
+
+    .line 14
+    .line 15
+    .line 16
+    throw p1
+.end method
+
+
+# virtual methods
+.method public abstract a(I)V
+.end method
+
+.method public abstract b()I
+.end method
+
+.method public abstract c()Z
+.end method
+
+.method public abstract e(I)V
+.end method
+
+.method public abstract f(I)I
+.end method
+
+.method public abstract g()Z
+.end method
+
+.method public abstract h()Landroidx/datastore/preferences/protobuf/ByteString;
+.end method
+
+.method public abstract i()D
+.end method
+
+.method public abstract j()I
+.end method
+
+.method public abstract k()I
+.end method
+
+.method public abstract l()J
+.end method
+
+.method public abstract m()F
+.end method
+
+.method public abstract n()I
+.end method
+
+.method public abstract o()J
+.end method
+
+.method public abstract p()I
+.end method
+
+.method public abstract q()J
+.end method
+
+.method public abstract r()I
+.end method
+
+.method public abstract s()J
+.end method
+
+.method public abstract t()Ljava/lang/String;
+.end method
+
+.method public abstract u()Ljava/lang/String;
+.end method
+
+.method public abstract v()I
+.end method
+
+.method public abstract w()I
+.end method
+
+.method public abstract x()J
+.end method
+
+.method public abstract y(I)Z
+.end method
+
+.method public final z()V
     .locals 3
 
     .line 1
-    invoke-static {}, Landroidx/datastore/preferences/protobuf/WireFormat$FieldType;->values()[Landroidx/datastore/preferences/protobuf/WireFormat$FieldType;
+    :cond_0
+    invoke-virtual {p0}, Landroidx/datastore/preferences/protobuf/r;->v()I
 
     .line 2
     .line 3
     .line 4
-    move-result-object v0
+    move-result v0
 
     .line 5
-    array-length v0, v0
+    if-nez v0, :cond_1
 
     .line 6
-    new-array v0, v0, [I
-
     .line 7
+    return-void
+
     .line 8
-    sput-object v0, Landroidx/datastore/preferences/protobuf/r;->a:[I
+    :cond_1
+    iget v1, p0, Landroidx/datastore/preferences/protobuf/r;->a:I
 
     .line 9
     .line 10
-    :try_start_0
-    sget-object v1, Landroidx/datastore/preferences/protobuf/WireFormat$FieldType;->BOOL:Landroidx/datastore/preferences/protobuf/WireFormat$FieldType;
+    const/16 v2, 0x64
 
     .line 11
     .line 12
-    invoke-virtual {v1}, Ljava/lang/Enum;->ordinal()I
+    if-ge v1, v2, :cond_2
 
     .line 13
     .line 14
-    .line 15
-    move-result v1
+    add-int/lit8 v1, v1, 0x1
 
+    .line 15
     .line 16
-    const/4 v2, 0x1
+    iput v1, p0, Landroidx/datastore/preferences/protobuf/r;->a:I
 
     .line 17
-    aput v2, v0, v1
-    :try_end_0
-    .catch Ljava/lang/NoSuchFieldError; {:try_start_0 .. :try_end_0} :catch_0
-
     .line 18
-    .line 19
-    :catch_0
-    :try_start_1
-    sget-object v0, Landroidx/datastore/preferences/protobuf/r;->a:[I
+    invoke-virtual {p0, v0}, Landroidx/datastore/preferences/protobuf/r;->y(I)Z
 
+    .line 19
     .line 20
     .line 21
-    sget-object v1, Landroidx/datastore/preferences/protobuf/WireFormat$FieldType;->BYTES:Landroidx/datastore/preferences/protobuf/WireFormat$FieldType;
+    move-result v0
 
     .line 22
-    .line 23
-    invoke-virtual {v1}, Ljava/lang/Enum;->ordinal()I
+    iget v1, p0, Landroidx/datastore/preferences/protobuf/r;->a:I
 
+    .line 23
     .line 24
+    add-int/lit8 v1, v1, -0x1
+
     .line 25
     .line 26
-    move-result v1
+    iput v1, p0, Landroidx/datastore/preferences/protobuf/r;->a:I
 
     .line 27
-    const/4 v2, 0x2
-
     .line 28
-    aput v2, v0, v1
-    :try_end_1
-    .catch Ljava/lang/NoSuchFieldError; {:try_start_1 .. :try_end_1} :catch_1
+    if-nez v0, :cond_0
 
     .line 29
     .line 30
-    :catch_1
-    :try_start_2
-    sget-object v0, Landroidx/datastore/preferences/protobuf/r;->a:[I
+    return-void
 
     .line 31
-    .line 32
-    sget-object v1, Landroidx/datastore/preferences/protobuf/WireFormat$FieldType;->DOUBLE:Landroidx/datastore/preferences/protobuf/WireFormat$FieldType;
+    :cond_2
+    invoke-static {}, Landroidx/datastore/preferences/protobuf/InvalidProtocolBufferException;->recursionLimitExceeded()Landroidx/datastore/preferences/protobuf/InvalidProtocolBufferException;
 
+    .line 32
     .line 33
     .line 34
-    invoke-virtual {v1}, Ljava/lang/Enum;->ordinal()I
+    move-result-object v0
 
     .line 35
-    .line 36
-    .line 37
-    move-result v1
-
-    .line 38
-    const/4 v2, 0x3
-
-    .line 39
-    aput v2, v0, v1
-    :try_end_2
-    .catch Ljava/lang/NoSuchFieldError; {:try_start_2 .. :try_end_2} :catch_2
-
-    .line 40
-    .line 41
-    :catch_2
-    :try_start_3
-    sget-object v0, Landroidx/datastore/preferences/protobuf/r;->a:[I
-
-    .line 42
-    .line 43
-    sget-object v1, Landroidx/datastore/preferences/protobuf/WireFormat$FieldType;->ENUM:Landroidx/datastore/preferences/protobuf/WireFormat$FieldType;
-
-    .line 44
-    .line 45
-    invoke-virtual {v1}, Ljava/lang/Enum;->ordinal()I
-
-    .line 46
-    .line 47
-    .line 48
-    move-result v1
-
-    .line 49
-    const/4 v2, 0x4
-
-    .line 50
-    aput v2, v0, v1
-    :try_end_3
-    .catch Ljava/lang/NoSuchFieldError; {:try_start_3 .. :try_end_3} :catch_3
-
-    .line 51
-    .line 52
-    :catch_3
-    :try_start_4
-    sget-object v0, Landroidx/datastore/preferences/protobuf/r;->a:[I
-
-    .line 53
-    .line 54
-    sget-object v1, Landroidx/datastore/preferences/protobuf/WireFormat$FieldType;->FIXED32:Landroidx/datastore/preferences/protobuf/WireFormat$FieldType;
-
-    .line 55
-    .line 56
-    invoke-virtual {v1}, Ljava/lang/Enum;->ordinal()I
-
-    .line 57
-    .line 58
-    .line 59
-    move-result v1
-
-    .line 60
-    const/4 v2, 0x5
-
-    .line 61
-    aput v2, v0, v1
-    :try_end_4
-    .catch Ljava/lang/NoSuchFieldError; {:try_start_4 .. :try_end_4} :catch_4
-
-    .line 62
-    .line 63
-    :catch_4
-    :try_start_5
-    sget-object v0, Landroidx/datastore/preferences/protobuf/r;->a:[I
-
-    .line 64
-    .line 65
-    sget-object v1, Landroidx/datastore/preferences/protobuf/WireFormat$FieldType;->FIXED64:Landroidx/datastore/preferences/protobuf/WireFormat$FieldType;
-
-    .line 66
-    .line 67
-    invoke-virtual {v1}, Ljava/lang/Enum;->ordinal()I
-
-    .line 68
-    .line 69
-    .line 70
-    move-result v1
-
-    .line 71
-    const/4 v2, 0x6
-
-    .line 72
-    aput v2, v0, v1
-    :try_end_5
-    .catch Ljava/lang/NoSuchFieldError; {:try_start_5 .. :try_end_5} :catch_5
-
-    .line 73
-    .line 74
-    :catch_5
-    :try_start_6
-    sget-object v0, Landroidx/datastore/preferences/protobuf/r;->a:[I
-
-    .line 75
-    .line 76
-    sget-object v1, Landroidx/datastore/preferences/protobuf/WireFormat$FieldType;->FLOAT:Landroidx/datastore/preferences/protobuf/WireFormat$FieldType;
-
-    .line 77
-    .line 78
-    invoke-virtual {v1}, Ljava/lang/Enum;->ordinal()I
-
-    .line 79
-    .line 80
-    .line 81
-    move-result v1
-
-    .line 82
-    const/4 v2, 0x7
-
-    .line 83
-    aput v2, v0, v1
-    :try_end_6
-    .catch Ljava/lang/NoSuchFieldError; {:try_start_6 .. :try_end_6} :catch_6
-
-    .line 84
-    .line 85
-    :catch_6
-    :try_start_7
-    sget-object v0, Landroidx/datastore/preferences/protobuf/r;->a:[I
-
-    .line 86
-    .line 87
-    sget-object v1, Landroidx/datastore/preferences/protobuf/WireFormat$FieldType;->INT32:Landroidx/datastore/preferences/protobuf/WireFormat$FieldType;
-
-    .line 88
-    .line 89
-    invoke-virtual {v1}, Ljava/lang/Enum;->ordinal()I
-
-    .line 90
-    .line 91
-    .line 92
-    move-result v1
-
-    .line 93
-    const/16 v2, 0x8
-
-    .line 94
-    .line 95
-    aput v2, v0, v1
-    :try_end_7
-    .catch Ljava/lang/NoSuchFieldError; {:try_start_7 .. :try_end_7} :catch_7
-
-    .line 96
-    .line 97
-    :catch_7
-    :try_start_8
-    sget-object v0, Landroidx/datastore/preferences/protobuf/r;->a:[I
-
-    .line 98
-    .line 99
-    sget-object v1, Landroidx/datastore/preferences/protobuf/WireFormat$FieldType;->INT64:Landroidx/datastore/preferences/protobuf/WireFormat$FieldType;
-
-    .line 100
-    .line 101
-    invoke-virtual {v1}, Ljava/lang/Enum;->ordinal()I
-
-    .line 102
-    .line 103
-    .line 104
-    move-result v1
-
-    .line 105
-    const/16 v2, 0x9
-
-    .line 106
-    .line 107
-    aput v2, v0, v1
-    :try_end_8
-    .catch Ljava/lang/NoSuchFieldError; {:try_start_8 .. :try_end_8} :catch_8
-
-    .line 108
-    .line 109
-    :catch_8
-    :try_start_9
-    sget-object v0, Landroidx/datastore/preferences/protobuf/r;->a:[I
-
-    .line 110
-    .line 111
-    sget-object v1, Landroidx/datastore/preferences/protobuf/WireFormat$FieldType;->MESSAGE:Landroidx/datastore/preferences/protobuf/WireFormat$FieldType;
-
-    .line 112
-    .line 113
-    invoke-virtual {v1}, Ljava/lang/Enum;->ordinal()I
-
-    .line 114
-    .line 115
-    .line 116
-    move-result v1
-
-    .line 117
-    const/16 v2, 0xa
-
-    .line 118
-    .line 119
-    aput v2, v0, v1
-    :try_end_9
-    .catch Ljava/lang/NoSuchFieldError; {:try_start_9 .. :try_end_9} :catch_9
-
-    .line 120
-    .line 121
-    :catch_9
-    :try_start_a
-    sget-object v0, Landroidx/datastore/preferences/protobuf/r;->a:[I
-
-    .line 122
-    .line 123
-    sget-object v1, Landroidx/datastore/preferences/protobuf/WireFormat$FieldType;->SFIXED32:Landroidx/datastore/preferences/protobuf/WireFormat$FieldType;
-
-    .line 124
-    .line 125
-    invoke-virtual {v1}, Ljava/lang/Enum;->ordinal()I
-
-    .line 126
-    .line 127
-    .line 128
-    move-result v1
-
-    .line 129
-    const/16 v2, 0xb
-
-    .line 130
-    .line 131
-    aput v2, v0, v1
-    :try_end_a
-    .catch Ljava/lang/NoSuchFieldError; {:try_start_a .. :try_end_a} :catch_a
-
-    .line 132
-    .line 133
-    :catch_a
-    :try_start_b
-    sget-object v0, Landroidx/datastore/preferences/protobuf/r;->a:[I
-
-    .line 134
-    .line 135
-    sget-object v1, Landroidx/datastore/preferences/protobuf/WireFormat$FieldType;->SFIXED64:Landroidx/datastore/preferences/protobuf/WireFormat$FieldType;
-
-    .line 136
-    .line 137
-    invoke-virtual {v1}, Ljava/lang/Enum;->ordinal()I
-
-    .line 138
-    .line 139
-    .line 140
-    move-result v1
-
-    .line 141
-    const/16 v2, 0xc
-
-    .line 142
-    .line 143
-    aput v2, v0, v1
-    :try_end_b
-    .catch Ljava/lang/NoSuchFieldError; {:try_start_b .. :try_end_b} :catch_b
-
-    .line 144
-    .line 145
-    :catch_b
-    :try_start_c
-    sget-object v0, Landroidx/datastore/preferences/protobuf/r;->a:[I
-
-    .line 146
-    .line 147
-    sget-object v1, Landroidx/datastore/preferences/protobuf/WireFormat$FieldType;->SINT32:Landroidx/datastore/preferences/protobuf/WireFormat$FieldType;
-
-    .line 148
-    .line 149
-    invoke-virtual {v1}, Ljava/lang/Enum;->ordinal()I
-
-    .line 150
-    .line 151
-    .line 152
-    move-result v1
-
-    .line 153
-    const/16 v2, 0xd
-
-    .line 154
-    .line 155
-    aput v2, v0, v1
-    :try_end_c
-    .catch Ljava/lang/NoSuchFieldError; {:try_start_c .. :try_end_c} :catch_c
-
-    .line 156
-    .line 157
-    :catch_c
-    :try_start_d
-    sget-object v0, Landroidx/datastore/preferences/protobuf/r;->a:[I
-
-    .line 158
-    .line 159
-    sget-object v1, Landroidx/datastore/preferences/protobuf/WireFormat$FieldType;->SINT64:Landroidx/datastore/preferences/protobuf/WireFormat$FieldType;
-
-    .line 160
-    .line 161
-    invoke-virtual {v1}, Ljava/lang/Enum;->ordinal()I
-
-    .line 162
-    .line 163
-    .line 164
-    move-result v1
-
-    .line 165
-    const/16 v2, 0xe
-
-    .line 166
-    .line 167
-    aput v2, v0, v1
-    :try_end_d
-    .catch Ljava/lang/NoSuchFieldError; {:try_start_d .. :try_end_d} :catch_d
-
-    .line 168
-    .line 169
-    :catch_d
-    :try_start_e
-    sget-object v0, Landroidx/datastore/preferences/protobuf/r;->a:[I
-
-    .line 170
-    .line 171
-    sget-object v1, Landroidx/datastore/preferences/protobuf/WireFormat$FieldType;->STRING:Landroidx/datastore/preferences/protobuf/WireFormat$FieldType;
-
-    .line 172
-    .line 173
-    invoke-virtual {v1}, Ljava/lang/Enum;->ordinal()I
-
-    .line 174
-    .line 175
-    .line 176
-    move-result v1
-
-    .line 177
-    const/16 v2, 0xf
-
-    .line 178
-    .line 179
-    aput v2, v0, v1
-    :try_end_e
-    .catch Ljava/lang/NoSuchFieldError; {:try_start_e .. :try_end_e} :catch_e
-
-    .line 180
-    .line 181
-    :catch_e
-    :try_start_f
-    sget-object v0, Landroidx/datastore/preferences/protobuf/r;->a:[I
-
-    .line 182
-    .line 183
-    sget-object v1, Landroidx/datastore/preferences/protobuf/WireFormat$FieldType;->UINT32:Landroidx/datastore/preferences/protobuf/WireFormat$FieldType;
-
-    .line 184
-    .line 185
-    invoke-virtual {v1}, Ljava/lang/Enum;->ordinal()I
-
-    .line 186
-    .line 187
-    .line 188
-    move-result v1
-
-    .line 189
-    const/16 v2, 0x10
-
-    .line 190
-    .line 191
-    aput v2, v0, v1
-    :try_end_f
-    .catch Ljava/lang/NoSuchFieldError; {:try_start_f .. :try_end_f} :catch_f
-
-    .line 192
-    .line 193
-    :catch_f
-    :try_start_10
-    sget-object v0, Landroidx/datastore/preferences/protobuf/r;->a:[I
-
-    .line 194
-    .line 195
-    sget-object v1, Landroidx/datastore/preferences/protobuf/WireFormat$FieldType;->UINT64:Landroidx/datastore/preferences/protobuf/WireFormat$FieldType;
-
-    .line 196
-    .line 197
-    invoke-virtual {v1}, Ljava/lang/Enum;->ordinal()I
-
-    .line 198
-    .line 199
-    .line 200
-    move-result v1
-
-    .line 201
-    const/16 v2, 0x11
-
-    .line 202
-    .line 203
-    aput v2, v0, v1
-    :try_end_10
-    .catch Ljava/lang/NoSuchFieldError; {:try_start_10 .. :try_end_10} :catch_10
-
-    .line 204
-    .line 205
-    :catch_10
-    return-void
+    throw v0
 .end method

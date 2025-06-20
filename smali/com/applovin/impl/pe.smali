@@ -13,38 +13,71 @@
 .method static constructor <clinit>()V
     .locals 6
 
-    const-string v0, "ads"
-
-    const-string v1, "settings"
-
-    const-string v2, "auto_init_adapters"
-
-    const-string v3, "test_mode_idfas"
-
+    .line 1
     const-string v4, "test_mode_auto_init_adapters"
 
+    .line 2
+    .line 3
     const-string v5, "ad_unit_signal_providers"
 
+    .line 4
+    .line 5
+    const-string v0, "ads"
+
+    .line 6
+    .line 7
+    const-string v1, "settings"
+
+    .line 8
+    .line 9
+    const-string v2, "auto_init_adapters"
+
+    .line 10
+    .line 11
+    const-string v3, "test_mode_idfas"
+
+    .line 12
+    .line 13
     filled-new-array/range {v0 .. v5}, [Ljava/lang/String;
 
+    .line 14
+    .line 15
+    .line 16
     move-result-object v0
 
+    .line 17
     sput-object v0, Lcom/applovin/impl/pe;->e:[Ljava/lang/String;
 
+    .line 18
+    .line 19
     const-string v0, "signal_providers"
 
+    .line 20
+    .line 21
     const-string v1, "ad_unit_signal_providers"
 
+    .line 22
+    .line 23
     const-string v2, "ads"
 
+    .line 24
+    .line 25
     const-string v3, "settings"
 
+    .line 26
+    .line 27
     filled-new-array {v2, v3, v0, v1}, [Ljava/lang/String;
 
+    .line 28
+    .line 29
+    .line 30
     move-result-object v0
 
+    .line 31
     sput-object v0, Lcom/applovin/impl/pe;->f:[Ljava/lang/String;
 
+    .line 32
+    .line 33
     return-void
 .end method
 

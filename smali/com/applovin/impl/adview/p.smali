@@ -30,7 +30,7 @@
     .line 1
     iget-object v0, p0, Lcom/applovin/impl/adview/p;->b:Lcom/applovin/impl/adview/a;
 
-    invoke-static {v0, p1}, Lcom/applovin/impl/adview/a;->t(Lcom/applovin/impl/adview/a;Landroid/content/DialogInterface;)V
+    invoke-static {v0, p1}, Lcom/applovin/impl/adview/a;->s(Lcom/applovin/impl/adview/a;Landroid/content/DialogInterface;)V
 
     return-void
 .end method

@@ -30,11 +30,11 @@
 
 
 # virtual methods
-.method public final a(Landroid/view/RenderNode;)V
+.method public final a(Landroid/graphics/RenderNode;Landroidx/compose/ui/graphics/V;)V
     .locals 0
 
     .line 1
-    invoke-virtual {p1}, Landroid/view/RenderNode;->discardDisplayList()V
+    invoke-static {p1}, LE0/l;->v(Landroid/graphics/RenderNode;)V
 
     .line 2
     .line 3

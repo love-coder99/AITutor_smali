@@ -1,12 +1,12 @@
 .class final Landroidx/compose/foundation/layout/OffsetPxElement;
-.super Landroidx/compose/ui/node/w0;
+.super Landroidx/compose/ui/node/V;
 .source "SourceFile"
 
 
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
-        "Landroidx/compose/ui/node/w0;"
+        "Landroidx/compose/ui/node/V;"
     }
 .end annotation
 
@@ -16,8 +16,8 @@
     }
     d2 = {
         "Landroidx/compose/foundation/layout/OffsetPxElement;",
-        "Landroidx/compose/ui/node/w0;",
-        "Landroidx/compose/foundation/layout/n0;",
+        "Landroidx/compose/ui/node/V;",
+        "Landroidx/compose/foundation/layout/K;",
         "foundation-layout_release"
     }
     k = 0x1
@@ -26,15 +26,16 @@
         0x8,
         0x0
     }
+    xi = 0x30
 .end annotation
 
 
 # instance fields
-.field public final c:Lzh/c;
+.field public final a:Lka/c;
 
 
 # direct methods
-.method public constructor <init>(Lzh/c;)V
+.method public constructor <init>(Lka/c;)V
     .locals 0
 
     .line 1
@@ -43,7 +44,7 @@
     .line 2
     .line 3
     .line 4
-    iput-object p1, p0, Landroidx/compose/foundation/layout/OffsetPxElement;->c:Lzh/c;
+    iput-object p1, p0, Landroidx/compose/foundation/layout/OffsetPxElement;->a:Lka/c;
 
     .line 5
     .line 6
@@ -98,11 +99,11 @@
 
     .line 17
     :cond_2
-    iget-object v2, p0, Landroidx/compose/foundation/layout/OffsetPxElement;->c:Lzh/c;
+    iget-object v2, p0, Landroidx/compose/foundation/layout/OffsetPxElement;->a:Lka/c;
 
     .line 18
     .line 19
-    iget-object p1, p1, Landroidx/compose/foundation/layout/OffsetPxElement;->c:Lzh/c;
+    iget-object p1, p1, Landroidx/compose/foundation/layout/OffsetPxElement;->a:Lka/c;
 
     .line 20
     .line 21
@@ -125,7 +126,7 @@
     .locals 1
 
     .line 1
-    iget-object v0, p0, Landroidx/compose/foundation/layout/OffsetPxElement;->c:Lzh/c;
+    iget-object v0, p0, Landroidx/compose/foundation/layout/OffsetPxElement;->a:Lka/c;
 
     .line 2
     .line 3
@@ -152,7 +153,7 @@
     .locals 2
 
     .line 1
-    new-instance v0, Landroidx/compose/foundation/layout/n0;
+    new-instance v0, Landroidx/compose/foundation/layout/K;
 
     .line 2
     .line 3
@@ -161,18 +162,18 @@
     .line 4
     .line 5
     .line 6
-    iget-object v1, p0, Landroidx/compose/foundation/layout/OffsetPxElement;->c:Lzh/c;
+    iget-object v1, p0, Landroidx/compose/foundation/layout/OffsetPxElement;->a:Lka/c;
 
     .line 7
     .line 8
-    iput-object v1, v0, Landroidx/compose/foundation/layout/n0;->p:Lzh/c;
+    iput-object v1, v0, Landroidx/compose/foundation/layout/K;->p:Lka/c;
 
     .line 9
     .line 10
     const/4 v1, 0x1
 
     .line 11
-    iput-boolean v1, v0, Landroidx/compose/foundation/layout/n0;->q:Z
+    iput-boolean v1, v0, Landroidx/compose/foundation/layout/K;->q:Z
 
     .line 12
     .line 13
@@ -183,22 +184,22 @@
     .locals 1
 
     .line 1
-    check-cast p1, Landroidx/compose/foundation/layout/n0;
+    check-cast p1, Landroidx/compose/foundation/layout/K;
 
     .line 2
     .line 3
-    iget-object v0, p0, Landroidx/compose/foundation/layout/OffsetPxElement;->c:Lzh/c;
+    iget-object v0, p0, Landroidx/compose/foundation/layout/OffsetPxElement;->a:Lka/c;
 
     .line 4
     .line 5
-    iput-object v0, p1, Landroidx/compose/foundation/layout/n0;->p:Lzh/c;
+    iput-object v0, p1, Landroidx/compose/foundation/layout/K;->p:Lka/c;
 
     .line 6
     .line 7
     const/4 v0, 0x1
 
     .line 8
-    iput-boolean v0, p1, Landroidx/compose/foundation/layout/n0;->q:Z
+    iput-boolean v0, p1, Landroidx/compose/foundation/layout/K;->q:Z
 
     .line 9
     .line 10
@@ -222,7 +223,7 @@
     .line 6
     .line 7
     .line 8
-    iget-object v1, p0, Landroidx/compose/foundation/layout/OffsetPxElement;->c:Lzh/c;
+    iget-object v1, p0, Landroidx/compose/foundation/layout/OffsetPxElement;->a:Lka/c;
 
     .line 9
     .line 10

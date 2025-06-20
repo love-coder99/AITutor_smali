@@ -187,9 +187,9 @@
 .method public a()I
     .locals 1
 
+    .line 4
     iget-object v0, p0, Lcom/applovin/impl/as;->c:[J
 
-    .line 4
     array-length v0, v0
 
     return v0
@@ -198,18 +198,18 @@
 .method public a(J)I
     .locals 2
 
+    .line 5
     iget-object v0, p0, Lcom/applovin/impl/as;->c:[J
 
     const/4 v1, 0x0
 
-    .line 5
     invoke-static {v0, p1, p2, v1, v1}, Lcom/applovin/impl/xp;->a([JJZZ)I
 
     move-result p1
 
+    .line 6
     iget-object p2, p0, Lcom/applovin/impl/as;->c:[J
 
-    .line 6
     array-length p2, p2
 
     if-ge p1, p2, :cond_0
@@ -243,9 +243,9 @@
     :goto_0
     invoke-static {v2}, Lcom/applovin/impl/b1;->a(Z)V
 
+    .line 2
     iget-object v2, p0, Lcom/applovin/impl/as;->c:[J
 
-    .line 2
     array-length v2, v2
 
     if-ge p1, v2, :cond_1
@@ -255,9 +255,9 @@
     :cond_1
     invoke-static {v0}, Lcom/applovin/impl/b1;->a(Z)V
 
+    .line 3
     iget-object v0, p0, Lcom/applovin/impl/as;->c:[J
 
-    .line 3
     aget-wide v1, v0, p1
 
     return-wide v1
@@ -280,21 +280,21 @@
 
     const/4 v3, 0x0
 
+    .line 4
     :goto_0
     iget-object v4, p0, Lcom/applovin/impl/as;->a:Ljava/util/List;
 
-    .line 4
     invoke-interface {v4}, Ljava/util/List;->size()I
 
     move-result v4
 
     if-ge v3, v4, :cond_2
 
+    .line 5
     iget-object v4, p0, Lcom/applovin/impl/as;->b:[J
 
     mul-int/lit8 v5, v3, 0x2
 
-    .line 5
     aget-wide v6, v4, v5
 
     cmp-long v8, v6, p1
@@ -309,9 +309,9 @@
 
     if-gez v4, :cond_1
 
+    .line 6
     iget-object v4, p0, Lcom/applovin/impl/as;->a:Ljava/util/List;
 
-    .line 6
     invoke-interface {v4, v3}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
     move-result-object v4
@@ -346,9 +346,11 @@
 
     .line 10
     :cond_2
-    new-instance p1, Lcom/applovin/impl/rs;
+    new-instance p1, Lcom/applovin/impl/J;
 
-    invoke-direct {p1, v2}, Lcom/applovin/impl/rs;-><init>(I)V
+    const/4 p2, 0x0
+
+    invoke-direct {p1, p2}, Lcom/applovin/impl/J;-><init>(I)V
 
     invoke-static {v1, p1}, Ljava/util/Collections;->sort(Ljava/util/List;Ljava/util/Comparator;)V
 

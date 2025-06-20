@@ -3,14 +3,14 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lzh/e;
+.implements Lka/e;
 
 
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "Lkotlin/jvm/internal/Lambda;",
-        "Lzh/e;"
+        "Lka/e;"
     }
 .end annotation
 
@@ -59,13 +59,13 @@
 .method public final invoke(ILandroidx/compose/ui/unit/LayoutDirection;)Ljava/lang/Integer;
     .locals 1
 
+    .line 1
     iget-object p2, p0, Landroidx/compose/foundation/layout/Arrangement$spacedBy$3;->$alignment:Landroidx/compose/ui/d;
 
     const/4 v0, 0x0
 
     check-cast p2, Landroidx/compose/ui/h;
 
-    .line 1
     invoke-virtual {p2, v0, p1}, Landroidx/compose/ui/h;->a(II)I
 
     move-result p1

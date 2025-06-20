@@ -1,154 +1,112 @@
-.class public final Lv0/i;
+.class public abstract synthetic LV0/i;
 .super Ljava/lang/Object;
 .source "SourceFile"
 
-# interfaces
-.implements Lc0/c;
 
-
-# instance fields
-.field public final synthetic b:Ljava/util/List;
-
-.field public final synthetic c:Ly/t;
-
-.field public final synthetic d:Landroidx/camera/view/a;
+# static fields
+.field public static final synthetic a:[I
 
 
 # direct methods
-.method public constructor <init>(Landroidx/camera/view/a;Ljava/util/ArrayList;Landroidx/camera/core/impl/x;)V
-    .locals 0
-
-    .line 1
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
-
-    .line 2
-    .line 3
-    .line 4
-    iput-object p1, p0, Lv0/i;->d:Landroidx/camera/view/a;
-
-    .line 5
-    .line 6
-    iput-object p2, p0, Lv0/i;->b:Ljava/util/List;
-
-    .line 7
-    .line 8
-    iput-object p3, p0, Lv0/i;->c:Ly/t;
-
-    .line 9
-    .line 10
-    return-void
-.end method
-
-
-# virtual methods
-.method public final a(Ljava/lang/Throwable;)V
+.method static constructor <clinit>()V
     .locals 3
 
     .line 1
-    iget-object p1, p0, Lv0/i;->d:Landroidx/camera/view/a;
+    invoke-static {}, Landroidx/constraintlayout/core/state/State$Chain;->values()[Landroidx/constraintlayout/core/state/State$Chain;
 
     .line 2
     .line 3
-    const/4 v0, 0x0
-
     .line 4
-    iput-object v0, p1, Landroidx/camera/view/a;->e:Lc0/d;
+    move-result-object v0
 
     .line 5
+    array-length v0, v0
+
     .line 6
-    iget-object p1, p0, Lv0/i;->b:Ljava/util/List;
+    new-array v0, v0, [I
 
     .line 7
     .line 8
-    invoke-interface {p1}, Ljava/util/List;->isEmpty()Z
+    sput-object v0, LV0/i;->a:[I
 
     .line 9
     .line 10
-    .line 11
-    move-result v0
+    :try_start_0
+    sget-object v1, Landroidx/constraintlayout/core/state/State$Chain;->SPREAD:Landroidx/constraintlayout/core/state/State$Chain;
 
+    .line 11
     .line 12
-    if-nez v0, :cond_1
+    invoke-virtual {v1}, Ljava/lang/Enum;->ordinal()I
 
     .line 13
     .line 14
-    invoke-interface {p1}, Ljava/util/List;->iterator()Ljava/util/Iterator;
-
     .line 15
-    .line 16
-    .line 17
-    move-result-object v0
-
-    .line 18
-    :goto_0
-    invoke-interface {v0}, Ljava/util/Iterator;->hasNext()Z
-
-    .line 19
-    .line 20
-    .line 21
     move-result v1
 
+    .line 16
+    const/4 v2, 0x1
+
+    .line 17
+    aput v2, v0, v1
+    :try_end_0
+    .catch Ljava/lang/NoSuchFieldError; {:try_start_0 .. :try_end_0} :catch_0
+
+    .line 18
+    .line 19
+    :catch_0
+    :try_start_1
+    sget-object v0, LV0/i;->a:[I
+
+    .line 20
+    .line 21
+    sget-object v1, Landroidx/constraintlayout/core/state/State$Chain;->SPREAD_INSIDE:Landroidx/constraintlayout/core/state/State$Chain;
+
     .line 22
-    if-eqz v1, :cond_0
-
     .line 23
-    .line 24
-    invoke-interface {v0}, Ljava/util/Iterator;->next()Ljava/lang/Object;
+    invoke-virtual {v1}, Ljava/lang/Enum;->ordinal()I
 
+    .line 24
     .line 25
     .line 26
+    move-result v1
+
     .line 27
-    move-result-object v1
+    const/4 v2, 0x2
 
     .line 28
-    check-cast v1, Landroidx/camera/core/impl/m;
+    aput v2, v0, v1
+    :try_end_1
+    .catch Ljava/lang/NoSuchFieldError; {:try_start_1 .. :try_end_1} :catch_1
 
     .line 29
     .line 30
-    iget-object v2, p0, Lv0/i;->c:Ly/t;
+    :catch_1
+    :try_start_2
+    sget-object v0, LV0/i;->a:[I
 
     .line 31
     .line 32
-    check-cast v2, Landroidx/camera/core/impl/x;
+    sget-object v1, Landroidx/constraintlayout/core/state/State$Chain;->PACKED:Landroidx/constraintlayout/core/state/State$Chain;
 
     .line 33
     .line 34
-    invoke-interface {v2, v1}, Landroidx/camera/core/impl/x;->q(Landroidx/camera/core/impl/m;)V
+    invoke-virtual {v1}, Ljava/lang/Enum;->ordinal()I
 
     .line 35
     .line 36
     .line 37
-    goto :goto_0
+    move-result v1
 
     .line 38
-    :cond_0
-    invoke-interface {p1}, Ljava/util/List;->clear()V
+    const/4 v2, 0x3
 
     .line 39
+    aput v2, v0, v1
+    :try_end_2
+    .catch Ljava/lang/NoSuchFieldError; {:try_start_2 .. :try_end_2} :catch_2
+
     .line 40
     .line 41
-    :cond_1
-    return-void
-.end method
-
-.method public final onSuccess(Ljava/lang/Object;)V
-    .locals 1
-
-    .line 1
-    check-cast p1, Ljava/lang/Void;
-
-    .line 2
-    .line 3
-    iget-object p1, p0, Lv0/i;->d:Landroidx/camera/view/a;
-
-    .line 4
-    .line 5
-    const/4 v0, 0x0
-
-    .line 6
-    iput-object v0, p1, Landroidx/camera/view/a;->e:Lc0/d;
-
-    .line 7
-    .line 8
+    :catch_2
     return-void
 .end method

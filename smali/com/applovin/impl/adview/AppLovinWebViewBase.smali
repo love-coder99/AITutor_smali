@@ -565,7 +565,7 @@
     move-result v1
 
     .line 272
-    invoke-static {v0, v1}, Landroidx/compose/ui/platform/r2;->w(Landroid/webkit/WebSettings;Z)V
+    invoke-static {v0, v1}, Lc3/A;->w(Landroid/webkit/WebSettings;Z)V
 
     .line 273
     .line 274
@@ -603,7 +603,7 @@
     move-result p1
 
     .line 291
-    invoke-static {v0, p1}, Landroidx/activity/t;->u(Landroid/webkit/WebSettings;Z)V
+    invoke-static {v0, p1}, LE0/d;->v(Landroid/webkit/WebSettings;Z)V
 
     .line 292
     .line 293

@@ -4,6 +4,16 @@
 
 
 # annotations
+.annotation runtime Lca/c;
+    c = "androidx.compose.ui.input.nestedscroll.NestedScrollNode"
+    f = "NestedScrollNode.kt"
+    l = {
+        0x68,
+        0x69
+    }
+    m = "onPostFling-RZ2iAVY"
+.end annotation
+
 .annotation runtime Lkotlin/Metadata;
     k = 0x3
     mv = {
@@ -12,16 +22,6 @@
         0x0
     }
     xi = 0x30
-.end annotation
-
-.annotation runtime Lth/c;
-    c = "androidx.compose.ui.input.nestedscroll.NestedScrollNode"
-    f = "NestedScrollNode.kt"
-    l = {
-        0x68,
-        0x69
-    }
-    m = "onPostFling-RZ2iAVY"
 .end annotation
 
 
@@ -83,7 +83,7 @@
 
     move-object v5, p0
 
-    invoke-virtual/range {v0 .. v5}, Landroidx/compose/ui/input/nestedscroll/d;->m(JJLkotlin/coroutines/Continuation;)Ljava/lang/Object;
+    invoke-virtual/range {v0 .. v5}, Landroidx/compose/ui/input/nestedscroll/d;->n(JJLkotlin/coroutines/Continuation;)Ljava/lang/Object;
 
     move-result-object p1
 

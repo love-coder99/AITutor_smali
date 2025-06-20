@@ -3,7 +3,7 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lzh/c;
+.implements Lka/c;
 
 
 # annotations
@@ -19,7 +19,7 @@
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "Lkotlin/jvm/internal/Lambda;",
-        "Lzh/c;"
+        "Lka/c;"
     }
 .end annotation
 
@@ -28,12 +28,12 @@
         "\u0000\u0012\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u000b\n\u0002\u0008\u0003\u0010\u0006\u001a\u00020\u00032\u000e\u0010\u0002\u001a\n\u0012\u0006\u0012\u0004\u0018\u00010\u00010\u0000H\n\u00a2\u0006\u0004\u0008\u0004\u0010\u0005"
     }
     d2 = {
-        "Landroidx/compose/material3/z;",
-        "Landroidx/compose/material3/a1;",
+        "Landroidx/compose/material3/E;",
+        "Landroidx/compose/material3/w0;",
         "it",
         "",
         "invoke",
-        "(Landroidx/compose/material3/z;)Ljava/lang/Boolean;",
+        "(Landroidx/compose/material3/E;)Ljava/lang/Boolean;",
         "<anonymous>"
     }
     k = 0x3
@@ -46,14 +46,14 @@
 
 
 # instance fields
-.field final synthetic $key:Landroidx/compose/material3/a1;
+.field final synthetic $key:Landroidx/compose/material3/w0;
 
 
 # direct methods
-.method public constructor <init>(Landroidx/compose/material3/a1;)V
+.method public constructor <init>(Landroidx/compose/material3/w0;)V
     .locals 0
 
-    iput-object p1, p0, Landroidx/compose/material3/SnackbarHostKt$FadeInFadeOutWithScale$1$1$opacity$1$1$1;->$key:Landroidx/compose/material3/a1;
+    iput-object p1, p0, Landroidx/compose/material3/SnackbarHostKt$FadeInFadeOutWithScale$1$1$opacity$1$1$1;->$key:Landroidx/compose/material3/w0;
 
     const/4 p1, 0x1
 
@@ -64,24 +64,24 @@
 
 
 # virtual methods
-.method public final invoke(Landroidx/compose/material3/z;)Ljava/lang/Boolean;
+.method public final invoke(Landroidx/compose/material3/E;)Ljava/lang/Boolean;
     .locals 1
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
-            "Landroidx/compose/material3/z;",
+            "Landroidx/compose/material3/E;",
             ")",
             "Ljava/lang/Boolean;"
         }
     .end annotation
 
     .line 2
-    iget-object p1, p1, Landroidx/compose/material3/z;->a:Ljava/lang/Object;
-
-    iget-object v0, p0, Landroidx/compose/material3/SnackbarHostKt$FadeInFadeOutWithScale$1$1$opacity$1$1$1;->$key:Landroidx/compose/material3/a1;
+    iget-object p1, p1, Landroidx/compose/material3/E;->a:Landroidx/compose/material3/w0;
 
     .line 3
-    invoke-static {p1, v0}, Lrb/h;->d(Ljava/lang/Object;Ljava/lang/Object;)Z
+    iget-object v0, p0, Landroidx/compose/material3/SnackbarHostKt$FadeInFadeOutWithScale$1$1$opacity$1$1$1;->$key:Landroidx/compose/material3/w0;
+
+    invoke-static {p1, v0}, Lkotlin/jvm/internal/h;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result p1
 
@@ -96,9 +96,9 @@
     .locals 0
 
     .line 1
-    check-cast p1, Landroidx/compose/material3/z;
+    check-cast p1, Landroidx/compose/material3/E;
 
-    invoke-virtual {p0, p1}, Landroidx/compose/material3/SnackbarHostKt$FadeInFadeOutWithScale$1$1$opacity$1$1$1;->invoke(Landroidx/compose/material3/z;)Ljava/lang/Boolean;
+    invoke-virtual {p0, p1}, Landroidx/compose/material3/SnackbarHostKt$FadeInFadeOutWithScale$1$1$opacity$1$1$1;->invoke(Landroidx/compose/material3/E;)Ljava/lang/Boolean;
 
     move-result-object p1
 

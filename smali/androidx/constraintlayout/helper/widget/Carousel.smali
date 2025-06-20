@@ -47,40 +47,58 @@
 
     const/4 v0, 0x0
 
+    .line 3
     iput v0, p0, Landroidx/constraintlayout/helper/widget/Carousel;->q:I
 
     const/4 v1, -0x1
 
+    .line 4
     iput v1, p0, Landroidx/constraintlayout/helper/widget/Carousel;->s:I
 
+    .line 5
     iput-boolean v0, p0, Landroidx/constraintlayout/helper/widget/Carousel;->t:Z
 
+    .line 6
     iput v1, p0, Landroidx/constraintlayout/helper/widget/Carousel;->u:I
 
+    .line 7
     iput v1, p0, Landroidx/constraintlayout/helper/widget/Carousel;->v:I
 
+    .line 8
     iput v1, p0, Landroidx/constraintlayout/helper/widget/Carousel;->w:I
 
+    .line 9
     iput v1, p0, Landroidx/constraintlayout/helper/widget/Carousel;->x:I
 
     const v0, 0x3f666666    # 0.9f
 
+    .line 10
     iput v0, p0, Landroidx/constraintlayout/helper/widget/Carousel;->y:F
 
     const/4 v0, 0x4
 
+    .line 11
     iput v0, p0, Landroidx/constraintlayout/helper/widget/Carousel;->z:I
 
     const/4 v0, 0x1
 
+    .line 12
     iput v0, p0, Landroidx/constraintlayout/helper/widget/Carousel;->A:I
 
     const/high16 v0, 0x40000000    # 2.0f
 
+    .line 13
     iput v0, p0, Landroidx/constraintlayout/helper/widget/Carousel;->B:F
 
-    .line 3
-    invoke-virtual {p0, p1, p2}, Landroidx/constraintlayout/helper/widget/Carousel;->t(Landroid/content/Context;Landroid/util/AttributeSet;)V
+    .line 14
+    new-instance v0, LA1/e;
+
+    const/16 v1, 0x1c
+
+    invoke-direct {v0, p0, v1}, LA1/e;-><init>(Ljava/lang/Object;I)V
+
+    .line 15
+    invoke-virtual {p0, p1, p2}, Landroidx/constraintlayout/helper/widget/Carousel;->s(Landroid/content/Context;Landroid/util/AttributeSet;)V
 
     return-void
 .end method
@@ -88,10 +106,10 @@
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
     .locals 1
 
-    .line 4
+    .line 16
     invoke-direct {p0, p1, p2, p3}, Landroidx/constraintlayout/motion/widget/MotionHelper;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
 
-    .line 5
+    .line 17
     new-instance p3, Ljava/util/ArrayList;
 
     invoke-direct {p3}, Ljava/util/ArrayList;-><init>()V
@@ -100,40 +118,58 @@
 
     const/4 p3, 0x0
 
+    .line 18
     iput p3, p0, Landroidx/constraintlayout/helper/widget/Carousel;->q:I
 
     const/4 v0, -0x1
 
+    .line 19
     iput v0, p0, Landroidx/constraintlayout/helper/widget/Carousel;->s:I
 
+    .line 20
     iput-boolean p3, p0, Landroidx/constraintlayout/helper/widget/Carousel;->t:Z
 
+    .line 21
     iput v0, p0, Landroidx/constraintlayout/helper/widget/Carousel;->u:I
 
+    .line 22
     iput v0, p0, Landroidx/constraintlayout/helper/widget/Carousel;->v:I
 
+    .line 23
     iput v0, p0, Landroidx/constraintlayout/helper/widget/Carousel;->w:I
 
+    .line 24
     iput v0, p0, Landroidx/constraintlayout/helper/widget/Carousel;->x:I
 
     const p3, 0x3f666666    # 0.9f
 
+    .line 25
     iput p3, p0, Landroidx/constraintlayout/helper/widget/Carousel;->y:F
 
     const/4 p3, 0x4
 
+    .line 26
     iput p3, p0, Landroidx/constraintlayout/helper/widget/Carousel;->z:I
 
     const/4 p3, 0x1
 
+    .line 27
     iput p3, p0, Landroidx/constraintlayout/helper/widget/Carousel;->A:I
 
     const/high16 p3, 0x40000000    # 2.0f
 
+    .line 28
     iput p3, p0, Landroidx/constraintlayout/helper/widget/Carousel;->B:F
 
-    .line 6
-    invoke-virtual {p0, p1, p2}, Landroidx/constraintlayout/helper/widget/Carousel;->t(Landroid/content/Context;Landroid/util/AttributeSet;)V
+    .line 29
+    new-instance p3, LA1/e;
+
+    const/16 v0, 0x1c
+
+    invoke-direct {p3, p0, v0}, LA1/e;-><init>(Ljava/lang/Object;I)V
+
+    .line 30
+    invoke-virtual {p0, p1, p2}, Landroidx/constraintlayout/helper/widget/Carousel;->s(Landroid/content/Context;Landroid/util/AttributeSet;)V
 
     return-void
 .end method
@@ -204,13 +240,6 @@
     throw v0
 .end method
 
-.method public final b()V
-    .locals 0
-
-    .line 1
-    return-void
-.end method
-
 .method public getCount()I
     .locals 1
 
@@ -222,8 +251,11 @@
 .method public getCurrentIndex()I
     .locals 1
 
+    .line 1
     iget v0, p0, Landroidx/constraintlayout/helper/widget/Carousel;->q:I
 
+    .line 2
+    .line 3
     return v0
 .end method
 
@@ -333,7 +365,7 @@
 
     .line 50
     .line 51
-    invoke-virtual {v0, v1}, Landroidx/constraintlayout/motion/widget/MotionLayout;->r(I)Lw2/a0;
+    invoke-virtual {v0, v1}, Landroidx/constraintlayout/motion/widget/MotionLayout;->q(I)Lb1/z;
 
     .line 52
     .line 53
@@ -348,7 +380,7 @@
 
     .line 57
     .line 58
-    iget-object v0, v0, Lw2/a0;->l:Landroidx/constraintlayout/motion/widget/c;
+    iget-object v0, v0, Lb1/z;->l:Landroidx/constraintlayout/motion/widget/c;
 
     .line 59
     .line 60
@@ -369,7 +401,7 @@
 
     .line 67
     .line 68
-    invoke-virtual {v0, v2}, Landroidx/constraintlayout/motion/widget/MotionLayout;->r(I)Lw2/a0;
+    invoke-virtual {v0, v2}, Landroidx/constraintlayout/motion/widget/MotionLayout;->q(I)Lb1/z;
 
     .line 69
     .line 70
@@ -381,7 +413,7 @@
 
     .line 73
     .line 74
-    iget-object v0, v0, Lw2/a0;->l:Landroidx/constraintlayout/motion/widget/c;
+    iget-object v0, v0, Lb1/z;->l:Landroidx/constraintlayout/motion/widget/c;
 
     .line 75
     .line 76
@@ -418,22 +450,7 @@
     return-void
 .end method
 
-.method public setAdapter(Lu2/a;)V
-    .locals 0
-
-    .line 1
-    return-void
-.end method
-
-.method public setInfinite(Z)V
-    .locals 0
-
-    iput-boolean p1, p0, Landroidx/constraintlayout/helper/widget/Carousel;->t:Z
-
-    return-void
-.end method
-
-.method public final t(Landroid/content/Context;Landroid/util/AttributeSet;)V
+.method public final s(Landroid/content/Context;Landroid/util/AttributeSet;)V
     .locals 3
 
     .line 1
@@ -441,7 +458,7 @@
 
     .line 2
     .line 3
-    sget-object v0, Ly2/r;->Carousel:[I
+    sget-object v0, Ld1/r;->Carousel:[I
 
     .line 4
     .line 5
@@ -477,7 +494,7 @@
     move-result v1
 
     .line 20
-    sget v2, Ly2/r;->Carousel_carousel_firstView:I
+    sget v2, Ld1/r;->Carousel_carousel_firstView:I
 
     .line 21
     .line 22
@@ -506,7 +523,7 @@
     .line 33
     .line 34
     :cond_0
-    sget v2, Ly2/r;->Carousel_carousel_backwardTransition:I
+    sget v2, Ld1/r;->Carousel_carousel_backwardTransition:I
 
     .line 35
     .line 36
@@ -535,7 +552,7 @@
     .line 47
     .line 48
     :cond_1
-    sget v2, Ly2/r;->Carousel_carousel_forwardTransition:I
+    sget v2, Ld1/r;->Carousel_carousel_forwardTransition:I
 
     .line 49
     .line 50
@@ -563,7 +580,7 @@
 
     .line 61
     :cond_2
-    sget v2, Ly2/r;->Carousel_carousel_emptyViewsBehavior:I
+    sget v2, Ld1/r;->Carousel_carousel_emptyViewsBehavior:I
 
     .line 62
     .line 63
@@ -591,7 +608,7 @@
 
     .line 74
     :cond_3
-    sget v2, Ly2/r;->Carousel_carousel_previousState:I
+    sget v2, Ld1/r;->Carousel_carousel_previousState:I
 
     .line 75
     .line 76
@@ -619,7 +636,7 @@
 
     .line 87
     :cond_4
-    sget v2, Ly2/r;->Carousel_carousel_nextState:I
+    sget v2, Ld1/r;->Carousel_carousel_nextState:I
 
     .line 88
     .line 89
@@ -647,7 +664,7 @@
 
     .line 100
     :cond_5
-    sget v2, Ly2/r;->Carousel_carousel_touchUp_dampeningFactor:I
+    sget v2, Ld1/r;->Carousel_carousel_touchUp_dampeningFactor:I
 
     .line 101
     .line 102
@@ -675,7 +692,7 @@
 
     .line 113
     :cond_6
-    sget v2, Ly2/r;->Carousel_carousel_touchUpMode:I
+    sget v2, Ld1/r;->Carousel_carousel_touchUpMode:I
 
     .line 114
     .line 115
@@ -703,7 +720,7 @@
 
     .line 126
     :cond_7
-    sget v2, Ly2/r;->Carousel_carousel_touchUp_velocityThreshold:I
+    sget v2, Ld1/r;->Carousel_carousel_touchUp_velocityThreshold:I
 
     .line 127
     .line 128
@@ -731,7 +748,7 @@
 
     .line 139
     :cond_8
-    sget v2, Ly2/r;->Carousel_carousel_infinite:I
+    sget v2, Ld1/r;->Carousel_carousel_infinite:I
 
     .line 140
     .line 141
@@ -772,5 +789,23 @@
     .line 157
     .line 158
     :cond_b
+    return-void
+.end method
+
+.method public setAdapter(LZ0/a;)V
+    .locals 0
+
+    .line 1
+    return-void
+.end method
+
+.method public setInfinite(Z)V
+    .locals 0
+
+    .line 1
+    iput-boolean p1, p0, Landroidx/constraintlayout/helper/widget/Carousel;->t:Z
+
+    .line 2
+    .line 3
     return-void
 .end method

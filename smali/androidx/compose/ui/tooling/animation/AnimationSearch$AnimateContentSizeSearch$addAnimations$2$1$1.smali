@@ -3,14 +3,14 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lzh/c;
+.implements Lka/c;
 
 
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "Lkotlin/jvm/internal/Lambda;",
-        "Lzh/c;"
+        "Lka/c;"
     }
 .end annotation
 
@@ -66,20 +66,22 @@
 
     move-result-object v0
 
+    .line 3
     const-string v1, "androidx.compose.animation.SizeAnimationModifierElement"
 
-    invoke-static {v0, v1}, Lrb/h;->d(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-virtual {v0, v1}, Ljava/lang/Object;->equals(Ljava/lang/Object;)Z
 
     move-result v0
 
     if-eqz v0, :cond_0
 
+    .line 4
     iget-object v0, p0, Landroidx/compose/ui/tooling/animation/AnimationSearch$AnimateContentSizeSearch$addAnimations$2$1$1;->this$0:Landroidx/compose/ui/tooling/animation/d;
 
-    .line 3
-    iget-object v0, v0, Landroidx/compose/ui/tooling/animation/m;->b:Ljava/util/LinkedHashSet;
+    .line 5
+    iget-object v0, v0, Landroidx/compose/ui/tooling/animation/i;->b:Ljava/util/LinkedHashSet;
 
-    .line 4
+    .line 6
     invoke-interface {v0, p1}, Ljava/util/Set;->add(Ljava/lang/Object;)Z
 
     const/4 p1, 0x1
@@ -89,7 +91,7 @@
     :cond_0
     const/4 p1, 0x0
 
-    .line 5
+    .line 7
     :goto_0
     invoke-static {p1}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
 

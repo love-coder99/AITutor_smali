@@ -1,12 +1,12 @@
 .class public final Landroidx/compose/foundation/text/modifiers/TextStringSimpleElement;
-.super Landroidx/compose/ui/node/w0;
+.super Landroidx/compose/ui/node/V;
 .source "SourceFile"
 
 
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
-        "Landroidx/compose/ui/node/w0;"
+        "Landroidx/compose/ui/node/V;"
     }
 .end annotation
 
@@ -16,8 +16,8 @@
     }
     d2 = {
         "Landroidx/compose/foundation/text/modifiers/TextStringSimpleElement;",
-        "Landroidx/compose/ui/node/w0;",
-        "Landroidx/compose/foundation/text/modifiers/k;",
+        "Landroidx/compose/ui/node/V;",
+        "Landroidx/compose/foundation/text/modifiers/j;",
         "foundation_release"
     }
     k = 0x1
@@ -26,29 +26,30 @@
         0x8,
         0x0
     }
+    xi = 0x30
 .end annotation
 
 
 # instance fields
-.field public final c:Ljava/lang/String;
+.field public final a:Ljava/lang/String;
 
-.field public final d:Landroidx/compose/ui/text/i0;
+.field public final b:Landroidx/compose/ui/text/I;
 
-.field public final e:Landroidx/compose/ui/text/font/l;
+.field public final c:Landroidx/compose/ui/text/font/j;
+
+.field public final d:I
+
+.field public final e:Z
 
 .field public final f:I
 
-.field public final g:Z
+.field public final g:I
 
-.field public final h:I
-
-.field public final i:I
-
-.field public final j:Landroidx/compose/ui/graphics/y;
+.field public final h:Landroidx/compose/ui/graphics/y;
 
 
 # direct methods
-.method public constructor <init>(Ljava/lang/String;Landroidx/compose/ui/text/i0;Landroidx/compose/ui/text/font/l;IZIILandroidx/compose/ui/graphics/y;)V
+.method public constructor <init>(Ljava/lang/String;Landroidx/compose/ui/text/I;Landroidx/compose/ui/text/font/j;IZIILandroidx/compose/ui/graphics/y;)V
     .locals 0
 
     .line 1
@@ -57,35 +58,35 @@
     .line 2
     .line 3
     .line 4
-    iput-object p1, p0, Landroidx/compose/foundation/text/modifiers/TextStringSimpleElement;->c:Ljava/lang/String;
+    iput-object p1, p0, Landroidx/compose/foundation/text/modifiers/TextStringSimpleElement;->a:Ljava/lang/String;
 
     .line 5
     .line 6
-    iput-object p2, p0, Landroidx/compose/foundation/text/modifiers/TextStringSimpleElement;->d:Landroidx/compose/ui/text/i0;
+    iput-object p2, p0, Landroidx/compose/foundation/text/modifiers/TextStringSimpleElement;->b:Landroidx/compose/ui/text/I;
 
     .line 7
     .line 8
-    iput-object p3, p0, Landroidx/compose/foundation/text/modifiers/TextStringSimpleElement;->e:Landroidx/compose/ui/text/font/l;
+    iput-object p3, p0, Landroidx/compose/foundation/text/modifiers/TextStringSimpleElement;->c:Landroidx/compose/ui/text/font/j;
 
     .line 9
     .line 10
-    iput p4, p0, Landroidx/compose/foundation/text/modifiers/TextStringSimpleElement;->f:I
+    iput p4, p0, Landroidx/compose/foundation/text/modifiers/TextStringSimpleElement;->d:I
 
     .line 11
     .line 12
-    iput-boolean p5, p0, Landroidx/compose/foundation/text/modifiers/TextStringSimpleElement;->g:Z
+    iput-boolean p5, p0, Landroidx/compose/foundation/text/modifiers/TextStringSimpleElement;->e:Z
 
     .line 13
     .line 14
-    iput p6, p0, Landroidx/compose/foundation/text/modifiers/TextStringSimpleElement;->h:I
+    iput p6, p0, Landroidx/compose/foundation/text/modifiers/TextStringSimpleElement;->f:I
 
     .line 15
     .line 16
-    iput p7, p0, Landroidx/compose/foundation/text/modifiers/TextStringSimpleElement;->i:I
+    iput p7, p0, Landroidx/compose/foundation/text/modifiers/TextStringSimpleElement;->g:I
 
     .line 17
     .line 18
-    iput-object p8, p0, Landroidx/compose/foundation/text/modifiers/TextStringSimpleElement;->j:Landroidx/compose/ui/graphics/y;
+    iput-object p8, p0, Landroidx/compose/foundation/text/modifiers/TextStringSimpleElement;->h:Landroidx/compose/ui/graphics/y;
 
     .line 19
     .line 20
@@ -128,15 +129,15 @@
 
     .line 12
     .line 13
-    iget-object v1, p1, Landroidx/compose/foundation/text/modifiers/TextStringSimpleElement;->j:Landroidx/compose/ui/graphics/y;
+    iget-object v1, p1, Landroidx/compose/foundation/text/modifiers/TextStringSimpleElement;->h:Landroidx/compose/ui/graphics/y;
 
     .line 14
     .line 15
-    iget-object v3, p0, Landroidx/compose/foundation/text/modifiers/TextStringSimpleElement;->j:Landroidx/compose/ui/graphics/y;
+    iget-object v3, p0, Landroidx/compose/foundation/text/modifiers/TextStringSimpleElement;->h:Landroidx/compose/ui/graphics/y;
 
     .line 16
     .line 17
-    invoke-static {v3, v1}, Lrb/h;->d(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v3, v1}, Lkotlin/jvm/internal/h;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     .line 18
     .line 19
@@ -152,15 +153,15 @@
 
     .line 24
     :cond_2
-    iget-object v1, p0, Landroidx/compose/foundation/text/modifiers/TextStringSimpleElement;->c:Ljava/lang/String;
+    iget-object v1, p0, Landroidx/compose/foundation/text/modifiers/TextStringSimpleElement;->a:Ljava/lang/String;
 
     .line 25
     .line 26
-    iget-object v3, p1, Landroidx/compose/foundation/text/modifiers/TextStringSimpleElement;->c:Ljava/lang/String;
+    iget-object v3, p1, Landroidx/compose/foundation/text/modifiers/TextStringSimpleElement;->a:Ljava/lang/String;
 
     .line 27
     .line 28
-    invoke-static {v1, v3}, Lrb/h;->d(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v1, v3}, Lkotlin/jvm/internal/h;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     .line 29
     .line 30
@@ -176,15 +177,15 @@
 
     .line 35
     :cond_3
-    iget-object v1, p0, Landroidx/compose/foundation/text/modifiers/TextStringSimpleElement;->d:Landroidx/compose/ui/text/i0;
+    iget-object v1, p0, Landroidx/compose/foundation/text/modifiers/TextStringSimpleElement;->b:Landroidx/compose/ui/text/I;
 
     .line 36
     .line 37
-    iget-object v3, p1, Landroidx/compose/foundation/text/modifiers/TextStringSimpleElement;->d:Landroidx/compose/ui/text/i0;
+    iget-object v3, p1, Landroidx/compose/foundation/text/modifiers/TextStringSimpleElement;->b:Landroidx/compose/ui/text/I;
 
     .line 38
     .line 39
-    invoke-static {v1, v3}, Lrb/h;->d(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v1, v3}, Lkotlin/jvm/internal/h;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     .line 40
     .line 41
@@ -200,15 +201,15 @@
 
     .line 46
     :cond_4
-    iget-object v1, p0, Landroidx/compose/foundation/text/modifiers/TextStringSimpleElement;->e:Landroidx/compose/ui/text/font/l;
+    iget-object v1, p0, Landroidx/compose/foundation/text/modifiers/TextStringSimpleElement;->c:Landroidx/compose/ui/text/font/j;
 
     .line 47
     .line 48
-    iget-object v3, p1, Landroidx/compose/foundation/text/modifiers/TextStringSimpleElement;->e:Landroidx/compose/ui/text/font/l;
+    iget-object v3, p1, Landroidx/compose/foundation/text/modifiers/TextStringSimpleElement;->c:Landroidx/compose/ui/text/font/j;
 
     .line 49
     .line 50
-    invoke-static {v1, v3}, Lrb/h;->d(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v1, v3}, Lkotlin/jvm/internal/h;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     .line 51
     .line 52
@@ -224,15 +225,15 @@
 
     .line 57
     :cond_5
-    iget v1, p0, Landroidx/compose/foundation/text/modifiers/TextStringSimpleElement;->f:I
+    iget v1, p0, Landroidx/compose/foundation/text/modifiers/TextStringSimpleElement;->d:I
 
     .line 58
     .line 59
-    iget v3, p1, Landroidx/compose/foundation/text/modifiers/TextStringSimpleElement;->f:I
+    iget v3, p1, Landroidx/compose/foundation/text/modifiers/TextStringSimpleElement;->d:I
 
     .line 60
     .line 61
-    invoke-static {v1, v3}, Lnc/b;->j(II)Z
+    invoke-static {v1, v3}, Lcom/facebook/appevents/cloudbridge/c;->j(II)Z
 
     .line 62
     .line 63
@@ -248,11 +249,11 @@
 
     .line 68
     :cond_6
-    iget-boolean v1, p0, Landroidx/compose/foundation/text/modifiers/TextStringSimpleElement;->g:Z
+    iget-boolean v1, p0, Landroidx/compose/foundation/text/modifiers/TextStringSimpleElement;->e:Z
 
     .line 69
     .line 70
-    iget-boolean v3, p1, Landroidx/compose/foundation/text/modifiers/TextStringSimpleElement;->g:Z
+    iget-boolean v3, p1, Landroidx/compose/foundation/text/modifiers/TextStringSimpleElement;->e:Z
 
     .line 71
     .line 72
@@ -264,11 +265,11 @@
 
     .line 75
     :cond_7
-    iget v1, p0, Landroidx/compose/foundation/text/modifiers/TextStringSimpleElement;->h:I
+    iget v1, p0, Landroidx/compose/foundation/text/modifiers/TextStringSimpleElement;->f:I
 
     .line 76
     .line 77
-    iget v3, p1, Landroidx/compose/foundation/text/modifiers/TextStringSimpleElement;->h:I
+    iget v3, p1, Landroidx/compose/foundation/text/modifiers/TextStringSimpleElement;->f:I
 
     .line 78
     .line 79
@@ -280,11 +281,11 @@
 
     .line 82
     :cond_8
-    iget v1, p0, Landroidx/compose/foundation/text/modifiers/TextStringSimpleElement;->i:I
+    iget v1, p0, Landroidx/compose/foundation/text/modifiers/TextStringSimpleElement;->g:I
 
     .line 83
     .line 84
-    iget p1, p1, Landroidx/compose/foundation/text/modifiers/TextStringSimpleElement;->i:I
+    iget p1, p1, Landroidx/compose/foundation/text/modifiers/TextStringSimpleElement;->g:I
 
     .line 85
     .line 86
@@ -303,7 +304,7 @@
     .locals 3
 
     .line 1
-    iget-object v0, p0, Landroidx/compose/foundation/text/modifiers/TextStringSimpleElement;->c:Ljava/lang/String;
+    iget-object v0, p0, Landroidx/compose/foundation/text/modifiers/TextStringSimpleElement;->a:Ljava/lang/String;
 
     .line 2
     .line 3
@@ -323,11 +324,11 @@
 
     .line 10
     .line 11
-    iget-object v2, p0, Landroidx/compose/foundation/text/modifiers/TextStringSimpleElement;->d:Landroidx/compose/ui/text/i0;
+    iget-object v2, p0, Landroidx/compose/foundation/text/modifiers/TextStringSimpleElement;->b:Landroidx/compose/ui/text/I;
 
     .line 12
     .line 13
-    invoke-static {v2, v0, v1}, Landroidx/compose/foundation/text/modifiers/f;->j(Landroidx/compose/ui/text/i0;II)I
+    invoke-static {v0, v1, v2}, Landroidx/appcompat/view/menu/F;->x(IILandroidx/compose/ui/text/I;)I
 
     .line 14
     .line 15
@@ -335,7 +336,7 @@
     move-result v0
 
     .line 17
-    iget-object v2, p0, Landroidx/compose/foundation/text/modifiers/TextStringSimpleElement;->e:Landroidx/compose/ui/text/font/l;
+    iget-object v2, p0, Landroidx/compose/foundation/text/modifiers/TextStringSimpleElement;->c:Landroidx/compose/ui/text/font/j;
 
     .line 18
     .line 19
@@ -354,7 +355,7 @@
 
     .line 25
     .line 26
-    iget v0, p0, Landroidx/compose/foundation/text/modifiers/TextStringSimpleElement;->f:I
+    iget v0, p0, Landroidx/compose/foundation/text/modifiers/TextStringSimpleElement;->d:I
 
     .line 27
     .line 28
@@ -365,7 +366,7 @@
 
     .line 30
     .line 31
-    iget-boolean v0, p0, Landroidx/compose/foundation/text/modifiers/TextStringSimpleElement;->g:Z
+    iget-boolean v0, p0, Landroidx/compose/foundation/text/modifiers/TextStringSimpleElement;->e:Z
 
     .line 32
     .line 33
@@ -393,7 +394,7 @@
 
     .line 42
     .line 43
-    iget v0, p0, Landroidx/compose/foundation/text/modifiers/TextStringSimpleElement;->h:I
+    iget v0, p0, Landroidx/compose/foundation/text/modifiers/TextStringSimpleElement;->f:I
 
     .line 44
     .line 45
@@ -404,7 +405,7 @@
 
     .line 47
     .line 48
-    iget v0, p0, Landroidx/compose/foundation/text/modifiers/TextStringSimpleElement;->i:I
+    iget v0, p0, Landroidx/compose/foundation/text/modifiers/TextStringSimpleElement;->g:I
 
     .line 49
     .line 50
@@ -415,7 +416,7 @@
 
     .line 52
     .line 53
-    iget-object v0, p0, Landroidx/compose/foundation/text/modifiers/TextStringSimpleElement;->j:Landroidx/compose/ui/graphics/y;
+    iget-object v0, p0, Landroidx/compose/foundation/text/modifiers/TextStringSimpleElement;->h:Landroidx/compose/ui/graphics/y;
 
     .line 54
     .line 55
@@ -449,7 +450,7 @@
     .locals 2
 
     .line 1
-    new-instance v0, Landroidx/compose/foundation/text/modifiers/k;
+    new-instance v0, Landroidx/compose/foundation/text/modifiers/j;
 
     .line 2
     .line 3
@@ -458,67 +459,67 @@
     .line 4
     .line 5
     .line 6
-    iget-object v1, p0, Landroidx/compose/foundation/text/modifiers/TextStringSimpleElement;->c:Ljava/lang/String;
+    iget-object v1, p0, Landroidx/compose/foundation/text/modifiers/TextStringSimpleElement;->a:Ljava/lang/String;
 
     .line 7
     .line 8
-    iput-object v1, v0, Landroidx/compose/foundation/text/modifiers/k;->p:Ljava/lang/String;
+    iput-object v1, v0, Landroidx/compose/foundation/text/modifiers/j;->p:Ljava/lang/String;
 
     .line 9
     .line 10
-    iget-object v1, p0, Landroidx/compose/foundation/text/modifiers/TextStringSimpleElement;->d:Landroidx/compose/ui/text/i0;
+    iget-object v1, p0, Landroidx/compose/foundation/text/modifiers/TextStringSimpleElement;->b:Landroidx/compose/ui/text/I;
 
     .line 11
     .line 12
-    iput-object v1, v0, Landroidx/compose/foundation/text/modifiers/k;->q:Landroidx/compose/ui/text/i0;
+    iput-object v1, v0, Landroidx/compose/foundation/text/modifiers/j;->q:Landroidx/compose/ui/text/I;
 
     .line 13
     .line 14
-    iget-object v1, p0, Landroidx/compose/foundation/text/modifiers/TextStringSimpleElement;->e:Landroidx/compose/ui/text/font/l;
+    iget-object v1, p0, Landroidx/compose/foundation/text/modifiers/TextStringSimpleElement;->c:Landroidx/compose/ui/text/font/j;
 
     .line 15
     .line 16
-    iput-object v1, v0, Landroidx/compose/foundation/text/modifiers/k;->r:Landroidx/compose/ui/text/font/l;
+    iput-object v1, v0, Landroidx/compose/foundation/text/modifiers/j;->r:Landroidx/compose/ui/text/font/j;
 
     .line 17
     .line 18
-    iget v1, p0, Landroidx/compose/foundation/text/modifiers/TextStringSimpleElement;->f:I
+    iget v1, p0, Landroidx/compose/foundation/text/modifiers/TextStringSimpleElement;->d:I
 
     .line 19
     .line 20
-    iput v1, v0, Landroidx/compose/foundation/text/modifiers/k;->s:I
+    iput v1, v0, Landroidx/compose/foundation/text/modifiers/j;->s:I
 
     .line 21
     .line 22
-    iget-boolean v1, p0, Landroidx/compose/foundation/text/modifiers/TextStringSimpleElement;->g:Z
+    iget-boolean v1, p0, Landroidx/compose/foundation/text/modifiers/TextStringSimpleElement;->e:Z
 
     .line 23
     .line 24
-    iput-boolean v1, v0, Landroidx/compose/foundation/text/modifiers/k;->t:Z
+    iput-boolean v1, v0, Landroidx/compose/foundation/text/modifiers/j;->t:Z
 
     .line 25
     .line 26
-    iget v1, p0, Landroidx/compose/foundation/text/modifiers/TextStringSimpleElement;->h:I
+    iget v1, p0, Landroidx/compose/foundation/text/modifiers/TextStringSimpleElement;->f:I
 
     .line 27
     .line 28
-    iput v1, v0, Landroidx/compose/foundation/text/modifiers/k;->u:I
+    iput v1, v0, Landroidx/compose/foundation/text/modifiers/j;->u:I
 
     .line 29
     .line 30
-    iget v1, p0, Landroidx/compose/foundation/text/modifiers/TextStringSimpleElement;->i:I
+    iget v1, p0, Landroidx/compose/foundation/text/modifiers/TextStringSimpleElement;->g:I
 
     .line 31
     .line 32
-    iput v1, v0, Landroidx/compose/foundation/text/modifiers/k;->v:I
+    iput v1, v0, Landroidx/compose/foundation/text/modifiers/j;->v:I
 
     .line 33
     .line 34
-    iget-object v1, p0, Landroidx/compose/foundation/text/modifiers/TextStringSimpleElement;->j:Landroidx/compose/ui/graphics/y;
+    iget-object v1, p0, Landroidx/compose/foundation/text/modifiers/TextStringSimpleElement;->h:Landroidx/compose/ui/graphics/y;
 
     .line 35
     .line 36
-    iput-object v1, v0, Landroidx/compose/foundation/text/modifiers/k;->w:Landroidx/compose/ui/graphics/y;
+    iput-object v1, v0, Landroidx/compose/foundation/text/modifiers/j;->w:Landroidx/compose/ui/graphics/y;
 
     .line 37
     .line 38
@@ -529,19 +530,19 @@
     .locals 13
 
     .line 1
-    check-cast p1, Landroidx/compose/foundation/text/modifiers/k;
+    check-cast p1, Landroidx/compose/foundation/text/modifiers/j;
 
     .line 2
     .line 3
-    iget-object v0, p1, Landroidx/compose/foundation/text/modifiers/k;->w:Landroidx/compose/ui/graphics/y;
+    iget-object v0, p1, Landroidx/compose/foundation/text/modifiers/j;->w:Landroidx/compose/ui/graphics/y;
 
     .line 4
     .line 5
-    iget-object v1, p0, Landroidx/compose/foundation/text/modifiers/TextStringSimpleElement;->j:Landroidx/compose/ui/graphics/y;
+    iget-object v1, p0, Landroidx/compose/foundation/text/modifiers/TextStringSimpleElement;->h:Landroidx/compose/ui/graphics/y;
 
     .line 6
     .line 7
-    invoke-static {v1, v0}, Lrb/h;->d(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v1, v0}, Lkotlin/jvm/internal/h;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     .line 8
     .line 9
@@ -549,446 +550,443 @@
     move-result v0
 
     .line 11
-    const/4 v2, 0x1
+    iput-object v1, p1, Landroidx/compose/foundation/text/modifiers/j;->w:Landroidx/compose/ui/graphics/y;
 
     .line 12
-    xor-int/2addr v0, v2
-
     .line 13
-    iput-object v1, p1, Landroidx/compose/foundation/text/modifiers/k;->w:Landroidx/compose/ui/graphics/y;
-
-    .line 14
-    .line 15
     const/4 v1, 0x0
 
+    .line 14
+    const/4 v2, 0x1
+
+    .line 15
+    iget-object v3, p0, Landroidx/compose/foundation/text/modifiers/TextStringSimpleElement;->b:Landroidx/compose/ui/text/I;
+
     .line 16
-    iget-object v3, p0, Landroidx/compose/foundation/text/modifiers/TextStringSimpleElement;->d:Landroidx/compose/ui/text/i0;
-
     .line 17
-    .line 18
-    if-nez v0, :cond_1
-
-    .line 19
-    .line 20
-    iget-object v0, p1, Landroidx/compose/foundation/text/modifiers/k;->q:Landroidx/compose/ui/text/i0;
-
-    .line 21
-    .line 22
-    if-eq v3, v0, :cond_0
-
-    .line 23
-    .line 24
-    iget-object v4, v3, Landroidx/compose/ui/text/i0;->a:Landroidx/compose/ui/text/a0;
-
-    .line 25
-    .line 26
-    iget-object v0, v0, Landroidx/compose/ui/text/i0;->a:Landroidx/compose/ui/text/a0;
-
-    .line 27
-    .line 28
-    invoke-virtual {v4, v0}, Landroidx/compose/ui/text/a0;->b(Landroidx/compose/ui/text/a0;)Z
-
-    .line 29
-    .line 30
-    .line 31
-    move-result v0
-
-    .line 32
     if-eqz v0, :cond_1
 
+    .line 18
+    .line 19
+    iget-object v0, p1, Landroidx/compose/foundation/text/modifiers/j;->q:Landroidx/compose/ui/text/I;
+
+    .line 20
+    .line 21
+    if-eq v3, v0, :cond_0
+
+    .line 22
+    .line 23
+    iget-object v4, v3, Landroidx/compose/ui/text/I;->a:Landroidx/compose/ui/text/A;
+
+    .line 24
+    .line 25
+    iget-object v0, v0, Landroidx/compose/ui/text/I;->a:Landroidx/compose/ui/text/A;
+
+    .line 26
+    .line 27
+    invoke-virtual {v4, v0}, Landroidx/compose/ui/text/A;->b(Landroidx/compose/ui/text/A;)Z
+
+    .line 28
+    .line 29
+    .line 30
+    move-result v0
+
+    .line 31
+    if-eqz v0, :cond_1
+
+    .line 32
     .line 33
-    .line 34
     goto :goto_0
 
-    .line 35
+    .line 34
     :cond_0
     invoke-virtual {v3}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
+    .line 35
     .line 36
     .line 37
-    .line 38
     :goto_0
     const/4 v0, 0x0
 
-    .line 39
+    .line 38
     goto :goto_1
 
-    .line 40
+    .line 39
     :cond_1
     const/4 v0, 0x1
 
-    .line 41
+    .line 40
     :goto_1
-    iget-object v4, p1, Landroidx/compose/foundation/text/modifiers/k;->p:Ljava/lang/String;
+    iget-object v4, p1, Landroidx/compose/foundation/text/modifiers/j;->p:Ljava/lang/String;
 
+    .line 41
     .line 42
+    iget-object v5, p0, Landroidx/compose/foundation/text/modifiers/TextStringSimpleElement;->a:Ljava/lang/String;
+
     .line 43
-    iget-object v5, p0, Landroidx/compose/foundation/text/modifiers/TextStringSimpleElement;->c:Ljava/lang/String;
-
     .line 44
-    .line 45
-    invoke-static {v4, v5}, Lrb/h;->d(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v4, v5}, Lkotlin/jvm/internal/h;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
 
+    .line 45
     .line 46
     .line 47
-    .line 48
     move-result v4
 
-    .line 49
+    .line 48
     const/4 v6, 0x0
 
-    .line 50
+    .line 49
     if-eqz v4, :cond_2
 
+    .line 50
     .line 51
-    .line 52
     const/4 v4, 0x0
 
-    .line 53
+    .line 52
     goto :goto_2
 
-    .line 54
+    .line 53
     :cond_2
-    iput-object v5, p1, Landroidx/compose/foundation/text/modifiers/k;->p:Ljava/lang/String;
+    iput-object v5, p1, Landroidx/compose/foundation/text/modifiers/j;->p:Ljava/lang/String;
 
+    .line 54
     .line 55
-    .line 56
-    iput-object v6, p1, Landroidx/compose/foundation/text/modifiers/k;->A:Landroidx/compose/foundation/text/modifiers/j;
+    iput-object v6, p1, Landroidx/compose/foundation/text/modifiers/j;->A:Landroidx/compose/foundation/text/modifiers/i;
 
+    .line 56
     .line 57
-    .line 58
     const/4 v4, 0x1
 
-    .line 59
+    .line 58
     :goto_2
-    iget-object v5, p1, Landroidx/compose/foundation/text/modifiers/k;->q:Landroidx/compose/ui/text/i0;
+    iget-object v5, p1, Landroidx/compose/foundation/text/modifiers/j;->q:Landroidx/compose/ui/text/I;
 
+    .line 59
     .line 60
-    .line 61
-    invoke-virtual {v5, v3}, Landroidx/compose/ui/text/i0;->c(Landroidx/compose/ui/text/i0;)Z
+    invoke-virtual {v5, v3}, Landroidx/compose/ui/text/I;->c(Landroidx/compose/ui/text/I;)Z
 
+    .line 61
     .line 62
     .line 63
-    .line 64
     move-result v5
 
-    .line 65
+    .line 64
     xor-int/2addr v5, v2
 
+    .line 65
+    iput-object v3, p1, Landroidx/compose/foundation/text/modifiers/j;->q:Landroidx/compose/ui/text/I;
+
     .line 66
-    iput-object v3, p1, Landroidx/compose/foundation/text/modifiers/k;->q:Landroidx/compose/ui/text/i0;
-
     .line 67
+    iget v3, p1, Landroidx/compose/foundation/text/modifiers/j;->v:I
+
     .line 68
-    iget v3, p1, Landroidx/compose/foundation/text/modifiers/k;->v:I
-
     .line 69
-    .line 70
-    iget v7, p0, Landroidx/compose/foundation/text/modifiers/TextStringSimpleElement;->i:I
+    iget v7, p0, Landroidx/compose/foundation/text/modifiers/TextStringSimpleElement;->g:I
 
+    .line 70
     .line 71
-    .line 72
     if-eq v3, v7, :cond_3
 
+    .line 72
     .line 73
-    .line 74
-    iput v7, p1, Landroidx/compose/foundation/text/modifiers/k;->v:I
+    iput v7, p1, Landroidx/compose/foundation/text/modifiers/j;->v:I
 
+    .line 74
     .line 75
-    .line 76
     const/4 v5, 0x1
+
+    .line 76
+    :cond_3
+    iget v3, p1, Landroidx/compose/foundation/text/modifiers/j;->u:I
 
     .line 77
-    :cond_3
-    iget v3, p1, Landroidx/compose/foundation/text/modifiers/k;->u:I
-
     .line 78
-    .line 79
-    iget v7, p0, Landroidx/compose/foundation/text/modifiers/TextStringSimpleElement;->h:I
-
-    .line 80
-    .line 81
-    if-eq v3, v7, :cond_4
-
-    .line 82
-    .line 83
-    iput v7, p1, Landroidx/compose/foundation/text/modifiers/k;->u:I
-
-    .line 84
-    .line 85
-    const/4 v5, 0x1
-
-    .line 86
-    :cond_4
-    iget-boolean v3, p1, Landroidx/compose/foundation/text/modifiers/k;->t:Z
-
-    .line 87
-    .line 88
-    iget-boolean v7, p0, Landroidx/compose/foundation/text/modifiers/TextStringSimpleElement;->g:Z
-
-    .line 89
-    .line 90
-    if-eq v3, v7, :cond_5
-
-    .line 91
-    .line 92
-    iput-boolean v7, p1, Landroidx/compose/foundation/text/modifiers/k;->t:Z
-
-    .line 93
-    .line 94
-    const/4 v5, 0x1
-
-    .line 95
-    :cond_5
-    iget-object v3, p1, Landroidx/compose/foundation/text/modifiers/k;->r:Landroidx/compose/ui/text/font/l;
-
-    .line 96
-    .line 97
-    iget-object v7, p0, Landroidx/compose/foundation/text/modifiers/TextStringSimpleElement;->e:Landroidx/compose/ui/text/font/l;
-
-    .line 98
-    .line 99
-    invoke-static {v3, v7}, Lrb/h;->d(Ljava/lang/Object;Ljava/lang/Object;)Z
-
-    .line 100
-    .line 101
-    .line 102
-    move-result v3
-
-    .line 103
-    if-nez v3, :cond_6
-
-    .line 104
-    .line 105
-    iput-object v7, p1, Landroidx/compose/foundation/text/modifiers/k;->r:Landroidx/compose/ui/text/font/l;
-
-    .line 106
-    .line 107
-    const/4 v5, 0x1
-
-    .line 108
-    :cond_6
-    iget v3, p1, Landroidx/compose/foundation/text/modifiers/k;->s:I
-
-    .line 109
-    .line 110
     iget v7, p0, Landroidx/compose/foundation/text/modifiers/TextStringSimpleElement;->f:I
 
-    .line 111
-    .line 112
-    invoke-static {v3, v7}, Lnc/b;->j(II)Z
+    .line 79
+    .line 80
+    if-eq v3, v7, :cond_4
 
-    .line 113
-    .line 114
-    .line 115
+    .line 81
+    .line 82
+    iput v7, p1, Landroidx/compose/foundation/text/modifiers/j;->u:I
+
+    .line 83
+    .line 84
+    const/4 v5, 0x1
+
+    .line 85
+    :cond_4
+    iget-boolean v3, p1, Landroidx/compose/foundation/text/modifiers/j;->t:Z
+
+    .line 86
+    .line 87
+    iget-boolean v7, p0, Landroidx/compose/foundation/text/modifiers/TextStringSimpleElement;->e:Z
+
+    .line 88
+    .line 89
+    if-eq v3, v7, :cond_5
+
+    .line 90
+    .line 91
+    iput-boolean v7, p1, Landroidx/compose/foundation/text/modifiers/j;->t:Z
+
+    .line 92
+    .line 93
+    const/4 v5, 0x1
+
+    .line 94
+    :cond_5
+    iget-object v3, p1, Landroidx/compose/foundation/text/modifiers/j;->r:Landroidx/compose/ui/text/font/j;
+
+    .line 95
+    .line 96
+    iget-object v7, p0, Landroidx/compose/foundation/text/modifiers/TextStringSimpleElement;->c:Landroidx/compose/ui/text/font/j;
+
+    .line 97
+    .line 98
+    invoke-static {v3, v7}, Lkotlin/jvm/internal/h;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
+
+    .line 99
+    .line 100
+    .line 101
     move-result v3
 
-    .line 116
+    .line 102
+    if-nez v3, :cond_6
+
+    .line 103
+    .line 104
+    iput-object v7, p1, Landroidx/compose/foundation/text/modifiers/j;->r:Landroidx/compose/ui/text/font/j;
+
+    .line 105
+    .line 106
+    const/4 v5, 0x1
+
+    .line 107
+    :cond_6
+    iget v3, p1, Landroidx/compose/foundation/text/modifiers/j;->s:I
+
+    .line 108
+    .line 109
+    iget v7, p0, Landroidx/compose/foundation/text/modifiers/TextStringSimpleElement;->d:I
+
+    .line 110
+    .line 111
+    invoke-static {v3, v7}, Lcom/facebook/appevents/cloudbridge/c;->j(II)Z
+
+    .line 112
+    .line 113
+    .line 114
+    move-result v3
+
+    .line 115
     if-nez v3, :cond_7
 
+    .line 116
     .line 117
-    .line 118
-    iput v7, p1, Landroidx/compose/foundation/text/modifiers/k;->s:I
+    iput v7, p1, Landroidx/compose/foundation/text/modifiers/j;->s:I
 
+    .line 118
     .line 119
-    .line 120
     goto :goto_3
 
-    .line 121
+    .line 120
     :cond_7
     move v2, v5
 
-    .line 122
+    .line 121
     :goto_3
     if-nez v4, :cond_8
 
+    .line 122
     .line 123
-    .line 124
     if-eqz v2, :cond_9
 
+    .line 124
     .line 125
-    .line 126
     :cond_8
-    invoke-virtual {p1}, Landroidx/compose/foundation/text/modifiers/k;->A0()Landroidx/compose/foundation/text/modifiers/e;
+    invoke-virtual {p1}, Landroidx/compose/foundation/text/modifiers/j;->y0()Landroidx/compose/foundation/text/modifiers/e;
 
+    .line 126
     .line 127
     .line 128
-    .line 129
     move-result-object v3
 
+    .line 129
+    iget-object v5, p1, Landroidx/compose/foundation/text/modifiers/j;->p:Ljava/lang/String;
+
     .line 130
-    iget-object v5, p1, Landroidx/compose/foundation/text/modifiers/k;->p:Ljava/lang/String;
-
     .line 131
+    iget-object v7, p1, Landroidx/compose/foundation/text/modifiers/j;->q:Landroidx/compose/ui/text/I;
+
     .line 132
-    iget-object v7, p1, Landroidx/compose/foundation/text/modifiers/k;->q:Landroidx/compose/ui/text/i0;
-
     .line 133
+    iget-object v8, p1, Landroidx/compose/foundation/text/modifiers/j;->r:Landroidx/compose/ui/text/font/j;
+
     .line 134
-    iget-object v8, p1, Landroidx/compose/foundation/text/modifiers/k;->r:Landroidx/compose/ui/text/font/l;
-
     .line 135
+    iget v9, p1, Landroidx/compose/foundation/text/modifiers/j;->s:I
+
     .line 136
-    iget v9, p1, Landroidx/compose/foundation/text/modifiers/k;->s:I
-
     .line 137
+    iget-boolean v10, p1, Landroidx/compose/foundation/text/modifiers/j;->t:Z
+
     .line 138
-    iget-boolean v10, p1, Landroidx/compose/foundation/text/modifiers/k;->t:Z
-
     .line 139
+    iget v11, p1, Landroidx/compose/foundation/text/modifiers/j;->u:I
+
     .line 140
-    iget v11, p1, Landroidx/compose/foundation/text/modifiers/k;->u:I
-
     .line 141
-    .line 142
-    iget v12, p1, Landroidx/compose/foundation/text/modifiers/k;->v:I
+    iget v12, p1, Landroidx/compose/foundation/text/modifiers/j;->v:I
 
+    .line 142
     .line 143
-    .line 144
     iput-object v5, v3, Landroidx/compose/foundation/text/modifiers/e;->a:Ljava/lang/String;
 
+    .line 144
     .line 145
+    iput-object v7, v3, Landroidx/compose/foundation/text/modifiers/e;->b:Landroidx/compose/ui/text/I;
+
     .line 146
-    iput-object v7, v3, Landroidx/compose/foundation/text/modifiers/e;->b:Landroidx/compose/ui/text/i0;
-
     .line 147
-    .line 148
-    iput-object v8, v3, Landroidx/compose/foundation/text/modifiers/e;->c:Landroidx/compose/ui/text/font/l;
+    iput-object v8, v3, Landroidx/compose/foundation/text/modifiers/e;->c:Landroidx/compose/ui/text/font/j;
 
+    .line 148
     .line 149
-    .line 150
     iput v9, v3, Landroidx/compose/foundation/text/modifiers/e;->d:I
 
+    .line 150
     .line 151
-    .line 152
     iput-boolean v10, v3, Landroidx/compose/foundation/text/modifiers/e;->e:Z
 
+    .line 152
     .line 153
-    .line 154
     iput v11, v3, Landroidx/compose/foundation/text/modifiers/e;->f:I
 
+    .line 154
     .line 155
-    .line 156
     iput v12, v3, Landroidx/compose/foundation/text/modifiers/e;->g:I
 
+    .line 156
     .line 157
-    .line 158
     iput-object v6, v3, Landroidx/compose/foundation/text/modifiers/e;->j:Landroidx/compose/ui/text/b;
 
+    .line 158
     .line 159
-    .line 160
     iput-object v6, v3, Landroidx/compose/foundation/text/modifiers/e;->n:Landroidx/compose/ui/text/q;
 
+    .line 160
     .line 161
-    .line 162
     iput-object v6, v3, Landroidx/compose/foundation/text/modifiers/e;->o:Landroidx/compose/ui/unit/LayoutDirection;
 
+    .line 162
     .line 163
-    .line 164
     const/4 v5, -0x1
 
-    .line 165
+    .line 164
     iput v5, v3, Landroidx/compose/foundation/text/modifiers/e;->q:I
 
+    .line 165
     .line 166
-    .line 167
     iput v5, v3, Landroidx/compose/foundation/text/modifiers/e;->r:I
 
+    .line 167
     .line 168
-    .line 169
-    invoke-static {v1, v1}, Landroidx/compose/ui/text/input/n;->f(II)J
+    invoke-static {v1, v1, v1, v1}, LP5/f;->l(IIII)J
 
+    .line 169
     .line 170
     .line 171
-    .line 172
     move-result-wide v5
 
-    .line 173
+    .line 172
     iput-wide v5, v3, Landroidx/compose/foundation/text/modifiers/e;->p:J
 
+    .line 173
     .line 174
-    .line 175
-    invoke-static {v1, v1}, Lv5/a;->b(II)J
+    invoke-static {v1, v1}, Lc4/s;->a(II)J
 
+    .line 175
     .line 176
     .line 177
-    .line 178
     move-result-wide v5
 
-    .line 179
+    .line 178
     iput-wide v5, v3, Landroidx/compose/foundation/text/modifiers/e;->l:J
 
+    .line 179
     .line 180
-    .line 181
     iput-boolean v1, v3, Landroidx/compose/foundation/text/modifiers/e;->k:Z
 
+    .line 181
     .line 182
-    .line 183
     :cond_9
     iget-boolean v1, p1, Landroidx/compose/ui/n;->o:Z
 
+    .line 183
     .line 184
-    .line 185
     if-nez v1, :cond_a
 
+    .line 185
     .line 186
-    .line 187
     goto :goto_4
 
-    .line 188
+    .line 187
     :cond_a
     if-nez v4, :cond_b
 
+    .line 188
     .line 189
-    .line 190
     if-eqz v0, :cond_c
 
+    .line 190
     .line 191
-    .line 192
-    iget-object v1, p1, Landroidx/compose/foundation/text/modifiers/k;->z:Lzh/c;
+    iget-object v1, p1, Landroidx/compose/foundation/text/modifiers/j;->z:Lka/c;
 
+    .line 192
     .line 193
-    .line 194
     if-eqz v1, :cond_c
 
+    .line 194
     .line 195
-    .line 196
     :cond_b
-    invoke-static {p1}, Lcom/google/android/play/core/appupdate/b;->C(Landroidx/compose/ui/node/v1;)V
+    invoke-static {p1}, LT6/b;->x(Landroidx/compose/ui/node/p0;)V
 
+    .line 196
     .line 197
     .line 198
-    .line 199
     :cond_c
     if-nez v4, :cond_d
 
+    .line 199
     .line 200
-    .line 201
     if-eqz v2, :cond_e
 
+    .line 201
     .line 202
-    .line 203
     :cond_d
-    invoke-static {p1}, Lcom/google/android/play/core/appupdate/b;->B(Landroidx/compose/ui/node/y;)V
+    invoke-static {p1}, Landroidx/datastore/preferences/protobuf/y0;->l(Landroidx/compose/ui/node/v;)V
 
+    .line 203
     .line 204
     .line 205
-    .line 206
-    invoke-static {p1}, Lcom/google/android/play/core/appupdate/b;->A(Landroidx/compose/ui/node/o;)V
+    invoke-static {p1}, LE/p;->v(Landroidx/compose/ui/node/m;)V
 
+    .line 206
     .line 207
     .line 208
-    .line 209
     :cond_e
     if-eqz v0, :cond_f
 
+    .line 209
     .line 210
-    .line 211
-    invoke-static {p1}, Lcom/google/android/play/core/appupdate/b;->A(Landroidx/compose/ui/node/o;)V
+    invoke-static {p1}, LE/p;->v(Landroidx/compose/ui/node/m;)V
 
+    .line 211
     .line 212
     .line 213
-    .line 214
     :cond_f
     :goto_4
     return-void

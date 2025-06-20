@@ -1,3 +1,0 @@
-.class public final Lt8/a;
-.super Ljava/lang/Object;
-.source "SourceFile"

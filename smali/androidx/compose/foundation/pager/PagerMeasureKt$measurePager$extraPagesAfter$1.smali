@@ -3,14 +3,14 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lzh/c;
+.implements Lka/c;
 
 
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "Lkotlin/jvm/internal/Lambda;",
-        "Lzh/c;"
+        "Lka/c;"
     }
 .end annotation
 
@@ -44,11 +44,11 @@
 
 .field final synthetic $pageAvailableSize:I
 
-.field final synthetic $pagerItemProvider:Landroidx/compose/foundation/pager/n;
+.field final synthetic $pagerItemProvider:Landroidx/compose/foundation/pager/k;
 
 .field final synthetic $reverseLayout:Z
 
-.field final synthetic $this_measurePager:Landroidx/compose/foundation/lazy/layout/e0;
+.field final synthetic $this_measurePager:Landroidx/compose/foundation/lazy/layout/D;
 
 .field final synthetic $verticalAlignment:Landroidx/compose/ui/d;
 
@@ -56,14 +56,14 @@
 
 
 # direct methods
-.method public constructor <init>(Landroidx/compose/foundation/lazy/layout/e0;JLandroidx/compose/foundation/pager/n;JLandroidx/compose/foundation/gestures/Orientation;Landroidx/compose/ui/c;Landroidx/compose/ui/d;ZI)V
+.method public constructor <init>(Landroidx/compose/foundation/lazy/layout/D;JLandroidx/compose/foundation/pager/k;JLandroidx/compose/foundation/gestures/Orientation;Landroidx/compose/ui/c;Landroidx/compose/ui/d;ZI)V
     .locals 0
 
-    iput-object p1, p0, Landroidx/compose/foundation/pager/PagerMeasureKt$measurePager$extraPagesAfter$1;->$this_measurePager:Landroidx/compose/foundation/lazy/layout/e0;
+    iput-object p1, p0, Landroidx/compose/foundation/pager/PagerMeasureKt$measurePager$extraPagesAfter$1;->$this_measurePager:Landroidx/compose/foundation/lazy/layout/D;
 
     iput-wide p2, p0, Landroidx/compose/foundation/pager/PagerMeasureKt$measurePager$extraPagesAfter$1;->$childConstraints:J
 
-    iput-object p4, p0, Landroidx/compose/foundation/pager/PagerMeasureKt$measurePager$extraPagesAfter$1;->$pagerItemProvider:Landroidx/compose/foundation/pager/n;
+    iput-object p4, p0, Landroidx/compose/foundation/pager/PagerMeasureKt$measurePager$extraPagesAfter$1;->$pagerItemProvider:Landroidx/compose/foundation/pager/k;
 
     iput-wide p5, p0, Landroidx/compose/foundation/pager/PagerMeasureKt$measurePager$extraPagesAfter$1;->$visualPageOffset:J
 
@@ -89,40 +89,50 @@
 .method public final invoke(I)Landroidx/compose/foundation/pager/d;
     .locals 13
 
-    iget-object v0, p0, Landroidx/compose/foundation/pager/PagerMeasureKt$measurePager$extraPagesAfter$1;->$this_measurePager:Landroidx/compose/foundation/lazy/layout/e0;
+    .line 2
+    iget-object v0, p0, Landroidx/compose/foundation/pager/PagerMeasureKt$measurePager$extraPagesAfter$1;->$this_measurePager:Landroidx/compose/foundation/lazy/layout/D;
 
+    .line 3
     iget-wide v2, p0, Landroidx/compose/foundation/pager/PagerMeasureKt$measurePager$extraPagesAfter$1;->$childConstraints:J
 
-    iget-object v4, p0, Landroidx/compose/foundation/pager/PagerMeasureKt$measurePager$extraPagesAfter$1;->$pagerItemProvider:Landroidx/compose/foundation/pager/n;
+    .line 4
+    iget-object v4, p0, Landroidx/compose/foundation/pager/PagerMeasureKt$measurePager$extraPagesAfter$1;->$pagerItemProvider:Landroidx/compose/foundation/pager/k;
 
+    .line 5
     iget-wide v5, p0, Landroidx/compose/foundation/pager/PagerMeasureKt$measurePager$extraPagesAfter$1;->$visualPageOffset:J
 
+    .line 6
     iget-object v7, p0, Landroidx/compose/foundation/pager/PagerMeasureKt$measurePager$extraPagesAfter$1;->$orientation:Landroidx/compose/foundation/gestures/Orientation;
 
+    .line 7
     iget-object v8, p0, Landroidx/compose/foundation/pager/PagerMeasureKt$measurePager$extraPagesAfter$1;->$horizontalAlignment:Landroidx/compose/ui/c;
 
+    .line 8
     iget-object v9, p0, Landroidx/compose/foundation/pager/PagerMeasureKt$measurePager$extraPagesAfter$1;->$verticalAlignment:Landroidx/compose/ui/d;
 
+    .line 9
     move-object v1, v0
 
-    check-cast v1, Landroidx/compose/foundation/lazy/layout/f0;
+    check-cast v1, Landroidx/compose/foundation/lazy/layout/E;
 
-    .line 1
-    iget-object v1, v1, Landroidx/compose/foundation/lazy/layout/f0;->c:Landroidx/compose/ui/layout/i1;
+    .line 10
+    iget-object v1, v1, Landroidx/compose/foundation/lazy/layout/E;->c:Landroidx/compose/ui/layout/e0;
 
-    .line 2
-    invoke-interface {v1}, Landroidx/compose/ui/layout/p;->getLayoutDirection()Landroidx/compose/ui/unit/LayoutDirection;
+    .line 11
+    invoke-interface {v1}, Landroidx/compose/ui/layout/m;->getLayoutDirection()Landroidx/compose/ui/unit/LayoutDirection;
 
     move-result-object v10
 
+    .line 12
     iget-boolean v11, p0, Landroidx/compose/foundation/pager/PagerMeasureKt$measurePager$extraPagesAfter$1;->$reverseLayout:Z
 
+    .line 13
     iget v12, p0, Landroidx/compose/foundation/pager/PagerMeasureKt$measurePager$extraPagesAfter$1;->$pageAvailableSize:I
 
     move v1, p1
 
-    .line 3
-    invoke-static/range {v0 .. v12}, Landroidx/compose/foundation/pager/c;->c(Landroidx/compose/foundation/lazy/layout/e0;IJLandroidx/compose/foundation/pager/n;JLandroidx/compose/foundation/gestures/Orientation;Landroidx/compose/ui/c;Landroidx/compose/ui/d;Landroidx/compose/ui/unit/LayoutDirection;ZI)Landroidx/compose/foundation/pager/d;
+    .line 14
+    invoke-static/range {v0 .. v12}, Landroidx/compose/foundation/pager/c;->c(Landroidx/compose/foundation/lazy/layout/D;IJLandroidx/compose/foundation/pager/k;JLandroidx/compose/foundation/gestures/Orientation;Landroidx/compose/ui/c;Landroidx/compose/ui/d;Landroidx/compose/ui/unit/LayoutDirection;ZI)Landroidx/compose/foundation/pager/d;
 
     move-result-object p1
 
@@ -132,7 +142,7 @@
 .method public bridge synthetic invoke(Ljava/lang/Object;)Ljava/lang/Object;
     .locals 0
 
-    .line 4
+    .line 1
     check-cast p1, Ljava/lang/Number;
 
     invoke-virtual {p1}, Ljava/lang/Number;->intValue()I

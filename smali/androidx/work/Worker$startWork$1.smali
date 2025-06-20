@@ -3,12 +3,12 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lzh/a;
+.implements Lka/a;
 
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Landroidx/work/Worker;->startWork()Lcom/google/common/util/concurrent/c;
+    value = Landroidx/work/Worker;->startWork()Lcom/google/common/util/concurrent/d;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -19,7 +19,7 @@
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "Lkotlin/jvm/internal/Lambda;",
-        "Lzh/a;"
+        "Lka/a;"
     }
 .end annotation
 
@@ -64,9 +64,9 @@
 .method public final invoke()Landroidx/work/s;
     .locals 1
 
+    .line 1
     iget-object v0, p0, Landroidx/work/Worker$startWork$1;->this$0:Landroidx/work/Worker;
 
-    .line 1
     invoke-virtual {v0}, Landroidx/work/Worker;->doWork()Landroidx/work/s;
 
     move-result-object v0

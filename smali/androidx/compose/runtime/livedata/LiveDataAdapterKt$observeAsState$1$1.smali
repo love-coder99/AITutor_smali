@@ -3,14 +3,14 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lzh/c;
+.implements Lka/c;
 
 
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "Lkotlin/jvm/internal/Lambda;",
-        "Lzh/c;"
+        "Lka/c;"
     }
 .end annotation
 
@@ -21,10 +21,10 @@
     d2 = {
         "R",
         "T",
-        "Landroidx/compose/runtime/p0;",
-        "Landroidx/compose/runtime/o0;",
+        "Landroidx/compose/runtime/H;",
+        "Landroidx/compose/runtime/G;",
         "invoke",
-        "(Landroidx/compose/runtime/p0;)Landroidx/compose/runtime/o0;",
+        "(Landroidx/compose/runtime/H;)Landroidx/compose/runtime/G;",
         "<anonymous>"
     }
     k = 0x3
@@ -37,43 +37,43 @@
 
 
 # instance fields
-.field final synthetic $lifecycleOwner:Landroidx/lifecycle/w;
+.field final synthetic $lifecycleOwner:Landroidx/lifecycle/x;
 
-.field final synthetic $state:Landroidx/compose/runtime/j1;
+.field final synthetic $state:Landroidx/compose/runtime/Z;
     .annotation system Ldalvik/annotation/Signature;
         value = {
-            "Landroidx/compose/runtime/j1;"
+            "Landroidx/compose/runtime/Z;"
         }
     .end annotation
 .end field
 
-.field final synthetic $this_observeAsState:Landroidx/lifecycle/e0;
+.field final synthetic $this_observeAsState:Landroidx/lifecycle/G;
     .annotation system Ldalvik/annotation/Signature;
         value = {
-            "Landroidx/lifecycle/e0;"
+            "Landroidx/lifecycle/G;"
         }
     .end annotation
 .end field
 
 
 # direct methods
-.method public constructor <init>(Landroidx/lifecycle/e0;Landroidx/lifecycle/w;Landroidx/compose/runtime/j1;)V
+.method public constructor <init>(Landroidx/lifecycle/G;Landroidx/lifecycle/x;Landroidx/compose/runtime/Z;)V
     .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
-            "Landroidx/lifecycle/e0;",
-            "Landroidx/lifecycle/w;",
-            "Landroidx/compose/runtime/j1;",
+            "Landroidx/lifecycle/G;",
+            "Landroidx/lifecycle/x;",
+            "Landroidx/compose/runtime/Z;",
             ")V"
         }
     .end annotation
 
-    iput-object p1, p0, Landroidx/compose/runtime/livedata/LiveDataAdapterKt$observeAsState$1$1;->$this_observeAsState:Landroidx/lifecycle/e0;
+    iput-object p1, p0, Landroidx/compose/runtime/livedata/LiveDataAdapterKt$observeAsState$1$1;->$this_observeAsState:Landroidx/lifecycle/G;
 
-    iput-object p2, p0, Landroidx/compose/runtime/livedata/LiveDataAdapterKt$observeAsState$1$1;->$lifecycleOwner:Landroidx/lifecycle/w;
+    iput-object p2, p0, Landroidx/compose/runtime/livedata/LiveDataAdapterKt$observeAsState$1$1;->$lifecycleOwner:Landroidx/lifecycle/x;
 
-    iput-object p3, p0, Landroidx/compose/runtime/livedata/LiveDataAdapterKt$observeAsState$1$1;->$state:Landroidx/compose/runtime/j1;
+    iput-object p3, p0, Landroidx/compose/runtime/livedata/LiveDataAdapterKt$observeAsState$1$1;->$state:Landroidx/compose/runtime/Z;
 
     const/4 p1, 0x1
 
@@ -84,31 +84,34 @@
 
 
 # virtual methods
-.method public final invoke(Landroidx/compose/runtime/p0;)Landroidx/compose/runtime/o0;
+.method public final invoke(Landroidx/compose/runtime/H;)Landroidx/compose/runtime/G;
     .locals 3
 
-    iget-object p1, p0, Landroidx/compose/runtime/livedata/LiveDataAdapterKt$observeAsState$1$1;->$state:Landroidx/compose/runtime/j1;
-
     .line 2
-    new-instance v0, Landroidx/compose/runtime/livedata/a;
+    iget-object p1, p0, Landroidx/compose/runtime/livedata/LiveDataAdapterKt$observeAsState$1$1;->$state:Landroidx/compose/runtime/Z;
 
-    invoke-direct {v0, p1}, Landroidx/compose/runtime/livedata/a;-><init>(Landroidx/compose/runtime/j1;)V
+    new-instance v0, LZ/e;
 
-    iget-object p1, p0, Landroidx/compose/runtime/livedata/LiveDataAdapterKt$observeAsState$1$1;->$this_observeAsState:Landroidx/lifecycle/e0;
+    const/4 v1, 0x1
 
-    iget-object v1, p0, Landroidx/compose/runtime/livedata/LiveDataAdapterKt$observeAsState$1$1;->$lifecycleOwner:Landroidx/lifecycle/w;
+    invoke-direct {v0, p1, v1}, LZ/e;-><init>(Ljava/lang/Object;I)V
 
     .line 3
-    invoke-virtual {p1, v1, v0}, Landroidx/lifecycle/e0;->e(Landroidx/lifecycle/w;Landroidx/lifecycle/j0;)V
+    iget-object p1, p0, Landroidx/compose/runtime/livedata/LiveDataAdapterKt$observeAsState$1$1;->$this_observeAsState:Landroidx/lifecycle/G;
 
-    iget-object p1, p0, Landroidx/compose/runtime/livedata/LiveDataAdapterKt$observeAsState$1$1;->$this_observeAsState:Landroidx/lifecycle/e0;
+    iget-object v1, p0, Landroidx/compose/runtime/livedata/LiveDataAdapterKt$observeAsState$1$1;->$lifecycleOwner:Landroidx/lifecycle/x;
+
+    invoke-virtual {p1, v1, v0}, Landroidx/lifecycle/G;->e(Landroidx/lifecycle/x;Landroidx/lifecycle/K;)V
 
     .line 4
-    new-instance v1, Landroidx/compose/animation/core/h0;
+    iget-object p1, p0, Landroidx/compose/runtime/livedata/LiveDataAdapterKt$observeAsState$1$1;->$this_observeAsState:Landroidx/lifecycle/G;
 
-    const/16 v2, 0x8
+    .line 5
+    new-instance v1, Landroidx/compose/animation/core/D;
 
-    invoke-direct {v1, p1, v2, v0}, Landroidx/compose/animation/core/h0;-><init>(Ljava/lang/Object;ILjava/lang/Object;)V
+    const/4 v2, 0x6
+
+    invoke-direct {v1, p1, v2, v0}, Landroidx/compose/animation/core/D;-><init>(Ljava/lang/Object;ILjava/lang/Object;)V
 
     return-object v1
 .end method
@@ -117,9 +120,9 @@
     .locals 0
 
     .line 1
-    check-cast p1, Landroidx/compose/runtime/p0;
+    check-cast p1, Landroidx/compose/runtime/H;
 
-    invoke-virtual {p0, p1}, Landroidx/compose/runtime/livedata/LiveDataAdapterKt$observeAsState$1$1;->invoke(Landroidx/compose/runtime/p0;)Landroidx/compose/runtime/o0;
+    invoke-virtual {p0, p1}, Landroidx/compose/runtime/livedata/LiveDataAdapterKt$observeAsState$1$1;->invoke(Landroidx/compose/runtime/H;)Landroidx/compose/runtime/G;
 
     move-result-object p1
 

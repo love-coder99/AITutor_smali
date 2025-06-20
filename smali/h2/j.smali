@@ -1,229 +1,42 @@
-.class public final Lh2/j;
+.class public final LH2/j;
 .super Ljava/lang/Object;
 .source "SourceFile"
 
 
 # static fields
-.field public static final synthetic b:I
-
-
-# instance fields
-.field public final a:J
+.field public static final a:LH2/j;
 
 
 # direct methods
-.method public synthetic constructor <init>(J)V
-    .locals 0
-
-    .line 1
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
-
-    .line 2
-    .line 3
-    .line 4
-    iput-wide p1, p0, Lh2/j;->a:J
-
-    .line 5
-    .line 6
-    return-void
-.end method
-
-.method public static final a(JJ)Z
+.method static constructor <clinit>()V
     .locals 1
 
     .line 1
-    cmp-long v0, p0, p2
-
-    if-nez v0, :cond_0
-
-    const/4 p0, 0x1
-
-    goto :goto_0
-
-    :cond_0
-    const/4 p0, 0x0
-
-    :goto_0
-    return p0
-.end method
-
-.method public static final b(J)I
-    .locals 2
-
-    .line 1
-    const-wide v0, 0xffffffffL
-
-    and-long/2addr p0, v0
-
-    long-to-int p1, p0
-
-    return p1
-.end method
-
-.method public static final c(J)I
-    .locals 1
-
-    .line 1
-    const/16 v0, 0x20
-
-    shr-long/2addr p0, v0
-
-    long-to-int p1, p0
-
-    return p1
-.end method
-
-.method public static d(J)Ljava/lang/String;
-    .locals 3
-
-    .line 1
-    new-instance v0, Ljava/lang/StringBuilder;
+    new-instance v0, LH2/j;
 
     .line 2
     .line 3
-    invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
+    invoke-direct {v0}, Ljava/lang/Object;-><init>()V
 
     .line 4
     .line 5
     .line 6
-    const/16 v1, 0x20
+    sput-object v0, LH2/j;->a:LH2/j;
 
     .line 7
     .line 8
-    shr-long v1, p0, v1
-
-    .line 9
-    .line 10
-    long-to-int v2, v1
-
-    .line 11
-    invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
-
-    .line 12
-    .line 13
-    .line 14
-    const-string v1, " x "
-
-    .line 15
-    .line 16
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    .line 17
-    .line 18
-    .line 19
-    const-wide v1, 0xffffffffL
-
-    .line 20
-    .line 21
-    .line 22
-    .line 23
-    .line 24
-    and-long/2addr p0, v1
-
-    .line 25
-    long-to-int p1, p0
-
-    .line 26
-    invoke-virtual {v0, p1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
-
-    .line 27
-    .line 28
-    .line 29
-    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    .line 30
-    .line 31
-    .line 32
-    move-result-object p0
-
-    .line 33
-    return-object p0
+    return-void
 .end method
 
 
 # virtual methods
-.method public final equals(Ljava/lang/Object;)Z
-    .locals 6
-
-    .line 1
-    instance-of v0, p1, Lh2/j;
-
-    .line 2
-    .line 3
-    const/4 v1, 0x0
-
-    .line 4
-    if-nez v0, :cond_0
-
-    .line 5
-    .line 6
-    goto :goto_0
-
-    .line 7
-    :cond_0
-    check-cast p1, Lh2/j;
-
-    .line 8
-    .line 9
-    iget-wide v2, p1, Lh2/j;->a:J
-
-    .line 10
-    .line 11
-    iget-wide v4, p0, Lh2/j;->a:J
-
-    .line 12
-    .line 13
-    cmp-long p1, v4, v2
-
-    .line 14
-    .line 15
-    if-eqz p1, :cond_1
-
-    .line 16
-    .line 17
-    goto :goto_0
-
-    .line 18
-    :cond_1
-    const/4 v1, 0x1
-
-    .line 19
-    :goto_0
-    return v1
-.end method
-
-.method public final hashCode()I
-    .locals 5
-
-    .line 1
-    const/16 v0, 0x20
-
-    iget-wide v1, p0, Lh2/j;->a:J
-
-    ushr-long v3, v1, v0
-
-    xor-long v0, v1, v3
-
-    long-to-int v1, v0
-
-    return v1
-.end method
-
 .method public final toString()Ljava/lang/String;
-    .locals 2
+    .locals 1
 
     .line 1
-    iget-wide v0, p0, Lh2/j;->a:J
+    const-string v0, "coil.request.NullRequestData"
 
     .line 2
     .line 3
-    invoke-static {v0, v1}, Lh2/j;->d(J)Ljava/lang/String;
-
-    .line 4
-    .line 5
-    .line 6
-    move-result-object v0
-
-    .line 7
     return-object v0
 .end method

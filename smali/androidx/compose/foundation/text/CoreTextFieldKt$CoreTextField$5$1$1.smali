@@ -3,12 +3,12 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lzh/e;
+.implements Lka/e;
 
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Landroidx/compose/foundation/text/CoreTextFieldKt$CoreTextField$5$1;->invoke(Landroidx/compose/runtime/l;I)V
+    value = Landroidx/compose/foundation/text/CoreTextFieldKt$CoreTextField$5$1;->invoke(Landroidx/compose/runtime/j;I)V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -19,7 +19,7 @@
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "Lkotlin/jvm/internal/Lambda;",
-        "Lzh/e;"
+        "Lka/e;"
     }
 .end annotation
 
@@ -28,9 +28,9 @@
         "\u0000\u0008\n\u0002\u0018\u0002\n\u0002\u0008\u0003\u0010\u0003\u001a\u00020\u0000H\u000b\u00a2\u0006\u0004\u0008\u0001\u0010\u0002"
     }
     d2 = {
-        "Lqh/r;",
+        "LX9/j;",
         "invoke",
-        "(Landroidx/compose/runtime/l;I)V",
+        "(Landroidx/compose/runtime/j;I)V",
         "<anonymous>"
     }
     k = 0x3
@@ -43,18 +43,18 @@
 
 
 # instance fields
-.field final synthetic $density:Lh2/b;
+.field final synthetic $density:LM0/b;
 
-.field final synthetic $manager:Landroidx/compose/foundation/text/selection/a0;
+.field final synthetic $manager:Landroidx/compose/foundation/text/selection/x;
 
 .field final synthetic $maxLines:I
 
-.field final synthetic $offsetMapping:Landroidx/compose/ui/text/input/a0;
+.field final synthetic $offsetMapping:Landroidx/compose/ui/text/input/w;
 
-.field final synthetic $onTextLayout:Lzh/c;
+.field final synthetic $onTextLayout:Lka/c;
     .annotation system Ldalvik/annotation/Signature;
         value = {
-            "Lzh/c;"
+            "Lka/c;"
         }
     .end annotation
 .end field
@@ -63,51 +63,73 @@
 
 .field final synthetic $showHandleAndMagnifier:Z
 
-.field final synthetic $state:Landroidx/compose/foundation/text/t;
+.field final synthetic $state:Landroidx/compose/foundation/text/s;
 
-.field final synthetic $value:Landroidx/compose/ui/text/input/h0;
+.field final synthetic $value:Landroidx/compose/ui/text/input/C;
 
 
 # direct methods
-.method public constructor <init>(Landroidx/compose/foundation/text/selection/a0;Landroidx/compose/foundation/text/t;ZZLzh/c;Landroidx/compose/ui/text/input/h0;Landroidx/compose/ui/text/input/a0;Lh2/b;I)V
+.method public constructor <init>(Landroidx/compose/foundation/text/selection/x;Landroidx/compose/foundation/text/s;ZZLka/c;Landroidx/compose/ui/text/input/C;Landroidx/compose/ui/text/input/w;LM0/b;I)V
     .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
-            "Landroidx/compose/foundation/text/selection/a0;",
-            "Landroidx/compose/foundation/text/t;",
+            "Landroidx/compose/foundation/text/selection/x;",
+            "Landroidx/compose/foundation/text/s;",
             "ZZ",
-            "Lzh/c;",
-            "Landroidx/compose/ui/text/input/h0;",
-            "Landroidx/compose/ui/text/input/a0;",
-            "Lh2/b;",
+            "Lka/c;",
+            "Landroidx/compose/ui/text/input/C;",
+            "Landroidx/compose/ui/text/input/w;",
+            "LM0/b;",
             "I)V"
         }
     .end annotation
 
     .line 1
-    iput-object p1, p0, Landroidx/compose/foundation/text/CoreTextFieldKt$CoreTextField$5$1$1;->$manager:Landroidx/compose/foundation/text/selection/a0;
+    iput-object p1, p0, Landroidx/compose/foundation/text/CoreTextFieldKt$CoreTextField$5$1$1;->$manager:Landroidx/compose/foundation/text/selection/x;
 
-    iput-object p2, p0, Landroidx/compose/foundation/text/CoreTextFieldKt$CoreTextField$5$1$1;->$state:Landroidx/compose/foundation/text/t;
+    .line 2
+    .line 3
+    iput-object p2, p0, Landroidx/compose/foundation/text/CoreTextFieldKt$CoreTextField$5$1$1;->$state:Landroidx/compose/foundation/text/s;
 
+    .line 4
+    .line 5
     iput-boolean p3, p0, Landroidx/compose/foundation/text/CoreTextFieldKt$CoreTextField$5$1$1;->$showHandleAndMagnifier:Z
 
+    .line 6
+    .line 7
     iput-boolean p4, p0, Landroidx/compose/foundation/text/CoreTextFieldKt$CoreTextField$5$1$1;->$readOnly:Z
 
-    iput-object p5, p0, Landroidx/compose/foundation/text/CoreTextFieldKt$CoreTextField$5$1$1;->$onTextLayout:Lzh/c;
+    .line 8
+    .line 9
+    iput-object p5, p0, Landroidx/compose/foundation/text/CoreTextFieldKt$CoreTextField$5$1$1;->$onTextLayout:Lka/c;
 
-    iput-object p6, p0, Landroidx/compose/foundation/text/CoreTextFieldKt$CoreTextField$5$1$1;->$value:Landroidx/compose/ui/text/input/h0;
+    .line 10
+    .line 11
+    iput-object p6, p0, Landroidx/compose/foundation/text/CoreTextFieldKt$CoreTextField$5$1$1;->$value:Landroidx/compose/ui/text/input/C;
 
-    iput-object p7, p0, Landroidx/compose/foundation/text/CoreTextFieldKt$CoreTextField$5$1$1;->$offsetMapping:Landroidx/compose/ui/text/input/a0;
+    .line 12
+    .line 13
+    iput-object p7, p0, Landroidx/compose/foundation/text/CoreTextFieldKt$CoreTextField$5$1$1;->$offsetMapping:Landroidx/compose/ui/text/input/w;
 
-    iput-object p8, p0, Landroidx/compose/foundation/text/CoreTextFieldKt$CoreTextField$5$1$1;->$density:Lh2/b;
+    .line 14
+    .line 15
+    iput-object p8, p0, Landroidx/compose/foundation/text/CoreTextFieldKt$CoreTextField$5$1$1;->$density:LM0/b;
 
+    .line 16
+    .line 17
     iput p9, p0, Landroidx/compose/foundation/text/CoreTextFieldKt$CoreTextField$5$1$1;->$maxLines:I
 
+    .line 18
+    .line 19
     const/4 p1, 0x2
 
+    .line 20
     invoke-direct {p0, p1}, Lkotlin/jvm/internal/Lambda;-><init>(I)V
 
+    .line 21
+    .line 22
+    .line 23
     return-void
 .end method
 
@@ -117,7 +139,7 @@
     .locals 0
 
     .line 1
-    check-cast p1, Landroidx/compose/runtime/l;
+    check-cast p1, Landroidx/compose/runtime/j;
 
     check-cast p2, Ljava/lang/Number;
 
@@ -125,14 +147,14 @@
 
     move-result p2
 
-    invoke-virtual {p0, p1, p2}, Landroidx/compose/foundation/text/CoreTextFieldKt$CoreTextField$5$1$1;->invoke(Landroidx/compose/runtime/l;I)V
+    invoke-virtual {p0, p1, p2}, Landroidx/compose/foundation/text/CoreTextFieldKt$CoreTextField$5$1$1;->invoke(Landroidx/compose/runtime/j;I)V
 
-    sget-object p1, Lqh/r;->a:Lqh/r;
+    sget-object p1, LX9/j;->a:LX9/j;
 
     return-object p1
 .end method
 
-.method public final invoke(Landroidx/compose/runtime/l;I)V
+.method public final invoke(Landroidx/compose/runtime/j;I)V
     .locals 8
 
     and-int/lit8 p2, p2, 0x3
@@ -141,12 +163,12 @@
 
     if-ne p2, v0, :cond_1
 
+    .line 2
     move-object p2, p1
 
-    check-cast p2, Landroidx/compose/runtime/p;
+    check-cast p2, Landroidx/compose/runtime/n;
 
-    .line 2
-    invoke-virtual {p2}, Landroidx/compose/runtime/p;->y()Z
+    invoke-virtual {p2}, Landroidx/compose/runtime/n;->x()Z
 
     move-result v0
 
@@ -156,7 +178,7 @@
 
     .line 3
     :cond_0
-    invoke-virtual {p2}, Landroidx/compose/runtime/p;->N()V
+    invoke-virtual {p2}, Landroidx/compose/runtime/n;->L()V
 
     goto/16 :goto_3
 
@@ -165,181 +187,165 @@
     :goto_0
     new-instance p2, Landroidx/compose/foundation/text/i;
 
-    iget-object v2, p0, Landroidx/compose/foundation/text/CoreTextFieldKt$CoreTextField$5$1$1;->$state:Landroidx/compose/foundation/text/t;
+    iget-object v2, p0, Landroidx/compose/foundation/text/CoreTextFieldKt$CoreTextField$5$1$1;->$state:Landroidx/compose/foundation/text/s;
 
-    iget-object v3, p0, Landroidx/compose/foundation/text/CoreTextFieldKt$CoreTextField$5$1$1;->$onTextLayout:Lzh/c;
+    iget-object v3, p0, Landroidx/compose/foundation/text/CoreTextFieldKt$CoreTextField$5$1$1;->$onTextLayout:Lka/c;
 
-    iget-object v4, p0, Landroidx/compose/foundation/text/CoreTextFieldKt$CoreTextField$5$1$1;->$value:Landroidx/compose/ui/text/input/h0;
+    iget-object v4, p0, Landroidx/compose/foundation/text/CoreTextFieldKt$CoreTextField$5$1$1;->$value:Landroidx/compose/ui/text/input/C;
 
-    iget-object v5, p0, Landroidx/compose/foundation/text/CoreTextFieldKt$CoreTextField$5$1$1;->$offsetMapping:Landroidx/compose/ui/text/input/a0;
+    iget-object v5, p0, Landroidx/compose/foundation/text/CoreTextFieldKt$CoreTextField$5$1$1;->$offsetMapping:Landroidx/compose/ui/text/input/w;
 
-    iget-object v6, p0, Landroidx/compose/foundation/text/CoreTextFieldKt$CoreTextField$5$1$1;->$density:Lh2/b;
+    iget-object v6, p0, Landroidx/compose/foundation/text/CoreTextFieldKt$CoreTextField$5$1$1;->$density:LM0/b;
 
     iget v7, p0, Landroidx/compose/foundation/text/CoreTextFieldKt$CoreTextField$5$1$1;->$maxLines:I
 
     move-object v1, p2
 
-    invoke-direct/range {v1 .. v7}, Landroidx/compose/foundation/text/i;-><init>(Landroidx/compose/foundation/text/t;Lzh/c;Landroidx/compose/ui/text/input/h0;Landroidx/compose/ui/text/input/a0;Lh2/b;I)V
-
-    sget-object v0, Landroidx/compose/ui/l;->c:Landroidx/compose/ui/l;
-
-    move-object v1, p1
-
-    check-cast v1, Landroidx/compose/runtime/p;
+    invoke-direct/range {v1 .. v7}, Landroidx/compose/foundation/text/i;-><init>(Landroidx/compose/foundation/text/s;Lka/c;Landroidx/compose/ui/text/input/C;Landroidx/compose/ui/text/input/w;LM0/b;I)V
 
     .line 5
-    iget v2, v1, Landroidx/compose/runtime/p;->P:I
+    sget-object v0, Landroidx/compose/ui/l;->a:Landroidx/compose/ui/l;
 
     .line 6
-    invoke-virtual {v1}, Landroidx/compose/runtime/p;->n()Landroidx/compose/runtime/q1;
+    move-object v1, p1
 
-    move-result-object v1
+    check-cast v1, Landroidx/compose/runtime/n;
 
     .line 7
-    invoke-static {p1, v0}, Landroidx/compose/ui/a;->c(Landroidx/compose/runtime/l;Landroidx/compose/ui/o;)Landroidx/compose/ui/o;
+    iget v2, v1, Landroidx/compose/runtime/n;->P:I
+
+    .line 8
+    invoke-virtual {v1}, Landroidx/compose/runtime/n;->m()Landroidx/compose/runtime/g0;
+
+    move-result-object v3
+
+    .line 9
+    invoke-static {p1, v0}, Landroidx/compose/ui/a;->d(Landroidx/compose/runtime/j;Landroidx/compose/ui/o;)Landroidx/compose/ui/o;
 
     move-result-object v0
 
-    .line 8
-    sget-object v3, Landroidx/compose/ui/node/h;->y8:Landroidx/compose/ui/node/g;
-
-    invoke-virtual {v3}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
-
-    .line 9
-    sget-object v4, Landroidx/compose/ui/node/g;->b:Lzh/a;
-
-    move-object v5, p1
-
-    check-cast v5, Landroidx/compose/runtime/p;
-
     .line 10
-    iget-object v6, v5, Landroidx/compose/runtime/p;->a:Landroidx/compose/runtime/e;
+    sget-object v4, Landroidx/compose/ui/node/h;->A8:Landroidx/compose/ui/node/g;
 
-    instance-of v6, v6, Landroidx/compose/runtime/e;
-
-    if-eqz v6, :cond_7
+    invoke-virtual {v4}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
     .line 11
-    invoke-virtual {v5}, Landroidx/compose/runtime/p;->X()V
+    sget-object v4, Landroidx/compose/ui/node/g;->b:Lka/a;
 
     .line 12
-    iget-boolean v6, v5, Landroidx/compose/runtime/p;->O:Z
-
-    if-eqz v6, :cond_2
+    iget-object v5, v1, Landroidx/compose/runtime/n;->a:Landroidx/compose/ui/node/s0;
 
     .line 13
-    invoke-virtual {v5, v4}, Landroidx/compose/runtime/p;->m(Lzh/a;)V
+    invoke-virtual {v1}, Landroidx/compose/runtime/n;->V()V
+
+    .line 14
+    iget-boolean v5, v1, Landroidx/compose/runtime/n;->O:Z
+
+    if-eqz v5, :cond_2
+
+    .line 15
+    invoke-virtual {v1, v4}, Landroidx/compose/runtime/n;->l(Lka/a;)V
 
     goto :goto_1
 
-    .line 14
-    :cond_2
-    invoke-virtual {v5}, Landroidx/compose/runtime/p;->g0()V
-
-    .line 15
-    :goto_1
-    invoke-virtual {v3}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
-
     .line 16
-    sget-object v4, Landroidx/compose/ui/node/g;->f:Lzh/e;
+    :cond_2
+    invoke-virtual {v1}, Landroidx/compose/runtime/n;->e0()V
 
     .line 17
-    invoke-static {p1, p2, v4}, Landroidx/compose/runtime/q;->x(Landroidx/compose/runtime/l;Ljava/lang/Object;Lzh/e;)V
+    :goto_1
+    sget-object v4, Landroidx/compose/ui/node/g;->f:Lka/e;
 
     .line 18
-    invoke-virtual {v3}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+    invoke-static {p1, p2, v4}, Landroidx/compose/runtime/o;->a0(Landroidx/compose/runtime/j;Ljava/lang/Object;Lka/e;)V
 
     .line 19
-    sget-object p2, Landroidx/compose/ui/node/g;->e:Lzh/e;
+    sget-object p2, Landroidx/compose/ui/node/g;->e:Lka/e;
 
     .line 20
-    invoke-static {p1, v1, p2}, Landroidx/compose/runtime/q;->x(Landroidx/compose/runtime/l;Ljava/lang/Object;Lzh/e;)V
+    invoke-static {p1, v3, p2}, Landroidx/compose/runtime/o;->a0(Landroidx/compose/runtime/j;Ljava/lang/Object;Lka/e;)V
 
     .line 21
-    invoke-virtual {v3}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+    sget-object p2, Landroidx/compose/ui/node/g;->g:Lka/e;
 
     .line 22
-    sget-object p2, Landroidx/compose/ui/node/g;->g:Lzh/e;
+    iget-boolean v3, v1, Landroidx/compose/runtime/n;->O:Z
+
+    if-nez v3, :cond_3
 
     .line 23
-    iget-boolean v1, v5, Landroidx/compose/runtime/p;->O:Z
+    invoke-virtual {v1}, Landroidx/compose/runtime/n;->G()Ljava/lang/Object;
 
-    if-nez v1, :cond_3
-
-    .line 24
-    invoke-virtual {v5}, Landroidx/compose/runtime/p;->I()Ljava/lang/Object;
-
-    move-result-object v1
+    move-result-object v3
 
     invoke-static {v2}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
     move-result-object v4
 
-    invoke-static {v1, v4}, Lrb/h;->d(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v3, v4}, Lkotlin/jvm/internal/h;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
 
-    move-result v1
+    move-result v3
 
-    if-nez v1, :cond_4
+    if-nez v3, :cond_4
+
+    .line 24
+    :cond_3
+    invoke-static {v2, v1, v2, p2}, Landroidx/appcompat/view/menu/F;->K(ILandroidx/compose/runtime/n;ILka/e;)V
 
     .line 25
-    :cond_3
-    invoke-static {v2, v5, v2, p2}, Landroid/support/v4/media/session/a;->N(ILandroidx/compose/runtime/p;ILzh/e;)V
+    :cond_4
+    sget-object p2, Landroidx/compose/ui/node/g;->d:Lka/e;
 
     .line 26
-    :cond_4
-    invoke-virtual {v3}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
-
-    .line 27
-    sget-object p2, Landroidx/compose/ui/node/g;->d:Lzh/e;
-
-    .line 28
-    invoke-static {p1, v0, p2}, Landroidx/compose/runtime/q;->x(Landroidx/compose/runtime/l;Ljava/lang/Object;Lzh/e;)V
+    invoke-static {p1, v0, p2}, Landroidx/compose/runtime/o;->a0(Landroidx/compose/runtime/j;Ljava/lang/Object;Lka/e;)V
 
     const/4 p2, 0x1
 
+    .line 27
+    invoke-virtual {v1, p2}, Landroidx/compose/runtime/n;->p(Z)V
+
+    .line 28
+    iget-object v0, p0, Landroidx/compose/foundation/text/CoreTextFieldKt$CoreTextField$5$1$1;->$manager:Landroidx/compose/foundation/text/selection/x;
+
     .line 29
-    invoke-virtual {v5, p2}, Landroidx/compose/runtime/p;->q(Z)V
+    iget-object v2, p0, Landroidx/compose/foundation/text/CoreTextFieldKt$CoreTextField$5$1$1;->$state:Landroidx/compose/foundation/text/s;
 
-    iget-object v0, p0, Landroidx/compose/foundation/text/CoreTextFieldKt$CoreTextField$5$1$1;->$manager:Landroidx/compose/foundation/text/selection/a0;
+    invoke-virtual {v2}, Landroidx/compose/foundation/text/s;->a()Landroidx/compose/foundation/text/HandleState;
 
-    iget-object v1, p0, Landroidx/compose/foundation/text/CoreTextFieldKt$CoreTextField$5$1$1;->$state:Landroidx/compose/foundation/text/t;
+    move-result-object v2
+
+    sget-object v3, Landroidx/compose/foundation/text/HandleState;->None:Landroidx/compose/foundation/text/HandleState;
+
+    const/4 v4, 0x0
+
+    if-eq v2, v3, :cond_5
 
     .line 30
-    invoke-virtual {v1}, Landroidx/compose/foundation/text/t;->a()Landroidx/compose/foundation/text/HandleState;
+    iget-object v2, p0, Landroidx/compose/foundation/text/CoreTextFieldKt$CoreTextField$5$1$1;->$state:Landroidx/compose/foundation/text/s;
 
-    move-result-object v1
+    invoke-virtual {v2}, Landroidx/compose/foundation/text/s;->c()Landroidx/compose/ui/layout/p;
 
-    sget-object v2, Landroidx/compose/foundation/text/HandleState;->None:Landroidx/compose/foundation/text/HandleState;
+    move-result-object v2
 
-    const/4 v3, 0x0
-
-    if-eq v1, v2, :cond_5
-
-    iget-object v1, p0, Landroidx/compose/foundation/text/CoreTextFieldKt$CoreTextField$5$1$1;->$state:Landroidx/compose/foundation/text/t;
+    if-eqz v2, :cond_5
 
     .line 31
-    invoke-virtual {v1}, Landroidx/compose/foundation/text/t;->c()Landroidx/compose/ui/layout/s;
+    iget-object v2, p0, Landroidx/compose/foundation/text/CoreTextFieldKt$CoreTextField$5$1$1;->$state:Landroidx/compose/foundation/text/s;
 
-    move-result-object v1
+    invoke-virtual {v2}, Landroidx/compose/foundation/text/s;->c()Landroidx/compose/ui/layout/p;
 
-    if-eqz v1, :cond_5
+    move-result-object v2
 
-    iget-object v1, p0, Landroidx/compose/foundation/text/CoreTextFieldKt$CoreTextField$5$1$1;->$state:Landroidx/compose/foundation/text/t;
+    invoke-interface {v2}, Landroidx/compose/ui/layout/p;->k()Z
+
+    move-result v2
+
+    if-eqz v2, :cond_5
 
     .line 32
-    invoke-virtual {v1}, Landroidx/compose/foundation/text/t;->c()Landroidx/compose/ui/layout/s;
+    iget-boolean v2, p0, Landroidx/compose/foundation/text/CoreTextFieldKt$CoreTextField$5$1$1;->$showHandleAndMagnifier:Z
 
-    move-result-object v1
-
-    invoke-interface {v1}, Landroidx/compose/ui/layout/s;->k()Z
-
-    move-result v1
-
-    if-eqz v1, :cond_5
-
-    iget-boolean v1, p0, Landroidx/compose/foundation/text/CoreTextFieldKt$CoreTextField$5$1$1;->$showHandleAndMagnifier:Z
-
-    if-eqz v1, :cond_5
+    if-eqz v2, :cond_5
 
     goto :goto_2
 
@@ -348,12 +354,12 @@
 
     .line 33
     :goto_2
-    invoke-static {v0, p2, p1, v3}, Landroidx/compose/foundation/text/e;->h(Landroidx/compose/foundation/text/selection/a0;ZLandroidx/compose/runtime/l;I)V
-
-    iget-object p2, p0, Landroidx/compose/foundation/text/CoreTextFieldKt$CoreTextField$5$1$1;->$state:Landroidx/compose/foundation/text/t;
+    invoke-static {v0, p2, p1, v4}, Landroidx/compose/foundation/text/e;->h(Landroidx/compose/foundation/text/selection/x;ZLandroidx/compose/runtime/j;I)V
 
     .line 34
-    invoke-virtual {p2}, Landroidx/compose/foundation/text/t;->a()Landroidx/compose/foundation/text/HandleState;
+    iget-object p2, p0, Landroidx/compose/foundation/text/CoreTextFieldKt$CoreTextField$5$1$1;->$state:Landroidx/compose/foundation/text/s;
+
+    invoke-virtual {p2}, Landroidx/compose/foundation/text/s;->a()Landroidx/compose/foundation/text/HandleState;
 
     move-result-object p2
 
@@ -361,46 +367,40 @@
 
     if-ne p2, v0, :cond_6
 
+    .line 35
     iget-boolean p2, p0, Landroidx/compose/foundation/text/CoreTextFieldKt$CoreTextField$5$1$1;->$readOnly:Z
 
     if-nez p2, :cond_6
 
+    .line 36
     iget-boolean p2, p0, Landroidx/compose/foundation/text/CoreTextFieldKt$CoreTextField$5$1$1;->$showHandleAndMagnifier:Z
 
     if-eqz p2, :cond_6
 
     const p2, -0x1f0292
 
-    .line 35
-    invoke-virtual {v5, p2}, Landroidx/compose/runtime/p;->T(I)V
-
-    iget-object p2, p0, Landroidx/compose/foundation/text/CoreTextFieldKt$CoreTextField$5$1$1;->$manager:Landroidx/compose/foundation/text/selection/a0;
-
-    .line 36
-    invoke-static {p2, p1, v3}, Landroidx/compose/foundation/text/e;->g(Landroidx/compose/foundation/text/selection/a0;Landroidx/compose/runtime/l;I)V
-
     .line 37
-    invoke-virtual {v5, v3}, Landroidx/compose/runtime/p;->q(Z)V
+    invoke-virtual {v1, p2}, Landroidx/compose/runtime/n;->R(I)V
+
+    .line 38
+    iget-object p2, p0, Landroidx/compose/foundation/text/CoreTextFieldKt$CoreTextField$5$1$1;->$manager:Landroidx/compose/foundation/text/selection/x;
+
+    invoke-static {p2, p1, v4}, Landroidx/compose/foundation/text/e;->g(Landroidx/compose/foundation/text/selection/x;Landroidx/compose/runtime/j;I)V
+
+    .line 39
+    invoke-virtual {v1, v4}, Landroidx/compose/runtime/n;->p(Z)V
 
     goto :goto_3
 
     :cond_6
     const p1, -0x1dd642
 
-    .line 38
-    invoke-virtual {v5, p1}, Landroidx/compose/runtime/p;->T(I)V
+    .line 40
+    invoke-virtual {v1, p1}, Landroidx/compose/runtime/n;->R(I)V
 
-    .line 39
-    invoke-virtual {v5, v3}, Landroidx/compose/runtime/p;->q(Z)V
+    .line 41
+    invoke-virtual {v1, v4}, Landroidx/compose/runtime/n;->p(Z)V
 
     :goto_3
     return-void
-
-    .line 40
-    :cond_7
-    invoke-static {}, Lb0/h;->N()V
-
-    const/4 p1, 0x0
-
-    throw p1
 .end method

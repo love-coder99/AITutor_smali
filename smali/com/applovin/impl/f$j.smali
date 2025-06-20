@@ -283,16 +283,22 @@
 .method public b()Lcom/applovin/impl/f$j;
     .locals 1
 
+    .line 1
     iget-object v0, p0, Lcom/applovin/impl/f$j;->c:Lcom/applovin/impl/f$j;
 
+    .line 2
+    .line 3
     return-object v0
 .end method
 
 .method public c()Ljava/util/Collection;
     .locals 1
 
+    .line 1
     iget-object v0, p0, Lcom/applovin/impl/f$j;->b:Ljava/util/Collection;
 
+    .line 2
+    .line 3
     return-object v0
 .end method
 
@@ -393,8 +399,11 @@
 .method public d()Ljava/lang/Object;
     .locals 1
 
+    .line 1
     iget-object v0, p0, Lcom/applovin/impl/f$j;->a:Ljava/lang/Object;
 
+    .line 2
+    .line 3
     return-object v0
 .end method
 

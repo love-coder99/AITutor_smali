@@ -3,14 +3,14 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lzh/a;
+.implements Lka/a;
 
 
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "Lkotlin/jvm/internal/Lambda;",
-        "Lzh/a;"
+        "Lka/a;"
     }
 .end annotation
 
@@ -55,12 +55,13 @@
 .method public final invoke()Landroid/view/inputmethod/InputMethodManager;
     .locals 2
 
+    .line 2
     iget-object v0, p0, Landroidx/compose/foundation/text/input/internal/InputMethodManagerImpl$imm$2;->this$0:Landroidx/compose/foundation/text/input/internal/n;
 
-    .line 1
+    .line 3
     iget-object v0, v0, Landroidx/compose/foundation/text/input/internal/n;->a:Landroid/view/View;
 
-    .line 2
+    .line 4
     invoke-virtual {v0}, Landroid/view/View;->getContext()Landroid/content/Context;
 
     move-result-object v0
@@ -79,7 +80,7 @@
 .method public bridge synthetic invoke()Ljava/lang/Object;
     .locals 1
 
-    .line 3
+    .line 1
     invoke-virtual {p0}, Landroidx/compose/foundation/text/input/internal/InputMethodManagerImpl$imm$2;->invoke()Landroid/view/inputmethod/InputMethodManager;
 
     move-result-object v0

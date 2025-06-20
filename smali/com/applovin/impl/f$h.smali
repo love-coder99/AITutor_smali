@@ -181,11 +181,12 @@
 .method public keySet()Ljava/util/SortedSet;
     .locals 1
 
+    .line 2
     iget-object v0, p0, Lcom/applovin/impl/f$h;->f:Ljava/util/SortedSet;
 
     if-nez v0, :cond_0
 
-    .line 2
+    .line 3
     invoke-virtual {p0}, Lcom/applovin/impl/f$h;->c()Ljava/util/SortedSet;
 
     move-result-object v0

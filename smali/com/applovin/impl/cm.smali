@@ -690,16 +690,22 @@
 .method public b(Z)V
     .locals 0
 
+    .line 1
     iput-boolean p1, p0, Lcom/applovin/impl/cm;->t:Z
 
+    .line 2
+    .line 3
     return-void
 .end method
 
 .method public c(Z)V
     .locals 0
 
+    .line 1
     iput-boolean p1, p0, Lcom/applovin/impl/cm;->s:Z
 
+    .line 2
+    .line 3
     return-void
 .end method
 

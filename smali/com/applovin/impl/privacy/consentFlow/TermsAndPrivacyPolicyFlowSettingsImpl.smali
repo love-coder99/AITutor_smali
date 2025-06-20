@@ -50,32 +50,48 @@
 .method public getDebugUserGeography()Lcom/applovin/sdk/AppLovinSdkConfiguration$ConsentFlowUserGeography;
     .locals 1
 
+    .line 1
     iget-object v0, p0, Lcom/applovin/impl/privacy/consentFlow/TermsAndPrivacyPolicyFlowSettingsImpl;->b:Lcom/applovin/sdk/AppLovinSdkConfiguration$ConsentFlowUserGeography;
 
+    .line 2
+    .line 3
     return-object v0
 .end method
 
 .method public getPrivacyPolicyUri()Landroid/net/Uri;
     .locals 1
+    .annotation build Landroidx/annotation/Nullable;
+    .end annotation
 
+    .line 1
     iget-object v0, p0, Lcom/applovin/impl/privacy/consentFlow/TermsAndPrivacyPolicyFlowSettingsImpl;->c:Landroid/net/Uri;
 
+    .line 2
+    .line 3
     return-object v0
 .end method
 
 .method public getTermsOfServiceUri()Landroid/net/Uri;
     .locals 1
+    .annotation build Landroidx/annotation/Nullable;
+    .end annotation
 
+    .line 1
     iget-object v0, p0, Lcom/applovin/impl/privacy/consentFlow/TermsAndPrivacyPolicyFlowSettingsImpl;->d:Landroid/net/Uri;
 
+    .line 2
+    .line 3
     return-object v0
 .end method
 
 .method public isEnabled()Z
     .locals 1
 
+    .line 1
     iget-boolean v0, p0, Lcom/applovin/impl/privacy/consentFlow/TermsAndPrivacyPolicyFlowSettingsImpl;->a:Z
 
+    .line 2
+    .line 3
     return v0
 .end method
 
@@ -265,6 +281,8 @@
 
 .method public toString()Ljava/lang/String;
     .locals 2
+    .annotation build Landroidx/annotation/NonNull;
+    .end annotation
 
     .line 1
     new-instance v0, Ljava/lang/StringBuilder;

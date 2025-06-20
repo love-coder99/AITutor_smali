@@ -3,14 +3,14 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lzh/f;
+.implements Lka/f;
 
 
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "Lkotlin/jvm/internal/Lambda;",
-        "Lzh/f;"
+        "Lka/f;"
     }
 .end annotation
 
@@ -21,7 +21,7 @@
     d2 = {
         "Landroidx/compose/ui/o;",
         "invoke",
-        "(Landroidx/compose/ui/o;Landroidx/compose/runtime/l;I)Landroidx/compose/ui/o;",
+        "(Landroidx/compose/ui/o;Landroidx/compose/runtime/j;I)Landroidx/compose/ui/o;",
         "<anonymous>"
     }
     k = 0x3
@@ -34,7 +34,7 @@
 
 
 # instance fields
-.field final synthetic $flingBehavior:Landroidx/compose/foundation/gestures/v;
+.field final synthetic $flingBehavior:Landroidx/compose/foundation/gestures/x;
 
 .field final synthetic $isScrollable:Z
 
@@ -42,18 +42,18 @@
 
 .field final synthetic $reverseScrolling:Z
 
-.field final synthetic $state:Landroidx/compose/foundation/y0;
+.field final synthetic $state:Landroidx/compose/foundation/X;
 
 
 # direct methods
-.method public constructor <init>(Landroidx/compose/foundation/y0;ZLandroidx/compose/foundation/gestures/v;ZZ)V
+.method public constructor <init>(Landroidx/compose/foundation/X;ZLandroidx/compose/foundation/gestures/x;ZZ)V
     .locals 0
 
-    iput-object p1, p0, Landroidx/compose/foundation/ScrollKt$scroll$2;->$state:Landroidx/compose/foundation/y0;
+    iput-object p1, p0, Landroidx/compose/foundation/ScrollKt$scroll$2;->$state:Landroidx/compose/foundation/X;
 
     iput-boolean p2, p0, Landroidx/compose/foundation/ScrollKt$scroll$2;->$reverseScrolling:Z
 
-    iput-object p3, p0, Landroidx/compose/foundation/ScrollKt$scroll$2;->$flingBehavior:Landroidx/compose/foundation/gestures/v;
+    iput-object p3, p0, Landroidx/compose/foundation/ScrollKt$scroll$2;->$flingBehavior:Landroidx/compose/foundation/gestures/x;
 
     iput-boolean p4, p0, Landroidx/compose/foundation/ScrollKt$scroll$2;->$isScrollable:Z
 
@@ -68,26 +68,31 @@
 
 
 # virtual methods
-.method public final invoke(Landroidx/compose/ui/o;Landroidx/compose/runtime/l;I)Landroidx/compose/ui/o;
+.method public final invoke(Landroidx/compose/ui/o;Landroidx/compose/runtime/j;I)Landroidx/compose/ui/o;
     .locals 12
 
-    check-cast p2, Landroidx/compose/runtime/p;
+    check-cast p2, Landroidx/compose/runtime/n;
 
     const p1, 0x581dd9c4
 
-    invoke-virtual {p2, p1}, Landroidx/compose/runtime/p;->T(I)V
+    invoke-virtual {p2, p1}, Landroidx/compose/runtime/n;->R(I)V
 
     .line 2
     new-instance p1, Landroidx/compose/foundation/ScrollSemanticsElement;
 
-    iget-object p3, p0, Landroidx/compose/foundation/ScrollKt$scroll$2;->$state:Landroidx/compose/foundation/y0;
+    .line 3
+    iget-object p3, p0, Landroidx/compose/foundation/ScrollKt$scroll$2;->$state:Landroidx/compose/foundation/X;
 
+    .line 4
     iget-boolean v6, p0, Landroidx/compose/foundation/ScrollKt$scroll$2;->$reverseScrolling:Z
 
-    iget-object v7, p0, Landroidx/compose/foundation/ScrollKt$scroll$2;->$flingBehavior:Landroidx/compose/foundation/gestures/v;
+    .line 5
+    iget-object v7, p0, Landroidx/compose/foundation/ScrollKt$scroll$2;->$flingBehavior:Landroidx/compose/foundation/gestures/x;
 
+    .line 6
     iget-boolean v8, p0, Landroidx/compose/foundation/ScrollKt$scroll$2;->$isScrollable:Z
 
+    .line 7
     iget-boolean v9, p0, Landroidx/compose/foundation/ScrollKt$scroll$2;->$isVertical:Z
 
     move-object v0, p1
@@ -102,10 +107,12 @@
 
     move v5, v9
 
-    invoke-direct/range {v0 .. v5}, Landroidx/compose/foundation/ScrollSemanticsElement;-><init>(Landroidx/compose/foundation/y0;ZLandroidx/compose/foundation/gestures/v;ZZ)V
+    .line 8
+    invoke-direct/range {v0 .. v5}, Landroidx/compose/foundation/ScrollSemanticsElement;-><init>(Landroidx/compose/foundation/X;ZLandroidx/compose/foundation/gestures/x;ZZ)V
 
     if-eqz v9, :cond_0
 
+    .line 9
     sget-object v0, Landroidx/compose/foundation/gestures/Orientation;->Vertical:Landroidx/compose/foundation/gestures/Orientation;
 
     :goto_0
@@ -118,13 +125,13 @@
 
     goto :goto_0
 
-    .line 3
+    .line 10
     :goto_1
-    iget-object v9, p3, Landroidx/compose/foundation/y0;->c:Landroidx/compose/foundation/interaction/m;
+    iget-object v9, p3, Landroidx/compose/foundation/X;->c:Landroidx/compose/foundation/interaction/m;
 
-    const/4 v10, 0x0
+    const/16 v10, 0x40
 
-    const/16 v11, 0x40
+    const/4 v11, 0x0
 
     move-object v0, p1
 
@@ -138,36 +145,36 @@
 
     move-object v6, v9
 
-    move-object v7, v10
+    move-object v7, v11
 
     move-object v8, p2
 
-    move v9, v11
+    move v9, v10
 
-    .line 4
-    invoke-static/range {v0 .. v9}, Landroidx/compose/foundation/d;->p(Landroidx/compose/ui/o;Landroidx/compose/foundation/gestures/i0;Landroidx/compose/foundation/gestures/Orientation;ZZLandroidx/compose/foundation/gestures/v;Landroidx/compose/foundation/interaction/m;Landroidx/compose/foundation/pager/i;Landroidx/compose/runtime/l;I)Landroidx/compose/ui/o;
+    .line 11
+    invoke-static/range {v0 .. v9}, Landroidx/compose/foundation/d;->p(Landroidx/compose/ui/o;Landroidx/compose/foundation/gestures/K;Landroidx/compose/foundation/gestures/Orientation;ZZLandroidx/compose/foundation/gestures/x;Landroidx/compose/foundation/interaction/m;Landroidx/compose/foundation/pager/h;Landroidx/compose/runtime/j;I)Landroidx/compose/ui/o;
 
     move-result-object p1
 
-    .line 5
+    .line 12
     new-instance p3, Landroidx/compose/foundation/ScrollingLayoutElement;
 
-    iget-object v0, p0, Landroidx/compose/foundation/ScrollKt$scroll$2;->$state:Landroidx/compose/foundation/y0;
+    iget-object v0, p0, Landroidx/compose/foundation/ScrollKt$scroll$2;->$state:Landroidx/compose/foundation/X;
 
     iget-boolean v1, p0, Landroidx/compose/foundation/ScrollKt$scroll$2;->$reverseScrolling:Z
 
     iget-boolean v2, p0, Landroidx/compose/foundation/ScrollKt$scroll$2;->$isVertical:Z
 
-    invoke-direct {p3, v0, v1, v2}, Landroidx/compose/foundation/ScrollingLayoutElement;-><init>(Landroidx/compose/foundation/y0;ZZ)V
+    invoke-direct {p3, v0, v1, v2}, Landroidx/compose/foundation/ScrollingLayoutElement;-><init>(Landroidx/compose/foundation/X;ZZ)V
 
-    invoke-interface {p1, p3}, Landroidx/compose/ui/o;->e(Landroidx/compose/ui/o;)Landroidx/compose/ui/o;
+    invoke-interface {p1, p3}, Landroidx/compose/ui/o;->g(Landroidx/compose/ui/o;)Landroidx/compose/ui/o;
 
     move-result-object p1
 
     const/4 p3, 0x0
 
-    .line 6
-    invoke-virtual {p2, p3}, Landroidx/compose/runtime/p;->q(Z)V
+    .line 13
+    invoke-virtual {p2, p3}, Landroidx/compose/runtime/n;->p(Z)V
 
     return-object p1
 .end method
@@ -178,7 +185,7 @@
     .line 1
     check-cast p1, Landroidx/compose/ui/o;
 
-    check-cast p2, Landroidx/compose/runtime/l;
+    check-cast p2, Landroidx/compose/runtime/j;
 
     check-cast p3, Ljava/lang/Number;
 
@@ -186,7 +193,7 @@
 
     move-result p3
 
-    invoke-virtual {p0, p1, p2, p3}, Landroidx/compose/foundation/ScrollKt$scroll$2;->invoke(Landroidx/compose/ui/o;Landroidx/compose/runtime/l;I)Landroidx/compose/ui/o;
+    invoke-virtual {p0, p1, p2, p3}, Landroidx/compose/foundation/ScrollKt$scroll$2;->invoke(Landroidx/compose/ui/o;Landroidx/compose/runtime/j;I)Landroidx/compose/ui/o;
 
     move-result-object p1
 

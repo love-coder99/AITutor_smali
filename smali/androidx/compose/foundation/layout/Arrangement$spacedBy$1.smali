@@ -3,14 +3,14 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lzh/e;
+.implements Lka/e;
 
 
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "Lkotlin/jvm/internal/Lambda;",
-        "Lzh/e;"
+        "Lka/e;"
     }
 .end annotation
 
@@ -69,14 +69,13 @@
 .method public final invoke(ILandroidx/compose/ui/unit/LayoutDirection;)Ljava/lang/Integer;
     .locals 2
 
-    add-int/lit8 p1, p1, 0x0
-
     int-to-float p1, p1
 
     const/high16 v0, 0x40000000    # 2.0f
 
     div-float/2addr p1, v0
 
+    .line 1
     sget-object v0, Landroidx/compose/ui/unit/LayoutDirection;->Ltr:Landroidx/compose/ui/unit/LayoutDirection;
 
     const/high16 v1, -0x40800000    # -1.0f
@@ -101,12 +100,12 @@
 
     mul-float p2, p2, p1
 
-    .line 1
+    .line 2
     invoke-static {p2}, Ljava/lang/Math;->round(F)I
 
     move-result p1
 
-    .line 2
+    .line 3
     invoke-static {p1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
     move-result-object p1
@@ -117,7 +116,7 @@
 .method public bridge synthetic invoke(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
     .locals 0
 
-    .line 3
+    .line 4
     check-cast p1, Ljava/lang/Number;
 
     invoke-virtual {p1}, Ljava/lang/Number;->intValue()I

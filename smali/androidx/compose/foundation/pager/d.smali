@@ -2,9 +2,6 @@
 .super Ljava/lang/Object;
 .source "SourceFile"
 
-# interfaces
-.implements Landroidx/compose/foundation/pager/e;
-
 
 # instance fields
 .field public final a:I
@@ -132,7 +129,7 @@
     move-result-object p5
 
     .line 43
-    check-cast p5, Landroidx/compose/ui/layout/a1;
+    check-cast p5, Landroidx/compose/ui/layout/X;
 
     .line 44
     .line 45
@@ -144,7 +141,7 @@
 
     .line 48
     .line 49
-    iget p5, p5, Landroidx/compose/ui/layout/a1;->c:I
+    iget p5, p5, Landroidx/compose/ui/layout/X;->c:I
 
     .line 50
     .line 51
@@ -152,7 +149,7 @@
 
     .line 52
     :cond_1
-    iget p5, p5, Landroidx/compose/ui/layout/a1;->b:I
+    iget p5, p5, Landroidx/compose/ui/layout/X;->b:I
 
     .line 53
     .line 54
@@ -359,7 +356,7 @@
     move-result-object v4
 
     .line 25
-    check-cast v4, Landroidx/compose/ui/layout/a1;
+    check-cast v4, Landroidx/compose/ui/layout/X;
 
     .line 26
     .line 27
@@ -383,7 +380,7 @@
 
     .line 36
     .line 37
-    iget v8, v4, Landroidx/compose/ui/layout/a1;->b:I
+    iget v8, v4, Landroidx/compose/ui/layout/X;->b:I
 
     .line 38
     .line 39
@@ -415,7 +412,7 @@
 
     .line 52
     .line 53
-    iget v4, v4, Landroidx/compose/ui/layout/a1;->c:I
+    iget v4, v4, Landroidx/compose/ui/layout/X;->c:I
 
     .line 54
     .line 55
@@ -435,99 +432,83 @@
 
     .line 60
     .line 61
-    invoke-virtual {p2}, Ljava/lang/Object;->toString()Ljava/lang/String;
+    invoke-direct {p1, p2}, Ljava/lang/IllegalArgumentException;-><init>(Ljava/lang/String;)V
 
     .line 62
     .line 63
     .line 64
-    move-result-object p2
-
-    .line 65
-    invoke-direct {p1, p2}, Ljava/lang/IllegalArgumentException;-><init>(Ljava/lang/String;)V
-
-    .line 66
-    .line 67
-    .line 68
     throw p1
 
-    .line 69
+    .line 65
     :cond_2
     aput p1, v6, v5
 
+    .line 66
+    .line 67
+    add-int/lit8 v5, v5, 0x1
+
+    .line 68
+    .line 69
+    iget-object v7, p0, Landroidx/compose/foundation/pager/d;->g:Landroidx/compose/ui/d;
+
     .line 70
     .line 71
-    add-int/lit8 v5, v5, 0x1
+    if-eqz v7, :cond_3
 
     .line 72
     .line 73
-    iget-object v7, p0, Landroidx/compose/foundation/pager/d;->g:Landroidx/compose/ui/d;
+    iget v8, v4, Landroidx/compose/ui/layout/X;->c:I
 
     .line 74
     .line 75
-    if-eqz v7, :cond_3
+    check-cast v7, Landroidx/compose/ui/h;
 
     .line 76
     .line 77
-    iget v8, v4, Landroidx/compose/ui/layout/a1;->c:I
+    invoke-virtual {v7, v8, p3}, Landroidx/compose/ui/h;->a(II)I
 
     .line 78
     .line 79
-    check-cast v7, Landroidx/compose/ui/h;
-
     .line 80
+    move-result v7
+
     .line 81
-    invoke-virtual {v7, v8, p3}, Landroidx/compose/ui/h;->a(II)I
+    aput v7, v6, v5
 
     .line 82
     .line 83
+    iget v4, v4, Landroidx/compose/ui/layout/X;->b:I
+
     .line 84
-    move-result v7
-
     .line 85
-    aput v7, v6, v5
-
-    .line 86
-    .line 87
-    iget v4, v4, Landroidx/compose/ui/layout/a1;->b:I
-
-    .line 88
-    .line 89
     goto :goto_2
 
-    .line 90
+    .line 86
     :goto_3
     add-int/lit8 v3, v3, 0x1
 
-    .line 91
-    .line 92
+    .line 87
+    .line 88
     goto :goto_1
 
-    .line 93
+    .line 89
     :cond_3
     new-instance p1, Ljava/lang/IllegalArgumentException;
 
-    .line 94
-    .line 95
+    .line 90
+    .line 91
     const-string p2, "null verticalAlignment"
 
-    .line 96
-    .line 97
-    invoke-virtual {p2}, Ljava/lang/Object;->toString()Ljava/lang/String;
-
-    .line 98
-    .line 99
-    .line 100
-    move-result-object p2
-
-    .line 101
+    .line 92
+    .line 93
     invoke-direct {p1, p2}, Ljava/lang/IllegalArgumentException;-><init>(Ljava/lang/String;)V
 
-    .line 102
-    .line 103
-    .line 104
+    .line 94
+    .line 95
+    .line 96
     throw p1
 
-    .line 105
+    .line 97
     :cond_4
     return-void
 .end method

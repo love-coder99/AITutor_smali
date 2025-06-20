@@ -49,6 +49,8 @@
 
 .method public static newBuilder()Lcom/android/billingclient/api/QueryProductDetailsParams$Product$Builder;
     .locals 2
+    .annotation build Landroidx/annotation/NonNull;
+    .end annotation
 
     new-instance v0, Lcom/android/billingclient/api/QueryProductDetailsParams$Product$Builder;
 
@@ -63,6 +65,8 @@
 # virtual methods
 .method public final zza()Ljava/lang/String;
     .locals 1
+    .annotation build Landroidx/annotation/NonNull;
+    .end annotation
 
     iget-object v0, p0, Lcom/android/billingclient/api/QueryProductDetailsParams$Product;->zza:Ljava/lang/String;
 
@@ -71,6 +75,8 @@
 
 .method public final zzb()Ljava/lang/String;
     .locals 1
+    .annotation build Landroidx/annotation/NonNull;
+    .end annotation
 
     iget-object v0, p0, Lcom/android/billingclient/api/QueryProductDetailsParams$Product;->zzb:Ljava/lang/String;
 

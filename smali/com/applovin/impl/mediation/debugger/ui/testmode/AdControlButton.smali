@@ -167,9 +167,9 @@
 
     if-ne v0, p1, :cond_0
 
+    .line 2
     sget p1, Lcom/applovin/sdk/R$color;->applovin_sdk_brand_color:I
 
-    .line 2
     invoke-virtual {p0}, Landroid/view/View;->getContext()Landroid/content/Context;
 
     move-result-object v0
@@ -186,9 +186,9 @@
 
     if-ne v0, p1, :cond_1
 
+    .line 4
     sget p1, Lcom/applovin/sdk/R$color;->applovin_sdk_brand_color:I
 
-    .line 4
     invoke-virtual {p0}, Landroid/view/View;->getContext()Landroid/content/Context;
 
     move-result-object v0
@@ -199,10 +199,10 @@
 
     return p1
 
+    .line 5
     :cond_1
     sget p1, Lcom/applovin/sdk/R$color;->applovin_sdk_adControlbutton_brightBlueColor:I
 
-    .line 5
     invoke-virtual {p0}, Landroid/view/View;->getContext()Landroid/content/Context;
 
     move-result-object v0
@@ -217,29 +217,31 @@
 .method private a()V
     .locals 4
 
-    const v0, 0x10100a7
+    const/4 v0, 0x0
 
-    filled-new-array {v0}, [I
+    .line 6
+    new-array v1, v0, [I
 
-    move-result-object v0
+    const/4 v2, 0x2
 
-    const/4 v1, 0x0
+    new-array v2, v2, [[I
 
-    new-array v2, v1, [I
+    const v3, 0x10100a7
 
-    const/4 v3, 0x2
+    filled-new-array {v3}, [I
 
-    new-array v3, v3, [[I
+    move-result-object v3
 
-    aput-object v0, v3, v1
+    aput-object v3, v2, v0
 
     const/4 v0, 0x1
 
-    aput-object v2, v3, v0
+    aput-object v1, v2, v0
 
+    .line 7
     sget v0, Lcom/applovin/sdk/R$color;->applovin_sdk_highlightTextColor:I
 
-    .line 6
+    .line 8
     invoke-virtual {p0}, Landroid/view/View;->getContext()Landroid/content/Context;
 
     move-result-object v1
@@ -254,14 +256,14 @@
 
     move-result-object v0
 
-    .line 7
+    .line 9
     new-instance v1, Landroid/content/res/ColorStateList;
 
-    invoke-direct {v1, v3, v0}, Landroid/content/res/ColorStateList;-><init>([[I[I)V
+    invoke-direct {v1, v2, v0}, Landroid/content/res/ColorStateList;-><init>([[I[I)V
 
+    .line 10
     iget-object v0, p0, Lcom/applovin/impl/mediation/debugger/ui/testmode/AdControlButton;->b:Landroid/widget/Button;
 
-    .line 8
     invoke-virtual {v0, v1}, Landroid/widget/TextView;->setTextColor(Landroid/content/res/ColorStateList;)V
 
     return-void
@@ -403,16 +405,22 @@
 .method public getControlState()Lcom/applovin/impl/mediation/debugger/ui/testmode/AdControlButton$b;
     .locals 1
 
+    .line 1
     iget-object v0, p0, Lcom/applovin/impl/mediation/debugger/ui/testmode/AdControlButton;->d:Lcom/applovin/impl/mediation/debugger/ui/testmode/AdControlButton$b;
 
+    .line 2
+    .line 3
     return-object v0
 .end method
 
 .method public getFormat()Lcom/applovin/mediation/MaxAdFormat;
     .locals 1
 
+    .line 1
     iget-object v0, p0, Lcom/applovin/impl/mediation/debugger/ui/testmode/AdControlButton;->f:Lcom/applovin/mediation/MaxAdFormat;
 
+    .line 2
+    .line 3
     return-object v0
 .end method
 
@@ -465,15 +473,21 @@
 .method public setFormat(Lcom/applovin/mediation/MaxAdFormat;)V
     .locals 0
 
+    .line 1
     iput-object p1, p0, Lcom/applovin/impl/mediation/debugger/ui/testmode/AdControlButton;->f:Lcom/applovin/mediation/MaxAdFormat;
 
+    .line 2
+    .line 3
     return-void
 .end method
 
 .method public setOnClickListener(Lcom/applovin/impl/mediation/debugger/ui/testmode/AdControlButton$a;)V
     .locals 0
 
+    .line 1
     iput-object p1, p0, Lcom/applovin/impl/mediation/debugger/ui/testmode/AdControlButton;->g:Lcom/applovin/impl/mediation/debugger/ui/testmode/AdControlButton$a;
 
+    .line 2
+    .line 3
     return-void
 .end method

@@ -40,6 +40,7 @@
         0x8,
         0x0
     }
+    xi = 0x30
 .end annotation
 
 
@@ -229,16 +230,22 @@
 .method public final getId()I
     .locals 1
 
+    .line 1
     iget v0, p0, Landroidx/compose/ui/platform/actionmodecallback/MenuItemOption;->id:I
 
+    .line 2
+    .line 3
     return v0
 .end method
 
 .method public final getOrder()I
     .locals 1
 
+    .line 1
     iget v0, p0, Landroidx/compose/ui/platform/actionmodecallback/MenuItemOption;->order:I
 
+    .line 2
+    .line 3
     return v0
 .end method
 
@@ -246,7 +253,7 @@
     .locals 2
 
     .line 1
-    sget-object v0, Lw1/b;->a:[I
+    sget-object v0, LB0/b;->a:[I
 
     .line 2
     .line 3

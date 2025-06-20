@@ -14,6 +14,10 @@
 
 .method public static addObjectIfExists(Ljava/lang/Object;Ljava/util/List;)Z
     .locals 0
+    .param p0    # Ljava/lang/Object;
+        .annotation build Landroidx/annotation/Nullable;
+        .end annotation
+    .end param
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<T:",
@@ -49,6 +53,10 @@
 
 .method public static addUniqueObjectIfExists(Ljava/lang/Object;Ljava/util/List;)Z
     .locals 1
+    .param p0    # Ljava/lang/Object;
+        .annotation build Landroidx/annotation/Nullable;
+        .end annotation
+    .end param
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<T:",
@@ -96,6 +104,10 @@
 
 .method public static addUniqueObjectsIfExists(Ljava/util/List;Ljava/util/List;)V
     .locals 2
+    .param p0    # Ljava/util/List;
+        .annotation build Landroidx/annotation/Nullable;
+        .end annotation
+    .end param
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<T:",
@@ -184,9 +196,9 @@
         }
     .end annotation
 
+    .line 1
     const-string v0, ",\\s*"
 
-    .line 1
     invoke-static {p0, v0}, Lcom/applovin/impl/sdk/utils/CollectionUtils;->explode(Ljava/lang/String;Ljava/lang/String;)Ljava/util/List;
 
     move-result-object p0
@@ -347,6 +359,17 @@
 
 .method public static getDifferenceSet(Ljava/util/Set;Ljava/util/Set;)Ljava/util/Set;
     .locals 1
+    .param p0    # Ljava/util/Set;
+        .annotation build Landroidx/annotation/Nullable;
+        .end annotation
+    .end param
+    .param p1    # Ljava/util/Set;
+        .annotation build Landroidx/annotation/Nullable;
+        .end annotation
+    .end param
+    .annotation build Landroidx/annotation/Nullable;
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<T:",
@@ -450,9 +473,9 @@
         }
     .end annotation
 
+    .line 1
     const-string v0, ","
 
-    .line 1
     invoke-static {p0, v0, p1}, Lcom/applovin/impl/sdk/utils/CollectionUtils;->implode(Ljava/util/Collection;Ljava/lang/String;I)Ljava/lang/String;
 
     move-result-object p0
@@ -562,13 +585,14 @@
 
     return-object p0
 
+    .line 8
     :cond_4
     :goto_2
     const-string p0, ""
 
     return-object p0
 
-    .line 8
+    .line 9
     :cond_5
     new-instance p0, Ljava/lang/IllegalArgumentException;
 
@@ -581,6 +605,10 @@
 
 .method public static isEmpty(Ljava/util/Collection;)Z
     .locals 0
+    .param p0    # Ljava/util/Collection;
+        .annotation build Landroidx/annotation/Nullable;
+        .end annotation
+    .end param
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<E:",
@@ -617,6 +645,10 @@
 
 .method public static isEmpty(Ljava/util/Map;)Z
     .locals 0
+    .param p0    # Ljava/util/Map;
+        .annotation build Landroidx/annotation/Nullable;
+        .end annotation
+    .end param
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<K:",
@@ -1425,6 +1457,8 @@
 
 .method public static toJSONArray([Ljava/lang/String;)Lorg/json/JSONArray;
     .locals 4
+    .annotation build Landroidx/annotation/Nullable;
+    .end annotation
 
     .line 1
     if-nez p0, :cond_0

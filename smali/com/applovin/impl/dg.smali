@@ -56,10 +56,10 @@
 
     const/4 v0, 0x0
 
+    .line 3
     :goto_0
     iget-object v1, p0, Lcom/applovin/impl/dg;->b:Lcom/applovin/impl/sdk/j;
 
-    .line 3
     sget-object v2, Lcom/applovin/impl/sj;->T:Lcom/applovin/impl/sj;
 
     invoke-virtual {v1, v2}, Lcom/applovin/impl/sdk/j;->a(Lcom/applovin/impl/sj;)Ljava/lang/Object;
@@ -101,9 +101,9 @@
 
     if-eqz p1, :cond_0
 
+    .line 1
     iget-object v0, p0, Lcom/applovin/impl/dg;->a:Ljava/util/concurrent/PriorityBlockingQueue;
 
-    .line 1
     invoke-virtual {v0, p1}, Ljava/util/concurrent/PriorityBlockingQueue;->add(Ljava/lang/Object;)Z
 
     return-void

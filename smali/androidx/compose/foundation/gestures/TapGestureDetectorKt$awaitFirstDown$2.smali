@@ -4,6 +4,15 @@
 
 
 # annotations
+.annotation runtime Lca/c;
+    c = "androidx.compose.foundation.gestures.TapGestureDetectorKt"
+    f = "TapGestureDetector.kt"
+    l = {
+        0x117
+    }
+    m = "awaitFirstDown"
+.end annotation
+
 .annotation runtime Lkotlin/Metadata;
     k = 0x3
     mv = {
@@ -12,15 +21,6 @@
         0x0
     }
     xi = 0x30
-.end annotation
-
-.annotation runtime Lth/c;
-    c = "androidx.compose.foundation.gestures.TapGestureDetectorKt"
-    f = "TapGestureDetector.kt"
-    l = {
-        0x117
-    }
-    m = "awaitFirstDown"
 .end annotation
 
 
@@ -73,7 +73,7 @@
 
     const/4 v0, 0x0
 
-    invoke-static {p1, v0, p1, p0}, Landroidx/compose/foundation/gestures/m0;->b(Landroidx/compose/ui/input/pointer/b;ZLandroidx/compose/ui/input/pointer/PointerEventPass;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
+    invoke-static {p1, v0, p1, p0}, Landroidx/compose/foundation/gestures/O;->b(Landroidx/compose/ui/input/pointer/b;ZLandroidx/compose/ui/input/pointer/PointerEventPass;Lkotlin/coroutines/jvm/internal/BaseContinuationImpl;)Ljava/lang/Object;
 
     move-result-object p1
 

@@ -28,6 +28,7 @@
 .method public synthetic constructor <init>(Lcom/android/billingclient/api/zzck;)V
     .locals 0
 
+    .line 2
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -35,6 +36,8 @@
 
 .method public static newBuilder()Lcom/android/billingclient/api/ConsumeParams$Builder;
     .locals 2
+    .annotation build Landroidx/annotation/NonNull;
+    .end annotation
 
     new-instance v0, Lcom/android/billingclient/api/ConsumeParams$Builder;
 
@@ -57,6 +60,8 @@
 # virtual methods
 .method public getPurchaseToken()Ljava/lang/String;
     .locals 1
+    .annotation build Landroidx/annotation/NonNull;
+    .end annotation
 
     iget-object v0, p0, Lcom/android/billingclient/api/ConsumeParams;->zza:Ljava/lang/String;
 

@@ -305,7 +305,7 @@
 
     .line 65
     .line 66
-    invoke-static {v1, p0}, Landroid/support/v4/media/session/a;->D(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v1, p0}, LB/u;->t(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     .line 67
     .line 68
@@ -335,8 +335,11 @@
 .method public getHeight()I
     .locals 1
 
+    .line 1
     iget v0, p0, Lcom/applovin/sdk/AppLovinAdSize;->c:I
 
+    .line 2
+    .line 3
     return v0
 .end method
 
@@ -366,8 +369,11 @@
 .method public getWidth()I
     .locals 1
 
+    .line 1
     iget v0, p0, Lcom/applovin/sdk/AppLovinAdSize;->b:I
 
+    .line 2
+    .line 3
     return v0
 .end method
 

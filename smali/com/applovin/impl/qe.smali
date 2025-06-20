@@ -31,22 +31,24 @@
 .method private a()V
     .locals 2
 
+    .line 4
     iget-object v0, p0, Lcom/applovin/impl/qe;->f:Lcom/applovin/impl/o;
 
     if-eqz v0, :cond_0
 
-    .line 4
+    .line 5
     invoke-virtual {v0}, Lcom/applovin/impl/o;->b()V
 
+    .line 6
     iget-object v0, p0, Lcom/applovin/impl/qe;->c:Landroid/widget/FrameLayout;
 
     iget-object v1, p0, Lcom/applovin/impl/qe;->f:Lcom/applovin/impl/o;
 
-    .line 5
     invoke-virtual {v0, v1}, Landroid/view/ViewGroup;->removeView(Landroid/view/View;)V
 
     const/4 v0, 0x0
 
+    .line 7
     iput-object v0, p0, Lcom/applovin/impl/qe;->f:Lcom/applovin/impl/o;
 
     :cond_0
@@ -56,9 +58,9 @@
 .method private synthetic a(Landroid/content/Context;)V
     .locals 2
 
+    .line 3
     iget-object v0, p0, Lcom/applovin/impl/qe;->a:Lcom/applovin/impl/se;
 
-    .line 3
     invoke-virtual {v0}, Lcom/applovin/impl/se;->h()Ljava/lang/String;
 
     move-result-object v0
@@ -104,9 +106,9 @@
 .method private b()V
     .locals 3
 
+    .line 6
     iget-object v0, p0, Lcom/applovin/impl/qe;->a:Lcom/applovin/impl/se;
 
-    .line 6
     invoke-virtual {v0}, Lcom/applovin/impl/se;->o()Ljava/lang/String;
 
     move-result-object v0
@@ -128,28 +130,28 @@
 
     invoke-direct {v1, v2}, Landroid/content/Intent;-><init>(Ljava/lang/String;)V
 
+    .line 9
     const-string v2, "text/plain"
 
-    .line 9
     invoke-virtual {v1, v2}, Landroid/content/Intent;->setType(Ljava/lang/String;)Landroid/content/Intent;
 
+    .line 10
     const-string v2, "android.intent.extra.TEXT"
 
-    .line 10
     invoke-virtual {v1, v2, v0}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Ljava/lang/String;)Landroid/content/Intent;
 
+    .line 11
     const-string v0, "android.intent.extra.TITLE"
 
     const-string v2, "Mediation Debugger logs"
 
-    .line 11
     invoke-virtual {v1, v0, v2}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Ljava/lang/String;)Landroid/content/Intent;
 
+    .line 12
     const-string v0, "android.intent.extra.SUBJECT"
 
     const-string v2, "MAX Mediation Debugger logs"
 
-    .line 12
     invoke-virtual {v1, v0, v2}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Ljava/lang/String;)Landroid/content/Intent;
 
     const/4 v0, 0x0
@@ -167,9 +169,9 @@
 .method private b(Landroid/content/Context;)V
     .locals 2
 
+    .line 3
     iget-object v0, p0, Lcom/applovin/impl/qe;->a:Lcom/applovin/impl/se;
 
-    .line 3
     invoke-virtual {v0}, Lcom/applovin/impl/se;->g()Ljava/lang/String;
 
     move-result-object v0
@@ -188,19 +190,19 @@
 
     if-nez v0, :cond_0
 
+    .line 4
     iget-object v0, p0, Lcom/applovin/impl/qe;->a:Lcom/applovin/impl/se;
 
     const/4 v1, 0x1
 
-    .line 4
     invoke-virtual {v0, v1}, Lcom/applovin/impl/se;->b(Z)V
 
     .line 5
-    new-instance v0, Lcom/applovin/impl/ps;
+    new-instance v0, Lcom/applovin/impl/H;
 
     const/16 v1, 0x17
 
-    invoke-direct {v0, p0, v1, p1}, Lcom/applovin/impl/ps;-><init>(Ljava/lang/Object;ILjava/lang/Object;)V
+    invoke-direct {v0, p0, v1, p1}, Lcom/applovin/impl/H;-><init>(Ljava/lang/Object;ILjava/lang/Object;)V
 
     invoke-virtual {p0, v0}, Landroid/app/Activity;->runOnUiThread(Ljava/lang/Runnable;)V
 

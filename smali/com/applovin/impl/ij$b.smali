@@ -41,9 +41,10 @@
     .line 2
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
+    .line 3
     iput-wide p1, p0, Lcom/applovin/impl/ij$b;->a:J
 
-    .line 3
+    .line 4
     new-instance p1, Lcom/applovin/impl/ij$a;
 
     const-wide/16 v0, 0x0
@@ -52,7 +53,7 @@
 
     if-nez p2, :cond_0
 
-    .line 4
+    .line 5
     sget-object p2, Lcom/applovin/impl/kj;->c:Lcom/applovin/impl/kj;
 
     goto :goto_0
@@ -75,7 +76,7 @@
 .method public b(J)Lcom/applovin/impl/ij$a;
     .locals 0
 
-    .line 1
+    .line 2
     iget-object p1, p0, Lcom/applovin/impl/ij$b;->b:Lcom/applovin/impl/ij$a;
 
     return-object p1
@@ -84,7 +85,7 @@
 .method public b()Z
     .locals 1
 
-    .line 2
+    .line 1
     const/4 v0, 0x0
 
     return v0
@@ -93,7 +94,10 @@
 .method public d()J
     .locals 2
 
+    .line 1
     iget-wide v0, p0, Lcom/applovin/impl/ij$b;->a:J
 
+    .line 2
+    .line 3
     return-wide v0
 .end method

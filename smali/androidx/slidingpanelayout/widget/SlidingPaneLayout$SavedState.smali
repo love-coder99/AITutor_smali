@@ -37,7 +37,7 @@
     .locals 1
 
     .line 1
-    new-instance v0, Landroidx/slidingpanelayout/widget/i;
+    new-instance v0, Landroidx/slidingpanelayout/widget/e;
 
     .line 2
     .line 3

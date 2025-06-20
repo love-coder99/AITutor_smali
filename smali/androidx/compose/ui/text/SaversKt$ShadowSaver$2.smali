@@ -3,14 +3,14 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lzh/c;
+.implements Lka/c;
 
 
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "Lkotlin/jvm/internal/Lambda;",
-        "Lzh/c;"
+        "Lka/c;"
     }
 .end annotation
 
@@ -21,9 +21,9 @@
     d2 = {
         "",
         "it",
-        "Landroidx/compose/ui/graphics/y0;",
+        "Landroidx/compose/ui/graphics/Y;",
         "invoke",
-        "(Ljava/lang/Object;)Landroidx/compose/ui/graphics/y0;",
+        "(Ljava/lang/Object;)Landroidx/compose/ui/graphics/Y;",
         "<anonymous>"
     }
     k = 0x3
@@ -64,14 +64,14 @@
 
 
 # virtual methods
-.method public final invoke(Ljava/lang/Object;)Landroidx/compose/ui/graphics/y0;
-    .locals 11
+.method public final invoke(Ljava/lang/Object;)Landroidx/compose/ui/graphics/Y;
+    .locals 9
 
     .line 2
     check-cast p1, Ljava/util/List;
 
     .line 3
-    new-instance v6, Landroidx/compose/ui/graphics/y0;
+    new-instance v6, Landroidx/compose/ui/graphics/Y;
 
     const/4 v0, 0x0
 
@@ -85,10 +85,10 @@
     .line 5
     sget-object v1, Landroidx/compose/ui/text/z;->r:Landroidx/compose/ui/text/y;
 
+    .line 6
     sget-object v2, Ljava/lang/Boolean;->FALSE:Ljava/lang/Boolean;
 
-    .line 6
-    invoke-static {v0, v2}, Lrb/h;->d(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v0, v2}, Lkotlin/jvm/internal/h;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result v3
 
@@ -109,74 +109,68 @@
     if-eqz v0, :cond_0
 
     .line 7
-    iget-object v1, v1, Landroidx/compose/ui/text/y;->b:Lzh/c;
+    iget-object v1, v1, Landroidx/compose/ui/text/y;->c:Lkotlin/jvm/internal/Lambda;
 
     .line 8
-    invoke-interface {v1, v0}, Lzh/c;->invoke(Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-interface {v1, v0}, Lka/c;->invoke(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object v0
 
     .line 9
     check-cast v0, Landroidx/compose/ui/graphics/w;
 
-    .line 10
     :goto_0
-    iget-wide v7, v0, Landroidx/compose/ui/graphics/w;->a:J
+    const/4 v1, 0x1
 
-    const/4 v0, 0x1
+    .line 10
+    invoke-interface {p1, v1}, Ljava/util/List;->get(I)Ljava/lang/Object;
+
+    move-result-object v1
 
     .line 11
-    invoke-interface {p1, v0}, Ljava/util/List;->get(I)Ljava/lang/Object;
-
-    move-result-object v0
+    sget-object v3, Landroidx/compose/ui/text/z;->t:Landroidx/compose/ui/text/y;
 
     .line 12
-    sget-object v1, Landroidx/compose/ui/text/z;->t:Landroidx/compose/ui/text/y;
-
-    .line 13
-    invoke-static {v0, v2}, Lrb/h;->d(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v1, v2}, Lkotlin/jvm/internal/h;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result v2
 
     if-eqz v2, :cond_3
 
-    instance-of v2, v1, Landroidx/compose/ui/text/y;
+    instance-of v2, v3, Landroidx/compose/ui/text/y;
 
     if-nez v2, :cond_3
 
     :cond_2
-    move-object v0, v4
+    move-object v1, v4
 
     goto :goto_1
 
     :cond_3
-    if-eqz v0, :cond_2
+    if-eqz v1, :cond_2
+
+    .line 13
+    iget-object v2, v3, Landroidx/compose/ui/text/y;->c:Lkotlin/jvm/internal/Lambda;
 
     .line 14
-    iget-object v1, v1, Landroidx/compose/ui/text/y;->b:Lzh/c;
+    invoke-interface {v2, v1}, Lka/c;->invoke(Ljava/lang/Object;)Ljava/lang/Object;
+
+    move-result-object v1
 
     .line 15
-    invoke-interface {v1, v0}, Lzh/c;->invoke(Ljava/lang/Object;)Ljava/lang/Object;
+    check-cast v1, Lr0/c;
 
-    move-result-object v0
+    :goto_1
+    const/4 v2, 0x2
 
     .line 16
-    check-cast v0, Ln1/c;
-
-    .line 17
-    :goto_1
-    iget-wide v9, v0, Ln1/c;->a:J
-
-    const/4 v0, 0x2
-
-    .line 18
-    invoke-interface {p1, v0}, Ljava/util/List;->get(I)Ljava/lang/Object;
+    invoke-interface {p1, v2}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
     move-result-object p1
 
     if-eqz p1, :cond_4
 
-    .line 19
+    .line 17
     move-object v4, p1
 
     check-cast v4, Ljava/lang/Float;
@@ -186,14 +180,18 @@
 
     move-result v5
 
+    .line 18
+    iget-wide v2, v0, Landroidx/compose/ui/graphics/w;->a:J
+
+    iget-wide v7, v1, Lr0/c;->a:J
+
     move-object v0, v6
 
-    move-wide v1, v7
+    move-wide v1, v2
 
-    move-wide v3, v9
+    move-wide v3, v7
 
-    .line 20
-    invoke-direct/range {v0 .. v5}, Landroidx/compose/ui/graphics/y0;-><init>(JJF)V
+    invoke-direct/range {v0 .. v5}, Landroidx/compose/ui/graphics/Y;-><init>(JJF)V
 
     return-object v6
 .end method
@@ -202,7 +200,7 @@
     .locals 0
 
     .line 1
-    invoke-virtual {p0, p1}, Landroidx/compose/ui/text/SaversKt$ShadowSaver$2;->invoke(Ljava/lang/Object;)Landroidx/compose/ui/graphics/y0;
+    invoke-virtual {p0, p1}, Landroidx/compose/ui/text/SaversKt$ShadowSaver$2;->invoke(Ljava/lang/Object;)Landroidx/compose/ui/graphics/Y;
 
     move-result-object p1
 

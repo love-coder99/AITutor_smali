@@ -94,8 +94,11 @@
 .method public c(I)Ljava/util/List;
     .locals 0
 
+    .line 1
     iget-object p1, p0, Lcom/applovin/impl/jr$a;->f:Ljava/util/List;
 
+    .line 2
+    .line 3
     return-object p1
 .end method
 

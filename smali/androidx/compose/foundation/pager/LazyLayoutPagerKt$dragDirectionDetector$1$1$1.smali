@@ -3,10 +3,20 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lzh/e;
+.implements Lka/e;
 
 
 # annotations
+.annotation runtime Lca/c;
+    c = "androidx.compose.foundation.pager.LazyLayoutPagerKt$dragDirectionDetector$1$1$1"
+    f = "LazyLayoutPager.kt"
+    l = {
+        0x11f,
+        0x123
+    }
+    m = "invokeSuspend"
+.end annotation
+
 .annotation system Ldalvik/annotation/EnclosingMethod;
     value = Landroidx/compose/foundation/pager/LazyLayoutPagerKt$dragDirectionDetector$1$1;->invokeSuspend(Ljava/lang/Object;)Ljava/lang/Object;
 .end annotation
@@ -19,18 +29,19 @@
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "Lkotlin/coroutines/jvm/internal/RestrictedSuspendLambda;",
-        "Lzh/e;"
+        "Lka/e;"
     }
 .end annotation
 
 .annotation runtime Lkotlin/Metadata;
     d1 = {
-        "\u0000\n\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\u0010\u0002\u001a\u00020\u0001*\u00020\u0000H\u008a@"
+        "\u0000\u000c\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0008\u0002\u0010\u0002\u001a\u00020\u0001*\u00020\u0000H\u008a@\u00a2\u0006\u0004\u0008\u0002\u0010\u0003"
     }
     d2 = {
         "Landroidx/compose/ui/input/pointer/b;",
-        "Lqh/r;",
-        "<anonymous>"
+        "LX9/j;",
+        "<anonymous>",
+        "(Landroidx/compose/ui/input/pointer/b;)V"
     }
     k = 0x3
     mv = {
@@ -40,19 +51,9 @@
     }
 .end annotation
 
-.annotation runtime Lth/c;
-    c = "androidx.compose.foundation.pager.LazyLayoutPagerKt$dragDirectionDetector$1$1$1"
-    f = "LazyLayoutPager.kt"
-    l = {
-        0x11f,
-        0x123
-    }
-    m = "invokeSuspend"
-.end annotation
-
 
 # instance fields
-.field final synthetic $state:Landroidx/compose/foundation/pager/u;
+.field final synthetic $state:Landroidx/compose/foundation/pager/o;
 
 .field private synthetic L$0:Ljava/lang/Object;
 
@@ -64,12 +65,12 @@
 
 
 # direct methods
-.method public constructor <init>(Landroidx/compose/foundation/pager/u;Lkotlin/coroutines/Continuation;)V
+.method public constructor <init>(Landroidx/compose/foundation/pager/o;Lkotlin/coroutines/Continuation;)V
     .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
-            "Landroidx/compose/foundation/pager/u;",
+            "Landroidx/compose/foundation/pager/o;",
             "Lkotlin/coroutines/Continuation<",
             "-",
             "Landroidx/compose/foundation/pager/LazyLayoutPagerKt$dragDirectionDetector$1$1$1;",
@@ -77,7 +78,7 @@
         }
     .end annotation
 
-    iput-object p1, p0, Landroidx/compose/foundation/pager/LazyLayoutPagerKt$dragDirectionDetector$1$1$1;->$state:Landroidx/compose/foundation/pager/u;
+    iput-object p1, p0, Landroidx/compose/foundation/pager/LazyLayoutPagerKt$dragDirectionDetector$1$1$1;->$state:Landroidx/compose/foundation/pager/o;
 
     const/4 p1, 0x2
 
@@ -97,16 +98,16 @@
             "Lkotlin/coroutines/Continuation<",
             "*>;)",
             "Lkotlin/coroutines/Continuation<",
-            "Lqh/r;",
+            "LX9/j;",
             ">;"
         }
     .end annotation
 
     new-instance v0, Landroidx/compose/foundation/pager/LazyLayoutPagerKt$dragDirectionDetector$1$1$1;
 
-    iget-object v1, p0, Landroidx/compose/foundation/pager/LazyLayoutPagerKt$dragDirectionDetector$1$1$1;->$state:Landroidx/compose/foundation/pager/u;
+    iget-object v1, p0, Landroidx/compose/foundation/pager/LazyLayoutPagerKt$dragDirectionDetector$1$1$1;->$state:Landroidx/compose/foundation/pager/o;
 
-    invoke-direct {v0, v1, p2}, Landroidx/compose/foundation/pager/LazyLayoutPagerKt$dragDirectionDetector$1$1$1;-><init>(Landroidx/compose/foundation/pager/u;Lkotlin/coroutines/Continuation;)V
+    invoke-direct {v0, v1, p2}, Landroidx/compose/foundation/pager/LazyLayoutPagerKt$dragDirectionDetector$1$1$1;-><init>(Landroidx/compose/foundation/pager/o;Lkotlin/coroutines/Continuation;)V
 
     iput-object p1, v0, Landroidx/compose/foundation/pager/LazyLayoutPagerKt$dragDirectionDetector$1$1$1;->L$0:Ljava/lang/Object;
 
@@ -121,7 +122,7 @@
             "Landroidx/compose/ui/input/pointer/b;",
             "Lkotlin/coroutines/Continuation<",
             "-",
-            "Lqh/r;",
+            "LX9/j;",
             ">;)",
             "Ljava/lang/Object;"
         }
@@ -134,7 +135,7 @@
 
     check-cast p1, Landroidx/compose/foundation/pager/LazyLayoutPagerKt$dragDirectionDetector$1$1$1;
 
-    sget-object p2, Lqh/r;->a:Lqh/r;
+    sget-object p2, LX9/j;->a:LX9/j;
 
     invoke-virtual {p1, p2}, Landroidx/compose/foundation/pager/LazyLayoutPagerKt$dragDirectionDetector$1$1$1;->invokeSuspend(Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -159,7 +160,7 @@
 .end method
 
 .method public final invokeSuspend(Ljava/lang/Object;)Ljava/lang/Object;
-    .locals 12
+    .locals 11
 
     .line 1
     sget-object v0, Lkotlin/coroutines/intrinsics/CoroutineSingletons;->COROUTINE_SUSPENDED:Lkotlin/coroutines/intrinsics/CoroutineSingletons;
@@ -195,7 +196,7 @@
 
     .line 15
     .line 16
-    check-cast v1, Landroidx/compose/ui/input/pointer/r;
+    check-cast v1, Landroidx/compose/ui/input/pointer/n;
 
     .line 17
     .line 18
@@ -203,7 +204,7 @@
 
     .line 19
     .line 20
-    check-cast v2, Landroidx/compose/ui/input/pointer/r;
+    check-cast v2, Landroidx/compose/ui/input/pointer/n;
 
     .line 21
     .line 22
@@ -220,339 +221,327 @@
     .line 27
     .line 28
     .line 29
-    move-object v6, p0
-
-    .line 30
     goto :goto_2
 
-    .line 31
+    .line 30
     :cond_0
     new-instance p1, Ljava/lang/IllegalStateException;
 
+    .line 31
     .line 32
-    .line 33
     const-string v0, "call to \'resume\' before \'invoke\' with coroutine"
 
+    .line 33
     .line 34
-    .line 35
     invoke-direct {p1, v0}, Ljava/lang/IllegalStateException;-><init>(Ljava/lang/String;)V
 
+    .line 35
     .line 36
     .line 37
-    .line 38
     throw p1
 
-    .line 39
+    .line 38
     :cond_1
     iget-object v1, p0, Landroidx/compose/foundation/pager/LazyLayoutPagerKt$dragDirectionDetector$1$1$1;->L$0:Ljava/lang/Object;
 
+    .line 39
     .line 40
-    .line 41
     check-cast v1, Landroidx/compose/ui/input/pointer/b;
 
+    .line 41
     .line 42
-    .line 43
     invoke-static {p1}, Lkotlin/b;->a(Ljava/lang/Object;)V
 
+    .line 43
     .line 44
     .line 45
-    .line 46
     goto :goto_0
 
-    .line 47
+    .line 46
     :cond_2
     invoke-static {p1}, Lkotlin/b;->a(Ljava/lang/Object;)V
 
+    .line 47
     .line 48
     .line 49
-    .line 50
     iget-object p1, p0, Landroidx/compose/foundation/pager/LazyLayoutPagerKt$dragDirectionDetector$1$1$1;->L$0:Ljava/lang/Object;
 
+    .line 50
     .line 51
-    .line 52
     move-object v1, p1
 
-    .line 53
+    .line 52
     check-cast v1, Landroidx/compose/ui/input/pointer/b;
 
+    .line 53
     .line 54
-    .line 55
     sget-object p1, Landroidx/compose/ui/input/pointer/PointerEventPass;->Initial:Landroidx/compose/ui/input/pointer/PointerEventPass;
 
+    .line 55
     .line 56
-    .line 57
     iput-object v1, p0, Landroidx/compose/foundation/pager/LazyLayoutPagerKt$dragDirectionDetector$1$1$1;->L$0:Ljava/lang/Object;
 
+    .line 57
     .line 58
-    .line 59
     iput v2, p0, Landroidx/compose/foundation/pager/LazyLayoutPagerKt$dragDirectionDetector$1$1$1;->label:I
 
+    .line 59
     .line 60
-    .line 61
-    invoke-static {v1, v4, p1, p0}, Landroidx/compose/foundation/gestures/m0;->b(Landroidx/compose/ui/input/pointer/b;ZLandroidx/compose/ui/input/pointer/PointerEventPass;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
+    invoke-static {v1, v4, p1, p0}, Landroidx/compose/foundation/gestures/O;->b(Landroidx/compose/ui/input/pointer/b;ZLandroidx/compose/ui/input/pointer/PointerEventPass;Lkotlin/coroutines/jvm/internal/BaseContinuationImpl;)Ljava/lang/Object;
 
+    .line 61
     .line 62
     .line 63
-    .line 64
     move-result-object p1
 
-    .line 65
+    .line 64
     if-ne p1, v0, :cond_3
 
+    .line 65
     .line 66
-    .line 67
     return-object v0
 
-    .line 68
+    .line 67
     :cond_3
     :goto_0
-    check-cast p1, Landroidx/compose/ui/input/pointer/r;
+    check-cast p1, Landroidx/compose/ui/input/pointer/n;
 
+    .line 68
     .line 69
-    .line 70
-    iget-object v2, p0, Landroidx/compose/foundation/pager/LazyLayoutPagerKt$dragDirectionDetector$1$1$1;->$state:Landroidx/compose/foundation/pager/u;
+    iget-object v2, p0, Landroidx/compose/foundation/pager/LazyLayoutPagerKt$dragDirectionDetector$1$1$1;->$state:Landroidx/compose/foundation/pager/o;
 
+    .line 70
     .line 71
-    .line 72
     invoke-virtual {v2}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
+    .line 72
     .line 73
     .line 74
-    .line 75
-    new-instance v5, Ln1/c;
+    new-instance v5, Lr0/c;
 
+    .line 75
     .line 76
-    .line 77
     const-wide/16 v6, 0x0
 
+    .line 77
     .line 78
-    .line 79
-    invoke-direct {v5, v6, v7}, Ln1/c;-><init>(J)V
+    invoke-direct {v5, v6, v7}, Lr0/c;-><init>(J)V
 
+    .line 79
     .line 80
     .line 81
+    iget-object v2, v2, Landroidx/compose/foundation/pager/o;->a:Landroidx/compose/runtime/ParcelableSnapshotMutableState;
+
     .line 82
-    iget-object v2, v2, Landroidx/compose/foundation/pager/u;->a:Landroidx/compose/runtime/ParcelableSnapshotMutableState;
-
     .line 83
-    .line 84
-    invoke-virtual {v2, v5}, Landroidx/compose/runtime/t2;->setValue(Ljava/lang/Object;)V
+    invoke-virtual {v2, v5}, Landroidx/compose/runtime/ParcelableSnapshotMutableState;->setValue(Ljava/lang/Object;)V
 
+    .line 84
     .line 85
     .line 86
-    .line 87
     const/4 v2, 0x0
 
+    .line 87
+    move-object v10, v2
+
     .line 88
-    move-object v5, p0
-
-    .line 89
-    move-object v11, v2
-
-    .line 90
     move-object v2, p1
 
-    .line 91
+    .line 89
     move-object p1, v1
 
-    .line 92
-    move-object v1, v11
+    .line 90
+    move-object v1, v10
 
-    .line 93
+    .line 91
     :goto_1
     if-nez v1, :cond_7
 
+    .line 92
+    .line 93
+    sget-object v5, Landroidx/compose/ui/input/pointer/PointerEventPass;->Initial:Landroidx/compose/ui/input/pointer/PointerEventPass;
+
     .line 94
     .line 95
-    sget-object v6, Landroidx/compose/ui/input/pointer/PointerEventPass;->Initial:Landroidx/compose/ui/input/pointer/PointerEventPass;
+    iput-object p1, p0, Landroidx/compose/foundation/pager/LazyLayoutPagerKt$dragDirectionDetector$1$1$1;->L$0:Ljava/lang/Object;
 
     .line 96
     .line 97
-    iput-object p1, v5, Landroidx/compose/foundation/pager/LazyLayoutPagerKt$dragDirectionDetector$1$1$1;->L$0:Ljava/lang/Object;
+    iput-object v2, p0, Landroidx/compose/foundation/pager/LazyLayoutPagerKt$dragDirectionDetector$1$1$1;->L$1:Ljava/lang/Object;
 
     .line 98
     .line 99
-    iput-object v2, v5, Landroidx/compose/foundation/pager/LazyLayoutPagerKt$dragDirectionDetector$1$1$1;->L$1:Ljava/lang/Object;
+    iput-object v1, p0, Landroidx/compose/foundation/pager/LazyLayoutPagerKt$dragDirectionDetector$1$1$1;->L$2:Ljava/lang/Object;
 
     .line 100
     .line 101
-    iput-object v1, v5, Landroidx/compose/foundation/pager/LazyLayoutPagerKt$dragDirectionDetector$1$1$1;->L$2:Ljava/lang/Object;
+    iput v3, p0, Landroidx/compose/foundation/pager/LazyLayoutPagerKt$dragDirectionDetector$1$1$1;->label:I
 
     .line 102
     .line 103
-    iput v3, v5, Landroidx/compose/foundation/pager/LazyLayoutPagerKt$dragDirectionDetector$1$1$1;->label:I
+    check-cast p1, Landroidx/compose/ui/input/pointer/x;
 
     .line 104
     .line 105
-    check-cast p1, Landroidx/compose/ui/input/pointer/f0;
+    invoke-virtual {p1, v5, p0}, Landroidx/compose/ui/input/pointer/x;->a(Landroidx/compose/ui/input/pointer/PointerEventPass;Lkotlin/coroutines/jvm/internal/BaseContinuationImpl;)Ljava/lang/Object;
 
     .line 106
     .line 107
-    invoke-virtual {p1, v6, v5}, Landroidx/compose/ui/input/pointer/f0;->b(Landroidx/compose/ui/input/pointer/PointerEventPass;Lkotlin/coroutines/jvm/internal/BaseContinuationImpl;)Ljava/lang/Object;
-
     .line 108
+    move-result-object v5
+
     .line 109
+    if-ne v5, v0, :cond_4
+
     .line 110
-    move-result-object v6
-
     .line 111
-    if-ne v6, v0, :cond_4
-
-    .line 112
-    .line 113
     return-object v0
 
-    .line 114
+    .line 112
     :cond_4
-    move-object v11, v5
+    move-object v10, v5
 
-    .line 115
+    .line 113
     move-object v5, p1
 
-    .line 116
-    move-object p1, v6
+    .line 114
+    move-object p1, v10
 
+    .line 115
+    :goto_2
+    check-cast p1, Landroidx/compose/ui/input/pointer/g;
+
+    .line 116
     .line 117
-    move-object v6, v11
+    iget-object v6, p1, Landroidx/compose/ui/input/pointer/g;->a:Ljava/lang/Object;
 
     .line 118
-    :goto_2
-    check-cast p1, Landroidx/compose/ui/input/pointer/k;
-
     .line 119
-    .line 120
-    iget-object v7, p1, Landroidx/compose/ui/input/pointer/k;->a:Ljava/util/List;
+    invoke-interface {v6}, Ljava/util/List;->size()I
 
+    .line 120
     .line 121
     .line 122
-    invoke-interface {v7}, Ljava/util/List;->size()I
+    move-result v7
 
     .line 123
-    .line 124
-    .line 125
-    move-result v8
+    const/4 v8, 0x0
 
+    .line 124
+    :goto_3
+    if-ge v8, v7, :cond_6
+
+    .line 125
     .line 126
-    const/4 v9, 0x0
+    invoke-interface {v6, v8}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
     .line 127
-    :goto_3
-    if-ge v9, v8, :cond_6
-
     .line 128
     .line 129
-    invoke-interface {v7, v9}, Ljava/util/List;->get(I)Ljava/lang/Object;
+    move-result-object v9
 
     .line 130
+    check-cast v9, Landroidx/compose/ui/input/pointer/n;
+
     .line 131
     .line 132
-    move-result-object v10
+    invoke-static {v9}, Landroidx/compose/ui/input/pointer/l;->b(Landroidx/compose/ui/input/pointer/n;)Z
 
     .line 133
-    check-cast v10, Landroidx/compose/ui/input/pointer/r;
-
     .line 134
     .line 135
-    invoke-static {v10}, Lh5/f;->c(Landroidx/compose/ui/input/pointer/r;)Z
+    move-result v9
 
     .line 136
+    if-nez v9, :cond_5
+
     .line 137
     .line 138
-    move-result v10
-
-    .line 139
-    if-nez v10, :cond_5
-
-    .line 140
-    .line 141
     :goto_4
     move-object p1, v5
 
-    .line 142
-    move-object v5, v6
-
-    .line 143
+    .line 139
     goto :goto_1
 
-    .line 144
+    .line 140
     :cond_5
-    add-int/lit8 v9, v9, 0x1
+    add-int/lit8 v8, v8, 0x1
 
-    .line 145
-    .line 146
+    .line 141
+    .line 142
     goto :goto_3
 
-    .line 147
+    .line 143
     :cond_6
-    iget-object p1, p1, Landroidx/compose/ui/input/pointer/k;->a:Ljava/util/List;
+    iget-object p1, p1, Landroidx/compose/ui/input/pointer/g;->a:Ljava/lang/Object;
 
-    .line 148
-    .line 149
+    .line 144
+    .line 145
     invoke-interface {p1, v4}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
-    .line 150
-    .line 151
-    .line 152
+    .line 146
+    .line 147
+    .line 148
     move-result-object p1
 
-    .line 153
+    .line 149
     move-object v1, p1
 
-    .line 154
-    check-cast v1, Landroidx/compose/ui/input/pointer/r;
+    .line 150
+    check-cast v1, Landroidx/compose/ui/input/pointer/n;
 
-    .line 155
-    .line 156
+    .line 151
+    .line 152
     goto :goto_4
 
-    .line 157
+    .line 153
     :cond_7
-    iget-object p1, v5, Landroidx/compose/foundation/pager/LazyLayoutPagerKt$dragDirectionDetector$1$1$1;->$state:Landroidx/compose/foundation/pager/u;
+    iget-object p1, p0, Landroidx/compose/foundation/pager/LazyLayoutPagerKt$dragDirectionDetector$1$1$1;->$state:Landroidx/compose/foundation/pager/o;
+
+    .line 154
+    .line 155
+    iget-wide v2, v2, Landroidx/compose/ui/input/pointer/n;->c:J
+
+    .line 156
+    .line 157
+    iget-wide v0, v1, Landroidx/compose/ui/input/pointer/n;->c:J
 
     .line 158
     .line 159
-    iget-wide v2, v2, Landroidx/compose/ui/input/pointer/r;->c:J
+    invoke-static {v0, v1, v2, v3}, Lr0/c;->h(JJ)J
 
     .line 160
     .line 161
-    iget-wide v0, v1, Landroidx/compose/ui/input/pointer/r;->c:J
-
     .line 162
+    move-result-wide v0
+
     .line 163
-    invoke-static {v0, v1, v2, v3}, Ln1/c;->h(JJ)J
+    invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
     .line 164
     .line 165
     .line 166
-    move-result-wide v0
+    new-instance v2, Lr0/c;
 
     .line 167
-    invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
-
     .line 168
+    invoke-direct {v2, v0, v1}, Lr0/c;-><init>(J)V
+
     .line 169
     .line 170
-    new-instance v2, Ln1/c;
-
     .line 171
-    .line 172
-    invoke-direct {v2, v0, v1}, Ln1/c;-><init>(J)V
+    iget-object p1, p1, Landroidx/compose/foundation/pager/o;->a:Landroidx/compose/runtime/ParcelableSnapshotMutableState;
 
+    .line 172
     .line 173
+    invoke-virtual {p1, v2}, Landroidx/compose/runtime/ParcelableSnapshotMutableState;->setValue(Ljava/lang/Object;)V
+
     .line 174
     .line 175
-    iget-object p1, p1, Landroidx/compose/foundation/pager/u;->a:Landroidx/compose/runtime/ParcelableSnapshotMutableState;
-
     .line 176
+    sget-object p1, LX9/j;->a:LX9/j;
+
     .line 177
-    invoke-virtual {p1, v2}, Landroidx/compose/runtime/t2;->setValue(Ljava/lang/Object;)V
-
     .line 178
-    .line 179
-    .line 180
-    sget-object p1, Lqh/r;->a:Lqh/r;
-
-    .line 181
-    .line 182
     return-object p1
 .end method

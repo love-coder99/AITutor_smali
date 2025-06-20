@@ -249,25 +249,44 @@
 .method public final b()V
     .locals 2
 
+    .line 1
     const/4 v0, -0x1
 
+    .line 2
     iput v0, p0, Lcom/apm/insight/b/g$e;->d:I
 
+    .line 3
+    .line 4
     iput v0, p0, Lcom/apm/insight/b/g$e;->e:I
 
+    .line 5
+    .line 6
     const-wide/16 v0, -0x1
 
+    .line 7
+    .line 8
     iput-wide v0, p0, Lcom/apm/insight/b/g$e;->f:J
 
+    .line 9
+    .line 10
     const/4 v0, 0x0
 
+    .line 11
     iput-object v0, p0, Lcom/apm/insight/b/g$e;->h:Ljava/lang/String;
 
+    .line 12
+    .line 13
     iput-object v0, p0, Lcom/apm/insight/b/g$e;->j:Ljava/lang/String;
 
+    .line 14
+    .line 15
     iput-object v0, p0, Lcom/apm/insight/b/g$e;->k:Lcom/apm/insight/b/g$d;
 
+    .line 16
+    .line 17
     iput-object v0, p0, Lcom/apm/insight/b/g$e;->i:Ljava/lang/String;
 
+    .line 18
+    .line 19
     return-void
 .end method

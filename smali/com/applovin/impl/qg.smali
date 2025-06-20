@@ -40,9 +40,9 @@
 .method public static a(Lcom/applovin/impl/sdk/j;)Ljava/lang/String;
     .locals 7
 
+    .line 2
     sget-object v0, Lcom/applovin/impl/qg;->a:Ljava/util/concurrent/atomic/AtomicReference;
 
-    .line 2
     invoke-virtual {v0}, Ljava/util/concurrent/atomic/AtomicReference;->get()Ljava/lang/Object;
 
     move-result-object v0
@@ -323,9 +323,9 @@
 
     move-result-object p0
 
+    .line 25
     sget-object v0, Lcom/applovin/impl/qg;->a:Ljava/util/concurrent/atomic/AtomicReference;
 
-    .line 25
     invoke-virtual {v0, p0}, Ljava/util/concurrent/atomic/AtomicReference;->set(Ljava/lang/Object;)V
 
     return-object p0
@@ -364,7 +364,10 @@
 .method public static c()Ljava/lang/String;
     .locals 1
 
+    .line 1
     const-string v0, "iabtechlab.com-omid"
 
+    .line 2
+    .line 3
     return-object v0
 .end method

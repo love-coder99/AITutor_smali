@@ -3,14 +3,14 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lzh/a;
+.implements Lka/a;
 
 
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "Lkotlin/jvm/internal/Lambda;",
-        "Lzh/a;"
+        "Lka/a;"
     }
 .end annotation
 
@@ -36,14 +36,14 @@
 
 
 # instance fields
-.field final synthetic $flowArray:[Lkotlinx/coroutines/flow/h;
+.field final synthetic $flowArray:[Lkotlinx/coroutines/flow/f;
 
 
 # direct methods
-.method public constructor <init>([Lkotlinx/coroutines/flow/h;)V
+.method public constructor <init>([Lkotlinx/coroutines/flow/f;)V
     .locals 0
 
-    iput-object p1, p0, Landroidx/work/impl/constraints/WorkConstraintsTracker$track$$inlined$combine$1$2;->$flowArray:[Lkotlinx/coroutines/flow/h;
+    iput-object p1, p0, Landroidx/work/impl/constraints/WorkConstraintsTracker$track$$inlined$combine$1$2;->$flowArray:[Lkotlinx/coroutines/flow/f;
 
     const/4 p1, 0x0
 
@@ -74,9 +74,9 @@
         }
     .end annotation
 
-    iget-object v0, p0, Landroidx/work/impl/constraints/WorkConstraintsTracker$track$$inlined$combine$1$2;->$flowArray:[Lkotlinx/coroutines/flow/h;
-
     .line 2
+    iget-object v0, p0, Landroidx/work/impl/constraints/WorkConstraintsTracker$track$$inlined$combine$1$2;->$flowArray:[Lkotlinx/coroutines/flow/f;
+
     array-length v0, v0
 
     new-array v0, v0, [Landroidx/work/impl/constraints/c;

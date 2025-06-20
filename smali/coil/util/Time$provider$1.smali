@@ -3,14 +3,14 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lzh/a;
+.implements Lka/a;
 
 
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "Lkotlin/jvm/internal/FunctionReferenceImpl;",
-        "Lzh/a;"
+        "Lka/a;"
     }
 .end annotation
 
@@ -45,15 +45,15 @@
 .method public constructor <init>()V
     .locals 6
 
+    const-string v4, "currentTimeMillis()J"
+
+    const/4 v5, 0x0
+
     const/4 v1, 0x0
 
     const-class v2, Ljava/lang/System;
 
     const-string v3, "currentTimeMillis"
-
-    const-string v4, "currentTimeMillis()J"
-
-    const/4 v5, 0x0
 
     move-object v0, p0
 

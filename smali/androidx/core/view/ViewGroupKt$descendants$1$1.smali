@@ -3,14 +3,14 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lzh/c;
+.implements Lka/c;
 
 
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "Lkotlin/jvm/internal/Lambda;",
-        "Lzh/c;"
+        "Lka/c;"
     }
 .end annotation
 
@@ -108,11 +108,11 @@
     if-eqz p1, :cond_1
 
     .line 3
-    new-instance v1, Landroidx/collection/r0;
+    new-instance v1, LY9/d;
 
-    const/4 v0, 0x1
+    const/4 v0, 0x2
 
-    invoke-direct {v1, p1, v0}, Landroidx/collection/r0;-><init>(Ljava/lang/Object;I)V
+    invoke-direct {v1, p1, v0}, LY9/d;-><init>(Ljava/lang/Object;I)V
 
     :cond_1
     return-object v1

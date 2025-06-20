@@ -40,10 +40,13 @@
     .line 2
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
+    .line 3
     iput-object p1, p0, Lcom/applovin/impl/g8$a;->a:Lcom/applovin/impl/oo;
 
+    .line 4
     iput-object p2, p0, Lcom/applovin/impl/g8$a;->b:[I
 
+    .line 5
     iput p3, p0, Lcom/applovin/impl/g8$a;->c:I
 
     return-void

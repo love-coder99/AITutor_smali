@@ -41,9 +41,9 @@
 .method public static a(Landroid/content/Context;)Lcom/applovin/impl/vq$b;
     .locals 1
 
+    .line 2
     const-string v0, "window"
 
-    .line 2
     invoke-virtual {p0, v0}, Landroid/content/Context;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
 
     move-result-object p0
@@ -78,9 +78,9 @@
 .method public a(Lcom/applovin/impl/vq$b$a;)V
     .locals 1
 
+    .line 4
     iget-object v0, p0, Lcom/applovin/impl/vq$c;->a:Landroid/view/WindowManager;
 
-    .line 4
     invoke-interface {v0}, Landroid/view/WindowManager;->getDefaultDisplay()Landroid/view/Display;
 
     move-result-object v0

@@ -3,12 +3,12 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lzh/a;
+.implements Lka/a;
 
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Landroidx/compose/ui/node/NodeCoordinator$drawBlock$1;->invoke(Landroidx/compose/ui/graphics/t;Landroidx/compose/ui/graphics/layer/b;)V
+    value = Landroidx/compose/ui/node/NodeCoordinator$drawBlock$1;->invoke(Landroidx/compose/ui/graphics/t;Landroidx/compose/ui/graphics/layer/a;)V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -19,7 +19,7 @@
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "Lkotlin/jvm/internal/Lambda;",
-        "Lzh/a;"
+        "Lka/a;"
     }
 .end annotation
 
@@ -28,7 +28,7 @@
         "\u0000\u0008\n\u0002\u0018\u0002\n\u0002\u0008\u0003\u0010\u0003\u001a\u00020\u0000H\n\u00a2\u0006\u0004\u0008\u0001\u0010\u0002"
     }
     d2 = {
-        "Lqh/r;",
+        "LX9/j;",
         "invoke",
         "()V",
         "<anonymous>"
@@ -45,20 +45,20 @@
 # instance fields
 .field final synthetic $canvas:Landroidx/compose/ui/graphics/t;
 
-.field final synthetic $parentLayer:Landroidx/compose/ui/graphics/layer/b;
+.field final synthetic $parentLayer:Landroidx/compose/ui/graphics/layer/a;
 
-.field final synthetic this$0:Landroidx/compose/ui/node/e1;
+.field final synthetic this$0:Landroidx/compose/ui/node/a0;
 
 
 # direct methods
-.method public constructor <init>(Landroidx/compose/ui/node/e1;Landroidx/compose/ui/graphics/t;Landroidx/compose/ui/graphics/layer/b;)V
+.method public constructor <init>(Landroidx/compose/ui/node/a0;Landroidx/compose/ui/graphics/t;Landroidx/compose/ui/graphics/layer/a;)V
     .locals 0
 
-    iput-object p1, p0, Landroidx/compose/ui/node/NodeCoordinator$drawBlock$1$1;->this$0:Landroidx/compose/ui/node/e1;
+    iput-object p1, p0, Landroidx/compose/ui/node/NodeCoordinator$drawBlock$1$1;->this$0:Landroidx/compose/ui/node/a0;
 
     iput-object p2, p0, Landroidx/compose/ui/node/NodeCoordinator$drawBlock$1$1;->$canvas:Landroidx/compose/ui/graphics/t;
 
-    iput-object p3, p0, Landroidx/compose/ui/node/NodeCoordinator$drawBlock$1$1;->$parentLayer:Landroidx/compose/ui/graphics/layer/b;
+    iput-object p3, p0, Landroidx/compose/ui/node/NodeCoordinator$drawBlock$1$1;->$parentLayer:Landroidx/compose/ui/graphics/layer/a;
 
     const/4 p1, 0x0
 
@@ -75,7 +75,7 @@
     .line 1
     invoke-virtual {p0}, Landroidx/compose/ui/node/NodeCoordinator$drawBlock$1$1;->invoke()V
 
-    sget-object v0, Lqh/r;->a:Lqh/r;
+    sget-object v0, LX9/j;->a:LX9/j;
 
     return-object v0
 .end method
@@ -83,17 +83,17 @@
 .method public final invoke()V
     .locals 4
 
-    iget-object v0, p0, Landroidx/compose/ui/node/NodeCoordinator$drawBlock$1$1;->this$0:Landroidx/compose/ui/node/e1;
+    .line 2
+    iget-object v0, p0, Landroidx/compose/ui/node/NodeCoordinator$drawBlock$1$1;->this$0:Landroidx/compose/ui/node/a0;
 
     iget-object v1, p0, Landroidx/compose/ui/node/NodeCoordinator$drawBlock$1$1;->$canvas:Landroidx/compose/ui/graphics/t;
 
-    iget-object v2, p0, Landroidx/compose/ui/node/NodeCoordinator$drawBlock$1$1;->$parentLayer:Landroidx/compose/ui/graphics/layer/b;
+    iget-object v2, p0, Landroidx/compose/ui/node/NodeCoordinator$drawBlock$1$1;->$parentLayer:Landroidx/compose/ui/graphics/layer/a;
 
-    .line 2
-    sget-object v3, Landroidx/compose/ui/node/e1;->J:Lzh/c;
+    sget-object v3, Landroidx/compose/ui/node/a0;->I:Lka/c;
 
     .line 3
-    invoke-virtual {v0, v1, v2}, Landroidx/compose/ui/node/e1;->E0(Landroidx/compose/ui/graphics/t;Landroidx/compose/ui/graphics/layer/b;)V
+    invoke-virtual {v0, v1, v2}, Landroidx/compose/ui/node/a0;->z0(Landroidx/compose/ui/graphics/t;Landroidx/compose/ui/graphics/layer/a;)V
 
     return-void
 .end method

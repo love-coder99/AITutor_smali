@@ -3,14 +3,14 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lzh/a;
+.implements Lka/a;
 
 
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "Lkotlin/jvm/internal/Lambda;",
-        "Lzh/a;"
+        "Lka/a;"
     }
 .end annotation
 
@@ -54,74 +54,102 @@
 
 # virtual methods
 .method public final invoke()Ljava/lang/Boolean;
-    .locals 6
+    .locals 5
 
     .line 2
-    sget-object v0, Landroidx/window/layout/m;->a:Lqh/d;
+    sget-object v0, Landroidx/window/layout/g;->a:LX9/d;
 
     iget-object v0, p0, Landroidx/window/layout/SafeWindowLayoutComponentProvider$isFoldingFeatureValid$1;->$classLoader:Ljava/lang/ClassLoader;
 
+    .line 3
     const-string v1, "androidx.window.extensions.layout.FoldingFeature"
 
-    .line 3
     invoke-virtual {v0, v1}, Ljava/lang/ClassLoader;->loadClass(Ljava/lang/String;)Ljava/lang/Class;
 
     move-result-object v0
 
-    const/4 v1, 0x0
-
-    new-array v2, v1, [Ljava/lang/Class;
-
-    const-string v3, "getBounds"
-
     .line 4
-    invoke-virtual {v0, v3, v2}, Ljava/lang/Class;->getMethod(Ljava/lang/String;[Ljava/lang/Class;)Ljava/lang/reflect/Method;
+    const-string v1, "getBounds"
 
-    move-result-object v2
+    const/4 v2, 0x0
 
-    const-string v3, "getType"
+    invoke-virtual {v0, v1, v2}, Ljava/lang/Class;->getMethod(Ljava/lang/String;[Ljava/lang/Class;)Ljava/lang/reflect/Method;
 
-    new-array v4, v1, [Ljava/lang/Class;
+    move-result-object v1
 
     .line 5
-    invoke-virtual {v0, v3, v4}, Ljava/lang/Class;->getMethod(Ljava/lang/String;[Ljava/lang/Class;)Ljava/lang/reflect/Method;
+    const-string v3, "getType"
+
+    invoke-virtual {v0, v3, v2}, Ljava/lang/Class;->getMethod(Ljava/lang/String;[Ljava/lang/Class;)Ljava/lang/reflect/Method;
 
     move-result-object v3
 
+    .line 6
     const-string v4, "getState"
 
-    new-array v5, v1, [Ljava/lang/Class;
-
-    .line 6
-    invoke-virtual {v0, v4, v5}, Ljava/lang/Class;->getMethod(Ljava/lang/String;[Ljava/lang/Class;)Ljava/lang/reflect/Method;
+    invoke-virtual {v0, v4, v2}, Ljava/lang/Class;->getMethod(Ljava/lang/String;[Ljava/lang/Class;)Ljava/lang/reflect/Method;
 
     move-result-object v0
 
-    const-class v4, Landroid/graphics/Rect;
-
     .line 7
-    invoke-static {v4}, Lkotlin/jvm/internal/i;->a(Ljava/lang/Class;)Lkotlin/jvm/internal/b;
+    const-class v2, Landroid/graphics/Rect;
 
-    move-result-object v4
+    invoke-static {v2}, Lkotlin/jvm/internal/j;->a(Ljava/lang/Class;)Lkotlin/jvm/internal/b;
+
+    move-result-object v2
 
     .line 8
-    invoke-virtual {v4}, Lkotlin/jvm/internal/b;->a()Ljava/lang/Class;
+    invoke-virtual {v2}, Lkotlin/jvm/internal/b;->a()Ljava/lang/Class;
+
+    move-result-object v2
+
+    .line 9
+    invoke-virtual {v1}, Ljava/lang/reflect/Method;->getReturnType()Ljava/lang/Class;
 
     move-result-object v4
 
-    .line 9
-    invoke-virtual {v2}, Ljava/lang/reflect/Method;->getReturnType()Ljava/lang/Class;
+    invoke-virtual {v4, v2}, Ljava/lang/Object;->equals(Ljava/lang/Object;)Z
 
-    move-result-object v5
+    move-result v2
 
-    invoke-virtual {v5, v4}, Ljava/lang/Object;->equals(Ljava/lang/Object;)Z
-
-    move-result v4
-
-    if-eqz v4, :cond_0
+    if-eqz v2, :cond_0
 
     .line 10
-    invoke-virtual {v2}, Ljava/lang/reflect/Method;->getModifiers()I
+    invoke-virtual {v1}, Ljava/lang/reflect/Method;->getModifiers()I
+
+    move-result v1
+
+    invoke-static {v1}, Ljava/lang/reflect/Modifier;->isPublic(I)Z
+
+    move-result v1
+
+    if-eqz v1, :cond_0
+
+    .line 11
+    sget-object v1, Ljava/lang/Integer;->TYPE:Ljava/lang/Class;
+
+    invoke-static {v1}, Lkotlin/jvm/internal/j;->a(Ljava/lang/Class;)Lkotlin/jvm/internal/b;
+
+    move-result-object v2
+
+    .line 12
+    invoke-virtual {v2}, Lkotlin/jvm/internal/b;->a()Ljava/lang/Class;
+
+    move-result-object v2
+
+    .line 13
+    invoke-virtual {v3}, Ljava/lang/reflect/Method;->getReturnType()Ljava/lang/Class;
+
+    move-result-object v4
+
+    invoke-virtual {v4, v2}, Ljava/lang/Object;->equals(Ljava/lang/Object;)Z
+
+    move-result v2
+
+    if-eqz v2, :cond_0
+
+    .line 14
+    invoke-virtual {v3}, Ljava/lang/reflect/Method;->getModifiers()I
 
     move-result v2
 
@@ -131,60 +159,26 @@
 
     if-eqz v2, :cond_0
 
-    sget-object v2, Ljava/lang/Integer;->TYPE:Ljava/lang/Class;
-
-    .line 11
-    invoke-static {v2}, Lkotlin/jvm/internal/i;->a(Ljava/lang/Class;)Lkotlin/jvm/internal/b;
-
-    move-result-object v4
-
-    .line 12
-    invoke-virtual {v4}, Lkotlin/jvm/internal/b;->a()Ljava/lang/Class;
-
-    move-result-object v4
-
-    .line 13
-    invoke-virtual {v3}, Ljava/lang/reflect/Method;->getReturnType()Ljava/lang/Class;
-
-    move-result-object v5
-
-    invoke-virtual {v5, v4}, Ljava/lang/Object;->equals(Ljava/lang/Object;)Z
-
-    move-result v4
-
-    if-eqz v4, :cond_0
-
-    .line 14
-    invoke-virtual {v3}, Ljava/lang/reflect/Method;->getModifiers()I
-
-    move-result v3
-
-    invoke-static {v3}, Ljava/lang/reflect/Modifier;->isPublic(I)Z
-
-    move-result v3
-
-    if-eqz v3, :cond_0
-
     .line 15
-    invoke-static {v2}, Lkotlin/jvm/internal/i;->a(Ljava/lang/Class;)Lkotlin/jvm/internal/b;
+    invoke-static {v1}, Lkotlin/jvm/internal/j;->a(Ljava/lang/Class;)Lkotlin/jvm/internal/b;
 
-    move-result-object v2
+    move-result-object v1
 
     .line 16
-    invoke-virtual {v2}, Lkotlin/jvm/internal/b;->a()Ljava/lang/Class;
+    invoke-virtual {v1}, Lkotlin/jvm/internal/b;->a()Ljava/lang/Class;
 
-    move-result-object v2
+    move-result-object v1
 
     .line 17
     invoke-virtual {v0}, Ljava/lang/reflect/Method;->getReturnType()Ljava/lang/Class;
 
-    move-result-object v3
+    move-result-object v2
 
-    invoke-virtual {v3, v2}, Ljava/lang/Object;->equals(Ljava/lang/Object;)Z
+    invoke-virtual {v2, v1}, Ljava/lang/Object;->equals(Ljava/lang/Object;)Z
 
-    move-result v2
+    move-result v1
 
-    if-eqz v2, :cond_0
+    if-eqz v1, :cond_0
 
     .line 18
     invoke-virtual {v0}, Ljava/lang/reflect/Method;->getModifiers()I
@@ -197,11 +191,16 @@
 
     if-eqz v0, :cond_0
 
-    const/4 v1, 0x1
+    const/4 v0, 0x1
+
+    goto :goto_0
+
+    :cond_0
+    const/4 v0, 0x0
 
     .line 19
-    :cond_0
-    invoke-static {v1}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
+    :goto_0
+    invoke-static {v0}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
 
     move-result-object v0
 

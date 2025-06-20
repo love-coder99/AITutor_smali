@@ -1,12 +1,12 @@
 .class final Landroidx/compose/foundation/layout/UnspecifiedConstraintsElement;
-.super Landroidx/compose/ui/node/w0;
+.super Landroidx/compose/ui/node/V;
 .source "SourceFile"
 
 
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
-        "Landroidx/compose/ui/node/w0;"
+        "Landroidx/compose/ui/node/V;"
     }
 .end annotation
 
@@ -16,8 +16,8 @@
     }
     d2 = {
         "Landroidx/compose/foundation/layout/UnspecifiedConstraintsElement;",
-        "Landroidx/compose/ui/node/w0;",
-        "Landroidx/compose/foundation/layout/c1;",
+        "Landroidx/compose/ui/node/V;",
+        "Landroidx/compose/foundation/layout/Z;",
         "foundation-layout_release"
     }
     k = 0x1
@@ -26,13 +26,14 @@
         0x8,
         0x0
     }
+    xi = 0x30
 .end annotation
 
 
 # instance fields
-.field public final c:F
+.field public final a:F
 
-.field public final d:F
+.field public final b:F
 
 
 # direct methods
@@ -45,11 +46,11 @@
     .line 2
     .line 3
     .line 4
-    iput p1, p0, Landroidx/compose/foundation/layout/UnspecifiedConstraintsElement;->c:F
+    iput p1, p0, Landroidx/compose/foundation/layout/UnspecifiedConstraintsElement;->a:F
 
     .line 5
     .line 6
-    iput p2, p0, Landroidx/compose/foundation/layout/UnspecifiedConstraintsElement;->d:F
+    iput p2, p0, Landroidx/compose/foundation/layout/UnspecifiedConstraintsElement;->b:F
 
     .line 7
     .line 8
@@ -81,15 +82,15 @@
 
     .line 8
     .line 9
-    iget v0, p1, Landroidx/compose/foundation/layout/UnspecifiedConstraintsElement;->c:F
+    iget v0, p1, Landroidx/compose/foundation/layout/UnspecifiedConstraintsElement;->a:F
 
     .line 10
     .line 11
-    iget v2, p0, Landroidx/compose/foundation/layout/UnspecifiedConstraintsElement;->c:F
+    iget v2, p0, Landroidx/compose/foundation/layout/UnspecifiedConstraintsElement;->a:F
 
     .line 12
     .line 13
-    invoke-static {v2, v0}, Lh2/e;->a(FF)Z
+    invoke-static {v2, v0}, LM0/e;->a(FF)Z
 
     .line 14
     .line 15
@@ -101,15 +102,15 @@
 
     .line 18
     .line 19
-    iget v0, p0, Landroidx/compose/foundation/layout/UnspecifiedConstraintsElement;->d:F
+    iget v0, p0, Landroidx/compose/foundation/layout/UnspecifiedConstraintsElement;->b:F
 
     .line 20
     .line 21
-    iget p1, p1, Landroidx/compose/foundation/layout/UnspecifiedConstraintsElement;->d:F
+    iget p1, p1, Landroidx/compose/foundation/layout/UnspecifiedConstraintsElement;->b:F
 
     .line 22
     .line 23
-    invoke-static {v0, p1}, Lh2/e;->a(FF)Z
+    invoke-static {v0, p1}, LM0/e;->a(FF)Z
 
     .line 24
     .line 25
@@ -132,7 +133,7 @@
     .locals 2
 
     .line 1
-    iget v0, p0, Landroidx/compose/foundation/layout/UnspecifiedConstraintsElement;->c:F
+    iget v0, p0, Landroidx/compose/foundation/layout/UnspecifiedConstraintsElement;->a:F
 
     .line 2
     .line 3
@@ -148,7 +149,7 @@
 
     .line 8
     .line 9
-    iget v1, p0, Landroidx/compose/foundation/layout/UnspecifiedConstraintsElement;->d:F
+    iget v1, p0, Landroidx/compose/foundation/layout/UnspecifiedConstraintsElement;->b:F
 
     .line 10
     .line 11
@@ -170,7 +171,7 @@
     .locals 2
 
     .line 1
-    new-instance v0, Landroidx/compose/foundation/layout/c1;
+    new-instance v0, Landroidx/compose/foundation/layout/Z;
 
     .line 2
     .line 3
@@ -179,19 +180,19 @@
     .line 4
     .line 5
     .line 6
-    iget v1, p0, Landroidx/compose/foundation/layout/UnspecifiedConstraintsElement;->c:F
+    iget v1, p0, Landroidx/compose/foundation/layout/UnspecifiedConstraintsElement;->a:F
 
     .line 7
     .line 8
-    iput v1, v0, Landroidx/compose/foundation/layout/c1;->p:F
+    iput v1, v0, Landroidx/compose/foundation/layout/Z;->p:F
 
     .line 9
     .line 10
-    iget v1, p0, Landroidx/compose/foundation/layout/UnspecifiedConstraintsElement;->d:F
+    iget v1, p0, Landroidx/compose/foundation/layout/UnspecifiedConstraintsElement;->b:F
 
     .line 11
     .line 12
-    iput v1, v0, Landroidx/compose/foundation/layout/c1;->q:F
+    iput v1, v0, Landroidx/compose/foundation/layout/Z;->q:F
 
     .line 13
     .line 14
@@ -202,23 +203,23 @@
     .locals 1
 
     .line 1
-    check-cast p1, Landroidx/compose/foundation/layout/c1;
+    check-cast p1, Landroidx/compose/foundation/layout/Z;
 
     .line 2
     .line 3
-    iget v0, p0, Landroidx/compose/foundation/layout/UnspecifiedConstraintsElement;->c:F
+    iget v0, p0, Landroidx/compose/foundation/layout/UnspecifiedConstraintsElement;->a:F
 
     .line 4
     .line 5
-    iput v0, p1, Landroidx/compose/foundation/layout/c1;->p:F
+    iput v0, p1, Landroidx/compose/foundation/layout/Z;->p:F
 
     .line 6
     .line 7
-    iget v0, p0, Landroidx/compose/foundation/layout/UnspecifiedConstraintsElement;->d:F
+    iget v0, p0, Landroidx/compose/foundation/layout/UnspecifiedConstraintsElement;->b:F
 
     .line 8
     .line 9
-    iput v0, p1, Landroidx/compose/foundation/layout/c1;->q:F
+    iput v0, p1, Landroidx/compose/foundation/layout/Z;->q:F
 
     .line 10
     .line 11

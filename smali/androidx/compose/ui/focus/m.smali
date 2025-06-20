@@ -25,9 +25,9 @@
 
 .field public i:Landroidx/compose/ui/focus/q;
 
-.field public j:Lzh/c;
+.field public j:Ljava/lang/Object;
 
-.field public k:Lzh/c;
+.field public k:Ljava/lang/Object;
 
 
 # virtual methods
@@ -37,24 +37,30 @@
     .line 1
     iget-boolean v0, p0, Landroidx/compose/ui/focus/m;->a:Z
 
+    .line 2
+    .line 3
     return v0
 .end method
 
-.method public final b(Lzh/c;)V
+.method public final b(Lka/c;)V
     .locals 0
 
     .line 1
-    iput-object p1, p0, Landroidx/compose/ui/focus/m;->k:Lzh/c;
+    iput-object p1, p0, Landroidx/compose/ui/focus/m;->j:Ljava/lang/Object;
 
+    .line 2
+    .line 3
     return-void
 .end method
 
-.method public final c(Lzh/c;)V
+.method public final c(Lka/c;)V
     .locals 0
 
     .line 1
-    iput-object p1, p0, Landroidx/compose/ui/focus/m;->j:Lzh/c;
+    iput-object p1, p0, Landroidx/compose/ui/focus/m;->k:Ljava/lang/Object;
 
+    .line 2
+    .line 3
     return-void
 .end method
 
@@ -64,5 +70,7 @@
     .line 1
     iput-boolean p1, p0, Landroidx/compose/ui/focus/m;->a:Z
 
+    .line 2
+    .line 3
     return-void
 .end method

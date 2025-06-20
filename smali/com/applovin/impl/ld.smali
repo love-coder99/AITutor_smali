@@ -12,7 +12,7 @@
     .locals 1
 
     .line 1
-    new-instance v0, Lcom/applovin/impl/pu;
+    new-instance v0, Lcom/applovin/impl/H1;
 
     .line 2
     .line 3

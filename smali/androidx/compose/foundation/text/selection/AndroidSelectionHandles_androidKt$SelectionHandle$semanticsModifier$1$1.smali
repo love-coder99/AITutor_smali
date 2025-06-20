@@ -3,14 +3,14 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lzh/c;
+.implements Lka/c;
 
 
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "Lkotlin/jvm/internal/Lambda;",
-        "Lzh/c;"
+        "Lka/c;"
     }
 .end annotation
 
@@ -19,10 +19,10 @@
         "\u0000\u000c\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0008\u0003\u0010\u0004\u001a\u00020\u0001*\u00020\u0000H\n\u00a2\u0006\u0004\u0008\u0002\u0010\u0003"
     }
     d2 = {
-        "Landroidx/compose/ui/semantics/u;",
-        "Lqh/r;",
+        "Landroidx/compose/ui/semantics/t;",
+        "LX9/j;",
         "invoke",
-        "(Landroidx/compose/ui/semantics/u;)V",
+        "(Landroidx/compose/ui/semantics/t;)V",
         "<anonymous>"
     }
     k = 0x3
@@ -65,31 +65,32 @@
     .locals 0
 
     .line 1
-    check-cast p1, Landroidx/compose/ui/semantics/u;
+    check-cast p1, Landroidx/compose/ui/semantics/t;
 
-    invoke-virtual {p0, p1}, Landroidx/compose/foundation/text/selection/AndroidSelectionHandles_androidKt$SelectionHandle$semanticsModifier$1$1;->invoke(Landroidx/compose/ui/semantics/u;)V
+    invoke-virtual {p0, p1}, Landroidx/compose/foundation/text/selection/AndroidSelectionHandles_androidKt$SelectionHandle$semanticsModifier$1$1;->invoke(Landroidx/compose/ui/semantics/t;)V
 
-    sget-object p1, Lqh/r;->a:Lqh/r;
+    sget-object p1, LX9/j;->a:LX9/j;
 
     return-object p1
 .end method
 
-.method public final invoke(Landroidx/compose/ui/semantics/u;)V
+.method public final invoke(Landroidx/compose/ui/semantics/t;)V
     .locals 8
 
+    .line 2
     iget-object v0, p0, Landroidx/compose/foundation/text/selection/AndroidSelectionHandles_androidKt$SelectionHandle$semanticsModifier$1$1;->$offsetProvider:Landroidx/compose/foundation/text/selection/f;
 
-    .line 2
     invoke-interface {v0}, Landroidx/compose/foundation/text/selection/f;->a()J
 
     move-result-wide v3
 
     .line 3
-    sget-object v0, Landroidx/compose/foundation/text/selection/n;->c:Landroidx/compose/ui/semantics/t;
+    sget-object v0, Landroidx/compose/foundation/text/selection/m;->c:Landroidx/compose/ui/semantics/s;
 
     .line 4
-    new-instance v7, Landroidx/compose/foundation/text/selection/m;
+    new-instance v7, Landroidx/compose/foundation/text/selection/l;
 
+    .line 5
     iget-boolean v1, p0, Landroidx/compose/foundation/text/selection/AndroidSelectionHandles_androidKt$SelectionHandle$semanticsModifier$1$1;->$isStartHandle:Z
 
     if-eqz v1, :cond_0
@@ -106,6 +107,7 @@
 
     goto :goto_0
 
+    .line 6
     :goto_1
     iget-boolean v1, p0, Landroidx/compose/foundation/text/selection/AndroidSelectionHandles_androidKt$SelectionHandle$semanticsModifier$1$1;->$isLeft:Z
 
@@ -123,20 +125,20 @@
 
     goto :goto_2
 
-    .line 5
+    .line 7
     :goto_3
-    invoke-static {v3, v4}, La0/r;->v(J)Z
+    invoke-static {v3, v4}, Lcom/bumptech/glide/c;->s(J)Z
 
     move-result v6
 
     move-object v1, v7
 
-    .line 6
-    invoke-direct/range {v1 .. v6}, Landroidx/compose/foundation/text/selection/m;-><init>(Landroidx/compose/foundation/text/Handle;JLandroidx/compose/foundation/text/selection/SelectionHandleAnchor;Z)V
+    .line 8
+    invoke-direct/range {v1 .. v6}, Landroidx/compose/foundation/text/selection/l;-><init>(Landroidx/compose/foundation/text/Handle;JLandroidx/compose/foundation/text/selection/SelectionHandleAnchor;Z)V
 
     check-cast p1, Landroidx/compose/ui/semantics/j;
 
-    invoke-virtual {p1, v0, v7}, Landroidx/compose/ui/semantics/j;->d(Landroidx/compose/ui/semantics/t;Ljava/lang/Object;)V
+    invoke-virtual {p1, v0, v7}, Landroidx/compose/ui/semantics/j;->c(Landroidx/compose/ui/semantics/s;Ljava/lang/Object;)V
 
     return-void
 .end method

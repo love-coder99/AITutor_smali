@@ -49,7 +49,7 @@
 .method public a()Ljava/util/List;
     .locals 1
 
-    .line 1
+    .line 2
     iget-object v0, p0, Lcom/applovin/impl/sdk/nativeAd/AppLovinNativeAdImpl$c;->a:Ljava/util/List;
 
     return-object v0
@@ -58,7 +58,7 @@
 .method public a(Ljava/lang/Object;)Z
     .locals 0
 
-    .line 2
+    .line 1
     instance-of p1, p1, Lcom/applovin/impl/sdk/nativeAd/AppLovinNativeAdImpl$c;
 
     return p1
@@ -279,7 +279,7 @@
 .end method
 
 .method public toString()Ljava/lang/String;
-    .locals 3
+    .locals 2
 
     .line 1
     new-instance v0, Ljava/lang/StringBuilder;
@@ -303,17 +303,27 @@
     move-result-object v1
 
     .line 12
-    const-string v2, ")"
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 
     .line 13
     .line 14
-    invoke-static {v0, v1, v2}, Lj0/d;->o(Ljava/lang/StringBuilder;Ljava/util/List;Ljava/lang/String;)Ljava/lang/String;
-
     .line 15
+    const-string v1, ")"
+
     .line 16
     .line 17
-    move-result-object v0
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     .line 18
+    .line 19
+    .line 20
+    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    .line 21
+    .line 22
+    .line 23
+    move-result-object v0
+
+    .line 24
     return-object v0
 .end method

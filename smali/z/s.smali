@@ -1,19 +1,17 @@
-.class public final synthetic Lz/s;
+.class public final LZ/s;
 .super Ljava/lang/Object;
 .source "SourceFile"
 
 # interfaces
-.implements Landroidx/concurrent/futures/i;
+.implements Landroid/animation/Animator$AnimatorListener;
 
 
 # instance fields
-.field public final synthetic b:I
-
-.field public final synthetic c:Lz/t;
+.field public final synthetic b:LA/d;
 
 
 # direct methods
-.method public synthetic constructor <init>(Lz/t;I)V
+.method public constructor <init>(LA/d;)V
     .locals 0
 
     .line 1
@@ -22,64 +20,57 @@
     .line 2
     .line 3
     .line 4
-    iput p2, p0, Lz/s;->b:I
+    iput-object p1, p0, LZ/s;->b:LA/d;
 
     .line 5
     .line 6
-    iput-object p1, p0, Lz/s;->c:Lz/t;
-
-    .line 7
-    .line 8
     return-void
 .end method
 
 
 # virtual methods
-.method public final l(Landroidx/concurrent/futures/h;)Ljava/lang/Object;
-    .locals 2
+.method public final onAnimationCancel(Landroid/animation/Animator;)V
+    .locals 0
 
     .line 1
-    iget v0, p0, Lz/s;->b:I
+    return-void
+.end method
+
+.method public final onAnimationEnd(Landroid/animation/Animator;)V
+    .locals 0
+
+    .line 1
+    const-string p1, "ScreenFlashView"
 
     .line 2
     .line 3
-    iget-object v1, p0, Lz/s;->c:Lz/t;
+    invoke-static {p1}, Landroidx/work/B;->k(Ljava/lang/String;)Ljava/lang/String;
 
     .line 4
     .line 5
-    packed-switch v0, :pswitch_data_0
-
     .line 6
+    iget-object p1, p0, LZ/s;->b:LA/d;
+
     .line 7
     .line 8
-    iput-object p1, v1, Lz/t;->f:Landroidx/concurrent/futures/h;
+    invoke-virtual {p1}, LA/d;->run()V
 
     .line 9
     .line 10
-    const-string p1, "RequestCompleteFuture"
-
     .line 11
-    .line 12
-    return-object p1
+    return-void
+.end method
 
-    .line 13
-    :pswitch_0
-    iput-object p1, v1, Lz/t;->e:Landroidx/concurrent/futures/h;
+.method public final onAnimationRepeat(Landroid/animation/Animator;)V
+    .locals 0
 
-    .line 14
-    .line 15
-    const-string p1, "CaptureCompleteFuture"
+    .line 1
+    return-void
+.end method
 
-    .line 16
-    .line 17
-    return-object p1
+.method public final onAnimationStart(Landroid/animation/Animator;)V
+    .locals 0
 
-    .line 18
-    nop
-
-    .line 19
-    :pswitch_data_0
-    .packed-switch 0x0
-        :pswitch_0
-    .end packed-switch
+    .line 1
+    return-void
 .end method

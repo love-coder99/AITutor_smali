@@ -75,6 +75,7 @@
 .method public a()J
     .locals 5
 
+    .line 1
     iget-wide v0, p0, Lcom/applovin/impl/q8$a;->e:J
 
     const-wide/16 v2, 0x0
@@ -88,7 +89,6 @@
     :cond_0
     iget-wide v2, p0, Lcom/applovin/impl/q8$a;->f:J
 
-    .line 1
     div-long/2addr v2, v0
 
     :goto_0
@@ -107,6 +107,7 @@
 .method public b(J)V
     .locals 11
 
+    .line 2
     iget-wide v0, p0, Lcom/applovin/impl/q8$a;->d:J
 
     const-wide/16 v2, 0x0
@@ -117,6 +118,7 @@
 
     if-nez v6, :cond_0
 
+    .line 3
     iput-wide p1, p0, Lcom/applovin/impl/q8$a;->a:J
 
     goto :goto_0
@@ -126,33 +128,37 @@
 
     if-nez v2, :cond_1
 
+    .line 4
     iget-wide v0, p0, Lcom/applovin/impl/q8$a;->a:J
 
     sub-long v0, p1, v0
 
     iput-wide v0, p0, Lcom/applovin/impl/q8$a;->b:J
 
+    .line 5
     iput-wide v0, p0, Lcom/applovin/impl/q8$a;->f:J
 
+    .line 6
     iput-wide v4, p0, Lcom/applovin/impl/q8$a;->e:J
 
     goto :goto_0
 
+    .line 7
     :cond_1
     iget-wide v2, p0, Lcom/applovin/impl/q8$a;->c:J
 
     sub-long v2, p1, v2
 
-    .line 2
+    .line 8
     invoke-static {v0, v1}, Lcom/applovin/impl/q8$a;->a(J)I
 
     move-result v0
 
+    .line 9
     iget-wide v6, p0, Lcom/applovin/impl/q8$a;->b:J
 
     sub-long v6, v2, v6
 
-    .line 3
     invoke-static {v6, v7}, Ljava/lang/Math;->abs(J)J
 
     move-result-wide v6
@@ -165,30 +171,33 @@
 
     if-gtz v10, :cond_2
 
+    .line 10
     iget-wide v6, p0, Lcom/applovin/impl/q8$a;->e:J
 
     add-long/2addr v6, v4
 
     iput-wide v6, p0, Lcom/applovin/impl/q8$a;->e:J
 
+    .line 11
     iget-wide v6, p0, Lcom/applovin/impl/q8$a;->f:J
 
     add-long/2addr v6, v2
 
     iput-wide v6, p0, Lcom/applovin/impl/q8$a;->f:J
 
+    .line 12
     iget-object v2, p0, Lcom/applovin/impl/q8$a;->g:[Z
 
-    .line 4
     aget-boolean v3, v2, v0
 
     if-eqz v3, :cond_3
 
     const/4 v3, 0x0
 
-    .line 5
+    .line 13
     aput-boolean v3, v2, v0
 
+    .line 14
     iget v0, p0, Lcom/applovin/impl/q8$a;->h:I
 
     sub-int/2addr v0, v1
@@ -197,23 +206,25 @@
 
     goto :goto_0
 
+    .line 15
     :cond_2
     iget-object v2, p0, Lcom/applovin/impl/q8$a;->g:[Z
 
-    .line 6
     aget-boolean v3, v2, v0
 
     if-nez v3, :cond_3
 
-    .line 7
+    .line 16
     aput-boolean v1, v2, v0
 
+    .line 17
     iget v0, p0, Lcom/applovin/impl/q8$a;->h:I
 
     add-int/2addr v0, v1
 
     iput v0, p0, Lcom/applovin/impl/q8$a;->h:I
 
+    .line 18
     :cond_3
     :goto_0
     iget-wide v0, p0, Lcom/applovin/impl/q8$a;->d:J
@@ -222,6 +233,7 @@
 
     iput-wide v0, p0, Lcom/applovin/impl/q8$a;->d:J
 
+    .line 19
     iput-wide p1, p0, Lcom/applovin/impl/q8$a;->c:J
 
     return-void
@@ -283,25 +295,41 @@
 .method public d()Z
     .locals 5
 
+    .line 1
     iget-wide v0, p0, Lcom/applovin/impl/q8$a;->d:J
 
+    .line 2
+    .line 3
     const-wide/16 v2, 0xf
 
+    .line 4
+    .line 5
     cmp-long v4, v0, v2
 
+    .line 6
+    .line 7
     if-lez v4, :cond_0
 
+    .line 8
+    .line 9
     iget v0, p0, Lcom/applovin/impl/q8$a;->h:I
 
+    .line 10
+    .line 11
     if-nez v0, :cond_0
 
+    .line 12
+    .line 13
     const/4 v0, 0x1
 
+    .line 14
     goto :goto_0
 
+    .line 15
     :cond_0
     const/4 v0, 0x0
 
+    .line 16
     :goto_0
     return v0
 .end method

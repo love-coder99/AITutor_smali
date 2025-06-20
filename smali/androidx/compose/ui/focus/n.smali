@@ -7,29 +7,36 @@
 
 
 # instance fields
-.field public final synthetic b:Lzh/c;
+.field public final synthetic b:Lka/c;
 
 
 # direct methods
-.method public constructor <init>(Lzh/c;)V
+.method public constructor <init>(Lka/c;)V
     .locals 0
 
     .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    iput-object p1, p0, Landroidx/compose/ui/focus/n;->b:Lzh/c;
+    .line 2
+    .line 3
+    .line 4
+    iput-object p1, p0, Landroidx/compose/ui/focus/n;->b:Lka/c;
 
+    .line 5
+    .line 6
     return-void
 .end method
 
 
 # virtual methods
-.method public final b()Lqh/b;
+.method public final b()LX9/b;
     .locals 1
 
     .line 1
-    iget-object v0, p0, Landroidx/compose/ui/focus/n;->b:Lzh/c;
+    iget-object v0, p0, Landroidx/compose/ui/focus/n;->b:Lka/c;
 
+    .line 2
+    .line 3
     return-object v0
 .end method
 
@@ -48,13 +55,13 @@
 
     check-cast p1, Lkotlin/jvm/internal/d;
 
-    invoke-interface {p1}, Lkotlin/jvm/internal/d;->b()Lqh/b;
+    invoke-interface {p1}, Lkotlin/jvm/internal/d;->b()LX9/b;
 
     move-result-object p1
 
-    iget-object v0, p0, Landroidx/compose/ui/focus/n;->b:Lzh/c;
+    iget-object v0, p0, Landroidx/compose/ui/focus/n;->b:Lka/c;
 
-    invoke-static {v0, p1}, Lrb/h;->d(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v0, p1}, Lkotlin/jvm/internal/h;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result v1
 
@@ -65,7 +72,7 @@
 .method public final hashCode()I
     .locals 1
 
-    iget-object v0, p0, Landroidx/compose/ui/focus/n;->b:Lzh/c;
+    iget-object v0, p0, Landroidx/compose/ui/focus/n;->b:Lka/c;
 
     invoke-virtual {v0}, Ljava/lang/Object;->hashCode()I
 

@@ -3,14 +3,14 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lzh/c;
+.implements Lka/c;
 
 
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "Lkotlin/jvm/internal/Lambda;",
-        "Lzh/c;"
+        "Lka/c;"
     }
 .end annotation
 
@@ -21,7 +21,7 @@
     d2 = {
         "",
         "state",
-        "Lqh/r;",
+        "LX9/j;",
         "invoke",
         "(Ljava/lang/Object;)V",
         "<anonymous>"
@@ -40,7 +40,7 @@
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/List<",
-            "Lzh/c;",
+            "Lka/c;",
             ">;"
         }
     .end annotation
@@ -55,7 +55,7 @@
             "(",
             "Ljava/util/List<",
             "+",
-            "Lzh/c;",
+            "Lka/c;",
             ">;)V"
         }
     .end annotation
@@ -77,7 +77,7 @@
     .line 1
     invoke-virtual {p0, p1}, Landroidx/compose/runtime/snapshots/GlobalSnapshot$1$1$1;->invoke(Ljava/lang/Object;)V
 
-    sget-object p1, Lqh/r;->a:Lqh/r;
+    sget-object p1, LX9/j;->a:LX9/j;
 
     return-object p1
 .end method
@@ -85,9 +85,10 @@
 .method public final invoke(Ljava/lang/Object;)V
     .locals 4
 
+    .line 2
     iget-object v0, p0, Landroidx/compose/runtime/snapshots/GlobalSnapshot$1$1$1;->$it:Ljava/util/List;
 
-    .line 2
+    .line 3
     invoke-interface {v0}, Ljava/util/List;->size()I
 
     move-result v1
@@ -97,16 +98,16 @@
     :goto_0
     if-ge v2, v1, :cond_0
 
-    .line 3
+    .line 4
     invoke-interface {v0, v2}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
     move-result-object v3
 
-    .line 4
-    check-cast v3, Lzh/c;
-
     .line 5
-    invoke-interface {v3, p1}, Lzh/c;->invoke(Ljava/lang/Object;)Ljava/lang/Object;
+    check-cast v3, Lka/c;
+
+    .line 6
+    invoke-interface {v3, p1}, Lka/c;->invoke(Ljava/lang/Object;)Ljava/lang/Object;
 
     add-int/lit8 v2, v2, 0x1
 

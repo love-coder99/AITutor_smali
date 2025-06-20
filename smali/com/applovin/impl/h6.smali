@@ -44,16 +44,17 @@
     .line 2
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
+    .line 3
     iput-object p1, p0, Lcom/applovin/impl/h6;->a:Lcom/applovin/impl/h5$a;
 
-    .line 3
+    .line 4
     invoke-static {p1, p2}, Lcom/applovin/impl/h6;->a(Lcom/applovin/impl/h5$a;Lcom/applovin/impl/n8;)Landroid/util/SparseArray;
 
     move-result-object p1
 
     iput-object p1, p0, Lcom/applovin/impl/h6;->b:Landroid/util/SparseArray;
 
-    .line 4
+    .line 5
     invoke-virtual {p1}, Landroid/util/SparseArray;->size()I
 
     move-result p1
@@ -64,21 +65,21 @@
 
     const/4 p1, 0x0
 
+    .line 6
     :goto_0
     iget-object p2, p0, Lcom/applovin/impl/h6;->b:Landroid/util/SparseArray;
 
-    .line 5
     invoke-virtual {p2}, Landroid/util/SparseArray;->size()I
 
     move-result p2
 
     if-ge p1, p2, :cond_0
 
+    .line 7
     iget-object p2, p0, Lcom/applovin/impl/h6;->c:[I
 
     iget-object v0, p0, Lcom/applovin/impl/h6;->b:Landroid/util/SparseArray;
 
-    .line 6
     invoke-virtual {v0, p1}, Landroid/util/SparseArray;->keyAt(I)I
 
     move-result v0
@@ -92,16 +93,21 @@
     :cond_0
     const-wide p1, -0x7fffffffffffffffL    # -4.9E-324
 
+    .line 8
     iput-wide p1, p0, Lcom/applovin/impl/h6;->d:J
 
+    .line 9
     iput-wide p1, p0, Lcom/applovin/impl/h6;->e:J
 
+    .line 10
     iput-wide p1, p0, Lcom/applovin/impl/h6;->f:J
 
     const p1, -0x800001
 
+    .line 11
     iput p1, p0, Lcom/applovin/impl/h6;->g:F
 
+    .line 12
     iput p1, p0, Lcom/applovin/impl/h6;->h:F
 
     return-void
@@ -111,28 +117,28 @@
     .locals 7
 
     .line 1
-    const-class v0, Lcom/applovin/impl/h5$a;
+    const/4 v0, 0x0
 
     .line 2
+    const/4 v1, 0x1
+
     .line 3
-    const-class v1, Lcom/applovin/impl/ce;
+    const-class v2, Lcom/applovin/impl/h5$a;
 
     .line 4
     .line 5
-    new-instance v2, Landroid/util/SparseArray;
+    const-class v3, Lcom/applovin/impl/ce;
 
     .line 6
     .line 7
-    invoke-direct {v2}, Landroid/util/SparseArray;-><init>()V
+    new-instance v4, Landroid/util/SparseArray;
 
     .line 8
     .line 9
+    invoke-direct {v4}, Landroid/util/SparseArray;-><init>()V
+
     .line 10
-    const/4 v3, 0x1
-
     .line 11
-    const/4 v4, 0x0
-
     .line 12
     :try_start_0
     const-string v5, "com.applovin.exoplayer2.source.dash.DashMediaSource$Factory"
@@ -147,7 +153,7 @@
     move-result-object v5
 
     .line 18
-    invoke-virtual {v5, v1}, Ljava/lang/Class;->asSubclass(Ljava/lang/Class;)Ljava/lang/Class;
+    invoke-virtual {v5, v3}, Ljava/lang/Class;->asSubclass(Ljava/lang/Class;)Ljava/lang/Class;
 
     .line 19
     .line 20
@@ -155,11 +161,11 @@
     move-result-object v5
 
     .line 22
-    new-array v6, v3, [Ljava/lang/Class;
+    new-array v6, v1, [Ljava/lang/Class;
 
     .line 23
     .line 24
-    aput-object v0, v6, v4
+    aput-object v2, v6, v0
 
     .line 25
     .line 26
@@ -171,11 +177,11 @@
     move-result-object v5
 
     .line 30
-    new-array v6, v3, [Ljava/lang/Object;
+    new-array v6, v1, [Ljava/lang/Object;
 
     .line 31
     .line 32
-    aput-object p0, v6, v4
+    aput-object p0, v6, v0
 
     .line 33
     .line 34
@@ -191,7 +197,7 @@
 
     .line 39
     .line 40
-    invoke-virtual {v2, v4, v5}, Landroid/util/SparseArray;->put(ILjava/lang/Object;)V
+    invoke-virtual {v4, v0, v5}, Landroid/util/SparseArray;->put(ILjava/lang/Object;)V
     :try_end_0
     .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
 
@@ -212,7 +218,7 @@
     move-result-object v5
 
     .line 49
-    invoke-virtual {v5, v1}, Ljava/lang/Class;->asSubclass(Ljava/lang/Class;)Ljava/lang/Class;
+    invoke-virtual {v5, v3}, Ljava/lang/Class;->asSubclass(Ljava/lang/Class;)Ljava/lang/Class;
 
     .line 50
     .line 51
@@ -220,11 +226,11 @@
     move-result-object v5
 
     .line 53
-    new-array v6, v3, [Ljava/lang/Class;
+    new-array v6, v1, [Ljava/lang/Class;
 
     .line 54
     .line 55
-    aput-object v0, v6, v4
+    aput-object v2, v6, v0
 
     .line 56
     .line 57
@@ -236,11 +242,11 @@
     move-result-object v5
 
     .line 61
-    new-array v6, v3, [Ljava/lang/Object;
+    new-array v6, v1, [Ljava/lang/Object;
 
     .line 62
     .line 63
-    aput-object p0, v6, v4
+    aput-object p0, v6, v0
 
     .line 64
     .line 65
@@ -256,7 +262,7 @@
 
     .line 70
     .line 71
-    invoke-virtual {v2, v3, v5}, Landroid/util/SparseArray;->put(ILjava/lang/Object;)V
+    invoke-virtual {v4, v1, v5}, Landroid/util/SparseArray;->put(ILjava/lang/Object;)V
     :try_end_1
     .catch Ljava/lang/Exception; {:try_start_1 .. :try_end_1} :catch_1
 
@@ -277,7 +283,7 @@
     move-result-object v5
 
     .line 80
-    invoke-virtual {v5, v1}, Ljava/lang/Class;->asSubclass(Ljava/lang/Class;)Ljava/lang/Class;
+    invoke-virtual {v5, v3}, Ljava/lang/Class;->asSubclass(Ljava/lang/Class;)Ljava/lang/Class;
 
     .line 81
     .line 82
@@ -285,11 +291,11 @@
     move-result-object v5
 
     .line 84
-    new-array v6, v3, [Ljava/lang/Class;
+    new-array v6, v1, [Ljava/lang/Class;
 
     .line 85
     .line 86
-    aput-object v0, v6, v4
+    aput-object v2, v6, v0
 
     .line 87
     .line 88
@@ -298,18 +304,18 @@
     .line 89
     .line 90
     .line 91
-    move-result-object v0
+    move-result-object v2
 
     .line 92
-    new-array v3, v3, [Ljava/lang/Object;
+    new-array v1, v1, [Ljava/lang/Object;
 
     .line 93
     .line 94
-    aput-object p0, v3, v4
+    aput-object p0, v1, v0
 
     .line 95
     .line 96
-    invoke-virtual {v0, v3}, Ljava/lang/reflect/Constructor;->newInstance([Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v2, v1}, Ljava/lang/reflect/Constructor;->newInstance([Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 97
     .line 98
@@ -321,10 +327,10 @@
 
     .line 101
     .line 102
-    const/4 v3, 0x2
+    const/4 v1, 0x2
 
     .line 103
-    invoke-virtual {v2, v3, v0}, Landroid/util/SparseArray;->put(ILjava/lang/Object;)V
+    invoke-virtual {v4, v1, v0}, Landroid/util/SparseArray;->put(ILjava/lang/Object;)V
     :try_end_2
     .catch Ljava/lang/Exception; {:try_start_2 .. :try_end_2} :catch_2
 
@@ -345,7 +351,7 @@
     move-result-object v0
 
     .line 112
-    invoke-virtual {v0, v1}, Ljava/lang/Class;->asSubclass(Ljava/lang/Class;)Ljava/lang/Class;
+    invoke-virtual {v0, v3}, Ljava/lang/Class;->asSubclass(Ljava/lang/Class;)Ljava/lang/Class;
 
     .line 113
     .line 114
@@ -353,61 +359,56 @@
     move-result-object v0
 
     .line 116
-    new-array v1, v4, [Ljava/lang/Class;
+    const/4 v1, 0x0
 
     .line 117
-    .line 118
     invoke-virtual {v0, v1}, Ljava/lang/Class;->getConstructor([Ljava/lang/Class;)Ljava/lang/reflect/Constructor;
 
+    .line 118
     .line 119
     .line 120
-    .line 121
     move-result-object v0
 
-    .line 122
-    new-array v1, v4, [Ljava/lang/Object;
-
-    .line 123
-    .line 124
+    .line 121
     invoke-virtual {v0, v1}, Ljava/lang/reflect/Constructor;->newInstance([Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 125
-    .line 126
-    .line 127
+    .line 122
+    .line 123
+    .line 124
     move-result-object v0
 
-    .line 128
+    .line 125
     check-cast v0, Lcom/applovin/impl/ce;
 
-    .line 129
-    .line 130
+    .line 126
+    .line 127
     const/4 v1, 0x3
 
-    .line 131
-    invoke-virtual {v2, v1, v0}, Landroid/util/SparseArray;->put(ILjava/lang/Object;)V
+    .line 128
+    invoke-virtual {v4, v1, v0}, Landroid/util/SparseArray;->put(ILjava/lang/Object;)V
     :try_end_3
     .catch Ljava/lang/Exception; {:try_start_3 .. :try_end_3} :catch_3
 
-    .line 132
-    .line 133
-    .line 134
+    .line 129
+    .line 130
+    .line 131
     :catch_3
     new-instance v0, Lcom/applovin/impl/bi$b;
 
-    .line 135
-    .line 136
+    .line 132
+    .line 133
     invoke-direct {v0, p0, p1}, Lcom/applovin/impl/bi$b;-><init>(Lcom/applovin/impl/h5$a;Lcom/applovin/impl/n8;)V
 
-    .line 137
-    .line 138
-    .line 139
+    .line 134
+    .line 135
+    .line 136
     const/4 p0, 0x4
 
-    .line 140
-    invoke-virtual {v2, p0, v0}, Landroid/util/SparseArray;->put(ILjava/lang/Object;)V
+    .line 137
+    invoke-virtual {v4, p0, v0}, Landroid/util/SparseArray;->put(ILjava/lang/Object;)V
 
-    .line 141
-    .line 142
-    .line 143
-    return-object v2
+    .line 138
+    .line 139
+    .line 140
+    return-object v4
 .end method

@@ -94,13 +94,14 @@
 .method private a(F)I
     .locals 6
 
+    .line 20
     iget v0, p0, Lcom/applovin/impl/r5$c;->e:I
 
     iget v1, p0, Lcom/applovin/impl/r5$c;->f:I
 
     iget v2, p0, Lcom/applovin/impl/r5$c;->g:I
 
-    .line 19
+    .line 21
     invoke-static {v0, v1, v2}, Landroid/media/AudioTrack;->getMinBufferSize(III)I
 
     move-result v0
@@ -116,7 +117,7 @@
     :cond_0
     const/4 v1, 0x0
 
-    .line 20
+    .line 22
     :goto_0
     invoke-static {v1}, Lcom/applovin/impl/b1;->b(Z)V
 
@@ -124,7 +125,7 @@
 
     const-wide/32 v2, 0x3d090
 
-    .line 21
+    .line 23
     invoke-virtual {p0, v2, v3}, Lcom/applovin/impl/r5$c;->a(J)J
 
     move-result-wide v2
@@ -137,7 +138,7 @@
 
     const-wide/32 v4, 0xb71b0
 
-    .line 22
+    .line 24
     invoke-virtual {p0, v4, v5}, Lcom/applovin/impl/r5$c;->a(J)J
 
     move-result-wide v4
@@ -152,7 +153,7 @@
 
     move-result v0
 
-    .line 23
+    .line 25
     invoke-static {v1, v3, v0}, Lcom/applovin/impl/xp;->a(III)I
 
     move-result v0
@@ -167,7 +168,7 @@
 
     mul-float v0, v0, p1
 
-    .line 24
+    .line 26
     invoke-static {v0}, Ljava/lang/Math;->round(F)I
 
     move-result v0
@@ -183,6 +184,7 @@
 
     return p1
 
+    .line 9
     :cond_0
     iget p1, p0, Lcom/applovin/impl/r5$c;->c:I
 
@@ -198,14 +200,14 @@
 
     const-wide/32 p1, 0x3d090
 
-    .line 9
+    .line 10
     invoke-direct {p0, p1, p2}, Lcom/applovin/impl/r5$c;->c(J)I
 
     move-result p1
 
     return p1
 
-    .line 10
+    .line 11
     :cond_1
     new-instance p1, Ljava/lang/IllegalStateException;
 
@@ -216,7 +218,7 @@
     :cond_2
     const-wide/32 p1, 0x2faf080
 
-    .line 11
+    .line 12
     invoke-direct {p0, p1, p2}, Lcom/applovin/impl/r5$c;->c(J)I
 
     move-result p1
@@ -233,7 +235,7 @@
     :cond_4
     const/high16 p1, 0x3f800000    # 1.0f
 
-    .line 12
+    .line 13
     :goto_0
     invoke-direct {p0, p1}, Lcom/applovin/impl/r5$c;->a(F)I
 
@@ -245,33 +247,33 @@
 .method private static a()Landroid/media/AudioAttributes;
     .locals 2
 
-    .line 25
+    .line 27
     new-instance v0, Landroid/media/AudioAttributes$Builder;
 
     invoke-direct {v0}, Landroid/media/AudioAttributes$Builder;-><init>()V
 
     const/4 v1, 0x3
 
-    .line 26
+    .line 28
     invoke-virtual {v0, v1}, Landroid/media/AudioAttributes$Builder;->setContentType(I)Landroid/media/AudioAttributes$Builder;
 
     move-result-object v0
 
     const/16 v1, 0x10
 
-    .line 27
+    .line 29
     invoke-virtual {v0, v1}, Landroid/media/AudioAttributes$Builder;->setFlags(I)Landroid/media/AudioAttributes$Builder;
 
     move-result-object v0
 
     const/4 v1, 0x1
 
-    .line 28
+    .line 30
     invoke-virtual {v0, v1}, Landroid/media/AudioAttributes$Builder;->setUsage(I)Landroid/media/AudioAttributes$Builder;
 
     move-result-object v0
 
-    .line 29
+    .line 31
     invoke-virtual {v0}, Landroid/media/AudioAttributes$Builder;->build()Landroid/media/AudioAttributes;
 
     move-result-object v0
@@ -284,14 +286,14 @@
 
     if-eqz p1, :cond_0
 
-    .line 17
+    .line 18
     invoke-static {}, Lcom/applovin/impl/r5$c;->a()Landroid/media/AudioAttributes;
 
     move-result-object p0
 
     return-object p0
 
-    .line 18
+    .line 19
     :cond_0
     invoke-virtual {p0}, Lcom/applovin/impl/l1;->a()Landroid/media/AudioAttributes;
 
@@ -303,7 +305,7 @@
 .method private a(Lcom/applovin/impl/l1;I)Landroid/media/AudioTrack;
     .locals 8
 
-    .line 13
+    .line 14
     iget p1, p1, Lcom/applovin/impl/l1;->c:I
 
     invoke-static {p1}, Lcom/applovin/impl/xp;->e(I)I
@@ -312,7 +314,7 @@
 
     if-nez p2, :cond_0
 
-    .line 14
+    .line 15
     new-instance p1, Landroid/media/AudioTrack;
 
     iget v2, p0, Lcom/applovin/impl/r5$c;->e:I
@@ -331,7 +333,7 @@
 
     return-object p1
 
-    .line 15
+    .line 16
     :cond_0
     new-instance p1, Landroid/media/AudioTrack;
 
@@ -395,13 +397,14 @@
 .method private c(J)I
     .locals 3
 
+    .line 1
     iget v0, p0, Lcom/applovin/impl/r5$c;->g:I
 
-    .line 1
     invoke-static {v0}, Lcom/applovin/impl/r5;->b(I)I
 
     move-result v0
 
+    .line 2
     iget v1, p0, Lcom/applovin/impl/r5$c;->g:I
 
     const/4 v2, 0x5
@@ -417,7 +420,7 @@
 
     const-wide/32 v0, 0xf4240
 
-    .line 2
+    .line 3
     div-long/2addr p1, v0
 
     long-to-int p2, p1
@@ -428,10 +431,10 @@
 .method private c(ZLcom/applovin/impl/l1;I)Landroid/media/AudioTrack;
     .locals 7
 
-    .line 3
+    .line 4
     new-instance v6, Landroid/media/AudioTrack;
 
-    .line 4
+    .line 5
     invoke-static {p2, p1}, Lcom/applovin/impl/r5$c;->a(Lcom/applovin/impl/l1;Z)Landroid/media/AudioAttributes;
 
     move-result-object v1
@@ -442,7 +445,7 @@
 
     iget v0, p0, Lcom/applovin/impl/r5$c;->g:I
 
-    .line 5
+    .line 6
     invoke-static {p1, p2, v0}, Lcom/applovin/impl/r5;->a(III)Landroid/media/AudioFormat;
 
     move-result-object v2
@@ -463,51 +466,52 @@
 .method private d(ZLcom/applovin/impl/l1;I)Landroid/media/AudioTrack;
     .locals 3
 
+    .line 1
     iget v0, p0, Lcom/applovin/impl/r5$c;->e:I
 
     iget v1, p0, Lcom/applovin/impl/r5$c;->f:I
 
     iget v2, p0, Lcom/applovin/impl/r5$c;->g:I
 
-    .line 1
+    .line 2
     invoke-static {v0, v1, v2}, Lcom/applovin/impl/r5;->a(III)Landroid/media/AudioFormat;
 
     move-result-object v0
 
-    .line 2
+    .line 3
     invoke-static {p2, p1}, Lcom/applovin/impl/r5$c;->a(Lcom/applovin/impl/l1;Z)Landroid/media/AudioAttributes;
 
     move-result-object p1
 
-    .line 3
-    invoke-static {}, Lcom/applovin/impl/cw;->g()Landroid/media/AudioTrack$Builder;
+    .line 4
+    invoke-static {}, Lcom/applovin/impl/T2;->i()Landroid/media/AudioTrack$Builder;
 
     move-result-object p2
 
-    .line 4
-    invoke-static {p2, p1}, Landroidx/compose/ui/platform/r2;->h(Landroid/media/AudioTrack$Builder;Landroid/media/AudioAttributes;)Landroid/media/AudioTrack$Builder;
-
-    move-result-object p1
-
     .line 5
-    invoke-static {p1, v0}, Landroidx/compose/ui/platform/r2;->i(Landroid/media/AudioTrack$Builder;Landroid/media/AudioFormat;)Landroid/media/AudioTrack$Builder;
+    invoke-static {p2, p1}, Lc3/A;->g(Landroid/media/AudioTrack$Builder;Landroid/media/AudioAttributes;)Landroid/media/AudioTrack$Builder;
 
     move-result-object p1
 
     .line 6
-    invoke-static {p1}, Lcom/applovin/impl/cw;->h(Landroid/media/AudioTrack$Builder;)Landroid/media/AudioTrack$Builder;
+    invoke-static {p1, v0}, Lc3/A;->h(Landroid/media/AudioTrack$Builder;Landroid/media/AudioFormat;)Landroid/media/AudioTrack$Builder;
+
+    move-result-object p1
+
+    .line 7
+    invoke-static {p1}, Lc3/A;->e(Landroid/media/AudioTrack$Builder;)Landroid/media/AudioTrack$Builder;
 
     move-result-object p1
 
     iget p2, p0, Lcom/applovin/impl/r5$c;->h:I
 
-    .line 7
-    invoke-static {p1, p2}, Lcom/applovin/impl/cw;->i(Landroid/media/AudioTrack$Builder;I)Landroid/media/AudioTrack$Builder;
+    .line 8
+    invoke-static {p1, p2}, Lc3/A;->f(Landroid/media/AudioTrack$Builder;I)Landroid/media/AudioTrack$Builder;
 
     move-result-object p1
 
-    .line 8
-    invoke-static {p1, p3}, Lcom/applovin/impl/cw;->C(Landroid/media/AudioTrack$Builder;I)Landroid/media/AudioTrack$Builder;
+    .line 9
+    invoke-static {p1, p3}, Lc3/A;->B(Landroid/media/AudioTrack$Builder;I)Landroid/media/AudioTrack$Builder;
 
     move-result-object p1
 
@@ -522,14 +526,14 @@
     :cond_0
     const/4 p3, 0x0
 
-    .line 9
+    .line 10
     :goto_0
-    invoke-static {p1, p3}, Landroidx/core/view/r1;->d(Landroid/media/AudioTrack$Builder;Z)Landroid/media/AudioTrack$Builder;
+    invoke-static {p1, p3}, Lcom/applovin/exoplayer2/ui/k;->c(Landroid/media/AudioTrack$Builder;Z)Landroid/media/AudioTrack$Builder;
 
     move-result-object p1
 
-    .line 10
-    invoke-static {p1}, Lcom/applovin/impl/cw;->j(Landroid/media/AudioTrack$Builder;)Landroid/media/AudioTrack;
+    .line 11
+    invoke-static {p1}, Lc3/A;->i(Landroid/media/AudioTrack$Builder;)Landroid/media/AudioTrack;
 
     move-result-object p1
 
@@ -541,6 +545,7 @@
 .method public a(J)J
     .locals 2
 
+    .line 17
     iget v0, p0, Lcom/applovin/impl/r5$c;->e:I
 
     int-to-long v0, v0
@@ -549,7 +554,6 @@
 
     const-wide/32 v0, 0xf4240
 
-    .line 16
     div-long/2addr p1, v0
 
     return-wide p1
@@ -701,11 +705,11 @@
 
     mul-long p1, p1, v0
 
+    .line 1
     iget v0, p0, Lcom/applovin/impl/r5$c;->e:I
 
     int-to-long v0, v0
 
-    .line 2
     div-long/2addr p1, v0
 
     return-wide p1
@@ -714,7 +718,7 @@
 .method public b()Z
     .locals 2
 
-    .line 1
+    .line 2
     iget v0, p0, Lcom/applovin/impl/r5$c;->c:I
 
     const/4 v1, 0x1
@@ -737,9 +741,9 @@
 
     mul-long p1, p1, v0
 
+    .line 12
     iget-object v0, p0, Lcom/applovin/impl/r5$c;->a:Lcom/applovin/impl/e9;
 
-    .line 11
     iget v0, v0, Lcom/applovin/impl/e9;->A:I
 
     int-to-long v0, v0

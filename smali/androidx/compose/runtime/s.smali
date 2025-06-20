@@ -1,84 +1,57 @@
-.class public abstract Landroidx/compose/runtime/s;
+.class public final Landroidx/compose/runtime/S;
 .super Ljava/lang/Object;
 .source "SourceFile"
 
+# interfaces
+.implements Landroidx/compose/runtime/K0;
 
-# virtual methods
-.method public abstract a(Landroidx/compose/runtime/f0;Landroidx/compose/runtime/internal/b;)V
-.end method
 
-.method public b()V
+# instance fields
+.field public final a:LX9/d;
+
+
+# direct methods
+.method public constructor <init>(Lka/a;)V
     .locals 0
 
     .line 1
-    return-void
-.end method
-
-.method public abstract c()Z
-.end method
-
-.method public abstract d()Z
-.end method
-
-.method public abstract e()Z
-.end method
-
-.method public f()Landroidx/compose/runtime/q1;
-    .locals 1
-
-    .line 1
-    sget-object v0, Landroidx/compose/runtime/t;->a:Landroidx/compose/runtime/internal/f;
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 2
     .line 3
-    return-object v0
-.end method
+    .line 4
+    invoke-static {p1}, Lkotlin/a;->a(Lka/a;)LX9/d;
 
-.method public abstract g()I
-.end method
+    .line 5
+    .line 6
+    .line 7
+    move-result-object p1
 
-.method public abstract h()Lkotlin/coroutines/i;
-.end method
+    .line 8
+    iput-object p1, p0, Landroidx/compose/runtime/S;->a:LX9/d;
 
-.method public i()V
-    .locals 0
-
-    .line 1
+    .line 9
+    .line 10
     return-void
 .end method
 
-.method public abstract j(Landroidx/compose/runtime/f0;)V
-.end method
 
-.method public abstract k(Landroidx/compose/runtime/f1;)Landroidx/compose/runtime/e1;
-.end method
-
-.method public abstract l(Ljava/util/Set;)V
-.end method
-
-.method public m(Landroidx/compose/runtime/p;)V
+# virtual methods
+.method public final a(Landroidx/compose/runtime/g0;)Ljava/lang/Object;
     .locals 0
 
     .line 1
-    return-void
-.end method
+    iget-object p1, p0, Landroidx/compose/runtime/S;->a:LX9/d;
 
-.method public abstract n(Landroidx/compose/runtime/f0;)V
-.end method
+    .line 2
+    .line 3
+    invoke-interface {p1}, LX9/d;->getValue()Ljava/lang/Object;
 
-.method public o()V
-    .locals 0
+    .line 4
+    .line 5
+    .line 6
+    move-result-object p1
 
-    .line 1
-    return-void
-.end method
-
-.method public p(Landroidx/compose/runtime/p;)V
-    .locals 0
-
-    .line 1
-    return-void
-.end method
-
-.method public abstract q(Landroidx/compose/runtime/f0;)V
+    .line 7
+    return-object p1
 .end method

@@ -13,11 +13,18 @@
 .field private mTmpInfo:Landroidx/appcompat/widget/TintInfo;
 
 .field private final mView:Landroid/widget/ImageView;
+    .annotation build Landroidx/annotation/NonNull;
+    .end annotation
+.end field
 
 
 # direct methods
 .method public constructor <init>(Landroid/widget/ImageView;)V
     .locals 1
+    .param p1    # Landroid/widget/ImageView;
+        .annotation build Landroidx/annotation/NonNull;
+        .end annotation
+    .end param
 
     .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -41,6 +48,10 @@
 
 .method private applyFrameworkTintUsingColorFilter(Landroid/graphics/drawable/Drawable;)Z
     .locals 3
+    .param p1    # Landroid/graphics/drawable/Drawable;
+        .annotation build Landroidx/annotation/NonNull;
+        .end annotation
+    .end param
 
     .line 1
     iget-object v0, p0, Landroidx/appcompat/widget/AppCompatImageHelper;->mTmpInfo:Landroidx/appcompat/widget/TintInfo;
@@ -178,30 +189,48 @@
 .method private shouldApplyFrameworkTintUsingColorFilter()Z
     .locals 4
 
+    .line 1
     sget v0, Landroid/os/Build$VERSION;->SDK_INT:I
 
+    .line 2
+    .line 3
     const/4 v1, 0x0
 
+    .line 4
     const/4 v2, 0x1
 
+    .line 5
     const/16 v3, 0x15
 
+    .line 6
+    .line 7
     if-le v0, v3, :cond_1
 
+    .line 8
+    .line 9
     iget-object v0, p0, Landroidx/appcompat/widget/AppCompatImageHelper;->mInternalImageTint:Landroidx/appcompat/widget/TintInfo;
 
+    .line 10
+    .line 11
     if-eqz v0, :cond_0
 
+    .line 12
+    .line 13
     const/4 v1, 0x1
 
+    .line 14
     :cond_0
     return v1
 
+    .line 15
     :cond_1
     if-ne v0, v3, :cond_2
 
+    .line 16
+    .line 17
     return v2
 
+    .line 18
     :cond_2
     return v1
 .end method
@@ -477,7 +506,7 @@
     move-result-object v0
 
     .line 7
-    sget-object v1, Lg/j;->AppCompatImageView:[I
+    sget-object v1, Li/j;->AppCompatImageView:[I
 
     .line 8
     .line 9
@@ -504,7 +533,7 @@
     move-result-object v2
 
     .line 20
-    sget-object v3, Lg/j;->AppCompatImageView:[I
+    sget-object v3, Li/j;->AppCompatImageView:[I
 
     .line 21
     .line 22
@@ -522,7 +551,7 @@
     move v6, p2
 
     .line 28
-    invoke-static/range {v1 .. v6}, Landroidx/core/view/y0;->r(Landroid/view/View;Landroid/content/Context;[ILandroid/util/AttributeSet;Landroid/content/res/TypedArray;I)V
+    invoke-static/range {v1 .. v6}, Landroidx/core/view/e0;->r(Landroid/view/View;Landroid/content/Context;[ILandroid/util/AttributeSet;Landroid/content/res/TypedArray;I)V
 
     .line 29
     .line 30
@@ -547,7 +576,7 @@
 
     .line 39
     .line 40
-    sget v1, Lg/j;->AppCompatImageView_srcCompat:I
+    sget v1, Li/j;->AppCompatImageView_srcCompat:I
 
     .line 41
     .line 42
@@ -575,7 +604,7 @@
     move-result-object p1
 
     .line 54
-    invoke-static {p1, v1}, La0/r;->o(Landroid/content/Context;I)Landroid/graphics/drawable/Drawable;
+    invoke-static {p1, v1}, Lcom/google/android/gms/internal/measurement/Q1;->l(Landroid/content/Context;I)Landroid/graphics/drawable/Drawable;
 
     .line 55
     .line 56
@@ -619,7 +648,7 @@
     .line 73
     .line 74
     :cond_1
-    sget p1, Lg/j;->AppCompatImageView_tint:I
+    sget p1, Li/j;->AppCompatImageView_tint:I
 
     .line 75
     .line 76
@@ -643,7 +672,7 @@
 
     .line 85
     .line 86
-    sget v2, Lg/j;->AppCompatImageView_tint:I
+    sget v2, Li/j;->AppCompatImageView_tint:I
 
     .line 87
     .line 88
@@ -724,7 +753,7 @@
     .line 126
     .line 127
     :cond_3
-    sget p1, Lg/j;->AppCompatImageView_tintMode:I
+    sget p1, Li/j;->AppCompatImageView_tintMode:I
 
     .line 128
     .line 129
@@ -744,7 +773,7 @@
 
     .line 136
     .line 137
-    sget v2, Lg/j;->AppCompatImageView_tintMode:I
+    sget v2, Li/j;->AppCompatImageView_tintMode:I
 
     .line 138
     .line 139
@@ -857,6 +886,10 @@
 
 .method public obtainLevelFromDrawable(Landroid/graphics/drawable/Drawable;)V
     .locals 0
+    .param p1    # Landroid/graphics/drawable/Drawable;
+        .annotation build Landroidx/annotation/NonNull;
+        .end annotation
+    .end param
 
     .line 1
     invoke-virtual {p1}, Landroid/graphics/drawable/Drawable;->getLevel()I
@@ -894,7 +927,7 @@
     move-result-object v0
 
     .line 9
-    invoke-static {v0, p1}, La0/r;->o(Landroid/content/Context;I)Landroid/graphics/drawable/Drawable;
+    invoke-static {v0, p1}, Lcom/google/android/gms/internal/measurement/Q1;->l(Landroid/content/Context;I)Landroid/graphics/drawable/Drawable;
 
     .line 10
     .line 11

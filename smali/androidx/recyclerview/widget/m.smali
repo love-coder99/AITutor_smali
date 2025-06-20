@@ -1,313 +1,145 @@
-.class public final Landroidx/recyclerview/widget/m;
-.super Landroid/animation/AnimatorListenerAdapter;
+.class public Landroidx/recyclerview/widget/M;
+.super Landroid/view/ViewGroup$MarginLayoutParams;
 .source "SourceFile"
 
 
 # instance fields
-.field public final synthetic b:I
+.field public a:Landroidx/recyclerview/widget/c0;
+
+.field public final b:Landroid/graphics/Rect;
 
 .field public c:Z
 
-.field public final synthetic d:Ljava/lang/Object;
+.field public d:Z
 
 
 # direct methods
-.method public constructor <init>(Landroidx/recyclerview/widget/o;)V
-    .locals 1
+.method public constructor <init>(II)V
+    .locals 0
 
-    const/4 v0, 0x0
+    .line 5
+    invoke-direct {p0, p1, p2}, Landroid/view/ViewGroup$MarginLayoutParams;-><init>(II)V
 
-    iput v0, p0, Landroidx/recyclerview/widget/m;->b:I
+    .line 6
+    new-instance p1, Landroid/graphics/Rect;
 
-    iput-object p1, p0, Landroidx/recyclerview/widget/m;->d:Ljava/lang/Object;
+    invoke-direct {p1}, Landroid/graphics/Rect;-><init>()V
 
-    .line 2
-    invoke-direct {p0}, Landroid/animation/AnimatorListenerAdapter;-><init>()V
+    iput-object p1, p0, Landroidx/recyclerview/widget/M;->b:Landroid/graphics/Rect;
 
-    iput-boolean v0, p0, Landroidx/recyclerview/widget/m;->c:Z
-
-    return-void
-.end method
-
-.method public constructor <init>(Lcom/google/android/material/search/o;Z)V
-    .locals 1
-
-    const/4 v0, 0x1
-
-    iput v0, p0, Landroidx/recyclerview/widget/m;->b:I
-
-    iput-object p1, p0, Landroidx/recyclerview/widget/m;->d:Ljava/lang/Object;
-
-    iput-boolean p2, p0, Landroidx/recyclerview/widget/m;->c:Z
-
-    .line 1
-    invoke-direct {p0}, Landroid/animation/AnimatorListenerAdapter;-><init>()V
-
-    return-void
-.end method
-
-
-# virtual methods
-.method public final onAnimationCancel(Landroid/animation/Animator;)V
-    .locals 1
-
-    .line 1
-    iget v0, p0, Landroidx/recyclerview/widget/m;->b:I
-
-    packed-switch v0, :pswitch_data_0
-
-    invoke-super {p0, p1}, Landroid/animation/AnimatorListenerAdapter;->onAnimationCancel(Landroid/animation/Animator;)V
-
-    return-void
-
-    :pswitch_0
     const/4 p1, 0x1
 
-    iput-boolean p1, p0, Landroidx/recyclerview/widget/m;->c:Z
-
-    return-void
-
-    nop
-
-    :pswitch_data_0
-    .packed-switch 0x0
-        :pswitch_0
-    .end packed-switch
-.end method
-
-.method public final onAnimationEnd(Landroid/animation/Animator;)V
-    .locals 3
-
-    .line 1
-    iget p1, p0, Landroidx/recyclerview/widget/m;->b:I
-
-    .line 2
-    .line 3
-    const/4 v0, 0x0
-
-    .line 4
-    iget-object v1, p0, Landroidx/recyclerview/widget/m;->d:Ljava/lang/Object;
-
-    .line 5
-    .line 6
-    packed-switch p1, :pswitch_data_0
-
     .line 7
-    .line 8
-    .line 9
-    check-cast v1, Lcom/google/android/material/search/o;
+    iput-boolean p1, p0, Landroidx/recyclerview/widget/M;->c:Z
 
-    .line 10
-    .line 11
-    iget-boolean p1, p0, Landroidx/recyclerview/widget/m;->c:Z
-
-    .line 12
-    .line 13
-    if-eqz p1, :cond_0
-
-    .line 14
-    .line 15
-    const/high16 p1, 0x3f800000    # 1.0f
-
-    .line 16
-    .line 17
-    goto :goto_0
-
-    .line 18
-    :cond_0
     const/4 p1, 0x0
 
-    .line 19
-    :goto_0
-    invoke-static {v1, p1}, Lcom/google/android/material/search/o;->a(Lcom/google/android/material/search/o;F)V
+    .line 8
+    iput-boolean p1, p0, Landroidx/recyclerview/widget/M;->d:Z
 
-    .line 20
-    .line 21
-    .line 22
-    const/4 p1, 0x0
-
-    .line 23
-    iget-object v1, v1, Lcom/google/android/material/search/o;->c:Lcom/google/android/material/internal/ClippableRoundedCornerLayout;
-
-    .line 24
-    .line 25
-    iput-object p1, v1, Lcom/google/android/material/internal/ClippableRoundedCornerLayout;->b:Landroid/graphics/Path;
-
-    .line 26
-    .line 27
-    iput v0, v1, Lcom/google/android/material/internal/ClippableRoundedCornerLayout;->c:F
-
-    .line 28
-    .line 29
-    invoke-virtual {v1}, Landroid/view/View;->invalidate()V
-
-    .line 30
-    .line 31
-    .line 32
     return-void
-
-    .line 33
-    :pswitch_0
-    iget-boolean p1, p0, Landroidx/recyclerview/widget/m;->c:Z
-
-    .line 34
-    .line 35
-    const/4 v2, 0x0
-
-    .line 36
-    if-eqz p1, :cond_1
-
-    .line 37
-    .line 38
-    iput-boolean v2, p0, Landroidx/recyclerview/widget/m;->c:Z
-
-    .line 39
-    .line 40
-    goto :goto_1
-
-    .line 41
-    :cond_1
-    check-cast v1, Landroidx/recyclerview/widget/o;
-
-    .line 42
-    .line 43
-    iget-object p1, v1, Landroidx/recyclerview/widget/o;->z:Landroid/animation/ValueAnimator;
-
-    .line 44
-    .line 45
-    invoke-virtual {p1}, Landroid/animation/ValueAnimator;->getAnimatedValue()Ljava/lang/Object;
-
-    .line 46
-    .line 47
-    .line 48
-    move-result-object p1
-
-    .line 49
-    check-cast p1, Ljava/lang/Float;
-
-    .line 50
-    .line 51
-    invoke-virtual {p1}, Ljava/lang/Float;->floatValue()F
-
-    .line 52
-    .line 53
-    .line 54
-    move-result p1
-
-    .line 55
-    cmpl-float p1, p1, v0
-
-    .line 56
-    .line 57
-    if-nez p1, :cond_2
-
-    .line 58
-    .line 59
-    iput v2, v1, Landroidx/recyclerview/widget/o;->A:I
-
-    .line 60
-    .line 61
-    invoke-virtual {v1, v2}, Landroidx/recyclerview/widget/o;->f(I)V
-
-    .line 62
-    .line 63
-    .line 64
-    goto :goto_1
-
-    .line 65
-    :cond_2
-    const/4 p1, 0x2
-
-    .line 66
-    iput p1, v1, Landroidx/recyclerview/widget/o;->A:I
-
-    .line 67
-    .line 68
-    iget-object p1, v1, Landroidx/recyclerview/widget/o;->s:Landroidx/recyclerview/widget/RecyclerView;
-
-    .line 69
-    .line 70
-    invoke-virtual {p1}, Landroid/view/View;->invalidate()V
-
-    .line 71
-    .line 72
-    .line 73
-    :goto_1
-    return-void
-
-    .line 74
-    nop
-
-    .line 75
-    :pswitch_data_0
-    .packed-switch 0x0
-        :pswitch_0
-    .end packed-switch
 .end method
 
-.method public final onAnimationStart(Landroid/animation/Animator;)V
-    .locals 1
+.method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
+    .locals 0
 
     .line 1
-    iget v0, p0, Landroidx/recyclerview/widget/m;->b:I
+    invoke-direct {p0, p1, p2}, Landroid/view/ViewGroup$MarginLayoutParams;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
 
     .line 2
+    new-instance p1, Landroid/graphics/Rect;
+
+    invoke-direct {p1}, Landroid/graphics/Rect;-><init>()V
+
+    iput-object p1, p0, Landroidx/recyclerview/widget/M;->b:Landroid/graphics/Rect;
+
+    const/4 p1, 0x1
+
     .line 3
-    packed-switch v0, :pswitch_data_0
+    iput-boolean p1, p0, Landroidx/recyclerview/widget/M;->c:Z
+
+    const/4 p1, 0x0
 
     .line 4
-    .line 5
-    .line 6
-    invoke-super {p0, p1}, Landroid/animation/AnimatorListenerAdapter;->onAnimationStart(Landroid/animation/Animator;)V
+    iput-boolean p1, p0, Landroidx/recyclerview/widget/M;->d:Z
 
-    .line 7
-    .line 8
-    .line 9
     return-void
+.end method
 
-    .line 10
-    :pswitch_0
-    iget-object p1, p0, Landroidx/recyclerview/widget/m;->d:Ljava/lang/Object;
-
-    .line 11
-    .line 12
-    check-cast p1, Lcom/google/android/material/search/o;
+.method public constructor <init>(Landroid/view/ViewGroup$LayoutParams;)V
+    .locals 0
 
     .line 13
+    invoke-direct {p0, p1}, Landroid/view/ViewGroup$MarginLayoutParams;-><init>(Landroid/view/ViewGroup$LayoutParams;)V
+
     .line 14
-    iget-boolean v0, p0, Landroidx/recyclerview/widget/m;->c:Z
+    new-instance p1, Landroid/graphics/Rect;
+
+    invoke-direct {p1}, Landroid/graphics/Rect;-><init>()V
+
+    iput-object p1, p0, Landroidx/recyclerview/widget/M;->b:Landroid/graphics/Rect;
+
+    const/4 p1, 0x1
 
     .line 15
+    iput-boolean p1, p0, Landroidx/recyclerview/widget/M;->c:Z
+
+    const/4 p1, 0x0
+
     .line 16
-    if-eqz v0, :cond_0
+    iput-boolean p1, p0, Landroidx/recyclerview/widget/M;->d:Z
+
+    return-void
+.end method
+
+.method public constructor <init>(Landroid/view/ViewGroup$MarginLayoutParams;)V
+    .locals 0
+
+    .line 9
+    invoke-direct {p0, p1}, Landroid/view/ViewGroup$MarginLayoutParams;-><init>(Landroid/view/ViewGroup$MarginLayoutParams;)V
+
+    .line 10
+    new-instance p1, Landroid/graphics/Rect;
+
+    invoke-direct {p1}, Landroid/graphics/Rect;-><init>()V
+
+    iput-object p1, p0, Landroidx/recyclerview/widget/M;->b:Landroid/graphics/Rect;
+
+    const/4 p1, 0x1
+
+    .line 11
+    iput-boolean p1, p0, Landroidx/recyclerview/widget/M;->c:Z
+
+    const/4 p1, 0x0
+
+    .line 12
+    iput-boolean p1, p0, Landroidx/recyclerview/widget/M;->d:Z
+
+    return-void
+.end method
+
+.method public constructor <init>(Landroidx/recyclerview/widget/M;)V
+    .locals 0
 
     .line 17
+    invoke-direct {p0, p1}, Landroid/view/ViewGroup$MarginLayoutParams;-><init>(Landroid/view/ViewGroup$LayoutParams;)V
+
     .line 18
-    const/4 v0, 0x0
+    new-instance p1, Landroid/graphics/Rect;
+
+    invoke-direct {p1}, Landroid/graphics/Rect;-><init>()V
+
+    iput-object p1, p0, Landroidx/recyclerview/widget/M;->b:Landroid/graphics/Rect;
+
+    const/4 p1, 0x1
 
     .line 19
-    goto :goto_0
+    iput-boolean p1, p0, Landroidx/recyclerview/widget/M;->c:Z
+
+    const/4 p1, 0x0
 
     .line 20
-    :cond_0
-    const/high16 v0, 0x3f800000    # 1.0f
+    iput-boolean p1, p0, Landroidx/recyclerview/widget/M;->d:Z
 
-    .line 21
-    .line 22
-    :goto_0
-    invoke-static {p1, v0}, Lcom/google/android/material/search/o;->a(Lcom/google/android/material/search/o;F)V
-
-    .line 23
-    .line 24
-    .line 25
     return-void
-
-    .line 26
-    nop
-
-    .line 27
-    :pswitch_data_0
-    .packed-switch 0x1
-        :pswitch_0
-    .end packed-switch
 .end method

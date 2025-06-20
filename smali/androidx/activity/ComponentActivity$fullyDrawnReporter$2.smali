@@ -3,14 +3,14 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lzh/a;
+.implements Lka/a;
 
 
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "Lkotlin/jvm/internal/Lambda;",
-        "Lzh/a;"
+        "Lka/a;"
     }
 .end annotation
 
@@ -19,9 +19,9 @@
         "\u0000\u0008\n\u0002\u0018\u0002\n\u0002\u0008\u0003\u0010\u0003\u001a\u00020\u0000H\n\u00a2\u0006\u0004\u0008\u0001\u0010\u0002"
     }
     d2 = {
-        "Landroidx/activity/d0;",
+        "Landroidx/activity/x;",
         "invoke",
-        "()Landroidx/activity/d0;",
+        "()Landroidx/activity/x;",
         "<anonymous>"
     }
     k = 0x3
@@ -34,14 +34,14 @@
 
 
 # instance fields
-.field final synthetic this$0:Landroidx/activity/s;
+.field final synthetic this$0:Landroidx/activity/o;
 
 
 # direct methods
-.method public constructor <init>(Landroidx/activity/s;)V
+.method public constructor <init>(Landroidx/activity/o;)V
     .locals 0
 
-    iput-object p1, p0, Landroidx/activity/ComponentActivity$fullyDrawnReporter$2;->this$0:Landroidx/activity/s;
+    iput-object p1, p0, Landroidx/activity/ComponentActivity$fullyDrawnReporter$2;->this$0:Landroidx/activity/o;
 
     const/4 p1, 0x0
 
@@ -52,26 +52,25 @@
 
 
 # virtual methods
-.method public final invoke()Landroidx/activity/d0;
-    .locals 3
+.method public final invoke()Landroidx/activity/x;
+    .locals 4
 
     .line 2
-    new-instance v0, Landroidx/activity/d0;
+    new-instance v0, Landroidx/activity/x;
 
-    iget-object v1, p0, Landroidx/activity/ComponentActivity$fullyDrawnReporter$2;->this$0:Landroidx/activity/s;
+    iget-object v1, p0, Landroidx/activity/ComponentActivity$fullyDrawnReporter$2;->this$0:Landroidx/activity/o;
 
-    .line 3
-    invoke-static {v1}, Landroidx/activity/s;->access$getReportFullyDrawnExecutor$p(Landroidx/activity/s;)Landroidx/activity/l;
+    invoke-static {v1}, Landroidx/activity/o;->access$getReportFullyDrawnExecutor$p(Landroidx/activity/o;)Landroidx/activity/k;
 
-    .line 4
-    new-instance v1, Landroidx/activity/ComponentActivity$fullyDrawnReporter$2$1;
+    move-result-object v1
 
-    iget-object v2, p0, Landroidx/activity/ComponentActivity$fullyDrawnReporter$2;->this$0:Landroidx/activity/s;
+    new-instance v2, Landroidx/activity/ComponentActivity$fullyDrawnReporter$2$1;
 
-    invoke-direct {v1, v2}, Landroidx/activity/ComponentActivity$fullyDrawnReporter$2$1;-><init>(Landroidx/activity/s;)V
+    iget-object v3, p0, Landroidx/activity/ComponentActivity$fullyDrawnReporter$2;->this$0:Landroidx/activity/o;
 
-    .line 5
-    invoke-direct {v0, v1}, Landroidx/activity/d0;-><init>(Lzh/a;)V
+    invoke-direct {v2, v3}, Landroidx/activity/ComponentActivity$fullyDrawnReporter$2$1;-><init>(Landroidx/activity/o;)V
+
+    invoke-direct {v0, v1, v2}, Landroidx/activity/x;-><init>(Landroidx/activity/k;Lka/a;)V
 
     return-object v0
 .end method
@@ -80,7 +79,7 @@
     .locals 1
 
     .line 1
-    invoke-virtual {p0}, Landroidx/activity/ComponentActivity$fullyDrawnReporter$2;->invoke()Landroidx/activity/d0;
+    invoke-virtual {p0}, Landroidx/activity/ComponentActivity$fullyDrawnReporter$2;->invoke()Landroidx/activity/x;
 
     move-result-object v0
 

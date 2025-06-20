@@ -24,38 +24,38 @@
     .locals 3
 
     .line 1
-    new-instance v0, Landroidx/camera/core/impl/CameraCaptureFailure$Reason;
+    const/4 v0, 0x0
 
     .line 2
+    new-instance v1, Landroidx/camera/core/impl/CameraCaptureFailure$Reason;
+
     .line 3
-    const-string v1, "ERROR"
-
     .line 4
-    .line 5
-    const/4 v2, 0x0
+    const-string v2, "ERROR"
 
+    .line 5
     .line 6
-    invoke-direct {v0, v1, v2}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
+    invoke-direct {v1, v2, v0}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
 
     .line 7
     .line 8
     .line 9
-    sput-object v0, Landroidx/camera/core/impl/CameraCaptureFailure$Reason;->ERROR:Landroidx/camera/core/impl/CameraCaptureFailure$Reason;
+    sput-object v1, Landroidx/camera/core/impl/CameraCaptureFailure$Reason;->ERROR:Landroidx/camera/core/impl/CameraCaptureFailure$Reason;
 
     .line 10
     .line 11
-    const/4 v1, 0x1
+    const/4 v2, 0x1
 
     .line 12
-    new-array v1, v1, [Landroidx/camera/core/impl/CameraCaptureFailure$Reason;
+    new-array v2, v2, [Landroidx/camera/core/impl/CameraCaptureFailure$Reason;
 
     .line 13
     .line 14
-    aput-object v0, v1, v2
+    aput-object v1, v2, v0
 
     .line 15
     .line 16
-    sput-object v1, Landroidx/camera/core/impl/CameraCaptureFailure$Reason;->b:[Landroidx/camera/core/impl/CameraCaptureFailure$Reason;
+    sput-object v2, Landroidx/camera/core/impl/CameraCaptureFailure$Reason;->b:[Landroidx/camera/core/impl/CameraCaptureFailure$Reason;
 
     .line 17
     .line 18

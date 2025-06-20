@@ -1,78 +1,95 @@
-.class public final synthetic Landroidx/activity/d;
+.class public final synthetic Landroidx/activity/D;
 .super Ljava/lang/Object;
 .source "SourceFile"
 
 # interfaces
-.implements Landroidx/lifecycle/u;
+.implements Landroid/window/OnBackInvokedCallback;
 
 
 # instance fields
-.field public final synthetic b:Landroidx/activity/p0;
+.field public final synthetic a:I
 
-.field public final synthetic c:Landroidx/activity/s;
+.field public final synthetic b:Lka/a;
 
 
 # direct methods
-.method public synthetic constructor <init>(Landroidx/activity/s;Landroidx/activity/p0;)V
+.method public synthetic constructor <init>(ILka/a;)V
     .locals 0
 
     .line 1
+    iput p1, p0, Landroidx/activity/D;->a:I
+
+    iput-object p2, p0, Landroidx/activity/D;->b:Lka/a;
+
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
-
-    iput-object p2, p0, Landroidx/activity/d;->b:Landroidx/activity/p0;
-
-    iput-object p1, p0, Landroidx/activity/d;->c:Landroidx/activity/s;
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final c(Landroidx/lifecycle/w;Landroidx/lifecycle/Lifecycle$Event;)V
-    .locals 0
+.method public final onBackInvoked()V
+    .locals 1
 
     .line 1
-    sget-object p1, Landroidx/lifecycle/Lifecycle$Event;->ON_CREATE:Landroidx/lifecycle/Lifecycle$Event;
+    iget v0, p0, Landroidx/activity/D;->a:I
 
     .line 2
     .line 3
-    if-ne p2, p1, :cond_0
+    packed-switch v0, :pswitch_data_0
 
     .line 4
     .line 5
-    sget-object p1, Landroidx/activity/i;->a:Landroidx/activity/i;
-
     .line 6
+    iget-object v0, p0, Landroidx/activity/D;->b:Lka/a;
+
     .line 7
-    iget-object p2, p0, Landroidx/activity/d;->c:Landroidx/activity/s;
-
     .line 8
-    .line 9
-    invoke-virtual {p1, p2}, Landroidx/activity/i;->a(Landroid/app/Activity;)Landroid/window/OnBackInvokedDispatcher;
+    if-eqz v0, :cond_0
 
+    .line 9
     .line 10
+    invoke-interface {v0}, Lka/a;->invoke()Ljava/lang/Object;
+
     .line 11
     .line 12
-    move-result-object p1
-
     .line 13
-    iget-object p2, p0, Landroidx/activity/d;->b:Landroidx/activity/p0;
-
-    .line 14
-    .line 15
-    iput-object p1, p2, Landroidx/activity/p0;->e:Landroid/window/OnBackInvokedDispatcher;
-
-    .line 16
-    .line 17
-    iget-boolean p1, p2, Landroidx/activity/p0;->g:Z
-
-    .line 18
-    .line 19
-    invoke-virtual {p2, p1}, Landroidx/activity/p0;->e(Z)V
-
-    .line 20
-    .line 21
-    .line 22
     :cond_0
     return-void
+
+    .line 14
+    :pswitch_0
+    iget-object v0, p0, Landroidx/activity/D;->b:Lka/a;
+
+    .line 15
+    .line 16
+    invoke-interface {v0}, Lka/a;->invoke()Ljava/lang/Object;
+
+    .line 17
+    .line 18
+    .line 19
+    return-void
+
+    .line 20
+    :pswitch_1
+    iget-object v0, p0, Landroidx/activity/D;->b:Lka/a;
+
+    .line 21
+    .line 22
+    invoke-interface {v0}, Lka/a;->invoke()Ljava/lang/Object;
+
+    .line 23
+    .line 24
+    .line 25
+    return-void
+
+    .line 26
+    nop
+
+    .line 27
+    :pswitch_data_0
+    .packed-switch 0x0
+        :pswitch_1
+        :pswitch_0
+    .end packed-switch
 .end method

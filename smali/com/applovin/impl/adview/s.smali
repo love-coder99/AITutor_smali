@@ -30,7 +30,7 @@
     .line 1
     iget-object v0, p0, Lcom/applovin/impl/adview/s;->b:Lcom/applovin/impl/adview/b;
 
-    invoke-static {v0, p1}, Lcom/applovin/impl/adview/b;->c(Lcom/applovin/impl/adview/b;Landroid/view/View;)Z
+    invoke-static {v0, p1}, Lcom/applovin/impl/adview/b;->b(Lcom/applovin/impl/adview/b;Landroid/view/View;)Z
 
     move-result p1
 

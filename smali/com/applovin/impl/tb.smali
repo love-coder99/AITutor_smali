@@ -61,10 +61,10 @@
     :cond_0
     const/4 v1, 0x0
 
+    .line 7
     :goto_0
     const-string v2, "Out of range: %s"
 
-    .line 7
     invoke-static {v1, v2, p0, p1}, Lcom/applovin/exoplayer2/common/base/Preconditions;->checkArgument(ZLjava/lang/String;J)V
 
     return v0

@@ -1,12 +1,12 @@
 .class final Landroidx/compose/foundation/IndicationModifierElement;
-.super Landroidx/compose/ui/node/w0;
+.super Landroidx/compose/ui/node/V;
 .source "SourceFile"
 
 
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
-        "Landroidx/compose/ui/node/w0;"
+        "Landroidx/compose/ui/node/V;"
     }
 .end annotation
 
@@ -16,8 +16,8 @@
     }
     d2 = {
         "Landroidx/compose/foundation/IndicationModifierElement;",
-        "Landroidx/compose/ui/node/w0;",
-        "Landroidx/compose/foundation/h0;",
+        "Landroidx/compose/ui/node/V;",
+        "Landroidx/compose/foundation/F;",
         "foundation_release"
     }
     k = 0x1
@@ -26,17 +26,18 @@
         0x8,
         0x0
     }
+    xi = 0x30
 .end annotation
 
 
 # instance fields
-.field public final c:Landroidx/compose/foundation/interaction/k;
+.field public final a:Landroidx/compose/foundation/interaction/l;
 
-.field public final d:Landroidx/compose/foundation/i0;
+.field public final b:Landroidx/compose/foundation/G;
 
 
 # direct methods
-.method public constructor <init>(Landroidx/compose/foundation/interaction/k;Landroidx/compose/foundation/i0;)V
+.method public constructor <init>(Landroidx/compose/foundation/interaction/l;Landroidx/compose/foundation/G;)V
     .locals 0
 
     .line 1
@@ -45,11 +46,11 @@
     .line 2
     .line 3
     .line 4
-    iput-object p1, p0, Landroidx/compose/foundation/IndicationModifierElement;->c:Landroidx/compose/foundation/interaction/k;
+    iput-object p1, p0, Landroidx/compose/foundation/IndicationModifierElement;->a:Landroidx/compose/foundation/interaction/l;
 
     .line 5
     .line 6
-    iput-object p2, p0, Landroidx/compose/foundation/IndicationModifierElement;->d:Landroidx/compose/foundation/i0;
+    iput-object p2, p0, Landroidx/compose/foundation/IndicationModifierElement;->b:Landroidx/compose/foundation/G;
 
     .line 7
     .line 8
@@ -92,15 +93,15 @@
 
     .line 12
     .line 13
-    iget-object v1, p1, Landroidx/compose/foundation/IndicationModifierElement;->c:Landroidx/compose/foundation/interaction/k;
+    iget-object v1, p1, Landroidx/compose/foundation/IndicationModifierElement;->a:Landroidx/compose/foundation/interaction/l;
 
     .line 14
     .line 15
-    iget-object v3, p0, Landroidx/compose/foundation/IndicationModifierElement;->c:Landroidx/compose/foundation/interaction/k;
+    iget-object v3, p0, Landroidx/compose/foundation/IndicationModifierElement;->a:Landroidx/compose/foundation/interaction/l;
 
     .line 16
     .line 17
-    invoke-static {v3, v1}, Lrb/h;->d(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v3, v1}, Lkotlin/jvm/internal/h;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     .line 18
     .line 19
@@ -116,15 +117,15 @@
 
     .line 24
     :cond_2
-    iget-object v1, p0, Landroidx/compose/foundation/IndicationModifierElement;->d:Landroidx/compose/foundation/i0;
+    iget-object v1, p0, Landroidx/compose/foundation/IndicationModifierElement;->b:Landroidx/compose/foundation/G;
 
     .line 25
     .line 26
-    iget-object p1, p1, Landroidx/compose/foundation/IndicationModifierElement;->d:Landroidx/compose/foundation/i0;
+    iget-object p1, p1, Landroidx/compose/foundation/IndicationModifierElement;->b:Landroidx/compose/foundation/G;
 
     .line 27
     .line 28
-    invoke-static {v1, p1}, Lrb/h;->d(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v1, p1}, Lkotlin/jvm/internal/h;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     .line 29
     .line 30
@@ -147,7 +148,7 @@
     .locals 2
 
     .line 1
-    iget-object v0, p0, Landroidx/compose/foundation/IndicationModifierElement;->c:Landroidx/compose/foundation/interaction/k;
+    iget-object v0, p0, Landroidx/compose/foundation/IndicationModifierElement;->a:Landroidx/compose/foundation/interaction/l;
 
     .line 2
     .line 3
@@ -163,7 +164,7 @@
 
     .line 8
     .line 9
-    iget-object v1, p0, Landroidx/compose/foundation/IndicationModifierElement;->d:Landroidx/compose/foundation/i0;
+    iget-object v1, p0, Landroidx/compose/foundation/IndicationModifierElement;->b:Landroidx/compose/foundation/G;
 
     .line 10
     .line 11
@@ -185,19 +186,19 @@
     .locals 3
 
     .line 1
-    new-instance v0, Landroidx/compose/foundation/h0;
+    new-instance v0, Landroidx/compose/foundation/F;
 
     .line 2
     .line 3
-    iget-object v1, p0, Landroidx/compose/foundation/IndicationModifierElement;->d:Landroidx/compose/foundation/i0;
+    iget-object v1, p0, Landroidx/compose/foundation/IndicationModifierElement;->b:Landroidx/compose/foundation/G;
 
     .line 4
     .line 5
-    iget-object v2, p0, Landroidx/compose/foundation/IndicationModifierElement;->c:Landroidx/compose/foundation/interaction/k;
+    iget-object v2, p0, Landroidx/compose/foundation/IndicationModifierElement;->a:Landroidx/compose/foundation/interaction/l;
 
     .line 6
     .line 7
-    invoke-interface {v1, v2}, Landroidx/compose/foundation/i0;->b(Landroidx/compose/foundation/interaction/k;)Landroidx/compose/ui/node/j;
+    invoke-interface {v1, v2}, Landroidx/compose/foundation/G;->b(Landroidx/compose/foundation/interaction/k;)Landroidx/compose/ui/node/j;
 
     .line 8
     .line 9
@@ -210,11 +211,11 @@
     .line 12
     .line 13
     .line 14
-    iput-object v1, v0, Landroidx/compose/foundation/h0;->r:Landroidx/compose/ui/node/j;
+    iput-object v1, v0, Landroidx/compose/foundation/F;->r:Landroidx/compose/ui/node/j;
 
     .line 15
     .line 16
-    invoke-virtual {v0, v1}, Landroidx/compose/ui/node/k;->A0(Landroidx/compose/ui/node/j;)V
+    invoke-virtual {v0, v1}, Landroidx/compose/ui/node/k;->y0(Landroidx/compose/ui/node/j;)V
 
     .line 17
     .line 18
@@ -226,19 +227,19 @@
     .locals 2
 
     .line 1
-    check-cast p1, Landroidx/compose/foundation/h0;
+    check-cast p1, Landroidx/compose/foundation/F;
 
     .line 2
     .line 3
-    iget-object v0, p0, Landroidx/compose/foundation/IndicationModifierElement;->d:Landroidx/compose/foundation/i0;
+    iget-object v0, p0, Landroidx/compose/foundation/IndicationModifierElement;->b:Landroidx/compose/foundation/G;
 
     .line 4
     .line 5
-    iget-object v1, p0, Landroidx/compose/foundation/IndicationModifierElement;->c:Landroidx/compose/foundation/interaction/k;
+    iget-object v1, p0, Landroidx/compose/foundation/IndicationModifierElement;->a:Landroidx/compose/foundation/interaction/l;
 
     .line 6
     .line 7
-    invoke-interface {v0, v1}, Landroidx/compose/foundation/i0;->b(Landroidx/compose/foundation/interaction/k;)Landroidx/compose/ui/node/j;
+    invoke-interface {v0, v1}, Landroidx/compose/foundation/G;->b(Landroidx/compose/foundation/interaction/k;)Landroidx/compose/ui/node/j;
 
     .line 8
     .line 9
@@ -246,20 +247,20 @@
     move-result-object v0
 
     .line 11
-    iget-object v1, p1, Landroidx/compose/foundation/h0;->r:Landroidx/compose/ui/node/j;
+    iget-object v1, p1, Landroidx/compose/foundation/F;->r:Landroidx/compose/ui/node/j;
 
     .line 12
     .line 13
-    invoke-virtual {p1, v1}, Landroidx/compose/ui/node/k;->B0(Landroidx/compose/ui/node/j;)V
+    invoke-virtual {p1, v1}, Landroidx/compose/ui/node/k;->z0(Landroidx/compose/ui/node/j;)V
 
     .line 14
     .line 15
     .line 16
-    iput-object v0, p1, Landroidx/compose/foundation/h0;->r:Landroidx/compose/ui/node/j;
+    iput-object v0, p1, Landroidx/compose/foundation/F;->r:Landroidx/compose/ui/node/j;
 
     .line 17
     .line 18
-    invoke-virtual {p1, v0}, Landroidx/compose/ui/node/k;->A0(Landroidx/compose/ui/node/j;)V
+    invoke-virtual {p1, v0}, Landroidx/compose/ui/node/k;->y0(Landroidx/compose/ui/node/j;)V
 
     .line 19
     .line 20

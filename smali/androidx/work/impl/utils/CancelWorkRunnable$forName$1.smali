@@ -3,14 +3,14 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lzh/a;
+.implements Lka/a;
 
 
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "Lkotlin/jvm/internal/Lambda;",
-        "Lzh/a;"
+        "Lka/a;"
     }
 .end annotation
 
@@ -19,7 +19,7 @@
         "\u0000\u0008\n\u0002\u0018\u0002\n\u0002\u0008\u0003\u0010\u0003\u001a\u00020\u0000H\n\u00a2\u0006\u0004\u0008\u0001\u0010\u0002"
     }
     d2 = {
-        "Lqh/r;",
+        "LX9/j;",
         "invoke",
         "()V",
         "<anonymous>"
@@ -36,16 +36,16 @@
 # instance fields
 .field final synthetic $name:Ljava/lang/String;
 
-.field final synthetic $workManagerImpl:Landroidx/work/impl/i0;
+.field final synthetic $workManagerImpl:Landroidx/work/impl/n;
 
 
 # direct methods
-.method public constructor <init>(Ljava/lang/String;Landroidx/work/impl/i0;)V
+.method public constructor <init>(Ljava/lang/String;Landroidx/work/impl/n;)V
     .locals 0
 
     iput-object p1, p0, Landroidx/work/impl/utils/CancelWorkRunnable$forName$1;->$name:Ljava/lang/String;
 
-    iput-object p2, p0, Landroidx/work/impl/utils/CancelWorkRunnable$forName$1;->$workManagerImpl:Landroidx/work/impl/i0;
+    iput-object p2, p0, Landroidx/work/impl/utils/CancelWorkRunnable$forName$1;->$workManagerImpl:Landroidx/work/impl/n;
 
     const/4 p1, 0x0
 
@@ -62,7 +62,7 @@
     .line 1
     invoke-virtual {p0}, Landroidx/work/impl/utils/CancelWorkRunnable$forName$1;->invoke()V
 
-    sget-object v0, Lqh/r;->a:Lqh/r;
+    sget-object v0, LX9/j;->a:LX9/j;
 
     return-object v0
 .end method
@@ -70,33 +70,44 @@
 .method public final invoke()V
     .locals 5
 
+    .line 2
     iget-object v0, p0, Landroidx/work/impl/utils/CancelWorkRunnable$forName$1;->$name:Ljava/lang/String;
 
-    iget-object v1, p0, Landroidx/work/impl/utils/CancelWorkRunnable$forName$1;->$workManagerImpl:Landroidx/work/impl/i0;
-
-    .line 2
-    iget-object v2, v1, Landroidx/work/impl/i0;->c:Landroidx/work/impl/WorkDatabase;
+    iget-object v1, p0, Landroidx/work/impl/utils/CancelWorkRunnable$forName$1;->$workManagerImpl:Landroidx/work/impl/n;
 
     .line 3
-    new-instance v3, Landroidx/work/impl/utils/c;
-
-    const/4 v4, 0x1
-
-    invoke-direct {v3, v2, v0, v1, v4}, Landroidx/work/impl/utils/c;-><init>(Landroidx/work/impl/WorkDatabase;Ljava/lang/String;Landroidx/work/impl/i0;I)V
-
-    invoke-virtual {v2, v3}, Landroidx/room/w;->n(Ljava/lang/Runnable;)V
-
-    iget-object v0, p0, Landroidx/work/impl/utils/CancelWorkRunnable$forName$1;->$workManagerImpl:Landroidx/work/impl/i0;
+    iget-object v2, v1, Landroidx/work/impl/n;->e:Landroidx/work/impl/WorkDatabase;
 
     .line 4
-    iget-object v1, v0, Landroidx/work/impl/i0;->b:Landroidx/work/c;
+    new-instance v3, Landroidx/work/impl/utils/b;
+
+    const/4 v4, 0x0
+
+    invoke-direct {v3, v2, v0, v1, v4}, Landroidx/work/impl/utils/b;-><init>(Landroidx/work/impl/WorkDatabase;Ljava/lang/String;Landroidx/work/impl/n;I)V
+
+    invoke-virtual {v2}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
     .line 5
-    iget-object v2, v0, Landroidx/work/impl/i0;->c:Landroidx/work/impl/WorkDatabase;
+    new-instance v0, LX8/a;
 
-    iget-object v0, v0, Landroidx/work/impl/i0;->e:Ljava/util/List;
+    const/4 v1, 0x4
 
-    invoke-static {v1, v2, v0}, Landroidx/work/impl/s;->b(Landroidx/work/c;Landroidx/work/impl/WorkDatabase;Ljava/util/List;)V
+    invoke-direct {v0, v3, v1}, LX8/a;-><init>(Ljava/lang/Object;I)V
+
+    invoke-virtual {v2, v0}, Landroidx/room/y;->v(Lka/a;)Ljava/lang/Object;
+
+    .line 6
+    iget-object v0, p0, Landroidx/work/impl/utils/CancelWorkRunnable$forName$1;->$workManagerImpl:Landroidx/work/impl/n;
+
+    .line 7
+    iget-object v1, v0, Landroidx/work/impl/n;->d:Landroidx/work/b;
+
+    .line 8
+    iget-object v2, v0, Landroidx/work/impl/n;->e:Landroidx/work/impl/WorkDatabase;
+
+    iget-object v0, v0, Landroidx/work/impl/n;->g:Ljava/util/List;
+
+    invoke-static {v1, v2, v0}, Landroidx/work/impl/h;->b(Landroidx/work/b;Landroidx/work/impl/WorkDatabase;Ljava/util/List;)V
 
     return-void
 .end method

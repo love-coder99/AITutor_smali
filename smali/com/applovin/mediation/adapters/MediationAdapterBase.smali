@@ -557,8 +557,11 @@
 .method public getWrappingSdk()Lcom/applovin/sdk/AppLovinSdk;
     .locals 1
 
+    .line 1
     iget-object v0, p0, Lcom/applovin/mediation/adapters/MediationAdapterBase;->mWrappingSdk:Lcom/applovin/sdk/AppLovinSdk;
 
+    .line 2
+    .line 3
     return-object v0
 .end method
 
@@ -605,6 +608,18 @@
 
 .method public loadAppOpenAd(Lcom/applovin/mediation/adapter/parameters/MaxAdapterResponseParameters;Landroid/app/Activity;Lcom/applovin/mediation/adapter/listeners/MaxAppOpenAdapterListener;)V
     .locals 0
+    .param p1    # Lcom/applovin/mediation/adapter/parameters/MaxAdapterResponseParameters;
+        .annotation build Landroidx/annotation/NonNull;
+        .end annotation
+    .end param
+    .param p2    # Landroid/app/Activity;
+        .annotation build Landroidx/annotation/Nullable;
+        .end annotation
+    .end param
+    .param p3    # Lcom/applovin/mediation/adapter/listeners/MaxAppOpenAdapterListener;
+        .annotation build Landroidx/annotation/NonNull;
+        .end annotation
+    .end param
 
     .line 1
     new-instance p1, Ljava/lang/StringBuilder;
@@ -774,13 +789,18 @@
 .method public shouldAlwaysRewardUser()Z
     .locals 1
 
+    .line 1
     iget-boolean v0, p0, Lcom/applovin/mediation/adapters/MediationAdapterBase;->alwaysRewardUser:Z
 
+    .line 2
+    .line 3
     return v0
 .end method
 
 .method public shouldCollectSignalsOnUiThread()Ljava/lang/Boolean;
     .locals 1
+    .annotation build Landroidx/annotation/Nullable;
+    .end annotation
 
     const/4 v0, 0x0
 
@@ -789,6 +809,8 @@
 
 .method public shouldInitializeOnUiThread()Ljava/lang/Boolean;
     .locals 1
+    .annotation build Landroidx/annotation/Nullable;
+    .end annotation
 
     const/4 v0, 0x0
 
@@ -797,6 +819,8 @@
 
 .method public shouldLoadAdsOnUiThread(Lcom/applovin/mediation/MaxAdFormat;)Ljava/lang/Boolean;
     .locals 0
+    .annotation build Landroidx/annotation/Nullable;
+    .end annotation
 
     const/4 p1, 0x0
 
@@ -805,6 +829,8 @@
 
 .method public shouldShowAdsOnUiThread(Lcom/applovin/mediation/MaxAdFormat;)Ljava/lang/Boolean;
     .locals 0
+    .annotation build Landroidx/annotation/Nullable;
+    .end annotation
 
     const/4 p1, 0x0
 
@@ -813,6 +839,18 @@
 
 .method public showAppOpenAd(Lcom/applovin/mediation/adapter/parameters/MaxAdapterResponseParameters;Landroid/app/Activity;Lcom/applovin/mediation/adapter/listeners/MaxAppOpenAdapterListener;)V
     .locals 0
+    .param p1    # Lcom/applovin/mediation/adapter/parameters/MaxAdapterResponseParameters;
+        .annotation build Landroidx/annotation/NonNull;
+        .end annotation
+    .end param
+    .param p2    # Landroid/app/Activity;
+        .annotation build Landroidx/annotation/Nullable;
+        .end annotation
+    .end param
+    .param p3    # Lcom/applovin/mediation/adapter/listeners/MaxAppOpenAdapterListener;
+        .annotation build Landroidx/annotation/NonNull;
+        .end annotation
+    .end param
 
     .line 1
     new-instance p1, Ljava/lang/StringBuilder;
@@ -875,7 +913,7 @@
     return-void
 .end method
 
-.method public showInterstitialAd(Lcom/applovin/mediation/adapter/parameters/MaxAdapterResponseParameters;Landroid/view/ViewGroup;Landroidx/lifecycle/p;Landroid/app/Activity;Lcom/applovin/mediation/adapter/listeners/MaxInterstitialAdapterListener;)V
+.method public showInterstitialAd(Lcom/applovin/mediation/adapter/parameters/MaxAdapterResponseParameters;Landroid/view/ViewGroup;Landroidx/lifecycle/r;Landroid/app/Activity;Lcom/applovin/mediation/adapter/listeners/MaxInterstitialAdapterListener;)V
     .locals 0
 
     .line 1
@@ -939,7 +977,7 @@
     return-void
 .end method
 
-.method public showRewardedAd(Lcom/applovin/mediation/adapter/parameters/MaxAdapterResponseParameters;Landroid/view/ViewGroup;Landroidx/lifecycle/p;Landroid/app/Activity;Lcom/applovin/mediation/adapter/listeners/MaxRewardedAdapterListener;)V
+.method public showRewardedAd(Lcom/applovin/mediation/adapter/parameters/MaxAdapterResponseParameters;Landroid/view/ViewGroup;Landroidx/lifecycle/r;Landroid/app/Activity;Lcom/applovin/mediation/adapter/listeners/MaxRewardedAdapterListener;)V
     .locals 0
 
     .line 1
@@ -1017,9 +1055,9 @@
 .method public userError(Ljava/lang/String;Ljava/lang/Throwable;)V
     .locals 1
 
+    .line 2
     iget-object v0, p0, Lcom/applovin/mediation/adapters/MediationAdapterBase;->mTag:Ljava/lang/String;
 
-    .line 2
     invoke-static {v0, p1, p2}, Lcom/applovin/impl/sdk/n;->c(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)V
 
     return-void

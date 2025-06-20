@@ -161,21 +161,29 @@
 .method public static synthetic f()I
     .locals 1
 
+    .line 1
     sget v0, Lcom/apm/insight/k/a;->b:I
 
+    .line 2
+    .line 3
     return v0
 .end method
 
 .method public static synthetic g()Ljava/lang/Runnable;
     .locals 1
 
+    .line 1
     sget-object v0, Lcom/apm/insight/k/a;->a:Ljava/lang/Runnable;
 
+    .line 2
+    .line 3
     return-object v0
 .end method
 
 .method private static h()[B
     .locals 2
+    .annotation build Landroidx/annotation/Nullable;
+    .end annotation
 
     .line 1
     :try_start_0
@@ -492,7 +500,10 @@
 
     .line 105
     :goto_2
+    :try_start_5
     monitor-exit v0
+    :try_end_5
+    .catchall {:try_start_5 .. :try_end_5} :catchall_0
 
     .line 106
     throw v1

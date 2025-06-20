@@ -51,7 +51,7 @@
 
     .line 2
     .line 3
-    invoke-virtual {v0, p1}, Landroidx/collection/f;->remove(Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v0, p1}, Landroidx/collection/L;->remove(Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 4
     .line 5

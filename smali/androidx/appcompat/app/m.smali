@@ -1,145 +1,180 @@
-.class public final Landroidx/appcompat/app/m;
-.super Ljava/lang/Object;
+.class public final Landroidx/appcompat/app/M;
+.super Landroidx/core/view/h0;
 .source "SourceFile"
-
-# interfaces
-.implements Lr4/d;
 
 
 # instance fields
-.field public final synthetic a:I
+.field public final synthetic e:I
 
-.field public final b:Ljava/lang/Object;
+.field public final synthetic f:Landroidx/appcompat/app/O;
 
 
 # direct methods
-.method public constructor <init>(Lcom/jellystudio/trustedapp/mathai/app/host/c;)V
-    .locals 1
-
-    .line 4
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
-
-    const/4 v0, 0x0
-
-    iput v0, p0, Landroidx/appcompat/app/m;->a:I
-
-    iput-object p1, p0, Landroidx/appcompat/app/m;->b:Ljava/lang/Object;
-
-    return-void
-.end method
-
-.method public constructor <init>(Lr4/e;)V
-    .locals 1
+.method public synthetic constructor <init>(Landroidx/appcompat/app/O;I)V
+    .locals 0
 
     .line 1
+    iput p2, p0, Landroidx/appcompat/app/M;->e:I
+
+    iput-object p1, p0, Landroidx/appcompat/app/M;->f:Landroidx/appcompat/app/O;
+
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
-
-    const/4 v0, 0x1
-
-    iput v0, p0, Landroidx/appcompat/app/m;->a:I
-
-    .line 2
-    new-instance v0, Ljava/util/LinkedHashSet;
-
-    invoke-direct {v0}, Ljava/util/LinkedHashSet;-><init>()V
-
-    iput-object v0, p0, Landroidx/appcompat/app/m;->b:Ljava/lang/Object;
-
-    const-string v0, "androidx.savedstate.Restarter"
-
-    .line 3
-    invoke-virtual {p1, v0, p0}, Lr4/e;->c(Ljava/lang/String;Lr4/d;)V
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final a()Landroid/os/Bundle;
+.method public final onAnimationEnd(Landroid/view/View;)V
     .locals 3
 
     .line 1
-    iget v0, p0, Landroidx/appcompat/app/m;->a:I
+    iget-object p1, p0, Landroidx/appcompat/app/M;->f:Landroidx/appcompat/app/O;
 
     .line 2
     .line 3
-    iget-object v1, p0, Landroidx/appcompat/app/m;->b:Ljava/lang/Object;
+    const/4 v0, 0x0
 
     .line 4
-    .line 5
-    packed-switch v0, :pswitch_data_0
+    iget v1, p0, Landroidx/appcompat/app/M;->e:I
 
+    .line 5
     .line 6
+    packed-switch v1, :pswitch_data_0
+
     .line 7
     .line 8
-    new-instance v0, Landroid/os/Bundle;
-
     .line 9
-    .line 10
-    invoke-direct {v0}, Landroid/os/Bundle;-><init>()V
+    iput-object v0, p1, Landroidx/appcompat/app/O;->u:Ln/j;
 
+    .line 10
     .line 11
+    iget-object p1, p1, Landroidx/appcompat/app/O;->e:Landroidx/appcompat/widget/ActionBarContainer;
+
     .line 12
     .line 13
-    new-instance v2, Ljava/util/ArrayList;
+    invoke-virtual {p1}, Landroid/view/View;->requestLayout()V
 
     .line 14
     .line 15
-    check-cast v1, Ljava/util/Set;
-
     .line 16
+    return-void
+
     .line 17
-    check-cast v1, Ljava/util/Collection;
+    :pswitch_0
+    iget-boolean v1, p1, Landroidx/appcompat/app/O;->q:Z
 
     .line 18
     .line 19
-    invoke-direct {v2, v1}, Ljava/util/ArrayList;-><init>(Ljava/util/Collection;)V
+    if-eqz v1, :cond_0
 
     .line 20
     .line 21
+    iget-object v1, p1, Landroidx/appcompat/app/O;->h:Landroid/view/View;
+
     .line 22
-    const-string v1, "classes_to_restore"
-
     .line 23
+    if-eqz v1, :cond_0
+
     .line 24
-    invoke-virtual {v0, v1, v2}, Landroid/os/Bundle;->putStringArrayList(Ljava/lang/String;Ljava/util/ArrayList;)V
-
     .line 25
+    const/4 v2, 0x0
+
     .line 26
+    invoke-virtual {v1, v2}, Landroid/view/View;->setTranslationY(F)V
+
     .line 27
-    return-object v0
-
     .line 28
-    :pswitch_0
-    new-instance v0, Landroid/os/Bundle;
-
     .line 29
-    .line 30
-    invoke-direct {v0}, Landroid/os/Bundle;-><init>()V
+    iget-object v1, p1, Landroidx/appcompat/app/O;->e:Landroidx/appcompat/widget/ActionBarContainer;
 
+    .line 30
     .line 31
+    invoke-virtual {v1, v2}, Landroid/view/View;->setTranslationY(F)V
+
     .line 32
     .line 33
-    check-cast v1, Landroidx/appcompat/app/o;
-
     .line 34
-    .line 35
-    invoke-virtual {v1}, Landroidx/appcompat/app/o;->i()Landroidx/appcompat/app/w;
+    :cond_0
+    iget-object v1, p1, Landroidx/appcompat/app/O;->e:Landroidx/appcompat/widget/ActionBarContainer;
 
+    .line 35
     .line 36
+    const/16 v2, 0x8
+
     .line 37
     .line 38
-    move-result-object v1
+    invoke-virtual {v1, v2}, Landroidx/appcompat/widget/ActionBarContainer;->setVisibility(I)V
 
     .line 39
-    invoke-virtual {v1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
-
     .line 40
     .line 41
-    .line 42
-    return-object v0
+    iget-object v1, p1, Landroidx/appcompat/app/O;->e:Landroidx/appcompat/widget/ActionBarContainer;
 
+    .line 42
     .line 43
+    const/4 v2, 0x0
+
+    .line 44
+    invoke-virtual {v1, v2}, Landroidx/appcompat/widget/ActionBarContainer;->setTransitioning(Z)V
+
+    .line 45
+    .line 46
+    .line 47
+    iput-object v0, p1, Landroidx/appcompat/app/O;->u:Ln/j;
+
+    .line 48
+    .line 49
+    iget-object v1, p1, Landroidx/appcompat/app/O;->l:LB2/e;
+
+    .line 50
+    .line 51
+    if-eqz v1, :cond_1
+
+    .line 52
+    .line 53
+    iget-object v2, p1, Landroidx/appcompat/app/O;->k:Landroidx/appcompat/app/N;
+
+    .line 54
+    .line 55
+    invoke-virtual {v1, v2}, LB2/e;->F(Ln/a;)V
+
+    .line 56
+    .line 57
+    .line 58
+    iput-object v0, p1, Landroidx/appcompat/app/O;->k:Landroidx/appcompat/app/N;
+
+    .line 59
+    .line 60
+    iput-object v0, p1, Landroidx/appcompat/app/O;->l:LB2/e;
+
+    .line 61
+    .line 62
+    :cond_1
+    iget-object p1, p1, Landroidx/appcompat/app/O;->d:Landroidx/appcompat/widget/ActionBarOverlayLayout;
+
+    .line 63
+    .line 64
+    if-eqz p1, :cond_2
+
+    .line 65
+    .line 66
+    sget-object v0, Landroidx/core/view/e0;->a:Ljava/util/WeakHashMap;
+
+    .line 67
+    .line 68
+    invoke-static {p1}, Landroidx/core/view/T;->c(Landroid/view/View;)V
+
+    .line 69
+    .line 70
+    .line 71
+    :cond_2
+    return-void
+
+    .line 72
+    nop
+
+    .line 73
     :pswitch_data_0
     .packed-switch 0x0
         :pswitch_0

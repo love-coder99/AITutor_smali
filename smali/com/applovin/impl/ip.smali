@@ -172,32 +172,32 @@
 .method public static a(Ljava/lang/String;)Ljava/lang/String;
     .locals 2
 
+    .line 52
     const-string v0, "\r\n"
 
     const-string v1, "\n"
 
-    .line 52
     invoke-virtual {p0, v0, v1}, Ljava/lang/String;->replaceAll(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object p0
-
-    const-string v0, " *\n *"
 
     .line 53
+    const-string v0, " *\n *"
+
     invoke-virtual {p0, v0, v1}, Ljava/lang/String;->replaceAll(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object p0
 
+    .line 54
     const-string v0, " "
 
-    .line 54
     invoke-virtual {p0, v1, v0}, Ljava/lang/String;->replaceAll(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object p0
 
+    .line 55
     const-string v1, "[ \t\\x0B\u000c\r]+"
 
-    .line 55
     invoke-virtual {p0, v1, v0}, Ljava/lang/String;->replaceAll(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object p0
@@ -529,12 +529,12 @@
 
     goto :goto_4
 
+    .line 39
     :cond_11
     const-string p4, "TtmlRenderUtil"
 
     const-string p5, "Skipping rubyText node without exactly one text child."
 
-    .line 39
     invoke-static {p4, p5}, Lcom/applovin/impl/oc;->c(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 40

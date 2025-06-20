@@ -1,5 +1,5 @@
 .class public final Landroidx/activity/compose/i;
-.super Le/b;
+.super Lg/b;
 .source "SourceFile"
 
 
@@ -8,7 +8,7 @@
 
 
 # direct methods
-.method public constructor <init>(Landroidx/activity/compose/a;Landroidx/compose/runtime/j1;)V
+.method public constructor <init>(Landroidx/activity/compose/a;Landroidx/compose/runtime/Z;)V
     .locals 0
 
     .line 1
@@ -34,7 +34,7 @@
 
     .line 2
     .line 3
-    iget-object v0, v0, Landroidx/activity/compose/a;->a:Le/b;
+    iget-object v0, v0, Landroidx/activity/compose/a;->a:Lg/f;
 
     .line 4
     .line 5
@@ -42,12 +42,12 @@
 
     .line 6
     .line 7
-    invoke-virtual {v0, p1}, Le/b;->a(Ljava/lang/Object;)V
+    invoke-virtual {v0, p1}, Lg/f;->a(Ljava/lang/Object;)V
 
     .line 8
     .line 9
     .line 10
-    sget-object p1, Lqh/r;->a:Lqh/r;
+    sget-object p1, LX9/j;->a:LX9/j;
 
     .line 11
     .line 12
@@ -75,19 +75,11 @@
 
     .line 20
     .line 21
-    invoke-virtual {v0}, Ljava/lang/Object;->toString()Ljava/lang/String;
+    invoke-direct {p1, v0}, Ljava/lang/IllegalStateException;-><init>(Ljava/lang/String;)V
 
     .line 22
     .line 23
     .line 24
-    move-result-object v0
-
-    .line 25
-    invoke-direct {p1, v0}, Ljava/lang/IllegalStateException;-><init>(Ljava/lang/String;)V
-
-    .line 26
-    .line 27
-    .line 28
     throw p1
 .end method
 

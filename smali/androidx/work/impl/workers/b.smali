@@ -16,7 +16,7 @@
 
     .line 2
     .line 3
-    invoke-static {v0}, Landroidx/work/u;->b(Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v0}, Landroidx/work/A;->b(Ljava/lang/String;)Ljava/lang/String;
 
     .line 4
     .line 5
@@ -24,7 +24,7 @@
     return-void
 .end method
 
-.method public static final a(Landroidx/work/impl/constraints/i;Lh5/q;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
+.method public static final a(Landroidx/work/impl/constraints/i;LB2/p;Lkotlin/coroutines/jvm/internal/ContinuationImpl;)Ljava/lang/Object;
     .locals 4
 
     .line 1
@@ -134,7 +134,7 @@
     .line 49
     .line 50
     .line 51
-    invoke-virtual {p0, p1}, Landroidx/work/impl/constraints/i;->b(Lh5/q;)Lkotlinx/coroutines/flow/h;
+    invoke-virtual {p0, p1}, Landroidx/work/impl/constraints/i;->b(LB2/p;)Lkotlinx/coroutines/flow/f;
 
     .line 52
     .line 53
@@ -149,70 +149,73 @@
     const/4 v2, 0x0
 
     .line 58
-    invoke-direct {p2, p1, v2}, Landroidx/work/impl/workers/ConstraintTrackingWorkerKt$awaitConstraintsNotMet$2;-><init>(Lh5/q;Lkotlin/coroutines/Continuation;)V
+    invoke-direct {p2, p1, v2}, Landroidx/work/impl/workers/ConstraintTrackingWorkerKt$awaitConstraintsNotMet$2;-><init>(LB2/p;Lkotlin/coroutines/Continuation;)V
 
     .line 59
     .line 60
     .line 61
-    new-instance p1, Lkotlinx/coroutines/flow/s;
+    new-instance p1, Lkotlinx/coroutines/flow/q;
 
     .line 62
     .line 63
-    invoke-direct {p1, p0, p2, v3}, Lkotlinx/coroutines/flow/s;-><init>(Lkotlinx/coroutines/flow/h;Lzh/e;I)V
+    const/4 v2, 0x1
 
     .line 64
+    invoke-direct {p1, p0, p2, v2}, Lkotlinx/coroutines/flow/q;-><init>(Lkotlinx/coroutines/flow/f;Lka/e;I)V
+
     .line 65
     .line 66
-    new-instance p0, Landroidx/datastore/core/q;
-
     .line 67
-    .line 68
-    const/4 p2, 0x3
+    new-instance p0, Landroidx/datastore/core/l;
 
+    .line 68
     .line 69
-    invoke-direct {p0, p1, p2}, Landroidx/datastore/core/q;-><init>(Lkotlinx/coroutines/flow/h;I)V
+    const/4 p2, 0x2
 
     .line 70
+    invoke-direct {p0, p1, p2}, Landroidx/datastore/core/l;-><init>(Ljava/lang/Object;I)V
+
     .line 71
     .line 72
+    .line 73
     iput v3, v0, Landroidx/work/impl/workers/ConstraintTrackingWorkerKt$awaitConstraintsNotMet$1;->label:I
 
-    .line 73
     .line 74
-    invoke-static {p0, v0}, Lkotlinx/coroutines/flow/j;->n(Lkotlinx/coroutines/flow/h;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
-
     .line 75
+    invoke-static {p0, v0}, Lkotlinx/coroutines/flow/h;->n(Lkotlinx/coroutines/flow/f;Lkotlin/coroutines/jvm/internal/ContinuationImpl;)Ljava/lang/Object;
+
     .line 76
     .line 77
+    .line 78
     move-result-object p2
 
-    .line 78
+    .line 79
     if-ne p2, v1, :cond_3
 
-    .line 79
     .line 80
+    .line 81
     goto :goto_2
 
-    .line 81
+    .line 82
     :cond_3
     :goto_1
     check-cast p2, Landroidx/work/impl/constraints/b;
 
-    .line 82
     .line 83
+    .line 84
     iget p0, p2, Landroidx/work/impl/constraints/b;->a:I
 
-    .line 84
     .line 85
+    .line 86
     new-instance v1, Ljava/lang/Integer;
 
-    .line 86
     .line 87
+    .line 88
     invoke-direct {v1, p0}, Ljava/lang/Integer;-><init>(I)V
 
-    .line 88
     .line 89
     .line 90
+    .line 91
     :goto_2
     return-object v1
 .end method

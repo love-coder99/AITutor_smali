@@ -3,7 +3,7 @@
 .source "SourceFile"
 
 # interfaces
-.implements Le/g;
+.implements Lg/g;
 
 
 # instance fields
@@ -41,7 +41,10 @@
 .method public final getActivityResultRegistry()Landroidx/activity/result/a;
     .locals 1
 
+    .line 1
     iget-object v0, p0, Landroidx/compose/ui/tooling/c;->b:Landroidx/compose/ui/tooling/b;
 
+    .line 2
+    .line 3
     return-object v0
 .end method

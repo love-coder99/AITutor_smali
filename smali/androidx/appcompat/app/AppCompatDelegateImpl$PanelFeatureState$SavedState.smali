@@ -31,7 +31,7 @@
     .locals 1
 
     .line 1
-    new-instance v0, Landroidx/appcompat/app/n0;
+    new-instance v0, Landroidx/appcompat/app/D;
 
     .line 2
     .line 3

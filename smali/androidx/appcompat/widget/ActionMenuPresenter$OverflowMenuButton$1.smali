@@ -43,7 +43,7 @@
 
 
 # virtual methods
-.method public getPopup()Landroidx/appcompat/view/menu/f0;
+.method public getPopup()Landroidx/appcompat/view/menu/D;
     .locals 1
 
     .line 1
@@ -70,7 +70,7 @@
 
     .line 11
     :cond_0
-    invoke-virtual {v0}, Landroidx/appcompat/view/menu/z;->getPopup()Landroidx/appcompat/view/menu/x;
+    invoke-virtual {v0}, Landroidx/appcompat/view/menu/x;->getPopup()Landroidx/appcompat/view/menu/v;
 
     .line 12
     .line 13

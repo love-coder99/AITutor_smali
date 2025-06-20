@@ -1,28 +1,78 @@
-.class public abstract Lcom/applovin/impl/k2;
+.class public final synthetic Lcom/applovin/impl/K2;
 .super Ljava/lang/Object;
 .source "SourceFile"
 
+# interfaces
+.implements Lcom/applovin/impl/gc$a;
+
+
+# instance fields
+.field public final synthetic b:I
+
+.field public final synthetic c:Lcom/applovin/impl/s0$a;
+
+.field public final synthetic d:Lcom/applovin/impl/e9;
+
+.field public final synthetic f:Lcom/applovin/impl/p5;
+
 
 # direct methods
-.method public static a(ZZ)I
+.method public synthetic constructor <init>(Lcom/applovin/impl/s0$a;Lcom/applovin/impl/e9;Lcom/applovin/impl/p5;I)V
     .locals 0
 
-    if-ne p0, p1, :cond_0
+    .line 1
+    iput p4, p0, Lcom/applovin/impl/K2;->b:I
 
-    const/4 p0, 0x0
+    iput-object p1, p0, Lcom/applovin/impl/K2;->c:Lcom/applovin/impl/s0$a;
 
-    goto :goto_0
+    iput-object p2, p0, Lcom/applovin/impl/K2;->d:Lcom/applovin/impl/e9;
 
-    :cond_0
-    if-eqz p0, :cond_1
+    iput-object p3, p0, Lcom/applovin/impl/K2;->f:Lcom/applovin/impl/p5;
 
-    const/4 p0, 0x1
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    goto :goto_0
+    return-void
+.end method
 
-    :cond_1
-    const/4 p0, -0x1
 
-    :goto_0
-    return p0
+# virtual methods
+.method public final a(Ljava/lang/Object;)V
+    .locals 3
+
+    .line 1
+    iget v0, p0, Lcom/applovin/impl/K2;->b:I
+
+    packed-switch v0, :pswitch_data_0
+
+    iget-object v0, p0, Lcom/applovin/impl/K2;->f:Lcom/applovin/impl/p5;
+
+    check-cast p1, Lcom/applovin/impl/s0;
+
+    iget-object v1, p0, Lcom/applovin/impl/K2;->c:Lcom/applovin/impl/s0$a;
+
+    iget-object v2, p0, Lcom/applovin/impl/K2;->d:Lcom/applovin/impl/e9;
+
+    invoke-static {v1, v2, v0, p1}, Lcom/applovin/impl/r0;->p(Lcom/applovin/impl/s0$a;Lcom/applovin/impl/e9;Lcom/applovin/impl/p5;Lcom/applovin/impl/s0;)V
+
+    return-void
+
+    :pswitch_0
+    iget-object v0, p0, Lcom/applovin/impl/K2;->f:Lcom/applovin/impl/p5;
+
+    check-cast p1, Lcom/applovin/impl/s0;
+
+    iget-object v1, p0, Lcom/applovin/impl/K2;->c:Lcom/applovin/impl/s0$a;
+
+    iget-object v2, p0, Lcom/applovin/impl/K2;->d:Lcom/applovin/impl/e9;
+
+    invoke-static {v1, v2, v0, p1}, Lcom/applovin/impl/r0;->F(Lcom/applovin/impl/s0$a;Lcom/applovin/impl/e9;Lcom/applovin/impl/p5;Lcom/applovin/impl/s0;)V
+
+    return-void
+
+    nop
+
+    :pswitch_data_0
+    .packed-switch 0x0
+        :pswitch_0
+    .end packed-switch
 .end method

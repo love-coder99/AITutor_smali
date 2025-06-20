@@ -38,6 +38,7 @@
         0x9,
         0x0
     }
+    xi = 0x30
 .end annotation
 
 
@@ -52,7 +53,7 @@
 
 .field public static final synthetic b:[Lcoil/request/CachePolicy;
 
-.field public static final synthetic c:Luh/a;
+.field public static final synthetic c:Lda/a;
 
 
 # instance fields
@@ -70,17 +71,17 @@
 
     .line 2
     .line 3
-    const/4 v1, 0x1
+    const-string v1, "ENABLED"
 
     .line 4
+    .line 5
     const/4 v2, 0x0
 
-    .line 5
-    const-string v3, "ENABLED"
-
     .line 6
+    const/4 v3, 0x1
+
     .line 7
-    invoke-direct {v0, v1, v2, v3, v1}, Lcoil/request/CachePolicy;-><init>(ZILjava/lang/String;Z)V
+    invoke-direct {v0, v3, v2, v1, v3}, Lcoil/request/CachePolicy;-><init>(ZILjava/lang/String;Z)V
 
     .line 8
     .line 9
@@ -89,7 +90,7 @@
 
     .line 11
     .line 12
-    new-instance v3, Lcoil/request/CachePolicy;
+    new-instance v1, Lcoil/request/CachePolicy;
 
     .line 13
     .line 14
@@ -97,12 +98,12 @@
 
     .line 15
     .line 16
-    invoke-direct {v3, v1, v1, v4, v2}, Lcoil/request/CachePolicy;-><init>(ZILjava/lang/String;Z)V
+    invoke-direct {v1, v3, v3, v4, v2}, Lcoil/request/CachePolicy;-><init>(ZILjava/lang/String;Z)V
 
     .line 17
     .line 18
     .line 19
-    sput-object v3, Lcoil/request/CachePolicy;->READ_ONLY:Lcoil/request/CachePolicy;
+    sput-object v1, Lcoil/request/CachePolicy;->READ_ONLY:Lcoil/request/CachePolicy;
 
     .line 20
     .line 21
@@ -110,14 +111,14 @@
 
     .line 22
     .line 23
-    const/4 v5, 0x2
+    const-string v5, "WRITE_ONLY"
 
     .line 24
-    const-string v6, "WRITE_ONLY"
-
     .line 25
+    const/4 v6, 0x2
+
     .line 26
-    invoke-direct {v4, v2, v5, v6, v1}, Lcoil/request/CachePolicy;-><init>(ZILjava/lang/String;Z)V
+    invoke-direct {v4, v2, v6, v5, v3}, Lcoil/request/CachePolicy;-><init>(ZILjava/lang/String;Z)V
 
     .line 27
     .line 28
@@ -126,54 +127,54 @@
 
     .line 30
     .line 31
-    new-instance v6, Lcoil/request/CachePolicy;
+    new-instance v5, Lcoil/request/CachePolicy;
 
     .line 32
     .line 33
-    const/4 v7, 0x3
+    const-string v7, "DISABLED"
 
     .line 34
-    const-string v8, "DISABLED"
-
     .line 35
+    const/4 v8, 0x3
+
     .line 36
-    invoke-direct {v6, v2, v7, v8, v2}, Lcoil/request/CachePolicy;-><init>(ZILjava/lang/String;Z)V
+    invoke-direct {v5, v2, v8, v7, v2}, Lcoil/request/CachePolicy;-><init>(ZILjava/lang/String;Z)V
 
     .line 37
     .line 38
     .line 39
-    sput-object v6, Lcoil/request/CachePolicy;->DISABLED:Lcoil/request/CachePolicy;
+    sput-object v5, Lcoil/request/CachePolicy;->DISABLED:Lcoil/request/CachePolicy;
 
     .line 40
     .line 41
-    const/4 v8, 0x4
+    const/4 v7, 0x4
 
     .line 42
-    new-array v8, v8, [Lcoil/request/CachePolicy;
+    new-array v7, v7, [Lcoil/request/CachePolicy;
 
     .line 43
     .line 44
-    aput-object v0, v8, v2
+    aput-object v0, v7, v2
 
     .line 45
     .line 46
-    aput-object v3, v8, v1
+    aput-object v1, v7, v3
 
     .line 47
     .line 48
-    aput-object v4, v8, v5
+    aput-object v4, v7, v6
 
     .line 49
     .line 50
-    aput-object v6, v8, v7
+    aput-object v5, v7, v8
 
     .line 51
     .line 52
-    sput-object v8, Lcoil/request/CachePolicy;->b:[Lcoil/request/CachePolicy;
+    sput-object v7, Lcoil/request/CachePolicy;->b:[Lcoil/request/CachePolicy;
 
     .line 53
     .line 54
-    invoke-static {v8}, Lkotlin/enums/a;->a([Ljava/lang/Enum;)Luh/a;
+    invoke-static {v7}, Lkotlin/enums/a;->a([Ljava/lang/Enum;)Lda/a;
 
     .line 55
     .line 56
@@ -181,7 +182,7 @@
     move-result-object v0
 
     .line 58
-    sput-object v0, Lcoil/request/CachePolicy;->c:Luh/a;
+    sput-object v0, Lcoil/request/CachePolicy;->c:Lda/a;
 
     .line 59
     .line 60
@@ -208,18 +209,20 @@
     return-void
 .end method
 
-.method public static getEntries()Luh/a;
+.method public static getEntries()Lda/a;
     .locals 1
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "()",
-            "Luh/a;"
+            "Lda/a;"
         }
     .end annotation
 
     .line 1
-    sget-object v0, Lcoil/request/CachePolicy;->c:Luh/a;
+    sget-object v0, Lcoil/request/CachePolicy;->c:Lda/a;
 
+    .line 2
+    .line 3
     return-object v0
 .end method
 
@@ -256,15 +259,21 @@
 .method public final getReadEnabled()Z
     .locals 1
 
+    .line 1
     iget-boolean v0, p0, Lcoil/request/CachePolicy;->readEnabled:Z
 
+    .line 2
+    .line 3
     return v0
 .end method
 
 .method public final getWriteEnabled()Z
     .locals 1
 
+    .line 1
     iget-boolean v0, p0, Lcoil/request/CachePolicy;->writeEnabled:Z
 
+    .line 2
+    .line 3
     return v0
 .end method

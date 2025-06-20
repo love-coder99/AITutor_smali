@@ -4,11 +4,11 @@
 
 
 # direct methods
-.method public constructor <init>(ILandroidx/compose/runtime/snapshots/l;)V
+.method public constructor <init>(ILandroidx/compose/runtime/snapshots/j;)V
     .locals 5
 
     .line 1
-    sget-object v0, Landroidx/compose/runtime/snapshots/m;->c:Ljava/lang/Object;
+    sget-object v0, Landroidx/compose/runtime/snapshots/k;->c:Ljava/lang/Object;
 
     .line 2
     .line 3
@@ -16,7 +16,7 @@
 
     .line 4
     :try_start_0
-    sget-object v1, Landroidx/compose/runtime/snapshots/m;->i:Ljava/util/List;
+    sget-object v1, Landroidx/compose/runtime/snapshots/k;->i:Ljava/lang/Object;
 
     .line 5
     .line 6
@@ -57,7 +57,7 @@
 
     .line 21
     :goto_0
-    check-cast v2, Lzh/c;
+    check-cast v2, Lka/c;
 
     .line 22
     .line 23
@@ -91,7 +91,7 @@
     monitor-exit v0
 
     .line 34
-    invoke-direct {p0, p1, p2, v4, v2}, Landroidx/compose/runtime/snapshots/b;-><init>(ILandroidx/compose/runtime/snapshots/l;Lzh/c;Lzh/c;)V
+    invoke-direct {p0, p1, p2, v4, v2}, Landroidx/compose/runtime/snapshots/b;-><init>(ILandroidx/compose/runtime/snapshots/j;Lka/c;Lka/c;)V
 
     .line 35
     .line 36
@@ -108,7 +108,7 @@
 
 
 # virtual methods
-.method public final C(Lzh/c;Lzh/c;)Landroidx/compose/runtime/snapshots/b;
+.method public final C(Lka/c;Lka/c;)Landroidx/compose/runtime/snapshots/b;
     .locals 1
 
     .line 1
@@ -116,7 +116,7 @@
 
     .line 2
     .line 3
-    invoke-direct {v0, p1, p2}, Landroidx/compose/runtime/snapshots/GlobalSnapshot$takeNestedMutableSnapshot$1;-><init>(Lzh/c;Lzh/c;)V
+    invoke-direct {v0, p1, p2}, Landroidx/compose/runtime/snapshots/GlobalSnapshot$takeNestedMutableSnapshot$1;-><init>(Lka/c;Lka/c;)V
 
     .line 4
     .line 5
@@ -125,12 +125,12 @@
 
     .line 7
     .line 8
-    invoke-direct {p1, v0}, Landroidx/compose/runtime/snapshots/SnapshotKt$takeNewSnapshot$1;-><init>(Lzh/c;)V
+    invoke-direct {p1, v0}, Landroidx/compose/runtime/snapshots/SnapshotKt$takeNewSnapshot$1;-><init>(Lka/c;)V
 
     .line 9
     .line 10
     .line 11
-    invoke-static {p1}, Landroidx/compose/runtime/snapshots/m;->f(Lzh/c;)Ljava/lang/Object;
+    invoke-static {p1}, Landroidx/compose/runtime/snapshots/k;->f(Lka/c;)Ljava/lang/Object;
 
     .line 12
     .line 13
@@ -138,7 +138,7 @@
     move-result-object p1
 
     .line 15
-    check-cast p1, Landroidx/compose/runtime/snapshots/h;
+    check-cast p1, Landroidx/compose/runtime/snapshots/g;
 
     .line 16
     .line 17
@@ -153,7 +153,7 @@
     .locals 2
 
     .line 1
-    sget-object v0, Landroidx/compose/runtime/snapshots/m;->c:Ljava/lang/Object;
+    sget-object v0, Landroidx/compose/runtime/snapshots/k;->c:Ljava/lang/Object;
 
     .line 2
     .line 3
@@ -161,7 +161,7 @@
 
     .line 4
     :try_start_0
-    iget v1, p0, Landroidx/compose/runtime/snapshots/h;->d:I
+    iget v1, p0, Landroidx/compose/runtime/snapshots/g;->d:I
 
     .line 5
     .line 6
@@ -169,7 +169,7 @@
 
     .line 7
     .line 8
-    invoke-static {v1}, Landroidx/compose/runtime/snapshots/m;->v(I)V
+    invoke-static {v1}, Landroidx/compose/runtime/snapshots/k;->v(I)V
 
     .line 9
     .line 10
@@ -177,7 +177,7 @@
     const/4 v1, -0x1
 
     .line 12
-    iput v1, p0, Landroidx/compose/runtime/snapshots/h;->d:I
+    iput v1, p0, Landroidx/compose/runtime/snapshots/g;->d:I
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
@@ -204,7 +204,7 @@
     .locals 1
 
     .line 1
-    invoke-static {}, Lcom/facebook/appevents/i;->f()V
+    invoke-static {}, Landroidx/compose/runtime/snapshots/o;->i()V
 
     .line 2
     .line 3
@@ -219,7 +219,7 @@
     .locals 1
 
     .line 1
-    invoke-static {}, Lcom/facebook/appevents/i;->f()V
+    invoke-static {}, Landroidx/compose/runtime/snapshots/o;->i()V
 
     .line 2
     .line 3
@@ -234,7 +234,7 @@
     .locals 0
 
     .line 1
-    invoke-static {}, Landroidx/compose/runtime/snapshots/m;->a()V
+    invoke-static {}, Landroidx/compose/runtime/snapshots/k;->a()V
 
     .line 2
     .line 3
@@ -242,7 +242,7 @@
     return-void
 .end method
 
-.method public final t(Lzh/c;)Landroidx/compose/runtime/snapshots/h;
+.method public final t(Lka/c;)Landroidx/compose/runtime/snapshots/g;
     .locals 1
 
     .line 1
@@ -250,7 +250,7 @@
 
     .line 2
     .line 3
-    invoke-direct {v0, p1}, Landroidx/compose/runtime/snapshots/GlobalSnapshot$takeNestedSnapshot$1;-><init>(Lzh/c;)V
+    invoke-direct {v0, p1}, Landroidx/compose/runtime/snapshots/GlobalSnapshot$takeNestedSnapshot$1;-><init>(Lka/c;)V
 
     .line 4
     .line 5
@@ -259,12 +259,12 @@
 
     .line 7
     .line 8
-    invoke-direct {p1, v0}, Landroidx/compose/runtime/snapshots/SnapshotKt$takeNewSnapshot$1;-><init>(Lzh/c;)V
+    invoke-direct {p1, v0}, Landroidx/compose/runtime/snapshots/SnapshotKt$takeNewSnapshot$1;-><init>(Lka/c;)V
 
     .line 9
     .line 10
     .line 11
-    invoke-static {p1}, Landroidx/compose/runtime/snapshots/m;->f(Lzh/c;)Ljava/lang/Object;
+    invoke-static {p1}, Landroidx/compose/runtime/snapshots/k;->f(Lka/c;)Ljava/lang/Object;
 
     .line 12
     .line 13
@@ -272,14 +272,14 @@
     move-result-object p1
 
     .line 15
-    check-cast p1, Landroidx/compose/runtime/snapshots/h;
+    check-cast p1, Landroidx/compose/runtime/snapshots/g;
 
     .line 16
     .line 17
     return-object p1
 .end method
 
-.method public final v()Lcom/facebook/appevents/g;
+.method public final v()Landroidx/compose/runtime/snapshots/o;
     .locals 2
 
     .line 1
@@ -291,18 +291,10 @@
 
     .line 4
     .line 5
-    invoke-virtual {v1}, Ljava/lang/Object;->toString()Ljava/lang/String;
+    invoke-direct {v0, v1}, Ljava/lang/IllegalStateException;-><init>(Ljava/lang/String;)V
 
     .line 6
     .line 7
     .line 8
-    move-result-object v1
-
-    .line 9
-    invoke-direct {v0, v1}, Ljava/lang/IllegalStateException;-><init>(Ljava/lang/String;)V
-
-    .line 10
-    .line 11
-    .line 12
     throw v0
 .end method

@@ -3,10 +3,21 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lzh/e;
+.implements Lka/e;
 
 
 # annotations
+.annotation runtime Lca/c;
+    c = "androidx.compose.foundation.text.handwriting.StylusHandwritingNode$suspendingPointerInputModifierNode$1$1"
+    f = "StylusHandwriting.kt"
+    l = {
+        0x86,
+        0x9e,
+        0xba
+    }
+    m = "invokeSuspend"
+.end annotation
+
 .annotation system Ldalvik/annotation/EnclosingMethod;
     value = Landroidx/compose/foundation/text/handwriting/StylusHandwritingNode$suspendingPointerInputModifierNode$1;->invokeSuspend(Ljava/lang/Object;)Ljava/lang/Object;
 .end annotation
@@ -19,18 +30,19 @@
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "Lkotlin/coroutines/jvm/internal/RestrictedSuspendLambda;",
-        "Lzh/e;"
+        "Lka/e;"
     }
 .end annotation
 
 .annotation runtime Lkotlin/Metadata;
     d1 = {
-        "\u0000\n\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\u0010\u0002\u001a\u00020\u0001*\u00020\u0000H\u008a@"
+        "\u0000\u000c\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0008\u0002\u0010\u0002\u001a\u00020\u0001*\u00020\u0000H\u008a@\u00a2\u0006\u0004\u0008\u0002\u0010\u0003"
     }
     d2 = {
         "Landroidx/compose/ui/input/pointer/b;",
-        "Lqh/r;",
-        "<anonymous>"
+        "LX9/j;",
+        "<anonymous>",
+        "(Landroidx/compose/ui/input/pointer/b;)V"
     }
     k = 0x3
     mv = {
@@ -38,17 +50,6 @@
         0x8,
         0x0
     }
-.end annotation
-
-.annotation runtime Lth/c;
-    c = "androidx.compose.foundation.text.handwriting.StylusHandwritingNode$suspendingPointerInputModifierNode$1$1"
-    f = "StylusHandwriting.kt"
-    l = {
-        0x86,
-        0x9e,
-        0xba
-    }
-    m = "invokeSuspend"
 .end annotation
 
 
@@ -98,7 +99,7 @@
             "Lkotlin/coroutines/Continuation<",
             "*>;)",
             "Lkotlin/coroutines/Continuation<",
-            "Lqh/r;",
+            "LX9/j;",
             ">;"
         }
     .end annotation
@@ -122,7 +123,7 @@
             "Landroidx/compose/ui/input/pointer/b;",
             "Lkotlin/coroutines/Continuation<",
             "-",
-            "Lqh/r;",
+            "LX9/j;",
             ">;)",
             "Ljava/lang/Object;"
         }
@@ -135,7 +136,7 @@
 
     check-cast p1, Landroidx/compose/foundation/text/handwriting/StylusHandwritingNode$suspendingPointerInputModifierNode$1$1;
 
-    sget-object p2, Lqh/r;->a:Lqh/r;
+    sget-object p2, LX9/j;->a:LX9/j;
 
     invoke-virtual {p1, p2}, Landroidx/compose/foundation/text/handwriting/StylusHandwritingNode$suspendingPointerInputModifierNode$1$1;->invokeSuspend(Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -175,7 +176,7 @@
 
     .line 6
     .line 7
-    sget-object v3, Lqh/r;->a:Lqh/r;
+    sget-object v3, LX9/j;->a:LX9/j;
 
     .line 8
     .line 9
@@ -211,7 +212,7 @@
 
     .line 22
     .line 23
-    check-cast v2, Landroidx/compose/ui/input/pointer/r;
+    check-cast v2, Landroidx/compose/ui/input/pointer/n;
 
     .line 24
     .line 25
@@ -228,20 +229,20 @@
     .line 30
     .line 31
     .line 32
-    move-object v6, v0
-
-    .line 33
     move-object v9, v2
 
-    .line 34
+    .line 33
     move-object v2, v4
+
+    .line 34
+    const/4 v6, 0x3
 
     .line 35
     move-object/from16 v4, p1
 
     .line 36
     .line 37
-    goto/16 :goto_c
+    goto/16 :goto_b
 
     .line 38
     .line 39
@@ -275,7 +276,7 @@
 
     .line 52
     .line 53
-    check-cast v4, Landroidx/compose/ui/input/pointer/r;
+    check-cast v4, Landroidx/compose/ui/input/pointer/n;
 
     .line 54
     .line 55
@@ -292,808 +293,780 @@
     .line 60
     .line 61
     .line 62
-    move-object/from16 v7, p1
+    move-object/from16 v6, p1
 
     .line 63
     .line 64
-    move-object v6, v0
-
-    .line 65
     move-object/from16 v16, v4
 
+    .line 65
     .line 66
-    .line 67
     move-object v4, v2
 
-    .line 68
+    .line 67
     move-object v2, v9
 
-    .line 69
+    .line 68
     move-object/from16 v9, v16
 
+    .line 69
     .line 70
-    .line 71
-    goto/16 :goto_6
+    goto/16 :goto_5
 
+    .line 71
     .line 72
-    .line 73
     :cond_2
     iget-object v2, v0, Landroidx/compose/foundation/text/handwriting/StylusHandwritingNode$suspendingPointerInputModifierNode$1$1;->L$0:Ljava/lang/Object;
 
+    .line 73
     .line 74
-    .line 75
     check-cast v2, Landroidx/compose/ui/input/pointer/b;
 
+    .line 75
     .line 76
-    .line 77
     invoke-static/range {p1 .. p1}, Lkotlin/b;->a(Ljava/lang/Object;)V
 
+    .line 77
     .line 78
     .line 79
-    .line 80
     move-object/from16 v9, p1
 
+    .line 80
     .line 81
-    .line 82
     goto :goto_0
 
-    .line 83
+    .line 82
     :cond_3
     invoke-static/range {p1 .. p1}, Lkotlin/b;->a(Ljava/lang/Object;)V
 
+    .line 83
     .line 84
     .line 85
-    .line 86
     iget-object v2, v0, Landroidx/compose/foundation/text/handwriting/StylusHandwritingNode$suspendingPointerInputModifierNode$1$1;->L$0:Ljava/lang/Object;
 
+    .line 86
     .line 87
-    .line 88
     check-cast v2, Landroidx/compose/ui/input/pointer/b;
 
+    .line 88
     .line 89
-    .line 90
     sget-object v9, Landroidx/compose/ui/input/pointer/PointerEventPass;->Initial:Landroidx/compose/ui/input/pointer/PointerEventPass;
 
+    .line 90
     .line 91
-    .line 92
     iput-object v2, v0, Landroidx/compose/foundation/text/handwriting/StylusHandwritingNode$suspendingPointerInputModifierNode$1$1;->L$0:Ljava/lang/Object;
 
+    .line 92
     .line 93
-    .line 94
     iput v4, v0, Landroidx/compose/foundation/text/handwriting/StylusHandwritingNode$suspendingPointerInputModifierNode$1$1;->label:I
 
+    .line 94
     .line 95
-    .line 96
-    invoke-static {v2, v4, v9, v0}, Landroidx/compose/foundation/gestures/m0;->b(Landroidx/compose/ui/input/pointer/b;ZLandroidx/compose/ui/input/pointer/PointerEventPass;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
+    invoke-static {v2, v4, v9, v0}, Landroidx/compose/foundation/gestures/O;->b(Landroidx/compose/ui/input/pointer/b;ZLandroidx/compose/ui/input/pointer/PointerEventPass;Lkotlin/coroutines/jvm/internal/BaseContinuationImpl;)Ljava/lang/Object;
 
+    .line 96
     .line 97
     .line 98
-    .line 99
     move-result-object v9
 
-    .line 100
+    .line 99
     if-ne v9, v1, :cond_4
 
+    .line 100
     .line 101
-    .line 102
     return-object v1
 
-    .line 103
+    .line 102
     :cond_4
     :goto_0
-    check-cast v9, Landroidx/compose/ui/input/pointer/r;
+    check-cast v9, Landroidx/compose/ui/input/pointer/n;
 
+    .line 103
     .line 104
+    iget v10, v9, Landroidx/compose/ui/input/pointer/n;->i:I
+
     .line 105
-    iget v10, v9, Landroidx/compose/ui/input/pointer/r;->i:I
-
     .line 106
-    .line 107
-    invoke-static {v10, v7}, Landroidx/compose/ui/input/pointer/p;->b(II)Z
+    invoke-static {v10, v7}, Landroidx/compose/ui/input/pointer/l;->e(II)Z
 
+    .line 107
     .line 108
     .line 109
-    .line 110
     move-result v10
 
-    .line 111
+    .line 110
     if-nez v10, :cond_6
 
+    .line 111
     .line 112
-    .line 113
     const/4 v10, 0x4
 
+    .line 113
+    iget v11, v9, Landroidx/compose/ui/input/pointer/n;->i:I
+
     .line 114
-    iget v11, v9, Landroidx/compose/ui/input/pointer/r;->i:I
-
     .line 115
-    .line 116
-    invoke-static {v11, v10}, Landroidx/compose/ui/input/pointer/p;->b(II)Z
+    invoke-static {v11, v10}, Landroidx/compose/ui/input/pointer/l;->e(II)Z
 
+    .line 116
     .line 117
     .line 118
-    .line 119
     move-result v10
 
-    .line 120
+    .line 119
     if-eqz v10, :cond_5
 
+    .line 120
     .line 121
-    .line 122
     goto :goto_1
 
-    .line 123
+    .line 122
     :cond_5
     return-object v3
 
-    .line 124
+    .line 123
     :cond_6
     :goto_1
-    iget-wide v10, v9, Landroidx/compose/ui/input/pointer/r;->c:J
+    iget-wide v10, v9, Landroidx/compose/ui/input/pointer/n;->c:J
 
+    .line 124
     .line 125
-    .line 126
-    invoke-static {v10, v11}, Ln1/c;->d(J)F
+    invoke-static {v10, v11}, Lr0/c;->d(J)F
 
+    .line 126
     .line 127
     .line 128
-    .line 129
     move-result v12
 
-    .line 130
+    .line 129
     const/4 v13, 0x0
 
-    .line 131
+    .line 130
     cmpl-float v12, v12, v13
 
+    .line 131
     .line 132
-    .line 133
     if-ltz v12, :cond_7
 
+    .line 133
     .line 134
-    .line 135
-    invoke-static {v10, v11}, Ln1/c;->d(J)F
+    invoke-static {v10, v11}, Lr0/c;->d(J)F
 
+    .line 135
     .line 136
     .line 137
-    .line 138
     move-result v12
 
-    .line 139
+    .line 138
     move-object v14, v2
 
+    .line 139
+    check-cast v14, Landroidx/compose/ui/input/pointer/x;
+
     .line 140
-    check-cast v14, Landroidx/compose/ui/input/pointer/f0;
-
     .line 141
+    iget-object v15, v14, Landroidx/compose/ui/input/pointer/x;->h:Landroidx/compose/ui/input/pointer/z;
+
     .line 142
-    iget-object v15, v14, Landroidx/compose/ui/input/pointer/f0;->h:Landroidx/compose/ui/input/pointer/h0;
-
     .line 143
-    .line 144
-    iget-wide v6, v15, Landroidx/compose/ui/input/pointer/h0;->y:J
+    iget-wide v6, v15, Landroidx/compose/ui/input/pointer/z;->y:J
 
+    .line 144
     .line 145
-    .line 146
     const/16 v15, 0x20
 
+    .line 146
     .line 147
-    .line 148
     shr-long/2addr v6, v15
 
-    .line 149
+    .line 148
     long-to-int v7, v6
 
-    .line 150
+    .line 149
     int-to-float v6, v7
 
-    .line 151
+    .line 150
     cmpg-float v6, v12, v6
 
+    .line 151
     .line 152
-    .line 153
     if-gez v6, :cond_7
 
+    .line 153
     .line 154
-    .line 155
-    invoke-static {v10, v11}, Ln1/c;->e(J)F
+    invoke-static {v10, v11}, Lr0/c;->e(J)F
 
+    .line 155
     .line 156
     .line 157
-    .line 158
     move-result v6
 
-    .line 159
+    .line 158
     cmpl-float v6, v6, v13
 
+    .line 159
     .line 160
-    .line 161
     if-ltz v6, :cond_7
 
+    .line 161
     .line 162
-    .line 163
-    invoke-static {v10, v11}, Ln1/c;->e(J)F
+    invoke-static {v10, v11}, Lr0/c;->e(J)F
 
+    .line 163
     .line 164
     .line 165
-    .line 166
     move-result v6
 
+    .line 166
+    iget-object v7, v14, Landroidx/compose/ui/input/pointer/x;->h:Landroidx/compose/ui/input/pointer/z;
+
     .line 167
-    iget-object v7, v14, Landroidx/compose/ui/input/pointer/f0;->h:Landroidx/compose/ui/input/pointer/h0;
-
     .line 168
-    .line 169
-    iget-wide v10, v7, Landroidx/compose/ui/input/pointer/h0;->y:J
+    iget-wide v10, v7, Landroidx/compose/ui/input/pointer/z;->y:J
 
+    .line 169
     .line 170
-    .line 171
     const-wide v12, 0xffffffffL
 
+    .line 171
     .line 172
     .line 173
     .line 174
     .line 175
-    .line 176
     and-long/2addr v10, v12
 
-    .line 177
+    .line 176
     long-to-int v7, v10
 
-    .line 178
+    .line 177
     int-to-float v7, v7
 
-    .line 179
+    .line 178
     cmpg-float v6, v6, v7
 
+    .line 179
     .line 180
-    .line 181
     if-gez v6, :cond_7
 
+    .line 181
     .line 182
-    .line 183
     goto :goto_2
 
-    .line 184
+    .line 183
     :cond_7
     const/4 v4, 0x0
 
-    .line 185
+    .line 184
     :goto_2
     iget-object v6, v0, Landroidx/compose/foundation/text/handwriting/StylusHandwritingNode$suspendingPointerInputModifierNode$1$1;->this$0:Landroidx/compose/foundation/text/handwriting/b;
 
+    .line 185
     .line 186
-    .line 187
     iget-boolean v6, v6, Landroidx/compose/foundation/text/handwriting/b;->s:Z
 
+    .line 187
     .line 188
-    .line 189
     if-nez v6, :cond_9
 
+    .line 189
     .line 190
-    .line 191
     if-eqz v4, :cond_8
 
+    .line 191
     .line 192
-    .line 193
     goto :goto_3
 
-    .line 194
+    .line 193
     :cond_8
     sget-object v4, Landroidx/compose/ui/input/pointer/PointerEventPass;->Main:Landroidx/compose/ui/input/pointer/PointerEventPass;
 
+    .line 194
     .line 195
-    .line 196
     goto :goto_4
 
-    .line 197
+    .line 196
     :cond_9
     :goto_3
     sget-object v4, Landroidx/compose/ui/input/pointer/PointerEventPass;->Initial:Landroidx/compose/ui/input/pointer/PointerEventPass;
 
+    .line 197
     .line 198
-    .line 199
     :goto_4
-    move-object v6, v0
+    iput-object v2, v0, Landroidx/compose/foundation/text/handwriting/StylusHandwritingNode$suspendingPointerInputModifierNode$1$1;->L$0:Ljava/lang/Object;
 
+    .line 199
     .line 200
-    :goto_5
-    iput-object v2, v6, Landroidx/compose/foundation/text/handwriting/StylusHandwritingNode$suspendingPointerInputModifierNode$1$1;->L$0:Ljava/lang/Object;
+    iput-object v9, v0, Landroidx/compose/foundation/text/handwriting/StylusHandwritingNode$suspendingPointerInputModifierNode$1$1;->L$1:Ljava/lang/Object;
 
     .line 201
     .line 202
-    iput-object v9, v6, Landroidx/compose/foundation/text/handwriting/StylusHandwritingNode$suspendingPointerInputModifierNode$1$1;->L$1:Ljava/lang/Object;
+    iput-object v4, v0, Landroidx/compose/foundation/text/handwriting/StylusHandwritingNode$suspendingPointerInputModifierNode$1$1;->L$2:Ljava/lang/Object;
 
     .line 203
     .line 204
-    iput-object v4, v6, Landroidx/compose/foundation/text/handwriting/StylusHandwritingNode$suspendingPointerInputModifierNode$1$1;->L$2:Ljava/lang/Object;
+    iput v5, v0, Landroidx/compose/foundation/text/handwriting/StylusHandwritingNode$suspendingPointerInputModifierNode$1$1;->label:I
 
     .line 205
     .line 206
-    iput v5, v6, Landroidx/compose/foundation/text/handwriting/StylusHandwritingNode$suspendingPointerInputModifierNode$1$1;->label:I
+    check-cast v2, Landroidx/compose/ui/input/pointer/x;
 
     .line 207
     .line 208
-    check-cast v2, Landroidx/compose/ui/input/pointer/f0;
+    invoke-virtual {v2, v4, v0}, Landroidx/compose/ui/input/pointer/x;->a(Landroidx/compose/ui/input/pointer/PointerEventPass;Lkotlin/coroutines/jvm/internal/BaseContinuationImpl;)Ljava/lang/Object;
 
     .line 209
     .line 210
-    invoke-virtual {v2, v4, v6}, Landroidx/compose/ui/input/pointer/f0;->b(Landroidx/compose/ui/input/pointer/PointerEventPass;Lkotlin/coroutines/jvm/internal/BaseContinuationImpl;)Ljava/lang/Object;
-
     .line 211
+    move-result-object v6
+
     .line 212
+    if-ne v6, v1, :cond_a
+
     .line 213
-    move-result-object v7
-
     .line 214
-    if-ne v7, v1, :cond_a
-
-    .line 215
-    .line 216
     return-object v1
 
-    .line 217
+    .line 215
     :cond_a
-    :goto_6
-    check-cast v7, Landroidx/compose/ui/input/pointer/k;
+    :goto_5
+    check-cast v6, Landroidx/compose/ui/input/pointer/g;
+
+    .line 216
+    .line 217
+    iget-object v6, v6, Landroidx/compose/ui/input/pointer/g;->a:Ljava/lang/Object;
 
     .line 218
     .line 219
-    iget-object v7, v7, Landroidx/compose/ui/input/pointer/k;->a:Ljava/util/List;
+    invoke-interface {v6}, Ljava/util/List;->size()I
 
     .line 220
     .line 221
-    invoke-interface {v7}, Ljava/util/List;->size()I
-
     .line 222
+    move-result v7
+
     .line 223
+    const/4 v10, 0x0
+
     .line 224
-    move-result v10
+    :goto_6
+    if-ge v10, v7, :cond_d
 
     .line 225
-    const/4 v11, 0x0
-
     .line 226
-    :goto_7
-    if-ge v11, v10, :cond_d
+    invoke-interface {v6, v10}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
     .line 227
     .line 228
-    invoke-interface {v7, v11}, Ljava/util/List;->get(I)Ljava/lang/Object;
-
     .line 229
+    move-result-object v11
+
     .line 230
+    move-object v12, v11
+
     .line 231
-    move-result-object v12
+    check-cast v12, Landroidx/compose/ui/input/pointer/n;
 
     .line 232
-    move-object v13, v12
-
     .line 233
-    check-cast v13, Landroidx/compose/ui/input/pointer/r;
+    invoke-virtual {v12}, Landroidx/compose/ui/input/pointer/n;->b()Z
 
     .line 234
     .line 235
-    invoke-virtual {v13}, Landroidx/compose/ui/input/pointer/r;->b()Z
-
     .line 236
-    .line 237
-    .line 238
-    move-result v14
+    move-result v13
 
+    .line 237
+    if-nez v13, :cond_b
+
+    .line 238
     .line 239
-    if-nez v14, :cond_b
+    iget-wide v13, v9, Landroidx/compose/ui/input/pointer/n;->a:J
 
     .line 240
     .line 241
-    iget-wide v14, v9, Landroidx/compose/ui/input/pointer/r;->a:J
+    move-object/from16 p1, v6
 
     .line 242
     .line 243
-    move-object/from16 p1, v6
+    iget-wide v5, v12, Landroidx/compose/ui/input/pointer/n;->a:J
 
     .line 244
     .line 245
-    iget-wide v5, v13, Landroidx/compose/ui/input/pointer/r;->a:J
+    invoke-static {v5, v6, v13, v14}, Landroidx/compose/ui/input/pointer/m;->a(JJ)Z
 
     .line 246
     .line 247
-    invoke-static {v5, v6, v14, v15}, Landroidx/compose/ui/input/pointer/q;->a(JJ)Z
-
     .line 248
-    .line 249
-    .line 250
     move-result v5
 
-    .line 251
+    .line 249
     if-eqz v5, :cond_c
+
+    .line 250
+    .line 251
+    iget-boolean v5, v12, Landroidx/compose/ui/input/pointer/n;->d:Z
 
     .line 252
     .line 253
-    iget-boolean v5, v13, Landroidx/compose/ui/input/pointer/r;->d:Z
+    if-eqz v5, :cond_c
 
     .line 254
     .line 255
-    if-eqz v5, :cond_c
+    goto :goto_7
 
     .line 256
-    .line 257
-    goto :goto_8
-
-    .line 258
     :cond_b
     move-object/from16 p1, v6
 
+    .line 257
+    .line 258
+    :cond_c
+    add-int/lit8 v10, v10, 0x1
+
     .line 259
     .line 260
-    :cond_c
-    add-int/lit8 v11, v11, 0x1
+    move-object/from16 v6, p1
 
     .line 261
     .line 262
-    move-object/from16 v6, p1
-
-    .line 263
-    .line 264
     const/4 v5, 0x2
 
+    .line 263
+    goto :goto_6
+
+    .line 264
+    :cond_d
+    move-object v11, v8
+
     .line 265
-    goto :goto_7
+    :goto_7
+    check-cast v11, Landroidx/compose/ui/input/pointer/n;
 
     .line 266
-    :cond_d
-    move-object/from16 p1, v6
-
     .line 267
-    .line 268
-    move-object v12, v8
+    if-nez v11, :cond_e
 
+    .line 268
     .line 269
-    :goto_8
-    check-cast v12, Landroidx/compose/ui/input/pointer/r;
+    goto :goto_8
 
     .line 270
-    .line 271
-    if-nez v12, :cond_e
-
-    .line 272
-    .line 273
-    goto :goto_9
-
-    .line 274
     :cond_e
-    iget-wide v5, v9, Landroidx/compose/ui/input/pointer/r;->b:J
+    iget-wide v5, v9, Landroidx/compose/ui/input/pointer/n;->b:J
+
+    .line 271
+    .line 272
+    iget-wide v12, v11, Landroidx/compose/ui/input/pointer/n;->b:J
+
+    .line 273
+    .line 274
+    sub-long/2addr v12, v5
 
     .line 275
+    move-object v5, v2
+
     .line 276
-    iget-wide v10, v12, Landroidx/compose/ui/input/pointer/r;->b:J
+    check-cast v5, Landroidx/compose/ui/input/pointer/x;
 
     .line 277
     .line 278
-    sub-long/2addr v10, v5
+    invoke-virtual {v5}, Landroidx/compose/ui/input/pointer/x;->d()Landroidx/compose/ui/platform/M0;
 
     .line 279
-    move-object v5, v2
-
     .line 280
-    check-cast v5, Landroidx/compose/ui/input/pointer/f0;
-
     .line 281
+    move-result-object v6
+
     .line 282
-    invoke-virtual {v5}, Landroidx/compose/ui/input/pointer/f0;->d()Landroidx/compose/ui/platform/x2;
+    invoke-interface {v6}, Landroidx/compose/ui/platform/M0;->b()J
 
     .line 283
     .line 284
     .line 285
-    move-result-object v6
+    move-result-wide v6
 
     .line 286
-    invoke-interface {v6}, Landroidx/compose/ui/platform/x2;->c()J
+    cmp-long v10, v12, v6
 
     .line 287
     .line 288
-    .line 289
-    move-result-wide v6
+    if-ltz v10, :cond_f
 
+    .line 289
     .line 290
-    cmp-long v13, v10, v6
+    :goto_8
+    move-object v11, v8
 
     .line 291
+    goto :goto_9
+
     .line 292
-    if-ltz v13, :cond_f
+    :cond_f
+    iget-wide v6, v11, Landroidx/compose/ui/input/pointer/n;->c:J
 
     .line 293
     .line 294
-    :goto_9
-    move-object v12, v8
+    iget-wide v12, v9, Landroidx/compose/ui/input/pointer/n;->c:J
 
     .line 295
-    goto :goto_a
-
     .line 296
-    :cond_f
-    iget-wide v6, v12, Landroidx/compose/ui/input/pointer/r;->c:J
+    invoke-static {v6, v7, v12, v13}, Lr0/c;->h(JJ)J
 
     .line 297
     .line 298
-    iget-wide v10, v9, Landroidx/compose/ui/input/pointer/r;->c:J
-
     .line 299
+    move-result-wide v6
+
     .line 300
-    invoke-static {v6, v7, v10, v11}, Ln1/c;->h(JJ)J
+    invoke-static {v6, v7}, Lr0/c;->c(J)F
 
     .line 301
     .line 302
     .line 303
-    move-result-wide v6
+    move-result v6
 
     .line 304
-    invoke-static {v6, v7}, Ln1/c;->c(J)F
+    invoke-virtual {v5}, Landroidx/compose/ui/input/pointer/x;->d()Landroidx/compose/ui/platform/M0;
 
     .line 305
     .line 306
     .line 307
-    move-result v6
+    move-result-object v7
 
     .line 308
-    invoke-virtual {v5}, Landroidx/compose/ui/input/pointer/f0;->d()Landroidx/compose/ui/platform/x2;
+    invoke-interface {v7}, Landroidx/compose/ui/platform/M0;->c()F
 
     .line 309
     .line 310
     .line 311
-    move-result-object v7
+    move-result v7
 
     .line 312
-    invoke-interface {v7}, Landroidx/compose/ui/platform/x2;->d()F
+    cmpl-float v6, v6, v7
 
     .line 313
     .line 314
-    .line 315
-    move-result v7
+    if-lez v6, :cond_16
 
+    .line 315
     .line 316
-    cmpl-float v6, v6, v7
+    :goto_9
+    if-eqz v11, :cond_15
 
     .line 317
     .line 318
-    if-lez v6, :cond_16
+    iget-object v4, v0, Landroidx/compose/foundation/text/handwriting/StylusHandwritingNode$suspendingPointerInputModifierNode$1$1;->this$0:Landroidx/compose/foundation/text/handwriting/b;
 
     .line 319
     .line 320
-    :goto_a
-    if-eqz v12, :cond_15
+    iget-object v4, v4, Landroidx/compose/foundation/text/handwriting/b;->r:Lka/a;
 
     .line 321
     .line 322
-    move-object/from16 v6, p1
+    invoke-interface {v4}, Lka/a;->invoke()Ljava/lang/Object;
 
     .line 323
     .line 324
-    iget-object v4, v6, Landroidx/compose/foundation/text/handwriting/StylusHandwritingNode$suspendingPointerInputModifierNode$1$1;->this$0:Landroidx/compose/foundation/text/handwriting/b;
-
     .line 325
+    move-result-object v4
+
     .line 326
-    iget-object v4, v4, Landroidx/compose/foundation/text/handwriting/b;->r:Lzh/a;
+    check-cast v4, Ljava/lang/Boolean;
 
     .line 327
     .line 328
-    invoke-interface {v4}, Lzh/a;->invoke()Ljava/lang/Object;
+    invoke-virtual {v4}, Ljava/lang/Boolean;->booleanValue()Z
 
     .line 329
     .line 330
     .line 331
-    move-result-object v4
+    move-result v4
 
     .line 332
-    check-cast v4, Ljava/lang/Boolean;
+    if-nez v4, :cond_10
 
     .line 333
     .line 334
-    invoke-virtual {v4}, Ljava/lang/Boolean;->booleanValue()Z
+    goto :goto_e
 
     .line 335
+    :cond_10
+    invoke-virtual {v11}, Landroidx/compose/ui/input/pointer/n;->a()V
+
     .line 336
     .line 337
-    move-result v4
-
     .line 338
-    if-nez v4, :cond_10
+    :goto_a
+    sget-object v4, Landroidx/compose/ui/input/pointer/PointerEventPass;->Initial:Landroidx/compose/ui/input/pointer/PointerEventPass;
 
     .line 339
     .line 340
-    goto :goto_f
+    iput-object v2, v0, Landroidx/compose/foundation/text/handwriting/StylusHandwritingNode$suspendingPointerInputModifierNode$1$1;->L$0:Ljava/lang/Object;
 
     .line 341
-    :cond_10
-    invoke-virtual {v12}, Landroidx/compose/ui/input/pointer/r;->a()V
-
     .line 342
+    iput-object v9, v0, Landroidx/compose/foundation/text/handwriting/StylusHandwritingNode$suspendingPointerInputModifierNode$1$1;->L$1:Ljava/lang/Object;
+
     .line 343
     .line 344
-    :goto_b
-    sget-object v4, Landroidx/compose/ui/input/pointer/PointerEventPass;->Initial:Landroidx/compose/ui/input/pointer/PointerEventPass;
+    iput-object v8, v0, Landroidx/compose/foundation/text/handwriting/StylusHandwritingNode$suspendingPointerInputModifierNode$1$1;->L$2:Ljava/lang/Object;
 
     .line 345
     .line 346
-    iput-object v2, v6, Landroidx/compose/foundation/text/handwriting/StylusHandwritingNode$suspendingPointerInputModifierNode$1$1;->L$0:Ljava/lang/Object;
+    const/4 v6, 0x3
 
     .line 347
+    iput v6, v0, Landroidx/compose/foundation/text/handwriting/StylusHandwritingNode$suspendingPointerInputModifierNode$1$1;->label:I
+
     .line 348
-    iput-object v9, v6, Landroidx/compose/foundation/text/handwriting/StylusHandwritingNode$suspendingPointerInputModifierNode$1$1;->L$1:Ljava/lang/Object;
-
     .line 349
+    check-cast v2, Landroidx/compose/ui/input/pointer/x;
+
     .line 350
-    iput-object v8, v6, Landroidx/compose/foundation/text/handwriting/StylusHandwritingNode$suspendingPointerInputModifierNode$1$1;->L$2:Ljava/lang/Object;
-
     .line 351
+    invoke-virtual {v2, v4, v0}, Landroidx/compose/ui/input/pointer/x;->a(Landroidx/compose/ui/input/pointer/PointerEventPass;Lkotlin/coroutines/jvm/internal/BaseContinuationImpl;)Ljava/lang/Object;
+
     .line 352
-    const/4 v7, 0x3
-
     .line 353
-    iput v7, v6, Landroidx/compose/foundation/text/handwriting/StylusHandwritingNode$suspendingPointerInputModifierNode$1$1;->label:I
-
     .line 354
+    move-result-object v4
+
     .line 355
-    check-cast v2, Landroidx/compose/ui/input/pointer/f0;
+    if-ne v4, v1, :cond_11
 
     .line 356
     .line 357
-    invoke-virtual {v2, v4, v6}, Landroidx/compose/ui/input/pointer/f0;->b(Landroidx/compose/ui/input/pointer/PointerEventPass;Lkotlin/coroutines/jvm/internal/BaseContinuationImpl;)Ljava/lang/Object;
-
-    .line 358
-    .line 359
-    .line 360
-    move-result-object v4
-
-    .line 361
-    if-ne v4, v1, :cond_11
-
-    .line 362
-    .line 363
     return-object v1
 
-    .line 364
+    .line 358
     :cond_11
-    :goto_c
-    check-cast v4, Landroidx/compose/ui/input/pointer/k;
+    :goto_b
+    check-cast v4, Landroidx/compose/ui/input/pointer/g;
 
-    .line 365
-    .line 366
-    iget-object v4, v4, Landroidx/compose/ui/input/pointer/k;->a:Ljava/util/List;
+    .line 359
+    .line 360
+    iget-object v4, v4, Landroidx/compose/ui/input/pointer/g;->a:Ljava/lang/Object;
 
-    .line 367
-    .line 368
+    .line 361
+    .line 362
     invoke-interface {v4}, Ljava/util/List;->size()I
 
-    .line 369
-    .line 370
-    .line 371
+    .line 363
+    .line 364
+    .line 365
     move-result v5
 
+    .line 366
+    const/4 v7, 0x0
+
+    .line 367
+    :goto_c
+    if-ge v7, v5, :cond_13
+
+    .line 368
+    .line 369
+    invoke-interface {v4, v7}, Ljava/util/List;->get(I)Ljava/lang/Object;
+
+    .line 370
+    .line 371
     .line 372
-    const/4 v10, 0x0
+    move-result-object v10
 
     .line 373
-    :goto_d
-    if-ge v10, v5, :cond_13
+    move-object v11, v10
 
     .line 374
-    .line 375
-    invoke-interface {v4, v10}, Ljava/util/List;->get(I)Ljava/lang/Object;
+    check-cast v11, Landroidx/compose/ui/input/pointer/n;
 
+    .line 375
     .line 376
+    invoke-virtual {v11}, Landroidx/compose/ui/input/pointer/n;->b()Z
+
     .line 377
     .line 378
-    move-result-object v11
-
     .line 379
-    move-object v12, v11
+    move-result v12
 
     .line 380
-    check-cast v12, Landroidx/compose/ui/input/pointer/r;
+    if-nez v12, :cond_12
 
     .line 381
     .line 382
-    invoke-virtual {v12}, Landroidx/compose/ui/input/pointer/r;->b()Z
+    iget-wide v12, v9, Landroidx/compose/ui/input/pointer/n;->a:J
 
     .line 383
     .line 384
-    .line 385
-    move-result v13
+    iget-wide v14, v11, Landroidx/compose/ui/input/pointer/n;->a:J
 
+    .line 385
     .line 386
-    if-nez v13, :cond_12
+    invoke-static {v14, v15, v12, v13}, Landroidx/compose/ui/input/pointer/m;->a(JJ)Z
 
     .line 387
     .line 388
-    iget-wide v13, v9, Landroidx/compose/ui/input/pointer/r;->a:J
-
     .line 389
+    move-result v12
+
     .line 390
-    iget-wide v7, v12, Landroidx/compose/ui/input/pointer/r;->a:J
+    if-eqz v12, :cond_12
 
     .line 391
     .line 392
-    invoke-static {v7, v8, v13, v14}, Landroidx/compose/ui/input/pointer/q;->a(JJ)Z
+    iget-boolean v11, v11, Landroidx/compose/ui/input/pointer/n;->d:Z
 
     .line 393
     .line 394
-    .line 395
-    move-result v7
+    if-eqz v11, :cond_12
 
+    .line 395
     .line 396
-    if-eqz v7, :cond_12
+    goto :goto_d
 
     .line 397
-    .line 398
-    iget-boolean v7, v12, Landroidx/compose/ui/input/pointer/r;->d:Z
+    :cond_12
+    add-int/lit8 v7, v7, 0x1
 
+    .line 398
     .line 399
+    goto :goto_c
+
     .line 400
-    if-eqz v7, :cond_12
+    :cond_13
+    move-object v10, v8
 
     .line 401
-    .line 402
-    goto :goto_e
+    :goto_d
+    check-cast v10, Landroidx/compose/ui/input/pointer/n;
 
+    .line 402
     .line 403
-    :cond_12
-    add-int/lit8 v10, v10, 0x1
+    if-nez v10, :cond_14
 
     .line 404
     .line 405
-    const/4 v7, 0x3
+    return-object v3
 
     .line 406
-    const/4 v8, 0x0
+    :cond_14
+    invoke-virtual {v10}, Landroidx/compose/ui/input/pointer/n;->a()V
 
     .line 407
-    goto :goto_d
-
     .line 408
-    :cond_13
-    const/4 v11, 0x0
-
     .line 409
-    :goto_e
-    check-cast v11, Landroidx/compose/ui/input/pointer/r;
+    goto :goto_a
 
     .line 410
-    .line 411
-    if-nez v11, :cond_14
-
-    .line 412
-    .line 413
-    return-object v3
-
-    .line 414
-    :cond_14
-    invoke-virtual {v11}, Landroidx/compose/ui/input/pointer/r;->a()V
-
-    .line 415
-    .line 416
-    .line 417
-    const/4 v8, 0x0
-
-    .line 418
-    goto :goto_b
-
-    .line 419
     :cond_15
-    :goto_f
+    :goto_e
     return-object v3
 
-    .line 420
+    .line 411
     :cond_16
-    move-object/from16 v6, p1
-
-    .line 421
-    .line 422
     move-object v2, v5
 
-    .line 423
+    .line 412
     const/4 v5, 0x2
 
-    .line 424
-    goto/16 :goto_5
+    .line 413
+    goto/16 :goto_4
 .end method

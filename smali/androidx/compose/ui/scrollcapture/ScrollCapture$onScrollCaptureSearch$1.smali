@@ -3,12 +3,12 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lzh/c;
+.implements Lka/c;
 
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Landroidx/compose/ui/scrollcapture/ScrollCapture;->a(Landroid/view/View;Landroidx/compose/ui/semantics/p;Lkotlin/coroutines/i;Ljava/util/function/Consumer;)V
+    value = Landroidx/compose/ui/scrollcapture/ScrollCapture;->a(Landroid/view/View;Landroidx/compose/ui/semantics/o;Lba/g;Ljava/util/function/Consumer;)V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -19,7 +19,7 @@
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "Lkotlin/jvm/internal/AdaptedFunctionReference;",
-        "Lzh/c;"
+        "Lka/c;"
     }
 .end annotation
 
@@ -38,15 +38,15 @@
 .method public constructor <init>(Ljava/lang/Object;)V
     .locals 7
 
-    const/4 v1, 0x1
-
-    const-class v3, Landroidx/compose/runtime/collection/e;
-
-    const-string v4, "add"
-
     const-string v5, "add(Ljava/lang/Object;)Z"
 
     const/16 v6, 0x8
+
+    const/4 v1, 0x1
+
+    const-class v3, Landroidx/compose/runtime/collection/d;
+
+    const-string v4, "add"
 
     move-object v0, p0
 
@@ -63,24 +63,24 @@
     .locals 0
 
     .line 1
-    check-cast p1, Landroidx/compose/ui/scrollcapture/e;
+    check-cast p1, Landroidx/compose/ui/scrollcapture/d;
 
-    invoke-virtual {p0, p1}, Landroidx/compose/ui/scrollcapture/ScrollCapture$onScrollCaptureSearch$1;->invoke(Landroidx/compose/ui/scrollcapture/e;)V
+    invoke-virtual {p0, p1}, Landroidx/compose/ui/scrollcapture/ScrollCapture$onScrollCaptureSearch$1;->invoke(Landroidx/compose/ui/scrollcapture/d;)V
 
-    sget-object p1, Lqh/r;->a:Lqh/r;
+    sget-object p1, LX9/j;->a:LX9/j;
 
     return-object p1
 .end method
 
-.method public final invoke(Landroidx/compose/ui/scrollcapture/e;)V
+.method public final invoke(Landroidx/compose/ui/scrollcapture/d;)V
     .locals 1
 
+    .line 2
     iget-object v0, p0, Lkotlin/jvm/internal/AdaptedFunctionReference;->receiver:Ljava/lang/Object;
 
-    .line 2
-    check-cast v0, Landroidx/compose/runtime/collection/e;
+    check-cast v0, Landroidx/compose/runtime/collection/d;
 
-    invoke-virtual {v0, p1}, Landroidx/compose/runtime/collection/e;->b(Ljava/lang/Object;)V
+    invoke-virtual {v0, p1}, Landroidx/compose/runtime/collection/d;->b(Ljava/lang/Object;)V
 
     return-void
 .end method

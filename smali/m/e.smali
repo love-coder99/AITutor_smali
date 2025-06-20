@@ -1,273 +1,138 @@
-.class public abstract Lm/e;
-.super Lm/f;
+.class public final synthetic LM/e;
+.super Ljava/lang/Object;
 .source "SourceFile"
 
 # interfaces
-.implements Ljava/util/Iterator;
+.implements Lu1/a;
 
 
 # instance fields
-.field public b:Lm/c;
+.field public final synthetic a:LM/f;
 
-.field public c:Lm/c;
+.field public final synthetic b:LB/q0;
+
+.field public final synthetic c:Landroid/graphics/SurfaceTexture;
+
+.field public final synthetic d:Landroid/view/Surface;
+
+
+# direct methods
+.method public synthetic constructor <init>(LM/f;LB/q0;Landroid/graphics/SurfaceTexture;Landroid/view/Surface;)V
+    .locals 0
+
+    .line 1
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    iput-object p1, p0, LM/e;->a:LM/f;
+
+    iput-object p2, p0, LM/e;->b:LB/q0;
+
+    iput-object p3, p0, LM/e;->c:Landroid/graphics/SurfaceTexture;
+
+    iput-object p4, p0, LM/e;->d:Landroid/view/Surface;
+
+    return-void
+.end method
 
 
 # virtual methods
-.method public final a(Lm/c;)V
-    .locals 3
+.method public final accept(Ljava/lang/Object;)V
+    .locals 5
 
     .line 1
-    iget-object v0, p0, Lm/e;->b:Lm/c;
+    iget-object v0, p0, LM/e;->a:LM/f;
 
     .line 2
     .line 3
-    const/4 v1, 0x0
+    iget-object v1, p0, LM/e;->b:LB/q0;
 
     .line 4
-    if-ne v0, p1, :cond_0
-
     .line 5
+    iget-object v2, p0, LM/e;->c:Landroid/graphics/SurfaceTexture;
+
     .line 6
-    iget-object v0, p0, Lm/e;->c:Lm/c;
-
     .line 7
+    iget-object v3, p0, LM/e;->d:Landroid/view/Surface;
+
     .line 8
-    if-ne p1, v0, :cond_0
-
     .line 9
+    check-cast p1, LB/j;
+
     .line 10
-    iput-object v1, p0, Lm/e;->c:Lm/c;
-
     .line 11
-    .line 12
-    iput-object v1, p0, Lm/e;->b:Lm/c;
+    invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
+    .line 12
     .line 13
     .line 14
-    :cond_0
-    iget-object v0, p0, Lm/e;->b:Lm/c;
+    iget-object p1, v1, LB/q0;->a:Ljava/lang/Object;
 
     .line 15
     .line 16
-    if-ne v0, p1, :cond_1
+    monitor-enter p1
 
     .line 17
+    const/4 v4, 0x0
+
     .line 18
-    move-object v2, p0
+    :try_start_0
+    iput-object v4, v1, LB/q0;->n:LB/p0;
 
     .line 19
-    check-cast v2, Lm/b;
-
     .line 20
-    .line 21
-    iget v2, v2, Lm/b;->d:I
+    iput-object v4, v1, LB/q0;->o:Ljava/util/concurrent/Executor;
 
+    .line 21
     .line 22
+    monitor-exit p1
+    :try_end_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+
     .line 23
-    packed-switch v2, :pswitch_data_0
+    invoke-virtual {v2, v4}, Landroid/graphics/SurfaceTexture;->setOnFrameAvailableListener(Landroid/graphics/SurfaceTexture$OnFrameAvailableListener;)V
 
     .line 24
     .line 25
     .line 26
-    iget-object v0, v0, Lm/c;->d:Lm/c;
+    invoke-virtual {v2}, Landroid/graphics/SurfaceTexture;->release()V
 
     .line 27
     .line 28
-    goto :goto_0
-
     .line 29
-    :pswitch_0
-    iget-object v0, v0, Lm/c;->f:Lm/c;
+    invoke-virtual {v3}, Landroid/view/Surface;->release()V
 
     .line 30
     .line 31
-    :goto_0
-    iput-object v0, p0, Lm/e;->b:Lm/c;
-
     .line 32
+    iget p1, v0, LM/f;->k:I
+
     .line 33
-    :cond_1
-    iget-object v0, p0, Lm/e;->c:Lm/c;
-
     .line 34
+    add-int/lit8 p1, p1, -0x1
+
     .line 35
-    if-ne v0, p1, :cond_4
-
     .line 36
+    iput p1, v0, LM/f;->k:I
+
     .line 37
-    iget-object p1, p0, Lm/e;->b:Lm/c;
-
     .line 38
-    .line 39
-    if-eq v0, p1, :cond_3
+    invoke-virtual {v0}, LM/f;->d()V
 
+    .line 39
     .line 40
     .line 41
-    if-nez p1, :cond_2
-
-    .line 42
-    .line 43
-    goto :goto_2
-
-    .line 44
-    :cond_2
-    move-object p1, p0
-
-    .line 45
-    check-cast p1, Lm/b;
-
-    .line 46
-    .line 47
-    iget p1, p1, Lm/b;->d:I
-
-    .line 48
-    .line 49
-    packed-switch p1, :pswitch_data_1
-
-    .line 50
-    .line 51
-    .line 52
-    iget-object p1, v0, Lm/c;->f:Lm/c;
-
-    .line 53
-    .line 54
-    :goto_1
-    move-object v1, p1
-
-    .line 55
-    goto :goto_2
-
-    .line 56
-    :pswitch_1
-    iget-object p1, v0, Lm/c;->d:Lm/c;
-
-    .line 57
-    .line 58
-    goto :goto_1
-
-    .line 59
-    :cond_3
-    :goto_2
-    iput-object v1, p0, Lm/e;->c:Lm/c;
-
-    .line 60
-    .line 61
-    :cond_4
     return-void
 
-    .line 62
-    nop
+    .line 42
+    :catchall_0
+    move-exception v0
 
-    .line 63
-    :pswitch_data_0
-    .packed-switch 0x0
-        :pswitch_0
-    .end packed-switch
+    .line 43
+    :try_start_1
+    monitor-exit p1
+    :try_end_1
+    .catchall {:try_start_1 .. :try_end_1} :catchall_0
 
-    .line 64
-    .line 65
-    .line 66
-    .line 67
-    .line 68
-    .line 69
-    :pswitch_data_1
-    .packed-switch 0x0
-        :pswitch_1
-    .end packed-switch
-.end method
-
-.method public final hasNext()Z
-    .locals 1
-
-    .line 1
-    iget-object v0, p0, Lm/e;->c:Lm/c;
-
-    if-eqz v0, :cond_0
-
-    const/4 v0, 0x1
-
-    goto :goto_0
-
-    :cond_0
-    const/4 v0, 0x0
-
-    :goto_0
-    return v0
-.end method
-
-.method public final next()Ljava/lang/Object;
-    .locals 2
-
-    .line 1
-    iget-object v0, p0, Lm/e;->c:Lm/c;
-
-    .line 2
-    .line 3
-    iget-object v1, p0, Lm/e;->b:Lm/c;
-
-    .line 4
-    .line 5
-    if-eq v0, v1, :cond_1
-
-    .line 6
-    .line 7
-    if-nez v1, :cond_0
-
-    .line 8
-    .line 9
-    goto :goto_0
-
-    .line 10
-    :cond_0
-    move-object v1, p0
-
-    .line 11
-    check-cast v1, Lm/b;
-
-    .line 12
-    .line 13
-    iget v1, v1, Lm/b;->d:I
-
-    .line 14
-    .line 15
-    packed-switch v1, :pswitch_data_0
-
-    .line 16
-    .line 17
-    .line 18
-    iget-object v1, v0, Lm/c;->f:Lm/c;
-
-    .line 19
-    .line 20
-    goto :goto_1
-
-    .line 21
-    :pswitch_0
-    iget-object v1, v0, Lm/c;->d:Lm/c;
-
-    .line 22
-    .line 23
-    goto :goto_1
-
-    .line 24
-    :cond_1
-    :goto_0
-    const/4 v1, 0x0
-
-    .line 25
-    :goto_1
-    iput-object v1, p0, Lm/e;->c:Lm/c;
-
-    .line 26
-    .line 27
-    return-object v0
-
-    .line 28
-    nop
-
-    .line 29
-    :pswitch_data_0
-    .packed-switch 0x0
-        :pswitch_0
-    .end packed-switch
+    .line 44
+    throw v0
 .end method

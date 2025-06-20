@@ -93,7 +93,7 @@
     move-result-object v0
 
     .line 17
-    invoke-static {v0}, Le3/b;->D(Landroid/graphics/drawable/Drawable;)Landroid/graphics/drawable/Drawable;
+    invoke-static {v0}, Lcom/facebook/appevents/cloudbridge/c;->w(Landroid/graphics/drawable/Drawable;)Landroid/graphics/drawable/Drawable;
 
     .line 18
     .line 19
@@ -486,25 +486,40 @@
 
 .method public getTickMark()Landroid/graphics/drawable/Drawable;
     .locals 1
+    .annotation build Landroidx/annotation/Nullable;
+    .end annotation
 
+    .line 1
     iget-object v0, p0, Landroidx/appcompat/widget/AppCompatSeekBarHelper;->mTickMark:Landroid/graphics/drawable/Drawable;
 
+    .line 2
+    .line 3
     return-object v0
 .end method
 
 .method public getTickMarkTintList()Landroid/content/res/ColorStateList;
     .locals 1
+    .annotation build Landroidx/annotation/Nullable;
+    .end annotation
 
+    .line 1
     iget-object v0, p0, Landroidx/appcompat/widget/AppCompatSeekBarHelper;->mTickMarkTintList:Landroid/content/res/ColorStateList;
 
+    .line 2
+    .line 3
     return-object v0
 .end method
 
 .method public getTickMarkTintMode()Landroid/graphics/PorterDuff$Mode;
     .locals 1
+    .annotation build Landroidx/annotation/Nullable;
+    .end annotation
 
+    .line 1
     iget-object v0, p0, Landroidx/appcompat/widget/AppCompatSeekBarHelper;->mTickMarkTintMode:Landroid/graphics/PorterDuff$Mode;
 
+    .line 2
+    .line 3
     return-object v0
 .end method
 
@@ -550,7 +565,7 @@
     move-result-object v0
 
     .line 10
-    sget-object v1, Lg/j;->AppCompatSeekBar:[I
+    sget-object v1, Li/j;->AppCompatSeekBar:[I
 
     .line 11
     .line 12
@@ -577,7 +592,7 @@
     move-result-object v2
 
     .line 23
-    sget-object v3, Lg/j;->AppCompatSeekBar:[I
+    sget-object v3, Li/j;->AppCompatSeekBar:[I
 
     .line 24
     .line 25
@@ -595,12 +610,12 @@
     move v6, p2
 
     .line 31
-    invoke-static/range {v1 .. v6}, Landroidx/core/view/y0;->r(Landroid/view/View;Landroid/content/Context;[ILandroid/util/AttributeSet;Landroid/content/res/TypedArray;I)V
+    invoke-static/range {v1 .. v6}, Landroidx/core/view/e0;->r(Landroid/view/View;Landroid/content/Context;[ILandroid/util/AttributeSet;Landroid/content/res/TypedArray;I)V
 
     .line 32
     .line 33
     .line 34
-    sget p1, Lg/j;->AppCompatSeekBar_android_thumb:I
+    sget p1, Li/j;->AppCompatSeekBar_android_thumb:I
 
     .line 35
     .line 36
@@ -626,7 +641,7 @@
     .line 46
     .line 47
     :cond_0
-    sget p1, Lg/j;->AppCompatSeekBar_tickMark:I
+    sget p1, Li/j;->AppCompatSeekBar_tickMark:I
 
     .line 48
     .line 49
@@ -643,7 +658,7 @@
     .line 54
     .line 55
     .line 56
-    sget p1, Lg/j;->AppCompatSeekBar_tickMarkTintMode:I
+    sget p1, Li/j;->AppCompatSeekBar_tickMarkTintMode:I
 
     .line 57
     .line 58
@@ -662,7 +677,7 @@
 
     .line 64
     .line 65
-    sget p1, Lg/j;->AppCompatSeekBar_tickMarkTintMode:I
+    sget p1, Li/j;->AppCompatSeekBar_tickMarkTintMode:I
 
     .line 66
     .line 67
@@ -698,7 +713,7 @@
     .line 81
     .line 82
     :cond_1
-    sget p1, Lg/j;->AppCompatSeekBar_tickMarkTint:I
+    sget p1, Li/j;->AppCompatSeekBar_tickMarkTint:I
 
     .line 83
     .line 84
@@ -714,7 +729,7 @@
 
     .line 89
     .line 90
-    sget p1, Lg/j;->AppCompatSeekBar_tickMarkTint:I
+    sget p1, Li/j;->AppCompatSeekBar_tickMarkTint:I
 
     .line 91
     .line 92
@@ -750,6 +765,10 @@
 
 .method public setTickMark(Landroid/graphics/drawable/Drawable;)V
     .locals 2
+    .param p1    # Landroid/graphics/drawable/Drawable;
+        .annotation build Landroidx/annotation/Nullable;
+        .end annotation
+    .end param
 
     .line 1
     iget-object v0, p0, Landroidx/appcompat/widget/AppCompatSeekBarHelper;->mTickMark:Landroid/graphics/drawable/Drawable;
@@ -798,7 +817,7 @@
     move-result v0
 
     .line 24
-    invoke-static {p1, v0}, Le3/b;->v(Landroid/graphics/drawable/Drawable;I)Z
+    invoke-static {p1, v0}, Lcom/facebook/appevents/cloudbridge/c;->q(Landroid/graphics/drawable/Drawable;I)Z
 
     .line 25
     .line 26
@@ -853,6 +872,10 @@
 
 .method public setTickMarkTintList(Landroid/content/res/ColorStateList;)V
     .locals 0
+    .param p1    # Landroid/content/res/ColorStateList;
+        .annotation build Landroidx/annotation/Nullable;
+        .end annotation
+    .end param
 
     .line 1
     iput-object p1, p0, Landroidx/appcompat/widget/AppCompatSeekBarHelper;->mTickMarkTintList:Landroid/content/res/ColorStateList;
@@ -876,6 +899,10 @@
 
 .method public setTickMarkTintMode(Landroid/graphics/PorterDuff$Mode;)V
     .locals 0
+    .param p1    # Landroid/graphics/PorterDuff$Mode;
+        .annotation build Landroidx/annotation/Nullable;
+        .end annotation
+    .end param
 
     .line 1
     iput-object p1, p0, Landroidx/appcompat/widget/AppCompatSeekBarHelper;->mTickMarkTintMode:Landroid/graphics/PorterDuff$Mode;

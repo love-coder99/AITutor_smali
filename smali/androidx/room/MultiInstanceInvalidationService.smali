@@ -17,10 +17,11 @@
     }
     k = 0x1
     mv = {
-        0x1,
-        0x8,
+        0x2,
+        0x0,
         0x0
     }
+    xi = 0x30
 .end annotation
 
 
@@ -29,9 +30,9 @@
 
 .field public final c:Ljava/util/LinkedHashMap;
 
-.field public final d:Landroidx/room/t;
+.field public final d:Landroidx/room/p;
 
-.field public final f:Landroidx/room/s;
+.field public final f:Landroidx/room/o;
 
 
 # direct methods
@@ -57,29 +58,29 @@
 
     .line 10
     .line 11
-    new-instance v0, Landroidx/room/t;
+    new-instance v0, Landroidx/room/p;
 
     .line 12
     .line 13
-    invoke-direct {v0, p0}, Landroidx/room/t;-><init>(Landroidx/room/MultiInstanceInvalidationService;)V
+    invoke-direct {v0, p0}, Landroidx/room/p;-><init>(Landroidx/room/MultiInstanceInvalidationService;)V
 
     .line 14
     .line 15
     .line 16
-    iput-object v0, p0, Landroidx/room/MultiInstanceInvalidationService;->d:Landroidx/room/t;
+    iput-object v0, p0, Landroidx/room/MultiInstanceInvalidationService;->d:Landroidx/room/p;
 
     .line 17
     .line 18
-    new-instance v0, Landroidx/room/s;
+    new-instance v0, Landroidx/room/o;
 
     .line 19
     .line 20
-    invoke-direct {v0, p0}, Landroidx/room/s;-><init>(Landroidx/room/MultiInstanceInvalidationService;)V
+    invoke-direct {v0, p0}, Landroidx/room/o;-><init>(Landroidx/room/MultiInstanceInvalidationService;)V
 
     .line 21
     .line 22
     .line 23
-    iput-object v0, p0, Landroidx/room/MultiInstanceInvalidationService;->f:Landroidx/room/s;
+    iput-object v0, p0, Landroidx/room/MultiInstanceInvalidationService;->f:Landroidx/room/o;
 
     .line 24
     .line 25
@@ -91,7 +92,10 @@
 .method public final onBind(Landroid/content/Intent;)Landroid/os/IBinder;
     .locals 0
 
-    iget-object p1, p0, Landroidx/room/MultiInstanceInvalidationService;->f:Landroidx/room/s;
+    .line 1
+    iget-object p1, p0, Landroidx/room/MultiInstanceInvalidationService;->f:Landroidx/room/o;
 
+    .line 2
+    .line 3
     return-object p1
 .end method

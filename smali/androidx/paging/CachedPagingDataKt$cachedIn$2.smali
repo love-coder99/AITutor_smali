@@ -3,28 +3,38 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lzh/f;
+.implements Lka/f;
 
 
 # annotations
+.annotation runtime Lca/c;
+    c = "androidx.paging.CachedPagingDataKt$cachedIn$2"
+    f = "CachedPagingData.kt"
+    l = {
+        0x68
+    }
+    m = "invokeSuspend"
+.end annotation
+
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "Lkotlin/coroutines/jvm/internal/SuspendLambda;",
-        "Lzh/f;"
+        "Lka/f;"
     }
 .end annotation
 
 .annotation runtime Lkotlin/Metadata;
     d1 = {
-        "\u0000\u000e\n\u0002\u0010\u0000\n\u0000\n\u0002\u0018\u0002\n\u0002\u0008\u0003\u0010\u0005\u001a\u0008\u0012\u0004\u0012\u00028\u00000\u0002\"\u0008\u0008\u0000\u0010\u0001*\u00020\u00002\u000c\u0010\u0003\u001a\u0008\u0012\u0004\u0012\u00028\u00000\u00022\u000c\u0010\u0004\u001a\u0008\u0012\u0004\u0012\u00028\u00000\u0002H\u008a@"
+        "\u0000\u000e\n\u0002\u0010\u0000\n\u0000\n\u0002\u0018\u0002\n\u0002\u0008\u0004\u0010\u0005\u001a\u0008\u0012\u0004\u0012\u00028\u00000\u0002\"\u0008\u0008\u0000\u0010\u0001*\u00020\u00002\u000c\u0010\u0003\u001a\u0008\u0012\u0004\u0012\u00028\u00000\u00022\u000c\u0010\u0004\u001a\u0008\u0012\u0004\u0012\u00028\u00000\u0002H\u008a@\u00a2\u0006\u0004\u0008\u0005\u0010\u0006"
     }
     d2 = {
         "",
         "T",
-        "Landroidx/paging/d0;",
+        "Landroidx/paging/B;",
         "prev",
         "next",
-        "<anonymous>"
+        "<anonymous>",
+        "(Landroidx/paging/B;Landroidx/paging/B;)Landroidx/paging/B;"
     }
     k = 0x3
     mv = {
@@ -32,15 +42,6 @@
         0x8,
         0x0
     }
-.end annotation
-
-.annotation runtime Lth/c;
-    c = "androidx.paging.CachedPagingDataKt$cachedIn$2"
-    f = "CachedPagingData.kt"
-    l = {
-        0x68
-    }
-    m = "invokeSuspend"
 .end annotation
 
 
@@ -74,16 +75,16 @@
 
 
 # virtual methods
-.method public final invoke(Landroidx/paging/d0;Landroidx/paging/d0;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
+.method public final invoke(Landroidx/paging/B;Landroidx/paging/B;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
     .locals 1
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
-            "Landroidx/paging/d0;",
-            "Landroidx/paging/d0;",
+            "Landroidx/paging/B;",
+            "Landroidx/paging/B;",
             "Lkotlin/coroutines/Continuation<",
             "-",
-            "Landroidx/paging/d0;",
+            "Landroidx/paging/B;",
             ">;)",
             "Ljava/lang/Object;"
         }
@@ -98,7 +99,7 @@
 
     iput-object p2, v0, Landroidx/paging/CachedPagingDataKt$cachedIn$2;->L$1:Ljava/lang/Object;
 
-    sget-object p1, Lqh/r;->a:Lqh/r;
+    sget-object p1, LX9/j;->a:LX9/j;
 
     invoke-virtual {v0, p1}, Landroidx/paging/CachedPagingDataKt$cachedIn$2;->invokeSuspend(Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -111,13 +112,13 @@
     .locals 0
 
     .line 2
-    check-cast p1, Landroidx/paging/d0;
+    check-cast p1, Landroidx/paging/B;
 
-    check-cast p2, Landroidx/paging/d0;
+    check-cast p2, Landroidx/paging/B;
 
     check-cast p3, Lkotlin/coroutines/Continuation;
 
-    invoke-virtual {p0, p1, p2, p3}, Landroidx/paging/CachedPagingDataKt$cachedIn$2;->invoke(Landroidx/paging/d0;Landroidx/paging/d0;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
+    invoke-virtual {p0, p1, p2, p3}, Landroidx/paging/CachedPagingDataKt$cachedIn$2;->invoke(Landroidx/paging/B;Landroidx/paging/B;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
 
     move-result-object p1
 
@@ -151,7 +152,7 @@
 
     .line 11
     .line 12
-    check-cast v0, Landroidx/paging/d0;
+    check-cast v0, Landroidx/paging/B;
 
     .line 13
     .line 14
@@ -190,7 +191,7 @@
 
     .line 30
     .line 31
-    check-cast p1, Landroidx/paging/d0;
+    check-cast p1, Landroidx/paging/B;
 
     .line 32
     .line 33
@@ -198,7 +199,7 @@
 
     .line 34
     .line 35
-    check-cast v1, Landroidx/paging/d0;
+    check-cast v1, Landroidx/paging/B;
 
     .line 36
     .line 37
@@ -210,23 +211,23 @@
 
     .line 40
     .line 41
-    iget-object p1, p1, Landroidx/paging/d0;->b:Landroidx/paging/d;
+    iget-object p1, p1, Landroidx/paging/B;->b:Landroidx/paging/d;
 
     .line 42
     .line 43
-    iget-object p1, p1, Landroidx/paging/d;->d:Lkotlinx/coroutines/q1;
+    iget-object p1, p1, Landroidx/paging/d;->d:Lkotlinx/coroutines/r0;
 
     .line 44
     .line 45
     const/4 v2, 0x0
 
     .line 46
-    invoke-virtual {p1, v2}, Lkotlinx/coroutines/h1;->a(Ljava/util/concurrent/CancellationException;)V
+    invoke-virtual {p1, v2}, Lkotlinx/coroutines/i0;->b(Ljava/util/concurrent/CancellationException;)V
 
     .line 47
     .line 48
     .line 49
-    sget-object p1, Lqh/r;->a:Lqh/r;
+    sget-object p1, LX9/j;->a:LX9/j;
 
     .line 50
     .line 51

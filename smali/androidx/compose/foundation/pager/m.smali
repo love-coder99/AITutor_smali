@@ -2,27 +2,28 @@
 .super Ljava/lang/Object;
 .source "SourceFile"
 
-# interfaces
-.implements Landroidx/compose/foundation/lazy/layout/g;
 
-
-# instance fields
-.field public final synthetic a:Landroidx/compose/foundation/pager/u;
+# static fields
+.field public static final a:Landroidx/compose/foundation/pager/m;
 
 
 # direct methods
-.method public constructor <init>(Landroidx/compose/foundation/pager/u;)V
-    .locals 0
+.method static constructor <clinit>()V
+    .locals 1
 
     .line 1
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    new-instance v0, Landroidx/compose/foundation/pager/m;
 
     .line 2
     .line 3
-    .line 4
-    iput-object p1, p0, Landroidx/compose/foundation/pager/m;->a:Landroidx/compose/foundation/pager/u;
+    invoke-direct {v0}, Ljava/lang/Object;-><init>()V
 
+    .line 4
     .line 5
     .line 6
+    sput-object v0, Landroidx/compose/foundation/pager/m;->a:Landroidx/compose/foundation/pager/m;
+
+    .line 7
+    .line 8
     return-void
 .end method

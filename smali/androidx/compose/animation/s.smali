@@ -1,51 +1,40 @@
-.class public final Landroidx/compose/animation/s;
+.class public final synthetic Landroidx/compose/animation/s;
 .super Ljava/lang/Object;
 .source "SourceFile"
 
 
 # instance fields
-.field public final a:Landroidx/compose/animation/a0;
+.field public final synthetic a:Landroidx/compose/animation/core/U;
 
-.field public final b:Landroidx/compose/animation/c0;
+.field public final synthetic b:Landroidx/compose/animation/core/U;
 
-.field public final c:Landroidx/compose/runtime/ParcelableSnapshotMutableFloatState;
+.field public final synthetic c:Landroidx/compose/animation/core/Z;
 
-.field public final d:Landroidx/compose/animation/n0;
+.field public final synthetic d:Landroidx/compose/animation/z;
+
+.field public final synthetic e:Landroidx/compose/animation/B;
+
+.field public final synthetic f:Landroidx/compose/animation/core/U;
 
 
 # direct methods
-.method public constructor <init>(Landroidx/compose/animation/a0;Landroidx/compose/animation/c0;FLandroidx/compose/animation/n0;)V
+.method public synthetic constructor <init>(Landroidx/compose/animation/core/U;Landroidx/compose/animation/core/U;Landroidx/compose/animation/core/Z;Landroidx/compose/animation/z;Landroidx/compose/animation/B;Landroidx/compose/animation/core/U;)V
     .locals 0
 
     .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 2
-    .line 3
-    .line 4
-    iput-object p1, p0, Landroidx/compose/animation/s;->a:Landroidx/compose/animation/a0;
+    iput-object p1, p0, Landroidx/compose/animation/s;->a:Landroidx/compose/animation/core/U;
 
-    .line 5
-    .line 6
-    iput-object p2, p0, Landroidx/compose/animation/s;->b:Landroidx/compose/animation/c0;
+    iput-object p2, p0, Landroidx/compose/animation/s;->b:Landroidx/compose/animation/core/U;
 
-    .line 7
-    .line 8
-    invoke-static {p3}, Laf/g0;->C(F)Landroidx/compose/runtime/ParcelableSnapshotMutableFloatState;
+    iput-object p3, p0, Landroidx/compose/animation/s;->c:Landroidx/compose/animation/core/Z;
 
-    .line 9
-    .line 10
-    .line 11
-    move-result-object p1
+    iput-object p4, p0, Landroidx/compose/animation/s;->d:Landroidx/compose/animation/z;
 
-    .line 12
-    iput-object p1, p0, Landroidx/compose/animation/s;->c:Landroidx/compose/runtime/ParcelableSnapshotMutableFloatState;
+    iput-object p5, p0, Landroidx/compose/animation/s;->e:Landroidx/compose/animation/B;
 
-    .line 13
-    .line 14
-    iput-object p4, p0, Landroidx/compose/animation/s;->d:Landroidx/compose/animation/n0;
+    iput-object p6, p0, Landroidx/compose/animation/s;->f:Landroidx/compose/animation/core/U;
 
-    .line 15
-    .line 16
     return-void
 .end method

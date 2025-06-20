@@ -62,9 +62,9 @@
 
     check-cast v0, Ljava/util/Map$Entry;
 
+    .line 4
     iget-object v1, p0, Lcom/applovin/impl/f$e;->h:Lcom/applovin/impl/f;
 
-    .line 4
     invoke-virtual {v1}, Lcom/applovin/impl/f;->g()Ljava/util/Collection;
 
     move-result-object v1

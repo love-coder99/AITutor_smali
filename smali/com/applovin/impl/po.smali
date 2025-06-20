@@ -45,14 +45,14 @@
 
     .line 10
     .line 11
-    new-instance v0, Lcom/applovin/impl/vu;
+    new-instance v0, Lcom/applovin/impl/M1;
 
     .line 12
     .line 13
-    const/4 v1, 0x5
+    const/4 v1, 0x6
 
     .line 14
-    invoke-direct {v0, v1}, Lcom/applovin/impl/vu;-><init>(I)V
+    invoke-direct {v0, v1}, Lcom/applovin/impl/M1;-><init>(I)V
 
     .line 15
     .line 16
@@ -90,11 +90,12 @@
 .method private static synthetic a(Landroid/os/Bundle;)Lcom/applovin/impl/po;
     .locals 3
 
+    .line 5
     sget-object v0, Lcom/applovin/impl/oo;->d:Lcom/applovin/impl/o2$a;
 
     const/4 v1, 0x0
 
-    .line 4
+    .line 6
     invoke-static {v1}, Lcom/applovin/impl/po;->b(I)Ljava/lang/String;
 
     move-result-object v2
@@ -103,17 +104,17 @@
 
     move-result-object p0
 
-    .line 5
+    .line 7
     invoke-static {}, Lcom/applovin/impl/db;->h()Lcom/applovin/impl/db;
 
     move-result-object v2
 
-    .line 6
+    .line 8
     invoke-static {v0, p0, v2}, Lcom/applovin/impl/p2;->a(Lcom/applovin/impl/o2$a;Ljava/util/List;Ljava/util/List;)Ljava/util/List;
 
     move-result-object p0
 
-    .line 7
+    .line 9
     new-instance v0, Lcom/applovin/impl/po;
 
     new-array v1, v1, [Lcom/applovin/impl/oo;
@@ -160,14 +161,15 @@
 
     const/4 v0, 0x0
 
+    .line 2
     :goto_0
     iget v1, p0, Lcom/applovin/impl/po;->a:I
 
     if-ge v0, v1, :cond_1
 
+    .line 3
     iget-object v1, p0, Lcom/applovin/impl/po;->b:[Lcom/applovin/impl/oo;
 
-    .line 3
     aget-object v1, v1, v0
 
     if-ne v1, p1, :cond_0
@@ -188,9 +190,9 @@
 .method public a(I)Lcom/applovin/impl/oo;
     .locals 1
 
+    .line 1
     iget-object v0, p0, Lcom/applovin/impl/po;->b:[Lcom/applovin/impl/oo;
 
-    .line 2
     aget-object p1, v0, p1
 
     return-object p1
@@ -199,7 +201,7 @@
 .method public a()Z
     .locals 1
 
-    .line 1
+    .line 4
     iget v0, p0, Lcom/applovin/impl/po;->a:I
 
     if-nez v0, :cond_0

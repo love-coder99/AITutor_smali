@@ -27,135 +27,127 @@
     .locals 6
 
     .line 1
-    const-class v0, Landroid/widget/AutoCompleteTextView;
+    const/4 v0, 0x1
 
     .line 2
+    const-class v1, Landroid/widget/AutoCompleteTextView;
+
     .line 3
+    .line 4
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 4
     .line 5
     .line 6
-    const/4 v1, 0x0
-
     .line 7
-    iput-object v1, p0, Landroidx/appcompat/widget/SearchView$PreQAutoCompleteTextViewReflector;->mDoBeforeTextChanged:Ljava/lang/reflect/Method;
+    const/4 v2, 0x0
 
     .line 8
+    iput-object v2, p0, Landroidx/appcompat/widget/SearchView$PreQAutoCompleteTextViewReflector;->mDoBeforeTextChanged:Ljava/lang/reflect/Method;
+
     .line 9
-    iput-object v1, p0, Landroidx/appcompat/widget/SearchView$PreQAutoCompleteTextViewReflector;->mDoAfterTextChanged:Ljava/lang/reflect/Method;
-
     .line 10
-    .line 11
-    iput-object v1, p0, Landroidx/appcompat/widget/SearchView$PreQAutoCompleteTextViewReflector;->mEnsureImeVisible:Ljava/lang/reflect/Method;
+    iput-object v2, p0, Landroidx/appcompat/widget/SearchView$PreQAutoCompleteTextViewReflector;->mDoAfterTextChanged:Ljava/lang/reflect/Method;
 
+    .line 11
     .line 12
+    iput-object v2, p0, Landroidx/appcompat/widget/SearchView$PreQAutoCompleteTextViewReflector;->mEnsureImeVisible:Ljava/lang/reflect/Method;
+
     .line 13
+    .line 14
     invoke-static {}, Landroidx/appcompat/widget/SearchView$PreQAutoCompleteTextViewReflector;->preApi29Check()V
 
-    .line 14
     .line 15
     .line 16
-    const/4 v1, 0x0
-
     .line 17
-    const/4 v2, 0x1
-
-    .line 18
     :try_start_0
     const-string v3, "doBeforeTextChanged"
 
+    .line 18
     .line 19
-    .line 20
-    new-array v4, v1, [Ljava/lang/Class;
+    invoke-virtual {v1, v3, v2}, Ljava/lang/Class;->getDeclaredMethod(Ljava/lang/String;[Ljava/lang/Class;)Ljava/lang/reflect/Method;
 
+    .line 20
     .line 21
     .line 22
-    invoke-virtual {v0, v3, v4}, Ljava/lang/Class;->getDeclaredMethod(Ljava/lang/String;[Ljava/lang/Class;)Ljava/lang/reflect/Method;
-
-    .line 23
-    .line 24
-    .line 25
     move-result-object v3
 
-    .line 26
+    .line 23
     iput-object v3, p0, Landroidx/appcompat/widget/SearchView$PreQAutoCompleteTextViewReflector;->mDoBeforeTextChanged:Ljava/lang/reflect/Method;
 
-    .line 27
-    .line 28
-    invoke-virtual {v3, v2}, Ljava/lang/reflect/AccessibleObject;->setAccessible(Z)V
+    .line 24
+    .line 25
+    invoke-virtual {v3, v0}, Ljava/lang/reflect/AccessibleObject;->setAccessible(Z)V
     :try_end_0
     .catch Ljava/lang/NoSuchMethodException; {:try_start_0 .. :try_end_0} :catch_0
 
-    .line 29
-    .line 30
-    .line 31
+    .line 26
+    .line 27
+    .line 28
     :catch_0
     :try_start_1
     const-string v3, "doAfterTextChanged"
 
+    .line 29
+    .line 30
+    invoke-virtual {v1, v3, v2}, Ljava/lang/Class;->getDeclaredMethod(Ljava/lang/String;[Ljava/lang/Class;)Ljava/lang/reflect/Method;
+
+    .line 31
     .line 32
     .line 33
-    new-array v4, v1, [Ljava/lang/Class;
+    move-result-object v2
 
     .line 34
+    iput-object v2, p0, Landroidx/appcompat/widget/SearchView$PreQAutoCompleteTextViewReflector;->mDoAfterTextChanged:Ljava/lang/reflect/Method;
+
     .line 35
-    invoke-virtual {v0, v3, v4}, Ljava/lang/Class;->getDeclaredMethod(Ljava/lang/String;[Ljava/lang/Class;)Ljava/lang/reflect/Method;
-
     .line 36
-    .line 37
-    .line 38
-    move-result-object v3
-
-    .line 39
-    iput-object v3, p0, Landroidx/appcompat/widget/SearchView$PreQAutoCompleteTextViewReflector;->mDoAfterTextChanged:Ljava/lang/reflect/Method;
-
-    .line 40
-    .line 41
-    invoke-virtual {v3, v2}, Ljava/lang/reflect/AccessibleObject;->setAccessible(Z)V
+    invoke-virtual {v2, v0}, Ljava/lang/reflect/AccessibleObject;->setAccessible(Z)V
     :try_end_1
     .catch Ljava/lang/NoSuchMethodException; {:try_start_1 .. :try_end_1} :catch_1
 
-    .line 42
-    .line 43
-    .line 44
+    .line 37
+    .line 38
+    .line 39
     :catch_1
     :try_start_2
-    const-string v3, "ensureImeVisible"
+    const-string v2, "ensureImeVisible"
 
+    .line 40
+    .line 41
+    new-array v3, v0, [Ljava/lang/Class;
+
+    .line 42
+    .line 43
+    sget-object v4, Ljava/lang/Boolean;->TYPE:Ljava/lang/Class;
+
+    .line 44
     .line 45
+    const/4 v5, 0x0
+
     .line 46
-    new-array v4, v2, [Ljava/lang/Class;
+    aput-object v4, v3, v5
 
     .line 47
     .line 48
-    sget-object v5, Ljava/lang/Boolean;->TYPE:Ljava/lang/Class;
+    invoke-virtual {v1, v2, v3}, Ljava/lang/Class;->getMethod(Ljava/lang/String;[Ljava/lang/Class;)Ljava/lang/reflect/Method;
 
     .line 49
     .line 50
-    aput-object v5, v4, v1
-
     .line 51
+    move-result-object v1
+
     .line 52
-    invoke-virtual {v0, v3, v4}, Ljava/lang/Class;->getMethod(Ljava/lang/String;[Ljava/lang/Class;)Ljava/lang/reflect/Method;
+    iput-object v1, p0, Landroidx/appcompat/widget/SearchView$PreQAutoCompleteTextViewReflector;->mEnsureImeVisible:Ljava/lang/reflect/Method;
 
     .line 53
     .line 54
-    .line 55
-    move-result-object v0
-
-    .line 56
-    iput-object v0, p0, Landroidx/appcompat/widget/SearchView$PreQAutoCompleteTextViewReflector;->mEnsureImeVisible:Ljava/lang/reflect/Method;
-
-    .line 57
-    .line 58
-    invoke-virtual {v0, v2}, Ljava/lang/reflect/AccessibleObject;->setAccessible(Z)V
+    invoke-virtual {v1, v0}, Ljava/lang/reflect/AccessibleObject;->setAccessible(Z)V
     :try_end_2
     .catch Ljava/lang/NoSuchMethodException; {:try_start_2 .. :try_end_2} :catch_2
 
-    .line 59
-    .line 60
-    .line 61
+    .line 55
+    .line 56
+    .line 57
     :catch_2
     return-void
 .end method
@@ -219,17 +211,13 @@
 
     .line 9
     :try_start_0
-    new-array v1, v1, [Ljava/lang/Object;
-
-    .line 10
-    .line 11
     invoke-virtual {v0, p1, v1}, Ljava/lang/reflect/Method;->invoke(Ljava/lang/Object;[Ljava/lang/Object;)Ljava/lang/Object;
     :try_end_0
     .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
 
+    .line 10
+    .line 11
     .line 12
-    .line 13
-    .line 14
     :catch_0
     :cond_0
     return-void
@@ -256,17 +244,13 @@
 
     .line 9
     :try_start_0
-    new-array v1, v1, [Ljava/lang/Object;
-
-    .line 10
-    .line 11
     invoke-virtual {v0, p1, v1}, Ljava/lang/reflect/Method;->invoke(Ljava/lang/Object;[Ljava/lang/Object;)Ljava/lang/Object;
     :try_end_0
     .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
 
+    .line 10
+    .line 11
     .line 12
-    .line 13
-    .line 14
     :catch_0
     :cond_0
     return-void

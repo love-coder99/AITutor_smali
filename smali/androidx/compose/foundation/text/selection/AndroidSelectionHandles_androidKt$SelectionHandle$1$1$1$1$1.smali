@@ -3,12 +3,12 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lzh/a;
+.implements Lka/a;
 
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Landroidx/compose/foundation/text/selection/AndroidSelectionHandles_androidKt$SelectionHandle$1$1;->invoke(Landroidx/compose/runtime/l;I)V
+    value = Landroidx/compose/foundation/text/selection/AndroidSelectionHandles_androidKt$SelectionHandle$1$1;->invoke(Landroidx/compose/runtime/j;I)V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -19,7 +19,7 @@
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "Lkotlin/jvm/internal/Lambda;",
-        "Lzh/a;"
+        "Lka/a;"
     }
 .end annotation
 
@@ -65,14 +65,14 @@
 .method public final invoke()Ljava/lang/Boolean;
     .locals 2
 
+    .line 1
     iget-object v0, p0, Landroidx/compose/foundation/text/selection/AndroidSelectionHandles_androidKt$SelectionHandle$1$1$1$1$1;->$offsetProvider:Landroidx/compose/foundation/text/selection/f;
 
-    .line 1
     invoke-interface {v0}, Landroidx/compose/foundation/text/selection/f;->a()J
 
     move-result-wide v0
 
-    invoke-static {v0, v1}, La0/r;->v(J)Z
+    invoke-static {v0, v1}, Lcom/bumptech/glide/c;->s(J)Z
 
     move-result v0
 

@@ -1,82 +1,66 @@
-.class public interface abstract Lcom/applovin/impl/p1;
+.class public final synthetic Lcom/applovin/impl/P1;
 .super Ljava/lang/Object;
 .source "SourceFile"
 
-
-# annotations
-.annotation system Ldalvik/annotation/MemberClasses;
-    value = {
-        Lcom/applovin/impl/p1$b;,
-        Lcom/applovin/impl/p1$a;
-    }
-.end annotation
+# interfaces
+.implements Ljava/lang/Runnable;
 
 
-# static fields
-.field public static final a:Ljava/nio/ByteBuffer;
+# instance fields
+.field public final synthetic b:I
+
+.field public final synthetic c:Lcom/applovin/impl/sdk/j;
 
 
 # direct methods
-.method static constructor <clinit>()V
-    .locals 2
+.method public synthetic constructor <init>(ILcom/applovin/impl/sdk/j;)V
+    .locals 0
 
     .line 1
-    const/4 v0, 0x0
+    iput p1, p0, Lcom/applovin/impl/P1;->b:I
 
-    .line 2
-    invoke-static {v0}, Ljava/nio/ByteBuffer;->allocateDirect(I)Ljava/nio/ByteBuffer;
+    iput-object p2, p0, Lcom/applovin/impl/P1;->c:Lcom/applovin/impl/sdk/j;
 
-    .line 3
-    .line 4
-    .line 5
-    move-result-object v0
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 6
-    invoke-static {}, Ljava/nio/ByteOrder;->nativeOrder()Ljava/nio/ByteOrder;
-
-    .line 7
-    .line 8
-    .line 9
-    move-result-object v1
-
-    .line 10
-    invoke-virtual {v0, v1}, Ljava/nio/ByteBuffer;->order(Ljava/nio/ByteOrder;)Ljava/nio/ByteBuffer;
-
-    .line 11
-    .line 12
-    .line 13
-    move-result-object v0
-
-    .line 14
-    sput-object v0, Lcom/applovin/impl/p1;->a:Ljava/nio/ByteBuffer;
-
-    .line 15
-    .line 16
     return-void
 .end method
 
 
 # virtual methods
-.method public abstract a(Lcom/applovin/impl/p1$a;)Lcom/applovin/impl/p1$a;
-.end method
+.method public final run()V
+    .locals 1
 
-.method public abstract a(Ljava/nio/ByteBuffer;)V
-.end method
+    .line 1
+    iget v0, p0, Lcom/applovin/impl/P1;->b:I
 
-.method public abstract b()V
-.end method
+    packed-switch v0, :pswitch_data_0
 
-.method public abstract c()Z
-.end method
+    iget-object v0, p0, Lcom/applovin/impl/P1;->c:Lcom/applovin/impl/sdk/j;
 
-.method public abstract d()Ljava/nio/ByteBuffer;
-.end method
+    invoke-static {v0}, Lcom/applovin/impl/sr;->h(Lcom/applovin/impl/sdk/j;)V
 
-.method public abstract e()V
-.end method
+    return-void
 
-.method public abstract f()Z
-.end method
+    :pswitch_0
+    iget-object v0, p0, Lcom/applovin/impl/P1;->c:Lcom/applovin/impl/sdk/j;
 
-.method public abstract reset()V
+    invoke-static {v0}, Lcom/applovin/impl/sr;->g(Lcom/applovin/impl/sdk/j;)V
+
+    return-void
+
+    :pswitch_1
+    iget-object v0, p0, Lcom/applovin/impl/P1;->c:Lcom/applovin/impl/sdk/j;
+
+    invoke-static {v0}, Lcom/applovin/impl/ob;->c(Lcom/applovin/impl/sdk/j;)V
+
+    return-void
+
+    nop
+
+    :pswitch_data_0
+    .packed-switch 0x0
+        :pswitch_1
+        :pswitch_0
+    .end packed-switch
 .end method

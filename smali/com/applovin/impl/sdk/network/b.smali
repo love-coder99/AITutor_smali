@@ -207,7 +207,7 @@
 
     .line 92
     .line 93
-    const/4 v0, 0x0
+    const/4 v0, 0x1
 
     .line 94
     invoke-direct {p1, p0, v0}, Lcom/applovin/impl/sdk/network/f;-><init>(Lcom/applovin/impl/sdk/network/b;I)V
@@ -215,79 +215,76 @@
     .line 95
     .line 96
     .line 97
-    const/4 v0, 0x1
-
-    .line 98
     invoke-direct {p0, p1, v0, v0}, Lcom/applovin/impl/sdk/network/b;->a(Ljava/lang/Runnable;ZZ)V
 
+    .line 98
     .line 99
     .line 100
-    .line 101
     goto :goto_0
 
-    .line 102
+    .line 101
     :cond_0
     invoke-virtual {v2, v1}, Lcom/applovin/impl/sdk/network/c;->a(I)Ljava/util/List;
 
+    .line 102
     .line 103
     .line 104
-    .line 105
     move-result-object p1
 
-    .line 106
+    .line 105
     invoke-virtual {v0, p1}, Ljava/util/ArrayList;->addAll(Ljava/util/Collection;)Z
 
+    .line 106
     .line 107
     .line 108
-    .line 109
     :goto_0
     new-instance p1, Landroid/content/IntentFilter;
 
+    .line 109
     .line 110
-    .line 111
     const-string v0, "com.applovin.application_paused"
 
+    .line 111
     .line 112
-    .line 113
     invoke-direct {p1, v0}, Landroid/content/IntentFilter;-><init>(Ljava/lang/String;)V
 
+    .line 113
     .line 114
     .line 115
-    .line 116
     invoke-static {p0, p1}, Lcom/applovin/impl/sdk/AppLovinBroadcastManager;->registerReceiver(Lcom/applovin/impl/sdk/AppLovinBroadcastManager$Receiver;Landroid/content/IntentFilter;)V
 
+    .line 116
     .line 117
     .line 118
-    .line 119
     goto :goto_1
 
-    .line 120
+    .line 119
     :cond_1
     const/4 p1, 0x0
 
-    .line 121
+    .line 120
     iput-object p1, p0, Lcom/applovin/impl/sdk/network/b;->d:Lcom/applovin/impl/sdk/network/c;
 
+    .line 121
     .line 122
-    .line 123
     :goto_1
     return-void
 
-    .line 124
+    .line 123
     :cond_2
     new-instance p1, Ljava/lang/IllegalArgumentException;
 
+    .line 124
     .line 125
-    .line 126
     const-string v0, "No sdk specified"
 
+    .line 126
     .line 127
-    .line 128
     invoke-direct {p1, v0}, Ljava/lang/IllegalArgumentException;-><init>(Ljava/lang/String;)V
 
+    .line 128
     .line 129
     .line 130
-    .line 131
     throw p1
 .end method
 
@@ -312,20 +309,20 @@
 .method private a(Lcom/applovin/impl/sdk/network/d;)V
     .locals 3
 
+    .line 52
     iget-object v0, p0, Lcom/applovin/impl/sdk/network/b;->f:Ljava/lang/Object;
 
-    .line 52
     monitor-enter v0
 
+    .line 53
     :try_start_0
     iget-object v1, p0, Lcom/applovin/impl/sdk/network/b;->h:Ljava/util/Set;
 
-    .line 53
     invoke-interface {v1, p1}, Ljava/util/Set;->remove(Ljava/lang/Object;)Z
 
+    .line 54
     iget-object v1, p0, Lcom/applovin/impl/sdk/network/b;->g:Ljava/util/List;
 
-    .line 54
     invoke-interface {v1, p1}, Ljava/util/List;->remove(Ljava/lang/Object;)Z
 
     .line 55
@@ -376,9 +373,9 @@
 .method private a(Lcom/applovin/impl/sdk/network/d;Lcom/applovin/sdk/AppLovinPostbackListener;)V
     .locals 4
 
+    .line 16
     const-string v0, "Skipping in progress postback: "
 
-    .line 16
     invoke-static {}, Lcom/applovin/impl/sdk/n;->a()Z
 
     move-result v1
@@ -403,10 +400,10 @@
 
     invoke-virtual {v1, v3, v2}, Lcom/applovin/impl/sdk/n;->a(Ljava/lang/String;Ljava/lang/String;)V
 
+    .line 17
     :cond_0
     iget-object v1, p0, Lcom/applovin/impl/sdk/network/b;->a:Lcom/applovin/impl/sdk/j;
 
-    .line 17
     invoke-virtual {v1}, Lcom/applovin/impl/sdk/j;->v0()Z
 
     move-result v1
@@ -467,16 +464,16 @@
     :cond_3
     return-void
 
+    .line 21
     :cond_4
     iget-object v1, p0, Lcom/applovin/impl/sdk/network/b;->f:Ljava/lang/Object;
 
-    .line 21
     monitor-enter v1
 
+    .line 22
     :try_start_0
     iget-object v2, p0, Lcom/applovin/impl/sdk/network/b;->h:Ljava/util/Set;
 
-    .line 22
     invoke-interface {v2, p1}, Ljava/util/Set;->contains(Ljava/lang/Object;)Z
 
     move-result v2
@@ -533,9 +530,9 @@
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
+    .line 27
     iget-object v0, p0, Lcom/applovin/impl/sdk/network/b;->a:Lcom/applovin/impl/sdk/j;
 
-    .line 27
     sget-object v1, Lcom/applovin/impl/sj;->L2:Lcom/applovin/impl/sj;
 
     invoke-virtual {v0, v1}, Lcom/applovin/impl/sdk/j;->a(Lcom/applovin/impl/sj;)Ljava/lang/Object;
@@ -592,16 +589,16 @@
 
     return-void
 
+    .line 31
     :cond_8
     iget-object v0, p0, Lcom/applovin/impl/sdk/network/b;->f:Ljava/lang/Object;
 
-    .line 31
     monitor-enter v0
 
+    .line 32
     :try_start_1
     iget-object v1, p0, Lcom/applovin/impl/sdk/network/b;->h:Ljava/util/Set;
 
-    .line 32
     invoke-interface {v1, p1}, Ljava/util/Set;->add(Ljava/lang/Object;)Z
 
     .line 33
@@ -629,10 +626,10 @@
     :cond_9
     const/4 v0, 0x0
 
+    .line 35
     :goto_1
     iget-object v1, p0, Lcom/applovin/impl/sdk/network/b;->a:Lcom/applovin/impl/sdk/j;
 
-    .line 35
     invoke-static {v1}, Lcom/applovin/impl/sdk/network/e;->b(Lcom/applovin/impl/sdk/j;)Lcom/applovin/impl/sdk/network/e$a;
 
     move-result-object v1
@@ -762,10 +759,10 @@
 
     invoke-virtual {v1, v3, v2}, Lcom/applovin/impl/sdk/n;->a(Ljava/lang/String;Ljava/lang/String;)V
 
+    .line 49
     :cond_a
     iget-object v1, p0, Lcom/applovin/impl/sdk/network/b;->a:Lcom/applovin/impl/sdk/j;
 
-    .line 49
     invoke-virtual {v1}, Lcom/applovin/impl/sdk/j;->X()Lcom/applovin/impl/sdk/network/PostbackServiceImpl;
 
     move-result-object v1
@@ -813,9 +810,9 @@
 
     invoke-direct {p2, v0, p3, v1, p1}, Lcom/applovin/impl/jn;-><init>(Lcom/applovin/impl/sdk/j;ZLjava/lang/String;Ljava/lang/Runnable;)V
 
+    .line 59
     iget-object p1, p0, Lcom/applovin/impl/sdk/network/b;->a:Lcom/applovin/impl/sdk/j;
 
-    .line 59
     invoke-virtual {p1}, Lcom/applovin/impl/sdk/j;->i0()Lcom/applovin/impl/tm;
 
     move-result-object p1
@@ -866,9 +863,9 @@
 .method private synthetic b(Lcom/applovin/impl/sdk/network/d;Lcom/applovin/sdk/AppLovinPostbackListener;)V
     .locals 1
 
+    .line 3
     iget-object v0, p0, Lcom/applovin/impl/sdk/network/b;->f:Ljava/lang/Object;
 
-    .line 3
     monitor-enter v0
 
     .line 4
@@ -906,15 +903,15 @@
 .method private c()V
     .locals 3
 
+    .line 9
     iget-object v0, p0, Lcom/applovin/impl/sdk/network/b;->f:Ljava/lang/Object;
 
-    .line 9
     monitor-enter v0
 
+    .line 10
     :try_start_0
     iget-object v1, p0, Lcom/applovin/impl/sdk/network/b;->i:Ljava/util/List;
 
-    .line 10
     invoke-interface {v1}, Ljava/util/List;->iterator()Ljava/util/Iterator;
 
     move-result-object v1
@@ -942,10 +939,10 @@
 
     goto :goto_1
 
+    .line 12
     :cond_0
     iget-object v1, p0, Lcom/applovin/impl/sdk/network/b;->i:Ljava/util/List;
 
-    .line 12
     invoke-interface {v1}, Ljava/util/List;->clear()V
 
     .line 13
@@ -965,16 +962,16 @@
 .method private c(Lcom/applovin/impl/sdk/network/d;)V
     .locals 3
 
+    .line 2
     iget-object v0, p0, Lcom/applovin/impl/sdk/network/b;->f:Ljava/lang/Object;
 
-    .line 2
     monitor-enter v0
 
+    .line 3
     :goto_0
     :try_start_0
     iget-object v1, p0, Lcom/applovin/impl/sdk/network/b;->g:Ljava/util/List;
 
-    .line 3
     invoke-interface {v1}, Ljava/util/List;->size()I
 
     move-result v1
@@ -983,11 +980,11 @@
 
     if-le v1, v2, :cond_0
 
+    .line 4
     iget-object v1, p0, Lcom/applovin/impl/sdk/network/b;->g:Ljava/util/List;
 
     const/4 v2, 0x0
 
-    .line 4
     invoke-interface {v1, v2}, Ljava/util/List;->remove(I)Ljava/lang/Object;
 
     goto :goto_0
@@ -997,10 +994,10 @@
 
     goto :goto_1
 
+    .line 5
     :cond_0
     iget-object v1, p0, Lcom/applovin/impl/sdk/network/b;->g:Ljava/util/List;
 
-    .line 5
     invoke-interface {v1, p1}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
     .line 6
@@ -1058,20 +1055,20 @@
 .method private d(Lcom/applovin/impl/sdk/network/d;)V
     .locals 2
 
+    .line 11
     iget-object v0, p0, Lcom/applovin/impl/sdk/network/b;->f:Ljava/lang/Object;
 
-    .line 11
     monitor-enter v0
 
+    .line 12
     :try_start_0
     iget-object v1, p0, Lcom/applovin/impl/sdk/network/b;->h:Ljava/util/Set;
 
-    .line 12
     invoke-interface {v1, p1}, Ljava/util/Set;->remove(Ljava/lang/Object;)Z
 
+    .line 13
     iget-object v1, p0, Lcom/applovin/impl/sdk/network/b;->i:Ljava/util/List;
 
-    .line 13
     invoke-interface {v1, p1}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
     .line 14
@@ -1093,9 +1090,9 @@
 .method private synthetic e()V
     .locals 3
 
+    .line 3
     iget-object v0, p0, Lcom/applovin/impl/sdk/network/b;->f:Ljava/lang/Object;
 
-    .line 3
     monitor-enter v0
 
     .line 4
@@ -1149,11 +1146,11 @@
     throw v1
 .end method
 
-.method public static synthetic e(Lcom/applovin/impl/sdk/network/b;Lcom/applovin/impl/sdk/network/d;Lcom/applovin/sdk/AppLovinPostbackListener;)V
+.method public static synthetic e(Lcom/applovin/impl/sdk/network/b;)V
     .locals 0
 
     .line 1
-    invoke-direct {p0, p1, p2}, Lcom/applovin/impl/sdk/network/b;->b(Lcom/applovin/impl/sdk/network/d;Lcom/applovin/sdk/AppLovinPostbackListener;)V
+    invoke-direct {p0}, Lcom/applovin/impl/sdk/network/b;->e()V
 
     return-void
 .end method
@@ -1161,11 +1158,12 @@
 .method private synthetic f()V
     .locals 4
 
+    .line 2
     iget-object v0, p0, Lcom/applovin/impl/sdk/network/b;->f:Ljava/lang/Object;
 
-    .line 2
     monitor-enter v0
 
+    .line 3
     :try_start_0
     iget-object v1, p0, Lcom/applovin/impl/sdk/network/b;->g:Ljava/util/List;
 
@@ -1173,7 +1171,6 @@
 
     iget v3, p0, Lcom/applovin/impl/sdk/network/b;->c:I
 
-    .line 3
     invoke-virtual {v2, v3}, Lcom/applovin/impl/sdk/network/c;->a(I)Ljava/util/List;
 
     move-result-object v2
@@ -1198,11 +1195,11 @@
     throw v1
 .end method
 
-.method public static synthetic f(Lcom/applovin/impl/sdk/network/b;)V
+.method public static synthetic f(Lcom/applovin/impl/sdk/network/b;Lcom/applovin/impl/sdk/network/d;Lcom/applovin/sdk/AppLovinPostbackListener;)V
     .locals 0
 
     .line 1
-    invoke-direct {p0}, Lcom/applovin/impl/sdk/network/b;->e()V
+    invoke-direct {p0, p1, p2}, Lcom/applovin/impl/sdk/network/b;->b(Lcom/applovin/impl/sdk/network/d;Lcom/applovin/sdk/AppLovinPostbackListener;)V
 
     return-void
 .end method
@@ -1212,20 +1209,20 @@
 .method public a()V
     .locals 3
 
+    .line 10
     iget-object v0, p0, Lcom/applovin/impl/sdk/network/b;->f:Ljava/lang/Object;
 
-    .line 10
     monitor-enter v0
 
+    .line 11
     :try_start_0
     iget-object v1, p0, Lcom/applovin/impl/sdk/network/b;->g:Ljava/util/List;
 
-    .line 11
     invoke-interface {v1}, Ljava/util/List;->clear()V
 
+    .line 12
     iget-object v1, p0, Lcom/applovin/impl/sdk/network/b;->i:Ljava/util/List;
 
-    .line 12
     invoke-interface {v1}, Ljava/util/List;->clear()V
 
     .line 13
@@ -1233,9 +1230,9 @@
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
+    .line 14
     iget-object v0, p0, Lcom/applovin/impl/sdk/network/b;->a:Lcom/applovin/impl/sdk/j;
 
-    .line 14
     invoke-virtual {v0}, Lcom/applovin/impl/sdk/j;->i0()Lcom/applovin/impl/tm;
 
     move-result-object v0
@@ -1311,11 +1308,11 @@
 
     .line 7
     :cond_2
-    new-instance p2, Ls/h;
+    new-instance p2, LH1/l;
 
-    const/16 v0, 0x18
+    const/16 v0, 0x15
 
-    invoke-direct {p2, p0, v0, p1, p3}, Ls/h;-><init>(Ljava/lang/Object;ILjava/lang/Object;Ljava/lang/Object;)V
+    invoke-direct {p2, p0, v0, p1, p3}, LH1/l;-><init>(Ljava/lang/Object;ILjava/lang/Object;Ljava/lang/Object;)V
 
     .line 8
     invoke-static {}, Lcom/applovin/impl/yp;->h()Z
@@ -1338,9 +1335,11 @@
     .line 8
     new-instance v0, Lcom/applovin/impl/sdk/network/f;
 
-    const/4 v1, 0x1
+    const/4 v1, 0x0
 
     invoke-direct {v0, p0, v1}, Lcom/applovin/impl/sdk/network/f;-><init>(Lcom/applovin/impl/sdk/network/b;I)V
+
+    const/4 v1, 0x1
 
     const/4 v2, 0x0
 
@@ -1357,15 +1356,15 @@
 
     invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
 
+    .line 3
     iget-object v1, p0, Lcom/applovin/impl/sdk/network/b;->f:Ljava/lang/Object;
 
-    .line 3
     monitor-enter v1
 
+    .line 4
     :try_start_0
     iget-object v2, p0, Lcom/applovin/impl/sdk/network/b;->a:Lcom/applovin/impl/sdk/j;
 
-    .line 4
     sget-object v3, Lcom/applovin/impl/sj;->O2:Lcom/applovin/impl/sj;
 
     invoke-virtual {v2, v3}, Lcom/applovin/impl/sdk/j;->a(Lcom/applovin/impl/sj;)Ljava/lang/Object;
@@ -1380,18 +1379,18 @@
 
     if-eqz v2, :cond_0
 
+    .line 5
     iget-object v2, p0, Lcom/applovin/impl/sdk/network/b;->i:Ljava/util/List;
 
-    .line 5
     invoke-interface {v2}, Ljava/util/List;->size()I
 
     move-result v2
 
     invoke-virtual {v0, v2}, Ljava/util/ArrayList;->ensureCapacity(I)V
 
+    .line 6
     iget-object v2, p0, Lcom/applovin/impl/sdk/network/b;->i:Ljava/util/List;
 
-    .line 6
     invoke-virtual {v0, v2}, Ljava/util/ArrayList;->addAll(Ljava/util/Collection;)Z
 
     goto :goto_0
@@ -1401,19 +1400,19 @@
 
     goto :goto_1
 
+    .line 7
     :cond_0
     iget-object v2, p0, Lcom/applovin/impl/sdk/network/b;->g:Ljava/util/List;
 
-    .line 7
     invoke-interface {v2}, Ljava/util/List;->size()I
 
     move-result v2
 
     invoke-virtual {v0, v2}, Ljava/util/ArrayList;->ensureCapacity(I)V
 
+    .line 8
     iget-object v2, p0, Lcom/applovin/impl/sdk/network/b;->g:Ljava/util/List;
 
-    .line 8
     invoke-virtual {v0, v2}, Ljava/util/ArrayList;->addAll(Ljava/util/Collection;)Z
 
     .line 9

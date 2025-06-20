@@ -3,14 +3,14 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lzh/e;
+.implements Lka/e;
 
 
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "Lkotlin/jvm/internal/Lambda;",
-        "Lzh/e;"
+        "Lka/e;"
     }
 .end annotation
 
@@ -20,12 +20,12 @@
     }
     d2 = {
         "T",
-        "Landroidx/compose/runtime/saveable/n;",
+        "Landroidx/compose/runtime/saveable/l;",
         "it",
         "",
         "",
         "invoke",
-        "(Landroidx/compose/runtime/saveable/n;Ljava/lang/Object;)Ljava/util/List;",
+        "(Landroidx/compose/runtime/saveable/l;Ljava/lang/Object;)Ljava/util/List;",
         "<anonymous>"
     }
     k = 0x3
@@ -38,33 +38,39 @@
 
 
 # instance fields
-.field final synthetic $save:Lzh/e;
+.field final synthetic $save:Lka/e;
     .annotation system Ldalvik/annotation/Signature;
         value = {
-            "Lzh/e;"
+            "Lka/e;"
         }
     .end annotation
 .end field
 
 
 # direct methods
-.method public constructor <init>(Lzh/e;)V
+.method public constructor <init>(Lka/e;)V
     .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
-            "Lzh/e;",
+            "Lka/e;",
             ")V"
         }
     .end annotation
 
     .line 1
-    iput-object p1, p0, Landroidx/compose/runtime/saveable/MapSaverKt$mapSaver$1;->$save:Lzh/e;
+    iput-object p1, p0, Landroidx/compose/runtime/saveable/MapSaverKt$mapSaver$1;->$save:Lka/e;
 
+    .line 2
+    .line 3
     const/4 p1, 0x2
 
+    .line 4
     invoke-direct {p0, p1}, Lkotlin/jvm/internal/Lambda;-><init>(I)V
 
+    .line 5
+    .line 6
+    .line 7
     return-void
 .end method
 
@@ -74,21 +80,21 @@
     .locals 0
 
     .line 1
-    check-cast p1, Landroidx/compose/runtime/saveable/n;
+    check-cast p1, Landroidx/compose/runtime/saveable/l;
 
-    invoke-virtual {p0, p1, p2}, Landroidx/compose/runtime/saveable/MapSaverKt$mapSaver$1;->invoke(Landroidx/compose/runtime/saveable/n;Ljava/lang/Object;)Ljava/util/List;
+    invoke-virtual {p0, p1, p2}, Landroidx/compose/runtime/saveable/MapSaverKt$mapSaver$1;->invoke(Landroidx/compose/runtime/saveable/l;Ljava/lang/Object;)Ljava/util/List;
 
     move-result-object p1
 
     return-object p1
 .end method
 
-.method public final invoke(Landroidx/compose/runtime/saveable/n;Ljava/lang/Object;)Ljava/util/List;
+.method public final invoke(Landroidx/compose/runtime/saveable/l;Ljava/lang/Object;)Ljava/util/List;
     .locals 2
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
-            "Landroidx/compose/runtime/saveable/n;",
+            "Landroidx/compose/runtime/saveable/l;",
             "Ljava/lang/Object;",
             ")",
             "Ljava/util/List<",
@@ -102,10 +108,10 @@
 
     invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
 
-    iget-object v1, p0, Landroidx/compose/runtime/saveable/MapSaverKt$mapSaver$1;->$save:Lzh/e;
+    iget-object v1, p0, Landroidx/compose/runtime/saveable/MapSaverKt$mapSaver$1;->$save:Lka/e;
 
     .line 3
-    invoke-interface {v1, p1, p2}, Lzh/e;->invoke(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-interface {v1, p1, p2}, Lka/e;->invoke(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object p1
 

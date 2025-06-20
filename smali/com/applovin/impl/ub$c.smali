@@ -48,6 +48,7 @@
 
     iput-object v0, p0, Lcom/applovin/impl/ub$c;->b:Ljava/util/Stack;
 
+    .line 4
     iput p1, p0, Lcom/applovin/impl/ub$c;->a:I
 
     return-void
@@ -60,10 +61,10 @@
 
     monitor-enter p0
 
+    .line 1
     :try_start_0
     iget-object v0, p0, Lcom/applovin/impl/ub$c;->b:Ljava/util/Stack;
 
-    .line 1
     invoke-virtual {v0}, Ljava/util/AbstractCollection;->isEmpty()Z
 
     move-result v0
@@ -96,7 +97,10 @@
     return-object p1
 
     :goto_1
+    :try_start_1
     monitor-exit p0
+    :try_end_1
+    .catchall {:try_start_1 .. :try_end_1} :catchall_0
 
     throw p1
 .end method
@@ -106,10 +110,10 @@
 
     monitor-enter p0
 
+    .line 2
     :try_start_0
     iget-object v0, p0, Lcom/applovin/impl/ub$c;->b:Ljava/util/Stack;
 
-    .line 2
     invoke-virtual {v0}, Ljava/util/AbstractCollection;->size()I
 
     move-result v0
@@ -118,9 +122,9 @@
 
     if-ge v0, v1, :cond_0
 
+    .line 3
     iget-object p2, p0, Lcom/applovin/impl/ub$c;->b:Ljava/util/Stack;
 
-    .line 3
     invoke-virtual {p2, p1}, Ljava/util/Stack;->push(Ljava/lang/Object;)Ljava/lang/Object;
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
@@ -157,7 +161,10 @@
     return-void
 
     :goto_1
+    :try_start_3
     monitor-exit p0
+    :try_end_3
+    .catchall {:try_start_3 .. :try_end_3} :catchall_0
 
     throw p1
 .end method

@@ -1,12 +1,12 @@
 .class final Landroidx/compose/foundation/FocusableElement;
-.super Landroidx/compose/ui/node/w0;
+.super Landroidx/compose/ui/node/V;
 .source "SourceFile"
 
 
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
-        "Landroidx/compose/ui/node/w0;"
+        "Landroidx/compose/ui/node/V;"
     }
 .end annotation
 
@@ -16,8 +16,8 @@
     }
     d2 = {
         "Landroidx/compose/foundation/FocusableElement;",
-        "Landroidx/compose/ui/node/w0;",
-        "Landroidx/compose/foundation/w;",
+        "Landroidx/compose/ui/node/V;",
+        "Landroidx/compose/foundation/u;",
         "foundation_release"
     }
     k = 0x1
@@ -26,11 +26,12 @@
         0x8,
         0x0
     }
+    xi = 0x30
 .end annotation
 
 
 # instance fields
-.field public final c:Landroidx/compose/foundation/interaction/l;
+.field public final a:Landroidx/compose/foundation/interaction/l;
 
 
 # direct methods
@@ -43,7 +44,7 @@
     .line 2
     .line 3
     .line 4
-    iput-object p1, p0, Landroidx/compose/foundation/FocusableElement;->c:Landroidx/compose/foundation/interaction/l;
+    iput-object p1, p0, Landroidx/compose/foundation/FocusableElement;->a:Landroidx/compose/foundation/interaction/l;
 
     .line 5
     .line 6
@@ -86,15 +87,15 @@
 
     .line 12
     .line 13
-    iget-object p1, p1, Landroidx/compose/foundation/FocusableElement;->c:Landroidx/compose/foundation/interaction/l;
+    iget-object p1, p1, Landroidx/compose/foundation/FocusableElement;->a:Landroidx/compose/foundation/interaction/l;
 
     .line 14
     .line 15
-    iget-object v1, p0, Landroidx/compose/foundation/FocusableElement;->c:Landroidx/compose/foundation/interaction/l;
+    iget-object v1, p0, Landroidx/compose/foundation/FocusableElement;->a:Landroidx/compose/foundation/interaction/l;
 
     .line 16
     .line 17
-    invoke-static {v1, p1}, Lrb/h;->d(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v1, p1}, Lkotlin/jvm/internal/h;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     .line 18
     .line 19
@@ -117,7 +118,7 @@
     .locals 1
 
     .line 1
-    iget-object v0, p0, Landroidx/compose/foundation/FocusableElement;->c:Landroidx/compose/foundation/interaction/l;
+    iget-object v0, p0, Landroidx/compose/foundation/FocusableElement;->a:Landroidx/compose/foundation/interaction/l;
 
     .line 2
     .line 3
@@ -148,15 +149,15 @@
     .locals 2
 
     .line 1
-    new-instance v0, Landroidx/compose/foundation/w;
+    new-instance v0, Landroidx/compose/foundation/u;
 
     .line 2
     .line 3
-    iget-object v1, p0, Landroidx/compose/foundation/FocusableElement;->c:Landroidx/compose/foundation/interaction/l;
+    iget-object v1, p0, Landroidx/compose/foundation/FocusableElement;->a:Landroidx/compose/foundation/interaction/l;
 
     .line 4
     .line 5
-    invoke-direct {v0, v1}, Landroidx/compose/foundation/w;-><init>(Landroidx/compose/foundation/interaction/l;)V
+    invoke-direct {v0, v1}, Landroidx/compose/foundation/u;-><init>(Landroidx/compose/foundation/interaction/l;)V
 
     .line 6
     .line 7
@@ -168,15 +169,15 @@
     .locals 1
 
     .line 1
-    check-cast p1, Landroidx/compose/foundation/w;
+    check-cast p1, Landroidx/compose/foundation/u;
 
     .line 2
     .line 3
-    iget-object v0, p0, Landroidx/compose/foundation/FocusableElement;->c:Landroidx/compose/foundation/interaction/l;
+    iget-object v0, p0, Landroidx/compose/foundation/FocusableElement;->a:Landroidx/compose/foundation/interaction/l;
 
     .line 4
     .line 5
-    invoke-virtual {p1, v0}, Landroidx/compose/foundation/w;->D0(Landroidx/compose/foundation/interaction/l;)V
+    invoke-virtual {p1, v0}, Landroidx/compose/foundation/u;->B0(Landroidx/compose/foundation/interaction/l;)V
 
     .line 6
     .line 7

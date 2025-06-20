@@ -3,14 +3,14 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lzh/c;
+.implements Lka/c;
 
 
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "Lkotlin/jvm/internal/Lambda;",
-        "Lzh/c;"
+        "Lka/c;"
     }
 .end annotation
 
@@ -57,9 +57,9 @@
 .method public final invoke(Landroidx/compose/ui/focus/w;)Ljava/lang/Boolean;
     .locals 1
 
+    .line 2
     iget v0, p0, Landroidx/compose/ui/platform/AndroidComposeView$requestFocus$1;->$focusDirection:I
 
-    .line 2
     invoke-static {p1, v0}, Landroidx/compose/ui/focus/a;->F(Landroidx/compose/ui/focus/w;I)Ljava/lang/Boolean;
 
     move-result-object p1

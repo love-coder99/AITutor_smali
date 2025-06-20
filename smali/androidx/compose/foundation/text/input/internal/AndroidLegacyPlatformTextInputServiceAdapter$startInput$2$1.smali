@@ -3,10 +3,19 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lzh/e;
+.implements Lka/e;
 
 
 # annotations
+.annotation runtime Lca/c;
+    c = "androidx.compose.foundation.text.input.internal.AndroidLegacyPlatformTextInputServiceAdapter$startInput$2$1"
+    f = "LegacyPlatformTextInputServiceAdapter.android.kt"
+    l = {
+        0x92
+    }
+    m = "invokeSuspend"
+.end annotation
+
 .annotation system Ldalvik/annotation/EnclosingMethod;
     value = Landroidx/compose/foundation/text/input/internal/AndroidLegacyPlatformTextInputServiceAdapter$startInput$2;->invokeSuspend(Ljava/lang/Object;)Ljava/lang/Object;
 .end annotation
@@ -19,18 +28,19 @@
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "Lkotlin/coroutines/jvm/internal/SuspendLambda;",
-        "Lzh/e;"
+        "Lka/e;"
     }
 .end annotation
 
 .annotation runtime Lkotlin/Metadata;
     d1 = {
-        "\u0000\n\n\u0002\u0018\u0002\n\u0002\u0010\u0001\n\u0000\u0010\u0002\u001a\u00020\u0001*\u00020\u0000H\u008a@"
+        "\u0000\u000c\n\u0002\u0018\u0002\n\u0002\u0010\u0001\n\u0002\u0008\u0002\u0010\u0002\u001a\u00020\u0001*\u00020\u0000H\u008a@\u00a2\u0006\u0004\u0008\u0002\u0010\u0003"
     }
     d2 = {
-        "Lkotlinx/coroutines/w;",
+        "Lkotlinx/coroutines/u;",
         "",
-        "<anonymous>"
+        "<anonymous>",
+        "(Lkotlinx/coroutines/u;)Ljava/lang/Void;"
     }
     k = 0x3
     mv = {
@@ -40,23 +50,14 @@
     }
 .end annotation
 
-.annotation runtime Lth/c;
-    c = "androidx.compose.foundation.text.input.internal.AndroidLegacyPlatformTextInputServiceAdapter$startInput$2$1"
-    f = "LegacyPlatformTextInputServiceAdapter.android.kt"
-    l = {
-        0x92
-    }
-    m = "invokeSuspend"
-.end annotation
-
 
 # instance fields
-.field final synthetic $$this$launchTextInputSession:Landroidx/compose/ui/platform/d2;
+.field final synthetic $$this$launchTextInputSession:Landroidx/compose/ui/platform/t0;
 
-.field final synthetic $initializeRequest:Lzh/c;
+.field final synthetic $initializeRequest:Lka/c;
     .annotation system Ldalvik/annotation/Signature;
         value = {
-            "Lzh/c;"
+            "Lka/c;"
         }
     .end annotation
 .end field
@@ -71,13 +72,13 @@
 
 
 # direct methods
-.method public constructor <init>(Landroidx/compose/ui/platform/d2;Lzh/c;Landroidx/compose/foundation/text/input/internal/b;Landroidx/compose/foundation/text/input/internal/r;Lkotlin/coroutines/Continuation;)V
+.method public constructor <init>(Landroidx/compose/ui/platform/t0;Lka/c;Landroidx/compose/foundation/text/input/internal/b;Landroidx/compose/foundation/text/input/internal/r;Lkotlin/coroutines/Continuation;)V
     .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
-            "Landroidx/compose/ui/platform/d2;",
-            "Lzh/c;",
+            "Landroidx/compose/ui/platform/t0;",
+            "Lka/c;",
             "Landroidx/compose/foundation/text/input/internal/b;",
             "Landroidx/compose/foundation/text/input/internal/r;",
             "Lkotlin/coroutines/Continuation<",
@@ -88,18 +89,30 @@
     .end annotation
 
     .line 1
-    iput-object p1, p0, Landroidx/compose/foundation/text/input/internal/AndroidLegacyPlatformTextInputServiceAdapter$startInput$2$1;->$$this$launchTextInputSession:Landroidx/compose/ui/platform/d2;
+    iput-object p1, p0, Landroidx/compose/foundation/text/input/internal/AndroidLegacyPlatformTextInputServiceAdapter$startInput$2$1;->$$this$launchTextInputSession:Landroidx/compose/ui/platform/t0;
 
-    iput-object p2, p0, Landroidx/compose/foundation/text/input/internal/AndroidLegacyPlatformTextInputServiceAdapter$startInput$2$1;->$initializeRequest:Lzh/c;
+    .line 2
+    .line 3
+    iput-object p2, p0, Landroidx/compose/foundation/text/input/internal/AndroidLegacyPlatformTextInputServiceAdapter$startInput$2$1;->$initializeRequest:Lka/c;
 
+    .line 4
+    .line 5
     iput-object p3, p0, Landroidx/compose/foundation/text/input/internal/AndroidLegacyPlatformTextInputServiceAdapter$startInput$2$1;->this$0:Landroidx/compose/foundation/text/input/internal/b;
 
+    .line 6
+    .line 7
     iput-object p4, p0, Landroidx/compose/foundation/text/input/internal/AndroidLegacyPlatformTextInputServiceAdapter$startInput$2$1;->$node:Landroidx/compose/foundation/text/input/internal/r;
 
+    .line 8
+    .line 9
     const/4 p1, 0x2
 
+    .line 10
     invoke-direct {p0, p1, p5}, Lkotlin/coroutines/jvm/internal/SuspendLambda;-><init>(ILkotlin/coroutines/Continuation;)V
 
+    .line 11
+    .line 12
+    .line 13
     return-void
 .end method
 
@@ -114,16 +127,16 @@
             "Lkotlin/coroutines/Continuation<",
             "*>;)",
             "Lkotlin/coroutines/Continuation<",
-            "Lqh/r;",
+            "LX9/j;",
             ">;"
         }
     .end annotation
 
     new-instance v6, Landroidx/compose/foundation/text/input/internal/AndroidLegacyPlatformTextInputServiceAdapter$startInput$2$1;
 
-    iget-object v1, p0, Landroidx/compose/foundation/text/input/internal/AndroidLegacyPlatformTextInputServiceAdapter$startInput$2$1;->$$this$launchTextInputSession:Landroidx/compose/ui/platform/d2;
+    iget-object v1, p0, Landroidx/compose/foundation/text/input/internal/AndroidLegacyPlatformTextInputServiceAdapter$startInput$2$1;->$$this$launchTextInputSession:Landroidx/compose/ui/platform/t0;
 
-    iget-object v2, p0, Landroidx/compose/foundation/text/input/internal/AndroidLegacyPlatformTextInputServiceAdapter$startInput$2$1;->$initializeRequest:Lzh/c;
+    iget-object v2, p0, Landroidx/compose/foundation/text/input/internal/AndroidLegacyPlatformTextInputServiceAdapter$startInput$2$1;->$initializeRequest:Lka/c;
 
     iget-object v3, p0, Landroidx/compose/foundation/text/input/internal/AndroidLegacyPlatformTextInputServiceAdapter$startInput$2$1;->this$0:Landroidx/compose/foundation/text/input/internal/b;
 
@@ -133,7 +146,7 @@
 
     move-object v5, p2
 
-    invoke-direct/range {v0 .. v5}, Landroidx/compose/foundation/text/input/internal/AndroidLegacyPlatformTextInputServiceAdapter$startInput$2$1;-><init>(Landroidx/compose/ui/platform/d2;Lzh/c;Landroidx/compose/foundation/text/input/internal/b;Landroidx/compose/foundation/text/input/internal/r;Lkotlin/coroutines/Continuation;)V
+    invoke-direct/range {v0 .. v5}, Landroidx/compose/foundation/text/input/internal/AndroidLegacyPlatformTextInputServiceAdapter$startInput$2$1;-><init>(Landroidx/compose/ui/platform/t0;Lka/c;Landroidx/compose/foundation/text/input/internal/b;Landroidx/compose/foundation/text/input/internal/r;Lkotlin/coroutines/Continuation;)V
 
     iput-object p1, v6, Landroidx/compose/foundation/text/input/internal/AndroidLegacyPlatformTextInputServiceAdapter$startInput$2$1;->L$0:Ljava/lang/Object;
 
@@ -144,23 +157,23 @@
     .locals 0
 
     .line 1
-    check-cast p1, Lkotlinx/coroutines/w;
+    check-cast p1, Lkotlinx/coroutines/u;
 
     check-cast p2, Lkotlin/coroutines/Continuation;
 
-    invoke-virtual {p0, p1, p2}, Landroidx/compose/foundation/text/input/internal/AndroidLegacyPlatformTextInputServiceAdapter$startInput$2$1;->invoke(Lkotlinx/coroutines/w;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
+    invoke-virtual {p0, p1, p2}, Landroidx/compose/foundation/text/input/internal/AndroidLegacyPlatformTextInputServiceAdapter$startInput$2$1;->invoke(Lkotlinx/coroutines/u;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
 
     move-result-object p1
 
     return-object p1
 .end method
 
-.method public final invoke(Lkotlinx/coroutines/w;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
+.method public final invoke(Lkotlinx/coroutines/u;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
     .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
-            "Lkotlinx/coroutines/w;",
+            "Lkotlinx/coroutines/u;",
             "Lkotlin/coroutines/Continuation<",
             "*>;)",
             "Ljava/lang/Object;"
@@ -174,7 +187,7 @@
 
     check-cast p1, Landroidx/compose/foundation/text/input/internal/AndroidLegacyPlatformTextInputServiceAdapter$startInput$2$1;
 
-    sget-object p2, Lqh/r;->a:Lqh/r;
+    sget-object p2, LX9/j;->a:LX9/j;
 
     invoke-virtual {p1, p2}, Landroidx/compose/foundation/text/input/internal/AndroidLegacyPlatformTextInputServiceAdapter$startInput$2$1;->invokeSuspend(Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -254,27 +267,27 @@
 
     .line 29
     .line 30
-    check-cast p1, Lkotlinx/coroutines/w;
+    check-cast p1, Lkotlinx/coroutines/u;
 
     .line 31
     .line 32
-    sget-object v1, Landroidx/compose/foundation/text/input/internal/t;->a:Lzh/c;
+    sget-object v1, Landroidx/compose/foundation/text/input/internal/t;->a:Lka/c;
 
     .line 33
     .line 34
-    iget-object v4, p0, Landroidx/compose/foundation/text/input/internal/AndroidLegacyPlatformTextInputServiceAdapter$startInput$2$1;->$$this$launchTextInputSession:Landroidx/compose/ui/platform/d2;
+    iget-object v4, p0, Landroidx/compose/foundation/text/input/internal/AndroidLegacyPlatformTextInputServiceAdapter$startInput$2$1;->$$this$launchTextInputSession:Landroidx/compose/ui/platform/t0;
 
     .line 35
     .line 36
-    check-cast v4, Landroidx/compose/ui/platform/r0;
+    check-cast v4, Landroidx/compose/ui/platform/I;
 
     .line 37
     .line 38
-    iget-object v4, v4, Landroidx/compose/ui/platform/r0;->b:Landroid/view/View;
+    iget-object v4, v4, Landroidx/compose/ui/platform/I;->b:Landroid/view/View;
 
     .line 39
     .line 40
-    invoke-interface {v1, v4}, Lzh/c;->invoke(Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-interface {v1, v4}, Lka/c;->invoke(Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 41
     .line 42
@@ -286,19 +299,19 @@
 
     .line 45
     .line 46
-    new-instance v4, Landroidx/compose/foundation/text/input/internal/v;
+    new-instance v4, Landroidx/compose/foundation/text/input/internal/u;
 
     .line 47
     .line 48
-    iget-object v5, p0, Landroidx/compose/foundation/text/input/internal/AndroidLegacyPlatformTextInputServiceAdapter$startInput$2$1;->$$this$launchTextInputSession:Landroidx/compose/ui/platform/d2;
+    iget-object v5, p0, Landroidx/compose/foundation/text/input/internal/AndroidLegacyPlatformTextInputServiceAdapter$startInput$2$1;->$$this$launchTextInputSession:Landroidx/compose/ui/platform/t0;
 
     .line 49
     .line 50
-    check-cast v5, Landroidx/compose/ui/platform/r0;
+    check-cast v5, Landroidx/compose/ui/platform/I;
 
     .line 51
     .line 52
-    iget-object v5, v5, Landroidx/compose/ui/platform/r0;->b:Landroid/view/View;
+    iget-object v5, v5, Landroidx/compose/ui/platform/I;->b:Landroid/view/View;
 
     .line 53
     .line 54
@@ -315,7 +328,7 @@
     .line 59
     .line 60
     .line 61
-    invoke-direct {v4, v5, v6, v1}, Landroidx/compose/foundation/text/input/internal/v;-><init>(Landroid/view/View;Lzh/c;Landroidx/compose/foundation/text/input/internal/m;)V
+    invoke-direct {v4, v5, v6, v1}, Landroidx/compose/foundation/text/input/internal/u;-><init>(Landroid/view/View;Lka/c;Landroidx/compose/foundation/text/input/internal/m;)V
 
     .line 62
     .line 63
@@ -344,13 +357,13 @@
     const/4 v1, 0x3
 
     .line 76
-    invoke-static {p1, v2, v2, v5, v1}, Lf7/l;->D(Lkotlinx/coroutines/w;Lkotlin/coroutines/g;Lkotlinx/coroutines/CoroutineStart;Lzh/e;I)Lkotlinx/coroutines/q1;
+    invoke-static {p1, v2, v2, v5, v1}, Lkotlinx/coroutines/w;->w(Lkotlinx/coroutines/u;Lba/g;Lkotlinx/coroutines/CoroutineStart;Lka/e;I)Lkotlinx/coroutines/r0;
 
     .line 77
     .line 78
     .line 79
     :cond_2
-    iget-object p1, p0, Landroidx/compose/foundation/text/input/internal/AndroidLegacyPlatformTextInputServiceAdapter$startInput$2$1;->$initializeRequest:Lzh/c;
+    iget-object p1, p0, Landroidx/compose/foundation/text/input/internal/AndroidLegacyPlatformTextInputServiceAdapter$startInput$2$1;->$initializeRequest:Lka/c;
 
     .line 80
     .line 81
@@ -358,7 +371,7 @@
 
     .line 82
     .line 83
-    invoke-interface {p1, v4}, Lzh/c;->invoke(Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-interface {p1, v4}, Lka/c;->invoke(Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 84
     .line 85
@@ -368,12 +381,12 @@
 
     .line 87
     .line 88
-    iput-object v4, p1, Landroidx/compose/foundation/text/input/internal/b;->c:Landroidx/compose/foundation/text/input/internal/v;
+    iput-object v4, p1, Landroidx/compose/foundation/text/input/internal/b;->c:Landroidx/compose/foundation/text/input/internal/u;
 
     .line 89
     .line 90
     :try_start_1
-    iget-object p1, p0, Landroidx/compose/foundation/text/input/internal/AndroidLegacyPlatformTextInputServiceAdapter$startInput$2$1;->$$this$launchTextInputSession:Landroidx/compose/ui/platform/d2;
+    iget-object p1, p0, Landroidx/compose/foundation/text/input/internal/AndroidLegacyPlatformTextInputServiceAdapter$startInput$2$1;->$$this$launchTextInputSession:Landroidx/compose/ui/platform/t0;
 
     .line 91
     .line 92
@@ -381,11 +394,11 @@
 
     .line 93
     .line 94
-    check-cast p1, Landroidx/compose/ui/platform/r0;
+    check-cast p1, Landroidx/compose/ui/platform/I;
 
     .line 95
     .line 96
-    invoke-virtual {p1, v4, p0}, Landroidx/compose/ui/platform/r0;->a(Landroidx/compose/foundation/text/input/internal/v;Lkotlin/coroutines/Continuation;)Lkotlin/coroutines/intrinsics/CoroutineSingletons;
+    invoke-virtual {p1, v4, p0}, Landroidx/compose/ui/platform/I;->a(Landroidx/compose/foundation/text/input/internal/u;Lkotlin/coroutines/jvm/internal/ContinuationImpl;)Lkotlin/coroutines/intrinsics/CoroutineSingletons;
 
     .line 97
     .line 98
@@ -421,7 +434,7 @@
 
     .line 110
     .line 111
-    iput-object v2, v0, Landroidx/compose/foundation/text/input/internal/b;->c:Landroidx/compose/foundation/text/input/internal/v;
+    iput-object v2, v0, Landroidx/compose/foundation/text/input/internal/b;->c:Landroidx/compose/foundation/text/input/internal/u;
 
     .line 112
     .line 113

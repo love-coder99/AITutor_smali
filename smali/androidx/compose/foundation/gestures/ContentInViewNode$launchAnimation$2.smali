@@ -3,25 +3,35 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lzh/e;
+.implements Lka/e;
 
 
 # annotations
+.annotation runtime Lca/c;
+    c = "androidx.compose.foundation.gestures.ContentInViewNode$launchAnimation$2"
+    f = "ContentInViewNode.kt"
+    l = {
+        0xc4
+    }
+    m = "invokeSuspend"
+.end annotation
+
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "Lkotlin/coroutines/jvm/internal/SuspendLambda;",
-        "Lzh/e;"
+        "Lka/e;"
     }
 .end annotation
 
 .annotation runtime Lkotlin/Metadata;
     d1 = {
-        "\u0000\n\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\u0010\u0002\u001a\u00020\u0001*\u00020\u0000H\u008a@"
+        "\u0000\u000c\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0008\u0002\u0010\u0002\u001a\u00020\u0001*\u00020\u0000H\u008a@\u00a2\u0006\u0004\u0008\u0002\u0010\u0003"
     }
     d2 = {
-        "Lkotlinx/coroutines/w;",
-        "Lqh/r;",
-        "<anonymous>"
+        "Lkotlinx/coroutines/u;",
+        "LX9/j;",
+        "<anonymous>",
+        "(Lkotlinx/coroutines/u;)V"
     }
     k = 0x3
     mv = {
@@ -31,18 +41,9 @@
     }
 .end annotation
 
-.annotation runtime Lth/c;
-    c = "androidx.compose.foundation.gestures.ContentInViewNode$launchAnimation$2"
-    f = "ContentInViewNode.kt"
-    l = {
-        0xc4
-    }
-    m = "invokeSuspend"
-.end annotation
-
 
 # instance fields
-.field final synthetic $animationState:Landroidx/compose/foundation/gestures/q0;
+.field final synthetic $animationState:Landroidx/compose/foundation/gestures/T;
 
 .field final synthetic $bringIntoViewSpec:Landroidx/compose/foundation/gestures/e;
 
@@ -54,13 +55,13 @@
 
 
 # direct methods
-.method public constructor <init>(Landroidx/compose/foundation/gestures/j;Landroidx/compose/foundation/gestures/q0;Landroidx/compose/foundation/gestures/e;Lkotlin/coroutines/Continuation;)V
+.method public constructor <init>(Landroidx/compose/foundation/gestures/j;Landroidx/compose/foundation/gestures/T;Landroidx/compose/foundation/gestures/e;Lkotlin/coroutines/Continuation;)V
     .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
             "Landroidx/compose/foundation/gestures/j;",
-            "Landroidx/compose/foundation/gestures/q0;",
+            "Landroidx/compose/foundation/gestures/T;",
             "Landroidx/compose/foundation/gestures/e;",
             "Lkotlin/coroutines/Continuation<",
             "-",
@@ -71,7 +72,7 @@
 
     iput-object p1, p0, Landroidx/compose/foundation/gestures/ContentInViewNode$launchAnimation$2;->this$0:Landroidx/compose/foundation/gestures/j;
 
-    iput-object p2, p0, Landroidx/compose/foundation/gestures/ContentInViewNode$launchAnimation$2;->$animationState:Landroidx/compose/foundation/gestures/q0;
+    iput-object p2, p0, Landroidx/compose/foundation/gestures/ContentInViewNode$launchAnimation$2;->$animationState:Landroidx/compose/foundation/gestures/T;
 
     iput-object p3, p0, Landroidx/compose/foundation/gestures/ContentInViewNode$launchAnimation$2;->$bringIntoViewSpec:Landroidx/compose/foundation/gestures/e;
 
@@ -93,7 +94,7 @@
             "Lkotlin/coroutines/Continuation<",
             "*>;)",
             "Lkotlin/coroutines/Continuation<",
-            "Lqh/r;",
+            "LX9/j;",
             ">;"
         }
     .end annotation
@@ -102,11 +103,11 @@
 
     iget-object v1, p0, Landroidx/compose/foundation/gestures/ContentInViewNode$launchAnimation$2;->this$0:Landroidx/compose/foundation/gestures/j;
 
-    iget-object v2, p0, Landroidx/compose/foundation/gestures/ContentInViewNode$launchAnimation$2;->$animationState:Landroidx/compose/foundation/gestures/q0;
+    iget-object v2, p0, Landroidx/compose/foundation/gestures/ContentInViewNode$launchAnimation$2;->$animationState:Landroidx/compose/foundation/gestures/T;
 
     iget-object v3, p0, Landroidx/compose/foundation/gestures/ContentInViewNode$launchAnimation$2;->$bringIntoViewSpec:Landroidx/compose/foundation/gestures/e;
 
-    invoke-direct {v0, v1, v2, v3, p2}, Landroidx/compose/foundation/gestures/ContentInViewNode$launchAnimation$2;-><init>(Landroidx/compose/foundation/gestures/j;Landroidx/compose/foundation/gestures/q0;Landroidx/compose/foundation/gestures/e;Lkotlin/coroutines/Continuation;)V
+    invoke-direct {v0, v1, v2, v3, p2}, Landroidx/compose/foundation/gestures/ContentInViewNode$launchAnimation$2;-><init>(Landroidx/compose/foundation/gestures/j;Landroidx/compose/foundation/gestures/T;Landroidx/compose/foundation/gestures/e;Lkotlin/coroutines/Continuation;)V
 
     iput-object p1, v0, Landroidx/compose/foundation/gestures/ContentInViewNode$launchAnimation$2;->L$0:Ljava/lang/Object;
 
@@ -117,26 +118,26 @@
     .locals 0
 
     .line 1
-    check-cast p1, Lkotlinx/coroutines/w;
+    check-cast p1, Lkotlinx/coroutines/u;
 
     check-cast p2, Lkotlin/coroutines/Continuation;
 
-    invoke-virtual {p0, p1, p2}, Landroidx/compose/foundation/gestures/ContentInViewNode$launchAnimation$2;->invoke(Lkotlinx/coroutines/w;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
+    invoke-virtual {p0, p1, p2}, Landroidx/compose/foundation/gestures/ContentInViewNode$launchAnimation$2;->invoke(Lkotlinx/coroutines/u;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
 
     move-result-object p1
 
     return-object p1
 .end method
 
-.method public final invoke(Lkotlinx/coroutines/w;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
+.method public final invoke(Lkotlinx/coroutines/u;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
     .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
-            "Lkotlinx/coroutines/w;",
+            "Lkotlinx/coroutines/u;",
             "Lkotlin/coroutines/Continuation<",
             "-",
-            "Lqh/r;",
+            "LX9/j;",
             ">;)",
             "Ljava/lang/Object;"
         }
@@ -149,7 +150,7 @@
 
     check-cast p1, Landroidx/compose/foundation/gestures/ContentInViewNode$launchAnimation$2;
 
-    sget-object p2, Lqh/r;->a:Lqh/r;
+    sget-object p2, LX9/j;->a:LX9/j;
 
     invoke-virtual {p1, p2}, Landroidx/compose/foundation/gestures/ContentInViewNode$launchAnimation$2;->invokeSuspend(Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -170,10 +171,10 @@
 
     .line 4
     .line 5
-    const/4 v2, 0x0
+    const/4 v2, 0x1
 
     .line 6
-    const/4 v3, 0x1
+    const/4 v3, 0x0
 
     .line 7
     const/4 v4, 0x0
@@ -183,7 +184,7 @@
 
     .line 9
     .line 10
-    if-ne v1, v3, :cond_0
+    if-ne v1, v2, :cond_0
 
     .line 11
     .line 12
@@ -210,7 +211,7 @@
     move-exception p1
 
     .line 19
-    move-object v2, p1
+    move-object v4, p1
 
     .line 20
     goto :goto_1
@@ -243,11 +244,11 @@
 
     .line 33
     .line 34
-    check-cast p1, Lkotlinx/coroutines/w;
+    check-cast p1, Lkotlinx/coroutines/u;
 
     .line 35
     .line 36
-    invoke-interface {p1}, Lkotlinx/coroutines/w;->n()Lkotlin/coroutines/i;
+    invoke-interface {p1}, Lkotlinx/coroutines/u;->u()Lba/g;
 
     .line 37
     .line 38
@@ -255,7 +256,7 @@
     move-result-object p1
 
     .line 40
-    invoke-static {p1}, Lrb/h;->x(Lkotlin/coroutines/i;)Lkotlinx/coroutines/z0;
+    invoke-static {p1}, Lkotlinx/coroutines/w;->o(Lba/g;)Lkotlinx/coroutines/a0;
 
     .line 41
     .line 42
@@ -268,11 +269,11 @@
 
     .line 45
     .line 46
-    iput-boolean v3, v7, Landroidx/compose/foundation/gestures/j;->y:Z
+    iput-boolean v2, v7, Landroidx/compose/foundation/gestures/j;->y:Z
 
     .line 47
     .line 48
-    iget-object p1, v7, Landroidx/compose/foundation/gestures/j;->q:Landroidx/compose/foundation/gestures/l0;
+    iget-object p1, v7, Landroidx/compose/foundation/gestures/j;->q:Landroidx/compose/foundation/gestures/N;
 
     .line 49
     .line 50
@@ -284,7 +285,7 @@
 
     .line 53
     .line 54
-    iget-object v6, p0, Landroidx/compose/foundation/gestures/ContentInViewNode$launchAnimation$2;->$animationState:Landroidx/compose/foundation/gestures/q0;
+    iget-object v6, p0, Landroidx/compose/foundation/gestures/ContentInViewNode$launchAnimation$2;->$animationState:Landroidx/compose/foundation/gestures/T;
 
     .line 55
     .line 56
@@ -298,16 +299,16 @@
     move-object v5, v11
 
     .line 60
-    invoke-direct/range {v5 .. v10}, Landroidx/compose/foundation/gestures/ContentInViewNode$launchAnimation$2$1;-><init>(Landroidx/compose/foundation/gestures/q0;Landroidx/compose/foundation/gestures/j;Landroidx/compose/foundation/gestures/e;Lkotlinx/coroutines/z0;Lkotlin/coroutines/Continuation;)V
+    invoke-direct/range {v5 .. v10}, Landroidx/compose/foundation/gestures/ContentInViewNode$launchAnimation$2$1;-><init>(Landroidx/compose/foundation/gestures/T;Landroidx/compose/foundation/gestures/j;Landroidx/compose/foundation/gestures/e;Lkotlinx/coroutines/a0;Lkotlin/coroutines/Continuation;)V
 
     .line 61
     .line 62
     .line 63
-    iput v3, p0, Landroidx/compose/foundation/gestures/ContentInViewNode$launchAnimation$2;->label:I
+    iput v2, p0, Landroidx/compose/foundation/gestures/ContentInViewNode$launchAnimation$2;->label:I
 
     .line 64
     .line 65
-    invoke-virtual {p1, v1, v11, p0}, Landroidx/compose/foundation/gestures/l0;->e(Landroidx/compose/foundation/MutatePriority;Lzh/e;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
+    invoke-virtual {p1, v1, v11, p0}, Landroidx/compose/foundation/gestures/N;->e(Landroidx/compose/foundation/MutatePriority;Lka/e;Lkotlin/coroutines/jvm/internal/ContinuationImpl;)Ljava/lang/Object;
 
     .line 66
     .line 67
@@ -344,7 +345,7 @@
 
     .line 80
     .line 81
-    iput-boolean v4, p1, Landroidx/compose/foundation/gestures/j;->y:Z
+    iput-boolean v3, p1, Landroidx/compose/foundation/gestures/j;->y:Z
 
     .line 82
     .line 83
@@ -352,7 +353,7 @@
 
     .line 84
     .line 85
-    invoke-virtual {p1, v2}, Landroidx/compose/foundation/gestures/b;->a(Ljava/util/concurrent/CancellationException;)V
+    invoke-virtual {p1, v4}, Landroidx/compose/foundation/gestures/b;->a(Ljava/util/concurrent/CancellationException;)V
 
     .line 86
     .line 87
@@ -361,11 +362,11 @@
 
     .line 89
     .line 90
-    iput-boolean v4, p1, Landroidx/compose/foundation/gestures/j;->w:Z
+    iput-boolean v3, p1, Landroidx/compose/foundation/gestures/j;->w:Z
 
     .line 91
     .line 92
-    sget-object p1, Lqh/r;->a:Lqh/r;
+    sget-object p1, LX9/j;->a:LX9/j;
 
     .line 93
     .line 94
@@ -374,7 +375,7 @@
     .line 95
     :goto_1
     :try_start_2
-    throw v2
+    throw v4
     :try_end_2
     .catchall {:try_start_2 .. :try_end_2} :catchall_0
 
@@ -384,7 +385,7 @@
 
     .line 97
     .line 98
-    iput-boolean v4, v0, Landroidx/compose/foundation/gestures/j;->y:Z
+    iput-boolean v3, v0, Landroidx/compose/foundation/gestures/j;->y:Z
 
     .line 99
     .line 100
@@ -392,7 +393,7 @@
 
     .line 101
     .line 102
-    invoke-virtual {v0, v2}, Landroidx/compose/foundation/gestures/b;->a(Ljava/util/concurrent/CancellationException;)V
+    invoke-virtual {v0, v4}, Landroidx/compose/foundation/gestures/b;->a(Ljava/util/concurrent/CancellationException;)V
 
     .line 103
     .line 104
@@ -401,7 +402,7 @@
 
     .line 106
     .line 107
-    iput-boolean v4, v0, Landroidx/compose/foundation/gestures/j;->w:Z
+    iput-boolean v3, v0, Landroidx/compose/foundation/gestures/j;->w:Z
 
     .line 108
     .line 109

@@ -3,14 +3,14 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lzh/c;
+.implements Lka/c;
 
 
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "Lkotlin/jvm/internal/Lambda;",
-        "Lzh/c;"
+        "Lka/c;"
     }
 .end annotation
 
@@ -19,10 +19,10 @@
         "\u0000\u000c\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0008\u0003\u0010\u0004\u001a\u00020\u0001*\u00020\u0000H\n\u00a2\u0006\u0004\u0008\u0002\u0010\u0003"
     }
     d2 = {
-        "Landroidx/compose/runtime/p0;",
-        "Landroidx/compose/runtime/o0;",
+        "Landroidx/compose/runtime/H;",
+        "Landroidx/compose/runtime/G;",
         "invoke",
-        "(Landroidx/compose/runtime/p0;)Landroidx/compose/runtime/o0;",
+        "(Landroidx/compose/runtime/H;)Landroidx/compose/runtime/G;",
         "<anonymous>"
     }
     k = 0x3
@@ -35,16 +35,16 @@
 
 
 # instance fields
-.field final synthetic $insets:Landroidx/compose/foundation/layout/g1;
+.field final synthetic $insets:Landroidx/compose/foundation/layout/e0;
 
 .field final synthetic $view:Landroid/view/View;
 
 
 # direct methods
-.method public constructor <init>(Landroidx/compose/foundation/layout/g1;Landroid/view/View;)V
+.method public constructor <init>(Landroidx/compose/foundation/layout/e0;Landroid/view/View;)V
     .locals 0
 
-    iput-object p1, p0, Landroidx/compose/foundation/layout/WindowInsetsHolder$Companion$current$1$1;->$insets:Landroidx/compose/foundation/layout/g1;
+    iput-object p1, p0, Landroidx/compose/foundation/layout/WindowInsetsHolder$Companion$current$1$1;->$insets:Landroidx/compose/foundation/layout/e0;
 
     iput-object p2, p0, Landroidx/compose/foundation/layout/WindowInsetsHolder$Companion$current$1$1;->$view:Landroid/view/View;
 
@@ -57,61 +57,63 @@
 
 
 # virtual methods
-.method public final invoke(Landroidx/compose/runtime/p0;)Landroidx/compose/runtime/o0;
+.method public final invoke(Landroidx/compose/runtime/H;)Landroidx/compose/runtime/G;
     .locals 3
 
-    iget-object p1, p0, Landroidx/compose/foundation/layout/WindowInsetsHolder$Companion$current$1$1;->$insets:Landroidx/compose/foundation/layout/g1;
+    .line 2
+    iget-object p1, p0, Landroidx/compose/foundation/layout/WindowInsetsHolder$Companion$current$1$1;->$insets:Landroidx/compose/foundation/layout/e0;
 
     iget-object v0, p0, Landroidx/compose/foundation/layout/WindowInsetsHolder$Companion$current$1$1;->$view:Landroid/view/View;
 
-    .line 1
-    iget v1, p1, Landroidx/compose/foundation/layout/g1;->s:I
+    .line 3
+    iget v1, p1, Landroidx/compose/foundation/layout/e0;->t:I
 
     if-nez v1, :cond_1
 
-    .line 2
-    sget-object v1, Landroidx/core/view/y0;->a:Ljava/util/WeakHashMap;
-
-    .line 3
-    iget-object v1, p1, Landroidx/compose/foundation/layout/g1;->t:Landroidx/compose/foundation/layout/e0;
-
-    invoke-static {v0, v1}, Landroidx/core/view/p0;->n(Landroid/view/View;Landroidx/core/view/z;)V
-
     .line 4
+    sget-object v1, Landroidx/core/view/e0;->a:Ljava/util/WeakHashMap;
+
+    .line 5
+    iget-object v1, p1, Landroidx/compose/foundation/layout/e0;->u:Landroidx/compose/foundation/layout/C;
+
+    invoke-static {v0, v1}, Landroidx/core/view/V;->n(Landroid/view/View;Landroidx/core/view/A;)V
+
+    .line 6
     invoke-virtual {v0}, Landroid/view/View;->isAttachedToWindow()Z
 
     move-result v2
 
     if-eqz v2, :cond_0
 
-    .line 5
+    .line 7
     invoke-virtual {v0}, Landroid/view/View;->requestApplyInsets()V
 
-    .line 6
+    .line 8
     :cond_0
     invoke-virtual {v0, v1}, Landroid/view/View;->addOnAttachStateChangeListener(Landroid/view/View$OnAttachStateChangeListener;)V
 
-    .line 7
-    invoke-static {v0, v1}, Landroidx/core/view/y0;->w(Landroid/view/View;Landroidx/core/view/g1;)V
+    .line 9
+    invoke-static {v0, v1}, Landroidx/core/view/e0;->w(Landroid/view/View;Landroidx/core/view/m0;)V
 
-    .line 8
+    .line 10
     :cond_1
-    iget v0, p1, Landroidx/compose/foundation/layout/g1;->s:I
+    iget v0, p1, Landroidx/compose/foundation/layout/e0;->t:I
 
     add-int/lit8 v0, v0, 0x1
 
-    iput v0, p1, Landroidx/compose/foundation/layout/g1;->s:I
+    iput v0, p1, Landroidx/compose/foundation/layout/e0;->t:I
 
-    iget-object p1, p0, Landroidx/compose/foundation/layout/WindowInsetsHolder$Companion$current$1$1;->$insets:Landroidx/compose/foundation/layout/g1;
+    .line 11
+    iget-object p1, p0, Landroidx/compose/foundation/layout/WindowInsetsHolder$Companion$current$1$1;->$insets:Landroidx/compose/foundation/layout/e0;
 
     iget-object v0, p0, Landroidx/compose/foundation/layout/WindowInsetsHolder$Companion$current$1$1;->$view:Landroid/view/View;
 
-    .line 9
-    new-instance v1, Landroidx/compose/animation/core/h0;
+    .line 12
+    new-instance v1, Landroidx/compose/animation/core/D;
 
     const/4 v2, 0x4
 
-    invoke-direct {v1, p1, v2, v0}, Landroidx/compose/animation/core/h0;-><init>(Ljava/lang/Object;ILjava/lang/Object;)V
+    invoke-direct {v1, p1, v2, v0}, Landroidx/compose/animation/core/D;-><init>(Ljava/lang/Object;ILjava/lang/Object;)V
 
     return-object v1
 .end method
@@ -119,10 +121,10 @@
 .method public bridge synthetic invoke(Ljava/lang/Object;)Ljava/lang/Object;
     .locals 0
 
-    .line 10
-    check-cast p1, Landroidx/compose/runtime/p0;
+    .line 1
+    check-cast p1, Landroidx/compose/runtime/H;
 
-    invoke-virtual {p0, p1}, Landroidx/compose/foundation/layout/WindowInsetsHolder$Companion$current$1$1;->invoke(Landroidx/compose/runtime/p0;)Landroidx/compose/runtime/o0;
+    invoke-virtual {p0, p1}, Landroidx/compose/foundation/layout/WindowInsetsHolder$Companion$current$1$1;->invoke(Landroidx/compose/runtime/H;)Landroidx/compose/runtime/G;
 
     move-result-object p1
 

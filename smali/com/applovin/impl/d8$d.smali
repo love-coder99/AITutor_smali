@@ -49,6 +49,7 @@
 .method public a(Lcom/applovin/impl/d8$d;)I
     .locals 5
 
+    .line 1
     iget-object v0, p0, Lcom/applovin/impl/d8$d;->d:Ljava/lang/Object;
 
     const/4 v1, 0x0
@@ -64,7 +65,6 @@
     :cond_0
     const/4 v3, 0x0
 
-    .line 2
     :goto_0
     iget-object v4, p1, Lcom/applovin/impl/d8$d;->d:Ljava/lang/Object;
 
@@ -92,10 +92,10 @@
 
     return v1
 
+    .line 2
     :cond_4
     iget v0, p0, Lcom/applovin/impl/d8$d;->b:I
 
-    .line 3
     iget v1, p1, Lcom/applovin/impl/d8$d;->b:I
 
     sub-int/2addr v0, v1
@@ -104,10 +104,10 @@
 
     return v0
 
+    .line 3
     :cond_5
     iget-wide v0, p0, Lcom/applovin/impl/d8$d;->c:J
 
-    .line 4
     iget-wide v2, p1, Lcom/applovin/impl/d8$d;->c:J
 
     invoke-static {v0, v1, v2, v3}, Lcom/applovin/impl/xp;->a(JJ)I
@@ -120,11 +120,13 @@
 .method public a(IJLjava/lang/Object;)V
     .locals 0
 
-    .line 1
+    .line 4
     iput p1, p0, Lcom/applovin/impl/d8$d;->b:I
 
+    .line 5
     iput-wide p2, p0, Lcom/applovin/impl/d8$d;->c:J
 
+    .line 6
     iput-object p4, p0, Lcom/applovin/impl/d8$d;->d:Ljava/lang/Object;
 
     return-void

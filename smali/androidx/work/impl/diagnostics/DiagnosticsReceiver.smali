@@ -12,7 +12,7 @@
 
     .line 2
     .line 3
-    invoke-static {v0}, Landroidx/work/u;->b(Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v0}, Landroidx/work/A;->b(Ljava/lang/String;)Ljava/lang/String;
 
     .line 4
     .line 5
@@ -35,7 +35,7 @@
 
 # virtual methods
 .method public final onReceive(Landroid/content/Context;Landroid/content/Intent;)V
-    .locals 1
+    .locals 2
 
     .line 1
     if-nez p2, :cond_0
@@ -46,7 +46,7 @@
 
     .line 4
     :cond_0
-    invoke-static {}, Landroidx/work/u;->a()Landroidx/work/u;
+    invoke-static {}, Landroidx/work/A;->a()Landroidx/work/A;
 
     .line 5
     .line 6
@@ -60,7 +60,7 @@
     .line 10
     .line 11
     :try_start_0
-    invoke-static {p1}, Landroidx/work/impl/i0;->g(Landroid/content/Context;)Landroidx/work/impl/i0;
+    invoke-static {p1}, Landroidx/work/impl/n;->A(Landroid/content/Context;)Landroidx/work/impl/n;
 
     .line 12
     .line 13
@@ -72,51 +72,54 @@
 
     .line 16
     .line 17
-    new-instance v0, Landroidx/work/w;
+    new-instance v0, Landroidx/work/u;
 
     .line 18
     .line 19
-    invoke-direct {v0, p2}, Landroidx/work/h0;-><init>(Ljava/lang/Class;)V
+    const/4 v1, 0x0
 
     .line 20
+    invoke-direct {v0, v1, p2}, Landroidx/work/u;-><init>(ILjava/lang/Class;)V
+
     .line 21
     .line 22
-    invoke-virtual {v0}, Landroidx/work/h0;->a()Landroidx/work/i0;
-
     .line 23
+    invoke-virtual {v0}, LZ/k;->a()Landroidx/work/C;
+
     .line 24
     .line 25
+    .line 26
     move-result-object p2
 
-    .line 26
-    check-cast p2, Landroidx/work/x;
-
     .line 27
+    check-cast p2, Landroidx/work/v;
+
     .line 28
-    invoke-virtual {p1, p2}, Landroidx/work/g0;->b(Landroidx/work/x;)V
+    .line 29
+    invoke-virtual {p1, p2}, Landroidx/work/B;->e(Landroidx/work/v;)V
     :try_end_0
     .catch Ljava/lang/IllegalStateException; {:try_start_0 .. :try_end_0} :catch_0
 
-    .line 29
     .line 30
     .line 31
+    .line 32
     goto :goto_0
 
-    .line 32
-    :catch_0
-    invoke-static {}, Landroidx/work/u;->a()Landroidx/work/u;
-
     .line 33
+    :catch_0
+    invoke-static {}, Landroidx/work/A;->a()Landroidx/work/A;
+
     .line 34
     .line 35
+    .line 36
     move-result-object p1
 
-    .line 36
+    .line 37
     invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
-    .line 37
     .line 38
     .line 39
+    .line 40
     :goto_0
     return-void
 .end method

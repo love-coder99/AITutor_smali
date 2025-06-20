@@ -41,34 +41,37 @@
     .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
+    .line 2
     iput p1, p0, Lcom/applovin/impl/fm$c;->c:I
 
+    .line 3
     iput-object p2, p0, Lcom/applovin/impl/fm$c;->a:Lcom/applovin/impl/fm$b;
 
+    .line 4
     iput-object p3, p0, Lcom/applovin/impl/fm$c;->g:Lcom/applovin/impl/sdk/j;
 
-    .line 2
+    .line 5
     invoke-virtual {p3}, Lcom/applovin/impl/sdk/j;->I()Lcom/applovin/impl/sdk/n;
 
     move-result-object p2
 
     iput-object p2, p0, Lcom/applovin/impl/fm$c;->h:Lcom/applovin/impl/sdk/n;
 
-    .line 3
+    .line 6
     new-instance p2, Ljava/lang/Object;
 
     invoke-direct {p2}, Ljava/lang/Object;-><init>()V
 
     iput-object p2, p0, Lcom/applovin/impl/fm$c;->b:Ljava/lang/Object;
 
-    .line 4
+    .line 7
     new-instance p2, Ljava/util/ArrayList;
 
     invoke-direct {p2, p1}, Ljava/util/ArrayList;-><init>(I)V
 
     iput-object p2, p0, Lcom/applovin/impl/fm$c;->f:Ljava/util/Collection;
 
-    .line 5
+    .line 8
     new-instance p1, Ljava/util/concurrent/atomic/AtomicBoolean;
 
     invoke-direct {p1}, Ljava/util/concurrent/atomic/AtomicBoolean;-><init>()V
@@ -81,7 +84,7 @@
 .method public synthetic constructor <init>(ILcom/applovin/impl/fm$b;Lcom/applovin/impl/sdk/j;Lcom/applovin/impl/fm$a;)V
     .locals 0
 
-    .line 6
+    .line 9
     invoke-direct {p0, p1, p2, p3}, Lcom/applovin/impl/fm$c;-><init>(ILcom/applovin/impl/fm$b;Lcom/applovin/impl/sdk/j;)V
 
     return-void
@@ -90,9 +93,9 @@
 .method private a()V
     .locals 9
 
+    .line 2
     iget-object v0, p0, Lcom/applovin/impl/fm$c;->b:Ljava/lang/Object;
 
-    .line 2
     monitor-enter v0
 
     .line 3
@@ -143,36 +146,36 @@
 
     move-result-object v4
 
+    .line 9
     const-string v5, "name"
 
-    .line 9
     invoke-virtual {v4}, Lcom/applovin/impl/oe;->c()Ljava/lang/String;
 
     move-result-object v6
 
     invoke-virtual {v3, v5, v6}, Lorg/json/JSONObject;->put(Ljava/lang/String;Ljava/lang/Object;)Lorg/json/JSONObject;
 
+    .line 10
     const-string v5, "class"
 
-    .line 10
     invoke-virtual {v4}, Lcom/applovin/impl/oe;->b()Ljava/lang/String;
 
     move-result-object v6
 
     invoke-virtual {v3, v5, v6}, Lorg/json/JSONObject;->put(Ljava/lang/String;Ljava/lang/Object;)Lorg/json/JSONObject;
 
+    .line 11
     const-string v5, "adapter_version"
 
-    .line 11
     invoke-virtual {v2}, Lcom/applovin/impl/yj;->a()Ljava/lang/String;
 
     move-result-object v6
 
     invoke-virtual {v3, v5, v6}, Lorg/json/JSONObject;->put(Ljava/lang/String;Ljava/lang/Object;)Lorg/json/JSONObject;
 
+    .line 12
     const-string v5, "sdk_version"
 
-    .line 12
     invoke-virtual {v2}, Lcom/applovin/impl/yj;->d()Ljava/lang/String;
 
     move-result-object v6
@@ -191,9 +194,9 @@
 
     if-eqz v6, :cond_1
 
+    .line 15
     const-string v7, "error_message"
 
-    .line 15
     invoke-interface {v6}, Lcom/applovin/mediation/MaxError;->getMessage()Ljava/lang/String;
 
     move-result-object v6
@@ -207,38 +210,38 @@
 
     goto :goto_2
 
+    .line 16
     :cond_1
     const-string v6, "signal"
 
-    .line 16
     invoke-virtual {v2}, Lcom/applovin/impl/yj;->e()Ljava/lang/String;
 
     move-result-object v7
 
     invoke-virtual {v5, v6, v7}, Lorg/json/JSONObject;->put(Ljava/lang/String;Ljava/lang/Object;)Lorg/json/JSONObject;
 
+    .line 17
     :goto_1
     const-string v6, "signal_collection_time_ms"
 
-    .line 17
     invoke-virtual {v2}, Lcom/applovin/impl/yj;->b()J
 
     move-result-wide v7
 
     invoke-virtual {v5, v6, v7, v8}, Lorg/json/JSONObject;->put(Ljava/lang/String;J)Lorg/json/JSONObject;
 
+    .line 18
     const-string v6, "is_cached"
 
-    .line 18
     invoke-virtual {v2}, Lcom/applovin/impl/yj;->g()Z
 
     move-result v2
 
     invoke-virtual {v5, v6, v2}, Lorg/json/JSONObject;->put(Ljava/lang/String;Z)Lorg/json/JSONObject;
 
+    .line 19
     const-string v2, "data"
 
-    .line 19
     invoke-virtual {v3, v2, v5}, Lorg/json/JSONObject;->put(Ljava/lang/String;Ljava/lang/Object;)Lorg/json/JSONObject;
 
     .line 20
@@ -291,10 +294,10 @@
 
     invoke-virtual {v3, v4, v5, v2}, Lcom/applovin/impl/sdk/n;->a(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)V
 
+    .line 23
     :cond_2
     iget-object v3, p0, Lcom/applovin/impl/fm$c;->g:Lcom/applovin/impl/sdk/j;
 
-    .line 23
     invoke-virtual {v3}, Lcom/applovin/impl/sdk/j;->D()Lcom/applovin/impl/la;
 
     move-result-object v3
@@ -337,11 +340,12 @@
 .method private a(Lorg/json/JSONArray;)V
     .locals 1
 
+    .line 26
     iget-object v0, p0, Lcom/applovin/impl/fm$c;->a:Lcom/applovin/impl/fm$b;
 
     if-eqz v0, :cond_0
 
-    .line 26
+    .line 27
     invoke-interface {v0, p1}, Lcom/applovin/impl/fm$b;->a(Lorg/json/JSONArray;)V
 
     :cond_0
@@ -353,17 +357,18 @@
 .method public a(Lcom/applovin/impl/yj;)V
     .locals 3
 
+    .line 28
     iget-object v0, p0, Lcom/applovin/impl/fm$c;->b:Ljava/lang/Object;
 
-    .line 27
     monitor-enter v0
 
+    .line 29
     :try_start_0
     iget-object v1, p0, Lcom/applovin/impl/fm$c;->f:Ljava/util/Collection;
 
-    .line 28
     invoke-interface {v1, p1}, Ljava/util/Collection;->add(Ljava/lang/Object;)Z
 
+    .line 30
     iget p1, p0, Lcom/applovin/impl/fm$c;->c:I
 
     const/4 v1, 0x1
@@ -383,7 +388,7 @@
     :cond_0
     const/4 p1, 0x0
 
-    .line 29
+    .line 31
     :goto_0
     monitor-exit v0
     :try_end_0
@@ -391,16 +396,16 @@
 
     if-eqz p1, :cond_2
 
+    .line 32
     iget-object p1, p0, Lcom/applovin/impl/fm$c;->d:Ljava/util/concurrent/atomic/AtomicBoolean;
 
-    .line 30
     invoke-virtual {p1, v2, v1}, Ljava/util/concurrent/atomic/AtomicBoolean;->compareAndSet(ZZ)Z
 
     move-result p1
 
     if-eqz p1, :cond_2
 
-    .line 31
+    .line 33
     invoke-static {}, Lcom/applovin/impl/yp;->h()Z
 
     move-result p1
@@ -423,22 +428,24 @@
 
     if-eqz p1, :cond_1
 
-    .line 32
+    .line 34
     new-instance p1, Lcom/applovin/impl/jn;
 
     iget-object v0, p0, Lcom/applovin/impl/fm$c;->g:Lcom/applovin/impl/sdk/j;
 
-    new-instance v1, Lcom/applovin/impl/wt;
+    new-instance v1, Lcom/applovin/impl/P0;
 
-    invoke-direct {v1, p0, v2}, Lcom/applovin/impl/wt;-><init>(Ljava/lang/Object;I)V
+    const/4 v2, 0x0
+
+    invoke-direct {v1, p0, v2}, Lcom/applovin/impl/P0;-><init>(Ljava/lang/Object;I)V
 
     const-string v2, "handleSignalCollectionCompleted"
 
     invoke-direct {p1, v0, v2, v1}, Lcom/applovin/impl/jn;-><init>(Lcom/applovin/impl/sdk/j;Ljava/lang/String;Ljava/lang/Runnable;)V
 
+    .line 35
     iget-object v0, p0, Lcom/applovin/impl/fm$c;->g:Lcom/applovin/impl/sdk/j;
 
-    .line 33
     invoke-virtual {v0}, Lcom/applovin/impl/sdk/j;->i0()Lcom/applovin/impl/tm;
 
     move-result-object v0
@@ -449,7 +456,7 @@
 
     goto :goto_1
 
-    .line 34
+    .line 36
     :cond_1
     invoke-direct {p0}, Lcom/applovin/impl/fm$c;->a()V
 
@@ -460,7 +467,7 @@
     :catchall_0
     move-exception p1
 
-    .line 35
+    .line 37
     :try_start_1
     monitor-exit v0
     :try_end_1

@@ -46,27 +46,28 @@
 .method private a(Ljava/lang/String;)I
     .locals 2
 
+    .line 10
     iget v0, p0, Lcom/apm/insight/nativecrash/a$e;->d:I
 
+    .line 11
     iget-object v1, p0, Lcom/apm/insight/nativecrash/a$e;->b:Ljava/lang/String;
 
-    .line 10
     invoke-virtual {p1, v1}, Ljava/lang/String;->startsWith(Ljava/lang/String;)Z
 
     move-result v1
 
     if-eqz v1, :cond_0
 
+    .line 12
     iget-object v1, p0, Lcom/apm/insight/nativecrash/a$e;->c:Ljava/lang/String;
 
-    .line 11
     invoke-virtual {p1, v1}, Ljava/lang/String;->split(Ljava/lang/String;)[Ljava/lang/String;
 
     move-result-object p1
 
     const/4 v1, 0x1
 
-    .line 12
+    .line 13
     :try_start_0
     aget-object p1, p1, v1
 
@@ -85,12 +86,12 @@
     :catch_0
     move-exception p1
 
-    .line 13
+    .line 14
     invoke-static {}, Lcom/apm/insight/c;->a()Lcom/apm/insight/b/a;
 
     const-string v1, "NPTH_CATCH"
 
-    .line 14
+    .line 15
     invoke-static {p1, v1}, Lcom/apm/insight/runtime/k;->a(Ljava/lang/Throwable;Ljava/lang/String;)V
 
     :goto_0
@@ -107,9 +108,9 @@
 .method public final a()I
     .locals 4
 
+    .line 1
     iget-object v0, p0, Lcom/apm/insight/nativecrash/a$e;->a:Ljava/io/File;
 
-    .line 1
     invoke-virtual {v0}, Ljava/io/File;->exists()Z
 
     move-result v0

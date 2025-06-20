@@ -32,17 +32,17 @@
     .locals 3
 
     .line 1
-    new-instance v0, Lcom/applovin/impl/yt;
+    new-instance v0, Lcom/applovin/impl/R0;
 
     const/4 v1, 0x0
 
-    invoke-direct {v0, p1, v1}, Lcom/applovin/impl/yt;-><init>(II)V
+    invoke-direct {v0, p1, v1}, Lcom/applovin/impl/R0;-><init>(II)V
 
-    new-instance v1, Lcom/applovin/impl/yt;
+    new-instance v1, Lcom/applovin/impl/R0;
 
     const/4 v2, 0x1
 
-    invoke-direct {v1, p1, v2}, Lcom/applovin/impl/yt;-><init>(II)V
+    invoke-direct {v1, p1, v2}, Lcom/applovin/impl/R0;-><init>(II)V
 
     invoke-direct {p0, v0, v1, p2, p3}, Lcom/applovin/impl/g1$b;-><init>(Lcom/applovin/exoplayer2/common/base/Supplier;Lcom/applovin/exoplayer2/common/base/Supplier;ZZ)V
 
@@ -55,12 +55,16 @@
     .line 2
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
+    .line 3
     iput-object p1, p0, Lcom/applovin/impl/g1$b;->b:Lcom/applovin/exoplayer2/common/base/Supplier;
 
+    .line 4
     iput-object p2, p0, Lcom/applovin/impl/g1$b;->c:Lcom/applovin/exoplayer2/common/base/Supplier;
 
+    .line 5
     iput-boolean p3, p0, Lcom/applovin/impl/g1$b;->d:Z
 
+    .line 6
     iput-boolean p4, p0, Lcom/applovin/impl/g1$b;->e:Z
 
     return-void
@@ -100,7 +104,7 @@
     .locals 0
 
     .line 1
-    invoke-static {p0}, Lcom/applovin/impl/g1$b;->b(I)Landroid/os/HandlerThread;
+    invoke-static {p0}, Lcom/applovin/impl/g1$b;->a(I)Landroid/os/HandlerThread;
 
     move-result-object p0
 
@@ -111,7 +115,7 @@
     .locals 0
 
     .line 1
-    invoke-static {p0}, Lcom/applovin/impl/g1$b;->a(I)Landroid/os/HandlerThread;
+    invoke-static {p0}, Lcom/applovin/impl/g1$b;->b(I)Landroid/os/HandlerThread;
 
     move-result-object p0
 
@@ -134,9 +138,9 @@
 .method public b(Lcom/applovin/impl/gd$a;)Lcom/applovin/impl/g1;
     .locals 10
 
+    .line 1
     const-string v0, "createCodec:"
 
-    .line 1
     iget-object v1, p1, Lcom/applovin/impl/gd$a;->a:Lcom/applovin/impl/jd;
 
     iget-object v1, v1, Lcom/applovin/impl/jd;->a:Ljava/lang/String;

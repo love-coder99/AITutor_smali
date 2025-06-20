@@ -246,56 +246,79 @@
 .method public getAlogUploadUrl()Ljava/lang/String;
     .locals 1
 
+    .line 1
     iget-object v0, p0, Lcom/apm/insight/runtime/ConfigManager;->mAlogUploadUrl:Ljava/lang/String;
 
+    .line 2
+    .line 3
     return-object v0
 .end method
 
 .method public getAsanReportUploadUrl()Ljava/lang/String;
     .locals 1
 
+    .line 1
     iget-object v0, p0, Lcom/apm/insight/runtime/ConfigManager;->mAsanReportUploadUrl:Ljava/lang/String;
 
+    .line 2
+    .line 3
     return-object v0
 .end method
 
 .method public getBlockInterval()J
     .locals 2
 
+    .line 1
     iget-wide v0, p0, Lcom/apm/insight/runtime/ConfigManager;->mBlockMonitorInterval:J
 
+    .line 2
+    .line 3
     return-wide v0
 .end method
 
 .method public getConfigUrl()Ljava/lang/String;
     .locals 1
 
+    .line 1
     iget-object v0, p0, Lcom/apm/insight/runtime/ConfigManager;->mConfigUrl:Ljava/lang/String;
 
+    .line 2
+    .line 3
     return-object v0
 .end method
 
 .method public getCoreDumpUrl()Ljava/lang/String;
     .locals 1
 
+    .line 1
     iget-object v0, p0, Lcom/apm/insight/runtime/ConfigManager;->mCoreDumpUrl:Ljava/lang/String;
 
+    .line 2
+    .line 3
     return-object v0
 .end method
 
 .method public getEncryptImpl$1546c4a2()Lcom/apm/insight/b/i$a;
     .locals 1
+    .annotation build Landroidx/annotation/NonNull;
+    .end annotation
 
+    .line 1
     iget-object v0, p0, Lcom/apm/insight/runtime/ConfigManager;->mEncryptImpl$1c14659d:Lcom/apm/insight/b/i$a;
 
+    .line 2
+    .line 3
     return-object v0
 .end method
 
 .method public getExceptionUploadUrl()Ljava/lang/String;
     .locals 1
 
+    .line 1
     iget-object v0, p0, Lcom/apm/insight/runtime/ConfigManager;->mExceptionUploadUrl:Ljava/lang/String;
 
+    .line 2
+    .line 3
     return-object v0
 .end method
 
@@ -325,64 +348,88 @@
 .method public getJavaCrashUploadUrl()Ljava/lang/String;
     .locals 1
 
+    .line 1
     iget-object v0, p0, Lcom/apm/insight/runtime/ConfigManager;->mJavaCrashUploadUrl:Ljava/lang/String;
 
+    .line 2
+    .line 3
     return-object v0
 .end method
 
 .method public getLaunchCrashInterval()J
     .locals 2
 
+    .line 1
     iget-wide v0, p0, Lcom/apm/insight/runtime/ConfigManager;->mLaunchCrashInterval:J
 
+    .line 2
+    .line 3
     return-wide v0
 .end method
 
 .method public getLaunchCrashUploadUrl()Ljava/lang/String;
     .locals 1
 
+    .line 1
     iget-object v0, p0, Lcom/apm/insight/runtime/ConfigManager;->mLaunchCrashUploadUrl:Ljava/lang/String;
 
+    .line 2
+    .line 3
     return-object v0
 .end method
 
 .method public getLogcatDumpCount()I
     .locals 1
 
+    .line 1
     iget v0, p0, Lcom/apm/insight/runtime/ConfigManager;->mLogcatDumpCount:I
 
+    .line 2
+    .line 3
     return v0
 .end method
 
 .method public getLogcatLevel()I
     .locals 1
 
+    .line 1
     iget v0, p0, Lcom/apm/insight/runtime/ConfigManager;->mLogcatLevel:I
 
+    .line 2
+    .line 3
     return v0
 .end method
 
 .method public getNativeCrashUploadUrl()Ljava/lang/String;
     .locals 1
 
+    .line 1
     iget-object v0, p0, Lcom/apm/insight/runtime/ConfigManager;->mNativeCrashUploadUrl:Ljava/lang/String;
 
+    .line 2
+    .line 3
     return-object v0
 .end method
 
 .method public getNativeMemUrl()Ljava/lang/String;
     .locals 1
 
+    .line 1
     iget-object v0, p0, Lcom/apm/insight/runtime/ConfigManager;->mNativeMemUrl:Ljava/lang/String;
 
+    .line 2
+    .line 3
     return-object v0
 .end method
 
 .method public getThreadPoolExecutor()Ljava/util/concurrent/ThreadPoolExecutor;
     .locals 1
 
+    .line 1
     iget-object v0, p0, Lcom/apm/insight/runtime/ConfigManager;->mThreadPoolExecutor:Ljava/util/concurrent/ThreadPoolExecutor;
 
+    .line 2
+    .line 3
     return-object v0
 .end method
 
@@ -404,8 +451,11 @@
 .method public isBlockMonitorEnable()Z
     .locals 1
 
+    .line 1
     iget-boolean v0, p0, Lcom/apm/insight/runtime/ConfigManager;->mBlockMonitorEnable:Z
 
+    .line 2
+    .line 3
     return v0
 .end method
 
@@ -495,40 +545,55 @@
 .method public isDebugMode()Z
     .locals 1
 
+    .line 1
     iget-boolean v0, p0, Lcom/apm/insight/runtime/ConfigManager;->mIsDebugMode:Z
 
+    .line 2
+    .line 3
     return v0
 .end method
 
 .method public isEnsureEnable()Z
     .locals 1
 
+    .line 1
     iget-boolean v0, p0, Lcom/apm/insight/runtime/ConfigManager;->mEnsureEnable:Z
 
+    .line 2
+    .line 3
     return v0
 .end method
 
 .method public isEnsureWithLogcat()Z
     .locals 1
 
+    .line 1
     iget-boolean v0, p0, Lcom/apm/insight/runtime/ConfigManager;->mEnsureWithLogcat:Z
 
+    .line 2
+    .line 3
     return v0
 .end method
 
 .method public isNativeCrashMiniDump()Z
     .locals 1
 
+    .line 1
     iget-boolean v0, p0, Lcom/apm/insight/runtime/ConfigManager;->mNativeCrashMiniDump:Z
 
+    .line 2
+    .line 3
     return v0
 .end method
 
 .method public isReportErrorEnable()Z
     .locals 1
 
+    .line 1
     iget-boolean v0, p0, Lcom/apm/insight/runtime/ConfigManager;->reportErrorEnable:Z
 
+    .line 2
+    .line 3
     return v0
 .end method
 
@@ -562,16 +627,22 @@
 .method public setBlockMonitorEnable(Z)V
     .locals 0
 
+    .line 1
     iput-boolean p1, p0, Lcom/apm/insight/runtime/ConfigManager;->mBlockMonitorEnable:Z
 
+    .line 2
+    .line 3
     return-void
 .end method
 
 .method public setBlockMonitorInterval(J)V
     .locals 0
 
+    .line 1
     iput-wide p1, p0, Lcom/apm/insight/runtime/ConfigManager;->mBlockMonitorInterval:J
 
+    .line 2
+    .line 3
     return-void
 .end method
 
@@ -617,18 +688,26 @@
 .method public setDebugMode(Z)V
     .locals 0
 
+    .line 1
     iput-boolean p1, p0, Lcom/apm/insight/runtime/ConfigManager;->mIsDebugMode:Z
 
+    .line 2
+    .line 3
     return-void
 .end method
 
 .method public setEncryptImpl$22f2d42e(Lcom/apm/insight/b/i$a;)V
     .locals 0
 
+    .line 1
     if-eqz p1, :cond_0
 
+    .line 2
+    .line 3
     iput-object p1, p0, Lcom/apm/insight/runtime/ConfigManager;->mEncryptImpl$1c14659d:Lcom/apm/insight/b/i$a;
 
+    .line 4
+    .line 5
     :cond_0
     return-void
 .end method
@@ -636,16 +715,22 @@
 .method public setEnsureEnable(Z)V
     .locals 0
 
+    .line 1
     iput-boolean p1, p0, Lcom/apm/insight/runtime/ConfigManager;->mEnsureEnable:Z
 
+    .line 2
+    .line 3
     return-void
 .end method
 
 .method public setEnsureWithLogcat(Z)V
     .locals 0
 
+    .line 1
     iput-boolean p1, p0, Lcom/apm/insight/runtime/ConfigManager;->mEnsureWithLogcat:Z
 
+    .line 2
+    .line 3
     return-void
 .end method
 
@@ -679,14 +764,23 @@
 .method public setLaunchCrashInterval(J)V
     .locals 3
 
+    .line 1
     const-wide/16 v0, 0x0
 
+    .line 2
+    .line 3
     cmp-long v2, p1, v0
 
+    .line 4
+    .line 5
     if-lez v2, :cond_0
 
+    .line 6
+    .line 7
     iput-wide p1, p0, Lcom/apm/insight/runtime/ConfigManager;->mLaunchCrashInterval:J
 
+    .line 8
+    .line 9
     :cond_0
     return-void
 .end method
@@ -861,10 +955,15 @@
 .method public setLogcatDumpCount(I)V
     .locals 0
 
+    .line 1
     if-lez p1, :cond_0
 
+    .line 2
+    .line 3
     iput p1, p0, Lcom/apm/insight/runtime/ConfigManager;->mLogcatDumpCount:I
 
+    .line 4
+    .line 5
     :cond_0
     return-void
 .end method
@@ -872,14 +971,22 @@
 .method public setLogcatLevel(I)V
     .locals 1
 
+    .line 1
     if-ltz p1, :cond_0
 
+    .line 2
+    .line 3
     const/4 v0, 0x4
 
+    .line 4
     if-gt p1, v0, :cond_0
 
+    .line 5
+    .line 6
     iput p1, p0, Lcom/apm/insight/runtime/ConfigManager;->mLogcatLevel:I
 
+    .line 7
+    .line 8
     :cond_0
     return-void
 .end method
@@ -914,15 +1021,21 @@
 .method public setReportErrorEnable(Z)V
     .locals 0
 
+    .line 1
     iput-boolean p1, p0, Lcom/apm/insight/runtime/ConfigManager;->reportErrorEnable:Z
 
+    .line 2
+    .line 3
     return-void
 .end method
 
 .method public setThreadPoolExecutor(Ljava/util/concurrent/ThreadPoolExecutor;)V
     .locals 0
 
+    .line 1
     iput-object p1, p0, Lcom/apm/insight/runtime/ConfigManager;->mThreadPoolExecutor:Ljava/util/concurrent/ThreadPoolExecutor;
 
+    .line 2
+    .line 3
     return-void
 .end method

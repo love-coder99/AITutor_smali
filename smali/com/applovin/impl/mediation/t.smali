@@ -21,97 +21,110 @@
     .locals 0
 
     .line 1
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
-
-    .line 2
-    .line 3
-    .line 4
     iput p2, p0, Lcom/applovin/impl/mediation/t;->b:I
 
-    .line 5
-    .line 6
     iput-object p1, p0, Lcom/applovin/impl/mediation/t;->c:Ljava/lang/Object;
 
-    .line 7
-    .line 8
     iput-object p3, p0, Lcom/applovin/impl/mediation/t;->d:Ljava/lang/Object;
 
-    .line 9
-    .line 10
     iput-object p4, p0, Lcom/applovin/impl/mediation/t;->f:Ljava/lang/Object;
 
-    .line 11
-    .line 12
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
     return-void
 .end method
 
 
 # virtual methods
 .method public final run()V
-    .locals 4
+    .locals 3
 
     .line 1
     iget v0, p0, Lcom/applovin/impl/mediation/t;->b:I
 
-    iget-object v1, p0, Lcom/applovin/impl/mediation/t;->f:Ljava/lang/Object;
-
-    iget-object v2, p0, Lcom/applovin/impl/mediation/t;->d:Ljava/lang/Object;
-
-    iget-object v3, p0, Lcom/applovin/impl/mediation/t;->c:Ljava/lang/Object;
-
     packed-switch v0, :pswitch_data_0
 
-    check-cast v3, Lcom/applovin/impl/mediation/g;
+    iget-object v0, p0, Lcom/applovin/impl/mediation/t;->d:Ljava/lang/Object;
 
-    check-cast v2, Lcom/applovin/impl/fe;
+    check-cast v0, Ljava/lang/String;
 
-    check-cast v1, Landroid/app/Activity;
+    iget-object v1, p0, Lcom/applovin/impl/mediation/t;->f:Ljava/lang/Object;
 
-    invoke-static {v3, v2, v1}, Lcom/applovin/impl/mediation/g;->t(Lcom/applovin/impl/mediation/g;Lcom/applovin/impl/fe;Landroid/app/Activity;)V
+    check-cast v1, Ljava/lang/Runnable;
+
+    iget-object v2, p0, Lcom/applovin/impl/mediation/t;->c:Ljava/lang/Object;
+
+    check-cast v2, Lcom/applovin/impl/mediation/g;
+
+    invoke-static {v2, v0, v1}, Lcom/applovin/impl/mediation/g;->e(Lcom/applovin/impl/mediation/g;Ljava/lang/String;Ljava/lang/Runnable;)V
 
     return-void
 
     :pswitch_0
-    check-cast v3, Lcom/applovin/impl/mediation/g;
+    iget-object v0, p0, Lcom/applovin/impl/mediation/t;->f:Ljava/lang/Object;
+
+    check-cast v0, Ljava/lang/Runnable;
+
+    iget-object v1, p0, Lcom/applovin/impl/mediation/t;->c:Ljava/lang/Object;
+
+    check-cast v1, Lcom/applovin/impl/mediation/g;
+
+    iget-object v2, p0, Lcom/applovin/impl/mediation/t;->d:Ljava/lang/Object;
 
     check-cast v2, Lcom/applovin/impl/fe;
 
-    check-cast v1, Ljava/lang/Runnable;
-
-    invoke-static {v3, v2, v1}, Lcom/applovin/impl/mediation/g;->g(Lcom/applovin/impl/mediation/g;Lcom/applovin/impl/fe;Ljava/lang/Runnable;)V
+    invoke-static {v1, v2, v0}, Lcom/applovin/impl/mediation/g;->c(Lcom/applovin/impl/mediation/g;Lcom/applovin/impl/fe;Ljava/lang/Runnable;)V
 
     return-void
 
     :pswitch_1
-    check-cast v3, Lcom/applovin/impl/mediation/g;
+    iget-object v0, p0, Lcom/applovin/impl/mediation/t;->d:Ljava/lang/Object;
 
-    check-cast v2, Ljava/lang/String;
+    check-cast v0, Lcom/applovin/impl/fe;
 
-    check-cast v1, Ljava/lang/Runnable;
+    iget-object v1, p0, Lcom/applovin/impl/mediation/t;->f:Ljava/lang/Object;
 
-    invoke-static {v3, v2, v1}, Lcom/applovin/impl/mediation/g;->f(Lcom/applovin/impl/mediation/g;Ljava/lang/String;Ljava/lang/Runnable;)V
+    check-cast v1, Landroid/app/Activity;
+
+    iget-object v2, p0, Lcom/applovin/impl/mediation/t;->c:Ljava/lang/Object;
+
+    check-cast v2, Lcom/applovin/impl/mediation/g;
+
+    invoke-static {v2, v0, v1}, Lcom/applovin/impl/mediation/g;->u(Lcom/applovin/impl/mediation/g;Lcom/applovin/impl/fe;Landroid/app/Activity;)V
 
     return-void
 
     :pswitch_2
-    check-cast v3, Lcom/applovin/impl/mediation/g$e;
+    iget-object v0, p0, Lcom/applovin/impl/mediation/t;->d:Ljava/lang/Object;
 
-    check-cast v2, Lcom/applovin/mediation/adapter/MaxAdapter$InitializationStatus;
+    check-cast v0, Lcom/applovin/mediation/adapter/MaxAdapter$InitializationStatus;
+
+    iget-object v1, p0, Lcom/applovin/impl/mediation/t;->f:Ljava/lang/Object;
 
     check-cast v1, Ljava/lang/String;
 
-    invoke-static {v3, v2, v1}, Lcom/applovin/impl/mediation/g$e;->a(Lcom/applovin/impl/mediation/g$e;Lcom/applovin/mediation/adapter/MaxAdapter$InitializationStatus;Ljava/lang/String;)V
+    iget-object v2, p0, Lcom/applovin/impl/mediation/t;->c:Ljava/lang/Object;
+
+    check-cast v2, Lcom/applovin/impl/mediation/g$e;
+
+    invoke-static {v2, v0, v1}, Lcom/applovin/impl/mediation/g$e;->a(Lcom/applovin/impl/mediation/g$e;Lcom/applovin/mediation/adapter/MaxAdapter$InitializationStatus;Ljava/lang/String;)V
 
     return-void
 
     :pswitch_3
-    check-cast v3, Lcom/applovin/impl/mediation/g$d;
+    iget-object v0, p0, Lcom/applovin/impl/mediation/t;->d:Ljava/lang/Object;
 
-    check-cast v2, Lcom/applovin/mediation/MaxError;
+    check-cast v0, Lcom/applovin/mediation/MaxError;
+
+    iget-object v1, p0, Lcom/applovin/impl/mediation/t;->f:Ljava/lang/Object;
 
     check-cast v1, Landroid/os/Bundle;
 
-    invoke-static {v3, v2, v1}, Lcom/applovin/impl/mediation/g$d;->e(Lcom/applovin/impl/mediation/g$d;Lcom/applovin/mediation/MaxError;Landroid/os/Bundle;)V
+    iget-object v2, p0, Lcom/applovin/impl/mediation/t;->c:Ljava/lang/Object;
+
+    check-cast v2, Lcom/applovin/impl/mediation/g$d;
+
+    invoke-static {v2, v0, v1}, Lcom/applovin/impl/mediation/g$d;->k(Lcom/applovin/impl/mediation/g$d;Lcom/applovin/mediation/MaxError;Landroid/os/Bundle;)V
 
     return-void
 

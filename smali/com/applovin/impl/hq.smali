@@ -132,17 +132,17 @@
 
     return-object p1
 
+    .line 8
     :cond_0
     const-string v0, "api_framework"
 
-    .line 8
     invoke-static {p0, v0, p1}, Lcom/applovin/impl/sdk/utils/JsonUtils;->getString(Lorg/json/JSONObject;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v0
 
+    .line 9
     const-string v1, "javascript_resource_url"
 
-    .line 9
     invoke-static {p0, v1, p1}, Lcom/applovin/impl/sdk/utils/JsonUtils;->getString(Lorg/json/JSONObject;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object p0
@@ -165,18 +165,18 @@
 
     invoke-direct {v0}, Lorg/json/JSONObject;-><init>()V
 
+    .line 12
     iget-object v1, p0, Lcom/applovin/impl/hq;->a:Ljava/lang/String;
 
     const-string v2, "api_framework"
 
-    .line 12
     invoke-static {v0, v2, v1}, Lcom/applovin/impl/sdk/utils/JsonUtils;->putString(Lorg/json/JSONObject;Ljava/lang/String;Ljava/lang/String;)V
 
+    .line 13
     iget-object v1, p0, Lcom/applovin/impl/hq;->b:Ljava/lang/String;
 
     const-string v2, "javascript_resource_url"
 
-    .line 13
     invoke-static {v0, v2, v1}, Lcom/applovin/impl/sdk/utils/JsonUtils;->putString(Lorg/json/JSONObject;Ljava/lang/String;Ljava/lang/String;)V
 
     return-object v0
@@ -185,16 +185,22 @@
 .method public b()Ljava/lang/String;
     .locals 1
 
+    .line 1
     iget-object v0, p0, Lcom/applovin/impl/hq;->a:Ljava/lang/String;
 
+    .line 2
+    .line 3
     return-object v0
 .end method
 
 .method public c()Ljava/lang/String;
     .locals 1
 
+    .line 1
     iget-object v0, p0, Lcom/applovin/impl/hq;->b:Ljava/lang/String;
 
+    .line 2
+    .line 3
     return-object v0
 .end method
 
@@ -434,7 +440,7 @@
 
     .line 21
     .line 22
-    invoke-static {v0, v1, v2}, Landroid/support/v4/media/session/a;->I(Ljava/lang/StringBuilder;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v0, v1, v2}, LB/u;->w(Ljava/lang/StringBuilder;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     .line 23
     .line 24

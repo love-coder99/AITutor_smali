@@ -1,43 +1,74 @@
-.class public interface abstract Lcom/applovin/impl/l3;
+.class public final synthetic Lcom/applovin/impl/L3;
 .super Ljava/lang/Object;
 .source "SourceFile"
 
+# interfaces
+.implements Ljava/lang/Runnable;
 
-# static fields
-.field public static final a:Lcom/applovin/impl/l3;
+
+# instance fields
+.field public final synthetic b:I
+
+.field public final synthetic c:Lcom/applovin/impl/w9;
 
 
 # direct methods
-.method static constructor <clinit>()V
-    .locals 1
+.method public synthetic constructor <init>(Lcom/applovin/impl/w9;I)V
+    .locals 0
 
     .line 1
-    new-instance v0, Lcom/applovin/impl/vl;
+    iput p2, p0, Lcom/applovin/impl/L3;->b:I
 
-    .line 2
-    .line 3
-    invoke-direct {v0}, Lcom/applovin/impl/vl;-><init>()V
+    iput-object p1, p0, Lcom/applovin/impl/L3;->c:Lcom/applovin/impl/w9;
 
-    .line 4
-    .line 5
-    .line 6
-    sput-object v0, Lcom/applovin/impl/l3;->a:Lcom/applovin/impl/l3;
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 7
-    .line 8
     return-void
 .end method
 
 
 # virtual methods
-.method public abstract a()J
-.end method
+.method public final run()V
+    .locals 1
 
-.method public abstract a(Landroid/os/Looper;Landroid/os/Handler$Callback;)Lcom/applovin/impl/ia;
-.end method
+    .line 1
+    iget v0, p0, Lcom/applovin/impl/L3;->b:I
 
-.method public abstract b()V
-.end method
+    packed-switch v0, :pswitch_data_0
 
-.method public abstract c()J
+    iget-object v0, p0, Lcom/applovin/impl/L3;->c:Lcom/applovin/impl/w9;
+
+    invoke-static {v0}, Lcom/applovin/impl/w9;->C(Lcom/applovin/impl/w9;)V
+
+    return-void
+
+    :pswitch_0
+    iget-object v0, p0, Lcom/applovin/impl/L3;->c:Lcom/applovin/impl/w9;
+
+    invoke-static {v0}, Lcom/applovin/impl/w9;->A(Lcom/applovin/impl/w9;)V
+
+    return-void
+
+    :pswitch_1
+    iget-object v0, p0, Lcom/applovin/impl/L3;->c:Lcom/applovin/impl/w9;
+
+    invoke-static {v0}, Lcom/applovin/impl/w9;->B(Lcom/applovin/impl/w9;)V
+
+    return-void
+
+    :pswitch_2
+    iget-object v0, p0, Lcom/applovin/impl/L3;->c:Lcom/applovin/impl/w9;
+
+    invoke-static {v0}, Lcom/applovin/impl/w9;->D(Lcom/applovin/impl/w9;)V
+
+    return-void
+
+    nop
+
+    :pswitch_data_0
+    .packed-switch 0x0
+        :pswitch_2
+        :pswitch_1
+        :pswitch_0
+    .end packed-switch
 .end method

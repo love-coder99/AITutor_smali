@@ -67,15 +67,15 @@
 
     .line 11
     .line 12
-    new-instance v0, Lcom/applovin/impl/vu;
+    new-instance v0, Lcom/applovin/impl/M1;
 
     .line 13
     .line 14
-    const/16 v1, 0xe
+    const/16 v1, 0xf
 
     .line 15
     .line 16
-    invoke-direct {v0, v1}, Lcom/applovin/impl/vu;-><init>(I)V
+    invoke-direct {v0, v1}, Lcom/applovin/impl/M1;-><init>(I)V
 
     .line 17
     .line 18
@@ -93,14 +93,19 @@
     .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
+    .line 2
     iput-wide p1, p0, Lcom/applovin/impl/sd$f;->a:J
 
+    .line 3
     iput-wide p3, p0, Lcom/applovin/impl/sd$f;->b:J
 
+    .line 4
     iput-wide p5, p0, Lcom/applovin/impl/sd$f;->c:J
 
+    .line 5
     iput p7, p0, Lcom/applovin/impl/sd$f;->d:F
 
+    .line 6
     iput p8, p0, Lcom/applovin/impl/sd$f;->f:F
 
     return-void
@@ -109,34 +114,34 @@
 .method private constructor <init>(Lcom/applovin/impl/sd$f$a;)V
     .locals 9
 
-    .line 2
+    .line 7
     invoke-static {p1}, Lcom/applovin/impl/sd$f$a;->a(Lcom/applovin/impl/sd$f$a;)J
 
     move-result-wide v1
 
-    .line 3
+    .line 8
     invoke-static {p1}, Lcom/applovin/impl/sd$f$a;->b(Lcom/applovin/impl/sd$f$a;)J
 
     move-result-wide v3
 
-    .line 4
+    .line 9
     invoke-static {p1}, Lcom/applovin/impl/sd$f$a;->c(Lcom/applovin/impl/sd$f$a;)J
 
     move-result-wide v5
 
-    .line 5
+    .line 10
     invoke-static {p1}, Lcom/applovin/impl/sd$f$a;->d(Lcom/applovin/impl/sd$f$a;)F
 
     move-result v7
 
-    .line 6
+    .line 11
     invoke-static {p1}, Lcom/applovin/impl/sd$f$a;->e(Lcom/applovin/impl/sd$f$a;)F
 
     move-result v8
 
     move-object v0, p0
 
-    .line 7
+    .line 12
     invoke-direct/range {v0 .. v8}, Lcom/applovin/impl/sd$f;-><init>(JJJFF)V
 
     return-void
@@ -145,7 +150,7 @@
 .method public synthetic constructor <init>(Lcom/applovin/impl/sd$f$a;Lcom/applovin/impl/sd$a;)V
     .locals 0
 
-    .line 8
+    .line 13
     invoke-direct {p0, p1}, Lcom/applovin/impl/sd$f;-><init>(Lcom/applovin/impl/sd$f$a;)V
 
     return-void

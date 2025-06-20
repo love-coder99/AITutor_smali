@@ -88,10 +88,10 @@
 .method private a(Ljava/nio/ByteBuffer;)Ljava/lang/String;
     .locals 2
 
+    .line 12
     :try_start_0
     iget-object v0, p0, Lcom/applovin/impl/ta;->a:Ljava/nio/charset/CharsetDecoder;
 
-    .line 12
     invoke-virtual {v0, p1}, Ljava/nio/charset/CharsetDecoder;->decode(Ljava/nio/ByteBuffer;)Ljava/nio/CharBuffer;
 
     move-result-object v0
@@ -103,9 +103,9 @@
     .catch Ljava/nio/charset/CharacterCodingException; {:try_start_0 .. :try_end_0} :catch_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
+    .line 13
     iget-object v1, p0, Lcom/applovin/impl/ta;->a:Ljava/nio/charset/CharsetDecoder;
 
-    .line 13
     invoke-virtual {v1}, Ljava/nio/charset/CharsetDecoder;->reset()Ljava/nio/charset/CharsetDecoder;
 
     .line 14
@@ -116,9 +116,9 @@
     :catchall_0
     move-exception v0
 
+    .line 15
     iget-object v1, p0, Lcom/applovin/impl/ta;->a:Ljava/nio/charset/CharsetDecoder;
 
-    .line 15
     invoke-virtual {v1}, Ljava/nio/charset/CharsetDecoder;->reset()Ljava/nio/charset/CharsetDecoder;
 
     .line 16
@@ -127,19 +127,19 @@
     .line 17
     throw v0
 
+    .line 18
     :catch_0
     iget-object v0, p0, Lcom/applovin/impl/ta;->a:Ljava/nio/charset/CharsetDecoder;
 
-    .line 18
     invoke-virtual {v0}, Ljava/nio/charset/CharsetDecoder;->reset()Ljava/nio/charset/CharsetDecoder;
 
     .line 19
     invoke-virtual {p1}, Ljava/nio/ByteBuffer;->rewind()Ljava/nio/Buffer;
 
+    .line 20
     :try_start_1
     iget-object v0, p0, Lcom/applovin/impl/ta;->b:Ljava/nio/charset/CharsetDecoder;
 
-    .line 20
     invoke-virtual {v0, p1}, Ljava/nio/charset/CharsetDecoder;->decode(Ljava/nio/ByteBuffer;)Ljava/nio/CharBuffer;
 
     move-result-object v0
@@ -151,9 +151,9 @@
     .catch Ljava/nio/charset/CharacterCodingException; {:try_start_1 .. :try_end_1} :catch_1
     .catchall {:try_start_1 .. :try_end_1} :catchall_1
 
+    .line 21
     iget-object v1, p0, Lcom/applovin/impl/ta;->b:Ljava/nio/charset/CharsetDecoder;
 
-    .line 21
     invoke-virtual {v1}, Ljava/nio/charset/CharsetDecoder;->reset()Ljava/nio/charset/CharsetDecoder;
 
     .line 22
@@ -164,9 +164,9 @@
     :catchall_1
     move-exception v0
 
+    .line 23
     iget-object v1, p0, Lcom/applovin/impl/ta;->b:Ljava/nio/charset/CharsetDecoder;
 
-    .line 23
     invoke-virtual {v1}, Ljava/nio/charset/CharsetDecoder;->reset()Ljava/nio/charset/CharsetDecoder;
 
     .line 24
@@ -175,10 +175,10 @@
     .line 25
     throw v0
 
+    .line 26
     :catch_1
     iget-object v0, p0, Lcom/applovin/impl/ta;->b:Ljava/nio/charset/CharsetDecoder;
 
-    .line 26
     invoke-virtual {v0}, Ljava/nio/charset/CharsetDecoder;->reset()Ljava/nio/charset/CharsetDecoder;
 
     .line 27
@@ -194,73 +194,73 @@
 .method public a(Lcom/applovin/impl/df;Ljava/nio/ByteBuffer;)Lcom/applovin/impl/af;
     .locals 7
 
+    const/4 p1, 0x0
+
+    const/4 v0, 0x1
+
     .line 1
     invoke-direct {p0, p2}, Lcom/applovin/impl/ta;->a(Ljava/nio/ByteBuffer;)Ljava/lang/String;
 
-    move-result-object p1
+    move-result-object v1
 
     .line 2
     invoke-virtual {p2}, Ljava/nio/Buffer;->limit()I
 
-    move-result v0
+    move-result v2
 
-    new-array v0, v0, [B
+    new-array v2, v2, [B
 
     .line 3
-    invoke-virtual {p2, v0}, Ljava/nio/ByteBuffer;->get([B)Ljava/nio/ByteBuffer;
+    invoke-virtual {p2, v2}, Ljava/nio/ByteBuffer;->get([B)Ljava/nio/ByteBuffer;
 
     const/4 p2, 0x0
 
-    const/4 v1, 0x1
-
-    const/4 v2, 0x0
-
-    if-nez p1, :cond_0
+    if-nez v1, :cond_0
 
     .line 4
-    new-instance p1, Lcom/applovin/impl/af;
+    new-instance v1, Lcom/applovin/impl/af;
 
     new-instance v3, Lcom/applovin/impl/va;
 
-    invoke-direct {v3, v0, v2, v2}, Lcom/applovin/impl/va;-><init>([BLjava/lang/String;Ljava/lang/String;)V
+    invoke-direct {v3, v2, p2, p2}, Lcom/applovin/impl/va;-><init>([BLjava/lang/String;Ljava/lang/String;)V
 
-    new-array v0, v1, [Lcom/applovin/impl/af$b;
+    new-array p2, v0, [Lcom/applovin/impl/af$b;
 
-    aput-object v3, v0, p2
+    aput-object v3, p2, p1
 
-    invoke-direct {p1, v0}, Lcom/applovin/impl/af;-><init>([Lcom/applovin/impl/af$b;)V
+    invoke-direct {v1, p2}, Lcom/applovin/impl/af;-><init>([Lcom/applovin/impl/af$b;)V
 
-    return-object p1
+    return-object v1
 
+    .line 5
     :cond_0
     sget-object v3, Lcom/applovin/impl/ta;->c:Ljava/util/regex/Pattern;
 
-    .line 5
-    invoke-virtual {v3, p1}, Ljava/util/regex/Pattern;->matcher(Ljava/lang/CharSequence;)Ljava/util/regex/Matcher;
+    invoke-virtual {v3, v1}, Ljava/util/regex/Pattern;->matcher(Ljava/lang/CharSequence;)Ljava/util/regex/Matcher;
 
-    move-result-object p1
+    move-result-object v1
 
-    move-object v3, v2
+    move-object v3, p2
 
     const/4 v4, 0x0
 
     .line 6
     :goto_0
-    invoke-virtual {p1, v4}, Ljava/util/regex/Matcher;->find(I)Z
+    invoke-virtual {v1, v4}, Ljava/util/regex/Matcher;->find(I)Z
 
     move-result v4
 
     if-eqz v4, :cond_4
 
     .line 7
-    invoke-virtual {p1, v1}, Ljava/util/regex/Matcher;->group(I)Ljava/lang/String;
+    invoke-virtual {v1, v0}, Ljava/util/regex/Matcher;->group(I)Ljava/lang/String;
 
     move-result-object v4
 
     const/4 v5, 0x2
 
     .line 8
-    invoke-virtual {p1, v5}, Ljava/util/regex/Matcher;->group(I)Ljava/lang/String;
+    invoke-virtual {v1, v5}, Ljava/util/regex/Matcher;->group(I)Ljava/lang/String;
 
     move-result-object v5
 
@@ -292,7 +292,7 @@
     goto :goto_1
 
     :cond_1
-    move-object v2, v5
+    move-object p2, v5
 
     goto :goto_1
 
@@ -302,7 +302,7 @@
     .line 10
     :cond_3
     :goto_1
-    invoke-virtual {p1}, Ljava/util/regex/Matcher;->end()I
+    invoke-virtual {v1}, Ljava/util/regex/Matcher;->end()I
 
     move-result v4
 
@@ -310,17 +310,17 @@
 
     .line 11
     :cond_4
-    new-instance p1, Lcom/applovin/impl/af;
+    new-instance v1, Lcom/applovin/impl/af;
 
     new-instance v4, Lcom/applovin/impl/va;
 
-    invoke-direct {v4, v0, v2, v3}, Lcom/applovin/impl/va;-><init>([BLjava/lang/String;Ljava/lang/String;)V
+    invoke-direct {v4, v2, p2, v3}, Lcom/applovin/impl/va;-><init>([BLjava/lang/String;Ljava/lang/String;)V
 
-    new-array v0, v1, [Lcom/applovin/impl/af$b;
+    new-array p2, v0, [Lcom/applovin/impl/af$b;
 
-    aput-object v4, v0, p2
+    aput-object v4, p2, p1
 
-    invoke-direct {p1, v0}, Lcom/applovin/impl/af;-><init>([Lcom/applovin/impl/af$b;)V
+    invoke-direct {v1, p2}, Lcom/applovin/impl/af;-><init>([Lcom/applovin/impl/af$b;)V
 
-    return-object p1
+    return-object v1
 .end method

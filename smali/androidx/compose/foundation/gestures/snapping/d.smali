@@ -11,16 +11,22 @@
 .method static constructor <clinit>()V
     .locals 1
 
+    .line 1
     const/16 v0, 0x190
 
+    .line 2
+    .line 3
     int-to-float v0, v0
 
+    .line 4
     sput v0, Landroidx/compose/foundation/gestures/snapping/d;->a:F
 
+    .line 5
+    .line 6
     return-void
 .end method
 
-.method public static final a(Landroidx/compose/foundation/gestures/a0;FLandroidx/compose/animation/core/h;Landroidx/compose/animation/core/t;Lzh/c;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
+.method public static final a(Landroidx/compose/foundation/gestures/C;FLandroidx/compose/animation/core/g;Landroidx/compose/animation/core/r;Lka/c;Lkotlin/coroutines/jvm/internal/ContinuationImpl;)Ljava/lang/Object;
     .locals 5
 
     .line 1
@@ -115,7 +121,7 @@
 
     .line 43
     .line 44
-    check-cast p2, Landroidx/compose/animation/core/h;
+    check-cast p2, Landroidx/compose/animation/core/g;
 
     .line 45
     .line 46
@@ -159,7 +165,7 @@
     .line 64
     .line 65
     .line 66
-    invoke-virtual {p2}, Landroidx/compose/animation/core/h;->a()Ljava/lang/Object;
+    invoke-virtual {p2}, Landroidx/compose/animation/core/g;->a()Ljava/lang/Object;
 
     .line 67
     .line 68
@@ -208,7 +214,7 @@
 
     .line 86
     .line 87
-    invoke-direct {v4, p1, p5, p0, p4}, Landroidx/compose/foundation/gestures/snapping/SnapFlingBehaviorKt$animateDecay$2;-><init>(FLkotlin/jvm/internal/Ref$FloatRef;Landroidx/compose/foundation/gestures/a0;Lzh/c;)V
+    invoke-direct {v4, p1, p5, p0, p4}, Landroidx/compose/foundation/gestures/snapping/SnapFlingBehaviorKt$animateDecay$2;-><init>(FLkotlin/jvm/internal/Ref$FloatRef;Landroidx/compose/foundation/gestures/C;Lka/c;)V
 
     .line 88
     .line 89
@@ -229,7 +235,7 @@
 
     .line 97
     .line 98
-    invoke-static {p2, p3, v2, v4, v0}, Landroidx/compose/animation/core/b;->f(Landroidx/compose/animation/core/h;Landroidx/compose/animation/core/t;ZLzh/c;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
+    invoke-static {p2, p3, v2, v4, v0}, Landroidx/compose/animation/core/b;->f(Landroidx/compose/animation/core/g;Landroidx/compose/animation/core/r;ZLka/c;Lkotlin/coroutines/jvm/internal/ContinuationImpl;)Ljava/lang/Object;
 
     .line 99
     .line 100
@@ -269,7 +275,7 @@
     .line 114
     .line 115
     .line 116
-    invoke-direct {v1, p0, p2}, Landroidx/compose/foundation/gestures/snapping/a;-><init>(Ljava/lang/Float;Landroidx/compose/animation/core/h;)V
+    invoke-direct {v1, p0, p2}, Landroidx/compose/foundation/gestures/snapping/a;-><init>(Ljava/lang/Float;Landroidx/compose/animation/core/g;)V
 
     .line 117
     .line 118
@@ -278,7 +284,7 @@
     return-object v1
 .end method
 
-.method public static final b(Landroidx/compose/foundation/gestures/a0;FFLandroidx/compose/animation/core/h;Landroidx/compose/animation/core/g;Lzh/c;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
+.method public static final b(Landroidx/compose/foundation/gestures/C;FFLandroidx/compose/animation/core/g;Landroidx/compose/animation/core/f;Lka/c;Lkotlin/coroutines/jvm/internal/ContinuationImpl;)Ljava/lang/Object;
     .locals 9
 
     .line 1
@@ -387,7 +393,7 @@
 
     .line 48
     .line 49
-    check-cast p3, Landroidx/compose/animation/core/h;
+    check-cast p3, Landroidx/compose/animation/core/g;
 
     .line 50
     .line 51
@@ -431,7 +437,7 @@
     .line 69
     .line 70
     .line 71
-    invoke-virtual {p3}, Landroidx/compose/animation/core/h;->a()Ljava/lang/Object;
+    invoke-virtual {p3}, Landroidx/compose/animation/core/g;->a()Ljava/lang/Object;
 
     .line 72
     .line 73
@@ -460,7 +466,7 @@
     .line 84
     .line 85
     .line 86
-    invoke-virtual {p3}, Landroidx/compose/animation/core/h;->a()Ljava/lang/Object;
+    invoke-virtual {p3}, Landroidx/compose/animation/core/g;->a()Ljava/lang/Object;
 
     .line 87
     .line 88
@@ -507,7 +513,7 @@
 
     .line 106
     .line 107
-    invoke-direct {v5, p2, p6, p0, p5}, Landroidx/compose/foundation/gestures/snapping/SnapFlingBehaviorKt$animateWithTarget$2;-><init>(FLkotlin/jvm/internal/Ref$FloatRef;Landroidx/compose/foundation/gestures/a0;Lzh/c;)V
+    invoke-direct {v5, p2, p6, p0, p5}, Landroidx/compose/foundation/gestures/snapping/SnapFlingBehaviorKt$animateWithTarget$2;-><init>(FLkotlin/jvm/internal/Ref$FloatRef;Landroidx/compose/foundation/gestures/C;Lka/c;)V
 
     .line 108
     .line 109
@@ -541,7 +547,7 @@
     move-object v3, p4
 
     .line 123
-    invoke-static/range {v1 .. v6}, Landroidx/compose/animation/core/b;->h(Landroidx/compose/animation/core/h;Ljava/lang/Float;Landroidx/compose/animation/core/g;ZLzh/c;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
+    invoke-static/range {v1 .. v6}, Landroidx/compose/animation/core/b;->h(Landroidx/compose/animation/core/g;Ljava/lang/Float;Landroidx/compose/animation/core/f;ZLka/c;Lkotlin/coroutines/jvm/internal/ContinuationImpl;)Ljava/lang/Object;
 
     .line 124
     .line 125
@@ -564,7 +570,7 @@
 
     .line 132
     :goto_3
-    invoke-virtual {p3}, Landroidx/compose/animation/core/h;->a()Ljava/lang/Object;
+    invoke-virtual {p3}, Landroidx/compose/animation/core/g;->a()Ljava/lang/Object;
 
     .line 133
     .line 134
@@ -616,7 +622,7 @@
 
     .line 157
     .line 158
-    invoke-static {p3, v7, p0, p1}, Landroidx/compose/animation/core/b;->l(Landroidx/compose/animation/core/h;FFI)Landroidx/compose/animation/core/h;
+    invoke-static {p3, v7, p0, p1}, Landroidx/compose/animation/core/b;->l(Landroidx/compose/animation/core/g;FFI)Landroidx/compose/animation/core/g;
 
     .line 159
     .line 160
@@ -624,7 +630,7 @@
     move-result-object p0
 
     .line 162
-    invoke-direct {v0, p2, p0}, Landroidx/compose/foundation/gestures/snapping/a;-><init>(Ljava/lang/Float;Landroidx/compose/animation/core/h;)V
+    invoke-direct {v0, p2, p0}, Landroidx/compose/foundation/gestures/snapping/a;-><init>(Ljava/lang/Float;Landroidx/compose/animation/core/g;)V
 
     .line 163
     .line 164
@@ -660,7 +666,7 @@
 
     .line 10
     .line 11
-    invoke-static {p0, p1}, Lma/a;->m(FF)F
+    invoke-static {p0, p1}, Landroid/support/v4/media/session/a;->f(FF)F
 
     .line 12
     .line 13
@@ -672,7 +678,7 @@
 
     .line 16
     :cond_1
-    invoke-static {p0, p1}, Lma/a;->k(FF)F
+    invoke-static {p0, p1}, Landroid/support/v4/media/session/a;->d(FF)F
 
     .line 17
     .line 18

@@ -1,12 +1,15 @@
-.class public interface abstract annotation Landroidx/viewpager/widget/b;
+.class public final Landroidx/viewpager/widget/b;
 .super Ljava/lang/Object;
 .source "SourceFile"
 
-# interfaces
-.implements Ljava/lang/annotation/Annotation;
 
+# instance fields
+.field public a:Ljava/lang/Object;
 
-# annotations
-.annotation runtime Ljava/lang/annotation/Retention;
-    value = .enum Ljava/lang/annotation/RetentionPolicy;->RUNTIME:Ljava/lang/annotation/RetentionPolicy;
-.end annotation
+.field public b:I
+
+.field public c:Z
+
+.field public d:F
+
+.field public e:F

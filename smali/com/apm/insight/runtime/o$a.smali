@@ -33,6 +33,7 @@
 
     if-nez v4, :cond_2
 
+    .line 2
     sget-wide v0, Lcom/apm/insight/runtime/o$a;->a:J
 
     const-wide/16 v2, 0x0
@@ -43,7 +44,7 @@
 
     goto :goto_1
 
-    .line 2
+    .line 3
     :cond_0
     sget v0, Landroid/system/OsConstants;->_SC_CLK_TCK:I
 
@@ -60,18 +61,19 @@
     :cond_1
     const-wide/16 v0, 0x64
 
+    .line 4
     :goto_0
     sput-wide v0, Lcom/apm/insight/runtime/o$a;->a:J
 
     :goto_1
     const-wide/16 v2, 0x3e8
 
-    .line 3
+    .line 5
     div-long/2addr v2, v0
 
     invoke-static {v2, v3}, Lcom/apm/insight/runtime/o;->a(J)J
 
-    .line 4
+    .line 6
     :cond_2
     invoke-static {}, Lcom/apm/insight/runtime/o;->a()J
 
@@ -83,76 +85,76 @@
 .method private static a(Ljava/lang/String;)J
     .locals 7
 
-    :try_start_0
-    const-string v0, "libcore.io.OsConstants"
-
-    .line 5
-    invoke-static {v0}, Ljava/lang/Class;->forName(Ljava/lang/String;)Ljava/lang/Class;
-
-    move-result-object v0
-
-    .line 6
-    invoke-virtual {v0, p0}, Ljava/lang/Class;->getField(Ljava/lang/String;)Ljava/lang/reflect/Field;
-
-    move-result-object p0
-
     const/4 v0, 0x0
 
-    invoke-virtual {p0, v0}, Ljava/lang/reflect/Field;->getInt(Ljava/lang/Object;)I
-
-    move-result p0
-
-    const-string v1, "libcore.io.Libcore"
+    const/4 v1, 0x1
 
     .line 7
-    invoke-static {v1}, Ljava/lang/Class;->forName(Ljava/lang/String;)Ljava/lang/Class;
+    :try_start_0
+    const-string v2, "libcore.io.OsConstants"
 
-    move-result-object v1
-
-    const-string v2, "libcore.io.Os"
-
-    .line 8
     invoke-static {v2}, Ljava/lang/Class;->forName(Ljava/lang/String;)Ljava/lang/Class;
 
     move-result-object v2
 
-    const-string v3, "os"
+    .line 8
+    invoke-virtual {v2, p0}, Ljava/lang/Class;->getField(Ljava/lang/String;)Ljava/lang/reflect/Field;
+
+    move-result-object p0
+
+    const/4 v2, 0x0
+
+    invoke-virtual {p0, v2}, Ljava/lang/reflect/Field;->getInt(Ljava/lang/Object;)I
+
+    move-result p0
 
     .line 9
-    invoke-virtual {v1, v3}, Ljava/lang/Class;->getField(Ljava/lang/String;)Ljava/lang/reflect/Field;
+    const-string v3, "libcore.io.Libcore"
 
-    move-result-object v1
+    invoke-static {v3}, Ljava/lang/Class;->forName(Ljava/lang/String;)Ljava/lang/Class;
 
-    invoke-virtual {v1, v0}, Ljava/lang/reflect/Field;->get(Ljava/lang/Object;)Ljava/lang/Object;
-
-    move-result-object v0
-
-    const-string v1, "sysconf"
-
-    const/4 v3, 0x1
-
-    new-array v4, v3, [Ljava/lang/Class;
-
-    sget-object v5, Ljava/lang/Integer;->TYPE:Ljava/lang/Class;
-
-    const/4 v6, 0x0
-
-    aput-object v5, v4, v6
+    move-result-object v3
 
     .line 10
-    invoke-virtual {v2, v1, v4}, Ljava/lang/Class;->getMethod(Ljava/lang/String;[Ljava/lang/Class;)Ljava/lang/reflect/Method;
+    const-string v4, "libcore.io.Os"
 
-    move-result-object v1
+    invoke-static {v4}, Ljava/lang/Class;->forName(Ljava/lang/String;)Ljava/lang/Class;
 
-    new-array v2, v3, [Ljava/lang/Object;
+    move-result-object v4
+
+    .line 11
+    const-string v5, "os"
+
+    invoke-virtual {v3, v5}, Ljava/lang/Class;->getField(Ljava/lang/String;)Ljava/lang/reflect/Field;
+
+    move-result-object v3
+
+    invoke-virtual {v3, v2}, Ljava/lang/reflect/Field;->get(Ljava/lang/Object;)Ljava/lang/Object;
+
+    move-result-object v2
+
+    .line 12
+    const-string v3, "sysconf"
+
+    new-array v5, v1, [Ljava/lang/Class;
+
+    sget-object v6, Ljava/lang/Integer;->TYPE:Ljava/lang/Class;
+
+    aput-object v6, v5, v0
+
+    invoke-virtual {v4, v3, v5}, Ljava/lang/Class;->getMethod(Ljava/lang/String;[Ljava/lang/Class;)Ljava/lang/reflect/Method;
+
+    move-result-object v3
 
     invoke-static {p0}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
     move-result-object p0
 
-    aput-object p0, v2, v6
+    new-array v1, v1, [Ljava/lang/Object;
 
-    invoke-virtual {v1, v0, v2}, Ljava/lang/reflect/Method;->invoke(Ljava/lang/Object;[Ljava/lang/Object;)Ljava/lang/Object;
+    aput-object p0, v1, v0
+
+    invoke-virtual {v3, v2, v1}, Ljava/lang/reflect/Method;->invoke(Ljava/lang/Object;[Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object p0
 
@@ -169,7 +171,7 @@
     :catchall_0
     move-exception p0
 
-    .line 11
+    .line 13
     invoke-virtual {p0}, Ljava/lang/Throwable;->printStackTrace()V
 
     const-wide/16 v0, 0x64

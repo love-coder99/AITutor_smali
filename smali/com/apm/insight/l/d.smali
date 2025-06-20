@@ -38,9 +38,9 @@
 .method public static a()Ljava/lang/String;
     .locals 1
 
+    .line 6
     const-string v0, "ro.build.version.emui"
 
-    .line 6
     invoke-static {v0}, Lcom/apm/insight/l/d;->b(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v0
@@ -58,9 +58,9 @@
 
     if-eqz v0, :cond_0
 
+    .line 2
     const-string p0, "ro.build.version.emui"
 
-    .line 2
     invoke-static {p0}, Lcom/apm/insight/l/d;->b(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object p0
@@ -174,29 +174,34 @@
 .method public static b()Z
     .locals 2
 
+    .line 7
     sget-boolean v0, Lcom/apm/insight/l/d;->a:Z
 
     if-nez v0, :cond_0
 
     const/4 v0, 0x1
 
+    .line 8
     :try_start_0
     const-string v1, "miui.os.Build"
 
-    .line 7
     invoke-static {v1}, Ljava/lang/Class;->forName(Ljava/lang/String;)Ljava/lang/Class;
 
+    .line 9
     sput-boolean v0, Lcom/apm/insight/k/e;->a:Z
 
+    .line 10
     sput-boolean v0, Lcom/apm/insight/l/d;->a:Z
     :try_end_0
     .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
 
     return v0
 
+    .line 11
     :catch_0
     sput-boolean v0, Lcom/apm/insight/l/d;->a:Z
 
+    .line 12
     :cond_0
     sget-boolean v0, Lcom/apm/insight/k/e;->a:Z
 
@@ -318,25 +323,26 @@
 .method public static d()I
     .locals 1
 
+    .line 1
     sget v0, Lcom/apm/insight/l/d;->b:I
 
     if-lez v0, :cond_0
 
     return v0
 
+    .line 2
     :cond_0
     const-string v0, "/sys/devices/system/cpu/possible"
 
-    .line 1
     invoke-static {v0}, Lcom/apm/insight/l/d;->c(Ljava/lang/String;)I
 
     move-result v0
 
     if-gtz v0, :cond_1
 
+    .line 3
     const-string v0, "/sys/devices/system/cpu/present"
 
-    .line 2
     invoke-static {v0}, Lcom/apm/insight/l/d;->c(Ljava/lang/String;)I
 
     move-result v0
@@ -344,9 +350,9 @@
     :cond_1
     if-gtz v0, :cond_2
 
+    .line 4
     const-string v0, "/sys/devices/system/cpu/"
 
-    .line 3
     invoke-static {v0}, Lcom/apm/insight/l/d;->e(Ljava/lang/String;)I
 
     move-result v0
@@ -354,7 +360,7 @@
     :cond_2
     if-gtz v0, :cond_3
 
-    .line 4
+    .line 5
     invoke-static {}, Ljava/lang/Runtime;->getRuntime()Ljava/lang/Runtime;
 
     move-result-object v0
@@ -368,6 +374,7 @@
 
     const/4 v0, 0x1
 
+    .line 6
     :cond_4
     sput v0, Lcom/apm/insight/l/d;->b:I
 
@@ -377,14 +384,14 @@
 .method private static d(Ljava/lang/String;)I
     .locals 1
 
+    .line 7
     sget-object v0, Lcom/apm/insight/l/d;->c:Ljava/util/regex/Pattern;
 
-    .line 5
     invoke-virtual {v0, p0}, Ljava/util/regex/Pattern;->matcher(Ljava/lang/CharSequence;)Ljava/util/regex/Matcher;
 
     move-result-object p0
 
-    .line 6
+    .line 8
     invoke-virtual {p0}, Ljava/util/regex/Matcher;->matches()Z
 
     move-result v0
@@ -393,12 +400,12 @@
 
     const/4 v0, 0x1
 
-    .line 7
+    .line 9
     invoke-virtual {p0, v0}, Ljava/util/regex/Matcher;->group(I)Ljava/lang/String;
 
     move-result-object p0
 
-    .line 8
+    .line 10
     :try_start_0
     invoke-static {p0}, Ljava/lang/Integer;->parseInt(Ljava/lang/String;)I
 

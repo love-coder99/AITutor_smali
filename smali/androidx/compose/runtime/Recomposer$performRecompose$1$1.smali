@@ -3,14 +3,14 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lzh/a;
+.implements Lka/a;
 
 
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "Lkotlin/jvm/internal/Lambda;",
-        "Lzh/a;"
+        "Lka/a;"
     }
 .end annotation
 
@@ -19,7 +19,7 @@
         "\u0000\u0008\n\u0002\u0018\u0002\n\u0002\u0008\u0003\u0010\u0003\u001a\u00020\u0000H\n\u00a2\u0006\u0004\u0008\u0001\u0010\u0002"
     }
     d2 = {
-        "Lqh/r;",
+        "LX9/j;",
         "invoke",
         "()V",
         "<anonymous>"
@@ -34,32 +34,32 @@
 
 
 # instance fields
-.field final synthetic $composition:Landroidx/compose/runtime/f0;
+.field final synthetic $composition:Landroidx/compose/runtime/z;
 
-.field final synthetic $modifiedValues:Landroidx/collection/e0;
+.field final synthetic $modifiedValues:Landroidx/collection/D;
     .annotation system Ldalvik/annotation/Signature;
         value = {
-            "Landroidx/collection/e0;"
+            "Landroidx/collection/D;"
         }
     .end annotation
 .end field
 
 
 # direct methods
-.method public constructor <init>(Landroidx/collection/e0;Landroidx/compose/runtime/f0;)V
+.method public constructor <init>(Landroidx/collection/D;Landroidx/compose/runtime/z;)V
     .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
-            "Landroidx/collection/e0;",
-            "Landroidx/compose/runtime/f0;",
+            "Landroidx/collection/D;",
+            "Landroidx/compose/runtime/z;",
             ")V"
         }
     .end annotation
 
-    iput-object p1, p0, Landroidx/compose/runtime/Recomposer$performRecompose$1$1;->$modifiedValues:Landroidx/collection/e0;
+    iput-object p1, p0, Landroidx/compose/runtime/Recomposer$performRecompose$1$1;->$modifiedValues:Landroidx/collection/D;
 
-    iput-object p2, p0, Landroidx/compose/runtime/Recomposer$performRecompose$1$1;->$composition:Landroidx/compose/runtime/f0;
+    iput-object p2, p0, Landroidx/compose/runtime/Recomposer$performRecompose$1$1;->$composition:Landroidx/compose/runtime/z;
 
     const/4 p1, 0x0
 
@@ -76,7 +76,7 @@
     .line 1
     invoke-virtual {p0}, Landroidx/compose/runtime/Recomposer$performRecompose$1$1;->invoke()V
 
-    sget-object v0, Lqh/r;->a:Lqh/r;
+    sget-object v0, LX9/j;->a:LX9/j;
 
     return-object v0
 .end method
@@ -86,17 +86,18 @@
 
     move-object/from16 v0, p0
 
-    iget-object v1, v0, Landroidx/compose/runtime/Recomposer$performRecompose$1$1;->$modifiedValues:Landroidx/collection/e0;
-
-    iget-object v2, v0, Landroidx/compose/runtime/Recomposer$performRecompose$1$1;->$composition:Landroidx/compose/runtime/f0;
-
     .line 2
-    iget-object v3, v1, Landroidx/collection/l0;->b:[Ljava/lang/Object;
+    iget-object v1, v0, Landroidx/compose/runtime/Recomposer$performRecompose$1$1;->$modifiedValues:Landroidx/collection/D;
+
+    iget-object v2, v0, Landroidx/compose/runtime/Recomposer$performRecompose$1$1;->$composition:Landroidx/compose/runtime/z;
 
     .line 3
-    iget-object v1, v1, Landroidx/collection/l0;->a:[J
+    iget-object v3, v1, Landroidx/collection/J;->b:[Ljava/lang/Object;
 
     .line 4
+    iget-object v1, v1, Landroidx/collection/J;->a:[J
+
+    .line 5
     array-length v4, v1
 
     add-int/lit8 v4, v4, -0x2
@@ -107,7 +108,7 @@
 
     const/4 v6, 0x0
 
-    .line 5
+    .line 6
     :goto_0
     aget-wide v7, v1, v6
 
@@ -156,15 +157,15 @@
 
     add-int/2addr v12, v11
 
-    .line 6
+    .line 7
     aget-object v12, v3, v12
 
+    .line 8
     move-object v13, v2
 
-    check-cast v13, Landroidx/compose/runtime/v;
+    check-cast v13, Landroidx/compose/runtime/s;
 
-    .line 7
-    invoke-virtual {v13, v12}, Landroidx/compose/runtime/v;->A(Ljava/lang/Object;)V
+    invoke-virtual {v13, v12}, Landroidx/compose/runtime/s;->y(Ljava/lang/Object;)V
 
     :cond_0
     shr-long/2addr v7, v10

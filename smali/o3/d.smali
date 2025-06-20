@@ -1,117 +1,182 @@
 .class public final Lo3/d;
-.super Landroid/view/inputmethod/InputConnectionWrapper;
+.super Ljava/lang/Object;
 .source "SourceFile"
+
+# interfaces
+.implements LT2/d;
 
 
 # instance fields
-.field public final synthetic a:Lac/b;
+.field public final b:Ljava/lang/Object;
 
 
 # direct methods
-.method public constructor <init>(Landroid/view/inputmethod/InputConnection;Lac/b;)V
-    .locals 0
+.method public constructor <init>(Ljava/lang/Object;)V
+    .locals 1
 
     .line 1
-    iput-object p2, p0, Lo3/d;->a:Lac/b;
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 2
     .line 3
-    const/4 p2, 0x0
-
     .line 4
-    invoke-direct {p0, p1, p2}, Landroid/view/inputmethod/InputConnectionWrapper;-><init>(Landroid/view/inputmethod/InputConnection;Z)V
+    const-string v0, "Argument must not be null"
 
     .line 5
     .line 6
+    invoke-static {p1, v0}, Lp3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+
     .line 7
+    .line 8
+    .line 9
+    iput-object p1, p0, Lo3/d;->b:Ljava/lang/Object;
+
+    .line 10
+    .line 11
     return-void
 .end method
 
 
 # virtual methods
-.method public final commitContent(Landroid/view/inputmethod/InputContentInfo;ILandroid/os/Bundle;)Z
-    .locals 3
+.method public final b(Ljava/security/MessageDigest;)V
+    .locals 2
 
     .line 1
-    const/4 v0, 0x0
+    iget-object v0, p0, Lo3/d;->b:Ljava/lang/Object;
 
     .line 2
-    if-nez p1, :cond_0
-
     .line 3
+    invoke-virtual {v0}, Ljava/lang/Object;->toString()Ljava/lang/String;
+
     .line 4
-    goto :goto_0
-
     .line 5
-    :cond_0
-    sget v1, Landroid/os/Build$VERSION;->SDK_INT:I
-
     .line 6
+    move-result-object v0
+
     .line 7
-    const/16 v2, 0x19
+    sget-object v1, LT2/d;->a:Ljava/nio/charset/Charset;
 
     .line 8
     .line 9
-    if-ge v1, v2, :cond_1
+    invoke-virtual {v0, v1}, Ljava/lang/String;->getBytes(Ljava/nio/charset/Charset;)[B
 
     .line 10
     .line 11
-    goto :goto_0
-
     .line 12
-    :cond_1
-    new-instance v0, Lo3/h;
+    move-result-object v0
 
     .line 13
-    .line 14
-    new-instance v1, Lo3/f;
+    invoke-virtual {p1, v0}, Ljava/security/MessageDigest;->update([B)V
 
+    .line 14
     .line 15
     .line 16
-    invoke-direct {v1, p1}, Lo3/f;-><init>(Ljava/lang/Object;)V
+    return-void
+.end method
 
-    .line 17
-    .line 18
-    .line 19
-    const/4 v2, 0x0
+.method public final equals(Ljava/lang/Object;)Z
+    .locals 1
 
-    .line 20
-    invoke-direct {v0, v1, v2}, Lo3/h;-><init>(Ljava/lang/Object;I)V
+    .line 1
+    instance-of v0, p1, Lo3/d;
 
-    .line 21
-    .line 22
-    .line 23
-    :goto_0
-    iget-object v1, p0, Lo3/d;->a:Lac/b;
+    .line 2
+    .line 3
+    if-eqz v0, :cond_0
 
-    .line 24
-    .line 25
-    invoke-virtual {v1, v0, p2, p3}, Lac/b;->h(Lo3/h;ILandroid/os/Bundle;)Z
+    .line 4
+    .line 5
+    check-cast p1, Lo3/d;
 
-    .line 26
-    .line 27
-    .line 28
-    move-result v0
+    .line 6
+    .line 7
+    iget-object v0, p0, Lo3/d;->b:Ljava/lang/Object;
 
-    .line 29
-    if-eqz v0, :cond_2
+    .line 8
+    .line 9
+    iget-object p1, p1, Lo3/d;->b:Ljava/lang/Object;
 
-    .line 30
-    .line 31
-    const/4 p1, 0x1
+    .line 10
+    .line 11
+    invoke-virtual {v0, p1}, Ljava/lang/Object;->equals(Ljava/lang/Object;)Z
 
-    .line 32
-    return p1
-
-    .line 33
-    :cond_2
-    invoke-super {p0, p1, p2, p3}, Landroid/view/inputmethod/InputConnectionWrapper;->commitContent(Landroid/view/inputmethod/InputContentInfo;ILandroid/os/Bundle;)Z
-
-    .line 34
-    .line 35
-    .line 36
+    .line 12
+    .line 13
+    .line 14
     move-result p1
 
-    .line 37
+    .line 15
     return p1
+
+    .line 16
+    :cond_0
+    const/4 p1, 0x0
+
+    .line 17
+    return p1
+.end method
+
+.method public final hashCode()I
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, Lo3/d;->b:Ljava/lang/Object;
+
+    .line 2
+    .line 3
+    invoke-virtual {v0}, Ljava/lang/Object;->hashCode()I
+
+    .line 4
+    .line 5
+    .line 6
+    move-result v0
+
+    .line 7
+    return v0
+.end method
+
+.method public final toString()Ljava/lang/String;
+    .locals 2
+
+    .line 1
+    new-instance v0, Ljava/lang/StringBuilder;
+
+    .line 2
+    .line 3
+    const-string v1, "ObjectKey{object="
+
+    .line 4
+    .line 5
+    invoke-direct {v0, v1}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+
+    .line 6
+    .line 7
+    .line 8
+    iget-object v1, p0, Lo3/d;->b:Ljava/lang/Object;
+
+    .line 9
+    .line 10
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+
+    .line 11
+    .line 12
+    .line 13
+    const/16 v1, 0x7d
+
+    .line 14
+    .line 15
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
+
+    .line 16
+    .line 17
+    .line 18
+    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    .line 19
+    .line 20
+    .line 21
+    move-result-object v0
+
+    .line 22
+    return-object v0
 .end method

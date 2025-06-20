@@ -117,24 +117,33 @@
 .method public a()Ljava/util/List;
     .locals 1
 
+    .line 1
     iget-object v0, p0, Lcom/applovin/impl/eq;->b:Ljava/util/List;
 
+    .line 2
+    .line 3
     return-object v0
 .end method
 
 .method public b()Lorg/json/JSONObject;
     .locals 1
 
+    .line 1
     iget-object v0, p0, Lcom/applovin/impl/eq;->c:Lorg/json/JSONObject;
 
+    .line 2
+    .line 3
     return-object v0
 .end method
 
 .method public c()J
     .locals 2
 
+    .line 1
     iget-wide v0, p0, Lcom/applovin/impl/eq;->e:J
 
+    .line 2
+    .line 3
     return-wide v0
 .end method
 
@@ -160,8 +169,11 @@
 .method public e()Lorg/json/JSONObject;
     .locals 1
 
+    .line 1
     iget-object v0, p0, Lcom/applovin/impl/eq;->d:Lorg/json/JSONObject;
 
+    .line 2
+    .line 3
     return-object v0
 .end method
 

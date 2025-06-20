@@ -3,14 +3,14 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lzh/c;
+.implements Lka/c;
 
 
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "Lkotlin/jvm/internal/Lambda;",
-        "Lzh/c;"
+        "Lka/c;"
     }
 .end annotation
 
@@ -19,10 +19,10 @@
         "\u0000\u000c\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0008\u0003\u0010\u0004\u001a\u00020\u0001*\u00020\u0000H\n\u00a2\u0006\u0004\u0008\u0002\u0010\u0003"
     }
     d2 = {
-        "Landroidx/compose/ui/semantics/u;",
-        "Lqh/r;",
+        "Landroidx/compose/ui/semantics/t;",
+        "LX9/j;",
         "invoke",
-        "(Landroidx/compose/ui/semantics/u;)V",
+        "(Landroidx/compose/ui/semantics/t;)V",
         "<anonymous>"
     }
     k = 0x3
@@ -56,46 +56,48 @@
 .method public bridge synthetic invoke(Ljava/lang/Object;)Ljava/lang/Object;
     .locals 0
 
-    .line 5
-    check-cast p1, Landroidx/compose/ui/semantics/u;
+    .line 7
+    check-cast p1, Landroidx/compose/ui/semantics/t;
 
-    invoke-virtual {p0, p1}, Landroidx/compose/foundation/text/AndroidCursorHandle_androidKt$CursorHandle$finalModifier$1$1;->invoke(Landroidx/compose/ui/semantics/u;)V
+    invoke-virtual {p0, p1}, Landroidx/compose/foundation/text/AndroidCursorHandle_androidKt$CursorHandle$finalModifier$1$1;->invoke(Landroidx/compose/ui/semantics/t;)V
 
-    sget-object p1, Lqh/r;->a:Lqh/r;
+    sget-object p1, LX9/j;->a:LX9/j;
 
     return-object p1
 .end method
 
-.method public final invoke(Landroidx/compose/ui/semantics/u;)V
+.method public final invoke(Landroidx/compose/ui/semantics/t;)V
     .locals 8
 
     .line 1
-    sget-object v0, Landroidx/compose/foundation/text/selection/n;->c:Landroidx/compose/ui/semantics/t;
+    sget-object v0, Landroidx/compose/foundation/text/selection/m;->c:Landroidx/compose/ui/semantics/s;
 
     .line 2
-    new-instance v7, Landroidx/compose/foundation/text/selection/m;
-
-    sget-object v2, Landroidx/compose/foundation/text/Handle;->Cursor:Landroidx/compose/foundation/text/Handle;
-
-    iget-object v1, p0, Landroidx/compose/foundation/text/AndroidCursorHandle_androidKt$CursorHandle$finalModifier$1$1;->$offsetProvider:Landroidx/compose/foundation/text/selection/f;
+    new-instance v7, Landroidx/compose/foundation/text/selection/l;
 
     .line 3
+    sget-object v2, Landroidx/compose/foundation/text/Handle;->Cursor:Landroidx/compose/foundation/text/Handle;
+
+    .line 4
+    iget-object v1, p0, Landroidx/compose/foundation/text/AndroidCursorHandle_androidKt$CursorHandle$finalModifier$1$1;->$offsetProvider:Landroidx/compose/foundation/text/selection/f;
+
     invoke-interface {v1}, Landroidx/compose/foundation/text/selection/f;->a()J
 
     move-result-wide v3
 
+    .line 5
     sget-object v5, Landroidx/compose/foundation/text/selection/SelectionHandleAnchor;->Middle:Landroidx/compose/foundation/text/selection/SelectionHandleAnchor;
 
     const/4 v6, 0x1
 
     move-object v1, v7
 
-    .line 4
-    invoke-direct/range {v1 .. v6}, Landroidx/compose/foundation/text/selection/m;-><init>(Landroidx/compose/foundation/text/Handle;JLandroidx/compose/foundation/text/selection/SelectionHandleAnchor;Z)V
+    .line 6
+    invoke-direct/range {v1 .. v6}, Landroidx/compose/foundation/text/selection/l;-><init>(Landroidx/compose/foundation/text/Handle;JLandroidx/compose/foundation/text/selection/SelectionHandleAnchor;Z)V
 
     check-cast p1, Landroidx/compose/ui/semantics/j;
 
-    invoke-virtual {p1, v0, v7}, Landroidx/compose/ui/semantics/j;->d(Landroidx/compose/ui/semantics/t;Ljava/lang/Object;)V
+    invoke-virtual {p1, v0, v7}, Landroidx/compose/ui/semantics/j;->c(Landroidx/compose/ui/semantics/s;Ljava/lang/Object;)V
 
     return-void
 .end method

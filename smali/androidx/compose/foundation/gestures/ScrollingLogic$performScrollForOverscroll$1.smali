@@ -3,14 +3,14 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lzh/c;
+.implements Lka/c;
 
 
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "Lkotlin/jvm/internal/Lambda;",
-        "Lzh/c;"
+        "Lka/c;"
     }
 .end annotation
 
@@ -19,7 +19,7 @@
         "\u0000\u0008\n\u0002\u0018\u0002\n\u0002\u0008\u0004\u0010\u0004\u001a\u00020\u00002\u0006\u0010\u0001\u001a\u00020\u0000H\n\u00a2\u0006\u0004\u0008\u0002\u0010\u0003"
     }
     d2 = {
-        "Ln1/c;",
+        "Lr0/c;",
         "delta",
         "invoke-MK-Hz9U",
         "(J)J",
@@ -35,14 +35,14 @@
 
 
 # instance fields
-.field final synthetic this$0:Landroidx/compose/foundation/gestures/l0;
+.field final synthetic this$0:Landroidx/compose/foundation/gestures/N;
 
 
 # direct methods
-.method public constructor <init>(Landroidx/compose/foundation/gestures/l0;)V
+.method public constructor <init>(Landroidx/compose/foundation/gestures/N;)V
     .locals 0
 
-    iput-object p1, p0, Landroidx/compose/foundation/gestures/ScrollingLogic$performScrollForOverscroll$1;->this$0:Landroidx/compose/foundation/gestures/l0;
+    iput-object p1, p0, Landroidx/compose/foundation/gestures/ScrollingLogic$performScrollForOverscroll$1;->this$0:Landroidx/compose/foundation/gestures/N;
 
     const/4 p1, 0x1
 
@@ -57,11 +57,11 @@
     .locals 2
 
     .line 1
-    check-cast p1, Ln1/c;
+    check-cast p1, Lr0/c;
 
     .line 2
     .line 3
-    iget-wide v0, p1, Ln1/c;->a:J
+    iget-wide v0, p1, Lr0/c;->a:J
 
     .line 4
     .line 5
@@ -73,11 +73,11 @@
     move-result-wide v0
 
     .line 9
-    new-instance p1, Ln1/c;
+    new-instance p1, Lr0/c;
 
     .line 10
     .line 11
-    invoke-direct {p1, v0, v1}, Ln1/c;-><init>(J)V
+    invoke-direct {p1, v0, v1}, Lr0/c;-><init>(J)V
 
     .line 12
     .line 13
@@ -89,19 +89,19 @@
     .locals 3
 
     .line 1
-    iget-object v0, p0, Landroidx/compose/foundation/gestures/ScrollingLogic$performScrollForOverscroll$1;->this$0:Landroidx/compose/foundation/gestures/l0;
+    iget-object v0, p0, Landroidx/compose/foundation/gestures/ScrollingLogic$performScrollForOverscroll$1;->this$0:Landroidx/compose/foundation/gestures/N;
 
     .line 2
     .line 3
-    iget-object v1, v0, Landroidx/compose/foundation/gestures/l0;->h:Landroidx/compose/foundation/gestures/a0;
+    iget-object v1, v0, Landroidx/compose/foundation/gestures/N;->h:Landroidx/compose/foundation/gestures/C;
 
     .line 4
     .line 5
-    iget v2, v0, Landroidx/compose/foundation/gestures/l0;->g:I
+    iget v2, v0, Landroidx/compose/foundation/gestures/N;->g:I
 
     .line 6
     .line 7
-    invoke-static {v0, v1, p1, p2, v2}, Landroidx/compose/foundation/gestures/l0;->a(Landroidx/compose/foundation/gestures/l0;Landroidx/compose/foundation/gestures/a0;JI)J
+    invoke-static {v0, v1, p1, p2, v2}, Landroidx/compose/foundation/gestures/N;->a(Landroidx/compose/foundation/gestures/N;Landroidx/compose/foundation/gestures/C;JI)J
 
     .line 8
     .line 9

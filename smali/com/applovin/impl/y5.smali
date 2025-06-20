@@ -47,13 +47,14 @@
 .method private a(Lcom/applovin/impl/sd$e;)Lcom/applovin/impl/a7;
     .locals 4
 
+    .line 1
     iget-object v0, p0, Lcom/applovin/impl/y5;->d:Lcom/applovin/impl/pa$b;
 
     if-eqz v0, :cond_0
 
     goto :goto_0
 
-    .line 1
+    .line 2
     :cond_0
     new-instance v0, Lcom/applovin/impl/c6$b;
 
@@ -65,11 +66,11 @@
 
     move-result-object v0
 
-    .line 2
+    .line 3
     :goto_0
     new-instance v1, Lcom/applovin/impl/qa;
 
-    .line 3
+    .line 4
     iget-object v2, p1, Lcom/applovin/impl/sd$e;->b:Landroid/net/Uri;
 
     if-nez v2, :cond_1
@@ -88,7 +89,7 @@
 
     invoke-direct {v1, v2, v3, v0}, Lcom/applovin/impl/qa;-><init>(Ljava/lang/String;ZLcom/applovin/impl/pa$b;)V
 
-    .line 4
+    .line 5
     iget-object v0, p1, Lcom/applovin/impl/sd$e;->c:Lcom/applovin/impl/fb;
 
     invoke-virtual {v0}, Lcom/applovin/impl/fb;->e()Lcom/applovin/impl/hb;
@@ -112,7 +113,7 @@
 
     check-cast v2, Ljava/util/Map$Entry;
 
-    .line 5
+    .line 6
     invoke-interface {v2}, Ljava/util/Map$Entry;->getKey()Ljava/lang/Object;
 
     move-result-object v3
@@ -129,7 +130,7 @@
 
     goto :goto_2
 
-    .line 6
+    .line 7
     :cond_2
     new-instance v0, Lcom/applovin/impl/x5$b;
 
@@ -139,28 +140,28 @@
 
     sget-object v3, Lcom/applovin/impl/l9;->d:Lcom/applovin/impl/y7$c;
 
-    .line 7
+    .line 8
     invoke-virtual {v0, v2, v3}, Lcom/applovin/impl/x5$b;->a(Ljava/util/UUID;Lcom/applovin/impl/y7$c;)Lcom/applovin/impl/x5$b;
 
     move-result-object v0
 
     iget-boolean v2, p1, Lcom/applovin/impl/sd$e;->d:Z
 
-    .line 8
+    .line 9
     invoke-virtual {v0, v2}, Lcom/applovin/impl/x5$b;->a(Z)Lcom/applovin/impl/x5$b;
 
     move-result-object v0
 
     iget-boolean v2, p1, Lcom/applovin/impl/sd$e;->e:Z
 
-    .line 9
+    .line 10
     invoke-virtual {v0, v2}, Lcom/applovin/impl/x5$b;->b(Z)Lcom/applovin/impl/x5$b;
 
     move-result-object v0
 
     iget-object v2, p1, Lcom/applovin/impl/sd$e;->g:Lcom/applovin/impl/db;
 
-    .line 10
+    .line 11
     invoke-static {v2}, Lcom/applovin/impl/tb;->a(Ljava/util/Collection;)[I
 
     move-result-object v2
@@ -169,12 +170,12 @@
 
     move-result-object v0
 
-    .line 11
+    .line 12
     invoke-virtual {v0, v1}, Lcom/applovin/impl/x5$b;->a(Lcom/applovin/impl/pd;)Lcom/applovin/impl/x5;
 
     move-result-object v0
 
-    .line 12
+    .line 13
     invoke-virtual {p1}, Lcom/applovin/impl/sd$e;->b()[B
 
     move-result-object p1
@@ -191,19 +192,19 @@
 .method public a(Lcom/applovin/impl/sd;)Lcom/applovin/impl/a7;
     .locals 2
 
-    .line 13
+    .line 14
     iget-object v0, p1, Lcom/applovin/impl/sd;->b:Lcom/applovin/impl/sd$g;
 
     invoke-static {v0}, Lcom/applovin/impl/b1;->a(Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 14
+    .line 15
     iget-object p1, p1, Lcom/applovin/impl/sd;->b:Lcom/applovin/impl/sd$g;
 
     iget-object p1, p1, Lcom/applovin/impl/sd$g;->c:Lcom/applovin/impl/sd$e;
 
     if-eqz p1, :cond_2
 
-    .line 15
+    .line 16
     sget v0, Lcom/applovin/impl/xp;->a:I
 
     const/16 v1, 0x12
@@ -212,25 +213,26 @@
 
     goto :goto_2
 
+    .line 17
     :cond_0
     iget-object v0, p0, Lcom/applovin/impl/y5;->a:Ljava/lang/Object;
 
-    .line 16
     monitor-enter v0
 
+    .line 18
     :try_start_0
     iget-object v1, p0, Lcom/applovin/impl/y5;->b:Lcom/applovin/impl/sd$e;
 
-    .line 17
     invoke-static {p1, v1}, Lcom/applovin/impl/xp;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result v1
 
     if-nez v1, :cond_1
 
+    .line 19
     iput-object p1, p0, Lcom/applovin/impl/y5;->b:Lcom/applovin/impl/sd$e;
 
-    .line 18
+    .line 20
     invoke-direct {p0, p1}, Lcom/applovin/impl/y5;->a(Lcom/applovin/impl/sd$e;)Lcom/applovin/impl/a7;
 
     move-result-object p1
@@ -244,11 +246,11 @@
 
     goto :goto_1
 
+    .line 21
     :cond_1
     :goto_0
     iget-object p1, p0, Lcom/applovin/impl/y5;->c:Lcom/applovin/impl/a7;
 
-    .line 19
     invoke-static {p1}, Lcom/applovin/impl/b1;->a(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object p1
@@ -259,7 +261,7 @@
 
     return-object p1
 
-    .line 20
+    .line 22
     :goto_1
     monitor-exit v0
     :try_end_0
@@ -267,7 +269,7 @@
 
     throw p1
 
-    .line 21
+    .line 23
     :cond_2
     :goto_2
     sget-object p1, Lcom/applovin/impl/a7;->a:Lcom/applovin/impl/a7;

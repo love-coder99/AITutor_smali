@@ -422,14 +422,14 @@
 
     .line 10
     .line 11
-    new-instance v3, Lcom/applovin/impl/bv;
+    new-instance v3, Lcom/applovin/impl/S1;
 
     .line 12
     .line 13
-    const/4 v4, 0x1
+    const/4 v4, 0x0
 
     .line 14
-    invoke-direct {v3, p0, v4}, Lcom/applovin/impl/bv;-><init>(Lcom/applovin/impl/pg;I)V
+    invoke-direct {v3, p0, v4}, Lcom/applovin/impl/S1;-><init>(Lcom/applovin/impl/pg;I)V
 
     .line 15
     .line 16
@@ -477,9 +477,9 @@
 
     if-eqz v0, :cond_0
 
+    .line 4
     iget-object v0, p0, Lcom/applovin/impl/pg;->a:Lcom/applovin/impl/sdk/j;
 
-    .line 4
     invoke-static {v0}, Lcom/applovin/impl/qg;->a(Lcom/applovin/impl/sdk/j;)Ljava/lang/String;
 
     move-result-object v0
@@ -506,10 +506,10 @@
     :cond_0
     move-object v0, p1
 
+    .line 7
     :goto_0
     iget-object v1, p0, Lcom/applovin/impl/pg;->c:Ljava/lang/String;
 
-    .line 7
     invoke-static {v1, v0}, Lcom/iab/omid/library/applovin/ScriptInjector;->injectScriptContentIntoHtml(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object p1
@@ -518,10 +518,10 @@
 
     return-object p1
 
+    .line 8
     :goto_1
     iget-object v1, p0, Lcom/applovin/impl/pg;->a:Lcom/applovin/impl/sdk/j;
 
-    .line 8
     invoke-virtual {v1}, Lcom/applovin/impl/sdk/j;->I()Lcom/applovin/impl/sdk/n;
 
     invoke-static {}, Lcom/applovin/impl/sdk/n;->a()Z
@@ -549,9 +549,9 @@
 .method public b()Lcom/iab/omid/library/applovin/adsession/Partner;
     .locals 2
 
+    .line 2
     iget-object v0, p0, Lcom/applovin/impl/pg;->a:Lcom/applovin/impl/sdk/j;
 
-    .line 2
     sget-object v1, Lcom/applovin/impl/sj;->g0:Lcom/applovin/impl/sj;
 
     invoke-virtual {v0, v1}, Lcom/applovin/impl/sdk/j;->a(Lcom/applovin/impl/sj;)Ljava/lang/Object;
@@ -792,14 +792,14 @@
     .line 61
     .line 62
     :cond_0
-    new-instance v0, Lcom/applovin/impl/bv;
+    new-instance v0, Lcom/applovin/impl/S1;
 
     .line 63
     .line 64
-    const/4 v1, 0x0
+    const/4 v1, 0x1
 
     .line 65
-    invoke-direct {v0, p0, v1}, Lcom/applovin/impl/bv;-><init>(Lcom/applovin/impl/pg;I)V
+    invoke-direct {v0, p0, v1}, Lcom/applovin/impl/S1;-><init>(Lcom/applovin/impl/pg;I)V
 
     .line 66
     .line 67

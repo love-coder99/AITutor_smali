@@ -1,454 +1,697 @@
-.class public abstract Landroidx/compose/foundation/text/c;
+.class public abstract synthetic Landroidx/compose/foundation/text/C;
 .super Ljava/lang/Object;
 .source "SourceFile"
 
 
 # static fields
-.field public static final a:Lkotlin/Pair;
+.field public static final synthetic a:[I
 
 
 # direct methods
 .method static constructor <clinit>()V
-    .locals 2
+    .locals 3
 
-    .line 1
-    new-instance v0, Lkotlin/Pair;
+    invoke-static {}, Landroidx/compose/foundation/text/KeyCommand;->values()[Landroidx/compose/foundation/text/KeyCommand;
 
-    .line 2
-    .line 3
-    sget-object v1, Lkotlin/collections/EmptyList;->INSTANCE:Lkotlin/collections/EmptyList;
+    move-result-object v0
 
-    .line 4
-    .line 5
-    invoke-direct {v0, v1, v1}, Lkotlin/Pair;-><init>(Ljava/lang/Object;Ljava/lang/Object;)V
+    array-length v0, v0
 
-    .line 6
-    .line 7
-    .line 8
-    sput-object v0, Landroidx/compose/foundation/text/c;->a:Lkotlin/Pair;
+    new-array v0, v0, [I
 
-    .line 9
-    .line 10
-    return-void
-.end method
+    :try_start_0
+    sget-object v1, Landroidx/compose/foundation/text/KeyCommand;->COPY:Landroidx/compose/foundation/text/KeyCommand;
 
-.method public static final a(Landroidx/compose/ui/text/f;Ljava/util/List;Landroidx/compose/runtime/l;I)V
-    .locals 11
+    invoke-virtual {v1}, Ljava/lang/Enum;->ordinal()I
 
-    .line 1
-    check-cast p2, Landroidx/compose/runtime/p;
-
-    .line 2
-    .line 3
-    const v0, -0x6af76057
-
-    .line 4
-    .line 5
-    .line 6
-    invoke-virtual {p2, v0}, Landroidx/compose/runtime/p;->V(I)Landroidx/compose/runtime/p;
-
-    .line 7
-    .line 8
-    .line 9
-    and-int/lit8 v0, p3, 0x6
-
-    .line 10
-    .line 11
-    if-nez v0, :cond_1
-
-    .line 12
-    .line 13
-    invoke-virtual {p2, p0}, Landroidx/compose/runtime/p;->g(Ljava/lang/Object;)Z
-
-    .line 14
-    .line 15
-    .line 16
-    move-result v0
-
-    .line 17
-    if-eqz v0, :cond_0
-
-    .line 18
-    .line 19
-    const/4 v0, 0x4
-
-    .line 20
-    goto :goto_0
-
-    .line 21
-    :cond_0
-    const/4 v0, 0x2
-
-    .line 22
-    :goto_0
-    or-int/2addr v0, p3
-
-    .line 23
-    goto :goto_1
-
-    .line 24
-    :cond_1
-    move v0, p3
-
-    .line 25
-    :goto_1
-    and-int/lit8 v1, p3, 0x30
-
-    .line 26
-    .line 27
-    if-nez v1, :cond_3
-
-    .line 28
-    .line 29
-    invoke-virtual {p2, p1}, Landroidx/compose/runtime/p;->i(Ljava/lang/Object;)Z
-
-    .line 30
-    .line 31
-    .line 32
     move-result v1
 
-    .line 33
-    if-eqz v1, :cond_2
-
-    .line 34
-    .line 35
-    const/16 v1, 0x20
-
-    .line 36
-    .line 37
-    goto :goto_2
-
-    .line 38
-    :cond_2
-    const/16 v1, 0x10
-
-    .line 39
-    .line 40
-    :goto_2
-    or-int/2addr v0, v1
-
-    .line 41
-    :cond_3
-    and-int/lit8 v0, v0, 0x13
-
-    .line 42
-    .line 43
-    const/16 v1, 0x12
-
-    .line 44
-    .line 45
-    if-ne v0, v1, :cond_5
-
-    .line 46
-    .line 47
-    invoke-virtual {p2}, Landroidx/compose/runtime/p;->y()Z
-
-    .line 48
-    .line 49
-    .line 50
-    move-result v0
-
-    .line 51
-    if-nez v0, :cond_4
-
-    .line 52
-    .line 53
-    goto :goto_3
-
-    .line 54
-    :cond_4
-    invoke-virtual {p2}, Landroidx/compose/runtime/p;->N()V
-
-    .line 55
-    .line 56
-    .line 57
-    goto/16 :goto_6
-
-    .line 58
-    .line 59
-    :cond_5
-    :goto_3
-    invoke-interface {p1}, Ljava/util/List;->size()I
-
-    .line 60
-    .line 61
-    .line 62
-    move-result v0
-
-    .line 63
-    const/4 v1, 0x0
-
-    .line 64
-    const/4 v2, 0x0
-
-    .line 65
-    :goto_4
-    if-ge v2, v0, :cond_a
-
-    .line 66
-    .line 67
-    invoke-interface {p1, v2}, Ljava/util/List;->get(I)Ljava/lang/Object;
-
-    .line 68
-    .line 69
-    .line 70
-    move-result-object v3
-
-    .line 71
-    check-cast v3, Landroidx/compose/ui/text/e;
-
-    .line 72
-    .line 73
-    iget-object v4, v3, Landroidx/compose/ui/text/e;->a:Ljava/lang/Object;
-
-    .line 74
-    .line 75
-    check-cast v4, Lzh/f;
-
-    .line 76
-    .line 77
-    sget-object v5, Landroidx/compose/foundation/text/b;->a:Landroidx/compose/foundation/text/b;
-
-    .line 78
-    .line 79
-    sget-object v6, Landroidx/compose/ui/l;->c:Landroidx/compose/ui/l;
-
-    .line 80
-    .line 81
-    iget v7, p2, Landroidx/compose/runtime/p;->P:I
-
-    .line 82
-    .line 83
-    invoke-virtual {p2}, Landroidx/compose/runtime/p;->n()Landroidx/compose/runtime/q1;
-
-    .line 84
-    .line 85
-    .line 86
-    move-result-object v8
-
-    .line 87
-    invoke-static {p2, v6}, Landroidx/compose/ui/a;->c(Landroidx/compose/runtime/l;Landroidx/compose/ui/o;)Landroidx/compose/ui/o;
-
-    .line 88
-    .line 89
-    .line 90
-    move-result-object v6
-
-    .line 91
-    sget-object v9, Landroidx/compose/ui/node/h;->y8:Landroidx/compose/ui/node/g;
-
-    .line 92
-    .line 93
-    invoke-virtual {v9}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
-
-    .line 94
-    .line 95
-    .line 96
-    sget-object v9, Landroidx/compose/ui/node/g;->b:Lzh/a;
-
-    .line 97
-    .line 98
-    iget-object v10, p2, Landroidx/compose/runtime/p;->a:Landroidx/compose/runtime/e;
-
-    .line 99
-    .line 100
-    instance-of v10, v10, Landroidx/compose/runtime/e;
-
-    .line 101
-    .line 102
-    if-eqz v10, :cond_9
-
-    .line 103
-    .line 104
-    invoke-virtual {p2}, Landroidx/compose/runtime/p;->X()V
-
-    .line 105
-    .line 106
-    .line 107
-    iget-boolean v10, p2, Landroidx/compose/runtime/p;->O:Z
-
-    .line 108
-    .line 109
-    if-eqz v10, :cond_6
-
-    .line 110
-    .line 111
-    invoke-virtual {p2, v9}, Landroidx/compose/runtime/p;->m(Lzh/a;)V
-
-    .line 112
-    .line 113
-    .line 114
-    goto :goto_5
-
-    .line 115
-    :cond_6
-    invoke-virtual {p2}, Landroidx/compose/runtime/p;->g0()V
-
-    .line 116
-    .line 117
-    .line 118
-    :goto_5
-    sget-object v9, Landroidx/compose/ui/node/g;->f:Lzh/e;
-
-    .line 119
-    .line 120
-    invoke-static {p2, v5, v9}, Landroidx/compose/runtime/q;->x(Landroidx/compose/runtime/l;Ljava/lang/Object;Lzh/e;)V
-
-    .line 121
-    .line 122
-    .line 123
-    sget-object v5, Landroidx/compose/ui/node/g;->e:Lzh/e;
-
-    .line 124
-    .line 125
-    invoke-static {p2, v8, v5}, Landroidx/compose/runtime/q;->x(Landroidx/compose/runtime/l;Ljava/lang/Object;Lzh/e;)V
-
-    .line 126
-    .line 127
-    .line 128
-    sget-object v5, Landroidx/compose/ui/node/g;->g:Lzh/e;
-
-    .line 129
-    .line 130
-    iget-boolean v8, p2, Landroidx/compose/runtime/p;->O:Z
-
-    .line 131
-    .line 132
-    if-nez v8, :cond_7
-
-    .line 133
-    .line 134
-    invoke-virtual {p2}, Landroidx/compose/runtime/p;->I()Ljava/lang/Object;
-
-    .line 135
-    .line 136
-    .line 137
-    move-result-object v8
-
-    .line 138
-    invoke-static {v7}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
-
-    .line 139
-    .line 140
-    .line 141
-    move-result-object v9
-
-    .line 142
-    invoke-static {v8, v9}, Lrb/h;->d(Ljava/lang/Object;Ljava/lang/Object;)Z
-
-    .line 143
-    .line 144
-    .line 145
-    move-result v8
-
-    .line 146
-    if-nez v8, :cond_8
-
-    .line 147
-    .line 148
-    :cond_7
-    invoke-static {v7, p2, v7, v5}, Landroid/support/v4/media/session/a;->N(ILandroidx/compose/runtime/p;ILzh/e;)V
-
-    .line 149
-    .line 150
-    .line 151
-    :cond_8
-    sget-object v5, Landroidx/compose/ui/node/g;->d:Lzh/e;
-
-    .line 152
-    .line 153
-    invoke-static {p2, v6, v5}, Landroidx/compose/runtime/q;->x(Landroidx/compose/runtime/l;Ljava/lang/Object;Lzh/e;)V
-
-    .line 154
-    .line 155
-    .line 156
-    iget v5, v3, Landroidx/compose/ui/text/e;->b:I
-
-    .line 157
-    .line 158
-    iget v3, v3, Landroidx/compose/ui/text/e;->c:I
-
-    .line 159
-    .line 160
-    invoke-virtual {p0, v5, v3}, Landroidx/compose/ui/text/f;->c(II)Landroidx/compose/ui/text/f;
-
-    .line 161
-    .line 162
-    .line 163
-    move-result-object v3
-
-    .line 164
-    invoke-static {v1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
-
-    .line 165
-    .line 166
-    .line 167
-    move-result-object v5
-
-    .line 168
-    iget-object v3, v3, Landroidx/compose/ui/text/f;->b:Ljava/lang/String;
-
-    .line 169
-    .line 170
-    invoke-interface {v4, v3, p2, v5}, Lzh/f;->invoke(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
-
-    .line 171
-    .line 172
-    .line 173
-    const/4 v3, 0x1
-
-    .line 174
-    invoke-virtual {p2, v3}, Landroidx/compose/runtime/p;->q(Z)V
-
-    .line 175
-    .line 176
-    .line 177
-    add-int/lit8 v2, v2, 0x1
-
-    .line 178
-    .line 179
-    goto :goto_4
-
-    .line 180
-    :cond_9
-    invoke-static {}, Lb0/h;->N()V
-
-    .line 181
-    .line 182
-    .line 183
-    const/4 p0, 0x0
-
-    .line 184
-    throw p0
-
-    .line 185
-    :cond_a
-    :goto_6
-    invoke-virtual {p2}, Landroidx/compose/runtime/p;->s()Landroidx/compose/runtime/x1;
-
-    .line 186
-    .line 187
-    .line 188
-    move-result-object p2
-
-    .line 189
-    if-eqz p2, :cond_b
-
-    .line 190
-    .line 191
-    new-instance v0, Landroidx/compose/foundation/text/AnnotatedStringResolveInlineContentKt$InlineChildren$2;
-
-    .line 192
-    .line 193
-    invoke-direct {v0, p0, p1, p3}, Landroidx/compose/foundation/text/AnnotatedStringResolveInlineContentKt$InlineChildren$2;-><init>(Landroidx/compose/ui/text/f;Ljava/util/List;I)V
-
-    .line 194
-    .line 195
-    .line 196
-    iput-object v0, p2, Landroidx/compose/runtime/x1;->d:Lzh/e;
-
-    .line 197
-    .line 198
-    :cond_b
+    const/4 v2, 0x1
+
+    aput v2, v0, v1
+    :try_end_0
+    .catch Ljava/lang/NoSuchFieldError; {:try_start_0 .. :try_end_0} :catch_0
+
+    :catch_0
+    :try_start_1
+    sget-object v1, Landroidx/compose/foundation/text/KeyCommand;->PASTE:Landroidx/compose/foundation/text/KeyCommand;
+
+    invoke-virtual {v1}, Ljava/lang/Enum;->ordinal()I
+
+    move-result v1
+
+    const/4 v2, 0x2
+
+    aput v2, v0, v1
+    :try_end_1
+    .catch Ljava/lang/NoSuchFieldError; {:try_start_1 .. :try_end_1} :catch_1
+
+    :catch_1
+    :try_start_2
+    sget-object v1, Landroidx/compose/foundation/text/KeyCommand;->CUT:Landroidx/compose/foundation/text/KeyCommand;
+
+    invoke-virtual {v1}, Ljava/lang/Enum;->ordinal()I
+
+    move-result v1
+
+    const/4 v2, 0x3
+
+    aput v2, v0, v1
+    :try_end_2
+    .catch Ljava/lang/NoSuchFieldError; {:try_start_2 .. :try_end_2} :catch_2
+
+    :catch_2
+    :try_start_3
+    sget-object v1, Landroidx/compose/foundation/text/KeyCommand;->LEFT_CHAR:Landroidx/compose/foundation/text/KeyCommand;
+
+    invoke-virtual {v1}, Ljava/lang/Enum;->ordinal()I
+
+    move-result v1
+
+    const/4 v2, 0x4
+
+    aput v2, v0, v1
+    :try_end_3
+    .catch Ljava/lang/NoSuchFieldError; {:try_start_3 .. :try_end_3} :catch_3
+
+    :catch_3
+    :try_start_4
+    sget-object v1, Landroidx/compose/foundation/text/KeyCommand;->RIGHT_CHAR:Landroidx/compose/foundation/text/KeyCommand;
+
+    invoke-virtual {v1}, Ljava/lang/Enum;->ordinal()I
+
+    move-result v1
+
+    const/4 v2, 0x5
+
+    aput v2, v0, v1
+    :try_end_4
+    .catch Ljava/lang/NoSuchFieldError; {:try_start_4 .. :try_end_4} :catch_4
+
+    :catch_4
+    :try_start_5
+    sget-object v1, Landroidx/compose/foundation/text/KeyCommand;->LEFT_WORD:Landroidx/compose/foundation/text/KeyCommand;
+
+    invoke-virtual {v1}, Ljava/lang/Enum;->ordinal()I
+
+    move-result v1
+
+    const/4 v2, 0x6
+
+    aput v2, v0, v1
+    :try_end_5
+    .catch Ljava/lang/NoSuchFieldError; {:try_start_5 .. :try_end_5} :catch_5
+
+    :catch_5
+    :try_start_6
+    sget-object v1, Landroidx/compose/foundation/text/KeyCommand;->RIGHT_WORD:Landroidx/compose/foundation/text/KeyCommand;
+
+    invoke-virtual {v1}, Ljava/lang/Enum;->ordinal()I
+
+    move-result v1
+
+    const/4 v2, 0x7
+
+    aput v2, v0, v1
+    :try_end_6
+    .catch Ljava/lang/NoSuchFieldError; {:try_start_6 .. :try_end_6} :catch_6
+
+    :catch_6
+    :try_start_7
+    sget-object v1, Landroidx/compose/foundation/text/KeyCommand;->PREV_PARAGRAPH:Landroidx/compose/foundation/text/KeyCommand;
+
+    invoke-virtual {v1}, Ljava/lang/Enum;->ordinal()I
+
+    move-result v1
+
+    const/16 v2, 0x8
+
+    aput v2, v0, v1
+    :try_end_7
+    .catch Ljava/lang/NoSuchFieldError; {:try_start_7 .. :try_end_7} :catch_7
+
+    :catch_7
+    :try_start_8
+    sget-object v1, Landroidx/compose/foundation/text/KeyCommand;->NEXT_PARAGRAPH:Landroidx/compose/foundation/text/KeyCommand;
+
+    invoke-virtual {v1}, Ljava/lang/Enum;->ordinal()I
+
+    move-result v1
+
+    const/16 v2, 0x9
+
+    aput v2, v0, v1
+    :try_end_8
+    .catch Ljava/lang/NoSuchFieldError; {:try_start_8 .. :try_end_8} :catch_8
+
+    :catch_8
+    :try_start_9
+    sget-object v1, Landroidx/compose/foundation/text/KeyCommand;->UP:Landroidx/compose/foundation/text/KeyCommand;
+
+    invoke-virtual {v1}, Ljava/lang/Enum;->ordinal()I
+
+    move-result v1
+
+    const/16 v2, 0xa
+
+    aput v2, v0, v1
+    :try_end_9
+    .catch Ljava/lang/NoSuchFieldError; {:try_start_9 .. :try_end_9} :catch_9
+
+    :catch_9
+    :try_start_a
+    sget-object v1, Landroidx/compose/foundation/text/KeyCommand;->DOWN:Landroidx/compose/foundation/text/KeyCommand;
+
+    invoke-virtual {v1}, Ljava/lang/Enum;->ordinal()I
+
+    move-result v1
+
+    const/16 v2, 0xb
+
+    aput v2, v0, v1
+    :try_end_a
+    .catch Ljava/lang/NoSuchFieldError; {:try_start_a .. :try_end_a} :catch_a
+
+    :catch_a
+    :try_start_b
+    sget-object v1, Landroidx/compose/foundation/text/KeyCommand;->PAGE_UP:Landroidx/compose/foundation/text/KeyCommand;
+
+    invoke-virtual {v1}, Ljava/lang/Enum;->ordinal()I
+
+    move-result v1
+
+    const/16 v2, 0xc
+
+    aput v2, v0, v1
+    :try_end_b
+    .catch Ljava/lang/NoSuchFieldError; {:try_start_b .. :try_end_b} :catch_b
+
+    :catch_b
+    :try_start_c
+    sget-object v1, Landroidx/compose/foundation/text/KeyCommand;->PAGE_DOWN:Landroidx/compose/foundation/text/KeyCommand;
+
+    invoke-virtual {v1}, Ljava/lang/Enum;->ordinal()I
+
+    move-result v1
+
+    const/16 v2, 0xd
+
+    aput v2, v0, v1
+    :try_end_c
+    .catch Ljava/lang/NoSuchFieldError; {:try_start_c .. :try_end_c} :catch_c
+
+    :catch_c
+    :try_start_d
+    sget-object v1, Landroidx/compose/foundation/text/KeyCommand;->LINE_START:Landroidx/compose/foundation/text/KeyCommand;
+
+    invoke-virtual {v1}, Ljava/lang/Enum;->ordinal()I
+
+    move-result v1
+
+    const/16 v2, 0xe
+
+    aput v2, v0, v1
+    :try_end_d
+    .catch Ljava/lang/NoSuchFieldError; {:try_start_d .. :try_end_d} :catch_d
+
+    :catch_d
+    :try_start_e
+    sget-object v1, Landroidx/compose/foundation/text/KeyCommand;->LINE_END:Landroidx/compose/foundation/text/KeyCommand;
+
+    invoke-virtual {v1}, Ljava/lang/Enum;->ordinal()I
+
+    move-result v1
+
+    const/16 v2, 0xf
+
+    aput v2, v0, v1
+    :try_end_e
+    .catch Ljava/lang/NoSuchFieldError; {:try_start_e .. :try_end_e} :catch_e
+
+    :catch_e
+    :try_start_f
+    sget-object v1, Landroidx/compose/foundation/text/KeyCommand;->LINE_LEFT:Landroidx/compose/foundation/text/KeyCommand;
+
+    invoke-virtual {v1}, Ljava/lang/Enum;->ordinal()I
+
+    move-result v1
+
+    const/16 v2, 0x10
+
+    aput v2, v0, v1
+    :try_end_f
+    .catch Ljava/lang/NoSuchFieldError; {:try_start_f .. :try_end_f} :catch_f
+
+    :catch_f
+    :try_start_10
+    sget-object v1, Landroidx/compose/foundation/text/KeyCommand;->LINE_RIGHT:Landroidx/compose/foundation/text/KeyCommand;
+
+    invoke-virtual {v1}, Ljava/lang/Enum;->ordinal()I
+
+    move-result v1
+
+    const/16 v2, 0x11
+
+    aput v2, v0, v1
+    :try_end_10
+    .catch Ljava/lang/NoSuchFieldError; {:try_start_10 .. :try_end_10} :catch_10
+
+    :catch_10
+    :try_start_11
+    sget-object v1, Landroidx/compose/foundation/text/KeyCommand;->HOME:Landroidx/compose/foundation/text/KeyCommand;
+
+    invoke-virtual {v1}, Ljava/lang/Enum;->ordinal()I
+
+    move-result v1
+
+    const/16 v2, 0x12
+
+    aput v2, v0, v1
+    :try_end_11
+    .catch Ljava/lang/NoSuchFieldError; {:try_start_11 .. :try_end_11} :catch_11
+
+    :catch_11
+    :try_start_12
+    sget-object v1, Landroidx/compose/foundation/text/KeyCommand;->END:Landroidx/compose/foundation/text/KeyCommand;
+
+    invoke-virtual {v1}, Ljava/lang/Enum;->ordinal()I
+
+    move-result v1
+
+    const/16 v2, 0x13
+
+    aput v2, v0, v1
+    :try_end_12
+    .catch Ljava/lang/NoSuchFieldError; {:try_start_12 .. :try_end_12} :catch_12
+
+    :catch_12
+    :try_start_13
+    sget-object v1, Landroidx/compose/foundation/text/KeyCommand;->DELETE_PREV_CHAR:Landroidx/compose/foundation/text/KeyCommand;
+
+    invoke-virtual {v1}, Ljava/lang/Enum;->ordinal()I
+
+    move-result v1
+
+    const/16 v2, 0x14
+
+    aput v2, v0, v1
+    :try_end_13
+    .catch Ljava/lang/NoSuchFieldError; {:try_start_13 .. :try_end_13} :catch_13
+
+    :catch_13
+    :try_start_14
+    sget-object v1, Landroidx/compose/foundation/text/KeyCommand;->DELETE_NEXT_CHAR:Landroidx/compose/foundation/text/KeyCommand;
+
+    invoke-virtual {v1}, Ljava/lang/Enum;->ordinal()I
+
+    move-result v1
+
+    const/16 v2, 0x15
+
+    aput v2, v0, v1
+    :try_end_14
+    .catch Ljava/lang/NoSuchFieldError; {:try_start_14 .. :try_end_14} :catch_14
+
+    :catch_14
+    :try_start_15
+    sget-object v1, Landroidx/compose/foundation/text/KeyCommand;->DELETE_PREV_WORD:Landroidx/compose/foundation/text/KeyCommand;
+
+    invoke-virtual {v1}, Ljava/lang/Enum;->ordinal()I
+
+    move-result v1
+
+    const/16 v2, 0x16
+
+    aput v2, v0, v1
+    :try_end_15
+    .catch Ljava/lang/NoSuchFieldError; {:try_start_15 .. :try_end_15} :catch_15
+
+    :catch_15
+    :try_start_16
+    sget-object v1, Landroidx/compose/foundation/text/KeyCommand;->DELETE_NEXT_WORD:Landroidx/compose/foundation/text/KeyCommand;
+
+    invoke-virtual {v1}, Ljava/lang/Enum;->ordinal()I
+
+    move-result v1
+
+    const/16 v2, 0x17
+
+    aput v2, v0, v1
+    :try_end_16
+    .catch Ljava/lang/NoSuchFieldError; {:try_start_16 .. :try_end_16} :catch_16
+
+    :catch_16
+    :try_start_17
+    sget-object v1, Landroidx/compose/foundation/text/KeyCommand;->DELETE_FROM_LINE_START:Landroidx/compose/foundation/text/KeyCommand;
+
+    invoke-virtual {v1}, Ljava/lang/Enum;->ordinal()I
+
+    move-result v1
+
+    const/16 v2, 0x18
+
+    aput v2, v0, v1
+    :try_end_17
+    .catch Ljava/lang/NoSuchFieldError; {:try_start_17 .. :try_end_17} :catch_17
+
+    :catch_17
+    :try_start_18
+    sget-object v1, Landroidx/compose/foundation/text/KeyCommand;->DELETE_TO_LINE_END:Landroidx/compose/foundation/text/KeyCommand;
+
+    invoke-virtual {v1}, Ljava/lang/Enum;->ordinal()I
+
+    move-result v1
+
+    const/16 v2, 0x19
+
+    aput v2, v0, v1
+    :try_end_18
+    .catch Ljava/lang/NoSuchFieldError; {:try_start_18 .. :try_end_18} :catch_18
+
+    :catch_18
+    :try_start_19
+    sget-object v1, Landroidx/compose/foundation/text/KeyCommand;->NEW_LINE:Landroidx/compose/foundation/text/KeyCommand;
+
+    invoke-virtual {v1}, Ljava/lang/Enum;->ordinal()I
+
+    move-result v1
+
+    const/16 v2, 0x1a
+
+    aput v2, v0, v1
+    :try_end_19
+    .catch Ljava/lang/NoSuchFieldError; {:try_start_19 .. :try_end_19} :catch_19
+
+    :catch_19
+    :try_start_1a
+    sget-object v1, Landroidx/compose/foundation/text/KeyCommand;->TAB:Landroidx/compose/foundation/text/KeyCommand;
+
+    invoke-virtual {v1}, Ljava/lang/Enum;->ordinal()I
+
+    move-result v1
+
+    const/16 v2, 0x1b
+
+    aput v2, v0, v1
+    :try_end_1a
+    .catch Ljava/lang/NoSuchFieldError; {:try_start_1a .. :try_end_1a} :catch_1a
+
+    :catch_1a
+    :try_start_1b
+    sget-object v1, Landroidx/compose/foundation/text/KeyCommand;->SELECT_ALL:Landroidx/compose/foundation/text/KeyCommand;
+
+    invoke-virtual {v1}, Ljava/lang/Enum;->ordinal()I
+
+    move-result v1
+
+    const/16 v2, 0x1c
+
+    aput v2, v0, v1
+    :try_end_1b
+    .catch Ljava/lang/NoSuchFieldError; {:try_start_1b .. :try_end_1b} :catch_1b
+
+    :catch_1b
+    :try_start_1c
+    sget-object v1, Landroidx/compose/foundation/text/KeyCommand;->SELECT_LEFT_CHAR:Landroidx/compose/foundation/text/KeyCommand;
+
+    invoke-virtual {v1}, Ljava/lang/Enum;->ordinal()I
+
+    move-result v1
+
+    const/16 v2, 0x1d
+
+    aput v2, v0, v1
+    :try_end_1c
+    .catch Ljava/lang/NoSuchFieldError; {:try_start_1c .. :try_end_1c} :catch_1c
+
+    :catch_1c
+    :try_start_1d
+    sget-object v1, Landroidx/compose/foundation/text/KeyCommand;->SELECT_RIGHT_CHAR:Landroidx/compose/foundation/text/KeyCommand;
+
+    invoke-virtual {v1}, Ljava/lang/Enum;->ordinal()I
+
+    move-result v1
+
+    const/16 v2, 0x1e
+
+    aput v2, v0, v1
+    :try_end_1d
+    .catch Ljava/lang/NoSuchFieldError; {:try_start_1d .. :try_end_1d} :catch_1d
+
+    :catch_1d
+    :try_start_1e
+    sget-object v1, Landroidx/compose/foundation/text/KeyCommand;->SELECT_LEFT_WORD:Landroidx/compose/foundation/text/KeyCommand;
+
+    invoke-virtual {v1}, Ljava/lang/Enum;->ordinal()I
+
+    move-result v1
+
+    const/16 v2, 0x1f
+
+    aput v2, v0, v1
+    :try_end_1e
+    .catch Ljava/lang/NoSuchFieldError; {:try_start_1e .. :try_end_1e} :catch_1e
+
+    :catch_1e
+    :try_start_1f
+    sget-object v1, Landroidx/compose/foundation/text/KeyCommand;->SELECT_RIGHT_WORD:Landroidx/compose/foundation/text/KeyCommand;
+
+    invoke-virtual {v1}, Ljava/lang/Enum;->ordinal()I
+
+    move-result v1
+
+    const/16 v2, 0x20
+
+    aput v2, v0, v1
+    :try_end_1f
+    .catch Ljava/lang/NoSuchFieldError; {:try_start_1f .. :try_end_1f} :catch_1f
+
+    :catch_1f
+    :try_start_20
+    sget-object v1, Landroidx/compose/foundation/text/KeyCommand;->SELECT_PREV_PARAGRAPH:Landroidx/compose/foundation/text/KeyCommand;
+
+    invoke-virtual {v1}, Ljava/lang/Enum;->ordinal()I
+
+    move-result v1
+
+    const/16 v2, 0x21
+
+    aput v2, v0, v1
+    :try_end_20
+    .catch Ljava/lang/NoSuchFieldError; {:try_start_20 .. :try_end_20} :catch_20
+
+    :catch_20
+    :try_start_21
+    sget-object v1, Landroidx/compose/foundation/text/KeyCommand;->SELECT_NEXT_PARAGRAPH:Landroidx/compose/foundation/text/KeyCommand;
+
+    invoke-virtual {v1}, Ljava/lang/Enum;->ordinal()I
+
+    move-result v1
+
+    const/16 v2, 0x22
+
+    aput v2, v0, v1
+    :try_end_21
+    .catch Ljava/lang/NoSuchFieldError; {:try_start_21 .. :try_end_21} :catch_21
+
+    :catch_21
+    :try_start_22
+    sget-object v1, Landroidx/compose/foundation/text/KeyCommand;->SELECT_LINE_START:Landroidx/compose/foundation/text/KeyCommand;
+
+    invoke-virtual {v1}, Ljava/lang/Enum;->ordinal()I
+
+    move-result v1
+
+    const/16 v2, 0x23
+
+    aput v2, v0, v1
+    :try_end_22
+    .catch Ljava/lang/NoSuchFieldError; {:try_start_22 .. :try_end_22} :catch_22
+
+    :catch_22
+    :try_start_23
+    sget-object v1, Landroidx/compose/foundation/text/KeyCommand;->SELECT_LINE_END:Landroidx/compose/foundation/text/KeyCommand;
+
+    invoke-virtual {v1}, Ljava/lang/Enum;->ordinal()I
+
+    move-result v1
+
+    const/16 v2, 0x24
+
+    aput v2, v0, v1
+    :try_end_23
+    .catch Ljava/lang/NoSuchFieldError; {:try_start_23 .. :try_end_23} :catch_23
+
+    :catch_23
+    :try_start_24
+    sget-object v1, Landroidx/compose/foundation/text/KeyCommand;->SELECT_LINE_LEFT:Landroidx/compose/foundation/text/KeyCommand;
+
+    invoke-virtual {v1}, Ljava/lang/Enum;->ordinal()I
+
+    move-result v1
+
+    const/16 v2, 0x25
+
+    aput v2, v0, v1
+    :try_end_24
+    .catch Ljava/lang/NoSuchFieldError; {:try_start_24 .. :try_end_24} :catch_24
+
+    :catch_24
+    :try_start_25
+    sget-object v1, Landroidx/compose/foundation/text/KeyCommand;->SELECT_LINE_RIGHT:Landroidx/compose/foundation/text/KeyCommand;
+
+    invoke-virtual {v1}, Ljava/lang/Enum;->ordinal()I
+
+    move-result v1
+
+    const/16 v2, 0x26
+
+    aput v2, v0, v1
+    :try_end_25
+    .catch Ljava/lang/NoSuchFieldError; {:try_start_25 .. :try_end_25} :catch_25
+
+    :catch_25
+    :try_start_26
+    sget-object v1, Landroidx/compose/foundation/text/KeyCommand;->SELECT_UP:Landroidx/compose/foundation/text/KeyCommand;
+
+    invoke-virtual {v1}, Ljava/lang/Enum;->ordinal()I
+
+    move-result v1
+
+    const/16 v2, 0x27
+
+    aput v2, v0, v1
+    :try_end_26
+    .catch Ljava/lang/NoSuchFieldError; {:try_start_26 .. :try_end_26} :catch_26
+
+    :catch_26
+    :try_start_27
+    sget-object v1, Landroidx/compose/foundation/text/KeyCommand;->SELECT_DOWN:Landroidx/compose/foundation/text/KeyCommand;
+
+    invoke-virtual {v1}, Ljava/lang/Enum;->ordinal()I
+
+    move-result v1
+
+    const/16 v2, 0x28
+
+    aput v2, v0, v1
+    :try_end_27
+    .catch Ljava/lang/NoSuchFieldError; {:try_start_27 .. :try_end_27} :catch_27
+
+    :catch_27
+    :try_start_28
+    sget-object v1, Landroidx/compose/foundation/text/KeyCommand;->SELECT_PAGE_UP:Landroidx/compose/foundation/text/KeyCommand;
+
+    invoke-virtual {v1}, Ljava/lang/Enum;->ordinal()I
+
+    move-result v1
+
+    const/16 v2, 0x29
+
+    aput v2, v0, v1
+    :try_end_28
+    .catch Ljava/lang/NoSuchFieldError; {:try_start_28 .. :try_end_28} :catch_28
+
+    :catch_28
+    :try_start_29
+    sget-object v1, Landroidx/compose/foundation/text/KeyCommand;->SELECT_PAGE_DOWN:Landroidx/compose/foundation/text/KeyCommand;
+
+    invoke-virtual {v1}, Ljava/lang/Enum;->ordinal()I
+
+    move-result v1
+
+    const/16 v2, 0x2a
+
+    aput v2, v0, v1
+    :try_end_29
+    .catch Ljava/lang/NoSuchFieldError; {:try_start_29 .. :try_end_29} :catch_29
+
+    :catch_29
+    :try_start_2a
+    sget-object v1, Landroidx/compose/foundation/text/KeyCommand;->SELECT_HOME:Landroidx/compose/foundation/text/KeyCommand;
+
+    invoke-virtual {v1}, Ljava/lang/Enum;->ordinal()I
+
+    move-result v1
+
+    const/16 v2, 0x2b
+
+    aput v2, v0, v1
+    :try_end_2a
+    .catch Ljava/lang/NoSuchFieldError; {:try_start_2a .. :try_end_2a} :catch_2a
+
+    :catch_2a
+    :try_start_2b
+    sget-object v1, Landroidx/compose/foundation/text/KeyCommand;->SELECT_END:Landroidx/compose/foundation/text/KeyCommand;
+
+    invoke-virtual {v1}, Ljava/lang/Enum;->ordinal()I
+
+    move-result v1
+
+    const/16 v2, 0x2c
+
+    aput v2, v0, v1
+    :try_end_2b
+    .catch Ljava/lang/NoSuchFieldError; {:try_start_2b .. :try_end_2b} :catch_2b
+
+    :catch_2b
+    :try_start_2c
+    sget-object v1, Landroidx/compose/foundation/text/KeyCommand;->DESELECT:Landroidx/compose/foundation/text/KeyCommand;
+
+    invoke-virtual {v1}, Ljava/lang/Enum;->ordinal()I
+
+    move-result v1
+
+    const/16 v2, 0x2d
+
+    aput v2, v0, v1
+    :try_end_2c
+    .catch Ljava/lang/NoSuchFieldError; {:try_start_2c .. :try_end_2c} :catch_2c
+
+    :catch_2c
+    :try_start_2d
+    sget-object v1, Landroidx/compose/foundation/text/KeyCommand;->UNDO:Landroidx/compose/foundation/text/KeyCommand;
+
+    invoke-virtual {v1}, Ljava/lang/Enum;->ordinal()I
+
+    move-result v1
+
+    const/16 v2, 0x2e
+
+    aput v2, v0, v1
+    :try_end_2d
+    .catch Ljava/lang/NoSuchFieldError; {:try_start_2d .. :try_end_2d} :catch_2d
+
+    :catch_2d
+    :try_start_2e
+    sget-object v1, Landroidx/compose/foundation/text/KeyCommand;->REDO:Landroidx/compose/foundation/text/KeyCommand;
+
+    invoke-virtual {v1}, Ljava/lang/Enum;->ordinal()I
+
+    move-result v1
+
+    const/16 v2, 0x2f
+
+    aput v2, v0, v1
+    :try_end_2e
+    .catch Ljava/lang/NoSuchFieldError; {:try_start_2e .. :try_end_2e} :catch_2e
+
+    :catch_2e
+    :try_start_2f
+    sget-object v1, Landroidx/compose/foundation/text/KeyCommand;->CHARACTER_PALETTE:Landroidx/compose/foundation/text/KeyCommand;
+
+    invoke-virtual {v1}, Ljava/lang/Enum;->ordinal()I
+
+    move-result v1
+
+    const/16 v2, 0x30
+
+    aput v2, v0, v1
+    :try_end_2f
+    .catch Ljava/lang/NoSuchFieldError; {:try_start_2f .. :try_end_2f} :catch_2f
+
+    :catch_2f
+    sput-object v0, Landroidx/compose/foundation/text/C;->a:[I
+
     return-void
 .end method

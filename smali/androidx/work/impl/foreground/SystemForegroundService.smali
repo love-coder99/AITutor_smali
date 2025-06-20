@@ -1,9 +1,6 @@
 .class public Landroidx/work/impl/foreground/SystemForegroundService;
-.super Landroidx/lifecycle/z;
+.super Landroidx/lifecycle/A;
 .source "SourceFile"
-
-# interfaces
-.implements Lg5/b;
 
 
 # static fields
@@ -13,7 +10,7 @@
 # instance fields
 .field public c:Z
 
-.field public d:Lg5/c;
+.field public d:LA2/a;
 
 .field public f:Landroid/app/NotificationManager;
 
@@ -27,7 +24,7 @@
 
     .line 2
     .line 3
-    invoke-static {v0}, Landroidx/work/u;->b(Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v0}, Landroidx/work/A;->b(Ljava/lang/String;)Ljava/lang/String;
 
     .line 4
     .line 5
@@ -39,7 +36,7 @@
     .locals 0
 
     .line 1
-    invoke-direct {p0}, Landroidx/lifecycle/z;-><init>()V
+    invoke-direct {p0}, Landroidx/lifecycle/A;-><init>()V
 
     .line 2
     .line 3
@@ -81,7 +78,7 @@
 
     .line 14
     .line 15
-    new-instance v0, Lg5/c;
+    new-instance v0, LA2/a;
 
     .line 16
     .line 17
@@ -93,16 +90,16 @@
     move-result-object v1
 
     .line 21
-    invoke-direct {v0, v1}, Lg5/c;-><init>(Landroid/content/Context;)V
+    invoke-direct {v0, v1}, LA2/a;-><init>(Landroid/content/Context;)V
 
     .line 22
     .line 23
     .line 24
-    iput-object v0, p0, Landroidx/work/impl/foreground/SystemForegroundService;->d:Lg5/c;
+    iput-object v0, p0, Landroidx/work/impl/foreground/SystemForegroundService;->d:LA2/a;
 
     .line 25
     .line 26
-    iget-object v1, v0, Lg5/c;->l:Lg5/b;
+    iget-object v1, v0, LA2/a;->l:Landroidx/work/impl/foreground/SystemForegroundService;
 
     .line 27
     .line 28
@@ -110,7 +107,7 @@
 
     .line 29
     .line 30
-    invoke-static {}, Landroidx/work/u;->a()Landroidx/work/u;
+    invoke-static {}, Landroidx/work/A;->a()Landroidx/work/A;
 
     .line 31
     .line 32
@@ -127,7 +124,7 @@
 
     .line 38
     :cond_0
-    iput-object p0, v0, Lg5/c;->l:Lg5/b;
+    iput-object p0, v0, LA2/a;->l:Landroidx/work/impl/foreground/SystemForegroundService;
 
     .line 39
     .line 40
@@ -139,7 +136,7 @@
     .locals 0
 
     .line 1
-    invoke-super {p0}, Landroidx/lifecycle/z;->onCreate()V
+    invoke-super {p0}, Landroidx/lifecycle/A;->onCreate()V
 
     .line 2
     .line 3
@@ -156,16 +153,16 @@
     .locals 1
 
     .line 1
-    invoke-super {p0}, Landroidx/lifecycle/z;->onDestroy()V
+    invoke-super {p0}, Landroidx/lifecycle/A;->onDestroy()V
 
     .line 2
     .line 3
     .line 4
-    iget-object v0, p0, Landroidx/work/impl/foreground/SystemForegroundService;->d:Lg5/c;
+    iget-object v0, p0, Landroidx/work/impl/foreground/SystemForegroundService;->d:LA2/a;
 
     .line 5
     .line 6
-    invoke-virtual {v0}, Lg5/c;->d()V
+    invoke-virtual {v0}, LA2/a;->d()V
 
     .line 7
     .line 8
@@ -174,10 +171,10 @@
 .end method
 
 .method public final onStartCommand(Landroid/content/Intent;II)I
-    .locals 2
+    .locals 3
 
     .line 1
-    invoke-super {p0, p1, p2, p3}, Landroidx/lifecycle/z;->onStartCommand(Landroid/content/Intent;II)I
+    invoke-super {p0, p1, p2, p3}, Landroid/app/Service;->onStartCommand(Landroid/content/Intent;II)I
 
     .line 2
     .line 3
@@ -190,7 +187,7 @@
 
     .line 7
     .line 8
-    invoke-static {}, Landroidx/work/u;->a()Landroidx/work/u;
+    invoke-static {}, Landroidx/work/A;->a()Landroidx/work/A;
 
     .line 9
     .line 10
@@ -203,11 +200,11 @@
     .line 13
     .line 14
     .line 15
-    iget-object p2, p0, Landroidx/work/impl/foreground/SystemForegroundService;->d:Lg5/c;
+    iget-object p2, p0, Landroidx/work/impl/foreground/SystemForegroundService;->d:LA2/a;
 
     .line 16
     .line 17
-    invoke-virtual {p2}, Lg5/c;->d()V
+    invoke-virtual {p2}, LA2/a;->d()V
 
     .line 18
     .line 19
@@ -229,7 +226,7 @@
 
     .line 27
     .line 28
-    iget-object p2, p0, Landroidx/work/impl/foreground/SystemForegroundService;->d:Lg5/c;
+    iget-object p2, p0, Landroidx/work/impl/foreground/SystemForegroundService;->d:LA2/a;
 
     .line 29
     .line 30
@@ -266,7 +263,7 @@
 
     .line 46
     .line 47
-    invoke-static {}, Landroidx/work/u;->a()Landroidx/work/u;
+    invoke-static {}, Landroidx/work/A;->a()Landroidx/work/A;
 
     .line 48
     .line 49
@@ -292,33 +289,35 @@
     move-result-object p3
 
     .line 61
-    new-instance v0, Lb0/i;
+    new-instance v0, LG/l;
 
     .line 62
     .line 63
-    const/16 v1, 0x8
+    const/4 v1, 0x1
 
     .line 64
+    const/4 v2, 0x0
+
     .line 65
-    invoke-direct {v0, p2, v1, p3}, Lb0/i;-><init>(Ljava/lang/Object;ILjava/lang/Object;)V
+    invoke-direct {v0, p2, v1, p3, v2}, LG/l;-><init>(Ljava/lang/Object;ILjava/lang/Object;Z)V
 
     .line 66
     .line 67
     .line 68
-    iget-object p3, p2, Lg5/c;->d:Li5/a;
+    iget-object p3, p2, LA2/a;->d:LC2/a;
 
     .line 69
     .line 70
-    check-cast p3, Li5/c;
+    check-cast p3, LC2/b;
 
     .line 71
     .line 72
-    invoke-virtual {p3, v0}, Li5/c;->a(Ljava/lang/Runnable;)V
+    invoke-virtual {p3, v0}, LC2/b;->a(Ljava/lang/Runnable;)V
 
     .line 73
     .line 74
     .line 75
-    invoke-virtual {p2, p1}, Lg5/c;->c(Landroid/content/Intent;)V
+    invoke-virtual {p2, p1}, LA2/a;->b(Landroid/content/Intent;)V
 
     .line 76
     .line 77
@@ -343,7 +342,7 @@
 
     .line 86
     .line 87
-    invoke-virtual {p2, p1}, Lg5/c;->c(Landroid/content/Intent;)V
+    invoke-virtual {p2, p1}, LA2/a;->b(Landroid/content/Intent;)V
 
     .line 88
     .line 89
@@ -368,7 +367,7 @@
 
     .line 98
     .line 99
-    invoke-static {}, Landroidx/work/u;->a()Landroidx/work/u;
+    invoke-static {}, Landroidx/work/A;->a()Landroidx/work/A;
 
     .line 100
     .line 101
@@ -418,7 +417,7 @@
     move-result-object p1
 
     .line 125
-    iget-object p2, p2, Lg5/c;->c:Landroidx/work/impl/i0;
+    iget-object p2, p2, LA2/a;->c:Landroidx/work/impl/n;
 
     .line 126
     .line 127
@@ -427,7 +426,7 @@
     .line 128
     .line 129
     .line 130
-    invoke-static {p2, p1}, Landroidx/work/impl/utils/d;->b(Landroidx/work/impl/i0;Ljava/util/UUID;)Landroidx/work/f0;
+    invoke-static {p2, p1}, Landroidx/work/impl/utils/c;->c(Landroidx/work/impl/n;Ljava/util/UUID;)Landroidx/work/A;
 
     .line 131
     .line 132
@@ -452,7 +451,7 @@
 
     .line 141
     .line 142
-    invoke-static {}, Landroidx/work/u;->a()Landroidx/work/u;
+    invoke-static {}, Landroidx/work/A;->a()Landroidx/work/A;
 
     .line 143
     .line 144
@@ -465,7 +464,7 @@
     .line 147
     .line 148
     .line 149
-    iget-object p1, p2, Lg5/c;->l:Lg5/b;
+    iget-object p1, p2, LA2/a;->l:Landroidx/work/impl/foreground/SystemForegroundService;
 
     .line 150
     .line 151
@@ -473,64 +472,61 @@
 
     .line 152
     .line 153
-    check-cast p1, Landroidx/work/impl/foreground/SystemForegroundService;
-
-    .line 154
-    .line 155
     const/4 p2, 0x1
 
-    .line 156
+    .line 154
     iput-boolean p2, p1, Landroidx/work/impl/foreground/SystemForegroundService;->c:Z
+
+    .line 155
+    .line 156
+    invoke-static {}, Landroidx/work/A;->a()Landroidx/work/A;
 
     .line 157
     .line 158
-    invoke-static {}, Landroidx/work/u;->a()Landroidx/work/u;
-
     .line 159
-    .line 160
-    .line 161
     move-result-object p3
 
-    .line 162
+    .line 160
     invoke-virtual {p3}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
+    .line 161
+    .line 162
     .line 163
+    sget p3, Landroid/os/Build$VERSION;->SDK_INT:I
+
     .line 164
     .line 165
-    sget p3, Landroid/os/Build$VERSION;->SDK_INT:I
+    const/16 v0, 0x1a
 
     .line 166
     .line 167
-    const/16 v0, 0x1a
+    if-lt p3, v0, :cond_4
 
     .line 168
     .line 169
-    if-lt p3, v0, :cond_4
+    invoke-virtual {p1, p2}, Landroid/app/Service;->stopForeground(Z)V
 
     .line 170
     .line 171
-    invoke-virtual {p1, p2}, Landroid/app/Service;->stopForeground(Z)V
-
     .line 172
-    .line 173
-    .line 174
     :cond_4
     invoke-virtual {p1}, Landroid/app/Service;->stopSelf()V
 
+    .line 173
+    .line 174
     .line 175
-    .line 176
-    .line 177
     :cond_5
     :goto_0
     const/4 p1, 0x3
 
-    .line 178
+    .line 176
     return p1
 .end method
 
 .method public final onTimeout(I)V
     .locals 1
 
+    .line 1
     sget p1, Landroid/os/Build$VERSION;->SDK_INT:I
 
     const/16 v0, 0x23
@@ -539,13 +535,13 @@
 
     return-void
 
+    .line 2
     :cond_0
-    iget-object p1, p0, Landroidx/work/impl/foreground/SystemForegroundService;->d:Lg5/c;
+    iget-object p1, p0, Landroidx/work/impl/foreground/SystemForegroundService;->d:LA2/a;
 
     const/16 v0, 0x800
 
-    .line 1
-    invoke-virtual {p1, v0}, Lg5/c;->f(I)V
+    invoke-virtual {p1, v0}, LA2/a;->f(I)V
 
     return-void
 .end method
@@ -553,10 +549,10 @@
 .method public final onTimeout(II)V
     .locals 0
 
-    iget-object p1, p0, Landroidx/work/impl/foreground/SystemForegroundService;->d:Lg5/c;
+    .line 3
+    iget-object p1, p0, Landroidx/work/impl/foreground/SystemForegroundService;->d:LA2/a;
 
-    .line 2
-    invoke-virtual {p1, p2}, Lg5/c;->f(I)V
+    invoke-virtual {p1, p2}, LA2/a;->f(I)V
 
     return-void
 .end method

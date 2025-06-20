@@ -27,6 +27,14 @@
 # direct methods
 .method public constructor <init>(Landroid/widget/SpinnerAdapter;Landroid/content/res/Resources$Theme;)V
     .locals 2
+    .param p1    # Landroid/widget/SpinnerAdapter;
+        .annotation build Landroidx/annotation/Nullable;
+        .end annotation
+    .end param
+    .param p2    # Landroid/content/res/Resources$Theme;
+        .annotation build Landroidx/annotation/Nullable;
+        .end annotation
+    .end param
 
     .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -74,7 +82,7 @@
 
     .line 22
     .line 23
-    invoke-static {p1}, Landroid/support/v4/media/c;->C(Ljava/lang/Object;)Z
+    invoke-static {p1}, Landroidx/appcompat/widget/a;->D(Landroid/widget/SpinnerAdapter;)Z
 
     .line 24
     .line 25
@@ -86,7 +94,7 @@
 
     .line 28
     .line 29
-    invoke-static {p1}, Landroid/support/v4/media/c;->v(Ljava/lang/Object;)Landroid/widget/ThemedSpinnerAdapter;
+    invoke-static {p1}, Landroidx/appcompat/widget/a;->u(Landroid/widget/SpinnerAdapter;)Landroid/widget/ThemedSpinnerAdapter;
 
     .line 30
     .line 31

@@ -103,6 +103,9 @@
 # virtual methods
 .method public getPricingPhaseList()Ljava/util/List;
     .locals 1
+    .annotation build Landroidx/annotation/NonNull;
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "()",

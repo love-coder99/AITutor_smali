@@ -32,8 +32,10 @@
     .line 1
     invoke-direct {p0, p2}, Landroid/view/Surface;-><init>(Landroid/graphics/SurfaceTexture;)V
 
+    .line 2
     iput-object p1, p0, Lcom/applovin/impl/g7;->b:Lcom/applovin/impl/g7$b;
 
+    .line 3
     iput-boolean p3, p0, Lcom/applovin/impl/g7;->a:Z
 
     return-void
@@ -42,7 +44,7 @@
 .method public synthetic constructor <init>(Lcom/applovin/impl/g7$b;Landroid/graphics/SurfaceTexture;ZLcom/applovin/impl/g7$a;)V
     .locals 0
 
-    .line 2
+    .line 4
     invoke-direct {p0, p1, p2, p3}, Lcom/applovin/impl/g7;-><init>(Lcom/applovin/impl/g7$b;Landroid/graphics/SurfaceTexture;Z)V
 
     return-void
@@ -115,9 +117,9 @@
 
     if-eqz p1, :cond_2
 
+    .line 5
     sget v0, Lcom/applovin/impl/g7;->d:I
 
-    .line 5
     :cond_2
     invoke-virtual {p0, v0}, Lcom/applovin/impl/g7$b;->a(I)Lcom/applovin/impl/g7;
 
@@ -202,7 +204,10 @@
 
     .line 28
     :goto_2
+    :try_start_1
     monitor-exit v0
+    :try_end_1
+    .catchall {:try_start_1 .. :try_end_1} :catchall_0
 
     .line 29
     throw p0

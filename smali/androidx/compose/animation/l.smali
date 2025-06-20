@@ -1,1013 +1,416 @@
-.class public final Landroidx/compose/animation/l;
+.class public final Landroidx/compose/animation/L;
 .super Ljava/lang/Object;
 .source "SourceFile"
 
-# interfaces
-.implements Landroidx/compose/ui/layout/m0;
-
 
 # instance fields
-.field public final a:Landroidx/compose/animation/o;
+.field public final a:Landroidx/compose/animation/D;
 
-.field public b:Z
+.field public final b:Landroidx/compose/animation/p;
+
+.field public final c:Landroidx/compose/animation/H;
+
+.field public final d:Z
+
+.field public final e:Ljava/util/Map;
 
 
 # direct methods
-.method public constructor <init>(Landroidx/compose/animation/o;)V
+.method public synthetic constructor <init>(Landroidx/compose/animation/D;Landroidx/compose/animation/p;Landroidx/compose/animation/H;ZLjava/util/LinkedHashMap;I)V
+    .locals 4
+
+    and-int/lit8 v0, p6, 0x1
+
+    const/4 v1, 0x0
+
+    if-eqz v0, :cond_0
+
+    move-object v0, v1
+
+    goto :goto_0
+
+    :cond_0
+    move-object v0, p1
+
+    :goto_0
+    and-int/lit8 p1, p6, 0x4
+
+    if-eqz p1, :cond_1
+
+    move-object v2, v1
+
+    goto :goto_1
+
+    :cond_1
+    move-object v2, p2
+
+    :goto_1
+    and-int/lit8 p1, p6, 0x8
+
+    if-eqz p1, :cond_2
+
+    goto :goto_2
+
+    :cond_2
+    move-object v1, p3
+
+    :goto_2
+    and-int/lit8 p1, p6, 0x10
+
+    if-eqz p1, :cond_3
+
+    const/4 p4, 0x0
+
+    const/4 v3, 0x0
+
+    goto :goto_3
+
+    :cond_3
+    move v3, p4
+
+    :goto_3
+    and-int/lit8 p1, p6, 0x20
+
+    if-eqz p1, :cond_4
+
+    .line 7
+    invoke-static {}, Lkotlin/collections/a;->F()Ljava/util/Map;
+
+    move-result-object p5
+
+    :cond_4
+    move-object p6, p5
+
+    move-object p1, p0
+
+    move-object p2, v0
+
+    move-object p3, v2
+
+    move-object p4, v1
+
+    move p5, v3
+
+    .line 8
+    invoke-direct/range {p1 .. p6}, Landroidx/compose/animation/L;-><init>(Landroidx/compose/animation/D;Landroidx/compose/animation/p;Landroidx/compose/animation/H;ZLjava/util/Map;)V
+
+    return-void
+.end method
+
+.method public constructor <init>(Landroidx/compose/animation/D;Landroidx/compose/animation/p;Landroidx/compose/animation/H;ZLjava/util/Map;)V
     .locals 0
 
     .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 2
+    iput-object p1, p0, Landroidx/compose/animation/L;->a:Landroidx/compose/animation/D;
+
     .line 3
+    iput-object p2, p0, Landroidx/compose/animation/L;->b:Landroidx/compose/animation/p;
+
     .line 4
-    iput-object p1, p0, Landroidx/compose/animation/l;->a:Landroidx/compose/animation/o;
+    iput-object p3, p0, Landroidx/compose/animation/L;->c:Landroidx/compose/animation/H;
 
     .line 5
+    iput-boolean p4, p0, Landroidx/compose/animation/L;->d:Z
+
     .line 6
+    iput-object p5, p0, Landroidx/compose/animation/L;->e:Ljava/util/Map;
+
     return-void
 .end method
 
 
 # virtual methods
-.method public final b(Landroidx/compose/ui/layout/o0;Ljava/util/List;J)Landroidx/compose/ui/layout/n0;
-    .locals 9
+.method public final equals(Ljava/lang/Object;)Z
+    .locals 4
+
+    const/4 v0, 0x1
+
+    if-ne p0, p1, :cond_0
+
+    return v0
+
+    :cond_0
+    instance-of v1, p1, Landroidx/compose/animation/L;
+
+    const/4 v2, 0x0
+
+    if-nez v1, :cond_1
+
+    return v2
+
+    :cond_1
+    check-cast p1, Landroidx/compose/animation/L;
+
+    iget-object v1, p1, Landroidx/compose/animation/L;->a:Landroidx/compose/animation/D;
+
+    iget-object v3, p0, Landroidx/compose/animation/L;->a:Landroidx/compose/animation/D;
+
+    invoke-static {v3, v1}, Lkotlin/jvm/internal/h;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
+
+    move-result v1
+
+    if-nez v1, :cond_2
+
+    return v2
+
+    :cond_2
+    const/4 v1, 0x0
+
+    invoke-static {v1, v1}, Lkotlin/jvm/internal/h;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
+
+    move-result v1
+
+    if-nez v1, :cond_3
+
+    return v2
+
+    :cond_3
+    iget-object v1, p0, Landroidx/compose/animation/L;->b:Landroidx/compose/animation/p;
+
+    iget-object v3, p1, Landroidx/compose/animation/L;->b:Landroidx/compose/animation/p;
+
+    invoke-static {v1, v3}, Lkotlin/jvm/internal/h;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
+
+    move-result v1
+
+    if-nez v1, :cond_4
+
+    return v2
+
+    :cond_4
+    iget-object v1, p0, Landroidx/compose/animation/L;->c:Landroidx/compose/animation/H;
+
+    iget-object v3, p1, Landroidx/compose/animation/L;->c:Landroidx/compose/animation/H;
+
+    invoke-static {v1, v3}, Lkotlin/jvm/internal/h;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
+
+    move-result v1
+
+    if-nez v1, :cond_5
+
+    return v2
+
+    :cond_5
+    iget-boolean v1, p0, Landroidx/compose/animation/L;->d:Z
+
+    iget-boolean v3, p1, Landroidx/compose/animation/L;->d:Z
+
+    if-eq v1, v3, :cond_6
+
+    return v2
+
+    :cond_6
+    iget-object v1, p0, Landroidx/compose/animation/L;->e:Ljava/util/Map;
+
+    iget-object p1, p1, Landroidx/compose/animation/L;->e:Ljava/util/Map;
+
+    invoke-static {v1, p1}, Lkotlin/jvm/internal/h;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
+
+    move-result p1
+
+    if-nez p1, :cond_7
+
+    return v2
+
+    :cond_7
+    return v0
+.end method
+
+.method public final hashCode()I
+    .locals 3
 
     .line 1
-    new-instance v6, Ljava/util/ArrayList;
+    const/4 v0, 0x0
 
     .line 2
-    .line 3
-    invoke-interface {p2}, Ljava/util/List;->size()I
+    iget-object v1, p0, Landroidx/compose/animation/L;->a:Landroidx/compose/animation/D;
 
+    .line 3
     .line 4
+    if-nez v1, :cond_0
+
     .line 5
     .line 6
-    move-result v0
+    const/4 v1, 0x0
 
     .line 7
-    invoke-direct {v6, v0}, Ljava/util/ArrayList;-><init>(I)V
+    goto :goto_0
 
     .line 8
+    :cond_0
+    invoke-virtual {v1}, Landroidx/compose/animation/D;->hashCode()I
+
     .line 9
     .line 10
-    invoke-interface {p2}, Ljava/util/List;->size()I
-
     .line 11
-    .line 12
-    .line 13
-    move-result v7
+    move-result v1
 
+    .line 12
+    :goto_0
+    mul-int/lit16 v1, v1, 0x3c1
+
+    .line 13
     .line 14
-    const/4 v8, 0x0
+    iget-object v2, p0, Landroidx/compose/animation/L;->b:Landroidx/compose/animation/p;
 
     .line 15
-    const/4 v4, 0x0
-
     .line 16
-    :goto_0
-    if-ge v4, v7, :cond_0
+    if-nez v2, :cond_1
 
     .line 17
     .line 18
-    invoke-interface {p2, v4}, Ljava/util/List;->get(I)Ljava/lang/Object;
+    const/4 v2, 0x0
 
     .line 19
+    goto :goto_1
+
     .line 20
+    :cond_1
+    invoke-virtual {v2}, Landroidx/compose/animation/p;->hashCode()I
+
     .line 21
-    move-result-object v0
-
     .line 22
-    check-cast v0, Landroidx/compose/ui/layout/l0;
-
     .line 23
+    move-result v2
+
     .line 24
-    const/4 v5, 0x1
+    :goto_1
+    add-int/2addr v1, v2
 
     .line 25
-    move-wide v1, p3
+    mul-int/lit8 v1, v1, 0x1f
 
     .line 26
-    move-object v3, v6
-
     .line 27
-    invoke-static/range {v0 .. v5}, Landroid/support/v4/media/session/a;->z(Landroidx/compose/ui/layout/l0;JLjava/util/ArrayList;II)I
+    iget-object v2, p0, Landroidx/compose/animation/L;->c:Landroidx/compose/animation/H;
 
     .line 28
     .line 29
+    if-nez v2, :cond_2
+
     .line 30
-    move-result v4
-
     .line 31
-    goto :goto_0
-
-    .line 32
-    :cond_0
-    invoke-virtual {v6}, Ljava/util/ArrayList;->isEmpty()Z
-
-    .line 33
-    .line 34
-    .line 35
-    move-result p2
-
-    .line 36
-    const/4 p3, 0x1
-
-    .line 37
-    const/4 p4, 0x0
-
-    .line 38
-    if-eqz p2, :cond_1
-
-    .line 39
-    .line 40
-    move-object p2, p4
-
-    .line 41
     goto :goto_2
 
-    .line 42
-    :cond_1
-    invoke-virtual {v6, v8}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
+    .line 32
+    :cond_2
+    invoke-virtual {v2}, Landroidx/compose/animation/H;->hashCode()I
 
+    .line 33
+    .line 34
+    .line 35
+    move-result v0
+
+    .line 36
+    :goto_2
+    add-int/2addr v1, v0
+
+    .line 37
+    mul-int/lit8 v1, v1, 0x1f
+
+    .line 38
+    .line 39
+    iget-boolean v0, p0, Landroidx/compose/animation/L;->d:Z
+
+    .line 40
+    .line 41
+    if-eqz v0, :cond_3
+
+    .line 42
     .line 43
+    const/16 v0, 0x4cf
+
     .line 44
     .line 45
-    move-result-object p2
-
-    .line 46
-    move-object v0, p2
-
-    .line 47
-    check-cast v0, Landroidx/compose/ui/layout/a1;
-
-    .line 48
-    .line 49
-    iget v0, v0, Landroidx/compose/ui/layout/a1;->b:I
-
-    .line 50
-    .line 51
-    invoke-static {v6}, Lma/a;->I(Ljava/util/List;)I
-
-    .line 52
-    .line 53
-    .line 54
-    move-result v1
-
-    .line 55
-    if-gt p3, v1, :cond_3
-
-    .line 56
-    .line 57
-    const/4 v2, 0x1
-
-    .line 58
-    :goto_1
-    invoke-virtual {v6, v2}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
-
-    .line 59
-    .line 60
-    .line 61
-    move-result-object v3
-
-    .line 62
-    move-object v4, v3
-
-    .line 63
-    check-cast v4, Landroidx/compose/ui/layout/a1;
-
-    .line 64
-    .line 65
-    iget v4, v4, Landroidx/compose/ui/layout/a1;->b:I
-
-    .line 66
-    .line 67
-    if-ge v0, v4, :cond_2
-
-    .line 68
-    .line 69
-    move-object p2, v3
-
-    .line 70
-    move v0, v4
-
-    .line 71
-    :cond_2
-    if-eq v2, v1, :cond_3
-
-    .line 72
-    .line 73
-    add-int/lit8 v2, v2, 0x1
-
-    .line 74
-    .line 75
-    goto :goto_1
-
-    .line 76
-    :cond_3
-    :goto_2
-    check-cast p2, Landroidx/compose/ui/layout/a1;
-
-    .line 77
-    .line 78
-    if-eqz p2, :cond_4
-
-    .line 79
-    .line 80
-    iget p2, p2, Landroidx/compose/ui/layout/a1;->b:I
-
-    .line 81
-    .line 82
     goto :goto_3
 
-    .line 83
-    :cond_4
-    const/4 p2, 0x0
+    .line 46
+    :cond_3
+    const/16 v0, 0x4d5
 
-    .line 84
+    .line 47
+    .line 48
     :goto_3
-    invoke-virtual {v6}, Ljava/util/ArrayList;->isEmpty()Z
-
-    .line 85
-    .line 86
-    .line 87
-    move-result v0
-
-    .line 88
-    if-eqz v0, :cond_5
-
-    .line 89
-    .line 90
-    goto :goto_5
-
-    .line 91
-    :cond_5
-    invoke-virtual {v6, v8}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
-
-    .line 92
-    .line 93
-    .line 94
-    move-result-object p4
-
-    .line 95
-    move-object v0, p4
-
-    .line 96
-    check-cast v0, Landroidx/compose/ui/layout/a1;
-
-    .line 97
-    .line 98
-    iget v0, v0, Landroidx/compose/ui/layout/a1;->c:I
-
-    .line 99
-    .line 100
-    invoke-static {v6}, Lma/a;->I(Ljava/util/List;)I
-
-    .line 101
-    .line 102
-    .line 103
-    move-result v1
-
-    .line 104
-    if-gt p3, v1, :cond_7
-
-    .line 105
-    .line 106
-    const/4 v2, 0x1
-
-    .line 107
-    :goto_4
-    invoke-virtual {v6, v2}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
-
-    .line 108
-    .line 109
-    .line 110
-    move-result-object v3
-
-    .line 111
-    move-object v4, v3
-
-    .line 112
-    check-cast v4, Landroidx/compose/ui/layout/a1;
-
-    .line 113
-    .line 114
-    iget v4, v4, Landroidx/compose/ui/layout/a1;->c:I
-
-    .line 115
-    .line 116
-    if-ge v0, v4, :cond_6
-
-    .line 117
-    .line 118
-    move-object p4, v3
-
-    .line 119
-    move v0, v4
-
-    .line 120
-    :cond_6
-    if-eq v2, v1, :cond_7
-
-    .line 121
-    .line 122
-    add-int/lit8 v2, v2, 0x1
-
-    .line 123
-    .line 124
-    goto :goto_4
-
-    .line 125
-    :cond_7
-    :goto_5
-    check-cast p4, Landroidx/compose/ui/layout/a1;
-
-    .line 126
-    .line 127
-    if-eqz p4, :cond_8
-
-    .line 128
-    .line 129
-    iget v8, p4, Landroidx/compose/ui/layout/a1;->c:I
-
-    .line 130
-    .line 131
-    :cond_8
-    invoke-interface {p1}, Landroidx/compose/ui/layout/p;->R()Z
-
-    .line 132
-    .line 133
-    .line 134
-    move-result p4
-
-    .line 135
-    iget-object v0, p0, Landroidx/compose/animation/l;->a:Landroidx/compose/animation/o;
-
-    .line 136
-    .line 137
-    if-eqz p4, :cond_9
-
-    .line 138
-    .line 139
-    iput-boolean p3, p0, Landroidx/compose/animation/l;->b:Z
-
-    .line 140
-    .line 141
-    iget-object p3, v0, Landroidx/compose/animation/o;->a:Landroidx/compose/runtime/ParcelableSnapshotMutableState;
-
-    .line 142
-    .line 143
-    invoke-static {p2, v8}, Lv5/a;->b(II)J
-
-    .line 144
-    .line 145
-    .line 146
-    move-result-wide v0
-
-    .line 147
-    new-instance p4, Lh2/j;
-
-    .line 148
-    .line 149
-    invoke-direct {p4, v0, v1}, Lh2/j;-><init>(J)V
-
-    .line 150
-    .line 151
-    .line 152
-    invoke-virtual {p3, p4}, Landroidx/compose/runtime/t2;->setValue(Ljava/lang/Object;)V
-
-    .line 153
-    .line 154
-    .line 155
-    goto :goto_6
-
-    .line 156
-    :cond_9
-    iget-boolean p3, p0, Landroidx/compose/animation/l;->b:Z
-
-    .line 157
-    .line 158
-    if-nez p3, :cond_a
-
-    .line 159
-    .line 160
-    iget-object p3, v0, Landroidx/compose/animation/o;->a:Landroidx/compose/runtime/ParcelableSnapshotMutableState;
-
-    .line 161
-    .line 162
-    invoke-static {p2, v8}, Lv5/a;->b(II)J
-
-    .line 163
-    .line 164
-    .line 165
-    move-result-wide v0
-
-    .line 166
-    new-instance p4, Lh2/j;
-
-    .line 167
-    .line 168
-    invoke-direct {p4, v0, v1}, Lh2/j;-><init>(J)V
-
-    .line 169
-    .line 170
-    .line 171
-    invoke-virtual {p3, p4}, Landroidx/compose/runtime/t2;->setValue(Ljava/lang/Object;)V
-
-    .line 172
-    .line 173
-    .line 174
-    :cond_a
-    :goto_6
-    new-instance p3, Landroidx/compose/animation/AnimatedEnterExitMeasurePolicy$measure$1;
-
-    .line 175
-    .line 176
-    invoke-direct {p3, v6}, Landroidx/compose/animation/AnimatedEnterExitMeasurePolicy$measure$1;-><init>(Ljava/util/List;)V
-
-    .line 177
-    .line 178
-    .line 179
-    invoke-static {p1, p2, v8, p3}, Landroidx/compose/ui/layout/x;->i(Landroidx/compose/ui/layout/o0;IILzh/c;)Landroidx/compose/ui/layout/n0;
-
-    .line 180
-    .line 181
-    .line 182
-    move-result-object p1
-
-    .line 183
-    return-object p1
-.end method
-
-.method public final d(Landroidx/compose/ui/node/e1;Ljava/util/List;I)I
-    .locals 5
-
-    .line 1
-    invoke-interface {p2}, Ljava/util/List;->isEmpty()Z
-
-    .line 2
-    .line 3
-    .line 4
-    move-result p1
-
-    .line 5
-    const/4 v0, 0x0
-
-    .line 6
-    if-eqz p1, :cond_0
-
-    .line 7
-    .line 8
-    const/4 p1, 0x0
-
-    .line 9
-    goto :goto_1
-
-    .line 10
-    :cond_0
-    invoke-interface {p2, v0}, Ljava/util/List;->get(I)Ljava/lang/Object;
-
-    .line 11
-    .line 12
-    .line 13
-    move-result-object p1
-
-    .line 14
-    check-cast p1, Landroidx/compose/ui/layout/o;
-
-    .line 15
-    .line 16
-    invoke-interface {p1, p3}, Landroidx/compose/ui/layout/o;->v(I)I
-
-    .line 17
-    .line 18
-    .line 19
-    move-result p1
-
-    .line 20
-    invoke-static {p1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
-
-    .line 21
-    .line 22
-    .line 23
-    move-result-object p1
-
-    .line 24
-    invoke-static {p2}, Lma/a;->I(Ljava/util/List;)I
-
-    .line 25
-    .line 26
-    .line 27
-    move-result v1
-
-    .line 28
-    const/4 v2, 0x1
-
-    .line 29
-    if-gt v2, v1, :cond_2
-
-    .line 30
-    .line 31
-    :goto_0
-    invoke-interface {p2, v2}, Ljava/util/List;->get(I)Ljava/lang/Object;
-
-    .line 32
-    .line 33
-    .line 34
-    move-result-object v3
-
-    .line 35
-    check-cast v3, Landroidx/compose/ui/layout/o;
-
-    .line 36
-    .line 37
-    invoke-interface {v3, p3}, Landroidx/compose/ui/layout/o;->v(I)I
-
-    .line 38
-    .line 39
-    .line 40
-    move-result v3
-
-    .line 41
-    invoke-static {v3}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
-
-    .line 42
-    .line 43
-    .line 44
-    move-result-object v3
-
-    .line 45
-    invoke-virtual {v3, p1}, Ljava/lang/Integer;->compareTo(Ljava/lang/Object;)I
-
-    .line 46
-    .line 47
-    .line 48
-    move-result v4
+    add-int/2addr v1, v0
 
     .line 49
-    if-lez v4, :cond_1
+    mul-int/lit8 v1, v1, 0x1f
 
     .line 50
     .line 51
-    move-object p1, v3
+    iget-object v0, p0, Landroidx/compose/animation/L;->e:Ljava/util/Map;
 
     .line 52
-    :cond_1
-    if-eq v2, v1, :cond_2
-
     .line 53
-    .line 54
-    add-int/lit8 v2, v2, 0x1
+    invoke-virtual {v0}, Ljava/lang/Object;->hashCode()I
 
+    .line 54
     .line 55
     .line 56
-    goto :goto_0
-
-    .line 57
-    :cond_2
-    :goto_1
-    if-eqz p1, :cond_3
-
-    .line 58
-    .line 59
-    invoke-virtual {p1}, Ljava/lang/Integer;->intValue()I
-
-    .line 60
-    .line 61
-    .line 62
     move-result v0
 
-    .line 63
-    :cond_3
+    .line 57
+    add-int/2addr v0, v1
+
+    .line 58
     return v0
 .end method
 
-.method public final f(Landroidx/compose/ui/node/e1;Ljava/util/List;I)I
-    .locals 5
+.method public final toString()Ljava/lang/String;
+    .locals 2
 
-    .line 1
-    invoke-interface {p2}, Ljava/util/List;->isEmpty()Z
+    new-instance v0, Ljava/lang/StringBuilder;
 
-    .line 2
-    .line 3
-    .line 4
-    move-result p1
+    const-string v1, "TransitionData(fade="
 
-    .line 5
-    const/4 v0, 0x0
+    invoke-direct {v0, v1}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
 
-    .line 6
-    if-eqz p1, :cond_0
+    iget-object v1, p0, Landroidx/compose/animation/L;->a:Landroidx/compose/animation/D;
 
-    .line 7
-    .line 8
-    const/4 p1, 0x0
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 
-    .line 9
-    goto :goto_1
+    const-string v1, ", slide=null, changeSize="
 
-    .line 10
-    :cond_0
-    invoke-interface {p2, v0}, Ljava/util/List;->get(I)Ljava/lang/Object;
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    .line 11
-    .line 12
-    .line 13
-    move-result-object p1
+    iget-object v1, p0, Landroidx/compose/animation/L;->b:Landroidx/compose/animation/p;
 
-    .line 14
-    check-cast p1, Landroidx/compose/ui/layout/o;
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 
-    .line 15
-    .line 16
-    invoke-interface {p1, p3}, Landroidx/compose/ui/layout/o;->V(I)I
+    const-string v1, ", scale="
 
-    .line 17
-    .line 18
-    .line 19
-    move-result p1
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    .line 20
-    invoke-static {p1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+    iget-object v1, p0, Landroidx/compose/animation/L;->c:Landroidx/compose/animation/H;
 
-    .line 21
-    .line 22
-    .line 23
-    move-result-object p1
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 
-    .line 24
-    invoke-static {p2}, Lma/a;->I(Ljava/util/List;)I
+    const-string v1, ", hold="
 
-    .line 25
-    .line 26
-    .line 27
-    move-result v1
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    .line 28
-    const/4 v2, 0x1
+    iget-boolean v1, p0, Landroidx/compose/animation/L;->d:Z
 
-    .line 29
-    if-gt v2, v1, :cond_2
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
 
-    .line 30
-    .line 31
-    :goto_0
-    invoke-interface {p2, v2}, Ljava/util/List;->get(I)Ljava/lang/Object;
+    const-string v1, ", effectsMap="
 
-    .line 32
-    .line 33
-    .line 34
-    move-result-object v3
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    .line 35
-    check-cast v3, Landroidx/compose/ui/layout/o;
+    iget-object v1, p0, Landroidx/compose/animation/L;->e:Ljava/util/Map;
 
-    .line 36
-    .line 37
-    invoke-interface {v3, p3}, Landroidx/compose/ui/layout/o;->V(I)I
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 
-    .line 38
-    .line 39
-    .line 40
-    move-result v3
+    const/16 v1, 0x29
 
-    .line 41
-    invoke-static {v3}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
 
-    .line 42
-    .line 43
-    .line 44
-    move-result-object v3
+    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
-    .line 45
-    invoke-virtual {v3, p1}, Ljava/lang/Integer;->compareTo(Ljava/lang/Object;)I
+    move-result-object v0
 
-    .line 46
-    .line 47
-    .line 48
-    move-result v4
-
-    .line 49
-    if-lez v4, :cond_1
-
-    .line 50
-    .line 51
-    move-object p1, v3
-
-    .line 52
-    :cond_1
-    if-eq v2, v1, :cond_2
-
-    .line 53
-    .line 54
-    add-int/lit8 v2, v2, 0x1
-
-    .line 55
-    .line 56
-    goto :goto_0
-
-    .line 57
-    :cond_2
-    :goto_1
-    if-eqz p1, :cond_3
-
-    .line 58
-    .line 59
-    invoke-virtual {p1}, Ljava/lang/Integer;->intValue()I
-
-    .line 60
-    .line 61
-    .line 62
-    move-result v0
-
-    .line 63
-    :cond_3
-    return v0
-.end method
-
-.method public final g(Landroidx/compose/ui/node/e1;Ljava/util/List;I)I
-    .locals 5
-
-    .line 1
-    invoke-interface {p2}, Ljava/util/List;->isEmpty()Z
-
-    .line 2
-    .line 3
-    .line 4
-    move-result p1
-
-    .line 5
-    const/4 v0, 0x0
-
-    .line 6
-    if-eqz p1, :cond_0
-
-    .line 7
-    .line 8
-    const/4 p1, 0x0
-
-    .line 9
-    goto :goto_1
-
-    .line 10
-    :cond_0
-    invoke-interface {p2, v0}, Ljava/util/List;->get(I)Ljava/lang/Object;
-
-    .line 11
-    .line 12
-    .line 13
-    move-result-object p1
-
-    .line 14
-    check-cast p1, Landroidx/compose/ui/layout/o;
-
-    .line 15
-    .line 16
-    invoke-interface {p1, p3}, Landroidx/compose/ui/layout/o;->w(I)I
-
-    .line 17
-    .line 18
-    .line 19
-    move-result p1
-
-    .line 20
-    invoke-static {p1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
-
-    .line 21
-    .line 22
-    .line 23
-    move-result-object p1
-
-    .line 24
-    invoke-static {p2}, Lma/a;->I(Ljava/util/List;)I
-
-    .line 25
-    .line 26
-    .line 27
-    move-result v1
-
-    .line 28
-    const/4 v2, 0x1
-
-    .line 29
-    if-gt v2, v1, :cond_2
-
-    .line 30
-    .line 31
-    :goto_0
-    invoke-interface {p2, v2}, Ljava/util/List;->get(I)Ljava/lang/Object;
-
-    .line 32
-    .line 33
-    .line 34
-    move-result-object v3
-
-    .line 35
-    check-cast v3, Landroidx/compose/ui/layout/o;
-
-    .line 36
-    .line 37
-    invoke-interface {v3, p3}, Landroidx/compose/ui/layout/o;->w(I)I
-
-    .line 38
-    .line 39
-    .line 40
-    move-result v3
-
-    .line 41
-    invoke-static {v3}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
-
-    .line 42
-    .line 43
-    .line 44
-    move-result-object v3
-
-    .line 45
-    invoke-virtual {v3, p1}, Ljava/lang/Integer;->compareTo(Ljava/lang/Object;)I
-
-    .line 46
-    .line 47
-    .line 48
-    move-result v4
-
-    .line 49
-    if-lez v4, :cond_1
-
-    .line 50
-    .line 51
-    move-object p1, v3
-
-    .line 52
-    :cond_1
-    if-eq v2, v1, :cond_2
-
-    .line 53
-    .line 54
-    add-int/lit8 v2, v2, 0x1
-
-    .line 55
-    .line 56
-    goto :goto_0
-
-    .line 57
-    :cond_2
-    :goto_1
-    if-eqz p1, :cond_3
-
-    .line 58
-    .line 59
-    invoke-virtual {p1}, Ljava/lang/Integer;->intValue()I
-
-    .line 60
-    .line 61
-    .line 62
-    move-result v0
-
-    .line 63
-    :cond_3
-    return v0
-.end method
-
-.method public final h(Landroidx/compose/ui/node/e1;Ljava/util/List;I)I
-    .locals 5
-
-    .line 1
-    invoke-interface {p2}, Ljava/util/List;->isEmpty()Z
-
-    .line 2
-    .line 3
-    .line 4
-    move-result p1
-
-    .line 5
-    const/4 v0, 0x0
-
-    .line 6
-    if-eqz p1, :cond_0
-
-    .line 7
-    .line 8
-    const/4 p1, 0x0
-
-    .line 9
-    goto :goto_1
-
-    .line 10
-    :cond_0
-    invoke-interface {p2, v0}, Ljava/util/List;->get(I)Ljava/lang/Object;
-
-    .line 11
-    .line 12
-    .line 13
-    move-result-object p1
-
-    .line 14
-    check-cast p1, Landroidx/compose/ui/layout/o;
-
-    .line 15
-    .line 16
-    invoke-interface {p1, p3}, Landroidx/compose/ui/layout/o;->c(I)I
-
-    .line 17
-    .line 18
-    .line 19
-    move-result p1
-
-    .line 20
-    invoke-static {p1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
-
-    .line 21
-    .line 22
-    .line 23
-    move-result-object p1
-
-    .line 24
-    invoke-static {p2}, Lma/a;->I(Ljava/util/List;)I
-
-    .line 25
-    .line 26
-    .line 27
-    move-result v1
-
-    .line 28
-    const/4 v2, 0x1
-
-    .line 29
-    if-gt v2, v1, :cond_2
-
-    .line 30
-    .line 31
-    :goto_0
-    invoke-interface {p2, v2}, Ljava/util/List;->get(I)Ljava/lang/Object;
-
-    .line 32
-    .line 33
-    .line 34
-    move-result-object v3
-
-    .line 35
-    check-cast v3, Landroidx/compose/ui/layout/o;
-
-    .line 36
-    .line 37
-    invoke-interface {v3, p3}, Landroidx/compose/ui/layout/o;->c(I)I
-
-    .line 38
-    .line 39
-    .line 40
-    move-result v3
-
-    .line 41
-    invoke-static {v3}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
-
-    .line 42
-    .line 43
-    .line 44
-    move-result-object v3
-
-    .line 45
-    invoke-virtual {v3, p1}, Ljava/lang/Integer;->compareTo(Ljava/lang/Object;)I
-
-    .line 46
-    .line 47
-    .line 48
-    move-result v4
-
-    .line 49
-    if-lez v4, :cond_1
-
-    .line 50
-    .line 51
-    move-object p1, v3
-
-    .line 52
-    :cond_1
-    if-eq v2, v1, :cond_2
-
-    .line 53
-    .line 54
-    add-int/lit8 v2, v2, 0x1
-
-    .line 55
-    .line 56
-    goto :goto_0
-
-    .line 57
-    :cond_2
-    :goto_1
-    if-eqz p1, :cond_3
-
-    .line 58
-    .line 59
-    invoke-virtual {p1}, Ljava/lang/Integer;->intValue()I
-
-    .line 60
-    .line 61
-    .line 62
-    move-result v0
-
-    .line 63
-    :cond_3
-    return v0
+    return-object v0
 .end method

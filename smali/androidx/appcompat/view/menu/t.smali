@@ -1,82 +1,67 @@
 .class public final Landroidx/appcompat/view/menu/t;
-.super Landroid/widget/FrameLayout;
+.super Ljava/lang/Object;
 .source "SourceFile"
 
 # interfaces
-.implements Lk/d;
+.implements Landroid/view/MenuItem$OnMenuItemClickListener;
 
 
 # instance fields
-.field public final b:Landroid/view/CollapsibleActionView;
+.field public final a:Landroid/view/MenuItem$OnMenuItemClickListener;
+
+.field public final synthetic b:Landroidx/appcompat/view/menu/u;
 
 
 # direct methods
-.method public constructor <init>(Landroid/view/View;)V
-    .locals 1
+.method public constructor <init>(Landroidx/appcompat/view/menu/u;Landroid/view/MenuItem$OnMenuItemClickListener;)V
+    .locals 0
 
     .line 1
-    invoke-virtual {p1}, Landroid/view/View;->getContext()Landroid/content/Context;
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 2
     .line 3
     .line 4
-    move-result-object v0
+    iput-object p1, p0, Landroidx/appcompat/view/menu/t;->b:Landroidx/appcompat/view/menu/u;
 
     .line 5
-    invoke-direct {p0, v0}, Landroid/widget/FrameLayout;-><init>(Landroid/content/Context;)V
-
     .line 6
+    iput-object p2, p0, Landroidx/appcompat/view/menu/t;->a:Landroid/view/MenuItem$OnMenuItemClickListener;
+
     .line 7
     .line 8
-    move-object v0, p1
-
-    .line 9
-    check-cast v0, Landroid/view/CollapsibleActionView;
-
-    .line 10
-    .line 11
-    iput-object v0, p0, Landroidx/appcompat/view/menu/t;->b:Landroid/view/CollapsibleActionView;
-
-    .line 12
-    .line 13
-    invoke-virtual {p0, p1}, Landroid/view/ViewGroup;->addView(Landroid/view/View;)V
-
-    .line 14
-    .line 15
-    .line 16
     return-void
 .end method
 
 
 # virtual methods
-.method public final onActionViewCollapsed()V
+.method public final onMenuItemClick(Landroid/view/MenuItem;)Z
     .locals 1
 
     .line 1
-    iget-object v0, p0, Landroidx/appcompat/view/menu/t;->b:Landroid/view/CollapsibleActionView;
+    iget-object v0, p0, Landroidx/appcompat/view/menu/t;->b:Landroidx/appcompat/view/menu/u;
 
     .line 2
     .line 3
-    invoke-interface {v0}, Landroid/view/CollapsibleActionView;->onActionViewCollapsed()V
+    invoke-virtual {v0, p1}, LO5/c;->i(Landroid/view/MenuItem;)Landroid/view/MenuItem;
 
     .line 4
     .line 5
     .line 6
-    return-void
-.end method
+    move-result-object p1
 
-.method public final onActionViewExpanded()V
-    .locals 1
+    .line 7
+    iget-object v0, p0, Landroidx/appcompat/view/menu/t;->a:Landroid/view/MenuItem$OnMenuItemClickListener;
 
-    .line 1
-    iget-object v0, p0, Landroidx/appcompat/view/menu/t;->b:Landroid/view/CollapsibleActionView;
+    .line 8
+    .line 9
+    invoke-interface {v0, p1}, Landroid/view/MenuItem$OnMenuItemClickListener;->onMenuItemClick(Landroid/view/MenuItem;)Z
 
-    .line 2
-    .line 3
-    invoke-interface {v0}, Landroid/view/CollapsibleActionView;->onActionViewExpanded()V
+    .line 10
+    .line 11
+    .line 12
+    move-result p1
 
-    .line 4
-    .line 5
-    .line 6
-    return-void
+    .line 13
+    return p1
 .end method

@@ -96,7 +96,7 @@
 
     .line 25
     .line 26
-    invoke-static {}, Landroidx/compose/foundation/text/modifiers/f;->t()Ljava/util/Map;
+    invoke-static {}, Landroidx/compose/runtime/a0;->v()Ljava/util/Map;
 
     .line 27
     .line 28
@@ -546,16 +546,22 @@
     .annotation runtime Ljava/lang/Deprecated;
     .end annotation
 
+    .line 1
     iget-object v0, p0, Lcom/applovin/sdk/AppLovinSdkSettings;->i:Ljava/util/List;
 
+    .line 2
+    .line 3
     return-object v0
 .end method
 
 .method public getTermsAndPrivacyPolicyFlowSettings()Lcom/applovin/sdk/AppLovinTermsAndPrivacyPolicyFlowSettings;
     .locals 1
 
+    .line 1
     iget-object v0, p0, Lcom/applovin/sdk/AppLovinSdkSettings;->k:Lcom/applovin/sdk/AppLovinTermsAndPrivacyPolicyFlowSettings;
 
+    .line 2
+    .line 3
     return-object v0
 .end method
 
@@ -573,13 +579,18 @@
     .annotation runtime Ljava/lang/Deprecated;
     .end annotation
 
+    .line 1
     iget-object v0, p0, Lcom/applovin/sdk/AppLovinSdkSettings;->h:Ljava/util/List;
 
+    .line 2
+    .line 3
     return-object v0
 .end method
 
 .method public getUserIdentifier()Ljava/lang/String;
     .locals 1
+    .annotation build Landroidx/annotation/Nullable;
+    .end annotation
 
     .line 1
     iget-object v0, p0, Lcom/applovin/sdk/AppLovinSdkSettings;->l:Lcom/applovin/impl/sdk/j;
@@ -620,8 +631,11 @@
 .method public isCreativeDebuggerEnabled()Z
     .locals 1
 
+    .line 1
     iget-boolean v0, p0, Lcom/applovin/sdk/AppLovinSdkSettings;->c:Z
 
+    .line 2
+    .line 3
     return v0
 .end method
 
@@ -630,24 +644,33 @@
     .annotation runtime Ljava/lang/Deprecated;
     .end annotation
 
+    .line 1
     iget-boolean v0, p0, Lcom/applovin/sdk/AppLovinSdkSettings;->d:Z
 
+    .line 2
+    .line 3
     return v0
 .end method
 
 .method public isMuted()Z
     .locals 1
 
+    .line 1
     iget-boolean v0, p0, Lcom/applovin/sdk/AppLovinSdkSettings;->b:Z
 
+    .line 2
+    .line 3
     return v0
 .end method
 
 .method public isVerboseLoggingEnabled()Z
     .locals 1
 
+    .line 1
     iget-boolean v0, p0, Lcom/applovin/sdk/AppLovinSdkSettings;->a:Z
 
+    .line 2
+    .line 3
     return v0
 .end method
 
@@ -824,6 +847,10 @@
 
 .method public setExtraParameter(Ljava/lang/String;Ljava/lang/String;)V
     .locals 3
+    .param p2    # Ljava/lang/String;
+        .annotation build Landroidx/annotation/Nullable;
+        .end annotation
+    .end param
 
     .line 1
     const-string v0, "setExtraParameter(key="
@@ -838,7 +865,7 @@
 
     .line 6
     .line 7
-    invoke-static {v0, p1, v1, p2, v2}, Lj0/d;->l(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v0, p1, v1, p2, v2}, Lcom/google/android/material/datepicker/i;->y(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     .line 8
     .line 9
@@ -1914,7 +1941,7 @@
 
     .line 103
     .line 104
-    invoke-static {v2, p1, v0, v1}, Landroidx/compose/foundation/text/modifiers/f;->A(Ljava/lang/String;Ljava/lang/String;Lcom/applovin/impl/sdk/n;Ljava/lang/String;)V
+    invoke-static {v2, p1, v0, v1}, Lcom/android/billingclient/api/a;->w(Ljava/lang/String;Ljava/lang/String;Lcom/applovin/impl/sdk/n;Ljava/lang/String;)V
 
     .line 105
     .line 106
@@ -2058,13 +2085,18 @@
 .method public shouldFailAdDisplayIfDontKeepActivitiesIsEnabled()Z
     .locals 1
 
+    .line 1
     iget-boolean v0, p0, Lcom/applovin/sdk/AppLovinSdkSettings;->e:Z
 
+    .line 2
+    .line 3
     return v0
 .end method
 
 .method public toString()Ljava/lang/String;
     .locals 3
+    .annotation build Landroidx/annotation/NonNull;
+    .end annotation
 
     .line 1
     new-instance v0, Ljava/lang/StringBuilder;
@@ -2194,7 +2226,7 @@
 
     .line 69
     .line 70
-    invoke-static {v0, v1, v2}, Landroid/support/v4/media/session/a;->J(Ljava/lang/StringBuilder;ZC)Ljava/lang/String;
+    invoke-static {v0, v1, v2}, Landroidx/appcompat/view/menu/F;->I(Ljava/lang/StringBuilder;ZC)Ljava/lang/String;
 
     .line 71
     .line 72

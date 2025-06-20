@@ -17,16 +17,16 @@
     .locals 2
 
     .line 1
-    sget-wide v0, Landroidx/work/impl/constraints/j;->a:J
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 2
     .line 3
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
-
     .line 4
+    iput-object p1, p0, Landroidx/work/impl/constraints/e;->a:Landroid/net/ConnectivityManager;
+
     .line 5
     .line 6
-    iput-object p1, p0, Landroidx/work/impl/constraints/e;->a:Landroid/net/ConnectivityManager;
+    const-wide/16 v0, 0x3e8
 
     .line 7
     .line 8
@@ -39,7 +39,7 @@
 
 
 # virtual methods
-.method public final a(Landroidx/work/f;)Lkotlinx/coroutines/flow/b;
+.method public final a(Landroidx/work/e;)Lkotlinx/coroutines/flow/b;
     .locals 4
 
     .line 1
@@ -50,7 +50,7 @@
     const/4 v1, 0x0
 
     .line 4
-    invoke-direct {v0, p1, p0, v1}, Landroidx/work/impl/constraints/NetworkRequestConstraintController$track$1;-><init>(Landroidx/work/f;Landroidx/work/impl/constraints/e;Lkotlin/coroutines/Continuation;)V
+    invoke-direct {v0, p1, p0, v1}, Landroidx/work/impl/constraints/NetworkRequestConstraintController$track$1;-><init>(Landroidx/work/e;Landroidx/work/impl/constraints/e;Lkotlin/coroutines/Continuation;)V
 
     .line 5
     .line 6
@@ -70,7 +70,7 @@
     const/4 v3, -0x2
 
     .line 14
-    invoke-direct {p1, v0, v1, v3, v2}, Lkotlinx/coroutines/flow/b;-><init>(Lzh/e;Lkotlin/coroutines/i;ILkotlinx/coroutines/channels/BufferOverflow;)V
+    invoke-direct {p1, v0, v1, v3, v2}, Lkotlinx/coroutines/flow/b;-><init>(Lka/e;Lba/g;ILkotlinx/coroutines/channels/BufferOverflow;)V
 
     .line 15
     .line 16
@@ -78,11 +78,11 @@
     return-object p1
 .end method
 
-.method public final b(Lh5/q;)Z
+.method public final b(LB2/p;)Z
     .locals 1
 
     .line 1
-    invoke-virtual {p0, p1}, Landroidx/work/impl/constraints/e;->c(Lh5/q;)Z
+    invoke-virtual {p0, p1}, Landroidx/work/impl/constraints/e;->c(LB2/p;)Z
 
     .line 2
     .line 3
@@ -117,15 +117,15 @@
     throw p1
 .end method
 
-.method public final c(Lh5/q;)Z
+.method public final c(LB2/p;)Z
     .locals 0
 
     .line 1
-    iget-object p1, p1, Lh5/q;->j:Landroidx/work/f;
+    iget-object p1, p1, LB2/p;->j:Landroidx/work/e;
 
     .line 2
     .line 3
-    invoke-virtual {p1}, Landroidx/work/f;->d()Landroid/net/NetworkRequest;
+    invoke-virtual {p1}, Landroidx/work/e;->a()Landroid/net/NetworkRequest;
 
     .line 4
     .line 5

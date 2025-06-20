@@ -3,12 +3,12 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lzh/c;
+.implements Lka/c;
 
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Landroidx/compose/foundation/text/TextFieldKeyInput$process$2;->invoke(Landroidx/compose/foundation/text/selection/w;)V
+    value = Landroidx/compose/foundation/text/TextFieldKeyInput$process$2;->invoke(Landroidx/compose/foundation/text/selection/t;)V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -19,7 +19,7 @@
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "Lkotlin/jvm/internal/Lambda;",
-        "Lzh/c;"
+        "Lka/c;"
     }
 .end annotation
 
@@ -28,10 +28,10 @@
         "\u0000\u000c\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0008\u0003\u0010\u0004\u001a\u0004\u0018\u00010\u0001*\u00020\u0000H\n\u00a2\u0006\u0004\u0008\u0002\u0010\u0003"
     }
     d2 = {
-        "Landroidx/compose/foundation/text/selection/w;",
+        "Landroidx/compose/foundation/text/selection/t;",
         "Landroidx/compose/ui/text/input/h;",
         "invoke",
-        "(Landroidx/compose/foundation/text/selection/w;)Landroidx/compose/ui/text/input/h;",
+        "(Landroidx/compose/foundation/text/selection/t;)Landroidx/compose/ui/text/input/h;",
         "<anonymous>"
     }
     k = 0x3
@@ -72,11 +72,11 @@
 
 
 # virtual methods
-.method public final invoke(Landroidx/compose/foundation/text/selection/w;)Landroidx/compose/ui/text/input/h;
+.method public final invoke(Landroidx/compose/foundation/text/selection/t;)Landroidx/compose/ui/text/input/h;
     .locals 6
 
     .line 2
-    invoke-virtual {p1}, Landroidx/compose/foundation/text/selection/b;->b()Ljava/lang/Integer;
+    invoke-virtual {p1}, Landroidx/compose/foundation/text/selection/t;->c()Ljava/lang/Integer;
 
     move-result-object v0
 
@@ -90,10 +90,10 @@
     new-instance v1, Landroidx/compose/ui/text/input/f;
 
     .line 4
-    iget-wide v2, p1, Landroidx/compose/foundation/text/selection/b;->f:J
+    iget-wide v2, p1, Landroidx/compose/foundation/text/selection/t;->f:J
 
     .line 5
-    sget p1, Landroidx/compose/ui/text/h0;->c:I
+    sget p1, Landroidx/compose/ui/text/H;->c:I
 
     const-wide v4, 0xffffffffL
 
@@ -120,9 +120,9 @@
     .locals 0
 
     .line 1
-    check-cast p1, Landroidx/compose/foundation/text/selection/w;
+    check-cast p1, Landroidx/compose/foundation/text/selection/t;
 
-    invoke-virtual {p0, p1}, Landroidx/compose/foundation/text/TextFieldKeyInput$process$2$7;->invoke(Landroidx/compose/foundation/text/selection/w;)Landroidx/compose/ui/text/input/h;
+    invoke-virtual {p0, p1}, Landroidx/compose/foundation/text/TextFieldKeyInput$process$2$7;->invoke(Landroidx/compose/foundation/text/selection/t;)Landroidx/compose/ui/text/input/h;
 
     move-result-object p1
 

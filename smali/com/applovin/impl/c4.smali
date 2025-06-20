@@ -27,6 +27,7 @@
     .line 2
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
+    .line 3
     iput-object p1, p0, Lcom/applovin/impl/c4;->a:Lcom/applovin/impl/l3;
 
     return-void
@@ -76,7 +77,10 @@
 
     .line 14
     :goto_1
+    :try_start_1
     monitor-exit p0
+    :try_end_1
+    .catchall {:try_start_1 .. :try_end_1} :catchall_0
 
     .line 15
     throw v0
@@ -159,7 +163,10 @@
 
     .line 26
     :goto_1
+    :try_start_3
     monitor-exit p0
+    :try_end_3
+    .catchall {:try_start_3 .. :try_end_3} :catchall_0
 
     .line 27
     throw v0
@@ -196,7 +203,10 @@
     move-exception v0
 
     .line 10
+    :try_start_1
     monitor-exit p0
+    :try_end_1
+    .catchall {:try_start_1 .. :try_end_1} :catchall_0
 
     .line 11
     throw v0
@@ -226,7 +236,10 @@
     move-exception v0
 
     .line 7
+    :try_start_1
     monitor-exit p0
+    :try_end_1
+    .catchall {:try_start_1 .. :try_end_1} :catchall_0
 
     .line 8
     throw v0
@@ -285,7 +298,10 @@
     move-exception v0
 
     .line 18
+    :try_start_2
     monitor-exit p0
+    :try_end_2
+    .catchall {:try_start_2 .. :try_end_2} :catchall_0
 
     .line 19
     throw v0

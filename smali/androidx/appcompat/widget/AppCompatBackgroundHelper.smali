@@ -15,11 +15,18 @@
 .field private mTmpInfo:Landroidx/appcompat/widget/TintInfo;
 
 .field private final mView:Landroid/view/View;
+    .annotation build Landroidx/annotation/NonNull;
+    .end annotation
+.end field
 
 
 # direct methods
 .method public constructor <init>(Landroid/view/View;)V
     .locals 1
+    .param p1    # Landroid/view/View;
+        .annotation build Landroidx/annotation/NonNull;
+        .end annotation
+    .end param
 
     .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -55,6 +62,10 @@
 
 .method private applyFrameworkTintUsingColorFilter(Landroid/graphics/drawable/Drawable;)Z
     .locals 3
+    .param p1    # Landroid/graphics/drawable/Drawable;
+        .annotation build Landroidx/annotation/NonNull;
+        .end annotation
+    .end param
 
     .line 1
     iget-object v0, p0, Landroidx/appcompat/widget/AppCompatBackgroundHelper;->mTmpInfo:Landroidx/appcompat/widget/TintInfo;
@@ -92,11 +103,11 @@
 
     .line 18
     .line 19
-    sget-object v2, Landroidx/core/view/y0;->a:Ljava/util/WeakHashMap;
+    sget-object v2, Landroidx/core/view/e0;->a:Ljava/util/WeakHashMap;
 
     .line 20
     .line 21
-    invoke-static {v1}, Landroidx/core/view/p0;->c(Landroid/view/View;)Landroid/content/res/ColorStateList;
+    invoke-static {v1}, Landroidx/core/view/V;->c(Landroid/view/View;)Landroid/content/res/ColorStateList;
 
     .line 22
     .line 23
@@ -124,7 +135,7 @@
 
     .line 33
     .line 34
-    invoke-static {v1}, Landroidx/core/view/p0;->d(Landroid/view/View;)Landroid/graphics/PorterDuff$Mode;
+    invoke-static {v1}, Landroidx/core/view/V;->d(Landroid/view/View;)Landroid/graphics/PorterDuff$Mode;
 
     .line 35
     .line 36
@@ -196,30 +207,48 @@
 .method private shouldApplyFrameworkTintUsingColorFilter()Z
     .locals 4
 
+    .line 1
     sget v0, Landroid/os/Build$VERSION;->SDK_INT:I
 
+    .line 2
+    .line 3
     const/4 v1, 0x0
 
+    .line 4
     const/4 v2, 0x1
 
+    .line 5
     const/16 v3, 0x15
 
+    .line 6
+    .line 7
     if-le v0, v3, :cond_1
 
+    .line 8
+    .line 9
     iget-object v0, p0, Landroidx/appcompat/widget/AppCompatBackgroundHelper;->mInternalBackgroundTint:Landroidx/appcompat/widget/TintInfo;
 
+    .line 10
+    .line 11
     if-eqz v0, :cond_0
 
+    .line 12
+    .line 13
     const/4 v1, 0x1
 
+    .line 14
     :cond_0
     return v1
 
+    .line 15
     :cond_1
     if-ne v0, v3, :cond_2
 
+    .line 16
+    .line 17
     return v2
 
+    .line 18
     :cond_2
     return v1
 .end method
@@ -389,6 +418,10 @@
 
 .method public loadFromAttributes(Landroid/util/AttributeSet;I)V
     .locals 9
+    .param p1    # Landroid/util/AttributeSet;
+        .annotation build Landroidx/annotation/Nullable;
+        .end annotation
+    .end param
 
     .line 1
     iget-object v0, p0, Landroidx/appcompat/widget/AppCompatBackgroundHelper;->mView:Landroid/view/View;
@@ -403,7 +436,7 @@
     move-result-object v0
 
     .line 7
-    sget-object v1, Lg/j;->ViewBackgroundHelper:[I
+    sget-object v1, Li/j;->ViewBackgroundHelper:[I
 
     .line 8
     .line 9
@@ -430,7 +463,7 @@
     move-result-object v4
 
     .line 20
-    sget-object v5, Lg/j;->ViewBackgroundHelper:[I
+    sget-object v5, Li/j;->ViewBackgroundHelper:[I
 
     .line 21
     .line 22
@@ -448,13 +481,13 @@
     move v8, p2
 
     .line 28
-    invoke-static/range {v3 .. v8}, Landroidx/core/view/y0;->r(Landroid/view/View;Landroid/content/Context;[ILandroid/util/AttributeSet;Landroid/content/res/TypedArray;I)V
+    invoke-static/range {v3 .. v8}, Landroidx/core/view/e0;->r(Landroid/view/View;Landroid/content/Context;[ILandroid/util/AttributeSet;Landroid/content/res/TypedArray;I)V
 
     .line 29
     .line 30
     .line 31
     :try_start_0
-    sget p1, Lg/j;->ViewBackgroundHelper_android_background:I
+    sget p1, Li/j;->ViewBackgroundHelper_android_background:I
 
     .line 32
     .line 33
@@ -473,7 +506,7 @@
 
     .line 39
     .line 40
-    sget p1, Lg/j;->ViewBackgroundHelper_android_background:I
+    sget p1, Li/j;->ViewBackgroundHelper_android_background:I
 
     .line 41
     .line 42
@@ -538,7 +571,7 @@
     .line 70
     :cond_0
     :goto_0
-    sget p1, Lg/j;->ViewBackgroundHelper_backgroundTint:I
+    sget p1, Li/j;->ViewBackgroundHelper_backgroundTint:I
 
     .line 71
     .line 72
@@ -558,7 +591,7 @@
 
     .line 79
     .line 80
-    sget v1, Lg/j;->ViewBackgroundHelper_backgroundTint:I
+    sget v1, Li/j;->ViewBackgroundHelper_backgroundTint:I
 
     .line 81
     .line 82
@@ -570,13 +603,13 @@
     move-result-object v1
 
     .line 86
-    invoke-static {p1, v1}, Landroidx/core/view/y0;->u(Landroid/view/View;Landroid/content/res/ColorStateList;)V
+    invoke-static {p1, v1}, Landroidx/core/view/e0;->u(Landroid/view/View;Landroid/content/res/ColorStateList;)V
 
     .line 87
     .line 88
     .line 89
     :cond_1
-    sget p1, Lg/j;->ViewBackgroundHelper_backgroundTintMode:I
+    sget p1, Li/j;->ViewBackgroundHelper_backgroundTintMode:I
 
     .line 90
     .line 91
@@ -596,7 +629,7 @@
 
     .line 98
     .line 99
-    sget v1, Lg/j;->ViewBackgroundHelper_backgroundTintMode:I
+    sget v1, Li/j;->ViewBackgroundHelper_backgroundTintMode:I
 
     .line 100
     .line 101
@@ -623,7 +656,7 @@
 
     .line 111
     .line 112
-    invoke-static {p1, p2}, Landroidx/core/view/p0;->l(Landroid/view/View;Landroid/graphics/PorterDuff$Mode;)V
+    invoke-static {p1, p2}, Landroidx/core/view/V;->l(Landroid/view/View;Landroid/graphics/PorterDuff$Mode;)V
 
     .line 113
     .line 114
@@ -644,7 +677,7 @@
     move-result-object p2
 
     .line 123
-    invoke-static {p1}, Landroidx/core/view/p0;->c(Landroid/view/View;)Landroid/content/res/ColorStateList;
+    invoke-static {p1}, Landroidx/core/view/V;->c(Landroid/view/View;)Landroid/content/res/ColorStateList;
 
     .line 124
     .line 125
@@ -656,7 +689,7 @@
 
     .line 128
     .line 129
-    invoke-static {p1}, Landroidx/core/view/p0;->d(Landroid/view/View;)Landroid/graphics/PorterDuff$Mode;
+    invoke-static {p1}, Landroidx/core/view/V;->d(Landroid/view/View;)Landroid/graphics/PorterDuff$Mode;
 
     .line 130
     .line 131

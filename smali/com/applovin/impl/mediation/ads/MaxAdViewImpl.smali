@@ -370,9 +370,9 @@
 .method private a(J)V
     .locals 4
 
+    .line 138
     iget-object v0, p0, Lcom/applovin/impl/mediation/ads/a;->sdk:Lcom/applovin/impl/sdk/j;
 
-    .line 133
     sget-object v1, Lcom/applovin/impl/ue;->b7:Lcom/applovin/impl/sj;
 
     invoke-virtual {v0, v1}, Lcom/applovin/impl/sdk/j;->a(Lcom/applovin/impl/sj;)Ljava/lang/Object;
@@ -385,18 +385,19 @@
 
     move-result-wide v0
 
-    .line 134
+    .line 139
     invoke-static {p1, p2, v0, v1}, Lcom/applovin/impl/yp;->a(JJ)Z
 
     move-result v0
 
     if-eqz v0, :cond_2
 
+    .line 140
     iget-boolean v0, p0, Lcom/applovin/impl/mediation/ads/MaxAdViewImpl;->z:Z
 
     if-nez v0, :cond_2
 
-    .line 135
+    .line 141
     invoke-static {}, Lcom/applovin/impl/sdk/n;->a()Z
 
     move-result v0
@@ -435,7 +436,7 @@
 
     invoke-virtual {v0, v1, p1}, Lcom/applovin/impl/sdk/n;->a(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 136
+    .line 142
     :cond_0
     invoke-static {}, Lcom/applovin/impl/sdk/n;->a()Z
 
@@ -454,11 +455,12 @@
     :cond_1
     const/4 p1, 0x1
 
+    .line 143
     iput-boolean p1, p0, Lcom/applovin/impl/mediation/ads/MaxAdViewImpl;->q:Z
 
     goto :goto_0
 
-    .line 137
+    .line 144
     :cond_2
     invoke-static {}, Lcom/applovin/impl/sdk/n;->a()Z
 
@@ -477,9 +479,10 @@
     :cond_3
     const/4 p1, 0x0
 
+    .line 145
     iput-boolean p1, p0, Lcom/applovin/impl/mediation/ads/MaxAdViewImpl;->q:Z
 
-    .line 138
+    .line 146
     invoke-direct {p0}, Lcom/applovin/impl/mediation/ads/MaxAdViewImpl;->d()V
 
     :goto_0
@@ -578,17 +581,17 @@
     const-string v6, "."
 
     .line 12
-    invoke-static {v4, v0, v5, v1, v6}, Lj0/d;->g(Ljava/lang/String;ILjava/lang/String;ILjava/lang/String;)Ljava/lang/String;
+    invoke-static {v0, v1, v4, v5, v6}, Landroidx/appcompat/view/menu/F;->C(IILjava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v0
 
     .line 13
     invoke-virtual {v2, v3, v0}, Lcom/applovin/impl/sdk/n;->a(Ljava/lang/String;Ljava/lang/String;)V
 
+    .line 14
     :cond_3
     iget-object v0, p0, Lcom/applovin/impl/mediation/ads/MaxAdViewImpl;->b:Lcom/applovin/mediation/ads/MaxAdView;
 
-    .line 14
     invoke-virtual {v0}, Landroid/widget/RelativeLayout;->getGravity()I
 
     move-result v0
@@ -633,9 +636,9 @@
 .method private synthetic a(Lcom/applovin/impl/ge;)V
     .locals 3
 
+    .line 26
     iget-object v0, p0, Lcom/applovin/impl/mediation/ads/MaxAdViewImpl;->l:Lcom/applovin/impl/ar;
 
-    .line 26
     invoke-virtual {v0, p1}, Lcom/applovin/impl/ar;->a(Lcom/applovin/impl/me;)J
 
     move-result-wide v0
@@ -660,7 +663,7 @@
 .method private a(Lcom/applovin/impl/ge;J)V
     .locals 3
 
-    .line 131
+    .line 136
     invoke-static {}, Lcom/applovin/impl/sdk/n;->a()Z
 
     move-result v0
@@ -675,10 +678,10 @@
 
     invoke-virtual {v0, v1, v2}, Lcom/applovin/impl/sdk/n;->a(Ljava/lang/String;Ljava/lang/String;)V
 
+    .line 137
     :cond_0
     iget-object v0, p0, Lcom/applovin/impl/mediation/ads/a;->sdk:Lcom/applovin/impl/sdk/j;
 
-    .line 132
     invoke-virtual {v0}, Lcom/applovin/impl/sdk/j;->P()Lcom/applovin/impl/mediation/MediationServiceImpl;
 
     move-result-object v0
@@ -720,6 +723,7 @@
 .method private synthetic a(Lcom/applovin/impl/mediation/ads/a$a;Lcom/applovin/impl/mediation/d$b;)V
     .locals 10
 
+    .line 40
     iget-object v0, p0, Lcom/applovin/impl/mediation/ads/MaxAdViewImpl;->p:Lcom/applovin/impl/ge;
 
     const-string v1, "viewability_flags"
@@ -728,27 +732,27 @@
 
     if-eqz v0, :cond_0
 
+    .line 41
     iget-object v3, p0, Lcom/applovin/impl/mediation/ads/MaxAdViewImpl;->l:Lcom/applovin/impl/ar;
 
-    .line 40
     invoke-virtual {v3, v0}, Lcom/applovin/impl/ar;->a(Lcom/applovin/impl/me;)J
 
     move-result-wide v3
 
+    .line 42
     iget-object v0, p0, Lcom/applovin/impl/mediation/ads/a;->extraParameters:Ljava/util/Map;
 
     iget-object v5, p0, Lcom/applovin/impl/mediation/ads/MaxAdViewImpl;->p:Lcom/applovin/impl/ge;
 
-    .line 41
     invoke-virtual {v5}, Lcom/applovin/impl/oe;->getAdUnitId()Ljava/lang/String;
 
     move-result-object v5
 
     invoke-interface {v0, v2, v5}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
+    .line 43
     iget-object v0, p0, Lcom/applovin/impl/mediation/ads/a;->extraParameters:Ljava/util/Map;
 
-    .line 42
     invoke-static {v3, v4}, Ljava/lang/Long;->valueOf(J)Ljava/lang/Long;
 
     move-result-object v2
@@ -757,21 +761,21 @@
 
     goto :goto_0
 
+    .line 44
     :cond_0
     iget-object v0, p0, Lcom/applovin/impl/mediation/ads/a;->extraParameters:Ljava/util/Map;
 
-    .line 43
     invoke-interface {v0, v2}, Ljava/util/Map;->remove(Ljava/lang/Object;)Ljava/lang/Object;
 
+    .line 45
     iget-object v0, p0, Lcom/applovin/impl/mediation/ads/a;->extraParameters:Ljava/util/Map;
 
-    .line 44
     invoke-interface {v0, v1}, Ljava/util/Map;->remove(Ljava/lang/Object;)Ljava/lang/Object;
 
+    .line 46
     :goto_0
     iget-object v0, p0, Lcom/applovin/impl/mediation/ads/MaxAdViewImpl;->b:Lcom/applovin/mediation/ads/MaxAdView;
 
-    .line 45
     invoke-virtual {v0}, Landroid/view/View;->getContext()Landroid/content/Context;
 
     move-result-object v0
@@ -786,9 +790,9 @@
 
     move-result v0
 
+    .line 47
     iget-object v1, p0, Lcom/applovin/impl/mediation/ads/MaxAdViewImpl;->b:Lcom/applovin/mediation/ads/MaxAdView;
 
-    .line 46
     invoke-virtual {v1}, Landroid/view/View;->getContext()Landroid/content/Context;
 
     move-result-object v1
@@ -803,9 +807,9 @@
 
     move-result v1
 
+    .line 48
     iget-object v2, p0, Lcom/applovin/impl/mediation/ads/a;->extraParameters:Ljava/util/Map;
 
-    .line 47
     invoke-static {v0}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
     move-result-object v0
@@ -814,9 +818,9 @@
 
     invoke-interface {v2, v3, v0}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
+    .line 49
     iget-object v0, p0, Lcom/applovin/impl/mediation/ads/a;->extraParameters:Ljava/util/Map;
 
-    .line 48
     invoke-static {v1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
     move-result-object v1
@@ -825,11 +829,11 @@
 
     invoke-interface {v0, v2, v1}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
+    .line 50
     iget-object v0, p0, Lcom/applovin/impl/mediation/ads/a;->extraParameters:Ljava/util/Map;
 
     iget-object v1, p0, Lcom/applovin/impl/mediation/ads/MaxAdViewImpl;->k:Lcom/applovin/impl/sdk/f;
 
-    .line 49
     invoke-virtual {v1}, Lcom/applovin/impl/sdk/f;->g()Z
 
     move-result v1
@@ -860,11 +864,11 @@
 
     invoke-interface {v0, v2, v1}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
+    .line 51
     iget-object v0, p0, Lcom/applovin/impl/mediation/ads/a;->extraParameters:Ljava/util/Map;
 
     iget-boolean v1, p0, Lcom/applovin/impl/mediation/ads/MaxAdViewImpl;->w:Z
 
-    .line 50
     invoke-static {v1}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
 
     move-result-object v1
@@ -873,7 +877,7 @@
 
     invoke-interface {v0, v2, v1}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 51
+    .line 52
     invoke-static {}, Lcom/applovin/impl/sdk/n;->a()Z
 
     move-result v0
@@ -928,10 +932,10 @@
 
     invoke-virtual {v0, v1, v2}, Lcom/applovin/impl/sdk/n;->a(Ljava/lang/String;Ljava/lang/String;)V
 
+    .line 53
     :cond_3
     iget-object v0, p0, Lcom/applovin/impl/mediation/ads/a;->sdk:Lcom/applovin/impl/sdk/j;
 
-    .line 52
     invoke-virtual {v0}, Lcom/applovin/impl/sdk/j;->P()Lcom/applovin/impl/mediation/MediationServiceImpl;
 
     move-result-object v1
@@ -967,9 +971,9 @@
 
     if-eqz v0, :cond_1
 
+    .line 34
     iget-object p1, p0, Lcom/applovin/impl/mediation/ads/a;->sdk:Lcom/applovin/impl/sdk/j;
 
-    .line 34
     invoke-static {p1}, Lcom/applovin/impl/yp;->c(Lcom/applovin/impl/sdk/j;)Z
 
     move-result p1
@@ -993,9 +997,9 @@
 
     move-result-object p2
 
+    .line 36
     iget-object v0, p0, Lcom/applovin/impl/mediation/ads/a;->sdk:Lcom/applovin/impl/sdk/j;
 
-    .line 36
     invoke-virtual {v0}, Lcom/applovin/impl/sdk/j;->D()Lcom/applovin/impl/la;
 
     move-result-object v0
@@ -1008,11 +1012,11 @@
 
     if-nez p1, :cond_0
 
+    .line 37
     iget-object p1, p0, Lcom/applovin/impl/mediation/ads/a;->tag:Ljava/lang/String;
 
     const-string p2, "Failed to load new ad - this instance is already destroyed"
 
-    .line 37
     invoke-static {p1, p2}, Lcom/applovin/impl/sdk/n;->h(Ljava/lang/String;Ljava/lang/String;)V
 
     return-void
@@ -1041,9 +1045,9 @@
 
     .line 39
     :cond_1
-    new-instance v0, Lcom/applovin/impl/mediation/ads/c;
+    new-instance v0, Lcom/applovin/impl/mediation/ads/d;
 
-    invoke-direct {v0, p0, p2, p1}, Lcom/applovin/impl/mediation/ads/c;-><init>(Lcom/applovin/impl/mediation/ads/MaxAdViewImpl;Lcom/applovin/impl/mediation/ads/a$a;Lcom/applovin/impl/mediation/d$b;)V
+    invoke-direct {v0, p0, p2, p1}, Lcom/applovin/impl/mediation/ads/d;-><init>(Lcom/applovin/impl/mediation/ads/MaxAdViewImpl;Lcom/applovin/impl/mediation/ads/a$a;Lcom/applovin/impl/mediation/d$b;)V
 
     const/4 p1, 0x1
 
@@ -1057,20 +1061,21 @@
 
     const/4 v0, 0x0
 
+    .line 147
     iput-boolean v0, p0, Lcom/applovin/impl/mediation/ads/MaxAdViewImpl;->t:Z
 
+    .line 148
     iget-object v1, p0, Lcom/applovin/impl/mediation/ads/MaxAdViewImpl;->s:Ljava/util/concurrent/atomic/AtomicBoolean;
 
     const/4 v2, 0x1
 
-    .line 139
     invoke-virtual {v1, v2, v0}, Ljava/util/concurrent/atomic/AtomicBoolean;->compareAndSet(ZZ)Z
 
     move-result v0
 
     if-eqz v0, :cond_1
 
-    .line 140
+    .line 149
     invoke-static {}, Lcom/applovin/impl/sdk/n;->a()Z
 
     move-result v0
@@ -1103,15 +1108,15 @@
 
     invoke-virtual {v0, v1, v2}, Lcom/applovin/impl/sdk/n;->a(Ljava/lang/String;Ljava/lang/String;)V
 
+    .line 150
     :cond_0
     iget-object v0, p0, Lcom/applovin/impl/mediation/ads/MaxAdViewImpl;->i:Lcom/applovin/impl/mediation/ads/MaxAdViewImpl$b;
 
-    .line 141
     invoke-virtual {v0, p1}, Lcom/applovin/impl/mediation/ads/MaxAdViewImpl$b;->onAdLoaded(Lcom/applovin/mediation/MaxAd;)V
 
     goto :goto_0
 
-    .line 142
+    .line 151
     :cond_1
     invoke-static {}, Lcom/applovin/impl/sdk/n;->a()Z
 
@@ -1127,22 +1132,22 @@
 
     invoke-virtual {v0, v1, v2}, Lcom/applovin/impl/sdk/n;->a(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 143
+    .line 152
     :cond_2
     check-cast p1, Lcom/applovin/impl/ge;
 
     iput-object p1, p0, Lcom/applovin/impl/mediation/ads/MaxAdViewImpl;->f:Lcom/applovin/impl/ge;
 
+    .line 153
     iget-object v0, p0, Lcom/applovin/impl/mediation/ads/MaxAdViewImpl;->g:Ljava/lang/String;
 
-    .line 144
     invoke-virtual {p1, v0}, Lcom/applovin/impl/oe;->g(Ljava/lang/String;)V
 
+    .line 154
     iget-object p1, p0, Lcom/applovin/impl/mediation/ads/MaxAdViewImpl;->f:Lcom/applovin/impl/ge;
 
     iget-object v0, p0, Lcom/applovin/impl/mediation/ads/MaxAdViewImpl;->h:Ljava/lang/String;
 
-    .line 145
     invoke-virtual {p1, v0}, Lcom/applovin/impl/oe;->f(Ljava/lang/String;)V
 
     :goto_0
@@ -1152,14 +1157,14 @@
 .method private a(Lcom/applovin/mediation/MaxError;)V
     .locals 5
 
-    .line 108
+    .line 109
     invoke-direct {p0}, Lcom/applovin/impl/mediation/ads/MaxAdViewImpl;->a()Z
 
     move-result v0
 
     if-eqz v0, :cond_1
 
-    .line 109
+    .line 110
     invoke-static {}, Lcom/applovin/impl/sdk/n;->a()Z
 
     move-result p1
@@ -1193,17 +1198,17 @@
     :cond_0
     return-void
 
+    .line 111
     :cond_1
     iget-object v0, p0, Lcom/applovin/impl/mediation/ads/a;->sdk:Lcom/applovin/impl/sdk/j;
 
-    .line 110
     sget-object v1, Lcom/applovin/impl/ue;->Q6:Lcom/applovin/impl/sj;
 
     invoke-virtual {v0, v1}, Lcom/applovin/impl/sdk/j;->c(Lcom/applovin/impl/sj;)Ljava/util/List;
 
     move-result-object v0
 
-    .line 111
+    .line 112
     invoke-interface {p1}, Lcom/applovin/mediation/MaxError;->getCode()I
 
     move-result v1
@@ -1218,9 +1223,9 @@
 
     if-eqz v0, :cond_3
 
+    .line 113
     iget-object v0, p0, Lcom/applovin/impl/mediation/ads/a;->sdk:Lcom/applovin/impl/sdk/j;
 
-    .line 112
     invoke-virtual {v0}, Lcom/applovin/impl/sdk/j;->I()Lcom/applovin/impl/sdk/n;
 
     invoke-static {}, Lcom/applovin/impl/sdk/n;->a()Z
@@ -1258,6 +1263,7 @@
     :cond_2
     return-void
 
+    .line 114
     :cond_3
     iget-boolean v0, p0, Lcom/applovin/impl/mediation/ads/MaxAdViewImpl;->r:Z
 
@@ -1269,7 +1275,6 @@
 
     iget-object v0, p0, Lcom/applovin/impl/mediation/ads/MaxAdViewImpl;->k:Lcom/applovin/impl/sdk/f;
 
-    .line 113
     invoke-virtual {v0}, Lcom/applovin/impl/sdk/f;->g()Z
 
     move-result v0
@@ -1278,14 +1283,16 @@
 
     goto :goto_0
 
+    .line 115
     :cond_4
     iput-boolean v2, p0, Lcom/applovin/impl/mediation/ads/MaxAdViewImpl;->q:Z
 
+    .line 116
     iput-boolean v1, p0, Lcom/applovin/impl/mediation/ads/MaxAdViewImpl;->t:Z
 
+    .line 117
     iget-object p1, p0, Lcom/applovin/impl/mediation/ads/a;->sdk:Lcom/applovin/impl/sdk/j;
 
-    .line 114
     sget-object v0, Lcom/applovin/impl/ue;->P6:Lcom/applovin/impl/sj;
 
     invoke-virtual {p1, v0}, Lcom/applovin/impl/sdk/j;->a(Lcom/applovin/impl/sj;)Ljava/lang/Object;
@@ -1304,9 +1311,9 @@
 
     if-ltz p1, :cond_6
 
+    .line 118
     iget-object p1, p0, Lcom/applovin/impl/mediation/ads/a;->sdk:Lcom/applovin/impl/sdk/j;
 
-    .line 115
     invoke-virtual {p1}, Lcom/applovin/impl/sdk/j;->I()Lcom/applovin/impl/sdk/n;
 
     invoke-static {}, Lcom/applovin/impl/sdk/n;->a()Z
@@ -1327,14 +1334,14 @@
 
     const-string v4, " milliseconds from now for \'"
 
-    .line 116
-    invoke-static {v3, v0, v1, v4}, Lj0/d;->r(Ljava/lang/String;JLjava/lang/String;)Ljava/lang/StringBuilder;
+    .line 119
+    invoke-static {v3, v4, v0, v1}, Landroidx/compose/runtime/a0;->u(Ljava/lang/String;Ljava/lang/String;J)Ljava/lang/StringBuilder;
 
     move-result-object v3
 
+    .line 120
     iget-object v4, p0, Lcom/applovin/impl/mediation/ads/a;->adUnitId:Ljava/lang/String;
 
-    .line 117
     invoke-virtual {v3, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     const-string v4, "\'..."
@@ -1347,22 +1354,23 @@
 
     invoke-virtual {p1, v2, v3}, Lcom/applovin/impl/sdk/n;->a(Ljava/lang/String;Ljava/lang/String;)V
 
+    .line 121
     :cond_5
     iget-object p1, p0, Lcom/applovin/impl/mediation/ads/MaxAdViewImpl;->k:Lcom/applovin/impl/sdk/f;
 
-    .line 118
     invoke-virtual {p1, v0, v1}, Lcom/applovin/impl/sdk/f;->a(J)V
 
     :cond_6
     return-void
 
+    .line 122
     :cond_7
     :goto_0
     iget-boolean v0, p0, Lcom/applovin/impl/mediation/ads/MaxAdViewImpl;->t:Z
 
     if-eqz v0, :cond_9
 
-    .line 119
+    .line 123
     invoke-static {}, Lcom/applovin/impl/sdk/n;->a()Z
 
     move-result v0
@@ -1377,20 +1385,21 @@
 
     invoke-virtual {v0, v3, v4}, Lcom/applovin/impl/sdk/n;->a(Ljava/lang/String;Ljava/lang/String;)V
 
+    .line 124
     :cond_8
     iput-boolean v1, p0, Lcom/applovin/impl/mediation/ads/MaxAdViewImpl;->t:Z
 
+    .line 125
     :cond_9
     iget-object v0, p0, Lcom/applovin/impl/mediation/ads/MaxAdViewImpl;->s:Ljava/util/concurrent/atomic/AtomicBoolean;
 
-    .line 120
     invoke-virtual {v0}, Ljava/util/concurrent/atomic/AtomicBoolean;->get()Z
 
     move-result v0
 
     if-eqz v0, :cond_b
 
-    .line 121
+    .line 126
     invoke-static {}, Lcom/applovin/impl/sdk/n;->a()Z
 
     move-result v0
@@ -1423,15 +1432,15 @@
 
     iget-object v4, p0, Lcom/applovin/impl/mediation/ads/a;->adListener:Lcom/applovin/mediation/MaxAdListener;
 
-    .line 122
-    invoke-static {v3, v4, v0, v1}, Lcom/applovin/impl/ru;->s(Ljava/lang/StringBuilder;Lcom/applovin/mediation/MaxAdListener;Lcom/applovin/impl/sdk/n;Ljava/lang/String;)V
+    .line 127
+    invoke-static {v3, v4, v0, v1}, Lcom/android/billingclient/api/a;->y(Ljava/lang/StringBuilder;Lcom/applovin/mediation/MaxAdListener;Lcom/applovin/impl/sdk/n;Ljava/lang/String;)V
 
+    .line 128
     :cond_a
     iget-object v0, p0, Lcom/applovin/impl/mediation/ads/a;->adListener:Lcom/applovin/mediation/MaxAdListener;
 
     iget-object v1, p0, Lcom/applovin/impl/mediation/ads/a;->adUnitId:Ljava/lang/String;
 
-    .line 123
     invoke-static {v0, v1, p1, v2}, Lcom/applovin/impl/fc;->a(Lcom/applovin/mediation/MaxAdListener;Ljava/lang/String;Lcom/applovin/mediation/MaxError;Z)V
 
     :cond_b
@@ -1441,16 +1450,16 @@
 .method private a(Ljava/lang/String;Ljava/lang/String;)V
     .locals 3
 
+    .line 54
     const-string v0, "allow_pause_auto_refresh_immediately"
 
-    .line 53
     invoke-virtual {v0, p1}, Ljava/lang/String;->equalsIgnoreCase(Ljava/lang/String;)Z
 
     move-result v0
 
     if-eqz v0, :cond_1
 
-    .line 54
+    .line 55
     invoke-static {}, Lcom/applovin/impl/sdk/n;->a()Z
 
     move-result p1
@@ -1463,10 +1472,10 @@
 
     const-string v1, "Updated allow immediate auto-refresh pause and ad load to: "
 
-    .line 55
-    invoke-static {v1, p2, p1, v0}, Landroidx/compose/foundation/text/modifiers/f;->A(Ljava/lang/String;Ljava/lang/String;Lcom/applovin/impl/sdk/n;Ljava/lang/String;)V
-
     .line 56
+    invoke-static {v1, p2, p1, v0}, Lcom/android/billingclient/api/a;->w(Ljava/lang/String;Ljava/lang/String;Lcom/applovin/impl/sdk/n;Ljava/lang/String;)V
+
+    .line 57
     :cond_0
     invoke-static {p2}, Ljava/lang/Boolean;->parseBoolean(Ljava/lang/String;)Z
 
@@ -1476,17 +1485,17 @@
 
     goto/16 :goto_0
 
+    .line 58
     :cond_1
     const-string v0, "disable_auto_retries"
 
-    .line 57
     invoke-virtual {v0, p1}, Ljava/lang/String;->equalsIgnoreCase(Ljava/lang/String;)Z
 
     move-result v0
 
     if-eqz v0, :cond_3
 
-    .line 58
+    .line 59
     invoke-static {}, Lcom/applovin/impl/sdk/n;->a()Z
 
     move-result p1
@@ -1499,10 +1508,10 @@
 
     const-string v1, "Updated disable auto-retries to: "
 
-    .line 59
-    invoke-static {v1, p2, p1, v0}, Landroidx/compose/foundation/text/modifiers/f;->A(Ljava/lang/String;Ljava/lang/String;Lcom/applovin/impl/sdk/n;Ljava/lang/String;)V
-
     .line 60
+    invoke-static {v1, p2, p1, v0}, Lcom/android/billingclient/api/a;->w(Ljava/lang/String;Ljava/lang/String;Lcom/applovin/impl/sdk/n;Ljava/lang/String;)V
+
+    .line 61
     :cond_2
     invoke-static {p2}, Ljava/lang/Boolean;->parseBoolean(Ljava/lang/String;)Z
 
@@ -1512,17 +1521,17 @@
 
     goto/16 :goto_0
 
+    .line 62
     :cond_3
     const-string v0, "disable_precache"
 
-    .line 61
     invoke-virtual {v0, p1}, Ljava/lang/String;->equalsIgnoreCase(Ljava/lang/String;)Z
 
     move-result v0
 
     if-eqz v0, :cond_5
 
-    .line 62
+    .line 63
     invoke-static {}, Lcom/applovin/impl/sdk/n;->a()Z
 
     move-result p1
@@ -1535,10 +1544,10 @@
 
     const-string v1, "Updated precached disabled to: "
 
-    .line 63
-    invoke-static {v1, p2, p1, v0}, Landroidx/compose/foundation/text/modifiers/f;->A(Ljava/lang/String;Ljava/lang/String;Lcom/applovin/impl/sdk/n;Ljava/lang/String;)V
-
     .line 64
+    invoke-static {v1, p2, p1, v0}, Lcom/android/billingclient/api/a;->w(Ljava/lang/String;Ljava/lang/String;Lcom/applovin/impl/sdk/n;Ljava/lang/String;)V
+
+    .line 65
     :cond_4
     invoke-static {p2}, Ljava/lang/Boolean;->parseBoolean(Ljava/lang/String;)Z
 
@@ -1548,17 +1557,17 @@
 
     goto :goto_0
 
+    .line 66
     :cond_5
     const-string v0, "should_stop_auto_refresh_on_ad_expand"
 
-    .line 65
     invoke-virtual {v0, p1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
     move-result v0
 
     if-eqz v0, :cond_7
 
-    .line 66
+    .line 67
     invoke-static {}, Lcom/applovin/impl/sdk/n;->a()Z
 
     move-result p1
@@ -1571,10 +1580,10 @@
 
     const-string v1, "Updated should stop auto-refresh on ad expand to: "
 
-    .line 67
-    invoke-static {v1, p2, p1, v0}, Landroidx/compose/foundation/text/modifiers/f;->A(Ljava/lang/String;Ljava/lang/String;Lcom/applovin/impl/sdk/n;Ljava/lang/String;)V
-
     .line 68
+    invoke-static {v1, p2, p1, v0}, Lcom/android/billingclient/api/a;->w(Ljava/lang/String;Ljava/lang/String;Lcom/applovin/impl/sdk/n;Ljava/lang/String;)V
+
+    .line 69
     :cond_6
     invoke-static {p2}, Ljava/lang/Boolean;->parseBoolean(Ljava/lang/String;)Z
 
@@ -1584,17 +1593,17 @@
 
     goto :goto_0
 
+    .line 70
     :cond_7
     const-string v0, "force_precache"
 
-    .line 69
     invoke-virtual {v0, p1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
     move-result v0
 
     if-eqz v0, :cond_9
 
-    .line 70
+    .line 71
     invoke-static {}, Lcom/applovin/impl/sdk/n;->a()Z
 
     move-result p1
@@ -1607,10 +1616,10 @@
 
     const-string v1, "Updated force precache to: "
 
-    .line 71
-    invoke-static {v1, p2, p1, v0}, Landroidx/compose/foundation/text/modifiers/f;->A(Ljava/lang/String;Ljava/lang/String;Lcom/applovin/impl/sdk/n;Ljava/lang/String;)V
-
     .line 72
+    invoke-static {v1, p2, p1, v0}, Lcom/android/billingclient/api/a;->w(Ljava/lang/String;Ljava/lang/String;Lcom/applovin/impl/sdk/n;Ljava/lang/String;)V
+
+    .line 73
     :cond_8
     invoke-static {p2}, Ljava/lang/Boolean;->parseBoolean(Ljava/lang/String;)Z
 
@@ -1620,17 +1629,17 @@
 
     goto :goto_0
 
+    .line 74
     :cond_9
     const-string v0, "adaptive_banner"
 
-    .line 73
     invoke-virtual {v0, p1}, Ljava/lang/String;->equalsIgnoreCase(Ljava/lang/String;)Z
 
     move-result v0
 
     if-eqz v0, :cond_b
 
-    .line 74
+    .line 75
     invoke-static {}, Lcom/applovin/impl/sdk/n;->a()Z
 
     move-result v0
@@ -1643,10 +1652,10 @@
 
     const-string v2, "Updated is adaptive banner to: "
 
-    .line 75
-    invoke-static {v2, p2, v0, v1}, Landroidx/compose/foundation/text/modifiers/f;->A(Ljava/lang/String;Ljava/lang/String;Lcom/applovin/impl/sdk/n;Ljava/lang/String;)V
-
     .line 76
+    invoke-static {v2, p2, v0, v1}, Lcom/android/billingclient/api/a;->w(Ljava/lang/String;Ljava/lang/String;Lcom/applovin/impl/sdk/n;Ljava/lang/String;)V
+
+    .line 77
     :cond_a
     invoke-static {p2}, Ljava/lang/Boolean;->parseBoolean(Ljava/lang/String;)Z
 
@@ -1654,7 +1663,7 @@
 
     iput-boolean v0, p0, Lcom/applovin/impl/mediation/ads/MaxAdViewImpl;->A:Z
 
-    .line 77
+    .line 78
     invoke-virtual {p0, p1, p2}, Lcom/applovin/impl/mediation/ads/a;->setLocalExtraParameter(Ljava/lang/String;Ljava/lang/Object;)V
 
     :cond_b
@@ -1665,15 +1674,15 @@
 .method private a()Z
     .locals 2
 
+    .line 155
     iget-object v0, p0, Lcom/applovin/impl/mediation/ads/MaxAdViewImpl;->n:Ljava/lang/Object;
 
-    .line 146
     monitor-enter v0
 
+    .line 156
     :try_start_0
     iget-boolean v1, p0, Lcom/applovin/impl/mediation/ads/MaxAdViewImpl;->u:Z
 
-    .line 147
     monitor-exit v0
 
     return v1
@@ -1681,7 +1690,7 @@
     :catchall_0
     move-exception v1
 
-    .line 148
+    .line 157
     monitor-exit v0
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
@@ -1717,6 +1726,7 @@
 
     if-nez v0, :cond_0
 
+    .line 4
     const-string v1, "MaxAdView does not have a loaded ad view"
 
     goto :goto_0
@@ -1724,11 +1734,13 @@
     :cond_0
     const/4 v1, 0x0
 
+    .line 5
     :goto_0
     iget-object v2, p0, Lcom/applovin/impl/mediation/ads/MaxAdViewImpl;->b:Lcom/applovin/mediation/ads/MaxAdView;
 
     if-nez v2, :cond_1
 
+    .line 6
     const-string v1, "MaxAdView does not have a parent view"
 
     :cond_1
@@ -1736,7 +1748,7 @@
 
     if-eqz v1, :cond_4
 
-    .line 4
+    .line 7
     invoke-static {}, Lcom/applovin/impl/sdk/n;->a()Z
 
     move-result v0
@@ -1749,7 +1761,7 @@
 
     invoke-virtual {v0, v2, v1}, Lcom/applovin/impl/sdk/n;->b(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 5
+    .line 8
     :cond_2
     new-instance v0, Lcom/applovin/impl/mediation/MaxErrorImpl;
 
@@ -1757,7 +1769,7 @@
 
     invoke-direct {v0, v2, v1}, Lcom/applovin/impl/mediation/MaxErrorImpl;-><init>(ILjava/lang/String;)V
 
-    .line 6
+    .line 9
     invoke-static {}, Lcom/applovin/impl/sdk/n;->a()Z
 
     move-result v1
@@ -1788,18 +1800,18 @@
 
     iget-object v5, p0, Lcom/applovin/impl/mediation/ads/a;->adListener:Lcom/applovin/mediation/MaxAdListener;
 
-    .line 7
-    invoke-static {v4, v5, v1, v2}, Lcom/applovin/impl/ru;->s(Ljava/lang/StringBuilder;Lcom/applovin/mediation/MaxAdListener;Lcom/applovin/impl/sdk/n;Ljava/lang/String;)V
+    .line 10
+    invoke-static {v4, v5, v1, v2}, Lcom/android/billingclient/api/a;->y(Ljava/lang/StringBuilder;Lcom/applovin/mediation/MaxAdListener;Lcom/applovin/impl/sdk/n;Ljava/lang/String;)V
 
+    .line 11
     :cond_3
     iget-object v1, p0, Lcom/applovin/impl/mediation/ads/a;->adListener:Lcom/applovin/mediation/MaxAdListener;
 
-    .line 8
     invoke-static {v1, p1, v0, v3}, Lcom/applovin/impl/fc;->a(Lcom/applovin/mediation/MaxAdListener;Lcom/applovin/mediation/MaxAd;Lcom/applovin/mediation/MaxError;Z)V
 
+    .line 12
     iget-object v1, p0, Lcom/applovin/impl/mediation/ads/a;->sdk:Lcom/applovin/impl/sdk/j;
 
-    .line 9
     invoke-virtual {v1}, Lcom/applovin/impl/sdk/j;->P()Lcom/applovin/impl/mediation/MediationServiceImpl;
 
     move-result-object v1
@@ -1808,32 +1820,32 @@
 
     return-void
 
-    .line 10
+    .line 13
     :cond_4
     invoke-direct {p0}, Lcom/applovin/impl/mediation/ads/MaxAdViewImpl;->g()V
 
-    .line 11
+    .line 14
     invoke-virtual {p0, p1}, Lcom/applovin/impl/mediation/ads/a;->a(Lcom/applovin/impl/fe;)V
 
-    .line 12
+    .line 15
     invoke-virtual {p1}, Lcom/applovin/impl/me;->m0()Z
 
     move-result v1
 
     if-eqz v1, :cond_5
 
+    .line 16
     iget-object v1, p0, Lcom/applovin/impl/mediation/ads/MaxAdViewImpl;->m:Lcom/applovin/impl/br;
 
-    .line 13
     invoke-virtual {v1, p1}, Lcom/applovin/impl/br;->a(Lcom/applovin/impl/me;)V
 
     :cond_5
     const/high16 v1, 0x60000
 
-    .line 14
+    .line 17
     invoke-virtual {v2, v1}, Landroid/view/ViewGroup;->setDescendantFocusability(I)V
 
-    .line 15
+    .line 18
     invoke-virtual {p1}, Lcom/applovin/impl/ge;->o0()J
 
     move-result-wide v4
@@ -1844,9 +1856,9 @@
 
     if-eqz v1, :cond_6
 
+    .line 19
     iget-object v1, p0, Lcom/applovin/impl/mediation/ads/MaxAdViewImpl;->d:Landroid/view/View;
 
-    .line 16
     invoke-virtual {p1}, Lcom/applovin/impl/ge;->o0()J
 
     move-result-wide v4
@@ -1857,6 +1869,7 @@
 
     goto :goto_1
 
+    .line 20
     :cond_6
     iget-wide v4, p0, Lcom/applovin/impl/mediation/ads/MaxAdViewImpl;->e:J
 
@@ -1864,56 +1877,57 @@
 
     if-eqz v1, :cond_7
 
+    .line 21
     iget-object v1, p0, Lcom/applovin/impl/mediation/ads/MaxAdViewImpl;->d:Landroid/view/View;
 
     long-to-int v5, v4
 
-    .line 17
     invoke-virtual {v1, v5}, Landroid/view/View;->setBackgroundColor(I)V
 
     goto :goto_1
 
+    .line 22
     :cond_7
     iget-object v1, p0, Lcom/applovin/impl/mediation/ads/MaxAdViewImpl;->d:Landroid/view/View;
 
     const/4 v4, 0x0
 
-    .line 18
     invoke-virtual {v1, v4}, Landroid/view/View;->setBackgroundColor(I)V
 
-    .line 19
+    .line 23
     :goto_1
     invoke-virtual {v2, v0}, Landroid/view/ViewGroup;->addView(Landroid/view/View;)V
 
-    .line 20
+    .line 24
     invoke-direct {p0, v0, p1}, Lcom/applovin/impl/mediation/ads/MaxAdViewImpl;->a(Landroid/view/View;Lcom/applovin/impl/ge;)V
 
+    .line 25
     iget-object v0, p0, Lcom/applovin/impl/mediation/ads/a;->sdk:Lcom/applovin/impl/sdk/j;
 
-    .line 21
     invoke-virtual {v0}, Lcom/applovin/impl/sdk/j;->v()Lcom/applovin/impl/x4;
 
     move-result-object v0
 
     invoke-virtual {v0, p1}, Lcom/applovin/impl/x4;->d(Ljava/lang/Object;)V
 
-    .line 22
+    .line 26
     invoke-direct {p0, p1}, Lcom/applovin/impl/mediation/ads/MaxAdViewImpl;->c(Lcom/applovin/impl/ge;)V
 
+    .line 27
     iget-object v0, p0, Lcom/applovin/impl/mediation/ads/MaxAdViewImpl;->n:Ljava/lang/Object;
 
-    .line 23
     monitor-enter v0
 
+    .line 28
     :try_start_0
     iput-object p1, p0, Lcom/applovin/impl/mediation/ads/MaxAdViewImpl;->p:Lcom/applovin/impl/ge;
 
-    .line 24
+    .line 29
     monitor-exit v0
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    .line 25
+    .line 30
     invoke-static {}, Lcom/applovin/impl/sdk/n;->a()Z
 
     move-result v0
@@ -1928,10 +1942,10 @@
 
     invoke-virtual {v0, v1, v2}, Lcom/applovin/impl/sdk/n;->a(Ljava/lang/String;Ljava/lang/String;)V
 
+    .line 31
     :cond_8
     iget-object v0, p0, Lcom/applovin/impl/mediation/ads/a;->sdk:Lcom/applovin/impl/sdk/j;
 
-    .line 26
     invoke-virtual {v0}, Lcom/applovin/impl/sdk/j;->P()Lcom/applovin/impl/mediation/MediationServiceImpl;
 
     move-result-object v0
@@ -1940,9 +1954,9 @@
 
     invoke-virtual {v0, p1, v1}, Lcom/applovin/impl/mediation/MediationServiceImpl;->processRawAdImpression(Lcom/applovin/impl/fe;Lcom/applovin/impl/mediation/ads/a$a;)V
 
+    .line 32
     iget-object v0, p0, Lcom/applovin/impl/mediation/ads/MaxAdViewImpl;->p:Lcom/applovin/impl/ge;
 
-    .line 27
     invoke-virtual {v0}, Lcom/applovin/impl/fe;->getAdReviewCreativeId()Ljava/lang/String;
 
     move-result-object v0
@@ -1953,11 +1967,11 @@
 
     if-eqz v0, :cond_9
 
+    .line 33
     iget-object v0, p0, Lcom/applovin/impl/mediation/ads/a;->adReviewListener:Lcom/applovin/mediation/MaxAdReviewListener;
 
     iget-object v1, p0, Lcom/applovin/impl/mediation/ads/MaxAdViewImpl;->p:Lcom/applovin/impl/ge;
 
-    .line 28
     invoke-virtual {v1}, Lcom/applovin/impl/fe;->getAdReviewCreativeId()Ljava/lang/String;
 
     move-result-object v1
@@ -1966,18 +1980,20 @@
 
     invoke-static {v0, v1, v2, v3}, Lcom/applovin/impl/fc;->a(Lcom/applovin/mediation/MaxAdReviewListener;Ljava/lang/String;Lcom/applovin/mediation/MaxAd;Z)V
 
-    .line 29
+    .line 34
     :cond_9
-    new-instance v0, Lcom/applovin/impl/mediation/ads/d;
+    new-instance v0, Lcom/applovin/impl/mediation/ads/c;
 
-    invoke-direct {v0, p0, p1, v3}, Lcom/applovin/impl/mediation/ads/d;-><init>(Lcom/applovin/impl/mediation/ads/MaxAdViewImpl;Lcom/applovin/impl/ge;I)V
+    const/4 v1, 0x0
 
-    .line 30
+    invoke-direct {v0, p0, p1, v1}, Lcom/applovin/impl/mediation/ads/c;-><init>(Lcom/applovin/impl/mediation/ads/MaxAdViewImpl;Lcom/applovin/impl/ge;I)V
+
+    .line 35
     invoke-virtual {p1}, Lcom/applovin/impl/ge;->q0()J
 
     move-result-wide v1
 
-    .line 31
+    .line 36
     invoke-static {v0, v1, v2}, Lcom/applovin/sdk/AppLovinSdkUtils;->runOnUiThreadDelayed(Ljava/lang/Runnable;J)V
 
     return-void
@@ -1985,7 +2001,7 @@
     :catchall_0
     move-exception p1
 
-    .line 32
+    .line 37
     :try_start_1
     monitor-exit v0
     :try_end_1
@@ -2006,7 +2022,7 @@
 .method public static synthetic b(Lcom/applovin/impl/mediation/ads/MaxAdViewImpl;Lcom/applovin/mediation/MaxAd;)V
     .locals 0
 
-    .line 36
+    .line 41
     invoke-direct {p0, p1}, Lcom/applovin/impl/mediation/ads/MaxAdViewImpl;->a(Lcom/applovin/mediation/MaxAd;)V
 
     return-void
@@ -2017,26 +2033,27 @@
 
     const/4 v0, 0x0
 
+    .line 42
     iput-boolean v0, p0, Lcom/applovin/impl/mediation/ads/MaxAdViewImpl;->t:Z
 
+    .line 43
     iget-object v1, p0, Lcom/applovin/impl/mediation/ads/MaxAdViewImpl;->o:Ljava/lang/Object;
 
-    .line 37
     monitor-enter v1
 
+    .line 44
     :try_start_0
     iget-object v2, p0, Lcom/applovin/impl/mediation/ads/MaxAdViewImpl;->s:Ljava/util/concurrent/atomic/AtomicBoolean;
 
     const/4 v3, 0x1
 
-    .line 38
     invoke-virtual {v2, v3, v0}, Ljava/util/concurrent/atomic/AtomicBoolean;->compareAndSet(ZZ)Z
 
     move-result v0
 
     if-nez v0, :cond_1
 
-    .line 39
+    .line 45
     invoke-static {}, Lcom/applovin/impl/sdk/n;->a()Z
 
     move-result v2
@@ -2058,7 +2075,7 @@
 
     goto :goto_1
 
-    .line 40
+    .line 46
     :cond_0
     :goto_0
     move-object v2, p1
@@ -2067,19 +2084,19 @@
 
     iput-object v2, p0, Lcom/applovin/impl/mediation/ads/MaxAdViewImpl;->f:Lcom/applovin/impl/ge;
 
+    .line 47
     iget-object v3, p0, Lcom/applovin/impl/mediation/ads/MaxAdViewImpl;->g:Ljava/lang/String;
 
-    .line 41
     invoke-virtual {v2, v3}, Lcom/applovin/impl/oe;->g(Ljava/lang/String;)V
 
+    .line 48
     iget-object v2, p0, Lcom/applovin/impl/mediation/ads/MaxAdViewImpl;->f:Lcom/applovin/impl/ge;
 
     iget-object v3, p0, Lcom/applovin/impl/mediation/ads/MaxAdViewImpl;->h:Ljava/lang/String;
 
-    .line 42
     invoke-virtual {v2, v3}, Lcom/applovin/impl/oe;->f(Ljava/lang/String;)V
 
-    .line 43
+    .line 49
     :cond_1
     monitor-exit v1
     :try_end_0
@@ -2087,7 +2104,7 @@
 
     if-eqz v0, :cond_3
 
-    .line 44
+    .line 50
     invoke-static {}, Lcom/applovin/impl/sdk/n;->a()Z
 
     move-result v0
@@ -2120,16 +2137,16 @@
 
     invoke-virtual {v0, v1, v2}, Lcom/applovin/impl/sdk/n;->a(Ljava/lang/String;Ljava/lang/String;)V
 
+    .line 51
     :cond_2
     iget-object v0, p0, Lcom/applovin/impl/mediation/ads/MaxAdViewImpl;->i:Lcom/applovin/impl/mediation/ads/MaxAdViewImpl$b;
 
-    .line 45
     invoke-virtual {v0, p1}, Lcom/applovin/impl/mediation/ads/MaxAdViewImpl$b;->onAdLoaded(Lcom/applovin/mediation/MaxAd;)V
 
     :cond_3
     return-void
 
-    .line 46
+    .line 52
     :goto_1
     :try_start_1
     monitor-exit v1
@@ -2142,6 +2159,7 @@
 .method private b()Z
     .locals 2
 
+    .line 53
     iget-boolean v0, p0, Lcom/applovin/impl/mediation/ads/MaxAdViewImpl;->x:Z
 
     if-eqz v0, :cond_0
@@ -2150,10 +2168,10 @@
 
     return v0
 
+    .line 54
     :cond_0
     iget-object v0, p0, Lcom/applovin/impl/mediation/ads/a;->sdk:Lcom/applovin/impl/sdk/j;
 
-    .line 47
     sget-object v1, Lcom/applovin/impl/ue;->c7:Lcom/applovin/impl/sj;
 
     invoke-virtual {v0, v1}, Lcom/applovin/impl/sdk/j;->a(Lcom/applovin/impl/sj;)Ljava/lang/Object;
@@ -2172,7 +2190,7 @@
 .method private synthetic c()V
     .locals 3
 
-    .line 29
+    .line 32
     invoke-static {}, Lcom/applovin/impl/sdk/n;->a()Z
 
     move-result v0
@@ -2187,7 +2205,7 @@
 
     invoke-virtual {v0, v1, v2}, Lcom/applovin/impl/sdk/n;->a(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 30
+    .line 33
     :cond_0
     sget-object v0, Lcom/applovin/impl/mediation/d$b;->c:Lcom/applovin/impl/mediation/d$b;
 
@@ -2201,16 +2219,16 @@
 .method private c(Lcom/applovin/impl/ge;)V
     .locals 6
 
+    .line 2
     iget-object v0, p0, Lcom/applovin/impl/mediation/ads/MaxAdViewImpl;->b:Lcom/applovin/mediation/ads/MaxAdView;
 
-    .line 2
     invoke-virtual {v0}, Landroid/view/View;->getHeight()I
 
     move-result v0
 
+    .line 3
     iget-object v1, p0, Lcom/applovin/impl/mediation/ads/MaxAdViewImpl;->b:Lcom/applovin/mediation/ads/MaxAdView;
 
-    .line 3
     invoke-virtual {v1}, Landroid/view/View;->getWidth()I
 
     move-result v1
@@ -2221,17 +2239,17 @@
 
     return-void
 
+    .line 4
     :cond_0
     iget-object v2, p0, Lcom/applovin/impl/mediation/ads/MaxAdViewImpl;->a:Landroid/content/Context;
 
-    .line 4
     invoke-static {v2, v0}, Lcom/applovin/sdk/AppLovinSdkUtils;->pxToDp(Landroid/content/Context;I)I
 
     move-result v0
 
+    .line 5
     iget-object v2, p0, Lcom/applovin/impl/mediation/ads/MaxAdViewImpl;->a:Landroid/content/Context;
 
-    .line 5
     invoke-static {v2, v1}, Lcom/applovin/sdk/AppLovinSdkUtils;->pxToDp(Landroid/content/Context;I)I
 
     move-result v1
@@ -2241,13 +2259,13 @@
 
     move-result-object p1
 
+    .line 7
     iget-boolean v2, p0, Lcom/applovin/impl/mediation/ads/MaxAdViewImpl;->A:Z
 
     if-eqz v2, :cond_1
 
     iget-object v2, p0, Lcom/applovin/impl/mediation/ads/MaxAdViewImpl;->b:Lcom/applovin/mediation/ads/MaxAdView;
 
-    .line 7
     invoke-virtual {v2}, Landroid/view/View;->getContext()Landroid/content/Context;
 
     move-result-object v2
@@ -2280,9 +2298,9 @@
 
     move-result p1
 
+    .line 9
     iget-object v3, p0, Lcom/applovin/impl/mediation/ads/MaxAdViewImpl;->a:Landroid/content/Context;
 
-    .line 9
     invoke-static {v3}, Lcom/applovin/impl/z3;->b(Landroid/content/Context;)Landroid/graphics/Point;
 
     move-result-object v3
@@ -2298,6 +2316,7 @@
 
     if-ge v1, p1, :cond_4
 
+    .line 11
     :cond_2
     const-string v3, "\n**************************************************\n`MaxAdView` size "
 
@@ -2305,11 +2324,12 @@
 
     const-string v5, " dp smaller than required "
 
-    .line 11
-    invoke-static {v3, v1, v4, v0, v5}, Landroid/support/v4/media/session/a;->L(Ljava/lang/String;ILjava/lang/String;ILjava/lang/String;)Ljava/lang/StringBuilder;
+    .line 12
+    invoke-static {v1, v0, v3, v4, v5}, Landroidx/appcompat/view/menu/F;->J(IILjava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object v0
 
+    .line 13
     iget-boolean v1, p0, Lcom/applovin/impl/mediation/ads/MaxAdViewImpl;->A:Z
 
     if-eqz v1, :cond_3
@@ -2324,17 +2344,18 @@
     :goto_2
     const-string v3, "size: "
 
-    .line 12
-    invoke-static {v0, v1, v3, p1, v4}, Landroidx/compose/foundation/text/modifiers/f;->E(Ljava/lang/StringBuilder;Ljava/lang/String;Ljava/lang/String;ILjava/lang/String;)V
+    .line 14
+    invoke-static {v0, v1, v3, p1, v4}, Landroidx/appcompat/view/menu/F;->Q(Ljava/lang/StringBuilder;Ljava/lang/String;Ljava/lang/String;ILjava/lang/String;)V
 
+    .line 15
     const-string p1, " dp\nSome mediated networks (e.g. Google Ad Manager) may not render correctly\n**************************************************\n"
 
-    .line 13
-    invoke-static {v0, v2, p1}, Lj0/d;->m(Ljava/lang/StringBuilder;ILjava/lang/String;)Ljava/lang/String;
+    .line 16
+    invoke-static {v2, p1, v0}, LB/u;->o(ILjava/lang/String;Ljava/lang/StringBuilder;)Ljava/lang/String;
 
     move-result-object p1
 
-    .line 14
+    .line 17
     invoke-static {}, Lcom/applovin/impl/sdk/n;->a()Z
 
     move-result v0
@@ -2363,7 +2384,7 @@
 .method public static synthetic c(Lcom/applovin/impl/mediation/ads/MaxAdViewImpl;)Z
     .locals 0
 
-    .line 28
+    .line 31
     iget-boolean p0, p0, Lcom/applovin/impl/mediation/ads/MaxAdViewImpl;->y:Z
 
     return p0
@@ -2372,7 +2393,7 @@
 .method public static synthetic d(Lcom/applovin/impl/mediation/ads/MaxAdViewImpl;)Lcom/applovin/impl/sdk/f;
     .locals 0
 
-    .line 2
+    .line 3
     iget-object p0, p0, Lcom/applovin/impl/mediation/ads/MaxAdViewImpl;->k:Lcom/applovin/impl/sdk/f;
 
     return-object p0
@@ -2381,7 +2402,7 @@
 .method private d()V
     .locals 4
 
-    .line 3
+    .line 4
     invoke-direct {p0}, Lcom/applovin/impl/mediation/ads/MaxAdViewImpl;->b()Z
 
     move-result v0
@@ -2390,7 +2411,7 @@
 
     return-void
 
-    .line 4
+    .line 5
     :cond_0
     invoke-static {}, Lcom/applovin/impl/sdk/n;->a()Z
 
@@ -2409,31 +2430,34 @@
     :cond_1
     const/4 v0, 0x1
 
+    .line 6
     iput-boolean v0, p0, Lcom/applovin/impl/mediation/ads/MaxAdViewImpl;->t:Z
 
-    .line 5
-    new-instance v1, Lcom/applovin/impl/jn;
+    .line 7
+    new-instance v0, Lcom/applovin/impl/jn;
 
-    iget-object v2, p0, Lcom/applovin/impl/mediation/ads/a;->sdk:Lcom/applovin/impl/sdk/j;
+    iget-object v1, p0, Lcom/applovin/impl/mediation/ads/a;->sdk:Lcom/applovin/impl/sdk/j;
 
-    new-instance v3, Lcom/applovin/impl/mediation/ads/l;
+    new-instance v2, Lcom/applovin/impl/mediation/ads/m;
 
-    invoke-direct {v3, p0, v0}, Lcom/applovin/impl/mediation/ads/l;-><init>(Ljava/lang/Object;I)V
+    const/4 v3, 0x1
 
-    const-string v0, "loadMaxAdForPrecacheRequest"
+    invoke-direct {v2, p0, v3}, Lcom/applovin/impl/mediation/ads/m;-><init>(Ljava/lang/Object;I)V
 
-    invoke-direct {v1, v2, v0, v3}, Lcom/applovin/impl/jn;-><init>(Lcom/applovin/impl/sdk/j;Ljava/lang/String;Ljava/lang/Runnable;)V
+    const-string v3, "loadMaxAdForPrecacheRequest"
 
-    iget-object v0, p0, Lcom/applovin/impl/mediation/ads/a;->sdk:Lcom/applovin/impl/sdk/j;
+    invoke-direct {v0, v1, v3, v2}, Lcom/applovin/impl/jn;-><init>(Lcom/applovin/impl/sdk/j;Ljava/lang/String;Ljava/lang/Runnable;)V
 
-    .line 6
-    invoke-virtual {v0}, Lcom/applovin/impl/sdk/j;->i0()Lcom/applovin/impl/tm;
+    .line 8
+    iget-object v1, p0, Lcom/applovin/impl/mediation/ads/a;->sdk:Lcom/applovin/impl/sdk/j;
 
-    move-result-object v0
+    invoke-virtual {v1}, Lcom/applovin/impl/sdk/j;->i0()Lcom/applovin/impl/tm;
+
+    move-result-object v1
 
     sget-object v2, Lcom/applovin/impl/tm$b;->c:Lcom/applovin/impl/tm$b;
 
-    invoke-virtual {v0, v1, v2}, Lcom/applovin/impl/tm;->a(Lcom/applovin/impl/yl;Lcom/applovin/impl/tm$b;)V
+    invoke-virtual {v1, v0, v2}, Lcom/applovin/impl/tm;->a(Lcom/applovin/impl/yl;Lcom/applovin/impl/tm$b;)V
 
     return-void
 .end method
@@ -2441,14 +2465,23 @@
 .method private d(Lcom/applovin/impl/ge;)V
     .locals 2
 
-    .line 1
-    new-instance v0, Lcom/applovin/impl/mediation/ads/d;
+    .line 2
+    new-instance v0, Lcom/applovin/impl/mediation/ads/c;
 
-    const/4 v1, 0x0
+    const/4 v1, 0x1
 
-    invoke-direct {v0, p0, p1, v1}, Lcom/applovin/impl/mediation/ads/d;-><init>(Lcom/applovin/impl/mediation/ads/MaxAdViewImpl;Lcom/applovin/impl/ge;I)V
+    invoke-direct {v0, p0, p1, v1}, Lcom/applovin/impl/mediation/ads/c;-><init>(Lcom/applovin/impl/mediation/ads/MaxAdViewImpl;Lcom/applovin/impl/ge;I)V
 
     invoke-static {v0}, Lcom/applovin/sdk/AppLovinSdkUtils;->runOnUiThread(Ljava/lang/Runnable;)V
+
+    return-void
+.end method
+
+.method public static synthetic d(Lcom/applovin/impl/mediation/ads/MaxAdViewImpl;Lcom/applovin/impl/mediation/ads/a$a;Lcom/applovin/impl/mediation/d$b;)V
+    .locals 0
+
+    .line 1
+    invoke-direct {p0, p1, p2}, Lcom/applovin/impl/mediation/ads/MaxAdViewImpl;->a(Lcom/applovin/impl/mediation/ads/a$a;Lcom/applovin/impl/mediation/d$b;)V
 
     return-void
 .end method
@@ -2456,23 +2489,24 @@
 .method private e()V
     .locals 3
 
+    .line 2
     iget-object v0, p0, Lcom/applovin/impl/mediation/ads/MaxAdViewImpl;->s:Ljava/util/concurrent/atomic/AtomicBoolean;
 
     const/4 v1, 0x0
 
-    .line 2
     invoke-virtual {v0, v1}, Ljava/util/concurrent/atomic/AtomicBoolean;->set(Z)V
 
+    .line 3
     iget-object v0, p0, Lcom/applovin/impl/mediation/ads/MaxAdViewImpl;->f:Lcom/applovin/impl/ge;
 
     if-eqz v0, :cond_0
 
-    .line 3
+    .line 4
     invoke-direct {p0}, Lcom/applovin/impl/mediation/ads/MaxAdViewImpl;->h()V
 
     goto :goto_0
 
-    .line 4
+    .line 5
     :cond_0
     invoke-direct {p0}, Lcom/applovin/impl/mediation/ads/MaxAdViewImpl;->b()Z
 
@@ -2480,11 +2514,12 @@
 
     if-eqz v0, :cond_4
 
+    .line 6
     iget-boolean v0, p0, Lcom/applovin/impl/mediation/ads/MaxAdViewImpl;->q:Z
 
     if-eqz v0, :cond_2
 
-    .line 5
+    .line 7
     invoke-static {}, Lcom/applovin/impl/sdk/n;->a()Z
 
     move-result v0
@@ -2499,7 +2534,7 @@
 
     invoke-virtual {v0, v1, v2}, Lcom/applovin/impl/sdk/n;->a(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 6
+    .line 8
     :cond_1
     sget-object v0, Lcom/applovin/impl/mediation/d$b;->d:Lcom/applovin/impl/mediation/d$b;
 
@@ -2507,7 +2542,7 @@
 
     goto :goto_0
 
-    .line 7
+    .line 9
     :cond_2
     invoke-static {}, Lcom/applovin/impl/sdk/n;->a()Z
 
@@ -2523,17 +2558,17 @@
 
     invoke-virtual {v0, v1, v2}, Lcom/applovin/impl/sdk/n;->b(Ljava/lang/String;Ljava/lang/String;)V
 
+    .line 10
     :cond_3
     iget-object v0, p0, Lcom/applovin/impl/mediation/ads/MaxAdViewImpl;->s:Ljava/util/concurrent/atomic/AtomicBoolean;
 
     const/4 v1, 0x1
 
-    .line 8
     invoke-virtual {v0, v1}, Ljava/util/concurrent/atomic/AtomicBoolean;->set(Z)V
 
     goto :goto_0
 
-    .line 9
+    .line 11
     :cond_4
     invoke-static {}, Lcom/applovin/impl/sdk/n;->a()Z
 
@@ -2549,7 +2584,7 @@
 
     invoke-virtual {v0, v1, v2}, Lcom/applovin/impl/sdk/n;->a(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 10
+    .line 12
     :cond_5
     sget-object v0, Lcom/applovin/impl/mediation/d$b;->d:Lcom/applovin/impl/mediation/d$b;
 
@@ -2582,19 +2617,20 @@
 .method private f()V
     .locals 7
 
+    .line 2
     iget-object v0, p0, Lcom/applovin/impl/mediation/ads/MaxAdViewImpl;->o:Ljava/lang/Object;
 
-    .line 2
     monitor-enter v0
 
+    .line 3
     :try_start_0
     iget-object v1, p0, Lcom/applovin/impl/mediation/ads/MaxAdViewImpl;->s:Ljava/util/concurrent/atomic/AtomicBoolean;
 
     const/4 v2, 0x0
 
-    .line 3
     invoke-virtual {v1, v2}, Ljava/util/concurrent/atomic/AtomicBoolean;->set(Z)V
 
+    .line 4
     iget-object v1, p0, Lcom/applovin/impl/mediation/ads/MaxAdViewImpl;->f:Lcom/applovin/impl/ge;
 
     const/4 v3, 0x1
@@ -2611,18 +2647,19 @@
     :goto_0
     if-nez v1, :cond_5
 
-    .line 4
+    .line 5
     invoke-direct {p0}, Lcom/applovin/impl/mediation/ads/MaxAdViewImpl;->b()Z
 
     move-result v4
 
     if-eqz v4, :cond_3
 
+    .line 6
     iget-boolean v4, p0, Lcom/applovin/impl/mediation/ads/MaxAdViewImpl;->q:Z
 
     if-eqz v4, :cond_1
 
-    .line 5
+    .line 7
     invoke-static {}, Lcom/applovin/impl/sdk/n;->a()Z
 
     move-result v2
@@ -2644,7 +2681,7 @@
 
     goto :goto_4
 
-    .line 6
+    .line 8
     :cond_1
     invoke-static {}, Lcom/applovin/impl/sdk/n;->a()Z
 
@@ -2660,15 +2697,15 @@
 
     invoke-virtual {v4, v5, v6}, Lcom/applovin/impl/sdk/n;->b(Ljava/lang/String;Ljava/lang/String;)V
 
+    .line 9
     :cond_2
     iget-object v4, p0, Lcom/applovin/impl/mediation/ads/MaxAdViewImpl;->s:Ljava/util/concurrent/atomic/AtomicBoolean;
 
-    .line 7
     invoke-virtual {v4, v3}, Ljava/util/concurrent/atomic/AtomicBoolean;->set(Z)V
 
     goto :goto_2
 
-    .line 8
+    .line 10
     :cond_3
     invoke-static {}, Lcom/applovin/impl/sdk/n;->a()Z
 
@@ -2688,7 +2725,7 @@
     :goto_1
     const/4 v2, 0x1
 
-    .line 9
+    .line 11
     :cond_5
     :goto_2
     monitor-exit v0
@@ -2697,7 +2734,7 @@
 
     if-eqz v1, :cond_6
 
-    .line 10
+    .line 12
     invoke-direct {p0}, Lcom/applovin/impl/mediation/ads/MaxAdViewImpl;->h()V
 
     goto :goto_3
@@ -2705,7 +2742,7 @@
     :cond_6
     if-eqz v2, :cond_7
 
-    .line 11
+    .line 13
     sget-object v0, Lcom/applovin/impl/mediation/d$b;->d:Lcom/applovin/impl/mediation/d$b;
 
     invoke-virtual {p0, v0}, Lcom/applovin/impl/mediation/ads/MaxAdViewImpl;->loadAd(Lcom/applovin/impl/mediation/d$b;)V
@@ -2714,7 +2751,7 @@
     :goto_3
     return-void
 
-    .line 12
+    .line 14
     :goto_4
     :try_start_1
     monitor-exit v0
@@ -2736,39 +2773,41 @@
 .method private g()V
     .locals 2
 
+    .line 2
     iget-object v0, p0, Lcom/applovin/impl/mediation/ads/MaxAdViewImpl;->b:Lcom/applovin/mediation/ads/MaxAdView;
 
     if-eqz v0, :cond_0
 
+    .line 3
     iget-object v1, p0, Lcom/applovin/impl/mediation/ads/MaxAdViewImpl;->d:Landroid/view/View;
 
-    .line 2
     invoke-static {v0, v1}, Lcom/applovin/impl/e0;->a(Landroid/view/ViewGroup;Landroid/view/View;)V
 
+    .line 4
     :cond_0
     iget-object v0, p0, Lcom/applovin/impl/mediation/ads/MaxAdViewImpl;->m:Lcom/applovin/impl/br;
 
-    .line 3
     invoke-virtual {v0}, Lcom/applovin/impl/br;->b()V
 
+    .line 5
     iget-object v0, p0, Lcom/applovin/impl/mediation/ads/MaxAdViewImpl;->n:Ljava/lang/Object;
 
-    .line 4
     monitor-enter v0
 
+    .line 6
     :try_start_0
     iget-object v1, p0, Lcom/applovin/impl/mediation/ads/MaxAdViewImpl;->p:Lcom/applovin/impl/ge;
 
-    .line 5
+    .line 7
     monitor-exit v0
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
     if-eqz v1, :cond_1
 
+    .line 8
     iget-object v0, p0, Lcom/applovin/impl/mediation/ads/a;->sdk:Lcom/applovin/impl/sdk/j;
 
-    .line 6
     invoke-virtual {v0}, Lcom/applovin/impl/sdk/j;->P()Lcom/applovin/impl/mediation/MediationServiceImpl;
 
     move-result-object v0
@@ -2781,7 +2820,7 @@
     :catchall_0
     move-exception v1
 
-    .line 7
+    .line 9
     :try_start_1
     monitor-exit v0
     :try_end_1
@@ -2824,16 +2863,17 @@
 
     invoke-virtual {v0, v1, v2}, Lcom/applovin/impl/sdk/n;->a(Ljava/lang/String;Ljava/lang/String;)V
 
+    .line 3
     :cond_0
     iget-object v0, p0, Lcom/applovin/impl/mediation/ads/MaxAdViewImpl;->i:Lcom/applovin/impl/mediation/ads/MaxAdViewImpl$b;
 
     iget-object v1, p0, Lcom/applovin/impl/mediation/ads/MaxAdViewImpl;->f:Lcom/applovin/impl/ge;
 
-    .line 3
     invoke-virtual {v0, v1}, Lcom/applovin/impl/mediation/ads/MaxAdViewImpl$b;->onAdLoaded(Lcom/applovin/mediation/MaxAd;)V
 
     const/4 v0, 0x0
 
+    .line 4
     iput-object v0, p0, Lcom/applovin/impl/mediation/ads/MaxAdViewImpl;->f:Lcom/applovin/impl/ge;
 
     return-void
@@ -2853,15 +2893,6 @@
 
     .line 1
     invoke-direct {p0}, Lcom/applovin/impl/mediation/ads/MaxAdViewImpl;->c()V
-
-    return-void
-.end method
-
-.method public static synthetic j(Lcom/applovin/impl/mediation/ads/MaxAdViewImpl;Lcom/applovin/impl/mediation/ads/a$a;Lcom/applovin/impl/mediation/d$b;)V
-    .locals 0
-
-    .line 1
-    invoke-direct {p0, p1, p2}, Lcom/applovin/impl/mediation/ads/MaxAdViewImpl;->a(Lcom/applovin/impl/mediation/ads/a$a;Lcom/applovin/impl/mediation/d$b;)V
 
     return-void
 .end method
@@ -3002,16 +3033,22 @@
 .method public getAdFormat()Lcom/applovin/mediation/MaxAdFormat;
     .locals 1
 
+    .line 1
     iget-object v0, p0, Lcom/applovin/impl/mediation/ads/a;->adFormat:Lcom/applovin/mediation/MaxAdFormat;
 
+    .line 2
+    .line 3
     return-object v0
 .end method
 
 .method public getPlacement()Ljava/lang/String;
     .locals 1
 
+    .line 1
     iget-object v0, p0, Lcom/applovin/impl/mediation/ads/MaxAdViewImpl;->g:Ljava/lang/String;
 
+    .line 2
+    .line 3
     return-object v0
 .end method
 
@@ -3066,6 +3103,7 @@
 
     invoke-virtual {v0, v1, v2}, Lcom/applovin/impl/sdk/n;->a(Ljava/lang/String;Ljava/lang/String;)V
 
+    .line 3
     :cond_0
     iget-boolean v0, p0, Lcom/applovin/impl/mediation/ads/MaxAdViewImpl;->v:Z
 
@@ -3075,7 +3113,6 @@
 
     iget-object v0, p0, Lcom/applovin/impl/mediation/ads/a;->sdk:Lcom/applovin/impl/sdk/j;
 
-    .line 3
     sget-object v2, Lcom/applovin/impl/ue;->W6:Lcom/applovin/impl/sj;
 
     invoke-virtual {v0, v2}, Lcom/applovin/impl/sdk/j;->a(Lcom/applovin/impl/sj;)Ljava/lang/Object;
@@ -3104,9 +3141,9 @@
     :goto_1
     if-eqz v0, :cond_3
 
+    .line 4
     iget-object v2, p0, Lcom/applovin/impl/mediation/ads/MaxAdViewImpl;->k:Lcom/applovin/impl/sdk/f;
 
-    .line 4
     invoke-virtual {v2}, Lcom/applovin/impl/sdk/f;->g()Z
 
     move-result v2
@@ -3121,9 +3158,9 @@
 
     if-eqz v2, :cond_3
 
+    .line 5
     iget-object p1, p0, Lcom/applovin/impl/mediation/ads/a;->tag:Ljava/lang/String;
 
-    .line 5
     new-instance v0, Ljava/lang/StringBuilder;
 
     const-string v1, "Unable to load a new ad. An ad refresh has already been scheduled in "
@@ -3163,11 +3200,12 @@
 
     if-eqz v0, :cond_9
 
+    .line 8
     iget-object v0, p0, Lcom/applovin/impl/mediation/ads/MaxAdViewImpl;->f:Lcom/applovin/impl/ge;
 
     if-eqz v0, :cond_5
 
-    .line 8
+    .line 9
     invoke-static {}, Lcom/applovin/impl/sdk/n;->a()Z
 
     move-result p1
@@ -3182,18 +3220,19 @@
 
     invoke-virtual {p1, v0, v1}, Lcom/applovin/impl/sdk/n;->a(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 9
+    .line 10
     :cond_4
     invoke-direct {p0}, Lcom/applovin/impl/mediation/ads/MaxAdViewImpl;->h()V
 
     goto :goto_2
 
+    .line 11
     :cond_5
     iget-boolean v0, p0, Lcom/applovin/impl/mediation/ads/MaxAdViewImpl;->t:Z
 
     if-eqz v0, :cond_7
 
-    .line 10
+    .line 12
     invoke-static {}, Lcom/applovin/impl/sdk/n;->a()Z
 
     move-result p1
@@ -3208,15 +3247,15 @@
 
     invoke-virtual {p1, v0, v2}, Lcom/applovin/impl/sdk/n;->a(Ljava/lang/String;Ljava/lang/String;)V
 
+    .line 13
     :cond_6
     iget-object p1, p0, Lcom/applovin/impl/mediation/ads/MaxAdViewImpl;->s:Ljava/util/concurrent/atomic/AtomicBoolean;
 
-    .line 11
     invoke-virtual {p1, v1}, Ljava/util/concurrent/atomic/AtomicBoolean;->set(Z)V
 
     goto :goto_2
 
-    .line 12
+    .line 14
     :cond_7
     invoke-static {}, Lcom/applovin/impl/sdk/n;->a()Z
 
@@ -3230,15 +3269,15 @@
 
     invoke-virtual {v0, v1, v2}, Lcom/applovin/impl/sdk/n;->a(Ljava/lang/String;Ljava/lang/String;)V
 
+    .line 15
     :cond_8
     iget-object v0, p0, Lcom/applovin/impl/mediation/ads/MaxAdViewImpl;->i:Lcom/applovin/impl/mediation/ads/MaxAdViewImpl$b;
 
-    .line 13
     invoke-direct {p0, p1, v0}, Lcom/applovin/impl/mediation/ads/MaxAdViewImpl;->a(Lcom/applovin/impl/mediation/d$b;Lcom/applovin/impl/mediation/ads/a$a;)V
 
     goto :goto_2
 
-    .line 14
+    .line 16
     :cond_9
     invoke-static {}, Lcom/applovin/impl/sdk/n;->a()Z
 
@@ -3252,10 +3291,10 @@
 
     invoke-virtual {v0, v1, v2}, Lcom/applovin/impl/sdk/n;->a(Ljava/lang/String;Ljava/lang/String;)V
 
+    .line 17
     :cond_a
     iget-object v0, p0, Lcom/applovin/impl/mediation/ads/MaxAdViewImpl;->i:Lcom/applovin/impl/mediation/ads/MaxAdViewImpl$b;
 
-    .line 15
     invoke-direct {p0, p1, v0}, Lcom/applovin/impl/mediation/ads/MaxAdViewImpl;->a(Lcom/applovin/impl/mediation/d$b;Lcom/applovin/impl/mediation/ads/a$a;)V
 
     :goto_2
@@ -3643,7 +3682,7 @@
 
     .line 18
     .line 19
-    invoke-static {v2, p1, v3}, Landroid/support/v4/media/session/a;->M(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-static {v2, p1, v3}, LB/u;->A(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     .line 20
     .line 21
@@ -3756,7 +3795,7 @@
 
     .line 18
     .line 19
-    invoke-static {v2, p1, v3}, Landroid/support/v4/media/session/a;->M(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-static {v2, p1, v3}, LB/u;->A(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     .line 20
     .line 21
@@ -3806,10 +3845,14 @@
 .method public setPublisherBackgroundColor(I)V
     .locals 2
 
+    .line 1
     int-to-long v0, p1
 
+    .line 2
     iput-wide v0, p0, Lcom/applovin/impl/mediation/ads/MaxAdViewImpl;->e:J
 
+    .line 3
+    .line 4
     return-void
 .end method
 
@@ -4208,7 +4251,7 @@
 
     .line 39
     .line 40
-    invoke-static {v0, v1, v2}, Landroid/support/v4/media/session/a;->J(Ljava/lang/StringBuilder;ZC)Ljava/lang/String;
+    invoke-static {v0, v1, v2}, Landroidx/appcompat/view/menu/F;->I(Ljava/lang/StringBuilder;ZC)Ljava/lang/String;
 
     .line 41
     .line 42

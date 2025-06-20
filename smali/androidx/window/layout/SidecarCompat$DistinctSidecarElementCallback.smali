@@ -9,20 +9,22 @@
 # annotations
 .annotation runtime Lkotlin/Metadata;
     d1 = {
-        "\u0000 \n\u0000\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0008\u0003\u0008\u0002\u0018\u00002\u00020\u0001J\u0010\u0010\u0005\u001a\u00020\u00042\u0006\u0010\u0003\u001a\u00020\u0002H\u0016J\u0018\u0010\n\u001a\u00020\u00042\u0006\u0010\u0007\u001a\u00020\u00062\u0006\u0010\t\u001a\u00020\u0008H\u0016\u00a8\u0006\u000b"
+        "\u0000\"\n\u0000\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0008\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0008\u0004\u0008\u0002\u0018\u00002\u00020\u0001J\u0017\u0010\u0005\u001a\u00020\u00042\u0006\u0010\u0003\u001a\u00020\u0002H\u0016\u00a2\u0006\u0004\u0008\u0005\u0010\u0006J\u001f\u0010\u000b\u001a\u00020\u00042\u0006\u0010\u0008\u001a\u00020\u00072\u0006\u0010\n\u001a\u00020\tH\u0016\u00a2\u0006\u0004\u0008\u000b\u0010\u000c\u00a8\u0006\r"
     }
     d2 = {
         "androidx/window/layout/SidecarCompat$DistinctSidecarElementCallback",
         "Landroidx/window/sidecar/SidecarInterface$SidecarCallback;",
         "Landroidx/window/sidecar/SidecarDeviceState;",
         "newDeviceState",
-        "Lqh/r;",
+        "LX9/j;",
         "onDeviceStateChanged",
+        "(Landroidx/window/sidecar/SidecarDeviceState;)V",
         "Landroid/os/IBinder;",
         "token",
         "Landroidx/window/sidecar/SidecarWindowLayoutInfo;",
         "newLayout",
         "onWindowLayoutChanged",
+        "(Landroid/os/IBinder;Landroidx/window/sidecar/SidecarWindowLayoutInfo;)V",
         "window_release"
     }
     k = 0x1
@@ -31,11 +33,12 @@
         0x6,
         0x0
     }
+    xi = 0x30
 .end annotation
 
 
 # instance fields
-.field public final a:Landroidx/window/layout/o;
+.field public final a:Landroidx/window/layout/i;
 
 .field public final b:Landroidx/window/sidecar/SidecarInterface$SidecarCallback;
 
@@ -47,7 +50,7 @@
 
 
 # direct methods
-.method public constructor <init>(Landroidx/window/layout/o;Landroidx/window/sidecar/SidecarInterface$SidecarCallback;)V
+.method public constructor <init>(Landroidx/window/layout/i;Landroidx/window/sidecar/SidecarInterface$SidecarCallback;)V
     .locals 0
 
     .line 1
@@ -56,7 +59,7 @@
     .line 2
     .line 3
     .line 4
-    iput-object p1, p0, Landroidx/window/layout/SidecarCompat$DistinctSidecarElementCallback;->a:Landroidx/window/layout/o;
+    iput-object p1, p0, Landroidx/window/layout/SidecarCompat$DistinctSidecarElementCallback;->a:Landroidx/window/layout/i;
 
     .line 5
     .line 6
@@ -109,7 +112,7 @@
     .line 5
     .line 6
     :try_start_0
-    iget-object v1, p0, Landroidx/window/layout/SidecarCompat$DistinctSidecarElementCallback;->a:Landroidx/window/layout/o;
+    iget-object v1, p0, Landroidx/window/layout/SidecarCompat$DistinctSidecarElementCallback;->a:Landroidx/window/layout/i;
 
     .line 7
     .line 8
@@ -122,7 +125,7 @@
     .line 11
     .line 12
     .line 13
-    invoke-static {v2, p1}, Landroidx/window/layout/o;->a(Landroidx/window/sidecar/SidecarDeviceState;Landroidx/window/sidecar/SidecarDeviceState;)Z
+    invoke-static {v2, p1}, Landroidx/window/layout/i;->a(Landroidx/window/sidecar/SidecarDeviceState;Landroidx/window/sidecar/SidecarDeviceState;)Z
 
     .line 14
     .line 15
@@ -209,7 +212,7 @@
 
     .line 11
     .line 12
-    iget-object v2, p0, Landroidx/window/layout/SidecarCompat$DistinctSidecarElementCallback;->a:Landroidx/window/layout/o;
+    iget-object v2, p0, Landroidx/window/layout/SidecarCompat$DistinctSidecarElementCallback;->a:Landroidx/window/layout/i;
 
     .line 13
     .line 14
@@ -218,7 +221,7 @@
     .line 15
     .line 16
     .line 17
-    invoke-static {v1, p2}, Landroidx/window/layout/o;->d(Landroidx/window/sidecar/SidecarWindowLayoutInfo;Landroidx/window/sidecar/SidecarWindowLayoutInfo;)Z
+    invoke-static {v1, p2}, Landroidx/window/layout/i;->d(Landroidx/window/sidecar/SidecarWindowLayoutInfo;Landroidx/window/sidecar/SidecarWindowLayoutInfo;)Z
 
     .line 18
     .line 19

@@ -16,4 +16,8 @@
 
 # virtual methods
 .method public abstract onCompleted(Lcom/applovin/sdk/AppLovinCmpError;)V
+    .param p1    # Lcom/applovin/sdk/AppLovinCmpError;
+        .annotation build Landroidx/annotation/Nullable;
+        .end annotation
+    .end param
 .end method

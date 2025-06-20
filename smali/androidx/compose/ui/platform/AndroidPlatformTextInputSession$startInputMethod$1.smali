@@ -4,6 +4,15 @@
 
 
 # annotations
+.annotation runtime Lca/c;
+    c = "androidx.compose.ui.platform.AndroidPlatformTextInputSession"
+    f = "AndroidPlatformTextInputSession.android.kt"
+    l = {
+        0x49
+    }
+    m = "startInputMethod"
+.end annotation
+
 .annotation runtime Lkotlin/Metadata;
     k = 0x3
     mv = {
@@ -14,31 +23,22 @@
     xi = 0x30
 .end annotation
 
-.annotation runtime Lth/c;
-    c = "androidx.compose.ui.platform.AndroidPlatformTextInputSession"
-    f = "AndroidPlatformTextInputSession.android.kt"
-    l = {
-        0x49
-    }
-    m = "startInputMethod"
-.end annotation
-
 
 # instance fields
 .field label:I
 
 .field synthetic result:Ljava/lang/Object;
 
-.field final synthetic this$0:Landroidx/compose/ui/platform/r0;
+.field final synthetic this$0:Landroidx/compose/ui/platform/I;
 
 
 # direct methods
-.method public constructor <init>(Landroidx/compose/ui/platform/r0;Lkotlin/coroutines/Continuation;)V
+.method public constructor <init>(Landroidx/compose/ui/platform/I;Lkotlin/coroutines/Continuation;)V
     .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
-            "Landroidx/compose/ui/platform/r0;",
+            "Landroidx/compose/ui/platform/I;",
             "Lkotlin/coroutines/Continuation<",
             "-",
             "Landroidx/compose/ui/platform/AndroidPlatformTextInputSession$startInputMethod$1;",
@@ -46,7 +46,7 @@
         }
     .end annotation
 
-    iput-object p1, p0, Landroidx/compose/ui/platform/AndroidPlatformTextInputSession$startInputMethod$1;->this$0:Landroidx/compose/ui/platform/r0;
+    iput-object p1, p0, Landroidx/compose/ui/platform/AndroidPlatformTextInputSession$startInputMethod$1;->this$0:Landroidx/compose/ui/platform/I;
 
     invoke-direct {p0, p2}, Lkotlin/coroutines/jvm/internal/ContinuationImpl;-><init>(Lkotlin/coroutines/Continuation;)V
 
@@ -68,11 +68,11 @@
 
     iput p1, p0, Landroidx/compose/ui/platform/AndroidPlatformTextInputSession$startInputMethod$1;->label:I
 
-    iget-object p1, p0, Landroidx/compose/ui/platform/AndroidPlatformTextInputSession$startInputMethod$1;->this$0:Landroidx/compose/ui/platform/r0;
+    iget-object p1, p0, Landroidx/compose/ui/platform/AndroidPlatformTextInputSession$startInputMethod$1;->this$0:Landroidx/compose/ui/platform/I;
 
     const/4 v0, 0x0
 
-    invoke-virtual {p1, v0, p0}, Landroidx/compose/ui/platform/r0;->a(Landroidx/compose/foundation/text/input/internal/v;Lkotlin/coroutines/Continuation;)Lkotlin/coroutines/intrinsics/CoroutineSingletons;
+    invoke-virtual {p1, v0, p0}, Landroidx/compose/ui/platform/I;->a(Landroidx/compose/foundation/text/input/internal/u;Lkotlin/coroutines/jvm/internal/ContinuationImpl;)Lkotlin/coroutines/intrinsics/CoroutineSingletons;
 
     move-result-object p1
 

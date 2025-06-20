@@ -4,6 +4,16 @@
 
 
 # annotations
+.annotation runtime Lca/c;
+    c = "androidx.paging.CachedPageEventFlow$job$1$1"
+    f = "CachedPageEventFlow.kt"
+    l = {
+        0x4d,
+        0x4e
+    }
+    m = "emit"
+.end annotation
+
 .annotation runtime Lkotlin/Metadata;
     k = 0x3
     mv = {
@@ -12,16 +22,6 @@
         0x0
     }
     xi = 0x30
-.end annotation
-
-.annotation runtime Lth/c;
-    c = "androidx.paging.CachedPageEventFlow$job$1$1"
-    f = "CachedPageEventFlow.kt"
-    l = {
-        0x4d,
-        0x4e
-    }
-    m = "emit"
 .end annotation
 
 
@@ -83,7 +83,7 @@
 
     const/4 v0, 0x0
 
-    invoke-virtual {p1, v0, p0}, Landroidx/paging/c;->a(Lkotlin/collections/y;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
+    invoke-virtual {p1, v0, p0}, Landroidx/paging/c;->a(LY9/z;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
 
     move-result-object p1
 

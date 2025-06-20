@@ -17,40 +17,35 @@
     .locals 0
 
     .line 1
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
-
-    .line 2
-    .line 3
-    .line 4
     iput p2, p0, Lcom/applovin/exoplayer2/ui/l;->b:I
 
-    .line 5
-    .line 6
     iput-object p1, p0, Lcom/applovin/exoplayer2/ui/l;->c:Lcom/applovin/exoplayer2/ui/d;
 
-    .line 7
-    .line 8
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
     return-void
 .end method
 
 
 # virtual methods
 .method public final run()V
-    .locals 2
+    .locals 1
 
     .line 1
     iget v0, p0, Lcom/applovin/exoplayer2/ui/l;->b:I
 
-    iget-object v1, p0, Lcom/applovin/exoplayer2/ui/l;->c:Lcom/applovin/exoplayer2/ui/d;
-
     packed-switch v0, :pswitch_data_0
 
-    invoke-virtual {v1}, Lcom/applovin/exoplayer2/ui/d;->a()V
+    iget-object v0, p0, Lcom/applovin/exoplayer2/ui/l;->c:Lcom/applovin/exoplayer2/ui/d;
+
+    invoke-virtual {v0}, Lcom/applovin/exoplayer2/ui/d;->a()V
 
     return-void
 
     :pswitch_0
-    invoke-static {v1}, Lcom/applovin/exoplayer2/ui/d;->u(Lcom/applovin/exoplayer2/ui/d;)V
+    iget-object v0, p0, Lcom/applovin/exoplayer2/ui/l;->c:Lcom/applovin/exoplayer2/ui/d;
+
+    invoke-static {v0}, Lcom/applovin/exoplayer2/ui/d;->u(Lcom/applovin/exoplayer2/ui/d;)V
 
     return-void
 

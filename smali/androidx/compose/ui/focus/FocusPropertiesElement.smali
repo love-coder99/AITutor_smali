@@ -1,12 +1,12 @@
 .class final Landroidx/compose/ui/focus/FocusPropertiesElement;
-.super Landroidx/compose/ui/node/w0;
+.super Landroidx/compose/ui/node/V;
 .source "SourceFile"
 
 
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
-        "Landroidx/compose/ui/node/w0;"
+        "Landroidx/compose/ui/node/V;"
     }
 .end annotation
 
@@ -16,7 +16,7 @@
     }
     d2 = {
         "Landroidx/compose/ui/focus/FocusPropertiesElement;",
-        "Landroidx/compose/ui/node/w0;",
+        "Landroidx/compose/ui/node/V;",
         "Landroidx/compose/ui/focus/p;",
         "ui_release"
     }
@@ -26,11 +26,12 @@
         0x8,
         0x0
     }
+    xi = 0x30
 .end annotation
 
 
 # instance fields
-.field public final c:Landroidx/compose/ui/focus/n;
+.field public final a:Landroidx/compose/ui/focus/n;
 
 
 # direct methods
@@ -43,7 +44,7 @@
     .line 2
     .line 3
     .line 4
-    iput-object p1, p0, Landroidx/compose/ui/focus/FocusPropertiesElement;->c:Landroidx/compose/ui/focus/n;
+    iput-object p1, p0, Landroidx/compose/ui/focus/FocusPropertiesElement;->a:Landroidx/compose/ui/focus/n;
 
     .line 5
     .line 6
@@ -73,11 +74,11 @@
     :cond_1
     check-cast p1, Landroidx/compose/ui/focus/FocusPropertiesElement;
 
-    iget-object v1, p0, Landroidx/compose/ui/focus/FocusPropertiesElement;->c:Landroidx/compose/ui/focus/n;
+    iget-object v1, p0, Landroidx/compose/ui/focus/FocusPropertiesElement;->a:Landroidx/compose/ui/focus/n;
 
-    iget-object p1, p1, Landroidx/compose/ui/focus/FocusPropertiesElement;->c:Landroidx/compose/ui/focus/n;
+    iget-object p1, p1, Landroidx/compose/ui/focus/FocusPropertiesElement;->a:Landroidx/compose/ui/focus/n;
 
-    invoke-static {v1, p1}, Lrb/h;->d(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v1, p1}, Lkotlin/jvm/internal/h;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result p1
 
@@ -92,23 +93,12 @@
 .method public final hashCode()I
     .locals 1
 
-    .line 1
-    iget-object v0, p0, Landroidx/compose/ui/focus/FocusPropertiesElement;->c:Landroidx/compose/ui/focus/n;
+    iget-object v0, p0, Landroidx/compose/ui/focus/FocusPropertiesElement;->a:Landroidx/compose/ui/focus/n;
 
-    .line 2
-    .line 3
-    iget-object v0, v0, Landroidx/compose/ui/focus/n;->b:Lzh/c;
+    invoke-virtual {v0}, Landroidx/compose/ui/focus/n;->hashCode()I
 
-    .line 4
-    .line 5
-    invoke-virtual {v0}, Ljava/lang/Object;->hashCode()I
-
-    .line 6
-    .line 7
-    .line 8
     move-result v0
 
-    .line 9
     return v0
 .end method
 
@@ -125,7 +115,7 @@
     .line 4
     .line 5
     .line 6
-    iget-object v1, p0, Landroidx/compose/ui/focus/FocusPropertiesElement;->c:Landroidx/compose/ui/focus/n;
+    iget-object v1, p0, Landroidx/compose/ui/focus/FocusPropertiesElement;->a:Landroidx/compose/ui/focus/n;
 
     .line 7
     .line 8
@@ -144,7 +134,7 @@
 
     .line 2
     .line 3
-    iget-object v0, p0, Landroidx/compose/ui/focus/FocusPropertiesElement;->c:Landroidx/compose/ui/focus/n;
+    iget-object v0, p0, Landroidx/compose/ui/focus/FocusPropertiesElement;->a:Landroidx/compose/ui/focus/n;
 
     .line 4
     .line 5
@@ -164,7 +154,7 @@
 
     invoke-direct {v0, v1}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
 
-    iget-object v1, p0, Landroidx/compose/ui/focus/FocusPropertiesElement;->c:Landroidx/compose/ui/focus/n;
+    iget-object v1, p0, Landroidx/compose/ui/focus/FocusPropertiesElement;->a:Landroidx/compose/ui/focus/n;
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 

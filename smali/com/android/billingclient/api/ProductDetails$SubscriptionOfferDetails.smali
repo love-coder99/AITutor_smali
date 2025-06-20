@@ -18,6 +18,9 @@
 .field private final zza:Ljava/lang/String;
 
 .field private final zzb:Ljava/lang/String;
+    .annotation build Landroidx/annotation/Nullable;
+    .end annotation
+.end field
 
 .field private final zzc:Ljava/lang/String;
 
@@ -26,6 +29,9 @@
 .field private final zze:Ljava/util/List;
 
 .field private final zzf:Lcom/android/billingclient/api/ProductDetails$InstallmentPlanDetails;
+    .annotation build Landroidx/annotation/Nullable;
+    .end annotation
+.end field
 
 
 # direct methods
@@ -333,6 +339,8 @@
 # virtual methods
 .method public getBasePlanId()Ljava/lang/String;
     .locals 1
+    .annotation build Landroidx/annotation/NonNull;
+    .end annotation
 
     iget-object v0, p0, Lcom/android/billingclient/api/ProductDetails$SubscriptionOfferDetails;->zza:Ljava/lang/String;
 
@@ -341,6 +349,11 @@
 
 .method public getInstallmentPlanDetails()Lcom/android/billingclient/api/ProductDetails$InstallmentPlanDetails;
     .locals 1
+    .annotation build Landroidx/annotation/Nullable;
+    .end annotation
+
+    .annotation build Lcom/android/billingclient/api/zzi;
+    .end annotation
 
     iget-object v0, p0, Lcom/android/billingclient/api/ProductDetails$SubscriptionOfferDetails;->zzf:Lcom/android/billingclient/api/ProductDetails$InstallmentPlanDetails;
 
@@ -349,6 +362,8 @@
 
 .method public getOfferId()Ljava/lang/String;
     .locals 1
+    .annotation build Landroidx/annotation/Nullable;
+    .end annotation
 
     iget-object v0, p0, Lcom/android/billingclient/api/ProductDetails$SubscriptionOfferDetails;->zzb:Ljava/lang/String;
 
@@ -357,6 +372,9 @@
 
 .method public getOfferTags()Ljava/util/List;
     .locals 1
+    .annotation build Landroidx/annotation/NonNull;
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "()",
@@ -373,6 +391,8 @@
 
 .method public getOfferToken()Ljava/lang/String;
     .locals 1
+    .annotation build Landroidx/annotation/NonNull;
+    .end annotation
 
     iget-object v0, p0, Lcom/android/billingclient/api/ProductDetails$SubscriptionOfferDetails;->zzc:Ljava/lang/String;
 
@@ -381,6 +401,8 @@
 
 .method public getPricingPhases()Lcom/android/billingclient/api/ProductDetails$PricingPhases;
     .locals 1
+    .annotation build Landroidx/annotation/NonNull;
+    .end annotation
 
     iget-object v0, p0, Lcom/android/billingclient/api/ProductDetails$SubscriptionOfferDetails;->zzd:Lcom/android/billingclient/api/ProductDetails$PricingPhases;
 

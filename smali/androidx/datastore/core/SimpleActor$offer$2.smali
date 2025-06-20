@@ -3,43 +3,44 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lzh/e;
+.implements Lka/e;
 
 
 # annotations
+.annotation runtime Lca/c;
+    c = "androidx.datastore.core.SimpleActor$offer$2"
+    f = "SimpleActor.kt"
+    l = {
+        0x79,
+        0x79
+    }
+    m = "invokeSuspend"
+.end annotation
+
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "Lkotlin/coroutines/jvm/internal/SuspendLambda;",
-        "Lzh/e;"
+        "Lka/e;"
     }
 .end annotation
 
 .annotation runtime Lkotlin/Metadata;
     d1 = {
-        "\u0000\u000c\n\u0000\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\u0010\u0003\u001a\u00020\u0002\"\u0004\u0008\u0000\u0010\u0000*\u00020\u0001H\u008a@"
+        "\u0000\u000e\n\u0000\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0008\u0002\u0010\u0003\u001a\u00020\u0002\"\u0004\u0008\u0000\u0010\u0000*\u00020\u0001H\u008a@\u00a2\u0006\u0004\u0008\u0003\u0010\u0004"
     }
     d2 = {
         "T",
-        "Lkotlinx/coroutines/w;",
-        "Lqh/r;",
-        "<anonymous>"
+        "Lkotlinx/coroutines/u;",
+        "LX9/j;",
+        "<anonymous>",
+        "(Lkotlinx/coroutines/u;)V"
     }
     k = 0x3
     mv = {
         0x1,
-        0x5,
-        0x1
+        0x8,
+        0x0
     }
-.end annotation
-
-.annotation runtime Lth/c;
-    c = "androidx.datastore.core.SimpleActor$offer$2"
-    f = "SimpleActor.kt"
-    l = {
-        0x7a,
-        0x7a
-    }
-    m = "invokeSuspend"
 .end annotation
 
 
@@ -48,22 +49,22 @@
 
 .field label:I
 
-.field final synthetic this$0:Landroidx/datastore/core/k;
+.field final synthetic this$0:Landroidx/datastore/core/z;
     .annotation system Ldalvik/annotation/Signature;
         value = {
-            "Landroidx/datastore/core/k;"
+            "Landroidx/datastore/core/z;"
         }
     .end annotation
 .end field
 
 
 # direct methods
-.method public constructor <init>(Landroidx/datastore/core/k;Lkotlin/coroutines/Continuation;)V
+.method public constructor <init>(Landroidx/datastore/core/z;Lkotlin/coroutines/Continuation;)V
     .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
-            "Landroidx/datastore/core/k;",
+            "Landroidx/datastore/core/z;",
             "Lkotlin/coroutines/Continuation<",
             "-",
             "Landroidx/datastore/core/SimpleActor$offer$2;",
@@ -71,7 +72,7 @@
         }
     .end annotation
 
-    iput-object p1, p0, Landroidx/datastore/core/SimpleActor$offer$2;->this$0:Landroidx/datastore/core/k;
+    iput-object p1, p0, Landroidx/datastore/core/SimpleActor$offer$2;->this$0:Landroidx/datastore/core/z;
 
     const/4 p1, 0x2
 
@@ -91,16 +92,16 @@
             "Lkotlin/coroutines/Continuation<",
             "*>;)",
             "Lkotlin/coroutines/Continuation<",
-            "Lqh/r;",
+            "LX9/j;",
             ">;"
         }
     .end annotation
 
     new-instance p1, Landroidx/datastore/core/SimpleActor$offer$2;
 
-    iget-object v0, p0, Landroidx/datastore/core/SimpleActor$offer$2;->this$0:Landroidx/datastore/core/k;
+    iget-object v0, p0, Landroidx/datastore/core/SimpleActor$offer$2;->this$0:Landroidx/datastore/core/z;
 
-    invoke-direct {p1, v0, p2}, Landroidx/datastore/core/SimpleActor$offer$2;-><init>(Landroidx/datastore/core/k;Lkotlin/coroutines/Continuation;)V
+    invoke-direct {p1, v0, p2}, Landroidx/datastore/core/SimpleActor$offer$2;-><init>(Landroidx/datastore/core/z;Lkotlin/coroutines/Continuation;)V
 
     return-object p1
 .end method
@@ -109,26 +110,26 @@
     .locals 0
 
     .line 1
-    check-cast p1, Lkotlinx/coroutines/w;
+    check-cast p1, Lkotlinx/coroutines/u;
 
     check-cast p2, Lkotlin/coroutines/Continuation;
 
-    invoke-virtual {p0, p1, p2}, Landroidx/datastore/core/SimpleActor$offer$2;->invoke(Lkotlinx/coroutines/w;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
+    invoke-virtual {p0, p1, p2}, Landroidx/datastore/core/SimpleActor$offer$2;->invoke(Lkotlinx/coroutines/u;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
 
     move-result-object p1
 
     return-object p1
 .end method
 
-.method public final invoke(Lkotlinx/coroutines/w;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
+.method public final invoke(Lkotlinx/coroutines/u;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
     .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
-            "Lkotlinx/coroutines/w;",
+            "Lkotlinx/coroutines/u;",
             "Lkotlin/coroutines/Continuation<",
             "-",
-            "Lqh/r;",
+            "LX9/j;",
             ">;)",
             "Ljava/lang/Object;"
         }
@@ -141,7 +142,7 @@
 
     check-cast p1, Landroidx/datastore/core/SimpleActor$offer$2;
 
-    sget-object p2, Lqh/r;->a:Lqh/r;
+    sget-object p2, LX9/j;->a:LX9/j;
 
     invoke-virtual {p1, p2}, Landroidx/datastore/core/SimpleActor$offer$2;->invokeSuspend(Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -151,7 +152,7 @@
 .end method
 
 .method public final invokeSuspend(Ljava/lang/Object;)Ljava/lang/Object;
-    .locals 7
+    .locals 5
 
     .line 1
     sget-object v0, Lkotlin/coroutines/intrinsics/CoroutineSingletons;->COROUTINE_SUSPENDED:Lkotlin/coroutines/intrinsics/CoroutineSingletons;
@@ -185,66 +186,62 @@
     .line 14
     .line 15
     .line 16
-    move-object p1, p0
-
-    .line 17
     goto :goto_1
 
-    .line 18
+    .line 17
     :cond_0
     new-instance p1, Ljava/lang/IllegalStateException;
 
+    .line 18
     .line 19
-    .line 20
     const-string v0, "call to \'resume\' before \'invoke\' with coroutine"
 
+    .line 20
     .line 21
-    .line 22
     invoke-direct {p1, v0}, Ljava/lang/IllegalStateException;-><init>(Ljava/lang/String;)V
 
+    .line 22
     .line 23
     .line 24
-    .line 25
     throw p1
 
-    .line 26
+    .line 25
     :cond_1
     iget-object v1, p0, Landroidx/datastore/core/SimpleActor$offer$2;->L$0:Ljava/lang/Object;
 
+    .line 26
     .line 27
-    .line 28
-    check-cast v1, Lzh/e;
+    check-cast v1, Lka/e;
 
+    .line 28
     .line 29
-    .line 30
     invoke-static {p1}, Lkotlin/b;->a(Ljava/lang/Object;)V
 
+    .line 30
     .line 31
     .line 32
-    .line 33
-    move-object v4, v1
-
-    .line 34
-    move-object v1, v0
-
-    .line 35
-    move-object v0, p0
-
-    .line 36
     goto :goto_0
 
-    .line 37
+    .line 33
     :cond_2
     invoke-static {p1}, Lkotlin/b;->a(Ljava/lang/Object;)V
 
+    .line 34
+    .line 35
+    .line 36
+    iget-object p1, p0, Landroidx/datastore/core/SimpleActor$offer$2;->this$0:Landroidx/datastore/core/z;
+
+    .line 37
     .line 38
+    iget-object p1, p1, Landroidx/datastore/core/z;->d:Landroidx/core/view/K;
+
     .line 39
     .line 40
-    iget-object p1, p0, Landroidx/datastore/core/SimpleActor$offer$2;->this$0:Landroidx/datastore/core/k;
+    iget-object p1, p1, Landroidx/core/view/K;->c:Ljava/lang/Object;
 
     .line 41
     .line 42
-    iget-object p1, p1, Landroidx/datastore/core/k;->d:Ljava/util/concurrent/atomic/AtomicInteger;
+    check-cast p1, Ljava/util/concurrent/atomic/AtomicInteger;
 
     .line 43
     .line 44
@@ -260,162 +257,141 @@
 
     .line 49
     .line 50
-    move-object p1, p0
+    :cond_3
+    iget-object p1, p0, Landroidx/datastore/core/SimpleActor$offer$2;->this$0:Landroidx/datastore/core/z;
 
     .line 51
-    :cond_3
-    iget-object v1, p1, Landroidx/datastore/core/SimpleActor$offer$2;->this$0:Landroidx/datastore/core/k;
-
     .line 52
+    iget-object p1, p1, Landroidx/datastore/core/z;->a:Lkotlinx/coroutines/u;
+
     .line 53
-    iget-object v1, v1, Landroidx/datastore/core/k;->a:Lkotlinx/coroutines/w;
-
     .line 54
-    .line 55
-    invoke-interface {v1}, Lkotlinx/coroutines/w;->n()Lkotlin/coroutines/i;
+    invoke-interface {p1}, Lkotlinx/coroutines/u;->u()Lba/g;
 
+    .line 55
     .line 56
     .line 57
-    .line 58
-    move-result-object v1
-
-    .line 59
-    invoke-static {v1}, Lrb/h;->q(Lkotlin/coroutines/i;)V
-
-    .line 60
-    .line 61
-    .line 62
-    iget-object v1, p1, Landroidx/datastore/core/SimpleActor$offer$2;->this$0:Landroidx/datastore/core/k;
-
-    .line 63
-    .line 64
-    iget-object v4, v1, Landroidx/datastore/core/k;->b:Lzh/e;
-
-    .line 65
-    .line 66
-    iput-object v4, p1, Landroidx/datastore/core/SimpleActor$offer$2;->L$0:Ljava/lang/Object;
-
-    .line 67
-    .line 68
-    iput v3, p1, Landroidx/datastore/core/SimpleActor$offer$2;->label:I
-
-    .line 69
-    .line 70
-    iget-object v1, v1, Landroidx/datastore/core/k;->c:Lkotlinx/coroutines/channels/b;
-
-    .line 71
-    .line 72
-    invoke-virtual {v1, p1}, Lkotlinx/coroutines/channels/b;->t(Lkotlin/coroutines/jvm/internal/SuspendLambda;)Ljava/lang/Object;
-
-    .line 73
-    .line 74
-    .line 75
-    move-result-object v1
-
-    .line 76
-    if-ne v1, v0, :cond_4
-
-    .line 77
-    .line 78
-    return-object v0
-
-    .line 79
-    :cond_4
-    move-object v6, v0
-
-    .line 80
-    move-object v0, p1
-
-    .line 81
-    move-object p1, v1
-
-    .line 82
-    move-object v1, v6
-
-    .line 83
-    :goto_0
-    const/4 v5, 0x0
-
-    .line 84
-    iput-object v5, v0, Landroidx/datastore/core/SimpleActor$offer$2;->L$0:Ljava/lang/Object;
-
-    .line 85
-    .line 86
-    iput v2, v0, Landroidx/datastore/core/SimpleActor$offer$2;->label:I
-
-    .line 87
-    .line 88
-    invoke-interface {v4, p1, v0}, Lzh/e;->invoke(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
-
-    .line 89
-    .line 90
-    .line 91
     move-result-object p1
 
+    .line 58
+    invoke-static {p1}, Lkotlinx/coroutines/w;->j(Lba/g;)V
+
+    .line 59
+    .line 60
+    .line 61
+    iget-object p1, p0, Landroidx/datastore/core/SimpleActor$offer$2;->this$0:Landroidx/datastore/core/z;
+
+    .line 62
+    .line 63
+    iget-object v1, p1, Landroidx/datastore/core/z;->b:Lka/e;
+
+    .line 64
+    .line 65
+    iput-object v1, p0, Landroidx/datastore/core/SimpleActor$offer$2;->L$0:Ljava/lang/Object;
+
+    .line 66
+    .line 67
+    iput v3, p0, Landroidx/datastore/core/SimpleActor$offer$2;->label:I
+
+    .line 68
+    .line 69
+    iget-object p1, p1, Landroidx/datastore/core/z;->c:Lkotlinx/coroutines/channels/b;
+
+    .line 70
+    .line 71
+    invoke-virtual {p1, p0}, Lkotlinx/coroutines/channels/b;->r(Lkotlin/coroutines/jvm/internal/SuspendLambda;)Ljava/lang/Object;
+
+    .line 72
+    .line 73
+    .line 74
+    move-result-object p1
+
+    .line 75
+    if-ne p1, v0, :cond_4
+
+    .line 76
+    .line 77
+    return-object v0
+
+    .line 78
+    :cond_4
+    :goto_0
+    const/4 v4, 0x0
+
+    .line 79
+    iput-object v4, p0, Landroidx/datastore/core/SimpleActor$offer$2;->L$0:Ljava/lang/Object;
+
+    .line 80
+    .line 81
+    iput v2, p0, Landroidx/datastore/core/SimpleActor$offer$2;->label:I
+
+    .line 82
+    .line 83
+    invoke-interface {v1, p1, p0}, Lka/e;->invoke(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 84
+    .line 85
+    .line 86
+    move-result-object p1
+
+    .line 87
+    if-ne p1, v0, :cond_5
+
+    .line 88
+    .line 89
+    return-object v0
+
+    .line 90
+    :cond_5
+    :goto_1
+    iget-object p1, p0, Landroidx/datastore/core/SimpleActor$offer$2;->this$0:Landroidx/datastore/core/z;
+
+    .line 91
     .line 92
-    if-ne p1, v1, :cond_5
+    iget-object p1, p1, Landroidx/datastore/core/z;->d:Landroidx/core/view/K;
 
     .line 93
     .line 94
-    return-object v1
+    iget-object p1, p1, Landroidx/core/view/K;->c:Ljava/lang/Object;
 
     .line 95
-    :cond_5
-    move-object p1, v0
-
     .line 96
-    move-object v0, v1
+    check-cast p1, Ljava/util/concurrent/atomic/AtomicInteger;
 
     .line 97
-    :goto_1
-    iget-object v1, p1, Landroidx/datastore/core/SimpleActor$offer$2;->this$0:Landroidx/datastore/core/k;
-
     .line 98
-    .line 99
-    iget-object v1, v1, Landroidx/datastore/core/k;->d:Ljava/util/concurrent/atomic/AtomicInteger;
+    invoke-virtual {p1}, Ljava/util/concurrent/atomic/AtomicInteger;->decrementAndGet()I
 
+    .line 99
     .line 100
     .line 101
-    invoke-virtual {v1}, Ljava/util/concurrent/atomic/AtomicInteger;->decrementAndGet()I
+    move-result p1
 
     .line 102
+    if-nez p1, :cond_3
+
     .line 103
     .line 104
-    move-result v1
+    sget-object p1, LX9/j;->a:LX9/j;
 
     .line 105
-    if-nez v1, :cond_3
-
     .line 106
-    .line 107
-    sget-object p1, Lqh/r;->a:Lqh/r;
-
-    .line 108
-    .line 109
     return-object p1
 
-    .line 110
+    .line 107
     :cond_6
     new-instance p1, Ljava/lang/IllegalStateException;
 
-    .line 111
-    .line 112
+    .line 108
+    .line 109
     const-string v0, "Check failed."
 
-    .line 113
-    .line 114
-    invoke-virtual {v0}, Ljava/lang/Object;->toString()Ljava/lang/String;
-
-    .line 115
-    .line 116
-    .line 117
-    move-result-object v0
-
-    .line 118
+    .line 110
+    .line 111
     invoke-direct {p1, v0}, Ljava/lang/IllegalStateException;-><init>(Ljava/lang/String;)V
 
-    .line 119
-    .line 120
-    .line 121
+    .line 112
+    .line 113
+    .line 114
     throw p1
 .end method

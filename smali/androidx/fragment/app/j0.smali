@@ -1,61 +1,81 @@
-.class public abstract Landroidx/fragment/app/j0;
-.super Landroidx/fragment/app/h0;
+.class public final Landroidx/fragment/app/j0;
+.super Landroid/transition/Transition$EpicenterCallback;
 .source "SourceFile"
 
 
 # instance fields
-.field public final b:Landroid/app/Activity;
+.field public final synthetic a:I
 
-.field public final c:Landroid/content/Context;
-
-.field public final d:Landroid/os/Handler;
-
-.field public final f:Landroidx/fragment/app/w0;
+.field public final synthetic b:Landroid/graphics/Rect;
 
 
 # direct methods
-.method public constructor <init>(Landroidx/fragment/app/e0;)V
-    .locals 2
+.method public synthetic constructor <init>(ILandroid/graphics/Rect;)V
+    .locals 0
 
     .line 1
-    new-instance v0, Landroid/os/Handler;
+    iput p1, p0, Landroidx/fragment/app/j0;->a:I
+
+    iput-object p2, p0, Landroidx/fragment/app/j0;->b:Landroid/graphics/Rect;
+
+    invoke-direct {p0}, Landroid/transition/Transition$EpicenterCallback;-><init>()V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public final onGetEpicenter(Landroid/transition/Transition;)Landroid/graphics/Rect;
+    .locals 1
+
+    .line 1
+    iget p1, p0, Landroidx/fragment/app/j0;->a:I
 
     .line 2
     .line 3
-    invoke-direct {v0}, Landroid/os/Handler;-><init>()V
+    packed-switch p1, :pswitch_data_0
 
     .line 4
     .line 5
     .line 6
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    iget-object p1, p0, Landroidx/fragment/app/j0;->b:Landroid/graphics/Rect;
 
     .line 7
     .line 8
+    if-eqz p1, :cond_0
+
     .line 9
-    new-instance v1, Landroidx/fragment/app/w0;
-
     .line 10
-    .line 11
-    invoke-direct {v1}, Landroidx/fragment/app/v0;-><init>()V
+    invoke-virtual {p1}, Landroid/graphics/Rect;->isEmpty()Z
 
+    .line 11
     .line 12
     .line 13
+    move-result v0
+
     .line 14
-    iput-object v1, p0, Landroidx/fragment/app/j0;->f:Landroidx/fragment/app/w0;
+    if-eqz v0, :cond_1
 
     .line 15
     .line 16
-    iput-object p1, p0, Landroidx/fragment/app/j0;->b:Landroid/app/Activity;
+    :cond_0
+    const/4 p1, 0x0
 
     .line 17
+    :cond_1
+    return-object p1
+
     .line 18
-    iput-object p1, p0, Landroidx/fragment/app/j0;->c:Landroid/content/Context;
+    :pswitch_0
+    iget-object p1, p0, Landroidx/fragment/app/j0;->b:Landroid/graphics/Rect;
 
     .line 19
     .line 20
-    iput-object v0, p0, Landroidx/fragment/app/j0;->d:Landroid/os/Handler;
+    return-object p1
 
     .line 21
-    .line 22
-    return-void
+    :pswitch_data_0
+    .packed-switch 0x0
+        :pswitch_0
+    .end packed-switch
 .end method

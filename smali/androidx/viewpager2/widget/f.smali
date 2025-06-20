@@ -1,5 +1,5 @@
 .class public final Landroidx/viewpager2/widget/f;
-.super Landroidx/viewpager2/widget/j;
+.super Landroidx/viewpager2/widget/i;
 .source "SourceFile"
 
 
@@ -14,25 +14,18 @@
     .locals 0
 
     .line 1
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
-
-    .line 2
-    .line 3
-    .line 4
     iput p2, p0, Landroidx/viewpager2/widget/f;->a:I
 
-    .line 5
-    .line 6
     iput-object p1, p0, Landroidx/viewpager2/widget/f;->b:Landroidx/viewpager2/widget/ViewPager2;
 
-    .line 7
-    .line 8
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
     return-void
 .end method
 
 
 # virtual methods
-.method public final a(I)V
+.method public a(I)V
     .locals 1
 
     .line 1
@@ -80,33 +73,33 @@
 
     .line 2
     .line 3
-    iget-object v1, p0, Landroidx/viewpager2/widget/f;->b:Landroidx/viewpager2/widget/ViewPager2;
+    packed-switch v0, :pswitch_data_0
 
     .line 4
     .line 5
-    packed-switch v0, :pswitch_data_0
-
     .line 6
+    iget-object p1, p0, Landroidx/viewpager2/widget/f;->b:Landroidx/viewpager2/widget/ViewPager2;
+
     .line 7
     .line 8
-    invoke-virtual {v1}, Landroid/view/View;->clearFocus()V
+    invoke-virtual {p1}, Landroid/view/View;->clearFocus()V
 
     .line 9
     .line 10
     .line 11
-    invoke-virtual {v1}, Landroid/view/View;->hasFocus()Z
+    invoke-virtual {p1}, Landroid/view/View;->hasFocus()Z
 
     .line 12
     .line 13
     .line 14
-    move-result p1
+    move-result v0
 
     .line 15
-    if-eqz p1, :cond_0
+    if-eqz v0, :cond_0
 
     .line 16
     .line 17
-    iget-object p1, v1, Landroidx/viewpager2/widget/ViewPager2;->l:Landroidx/viewpager2/widget/o;
+    iget-object p1, p1, Landroidx/viewpager2/widget/ViewPager2;->l:Landroidx/viewpager2/widget/l;
 
     .line 18
     .line 19
@@ -123,34 +116,38 @@
 
     .line 24
     :pswitch_0
-    iget v0, v1, Landroidx/viewpager2/widget/ViewPager2;->f:I
+    iget-object v0, p0, Landroidx/viewpager2/widget/f;->b:Landroidx/viewpager2/widget/ViewPager2;
 
     .line 25
     .line 26
-    if-eq v0, p1, :cond_1
+    iget v1, v0, Landroidx/viewpager2/widget/ViewPager2;->f:I
 
     .line 27
     .line 28
-    iput p1, v1, Landroidx/viewpager2/widget/ViewPager2;->f:I
+    if-eq v1, p1, :cond_1
 
     .line 29
     .line 30
-    iget-object p1, v1, Landroidx/viewpager2/widget/ViewPager2;->v:Landroidx/viewpager2/widget/l;
+    iput p1, v0, Landroidx/viewpager2/widget/ViewPager2;->f:I
 
     .line 31
     .line 32
-    invoke-virtual {p1}, Landroidx/viewpager2/widget/l;->O()V
+    iget-object p1, v0, Landroidx/viewpager2/widget/ViewPager2;->v:LB2/n;
 
     .line 33
     .line 34
+    invoke-virtual {p1}, LB2/n;->o()V
+
     .line 35
+    .line 36
+    .line 37
     :cond_1
     return-void
 
-    .line 36
+    .line 38
     nop
 
-    .line 37
+    .line 39
     :pswitch_data_0
     .packed-switch 0x0
         :pswitch_0

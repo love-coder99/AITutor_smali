@@ -49,9 +49,9 @@
 .method public constructor <init>(Landroid/os/Parcel;)V
     .locals 1
 
+    .line 1
     const-string v0, "GEOB"
 
-    .line 1
     invoke-direct {p0, v0}, Lcom/applovin/impl/xa;-><init>(Ljava/lang/String;)V
 
     .line 2
@@ -112,17 +112,21 @@
 .method public constructor <init>(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;[B)V
     .locals 1
 
+    .line 6
     const-string v0, "GEOB"
 
-    .line 6
     invoke-direct {p0, v0}, Lcom/applovin/impl/xa;-><init>(Ljava/lang/String;)V
 
+    .line 7
     iput-object p1, p0, Lcom/applovin/impl/z9;->b:Ljava/lang/String;
 
+    .line 8
     iput-object p2, p0, Lcom/applovin/impl/z9;->c:Ljava/lang/String;
 
+    .line 9
     iput-object p3, p0, Lcom/applovin/impl/z9;->d:Ljava/lang/String;
 
+    .line 10
     iput-object p4, p0, Lcom/applovin/impl/z9;->f:[B
 
     return-void

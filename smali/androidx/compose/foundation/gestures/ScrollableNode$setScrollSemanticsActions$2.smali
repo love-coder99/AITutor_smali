@@ -3,25 +3,35 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lzh/e;
+.implements Lka/e;
 
 
 # annotations
+.annotation runtime Lca/c;
+    c = "androidx.compose.foundation.gestures.ScrollableNode$setScrollSemanticsActions$2"
+    f = "Scrollable.kt"
+    l = {
+        0x20f
+    }
+    m = "invokeSuspend"
+.end annotation
+
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "Lkotlin/coroutines/jvm/internal/SuspendLambda;",
-        "Lzh/e;"
+        "Lka/e;"
     }
 .end annotation
 
 .annotation runtime Lkotlin/Metadata;
     d1 = {
-        "\u0000\u0008\n\u0002\u0018\u0002\n\u0002\u0008\u0002\u0010\u0002\u001a\u00020\u00002\u0006\u0010\u0001\u001a\u00020\u0000H\u008a@"
+        "\u0000\u0008\n\u0002\u0018\u0002\n\u0002\u0008\u0003\u0010\u0002\u001a\u00020\u00002\u0006\u0010\u0001\u001a\u00020\u0000H\u008a@\u00a2\u0006\u0004\u0008\u0002\u0010\u0003"
     }
     d2 = {
-        "Ln1/c;",
+        "Lr0/c;",
         "offset",
-        "<anonymous>"
+        "<anonymous>",
+        "(Lr0/c;)Lr0/c;"
     }
     k = 0x3
     mv = {
@@ -31,31 +41,22 @@
     }
 .end annotation
 
-.annotation runtime Lth/c;
-    c = "androidx.compose.foundation.gestures.ScrollableNode$setScrollSemanticsActions$2"
-    f = "Scrollable.kt"
-    l = {
-        0x20f
-    }
-    m = "invokeSuspend"
-.end annotation
-
 
 # instance fields
 .field synthetic J$0:J
 
 .field label:I
 
-.field final synthetic this$0:Landroidx/compose/foundation/gestures/h0;
+.field final synthetic this$0:Landroidx/compose/foundation/gestures/J;
 
 
 # direct methods
-.method public constructor <init>(Landroidx/compose/foundation/gestures/h0;Lkotlin/coroutines/Continuation;)V
+.method public constructor <init>(Landroidx/compose/foundation/gestures/J;Lkotlin/coroutines/Continuation;)V
     .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
-            "Landroidx/compose/foundation/gestures/h0;",
+            "Landroidx/compose/foundation/gestures/J;",
             "Lkotlin/coroutines/Continuation<",
             "-",
             "Landroidx/compose/foundation/gestures/ScrollableNode$setScrollSemanticsActions$2;",
@@ -63,7 +64,7 @@
         }
     .end annotation
 
-    iput-object p1, p0, Landroidx/compose/foundation/gestures/ScrollableNode$setScrollSemanticsActions$2;->this$0:Landroidx/compose/foundation/gestures/h0;
+    iput-object p1, p0, Landroidx/compose/foundation/gestures/ScrollableNode$setScrollSemanticsActions$2;->this$0:Landroidx/compose/foundation/gestures/J;
 
     const/4 p1, 0x2
 
@@ -83,7 +84,7 @@
             "Lkotlin/coroutines/Continuation<",
             "*>;)",
             "Lkotlin/coroutines/Continuation<",
-            "Lqh/r;",
+            "LX9/j;",
             ">;"
         }
     .end annotation
@@ -93,20 +94,20 @@
 
     .line 2
     .line 3
-    iget-object v1, p0, Landroidx/compose/foundation/gestures/ScrollableNode$setScrollSemanticsActions$2;->this$0:Landroidx/compose/foundation/gestures/h0;
+    iget-object v1, p0, Landroidx/compose/foundation/gestures/ScrollableNode$setScrollSemanticsActions$2;->this$0:Landroidx/compose/foundation/gestures/J;
 
     .line 4
     .line 5
-    invoke-direct {v0, v1, p2}, Landroidx/compose/foundation/gestures/ScrollableNode$setScrollSemanticsActions$2;-><init>(Landroidx/compose/foundation/gestures/h0;Lkotlin/coroutines/Continuation;)V
+    invoke-direct {v0, v1, p2}, Landroidx/compose/foundation/gestures/ScrollableNode$setScrollSemanticsActions$2;-><init>(Landroidx/compose/foundation/gestures/J;Lkotlin/coroutines/Continuation;)V
 
     .line 6
     .line 7
     .line 8
-    check-cast p1, Ln1/c;
+    check-cast p1, Lr0/c;
 
     .line 9
     .line 10
-    iget-wide p1, p1, Ln1/c;->a:J
+    iget-wide p1, p1, Lr0/c;->a:J
 
     .line 11
     .line 12
@@ -121,11 +122,11 @@
     .locals 2
 
     .line 1
-    check-cast p1, Ln1/c;
+    check-cast p1, Lr0/c;
 
     .line 2
     .line 3
-    iget-wide v0, p1, Ln1/c;->a:J
+    iget-wide v0, p1, Lr0/c;->a:J
 
     .line 4
     .line 5
@@ -151,18 +152,18 @@
             "(J",
             "Lkotlin/coroutines/Continuation<",
             "-",
-            "Ln1/c;",
+            "Lr0/c;",
             ">;)",
             "Ljava/lang/Object;"
         }
     .end annotation
 
     .line 1
-    new-instance v0, Ln1/c;
+    new-instance v0, Lr0/c;
 
     .line 2
     .line 3
-    invoke-direct {v0, p1, p2}, Ln1/c;-><init>(J)V
+    invoke-direct {v0, p1, p2}, Lr0/c;-><init>(J)V
 
     .line 4
     .line 5
@@ -179,7 +180,7 @@
 
     .line 11
     .line 12
-    sget-object p2, Lqh/r;->a:Lqh/r;
+    sget-object p2, LX9/j;->a:LX9/j;
 
     .line 13
     .line 14
@@ -252,11 +253,11 @@
 
     .line 26
     .line 27
-    iget-object p1, p0, Landroidx/compose/foundation/gestures/ScrollableNode$setScrollSemanticsActions$2;->this$0:Landroidx/compose/foundation/gestures/h0;
+    iget-object p1, p0, Landroidx/compose/foundation/gestures/ScrollableNode$setScrollSemanticsActions$2;->this$0:Landroidx/compose/foundation/gestures/J;
 
     .line 28
     .line 29
-    iget-object p1, p1, Landroidx/compose/foundation/gestures/h0;->E:Landroidx/compose/foundation/gestures/l0;
+    iget-object p1, p1, Landroidx/compose/foundation/gestures/J;->E:Landroidx/compose/foundation/gestures/N;
 
     .line 30
     .line 31
@@ -264,7 +265,7 @@
 
     .line 32
     .line 33
-    invoke-static {p1, v3, v4, p0}, Landroidx/compose/foundation/gestures/f0;->a(Landroidx/compose/foundation/gestures/l0;JLkotlin/coroutines/Continuation;)Ljava/lang/Object;
+    invoke-static {p1, v3, v4, p0}, Landroidx/compose/foundation/gestures/H;->a(Landroidx/compose/foundation/gestures/N;JLkotlin/coroutines/jvm/internal/ContinuationImpl;)Ljava/lang/Object;
 
     .line 34
     .line 35

@@ -1,41 +1,28 @@
-.class public interface abstract Landroidx/camera/core/impl/x;
+.class public final Landroidx/camera/core/impl/X;
 .super Ljava/lang/Object;
 .source "SourceFile"
 
 # interfaces
-.implements Ly/t;
+.implements LB/p;
 
 
-# virtual methods
-.method public abstract a()Ljava/util/Set;
-.end method
+# instance fields
+.field public final b:I
 
-.method public abstract c()Z
-.end method
 
-.method public abstract d()Ljava/lang/String;
-.end method
+# direct methods
+.method public constructor <init>(I)V
+    .locals 0
 
-.method public abstract f()Landroidx/camera/core/impl/x;
-.end method
+    .line 1
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-.method public abstract g(Lb0/a;Lv0/j;)V
-.end method
+    .line 2
+    .line 3
+    .line 4
+    iput p1, p0, Landroidx/camera/core/impl/X;->b:I
 
-.method public abstract i()Landroidx/camera/core/impl/Timebase;
-.end method
-
-.method public abstract k(I)Ljava/util/List;
-.end method
-
-.method public abstract m()Landroidx/camera/core/impl/q0;
-.end method
-
-.method public abstract n()Landroidx/camera/core/impl/t;
-.end method
-
-.method public abstract o(I)Ljava/util/List;
-.end method
-
-.method public abstract q(Landroidx/camera/core/impl/m;)V
+    .line 5
+    .line 6
+    return-void
 .end method

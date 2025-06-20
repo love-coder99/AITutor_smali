@@ -4,6 +4,15 @@
 
 
 # annotations
+.annotation runtime Lca/c;
+    c = "androidx.compose.foundation.gestures.snapping.SnapFlingBehavior"
+    f = "SnapFlingBehavior.kt"
+    l = {
+        0x7b
+    }
+    m = "fling"
+.end annotation
+
 .annotation runtime Lkotlin/Metadata;
     k = 0x3
     mv = {
@@ -12,15 +21,6 @@
         0x0
     }
     xi = 0x30
-.end annotation
-
-.annotation runtime Lth/c;
-    c = "androidx.compose.foundation.gestures.snapping.SnapFlingBehavior"
-    f = "SnapFlingBehavior.kt"
-    l = {
-        0x7b
-    }
-    m = "fling"
 .end annotation
 
 
@@ -90,7 +90,7 @@
     const/4 v1, 0x0
 
     .line 14
-    invoke-virtual {p1, v0, v1, v0, p0}, Landroidx/compose/foundation/gestures/snapping/c;->c(Landroidx/compose/foundation/gestures/j0;FLzh/c;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
+    invoke-virtual {p1, v0, v1, v0, p0}, Landroidx/compose/foundation/gestures/snapping/c;->c(Landroidx/compose/foundation/gestures/L;FLka/c;Lkotlin/coroutines/jvm/internal/ContinuationImpl;)Ljava/lang/Object;
 
     .line 15
     .line 16

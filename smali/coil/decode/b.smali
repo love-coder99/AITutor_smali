@@ -1,126 +1,317 @@
-.class public final Lcoil/decode/b;
-.super Lxi/o;
+.class public abstract synthetic Lcoil/decode/b;
+.super Ljava/lang/Object;
 .source "SourceFile"
 
 
-# instance fields
-.field public final synthetic c:I
-
-.field public d:Ljava/lang/Object;
-
-
 # direct methods
-.method public constructor <init>(Lretrofit2/b0;Lxi/i;)V
-    .locals 1
+.method public static bridge synthetic A(Landroid/content/Context;Landroid/content/BroadcastReceiver;Landroid/content/IntentFilter;I)V
+    .locals 6
 
-    const/4 v0, 0x1
+    .line 1
+    const-string v3, "com.google.android.finsky.permission.PLAY_BILLING_LIBRARY_BROADCAST"
 
-    iput v0, p0, Lcoil/decode/b;->c:I
+    const/4 v4, 0x0
 
-    iput-object p1, p0, Lcoil/decode/b;->d:Ljava/lang/Object;
+    move-object v0, p0
 
-    .line 2
-    invoke-direct {p0, p2}, Lxi/o;-><init>(Lxi/f0;)V
+    move-object v1, p1
+
+    move-object v2, p2
+
+    move v5, p3
+
+    invoke-virtual/range {v0 .. v5}, Landroid/content/Context;->registerReceiver(Landroid/content/BroadcastReceiver;Landroid/content/IntentFilter;Ljava/lang/String;Landroid/os/Handler;I)Landroid/content/Intent;
 
     return-void
 .end method
 
-.method public constructor <init>(Lxi/i;)V
+.method public static bridge synthetic B()Ljava/time/format/DateTimeFormatter;
     .locals 1
 
-    const/4 v0, 0x0
+    .line 1
+    sget-object v0, Ljava/time/format/DateTimeFormatter;->ISO_LOCAL_DATE_TIME:Ljava/time/format/DateTimeFormatter;
 
-    iput v0, p0, Lcoil/decode/b;->c:I
+    return-object v0
+.end method
+
+.method public static bridge synthetic C()Ljava/time/format/DateTimeFormatter;
+    .locals 1
 
     .line 1
-    invoke-direct {p0, p1}, Lxi/o;-><init>(Lxi/f0;)V
+    sget-object v0, Ljava/time/format/DateTimeFormatter;->ISO_LOCAL_DATE:Ljava/time/format/DateTimeFormatter;
+
+    return-object v0
+.end method
+
+.method public static bridge synthetic D()Ljava/time/format/DateTimeFormatter;
+    .locals 1
+
+    .line 1
+    sget-object v0, Ljava/time/format/DateTimeFormatter;->RFC_1123_DATE_TIME:Ljava/time/format/DateTimeFormatter;
+
+    return-object v0
+.end method
+
+.method public static bridge synthetic a(Landroid/media/AudioManager;Landroid/media/AudioFocusRequest;)I
+    .locals 0
+
+    .line 1
+    invoke-virtual {p0, p1}, Landroid/media/AudioManager;->requestAudioFocus(Landroid/media/AudioFocusRequest;)I
+
+    move-result p0
+
+    return p0
+.end method
+
+.method public static bridge synthetic b(Landroid/webkit/RenderProcessGoneDetail;)I
+    .locals 0
+
+    .line 1
+    invoke-virtual {p0}, Landroid/webkit/RenderProcessGoneDetail;->rendererPriorityAtExit()I
+
+    move-result p0
+
+    return p0
+.end method
+
+.method public static bridge synthetic c(Landroid/graphics/BitmapFactory$Options;)Landroid/graphics/Bitmap$Config;
+    .locals 0
+
+    .line 1
+    iget-object p0, p0, Landroid/graphics/BitmapFactory$Options;->outConfig:Landroid/graphics/Bitmap$Config;
+
+    return-object p0
+.end method
+
+.method public static synthetic d(I)Landroid/media/AudioFocusRequest$Builder;
+    .locals 1
+
+    .line 1
+    new-instance v0, Landroid/media/AudioFocusRequest$Builder;
+
+    invoke-direct {v0, p0}, Landroid/media/AudioFocusRequest$Builder;-><init>(I)V
+
+    return-object v0
+.end method
+
+.method public static bridge synthetic e(Landroid/media/AudioFocusRequest$Builder;Landroid/media/AudioAttributes;)Landroid/media/AudioFocusRequest$Builder;
+    .locals 0
+
+    .line 1
+    invoke-virtual {p0, p1}, Landroid/media/AudioFocusRequest$Builder;->setAudioAttributes(Landroid/media/AudioAttributes;)Landroid/media/AudioFocusRequest$Builder;
+
+    move-result-object p0
+
+    return-object p0
+.end method
+
+.method public static bridge synthetic f(Landroid/media/AudioFocusRequest$Builder;Landroid/media/AudioManager$OnAudioFocusChangeListener;)Landroid/media/AudioFocusRequest$Builder;
+    .locals 0
+
+    .line 1
+    invoke-virtual {p0, p1}, Landroid/media/AudioFocusRequest$Builder;->setOnAudioFocusChangeListener(Landroid/media/AudioManager$OnAudioFocusChangeListener;)Landroid/media/AudioFocusRequest$Builder;
+
+    move-result-object p0
+
+    return-object p0
+.end method
+
+.method public static bridge synthetic g(Landroid/media/AudioFocusRequest$Builder;Z)Landroid/media/AudioFocusRequest$Builder;
+    .locals 0
+
+    .line 1
+    invoke-virtual {p0, p1}, Landroid/media/AudioFocusRequest$Builder;->setWillPauseWhenDucked(Z)Landroid/media/AudioFocusRequest$Builder;
+
+    move-result-object p0
+
+    return-object p0
+.end method
+
+.method public static synthetic h(Landroid/media/AudioFocusRequest;)Landroid/media/AudioFocusRequest$Builder;
+    .locals 1
+
+    .line 1
+    new-instance v0, Landroid/media/AudioFocusRequest$Builder;
+
+    invoke-direct {v0, p0}, Landroid/media/AudioFocusRequest$Builder;-><init>(Landroid/media/AudioFocusRequest;)V
+
+    return-object v0
+.end method
+
+.method public static bridge synthetic i(Landroid/media/AudioFocusRequest$Builder;)Landroid/media/AudioFocusRequest;
+    .locals 0
+
+    .line 1
+    invoke-virtual {p0}, Landroid/media/AudioFocusRequest$Builder;->build()Landroid/media/AudioFocusRequest;
+
+    move-result-object p0
+
+    return-object p0
+.end method
+
+.method public static bridge synthetic j()Ljava/security/SecureRandom;
+    .locals 1
+
+    .line 1
+    invoke-static {}, Ljava/security/SecureRandom;->getInstanceStrong()Ljava/security/SecureRandom;
+
+    move-result-object v0
+
+    return-object v0
+.end method
+
+.method public static bridge synthetic k()Ljava/time/format/DateTimeFormatter;
+    .locals 1
+
+    .line 1
+    sget-object v0, Ljava/time/format/DateTimeFormatter;->ISO_DATE_TIME:Ljava/time/format/DateTimeFormatter;
+
+    return-object v0
+.end method
+
+.method public static synthetic l()V
+    .locals 1
+
+    .line 1
+    new-instance v0, Landroid/media/AudioFocusRequest$Builder;
 
     return-void
 .end method
 
-
-# virtual methods
-.method public final c0(Lxi/g;J)J
-    .locals 2
+.method public static bridge synthetic m(Landroid/animation/Animator$AnimatorListener;Lcom/bytedance/adsdk/NOt/Ht/ZRu;Z)V
+    .locals 0
 
     .line 1
-    iget v0, p0, Lcoil/decode/b;->c:I
+    invoke-interface {p0, p1, p2}, Landroid/animation/Animator$AnimatorListener;->onAnimationEnd(Landroid/animation/Animator;Z)V
 
-    .line 2
-    .line 3
-    iget-object v1, p0, Lxi/o;->b:Lxi/f0;
+    return-void
+.end method
 
-    .line 4
-    .line 5
-    packed-switch v0, :pswitch_data_0
+.method public static bridge synthetic n(Landroid/content/Context;Landroid/content/BroadcastReceiver;Landroid/content/IntentFilter;)V
+    .locals 1
 
-    .line 6
-    .line 7
-    .line 8
-    :try_start_0
-    invoke-interface {v1, p1, p2, p3}, Lxi/f0;->c0(Lxi/g;J)J
+    .line 1
+    const/4 v0, 0x4
 
-    .line 9
-    .line 10
-    .line 11
-    move-result-wide p1
-    :try_end_0
-    .catch Ljava/io/IOException; {:try_start_0 .. :try_end_0} :catch_0
+    invoke-virtual {p0, p1, p2, v0}, Landroid/content/Context;->registerReceiver(Landroid/content/BroadcastReceiver;Landroid/content/IntentFilter;I)Landroid/content/Intent;
 
-    .line 12
-    return-wide p1
+    return-void
+.end method
 
-    .line 13
-    :catch_0
-    move-exception p1
+.method public static bridge synthetic o(Landroid/content/Context;Landroid/content/BroadcastReceiver;Landroid/content/IntentFilter;I)V
+    .locals 0
 
-    .line 14
-    iget-object p2, p0, Lcoil/decode/b;->d:Ljava/lang/Object;
+    .line 1
+    invoke-virtual {p0, p1, p2, p3}, Landroid/content/Context;->registerReceiver(Landroid/content/BroadcastReceiver;Landroid/content/IntentFilter;I)Landroid/content/Intent;
 
-    .line 15
-    .line 16
-    check-cast p2, Lretrofit2/b0;
+    return-void
+.end method
 
-    .line 17
-    .line 18
-    iput-object p1, p2, Lretrofit2/b0;->f:Ljava/io/IOException;
+.method public static bridge synthetic p(Landroid/content/Context;Lcom/bytedance/sdk/openadsdk/oem/IPMiBroadcastReceiver;Landroid/content/IntentFilter;)V
+    .locals 1
 
-    .line 19
-    .line 20
-    throw p1
+    .line 1
+    const/4 v0, 0x2
 
-    .line 21
-    :pswitch_0
-    :try_start_1
-    invoke-interface {v1, p1, p2, p3}, Lxi/f0;->c0(Lxi/g;J)J
+    invoke-virtual {p0, p1, p2, v0}, Landroid/content/Context;->registerReceiver(Landroid/content/BroadcastReceiver;Landroid/content/IntentFilter;I)Landroid/content/Intent;
 
-    .line 22
-    .line 23
-    .line 24
-    move-result-wide p1
-    :try_end_1
-    .catch Ljava/lang/Exception; {:try_start_1 .. :try_end_1} :catch_1
+    return-void
+.end method
 
-    .line 25
-    return-wide p1
+.method public static bridge synthetic q(Landroid/graphics/Canvas;Landroid/graphics/Path;)V
+    .locals 0
 
-    .line 26
-    :catch_1
-    move-exception p1
+    .line 1
+    invoke-virtual {p0, p1}, Landroid/graphics/Canvas;->clipOutPath(Landroid/graphics/Path;)Z
 
-    .line 27
-    iput-object p1, p0, Lcoil/decode/b;->d:Ljava/lang/Object;
+    return-void
+.end method
 
-    .line 28
-    .line 29
-    throw p1
+.method public static bridge synthetic r(Landroid/media/AudioManager;Landroid/media/AudioFocusRequest;)V
+    .locals 0
 
-    .line 30
-    nop
+    .line 1
+    invoke-virtual {p0, p1}, Landroid/media/AudioManager;->abandonAudioFocusRequest(Landroid/media/AudioFocusRequest;)I
 
-    .line 31
-    :pswitch_data_0
-    .packed-switch 0x0
-        :pswitch_0
-    .end packed-switch
+    return-void
+.end method
+
+.method public static bridge synthetic s(Landroid/view/Window;Landroid/graphics/Rect;Landroid/graphics/Bitmap;Landroid/view/PixelCopy$OnPixelCopyFinishedListener;Landroid/os/Handler;)V
+    .locals 0
+
+    .line 1
+    invoke-static {p0, p1, p2, p3, p4}, Landroid/view/PixelCopy;->request(Landroid/view/Window;Landroid/graphics/Rect;Landroid/graphics/Bitmap;Landroid/view/PixelCopy$OnPixelCopyFinishedListener;Landroid/os/Handler;)V
+
+    return-void
+.end method
+
+.method public static bridge synthetic t(Landroid/widget/VideoView;I)V
+    .locals 0
+
+    .line 1
+    invoke-virtual {p0, p1}, Landroid/widget/VideoView;->setAudioFocusRequest(I)V
+
+    return-void
+.end method
+
+.method public static bridge synthetic u(Landroid/content/pm/ShortcutManager;)Z
+    .locals 0
+
+    .line 1
+    invoke-virtual {p0}, Landroid/content/pm/ShortcutManager;->isRequestPinShortcutSupported()Z
+
+    move-result p0
+
+    return p0
+.end method
+
+.method public static bridge synthetic v(Landroid/content/res/Configuration;)Z
+    .locals 0
+
+    .line 1
+    invoke-virtual {p0}, Landroid/content/res/Configuration;->isScreenHdr()Z
+
+    move-result p0
+
+    return p0
+.end method
+
+.method public static bridge synthetic w(Landroid/webkit/RenderProcessGoneDetail;)Z
+    .locals 0
+
+    .line 1
+    invoke-virtual {p0}, Landroid/webkit/RenderProcessGoneDetail;->didCrash()Z
+
+    move-result p0
+
+    return p0
+.end method
+
+.method public static bridge synthetic x()Ljava/time/format/DateTimeFormatter;
+    .locals 1
+
+    .line 1
+    sget-object v0, Ljava/time/format/DateTimeFormatter;->ISO_DATE:Ljava/time/format/DateTimeFormatter;
+
+    return-object v0
+.end method
+
+.method public static bridge synthetic y(Landroid/animation/Animator$AnimatorListener;Lcom/bytedance/adsdk/NOt/Ht/ZRu;Z)V
+    .locals 0
+
+    .line 1
+    invoke-interface {p0, p1, p2}, Landroid/animation/Animator$AnimatorListener;->onAnimationStart(Landroid/animation/Animator;Z)V
+
+    return-void
+.end method
+
+.method public static bridge synthetic z(Landroid/content/Context;Landroid/content/BroadcastReceiver;Landroid/content/IntentFilter;)V
+    .locals 1
+
+    .line 1
+    const/4 v0, 0x2
+
+    invoke-virtual {p0, p1, p2, v0}, Landroid/content/Context;->registerReceiver(Landroid/content/BroadcastReceiver;Landroid/content/IntentFilter;I)Landroid/content/Intent;
+
+    return-void
 .end method

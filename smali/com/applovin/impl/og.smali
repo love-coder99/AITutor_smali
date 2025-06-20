@@ -69,10 +69,10 @@
 .method public a(Landroid/webkit/WebView;)Lcom/iab/omid/library/applovin/adsession/AdSessionContext;
     .locals 4
 
+    .line 3
     :try_start_0
     iget-object p1, p0, Lcom/applovin/impl/lg;->b:Lcom/applovin/impl/sdk/j;
 
-    .line 3
     invoke-virtual {p1}, Lcom/applovin/impl/sdk/j;->V()Lcom/applovin/impl/pg;
 
     move-result-object p1

@@ -191,14 +191,19 @@
     .line 7
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
+    .line 8
     iput-object p1, p0, Lcom/applovin/impl/v7;->a:Ljava/lang/String;
 
+    .line 9
     iput-object p2, p0, Lcom/applovin/impl/v7;->b:Ljava/lang/String;
 
+    .line 10
     iput-wide p3, p0, Lcom/applovin/impl/v7;->c:J
 
+    .line 11
     iput-wide p5, p0, Lcom/applovin/impl/v7;->d:J
 
+    .line 12
     iput-object p7, p0, Lcom/applovin/impl/v7;->f:[B
 
     return-void
@@ -210,7 +215,7 @@
     .locals 0
 
     .line 1
-    invoke-static {p0, p1}, Lcom/applovin/impl/ns;->a(Lcom/applovin/impl/af$b;Lcom/applovin/impl/ud$b;)V
+    invoke-static {p0, p1}, Lcom/applovin/impl/F;->a(Lcom/applovin/impl/af$b;Lcom/applovin/impl/ud$b;)V
 
     return-void
 .end method
@@ -249,18 +254,18 @@
     .line 4
     .line 5
     .line 6
-    invoke-virtual {v0}, Ljava/lang/String;->hashCode()I
+    const/4 v1, -0x1
 
     .line 7
+    invoke-virtual {v0}, Ljava/lang/String;->hashCode()I
+
     .line 8
     .line 9
-    move-result v1
-
     .line 10
-    const/4 v2, -0x1
+    move-result v2
 
     .line 11
-    sparse-switch v1, :sswitch_data_0
+    sparse-switch v2, :sswitch_data_0
 
     .line 12
     .line 13
@@ -269,11 +274,11 @@
 
     .line 15
     :sswitch_0
-    const-string v1, "https://developer.apple.com/streaming/emsg-id3"
+    const-string v2, "https://developer.apple.com/streaming/emsg-id3"
 
     .line 16
     .line 17
-    invoke-virtual {v0, v1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+    invoke-virtual {v0, v2}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
     .line 18
     .line 19
@@ -289,18 +294,18 @@
 
     .line 24
     :cond_0
-    const/4 v2, 0x2
+    const/4 v1, 0x2
 
     .line 25
     goto :goto_0
 
     .line 26
     :sswitch_1
-    const-string v1, "https://aomedia.org/emsg/ID3"
+    const-string v2, "https://aomedia.org/emsg/ID3"
 
     .line 27
     .line 28
-    invoke-virtual {v0, v1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+    invoke-virtual {v0, v2}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
     .line 29
     .line 30
@@ -316,18 +321,18 @@
 
     .line 35
     :cond_1
-    const/4 v2, 0x1
+    const/4 v1, 0x1
 
     .line 36
     goto :goto_0
 
     .line 37
     :sswitch_2
-    const-string v1, "urn:scte:scte35:2014:bin"
+    const-string v2, "urn:scte:scte35:2014:bin"
 
     .line 38
     .line 39
-    invoke-virtual {v0, v1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+    invoke-virtual {v0, v2}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
     .line 40
     .line 41
@@ -343,11 +348,11 @@
 
     .line 46
     :cond_2
-    const/4 v2, 0x0
+    const/4 v1, 0x0
 
     .line 47
     :goto_0
-    packed-switch v2, :pswitch_data_0
+    packed-switch v1, :pswitch_data_0
 
     .line 48
     .line 49

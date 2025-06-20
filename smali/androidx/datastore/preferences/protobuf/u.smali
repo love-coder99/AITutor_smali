@@ -1,1835 +1,1394 @@
-.class public final Landroidx/datastore/preferences/protobuf/u;
-.super Landroidx/datastore/preferences/protobuf/v;
+.class public final Landroidx/datastore/preferences/protobuf/U;
+.super Ljava/lang/Object;
 .source "SourceFile"
 
 
-# instance fields
-.field public final d:[B
-
-.field public final e:I
-
-.field public f:I
-
-.field public final g:Ljava/io/OutputStream;
-
-
 # direct methods
-.method public constructor <init>(Landroidx/datastore/core/o;I)V
-    .locals 1
+.method public static a(Ljava/lang/Object;ILjava/lang/Object;)I
+    .locals 19
 
     .line 1
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    const/4 v0, 0x2
 
     .line 2
+    const/4 v1, 0x1
+
     .line 3
+    move-object/from16 v2, p0
+
     .line 4
-    if-ltz p2, :cond_0
-
     .line 5
+    check-cast v2, Landroidx/datastore/preferences/protobuf/MapFieldLite;
+
     .line 6
-    const/16 v0, 0x14
-
     .line 7
-    .line 8
-    invoke-static {p2, v0}, Ljava/lang/Math;->max(II)I
+    move-object/from16 v3, p2
 
+    .line 8
     .line 9
+    check-cast v3, Landroidx/datastore/preferences/protobuf/T;
+
     .line 10
     .line 11
-    move-result p2
+    invoke-virtual {v2}, Ljava/util/AbstractMap;->isEmpty()Z
 
     .line 12
-    new-array v0, p2, [B
-
     .line 13
     .line 14
-    iput-object v0, p0, Landroidx/datastore/preferences/protobuf/u;->d:[B
+    move-result v4
 
     .line 15
+    const/4 v5, 0x0
+
     .line 16
-    iput p2, p0, Landroidx/datastore/preferences/protobuf/u;->e:I
+    if-eqz v4, :cond_0
 
     .line 17
     .line 18
-    iput-object p1, p0, Landroidx/datastore/preferences/protobuf/u;->g:Ljava/io/OutputStream;
+    goto/16 :goto_9
 
     .line 19
     .line 20
-    return-void
+    :cond_0
+    invoke-virtual {v2}, Landroidx/datastore/preferences/protobuf/MapFieldLite;->entrySet()Ljava/util/Set;
 
     .line 21
-    :cond_0
-    new-instance p1, Ljava/lang/IllegalArgumentException;
-
     .line 22
     .line 23
-    const-string p2, "bufferSize must be >= 0"
+    move-result-object v2
 
     .line 24
-    .line 25
-    invoke-direct {p1, p2}, Ljava/lang/IllegalArgumentException;-><init>(Ljava/lang/String;)V
+    invoke-interface {v2}, Ljava/util/Set;->iterator()Ljava/util/Iterator;
 
+    .line 25
     .line 26
     .line 27
+    move-result-object v2
+
     .line 28
-    throw p1
-.end method
-
-
-# virtual methods
-.method public final A(IZ)V
-    .locals 1
-
-    .line 1
-    const/16 v0, 0xb
-
-    .line 2
-    .line 3
-    invoke-virtual {p0, v0}, Landroidx/datastore/preferences/protobuf/u;->Z(I)V
-
-    .line 4
-    .line 5
-    .line 6
-    const/4 v0, 0x0
-
-    .line 7
-    invoke-virtual {p0, p1, v0}, Landroidx/datastore/preferences/protobuf/u;->V(II)V
-
-    .line 8
-    .line 9
-    .line 10
-    int-to-byte p1, p2
-
-    .line 11
-    iget p2, p0, Landroidx/datastore/preferences/protobuf/u;->f:I
-
-    .line 12
-    .line 13
-    add-int/lit8 v0, p2, 0x1
-
-    .line 14
-    .line 15
-    iput v0, p0, Landroidx/datastore/preferences/protobuf/u;->f:I
-
-    .line 16
-    .line 17
-    iget-object v0, p0, Landroidx/datastore/preferences/protobuf/u;->d:[B
-
-    .line 18
-    .line 19
-    aput-byte p1, v0, p2
-
-    .line 20
-    .line 21
-    return-void
-.end method
-
-.method public final B(I[B)V
-    .locals 1
-
-    .line 1
-    invoke-virtual {p0, p1}, Landroidx/datastore/preferences/protobuf/u;->Q(I)V
-
-    .line 2
-    .line 3
-    .line 4
-    const/4 v0, 0x0
-
-    .line 5
-    invoke-virtual {p0, p2, v0, p1}, Landroidx/datastore/preferences/protobuf/u;->a0([BII)V
-
-    .line 6
-    .line 7
-    .line 8
-    return-void
-.end method
-
-.method public final C(ILandroidx/datastore/preferences/protobuf/ByteString;)V
-    .locals 1
-
-    .line 1
-    const/4 v0, 0x2
-
-    .line 2
-    invoke-virtual {p0, p1, v0}, Landroidx/datastore/preferences/protobuf/u;->O(II)V
-
-    .line 3
-    .line 4
-    .line 5
-    invoke-virtual {p0, p2}, Landroidx/datastore/preferences/protobuf/u;->D(Landroidx/datastore/preferences/protobuf/ByteString;)V
-
-    .line 6
-    .line 7
-    .line 8
-    return-void
-.end method
-
-.method public final D(Landroidx/datastore/preferences/protobuf/ByteString;)V
-    .locals 1
-
-    .line 1
-    invoke-virtual {p1}, Landroidx/datastore/preferences/protobuf/ByteString;->size()I
-
-    .line 2
-    .line 3
-    .line 4
-    move-result v0
-
-    .line 5
-    invoke-virtual {p0, v0}, Landroidx/datastore/preferences/protobuf/u;->Q(I)V
-
-    .line 6
-    .line 7
-    .line 8
-    invoke-virtual {p1, p0}, Landroidx/datastore/preferences/protobuf/ByteString;->writeTo(Landroidx/datastore/preferences/protobuf/g;)V
-
-    .line 9
-    .line 10
-    .line 11
-    return-void
-.end method
-
-.method public final E(II)V
-    .locals 1
-
-    .line 1
-    const/16 v0, 0xe
-
-    .line 2
-    .line 3
-    invoke-virtual {p0, v0}, Landroidx/datastore/preferences/protobuf/u;->Z(I)V
-
-    .line 4
-    .line 5
-    .line 6
-    const/4 v0, 0x5
-
-    .line 7
-    invoke-virtual {p0, p1, v0}, Landroidx/datastore/preferences/protobuf/u;->V(II)V
-
-    .line 8
-    .line 9
-    .line 10
-    invoke-virtual {p0, p2}, Landroidx/datastore/preferences/protobuf/u;->T(I)V
-
-    .line 11
-    .line 12
-    .line 13
-    return-void
-.end method
-
-.method public final F(I)V
-    .locals 1
-
-    .line 1
-    const/4 v0, 0x4
-
-    .line 2
-    invoke-virtual {p0, v0}, Landroidx/datastore/preferences/protobuf/u;->Z(I)V
-
-    .line 3
-    .line 4
-    .line 5
-    invoke-virtual {p0, p1}, Landroidx/datastore/preferences/protobuf/u;->T(I)V
-
-    .line 6
-    .line 7
-    .line 8
-    return-void
-.end method
-
-.method public final G(IJ)V
-    .locals 1
-
-    .line 1
-    const/16 v0, 0x12
-
-    .line 2
-    .line 3
-    invoke-virtual {p0, v0}, Landroidx/datastore/preferences/protobuf/u;->Z(I)V
-
-    .line 4
-    .line 5
-    .line 6
-    const/4 v0, 0x1
-
-    .line 7
-    invoke-virtual {p0, p1, v0}, Landroidx/datastore/preferences/protobuf/u;->V(II)V
-
-    .line 8
-    .line 9
-    .line 10
-    invoke-virtual {p0, p2, p3}, Landroidx/datastore/preferences/protobuf/u;->U(J)V
-
-    .line 11
-    .line 12
-    .line 13
-    return-void
-.end method
-
-.method public final H(J)V
-    .locals 1
-
-    .line 1
-    const/16 v0, 0x8
-
-    .line 2
-    .line 3
-    invoke-virtual {p0, v0}, Landroidx/datastore/preferences/protobuf/u;->Z(I)V
-
-    .line 4
-    .line 5
-    .line 6
-    invoke-virtual {p0, p1, p2}, Landroidx/datastore/preferences/protobuf/u;->U(J)V
-
-    .line 7
-    .line 8
-    .line 9
-    return-void
-.end method
-
-.method public final I(II)V
-    .locals 1
-
-    .line 1
-    const/16 v0, 0x14
-
-    .line 2
-    .line 3
-    invoke-virtual {p0, v0}, Landroidx/datastore/preferences/protobuf/u;->Z(I)V
-
-    .line 4
-    .line 5
-    .line 6
-    const/4 v0, 0x0
-
-    .line 7
-    invoke-virtual {p0, p1, v0}, Landroidx/datastore/preferences/protobuf/u;->V(II)V
-
-    .line 8
-    .line 9
-    .line 10
-    if-ltz p2, :cond_0
-
-    .line 11
-    .line 12
-    invoke-virtual {p0, p2}, Landroidx/datastore/preferences/protobuf/u;->W(I)V
-
-    .line 13
-    .line 14
-    .line 15
-    goto :goto_0
-
-    .line 16
-    :cond_0
-    int-to-long p1, p2
-
-    .line 17
-    invoke-virtual {p0, p1, p2}, Landroidx/datastore/preferences/protobuf/u;->X(J)V
-
-    .line 18
-    .line 19
-    .line 20
     :goto_0
-    return-void
-.end method
+    invoke-interface {v2}, Ljava/util/Iterator;->hasNext()Z
 
-.method public final J(I)V
-    .locals 2
-
-    .line 1
-    if-ltz p1, :cond_0
-
-    .line 2
-    .line 3
-    invoke-virtual {p0, p1}, Landroidx/datastore/preferences/protobuf/u;->Q(I)V
-
-    .line 4
-    .line 5
-    .line 6
-    goto :goto_0
-
-    .line 7
-    :cond_0
-    int-to-long v0, p1
-
-    .line 8
-    invoke-virtual {p0, v0, v1}, Landroidx/datastore/preferences/protobuf/u;->S(J)V
-
-    .line 9
-    .line 10
-    .line 11
-    :goto_0
-    return-void
-.end method
-
-.method public final K(ILandroidx/datastore/preferences/protobuf/a1;Landroidx/datastore/preferences/protobuf/r1;)V
-    .locals 1
-
-    .line 1
-    const/4 v0, 0x2
-
-    .line 2
-    invoke-virtual {p0, p1, v0}, Landroidx/datastore/preferences/protobuf/u;->O(II)V
-
-    .line 3
-    .line 4
-    .line 5
-    move-object p1, p2
-
-    .line 6
-    check-cast p1, Landroidx/datastore/preferences/protobuf/b;
-
-    .line 7
-    .line 8
-    invoke-virtual {p1, p3}, Landroidx/datastore/preferences/protobuf/b;->a(Landroidx/datastore/preferences/protobuf/r1;)I
-
-    .line 9
-    .line 10
-    .line 11
-    move-result p1
-
-    .line 12
-    invoke-virtual {p0, p1}, Landroidx/datastore/preferences/protobuf/u;->Q(I)V
-
-    .line 13
-    .line 14
-    .line 15
-    iget-object p1, p0, Landroidx/datastore/preferences/protobuf/v;->a:Landroidx/datastore/preferences/protobuf/o1;
-
-    .line 16
-    .line 17
-    invoke-interface {p3, p2, p1}, Landroidx/datastore/preferences/protobuf/r1;->i(Ljava/lang/Object;Landroidx/datastore/preferences/protobuf/o1;)V
-
-    .line 18
-    .line 19
-    .line 20
-    return-void
-.end method
-
-.method public final L(Landroidx/datastore/preferences/protobuf/a1;)V
-    .locals 1
-
-    .line 1
-    check-cast p1, Landroidx/datastore/preferences/protobuf/i0;
-
-    .line 2
-    .line 3
-    invoke-virtual {p1}, Landroidx/datastore/preferences/protobuf/i0;->d()I
-
-    .line 4
-    .line 5
-    .line 6
-    move-result v0
-
-    .line 7
-    invoke-virtual {p0, v0}, Landroidx/datastore/preferences/protobuf/u;->Q(I)V
-
-    .line 8
-    .line 9
-    .line 10
-    invoke-virtual {p1, p0}, Landroidx/datastore/preferences/protobuf/i0;->h(Landroidx/datastore/preferences/protobuf/v;)V
-
-    .line 11
-    .line 12
-    .line 13
-    return-void
-.end method
-
-.method public final M(ILjava/lang/String;)V
-    .locals 1
-
-    .line 1
-    const/4 v0, 0x2
-
-    .line 2
-    invoke-virtual {p0, p1, v0}, Landroidx/datastore/preferences/protobuf/u;->O(II)V
-
-    .line 3
-    .line 4
-    .line 5
-    invoke-virtual {p0, p2}, Landroidx/datastore/preferences/protobuf/u;->N(Ljava/lang/String;)V
-
-    .line 6
-    .line 7
-    .line 8
-    return-void
-.end method
-
-.method public final N(Ljava/lang/String;)V
-    .locals 6
-
-    .line 1
-    :try_start_0
-    invoke-virtual {p1}, Ljava/lang/String;->length()I
-
-    .line 2
-    .line 3
-    .line 4
-    move-result v0
-
-    .line 5
-    mul-int/lit8 v0, v0, 0x3
-
-    .line 6
-    .line 7
-    invoke-static {v0}, Landroidx/datastore/preferences/protobuf/v;->v(I)I
-
-    .line 8
-    .line 9
-    .line 10
-    move-result v1
-    :try_end_0
-    .catch Landroidx/datastore/preferences/protobuf/Utf8$UnpairedSurrogateException; {:try_start_0 .. :try_end_0} :catch_0
-
-    .line 11
-    add-int v2, v1, v0
-
-    .line 12
-    .line 13
-    iget v3, p0, Landroidx/datastore/preferences/protobuf/u;->e:I
-
-    .line 14
-    .line 15
-    if-le v2, v3, :cond_0
-
-    .line 16
-    .line 17
-    :try_start_1
-    new-array v1, v0, [B
-
-    .line 18
-    .line 19
-    sget-object v2, Landroidx/datastore/preferences/protobuf/k2;->a:Landroidx/datastore/preferences/protobuf/j2;
-
-    .line 20
-    .line 21
-    const/4 v3, 0x0
-
-    .line 22
-    invoke-virtual {v2, p1, v1, v3, v0}, Landroidx/datastore/preferences/protobuf/j2;->d0(Ljava/lang/CharSequence;[BII)I
-
-    .line 23
-    .line 24
-    .line 25
-    move-result v0
-
-    .line 26
-    invoke-virtual {p0, v0}, Landroidx/datastore/preferences/protobuf/u;->Q(I)V
-
-    .line 27
-    .line 28
     .line 29
-    invoke-virtual {p0, v1, v3, v0}, Landroidx/datastore/preferences/protobuf/u;->a0([BII)V
-
     .line 30
     .line 31
+    move-result v4
+
     .line 32
-    return-void
+    if-eqz v4, :cond_7
 
     .line 33
-    :catch_0
-    move-exception v0
-
     .line 34
-    goto :goto_2
+    invoke-interface {v2}, Ljava/util/Iterator;->next()Ljava/lang/Object;
 
     .line 35
-    :cond_0
-    iget v0, p0, Landroidx/datastore/preferences/protobuf/u;->f:I
-
     .line 36
     .line 37
-    sub-int v0, v3, v0
+    move-result-object v4
 
     .line 38
+    check-cast v4, Ljava/util/Map$Entry;
+
     .line 39
-    if-le v2, v0, :cond_1
-
     .line 40
-    .line 41
-    invoke-virtual {p0}, Landroidx/datastore/preferences/protobuf/u;->Y()V
+    invoke-interface {v4}, Ljava/util/Map$Entry;->getKey()Ljava/lang/Object;
 
+    .line 41
     .line 42
     .line 43
+    move-result-object v6
+
     .line 44
-    :cond_1
-    invoke-virtual {p1}, Ljava/lang/String;->length()I
+    invoke-interface {v4}, Ljava/util/Map$Entry;->getValue()Ljava/lang/Object;
 
     .line 45
     .line 46
     .line 47
-    move-result v0
+    move-result-object v4
 
     .line 48
-    invoke-static {v0}, Landroidx/datastore/preferences/protobuf/v;->v(I)I
+    invoke-virtual {v3}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
     .line 49
     .line 50
     .line 51
-    move-result v0
+    invoke-static/range {p1 .. p1}, Landroidx/datastore/preferences/protobuf/w;->s(I)I
 
     .line 52
-    iget v2, p0, Landroidx/datastore/preferences/protobuf/u;->f:I
-    :try_end_1
-    .catch Landroidx/datastore/preferences/protobuf/Utf8$UnpairedSurrogateException; {:try_start_1 .. :try_end_1} :catch_0
-
     .line 53
     .line 54
-    iget-object v4, p0, Landroidx/datastore/preferences/protobuf/u;->d:[B
+    move-result v7
 
     .line 55
+    iget-object v8, v3, Landroidx/datastore/preferences/protobuf/T;->a:Landroidx/datastore/preferences/protobuf/S;
+
     .line 56
-    if-ne v0, v1, :cond_2
-
     .line 57
+    sget v9, Landroidx/datastore/preferences/protobuf/C;->c:I
+
     .line 58
-    add-int v1, v2, v0
-
     .line 59
-    .line 60
-    :try_start_2
-    iput v1, p0, Landroidx/datastore/preferences/protobuf/u;->f:I
+    invoke-static {v1}, Landroidx/datastore/preferences/protobuf/w;->s(I)I
 
+    .line 60
     .line 61
     .line 62
-    sub-int/2addr v3, v1
+    move-result v9
 
     .line 63
-    sget-object v5, Landroidx/datastore/preferences/protobuf/k2;->a:Landroidx/datastore/preferences/protobuf/j2;
+    sget-object v10, Landroidx/datastore/preferences/protobuf/WireFormat$FieldType;->GROUP:Landroidx/datastore/preferences/protobuf/WireFormat$FieldType;
 
     .line 64
     .line 65
-    invoke-virtual {v5, p1, v4, v1, v3}, Landroidx/datastore/preferences/protobuf/j2;->d0(Ljava/lang/CharSequence;[BII)I
+    iget-object v11, v8, Landroidx/datastore/preferences/protobuf/S;->a:Landroidx/datastore/preferences/protobuf/WireFormat$FieldType;
 
     .line 66
     .line 67
-    .line 68
-    move-result v1
+    if-ne v11, v10, :cond_1
 
+    .line 68
     .line 69
-    iput v2, p0, Landroidx/datastore/preferences/protobuf/u;->f:I
+    mul-int/lit8 v9, v9, 0x2
 
     .line 70
     .line 71
-    sub-int v3, v1, v2
+    :cond_1
+    sget-object v12, Landroidx/datastore/preferences/protobuf/B;->b:[I
 
     .line 72
     .line 73
-    sub-int/2addr v3, v0
+    invoke-virtual {v11}, Ljava/lang/Enum;->ordinal()I
 
     .line 74
-    invoke-virtual {p0, v3}, Landroidx/datastore/preferences/protobuf/u;->W(I)V
-
     .line 75
     .line 76
+    move-result v11
+
     .line 77
-    iput v1, p0, Landroidx/datastore/preferences/protobuf/u;->f:I
+    aget v11, v12, v11
 
     .line 78
     .line 79
-    goto :goto_3
+    const-string v14, "There is no way to get here, but the compiler thinks otherwise."
 
     .line 80
-    :catch_1
-    move-exception v0
-
     .line 81
-    goto :goto_0
+    const/16 v16, 0x4
 
     .line 82
-    :catch_2
-    move-exception v0
-
     .line 83
-    goto :goto_1
+    const/4 v15, 0x0
 
     .line 84
-    :cond_2
-    invoke-static {p1}, Landroidx/datastore/preferences/protobuf/k2;->c(Ljava/lang/CharSequence;)I
+    packed-switch v11, :pswitch_data_0
 
     .line 85
     .line 86
     .line 87
-    move-result v0
+    new-instance v0, Ljava/lang/RuntimeException;
 
     .line 88
-    invoke-virtual {p0, v0}, Landroidx/datastore/preferences/protobuf/u;->W(I)V
-
     .line 89
+    invoke-direct {v0, v14}, Ljava/lang/RuntimeException;-><init>(Ljava/lang/String;)V
+
     .line 90
     .line 91
-    iget v1, p0, Landroidx/datastore/preferences/protobuf/u;->f:I
-
     .line 92
+    throw v0
+
     .line 93
-    sget-object v3, Landroidx/datastore/preferences/protobuf/k2;->a:Landroidx/datastore/preferences/protobuf/j2;
+    :pswitch_0
+    check-cast v6, Ljava/lang/Integer;
 
     .line 94
     .line 95
-    invoke-virtual {v3, p1, v4, v1, v0}, Landroidx/datastore/preferences/protobuf/j2;->d0(Ljava/lang/CharSequence;[BII)I
+    invoke-virtual {v6}, Ljava/lang/Integer;->intValue()I
 
     .line 96
     .line 97
     .line 98
-    move-result v0
+    move-result v6
 
     .line 99
-    iput v0, p0, Landroidx/datastore/preferences/protobuf/u;->f:I
-    :try_end_2
-    .catch Landroidx/datastore/preferences/protobuf/Utf8$UnpairedSurrogateException; {:try_start_2 .. :try_end_2} :catch_2
-    .catch Ljava/lang/ArrayIndexOutOfBoundsException; {:try_start_2 .. :try_end_2} :catch_1
+    move-object/from16 p2, v14
 
     .line 100
     .line 101
-    goto :goto_3
+    int-to-long v13, v6
 
     .line 102
-    :goto_0
-    :try_start_3
-    new-instance v1, Landroidx/datastore/preferences/protobuf/CodedOutputStream$OutOfSpaceException;
+    invoke-static {v13, v14}, Landroidx/datastore/preferences/protobuf/w;->w(J)I
 
     .line 103
     .line 104
-    invoke-direct {v1, v0}, Landroidx/datastore/preferences/protobuf/CodedOutputStream$OutOfSpaceException;-><init>(Ljava/lang/Throwable;)V
-
     .line 105
-    .line 106
-    .line 107
-    throw v1
+    move-result v6
 
+    .line 106
+    goto/16 :goto_4
+
+    .line 107
     .line 108
-    :goto_1
-    iput v2, p0, Landroidx/datastore/preferences/protobuf/u;->f:I
+    :pswitch_1
+    move-object/from16 p2, v14
 
     .line 109
     .line 110
-    throw v0
-    :try_end_3
-    .catch Landroidx/datastore/preferences/protobuf/Utf8$UnpairedSurrogateException; {:try_start_3 .. :try_end_3} :catch_0
+    check-cast v6, Ljava/lang/Long;
 
     .line 111
-    :goto_2
-    invoke-virtual {p0, p1, v0}, Landroidx/datastore/preferences/protobuf/v;->y(Ljava/lang/String;Landroidx/datastore/preferences/protobuf/Utf8$UnpairedSurrogateException;)V
-
     .line 112
+    invoke-virtual {v6}, Ljava/lang/Long;->longValue()J
+
     .line 113
     .line 114
-    :goto_3
-    return-void
-.end method
-
-.method public final O(II)V
-    .locals 0
-
-    .line 1
-    shl-int/lit8 p1, p1, 0x3
-
-    .line 2
-    .line 3
-    or-int/2addr p1, p2
-
-    .line 4
-    invoke-virtual {p0, p1}, Landroidx/datastore/preferences/protobuf/u;->Q(I)V
-
-    .line 5
-    .line 6
-    .line 7
-    return-void
-.end method
-
-.method public final P(II)V
-    .locals 1
-
-    .line 1
-    const/16 v0, 0x14
-
-    .line 2
-    .line 3
-    invoke-virtual {p0, v0}, Landroidx/datastore/preferences/protobuf/u;->Z(I)V
-
-    .line 4
-    .line 5
-    .line 6
-    const/4 v0, 0x0
-
-    .line 7
-    invoke-virtual {p0, p1, v0}, Landroidx/datastore/preferences/protobuf/u;->V(II)V
-
-    .line 8
-    .line 9
-    .line 10
-    invoke-virtual {p0, p2}, Landroidx/datastore/preferences/protobuf/u;->W(I)V
-
-    .line 11
-    .line 12
-    .line 13
-    return-void
-.end method
-
-.method public final Q(I)V
-    .locals 1
-
-    .line 1
-    const/4 v0, 0x5
-
-    .line 2
-    invoke-virtual {p0, v0}, Landroidx/datastore/preferences/protobuf/u;->Z(I)V
-
-    .line 3
-    .line 4
-    .line 5
-    invoke-virtual {p0, p1}, Landroidx/datastore/preferences/protobuf/u;->W(I)V
-
-    .line 6
-    .line 7
-    .line 8
-    return-void
-.end method
-
-.method public final R(IJ)V
-    .locals 1
-
-    .line 1
-    const/16 v0, 0x14
-
-    .line 2
-    .line 3
-    invoke-virtual {p0, v0}, Landroidx/datastore/preferences/protobuf/u;->Z(I)V
-
-    .line 4
-    .line 5
-    .line 6
-    const/4 v0, 0x0
-
-    .line 7
-    invoke-virtual {p0, p1, v0}, Landroidx/datastore/preferences/protobuf/u;->V(II)V
-
-    .line 8
-    .line 9
-    .line 10
-    invoke-virtual {p0, p2, p3}, Landroidx/datastore/preferences/protobuf/u;->X(J)V
-
-    .line 11
-    .line 12
-    .line 13
-    return-void
-.end method
-
-.method public final S(J)V
-    .locals 1
-
-    .line 1
-    const/16 v0, 0xa
-
-    .line 2
-    .line 3
-    invoke-virtual {p0, v0}, Landroidx/datastore/preferences/protobuf/u;->Z(I)V
-
-    .line 4
-    .line 5
-    .line 6
-    invoke-virtual {p0, p1, p2}, Landroidx/datastore/preferences/protobuf/u;->X(J)V
-
-    .line 7
-    .line 8
-    .line 9
-    return-void
-.end method
-
-.method public final T(I)V
-    .locals 5
-
-    .line 1
-    iget v0, p0, Landroidx/datastore/preferences/protobuf/u;->f:I
-
-    .line 2
-    .line 3
-    add-int/lit8 v1, v0, 0x1
-
-    .line 4
-    .line 5
-    and-int/lit16 v2, p1, 0xff
-
-    .line 6
-    .line 7
-    int-to-byte v2, v2
-
-    .line 8
-    iget-object v3, p0, Landroidx/datastore/preferences/protobuf/u;->d:[B
-
-    .line 9
-    .line 10
-    aput-byte v2, v3, v0
-
-    .line 11
-    .line 12
-    add-int/lit8 v2, v0, 0x2
-
-    .line 13
-    .line 14
-    shr-int/lit8 v4, p1, 0x8
-
-    .line 15
-    .line 16
-    and-int/lit16 v4, v4, 0xff
-
-    .line 17
-    .line 18
-    int-to-byte v4, v4
-
-    .line 19
-    aput-byte v4, v3, v1
-
-    .line 20
-    .line 21
-    add-int/lit8 v1, v0, 0x3
-
-    .line 22
-    .line 23
-    shr-int/lit8 v4, p1, 0x10
-
-    .line 24
-    .line 25
-    and-int/lit16 v4, v4, 0xff
-
-    .line 26
-    .line 27
-    int-to-byte v4, v4
-
-    .line 28
-    aput-byte v4, v3, v2
-
-    .line 29
-    .line 30
-    add-int/lit8 v0, v0, 0x4
-
-    .line 31
-    .line 32
-    iput v0, p0, Landroidx/datastore/preferences/protobuf/u;->f:I
-
-    .line 33
-    .line 34
-    shr-int/lit8 p1, p1, 0x18
-
-    .line 35
-    .line 36
-    and-int/lit16 p1, p1, 0xff
-
-    .line 37
-    .line 38
-    int-to-byte p1, p1
-
-    .line 39
-    aput-byte p1, v3, v1
-
-    .line 40
-    .line 41
-    return-void
-.end method
-
-.method public final U(J)V
-    .locals 9
-
-    .line 1
-    iget v0, p0, Landroidx/datastore/preferences/protobuf/u;->f:I
-
-    .line 2
-    .line 3
-    add-int/lit8 v1, v0, 0x1
-
-    .line 4
-    .line 5
-    const-wide/16 v2, 0xff
-
-    .line 6
-    .line 7
-    and-long v4, p1, v2
-
-    .line 8
-    .line 9
-    long-to-int v5, v4
-
-    .line 10
-    int-to-byte v4, v5
-
-    .line 11
-    iget-object v5, p0, Landroidx/datastore/preferences/protobuf/u;->d:[B
-
-    .line 12
-    .line 13
-    aput-byte v4, v5, v0
-
-    .line 14
-    .line 15
-    add-int/lit8 v4, v0, 0x2
-
-    .line 16
-    .line 17
+    .line 115
+    move-result-wide v13
+
+    .line 116
+    shl-long v17, v13, v1
+
+    .line 117
+    .line 118
+    const/16 v6, 0x3f
+
+    .line 119
+    .line 120
+    shr-long/2addr v13, v6
+
+    .line 121
+    xor-long v13, v17, v13
+
+    .line 122
+    .line 123
+    invoke-static {v13, v14}, Landroidx/datastore/preferences/protobuf/w;->w(J)I
+
+    .line 124
+    .line 125
+    .line 126
+    move-result v6
+
+    .line 127
+    goto/16 :goto_4
+
+    .line 128
+    .line 129
+    :pswitch_2
+    move-object/from16 p2, v14
+
+    .line 130
+    .line 131
+    check-cast v6, Ljava/lang/Integer;
+
+    .line 132
+    .line 133
+    invoke-virtual {v6}, Ljava/lang/Integer;->intValue()I
+
+    .line 134
+    .line 135
+    .line 136
+    move-result v6
+
+    .line 137
+    shl-int/lit8 v13, v6, 0x1
+
+    .line 138
+    .line 139
+    shr-int/lit8 v6, v6, 0x1f
+
+    .line 140
+    .line 141
+    xor-int/2addr v6, v13
+
+    .line 142
+    invoke-static {v6}, Landroidx/datastore/preferences/protobuf/w;->u(I)I
+
+    .line 143
+    .line 144
+    .line 145
+    move-result v6
+
+    .line 146
+    goto/16 :goto_4
+
+    .line 147
+    .line 148
+    :pswitch_3
+    move-object/from16 p2, v14
+
+    .line 149
+    .line 150
+    check-cast v6, Ljava/lang/Long;
+
+    .line 151
+    .line 152
+    invoke-virtual {v6}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    .line 153
+    .line 154
+    .line 155
+    :goto_1
     const/16 v6, 0x8
 
-    .line 18
-    .line 19
-    shr-long v7, p1, v6
+    .line 156
+    .line 157
+    goto/16 :goto_4
 
-    .line 20
-    .line 21
-    and-long/2addr v7, v2
+    .line 158
+    .line 159
+    :pswitch_4
+    move-object/from16 p2, v14
 
-    .line 22
-    long-to-int v8, v7
+    .line 160
+    .line 161
+    check-cast v6, Ljava/lang/Integer;
 
-    .line 23
-    int-to-byte v7, v8
+    .line 162
+    .line 163
+    invoke-virtual {v6}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
-    .line 24
-    aput-byte v7, v5, v1
+    .line 164
+    .line 165
+    .line 166
+    :goto_2
+    const/4 v6, 0x4
 
-    .line 25
-    .line 26
-    add-int/lit8 v1, v0, 0x3
+    .line 167
+    goto/16 :goto_4
 
-    .line 27
-    .line 28
-    const/16 v7, 0x10
+    .line 168
+    .line 169
+    :pswitch_5
+    move-object/from16 p2, v14
 
-    .line 29
-    .line 30
-    shr-long v7, p1, v7
+    .line 170
+    .line 171
+    check-cast v6, Ljava/lang/Integer;
 
-    .line 31
-    .line 32
-    and-long/2addr v7, v2
+    .line 172
+    .line 173
+    invoke-virtual {v6}, Ljava/lang/Integer;->intValue()I
 
-    .line 33
-    long-to-int v8, v7
+    .line 174
+    .line 175
+    .line 176
+    move-result v6
 
-    .line 34
-    int-to-byte v7, v8
+    .line 177
+    invoke-static {v6}, Landroidx/datastore/preferences/protobuf/w;->u(I)I
 
-    .line 35
-    aput-byte v7, v5, v4
+    .line 178
+    .line 179
+    .line 180
+    move-result v6
 
-    .line 36
-    .line 37
-    add-int/lit8 v4, v0, 0x4
+    .line 181
+    goto/16 :goto_4
 
-    .line 38
-    .line 39
-    const/16 v7, 0x18
+    .line 182
+    .line 183
+    :pswitch_6
+    move-object/from16 p2, v14
 
-    .line 40
-    .line 41
-    shr-long v7, p1, v7
+    .line 184
+    .line 185
+    instance-of v13, v6, Landroidx/datastore/preferences/protobuf/ByteString;
 
-    .line 42
-    .line 43
-    and-long/2addr v2, v7
+    .line 186
+    .line 187
+    if-eqz v13, :cond_2
 
-    .line 44
-    long-to-int v3, v2
+    .line 188
+    .line 189
+    check-cast v6, Landroidx/datastore/preferences/protobuf/ByteString;
 
-    .line 45
-    int-to-byte v2, v3
+    .line 190
+    .line 191
+    invoke-virtual {v6}, Landroidx/datastore/preferences/protobuf/ByteString;->size()I
 
-    .line 46
-    aput-byte v2, v5, v1
+    .line 192
+    .line 193
+    .line 194
+    move-result v6
 
-    .line 47
-    .line 48
-    add-int/lit8 v1, v0, 0x5
+    .line 195
+    invoke-static {v6}, Landroidx/datastore/preferences/protobuf/w;->u(I)I
 
-    .line 49
-    .line 50
-    const/16 v2, 0x20
+    .line 196
+    .line 197
+    .line 198
+    move-result v13
 
-    .line 51
-    .line 52
-    shr-long v2, p1, v2
+    .line 199
+    :goto_3
+    add-int/2addr v6, v13
 
-    .line 53
-    .line 54
-    long-to-int v3, v2
+    .line 200
+    goto/16 :goto_4
 
-    .line 55
-    and-int/lit16 v2, v3, 0xff
+    .line 201
+    .line 202
+    :cond_2
+    check-cast v6, [B
 
-    .line 56
-    .line 57
-    int-to-byte v2, v2
+    .line 203
+    .line 204
+    array-length v6, v6
 
-    .line 58
-    aput-byte v2, v5, v4
+    .line 205
+    invoke-static {v6}, Landroidx/datastore/preferences/protobuf/w;->u(I)I
 
-    .line 59
-    .line 60
-    add-int/lit8 v2, v0, 0x6
+    .line 206
+    .line 207
+    .line 208
+    move-result v13
 
-    .line 61
-    .line 62
-    const/16 v3, 0x28
+    .line 209
+    goto :goto_3
 
-    .line 63
-    .line 64
-    shr-long v3, p1, v3
+    .line 210
+    :pswitch_7
+    move-object/from16 p2, v14
 
-    .line 65
-    .line 66
-    long-to-int v4, v3
+    .line 211
+    .line 212
+    instance-of v13, v6, Landroidx/datastore/preferences/protobuf/ByteString;
 
-    .line 67
-    and-int/lit16 v3, v4, 0xff
+    .line 213
+    .line 214
+    if-eqz v13, :cond_3
 
-    .line 68
-    .line 69
-    int-to-byte v3, v3
+    .line 215
+    .line 216
+    check-cast v6, Landroidx/datastore/preferences/protobuf/ByteString;
 
-    .line 70
-    aput-byte v3, v5, v1
+    .line 217
+    .line 218
+    invoke-virtual {v6}, Landroidx/datastore/preferences/protobuf/ByteString;->size()I
 
-    .line 71
-    .line 72
-    add-int/lit8 v1, v0, 0x7
+    .line 219
+    .line 220
+    .line 221
+    move-result v6
 
-    .line 73
-    .line 74
-    const/16 v3, 0x30
+    .line 222
+    invoke-static {v6}, Landroidx/datastore/preferences/protobuf/w;->u(I)I
 
-    .line 75
-    .line 76
-    shr-long v3, p1, v3
+    .line 223
+    .line 224
+    .line 225
+    move-result v13
 
-    .line 77
-    .line 78
-    long-to-int v4, v3
+    .line 226
+    goto :goto_3
 
-    .line 79
-    and-int/lit16 v3, v4, 0xff
+    .line 227
+    :cond_3
+    check-cast v6, Ljava/lang/String;
 
-    .line 80
-    .line 81
-    int-to-byte v3, v3
+    .line 228
+    .line 229
+    invoke-static {v6}, Landroidx/datastore/preferences/protobuf/w;->r(Ljava/lang/String;)I
 
-    .line 82
-    aput-byte v3, v5, v2
+    .line 230
+    .line 231
+    .line 232
+    move-result v6
 
-    .line 83
-    .line 84
-    add-int/2addr v0, v6
+    .line 233
+    goto/16 :goto_4
 
-    .line 85
-    iput v0, p0, Landroidx/datastore/preferences/protobuf/u;->f:I
+    .line 234
+    .line 235
+    :pswitch_8
+    move-object/from16 p2, v14
 
-    .line 86
-    .line 87
-    const/16 v0, 0x38
+    .line 236
+    .line 237
+    check-cast v6, Landroidx/datastore/preferences/protobuf/X;
 
-    .line 88
-    .line 89
-    shr-long/2addr p1, v0
+    .line 238
+    .line 239
+    check-cast v6, Landroidx/datastore/preferences/protobuf/H;
 
-    .line 90
-    long-to-int p2, p1
+    .line 240
+    .line 241
+    invoke-virtual {v6, v15}, Landroidx/datastore/preferences/protobuf/H;->a(Landroidx/datastore/preferences/protobuf/l0;)I
 
-    .line 91
-    and-int/lit16 p1, p2, 0xff
+    .line 242
+    .line 243
+    .line 244
+    move-result v6
 
-    .line 92
-    .line 93
-    int-to-byte p1, p1
+    .line 245
+    invoke-static {v6}, Landroidx/datastore/preferences/protobuf/w;->u(I)I
 
-    .line 94
-    aput-byte p1, v5, v1
+    .line 246
+    .line 247
+    .line 248
+    move-result v13
 
-    .line 95
-    .line 96
-    return-void
+    .line 249
+    goto :goto_3
+
+    .line 250
+    :pswitch_9
+    move-object/from16 p2, v14
+
+    .line 251
+    .line 252
+    check-cast v6, Landroidx/datastore/preferences/protobuf/X;
+
+    .line 253
+    .line 254
+    check-cast v6, Landroidx/datastore/preferences/protobuf/H;
+
+    .line 255
+    .line 256
+    invoke-virtual {v6, v15}, Landroidx/datastore/preferences/protobuf/H;->a(Landroidx/datastore/preferences/protobuf/l0;)I
+
+    .line 257
+    .line 258
+    .line 259
+    move-result v6
+
+    .line 260
+    goto :goto_4
+
+    .line 261
+    :pswitch_a
+    move-object/from16 p2, v14
+
+    .line 262
+    .line 263
+    check-cast v6, Ljava/lang/Boolean;
+
+    .line 264
+    .line 265
+    invoke-virtual {v6}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    .line 266
+    .line 267
+    .line 268
+    const/4 v6, 0x1
+
+    .line 269
+    goto :goto_4
+
+    .line 270
+    :pswitch_b
+    move-object/from16 p2, v14
+
+    .line 271
+    .line 272
+    check-cast v6, Ljava/lang/Integer;
+
+    .line 273
+    .line 274
+    invoke-virtual {v6}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    .line 275
+    .line 276
+    .line 277
+    goto :goto_2
+
+    .line 278
+    :pswitch_c
+    move-object/from16 p2, v14
+
+    .line 279
+    .line 280
+    check-cast v6, Ljava/lang/Long;
+
+    .line 281
+    .line 282
+    invoke-virtual {v6}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    .line 283
+    .line 284
+    .line 285
+    goto/16 :goto_1
+
+    .line 286
+    .line 287
+    :pswitch_d
+    move-object/from16 p2, v14
+
+    .line 288
+    .line 289
+    check-cast v6, Ljava/lang/Integer;
+
+    .line 290
+    .line 291
+    invoke-virtual {v6}, Ljava/lang/Integer;->intValue()I
+
+    .line 292
+    .line 293
+    .line 294
+    move-result v6
+
+    .line 295
+    int-to-long v13, v6
+
+    .line 296
+    invoke-static {v13, v14}, Landroidx/datastore/preferences/protobuf/w;->w(J)I
+
+    .line 297
+    .line 298
+    .line 299
+    move-result v6
+
+    .line 300
+    goto :goto_4
+
+    .line 301
+    :pswitch_e
+    move-object/from16 p2, v14
+
+    .line 302
+    .line 303
+    check-cast v6, Ljava/lang/Long;
+
+    .line 304
+    .line 305
+    invoke-virtual {v6}, Ljava/lang/Long;->longValue()J
+
+    .line 306
+    .line 307
+    .line 308
+    move-result-wide v13
+
+    .line 309
+    invoke-static {v13, v14}, Landroidx/datastore/preferences/protobuf/w;->w(J)I
+
+    .line 310
+    .line 311
+    .line 312
+    move-result v6
+
+    .line 313
+    goto :goto_4
+
+    .line 314
+    :pswitch_f
+    move-object/from16 p2, v14
+
+    .line 315
+    .line 316
+    check-cast v6, Ljava/lang/Long;
+
+    .line 317
+    .line 318
+    invoke-virtual {v6}, Ljava/lang/Long;->longValue()J
+
+    .line 319
+    .line 320
+    .line 321
+    move-result-wide v13
+
+    .line 322
+    invoke-static {v13, v14}, Landroidx/datastore/preferences/protobuf/w;->w(J)I
+
+    .line 323
+    .line 324
+    .line 325
+    move-result v6
+
+    .line 326
+    goto :goto_4
+
+    .line 327
+    :pswitch_10
+    move-object/from16 p2, v14
+
+    .line 328
+    .line 329
+    check-cast v6, Ljava/lang/Float;
+
+    .line 330
+    .line 331
+    invoke-virtual {v6}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    .line 332
+    .line 333
+    .line 334
+    goto/16 :goto_2
+
+    .line 335
+    .line 336
+    :pswitch_11
+    move-object/from16 p2, v14
+
+    .line 337
+    .line 338
+    check-cast v6, Ljava/lang/Double;
+
+    .line 339
+    .line 340
+    invoke-virtual {v6}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    .line 341
+    .line 342
+    .line 343
+    goto/16 :goto_1
+
+    .line 344
+    .line 345
+    :goto_4
+    add-int/2addr v6, v9
+
+    .line 346
+    invoke-static {v0}, Landroidx/datastore/preferences/protobuf/w;->s(I)I
+
+    .line 347
+    .line 348
+    .line 349
+    move-result v9
+
+    .line 350
+    iget-object v8, v8, Landroidx/datastore/preferences/protobuf/S;->b:Landroidx/datastore/preferences/protobuf/WireFormat$FieldType;
+
+    .line 351
+    .line 352
+    if-ne v8, v10, :cond_4
+
+    .line 353
+    .line 354
+    mul-int/lit8 v9, v9, 0x2
+
+    .line 355
+    .line 356
+    :cond_4
+    invoke-virtual {v8}, Ljava/lang/Enum;->ordinal()I
+
+    .line 357
+    .line 358
+    .line 359
+    move-result v8
+
+    .line 360
+    aget v8, v12, v8
+
+    .line 361
+    .line 362
+    packed-switch v8, :pswitch_data_1
+
+    .line 363
+    .line 364
+    .line 365
+    new-instance v0, Ljava/lang/RuntimeException;
+
+    .line 366
+    .line 367
+    move-object/from16 v1, p2
+
+    .line 368
+    .line 369
+    invoke-direct {v0, v1}, Ljava/lang/RuntimeException;-><init>(Ljava/lang/String;)V
+
+    .line 370
+    .line 371
+    .line 372
+    throw v0
+
+    .line 373
+    :pswitch_12
+    check-cast v4, Ljava/lang/Integer;
+
+    .line 374
+    .line 375
+    invoke-virtual {v4}, Ljava/lang/Integer;->intValue()I
+
+    .line 376
+    .line 377
+    .line 378
+    move-result v4
+
+    .line 379
+    int-to-long v10, v4
+
+    .line 380
+    invoke-static {v10, v11}, Landroidx/datastore/preferences/protobuf/w;->w(J)I
+
+    .line 381
+    .line 382
+    .line 383
+    move-result v15
+
+    .line 384
+    goto/16 :goto_8
+
+    .line 385
+    .line 386
+    :pswitch_13
+    check-cast v4, Ljava/lang/Long;
+
+    .line 387
+    .line 388
+    invoke-virtual {v4}, Ljava/lang/Long;->longValue()J
+
+    .line 389
+    .line 390
+    .line 391
+    move-result-wide v12
+
+    .line 392
+    shl-long v14, v12, v1
+
+    .line 393
+    .line 394
+    const/16 v4, 0x3f
+
+    .line 395
+    .line 396
+    shr-long v10, v12, v4
+
+    .line 397
+    .line 398
+    xor-long/2addr v10, v14
+
+    .line 399
+    invoke-static {v10, v11}, Landroidx/datastore/preferences/protobuf/w;->w(J)I
+
+    .line 400
+    .line 401
+    .line 402
+    move-result v15
+
+    .line 403
+    goto/16 :goto_8
+
+    .line 404
+    .line 405
+    :pswitch_14
+    check-cast v4, Ljava/lang/Integer;
+
+    .line 406
+    .line 407
+    invoke-virtual {v4}, Ljava/lang/Integer;->intValue()I
+
+    .line 408
+    .line 409
+    .line 410
+    move-result v4
+
+    .line 411
+    shl-int/lit8 v8, v4, 0x1
+
+    .line 412
+    .line 413
+    shr-int/lit8 v4, v4, 0x1f
+
+    .line 414
+    .line 415
+    xor-int/2addr v4, v8
+
+    .line 416
+    invoke-static {v4}, Landroidx/datastore/preferences/protobuf/w;->u(I)I
+
+    .line 417
+    .line 418
+    .line 419
+    move-result v15
+
+    .line 420
+    goto/16 :goto_8
+
+    .line 421
+    .line 422
+    :pswitch_15
+    check-cast v4, Ljava/lang/Long;
+
+    .line 423
+    .line 424
+    invoke-virtual {v4}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    .line 425
+    .line 426
+    .line 427
+    :goto_5
+    const/16 v15, 0x8
+
+    .line 428
+    .line 429
+    goto/16 :goto_8
+
+    .line 430
+    .line 431
+    :pswitch_16
+    check-cast v4, Ljava/lang/Integer;
+
+    .line 432
+    .line 433
+    invoke-virtual {v4}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    .line 434
+    .line 435
+    .line 436
+    :goto_6
+    const/4 v15, 0x4
+
+    .line 437
+    goto/16 :goto_8
+
+    .line 438
+    .line 439
+    :pswitch_17
+    check-cast v4, Ljava/lang/Integer;
+
+    .line 440
+    .line 441
+    invoke-virtual {v4}, Ljava/lang/Integer;->intValue()I
+
+    .line 442
+    .line 443
+    .line 444
+    move-result v4
+
+    .line 445
+    invoke-static {v4}, Landroidx/datastore/preferences/protobuf/w;->u(I)I
+
+    .line 446
+    .line 447
+    .line 448
+    move-result v15
+
+    .line 449
+    goto/16 :goto_8
+
+    .line 450
+    .line 451
+    :pswitch_18
+    instance-of v8, v4, Landroidx/datastore/preferences/protobuf/ByteString;
+
+    .line 452
+    .line 453
+    if-eqz v8, :cond_5
+
+    .line 454
+    .line 455
+    check-cast v4, Landroidx/datastore/preferences/protobuf/ByteString;
+
+    .line 456
+    .line 457
+    invoke-virtual {v4}, Landroidx/datastore/preferences/protobuf/ByteString;->size()I
+
+    .line 458
+    .line 459
+    .line 460
+    move-result v4
+
+    .line 461
+    invoke-static {v4}, Landroidx/datastore/preferences/protobuf/w;->u(I)I
+
+    .line 462
+    .line 463
+    .line 464
+    move-result v8
+
+    .line 465
+    :goto_7
+    add-int v15, v8, v4
+
+    .line 466
+    .line 467
+    goto/16 :goto_8
+
+    .line 468
+    .line 469
+    :cond_5
+    check-cast v4, [B
+
+    .line 470
+    .line 471
+    array-length v4, v4
+
+    .line 472
+    invoke-static {v4}, Landroidx/datastore/preferences/protobuf/w;->u(I)I
+
+    .line 473
+    .line 474
+    .line 475
+    move-result v8
+
+    .line 476
+    goto :goto_7
+
+    .line 477
+    :pswitch_19
+    instance-of v8, v4, Landroidx/datastore/preferences/protobuf/ByteString;
+
+    .line 478
+    .line 479
+    if-eqz v8, :cond_6
+
+    .line 480
+    .line 481
+    check-cast v4, Landroidx/datastore/preferences/protobuf/ByteString;
+
+    .line 482
+    .line 483
+    invoke-virtual {v4}, Landroidx/datastore/preferences/protobuf/ByteString;->size()I
+
+    .line 484
+    .line 485
+    .line 486
+    move-result v4
+
+    .line 487
+    invoke-static {v4}, Landroidx/datastore/preferences/protobuf/w;->u(I)I
+
+    .line 488
+    .line 489
+    .line 490
+    move-result v8
+
+    .line 491
+    goto :goto_7
+
+    .line 492
+    :cond_6
+    check-cast v4, Ljava/lang/String;
+
+    .line 493
+    .line 494
+    invoke-static {v4}, Landroidx/datastore/preferences/protobuf/w;->r(Ljava/lang/String;)I
+
+    .line 495
+    .line 496
+    .line 497
+    move-result v15
+
+    .line 498
+    goto :goto_8
+
+    .line 499
+    :pswitch_1a
+    check-cast v4, Landroidx/datastore/preferences/protobuf/X;
+
+    .line 500
+    .line 501
+    check-cast v4, Landroidx/datastore/preferences/protobuf/H;
+
+    .line 502
+    .line 503
+    invoke-virtual {v4, v15}, Landroidx/datastore/preferences/protobuf/H;->a(Landroidx/datastore/preferences/protobuf/l0;)I
+
+    .line 504
+    .line 505
+    .line 506
+    move-result v4
+
+    .line 507
+    invoke-static {v4}, Landroidx/datastore/preferences/protobuf/w;->u(I)I
+
+    .line 508
+    .line 509
+    .line 510
+    move-result v8
+
+    .line 511
+    goto :goto_7
+
+    .line 512
+    :pswitch_1b
+    check-cast v4, Landroidx/datastore/preferences/protobuf/X;
+
+    .line 513
+    .line 514
+    check-cast v4, Landroidx/datastore/preferences/protobuf/H;
+
+    .line 515
+    .line 516
+    invoke-virtual {v4, v15}, Landroidx/datastore/preferences/protobuf/H;->a(Landroidx/datastore/preferences/protobuf/l0;)I
+
+    .line 517
+    .line 518
+    .line 519
+    move-result v15
+
+    .line 520
+    goto :goto_8
+
+    .line 521
+    :pswitch_1c
+    check-cast v4, Ljava/lang/Boolean;
+
+    .line 522
+    .line 523
+    invoke-virtual {v4}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    .line 524
+    .line 525
+    .line 526
+    const/4 v15, 0x1
+
+    .line 527
+    goto :goto_8
+
+    .line 528
+    :pswitch_1d
+    check-cast v4, Ljava/lang/Integer;
+
+    .line 529
+    .line 530
+    invoke-virtual {v4}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    .line 531
+    .line 532
+    .line 533
+    goto :goto_6
+
+    .line 534
+    :pswitch_1e
+    check-cast v4, Ljava/lang/Long;
+
+    .line 535
+    .line 536
+    invoke-virtual {v4}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    .line 537
+    .line 538
+    .line 539
+    goto :goto_5
+
+    .line 540
+    :pswitch_1f
+    check-cast v4, Ljava/lang/Integer;
+
+    .line 541
+    .line 542
+    invoke-virtual {v4}, Ljava/lang/Integer;->intValue()I
+
+    .line 543
+    .line 544
+    .line 545
+    move-result v4
+
+    .line 546
+    int-to-long v10, v4
+
+    .line 547
+    invoke-static {v10, v11}, Landroidx/datastore/preferences/protobuf/w;->w(J)I
+
+    .line 548
+    .line 549
+    .line 550
+    move-result v15
+
+    .line 551
+    goto :goto_8
+
+    .line 552
+    :pswitch_20
+    check-cast v4, Ljava/lang/Long;
+
+    .line 553
+    .line 554
+    invoke-virtual {v4}, Ljava/lang/Long;->longValue()J
+
+    .line 555
+    .line 556
+    .line 557
+    move-result-wide v10
+
+    .line 558
+    invoke-static {v10, v11}, Landroidx/datastore/preferences/protobuf/w;->w(J)I
+
+    .line 559
+    .line 560
+    .line 561
+    move-result v15
+
+    .line 562
+    goto :goto_8
+
+    .line 563
+    :pswitch_21
+    check-cast v4, Ljava/lang/Long;
+
+    .line 564
+    .line 565
+    invoke-virtual {v4}, Ljava/lang/Long;->longValue()J
+
+    .line 566
+    .line 567
+    .line 568
+    move-result-wide v10
+
+    .line 569
+    invoke-static {v10, v11}, Landroidx/datastore/preferences/protobuf/w;->w(J)I
+
+    .line 570
+    .line 571
+    .line 572
+    move-result v15
+
+    .line 573
+    goto :goto_8
+
+    .line 574
+    :pswitch_22
+    check-cast v4, Ljava/lang/Float;
+
+    .line 575
+    .line 576
+    invoke-virtual {v4}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    .line 577
+    .line 578
+    .line 579
+    goto/16 :goto_6
+
+    .line 580
+    .line 581
+    :pswitch_23
+    check-cast v4, Ljava/lang/Double;
+
+    .line 582
+    .line 583
+    invoke-virtual {v4}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    .line 584
+    .line 585
+    .line 586
+    goto/16 :goto_5
+
+    .line 587
+    .line 588
+    :goto_8
+    add-int/2addr v15, v9
+
+    .line 589
+    add-int/2addr v15, v6
+
+    .line 590
+    invoke-static {v15}, Landroidx/datastore/preferences/protobuf/w;->u(I)I
+
+    .line 591
+    .line 592
+    .line 593
+    move-result v4
+
+    .line 594
+    add-int/2addr v4, v15
+
+    .line 595
+    add-int/2addr v4, v7
+
+    .line 596
+    add-int/2addr v5, v4
+
+    .line 597
+    goto/16 :goto_0
+
+    .line 598
+    .line 599
+    :cond_7
+    :goto_9
+    return v5
+
+    .line 600
+    nop
+
+    .line 601
+    :pswitch_data_0
+    .packed-switch 0x1
+        :pswitch_11
+        :pswitch_10
+        :pswitch_f
+        :pswitch_e
+        :pswitch_d
+        :pswitch_c
+        :pswitch_b
+        :pswitch_a
+        :pswitch_9
+        :pswitch_8
+        :pswitch_7
+        :pswitch_6
+        :pswitch_5
+        :pswitch_4
+        :pswitch_3
+        :pswitch_2
+        :pswitch_1
+        :pswitch_0
+    .end packed-switch
+
+    .line 602
+    .line 603
+    .line 604
+    .line 605
+    .line 606
+    .line 607
+    .line 608
+    .line 609
+    .line 610
+    .line 611
+    .line 612
+    .line 613
+    .line 614
+    .line 615
+    .line 616
+    .line 617
+    .line 618
+    .line 619
+    .line 620
+    .line 621
+    .line 622
+    .line 623
+    .line 624
+    .line 625
+    .line 626
+    .line 627
+    .line 628
+    .line 629
+    .line 630
+    .line 631
+    .line 632
+    .line 633
+    .line 634
+    .line 635
+    .line 636
+    .line 637
+    .line 638
+    .line 639
+    .line 640
+    .line 641
+    :pswitch_data_1
+    .packed-switch 0x1
+        :pswitch_23
+        :pswitch_22
+        :pswitch_21
+        :pswitch_20
+        :pswitch_1f
+        :pswitch_1e
+        :pswitch_1d
+        :pswitch_1c
+        :pswitch_1b
+        :pswitch_1a
+        :pswitch_19
+        :pswitch_18
+        :pswitch_17
+        :pswitch_16
+        :pswitch_15
+        :pswitch_14
+        :pswitch_13
+        :pswitch_12
+    .end packed-switch
 .end method
 
-.method public final V(II)V
+.method public static b(Ljava/lang/Object;)V
     .locals 0
 
     .line 1
-    shl-int/lit8 p1, p1, 0x3
+    check-cast p0, Landroidx/datastore/preferences/protobuf/MapFieldLite;
 
     .line 2
     .line 3
-    or-int/2addr p1, p2
-
-    .line 4
-    invoke-virtual {p0, p1}, Landroidx/datastore/preferences/protobuf/u;->W(I)V
-
-    .line 5
-    .line 6
-    .line 7
-    return-void
-.end method
-
-.method public final W(I)V
-    .locals 4
-
-    .line 1
-    sget-boolean v0, Landroidx/datastore/preferences/protobuf/v;->c:Z
-
-    .line 2
-    .line 3
-    iget-object v1, p0, Landroidx/datastore/preferences/protobuf/u;->d:[B
+    invoke-virtual {p0}, Landroidx/datastore/preferences/protobuf/MapFieldLite;->makeImmutable()V
 
     .line 4
     .line 5
-    if-eqz v0, :cond_1
-
     .line 6
-    .line 7
-    :goto_0
-    and-int/lit8 v0, p1, -0x80
-
-    .line 8
-    .line 9
-    if-nez v0, :cond_0
-
-    .line 10
-    .line 11
-    iget v0, p0, Landroidx/datastore/preferences/protobuf/u;->f:I
-
-    .line 12
-    .line 13
-    add-int/lit8 v2, v0, 0x1
-
-    .line 14
-    .line 15
-    iput v2, p0, Landroidx/datastore/preferences/protobuf/u;->f:I
-
-    .line 16
-    .line 17
-    int-to-long v2, v0
-
-    .line 18
-    int-to-byte p1, p1
-
-    .line 19
-    invoke-static {v1, v2, v3, p1}, Landroidx/datastore/preferences/protobuf/i2;->m([BJB)V
-
-    .line 20
-    .line 21
-    .line 22
-    goto :goto_2
-
-    .line 23
-    :cond_0
-    iget v0, p0, Landroidx/datastore/preferences/protobuf/u;->f:I
-
-    .line 24
-    .line 25
-    add-int/lit8 v2, v0, 0x1
-
-    .line 26
-    .line 27
-    iput v2, p0, Landroidx/datastore/preferences/protobuf/u;->f:I
-
-    .line 28
-    .line 29
-    int-to-long v2, v0
-
-    .line 30
-    and-int/lit8 v0, p1, 0x7f
-
-    .line 31
-    .line 32
-    or-int/lit16 v0, v0, 0x80
-
-    .line 33
-    .line 34
-    int-to-byte v0, v0
-
-    .line 35
-    invoke-static {v1, v2, v3, v0}, Landroidx/datastore/preferences/protobuf/i2;->m([BJB)V
-
-    .line 36
-    .line 37
-    .line 38
-    ushr-int/lit8 p1, p1, 0x7
-
-    .line 39
-    .line 40
-    goto :goto_0
-
-    .line 41
-    :cond_1
-    :goto_1
-    and-int/lit8 v0, p1, -0x80
-
-    .line 42
-    .line 43
-    if-nez v0, :cond_2
-
-    .line 44
-    .line 45
-    iget v0, p0, Landroidx/datastore/preferences/protobuf/u;->f:I
-
-    .line 46
-    .line 47
-    add-int/lit8 v2, v0, 0x1
-
-    .line 48
-    .line 49
-    iput v2, p0, Landroidx/datastore/preferences/protobuf/u;->f:I
-
-    .line 50
-    .line 51
-    int-to-byte p1, p1
-
-    .line 52
-    aput-byte p1, v1, v0
-
-    .line 53
-    .line 54
-    :goto_2
-    return-void
-
-    .line 55
-    :cond_2
-    iget v0, p0, Landroidx/datastore/preferences/protobuf/u;->f:I
-
-    .line 56
-    .line 57
-    add-int/lit8 v2, v0, 0x1
-
-    .line 58
-    .line 59
-    iput v2, p0, Landroidx/datastore/preferences/protobuf/u;->f:I
-
-    .line 60
-    .line 61
-    and-int/lit8 v2, p1, 0x7f
-
-    .line 62
-    .line 63
-    or-int/lit16 v2, v2, 0x80
-
-    .line 64
-    .line 65
-    int-to-byte v2, v2
-
-    .line 66
-    aput-byte v2, v1, v0
-
-    .line 67
-    .line 68
-    ushr-int/lit8 p1, p1, 0x7
-
-    .line 69
-    .line 70
-    goto :goto_1
-.end method
-
-.method public final X(J)V
-    .locals 9
-
-    .line 1
-    sget-boolean v0, Landroidx/datastore/preferences/protobuf/v;->c:Z
-
-    .line 2
-    .line 3
-    const/4 v1, 0x7
-
-    .line 4
-    const-wide/16 v2, 0x0
-
-    .line 5
-    .line 6
-    const-wide/16 v4, -0x80
-
-    .line 7
-    .line 8
-    iget-object v6, p0, Landroidx/datastore/preferences/protobuf/u;->d:[B
-
-    .line 9
-    .line 10
-    if-eqz v0, :cond_1
-
-    .line 11
-    .line 12
-    :goto_0
-    and-long v7, p1, v4
-
-    .line 13
-    .line 14
-    cmp-long v0, v7, v2
-
-    .line 15
-    .line 16
-    if-nez v0, :cond_0
-
-    .line 17
-    .line 18
-    iget v0, p0, Landroidx/datastore/preferences/protobuf/u;->f:I
-
-    .line 19
-    .line 20
-    add-int/lit8 v1, v0, 0x1
-
-    .line 21
-    .line 22
-    iput v1, p0, Landroidx/datastore/preferences/protobuf/u;->f:I
-
-    .line 23
-    .line 24
-    int-to-long v0, v0
-
-    .line 25
-    long-to-int p2, p1
-
-    .line 26
-    int-to-byte p1, p2
-
-    .line 27
-    invoke-static {v6, v0, v1, p1}, Landroidx/datastore/preferences/protobuf/i2;->m([BJB)V
-
-    .line 28
-    .line 29
-    .line 30
-    goto :goto_2
-
-    .line 31
-    :cond_0
-    iget v0, p0, Landroidx/datastore/preferences/protobuf/u;->f:I
-
-    .line 32
-    .line 33
-    add-int/lit8 v7, v0, 0x1
-
-    .line 34
-    .line 35
-    iput v7, p0, Landroidx/datastore/preferences/protobuf/u;->f:I
-
-    .line 36
-    .line 37
-    int-to-long v7, v0
-
-    .line 38
-    long-to-int v0, p1
-
-    .line 39
-    and-int/lit8 v0, v0, 0x7f
-
-    .line 40
-    .line 41
-    or-int/lit16 v0, v0, 0x80
-
-    .line 42
-    .line 43
-    int-to-byte v0, v0
-
-    .line 44
-    invoke-static {v6, v7, v8, v0}, Landroidx/datastore/preferences/protobuf/i2;->m([BJB)V
-
-    .line 45
-    .line 46
-    .line 47
-    ushr-long/2addr p1, v1
-
-    .line 48
-    goto :goto_0
-
-    .line 49
-    :cond_1
-    :goto_1
-    and-long v7, p1, v4
-
-    .line 50
-    .line 51
-    cmp-long v0, v7, v2
-
-    .line 52
-    .line 53
-    if-nez v0, :cond_2
-
-    .line 54
-    .line 55
-    iget v0, p0, Landroidx/datastore/preferences/protobuf/u;->f:I
-
-    .line 56
-    .line 57
-    add-int/lit8 v1, v0, 0x1
-
-    .line 58
-    .line 59
-    iput v1, p0, Landroidx/datastore/preferences/protobuf/u;->f:I
-
-    .line 60
-    .line 61
-    long-to-int p2, p1
-
-    .line 62
-    int-to-byte p1, p2
-
-    .line 63
-    aput-byte p1, v6, v0
-
-    .line 64
-    .line 65
-    :goto_2
-    return-void
-
-    .line 66
-    :cond_2
-    iget v0, p0, Landroidx/datastore/preferences/protobuf/u;->f:I
-
-    .line 67
-    .line 68
-    add-int/lit8 v7, v0, 0x1
-
-    .line 69
-    .line 70
-    iput v7, p0, Landroidx/datastore/preferences/protobuf/u;->f:I
-
-    .line 71
-    .line 72
-    long-to-int v7, p1
-
-    .line 73
-    and-int/lit8 v7, v7, 0x7f
-
-    .line 74
-    .line 75
-    or-int/lit16 v7, v7, 0x80
-
-    .line 76
-    .line 77
-    int-to-byte v7, v7
-
-    .line 78
-    aput-byte v7, v6, v0
-
-    .line 79
-    .line 80
-    ushr-long/2addr p1, v1
-
-    .line 81
-    goto :goto_1
-.end method
-
-.method public final Y()V
-    .locals 4
-
-    .line 1
-    iget v0, p0, Landroidx/datastore/preferences/protobuf/u;->f:I
-
-    .line 2
-    .line 3
-    iget-object v1, p0, Landroidx/datastore/preferences/protobuf/u;->g:Ljava/io/OutputStream;
-
-    .line 4
-    .line 5
-    iget-object v2, p0, Landroidx/datastore/preferences/protobuf/u;->d:[B
-
-    .line 6
-    .line 7
-    const/4 v3, 0x0
-
-    .line 8
-    invoke-virtual {v1, v2, v3, v0}, Ljava/io/OutputStream;->write([BII)V
-
-    .line 9
-    .line 10
-    .line 11
-    iput v3, p0, Landroidx/datastore/preferences/protobuf/u;->f:I
-
-    .line 12
-    .line 13
-    return-void
-.end method
-
-.method public final Z(I)V
-    .locals 2
-
-    .line 1
-    iget v0, p0, Landroidx/datastore/preferences/protobuf/u;->e:I
-
-    .line 2
-    .line 3
-    iget v1, p0, Landroidx/datastore/preferences/protobuf/u;->f:I
-
-    .line 4
-    .line 5
-    sub-int/2addr v0, v1
-
-    .line 6
-    if-ge v0, p1, :cond_0
-
-    .line 7
-    .line 8
-    invoke-virtual {p0}, Landroidx/datastore/preferences/protobuf/u;->Y()V
-
-    .line 9
-    .line 10
-    .line 11
-    :cond_0
-    return-void
-.end method
-
-.method public final a(II[B)V
-    .locals 0
-
-    .line 1
-    invoke-virtual {p0, p3, p1, p2}, Landroidx/datastore/preferences/protobuf/u;->a0([BII)V
-
-    .line 2
-    .line 3
-    .line 4
-    return-void
-.end method
-
-.method public final a0([BII)V
-    .locals 4
-
-    .line 1
-    iget v0, p0, Landroidx/datastore/preferences/protobuf/u;->f:I
-
-    .line 2
-    .line 3
-    iget v1, p0, Landroidx/datastore/preferences/protobuf/u;->e:I
-
-    .line 4
-    .line 5
-    sub-int v2, v1, v0
-
-    .line 6
-    .line 7
-    iget-object v3, p0, Landroidx/datastore/preferences/protobuf/u;->d:[B
-
-    .line 8
-    .line 9
-    if-lt v2, p3, :cond_0
-
-    .line 10
-    .line 11
-    invoke-static {p1, p2, v3, v0, p3}, Ljava/lang/System;->arraycopy(Ljava/lang/Object;ILjava/lang/Object;II)V
-
-    .line 12
-    .line 13
-    .line 14
-    iget p1, p0, Landroidx/datastore/preferences/protobuf/u;->f:I
-
-    .line 15
-    .line 16
-    add-int/2addr p1, p3
-
-    .line 17
-    iput p1, p0, Landroidx/datastore/preferences/protobuf/u;->f:I
-
-    .line 18
-    .line 19
-    goto :goto_0
-
-    .line 20
-    :cond_0
-    invoke-static {p1, p2, v3, v0, v2}, Ljava/lang/System;->arraycopy(Ljava/lang/Object;ILjava/lang/Object;II)V
-
-    .line 21
-    .line 22
-    .line 23
-    add-int/2addr p2, v2
-
-    .line 24
-    sub-int/2addr p3, v2
-
-    .line 25
-    iput v1, p0, Landroidx/datastore/preferences/protobuf/u;->f:I
-
-    .line 26
-    .line 27
-    invoke-virtual {p0}, Landroidx/datastore/preferences/protobuf/u;->Y()V
-
-    .line 28
-    .line 29
-    .line 30
-    if-gt p3, v1, :cond_1
-
-    .line 31
-    .line 32
-    const/4 v0, 0x0
-
-    .line 33
-    invoke-static {p1, p2, v3, v0, p3}, Ljava/lang/System;->arraycopy(Ljava/lang/Object;ILjava/lang/Object;II)V
-
-    .line 34
-    .line 35
-    .line 36
-    iput p3, p0, Landroidx/datastore/preferences/protobuf/u;->f:I
-
-    .line 37
-    .line 38
-    goto :goto_0
-
-    .line 39
-    :cond_1
-    iget-object v0, p0, Landroidx/datastore/preferences/protobuf/u;->g:Ljava/io/OutputStream;
-
-    .line 40
-    .line 41
-    invoke-virtual {v0, p1, p2, p3}, Ljava/io/OutputStream;->write([BII)V
-
-    .line 42
-    .line 43
-    .line 44
-    :goto_0
-    return-void
-.end method
-
-.method public final b(Ljava/nio/ByteBuffer;)V
-    .locals 5
-
-    .line 1
-    invoke-virtual {p1}, Ljava/nio/Buffer;->remaining()I
-
-    .line 2
-    .line 3
-    .line 4
-    move-result v0
-
-    .line 5
-    iget v1, p0, Landroidx/datastore/preferences/protobuf/u;->f:I
-
-    .line 6
-    .line 7
-    iget v2, p0, Landroidx/datastore/preferences/protobuf/u;->e:I
-
-    .line 8
-    .line 9
-    sub-int v3, v2, v1
-
-    .line 10
-    .line 11
-    iget-object v4, p0, Landroidx/datastore/preferences/protobuf/u;->d:[B
-
-    .line 12
-    .line 13
-    if-lt v3, v0, :cond_0
-
-    .line 14
-    .line 15
-    invoke-virtual {p1, v4, v1, v0}, Ljava/nio/ByteBuffer;->get([BII)Ljava/nio/ByteBuffer;
-
-    .line 16
-    .line 17
-    .line 18
-    iget p1, p0, Landroidx/datastore/preferences/protobuf/u;->f:I
-
-    .line 19
-    .line 20
-    add-int/2addr p1, v0
-
-    .line 21
-    iput p1, p0, Landroidx/datastore/preferences/protobuf/u;->f:I
-
-    .line 22
-    .line 23
-    goto :goto_1
-
-    .line 24
-    :cond_0
-    invoke-virtual {p1, v4, v1, v3}, Ljava/nio/ByteBuffer;->get([BII)Ljava/nio/ByteBuffer;
-
-    .line 25
-    .line 26
-    .line 27
-    sub-int/2addr v0, v3
-
-    .line 28
-    iput v2, p0, Landroidx/datastore/preferences/protobuf/u;->f:I
-
-    .line 29
-    .line 30
-    invoke-virtual {p0}, Landroidx/datastore/preferences/protobuf/u;->Y()V
-
-    .line 31
-    .line 32
-    .line 33
-    :goto_0
-    const/4 v1, 0x0
-
-    .line 34
-    if-le v0, v2, :cond_1
-
-    .line 35
-    .line 36
-    invoke-virtual {p1, v4, v1, v2}, Ljava/nio/ByteBuffer;->get([BII)Ljava/nio/ByteBuffer;
-
-    .line 37
-    .line 38
-    .line 39
-    iget-object v3, p0, Landroidx/datastore/preferences/protobuf/u;->g:Ljava/io/OutputStream;
-
-    .line 40
-    .line 41
-    invoke-virtual {v3, v4, v1, v2}, Ljava/io/OutputStream;->write([BII)V
-
-    .line 42
-    .line 43
-    .line 44
-    sub-int/2addr v0, v2
-
-    .line 45
-    goto :goto_0
-
-    .line 46
-    :cond_1
-    invoke-virtual {p1, v4, v1, v0}, Ljava/nio/ByteBuffer;->get([BII)Ljava/nio/ByteBuffer;
-
-    .line 47
-    .line 48
-    .line 49
-    iput v0, p0, Landroidx/datastore/preferences/protobuf/u;->f:I
-
-    .line 50
-    .line 51
-    :goto_1
-    return-void
-.end method
-
-.method public final z(B)V
-    .locals 2
-
-    .line 1
-    iget v0, p0, Landroidx/datastore/preferences/protobuf/u;->f:I
-
-    .line 2
-    .line 3
-    iget v1, p0, Landroidx/datastore/preferences/protobuf/u;->e:I
-
-    .line 4
-    .line 5
-    if-ne v0, v1, :cond_0
-
-    .line 6
-    .line 7
-    invoke-virtual {p0}, Landroidx/datastore/preferences/protobuf/u;->Y()V
-
-    .line 8
-    .line 9
-    .line 10
-    :cond_0
-    iget v0, p0, Landroidx/datastore/preferences/protobuf/u;->f:I
-
-    .line 11
-    .line 12
-    add-int/lit8 v1, v0, 0x1
-
-    .line 13
-    .line 14
-    iput v1, p0, Landroidx/datastore/preferences/protobuf/u;->f:I
-
-    .line 15
-    .line 16
-    iget-object v1, p0, Landroidx/datastore/preferences/protobuf/u;->d:[B
-
-    .line 17
-    .line 18
-    aput-byte p1, v1, v0
-
-    .line 19
-    .line 20
     return-void
 .end method

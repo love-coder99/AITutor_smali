@@ -102,15 +102,15 @@
 .method private a(Lcom/applovin/impl/sdk/g$c;)Ljava/util/Set;
     .locals 2
 
+    .line 30
     iget-object v0, p0, Lcom/applovin/impl/sdk/g;->c:Ljava/lang/Object;
 
-    .line 30
     monitor-enter v0
 
+    .line 31
     :try_start_0
     iget-object v1, p0, Lcom/applovin/impl/sdk/g;->b:Ljava/util/Map;
 
-    .line 31
     invoke-interface {v1, p1}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object p1
@@ -156,9 +156,9 @@
 .method private a(Lcom/applovin/impl/sdk/g$b;Lcom/applovin/impl/sdk/g$c;)V
     .locals 2
 
+    .line 36
     iget-object v0, p0, Lcom/applovin/impl/sdk/g;->c:Ljava/lang/Object;
 
-    .line 36
     monitor-enter v0
 
     .line 37
@@ -215,9 +215,9 @@
 .method public a()V
     .locals 7
 
+    .line 15
     iget-object v0, p0, Lcom/applovin/impl/sdk/g;->c:Ljava/lang/Object;
 
-    .line 15
     monitor-enter v0
 
     .line 16
@@ -235,9 +235,9 @@
 
     aget-object v4, v1, v3
 
+    .line 17
     iget-object v5, p0, Lcom/applovin/impl/sdk/g;->b:Ljava/util/Map;
 
-    .line 17
     new-instance v6, Ljava/util/HashSet;
 
     invoke-direct {v6}, Ljava/util/HashSet;-><init>()V
@@ -271,9 +271,9 @@
 .method public a(Lcom/applovin/impl/fe;Lcom/applovin/impl/sdk/g$c;)V
     .locals 4
 
+    .line 1
     iget-object v0, p0, Lcom/applovin/impl/sdk/g;->e:Ljava/lang/Object;
 
-    .line 1
     monitor-enter v0
 
     .line 2
@@ -282,9 +282,9 @@
 
     move-result v1
 
+    .line 3
     iget-object v2, p0, Lcom/applovin/impl/sdk/g;->d:Ljava/util/Map;
 
-    .line 3
     invoke-static {v1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
     move-result-object v3
@@ -319,9 +319,9 @@
 
     invoke-direct {v2, p1, p2, v3}, Lcom/applovin/impl/sdk/g$b;-><init>(Lcom/applovin/impl/fe;Lcom/applovin/impl/sdk/g$c;Lcom/applovin/impl/sdk/g$a;)V
 
+    .line 6
     iget-object p1, p0, Lcom/applovin/impl/sdk/g;->d:Ljava/util/Map;
 
-    .line 6
     invoke-static {v1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
     move-result-object v3
@@ -353,9 +353,9 @@
 
     if-ne p2, p1, :cond_3
 
+    .line 11
     iget-object p1, p0, Lcom/applovin/impl/sdk/g;->d:Ljava/util/Map;
 
-    .line 11
     invoke-static {v1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
     move-result-object v1
@@ -386,15 +386,15 @@
 .method public a(Lcom/applovin/impl/sdk/g$d;)V
     .locals 3
 
+    .line 25
     iget-object v0, p0, Lcom/applovin/impl/sdk/g;->c:Ljava/lang/Object;
 
-    .line 25
     monitor-enter v0
 
+    .line 26
     :try_start_0
     iget-object v1, p0, Lcom/applovin/impl/sdk/g;->b:Ljava/util/Map;
 
-    .line 26
     invoke-interface {v1}, Ljava/util/Map;->keySet()Ljava/util/Set;
 
     move-result-object v1
@@ -448,9 +448,9 @@
 .method public a(Lcom/applovin/impl/sdk/g$d;Ljava/util/Set;)V
     .locals 2
 
+    .line 20
     iget-object v0, p0, Lcom/applovin/impl/sdk/g;->c:Ljava/lang/Object;
 
-    .line 20
     monitor-enter v0
 
     .line 21

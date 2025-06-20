@@ -3,35 +3,11 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lzh/e;
+.implements Lka/e;
 
 
 # annotations
-.annotation system Ldalvik/annotation/Signature;
-    value = {
-        "Lkotlin/coroutines/jvm/internal/SuspendLambda;",
-        "Lzh/e;"
-    }
-.end annotation
-
-.annotation runtime Lkotlin/Metadata;
-    d1 = {
-        "\u0000\u0008\n\u0002\u0018\u0002\n\u0002\u0008\u0002\u0010\u0002\u001a\u00020\u00002\u0006\u0010\u0001\u001a\u00020\u0000H\u008a@"
-    }
-    d2 = {
-        "Lh2/n;",
-        "velocity",
-        "<anonymous>"
-    }
-    k = 0x3
-    mv = {
-        0x1,
-        0x8,
-        0x0
-    }
-.end annotation
-
-.annotation runtime Lth/c;
+.annotation runtime Lca/c;
     c = "androidx.compose.foundation.gestures.ScrollingLogic$onDragStopped$performFling$1"
     f = "Scrollable.kt"
     l = {
@@ -42,6 +18,31 @@
     m = "invokeSuspend"
 .end annotation
 
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "Lkotlin/coroutines/jvm/internal/SuspendLambda;",
+        "Lka/e;"
+    }
+.end annotation
+
+.annotation runtime Lkotlin/Metadata;
+    d1 = {
+        "\u0000\u0008\n\u0002\u0018\u0002\n\u0002\u0008\u0003\u0010\u0002\u001a\u00020\u00002\u0006\u0010\u0001\u001a\u00020\u0000H\u008a@\u00a2\u0006\u0004\u0008\u0002\u0010\u0003"
+    }
+    d2 = {
+        "LM0/n;",
+        "velocity",
+        "<anonymous>",
+        "(LM0/n;)LM0/n;"
+    }
+    k = 0x3
+    mv = {
+        0x1,
+        0x8,
+        0x0
+    }
+.end annotation
+
 
 # instance fields
 .field synthetic J$0:J
@@ -50,16 +51,16 @@
 
 .field label:I
 
-.field final synthetic this$0:Landroidx/compose/foundation/gestures/l0;
+.field final synthetic this$0:Landroidx/compose/foundation/gestures/N;
 
 
 # direct methods
-.method public constructor <init>(Landroidx/compose/foundation/gestures/l0;Lkotlin/coroutines/Continuation;)V
+.method public constructor <init>(Landroidx/compose/foundation/gestures/N;Lkotlin/coroutines/Continuation;)V
     .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
-            "Landroidx/compose/foundation/gestures/l0;",
+            "Landroidx/compose/foundation/gestures/N;",
             "Lkotlin/coroutines/Continuation<",
             "-",
             "Landroidx/compose/foundation/gestures/ScrollingLogic$onDragStopped$performFling$1;",
@@ -67,7 +68,7 @@
         }
     .end annotation
 
-    iput-object p1, p0, Landroidx/compose/foundation/gestures/ScrollingLogic$onDragStopped$performFling$1;->this$0:Landroidx/compose/foundation/gestures/l0;
+    iput-object p1, p0, Landroidx/compose/foundation/gestures/ScrollingLogic$onDragStopped$performFling$1;->this$0:Landroidx/compose/foundation/gestures/N;
 
     const/4 p1, 0x2
 
@@ -87,7 +88,7 @@
             "Lkotlin/coroutines/Continuation<",
             "*>;)",
             "Lkotlin/coroutines/Continuation<",
-            "Lqh/r;",
+            "LX9/j;",
             ">;"
         }
     .end annotation
@@ -97,20 +98,20 @@
 
     .line 2
     .line 3
-    iget-object v1, p0, Landroidx/compose/foundation/gestures/ScrollingLogic$onDragStopped$performFling$1;->this$0:Landroidx/compose/foundation/gestures/l0;
+    iget-object v1, p0, Landroidx/compose/foundation/gestures/ScrollingLogic$onDragStopped$performFling$1;->this$0:Landroidx/compose/foundation/gestures/N;
 
     .line 4
     .line 5
-    invoke-direct {v0, v1, p2}, Landroidx/compose/foundation/gestures/ScrollingLogic$onDragStopped$performFling$1;-><init>(Landroidx/compose/foundation/gestures/l0;Lkotlin/coroutines/Continuation;)V
+    invoke-direct {v0, v1, p2}, Landroidx/compose/foundation/gestures/ScrollingLogic$onDragStopped$performFling$1;-><init>(Landroidx/compose/foundation/gestures/N;Lkotlin/coroutines/Continuation;)V
 
     .line 6
     .line 7
     .line 8
-    check-cast p1, Lh2/n;
+    check-cast p1, LM0/n;
 
     .line 9
     .line 10
-    iget-wide p1, p1, Lh2/n;->a:J
+    iget-wide p1, p1, LM0/n;->a:J
 
     .line 11
     .line 12
@@ -125,11 +126,11 @@
     .locals 2
 
     .line 1
-    check-cast p1, Lh2/n;
+    check-cast p1, LM0/n;
 
     .line 2
     .line 3
-    iget-wide v0, p1, Lh2/n;->a:J
+    iget-wide v0, p1, LM0/n;->a:J
 
     .line 4
     .line 5
@@ -155,18 +156,18 @@
             "(J",
             "Lkotlin/coroutines/Continuation<",
             "-",
-            "Lh2/n;",
+            "LM0/n;",
             ">;)",
             "Ljava/lang/Object;"
         }
     .end annotation
 
     .line 1
-    new-instance v0, Lh2/n;
+    new-instance v0, LM0/n;
 
     .line 2
     .line 3
-    invoke-direct {v0, p1, p2}, Lh2/n;-><init>(J)V
+    invoke-direct {v0, p1, p2}, LM0/n;-><init>(J)V
 
     .line 4
     .line 5
@@ -183,7 +184,7 @@
 
     .line 11
     .line 12
-    sget-object p2, Lqh/r;->a:Lqh/r;
+    sget-object p2, LX9/j;->a:LX9/j;
 
     .line 13
     .line 14
@@ -324,11 +325,11 @@
 
     .line 56
     .line 57
-    iget-object v0, p0, Landroidx/compose/foundation/gestures/ScrollingLogic$onDragStopped$performFling$1;->this$0:Landroidx/compose/foundation/gestures/l0;
+    iget-object v0, p0, Landroidx/compose/foundation/gestures/ScrollingLogic$onDragStopped$performFling$1;->this$0:Landroidx/compose/foundation/gestures/N;
 
     .line 58
     .line 59
-    iget-object v0, v0, Landroidx/compose/foundation/gestures/l0;->f:Landroidx/compose/ui/input/nestedscroll/b;
+    iget-object v0, v0, Landroidx/compose/foundation/gestures/N;->f:Landroidx/compose/ui/input/nestedscroll/b;
 
     .line 60
     .line 61
@@ -340,7 +341,7 @@
 
     .line 64
     .line 65
-    invoke-virtual {v0, v4, v5, p0}, Landroidx/compose/ui/input/nestedscroll/b;->b(JLkotlin/coroutines/Continuation;)Ljava/lang/Object;
+    invoke-virtual {v0, v4, v5, p0}, Landroidx/compose/ui/input/nestedscroll/b;->b(JLkotlin/coroutines/jvm/internal/ContinuationImpl;)Ljava/lang/Object;
 
     .line 66
     .line 67
@@ -360,15 +361,15 @@
 
     .line 73
     :goto_0
-    check-cast v0, Lh2/n;
+    check-cast v0, LM0/n;
 
     .line 74
     .line 75
-    iget-wide v7, v0, Lh2/n;->a:J
+    iget-wide v7, v0, LM0/n;->a:J
 
     .line 76
     .line 77
-    invoke-static {v3, v4, v7, v8}, Lh2/n;->d(JJ)J
+    invoke-static {v3, v4, v7, v8}, LM0/n;->d(JJ)J
 
     .line 78
     .line 79
@@ -376,7 +377,7 @@
     move-result-wide v7
 
     .line 81
-    iget-object v0, p0, Landroidx/compose/foundation/gestures/ScrollingLogic$onDragStopped$performFling$1;->this$0:Landroidx/compose/foundation/gestures/l0;
+    iget-object v0, p0, Landroidx/compose/foundation/gestures/ScrollingLogic$onDragStopped$performFling$1;->this$0:Landroidx/compose/foundation/gestures/N;
 
     .line 82
     .line 83
@@ -392,7 +393,7 @@
 
     .line 88
     .line 89
-    invoke-virtual {v0, v7, v8, p0}, Landroidx/compose/foundation/gestures/l0;->b(JLkotlin/coroutines/Continuation;)Ljava/lang/Object;
+    invoke-virtual {v0, v7, v8, p0}, Landroidx/compose/foundation/gestures/N;->b(JLkotlin/coroutines/jvm/internal/ContinuationImpl;)Ljava/lang/Object;
 
     .line 90
     .line 91
@@ -418,23 +419,23 @@
 
     .line 99
     :goto_1
-    check-cast v0, Lh2/n;
+    check-cast v0, LM0/n;
 
     .line 100
     .line 101
-    iget-wide v9, v0, Lh2/n;->a:J
+    iget-wide v9, v0, LM0/n;->a:J
 
     .line 102
     .line 103
-    iget-object v0, p0, Landroidx/compose/foundation/gestures/ScrollingLogic$onDragStopped$performFling$1;->this$0:Landroidx/compose/foundation/gestures/l0;
+    iget-object v0, p0, Landroidx/compose/foundation/gestures/ScrollingLogic$onDragStopped$performFling$1;->this$0:Landroidx/compose/foundation/gestures/N;
 
     .line 104
     .line 105
-    iget-object v0, v0, Landroidx/compose/foundation/gestures/l0;->f:Landroidx/compose/ui/input/nestedscroll/b;
+    iget-object v0, v0, Landroidx/compose/foundation/gestures/N;->f:Landroidx/compose/ui/input/nestedscroll/b;
 
     .line 106
     .line 107
-    invoke-static {v2, v3, v9, v10}, Lh2/n;->d(JJ)J
+    invoke-static {v2, v3, v9, v10}, LM0/n;->d(JJ)J
 
     .line 108
     .line 109
@@ -463,7 +464,7 @@
     move-object v5, p0
 
     .line 120
-    invoke-virtual/range {v0 .. v5}, Landroidx/compose/ui/input/nestedscroll/b;->a(JJLkotlin/coroutines/Continuation;)Ljava/lang/Object;
+    invoke-virtual/range {v0 .. v5}, Landroidx/compose/ui/input/nestedscroll/b;->a(JJLkotlin/coroutines/jvm/internal/ContinuationImpl;)Ljava/lang/Object;
 
     .line 121
     .line 122
@@ -483,15 +484,15 @@
 
     .line 128
     :goto_2
-    check-cast v0, Lh2/n;
+    check-cast v0, LM0/n;
 
     .line 129
     .line 130
-    iget-wide v0, v0, Lh2/n;->a:J
+    iget-wide v0, v0, LM0/n;->a:J
 
     .line 131
     .line 132
-    invoke-static {v9, v10, v0, v1}, Lh2/n;->d(JJ)J
+    invoke-static {v9, v10, v0, v1}, LM0/n;->d(JJ)J
 
     .line 133
     .line 134
@@ -499,7 +500,7 @@
     move-result-wide v0
 
     .line 136
-    invoke-static {v2, v3, v0, v1}, Lh2/n;->d(JJ)J
+    invoke-static {v2, v3, v0, v1}, LM0/n;->d(JJ)J
 
     .line 137
     .line 138
@@ -507,11 +508,11 @@
     move-result-wide v0
 
     .line 140
-    new-instance v2, Lh2/n;
+    new-instance v2, LM0/n;
 
     .line 141
     .line 142
-    invoke-direct {v2, v0, v1}, Lh2/n;-><init>(J)V
+    invoke-direct {v2, v0, v1}, LM0/n;-><init>(J)V
 
     .line 143
     .line 144

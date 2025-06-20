@@ -3,14 +3,14 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lzh/c;
+.implements Lka/c;
 
 
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "Lkotlin/jvm/internal/Lambda;",
-        "Lzh/c;"
+        "Lka/c;"
     }
 .end annotation
 
@@ -19,11 +19,11 @@
         "\u0000\u000e\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0008\u0003\u0010\u0005\u001a\u00020\u00022\u0006\u0010\u0001\u001a\u00020\u0000H\n\u00a2\u0006\u0004\u0008\u0003\u0010\u0004"
     }
     d2 = {
-        "Landroidx/compose/ui/node/o1;",
+        "Landroidx/compose/ui/node/i0;",
         "owner",
-        "Lqh/r;",
+        "LX9/j;",
         "invoke",
-        "(Landroidx/compose/ui/node/o1;)V",
+        "(Landroidx/compose/ui/node/i0;)V",
         "<anonymous>"
     }
     k = 0x3
@@ -58,24 +58,24 @@
     .locals 0
 
     .line 1
-    check-cast p1, Landroidx/compose/ui/node/o1;
+    check-cast p1, Landroidx/compose/ui/node/i0;
 
-    invoke-virtual {p0, p1}, Landroidx/compose/ui/viewinterop/AndroidViewHolder$layoutNode$1$4;->invoke(Landroidx/compose/ui/node/o1;)V
+    invoke-virtual {p0, p1}, Landroidx/compose/ui/viewinterop/AndroidViewHolder$layoutNode$1$4;->invoke(Landroidx/compose/ui/node/i0;)V
 
-    sget-object p1, Lqh/r;->a:Lqh/r;
+    sget-object p1, LX9/j;->a:LX9/j;
 
     return-object p1
 .end method
 
-.method public final invoke(Landroidx/compose/ui/node/o1;)V
+.method public final invoke(Landroidx/compose/ui/node/i0;)V
     .locals 1
 
     .line 2
-    instance-of v0, p1, Landroidx/compose/ui/platform/r;
+    instance-of v0, p1, Landroidx/compose/ui/platform/o;
 
     if-eqz v0, :cond_0
 
-    check-cast p1, Landroidx/compose/ui/platform/r;
+    check-cast p1, Landroidx/compose/ui/platform/o;
 
     goto :goto_0
 
@@ -87,12 +87,12 @@
 
     iget-object v0, p0, Landroidx/compose/ui/viewinterop/AndroidViewHolder$layoutNode$1$4;->$this_run:Landroidx/compose/ui/viewinterop/d;
 
-    invoke-virtual {p1, v0}, Landroidx/compose/ui/platform/r;->D(Landroidx/compose/ui/viewinterop/d;)V
+    invoke-virtual {p1, v0}, Landroidx/compose/ui/platform/o;->D(Landroidx/compose/ui/viewinterop/d;)V
 
+    .line 3
     :cond_1
     iget-object p1, p0, Landroidx/compose/ui/viewinterop/AndroidViewHolder$layoutNode$1$4;->$this_run:Landroidx/compose/ui/viewinterop/d;
 
-    .line 3
     invoke-virtual {p1}, Landroid/view/ViewGroup;->removeAllViewsInLayout()V
 
     return-void

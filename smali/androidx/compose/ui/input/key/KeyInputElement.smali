@@ -1,12 +1,12 @@
 .class final Landroidx/compose/ui/input/key/KeyInputElement;
-.super Landroidx/compose/ui/node/w0;
+.super Landroidx/compose/ui/node/V;
 .source "SourceFile"
 
 
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
-        "Landroidx/compose/ui/node/w0;"
+        "Landroidx/compose/ui/node/V;"
     }
 .end annotation
 
@@ -16,8 +16,8 @@
     }
     d2 = {
         "Landroidx/compose/ui/input/key/KeyInputElement;",
-        "Landroidx/compose/ui/node/w0;",
-        "Lt1/d;",
+        "Landroidx/compose/ui/node/V;",
+        "Lx0/e;",
         "ui_release"
     }
     k = 0x1
@@ -26,17 +26,18 @@
         0x8,
         0x0
     }
+    xi = 0x30
 .end annotation
 
 
 # instance fields
-.field public final c:Lzh/c;
+.field public final a:Lka/c;
 
-.field public final d:Lzh/c;
+.field public final b:Lkotlin/jvm/internal/Lambda;
 
 
 # direct methods
-.method public constructor <init>(Lzh/c;Lzh/c;)V
+.method public constructor <init>(Lka/c;Lka/c;)V
     .locals 0
 
     .line 1
@@ -45,14 +46,18 @@
     .line 2
     .line 3
     .line 4
-    iput-object p1, p0, Landroidx/compose/ui/input/key/KeyInputElement;->c:Lzh/c;
+    iput-object p1, p0, Landroidx/compose/ui/input/key/KeyInputElement;->a:Lka/c;
 
     .line 5
     .line 6
-    iput-object p2, p0, Landroidx/compose/ui/input/key/KeyInputElement;->d:Lzh/c;
+    check-cast p2, Lkotlin/jvm/internal/Lambda;
 
     .line 7
     .line 8
+    iput-object p2, p0, Landroidx/compose/ui/input/key/KeyInputElement;->b:Lkotlin/jvm/internal/Lambda;
+
+    .line 9
+    .line 10
     return-void
 .end method
 
@@ -79,11 +84,11 @@
     :cond_1
     check-cast p1, Landroidx/compose/ui/input/key/KeyInputElement;
 
-    iget-object v1, p1, Landroidx/compose/ui/input/key/KeyInputElement;->c:Lzh/c;
+    iget-object v1, p1, Landroidx/compose/ui/input/key/KeyInputElement;->a:Lka/c;
 
-    iget-object v3, p0, Landroidx/compose/ui/input/key/KeyInputElement;->c:Lzh/c;
+    iget-object v3, p0, Landroidx/compose/ui/input/key/KeyInputElement;->a:Lka/c;
 
-    invoke-static {v3, v1}, Lrb/h;->d(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v3, v1}, Lkotlin/jvm/internal/h;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result v1
 
@@ -92,11 +97,11 @@
     return v2
 
     :cond_2
-    iget-object v1, p0, Landroidx/compose/ui/input/key/KeyInputElement;->d:Lzh/c;
+    iget-object v1, p0, Landroidx/compose/ui/input/key/KeyInputElement;->b:Lkotlin/jvm/internal/Lambda;
 
-    iget-object p1, p1, Landroidx/compose/ui/input/key/KeyInputElement;->d:Lzh/c;
+    iget-object p1, p1, Landroidx/compose/ui/input/key/KeyInputElement;->b:Lkotlin/jvm/internal/Lambda;
 
-    invoke-static {v1, p1}, Lrb/h;->d(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v1, p1}, Lkotlin/jvm/internal/h;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result p1
 
@@ -113,7 +118,7 @@
 
     const/4 v0, 0x0
 
-    iget-object v1, p0, Landroidx/compose/ui/input/key/KeyInputElement;->c:Lzh/c;
+    iget-object v1, p0, Landroidx/compose/ui/input/key/KeyInputElement;->a:Lka/c;
 
     if-nez v1, :cond_0
 
@@ -129,7 +134,7 @@
     :goto_0
     mul-int/lit8 v1, v1, 0x1f
 
-    iget-object v2, p0, Landroidx/compose/ui/input/key/KeyInputElement;->d:Lzh/c;
+    iget-object v2, p0, Landroidx/compose/ui/input/key/KeyInputElement;->b:Lkotlin/jvm/internal/Lambda;
 
     if-nez v2, :cond_1
 
@@ -150,7 +155,7 @@
     .locals 2
 
     .line 1
-    new-instance v0, Lt1/d;
+    new-instance v0, Lx0/e;
 
     .line 2
     .line 3
@@ -159,19 +164,19 @@
     .line 4
     .line 5
     .line 6
-    iget-object v1, p0, Landroidx/compose/ui/input/key/KeyInputElement;->c:Lzh/c;
+    iget-object v1, p0, Landroidx/compose/ui/input/key/KeyInputElement;->a:Lka/c;
 
     .line 7
     .line 8
-    iput-object v1, v0, Lt1/d;->p:Lzh/c;
+    iput-object v1, v0, Lx0/e;->p:Lka/c;
 
     .line 9
     .line 10
-    iget-object v1, p0, Landroidx/compose/ui/input/key/KeyInputElement;->d:Lzh/c;
+    iget-object v1, p0, Landroidx/compose/ui/input/key/KeyInputElement;->b:Lkotlin/jvm/internal/Lambda;
 
     .line 11
     .line 12
-    iput-object v1, v0, Lt1/d;->q:Lzh/c;
+    iput-object v1, v0, Lx0/e;->q:Lkotlin/jvm/internal/Lambda;
 
     .line 13
     .line 14
@@ -182,23 +187,23 @@
     .locals 1
 
     .line 1
-    check-cast p1, Lt1/d;
+    check-cast p1, Lx0/e;
 
     .line 2
     .line 3
-    iget-object v0, p0, Landroidx/compose/ui/input/key/KeyInputElement;->c:Lzh/c;
+    iget-object v0, p0, Landroidx/compose/ui/input/key/KeyInputElement;->a:Lka/c;
 
     .line 4
     .line 5
-    iput-object v0, p1, Lt1/d;->p:Lzh/c;
+    iput-object v0, p1, Lx0/e;->p:Lka/c;
 
     .line 6
     .line 7
-    iget-object v0, p0, Landroidx/compose/ui/input/key/KeyInputElement;->d:Lzh/c;
+    iget-object v0, p0, Landroidx/compose/ui/input/key/KeyInputElement;->b:Lkotlin/jvm/internal/Lambda;
 
     .line 8
     .line 9
-    iput-object v0, p1, Lt1/d;->q:Lzh/c;
+    iput-object v0, p1, Lx0/e;->q:Lkotlin/jvm/internal/Lambda;
 
     .line 10
     .line 11
@@ -214,7 +219,7 @@
 
     invoke-direct {v0, v1}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
 
-    iget-object v1, p0, Landroidx/compose/ui/input/key/KeyInputElement;->c:Lzh/c;
+    iget-object v1, p0, Landroidx/compose/ui/input/key/KeyInputElement;->a:Lka/c;
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 
@@ -222,7 +227,7 @@
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget-object v1, p0, Landroidx/compose/ui/input/key/KeyInputElement;->d:Lzh/c;
+    iget-object v1, p0, Landroidx/compose/ui/input/key/KeyInputElement;->b:Lkotlin/jvm/internal/Lambda;
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 

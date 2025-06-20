@@ -1,540 +1,286 @@
-.class public abstract Lcom/applovin/impl/a;
+.class public final synthetic Lcom/applovin/impl/A;
 .super Ljava/lang/Object;
 .source "SourceFile"
 
+# interfaces
+.implements Lcom/applovin/impl/yg$a;
+.implements Lcom/applovin/impl/gc$a;
+.implements Lcom/applovin/impl/gc$b;
+.implements Lcom/applovin/impl/md$g;
+.implements Lcom/applovin/impl/q4;
+.implements Lcom/applovin/impl/zh$a;
+.implements Lcom/applovin/impl/fi$b;
+.implements Lcom/applovin/impl/h4$b;
+.implements Lcom/applovin/impl/j2$c;
+.implements Lcom/applovin/impl/i2$d;
+.implements Lcom/applovin/impl/ub$a;
+.implements Lcom/applovin/impl/vq$b$a;
+.implements Lcom/applovin/impl/ve$a;
 
-# annotations
-.annotation system Ldalvik/annotation/MemberClasses;
-    value = {
-        Lcom/applovin/impl/a$b;
-    }
-.end annotation
 
+# instance fields
+.field public final synthetic b:I
 
-# static fields
-.field private static final a:[I
-
-.field private static final b:[I
+.field public final synthetic c:Ljava/lang/Object;
 
 
 # direct methods
-.method static constructor <clinit>()V
+.method public synthetic constructor <init>(Ljava/lang/Object;I)V
+    .locals 0
+
+    .line 1
+    iput p2, p0, Lcom/applovin/impl/A;->b:I
+
+    iput-object p1, p0, Lcom/applovin/impl/A;->c:Ljava/lang/Object;
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public a(Ljava/lang/Object;)I
     .locals 1
 
-    const/16 v0, 0xd
+    .line 1
+    iget-object v0, p0, Lcom/applovin/impl/A;->c:Ljava/lang/Object;
 
-    new-array v0, v0, [I
+    check-cast v0, Lcom/applovin/impl/e9;
 
-    fill-array-data v0, :array_0
+    check-cast p1, Lcom/applovin/impl/jd;
 
-    sput-object v0, Lcom/applovin/impl/a;->a:[I
+    invoke-static {v0, p1}, Lcom/applovin/impl/md;->f(Lcom/applovin/impl/e9;Lcom/applovin/impl/jd;)I
 
-    const/16 v0, 0x10
+    move-result p1
 
-    new-array v0, v0, [I
+    return p1
+.end method
 
-    fill-array-data v0, :array_1
+.method public a(J)J
+    .locals 1
 
-    sput-object v0, Lcom/applovin/impl/a;->b:[I
+    .line 2
+    iget-object v0, p0, Lcom/applovin/impl/A;->c:Ljava/lang/Object;
+
+    check-cast v0, Lcom/applovin/impl/z8;
+
+    invoke-virtual {v0, p1, p2}, Lcom/applovin/impl/z8;->a(J)J
+
+    move-result-wide p1
+
+    return-wide p1
+.end method
+
+.method public a()Lcom/applovin/impl/zh;
+    .locals 1
+
+    .line 3
+    iget-object v0, p0, Lcom/applovin/impl/A;->c:Ljava/lang/Object;
+
+    check-cast v0, Lcom/applovin/impl/n8;
+
+    invoke-static {v0}, Lcom/applovin/impl/bi$b;->b(Lcom/applovin/impl/n8;)Lcom/applovin/impl/zh;
+
+    move-result-object v0
+
+    return-object v0
+.end method
+
+.method public a()Ljava/lang/Object;
+    .locals 1
+
+    .line 4
+    iget-object v0, p0, Lcom/applovin/impl/A;->c:Ljava/lang/Object;
+
+    check-cast v0, Lcom/applovin/impl/ub$a;
+
+    invoke-static {v0}, Lcom/applovin/impl/ub$d;->c(Lcom/applovin/impl/ub$a;)Ljava/lang/ref/WeakReference;
+
+    move-result-object v0
+
+    return-object v0
+.end method
+
+.method public a(Ljava/lang/Object;)Ljava/lang/Object;
+    .locals 1
+
+    .line 5
+    iget-object v0, p0, Lcom/applovin/impl/A;->c:Ljava/lang/Object;
+
+    check-cast v0, Ljava/lang/Long;
+
+    check-cast p1, Ljava/lang/Long;
+
+    invoke-static {v0, p1}, Lcom/applovin/impl/xe;->c(Ljava/lang/Long;Ljava/lang/Long;)Ljava/lang/Long;
+
+    move-result-object p1
+
+    return-object p1
+.end method
+
+.method public a(Landroid/view/Display;)V
+    .locals 1
+
+    .line 6
+    iget-object v0, p0, Lcom/applovin/impl/A;->c:Ljava/lang/Object;
+
+    check-cast v0, Lcom/applovin/impl/vq;
+
+    invoke-static {v0, p1}, Lcom/applovin/impl/vq;->a(Lcom/applovin/impl/vq;Landroid/view/Display;)V
+
+    return-void
+.end method
+
+.method public a(Landroid/view/View;)V
+    .locals 1
+
+    .line 7
+    iget-object v0, p0, Lcom/applovin/impl/A;->c:Ljava/lang/Object;
+
+    check-cast v0, Lcom/applovin/impl/o9;
+
+    invoke-static {v0, p1}, Lcom/applovin/impl/o9;->a(Lcom/applovin/impl/o9;Landroid/view/View;)V
+
+    return-void
+.end method
+
+.method public a(Lcom/applovin/impl/h4$a;)V
+    .locals 1
+
+    .line 8
+    iget-object v0, p0, Lcom/applovin/impl/A;->c:Ljava/lang/Object;
+
+    check-cast v0, Lcom/applovin/impl/h4;
+
+    invoke-static {v0, p1}, Lcom/applovin/impl/h4;->a(Lcom/applovin/impl/h4;Lcom/applovin/impl/h4$a;)V
+
+    return-void
+.end method
+
+.method public a(Lcom/applovin/impl/yg;)V
+    .locals 1
+
+    .line 9
+    iget v0, p0, Lcom/applovin/impl/A;->b:I
+
+    sparse-switch v0, :sswitch_data_0
+
+    iget-object v0, p0, Lcom/applovin/impl/A;->c:Ljava/lang/Object;
+
+    check-cast v0, Lcom/applovin/impl/h8;
+
+    check-cast p1, Lcom/applovin/impl/sl;
+
+    invoke-static {v0, p1}, Lcom/applovin/impl/h8;->a(Lcom/applovin/impl/h8;Lcom/applovin/impl/sl;)V
+
+    return-void
+
+    :sswitch_0
+    iget-object v0, p0, Lcom/applovin/impl/A;->c:Ljava/lang/Object;
+
+    check-cast v0, Lcom/applovin/impl/ek;
+
+    check-cast p1, Lcom/applovin/impl/sl;
+
+    invoke-static {v0, p1}, Lcom/applovin/impl/ek;->n(Lcom/applovin/impl/ek;Lcom/applovin/impl/yg;)V
+
+    return-void
+
+    :sswitch_1
+    iget-object v0, p0, Lcom/applovin/impl/A;->c:Ljava/lang/Object;
+
+    check-cast v0, Lcom/applovin/impl/a3;
+
+    check-cast p1, Lcom/applovin/impl/a3$c;
+
+    invoke-virtual {v0, p1}, Lcom/applovin/impl/a3;->a(Lcom/applovin/impl/sl;)V
 
     return-void
 
     nop
 
-    :array_0
-    .array-data 4
-        0x17700
-        0x15888
-        0xfa00
-        0xbb80
-        0xac44
-        0x7d00
-        0x5dc0
-        0x5622
-        0x3e80
-        0x2ee0
-        0x2b11
-        0x1f40
-        0x1cb6
-    .end array-data
-
-    :array_1
-    .array-data 4
-        0x0
-        0x1
-        0x2
-        0x3
-        0x4
-        0x5
-        0x6
-        0x8
-        -0x1
-        -0x1
-        -0x1
-        0x7
-        0x8
-        -0x1
-        0x8
-        -0x1
-    .end array-data
+    :sswitch_data_0
+    .sparse-switch
+        0x0 -> :sswitch_1
+        0x6 -> :sswitch_0
+    .end sparse-switch
 .end method
 
-.method private static a(Lcom/applovin/impl/zg;)I
-    .locals 2
-
-    const/4 v0, 0x5
-
-    .line 2
-    invoke-virtual {p0, v0}, Lcom/applovin/impl/zg;->a(I)I
-
-    move-result v0
-
-    const/16 v1, 0x1f
-
-    if-ne v0, v1, :cond_0
-
-    const/4 v0, 0x6
-
-    .line 3
-    invoke-virtual {p0, v0}, Lcom/applovin/impl/zg;->a(I)I
-
-    move-result p0
-
-    add-int/lit8 v0, p0, 0x20
-
-    :cond_0
-    return v0
-.end method
-
-.method public static a(Lcom/applovin/impl/zg;Z)Lcom/applovin/impl/a$b;
-    .locals 7
-
-    .line 4
-    invoke-static {p0}, Lcom/applovin/impl/a;->a(Lcom/applovin/impl/zg;)I
-
-    move-result v0
-
-    .line 5
-    invoke-static {p0}, Lcom/applovin/impl/a;->b(Lcom/applovin/impl/zg;)I
-
-    move-result v1
-
-    const/4 v2, 0x4
-
-    .line 6
-    invoke-virtual {p0, v2}, Lcom/applovin/impl/zg;->a(I)I
-
-    move-result v3
-
-    const-string v4, "mp4a.40."
-
-    .line 7
-    invoke-static {v4, v0}, Lcom/google/android/gms/internal/play_billing/v3;->s(Ljava/lang/String;I)Ljava/lang/String;
-
-    move-result-object v4
-
-    const/4 v5, 0x5
-
-    if-eq v0, v5, :cond_0
-
-    const/16 v5, 0x1d
-
-    if-ne v0, v5, :cond_1
-
-    .line 8
-    :cond_0
-    invoke-static {p0}, Lcom/applovin/impl/a;->b(Lcom/applovin/impl/zg;)I
-
-    move-result v1
-
-    .line 9
-    invoke-static {p0}, Lcom/applovin/impl/a;->a(Lcom/applovin/impl/zg;)I
-
-    move-result v0
-
-    const/16 v5, 0x16
-
-    if-ne v0, v5, :cond_1
+.method public a(Ljava/lang/Object;)V
+    .locals 1
 
     .line 10
-    invoke-virtual {p0, v2}, Lcom/applovin/impl/zg;->a(I)I
+    iget-object v0, p0, Lcom/applovin/impl/A;->c:Ljava/lang/Object;
 
-    move-result v3
+    check-cast v0, Lcom/applovin/impl/ud;
 
-    :cond_1
-    if-eqz p1, :cond_4
+    check-cast p1, Lcom/applovin/impl/qh$c;
 
-    const/4 p1, 0x6
+    invoke-static {v0, p1}, Lcom/applovin/impl/b8;->s(Lcom/applovin/impl/ud;Lcom/applovin/impl/qh$c;)V
 
-    const/4 v5, 0x3
+    return-void
+.end method
 
-    const/4 v6, 0x2
+.method public a(Ljava/lang/Object;Lcom/applovin/impl/a9;)V
+    .locals 1
 
-    if-eq v0, p1, :cond_2
+    .line 11
+    iget-object v0, p0, Lcom/applovin/impl/A;->c:Ljava/lang/Object;
 
-    const/4 p1, 0x7
+    check-cast v0, Lcom/applovin/impl/qh;
 
-    if-eq v0, p1, :cond_2
+    check-cast p1, Lcom/applovin/impl/qh$c;
 
-    const/16 p1, 0x11
+    invoke-static {v0, p1, p2}, Lcom/applovin/impl/b8;->r(Lcom/applovin/impl/qh;Lcom/applovin/impl/qh$c;Lcom/applovin/impl/a9;)V
 
-    if-eq v0, p1, :cond_2
+    return-void
+.end method
 
-    const/4 p1, 0x1
+.method public a(ZLjava/lang/Object;Ljava/lang/Object;)V
+    .locals 1
 
-    if-eq v0, p1, :cond_2
-
-    if-eq v0, v6, :cond_2
-
-    if-eq v0, v5, :cond_2
-
-    if-eq v0, v2, :cond_2
+    .line 12
+    iget v0, p0, Lcom/applovin/impl/A;->b:I
 
     packed-switch v0, :pswitch_data_0
 
-    .line 11
-    new-instance p0, Ljava/lang/StringBuilder;
+    iget-object v0, p0, Lcom/applovin/impl/A;->c:Ljava/lang/Object;
 
-    const-string p1, "Unsupported audio object type: "
+    check-cast v0, Lcom/applovin/impl/fi$a;
 
-    invoke-direct {p0, p1}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+    invoke-static {v0, p1, p2, p3}, Lcom/applovin/impl/fi;->b(Lcom/applovin/impl/fi$a;ZLjava/lang/Object;Ljava/lang/Object;)V
 
-    invoke-virtual {p0, v0}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+    return-void
 
-    invoke-virtual {p0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object p0
-
-    invoke-static {p0}, Lcom/applovin/impl/ch;->a(Ljava/lang/String;)Lcom/applovin/impl/ch;
-
-    move-result-object p0
-
-    throw p0
-
-    .line 12
-    :cond_2
     :pswitch_0
-    invoke-static {p0, v0, v3}, Lcom/applovin/impl/a;->a(Lcom/applovin/impl/zg;II)V
+    iget-object v0, p0, Lcom/applovin/impl/A;->c:Ljava/lang/Object;
 
-    packed-switch v0, :pswitch_data_1
+    check-cast v0, Ljava/lang/Runnable;
 
-    :pswitch_1
-    goto :goto_0
+    invoke-static {v0, p1, p2, p3}, Lcom/applovin/impl/fi;->e(Ljava/lang/Runnable;ZLjava/lang/Object;Ljava/lang/Object;)V
 
-    .line 13
-    :pswitch_2
-    invoke-virtual {p0, v6}, Lcom/applovin/impl/zg;->a(I)I
-
-    move-result p0
-
-    if-eq p0, v6, :cond_3
-
-    if-eq p0, v5, :cond_3
-
-    goto :goto_0
-
-    .line 14
-    :cond_3
-    new-instance p1, Ljava/lang/StringBuilder;
-
-    const-string v0, "Unsupported epConfig: "
-
-    invoke-direct {p1, v0}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
-
-    invoke-virtual {p1, p0}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
-
-    invoke-virtual {p1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object p0
-
-    invoke-static {p0}, Lcom/applovin/impl/ch;->a(Ljava/lang/String;)Lcom/applovin/impl/ch;
-
-    move-result-object p0
-
-    throw p0
-
-    :cond_4
-    :goto_0
-    sget-object p0, Lcom/applovin/impl/a;->b:[I
-
-    .line 15
-    aget p0, p0, v3
-
-    const/4 p1, -0x1
-
-    const/4 v0, 0x0
-
-    if-eq p0, p1, :cond_5
-
-    .line 16
-    new-instance p1, Lcom/applovin/impl/a$b;
-
-    invoke-direct {p1, v1, p0, v4, v0}, Lcom/applovin/impl/a$b;-><init>(IILjava/lang/String;Lcom/applovin/impl/a$a;)V
-
-    return-object p1
-
-    .line 17
-    :cond_5
-    invoke-static {v0, v0}, Lcom/applovin/impl/ch;->a(Ljava/lang/String;Ljava/lang/Throwable;)Lcom/applovin/impl/ch;
-
-    move-result-object p0
-
-    throw p0
+    return-void
 
     nop
 
     :pswitch_data_0
-    .packed-switch 0x13
+    .packed-switch 0x7
         :pswitch_0
-        :pswitch_0
-        :pswitch_0
-        :pswitch_0
-        :pswitch_0
-    .end packed-switch
-
-    :pswitch_data_1
-    .packed-switch 0x11
-        :pswitch_2
-        :pswitch_1
-        :pswitch_2
-        :pswitch_2
-        :pswitch_2
-        :pswitch_2
-        :pswitch_2
     .end packed-switch
 .end method
 
-.method public static a([B)Lcom/applovin/impl/a$b;
+.method public accept(Ljava/lang/Object;)V
     .locals 1
 
-    .line 32
-    new-instance v0, Lcom/applovin/impl/zg;
+    .line 1
+    iget-object v0, p0, Lcom/applovin/impl/A;->c:Ljava/lang/Object;
 
-    invoke-direct {v0, p0}, Lcom/applovin/impl/zg;-><init>([B)V
+    check-cast v0, Ljava/lang/Exception;
 
-    const/4 p0, 0x0
+    check-cast p1, Lcom/applovin/impl/z6$a;
 
-    invoke-static {v0, p0}, Lcom/applovin/impl/a;->a(Lcom/applovin/impl/zg;Z)Lcom/applovin/impl/a$b;
+    invoke-static {v0, p1}, Lcom/applovin/impl/w5;->b(Ljava/lang/Exception;Lcom/applovin/impl/z6$a;)V
 
-    move-result-object p0
-
-    return-object p0
-.end method
-
-.method private static a(Lcom/applovin/impl/zg;II)V
-    .locals 3
-
-    .line 22
-    invoke-virtual {p0}, Lcom/applovin/impl/zg;->f()Z
-
-    move-result v0
-
-    if-eqz v0, :cond_0
-
-    const-string v0, "AacUtil"
-
-    const-string v1, "Unexpected frameLengthFlag = 1"
-
-    .line 23
-    invoke-static {v0, v1}, Lcom/applovin/impl/oc;->d(Ljava/lang/String;Ljava/lang/String;)V
-
-    .line 24
-    :cond_0
-    invoke-virtual {p0}, Lcom/applovin/impl/zg;->f()Z
-
-    move-result v0
-
-    if-eqz v0, :cond_1
-
-    const/16 v0, 0xe
-
-    .line 25
-    invoke-virtual {p0, v0}, Lcom/applovin/impl/zg;->d(I)V
-
-    .line 26
-    :cond_1
-    invoke-virtual {p0}, Lcom/applovin/impl/zg;->f()Z
-
-    move-result v0
-
-    if-eqz p2, :cond_8
-
-    const/4 p2, 0x6
-
-    const/4 v1, 0x3
-
-    const/16 v2, 0x14
-
-    if-eq p1, p2, :cond_2
-
-    if-ne p1, v2, :cond_3
-
-    .line 27
-    :cond_2
-    invoke-virtual {p0, v1}, Lcom/applovin/impl/zg;->d(I)V
-
-    :cond_3
-    if-eqz v0, :cond_7
-
-    const/16 p2, 0x16
-
-    if-ne p1, p2, :cond_4
-
-    const/16 p2, 0x10
-
-    .line 28
-    invoke-virtual {p0, p2}, Lcom/applovin/impl/zg;->d(I)V
-
-    :cond_4
-    const/16 p2, 0x11
-
-    if-eq p1, p2, :cond_5
-
-    const/16 p2, 0x13
-
-    if-eq p1, p2, :cond_5
-
-    if-eq p1, v2, :cond_5
-
-    const/16 p2, 0x17
-
-    if-ne p1, p2, :cond_6
-
-    .line 29
-    :cond_5
-    invoke-virtual {p0, v1}, Lcom/applovin/impl/zg;->d(I)V
-
-    :cond_6
-    const/4 p1, 0x1
-
-    .line 30
-    invoke-virtual {p0, p1}, Lcom/applovin/impl/zg;->d(I)V
-
-    :cond_7
     return-void
-
-    .line 31
-    :cond_8
-    new-instance p0, Ljava/lang/UnsupportedOperationException;
-
-    invoke-direct {p0}, Ljava/lang/UnsupportedOperationException;-><init>()V
-
-    throw p0
-.end method
-
-.method public static a(III)[B
-    .locals 1
-
-    .line 1
-    shl-int/lit8 p0, p0, 0x3
-
-    and-int/lit16 p0, p0, 0xf8
-
-    shr-int/lit8 v0, p1, 0x1
-
-    and-int/lit8 v0, v0, 0x7
-
-    or-int/2addr p0, v0
-
-    int-to-byte p0, p0
-
-    shl-int/lit8 p1, p1, 0x7
-
-    and-int/lit16 p1, p1, 0x80
-
-    shl-int/lit8 p2, p2, 0x3
-
-    and-int/lit8 p2, p2, 0x78
-
-    or-int/2addr p1, p2
-
-    int-to-byte p1, p1
-
-    const/4 p2, 0x2
-
-    new-array p2, p2, [B
-
-    const/4 v0, 0x0
-
-    aput-byte p0, p2, v0
-
-    const/4 p0, 0x1
-
-    aput-byte p1, p2, p0
-
-    return-object p2
-.end method
-
-.method private static b(Lcom/applovin/impl/zg;)I
-    .locals 2
-
-    .line 1
-    const/4 v0, 0x4
-
-    .line 2
-    invoke-virtual {p0, v0}, Lcom/applovin/impl/zg;->a(I)I
-
-    .line 3
-    .line 4
-    .line 5
-    move-result v0
-
-    .line 6
-    const/16 v1, 0xf
-
-    .line 7
-    .line 8
-    if-ne v0, v1, :cond_0
-
-    .line 9
-    .line 10
-    const/16 v0, 0x18
-
-    .line 11
-    .line 12
-    invoke-virtual {p0, v0}, Lcom/applovin/impl/zg;->a(I)I
-
-    .line 13
-    .line 14
-    .line 15
-    move-result p0
-
-    .line 16
-    goto :goto_0
-
-    .line 17
-    :cond_0
-    const/16 p0, 0xd
-
-    .line 18
-    .line 19
-    if-ge v0, p0, :cond_1
-
-    .line 20
-    .line 21
-    sget-object p0, Lcom/applovin/impl/a;->a:[I
-
-    .line 22
-    .line 23
-    aget p0, p0, v0
-
-    .line 24
-    .line 25
-    :goto_0
-    return p0
-
-    .line 26
-    :cond_1
-    const/4 p0, 0x0
-
-    .line 27
-    invoke-static {p0, p0}, Lcom/applovin/impl/ch;->a(Ljava/lang/String;Ljava/lang/Throwable;)Lcom/applovin/impl/ch;
-
-    .line 28
-    .line 29
-    .line 30
-    move-result-object p0
-
-    .line 31
-    throw p0
 .end method

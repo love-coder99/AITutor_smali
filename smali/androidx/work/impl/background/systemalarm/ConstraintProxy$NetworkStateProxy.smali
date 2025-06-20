@@ -1,5 +1,5 @@
 .class public Landroidx/work/impl/background/systemalarm/ConstraintProxy$NetworkStateProxy;
-.super Ld5/c;
+.super Lx2/c;
 .source "SourceFile"
 
 

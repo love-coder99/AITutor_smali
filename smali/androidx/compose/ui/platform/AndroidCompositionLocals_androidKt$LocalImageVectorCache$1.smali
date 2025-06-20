@@ -3,7 +3,7 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lzh/a;
+.implements Lka/a;
 
 
 # annotations
@@ -19,7 +19,7 @@
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "Lkotlin/jvm/internal/Lambda;",
-        "Lzh/a;"
+        "Lka/a;"
     }
 .end annotation
 
@@ -28,9 +28,9 @@
         "\u0000\u0008\n\u0002\u0018\u0002\n\u0002\u0008\u0003\u0010\u0003\u001a\u00020\u0000H\n\u00a2\u0006\u0004\u0008\u0001\u0010\u0002"
     }
     d2 = {
-        "Ly1/d;",
+        "LD0/d;",
         "invoke",
-        "()Ly1/d;",
+        "()LD0/d;",
         "<anonymous>"
     }
     k = 0x3
@@ -71,26 +71,26 @@
 
 
 # virtual methods
-.method public bridge synthetic invoke()Ljava/lang/Object;
+.method public final invoke()LD0/d;
     .locals 1
-
-    .line 1
-    invoke-virtual {p0}, Landroidx/compose/ui/platform/AndroidCompositionLocals_androidKt$LocalImageVectorCache$1;->invoke()Ly1/d;
-
-    move-result-object v0
-
-    return-object v0
-.end method
-
-.method public final invoke()Ly1/d;
-    .locals 1
-
-    const-string v0, "LocalImageVectorCache"
 
     .line 2
+    const-string v0, "LocalImageVectorCache"
+
     invoke-static {v0}, Landroidx/compose/ui/platform/AndroidCompositionLocals_androidKt;->b(Ljava/lang/String;)V
 
     const/4 v0, 0x0
 
     throw v0
+.end method
+
+.method public bridge synthetic invoke()Ljava/lang/Object;
+    .locals 1
+
+    .line 1
+    invoke-virtual {p0}, Landroidx/compose/ui/platform/AndroidCompositionLocals_androidKt$LocalImageVectorCache$1;->invoke()LD0/d;
+
+    move-result-object v0
+
+    return-object v0
 .end method

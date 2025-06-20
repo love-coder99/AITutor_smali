@@ -13,123 +13,94 @@
 
 .field public final synthetic d:Ljava/lang/Object;
 
-.field public final synthetic f:Ljava/lang/Object;
-
-.field public final synthetic g:Ljava/lang/Object;
-
 
 # direct methods
-.method public synthetic constructor <init>(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;I)V
+.method public synthetic constructor <init>(Ljava/lang/Object;ILjava/lang/Object;)V
     .locals 0
 
     .line 1
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    iput p2, p0, Lcom/applovin/impl/mediation/r;->b:I
 
-    .line 2
-    .line 3
-    .line 4
-    iput p5, p0, Lcom/applovin/impl/mediation/r;->b:I
-
-    .line 5
-    .line 6
     iput-object p1, p0, Lcom/applovin/impl/mediation/r;->c:Ljava/lang/Object;
 
-    .line 7
-    .line 8
-    iput-object p2, p0, Lcom/applovin/impl/mediation/r;->d:Ljava/lang/Object;
+    iput-object p3, p0, Lcom/applovin/impl/mediation/r;->d:Ljava/lang/Object;
 
-    .line 9
-    .line 10
-    iput-object p3, p0, Lcom/applovin/impl/mediation/r;->f:Ljava/lang/Object;
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 11
-    .line 12
-    iput-object p4, p0, Lcom/applovin/impl/mediation/r;->g:Ljava/lang/Object;
-
-    .line 13
-    .line 14
     return-void
 .end method
 
 
 # virtual methods
 .method public final run()V
-    .locals 5
+    .locals 2
 
     .line 1
     iget v0, p0, Lcom/applovin/impl/mediation/r;->b:I
 
-    iget-object v1, p0, Lcom/applovin/impl/mediation/r;->g:Ljava/lang/Object;
-
-    iget-object v2, p0, Lcom/applovin/impl/mediation/r;->f:Ljava/lang/Object;
-
-    iget-object v3, p0, Lcom/applovin/impl/mediation/r;->d:Ljava/lang/Object;
-
-    iget-object v4, p0, Lcom/applovin/impl/mediation/r;->c:Ljava/lang/Object;
-
     packed-switch v0, :pswitch_data_0
 
-    check-cast v4, Lcom/applovin/impl/mediation/g;
+    iget-object v0, p0, Lcom/applovin/impl/mediation/r;->c:Ljava/lang/Object;
 
-    check-cast v3, Lcom/applovin/mediation/adapter/MaxAdapter$OnCompletionListener;
+    check-cast v0, Lcom/applovin/impl/mediation/g;
 
-    check-cast v2, Lcom/applovin/mediation/adapter/parameters/MaxAdapterInitializationParameters;
+    iget-object v1, p0, Lcom/applovin/impl/mediation/r;->d:Ljava/lang/Object;
 
-    check-cast v1, Landroid/app/Activity;
+    check-cast v1, Ljava/lang/Runnable;
 
-    invoke-static {v4, v3, v2, v1}, Lcom/applovin/impl/mediation/g;->n(Lcom/applovin/impl/mediation/g;Lcom/applovin/mediation/adapter/MaxAdapter$OnCompletionListener;Lcom/applovin/mediation/adapter/parameters/MaxAdapterInitializationParameters;Landroid/app/Activity;)V
+    invoke-static {v0, v1}, Lcom/applovin/impl/mediation/g;->r(Lcom/applovin/impl/mediation/g;Ljava/lang/Runnable;)V
 
     return-void
 
     :pswitch_0
-    check-cast v4, Lcom/applovin/impl/mediation/g;
+    iget-object v0, p0, Lcom/applovin/impl/mediation/r;->c:Ljava/lang/Object;
 
-    check-cast v3, Lcom/applovin/mediation/adapter/parameters/MaxAdapterResponseParameters;
+    check-cast v0, Lcom/applovin/impl/mediation/c;
 
-    check-cast v2, Lcom/applovin/mediation/MaxAdFormat;
+    iget-object v1, p0, Lcom/applovin/impl/mediation/r;->d:Ljava/lang/Object;
 
-    check-cast v1, Landroid/app/Activity;
+    check-cast v1, Lcom/applovin/impl/he;
 
-    invoke-static {v4, v3, v2, v1}, Lcom/applovin/impl/mediation/g;->d(Lcom/applovin/impl/mediation/g;Lcom/applovin/mediation/adapter/parameters/MaxAdapterResponseParameters;Lcom/applovin/mediation/MaxAdFormat;Landroid/app/Activity;)V
+    invoke-static {v0, v1}, Lcom/applovin/impl/mediation/c;->a(Lcom/applovin/impl/mediation/c;Lcom/applovin/impl/he;)V
 
     return-void
 
     :pswitch_1
-    check-cast v4, Lcom/applovin/impl/mediation/MediationServiceImpl;
+    iget-object v0, p0, Lcom/applovin/impl/mediation/r;->c:Ljava/lang/Object;
 
-    check-cast v3, Lcom/applovin/impl/he;
+    check-cast v0, Lcom/applovin/impl/mediation/b;
 
-    check-cast v2, Ljava/lang/Long;
+    iget-object v1, p0, Lcom/applovin/impl/mediation/r;->d:Ljava/lang/Object;
 
-    check-cast v1, Lcom/applovin/mediation/MaxAdListener;
+    check-cast v1, Lcom/applovin/impl/he;
 
-    invoke-static {v4, v3, v2, v1}, Lcom/applovin/impl/mediation/MediationServiceImpl;->b(Lcom/applovin/impl/mediation/MediationServiceImpl;Lcom/applovin/impl/he;Ljava/lang/Long;Lcom/applovin/mediation/MaxAdListener;)V
+    invoke-static {v0, v1}, Lcom/applovin/impl/mediation/b;->a(Lcom/applovin/impl/mediation/b;Lcom/applovin/impl/he;)V
 
     return-void
 
     :pswitch_2
-    check-cast v4, Lcom/applovin/impl/mediation/g$d;
+    iget-object v0, p0, Lcom/applovin/impl/mediation/r;->c:Ljava/lang/Object;
 
-    check-cast v3, Ljava/lang/Runnable;
+    check-cast v0, Lcom/applovin/impl/mediation/MediationServiceImpl$d;
 
-    check-cast v2, Lcom/applovin/mediation/MaxAdListener;
+    iget-object v1, p0, Lcom/applovin/impl/mediation/r;->d:Ljava/lang/Object;
 
-    check-cast v1, Ljava/lang/String;
+    check-cast v1, Lcom/applovin/mediation/MaxAd;
 
-    invoke-static {v4, v3, v2, v1}, Lcom/applovin/impl/mediation/g$d;->o(Lcom/applovin/impl/mediation/g$d;Ljava/lang/Runnable;Lcom/applovin/mediation/MaxAdListener;Ljava/lang/String;)V
+    invoke-static {v0, v1}, Lcom/applovin/impl/mediation/MediationServiceImpl$d;->a(Lcom/applovin/impl/mediation/MediationServiceImpl$d;Lcom/applovin/mediation/MaxAd;)V
 
     return-void
 
     :pswitch_3
-    check-cast v4, Lcom/applovin/impl/mediation/g$d;
+    iget-object v0, p0, Lcom/applovin/impl/mediation/r;->c:Ljava/lang/Object;
 
-    check-cast v3, Lcom/applovin/impl/he;
+    check-cast v0, Lcom/applovin/impl/mediation/g$d;
 
-    check-cast v2, Lcom/applovin/mediation/MaxReward;
+    iget-object v1, p0, Lcom/applovin/impl/mediation/r;->d:Ljava/lang/Object;
 
-    check-cast v1, Landroid/os/Bundle;
+    check-cast v1, Lcom/applovin/mediation/MaxError;
 
-    invoke-static {v4, v3, v2, v1}, Lcom/applovin/impl/mediation/g$d;->a(Lcom/applovin/impl/mediation/g$d;Lcom/applovin/impl/he;Lcom/applovin/mediation/MaxReward;Landroid/os/Bundle;)V
+    invoke-static {v0, v1}, Lcom/applovin/impl/mediation/g$d;->i(Lcom/applovin/impl/mediation/g$d;Lcom/applovin/mediation/MaxError;)V
 
     return-void
 

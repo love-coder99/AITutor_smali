@@ -42,65 +42,65 @@
 
 # direct methods
 .method static constructor <clinit>()V
-    .locals 4
+    .locals 5
 
     .line 1
-    const/4 v0, 0x2
+    const/4 v0, 0x1
 
     .line 2
-    new-array v0, v0, [Lcom/afollestad/materialdialogs/LayoutMode;
+    const/4 v1, 0x0
 
     .line 3
+    new-instance v2, Lcom/afollestad/materialdialogs/LayoutMode;
+
     .line 4
-    new-instance v1, Lcom/afollestad/materialdialogs/LayoutMode;
-
     .line 5
+    const-string v3, "MATCH_PARENT"
+
     .line 6
-    const-string v2, "MATCH_PARENT"
-
     .line 7
+    invoke-direct {v2, v3, v1}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
+
     .line 8
-    const/4 v3, 0x0
-
     .line 9
-    invoke-direct {v1, v2, v3}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
-
     .line 10
+    sput-object v2, Lcom/afollestad/materialdialogs/LayoutMode;->MATCH_PARENT:Lcom/afollestad/materialdialogs/LayoutMode;
+
     .line 11
     .line 12
-    sput-object v1, Lcom/afollestad/materialdialogs/LayoutMode;->MATCH_PARENT:Lcom/afollestad/materialdialogs/LayoutMode;
+    new-instance v3, Lcom/afollestad/materialdialogs/LayoutMode;
 
     .line 13
     .line 14
-    aput-object v1, v0, v3
+    const-string v4, "WRAP_CONTENT"
 
     .line 15
     .line 16
-    new-instance v1, Lcom/afollestad/materialdialogs/LayoutMode;
+    invoke-direct {v3, v4, v0}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
 
     .line 17
     .line 18
-    const-string v2, "WRAP_CONTENT"
-
     .line 19
-    .line 20
-    const/4 v3, 0x1
+    sput-object v3, Lcom/afollestad/materialdialogs/LayoutMode;->WRAP_CONTENT:Lcom/afollestad/materialdialogs/LayoutMode;
 
+    .line 20
     .line 21
-    invoke-direct {v1, v2, v3}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
+    const/4 v4, 0x2
 
     .line 22
+    new-array v4, v4, [Lcom/afollestad/materialdialogs/LayoutMode;
+
     .line 23
     .line 24
-    sput-object v1, Lcom/afollestad/materialdialogs/LayoutMode;->WRAP_CONTENT:Lcom/afollestad/materialdialogs/LayoutMode;
+    aput-object v2, v4, v1
 
     .line 25
     .line 26
-    aput-object v1, v0, v3
+    aput-object v3, v4, v0
 
     .line 27
     .line 28
-    sput-object v0, Lcom/afollestad/materialdialogs/LayoutMode;->b:[Lcom/afollestad/materialdialogs/LayoutMode;
+    sput-object v4, Lcom/afollestad/materialdialogs/LayoutMode;->b:[Lcom/afollestad/materialdialogs/LayoutMode;
 
     .line 29
     .line 30

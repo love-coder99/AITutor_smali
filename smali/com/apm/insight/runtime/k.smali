@@ -15,30 +15,31 @@
 .method public static a()Lcom/apm/insight/MonitorCrash;
     .locals 7
 
+    .line 1
     sget-object v0, Lcom/apm/insight/runtime/k;->a:Lcom/apm/insight/MonitorCrash;
 
     if-nez v0, :cond_0
 
-    .line 1
+    .line 2
     invoke-static {}, Lcom/apm/insight/e;->g()Landroid/content/Context;
 
     move-result-object v1
-
-    const-string v2, "239017"
-
-    const-wide/32 v3, 0xfbac3
 
     const-string v5, "1.3.8.nourl-rc.1"
 
     const-string v6, "com.apm.insight"
 
+    const-string v2, "239017"
+
+    const-wide/32 v3, 0xfbac3
+
     invoke-static/range {v1 .. v6}, Lcom/apm/insight/MonitorCrash;->initSDK(Landroid/content/Context;Ljava/lang/String;JLjava/lang/String;Ljava/lang/String;)Lcom/apm/insight/MonitorCrash;
 
     move-result-object v0
 
+    .line 3
     sput-object v0, Lcom/apm/insight/runtime/k;->a:Lcom/apm/insight/MonitorCrash;
 
-    .line 2
     invoke-virtual {v0}, Lcom/apm/insight/MonitorCrash;->config()Lcom/apm/insight/MonitorCrash$Config;
 
     move-result-object v0
@@ -47,6 +48,7 @@
 
     invoke-virtual {v0, v1}, Lcom/apm/insight/MonitorCrash$Config;->setChannel(Ljava/lang/String;)Lcom/apm/insight/MonitorCrash$Config;
 
+    .line 4
     :cond_0
     sget-object v0, Lcom/apm/insight/runtime/k;->a:Lcom/apm/insight/MonitorCrash;
 
@@ -56,7 +58,7 @@
 .method public static a(Ljava/lang/Throwable;Ljava/lang/String;)V
     .locals 2
 
-    .line 3
+    .line 5
     invoke-static {}, Lcom/apm/insight/e;->g()Landroid/content/Context;
 
     move-result-object v0
@@ -65,6 +67,7 @@
 
     return-void
 
+    .line 6
     :cond_0
     sget v0, Lcom/apm/insight/runtime/k;->b:I
 
@@ -74,8 +77,10 @@
 
     const/4 v0, 0x5
 
+    .line 7
     sput v0, Lcom/apm/insight/runtime/k;->b:I
 
+    .line 8
     :cond_1
     sget v0, Lcom/apm/insight/runtime/k;->c:I
 
@@ -85,9 +90,10 @@
 
     add-int/lit8 v0, v0, 0x1
 
+    .line 9
     sput v0, Lcom/apm/insight/runtime/k;->c:I
 
-    .line 4
+    .line 10
     invoke-static {}, Lcom/apm/insight/runtime/k;->a()Lcom/apm/insight/MonitorCrash;
 
     move-result-object v0

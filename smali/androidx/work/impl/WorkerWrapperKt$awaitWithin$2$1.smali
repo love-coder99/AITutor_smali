@@ -3,14 +3,14 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lzh/c;
+.implements Lka/c;
 
 
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "Lkotlin/jvm/internal/Lambda;",
-        "Lzh/c;"
+        "Lka/c;"
     }
 .end annotation
 
@@ -22,7 +22,7 @@
         "T",
         "",
         "it",
-        "Lqh/r;",
+        "LX9/j;",
         "invoke",
         "(Ljava/lang/Throwable;)V",
         "<anonymous>"
@@ -37,10 +37,10 @@
 
 
 # instance fields
-.field final synthetic $this_awaitWithin:Lcom/google/common/util/concurrent/c;
+.field final synthetic $this_awaitWithin:Lcom/google/common/util/concurrent/d;
     .annotation system Ldalvik/annotation/Signature;
         value = {
-            "Lcom/google/common/util/concurrent/c;"
+            "Lcom/google/common/util/concurrent/d;"
         }
     .end annotation
 .end field
@@ -49,20 +49,20 @@
 
 
 # direct methods
-.method public constructor <init>(Landroidx/work/t;Lcom/google/common/util/concurrent/c;)V
+.method public constructor <init>(Landroidx/work/t;Lcom/google/common/util/concurrent/d;)V
     .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
             "Landroidx/work/t;",
-            "Lcom/google/common/util/concurrent/c;",
+            "Lcom/google/common/util/concurrent/d;",
             ")V"
         }
     .end annotation
 
     iput-object p1, p0, Landroidx/work/impl/WorkerWrapperKt$awaitWithin$2$1;->$worker:Landroidx/work/t;
 
-    iput-object p2, p0, Landroidx/work/impl/WorkerWrapperKt$awaitWithin$2$1;->$this_awaitWithin:Lcom/google/common/util/concurrent/c;
+    iput-object p2, p0, Landroidx/work/impl/WorkerWrapperKt$awaitWithin$2$1;->$this_awaitWithin:Lcom/google/common/util/concurrent/d;
 
     const/4 p1, 0x1
 
@@ -81,7 +81,7 @@
 
     invoke-virtual {p0, p1}, Landroidx/work/impl/WorkerWrapperKt$awaitWithin$2$1;->invoke(Ljava/lang/Throwable;)V
 
-    sget-object p1, Lqh/r;->a:Lqh/r;
+    sget-object p1, LX9/j;->a:LX9/j;
 
     return-object p1
 .end method
@@ -94,9 +94,9 @@
 
     if-eqz v0, :cond_0
 
+    .line 3
     iget-object v0, p0, Landroidx/work/impl/WorkerWrapperKt$awaitWithin$2$1;->$worker:Landroidx/work/t;
 
-    .line 3
     check-cast p1, Landroidx/work/impl/WorkerStoppedException;
 
     invoke-virtual {p1}, Landroidx/work/impl/WorkerStoppedException;->getReason()I
@@ -105,12 +105,12 @@
 
     invoke-virtual {v0, p1}, Landroidx/work/t;->stop(I)V
 
+    .line 4
     :cond_0
-    iget-object p1, p0, Landroidx/work/impl/WorkerWrapperKt$awaitWithin$2$1;->$this_awaitWithin:Lcom/google/common/util/concurrent/c;
+    iget-object p1, p0, Landroidx/work/impl/WorkerWrapperKt$awaitWithin$2$1;->$this_awaitWithin:Lcom/google/common/util/concurrent/d;
 
     const/4 v0, 0x0
 
-    .line 4
     invoke-interface {p1, v0}, Ljava/util/concurrent/Future;->cancel(Z)Z
 
     return-void

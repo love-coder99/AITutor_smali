@@ -60,9 +60,9 @@
 .method public a(Lcom/applovin/creative/MaxCreativeDebuggerDisplayedAdActivity;)V
     .locals 2
 
+    .line 2
     iget-object v0, p0, Lcom/applovin/impl/v4$a$a;->b:Lcom/applovin/impl/v4$a;
 
-    .line 2
     iget-object v0, v0, Lcom/applovin/impl/v4$a;->b:Lcom/applovin/impl/v4;
 
     invoke-static {v0}, Lcom/applovin/impl/v4;->a(Lcom/applovin/impl/v4;)Lcom/applovin/impl/w4;

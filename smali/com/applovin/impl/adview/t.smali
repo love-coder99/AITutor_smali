@@ -17,40 +17,35 @@
     .locals 0
 
     .line 1
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
-
-    .line 2
-    .line 3
-    .line 4
     iput p2, p0, Lcom/applovin/impl/adview/t;->b:I
 
-    .line 5
-    .line 6
     iput-object p1, p0, Lcom/applovin/impl/adview/t;->c:Lcom/applovin/impl/adview/f;
 
-    .line 7
-    .line 8
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
     return-void
 .end method
 
 
 # virtual methods
 .method public final onClick(Landroid/view/View;)V
-    .locals 2
+    .locals 1
 
     .line 1
     iget v0, p0, Lcom/applovin/impl/adview/t;->b:I
 
-    iget-object v1, p0, Lcom/applovin/impl/adview/t;->c:Lcom/applovin/impl/adview/f;
-
     packed-switch v0, :pswitch_data_0
 
-    invoke-static {v1, p1}, Lcom/applovin/impl/adview/f;->d(Lcom/applovin/impl/adview/f;Landroid/view/View;)V
+    iget-object v0, p0, Lcom/applovin/impl/adview/t;->c:Lcom/applovin/impl/adview/f;
+
+    invoke-static {v0, p1}, Lcom/applovin/impl/adview/f;->f(Lcom/applovin/impl/adview/f;Landroid/view/View;)V
 
     return-void
 
     :pswitch_0
-    invoke-static {v1, p1}, Lcom/applovin/impl/adview/f;->e(Lcom/applovin/impl/adview/f;Landroid/view/View;)V
+    iget-object v0, p0, Lcom/applovin/impl/adview/t;->c:Lcom/applovin/impl/adview/f;
+
+    invoke-static {v0, p1}, Lcom/applovin/impl/adview/f;->d(Lcom/applovin/impl/adview/f;Landroid/view/View;)V
 
     return-void
 

@@ -93,7 +93,7 @@
 .method public static a()Lcom/applovin/impl/a4$a;
     .locals 1
 
-    .line 1
+    .line 4
     sget-object v0, Lcom/applovin/impl/a4;->c:Lcom/applovin/impl/a4$a;
 
     return-object v0
@@ -107,18 +107,18 @@
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
 
+    .line 7
     sget-object v1, Lcom/applovin/impl/a4;->b:Lcom/applovin/impl/a4$a;
 
-    .line 7
     invoke-static {v1, p0}, Lcom/applovin/impl/a4;->a(Lcom/applovin/impl/a4$a;Landroid/content/Context;)Ljava/lang/String;
 
     move-result-object v1
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    .line 8
     sget-object v1, Lcom/applovin/impl/a4;->c:Lcom/applovin/impl/a4$a;
 
-    .line 8
     invoke-static {v1, p0}, Lcom/applovin/impl/a4;->a(Lcom/applovin/impl/a4$a;Landroid/content/Context;)Ljava/lang/String;
 
     move-result-object p0
@@ -173,7 +173,7 @@
 
     if-nez p2, :cond_0
 
-    .line 2
+    .line 1
     new-instance p1, Ljava/lang/StringBuilder;
 
     const-string p2, "Failed to update compliance value for key: "
@@ -195,14 +195,14 @@
     :cond_0
     const/4 v1, 0x0
 
-    .line 3
+    .line 2
     invoke-static {p0, v1, p2}, Lcom/applovin/impl/vj;->a(Lcom/applovin/impl/uj;Ljava/lang/Object;Landroid/content/Context;)Ljava/lang/Object;
 
     move-result-object v1
 
     check-cast v1, Ljava/lang/Boolean;
 
-    .line 4
+    .line 3
     invoke-static {p0, p1, p2}, Lcom/applovin/impl/vj;->b(Lcom/applovin/impl/uj;Ljava/lang/Object;Landroid/content/Context;)V
 
     const/4 p0, 0x1
@@ -266,7 +266,10 @@
 .method public static c()Lcom/applovin/impl/a4$a;
     .locals 1
 
+    .line 1
     sget-object v0, Lcom/applovin/impl/a4;->a:Lcom/applovin/impl/a4$a;
 
+    .line 2
+    .line 3
     return-object v0
 .end method

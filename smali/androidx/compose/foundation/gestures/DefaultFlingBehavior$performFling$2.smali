@@ -3,25 +3,35 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lzh/e;
+.implements Lka/e;
 
 
 # annotations
+.annotation runtime Lca/c;
+    c = "androidx.compose.foundation.gestures.DefaultFlingBehavior$performFling$2"
+    f = "Scrollable.kt"
+    l = {
+        0x37d
+    }
+    m = "invokeSuspend"
+.end annotation
+
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "Lkotlin/coroutines/jvm/internal/SuspendLambda;",
-        "Lzh/e;"
+        "Lka/e;"
     }
 .end annotation
 
 .annotation runtime Lkotlin/Metadata;
     d1 = {
-        "\u0000\n\n\u0002\u0018\u0002\n\u0002\u0010\u0007\n\u0000\u0010\u0002\u001a\u00020\u0001*\u00020\u0000H\u008a@"
+        "\u0000\u000c\n\u0002\u0018\u0002\n\u0002\u0010\u0007\n\u0002\u0008\u0002\u0010\u0002\u001a\u00020\u0001*\u00020\u0000H\u008a@\u00a2\u0006\u0004\u0008\u0002\u0010\u0003"
     }
     d2 = {
-        "Lkotlinx/coroutines/w;",
+        "Lkotlinx/coroutines/u;",
         "",
-        "<anonymous>"
+        "<anonymous>",
+        "(Lkotlinx/coroutines/u;)F"
     }
     k = 0x3
     mv = {
@@ -31,20 +41,11 @@
     }
 .end annotation
 
-.annotation runtime Lth/c;
-    c = "androidx.compose.foundation.gestures.DefaultFlingBehavior$performFling$2"
-    f = "Scrollable.kt"
-    l = {
-        0x37d
-    }
-    m = "invokeSuspend"
-.end annotation
-
 
 # instance fields
 .field final synthetic $initialVelocity:F
 
-.field final synthetic $this_performFling:Landroidx/compose/foundation/gestures/a0;
+.field final synthetic $this_performFling:Landroidx/compose/foundation/gestures/C;
 
 .field L$0:Ljava/lang/Object;
 
@@ -56,13 +57,13 @@
 
 
 # direct methods
-.method public constructor <init>(FLandroidx/compose/foundation/gestures/k;Landroidx/compose/foundation/gestures/a0;Lkotlin/coroutines/Continuation;)V
+.method public constructor <init>(FLandroidx/compose/foundation/gestures/k;Landroidx/compose/foundation/gestures/C;Lkotlin/coroutines/Continuation;)V
     .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(F",
             "Landroidx/compose/foundation/gestures/k;",
-            "Landroidx/compose/foundation/gestures/a0;",
+            "Landroidx/compose/foundation/gestures/C;",
             "Lkotlin/coroutines/Continuation<",
             "-",
             "Landroidx/compose/foundation/gestures/DefaultFlingBehavior$performFling$2;",
@@ -74,7 +75,7 @@
 
     iput-object p2, p0, Landroidx/compose/foundation/gestures/DefaultFlingBehavior$performFling$2;->this$0:Landroidx/compose/foundation/gestures/k;
 
-    iput-object p3, p0, Landroidx/compose/foundation/gestures/DefaultFlingBehavior$performFling$2;->$this_performFling:Landroidx/compose/foundation/gestures/a0;
+    iput-object p3, p0, Landroidx/compose/foundation/gestures/DefaultFlingBehavior$performFling$2;->$this_performFling:Landroidx/compose/foundation/gestures/C;
 
     const/4 p1, 0x2
 
@@ -94,7 +95,7 @@
             "Lkotlin/coroutines/Continuation<",
             "*>;)",
             "Lkotlin/coroutines/Continuation<",
-            "Lqh/r;",
+            "LX9/j;",
             ">;"
         }
     .end annotation
@@ -105,9 +106,9 @@
 
     iget-object v1, p0, Landroidx/compose/foundation/gestures/DefaultFlingBehavior$performFling$2;->this$0:Landroidx/compose/foundation/gestures/k;
 
-    iget-object v2, p0, Landroidx/compose/foundation/gestures/DefaultFlingBehavior$performFling$2;->$this_performFling:Landroidx/compose/foundation/gestures/a0;
+    iget-object v2, p0, Landroidx/compose/foundation/gestures/DefaultFlingBehavior$performFling$2;->$this_performFling:Landroidx/compose/foundation/gestures/C;
 
-    invoke-direct {p1, v0, v1, v2, p2}, Landroidx/compose/foundation/gestures/DefaultFlingBehavior$performFling$2;-><init>(FLandroidx/compose/foundation/gestures/k;Landroidx/compose/foundation/gestures/a0;Lkotlin/coroutines/Continuation;)V
+    invoke-direct {p1, v0, v1, v2, p2}, Landroidx/compose/foundation/gestures/DefaultFlingBehavior$performFling$2;-><init>(FLandroidx/compose/foundation/gestures/k;Landroidx/compose/foundation/gestures/C;Lkotlin/coroutines/Continuation;)V
 
     return-object p1
 .end method
@@ -116,23 +117,23 @@
     .locals 0
 
     .line 1
-    check-cast p1, Lkotlinx/coroutines/w;
+    check-cast p1, Lkotlinx/coroutines/u;
 
     check-cast p2, Lkotlin/coroutines/Continuation;
 
-    invoke-virtual {p0, p1, p2}, Landroidx/compose/foundation/gestures/DefaultFlingBehavior$performFling$2;->invoke(Lkotlinx/coroutines/w;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
+    invoke-virtual {p0, p1, p2}, Landroidx/compose/foundation/gestures/DefaultFlingBehavior$performFling$2;->invoke(Lkotlinx/coroutines/u;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
 
     move-result-object p1
 
     return-object p1
 .end method
 
-.method public final invoke(Lkotlinx/coroutines/w;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
+.method public final invoke(Lkotlinx/coroutines/u;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
     .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
-            "Lkotlinx/coroutines/w;",
+            "Lkotlinx/coroutines/u;",
             "Lkotlin/coroutines/Continuation<",
             "-",
             "Ljava/lang/Float;",
@@ -148,7 +149,7 @@
 
     check-cast p1, Landroidx/compose/foundation/gestures/DefaultFlingBehavior$performFling$2;
 
-    sget-object p2, Lqh/r;->a:Lqh/r;
+    sget-object p2, LX9/j;->a:LX9/j;
 
     invoke-virtual {p1, p2}, Landroidx/compose/foundation/gestures/DefaultFlingBehavior$performFling$2;->invokeSuspend(Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -184,7 +185,7 @@
 
     .line 11
     .line 12
-    check-cast v0, Landroidx/compose/animation/core/h;
+    check-cast v0, Landroidx/compose/animation/core/g;
 
     .line 13
     .line 14
@@ -291,7 +292,7 @@
     const/4 v5, 0x0
 
     .line 64
-    invoke-static {v5, v3, v4}, Landroidx/compose/animation/core/b;->b(FFI)Landroidx/compose/animation/core/h;
+    invoke-static {v5, v3, v4}, Landroidx/compose/animation/core/b;->b(FFI)Landroidx/compose/animation/core/g;
 
     .line 65
     .line 66
@@ -304,7 +305,7 @@
 
     .line 69
     .line 70
-    iget-object v5, v4, Landroidx/compose/foundation/gestures/k;->a:Landroidx/compose/animation/core/t;
+    iget-object v5, v4, Landroidx/compose/foundation/gestures/k;->a:Landroidx/compose/animation/core/r;
 
     .line 71
     .line 72
@@ -312,11 +313,11 @@
 
     .line 73
     .line 74
-    iget-object v7, p0, Landroidx/compose/foundation/gestures/DefaultFlingBehavior$performFling$2;->$this_performFling:Landroidx/compose/foundation/gestures/a0;
+    iget-object v7, p0, Landroidx/compose/foundation/gestures/DefaultFlingBehavior$performFling$2;->$this_performFling:Landroidx/compose/foundation/gestures/C;
 
     .line 75
     .line 76
-    invoke-direct {v6, p1, v7, v1, v4}, Landroidx/compose/foundation/gestures/DefaultFlingBehavior$performFling$2$1;-><init>(Lkotlin/jvm/internal/Ref$FloatRef;Landroidx/compose/foundation/gestures/a0;Lkotlin/jvm/internal/Ref$FloatRef;Landroidx/compose/foundation/gestures/k;)V
+    invoke-direct {v6, p1, v7, v1, v4}, Landroidx/compose/foundation/gestures/DefaultFlingBehavior$performFling$2$1;-><init>(Lkotlin/jvm/internal/Ref$FloatRef;Landroidx/compose/foundation/gestures/C;Lkotlin/jvm/internal/Ref$FloatRef;Landroidx/compose/foundation/gestures/k;)V
 
     .line 77
     .line 78
@@ -336,7 +337,7 @@
     const/4 p1, 0x0
 
     .line 86
-    invoke-static {v3, v5, p1, v6, p0}, Landroidx/compose/animation/core/b;->f(Landroidx/compose/animation/core/h;Landroidx/compose/animation/core/t;ZLzh/c;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
+    invoke-static {v3, v5, p1, v6, p0}, Landroidx/compose/animation/core/b;->f(Landroidx/compose/animation/core/g;Landroidx/compose/animation/core/r;ZLka/c;Lkotlin/coroutines/jvm/internal/ContinuationImpl;)Ljava/lang/Object;
 
     .line 87
     .line 88
@@ -358,7 +359,7 @@
 
     .line 94
     :catch_1
-    invoke-virtual {v0}, Landroidx/compose/animation/core/h;->a()Ljava/lang/Object;
+    invoke-virtual {v0}, Landroidx/compose/animation/core/g;->a()Ljava/lang/Object;
 
     .line 95
     .line 96

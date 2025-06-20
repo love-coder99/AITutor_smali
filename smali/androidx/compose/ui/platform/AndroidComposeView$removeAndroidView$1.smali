@@ -3,14 +3,14 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lzh/a;
+.implements Lka/a;
 
 
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "Lkotlin/jvm/internal/Lambda;",
-        "Lzh/a;"
+        "Lka/a;"
     }
 .end annotation
 
@@ -19,7 +19,7 @@
         "\u0000\u0008\n\u0002\u0018\u0002\n\u0002\u0008\u0003\u0010\u0003\u001a\u00020\u0000H\n\u00a2\u0006\u0004\u0008\u0001\u0010\u0002"
     }
     d2 = {
-        "Lqh/r;",
+        "LX9/j;",
         "invoke",
         "()V",
         "<anonymous>"
@@ -36,14 +36,14 @@
 # instance fields
 .field final synthetic $view:Landroidx/compose/ui/viewinterop/d;
 
-.field final synthetic this$0:Landroidx/compose/ui/platform/r;
+.field final synthetic this$0:Landroidx/compose/ui/platform/o;
 
 
 # direct methods
-.method public constructor <init>(Landroidx/compose/ui/platform/r;Landroidx/compose/ui/viewinterop/d;)V
+.method public constructor <init>(Landroidx/compose/ui/platform/o;Landroidx/compose/ui/viewinterop/d;)V
     .locals 0
 
-    iput-object p1, p0, Landroidx/compose/ui/platform/AndroidComposeView$removeAndroidView$1;->this$0:Landroidx/compose/ui/platform/r;
+    iput-object p1, p0, Landroidx/compose/ui/platform/AndroidComposeView$removeAndroidView$1;->this$0:Landroidx/compose/ui/platform/o;
 
     iput-object p2, p0, Landroidx/compose/ui/platform/AndroidComposeView$removeAndroidView$1;->$view:Landroidx/compose/ui/viewinterop/d;
 
@@ -62,7 +62,7 @@
     .line 1
     invoke-virtual {p0}, Landroidx/compose/ui/platform/AndroidComposeView$removeAndroidView$1;->invoke()V
 
-    sget-object v0, Lqh/r;->a:Lqh/r;
+    sget-object v0, LX9/j;->a:LX9/j;
 
     return-object v0
 .end method
@@ -70,10 +70,10 @@
 .method public final invoke()V
     .locals 3
 
-    iget-object v0, p0, Landroidx/compose/ui/platform/AndroidComposeView$removeAndroidView$1;->this$0:Landroidx/compose/ui/platform/r;
-
     .line 2
-    invoke-virtual {v0}, Landroidx/compose/ui/platform/r;->getAndroidViewsHandler$ui_release()Landroidx/compose/ui/platform/a1;
+    iget-object v0, p0, Landroidx/compose/ui/platform/AndroidComposeView$removeAndroidView$1;->this$0:Landroidx/compose/ui/platform/o;
+
+    invoke-virtual {v0}, Landroidx/compose/ui/platform/o;->getAndroidViewsHandler$ui_release()Landroidx/compose/ui/platform/Q;
 
     move-result-object v0
 
@@ -81,25 +81,25 @@
 
     invoke-virtual {v0, v1}, Landroid/view/ViewGroup;->removeViewInLayout(Landroid/view/View;)V
 
-    iget-object v0, p0, Landroidx/compose/ui/platform/AndroidComposeView$removeAndroidView$1;->this$0:Landroidx/compose/ui/platform/r;
-
     .line 3
-    invoke-virtual {v0}, Landroidx/compose/ui/platform/r;->getAndroidViewsHandler$ui_release()Landroidx/compose/ui/platform/a1;
+    iget-object v0, p0, Landroidx/compose/ui/platform/AndroidComposeView$removeAndroidView$1;->this$0:Landroidx/compose/ui/platform/o;
+
+    invoke-virtual {v0}, Landroidx/compose/ui/platform/o;->getAndroidViewsHandler$ui_release()Landroidx/compose/ui/platform/Q;
 
     move-result-object v0
 
-    invoke-virtual {v0}, Landroidx/compose/ui/platform/a1;->getLayoutNodeToHolder()Ljava/util/HashMap;
+    invoke-virtual {v0}, Landroidx/compose/ui/platform/Q;->getLayoutNodeToHolder()Ljava/util/HashMap;
 
     move-result-object v0
-
-    iget-object v1, p0, Landroidx/compose/ui/platform/AndroidComposeView$removeAndroidView$1;->this$0:Landroidx/compose/ui/platform/r;
 
     .line 4
-    invoke-virtual {v1}, Landroidx/compose/ui/platform/r;->getAndroidViewsHandler$ui_release()Landroidx/compose/ui/platform/a1;
+    iget-object v1, p0, Landroidx/compose/ui/platform/AndroidComposeView$removeAndroidView$1;->this$0:Landroidx/compose/ui/platform/o;
+
+    invoke-virtual {v1}, Landroidx/compose/ui/platform/o;->getAndroidViewsHandler$ui_release()Landroidx/compose/ui/platform/Q;
 
     move-result-object v1
 
-    invoke-virtual {v1}, Landroidx/compose/ui/platform/a1;->getHolderToLayoutNode()Ljava/util/HashMap;
+    invoke-virtual {v1}, Landroidx/compose/ui/platform/Q;->getHolderToLayoutNode()Ljava/util/HashMap;
 
     move-result-object v1
 
@@ -110,15 +110,17 @@
     move-result-object v1
 
     .line 5
-    invoke-static {v0}, Ljb/a;->f(Ljava/util/AbstractMap;)Ljava/util/Map;
+    invoke-static {v0}, Lkotlin/jvm/internal/m;->c(Ljava/lang/Object;)Ljava/util/Map;
+
+    move-result-object v0
 
     invoke-interface {v0, v1}, Ljava/util/Map;->remove(Ljava/lang/Object;)Ljava/lang/Object;
 
+    .line 6
     iget-object v0, p0, Landroidx/compose/ui/platform/AndroidComposeView$removeAndroidView$1;->$view:Landroidx/compose/ui/viewinterop/d;
 
     const/4 v1, 0x0
 
-    .line 6
     invoke-virtual {v0, v1}, Landroid/view/View;->setImportantForAccessibility(I)V
 
     return-void

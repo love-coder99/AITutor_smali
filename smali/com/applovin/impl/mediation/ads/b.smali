@@ -147,9 +147,9 @@
 .method private a(J)V
     .locals 3
 
+    .line 2
     iget-object v0, p0, Lcom/applovin/impl/mediation/ads/b;->b:Lcom/applovin/impl/ie;
 
-    .line 2
     invoke-virtual {v0}, Lcom/applovin/impl/ie;->s0()Ljava/util/concurrent/atomic/AtomicBoolean;
 
     move-result-object v0
@@ -164,9 +164,9 @@
 
     if-eqz v0, :cond_1
 
+    .line 3
     iget-object v0, p0, Lcom/applovin/impl/mediation/ads/b;->a:Lcom/applovin/impl/sdk/j;
 
-    .line 3
     invoke-virtual {v0}, Lcom/applovin/impl/sdk/j;->I()Lcom/applovin/impl/sdk/n;
 
     invoke-static {}, Lcom/applovin/impl/sdk/n;->a()Z
@@ -187,10 +187,10 @@
 
     invoke-virtual {v0, v1, v2}, Lcom/applovin/impl/sdk/n;->a(Ljava/lang/String;Ljava/lang/String;)V
 
+    .line 4
     :cond_0
     iget-object v0, p0, Lcom/applovin/impl/mediation/ads/b;->a:Lcom/applovin/impl/sdk/j;
 
-    .line 4
     invoke-virtual {v0}, Lcom/applovin/impl/sdk/j;->P()Lcom/applovin/impl/mediation/MediationServiceImpl;
 
     move-result-object v0
@@ -210,9 +210,9 @@
 .method public a()V
     .locals 1
 
+    .line 1
     iget-object v0, p0, Lcom/applovin/impl/mediation/ads/b;->c:Lcom/applovin/impl/br;
 
-    .line 1
     invoke-virtual {v0}, Lcom/applovin/impl/br;->b()V
 
     return-void
@@ -221,8 +221,11 @@
 .method public b()Lcom/applovin/impl/ie;
     .locals 1
 
+    .line 1
     iget-object v0, p0, Lcom/applovin/impl/mediation/ads/b;->b:Lcom/applovin/impl/ie;
 
+    .line 2
+    .line 3
     return-object v0
 .end method
 

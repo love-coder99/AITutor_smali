@@ -19,13 +19,13 @@
 .method public constructor <init>(Ljava/lang/Object;)V
     .locals 6
 
-    const-class v2, Landroidx/compose/ui/platform/r;
-
-    const-string v3, "layoutDirection"
-
     const-string v4, "getLayoutDirection()Landroidx/compose/ui/unit/LayoutDirection;"
 
     const/4 v5, 0x0
+
+    const-class v2, Landroidx/compose/ui/platform/o;
+
+    const-string v3, "layoutDirection"
 
     move-object v0, p0
 
@@ -46,11 +46,11 @@
 
     .line 2
     .line 3
-    check-cast v0, Landroidx/compose/ui/platform/r;
+    check-cast v0, Landroidx/compose/ui/platform/o;
 
     .line 4
     .line 5
-    invoke-virtual {v0}, Landroidx/compose/ui/platform/r;->getLayoutDirection()Landroidx/compose/ui/unit/LayoutDirection;
+    invoke-virtual {v0}, Landroidx/compose/ui/platform/o;->getLayoutDirection()Landroidx/compose/ui/unit/LayoutDirection;
 
     .line 6
     .line 7
@@ -69,7 +69,7 @@
 
     .line 2
     .line 3
-    check-cast v0, Landroidx/compose/ui/platform/r;
+    check-cast v0, Landroidx/compose/ui/platform/o;
 
     .line 4
     .line 5
@@ -77,7 +77,7 @@
 
     .line 6
     .line 7
-    invoke-static {v0, p1}, Landroidx/compose/ui/platform/r;->f(Landroidx/compose/ui/platform/r;Landroidx/compose/ui/unit/LayoutDirection;)V
+    invoke-static {v0, p1}, Landroidx/compose/ui/platform/o;->f(Landroidx/compose/ui/platform/o;Landroidx/compose/ui/unit/LayoutDirection;)V
 
     .line 8
     .line 9

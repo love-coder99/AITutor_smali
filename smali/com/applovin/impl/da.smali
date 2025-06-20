@@ -75,11 +75,11 @@
 .method public a()Landroid/graphics/drawable/Drawable;
     .locals 6
 
+    .line 1
     iget-object v0, p0, Lcom/applovin/impl/da;->a:Ljava/util/Map;
 
     const-string v1, "google_watermark"
 
-    .line 1
     invoke-interface {v0, v1}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object v0
@@ -95,9 +95,9 @@
 
     if-nez v1, :cond_1
 
+    .line 3
     iget-object v1, p0, Lcom/applovin/impl/da;->b:Lcom/applovin/impl/sdk/j;
 
-    .line 3
     invoke-virtual {v1}, Lcom/applovin/impl/sdk/j;->I()Lcom/applovin/impl/sdk/n;
 
     invoke-static {}, Lcom/applovin/impl/sdk/n;->a()Z
@@ -172,9 +172,9 @@
     :catchall_0
     move-exception v0
 
+    .line 8
     iget-object v1, p0, Lcom/applovin/impl/da;->b:Lcom/applovin/impl/sdk/j;
 
-    .line 8
     invoke-virtual {v1}, Lcom/applovin/impl/sdk/j;->I()Lcom/applovin/impl/sdk/n;
 
     invoke-static {}, Lcom/applovin/impl/sdk/n;->a()Z
@@ -200,8 +200,11 @@
 .method public b()Ljava/lang/String;
     .locals 1
 
+    .line 1
     const-string v0, "google watermark"
 
+    .line 2
+    .line 3
     return-object v0
 .end method
 

@@ -3,14 +3,14 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lzh/c;
+.implements Lka/c;
 
 
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "Lkotlin/jvm/internal/Lambda;",
-        "Lzh/c;"
+        "Lka/c;"
     }
 .end annotation
 
@@ -21,9 +21,9 @@
     d2 = {
         "",
         "it",
-        "Landroidx/compose/foundation/y0;",
+        "Landroidx/compose/foundation/X;",
         "invoke",
-        "(I)Landroidx/compose/foundation/y0;",
+        "(I)Landroidx/compose/foundation/X;",
         "<anonymous>"
     }
     k = 0x3
@@ -64,13 +64,13 @@
 
 
 # virtual methods
-.method public final invoke(I)Landroidx/compose/foundation/y0;
+.method public final invoke(I)Landroidx/compose/foundation/X;
     .locals 1
 
     .line 2
-    new-instance v0, Landroidx/compose/foundation/y0;
+    new-instance v0, Landroidx/compose/foundation/X;
 
-    invoke-direct {v0, p1}, Landroidx/compose/foundation/y0;-><init>(I)V
+    invoke-direct {v0, p1}, Landroidx/compose/foundation/X;-><init>(I)V
 
     return-object v0
 .end method
@@ -85,7 +85,7 @@
 
     move-result p1
 
-    invoke-virtual {p0, p1}, Landroidx/compose/foundation/ScrollState$Companion$Saver$2;->invoke(I)Landroidx/compose/foundation/y0;
+    invoke-virtual {p0, p1}, Landroidx/compose/foundation/ScrollState$Companion$Saver$2;->invoke(I)Landroidx/compose/foundation/X;
 
     move-result-object p1
 

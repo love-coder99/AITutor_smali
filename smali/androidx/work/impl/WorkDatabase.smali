@@ -1,19 +1,18 @@
 .class public abstract Landroidx/work/impl/WorkDatabase;
-.super Landroidx/room/w;
+.super Landroidx/room/y;
 .source "SourceFile"
 
 
 # annotations
 .annotation runtime Lkotlin/Metadata;
     d1 = {
-        "\u0000\u000c\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0008\u0004\u0008\'\u0018\u00002\u00020\u0001:\u0001\u0004B\u0007\u00a2\u0006\u0004\u0008\u0002\u0010\u0003\u00a8\u0006\u0005"
+        "\u0000\u000c\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0008\u0003\u0008\'\u0018\u00002\u00020\u0001B\u0007\u00a2\u0006\u0004\u0008\u0002\u0010\u0003\u00a8\u0006\u0004"
     }
     d2 = {
         "Landroidx/work/impl/WorkDatabase;",
-        "Landroidx/room/w;",
+        "Landroidx/room/y;",
         "<init>",
         "()V",
-        "androidx/work/f0",
         "work-runtime_release"
     }
     k = 0x1
@@ -22,6 +21,7 @@
         0x8,
         0x0
     }
+    xi = 0x30
 .end annotation
 
 
@@ -30,7 +30,7 @@
     .locals 0
 
     .line 1
-    invoke-direct {p0}, Landroidx/room/w;-><init>()V
+    invoke-direct {p0}, Landroidx/room/y;-><init>()V
 
     .line 2
     .line 3
@@ -40,23 +40,23 @@
 
 
 # virtual methods
-.method public abstract q()Lh5/c;
+.method public abstract A()LB2/i;
 .end method
 
-.method public abstract r()Lh5/e;
+.method public abstract B()LB2/l;
 .end method
 
-.method public abstract s()Lh5/i;
+.method public abstract C()LB2/n;
 .end method
 
-.method public abstract t()Lh5/l;
+.method public abstract D()LB2/r;
 .end method
 
-.method public abstract u()Lh5/o;
+.method public abstract E()LB2/t;
 .end method
 
-.method public abstract v()Lh5/s;
+.method public abstract y()LB2/c;
 .end method
 
-.method public abstract w()Lh5/v;
+.method public abstract z()LB2/e;
 .end method

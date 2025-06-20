@@ -11,13 +11,13 @@
 .method public static a(Ljava/lang/String;)Lorg/json/JSONArray;
     .locals 3
 
+    .line 2
     sget-object v0, Lcom/apm/insight/runtime/i;->a:Lcom/apm/insight/b/h$a;
 
     const-string v1, "NPTH_CATCH"
 
     if-eqz v0, :cond_0
 
-    .line 2
     invoke-static {}, Lcom/apm/insight/e;->f()Ljava/lang/String;
 
     move-result-object v0
@@ -28,10 +28,10 @@
 
     if-eqz v0, :cond_0
 
+    .line 3
     :try_start_0
     sget-object v0, Lcom/apm/insight/runtime/i;->a:Lcom/apm/insight/b/h$a;
 
-    .line 3
     invoke-interface {v0}, Lcom/apm/insight/b/h$a;->b()Ljava/lang/String;
 
     move-result-object v0

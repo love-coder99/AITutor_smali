@@ -3,20 +3,20 @@
 .source "SourceFile"
 
 # interfaces
-.implements Landroidx/compose/ui/node/t1;
+.implements Landroidx/compose/ui/node/n0;
 .implements Landroidx/compose/ui/focus/d;
 
 
 # instance fields
-.field public r:Lzh/a;
+.field public r:Lka/a;
 
 .field public s:Z
 
-.field public final t:Landroidx/compose/ui/input/pointer/e0;
+.field public final t:Landroidx/compose/ui/input/pointer/z;
 
 
 # direct methods
-.method public constructor <init>(Lzh/a;)V
+.method public constructor <init>(Lka/a;)V
     .locals 2
 
     .line 1
@@ -25,7 +25,7 @@
     .line 2
     .line 3
     .line 4
-    iput-object p1, p0, Landroidx/compose/foundation/text/handwriting/b;->r:Lzh/a;
+    iput-object p1, p0, Landroidx/compose/foundation/text/handwriting/b;->r:Lka/a;
 
     .line 5
     .line 6
@@ -41,25 +41,25 @@
     .line 10
     .line 11
     .line 12
-    sget-object v1, Landroidx/compose/ui/input/pointer/d0;->a:Landroidx/compose/ui/input/pointer/k;
+    sget-object v1, Landroidx/compose/ui/input/pointer/w;->a:Landroidx/compose/ui/input/pointer/g;
 
     .line 13
     .line 14
-    new-instance v1, Landroidx/compose/ui/input/pointer/h0;
+    new-instance v1, Landroidx/compose/ui/input/pointer/z;
 
     .line 15
     .line 16
-    invoke-direct {v1, v0, v0, v0, p1}, Landroidx/compose/ui/input/pointer/h0;-><init>(Ljava/lang/Object;Ljava/lang/Object;[Ljava/lang/Object;Lzh/e;)V
+    invoke-direct {v1, v0, v0, v0, p1}, Landroidx/compose/ui/input/pointer/z;-><init>(Ljava/lang/Object;Ljava/lang/Object;[Ljava/lang/Object;Lka/e;)V
 
     .line 17
     .line 18
     .line 19
-    invoke-virtual {p0, v1}, Landroidx/compose/ui/node/k;->A0(Landroidx/compose/ui/node/j;)V
+    invoke-virtual {p0, v1}, Landroidx/compose/ui/node/k;->y0(Landroidx/compose/ui/node/j;)V
 
     .line 20
     .line 21
     .line 22
-    iput-object v1, p0, Landroidx/compose/foundation/text/handwriting/b;->t:Landroidx/compose/ui/input/pointer/e0;
+    iput-object v1, p0, Landroidx/compose/foundation/text/handwriting/b;->t:Landroidx/compose/ui/input/pointer/z;
 
     .line 23
     .line 24
@@ -68,58 +68,18 @@
 
 
 # virtual methods
-.method public final B(Landroidx/compose/ui/input/pointer/k;Landroidx/compose/ui/input/pointer/PointerEventPass;J)V
-    .locals 1
-
-    .line 1
-    iget-object v0, p0, Landroidx/compose/foundation/text/handwriting/b;->t:Landroidx/compose/ui/input/pointer/e0;
-
-    .line 2
-    .line 3
-    check-cast v0, Landroidx/compose/ui/input/pointer/h0;
-
-    .line 4
-    .line 5
-    invoke-virtual {v0, p1, p2, p3, p4}, Landroidx/compose/ui/input/pointer/h0;->B(Landroidx/compose/ui/input/pointer/k;Landroidx/compose/ui/input/pointer/PointerEventPass;J)V
-
-    .line 6
-    .line 7
-    .line 8
-    return-void
-.end method
-
-.method public final C()V
-    .locals 1
-
-    .line 1
-    iget-object v0, p0, Landroidx/compose/foundation/text/handwriting/b;->t:Landroidx/compose/ui/input/pointer/e0;
-
-    .line 2
-    .line 3
-    check-cast v0, Landroidx/compose/ui/input/pointer/h0;
-
-    .line 4
-    .line 5
-    invoke-virtual {v0}, Landroidx/compose/ui/input/pointer/h0;->C()V
-
-    .line 6
-    .line 7
-    .line 8
-    return-void
-.end method
-
-.method public final synthetic J()V
+.method public final synthetic G()V
     .locals 0
 
     .line 1
     return-void
 .end method
 
-.method public final O()V
+.method public final N()V
     .locals 0
 
     .line 1
-    invoke-virtual {p0}, Landroidx/compose/foundation/text/handwriting/b;->C()V
+    invoke-virtual {p0}, Landroidx/compose/foundation/text/handwriting/b;->z()V
 
     .line 2
     .line 3
@@ -150,10 +110,42 @@
     .locals 0
 
     .line 1
-    invoke-virtual {p0}, Landroidx/compose/foundation/text/handwriting/b;->C()V
+    invoke-virtual {p0}, Landroidx/compose/foundation/text/handwriting/b;->z()V
 
     .line 2
     .line 3
     .line 4
+    return-void
+.end method
+
+.method public final y(Landroidx/compose/ui/input/pointer/g;Landroidx/compose/ui/input/pointer/PointerEventPass;J)V
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, Landroidx/compose/foundation/text/handwriting/b;->t:Landroidx/compose/ui/input/pointer/z;
+
+    .line 2
+    .line 3
+    invoke-virtual {v0, p1, p2, p3, p4}, Landroidx/compose/ui/input/pointer/z;->y(Landroidx/compose/ui/input/pointer/g;Landroidx/compose/ui/input/pointer/PointerEventPass;J)V
+
+    .line 4
+    .line 5
+    .line 6
+    return-void
+.end method
+
+.method public final z()V
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, Landroidx/compose/foundation/text/handwriting/b;->t:Landroidx/compose/ui/input/pointer/z;
+
+    .line 2
+    .line 3
+    invoke-virtual {v0}, Landroidx/compose/ui/input/pointer/z;->z()V
+
+    .line 4
+    .line 5
+    .line 6
     return-void
 .end method

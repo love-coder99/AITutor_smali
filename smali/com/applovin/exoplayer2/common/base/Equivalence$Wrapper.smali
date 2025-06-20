@@ -80,6 +80,7 @@
 
     iput-object p1, p0, Lcom/applovin/exoplayer2/common/base/Equivalence$Wrapper;->equivalence:Lcom/applovin/exoplayer2/common/base/Equivalence;
 
+    .line 4
     iput-object p2, p0, Lcom/applovin/exoplayer2/common/base/Equivalence$Wrapper;->reference:Ljava/lang/Object;
 
     return-void
@@ -188,8 +189,11 @@
     .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
     .end annotation
 
+    .line 1
     iget-object v0, p0, Lcom/applovin/exoplayer2/common/base/Equivalence$Wrapper;->reference:Ljava/lang/Object;
 
+    .line 2
+    .line 3
     return-object v0
 .end method
 
@@ -255,7 +259,7 @@
 
     .line 19
     .line 20
-    invoke-static {v0, v1, v2}, Landroid/support/v4/media/session/a;->H(Ljava/lang/StringBuilder;Ljava/lang/Object;Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v0, v1, v2}, Landroidx/appcompat/view/menu/F;->H(Ljava/lang/StringBuilder;Ljava/lang/Object;Ljava/lang/String;)Ljava/lang/String;
 
     .line 21
     .line 22

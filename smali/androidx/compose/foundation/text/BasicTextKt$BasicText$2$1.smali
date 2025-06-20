@@ -3,14 +3,14 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lzh/c;
+.implements Lka/c;
 
 
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "Lkotlin/jvm/internal/Lambda;",
-        "Lzh/c;"
+        "Lka/c;"
     }
 .end annotation
 
@@ -19,11 +19,11 @@
         "\u0000\u000e\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0008\u0003\u0010\u0005\u001a\u00020\u00022\u0006\u0010\u0001\u001a\u00020\u0000H\n\u00a2\u0006\u0004\u0008\u0003\u0010\u0004"
     }
     d2 = {
-        "Landroidx/compose/foundation/text/modifiers/h;",
+        "Landroidx/compose/foundation/text/modifiers/g;",
         "substitutionValue",
-        "Lqh/r;",
+        "LX9/j;",
         "invoke",
-        "(Landroidx/compose/foundation/text/modifiers/h;)V",
+        "(Landroidx/compose/foundation/text/modifiers/g;)V",
         "<anonymous>"
     }
     k = 0x3
@@ -36,27 +36,27 @@
 
 
 # instance fields
-.field final synthetic $displayedText$delegate:Landroidx/compose/runtime/j1;
+.field final synthetic $displayedText$delegate:Landroidx/compose/runtime/Z;
     .annotation system Ldalvik/annotation/Signature;
         value = {
-            "Landroidx/compose/runtime/j1;"
+            "Landroidx/compose/runtime/Z;"
         }
     .end annotation
 .end field
 
 
 # direct methods
-.method public constructor <init>(Landroidx/compose/runtime/j1;)V
+.method public constructor <init>(Landroidx/compose/runtime/Z;)V
     .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
-            "Landroidx/compose/runtime/j1;",
+            "Landroidx/compose/runtime/Z;",
             ")V"
         }
     .end annotation
 
-    iput-object p1, p0, Landroidx/compose/foundation/text/BasicTextKt$BasicText$2$1;->$displayedText$delegate:Landroidx/compose/runtime/j1;
+    iput-object p1, p0, Landroidx/compose/foundation/text/BasicTextKt$BasicText$2$1;->$displayedText$delegate:Landroidx/compose/runtime/Z;
 
     const/4 p1, 0x1
 
@@ -71,37 +71,38 @@
     .locals 0
 
     .line 1
-    check-cast p1, Landroidx/compose/foundation/text/modifiers/h;
+    check-cast p1, Landroidx/compose/foundation/text/modifiers/g;
 
-    invoke-virtual {p0, p1}, Landroidx/compose/foundation/text/BasicTextKt$BasicText$2$1;->invoke(Landroidx/compose/foundation/text/modifiers/h;)V
+    invoke-virtual {p0, p1}, Landroidx/compose/foundation/text/BasicTextKt$BasicText$2$1;->invoke(Landroidx/compose/foundation/text/modifiers/g;)V
 
-    sget-object p1, Lqh/r;->a:Lqh/r;
+    sget-object p1, LX9/j;->a:LX9/j;
 
     return-object p1
 .end method
 
-.method public final invoke(Landroidx/compose/foundation/text/modifiers/h;)V
+.method public final invoke(Landroidx/compose/foundation/text/modifiers/g;)V
     .locals 2
 
-    iget-object v0, p0, Landroidx/compose/foundation/text/BasicTextKt$BasicText$2$1;->$displayedText$delegate:Landroidx/compose/runtime/j1;
-
     .line 2
-    iget-boolean v1, p1, Landroidx/compose/foundation/text/modifiers/h;->c:Z
+    iget-object v0, p0, Landroidx/compose/foundation/text/BasicTextKt$BasicText$2$1;->$displayedText$delegate:Landroidx/compose/runtime/Z;
+
+    .line 3
+    iget-boolean v1, p1, Landroidx/compose/foundation/text/modifiers/g;->c:Z
 
     if-eqz v1, :cond_0
 
-    .line 3
-    iget-object p1, p1, Landroidx/compose/foundation/text/modifiers/h;->b:Landroidx/compose/ui/text/f;
+    .line 4
+    iget-object p1, p1, Landroidx/compose/foundation/text/modifiers/g;->b:Landroidx/compose/ui/text/g;
 
     goto :goto_0
 
-    .line 4
-    :cond_0
-    iget-object p1, p1, Landroidx/compose/foundation/text/modifiers/h;->a:Landroidx/compose/ui/text/f;
-
     .line 5
+    :cond_0
+    iget-object p1, p1, Landroidx/compose/foundation/text/modifiers/g;->a:Landroidx/compose/ui/text/g;
+
+    .line 6
     :goto_0
-    invoke-interface {v0, p1}, Landroidx/compose/runtime/j1;->setValue(Ljava/lang/Object;)V
+    invoke-interface {v0, p1}, Landroidx/compose/runtime/Z;->setValue(Ljava/lang/Object;)V
 
     return-void
 .end method

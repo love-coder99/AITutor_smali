@@ -1,5 +1,5 @@
 .class public Lcom/applovin/mediation/nativeAds/adPlacer/MaxRecyclerAdapter;
-.super Landroidx/recyclerview/widget/g0;
+.super Landroidx/recyclerview/widget/C;
 .source "SourceFile"
 
 # interfaces
@@ -17,7 +17,7 @@
 
 .annotation system Ldalvik/annotation/Signature;
     value = {
-        "Landroidx/recyclerview/widget/g0;",
+        "Landroidx/recyclerview/widget/C;",
         "Lcom/applovin/mediation/nativeAds/adPlacer/MaxAdPlacer$Listener;"
     }
 .end annotation
@@ -26,7 +26,7 @@
 # instance fields
 .field private final a:Lcom/applovin/mediation/nativeAds/adPlacer/MaxAdPlacer;
 
-.field private final b:Landroidx/recyclerview/widget/g0;
+.field private final b:Landroidx/recyclerview/widget/C;
 
 .field private final c:Lcom/applovin/mediation/nativeAds/adPlacer/MaxRecyclerAdapter$b;
 
@@ -42,11 +42,11 @@
 
 
 # direct methods
-.method public constructor <init>(Lcom/applovin/mediation/nativeAds/adPlacer/MaxAdPlacerSettings;Landroidx/recyclerview/widget/g0;Landroid/app/Activity;)V
+.method public constructor <init>(Lcom/applovin/mediation/nativeAds/adPlacer/MaxAdPlacerSettings;Landroidx/recyclerview/widget/C;Landroid/app/Activity;)V
     .locals 2
 
     .line 1
-    invoke-direct {p0}, Landroidx/recyclerview/widget/g0;-><init>()V
+    invoke-direct {p0}, Landroidx/recyclerview/widget/C;-><init>()V
 
     .line 2
     .line 3
@@ -101,7 +101,7 @@
     .line 28
     .line 29
     .line 30
-    invoke-virtual {p2}, Landroidx/recyclerview/widget/g0;->hasStableIds()Z
+    invoke-virtual {p2}, Landroidx/recyclerview/widget/C;->hasStableIds()Z
 
     .line 31
     .line 32
@@ -109,16 +109,16 @@
     move-result p1
 
     .line 34
-    invoke-super {p0, p1}, Landroidx/recyclerview/widget/g0;->setHasStableIds(Z)V
+    invoke-super {p0, p1}, Landroidx/recyclerview/widget/C;->setHasStableIds(Z)V
 
     .line 35
     .line 36
     .line 37
-    iput-object p2, p0, Lcom/applovin/mediation/nativeAds/adPlacer/MaxRecyclerAdapter;->b:Landroidx/recyclerview/widget/g0;
+    iput-object p2, p0, Lcom/applovin/mediation/nativeAds/adPlacer/MaxRecyclerAdapter;->b:Landroidx/recyclerview/widget/C;
 
     .line 38
     .line 39
-    invoke-virtual {p2, v0}, Landroidx/recyclerview/widget/g0;->registerAdapterDataObserver(Landroidx/recyclerview/widget/i0;)V
+    invoke-virtual {p2, v0}, Landroidx/recyclerview/widget/C;->registerAdapterDataObserver(Landroidx/recyclerview/widget/E;)V
 
     .line 40
     .line 41
@@ -129,9 +129,9 @@
 .method private a(I)I
     .locals 2
 
+    .line 2
     iget-object p1, p0, Lcom/applovin/mediation/nativeAds/adPlacer/MaxRecyclerAdapter;->d:Landroidx/recyclerview/widget/RecyclerView;
 
-    .line 2
     invoke-virtual {p1}, Landroid/view/View;->getContext()Landroid/content/Context;
 
     move-result-object p1
@@ -146,10 +146,10 @@
 
     move-result p1
 
+    .line 3
     iget-object v0, p0, Lcom/applovin/mediation/nativeAds/adPlacer/MaxRecyclerAdapter;->d:Landroidx/recyclerview/widget/RecyclerView;
 
-    .line 3
-    invoke-virtual {v0}, Landroidx/recyclerview/widget/RecyclerView;->getLayoutManager()Landroidx/recyclerview/widget/q0;
+    invoke-virtual {v0}, Landroidx/recyclerview/widget/RecyclerView;->getLayoutManager()Landroidx/recyclerview/widget/L;
 
     move-result-object v0
 
@@ -165,7 +165,7 @@
     iget v1, v0, Landroidx/recyclerview/widget/GridLayoutManager;->F:I
 
     .line 7
-    iget-object v0, v0, Landroidx/recyclerview/widget/GridLayoutManager;->K:Landroidx/recyclerview/widget/s;
+    iget-object v0, v0, Landroidx/recyclerview/widget/GridLayoutManager;->K:Landroidx/recyclerview/widget/j0;
 
     invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
@@ -213,11 +213,11 @@
     return-object p0
 .end method
 
-.method public static synthetic c(Lcom/applovin/mediation/nativeAds/adPlacer/MaxRecyclerAdapter;)Landroidx/recyclerview/widget/g0;
+.method public static synthetic c(Lcom/applovin/mediation/nativeAds/adPlacer/MaxRecyclerAdapter;)Landroidx/recyclerview/widget/C;
     .locals 0
 
     .line 1
-    iget-object p0, p0, Lcom/applovin/mediation/nativeAds/adPlacer/MaxRecyclerAdapter;->b:Landroidx/recyclerview/widget/g0;
+    iget-object p0, p0, Lcom/applovin/mediation/nativeAds/adPlacer/MaxRecyclerAdapter;->b:Landroidx/recyclerview/widget/C;
 
     .line 2
     .line 3
@@ -242,7 +242,7 @@
 
     .line 1
     :try_start_0
-    iget-object v0, p0, Lcom/applovin/mediation/nativeAds/adPlacer/MaxRecyclerAdapter;->b:Landroidx/recyclerview/widget/g0;
+    iget-object v0, p0, Lcom/applovin/mediation/nativeAds/adPlacer/MaxRecyclerAdapter;->b:Landroidx/recyclerview/widget/C;
 
     .line 2
     .line 3
@@ -250,7 +250,7 @@
 
     .line 4
     .line 5
-    invoke-virtual {v0, v1}, Landroidx/recyclerview/widget/g0;->unregisterAdapterDataObserver(Landroidx/recyclerview/widget/i0;)V
+    invoke-virtual {v0, v1}, Landroidx/recyclerview/widget/C;->unregisterAdapterDataObserver(Landroidx/recyclerview/widget/E;)V
     :try_end_0
     .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
 
@@ -294,8 +294,11 @@
 .method public getAdPlacer()Lcom/applovin/mediation/nativeAds/adPlacer/MaxAdPlacer;
     .locals 1
 
+    .line 1
     iget-object v0, p0, Lcom/applovin/mediation/nativeAds/adPlacer/MaxRecyclerAdapter;->a:Lcom/applovin/mediation/nativeAds/adPlacer/MaxAdPlacer;
 
+    .line 2
+    .line 3
     return-object v0
 .end method
 
@@ -326,11 +329,11 @@
 
     .line 2
     .line 3
-    iget-object v1, p0, Lcom/applovin/mediation/nativeAds/adPlacer/MaxRecyclerAdapter;->b:Landroidx/recyclerview/widget/g0;
+    iget-object v1, p0, Lcom/applovin/mediation/nativeAds/adPlacer/MaxRecyclerAdapter;->b:Landroidx/recyclerview/widget/C;
 
     .line 4
     .line 5
-    invoke-virtual {v1}, Landroidx/recyclerview/widget/g0;->getItemCount()I
+    invoke-virtual {v1}, Landroidx/recyclerview/widget/C;->getItemCount()I
 
     .line 6
     .line 7
@@ -353,11 +356,11 @@
     .locals 2
 
     .line 1
-    iget-object v0, p0, Lcom/applovin/mediation/nativeAds/adPlacer/MaxRecyclerAdapter;->b:Landroidx/recyclerview/widget/g0;
+    iget-object v0, p0, Lcom/applovin/mediation/nativeAds/adPlacer/MaxRecyclerAdapter;->b:Landroidx/recyclerview/widget/C;
 
     .line 2
     .line 3
-    invoke-virtual {v0}, Landroidx/recyclerview/widget/g0;->hasStableIds()Z
+    invoke-virtual {v0}, Landroidx/recyclerview/widget/C;->hasStableIds()Z
 
     .line 4
     .line 5
@@ -409,7 +412,7 @@
 
     .line 27
     :cond_1
-    iget-object v0, p0, Lcom/applovin/mediation/nativeAds/adPlacer/MaxRecyclerAdapter;->b:Landroidx/recyclerview/widget/g0;
+    iget-object v0, p0, Lcom/applovin/mediation/nativeAds/adPlacer/MaxRecyclerAdapter;->b:Landroidx/recyclerview/widget/C;
 
     .line 28
     .line 29
@@ -425,7 +428,7 @@
     move-result p1
 
     .line 35
-    invoke-virtual {v0, p1}, Landroidx/recyclerview/widget/g0;->getItemId(I)J
+    invoke-virtual {v0, p1}, Landroidx/recyclerview/widget/C;->getItemId(I)J
 
     .line 36
     .line 37
@@ -464,7 +467,7 @@
 
     .line 12
     :cond_0
-    iget-object v0, p0, Lcom/applovin/mediation/nativeAds/adPlacer/MaxRecyclerAdapter;->b:Landroidx/recyclerview/widget/g0;
+    iget-object v0, p0, Lcom/applovin/mediation/nativeAds/adPlacer/MaxRecyclerAdapter;->b:Landroidx/recyclerview/widget/C;
 
     .line 13
     .line 14
@@ -480,7 +483,7 @@
     move-result p1
 
     .line 20
-    invoke-virtual {v0, p1}, Landroidx/recyclerview/widget/g0;->getItemViewType(I)I
+    invoke-virtual {v0, p1}, Landroidx/recyclerview/widget/C;->getItemViewType(I)I
 
     .line 21
     .line 22
@@ -551,7 +554,7 @@
     .locals 1
 
     .line 1
-    invoke-virtual {p0, p1}, Landroidx/recyclerview/widget/g0;->notifyItemChanged(I)V
+    invoke-virtual {p0, p1}, Landroidx/recyclerview/widget/C;->notifyItemChanged(I)V
 
     .line 2
     .line 3
@@ -617,6 +620,10 @@
 
 .method public onAttachedToRecyclerView(Landroidx/recyclerview/widget/RecyclerView;)V
     .locals 1
+    .param p1    # Landroidx/recyclerview/widget/RecyclerView;
+        .annotation build Landroidx/annotation/NonNull;
+        .end annotation
+    .end param
 
     .line 1
     iput-object p1, p0, Lcom/applovin/mediation/nativeAds/adPlacer/MaxRecyclerAdapter;->d:Landroidx/recyclerview/widget/RecyclerView;
@@ -653,15 +660,19 @@
     return-void
 .end method
 
-.method public onBindViewHolder(Landroidx/recyclerview/widget/h1;I)V
+.method public onBindViewHolder(Landroidx/recyclerview/widget/c0;I)V
     .locals 4
+    .param p1    # Landroidx/recyclerview/widget/c0;
+        .annotation build Landroidx/annotation/NonNull;
+        .end annotation
+    .end param
 
     .line 1
     iget-object v0, p0, Lcom/applovin/mediation/nativeAds/adPlacer/MaxRecyclerAdapter;->e:Lcom/applovin/impl/hl;
 
     .line 2
     .line 3
-    iget-object v1, p1, Landroidx/recyclerview/widget/h1;->itemView:Landroid/view/View;
+    iget-object v1, p1, Landroidx/recyclerview/widget/c0;->itemView:Landroid/view/View;
 
     .line 4
     .line 5
@@ -878,7 +889,7 @@
 
     .line 108
     :cond_3
-    iget-object v0, p0, Lcom/applovin/mediation/nativeAds/adPlacer/MaxRecyclerAdapter;->b:Landroidx/recyclerview/widget/g0;
+    iget-object v0, p0, Lcom/applovin/mediation/nativeAds/adPlacer/MaxRecyclerAdapter;->b:Landroidx/recyclerview/widget/C;
 
     .line 109
     .line 110
@@ -894,7 +905,7 @@
     move-result p2
 
     .line 116
-    invoke-virtual {v0, p1, p2}, Landroidx/recyclerview/widget/g0;->onBindViewHolder(Landroidx/recyclerview/widget/h1;I)V
+    invoke-virtual {v0, p1, p2}, Landroidx/recyclerview/widget/C;->onBindViewHolder(Landroidx/recyclerview/widget/c0;I)V
 
     .line 117
     .line 118
@@ -903,8 +914,14 @@
     return-void
 .end method
 
-.method public onCreateViewHolder(Landroid/view/ViewGroup;I)Landroidx/recyclerview/widget/h1;
+.method public onCreateViewHolder(Landroid/view/ViewGroup;I)Landroidx/recyclerview/widget/c0;
     .locals 3
+    .param p1    # Landroid/view/ViewGroup;
+        .annotation build Landroidx/annotation/NonNull;
+        .end annotation
+    .end param
+    .annotation build Landroidx/annotation/NonNull;
+    .end annotation
 
     .line 1
     const/16 v0, -0x2a
@@ -958,7 +975,7 @@
 
     .line 25
     .line 26
-    invoke-virtual {v0}, Landroidx/recyclerview/widget/RecyclerView;->getLayoutManager()Landroidx/recyclerview/widget/q0;
+    invoke-virtual {v0}, Landroidx/recyclerview/widget/RecyclerView;->getLayoutManager()Landroidx/recyclerview/widget/L;
 
     .line 27
     .line 28
@@ -976,7 +993,7 @@
 
     .line 33
     .line 34
-    invoke-virtual {v0}, Landroidx/recyclerview/widget/q0;->d()Z
+    invoke-virtual {v0}, Landroidx/recyclerview/widget/L;->d()Z
 
     .line 35
     .line 36
@@ -1027,11 +1044,11 @@
 
     .line 58
     :cond_1
-    iget-object v0, p0, Lcom/applovin/mediation/nativeAds/adPlacer/MaxRecyclerAdapter;->b:Landroidx/recyclerview/widget/g0;
+    iget-object v0, p0, Lcom/applovin/mediation/nativeAds/adPlacer/MaxRecyclerAdapter;->b:Landroidx/recyclerview/widget/C;
 
     .line 59
     .line 60
-    invoke-virtual {v0, p1, p2}, Landroidx/recyclerview/widget/g0;->onCreateViewHolder(Landroid/view/ViewGroup;I)Landroidx/recyclerview/widget/h1;
+    invoke-virtual {v0, p1, p2}, Landroidx/recyclerview/widget/C;->onCreateViewHolder(Landroid/view/ViewGroup;I)Landroidx/recyclerview/widget/c0;
 
     .line 61
     .line 62
@@ -1044,6 +1061,10 @@
 
 .method public onDetachedFromRecyclerView(Landroidx/recyclerview/widget/RecyclerView;)V
     .locals 1
+    .param p1    # Landroidx/recyclerview/widget/RecyclerView;
+        .annotation build Landroidx/annotation/NonNull;
+        .end annotation
+    .end param
 
     .line 1
     const/4 p1, 0x0
@@ -1074,8 +1095,12 @@
     return-void
 .end method
 
-.method public onFailedToRecycleView(Landroidx/recyclerview/widget/h1;)Z
+.method public onFailedToRecycleView(Landroidx/recyclerview/widget/c0;)Z
     .locals 1
+    .param p1    # Landroidx/recyclerview/widget/c0;
+        .annotation build Landroidx/annotation/NonNull;
+        .end annotation
+    .end param
 
     .line 1
     instance-of v0, p1, Lcom/applovin/mediation/nativeAds/adPlacer/MaxRecyclerAdapter$MaxAdRecyclerViewHolder;
@@ -1093,11 +1118,11 @@
 
     .line 7
     :cond_0
-    iget-object v0, p0, Lcom/applovin/mediation/nativeAds/adPlacer/MaxRecyclerAdapter;->b:Landroidx/recyclerview/widget/g0;
+    iget-object v0, p0, Lcom/applovin/mediation/nativeAds/adPlacer/MaxRecyclerAdapter;->b:Landroidx/recyclerview/widget/C;
 
     .line 8
     .line 9
-    invoke-virtual {v0, p1}, Landroidx/recyclerview/widget/g0;->onFailedToRecycleView(Landroidx/recyclerview/widget/h1;)Z
+    invoke-virtual {v0, p1}, Landroidx/recyclerview/widget/C;->onFailedToRecycleView(Landroidx/recyclerview/widget/c0;)Z
 
     .line 10
     .line 11
@@ -1108,8 +1133,12 @@
     return p1
 .end method
 
-.method public onViewAttachedToWindow(Landroidx/recyclerview/widget/h1;)V
+.method public onViewAttachedToWindow(Landroidx/recyclerview/widget/c0;)V
     .locals 1
+    .param p1    # Landroidx/recyclerview/widget/c0;
+        .annotation build Landroidx/annotation/NonNull;
+        .end annotation
+    .end param
 
     .line 1
     instance-of v0, p1, Lcom/applovin/mediation/nativeAds/adPlacer/MaxRecyclerAdapter$MaxAdRecyclerViewHolder;
@@ -1124,11 +1153,11 @@
 
     .line 6
     :cond_0
-    iget-object v0, p0, Lcom/applovin/mediation/nativeAds/adPlacer/MaxRecyclerAdapter;->b:Landroidx/recyclerview/widget/g0;
+    iget-object v0, p0, Lcom/applovin/mediation/nativeAds/adPlacer/MaxRecyclerAdapter;->b:Landroidx/recyclerview/widget/C;
 
     .line 7
     .line 8
-    invoke-virtual {v0, p1}, Landroidx/recyclerview/widget/g0;->onViewAttachedToWindow(Landroidx/recyclerview/widget/h1;)V
+    invoke-virtual {v0, p1}, Landroidx/recyclerview/widget/C;->onViewAttachedToWindow(Landroidx/recyclerview/widget/c0;)V
 
     .line 9
     .line 10
@@ -1136,8 +1165,12 @@
     return-void
 .end method
 
-.method public onViewDetachedFromWindow(Landroidx/recyclerview/widget/h1;)V
+.method public onViewDetachedFromWindow(Landroidx/recyclerview/widget/c0;)V
     .locals 1
+    .param p1    # Landroidx/recyclerview/widget/c0;
+        .annotation build Landroidx/annotation/NonNull;
+        .end annotation
+    .end param
 
     .line 1
     instance-of v0, p1, Lcom/applovin/mediation/nativeAds/adPlacer/MaxRecyclerAdapter$MaxAdRecyclerViewHolder;
@@ -1152,11 +1185,11 @@
 
     .line 6
     :cond_0
-    iget-object v0, p0, Lcom/applovin/mediation/nativeAds/adPlacer/MaxRecyclerAdapter;->b:Landroidx/recyclerview/widget/g0;
+    iget-object v0, p0, Lcom/applovin/mediation/nativeAds/adPlacer/MaxRecyclerAdapter;->b:Landroidx/recyclerview/widget/C;
 
     .line 7
     .line 8
-    invoke-virtual {v0, p1}, Landroidx/recyclerview/widget/g0;->onViewDetachedFromWindow(Landroidx/recyclerview/widget/h1;)V
+    invoke-virtual {v0, p1}, Landroidx/recyclerview/widget/C;->onViewDetachedFromWindow(Landroidx/recyclerview/widget/c0;)V
 
     .line 9
     .line 10
@@ -1164,8 +1197,12 @@
     return-void
 .end method
 
-.method public onViewRecycled(Landroidx/recyclerview/widget/h1;)V
+.method public onViewRecycled(Landroidx/recyclerview/widget/c0;)V
     .locals 2
+    .param p1    # Landroidx/recyclerview/widget/c0;
+        .annotation build Landroidx/annotation/NonNull;
+        .end annotation
+    .end param
 
     .line 1
     iget-object v0, p0, Lcom/applovin/mediation/nativeAds/adPlacer/MaxRecyclerAdapter;->e:Lcom/applovin/impl/hl;
@@ -1176,7 +1213,7 @@
 
     .line 4
     .line 5
-    iget-object v1, p1, Landroidx/recyclerview/widget/h1;->itemView:Landroid/view/View;
+    iget-object v1, p1, Landroidx/recyclerview/widget/c0;->itemView:Landroid/view/View;
 
     .line 6
     .line 7
@@ -1198,7 +1235,7 @@
 
     .line 15
     .line 16
-    invoke-virtual {p1}, Landroidx/recyclerview/widget/h1;->getBindingAdapterPosition()I
+    invoke-virtual {p1}, Landroidx/recyclerview/widget/c0;->getBindingAdapterPosition()I
 
     .line 17
     .line 18
@@ -1240,11 +1277,11 @@
 
     .line 36
     :cond_2
-    iget-object v0, p0, Lcom/applovin/mediation/nativeAds/adPlacer/MaxRecyclerAdapter;->b:Landroidx/recyclerview/widget/g0;
+    iget-object v0, p0, Lcom/applovin/mediation/nativeAds/adPlacer/MaxRecyclerAdapter;->b:Landroidx/recyclerview/widget/C;
 
     .line 37
     .line 38
-    invoke-virtual {v0, p1}, Landroidx/recyclerview/widget/g0;->onViewRecycled(Landroidx/recyclerview/widget/h1;)V
+    invoke-virtual {v0, p1}, Landroidx/recyclerview/widget/C;->onViewRecycled(Landroidx/recyclerview/widget/c0;)V
 
     .line 39
     .line 40
@@ -1255,8 +1292,11 @@
 .method public setAdPositionBehavior(Lcom/applovin/mediation/nativeAds/adPlacer/MaxRecyclerAdapter$AdPositionBehavior;)V
     .locals 0
 
+    .line 1
     iput-object p1, p0, Lcom/applovin/mediation/nativeAds/adPlacer/MaxRecyclerAdapter;->h:Lcom/applovin/mediation/nativeAds/adPlacer/MaxRecyclerAdapter$AdPositionBehavior;
 
+    .line 2
+    .line 3
     return-void
 .end method
 
@@ -1264,12 +1304,12 @@
     .locals 2
 
     .line 1
-    invoke-super {p0, p1}, Landroidx/recyclerview/widget/g0;->setHasStableIds(Z)V
+    invoke-super {p0, p1}, Landroidx/recyclerview/widget/C;->setHasStableIds(Z)V
 
     .line 2
     .line 3
     .line 4
-    iget-object v0, p0, Lcom/applovin/mediation/nativeAds/adPlacer/MaxRecyclerAdapter;->b:Landroidx/recyclerview/widget/g0;
+    iget-object v0, p0, Lcom/applovin/mediation/nativeAds/adPlacer/MaxRecyclerAdapter;->b:Landroidx/recyclerview/widget/C;
 
     .line 5
     .line 6
@@ -1277,21 +1317,21 @@
 
     .line 7
     .line 8
-    invoke-virtual {v0, v1}, Landroidx/recyclerview/widget/g0;->unregisterAdapterDataObserver(Landroidx/recyclerview/widget/i0;)V
+    invoke-virtual {v0, v1}, Landroidx/recyclerview/widget/C;->unregisterAdapterDataObserver(Landroidx/recyclerview/widget/E;)V
 
     .line 9
     .line 10
     .line 11
-    iget-object v0, p0, Lcom/applovin/mediation/nativeAds/adPlacer/MaxRecyclerAdapter;->b:Landroidx/recyclerview/widget/g0;
+    iget-object v0, p0, Lcom/applovin/mediation/nativeAds/adPlacer/MaxRecyclerAdapter;->b:Landroidx/recyclerview/widget/C;
 
     .line 12
     .line 13
-    invoke-virtual {v0, p1}, Landroidx/recyclerview/widget/g0;->setHasStableIds(Z)V
+    invoke-virtual {v0, p1}, Landroidx/recyclerview/widget/C;->setHasStableIds(Z)V
 
     .line 14
     .line 15
     .line 16
-    iget-object p1, p0, Lcom/applovin/mediation/nativeAds/adPlacer/MaxRecyclerAdapter;->b:Landroidx/recyclerview/widget/g0;
+    iget-object p1, p0, Lcom/applovin/mediation/nativeAds/adPlacer/MaxRecyclerAdapter;->b:Landroidx/recyclerview/widget/C;
 
     .line 17
     .line 18
@@ -1299,7 +1339,7 @@
 
     .line 19
     .line 20
-    invoke-virtual {p1, v0}, Landroidx/recyclerview/widget/g0;->registerAdapterDataObserver(Landroidx/recyclerview/widget/i0;)V
+    invoke-virtual {p1, v0}, Landroidx/recyclerview/widget/C;->registerAdapterDataObserver(Landroidx/recyclerview/widget/E;)V
 
     .line 21
     .line 22
@@ -1310,15 +1350,21 @@
 .method public setListener(Lcom/applovin/mediation/nativeAds/adPlacer/MaxAdPlacer$Listener;)V
     .locals 0
 
+    .line 1
     iput-object p1, p0, Lcom/applovin/mediation/nativeAds/adPlacer/MaxRecyclerAdapter;->f:Lcom/applovin/mediation/nativeAds/adPlacer/MaxAdPlacer$Listener;
 
+    .line 2
+    .line 3
     return-void
 .end method
 
 .method public setLookAhead(I)V
     .locals 0
 
+    .line 1
     iput p1, p0, Lcom/applovin/mediation/nativeAds/adPlacer/MaxRecyclerAdapter;->g:I
 
+    .line 2
+    .line 3
     return-void
 .end method

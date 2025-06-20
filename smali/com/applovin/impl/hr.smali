@@ -175,7 +175,7 @@
 
     .line 66
     .line 67
-    invoke-static {p4, p1, p2}, Landroid/support/v4/media/session/a;->C(Ljava/lang/String;J)Ljava/lang/String;
+    invoke-static {p1, p2, p4}, Lcom/google/android/material/datepicker/i;->v(JLjava/lang/String;)Ljava/lang/String;
 
     .line 68
     .line 69
@@ -194,7 +194,7 @@
 .method public static a(JZLcom/applovin/impl/sdk/j;Ljava/lang/Runnable;)Lcom/applovin/impl/hr;
     .locals 7
 
-    .line 7
+    .line 8
     new-instance v6, Lcom/applovin/impl/hr;
 
     move-object v0, v6
@@ -244,14 +244,15 @@
 .method private c()V
     .locals 1
 
+    .line 2
     iget-object v0, p0, Lcom/applovin/impl/hr;->c:Ljava/lang/Runnable;
 
     if-eqz v0, :cond_0
 
-    .line 2
+    .line 3
     invoke-interface {v0}, Ljava/lang/Runnable;->run()V
 
-    .line 3
+    .line 4
     invoke-virtual {p0}, Lcom/applovin/impl/hr;->a()V
 
     :cond_0
@@ -272,27 +273,28 @@
 .method public a()V
     .locals 2
 
+    .line 2
     iget-object v0, p0, Lcom/applovin/impl/hr;->d:Ljava/lang/Object;
 
-    .line 2
     monitor-enter v0
 
+    .line 3
     :try_start_0
     iget-object v1, p0, Lcom/applovin/impl/hr;->e:Ljava/util/Timer;
 
-    .line 3
     invoke-virtual {v1}, Ljava/util/Timer;->cancel()V
 
     const/4 v1, 0x0
 
+    .line 4
     iput-object v1, p0, Lcom/applovin/impl/hr;->c:Ljava/lang/Runnable;
 
+    .line 5
     sget-object v1, Lcom/applovin/impl/hr;->f:Ljava/util/Set;
 
-    .line 4
     invoke-interface {v1, p0}, Ljava/util/Set;->remove(Ljava/lang/Object;)Z
 
-    .line 5
+    .line 6
     monitor-exit v0
 
     return-void
@@ -300,7 +302,7 @@
     :catchall_0
     move-exception v1
 
-    .line 6
+    .line 7
     monitor-exit v0
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0

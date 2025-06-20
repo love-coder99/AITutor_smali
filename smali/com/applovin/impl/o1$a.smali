@@ -47,9 +47,9 @@
 .method private synthetic a(I)V
     .locals 1
 
+    .line 2
     iget-object v0, p0, Lcom/applovin/impl/o1$a;->b:Lcom/applovin/impl/o1;
 
-    .line 2
     invoke-static {v0, p1}, Lcom/applovin/impl/o1;->a(Lcom/applovin/impl/o1;I)V
 
     return-void
@@ -74,14 +74,14 @@
 
     .line 2
     .line 3
-    new-instance v1, Lcom/applovin/impl/hu;
+    new-instance v1, Lcom/applovin/impl/A1;
 
     .line 4
     .line 5
     const/4 v2, 0x1
 
     .line 6
-    invoke-direct {v1, p0, p1, v2}, Lcom/applovin/impl/hu;-><init>(Ljava/lang/Object;II)V
+    invoke-direct {v1, p0, p1, v2}, Lcom/applovin/impl/A1;-><init>(Ljava/lang/Object;II)V
 
     .line 7
     .line 8

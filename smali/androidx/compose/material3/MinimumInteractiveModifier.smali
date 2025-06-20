@@ -1,12 +1,12 @@
 .class public final Landroidx/compose/material3/MinimumInteractiveModifier;
-.super Landroidx/compose/ui/node/w0;
+.super Landroidx/compose/ui/node/V;
 .source "SourceFile"
 
 
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
-        "Landroidx/compose/ui/node/w0;"
+        "Landroidx/compose/ui/node/V;"
     }
 .end annotation
 
@@ -16,8 +16,8 @@
     }
     d2 = {
         "Landroidx/compose/material3/MinimumInteractiveModifier;",
-        "Landroidx/compose/ui/node/w0;",
-        "Landroidx/compose/material3/k0;",
+        "Landroidx/compose/ui/node/V;",
+        "Landroidx/compose/material3/P;",
         "<init>",
         "()V",
         "material3_release"
@@ -28,11 +28,12 @@
         0x8,
         0x0
     }
+    xi = 0x30
 .end annotation
 
 
 # static fields
-.field public static final c:Landroidx/compose/material3/MinimumInteractiveModifier;
+.field public static final a:Landroidx/compose/material3/MinimumInteractiveModifier;
 
 
 # direct methods
@@ -43,7 +44,7 @@
 
     invoke-direct {v0}, Landroidx/compose/material3/MinimumInteractiveModifier;-><init>()V
 
-    sput-object v0, Landroidx/compose/material3/MinimumInteractiveModifier;->c:Landroidx/compose/material3/MinimumInteractiveModifier;
+    sput-object v0, Landroidx/compose/material3/MinimumInteractiveModifier;->a:Landroidx/compose/material3/MinimumInteractiveModifier;
 
     return-void
 .end method
@@ -97,7 +98,7 @@
     .locals 1
 
     .line 1
-    new-instance v0, Landroidx/compose/material3/k0;
+    new-instance v0, Landroidx/compose/material3/P;
 
     .line 2
     .line 3
@@ -113,7 +114,7 @@
     .locals 0
 
     .line 1
-    check-cast p1, Landroidx/compose/material3/k0;
+    check-cast p1, Landroidx/compose/material3/P;
 
     .line 2
     .line 3

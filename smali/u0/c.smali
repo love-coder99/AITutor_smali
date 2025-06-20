@@ -1,85 +1,77 @@
-.class public abstract synthetic Lu0/c;
+.class public final LU0/c;
 .super Ljava/lang/Object;
 .source "SourceFile"
 
+# interfaces
+.implements LU0/d;
 
-# static fields
-.field public static final synthetic a:[I
+
+# instance fields
+.field public a:F
+
+.field public b:Z
+
+.field public c:Ljava/lang/String;
+
+.field public d:Ljava/lang/String;
+
+.field public e:F
+
+.field public f:F
 
 
-# direct methods
-.method static constructor <clinit>()V
-    .locals 3
+# virtual methods
+.method public final value()F
+    .locals 2
 
     .line 1
-    invoke-static {}, Landroidx/camera/core/impl/Timebase;->values()[Landroidx/camera/core/impl/Timebase;
+    iget v0, p0, LU0/c;->e:F
 
     .line 2
     .line 3
-    .line 4
-    move-result-object v0
+    iget v1, p0, LU0/c;->f:F
 
+    .line 4
     .line 5
-    array-length v0, v0
+    cmpl-float v1, v0, v1
 
     .line 6
-    new-array v0, v0, [I
-
     .line 7
-    .line 8
-    sput-object v0, Lu0/c;->a:[I
+    if-ltz v1, :cond_0
 
+    .line 8
     .line 9
+    const/4 v1, 0x1
+
     .line 10
-    :try_start_0
-    sget-object v1, Landroidx/camera/core/impl/Timebase;->REALTIME:Landroidx/camera/core/impl/Timebase;
+    iput-boolean v1, p0, LU0/c;->b:Z
 
     .line 11
     .line 12
-    invoke-virtual {v1}, Ljava/lang/Enum;->ordinal()I
+    :cond_0
+    iget-boolean v1, p0, LU0/c;->b:Z
 
     .line 13
     .line 14
-    .line 15
-    move-result v1
+    if-nez v1, :cond_1
 
+    .line 15
     .line 16
-    const/4 v2, 0x1
+    iget v1, p0, LU0/c;->a:F
 
     .line 17
-    aput v2, v0, v1
-    :try_end_0
-    .catch Ljava/lang/NoSuchFieldError; {:try_start_0 .. :try_end_0} :catch_0
-
     .line 18
+    add-float/2addr v0, v1
+
     .line 19
-    :catch_0
-    :try_start_1
-    sget-object v0, Lu0/c;->a:[I
+    iput v0, p0, LU0/c;->e:F
 
     .line 20
     .line 21
-    sget-object v1, Landroidx/camera/core/impl/Timebase;->UPTIME:Landroidx/camera/core/impl/Timebase;
+    :cond_1
+    iget v0, p0, LU0/c;->e:F
 
     .line 22
     .line 23
-    invoke-virtual {v1}, Ljava/lang/Enum;->ordinal()I
-
-    .line 24
-    .line 25
-    .line 26
-    move-result v1
-
-    .line 27
-    const/4 v2, 0x2
-
-    .line 28
-    aput v2, v0, v1
-    :try_end_1
-    .catch Ljava/lang/NoSuchFieldError; {:try_start_1 .. :try_end_1} :catch_1
-
-    .line 29
-    .line 30
-    :catch_1
-    return-void
+    return v0
 .end method

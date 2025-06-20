@@ -1,137 +1,216 @@
-.class public final synthetic Landroidx/core/view/c0;
-.super Ljava/lang/Object;
+.class public Landroidx/core/view/C0;
+.super Landroidx/core/view/B0;
 .source "SourceFile"
-
-# interfaces
-.implements Ljava/lang/Runnable;
-
-
-# instance fields
-.field public final synthetic b:I
-
-.field public final synthetic c:Landroid/view/View;
 
 
 # direct methods
-.method public synthetic constructor <init>(Landroid/view/View;I)V
+.method public constructor <init>(Landroidx/core/view/K0;Landroid/view/WindowInsets;)V
     .locals 0
 
     .line 1
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    invoke-direct {p0, p1, p2}, Landroidx/core/view/B0;-><init>(Landroidx/core/view/K0;Landroid/view/WindowInsets;)V
 
     .line 2
     .line 3
     .line 4
-    iput p2, p0, Landroidx/core/view/c0;->b:I
-
-    .line 5
-    .line 6
-    iput-object p1, p0, Landroidx/core/view/c0;->c:Landroid/view/View;
-
-    .line 7
-    .line 8
     return-void
 .end method
 
 
 # virtual methods
-.method public final run()V
-    .locals 4
+.method public a()Landroidx/core/view/K0;
+    .locals 2
 
     .line 1
-    iget v0, p0, Landroidx/core/view/c0;->b:I
+    iget-object v0, p0, Landroidx/core/view/A0;->c:Landroid/view/WindowInsets;
 
     .line 2
     .line 3
-    const/4 v1, 0x0
+    invoke-static {v0}, LA6/g;->i(Landroid/view/WindowInsets;)Landroid/view/WindowInsets;
 
     .line 4
-    iget-object v2, p0, Landroidx/core/view/c0;->c:Landroid/view/View;
-
     .line 5
     .line 6
-    packed-switch v0, :pswitch_data_0
+    move-result-object v0
 
     .line 7
-    .line 8
-    .line 9
-    invoke-virtual {v2}, Landroid/view/View;->requestFocus()Z
+    const/4 v1, 0x0
 
+    .line 8
+    invoke-static {v1, v0}, Landroidx/core/view/K0;->h(Landroid/view/View;Landroid/view/WindowInsets;)Landroidx/core/view/K0;
+
+    .line 9
     .line 10
     .line 11
+    move-result-object v0
+
     .line 12
-    new-instance v0, Landroidx/camera/camera2/internal/a;
+    return-object v0
+.end method
 
+.method public e()Landroidx/core/view/n;
+    .locals 2
+
+    .line 1
+    iget-object v0, p0, Landroidx/core/view/A0;->c:Landroid/view/WindowInsets;
+
+    .line 2
+    .line 3
+    invoke-static {v0}, LA6/g;->g(Landroid/view/WindowInsets;)Landroid/view/DisplayCutout;
+
+    .line 4
+    .line 5
+    .line 6
+    move-result-object v0
+
+    .line 7
+    if-nez v0, :cond_0
+
+    .line 8
+    .line 9
+    const/4 v0, 0x0
+
+    .line 10
+    goto :goto_0
+
+    .line 11
+    :cond_0
+    new-instance v1, Landroidx/core/view/n;
+
+    .line 12
     .line 13
-    .line 14
-    const/4 v3, 0x4
+    invoke-direct {v1, v0}, Landroidx/core/view/n;-><init>(Landroid/view/DisplayCutout;)V
 
+    .line 14
     .line 15
-    invoke-direct {v0, v3, v2, v1}, Landroidx/camera/camera2/internal/a;-><init>(ILjava/lang/Object;Z)V
+    .line 16
+    move-object v0, v1
+
+    .line 17
+    :goto_0
+    return-object v0
+.end method
+
+.method public equals(Ljava/lang/Object;)Z
+    .locals 4
+
+    .line 1
+    const/4 v0, 0x1
+
+    .line 2
+    if-ne p0, p1, :cond_0
+
+    .line 3
+    .line 4
+    return v0
+
+    .line 5
+    :cond_0
+    instance-of v1, p1, Landroidx/core/view/C0;
+
+    .line 6
+    .line 7
+    const/4 v2, 0x0
+
+    .line 8
+    if-nez v1, :cond_1
+
+    .line 9
+    .line 10
+    return v2
+
+    .line 11
+    :cond_1
+    check-cast p1, Landroidx/core/view/C0;
+
+    .line 12
+    .line 13
+    iget-object v1, p1, Landroidx/core/view/A0;->c:Landroid/view/WindowInsets;
+
+    .line 14
+    .line 15
+    iget-object v3, p0, Landroidx/core/view/A0;->c:Landroid/view/WindowInsets;
 
     .line 16
     .line 17
-    .line 18
-    invoke-virtual {v2, v0}, Landroid/view/View;->post(Ljava/lang/Runnable;)Z
+    invoke-static {v3, v1}, Ljava/util/Objects;->equals(Ljava/lang/Object;Ljava/lang/Object;)Z
 
+    .line 18
     .line 19
     .line 20
+    move-result v1
+
     .line 21
-    return-void
+    if-eqz v1, :cond_2
 
     .line 22
-    :pswitch_0
-    sget v0, Lcom/google/android/material/bottomappbar/BottomAppBar;->A:I
-
     .line 23
-    .line 24
-    invoke-virtual {v2}, Landroid/view/View;->requestLayout()V
+    iget-object v1, p0, Landroidx/core/view/A0;->g:Ll1/c;
 
+    .line 24
     .line 25
+    iget-object v3, p1, Landroidx/core/view/A0;->g:Ll1/c;
+
     .line 26
     .line 27
-    return-void
+    invoke-static {v1, v3}, Ljava/util/Objects;->equals(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     .line 28
-    :pswitch_1
-    invoke-virtual {v2}, Landroid/view/View;->getContext()Landroid/content/Context;
-
     .line 29
     .line 30
+    move-result v1
+
     .line 31
-    move-result-object v0
+    if-eqz v1, :cond_2
 
     .line 32
-    const-string v3, "input_method"
-
     .line 33
-    .line 34
-    invoke-virtual {v0, v3}, Landroid/content/Context;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
+    iget v1, p0, Landroidx/core/view/A0;->h:I
 
+    .line 34
     .line 35
+    iget p1, p1, Landroidx/core/view/A0;->h:I
+
     .line 36
     .line 37
-    move-result-object v0
+    invoke-static {v1, p1}, Landroidx/core/view/A0;->B(II)Z
 
     .line 38
-    check-cast v0, Landroid/view/inputmethod/InputMethodManager;
-
     .line 39
     .line 40
-    invoke-virtual {v0, v2, v1}, Landroid/view/inputmethod/InputMethodManager;->showSoftInput(Landroid/view/View;I)Z
+    move-result p1
 
     .line 41
+    if-eqz p1, :cond_2
+
     .line 42
     .line 43
-    return-void
+    goto :goto_0
 
     .line 44
-    nop
+    :cond_2
+    const/4 v0, 0x0
 
     .line 45
-    :pswitch_data_0
-    .packed-switch 0x0
-        :pswitch_1
-        :pswitch_0
-    .end packed-switch
+    :goto_0
+    return v0
+.end method
+
+.method public hashCode()I
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, Landroidx/core/view/A0;->c:Landroid/view/WindowInsets;
+
+    .line 2
+    .line 3
+    invoke-virtual {v0}, Landroid/view/WindowInsets;->hashCode()I
+
+    .line 4
+    .line 5
+    .line 6
+    move-result v0
+
+    .line 7
+    return v0
 .end method

@@ -4,6 +4,16 @@
 
 
 # annotations
+.annotation runtime Lca/c;
+    c = "androidx.compose.ui.scrollcapture.ComposeScrollCaptureCallback"
+    f = "ComposeScrollCaptureCallback.android.kt"
+    l = {
+        0x81,
+        0x84
+    }
+    m = "onScrollCaptureImageRequest"
+.end annotation
+
 .annotation runtime Lkotlin/Metadata;
     k = 0x3
     mv = {
@@ -12,16 +22,6 @@
         0x0
     }
     xi = 0x30
-.end annotation
-
-.annotation runtime Lth/c;
-    c = "androidx.compose.ui.scrollcapture.ComposeScrollCaptureCallback"
-    f = "ComposeScrollCaptureCallback.android.kt"
-    l = {
-        0x81,
-        0x84
-    }
-    m = "onScrollCaptureImageRequest"
 .end annotation
 
 
@@ -40,16 +40,16 @@
 
 .field synthetic result:Ljava/lang/Object;
 
-.field final synthetic this$0:Landroidx/compose/ui/scrollcapture/b;
+.field final synthetic this$0:Landroidx/compose/ui/scrollcapture/a;
 
 
 # direct methods
-.method public constructor <init>(Landroidx/compose/ui/scrollcapture/b;Lkotlin/coroutines/Continuation;)V
+.method public constructor <init>(Landroidx/compose/ui/scrollcapture/a;Lkotlin/coroutines/Continuation;)V
     .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
-            "Landroidx/compose/ui/scrollcapture/b;",
+            "Landroidx/compose/ui/scrollcapture/a;",
             "Lkotlin/coroutines/Continuation<",
             "-",
             "Landroidx/compose/ui/scrollcapture/ComposeScrollCaptureCallback$onScrollCaptureImageRequest$2;",
@@ -57,7 +57,7 @@
         }
     .end annotation
 
-    iput-object p1, p0, Landroidx/compose/ui/scrollcapture/ComposeScrollCaptureCallback$onScrollCaptureImageRequest$2;->this$0:Landroidx/compose/ui/scrollcapture/b;
+    iput-object p1, p0, Landroidx/compose/ui/scrollcapture/ComposeScrollCaptureCallback$onScrollCaptureImageRequest$2;->this$0:Landroidx/compose/ui/scrollcapture/a;
 
     invoke-direct {p0, p2}, Lkotlin/coroutines/jvm/internal/ContinuationImpl;-><init>(Lkotlin/coroutines/Continuation;)V
 
@@ -79,11 +79,11 @@
 
     iput p1, p0, Landroidx/compose/ui/scrollcapture/ComposeScrollCaptureCallback$onScrollCaptureImageRequest$2;->label:I
 
-    iget-object p1, p0, Landroidx/compose/ui/scrollcapture/ComposeScrollCaptureCallback$onScrollCaptureImageRequest$2;->this$0:Landroidx/compose/ui/scrollcapture/b;
+    iget-object p1, p0, Landroidx/compose/ui/scrollcapture/ComposeScrollCaptureCallback$onScrollCaptureImageRequest$2;->this$0:Landroidx/compose/ui/scrollcapture/a;
 
     const/4 v0, 0x0
 
-    invoke-static {p1, v0, v0, p0}, Landroidx/compose/ui/scrollcapture/b;->a(Landroidx/compose/ui/scrollcapture/b;Landroid/view/ScrollCaptureSession;Lh2/i;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
+    invoke-static {p1, v0, v0, p0}, Landroidx/compose/ui/scrollcapture/a;->a(Landroidx/compose/ui/scrollcapture/a;Landroid/view/ScrollCaptureSession;LM0/i;Lkotlin/coroutines/jvm/internal/ContinuationImpl;)Ljava/lang/Object;
 
     move-result-object p1
 

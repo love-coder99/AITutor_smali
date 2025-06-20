@@ -260,11 +260,24 @@
 
 .method public static declared-synchronized init(Landroid/app/Application;Landroid/content/Context;Lcom/apm/insight/ICommonParams;ZZZZJ)V
     .locals 0
+    .param p0    # Landroid/app/Application;
+        .annotation build Landroidx/annotation/NonNull;
+        .end annotation
+    .end param
+    .param p1    # Landroid/content/Context;
+        .annotation build Landroidx/annotation/NonNull;
+        .end annotation
+    .end param
+    .param p2    # Lcom/apm/insight/ICommonParams;
+        .annotation build Landroidx/annotation/NonNull;
+        .end annotation
+    .end param
 
     const-class p3, Lcom/apm/insight/Npth;
 
     monitor-enter p3
 
+    .line 20
     :try_start_0
     sget-boolean p4, Lcom/apm/insight/Npth;->sInit:Z
     :try_end_0
@@ -272,7 +285,7 @@
 
     if-eqz p4, :cond_0
 
-    .line 20
+    .line 21
     monitor-exit p3
 
     return-void
@@ -280,16 +293,17 @@
     :cond_0
     const/4 p4, 0x1
 
+    .line 22
     :try_start_1
     sput-boolean p4, Lcom/apm/insight/Npth;->sInit:Z
 
-    .line 21
+    .line 23
     invoke-static {p0, p1}, Lcom/apm/insight/runtime/m;->a(Landroid/app/Application;Landroid/content/Context;)V
 
-    .line 22
+    .line 24
     invoke-static {p0, p1, p2}, Lcom/apm/insight/e;->a(Landroid/app/Application;Landroid/content/Context;Lcom/apm/insight/ICommonParams;)V
 
-    .line 23
+    .line 25
     invoke-static {}, Lcom/apm/insight/e;->a()Lcom/apm/insight/nativecrash/b;
 
     move-result-object p0
@@ -298,9 +312,9 @@
 
     move-result-object p0
 
+    .line 26
     const-string p2, "update_version_code"
 
-    .line 24
     invoke-interface {p0, p2}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object p2
@@ -311,9 +325,9 @@
 
     move-result p2
 
+    .line 27
     const-string p4, "aid"
 
-    .line 25
     invoke-interface {p0, p4}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object p4
@@ -324,9 +338,9 @@
 
     move-result p4
 
+    .line 28
     const-string p5, "app_version"
 
-    .line 26
     invoke-interface {p0, p5}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object p5
@@ -335,7 +349,7 @@
 
     move-result-object p5
 
-    .line 27
+    .line 29
     invoke-static {p4}, Ljava/lang/String;->valueOf(I)Ljava/lang/String;
 
     move-result-object p4
@@ -348,12 +362,12 @@
 
     if-eqz p1, :cond_1
 
-    .line 28
+    .line 30
     invoke-virtual {p1}, Lcom/apm/insight/MonitorCrash;->config()Lcom/apm/insight/MonitorCrash$Config;
 
     move-result-object p1
 
-    .line 29
+    .line 31
     invoke-static {}, Lcom/apm/insight/e;->a()Lcom/apm/insight/nativecrash/b;
 
     move-result-object p2
@@ -387,7 +401,7 @@
 
     goto :goto_1
 
-    .line 30
+    .line 32
     :cond_1
     :goto_0
     monitor-exit p3
@@ -395,13 +409,24 @@
     return-void
 
     :goto_1
+    :try_start_2
     monitor-exit p3
+    :try_end_2
+    .catchall {:try_start_2 .. :try_end_2} :catchall_0
 
     throw p0
 .end method
 
 .method public static declared-synchronized init(Landroid/content/Context;Lcom/apm/insight/ICommonParams;)V
     .locals 3
+    .param p0    # Landroid/content/Context;
+        .annotation build Landroidx/annotation/NonNull;
+        .end annotation
+    .end param
+    .param p1    # Lcom/apm/insight/ICommonParams;
+        .annotation build Landroidx/annotation/NonNull;
+        .end annotation
+    .end param
 
     const-class v0, Lcom/apm/insight/Npth;
 
@@ -425,13 +450,24 @@
     :catchall_0
     move-exception p0
 
+    :try_start_1
     monitor-exit v0
+    :try_end_1
+    .catchall {:try_start_1 .. :try_end_1} :catchall_0
 
     throw p0
 .end method
 
 .method public static declared-synchronized init(Landroid/content/Context;Lcom/apm/insight/ICommonParams;ZZZ)V
     .locals 7
+    .param p0    # Landroid/content/Context;
+        .annotation build Landroidx/annotation/NonNull;
+        .end annotation
+    .end param
+    .param p1    # Lcom/apm/insight/ICommonParams;
+        .annotation build Landroidx/annotation/NonNull;
+        .end annotation
+    .end param
 
     const-class v0, Lcom/apm/insight/Npth;
 
@@ -463,13 +499,24 @@
     :catchall_0
     move-exception p0
 
+    :try_start_1
     monitor-exit v0
+    :try_end_1
+    .catchall {:try_start_1 .. :try_end_1} :catchall_0
 
     throw p0
 .end method
 
 .method public static declared-synchronized init(Landroid/content/Context;Lcom/apm/insight/ICommonParams;ZZZZ)V
     .locals 9
+    .param p0    # Landroid/content/Context;
+        .annotation build Landroidx/annotation/NonNull;
+        .end annotation
+    .end param
+    .param p1    # Lcom/apm/insight/ICommonParams;
+        .annotation build Landroidx/annotation/NonNull;
+        .end annotation
+    .end param
 
     const-class v0, Lcom/apm/insight/Npth;
 
@@ -503,13 +550,24 @@
     :catchall_0
     move-exception p0
 
+    :try_start_1
     monitor-exit v0
+    :try_end_1
+    .catchall {:try_start_1 .. :try_end_1} :catchall_0
 
     throw p0
 .end method
 
 .method public static declared-synchronized init(Landroid/content/Context;Lcom/apm/insight/ICommonParams;ZZZZJ)V
     .locals 12
+    .param p0    # Landroid/content/Context;
+        .annotation build Landroidx/annotation/NonNull;
+        .end annotation
+    .end param
+    .param p1    # Lcom/apm/insight/ICommonParams;
+        .annotation build Landroidx/annotation/NonNull;
+        .end annotation
+    .end param
 
     move-object v0, p0
 
@@ -646,17 +704,25 @@
     invoke-direct {v0, v2}, Ljava/lang/IllegalArgumentException;-><init>(Ljava/lang/String;)V
 
     throw v0
-    :try_end_3
-    .catchall {:try_start_3 .. :try_end_3} :catchall_0
 
     :goto_2
     monitor-exit v1
+    :try_end_3
+    .catchall {:try_start_3 .. :try_end_3} :catchall_0
 
     throw v0
 .end method
 
 .method public static declared-synchronized initMiniApp(Landroid/content/Context;Lcom/apm/insight/ICommonParams;)V
     .locals 7
+    .param p0    # Landroid/content/Context;
+        .annotation build Landroidx/annotation/NonNull;
+        .end annotation
+    .end param
+    .param p1    # Lcom/apm/insight/ICommonParams;
+        .annotation build Landroidx/annotation/NonNull;
+        .end annotation
+    .end param
 
     const-class v0, Lcom/apm/insight/Npth;
 
@@ -666,13 +732,13 @@
     :try_start_0
     invoke-static {}, Lcom/apm/insight/e;->o()V
 
-    const/4 v3, 0x1
-
-    const/4 v4, 0x0
-
     const/4 v5, 0x1
 
     const/4 v6, 0x1
+
+    const/4 v3, 0x1
+
+    const/4 v4, 0x0
 
     move-object v1, p0
 
@@ -691,13 +757,24 @@
     :catchall_0
     move-exception p0
 
+    :try_start_1
     monitor-exit v0
+    :try_end_1
+    .catchall {:try_start_1 .. :try_end_1} :catchall_0
 
     throw p0
 .end method
 
 .method public static declared-synchronized initMiniApp(Landroid/content/Context;Lcom/apm/insight/ICommonParams;ILjava/lang/String;)V
     .locals 7
+    .param p0    # Landroid/content/Context;
+        .annotation build Landroidx/annotation/NonNull;
+        .end annotation
+    .end param
+    .param p1    # Lcom/apm/insight/ICommonParams;
+        .annotation build Landroidx/annotation/NonNull;
+        .end annotation
+    .end param
 
     const-class v0, Lcom/apm/insight/Npth;
 
@@ -710,13 +787,13 @@
     .line 5
     invoke-static {p2, p3}, Lcom/apm/insight/e;->b(ILjava/lang/String;)V
 
-    const/4 v3, 0x1
-
-    const/4 v4, 0x1
-
     const/4 v5, 0x1
 
     const/4 v6, 0x1
+
+    const/4 v3, 0x1
+
+    const/4 v4, 0x1
 
     move-object v1, p0
 
@@ -735,7 +812,10 @@
     :catchall_0
     move-exception p0
 
+    :try_start_1
     monitor-exit v0
+    :try_end_1
+    .catchall {:try_start_1 .. :try_end_1} :catchall_0
 
     throw p0
 .end method
@@ -758,8 +838,11 @@
 .method public static isInit()Z
     .locals 1
 
+    .line 1
     sget-boolean v0, Lcom/apm/insight/Npth;->sInit:Z
 
+    .line 2
+    .line 3
     return v0
 .end method
 
@@ -962,6 +1045,18 @@
 
 .method public static reportDartError$1703a8c9(Ljava/lang/String;Ljava/util/Map;Ljava/util/Map;Lcom/apm/insight/b/h$a;)V
     .locals 0
+    .param p1    # Ljava/util/Map;
+        .annotation build Landroidx/annotation/Nullable;
+        .end annotation
+    .end param
+    .param p2    # Ljava/util/Map;
+        .annotation build Landroidx/annotation/Nullable;
+        .end annotation
+    .end param
+    .param p3    # Lcom/apm/insight/b/h$a;
+        .annotation build Landroidx/annotation/Nullable;
+        .end annotation
+    .end param
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -992,6 +1087,22 @@
 
 .method public static reportDartError$721849be(Ljava/lang/String;Ljava/util/Map;Ljava/util/Map;Ljava/util/Map;Lcom/apm/insight/b/h$a;)V
     .locals 0
+    .param p1    # Ljava/util/Map;
+        .annotation build Landroidx/annotation/Nullable;
+        .end annotation
+    .end param
+    .param p2    # Ljava/util/Map;
+        .annotation build Landroidx/annotation/Nullable;
+        .end annotation
+    .end param
+    .param p3    # Ljava/util/Map;
+        .annotation build Landroidx/annotation/Nullable;
+        .end annotation
+    .end param
+    .param p4    # Lcom/apm/insight/b/h$a;
+        .annotation build Landroidx/annotation/Nullable;
+        .end annotation
+    .end param
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -1037,6 +1148,10 @@
 
 .method public static reportError(Ljava/lang/Throwable;)V
     .locals 0
+    .param p0    # Ljava/lang/Throwable;
+        .annotation build Landroidx/annotation/NonNull;
+        .end annotation
+    .end param
     .annotation runtime Ljava/lang/Deprecated;
     .end annotation
 
@@ -1190,6 +1305,10 @@
 
 .method public static setEncryptImpl$22f2d42e(Lcom/apm/insight/b/i$a;)V
     .locals 0
+    .param p0    # Lcom/apm/insight/b/i$a;
+        .annotation build Landroidx/annotation/NonNull;
+        .end annotation
+    .end param
 
     .line 1
     invoke-static {p0}, Lcom/apm/insight/runtime/m;->a(Lcom/apm/insight/b/i$a;)V

@@ -45,43 +45,40 @@
 
     .line 12
     .line 13
-    const/4 v1, 0x0
+    invoke-direct {v0, p0}, Landroidx/camera/core/impl/utils/executor/a;-><init>(Landroidx/camera/core/impl/utils/executor/b;)V
 
     .line 14
-    invoke-direct {v0, p0, v1}, Landroidx/camera/core/impl/utils/executor/a;-><init>(Ljava/lang/Object;I)V
-
     .line 15
     .line 16
-    .line 17
     iput-object v0, p0, Landroidx/camera/core/impl/utils/executor/b;->d:Landroidx/camera/core/impl/utils/executor/a;
 
+    .line 17
     .line 18
-    .line 19
     sget-object v0, Landroidx/camera/core/impl/utils/executor/SequentialExecutor$WorkerRunningState;->IDLE:Landroidx/camera/core/impl/utils/executor/SequentialExecutor$WorkerRunningState;
 
+    .line 19
     .line 20
-    .line 21
     iput-object v0, p0, Landroidx/camera/core/impl/utils/executor/b;->f:Landroidx/camera/core/impl/utils/executor/SequentialExecutor$WorkerRunningState;
 
+    .line 21
     .line 22
-    .line 23
     const-wide/16 v0, 0x0
 
+    .line 23
     .line 24
-    .line 25
     iput-wide v0, p0, Landroidx/camera/core/impl/utils/executor/b;->g:J
 
+    .line 25
     .line 26
-    .line 27
     invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
+    .line 27
     .line 28
     .line 29
-    .line 30
     iput-object p1, p0, Landroidx/camera/core/impl/utils/executor/b;->c:Ljava/util/concurrent/Executor;
 
+    .line 30
     .line 31
-    .line 32
     return-void
 .end method
 
@@ -124,7 +121,7 @@
 
     .line 16
     .line 17
-    goto :goto_5
+    goto :goto_6
 
     .line 18
     :cond_0
@@ -132,14 +129,14 @@
 
     .line 19
     .line 20
-    new-instance v1, Lb0/i;
+    new-instance v1, LF/h;
 
     .line 21
     .line 22
     const/4 v5, 0x0
 
     .line 23
-    invoke-direct {v1, p0, v5, p1}, Lb0/i;-><init>(Ljava/lang/Object;ILjava/lang/Object;)V
+    invoke-direct {v1, p1, v5}, LF/h;-><init>(Ljava/lang/Runnable;I)V
 
     .line 24
     .line 25
@@ -171,11 +168,11 @@
 
     .line 37
     .line 38
-    iget-object v6, p0, Landroidx/camera/core/impl/utils/executor/b;->d:Landroidx/camera/core/impl/utils/executor/a;
+    iget-object v5, p0, Landroidx/camera/core/impl/utils/executor/b;->d:Landroidx/camera/core/impl/utils/executor/a;
 
     .line 39
     .line 40
-    invoke-interface {v0, v6}, Ljava/util/concurrent/Executor;->execute(Ljava/lang/Runnable;)V
+    invoke-interface {v0, v5}, Ljava/util/concurrent/Executor;->execute(Ljava/lang/Runnable;)V
     :try_end_1
     .catch Ljava/lang/RuntimeException; {:try_start_1 .. :try_end_1} :catch_1
     .catch Ljava/lang/Error; {:try_start_1 .. :try_end_1} :catch_0
@@ -301,7 +298,7 @@
     move-exception p1
 
     .line 88
-    goto :goto_4
+    goto :goto_5
 
     .line 89
     :cond_3
@@ -322,71 +319,78 @@
 
     .line 96
     .line 97
-    const/4 v5, 0x1
+    const/4 v0, 0x1
 
     .line 98
-    :cond_4
-    instance-of v0, p1, Ljava/util/concurrent/RejectedExecutionException;
+    goto :goto_4
 
     .line 99
+    :cond_4
+    const/4 v0, 0x0
+
     .line 100
-    if-eqz v0, :cond_5
+    :goto_4
+    instance-of v1, p1, Ljava/util/concurrent/RejectedExecutionException;
 
     .line 101
     .line 102
-    if-nez v5, :cond_5
+    if-eqz v1, :cond_5
 
     .line 103
     .line 104
-    monitor-exit v2
+    if-nez v0, :cond_5
 
     .line 105
+    .line 106
+    monitor-exit v2
+
+    .line 107
     return-void
 
-    .line 106
+    .line 108
     :cond_5
     throw p1
 
-    .line 107
-    :goto_4
+    .line 109
+    :goto_5
     monitor-exit v2
     :try_end_3
     .catchall {:try_start_3 .. :try_end_3} :catchall_1
 
-    .line 108
+    .line 110
     throw p1
 
-    .line 109
+    .line 111
     :catchall_2
     move-exception p1
 
-    .line 110
-    goto :goto_6
+    .line 112
+    goto :goto_7
 
-    .line 111
+    .line 113
     :cond_6
-    :goto_5
+    :goto_6
     :try_start_4
     iget-object v1, p0, Landroidx/camera/core/impl/utils/executor/b;->b:Ljava/util/ArrayDeque;
 
-    .line 112
-    .line 113
-    invoke-virtual {v1, p1}, Ljava/util/ArrayDeque;->add(Ljava/lang/Object;)Z
-
     .line 114
     .line 115
+    invoke-virtual {v1, p1}, Ljava/util/ArrayDeque;->add(Ljava/lang/Object;)Z
+
     .line 116
+    .line 117
+    .line 118
     monitor-exit v0
 
-    .line 117
+    .line 119
     return-void
 
-    .line 118
-    :goto_6
+    .line 120
+    :goto_7
     monitor-exit v0
     :try_end_4
     .catchall {:try_start_4 .. :try_end_4} :catchall_2
 
-    .line 119
+    .line 121
     throw p1
 .end method

@@ -4,6 +4,9 @@
 
 
 # annotations
+.annotation build Lcom/android/billingclient/api/zzi;
+.end annotation
+
 .annotation system Ldalvik/annotation/EnclosingClass;
     value = Lcom/android/billingclient/api/ProductDetails;
 .end annotation
@@ -74,6 +77,8 @@
 # virtual methods
 .method public getInstallmentPlanCommitmentPaymentsCount()I
     .locals 1
+    .annotation build Lcom/android/billingclient/api/zzi;
+    .end annotation
 
     iget v0, p0, Lcom/android/billingclient/api/ProductDetails$InstallmentPlanDetails;->commitmentPaymentsCount:I
 
@@ -82,6 +87,8 @@
 
 .method public getSubsequentInstallmentPlanCommitmentPaymentsCount()I
     .locals 1
+    .annotation build Lcom/android/billingclient/api/zzi;
+    .end annotation
 
     iget v0, p0, Lcom/android/billingclient/api/ProductDetails$InstallmentPlanDetails;->subsequentCommitmentPaymentsCount:I
 

@@ -470,6 +470,8 @@
 
 .method public static deserialize(Ljava/lang/String;)Lorg/json/JSONObject;
     .locals 4
+    .annotation build Landroidx/annotation/Nullable;
+    .end annotation
 
     .line 1
     invoke-static {p0}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
@@ -708,6 +710,12 @@
 
 .method public static getDouble(Lorg/json/JSONObject;Ljava/lang/String;Ljava/lang/Double;)Ljava/lang/Double;
     .locals 2
+    .param p2    # Ljava/lang/Double;
+        .annotation build Landroidx/annotation/Nullable;
+        .end annotation
+    .end param
+    .annotation build Landroidx/annotation/Nullable;
+    .end annotation
 
     if-eqz p0, :cond_0
 
@@ -820,6 +828,12 @@
 
 .method public static getFloat(Lorg/json/JSONObject;Ljava/lang/String;Ljava/lang/Float;)Ljava/lang/Float;
     .locals 4
+    .param p2    # Ljava/lang/Float;
+        .annotation build Landroidx/annotation/Nullable;
+        .end annotation
+    .end param
+    .annotation build Landroidx/annotation/Nullable;
+    .end annotation
 
     if-eqz p0, :cond_0
 
@@ -964,6 +978,16 @@
 
 .method public static getInteger(Lorg/json/JSONObject;Ljava/lang/String;Ljava/lang/Integer;)Ljava/lang/Integer;
     .locals 2
+    .param p0    # Lorg/json/JSONObject;
+        .annotation build Landroidx/annotation/Nullable;
+        .end annotation
+    .end param
+    .param p2    # Ljava/lang/Integer;
+        .annotation build Landroidx/annotation/Nullable;
+        .end annotation
+    .end param
+    .annotation build Landroidx/annotation/Nullable;
+    .end annotation
 
     .line 1
     if-eqz p0, :cond_0
@@ -1212,6 +1236,8 @@
 
 .method public static getJSONObject(Lorg/json/JSONObject;Ljava/lang/String;)Lorg/json/JSONObject;
     .locals 1
+    .annotation build Landroidx/annotation/Nullable;
+    .end annotation
 
     const/4 v0, 0x0
 
@@ -1225,6 +1251,12 @@
 
 .method public static getJSONObject(Lorg/json/JSONObject;Ljava/lang/String;Lorg/json/JSONObject;)Lorg/json/JSONObject;
     .locals 2
+    .param p2    # Lorg/json/JSONObject;
+        .annotation build Landroidx/annotation/Nullable;
+        .end annotation
+    .end param
+    .annotation build Landroidx/annotation/Nullable;
+    .end annotation
 
     if-eqz p0, :cond_0
 

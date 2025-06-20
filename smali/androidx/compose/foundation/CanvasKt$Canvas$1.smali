@@ -3,14 +3,14 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lzh/e;
+.implements Lka/e;
 
 
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "Lkotlin/jvm/internal/Lambda;",
-        "Lzh/e;"
+        "Lka/e;"
     }
 .end annotation
 
@@ -30,23 +30,23 @@
 
 .field final synthetic $modifier:Landroidx/compose/ui/o;
 
-.field final synthetic $onDraw:Lzh/c;
+.field final synthetic $onDraw:Lka/c;
     .annotation system Ldalvik/annotation/Signature;
         value = {
-            "Lzh/c;"
+            "Lka/c;"
         }
     .end annotation
 .end field
 
 
 # direct methods
-.method public constructor <init>(Landroidx/compose/ui/o;Lzh/c;I)V
+.method public constructor <init>(Landroidx/compose/ui/o;Lka/c;I)V
     .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
             "Landroidx/compose/ui/o;",
-            "Lzh/c;",
+            "Lka/c;",
             "I)V"
         }
     .end annotation
@@ -54,14 +54,24 @@
     .line 1
     iput-object p1, p0, Landroidx/compose/foundation/CanvasKt$Canvas$1;->$modifier:Landroidx/compose/ui/o;
 
-    iput-object p2, p0, Landroidx/compose/foundation/CanvasKt$Canvas$1;->$onDraw:Lzh/c;
+    .line 2
+    .line 3
+    iput-object p2, p0, Landroidx/compose/foundation/CanvasKt$Canvas$1;->$onDraw:Lka/c;
 
+    .line 4
+    .line 5
     iput p3, p0, Landroidx/compose/foundation/CanvasKt$Canvas$1;->$$changed:I
 
+    .line 6
+    .line 7
     const/4 p1, 0x2
 
+    .line 8
     invoke-direct {p0, p1}, Lkotlin/jvm/internal/Lambda;-><init>(I)V
 
+    .line 9
+    .line 10
+    .line 11
     return-void
 .end method
 
@@ -71,7 +81,7 @@
     .locals 0
 
     .line 1
-    check-cast p1, Landroidx/compose/runtime/l;
+    check-cast p1, Landroidx/compose/runtime/j;
 
     check-cast p2, Ljava/lang/Number;
 
@@ -79,30 +89,30 @@
 
     move-result p2
 
-    invoke-virtual {p0, p1, p2}, Landroidx/compose/foundation/CanvasKt$Canvas$1;->invoke(Landroidx/compose/runtime/l;I)V
+    invoke-virtual {p0, p1, p2}, Landroidx/compose/foundation/CanvasKt$Canvas$1;->invoke(Landroidx/compose/runtime/j;I)V
 
-    sget-object p1, Lqh/r;->a:Lqh/r;
+    sget-object p1, LX9/j;->a:LX9/j;
 
     return-object p1
 .end method
 
-.method public final invoke(Landroidx/compose/runtime/l;I)V
+.method public final invoke(Landroidx/compose/runtime/j;I)V
     .locals 2
 
     .line 2
     iget-object p2, p0, Landroidx/compose/foundation/CanvasKt$Canvas$1;->$modifier:Landroidx/compose/ui/o;
 
-    iget-object v0, p0, Landroidx/compose/foundation/CanvasKt$Canvas$1;->$onDraw:Lzh/c;
+    iget-object v0, p0, Landroidx/compose/foundation/CanvasKt$Canvas$1;->$onDraw:Lka/c;
 
     iget v1, p0, Landroidx/compose/foundation/CanvasKt$Canvas$1;->$$changed:I
 
     or-int/lit8 v1, v1, 0x1
 
-    invoke-static {v1}, Landroidx/compose/runtime/q;->A(I)I
+    invoke-static {v1}, Landroidx/compose/runtime/o;->f0(I)I
 
     move-result v1
 
-    invoke-static {p2, v0, p1, v1}, Landroidx/compose/foundation/d;->b(Landroidx/compose/ui/o;Lzh/c;Landroidx/compose/runtime/l;I)V
+    invoke-static {p2, v0, p1, v1}, Landroidx/compose/foundation/d;->b(Landroidx/compose/ui/o;Lka/c;Landroidx/compose/runtime/j;I)V
 
     return-void
 .end method

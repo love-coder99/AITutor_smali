@@ -3,7 +3,7 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lzh/a;
+.implements Lka/a;
 
 
 # annotations
@@ -19,7 +19,7 @@
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "Lkotlin/jvm/internal/Lambda;",
-        "Lzh/a;"
+        "Lka/a;"
     }
 .end annotation
 
@@ -68,14 +68,14 @@
 .method public final invoke()I
     .locals 2
 
+    .line 2
     iget-object v0, p0, Lcom/afollestad/materialdialogs/internal/message/DialogContentLayout$frameHorizontalMargin$2;->this$0:Lcom/afollestad/materialdialogs/internal/message/DialogContentLayout;
 
-    .line 2
     invoke-virtual {v0}, Landroid/view/View;->getResources()Landroid/content/res/Resources;
 
     move-result-object v0
 
-    sget v1, Lr5/b;->md_dialog_frame_margin_horizontal:I
+    sget v1, LK2/b;->md_dialog_frame_margin_horizontal:I
 
     invoke-virtual {v0, v1}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
 

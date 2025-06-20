@@ -138,7 +138,7 @@
 
     new-instance v1, Lcom/applovin/exoplayer2/ui/n;
 
-    const/4 v2, 0x1
+    const/4 v2, 0x0
 
     invoke-direct {v1, v2}, Lcom/applovin/exoplayer2/ui/n;-><init>(I)V
 
@@ -216,7 +216,7 @@
 
     new-instance v0, Lcom/applovin/exoplayer2/ui/n;
 
-    const/4 v1, 0x0
+    const/4 v1, 0x1
 
     invoke-direct {v0, v1}, Lcom/applovin/exoplayer2/ui/n;-><init>(I)V
 

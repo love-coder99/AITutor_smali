@@ -4,6 +4,15 @@
 
 
 # annotations
+.annotation runtime Lca/c;
+    c = "androidx.work.impl.workers.ConstraintTrackingWorkerKt"
+    f = "ConstraintTrackingWorker.kt"
+    l = {
+        0xa0
+    }
+    m = "awaitConstraintsNotMet"
+.end annotation
+
 .annotation runtime Lkotlin/Metadata;
     k = 0x3
     mv = {
@@ -12,15 +21,6 @@
         0x0
     }
     xi = 0x30
-.end annotation
-
-.annotation runtime Lth/c;
-    c = "androidx.work.impl.workers.ConstraintTrackingWorkerKt"
-    f = "ConstraintTrackingWorker.kt"
-    l = {
-        0xa0
-    }
-    m = "awaitConstraintsNotMet"
 .end annotation
 
 
@@ -65,7 +65,7 @@
 
     const/4 p1, 0x0
 
-    invoke-static {p1, p1, p0}, Landroidx/work/impl/workers/b;->a(Landroidx/work/impl/constraints/i;Lh5/q;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
+    invoke-static {p1, p1, p0}, Landroidx/work/impl/workers/b;->a(Landroidx/work/impl/constraints/i;LB2/p;Lkotlin/coroutines/jvm/internal/ContinuationImpl;)Ljava/lang/Object;
 
     move-result-object p1
 

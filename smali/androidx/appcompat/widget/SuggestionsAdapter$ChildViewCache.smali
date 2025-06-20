@@ -120,7 +120,7 @@
 
     .line 47
     .line 48
-    sget v0, Lg/f;->edit_query:I
+    sget v0, Li/f;->edit_query:I
 
     .line 49
     .line 50

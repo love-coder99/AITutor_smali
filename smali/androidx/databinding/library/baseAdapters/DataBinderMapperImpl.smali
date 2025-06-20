@@ -1,5 +1,5 @@
 .class public Landroidx/databinding/library/baseAdapters/DataBinderMapperImpl;
-.super Landroidx/databinding/e;
+.super Landroidx/databinding/d;
 .source "SourceFile"
 
 
@@ -51,7 +51,7 @@
         value = {
             "()",
             "Ljava/util/List<",
-            "Landroidx/databinding/e;",
+            "Landroidx/databinding/d;",
             ">;"
         }
     .end annotation
@@ -76,7 +76,7 @@
     .locals 1
 
     .line 1
-    sget-object v0, Ls3/a;->a:Landroid/util/SparseArray;
+    sget-object v0, LC1/a;->a:Landroid/util/SparseArray;
 
     .line 2
     .line 3
@@ -95,12 +95,12 @@
     return-object p1
 .end method
 
-.method public getDataBinder(Landroidx/databinding/f;Landroid/view/View;I)Landroidx/databinding/o;
+.method public getDataBinder(Landroidx/databinding/e;Landroid/view/View;I)Landroidx/databinding/m;
     .locals 0
 
+    .line 1
     sget-object p1, Landroidx/databinding/library/baseAdapters/DataBinderMapperImpl;->INTERNAL_LAYOUT_ID_LOOKUP:Landroid/util/SparseIntArray;
 
-    .line 1
     invoke-virtual {p1, p3}, Landroid/util/SparseIntArray;->get(I)I
 
     move-result p1
@@ -133,7 +133,7 @@
     return-object p1
 .end method
 
-.method public getDataBinder(Landroidx/databinding/f;[Landroid/view/View;I)Landroidx/databinding/o;
+.method public getDataBinder(Landroidx/databinding/e;[Landroid/view/View;I)Landroidx/databinding/m;
     .locals 1
 
     const/4 p1, 0x0
@@ -147,10 +147,10 @@
 
     goto :goto_0
 
+    .line 5
     :cond_0
     sget-object v0, Landroidx/databinding/library/baseAdapters/DataBinderMapperImpl;->INTERNAL_LAYOUT_ID_LOOKUP:Landroid/util/SparseIntArray;
 
-    .line 5
     invoke-virtual {v0, p3}, Landroid/util/SparseIntArray;->get(I)I
 
     move-result p3
@@ -200,7 +200,7 @@
 
     .line 5
     :cond_0
-    sget-object v1, Ls3/b;->a:Ljava/util/HashMap;
+    sget-object v1, LC1/b;->a:Ljava/util/HashMap;
 
     .line 6
     .line 7

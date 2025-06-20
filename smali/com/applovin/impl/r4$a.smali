@@ -19,7 +19,7 @@
     .locals 2
 
     .line 1
-    invoke-static {}, Lcom/applovin/impl/nu;->e()Landroid/media/ApplicationMediaCapabilities$Builder;
+    invoke-static {}, Landroidx/core/view/h;->g()Landroid/media/ApplicationMediaCapabilities$Builder;
 
     .line 2
     .line 3
@@ -27,7 +27,7 @@
     move-result-object v0
 
     .line 5
-    invoke-static {v0}, Lcom/applovin/impl/nu;->f(Landroid/media/ApplicationMediaCapabilities$Builder;)Landroid/media/ApplicationMediaCapabilities$Builder;
+    invoke-static {v0}, Landroidx/core/view/h;->h(Landroid/media/ApplicationMediaCapabilities$Builder;)Landroid/media/ApplicationMediaCapabilities$Builder;
 
     .line 6
     .line 7
@@ -35,7 +35,7 @@
     move-result-object v0
 
     .line 9
-    invoke-static {v0}, Lcom/applovin/impl/nu;->A(Landroid/media/ApplicationMediaCapabilities$Builder;)Landroid/media/ApplicationMediaCapabilities$Builder;
+    invoke-static {v0}, Landroidx/core/view/h;->y(Landroid/media/ApplicationMediaCapabilities$Builder;)Landroid/media/ApplicationMediaCapabilities$Builder;
 
     .line 10
     .line 11
@@ -43,7 +43,7 @@
     move-result-object v0
 
     .line 13
-    invoke-static {v0}, Lcom/applovin/impl/nu;->B(Landroid/media/ApplicationMediaCapabilities$Builder;)Landroid/media/ApplicationMediaCapabilities$Builder;
+    invoke-static {v0}, Landroidx/core/view/h;->B(Landroid/media/ApplicationMediaCapabilities$Builder;)Landroid/media/ApplicationMediaCapabilities$Builder;
 
     .line 14
     .line 15
@@ -51,7 +51,7 @@
     move-result-object v0
 
     .line 17
-    invoke-static {v0}, Lcom/applovin/impl/nu;->C(Landroid/media/ApplicationMediaCapabilities$Builder;)Landroid/media/ApplicationMediaCapabilities$Builder;
+    invoke-static {v0}, Landroidx/core/view/h;->C(Landroid/media/ApplicationMediaCapabilities$Builder;)Landroid/media/ApplicationMediaCapabilities$Builder;
 
     .line 18
     .line 19
@@ -59,7 +59,7 @@
     move-result-object v0
 
     .line 21
-    invoke-static {v0}, Lcom/applovin/impl/nu;->D(Landroid/media/ApplicationMediaCapabilities$Builder;)Landroid/media/ApplicationMediaCapabilities$Builder;
+    invoke-static {v0}, Landroidx/core/view/h;->D(Landroid/media/ApplicationMediaCapabilities$Builder;)Landroid/media/ApplicationMediaCapabilities$Builder;
 
     .line 22
     .line 23
@@ -67,7 +67,7 @@
     move-result-object v0
 
     .line 25
-    invoke-static {v0}, Lcom/applovin/impl/nu;->g(Landroid/media/ApplicationMediaCapabilities$Builder;)Landroid/media/ApplicationMediaCapabilities;
+    invoke-static {v0}, Landroidx/core/view/h;->i(Landroid/media/ApplicationMediaCapabilities$Builder;)Landroid/media/ApplicationMediaCapabilities;
 
     .line 26
     .line 27

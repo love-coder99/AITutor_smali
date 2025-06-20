@@ -3,14 +3,14 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lzh/c;
+.implements Lka/c;
 
 
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "Lkotlin/jvm/internal/Lambda;",
-        "Lzh/c;"
+        "Lka/c;"
     }
 .end annotation
 
@@ -19,10 +19,10 @@
         "\u0000\u000c\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0008\u0003\u0010\u0004\u001a\u00020\u0001*\u00020\u0000H\n\u00a2\u0006\u0004\u0008\u0002\u0010\u0003"
     }
     d2 = {
-        "Landroidx/compose/ui/graphics/g0;",
-        "Lqh/r;",
+        "Landroidx/compose/ui/graphics/H;",
+        "LX9/j;",
         "invoke",
-        "(Landroidx/compose/ui/graphics/g0;)V",
+        "(Landroidx/compose/ui/graphics/H;)V",
         "<anonymous>"
     }
     k = 0x3
@@ -37,22 +37,22 @@
 # instance fields
 .field final synthetic $disableClip:Z
 
-.field final synthetic $isEnabled:Lzh/a;
+.field final synthetic $isEnabled:Lka/a;
     .annotation system Ldalvik/annotation/Signature;
         value = {
-            "Lzh/a;"
+            "Lka/a;"
         }
     .end annotation
 .end field
 
 
 # direct methods
-.method public constructor <init>(ZLzh/a;)V
+.method public constructor <init>(ZLka/a;)V
     .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(Z",
-            "Lzh/a;",
+            "Lka/a;",
             ")V"
         }
     .end annotation
@@ -60,12 +60,20 @@
     .line 1
     iput-boolean p1, p0, Landroidx/compose/animation/EnterExitTransitionKt$createModifier$2$1;->$disableClip:Z
 
-    iput-object p2, p0, Landroidx/compose/animation/EnterExitTransitionKt$createModifier$2$1;->$isEnabled:Lzh/a;
+    .line 2
+    .line 3
+    iput-object p2, p0, Landroidx/compose/animation/EnterExitTransitionKt$createModifier$2$1;->$isEnabled:Lka/a;
 
+    .line 4
+    .line 5
     const/4 p1, 0x1
 
+    .line 6
     invoke-direct {p0, p1}, Lkotlin/jvm/internal/Lambda;-><init>(I)V
 
+    .line 7
+    .line 8
+    .line 9
     return-void
 .end method
 
@@ -75,26 +83,26 @@
     .locals 0
 
     .line 1
-    check-cast p1, Landroidx/compose/ui/graphics/g0;
+    check-cast p1, Landroidx/compose/ui/graphics/H;
 
-    invoke-virtual {p0, p1}, Landroidx/compose/animation/EnterExitTransitionKt$createModifier$2$1;->invoke(Landroidx/compose/ui/graphics/g0;)V
+    invoke-virtual {p0, p1}, Landroidx/compose/animation/EnterExitTransitionKt$createModifier$2$1;->invoke(Landroidx/compose/ui/graphics/H;)V
 
-    sget-object p1, Lqh/r;->a:Lqh/r;
+    sget-object p1, LX9/j;->a:LX9/j;
 
     return-object p1
 .end method
 
-.method public final invoke(Landroidx/compose/ui/graphics/g0;)V
+.method public final invoke(Landroidx/compose/ui/graphics/H;)V
     .locals 1
 
+    .line 2
     iget-boolean v0, p0, Landroidx/compose/animation/EnterExitTransitionKt$createModifier$2$1;->$disableClip:Z
 
     if-nez v0, :cond_0
 
-    iget-object v0, p0, Landroidx/compose/animation/EnterExitTransitionKt$createModifier$2$1;->$isEnabled:Lzh/a;
+    iget-object v0, p0, Landroidx/compose/animation/EnterExitTransitionKt$createModifier$2$1;->$isEnabled:Lka/a;
 
-    .line 2
-    invoke-interface {v0}, Lzh/a;->invoke()Ljava/lang/Object;
+    invoke-interface {v0}, Lka/a;->invoke()Ljava/lang/Object;
 
     move-result-object v0
 
@@ -114,9 +122,9 @@
     const/4 v0, 0x0
 
     :goto_0
-    check-cast p1, Landroidx/compose/ui/graphics/w0;
+    check-cast p1, Landroidx/compose/ui/graphics/W;
 
-    invoke-virtual {p1, v0}, Landroidx/compose/ui/graphics/w0;->d(Z)V
+    invoke-virtual {p1, v0}, Landroidx/compose/ui/graphics/W;->d(Z)V
 
     return-void
 .end method

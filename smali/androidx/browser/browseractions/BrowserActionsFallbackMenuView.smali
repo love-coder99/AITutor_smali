@@ -17,6 +17,14 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
     .locals 0
+    .param p1    # Landroid/content/Context;
+        .annotation build Landroidx/annotation/NonNull;
+        .end annotation
+    .end param
+    .param p2    # Landroid/util/AttributeSet;
+        .annotation build Landroidx/annotation/NonNull;
+        .end annotation
+    .end param
 
     .line 1
     invoke-direct {p0, p1, p2}, Landroid/widget/LinearLayout;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
@@ -32,7 +40,7 @@
     move-result-object p1
 
     .line 8
-    sget p2, Lo/a;->browser_actions_context_menu_min_padding:I
+    sget p2, Lr/a;->browser_actions_context_menu_min_padding:I
 
     .line 9
     .line 10
@@ -56,7 +64,7 @@
     move-result-object p1
 
     .line 20
-    sget p2, Lo/a;->browser_actions_context_menu_max_width:I
+    sget p2, Lr/a;->browser_actions_context_menu_max_width:I
 
     .line 21
     .line 22

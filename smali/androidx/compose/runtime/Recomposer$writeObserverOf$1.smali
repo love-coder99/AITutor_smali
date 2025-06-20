@@ -3,14 +3,14 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lzh/c;
+.implements Lka/c;
 
 
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "Lkotlin/jvm/internal/Lambda;",
-        "Lzh/c;"
+        "Lka/c;"
     }
 .end annotation
 
@@ -21,7 +21,7 @@
     d2 = {
         "",
         "value",
-        "Lqh/r;",
+        "LX9/j;",
         "invoke",
         "(Ljava/lang/Object;)V",
         "<anonymous>"
@@ -36,32 +36,32 @@
 
 
 # instance fields
-.field final synthetic $composition:Landroidx/compose/runtime/f0;
+.field final synthetic $composition:Landroidx/compose/runtime/z;
 
-.field final synthetic $modifiedValues:Landroidx/collection/e0;
+.field final synthetic $modifiedValues:Landroidx/collection/D;
     .annotation system Ldalvik/annotation/Signature;
         value = {
-            "Landroidx/collection/e0;"
+            "Landroidx/collection/D;"
         }
     .end annotation
 .end field
 
 
 # direct methods
-.method public constructor <init>(Landroidx/compose/runtime/f0;Landroidx/collection/e0;)V
+.method public constructor <init>(Landroidx/compose/runtime/z;Landroidx/collection/D;)V
     .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
-            "Landroidx/compose/runtime/f0;",
-            "Landroidx/collection/e0;",
+            "Landroidx/compose/runtime/z;",
+            "Landroidx/collection/D;",
             ")V"
         }
     .end annotation
 
-    iput-object p1, p0, Landroidx/compose/runtime/Recomposer$writeObserverOf$1;->$composition:Landroidx/compose/runtime/f0;
+    iput-object p1, p0, Landroidx/compose/runtime/Recomposer$writeObserverOf$1;->$composition:Landroidx/compose/runtime/z;
 
-    iput-object p2, p0, Landroidx/compose/runtime/Recomposer$writeObserverOf$1;->$modifiedValues:Landroidx/collection/e0;
+    iput-object p2, p0, Landroidx/compose/runtime/Recomposer$writeObserverOf$1;->$modifiedValues:Landroidx/collection/D;
 
     const/4 p1, 0x1
 
@@ -78,7 +78,7 @@
     .line 1
     invoke-virtual {p0, p1}, Landroidx/compose/runtime/Recomposer$writeObserverOf$1;->invoke(Ljava/lang/Object;)V
 
-    sget-object p1, Lqh/r;->a:Lqh/r;
+    sget-object p1, LX9/j;->a:LX9/j;
 
     return-object p1
 .end method
@@ -86,19 +86,19 @@
 .method public final invoke(Ljava/lang/Object;)V
     .locals 1
 
-    iget-object v0, p0, Landroidx/compose/runtime/Recomposer$writeObserverOf$1;->$composition:Landroidx/compose/runtime/f0;
-
-    check-cast v0, Landroidx/compose/runtime/v;
-
     .line 2
-    invoke-virtual {v0, p1}, Landroidx/compose/runtime/v;->A(Ljava/lang/Object;)V
+    iget-object v0, p0, Landroidx/compose/runtime/Recomposer$writeObserverOf$1;->$composition:Landroidx/compose/runtime/z;
 
-    iget-object v0, p0, Landroidx/compose/runtime/Recomposer$writeObserverOf$1;->$modifiedValues:Landroidx/collection/e0;
+    check-cast v0, Landroidx/compose/runtime/s;
+
+    invoke-virtual {v0, p1}, Landroidx/compose/runtime/s;->y(Ljava/lang/Object;)V
+
+    .line 3
+    iget-object v0, p0, Landroidx/compose/runtime/Recomposer$writeObserverOf$1;->$modifiedValues:Landroidx/collection/D;
 
     if-eqz v0, :cond_0
 
-    .line 3
-    invoke-virtual {v0, p1}, Landroidx/collection/e0;->d(Ljava/lang/Object;)Z
+    invoke-virtual {v0, p1}, Landroidx/collection/D;->d(Ljava/lang/Object;)Z
 
     :cond_0
     return-void

@@ -22,7 +22,7 @@
     .line 7
     .line 8
     .line 9
-    invoke-virtual {p0, v0}, Landroidx/databinding/MergedDataBinderMapper;->addMapper(Landroidx/databinding/e;)V
+    invoke-virtual {p0, v0}, Landroidx/databinding/MergedDataBinderMapper;->addMapper(Landroidx/databinding/d;)V
 
     .line 10
     .line 11

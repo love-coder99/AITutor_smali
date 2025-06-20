@@ -32,11 +32,13 @@
     .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
+    .line 2
     iput-object p1, p0, Lcom/applovin/impl/t8$b;->a:Lcom/applovin/impl/z8;
 
+    .line 3
     iput p2, p0, Lcom/applovin/impl/t8$b;->b:I
 
-    .line 2
+    .line 4
     new-instance p1, Lcom/applovin/impl/v8$a;
 
     invoke-direct {p1}, Lcom/applovin/impl/v8$a;-><init>()V
@@ -49,7 +51,7 @@
 .method public synthetic constructor <init>(Lcom/applovin/impl/z8;ILcom/applovin/impl/t8$a;)V
     .locals 0
 
-    .line 3
+    .line 5
     invoke-direct {p0, p1, p2}, Lcom/applovin/impl/t8$b;-><init>(Lcom/applovin/impl/z8;I)V
 
     return-void
@@ -127,17 +129,17 @@
 
     invoke-interface {p1, v1}, Lcom/applovin/impl/k8;->c(I)V
 
+    .line 7
     iget-object p1, p0, Lcom/applovin/impl/t8$b;->a:Lcom/applovin/impl/z8;
 
-    .line 7
     iget-wide v0, p1, Lcom/applovin/impl/z8;->j:J
 
     return-wide v0
 
+    .line 8
     :cond_1
     iget-object p1, p0, Lcom/applovin/impl/t8$b;->c:Lcom/applovin/impl/v8$a;
 
-    .line 8
     iget-wide v0, p1, Lcom/applovin/impl/v8$a;->a:J
 
     return-wide v0
@@ -163,9 +165,9 @@
 
     move-result-wide v4
 
+    .line 12
     iget-object v6, p0, Lcom/applovin/impl/t8$b;->a:Lcom/applovin/impl/z8;
 
-    .line 12
     iget v6, v6, Lcom/applovin/impl/z8;->c:I
 
     const/4 v7, 0x6
@@ -228,7 +230,7 @@
     .locals 0
 
     .line 1
-    invoke-static {p0}, Lcom/applovin/impl/fu;->a(Lcom/applovin/impl/i2$f;)V
+    invoke-static {p0}, Lcom/applovin/impl/Y0;->a(Lcom/applovin/impl/i2$f;)V
 
     return-void
 .end method

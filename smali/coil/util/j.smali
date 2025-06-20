@@ -4,8 +4,8 @@
 
 
 # virtual methods
-.method public abstract a()Z
+.method public abstract a(LI2/e;)Z
 .end method
 
-.method public abstract b(Lo5/e;)Z
+.method public abstract b()Z
 .end method

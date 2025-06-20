@@ -1,564 +1,583 @@
-.class public abstract Lt/a;
+.class public final LT/a;
 .super Ljava/lang/Object;
 .source "SourceFile"
 
+# interfaces
+.implements Landroidx/camera/core/impl/M;
 
-# static fields
-.field public static final a:Ljava/util/HashMap;
 
-.field public static final b:Ljava/util/HashMap;
+# instance fields
+.field public final a:I
+
+.field public final b:I
+
+.field public final c:Ljava/util/List;
+
+.field public final d:Ljava/util/List;
+
+.field public final e:Landroidx/camera/core/impl/d;
+
+.field public final f:Landroidx/camera/core/impl/f;
 
 
 # direct methods
-.method static constructor <clinit>()V
-    .locals 10
+.method public constructor <init>(IILjava/util/List;Ljava/util/List;Landroidx/camera/core/impl/d;Landroidx/camera/core/impl/f;)V
+    .locals 0
 
     .line 1
-    new-instance v0, Ljava/util/HashMap;
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 2
     .line 3
-    invoke-direct {v0}, Ljava/util/HashMap;-><init>()V
-
     .line 4
+    iput p1, p0, LT/a;->a:I
+
     .line 5
     .line 6
-    sput-object v0, Lt/a;->a:Ljava/util/HashMap;
+    iput p2, p0, LT/a;->b:I
 
     .line 7
     .line 8
-    new-instance v1, Ljava/util/HashMap;
+    if-eqz p3, :cond_2
 
     .line 9
     .line 10
-    invoke-direct {v1}, Ljava/util/HashMap;-><init>()V
+    iput-object p3, p0, LT/a;->c:Ljava/util/List;
 
     .line 11
     .line 12
+    if-eqz p4, :cond_1
+
     .line 13
-    sput-object v1, Lt/a;->b:Ljava/util/HashMap;
-
     .line 14
+    iput-object p4, p0, LT/a;->d:Ljava/util/List;
+
     .line 15
-    const-wide/16 v2, 0x1
-
     .line 16
-    .line 17
-    invoke-static {v2, v3}, Ljava/lang/Long;->valueOf(J)Ljava/lang/Long;
+    iput-object p5, p0, LT/a;->e:Landroidx/camera/core/impl/d;
 
+    .line 17
     .line 18
+    if-eqz p6, :cond_0
+
     .line 19
     .line 20
-    move-result-object v2
+    iput-object p6, p0, LT/a;->f:Landroidx/camera/core/impl/f;
 
     .line 21
-    sget-object v3, Ly/x;->d:Ly/x;
-
     .line 22
+    return-void
+
     .line 23
-    invoke-virtual {v0, v2, v3}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    :cond_0
+    new-instance p1, Ljava/lang/NullPointerException;
 
     .line 24
     .line 25
-    .line 26
-    invoke-static {v2}, Ljava/util/Collections;->singletonList(Ljava/lang/Object;)Ljava/util/List;
+    const-string p2, "Null defaultVideoProfile"
 
+    .line 26
     .line 27
+    invoke-direct {p1, p2}, Ljava/lang/NullPointerException;-><init>(Ljava/lang/String;)V
+
     .line 28
     .line 29
-    move-result-object v2
-
     .line 30
-    invoke-virtual {v1, v3, v2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    throw p1
 
     .line 31
+    :cond_1
+    new-instance p1, Ljava/lang/NullPointerException;
+
     .line 32
     .line 33
-    const-wide/16 v2, 0x2
+    const-string p2, "Null videoProfiles"
 
     .line 34
     .line 35
-    invoke-static {v2, v3}, Ljava/lang/Long;->valueOf(J)Ljava/lang/Long;
+    invoke-direct {p1, p2}, Ljava/lang/NullPointerException;-><init>(Ljava/lang/String;)V
 
     .line 36
     .line 37
     .line 38
-    move-result-object v2
+    throw p1
 
     .line 39
-    sget-object v3, Ly/x;->e:Ly/x;
+    :cond_2
+    new-instance p1, Ljava/lang/NullPointerException;
 
     .line 40
     .line 41
-    invoke-virtual {v0, v2, v3}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    const-string p2, "Null audioProfiles"
 
     .line 42
     .line 43
+    invoke-direct {p1, p2}, Ljava/lang/NullPointerException;-><init>(Ljava/lang/String;)V
+
     .line 44
-    invoke-virtual {v0, v2}, Ljava/util/HashMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
+    .line 45
+    .line 46
+    throw p1
+.end method
+
+
+# virtual methods
+.method public final a()I
+    .locals 1
+
+    .line 1
+    iget v0, p0, LT/a;->a:I
+
+    .line 2
+    .line 3
+    return v0
+.end method
+
+.method public final b()I
+    .locals 1
+
+    .line 1
+    iget v0, p0, LT/a;->b:I
+
+    .line 2
+    .line 3
+    return v0
+.end method
+
+.method public final c()Ljava/util/List;
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, LT/a;->c:Ljava/util/List;
+
+    .line 2
+    .line 3
+    return-object v0
+.end method
+
+.method public final d()Ljava/util/List;
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, LT/a;->d:Ljava/util/List;
+
+    .line 2
+    .line 3
+    return-object v0
+.end method
+
+.method public final equals(Ljava/lang/Object;)Z
+    .locals 4
+
+    .line 1
+    const/4 v0, 0x1
+
+    .line 2
+    if-ne p1, p0, :cond_0
+
+    .line 3
+    .line 4
+    return v0
+
+    .line 5
+    :cond_0
+    instance-of v1, p1, LT/a;
+
+    .line 6
+    .line 7
+    const/4 v2, 0x0
+
+    .line 8
+    if-eqz v1, :cond_3
+
+    .line 9
+    .line 10
+    check-cast p1, LT/a;
+
+    .line 11
+    .line 12
+    iget v1, p1, LT/a;->a:I
+
+    .line 13
+    .line 14
+    iget v3, p0, LT/a;->a:I
+
+    .line 15
+    .line 16
+    if-ne v3, v1, :cond_2
+
+    .line 17
+    .line 18
+    iget v1, p0, LT/a;->b:I
+
+    .line 19
+    .line 20
+    iget v3, p1, LT/a;->b:I
+
+    .line 21
+    .line 22
+    if-ne v1, v3, :cond_2
+
+    .line 23
+    .line 24
+    iget-object v1, p0, LT/a;->c:Ljava/util/List;
+
+    .line 25
+    .line 26
+    iget-object v3, p1, LT/a;->c:Ljava/util/List;
+
+    .line 27
+    .line 28
+    invoke-interface {v1, v3}, Ljava/util/List;->equals(Ljava/lang/Object;)Z
+
+    .line 29
+    .line 30
+    .line 31
+    move-result v1
+
+    .line 32
+    if-eqz v1, :cond_2
+
+    .line 33
+    .line 34
+    iget-object v1, p0, LT/a;->d:Ljava/util/List;
+
+    .line 35
+    .line 36
+    iget-object v3, p1, LT/a;->d:Ljava/util/List;
+
+    .line 37
+    .line 38
+    invoke-interface {v1, v3}, Ljava/util/List;->equals(Ljava/lang/Object;)Z
+
+    .line 39
+    .line 40
+    .line 41
+    move-result v1
+
+    .line 42
+    if-eqz v1, :cond_2
+
+    .line 43
+    .line 44
+    iget-object v1, p1, LT/a;->e:Landroidx/camera/core/impl/d;
 
     .line 45
     .line 46
-    .line 47
-    move-result-object v3
+    iget-object v3, p0, LT/a;->e:Landroidx/camera/core/impl/d;
 
+    .line 47
     .line 48
-    check-cast v3, Ly/x;
+    if-nez v3, :cond_1
 
     .line 49
     .line 50
-    invoke-static {v2}, Ljava/util/Collections;->singletonList(Ljava/lang/Object;)Ljava/util/List;
+    if-nez v1, :cond_2
+
+    .line 51
+    .line 52
+    goto :goto_0
+
+    .line 53
+    :cond_1
+    invoke-virtual {v3, v1}, Landroidx/camera/core/impl/d;->equals(Ljava/lang/Object;)Z
+
+    .line 54
+    .line 55
+    .line 56
+    move-result v1
+
+    .line 57
+    if-eqz v1, :cond_2
+
+    .line 58
+    .line 59
+    :goto_0
+    iget-object v1, p0, LT/a;->f:Landroidx/camera/core/impl/f;
+
+    .line 60
+    .line 61
+    iget-object p1, p1, LT/a;->f:Landroidx/camera/core/impl/f;
+
+    .line 62
+    .line 63
+    invoke-virtual {v1, p1}, Landroidx/camera/core/impl/f;->equals(Ljava/lang/Object;)Z
+
+    .line 64
+    .line 65
+    .line 66
+    move-result p1
+
+    .line 67
+    if-eqz p1, :cond_2
+
+    .line 68
+    .line 69
+    goto :goto_1
+
+    .line 70
+    :cond_2
+    const/4 v0, 0x0
+
+    .line 71
+    :goto_1
+    return v0
+
+    .line 72
+    :cond_3
+    return v2
+.end method
+
+.method public final hashCode()I
+    .locals 3
+
+    .line 1
+    iget v0, p0, LT/a;->a:I
+
+    .line 2
+    .line 3
+    const v1, 0xf4243
+
+    .line 4
+    .line 5
+    .line 6
+    xor-int/2addr v0, v1
+
+    .line 7
+    mul-int v0, v0, v1
+
+    .line 8
+    .line 9
+    iget v2, p0, LT/a;->b:I
+
+    .line 10
+    .line 11
+    xor-int/2addr v0, v2
+
+    .line 12
+    mul-int v0, v0, v1
+
+    .line 13
+    .line 14
+    iget-object v2, p0, LT/a;->c:Ljava/util/List;
+
+    .line 15
+    .line 16
+    invoke-interface {v2}, Ljava/util/List;->hashCode()I
+
+    .line 17
+    .line 18
+    .line 19
+    move-result v2
+
+    .line 20
+    xor-int/2addr v0, v2
+
+    .line 21
+    mul-int v0, v0, v1
+
+    .line 22
+    .line 23
+    iget-object v2, p0, LT/a;->d:Ljava/util/List;
+
+    .line 24
+    .line 25
+    invoke-interface {v2}, Ljava/util/List;->hashCode()I
+
+    .line 26
+    .line 27
+    .line 28
+    move-result v2
+
+    .line 29
+    xor-int/2addr v0, v2
+
+    .line 30
+    mul-int v0, v0, v1
+
+    .line 31
+    .line 32
+    iget-object v2, p0, LT/a;->e:Landroidx/camera/core/impl/d;
+
+    .line 33
+    .line 34
+    if-nez v2, :cond_0
+
+    .line 35
+    .line 36
+    const/4 v2, 0x0
+
+    .line 37
+    goto :goto_0
+
+    .line 38
+    :cond_0
+    invoke-virtual {v2}, Landroidx/camera/core/impl/d;->hashCode()I
+
+    .line 39
+    .line 40
+    .line 41
+    move-result v2
+
+    .line 42
+    :goto_0
+    xor-int/2addr v0, v2
+
+    .line 43
+    mul-int v0, v0, v1
+
+    .line 44
+    .line 45
+    iget-object v1, p0, LT/a;->f:Landroidx/camera/core/impl/f;
+
+    .line 46
+    .line 47
+    invoke-virtual {v1}, Landroidx/camera/core/impl/f;->hashCode()I
+
+    .line 48
+    .line 49
+    .line 50
+    move-result v1
+
+    .line 51
+    xor-int/2addr v0, v1
+
+    .line 52
+    return v0
+.end method
+
+.method public final toString()Ljava/lang/String;
+    .locals 2
+
+    .line 1
+    new-instance v0, Ljava/lang/StringBuilder;
+
+    .line 2
+    .line 3
+    const-string v1, "VideoValidatedEncoderProfilesProxy{defaultDurationSeconds="
+
+    .line 4
+    .line 5
+    invoke-direct {v0, v1}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+
+    .line 6
+    .line 7
+    .line 8
+    iget v1, p0, LT/a;->a:I
+
+    .line 9
+    .line 10
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+
+    .line 11
+    .line 12
+    .line 13
+    const-string v1, ", recommendedFileFormat="
+
+    .line 14
+    .line 15
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 16
+    .line 17
+    .line 18
+    iget v1, p0, LT/a;->b:I
+
+    .line 19
+    .line 20
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+
+    .line 21
+    .line 22
+    .line 23
+    const-string v1, ", audioProfiles="
+
+    .line 24
+    .line 25
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 26
+    .line 27
+    .line 28
+    iget-object v1, p0, LT/a;->c:Ljava/util/List;
+
+    .line 29
+    .line 30
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+
+    .line 31
+    .line 32
+    .line 33
+    const-string v1, ", videoProfiles="
+
+    .line 34
+    .line 35
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 36
+    .line 37
+    .line 38
+    iget-object v1, p0, LT/a;->d:Ljava/util/List;
+
+    .line 39
+    .line 40
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+
+    .line 41
+    .line 42
+    .line 43
+    const-string v1, ", defaultAudioProfile="
+
+    .line 44
+    .line 45
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 46
+    .line 47
+    .line 48
+    iget-object v1, p0, LT/a;->e:Landroidx/camera/core/impl/d;
+
+    .line 49
+    .line 50
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 
     .line 51
     .line 52
     .line 53
-    move-result-object v2
+    const-string v1, ", defaultVideoProfile="
 
     .line 54
-    invoke-virtual {v1, v3, v2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
-
     .line 55
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
     .line 56
     .line 57
-    const-wide/16 v2, 0x4
-
     .line 58
-    .line 59
-    invoke-static {v2, v3}, Ljava/lang/Long;->valueOf(J)Ljava/lang/Long;
+    iget-object v1, p0, LT/a;->f:Landroidx/camera/core/impl/f;
 
+    .line 59
     .line 60
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+
     .line 61
     .line 62
-    move-result-object v2
-
     .line 63
-    sget-object v3, Ly/x;->f:Ly/x;
+    const-string v1, "}"
 
     .line 64
     .line 65
-    invoke-virtual {v0, v2, v3}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     .line 66
     .line 67
     .line 68
-    invoke-static {v2}, Ljava/util/Collections;->singletonList(Ljava/lang/Object;)Ljava/util/List;
+    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
     .line 69
     .line 70
     .line 71
-    move-result-object v2
+    move-result-object v0
 
     .line 72
-    invoke-virtual {v1, v3, v2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
-
-    .line 73
-    .line 74
-    .line 75
-    const-wide/16 v2, 0x8
-
-    .line 76
-    .line 77
-    invoke-static {v2, v3}, Ljava/lang/Long;->valueOf(J)Ljava/lang/Long;
-
-    .line 78
-    .line 79
-    .line 80
-    move-result-object v2
-
-    .line 81
-    sget-object v3, Ly/x;->g:Ly/x;
-
-    .line 82
-    .line 83
-    invoke-virtual {v0, v2, v3}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
-
-    .line 84
-    .line 85
-    .line 86
-    invoke-static {v2}, Ljava/util/Collections;->singletonList(Ljava/lang/Object;)Ljava/util/List;
-
-    .line 87
-    .line 88
-    .line 89
-    move-result-object v0
-
-    .line 90
-    invoke-virtual {v1, v3, v0}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
-
-    .line 91
-    .line 92
-    .line 93
-    const/4 v0, 0x4
-
-    .line 94
-    new-array v1, v0, [Ljava/lang/Long;
-
-    .line 95
-    .line 96
-    const-wide/16 v2, 0x40
-
-    .line 97
-    .line 98
-    invoke-static {v2, v3}, Ljava/lang/Long;->valueOf(J)Ljava/lang/Long;
-
-    .line 99
-    .line 100
-    .line 101
-    move-result-object v2
-
-    .line 102
-    const/4 v3, 0x0
-
-    .line 103
-    aput-object v2, v1, v3
-
-    .line 104
-    .line 105
-    const-wide/16 v4, 0x80
-
-    .line 106
-    .line 107
-    invoke-static {v4, v5}, Ljava/lang/Long;->valueOf(J)Ljava/lang/Long;
-
-    .line 108
-    .line 109
-    .line 110
-    move-result-object v2
-
-    .line 111
-    const/4 v4, 0x1
-
-    .line 112
-    aput-object v2, v1, v4
-
-    .line 113
-    .line 114
-    const-wide/16 v5, 0x10
-
-    .line 115
-    .line 116
-    invoke-static {v5, v6}, Ljava/lang/Long;->valueOf(J)Ljava/lang/Long;
-
-    .line 117
-    .line 118
-    .line 119
-    move-result-object v2
-
-    .line 120
-    const/4 v5, 0x2
-
-    .line 121
-    aput-object v2, v1, v5
-
-    .line 122
-    .line 123
-    const-wide/16 v6, 0x20
-
-    .line 124
-    .line 125
-    invoke-static {v6, v7}, Ljava/lang/Long;->valueOf(J)Ljava/lang/Long;
-
-    .line 126
-    .line 127
-    .line 128
-    move-result-object v2
-
-    .line 129
-    const/4 v6, 0x3
-
-    .line 130
-    aput-object v2, v1, v6
-
-    .line 131
-    .line 132
-    invoke-static {v1}, Ljava/util/Arrays;->asList([Ljava/lang/Object;)Ljava/util/List;
-
-    .line 133
-    .line 134
-    .line 135
-    move-result-object v1
-
-    .line 136
-    invoke-interface {v1}, Ljava/util/List;->iterator()Ljava/util/Iterator;
-
-    .line 137
-    .line 138
-    .line 139
-    move-result-object v2
-
-    .line 140
-    :goto_0
-    invoke-interface {v2}, Ljava/util/Iterator;->hasNext()Z
-
-    .line 141
-    .line 142
-    .line 143
-    move-result v7
-
-    .line 144
-    sget-object v8, Ly/x;->h:Ly/x;
-
-    .line 145
-    .line 146
-    if-eqz v7, :cond_0
-
-    .line 147
-    .line 148
-    invoke-interface {v2}, Ljava/util/Iterator;->next()Ljava/lang/Object;
-
-    .line 149
-    .line 150
-    .line 151
-    move-result-object v7
-
-    .line 152
-    check-cast v7, Ljava/lang/Long;
-
-    .line 153
-    .line 154
-    sget-object v9, Lt/a;->a:Ljava/util/HashMap;
-
-    .line 155
-    .line 156
-    invoke-virtual {v9, v7, v8}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
-
-    .line 157
-    .line 158
-    .line 159
-    goto :goto_0
-
-    .line 160
-    :cond_0
-    sget-object v2, Lt/a;->b:Ljava/util/HashMap;
-
-    .line 161
-    .line 162
-    invoke-virtual {v2, v8, v1}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
-
-    .line 163
-    .line 164
-    .line 165
-    new-array v0, v0, [Ljava/lang/Long;
-
-    .line 166
-    .line 167
-    const-wide/16 v1, 0x400
-
-    .line 168
-    .line 169
-    invoke-static {v1, v2}, Ljava/lang/Long;->valueOf(J)Ljava/lang/Long;
-
-    .line 170
-    .line 171
-    .line 172
-    move-result-object v1
-
-    .line 173
-    aput-object v1, v0, v3
-
-    .line 174
-    .line 175
-    const-wide/16 v1, 0x800
-
-    .line 176
-    .line 177
-    invoke-static {v1, v2}, Ljava/lang/Long;->valueOf(J)Ljava/lang/Long;
-
-    .line 178
-    .line 179
-    .line 180
-    move-result-object v1
-
-    .line 181
-    aput-object v1, v0, v4
-
-    .line 182
-    .line 183
-    const-wide/16 v1, 0x100
-
-    .line 184
-    .line 185
-    invoke-static {v1, v2}, Ljava/lang/Long;->valueOf(J)Ljava/lang/Long;
-
-    .line 186
-    .line 187
-    .line 188
-    move-result-object v1
-
-    .line 189
-    aput-object v1, v0, v5
-
-    .line 190
-    .line 191
-    const-wide/16 v1, 0x200
-
-    .line 192
-    .line 193
-    invoke-static {v1, v2}, Ljava/lang/Long;->valueOf(J)Ljava/lang/Long;
-
-    .line 194
-    .line 195
-    .line 196
-    move-result-object v1
-
-    .line 197
-    aput-object v1, v0, v6
-
-    .line 198
-    .line 199
-    invoke-static {v0}, Ljava/util/Arrays;->asList([Ljava/lang/Object;)Ljava/util/List;
-
-    .line 200
-    .line 201
-    .line 202
-    move-result-object v0
-
-    .line 203
-    invoke-interface {v0}, Ljava/util/List;->iterator()Ljava/util/Iterator;
-
-    .line 204
-    .line 205
-    .line 206
-    move-result-object v1
-
-    .line 207
-    :goto_1
-    invoke-interface {v1}, Ljava/util/Iterator;->hasNext()Z
-
-    .line 208
-    .line 209
-    .line 210
-    move-result v2
-
-    .line 211
-    sget-object v3, Ly/x;->i:Ly/x;
-
-    .line 212
-    .line 213
-    if-eqz v2, :cond_1
-
-    .line 214
-    .line 215
-    invoke-interface {v1}, Ljava/util/Iterator;->next()Ljava/lang/Object;
-
-    .line 216
-    .line 217
-    .line 218
-    move-result-object v2
-
-    .line 219
-    check-cast v2, Ljava/lang/Long;
-
-    .line 220
-    .line 221
-    sget-object v4, Lt/a;->a:Ljava/util/HashMap;
-
-    .line 222
-    .line 223
-    invoke-virtual {v4, v2, v3}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
-
-    .line 224
-    .line 225
-    .line 226
-    goto :goto_1
-
-    .line 227
-    :cond_1
-    sget-object v1, Lt/a;->b:Ljava/util/HashMap;
-
-    .line 228
-    .line 229
-    invoke-virtual {v1, v3, v0}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
-
-    .line 230
-    .line 231
-    .line 232
-    return-void
-.end method
-
-.method public static a(Ly/x;Landroid/hardware/camera2/params/DynamicRangeProfiles;)Ljava/lang/Long;
-    .locals 2
-
-    .line 1
-    sget-object v0, Lt/a;->b:Ljava/util/HashMap;
-
-    .line 2
-    .line 3
-    invoke-virtual {v0, p0}, Ljava/util/HashMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
-
-    .line 4
-    .line 5
-    .line 6
-    move-result-object p0
-
-    .line 7
-    check-cast p0, Ljava/util/List;
-
-    .line 8
-    .line 9
-    if-eqz p0, :cond_1
-
-    .line 10
-    .line 11
-    invoke-static {p1}, Landroidx/activity/t;->s(Landroid/hardware/camera2/params/DynamicRangeProfiles;)Ljava/util/Set;
-
-    .line 12
-    .line 13
-    .line 14
-    move-result-object p1
-
-    .line 15
-    invoke-interface {p0}, Ljava/util/List;->iterator()Ljava/util/Iterator;
-
-    .line 16
-    .line 17
-    .line 18
-    move-result-object p0
-
-    .line 19
-    :cond_0
-    invoke-interface {p0}, Ljava/util/Iterator;->hasNext()Z
-
-    .line 20
-    .line 21
-    .line 22
-    move-result v0
-
-    .line 23
-    if-eqz v0, :cond_1
-
-    .line 24
-    .line 25
-    invoke-interface {p0}, Ljava/util/Iterator;->next()Ljava/lang/Object;
-
-    .line 26
-    .line 27
-    .line 28
-    move-result-object v0
-
-    .line 29
-    check-cast v0, Ljava/lang/Long;
-
-    .line 30
-    .line 31
-    invoke-interface {p1, v0}, Ljava/util/Set;->contains(Ljava/lang/Object;)Z
-
-    .line 32
-    .line 33
-    .line 34
-    move-result v1
-
-    .line 35
-    if-eqz v1, :cond_0
-
-    .line 36
-    .line 37
     return-object v0
-
-    .line 38
-    :cond_1
-    const/4 p0, 0x0
-
-    .line 39
-    return-object p0
 .end method

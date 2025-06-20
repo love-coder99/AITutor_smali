@@ -15,6 +15,9 @@
 .field private mAttached:Z
 
 .field private mParent:Landroid/view/ViewGroup;
+    .annotation build Landroidx/annotation/NonNull;
+    .end annotation
+.end field
 
 
 # direct methods
@@ -85,6 +88,10 @@
 
 .method public static getHolder(Landroid/view/ViewGroup;)Landroidx/transition/GhostViewHolder;
     .locals 1
+    .param p0    # Landroid/view/ViewGroup;
+        .annotation build Landroidx/annotation/NonNull;
+        .end annotation
+    .end param
 
     .line 1
     sget v0, Landroidx/transition/R$id;->ghost_view_holder:I

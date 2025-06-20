@@ -4,6 +4,15 @@
 
 
 # annotations
+.annotation runtime Lca/c;
+    c = "coil.intercept.EngineInterceptor"
+    f = "EngineInterceptor.kt"
+    l = {
+        0xcb
+    }
+    m = "decode"
+.end annotation
+
 .annotation runtime Lkotlin/Metadata;
     k = 0x3
     mv = {
@@ -12,15 +21,6 @@
         0x0
     }
     xi = 0x30
-.end annotation
-
-.annotation runtime Lth/c;
-    c = "coil.intercept.EngineInterceptor"
-    f = "EngineInterceptor.kt"
-    l = {
-        0xcb
-    }
-    m = "decode"
 .end annotation
 
 
@@ -88,13 +88,13 @@
 
     iget-object v0, p0, Lcoil/intercept/EngineInterceptor$decode$1;->this$0:Lcoil/intercept/b;
 
-    const/4 v1, 0x0
-
-    const/4 v2, 0x0
-
     const/4 v3, 0x0
 
     const/4 v4, 0x0
+
+    const/4 v1, 0x0
+
+    const/4 v2, 0x0
 
     const/4 v5, 0x0
 
@@ -102,7 +102,7 @@
 
     move-object v7, p0
 
-    invoke-static/range {v0 .. v7}, Lcoil/intercept/b;->a(Lcoil/intercept/b;Lcoil/fetch/l;Lcoil/c;Ln5/i;Ljava/lang/Object;Ln5/l;Lcoil/e;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
+    invoke-static/range {v0 .. v7}, Lcoil/intercept/b;->a(Lcoil/intercept/b;Lcoil/fetch/k;Lcoil/b;LH2/h;Ljava/lang/Object;LH2/k;Lcoil/d;Lkotlin/coroutines/jvm/internal/ContinuationImpl;)Ljava/lang/Object;
 
     move-result-object p1
 

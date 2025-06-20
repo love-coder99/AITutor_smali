@@ -9,6 +9,9 @@
 .field private final zzb:Ljava/lang/String;
 
 .field private final zzc:Ljava/lang/String;
+    .annotation build Landroidx/annotation/Nullable;
+    .end annotation
+.end field
 
 
 # direct methods
@@ -95,6 +98,10 @@
 # virtual methods
 .method public final equals(Ljava/lang/Object;)Z
     .locals 4
+    .param p1    # Ljava/lang/Object;
+        .annotation build Landroidx/annotation/Nullable;
+        .end annotation
+    .end param
 
     .line 1
     const/4 v0, 0x1
@@ -195,50 +202,50 @@
 .end method
 
 .method public final hashCode()I
-    .locals 3
+    .locals 5
 
     .line 1
     iget-object v0, p0, Lcom/android/billingclient/api/zzc;->zza:Ljava/lang/String;
 
     .line 2
     .line 3
-    const/4 v1, 0x3
+    iget-object v1, p0, Lcom/android/billingclient/api/zzc;->zzb:Ljava/lang/String;
 
     .line 4
-    new-array v1, v1, [Ljava/lang/Object;
-
     .line 5
-    .line 6
-    const/4 v2, 0x0
-
-    .line 7
-    aput-object v0, v1, v2
-
-    .line 8
-    .line 9
-    const/4 v0, 0x1
-
-    .line 10
-    iget-object v2, p0, Lcom/android/billingclient/api/zzc;->zzb:Ljava/lang/String;
-
-    .line 11
-    .line 12
-    aput-object v2, v1, v0
-
-    .line 13
-    .line 14
-    const/4 v0, 0x2
-
-    .line 15
     iget-object v2, p0, Lcom/android/billingclient/api/zzc;->zzc:Ljava/lang/String;
 
+    .line 6
+    .line 7
+    const/4 v3, 0x3
+
+    .line 8
+    new-array v3, v3, [Ljava/lang/Object;
+
+    .line 9
+    .line 10
+    const/4 v4, 0x0
+
+    .line 11
+    aput-object v0, v3, v4
+
+    .line 12
+    .line 13
+    const/4 v0, 0x1
+
+    .line 14
+    aput-object v1, v3, v0
+
+    .line 15
     .line 16
+    const/4 v0, 0x2
+
     .line 17
-    aput-object v2, v1, v0
+    aput-object v2, v3, v0
 
     .line 18
     .line 19
-    invoke-static {v1}, Ljava/util/Objects;->hash([Ljava/lang/Object;)I
+    invoke-static {v3}, Ljava/util/Objects;->hash([Ljava/lang/Object;)I
 
     .line 20
     .line 21
@@ -250,60 +257,52 @@
 .end method
 
 .method public final toString()Ljava/lang/String;
-    .locals 3
+    .locals 6
 
     .line 1
     iget-object v0, p0, Lcom/android/billingclient/api/zzc;->zza:Ljava/lang/String;
 
     .line 2
     .line 3
-    const/4 v1, 0x3
+    iget-object v1, p0, Lcom/android/billingclient/api/zzc;->zzb:Ljava/lang/String;
 
     .line 4
-    new-array v1, v1, [Ljava/lang/Object;
-
     .line 5
-    .line 6
-    const/4 v2, 0x0
+    iget-object v2, p0, Lcom/android/billingclient/api/zzc;->zzc:Ljava/lang/String;
 
+    .line 6
     .line 7
-    aput-object v0, v1, v2
+    const-string v3, "{id: "
 
     .line 8
     .line 9
-    const/4 v0, 0x1
+    const-string v4, ", type: "
 
     .line 10
-    iget-object v2, p0, Lcom/android/billingclient/api/zzc;->zzb:Ljava/lang/String;
-
     .line 11
+    const-string v5, ", offer token: "
+
     .line 12
-    aput-object v2, v1, v0
-
     .line 13
+    invoke-static {v3, v0, v4, v1, v5}, LB/u;->B(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/StringBuilder;
+
     .line 14
-    const/4 v0, 0x2
-
     .line 15
-    iget-object v2, p0, Lcom/android/billingclient/api/zzc;->zzc:Ljava/lang/String;
-
     .line 16
+    move-result-object v0
+
     .line 17
-    aput-object v2, v1, v0
+    const-string v1, "}"
 
     .line 18
     .line 19
-    const-string v0, "{id: %s, type: %s, offer token: %s}"
+    invoke-static {v0, v2, v1}, LB/u;->w(Ljava/lang/StringBuilder;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     .line 20
     .line 21
-    invoke-static {v0, v1}, Ljava/lang/String;->format(Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;
-
     .line 22
-    .line 23
-    .line 24
     move-result-object v0
 
-    .line 25
+    .line 23
     return-object v0
 .end method

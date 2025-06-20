@@ -4,7 +4,7 @@
 
 
 # instance fields
-.field public final a:Landroidx/compose/runtime/snapshots/p;
+.field public final a:Landroidx/compose/runtime/snapshots/n;
 
 
 # direct methods
@@ -17,41 +17,41 @@
     .line 2
     .line 3
     .line 4
-    new-instance v0, Landroidx/compose/runtime/snapshots/p;
+    new-instance v0, Landroidx/compose/runtime/snapshots/n;
 
     .line 5
     .line 6
-    invoke-direct {v0}, Landroidx/compose/runtime/snapshots/p;-><init>()V
+    invoke-direct {v0}, Landroidx/compose/runtime/snapshots/n;-><init>()V
 
     .line 7
     .line 8
     .line 9
-    iput-object v0, p0, Landroidx/compose/foundation/contextmenu/e;->a:Landroidx/compose/runtime/snapshots/p;
+    iput-object v0, p0, Landroidx/compose/foundation/contextmenu/e;->a:Landroidx/compose/runtime/snapshots/n;
 
     .line 10
     .line 11
     return-void
 .end method
 
-.method public static b(Landroidx/compose/foundation/contextmenu/e;Landroidx/compose/foundation/text/ContextMenu_androidKt$TextItem$1;ZLzh/a;)V
+.method public static b(Landroidx/compose/foundation/contextmenu/e;Landroidx/compose/foundation/text/ContextMenu_androidKt$TextItem$1;ZLka/a;)V
     .locals 7
 
     .line 1
-    sget-object v3, Landroidx/compose/ui/l;->c:Landroidx/compose/ui/l;
+    sget-object v3, Landroidx/compose/ui/l;->a:Landroidx/compose/ui/l;
 
     .line 2
     .line 3
-    const/4 v4, 0x0
-
-    .line 4
     invoke-virtual {p0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
+    .line 4
     .line 5
     .line 6
-    .line 7
     new-instance v6, Landroidx/compose/foundation/contextmenu/ContextMenuScope$item$1;
 
+    .line 7
     .line 8
+    const/4 v4, 0x0
+
     .line 9
     move-object v0, v6
 
@@ -65,51 +65,47 @@
     move-object v5, p3
 
     .line 13
-    invoke-direct/range {v0 .. v5}, Landroidx/compose/foundation/contextmenu/ContextMenuScope$item$1;-><init>(Lzh/e;ZLandroidx/compose/ui/o;Lzh/f;Lzh/a;)V
+    invoke-direct/range {v0 .. v5}, Landroidx/compose/foundation/contextmenu/ContextMenuScope$item$1;-><init>(Lka/e;ZLandroidx/compose/ui/o;Lka/f;Lka/a;)V
 
     .line 14
     .line 15
     .line 16
-    sget-object p1, Landroidx/compose/runtime/internal/c;->a:Ljava/lang/Object;
+    new-instance p1, Landroidx/compose/runtime/internal/a;
 
     .line 17
     .line 18
-    new-instance p1, Landroidx/compose/runtime/internal/b;
+    const p2, 0xf9f600c
 
     .line 19
     .line 20
-    const p2, 0xf9f600c
-
     .line 21
-    .line 22
-    .line 23
     const/4 p3, 0x1
 
-    .line 24
-    invoke-direct {p1, p2, v6, p3}, Landroidx/compose/runtime/internal/b;-><init>(ILkotlin/jvm/internal/Lambda;Z)V
+    .line 22
+    invoke-direct {p1, p2, v6, p3}, Landroidx/compose/runtime/internal/a;-><init>(ILjava/lang/Object;Z)V
 
+    .line 23
+    .line 24
     .line 25
+    iget-object p0, p0, Landroidx/compose/foundation/contextmenu/e;->a:Landroidx/compose/runtime/snapshots/n;
+
     .line 26
     .line 27
-    iget-object p0, p0, Landroidx/compose/foundation/contextmenu/e;->a:Landroidx/compose/runtime/snapshots/p;
+    invoke-virtual {p0, p1}, Landroidx/compose/runtime/snapshots/n;->add(Ljava/lang/Object;)Z
 
     .line 28
     .line 29
-    invoke-virtual {p0, p1}, Landroidx/compose/runtime/snapshots/p;->add(Ljava/lang/Object;)Z
-
     .line 30
-    .line 31
-    .line 32
     return-void
 .end method
 
 
 # virtual methods
-.method public final a(Landroidx/compose/foundation/contextmenu/b;Landroidx/compose/runtime/l;I)V
+.method public final a(Landroidx/compose/foundation/contextmenu/b;Landroidx/compose/runtime/j;I)V
     .locals 6
 
     .line 1
-    check-cast p2, Landroidx/compose/runtime/p;
+    check-cast p2, Landroidx/compose/runtime/n;
 
     .line 2
     .line 3
@@ -118,7 +114,7 @@
     .line 4
     .line 5
     .line 6
-    invoke-virtual {p2, v0}, Landroidx/compose/runtime/p;->V(I)Landroidx/compose/runtime/p;
+    invoke-virtual {p2, v0}, Landroidx/compose/runtime/n;->T(I)Landroidx/compose/runtime/n;
 
     .line 7
     .line 8
@@ -131,7 +127,7 @@
 
     .line 12
     .line 13
-    invoke-virtual {p2, p1}, Landroidx/compose/runtime/p;->g(Ljava/lang/Object;)Z
+    invoke-virtual {p2, p1}, Landroidx/compose/runtime/n;->f(Ljava/lang/Object;)Z
 
     .line 14
     .line 15
@@ -173,7 +169,7 @@
 
     .line 28
     .line 29
-    invoke-virtual {p2, p0}, Landroidx/compose/runtime/p;->g(Ljava/lang/Object;)Z
+    invoke-virtual {p2, p0}, Landroidx/compose/runtime/n;->f(Ljava/lang/Object;)Z
 
     .line 30
     .line 31
@@ -214,7 +210,7 @@
 
     .line 46
     .line 47
-    invoke-virtual {p2}, Landroidx/compose/runtime/p;->y()Z
+    invoke-virtual {p2}, Landroidx/compose/runtime/n;->x()Z
 
     .line 48
     .line 49
@@ -230,7 +226,7 @@
 
     .line 54
     :cond_4
-    invoke-virtual {p2}, Landroidx/compose/runtime/p;->N()V
+    invoke-virtual {p2}, Landroidx/compose/runtime/n;->L()V
 
     .line 55
     .line 56
@@ -240,11 +236,11 @@
     .line 58
     :cond_5
     :goto_3
-    iget-object v1, p0, Landroidx/compose/foundation/contextmenu/e;->a:Landroidx/compose/runtime/snapshots/p;
+    iget-object v1, p0, Landroidx/compose/foundation/contextmenu/e;->a:Landroidx/compose/runtime/snapshots/n;
 
     .line 59
     .line 60
-    invoke-virtual {v1}, Landroidx/compose/runtime/snapshots/p;->size()I
+    invoke-virtual {v1}, Landroidx/compose/runtime/snapshots/n;->size()I
 
     .line 61
     .line 62
@@ -260,7 +256,7 @@
 
     .line 66
     .line 67
-    invoke-virtual {v1, v3}, Landroidx/compose/runtime/snapshots/p;->get(I)Ljava/lang/Object;
+    invoke-virtual {v1, v3}, Landroidx/compose/runtime/snapshots/n;->get(I)Ljava/lang/Object;
 
     .line 68
     .line 69
@@ -268,7 +264,7 @@
     move-result-object v4
 
     .line 71
-    check-cast v4, Lzh/f;
+    check-cast v4, Lka/f;
 
     .line 72
     .line 73
@@ -284,7 +280,7 @@
     move-result-object v5
 
     .line 79
-    invoke-interface {v4, p1, p2, v5}, Lzh/f;->invoke(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-interface {v4, p1, p2, v5}, Lka/f;->invoke(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 80
     .line 81
@@ -298,7 +294,7 @@
     .line 85
     :cond_6
     :goto_5
-    invoke-virtual {p2}, Landroidx/compose/runtime/p;->s()Landroidx/compose/runtime/x1;
+    invoke-virtual {p2}, Landroidx/compose/runtime/n;->r()Landroidx/compose/runtime/l0;
 
     .line 86
     .line 87
@@ -319,7 +315,7 @@
     .line 94
     .line 95
     .line 96
-    iput-object v0, p2, Landroidx/compose/runtime/x1;->d:Lzh/e;
+    iput-object v0, p2, Landroidx/compose/runtime/l0;->d:Lka/e;
 
     .line 97
     .line 98

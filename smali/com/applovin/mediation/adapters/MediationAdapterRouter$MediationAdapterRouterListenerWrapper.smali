@@ -64,39 +64,54 @@
 .method public getAdView()Landroid/view/View;
     .locals 1
 
+    .line 1
     iget-object v0, p0, Lcom/applovin/mediation/adapters/MediationAdapterRouter$MediationAdapterRouterListenerWrapper;->mAdView:Landroid/view/View;
 
+    .line 2
+    .line 3
     return-object v0
 .end method
 
 .method public getAdapter()Lcom/applovin/mediation/adapter/MaxAdapter;
     .locals 1
 
+    .line 1
     iget-object v0, p0, Lcom/applovin/mediation/adapters/MediationAdapterRouter$MediationAdapterRouterListenerWrapper;->mAdapter:Lcom/applovin/mediation/adapter/MaxAdapter;
 
+    .line 2
+    .line 3
     return-object v0
 .end method
 
 .method public getListener()Lcom/applovin/mediation/adapter/listeners/MaxAdapterListener;
     .locals 1
 
+    .line 1
     iget-object v0, p0, Lcom/applovin/mediation/adapters/MediationAdapterRouter$MediationAdapterRouterListenerWrapper;->mListener:Lcom/applovin/mediation/adapter/listeners/MaxAdapterListener;
 
+    .line 2
+    .line 3
     return-object v0
 .end method
 
 .method public getLoadType()Lcom/applovin/mediation/adapters/MediationAdapterRouter$RouterAdLoadType;
     .locals 1
 
+    .line 1
     iget-object v0, p0, Lcom/applovin/mediation/adapters/MediationAdapterRouter$MediationAdapterRouterListenerWrapper;->mLoadType:Lcom/applovin/mediation/adapters/MediationAdapterRouter$RouterAdLoadType;
 
+    .line 2
+    .line 3
     return-object v0
 .end method
 
 .method public setAdView(Landroid/view/View;)V
     .locals 0
 
+    .line 1
     iput-object p1, p0, Lcom/applovin/mediation/adapters/MediationAdapterRouter$MediationAdapterRouterListenerWrapper;->mAdView:Landroid/view/View;
 
+    .line 2
+    .line 3
     return-void
 .end method

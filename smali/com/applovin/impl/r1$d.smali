@@ -33,7 +33,7 @@
 
     .line 4
     .line 5
-    invoke-static {v0, p3, p4, v1}, Lj0/d;->r(Ljava/lang/String;JLjava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-static {v0, v1, p3, p4}, Landroidx/compose/runtime/a0;->u(Ljava/lang/String;Ljava/lang/String;J)Ljava/lang/StringBuilder;
 
     .line 6
     .line 7

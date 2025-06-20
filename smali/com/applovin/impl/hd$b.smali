@@ -25,9 +25,9 @@
 .method private constructor <init>(Lcom/applovin/impl/hd;)V
     .locals 0
 
+    .line 1
     iput-object p1, p0, Lcom/applovin/impl/hd$b;->a:Lcom/applovin/impl/hd;
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -47,18 +47,18 @@
 .method public a()V
     .locals 1
 
+    .line 3
     iget-object v0, p0, Lcom/applovin/impl/hd$b;->a:Lcom/applovin/impl/hd;
 
-    .line 3
     invoke-static {v0}, Lcom/applovin/impl/hd;->b(Lcom/applovin/impl/hd;)Lcom/applovin/impl/qi$a;
 
     move-result-object v0
 
     if-eqz v0, :cond_0
 
+    .line 4
     iget-object v0, p0, Lcom/applovin/impl/hd$b;->a:Lcom/applovin/impl/hd;
 
-    .line 4
     invoke-static {v0}, Lcom/applovin/impl/hd;->b(Lcom/applovin/impl/hd;)Lcom/applovin/impl/qi$a;
 
     move-result-object v0
@@ -72,9 +72,9 @@
 .method public a(IJJ)V
     .locals 7
 
+    .line 7
     iget-object v0, p0, Lcom/applovin/impl/hd$b;->a:Lcom/applovin/impl/hd;
 
-    .line 7
     invoke-static {v0}, Lcom/applovin/impl/hd;->a(Lcom/applovin/impl/hd;)Lcom/applovin/impl/q1$a;
 
     move-result-object v1
@@ -93,9 +93,9 @@
 .method public a(J)V
     .locals 1
 
+    .line 5
     iget-object v0, p0, Lcom/applovin/impl/hd$b;->a:Lcom/applovin/impl/hd;
 
-    .line 5
     invoke-static {v0}, Lcom/applovin/impl/hd;->a(Lcom/applovin/impl/hd;)Lcom/applovin/impl/q1$a;
 
     move-result-object v0
@@ -108,16 +108,16 @@
 .method public a(Ljava/lang/Exception;)V
     .locals 2
 
+    .line 1
     const-string v0, "MediaCodecAudioRenderer"
 
     const-string v1, "Audio sink error"
 
-    .line 1
     invoke-static {v0, v1, p1}, Lcom/applovin/impl/oc;->a(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)V
 
+    .line 2
     iget-object v0, p0, Lcom/applovin/impl/hd$b;->a:Lcom/applovin/impl/hd;
 
-    .line 2
     invoke-static {v0}, Lcom/applovin/impl/hd;->a(Lcom/applovin/impl/hd;)Lcom/applovin/impl/q1$a;
 
     move-result-object v0
@@ -130,9 +130,9 @@
 .method public a(Z)V
     .locals 1
 
+    .line 6
     iget-object v0, p0, Lcom/applovin/impl/hd$b;->a:Lcom/applovin/impl/hd;
 
-    .line 6
     invoke-static {v0}, Lcom/applovin/impl/hd;->a(Lcom/applovin/impl/hd;)Lcom/applovin/impl/q1$a;
 
     move-result-object v0
@@ -145,9 +145,9 @@
 .method public b()V
     .locals 1
 
+    .line 3
     iget-object v0, p0, Lcom/applovin/impl/hd$b;->a:Lcom/applovin/impl/hd;
 
-    .line 3
     invoke-virtual {v0}, Lcom/applovin/impl/hd;->d0()V
 
     return-void
@@ -156,18 +156,18 @@
 .method public b(J)V
     .locals 1
 
+    .line 1
     iget-object v0, p0, Lcom/applovin/impl/hd$b;->a:Lcom/applovin/impl/hd;
 
-    .line 1
     invoke-static {v0}, Lcom/applovin/impl/hd;->b(Lcom/applovin/impl/hd;)Lcom/applovin/impl/qi$a;
 
     move-result-object v0
 
     if-eqz v0, :cond_0
 
+    .line 2
     iget-object v0, p0, Lcom/applovin/impl/hd$b;->a:Lcom/applovin/impl/hd;
 
-    .line 2
     invoke-static {v0}, Lcom/applovin/impl/hd;->b(Lcom/applovin/impl/hd;)Lcom/applovin/impl/qi$a;
 
     move-result-object v0

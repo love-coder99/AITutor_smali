@@ -9,12 +9,11 @@
 # annotations
 .annotation runtime Lkotlin/Metadata;
     d1 = {
-        "\u0000\u000c\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0008\u0002\u0008\u0007\u0018\u00002\u00020\u0001:\u0001\u0002\u00a8\u0006\u0003"
+        "\u0000\n\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\u0008\u0007\u0018\u00002\u00020\u0001\u00a8\u0006\u0002"
     }
     d2 = {
         "Landroidx/activity/result/ActivityResult;",
         "Landroid/os/Parcelable;",
-        "zb/f",
         "activity_release"
     }
     k = 0x1
@@ -23,6 +22,7 @@
         0x8,
         0x0
     }
+    xi = 0x30
 .end annotation
 
 
@@ -49,15 +49,15 @@
     .locals 2
 
     .line 1
-    new-instance v0, Landroid/support/v4/media/a;
+    new-instance v0, Lcom/canhub/cropper/l;
 
     .line 2
     .line 3
-    const/16 v1, 0xa
+    const/16 v1, 0x19
 
     .line 4
     .line 5
-    invoke-direct {v0, v1}, Landroid/support/v4/media/a;-><init>(I)V
+    invoke-direct {v0, v1}, Lcom/canhub/cropper/l;-><init>(I)V
 
     .line 6
     .line 7

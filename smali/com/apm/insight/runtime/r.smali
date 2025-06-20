@@ -134,7 +134,7 @@
 .method public static synthetic a(Lcom/apm/insight/runtime/r;Landroid/os/Handler;)Landroid/os/Handler;
     .locals 0
 
-    .line 2
+    .line 1
     iput-object p1, p0, Lcom/apm/insight/runtime/r;->d:Landroid/os/Handler;
 
     return-object p1
@@ -143,7 +143,7 @@
 .method public static synthetic a(Lcom/apm/insight/runtime/r;)Ljava/lang/Object;
     .locals 0
 
-    .line 3
+    .line 2
     iget-object p0, p0, Lcom/apm/insight/runtime/r;->e:Ljava/lang/Object;
 
     return-object p0
@@ -187,9 +187,9 @@
 .method private b(Ljava/lang/Runnable;)Landroid/os/Message;
     .locals 1
 
+    .line 3
     iget-object v0, p0, Lcom/apm/insight/runtime/r;->d:Landroid/os/Handler;
 
-    .line 3
     invoke-static {v0, p1}, Landroid/os/Message;->obtain(Landroid/os/Handler;Ljava/lang/Runnable;)Landroid/os/Message;
 
     move-result-object p1
@@ -200,32 +200,34 @@
 .method private b(Landroid/os/Message;J)Z
     .locals 4
 
+    .line 4
     iget-object v0, p0, Lcom/apm/insight/runtime/r;->d:Landroid/os/Handler;
 
     const/4 v1, 0x1
 
     if-nez v0, :cond_1
 
+    .line 5
     iget-object v0, p0, Lcom/apm/insight/runtime/r;->e:Ljava/lang/Object;
 
-    .line 4
     monitor-enter v0
 
+    .line 6
     :try_start_0
     iget-object v2, p0, Lcom/apm/insight/runtime/r;->d:Landroid/os/Handler;
 
     if-nez v2, :cond_0
 
+    .line 7
     iget-object v2, p0, Lcom/apm/insight/runtime/r;->b:Ljava/util/Queue;
 
-    .line 5
     new-instance v3, Lcom/apm/insight/runtime/r$c;
 
     invoke-direct {v3, p1, p2, p3}, Lcom/apm/insight/runtime/r$c;-><init>(Landroid/os/Message;J)V
 
     invoke-interface {v2, v3}, Ljava/util/Queue;->add(Ljava/lang/Object;)Z
 
-    .line 6
+    .line 8
     monitor-exit v0
 
     return v1
@@ -235,7 +237,7 @@
 
     goto :goto_0
 
-    .line 7
+    .line 9
     :cond_0
     monitor-exit v0
 
@@ -248,12 +250,12 @@
 
     throw p1
 
+    .line 10
     :cond_1
     :goto_1
     :try_start_1
     iget-object v0, p0, Lcom/apm/insight/runtime/r;->d:Landroid/os/Handler;
 
-    .line 8
     invoke-virtual {v0, p1, p2, p3}, Landroid/os/Handler;->sendMessageAtTime(Landroid/os/Message;J)Z
 
     move-result p1
@@ -269,7 +271,7 @@
 .method public static synthetic c(Lcom/apm/insight/runtime/r;)Ljava/util/Queue;
     .locals 0
 
-    .line 2
+    .line 1
     iget-object p0, p0, Lcom/apm/insight/runtime/r;->b:Ljava/util/Queue;
 
     return-object p0
@@ -290,8 +292,10 @@
 # virtual methods
 .method public final a()Landroid/os/Handler;
     .locals 1
+    .annotation build Landroidx/annotation/Nullable;
+    .end annotation
 
-    .line 1
+    .line 3
     iget-object v0, p0, Lcom/apm/insight/runtime/r;->d:Landroid/os/Handler;
 
     return-object v0
@@ -332,9 +336,9 @@
 .method public final b()V
     .locals 1
 
+    .line 2
     iget-object v0, p0, Lcom/apm/insight/runtime/r;->a:Landroid/os/HandlerThread;
 
-    .line 2
     invoke-virtual {v0}, Ljava/lang/Thread;->start()V
 
     return-void
@@ -343,7 +347,7 @@
 .method public final c()Landroid/os/HandlerThread;
     .locals 1
 
-    .line 1
+    .line 2
     iget-object v0, p0, Lcom/apm/insight/runtime/r;->a:Landroid/os/HandlerThread;
 
     return-object v0

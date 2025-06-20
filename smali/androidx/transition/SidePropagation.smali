@@ -300,6 +300,22 @@
 # virtual methods
 .method public getStartDelay(Landroid/view/ViewGroup;Landroidx/transition/Transition;Landroidx/transition/TransitionValues;Landroidx/transition/TransitionValues;)J
     .locals 16
+    .param p1    # Landroid/view/ViewGroup;
+        .annotation build Landroidx/annotation/NonNull;
+        .end annotation
+    .end param
+    .param p2    # Landroidx/transition/Transition;
+        .annotation build Landroidx/annotation/NonNull;
+        .end annotation
+    .end param
+    .param p3    # Landroidx/transition/TransitionValues;
+        .annotation build Landroidx/annotation/Nullable;
+        .end annotation
+    .end param
+    .param p4    # Landroidx/transition/TransitionValues;
+        .annotation build Landroidx/annotation/Nullable;
+        .end annotation
+    .end param
 
     .line 1
     move-object/from16 v10, p0
@@ -676,7 +692,10 @@
 .method public setSide(I)V
     .locals 0
 
+    .line 1
     iput p1, p0, Landroidx/transition/SidePropagation;->mSide:I
 
+    .line 2
+    .line 3
     return-void
 .end method

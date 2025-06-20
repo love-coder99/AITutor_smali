@@ -3,28 +3,38 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lzh/e;
+.implements Lka/e;
 
 
 # annotations
+.annotation runtime Lca/c;
+    c = "androidx.paging.compose.LazyPagingItems$collectPagingData$2"
+    f = "LazyPagingItems.kt"
+    l = {
+        0xb3
+    }
+    m = "invokeSuspend"
+.end annotation
+
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "Lkotlin/coroutines/jvm/internal/SuspendLambda;",
-        "Lzh/e;"
+        "Lka/e;"
     }
 .end annotation
 
 .annotation runtime Lkotlin/Metadata;
     d1 = {
-        "\u0000\u0012\n\u0002\u0010\u0000\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\u0010\u0005\u001a\u00020\u0004\"\u0008\u0008\u0000\u0010\u0001*\u00020\u00002\u000c\u0010\u0003\u001a\u0008\u0012\u0004\u0012\u00028\u00000\u0002H\u008a@"
+        "\u0000\u0014\n\u0002\u0010\u0000\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0008\u0002\u0010\u0005\u001a\u00020\u0004\"\u0008\u0008\u0000\u0010\u0001*\u00020\u00002\u000c\u0010\u0003\u001a\u0008\u0012\u0004\u0012\u00028\u00000\u0002H\u008a@\u00a2\u0006\u0004\u0008\u0005\u0010\u0006"
     }
     d2 = {
         "",
         "T",
-        "Landroidx/paging/e1;",
+        "Landroidx/paging/f0;",
         "it",
-        "Lqh/r;",
-        "<anonymous>"
+        "LX9/j;",
+        "<anonymous>",
+        "(Landroidx/paging/f0;)V"
     }
     k = 0x3
     mv = {
@@ -32,15 +42,6 @@
         0x8,
         0x0
     }
-.end annotation
-
-.annotation runtime Lth/c;
-    c = "androidx.paging.compose.LazyPagingItems$collectPagingData$2"
-    f = "LazyPagingItems.kt"
-    l = {
-        0xb3
-    }
-    m = "invokeSuspend"
 .end annotation
 
 
@@ -92,7 +93,7 @@
             "Lkotlin/coroutines/Continuation<",
             "*>;)",
             "Lkotlin/coroutines/Continuation<",
-            "Lqh/r;",
+            "LX9/j;",
             ">;"
         }
     .end annotation
@@ -108,15 +109,15 @@
     return-object v0
 .end method
 
-.method public final invoke(Landroidx/paging/e1;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
+.method public final invoke(Landroidx/paging/f0;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
     .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
-            "Landroidx/paging/e1;",
+            "Landroidx/paging/f0;",
             "Lkotlin/coroutines/Continuation<",
             "-",
-            "Lqh/r;",
+            "LX9/j;",
             ">;)",
             "Ljava/lang/Object;"
         }
@@ -129,7 +130,7 @@
 
     check-cast p1, Landroidx/paging/compose/LazyPagingItems$collectPagingData$2;
 
-    sget-object p2, Lqh/r;->a:Lqh/r;
+    sget-object p2, LX9/j;->a:LX9/j;
 
     invoke-virtual {p1, p2}, Landroidx/paging/compose/LazyPagingItems$collectPagingData$2;->invokeSuspend(Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -142,11 +143,11 @@
     .locals 0
 
     .line 2
-    check-cast p1, Landroidx/paging/e1;
+    check-cast p1, Landroidx/paging/f0;
 
     check-cast p2, Lkotlin/coroutines/Continuation;
 
-    invoke-virtual {p0, p1, p2}, Landroidx/paging/compose/LazyPagingItems$collectPagingData$2;->invoke(Landroidx/paging/e1;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
+    invoke-virtual {p0, p1, p2}, Landroidx/paging/compose/LazyPagingItems$collectPagingData$2;->invoke(Landroidx/paging/f0;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
 
     move-result-object p1
 
@@ -211,7 +212,7 @@
 
     .line 26
     .line 27
-    check-cast p1, Landroidx/paging/e1;
+    check-cast p1, Landroidx/paging/f0;
 
     .line 28
     .line 29
@@ -227,7 +228,7 @@
 
     .line 34
     .line 35
-    invoke-virtual {v1, p1, p0}, Landroidx/paging/k1;->b(Landroidx/paging/e1;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
+    invoke-virtual {v1, p1, p0}, Landroidx/paging/m0;->b(Landroidx/paging/f0;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
 
     .line 36
     .line 37
@@ -244,7 +245,7 @@
     .line 42
     :cond_2
     :goto_0
-    sget-object p1, Lqh/r;->a:Lqh/r;
+    sget-object p1, LX9/j;->a:LX9/j;
 
     .line 43
     .line 44

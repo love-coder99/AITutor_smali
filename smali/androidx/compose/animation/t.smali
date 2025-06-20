@@ -1,40 +1,67 @@
-.class public final synthetic Landroidx/compose/animation/t;
+.class public abstract synthetic Landroidx/compose/animation/t;
 .super Ljava/lang/Object;
 .source "SourceFile"
 
 
-# instance fields
-.field public final synthetic a:Landroidx/compose/animation/core/z0;
-
-.field public final synthetic b:Landroidx/compose/animation/core/z0;
-
-.field public final synthetic c:Landroidx/compose/animation/core/e1;
-
-.field public final synthetic d:Landroidx/compose/animation/a0;
-
-.field public final synthetic e:Landroidx/compose/animation/c0;
-
-.field public final synthetic f:Landroidx/compose/animation/core/z0;
+# static fields
+.field public static final synthetic a:[I
 
 
 # direct methods
-.method public synthetic constructor <init>(Landroidx/compose/animation/core/z0;Landroidx/compose/animation/core/z0;Landroidx/compose/animation/core/e1;Landroidx/compose/animation/a0;Landroidx/compose/animation/c0;Landroidx/compose/animation/core/z0;)V
-    .locals 0
+.method static constructor <clinit>()V
+    .locals 3
 
-    .line 1
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    invoke-static {}, Landroidx/compose/animation/EnterExitState;->values()[Landroidx/compose/animation/EnterExitState;
 
-    iput-object p1, p0, Landroidx/compose/animation/t;->a:Landroidx/compose/animation/core/z0;
+    move-result-object v0
 
-    iput-object p2, p0, Landroidx/compose/animation/t;->b:Landroidx/compose/animation/core/z0;
+    array-length v0, v0
 
-    iput-object p3, p0, Landroidx/compose/animation/t;->c:Landroidx/compose/animation/core/e1;
+    new-array v0, v0, [I
 
-    iput-object p4, p0, Landroidx/compose/animation/t;->d:Landroidx/compose/animation/a0;
+    :try_start_0
+    sget-object v1, Landroidx/compose/animation/EnterExitState;->Visible:Landroidx/compose/animation/EnterExitState;
 
-    iput-object p5, p0, Landroidx/compose/animation/t;->e:Landroidx/compose/animation/c0;
+    invoke-virtual {v1}, Ljava/lang/Enum;->ordinal()I
 
-    iput-object p6, p0, Landroidx/compose/animation/t;->f:Landroidx/compose/animation/core/z0;
+    move-result v1
+
+    const/4 v2, 0x1
+
+    aput v2, v0, v1
+    :try_end_0
+    .catch Ljava/lang/NoSuchFieldError; {:try_start_0 .. :try_end_0} :catch_0
+
+    :catch_0
+    :try_start_1
+    sget-object v1, Landroidx/compose/animation/EnterExitState;->PreEnter:Landroidx/compose/animation/EnterExitState;
+
+    invoke-virtual {v1}, Ljava/lang/Enum;->ordinal()I
+
+    move-result v1
+
+    const/4 v2, 0x2
+
+    aput v2, v0, v1
+    :try_end_1
+    .catch Ljava/lang/NoSuchFieldError; {:try_start_1 .. :try_end_1} :catch_1
+
+    :catch_1
+    :try_start_2
+    sget-object v1, Landroidx/compose/animation/EnterExitState;->PostExit:Landroidx/compose/animation/EnterExitState;
+
+    invoke-virtual {v1}, Ljava/lang/Enum;->ordinal()I
+
+    move-result v1
+
+    const/4 v2, 0x3
+
+    aput v2, v0, v1
+    :try_end_2
+    .catch Ljava/lang/NoSuchFieldError; {:try_start_2 .. :try_end_2} :catch_2
+
+    :catch_2
+    sput-object v0, Landroidx/compose/animation/t;->a:[I
 
     return-void
 .end method

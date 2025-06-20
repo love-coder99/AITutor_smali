@@ -42,6 +42,7 @@
         0x8,
         0x0
     }
+    xi = 0x30
 .end annotation
 
 
@@ -62,110 +63,110 @@
     .locals 9
 
     .line 1
-    new-instance v0, Landroidx/compose/ui/focus/FocusStateImpl;
+    const/4 v0, 0x3
 
     .line 2
+    const/4 v1, 0x2
+
     .line 3
-    const-string v1, "Active"
+    const/4 v2, 0x1
 
     .line 4
+    const/4 v3, 0x0
+
     .line 5
-    const/4 v2, 0x0
+    new-instance v4, Landroidx/compose/ui/focus/FocusStateImpl;
 
     .line 6
-    invoke-direct {v0, v1, v2}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
-
     .line 7
+    const-string v5, "Active"
+
     .line 8
     .line 9
-    sput-object v0, Landroidx/compose/ui/focus/FocusStateImpl;->Active:Landroidx/compose/ui/focus/FocusStateImpl;
+    invoke-direct {v4, v5, v3}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
 
     .line 10
     .line 11
-    new-instance v1, Landroidx/compose/ui/focus/FocusStateImpl;
-
     .line 12
+    sput-object v4, Landroidx/compose/ui/focus/FocusStateImpl;->Active:Landroidx/compose/ui/focus/FocusStateImpl;
+
     .line 13
-    const-string v3, "ActiveParent"
-
     .line 14
-    .line 15
-    const/4 v4, 0x1
+    new-instance v5, Landroidx/compose/ui/focus/FocusStateImpl;
 
+    .line 15
     .line 16
-    invoke-direct {v1, v3, v4}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
+    const-string v6, "ActiveParent"
 
     .line 17
     .line 18
-    .line 19
-    sput-object v1, Landroidx/compose/ui/focus/FocusStateImpl;->ActiveParent:Landroidx/compose/ui/focus/FocusStateImpl;
+    invoke-direct {v5, v6, v2}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
 
+    .line 19
     .line 20
     .line 21
-    new-instance v3, Landroidx/compose/ui/focus/FocusStateImpl;
+    sput-object v5, Landroidx/compose/ui/focus/FocusStateImpl;->ActiveParent:Landroidx/compose/ui/focus/FocusStateImpl;
 
     .line 22
     .line 23
-    const-string v5, "Captured"
+    new-instance v6, Landroidx/compose/ui/focus/FocusStateImpl;
 
     .line 24
     .line 25
-    const/4 v6, 0x2
+    const-string v7, "Captured"
 
     .line 26
-    invoke-direct {v3, v5, v6}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
-
     .line 27
+    invoke-direct {v6, v7, v1}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
+
     .line 28
     .line 29
-    sput-object v3, Landroidx/compose/ui/focus/FocusStateImpl;->Captured:Landroidx/compose/ui/focus/FocusStateImpl;
-
     .line 30
+    sput-object v6, Landroidx/compose/ui/focus/FocusStateImpl;->Captured:Landroidx/compose/ui/focus/FocusStateImpl;
+
     .line 31
-    new-instance v5, Landroidx/compose/ui/focus/FocusStateImpl;
-
     .line 32
+    new-instance v7, Landroidx/compose/ui/focus/FocusStateImpl;
+
     .line 33
-    const-string v7, "Inactive"
-
     .line 34
-    .line 35
-    const/4 v8, 0x3
+    const-string v8, "Inactive"
 
+    .line 35
     .line 36
-    invoke-direct {v5, v7, v8}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
+    invoke-direct {v7, v8, v0}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
 
     .line 37
     .line 38
     .line 39
-    sput-object v5, Landroidx/compose/ui/focus/FocusStateImpl;->Inactive:Landroidx/compose/ui/focus/FocusStateImpl;
+    sput-object v7, Landroidx/compose/ui/focus/FocusStateImpl;->Inactive:Landroidx/compose/ui/focus/FocusStateImpl;
 
     .line 40
     .line 41
-    const/4 v7, 0x4
+    const/4 v8, 0x4
 
     .line 42
-    new-array v7, v7, [Landroidx/compose/ui/focus/FocusStateImpl;
+    new-array v8, v8, [Landroidx/compose/ui/focus/FocusStateImpl;
 
     .line 43
     .line 44
-    aput-object v0, v7, v2
+    aput-object v4, v8, v3
 
     .line 45
     .line 46
-    aput-object v1, v7, v4
+    aput-object v5, v8, v2
 
     .line 47
     .line 48
-    aput-object v3, v7, v6
+    aput-object v6, v8, v1
 
     .line 49
     .line 50
-    aput-object v5, v7, v8
+    aput-object v7, v8, v0
 
     .line 51
     .line 52
-    sput-object v7, Landroidx/compose/ui/focus/FocusStateImpl;->b:[Landroidx/compose/ui/focus/FocusStateImpl;
+    sput-object v8, Landroidx/compose/ui/focus/FocusStateImpl;->b:[Landroidx/compose/ui/focus/FocusStateImpl;
 
     .line 53
     .line 54

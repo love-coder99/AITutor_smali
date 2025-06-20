@@ -3,14 +3,14 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lzh/c;
+.implements Lka/c;
 
 
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "Lkotlin/jvm/internal/Lambda;",
-        "Lzh/c;"
+        "Lka/c;"
     }
 .end annotation
 
@@ -21,7 +21,7 @@
     d2 = {
         "",
         "remainingScrollOffset",
-        "Lqh/r;",
+        "LX9/j;",
         "invoke",
         "(F)V",
         "<anonymous>"
@@ -36,18 +36,18 @@
 
 
 # instance fields
-.field final synthetic $scope:Landroidx/compose/foundation/gestures/a0;
+.field final synthetic $scope:Landroidx/compose/foundation/gestures/C;
 
-.field final synthetic this$0:Landroidx/compose/foundation/pager/x;
+.field final synthetic this$0:Landroidx/compose/foundation/pager/r;
 
 
 # direct methods
-.method public constructor <init>(Landroidx/compose/foundation/pager/x;Landroidx/compose/foundation/gestures/a0;)V
+.method public constructor <init>(Landroidx/compose/foundation/pager/r;Landroidx/compose/foundation/gestures/C;)V
     .locals 0
 
-    iput-object p1, p0, Landroidx/compose/foundation/pager/PagerWrapperFlingBehavior$performFling$2$1;->this$0:Landroidx/compose/foundation/pager/x;
+    iput-object p1, p0, Landroidx/compose/foundation/pager/PagerWrapperFlingBehavior$performFling$2$1;->this$0:Landroidx/compose/foundation/pager/r;
 
-    iput-object p2, p0, Landroidx/compose/foundation/pager/PagerWrapperFlingBehavior$performFling$2$1;->$scope:Landroidx/compose/foundation/gestures/a0;
+    iput-object p2, p0, Landroidx/compose/foundation/pager/PagerWrapperFlingBehavior$performFling$2$1;->$scope:Landroidx/compose/foundation/gestures/C;
 
     const/4 p1, 0x1
 
@@ -61,7 +61,7 @@
 .method public bridge synthetic invoke(Ljava/lang/Object;)Ljava/lang/Object;
     .locals 0
 
-    .line 12
+    .line 1
     check-cast p1, Ljava/lang/Number;
 
     invoke-virtual {p1}, Ljava/lang/Number;->floatValue()F
@@ -70,7 +70,7 @@
 
     invoke-virtual {p0, p1}, Landroidx/compose/foundation/pager/PagerWrapperFlingBehavior$performFling$2$1;->invoke(F)V
 
-    sget-object p1, Lqh/r;->a:Lqh/r;
+    sget-object p1, LX9/j;->a:LX9/j;
 
     return-object p1
 .end method
@@ -78,25 +78,27 @@
 .method public final invoke(F)V
     .locals 1
 
-    iget-object v0, p0, Landroidx/compose/foundation/pager/PagerWrapperFlingBehavior$performFling$2$1;->this$0:Landroidx/compose/foundation/pager/x;
-
-    .line 1
-    iget-object v0, v0, Landroidx/compose/foundation/pager/x;->b:Landroidx/compose/foundation/pager/u;
-
     .line 2
-    invoke-virtual {v0}, Landroidx/compose/foundation/pager/u;->n()I
+    iget-object v0, p0, Landroidx/compose/foundation/pager/PagerWrapperFlingBehavior$performFling$2$1;->this$0:Landroidx/compose/foundation/pager/r;
+
+    .line 3
+    iget-object v0, v0, Landroidx/compose/foundation/pager/r;->b:Landroidx/compose/foundation/pager/o;
+
+    .line 4
+    invoke-virtual {v0}, Landroidx/compose/foundation/pager/o;->n()I
 
     move-result v0
 
     if-eqz v0, :cond_0
 
-    iget-object v0, p0, Landroidx/compose/foundation/pager/PagerWrapperFlingBehavior$performFling$2$1;->this$0:Landroidx/compose/foundation/pager/x;
+    .line 5
+    iget-object v0, p0, Landroidx/compose/foundation/pager/PagerWrapperFlingBehavior$performFling$2$1;->this$0:Landroidx/compose/foundation/pager/r;
 
-    .line 3
-    iget-object v0, v0, Landroidx/compose/foundation/pager/x;->b:Landroidx/compose/foundation/pager/u;
+    .line 6
+    iget-object v0, v0, Landroidx/compose/foundation/pager/r;->b:Landroidx/compose/foundation/pager/o;
 
-    .line 4
-    invoke-virtual {v0}, Landroidx/compose/foundation/pager/u;->n()I
+    .line 7
+    invoke-virtual {v0}, Landroidx/compose/foundation/pager/o;->n()I
 
     move-result v0
 
@@ -109,39 +111,40 @@
     :cond_0
     const/4 p1, 0x0
 
-    .line 5
+    .line 8
     :goto_0
-    invoke-static {p1}, Lf7/l;->I(F)I
+    invoke-static {p1}, Lma/a;->o(F)I
 
     move-result p1
 
-    iget-object v0, p0, Landroidx/compose/foundation/pager/PagerWrapperFlingBehavior$performFling$2$1;->this$0:Landroidx/compose/foundation/pager/x;
+    iget-object v0, p0, Landroidx/compose/foundation/pager/PagerWrapperFlingBehavior$performFling$2$1;->this$0:Landroidx/compose/foundation/pager/r;
 
-    .line 6
-    iget-object v0, v0, Landroidx/compose/foundation/pager/x;->b:Landroidx/compose/foundation/pager/u;
+    .line 9
+    iget-object v0, v0, Landroidx/compose/foundation/pager/r;->b:Landroidx/compose/foundation/pager/o;
 
-    .line 7
-    invoke-virtual {v0}, Landroidx/compose/foundation/pager/u;->j()I
+    .line 10
+    invoke-virtual {v0}, Landroidx/compose/foundation/pager/o;->j()I
 
     move-result v0
 
     add-int/2addr v0, p1
 
-    iget-object p1, p0, Landroidx/compose/foundation/pager/PagerWrapperFlingBehavior$performFling$2$1;->this$0:Landroidx/compose/foundation/pager/x;
+    .line 11
+    iget-object p1, p0, Landroidx/compose/foundation/pager/PagerWrapperFlingBehavior$performFling$2$1;->this$0:Landroidx/compose/foundation/pager/r;
 
-    .line 8
-    iget-object p1, p1, Landroidx/compose/foundation/pager/x;->b:Landroidx/compose/foundation/pager/u;
+    .line 12
+    iget-object p1, p1, Landroidx/compose/foundation/pager/r;->b:Landroidx/compose/foundation/pager/o;
 
-    .line 9
-    invoke-virtual {p1, v0}, Landroidx/compose/foundation/pager/u;->i(I)I
+    .line 13
+    invoke-virtual {p1, v0}, Landroidx/compose/foundation/pager/o;->i(I)I
 
     move-result v0
 
-    .line 10
-    iget-object p1, p1, Landroidx/compose/foundation/pager/u;->r:Landroidx/compose/runtime/ParcelableSnapshotMutableIntState;
+    .line 14
+    iget-object p1, p1, Landroidx/compose/foundation/pager/o;->r:Landroidx/compose/runtime/ParcelableSnapshotMutableIntState;
 
-    .line 11
-    invoke-virtual {p1, v0}, Landroidx/compose/runtime/p2;->l(I)V
+    .line 15
+    invoke-virtual {p1, v0}, Landroidx/compose/runtime/ParcelableSnapshotMutableIntState;->l(I)V
 
     return-void
 .end method

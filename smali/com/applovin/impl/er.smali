@@ -224,7 +224,7 @@
 
     const/4 v0, 0x1
 
-    .line 3
+    .line 4
     :try_start_0
     invoke-static {v0, p0, v0}, Lcom/applovin/impl/fr;->a(ILcom/applovin/impl/ah;Z)Z
 
@@ -284,6 +284,7 @@
 
     move-result v0
 
+    .line 16
     iget-boolean v3, p0, Lcom/applovin/impl/er;->p:Z
 
     if-eqz v3, :cond_1
@@ -292,7 +293,6 @@
 
     add-int/2addr v1, v0
 
-    .line 16
     div-int/lit8 v1, v1, 0x4
 
     :cond_1
@@ -301,8 +301,10 @@
     .line 17
     invoke-static {p1, v3, v4}, Lcom/applovin/impl/er;->a(Lcom/applovin/impl/ah;J)V
 
+    .line 18
     iput-boolean v2, p0, Lcom/applovin/impl/er;->p:Z
 
+    .line 19
     iput v0, p0, Lcom/applovin/impl/er;->o:I
 
     return-wide v3
@@ -311,24 +313,29 @@
 .method public a(Z)V
     .locals 0
 
-    .line 32
+    .line 35
     invoke-super {p0, p1}, Lcom/applovin/impl/gl;->a(Z)V
 
     if-eqz p1, :cond_0
 
     const/4 p1, 0x0
 
+    .line 36
     iput-object p1, p0, Lcom/applovin/impl/er;->n:Lcom/applovin/impl/er$a;
 
+    .line 37
     iput-object p1, p0, Lcom/applovin/impl/er;->q:Lcom/applovin/impl/fr$d;
 
+    .line 38
     iput-object p1, p0, Lcom/applovin/impl/er;->r:Lcom/applovin/impl/fr$b;
 
     :cond_0
     const/4 p1, 0x0
 
+    .line 39
     iput p1, p0, Lcom/applovin/impl/er;->o:I
 
+    .line 40
     iput-boolean p1, p0, Lcom/applovin/impl/er;->p:Z
 
     return-void
@@ -337,11 +344,12 @@
 .method public a(Lcom/applovin/impl/ah;JLcom/applovin/impl/gl$b;)Z
     .locals 2
 
+    .line 20
     iget-object p2, p0, Lcom/applovin/impl/er;->n:Lcom/applovin/impl/er$a;
 
     if-eqz p2, :cond_0
 
-    .line 18
+    .line 21
     iget-object p1, p4, Lcom/applovin/impl/gl$b;->a:Lcom/applovin/impl/e9;
 
     invoke-static {p1}, Lcom/applovin/impl/b1;->a(Ljava/lang/Object;)Ljava/lang/Object;
@@ -350,7 +358,7 @@
 
     return p1
 
-    .line 19
+    .line 22
     :cond_0
     invoke-virtual {p0, p1}, Lcom/applovin/impl/er;->b(Lcom/applovin/impl/ah;)Lcom/applovin/impl/er$a;
 
@@ -364,71 +372,71 @@
 
     return p2
 
-    .line 20
+    .line 23
     :cond_1
     iget-object p3, p1, Lcom/applovin/impl/er$a;->a:Lcom/applovin/impl/fr$d;
 
-    .line 21
+    .line 24
     new-instance v0, Ljava/util/ArrayList;
 
     invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
 
-    .line 22
+    .line 25
     iget-object v1, p3, Lcom/applovin/impl/fr$d;->j:[B
 
     invoke-virtual {v0, v1}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
-    .line 23
+    .line 26
     iget-object p1, p1, Lcom/applovin/impl/er$a;->c:[B
 
     invoke-virtual {v0, p1}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
-    .line 24
+    .line 27
     new-instance p1, Lcom/applovin/impl/e9$b;
 
     invoke-direct {p1}, Lcom/applovin/impl/e9$b;-><init>()V
 
+    .line 28
     const-string v1, "audio/vorbis"
 
-    .line 25
     invoke-virtual {p1, v1}, Lcom/applovin/impl/e9$b;->f(Ljava/lang/String;)Lcom/applovin/impl/e9$b;
 
     move-result-object p1
 
     iget v1, p3, Lcom/applovin/impl/fr$d;->e:I
 
-    .line 26
+    .line 29
     invoke-virtual {p1, v1}, Lcom/applovin/impl/e9$b;->b(I)Lcom/applovin/impl/e9$b;
 
     move-result-object p1
 
     iget v1, p3, Lcom/applovin/impl/fr$d;->d:I
 
-    .line 27
+    .line 30
     invoke-virtual {p1, v1}, Lcom/applovin/impl/e9$b;->k(I)Lcom/applovin/impl/e9$b;
 
     move-result-object p1
 
     iget v1, p3, Lcom/applovin/impl/fr$d;->b:I
 
-    .line 28
+    .line 31
     invoke-virtual {p1, v1}, Lcom/applovin/impl/e9$b;->c(I)Lcom/applovin/impl/e9$b;
 
     move-result-object p1
 
     iget p3, p3, Lcom/applovin/impl/fr$d;->c:I
 
-    .line 29
+    .line 32
     invoke-virtual {p1, p3}, Lcom/applovin/impl/e9$b;->n(I)Lcom/applovin/impl/e9$b;
 
     move-result-object p1
 
-    .line 30
+    .line 33
     invoke-virtual {p1, v0}, Lcom/applovin/impl/e9$b;->a(Ljava/util/List;)Lcom/applovin/impl/e9$b;
 
     move-result-object p1
 
-    .line 31
+    .line 34
     invoke-virtual {p1}, Lcom/applovin/impl/e9$b;->a()Lcom/applovin/impl/e9;
 
     move-result-object p1
@@ -592,14 +600,15 @@
     :cond_0
     const/4 p1, 0x0
 
+    .line 2
     :goto_0
     iput-boolean p1, p0, Lcom/applovin/impl/er;->p:Z
 
+    .line 3
     iget-object p1, p0, Lcom/applovin/impl/er;->q:Lcom/applovin/impl/fr$d;
 
     if-eqz p1, :cond_1
 
-    .line 2
     iget v2, p1, Lcom/applovin/impl/fr$d;->g:I
 
     :cond_1

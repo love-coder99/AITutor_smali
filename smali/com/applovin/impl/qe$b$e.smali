@@ -54,9 +54,9 @@
 .method public a(Lcom/applovin/mediation/MaxDebuggerTestLiveNetworkActivity;)V
     .locals 3
 
+    .line 2
     iget-object v0, p0, Lcom/applovin/impl/qe$b$e;->a:Lcom/applovin/impl/qe$b;
 
-    .line 2
     iget-object v0, v0, Lcom/applovin/impl/qe$b;->b:Lcom/applovin/impl/qe;
 
     invoke-static {v0}, Lcom/applovin/impl/qe;->b(Lcom/applovin/impl/qe;)Lcom/applovin/impl/se;

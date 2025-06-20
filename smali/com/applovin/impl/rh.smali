@@ -102,13 +102,14 @@
 .method public a(I)Lcom/applovin/impl/rh;
     .locals 1
 
+    .line 16
     iget-boolean v0, p0, Lcom/applovin/impl/rh;->k:Z
 
     xor-int/lit8 v0, v0, 0x1
 
-    .line 12
     invoke-static {v0}, Lcom/applovin/impl/b1;->b(Z)V
 
+    .line 17
     iput p1, p0, Lcom/applovin/impl/rh;->e:I
 
     return-object p0
@@ -117,13 +118,14 @@
 .method public a(Ljava/lang/Object;)Lcom/applovin/impl/rh;
     .locals 1
 
+    .line 14
     iget-boolean v0, p0, Lcom/applovin/impl/rh;->k:Z
 
     xor-int/lit8 v0, v0, 0x1
 
-    .line 11
     invoke-static {v0}, Lcom/applovin/impl/b1;->b(Z)V
 
+    .line 15
     iput-object p1, p0, Lcom/applovin/impl/rh;->f:Ljava/lang/Object;
 
     return-object p0
@@ -134,6 +136,7 @@
 
     monitor-enter p0
 
+    .line 11
     :try_start_0
     iget-boolean v0, p0, Lcom/applovin/impl/rh;->l:Z
 
@@ -143,9 +146,10 @@
 
     const/4 p1, 0x1
 
+    .line 12
     iput-boolean p1, p0, Lcom/applovin/impl/rh;->m:Z
 
-    .line 10
+    .line 13
     invoke-virtual {p0}, Ljava/lang/Object;->notifyAll()V
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
@@ -157,7 +161,10 @@
     :catchall_0
     move-exception p1
 
+    :try_start_1
     monitor-exit p0
+    :try_end_1
+    .catchall {:try_start_1 .. :try_end_1} :catchall_0
 
     throw p1
 .end method
@@ -165,7 +172,7 @@
 .method public a()Z
     .locals 1
 
-    .line 1
+    .line 10
     iget-boolean v0, p0, Lcom/applovin/impl/rh;->j:Z
 
     return v0
@@ -176,15 +183,15 @@
 
     monitor-enter p0
 
+    .line 1
     :try_start_0
     iget-boolean v0, p0, Lcom/applovin/impl/rh;->k:Z
 
-    .line 2
     invoke-static {v0}, Lcom/applovin/impl/b1;->b(Z)V
 
+    .line 2
     iget-object v0, p0, Lcom/applovin/impl/rh;->g:Landroid/os/Looper;
 
-    .line 3
     invoke-virtual {v0}, Landroid/os/Looper;->getThread()Ljava/lang/Thread;
 
     move-result-object v0
@@ -205,15 +212,16 @@
     :goto_0
     invoke-static {v0}, Lcom/applovin/impl/b1;->b(Z)V
 
+    .line 3
     iget-object v0, p0, Lcom/applovin/impl/rh;->c:Lcom/applovin/impl/l3;
 
-    .line 4
     invoke-interface {v0}, Lcom/applovin/impl/l3;->c()J
 
     move-result-wide v0
 
     add-long/2addr v0, p1
 
+    .line 4
     :goto_1
     iget-boolean v2, p0, Lcom/applovin/impl/rh;->m:Z
 
@@ -225,17 +233,17 @@
 
     if-lez v5, :cond_1
 
+    .line 5
     iget-object v2, p0, Lcom/applovin/impl/rh;->c:Lcom/applovin/impl/l3;
 
-    .line 5
     invoke-interface {v2}, Lcom/applovin/impl/l3;->b()V
 
     .line 6
     invoke-virtual {p0, p1, p2}, Ljava/lang/Object;->wait(J)V
 
+    .line 7
     iget-object p1, p0, Lcom/applovin/impl/rh;->c:Lcom/applovin/impl/l3;
 
-    .line 7
     invoke-interface {p1}, Lcom/applovin/impl/l3;->c()J
 
     move-result-wide p1
@@ -252,11 +260,11 @@
     :cond_1
     if-eqz v2, :cond_2
 
+    .line 8
     iget-boolean p1, p0, Lcom/applovin/impl/rh;->l:Z
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    .line 8
     monitor-exit p0
 
     return p1
@@ -271,11 +279,11 @@
     invoke-direct {p1, p2}, Ljava/util/concurrent/TimeoutException;-><init>(Ljava/lang/String;)V
 
     throw p1
-    :try_end_1
-    .catchall {:try_start_1 .. :try_end_1} :catchall_0
 
     :goto_2
     monitor-exit p0
+    :try_end_1
+    .catchall {:try_start_1 .. :try_end_1} :catchall_0
 
     throw p1
 .end method
@@ -283,56 +291,77 @@
 .method public b()Landroid/os/Looper;
     .locals 1
 
+    .line 1
     iget-object v0, p0, Lcom/applovin/impl/rh;->g:Landroid/os/Looper;
 
+    .line 2
+    .line 3
     return-object v0
 .end method
 
 .method public c()Ljava/lang/Object;
     .locals 1
 
+    .line 1
     iget-object v0, p0, Lcom/applovin/impl/rh;->f:Ljava/lang/Object;
 
+    .line 2
+    .line 3
     return-object v0
 .end method
 
 .method public d()J
     .locals 2
 
+    .line 1
     iget-wide v0, p0, Lcom/applovin/impl/rh;->i:J
 
+    .line 2
+    .line 3
     return-wide v0
 .end method
 
 .method public e()Lcom/applovin/impl/rh$b;
     .locals 1
 
+    .line 1
     iget-object v0, p0, Lcom/applovin/impl/rh;->a:Lcom/applovin/impl/rh$b;
 
+    .line 2
+    .line 3
     return-object v0
 .end method
 
 .method public f()Lcom/applovin/impl/fo;
     .locals 1
 
+    .line 1
     iget-object v0, p0, Lcom/applovin/impl/rh;->d:Lcom/applovin/impl/fo;
 
+    .line 2
+    .line 3
     return-object v0
 .end method
 
 .method public g()I
     .locals 1
 
+    .line 1
     iget v0, p0, Lcom/applovin/impl/rh;->e:I
 
+    .line 2
+    .line 3
     return v0
 .end method
 
 .method public h()I
     .locals 1
 
+    .line 1
     iget v0, p0, Lcom/applovin/impl/rh;->h:I
 
+    .line 2
+    .line 3
     return v0
 .end method
 
@@ -360,7 +389,10 @@
     move-exception v0
 
     .line 7
+    :try_start_1
     monitor-exit p0
+    :try_end_1
+    .catchall {:try_start_1 .. :try_end_1} :catchall_0
 
     .line 8
     throw v0

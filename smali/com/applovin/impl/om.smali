@@ -11,9 +11,9 @@
 .method public constructor <init>(Lcom/applovin/impl/h0;Lcom/applovin/sdk/AppLovinAdLoadListener;Lcom/applovin/impl/sdk/j;)V
     .locals 1
 
+    .line 1
     const-string v0, "TaskFetchNextAd"
 
-    .line 1
     invoke-direct {p0, p1, p2, v0, p3}, Lcom/applovin/impl/om;-><init>(Lcom/applovin/impl/h0;Lcom/applovin/sdk/AppLovinAdLoadListener;Ljava/lang/String;Lcom/applovin/impl/sdk/j;)V
 
     return-void
@@ -25,6 +25,7 @@
     .line 2
     invoke-direct {p0, p1, p3, p4}, Lcom/applovin/impl/hm;-><init>(Lcom/applovin/impl/h0;Ljava/lang/String;Lcom/applovin/impl/sdk/j;)V
 
+    .line 3
     iput-object p2, p0, Lcom/applovin/impl/om;->j:Lcom/applovin/sdk/AppLovinAdLoadListener;
 
     return-void
@@ -55,9 +56,9 @@
     .line 1
     invoke-super {p0, p1, p2}, Lcom/applovin/impl/hm;->a(ILjava/lang/String;)V
 
+    .line 2
     iget-object v0, p0, Lcom/applovin/impl/om;->j:Lcom/applovin/sdk/AppLovinAdLoadListener;
 
-    .line 2
     instance-of v1, v0, Lcom/applovin/impl/qb;
 
     if-eqz v1, :cond_0
@@ -67,9 +68,9 @@
 
     invoke-direct {v0, p1, p2}, Lcom/applovin/impl/sdk/AppLovinError;-><init>(ILjava/lang/String;)V
 
+    .line 4
     iget-object p1, p0, Lcom/applovin/impl/om;->j:Lcom/applovin/sdk/AppLovinAdLoadListener;
 
-    .line 4
     check-cast p1, Lcom/applovin/impl/qb;
 
     invoke-interface {p1, v0}, Lcom/applovin/impl/qb;->failedToReceiveAdV2(Lcom/applovin/impl/sdk/AppLovinError;)V

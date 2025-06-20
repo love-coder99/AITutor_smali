@@ -3,14 +3,14 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lzh/c;
+.implements Lka/c;
 
 
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "Lkotlin/jvm/internal/Lambda;",
-        "Lzh/c;"
+        "Lka/c;"
     }
 .end annotation
 
@@ -21,7 +21,7 @@
     d2 = {
         "",
         "",
-        "Landroidx/compose/ui/layout/g1;",
+        "Landroidx/compose/ui/layout/c0;",
         "<name for destructuring parameter 0>",
         "",
         "invoke",
@@ -38,14 +38,14 @@
 
 
 # instance fields
-.field final synthetic this$0:Landroidx/compose/ui/layout/i0;
+.field final synthetic this$0:Landroidx/compose/ui/layout/F;
 
 
 # direct methods
-.method public constructor <init>(Landroidx/compose/ui/layout/i0;)V
+.method public constructor <init>(Landroidx/compose/ui/layout/F;)V
     .locals 0
 
-    iput-object p1, p0, Landroidx/compose/ui/layout/LayoutNodeSubcompositionsState$disposeUnusedSlotsInPostLookahead$1;->this$0:Landroidx/compose/ui/layout/i0;
+    iput-object p1, p0, Landroidx/compose/ui/layout/LayoutNodeSubcompositionsState$disposeUnusedSlotsInPostLookahead$1;->this$0:Landroidx/compose/ui/layout/F;
 
     const/4 p1, 0x1
 
@@ -63,7 +63,7 @@
             "(",
             "Ljava/util/Map$Entry<",
             "Ljava/lang/Object;",
-            "Landroidx/compose/ui/layout/g1;",
+            "Landroidx/compose/ui/layout/c0;",
             ">;)",
             "Ljava/lang/Boolean;"
         }
@@ -78,24 +78,26 @@
 
     move-result-object p1
 
-    check-cast p1, Landroidx/compose/ui/layout/g1;
-
-    iget-object v1, p0, Landroidx/compose/ui/layout/LayoutNodeSubcompositionsState$disposeUnusedSlotsInPostLookahead$1;->this$0:Landroidx/compose/ui/layout/i0;
+    check-cast p1, Landroidx/compose/ui/layout/c0;
 
     .line 2
-    iget-object v1, v1, Landroidx/compose/ui/layout/i0;->o:Landroidx/compose/runtime/collection/e;
+    iget-object v1, p0, Landroidx/compose/ui/layout/LayoutNodeSubcompositionsState$disposeUnusedSlotsInPostLookahead$1;->this$0:Landroidx/compose/ui/layout/F;
 
     .line 3
-    invoke-virtual {v1, v0}, Landroidx/compose/runtime/collection/e;->m(Ljava/lang/Object;)I
+    iget-object v1, v1, Landroidx/compose/ui/layout/F;->o:Landroidx/compose/runtime/collection/d;
+
+    .line 4
+    invoke-virtual {v1, v0}, Landroidx/compose/runtime/collection/d;->m(Ljava/lang/Object;)I
 
     move-result v0
 
     if-ltz v0, :cond_1
 
-    iget-object v1, p0, Landroidx/compose/ui/layout/LayoutNodeSubcompositionsState$disposeUnusedSlotsInPostLookahead$1;->this$0:Landroidx/compose/ui/layout/i0;
+    .line 5
+    iget-object v1, p0, Landroidx/compose/ui/layout/LayoutNodeSubcompositionsState$disposeUnusedSlotsInPostLookahead$1;->this$0:Landroidx/compose/ui/layout/F;
 
-    .line 4
-    iget v1, v1, Landroidx/compose/ui/layout/i0;->g:I
+    .line 6
+    iget v1, v1, Landroidx/compose/ui/layout/F;->g:I
 
     if-lt v0, v1, :cond_0
 
@@ -106,14 +108,14 @@
 
     goto :goto_1
 
-    .line 5
+    .line 7
     :cond_1
     :goto_0
-    invoke-interface {p1}, Landroidx/compose/ui/layout/g1;->a()V
+    invoke-interface {p1}, Landroidx/compose/ui/layout/c0;->a()V
 
     const/4 p1, 0x1
 
-    .line 6
+    .line 8
     :goto_1
     invoke-static {p1}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
 
@@ -125,7 +127,7 @@
 .method public bridge synthetic invoke(Ljava/lang/Object;)Ljava/lang/Object;
     .locals 0
 
-    .line 7
+    .line 9
     check-cast p1, Ljava/util/Map$Entry;
 
     invoke-virtual {p0, p1}, Landroidx/compose/ui/layout/LayoutNodeSubcompositionsState$disposeUnusedSlotsInPostLookahead$1;->invoke(Ljava/util/Map$Entry;)Ljava/lang/Boolean;

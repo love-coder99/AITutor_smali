@@ -1,69 +1,62 @@
-.class public final Landroidx/compose/ui/node/v;
+.class public abstract Landroidx/compose/ui/node/V;
 .super Ljava/lang/Object;
 .source "SourceFile"
 
-
-# instance fields
-.field public a:F
-
-.field public b:F
-
-.field public c:F
-
-.field public d:F
-
-.field public e:F
-
-.field public f:F
-
-.field public g:F
-
-.field public h:F
-
-.field public i:J
+# interfaces
+.implements Landroidx/compose/ui/m;
 
 
-# direct methods
-.method public constructor <init>()V
-    .locals 2
+# virtual methods
+.method public final synthetic b(Lka/c;)Z
+    .locals 0
 
     .line 1
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    invoke-static {p0, p1}, Landroidx/compose/runtime/a0;->a(Landroidx/compose/ui/m;Lka/c;)Z
+
+    move-result p1
+
+    return p1
+.end method
+
+.method public final synthetic g(Landroidx/compose/ui/o;)Landroidx/compose/ui/o;
+    .locals 0
+
+    .line 1
+    invoke-static {p0, p1}, Landroidx/compose/runtime/a0;->e(Landroidx/compose/ui/o;Landroidx/compose/ui/o;)Landroidx/compose/ui/o;
+
+    move-result-object p1
+
+    return-object p1
+.end method
+
+.method public final synthetic i(Lka/c;)Z
+    .locals 0
+
+    .line 1
+    invoke-static {p0, p1}, Landroidx/compose/runtime/a0;->b(Landroidx/compose/ui/m;Lka/c;)Z
+
+    move-result p1
+
+    return p1
+.end method
+
+.method public final k(Ljava/lang/Object;Lka/e;)Ljava/lang/Object;
+    .locals 0
+
+    .line 1
+    invoke-interface {p2, p1, p0}, Lka/e;->invoke(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 2
     .line 3
     .line 4
-    const/high16 v0, 0x3f800000    # 1.0f
+    move-result-object p1
 
     .line 5
-    .line 6
-    iput v0, p0, Landroidx/compose/ui/node/v;->a:F
+    return-object p1
+.end method
 
-    .line 7
-    .line 8
-    iput v0, p0, Landroidx/compose/ui/node/v;->b:F
+.method public abstract m()Landroidx/compose/ui/n;
+.end method
 
-    .line 9
-    .line 10
-    const/high16 v0, 0x41000000    # 8.0f
-
-    .line 11
-    .line 12
-    iput v0, p0, Landroidx/compose/ui/node/v;->h:F
-
-    .line 13
-    .line 14
-    sget v0, Landroidx/compose/ui/graphics/d1;->c:I
-
-    .line 15
-    .line 16
-    sget-wide v0, Landroidx/compose/ui/graphics/d1;->b:J
-
-    .line 17
-    .line 18
-    iput-wide v0, p0, Landroidx/compose/ui/node/v;->i:J
-
-    .line 19
-    .line 20
-    return-void
+.method public abstract n(Landroidx/compose/ui/n;)V
 .end method

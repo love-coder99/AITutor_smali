@@ -35,7 +35,7 @@
 
     const/4 v0, 0x0
 
-    .line 2
+    .line 1
     invoke-static {p0, v0}, Lcom/applovin/impl/eh;->a(Ljava/lang/String;Ljava/util/Map;)Lcom/applovin/impl/eh;
 
     move-result-object p0
@@ -59,7 +59,7 @@
 .method public a()Ljava/util/Map;
     .locals 1
 
-    .line 1
+    .line 2
     iget-object v0, p0, Lcom/applovin/impl/eh;->b:Ljava/util/Map;
 
     return-object v0
@@ -68,8 +68,11 @@
 .method public b()Ljava/lang/String;
     .locals 1
 
+    .line 1
     iget-object v0, p0, Lcom/applovin/impl/eh;->a:Ljava/lang/String;
 
+    .line 2
+    .line 3
     return-object v0
 .end method
 

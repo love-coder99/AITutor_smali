@@ -88,7 +88,7 @@
 .method private a()J
     .locals 2
 
-    .line 1
+    .line 5
     iget-wide v0, p0, Lcom/applovin/impl/i2$c;->g:J
 
     return-wide v0
@@ -134,7 +134,7 @@
 
     const-wide/16 v4, 0x14
 
-    .line 4
+    .line 3
     div-long v4, v2, v4
 
     add-long/2addr v2, p6
@@ -151,7 +151,7 @@
 
     move-wide p4, v0
 
-    .line 5
+    .line 4
     invoke-static/range {p0 .. p5}, Lcom/applovin/impl/xp;->b(JJJ)J
 
     move-result-wide v0
@@ -166,7 +166,7 @@
 .method public static synthetic a(Lcom/applovin/impl/i2$c;)J
     .locals 2
 
-    .line 2
+    .line 1
     invoke-direct {p0}, Lcom/applovin/impl/i2$c;->d()J
 
     move-result-wide v0
@@ -177,11 +177,13 @@
 .method private a(JJ)V
     .locals 0
 
+    .line 6
     iput-wide p1, p0, Lcom/applovin/impl/i2$c;->e:J
 
+    .line 7
     iput-wide p3, p0, Lcom/applovin/impl/i2$c;->g:J
 
-    .line 6
+    .line 8
     invoke-direct {p0}, Lcom/applovin/impl/i2$c;->f()V
 
     return-void
@@ -190,7 +192,7 @@
 .method public static synthetic a(Lcom/applovin/impl/i2$c;JJ)V
     .locals 0
 
-    .line 3
+    .line 2
     invoke-direct {p0, p1, p2, p3, p4}, Lcom/applovin/impl/i2$c;->a(JJ)V
 
     return-void
@@ -199,7 +201,7 @@
 .method private b()J
     .locals 2
 
-    .line 1
+    .line 3
     iget-wide v0, p0, Lcom/applovin/impl/i2$c;->f:J
 
     return-wide v0
@@ -208,7 +210,7 @@
 .method public static synthetic b(Lcom/applovin/impl/i2$c;)J
     .locals 2
 
-    .line 2
+    .line 1
     invoke-direct {p0}, Lcom/applovin/impl/i2$c;->b()J
 
     move-result-wide v0
@@ -219,11 +221,13 @@
 .method private b(JJ)V
     .locals 0
 
+    .line 4
     iput-wide p1, p0, Lcom/applovin/impl/i2$c;->d:J
 
+    .line 5
     iput-wide p3, p0, Lcom/applovin/impl/i2$c;->f:J
 
-    .line 4
+    .line 6
     invoke-direct {p0}, Lcom/applovin/impl/i2$c;->f()V
 
     return-void
@@ -232,7 +236,7 @@
 .method public static synthetic b(Lcom/applovin/impl/i2$c;JJ)V
     .locals 0
 
-    .line 3
+    .line 2
     invoke-direct {p0, p1, p2, p3, p4}, Lcom/applovin/impl/i2$c;->b(JJ)V
 
     return-void
@@ -241,7 +245,7 @@
 .method private c()J
     .locals 2
 
-    .line 1
+    .line 2
     iget-wide v0, p0, Lcom/applovin/impl/i2$c;->h:J
 
     return-wide v0
@@ -250,7 +254,7 @@
 .method public static synthetic c(Lcom/applovin/impl/i2$c;)J
     .locals 2
 
-    .line 2
+    .line 1
     invoke-direct {p0}, Lcom/applovin/impl/i2$c;->a()J
 
     move-result-wide v0
@@ -261,7 +265,7 @@
 .method private d()J
     .locals 2
 
-    .line 1
+    .line 2
     iget-wide v0, p0, Lcom/applovin/impl/i2$c;->a:J
 
     return-wide v0
@@ -270,7 +274,7 @@
 .method public static synthetic d(Lcom/applovin/impl/i2$c;)J
     .locals 2
 
-    .line 2
+    .line 1
     invoke-direct {p0}, Lcom/applovin/impl/i2$c;->c()J
 
     move-result-wide v0
@@ -281,7 +285,7 @@
 .method private e()J
     .locals 2
 
-    .line 1
+    .line 2
     iget-wide v0, p0, Lcom/applovin/impl/i2$c;->b:J
 
     return-wide v0
@@ -290,7 +294,7 @@
 .method public static synthetic e(Lcom/applovin/impl/i2$c;)J
     .locals 2
 
-    .line 2
+    .line 1
     invoke-direct {p0}, Lcom/applovin/impl/i2$c;->e()J
 
     move-result-wide v0

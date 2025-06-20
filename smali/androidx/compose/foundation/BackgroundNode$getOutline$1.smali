@@ -3,14 +3,14 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lzh/a;
+.implements Lka/a;
 
 
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "Lkotlin/jvm/internal/Lambda;",
-        "Lzh/a;"
+        "Lka/a;"
     }
 .end annotation
 
@@ -19,7 +19,7 @@
         "\u0000\u0008\n\u0002\u0018\u0002\n\u0002\u0008\u0003\u0010\u0003\u001a\u00020\u0000H\n\u00a2\u0006\u0004\u0008\u0001\u0010\u0002"
     }
     d2 = {
-        "Lqh/r;",
+        "LX9/j;",
         "invoke",
         "()V",
         "<anonymous>"
@@ -38,28 +38,28 @@
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Lkotlin/jvm/internal/Ref$ObjectRef<",
-            "Landroidx/compose/ui/graphics/p0;",
+            "Landroidx/compose/ui/graphics/Q;",
             ">;"
         }
     .end annotation
 .end field
 
-.field final synthetic $this_getOutline:Lo1/e;
+.field final synthetic $this_getOutline:Ls0/c;
 
 .field final synthetic this$0:Landroidx/compose/foundation/e;
 
 
 # direct methods
-.method public constructor <init>(Lkotlin/jvm/internal/Ref$ObjectRef;Landroidx/compose/foundation/e;Lo1/e;)V
+.method public constructor <init>(Lkotlin/jvm/internal/Ref$ObjectRef;Landroidx/compose/foundation/e;Ls0/c;)V
     .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
             "Lkotlin/jvm/internal/Ref$ObjectRef<",
-            "Landroidx/compose/ui/graphics/p0;",
+            "Landroidx/compose/ui/graphics/Q;",
             ">;",
             "Landroidx/compose/foundation/e;",
-            "Lo1/e;",
+            "Ls0/c;",
             ")V"
         }
     .end annotation
@@ -67,14 +67,24 @@
     .line 1
     iput-object p1, p0, Landroidx/compose/foundation/BackgroundNode$getOutline$1;->$outline:Lkotlin/jvm/internal/Ref$ObjectRef;
 
+    .line 2
+    .line 3
     iput-object p2, p0, Landroidx/compose/foundation/BackgroundNode$getOutline$1;->this$0:Landroidx/compose/foundation/e;
 
-    iput-object p3, p0, Landroidx/compose/foundation/BackgroundNode$getOutline$1;->$this_getOutline:Lo1/e;
+    .line 4
+    .line 5
+    iput-object p3, p0, Landroidx/compose/foundation/BackgroundNode$getOutline$1;->$this_getOutline:Ls0/c;
 
+    .line 6
+    .line 7
     const/4 p1, 0x0
 
+    .line 8
     invoke-direct {p0, p1}, Lkotlin/jvm/internal/Lambda;-><init>(I)V
 
+    .line 9
+    .line 10
+    .line 11
     return-void
 .end method
 
@@ -83,10 +93,10 @@
 .method public bridge synthetic invoke()Ljava/lang/Object;
     .locals 1
 
-    .line 5
+    .line 1
     invoke-virtual {p0}, Landroidx/compose/foundation/BackgroundNode$getOutline$1;->invoke()V
 
-    sget-object v0, Lqh/r;->a:Lqh/r;
+    sget-object v0, LX9/j;->a:LX9/j;
 
     return-object v0
 .end method
@@ -94,37 +104,42 @@
 .method public final invoke()V
     .locals 6
 
+    .line 2
     iget-object v0, p0, Landroidx/compose/foundation/BackgroundNode$getOutline$1;->$outline:Lkotlin/jvm/internal/Ref$ObjectRef;
 
     iget-object v1, p0, Landroidx/compose/foundation/BackgroundNode$getOutline$1;->this$0:Landroidx/compose/foundation/e;
 
-    .line 1
-    iget-object v1, v1, Landroidx/compose/foundation/e;->s:Landroidx/compose/ui/graphics/z0;
-
-    iget-object v2, p0, Landroidx/compose/foundation/BackgroundNode$getOutline$1;->$this_getOutline:Lo1/e;
-
-    check-cast v2, Landroidx/compose/ui/node/g0;
-
-    .line 2
-    iget-object v2, v2, Landroidx/compose/ui/node/g0;->b:Lo1/c;
-
     .line 3
-    invoke-virtual {v2}, Lo1/c;->e()J
+    iget-object v1, v1, Landroidx/compose/foundation/e;->s:Landroidx/compose/ui/graphics/Z;
+
+    .line 4
+    iget-object v2, p0, Landroidx/compose/foundation/BackgroundNode$getOutline$1;->$this_getOutline:Ls0/c;
+
+    check-cast v2, Landroidx/compose/ui/node/E;
+
+    .line 5
+    iget-object v2, v2, Landroidx/compose/ui/node/E;->b:Ls0/b;
+
+    .line 6
+    iget-object v2, v2, Ls0/b;->c:Lcom/google/android/gms/internal/measurement/c;
+
+    .line 7
+    invoke-virtual {v2}, Lcom/google/android/gms/internal/measurement/c;->A()J
 
     move-result-wide v2
 
-    iget-object v4, p0, Landroidx/compose/foundation/BackgroundNode$getOutline$1;->$this_getOutline:Lo1/e;
+    .line 8
+    iget-object v4, p0, Landroidx/compose/foundation/BackgroundNode$getOutline$1;->$this_getOutline:Ls0/c;
 
-    check-cast v4, Landroidx/compose/ui/node/g0;
+    check-cast v4, Landroidx/compose/ui/node/E;
 
-    .line 4
-    invoke-virtual {v4}, Landroidx/compose/ui/node/g0;->getLayoutDirection()Landroidx/compose/ui/unit/LayoutDirection;
+    invoke-virtual {v4}, Landroidx/compose/ui/node/E;->getLayoutDirection()Landroidx/compose/ui/unit/LayoutDirection;
 
     move-result-object v4
 
-    iget-object v5, p0, Landroidx/compose/foundation/BackgroundNode$getOutline$1;->$this_getOutline:Lo1/e;
+    iget-object v5, p0, Landroidx/compose/foundation/BackgroundNode$getOutline$1;->$this_getOutline:Ls0/c;
 
-    invoke-interface {v1, v2, v3, v4, v5}, Landroidx/compose/ui/graphics/z0;->l(JLandroidx/compose/ui/unit/LayoutDirection;Lh2/b;)Landroidx/compose/ui/graphics/p0;
+    invoke-interface {v1, v2, v3, v4, v5}, Landroidx/compose/ui/graphics/Z;->p(JLandroidx/compose/ui/unit/LayoutDirection;LM0/b;)Landroidx/compose/ui/graphics/Q;
 
     move-result-object v1
 

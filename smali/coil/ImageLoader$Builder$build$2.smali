@@ -3,14 +3,14 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lzh/a;
+.implements Lka/a;
 
 
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "Lkotlin/jvm/internal/Lambda;",
-        "Lzh/a;"
+        "Lka/a;"
     }
 .end annotation
 
@@ -19,9 +19,9 @@
         "\u0000\u0008\n\u0002\u0018\u0002\n\u0002\u0008\u0003\u0010\u0003\u001a\u00020\u0000H\n\u00a2\u0006\u0004\u0008\u0001\u0010\u0002"
     }
     d2 = {
-        "Lcoil/disk/c;",
+        "Lcoil/disk/b;",
         "invoke",
-        "()Lcoil/disk/c;",
+        "()Lcoil/disk/b;",
         "<anonymous>"
     }
     k = 0x3
@@ -34,14 +34,14 @@
 
 
 # instance fields
-.field final synthetic this$0:Lcoil/f;
+.field final synthetic this$0:Lcoil/e;
 
 
 # direct methods
-.method public constructor <init>(Lcoil/f;)V
+.method public constructor <init>(Lcoil/e;)V
     .locals 0
 
-    iput-object p1, p0, Lcoil/ImageLoader$Builder$build$2;->this$0:Lcoil/f;
+    iput-object p1, p0, Lcoil/ImageLoader$Builder$build$2;->this$0:Lcoil/e;
 
     const/4 p1, 0x0
 
@@ -52,78 +52,93 @@
 
 
 # virtual methods
-.method public final invoke()Lcoil/disk/c;
+.method public final invoke()Lcoil/disk/b;
     .locals 5
 
-    sget-object v0, Lcoil/util/l;->a:Lcoil/util/l;
-
-    iget-object v1, p0, Lcoil/ImageLoader$Builder$build$2;->this$0:Lcoil/f;
-
     .line 1
-    iget-object v1, v1, Lcoil/f;->a:Landroid/content/Context;
+    sget-object v0, Lcoil/util/l;->b:Lcoil/util/l;
+
+    iget-object v1, p0, Lcoil/ImageLoader$Builder$build$2;->this$0:Lcoil/e;
 
     .line 2
-    monitor-enter v0
-
-    :try_start_0
-    sget-object v2, Lcoil/util/l;->b:Lcoil/disk/k;
-
-    if-nez v2, :cond_0
+    iget-object v1, v1, Lcoil/e;->a:Landroid/content/Context;
 
     .line 3
-    new-instance v2, Lcoil/disk/a;
+    monitor-enter v0
 
     .line 4
-    invoke-direct {v2}, Ljava/lang/Object;-><init>()V
+    :try_start_0
+    sget-object v2, Lcoil/util/l;->c:Lcoil/disk/i;
+
+    if-nez v2, :cond_1
 
     .line 5
-    sget-object v3, Lxi/m;->a:Lxi/t;
+    new-instance v2, Lcoil/disk/a;
 
-    iput-object v3, v2, Lcoil/disk/a;->b:Lxi/t;
+    .line 6
+    invoke-direct {v2}, Ljava/lang/Object;-><init>()V
+
+    .line 7
+    sget-object v3, LIa/o;->a:LIa/v;
+
+    iput-object v3, v2, Lcoil/disk/a;->b:LIa/v;
 
     const-wide v3, 0x3f947ae147ae147bL    # 0.02
 
+    .line 8
     iput-wide v3, v2, Lcoil/disk/a;->c:D
 
     const-wide/32 v3, 0xa00000
 
+    .line 9
     iput-wide v3, v2, Lcoil/disk/a;->d:J
 
     const-wide/32 v3, 0xfa00000
 
+    .line 10
     iput-wide v3, v2, Lcoil/disk/a;->e:J
 
-    .line 6
-    sget-object v3, Lkotlinx/coroutines/h0;->b:Lii/d;
+    .line 11
+    sget-object v3, Lkotlinx/coroutines/F;->b:Lva/d;
 
-    iput-object v3, v2, Lcoil/disk/a;->f:Lii/d;
+    .line 12
+    iput-object v3, v2, Lcoil/disk/a;->f:Lva/d;
 
-    .line 7
-    invoke-static {v1}, Lcoil/util/g;->c(Landroid/content/Context;)Ljava/io/File;
+    .line 13
+    sget-object v3, Lcoil/util/g;->a:[Landroid/graphics/Bitmap$Config;
 
-    move-result-object v1
-
-    invoke-static {v1}, Lkotlin/collections/o;->O(Ljava/io/File;)Ljava/io/File;
-
-    move-result-object v1
-
-    .line 8
-    sget-object v3, Lxi/x;->c:Ljava/lang/String;
-
-    invoke-static {v1}, Lfi/h;->o(Ljava/io/File;)Lxi/x;
+    .line 14
+    invoke-virtual {v1}, Landroid/content/Context;->getCacheDir()Ljava/io/File;
 
     move-result-object v1
 
-    iput-object v1, v2, Lcoil/disk/a;->a:Lxi/x;
+    if-eqz v1, :cond_0
 
-    .line 9
-    invoke-virtual {v2}, Lcoil/disk/a;->a()Lcoil/disk/k;
+    .line 15
+    invoke-virtual {v1}, Ljava/io/File;->mkdirs()Z
+
+    .line 16
+    invoke-static {v1}, Lha/i;->r(Ljava/io/File;)Ljava/io/File;
+
+    move-result-object v1
+
+    .line 17
+    sget-object v3, LIa/z;->c:Ljava/lang/String;
+
+    invoke-static {v1}, LV9/c;->q(Ljava/io/File;)LIa/z;
+
+    move-result-object v1
+
+    .line 18
+    iput-object v1, v2, Lcoil/disk/a;->a:LIa/z;
+
+    .line 19
+    invoke-virtual {v2}, Lcoil/disk/a;->a()Lcoil/disk/i;
 
     move-result-object v2
 
-    sput-object v2, Lcoil/util/l;->b:Lcoil/disk/k;
-    :try_end_0
-    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+    .line 20
+    sput-object v2, Lcoil/util/l;->c:Lcoil/disk/i;
 
     goto :goto_0
 
@@ -132,15 +147,30 @@
 
     goto :goto_1
 
-    .line 10
+    .line 21
     :cond_0
+    new-instance v1, Ljava/lang/IllegalStateException;
+
+    const-string v2, "cacheDir == null"
+
+    invoke-direct {v1, v2}, Ljava/lang/IllegalStateException;-><init>(Ljava/lang/String;)V
+
+    throw v1
+    :try_end_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+
+    .line 22
+    :cond_1
     :goto_0
     monitor-exit v0
 
     return-object v2
 
     :goto_1
+    :try_start_1
     monitor-exit v0
+    :try_end_1
+    .catchall {:try_start_1 .. :try_end_1} :catchall_0
 
     throw v1
 .end method
@@ -148,8 +178,8 @@
 .method public bridge synthetic invoke()Ljava/lang/Object;
     .locals 1
 
-    .line 11
-    invoke-virtual {p0}, Lcoil/ImageLoader$Builder$build$2;->invoke()Lcoil/disk/c;
+    .line 23
+    invoke-virtual {p0}, Lcoil/ImageLoader$Builder$build$2;->invoke()Lcoil/disk/b;
 
     move-result-object v0
 

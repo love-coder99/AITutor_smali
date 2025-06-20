@@ -162,30 +162,32 @@
 
     return-object p0
 
+    .line 3
     :cond_0
     sget-object v0, Lcom/applovin/sdk/AppLovinSdk;->instanceLock:Ljava/lang/Object;
 
-    .line 3
     monitor-enter v0
 
+    .line 4
     :try_start_0
     sget-object v1, Lcom/applovin/sdk/AppLovinSdk;->instance:Lcom/applovin/sdk/AppLovinSdk;
 
     if-nez v1, :cond_1
 
-    .line 4
+    .line 5
     new-instance v1, Lcom/applovin/impl/sdk/j;
 
     invoke-direct {v1, p0}, Lcom/applovin/impl/sdk/j;-><init>(Landroid/content/Context;)V
 
-    .line 5
+    .line 6
     new-instance p0, Lcom/applovin/sdk/AppLovinSdk;
 
     invoke-direct {p0, v1}, Lcom/applovin/sdk/AppLovinSdk;-><init>(Lcom/applovin/impl/sdk/j;)V
 
-    .line 6
+    .line 7
     invoke-virtual {v1, p0}, Lcom/applovin/impl/sdk/j;->a(Lcom/applovin/sdk/AppLovinSdk;)V
 
+    .line 8
     sput-object p0, Lcom/applovin/sdk/AppLovinSdk;->instance:Lcom/applovin/sdk/AppLovinSdk;
 
     goto :goto_0
@@ -195,16 +197,16 @@
 
     goto :goto_1
 
+    .line 9
     :cond_1
     :goto_0
     sget-object p0, Lcom/applovin/sdk/AppLovinSdk;->instance:Lcom/applovin/sdk/AppLovinSdk;
 
-    .line 7
     monitor-exit v0
 
     return-object p0
 
-    .line 8
+    .line 10
     :goto_1
     monitor-exit v0
     :try_end_0
@@ -212,7 +214,7 @@
 
     throw p0
 
-    .line 9
+    .line 11
     :cond_2
     new-instance p0, Ljava/lang/IllegalArgumentException;
 
@@ -230,7 +232,7 @@
 
     if-eqz p1, :cond_0
 
-    .line 10
+    .line 12
     invoke-static {p1}, Lcom/applovin/impl/t0;->a(Landroid/content/Context;)Lcom/applovin/impl/t0;
 
     move-result-object v0
@@ -243,14 +245,14 @@
 
     move-result-object v0
 
-    .line 11
+    .line 13
     invoke-static {v0, p0, p1}, Lcom/applovin/sdk/AppLovinSdk;->getInstance(Ljava/lang/String;Lcom/applovin/sdk/AppLovinSdkSettings;Landroid/content/Context;)Lcom/applovin/sdk/AppLovinSdk;
 
     move-result-object p0
 
     return-object p0
 
-    .line 12
+    .line 14
     :cond_0
     new-instance p0, Ljava/lang/IllegalArgumentException;
 
@@ -272,17 +274,17 @@
 
     if-eqz p2, :cond_4
 
+    .line 15
     sget-object v1, Lcom/applovin/sdk/AppLovinSdk;->instanceLock:Ljava/lang/Object;
 
-    .line 13
     monitor-enter v1
 
+    .line 16
     :try_start_0
     sget-object v2, Lcom/applovin/sdk/AppLovinSdk;->instance:Lcom/applovin/sdk/AppLovinSdk;
 
     if-eqz v2, :cond_0
 
-    .line 14
     invoke-virtual {v2}, Lcom/applovin/sdk/AppLovinSdk;->getSdkKey()Ljava/lang/String;
 
     move-result-object v2
@@ -304,28 +306,28 @@
 
     goto :goto_2
 
-    .line 15
+    .line 17
     :cond_0
     monitor-exit v1
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
+    .line 18
     sget-object v2, Lcom/applovin/sdk/AppLovinSdk;->sdkInstancesLock:Ljava/lang/Object;
 
-    .line 16
     monitor-enter v2
 
+    .line 19
     :try_start_1
     sget-object v1, Lcom/applovin/sdk/AppLovinSdk;->sdkInstances:Ljava/util/Map;
 
-    .line 17
     invoke-interface {v1, p0}, Ljava/util/Map;->containsKey(Ljava/lang/Object;)Z
 
     move-result v3
 
     if-eqz v3, :cond_1
 
-    .line 18
+    .line 20
     invoke-interface {v1, p0}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object p0
@@ -339,7 +341,7 @@
 
     goto :goto_1
 
-    .line 19
+    .line 21
     :cond_1
     invoke-static {p0}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
 
@@ -355,7 +357,7 @@
 
     if-eqz v4, :cond_3
 
-    .line 20
+    .line 22
     new-instance v4, Ljava/lang/StringBuilder;
 
     invoke-direct {v4, v0}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
@@ -370,19 +372,19 @@
 
     move-result-object v0
 
+    .line 23
     const-string v4, "AppLovinSdk"
 
-    .line 21
     invoke-static {v4, v0}, Lcom/applovin/impl/sdk/n;->h(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 22
+    .line 24
     invoke-interface {v1}, Ljava/util/Map;->isEmpty()Z
 
     move-result v0
 
     if-nez v0, :cond_2
 
-    .line 23
+    .line 25
     invoke-interface {v1}, Ljava/util/Map;->values()Ljava/util/Collection;
 
     move-result-object p0
@@ -401,46 +403,46 @@
 
     return-object p0
 
+    .line 26
     :cond_2
     const-string v0, ""
 
-    .line 24
     invoke-virtual {p0, v3, v0}, Ljava/lang/String;->replace(Ljava/lang/CharSequence;Ljava/lang/CharSequence;)Ljava/lang/String;
 
     move-result-object p0
 
-    .line 25
+    .line 27
     :cond_3
     new-instance v0, Lcom/applovin/impl/sdk/j;
 
     invoke-direct {v0, p2}, Lcom/applovin/impl/sdk/j;-><init>(Landroid/content/Context;)V
 
-    .line 26
+    .line 28
     invoke-virtual {v0, p0, p1}, Lcom/applovin/impl/sdk/j;->a(Ljava/lang/String;Lcom/applovin/sdk/AppLovinSdkSettings;)V
 
-    .line 27
+    .line 29
     new-instance p2, Lcom/applovin/sdk/AppLovinSdk;
 
     invoke-direct {p2, v0}, Lcom/applovin/sdk/AppLovinSdk;-><init>(Lcom/applovin/impl/sdk/j;)V
 
-    .line 28
+    .line 30
     invoke-virtual {v0, p2}, Lcom/applovin/impl/sdk/j;->a(Lcom/applovin/sdk/AppLovinSdk;)V
 
-    .line 29
+    .line 31
     invoke-virtual {p1, v0}, Lcom/applovin/sdk/AppLovinSdkSettings;->attachAppLovinSdk(Lcom/applovin/impl/sdk/j;)V
 
-    .line 30
+    .line 32
     invoke-interface {v1, p0, p2}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     move-object p0, p2
 
-    .line 31
+    .line 33
     :goto_0
     monitor-exit v2
 
     return-object p0
 
-    .line 32
+    .line 34
     :goto_1
     monitor-exit v2
     :try_end_1
@@ -448,7 +450,7 @@
 
     throw p0
 
-    .line 33
+    .line 35
     :goto_2
     :try_start_2
     monitor-exit v1
@@ -457,7 +459,7 @@
 
     throw p0
 
-    .line 34
+    .line 36
     :cond_4
     new-instance p0, Ljava/lang/IllegalArgumentException;
 
@@ -467,7 +469,7 @@
 
     throw p0
 
-    .line 35
+    .line 37
     :cond_5
     new-instance p0, Ljava/lang/IllegalArgumentException;
 
@@ -565,8 +567,11 @@
 .method private static getVersion()Ljava/lang/String;
     .locals 1
 
+    .line 1
     const-string v0, "13.0.1"
 
+    .line 2
+    .line 3
     return-object v0
 .end method
 
@@ -610,12 +615,12 @@
 
     goto :goto_0
 
+    .line 6
     :cond_0
     const-string p0, "AppLovinSdk"
 
     const-string p1, "Unable to initialize AppLovin SDK: SDK object not created"
 
-    .line 6
     invoke-static {p0, p1}, Lcom/applovin/impl/sdk/n;->h(Ljava/lang/String;Ljava/lang/String;)V
 
     :goto_0
@@ -1002,8 +1007,11 @@
 .method public a()Lcom/applovin/impl/sdk/j;
     .locals 1
 
+    .line 1
     iget-object v0, p0, Lcom/applovin/sdk/AppLovinSdk;->coreSdk:Lcom/applovin/impl/sdk/j;
 
+    .line 2
+    .line 3
     return-object v0
 .end method
 
@@ -1296,6 +1304,10 @@
 
 .method public initialize(Lcom/applovin/sdk/AppLovinSdkInitializationConfiguration;Lcom/applovin/sdk/AppLovinSdk$SdkInitializationListener;)V
     .locals 1
+    .param p2    # Lcom/applovin/sdk/AppLovinSdk$SdkInitializationListener;
+        .annotation build Landroidx/annotation/Nullable;
+        .end annotation
+    .end param
 
     .line 1
     iget-object v0, p0, Lcom/applovin/sdk/AppLovinSdk;->coreSdk:Lcom/applovin/impl/sdk/j;
@@ -1324,9 +1336,9 @@
     .annotation runtime Ljava/lang/Deprecated;
     .end annotation
 
+    .line 2
     iget-object v0, p0, Lcom/applovin/sdk/AppLovinSdk;->coreSdk:Lcom/applovin/impl/sdk/j;
 
-    .line 2
     invoke-virtual {v0, p1}, Lcom/applovin/impl/sdk/j;->a(Lcom/applovin/sdk/AppLovinSdk$SdkInitializationListener;)V
 
     return-void
@@ -1424,9 +1436,9 @@
 .method public showMediationDebugger()V
     .locals 1
 
+    .line 1
     iget-object v0, p0, Lcom/applovin/sdk/AppLovinSdk;->coreSdk:Lcom/applovin/impl/sdk/j;
 
-    .line 1
     invoke-virtual {v0}, Lcom/applovin/impl/sdk/j;->T0()V
 
     return-void
@@ -1434,6 +1446,10 @@
 
 .method public showMediationDebugger(Ljava/util/Map;)V
     .locals 1
+    .param p1    # Ljava/util/Map;
+        .annotation build Landroidx/annotation/Nullable;
+        .end annotation
+    .end param
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -1444,9 +1460,9 @@
         }
     .end annotation
 
+    .line 2
     iget-object v0, p0, Lcom/applovin/sdk/AppLovinSdk;->coreSdk:Lcom/applovin/impl/sdk/j;
 
-    .line 2
     invoke-virtual {v0, p1}, Lcom/applovin/impl/sdk/j;->a(Ljava/util/Map;)V
 
     return-void

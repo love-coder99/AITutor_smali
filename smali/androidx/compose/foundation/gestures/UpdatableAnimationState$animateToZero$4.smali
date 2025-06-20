@@ -3,14 +3,14 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lzh/c;
+.implements Lka/c;
 
 
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "Lkotlin/jvm/internal/Lambda;",
-        "Lzh/c;"
+        "Lka/c;"
     }
 .end annotation
 
@@ -21,7 +21,7 @@
     d2 = {
         "",
         "frameTime",
-        "Lqh/r;",
+        "LX9/j;",
         "invoke",
         "(J)V",
         "<anonymous>"
@@ -36,43 +36,53 @@
 
 
 # instance fields
-.field final synthetic $beforeFrame:Lzh/c;
+.field final synthetic $beforeFrame:Lka/c;
     .annotation system Ldalvik/annotation/Signature;
         value = {
-            "Lzh/c;"
+            "Lka/c;"
         }
     .end annotation
 .end field
 
 .field final synthetic $durationScale:F
 
-.field final synthetic this$0:Landroidx/compose/foundation/gestures/q0;
+.field final synthetic this$0:Landroidx/compose/foundation/gestures/T;
 
 
 # direct methods
-.method public constructor <init>(Landroidx/compose/foundation/gestures/q0;FLzh/c;)V
+.method public constructor <init>(Landroidx/compose/foundation/gestures/T;FLka/c;)V
     .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
-            "Landroidx/compose/foundation/gestures/q0;",
+            "Landroidx/compose/foundation/gestures/T;",
             "F",
-            "Lzh/c;",
+            "Lka/c;",
             ")V"
         }
     .end annotation
 
     .line 1
-    iput-object p1, p0, Landroidx/compose/foundation/gestures/UpdatableAnimationState$animateToZero$4;->this$0:Landroidx/compose/foundation/gestures/q0;
+    iput-object p1, p0, Landroidx/compose/foundation/gestures/UpdatableAnimationState$animateToZero$4;->this$0:Landroidx/compose/foundation/gestures/T;
 
+    .line 2
+    .line 3
     iput p2, p0, Landroidx/compose/foundation/gestures/UpdatableAnimationState$animateToZero$4;->$durationScale:F
 
-    iput-object p3, p0, Landroidx/compose/foundation/gestures/UpdatableAnimationState$animateToZero$4;->$beforeFrame:Lzh/c;
+    .line 4
+    .line 5
+    iput-object p3, p0, Landroidx/compose/foundation/gestures/UpdatableAnimationState$animateToZero$4;->$beforeFrame:Lka/c;
 
+    .line 6
+    .line 7
     const/4 p1, 0x1
 
+    .line 8
     invoke-direct {p0, p1}, Lkotlin/jvm/internal/Lambda;-><init>(I)V
 
+    .line 9
+    .line 10
+    .line 11
     return-void
 .end method
 
@@ -81,7 +91,7 @@
 .method public bridge synthetic invoke(Ljava/lang/Object;)Ljava/lang/Object;
     .locals 2
 
-    .line 24
+    .line 1
     check-cast p1, Ljava/lang/Number;
 
     invoke-virtual {p1}, Ljava/lang/Number;->longValue()J
@@ -90,7 +100,7 @@
 
     invoke-virtual {p0, v0, v1}, Landroidx/compose/foundation/gestures/UpdatableAnimationState$animateToZero$4;->invoke(J)V
 
-    sget-object p1, Lqh/r;->a:Lqh/r;
+    sget-object p1, LX9/j;->a:LX9/j;
 
     return-object p1
 .end method
@@ -98,10 +108,11 @@
 .method public final invoke(J)V
     .locals 12
 
-    iget-object v0, p0, Landroidx/compose/foundation/gestures/UpdatableAnimationState$animateToZero$4;->this$0:Landroidx/compose/foundation/gestures/q0;
+    .line 2
+    iget-object v0, p0, Landroidx/compose/foundation/gestures/UpdatableAnimationState$animateToZero$4;->this$0:Landroidx/compose/foundation/gestures/T;
 
-    .line 1
-    iget-wide v1, v0, Landroidx/compose/foundation/gestures/q0;->b:J
+    .line 3
+    iget-wide v1, v0, Landroidx/compose/foundation/gestures/T;->b:J
 
     const-wide/high16 v3, -0x8000000000000000L
 
@@ -109,74 +120,73 @@
 
     if-nez v5, :cond_0
 
-    .line 2
-    iput-wide p1, v0, Landroidx/compose/foundation/gestures/q0;->b:J
-
-    .line 3
-    :cond_0
-    new-instance v1, Landroidx/compose/animation/core/i;
-
     .line 4
-    iget v2, v0, Landroidx/compose/foundation/gestures/q0;->e:F
+    iput-wide p1, v0, Landroidx/compose/foundation/gestures/T;->b:J
 
     .line 5
-    invoke-direct {v1, v2}, Landroidx/compose/animation/core/i;-><init>(F)V
-
-    iget v3, p0, Landroidx/compose/foundation/gestures/UpdatableAnimationState$animateToZero$4;->$durationScale:F
-
-    const/4 v4, 0x0
-
-    cmpg-float v4, v3, v4
-
-    if-nez v4, :cond_1
+    :cond_0
+    new-instance v1, Landroidx/compose/animation/core/h;
 
     .line 6
-    iget-object v3, v0, Landroidx/compose/foundation/gestures/q0;->a:Landroidx/compose/animation/core/m1;
+    iget v2, v0, Landroidx/compose/foundation/gestures/T;->e:F
 
     .line 7
-    new-instance v4, Landroidx/compose/animation/core/i;
-
-    invoke-direct {v4, v2}, Landroidx/compose/animation/core/i;-><init>(F)V
-
-    sget-object v2, Landroidx/compose/foundation/gestures/q0;->f:Landroidx/compose/animation/core/i;
+    invoke-direct {v1, v2}, Landroidx/compose/animation/core/h;-><init>(F)V
 
     .line 8
-    iget-object v0, v0, Landroidx/compose/foundation/gestures/q0;->c:Landroidx/compose/animation/core/i;
+    iget v3, p0, Landroidx/compose/foundation/gestures/UpdatableAnimationState$animateToZero$4;->$durationScale:F
+
+    sget-object v4, Landroidx/compose/foundation/gestures/T;->f:Landroidx/compose/animation/core/h;
+
+    const/4 v5, 0x0
+
+    cmpg-float v5, v3, v5
+
+    if-nez v5, :cond_1
 
     .line 9
-    invoke-interface {v3, v4, v2, v0}, Landroidx/compose/animation/core/m1;->d(Landroidx/compose/animation/core/m;Landroidx/compose/animation/core/m;Landroidx/compose/animation/core/m;)J
+    new-instance v3, Landroidx/compose/animation/core/h;
+
+    invoke-direct {v3, v2}, Landroidx/compose/animation/core/h;-><init>(F)V
+
+    .line 10
+    iget-object v2, v0, Landroidx/compose/foundation/gestures/T;->c:Landroidx/compose/animation/core/h;
+
+    .line 11
+    iget-object v0, v0, Landroidx/compose/foundation/gestures/T;->a:Landroidx/compose/animation/core/h0;
+
+    invoke-interface {v0, v3, v4, v2}, Landroidx/compose/animation/core/h0;->h(Landroidx/compose/animation/core/l;Landroidx/compose/animation/core/l;Landroidx/compose/animation/core/l;)J
 
     move-result-wide v2
 
     goto :goto_0
 
-    .line 10
+    .line 12
     :cond_1
-    iget-wide v4, v0, Landroidx/compose/foundation/gestures/q0;->b:J
+    iget-wide v5, v0, Landroidx/compose/foundation/gestures/T;->b:J
 
-    sub-long v4, p1, v4
+    sub-long v5, p1, v5
 
-    long-to-float v0, v4
+    long-to-float v0, v5
 
     div-float/2addr v0, v3
 
     float-to-double v2, v0
 
-    .line 11
-    invoke-static {v2, v3}, Lf7/l;->J(D)J
+    .line 13
+    invoke-static {v2, v3}, Lma/a;->p(D)J
 
     move-result-wide v2
 
+    .line 14
     :goto_0
-    iget-object v0, p0, Landroidx/compose/foundation/gestures/UpdatableAnimationState$animateToZero$4;->this$0:Landroidx/compose/foundation/gestures/q0;
+    iget-object v0, p0, Landroidx/compose/foundation/gestures/UpdatableAnimationState$animateToZero$4;->this$0:Landroidx/compose/foundation/gestures/T;
 
-    .line 12
-    iget-object v6, v0, Landroidx/compose/foundation/gestures/q0;->a:Landroidx/compose/animation/core/m1;
+    .line 15
+    iget-object v6, v0, Landroidx/compose/foundation/gestures/T;->a:Landroidx/compose/animation/core/h0;
 
-    sget-object v4, Landroidx/compose/foundation/gestures/q0;->f:Landroidx/compose/animation/core/i;
-
-    .line 13
-    iget-object v11, v0, Landroidx/compose/foundation/gestures/q0;->c:Landroidx/compose/animation/core/i;
+    .line 16
+    iget-object v11, v0, Landroidx/compose/foundation/gestures/T;->c:Landroidx/compose/animation/core/h;
 
     move-wide v7, v2
 
@@ -184,23 +194,24 @@
 
     move-object v10, v4
 
-    .line 14
-    invoke-interface/range {v6 .. v11}, Landroidx/compose/animation/core/m1;->f(JLandroidx/compose/animation/core/m;Landroidx/compose/animation/core/m;Landroidx/compose/animation/core/m;)Landroidx/compose/animation/core/m;
+    .line 17
+    invoke-interface/range {v6 .. v11}, Landroidx/compose/animation/core/h0;->m(JLandroidx/compose/animation/core/l;Landroidx/compose/animation/core/l;Landroidx/compose/animation/core/l;)Landroidx/compose/animation/core/l;
 
     move-result-object v0
 
-    check-cast v0, Landroidx/compose/animation/core/i;
+    check-cast v0, Landroidx/compose/animation/core/h;
 
-    .line 15
-    iget v0, v0, Landroidx/compose/animation/core/i;->a:F
+    .line 18
+    iget v0, v0, Landroidx/compose/animation/core/h;->a:F
 
-    iget-object v5, p0, Landroidx/compose/foundation/gestures/UpdatableAnimationState$animateToZero$4;->this$0:Landroidx/compose/foundation/gestures/q0;
+    .line 19
+    iget-object v5, p0, Landroidx/compose/foundation/gestures/UpdatableAnimationState$animateToZero$4;->this$0:Landroidx/compose/foundation/gestures/T;
 
-    .line 16
-    iget-object v6, v5, Landroidx/compose/foundation/gestures/q0;->a:Landroidx/compose/animation/core/m1;
+    .line 20
+    iget-object v6, v5, Landroidx/compose/foundation/gestures/T;->a:Landroidx/compose/animation/core/h0;
 
-    .line 17
-    iget-object v11, v5, Landroidx/compose/foundation/gestures/q0;->c:Landroidx/compose/animation/core/i;
+    .line 21
+    iget-object v11, v5, Landroidx/compose/foundation/gestures/T;->c:Landroidx/compose/animation/core/h;
 
     move-wide v7, v2
 
@@ -208,37 +219,38 @@
 
     move-object v10, v4
 
-    .line 18
-    invoke-interface/range {v6 .. v11}, Landroidx/compose/animation/core/m1;->b(JLandroidx/compose/animation/core/m;Landroidx/compose/animation/core/m;Landroidx/compose/animation/core/m;)Landroidx/compose/animation/core/m;
+    .line 22
+    invoke-interface/range {v6 .. v11}, Landroidx/compose/animation/core/h0;->d(JLandroidx/compose/animation/core/l;Landroidx/compose/animation/core/l;Landroidx/compose/animation/core/l;)Landroidx/compose/animation/core/l;
 
     move-result-object v1
 
-    check-cast v1, Landroidx/compose/animation/core/i;
+    check-cast v1, Landroidx/compose/animation/core/h;
 
-    .line 19
-    iput-object v1, v5, Landroidx/compose/foundation/gestures/q0;->c:Landroidx/compose/animation/core/i;
+    .line 23
+    iput-object v1, v5, Landroidx/compose/foundation/gestures/T;->c:Landroidx/compose/animation/core/h;
 
-    iget-object v1, p0, Landroidx/compose/foundation/gestures/UpdatableAnimationState$animateToZero$4;->this$0:Landroidx/compose/foundation/gestures/q0;
+    .line 24
+    iget-object v1, p0, Landroidx/compose/foundation/gestures/UpdatableAnimationState$animateToZero$4;->this$0:Landroidx/compose/foundation/gestures/T;
 
-    .line 20
-    iput-wide p1, v1, Landroidx/compose/foundation/gestures/q0;->b:J
+    .line 25
+    iput-wide p1, v1, Landroidx/compose/foundation/gestures/T;->b:J
 
-    .line 21
-    iget p1, v1, Landroidx/compose/foundation/gestures/q0;->e:F
+    .line 26
+    iget p1, v1, Landroidx/compose/foundation/gestures/T;->e:F
 
     sub-float/2addr p1, v0
 
-    .line 22
-    iput v0, v1, Landroidx/compose/foundation/gestures/q0;->e:F
+    .line 27
+    iput v0, v1, Landroidx/compose/foundation/gestures/T;->e:F
 
-    iget-object p2, p0, Landroidx/compose/foundation/gestures/UpdatableAnimationState$animateToZero$4;->$beforeFrame:Lzh/c;
+    .line 28
+    iget-object p2, p0, Landroidx/compose/foundation/gestures/UpdatableAnimationState$animateToZero$4;->$beforeFrame:Lka/c;
 
-    .line 23
     invoke-static {p1}, Ljava/lang/Float;->valueOf(F)Ljava/lang/Float;
 
     move-result-object p1
 
-    invoke-interface {p2, p1}, Lzh/c;->invoke(Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-interface {p2, p1}, Lka/c;->invoke(Ljava/lang/Object;)Ljava/lang/Object;
 
     return-void
 .end method

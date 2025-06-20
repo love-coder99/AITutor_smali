@@ -319,7 +319,10 @@
 .method public getId()I
     .locals 1
 
+    .line 1
     iget v0, p0, Landroidx/camera/core/impl/SurfaceConfig$ConfigSize;->mId:I
 
+    .line 2
+    .line 3
     return v0
 .end method

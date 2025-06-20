@@ -4,14 +4,24 @@
 
 
 # instance fields
-.field private final mEmojiTextViewHelper:Lz3/i;
+.field private final mEmojiTextViewHelper:LJ1/i;
+    .annotation build Landroidx/annotation/NonNull;
+    .end annotation
+.end field
 
 .field private final mView:Landroid/widget/TextView;
+    .annotation build Landroidx/annotation/NonNull;
+    .end annotation
+.end field
 
 
 # direct methods
 .method public constructor <init>(Landroid/widget/TextView;)V
     .locals 1
+    .param p1    # Landroid/widget/TextView;
+        .annotation build Landroidx/annotation/NonNull;
+        .end annotation
+    .end param
 
     .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -23,16 +33,16 @@
 
     .line 5
     .line 6
-    new-instance v0, Lz3/i;
+    new-instance v0, LJ1/i;
 
     .line 7
     .line 8
-    invoke-direct {v0, p1}, Lz3/i;-><init>(Landroid/widget/TextView;)V
+    invoke-direct {v0, p1}, LJ1/i;-><init>(Landroid/widget/TextView;)V
 
     .line 9
     .line 10
     .line 11
-    iput-object v0, p0, Landroidx/appcompat/widget/AppCompatEmojiTextHelper;->mEmojiTextViewHelper:Lz3/i;
+    iput-object v0, p0, Landroidx/appcompat/widget/AppCompatEmojiTextHelper;->mEmojiTextViewHelper:LJ1/i;
 
     .line 12
     .line 13
@@ -43,17 +53,23 @@
 # virtual methods
 .method public getFilters([Landroid/text/InputFilter;)[Landroid/text/InputFilter;
     .locals 1
+    .param p1    # [Landroid/text/InputFilter;
+        .annotation build Landroidx/annotation/NonNull;
+        .end annotation
+    .end param
+    .annotation build Landroidx/annotation/NonNull;
+    .end annotation
 
     .line 1
-    iget-object v0, p0, Landroidx/appcompat/widget/AppCompatEmojiTextHelper;->mEmojiTextViewHelper:Lz3/i;
+    iget-object v0, p0, Landroidx/appcompat/widget/AppCompatEmojiTextHelper;->mEmojiTextViewHelper:LJ1/i;
 
     .line 2
     .line 3
-    iget-object v0, v0, Lz3/i;->a:Landroidx/compose/ui/text/input/n;
+    iget-object v0, v0, LJ1/i;->a:LB2/f;
 
     .line 4
     .line 5
-    invoke-virtual {v0, p1}, Landroidx/compose/ui/text/input/n;->h([Landroid/text/InputFilter;)[Landroid/text/InputFilter;
+    invoke-virtual {v0, p1}, LB2/f;->k([Landroid/text/InputFilter;)[Landroid/text/InputFilter;
 
     .line 6
     .line 7
@@ -68,15 +84,15 @@
     .locals 1
 
     .line 1
-    iget-object v0, p0, Landroidx/appcompat/widget/AppCompatEmojiTextHelper;->mEmojiTextViewHelper:Lz3/i;
+    iget-object v0, p0, Landroidx/appcompat/widget/AppCompatEmojiTextHelper;->mEmojiTextViewHelper:LJ1/i;
 
     .line 2
     .line 3
-    iget-object v0, v0, Lz3/i;->a:Landroidx/compose/ui/text/input/n;
+    iget-object v0, v0, LJ1/i;->a:LB2/f;
 
     .line 4
     .line 5
-    invoke-virtual {v0}, Landroidx/compose/ui/text/input/n;->j()Z
+    invoke-virtual {v0}, LB2/f;->p()Z
 
     .line 6
     .line 7
@@ -89,6 +105,10 @@
 
 .method public loadFromAttributes(Landroid/util/AttributeSet;I)V
     .locals 3
+    .param p1    # Landroid/util/AttributeSet;
+        .annotation build Landroidx/annotation/Nullable;
+        .end annotation
+    .end param
 
     .line 1
     iget-object v0, p0, Landroidx/appcompat/widget/AppCompatEmojiTextHelper;->mView:Landroid/widget/TextView;
@@ -103,7 +123,7 @@
     move-result-object v0
 
     .line 7
-    sget-object v1, Lg/j;->AppCompatTextView:[I
+    sget-object v1, Li/j;->AppCompatTextView:[I
 
     .line 8
     .line 9
@@ -119,7 +139,7 @@
 
     .line 14
     :try_start_0
-    sget p2, Lg/j;->AppCompatTextView_emojiCompatEnabled:I
+    sget p2, Li/j;->AppCompatTextView_emojiCompatEnabled:I
 
     .line 15
     .line 16
@@ -138,7 +158,7 @@
 
     .line 22
     .line 23
-    sget p2, Lg/j;->AppCompatTextView_emojiCompatEnabled:I
+    sget p2, Li/j;->AppCompatTextView_emojiCompatEnabled:I
 
     .line 24
     .line 25
@@ -190,15 +210,15 @@
     .locals 1
 
     .line 1
-    iget-object v0, p0, Landroidx/appcompat/widget/AppCompatEmojiTextHelper;->mEmojiTextViewHelper:Lz3/i;
+    iget-object v0, p0, Landroidx/appcompat/widget/AppCompatEmojiTextHelper;->mEmojiTextViewHelper:LJ1/i;
 
     .line 2
     .line 3
-    iget-object v0, v0, Lz3/i;->a:Landroidx/compose/ui/text/input/n;
+    iget-object v0, v0, LJ1/i;->a:LB2/f;
 
     .line 4
     .line 5
-    invoke-virtual {v0, p1}, Landroidx/compose/ui/text/input/n;->l(Z)V
+    invoke-virtual {v0, p1}, LB2/f;->y(Z)V
 
     .line 6
     .line 7
@@ -210,15 +230,15 @@
     .locals 1
 
     .line 1
-    iget-object v0, p0, Landroidx/appcompat/widget/AppCompatEmojiTextHelper;->mEmojiTextViewHelper:Lz3/i;
+    iget-object v0, p0, Landroidx/appcompat/widget/AppCompatEmojiTextHelper;->mEmojiTextViewHelper:LJ1/i;
 
     .line 2
     .line 3
-    iget-object v0, v0, Lz3/i;->a:Landroidx/compose/ui/text/input/n;
+    iget-object v0, v0, LJ1/i;->a:LB2/f;
 
     .line 4
     .line 5
-    invoke-virtual {v0, p1}, Landroidx/compose/ui/text/input/n;->m(Z)V
+    invoke-virtual {v0, p1}, LB2/f;->z(Z)V
 
     .line 6
     .line 7
@@ -228,17 +248,23 @@
 
 .method public wrapTransformationMethod(Landroid/text/method/TransformationMethod;)Landroid/text/method/TransformationMethod;
     .locals 1
+    .param p1    # Landroid/text/method/TransformationMethod;
+        .annotation build Landroidx/annotation/Nullable;
+        .end annotation
+    .end param
+    .annotation build Landroidx/annotation/Nullable;
+    .end annotation
 
     .line 1
-    iget-object v0, p0, Landroidx/appcompat/widget/AppCompatEmojiTextHelper;->mEmojiTextViewHelper:Lz3/i;
+    iget-object v0, p0, Landroidx/appcompat/widget/AppCompatEmojiTextHelper;->mEmojiTextViewHelper:LJ1/i;
 
     .line 2
     .line 3
-    iget-object v0, v0, Lz3/i;->a:Landroidx/compose/ui/text/input/n;
+    iget-object v0, v0, LJ1/i;->a:LB2/f;
 
     .line 4
     .line 5
-    invoke-virtual {v0, p1}, Landroidx/compose/ui/text/input/n;->n(Landroid/text/method/TransformationMethod;)Landroid/text/method/TransformationMethod;
+    invoke-virtual {v0, p1}, LB2/f;->E(Landroid/text/method/TransformationMethod;)Landroid/text/method/TransformationMethod;
 
     .line 6
     .line 7

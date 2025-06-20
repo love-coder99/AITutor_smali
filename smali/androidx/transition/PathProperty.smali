@@ -143,9 +143,9 @@
         }
     .end annotation
 
+    .line 2
     iget p1, p0, Landroidx/transition/PathProperty;->mCurrentFraction:F
 
-    .line 2
     invoke-static {p1}, Ljava/lang/Float;->valueOf(F)Ljava/lang/Float;
 
     move-result-object p1
@@ -181,11 +181,11 @@
 
     iput v0, p0, Landroidx/transition/PathProperty;->mCurrentFraction:F
 
+    .line 3
     iget-object v0, p0, Landroidx/transition/PathProperty;->mPathMeasure:Landroid/graphics/PathMeasure;
 
     iget v1, p0, Landroidx/transition/PathProperty;->mPathLength:F
 
-    .line 3
     invoke-virtual {p2}, Ljava/lang/Float;->floatValue()F
 
     move-result p2
@@ -198,13 +198,13 @@
 
     invoke-virtual {v0, p2, v1, v2}, Landroid/graphics/PathMeasure;->getPosTan(F[F[F)Z
 
+    .line 4
     iget-object p2, p0, Landroidx/transition/PathProperty;->mPointF:Landroid/graphics/PointF;
 
     iget-object v0, p0, Landroidx/transition/PathProperty;->mPosition:[F
 
     const/4 v1, 0x0
 
-    .line 4
     aget v1, v0, v1
 
     iput v1, p2, Landroid/graphics/PointF;->x:F
@@ -216,9 +216,9 @@
 
     iput v0, p2, Landroid/graphics/PointF;->y:F
 
+    .line 6
     iget-object v0, p0, Landroidx/transition/PathProperty;->mProperty:Landroid/util/Property;
 
-    .line 6
     invoke-virtual {v0, p1, p2}, Landroid/util/Property;->set(Ljava/lang/Object;Ljava/lang/Object;)V
 
     return-void

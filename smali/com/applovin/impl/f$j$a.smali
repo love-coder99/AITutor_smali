@@ -29,9 +29,9 @@
 .method public constructor <init>(Lcom/applovin/impl/f$j;)V
     .locals 0
 
+    .line 1
     iput-object p1, p0, Lcom/applovin/impl/f$j$a;->c:Lcom/applovin/impl/f$j;
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 2
@@ -52,9 +52,9 @@
 .method public constructor <init>(Lcom/applovin/impl/f$j;Ljava/util/Iterator;)V
     .locals 0
 
+    .line 4
     iput-object p1, p0, Lcom/applovin/impl/f$j$a;->c:Lcom/applovin/impl/f$j;
 
-    .line 4
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 5
@@ -62,6 +62,7 @@
 
     iput-object p1, p0, Lcom/applovin/impl/f$j$a;->b:Ljava/util/Collection;
 
+    .line 6
     iput-object p2, p0, Lcom/applovin/impl/f$j$a;->a:Ljava/util/Iterator;
 
     return-void

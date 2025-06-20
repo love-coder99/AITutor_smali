@@ -4,8 +4,24 @@
 
 
 # virtual methods
-.method public abstract onItemHoverEnter(Landroidx/appcompat/view/menu/p;Landroid/view/MenuItem;)V
+.method public abstract onItemHoverEnter(Landroidx/appcompat/view/menu/n;Landroid/view/MenuItem;)V
+    .param p1    # Landroidx/appcompat/view/menu/n;
+        .annotation build Landroidx/annotation/NonNull;
+        .end annotation
+    .end param
+    .param p2    # Landroid/view/MenuItem;
+        .annotation build Landroidx/annotation/NonNull;
+        .end annotation
+    .end param
 .end method
 
-.method public abstract onItemHoverExit(Landroidx/appcompat/view/menu/p;Landroid/view/MenuItem;)V
+.method public abstract onItemHoverExit(Landroidx/appcompat/view/menu/n;Landroid/view/MenuItem;)V
+    .param p1    # Landroidx/appcompat/view/menu/n;
+        .annotation build Landroidx/annotation/NonNull;
+        .end annotation
+    .end param
+    .param p2    # Landroid/view/MenuItem;
+        .annotation build Landroidx/annotation/NonNull;
+        .end annotation
+    .end param
 .end method

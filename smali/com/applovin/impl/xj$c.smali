@@ -29,11 +29,13 @@
     .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
+    .line 2
     iput-object p1, p0, Lcom/applovin/impl/xj$c;->a:Lcom/applovin/impl/yj;
 
+    .line 3
     iput-wide p2, p0, Lcom/applovin/impl/xj$c;->b:J
 
-    .line 2
+    .line 4
     invoke-static {}, Landroid/os/SystemClock;->elapsedRealtime()J
 
     move-result-wide p1
@@ -46,7 +48,7 @@
 .method public synthetic constructor <init>(Lcom/applovin/impl/yj;JLcom/applovin/impl/xj$a;)V
     .locals 0
 
-    .line 3
+    .line 5
     invoke-direct {p0, p1, p2, p3}, Lcom/applovin/impl/xj$c;-><init>(Lcom/applovin/impl/yj;J)V
 
     return-void
@@ -55,7 +57,7 @@
 .method public static synthetic a(Lcom/applovin/impl/xj$c;)Z
     .locals 0
 
-    .line 2
+    .line 1
     invoke-direct {p0}, Lcom/applovin/impl/xj$c;->d()Z
 
     move-result p0
@@ -66,7 +68,7 @@
 .method public static synthetic b(Lcom/applovin/impl/xj$c;)Lcom/applovin/impl/yj;
     .locals 0
 
-    .line 2
+    .line 1
     iget-object p0, p0, Lcom/applovin/impl/xj$c;->a:Lcom/applovin/impl/yj;
 
     return-object p0
@@ -122,7 +124,7 @@
 .method public a()J
     .locals 2
 
-    .line 1
+    .line 3
     iget-wide v0, p0, Lcom/applovin/impl/xj$c;->c:J
 
     return-wide v0
@@ -131,7 +133,7 @@
 .method public a(Ljava/lang/Object;)Z
     .locals 0
 
-    .line 3
+    .line 2
     instance-of p1, p1, Lcom/applovin/impl/xj$c;
 
     return p1
@@ -140,7 +142,7 @@
 .method public b()J
     .locals 2
 
-    .line 1
+    .line 2
     iget-wide v0, p0, Lcom/applovin/impl/xj$c;->b:J
 
     return-wide v0
@@ -149,8 +151,11 @@
 .method public c()Lcom/applovin/impl/yj;
     .locals 1
 
+    .line 1
     iget-object v0, p0, Lcom/applovin/impl/xj$c;->a:Lcom/applovin/impl/yj;
 
+    .line 2
+    .line 3
     return-object v0
 .end method
 
@@ -476,7 +481,7 @@
 
     .line 37
     .line 38
-    invoke-static {v0, v1, v2, v3}, Landroid/support/v4/media/session/a;->G(Ljava/lang/StringBuilder;JLjava/lang/String;)Ljava/lang/String;
+    invoke-static {v1, v2, v3, v0}, LB/u;->q(JLjava/lang/String;Ljava/lang/StringBuilder;)Ljava/lang/String;
 
     .line 39
     .line 40

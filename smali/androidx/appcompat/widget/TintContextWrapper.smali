@@ -47,6 +47,10 @@
 
 .method private constructor <init>(Landroid/content/Context;)V
     .locals 2
+    .param p1    # Landroid/content/Context;
+        .annotation build Landroidx/annotation/NonNull;
+        .end annotation
+    .end param
 
     .line 1
     invoke-direct {p0, p1}, Landroid/content/ContextWrapper;-><init>(Landroid/content/Context;)V
@@ -150,6 +154,10 @@
 
 .method private static shouldWrap(Landroid/content/Context;)Z
     .locals 1
+    .param p0    # Landroid/content/Context;
+        .annotation build Landroidx/annotation/NonNull;
+        .end annotation
+    .end param
 
     .line 1
     instance-of v0, p0, Landroidx/appcompat/widget/TintContextWrapper;
@@ -217,6 +225,10 @@
 
 .method public static wrap(Landroid/content/Context;)Landroid/content/Context;
     .locals 4
+    .param p0    # Landroid/content/Context;
+        .annotation build Landroidx/annotation/NonNull;
+        .end annotation
+    .end param
 
     .line 1
     invoke-static {p0}, Landroidx/appcompat/widget/TintContextWrapper;->shouldWrap(Landroid/content/Context;)Z
@@ -502,8 +514,11 @@
 .method public getResources()Landroid/content/res/Resources;
     .locals 1
 
+    .line 1
     iget-object v0, p0, Landroidx/appcompat/widget/TintContextWrapper;->mResources:Landroid/content/res/Resources;
 
+    .line 2
+    .line 3
     return-object v0
 .end method
 

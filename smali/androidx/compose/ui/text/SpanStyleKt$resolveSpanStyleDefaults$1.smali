@@ -3,14 +3,14 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lzh/a;
+.implements Lka/a;
 
 
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "Lkotlin/jvm/internal/Lambda;",
-        "Lzh/a;"
+        "Lka/a;"
     }
 .end annotation
 
@@ -66,7 +66,7 @@
     .locals 1
 
     .line 1
-    sget-object v0, Landroidx/compose/ui/text/b0;->d:Landroidx/compose/ui/text/style/m;
+    sget-object v0, Landroidx/compose/ui/text/B;->d:Landroidx/compose/ui/text/style/m;
 
     return-object v0
 .end method

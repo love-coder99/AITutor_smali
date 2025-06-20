@@ -54,17 +54,20 @@
 .method public a()V
     .locals 1
 
-    .line 1
     const/4 v0, 0x0
 
+    .line 18
     iput-boolean v0, p0, Lcom/applovin/impl/fa$b;->b:Z
 
+    .line 19
     iput-boolean v0, p0, Lcom/applovin/impl/fa$b;->c:Z
 
+    .line 20
     iput-boolean v0, p0, Lcom/applovin/impl/fa$b;->d:Z
 
     const/4 v0, -0x1
 
+    .line 21
     iput v0, p0, Lcom/applovin/impl/fa$b;->e:I
 
     return-void
@@ -73,11 +76,12 @@
 .method public a(IJ)V
     .locals 4
 
-    .line 2
+    .line 12
     iput p1, p0, Lcom/applovin/impl/fa$b;->e:I
 
     const/4 v0, 0x0
 
+    .line 13
     iput-boolean v0, p0, Lcom/applovin/impl/fa$b;->d:Z
 
     const/4 v1, 0x1
@@ -101,6 +105,7 @@
     :goto_0
     const/4 v3, 0x1
 
+    .line 14
     :goto_1
     iput-boolean v3, p0, Lcom/applovin/impl/fa$b;->b:Z
 
@@ -111,11 +116,14 @@
     :cond_2
     const/4 v1, 0x0
 
+    .line 15
     :goto_2
     iput-boolean v1, p0, Lcom/applovin/impl/fa$b;->c:Z
 
+    .line 16
     iput v0, p0, Lcom/applovin/impl/fa$b;->f:I
 
+    .line 17
     iput-wide p2, p0, Lcom/applovin/impl/fa$b;->h:J
 
     return-void
@@ -124,6 +132,7 @@
 .method public a(JIZ)V
     .locals 7
 
+    .line 6
     iget v0, p0, Lcom/applovin/impl/fa$b;->e:I
 
     const/16 v1, 0xb6
@@ -144,23 +153,26 @@
 
     if-eqz p4, :cond_0
 
+    .line 7
     iget-wide v3, p0, Lcom/applovin/impl/fa$b;->g:J
 
     sub-long v3, p1, v3
 
     long-to-int v4, v3
 
+    .line 8
     iget-boolean v3, p0, Lcom/applovin/impl/fa$b;->d:Z
 
+    .line 9
     iget-object v0, p0, Lcom/applovin/impl/fa$b;->a:Lcom/applovin/impl/qo;
 
     const/4 v6, 0x0
 
     move v5, p3
 
-    .line 4
     invoke-interface/range {v0 .. v6}, Lcom/applovin/impl/qo;->a(JIIILcom/applovin/impl/qo$a;)V
 
+    .line 10
     :cond_0
     iget p3, p0, Lcom/applovin/impl/fa$b;->e:I
 
@@ -168,6 +180,7 @@
 
     if-eq p3, p4, :cond_1
 
+    .line 11
     iput-wide p1, p0, Lcom/applovin/impl/fa$b;->g:J
 
     :cond_1
@@ -177,12 +190,14 @@
 .method public a([BII)V
     .locals 2
 
+    .line 1
     iget-boolean v0, p0, Lcom/applovin/impl/fa$b;->c:Z
 
     if-eqz v0, :cond_2
 
     add-int/lit8 v0, p2, 0x1
 
+    .line 2
     iget v1, p0, Lcom/applovin/impl/fa$b;->f:I
 
     sub-int/2addr v0, v1
@@ -210,6 +225,7 @@
     :goto_0
     iput-boolean p1, p0, Lcom/applovin/impl/fa$b;->d:Z
 
+    .line 4
     iput-boolean p2, p0, Lcom/applovin/impl/fa$b;->c:Z
 
     goto :goto_1
@@ -219,6 +235,7 @@
 
     add-int/2addr p3, v1
 
+    .line 5
     iput p3, p0, Lcom/applovin/impl/fa$b;->f:I
 
     :cond_2

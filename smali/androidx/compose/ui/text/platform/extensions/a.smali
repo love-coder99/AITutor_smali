@@ -30,7 +30,7 @@
 
 
 # virtual methods
-.method public final a(Ld2/c;)Ljava/lang/Object;
+.method public final a(LI0/b;)Ljava/lang/Object;
     .locals 2
 
     .line 1
@@ -42,7 +42,7 @@
 
     .line 4
     .line 5
-    invoke-static {p1, v1}, Lkotlin/collections/r;->x0(Ljava/lang/Iterable;I)I
+    invoke-static {p1, v1}, LY9/s;->D(Ljava/lang/Iterable;I)I
 
     .line 6
     .line 7
@@ -55,7 +55,7 @@
     .line 10
     .line 11
     .line 12
-    iget-object p1, p1, Ld2/c;->b:Ljava/util/List;
+    iget-object p1, p1, LI0/b;->b:Ljava/util/List;
 
     .line 13
     .line 14
@@ -88,11 +88,11 @@
     move-result-object v1
 
     .line 28
-    check-cast v1, Ld2/b;
+    check-cast v1, LI0/a;
 
     .line 29
     .line 30
-    iget-object v1, v1, Ld2/b;->a:Ljava/util/Locale;
+    iget-object v1, v1, LI0/a;->a:Ljava/util/Locale;
 
     .line 31
     .line 32
@@ -139,7 +139,7 @@
 
     .line 51
     .line 52
-    invoke-static {p1}, Landroidx/appcompat/app/e0;->f([Ljava/util/Locale;)Landroid/os/LocaleList;
+    invoke-static {p1}, LC7/d;->h([Ljava/util/Locale;)Landroid/os/LocaleList;
 
     .line 53
     .line 54
@@ -147,7 +147,7 @@
     move-result-object p1
 
     .line 56
-    invoke-static {p1}, Landroidx/appcompat/app/e0;->g(Landroid/os/LocaleList;)Landroid/text/style/LocaleSpan;
+    invoke-static {p1}, Landroidx/compose/ui/graphics/A;->f(Landroid/os/LocaleList;)Landroid/text/style/LocaleSpan;
 
     .line 57
     .line 58
@@ -158,7 +158,7 @@
     return-object p1
 .end method
 
-.method public final b(Landroidx/compose/ui/text/platform/d;Ld2/c;)V
+.method public final b(Landroidx/compose/ui/text/platform/d;LI0/b;)V
     .locals 2
 
     .line 1
@@ -170,7 +170,7 @@
 
     .line 4
     .line 5
-    invoke-static {p2, v1}, Lkotlin/collections/r;->x0(Ljava/lang/Iterable;I)I
+    invoke-static {p2, v1}, LY9/s;->D(Ljava/lang/Iterable;I)I
 
     .line 6
     .line 7
@@ -183,7 +183,7 @@
     .line 10
     .line 11
     .line 12
-    iget-object p2, p2, Ld2/c;->b:Ljava/util/List;
+    iget-object p2, p2, LI0/b;->b:Ljava/util/List;
 
     .line 13
     .line 14
@@ -216,11 +216,11 @@
     move-result-object v1
 
     .line 28
-    check-cast v1, Ld2/b;
+    check-cast v1, LI0/a;
 
     .line 29
     .line 30
-    iget-object v1, v1, Ld2/b;->a:Ljava/util/Locale;
+    iget-object v1, v1, LI0/a;->a:Ljava/util/Locale;
 
     .line 31
     .line 32
@@ -267,7 +267,7 @@
 
     .line 51
     .line 52
-    invoke-static {p2}, Landroidx/appcompat/app/e0;->f([Ljava/util/Locale;)Landroid/os/LocaleList;
+    invoke-static {p2}, LC7/d;->h([Ljava/util/Locale;)Landroid/os/LocaleList;
 
     .line 53
     .line 54
@@ -275,7 +275,7 @@
     move-result-object p2
 
     .line 56
-    invoke-static {p1, p2}, Landroidx/appcompat/app/e0;->w(Landroidx/compose/ui/text/platform/d;Landroid/os/LocaleList;)V
+    invoke-static {p1, p2}, Landroidx/compose/ui/graphics/A;->w(Landroidx/compose/ui/text/platform/d;Landroid/os/LocaleList;)V
 
     .line 57
     .line 58

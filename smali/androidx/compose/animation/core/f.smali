@@ -1,31 +1,19 @@
-.class public final Landroidx/compose/animation/core/f;
+.class public final Landroidx/compose/animation/core/F;
 .super Ljava/lang/Object;
 .source "SourceFile"
 
 
 # instance fields
-.field public final a:Landroidx/compose/animation/core/j1;
+.field public a:I
 
-.field public final b:Ljava/lang/Object;
+.field public b:I
 
-.field public final c:J
-
-.field public final d:Lzh/a;
-
-.field public final e:Landroidx/compose/runtime/ParcelableSnapshotMutableState;
-
-.field public f:Landroidx/compose/animation/core/m;
-
-.field public g:J
-
-.field public h:J
-
-.field public final i:Landroidx/compose/runtime/ParcelableSnapshotMutableState;
+.field public final c:Landroidx/collection/s;
 
 
 # direct methods
-.method public constructor <init>(Ljava/lang/Object;Landroidx/compose/animation/core/j1;Landroidx/compose/animation/core/m;JLjava/lang/Object;JLzh/a;)V
-    .locals 0
+.method public constructor <init>()V
+    .locals 1
 
     .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -33,77 +21,68 @@
     .line 2
     .line 3
     .line 4
-    iput-object p2, p0, Landroidx/compose/animation/core/f;->a:Landroidx/compose/animation/core/j1;
+    const/16 v0, 0x12c
 
     .line 5
     .line 6
-    iput-object p6, p0, Landroidx/compose/animation/core/f;->b:Ljava/lang/Object;
+    iput v0, p0, Landroidx/compose/animation/core/F;->a:I
 
     .line 7
     .line 8
-    iput-wide p7, p0, Landroidx/compose/animation/core/f;->c:J
+    sget-object v0, Landroidx/collection/k;->a:Landroidx/collection/s;
 
     .line 9
     .line 10
-    iput-object p9, p0, Landroidx/compose/animation/core/f;->d:Lzh/a;
+    new-instance v0, Landroidx/collection/s;
 
     .line 11
     .line 12
-    sget-object p2, Landroidx/compose/runtime/g3;->a:Landroidx/compose/runtime/g3;
+    invoke-direct {v0}, Landroidx/collection/s;-><init>()V
 
     .line 13
     .line 14
-    invoke-static {p1, p2}, Lma/a;->Z(Ljava/lang/Object;Landroidx/compose/runtime/u2;)Landroidx/compose/runtime/ParcelableSnapshotMutableState;
-
     .line 15
+    iput-object v0, p0, Landroidx/compose/animation/core/F;->c:Landroidx/collection/s;
+
     .line 16
     .line 17
-    move-result-object p1
-
-    .line 18
-    iput-object p1, p0, Landroidx/compose/animation/core/f;->e:Landroidx/compose/runtime/ParcelableSnapshotMutableState;
-
-    .line 19
-    .line 20
-    invoke-static {p3}, Landroidx/compose/animation/core/b;->k(Landroidx/compose/animation/core/m;)Landroidx/compose/animation/core/m;
-
-    .line 21
-    .line 22
-    .line 23
-    move-result-object p1
-
-    .line 24
-    iput-object p1, p0, Landroidx/compose/animation/core/f;->f:Landroidx/compose/animation/core/m;
-
-    .line 25
-    .line 26
-    iput-wide p4, p0, Landroidx/compose/animation/core/f;->g:J
-
-    .line 27
-    .line 28
-    const-wide/high16 p3, -0x8000000000000000L
-
-    .line 29
-    .line 30
-    iput-wide p3, p0, Landroidx/compose/animation/core/f;->h:J
-
-    .line 31
-    .line 32
-    sget-object p1, Ljava/lang/Boolean;->TRUE:Ljava/lang/Boolean;
-
-    .line 33
-    .line 34
-    invoke-static {p1, p2}, Lma/a;->Z(Ljava/lang/Object;Landroidx/compose/runtime/u2;)Landroidx/compose/runtime/ParcelableSnapshotMutableState;
-
-    .line 35
-    .line 36
-    .line 37
-    move-result-object p1
-
-    .line 38
-    iput-object p1, p0, Landroidx/compose/animation/core/f;->i:Landroidx/compose/runtime/ParcelableSnapshotMutableState;
-
-    .line 39
-    .line 40
     return-void
+.end method
+
+
+# virtual methods
+.method public final a(Ljava/lang/Float;I)Landroidx/compose/animation/core/E;
+    .locals 2
+
+    .line 1
+    new-instance v0, Landroidx/compose/animation/core/E;
+
+    .line 2
+    .line 3
+    sget-object v1, Landroidx/compose/animation/core/v;->b:LC7/q;
+
+    .line 4
+    .line 5
+    invoke-direct {v0, p1, v1}, Landroidx/compose/animation/core/E;-><init>(Ljava/lang/Float;Landroidx/compose/animation/core/t;)V
+
+    .line 6
+    .line 7
+    .line 8
+    const/4 p1, 0x0
+
+    .line 9
+    iput p1, v0, Landroidx/compose/animation/core/E;->c:I
+
+    .line 10
+    .line 11
+    iget-object p1, p0, Landroidx/compose/animation/core/F;->c:Landroidx/collection/s;
+
+    .line 12
+    .line 13
+    invoke-virtual {p1, p2, v0}, Landroidx/collection/s;->i(ILjava/lang/Object;)V
+
+    .line 14
+    .line 15
+    .line 16
+    return-object v0
 .end method

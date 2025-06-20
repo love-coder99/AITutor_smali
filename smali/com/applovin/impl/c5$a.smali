@@ -1,5 +1,5 @@
 .class Lcom/applovin/impl/c5$a;
-.super Lp/q;
+.super Ls/o;
 .source "SourceFile"
 
 
@@ -37,7 +37,7 @@
 
 
 # virtual methods
-.method public onCustomTabsServiceConnected(Landroid/content/ComponentName;Lp/j;)V
+.method public onCustomTabsServiceConnected(Landroid/content/ComponentName;Ls/h;)V
     .locals 3
 
     .line 1
@@ -130,7 +130,7 @@
 
     .line 46
     .line 47
-    invoke-static {p1, p2}, Lcom/applovin/impl/c5;->a(Lcom/applovin/impl/c5;Lp/j;)Lp/j;
+    invoke-static {p1, p2}, Lcom/applovin/impl/c5;->a(Lcom/applovin/impl/c5;Ls/h;)Ls/h;
 
     .line 48
     .line 49
@@ -234,7 +234,7 @@
     const/4 v0, 0x0
 
     .line 48
-    invoke-static {p1, v0}, Lcom/applovin/impl/c5;->a(Lcom/applovin/impl/c5;Lp/j;)Lp/j;
+    invoke-static {p1, v0}, Lcom/applovin/impl/c5;->a(Lcom/applovin/impl/c5;Ls/h;)Ls/h;
 
     .line 49
     .line 50

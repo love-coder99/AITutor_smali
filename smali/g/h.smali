@@ -1,61 +1,82 @@
-.class public abstract Lg/h;
+.class public final synthetic LG/h;
 .super Ljava/lang/Object;
 .source "SourceFile"
 
+# interfaces
+.implements Ljava/lang/Runnable;
 
-# static fields
-.field public static abc_action_bar_home_description:I = 0x7f130000
 
-.field public static abc_action_bar_up_description:I = 0x7f130001
+# instance fields
+.field public final synthetic b:I
 
-.field public static abc_action_menu_overflow_description:I = 0x7f130002
+.field public final synthetic c:Ljava/util/concurrent/ScheduledFuture;
 
-.field public static abc_action_mode_done:I = 0x7f130003
 
-.field public static abc_activity_chooser_view_see_all:I = 0x7f130004
+# direct methods
+.method public synthetic constructor <init>(Ljava/util/concurrent/ScheduledFuture;I)V
+    .locals 0
 
-.field public static abc_activitychooserview_choose_application:I = 0x7f130005
+    .line 1
+    iput p2, p0, LG/h;->b:I
 
-.field public static abc_capital_off:I = 0x7f130006
+    iput-object p1, p0, LG/h;->c:Ljava/util/concurrent/ScheduledFuture;
 
-.field public static abc_capital_on:I = 0x7f130007
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-.field public static abc_menu_alt_shortcut_label:I = 0x7f130008
+    return-void
+.end method
 
-.field public static abc_menu_ctrl_shortcut_label:I = 0x7f130009
 
-.field public static abc_menu_delete_shortcut_label:I = 0x7f13000a
+# virtual methods
+.method public final run()V
+    .locals 2
 
-.field public static abc_menu_enter_shortcut_label:I = 0x7f13000b
+    .line 1
+    iget v0, p0, LG/h;->b:I
 
-.field public static abc_menu_function_shortcut_label:I = 0x7f13000c
+    .line 2
+    .line 3
+    packed-switch v0, :pswitch_data_0
 
-.field public static abc_menu_meta_shortcut_label:I = 0x7f13000d
+    .line 4
+    .line 5
+    .line 6
+    const/4 v0, 0x1
 
-.field public static abc_menu_shift_shortcut_label:I = 0x7f13000e
+    .line 7
+    iget-object v1, p0, LG/h;->c:Ljava/util/concurrent/ScheduledFuture;
 
-.field public static abc_menu_space_shortcut_label:I = 0x7f13000f
+    .line 8
+    .line 9
+    invoke-interface {v1, v0}, Ljava/util/concurrent/Future;->cancel(Z)Z
 
-.field public static abc_menu_sym_shortcut_label:I = 0x7f130010
+    .line 10
+    .line 11
+    .line 12
+    return-void
 
-.field public static abc_prepend_shortcut_label:I = 0x7f130011
+    .line 13
+    :pswitch_0
+    const/4 v0, 0x1
 
-.field public static abc_search_hint:I = 0x7f130012
+    .line 14
+    iget-object v1, p0, LG/h;->c:Ljava/util/concurrent/ScheduledFuture;
 
-.field public static abc_searchview_description_clear:I = 0x7f130013
+    .line 15
+    .line 16
+    invoke-interface {v1, v0}, Ljava/util/concurrent/Future;->cancel(Z)Z
 
-.field public static abc_searchview_description_query:I = 0x7f130014
+    .line 17
+    .line 18
+    .line 19
+    return-void
 
-.field public static abc_searchview_description_search:I = 0x7f130015
+    .line 20
+    nop
 
-.field public static abc_searchview_description_submit:I = 0x7f130016
-
-.field public static abc_searchview_description_voice:I = 0x7f130017
-
-.field public static abc_shareactionprovider_share_with:I = 0x7f130018
-
-.field public static abc_shareactionprovider_share_with_application:I = 0x7f130019
-
-.field public static abc_toolbar_collapse_description:I = 0x7f13001a
-
-.field public static search_menu_title:I = 0x7f130220
+    .line 21
+    :pswitch_data_0
+    .packed-switch 0x0
+        :pswitch_0
+    .end packed-switch
+.end method

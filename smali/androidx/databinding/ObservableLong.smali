@@ -30,15 +30,15 @@
     .locals 2
 
     .line 1
-    new-instance v0, Landroid/support/v4/media/a;
+    new-instance v0, LX7/a;
 
     .line 2
     .line 3
-    const/16 v1, 0x16
+    const/16 v1, 0x11
 
     .line 4
     .line 5
-    invoke-direct {v0, v1}, Landroid/support/v4/media/a;-><init>(I)V
+    invoke-direct {v0, v1}, LX7/a;-><init>(I)V
 
     .line 6
     .line 7
@@ -53,7 +53,7 @@
 .method public constructor <init>()V
     .locals 0
 
-    .line 2
+    .line 3
     invoke-direct {p0}, Landroidx/databinding/c;-><init>()V
 
     return-void
@@ -65,16 +65,17 @@
     .line 1
     invoke-direct {p0}, Landroidx/databinding/c;-><init>()V
 
+    .line 2
     iput-wide p1, p0, Landroidx/databinding/ObservableLong;->mValue:J
 
     return-void
 .end method
 
-.method public varargs constructor <init>([Landroidx/databinding/i;)V
+.method public varargs constructor <init>([Landroidx/databinding/h;)V
     .locals 0
 
-    .line 3
-    invoke-direct {p0, p1}, Landroidx/databinding/c;-><init>([Landroidx/databinding/i;)V
+    .line 4
+    invoke-direct {p0, p1}, Landroidx/databinding/c;-><init>([Landroidx/databinding/h;)V
 
     return-void
 .end method
@@ -92,8 +93,11 @@
 .method public get()J
     .locals 2
 
+    .line 1
     iget-wide v0, p0, Landroidx/databinding/ObservableLong;->mValue:J
 
+    .line 2
+    .line 3
     return-wide v0
 .end method
 

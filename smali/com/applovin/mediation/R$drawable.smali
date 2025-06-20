@@ -321,37 +321,37 @@
 
 .field public static common_google_signin_btn_text_light_normal_background:I = 0x7f080158
 
-.field public static googleg_disabled_color_18:I = 0x7f080165
+.field public static googleg_disabled_color_18:I = 0x7f080161
 
-.field public static googleg_standard_color_18:I = 0x7f080166
+.field public static googleg_standard_color_18:I = 0x7f080162
 
-.field public static notification_action_background:I = 0x7f0802f8
+.field public static notification_action_background:I = 0x7f080316
 
-.field public static notification_bg:I = 0x7f0802f9
+.field public static notification_bg:I = 0x7f080317
 
-.field public static notification_bg_low:I = 0x7f0802fa
+.field public static notification_bg_low:I = 0x7f080318
 
-.field public static notification_bg_low_normal:I = 0x7f0802fb
+.field public static notification_bg_low_normal:I = 0x7f080319
 
-.field public static notification_bg_low_pressed:I = 0x7f0802fc
+.field public static notification_bg_low_pressed:I = 0x7f08031a
 
-.field public static notification_bg_normal:I = 0x7f0802fd
+.field public static notification_bg_normal:I = 0x7f08031b
 
-.field public static notification_bg_normal_pressed:I = 0x7f0802fe
+.field public static notification_bg_normal_pressed:I = 0x7f08031c
 
-.field public static notification_icon_background:I = 0x7f0802ff
+.field public static notification_icon_background:I = 0x7f08031d
 
-.field public static notification_template_icon_bg:I = 0x7f080301
+.field public static notification_template_icon_bg:I = 0x7f08031f
 
-.field public static notification_template_icon_low_bg:I = 0x7f080302
+.field public static notification_template_icon_low_bg:I = 0x7f080320
 
-.field public static notification_tile_bg:I = 0x7f080303
+.field public static notification_tile_bg:I = 0x7f080321
 
-.field public static notify_panel_notification_icon_bg:I = 0x7f080304
+.field public static notify_panel_notification_icon_bg:I = 0x7f080322
 
-.field public static offline_dialog_background:I = 0x7f080343
+.field public static offline_dialog_background:I = 0x7f080361
 
-.field public static offline_dialog_default_icon_42dp:I = 0x7f080344
+.field public static offline_dialog_default_icon_42dp:I = 0x7f080362
 
 
 # direct methods

@@ -15,15 +15,10 @@
     .locals 0
 
     .line 1
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
-
-    .line 2
-    .line 3
-    .line 4
     iput p1, p0, Lcom/applovin/impl/adview/r;->b:I
 
-    .line 5
-    .line 6
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
     return-void
 .end method
 
@@ -53,49 +48,45 @@
 
     .line 10
     :pswitch_0
-    sget p2, Lcom/facebook/internal/q1;->o:I
+    invoke-virtual {p1}, Landroid/view/View;->hasFocus()Z
 
     .line 11
     .line 12
-    invoke-virtual {p1}, Landroid/view/View;->hasFocus()Z
-
     .line 13
-    .line 14
-    .line 15
     move-result p2
 
-    .line 16
+    .line 14
     if-nez p2, :cond_0
+
+    .line 15
+    .line 16
+    invoke-virtual {p1}, Landroid/view/View;->requestFocus()Z
 
     .line 17
     .line 18
-    invoke-virtual {p1}, Landroid/view/View;->requestFocus()Z
-
     .line 19
-    .line 20
-    .line 21
     :cond_0
     const/4 p1, 0x0
 
-    .line 22
+    .line 20
     return p1
 
-    .line 23
+    .line 21
     :pswitch_1
-    invoke-static {p1, p2}, Lcom/applovin/impl/adview/b;->b(Landroid/view/View;Landroid/view/MotionEvent;)Z
+    invoke-static {p1, p2}, Lcom/applovin/impl/adview/b;->c(Landroid/view/View;Landroid/view/MotionEvent;)Z
 
+    .line 22
+    .line 23
     .line 24
-    .line 25
-    .line 26
     move-result p1
 
-    .line 27
+    .line 25
     return p1
 
-    .line 28
+    .line 26
     nop
 
-    .line 29
+    .line 27
     :pswitch_data_0
     .packed-switch 0x0
         :pswitch_1

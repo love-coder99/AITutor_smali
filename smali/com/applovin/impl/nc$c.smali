@@ -27,8 +27,10 @@
     .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
+    .line 2
     iput p1, p0, Lcom/applovin/impl/nc$c;->a:I
 
+    .line 3
     iput-wide p2, p0, Lcom/applovin/impl/nc$c;->b:J
 
     return-void
@@ -37,7 +39,7 @@
 .method public synthetic constructor <init>(IJLcom/applovin/impl/nc$a;)V
     .locals 0
 
-    .line 2
+    .line 4
     invoke-direct {p0, p1, p2, p3}, Lcom/applovin/impl/nc$c;-><init>(IJ)V
 
     return-void
@@ -46,7 +48,7 @@
 .method public static synthetic a(Lcom/applovin/impl/nc$c;)I
     .locals 0
 
-    .line 2
+    .line 1
     iget p0, p0, Lcom/applovin/impl/nc$c;->a:I
 
     return p0
@@ -68,7 +70,7 @@
 .method public a()Z
     .locals 2
 
-    .line 1
+    .line 2
     iget v0, p0, Lcom/applovin/impl/nc$c;->a:I
 
     const/4 v1, 0x1

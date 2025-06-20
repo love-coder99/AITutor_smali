@@ -7,11 +7,7 @@
 
 
 # static fields
-.field public static final b:Z
-
-
-# instance fields
-.field public final a:Landroidx/compose/animation/core/g0;
+.field public static final a:Z
 
 
 # direct methods
@@ -53,11 +49,11 @@
     move-result-object v4
 
     .line 16
-    const-string v5, "INFINITE_TRANSITION"
+    const-string v5, "UNSUPPORTED"
 
     .line 17
     .line 18
-    invoke-static {v4, v5}, Lrb/h;->d(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v4, v5}, Lkotlin/jvm/internal/h;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     .line 19
     .line 20
@@ -85,14 +81,14 @@
     .line 29
     :cond_1
     :goto_1
-    sput-boolean v2, Landroidx/compose/ui/tooling/animation/p;->b:Z
+    sput-boolean v2, Landroidx/compose/ui/tooling/animation/p;->a:Z
 
     .line 30
     .line 31
     return-void
 .end method
 
-.method public constructor <init>(Landroidx/compose/animation/core/g0;)V
+.method public constructor <init>()V
     .locals 1
 
     .line 1
@@ -101,34 +97,14 @@
     .line 2
     .line 3
     .line 4
-    iput-object p1, p0, Landroidx/compose/ui/tooling/animation/p;->a:Landroidx/compose/animation/core/g0;
+    sget-object v0, Landroidx/compose/animation/tooling/ComposeAnimationType;->UNSUPPORTED:Landroidx/compose/animation/tooling/ComposeAnimationType;
 
     .line 5
     .line 6
-    sget-object v0, Landroidx/compose/animation/tooling/ComposeAnimationType;->INFINITE_TRANSITION:Landroidx/compose/animation/tooling/ComposeAnimationType;
+    invoke-static {}, LY9/D;->S()V
 
     .line 7
     .line 8
-    const/4 v0, 0x0
-
     .line 9
-    invoke-static {v0}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
-
-    .line 10
-    .line 11
-    .line 12
-    move-result-object v0
-
-    .line 13
-    invoke-static {v0}, Lya/m1;->m(Ljava/lang/Object;)V
-
-    .line 14
-    .line 15
-    .line 16
-    invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
-
-    .line 17
-    .line 18
-    .line 19
     return-void
 .end method

@@ -3,14 +3,14 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lzh/c;
+.implements Lka/c;
 
 
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "Lkotlin/jvm/internal/Lambda;",
-        "Lzh/c;"
+        "Lka/c;"
     }
 .end annotation
 
@@ -58,16 +58,16 @@
     .locals 0
 
     .line 2
-    check-cast p1, Landroidx/compose/ui/text/f0;
+    check-cast p1, Landroidx/compose/ui/text/F;
 
-    invoke-virtual {p0, p1}, Landroidx/compose/material3/TextKt$Text$4;->invoke(Landroidx/compose/ui/text/f0;)V
+    invoke-virtual {p0, p1}, Landroidx/compose/material3/TextKt$Text$4;->invoke(Landroidx/compose/ui/text/F;)V
 
-    sget-object p1, Lqh/r;->a:Lqh/r;
+    sget-object p1, LX9/j;->a:LX9/j;
 
     return-object p1
 .end method
 
-.method public final invoke(Landroidx/compose/ui/text/f0;)V
+.method public final invoke(Landroidx/compose/ui/text/F;)V
     .locals 0
 
     .line 1

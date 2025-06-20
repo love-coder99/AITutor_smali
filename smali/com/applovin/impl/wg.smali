@@ -93,27 +93,27 @@
 .method private a([F)F
     .locals 3
 
+    .line 1
     iget-object v0, p0, Lcom/applovin/impl/wg;->b:[F
 
     const/4 v1, 0x1
 
     const/16 v2, 0x83
 
-    .line 1
     invoke-static {p1, v1, v2, v0}, Landroid/hardware/SensorManager;->remapCoordinateSystem([FII[F)Z
 
+    .line 2
     iget-object p1, p0, Lcom/applovin/impl/wg;->b:[F
 
     iget-object v0, p0, Lcom/applovin/impl/wg;->d:[F
 
-    .line 2
     invoke-static {p1, v0}, Landroid/hardware/SensorManager;->getOrientation([F[F)[F
 
+    .line 3
     iget-object p1, p0, Lcom/applovin/impl/wg;->d:[F
 
     const/4 v0, 0x2
 
-    .line 3
     aget p1, p1, v0
 
     return p1
@@ -122,9 +122,9 @@
 .method private a([FF)V
     .locals 4
 
+    .line 4
     iget-object v0, p0, Lcom/applovin/impl/wg;->g:[Lcom/applovin/impl/wg$a;
 
-    .line 4
     array-length v1, v0
 
     const/4 v2, 0x0
@@ -188,19 +188,19 @@
 
     const/16 v2, 0x81
 
+    .line 7
     :goto_0
     iget-object p2, p0, Lcom/applovin/impl/wg;->b:[F
 
-    .line 7
     array-length v1, p2
 
     const/4 v3, 0x0
 
     invoke-static {p1, v3, p2, v3, v1}, Ljava/lang/System;->arraycopy(Ljava/lang/Object;ILjava/lang/Object;II)V
 
+    .line 8
     iget-object p2, p0, Lcom/applovin/impl/wg;->b:[F
 
-    .line 8
     invoke-static {p2, v0, v2, p1}, Landroid/hardware/SensorManager;->remapCoordinateSystem([FII[F)Z
 
     :cond_3
@@ -259,13 +259,13 @@
 
     .line 23
     .line 24
-    const/4 v4, 0x0
-
-    .line 25
     const/4 v6, 0x0
 
-    .line 26
+    .line 25
     const/4 v8, 0x0
+
+    .line 26
+    const/4 v4, 0x0
 
     .line 27
     move-object v3, p1
@@ -283,22 +283,22 @@
     .locals 6
 
     .line 1
-    const/4 v1, 0x0
+    const/4 v4, 0x0
 
     .line 2
-    const/high16 v2, 0x42b40000    # 90.0f
+    const/4 v5, 0x0
 
     .line 3
+    const/4 v1, 0x0
+
     .line 4
-    const/high16 v3, 0x3f800000    # 1.0f
+    const/high16 v2, 0x42b40000    # 90.0f
 
     .line 5
     .line 6
-    const/4 v4, 0x0
+    const/high16 v3, 0x3f800000    # 1.0f
 
     .line 7
-    const/4 v5, 0x0
-
     .line 8
     move-object v0, p0
 

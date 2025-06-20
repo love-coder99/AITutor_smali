@@ -81,9 +81,9 @@
 
     invoke-direct {v0, v1, v2, v3}, Lcom/applovin/impl/v6;-><init>(Ljava/lang/Object;J)V
 
+    .line 3
     iget-object v1, p0, Lcom/applovin/impl/x4$b;->b:Lcom/applovin/impl/x4;
 
-    .line 3
     invoke-static {v1}, Lcom/applovin/impl/x4;->c(Lcom/applovin/impl/x4;)Lcom/applovin/impl/sdk/j;
 
     move-result-object v1

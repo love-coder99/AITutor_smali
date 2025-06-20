@@ -113,7 +113,7 @@
 
     .line 25
     .line 26
-    const-class v0, Lb0/h;
+    const-class v0, Landroid/support/v4/media/session/a;
 
     .line 27
     .line 28

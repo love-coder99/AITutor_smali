@@ -45,9 +45,10 @@
 
     const/4 v0, 0x1
 
+    .line 2
     iput v0, p0, Lcom/applovin/impl/k5$b;->c:I
 
-    .line 2
+    .line 3
     invoke-static {}, Ljava/util/Collections;->emptyMap()Ljava/util/Map;
 
     move-result-object v0
@@ -56,6 +57,7 @@
 
     const-wide/16 v0, -0x1
 
+    .line 4
     iput-wide v0, p0, Lcom/applovin/impl/k5$b;->g:J
 
     return-void
@@ -64,55 +66,55 @@
 .method private constructor <init>(Lcom/applovin/impl/k5;)V
     .locals 2
 
-    .line 3
+    .line 5
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 4
+    .line 6
     iget-object v0, p1, Lcom/applovin/impl/k5;->a:Landroid/net/Uri;
 
     iput-object v0, p0, Lcom/applovin/impl/k5$b;->a:Landroid/net/Uri;
 
-    .line 5
+    .line 7
     iget-wide v0, p1, Lcom/applovin/impl/k5;->b:J
 
     iput-wide v0, p0, Lcom/applovin/impl/k5$b;->b:J
 
-    .line 6
+    .line 8
     iget v0, p1, Lcom/applovin/impl/k5;->c:I
 
     iput v0, p0, Lcom/applovin/impl/k5$b;->c:I
 
-    .line 7
+    .line 9
     iget-object v0, p1, Lcom/applovin/impl/k5;->d:[B
 
     iput-object v0, p0, Lcom/applovin/impl/k5$b;->d:[B
 
-    .line 8
+    .line 10
     iget-object v0, p1, Lcom/applovin/impl/k5;->e:Ljava/util/Map;
 
     iput-object v0, p0, Lcom/applovin/impl/k5$b;->e:Ljava/util/Map;
 
-    .line 9
+    .line 11
     iget-wide v0, p1, Lcom/applovin/impl/k5;->g:J
 
     iput-wide v0, p0, Lcom/applovin/impl/k5$b;->f:J
 
-    .line 10
+    .line 12
     iget-wide v0, p1, Lcom/applovin/impl/k5;->h:J
 
     iput-wide v0, p0, Lcom/applovin/impl/k5$b;->g:J
 
-    .line 11
+    .line 13
     iget-object v0, p1, Lcom/applovin/impl/k5;->i:Ljava/lang/String;
 
     iput-object v0, p0, Lcom/applovin/impl/k5$b;->h:Ljava/lang/String;
 
-    .line 12
+    .line 14
     iget v0, p1, Lcom/applovin/impl/k5;->j:I
 
     iput v0, p0, Lcom/applovin/impl/k5$b;->i:I
 
-    .line 13
+    .line 15
     iget-object p1, p1, Lcom/applovin/impl/k5;->k:Ljava/lang/Object;
 
     iput-object p1, p0, Lcom/applovin/impl/k5$b;->j:Ljava/lang/Object;
@@ -123,7 +125,7 @@
 .method public synthetic constructor <init>(Lcom/applovin/impl/k5;Lcom/applovin/impl/k5$a;)V
     .locals 0
 
-    .line 14
+    .line 16
     invoke-direct {p0, p1}, Lcom/applovin/impl/k5$b;-><init>(Lcom/applovin/impl/k5;)V
 
     return-void
@@ -134,7 +136,7 @@
 .method public a(I)Lcom/applovin/impl/k5$b;
     .locals 0
 
-    .line 1
+    .line 3
     iput p1, p0, Lcom/applovin/impl/k5$b;->i:I
 
     return-object p0
@@ -143,7 +145,7 @@
 .method public a(J)Lcom/applovin/impl/k5$b;
     .locals 0
 
-    .line 2
+    .line 7
     iput-wide p1, p0, Lcom/applovin/impl/k5$b;->f:J
 
     return-object p0
@@ -152,7 +154,7 @@
 .method public a(Landroid/net/Uri;)Lcom/applovin/impl/k5$b;
     .locals 0
 
-    .line 3
+    .line 8
     iput-object p1, p0, Lcom/applovin/impl/k5$b;->a:Landroid/net/Uri;
 
     return-object p0
@@ -161,7 +163,7 @@
 .method public a(Ljava/lang/String;)Lcom/applovin/impl/k5$b;
     .locals 0
 
-    .line 4
+    .line 6
     iput-object p1, p0, Lcom/applovin/impl/k5$b;->h:Ljava/lang/String;
 
     return-object p0
@@ -179,7 +181,7 @@
 .method public a([B)Lcom/applovin/impl/k5$b;
     .locals 0
 
-    .line 6
+    .line 4
     iput-object p1, p0, Lcom/applovin/impl/k5$b;->d:[B
 
     return-object p0
@@ -190,14 +192,14 @@
 
     move-object/from16 v0, p0
 
+    .line 1
     iget-object v1, v0, Lcom/applovin/impl/k5$b;->a:Landroid/net/Uri;
 
     const-string v2, "The uri must be set."
 
-    .line 7
     invoke-static {v1, v2}, Lcom/applovin/impl/b1;->a(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 8
+    .line 2
     new-instance v1, Lcom/applovin/impl/k5;
 
     iget-object v4, v0, Lcom/applovin/impl/k5$b;->a:Landroid/net/Uri;

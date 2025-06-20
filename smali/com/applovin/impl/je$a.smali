@@ -168,9 +168,9 @@
 .method private static synthetic a()[Lcom/applovin/impl/je$a;
     .locals 3
 
-    .line 1
     const/4 v0, 0x4
 
+    .line 1
     new-array v0, v0, [Lcom/applovin/impl/je$a;
 
     sget-object v1, Lcom/applovin/impl/je$a;->b:Lcom/applovin/impl/je$a;
@@ -203,8 +203,11 @@
 .method private b()Ljava/lang/String;
     .locals 1
 
+    .line 1
     iget-object v0, p0, Lcom/applovin/impl/je$a;->a:Ljava/lang/String;
 
+    .line 2
+    .line 3
     return-object v0
 .end method
 

@@ -3,14 +3,14 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lzh/e;
+.implements Lka/e;
 
 
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "Lkotlin/jvm/internal/Lambda;",
-        "Lzh/e;"
+        "Lka/e;"
     }
 .end annotation
 
@@ -21,7 +21,7 @@
     d2 = {
         "",
         "invoke",
-        "(Landroidx/compose/runtime/l;I)Ljava/lang/String;",
+        "(Landroidx/compose/runtime/j;I)Ljava/lang/String;",
         "<anonymous>"
     }
     k = 0x3
@@ -56,7 +56,7 @@
     .locals 0
 
     .line 1
-    check-cast p1, Landroidx/compose/runtime/l;
+    check-cast p1, Landroidx/compose/runtime/j;
 
     check-cast p2, Ljava/lang/Number;
 
@@ -64,33 +64,33 @@
 
     move-result p2
 
-    invoke-virtual {p0, p1, p2}, Landroidx/compose/foundation/text/ContextMenu_androidKt$TextItem$1;->invoke(Landroidx/compose/runtime/l;I)Ljava/lang/String;
+    invoke-virtual {p0, p1, p2}, Landroidx/compose/foundation/text/ContextMenu_androidKt$TextItem$1;->invoke(Landroidx/compose/runtime/j;I)Ljava/lang/String;
 
     move-result-object p1
 
     return-object p1
 .end method
 
-.method public final invoke(Landroidx/compose/runtime/l;I)Ljava/lang/String;
+.method public final invoke(Landroidx/compose/runtime/j;I)Ljava/lang/String;
     .locals 1
 
-    check-cast p1, Landroidx/compose/runtime/p;
+    check-cast p1, Landroidx/compose/runtime/n;
 
     const p2, -0x567dd55d
 
-    invoke-virtual {p1, p2}, Landroidx/compose/runtime/p;->T(I)V
+    invoke-virtual {p1, p2}, Landroidx/compose/runtime/n;->R(I)V
 
+    .line 2
     iget-object p2, p0, Landroidx/compose/foundation/text/ContextMenu_androidKt$TextItem$1;->$label:Landroidx/compose/foundation/text/TextContextMenuItems;
 
     const/4 v0, 0x0
 
-    .line 2
-    invoke-virtual {p2, p1, v0}, Landroidx/compose/foundation/text/TextContextMenuItems;->resolvedString(Landroidx/compose/runtime/l;I)Ljava/lang/String;
+    invoke-virtual {p2, p1, v0}, Landroidx/compose/foundation/text/TextContextMenuItems;->resolvedString(Landroidx/compose/runtime/j;I)Ljava/lang/String;
 
     move-result-object p2
 
     .line 3
-    invoke-virtual {p1, v0}, Landroidx/compose/runtime/p;->q(Z)V
+    invoke-virtual {p1, v0}, Landroidx/compose/runtime/n;->p(Z)V
 
     return-object p2
 .end method

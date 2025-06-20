@@ -4,11 +4,11 @@
 
 
 # virtual methods
-.method public abstract a(Landroidx/work/f;)Lkotlinx/coroutines/flow/b;
+.method public abstract a(Landroidx/work/e;)Lkotlinx/coroutines/flow/b;
 .end method
 
-.method public abstract b(Lh5/q;)Z
+.method public abstract b(LB2/p;)Z
 .end method
 
-.method public abstract c(Lh5/q;)Z
+.method public abstract c(LB2/p;)Z
 .end method

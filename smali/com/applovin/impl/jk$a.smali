@@ -36,9 +36,9 @@
 
     invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
 
+    .line 2
     const-class v1, Lcom/applovin/impl/jk$b;
 
-    .line 2
     invoke-virtual {v1}, Ljava/lang/Class;->getClassLoader()Ljava/lang/ClassLoader;
 
     move-result-object v1

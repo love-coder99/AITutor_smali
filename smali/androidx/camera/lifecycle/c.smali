@@ -3,17 +3,17 @@
 .source "SourceFile"
 
 # interfaces
-.implements Landroidx/lifecycle/v;
+.implements Landroidx/lifecycle/w;
 
 
 # instance fields
-.field public final b:Lfg/c;
+.field public final b:Li5/o;
 
-.field public final c:Landroidx/lifecycle/w;
+.field public final c:Landroidx/lifecycle/x;
 
 
 # direct methods
-.method public constructor <init>(Landroidx/lifecycle/w;Lfg/c;)V
+.method public constructor <init>(Landroidx/lifecycle/x;Li5/o;)V
     .locals 0
 
     .line 1
@@ -22,11 +22,11 @@
     .line 2
     .line 3
     .line 4
-    iput-object p1, p0, Landroidx/camera/lifecycle/c;->c:Landroidx/lifecycle/w;
+    iput-object p1, p0, Landroidx/camera/lifecycle/c;->c:Landroidx/lifecycle/x;
 
     .line 5
     .line 6
-    iput-object p2, p0, Landroidx/camera/lifecycle/c;->b:Lfg/c;
+    iput-object p2, p0, Landroidx/camera/lifecycle/c;->b:Li5/o;
 
     .line 7
     .line 8
@@ -35,18 +35,18 @@
 
 
 # virtual methods
-.method public onDestroy(Landroidx/lifecycle/w;)V
+.method public onDestroy(Landroidx/lifecycle/x;)V
     .locals 5
-    .annotation runtime Landroidx/lifecycle/k0;
+    .annotation runtime Landroidx/lifecycle/L;
         value = .enum Landroidx/lifecycle/Lifecycle$Event;->ON_DESTROY:Landroidx/lifecycle/Lifecycle$Event;
     .end annotation
 
     .line 1
-    iget-object v0, p0, Landroidx/camera/lifecycle/c;->b:Lfg/c;
+    iget-object v0, p0, Landroidx/camera/lifecycle/c;->b:Li5/o;
 
     .line 2
     .line 3
-    iget-object v1, v0, Lfg/c;->c:Ljava/lang/Object;
+    iget-object v1, v0, Li5/o;->c:Ljava/lang/Object;
 
     .line 4
     .line 5
@@ -54,7 +54,7 @@
 
     .line 6
     :try_start_0
-    invoke-virtual {v0, p1}, Lfg/c;->j(Landroidx/lifecycle/w;)Landroidx/camera/lifecycle/c;
+    invoke-virtual {v0, p1}, Li5/o;->w(Landroidx/lifecycle/x;)Landroidx/camera/lifecycle/c;
 
     .line 7
     .line 8
@@ -80,20 +80,20 @@
 
     .line 16
     :cond_0
-    invoke-virtual {v0, p1}, Lfg/c;->s(Landroidx/lifecycle/w;)V
+    invoke-virtual {v0, p1}, Li5/o;->L(Landroidx/lifecycle/x;)V
 
     .line 17
     .line 18
     .line 19
-    iget-object p1, v0, Lfg/c;->f:Ljava/lang/Object;
+    iget-object p1, v0, Li5/o;->f:Ljava/lang/Object;
 
     .line 20
     .line 21
-    check-cast p1, Ljava/util/Map;
+    check-cast p1, Ljava/util/HashMap;
 
     .line 22
     .line 23
-    invoke-interface {p1, v2}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {p1, v2}, Ljava/util/HashMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 24
     .line 25
@@ -138,15 +138,15 @@
 
     .line 44
     .line 45
-    iget-object v4, v0, Lfg/c;->d:Ljava/lang/Object;
+    iget-object v4, v0, Li5/o;->d:Ljava/lang/Object;
 
     .line 46
     .line 47
-    check-cast v4, Ljava/util/Map;
+    check-cast v4, Ljava/util/HashMap;
 
     .line 48
     .line 49
-    invoke-interface {v4, v3}, Ljava/util/Map;->remove(Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v4, v3}, Ljava/util/HashMap;->remove(Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 50
     .line 51
@@ -155,24 +155,24 @@
 
     .line 53
     :cond_1
-    iget-object p1, v0, Lfg/c;->f:Ljava/lang/Object;
+    iget-object p1, v0, Li5/o;->f:Ljava/lang/Object;
 
     .line 54
     .line 55
-    check-cast p1, Ljava/util/Map;
+    check-cast p1, Ljava/util/HashMap;
 
     .line 56
     .line 57
-    invoke-interface {p1, v2}, Ljava/util/Map;->remove(Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {p1, v2}, Ljava/util/HashMap;->remove(Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 58
     .line 59
     .line 60
-    iget-object p1, v2, Landroidx/camera/lifecycle/c;->c:Landroidx/lifecycle/w;
+    iget-object p1, v2, Landroidx/camera/lifecycle/c;->c:Landroidx/lifecycle/x;
 
     .line 61
     .line 62
-    invoke-interface {p1}, Landroidx/lifecycle/w;->getLifecycle()Landroidx/lifecycle/p;
+    invoke-interface {p1}, Landroidx/lifecycle/x;->getLifecycle()Landroidx/lifecycle/r;
 
     .line 63
     .line 64
@@ -180,7 +180,7 @@
     move-result-object p1
 
     .line 66
-    invoke-virtual {p1, v2}, Landroidx/lifecycle/p;->c(Landroidx/lifecycle/v;)V
+    invoke-virtual {p1, v2}, Landroidx/lifecycle/r;->c(Landroidx/lifecycle/w;)V
 
     .line 67
     .line 68
@@ -201,18 +201,18 @@
     throw p1
 .end method
 
-.method public onStart(Landroidx/lifecycle/w;)V
+.method public onStart(Landroidx/lifecycle/x;)V
     .locals 1
-    .annotation runtime Landroidx/lifecycle/k0;
+    .annotation runtime Landroidx/lifecycle/L;
         value = .enum Landroidx/lifecycle/Lifecycle$Event;->ON_START:Landroidx/lifecycle/Lifecycle$Event;
     .end annotation
 
     .line 1
-    iget-object v0, p0, Landroidx/camera/lifecycle/c;->b:Lfg/c;
+    iget-object v0, p0, Landroidx/camera/lifecycle/c;->b:Li5/o;
 
     .line 2
     .line 3
-    invoke-virtual {v0, p1}, Lfg/c;->r(Landroidx/lifecycle/w;)V
+    invoke-virtual {v0, p1}, Li5/o;->K(Landroidx/lifecycle/x;)V
 
     .line 4
     .line 5
@@ -220,18 +220,18 @@
     return-void
 .end method
 
-.method public onStop(Landroidx/lifecycle/w;)V
+.method public onStop(Landroidx/lifecycle/x;)V
     .locals 1
-    .annotation runtime Landroidx/lifecycle/k0;
+    .annotation runtime Landroidx/lifecycle/L;
         value = .enum Landroidx/lifecycle/Lifecycle$Event;->ON_STOP:Landroidx/lifecycle/Lifecycle$Event;
     .end annotation
 
     .line 1
-    iget-object v0, p0, Landroidx/camera/lifecycle/c;->b:Lfg/c;
+    iget-object v0, p0, Landroidx/camera/lifecycle/c;->b:Li5/o;
 
     .line 2
     .line 3
-    invoke-virtual {v0, p1}, Lfg/c;->s(Landroidx/lifecycle/w;)V
+    invoke-virtual {v0, p1}, Li5/o;->L(Landroidx/lifecycle/x;)V
 
     .line 4
     .line 5

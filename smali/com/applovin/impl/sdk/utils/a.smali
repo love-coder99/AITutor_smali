@@ -9,64 +9,77 @@
 # instance fields
 .field public final synthetic b:I
 
-.field public final synthetic c:Lcom/applovin/impl/sdk/j;
+.field public final synthetic c:Landroid/widget/ImageView;
 
-.field public final synthetic d:Landroid/graphics/Bitmap;
-
-.field public final synthetic f:Landroid/widget/ImageView;
+.field public final synthetic d:Landroid/net/Uri;
 
 
 # direct methods
-.method public synthetic constructor <init>(Lcom/applovin/impl/sdk/j;Landroid/graphics/Bitmap;Landroid/widget/ImageView;I)V
-    .locals 0
+.method public synthetic constructor <init>(Landroid/net/Uri;Landroid/widget/ImageView;)V
+    .locals 1
 
     .line 1
+    const/4 v0, 0x0
+
+    iput v0, p0, Lcom/applovin/impl/sdk/utils/a;->b:I
+
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
+    iput-object p1, p0, Lcom/applovin/impl/sdk/utils/a;->d:Landroid/net/Uri;
+
+    iput-object p2, p0, Lcom/applovin/impl/sdk/utils/a;->c:Landroid/widget/ImageView;
+
+    return-void
+.end method
+
+.method public synthetic constructor <init>(Landroid/widget/ImageView;Landroid/net/Uri;I)V
+    .locals 0
+
     .line 2
-    .line 3
-    .line 4
-    iput p4, p0, Lcom/applovin/impl/sdk/utils/a;->b:I
+    iput p3, p0, Lcom/applovin/impl/sdk/utils/a;->b:I
 
-    .line 5
-    .line 6
-    iput-object p1, p0, Lcom/applovin/impl/sdk/utils/a;->c:Lcom/applovin/impl/sdk/j;
+    iput-object p1, p0, Lcom/applovin/impl/sdk/utils/a;->c:Landroid/widget/ImageView;
 
-    .line 7
-    .line 8
-    iput-object p2, p0, Lcom/applovin/impl/sdk/utils/a;->d:Landroid/graphics/Bitmap;
+    iput-object p2, p0, Lcom/applovin/impl/sdk/utils/a;->d:Landroid/net/Uri;
 
-    .line 9
-    .line 10
-    iput-object p3, p0, Lcom/applovin/impl/sdk/utils/a;->f:Landroid/widget/ImageView;
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 11
-    .line 12
     return-void
 .end method
 
 
 # virtual methods
 .method public final run()V
-    .locals 4
+    .locals 2
 
     .line 1
     iget v0, p0, Lcom/applovin/impl/sdk/utils/a;->b:I
 
-    iget-object v1, p0, Lcom/applovin/impl/sdk/utils/a;->c:Lcom/applovin/impl/sdk/j;
-
-    iget-object v2, p0, Lcom/applovin/impl/sdk/utils/a;->f:Landroid/widget/ImageView;
-
-    iget-object v3, p0, Lcom/applovin/impl/sdk/utils/a;->d:Landroid/graphics/Bitmap;
-
     packed-switch v0, :pswitch_data_0
 
-    invoke-static {v1, v3, v2}, Lcom/applovin/impl/sdk/utils/ImageViewUtils;->g(Lcom/applovin/impl/sdk/j;Landroid/graphics/Bitmap;Landroid/widget/ImageView;)V
+    iget-object v0, p0, Lcom/applovin/impl/sdk/utils/a;->c:Landroid/widget/ImageView;
+
+    iget-object v1, p0, Lcom/applovin/impl/sdk/utils/a;->d:Landroid/net/Uri;
+
+    invoke-static {v1, v0}, Lcom/applovin/impl/sdk/utils/ImageViewUtils;->e(Landroid/net/Uri;Landroid/widget/ImageView;)V
 
     return-void
 
     :pswitch_0
-    invoke-static {v1, v3, v2}, Lcom/applovin/impl/sdk/utils/ImageViewUtils;->d(Lcom/applovin/impl/sdk/j;Landroid/graphics/Bitmap;Landroid/widget/ImageView;)V
+    iget-object v0, p0, Lcom/applovin/impl/sdk/utils/a;->c:Landroid/widget/ImageView;
+
+    iget-object v1, p0, Lcom/applovin/impl/sdk/utils/a;->d:Landroid/net/Uri;
+
+    invoke-static {v1, v0}, Lcom/applovin/impl/sdk/utils/ImageViewUtils;->c(Landroid/net/Uri;Landroid/widget/ImageView;)V
+
+    return-void
+
+    :pswitch_1
+    iget-object v0, p0, Lcom/applovin/impl/sdk/utils/a;->d:Landroid/net/Uri;
+
+    iget-object v1, p0, Lcom/applovin/impl/sdk/utils/a;->c:Landroid/widget/ImageView;
+
+    invoke-static {v0, v1}, Lcom/applovin/impl/sdk/utils/ImageViewUtils;->g(Landroid/net/Uri;Landroid/widget/ImageView;)V
 
     return-void
 
@@ -74,6 +87,7 @@
 
     :pswitch_data_0
     .packed-switch 0x0
+        :pswitch_1
         :pswitch_0
     .end packed-switch
 .end method

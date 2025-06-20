@@ -3,14 +3,14 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lzh/e;
+.implements Lka/e;
 
 
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "Lkotlin/jvm/internal/Lambda;",
-        "Lzh/e;"
+        "Lka/e;"
     }
 .end annotation
 
@@ -30,80 +30,100 @@
 
 .field final synthetic $$default:I
 
-.field final synthetic $content:Lzh/g;
+.field final synthetic $content:Lka/g;
     .annotation system Ldalvik/annotation/Signature;
         value = {
-            "Lzh/g;"
+            "Lka/g;"
         }
     .end annotation
 .end field
 
 .field final synthetic $contentAlignment:Landroidx/compose/ui/e;
 
-.field final synthetic $contentKey:Lzh/c;
+.field final synthetic $contentKey:Lka/c;
     .annotation system Ldalvik/annotation/Signature;
         value = {
-            "Lzh/c;"
+            "Lka/c;"
         }
     .end annotation
 .end field
 
 .field final synthetic $modifier:Landroidx/compose/ui/o;
 
-.field final synthetic $this_AnimatedContent:Landroidx/compose/animation/core/e1;
+.field final synthetic $this_AnimatedContent:Landroidx/compose/animation/core/Z;
     .annotation system Ldalvik/annotation/Signature;
         value = {
-            "Landroidx/compose/animation/core/e1;"
+            "Landroidx/compose/animation/core/Z;"
         }
     .end annotation
 .end field
 
-.field final synthetic $transitionSpec:Lzh/c;
+.field final synthetic $transitionSpec:Lka/c;
     .annotation system Ldalvik/annotation/Signature;
         value = {
-            "Lzh/c;"
+            "Lka/c;"
         }
     .end annotation
 .end field
 
 
 # direct methods
-.method public constructor <init>(Landroidx/compose/animation/core/e1;Landroidx/compose/ui/o;Lzh/c;Landroidx/compose/ui/e;Lzh/c;Lzh/g;II)V
+.method public constructor <init>(Landroidx/compose/animation/core/Z;Landroidx/compose/ui/o;Lka/c;Landroidx/compose/ui/e;Lka/c;Lka/g;II)V
     .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
-            "Landroidx/compose/animation/core/e1;",
+            "Landroidx/compose/animation/core/Z;",
             "Landroidx/compose/ui/o;",
-            "Lzh/c;",
+            "Lka/c;",
             "Landroidx/compose/ui/e;",
-            "Lzh/c;",
-            "Lzh/g;",
+            "Lka/c;",
+            "Lka/g;",
             "II)V"
         }
     .end annotation
 
     .line 1
-    iput-object p1, p0, Landroidx/compose/animation/AnimatedContentKt$AnimatedContent$9;->$this_AnimatedContent:Landroidx/compose/animation/core/e1;
+    iput-object p1, p0, Landroidx/compose/animation/AnimatedContentKt$AnimatedContent$9;->$this_AnimatedContent:Landroidx/compose/animation/core/Z;
 
+    .line 2
+    .line 3
     iput-object p2, p0, Landroidx/compose/animation/AnimatedContentKt$AnimatedContent$9;->$modifier:Landroidx/compose/ui/o;
 
-    iput-object p3, p0, Landroidx/compose/animation/AnimatedContentKt$AnimatedContent$9;->$transitionSpec:Lzh/c;
+    .line 4
+    .line 5
+    iput-object p3, p0, Landroidx/compose/animation/AnimatedContentKt$AnimatedContent$9;->$transitionSpec:Lka/c;
 
+    .line 6
+    .line 7
     iput-object p4, p0, Landroidx/compose/animation/AnimatedContentKt$AnimatedContent$9;->$contentAlignment:Landroidx/compose/ui/e;
 
-    iput-object p5, p0, Landroidx/compose/animation/AnimatedContentKt$AnimatedContent$9;->$contentKey:Lzh/c;
+    .line 8
+    .line 9
+    iput-object p5, p0, Landroidx/compose/animation/AnimatedContentKt$AnimatedContent$9;->$contentKey:Lka/c;
 
-    iput-object p6, p0, Landroidx/compose/animation/AnimatedContentKt$AnimatedContent$9;->$content:Lzh/g;
+    .line 10
+    .line 11
+    iput-object p6, p0, Landroidx/compose/animation/AnimatedContentKt$AnimatedContent$9;->$content:Lka/g;
 
+    .line 12
+    .line 13
     iput p7, p0, Landroidx/compose/animation/AnimatedContentKt$AnimatedContent$9;->$$changed:I
 
+    .line 14
+    .line 15
     iput p8, p0, Landroidx/compose/animation/AnimatedContentKt$AnimatedContent$9;->$$default:I
 
+    .line 16
+    .line 17
     const/4 p1, 0x2
 
+    .line 18
     invoke-direct {p0, p1}, Lkotlin/jvm/internal/Lambda;-><init>(I)V
 
+    .line 19
+    .line 20
+    .line 21
     return-void
 .end method
 
@@ -113,7 +133,7 @@
     .locals 0
 
     .line 1
-    check-cast p1, Landroidx/compose/runtime/l;
+    check-cast p1, Landroidx/compose/runtime/j;
 
     check-cast p2, Ljava/lang/Number;
 
@@ -121,34 +141,34 @@
 
     move-result p2
 
-    invoke-virtual {p0, p1, p2}, Landroidx/compose/animation/AnimatedContentKt$AnimatedContent$9;->invoke(Landroidx/compose/runtime/l;I)V
+    invoke-virtual {p0, p1, p2}, Landroidx/compose/animation/AnimatedContentKt$AnimatedContent$9;->invoke(Landroidx/compose/runtime/j;I)V
 
-    sget-object p1, Lqh/r;->a:Lqh/r;
+    sget-object p1, LX9/j;->a:LX9/j;
 
     return-object p1
 .end method
 
-.method public final invoke(Landroidx/compose/runtime/l;I)V
+.method public final invoke(Landroidx/compose/runtime/j;I)V
     .locals 9
 
     .line 2
-    iget-object v0, p0, Landroidx/compose/animation/AnimatedContentKt$AnimatedContent$9;->$this_AnimatedContent:Landroidx/compose/animation/core/e1;
+    iget-object v0, p0, Landroidx/compose/animation/AnimatedContentKt$AnimatedContent$9;->$this_AnimatedContent:Landroidx/compose/animation/core/Z;
 
     iget-object v1, p0, Landroidx/compose/animation/AnimatedContentKt$AnimatedContent$9;->$modifier:Landroidx/compose/ui/o;
 
-    iget-object v2, p0, Landroidx/compose/animation/AnimatedContentKt$AnimatedContent$9;->$transitionSpec:Lzh/c;
+    iget-object v2, p0, Landroidx/compose/animation/AnimatedContentKt$AnimatedContent$9;->$transitionSpec:Lka/c;
 
     iget-object v3, p0, Landroidx/compose/animation/AnimatedContentKt$AnimatedContent$9;->$contentAlignment:Landroidx/compose/ui/e;
 
-    iget-object v4, p0, Landroidx/compose/animation/AnimatedContentKt$AnimatedContent$9;->$contentKey:Lzh/c;
+    iget-object v4, p0, Landroidx/compose/animation/AnimatedContentKt$AnimatedContent$9;->$contentKey:Lka/c;
 
-    iget-object v5, p0, Landroidx/compose/animation/AnimatedContentKt$AnimatedContent$9;->$content:Lzh/g;
+    iget-object v5, p0, Landroidx/compose/animation/AnimatedContentKt$AnimatedContent$9;->$content:Lka/g;
 
     iget p2, p0, Landroidx/compose/animation/AnimatedContentKt$AnimatedContent$9;->$$changed:I
 
     or-int/lit8 p2, p2, 0x1
 
-    invoke-static {p2}, Landroidx/compose/runtime/q;->A(I)I
+    invoke-static {p2}, Landroidx/compose/runtime/o;->f0(I)I
 
     move-result v7
 
@@ -156,7 +176,7 @@
 
     move-object v6, p1
 
-    invoke-static/range {v0 .. v8}, Landroidx/compose/animation/d;->a(Landroidx/compose/animation/core/e1;Landroidx/compose/ui/o;Lzh/c;Landroidx/compose/ui/e;Lzh/c;Lzh/g;Landroidx/compose/runtime/l;II)V
+    invoke-static/range {v0 .. v8}, Landroidx/compose/animation/d;->a(Landroidx/compose/animation/core/Z;Landroidx/compose/ui/o;Lka/c;Landroidx/compose/ui/e;Lka/c;Lka/g;Landroidx/compose/runtime/j;II)V
 
     return-void
 .end method

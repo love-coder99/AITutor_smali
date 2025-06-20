@@ -3,12 +3,12 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lzh/c;
+.implements Lka/c;
 
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Landroidx/compose/animation/ColorVectorConverterKt$ColorToVector$1;->invoke(Landroidx/compose/ui/graphics/colorspace/d;)Landroidx/compose/animation/core/j1;
+    value = Landroidx/compose/animation/ColorVectorConverterKt$ColorToVector$1;->invoke(Landroidx/compose/ui/graphics/colorspace/c;)Landroidx/compose/animation/core/e0;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -19,7 +19,7 @@
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "Lkotlin/jvm/internal/Lambda;",
-        "Lzh/c;"
+        "Lka/c;"
     }
 .end annotation
 
@@ -28,11 +28,11 @@
         "\u0000\u000e\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0008\u0003\u0010\u0005\u001a\u00020\u00022\u0006\u0010\u0001\u001a\u00020\u0000H\n\u00a2\u0006\u0004\u0008\u0003\u0010\u0004"
     }
     d2 = {
-        "Landroidx/compose/animation/core/l;",
+        "Landroidx/compose/animation/core/k;",
         "vector",
         "Landroidx/compose/ui/graphics/w;",
         "invoke-vNxB06k",
-        "(Landroidx/compose/animation/core/l;)J",
+        "(Landroidx/compose/animation/core/k;)J",
         "<anonymous>"
     }
     k = 0x3
@@ -45,14 +45,14 @@
 
 
 # instance fields
-.field final synthetic $colorSpace:Landroidx/compose/ui/graphics/colorspace/d;
+.field final synthetic $colorSpace:Landroidx/compose/ui/graphics/colorspace/c;
 
 
 # direct methods
-.method public constructor <init>(Landroidx/compose/ui/graphics/colorspace/d;)V
+.method public constructor <init>(Landroidx/compose/ui/graphics/colorspace/c;)V
     .locals 0
 
-    iput-object p1, p0, Landroidx/compose/animation/ColorVectorConverterKt$ColorToVector$1$2;->$colorSpace:Landroidx/compose/ui/graphics/colorspace/d;
+    iput-object p1, p0, Landroidx/compose/animation/ColorVectorConverterKt$ColorToVector$1$2;->$colorSpace:Landroidx/compose/ui/graphics/colorspace/c;
 
     const/4 p1, 0x1
 
@@ -67,11 +67,11 @@
     .locals 2
 
     .line 1
-    check-cast p1, Landroidx/compose/animation/core/l;
+    check-cast p1, Landroidx/compose/animation/core/k;
 
     .line 2
     .line 3
-    invoke-virtual {p0, p1}, Landroidx/compose/animation/ColorVectorConverterKt$ColorToVector$1$2;->invoke-vNxB06k(Landroidx/compose/animation/core/l;)J
+    invoke-virtual {p0, p1}, Landroidx/compose/animation/ColorVectorConverterKt$ColorToVector$1$2;->invoke-vNxB06k(Landroidx/compose/animation/core/k;)J
 
     .line 4
     .line 5
@@ -91,11 +91,11 @@
     return-object p1
 .end method
 
-.method public final invoke-vNxB06k(Landroidx/compose/animation/core/l;)J
+.method public final invoke-vNxB06k(Landroidx/compose/animation/core/k;)J
     .locals 8
 
     .line 1
-    iget v0, p1, Landroidx/compose/animation/core/l;->b:F
+    iget v0, p1, Landroidx/compose/animation/core/k;->b:F
 
     .line 2
     .line 3
@@ -131,7 +131,7 @@
     .line 16
     .line 17
     :cond_1
-    iget v3, p1, Landroidx/compose/animation/core/l;->c:F
+    iget v3, p1, Landroidx/compose/animation/core/k;->c:F
 
     .line 18
     .line 19
@@ -169,7 +169,7 @@
     .line 34
     .line 35
     :cond_3
-    iget v6, p1, Landroidx/compose/animation/core/l;->d:F
+    iget v6, p1, Landroidx/compose/animation/core/k;->d:F
 
     .line 36
     .line 37
@@ -205,7 +205,7 @@
 
     .line 49
     :goto_1
-    iget p1, p1, Landroidx/compose/animation/core/l;->a:F
+    iget p1, p1, Landroidx/compose/animation/core/k;->a:F
 
     .line 50
     .line 51
@@ -241,11 +241,11 @@
 
     .line 63
     :goto_3
-    sget-object p1, Landroidx/compose/ui/graphics/colorspace/e;->t:Landroidx/compose/ui/graphics/colorspace/m;
+    sget-object p1, Landroidx/compose/ui/graphics/colorspace/d;->t:Landroidx/compose/ui/graphics/colorspace/l;
 
     .line 64
     .line 65
-    invoke-static {v0, v3, v5, v2, p1}, Landroidx/compose/ui/graphics/f0;->b(FFFFLandroidx/compose/ui/graphics/colorspace/d;)J
+    invoke-static {v0, v3, v5, v2, p1}, Landroidx/compose/ui/graphics/G;->b(FFFFLandroidx/compose/ui/graphics/colorspace/c;)J
 
     .line 66
     .line 67
@@ -253,11 +253,11 @@
     move-result-wide v0
 
     .line 69
-    iget-object p1, p0, Landroidx/compose/animation/ColorVectorConverterKt$ColorToVector$1$2;->$colorSpace:Landroidx/compose/ui/graphics/colorspace/d;
+    iget-object p1, p0, Landroidx/compose/animation/ColorVectorConverterKt$ColorToVector$1$2;->$colorSpace:Landroidx/compose/ui/graphics/colorspace/c;
 
     .line 70
     .line 71
-    invoke-static {v0, v1, p1}, Landroidx/compose/ui/graphics/w;->a(JLandroidx/compose/ui/graphics/colorspace/d;)J
+    invoke-static {v0, v1, p1}, Landroidx/compose/ui/graphics/w;->a(JLandroidx/compose/ui/graphics/colorspace/c;)J
 
     .line 72
     .line 73

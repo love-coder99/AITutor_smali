@@ -121,6 +121,7 @@
 
     move-object v0, p0
 
+    .line 8
     iget-wide v1, v0, Lcom/applovin/impl/ok;->o:J
 
     const-wide/16 v3, 0x400
@@ -129,11 +130,11 @@
 
     if-ltz v5, :cond_1
 
+    .line 9
     iget-wide v1, v0, Lcom/applovin/impl/ok;->n:J
 
     iget-object v3, v0, Lcom/applovin/impl/ok;->j:Lcom/applovin/impl/nk;
 
-    .line 6
     invoke-static {v3}, Lcom/applovin/impl/b1;->a(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object v3
@@ -148,9 +149,9 @@
 
     sub-long v7, v1, v3
 
+    .line 10
     iget-object v1, v0, Lcom/applovin/impl/ok;->h:Lcom/applovin/impl/p1$a;
 
-    .line 7
     iget v1, v1, Lcom/applovin/impl/p1$a;->a:I
 
     iget-object v2, v0, Lcom/applovin/impl/ok;->g:Lcom/applovin/impl/p1$a;
@@ -159,11 +160,11 @@
 
     if-ne v1, v2, :cond_0
 
+    .line 11
     iget-wide v9, v0, Lcom/applovin/impl/ok;->o:J
 
     move-wide/from16 v5, p1
 
-    .line 8
     invoke-static/range {v5 .. v10}, Lcom/applovin/impl/xp;->c(JJJ)J
 
     move-result-wide v1
@@ -175,6 +176,7 @@
 
     mul-long v11, v7, v3
 
+    .line 12
     iget-wide v3, v0, Lcom/applovin/impl/ok;->o:J
 
     int-to-long v1, v2
@@ -183,7 +185,6 @@
 
     move-wide/from16 v9, p1
 
-    .line 9
     invoke-static/range {v9 .. v14}, Lcom/applovin/impl/xp;->c(JJJ)J
 
     move-result-wide v1
@@ -191,6 +192,7 @@
     :goto_0
     return-wide v1
 
+    .line 13
     :cond_1
     iget v1, v0, Lcom/applovin/impl/ok;->c:F
 
@@ -210,13 +212,14 @@
 .method public a(Lcom/applovin/impl/p1$a;)Lcom/applovin/impl/p1$a;
     .locals 3
 
-    .line 2
+    .line 1
     iget v0, p1, Lcom/applovin/impl/p1$a;->c:I
 
     const/4 v1, 0x2
 
     if-ne v0, v1, :cond_1
 
+    .line 2
     iget v0, p0, Lcom/applovin/impl/ok;->b:I
 
     const/4 v2, -0x1
@@ -226,10 +229,11 @@
     .line 3
     iget v0, p1, Lcom/applovin/impl/p1$a;->a:I
 
+    .line 4
     :cond_0
     iput-object p1, p0, Lcom/applovin/impl/ok;->e:Lcom/applovin/impl/p1$a;
 
-    .line 4
+    .line 5
     new-instance v2, Lcom/applovin/impl/p1$a;
 
     iget p1, p1, Lcom/applovin/impl/p1$a;->b:I
@@ -240,11 +244,12 @@
 
     const/4 p1, 0x1
 
+    .line 6
     iput-boolean p1, p0, Lcom/applovin/impl/ok;->i:Z
 
     return-object v2
 
-    .line 5
+    .line 7
     :cond_1
     new-instance v0, Lcom/applovin/impl/p1$b;
 
@@ -256,17 +261,19 @@
 .method public a(F)V
     .locals 1
 
-    .line 1
+    .line 21
     iget v0, p0, Lcom/applovin/impl/ok;->d:F
 
     cmpl-float v0, v0, p1
 
     if-eqz v0, :cond_0
 
+    .line 22
     iput p1, p0, Lcom/applovin/impl/ok;->d:F
 
     const/4 p1, 0x1
 
+    .line 23
     iput-boolean p1, p0, Lcom/applovin/impl/ok;->i:Z
 
     :cond_0
@@ -276,7 +283,7 @@
 .method public a(Ljava/nio/ByteBuffer;)V
     .locals 7
 
-    .line 10
+    .line 14
     invoke-virtual {p1}, Ljava/nio/Buffer;->hasRemaining()Z
 
     move-result v0
@@ -285,26 +292,27 @@
 
     return-void
 
+    .line 15
     :cond_0
     iget-object v0, p0, Lcom/applovin/impl/ok;->j:Lcom/applovin/impl/nk;
 
-    .line 11
     invoke-static {v0}, Lcom/applovin/impl/b1;->a(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object v0
 
     check-cast v0, Lcom/applovin/impl/nk;
 
-    .line 12
+    .line 16
     invoke-virtual {p1}, Ljava/nio/ByteBuffer;->asShortBuffer()Ljava/nio/ShortBuffer;
 
     move-result-object v1
 
-    .line 13
+    .line 17
     invoke-virtual {p1}, Ljava/nio/Buffer;->remaining()I
 
     move-result v2
 
+    .line 18
     iget-wide v3, p0, Lcom/applovin/impl/ok;->n:J
 
     int-to-long v5, v2
@@ -313,10 +321,10 @@
 
     iput-wide v3, p0, Lcom/applovin/impl/ok;->n:J
 
-    .line 14
+    .line 19
     invoke-virtual {v0, v1}, Lcom/applovin/impl/nk;->b(Ljava/nio/ShortBuffer;)V
 
-    .line 15
+    .line 20
     invoke-virtual {p1}, Ljava/nio/Buffer;->position()I
 
     move-result v0
@@ -331,26 +339,29 @@
 .method public b()V
     .locals 9
 
-    .line 2
+    .line 1
     invoke-virtual {p0}, Lcom/applovin/impl/ok;->f()Z
 
     move-result v0
 
     if-eqz v0, :cond_1
 
+    .line 2
     iget-object v0, p0, Lcom/applovin/impl/ok;->e:Lcom/applovin/impl/p1$a;
 
     iput-object v0, p0, Lcom/applovin/impl/ok;->g:Lcom/applovin/impl/p1$a;
 
+    .line 3
     iget-object v1, p0, Lcom/applovin/impl/ok;->f:Lcom/applovin/impl/p1$a;
 
     iput-object v1, p0, Lcom/applovin/impl/ok;->h:Lcom/applovin/impl/p1$a;
 
+    .line 4
     iget-boolean v2, p0, Lcom/applovin/impl/ok;->i:Z
 
     if-eqz v2, :cond_0
 
-    .line 3
+    .line 5
     new-instance v2, Lcom/applovin/impl/nk;
 
     iget v4, v0, Lcom/applovin/impl/p1$a;->a:I
@@ -371,14 +382,16 @@
 
     goto :goto_0
 
+    .line 6
     :cond_0
     iget-object v0, p0, Lcom/applovin/impl/ok;->j:Lcom/applovin/impl/nk;
 
     if-eqz v0, :cond_1
 
-    .line 4
+    .line 7
     invoke-virtual {v0}, Lcom/applovin/impl/nk;->a()V
 
+    .line 8
     :cond_1
     :goto_0
     sget-object v0, Lcom/applovin/impl/p1;->a:Ljava/nio/ByteBuffer;
@@ -387,12 +400,15 @@
 
     const-wide/16 v0, 0x0
 
+    .line 9
     iput-wide v0, p0, Lcom/applovin/impl/ok;->n:J
 
+    .line 10
     iput-wide v0, p0, Lcom/applovin/impl/ok;->o:J
 
     const/4 v0, 0x0
 
+    .line 11
     iput-boolean v0, p0, Lcom/applovin/impl/ok;->p:Z
 
     return-void
@@ -401,17 +417,19 @@
 .method public b(F)V
     .locals 1
 
-    .line 1
+    .line 12
     iget v0, p0, Lcom/applovin/impl/ok;->c:F
 
     cmpl-float v0, v0, p1
 
     if-eqz v0, :cond_0
 
+    .line 13
     iput p1, p0, Lcom/applovin/impl/ok;->c:F
 
     const/4 p1, 0x1
 
+    .line 14
     iput-boolean p1, p0, Lcom/applovin/impl/ok;->i:Z
 
     :cond_0

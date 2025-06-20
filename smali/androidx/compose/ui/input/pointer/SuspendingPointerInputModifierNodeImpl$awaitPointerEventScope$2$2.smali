@@ -3,14 +3,14 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lzh/c;
+.implements Lka/c;
 
 
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "Lkotlin/jvm/internal/Lambda;",
-        "Lzh/c;"
+        "Lka/c;"
     }
 .end annotation
 
@@ -22,7 +22,7 @@
         "R",
         "",
         "it",
-        "Lqh/r;",
+        "LX9/j;",
         "invoke",
         "(Ljava/lang/Throwable;)V",
         "<anonymous>"
@@ -37,27 +37,27 @@
 
 
 # instance fields
-.field final synthetic $handlerCoroutine:Landroidx/compose/ui/input/pointer/f0;
+.field final synthetic $handlerCoroutine:Landroidx/compose/ui/input/pointer/x;
     .annotation system Ldalvik/annotation/Signature;
         value = {
-            "Landroidx/compose/ui/input/pointer/f0;"
+            "Landroidx/compose/ui/input/pointer/x;"
         }
     .end annotation
 .end field
 
 
 # direct methods
-.method public constructor <init>(Landroidx/compose/ui/input/pointer/f0;)V
+.method public constructor <init>(Landroidx/compose/ui/input/pointer/x;)V
     .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
-            "Landroidx/compose/ui/input/pointer/f0;",
+            "Landroidx/compose/ui/input/pointer/x;",
             ")V"
         }
     .end annotation
 
-    iput-object p1, p0, Landroidx/compose/ui/input/pointer/SuspendingPointerInputModifierNodeImpl$awaitPointerEventScope$2$2;->$handlerCoroutine:Landroidx/compose/ui/input/pointer/f0;
+    iput-object p1, p0, Landroidx/compose/ui/input/pointer/SuspendingPointerInputModifierNodeImpl$awaitPointerEventScope$2$2;->$handlerCoroutine:Landroidx/compose/ui/input/pointer/x;
 
     const/4 p1, 0x1
 
@@ -76,7 +76,7 @@
 
     invoke-virtual {p0, p1}, Landroidx/compose/ui/input/pointer/SuspendingPointerInputModifierNodeImpl$awaitPointerEventScope$2$2;->invoke(Ljava/lang/Throwable;)V
 
-    sget-object p1, Lqh/r;->a:Lqh/r;
+    sget-object p1, LX9/j;->a:LX9/j;
 
     return-object p1
 .end method
@@ -84,21 +84,22 @@
 .method public final invoke(Ljava/lang/Throwable;)V
     .locals 2
 
-    iget-object v0, p0, Landroidx/compose/ui/input/pointer/SuspendingPointerInputModifierNodeImpl$awaitPointerEventScope$2$2;->$handlerCoroutine:Landroidx/compose/ui/input/pointer/f0;
-
     .line 2
-    iget-object v1, v0, Landroidx/compose/ui/input/pointer/f0;->d:Lkotlinx/coroutines/g;
+    iget-object v0, p0, Landroidx/compose/ui/input/pointer/SuspendingPointerInputModifierNodeImpl$awaitPointerEventScope$2$2;->$handlerCoroutine:Landroidx/compose/ui/input/pointer/x;
+
+    .line 3
+    iget-object v1, v0, Landroidx/compose/ui/input/pointer/x;->d:Lkotlinx/coroutines/g;
 
     if-eqz v1, :cond_0
 
-    .line 3
-    invoke-interface {v1, p1}, Lkotlinx/coroutines/g;->w(Ljava/lang/Throwable;)Z
+    .line 4
+    invoke-virtual {v1, p1}, Lkotlinx/coroutines/g;->m(Ljava/lang/Throwable;)Z
 
     :cond_0
     const/4 p1, 0x0
 
-    .line 4
-    iput-object p1, v0, Landroidx/compose/ui/input/pointer/f0;->d:Lkotlinx/coroutines/g;
+    .line 5
+    iput-object p1, v0, Landroidx/compose/ui/input/pointer/x;->d:Lkotlinx/coroutines/g;
 
     return-void
 .end method

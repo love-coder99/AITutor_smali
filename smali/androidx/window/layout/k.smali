@@ -2,60 +2,18 @@
 .super Ljava/lang/Object;
 .source "SourceFile"
 
-
-# static fields
-.field public static final b:Landroidx/window/layout/k;
-
-.field public static final c:Landroidx/window/layout/k;
+# interfaces
+.implements Landroid/content/ComponentCallbacks;
 
 
 # instance fields
-.field public final a:Ljava/lang/String;
+.field public final synthetic b:Landroidx/window/layout/l;
+
+.field public final synthetic c:Landroid/app/Activity;
 
 
 # direct methods
-.method static constructor <clinit>()V
-    .locals 2
-
-    .line 1
-    new-instance v0, Landroidx/window/layout/k;
-
-    .line 2
-    .line 3
-    const-string v1, "FOLD"
-
-    .line 4
-    .line 5
-    invoke-direct {v0, v1}, Landroidx/window/layout/k;-><init>(Ljava/lang/String;)V
-
-    .line 6
-    .line 7
-    .line 8
-    sput-object v0, Landroidx/window/layout/k;->b:Landroidx/window/layout/k;
-
-    .line 9
-    .line 10
-    new-instance v0, Landroidx/window/layout/k;
-
-    .line 11
-    .line 12
-    const-string v1, "HINGE"
-
-    .line 13
-    .line 14
-    invoke-direct {v0, v1}, Landroidx/window/layout/k;-><init>(Ljava/lang/String;)V
-
-    .line 15
-    .line 16
-    .line 17
-    sput-object v0, Landroidx/window/layout/k;->c:Landroidx/window/layout/k;
-
-    .line 18
-    .line 19
-    return-void
-.end method
-
-.method public constructor <init>(Ljava/lang/String;)V
+.method public constructor <init>(Landroidx/window/layout/l;Landroid/app/Activity;)V
     .locals 0
 
     .line 1
@@ -64,19 +22,62 @@
     .line 2
     .line 3
     .line 4
-    iput-object p1, p0, Landroidx/window/layout/k;->a:Ljava/lang/String;
+    iput-object p1, p0, Landroidx/window/layout/k;->b:Landroidx/window/layout/l;
 
     .line 5
     .line 6
+    iput-object p2, p0, Landroidx/window/layout/k;->c:Landroid/app/Activity;
+
+    .line 7
+    .line 8
     return-void
 .end method
 
 
 # virtual methods
-.method public final toString()Ljava/lang/String;
-    .locals 1
+.method public final onConfigurationChanged(Landroid/content/res/Configuration;)V
+    .locals 2
 
-    iget-object v0, p0, Landroidx/window/layout/k;->a:Ljava/lang/String;
+    .line 1
+    iget-object p1, p0, Landroidx/window/layout/k;->b:Landroidx/window/layout/l;
 
-    return-object v0
+    .line 2
+    .line 3
+    iget-object v0, p1, Landroidx/window/layout/l;->e:Landroidx/appcompat/app/L;
+
+    .line 4
+    .line 5
+    if-nez v0, :cond_0
+
+    .line 6
+    .line 7
+    goto :goto_0
+
+    .line 8
+    :cond_0
+    iget-object v1, p0, Landroidx/window/layout/k;->c:Landroid/app/Activity;
+
+    .line 9
+    .line 10
+    invoke-virtual {p1, v1}, Landroidx/window/layout/l;->e(Landroid/app/Activity;)Landroidx/window/layout/t;
+
+    .line 11
+    .line 12
+    .line 13
+    move-result-object p1
+
+    .line 14
+    invoke-virtual {v0, v1, p1}, Landroidx/appcompat/app/L;->v(Landroid/app/Activity;Landroidx/window/layout/t;)V
+
+    .line 15
+    .line 16
+    .line 17
+    :goto_0
+    return-void
+.end method
+
+.method public final onLowMemory()V
+    .locals 0
+
+    return-void
 .end method

@@ -87,22 +87,22 @@
 
     invoke-direct {p4}, Lorg/json/JSONObject;-><init>()V
 
+    .line 7
     :goto_0
     iget-object v0, p0, Lcom/applovin/impl/jm$a;->n:Lcom/applovin/impl/jm;
 
-    .line 7
     invoke-static {v0, p4}, Lcom/applovin/impl/jm;->a(Lcom/applovin/impl/jm;Lorg/json/JSONObject;)V
 
+    .line 8
     const-string p4, "error_message"
 
-    .line 8
     invoke-static {p4, p3}, Lcom/applovin/impl/sdk/utils/CollectionUtils;->hashMap(Ljava/lang/String;Ljava/lang/String;)Ljava/util/HashMap;
 
     move-result-object p3
 
+    .line 9
     iget-object p4, p0, Lcom/applovin/impl/yl;->a:Lcom/applovin/impl/sdk/j;
 
-    .line 9
     invoke-virtual {p4}, Lcom/applovin/impl/sdk/j;->D()Lcom/applovin/impl/la;
 
     move-result-object p4
@@ -128,14 +128,14 @@
 .method public a(Ljava/lang/String;Lorg/json/JSONObject;I)V
     .locals 1
 
+    .line 3
     iget-object v0, p0, Lcom/applovin/impl/jm$a;->n:Lcom/applovin/impl/jm;
 
-    .line 3
     invoke-static {v0, p2}, Lcom/applovin/impl/jm;->a(Lcom/applovin/impl/jm;Lorg/json/JSONObject;)V
 
+    .line 4
     iget-object p2, p0, Lcom/applovin/impl/yl;->a:Lcom/applovin/impl/sdk/j;
 
-    .line 4
     invoke-virtual {p2}, Lcom/applovin/impl/sdk/j;->D()Lcom/applovin/impl/la;
 
     move-result-object p2

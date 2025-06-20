@@ -81,28 +81,28 @@
 
     invoke-direct {v0}, Ljava/util/HashMap;-><init>()V
 
+    .line 16
     const-string v1, "path"
 
     const-string v2, "TEXT"
 
-    .line 16
     invoke-virtual {v0, v1, v2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
+    .line 17
     const-string v1, "insert_time"
 
     const-string v3, "INTEGER"
 
-    .line 17
     invoke-virtual {v0, v1, v3}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
+    .line 18
     const-string v1, "ext1"
 
-    .line 18
     invoke-virtual {v0, v1, v2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
+    .line 19
     const-string v1, "ext2"
 
-    .line 19
     invoke-virtual {v0, v1, v2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     return-object v0
@@ -200,11 +200,10 @@
 
     goto :goto_2
 
+    .line 7
     :cond_0
     :try_start_0
     iget-object v3, p0, Lcom/apm/insight/e/a/a;->a:Ljava/lang/String;
-
-    const/4 v4, 0x0
 
     const-string v5, "path=?"
 
@@ -212,15 +211,16 @@
 
     move-result-object v6
 
-    const/4 v7, 0x0
-
     const/4 v8, 0x0
 
     const/4 v9, 0x0
 
+    const/4 v4, 0x0
+
+    const/4 v7, 0x0
+
     move-object v2, p1
 
-    .line 7
     invoke-virtual/range {v2 .. v9}, Landroid/database/sqlite/SQLiteDatabase;->query(Ljava/lang/String;[Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Landroid/database/Cursor;
 
     move-result-object p1

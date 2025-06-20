@@ -1,489 +1,122 @@
-.class public abstract synthetic Landroidx/compose/ui/graphics/b;
+.class public final synthetic Landroidx/compose/ui/graphics/B;
 .super Ljava/lang/Object;
 .source "SourceFile"
 
+# interfaces
+.implements Ljava/util/function/DoubleUnaryOperator;
 
-# static fields
-.field public static final synthetic a:[I
+
+# instance fields
+.field public final synthetic a:I
+
+.field public final synthetic b:Lka/c;
 
 
 # direct methods
-.method static constructor <clinit>()V
-    .locals 3
+.method public synthetic constructor <init>(ILka/c;)V
+    .locals 0
 
-    invoke-static {}, Landroidx/compose/ui/graphics/a;->r()[Landroid/graphics/BlendMode;
+    .line 1
+    iput p1, p0, Landroidx/compose/ui/graphics/B;->a:I
 
-    move-result-object v0
+    iput-object p2, p0, Landroidx/compose/ui/graphics/B;->b:Lka/c;
 
-    array-length v0, v0
-
-    new-array v0, v0, [I
-
-    :try_start_0
-    invoke-static {}, Landroidx/compose/foundation/q;->b()Landroid/graphics/BlendMode;
-
-    move-result-object v1
-
-    invoke-static {v1}, Landroidx/compose/foundation/q;->a(Landroid/graphics/BlendMode;)I
-
-    move-result v1
-
-    const/4 v2, 0x1
-
-    aput v2, v0, v1
-    :try_end_0
-    .catch Ljava/lang/NoSuchFieldError; {:try_start_0 .. :try_end_0} :catch_0
-
-    :catch_0
-    :try_start_1
-    invoke-static {}, Landroidx/compose/foundation/q;->o()Landroid/graphics/BlendMode;
-
-    move-result-object v1
-
-    invoke-static {v1}, Landroidx/compose/foundation/q;->a(Landroid/graphics/BlendMode;)I
-
-    move-result v1
-
-    const/4 v2, 0x2
-
-    aput v2, v0, v1
-    :try_end_1
-    .catch Ljava/lang/NoSuchFieldError; {:try_start_1 .. :try_end_1} :catch_1
-
-    :catch_1
-    :try_start_2
-    invoke-static {}, Landroidx/compose/foundation/q;->i()Landroid/graphics/BlendMode;
-
-    move-result-object v1
-
-    invoke-static {v1}, Landroidx/compose/foundation/q;->a(Landroid/graphics/BlendMode;)I
-
-    move-result v1
-
-    const/4 v2, 0x3
-
-    aput v2, v0, v1
-    :try_end_2
-    .catch Ljava/lang/NoSuchFieldError; {:try_start_2 .. :try_end_2} :catch_2
-
-    :catch_2
-    :try_start_3
-    invoke-static {}, Landroidx/compose/foundation/q;->h()Landroid/graphics/BlendMode;
-
-    move-result-object v1
-
-    invoke-static {v1}, Landroidx/compose/foundation/q;->a(Landroid/graphics/BlendMode;)I
-
-    move-result v1
-
-    const/4 v2, 0x4
-
-    aput v2, v0, v1
-    :try_end_3
-    .catch Ljava/lang/NoSuchFieldError; {:try_start_3 .. :try_end_3} :catch_3
-
-    :catch_3
-    :try_start_4
-    invoke-static {}, Landroidx/compose/foundation/q;->j()Landroid/graphics/BlendMode;
-
-    move-result-object v1
-
-    invoke-static {v1}, Landroidx/compose/foundation/q;->a(Landroid/graphics/BlendMode;)I
-
-    move-result v1
-
-    const/4 v2, 0x5
-
-    aput v2, v0, v1
-    :try_end_4
-    .catch Ljava/lang/NoSuchFieldError; {:try_start_4 .. :try_end_4} :catch_4
-
-    :catch_4
-    :try_start_5
-    invoke-static {}, Landroidx/compose/foundation/q;->k()Landroid/graphics/BlendMode;
-
-    move-result-object v1
-
-    invoke-static {v1}, Landroidx/compose/foundation/q;->a(Landroid/graphics/BlendMode;)I
-
-    move-result v1
-
-    const/4 v2, 0x6
-
-    aput v2, v0, v1
-    :try_end_5
-    .catch Ljava/lang/NoSuchFieldError; {:try_start_5 .. :try_end_5} :catch_5
-
-    :catch_5
-    :try_start_6
-    invoke-static {}, Landroidx/compose/foundation/q;->l()Landroid/graphics/BlendMode;
-
-    move-result-object v1
-
-    invoke-static {v1}, Landroidx/compose/foundation/q;->a(Landroid/graphics/BlendMode;)I
-
-    move-result v1
-
-    const/4 v2, 0x7
-
-    aput v2, v0, v1
-    :try_end_6
-    .catch Ljava/lang/NoSuchFieldError; {:try_start_6 .. :try_end_6} :catch_6
-
-    :catch_6
-    :try_start_7
-    invoke-static {}, Landroidx/compose/foundation/q;->m()Landroid/graphics/BlendMode;
-
-    move-result-object v1
-
-    invoke-static {v1}, Landroidx/compose/foundation/q;->a(Landroid/graphics/BlendMode;)I
-
-    move-result v1
-
-    const/16 v2, 0x8
-
-    aput v2, v0, v1
-    :try_end_7
-    .catch Ljava/lang/NoSuchFieldError; {:try_start_7 .. :try_end_7} :catch_7
-
-    :catch_7
-    :try_start_8
-    invoke-static {}, Landroidx/compose/foundation/q;->n()Landroid/graphics/BlendMode;
-
-    move-result-object v1
-
-    invoke-static {v1}, Landroidx/compose/foundation/q;->a(Landroid/graphics/BlendMode;)I
-
-    move-result v1
-
-    const/16 v2, 0x9
-
-    aput v2, v0, v1
-    :try_end_8
-    .catch Ljava/lang/NoSuchFieldError; {:try_start_8 .. :try_end_8} :catch_8
-
-    :catch_8
-    :try_start_9
-    invoke-static {}, Landroidx/compose/foundation/q;->p()Landroid/graphics/BlendMode;
-
-    move-result-object v1
-
-    invoke-static {v1}, Landroidx/compose/foundation/q;->a(Landroid/graphics/BlendMode;)I
-
-    move-result v1
-
-    const/16 v2, 0xa
-
-    aput v2, v0, v1
-    :try_end_9
-    .catch Ljava/lang/NoSuchFieldError; {:try_start_9 .. :try_end_9} :catch_9
-
-    :catch_9
-    :try_start_a
-    invoke-static {}, Landroidx/compose/foundation/q;->f()Landroid/graphics/BlendMode;
-
-    move-result-object v1
-
-    invoke-static {v1}, Landroidx/compose/foundation/q;->a(Landroid/graphics/BlendMode;)I
-
-    move-result v1
-
-    const/16 v2, 0xb
-
-    aput v2, v0, v1
-    :try_end_a
-    .catch Ljava/lang/NoSuchFieldError; {:try_start_a .. :try_end_a} :catch_a
-
-    :catch_a
-    :try_start_b
-    invoke-static {}, Landroidx/compose/foundation/q;->q()Landroid/graphics/BlendMode;
-
-    move-result-object v1
-
-    invoke-static {v1}, Landroidx/compose/foundation/q;->a(Landroid/graphics/BlendMode;)I
-
-    move-result v1
-
-    const/16 v2, 0xc
-
-    aput v2, v0, v1
-    :try_end_b
-    .catch Ljava/lang/NoSuchFieldError; {:try_start_b .. :try_end_b} :catch_b
-
-    :catch_b
-    :try_start_c
-    invoke-static {}, Landroidx/compose/foundation/q;->r()Landroid/graphics/BlendMode;
-
-    move-result-object v1
-
-    invoke-static {v1}, Landroidx/compose/foundation/q;->a(Landroid/graphics/BlendMode;)I
-
-    move-result v1
-
-    const/16 v2, 0xd
-
-    aput v2, v0, v1
-    :try_end_c
-    .catch Ljava/lang/NoSuchFieldError; {:try_start_c .. :try_end_c} :catch_c
-
-    :catch_c
-    :try_start_d
-    invoke-static {}, Landroidx/compose/foundation/q;->s()Landroid/graphics/BlendMode;
-
-    move-result-object v1
-
-    invoke-static {v1}, Landroidx/compose/foundation/q;->a(Landroid/graphics/BlendMode;)I
-
-    move-result v1
-
-    const/16 v2, 0xe
-
-    aput v2, v0, v1
-    :try_end_d
-    .catch Ljava/lang/NoSuchFieldError; {:try_start_d .. :try_end_d} :catch_d
-
-    :catch_d
-    :try_start_e
-    invoke-static {}, Landroidx/compose/foundation/q;->t()Landroid/graphics/BlendMode;
-
-    move-result-object v1
-
-    invoke-static {v1}, Landroidx/compose/foundation/q;->a(Landroid/graphics/BlendMode;)I
-
-    move-result v1
-
-    const/16 v2, 0xf
-
-    aput v2, v0, v1
-    :try_end_e
-    .catch Ljava/lang/NoSuchFieldError; {:try_start_e .. :try_end_e} :catch_e
-
-    :catch_e
-    :try_start_f
-    invoke-static {}, Landroidx/compose/foundation/q;->u()Landroid/graphics/BlendMode;
-
-    move-result-object v1
-
-    invoke-static {v1}, Landroidx/compose/foundation/q;->a(Landroid/graphics/BlendMode;)I
-
-    move-result v1
-
-    const/16 v2, 0x10
-
-    aput v2, v0, v1
-    :try_end_f
-    .catch Ljava/lang/NoSuchFieldError; {:try_start_f .. :try_end_f} :catch_f
-
-    :catch_f
-    :try_start_10
-    invoke-static {}, Landroidx/compose/foundation/q;->v()Landroid/graphics/BlendMode;
-
-    move-result-object v1
-
-    invoke-static {v1}, Landroidx/compose/foundation/q;->a(Landroid/graphics/BlendMode;)I
-
-    move-result v1
-
-    const/16 v2, 0x11
-
-    aput v2, v0, v1
-    :try_end_10
-    .catch Ljava/lang/NoSuchFieldError; {:try_start_10 .. :try_end_10} :catch_10
-
-    :catch_10
-    :try_start_11
-    invoke-static {}, Landroidx/compose/foundation/q;->w()Landroid/graphics/BlendMode;
-
-    move-result-object v1
-
-    invoke-static {v1}, Landroidx/compose/foundation/q;->a(Landroid/graphics/BlendMode;)I
-
-    move-result v1
-
-    const/16 v2, 0x12
-
-    aput v2, v0, v1
-    :try_end_11
-    .catch Ljava/lang/NoSuchFieldError; {:try_start_11 .. :try_end_11} :catch_11
-
-    :catch_11
-    :try_start_12
-    invoke-static {}, Landroidx/compose/ui/graphics/a;->c()Landroid/graphics/BlendMode;
-
-    move-result-object v1
-
-    invoke-static {v1}, Landroidx/compose/foundation/q;->a(Landroid/graphics/BlendMode;)I
-
-    move-result v1
-
-    const/16 v2, 0x13
-
-    aput v2, v0, v1
-    :try_end_12
-    .catch Ljava/lang/NoSuchFieldError; {:try_start_12 .. :try_end_12} :catch_12
-
-    :catch_12
-    :try_start_13
-    invoke-static {}, Landroidx/compose/foundation/q;->d()Landroid/graphics/BlendMode;
-
-    move-result-object v1
-
-    invoke-static {v1}, Landroidx/compose/foundation/q;->a(Landroid/graphics/BlendMode;)I
-
-    move-result v1
-
-    const/16 v2, 0x14
-
-    aput v2, v0, v1
-    :try_end_13
-    .catch Ljava/lang/NoSuchFieldError; {:try_start_13 .. :try_end_13} :catch_13
-
-    :catch_13
-    :try_start_14
-    invoke-static {}, Landroidx/compose/foundation/q;->x()Landroid/graphics/BlendMode;
-
-    move-result-object v1
-
-    invoke-static {v1}, Landroidx/compose/foundation/q;->a(Landroid/graphics/BlendMode;)I
-
-    move-result v1
-
-    const/16 v2, 0x15
-
-    aput v2, v0, v1
-    :try_end_14
-    .catch Ljava/lang/NoSuchFieldError; {:try_start_14 .. :try_end_14} :catch_14
-
-    :catch_14
-    :try_start_15
-    invoke-static {}, Landroidx/compose/foundation/q;->y()Landroid/graphics/BlendMode;
-
-    move-result-object v1
-
-    invoke-static {v1}, Landroidx/compose/foundation/q;->a(Landroid/graphics/BlendMode;)I
-
-    move-result v1
-
-    const/16 v2, 0x16
-
-    aput v2, v0, v1
-    :try_end_15
-    .catch Ljava/lang/NoSuchFieldError; {:try_start_15 .. :try_end_15} :catch_15
-
-    :catch_15
-    :try_start_16
-    invoke-static {}, Landroidx/compose/foundation/q;->z()Landroid/graphics/BlendMode;
-
-    move-result-object v1
-
-    invoke-static {v1}, Landroidx/compose/foundation/q;->a(Landroid/graphics/BlendMode;)I
-
-    move-result v1
-
-    const/16 v2, 0x17
-
-    aput v2, v0, v1
-    :try_end_16
-    .catch Ljava/lang/NoSuchFieldError; {:try_start_16 .. :try_end_16} :catch_16
-
-    :catch_16
-    :try_start_17
-    invoke-static {}, Landroidx/compose/foundation/q;->A()Landroid/graphics/BlendMode;
-
-    move-result-object v1
-
-    invoke-static {v1}, Landroidx/compose/foundation/q;->a(Landroid/graphics/BlendMode;)I
-
-    move-result v1
-
-    const/16 v2, 0x18
-
-    aput v2, v0, v1
-    :try_end_17
-    .catch Ljava/lang/NoSuchFieldError; {:try_start_17 .. :try_end_17} :catch_17
-
-    :catch_17
-    :try_start_18
-    invoke-static {}, Landroidx/compose/foundation/q;->B()Landroid/graphics/BlendMode;
-
-    move-result-object v1
-
-    invoke-static {v1}, Landroidx/compose/foundation/q;->a(Landroid/graphics/BlendMode;)I
-
-    move-result v1
-
-    const/16 v2, 0x19
-
-    aput v2, v0, v1
-    :try_end_18
-    .catch Ljava/lang/NoSuchFieldError; {:try_start_18 .. :try_end_18} :catch_18
-
-    :catch_18
-    :try_start_19
-    invoke-static {}, Landroidx/compose/foundation/q;->C()Landroid/graphics/BlendMode;
-
-    move-result-object v1
-
-    invoke-static {v1}, Landroidx/compose/foundation/q;->a(Landroid/graphics/BlendMode;)I
-
-    move-result v1
-
-    const/16 v2, 0x1a
-
-    aput v2, v0, v1
-    :try_end_19
-    .catch Ljava/lang/NoSuchFieldError; {:try_start_19 .. :try_end_19} :catch_19
-
-    :catch_19
-    :try_start_1a
-    invoke-static {}, Landroidx/compose/foundation/q;->D()Landroid/graphics/BlendMode;
-
-    move-result-object v1
-
-    invoke-static {v1}, Landroidx/compose/foundation/q;->a(Landroid/graphics/BlendMode;)I
-
-    move-result v1
-
-    const/16 v2, 0x1b
-
-    aput v2, v0, v1
-    :try_end_1a
-    .catch Ljava/lang/NoSuchFieldError; {:try_start_1a .. :try_end_1a} :catch_1a
-
-    :catch_1a
-    :try_start_1b
-    invoke-static {}, Landroidx/compose/foundation/q;->e()Landroid/graphics/BlendMode;
-
-    move-result-object v1
-
-    invoke-static {v1}, Landroidx/compose/foundation/q;->a(Landroid/graphics/BlendMode;)I
-
-    move-result v1
-
-    const/16 v2, 0x1c
-
-    aput v2, v0, v1
-    :try_end_1b
-    .catch Ljava/lang/NoSuchFieldError; {:try_start_1b .. :try_end_1b} :catch_1b
-
-    :catch_1b
-    :try_start_1c
-    invoke-static {}, Landroidx/compose/foundation/q;->g()Landroid/graphics/BlendMode;
-
-    move-result-object v1
-
-    invoke-static {v1}, Landroidx/compose/foundation/q;->a(Landroid/graphics/BlendMode;)I
-
-    move-result v1
-
-    const/16 v2, 0x1d
-
-    aput v2, v0, v1
-    :try_end_1c
-    .catch Ljava/lang/NoSuchFieldError; {:try_start_1c .. :try_end_1c} :catch_1c
-
-    :catch_1c
-    sput-object v0, Landroidx/compose/ui/graphics/b;->a:[I
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
+.end method
+
+
+# virtual methods
+.method public final applyAsDouble(D)D
+    .locals 1
+
+    .line 1
+    iget v0, p0, Landroidx/compose/ui/graphics/B;->a:I
+
+    .line 2
+    .line 3
+    packed-switch v0, :pswitch_data_0
+
+    .line 4
+    .line 5
+    .line 6
+    iget-object v0, p0, Landroidx/compose/ui/graphics/B;->b:Lka/c;
+
+    .line 7
+    .line 8
+    invoke-static {p1, p2}, Ljava/lang/Double;->valueOf(D)Ljava/lang/Double;
+
+    .line 9
+    .line 10
+    .line 11
+    move-result-object p1
+
+    .line 12
+    invoke-interface {v0, p1}, Lka/c;->invoke(Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 13
+    .line 14
+    .line 15
+    move-result-object p1
+
+    .line 16
+    check-cast p1, Ljava/lang/Number;
+
+    .line 17
+    .line 18
+    invoke-virtual {p1}, Ljava/lang/Number;->doubleValue()D
+
+    .line 19
+    .line 20
+    .line 21
+    move-result-wide p1
+
+    .line 22
+    return-wide p1
+
+    .line 23
+    :pswitch_0
+    iget-object v0, p0, Landroidx/compose/ui/graphics/B;->b:Lka/c;
+
+    .line 24
+    .line 25
+    invoke-static {p1, p2}, Ljava/lang/Double;->valueOf(D)Ljava/lang/Double;
+
+    .line 26
+    .line 27
+    .line 28
+    move-result-object p1
+
+    .line 29
+    invoke-interface {v0, p1}, Lka/c;->invoke(Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 30
+    .line 31
+    .line 32
+    move-result-object p1
+
+    .line 33
+    check-cast p1, Ljava/lang/Number;
+
+    .line 34
+    .line 35
+    invoke-virtual {p1}, Ljava/lang/Number;->doubleValue()D
+
+    .line 36
+    .line 37
+    .line 38
+    move-result-wide p1
+
+    .line 39
+    return-wide p1
+
+    .line 40
+    nop
+
+    .line 41
+    :pswitch_data_0
+    .packed-switch 0x0
+        :pswitch_0
+    .end packed-switch
 .end method

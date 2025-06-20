@@ -1,7 +1,3 @@
-.class public final Landroidx/compose/animation/g;
+.class public interface abstract Landroidx/compose/animation/G;
 .super Ljava/lang/Object;
 .source "SourceFile"
-
-# interfaces
-.implements Landroidx/compose/animation/f;
-.implements Landroidx/compose/animation/n;

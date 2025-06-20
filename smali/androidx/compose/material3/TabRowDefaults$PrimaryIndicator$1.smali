@@ -3,14 +3,14 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lzh/e;
+.implements Lka/e;
 
 
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "Lkotlin/jvm/internal/Lambda;",
-        "Lzh/e;"
+        "Lka/e;"
     }
 .end annotation
 
@@ -36,18 +36,18 @@
 
 .field final synthetic $modifier:Landroidx/compose/ui/o;
 
-.field final synthetic $shape:Landroidx/compose/ui/graphics/z0;
+.field final synthetic $shape:Landroidx/compose/ui/graphics/Z;
 
-.field final synthetic $tmp0_rcvr:Landroidx/compose/material3/n1;
+.field final synthetic $tmp0_rcvr:Landroidx/compose/material3/J0;
 
 .field final synthetic $width:F
 
 
 # direct methods
-.method public constructor <init>(Landroidx/compose/material3/n1;Landroidx/compose/ui/o;FFJLandroidx/compose/ui/graphics/z0;II)V
+.method public constructor <init>(Landroidx/compose/material3/J0;Landroidx/compose/ui/o;FFJLandroidx/compose/ui/graphics/Z;II)V
     .locals 0
 
-    iput-object p1, p0, Landroidx/compose/material3/TabRowDefaults$PrimaryIndicator$1;->$tmp0_rcvr:Landroidx/compose/material3/n1;
+    iput-object p1, p0, Landroidx/compose/material3/TabRowDefaults$PrimaryIndicator$1;->$tmp0_rcvr:Landroidx/compose/material3/J0;
 
     iput-object p2, p0, Landroidx/compose/material3/TabRowDefaults$PrimaryIndicator$1;->$modifier:Landroidx/compose/ui/o;
 
@@ -57,7 +57,7 @@
 
     iput-wide p5, p0, Landroidx/compose/material3/TabRowDefaults$PrimaryIndicator$1;->$color:J
 
-    iput-object p7, p0, Landroidx/compose/material3/TabRowDefaults$PrimaryIndicator$1;->$shape:Landroidx/compose/ui/graphics/z0;
+    iput-object p7, p0, Landroidx/compose/material3/TabRowDefaults$PrimaryIndicator$1;->$shape:Landroidx/compose/ui/graphics/Z;
 
     iput p8, p0, Landroidx/compose/material3/TabRowDefaults$PrimaryIndicator$1;->$$changed:I
 
@@ -76,7 +76,7 @@
     .locals 0
 
     .line 1
-    check-cast p1, Landroidx/compose/runtime/l;
+    check-cast p1, Landroidx/compose/runtime/j;
 
     check-cast p2, Ljava/lang/Number;
 
@@ -84,42 +84,42 @@
 
     move-result p2
 
-    invoke-virtual {p0, p1, p2}, Landroidx/compose/material3/TabRowDefaults$PrimaryIndicator$1;->invoke(Landroidx/compose/runtime/l;I)V
+    invoke-virtual {p0, p1, p2}, Landroidx/compose/material3/TabRowDefaults$PrimaryIndicator$1;->invoke(Landroidx/compose/runtime/j;I)V
 
-    sget-object p1, Lqh/r;->a:Lqh/r;
+    sget-object p1, LX9/j;->a:LX9/j;
 
     return-object p1
 .end method
 
-.method public final invoke(Landroidx/compose/runtime/l;I)V
+.method public final invoke(Landroidx/compose/runtime/j;I)V
     .locals 10
 
     .line 2
-    iget-object v0, p0, Landroidx/compose/material3/TabRowDefaults$PrimaryIndicator$1;->$tmp0_rcvr:Landroidx/compose/material3/n1;
+    iget-object v0, p0, Landroidx/compose/material3/TabRowDefaults$PrimaryIndicator$1;->$tmp0_rcvr:Landroidx/compose/material3/J0;
 
-    iget-object v1, p0, Landroidx/compose/material3/TabRowDefaults$PrimaryIndicator$1;->$modifier:Landroidx/compose/ui/o;
+    iget-object v8, p0, Landroidx/compose/material3/TabRowDefaults$PrimaryIndicator$1;->$modifier:Landroidx/compose/ui/o;
 
-    iget v2, p0, Landroidx/compose/material3/TabRowDefaults$PrimaryIndicator$1;->$width:F
+    iget v1, p0, Landroidx/compose/material3/TabRowDefaults$PrimaryIndicator$1;->$width:F
 
-    iget v3, p0, Landroidx/compose/material3/TabRowDefaults$PrimaryIndicator$1;->$height:F
+    iget v2, p0, Landroidx/compose/material3/TabRowDefaults$PrimaryIndicator$1;->$height:F
 
-    iget-wide v4, p0, Landroidx/compose/material3/TabRowDefaults$PrimaryIndicator$1;->$color:J
+    iget-wide v5, p0, Landroidx/compose/material3/TabRowDefaults$PrimaryIndicator$1;->$color:J
 
-    iget-object v6, p0, Landroidx/compose/material3/TabRowDefaults$PrimaryIndicator$1;->$shape:Landroidx/compose/ui/graphics/z0;
+    iget-object v9, p0, Landroidx/compose/material3/TabRowDefaults$PrimaryIndicator$1;->$shape:Landroidx/compose/ui/graphics/Z;
 
     iget p2, p0, Landroidx/compose/material3/TabRowDefaults$PrimaryIndicator$1;->$$changed:I
 
     or-int/lit8 p2, p2, 0x1
 
-    invoke-static {p2}, Landroidx/compose/runtime/q;->A(I)I
+    invoke-static {p2}, Landroidx/compose/runtime/o;->f0(I)I
 
-    move-result v8
+    move-result v3
 
-    iget v9, p0, Landroidx/compose/material3/TabRowDefaults$PrimaryIndicator$1;->$$default:I
+    iget v4, p0, Landroidx/compose/material3/TabRowDefaults$PrimaryIndicator$1;->$$default:I
 
     move-object v7, p1
 
-    invoke-virtual/range {v0 .. v9}, Landroidx/compose/material3/n1;->a(Landroidx/compose/ui/o;FFJLandroidx/compose/ui/graphics/z0;Landroidx/compose/runtime/l;II)V
+    invoke-virtual/range {v0 .. v9}, Landroidx/compose/material3/J0;->a(FFIIJLandroidx/compose/runtime/j;Landroidx/compose/ui/o;Landroidx/compose/ui/graphics/Z;)V
 
     return-void
 .end method

@@ -23,12 +23,18 @@
 .method static constructor <clinit>()V
     .locals 1
 
+    .line 1
     const/4 v0, 0x0
 
+    .line 2
     new-array v0, v0, [Ljava/lang/Object;
 
+    .line 3
+    .line 4
     sput-object v0, Lcom/applovin/impl/bb;->a:[Ljava/lang/Object;
 
+    .line 5
+    .line 6
     return-void
 .end method
 
@@ -226,9 +232,9 @@
 .method public final toArray()[Ljava/lang/Object;
     .locals 1
 
+    .line 1
     sget-object v0, Lcom/applovin/impl/bb;->a:[Ljava/lang/Object;
 
-    .line 1
     invoke-virtual {p0, v0}, Lcom/applovin/impl/bb;->toArray([Ljava/lang/Object;)[Ljava/lang/Object;
 
     move-result-object v0

@@ -56,10 +56,10 @@
 .method public static a()Lcom/applovin/impl/xr$c;
     .locals 4
 
-    .line 12
+    .line 13
     new-instance v0, Lcom/applovin/impl/xr$c;
 
-    .line 13
+    .line 14
     invoke-static {}, Ljava/util/Collections;->emptySet()Ljava/util/Set;
 
     move-result-object v1
@@ -92,9 +92,9 @@
 
     invoke-static {v0}, Lcom/applovin/impl/b1;->a(Z)V
 
+    .line 3
     const-string v0, " "
 
-    .line 3
     invoke-virtual {p0, v0}, Ljava/lang/String;->indexOf(Ljava/lang/String;)I
 
     move-result v0
@@ -105,11 +105,12 @@
 
     if-ne v0, v2, :cond_0
 
+    .line 4
     const-string v0, ""
 
     goto :goto_0
 
-    .line 4
+    .line 5
     :cond_0
     invoke-virtual {p0, v0}, Ljava/lang/String;->substring(I)Ljava/lang/String;
 
@@ -119,36 +120,36 @@
 
     move-result-object v2
 
-    .line 5
+    .line 6
     invoke-virtual {p0, v3, v0}, Ljava/lang/String;->substring(II)Ljava/lang/String;
 
     move-result-object p0
 
     move-object v0, v2
 
+    .line 7
     :goto_0
     const-string v2, "\\."
 
-    .line 6
     invoke-static {p0, v2}, Lcom/applovin/impl/xp;->a(Ljava/lang/String;Ljava/lang/String;)[Ljava/lang/String;
 
     move-result-object p0
 
-    .line 7
+    .line 8
     aget-object v2, p0, v3
 
-    .line 8
+    .line 9
     new-instance v3, Ljava/util/HashSet;
 
     invoke-direct {v3}, Ljava/util/HashSet;-><init>()V
 
-    .line 9
+    .line 10
     :goto_1
     array-length v4, p0
 
     if-ge v1, v4, :cond_1
 
-    .line 10
+    .line 11
     aget-object v4, p0, v1
 
     invoke-virtual {v3, v4}, Ljava/util/HashSet;->add(Ljava/lang/Object;)Z
@@ -157,7 +158,7 @@
 
     goto :goto_1
 
-    .line 11
+    .line 12
     :cond_1
     new-instance p0, Lcom/applovin/impl/xr$c;
 

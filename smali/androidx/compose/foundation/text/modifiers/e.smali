@@ -6,9 +6,9 @@
 # instance fields
 .field public a:Ljava/lang/String;
 
-.field public b:Landroidx/compose/ui/text/i0;
+.field public b:Landroidx/compose/ui/text/I;
 
-.field public c:Landroidx/compose/ui/text/font/l;
+.field public c:Landroidx/compose/ui/text/font/j;
 
 .field public d:I
 
@@ -20,7 +20,7 @@
 
 .field public h:J
 
-.field public i:Lh2/b;
+.field public i:LM0/b;
 
 .field public j:Landroidx/compose/ui/text/b;
 
@@ -42,7 +42,7 @@
 
 
 # direct methods
-.method public constructor <init>(Ljava/lang/String;Landroidx/compose/ui/text/i0;Landroidx/compose/ui/text/font/l;IZII)V
+.method public constructor <init>(Ljava/lang/String;Landroidx/compose/ui/text/I;Landroidx/compose/ui/text/font/j;IZII)V
     .locals 0
 
     .line 1
@@ -55,11 +55,11 @@
 
     .line 5
     .line 6
-    iput-object p2, p0, Landroidx/compose/foundation/text/modifiers/e;->b:Landroidx/compose/ui/text/i0;
+    iput-object p2, p0, Landroidx/compose/foundation/text/modifiers/e;->b:Landroidx/compose/ui/text/I;
 
     .line 7
     .line 8
-    iput-object p3, p0, Landroidx/compose/foundation/text/modifiers/e;->c:Landroidx/compose/ui/text/font/l;
+    iput-object p3, p0, Landroidx/compose/foundation/text/modifiers/e;->c:Landroidx/compose/ui/text/font/j;
 
     .line 9
     .line 10
@@ -90,7 +90,7 @@
     const/4 p1, 0x0
 
     .line 23
-    invoke-static {p1, p1}, Lv5/a;->b(II)J
+    invoke-static {p1, p1}, Lc4/s;->a(II)J
 
     .line 24
     .line 25
@@ -102,7 +102,7 @@
 
     .line 28
     .line 29
-    invoke-static {p1, p1}, Landroidx/compose/ui/text/input/n;->f(II)J
+    invoke-static {p1, p1, p1, p1}, LP5/f;->l(IIII)J
 
     .line 30
     .line 31
@@ -165,7 +165,7 @@
     const/4 v1, 0x0
 
     .line 15
-    invoke-static {v1, p1, v1, v0}, Lcom/google/android/gms/internal/consent_sdk/z;->a(IIII)J
+    invoke-static {v1, p1, v1, v0}, LP5/f;->a(IIII)J
 
     .line 16
     .line 17
@@ -189,7 +189,7 @@
     move-result p2
 
     .line 27
-    invoke-static {p2}, Lma/a;->f(F)I
+    invoke-static {p2}, Landroidx/compose/foundation/text/e;->n(F)I
 
     .line 28
     .line 29
@@ -236,7 +236,7 @@
     move-result v2
 
     .line 13
-    invoke-static {p1, p2, v0, v1, v2}, Lh5/f;->v(JZIF)J
+    invoke-static {p1, p2, v0, v1, v2}, Lcom/facebook/appevents/n;->i(JZIF)J
 
     .line 14
     .line 15
@@ -266,7 +266,7 @@
 
     .line 26
     .line 27
-    invoke-static {p2, v1}, Lnc/b;->j(II)Z
+    invoke-static {p2, v1}, Lcom/facebook/appevents/cloudbridge/c;->j(II)Z
 
     .line 28
     .line 29
@@ -301,7 +301,7 @@
 
     .line 40
     .line 41
-    invoke-static {p1, v1}, Lnc/b;->j(II)Z
+    invoke-static {p1, v1}, Lcom/facebook/appevents/cloudbridge/c;->j(II)Z
 
     .line 42
     .line 43
@@ -331,11 +331,11 @@
     return-object p1
 .end method
 
-.method public final c(Lh2/b;)V
+.method public final c(LM0/b;)V
     .locals 5
 
     .line 1
-    iget-object v0, p0, Landroidx/compose/foundation/text/modifiers/e;->i:Lh2/b;
+    iget-object v0, p0, Landroidx/compose/foundation/text/modifiers/e;->i:LM0/b;
 
     .line 2
     .line 3
@@ -347,7 +347,7 @@
 
     .line 6
     .line 7
-    invoke-interface {p1}, Lh2/b;->a()F
+    invoke-interface {p1}, LM0/b;->b()F
 
     .line 8
     .line 9
@@ -355,7 +355,7 @@
     move-result v1
 
     .line 11
-    invoke-interface {p1}, Lh2/b;->Q()F
+    invoke-interface {p1}, LM0/b;->O()F
 
     .line 12
     .line 13
@@ -384,7 +384,7 @@
 
     .line 23
     .line 24
-    iput-object p1, p0, Landroidx/compose/foundation/text/modifiers/e;->i:Lh2/b;
+    iput-object p1, p0, Landroidx/compose/foundation/text/modifiers/e;->i:LM0/b;
 
     .line 25
     .line 26
@@ -416,7 +416,7 @@
 
     .line 38
     :cond_2
-    iput-object p1, p0, Landroidx/compose/foundation/text/modifiers/e;->i:Lh2/b;
+    iput-object p1, p0, Landroidx/compose/foundation/text/modifiers/e;->i:LM0/b;
 
     .line 39
     .line 40
@@ -453,7 +453,7 @@
     const/4 p1, 0x0
 
     .line 55
-    invoke-static {p1, p1}, Landroidx/compose/ui/text/input/n;->f(II)J
+    invoke-static {p1, p1, p1, p1}, LP5/f;->l(IIII)J
 
     .line 56
     .line 57
@@ -465,7 +465,7 @@
 
     .line 60
     .line 61
-    invoke-static {p1, p1}, Lv5/a;->b(II)J
+    invoke-static {p1, p1}, Lc4/s;->a(II)J
 
     .line 62
     .line 63
@@ -522,31 +522,31 @@
 
     .line 16
     .line 17
-    iget-object v6, p0, Landroidx/compose/foundation/text/modifiers/e;->a:Ljava/lang/String;
+    iget-object v3, p0, Landroidx/compose/foundation/text/modifiers/e;->a:Ljava/lang/String;
 
     .line 18
     .line 19
-    iget-object v0, p0, Landroidx/compose/foundation/text/modifiers/e;->b:Landroidx/compose/ui/text/i0;
+    iget-object v0, p0, Landroidx/compose/foundation/text/modifiers/e;->b:Landroidx/compose/ui/text/I;
 
     .line 20
     .line 21
-    invoke-static {v0, p1}, Lma/a;->j0(Landroidx/compose/ui/text/i0;Landroidx/compose/ui/unit/LayoutDirection;)Landroidx/compose/ui/text/i0;
+    invoke-static {v0, p1}, Landroidx/compose/ui/text/K;->h(Landroidx/compose/ui/text/I;Landroidx/compose/ui/unit/LayoutDirection;)Landroidx/compose/ui/text/I;
 
     .line 22
     .line 23
     .line 24
-    move-result-object v3
+    move-result-object v4
 
     .line 25
-    iget-object v5, p0, Landroidx/compose/foundation/text/modifiers/e;->i:Lh2/b;
+    iget-object v8, p0, Landroidx/compose/foundation/text/modifiers/e;->i:LM0/b;
 
     .line 26
     .line 27
-    iget-object v4, p0, Landroidx/compose/foundation/text/modifiers/e;->c:Landroidx/compose/ui/text/font/l;
+    iget-object v7, p0, Landroidx/compose/foundation/text/modifiers/e;->c:Landroidx/compose/ui/text/font/j;
 
     .line 28
     .line 29
-    sget-object v8, Lkotlin/collections/EmptyList;->INSTANCE:Lkotlin/collections/EmptyList;
+    sget-object v6, Lkotlin/collections/EmptyList;->INSTANCE:Lkotlin/collections/EmptyList;
 
     .line 30
     .line 31
@@ -557,10 +557,10 @@
     move-object v2, v0
 
     .line 34
-    move-object v7, v8
+    move-object v5, v6
 
     .line 35
-    invoke-direct/range {v2 .. v8}, Landroidx/compose/ui/text/platform/c;-><init>(Landroidx/compose/ui/text/i0;Landroidx/compose/ui/text/font/l;Lh2/b;Ljava/lang/String;Ljava/util/List;Ljava/util/List;)V
+    invoke-direct/range {v2 .. v8}, Landroidx/compose/ui/text/platform/c;-><init>(Ljava/lang/String;Landroidx/compose/ui/text/I;Ljava/util/List;Ljava/util/List;Landroidx/compose/ui/text/font/j;LM0/b;)V
 
     .line 36
     .line 37

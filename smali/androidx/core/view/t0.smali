@@ -1,86 +1,72 @@
-.class public abstract Landroidx/core/view/t0;
+.class public final Landroidx/core/view/t0;
 .super Ljava/lang/Object;
 .source "SourceFile"
 
 
+# instance fields
+.field public a:Landroidx/core/view/s0;
+
+
 # direct methods
-.method public static a(Landroid/view/View;)Ljava/lang/CharSequence;
-    .locals 0
+.method public constructor <init>(ILandroid/view/animation/Interpolator;J)V
+    .locals 2
 
     .line 1
-    invoke-virtual {p0}, Landroid/view/View;->getAccessibilityPaneTitle()Ljava/lang/CharSequence;
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 2
     .line 3
     .line 4
-    move-result-object p0
+    sget v0, Landroid/os/Build$VERSION;->SDK_INT:I
 
     .line 5
-    return-object p0
-.end method
+    .line 6
+    const/16 v1, 0x1e
 
-.method public static b(Landroid/view/View;)Z
-    .locals 0
+    .line 7
+    .line 8
+    if-lt v0, v1, :cond_0
 
-    .line 1
-    invoke-virtual {p0}, Landroid/view/View;->isAccessibilityHeading()Z
+    .line 9
+    .line 10
+    new-instance v0, Landroidx/core/view/r0;
 
-    .line 2
-    .line 3
-    .line 4
-    move-result p0
+    .line 11
+    .line 12
+    invoke-static {p1, p2, p3, p4}, LE0/j;->i(ILandroid/view/animation/Interpolator;J)Landroid/view/WindowInsetsAnimation;
 
-    .line 5
-    return p0
-.end method
+    .line 13
+    .line 14
+    .line 15
+    move-result-object p1
 
-.method public static c(Landroid/view/View;)Z
-    .locals 0
+    .line 16
+    invoke-direct {v0, p1}, Landroidx/core/view/r0;-><init>(Landroid/view/WindowInsetsAnimation;)V
 
-    .line 1
-    invoke-virtual {p0}, Landroid/view/View;->isScreenReaderFocusable()Z
+    .line 17
+    .line 18
+    .line 19
+    iput-object v0, p0, Landroidx/core/view/t0;->a:Landroidx/core/view/s0;
 
-    .line 2
-    .line 3
-    .line 4
-    move-result p0
+    .line 20
+    .line 21
+    goto :goto_0
 
-    .line 5
-    return p0
-.end method
+    .line 22
+    :cond_0
+    new-instance v0, Landroidx/core/view/p0;
 
-.method public static d(Landroid/view/View;Z)V
-    .locals 0
+    .line 23
+    .line 24
+    invoke-direct {v0, p1, p2, p3, p4}, Landroidx/core/view/s0;-><init>(ILandroid/view/animation/Interpolator;J)V
 
-    .line 1
-    invoke-virtual {p0, p1}, Landroid/view/View;->setAccessibilityHeading(Z)V
+    .line 25
+    .line 26
+    .line 27
+    iput-object v0, p0, Landroidx/core/view/t0;->a:Landroidx/core/view/s0;
 
-    .line 2
-    .line 3
-    .line 4
-    return-void
-.end method
-
-.method public static e(Landroid/view/View;Ljava/lang/CharSequence;)V
-    .locals 0
-
-    .line 1
-    invoke-virtual {p0, p1}, Landroid/view/View;->setAccessibilityPaneTitle(Ljava/lang/CharSequence;)V
-
-    .line 2
-    .line 3
-    .line 4
-    return-void
-.end method
-
-.method public static f(Landroid/view/View;Z)V
-    .locals 0
-
-    .line 1
-    invoke-virtual {p0, p1}, Landroid/view/View;->setScreenReaderFocusable(Z)V
-
-    .line 2
-    .line 3
-    .line 4
+    .line 28
+    .line 29
+    :goto_0
     return-void
 .end method

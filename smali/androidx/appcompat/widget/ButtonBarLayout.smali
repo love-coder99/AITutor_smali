@@ -18,6 +18,14 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
     .locals 7
+    .param p1    # Landroid/content/Context;
+        .annotation build Landroidx/annotation/NonNull;
+        .end annotation
+    .end param
+    .param p2    # Landroid/util/AttributeSet;
+        .annotation build Landroidx/annotation/Nullable;
+        .end annotation
+    .end param
 
     .line 1
     invoke-direct {p0, p1, p2}, Landroid/widget/LinearLayout;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
@@ -32,7 +40,7 @@
 
     .line 6
     .line 7
-    sget-object v0, Lg/j;->ButtonBarLayout:[I
+    sget-object v0, Li/j;->ButtonBarLayout:[I
 
     .line 8
     .line 9
@@ -44,7 +52,7 @@
     move-result-object v0
 
     .line 13
-    sget-object v3, Lg/j;->ButtonBarLayout:[I
+    sget-object v3, Li/j;->ButtonBarLayout:[I
 
     .line 14
     .line 15
@@ -63,12 +71,12 @@
     move-object v5, v0
 
     .line 20
-    invoke-static/range {v1 .. v6}, Landroidx/core/view/y0;->r(Landroid/view/View;Landroid/content/Context;[ILandroid/util/AttributeSet;Landroid/content/res/TypedArray;I)V
+    invoke-static/range {v1 .. v6}, Landroidx/core/view/e0;->r(Landroid/view/View;Landroid/content/Context;[ILandroid/util/AttributeSet;Landroid/content/res/TypedArray;I)V
 
     .line 21
     .line 22
     .line 23
-    sget p1, Lg/j;->ButtonBarLayout_allowStacking:I
+    sget p1, Li/j;->ButtonBarLayout_allowStacking:I
 
     .line 24
     .line 25
@@ -175,8 +183,11 @@
 .method private isStacked()Z
     .locals 1
 
+    .line 1
     iget-boolean v0, p0, Landroidx/appcompat/widget/ButtonBarLayout;->mStacked:Z
 
+    .line 2
+    .line 3
     return v0
 .end method
 
@@ -237,7 +248,7 @@
     .line 25
     .line 26
     .line 27
-    sget v0, Lg/f;->spacer:I
+    sget v0, Li/f;->spacer:I
 
     .line 28
     .line 29
@@ -482,7 +493,7 @@
     .line 75
     .line 76
     .line 77
-    goto :goto_1
+    const/4 v1, 0x1
 
     .line 78
     :cond_3
@@ -490,7 +501,6 @@
 
     .line 79
     .line 80
-    :goto_1
     invoke-super {p0, p1, p2}, Landroid/widget/LinearLayout;->onMeasure(II)V
 
     .line 81
@@ -645,14 +655,14 @@
     move v2, v0
 
     .line 153
-    goto :goto_2
+    goto :goto_1
 
     .line 154
     :cond_5
     move v2, v1
 
     .line 155
-    goto :goto_2
+    goto :goto_1
 
     .line 156
     :cond_6
@@ -669,8 +679,8 @@
     .line 161
     .line 162
     :cond_7
-    :goto_2
-    sget-object v0, Landroidx/core/view/y0;->a:Ljava/util/WeakHashMap;
+    :goto_1
+    sget-object v0, Landroidx/core/view/e0;->a:Ljava/util/WeakHashMap;
 
     .line 163
     .line 164

@@ -17,7 +17,7 @@
         "params",
         "<init>",
         "(Landroid/content/Context;Landroidx/work/WorkerParameters;)V",
-        "androidx/work/g",
+        "androidx/work/f",
         "work-runtime_release"
     }
     k = 0x1
@@ -26,13 +26,14 @@
         0x8,
         0x0
     }
+    xi = 0x30
 .end annotation
 
 
 # instance fields
 .field public final e:Landroidx/work/WorkerParameters;
 
-.field public final f:Landroidx/work/g;
+.field public final f:Landroidx/work/f;
 
 
 # direct methods
@@ -49,11 +50,11 @@
 
     .line 5
     .line 6
-    sget-object p1, Landroidx/work/g;->d:Landroidx/work/g;
+    sget-object p1, Landroidx/work/f;->d:Landroidx/work/f;
 
     .line 7
     .line 8
-    iput-object p1, p0, Landroidx/work/CoroutineWorker;->f:Landroidx/work/g;
+    iput-object p1, p0, Landroidx/work/CoroutineWorker;->f:Landroidx/work/f;
 
     .line 9
     .line 10
@@ -65,11 +66,11 @@
 .method public abstract a(Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
 .end method
 
-.method public final getForegroundInfoAsync()Lcom/google/common/util/concurrent/c;
+.method public final getForegroundInfoAsync()Lcom/google/common/util/concurrent/d;
     .locals 3
 
     .line 1
-    invoke-static {}, Lrb/h;->b()Lkotlinx/coroutines/b1;
+    invoke-static {}, Lkotlinx/coroutines/w;->c()Lkotlinx/coroutines/c0;
 
     .line 2
     .line 3
@@ -77,7 +78,7 @@
     move-result-object v0
 
     .line 5
-    iget-object v1, p0, Landroidx/work/CoroutineWorker;->f:Landroidx/work/g;
+    iget-object v1, p0, Landroidx/work/CoroutineWorker;->f:Landroidx/work/f;
 
     .line 6
     .line 7
@@ -86,7 +87,7 @@
     .line 8
     .line 9
     .line 10
-    invoke-static {v1, v0}, Lkotlin/coroutines/f;->a(Lkotlin/coroutines/i;Lkotlin/coroutines/i;)Lkotlin/coroutines/i;
+    invoke-static {v1, v0}, Lcom/facebook/appevents/n;->m(Lba/g;Lba/g;)Lba/g;
 
     .line 11
     .line 12
@@ -106,7 +107,7 @@
     .line 18
     .line 19
     .line 20
-    invoke-static {v0, v1}, Landroidx/work/g0;->c(Lkotlin/coroutines/i;Lzh/e;)Landroidx/concurrent/futures/k;
+    invoke-static {v0, v1}, La/a;->u(Lba/g;Lka/e;)Landroidx/concurrent/futures/k;
 
     .line 21
     .line 22
@@ -117,31 +118,19 @@
     return-object v0
 .end method
 
-.method public final onStopped()V
-    .locals 0
-
-    .line 1
-    invoke-super {p0}, Landroidx/work/t;->onStopped()V
-
-    .line 2
-    .line 3
-    .line 4
-    return-void
-.end method
-
-.method public final startWork()Lcom/google/common/util/concurrent/c;
+.method public final startWork()Lcom/google/common/util/concurrent/d;
     .locals 3
 
     .line 1
-    sget-object v0, Landroidx/work/g;->d:Landroidx/work/g;
+    sget-object v0, Landroidx/work/f;->d:Landroidx/work/f;
 
     .line 2
     .line 3
-    iget-object v1, p0, Landroidx/work/CoroutineWorker;->f:Landroidx/work/g;
+    iget-object v1, p0, Landroidx/work/CoroutineWorker;->f:Landroidx/work/f;
 
     .line 4
     .line 5
-    invoke-static {v1, v0}, Lrb/h;->d(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v1, v0}, Lkotlin/jvm/internal/h;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     .line 6
     .line 7
@@ -161,12 +150,12 @@
 
     .line 13
     .line 14
-    iget-object v1, v0, Landroidx/work/WorkerParameters;->g:Lkotlin/coroutines/i;
+    iget-object v1, v0, Landroidx/work/WorkerParameters;->g:Lkotlinx/coroutines/r;
 
     .line 15
     .line 16
     :goto_0
-    invoke-static {}, Lrb/h;->b()Lkotlinx/coroutines/b1;
+    invoke-static {}, Lkotlinx/coroutines/w;->c()Lkotlinx/coroutines/c0;
 
     .line 17
     .line 18
@@ -174,33 +163,38 @@
     move-result-object v0
 
     .line 20
-    invoke-interface {v1, v0}, Lkotlin/coroutines/i;->plus(Lkotlin/coroutines/i;)Lkotlin/coroutines/i;
+    invoke-virtual {v1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
     .line 21
     .line 22
     .line 23
-    move-result-object v0
+    invoke-static {v1, v0}, Lcom/facebook/appevents/n;->m(Lba/g;Lba/g;)Lba/g;
 
     .line 24
-    new-instance v1, Landroidx/work/CoroutineWorker$startWork$1;
-
     .line 25
     .line 26
-    const/4 v2, 0x0
+    move-result-object v0
 
     .line 27
-    invoke-direct {v1, p0, v2}, Landroidx/work/CoroutineWorker$startWork$1;-><init>(Landroidx/work/CoroutineWorker;Lkotlin/coroutines/Continuation;)V
+    new-instance v1, Landroidx/work/CoroutineWorker$startWork$1;
 
     .line 28
     .line 29
+    const/4 v2, 0x0
+
     .line 30
-    invoke-static {v0, v1}, Landroidx/work/g0;->c(Lkotlin/coroutines/i;Lzh/e;)Landroidx/concurrent/futures/k;
+    invoke-direct {v1, p0, v2}, Landroidx/work/CoroutineWorker$startWork$1;-><init>(Landroidx/work/CoroutineWorker;Lkotlin/coroutines/Continuation;)V
 
     .line 31
     .line 32
     .line 33
-    move-result-object v0
+    invoke-static {v0, v1}, La/a;->u(Lba/g;Lka/e;)Landroidx/concurrent/futures/k;
 
     .line 34
+    .line 35
+    .line 36
+    move-result-object v0
+
+    .line 37
     return-object v0
 .end method

@@ -22,7 +22,10 @@
 .method public static synthetic a()Z
     .locals 1
 
+    .line 1
     sget-boolean v0, Lcom/applovin/impl/eg$b;->a:Z
 
+    .line 2
+    .line 3
     return v0
 .end method

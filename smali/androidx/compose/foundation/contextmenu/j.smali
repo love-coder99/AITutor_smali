@@ -21,11 +21,11 @@
     .line 4
     .line 5
     .line 6
-    sget-object v1, Landroidx/compose/runtime/g3;->a:Landroidx/compose/runtime/g3;
+    sget-object v1, Landroidx/compose/runtime/T;->h:Landroidx/compose/runtime/T;
 
     .line 7
     .line 8
-    invoke-static {v0, v1}, Lma/a;->Z(Ljava/lang/Object;Landroidx/compose/runtime/u2;)Landroidx/compose/runtime/ParcelableSnapshotMutableState;
+    invoke-static {v0, v1}, Landroidx/compose/runtime/o;->R(Ljava/lang/Object;Landroidx/compose/runtime/A0;)Landroidx/compose/runtime/ParcelableSnapshotMutableState;
 
     .line 9
     .line 10
@@ -80,7 +80,7 @@
 
     .line 14
     .line 15
-    invoke-virtual {p1}, Landroidx/compose/runtime/t2;->getValue()Ljava/lang/Object;
+    invoke-virtual {p1}, Landroidx/compose/runtime/ParcelableSnapshotMutableState;->getValue()Ljava/lang/Object;
 
     .line 16
     .line 17
@@ -96,7 +96,7 @@
 
     .line 22
     .line 23
-    invoke-virtual {v0}, Landroidx/compose/runtime/t2;->getValue()Ljava/lang/Object;
+    invoke-virtual {v0}, Landroidx/compose/runtime/ParcelableSnapshotMutableState;->getValue()Ljava/lang/Object;
 
     .line 24
     .line 25
@@ -108,7 +108,7 @@
 
     .line 28
     .line 29
-    invoke-static {p1, v0}, Lrb/h;->d(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {p1, v0}, Lkotlin/jvm/internal/h;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     .line 30
     .line 31
@@ -127,7 +127,7 @@
 
     .line 2
     .line 3
-    invoke-virtual {v0}, Landroidx/compose/runtime/t2;->getValue()Ljava/lang/Object;
+    invoke-virtual {v0}, Landroidx/compose/runtime/ParcelableSnapshotMutableState;->getValue()Ljava/lang/Object;
 
     .line 4
     .line 5
@@ -171,7 +171,7 @@
 
     .line 9
     .line 10
-    invoke-virtual {v1}, Landroidx/compose/runtime/t2;->getValue()Ljava/lang/Object;
+    invoke-virtual {v1}, Landroidx/compose/runtime/ParcelableSnapshotMutableState;->getValue()Ljava/lang/Object;
 
     .line 11
     .line 12

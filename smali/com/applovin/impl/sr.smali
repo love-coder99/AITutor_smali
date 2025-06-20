@@ -161,15 +161,15 @@
 .method public static a()Ljava/lang/String;
     .locals 2
 
+    .line 6
     sget-object v0, Lcom/applovin/impl/sr;->c:Ljava/lang/Object;
 
-    .line 6
     monitor-enter v0
 
+    .line 7
     :try_start_0
     sget-object v1, Lcom/applovin/impl/sr;->b:Ljava/lang/String;
 
-    .line 7
     monitor-exit v0
 
     return-object v1
@@ -188,11 +188,11 @@
 .method public static a(Lcom/applovin/impl/sdk/j;)V
     .locals 2
 
+    .line 1
     sget-object v0, Lcom/applovin/impl/sr;->d:Ljava/util/concurrent/atomic/AtomicBoolean;
 
     const/4 v1, 0x1
 
-    .line 1
     invoke-virtual {v0, v1}, Ljava/util/concurrent/atomic/AtomicBoolean;->getAndSet(Z)Z
 
     move-result v0
@@ -234,9 +234,11 @@
     if-eqz v0, :cond_2
 
     .line 4
-    new-instance v0, Lcom/applovin/impl/yu;
+    new-instance v0, Lcom/applovin/impl/P1;
 
-    invoke-direct {v0, v1, p0}, Lcom/applovin/impl/yu;-><init>(ILcom/applovin/impl/sdk/j;)V
+    const/4 v1, 0x1
+
+    invoke-direct {v0, v1, p0}, Lcom/applovin/impl/P1;-><init>(ILcom/applovin/impl/sdk/j;)V
 
     invoke-static {v0}, Lcom/applovin/sdk/AppLovinSdkUtils;->runOnUiThread(Ljava/lang/Runnable;)V
 
@@ -244,11 +246,11 @@
 
     .line 5
     :cond_2
-    new-instance v0, Lcom/applovin/impl/yu;
+    new-instance v0, Lcom/applovin/impl/P1;
 
     const/4 v1, 0x2
 
-    invoke-direct {v0, v1, p0}, Lcom/applovin/impl/yu;-><init>(ILcom/applovin/impl/sdk/j;)V
+    invoke-direct {v0, v1, p0}, Lcom/applovin/impl/P1;-><init>(ILcom/applovin/impl/sdk/j;)V
 
     invoke-static {v0}, Lcom/applovin/sdk/AppLovinSdkUtils;->runOnUiThread(Ljava/lang/Runnable;)V
 
@@ -268,11 +270,11 @@
 .method public static b(Lcom/applovin/impl/sdk/j;)V
     .locals 2
 
+    .line 2
     sget-object v0, Lcom/applovin/impl/sr;->h:Ljava/util/concurrent/atomic/AtomicBoolean;
 
     const/4 v1, 0x1
 
-    .line 2
     invoke-virtual {v0, v1}, Ljava/util/concurrent/atomic/AtomicBoolean;->getAndSet(Z)Z
 
     move-result v0
@@ -350,7 +352,7 @@
     if-eqz v1, :cond_0
 
     .line 4
-    invoke-static {}, Landroidx/transition/a;->c()Landroid/content/pm/PackageInfo;
+    invoke-static {}, Lq0/e;->a()Landroid/content/pm/PackageInfo;
 
     move-result-object p0
 
@@ -427,10 +429,10 @@
 .method private static synthetic d(Lcom/applovin/impl/sdk/j;)V
     .locals 4
 
+    .line 2
     :try_start_0
     sget-object v0, Lcom/applovin/impl/sr;->c:Ljava/lang/Object;
 
-    .line 2
     monitor-enter v0
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_1
@@ -532,17 +534,17 @@
     :try_start_0
     invoke-static {p0}, Lcom/applovin/impl/sr;->f(Lcom/applovin/impl/sdk/j;)V
 
+    .line 2
     sget-object v0, Lcom/applovin/impl/sr;->c:Ljava/lang/Object;
 
-    .line 2
     monitor-enter v0
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_1
 
+    .line 3
     :try_start_1
     sget-object v1, Lcom/applovin/impl/sr;->a:Landroid/webkit/WebView;
 
-    .line 3
     invoke-virtual {v1}, Landroid/webkit/WebView;->getSettings()Landroid/webkit/WebSettings;
 
     move-result-object v1
@@ -634,9 +636,9 @@
 .method public static e()Z
     .locals 4
 
+    .line 10
     sget-object v0, Lcom/applovin/impl/sr;->c:Ljava/lang/Object;
 
-    .line 10
     monitor-enter v0
 
     .line 11
@@ -687,7 +689,7 @@
     .locals 0
 
     .line 1
-    invoke-static {p0}, Lcom/applovin/impl/sr;->e(Lcom/applovin/impl/sdk/j;)V
+    invoke-static {p0}, Lcom/applovin/impl/sr;->d(Lcom/applovin/impl/sdk/j;)V
 
     return-void
 .end method
@@ -696,7 +698,7 @@
     .locals 0
 
     .line 1
-    invoke-static {p0}, Lcom/applovin/impl/sr;->d(Lcom/applovin/impl/sdk/j;)V
+    invoke-static {p0}, Lcom/applovin/impl/sr;->e(Lcom/applovin/impl/sdk/j;)V
 
     return-void
 .end method

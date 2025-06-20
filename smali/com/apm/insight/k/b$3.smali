@@ -82,73 +82,73 @@
     move-result-object p1
 
     .line 11
-    const/4 v1, 0x2
+    new-instance v1, Ljava/io/File;
 
     .line 12
-    new-array v1, v1, [Ljava/io/File;
-
     .line 13
+    iget-object v2, p0, Lcom/apm/insight/k/b$3;->b:Ljava/io/File;
+
     .line 14
-    new-instance v2, Ljava/io/File;
-
     .line 15
+    const-string v3, "logZip"
+
     .line 16
-    iget-object v3, p0, Lcom/apm/insight/k/b$3;->b:Ljava/io/File;
-
     .line 17
-    .line 18
-    const-string v4, "logZip"
+    invoke-direct {v1, v2, v3}, Ljava/io/File;-><init>(Ljava/io/File;Ljava/lang/String;)V
 
+    .line 18
     .line 19
     .line 20
-    invoke-direct {v2, v3, v4}, Ljava/io/File;-><init>(Ljava/io/File;Ljava/lang/String;)V
+    iget-object v2, p0, Lcom/apm/insight/k/b$3;->d:Lcom/apm/insight/k/b;
 
     .line 21
     .line 22
+    invoke-static {v2}, Lcom/apm/insight/k/b;->c(Lcom/apm/insight/k/b;)Landroid/content/Context;
+
     .line 23
-    const/4 v3, 0x0
-
     .line 24
-    aput-object v2, v1, v3
-
     .line 25
+    move-result-object v2
+
     .line 26
-    iget-object v2, p0, Lcom/apm/insight/k/b$3;->d:Lcom/apm/insight/k/b;
+    iget-object v3, p0, Lcom/apm/insight/k/b$3;->c:Lcom/apm/insight/k/b$b;
 
     .line 27
     .line 28
-    invoke-static {v2}, Lcom/apm/insight/k/b;->c(Lcom/apm/insight/k/b;)Landroid/content/Context;
+    iget-object v3, v3, Lcom/apm/insight/k/b$b;->a:Ljava/lang/String;
 
     .line 29
     .line 30
-    .line 31
-    move-result-object v2
-
-    .line 32
-    iget-object v3, p0, Lcom/apm/insight/k/b$3;->c:Lcom/apm/insight/k/b$b;
-
-    .line 33
-    .line 34
-    iget-object v3, v3, Lcom/apm/insight/k/b$b;->a:Ljava/lang/String;
-
-    .line 35
-    .line 36
     invoke-static {v2, v3}, Lcom/apm/insight/l/j;->a(Landroid/content/Context;Ljava/lang/String;)Ljava/io/File;
 
-    .line 37
-    .line 38
-    .line 39
+    .line 31
+    .line 32
+    .line 33
     move-result-object v2
 
+    .line 34
+    const/4 v3, 0x2
+
+    .line 35
+    new-array v3, v3, [Ljava/io/File;
+
+    .line 36
+    .line 37
+    const/4 v4, 0x0
+
+    .line 38
+    aput-object v1, v3, v4
+
+    .line 39
     .line 40
-    const/4 v3, 0x1
+    const/4 v1, 0x1
 
     .line 41
-    aput-object v2, v1, v3
+    aput-object v2, v3, v1
 
     .line 42
     .line 43
-    invoke-static {v0, p1, v1}, Lcom/apm/insight/k/e;->a(Ljava/lang/String;Ljava/lang/String;[Ljava/io/File;)Lcom/apm/insight/l/f;
+    invoke-static {v0, p1, v3}, Lcom/apm/insight/k/e;->a(Ljava/lang/String;Ljava/lang/String;[Ljava/io/File;)Lcom/apm/insight/l/f;
 
     .line 44
     .line 45

@@ -3,14 +3,14 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lzh/c;
+.implements Lka/c;
 
 
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "Lkotlin/jvm/internal/Lambda;",
-        "Lzh/c;"
+        "Lka/c;"
     }
 .end annotation
 
@@ -22,7 +22,7 @@
         "S",
         "",
         "frameTimeNanos",
-        "Lqh/r;",
+        "LX9/j;",
         "invoke",
         "(J)V",
         "<anonymous>"
@@ -37,27 +37,27 @@
 
 
 # instance fields
-.field final synthetic this$0:Landroidx/compose/animation/core/s0;
+.field final synthetic this$0:Landroidx/compose/animation/core/M;
     .annotation system Ldalvik/annotation/Signature;
         value = {
-            "Landroidx/compose/animation/core/s0;"
+            "Landroidx/compose/animation/core/M;"
         }
     .end annotation
 .end field
 
 
 # direct methods
-.method public constructor <init>(Landroidx/compose/animation/core/s0;)V
+.method public constructor <init>(Landroidx/compose/animation/core/M;)V
     .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
-            "Landroidx/compose/animation/core/s0;",
+            "Landroidx/compose/animation/core/M;",
             ")V"
         }
     .end annotation
 
-    iput-object p1, p0, Landroidx/compose/animation/core/SeekableTransitionState$firstFrameLambda$1;->this$0:Landroidx/compose/animation/core/s0;
+    iput-object p1, p0, Landroidx/compose/animation/core/SeekableTransitionState$firstFrameLambda$1;->this$0:Landroidx/compose/animation/core/M;
 
     const/4 p1, 0x1
 
@@ -71,7 +71,7 @@
 .method public bridge synthetic invoke(Ljava/lang/Object;)Ljava/lang/Object;
     .locals 2
 
-    .line 2
+    .line 1
     check-cast p1, Ljava/lang/Number;
 
     invoke-virtual {p1}, Ljava/lang/Number;->longValue()J
@@ -80,7 +80,7 @@
 
     invoke-virtual {p0, v0, v1}, Landroidx/compose/animation/core/SeekableTransitionState$firstFrameLambda$1;->invoke(J)V
 
-    sget-object p1, Lqh/r;->a:Lqh/r;
+    sget-object p1, LX9/j;->a:LX9/j;
 
     return-object p1
 .end method
@@ -88,10 +88,11 @@
 .method public final invoke(J)V
     .locals 1
 
-    iget-object v0, p0, Landroidx/compose/animation/core/SeekableTransitionState$firstFrameLambda$1;->this$0:Landroidx/compose/animation/core/s0;
+    .line 2
+    iget-object v0, p0, Landroidx/compose/animation/core/SeekableTransitionState$firstFrameLambda$1;->this$0:Landroidx/compose/animation/core/M;
 
-    .line 1
-    iput-wide p1, v0, Landroidx/compose/animation/core/s0;->l:J
+    .line 3
+    iput-wide p1, v0, Landroidx/compose/animation/core/M;->l:J
 
     return-void
 .end method

@@ -4,7 +4,7 @@
 
 
 # static fields
-.field public static final a:Landroidx/compose/runtime/internal/b;
+.field public static final a:Landroidx/compose/runtime/internal/a;
 
 
 # direct methods
@@ -12,11 +12,11 @@
     .locals 1
 
     .line 1
-    sget-object v0, Landroidx/compose/ui/tooling/a;->a:Landroidx/compose/runtime/internal/b;
+    sget-object v0, Landroidx/compose/ui/tooling/a;->a:Landroidx/compose/runtime/internal/a;
 
     .line 2
     .line 3
-    sput-object v0, Landroidx/compose/ui/tooling/g;->a:Landroidx/compose/runtime/internal/b;
+    sput-object v0, Landroidx/compose/ui/tooling/g;->a:Landroidx/compose/runtime/internal/a;
 
     .line 4
     .line 5

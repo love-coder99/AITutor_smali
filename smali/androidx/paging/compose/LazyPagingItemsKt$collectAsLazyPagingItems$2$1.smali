@@ -3,37 +3,11 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lzh/e;
+.implements Lka/e;
 
 
 # annotations
-.annotation system Ldalvik/annotation/Signature;
-    value = {
-        "Lkotlin/coroutines/jvm/internal/SuspendLambda;",
-        "Lzh/e;"
-    }
-.end annotation
-
-.annotation runtime Lkotlin/Metadata;
-    d1 = {
-        "\u0000\u0010\n\u0002\u0010\u0000\n\u0000\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\u0010\u0004\u001a\u00020\u0003\"\u0008\u0008\u0000\u0010\u0001*\u00020\u0000*\u00020\u0002H\u008a@"
-    }
-    d2 = {
-        "",
-        "T",
-        "Lkotlinx/coroutines/w;",
-        "Lqh/r;",
-        "<anonymous>"
-    }
-    k = 0x3
-    mv = {
-        0x1,
-        0x8,
-        0x0
-    }
-.end annotation
-
-.annotation runtime Lth/c;
+.annotation runtime Lca/c;
     c = "androidx.paging.compose.LazyPagingItemsKt$collectAsLazyPagingItems$2$1"
     f = "LazyPagingItems.kt"
     l = {
@@ -43,9 +17,36 @@
     m = "invokeSuspend"
 .end annotation
 
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "Lkotlin/coroutines/jvm/internal/SuspendLambda;",
+        "Lka/e;"
+    }
+.end annotation
+
+.annotation runtime Lkotlin/Metadata;
+    d1 = {
+        "\u0000\u0012\n\u0002\u0010\u0000\n\u0000\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0008\u0002\u0010\u0004\u001a\u00020\u0003\"\u0008\u0008\u0000\u0010\u0001*\u00020\u0000*\u00020\u0002H\u008a@\u00a2\u0006\u0004\u0008\u0004\u0010\u0005"
+    }
+    d2 = {
+        "",
+        "T",
+        "Lkotlinx/coroutines/u;",
+        "LX9/j;",
+        "<anonymous>",
+        "(Lkotlinx/coroutines/u;)V"
+    }
+    k = 0x3
+    mv = {
+        0x1,
+        0x8,
+        0x0
+    }
+.end annotation
+
 
 # instance fields
-.field final synthetic $context:Lkotlin/coroutines/i;
+.field final synthetic $context:Lba/g;
 
 .field final synthetic $lazyPagingItems:Landroidx/paging/compose/c;
     .annotation system Ldalvik/annotation/Signature;
@@ -59,12 +60,12 @@
 
 
 # direct methods
-.method public constructor <init>(Lkotlin/coroutines/i;Landroidx/paging/compose/c;Lkotlin/coroutines/Continuation;)V
+.method public constructor <init>(Lba/g;Landroidx/paging/compose/c;Lkotlin/coroutines/Continuation;)V
     .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
-            "Lkotlin/coroutines/i;",
+            "Lba/g;",
             "Landroidx/paging/compose/c;",
             "Lkotlin/coroutines/Continuation<",
             "-",
@@ -73,14 +74,23 @@
         }
     .end annotation
 
-    iput-object p1, p0, Landroidx/paging/compose/LazyPagingItemsKt$collectAsLazyPagingItems$2$1;->$context:Lkotlin/coroutines/i;
+    .line 1
+    iput-object p1, p0, Landroidx/paging/compose/LazyPagingItemsKt$collectAsLazyPagingItems$2$1;->$context:Lba/g;
 
+    .line 2
+    .line 3
     iput-object p2, p0, Landroidx/paging/compose/LazyPagingItemsKt$collectAsLazyPagingItems$2$1;->$lazyPagingItems:Landroidx/paging/compose/c;
 
+    .line 4
+    .line 5
     const/4 p1, 0x2
 
+    .line 6
     invoke-direct {p0, p1, p3}, Lkotlin/coroutines/jvm/internal/SuspendLambda;-><init>(ILkotlin/coroutines/Continuation;)V
 
+    .line 7
+    .line 8
+    .line 9
     return-void
 .end method
 
@@ -95,18 +105,18 @@
             "Lkotlin/coroutines/Continuation<",
             "*>;)",
             "Lkotlin/coroutines/Continuation<",
-            "Lqh/r;",
+            "LX9/j;",
             ">;"
         }
     .end annotation
 
     new-instance p1, Landroidx/paging/compose/LazyPagingItemsKt$collectAsLazyPagingItems$2$1;
 
-    iget-object v0, p0, Landroidx/paging/compose/LazyPagingItemsKt$collectAsLazyPagingItems$2$1;->$context:Lkotlin/coroutines/i;
+    iget-object v0, p0, Landroidx/paging/compose/LazyPagingItemsKt$collectAsLazyPagingItems$2$1;->$context:Lba/g;
 
     iget-object v1, p0, Landroidx/paging/compose/LazyPagingItemsKt$collectAsLazyPagingItems$2$1;->$lazyPagingItems:Landroidx/paging/compose/c;
 
-    invoke-direct {p1, v0, v1, p2}, Landroidx/paging/compose/LazyPagingItemsKt$collectAsLazyPagingItems$2$1;-><init>(Lkotlin/coroutines/i;Landroidx/paging/compose/c;Lkotlin/coroutines/Continuation;)V
+    invoke-direct {p1, v0, v1, p2}, Landroidx/paging/compose/LazyPagingItemsKt$collectAsLazyPagingItems$2$1;-><init>(Lba/g;Landroidx/paging/compose/c;Lkotlin/coroutines/Continuation;)V
 
     return-object p1
 .end method
@@ -115,26 +125,26 @@
     .locals 0
 
     .line 1
-    check-cast p1, Lkotlinx/coroutines/w;
+    check-cast p1, Lkotlinx/coroutines/u;
 
     check-cast p2, Lkotlin/coroutines/Continuation;
 
-    invoke-virtual {p0, p1, p2}, Landroidx/paging/compose/LazyPagingItemsKt$collectAsLazyPagingItems$2$1;->invoke(Lkotlinx/coroutines/w;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
+    invoke-virtual {p0, p1, p2}, Landroidx/paging/compose/LazyPagingItemsKt$collectAsLazyPagingItems$2$1;->invoke(Lkotlinx/coroutines/u;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
 
     move-result-object p1
 
     return-object p1
 .end method
 
-.method public final invoke(Lkotlinx/coroutines/w;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
+.method public final invoke(Lkotlinx/coroutines/u;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
     .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
-            "Lkotlinx/coroutines/w;",
+            "Lkotlinx/coroutines/u;",
             "Lkotlin/coroutines/Continuation<",
             "-",
-            "Lqh/r;",
+            "LX9/j;",
             ">;)",
             "Ljava/lang/Object;"
         }
@@ -147,7 +157,7 @@
 
     check-cast p1, Landroidx/paging/compose/LazyPagingItemsKt$collectAsLazyPagingItems$2$1;
 
-    sget-object p2, Lqh/r;->a:Lqh/r;
+    sget-object p2, LX9/j;->a:LX9/j;
 
     invoke-virtual {p1, p2}, Landroidx/paging/compose/LazyPagingItemsKt$collectAsLazyPagingItems$2$1;->invokeSuspend(Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -157,7 +167,7 @@
 .end method
 
 .method public final invokeSuspend(Ljava/lang/Object;)Ljava/lang/Object;
-    .locals 6
+    .locals 5
 
     .line 1
     sget-object v0, Lkotlin/coroutines/intrinsics/CoroutineSingletons;->COROUTINE_SUSPENDED:Lkotlin/coroutines/intrinsics/CoroutineSingletons;
@@ -168,192 +178,148 @@
 
     .line 4
     .line 5
-    sget-object v2, Lqh/r;->a:Lqh/r;
+    const/4 v2, 0x2
 
     .line 6
+    const/4 v3, 0x1
+
     .line 7
-    const/4 v3, 0x2
+    if-eqz v1, :cond_2
 
     .line 8
-    const/4 v4, 0x1
-
     .line 9
-    if-eqz v1, :cond_2
+    if-eq v1, v3, :cond_1
 
     .line 10
     .line 11
-    if-eq v1, v4, :cond_1
+    if-ne v1, v2, :cond_0
 
     .line 12
     .line 13
-    if-ne v1, v3, :cond_0
-
-    .line 14
-    .line 15
     goto :goto_0
 
-    .line 16
+    .line 14
     :cond_0
     new-instance p1, Ljava/lang/IllegalStateException;
 
+    .line 15
+    .line 16
+    const-string v0, "call to \'resume\' before \'invoke\' with coroutine"
+
     .line 17
     .line 18
-    const-string v0, "call to \'resume\' before \'invoke\' with coroutine"
+    invoke-direct {p1, v0}, Ljava/lang/IllegalStateException;-><init>(Ljava/lang/String;)V
 
     .line 19
     .line 20
-    invoke-direct {p1, v0}, Ljava/lang/IllegalStateException;-><init>(Ljava/lang/String;)V
-
     .line 21
-    .line 22
-    .line 23
     throw p1
 
-    .line 24
+    .line 22
     :cond_1
     :goto_0
     invoke-static {p1}, Lkotlin/b;->a(Ljava/lang/Object;)V
 
+    .line 23
+    .line 24
     .line 25
-    .line 26
-    .line 27
-    goto :goto_2
+    goto :goto_1
 
-    .line 28
+    .line 26
     :cond_2
     invoke-static {p1}, Lkotlin/b;->a(Ljava/lang/Object;)V
 
+    .line 27
+    .line 28
     .line 29
+    iget-object p1, p0, Landroidx/paging/compose/LazyPagingItemsKt$collectAsLazyPagingItems$2$1;->$context:Lba/g;
+
     .line 30
     .line 31
-    iget-object p1, p0, Landroidx/paging/compose/LazyPagingItemsKt$collectAsLazyPagingItems$2$1;->$context:Lkotlin/coroutines/i;
+    sget-object v1, Lkotlin/coroutines/EmptyCoroutineContext;->INSTANCE:Lkotlin/coroutines/EmptyCoroutineContext;
 
     .line 32
     .line 33
-    sget-object v1, Lkotlin/coroutines/EmptyCoroutineContext;->INSTANCE:Lkotlin/coroutines/EmptyCoroutineContext;
+    invoke-static {p1, v1}, Lkotlin/jvm/internal/h;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     .line 34
     .line 35
-    invoke-static {p1, v1}, Lrb/h;->d(Ljava/lang/Object;Ljava/lang/Object;)Z
-
     .line 36
-    .line 37
-    .line 38
     move-result p1
 
+    .line 37
+    if-eqz p1, :cond_3
+
+    .line 38
     .line 39
-    if-eqz p1, :cond_4
+    iget-object p1, p0, Landroidx/paging/compose/LazyPagingItemsKt$collectAsLazyPagingItems$2$1;->$lazyPagingItems:Landroidx/paging/compose/c;
 
     .line 40
     .line 41
-    iget-object p1, p0, Landroidx/paging/compose/LazyPagingItemsKt$collectAsLazyPagingItems$2$1;->$lazyPagingItems:Landroidx/paging/compose/c;
+    iput v3, p0, Landroidx/paging/compose/LazyPagingItemsKt$collectAsLazyPagingItems$2$1;->label:I
 
     .line 42
     .line 43
-    iput v4, p0, Landroidx/paging/compose/LazyPagingItemsKt$collectAsLazyPagingItems$2$1;->label:I
+    invoke-virtual {p1, p0}, Landroidx/paging/compose/c;->a(Lkotlin/coroutines/jvm/internal/SuspendLambda;)Ljava/lang/Object;
 
     .line 44
     .line 45
-    iget-object v1, p1, Landroidx/paging/compose/c;->b:Landroidx/paging/compose/b;
-
     .line 46
+    move-result-object p1
+
     .line 47
-    iget-object v1, v1, Landroidx/paging/k1;->j:Lkotlinx/coroutines/flow/h0;
+    if-ne p1, v0, :cond_4
 
     .line 48
     .line 49
-    new-instance v3, Landroidx/datastore/core/q;
+    return-object v0
 
     .line 50
-    .line 51
-    const/4 v4, 0x7
+    :cond_3
+    iget-object p1, p0, Landroidx/paging/compose/LazyPagingItemsKt$collectAsLazyPagingItems$2$1;->$context:Lba/g;
 
+    .line 51
     .line 52
-    invoke-direct {v3, v1, v4}, Landroidx/datastore/core/q;-><init>(Lkotlinx/coroutines/flow/h;I)V
+    new-instance v1, Landroidx/paging/compose/LazyPagingItemsKt$collectAsLazyPagingItems$2$1$1;
 
     .line 53
     .line 54
-    .line 55
-    new-instance v1, Landroidx/compose/foundation/text/input/internal/a;
+    iget-object v3, p0, Landroidx/paging/compose/LazyPagingItemsKt$collectAsLazyPagingItems$2$1;->$lazyPagingItems:Landroidx/paging/compose/c;
 
+    .line 55
     .line 56
+    const/4 v4, 0x0
+
     .line 57
-    const/4 v4, 0x5
+    invoke-direct {v1, v3, v4}, Landroidx/paging/compose/LazyPagingItemsKt$collectAsLazyPagingItems$2$1$1;-><init>(Landroidx/paging/compose/c;Lkotlin/coroutines/Continuation;)V
 
     .line 58
-    invoke-direct {v1, p1, v4}, Landroidx/compose/foundation/text/input/internal/a;-><init>(Ljava/lang/Object;I)V
-
     .line 59
     .line 60
-    .line 61
-    invoke-virtual {v3, v1, p0}, Landroidx/datastore/core/q;->b(Lkotlinx/coroutines/flow/i;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
+    iput v2, p0, Landroidx/paging/compose/LazyPagingItemsKt$collectAsLazyPagingItems$2$1;->label:I
 
+    .line 61
     .line 62
+    invoke-static {p1, v1, p0}, Lkotlinx/coroutines/w;->H(Lba/g;Lka/e;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
+
     .line 63
     .line 64
+    .line 65
     move-result-object p1
 
-    .line 65
-    if-ne p1, v0, :cond_3
-
     .line 66
-    .line 67
-    goto :goto_1
+    if-ne p1, v0, :cond_4
 
+    .line 67
     .line 68
-    :cond_3
-    move-object p1, v2
+    return-object v0
 
     .line 69
+    :cond_4
     :goto_1
-    if-ne p1, v0, :cond_5
+    sget-object p1, LX9/j;->a:LX9/j;
 
     .line 70
     .line 71
-    return-object v0
-
-    .line 72
-    :cond_4
-    iget-object p1, p0, Landroidx/paging/compose/LazyPagingItemsKt$collectAsLazyPagingItems$2$1;->$context:Lkotlin/coroutines/i;
-
-    .line 73
-    .line 74
-    new-instance v1, Landroidx/paging/compose/LazyPagingItemsKt$collectAsLazyPagingItems$2$1$1;
-
-    .line 75
-    .line 76
-    iget-object v4, p0, Landroidx/paging/compose/LazyPagingItemsKt$collectAsLazyPagingItems$2$1;->$lazyPagingItems:Landroidx/paging/compose/c;
-
-    .line 77
-    .line 78
-    const/4 v5, 0x0
-
-    .line 79
-    invoke-direct {v1, v4, v5}, Landroidx/paging/compose/LazyPagingItemsKt$collectAsLazyPagingItems$2$1$1;-><init>(Landroidx/paging/compose/c;Lkotlin/coroutines/Continuation;)V
-
-    .line 80
-    .line 81
-    .line 82
-    iput v3, p0, Landroidx/paging/compose/LazyPagingItemsKt$collectAsLazyPagingItems$2$1;->label:I
-
-    .line 83
-    .line 84
-    invoke-static {p1, v1, p0}, Lf7/l;->S(Lkotlin/coroutines/i;Lzh/e;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
-
-    .line 85
-    .line 86
-    .line 87
-    move-result-object p1
-
-    .line 88
-    if-ne p1, v0, :cond_5
-
-    .line 89
-    .line 90
-    return-object v0
-
-    .line 91
-    :cond_5
-    :goto_2
-    return-object v2
+    return-object p1
 .end method

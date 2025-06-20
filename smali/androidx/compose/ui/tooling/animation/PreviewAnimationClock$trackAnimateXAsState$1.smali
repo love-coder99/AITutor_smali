@@ -3,14 +3,14 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lzh/c;
+.implements Lka/c;
 
 
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "Lkotlin/jvm/internal/Lambda;",
-        "Lzh/c;"
+        "Lka/c;"
     }
 .end annotation
 
@@ -21,7 +21,7 @@
     d2 = {
         "",
         "it",
-        "Lqh/r;",
+        "LX9/j;",
         "invoke",
         "(Ljava/lang/Object;)V",
         "<anonymous>"
@@ -44,24 +44,24 @@
     .end annotation
 .end field
 
-.field final synthetic this$0:Landroidx/compose/ui/tooling/animation/q;
+.field final synthetic this$0:Landroidx/compose/ui/tooling/animation/l;
 
 
 # direct methods
-.method public constructor <init>(Landroidx/compose/ui/tooling/animation/f;Landroidx/compose/ui/tooling/animation/q;)V
+.method public constructor <init>(Landroidx/compose/ui/tooling/animation/f;Landroidx/compose/ui/tooling/animation/l;)V
     .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
             "Landroidx/compose/ui/tooling/animation/f;",
-            "Landroidx/compose/ui/tooling/animation/q;",
+            "Landroidx/compose/ui/tooling/animation/l;",
             ")V"
         }
     .end annotation
 
     iput-object p1, p0, Landroidx/compose/ui/tooling/animation/PreviewAnimationClock$trackAnimateXAsState$1;->$animation:Landroidx/compose/ui/tooling/animation/f;
 
-    iput-object p2, p0, Landroidx/compose/ui/tooling/animation/PreviewAnimationClock$trackAnimateXAsState$1;->this$0:Landroidx/compose/ui/tooling/animation/q;
+    iput-object p2, p0, Landroidx/compose/ui/tooling/animation/PreviewAnimationClock$trackAnimateXAsState$1;->this$0:Landroidx/compose/ui/tooling/animation/l;
 
     const/4 p1, 0x1
 
@@ -78,7 +78,7 @@
     .line 1
     invoke-virtual {p0, p1}, Landroidx/compose/ui/tooling/animation/PreviewAnimationClock$trackAnimateXAsState$1;->invoke(Ljava/lang/Object;)V
 
-    sget-object p1, Lqh/r;->a:Lqh/r;
+    sget-object p1, LX9/j;->a:LX9/j;
 
     return-object p1
 .end method
@@ -87,26 +87,26 @@
     .locals 2
 
     .line 2
-    sget-object p1, Landroidx/compose/ui/tooling/animation/a;->d:Landroidx/compose/ui/text/input/j;
+    sget-boolean p1, Landroidx/compose/ui/tooling/animation/a;->d:Z
 
-    iget-object v0, p0, Landroidx/compose/ui/tooling/animation/PreviewAnimationClock$trackAnimateXAsState$1;->$animation:Landroidx/compose/ui/tooling/animation/f;
+    iget-object p1, p0, Landroidx/compose/ui/tooling/animation/PreviewAnimationClock$trackAnimateXAsState$1;->$animation:Landroidx/compose/ui/tooling/animation/f;
 
-    invoke-virtual {p1, v0}, Landroidx/compose/ui/text/input/j;->j(Landroidx/compose/ui/tooling/animation/f;)Landroidx/compose/ui/tooling/animation/a;
+    invoke-static {p1}, Lcom/google/android/gms/internal/measurement/r1;->l(Landroidx/compose/ui/tooling/animation/f;)Landroidx/compose/ui/tooling/animation/a;
 
     move-result-object p1
 
     if-eqz p1, :cond_0
 
-    iget-object v0, p0, Landroidx/compose/ui/tooling/animation/PreviewAnimationClock$trackAnimateXAsState$1;->this$0:Landroidx/compose/ui/tooling/animation/q;
+    iget-object v0, p0, Landroidx/compose/ui/tooling/animation/PreviewAnimationClock$trackAnimateXAsState$1;->this$0:Landroidx/compose/ui/tooling/animation/l;
 
     .line 3
-    invoke-virtual {v0}, Landroidx/compose/ui/tooling/animation/q;->c()Ljava/util/LinkedHashMap;
+    invoke-virtual {v0}, Landroidx/compose/ui/tooling/animation/l;->c()Ljava/util/LinkedHashMap;
 
     move-result-object v0
 
-    new-instance v1, Le2/a;
+    new-instance v1, LJ0/a;
 
-    invoke-direct {v1, p1}, Le2/a;-><init>(Landroidx/compose/ui/tooling/animation/a;)V
+    invoke-direct {v1, p1}, LJ0/a;-><init>(Landroidx/compose/ui/tooling/animation/a;)V
 
     invoke-interface {v0, p1, v1}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -115,19 +115,19 @@
 
     return-void
 
+    .line 5
     :cond_0
-    iget-object p1, p0, Landroidx/compose/ui/tooling/animation/PreviewAnimationClock$trackAnimateXAsState$1;->this$0:Landroidx/compose/ui/tooling/animation/q;
+    iget-object p1, p0, Landroidx/compose/ui/tooling/animation/PreviewAnimationClock$trackAnimateXAsState$1;->this$0:Landroidx/compose/ui/tooling/animation/l;
 
     iget-object v0, p0, Landroidx/compose/ui/tooling/animation/PreviewAnimationClock$trackAnimateXAsState$1;->$animation:Landroidx/compose/ui/tooling/animation/f;
 
-    .line 5
     invoke-virtual {v0}, Landroidx/compose/ui/tooling/animation/f;->a()Landroidx/compose/animation/core/a;
 
     move-result-object v0
 
     invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
-    invoke-static {p1}, Landroidx/compose/ui/tooling/animation/q;->a(Landroidx/compose/ui/tooling/animation/q;)V
+    invoke-static {p1}, Landroidx/compose/ui/tooling/animation/l;->a(Landroidx/compose/ui/tooling/animation/l;)V
 
     return-void
 .end method

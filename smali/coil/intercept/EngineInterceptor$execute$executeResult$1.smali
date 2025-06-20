@@ -3,25 +3,35 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lzh/e;
+.implements Lka/e;
 
 
 # annotations
+.annotation runtime Lca/c;
+    c = "coil.intercept.EngineInterceptor$execute$executeResult$1"
+    f = "EngineInterceptor.kt"
+    l = {
+        0x83
+    }
+    m = "invokeSuspend"
+.end annotation
+
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "Lkotlin/coroutines/jvm/internal/SuspendLambda;",
-        "Lzh/e;"
+        "Lka/e;"
     }
 .end annotation
 
 .annotation runtime Lkotlin/Metadata;
     d1 = {
-        "\u0000\n\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\u0010\u0002\u001a\u00020\u0001*\u00020\u0000H\u008a@"
+        "\u0000\u000c\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0008\u0002\u0010\u0002\u001a\u00020\u0001*\u00020\u0000H\u008a@\u00a2\u0006\u0004\u0008\u0002\u0010\u0003"
     }
     d2 = {
-        "Lkotlinx/coroutines/w;",
+        "Lkotlinx/coroutines/u;",
         "Lcoil/intercept/a;",
-        "<anonymous>"
+        "<anonymous>",
+        "(Lkotlinx/coroutines/u;)Lcoil/intercept/a;"
     }
     k = 0x3
     mv = {
@@ -31,28 +41,19 @@
     }
 .end annotation
 
-.annotation runtime Lth/c;
-    c = "coil.intercept.EngineInterceptor$execute$executeResult$1"
-    f = "EngineInterceptor.kt"
-    l = {
-        0x83
-    }
-    m = "invokeSuspend"
-.end annotation
-
 
 # instance fields
 .field final synthetic $components:Lkotlin/jvm/internal/Ref$ObjectRef;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Lkotlin/jvm/internal/Ref$ObjectRef<",
-            "Lcoil/c;",
+            "Lcoil/b;",
             ">;"
         }
     .end annotation
 .end field
 
-.field final synthetic $eventListener:Lcoil/e;
+.field final synthetic $eventListener:Lcoil/d;
 
 .field final synthetic $fetchResult:Lkotlin/jvm/internal/Ref$ObjectRef;
     .annotation system Ldalvik/annotation/Signature;
@@ -70,13 +71,13 @@
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Lkotlin/jvm/internal/Ref$ObjectRef<",
-            "Ln5/l;",
+            "LH2/k;",
             ">;"
         }
     .end annotation
 .end field
 
-.field final synthetic $request:Ln5/i;
+.field final synthetic $request:LH2/h;
 
 .field label:I
 
@@ -84,7 +85,7 @@
 
 
 # direct methods
-.method public constructor <init>(Lcoil/intercept/b;Lkotlin/jvm/internal/Ref$ObjectRef;Lkotlin/jvm/internal/Ref$ObjectRef;Ln5/i;Ljava/lang/Object;Lkotlin/jvm/internal/Ref$ObjectRef;Lcoil/e;Lkotlin/coroutines/Continuation;)V
+.method public constructor <init>(Lcoil/intercept/b;Lkotlin/jvm/internal/Ref$ObjectRef;Lkotlin/jvm/internal/Ref$ObjectRef;LH2/h;Ljava/lang/Object;Lkotlin/jvm/internal/Ref$ObjectRef;Lcoil/d;Lkotlin/coroutines/Continuation;)V
     .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -94,14 +95,14 @@
             "Lcoil/fetch/e;",
             ">;",
             "Lkotlin/jvm/internal/Ref$ObjectRef<",
-            "Lcoil/c;",
+            "Lcoil/b;",
             ">;",
-            "Ln5/i;",
+            "LH2/h;",
             "Ljava/lang/Object;",
             "Lkotlin/jvm/internal/Ref$ObjectRef<",
-            "Ln5/l;",
+            "LH2/k;",
             ">;",
-            "Lcoil/e;",
+            "Lcoil/d;",
             "Lkotlin/coroutines/Continuation<",
             "-",
             "Lcoil/intercept/EngineInterceptor$execute$executeResult$1;",
@@ -112,22 +113,40 @@
     .line 1
     iput-object p1, p0, Lcoil/intercept/EngineInterceptor$execute$executeResult$1;->this$0:Lcoil/intercept/b;
 
+    .line 2
+    .line 3
     iput-object p2, p0, Lcoil/intercept/EngineInterceptor$execute$executeResult$1;->$fetchResult:Lkotlin/jvm/internal/Ref$ObjectRef;
 
+    .line 4
+    .line 5
     iput-object p3, p0, Lcoil/intercept/EngineInterceptor$execute$executeResult$1;->$components:Lkotlin/jvm/internal/Ref$ObjectRef;
 
-    iput-object p4, p0, Lcoil/intercept/EngineInterceptor$execute$executeResult$1;->$request:Ln5/i;
+    .line 6
+    .line 7
+    iput-object p4, p0, Lcoil/intercept/EngineInterceptor$execute$executeResult$1;->$request:LH2/h;
 
+    .line 8
+    .line 9
     iput-object p5, p0, Lcoil/intercept/EngineInterceptor$execute$executeResult$1;->$mappedData:Ljava/lang/Object;
 
+    .line 10
+    .line 11
     iput-object p6, p0, Lcoil/intercept/EngineInterceptor$execute$executeResult$1;->$options:Lkotlin/jvm/internal/Ref$ObjectRef;
 
-    iput-object p7, p0, Lcoil/intercept/EngineInterceptor$execute$executeResult$1;->$eventListener:Lcoil/e;
+    .line 12
+    .line 13
+    iput-object p7, p0, Lcoil/intercept/EngineInterceptor$execute$executeResult$1;->$eventListener:Lcoil/d;
 
+    .line 14
+    .line 15
     const/4 p1, 0x2
 
+    .line 16
     invoke-direct {p0, p1, p8}, Lkotlin/coroutines/jvm/internal/SuspendLambda;-><init>(ILkotlin/coroutines/Continuation;)V
 
+    .line 17
+    .line 18
+    .line 19
     return-void
 .end method
 
@@ -142,7 +161,7 @@
             "Lkotlin/coroutines/Continuation<",
             "*>;)",
             "Lkotlin/coroutines/Continuation<",
-            "Lqh/r;",
+            "LX9/j;",
             ">;"
         }
     .end annotation
@@ -155,19 +174,19 @@
 
     iget-object v3, p0, Lcoil/intercept/EngineInterceptor$execute$executeResult$1;->$components:Lkotlin/jvm/internal/Ref$ObjectRef;
 
-    iget-object v4, p0, Lcoil/intercept/EngineInterceptor$execute$executeResult$1;->$request:Ln5/i;
+    iget-object v4, p0, Lcoil/intercept/EngineInterceptor$execute$executeResult$1;->$request:LH2/h;
 
     iget-object v5, p0, Lcoil/intercept/EngineInterceptor$execute$executeResult$1;->$mappedData:Ljava/lang/Object;
 
     iget-object v6, p0, Lcoil/intercept/EngineInterceptor$execute$executeResult$1;->$options:Lkotlin/jvm/internal/Ref$ObjectRef;
 
-    iget-object v7, p0, Lcoil/intercept/EngineInterceptor$execute$executeResult$1;->$eventListener:Lcoil/e;
+    iget-object v7, p0, Lcoil/intercept/EngineInterceptor$execute$executeResult$1;->$eventListener:Lcoil/d;
 
     move-object v0, p1
 
     move-object v8, p2
 
-    invoke-direct/range {v0 .. v8}, Lcoil/intercept/EngineInterceptor$execute$executeResult$1;-><init>(Lcoil/intercept/b;Lkotlin/jvm/internal/Ref$ObjectRef;Lkotlin/jvm/internal/Ref$ObjectRef;Ln5/i;Ljava/lang/Object;Lkotlin/jvm/internal/Ref$ObjectRef;Lcoil/e;Lkotlin/coroutines/Continuation;)V
+    invoke-direct/range {v0 .. v8}, Lcoil/intercept/EngineInterceptor$execute$executeResult$1;-><init>(Lcoil/intercept/b;Lkotlin/jvm/internal/Ref$ObjectRef;Lkotlin/jvm/internal/Ref$ObjectRef;LH2/h;Ljava/lang/Object;Lkotlin/jvm/internal/Ref$ObjectRef;Lcoil/d;Lkotlin/coroutines/Continuation;)V
 
     return-object p1
 .end method
@@ -176,23 +195,23 @@
     .locals 0
 
     .line 1
-    check-cast p1, Lkotlinx/coroutines/w;
+    check-cast p1, Lkotlinx/coroutines/u;
 
     check-cast p2, Lkotlin/coroutines/Continuation;
 
-    invoke-virtual {p0, p1, p2}, Lcoil/intercept/EngineInterceptor$execute$executeResult$1;->invoke(Lkotlinx/coroutines/w;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
+    invoke-virtual {p0, p1, p2}, Lcoil/intercept/EngineInterceptor$execute$executeResult$1;->invoke(Lkotlinx/coroutines/u;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
 
     move-result-object p1
 
     return-object p1
 .end method
 
-.method public final invoke(Lkotlinx/coroutines/w;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
+.method public final invoke(Lkotlinx/coroutines/u;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
     .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
-            "Lkotlinx/coroutines/w;",
+            "Lkotlinx/coroutines/u;",
             "Lkotlin/coroutines/Continuation<",
             "-",
             "Lcoil/intercept/a;",
@@ -208,7 +227,7 @@
 
     check-cast p1, Lcoil/intercept/EngineInterceptor$execute$executeResult$1;
 
-    sget-object p2, Lqh/r;->a:Lqh/r;
+    sget-object p2, LX9/j;->a:LX9/j;
 
     invoke-virtual {p1, p2}, Lcoil/intercept/EngineInterceptor$execute$executeResult$1;->invokeSuspend(Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -283,7 +302,7 @@
 
     .line 30
     .line 31
-    check-cast p1, Lcoil/fetch/l;
+    check-cast p1, Lcoil/fetch/k;
 
     .line 32
     .line 33
@@ -295,11 +314,11 @@
 
     .line 36
     .line 37
-    check-cast v3, Lcoil/c;
+    check-cast v3, Lcoil/b;
 
     .line 38
     .line 39
-    iget-object v4, p0, Lcoil/intercept/EngineInterceptor$execute$executeResult$1;->$request:Ln5/i;
+    iget-object v4, p0, Lcoil/intercept/EngineInterceptor$execute$executeResult$1;->$request:LH2/h;
 
     .line 40
     .line 41
@@ -315,11 +334,11 @@
 
     .line 46
     .line 47
-    check-cast v6, Ln5/l;
+    check-cast v6, LH2/k;
 
     .line 48
     .line 49
-    iget-object v7, p0, Lcoil/intercept/EngineInterceptor$execute$executeResult$1;->$eventListener:Lcoil/e;
+    iget-object v7, p0, Lcoil/intercept/EngineInterceptor$execute$executeResult$1;->$eventListener:Lcoil/d;
 
     .line 50
     .line 51
@@ -333,7 +352,7 @@
     move-object v8, p0
 
     .line 55
-    invoke-static/range {v1 .. v8}, Lcoil/intercept/b;->a(Lcoil/intercept/b;Lcoil/fetch/l;Lcoil/c;Ln5/i;Ljava/lang/Object;Ln5/l;Lcoil/e;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
+    invoke-static/range {v1 .. v8}, Lcoil/intercept/b;->a(Lcoil/intercept/b;Lcoil/fetch/k;Lcoil/b;LH2/h;Ljava/lang/Object;LH2/k;Lcoil/d;Lkotlin/coroutines/jvm/internal/ContinuationImpl;)Ljava/lang/Object;
 
     .line 56
     .line 57

@@ -6,11 +6,11 @@
 # instance fields
 .field public final a:Landroidx/compose/ui/graphics/painter/b;
 
-.field public final b:Ln5/d;
+.field public final b:LH2/d;
 
 
 # direct methods
-.method public constructor <init>(Landroidx/compose/ui/graphics/painter/b;Ln5/d;)V
+.method public constructor <init>(Landroidx/compose/ui/graphics/painter/b;LH2/d;)V
     .locals 0
 
     .line 1
@@ -23,7 +23,7 @@
 
     .line 5
     .line 6
-    iput-object p2, p0, Lcoil/compose/d;->b:Ln5/d;
+    iput-object p2, p0, Lcoil/compose/d;->b:LH2/d;
 
     .line 7
     .line 8
@@ -38,6 +38,8 @@
     .line 1
     iget-object v0, p0, Lcoil/compose/d;->a:Landroidx/compose/ui/graphics/painter/b;
 
+    .line 2
+    .line 3
     return-object v0
 .end method
 
@@ -66,7 +68,7 @@
 
     iget-object v3, p0, Lcoil/compose/d;->a:Landroidx/compose/ui/graphics/painter/b;
 
-    invoke-static {v3, v1}, Lrb/h;->d(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v3, v1}, Lkotlin/jvm/internal/h;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result v1
 
@@ -75,11 +77,11 @@
     return v2
 
     :cond_2
-    iget-object v1, p0, Lcoil/compose/d;->b:Ln5/d;
+    iget-object v1, p0, Lcoil/compose/d;->b:LH2/d;
 
-    iget-object p1, p1, Lcoil/compose/d;->b:Ln5/d;
+    iget-object p1, p1, Lcoil/compose/d;->b:LH2/d;
 
-    invoke-static {v1, p1}, Lrb/h;->d(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v1, p1}, Lkotlin/jvm/internal/h;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result p1
 
@@ -110,9 +112,9 @@
     :goto_0
     mul-int/lit8 v0, v0, 0x1f
 
-    iget-object v1, p0, Lcoil/compose/d;->b:Ln5/d;
+    iget-object v1, p0, Lcoil/compose/d;->b:LH2/d;
 
-    invoke-virtual {v1}, Ln5/d;->hashCode()I
+    invoke-virtual {v1}, LH2/d;->hashCode()I
 
     move-result v1
 
@@ -138,7 +140,7 @@
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget-object v1, p0, Lcoil/compose/d;->b:Ln5/d;
+    iget-object v1, p0, Lcoil/compose/d;->b:LH2/d;
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 

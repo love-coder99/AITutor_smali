@@ -70,9 +70,10 @@
 
     iput v4, v3, Lcom/applovin/impl/w5$d;->e:I
 
+    .line 4
     iget-object v7, v1, Lcom/applovin/impl/w5$c;->b:Lcom/applovin/impl/w5;
 
-    .line 4
+    .line 5
     invoke-static {v7}, Lcom/applovin/impl/w5;->a(Lcom/applovin/impl/w5;)Lcom/applovin/impl/lc;
 
     move-result-object v7
@@ -87,7 +88,7 @@
 
     return v5
 
-    .line 5
+    .line 6
     :cond_1
     new-instance v4, Lcom/applovin/impl/mc;
 
@@ -99,12 +100,12 @@
 
     iget-object v14, v2, Lcom/applovin/impl/qd;->c:Ljava/util/Map;
 
-    .line 6
+    .line 7
     invoke-static {}, Landroid/os/SystemClock;->elapsedRealtime()J
 
     move-result-wide v15
 
-    .line 7
+    .line 8
     invoke-static {}, Landroid/os/SystemClock;->elapsedRealtime()J
 
     move-result-wide v17
@@ -121,12 +122,12 @@
 
     invoke-direct/range {v9 .. v20}, Lcom/applovin/impl/mc;-><init>(JLcom/applovin/impl/k5;Landroid/net/Uri;Ljava/util/Map;JJJ)V
 
-    .line 8
+    .line 9
     new-instance v6, Lcom/applovin/impl/td;
 
     invoke-direct {v6, v8}, Lcom/applovin/impl/td;-><init>(I)V
 
-    .line 9
+    .line 10
     invoke-virtual/range {p2 .. p2}, Ljava/lang/Throwable;->getCause()Ljava/lang/Throwable;
 
     move-result-object v7
@@ -135,7 +136,7 @@
 
     if-eqz v7, :cond_2
 
-    .line 10
+    .line 11
     invoke-virtual/range {p2 .. p2}, Ljava/lang/Throwable;->getCause()Ljava/lang/Throwable;
 
     move-result-object v2
@@ -144,7 +145,7 @@
 
     goto :goto_0
 
-    .line 11
+    .line 12
     :cond_2
     new-instance v7, Lcom/applovin/impl/w5$f;
 
@@ -156,10 +157,11 @@
 
     move-object v2, v7
 
+    .line 13
     :goto_0
     iget-object v7, v1, Lcom/applovin/impl/w5$c;->b:Lcom/applovin/impl/w5;
 
-    .line 12
+    .line 14
     invoke-static {v7}, Lcom/applovin/impl/w5;->a(Lcom/applovin/impl/w5;)Lcom/applovin/impl/lc;
 
     move-result-object v7
@@ -182,23 +184,24 @@
 
     return v5
 
-    .line 13
+    .line 15
     :cond_3
     monitor-enter p0
 
+    .line 16
     :try_start_0
     iget-boolean v4, v1, Lcom/applovin/impl/w5$c;->a:Z
 
     if-nez v4, :cond_4
 
-    .line 14
+    .line 17
     invoke-static/range {p1 .. p1}, Landroid/os/Message;->obtain(Landroid/os/Message;)Landroid/os/Message;
 
     move-result-object v0
 
     invoke-virtual {v1, v0, v2, v3}, Landroid/os/Handler;->sendMessageDelayed(Landroid/os/Message;J)Z
 
-    .line 15
+    .line 18
     monitor-exit p0
 
     const/4 v0, 0x1
@@ -210,13 +213,13 @@
 
     goto :goto_1
 
-    .line 16
+    .line 19
     :cond_4
     monitor-exit p0
 
     return v5
 
-    .line 17
+    .line 20
     :goto_1
     monitor-exit p0
     :try_end_0
@@ -234,17 +237,17 @@
 
     const/4 v0, 0x0
 
-    .line 22
+    .line 25
     :try_start_0
     invoke-virtual {p0, v0}, Landroid/os/Handler;->removeCallbacksAndMessages(Ljava/lang/Object;)V
 
     const/4 v0, 0x1
 
+    .line 26
     iput-boolean v0, p0, Lcom/applovin/impl/w5$c;->a:Z
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    .line 23
     monitor-exit p0
 
     return-void
@@ -252,7 +255,10 @@
     :catchall_0
     move-exception v0
 
+    :try_start_1
     monitor-exit p0
+    :try_end_1
+    .catchall {:try_start_1 .. :try_end_1} :catchall_0
 
     throw v0
 .end method
@@ -260,15 +266,15 @@
 .method public a(ILjava/lang/Object;Z)V
     .locals 8
 
-    .line 18
+    .line 21
     new-instance v7, Lcom/applovin/impl/w5$d;
 
-    .line 19
+    .line 22
     invoke-static {}, Lcom/applovin/impl/mc;->a()J
 
     move-result-wide v1
 
-    .line 20
+    .line 23
     invoke-static {}, Landroid/os/SystemClock;->elapsedRealtime()J
 
     move-result-wide v4
@@ -281,7 +287,7 @@
 
     invoke-direct/range {v0 .. v6}, Lcom/applovin/impl/w5$d;-><init>(JZJLjava/lang/Object;)V
 
-    .line 21
+    .line 24
     invoke-virtual {p0, p1, v7}, Landroid/os/Handler;->obtainMessage(ILjava/lang/Object;)Landroid/os/Message;
 
     move-result-object p1

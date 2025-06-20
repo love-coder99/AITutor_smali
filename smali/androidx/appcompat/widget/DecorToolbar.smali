@@ -146,10 +146,10 @@
 .method public abstract setLogo(Landroid/graphics/drawable/Drawable;)V
 .end method
 
-.method public abstract setMenu(Landroid/view/Menu;Landroidx/appcompat/view/menu/a0;)V
+.method public abstract setMenu(Landroid/view/Menu;Landroidx/appcompat/view/menu/y;)V
 .end method
 
-.method public abstract setMenuCallbacks(Landroidx/appcompat/view/menu/a0;Landroidx/appcompat/view/menu/n;)V
+.method public abstract setMenuCallbacks(Landroidx/appcompat/view/menu/y;Landroidx/appcompat/view/menu/l;)V
 .end method
 
 .method public abstract setMenuPrepared()V
@@ -185,7 +185,7 @@
 .method public abstract setWindowTitle(Ljava/lang/CharSequence;)V
 .end method
 
-.method public abstract setupAnimatorToVisibility(IJ)Landroidx/core/view/e1;
+.method public abstract setupAnimatorToVisibility(IJ)Landroidx/core/view/k0;
 .end method
 
 .method public abstract showOverflowMenu()Z

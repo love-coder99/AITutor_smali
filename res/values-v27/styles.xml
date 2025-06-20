@@ -4,8 +4,6 @@
     <style name="Base.Theme.SplashScreen.Light" parent="@style/Base.v27.Theme.SplashScreen.Light" />
     <style name="Theme.MathAI" parent="@style/Theme.Material3.DayNight.NoActionBar">
         <item name="android:windowBackground">@color/splash_background</item>
-        <item name="android:windowFullscreen">true</item>
-        <item name="android:windowTranslucentStatus">true</item>
         <item name="android:windowLayoutInDisplayCutoutMode">shortEdges</item>
         <item name="colorOnPrimary">@color/neutral_0</item>
         <item name="colorOnSecondary">@color/black</item>

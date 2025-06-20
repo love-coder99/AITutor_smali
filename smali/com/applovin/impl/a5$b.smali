@@ -59,44 +59,60 @@
 
     const/4 v0, 0x0
 
+    .line 2
     iput-object v0, p0, Lcom/applovin/impl/a5$b;->a:Ljava/lang/CharSequence;
 
+    .line 3
     iput-object v0, p0, Lcom/applovin/impl/a5$b;->b:Landroid/graphics/Bitmap;
 
+    .line 4
     iput-object v0, p0, Lcom/applovin/impl/a5$b;->c:Landroid/text/Layout$Alignment;
 
+    .line 5
     iput-object v0, p0, Lcom/applovin/impl/a5$b;->d:Landroid/text/Layout$Alignment;
 
     const v0, -0x800001
 
+    .line 6
     iput v0, p0, Lcom/applovin/impl/a5$b;->e:F
 
     const/high16 v1, -0x80000000
 
+    .line 7
     iput v1, p0, Lcom/applovin/impl/a5$b;->f:I
 
+    .line 8
     iput v1, p0, Lcom/applovin/impl/a5$b;->g:I
 
+    .line 9
     iput v0, p0, Lcom/applovin/impl/a5$b;->h:F
 
+    .line 10
     iput v1, p0, Lcom/applovin/impl/a5$b;->i:I
 
+    .line 11
     iput v1, p0, Lcom/applovin/impl/a5$b;->j:I
 
+    .line 12
     iput v0, p0, Lcom/applovin/impl/a5$b;->k:F
 
+    .line 13
     iput v0, p0, Lcom/applovin/impl/a5$b;->l:F
 
+    .line 14
     iput v0, p0, Lcom/applovin/impl/a5$b;->m:F
 
     const/4 v0, 0x0
 
+    .line 15
     iput-boolean v0, p0, Lcom/applovin/impl/a5$b;->n:Z
 
     const/high16 v0, -0x1000000
 
+    .line 16
     iput v0, p0, Lcom/applovin/impl/a5$b;->o:I
 
+    .line 17
     iput v1, p0, Lcom/applovin/impl/a5$b;->p:I
 
     return-void
@@ -105,90 +121,90 @@
 .method private constructor <init>(Lcom/applovin/impl/a5;)V
     .locals 1
 
-    .line 2
+    .line 18
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 3
+    .line 19
     iget-object v0, p1, Lcom/applovin/impl/a5;->a:Ljava/lang/CharSequence;
 
     iput-object v0, p0, Lcom/applovin/impl/a5$b;->a:Ljava/lang/CharSequence;
 
-    .line 4
+    .line 20
     iget-object v0, p1, Lcom/applovin/impl/a5;->d:Landroid/graphics/Bitmap;
 
     iput-object v0, p0, Lcom/applovin/impl/a5$b;->b:Landroid/graphics/Bitmap;
 
-    .line 5
+    .line 21
     iget-object v0, p1, Lcom/applovin/impl/a5;->b:Landroid/text/Layout$Alignment;
 
     iput-object v0, p0, Lcom/applovin/impl/a5$b;->c:Landroid/text/Layout$Alignment;
 
-    .line 6
+    .line 22
     iget-object v0, p1, Lcom/applovin/impl/a5;->c:Landroid/text/Layout$Alignment;
 
     iput-object v0, p0, Lcom/applovin/impl/a5$b;->d:Landroid/text/Layout$Alignment;
 
-    .line 7
+    .line 23
     iget v0, p1, Lcom/applovin/impl/a5;->f:F
 
     iput v0, p0, Lcom/applovin/impl/a5$b;->e:F
 
-    .line 8
+    .line 24
     iget v0, p1, Lcom/applovin/impl/a5;->g:I
 
     iput v0, p0, Lcom/applovin/impl/a5$b;->f:I
 
-    .line 9
+    .line 25
     iget v0, p1, Lcom/applovin/impl/a5;->h:I
 
     iput v0, p0, Lcom/applovin/impl/a5$b;->g:I
 
-    .line 10
+    .line 26
     iget v0, p1, Lcom/applovin/impl/a5;->i:F
 
     iput v0, p0, Lcom/applovin/impl/a5$b;->h:F
 
-    .line 11
+    .line 27
     iget v0, p1, Lcom/applovin/impl/a5;->j:I
 
     iput v0, p0, Lcom/applovin/impl/a5$b;->i:I
 
-    .line 12
+    .line 28
     iget v0, p1, Lcom/applovin/impl/a5;->o:I
 
     iput v0, p0, Lcom/applovin/impl/a5$b;->j:I
 
-    .line 13
+    .line 29
     iget v0, p1, Lcom/applovin/impl/a5;->p:F
 
     iput v0, p0, Lcom/applovin/impl/a5$b;->k:F
 
-    .line 14
+    .line 30
     iget v0, p1, Lcom/applovin/impl/a5;->k:F
 
     iput v0, p0, Lcom/applovin/impl/a5$b;->l:F
 
-    .line 15
+    .line 31
     iget v0, p1, Lcom/applovin/impl/a5;->l:F
 
     iput v0, p0, Lcom/applovin/impl/a5$b;->m:F
 
-    .line 16
+    .line 32
     iget-boolean v0, p1, Lcom/applovin/impl/a5;->m:Z
 
     iput-boolean v0, p0, Lcom/applovin/impl/a5$b;->n:Z
 
-    .line 17
+    .line 33
     iget v0, p1, Lcom/applovin/impl/a5;->n:I
 
     iput v0, p0, Lcom/applovin/impl/a5$b;->o:I
 
-    .line 18
+    .line 34
     iget v0, p1, Lcom/applovin/impl/a5;->q:I
 
     iput v0, p0, Lcom/applovin/impl/a5$b;->p:I
 
-    .line 19
+    .line 35
     iget p1, p1, Lcom/applovin/impl/a5;->r:F
 
     iput p1, p0, Lcom/applovin/impl/a5$b;->q:F
@@ -199,7 +215,7 @@
 .method public synthetic constructor <init>(Lcom/applovin/impl/a5;Lcom/applovin/impl/a5$a;)V
     .locals 0
 
-    .line 20
+    .line 36
     invoke-direct {p0, p1}, Lcom/applovin/impl/a5$b;-><init>(Lcom/applovin/impl/a5;)V
 
     return-void
@@ -210,7 +226,7 @@
 .method public a(F)Lcom/applovin/impl/a5$b;
     .locals 0
 
-    .line 1
+    .line 2
     iput p1, p0, Lcom/applovin/impl/a5$b;->m:F
 
     return-object p0
@@ -219,9 +235,10 @@
 .method public a(FI)Lcom/applovin/impl/a5$b;
     .locals 0
 
-    .line 2
+    .line 3
     iput p1, p0, Lcom/applovin/impl/a5$b;->e:F
 
+    .line 4
     iput p2, p0, Lcom/applovin/impl/a5$b;->f:I
 
     return-object p0
@@ -230,7 +247,7 @@
 .method public a(I)Lcom/applovin/impl/a5$b;
     .locals 0
 
-    .line 3
+    .line 5
     iput p1, p0, Lcom/applovin/impl/a5$b;->g:I
 
     return-object p0
@@ -239,7 +256,7 @@
 .method public a(Landroid/graphics/Bitmap;)Lcom/applovin/impl/a5$b;
     .locals 0
 
-    .line 4
+    .line 1
     iput-object p1, p0, Lcom/applovin/impl/a5$b;->b:Landroid/graphics/Bitmap;
 
     return-object p0
@@ -248,7 +265,7 @@
 .method public a(Landroid/text/Layout$Alignment;)Lcom/applovin/impl/a5$b;
     .locals 0
 
-    .line 5
+    .line 6
     iput-object p1, p0, Lcom/applovin/impl/a5$b;->d:Landroid/text/Layout$Alignment;
 
     return-object p0
@@ -257,7 +274,7 @@
 .method public a(Ljava/lang/CharSequence;)Lcom/applovin/impl/a5$b;
     .locals 0
 
-    .line 6
+    .line 7
     iput-object p1, p0, Lcom/applovin/impl/a5$b;->a:Ljava/lang/CharSequence;
 
     return-object p0
@@ -268,7 +285,7 @@
 
     move-object/from16 v0, p0
 
-    .line 7
+    .line 8
     new-instance v20, Lcom/applovin/impl/a5;
 
     move-object/from16 v1, v20
@@ -327,9 +344,9 @@
 .method public b()Lcom/applovin/impl/a5$b;
     .locals 1
 
-    .line 1
     const/4 v0, 0x0
 
+    .line 1
     iput-boolean v0, p0, Lcom/applovin/impl/a5$b;->n:Z
 
     return-object p0
@@ -347,9 +364,10 @@
 .method public b(FI)Lcom/applovin/impl/a5$b;
     .locals 0
 
-    .line 3
+    .line 5
     iput p1, p0, Lcom/applovin/impl/a5$b;->k:F
 
+    .line 6
     iput p2, p0, Lcom/applovin/impl/a5$b;->j:I
 
     return-object p0
@@ -358,7 +376,7 @@
 .method public b(I)Lcom/applovin/impl/a5$b;
     .locals 0
 
-    .line 4
+    .line 3
     iput p1, p0, Lcom/applovin/impl/a5$b;->i:I
 
     return-object p0
@@ -367,7 +385,7 @@
 .method public b(Landroid/text/Layout$Alignment;)Lcom/applovin/impl/a5$b;
     .locals 0
 
-    .line 5
+    .line 4
     iput-object p1, p0, Lcom/applovin/impl/a5$b;->c:Landroid/text/Layout$Alignment;
 
     return-object p0
@@ -426,6 +444,7 @@
 
     const/4 p1, 0x1
 
+    .line 4
     iput-boolean p1, p0, Lcom/applovin/impl/a5$b;->n:Z
 
     return-object p0
@@ -434,7 +453,10 @@
 .method public e()Ljava/lang/CharSequence;
     .locals 1
 
+    .line 1
     iget-object v0, p0, Lcom/applovin/impl/a5$b;->a:Ljava/lang/CharSequence;
 
+    .line 2
+    .line 3
     return-object v0
 .end method

@@ -229,16 +229,16 @@
 
     return-object p1
 
+    .line 20
     :cond_0
     iget-object v0, p0, Lcom/applovin/impl/mediation/ads/MaxNativeAdLoaderImpl;->e:Ljava/lang/Object;
 
-    .line 20
     monitor-enter v0
 
+    .line 21
     :try_start_0
     iget-object v1, p0, Lcom/applovin/impl/mediation/ads/MaxNativeAdLoaderImpl;->g:Ljava/util/Map;
 
-    .line 21
     invoke-interface {v1, p1}, Ljava/util/Map;->remove(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object p1
@@ -274,9 +274,9 @@
 
     if-nez v0, :cond_0
 
+    .line 10
     iget-object v0, p0, Lcom/applovin/impl/mediation/ads/a;->sdk:Lcom/applovin/impl/sdk/j;
 
-    .line 10
     invoke-virtual {v0}, Lcom/applovin/impl/sdk/j;->f()Lcom/applovin/impl/sdk/a;
 
     move-result-object v0
@@ -385,10 +385,10 @@
 
     goto :goto_0
 
+    .line 8
     :cond_0
     iget-object p1, p0, Lcom/applovin/impl/mediation/ads/a;->sdk:Lcom/applovin/impl/sdk/j;
 
-    .line 8
     invoke-virtual {p1}, Lcom/applovin/impl/sdk/j;->i0()Lcom/applovin/impl/tm;
 
     move-result-object p1
@@ -421,16 +421,16 @@
 
     return-void
 
+    .line 15
     :cond_0
     iget-object v0, p0, Lcom/applovin/impl/mediation/ads/MaxNativeAdLoaderImpl;->e:Ljava/lang/Object;
 
-    .line 15
     monitor-enter v0
 
+    .line 16
     :try_start_0
     iget-object v1, p0, Lcom/applovin/impl/mediation/ads/MaxNativeAdLoaderImpl;->g:Ljava/util/Map;
 
-    .line 16
     invoke-interface {v1, p1, p2}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 17
@@ -511,39 +511,40 @@
 
     const/4 v0, 0x0
 
+    .line 1
     iput-object v0, p0, Lcom/applovin/impl/mediation/ads/MaxNativeAdLoaderImpl;->f:Lcom/applovin/mediation/nativeAds/MaxNativeAdListener;
 
+    .line 2
     iget-object v0, p0, Lcom/applovin/impl/mediation/ads/a;->sdk:Lcom/applovin/impl/sdk/j;
 
-    .line 1
     invoke-virtual {v0}, Lcom/applovin/impl/sdk/j;->i()Lcom/applovin/impl/v;
 
     move-result-object v0
 
     invoke-virtual {v0, p0}, Lcom/applovin/impl/v;->b(Lcom/applovin/impl/v$b;)V
 
+    .line 3
     iget-object v0, p0, Lcom/applovin/impl/mediation/ads/MaxNativeAdLoaderImpl;->e:Ljava/lang/Object;
 
-    .line 2
     monitor-enter v0
 
+    .line 4
     :try_start_0
     iget-object v1, p0, Lcom/applovin/impl/mediation/ads/MaxNativeAdLoaderImpl;->g:Ljava/util/Map;
 
-    .line 3
     invoke-interface {v1}, Ljava/util/Map;->clear()V
 
+    .line 5
     iget-object v1, p0, Lcom/applovin/impl/mediation/ads/MaxNativeAdLoaderImpl;->h:Ljava/util/Set;
 
-    .line 4
     invoke-interface {v1}, Ljava/util/Set;->clear()V
 
-    .line 5
+    .line 6
     monitor-exit v0
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    .line 6
+    .line 7
     invoke-super {p0}, Lcom/applovin/impl/mediation/ads/a;->destroy()V
 
     return-void
@@ -551,7 +552,7 @@
     :catchall_0
     move-exception v1
 
-    .line 7
+    .line 8
     :try_start_1
     monitor-exit v0
     :try_end_1
@@ -563,24 +564,24 @@
 .method public destroy(Lcom/applovin/mediation/MaxAd;)V
     .locals 4
 
-    .line 8
+    .line 9
     instance-of v0, p1, Lcom/applovin/impl/ie;
 
     if-eqz v0, :cond_4
 
-    .line 9
+    .line 10
     move-object v0, p1
 
     check-cast v0, Lcom/applovin/impl/ie;
 
-    .line 10
+    .line 11
     invoke-virtual {v0}, Lcom/applovin/impl/ie;->u0()Z
 
     move-result v1
 
     if-eqz v1, :cond_1
 
-    .line 11
+    .line 12
     invoke-static {}, Lcom/applovin/impl/sdk/n;->a()Z
 
     move-result p1
@@ -612,38 +613,38 @@
     :cond_0
     return-void
 
+    .line 13
     :cond_1
     iget-object v1, p0, Lcom/applovin/impl/mediation/ads/MaxNativeAdLoaderImpl;->e:Ljava/lang/Object;
 
-    .line 12
     monitor-enter v1
 
+    .line 14
     :try_start_0
     iget-object v2, p0, Lcom/applovin/impl/mediation/ads/MaxNativeAdLoaderImpl;->h:Ljava/util/Set;
 
-    .line 13
     invoke-interface {v2, v0}, Ljava/util/Set;->remove(Ljava/lang/Object;)Z
 
-    .line 14
+    .line 15
     monitor-exit v1
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    .line 15
+    .line 16
     invoke-virtual {v0}, Lcom/applovin/impl/ie;->o0()Lcom/applovin/mediation/nativeAds/MaxNativeAdView;
 
     move-result-object v1
 
     if-eqz v1, :cond_2
 
-    .line 16
+    .line 17
     invoke-virtual {v1}, Lcom/applovin/mediation/nativeAds/MaxNativeAdView;->getAdViewTracker()Lcom/applovin/impl/mediation/ads/b;
 
     move-result-object v2
 
     if-eqz v2, :cond_2
 
-    .line 17
+    .line 18
     invoke-virtual {v2}, Lcom/applovin/impl/mediation/ads/b;->b()Lcom/applovin/impl/ie;
 
     move-result-object v2
@@ -654,10 +655,10 @@
 
     if-eqz p1, :cond_2
 
-    .line 18
+    .line 19
     invoke-virtual {v1}, Lcom/applovin/mediation/nativeAds/MaxNativeAdView;->recycle()V
 
-    .line 19
+    .line 20
     :cond_2
     invoke-virtual {v0}, Lcom/applovin/impl/fe;->getNativeAd()Lcom/applovin/mediation/nativeAds/MaxNativeAd;
 
@@ -665,42 +666,42 @@
 
     if-eqz p1, :cond_3
 
-    .line 20
+    .line 21
     invoke-virtual {p1}, Lcom/applovin/impl/mediation/nativeAds/MaxNativeAdImpl;->getAdViewTracker()Lcom/applovin/impl/mediation/ads/b;
 
     move-result-object v1
 
     if-eqz v1, :cond_3
 
-    .line 21
+    .line 22
     invoke-virtual {p1}, Lcom/applovin/impl/mediation/nativeAds/MaxNativeAdImpl;->getAdViewTracker()Lcom/applovin/impl/mediation/ads/b;
 
     move-result-object p1
 
     invoke-virtual {p1}, Lcom/applovin/impl/mediation/ads/b;->a()V
 
+    .line 23
     :cond_3
     iget-object p1, p0, Lcom/applovin/impl/mediation/ads/a;->sdk:Lcom/applovin/impl/sdk/j;
 
-    .line 22
     invoke-virtual {p1}, Lcom/applovin/impl/sdk/j;->f()Lcom/applovin/impl/sdk/a;
 
     move-result-object p1
 
     invoke-virtual {p1, v0}, Lcom/applovin/impl/sdk/a;->a(Lcom/applovin/impl/i8;)V
 
+    .line 24
     iget-object p1, p0, Lcom/applovin/impl/mediation/ads/a;->sdk:Lcom/applovin/impl/sdk/j;
 
-    .line 23
     invoke-virtual {p1}, Lcom/applovin/impl/sdk/j;->P()Lcom/applovin/impl/mediation/MediationServiceImpl;
 
     move-result-object p1
 
     invoke-virtual {p1, v0}, Lcom/applovin/impl/mediation/MediationServiceImpl;->destroyAd(Lcom/applovin/mediation/MaxAd;)V
 
+    .line 25
     iget-object p1, p0, Lcom/applovin/impl/mediation/ads/a;->sdk:Lcom/applovin/impl/sdk/j;
 
-    .line 24
     invoke-virtual {p1}, Lcom/applovin/impl/sdk/j;->J()Lcom/applovin/impl/mediation/d;
 
     move-result-object p1
@@ -718,7 +719,7 @@
     :catchall_0
     move-exception p1
 
-    .line 25
+    .line 26
     :try_start_1
     monitor-exit v1
     :try_end_1
@@ -726,7 +727,7 @@
 
     throw p1
 
-    .line 26
+    .line 27
     :cond_4
     invoke-static {}, Lcom/applovin/impl/sdk/n;->a()Z
 
@@ -764,8 +765,11 @@
 .method public getPlacement()Ljava/lang/String;
     .locals 1
 
+    .line 1
     iget-object v0, p0, Lcom/applovin/impl/mediation/ads/MaxNativeAdLoaderImpl;->b:Ljava/lang/String;
 
+    .line 2
+    .line 3
     return-object v0
 .end method
 
@@ -879,6 +883,10 @@
 
 .method public loadAd(Lcom/applovin/mediation/nativeAds/MaxNativeAdView;)V
     .locals 11
+    .param p1    # Lcom/applovin/mediation/nativeAds/MaxNativeAdView;
+        .annotation build Landroidx/annotation/Nullable;
+        .end annotation
+    .end param
 
     .line 1
     invoke-static {}, Lcom/applovin/impl/sdk/n;->a()Z
@@ -1875,13 +1883,18 @@
 .method public setPlacement(Ljava/lang/String;)V
     .locals 0
 
+    .line 1
     iput-object p1, p0, Lcom/applovin/impl/mediation/ads/MaxNativeAdLoaderImpl;->b:Ljava/lang/String;
 
+    .line 2
+    .line 3
     return-void
 .end method
 
 .method public toString()Ljava/lang/String;
     .locals 2
+    .annotation build Landroidx/annotation/NonNull;
+    .end annotation
 
     .line 1
     new-instance v0, Ljava/lang/StringBuilder;

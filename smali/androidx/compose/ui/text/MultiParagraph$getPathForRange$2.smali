@@ -3,14 +3,14 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lzh/c;
+.implements Lka/c;
 
 
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "Lkotlin/jvm/internal/Lambda;",
-        "Lzh/c;"
+        "Lka/c;"
     }
 .end annotation
 
@@ -21,7 +21,7 @@
     d2 = {
         "Landroidx/compose/ui/text/o;",
         "paragraphInfo",
-        "Lqh/r;",
+        "LX9/j;",
         "invoke",
         "(Landroidx/compose/ui/text/o;)V",
         "<anonymous>"
@@ -38,16 +38,16 @@
 # instance fields
 .field final synthetic $end:I
 
-.field final synthetic $path:Landroidx/compose/ui/graphics/q0;
+.field final synthetic $path:Landroidx/compose/ui/graphics/S;
 
 .field final synthetic $start:I
 
 
 # direct methods
-.method public constructor <init>(Landroidx/compose/ui/graphics/q0;II)V
+.method public constructor <init>(Landroidx/compose/ui/graphics/S;II)V
     .locals 0
 
-    iput-object p1, p0, Landroidx/compose/ui/text/MultiParagraph$getPathForRange$2;->$path:Landroidx/compose/ui/graphics/q0;
+    iput-object p1, p0, Landroidx/compose/ui/text/MultiParagraph$getPathForRange$2;->$path:Landroidx/compose/ui/graphics/S;
 
     iput p2, p0, Landroidx/compose/ui/text/MultiParagraph$getPathForRange$2;->$start:I
 
@@ -70,7 +70,7 @@
 
     invoke-virtual {p0, p1}, Landroidx/compose/ui/text/MultiParagraph$getPathForRange$2;->invoke(Landroidx/compose/ui/text/o;)V
 
-    sget-object p1, Lqh/r;->a:Lqh/r;
+    sget-object p1, LX9/j;->a:LX9/j;
 
     return-object p1
 .end method
@@ -78,35 +78,33 @@
 .method public final invoke(Landroidx/compose/ui/text/o;)V
     .locals 6
 
-    iget-object v0, p0, Landroidx/compose/ui/text/MultiParagraph$getPathForRange$2;->$path:Landroidx/compose/ui/graphics/q0;
+    .line 2
+    iget-object v0, p0, Landroidx/compose/ui/text/MultiParagraph$getPathForRange$2;->$path:Landroidx/compose/ui/graphics/S;
 
     iget v1, p0, Landroidx/compose/ui/text/MultiParagraph$getPathForRange$2;->$start:I
 
     iget v2, p0, Landroidx/compose/ui/text/MultiParagraph$getPathForRange$2;->$end:I
 
-    .line 2
-    iget-object v3, p1, Landroidx/compose/ui/text/o;->a:Landroidx/compose/ui/text/n;
-
     .line 3
+    iget-object v3, p1, Landroidx/compose/ui/text/o;->a:Landroidx/compose/ui/text/b;
+
+    .line 4
     invoke-virtual {p1, v1}, Landroidx/compose/ui/text/o;->b(I)I
 
     move-result v1
 
-    .line 4
+    .line 5
     invoke-virtual {p1, v2}, Landroidx/compose/ui/text/o;->b(I)I
 
     move-result v2
 
-    check-cast v3, Landroidx/compose/ui/text/b;
-
-    .line 5
+    .line 6
     iget-object v4, v3, Landroidx/compose/ui/text/b;->e:Ljava/lang/CharSequence;
 
     if-ltz v1, :cond_1
 
     if-gt v1, v2, :cond_1
 
-    .line 6
     invoke-interface {v4}, Ljava/lang/CharSequence;->length()I
 
     move-result v5
@@ -119,9 +117,9 @@
     invoke-direct {v4}, Landroid/graphics/Path;-><init>()V
 
     .line 8
-    iget-object v3, v3, Landroidx/compose/ui/text/b;->d:Lz1/b0;
+    iget-object v3, v3, Landroidx/compose/ui/text/b;->d:LE0/D;
 
-    iget-object v5, v3, Lz1/b0;->f:Landroid/text/Layout;
+    iget-object v5, v3, LE0/D;->f:Landroid/text/Layout;
 
     .line 9
     invoke-virtual {v5, v1, v2, v4}, Landroid/text/Layout;->getSelectionPath(IILandroid/graphics/Path;)V
@@ -129,7 +127,7 @@
     const/4 v1, 0x0
 
     .line 10
-    iget v2, v3, Lz1/b0;->h:I
+    iget v2, v3, LE0/D;->h:I
 
     if-eqz v2, :cond_0
 
@@ -148,7 +146,7 @@
     :cond_0
     iget p1, p1, Landroidx/compose/ui/text/o;->f:F
 
-    invoke-static {v1, p1}, La0/r;->b(FF)J
+    invoke-static {v1, p1}, Lcom/bumptech/glide/c;->b(FF)J
 
     move-result-wide v1
 
@@ -158,11 +156,11 @@
     invoke-direct {p1}, Landroid/graphics/Matrix;-><init>()V
 
     .line 14
-    invoke-static {v1, v2}, Ln1/c;->d(J)F
+    invoke-static {v1, v2}, Lr0/c;->d(J)F
 
     move-result v3
 
-    invoke-static {v1, v2}, Ln1/c;->e(J)F
+    invoke-static {v1, v2}, Lr0/c;->e(J)F
 
     move-result v1
 
@@ -171,19 +169,19 @@
     .line 15
     invoke-virtual {v4, p1}, Landroid/graphics/Path;->transform(Landroid/graphics/Matrix;)V
 
+    .line 16
     check-cast v0, Landroidx/compose/ui/graphics/j;
 
-    .line 16
     invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
     const-wide/16 v1, 0x0
 
     .line 17
-    invoke-static {v1, v2}, Ln1/c;->d(J)F
+    invoke-static {v1, v2}, Lr0/c;->d(J)F
 
     move-result p1
 
-    invoke-static {v1, v2}, Ln1/c;->e(J)F
+    invoke-static {v1, v2}, Lr0/c;->e(J)F
 
     move-result v1
 
@@ -193,6 +191,7 @@
 
     return-void
 
+    .line 18
     :cond_1
     const-string p1, "start("
 
@@ -200,12 +199,12 @@
 
     const-string v3, ") is out of range [0.."
 
-    .line 18
-    invoke-static {p1, v1, v0, v2, v3}, Landroid/support/v4/media/session/a;->L(Ljava/lang/String;ILjava/lang/String;ILjava/lang/String;)Ljava/lang/StringBuilder;
+    .line 19
+    invoke-static {v1, v2, p1, v0, v3}, Landroidx/appcompat/view/menu/F;->J(IILjava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object p1
 
-    .line 19
+    .line 20
     invoke-interface {v4}, Ljava/lang/CharSequence;->length()I
 
     move-result v0
@@ -220,7 +219,7 @@
 
     move-result-object p1
 
-    .line 20
+    .line 21
     new-instance v0, Ljava/lang/IllegalArgumentException;
 
     invoke-virtual {p1}, Ljava/lang/Object;->toString()Ljava/lang/String;

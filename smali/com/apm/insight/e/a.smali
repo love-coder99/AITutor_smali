@@ -29,21 +29,23 @@
 .method public static a()Lcom/apm/insight/e/a;
     .locals 2
 
+    .line 1
     sget-object v0, Lcom/apm/insight/e/a;->a:Lcom/apm/insight/e/a;
 
     if-nez v0, :cond_1
 
+    .line 2
     const-class v0, Lcom/apm/insight/e/a;
 
-    .line 1
     monitor-enter v0
 
+    .line 3
     :try_start_0
     sget-object v1, Lcom/apm/insight/e/a;->a:Lcom/apm/insight/e/a;
 
     if-nez v1, :cond_0
 
-    .line 2
+    .line 4
     new-instance v1, Lcom/apm/insight/e/a;
 
     invoke-direct {v1}, Lcom/apm/insight/e/a;-><init>()V
@@ -57,7 +59,7 @@
 
     goto :goto_1
 
-    .line 3
+    .line 5
     :cond_0
     :goto_0
     monitor-exit v0
@@ -71,6 +73,7 @@
 
     throw v1
 
+    .line 6
     :cond_1
     :goto_2
     sget-object v0, Lcom/apm/insight/e/a;->a:Lcom/apm/insight/e/a;
@@ -114,7 +117,7 @@
 
     monitor-enter p0
 
-    .line 4
+    .line 7
     :try_start_0
     new-instance v0, Lcom/apm/insight/e/b;
 
@@ -133,11 +136,11 @@
     :catchall_0
     move-exception p1
 
-    .line 5
+    .line 8
     :try_start_1
     invoke-static {p1}, Lcom/apm/insight/a;->b(Ljava/lang/Throwable;)V
 
-    .line 6
+    .line 9
     :goto_0
     new-instance p1, Lcom/apm/insight/e/a/b;
 
@@ -147,7 +150,7 @@
     :try_end_1
     .catchall {:try_start_1 .. :try_end_1} :catchall_1
 
-    .line 7
+    .line 10
     monitor-exit p0
 
     return-void
@@ -155,7 +158,10 @@
     :catchall_1
     move-exception p1
 
+    :try_start_2
     monitor-exit p0
+    :try_end_2
+    .catchall {:try_start_2 .. :try_end_2} :catchall_1
 
     throw p1
 .end method
@@ -165,17 +171,18 @@
 
     monitor-enter p0
 
-    .line 8
+    .line 11
     :try_start_0
     invoke-direct {p0}, Lcom/apm/insight/e/a;->b()V
 
+    .line 12
     iget-object v0, p0, Lcom/apm/insight/e/a;->b:Lcom/apm/insight/e/a/b;
 
     if-eqz v0, :cond_0
 
+    .line 13
     iget-object v1, p0, Lcom/apm/insight/e/a;->c:Landroid/database/sqlite/SQLiteDatabase;
 
-    .line 9
     invoke-virtual {v0, v1, p1}, Lcom/apm/insight/e/a/b;->a(Landroid/database/sqlite/SQLiteDatabase;Lcom/apm/insight/d/a;)V
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
@@ -187,7 +194,7 @@
 
     goto :goto_1
 
-    .line 10
+    .line 14
     :cond_0
     :goto_0
     monitor-exit p0
@@ -195,7 +202,10 @@
     return-void
 
     :goto_1
+    :try_start_1
     monitor-exit p0
+    :try_end_1
+    .catchall {:try_start_1 .. :try_end_1} :catchall_0
 
     throw p1
 .end method
@@ -205,17 +215,18 @@
 
     monitor-enter p0
 
-    .line 11
+    .line 15
     :try_start_0
     invoke-direct {p0}, Lcom/apm/insight/e/a;->b()V
 
+    .line 16
     iget-object v0, p0, Lcom/apm/insight/e/a;->b:Lcom/apm/insight/e/a/b;
 
     if-eqz v0, :cond_0
 
+    .line 17
     iget-object v1, p0, Lcom/apm/insight/e/a;->c:Landroid/database/sqlite/SQLiteDatabase;
 
-    .line 12
     invoke-virtual {v0, v1, p1}, Lcom/apm/insight/e/a/b;->a(Landroid/database/sqlite/SQLiteDatabase;Ljava/lang/String;)Z
 
     move-result p1
@@ -231,7 +242,7 @@
 
     goto :goto_0
 
-    .line 13
+    .line 18
     :cond_0
     monitor-exit p0
 
@@ -240,7 +251,10 @@
     return p1
 
     :goto_0
+    :try_start_1
     monitor-exit p0
+    :try_end_1
+    .catchall {:try_start_1 .. :try_end_1} :catchall_0
 
     throw p1
 .end method

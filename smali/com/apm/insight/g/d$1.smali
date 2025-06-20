@@ -648,19 +648,19 @@
     .line 268
     .line 269
     .line 270
-    const-string p1, "isJava"
+    invoke-static {v0}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
     .line 271
     .line 272
-    invoke-static {v0}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
-
     .line 273
-    .line 274
-    .line 275
-    move-result-object v0
+    move-result-object p1
 
+    .line 274
+    const-string v0, "isJava"
+
+    .line 275
     .line 276
-    invoke-virtual {p2, p1, v0}, Lcom/apm/insight/entity/a;->a(Ljava/lang/String;Ljava/lang/Object;)V
+    invoke-virtual {p2, v0, p1}, Lcom/apm/insight/entity/a;->a(Ljava/lang/String;Ljava/lang/Object;)V
 
     .line 277
     .line 278

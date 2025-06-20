@@ -3,14 +3,14 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lzh/a;
+.implements Lka/a;
 
 
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "Lkotlin/jvm/internal/Lambda;",
-        "Lzh/a;"
+        "Lka/a;"
     }
 .end annotation
 
@@ -19,9 +19,9 @@
         "\u0000\u0008\n\u0002\u0018\u0002\n\u0002\u0008\u0003\u0010\u0003\u001a\u00020\u0000H\n\u00a2\u0006\u0004\u0008\u0001\u0010\u0002"
     }
     d2 = {
-        "Landroidx/compose/foundation/lazy/grid/f0;",
+        "Landroidx/compose/foundation/lazy/grid/x;",
         "invoke",
-        "()Landroidx/compose/foundation/lazy/grid/f0;",
+        "()Landroidx/compose/foundation/lazy/grid/x;",
         "<anonymous>"
     }
     k = 0x3
@@ -56,17 +56,20 @@
 
 
 # virtual methods
-.method public final invoke()Landroidx/compose/foundation/lazy/grid/f0;
+.method public final invoke()Landroidx/compose/foundation/lazy/grid/x;
     .locals 3
 
     .line 2
-    new-instance v0, Landroidx/compose/foundation/lazy/grid/f0;
+    new-instance v0, Landroidx/compose/foundation/lazy/grid/x;
 
+    .line 3
     iget v1, p0, Landroidx/compose/foundation/lazy/grid/LazyGridStateKt$rememberLazyGridState$1$1;->$initialFirstVisibleItemIndex:I
 
+    .line 4
     iget v2, p0, Landroidx/compose/foundation/lazy/grid/LazyGridStateKt$rememberLazyGridState$1$1;->$initialFirstVisibleItemScrollOffset:I
 
-    invoke-direct {v0, v1, v2}, Landroidx/compose/foundation/lazy/grid/f0;-><init>(II)V
+    .line 5
+    invoke-direct {v0, v1, v2}, Landroidx/compose/foundation/lazy/grid/x;-><init>(II)V
 
     return-object v0
 .end method
@@ -75,7 +78,7 @@
     .locals 1
 
     .line 1
-    invoke-virtual {p0}, Landroidx/compose/foundation/lazy/grid/LazyGridStateKt$rememberLazyGridState$1$1;->invoke()Landroidx/compose/foundation/lazy/grid/f0;
+    invoke-virtual {p0}, Landroidx/compose/foundation/lazy/grid/LazyGridStateKt$rememberLazyGridState$1$1;->invoke()Landroidx/compose/foundation/lazy/grid/x;
 
     move-result-object v0
 

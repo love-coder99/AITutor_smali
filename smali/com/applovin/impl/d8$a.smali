@@ -43,9 +43,9 @@
 .method public a()V
     .locals 2
 
+    .line 2
     iget-object v0, p0, Lcom/applovin/impl/d8$a;->a:Lcom/applovin/impl/d8;
 
-    .line 2
     invoke-static {v0}, Lcom/applovin/impl/d8;->a(Lcom/applovin/impl/d8;)Lcom/applovin/impl/ia;
 
     move-result-object v0
@@ -66,11 +66,11 @@
 
     if-ltz v2, :cond_0
 
+    .line 1
     iget-object p1, p0, Lcom/applovin/impl/d8$a;->a:Lcom/applovin/impl/d8;
 
     const/4 p2, 0x1
 
-    .line 1
     invoke-static {p1, p2}, Lcom/applovin/impl/d8;->a(Lcom/applovin/impl/d8;Z)Z
 
     :cond_0

@@ -4,6 +4,15 @@
 
 
 # annotations
+.annotation runtime Lca/c;
+    c = "coil.compose.ConstraintsSizeResolver$size$$inlined$mapNotNull$1$2"
+    f = "ConstraintsSizeResolver.kt"
+    l = {
+        0xe1
+    }
+    m = "emit"
+.end annotation
+
 .annotation runtime Lkotlin/Metadata;
     k = 0x3
     mv = {
@@ -12,15 +21,6 @@
         0x0
     }
     xi = 0x30
-.end annotation
-
-.annotation runtime Lth/c;
-    c = "coil.compose.ConstraintsSizeResolver$size$$inlined$mapNotNull$1$2"
-    f = "ConstraintsSizeResolver.kt"
-    l = {
-        0xe1
-    }
-    m = "emit"
 .end annotation
 
 

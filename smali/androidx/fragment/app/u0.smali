@@ -2,130 +2,139 @@
 .super Ljava/lang/Object;
 .source "SourceFile"
 
-# interfaces
-.implements Landroidx/fragment/app/t0;
-
-
-# instance fields
-.field public final a:I
-
-.field public final b:I
-
-.field public final synthetic c:Landroidx/fragment/app/v0;
-
 
 # direct methods
-.method public constructor <init>(Landroidx/fragment/app/v0;I)V
-    .locals 0
+.method public static a(Landroid/view/View;)Landroidx/fragment/app/SpecialEffectsController$Operation$State;
+    .locals 2
 
     .line 1
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    invoke-virtual {p0}, Landroid/view/View;->getAlpha()F
 
     .line 2
     .line 3
     .line 4
-    iput-object p1, p0, Landroidx/fragment/app/u0;->c:Landroidx/fragment/app/v0;
+    move-result v0
 
     .line 5
+    const/4 v1, 0x0
+
     .line 6
-    iput p2, p0, Landroidx/fragment/app/u0;->a:I
+    cmpg-float v0, v0, v1
 
     .line 7
     .line 8
-    const/4 p1, 0x1
+    if-nez v0, :cond_0
 
     .line 9
-    iput p1, p0, Landroidx/fragment/app/u0;->b:I
-
     .line 10
+    invoke-virtual {p0}, Landroid/view/View;->getVisibility()I
+
     .line 11
-    return-void
-.end method
-
-
-# virtual methods
-.method public final a(Ljava/util/ArrayList;Ljava/util/ArrayList;)Z
-    .locals 9
-
-    .line 1
-    iget-object v0, p0, Landroidx/fragment/app/u0;->c:Landroidx/fragment/app/v0;
-
-    .line 2
-    .line 3
-    iget-object v0, v0, Landroidx/fragment/app/v0;->w:Landroidx/fragment/app/Fragment;
-
-    .line 4
-    .line 5
-    if-eqz v0, :cond_0
-
-    .line 6
-    .line 7
-    iget v1, p0, Landroidx/fragment/app/u0;->a:I
-
-    .line 8
-    .line 9
-    if-gez v1, :cond_0
-
-    .line 10
-    .line 11
-    invoke-virtual {v0}, Landroidx/fragment/app/Fragment;->getChildFragmentManager()Landroidx/fragment/app/v0;
-
     .line 12
     .line 13
+    move-result v0
+
     .line 14
-    move-result-object v0
+    if-nez v0, :cond_0
 
     .line 15
-    const/4 v1, -0x1
-
     .line 16
-    const/4 v2, 0x0
+    sget-object p0, Landroidx/fragment/app/SpecialEffectsController$Operation$State;->INVISIBLE:Landroidx/fragment/app/SpecialEffectsController$Operation$State;
 
     .line 17
-    invoke-virtual {v0, v1, v2}, Landroidx/fragment/app/v0;->O(II)Z
+    .line 18
+    goto :goto_0
+
+    .line 19
+    :cond_0
+    invoke-virtual {p0}, Landroid/view/View;->getVisibility()I
+
+    .line 20
+    .line 21
+    .line 22
+    move-result p0
+
+    .line 23
+    invoke-static {p0}, Landroidx/fragment/app/u0;->b(I)Landroidx/fragment/app/SpecialEffectsController$Operation$State;
+
+    .line 24
+    .line 25
+    .line 26
+    move-result-object p0
+
+    .line 27
+    :goto_0
+    return-object p0
+.end method
+
+.method public static b(I)Landroidx/fragment/app/SpecialEffectsController$Operation$State;
+    .locals 2
+
+    .line 1
+    if-eqz p0, :cond_2
+
+    .line 2
+    .line 3
+    const/4 v0, 0x4
+
+    .line 4
+    if-eq p0, v0, :cond_1
+
+    .line 5
+    .line 6
+    const/16 v0, 0x8
+
+    .line 7
+    .line 8
+    if-ne p0, v0, :cond_0
+
+    .line 9
+    .line 10
+    sget-object p0, Landroidx/fragment/app/SpecialEffectsController$Operation$State;->GONE:Landroidx/fragment/app/SpecialEffectsController$Operation$State;
+
+    .line 11
+    .line 12
+    goto :goto_0
+
+    .line 13
+    :cond_0
+    new-instance v0, Ljava/lang/IllegalArgumentException;
+
+    .line 14
+    .line 15
+    const-string v1, "Unknown visibility "
+
+    .line 16
+    .line 17
+    invoke-static {p0, v1}, Landroidx/appcompat/view/menu/F;->D(ILjava/lang/String;)Ljava/lang/String;
 
     .line 18
     .line 19
     .line 20
-    move-result v0
+    move-result-object p0
 
     .line 21
-    if-eqz v0, :cond_0
+    invoke-direct {v0, p0}, Ljava/lang/IllegalArgumentException;-><init>(Ljava/lang/String;)V
 
     .line 22
     .line 23
-    return v2
-
     .line 24
-    :cond_0
-    iget-object v3, p0, Landroidx/fragment/app/u0;->c:Landroidx/fragment/app/v0;
+    throw v0
 
     .line 25
-    .line 26
-    const/4 v6, 0x0
+    :cond_1
+    sget-object p0, Landroidx/fragment/app/SpecialEffectsController$Operation$State;->INVISIBLE:Landroidx/fragment/app/SpecialEffectsController$Operation$State;
 
+    .line 26
     .line 27
-    iget v7, p0, Landroidx/fragment/app/u0;->a:I
+    goto :goto_0
 
     .line 28
+    :cond_2
+    sget-object p0, Landroidx/fragment/app/SpecialEffectsController$Operation$State;->VISIBLE:Landroidx/fragment/app/SpecialEffectsController$Operation$State;
+
     .line 29
-    iget v8, p0, Landroidx/fragment/app/u0;->b:I
-
     .line 30
-    .line 31
-    move-object v4, p1
-
-    .line 32
-    move-object v5, p2
-
-    .line 33
-    invoke-virtual/range {v3 .. v8}, Landroidx/fragment/app/v0;->P(Ljava/util/ArrayList;Ljava/util/ArrayList;Ljava/lang/String;II)Z
-
-    .line 34
-    .line 35
-    .line 36
-    move-result p1
-
-    .line 37
-    return p1
+    :goto_0
+    return-object p0
 .end method

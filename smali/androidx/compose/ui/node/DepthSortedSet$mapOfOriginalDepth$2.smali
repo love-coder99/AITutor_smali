@@ -3,14 +3,14 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lzh/a;
+.implements Lka/a;
 
 
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "Lkotlin/jvm/internal/Lambda;",
-        "Lzh/a;"
+        "Lka/a;"
     }
 .end annotation
 
@@ -20,7 +20,7 @@
     }
     d2 = {
         "",
-        "Landroidx/compose/ui/node/e0;",
+        "Landroidx/compose/ui/node/C;",
         "",
         "invoke",
         "()Ljava/util/Map;",
@@ -81,7 +81,7 @@
         value = {
             "()",
             "Ljava/util/Map<",
-            "Landroidx/compose/ui/node/e0;",
+            "Landroidx/compose/ui/node/C;",
             "Ljava/lang/Integer;",
             ">;"
         }

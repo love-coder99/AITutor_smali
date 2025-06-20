@@ -3,14 +3,14 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lzh/e;
+.implements Lka/e;
 
 
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "Lkotlin/jvm/internal/Lambda;",
-        "Lzh/e;"
+        "Lka/e;"
     }
 .end annotation
 
@@ -19,9 +19,9 @@
         "\u0000\u0008\n\u0002\u0018\u0002\n\u0002\u0008\u0003\u0010\u0003\u001a\u00020\u0000H\u000b\u00a2\u0006\u0004\u0008\u0001\u0010\u0002"
     }
     d2 = {
-        "Lqh/r;",
+        "LX9/j;",
         "invoke",
-        "(Landroidx/compose/runtime/l;I)V",
+        "(Landroidx/compose/runtime/j;I)V",
         "<anonymous>"
     }
     k = 0x3
@@ -34,32 +34,32 @@
 
 
 # instance fields
-.field final synthetic $bodyLarge:Landroidx/compose/ui/text/i0;
+.field final synthetic $bodyLarge:Landroidx/compose/ui/text/I;
 
-.field final synthetic $bodySmall:Landroidx/compose/ui/text/i0;
+.field final synthetic $bodySmall:Landroidx/compose/ui/text/I;
 
-.field final synthetic $it:Lzh/e;
+.field final synthetic $it:Lka/e;
     .annotation system Ldalvik/annotation/Signature;
         value = {
-            "Lzh/e;"
+            "Lka/e;"
         }
     .end annotation
 .end field
 
-.field final synthetic $labelContentColor:Landroidx/compose/runtime/d3;
+.field final synthetic $labelContentColor:Landroidx/compose/runtime/H0;
     .annotation system Ldalvik/annotation/Signature;
         value = {
-            "Landroidx/compose/runtime/d3;"
+            "Landroidx/compose/runtime/H0;"
         }
     .end annotation
 .end field
 
 .field final synthetic $labelProgressValue:F
 
-.field final synthetic $labelTextStyleColor:Landroidx/compose/runtime/d3;
+.field final synthetic $labelTextStyleColor:Landroidx/compose/runtime/H0;
     .annotation system Ldalvik/annotation/Signature;
         value = {
-            "Landroidx/compose/runtime/d3;"
+            "Landroidx/compose/runtime/H0;"
         }
     .end annotation
 .end field
@@ -68,41 +68,59 @@
 
 
 # direct methods
-.method public constructor <init>(Landroidx/compose/ui/text/i0;Landroidx/compose/ui/text/i0;FLandroidx/compose/runtime/d3;Lzh/e;ZLandroidx/compose/runtime/d3;)V
+.method public constructor <init>(Landroidx/compose/ui/text/I;Landroidx/compose/ui/text/I;FLandroidx/compose/runtime/H0;Lka/e;ZLandroidx/compose/runtime/H0;)V
     .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
-            "Landroidx/compose/ui/text/i0;",
-            "Landroidx/compose/ui/text/i0;",
+            "Landroidx/compose/ui/text/I;",
+            "Landroidx/compose/ui/text/I;",
             "F",
-            "Landroidx/compose/runtime/d3;",
-            "Lzh/e;",
+            "Landroidx/compose/runtime/H0;",
+            "Lka/e;",
             "Z",
-            "Landroidx/compose/runtime/d3;",
+            "Landroidx/compose/runtime/H0;",
             ")V"
         }
     .end annotation
 
     .line 1
-    iput-object p1, p0, Landroidx/compose/material3/internal/TextFieldImplKt$CommonDecorationBox$3$decoratedLabel$1$1;->$bodyLarge:Landroidx/compose/ui/text/i0;
+    iput-object p1, p0, Landroidx/compose/material3/internal/TextFieldImplKt$CommonDecorationBox$3$decoratedLabel$1$1;->$bodyLarge:Landroidx/compose/ui/text/I;
 
-    iput-object p2, p0, Landroidx/compose/material3/internal/TextFieldImplKt$CommonDecorationBox$3$decoratedLabel$1$1;->$bodySmall:Landroidx/compose/ui/text/i0;
+    .line 2
+    .line 3
+    iput-object p2, p0, Landroidx/compose/material3/internal/TextFieldImplKt$CommonDecorationBox$3$decoratedLabel$1$1;->$bodySmall:Landroidx/compose/ui/text/I;
 
+    .line 4
+    .line 5
     iput p3, p0, Landroidx/compose/material3/internal/TextFieldImplKt$CommonDecorationBox$3$decoratedLabel$1$1;->$labelProgressValue:F
 
-    iput-object p4, p0, Landroidx/compose/material3/internal/TextFieldImplKt$CommonDecorationBox$3$decoratedLabel$1$1;->$labelContentColor:Landroidx/compose/runtime/d3;
+    .line 6
+    .line 7
+    iput-object p4, p0, Landroidx/compose/material3/internal/TextFieldImplKt$CommonDecorationBox$3$decoratedLabel$1$1;->$labelContentColor:Landroidx/compose/runtime/H0;
 
-    iput-object p5, p0, Landroidx/compose/material3/internal/TextFieldImplKt$CommonDecorationBox$3$decoratedLabel$1$1;->$it:Lzh/e;
+    .line 8
+    .line 9
+    iput-object p5, p0, Landroidx/compose/material3/internal/TextFieldImplKt$CommonDecorationBox$3$decoratedLabel$1$1;->$it:Lka/e;
 
+    .line 10
+    .line 11
     iput-boolean p6, p0, Landroidx/compose/material3/internal/TextFieldImplKt$CommonDecorationBox$3$decoratedLabel$1$1;->$overrideLabelTextStyleColor:Z
 
-    iput-object p7, p0, Landroidx/compose/material3/internal/TextFieldImplKt$CommonDecorationBox$3$decoratedLabel$1$1;->$labelTextStyleColor:Landroidx/compose/runtime/d3;
+    .line 12
+    .line 13
+    iput-object p7, p0, Landroidx/compose/material3/internal/TextFieldImplKt$CommonDecorationBox$3$decoratedLabel$1$1;->$labelTextStyleColor:Landroidx/compose/runtime/H0;
 
+    .line 14
+    .line 15
     const/4 p1, 0x2
 
+    .line 16
     invoke-direct {p0, p1}, Lkotlin/jvm/internal/Lambda;-><init>(I)V
 
+    .line 17
+    .line 18
+    .line 19
     return-void
 .end method
 
@@ -112,7 +130,7 @@
     .locals 0
 
     .line 1
-    check-cast p1, Landroidx/compose/runtime/l;
+    check-cast p1, Landroidx/compose/runtime/j;
 
     check-cast p2, Ljava/lang/Number;
 
@@ -120,15 +138,15 @@
 
     move-result p2
 
-    invoke-virtual {p0, p1, p2}, Landroidx/compose/material3/internal/TextFieldImplKt$CommonDecorationBox$3$decoratedLabel$1$1;->invoke(Landroidx/compose/runtime/l;I)V
+    invoke-virtual {p0, p1, p2}, Landroidx/compose/material3/internal/TextFieldImplKt$CommonDecorationBox$3$decoratedLabel$1$1;->invoke(Landroidx/compose/runtime/j;I)V
 
-    sget-object p1, Lqh/r;->a:Lqh/r;
+    sget-object p1, LX9/j;->a:LX9/j;
 
     return-object p1
 .end method
 
-.method public final invoke(Landroidx/compose/runtime/l;I)V
-    .locals 40
+.method public final invoke(Landroidx/compose/runtime/j;I)V
+    .locals 38
 
     move-object/from16 v0, p0
 
@@ -138,12 +156,12 @@
 
     if-ne v1, v2, :cond_1
 
+    .line 2
     move-object/from16 v1, p1
 
-    check-cast v1, Landroidx/compose/runtime/p;
+    check-cast v1, Landroidx/compose/runtime/n;
 
-    .line 2
-    invoke-virtual {v1}, Landroidx/compose/runtime/p;->y()Z
+    invoke-virtual {v1}, Landroidx/compose/runtime/n;->x()Z
 
     move-result v2
 
@@ -153,161 +171,164 @@
 
     .line 3
     :cond_0
-    invoke-virtual {v1}, Landroidx/compose/runtime/p;->N()V
+    invoke-virtual {v1}, Landroidx/compose/runtime/n;->L()V
 
-    move-object v1, v0
+    goto/16 :goto_9
 
-    goto/16 :goto_8
-
+    .line 4
     :cond_1
     :goto_0
-    iget-object v1, v0, Landroidx/compose/material3/internal/TextFieldImplKt$CommonDecorationBox$3$decoratedLabel$1$1;->$bodyLarge:Landroidx/compose/ui/text/i0;
+    iget-object v1, v0, Landroidx/compose/material3/internal/TextFieldImplKt$CommonDecorationBox$3$decoratedLabel$1$1;->$bodyLarge:Landroidx/compose/ui/text/I;
 
-    iget-object v2, v0, Landroidx/compose/material3/internal/TextFieldImplKt$CommonDecorationBox$3$decoratedLabel$1$1;->$bodySmall:Landroidx/compose/ui/text/i0;
+    iget-object v2, v0, Landroidx/compose/material3/internal/TextFieldImplKt$CommonDecorationBox$3$decoratedLabel$1$1;->$bodySmall:Landroidx/compose/ui/text/I;
 
     iget v3, v0, Landroidx/compose/material3/internal/TextFieldImplKt$CommonDecorationBox$3$decoratedLabel$1$1;->$labelProgressValue:F
 
-    .line 4
-    new-instance v15, Landroidx/compose/ui/text/i0;
-
     .line 5
-    iget-object v4, v1, Landroidx/compose/ui/text/i0;->a:Landroidx/compose/ui/text/a0;
-
-    iget-object v5, v2, Landroidx/compose/ui/text/i0;->a:Landroidx/compose/ui/text/a0;
+    new-instance v4, Landroidx/compose/ui/text/I;
 
     .line 6
-    sget-object v6, Landroidx/compose/ui/text/b0;->d:Landroidx/compose/ui/text/style/m;
+    iget-object v5, v1, Landroidx/compose/ui/text/I;->a:Landroidx/compose/ui/text/A;
+
+    iget-object v6, v2, Landroidx/compose/ui/text/I;->a:Landroidx/compose/ui/text/A;
 
     .line 7
-    iget-object v6, v4, Landroidx/compose/ui/text/a0;->a:Landroidx/compose/ui/text/style/m;
-
-    iget-object v7, v5, Landroidx/compose/ui/text/a0;->a:Landroidx/compose/ui/text/style/m;
+    sget-object v7, Landroidx/compose/ui/text/B;->d:Landroidx/compose/ui/text/style/m;
 
     .line 8
-    instance-of v8, v6, Landroidx/compose/ui/text/style/b;
+    iget-object v7, v5, Landroidx/compose/ui/text/A;->a:Landroidx/compose/ui/text/style/m;
 
-    sget-object v9, Landroidx/compose/ui/text/style/l;->a:Landroidx/compose/ui/text/style/l;
-
-    const-wide/16 v10, 0x10
-
-    if-nez v8, :cond_3
-
-    instance-of v12, v7, Landroidx/compose/ui/text/style/b;
-
-    if-nez v12, :cond_3
+    iget-object v8, v6, Landroidx/compose/ui/text/A;->a:Landroidx/compose/ui/text/style/m;
 
     .line 9
-    invoke-interface {v6}, Landroidx/compose/ui/text/style/m;->b()J
+    instance-of v9, v7, Landroidx/compose/ui/text/style/b;
 
-    move-result-wide v12
+    sget-object v10, Landroidx/compose/ui/text/style/l;->a:Landroidx/compose/ui/text/style/l;
 
-    invoke-interface {v7}, Landroidx/compose/ui/text/style/m;->b()J
+    const-wide/16 v11, 0x10
 
-    move-result-wide v6
+    if-nez v9, :cond_3
 
-    invoke-static {v12, v13, v6, v7, v3}, Landroidx/compose/ui/graphics/f0;->x(JJF)J
+    instance-of v13, v8, Landroidx/compose/ui/text/style/b;
 
-    move-result-wide v6
-
-    cmp-long v8, v6, v10
-
-    if-eqz v8, :cond_2
+    if-nez v13, :cond_3
 
     .line 10
-    new-instance v9, Landroidx/compose/ui/text/style/c;
+    invoke-interface {v7}, Landroidx/compose/ui/text/style/m;->b()J
 
-    invoke-direct {v9, v6, v7}, Landroidx/compose/ui/text/style/c;-><init>(J)V
+    move-result-wide v13
+
+    invoke-interface {v8}, Landroidx/compose/ui/text/style/m;->b()J
+
+    move-result-wide v7
+
+    invoke-static {v13, v14, v7, v8, v3}, Landroidx/compose/ui/graphics/G;->x(JJF)J
+
+    move-result-wide v7
+
+    cmp-long v9, v7, v11
+
+    if-eqz v9, :cond_2
+
+    .line 11
+    new-instance v10, Landroidx/compose/ui/text/style/c;
+
+    invoke-direct {v10, v7, v8}, Landroidx/compose/ui/text/style/c;-><init>(J)V
 
     :cond_2
     :goto_1
-    move-object/from16 v17, v9
+    move-object v12, v10
 
     goto :goto_2
 
     :cond_3
-    if-eqz v8, :cond_7
-
-    .line 11
-    instance-of v8, v7, Landroidx/compose/ui/text/style/b;
-
-    if-eqz v8, :cond_7
+    if-eqz v9, :cond_7
 
     .line 12
-    move-object v8, v6
+    instance-of v9, v8, Landroidx/compose/ui/text/style/b;
 
-    check-cast v8, Landroidx/compose/ui/text/style/b;
+    if-eqz v9, :cond_7
 
     .line 13
-    iget-object v8, v8, Landroidx/compose/ui/text/style/b;->a:Landroidx/compose/ui/graphics/x0;
+    move-object v9, v7
+
+    check-cast v9, Landroidx/compose/ui/text/style/b;
 
     .line 14
-    move-object v12, v7
-
-    check-cast v12, Landroidx/compose/ui/text/style/b;
+    iget-object v9, v9, Landroidx/compose/ui/text/style/b;->a:Landroidx/compose/ui/graphics/X;
 
     .line 15
-    iget-object v12, v12, Landroidx/compose/ui/text/style/b;->a:Landroidx/compose/ui/graphics/x0;
+    move-object v13, v8
+
+    check-cast v13, Landroidx/compose/ui/text/style/b;
 
     .line 16
-    invoke-static {v3, v8, v12}, Landroidx/compose/ui/text/b0;->b(FLjava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
-
-    move-result-object v8
-
-    check-cast v8, Landroidx/compose/ui/graphics/r;
+    iget-object v13, v13, Landroidx/compose/ui/text/style/b;->a:Landroidx/compose/ui/graphics/X;
 
     .line 17
-    invoke-interface {v6}, Landroidx/compose/ui/text/style/m;->a()F
+    invoke-static {v3, v9, v13}, Landroidx/compose/ui/text/B;->b(FLjava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    move-result v6
+    move-result-object v9
 
-    invoke-interface {v7}, Landroidx/compose/ui/text/style/m;->a()F
+    check-cast v9, Landroidx/compose/ui/graphics/r;
+
+    .line 18
+    check-cast v7, Landroidx/compose/ui/text/style/b;
+
+    .line 19
+    iget v7, v7, Landroidx/compose/ui/text/style/b;->b:F
+
+    .line 20
+    check-cast v8, Landroidx/compose/ui/text/style/b;
+
+    .line 21
+    iget v8, v8, Landroidx/compose/ui/text/style/b;->b:F
+
+    .line 22
+    invoke-static {v7, v8, v3}, Ll8/H;->t(FFF)F
 
     move-result v7
 
-    invoke-static {v6, v7, v3}, Lb0/h;->R(FFF)F
-
-    move-result v6
-
-    if-nez v8, :cond_4
+    if-nez v9, :cond_4
 
     goto :goto_1
 
-    .line 18
+    .line 23
     :cond_4
-    instance-of v7, v8, Landroidx/compose/ui/graphics/b1;
+    instance-of v8, v9, Landroidx/compose/ui/graphics/b0;
 
-    if-eqz v7, :cond_5
+    if-eqz v8, :cond_5
 
-    check-cast v8, Landroidx/compose/ui/graphics/b1;
+    check-cast v9, Landroidx/compose/ui/graphics/b0;
 
-    iget-wide v7, v8, Landroidx/compose/ui/graphics/b1;->a:J
+    iget-wide v8, v9, Landroidx/compose/ui/graphics/b0;->a:J
 
-    invoke-static {v6, v7, v8}, Lkotlinx/coroutines/y;->F(FJ)J
+    invoke-static {v7, v8, v9}, Lcom/facebook/appevents/n;->l(FJ)J
 
-    move-result-wide v6
+    move-result-wide v7
 
-    cmp-long v8, v6, v10
+    cmp-long v9, v7, v11
 
-    if-eqz v8, :cond_2
+    if-eqz v9, :cond_2
 
-    .line 19
-    new-instance v9, Landroidx/compose/ui/text/style/c;
+    .line 24
+    new-instance v10, Landroidx/compose/ui/text/style/c;
 
-    invoke-direct {v9, v6, v7}, Landroidx/compose/ui/text/style/c;-><init>(J)V
+    invoke-direct {v10, v7, v8}, Landroidx/compose/ui/text/style/c;-><init>(J)V
 
     goto :goto_1
 
-    .line 20
+    .line 25
     :cond_5
-    instance-of v7, v8, Landroidx/compose/ui/graphics/x0;
+    instance-of v8, v9, Landroidx/compose/ui/graphics/X;
 
-    if-eqz v7, :cond_6
+    if-eqz v8, :cond_6
 
-    new-instance v9, Landroidx/compose/ui/text/style/b;
+    new-instance v10, Landroidx/compose/ui/text/style/b;
 
-    check-cast v8, Landroidx/compose/ui/graphics/x0;
+    check-cast v9, Landroidx/compose/ui/graphics/X;
 
-    invoke-direct {v9, v8, v6}, Landroidx/compose/ui/text/style/b;-><init>(Landroidx/compose/ui/graphics/x0;F)V
+    invoke-direct {v10, v9, v7}, Landroidx/compose/ui/text/style/b;-><init>(Landroidx/compose/ui/graphics/X;F)V
 
     goto :goto_1
 
@@ -318,134 +339,134 @@
 
     throw v1
 
-    .line 21
+    .line 26
     :cond_7
-    invoke-static {v3, v6, v7}, Landroidx/compose/ui/text/b0;->b(FLjava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-static {v3, v7, v8}, Landroidx/compose/ui/text/B;->b(FLjava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    move-result-object v6
+    move-result-object v7
 
-    move-object v9, v6
+    move-object v10, v7
 
-    check-cast v9, Landroidx/compose/ui/text/style/m;
+    check-cast v10, Landroidx/compose/ui/text/style/m;
 
     goto :goto_1
 
-    .line 22
-    :goto_2
-    iget-object v6, v4, Landroidx/compose/ui/text/a0;->f:Landroidx/compose/ui/text/font/m;
-
-    iget-object v7, v5, Landroidx/compose/ui/text/a0;->f:Landroidx/compose/ui/text/font/m;
-
-    invoke-static {v3, v6, v7}, Landroidx/compose/ui/text/b0;->b(FLjava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
-
-    move-result-object v6
-
-    move-object/from16 v23, v6
-
-    check-cast v23, Landroidx/compose/ui/text/font/m;
-
-    .line 23
-    iget-wide v6, v4, Landroidx/compose/ui/text/a0;->b:J
-
-    iget-wide v8, v5, Landroidx/compose/ui/text/a0;->b:J
-
-    invoke-static {v6, v7, v8, v9, v3}, Landroidx/compose/ui/text/b0;->c(JJF)J
-
-    move-result-wide v18
-
-    .line 24
-    iget-object v6, v4, Landroidx/compose/ui/text/a0;->c:Landroidx/compose/ui/text/font/w;
-
-    if-nez v6, :cond_8
-
-    .line 25
-    sget-object v6, Landroidx/compose/ui/text/font/w;->g:Landroidx/compose/ui/text/font/w;
-
-    .line 26
-    :cond_8
-    iget-object v7, v5, Landroidx/compose/ui/text/a0;->c:Landroidx/compose/ui/text/font/w;
-
-    if-nez v7, :cond_9
-
     .line 27
-    sget-object v7, Landroidx/compose/ui/text/font/w;->g:Landroidx/compose/ui/text/font/w;
+    :goto_2
+    iget-object v7, v5, Landroidx/compose/ui/text/A;->f:Landroidx/compose/ui/text/font/k;
+
+    iget-object v8, v6, Landroidx/compose/ui/text/A;->f:Landroidx/compose/ui/text/font/k;
+
+    invoke-static {v3, v7, v8}, Landroidx/compose/ui/text/B;->b(FLjava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+
+    move-result-object v7
+
+    move-object/from16 v18, v7
+
+    check-cast v18, Landroidx/compose/ui/text/font/k;
 
     .line 28
-    :cond_9
-    iget v6, v6, Landroidx/compose/ui/text/font/w;->b:I
+    iget-wide v7, v5, Landroidx/compose/ui/text/A;->b:J
 
-    iget v7, v7, Landroidx/compose/ui/text/font/w;->b:I
+    iget-wide v9, v6, Landroidx/compose/ui/text/A;->b:J
+
+    invoke-static {v7, v8, v9, v10, v3}, Landroidx/compose/ui/text/B;->c(JJF)J
+
+    move-result-wide v13
 
     .line 29
-    invoke-static {v3, v6, v7}, Lb0/h;->S(FII)I
+    iget-object v7, v5, Landroidx/compose/ui/text/A;->c:Landroidx/compose/ui/text/font/u;
 
-    move-result v6
-
-    const/4 v7, 0x1
-
-    const/16 v8, 0x3e8
-
-    invoke-static {v6, v7, v8}, Lma/a;->q(III)I
-
-    move-result v6
+    if-nez v7, :cond_8
 
     .line 30
-    new-instance v7, Landroidx/compose/ui/text/font/w;
-
-    invoke-direct {v7, v6}, Landroidx/compose/ui/text/font/w;-><init>(I)V
+    sget-object v7, Landroidx/compose/ui/text/font/u;->g:Landroidx/compose/ui/text/font/u;
 
     .line 31
-    iget-object v6, v4, Landroidx/compose/ui/text/a0;->d:Landroidx/compose/ui/text/font/s;
+    :cond_8
+    iget-object v8, v6, Landroidx/compose/ui/text/A;->c:Landroidx/compose/ui/text/font/u;
 
-    iget-object v8, v5, Landroidx/compose/ui/text/a0;->d:Landroidx/compose/ui/text/font/s;
-
-    invoke-static {v3, v6, v8}, Landroidx/compose/ui/text/b0;->b(FLjava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
-
-    move-result-object v6
-
-    move-object/from16 v21, v6
-
-    check-cast v21, Landroidx/compose/ui/text/font/s;
+    if-nez v8, :cond_9
 
     .line 32
-    iget-object v6, v4, Landroidx/compose/ui/text/a0;->e:Landroidx/compose/ui/text/font/t;
-
-    iget-object v8, v5, Landroidx/compose/ui/text/a0;->e:Landroidx/compose/ui/text/font/t;
-
-    invoke-static {v3, v6, v8}, Landroidx/compose/ui/text/b0;->b(FLjava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
-
-    move-result-object v6
-
-    move-object/from16 v22, v6
-
-    check-cast v22, Landroidx/compose/ui/text/font/t;
+    sget-object v8, Landroidx/compose/ui/text/font/u;->g:Landroidx/compose/ui/text/font/u;
 
     .line 33
-    iget-object v6, v4, Landroidx/compose/ui/text/a0;->g:Ljava/lang/String;
+    :cond_9
+    iget v7, v7, Landroidx/compose/ui/text/font/u;->b:I
 
-    iget-object v8, v5, Landroidx/compose/ui/text/a0;->g:Ljava/lang/String;
-
-    invoke-static {v3, v6, v8}, Landroidx/compose/ui/text/b0;->b(FLjava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
-
-    move-result-object v6
-
-    move-object/from16 v24, v6
-
-    check-cast v24, Ljava/lang/String;
+    iget v8, v8, Landroidx/compose/ui/text/font/u;->b:I
 
     .line 34
-    iget-wide v8, v4, Landroidx/compose/ui/text/a0;->h:J
+    invoke-static {v3, v7, v8}, Ll8/H;->u(FII)I
 
-    iget-wide v10, v5, Landroidx/compose/ui/text/a0;->h:J
+    move-result v7
 
-    invoke-static {v8, v9, v10, v11, v3}, Landroidx/compose/ui/text/b0;->c(JJF)J
+    const/4 v8, 0x1
 
-    move-result-wide v25
+    const/16 v9, 0x3e8
 
-    const/4 v6, 0x0
+    invoke-static {v7, v8, v9}, Landroid/support/v4/media/session/a;->j(III)I
+
+    move-result v7
 
     .line 35
-    iget-object v8, v4, Landroidx/compose/ui/text/a0;->i:Landroidx/compose/ui/text/style/a;
+    new-instance v15, Landroidx/compose/ui/text/font/u;
+
+    invoke-direct {v15, v7}, Landroidx/compose/ui/text/font/u;-><init>(I)V
+
+    .line 36
+    iget-object v7, v5, Landroidx/compose/ui/text/A;->d:Landroidx/compose/ui/text/font/q;
+
+    iget-object v8, v6, Landroidx/compose/ui/text/A;->d:Landroidx/compose/ui/text/font/q;
+
+    invoke-static {v3, v7, v8}, Landroidx/compose/ui/text/B;->b(FLjava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+
+    move-result-object v7
+
+    move-object/from16 v16, v7
+
+    check-cast v16, Landroidx/compose/ui/text/font/q;
+
+    .line 37
+    iget-object v7, v5, Landroidx/compose/ui/text/A;->e:Landroidx/compose/ui/text/font/r;
+
+    iget-object v8, v6, Landroidx/compose/ui/text/A;->e:Landroidx/compose/ui/text/font/r;
+
+    invoke-static {v3, v7, v8}, Landroidx/compose/ui/text/B;->b(FLjava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+
+    move-result-object v7
+
+    move-object/from16 v17, v7
+
+    check-cast v17, Landroidx/compose/ui/text/font/r;
+
+    .line 38
+    iget-object v7, v5, Landroidx/compose/ui/text/A;->g:Ljava/lang/String;
+
+    iget-object v8, v6, Landroidx/compose/ui/text/A;->g:Ljava/lang/String;
+
+    invoke-static {v3, v7, v8}, Landroidx/compose/ui/text/B;->b(FLjava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+
+    move-result-object v7
+
+    move-object/from16 v19, v7
+
+    check-cast v19, Ljava/lang/String;
+
+    .line 39
+    iget-wide v7, v5, Landroidx/compose/ui/text/A;->h:J
+
+    iget-wide v9, v6, Landroidx/compose/ui/text/A;->h:J
+
+    invoke-static {v7, v8, v9, v10, v3}, Landroidx/compose/ui/text/B;->c(JJF)J
+
+    move-result-wide v20
+
+    const/4 v7, 0x0
+
+    .line 40
+    iget-object v8, v5, Landroidx/compose/ui/text/A;->i:Landroidx/compose/ui/text/style/a;
 
     if-eqz v8, :cond_a
 
@@ -456,32 +477,32 @@
     :cond_a
     const/4 v8, 0x0
 
-    .line 36
+    .line 41
     :goto_3
-    iget-object v9, v5, Landroidx/compose/ui/text/a0;->i:Landroidx/compose/ui/text/style/a;
+    iget-object v9, v6, Landroidx/compose/ui/text/A;->i:Landroidx/compose/ui/text/style/a;
 
     if-eqz v9, :cond_b
 
-    iget v6, v9, Landroidx/compose/ui/text/style/a;->a:F
+    iget v7, v9, Landroidx/compose/ui/text/style/a;->a:F
 
-    .line 37
+    .line 42
     :cond_b
-    invoke-static {v8, v6, v3}, Lb0/h;->R(FFF)F
+    invoke-static {v8, v7, v3}, Ll8/H;->t(FFF)F
 
-    move-result v6
+    move-result v7
 
+    .line 43
     sget-object v8, Landroidx/compose/ui/text/style/n;->c:Landroidx/compose/ui/text/style/n;
 
-    .line 38
-    iget-object v9, v4, Landroidx/compose/ui/text/a0;->j:Landroidx/compose/ui/text/style/n;
+    iget-object v9, v5, Landroidx/compose/ui/text/A;->j:Landroidx/compose/ui/text/style/n;
 
     if-nez v9, :cond_c
 
     move-object v9, v8
 
-    .line 39
+    .line 44
     :cond_c
-    iget-object v10, v5, Landroidx/compose/ui/text/a0;->j:Landroidx/compose/ui/text/style/n;
+    iget-object v10, v6, Landroidx/compose/ui/text/A;->j:Landroidx/compose/ui/text/style/n;
 
     if-nez v10, :cond_d
 
@@ -490,446 +511,450 @@
     :cond_d
     move-object v8, v10
 
-    .line 40
+    .line 45
     :goto_4
     new-instance v10, Landroidx/compose/ui/text/style/n;
 
-    .line 41
+    .line 46
     iget v11, v9, Landroidx/compose/ui/text/style/n;->a:F
 
-    iget v12, v8, Landroidx/compose/ui/text/style/n;->a:F
+    iget v0, v8, Landroidx/compose/ui/text/style/n;->a:F
 
-    invoke-static {v11, v12, v3}, Lb0/h;->R(FFF)F
+    invoke-static {v11, v0, v3}, Ll8/H;->t(FFF)F
 
-    move-result v11
+    move-result v0
 
-    .line 42
+    .line 47
     iget v9, v9, Landroidx/compose/ui/text/style/n;->b:F
 
     iget v8, v8, Landroidx/compose/ui/text/style/n;->b:F
 
-    invoke-static {v9, v8, v3}, Lb0/h;->R(FFF)F
+    invoke-static {v9, v8, v3}, Ll8/H;->t(FFF)F
 
     move-result v8
 
-    .line 43
-    invoke-direct {v10, v11, v8}, Landroidx/compose/ui/text/style/n;-><init>(FF)V
-
-    .line 44
-    iget-object v8, v4, Landroidx/compose/ui/text/a0;->k:Ld2/c;
-
-    iget-object v9, v5, Landroidx/compose/ui/text/a0;->k:Ld2/c;
-
-    invoke-static {v3, v8, v9}, Landroidx/compose/ui/text/b0;->b(FLjava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
-
-    move-result-object v8
-
-    move-object/from16 v29, v8
-
-    check-cast v29, Ld2/c;
-
-    .line 45
-    iget-wide v8, v4, Landroidx/compose/ui/text/a0;->l:J
-
-    iget-wide v11, v5, Landroidx/compose/ui/text/a0;->l:J
-
-    invoke-static {v8, v9, v11, v12, v3}, Landroidx/compose/ui/graphics/f0;->x(JJF)J
-
-    move-result-wide v30
-
-    .line 46
-    iget-object v8, v4, Landroidx/compose/ui/text/a0;->m:Landroidx/compose/ui/text/style/i;
-
-    iget-object v9, v5, Landroidx/compose/ui/text/a0;->m:Landroidx/compose/ui/text/style/i;
-
-    invoke-static {v3, v8, v9}, Landroidx/compose/ui/text/b0;->b(FLjava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
-
-    move-result-object v8
-
-    move-object/from16 v32, v8
-
-    check-cast v32, Landroidx/compose/ui/text/style/i;
-
-    .line 47
-    iget-object v8, v4, Landroidx/compose/ui/text/a0;->n:Landroidx/compose/ui/graphics/y0;
-
-    if-nez v8, :cond_e
-
-    new-instance v8, Landroidx/compose/ui/graphics/y0;
-
-    invoke-direct {v8}, Landroidx/compose/ui/graphics/y0;-><init>()V
-
     .line 48
-    :cond_e
-    iget-object v9, v5, Landroidx/compose/ui/text/a0;->n:Landroidx/compose/ui/graphics/y0;
-
-    if-nez v9, :cond_f
-
-    new-instance v9, Landroidx/compose/ui/graphics/y0;
-
-    invoke-direct {v9}, Landroidx/compose/ui/graphics/y0;-><init>()V
+    invoke-direct {v10, v0, v8}, Landroidx/compose/ui/text/style/n;-><init>(FF)V
 
     .line 49
-    :cond_f
-    new-instance v11, Landroidx/compose/ui/graphics/y0;
+    iget-object v0, v5, Landroidx/compose/ui/text/A;->k:LI0/b;
+
+    iget-object v8, v6, Landroidx/compose/ui/text/A;->k:LI0/b;
+
+    invoke-static {v3, v0, v8}, Landroidx/compose/ui/text/B;->b(FLjava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+
+    move-result-object v0
+
+    move-object/from16 v24, v0
+
+    check-cast v24, LI0/b;
 
     .line 50
-    iget-wide v12, v8, Landroidx/compose/ui/graphics/y0;->a:J
+    iget-wide v8, v5, Landroidx/compose/ui/text/A;->l:J
 
-    move-object/from16 p2, v15
+    move-object/from16 p2, v1
 
-    iget-wide v14, v9, Landroidx/compose/ui/graphics/y0;->a:J
+    iget-wide v0, v6, Landroidx/compose/ui/text/A;->l:J
 
-    invoke-static {v12, v13, v14, v15, v3}, Landroidx/compose/ui/graphics/f0;->x(JJF)J
+    invoke-static {v8, v9, v0, v1, v3}, Landroidx/compose/ui/graphics/G;->x(JJF)J
 
-    move-result-wide v34
+    move-result-wide v25
 
     .line 51
-    iget-wide v12, v8, Landroidx/compose/ui/graphics/y0;->b:J
+    iget-object v0, v5, Landroidx/compose/ui/text/A;->m:Landroidx/compose/ui/text/style/i;
 
-    const/16 v14, 0x20
+    iget-object v1, v6, Landroidx/compose/ui/text/A;->m:Landroidx/compose/ui/text/style/i;
 
-    move-object v15, v1
+    invoke-static {v3, v0, v1}, Landroidx/compose/ui/text/B;->b(FLjava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    shr-long v0, v12, v14
+    move-result-object v0
 
-    long-to-int v1, v0
+    move-object/from16 v27, v0
+
+    check-cast v27, Landroidx/compose/ui/text/style/i;
 
     .line 52
-    invoke-static {v1}, Ljava/lang/Float;->intBitsToFloat(I)F
+    iget-object v0, v5, Landroidx/compose/ui/text/A;->n:Landroidx/compose/ui/graphics/Y;
 
-    move-result v0
+    if-nez v0, :cond_e
 
-    move-object/from16 v39, v2
+    new-instance v0, Landroidx/compose/ui/graphics/Y;
+
+    invoke-direct {v0}, Landroidx/compose/ui/graphics/Y;-><init>()V
 
     .line 53
-    iget-wide v1, v9, Landroidx/compose/ui/graphics/y0;->b:J
+    :cond_e
+    iget-object v1, v6, Landroidx/compose/ui/text/A;->n:Landroidx/compose/ui/graphics/Y;
 
-    move/from16 v16, v6
+    if-nez v1, :cond_f
 
-    move-object/from16 v20, v7
+    new-instance v1, Landroidx/compose/ui/graphics/Y;
 
-    shr-long v6, v1, v14
+    invoke-direct {v1}, Landroidx/compose/ui/graphics/Y;-><init>()V
+
+    .line 54
+    :cond_f
+    new-instance v8, Landroidx/compose/ui/graphics/Y;
+
+    move-object/from16 v23, v10
+
+    .line 55
+    iget-wide v9, v0, Landroidx/compose/ui/graphics/Y;->a:J
+
+    move-wide/from16 v34, v13
+
+    iget-wide v13, v1, Landroidx/compose/ui/graphics/Y;->a:J
+
+    invoke-static {v9, v10, v13, v14, v3}, Landroidx/compose/ui/graphics/G;->x(JJF)J
+
+    move-result-wide v29
+
+    .line 56
+    iget-wide v9, v0, Landroidx/compose/ui/graphics/Y;->b:J
+
+    const/16 v11, 0x20
+
+    shr-long v13, v9, v11
+
+    long-to-int v14, v13
+
+    .line 57
+    invoke-static {v14}, Ljava/lang/Float;->intBitsToFloat(I)F
+
+    move-result v13
+
+    move-object/from16 v22, v15
+
+    .line 58
+    iget-wide v14, v1, Landroidx/compose/ui/graphics/Y;->b:J
+
+    move-object/from16 v36, v6
+
+    move/from16 v37, v7
+
+    shr-long v6, v14, v11
 
     long-to-int v7, v6
 
-    .line 54
+    .line 59
     invoke-static {v7}, Ljava/lang/Float;->intBitsToFloat(I)F
 
     move-result v6
 
-    .line 55
-    invoke-static {v0, v6, v3}, Lb0/h;->R(FFF)F
-
-    move-result v0
-
-    const-wide v6, 0xffffffffL
-
-    and-long/2addr v12, v6
-
-    long-to-int v13, v12
-
-    .line 56
-    invoke-static {v13}, Ljava/lang/Float;->intBitsToFloat(I)F
-
-    move-result v12
-
-    and-long/2addr v1, v6
-
-    long-to-int v2, v1
-
-    invoke-static {v2}, Ljava/lang/Float;->intBitsToFloat(I)F
-
-    move-result v1
-
-    .line 57
-    invoke-static {v12, v1, v3}, Lb0/h;->R(FFF)F
-
-    move-result v1
-
-    .line 58
-    invoke-static {v0}, Ljava/lang/Float;->floatToRawIntBits(F)I
-
-    move-result v0
-
-    int-to-long v12, v0
-
-    .line 59
-    invoke-static {v1}, Ljava/lang/Float;->floatToRawIntBits(F)I
-
-    move-result v0
-
-    int-to-long v0, v0
-
-    shl-long/2addr v12, v14
-
-    and-long/2addr v0, v6
-
-    or-long v36, v12, v0
-
     .line 60
-    iget v0, v8, Landroidx/compose/ui/graphics/y0;->c:F
+    invoke-static {v13, v6, v3}, Ll8/H;->t(FFF)F
 
-    iget v1, v9, Landroidx/compose/ui/graphics/y0;->c:F
+    move-result v6
 
-    invoke-static {v0, v1, v3}, Lb0/h;->R(FFF)F
+    const-wide v31, 0xffffffffL
 
-    move-result v38
+    and-long v9, v9, v31
 
-    move-object/from16 v33, v11
+    long-to-int v7, v9
 
     .line 61
-    invoke-direct/range {v33 .. v38}, Landroidx/compose/ui/graphics/y0;-><init>(JJF)V
+    invoke-static {v7}, Ljava/lang/Float;->intBitsToFloat(I)F
+
+    move-result v7
+
+    and-long v9, v14, v31
+
+    long-to-int v10, v9
+
+    invoke-static {v10}, Ljava/lang/Float;->intBitsToFloat(I)F
+
+    move-result v9
 
     .line 62
-    iget-object v1, v4, Landroidx/compose/ui/text/a0;->o:Landroidx/compose/ui/text/u;
+    invoke-static {v7, v9, v3}, Ll8/H;->t(FFF)F
+
+    move-result v7
+
+    .line 63
+    invoke-static {v6}, Ljava/lang/Float;->floatToRawIntBits(F)I
+
+    move-result v6
+
+    int-to-long v9, v6
+
+    .line 64
+    invoke-static {v7}, Ljava/lang/Float;->floatToRawIntBits(F)I
+
+    move-result v6
+
+    int-to-long v6, v6
+
+    shl-long/2addr v9, v11
+
+    and-long v6, v6, v31
+
+    or-long v31, v9, v6
+
+    .line 65
+    iget v0, v0, Landroidx/compose/ui/graphics/Y;->c:F
+
+    iget v1, v1, Landroidx/compose/ui/graphics/Y;->c:F
+
+    invoke-static {v0, v1, v3}, Ll8/H;->t(FFF)F
+
+    move-result v33
+
+    move-object/from16 v28, v8
+
+    .line 66
+    invoke-direct/range {v28 .. v33}, Landroidx/compose/ui/graphics/Y;-><init>(JJF)V
+
+    .line 67
+    iget-object v1, v5, Landroidx/compose/ui/text/A;->o:Landroidx/compose/ui/text/u;
+
+    move-object/from16 v6, v36
 
     if-nez v1, :cond_10
 
-    iget-object v2, v5, Landroidx/compose/ui/text/a0;->o:Landroidx/compose/ui/text/u;
+    iget-object v7, v6, Landroidx/compose/ui/text/A;->o:Landroidx/compose/ui/text/u;
 
-    if-nez v2, :cond_10
+    if-nez v7, :cond_10
 
-    const/16 v34, 0x0
+    const/16 v29, 0x0
 
     goto :goto_5
 
     :cond_10
     if-nez v1, :cond_11
 
+    .line 68
     sget-object v1, Landroidx/compose/ui/text/u;->a:Landroidx/compose/ui/text/u;
 
     :cond_11
-    move-object/from16 v34, v1
+    move-object/from16 v29, v1
 
-    .line 63
+    .line 69
     :goto_5
-    iget-object v1, v4, Landroidx/compose/ui/text/a0;->p:Lo1/i;
+    iget-object v1, v5, Landroidx/compose/ui/text/A;->p:Ls0/f;
 
-    iget-object v2, v5, Landroidx/compose/ui/text/a0;->p:Lo1/i;
+    iget-object v5, v6, Landroidx/compose/ui/text/A;->p:Ls0/f;
 
-    invoke-static {v3, v1, v2}, Landroidx/compose/ui/text/b0;->b(FLjava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-static {v3, v1, v5}, Landroidx/compose/ui/text/B;->b(FLjava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object v1
 
-    move-object/from16 v35, v1
+    move-object/from16 v30, v1
 
-    check-cast v35, Lo1/i;
-
-    .line 64
-    new-instance v1, Landroidx/compose/ui/text/a0;
-
-    .line 65
-    new-instance v2, Landroidx/compose/ui/text/style/a;
-
-    move/from16 v4, v16
-
-    invoke-direct {v2, v4}, Landroidx/compose/ui/text/style/a;-><init>(F)V
-
-    move-object/from16 v16, v1
-
-    move-object/from16 v27, v2
-
-    move-object/from16 v28, v10
-
-    move-object/from16 v33, v11
-
-    .line 66
-    invoke-direct/range {v16 .. v35}, Landroidx/compose/ui/text/a0;-><init>(Landroidx/compose/ui/text/style/m;JLandroidx/compose/ui/text/font/w;Landroidx/compose/ui/text/font/s;Landroidx/compose/ui/text/font/t;Landroidx/compose/ui/text/font/m;Ljava/lang/String;JLandroidx/compose/ui/text/style/a;Landroidx/compose/ui/text/style/n;Ld2/c;JLandroidx/compose/ui/text/style/i;Landroidx/compose/ui/graphics/y0;Landroidx/compose/ui/text/u;Lo1/i;)V
-
-    .line 67
-    sget v2, Landroidx/compose/ui/text/s;->b:I
-
-    .line 68
-    new-instance v2, Landroidx/compose/ui/text/r;
-
-    move-object v4, v15
-
-    .line 69
-    iget-object v4, v4, Landroidx/compose/ui/text/i0;->b:Landroidx/compose/ui/text/r;
-
-    iget v5, v4, Landroidx/compose/ui/text/r;->a:I
+    check-cast v30, Ls0/f;
 
     .line 70
-    new-instance v6, Landroidx/compose/ui/text/style/h;
-
-    invoke-direct {v6, v5}, Landroidx/compose/ui/text/style/h;-><init>(I)V
-
-    move-object/from16 v5, v39
+    new-instance v1, Landroidx/compose/ui/text/A;
 
     .line 71
-    iget-object v5, v5, Landroidx/compose/ui/text/i0;->b:Landroidx/compose/ui/text/r;
+    new-instance v5, Landroidx/compose/ui/text/style/a;
 
-    iget v7, v5, Landroidx/compose/ui/text/r;->a:I
+    move/from16 v6, v37
+
+    invoke-direct {v5, v6}, Landroidx/compose/ui/text/style/a;-><init>(F)V
+
+    move-object v11, v1
+
+    move-wide/from16 v13, v34
+
+    move-object/from16 v15, v22
+
+    move-object/from16 v22, v5
+
+    move-object/from16 v28, v8
 
     .line 72
+    invoke-direct/range {v11 .. v30}, Landroidx/compose/ui/text/A;-><init>(Landroidx/compose/ui/text/style/m;JLandroidx/compose/ui/text/font/u;Landroidx/compose/ui/text/font/q;Landroidx/compose/ui/text/font/r;Landroidx/compose/ui/text/font/k;Ljava/lang/String;JLandroidx/compose/ui/text/style/a;Landroidx/compose/ui/text/style/n;LI0/b;JLandroidx/compose/ui/text/style/i;Landroidx/compose/ui/graphics/Y;Landroidx/compose/ui/text/u;Ls0/f;)V
+
+    .line 73
+    sget v5, Landroidx/compose/ui/text/s;->b:I
+
+    .line 74
+    new-instance v5, Landroidx/compose/ui/text/r;
+
+    move-object/from16 v6, p2
+
+    .line 75
+    iget-object v6, v6, Landroidx/compose/ui/text/I;->b:Landroidx/compose/ui/text/r;
+
+    iget v7, v6, Landroidx/compose/ui/text/r;->a:I
+
+    .line 76
     new-instance v8, Landroidx/compose/ui/text/style/h;
 
     invoke-direct {v8, v7}, Landroidx/compose/ui/text/style/h;-><init>(I)V
 
-    .line 73
-    invoke-static {v3, v6, v8}, Landroidx/compose/ui/text/b0;->b(FLjava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
-
-    move-result-object v6
-
-    check-cast v6, Landroidx/compose/ui/text/style/h;
-
-    .line 74
-    iget v6, v6, Landroidx/compose/ui/text/style/h;->a:I
-
-    .line 75
-    new-instance v7, Landroidx/compose/ui/text/style/j;
-
-    iget v8, v4, Landroidx/compose/ui/text/r;->b:I
-
-    invoke-direct {v7, v8}, Landroidx/compose/ui/text/style/j;-><init>(I)V
-
-    .line 76
-    new-instance v8, Landroidx/compose/ui/text/style/j;
-
-    iget v9, v5, Landroidx/compose/ui/text/r;->b:I
-
-    invoke-direct {v8, v9}, Landroidx/compose/ui/text/style/j;-><init>(I)V
-
     .line 77
-    invoke-static {v3, v7, v8}, Landroidx/compose/ui/text/b0;->b(FLjava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    iget-object v2, v2, Landroidx/compose/ui/text/I;->b:Landroidx/compose/ui/text/r;
+
+    iget v7, v2, Landroidx/compose/ui/text/r;->a:I
+
+    .line 78
+    new-instance v9, Landroidx/compose/ui/text/style/h;
+
+    invoke-direct {v9, v7}, Landroidx/compose/ui/text/style/h;-><init>(I)V
+
+    .line 79
+    invoke-static {v3, v8, v9}, Landroidx/compose/ui/text/B;->b(FLjava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object v7
 
-    check-cast v7, Landroidx/compose/ui/text/style/j;
-
-    .line 78
-    iget v7, v7, Landroidx/compose/ui/text/style/j;->a:I
-
-    .line 79
-    iget-wide v8, v4, Landroidx/compose/ui/text/r;->c:J
-
-    iget-wide v10, v5, Landroidx/compose/ui/text/r;->c:J
-
-    invoke-static {v8, v9, v10, v11, v3}, Landroidx/compose/ui/text/b0;->c(JJF)J
-
-    move-result-wide v8
+    check-cast v7, Landroidx/compose/ui/text/style/h;
 
     .line 80
-    iget-object v10, v4, Landroidx/compose/ui/text/r;->d:Landroidx/compose/ui/text/style/o;
-
-    if-nez v10, :cond_12
+    iget v7, v7, Landroidx/compose/ui/text/style/h;->a:I
 
     .line 81
-    sget-object v10, Landroidx/compose/ui/text/style/o;->c:Landroidx/compose/ui/text/style/o;
+    new-instance v8, Landroidx/compose/ui/text/style/j;
+
+    iget v9, v6, Landroidx/compose/ui/text/r;->b:I
+
+    invoke-direct {v8, v9}, Landroidx/compose/ui/text/style/j;-><init>(I)V
 
     .line 82
-    :cond_12
-    iget-object v11, v5, Landroidx/compose/ui/text/r;->d:Landroidx/compose/ui/text/style/o;
+    new-instance v9, Landroidx/compose/ui/text/style/j;
 
-    if-nez v11, :cond_13
+    iget v10, v2, Landroidx/compose/ui/text/r;->b:I
+
+    invoke-direct {v9, v10}, Landroidx/compose/ui/text/style/j;-><init>(I)V
 
     .line 83
-    sget-object v11, Landroidx/compose/ui/text/style/o;->c:Landroidx/compose/ui/text/style/o;
+    invoke-static {v3, v8, v9}, Landroidx/compose/ui/text/B;->b(FLjava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+
+    move-result-object v8
+
+    check-cast v8, Landroidx/compose/ui/text/style/j;
 
     .line 84
-    :cond_13
-    new-instance v12, Landroidx/compose/ui/text/style/o;
+    iget v8, v8, Landroidx/compose/ui/text/style/j;->a:I
 
     .line 85
-    iget-wide v13, v10, Landroidx/compose/ui/text/style/o;->a:J
+    iget-wide v9, v6, Landroidx/compose/ui/text/r;->c:J
 
-    move-object/from16 v16, v1
+    iget-wide v11, v2, Landroidx/compose/ui/text/r;->c:J
 
-    iget-wide v0, v11, Landroidx/compose/ui/text/style/o;->a:J
+    invoke-static {v9, v10, v11, v12, v3}, Landroidx/compose/ui/text/B;->c(JJF)J
+
+    move-result-wide v9
 
     .line 86
-    invoke-static {v13, v14, v0, v1, v3}, Landroidx/compose/ui/text/b0;->c(JJF)J
+    iget-object v11, v6, Landroidx/compose/ui/text/r;->d:Landroidx/compose/ui/text/style/o;
+
+    if-nez v11, :cond_12
+
+    .line 87
+    sget-object v11, Landroidx/compose/ui/text/style/o;->c:Landroidx/compose/ui/text/style/o;
+
+    .line 88
+    :cond_12
+    iget-object v12, v2, Landroidx/compose/ui/text/r;->d:Landroidx/compose/ui/text/style/o;
+
+    if-nez v12, :cond_13
+
+    .line 89
+    sget-object v12, Landroidx/compose/ui/text/style/o;->c:Landroidx/compose/ui/text/style/o;
+
+    .line 90
+    :cond_13
+    new-instance v13, Landroidx/compose/ui/text/style/o;
+
+    .line 91
+    iget-wide v14, v11, Landroidx/compose/ui/text/style/o;->a:J
+
+    move-object/from16 v17, v1
+
+    iget-wide v0, v12, Landroidx/compose/ui/text/style/o;->a:J
+
+    .line 92
+    invoke-static {v14, v15, v0, v1, v3}, Landroidx/compose/ui/text/B;->c(JJF)J
 
     move-result-wide v0
 
-    .line 87
-    iget-wide v13, v10, Landroidx/compose/ui/text/style/o;->b:J
+    .line 93
+    iget-wide v14, v11, Landroidx/compose/ui/text/style/o;->b:J
 
-    iget-wide v10, v11, Landroidx/compose/ui/text/style/o;->b:J
+    iget-wide v11, v12, Landroidx/compose/ui/text/style/o;->b:J
 
-    invoke-static {v13, v14, v10, v11, v3}, Landroidx/compose/ui/text/b0;->c(JJF)J
+    invoke-static {v14, v15, v11, v12, v3}, Landroidx/compose/ui/text/B;->c(JJF)J
 
-    move-result-wide v10
+    move-result-wide v11
 
-    .line 88
-    invoke-direct {v12, v0, v1, v10, v11}, Landroidx/compose/ui/text/style/o;-><init>(JJ)V
+    .line 94
+    invoke-direct {v13, v0, v1, v11, v12}, Landroidx/compose/ui/text/style/o;-><init>(JJ)V
 
-    .line 89
-    iget-object v0, v4, Landroidx/compose/ui/text/r;->e:Landroidx/compose/ui/text/t;
+    .line 95
+    iget-object v0, v6, Landroidx/compose/ui/text/r;->e:Landroidx/compose/ui/text/t;
 
-    iget-object v1, v5, Landroidx/compose/ui/text/r;->e:Landroidx/compose/ui/text/t;
+    iget-object v1, v2, Landroidx/compose/ui/text/r;->e:Landroidx/compose/ui/text/t;
 
     if-nez v0, :cond_14
 
     if-nez v1, :cond_14
 
-    const/4 v10, 0x0
+    const/4 v12, 0x0
 
     goto :goto_7
 
+    .line 96
     :cond_14
-    sget-object v10, Landroidx/compose/ui/text/t;->c:Landroidx/compose/ui/text/t;
+    sget-object v11, Landroidx/compose/ui/text/t;->b:Landroidx/compose/ui/text/t;
 
     if-nez v0, :cond_15
 
-    move-object v0, v10
+    move-object v0, v11
 
     :cond_15
     if-nez v1, :cond_16
 
-    move-object v1, v10
+    move-object v1, v11
 
-    .line 90
+    .line 97
     :cond_16
-    iget-boolean v10, v0, Landroidx/compose/ui/text/t;->a:Z
+    iget-boolean v11, v0, Landroidx/compose/ui/text/t;->a:Z
 
-    iget-boolean v11, v1, Landroidx/compose/ui/text/t;->a:Z
+    iget-boolean v1, v1, Landroidx/compose/ui/text/t;->a:Z
 
-    if-ne v10, v11, :cond_17
+    if-ne v11, v1, :cond_17
 
     goto :goto_6
 
-    .line 91
+    .line 98
     :cond_17
-    new-instance v13, Landroidx/compose/ui/text/t;
+    new-instance v0, Landroidx/compose/ui/text/t;
 
-    .line 92
-    new-instance v14, Landroidx/compose/ui/text/h;
+    .line 99
+    new-instance v12, Landroidx/compose/ui/text/i;
 
-    iget v0, v0, Landroidx/compose/ui/text/t;->b:I
+    .line 100
+    invoke-direct {v12}, Ljava/lang/Object;-><init>()V
 
-    invoke-direct {v14, v0}, Landroidx/compose/ui/text/h;-><init>(I)V
+    .line 101
+    new-instance v14, Landroidx/compose/ui/text/i;
 
-    .line 93
-    new-instance v0, Landroidx/compose/ui/text/h;
+    .line 102
+    invoke-direct {v14}, Ljava/lang/Object;-><init>()V
 
-    iget v1, v1, Landroidx/compose/ui/text/t;->b:I
+    .line 103
+    invoke-static {v3, v12, v14}, Landroidx/compose/ui/text/B;->b(FLjava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    invoke-direct {v0, v1}, Landroidx/compose/ui/text/h;-><init>(I)V
+    move-result-object v12
 
-    .line 94
-    invoke-static {v3, v14, v0}, Landroidx/compose/ui/text/b0;->b(FLjava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    check-cast v12, Landroidx/compose/ui/text/i;
 
-    move-result-object v0
+    .line 104
+    invoke-virtual {v12}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
-    check-cast v0, Landroidx/compose/ui/text/h;
+    .line 105
+    invoke-static {v11}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
 
-    .line 95
-    iget v0, v0, Landroidx/compose/ui/text/h;->a:I
+    move-result-object v11
 
-    .line 96
-    invoke-static {v10}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
+    .line 106
+    invoke-static {v1}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
 
     move-result-object v1
 
-    .line 97
-    invoke-static {v11}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
-
-    move-result-object v10
-
-    .line 98
-    invoke-static {v3, v1, v10}, Landroidx/compose/ui/text/b0;->b(FLjava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    .line 107
+    invoke-static {v3, v11, v1}, Landroidx/compose/ui/text/B;->b(FLjava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object v1
 
@@ -939,176 +964,168 @@
 
     move-result v1
 
-    .line 99
-    invoke-direct {v13, v0, v1}, Landroidx/compose/ui/text/t;-><init>(IZ)V
-
-    move-object v0, v13
+    .line 108
+    invoke-direct {v0, v1}, Landroidx/compose/ui/text/t;-><init>(Z)V
 
     :goto_6
-    move-object v10, v0
+    move-object v12, v0
 
-    .line 100
+    .line 109
     :goto_7
-    iget-object v0, v4, Landroidx/compose/ui/text/r;->f:Landroidx/compose/ui/text/style/g;
+    iget-object v0, v6, Landroidx/compose/ui/text/r;->f:Landroidx/compose/ui/text/style/g;
 
-    iget-object v1, v5, Landroidx/compose/ui/text/r;->f:Landroidx/compose/ui/text/style/g;
+    iget-object v1, v2, Landroidx/compose/ui/text/r;->f:Landroidx/compose/ui/text/style/g;
 
-    invoke-static {v3, v0, v1}, Landroidx/compose/ui/text/b0;->b(FLjava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-static {v3, v0, v1}, Landroidx/compose/ui/text/B;->b(FLjava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object v0
 
-    move-object v11, v0
+    check-cast v0, Landroidx/compose/ui/text/style/g;
 
-    check-cast v11, Landroidx/compose/ui/text/style/g;
-
-    .line 101
-    new-instance v0, Landroidx/compose/ui/text/style/e;
-
-    iget v1, v4, Landroidx/compose/ui/text/r;->g:I
-
-    invoke-direct {v0, v1}, Landroidx/compose/ui/text/style/e;-><init>(I)V
-
+    .line 110
     new-instance v1, Landroidx/compose/ui/text/style/e;
 
-    iget v13, v5, Landroidx/compose/ui/text/r;->g:I
+    iget v11, v6, Landroidx/compose/ui/text/r;->g:I
 
-    invoke-direct {v1, v13}, Landroidx/compose/ui/text/style/e;-><init>(I)V
+    invoke-direct {v1, v11}, Landroidx/compose/ui/text/style/e;-><init>(I)V
 
-    .line 102
-    invoke-static {v3, v0, v1}, Landroidx/compose/ui/text/b0;->b(FLjava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    new-instance v11, Landroidx/compose/ui/text/style/e;
 
-    move-result-object v0
+    iget v14, v2, Landroidx/compose/ui/text/r;->g:I
 
-    check-cast v0, Landroidx/compose/ui/text/style/e;
+    invoke-direct {v11, v14}, Landroidx/compose/ui/text/style/e;-><init>(I)V
 
-    .line 103
-    iget v0, v0, Landroidx/compose/ui/text/style/e;->a:I
+    .line 111
+    invoke-static {v3, v1, v11}, Landroidx/compose/ui/text/B;->b(FLjava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 104
+    move-result-object v1
+
+    check-cast v1, Landroidx/compose/ui/text/style/e;
+
+    .line 112
+    iget v14, v1, Landroidx/compose/ui/text/style/e;->a:I
+
+    .line 113
     new-instance v1, Landroidx/compose/ui/text/style/d;
 
-    iget v13, v4, Landroidx/compose/ui/text/r;->h:I
+    iget v11, v6, Landroidx/compose/ui/text/r;->h:I
 
-    invoke-direct {v1, v13}, Landroidx/compose/ui/text/style/d;-><init>(I)V
+    invoke-direct {v1, v11}, Landroidx/compose/ui/text/style/d;-><init>(I)V
 
-    new-instance v13, Landroidx/compose/ui/text/style/d;
+    new-instance v11, Landroidx/compose/ui/text/style/d;
 
-    iget v14, v5, Landroidx/compose/ui/text/r;->h:I
+    iget v15, v2, Landroidx/compose/ui/text/r;->h:I
 
-    invoke-direct {v13, v14}, Landroidx/compose/ui/text/style/d;-><init>(I)V
+    invoke-direct {v11, v15}, Landroidx/compose/ui/text/style/d;-><init>(I)V
 
-    .line 105
-    invoke-static {v3, v1, v13}, Landroidx/compose/ui/text/b0;->b(FLjava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    .line 114
+    invoke-static {v3, v1, v11}, Landroidx/compose/ui/text/B;->b(FLjava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object v1
 
     check-cast v1, Landroidx/compose/ui/text/style/d;
 
-    .line 106
-    iget v13, v1, Landroidx/compose/ui/text/style/d;->a:I
+    .line 115
+    iget v15, v1, Landroidx/compose/ui/text/style/d;->a:I
 
-    .line 107
-    iget-object v1, v4, Landroidx/compose/ui/text/r;->i:Landroidx/compose/ui/text/style/p;
+    .line 116
+    iget-object v1, v6, Landroidx/compose/ui/text/r;->i:Landroidx/compose/ui/text/style/p;
 
-    iget-object v4, v5, Landroidx/compose/ui/text/r;->i:Landroidx/compose/ui/text/style/p;
+    iget-object v2, v2, Landroidx/compose/ui/text/r;->i:Landroidx/compose/ui/text/style/p;
 
-    invoke-static {v3, v1, v4}, Landroidx/compose/ui/text/b0;->b(FLjava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-static {v3, v1, v2}, Landroidx/compose/ui/text/B;->b(FLjava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object v1
 
-    move-object v14, v1
+    move-object/from16 v16, v1
 
-    check-cast v14, Landroidx/compose/ui/text/style/p;
+    check-cast v16, Landroidx/compose/ui/text/style/p;
 
-    move-object v4, v2
+    move-object v6, v5
 
-    move v5, v6
+    move-object v11, v13
 
-    move v6, v7
+    move-object v13, v0
 
-    move-wide v7, v8
+    .line 117
+    invoke-direct/range {v6 .. v16}, Landroidx/compose/ui/text/r;-><init>(IIJLandroidx/compose/ui/text/style/o;Landroidx/compose/ui/text/t;Landroidx/compose/ui/text/style/g;IILandroidx/compose/ui/text/style/p;)V
 
-    move-object v9, v12
+    move-object/from16 v0, v17
 
-    move v12, v0
+    .line 118
+    invoke-direct {v4, v0, v5}, Landroidx/compose/ui/text/I;-><init>(Landroidx/compose/ui/text/A;Landroidx/compose/ui/text/r;)V
 
-    .line 108
-    invoke-direct/range {v4 .. v14}, Landroidx/compose/ui/text/r;-><init>(IIJLandroidx/compose/ui/text/style/o;Landroidx/compose/ui/text/t;Landroidx/compose/ui/text/style/g;IILandroidx/compose/ui/text/style/p;)V
+    move-object/from16 v0, p0
 
-    move-object/from16 v0, p2
+    .line 119
+    iget-boolean v1, v0, Landroidx/compose/material3/internal/TextFieldImplKt$CommonDecorationBox$3$decoratedLabel$1$1;->$overrideLabelTextStyleColor:Z
 
-    move-object/from16 v1, v16
+    iget-object v2, v0, Landroidx/compose/material3/internal/TextFieldImplKt$CommonDecorationBox$3$decoratedLabel$1$1;->$labelTextStyleColor:Landroidx/compose/runtime/H0;
 
-    .line 109
-    invoke-direct {v0, v1, v2}, Landroidx/compose/ui/text/i0;-><init>(Landroidx/compose/ui/text/a0;Landroidx/compose/ui/text/r;)V
+    if-eqz v1, :cond_18
 
-    move-object/from16 v1, p0
+    .line 120
+    invoke-interface {v2}, Landroidx/compose/runtime/H0;->getValue()Ljava/lang/Object;
 
-    iget-boolean v2, v1, Landroidx/compose/material3/internal/TextFieldImplKt$CommonDecorationBox$3$decoratedLabel$1$1;->$overrideLabelTextStyleColor:Z
+    move-result-object v1
 
-    iget-object v3, v1, Landroidx/compose/material3/internal/TextFieldImplKt$CommonDecorationBox$3$decoratedLabel$1$1;->$labelTextStyleColor:Landroidx/compose/runtime/d3;
+    check-cast v1, Landroidx/compose/ui/graphics/w;
 
-    if-eqz v2, :cond_18
-
-    .line 110
-    invoke-interface {v3}, Landroidx/compose/runtime/d3;->getValue()Ljava/lang/Object;
-
-    move-result-object v2
-
-    check-cast v2, Landroidx/compose/ui/graphics/w;
-
-    .line 111
-    iget-wide v6, v2, Landroidx/compose/ui/graphics/w;->a:J
-
-    const-wide/16 v8, 0x0
-
-    const/16 v17, 0x0
+    .line 121
+    iget-wide v5, v1, Landroidx/compose/ui/graphics/w;->a:J
 
     const/16 v16, 0x0
 
-    const-wide/16 v10, 0x0
+    const/16 v17, 0x0
 
-    const/4 v4, 0x0
+    const-wide/16 v7, 0x0
 
-    const-wide/16 v12, 0x0
+    const/4 v9, 0x0
 
-    const/4 v14, 0x0
+    const/4 v10, 0x0
 
-    const/16 v18, 0x0
+    const-wide/16 v11, 0x0
 
-    const v5, 0xfffffe
+    const/4 v13, 0x0
 
-    move-object v15, v0
+    const-wide/16 v14, 0x0
 
-    .line 112
-    invoke-static/range {v4 .. v18}, Landroidx/compose/ui/text/i0;->a(IIJJJJLandroidx/compose/ui/text/v;Landroidx/compose/ui/text/i0;Landroidx/compose/ui/text/font/m;Landroidx/compose/ui/text/font/w;Landroidx/compose/ui/text/style/g;)Landroidx/compose/ui/text/i0;
+    const v18, 0xfffffe
 
-    move-result-object v0
+    .line 122
+    invoke-static/range {v4 .. v18}, Landroidx/compose/ui/text/I;->a(Landroidx/compose/ui/text/I;JJLandroidx/compose/ui/text/font/u;Landroidx/compose/ui/text/font/k;JIJLandroidx/compose/ui/text/v;Landroidx/compose/ui/text/style/g;I)Landroidx/compose/ui/text/I;
+
+    move-result-object v1
+
+    move-object v5, v1
+
+    goto :goto_8
 
     :cond_18
-    move-object v5, v0
+    move-object v5, v4
 
-    iget-object v0, v1, Landroidx/compose/material3/internal/TextFieldImplKt$CommonDecorationBox$3$decoratedLabel$1$1;->$labelContentColor:Landroidx/compose/runtime/d3;
+    .line 123
+    :goto_8
+    iget-object v1, v0, Landroidx/compose/material3/internal/TextFieldImplKt$CommonDecorationBox$3$decoratedLabel$1$1;->$labelContentColor:Landroidx/compose/runtime/H0;
 
-    .line 113
-    invoke-interface {v0}, Landroidx/compose/runtime/d3;->getValue()Ljava/lang/Object;
+    invoke-interface {v1}, Landroidx/compose/runtime/H0;->getValue()Ljava/lang/Object;
 
-    move-result-object v0
+    move-result-object v1
 
-    check-cast v0, Landroidx/compose/ui/graphics/w;
+    check-cast v1, Landroidx/compose/ui/graphics/w;
 
-    .line 114
-    iget-wide v3, v0, Landroidx/compose/ui/graphics/w;->a:J
+    .line 124
+    iget-wide v3, v1, Landroidx/compose/ui/graphics/w;->a:J
 
-    iget-object v6, v1, Landroidx/compose/material3/internal/TextFieldImplKt$CommonDecorationBox$3$decoratedLabel$1$1;->$it:Lzh/e;
+    .line 125
+    iget-object v6, v0, Landroidx/compose/material3/internal/TextFieldImplKt$CommonDecorationBox$3$decoratedLabel$1$1;->$it:Lka/e;
 
     const/4 v8, 0x0
 
     move-object/from16 v7, p1
 
-    .line 115
-    invoke-static/range {v3 .. v8}, Landroidx/compose/material3/internal/f;->c(JLandroidx/compose/ui/text/i0;Lzh/e;Landroidx/compose/runtime/l;I)V
+    invoke-static/range {v3 .. v8}, Landroidx/compose/material3/internal/s;->b(JLandroidx/compose/ui/text/I;Lka/e;Landroidx/compose/runtime/j;I)V
 
-    :goto_8
+    :goto_9
     return-void
 .end method

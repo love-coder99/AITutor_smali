@@ -462,19 +462,19 @@
 
     .line 158
     .line 159
-    const/4 v7, 0x0
-
-    .line 160
-    const-wide/16 v8, 0x0
-
-    .line 161
-    .line 162
     const-wide/16 v10, 0x0
 
-    .line 163
-    .line 164
+    .line 160
+    .line 161
     const/4 v12, 0x0
 
+    .line 162
+    const/4 v7, 0x0
+
+    .line 163
+    const-wide/16 v8, 0x0
+
+    .line 164
     .line 165
     move-object v5, v1
 
@@ -567,26 +567,26 @@
 .method private static a(II)I
     .locals 4
 
-    .line 175
+    .line 237
     new-instance v0, Landroid/media/AudioAttributes$Builder;
 
     invoke-direct {v0}, Landroid/media/AudioAttributes$Builder;-><init>()V
 
     const/4 v1, 0x1
 
-    .line 176
+    .line 238
     invoke-virtual {v0, v1}, Landroid/media/AudioAttributes$Builder;->setUsage(I)Landroid/media/AudioAttributes$Builder;
 
     move-result-object v0
 
     const/4 v1, 0x3
 
-    .line 177
+    .line 239
     invoke-virtual {v0, v1}, Landroid/media/AudioAttributes$Builder;->setContentType(I)Landroid/media/AudioAttributes$Builder;
 
     move-result-object v0
 
-    .line 178
+    .line 240
     invoke-virtual {v0}, Landroid/media/AudioAttributes$Builder;->build()Landroid/media/AudioAttributes;
 
     move-result-object v0
@@ -596,22 +596,22 @@
     :goto_0
     if-lez v1, :cond_1
 
-    .line 179
+    .line 241
     new-instance v2, Landroid/media/AudioFormat$Builder;
 
     invoke-direct {v2}, Landroid/media/AudioFormat$Builder;-><init>()V
 
-    .line 180
+    .line 242
     invoke-virtual {v2, p0}, Landroid/media/AudioFormat$Builder;->setEncoding(I)Landroid/media/AudioFormat$Builder;
 
     move-result-object v2
 
-    .line 181
+    .line 243
     invoke-virtual {v2, p1}, Landroid/media/AudioFormat$Builder;->setSampleRate(I)Landroid/media/AudioFormat$Builder;
 
     move-result-object v2
 
-    .line 182
+    .line 244
     invoke-static {v1}, Lcom/applovin/impl/xp;->a(I)I
 
     move-result v3
@@ -620,13 +620,13 @@
 
     move-result-object v2
 
-    .line 183
+    .line 245
     invoke-virtual {v2}, Landroid/media/AudioFormat$Builder;->build()Landroid/media/AudioFormat;
 
     move-result-object v2
 
-    .line 184
-    invoke-static {v2, v0}, Landroidx/core/view/r1;->r(Landroid/media/AudioFormat;Landroid/media/AudioAttributes;)Z
+    .line 246
+    invoke-static {v2, v0}, Lcom/applovin/exoplayer2/ui/k;->w(Landroid/media/AudioFormat;Landroid/media/AudioAttributes;)Z
 
     move-result v2
 
@@ -654,23 +654,23 @@
 
     packed-switch p0, :pswitch_data_0
 
-    .line 63
+    .line 71
     :pswitch_0
     new-instance p1, Ljava/lang/IllegalStateException;
 
     const-string v0, "Unexpected audio encoding: "
 
-    .line 64
-    invoke-static {v0, p0}, Lcom/google/android/gms/internal/play_billing/v3;->s(Ljava/lang/String;I)Ljava/lang/String;
+    .line 72
+    invoke-static {p0, v0}, Landroidx/appcompat/view/menu/F;->D(ILjava/lang/String;)Ljava/lang/String;
 
     move-result-object p0
 
-    .line 65
+    .line 73
     invoke-direct {p1, p0}, Ljava/lang/IllegalStateException;-><init>(Ljava/lang/String;)V
 
     throw p1
 
-    .line 66
+    .line 74
     :pswitch_1
     invoke-static {p1}, Lcom/applovin/impl/n;->a(Ljava/nio/ByteBuffer;)I
 
@@ -686,7 +686,7 @@
 
     return p0
 
-    .line 67
+    .line 75
     :pswitch_4
     invoke-static {p1}, Lcom/applovin/impl/k;->a(Ljava/nio/ByteBuffer;)I
 
@@ -698,7 +698,7 @@
 
     goto :goto_0
 
-    .line 68
+    .line 76
     :cond_0
     invoke-static {p1, p0}, Lcom/applovin/impl/k;->a(Ljava/nio/ByteBuffer;I)I
 
@@ -717,7 +717,7 @@
     :pswitch_6
     return v1
 
-    .line 69
+    .line 77
     :pswitch_7
     invoke-virtual {p1}, Ljava/nio/Buffer;->position()I
 
@@ -727,7 +727,7 @@
 
     move-result p0
 
-    .line 70
+    .line 78
     invoke-static {p0}, Lcom/applovin/impl/sf;->d(I)I
 
     move-result p0
@@ -736,7 +736,7 @@
 
     return p0
 
-    .line 71
+    .line 79
     :cond_1
     new-instance p0, Ljava/lang/IllegalArgumentException;
 
@@ -744,7 +744,7 @@
 
     throw p0
 
-    .line 72
+    .line 80
     :pswitch_8
     invoke-static {p1}, Lcom/applovin/impl/e7;->a(Ljava/nio/ByteBuffer;)I
 
@@ -752,7 +752,7 @@
 
     return p0
 
-    .line 73
+    .line 81
     :pswitch_9
     invoke-static {p1}, Lcom/applovin/impl/k;->b(Ljava/nio/ByteBuffer;)I
 
@@ -784,23 +784,23 @@
 .method private a(Landroid/media/AudioFormat;Landroid/media/AudioAttributes;)I
     .locals 2
 
-    .line 193
+    .line 256
     sget v0, Lcom/applovin/impl/xp;->a:I
 
     const/16 v1, 0x1f
 
     if-lt v0, v1, :cond_0
 
-    .line 194
-    invoke-static {p1, p2}, Lcom/applovin/impl/nu;->b(Landroid/media/AudioFormat;Landroid/media/AudioAttributes;)I
+    .line 257
+    invoke-static {p1, p2}, Landroidx/core/view/h;->b(Landroid/media/AudioFormat;Landroid/media/AudioAttributes;)I
 
     move-result p1
 
     return p1
 
-    .line 195
+    .line 258
     :cond_0
-    invoke-static {p1, p2}, Landroidx/core/view/r1;->x(Landroid/media/AudioFormat;Landroid/media/AudioAttributes;)Z
+    invoke-static {p1, p2}, Lcom/applovin/exoplayer2/ui/k;->A(Landroid/media/AudioFormat;Landroid/media/AudioAttributes;)Z
 
     move-result p1
 
@@ -815,7 +815,7 @@
 
     if-ne v0, p1, :cond_2
 
-    .line 196
+    .line 259
     sget-object p1, Lcom/applovin/impl/xp;->d:Ljava/lang/String;
 
     const-string p2, "Pixel"
@@ -841,7 +841,7 @@
 
     const/4 v0, 0x1
 
-    .line 174
+    .line 236
     invoke-virtual {p0, p1, p2, v0}, Landroid/media/AudioTrack;->write(Ljava/nio/ByteBuffer;II)I
 
     move-result p0
@@ -852,7 +852,7 @@
 .method private a(Landroid/media/AudioTrack;Ljava/nio/ByteBuffer;IJ)I
     .locals 5
 
-    .line 198
+    .line 261
     sget v0, Lcom/applovin/impl/xp;->a:I
 
     const/16 v1, 0x1a
@@ -863,13 +863,14 @@
 
     mul-long p4, p4, v2
 
-    .line 199
-    invoke-static {p1, p2, p3, p4, p5}, Landroidx/compose/ui/platform/r2;->e(Landroid/media/AudioTrack;Ljava/nio/ByteBuffer;IJ)I
+    .line 262
+    invoke-static {p1, p2, p3, p4, p5}, Lc3/A;->c(Landroid/media/AudioTrack;Ljava/nio/ByteBuffer;IJ)I
 
     move-result p1
 
     return p1
 
+    .line 263
     :cond_0
     iget-object v0, p0, Lcom/applovin/impl/r5;->x:Ljava/nio/ByteBuffer;
 
@@ -877,25 +878,26 @@
 
     const/16 v0, 0x10
 
-    .line 200
+    .line 264
     invoke-static {v0}, Ljava/nio/ByteBuffer;->allocate(I)Ljava/nio/ByteBuffer;
 
     move-result-object v0
 
     iput-object v0, p0, Lcom/applovin/impl/r5;->x:Ljava/nio/ByteBuffer;
 
-    .line 201
+    .line 265
     sget-object v1, Ljava/nio/ByteOrder;->BIG_ENDIAN:Ljava/nio/ByteOrder;
 
     invoke-virtual {v0, v1}, Ljava/nio/ByteBuffer;->order(Ljava/nio/ByteOrder;)Ljava/nio/ByteBuffer;
 
+    .line 266
     iget-object v0, p0, Lcom/applovin/impl/r5;->x:Ljava/nio/ByteBuffer;
 
     const v1, 0x55550001
 
-    .line 202
     invoke-virtual {v0, v1}, Ljava/nio/ByteBuffer;->putInt(I)Ljava/nio/ByteBuffer;
 
+    .line 267
     :cond_1
     iget v0, p0, Lcom/applovin/impl/r5;->y:I
 
@@ -903,50 +905,53 @@
 
     if-nez v0, :cond_2
 
+    .line 268
     iget-object v0, p0, Lcom/applovin/impl/r5;->x:Ljava/nio/ByteBuffer;
 
     const/4 v4, 0x4
 
-    .line 203
     invoke-virtual {v0, v4, p3}, Ljava/nio/ByteBuffer;->putInt(II)Ljava/nio/ByteBuffer;
 
+    .line 269
     iget-object v0, p0, Lcom/applovin/impl/r5;->x:Ljava/nio/ByteBuffer;
 
     mul-long p4, p4, v2
 
     const/16 v2, 0x8
 
-    .line 204
     invoke-virtual {v0, v2, p4, p5}, Ljava/nio/ByteBuffer;->putLong(IJ)Ljava/nio/ByteBuffer;
 
+    .line 270
     iget-object p4, p0, Lcom/applovin/impl/r5;->x:Ljava/nio/ByteBuffer;
 
-    .line 205
     invoke-virtual {p4, v1}, Ljava/nio/ByteBuffer;->position(I)Ljava/nio/Buffer;
 
+    .line 271
     iput p3, p0, Lcom/applovin/impl/r5;->y:I
 
+    .line 272
     :cond_2
     iget-object p4, p0, Lcom/applovin/impl/r5;->x:Ljava/nio/ByteBuffer;
 
-    .line 206
     invoke-virtual {p4}, Ljava/nio/Buffer;->remaining()I
 
     move-result p4
 
     if-lez p4, :cond_4
 
+    .line 273
     iget-object p5, p0, Lcom/applovin/impl/r5;->x:Ljava/nio/ByteBuffer;
 
     const/4 v0, 0x1
 
-    .line 207
+    .line 274
     invoke-virtual {p1, p5, p4, v0}, Landroid/media/AudioTrack;->write(Ljava/nio/ByteBuffer;II)I
 
     move-result p5
 
     if-gez p5, :cond_3
 
+    .line 275
     iput v1, p0, Lcom/applovin/impl/r5;->y:I
 
     return p5
@@ -956,7 +961,7 @@
 
     return v1
 
-    .line 208
+    .line 276
     :cond_4
     invoke-static {p1, p2, p3}, Lcom/applovin/impl/r5;->a(Landroid/media/AudioTrack;Ljava/nio/ByteBuffer;I)I
 
@@ -964,10 +969,12 @@
 
     if-gez p1, :cond_5
 
+    .line 277
     iput v1, p0, Lcom/applovin/impl/r5;->y:I
 
     return p1
 
+    .line 278
     :cond_5
     iget p2, p0, Lcom/applovin/impl/r5;->y:I
 
@@ -981,7 +988,7 @@
 .method public static synthetic a(III)Landroid/media/AudioFormat;
     .locals 0
 
-    .line 2
+    .line 1
     invoke-static {p0, p1, p2}, Lcom/applovin/impl/r5;->b(III)Landroid/media/AudioFormat;
 
     move-result-object p0
@@ -992,7 +999,7 @@
 .method public static synthetic a(Lcom/applovin/impl/r5;)Landroid/os/ConditionVariable;
     .locals 0
 
-    .line 3
+    .line 2
     iget-object p0, p0, Lcom/applovin/impl/r5;->h:Landroid/os/ConditionVariable;
 
     return-object p0
@@ -1007,11 +1014,11 @@
 
     return-object v0
 
-    .line 50
+    .line 58
     :cond_0
     iget-object v1, p0, Lcom/applovin/impl/e9;->m:Ljava/lang/String;
 
-    .line 51
+    .line 59
     invoke-static {v1}, Lcom/applovin/impl/b1;->a(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object v1
@@ -1061,7 +1068,7 @@
     :goto_0
     if-ne v1, v6, :cond_3
 
-    .line 52
+    .line 60
     invoke-virtual {p1, v6}, Lcom/applovin/impl/n1;->a(I)Z
 
     move-result v2
@@ -1075,7 +1082,7 @@
     :cond_3
     if-ne v1, v4, :cond_4
 
-    .line 53
+    .line 61
     invoke-virtual {p1, v4}, Lcom/applovin/impl/n1;->a(I)Z
 
     move-result v2
@@ -1084,7 +1091,7 @@
 
     const/4 v1, 0x7
 
-    .line 54
+    .line 62
     :cond_4
     :goto_1
     invoke-virtual {p1, v1}, Lcom/applovin/impl/n1;->a(I)Z
@@ -1098,37 +1105,37 @@
     :cond_5
     if-ne v1, v6, :cond_6
 
-    .line 55
+    .line 63
     sget p1, Lcom/applovin/impl/xp;->a:I
 
     const/16 v2, 0x1d
 
     if-lt p1, v2, :cond_7
 
-    .line 56
+    .line 64
     iget p0, p0, Lcom/applovin/impl/e9;->A:I
 
-    .line 57
+    .line 65
     invoke-static {v6, p0}, Lcom/applovin/impl/r5;->a(II)I
 
     move-result v5
 
     if-nez v5, :cond_7
 
+    .line 66
     const-string p0, "DefaultAudioSink"
 
     const-string p1, "E-AC3 JOC encoding supported but no channel count supported"
 
-    .line 58
     invoke-static {p0, p1}, Lcom/applovin/impl/oc;->d(Ljava/lang/String;Ljava/lang/String;)V
 
     return-object v0
 
-    .line 59
+    .line 67
     :cond_6
     iget v5, p0, Lcom/applovin/impl/e9;->z:I
 
-    .line 60
+    .line 68
     invoke-virtual {p1}, Lcom/applovin/impl/n1;->c()I
 
     move-result p0
@@ -1137,7 +1144,7 @@
 
     return-object v0
 
-    .line 61
+    .line 69
     :cond_7
     invoke-static {v5}, Lcom/applovin/impl/r5;->c(I)I
 
@@ -1147,7 +1154,7 @@
 
     return-object v0
 
-    .line 62
+    .line 70
     :cond_8
     invoke-static {v1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -1167,16 +1174,16 @@
 .method private a(J)V
     .locals 11
 
-    .line 4
+    .line 3
     invoke-direct {p0}, Lcom/applovin/impl/r5;->z()Z
 
     move-result v0
 
     if-eqz v0, :cond_0
 
+    .line 4
     iget-object v0, p0, Lcom/applovin/impl/r5;->b:Lcom/applovin/impl/r5$b;
 
-    .line 5
     invoke-direct {p0}, Lcom/applovin/impl/r5;->n()Lcom/applovin/impl/ph;
 
     move-result-object v1
@@ -1190,13 +1197,13 @@
 
     goto :goto_1
 
-    .line 6
+    .line 5
     :cond_0
     sget-object v0, Lcom/applovin/impl/ph;->d:Lcom/applovin/impl/ph;
 
     goto :goto_0
 
-    .line 7
+    .line 6
     :goto_1
     invoke-direct {p0}, Lcom/applovin/impl/r5;->z()Z
 
@@ -1204,9 +1211,9 @@
 
     if-eqz v0, :cond_1
 
+    .line 7
     iget-object v0, p0, Lcom/applovin/impl/r5;->b:Lcom/applovin/impl/r5$b;
 
-    .line 8
     invoke-virtual {p0}, Lcom/applovin/impl/r5;->p()Z
 
     move-result v1
@@ -1220,22 +1227,22 @@
     :cond_1
     const/4 v0, 0x0
 
+    .line 8
     :goto_2
     iget-object v9, p0, Lcom/applovin/impl/r5;->j:Ljava/util/ArrayDeque;
 
-    .line 9
     new-instance v10, Lcom/applovin/impl/r5$f;
 
     const-wide/16 v3, 0x0
 
-    .line 10
+    .line 9
     invoke-static {v3, v4, p1, p2}, Ljava/lang/Math;->max(JJ)J
 
     move-result-wide v4
 
     iget-object p1, p0, Lcom/applovin/impl/r5;->r:Lcom/applovin/impl/r5$c;
 
-    .line 11
+    .line 10
     invoke-direct {p0}, Lcom/applovin/impl/r5;->r()J
 
     move-result-wide v6
@@ -1252,12 +1259,13 @@
 
     invoke-direct/range {v1 .. v8}, Lcom/applovin/impl/r5$f;-><init>(Lcom/applovin/impl/ph;ZJJLcom/applovin/impl/r5$a;)V
 
-    .line 12
+    .line 11
     invoke-virtual {v9, v10}, Ljava/util/ArrayDeque;->add(Ljava/lang/Object;)Z
 
-    .line 13
+    .line 12
     invoke-direct {p0}, Lcom/applovin/impl/r5;->y()V
 
+    .line 13
     iget-object p1, p0, Lcom/applovin/impl/r5;->p:Lcom/applovin/impl/r1$c;
 
     if-eqz p1, :cond_2
@@ -1272,7 +1280,7 @@
 .method private static a(Landroid/media/AudioTrack;F)V
     .locals 0
 
-    .line 141
+    .line 187
     invoke-virtual {p0, p1}, Landroid/media/AudioTrack;->setVolume(F)I
 
     return-void
@@ -1281,12 +1289,12 @@
 .method private a(Lcom/applovin/impl/ph;Z)V
     .locals 9
 
-    .line 122
+    .line 158
     invoke-direct {p0}, Lcom/applovin/impl/r5;->o()Lcom/applovin/impl/r5$f;
 
     move-result-object v0
 
-    .line 123
+    .line 159
     iget-object v1, v0, Lcom/applovin/impl/r5$f;->a:Lcom/applovin/impl/ph;
 
     invoke-virtual {p1, v1}, Lcom/applovin/impl/ph;->equals(Ljava/lang/Object;)Z
@@ -1299,15 +1307,15 @@
 
     if-eq p2, v0, :cond_2
 
-    .line 124
+    .line 160
     :cond_0
     new-instance v0, Lcom/applovin/impl/r5$f;
-
-    const-wide v4, -0x7fffffffffffffffL    # -4.9E-324
 
     const-wide v6, -0x7fffffffffffffffL    # -4.9E-324
 
     const/4 v8, 0x0
+
+    const-wide v4, -0x7fffffffffffffffL    # -4.9E-324
 
     move-object v1, v0
 
@@ -1317,17 +1325,19 @@
 
     invoke-direct/range {v1 .. v8}, Lcom/applovin/impl/r5$f;-><init>(Lcom/applovin/impl/ph;ZJJLcom/applovin/impl/r5$a;)V
 
-    .line 125
+    .line 161
     invoke-direct {p0}, Lcom/applovin/impl/r5;->t()Z
 
     move-result p1
 
     if-eqz p1, :cond_1
 
+    .line 162
     iput-object v0, p0, Lcom/applovin/impl/r5;->u:Lcom/applovin/impl/r5$f;
 
     goto :goto_0
 
+    .line 163
     :cond_1
     iput-object v0, p0, Lcom/applovin/impl/r5;->v:Lcom/applovin/impl/r5$f;
 
@@ -1339,7 +1349,7 @@
 .method private a(Ljava/nio/ByteBuffer;J)V
     .locals 12
 
-    .line 143
+    .line 189
     invoke-virtual {p1}, Ljava/nio/Buffer;->hasRemaining()Z
 
     move-result v0
@@ -1348,6 +1358,7 @@
 
     return-void
 
+    .line 190
     :cond_0
     iget-object v0, p0, Lcom/applovin/impl/r5;->M:Ljava/nio/ByteBuffer;
 
@@ -1368,104 +1379,108 @@
     :cond_1
     const/4 v0, 0x0
 
-    .line 144
+    .line 191
     :goto_0
     invoke-static {v0}, Lcom/applovin/impl/b1;->a(Z)V
 
     goto :goto_1
 
+    .line 192
     :cond_2
     iput-object p1, p0, Lcom/applovin/impl/r5;->M:Ljava/nio/ByteBuffer;
 
-    .line 145
+    .line 193
     sget v0, Lcom/applovin/impl/xp;->a:I
 
     if-ge v0, v1, :cond_5
 
-    .line 146
+    .line 194
     invoke-virtual {p1}, Ljava/nio/Buffer;->remaining()I
 
     move-result v0
 
+    .line 195
     iget-object v4, p0, Lcom/applovin/impl/r5;->N:[B
 
     if-eqz v4, :cond_3
 
-    .line 147
     array-length v4, v4
 
     if-ge v4, v0, :cond_4
 
-    .line 148
+    .line 196
     :cond_3
     new-array v4, v0, [B
 
     iput-object v4, p0, Lcom/applovin/impl/r5;->N:[B
 
-    .line 149
+    .line 197
     :cond_4
     invoke-virtual {p1}, Ljava/nio/Buffer;->position()I
 
     move-result v4
 
+    .line 198
     iget-object v5, p0, Lcom/applovin/impl/r5;->N:[B
 
-    .line 150
     invoke-virtual {p1, v5, v3, v0}, Ljava/nio/ByteBuffer;->get([BII)Ljava/nio/ByteBuffer;
 
-    .line 151
+    .line 199
     invoke-virtual {p1, v4}, Ljava/nio/ByteBuffer;->position(I)Ljava/nio/Buffer;
 
+    .line 200
     iput v3, p0, Lcom/applovin/impl/r5;->O:I
 
-    .line 152
+    .line 201
     :cond_5
     :goto_1
     invoke-virtual {p1}, Ljava/nio/Buffer;->remaining()I
 
     move-result v0
 
-    .line 153
+    .line 202
     sget v4, Lcom/applovin/impl/xp;->a:I
 
     if-ge v4, v1, :cond_7
 
+    .line 203
     iget-object p2, p0, Lcom/applovin/impl/r5;->i:Lcom/applovin/impl/u1;
 
     iget-wide v4, p0, Lcom/applovin/impl/r5;->B:J
 
-    .line 154
     invoke-virtual {p2, v4, v5}, Lcom/applovin/impl/u1;->b(J)I
 
     move-result p2
 
     if-lez p2, :cond_6
 
-    .line 155
+    .line 204
     invoke-static {v0, p2}, Ljava/lang/Math;->min(II)I
 
     move-result p2
 
+    .line 205
     iget-object p3, p0, Lcom/applovin/impl/r5;->s:Landroid/media/AudioTrack;
 
     iget-object v1, p0, Lcom/applovin/impl/r5;->N:[B
 
     iget v4, p0, Lcom/applovin/impl/r5;->O:I
 
-    .line 156
+    .line 206
     invoke-virtual {p3, v1, v4, p2}, Landroid/media/AudioTrack;->write([BII)I
 
     move-result p2
 
     if-lez p2, :cond_a
 
+    .line 207
     iget p3, p0, Lcom/applovin/impl/r5;->O:I
 
     add-int/2addr p3, p2
 
     iput p3, p0, Lcom/applovin/impl/r5;->O:I
 
-    .line 157
+    .line 208
     invoke-virtual {p1}, Ljava/nio/Buffer;->position()I
 
     move-result p3
@@ -1481,6 +1496,7 @@
 
     goto :goto_3
 
+    .line 209
     :cond_7
     iget-boolean v1, p0, Lcom/applovin/impl/r5;->W:Z
 
@@ -1499,10 +1515,11 @@
     :cond_8
     const/4 v1, 0x0
 
-    .line 158
+    .line 210
     :goto_2
     invoke-static {v1}, Lcom/applovin/impl/b1;->b(Z)V
 
+    .line 211
     iget-object v7, p0, Lcom/applovin/impl/r5;->s:Landroid/media/AudioTrack;
 
     move-object v6, p0
@@ -1513,22 +1530,22 @@
 
     move-wide v10, p2
 
-    .line 159
+    .line 212
     invoke-direct/range {v6 .. v11}, Lcom/applovin/impl/r5;->a(Landroid/media/AudioTrack;Ljava/nio/ByteBuffer;IJ)I
 
     move-result p2
 
     goto :goto_3
 
+    .line 213
     :cond_9
     iget-object p2, p0, Lcom/applovin/impl/r5;->s:Landroid/media/AudioTrack;
 
-    .line 160
     invoke-static {p2, p1, v0}, Lcom/applovin/impl/r5;->a(Landroid/media/AudioTrack;Ljava/nio/ByteBuffer;I)I
 
     move-result p2
 
-    .line 161
+    .line 214
     :cond_a
     :goto_3
     invoke-static {}, Landroid/os/SystemClock;->elapsedRealtime()J
@@ -1539,17 +1556,17 @@
 
     if-gez p2, :cond_e
 
-    .line 162
+    .line 215
     invoke-static {p2}, Lcom/applovin/impl/r5;->e(I)Z
 
     move-result p1
 
     if-eqz p1, :cond_b
 
-    .line 163
+    .line 216
     invoke-direct {p0}, Lcom/applovin/impl/r5;->u()V
 
-    .line 164
+    .line 217
     :cond_b
     new-instance p3, Lcom/applovin/impl/r1$e;
 
@@ -1559,44 +1576,47 @@
 
     invoke-direct {p3, p2, v0, p1}, Lcom/applovin/impl/r1$e;-><init>(ILcom/applovin/impl/e9;Z)V
 
+    .line 218
     iget-object p1, p0, Lcom/applovin/impl/r5;->p:Lcom/applovin/impl/r1$c;
 
     if-eqz p1, :cond_c
 
-    .line 165
+    .line 219
     invoke-interface {p1, p3}, Lcom/applovin/impl/r1$c;->a(Ljava/lang/Exception;)V
 
+    .line 220
     :cond_c
     iget-boolean p1, p3, Lcom/applovin/impl/r1$e;->b:Z
 
     if-nez p1, :cond_d
 
+    .line 221
     iget-object p1, p0, Lcom/applovin/impl/r5;->o:Lcom/applovin/impl/r5$g;
 
-    .line 166
     invoke-virtual {p1, p3}, Lcom/applovin/impl/r5$g;->a(Ljava/lang/Exception;)V
 
     return-void
 
-    .line 167
+    .line 222
     :cond_d
     throw p3
 
+    .line 223
     :cond_e
     iget-object p3, p0, Lcom/applovin/impl/r5;->o:Lcom/applovin/impl/r5$g;
 
-    .line 168
     invoke-virtual {p3}, Lcom/applovin/impl/r5$g;->a()V
 
+    .line 224
     iget-object p3, p0, Lcom/applovin/impl/r5;->s:Landroid/media/AudioTrack;
 
-    .line 169
     invoke-static {p3}, Lcom/applovin/impl/r5;->a(Landroid/media/AudioTrack;)Z
 
     move-result p3
 
     if-eqz p3, :cond_10
 
+    .line 225
     iget-wide v4, p0, Lcom/applovin/impl/r5;->C:J
 
     const-wide/16 v6, 0x0
@@ -1605,8 +1625,10 @@
 
     if-lez p3, :cond_f
 
+    .line 226
     iput-boolean v3, p0, Lcom/applovin/impl/r5;->Z:Z
 
+    .line 227
     :cond_f
     iget-boolean p3, p0, Lcom/applovin/impl/r5;->S:Z
 
@@ -1622,26 +1644,28 @@
 
     if-nez p3, :cond_10
 
+    .line 228
     iget-object p3, p0, Lcom/applovin/impl/r5;->i:Lcom/applovin/impl/u1;
 
-    .line 170
+    .line 229
     invoke-virtual {p3, v4, v5}, Lcom/applovin/impl/u1;->c(J)J
 
     move-result-wide v4
 
+    .line 230
     iget-object p3, p0, Lcom/applovin/impl/r5;->p:Lcom/applovin/impl/r1$c;
 
-    .line 171
     invoke-interface {p3, v4, v5}, Lcom/applovin/impl/r1$c;->b(J)V
 
+    .line 231
     :cond_10
     iget-object p3, p0, Lcom/applovin/impl/r5;->r:Lcom/applovin/impl/r5$c;
 
-    .line 172
     iget p3, p3, Lcom/applovin/impl/r5$c;->c:I
 
     if-nez p3, :cond_11
 
+    .line 232
     iget-wide v4, p0, Lcom/applovin/impl/r5;->B:J
 
     int-to-long v6, p2
@@ -1655,6 +1679,7 @@
 
     if-eqz p3, :cond_13
 
+    .line 233
     iget-object p2, p0, Lcom/applovin/impl/r5;->K:Ljava/nio/ByteBuffer;
 
     if-ne p1, p2, :cond_12
@@ -1664,10 +1689,10 @@
     :cond_12
     const/4 v2, 0x0
 
-    .line 173
     :goto_4
     invoke-static {v2}, Lcom/applovin/impl/b1;->b(Z)V
 
+    .line 234
     iget-wide p1, p0, Lcom/applovin/impl/r5;->C:J
 
     iget p3, p0, Lcom/applovin/impl/r5;->D:I
@@ -1685,6 +1710,7 @@
     :cond_13
     const/4 p1, 0x0
 
+    .line 235
     iput-object p1, p0, Lcom/applovin/impl/r5;->M:Ljava/nio/ByteBuffer;
 
     :cond_14
@@ -1694,14 +1720,14 @@
 .method private static a(Landroid/media/AudioTrack;)Z
     .locals 2
 
-    .line 197
+    .line 260
     sget v0, Lcom/applovin/impl/xp;->a:I
 
     const/16 v1, 0x1d
 
     if-lt v0, v1, :cond_0
 
-    invoke-static {p0}, Landroidx/core/view/r1;->s(Landroid/media/AudioTrack;)Z
+    invoke-static {p0}, Lcom/applovin/exoplayer2/ui/k;->x(Landroid/media/AudioTrack;)Z
 
     move-result p0
 
@@ -1721,7 +1747,7 @@
 .method private a(Lcom/applovin/impl/e9;Lcom/applovin/impl/l1;)Z
     .locals 4
 
-    .line 185
+    .line 247
     sget v0, Lcom/applovin/impl/xp;->a:I
 
     const/16 v1, 0x1d
@@ -1736,11 +1762,11 @@
 
     goto :goto_3
 
-    .line 186
+    .line 248
     :cond_0
     iget-object v0, p1, Lcom/applovin/impl/e9;->m:Ljava/lang/String;
 
-    .line 187
+    .line 249
     invoke-static {v0}, Lcom/applovin/impl/b1;->a(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object v0
@@ -1757,7 +1783,7 @@
 
     return v2
 
-    .line 188
+    .line 250
     :cond_1
     iget v1, p1, Lcom/applovin/impl/e9;->z:I
 
@@ -1769,7 +1795,7 @@
 
     return v2
 
-    .line 189
+    .line 251
     :cond_2
     iget v3, p1, Lcom/applovin/impl/e9;->A:I
 
@@ -1777,7 +1803,7 @@
 
     move-result-object v0
 
-    .line 190
+    .line 252
     invoke-virtual {p2}, Lcom/applovin/impl/l1;->a()Landroid/media/AudioAttributes;
 
     move-result-object p2
@@ -1798,7 +1824,7 @@
 
     return v0
 
-    .line 191
+    .line 253
     :cond_3
     new-instance p1, Ljava/lang/IllegalStateException;
 
@@ -1806,7 +1832,7 @@
 
     throw p1
 
-    .line 192
+    .line 254
     :cond_4
     iget p2, p1, Lcom/applovin/impl/e9;->C:I
 
@@ -1827,6 +1853,7 @@
     :goto_0
     const/4 p1, 0x1
 
+    .line 255
     :goto_1
     iget p2, p0, Lcom/applovin/impl/r5;->l:I
 
@@ -1866,10 +1893,10 @@
 .method private b(J)J
     .locals 4
 
+    .line 3
     :goto_0
     iget-object v0, p0, Lcom/applovin/impl/r5;->j:Ljava/util/ArrayDeque;
 
-    .line 3
     invoke-virtual {v0}, Ljava/util/ArrayDeque;->isEmpty()Z
 
     move-result v0
@@ -1891,9 +1918,9 @@
 
     if-ltz v2, :cond_0
 
+    .line 5
     iget-object v0, p0, Lcom/applovin/impl/r5;->j:Ljava/util/ArrayDeque;
 
-    .line 5
     invoke-virtual {v0}, Ljava/util/ArrayDeque;->remove()Ljava/lang/Object;
 
     move-result-object v0
@@ -1904,10 +1931,10 @@
 
     goto :goto_0
 
+    .line 6
     :cond_0
     iget-object v0, p0, Lcom/applovin/impl/r5;->v:Lcom/applovin/impl/r5$f;
 
-    .line 6
     iget-wide v1, v0, Lcom/applovin/impl/r5$f;->d:J
 
     sub-long v1, p1, v1
@@ -1923,69 +1950,71 @@
 
     if-eqz v0, :cond_1
 
+    .line 8
     iget-object p1, p0, Lcom/applovin/impl/r5;->v:Lcom/applovin/impl/r5$f;
 
-    .line 8
     iget-wide p1, p1, Lcom/applovin/impl/r5$f;->c:J
 
     add-long/2addr p1, v1
 
     return-wide p1
 
+    .line 9
     :cond_1
     iget-object v0, p0, Lcom/applovin/impl/r5;->j:Ljava/util/ArrayDeque;
 
-    .line 9
     invoke-virtual {v0}, Ljava/util/ArrayDeque;->isEmpty()Z
 
     move-result v0
 
     if-eqz v0, :cond_2
 
+    .line 10
     iget-object p1, p0, Lcom/applovin/impl/r5;->b:Lcom/applovin/impl/r5$b;
 
-    .line 10
+    .line 11
     invoke-interface {p1, v1, v2}, Lcom/applovin/impl/r5$b;->a(J)J
 
     move-result-wide p1
 
+    .line 12
     iget-object v0, p0, Lcom/applovin/impl/r5;->v:Lcom/applovin/impl/r5$f;
 
-    .line 11
     iget-wide v0, v0, Lcom/applovin/impl/r5$f;->c:J
 
     add-long/2addr v0, p1
 
     return-wide v0
 
+    .line 13
     :cond_2
     iget-object v0, p0, Lcom/applovin/impl/r5;->j:Ljava/util/ArrayDeque;
 
-    .line 12
+    .line 14
     invoke-virtual {v0}, Ljava/util/ArrayDeque;->getFirst()Ljava/lang/Object;
 
     move-result-object v0
 
     check-cast v0, Lcom/applovin/impl/r5$f;
 
-    .line 13
+    .line 15
     iget-wide v1, v0, Lcom/applovin/impl/r5$f;->d:J
 
     sub-long/2addr v1, p1
 
+    .line 16
     iget-object p1, p0, Lcom/applovin/impl/r5;->v:Lcom/applovin/impl/r5$f;
 
-    .line 14
     iget-object p1, p1, Lcom/applovin/impl/r5$f;->a:Lcom/applovin/impl/ph;
 
     iget p1, p1, Lcom/applovin/impl/ph;->a:F
 
-    .line 15
+    .line 17
     invoke-static {v1, v2, p1}, Lcom/applovin/impl/xp;->a(JF)J
 
     move-result-wide p1
 
-    .line 16
+    .line 18
     iget-wide v0, v0, Lcom/applovin/impl/r5$f;->c:J
 
     sub-long/2addr v0, p1
@@ -1996,27 +2025,27 @@
 .method private static b(III)Landroid/media/AudioFormat;
     .locals 1
 
-    .line 53
+    .line 63
     new-instance v0, Landroid/media/AudioFormat$Builder;
 
     invoke-direct {v0}, Landroid/media/AudioFormat$Builder;-><init>()V
 
-    .line 54
+    .line 64
     invoke-virtual {v0, p0}, Landroid/media/AudioFormat$Builder;->setSampleRate(I)Landroid/media/AudioFormat$Builder;
 
     move-result-object p0
 
-    .line 55
+    .line 65
     invoke-virtual {p0, p1}, Landroid/media/AudioFormat$Builder;->setChannelMask(I)Landroid/media/AudioFormat$Builder;
 
     move-result-object p0
 
-    .line 56
+    .line 66
     invoke-virtual {p0, p2}, Landroid/media/AudioFormat$Builder;->setEncoding(I)Landroid/media/AudioFormat$Builder;
 
     move-result-object p0
 
-    .line 57
+    .line 67
     invoke-virtual {p0}, Landroid/media/AudioFormat$Builder;->build()Landroid/media/AudioFormat;
 
     move-result-object p0
@@ -2036,21 +2065,22 @@
 .method private b(Landroid/media/AudioTrack;)V
     .locals 1
 
+    .line 45
     iget-object v0, p0, Lcom/applovin/impl/r5;->m:Lcom/applovin/impl/r5$i;
 
     if-nez v0, :cond_0
 
-    .line 37
+    .line 46
     new-instance v0, Lcom/applovin/impl/r5$i;
 
     invoke-direct {v0, p0}, Lcom/applovin/impl/r5$i;-><init>(Lcom/applovin/impl/r5;)V
 
     iput-object v0, p0, Lcom/applovin/impl/r5;->m:Lcom/applovin/impl/r5$i;
 
+    .line 47
     :cond_0
     iget-object v0, p0, Lcom/applovin/impl/r5;->m:Lcom/applovin/impl/r5$i;
 
-    .line 38
     invoke-virtual {v0, p1}, Lcom/applovin/impl/r5$i;->a(Landroid/media/AudioTrack;)V
 
     return-void
@@ -2059,7 +2089,7 @@
 .method private static b(Landroid/media/AudioTrack;F)V
     .locals 0
 
-    .line 52
+    .line 62
     invoke-virtual {p0, p1, p1}, Landroid/media/AudioTrack;->setStereoVolume(FF)I
 
     return-void
@@ -2068,47 +2098,47 @@
 .method private b(Lcom/applovin/impl/ph;)V
     .locals 2
 
-    .line 39
+    .line 48
     invoke-direct {p0}, Lcom/applovin/impl/r5;->t()Z
 
     move-result v0
 
     if-eqz v0, :cond_0
 
-    .line 40
-    invoke-static {}, Landroidx/compose/ui/platform/r2;->j()Landroid/media/PlaybackParams;
+    .line 49
+    invoke-static {}, Lc3/A;->j()Landroid/media/PlaybackParams;
 
     move-result-object v0
 
-    .line 41
-    invoke-static {v0}, Landroidx/compose/ui/platform/r2;->l(Landroid/media/PlaybackParams;)Landroid/media/PlaybackParams;
+    .line 50
+    invoke-static {v0}, Lc3/A;->l(Landroid/media/PlaybackParams;)Landroid/media/PlaybackParams;
 
     move-result-object v0
 
     iget v1, p1, Lcom/applovin/impl/ph;->a:F
 
-    .line 42
-    invoke-static {v0, v1}, Landroidx/compose/ui/platform/r2;->m(Landroid/media/PlaybackParams;F)Landroid/media/PlaybackParams;
+    .line 51
+    invoke-static {v0, v1}, Lc3/A;->m(Landroid/media/PlaybackParams;F)Landroid/media/PlaybackParams;
 
     move-result-object v0
 
     iget p1, p1, Lcom/applovin/impl/ph;->b:F
 
-    .line 43
-    invoke-static {v0, p1}, Landroidx/compose/ui/platform/r2;->D(Landroid/media/PlaybackParams;F)Landroid/media/PlaybackParams;
+    .line 52
+    invoke-static {v0, p1}, Lc3/A;->D(Landroid/media/PlaybackParams;F)Landroid/media/PlaybackParams;
 
     move-result-object p1
 
-    .line 44
-    invoke-static {p1}, Landroidx/compose/ui/platform/r2;->C(Landroid/media/PlaybackParams;)Landroid/media/PlaybackParams;
+    .line 53
+    invoke-static {p1}, Lc3/A;->C(Landroid/media/PlaybackParams;)Landroid/media/PlaybackParams;
 
     move-result-object p1
 
+    .line 54
     :try_start_0
     iget-object v0, p0, Lcom/applovin/impl/r5;->s:Landroid/media/AudioTrack;
 
-    .line 45
-    invoke-static {v0, p1}, Landroidx/compose/ui/platform/r2;->q(Landroid/media/AudioTrack;Landroid/media/PlaybackParams;)V
+    invoke-static {v0, p1}, Lc3/A;->p(Landroid/media/AudioTrack;Landroid/media/PlaybackParams;)V
     :try_end_0
     .catch Ljava/lang/IllegalArgumentException; {:try_start_0 .. :try_end_0} :catch_0
 
@@ -2117,47 +2147,48 @@
     :catch_0
     move-exception p1
 
+    .line 55
     const-string v0, "DefaultAudioSink"
 
     const-string v1, "Failed to set playback params"
 
-    .line 46
     invoke-static {v0, v1, p1}, Lcom/applovin/impl/oc;->c(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)V
 
-    .line 47
+    .line 56
     :goto_0
     new-instance p1, Lcom/applovin/impl/ph;
 
     iget-object v0, p0, Lcom/applovin/impl/r5;->s:Landroid/media/AudioTrack;
 
-    .line 48
-    invoke-static {v0}, Landroidx/compose/ui/platform/r2;->k(Landroid/media/AudioTrack;)Landroid/media/PlaybackParams;
+    .line 57
+    invoke-static {v0}, Lc3/A;->k(Landroid/media/AudioTrack;)Landroid/media/PlaybackParams;
 
     move-result-object v0
 
-    invoke-static {v0}, Landroidx/compose/ui/platform/r2;->a(Landroid/media/PlaybackParams;)F
+    invoke-static {v0}, Lc3/A;->a(Landroid/media/PlaybackParams;)F
 
     move-result v0
 
     iget-object v1, p0, Lcom/applovin/impl/r5;->s:Landroid/media/AudioTrack;
 
-    invoke-static {v1}, Landroidx/compose/ui/platform/r2;->k(Landroid/media/AudioTrack;)Landroid/media/PlaybackParams;
+    invoke-static {v1}, Lc3/A;->k(Landroid/media/AudioTrack;)Landroid/media/PlaybackParams;
 
     move-result-object v1
 
-    invoke-static {v1}, Landroidx/compose/ui/platform/r2;->B(Landroid/media/PlaybackParams;)F
+    invoke-static {v1}, Lc3/A;->A(Landroid/media/PlaybackParams;)F
 
     move-result v1
 
     invoke-direct {p1, v0, v1}, Lcom/applovin/impl/ph;-><init>(FF)V
 
+    .line 58
     iget-object v0, p0, Lcom/applovin/impl/r5;->i:Lcom/applovin/impl/u1;
 
     iget v1, p1, Lcom/applovin/impl/ph;->a:F
 
-    .line 49
     invoke-virtual {v0, v1}, Lcom/applovin/impl/u1;->a(F)V
 
+    .line 59
     :cond_0
     iput-object p1, p0, Lcom/applovin/impl/r5;->w:Lcom/applovin/impl/ph;
 
@@ -2167,7 +2198,7 @@
 .method private static b(Lcom/applovin/impl/e9;Lcom/applovin/impl/n1;)Z
     .locals 0
 
-    .line 36
+    .line 44
     invoke-static {p0, p1}, Lcom/applovin/impl/r5;->a(Lcom/applovin/impl/e9;Lcom/applovin/impl/n1;)Landroid/util/Pair;
 
     move-result-object p0
@@ -2188,7 +2219,7 @@
 .method private static c(I)I
     .locals 2
 
-    .line 4
+    .line 5
     sget v0, Lcom/applovin/impl/xp;->a:I
 
     const/16 v1, 0x1c
@@ -2225,7 +2256,7 @@
 
     if-gt v0, v1, :cond_3
 
-    .line 5
+    .line 6
     sget-object v0, Lcom/applovin/impl/xp;->b:Ljava/lang/String;
 
     const-string v1, "fugu"
@@ -2242,7 +2273,7 @@
 
     const/4 p0, 0x2
 
-    .line 6
+    .line 7
     :cond_3
     invoke-static {p0}, Lcom/applovin/impl/xp;->a(I)I
 
@@ -2254,11 +2285,12 @@
 .method private c(J)J
     .locals 3
 
+    .line 2
     iget-object v0, p0, Lcom/applovin/impl/r5;->r:Lcom/applovin/impl/r5$c;
 
     iget-object v1, p0, Lcom/applovin/impl/r5;->b:Lcom/applovin/impl/r5$b;
 
-    .line 2
+    .line 3
     invoke-interface {v1}, Lcom/applovin/impl/r5$b;->b()J
 
     move-result-wide v1
@@ -2286,7 +2318,7 @@
 
     packed-switch p0, :pswitch_data_0
 
-    .line 3
+    .line 5
     :pswitch_0
     new-instance p0, Ljava/lang/IllegalArgumentException;
 
@@ -2376,9 +2408,9 @@
 .method private d(J)V
     .locals 5
 
+    .line 6
     iget-object v0, p0, Lcom/applovin/impl/r5;->I:[Lcom/applovin/impl/p1;
 
-    .line 4
     array-length v0, v0
 
     move v1, v0
@@ -2388,15 +2420,16 @@
 
     if-lez v1, :cond_0
 
+    .line 7
     iget-object v2, p0, Lcom/applovin/impl/r5;->J:[Ljava/nio/ByteBuffer;
 
     add-int/lit8 v3, v1, -0x1
 
-    .line 5
     aget-object v2, v2, v3
 
     goto :goto_1
 
+    .line 8
     :cond_0
     iget-object v2, p0, Lcom/applovin/impl/r5;->K:Ljava/nio/ByteBuffer;
 
@@ -2404,43 +2437,43 @@
 
     goto :goto_1
 
-    .line 6
     :cond_1
     sget-object v2, Lcom/applovin/impl/p1;->a:Ljava/nio/ByteBuffer;
 
     :goto_1
     if-ne v1, v0, :cond_2
 
-    .line 7
+    .line 9
     invoke-direct {p0, v2, p1, p2}, Lcom/applovin/impl/r5;->a(Ljava/nio/ByteBuffer;J)V
 
     goto :goto_2
 
+    .line 10
     :cond_2
     iget-object v3, p0, Lcom/applovin/impl/r5;->I:[Lcom/applovin/impl/p1;
 
-    .line 8
     aget-object v3, v3, v1
 
+    .line 11
     iget v4, p0, Lcom/applovin/impl/r5;->P:I
 
     if-le v1, v4, :cond_3
 
-    .line 9
+    .line 12
     invoke-interface {v3, v2}, Lcom/applovin/impl/p1;->a(Ljava/nio/ByteBuffer;)V
 
-    .line 10
+    .line 13
     :cond_3
     invoke-interface {v3}, Lcom/applovin/impl/p1;->d()Ljava/nio/ByteBuffer;
 
     move-result-object v3
 
+    .line 14
     iget-object v4, p0, Lcom/applovin/impl/r5;->J:[Ljava/nio/ByteBuffer;
 
-    .line 11
     aput-object v3, v4, v1
 
-    .line 12
+    .line 15
     invoke-virtual {v3}, Ljava/nio/Buffer;->hasRemaining()Z
 
     move-result v3
@@ -2451,7 +2484,7 @@
 
     goto :goto_0
 
-    .line 13
+    .line 16
     :cond_4
     :goto_2
     invoke-virtual {v2}, Ljava/nio/Buffer;->hasRemaining()Z
@@ -2536,11 +2569,11 @@
 .method private f(I)Z
     .locals 1
 
+    .line 5
     iget-boolean v0, p0, Lcom/applovin/impl/r5;->c:Z
 
     if-eqz v0, :cond_0
 
-    .line 4
     invoke-static {p1}, Lcom/applovin/impl/xp;->f(I)Z
 
     move-result p1
@@ -3075,7 +3108,7 @@
 
     .line 37
     .line 38
-    invoke-static {v0, v2, v1}, Landroidx/core/view/r1;->k(Landroid/media/AudioTrack;II)V
+    invoke-static {v0, v2, v1}, Lcom/applovin/exoplayer2/ui/k;->o(Landroid/media/AudioTrack;II)V
 
     .line 39
     .line 40
@@ -3205,17 +3238,25 @@
 .method private t()Z
     .locals 1
 
+    .line 1
     iget-object v0, p0, Lcom/applovin/impl/r5;->s:Landroid/media/AudioTrack;
 
+    .line 2
+    .line 3
     if-eqz v0, :cond_0
 
+    .line 4
+    .line 5
     const/4 v0, 0x1
 
+    .line 6
     goto :goto_0
 
+    .line 7
     :cond_0
     const/4 v0, 0x0
 
+    .line 8
     :goto_0
     return v0
 .end method
@@ -3365,16 +3406,16 @@
     move-result v5
 
     .line 26
-    const-wide/16 v6, 0x0
+    const-wide/16 v8, 0x0
 
     .line 27
     .line 28
-    const-wide/16 v8, 0x0
-
-    .line 29
-    .line 30
     const/4 v10, 0x0
 
+    .line 29
+    const-wide/16 v6, 0x0
+
+    .line 30
     .line 31
     move-object v3, v11
 
@@ -3724,7 +3765,7 @@
 .method public a(Z)J
     .locals 4
 
-    .line 46
+    .line 54
     invoke-direct {p0}, Lcom/applovin/impl/r5;->t()Z
 
     move-result v0
@@ -3737,17 +3778,17 @@
 
     goto :goto_0
 
+    .line 55
     :cond_0
     iget-object v0, p0, Lcom/applovin/impl/r5;->i:Lcom/applovin/impl/u1;
 
-    .line 47
     invoke-virtual {v0, p1}, Lcom/applovin/impl/u1;->a(Z)J
 
     move-result-wide v0
 
+    .line 56
     iget-object p1, p0, Lcom/applovin/impl/r5;->r:Lcom/applovin/impl/r5$c;
 
-    .line 48
     invoke-direct {p0}, Lcom/applovin/impl/r5;->r()J
 
     move-result-wide v2
@@ -3760,7 +3801,7 @@
 
     move-result-wide v0
 
-    .line 49
+    .line 57
     invoke-direct {p0, v0, v1}, Lcom/applovin/impl/r5;->b(J)J
 
     move-result-wide v0
@@ -3781,15 +3822,17 @@
 .method public a()Lcom/applovin/impl/ph;
     .locals 1
 
+    .line 86
     iget-boolean v0, p0, Lcom/applovin/impl/r5;->k:Z
 
     if-eqz v0, :cond_0
 
+    .line 87
     iget-object v0, p0, Lcom/applovin/impl/r5;->w:Lcom/applovin/impl/ph;
 
     goto :goto_0
 
-    .line 78
+    .line 88
     :cond_0
     invoke-direct {p0}, Lcom/applovin/impl/r5;->n()Lcom/applovin/impl/ph;
 
@@ -3802,15 +3845,17 @@
 .method public a(F)V
     .locals 1
 
+    .line 184
     iget v0, p0, Lcom/applovin/impl/r5;->H:F
 
     cmpl-float v0, v0, p1
 
     if-eqz v0, :cond_0
 
+    .line 185
     iput p1, p0, Lcom/applovin/impl/r5;->H:F
 
-    .line 140
+    .line 186
     invoke-direct {p0}, Lcom/applovin/impl/r5;->x()V
 
     :cond_0
@@ -3820,10 +3865,12 @@
 .method public a(I)V
     .locals 1
 
+    .line 164
     iget v0, p0, Lcom/applovin/impl/r5;->U:I
 
     if-eq v0, p1, :cond_1
 
+    .line 165
     iput p1, p0, Lcom/applovin/impl/r5;->U:I
 
     if-eqz p1, :cond_0
@@ -3835,10 +3882,11 @@
     :cond_0
     const/4 p1, 0x0
 
+    .line 166
     :goto_0
     iput-boolean p1, p0, Lcom/applovin/impl/r5;->T:Z
 
-    .line 126
+    .line 167
     invoke-virtual {p0}, Lcom/applovin/impl/r5;->b()V
 
     :cond_1
@@ -3892,24 +3940,26 @@
 
     if-eqz v4, :cond_0
 
+    .line 19
     iget-object v4, v1, Lcom/applovin/impl/r5;->g:[Lcom/applovin/impl/p1;
 
     goto :goto_0
 
+    .line 20
     :cond_0
     iget-object v4, v1, Lcom/applovin/impl/r5;->f:[Lcom/applovin/impl/p1;
 
+    .line 21
     :goto_0
     iget-object v5, v1, Lcom/applovin/impl/r5;->e:Lcom/applovin/impl/zo;
 
-    .line 19
     iget v6, v3, Lcom/applovin/impl/e9;->C:I
 
     iget v7, v3, Lcom/applovin/impl/e9;->D:I
 
     invoke-virtual {v5, v6, v7}, Lcom/applovin/impl/zo;->a(II)V
 
-    .line 20
+    .line 22
     sget v5, Lcom/applovin/impl/xp;->a:I
 
     const/16 v6, 0x15
@@ -3926,6 +3976,7 @@
 
     const/4 v5, 0x6
 
+    .line 23
     new-array v6, v5, [I
 
     const/4 v7, 0x0
@@ -3933,7 +3984,7 @@
     :goto_1
     if-ge v7, v5, :cond_2
 
-    .line 21
+    .line 24
     aput v7, v6, v7
 
     add-int/lit8 v7, v7, 0x1
@@ -3943,13 +3994,13 @@
     :cond_1
     move-object/from16 v6, p3
 
+    .line 25
     :cond_2
     iget-object v5, v1, Lcom/applovin/impl/r5;->d:Lcom/applovin/impl/d3;
 
-    .line 22
     invoke-virtual {v5, v6}, Lcom/applovin/impl/d3;->a([I)V
 
-    .line 23
+    .line 26
     new-instance v5, Lcom/applovin/impl/p1$a;
 
     iget v6, v3, Lcom/applovin/impl/e9;->A:I
@@ -3960,7 +4011,7 @@
 
     invoke-direct {v5, v6, v7, v8}, Lcom/applovin/impl/p1$a;-><init>(III)V
 
-    .line 24
+    .line 27
     array-length v6, v4
 
     const/4 v7, 0x0
@@ -3970,13 +4021,13 @@
 
     aget-object v8, v4, v7
 
-    .line 25
+    .line 28
     :try_start_0
     invoke-interface {v8, v5}, Lcom/applovin/impl/p1;->a(Lcom/applovin/impl/p1$a;)Lcom/applovin/impl/p1$a;
 
     move-result-object v9
 
-    .line 26
+    .line 29
     invoke-interface {v8}, Lcom/applovin/impl/p1;->f()Z
 
     move-result v8
@@ -3995,28 +4046,28 @@
     :catch_0
     move-exception v0
 
-    .line 27
+    .line 30
     new-instance v2, Lcom/applovin/impl/r1$a;
 
     invoke-direct {v2, v0, p1}, Lcom/applovin/impl/r1$a;-><init>(Ljava/lang/Throwable;Lcom/applovin/impl/e9;)V
 
     throw v2
 
-    .line 28
+    .line 31
     :cond_4
     iget v6, v5, Lcom/applovin/impl/p1$a;->c:I
 
-    .line 29
+    .line 32
     iget v7, v5, Lcom/applovin/impl/p1$a;->a:I
 
-    .line 30
+    .line 33
     iget v8, v5, Lcom/applovin/impl/p1$a;->b:I
 
     invoke-static {v8}, Lcom/applovin/impl/xp;->a(I)I
 
     move-result v8
 
-    .line 31
+    .line 34
     iget v5, v5, Lcom/applovin/impl/p1$a;->b:I
 
     invoke-static {v6, v5}, Lcom/applovin/impl/xp;->b(II)I
@@ -4035,15 +4086,16 @@
 
     goto :goto_4
 
+    .line 35
     :cond_5
     new-array v0, v2, [Lcom/applovin/impl/p1;
 
-    .line 32
+    .line 36
     iget v4, v3, Lcom/applovin/impl/e9;->A:I
 
+    .line 37
     iget-object v5, v1, Lcom/applovin/impl/r5;->t:Lcom/applovin/impl/l1;
 
-    .line 33
     invoke-direct {p0, p1, v5}, Lcom/applovin/impl/r5;->a(Lcom/applovin/impl/e9;Lcom/applovin/impl/l1;)Z
 
     move-result v5
@@ -4052,10 +4104,10 @@
 
     if-eqz v5, :cond_6
 
-    .line 34
+    .line 38
     iget-object v5, v3, Lcom/applovin/impl/e9;->m:Ljava/lang/String;
 
-    .line 35
+    .line 39
     invoke-static {v5}, Lcom/applovin/impl/b1;->a(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object v5
@@ -4064,12 +4116,12 @@
 
     iget-object v7, v3, Lcom/applovin/impl/e9;->j:Ljava/lang/String;
 
-    .line 36
+    .line 40
     invoke-static {v5, v7}, Lcom/applovin/impl/hf;->b(Ljava/lang/String;Ljava/lang/String;)I
 
     move-result v5
 
-    .line 37
+    .line 41
     iget v7, v3, Lcom/applovin/impl/e9;->z:I
 
     invoke-static {v7}, Lcom/applovin/impl/xp;->a(I)I
@@ -4093,17 +4145,18 @@
 
     goto :goto_4
 
+    .line 42
     :cond_6
     iget-object v5, v1, Lcom/applovin/impl/r5;->a:Lcom/applovin/impl/n1;
 
-    .line 38
+    .line 43
     invoke-static {p1, v5}, Lcom/applovin/impl/r5;->a(Lcom/applovin/impl/e9;Lcom/applovin/impl/n1;)Landroid/util/Pair;
 
     move-result-object v5
 
     if-eqz v5, :cond_a
 
-    .line 39
+    .line 44
     iget-object v7, v5, Landroid/util/Pair;->first:Ljava/lang/Object;
 
     check-cast v7, Ljava/lang/Integer;
@@ -4112,7 +4165,7 @@
 
     move-result v7
 
-    .line 40
+    .line 45
     iget-object v5, v5, Landroid/util/Pair;->second:Ljava/lang/Object;
 
     check-cast v5, Ljava/lang/Integer;
@@ -4140,9 +4193,10 @@
 
     if-eqz v8, :cond_8
 
+    .line 46
     iput-boolean v2, v1, Lcom/applovin/impl/r5;->Y:Z
 
-    .line 41
+    .line 47
     new-instance v0, Lcom/applovin/impl/r5$c;
 
     iget-boolean v11, v1, Lcom/applovin/impl/r5;->k:Z
@@ -4155,24 +4209,26 @@
 
     invoke-direct/range {v2 .. v12}, Lcom/applovin/impl/r5$c;-><init>(Lcom/applovin/impl/e9;IIIIIIIZ[Lcom/applovin/impl/p1;)V
 
-    .line 42
+    .line 48
     invoke-direct {p0}, Lcom/applovin/impl/r5;->t()Z
 
     move-result v2
 
     if-eqz v2, :cond_7
 
+    .line 49
     iput-object v0, v1, Lcom/applovin/impl/r5;->q:Lcom/applovin/impl/r5$c;
 
     goto :goto_5
 
+    .line 50
     :cond_7
     iput-object v0, v1, Lcom/applovin/impl/r5;->r:Lcom/applovin/impl/r5$c;
 
     :goto_5
     return-void
 
-    .line 43
+    .line 51
     :cond_8
     new-instance v2, Lcom/applovin/impl/r1$a;
 
@@ -4196,7 +4252,7 @@
 
     throw v2
 
-    .line 44
+    .line 52
     :cond_9
     new-instance v2, Lcom/applovin/impl/r1$a;
 
@@ -4220,7 +4276,7 @@
 
     throw v2
 
-    .line 45
+    .line 53
     :cond_a
     new-instance v0, Lcom/applovin/impl/r1$a;
 
@@ -4244,9 +4300,9 @@
 .method public a(Lcom/applovin/impl/l1;)V
     .locals 1
 
+    .line 154
     iget-object v0, p0, Lcom/applovin/impl/r5;->t:Lcom/applovin/impl/l1;
 
-    .line 120
     invoke-virtual {v0, p1}, Lcom/applovin/impl/l1;->equals(Ljava/lang/Object;)Z
 
     move-result v0
@@ -4255,16 +4311,18 @@
 
     return-void
 
+    .line 155
     :cond_0
     iput-object p1, p0, Lcom/applovin/impl/r5;->t:Lcom/applovin/impl/l1;
 
+    .line 156
     iget-boolean p1, p0, Lcom/applovin/impl/r5;->W:Z
 
     if-eqz p1, :cond_1
 
     return-void
 
-    .line 121
+    .line 157
     :cond_1
     invoke-virtual {p0}, Lcom/applovin/impl/r5;->b()V
 
@@ -4274,7 +4332,7 @@
 .method public a(Lcom/applovin/impl/ph;)V
     .locals 4
 
-    .line 133
+    .line 177
     new-instance v0, Lcom/applovin/impl/ph;
 
     iget v1, p1, Lcom/applovin/impl/ph;->a:F
@@ -4283,43 +4341,43 @@
 
     const/high16 v3, 0x41000000    # 8.0f
 
-    .line 134
+    .line 178
     invoke-static {v1, v2, v3}, Lcom/applovin/impl/xp;->a(FFF)F
 
     move-result v1
 
     iget p1, p1, Lcom/applovin/impl/ph;->b:F
 
-    .line 135
+    .line 179
     invoke-static {p1, v2, v3}, Lcom/applovin/impl/xp;->a(FFF)F
 
     move-result p1
 
     invoke-direct {v0, v1, p1}, Lcom/applovin/impl/ph;-><init>(FF)V
 
+    .line 180
     iget-boolean p1, p0, Lcom/applovin/impl/r5;->k:Z
 
     if-eqz p1, :cond_0
 
-    .line 136
     sget p1, Lcom/applovin/impl/xp;->a:I
 
     const/16 v1, 0x17
 
     if-lt p1, v1, :cond_0
 
-    .line 137
+    .line 181
     invoke-direct {p0, v0}, Lcom/applovin/impl/r5;->b(Lcom/applovin/impl/ph;)V
 
     goto :goto_0
 
-    .line 138
+    .line 182
     :cond_0
     invoke-virtual {p0}, Lcom/applovin/impl/r5;->p()Z
 
     move-result p1
 
-    .line 139
+    .line 183
     invoke-direct {p0, v0, p1}, Lcom/applovin/impl/r5;->a(Lcom/applovin/impl/ph;Z)V
 
     :goto_0
@@ -4329,7 +4387,7 @@
 .method public a(Lcom/applovin/impl/r1$c;)V
     .locals 0
 
-    .line 1
+    .line 176
     iput-object p1, p0, Lcom/applovin/impl/r5;->p:Lcom/applovin/impl/r1$c;
 
     return-void
@@ -4338,9 +4396,9 @@
 .method public a(Lcom/applovin/impl/v1;)V
     .locals 4
 
+    .line 168
     iget-object v0, p0, Lcom/applovin/impl/r5;->V:Lcom/applovin/impl/v1;
 
-    .line 127
     invoke-virtual {v0, p1}, Lcom/applovin/impl/v1;->equals(Ljava/lang/Object;)Z
 
     move-result v0
@@ -4349,35 +4407,37 @@
 
     return-void
 
-    .line 128
+    .line 169
     :cond_0
     iget v0, p1, Lcom/applovin/impl/v1;->a:I
 
-    .line 129
+    .line 170
     iget v1, p1, Lcom/applovin/impl/v1;->b:F
 
+    .line 171
     iget-object v2, p0, Lcom/applovin/impl/r5;->s:Landroid/media/AudioTrack;
 
     if-eqz v2, :cond_2
 
+    .line 172
     iget-object v3, p0, Lcom/applovin/impl/r5;->V:Lcom/applovin/impl/v1;
 
-    .line 130
     iget v3, v3, Lcom/applovin/impl/v1;->a:I
 
     if-eq v3, v0, :cond_1
 
-    .line 131
+    .line 173
     invoke-virtual {v2, v0}, Landroid/media/AudioTrack;->attachAuxEffect(I)I
 
     :cond_1
     if-eqz v0, :cond_2
 
+    .line 174
     iget-object v0, p0, Lcom/applovin/impl/r5;->s:Landroid/media/AudioTrack;
 
-    .line 132
     invoke-virtual {v0, v1}, Landroid/media/AudioTrack;->setAuxEffectSendLevel(F)I
 
+    .line 175
     :cond_2
     iput-object p1, p0, Lcom/applovin/impl/r5;->V:Lcom/applovin/impl/v1;
 
@@ -4387,7 +4447,7 @@
 .method public a(Lcom/applovin/impl/e9;)Z
     .locals 0
 
-    .line 142
+    .line 188
     invoke-virtual {p0, p1}, Lcom/applovin/impl/r5;->b(Lcom/applovin/impl/e9;)I
 
     move-result p1
@@ -4416,6 +4476,7 @@
 
     move/from16 v4, p4
 
+    .line 89
     iget-object v5, v1, Lcom/applovin/impl/r5;->K:Ljava/nio/ByteBuffer;
 
     const/4 v6, 0x1
@@ -4437,17 +4498,17 @@
     :goto_0
     const/4 v5, 0x1
 
-    .line 79
     :goto_1
     invoke-static {v5}, Lcom/applovin/impl/b1;->a(Z)V
 
+    .line 90
     iget-object v5, v1, Lcom/applovin/impl/r5;->q:Lcom/applovin/impl/r5$c;
 
     const/4 v8, 0x0
 
     if-eqz v5, :cond_6
 
-    .line 80
+    .line 91
     invoke-direct/range {p0 .. p0}, Lcom/applovin/impl/r5;->l()Z
 
     move-result v5
@@ -4456,22 +4517,22 @@
 
     return v7
 
+    .line 92
     :cond_2
     iget-object v5, v1, Lcom/applovin/impl/r5;->q:Lcom/applovin/impl/r5$c;
 
     iget-object v9, v1, Lcom/applovin/impl/r5;->r:Lcom/applovin/impl/r5$c;
 
-    .line 81
     invoke-virtual {v5, v9}, Lcom/applovin/impl/r5$c;->a(Lcom/applovin/impl/r5$c;)Z
 
     move-result v5
 
     if-nez v5, :cond_4
 
-    .line 82
+    .line 93
     invoke-direct/range {p0 .. p0}, Lcom/applovin/impl/r5;->v()V
 
-    .line 83
+    .line 94
     invoke-virtual/range {p0 .. p0}, Lcom/applovin/impl/r5;->g()Z
 
     move-result v5
@@ -4480,22 +4541,24 @@
 
     return v7
 
-    .line 84
+    .line 95
     :cond_3
     invoke-virtual/range {p0 .. p0}, Lcom/applovin/impl/r5;->b()V
 
     goto :goto_2
 
+    .line 96
     :cond_4
     iget-object v5, v1, Lcom/applovin/impl/r5;->q:Lcom/applovin/impl/r5$c;
 
     iput-object v5, v1, Lcom/applovin/impl/r5;->r:Lcom/applovin/impl/r5$c;
 
+    .line 97
     iput-object v8, v1, Lcom/applovin/impl/r5;->q:Lcom/applovin/impl/r5$c;
 
+    .line 98
     iget-object v5, v1, Lcom/applovin/impl/r5;->s:Landroid/media/AudioTrack;
 
-    .line 85
     invoke-static {v5}, Lcom/applovin/impl/r5;->a(Landroid/media/AudioTrack;)Z
 
     move-result v5
@@ -4508,32 +4571,33 @@
 
     if-eq v5, v9, :cond_5
 
+    .line 99
     iget-object v5, v1, Lcom/applovin/impl/r5;->s:Landroid/media/AudioTrack;
 
-    .line 86
-    invoke-static {v5}, Landroidx/core/view/r1;->j(Landroid/media/AudioTrack;)V
+    invoke-static {v5}, Lcom/applovin/exoplayer2/ui/k;->n(Landroid/media/AudioTrack;)V
 
+    .line 100
     iget-object v5, v1, Lcom/applovin/impl/r5;->s:Landroid/media/AudioTrack;
 
     iget-object v9, v1, Lcom/applovin/impl/r5;->r:Lcom/applovin/impl/r5$c;
 
-    .line 87
     iget-object v9, v9, Lcom/applovin/impl/r5$c;->a:Lcom/applovin/impl/e9;
 
     iget v10, v9, Lcom/applovin/impl/e9;->C:I
 
     iget v9, v9, Lcom/applovin/impl/e9;->D:I
 
-    invoke-static {v5, v10, v9}, Landroidx/core/view/r1;->k(Landroid/media/AudioTrack;II)V
+    invoke-static {v5, v10, v9}, Lcom/applovin/exoplayer2/ui/k;->o(Landroid/media/AudioTrack;II)V
 
+    .line 101
     iput-boolean v6, v1, Lcom/applovin/impl/r5;->Z:Z
 
-    .line 88
+    .line 102
     :cond_5
     :goto_2
     invoke-direct {v1, v2, v3}, Lcom/applovin/impl/r5;->a(J)V
 
-    .line 89
+    .line 103
     :cond_6
     invoke-direct/range {p0 .. p0}, Lcom/applovin/impl/r5;->t()Z
 
@@ -4541,7 +4605,7 @@
 
     if-nez v5, :cond_8
 
-    .line 90
+    .line 104
     :try_start_0
     invoke-direct/range {p0 .. p0}, Lcom/applovin/impl/r5;->s()V
     :try_end_0
@@ -4554,76 +4618,81 @@
 
     move-object v2, v0
 
+    .line 105
     iget-boolean v0, v2, Lcom/applovin/impl/r1$b;->b:Z
 
     if-nez v0, :cond_7
 
+    .line 106
     iget-object v0, v1, Lcom/applovin/impl/r5;->n:Lcom/applovin/impl/r5$g;
 
-    .line 91
     invoke-virtual {v0, v2}, Lcom/applovin/impl/r5$g;->a(Ljava/lang/Exception;)V
 
     return v7
 
-    .line 92
+    .line 107
     :cond_7
     throw v2
 
+    .line 108
     :cond_8
     :goto_3
     iget-object v5, v1, Lcom/applovin/impl/r5;->n:Lcom/applovin/impl/r5$g;
 
-    .line 93
     invoke-virtual {v5}, Lcom/applovin/impl/r5$g;->a()V
 
+    .line 109
     iget-boolean v5, v1, Lcom/applovin/impl/r5;->F:Z
 
     const-wide/16 v9, 0x0
 
     if-eqz v5, :cond_a
 
-    .line 94
+    .line 110
     invoke-static {v9, v10, v2, v3}, Ljava/lang/Math;->max(JJ)J
 
     move-result-wide v11
 
     iput-wide v11, v1, Lcom/applovin/impl/r5;->G:J
 
+    .line 111
     iput-boolean v7, v1, Lcom/applovin/impl/r5;->E:Z
 
+    .line 112
     iput-boolean v7, v1, Lcom/applovin/impl/r5;->F:Z
 
+    .line 113
     iget-boolean v5, v1, Lcom/applovin/impl/r5;->k:Z
 
     if-eqz v5, :cond_9
 
-    .line 95
     sget v5, Lcom/applovin/impl/xp;->a:I
 
     const/16 v11, 0x17
 
     if-lt v5, v11, :cond_9
 
+    .line 114
     iget-object v5, v1, Lcom/applovin/impl/r5;->w:Lcom/applovin/impl/ph;
 
-    .line 96
     invoke-direct {v1, v5}, Lcom/applovin/impl/r5;->b(Lcom/applovin/impl/ph;)V
 
-    .line 97
+    .line 115
     :cond_9
     invoke-direct {v1, v2, v3}, Lcom/applovin/impl/r5;->a(J)V
 
+    .line 116
     iget-boolean v5, v1, Lcom/applovin/impl/r5;->S:Z
 
     if-eqz v5, :cond_a
 
-    .line 98
+    .line 117
     invoke-virtual/range {p0 .. p0}, Lcom/applovin/impl/r5;->j()V
 
+    .line 118
     :cond_a
     iget-object v5, v1, Lcom/applovin/impl/r5;->i:Lcom/applovin/impl/u1;
 
-    .line 99
     invoke-direct/range {p0 .. p0}, Lcom/applovin/impl/r5;->r()J
 
     move-result-wide v11
@@ -4636,12 +4705,13 @@
 
     return v7
 
+    .line 119
     :cond_b
     iget-object v5, v1, Lcom/applovin/impl/r5;->K:Ljava/nio/ByteBuffer;
 
     if-nez v5, :cond_15
 
-    .line 100
+    .line 120
     invoke-virtual/range {p1 .. p1}, Ljava/nio/ByteBuffer;->order()Ljava/nio/ByteOrder;
 
     move-result-object v5
@@ -4660,7 +4730,7 @@
     :goto_4
     invoke-static {v5}, Lcom/applovin/impl/b1;->a(Z)V
 
-    .line 101
+    .line 121
     invoke-virtual/range {p1 .. p1}, Ljava/nio/Buffer;->hasRemaining()Z
 
     move-result v5
@@ -4669,10 +4739,10 @@
 
     return v6
 
+    .line 122
     :cond_d
     iget-object v5, v1, Lcom/applovin/impl/r5;->r:Lcom/applovin/impl/r5$c;
 
-    .line 102
     iget v11, v5, Lcom/applovin/impl/r5$c;->c:I
 
     if-eqz v11, :cond_e
@@ -4681,7 +4751,7 @@
 
     if-nez v11, :cond_e
 
-    .line 103
+    .line 123
     iget v5, v5, Lcom/applovin/impl/r5$c;->g:I
 
     invoke-static {v5, v0}, Lcom/applovin/impl/r5;->a(ILjava/nio/ByteBuffer;)I
@@ -4694,12 +4764,13 @@
 
     return v6
 
+    .line 124
     :cond_e
     iget-object v5, v1, Lcom/applovin/impl/r5;->u:Lcom/applovin/impl/r5$f;
 
     if-eqz v5, :cond_10
 
-    .line 104
+    .line 125
     invoke-direct/range {p0 .. p0}, Lcom/applovin/impl/r5;->l()Z
 
     move-result v5
@@ -4708,18 +4779,20 @@
 
     return v7
 
-    .line 105
+    .line 126
     :cond_f
     invoke-direct {v1, v2, v3}, Lcom/applovin/impl/r5;->a(J)V
 
+    .line 127
     iput-object v8, v1, Lcom/applovin/impl/r5;->u:Lcom/applovin/impl/r5$f;
 
+    .line 128
     :cond_10
     iget-wide v11, v1, Lcom/applovin/impl/r5;->G:J
 
     iget-object v5, v1, Lcom/applovin/impl/r5;->r:Lcom/applovin/impl/r5$c;
 
-    .line 106
+    .line 129
     invoke-direct/range {p0 .. p0}, Lcom/applovin/impl/r5;->q()J
 
     move-result-wide v13
@@ -4732,20 +4805,21 @@
 
     sub-long/2addr v13, v15
 
-    .line 107
+    .line 130
     invoke-virtual {v5, v13, v14}, Lcom/applovin/impl/r5$c;->d(J)J
 
     move-result-wide v13
 
     add-long/2addr v11, v13
 
+    .line 131
     iget-boolean v5, v1, Lcom/applovin/impl/r5;->E:Z
 
     if-nez v5, :cond_11
 
     sub-long v13, v11, v2
 
-    .line 108
+    .line 132
     invoke-static {v13, v14}, Ljava/lang/Math;->abs(J)J
 
     move-result-wide v13
@@ -4756,23 +4830,25 @@
 
     if-lez v5, :cond_11
 
+    .line 133
     iget-object v5, v1, Lcom/applovin/impl/r5;->p:Lcom/applovin/impl/r1$c;
 
-    .line 109
     new-instance v13, Lcom/applovin/impl/r1$d;
 
     invoke-direct {v13, v2, v3, v11, v12}, Lcom/applovin/impl/r1$d;-><init>(JJ)V
 
     invoke-interface {v5, v13}, Lcom/applovin/impl/r1$c;->a(Ljava/lang/Exception;)V
 
+    .line 134
     iput-boolean v6, v1, Lcom/applovin/impl/r5;->E:Z
 
+    .line 135
     :cond_11
     iget-boolean v5, v1, Lcom/applovin/impl/r5;->E:Z
 
     if-eqz v5, :cond_13
 
-    .line 110
+    .line 136
     invoke-direct/range {p0 .. p0}, Lcom/applovin/impl/r5;->l()Z
 
     move-result v5
@@ -4784,17 +4860,20 @@
     :cond_12
     sub-long v11, v2, v11
 
+    .line 137
     iget-wide v13, v1, Lcom/applovin/impl/r5;->G:J
 
     add-long/2addr v13, v11
 
     iput-wide v13, v1, Lcom/applovin/impl/r5;->G:J
 
+    .line 138
     iput-boolean v7, v1, Lcom/applovin/impl/r5;->E:Z
 
-    .line 111
+    .line 139
     invoke-direct {v1, v2, v3}, Lcom/applovin/impl/r5;->a(J)V
 
+    .line 140
     iget-object v5, v1, Lcom/applovin/impl/r5;->p:Lcom/applovin/impl/r1$c;
 
     if-eqz v5, :cond_13
@@ -4803,20 +4882,20 @@
 
     if-eqz v13, :cond_13
 
-    .line 112
+    .line 141
     invoke-interface {v5}, Lcom/applovin/impl/r1$c;->b()V
 
+    .line 142
     :cond_13
     iget-object v5, v1, Lcom/applovin/impl/r5;->r:Lcom/applovin/impl/r5$c;
 
-    .line 113
     iget v5, v5, Lcom/applovin/impl/r5$c;->c:I
 
     if-nez v5, :cond_14
 
+    .line 143
     iget-wide v9, v1, Lcom/applovin/impl/r5;->z:J
 
-    .line 114
     invoke-virtual/range {p1 .. p1}, Ljava/nio/Buffer;->remaining()I
 
     move-result v5
@@ -4829,6 +4908,7 @@
 
     goto :goto_5
 
+    .line 144
     :cond_14
     iget-wide v9, v1, Lcom/applovin/impl/r5;->A:J
 
@@ -4842,34 +4922,38 @@
 
     iput-wide v9, v1, Lcom/applovin/impl/r5;->A:J
 
+    .line 145
     :goto_5
     iput-object v0, v1, Lcom/applovin/impl/r5;->K:Ljava/nio/ByteBuffer;
 
+    .line 146
     iput v4, v1, Lcom/applovin/impl/r5;->L:I
 
-    .line 115
+    .line 147
     :cond_15
     invoke-direct {v1, v2, v3}, Lcom/applovin/impl/r5;->d(J)V
 
+    .line 148
     iget-object v0, v1, Lcom/applovin/impl/r5;->K:Ljava/nio/ByteBuffer;
 
-    .line 116
     invoke-virtual {v0}, Ljava/nio/Buffer;->hasRemaining()Z
 
     move-result v0
 
     if-nez v0, :cond_16
 
+    .line 149
     iput-object v8, v1, Lcom/applovin/impl/r5;->K:Ljava/nio/ByteBuffer;
 
+    .line 150
     iput v7, v1, Lcom/applovin/impl/r5;->L:I
 
     return v6
 
+    .line 151
     :cond_16
     iget-object v0, v1, Lcom/applovin/impl/r5;->i:Lcom/applovin/impl/u1;
 
-    .line 117
     invoke-direct/range {p0 .. p0}, Lcom/applovin/impl/r5;->r()J
 
     move-result-wide v2
@@ -4880,14 +4964,14 @@
 
     if-eqz v0, :cond_17
 
+    .line 152
     const-string v0, "DefaultAudioSink"
 
     const-string v2, "Resetting stalled audio track"
 
-    .line 118
     invoke-static {v0, v2}, Lcom/applovin/impl/oc;->d(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 119
+    .line 153
     invoke-virtual/range {p0 .. p0}, Lcom/applovin/impl/r5;->b()V
 
     return v6
@@ -4899,7 +4983,7 @@
 .method public b(Lcom/applovin/impl/e9;)I
     .locals 3
 
-    .line 30
+    .line 38
     iget-object v0, p1, Lcom/applovin/impl/e9;->m:Ljava/lang/String;
 
     const-string v1, "audio/raw"
@@ -4914,7 +4998,7 @@
 
     if-eqz v0, :cond_3
 
-    .line 31
+    .line 39
     iget v0, p1, Lcom/applovin/impl/e9;->B:I
 
     invoke-static {v0}, Lcom/applovin/impl/xp;->g(I)Z
@@ -4923,7 +5007,7 @@
 
     if-nez v0, :cond_0
 
-    .line 32
+    .line 40
     new-instance v0, Ljava/lang/StringBuilder;
 
     const-string v2, "Invalid PCM encoding: "
@@ -4944,7 +5028,7 @@
 
     return v1
 
-    .line 33
+    .line 41
     :cond_0
     iget p1, p1, Lcom/applovin/impl/e9;->B:I
 
@@ -4969,6 +5053,7 @@
     :goto_0
     return v2
 
+    .line 42
     :cond_3
     iget-boolean v0, p0, Lcom/applovin/impl/r5;->Y:Z
 
@@ -4976,7 +5061,6 @@
 
     iget-object v0, p0, Lcom/applovin/impl/r5;->t:Lcom/applovin/impl/l1;
 
-    .line 34
     invoke-direct {p0, p1, v0}, Lcom/applovin/impl/r5;->a(Lcom/applovin/impl/e9;Lcom/applovin/impl/l1;)Z
 
     move-result v0
@@ -4985,10 +5069,10 @@
 
     return v2
 
+    .line 43
     :cond_4
     iget-object v0, p0, Lcom/applovin/impl/r5;->a:Lcom/applovin/impl/n1;
 
-    .line 35
     invoke-static {p1, v0}, Lcom/applovin/impl/r5;->b(Lcom/applovin/impl/e9;Lcom/applovin/impl/n1;)Z
 
     move-result p1
@@ -5004,43 +5088,43 @@
 .method public b()V
     .locals 4
 
-    .line 17
+    .line 19
     invoke-direct {p0}, Lcom/applovin/impl/r5;->t()Z
 
     move-result v0
 
     if-eqz v0, :cond_4
 
-    .line 18
+    .line 20
     invoke-direct {p0}, Lcom/applovin/impl/r5;->w()V
 
+    .line 21
     iget-object v0, p0, Lcom/applovin/impl/r5;->i:Lcom/applovin/impl/u1;
 
-    .line 19
     invoke-virtual {v0}, Lcom/applovin/impl/u1;->d()Z
 
     move-result v0
 
     if-eqz v0, :cond_0
 
+    .line 22
     iget-object v0, p0, Lcom/applovin/impl/r5;->s:Landroid/media/AudioTrack;
 
-    .line 20
     invoke-virtual {v0}, Landroid/media/AudioTrack;->pause()V
 
+    .line 23
     :cond_0
     iget-object v0, p0, Lcom/applovin/impl/r5;->s:Landroid/media/AudioTrack;
 
-    .line 21
     invoke-static {v0}, Lcom/applovin/impl/r5;->a(Landroid/media/AudioTrack;)Z
 
     move-result v0
 
     if-eqz v0, :cond_1
 
+    .line 24
     iget-object v0, p0, Lcom/applovin/impl/r5;->m:Lcom/applovin/impl/r5$i;
 
-    .line 22
     invoke-static {v0}, Lcom/applovin/impl/b1;->a(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object v0
@@ -5051,14 +5135,16 @@
 
     invoke-virtual {v0, v1}, Lcom/applovin/impl/r5$i;->b(Landroid/media/AudioTrack;)V
 
+    .line 25
     :cond_1
     iget-object v0, p0, Lcom/applovin/impl/r5;->s:Landroid/media/AudioTrack;
 
     const/4 v1, 0x0
 
+    .line 26
     iput-object v1, p0, Lcom/applovin/impl/r5;->s:Landroid/media/AudioTrack;
 
-    .line 23
+    .line 27
     sget v2, Lcom/applovin/impl/xp;->a:I
 
     const/16 v3, 0x15
@@ -5071,47 +5157,51 @@
 
     const/4 v2, 0x0
 
+    .line 28
     iput v2, p0, Lcom/applovin/impl/r5;->U:I
 
+    .line 29
     :cond_2
     iget-object v2, p0, Lcom/applovin/impl/r5;->q:Lcom/applovin/impl/r5$c;
 
     if-eqz v2, :cond_3
 
+    .line 30
     iput-object v2, p0, Lcom/applovin/impl/r5;->r:Lcom/applovin/impl/r5$c;
 
+    .line 31
     iput-object v1, p0, Lcom/applovin/impl/r5;->q:Lcom/applovin/impl/r5$c;
 
+    .line 32
     :cond_3
     iget-object v1, p0, Lcom/applovin/impl/r5;->i:Lcom/applovin/impl/u1;
 
-    .line 24
     invoke-virtual {v1}, Lcom/applovin/impl/u1;->g()V
 
+    .line 33
     iget-object v1, p0, Lcom/applovin/impl/r5;->h:Landroid/os/ConditionVariable;
 
-    .line 25
     invoke-virtual {v1}, Landroid/os/ConditionVariable;->close()V
 
-    .line 26
+    .line 34
     new-instance v1, Lcom/applovin/impl/r5$a;
 
     const-string v2, "ExoPlayer:AudioTrackReleaseThread"
 
     invoke-direct {v1, p0, v2, v0}, Lcom/applovin/impl/r5$a;-><init>(Lcom/applovin/impl/r5;Ljava/lang/String;Landroid/media/AudioTrack;)V
 
-    .line 27
+    .line 35
     invoke-virtual {v1}, Ljava/lang/Thread;->start()V
 
+    .line 36
     :cond_4
     iget-object v0, p0, Lcom/applovin/impl/r5;->o:Lcom/applovin/impl/r5$g;
 
-    .line 28
     invoke-virtual {v0}, Lcom/applovin/impl/r5$g;->a()V
 
+    .line 37
     iget-object v0, p0, Lcom/applovin/impl/r5;->n:Lcom/applovin/impl/r5$g;
 
-    .line 29
     invoke-virtual {v0}, Lcom/applovin/impl/r5$g;->a()V
 
     return-void
@@ -5120,12 +5210,12 @@
 .method public b(Z)V
     .locals 1
 
-    .line 50
+    .line 60
     invoke-direct {p0}, Lcom/applovin/impl/r5;->n()Lcom/applovin/impl/ph;
 
     move-result-object v0
 
-    .line 51
+    .line 61
     invoke-direct {p0, v0, p1}, Lcom/applovin/impl/r5;->a(Lcom/applovin/impl/ph;Z)V
 
     return-void
@@ -5134,7 +5224,7 @@
 .method public c()Z
     .locals 1
 
-    .line 3
+    .line 4
     invoke-direct {p0}, Lcom/applovin/impl/r5;->t()Z
 
     move-result v0
@@ -5169,15 +5259,17 @@
 .method public d()V
     .locals 1
 
+    .line 2
     iget-boolean v0, p0, Lcom/applovin/impl/r5;->W:Z
 
     if-eqz v0, :cond_0
 
     const/4 v0, 0x0
 
+    .line 3
     iput-boolean v0, p0, Lcom/applovin/impl/r5;->W:Z
 
-    .line 2
+    .line 4
     invoke-virtual {p0}, Lcom/applovin/impl/r5;->b()V
 
     :cond_0
@@ -5206,18 +5298,20 @@
     :goto_0
     invoke-static {v0}, Lcom/applovin/impl/b1;->b(Z)V
 
+    .line 4
     iget-boolean v0, p0, Lcom/applovin/impl/r5;->T:Z
 
-    .line 4
     invoke-static {v0}, Lcom/applovin/impl/b1;->b(Z)V
 
+    .line 5
     iget-boolean v0, p0, Lcom/applovin/impl/r5;->W:Z
 
     if-nez v0, :cond_1
 
+    .line 6
     iput-boolean v2, p0, Lcom/applovin/impl/r5;->W:Z
 
-    .line 5
+    .line 7
     invoke-virtual {p0}, Lcom/applovin/impl/r5;->b()V
 
     :cond_1
@@ -5227,11 +5321,11 @@
 .method public f()V
     .locals 1
 
+    .line 2
     iget-boolean v0, p0, Lcom/applovin/impl/r5;->Q:Z
 
     if-nez v0, :cond_0
 
-    .line 2
     invoke-direct {p0}, Lcom/applovin/impl/r5;->t()Z
 
     move-result v0
@@ -5249,6 +5343,7 @@
 
     const/4 v0, 0x1
 
+    .line 4
     iput-boolean v0, p0, Lcom/applovin/impl/r5;->Q:Z
 
     :cond_0
@@ -5461,10 +5556,14 @@
 .method public i()V
     .locals 1
 
+    .line 1
     const/4 v0, 0x1
 
+    .line 2
     iput-boolean v0, p0, Lcom/applovin/impl/r5;->E:Z
 
+    .line 3
+    .line 4
     return-void
 .end method
 

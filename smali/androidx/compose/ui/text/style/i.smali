@@ -145,8 +145,11 @@
 .method public final hashCode()I
     .locals 1
 
+    .line 1
     iget v0, p0, Landroidx/compose/ui/text/style/i;->a:I
 
+    .line 2
+    .line 3
     return v0
 .end method
 
@@ -288,18 +291,18 @@
     .line 65
     .line 66
     .line 67
-    const/4 v2, 0x0
+    const-string v2, ", "
 
     .line 68
-    const/16 v3, 0x3e
-
     .line 69
+    const/4 v3, 0x0
+
     .line 70
-    const-string v4, ", "
+    const/16 v4, 0x3e
 
     .line 71
     .line 72
-    invoke-static {v1, v4, v2, v3}, Lcom/google/android/gms/internal/consent_sdk/w;->k(Ljava/util/List;Ljava/lang/String;Lzh/c;I)Ljava/lang/String;
+    invoke-static {v1, v2, v3, v4}, Lf4/g;->w(Ljava/util/List;Ljava/lang/String;Lka/c;I)Ljava/lang/String;
 
     .line 73
     .line 74
@@ -311,7 +314,7 @@
 
     .line 77
     .line 78
-    invoke-static {v0, v1, v2}, Lj0/d;->n(Ljava/lang/StringBuilder;Ljava/lang/String;C)Ljava/lang/String;
+    invoke-static {v0, v1, v2}, Landroidx/compose/runtime/a0;->s(Ljava/lang/StringBuilder;Ljava/lang/String;C)Ljava/lang/String;
 
     .line 79
     .line 80

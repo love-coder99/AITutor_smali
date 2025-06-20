@@ -4,17 +4,7 @@
 
 
 # annotations
-.annotation runtime Lkotlin/Metadata;
-    k = 0x3
-    mv = {
-        0x1,
-        0x8,
-        0x0
-    }
-    xi = 0x30
-.end annotation
-
-.annotation runtime Lth/c;
+.annotation runtime Lca/c;
     c = "androidx.paging.PageFetcherSnapshot$pageEventFlow$1$4$1"
     f = "PageFetcherSnapshot.kt"
     l = {
@@ -36,6 +26,16 @@
         0x2ec
     }
     m = "emit"
+.end annotation
+
+.annotation runtime Lkotlin/Metadata;
+    k = 0x3
+    mv = {
+        0x1,
+        0x8,
+        0x0
+    }
+    xi = 0x30
 .end annotation
 
 
@@ -60,22 +60,22 @@
 
 .field synthetic result:Ljava/lang/Object;
 
-.field final synthetic this$0:Landroidx/paging/v0;
+.field final synthetic this$0:Landroidx/paging/V;
     .annotation system Ldalvik/annotation/Signature;
         value = {
-            "Landroidx/paging/v0;"
+            "Landroidx/paging/V;"
         }
     .end annotation
 .end field
 
 
 # direct methods
-.method public constructor <init>(Landroidx/paging/v0;Lkotlin/coroutines/Continuation;)V
+.method public constructor <init>(Landroidx/paging/V;Lkotlin/coroutines/Continuation;)V
     .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
-            "Landroidx/paging/v0;",
+            "Landroidx/paging/V;",
             "Lkotlin/coroutines/Continuation<",
             "-",
             "Landroidx/paging/PageFetcherSnapshot$pageEventFlow$1$4$1$emit$1;",
@@ -83,7 +83,7 @@
         }
     .end annotation
 
-    iput-object p1, p0, Landroidx/paging/PageFetcherSnapshot$pageEventFlow$1$4$1$emit$1;->this$0:Landroidx/paging/v0;
+    iput-object p1, p0, Landroidx/paging/PageFetcherSnapshot$pageEventFlow$1$4$1$emit$1;->this$0:Landroidx/paging/V;
 
     invoke-direct {p0, p2}, Lkotlin/coroutines/jvm/internal/ContinuationImpl;-><init>(Lkotlin/coroutines/Continuation;)V
 
@@ -105,11 +105,9 @@
 
     iput p1, p0, Landroidx/paging/PageFetcherSnapshot$pageEventFlow$1$4$1$emit$1;->label:I
 
-    iget-object p1, p0, Landroidx/paging/PageFetcherSnapshot$pageEventFlow$1$4$1$emit$1;->this$0:Landroidx/paging/v0;
+    iget-object p1, p0, Landroidx/paging/PageFetcherSnapshot$pageEventFlow$1$4$1$emit$1;->this$0:Landroidx/paging/V;
 
-    const/4 v0, 0x0
-
-    invoke-virtual {p1, v0, p0}, Landroidx/paging/v0;->a(Lqh/r;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
+    invoke-virtual {p1, p0}, Landroidx/paging/V;->a(Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
 
     move-result-object p1
 

@@ -38,9 +38,9 @@
 .method private synthetic a()V
     .locals 2
 
+    .line 2
     iget-object v0, p0, Lcom/applovin/impl/wm$b$a;->b:Lcom/applovin/impl/wm$b;
 
-    .line 2
     iget-object v0, v0, Lcom/applovin/impl/wm$b;->m:Lcom/applovin/impl/wm;
 
     invoke-static {v0}, Lcom/applovin/impl/wm;->e(Lcom/applovin/impl/wm;)Lcom/applovin/impl/fe;
@@ -464,100 +464,96 @@
     move-result p1
 
     .line 205
-    xor-int/lit8 p1, p1, 0x1
+    if-nez p1, :cond_3
 
     .line 206
     .line 207
-    if-eqz p1, :cond_3
+    iget-object p1, p0, Lcom/applovin/impl/wm$b$a;->b:Lcom/applovin/impl/wm$b;
 
     .line 208
     .line 209
-    iget-object p1, p0, Lcom/applovin/impl/wm$b$a;->b:Lcom/applovin/impl/wm$b;
+    iget-object p1, p1, Lcom/applovin/impl/wm$b;->m:Lcom/applovin/impl/wm;
 
     .line 210
     .line 211
-    iget-object p1, p1, Lcom/applovin/impl/wm$b;->m:Lcom/applovin/impl/wm;
+    invoke-static {p1}, Lcom/applovin/impl/wm;->b(Lcom/applovin/impl/wm;)Ljava/util/concurrent/atomic/AtomicBoolean;
 
     .line 212
     .line 213
-    invoke-static {p1}, Lcom/applovin/impl/wm;->b(Lcom/applovin/impl/wm;)Ljava/util/concurrent/atomic/AtomicBoolean;
-
     .line 214
-    .line 215
-    .line 216
     move-result-object p1
 
-    .line 217
+    .line 215
     invoke-virtual {p1}, Ljava/util/concurrent/atomic/AtomicBoolean;->get()Z
 
+    .line 216
+    .line 217
     .line 218
-    .line 219
-    .line 220
     move-result p1
 
-    .line 221
+    .line 219
     if-eqz p1, :cond_3
+
+    .line 220
+    .line 221
+    iget-object p1, p0, Lcom/applovin/impl/wm$b$a;->b:Lcom/applovin/impl/wm$b;
 
     .line 222
     .line 223
-    iget-object p1, p0, Lcom/applovin/impl/wm$b$a;->b:Lcom/applovin/impl/wm$b;
+    iget-object p1, p1, Lcom/applovin/impl/wm$b;->m:Lcom/applovin/impl/wm;
 
     .line 224
     .line 225
-    iget-object p1, p1, Lcom/applovin/impl/wm$b;->m:Lcom/applovin/impl/wm;
+    invoke-static {p1}, Lcom/applovin/impl/wm;->c(Lcom/applovin/impl/wm;)Ljava/util/concurrent/atomic/AtomicBoolean;
 
     .line 226
     .line 227
-    invoke-static {p1}, Lcom/applovin/impl/wm;->c(Lcom/applovin/impl/wm;)Ljava/util/concurrent/atomic/AtomicBoolean;
-
     .line 228
-    .line 229
-    .line 230
     move-result-object p1
 
-    .line 231
+    .line 229
     invoke-virtual {p1}, Ljava/util/concurrent/atomic/AtomicBoolean;->get()Z
 
+    .line 230
+    .line 231
     .line 232
-    .line 233
-    .line 234
     move-result p1
 
-    .line 235
+    .line 233
     if-eqz p1, :cond_3
+
+    .line 234
+    .line 235
+    new-instance p1, Lcom/applovin/impl/mediation/MaxErrorImpl;
 
     .line 236
     .line 237
-    new-instance p1, Lcom/applovin/impl/mediation/MaxErrorImpl;
+    const/16 p2, -0x1389
 
     .line 238
     .line 239
-    const/16 p2, -0x1389
+    const-string v0, "MAX returned eligible ads from mediated networks, but all ads failed to load. Inspect getWaterfall() for more info."
 
     .line 240
     .line 241
-    const-string v0, "MAX returned eligible ads from mediated networks, but all ads failed to load. Inspect getWaterfall() for more info."
+    invoke-direct {p1, p2, v0}, Lcom/applovin/impl/mediation/MaxErrorImpl;-><init>(ILjava/lang/String;)V
 
     .line 242
     .line 243
-    invoke-direct {p1, p2, v0}, Lcom/applovin/impl/mediation/MaxErrorImpl;-><init>(ILjava/lang/String;)V
-
     .line 244
+    iget-object p2, p0, Lcom/applovin/impl/wm$b$a;->b:Lcom/applovin/impl/wm$b;
+
     .line 245
     .line 246
-    iget-object p2, p0, Lcom/applovin/impl/wm$b$a;->b:Lcom/applovin/impl/wm$b;
+    iget-object p2, p2, Lcom/applovin/impl/wm$b;->m:Lcom/applovin/impl/wm;
 
     .line 247
     .line 248
-    iget-object p2, p2, Lcom/applovin/impl/wm$b;->m:Lcom/applovin/impl/wm;
+    invoke-static {p2, p1}, Lcom/applovin/impl/wm;->a(Lcom/applovin/impl/wm;Lcom/applovin/mediation/MaxError;)V
 
     .line 249
     .line 250
-    invoke-static {p2, p1}, Lcom/applovin/impl/wm;->a(Lcom/applovin/impl/wm;Lcom/applovin/mediation/MaxError;)V
-
     .line 251
-    .line 252
-    .line 253
     :cond_3
     return-void
 .end method
@@ -960,14 +956,14 @@
     move-result-object p1
 
     .line 200
-    new-instance v3, Lcom/applovin/impl/wt;
+    new-instance v3, Lcom/applovin/impl/P0;
 
     .line 201
     .line 202
     const/4 v4, 0x3
 
     .line 203
-    invoke-direct {v3, p0, v4}, Lcom/applovin/impl/wt;-><init>(Ljava/lang/Object;I)V
+    invoke-direct {v3, p0, v4}, Lcom/applovin/impl/P0;-><init>(Ljava/lang/Object;I)V
 
     .line 204
     .line 205

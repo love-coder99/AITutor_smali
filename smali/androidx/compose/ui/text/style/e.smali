@@ -52,7 +52,7 @@
     const/4 v2, 0x1
 
     .line 11
-    invoke-static {v1, v2}, Lh5/f;->t(II)Z
+    invoke-static {v1, v2}, Lcom/facebook/appevents/g;->b(II)Z
 
     .line 12
     .line 13
@@ -85,7 +85,7 @@
 
     .line 25
     :cond_0
-    invoke-static {v1, v7}, Lh5/f;->t(II)Z
+    invoke-static {v1, v7}, Lcom/facebook/appevents/g;->b(II)Z
 
     .line 26
     .line 27
@@ -105,7 +105,7 @@
 
     .line 34
     :cond_1
-    invoke-static {v1, v4}, Lh5/f;->t(II)Z
+    invoke-static {v1, v4}, Lcom/facebook/appevents/g;->b(II)Z
 
     .line 35
     .line 36
@@ -125,7 +125,7 @@
 
     .line 43
     :cond_2
-    invoke-static {v1, v6}, Lh5/f;->t(II)Z
+    invoke-static {v1, v6}, Lcom/facebook/appevents/g;->b(II)Z
 
     .line 44
     .line 45
@@ -171,7 +171,7 @@
 
     .line 64
     .line 65
-    invoke-static {v1, v2}, Li7/g;->h(II)Z
+    invoke-static {v1, v2}, Lx7/c;->m(II)Z
 
     .line 66
     .line 67
@@ -191,7 +191,7 @@
 
     .line 74
     :cond_4
-    invoke-static {v1, v7}, Li7/g;->h(II)Z
+    invoke-static {v1, v7}, Lx7/c;->m(II)Z
 
     .line 75
     .line 76
@@ -211,7 +211,7 @@
 
     .line 83
     :cond_5
-    invoke-static {v1, v4}, Li7/g;->h(II)Z
+    invoke-static {v1, v4}, Lx7/c;->m(II)Z
 
     .line 84
     .line 85
@@ -234,7 +234,7 @@
     const/4 v3, 0x4
 
     .line 93
-    invoke-static {v1, v3}, Li7/g;->h(II)Z
+    invoke-static {v1, v3}, Lx7/c;->m(II)Z
 
     .line 94
     .line 95
@@ -254,7 +254,7 @@
 
     .line 102
     :cond_7
-    invoke-static {v1, v6}, Li7/g;->h(II)Z
+    invoke-static {v1, v6}, Lx7/c;->m(II)Z
 
     .line 103
     .line 104

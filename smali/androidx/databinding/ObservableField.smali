@@ -36,7 +36,7 @@
 .method public constructor <init>()V
     .locals 0
 
-    .line 2
+    .line 3
     invoke-direct {p0}, Landroidx/databinding/c;-><init>()V
 
     return-void
@@ -53,16 +53,17 @@
     .line 1
     invoke-direct {p0}, Landroidx/databinding/c;-><init>()V
 
+    .line 2
     iput-object p1, p0, Landroidx/databinding/ObservableField;->mValue:Ljava/lang/Object;
 
     return-void
 .end method
 
-.method public varargs constructor <init>([Landroidx/databinding/i;)V
+.method public varargs constructor <init>([Landroidx/databinding/h;)V
     .locals 0
 
-    .line 3
-    invoke-direct {p0, p1}, Landroidx/databinding/c;-><init>([Landroidx/databinding/i;)V
+    .line 4
+    invoke-direct {p0, p1}, Landroidx/databinding/c;-><init>([Landroidx/databinding/h;)V
 
     return-void
 .end method
@@ -71,14 +72,20 @@
 # virtual methods
 .method public get()Ljava/lang/Object;
     .locals 1
+    .annotation build Landroidx/annotation/Nullable;
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "()TT;"
         }
     .end annotation
 
+    .line 1
     iget-object v0, p0, Landroidx/databinding/ObservableField;->mValue:Ljava/lang/Object;
 
+    .line 2
+    .line 3
     return-object v0
 .end method
 

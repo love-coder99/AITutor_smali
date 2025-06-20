@@ -25,9 +25,9 @@
 .method public constructor <init>(Lcom/applovin/impl/f$k;)V
     .locals 0
 
+    .line 1
     iput-object p1, p0, Lcom/applovin/impl/f$k$a;->d:Lcom/applovin/impl/f$k;
 
-    .line 1
     invoke-direct {p0, p1}, Lcom/applovin/impl/f$j$a;-><init>(Lcom/applovin/impl/f$j;)V
 
     return-void
@@ -36,9 +36,10 @@
 .method public constructor <init>(Lcom/applovin/impl/f$k;I)V
     .locals 1
 
+    .line 2
     iput-object p1, p0, Lcom/applovin/impl/f$k$a;->d:Lcom/applovin/impl/f$k;
 
-    .line 2
+    .line 3
     invoke-virtual {p1}, Lcom/applovin/impl/f$k;->g()Ljava/util/List;
 
     move-result-object v0

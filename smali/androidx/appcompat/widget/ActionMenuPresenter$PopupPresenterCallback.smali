@@ -3,7 +3,7 @@
 .source "SourceFile"
 
 # interfaces
-.implements Landroidx/appcompat/view/menu/a0;
+.implements Landroidx/appcompat/view/menu/y;
 
 
 # annotations
@@ -40,11 +40,15 @@
 
 
 # virtual methods
-.method public onCloseMenu(Landroidx/appcompat/view/menu/p;Z)V
+.method public onCloseMenu(Landroidx/appcompat/view/menu/n;Z)V
     .locals 2
+    .param p1    # Landroidx/appcompat/view/menu/n;
+        .annotation build Landroidx/annotation/NonNull;
+        .end annotation
+    .end param
 
     .line 1
-    instance-of v0, p1, Landroidx/appcompat/view/menu/h0;
+    instance-of v0, p1, Landroidx/appcompat/view/menu/G;
 
     .line 2
     .line 3
@@ -52,57 +56,72 @@
 
     .line 4
     .line 5
-    invoke-virtual {p1}, Landroidx/appcompat/view/menu/p;->k()Landroidx/appcompat/view/menu/p;
+    move-object v0, p1
 
     .line 6
+    check-cast v0, Landroidx/appcompat/view/menu/G;
+
     .line 7
     .line 8
-    move-result-object v0
+    iget-object v0, v0, Landroidx/appcompat/view/menu/G;->B:Landroidx/appcompat/view/menu/n;
 
     .line 9
-    const/4 v1, 0x0
-
     .line 10
-    invoke-virtual {v0, v1}, Landroidx/appcompat/view/menu/p;->c(Z)V
+    invoke-virtual {v0}, Landroidx/appcompat/view/menu/n;->k()Landroidx/appcompat/view/menu/n;
 
     .line 11
     .line 12
     .line 13
-    :cond_0
-    iget-object v0, p0, Landroidx/appcompat/widget/ActionMenuPresenter$PopupPresenterCallback;->this$0:Landroidx/appcompat/widget/ActionMenuPresenter;
+    move-result-object v0
 
     .line 14
+    const/4 v1, 0x0
+
     .line 15
-    invoke-virtual {v0}, Landroidx/appcompat/view/menu/d;->getCallback()Landroidx/appcompat/view/menu/a0;
+    invoke-virtual {v0, v1}, Landroidx/appcompat/view/menu/n;->c(Z)V
 
     .line 16
     .line 17
     .line 18
-    move-result-object v0
+    :cond_0
+    iget-object v0, p0, Landroidx/appcompat/widget/ActionMenuPresenter$PopupPresenterCallback;->this$0:Landroidx/appcompat/widget/ActionMenuPresenter;
 
     .line 19
-    if-eqz v0, :cond_1
-
     .line 20
-    .line 21
-    invoke-interface {v0, p1, p2}, Landroidx/appcompat/view/menu/a0;->onCloseMenu(Landroidx/appcompat/view/menu/p;Z)V
+    invoke-virtual {v0}, Landroidx/appcompat/view/menu/d;->getCallback()Landroidx/appcompat/view/menu/y;
 
+    .line 21
     .line 22
     .line 23
+    move-result-object v0
+
     .line 24
+    if-eqz v0, :cond_1
+
+    .line 25
+    .line 26
+    invoke-interface {v0, p1, p2}, Landroidx/appcompat/view/menu/y;->onCloseMenu(Landroidx/appcompat/view/menu/n;Z)V
+
+    .line 27
+    .line 28
+    .line 29
     :cond_1
     return-void
 .end method
 
-.method public onOpenSubMenu(Landroidx/appcompat/view/menu/p;)Z
+.method public onOpenSubMenu(Landroidx/appcompat/view/menu/n;)Z
     .locals 3
+    .param p1    # Landroidx/appcompat/view/menu/n;
+        .annotation build Landroidx/annotation/NonNull;
+        .end annotation
+    .end param
 
     .line 1
     iget-object v0, p0, Landroidx/appcompat/widget/ActionMenuPresenter$PopupPresenterCallback;->this$0:Landroidx/appcompat/widget/ActionMenuPresenter;
 
     .line 2
     .line 3
-    invoke-static {v0}, Landroidx/appcompat/widget/ActionMenuPresenter;->access$300(Landroidx/appcompat/widget/ActionMenuPresenter;)Landroidx/appcompat/view/menu/p;
+    invoke-static {v0}, Landroidx/appcompat/widget/ActionMenuPresenter;->access$300(Landroidx/appcompat/widget/ActionMenuPresenter;)Landroidx/appcompat/view/menu/n;
 
     .line 4
     .line 5
@@ -128,15 +147,15 @@
     move-object v2, p1
 
     .line 14
-    check-cast v2, Landroidx/appcompat/view/menu/h0;
+    check-cast v2, Landroidx/appcompat/view/menu/G;
 
     .line 15
     .line 16
-    iget-object v2, v2, Landroidx/appcompat/view/menu/h0;->A:Landroidx/appcompat/view/menu/r;
+    iget-object v2, v2, Landroidx/appcompat/view/menu/G;->C:Landroidx/appcompat/view/menu/p;
 
     .line 17
     .line 18
-    iget v2, v2, Landroidx/appcompat/view/menu/r;->a:I
+    iget v2, v2, Landroidx/appcompat/view/menu/p;->b:I
 
     .line 19
     .line 20
@@ -144,7 +163,7 @@
 
     .line 21
     .line 22
-    invoke-virtual {v0}, Landroidx/appcompat/view/menu/d;->getCallback()Landroidx/appcompat/view/menu/a0;
+    invoke-virtual {v0}, Landroidx/appcompat/view/menu/d;->getCallback()Landroidx/appcompat/view/menu/y;
 
     .line 23
     .line 24
@@ -156,7 +175,7 @@
 
     .line 27
     .line 28
-    invoke-interface {v0, p1}, Landroidx/appcompat/view/menu/a0;->onOpenSubMenu(Landroidx/appcompat/view/menu/p;)Z
+    invoke-interface {v0, p1}, Landroidx/appcompat/view/menu/y;->onOpenSubMenu(Landroidx/appcompat/view/menu/n;)Z
 
     .line 29
     .line 30

@@ -92,9 +92,9 @@
 .method public a(Landroid/view/View;)V
     .locals 1
 
+    .line 9
     iget-object v0, p0, Lcom/applovin/impl/n9;->d:Landroid/view/ViewGroup;
 
-    .line 8
     invoke-virtual {v0, p1}, Landroid/view/ViewGroup;->removeView(Landroid/view/View;)V
 
     return-void
@@ -112,9 +112,9 @@
 
     if-nez v0, :cond_1
 
+    .line 2
     iget-object v0, p0, Lcom/applovin/impl/n9;->c:Lcom/applovin/impl/sdk/ad/b;
 
-    .line 2
     invoke-virtual {v0}, Lcom/applovin/impl/sdk/ad/b;->A0()Z
 
     move-result v0
@@ -131,9 +131,9 @@
     :goto_0
     or-int/lit8 v0, v0, 0x30
 
+    .line 3
     iget-object v1, p0, Lcom/applovin/impl/n9;->c:Lcom/applovin/impl/sdk/ad/b;
 
-    .line 3
     invoke-virtual {v1}, Lcom/applovin/impl/sdk/ad/b;->l()Lcom/applovin/impl/sdk/ad/b$d;
 
     move-result-object v1
@@ -174,11 +174,12 @@
 
     invoke-virtual {v0, v1, p1, v1, v2}, Landroid/view/ViewGroup$MarginLayoutParams;->setMargins(IIII)V
 
+    .line 7
     iput p2, v0, Landroid/widget/FrameLayout$LayoutParams;->gravity:I
 
+    .line 8
     iget-object p1, p0, Lcom/applovin/impl/n9;->d:Landroid/view/ViewGroup;
 
-    .line 7
     invoke-virtual {p1, p3, v0}, Landroid/view/ViewGroup;->addView(Landroid/view/View;Landroid/view/ViewGroup$LayoutParams;)V
 
     return-void

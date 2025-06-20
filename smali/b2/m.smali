@@ -1,59 +1,31 @@
-.class public final Lb2/m;
-.super Landroid/text/style/MetricAffectingSpan;
+.class public final LB2/m;
+.super Ljava/lang/Object;
 .source "SourceFile"
 
 
 # instance fields
-.field public final b:Landroid/graphics/Typeface;
+.field public final a:Ljava/lang/String;
+
+.field public final b:Landroidx/work/g;
 
 
 # direct methods
-.method public constructor <init>(Landroid/graphics/Typeface;)V
+.method public constructor <init>(Ljava/lang/String;Landroidx/work/g;)V
     .locals 0
 
     .line 1
-    invoke-direct {p0}, Landroid/text/style/MetricAffectingSpan;-><init>()V
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 2
     .line 3
     .line 4
-    iput-object p1, p0, Lb2/m;->b:Landroid/graphics/Typeface;
+    iput-object p1, p0, LB2/m;->a:Ljava/lang/String;
 
     .line 5
     .line 6
-    return-void
-.end method
+    iput-object p2, p0, LB2/m;->b:Landroidx/work/g;
 
-
-# virtual methods
-.method public final updateDrawState(Landroid/text/TextPaint;)V
-    .locals 1
-
-    .line 1
-    iget-object v0, p0, Lb2/m;->b:Landroid/graphics/Typeface;
-
-    .line 2
-    .line 3
-    invoke-virtual {p1, v0}, Landroid/graphics/Paint;->setTypeface(Landroid/graphics/Typeface;)Landroid/graphics/Typeface;
-
-    .line 4
-    .line 5
-    .line 6
-    return-void
-.end method
-
-.method public final updateMeasureState(Landroid/text/TextPaint;)V
-    .locals 1
-
-    .line 1
-    iget-object v0, p0, Lb2/m;->b:Landroid/graphics/Typeface;
-
-    .line 2
-    .line 3
-    invoke-virtual {p1, v0}, Landroid/graphics/Paint;->setTypeface(Landroid/graphics/Typeface;)Landroid/graphics/Typeface;
-
-    .line 4
-    .line 5
-    .line 6
+    .line 7
+    .line 8
     return-void
 .end method

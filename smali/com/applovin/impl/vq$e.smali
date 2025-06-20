@@ -197,8 +197,11 @@
 .method public static d()Lcom/applovin/impl/vq$e;
     .locals 1
 
+    .line 1
     sget-object v0, Lcom/applovin/impl/vq$e;->g:Lcom/applovin/impl/vq$e;
 
+    .line 2
+    .line 3
     return-object v0
 .end method
 

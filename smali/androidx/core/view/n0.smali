@@ -1,47 +1,57 @@
-.class public abstract Landroidx/core/view/n0;
-.super Ljava/lang/Object;
+.class public final Landroidx/core/view/N0;
+.super Landroidx/core/view/M0;
 .source "SourceFile"
 
 
-# direct methods
-.method public static a(Landroid/view/View;Landroid/view/WindowInsets;)Landroid/view/WindowInsets;
-    .locals 0
+# virtual methods
+.method public final g(Z)V
+    .locals 2
 
     .line 1
-    invoke-virtual {p0, p1}, Landroid/view/View;->dispatchApplyWindowInsets(Landroid/view/WindowInsets;)Landroid/view/WindowInsets;
+    const/16 v0, 0x10
 
     .line 2
     .line 3
-    .line 4
-    move-result-object p0
+    if-eqz p1, :cond_0
 
+    .line 4
     .line 5
-    return-object p0
-.end method
+    iget-object p1, p0, Landroidx/core/view/L0;->e:Landroid/view/Window;
 
-.method public static b(Landroid/view/View;Landroid/view/WindowInsets;)Landroid/view/WindowInsets;
-    .locals 0
+    .line 6
+    .line 7
+    const/high16 v1, 0x8000000
 
-    .line 1
-    invoke-virtual {p0, p1}, Landroid/view/View;->onApplyWindowInsets(Landroid/view/WindowInsets;)Landroid/view/WindowInsets;
+    .line 8
+    .line 9
+    invoke-virtual {p1, v1}, Landroid/view/Window;->clearFlags(I)V
 
-    .line 2
-    .line 3
-    .line 4
-    move-result-object p0
+    .line 10
+    .line 11
+    .line 12
+    const/high16 v1, -0x80000000
 
-    .line 5
-    return-object p0
-.end method
+    .line 13
+    .line 14
+    invoke-virtual {p1, v1}, Landroid/view/Window;->addFlags(I)V
 
-.method public static c(Landroid/view/View;)V
-    .locals 0
+    .line 15
+    .line 16
+    .line 17
+    invoke-virtual {p0, v0}, Landroidx/core/view/L0;->l(I)V
 
-    .line 1
-    invoke-virtual {p0}, Landroid/view/View;->requestApplyInsets()V
+    .line 18
+    .line 19
+    .line 20
+    goto :goto_0
 
-    .line 2
-    .line 3
-    .line 4
+    .line 21
+    :cond_0
+    invoke-virtual {p0, v0}, Landroidx/core/view/L0;->m(I)V
+
+    .line 22
+    .line 23
+    .line 24
+    :goto_0
     return-void
 .end method

@@ -1,651 +1,253 @@
-.class public abstract Landroidx/camera/core/impl/n0;
+.class public final Landroidx/camera/core/impl/n0;
 .super Ljava/lang/Object;
 .source "SourceFile"
 
-
-# static fields
-.field public static final k:Landroid/util/Size;
-
-.field public static final l:Z
-
-.field public static final m:Ljava/util/concurrent/atomic/AtomicInteger;
-
-.field public static final n:Ljava/util/concurrent/atomic/AtomicInteger;
+# interfaces
+.implements Landroidx/compose/animation/core/m;
+.implements Lcom/facebook/z;
 
 
 # instance fields
-.field public final a:Ljava/lang/Object;
-
-.field public b:I
-
-.field public c:Z
-
-.field public d:Landroidx/concurrent/futures/h;
-
-.field public final e:Landroidx/concurrent/futures/k;
-
-.field public f:Landroidx/concurrent/futures/h;
-
-.field public final g:Landroidx/concurrent/futures/k;
-
-.field public final h:Landroid/util/Size;
-
-.field public final i:I
-
-.field public j:Ljava/lang/Class;
+.field public final b:Ljava/util/ArrayList;
 
 
 # direct methods
-.method static constructor <clinit>()V
-    .locals 2
+.method public constructor <init>(FFLandroidx/compose/animation/core/l;)V
+    .locals 4
 
-    .line 1
-    new-instance v0, Landroid/util/Size;
-
-    .line 2
-    .line 3
-    const/4 v1, 0x0
-
-    .line 4
-    invoke-direct {v0, v1, v1}, Landroid/util/Size;-><init>(II)V
-
-    .line 5
-    .line 6
-    .line 7
-    sput-object v0, Landroidx/camera/core/impl/n0;->k:Landroid/util/Size;
-
-    .line 8
-    .line 9
-    const-string v0, "DeferrableSurface"
-
-    .line 10
-    .line 11
-    invoke-static {v0}, Lcom/facebook/appevents/g;->d(Ljava/lang/String;)Z
-
-    .line 12
     .line 13
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
     .line 14
+    invoke-virtual {p3}, Landroidx/compose/animation/core/l;->b()I
+
     move-result v0
 
+    const/4 v1, 0x0
+
+    invoke-static {v1, v0}, Landroid/support/v4/media/session/a;->z(II)Lqa/g;
+
+    move-result-object v0
+
     .line 15
-    sput-boolean v0, Landroidx/camera/core/impl/n0;->l:Z
+    new-instance v1, Ljava/util/ArrayList;
+
+    const/16 v2, 0xa
+
+    invoke-static {v0, v2}, LY9/s;->D(Ljava/lang/Iterable;I)I
+
+    move-result v2
+
+    invoke-direct {v1, v2}, Ljava/util/ArrayList;-><init>(I)V
 
     .line 16
+    invoke-virtual {v0}, Lqa/e;->iterator()Ljava/util/Iterator;
+
+    move-result-object v0
+
+    :goto_0
+    move-object v2, v0
+
+    check-cast v2, Lqa/f;
+
     .line 17
-    new-instance v0, Ljava/util/concurrent/atomic/AtomicInteger;
+    iget-boolean v2, v2, Lqa/f;->d:Z
+
+    if-eqz v2, :cond_0
 
     .line 18
+    move-object v2, v0
+
+    check-cast v2, LY9/A;
+
+    invoke-virtual {v2}, LY9/A;->a()I
+
+    move-result v2
+
     .line 19
-    invoke-direct {v0, v1}, Ljava/util/concurrent/atomic/AtomicInteger;-><init>(I)V
+    new-instance v3, Landroidx/compose/animation/core/y;
+
+    invoke-virtual {p3, v2}, Landroidx/compose/animation/core/l;->a(I)F
+
+    move-result v2
+
+    invoke-direct {v3, p1, p2, v2}, Landroidx/compose/animation/core/y;-><init>(FFF)V
 
     .line 20
+    invoke-virtual {v1, v3}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
+
+    goto :goto_0
+
     .line 21
-    .line 22
-    sput-object v0, Landroidx/camera/core/impl/n0;->m:Ljava/util/concurrent/atomic/AtomicInteger;
+    :cond_0
+    iput-object v1, p0, Landroidx/camera/core/impl/n0;->b:Ljava/util/ArrayList;
 
-    .line 23
-    .line 24
-    new-instance v0, Ljava/util/concurrent/atomic/AtomicInteger;
-
-    .line 25
-    .line 26
-    invoke-direct {v0, v1}, Ljava/util/concurrent/atomic/AtomicInteger;-><init>(I)V
-
-    .line 27
-    .line 28
-    .line 29
-    sput-object v0, Landroidx/camera/core/impl/n0;->n:Ljava/util/concurrent/atomic/AtomicInteger;
-
-    .line 30
-    .line 31
     return-void
 .end method
 
-.method public constructor <init>(ILandroid/util/Size;)V
-    .locals 2
+.method public constructor <init>(I)V
+    .locals 1
+
+    packed-switch p1, :pswitch_data_0
 
     .line 1
+    :pswitch_0
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 2
+    new-instance p1, Ljava/util/ArrayList;
+
+    invoke-direct {p1}, Ljava/util/ArrayList;-><init>()V
+
+    iput-object p1, p0, Landroidx/camera/core/impl/n0;->b:Ljava/util/ArrayList;
+
+    return-void
+
     .line 3
+    :pswitch_1
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
     .line 4
-    new-instance v0, Ljava/lang/Object;
+    new-instance p1, Ljava/util/ArrayList;
+
+    invoke-direct {p1}, Ljava/util/ArrayList;-><init>()V
+
+    iput-object p1, p0, Landroidx/camera/core/impl/n0;->b:Ljava/util/ArrayList;
+
+    return-void
 
     .line 5
+    :pswitch_2
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
     .line 6
-    invoke-direct {v0}, Ljava/lang/Object;-><init>()V
+    new-instance p1, Ljava/util/ArrayList;
+
+    const/16 v0, 0x14
+
+    invoke-direct {p1, v0}, Ljava/util/ArrayList;-><init>(I)V
+
+    iput-object p1, p0, Landroidx/camera/core/impl/n0;->b:Ljava/util/ArrayList;
+
+    return-void
 
     .line 7
+    :pswitch_3
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
     .line 8
+    new-instance p1, Ljava/util/ArrayList;
+
+    invoke-direct {p1}, Ljava/util/ArrayList;-><init>()V
+
+    iput-object p1, p0, Landroidx/camera/core/impl/n0;->b:Ljava/util/ArrayList;
+
+    return-void
+
     .line 9
-    iput-object v0, p0, Landroidx/camera/core/impl/n0;->a:Ljava/lang/Object;
+    :pswitch_4
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 10
-    .line 11
-    const/4 v0, 0x0
+    new-instance p1, Ljava/util/ArrayList;
 
-    .line 12
-    iput v0, p0, Landroidx/camera/core/impl/n0;->b:I
+    const/16 v0, 0x20
 
-    .line 13
-    .line 14
-    iput-boolean v0, p0, Landroidx/camera/core/impl/n0;->c:Z
+    invoke-direct {p1, v0}, Ljava/util/ArrayList;-><init>(I)V
 
-    .line 15
-    .line 16
-    iput-object p2, p0, Landroidx/camera/core/impl/n0;->h:Landroid/util/Size;
+    iput-object p1, p0, Landroidx/camera/core/impl/n0;->b:Ljava/util/ArrayList;
 
-    .line 17
-    .line 18
-    iput p1, p0, Landroidx/camera/core/impl/n0;->i:I
+    return-void
 
-    .line 19
-    .line 20
-    new-instance p1, Landroidx/camera/core/impl/m0;
+    :pswitch_data_0
+    .packed-switch 0x3
+        :pswitch_4
+        :pswitch_0
+        :pswitch_3
+        :pswitch_2
+        :pswitch_1
+    .end packed-switch
+.end method
 
-    .line 21
+.method public constructor <init>(Ljava/util/ArrayList;)V
+    .locals 0
+
     .line 22
-    invoke-direct {p1, p0, v0}, Landroidx/camera/core/impl/m0;-><init>(Landroidx/camera/core/impl/n0;I)V
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 23
-    .line 24
-    .line 25
-    invoke-static {p1}, Landroidx/concurrent/futures/l;->e(Landroidx/concurrent/futures/i;)Landroidx/concurrent/futures/k;
+    iput-object p1, p0, Landroidx/camera/core/impl/n0;->b:Ljava/util/ArrayList;
 
-    .line 26
-    .line 27
-    .line 28
-    move-result-object p1
-
-    .line 29
-    iput-object p1, p0, Landroidx/camera/core/impl/n0;->e:Landroidx/concurrent/futures/k;
-
-    .line 30
-    .line 31
-    new-instance p2, Landroidx/camera/core/impl/m0;
-
-    .line 32
-    .line 33
-    const/4 v0, 0x1
-
-    .line 34
-    invoke-direct {p2, p0, v0}, Landroidx/camera/core/impl/m0;-><init>(Landroidx/camera/core/impl/n0;I)V
-
-    .line 35
-    .line 36
-    .line 37
-    invoke-static {p2}, Landroidx/concurrent/futures/l;->e(Landroidx/concurrent/futures/i;)Landroidx/concurrent/futures/k;
-
-    .line 38
-    .line 39
-    .line 40
-    move-result-object p2
-
-    .line 41
-    iput-object p2, p0, Landroidx/camera/core/impl/n0;->g:Landroidx/concurrent/futures/k;
-
-    .line 42
-    .line 43
-    const-string p2, "DeferrableSurface"
-
-    .line 44
-    .line 45
-    invoke-static {p2}, Lcom/facebook/appevents/g;->d(Ljava/lang/String;)Z
-
-    .line 46
-    .line 47
-    .line 48
-    move-result p2
-
-    .line 49
-    if-eqz p2, :cond_0
-
-    .line 50
-    .line 51
-    sget-object p2, Landroidx/camera/core/impl/n0;->n:Ljava/util/concurrent/atomic/AtomicInteger;
-
-    .line 52
-    .line 53
-    invoke-virtual {p2}, Ljava/util/concurrent/atomic/AtomicInteger;->incrementAndGet()I
-
-    .line 54
-    .line 55
-    .line 56
-    sget-object p2, Landroidx/camera/core/impl/n0;->m:Ljava/util/concurrent/atomic/AtomicInteger;
-
-    .line 57
-    .line 58
-    invoke-virtual {p2}, Ljava/util/concurrent/atomic/AtomicInteger;->get()I
-
-    .line 59
-    .line 60
-    .line 61
-    invoke-virtual {p0}, Landroidx/camera/core/impl/n0;->e()V
-
-    .line 62
-    .line 63
-    .line 64
-    new-instance p2, Ljava/lang/Exception;
-
-    .line 65
-    .line 66
-    invoke-direct {p2}, Ljava/lang/Exception;-><init>()V
-
-    .line 67
-    .line 68
-    .line 69
-    invoke-static {p2}, Landroid/util/Log;->getStackTraceString(Ljava/lang/Throwable;)Ljava/lang/String;
-
-    .line 70
-    .line 71
-    .line 72
-    move-result-object p2
-
-    .line 73
-    new-instance v0, Landroidx/appcompat/app/t;
-
-    .line 74
-    .line 75
-    const/16 v1, 0x1a
-
-    .line 76
-    .line 77
-    invoke-direct {v0, p0, v1, p2}, Landroidx/appcompat/app/t;-><init>(Ljava/lang/Object;ILjava/lang/Object;)V
-
-    .line 78
-    .line 79
-    .line 80
-    invoke-static {}, Lkotlin/jvm/internal/g;->f()Lb0/a;
-
-    .line 81
-    .line 82
-    .line 83
-    move-result-object p2
-
-    .line 84
-    iget-object p1, p1, Landroidx/concurrent/futures/k;->c:Landroidx/concurrent/futures/j;
-
-    .line 85
-    .line 86
-    invoke-virtual {p1, v0, p2}, Landroidx/concurrent/futures/g;->a(Ljava/lang/Runnable;Ljava/util/concurrent/Executor;)V
-
-    .line 87
-    .line 88
-    .line 89
-    :cond_0
     return-void
 .end method
 
+.method public constructor <init>(Ljava/util/List;)V
+    .locals 1
 
-# virtual methods
-.method public a()V
-    .locals 4
+    .line 11
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    .line 12
+    new-instance v0, Ljava/util/ArrayList;
+
+    invoke-direct {v0, p1}, Ljava/util/ArrayList;-><init>(Ljava/util/Collection;)V
+
+    iput-object v0, p0, Landroidx/camera/core/impl/n0;->b:Ljava/util/ArrayList;
+
+    return-void
+.end method
+
+.method public static h(Landroidx/camera/core/impl/n0;)V
+    .locals 2
 
     .line 1
-    iget-object v0, p0, Landroidx/camera/core/impl/n0;->a:Ljava/lang/Object;
+    new-instance v0, Ljava/util/ArrayList;
 
     .line 2
     .line 3
-    monitor-enter v0
+    invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
 
     .line 4
-    :try_start_0
-    iget-boolean v1, p0, Landroidx/camera/core/impl/n0;->c:Z
-
     .line 5
     .line 6
-    const/4 v2, 0x0
+    iget-object p0, p0, Landroidx/camera/core/impl/n0;->b:Ljava/util/ArrayList;
 
     .line 7
-    if-nez v1, :cond_1
-
     .line 8
+    invoke-virtual {p0}, Ljava/util/ArrayList;->iterator()Ljava/util/Iterator;
+
     .line 9
-    const/4 v1, 0x1
-
     .line 10
-    iput-boolean v1, p0, Landroidx/camera/core/impl/n0;->c:Z
-
     .line 11
+    move-result-object p0
+
     .line 12
-    iget-object v1, p0, Landroidx/camera/core/impl/n0;->f:Landroidx/concurrent/futures/h;
-
-    .line 13
-    .line 14
-    invoke-virtual {v1, v2}, Landroidx/concurrent/futures/h;->b(Ljava/lang/Object;)Z
-
-    .line 15
-    .line 16
-    .line 17
-    iget v1, p0, Landroidx/camera/core/impl/n0;->b:I
-
-    .line 18
-    .line 19
-    if-nez v1, :cond_0
-
-    .line 20
-    .line 21
-    iget-object v1, p0, Landroidx/camera/core/impl/n0;->d:Landroidx/concurrent/futures/h;
-
-    .line 22
-    .line 23
-    iput-object v2, p0, Landroidx/camera/core/impl/n0;->d:Landroidx/concurrent/futures/h;
-
-    .line 24
-    .line 25
-    goto :goto_0
-
-    .line 26
-    :catchall_0
-    move-exception v1
-
-    .line 27
-    goto :goto_2
-
-    .line 28
-    :cond_0
-    move-object v1, v2
-
-    .line 29
     :goto_0
-    const-string v3, "DeferrableSurface"
-
-    .line 30
-    .line 31
-    invoke-static {v3}, Lcom/facebook/appevents/g;->d(Ljava/lang/String;)Z
-
-    .line 32
-    .line 33
-    .line 34
-    move-result v3
-
-    .line 35
-    if-eqz v3, :cond_2
-
-    .line 36
-    .line 37
-    const-string v3, "DeferrableSurface"
-
-    .line 38
-    .line 39
-    invoke-virtual {p0}, Ljava/lang/Object;->toString()Ljava/lang/String;
-
-    .line 40
-    .line 41
-    .line 42
-    invoke-static {v3}, Lcom/facebook/appevents/g;->i(Ljava/lang/String;)Ljava/lang/String;
-
-    .line 43
-    .line 44
-    .line 45
-    goto :goto_1
-
-    .line 46
-    :cond_1
-    move-object v1, v2
-
-    .line 47
-    :cond_2
-    :goto_1
-    monitor-exit v0
-    :try_end_0
-    .catchall {:try_start_0 .. :try_end_0} :catchall_0
-
-    .line 48
-    if-eqz v1, :cond_3
-
-    .line 49
-    .line 50
-    invoke-virtual {v1, v2}, Landroidx/concurrent/futures/h;->b(Ljava/lang/Object;)Z
-
-    .line 51
-    .line 52
-    .line 53
-    :cond_3
-    return-void
-
-    .line 54
-    :goto_2
-    :try_start_1
-    monitor-exit v0
-    :try_end_1
-    .catchall {:try_start_1 .. :try_end_1} :catchall_0
-
-    .line 55
-    throw v1
-.end method
-
-.method public final b()V
-    .locals 4
-
-    .line 1
-    iget-object v0, p0, Landroidx/camera/core/impl/n0;->a:Ljava/lang/Object;
-
-    .line 2
-    .line 3
-    monitor-enter v0
-
-    .line 4
-    :try_start_0
-    iget v1, p0, Landroidx/camera/core/impl/n0;->b:I
-
-    .line 5
-    .line 6
-    if-eqz v1, :cond_3
-
-    .line 7
-    .line 8
-    add-int/lit8 v1, v1, -0x1
-
-    .line 9
-    .line 10
-    iput v1, p0, Landroidx/camera/core/impl/n0;->b:I
-
-    .line 11
-    .line 12
-    const/4 v2, 0x0
+    invoke-interface {p0}, Ljava/util/Iterator;->hasNext()Z
 
     .line 13
-    if-nez v1, :cond_0
-
     .line 14
     .line 15
-    iget-boolean v1, p0, Landroidx/camera/core/impl/n0;->c:Z
+    move-result v1
 
     .line 16
-    .line 17
     if-eqz v1, :cond_0
 
-    .line 18
-    .line 19
-    iget-object v1, p0, Landroidx/camera/core/impl/n0;->d:Landroidx/concurrent/futures/h;
-
-    .line 20
-    .line 21
-    iput-object v2, p0, Landroidx/camera/core/impl/n0;->d:Landroidx/concurrent/futures/h;
-
-    .line 22
-    .line 23
-    goto :goto_0
-
-    .line 24
-    :catchall_0
-    move-exception v1
-
-    .line 25
-    goto :goto_1
-
-    .line 26
-    :cond_0
-    move-object v1, v2
-
-    .line 27
-    :goto_0
-    const-string v3, "DeferrableSurface"
-
-    .line 28
-    .line 29
-    invoke-static {v3}, Lcom/facebook/appevents/g;->d(Ljava/lang/String;)Z
-
-    .line 30
-    .line 31
-    .line 32
-    move-result v3
-
-    .line 33
-    if-eqz v3, :cond_1
-
-    .line 34
-    .line 35
-    const-string v3, "DeferrableSurface"
-
-    .line 36
-    .line 37
-    invoke-virtual {p0}, Ljava/lang/Object;->toString()Ljava/lang/String;
-
-    .line 38
-    .line 39
-    .line 40
-    invoke-static {v3}, Lcom/facebook/appevents/g;->i(Ljava/lang/String;)Ljava/lang/String;
-
-    .line 41
-    .line 42
-    .line 43
-    iget v3, p0, Landroidx/camera/core/impl/n0;->b:I
-
-    .line 44
-    .line 45
-    if-nez v3, :cond_1
-
-    .line 46
-    .line 47
-    sget-object v3, Landroidx/camera/core/impl/n0;->n:Ljava/util/concurrent/atomic/AtomicInteger;
-
-    .line 48
-    .line 49
-    invoke-virtual {v3}, Ljava/util/concurrent/atomic/AtomicInteger;->get()I
-
-    .line 50
-    .line 51
-    .line 52
-    sget-object v3, Landroidx/camera/core/impl/n0;->m:Ljava/util/concurrent/atomic/AtomicInteger;
-
-    .line 53
-    .line 54
-    invoke-virtual {v3}, Ljava/util/concurrent/atomic/AtomicInteger;->decrementAndGet()I
-
-    .line 55
-    .line 56
-    .line 57
-    invoke-virtual {p0}, Landroidx/camera/core/impl/n0;->e()V
-
-    .line 58
-    .line 59
-    .line 60
-    :cond_1
-    monitor-exit v0
-    :try_end_0
-    .catchall {:try_start_0 .. :try_end_0} :catchall_0
-
-    .line 61
-    if-eqz v1, :cond_2
-
-    .line 62
-    .line 63
-    invoke-virtual {v1, v2}, Landroidx/concurrent/futures/h;->b(Ljava/lang/Object;)Z
-
-    .line 64
-    .line 65
-    .line 66
-    :cond_2
-    return-void
-
-    .line 67
-    :cond_3
-    :try_start_1
-    new-instance v1, Ljava/lang/IllegalStateException;
-
-    .line 68
-    .line 69
-    const-string v2, "Decrementing use count occurs more times than incrementing"
-
-    .line 70
-    .line 71
-    invoke-direct {v1, v2}, Ljava/lang/IllegalStateException;-><init>(Ljava/lang/String;)V
-
-    .line 72
-    .line 73
-    .line 74
-    throw v1
-
-    .line 75
-    :goto_1
-    monitor-exit v0
-    :try_end_1
-    .catchall {:try_start_1 .. :try_end_1} :catchall_0
-
-    .line 76
-    throw v1
-.end method
-
-.method public final c()Lcom/google/common/util/concurrent/c;
-    .locals 3
-
-    .line 1
-    iget-object v0, p0, Landroidx/camera/core/impl/n0;->a:Ljava/lang/Object;
-
-    .line 2
-    .line 3
-    monitor-enter v0
-
-    .line 4
-    :try_start_0
-    iget-boolean v1, p0, Landroidx/camera/core/impl/n0;->c:Z
-
-    .line 5
-    .line 6
-    if-eqz v1, :cond_0
-
-    .line 7
-    .line 8
-    new-instance v1, Landroidx/camera/core/impl/DeferrableSurface$SurfaceClosedException;
-
-    .line 9
-    .line 10
-    const-string v2, "DeferrableSurface already closed."
-
-    .line 11
-    .line 12
-    invoke-direct {v1, v2, p0}, Landroidx/camera/core/impl/DeferrableSurface$SurfaceClosedException;-><init>(Ljava/lang/String;Landroidx/camera/core/impl/n0;)V
-
-    .line 13
-    .line 14
-    .line 15
-    new-instance v2, Lc0/m;
-
-    .line 16
     .line 17
-    invoke-direct {v2, v1}, Lc0/m;-><init>(Ljava/lang/Throwable;)V
-
     .line 18
+    invoke-interface {p0}, Ljava/util/Iterator;->next()Ljava/lang/Object;
+
     .line 19
     .line 20
-    monitor-exit v0
-
     .line 21
-    return-object v2
+    move-result-object v1
 
     .line 22
-    :catchall_0
-    move-exception v1
+    check-cast v1, Landroidx/camera/core/impl/i0;
 
     .line 23
-    goto :goto_0
-
     .line 24
-    :cond_0
-    invoke-virtual {p0}, Landroidx/camera/core/impl/n0;->f()Lcom/google/common/util/concurrent/c;
+    invoke-virtual {v1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
     .line 25
     .line 26
@@ -653,212 +255,825 @@
     move-result-object v1
 
     .line 28
-    monitor-exit v0
+    invoke-virtual {v1}, Ljava/lang/Class;->getSimpleName()Ljava/lang/String;
 
     .line 29
-    return-object v1
-
-    .line 30
-    :goto_0
-    monitor-exit v0
-    :try_end_0
-    .catchall {:try_start_0 .. :try_end_0} :catchall_0
-
-    .line 31
-    throw v1
-.end method
-
-.method public final d()V
-    .locals 3
-
-    .line 1
-    iget-object v0, p0, Landroidx/camera/core/impl/n0;->a:Ljava/lang/Object;
-
-    .line 2
-    .line 3
-    monitor-enter v0
-
-    .line 4
-    :try_start_0
-    iget v1, p0, Landroidx/camera/core/impl/n0;->b:I
-
-    .line 5
-    .line 6
-    if-nez v1, :cond_1
-
-    .line 7
-    .line 8
-    iget-boolean v2, p0, Landroidx/camera/core/impl/n0;->c:Z
-
-    .line 9
-    .line 10
-    if-nez v2, :cond_0
-
-    .line 11
-    .line 12
-    goto :goto_0
-
-    .line 13
-    :cond_0
-    new-instance v1, Landroidx/camera/core/impl/DeferrableSurface$SurfaceClosedException;
-
-    .line 14
-    .line 15
-    const-string v2, "Cannot begin use on a closed surface."
-
-    .line 16
-    .line 17
-    invoke-direct {v1, v2, p0}, Landroidx/camera/core/impl/DeferrableSurface$SurfaceClosedException;-><init>(Ljava/lang/String;Landroidx/camera/core/impl/n0;)V
-
-    .line 18
-    .line 19
-    .line 20
-    throw v1
-
-    .line 21
-    :catchall_0
-    move-exception v1
-
-    .line 22
-    goto :goto_1
-
-    .line 23
-    :cond_1
-    :goto_0
-    const/4 v2, 0x1
-
-    .line 24
-    add-int/2addr v1, v2
-
-    .line 25
-    iput v1, p0, Landroidx/camera/core/impl/n0;->b:I
-
-    .line 26
-    .line 27
-    const-string v1, "DeferrableSurface"
-
-    .line 28
-    .line 29
-    invoke-static {v1}, Lcom/facebook/appevents/g;->d(Ljava/lang/String;)Z
-
     .line 30
     .line 31
+    move-result-object v1
+
     .line 32
-    move-result v1
+    invoke-virtual {v0, v1}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
     .line 33
-    if-eqz v1, :cond_3
-
     .line 34
     .line 35
-    iget v1, p0, Landroidx/camera/core/impl/n0;->b:I
+    goto :goto_0
 
     .line 36
+    :cond_0
+    new-instance p0, Ljava/lang/StringBuilder;
+
     .line 37
-    if-ne v1, v2, :cond_2
-
     .line 38
-    .line 39
-    sget-object v1, Landroidx/camera/core/impl/n0;->n:Ljava/util/concurrent/atomic/AtomicInteger;
+    invoke-direct {p0}, Ljava/lang/StringBuilder;-><init>()V
 
+    .line 39
     .line 40
     .line 41
-    invoke-virtual {v1}, Ljava/util/concurrent/atomic/AtomicInteger;->get()I
+    invoke-virtual {v0}, Ljava/util/ArrayList;->iterator()Ljava/util/Iterator;
 
     .line 42
     .line 43
     .line 44
-    sget-object v1, Landroidx/camera/core/impl/n0;->m:Ljava/util/concurrent/atomic/AtomicInteger;
+    move-result-object v0
 
     .line 45
-    .line 46
-    invoke-virtual {v1}, Ljava/util/concurrent/atomic/AtomicInteger;->incrementAndGet()I
+    invoke-interface {v0}, Ljava/util/Iterator;->hasNext()Z
 
+    .line 46
     .line 47
     .line 48
+    move-result v1
+
     .line 49
-    invoke-virtual {p0}, Landroidx/camera/core/impl/n0;->e()V
+    if-eqz v1, :cond_1
 
     .line 50
     .line 51
-    .line 52
-    :cond_2
-    const-string v1, "DeferrableSurface"
+    :goto_1
+    invoke-interface {v0}, Ljava/util/Iterator;->next()Ljava/lang/Object;
 
+    .line 52
     .line 53
     .line 54
-    invoke-virtual {p0}, Ljava/lang/Object;->toString()Ljava/lang/String;
+    move-result-object v1
 
     .line 55
+    check-cast v1, Ljava/lang/CharSequence;
+
     .line 56
     .line 57
-    invoke-static {v1}, Lcom/facebook/appevents/g;->i(Ljava/lang/String;)Ljava/lang/String;
+    invoke-virtual {p0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/CharSequence;)Ljava/lang/StringBuilder;
 
     .line 58
     .line 59
     .line 60
-    :cond_3
-    monitor-exit v0
+    invoke-interface {v0}, Ljava/util/Iterator;->hasNext()Z
 
     .line 61
-    return-void
-
     .line 62
-    :goto_1
-    monitor-exit v0
-    :try_end_0
-    .catchall {:try_start_0 .. :try_end_0} :catchall_0
-
     .line 63
-    throw v1
+    move-result v1
+
+    .line 64
+    if-eqz v1, :cond_1
+
+    .line 65
+    .line 66
+    const-string v1, " | "
+
+    .line 67
+    .line 68
+    invoke-virtual {p0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/CharSequence;)Ljava/lang/StringBuilder;
+
+    .line 69
+    .line 70
+    .line 71
+    goto :goto_1
+
+    .line 72
+    :cond_1
+    return-void
 .end method
 
-.method public final e()V
-    .locals 2
+
+# virtual methods
+.method public a(Ljava/lang/String;Ljava/lang/String;)V
+    .locals 4
 
     .line 1
-    sget-boolean v0, Landroidx/camera/core/impl/n0;->l:Z
+    sget-object v0, Ljava/util/Locale;->US:Ljava/util/Locale;
 
     .line 2
     .line 3
-    const-string v1, "DeferrableSurface"
+    const-string v1, "UTF-8"
 
     .line 4
     .line 5
-    if-nez v0, :cond_0
+    invoke-static {p2, v1}, Ljava/net/URLEncoder;->encode(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     .line 6
     .line 7
-    invoke-static {v1}, Lcom/facebook/appevents/g;->d(Ljava/lang/String;)Z
+    .line 8
+    move-result-object p2
+
+    .line 9
+    const/4 v1, 0x2
+
+    .line 10
+    new-array v2, v1, [Ljava/lang/Object;
+
+    .line 11
+    .line 12
+    const/4 v3, 0x0
+
+    .line 13
+    aput-object p1, v2, v3
+
+    .line 14
+    .line 15
+    const/4 p1, 0x1
+
+    .line 16
+    aput-object p2, v2, p1
+
+    .line 17
+    .line 18
+    invoke-static {v2, v1}, Ljava/util/Arrays;->copyOf([Ljava/lang/Object;I)[Ljava/lang/Object;
+
+    .line 19
+    .line 20
+    .line 21
+    move-result-object p1
+
+    .line 22
+    const-string p2, "%s=%s"
+
+    .line 23
+    .line 24
+    invoke-static {v0, p2, p1}, Ljava/lang/String;->format(Ljava/util/Locale;Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;
+
+    .line 25
+    .line 26
+    .line 27
+    move-result-object p1
+
+    .line 28
+    iget-object p2, p0, Landroidx/camera/core/impl/n0;->b:Ljava/util/ArrayList;
+
+    .line 29
+    .line 30
+    invoke-virtual {p2, p1}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
+
+    .line 31
+    .line 32
+    .line 33
+    return-void
+.end method
+
+.method public b(Ljava/lang/Class;)Z
+    .locals 2
+
+    .line 1
+    iget-object v0, p0, Landroidx/camera/core/impl/n0;->b:Ljava/util/ArrayList;
+
+    .line 2
+    .line 3
+    invoke-virtual {v0}, Ljava/util/ArrayList;->iterator()Ljava/util/Iterator;
+
+    .line 4
+    .line 5
+    .line 6
+    move-result-object v0
+
+    .line 7
+    :cond_0
+    invoke-interface {v0}, Ljava/util/Iterator;->hasNext()Z
 
     .line 8
     .line 9
     .line 10
-    move-result v0
+    move-result v1
 
     .line 11
-    if-eqz v0, :cond_0
+    if-eqz v1, :cond_1
 
     .line 12
     .line 13
-    invoke-static {v1}, Lcom/facebook/appevents/g;->i(Ljava/lang/String;)Ljava/lang/String;
+    invoke-interface {v0}, Ljava/util/Iterator;->next()Ljava/lang/Object;
 
     .line 14
     .line 15
     .line 16
-    :cond_0
-    invoke-virtual {p0}, Ljava/lang/Object;->toString()Ljava/lang/String;
+    move-result-object v1
 
     .line 17
+    check-cast v1, Landroidx/camera/core/impl/i0;
+
     .line 18
     .line 19
-    invoke-static {v1}, Lcom/facebook/appevents/g;->i(Ljava/lang/String;)Ljava/lang/String;
+    invoke-virtual {v1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
     .line 20
     .line 21
     .line 22
+    move-result-object v1
+
+    .line 23
+    invoke-virtual {p1, v1}, Ljava/lang/Class;->isAssignableFrom(Ljava/lang/Class;)Z
+
+    .line 24
+    .line 25
+    .line 26
+    move-result v1
+
+    .line 27
+    if-eqz v1, :cond_0
+
+    .line 28
+    .line 29
+    const/4 p1, 0x1
+
+    .line 30
+    return p1
+
+    .line 31
+    :cond_1
+    const/4 p1, 0x0
+
+    .line 32
+    return p1
+.end method
+
+.method public c(Ljava/lang/Class;)Landroidx/camera/core/impl/i0;
+    .locals 3
+
+    .line 1
+    iget-object v0, p0, Landroidx/camera/core/impl/n0;->b:Ljava/util/ArrayList;
+
+    .line 2
+    .line 3
+    invoke-virtual {v0}, Ljava/util/ArrayList;->iterator()Ljava/util/Iterator;
+
+    .line 4
+    .line 5
+    .line 6
+    move-result-object v0
+
+    .line 7
+    :cond_0
+    invoke-interface {v0}, Ljava/util/Iterator;->hasNext()Z
+
+    .line 8
+    .line 9
+    .line 10
+    move-result v1
+
+    .line 11
+    if-eqz v1, :cond_1
+
+    .line 12
+    .line 13
+    invoke-interface {v0}, Ljava/util/Iterator;->next()Ljava/lang/Object;
+
+    .line 14
+    .line 15
+    .line 16
+    move-result-object v1
+
+    .line 17
+    check-cast v1, Landroidx/camera/core/impl/i0;
+
+    .line 18
+    .line 19
+    invoke-virtual {v1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    .line 20
+    .line 21
+    .line 22
+    move-result-object v2
+
+    .line 23
+    if-ne v2, p1, :cond_0
+
+    .line 24
+    .line 25
+    return-object v1
+
+    .line 26
+    :cond_1
+    const/4 p1, 0x0
+
+    .line 27
+    return-object p1
+.end method
+
+.method public declared-synchronized d(Ljava/lang/Class;Ljava/lang/Class;)Lh3/a;
+    .locals 3
+
+    .line 1
+    monitor-enter p0
+
+    .line 2
+    :try_start_0
+    invoke-virtual {p2, p1}, Ljava/lang/Class;->isAssignableFrom(Ljava/lang/Class;)Z
+
+    .line 3
+    .line 4
+    .line 5
+    move-result v0
+
+    .line 6
+    if-eqz v0, :cond_0
+
+    .line 7
+    .line 8
+    sget-object p1, Lh3/c;->c:Lh3/c;
+    :try_end_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+
+    .line 9
+    .line 10
+    monitor-exit p0
+
+    .line 11
+    return-object p1
+
+    .line 12
+    :cond_0
+    :try_start_1
+    iget-object v0, p0, Landroidx/camera/core/impl/n0;->b:Ljava/util/ArrayList;
+
+    .line 13
+    .line 14
+    invoke-virtual {v0}, Ljava/util/ArrayList;->iterator()Ljava/util/Iterator;
+
+    .line 15
+    .line 16
+    .line 17
+    move-result-object v0
+
+    .line 18
+    :cond_1
+    invoke-interface {v0}, Ljava/util/Iterator;->hasNext()Z
+
+    .line 19
+    .line 20
+    .line 21
+    move-result v1
+
+    .line 22
+    if-eqz v1, :cond_3
+
+    .line 23
+    .line 24
+    invoke-interface {v0}, Ljava/util/Iterator;->next()Ljava/lang/Object;
+
+    .line 25
+    .line 26
+    .line 27
+    move-result-object v1
+
+    .line 28
+    check-cast v1, Lh3/b;
+
+    .line 29
+    .line 30
+    iget-object v2, v1, Lh3/b;->a:Ljava/lang/Class;
+
+    .line 31
+    .line 32
+    invoke-virtual {v2, p1}, Ljava/lang/Class;->isAssignableFrom(Ljava/lang/Class;)Z
+
+    .line 33
+    .line 34
+    .line 35
+    move-result v2
+
+    .line 36
+    if-eqz v2, :cond_2
+
+    .line 37
+    .line 38
+    iget-object v2, v1, Lh3/b;->b:Ljava/lang/Class;
+
+    .line 39
+    .line 40
+    invoke-virtual {p2, v2}, Ljava/lang/Class;->isAssignableFrom(Ljava/lang/Class;)Z
+
+    .line 41
+    .line 42
+    .line 43
+    move-result v2
+
+    .line 44
+    if-eqz v2, :cond_2
+
+    .line 45
+    .line 46
+    const/4 v2, 0x1
+
+    .line 47
+    goto :goto_0
+
+    .line 48
+    :cond_2
+    const/4 v2, 0x0
+
+    .line 49
+    :goto_0
+    if-eqz v2, :cond_1
+
+    .line 50
+    .line 51
+    iget-object p1, v1, Lh3/b;->c:Lh3/a;
+    :try_end_1
+    .catchall {:try_start_1 .. :try_end_1} :catchall_0
+
+    .line 52
+    .line 53
+    monitor-exit p0
+
+    .line 54
+    return-object p1
+
+    .line 55
+    :catchall_0
+    move-exception p1
+
+    .line 56
+    goto :goto_1
+
+    .line 57
+    :cond_3
+    :try_start_2
+    new-instance v0, Ljava/lang/IllegalArgumentException;
+
+    .line 58
+    .line 59
+    new-instance v1, Ljava/lang/StringBuilder;
+
+    .line 60
+    .line 61
+    invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
+
+    .line 62
+    .line 63
+    .line 64
+    const-string v2, "No transcoder registered to transcode from "
+
+    .line 65
+    .line 66
+    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 67
+    .line 68
+    .line 69
+    invoke-virtual {v1, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+
+    .line 70
+    .line 71
+    .line 72
+    const-string p1, " to "
+
+    .line 73
+    .line 74
+    invoke-virtual {v1, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 75
+    .line 76
+    .line 77
+    invoke-virtual {v1, p2}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+
+    .line 78
+    .line 79
+    .line 80
+    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    .line 81
+    .line 82
+    .line 83
+    move-result-object p1
+
+    .line 84
+    invoke-direct {v0, p1}, Ljava/lang/IllegalArgumentException;-><init>(Ljava/lang/String;)V
+
+    .line 85
+    .line 86
+    .line 87
+    throw v0
+
+    .line 88
+    :goto_1
+    monitor-exit p0
+    :try_end_2
+    .catchall {:try_start_2 .. :try_end_2} :catchall_0
+
+    .line 89
+    throw p1
+.end method
+
+.method public e(Ljava/lang/Class;)Ljava/util/ArrayList;
+    .locals 4
+
+    .line 1
+    new-instance v0, Ljava/util/ArrayList;
+
+    .line 2
+    .line 3
+    invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
+
+    .line 4
+    .line 5
+    .line 6
+    iget-object v1, p0, Landroidx/camera/core/impl/n0;->b:Ljava/util/ArrayList;
+
+    .line 7
+    .line 8
+    invoke-virtual {v1}, Ljava/util/ArrayList;->iterator()Ljava/util/Iterator;
+
+    .line 9
+    .line 10
+    .line 11
+    move-result-object v1
+
+    .line 12
+    :cond_0
+    :goto_0
+    invoke-interface {v1}, Ljava/util/Iterator;->hasNext()Z
+
+    .line 13
+    .line 14
+    .line 15
+    move-result v2
+
+    .line 16
+    if-eqz v2, :cond_1
+
+    .line 17
+    .line 18
+    invoke-interface {v1}, Ljava/util/Iterator;->next()Ljava/lang/Object;
+
+    .line 19
+    .line 20
+    .line 21
+    move-result-object v2
+
+    .line 22
+    check-cast v2, Landroidx/camera/core/impl/i0;
+
+    .line 23
+    .line 24
+    invoke-virtual {v2}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    .line 25
+    .line 26
+    .line 27
+    move-result-object v3
+
+    .line 28
+    invoke-virtual {p1, v3}, Ljava/lang/Class;->isAssignableFrom(Ljava/lang/Class;)Z
+
+    .line 29
+    .line 30
+    .line 31
+    move-result v3
+
+    .line 32
+    if-eqz v3, :cond_0
+
+    .line 33
+    .line 34
+    invoke-virtual {v0, v2}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
+
+    .line 35
+    .line 36
+    .line 37
+    goto :goto_0
+
+    .line 38
+    :cond_1
+    return-object v0
+.end method
+
+.method public declared-synchronized f(Ljava/lang/Class;Ljava/lang/Class;)Ljava/util/ArrayList;
+    .locals 4
+
+    .line 1
+    monitor-enter p0
+
+    .line 2
+    :try_start_0
+    new-instance v0, Ljava/util/ArrayList;
+
+    .line 3
+    .line 4
+    invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
+
+    .line 5
+    .line 6
+    .line 7
+    invoke-virtual {p2, p1}, Ljava/lang/Class;->isAssignableFrom(Ljava/lang/Class;)Z
+
+    .line 8
+    .line 9
+    .line 10
+    move-result v1
+
+    .line 11
+    if-eqz v1, :cond_0
+
+    .line 12
+    .line 13
+    invoke-virtual {v0, p2}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
+    :try_end_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+
+    .line 14
+    .line 15
+    .line 16
+    monitor-exit p0
+
+    .line 17
+    return-object v0
+
+    .line 18
+    :catchall_0
+    move-exception p1
+
+    .line 19
+    goto :goto_2
+
+    .line 20
+    :cond_0
+    :try_start_1
+    iget-object v1, p0, Landroidx/camera/core/impl/n0;->b:Ljava/util/ArrayList;
+
+    .line 21
+    .line 22
+    invoke-virtual {v1}, Ljava/util/ArrayList;->iterator()Ljava/util/Iterator;
+
+    .line 23
+    .line 24
+    .line 25
+    move-result-object v1
+
+    .line 26
+    :cond_1
+    :goto_0
+    invoke-interface {v1}, Ljava/util/Iterator;->hasNext()Z
+
+    .line 27
+    .line 28
+    .line 29
+    move-result v2
+
+    .line 30
+    if-eqz v2, :cond_3
+
+    .line 31
+    .line 32
+    invoke-interface {v1}, Ljava/util/Iterator;->next()Ljava/lang/Object;
+
+    .line 33
+    .line 34
+    .line 35
+    move-result-object v2
+
+    .line 36
+    check-cast v2, Lh3/b;
+
+    .line 37
+    .line 38
+    iget-object v3, v2, Lh3/b;->a:Ljava/lang/Class;
+
+    .line 39
+    .line 40
+    invoke-virtual {v3, p1}, Ljava/lang/Class;->isAssignableFrom(Ljava/lang/Class;)Z
+
+    .line 41
+    .line 42
+    .line 43
+    move-result v3
+
+    .line 44
+    if-eqz v3, :cond_2
+
+    .line 45
+    .line 46
+    iget-object v3, v2, Lh3/b;->b:Ljava/lang/Class;
+
+    .line 47
+    .line 48
+    invoke-virtual {p2, v3}, Ljava/lang/Class;->isAssignableFrom(Ljava/lang/Class;)Z
+
+    .line 49
+    .line 50
+    .line 51
+    move-result v3
+
+    .line 52
+    if-eqz v3, :cond_2
+
+    .line 53
+    .line 54
+    const/4 v3, 0x1
+
+    .line 55
+    goto :goto_1
+
+    .line 56
+    :cond_2
+    const/4 v3, 0x0
+
+    .line 57
+    :goto_1
+    if-eqz v3, :cond_1
+
+    .line 58
+    .line 59
+    iget-object v3, v2, Lh3/b;->b:Ljava/lang/Class;
+
+    .line 60
+    .line 61
+    invoke-virtual {v0, v3}, Ljava/util/ArrayList;->contains(Ljava/lang/Object;)Z
+
+    .line 62
+    .line 63
+    .line 64
+    move-result v3
+
+    .line 65
+    if-nez v3, :cond_1
+
+    .line 66
+    .line 67
+    iget-object v2, v2, Lh3/b;->b:Ljava/lang/Class;
+
+    .line 68
+    .line 69
+    invoke-virtual {v0, v2}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
+    :try_end_1
+    .catchall {:try_start_1 .. :try_end_1} :catchall_0
+
+    .line 70
+    .line 71
+    .line 72
+    goto :goto_0
+
+    .line 73
+    :cond_3
+    monitor-exit p0
+
+    .line 74
+    return-object v0
+
+    .line 75
+    :goto_2
+    :try_start_2
+    monitor-exit p0
+    :try_end_2
+    .catchall {:try_start_2 .. :try_end_2} :catchall_0
+
+    .line 76
+    throw p1
+.end method
+
+.method public g(FF)V
+    .locals 2
+
+    .line 1
+    iget-object v0, p0, Landroidx/camera/core/impl/n0;->b:Ljava/util/ArrayList;
+
+    .line 2
+    .line 3
+    new-instance v1, Landroidx/compose/ui/graphics/vector/k;
+
+    .line 4
+    .line 5
+    invoke-direct {v1, p1, p2}, Landroidx/compose/ui/graphics/vector/k;-><init>(FF)V
+
+    .line 6
+    .line 7
+    .line 8
+    invoke-virtual {v0, v1}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
+
+    .line 9
+    .line 10
+    .line 11
     return-void
 .end method
 
-.method public abstract f()Lcom/google/common/util/concurrent/c;
+.method public get(I)Landroidx/compose/animation/core/x;
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, Landroidx/camera/core/impl/n0;->b:Ljava/util/ArrayList;
+
+    .line 2
+    .line 3
+    invoke-virtual {v0, p1}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
+
+    .line 4
+    .line 5
+    .line 6
+    move-result-object p1
+
+    .line 7
+    check-cast p1, Landroidx/compose/animation/core/y;
+
+    .line 8
+    .line 9
+    return-object p1
 .end method

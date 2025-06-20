@@ -34,9 +34,9 @@
 .method public static a(Ljava/lang/String;)F
     .locals 2
 
+    .line 3
     const-string v0, "%"
 
-    .line 3
     invoke-virtual {p0, v0}, Ljava/lang/String;->endsWith(Ljava/lang/String;)Z
 
     move-result v0
@@ -87,9 +87,9 @@
 
     if-eqz p0, :cond_0
 
+    .line 2
     const-string v0, "WEBVTT"
 
-    .line 2
     invoke-virtual {p0, v0}, Ljava/lang/String;->startsWith(Ljava/lang/String;)Z
 
     move-result p0
@@ -110,9 +110,9 @@
 .method public static b(Ljava/lang/String;)J
     .locals 8
 
+    .line 1
     const-string v0, "\\."
 
-    .line 1
     invoke-static {p0, v0}, Lcom/applovin/impl/xp;->b(Ljava/lang/String;Ljava/lang/String;)[Ljava/lang/String;
 
     move-result-object p0

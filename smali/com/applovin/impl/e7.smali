@@ -15,30 +15,57 @@
 .method static constructor <clinit>()V
     .locals 2
 
+    .line 1
     const/16 v0, 0x10
 
+    .line 2
+    .line 3
     new-array v1, v0, [I
 
+    .line 4
+    .line 5
     fill-array-data v1, :array_0
 
+    .line 6
+    .line 7
+    .line 8
     sput-object v1, Lcom/applovin/impl/e7;->a:[I
 
+    .line 9
+    .line 10
     new-array v0, v0, [I
 
+    .line 11
+    .line 12
     fill-array-data v0, :array_1
 
+    .line 13
+    .line 14
+    .line 15
     sput-object v0, Lcom/applovin/impl/e7;->b:[I
 
+    .line 16
+    .line 17
     const/16 v0, 0x1d
 
+    .line 18
+    .line 19
     new-array v0, v0, [I
 
+    .line 20
+    .line 21
     fill-array-data v0, :array_2
 
+    .line 22
+    .line 23
+    .line 24
     sput-object v0, Lcom/applovin/impl/e7;->c:[I
 
+    .line 25
+    .line 26
     return-void
 
+    .line 27
     :array_0
     .array-data 4
         0x1
@@ -59,6 +86,7 @@
         0x8
     .end array-data
 
+    .line 28
     :array_1
     .array-data 4
         -0x1
@@ -401,9 +429,9 @@
 
     move-result v0
 
+    .line 17
     sget-object v1, Lcom/applovin/impl/e7;->a:[I
 
-    .line 17
     aget v0, v1, v0
 
     const/4 v1, 0x4
@@ -413,9 +441,9 @@
 
     move-result v1
 
+    .line 19
     sget-object v2, Lcom/applovin/impl/e7;->b:[I
 
-    .line 19
     aget v1, v2, v1
 
     const/4 v2, 0x5
@@ -425,9 +453,9 @@
 
     move-result v2
 
+    .line 21
     sget-object v3, Lcom/applovin/impl/e7;->c:[I
 
-    .line 21
     array-length v4, v3
 
     const/4 v5, 0x2
@@ -479,9 +507,9 @@
 
     move-result-object p0
 
+    .line 27
     const-string p1, "audio/vnd.dts"
 
-    .line 27
     invoke-virtual {p0, p1}, Lcom/applovin/impl/e9$b;->f(Ljava/lang/String;)Lcom/applovin/impl/e9$b;
 
     move-result-object p0

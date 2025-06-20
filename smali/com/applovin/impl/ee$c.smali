@@ -95,15 +95,17 @@
 .method public a(I)V
     .locals 0
 
+    .line 2
     iput p1, p0, Lcom/applovin/impl/ee$c;->d:I
 
     const/4 p1, 0x0
 
+    .line 3
     iput-boolean p1, p0, Lcom/applovin/impl/ee$c;->e:Z
 
+    .line 4
     iget-object p1, p0, Lcom/applovin/impl/ee$c;->c:Ljava/util/List;
 
-    .line 2
     invoke-interface {p1}, Ljava/util/List;->clear()V
 
     return-void

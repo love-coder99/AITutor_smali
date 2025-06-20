@@ -47,9 +47,9 @@
 .method public a(II)Lcom/applovin/impl/qo;
     .locals 1
 
+    .line 3
     iget-object v0, p0, Lcom/applovin/impl/el;->b:Lcom/applovin/impl/l8;
 
-    .line 3
     invoke-interface {v0, p1, p2}, Lcom/applovin/impl/l8;->a(II)Lcom/applovin/impl/qo;
 
     move-result-object p1
@@ -60,9 +60,9 @@
 .method public a(Lcom/applovin/impl/ij;)V
     .locals 2
 
+    .line 2
     iget-object v0, p0, Lcom/applovin/impl/el;->b:Lcom/applovin/impl/l8;
 
-    .line 2
     new-instance v1, Lcom/applovin/impl/el$a;
 
     invoke-direct {v1, p0, p1}, Lcom/applovin/impl/el$a;-><init>(Lcom/applovin/impl/el;Lcom/applovin/impl/ij;)V

@@ -7,9 +7,9 @@
 
 
 # instance fields
-.field public final b:F
+.field public final a:F
 
-.field public final c:F
+.field public final b:F
 
 
 # direct methods
@@ -22,11 +22,11 @@
     .line 2
     .line 3
     .line 4
-    iput p1, p0, Landroidx/compose/ui/i;->b:F
+    iput p1, p0, Landroidx/compose/ui/i;->a:F
 
     .line 5
     .line 6
-    iput p2, p0, Landroidx/compose/ui/i;->c:F
+    iput p2, p0, Landroidx/compose/ui/i;->b:F
 
     .line 7
     .line 8
@@ -102,7 +102,7 @@
 
     .line 27
     .line 28
-    iget p3, p0, Landroidx/compose/ui/i;->b:F
+    iget p3, p0, Landroidx/compose/ui/i;->a:F
 
     .line 29
     .line 30
@@ -138,7 +138,7 @@
 
     .line 41
     .line 42
-    iget p4, p0, Landroidx/compose/ui/i;->c:F
+    iget p4, p0, Landroidx/compose/ui/i;->b:F
 
     .line 43
     .line 44
@@ -165,7 +165,7 @@
     move-result p2
 
     .line 55
-    invoke-static {p1, p2}, Ly/f;->a(II)J
+    invoke-static {p1, p2}, Landroid/support/v4/media/session/a;->a(II)J
 
     .line 56
     .line 57
@@ -197,9 +197,9 @@
     :cond_1
     check-cast p1, Landroidx/compose/ui/i;
 
-    iget v1, p1, Landroidx/compose/ui/i;->b:F
+    iget v1, p1, Landroidx/compose/ui/i;->a:F
 
-    iget v3, p0, Landroidx/compose/ui/i;->b:F
+    iget v3, p0, Landroidx/compose/ui/i;->a:F
 
     invoke-static {v3, v1}, Ljava/lang/Float;->compare(FF)I
 
@@ -210,9 +210,9 @@
     return v2
 
     :cond_2
-    iget v1, p0, Landroidx/compose/ui/i;->c:F
+    iget v1, p0, Landroidx/compose/ui/i;->b:F
 
-    iget p1, p1, Landroidx/compose/ui/i;->c:F
+    iget p1, p1, Landroidx/compose/ui/i;->b:F
 
     invoke-static {v1, p1}, Ljava/lang/Float;->compare(FF)I
 
@@ -229,22 +229,38 @@
 .method public final hashCode()I
     .locals 2
 
-    iget v0, p0, Landroidx/compose/ui/i;->b:F
+    .line 1
+    iget v0, p0, Landroidx/compose/ui/i;->a:F
 
+    .line 2
+    .line 3
     invoke-static {v0}, Ljava/lang/Float;->floatToIntBits(F)I
 
+    .line 4
+    .line 5
+    .line 6
     move-result v0
 
+    .line 7
     mul-int/lit8 v0, v0, 0x1f
 
-    iget v1, p0, Landroidx/compose/ui/i;->c:F
+    .line 8
+    .line 9
+    iget v1, p0, Landroidx/compose/ui/i;->b:F
 
+    .line 10
+    .line 11
     invoke-static {v1}, Ljava/lang/Float;->floatToIntBits(F)I
 
+    .line 12
+    .line 13
+    .line 14
     move-result v1
 
+    .line 15
     add-int/2addr v1, v0
 
+    .line 16
     return v1
 .end method
 
@@ -265,7 +281,7 @@
     .line 6
     .line 7
     .line 8
-    iget v1, p0, Landroidx/compose/ui/i;->b:F
+    iget v1, p0, Landroidx/compose/ui/i;->a:F
 
     .line 9
     .line 10
@@ -283,7 +299,7 @@
     .line 16
     .line 17
     .line 18
-    iget v1, p0, Landroidx/compose/ui/i;->c:F
+    iget v1, p0, Landroidx/compose/ui/i;->b:F
 
     .line 19
     .line 20
@@ -291,7 +307,7 @@
 
     .line 21
     .line 22
-    invoke-static {v0, v1, v2}, Landroid/support/v4/media/session/a;->E(Ljava/lang/StringBuilder;FC)Ljava/lang/String;
+    invoke-static {v0, v1, v2}, Landroidx/appcompat/view/menu/F;->G(Ljava/lang/StringBuilder;FC)Ljava/lang/String;
 
     .line 23
     .line 24

@@ -3,14 +3,14 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lzh/a;
+.implements Lka/a;
 
 
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "Lkotlin/jvm/internal/Lambda;",
-        "Lzh/a;"
+        "Lka/a;"
     }
 .end annotation
 
@@ -65,7 +65,7 @@
 .method public final invoke()Landroidx/window/extensions/layout/WindowLayoutComponent;
     .locals 2
 
-    const-class v0, Landroidx/window/layout/m;
+    const-class v0, Landroidx/window/layout/g;
 
     .line 2
     invoke-virtual {v0}, Ljava/lang/Class;->getClassLoader()Ljava/lang/ClassLoader;
@@ -77,7 +77,7 @@
     if-eqz v0, :cond_0
 
     .line 3
-    invoke-static {v0}, Landroidx/window/layout/m;->a(Ljava/lang/ClassLoader;)Z
+    invoke-static {v0}, Landroidx/window/layout/g;->a(Ljava/lang/ClassLoader;)Z
 
     move-result v0
 

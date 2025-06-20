@@ -47,7 +47,7 @@
 .method public static synthetic a(Lcom/applovin/impl/b8$a;Lcom/applovin/impl/fo;)Lcom/applovin/impl/fo;
     .locals 0
 
-    .line 2
+    .line 1
     iput-object p1, p0, Lcom/applovin/impl/b8$a;->b:Lcom/applovin/impl/fo;
 
     return-object p1
@@ -58,7 +58,7 @@
 .method public a()Ljava/lang/Object;
     .locals 1
 
-    .line 1
+    .line 2
     iget-object v0, p0, Lcom/applovin/impl/b8$a;->a:Ljava/lang/Object;
 
     return-object v0
@@ -67,7 +67,10 @@
 .method public b()Lcom/applovin/impl/fo;
     .locals 1
 
+    .line 1
     iget-object v0, p0, Lcom/applovin/impl/b8$a;->b:Lcom/applovin/impl/fo;
 
+    .line 2
+    .line 3
     return-object v0
 .end method

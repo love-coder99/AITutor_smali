@@ -3,14 +3,14 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lzh/c;
+.implements Lka/c;
 
 
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "Lkotlin/jvm/internal/Lambda;",
-        "Lzh/c;"
+        "Lka/c;"
     }
 .end annotation
 
@@ -21,7 +21,7 @@
     d2 = {
         "Landroidx/compose/ui/node/c;",
         "it",
-        "Lqh/r;",
+        "LX9/j;",
         "invoke",
         "(Landroidx/compose/ui/node/c;)V",
         "<anonymous>"
@@ -72,7 +72,7 @@
 
     invoke-virtual {p0, p1}, Landroidx/compose/ui/node/BackwardsCompatNodeKt$updateModifierLocalConsumer$1;->invoke(Landroidx/compose/ui/node/c;)V
 
-    sget-object p1, Lqh/r;->a:Lqh/r;
+    sget-object p1, LX9/j;->a:LX9/j;
 
     return-object p1
 .end method
@@ -81,7 +81,7 @@
     .locals 0
 
     .line 2
-    invoke-virtual {p1}, Landroidx/compose/ui/node/c;->C0()V
+    invoke-virtual {p1}, Landroidx/compose/ui/node/c;->A0()V
 
     return-void
 .end method

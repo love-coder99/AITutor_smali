@@ -35,7 +35,7 @@
     .locals 1
 
     .line 1
-    new-instance v0, Landroidx/recyclerview/widget/a1;
+    new-instance v0, Landroidx/recyclerview/widget/V;
 
     .line 2
     .line 3
@@ -68,7 +68,7 @@
 
     .line 7
     :cond_0
-    const-class p2, Landroidx/recyclerview/widget/q0;
+    const-class p2, Landroidx/recyclerview/widget/L;
 
     .line 8
     .line 9

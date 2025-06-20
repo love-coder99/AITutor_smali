@@ -3,7 +3,7 @@
 .source "SourceFile"
 
 # interfaces
-.implements Landroidx/appcompat/view/menu/a0;
+.implements Landroidx/appcompat/view/menu/y;
 
 
 # annotations
@@ -32,14 +32,22 @@
 
 
 # virtual methods
-.method public onCloseMenu(Landroidx/appcompat/view/menu/p;Z)V
+.method public onCloseMenu(Landroidx/appcompat/view/menu/n;Z)V
     .locals 0
+    .param p1    # Landroidx/appcompat/view/menu/n;
+        .annotation build Landroidx/annotation/NonNull;
+        .end annotation
+    .end param
 
     return-void
 .end method
 
-.method public onOpenSubMenu(Landroidx/appcompat/view/menu/p;)Z
+.method public onOpenSubMenu(Landroidx/appcompat/view/menu/n;)Z
     .locals 0
+    .param p1    # Landroidx/appcompat/view/menu/n;
+        .annotation build Landroidx/annotation/NonNull;
+        .end annotation
+    .end param
 
     const/4 p1, 0x0
 

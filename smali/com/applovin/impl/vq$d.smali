@@ -44,9 +44,9 @@
 .method public static a(Landroid/content/Context;)Lcom/applovin/impl/vq$b;
     .locals 1
 
+    .line 1
     const-string v0, "display"
 
-    .line 1
     invoke-virtual {p0, v0}, Landroid/content/Context;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
 
     move-result-object p0
@@ -96,13 +96,14 @@
 .method public a()V
     .locals 1
 
+    .line 6
     iget-object v0, p0, Lcom/applovin/impl/vq$d;->a:Landroid/hardware/display/DisplayManager;
 
-    .line 5
     invoke-virtual {v0, p0}, Landroid/hardware/display/DisplayManager;->unregisterDisplayListener(Landroid/hardware/display/DisplayManager$DisplayListener;)V
 
     const/4 v0, 0x0
 
+    .line 7
     iput-object v0, p0, Lcom/applovin/impl/vq$d;->b:Lcom/applovin/impl/vq$b$a;
 
     return-void
@@ -111,18 +112,19 @@
 .method public a(Lcom/applovin/impl/vq$b$a;)V
     .locals 2
 
+    .line 3
     iput-object p1, p0, Lcom/applovin/impl/vq$d;->b:Lcom/applovin/impl/vq$b$a;
 
+    .line 4
     iget-object v0, p0, Lcom/applovin/impl/vq$d;->a:Landroid/hardware/display/DisplayManager;
 
-    .line 3
     invoke-static {}, Lcom/applovin/impl/xp;->a()Landroid/os/Handler;
 
     move-result-object v1
 
     invoke-virtual {v0, p0, v1}, Landroid/hardware/display/DisplayManager;->registerDisplayListener(Landroid/hardware/display/DisplayManager$DisplayListener;Landroid/os/Handler;)V
 
-    .line 4
+    .line 5
     invoke-direct {p0}, Lcom/applovin/impl/vq$d;->b()Landroid/view/Display;
 
     move-result-object v0

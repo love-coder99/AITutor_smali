@@ -3,14 +3,14 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lzh/c;
+.implements Lka/c;
 
 
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "Lkotlin/jvm/internal/Lambda;",
-        "Lzh/c;"
+        "Lka/c;"
     }
 .end annotation
 
@@ -21,7 +21,7 @@
     d2 = {
         "Landroidx/compose/ui/o;",
         "it",
-        "Lqh/r;",
+        "LX9/j;",
         "invoke",
         "(Landroidx/compose/ui/o;)V",
         "<anonymous>"
@@ -38,14 +38,14 @@
 # instance fields
 .field final synthetic $coreModifier:Landroidx/compose/ui/o;
 
-.field final synthetic $layoutNode:Landroidx/compose/ui/node/e0;
+.field final synthetic $layoutNode:Landroidx/compose/ui/node/C;
 
 
 # direct methods
-.method public constructor <init>(Landroidx/compose/ui/node/e0;Landroidx/compose/ui/o;)V
+.method public constructor <init>(Landroidx/compose/ui/node/C;Landroidx/compose/ui/o;)V
     .locals 0
 
-    iput-object p1, p0, Landroidx/compose/ui/viewinterop/AndroidViewHolder$layoutNode$1$1;->$layoutNode:Landroidx/compose/ui/node/e0;
+    iput-object p1, p0, Landroidx/compose/ui/viewinterop/AndroidViewHolder$layoutNode$1$1;->$layoutNode:Landroidx/compose/ui/node/C;
 
     iput-object p2, p0, Landroidx/compose/ui/viewinterop/AndroidViewHolder$layoutNode$1$1;->$coreModifier:Landroidx/compose/ui/o;
 
@@ -66,7 +66,7 @@
 
     invoke-virtual {p0, p1}, Landroidx/compose/ui/viewinterop/AndroidViewHolder$layoutNode$1$1;->invoke(Landroidx/compose/ui/o;)V
 
-    sget-object p1, Lqh/r;->a:Lqh/r;
+    sget-object p1, LX9/j;->a:LX9/j;
 
     return-object p1
 .end method
@@ -74,16 +74,16 @@
 .method public final invoke(Landroidx/compose/ui/o;)V
     .locals 2
 
-    iget-object v0, p0, Landroidx/compose/ui/viewinterop/AndroidViewHolder$layoutNode$1$1;->$layoutNode:Landroidx/compose/ui/node/e0;
+    .line 2
+    iget-object v0, p0, Landroidx/compose/ui/viewinterop/AndroidViewHolder$layoutNode$1$1;->$layoutNode:Landroidx/compose/ui/node/C;
 
     iget-object v1, p0, Landroidx/compose/ui/viewinterop/AndroidViewHolder$layoutNode$1$1;->$coreModifier:Landroidx/compose/ui/o;
 
-    .line 2
-    invoke-interface {p1, v1}, Landroidx/compose/ui/o;->e(Landroidx/compose/ui/o;)Landroidx/compose/ui/o;
+    invoke-interface {p1, v1}, Landroidx/compose/ui/o;->g(Landroidx/compose/ui/o;)Landroidx/compose/ui/o;
 
     move-result-object p1
 
-    invoke-virtual {v0, p1}, Landroidx/compose/ui/node/e0;->b0(Landroidx/compose/ui/o;)V
+    invoke-virtual {v0, p1}, Landroidx/compose/ui/node/C;->b0(Landroidx/compose/ui/o;)V
 
     return-void
 .end method

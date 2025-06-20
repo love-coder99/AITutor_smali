@@ -1,377 +1,311 @@
-.class public final synthetic Lcom/applovin/exoplayer2/ui/k;
+.class public abstract synthetic Lcom/applovin/exoplayer2/ui/k;
 .super Ljava/lang/Object;
 .source "SourceFile"
 
-# interfaces
-.implements Landroid/animation/ValueAnimator$AnimatorUpdateListener;
-
-
-# instance fields
-.field public final synthetic b:I
-
-.field public final synthetic c:Ljava/lang/Object;
-
 
 # direct methods
-.method public synthetic constructor <init>(Ljava/lang/Object;I)V
+.method public static bridge synthetic A(Landroid/media/AudioFormat;Landroid/media/AudioAttributes;)Z
     .locals 0
 
     .line 1
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    invoke-static {p0, p1}, Landroid/media/AudioManager;->isOffloadedPlaybackSupported(Landroid/media/AudioFormat;Landroid/media/AudioAttributes;)Z
 
-    .line 2
-    .line 3
-    .line 4
-    iput p2, p0, Lcom/applovin/exoplayer2/ui/k;->b:I
+    move-result p0
 
-    .line 5
-    .line 6
-    iput-object p1, p0, Lcom/applovin/exoplayer2/ui/k;->c:Ljava/lang/Object;
+    return p0
+.end method
 
-    .line 7
-    .line 8
+.method public static bridge synthetic B(Landroid/media/MediaCodecInfo;)Z
+    .locals 0
+
+    .line 1
+    invoke-virtual {p0}, Landroid/media/MediaCodecInfo;->isHardwareAccelerated()Z
+
+    move-result p0
+
+    return p0
+.end method
+
+.method public static bridge synthetic C(Landroid/media/MediaCodecInfo;)Z
+    .locals 0
+
+    .line 1
+    invoke-virtual {p0}, Landroid/media/MediaCodecInfo;->isAlias()Z
+
+    move-result p0
+
+    return p0
+.end method
+
+.method public static bridge synthetic D(Landroid/media/MediaCodecInfo;)Z
+    .locals 0
+
+    .line 1
+    invoke-virtual {p0}, Landroid/media/MediaCodecInfo;->isSoftwareOnly()Z
+
+    move-result p0
+
+    return p0
+.end method
+
+.method public static bridge synthetic a(Landroid/app/ActivityManager$RunningTaskInfo;)Landroid/content/ComponentName;
+    .locals 0
+
+    .line 1
+    iget-object p0, p0, Landroid/app/ActivityManager$RunningTaskInfo;->topActivity:Landroid/content/ComponentName;
+
+    return-object p0
+.end method
+
+.method public static bridge synthetic b(Landroid/widget/EditText;)Landroid/graphics/drawable/Drawable;
+    .locals 0
+
+    .line 1
+    invoke-virtual {p0}, Landroid/widget/EditText;->getTextCursorDrawable()Landroid/graphics/drawable/Drawable;
+
+    move-result-object p0
+
+    return-object p0
+.end method
+
+.method public static bridge synthetic c(Landroid/media/AudioTrack$Builder;Z)Landroid/media/AudioTrack$Builder;
+    .locals 0
+
+    .line 1
+    invoke-virtual {p0, p1}, Landroid/media/AudioTrack$Builder;->setOffloadedPlayback(Z)Landroid/media/AudioTrack$Builder;
+
+    move-result-object p0
+
+    return-object p0
+.end method
+
+.method public static synthetic d()Landroid/media/MediaCodecInfo$VideoCapabilities$PerformancePoint;
+    .locals 4
+
+    .line 1
+    new-instance v0, Landroid/media/MediaCodecInfo$VideoCapabilities$PerformancePoint;
+
+    const/16 v1, 0x500
+
+    const/16 v2, 0x2d0
+
+    const/16 v3, 0x3c
+
+    invoke-direct {v0, v1, v2, v3}, Landroid/media/MediaCodecInfo$VideoCapabilities$PerformancePoint;-><init>(III)V
+
+    return-object v0
+.end method
+
+.method public static synthetic e(III)Landroid/media/MediaCodecInfo$VideoCapabilities$PerformancePoint;
+    .locals 1
+
+    .line 1
+    new-instance v0, Landroid/media/MediaCodecInfo$VideoCapabilities$PerformancePoint;
+
+    invoke-direct {v0, p0, p1, p2}, Landroid/media/MediaCodecInfo$VideoCapabilities$PerformancePoint;-><init>(III)V
+
+    return-object v0
+.end method
+
+.method public static bridge synthetic f(Ljava/lang/Object;)Landroid/media/MediaCodecInfo$VideoCapabilities$PerformancePoint;
+    .locals 0
+
+    .line 1
+    check-cast p0, Landroid/media/MediaCodecInfo$VideoCapabilities$PerformancePoint;
+
+    return-object p0
+.end method
+
+.method public static bridge synthetic g(Landroid/media/MediaCodecInfo$VideoCapabilities;)Ljava/util/List;
+    .locals 0
+
+    .line 1
+    invoke-virtual {p0}, Landroid/media/MediaCodecInfo$VideoCapabilities;->getSupportedPerformancePoints()Ljava/util/List;
+
+    move-result-object p0
+
+    return-object p0
+.end method
+
+.method public static bridge synthetic h(Lcom/canhub/cropper/CropOverlayView;)Ljava/util/List;
+    .locals 0
+
+    .line 1
+    invoke-virtual {p0}, Landroid/view/View;->getSystemGestureExclusionRects()Ljava/util/List;
+
+    move-result-object p0
+
+    return-object p0
+.end method
+
+.method public static synthetic i()V
+    .locals 1
+
+    .line 1
+    new-instance v0, Landroid/media/MediaCodecInfo$VideoCapabilities$PerformancePoint;
+
     return-void
 .end method
 
-
-# virtual methods
-.method public final onAnimationUpdate(Landroid/animation/ValueAnimator;)V
-    .locals 8
+.method public static bridge synthetic j(Landroid/graphics/drawable/GradientDrawable;[I[F)V
+    .locals 0
 
     .line 1
-    iget v0, p0, Lcom/applovin/exoplayer2/ui/k;->b:I
+    invoke-virtual {p0, p1, p2}, Landroid/graphics/drawable/GradientDrawable;->setColors([I[F)V
 
-    .line 2
-    .line 3
-    iget-object v1, p0, Lcom/applovin/exoplayer2/ui/k;->c:Ljava/lang/Object;
-
-    .line 4
-    .line 5
-    packed-switch v0, :pswitch_data_0
-
-    .line 6
-    .line 7
-    .line 8
-    check-cast v1, Lcom/google/android/material/textfield/j;
-
-    .line 9
-    .line 10
-    invoke-virtual {v1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
-
-    .line 11
-    .line 12
-    .line 13
-    invoke-virtual {p1}, Landroid/animation/ValueAnimator;->getAnimatedValue()Ljava/lang/Object;
-
-    .line 14
-    .line 15
-    .line 16
-    move-result-object p1
-
-    .line 17
-    check-cast p1, Ljava/lang/Float;
-
-    .line 18
-    .line 19
-    invoke-virtual {p1}, Ljava/lang/Float;->floatValue()F
-
-    .line 20
-    .line 21
-    .line 22
-    move-result p1
-
-    .line 23
-    iget-object v0, v1, Lcom/google/android/material/textfield/n;->d:Lcom/google/android/material/internal/CheckableImageButton;
-
-    .line 24
-    .line 25
-    invoke-virtual {v0, p1}, Landroid/view/View;->setAlpha(F)V
-
-    .line 26
-    .line 27
-    .line 28
     return-void
+.end method
 
-    .line 29
-    :pswitch_0
-    check-cast v1, Landroidx/appcompat/graphics/drawable/DrawerArrowDrawable;
+.method public static bridge synthetic k(Landroid/media/AudioAttributes$Builder;)V
+    .locals 1
 
-    .line 30
-    .line 31
-    invoke-virtual {p1}, Landroid/animation/ValueAnimator;->getAnimatedValue()Ljava/lang/Object;
+    .line 1
+    const/4 v0, 0x1
 
-    .line 32
-    .line 33
-    .line 34
-    move-result-object p1
+    invoke-virtual {p0, v0}, Landroid/media/AudioAttributes$Builder;->setAllowedCapturePolicy(I)Landroid/media/AudioAttributes$Builder;
 
-    .line 35
-    check-cast p1, Ljava/lang/Float;
-
-    .line 36
-    .line 37
-    invoke-virtual {p1}, Ljava/lang/Float;->floatValue()F
-
-    .line 38
-    .line 39
-    .line 40
-    move-result p1
-
-    .line 41
-    invoke-virtual {v1, p1}, Landroidx/appcompat/graphics/drawable/DrawerArrowDrawable;->setProgress(F)V
-
-    .line 42
-    .line 43
-    .line 44
     return-void
+.end method
 
-    .line 45
-    :pswitch_1
-    check-cast v1, Lcom/google/android/material/internal/e;
+.method public static bridge synthetic l(Landroid/media/AudioAttributes$Builder;I)V
+    .locals 0
 
-    .line 46
-    .line 47
-    invoke-virtual {p1}, Landroid/animation/ValueAnimator;->getAnimatedValue()Ljava/lang/Object;
+    .line 1
+    invoke-virtual {p0, p1}, Landroid/media/AudioAttributes$Builder;->setAllowedCapturePolicy(I)Landroid/media/AudioAttributes$Builder;
 
-    .line 48
-    .line 49
-    .line 50
-    move-result-object p1
-
-    .line 51
-    check-cast p1, Ljava/lang/Float;
-
-    .line 52
-    .line 53
-    invoke-virtual {p1}, Ljava/lang/Float;->floatValue()F
-
-    .line 54
-    .line 55
-    .line 56
-    move-result p1
-
-    .line 57
-    invoke-virtual {v1, p1}, Lcom/google/android/material/internal/e;->a(F)V
-
-    .line 58
-    .line 59
-    .line 60
     return-void
+.end method
 
-    .line 61
-    :pswitch_2
-    check-cast v1, Landroidx/drawerlayout/widget/DrawerLayout;
+.method public static bridge synthetic m(Landroid/media/AudioTrack$Builder;Z)V
+    .locals 0
 
-    .line 62
-    .line 63
-    sget v0, Lcom/google/android/material/navigation/a;->a:I
+    .line 1
+    invoke-virtual {p0, p1}, Landroid/media/AudioTrack$Builder;->setOffloadedPlayback(Z)Landroid/media/AudioTrack$Builder;
 
-    .line 64
-    .line 65
-    invoke-virtual {p1}, Landroid/animation/ValueAnimator;->getAnimatedFraction()F
-
-    .line 66
-    .line 67
-    .line 68
-    move-result p1
-
-    .line 69
-    sget v0, Lcom/google/android/material/navigation/a;->a:I
-
-    .line 70
-    .line 71
-    const/4 v2, 0x0
-
-    .line 72
-    invoke-static {p1, v0, v2}, Leb/a;->c(FII)I
-
-    .line 73
-    .line 74
-    .line 75
-    move-result p1
-
-    .line 76
-    const/high16 v0, -0x67000000
-
-    .line 77
-    .line 78
-    invoke-static {v0, p1}, Lf3/a;->e(II)I
-
-    .line 79
-    .line 80
-    .line 81
-    move-result p1
-
-    .line 82
-    invoke-virtual {v1, p1}, Landroidx/drawerlayout/widget/DrawerLayout;->setScrimColor(I)V
-
-    .line 83
-    .line 84
-    .line 85
     return-void
+.end method
 
-    .line 86
-    :pswitch_3
-    move-object v2, v1
+.method public static bridge synthetic n(Landroid/media/AudioTrack;)V
+    .locals 0
 
-    .line 87
-    check-cast v2, Lcom/google/android/material/internal/ClippableRoundedCornerLayout;
+    .line 1
+    invoke-virtual {p0}, Landroid/media/AudioTrack;->setOffloadEndOfStream()V
 
-    .line 88
-    .line 89
-    invoke-virtual {p1}, Landroid/animation/ValueAnimator;->getAnimatedValue()Ljava/lang/Object;
-
-    .line 90
-    .line 91
-    .line 92
-    move-result-object p1
-
-    .line 93
-    check-cast p1, Ljava/lang/Float;
-
-    .line 94
-    .line 95
-    invoke-virtual {p1}, Ljava/lang/Float;->floatValue()F
-
-    .line 96
-    .line 97
-    .line 98
-    move-result v7
-
-    .line 99
-    invoke-virtual {v2}, Landroid/view/View;->getLeft()I
-
-    .line 100
-    .line 101
-    .line 102
-    move-result p1
-
-    .line 103
-    int-to-float v3, p1
-
-    .line 104
-    invoke-virtual {v2}, Landroid/view/View;->getTop()I
-
-    .line 105
-    .line 106
-    .line 107
-    move-result p1
-
-    .line 108
-    int-to-float v4, p1
-
-    .line 109
-    invoke-virtual {v2}, Landroid/view/View;->getRight()I
-
-    .line 110
-    .line 111
-    .line 112
-    move-result p1
-
-    .line 113
-    int-to-float v5, p1
-
-    .line 114
-    invoke-virtual {v2}, Landroid/view/View;->getBottom()I
-
-    .line 115
-    .line 116
-    .line 117
-    move-result p1
-
-    .line 118
-    int-to-float v6, p1
-
-    .line 119
-    invoke-virtual/range {v2 .. v7}, Lcom/google/android/material/internal/ClippableRoundedCornerLayout;->a(FFFFF)V
-
-    .line 120
-    .line 121
-    .line 122
     return-void
+.end method
 
-    .line 123
-    :pswitch_4
-    check-cast v1, Lkb/c;
+.method public static bridge synthetic o(Landroid/media/AudioTrack;II)V
+    .locals 0
 
-    .line 124
-    .line 125
-    sget-object v0, Lkb/c;->z:Landroid/graphics/drawable/ColorDrawable;
+    .line 1
+    invoke-virtual {p0, p1, p2}, Landroid/media/AudioTrack;->setOffloadDelayPadding(II)V
 
-    .line 126
-    .line 127
-    invoke-virtual {v1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
-
-    .line 128
-    .line 129
-    .line 130
-    invoke-virtual {p1}, Landroid/animation/ValueAnimator;->getAnimatedValue()Ljava/lang/Object;
-
-    .line 131
-    .line 132
-    .line 133
-    move-result-object p1
-
-    .line 134
-    check-cast p1, Ljava/lang/Float;
-
-    .line 135
-    .line 136
-    invoke-virtual {p1}, Ljava/lang/Float;->floatValue()F
-
-    .line 137
-    .line 138
-    .line 139
-    move-result p1
-
-    .line 140
-    const/high16 v0, 0x437f0000    # 255.0f
-
-    .line 141
-    .line 142
-    mul-float v0, v0, p1
-
-    .line 143
-    .line 144
-    float-to-int v0, v0
-
-    .line 145
-    iget-object v2, v1, Lkb/c;->j:Landroid/graphics/drawable/Drawable;
-
-    .line 146
-    .line 147
-    invoke-virtual {v2, v0}, Landroid/graphics/drawable/Drawable;->setAlpha(I)V
-
-    .line 148
-    .line 149
-    .line 150
-    iput p1, v1, Lkb/c;->x:F
-
-    .line 151
-    .line 152
     return-void
+.end method
 
-    .line 153
-    :pswitch_5
-    check-cast v1, Lcom/applovin/exoplayer2/ui/b;
+.method public static bridge synthetic p(Landroid/media/AudioTrack;Landroid/media/AudioTrack$StreamEventCallback;)V
+    .locals 0
 
-    .line 154
-    .line 155
-    invoke-static {v1, p1}, Lcom/applovin/exoplayer2/ui/b;->a(Lcom/applovin/exoplayer2/ui/b;Landroid/animation/ValueAnimator;)V
+    .line 1
+    invoke-virtual {p0, p1}, Landroid/media/AudioTrack;->unregisterStreamEventCallback(Landroid/media/AudioTrack$StreamEventCallback;)V
 
-    .line 156
-    .line 157
-    .line 158
     return-void
+.end method
 
-    .line 159
-    :pswitch_data_0
-    .packed-switch 0x0
-        :pswitch_5
-        :pswitch_4
-        :pswitch_3
-        :pswitch_2
-        :pswitch_1
-        :pswitch_0
-    .end packed-switch
+.method public static bridge synthetic q(Landroid/media/AudioTrack;Lcom/applovin/impl/U2;Landroid/media/AudioTrack$StreamEventCallback;)V
+    .locals 0
+
+    .line 1
+    invoke-virtual {p0, p1, p2}, Landroid/media/AudioTrack;->registerStreamEventCallback(Ljava/util/concurrent/Executor;Landroid/media/AudioTrack$StreamEventCallback;)V
+
+    return-void
+.end method
+
+.method public static bridge synthetic r(Landroid/media/AudioTrack;Lcom/google/android/gms/internal/ads/N2;Lcom/google/android/gms/internal/ads/GC;)V
+    .locals 0
+
+    .line 1
+    invoke-virtual {p0, p1, p2}, Landroid/media/AudioTrack;->registerStreamEventCallback(Ljava/util/concurrent/Executor;Landroid/media/AudioTrack$StreamEventCallback;)V
+
+    return-void
+.end method
+
+.method public static bridge synthetic s(Landroid/media/AudioTrack;Lcom/google/android/gms/internal/ads/GC;)V
+    .locals 0
+
+    .line 1
+    invoke-virtual {p0, p1}, Landroid/media/AudioTrack;->unregisterStreamEventCallback(Landroid/media/AudioTrack$StreamEventCallback;)V
+
+    return-void
+.end method
+
+.method public static bridge synthetic t(Lcom/applovin/exoplayer2/ui/b;Ljava/util/List;)V
+    .locals 0
+
+    .line 1
+    invoke-virtual {p0, p1}, Landroid/view/View;->setSystemGestureExclusionRects(Ljava/util/List;)V
+
+    return-void
+.end method
+
+.method public static bridge synthetic u(Lcom/applovin/impl/adview/b;Landroid/webkit/WebViewRenderProcessClient;)V
+    .locals 0
+
+    .line 1
+    invoke-virtual {p0, p1}, Landroid/webkit/WebView;->setWebViewRenderProcessClient(Landroid/webkit/WebViewRenderProcessClient;)V
+
+    return-void
+.end method
+
+.method public static bridge synthetic v(Lcom/canhub/cropper/CropOverlayView;Ljava/util/List;)V
+    .locals 0
+
+    .line 1
+    invoke-virtual {p0, p1}, Landroid/view/View;->setSystemGestureExclusionRects(Ljava/util/List;)V
+
+    return-void
+.end method
+
+.method public static bridge synthetic w(Landroid/media/AudioFormat;Landroid/media/AudioAttributes;)Z
+    .locals 0
+
+    .line 1
+    invoke-static {p0, p1}, Landroid/media/AudioTrack;->isDirectPlaybackSupported(Landroid/media/AudioFormat;Landroid/media/AudioAttributes;)Z
+
+    move-result p0
+
+    return p0
+.end method
+
+.method public static bridge synthetic x(Landroid/media/AudioTrack;)Z
+    .locals 0
+
+    .line 1
+    invoke-virtual {p0}, Landroid/media/AudioTrack;->isOffloadedPlayback()Z
+
+    move-result p0
+
+    return p0
+.end method
+
+.method public static bridge synthetic y(Landroid/media/MediaCodecInfo$VideoCapabilities$PerformancePoint;Landroid/media/MediaCodecInfo$VideoCapabilities$PerformancePoint;)Z
+    .locals 0
+
+    .line 1
+    invoke-virtual {p0, p1}, Landroid/media/MediaCodecInfo$VideoCapabilities$PerformancePoint;->covers(Landroid/media/MediaCodecInfo$VideoCapabilities$PerformancePoint;)Z
+
+    move-result p0
+
+    return p0
+.end method
+
+.method public static bridge synthetic z(Landroid/media/MediaCodecInfo;)Z
+    .locals 0
+
+    .line 1
+    invoke-virtual {p0}, Landroid/media/MediaCodecInfo;->isVendor()Z
+
+    move-result p0
+
+    return p0
 .end method

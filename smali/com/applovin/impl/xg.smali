@@ -105,7 +105,6 @@
 .method private a(IZ)I
     .locals 6
 
-    .line 1
     const/4 v0, 0x3
 
     const/16 v1, 0x8
@@ -120,6 +119,7 @@
 
     if-eqz p2, :cond_3
 
+    .line 1
     iget-boolean p2, p0, Lcom/applovin/impl/xg;->e:Z
 
     if-eqz p2, :cond_3
@@ -181,9 +181,9 @@
 
     move-result-object v0
 
+    .line 3
     const-string v1, "window"
 
-    .line 3
     invoke-virtual {p0, v1}, Landroid/content/Context;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
 
     move-result-object p0
@@ -238,10 +238,10 @@
 .method private a(I)V
     .locals 1
 
+    .line 26
     :try_start_0
     iget-object v0, p0, Lcom/applovin/impl/xg;->a:Landroid/app/Activity;
 
-    .line 20
     invoke-virtual {v0, p1}, Landroid/app/Activity;->setRequestedOrientation(I)V
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
@@ -264,6 +264,7 @@
 
     if-ne p1, v0, :cond_5
 
+    .line 10
     iget-boolean p1, p0, Lcom/applovin/impl/xg;->d:Z
 
     const/16 v0, 0x9
@@ -274,13 +275,14 @@
 
     if-eqz p1, :cond_2
 
+    .line 11
     iget p1, p0, Lcom/applovin/impl/xg;->c:I
 
     if-eq p1, v3, :cond_0
 
     if-eq p1, v1, :cond_0
 
-    .line 10
+    .line 12
     invoke-direct {p0, v3}, Lcom/applovin/impl/xg;->a(I)V
 
     goto :goto_2
@@ -288,17 +290,18 @@
     :cond_0
     if-ne p1, v3, :cond_1
 
-    .line 11
+    .line 13
     invoke-direct {p0, v0}, Lcom/applovin/impl/xg;->a(I)V
 
     goto :goto_2
 
-    .line 12
+    .line 14
     :cond_1
     invoke-direct {p0, v3}, Lcom/applovin/impl/xg;->a(I)V
 
     goto :goto_2
 
+    .line 15
     :cond_2
     iget p1, p0, Lcom/applovin/impl/xg;->c:I
 
@@ -306,7 +309,7 @@
 
     if-eq p1, v2, :cond_3
 
-    .line 13
+    .line 16
     invoke-direct {p0, v3}, Lcom/applovin/impl/xg;->a(I)V
 
     goto :goto_2
@@ -319,18 +322,19 @@
     :cond_4
     const/16 v3, 0x9
 
-    .line 14
+    .line 17
     :goto_0
     invoke-direct {p0, v3}, Lcom/applovin/impl/xg;->a(I)V
 
     goto :goto_2
 
-    .line 15
+    .line 18
     :cond_5
     sget-object v0, Lcom/applovin/impl/sdk/ad/b$c;->c:Lcom/applovin/impl/sdk/ad/b$c;
 
     if-ne p1, v0, :cond_b
 
+    .line 19
     iget-boolean p1, p0, Lcom/applovin/impl/xg;->d:Z
 
     const/16 v0, 0x8
@@ -343,13 +347,14 @@
 
     if-eqz p1, :cond_8
 
+    .line 20
     iget p1, p0, Lcom/applovin/impl/xg;->c:I
 
     if-eqz p1, :cond_6
 
     if-eq p1, v2, :cond_6
 
-    .line 16
+    .line 21
     invoke-direct {p0, v4}, Lcom/applovin/impl/xg;->a(I)V
 
     goto :goto_2
@@ -362,12 +367,13 @@
     :cond_7
     const/4 v0, 0x0
 
-    .line 17
+    .line 22
     :goto_1
     invoke-direct {p0, v0}, Lcom/applovin/impl/xg;->a(I)V
 
     goto :goto_2
 
+    .line 23
     :cond_8
     iget p1, p0, Lcom/applovin/impl/xg;->c:I
 
@@ -375,7 +381,7 @@
 
     if-eq p1, v1, :cond_9
 
-    .line 18
+    .line 24
     invoke-direct {p0, v4}, Lcom/applovin/impl/xg;->a(I)V
 
     goto :goto_2
@@ -385,7 +391,7 @@
 
     const/4 v0, 0x0
 
-    .line 19
+    .line 25
     :cond_a
     invoke-direct {p0, v0}, Lcom/applovin/impl/xg;->a(I)V
 

@@ -1,12 +1,12 @@
 .class final Landroidx/compose/ui/viewinterop/FocusGroupPropertiesElement;
-.super Landroidx/compose/ui/node/w0;
+.super Landroidx/compose/ui/node/V;
 .source "SourceFile"
 
 
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
-        "Landroidx/compose/ui/node/w0;"
+        "Landroidx/compose/ui/node/V;"
     }
 .end annotation
 
@@ -16,8 +16,8 @@
     }
     d2 = {
         "Landroidx/compose/ui/viewinterop/FocusGroupPropertiesElement;",
-        "Landroidx/compose/ui/node/w0;",
-        "Landroidx/compose/ui/viewinterop/g;",
+        "Landroidx/compose/ui/node/V;",
+        "Landroidx/compose/ui/viewinterop/h;",
         "<init>",
         "()V",
         "ui_release"
@@ -28,11 +28,12 @@
         0x8,
         0x0
     }
+    xi = 0x30
 .end annotation
 
 
 # static fields
-.field public static final c:Landroidx/compose/ui/viewinterop/FocusGroupPropertiesElement;
+.field public static final a:Landroidx/compose/ui/viewinterop/FocusGroupPropertiesElement;
 
 
 # direct methods
@@ -43,7 +44,7 @@
 
     invoke-direct {v0}, Landroidx/compose/ui/viewinterop/FocusGroupPropertiesElement;-><init>()V
 
-    sput-object v0, Landroidx/compose/ui/viewinterop/FocusGroupPropertiesElement;->c:Landroidx/compose/ui/viewinterop/FocusGroupPropertiesElement;
+    sput-object v0, Landroidx/compose/ui/viewinterop/FocusGroupPropertiesElement;->a:Landroidx/compose/ui/viewinterop/FocusGroupPropertiesElement;
 
     return-void
 .end method
@@ -90,7 +91,7 @@
     .locals 1
 
     .line 1
-    new-instance v0, Landroidx/compose/ui/viewinterop/g;
+    new-instance v0, Landroidx/compose/ui/viewinterop/h;
 
     .line 2
     .line 3
@@ -106,7 +107,7 @@
     .locals 0
 
     .line 1
-    check-cast p1, Landroidx/compose/ui/viewinterop/g;
+    check-cast p1, Landroidx/compose/ui/viewinterop/h;
 
     .line 2
     .line 3

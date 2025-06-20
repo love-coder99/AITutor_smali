@@ -3,14 +3,14 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lzh/a;
+.implements Lka/a;
 
 
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "Lkotlin/jvm/internal/Lambda;",
-        "Lzh/a;"
+        "Lka/a;"
     }
 .end annotation
 
@@ -19,9 +19,9 @@
         "\u0000\u0008\n\u0002\u0018\u0002\n\u0002\u0008\u0003\u0010\u0003\u001a\u00020\u0000H\n\u00a2\u0006\u0004\u0008\u0001\u0010\u0002"
     }
     d2 = {
-        "Lkotlin/coroutines/i;",
+        "Lba/g;",
         "invoke",
-        "()Lkotlin/coroutines/i;",
+        "()Lba/g;",
         "<anonymous>"
     }
     k = 0x3
@@ -62,22 +62,11 @@
 
 
 # virtual methods
-.method public bridge synthetic invoke()Ljava/lang/Object;
-    .locals 1
-
-    .line 1
-    invoke-virtual {p0}, Landroidx/compose/ui/platform/AndroidUiDispatcher$Companion$Main$2;->invoke()Lkotlin/coroutines/i;
-
-    move-result-object v0
-
-    return-object v0
-.end method
-
-.method public final invoke()Lkotlin/coroutines/i;
+.method public final invoke()Lba/g;
     .locals 4
 
     .line 2
-    new-instance v0, Landroidx/compose/ui/platform/u0;
+    new-instance v0, Landroidx/compose/ui/platform/L;
 
     .line 3
     invoke-static {}, Landroid/os/Looper;->myLooper()Landroid/os/Looper;
@@ -109,10 +98,10 @@
 
     .line 5
     :cond_1
-    sget-object v1, Lkotlinx/coroutines/h0;->a:Lii/e;
+    sget-object v1, Lkotlinx/coroutines/F;->a:Lva/e;
 
     .line 6
-    sget-object v1, Lkotlinx/coroutines/internal/m;->a:Lkotlinx/coroutines/k1;
+    sget-object v1, Lkotlinx/coroutines/internal/m;->a:Lkotlinx/coroutines/l0;
 
     .line 7
     new-instance v2, Landroidx/compose/ui/platform/AndroidUiDispatcher$Companion$Main$2$dispatcher$1;
@@ -121,7 +110,7 @@
 
     invoke-direct {v2, v3}, Landroidx/compose/ui/platform/AndroidUiDispatcher$Companion$Main$2$dispatcher$1;-><init>(Lkotlin/coroutines/Continuation;)V
 
-    invoke-static {v1, v2}, Lf7/l;->K(Lkotlin/coroutines/i;Lzh/e;)Ljava/lang/Object;
+    invoke-static {v1, v2}, Lkotlinx/coroutines/w;->B(Lba/g;Lka/e;)Ljava/lang/Object;
 
     move-result-object v1
 
@@ -133,17 +122,28 @@
 
     move-result-object v2
 
-    invoke-static {v2}, Landroidx/core/os/a;->c(Landroid/os/Looper;)Landroid/os/Handler;
+    invoke-static {v2}, LP2/a;->f(Landroid/os/Looper;)Landroid/os/Handler;
 
     move-result-object v2
 
     .line 9
-    invoke-direct {v0, v1, v2}, Landroidx/compose/ui/platform/u0;-><init>(Landroid/view/Choreographer;Landroid/os/Handler;)V
-
-    iget-object v1, v0, Landroidx/compose/ui/platform/u0;->n:Landroidx/compose/ui/platform/w0;
+    invoke-direct {v0, v1, v2}, Landroidx/compose/ui/platform/L;-><init>(Landroid/view/Choreographer;Landroid/os/Handler;)V
 
     .line 10
-    invoke-static {v0, v1}, Lkotlin/coroutines/f;->a(Lkotlin/coroutines/i;Lkotlin/coroutines/i;)Lkotlin/coroutines/i;
+    iget-object v1, v0, Landroidx/compose/ui/platform/L;->n:Landroidx/compose/ui/platform/M;
+
+    invoke-static {v0, v1}, Lcom/facebook/appevents/n;->m(Lba/g;Lba/g;)Lba/g;
+
+    move-result-object v0
+
+    return-object v0
+.end method
+
+.method public bridge synthetic invoke()Ljava/lang/Object;
+    .locals 1
+
+    .line 1
+    invoke-virtual {p0}, Landroidx/compose/ui/platform/AndroidUiDispatcher$Companion$Main$2;->invoke()Lba/g;
 
     move-result-object v0
 

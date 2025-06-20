@@ -25,9 +25,9 @@
 .method private constructor <init>(Lcom/applovin/impl/i6;)V
     .locals 0
 
+    .line 1
     iput-object p1, p0, Lcom/applovin/impl/i6$b;->a:Lcom/applovin/impl/i6;
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -47,9 +47,9 @@
 .method public b(J)Lcom/applovin/impl/ij$a;
     .locals 12
 
+    .line 2
     iget-object v0, p0, Lcom/applovin/impl/i6$b;->a:Lcom/applovin/impl/i6;
 
-    .line 2
     invoke-static {v0}, Lcom/applovin/impl/i6;->a(Lcom/applovin/impl/i6;)Lcom/applovin/impl/gl;
 
     move-result-object v0
@@ -58,16 +58,17 @@
 
     move-result-wide v0
 
+    .line 3
     iget-object v2, p0, Lcom/applovin/impl/i6$b;->a:Lcom/applovin/impl/i6;
 
-    .line 3
+    .line 4
     invoke-static {v2}, Lcom/applovin/impl/i6;->b(Lcom/applovin/impl/i6;)J
 
     move-result-wide v2
 
     iget-object v4, p0, Lcom/applovin/impl/i6$b;->a:Lcom/applovin/impl/i6;
 
-    .line 4
+    .line 5
     invoke-static {v4}, Lcom/applovin/impl/i6;->c(Lcom/applovin/impl/i6;)J
 
     move-result-wide v4
@@ -96,9 +97,10 @@
 
     sub-long v6, v4, v0
 
+    .line 6
     iget-object v0, p0, Lcom/applovin/impl/i6$b;->a:Lcom/applovin/impl/i6;
 
-    .line 5
+    .line 7
     invoke-static {v0}, Lcom/applovin/impl/i6;->b(Lcom/applovin/impl/i6;)J
 
     move-result-wide v8
@@ -117,7 +119,7 @@
 
     move-result-wide v0
 
-    .line 6
+    .line 8
     new-instance v2, Lcom/applovin/impl/ij$a;
 
     new-instance v3, Lcom/applovin/impl/kj;

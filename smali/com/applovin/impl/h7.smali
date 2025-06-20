@@ -41,7 +41,7 @@
     .locals 0
 
     .line 1
-    invoke-static {p0, p1, p2, p3}, Lcom/applovin/impl/kv;->a(Lcom/applovin/impl/qo;Lcom/applovin/impl/f5;IZ)I
+    invoke-static {p0, p1, p2, p3}, Lcom/applovin/impl/B2;->a(Lcom/applovin/impl/qo;Lcom/applovin/impl/f5;IZ)I
 
     move-result p1
 
@@ -51,20 +51,20 @@
 .method public a(Lcom/applovin/impl/f5;IZI)I
     .locals 1
 
+    .line 5
     iget-object p4, p0, Lcom/applovin/impl/h7;->a:[B
 
-    .line 5
     array-length p4, p4
 
     invoke-static {p4, p2}, Ljava/lang/Math;->min(II)I
 
     move-result p2
 
+    .line 6
     iget-object p4, p0, Lcom/applovin/impl/h7;->a:[B
 
     const/4 v0, 0x0
 
-    .line 6
     invoke-interface {p1, p4, v0, p2}, Lcom/applovin/impl/f5;->a([BII)I
 
     move-result p1
@@ -100,7 +100,7 @@
     .locals 0
 
     .line 3
-    invoke-static {p0, p1, p2}, Lcom/applovin/impl/kv;->b(Lcom/applovin/impl/qo;Lcom/applovin/impl/ah;I)V
+    invoke-static {p0, p1, p2}, Lcom/applovin/impl/B2;->b(Lcom/applovin/impl/qo;Lcom/applovin/impl/ah;I)V
 
     return-void
 .end method

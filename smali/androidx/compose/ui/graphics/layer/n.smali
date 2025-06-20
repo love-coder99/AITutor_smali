@@ -30,11 +30,53 @@
 
 
 # virtual methods
-.method public final a(Landroid/view/RenderNode;)V
+.method public final a(Landroid/view/RenderNode;)I
     .locals 0
 
     .line 1
-    invoke-virtual {p1}, Landroid/view/RenderNode;->destroyDisplayListData()V
+    invoke-virtual {p1}, Landroid/view/RenderNode;->getAmbientShadowColor()I
+
+    .line 2
+    .line 3
+    .line 4
+    move-result p1
+
+    .line 5
+    return p1
+.end method
+
+.method public final b(Landroid/view/RenderNode;)I
+    .locals 0
+
+    .line 1
+    invoke-virtual {p1}, Landroid/view/RenderNode;->getSpotShadowColor()I
+
+    .line 2
+    .line 3
+    .line 4
+    move-result p1
+
+    .line 5
+    return p1
+.end method
+
+.method public final c(Landroid/view/RenderNode;I)V
+    .locals 0
+
+    .line 1
+    invoke-virtual {p1, p2}, Landroid/view/RenderNode;->setAmbientShadowColor(I)Z
+
+    .line 2
+    .line 3
+    .line 4
+    return-void
+.end method
+
+.method public final d(Landroid/view/RenderNode;I)V
+    .locals 0
+
+    .line 1
+    invoke-virtual {p1, p2}, Landroid/view/RenderNode;->setSpotShadowColor(I)Z
 
     .line 2
     .line 3

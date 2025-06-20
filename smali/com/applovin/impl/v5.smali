@@ -28,8 +28,10 @@
 
     iput-object p1, p0, Lcom/applovin/impl/v5;->a:Landroid/content/Context;
 
+    .line 3
     iput-object p2, p0, Lcom/applovin/impl/v5;->b:Lcom/applovin/impl/xo;
 
+    .line 4
     iput-object p3, p0, Lcom/applovin/impl/v5;->c:Lcom/applovin/impl/h5$a;
 
     return-void
@@ -40,7 +42,7 @@
 
     const/4 v0, 0x0
 
-    .line 3
+    .line 5
     invoke-direct {p0, p1, p2, v0}, Lcom/applovin/impl/v5;-><init>(Landroid/content/Context;Ljava/lang/String;Lcom/applovin/impl/xo;)V
 
     return-void
@@ -49,7 +51,7 @@
 .method public constructor <init>(Landroid/content/Context;Ljava/lang/String;Lcom/applovin/impl/xo;)V
     .locals 1
 
-    .line 4
+    .line 6
     new-instance v0, Lcom/applovin/impl/c6$b;
 
     invoke-direct {v0}, Lcom/applovin/impl/c6$b;-><init>()V

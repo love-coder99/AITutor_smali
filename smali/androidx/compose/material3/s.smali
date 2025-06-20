@@ -1,45 +1,109 @@
-.class public abstract Landroidx/compose/material3/s;
+.class public abstract Landroidx/compose/material3/S;
 .super Ljava/lang/Object;
 .source "SourceFile"
 
 
-# static fields
-.field public static final a:Landroidx/compose/runtime/internal/b;
-
-
 # direct methods
-.method static constructor <clinit>()V
-    .locals 4
+.method public static final a(Lka/a;)Landroid/window/OnBackInvokedCallback;
+    .locals 2
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Lka/a;",
+            ")",
+            "Landroid/window/OnBackInvokedCallback;"
+        }
+    .end annotation
 
     .line 1
-    sget-object v0, Landroidx/compose/material3/ComposableSingletons$SnackbarHostKt$lambda-1$1;->INSTANCE:Landroidx/compose/material3/ComposableSingletons$SnackbarHostKt$lambda-1$1;
+    new-instance v0, Landroidx/activity/D;
 
     .line 2
     .line 3
-    sget-object v1, Landroidx/compose/runtime/internal/c;->a:Ljava/lang/Object;
+    const/4 v1, 0x1
+
+    .line 4
+    invoke-direct {v0, v1, p0}, Landroidx/activity/D;-><init>(ILka/a;)V
+
+    .line 5
+    .line 6
+    .line 7
+    return-object v0
+.end method
+
+.method public static final b(Landroid/view/View;Ljava/lang/Object;)V
+    .locals 1
+
+    .line 1
+    instance-of v0, p1, Landroid/window/OnBackInvokedCallback;
+
+    .line 2
+    .line 3
+    if-eqz v0, :cond_0
 
     .line 4
     .line 5
-    new-instance v1, Landroidx/compose/runtime/internal/b;
+    invoke-virtual {p0}, Landroid/view/View;->findOnBackInvokedDispatcher()Landroid/window/OnBackInvokedDispatcher;
 
     .line 6
     .line 7
-    const v2, 0x30ccecff
-
     .line 8
-    .line 9
-    .line 10
-    const/4 v3, 0x0
+    move-result-object p0
 
+    .line 9
+    if-eqz p0, :cond_0
+
+    .line 10
     .line 11
-    invoke-direct {v1, v2, v0, v3}, Landroidx/compose/runtime/internal/b;-><init>(ILkotlin/jvm/internal/Lambda;Z)V
+    const/4 v0, 0x0
 
     .line 12
+    check-cast p1, Landroid/window/OnBackInvokedCallback;
+
     .line 13
     .line 14
-    sput-object v1, Landroidx/compose/material3/s;->a:Landroidx/compose/runtime/internal/b;
+    invoke-interface {p0, v0, p1}, Landroid/window/OnBackInvokedDispatcher;->registerOnBackInvokedCallback(ILandroid/window/OnBackInvokedCallback;)V
 
     .line 15
     .line 16
+    .line 17
+    :cond_0
+    return-void
+.end method
+
+.method public static final c(Landroid/view/View;Ljava/lang/Object;)V
+    .locals 1
+
+    .line 1
+    instance-of v0, p1, Landroid/window/OnBackInvokedCallback;
+
+    .line 2
+    .line 3
+    if-eqz v0, :cond_0
+
+    .line 4
+    .line 5
+    invoke-virtual {p0}, Landroid/view/View;->findOnBackInvokedDispatcher()Landroid/window/OnBackInvokedDispatcher;
+
+    .line 6
+    .line 7
+    .line 8
+    move-result-object p0
+
+    .line 9
+    if-eqz p0, :cond_0
+
+    .line 10
+    .line 11
+    check-cast p1, Landroid/window/OnBackInvokedCallback;
+
+    .line 12
+    .line 13
+    invoke-interface {p0, p1}, Landroid/window/OnBackInvokedDispatcher;->unregisterOnBackInvokedCallback(Landroid/window/OnBackInvokedCallback;)V
+
+    .line 14
+    .line 15
+    .line 16
+    :cond_0
     return-void
 .end method

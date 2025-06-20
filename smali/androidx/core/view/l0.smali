@@ -1,19 +1,17 @@
-.class public final Landroidx/core/view/l0;
-.super Ljava/lang/Object;
+.class public Landroidx/core/view/L0;
+.super Landroidx/core/view/h0;
 .source "SourceFile"
-
-# interfaces
-.implements Landroid/view/ViewTreeObserver$OnGlobalLayoutListener;
-.implements Landroid/view/View$OnAttachStateChangeListener;
 
 
 # instance fields
-.field public final b:Ljava/util/WeakHashMap;
+.field public final e:Landroid/view/Window;
+
+.field public final f:Landroidx/core/view/K;
 
 
 # direct methods
-.method public constructor <init>()V
-    .locals 1
+.method public constructor <init>(Landroid/view/Window;Landroidx/core/view/K;)V
+    .locals 0
 
     .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -21,221 +19,367 @@
     .line 2
     .line 3
     .line 4
-    new-instance v0, Ljava/util/WeakHashMap;
+    iput-object p1, p0, Landroidx/core/view/L0;->e:Landroid/view/Window;
 
     .line 5
     .line 6
-    invoke-direct {v0}, Ljava/util/WeakHashMap;-><init>()V
+    iput-object p2, p0, Landroidx/core/view/L0;->f:Landroidx/core/view/K;
 
     .line 7
     .line 8
-    .line 9
-    iput-object v0, p0, Landroidx/core/view/l0;->b:Ljava/util/WeakHashMap;
-
-    .line 10
-    .line 11
     return-void
 .end method
 
 
 # virtual methods
-.method public final onGlobalLayout()V
-    .locals 5
+.method public final e(I)V
+    .locals 3
 
     .line 1
-    sget v0, Landroid/os/Build$VERSION;->SDK_INT:I
+    const/4 v0, 0x1
 
     .line 2
+    const/4 v1, 0x1
+
     .line 3
-    const/16 v1, 0x1c
+    :goto_0
+    const/16 v2, 0x200
 
     .line 4
     .line 5
-    if-ge v0, v1, :cond_3
+    if-gt v1, v2, :cond_4
 
     .line 6
     .line 7
-    iget-object v0, p0, Landroidx/core/view/l0;->b:Ljava/util/WeakHashMap;
+    and-int v2, p1, v1
 
     .line 8
     .line 9
-    invoke-virtual {v0}, Ljava/util/WeakHashMap;->entrySet()Ljava/util/Set;
+    if-nez v2, :cond_0
 
     .line 10
     .line 11
+    goto :goto_1
+
     .line 12
-    move-result-object v0
+    :cond_0
+    if-eq v1, v0, :cond_3
 
     .line 13
-    invoke-interface {v0}, Ljava/util/Set;->iterator()Ljava/util/Iterator;
+    .line 14
+    const/4 v2, 0x2
+
+    .line 15
+    if-eq v1, v2, :cond_2
+
+    .line 16
+    .line 17
+    const/16 v2, 0x8
+
+    .line 18
+    .line 19
+    if-eq v1, v2, :cond_1
+
+    .line 20
+    .line 21
+    goto :goto_1
+
+    .line 22
+    :cond_1
+    iget-object v2, p0, Landroidx/core/view/L0;->f:Landroidx/core/view/K;
+
+    .line 23
+    .line 24
+    iget-object v2, v2, Landroidx/core/view/K;->c:Ljava/lang/Object;
+
+    .line 25
+    .line 26
+    check-cast v2, LZ/c;
+
+    .line 27
+    .line 28
+    invoke-virtual {v2}, LZ/c;->v()V
+
+    .line 29
+    .line 30
+    .line 31
+    goto :goto_1
+
+    .line 32
+    :cond_2
+    invoke-virtual {p0, v2}, Landroidx/core/view/L0;->l(I)V
+
+    .line 33
+    .line 34
+    .line 35
+    goto :goto_1
+
+    .line 36
+    :cond_3
+    const/4 v2, 0x4
+
+    .line 37
+    invoke-virtual {p0, v2}, Landroidx/core/view/L0;->l(I)V
+
+    .line 38
+    .line 39
+    .line 40
+    :goto_1
+    shl-int/lit8 v1, v1, 0x1
+
+    .line 41
+    .line 42
+    goto :goto_0
+
+    .line 43
+    :cond_4
+    return-void
+.end method
+
+.method public final j()V
+    .locals 3
+
+    .line 1
+    iget-object v0, p0, Landroidx/core/view/L0;->e:Landroid/view/Window;
+
+    .line 2
+    .line 3
+    invoke-virtual {v0}, Landroid/view/Window;->getDecorView()Landroid/view/View;
+
+    .line 4
+    .line 5
+    .line 6
+    move-result-object v0
+
+    .line 7
+    const/4 v1, 0x2
+
+    .line 8
+    invoke-static {v1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    .line 9
+    .line 10
+    .line 11
+    move-result-object v1
+
+    .line 12
+    const v2, 0x1538b9a6
+
+    .line 13
+    .line 14
+    .line 15
+    invoke-virtual {v0, v2, v1}, Landroid/view/View;->setTag(ILjava/lang/Object;)V
+
+    .line 16
+    .line 17
+    .line 18
+    const/16 v0, 0x800
+
+    .line 19
+    .line 20
+    invoke-virtual {p0, v0}, Landroidx/core/view/L0;->m(I)V
+
+    .line 21
+    .line 22
+    .line 23
+    const/16 v0, 0x1000
+
+    .line 24
+    .line 25
+    invoke-virtual {p0, v0}, Landroidx/core/view/L0;->l(I)V
+
+    .line 26
+    .line 27
+    .line 28
+    return-void
+.end method
+
+.method public final k()V
+    .locals 4
+
+    .line 1
+    const/4 v0, 0x1
+
+    .line 2
+    const/4 v1, 0x1
+
+    .line 3
+    :goto_0
+    const/16 v2, 0x200
+
+    .line 4
+    .line 5
+    if-gt v1, v2, :cond_4
+
+    .line 6
+    .line 7
+    const/16 v2, 0x8
+
+    .line 8
+    .line 9
+    and-int v3, v2, v1
+
+    .line 10
+    .line 11
+    if-nez v3, :cond_0
+
+    .line 12
+    .line 13
+    goto :goto_1
+
+    .line 14
+    :cond_0
+    if-eq v1, v0, :cond_3
+
+    .line 15
+    .line 16
+    const/4 v3, 0x2
+
+    .line 17
+    if-eq v1, v3, :cond_2
+
+    .line 18
+    .line 19
+    if-eq v1, v2, :cond_1
+
+    .line 20
+    .line 21
+    goto :goto_1
+
+    .line 22
+    :cond_1
+    iget-object v2, p0, Landroidx/core/view/L0;->f:Landroidx/core/view/K;
+
+    .line 23
+    .line 24
+    iget-object v2, v2, Landroidx/core/view/K;->c:Ljava/lang/Object;
+
+    .line 25
+    .line 26
+    check-cast v2, LZ/c;
+
+    .line 27
+    .line 28
+    invoke-virtual {v2}, LZ/c;->B()V
+
+    .line 29
+    .line 30
+    .line 31
+    goto :goto_1
+
+    .line 32
+    :cond_2
+    invoke-virtual {p0, v3}, Landroidx/core/view/L0;->m(I)V
+
+    .line 33
+    .line 34
+    .line 35
+    goto :goto_1
+
+    .line 36
+    :cond_3
+    const/4 v2, 0x4
+
+    .line 37
+    invoke-virtual {p0, v2}, Landroidx/core/view/L0;->m(I)V
+
+    .line 38
+    .line 39
+    .line 40
+    iget-object v2, p0, Landroidx/core/view/L0;->e:Landroid/view/Window;
+
+    .line 41
+    .line 42
+    const/16 v3, 0x400
+
+    .line 43
+    .line 44
+    invoke-virtual {v2, v3}, Landroid/view/Window;->clearFlags(I)V
+
+    .line 45
+    .line 46
+    .line 47
+    :goto_1
+    shl-int/lit8 v1, v1, 0x1
+
+    .line 48
+    .line 49
+    goto :goto_0
+
+    .line 50
+    :cond_4
+    return-void
+.end method
+
+.method public final l(I)V
+    .locals 2
+
+    .line 1
+    iget-object v0, p0, Landroidx/core/view/L0;->e:Landroid/view/Window;
+
+    .line 2
+    .line 3
+    invoke-virtual {v0}, Landroid/view/Window;->getDecorView()Landroid/view/View;
+
+    .line 4
+    .line 5
+    .line 6
+    move-result-object v0
+
+    .line 7
+    invoke-virtual {v0}, Landroid/view/View;->getSystemUiVisibility()I
+
+    .line 8
+    .line 9
+    .line 10
+    move-result v1
+
+    .line 11
+    or-int/2addr p1, v1
+
+    .line 12
+    invoke-virtual {v0, p1}, Landroid/view/View;->setSystemUiVisibility(I)V
+
+    .line 13
+    .line 14
+    .line 15
+    return-void
+.end method
+
+.method public final m(I)V
+    .locals 2
+
+    .line 1
+    iget-object v0, p0, Landroidx/core/view/L0;->e:Landroid/view/Window;
+
+    .line 2
+    .line 3
+    invoke-virtual {v0}, Landroid/view/Window;->getDecorView()Landroid/view/View;
+
+    .line 4
+    .line 5
+    .line 6
+    move-result-object v0
+
+    .line 7
+    invoke-virtual {v0}, Landroid/view/View;->getSystemUiVisibility()I
+
+    .line 8
+    .line 9
+    .line 10
+    move-result v1
+
+    .line 11
+    not-int p1, p1
+
+    .line 12
+    and-int/2addr p1, v1
+
+    .line 13
+    invoke-virtual {v0, p1}, Landroid/view/View;->setSystemUiVisibility(I)V
 
     .line 14
     .line 15
     .line 16
-    move-result-object v0
-
-    .line 17
-    :cond_0
-    :goto_0
-    invoke-interface {v0}, Ljava/util/Iterator;->hasNext()Z
-
-    .line 18
-    .line 19
-    .line 20
-    move-result v1
-
-    .line 21
-    if-eqz v1, :cond_3
-
-    .line 22
-    .line 23
-    invoke-interface {v0}, Ljava/util/Iterator;->next()Ljava/lang/Object;
-
-    .line 24
-    .line 25
-    .line 26
-    move-result-object v1
-
-    .line 27
-    check-cast v1, Ljava/util/Map$Entry;
-
-    .line 28
-    .line 29
-    invoke-interface {v1}, Ljava/util/Map$Entry;->getKey()Ljava/lang/Object;
-
-    .line 30
-    .line 31
-    .line 32
-    move-result-object v2
-
-    .line 33
-    check-cast v2, Landroid/view/View;
-
-    .line 34
-    .line 35
-    invoke-interface {v1}, Ljava/util/Map$Entry;->getValue()Ljava/lang/Object;
-
-    .line 36
-    .line 37
-    .line 38
-    move-result-object v3
-
-    .line 39
-    check-cast v3, Ljava/lang/Boolean;
-
-    .line 40
-    .line 41
-    invoke-virtual {v3}, Ljava/lang/Boolean;->booleanValue()Z
-
-    .line 42
-    .line 43
-    .line 44
-    move-result v3
-
-    .line 45
-    invoke-virtual {v2}, Landroid/view/View;->isShown()Z
-
-    .line 46
-    .line 47
-    .line 48
-    move-result v4
-
-    .line 49
-    if-eqz v4, :cond_1
-
-    .line 50
-    .line 51
-    invoke-virtual {v2}, Landroid/view/View;->getWindowVisibility()I
-
-    .line 52
-    .line 53
-    .line 54
-    move-result v4
-
-    .line 55
-    if-nez v4, :cond_1
-
-    .line 56
-    .line 57
-    const/4 v4, 0x1
-
-    .line 58
-    goto :goto_1
-
-    .line 59
-    :cond_1
-    const/4 v4, 0x0
-
-    .line 60
-    :goto_1
-    if-eq v3, v4, :cond_0
-
-    .line 61
-    .line 62
-    if-eqz v4, :cond_2
-
-    .line 63
-    .line 64
-    const/16 v3, 0x10
-
-    .line 65
-    .line 66
-    goto :goto_2
-
-    .line 67
-    :cond_2
-    const/16 v3, 0x20
-
-    .line 68
-    .line 69
-    :goto_2
-    invoke-static {v3, v2}, Landroidx/core/view/y0;->k(ILandroid/view/View;)V
-
-    .line 70
-    .line 71
-    .line 72
-    invoke-static {v4}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
-
-    .line 73
-    .line 74
-    .line 75
-    move-result-object v2
-
-    .line 76
-    invoke-interface {v1, v2}, Ljava/util/Map$Entry;->setValue(Ljava/lang/Object;)Ljava/lang/Object;
-
-    .line 77
-    .line 78
-    .line 79
-    goto :goto_0
-
-    .line 80
-    :cond_3
-    return-void
-.end method
-
-.method public final onViewAttachedToWindow(Landroid/view/View;)V
-    .locals 0
-
-    .line 1
-    invoke-virtual {p1}, Landroid/view/View;->getViewTreeObserver()Landroid/view/ViewTreeObserver;
-
-    .line 2
-    .line 3
-    .line 4
-    move-result-object p1
-
-    .line 5
-    invoke-virtual {p1, p0}, Landroid/view/ViewTreeObserver;->addOnGlobalLayoutListener(Landroid/view/ViewTreeObserver$OnGlobalLayoutListener;)V
-
-    .line 6
-    .line 7
-    .line 8
-    return-void
-.end method
-
-.method public final onViewDetachedFromWindow(Landroid/view/View;)V
-    .locals 0
-
     return-void
 .end method

@@ -14,7 +14,7 @@
 
 .annotation runtime Lkotlin/Metadata;
     d1 = {
-        "\u0000\u0018\n\u0000\n\u0002\u0010\u0010\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0008\u0008\u0008\u0080\u0001\u0018\u0000 \u00072\u0008\u0012\u0004\u0012\u00020\u00020\u0001:\u0001\u0008J\u000e\u0010\u0006\u001a\u00020\u00052\u0006\u0010\u0004\u001a\u00020\u0003j\u0002\u0008\tj\u0002\u0008\nj\u0002\u0008\u000bj\u0002\u0008\u000c\u00a8\u0006\r"
+        "\u0000\u0018\n\u0000\n\u0002\u0010\u0010\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0008\t\u0008\u0080\u0001\u0018\u0000 \u00082\u0008\u0012\u0004\u0012\u00020\u00020\u0001:\u0001\tJ\u0015\u0010\u0006\u001a\u00020\u00052\u0006\u0010\u0004\u001a\u00020\u0003\u00a2\u0006\u0004\u0008\u0006\u0010\u0007j\u0002\u0008\nj\u0002\u0008\u000bj\u0002\u0008\u000cj\u0002\u0008\r\u00a8\u0006\u000e"
     }
     d2 = {
         "androidx/fragment/app/SpecialEffectsController$Operation$State",
@@ -22,10 +22,11 @@
         "Landroidx/fragment/app/SpecialEffectsController$Operation$State;",
         "Landroid/view/View;",
         "view",
-        "Lqh/r;",
+        "LX9/j;",
         "applyState",
+        "(Landroid/view/View;)V",
         "Companion",
-        "androidx/fragment/app/q1",
+        "androidx/fragment/app/u0",
         "REMOVED",
         "VISIBLE",
         "GONE",
@@ -38,11 +39,12 @@
         0x8,
         0x0
     }
+    xi = 0x30
 .end annotation
 
 
 # static fields
-.field public static final Companion:Landroidx/fragment/app/q1;
+.field public static final Companion:Landroidx/fragment/app/u0;
 
 .field public static final enum GONE:Landroidx/fragment/app/SpecialEffectsController$Operation$State;
 
@@ -60,114 +62,114 @@
     .locals 9
 
     .line 1
-    new-instance v0, Landroidx/fragment/app/SpecialEffectsController$Operation$State;
+    const/4 v0, 0x3
 
     .line 2
+    const/4 v1, 0x2
+
     .line 3
-    const-string v1, "REMOVED"
+    const/4 v2, 0x1
 
     .line 4
+    const/4 v3, 0x0
+
     .line 5
-    const/4 v2, 0x0
+    new-instance v4, Landroidx/fragment/app/SpecialEffectsController$Operation$State;
 
     .line 6
-    invoke-direct {v0, v1, v2}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
-
     .line 7
+    const-string v5, "REMOVED"
+
     .line 8
     .line 9
-    sput-object v0, Landroidx/fragment/app/SpecialEffectsController$Operation$State;->REMOVED:Landroidx/fragment/app/SpecialEffectsController$Operation$State;
+    invoke-direct {v4, v5, v3}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
 
     .line 10
     .line 11
-    new-instance v1, Landroidx/fragment/app/SpecialEffectsController$Operation$State;
-
     .line 12
+    sput-object v4, Landroidx/fragment/app/SpecialEffectsController$Operation$State;->REMOVED:Landroidx/fragment/app/SpecialEffectsController$Operation$State;
+
     .line 13
-    const-string v3, "VISIBLE"
-
     .line 14
-    .line 15
-    const/4 v4, 0x1
+    new-instance v5, Landroidx/fragment/app/SpecialEffectsController$Operation$State;
 
+    .line 15
     .line 16
-    invoke-direct {v1, v3, v4}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
+    const-string v6, "VISIBLE"
 
     .line 17
     .line 18
-    .line 19
-    sput-object v1, Landroidx/fragment/app/SpecialEffectsController$Operation$State;->VISIBLE:Landroidx/fragment/app/SpecialEffectsController$Operation$State;
+    invoke-direct {v5, v6, v2}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
 
+    .line 19
     .line 20
     .line 21
-    new-instance v3, Landroidx/fragment/app/SpecialEffectsController$Operation$State;
+    sput-object v5, Landroidx/fragment/app/SpecialEffectsController$Operation$State;->VISIBLE:Landroidx/fragment/app/SpecialEffectsController$Operation$State;
 
     .line 22
     .line 23
-    const-string v5, "GONE"
+    new-instance v6, Landroidx/fragment/app/SpecialEffectsController$Operation$State;
 
     .line 24
     .line 25
-    const/4 v6, 0x2
+    const-string v7, "GONE"
 
     .line 26
-    invoke-direct {v3, v5, v6}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
-
     .line 27
+    invoke-direct {v6, v7, v1}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
+
     .line 28
     .line 29
-    sput-object v3, Landroidx/fragment/app/SpecialEffectsController$Operation$State;->GONE:Landroidx/fragment/app/SpecialEffectsController$Operation$State;
-
     .line 30
+    sput-object v6, Landroidx/fragment/app/SpecialEffectsController$Operation$State;->GONE:Landroidx/fragment/app/SpecialEffectsController$Operation$State;
+
     .line 31
-    new-instance v5, Landroidx/fragment/app/SpecialEffectsController$Operation$State;
-
     .line 32
+    new-instance v7, Landroidx/fragment/app/SpecialEffectsController$Operation$State;
+
     .line 33
-    const-string v7, "INVISIBLE"
-
     .line 34
-    .line 35
-    const/4 v8, 0x3
+    const-string v8, "INVISIBLE"
 
+    .line 35
     .line 36
-    invoke-direct {v5, v7, v8}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
+    invoke-direct {v7, v8, v0}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
 
     .line 37
     .line 38
     .line 39
-    sput-object v5, Landroidx/fragment/app/SpecialEffectsController$Operation$State;->INVISIBLE:Landroidx/fragment/app/SpecialEffectsController$Operation$State;
+    sput-object v7, Landroidx/fragment/app/SpecialEffectsController$Operation$State;->INVISIBLE:Landroidx/fragment/app/SpecialEffectsController$Operation$State;
 
     .line 40
     .line 41
-    const/4 v7, 0x4
+    const/4 v8, 0x4
 
     .line 42
-    new-array v7, v7, [Landroidx/fragment/app/SpecialEffectsController$Operation$State;
+    new-array v8, v8, [Landroidx/fragment/app/SpecialEffectsController$Operation$State;
 
     .line 43
     .line 44
-    aput-object v0, v7, v2
+    aput-object v4, v8, v3
 
     .line 45
     .line 46
-    aput-object v1, v7, v4
+    aput-object v5, v8, v2
 
     .line 47
     .line 48
-    aput-object v3, v7, v6
+    aput-object v6, v8, v1
 
     .line 49
     .line 50
-    aput-object v5, v7, v8
+    aput-object v7, v8, v0
 
     .line 51
     .line 52
-    sput-object v7, Landroidx/fragment/app/SpecialEffectsController$Operation$State;->b:[Landroidx/fragment/app/SpecialEffectsController$Operation$State;
+    sput-object v8, Landroidx/fragment/app/SpecialEffectsController$Operation$State;->b:[Landroidx/fragment/app/SpecialEffectsController$Operation$State;
 
     .line 53
     .line 54
-    new-instance v0, Landroidx/fragment/app/q1;
+    new-instance v0, Landroidx/fragment/app/u0;
 
     .line 55
     .line 56
@@ -176,7 +178,7 @@
     .line 57
     .line 58
     .line 59
-    sput-object v0, Landroidx/fragment/app/SpecialEffectsController$Operation$State;->Companion:Landroidx/fragment/app/q1;
+    sput-object v0, Landroidx/fragment/app/SpecialEffectsController$Operation$State;->Companion:Landroidx/fragment/app/u0;
 
     .line 60
     .line 61
@@ -186,11 +188,11 @@
 .method public static final from(I)Landroidx/fragment/app/SpecialEffectsController$Operation$State;
     .locals 1
 
-    sget-object v0, Landroidx/fragment/app/SpecialEffectsController$Operation$State;->Companion:Landroidx/fragment/app/q1;
+    sget-object v0, Landroidx/fragment/app/SpecialEffectsController$Operation$State;->Companion:Landroidx/fragment/app/u0;
 
     invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
-    invoke-static {p0}, Landroidx/fragment/app/q1;->b(I)Landroidx/fragment/app/SpecialEffectsController$Operation$State;
+    invoke-static {p0}, Landroidx/fragment/app/u0;->b(I)Landroidx/fragment/app/SpecialEffectsController$Operation$State;
 
     move-result-object p0
 
@@ -231,7 +233,7 @@
     .locals 4
 
     .line 1
-    sget-object v0, Landroidx/fragment/app/r1;->a:[I
+    sget-object v0, Landroidx/fragment/app/v0;->a:[I
 
     .line 2
     .line 3

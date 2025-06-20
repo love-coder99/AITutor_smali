@@ -1,15 +1,17 @@
 .class public final Landroidx/viewpager/widget/c;
-.super Ljava/lang/Object;
+.super Landroid/view/ViewGroup$LayoutParams;
 .source "SourceFile"
 
 
 # instance fields
-.field public a:Ljava/lang/Object;
+.field public a:Z
 
 .field public b:I
 
-.field public c:Z
+.field public c:F
 
-.field public d:F
+.field public d:Z
 
-.field public e:F
+.field public e:I
+
+.field public f:I

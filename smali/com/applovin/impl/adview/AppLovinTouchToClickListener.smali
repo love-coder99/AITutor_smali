@@ -197,9 +197,9 @@
 .method private a(F)F
     .locals 1
 
+    .line 7
     iget-object v0, p0, Lcom/applovin/impl/adview/AppLovinTouchToClickListener;->h:Landroid/content/Context;
 
-    .line 6
     invoke-virtual {v0}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
 
     move-result-object v0
@@ -218,14 +218,14 @@
 .method private a(Landroid/graphics/PointF;Landroid/graphics/PointF;)F
     .locals 2
 
-    .line 2
+    .line 3
     iget v0, p1, Landroid/graphics/PointF;->x:F
 
     iget v1, p2, Landroid/graphics/PointF;->x:F
 
     sub-float/2addr v0, v1
 
-    .line 3
+    .line 4
     iget p1, p1, Landroid/graphics/PointF;->y:F
 
     iget p2, p2, Landroid/graphics/PointF;->y:F
@@ -240,14 +240,14 @@
 
     float-to-double p1, p1
 
-    .line 4
+    .line 5
     invoke-static {p1, p2}, Ljava/lang/Math;->sqrt(D)D
 
     move-result-wide p1
 
     double-to-float p1, p1
 
-    .line 5
+    .line 6
     invoke-direct {p0, p1}, Lcom/applovin/impl/adview/AppLovinTouchToClickListener;->a(F)F
 
     move-result p1
@@ -258,13 +258,14 @@
 .method private a(Landroid/view/View;Landroid/view/MotionEvent;)V
     .locals 1
 
+    .line 1
     iget-object v0, p0, Lcom/applovin/impl/adview/AppLovinTouchToClickListener;->i:Lcom/applovin/impl/adview/AppLovinTouchToClickListener$OnClickListener;
 
-    .line 1
     invoke-interface {v0, p1, p2}, Lcom/applovin/impl/adview/AppLovinTouchToClickListener$OnClickListener;->onClick(Landroid/view/View;Landroid/view/MotionEvent;)V
 
     const/4 p1, 0x1
 
+    .line 2
     iput-boolean p1, p0, Lcom/applovin/impl/adview/AppLovinTouchToClickListener;->g:Z
 
     return-void
@@ -273,6 +274,7 @@
 .method private a(Landroid/view/MotionEvent;)Z
     .locals 6
 
+    .line 8
     iget v0, p0, Lcom/applovin/impl/adview/AppLovinTouchToClickListener;->c:I
 
     const/4 v1, 0x1
@@ -281,24 +283,25 @@
 
     return v1
 
+    .line 9
     :cond_0
     iget-object v0, p0, Lcom/applovin/impl/adview/AppLovinTouchToClickListener;->h:Landroid/content/Context;
 
-    .line 7
     invoke-static {v0}, Lcom/applovin/impl/z3;->b(Landroid/content/Context;)Landroid/graphics/Point;
 
     move-result-object v0
 
-    .line 8
+    .line 10
     invoke-virtual {p1}, Landroid/view/MotionEvent;->getRawX()F
 
     move-result v2
 
-    .line 9
+    .line 11
     invoke-virtual {p1}, Landroid/view/MotionEvent;->getRawY()F
 
     move-result p1
 
+    .line 12
     iget v3, p0, Lcom/applovin/impl/adview/AppLovinTouchToClickListener;->c:I
 
     int-to-float v4, v3
@@ -311,7 +314,6 @@
 
     if-ltz v4, :cond_2
 
-    .line 10
     iget v4, v0, Landroid/graphics/Point;->x:I
 
     sub-int/2addr v4, v3

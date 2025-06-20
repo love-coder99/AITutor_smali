@@ -35,19 +35,19 @@
 
     .line 2
     .line 3
-    const/4 v1, -0x3
-
-    .line 4
     const-wide v2, -0x7fffffffffffffffL    # -4.9E-324
 
+    .line 4
     .line 5
     .line 6
     .line 7
     .line 8
-    .line 9
     const-wide/16 v4, -0x1
 
+    .line 9
     .line 10
+    const/4 v1, -0x3
+
     .line 11
     move-object v0, v6
 

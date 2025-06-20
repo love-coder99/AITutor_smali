@@ -3,14 +3,14 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lzh/c;
+.implements Lka/c;
 
 
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "Lkotlin/jvm/internal/Lambda;",
-        "Lzh/c;"
+        "Lka/c;"
     }
 .end annotation
 
@@ -23,10 +23,10 @@
         "Key",
         "Value",
         "Lkotlin/Function0;",
-        "Lqh/r;",
+        "LX9/j;",
         "it",
         "invoke",
-        "(Lzh/a;)V",
+        "(Lka/a;)V",
         "<anonymous>"
     }
     k = 0x3
@@ -71,27 +71,27 @@
     .locals 0
 
     .line 1
-    check-cast p1, Lzh/a;
+    check-cast p1, Lka/a;
 
-    invoke-virtual {p0, p1}, Landroidx/paging/PagingSource$invalidateCallbackTracker$1;->invoke(Lzh/a;)V
+    invoke-virtual {p0, p1}, Landroidx/paging/PagingSource$invalidateCallbackTracker$1;->invoke(Lka/a;)V
 
-    sget-object p1, Lqh/r;->a:Lqh/r;
+    sget-object p1, LX9/j;->a:LX9/j;
 
     return-object p1
 .end method
 
-.method public final invoke(Lzh/a;)V
+.method public final invoke(Lka/a;)V
     .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
-            "Lzh/a;",
+            "Lka/a;",
             ")V"
         }
     .end annotation
 
     .line 2
-    invoke-interface {p1}, Lzh/a;->invoke()Ljava/lang/Object;
+    invoke-interface {p1}, Lka/a;->invoke()Ljava/lang/Object;
 
     return-void
 .end method

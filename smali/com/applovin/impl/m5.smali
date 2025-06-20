@@ -39,13 +39,14 @@
 .method private a(JI)V
     .locals 2
 
-    .line 1
+    .line 2
     iget-wide v0, p0, Lcom/applovin/impl/m5;->j:J
 
     add-long/2addr v0, p1
 
     iput-wide v0, p0, Lcom/applovin/impl/m5;->j:J
 
+    .line 3
     iget p1, p0, Lcom/applovin/impl/m5;->k:I
 
     add-int/2addr p1, p3
@@ -62,7 +63,7 @@
 
     monitor-enter p0
 
-    .line 3
+    .line 4
     monitor-exit p0
 
     return-void
@@ -73,7 +74,7 @@
 
     const/4 v0, 0x1
 
-    .line 2
+    .line 1
     invoke-direct {p0, p1, p2, v0}, Lcom/applovin/impl/m5;->a(JI)V
 
     return-void

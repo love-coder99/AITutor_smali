@@ -49,6 +49,10 @@
 # virtual methods
 .method public final onEvent(ILjava/lang/String;)V
     .locals 0
+    .param p2    # Ljava/lang/String;
+        .annotation build Landroidx/annotation/Nullable;
+        .end annotation
+    .end param
 
     .line 1
     invoke-static {p2}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z

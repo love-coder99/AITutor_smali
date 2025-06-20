@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout android:tag="layout/ads_banner_layout_0" android:layout_width="fill_parent" android:layout_height="fill_parent"
+<androidx.constraintlayout.widget.ConstraintLayout android:tag="layout/ads_banner_layout_0" android:layout_width="fill_parent" android:layout_height="wrap_content"
   xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
     <FrameLayout android:id="@id/ad_container" android:tag="binding_1" android:background="@color/neutral_100" android:layout_width="fill_parent" android:layout_height="wrap_content" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent">
-        <include android:layout_gravity="bottom" android:id="@id/shimmer_content" android:layout_width="fill_parent" android:layout_height="0.0dip" layout="@layout/shimmer_banner_layout" />
+        <include android:layout_gravity="center" android:id="@id/shimmer_content" android:layout_width="fill_parent" android:layout_height="@dimen/_50dp" layout="@layout/shimmer_banner_layout" />
     </FrameLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -24,24 +24,42 @@
 
 # instance fields
 .field private appHubPackageName:Ljava/lang/String;
+    .annotation build Landroidx/annotation/Nullable;
+    .end annotation
+.end field
 
 .field private appHubService:Lcom/applovin/array/apphub/aidl/IAppHubService;
+    .annotation build Landroidx/annotation/Nullable;
+    .end annotation
+.end field
 
 .field private final appHubServiceIntent:Landroid/content/Intent;
+    .annotation build Landroidx/annotation/Nullable;
+    .end annotation
+.end field
 
 .field private appHubVersionCode:J
 
 .field private currentDownloadState:Lcom/applovin/impl/sdk/array/ArrayService$DirectDownloadState;
+    .annotation build Landroidx/annotation/Nullable;
+    .end annotation
+.end field
 
 .field private currentRetryCount:I
 
 .field private final dataCollector:Lcom/applovin/impl/sdk/array/ArrayDataCollector;
 
 .field private isDirectDownloadEnabled:Ljava/lang/Boolean;
+    .annotation build Landroidx/annotation/Nullable;
+    .end annotation
+.end field
 
 .field private final logger:Lcom/applovin/impl/sdk/n;
 
 .field private randomUserToken:Ljava/lang/String;
+    .annotation build Landroidx/annotation/Nullable;
+    .end annotation
+.end field
 
 .field private final sdk:Lcom/applovin/impl/sdk/j;
 
@@ -413,6 +431,8 @@
 
 .method private createAppHubServiceIntent()Landroid/content/Intent;
     .locals 4
+    .annotation build Landroidx/annotation/Nullable;
+    .end annotation
 
     .line 1
     new-instance v0, Landroid/content/Intent;
@@ -805,50 +825,76 @@
 
 .method public getAppHubPackageName()Ljava/lang/String;
     .locals 1
+    .annotation build Landroidx/annotation/Nullable;
+    .end annotation
 
+    .line 1
     iget-object v0, p0, Lcom/applovin/impl/sdk/array/ArrayService;->appHubPackageName:Ljava/lang/String;
 
+    .line 2
+    .line 3
     return-object v0
 .end method
 
 .method public getAppHubVersionCode()J
     .locals 2
 
+    .line 1
     iget-wide v0, p0, Lcom/applovin/impl/sdk/array/ArrayService;->appHubVersionCode:J
 
+    .line 2
+    .line 3
     return-wide v0
 .end method
 
 .method public getIsDirectDownloadEnabled()Ljava/lang/Boolean;
     .locals 1
+    .annotation build Landroidx/annotation/Nullable;
+    .end annotation
 
+    .line 1
     iget-object v0, p0, Lcom/applovin/impl/sdk/array/ArrayService;->isDirectDownloadEnabled:Ljava/lang/Boolean;
 
+    .line 2
+    .line 3
     return-object v0
 .end method
 
 .method public getRandomUserToken()Ljava/lang/String;
     .locals 1
+    .annotation build Landroidx/annotation/Nullable;
+    .end annotation
 
+    .line 1
     iget-object v0, p0, Lcom/applovin/impl/sdk/array/ArrayService;->randomUserToken:Ljava/lang/String;
 
+    .line 2
+    .line 3
     return-object v0
 .end method
 
 .method public isAppHubInstalled()Z
     .locals 1
 
+    .line 1
     iget-object v0, p0, Lcom/applovin/impl/sdk/array/ArrayService;->appHubService:Lcom/applovin/array/apphub/aidl/IAppHubService;
 
+    .line 2
+    .line 3
     if-eqz v0, :cond_0
 
+    .line 4
+    .line 5
     const/4 v0, 0x1
 
+    .line 6
     goto :goto_0
 
+    .line 7
     :cond_0
     const/4 v0, 0x0
 
+    .line 8
     :goto_0
     return v0
 .end method
@@ -1141,6 +1187,10 @@
 
 .method public startDirectInstallOrDownloadProcess(Lcom/applovin/impl/sdk/array/ArrayDirectDownloadAd;Landroid/os/Bundle;Lcom/applovin/impl/sdk/array/ArrayService$DirectDownloadListener;)V
     .locals 4
+    .param p2    # Landroid/os/Bundle;
+        .annotation build Landroidx/annotation/Nullable;
+        .end annotation
+    .end param
 
     .line 1
     iget-object v0, p0, Lcom/applovin/impl/sdk/array/ArrayService;->appHubService:Lcom/applovin/array/apphub/aidl/IAppHubService;

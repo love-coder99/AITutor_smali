@@ -44,7 +44,7 @@
 .method public static synthetic a(Lcom/applovin/impl/sdk/m$a;)I
     .locals 2
 
-    .line 4
+    .line 3
     iget v0, p0, Lcom/applovin/impl/sdk/m$a;->b:I
 
     add-int/lit8 v1, v0, 0x1
@@ -57,7 +57,7 @@
 .method public static synthetic a(Lcom/applovin/impl/sdk/m$a;J)J
     .locals 0
 
-    .line 3
+    .line 2
     iput-wide p1, p0, Lcom/applovin/impl/sdk/m$a;->a:J
 
     return-wide p1
@@ -68,7 +68,7 @@
 .method public a()I
     .locals 1
 
-    .line 1
+    .line 4
     iget v0, p0, Lcom/applovin/impl/sdk/m$a;->b:I
 
     return v0
@@ -77,7 +77,7 @@
 .method public a(Ljava/lang/Object;)Z
     .locals 0
 
-    .line 2
+    .line 1
     instance-of p1, p1, Lcom/applovin/impl/sdk/m$a;
 
     return p1
@@ -86,8 +86,11 @@
 .method public b()J
     .locals 2
 
+    .line 1
     iget-wide v0, p0, Lcom/applovin/impl/sdk/m$a;->a:J
 
+    .line 2
+    .line 3
     return-wide v0
 .end method
 

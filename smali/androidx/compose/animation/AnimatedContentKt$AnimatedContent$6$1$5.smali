@@ -3,12 +3,12 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lzh/f;
+.implements Lka/f;
 
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Landroidx/compose/animation/AnimatedContentKt$AnimatedContent$6$1;->invoke(Landroidx/compose/runtime/l;I)V
+    value = Landroidx/compose/animation/AnimatedContentKt$AnimatedContent$6$1;->invoke(Landroidx/compose/runtime/j;I)V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -19,7 +19,7 @@
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "Lkotlin/jvm/internal/Lambda;",
-        "Lzh/f;"
+        "Lka/f;"
     }
 .end annotation
 
@@ -29,10 +29,10 @@
     }
     d2 = {
         "S",
-        "Landroidx/compose/animation/n;",
-        "Lqh/r;",
+        "Landroidx/compose/animation/m;",
+        "LX9/j;",
         "invoke",
-        "(Landroidx/compose/animation/n;Landroidx/compose/runtime/l;I)V",
+        "(Landroidx/compose/animation/m;Landroidx/compose/runtime/j;I)V",
         "<anonymous>"
     }
     k = 0x3
@@ -45,26 +45,26 @@
 
 
 # instance fields
-.field final synthetic $content:Lzh/g;
+.field final synthetic $content:Lka/g;
     .annotation system Ldalvik/annotation/Signature;
         value = {
-            "Lzh/g;"
+            "Lka/g;"
         }
     .end annotation
 .end field
 
-.field final synthetic $currentlyVisible:Landroidx/compose/runtime/snapshots/p;
+.field final synthetic $currentlyVisible:Landroidx/compose/runtime/snapshots/n;
     .annotation system Ldalvik/annotation/Signature;
         value = {
-            "Landroidx/compose/runtime/snapshots/p;"
+            "Landroidx/compose/runtime/snapshots/n;"
         }
     .end annotation
 .end field
 
-.field final synthetic $rootScope:Landroidx/compose/animation/k;
+.field final synthetic $rootScope:Landroidx/compose/animation/j;
     .annotation system Ldalvik/annotation/Signature;
         value = {
-            "Landroidx/compose/animation/k;"
+            "Landroidx/compose/animation/j;"
         }
     .end annotation
 .end field
@@ -79,32 +79,44 @@
 
 
 # direct methods
-.method public constructor <init>(Landroidx/compose/runtime/snapshots/p;Ljava/lang/Object;Landroidx/compose/animation/k;Lzh/g;)V
+.method public constructor <init>(Landroidx/compose/runtime/snapshots/n;Ljava/lang/Object;Landroidx/compose/animation/j;Lka/g;)V
     .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
-            "Landroidx/compose/runtime/snapshots/p;",
+            "Landroidx/compose/runtime/snapshots/n;",
             "Ljava/lang/Object;",
-            "Landroidx/compose/animation/k;",
-            "Lzh/g;",
+            "Landroidx/compose/animation/j;",
+            "Lka/g;",
             ")V"
         }
     .end annotation
 
     .line 1
-    iput-object p1, p0, Landroidx/compose/animation/AnimatedContentKt$AnimatedContent$6$1$5;->$currentlyVisible:Landroidx/compose/runtime/snapshots/p;
+    iput-object p1, p0, Landroidx/compose/animation/AnimatedContentKt$AnimatedContent$6$1$5;->$currentlyVisible:Landroidx/compose/runtime/snapshots/n;
 
+    .line 2
+    .line 3
     iput-object p2, p0, Landroidx/compose/animation/AnimatedContentKt$AnimatedContent$6$1$5;->$stateForContent:Ljava/lang/Object;
 
-    iput-object p3, p0, Landroidx/compose/animation/AnimatedContentKt$AnimatedContent$6$1$5;->$rootScope:Landroidx/compose/animation/k;
+    .line 4
+    .line 5
+    iput-object p3, p0, Landroidx/compose/animation/AnimatedContentKt$AnimatedContent$6$1$5;->$rootScope:Landroidx/compose/animation/j;
 
-    iput-object p4, p0, Landroidx/compose/animation/AnimatedContentKt$AnimatedContent$6$1$5;->$content:Lzh/g;
+    .line 6
+    .line 7
+    iput-object p4, p0, Landroidx/compose/animation/AnimatedContentKt$AnimatedContent$6$1$5;->$content:Lka/g;
 
+    .line 8
+    .line 9
     const/4 p1, 0x3
 
+    .line 10
     invoke-direct {p0, p1}, Lkotlin/jvm/internal/Lambda;-><init>(I)V
 
+    .line 11
+    .line 12
+    .line 13
     return-void
 .end method
 
@@ -114,9 +126,9 @@
     .locals 0
 
     .line 1
-    check-cast p1, Landroidx/compose/animation/n;
+    check-cast p1, Landroidx/compose/animation/m;
 
-    check-cast p2, Landroidx/compose/runtime/l;
+    check-cast p2, Landroidx/compose/runtime/j;
 
     check-cast p3, Ljava/lang/Number;
 
@@ -124,14 +136,14 @@
 
     move-result p3
 
-    invoke-virtual {p0, p1, p2, p3}, Landroidx/compose/animation/AnimatedContentKt$AnimatedContent$6$1$5;->invoke(Landroidx/compose/animation/n;Landroidx/compose/runtime/l;I)V
+    invoke-virtual {p0, p1, p2, p3}, Landroidx/compose/animation/AnimatedContentKt$AnimatedContent$6$1$5;->invoke(Landroidx/compose/animation/m;Landroidx/compose/runtime/j;I)V
 
-    sget-object p1, Lqh/r;->a:Lqh/r;
+    sget-object p1, LX9/j;->a:LX9/j;
 
     return-object p1
 .end method
 
-.method public final invoke(Landroidx/compose/animation/n;Landroidx/compose/runtime/l;I)V
+.method public final invoke(Landroidx/compose/animation/m;Landroidx/compose/runtime/j;I)V
     .locals 5
 
     and-int/lit8 v0, p3, 0x6
@@ -144,9 +156,9 @@
 
     move-object v0, p2
 
-    check-cast v0, Landroidx/compose/runtime/p;
+    check-cast v0, Landroidx/compose/runtime/n;
 
-    invoke-virtual {v0, p1}, Landroidx/compose/runtime/p;->g(Ljava/lang/Object;)Z
+    invoke-virtual {v0, p1}, Landroidx/compose/runtime/n;->f(Ljava/lang/Object;)Z
 
     move-result v0
 
@@ -155,9 +167,9 @@
     :cond_0
     move-object v0, p2
 
-    check-cast v0, Landroidx/compose/runtime/p;
+    check-cast v0, Landroidx/compose/runtime/n;
 
-    invoke-virtual {v0, p1}, Landroidx/compose/runtime/p;->i(Ljava/lang/Object;)Z
+    invoke-virtual {v0, p1}, Landroidx/compose/runtime/n;->h(Ljava/lang/Object;)Z
 
     move-result v0
 
@@ -181,12 +193,12 @@
 
     if-ne p3, v0, :cond_4
 
+    .line 2
     move-object p3, p2
 
-    check-cast p3, Landroidx/compose/runtime/p;
+    check-cast p3, Landroidx/compose/runtime/n;
 
-    .line 2
-    invoke-virtual {p3}, Landroidx/compose/runtime/p;->y()Z
+    invoke-virtual {p3}, Landroidx/compose/runtime/n;->x()Z
 
     move-result v0
 
@@ -196,117 +208,120 @@
 
     .line 3
     :cond_3
-    invoke-virtual {p3}, Landroidx/compose/runtime/p;->N()V
+    invoke-virtual {p3}, Landroidx/compose/runtime/n;->L()V
 
     goto :goto_3
 
+    .line 4
     :cond_4
     :goto_2
-    iget-object p3, p0, Landroidx/compose/animation/AnimatedContentKt$AnimatedContent$6$1$5;->$currentlyVisible:Landroidx/compose/runtime/snapshots/p;
+    iget-object p3, p0, Landroidx/compose/animation/AnimatedContentKt$AnimatedContent$6$1$5;->$currentlyVisible:Landroidx/compose/runtime/snapshots/n;
 
-    check-cast p2, Landroidx/compose/runtime/p;
+    check-cast p2, Landroidx/compose/runtime/n;
 
-    .line 4
-    invoke-virtual {p2, p3}, Landroidx/compose/runtime/p;->g(Ljava/lang/Object;)Z
+    invoke-virtual {p2, p3}, Landroidx/compose/runtime/n;->f(Ljava/lang/Object;)Z
 
     move-result p3
 
     iget-object v0, p0, Landroidx/compose/animation/AnimatedContentKt$AnimatedContent$6$1$5;->$stateForContent:Ljava/lang/Object;
 
-    invoke-virtual {p2, v0}, Landroidx/compose/runtime/p;->i(Ljava/lang/Object;)Z
+    invoke-virtual {p2, v0}, Landroidx/compose/runtime/n;->h(Ljava/lang/Object;)Z
 
     move-result v0
 
     or-int/2addr p3, v0
 
-    iget-object v0, p0, Landroidx/compose/animation/AnimatedContentKt$AnimatedContent$6$1$5;->$rootScope:Landroidx/compose/animation/k;
+    iget-object v0, p0, Landroidx/compose/animation/AnimatedContentKt$AnimatedContent$6$1$5;->$rootScope:Landroidx/compose/animation/j;
 
-    invoke-virtual {p2, v0}, Landroidx/compose/runtime/p;->i(Ljava/lang/Object;)Z
+    invoke-virtual {p2, v0}, Landroidx/compose/runtime/n;->h(Ljava/lang/Object;)Z
 
     move-result v0
 
     or-int/2addr p3, v0
 
-    iget-object v0, p0, Landroidx/compose/animation/AnimatedContentKt$AnimatedContent$6$1$5;->$currentlyVisible:Landroidx/compose/runtime/snapshots/p;
+    iget-object v0, p0, Landroidx/compose/animation/AnimatedContentKt$AnimatedContent$6$1$5;->$currentlyVisible:Landroidx/compose/runtime/snapshots/n;
 
     iget-object v1, p0, Landroidx/compose/animation/AnimatedContentKt$AnimatedContent$6$1$5;->$stateForContent:Ljava/lang/Object;
 
-    iget-object v2, p0, Landroidx/compose/animation/AnimatedContentKt$AnimatedContent$6$1$5;->$rootScope:Landroidx/compose/animation/k;
+    iget-object v2, p0, Landroidx/compose/animation/AnimatedContentKt$AnimatedContent$6$1$5;->$rootScope:Landroidx/compose/animation/j;
 
     .line 5
-    invoke-virtual {p2}, Landroidx/compose/runtime/p;->I()Ljava/lang/Object;
+    invoke-virtual {p2}, Landroidx/compose/runtime/n;->G()Ljava/lang/Object;
 
     move-result-object v3
 
-    sget-object v4, Landroidx/compose/runtime/k;->b:Lxd/e;
+    .line 6
+    sget-object v4, Landroidx/compose/runtime/i;->a:Landroidx/compose/runtime/T;
 
     if-nez p3, :cond_5
 
     if-ne v3, v4, :cond_6
 
-    .line 6
+    .line 7
     :cond_5
     new-instance v3, Landroidx/compose/animation/AnimatedContentKt$AnimatedContent$6$1$5$1$1;
 
-    invoke-direct {v3, v0, v1, v2}, Landroidx/compose/animation/AnimatedContentKt$AnimatedContent$6$1$5$1$1;-><init>(Landroidx/compose/runtime/snapshots/p;Ljava/lang/Object;Landroidx/compose/animation/k;)V
-
-    .line 7
-    invoke-virtual {p2, v3}, Landroidx/compose/runtime/p;->d0(Ljava/lang/Object;)V
+    invoke-direct {v3, v0, v1, v2}, Landroidx/compose/animation/AnimatedContentKt$AnimatedContent$6$1$5$1$1;-><init>(Landroidx/compose/runtime/snapshots/n;Ljava/lang/Object;Landroidx/compose/animation/j;)V
 
     .line 8
-    :cond_6
-    check-cast v3, Lzh/c;
-
-    invoke-static {p1, v3, p2}, Landroidx/compose/runtime/q;->d(Ljava/lang/Object;Lzh/c;Landroidx/compose/runtime/l;)V
-
-    iget-object p3, p0, Landroidx/compose/animation/AnimatedContentKt$AnimatedContent$6$1$5;->$rootScope:Landroidx/compose/animation/k;
+    invoke-virtual {p2, v3}, Landroidx/compose/runtime/n;->b0(Ljava/lang/Object;)V
 
     .line 9
-    iget-object p3, p3, Landroidx/compose/animation/k;->d:Landroidx/collection/b0;
+    :cond_6
+    check-cast v3, Lka/c;
 
-    iget-object v0, p0, Landroidx/compose/animation/AnimatedContentKt$AnimatedContent$6$1$5;->$stateForContent:Ljava/lang/Object;
+    invoke-static {p1, v3, p2}, Landroidx/compose/runtime/o;->d(Ljava/lang/Object;Lka/c;Landroidx/compose/runtime/j;)V
 
     .line 10
-    check-cast p1, Landroidx/compose/animation/o;
+    iget-object p3, p0, Landroidx/compose/animation/AnimatedContentKt$AnimatedContent$6$1$5;->$rootScope:Landroidx/compose/animation/j;
 
     .line 11
-    iget-object p1, p1, Landroidx/compose/animation/o;->a:Landroidx/compose/runtime/ParcelableSnapshotMutableState;
+    iget-object p3, p3, Landroidx/compose/animation/j;->d:Landroidx/collection/A;
 
     .line 12
-    invoke-virtual {p3, v0, p1}, Landroidx/collection/b0;->k(Ljava/lang/Object;Ljava/lang/Object;)V
+    iget-object v0, p0, Landroidx/compose/animation/AnimatedContentKt$AnimatedContent$6$1$5;->$stateForContent:Ljava/lang/Object;
 
     .line 13
-    invoke-virtual {p2}, Landroidx/compose/runtime/p;->I()Ljava/lang/Object;
+    check-cast p1, Landroidx/compose/animation/n;
+
+    .line 14
+    iget-object p1, p1, Landroidx/compose/animation/n;->a:Landroidx/compose/runtime/ParcelableSnapshotMutableState;
+
+    .line 15
+    invoke-virtual {p3, v0, p1}, Landroidx/collection/A;->i(Ljava/lang/Object;Ljava/lang/Object;)V
+
+    .line 16
+    invoke-virtual {p2}, Landroidx/compose/runtime/n;->G()Ljava/lang/Object;
 
     move-result-object p1
 
     if-ne p1, v4, :cond_7
 
-    .line 14
-    new-instance p1, Landroidx/compose/animation/g;
+    .line 17
+    new-instance p1, Landroidx/compose/animation/f;
 
-    .line 15
+    .line 18
     invoke-direct {p1}, Ljava/lang/Object;-><init>()V
 
-    .line 16
-    invoke-virtual {p2, p1}, Landroidx/compose/runtime/p;->d0(Ljava/lang/Object;)V
+    .line 19
+    invoke-virtual {p2, p1}, Landroidx/compose/runtime/n;->b0(Ljava/lang/Object;)V
 
-    .line 17
+    .line 20
     :cond_7
-    check-cast p1, Landroidx/compose/animation/g;
+    check-cast p1, Landroidx/compose/animation/f;
 
-    iget-object p3, p0, Landroidx/compose/animation/AnimatedContentKt$AnimatedContent$6$1$5;->$content:Lzh/g;
+    iget-object p3, p0, Landroidx/compose/animation/AnimatedContentKt$AnimatedContent$6$1$5;->$content:Lka/g;
 
     iget-object v0, p0, Landroidx/compose/animation/AnimatedContentKt$AnimatedContent$6$1$5;->$stateForContent:Ljava/lang/Object;
 
     const/4 v1, 0x0
 
-    .line 18
+    .line 21
     invoke-static {v1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
     move-result-object v1
 
-    invoke-interface {p3, p1, v0, p2, v1}, Lzh/g;->invoke(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-interface {p3, p1, v0, p2, v1}, Lka/g;->invoke(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     :goto_3
     return-void

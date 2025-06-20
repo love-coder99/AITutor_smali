@@ -3,17 +3,17 @@
 .source "SourceFile"
 
 # interfaces
-.implements Landroidx/compose/ui/layout/m0;
+.implements Landroidx/compose/ui/layout/J;
 
 
 # instance fields
 .field public final synthetic a:Landroidx/compose/ui/viewinterop/d;
 
-.field public final synthetic b:Landroidx/compose/ui/node/e0;
+.field public final synthetic b:Landroidx/compose/ui/node/C;
 
 
 # direct methods
-.method public constructor <init>(Landroidx/compose/ui/viewinterop/d;Landroidx/compose/ui/node/e0;)V
+.method public constructor <init>(Landroidx/compose/ui/viewinterop/d;Landroidx/compose/ui/node/C;)V
     .locals 0
 
     .line 1
@@ -26,7 +26,7 @@
 
     .line 5
     .line 6
-    iput-object p2, p0, Landroidx/compose/ui/viewinterop/c;->b:Landroidx/compose/ui/node/e0;
+    iput-object p2, p0, Landroidx/compose/ui/viewinterop/c;->b:Landroidx/compose/ui/node/C;
 
     .line 7
     .line 8
@@ -35,7 +35,7 @@
 
 
 # virtual methods
-.method public final b(Landroidx/compose/ui/layout/o0;Ljava/util/List;J)Landroidx/compose/ui/layout/n0;
+.method public final a(Landroidx/compose/ui/layout/L;Ljava/util/List;J)Landroidx/compose/ui/layout/K;
     .locals 3
 
     .line 1
@@ -55,7 +55,7 @@
 
     .line 8
     .line 9
-    invoke-static {p3, p4}, Lh2/a;->k(J)I
+    invoke-static {p3, p4}, LM0/a;->k(J)I
 
     .line 10
     .line 11
@@ -63,7 +63,7 @@
     move-result p2
 
     .line 13
-    invoke-static {p3, p4}, Lh2/a;->j(J)I
+    invoke-static {p3, p4}, LM0/a;->j(J)I
 
     .line 14
     .line 15
@@ -75,7 +75,7 @@
 
     .line 18
     .line 19
-    invoke-static {p1, p2, p3, p4}, Landroidx/compose/ui/layout/x;->i(Landroidx/compose/ui/layout/o0;IILzh/c;)Landroidx/compose/ui/layout/n0;
+    invoke-static {p1, p2, p3, p4}, Landroidx/compose/ui/layout/u;->i(Landroidx/compose/ui/layout/L;IILka/c;)Landroidx/compose/ui/layout/K;
 
     .line 20
     .line 21
@@ -87,7 +87,7 @@
 
     .line 24
     :cond_0
-    invoke-static {p3, p4}, Lh2/a;->k(J)I
+    invoke-static {p3, p4}, LM0/a;->k(J)I
 
     .line 25
     .line 26
@@ -110,7 +110,7 @@
     move-result-object v0
 
     .line 35
-    invoke-static {p3, p4}, Lh2/a;->k(J)I
+    invoke-static {p3, p4}, LM0/a;->k(J)I
 
     .line 36
     .line 37
@@ -124,7 +124,7 @@
     .line 41
     .line 42
     :cond_1
-    invoke-static {p3, p4}, Lh2/a;->j(J)I
+    invoke-static {p3, p4}, LM0/a;->j(J)I
 
     .line 43
     .line 44
@@ -144,7 +144,7 @@
     move-result-object v0
 
     .line 52
-    invoke-static {p3, p4}, Lh2/a;->j(J)I
+    invoke-static {p3, p4}, LM0/a;->j(J)I
 
     .line 53
     .line 54
@@ -158,7 +158,7 @@
     .line 58
     .line 59
     :cond_2
-    invoke-static {p3, p4}, Lh2/a;->k(J)I
+    invoke-static {p3, p4}, LM0/a;->k(J)I
 
     .line 60
     .line 61
@@ -166,7 +166,7 @@
     move-result v0
 
     .line 63
-    invoke-static {p3, p4}, Lh2/a;->i(J)I
+    invoke-static {p3, p4}, LM0/a;->i(J)I
 
     .line 64
     .line 65
@@ -194,7 +194,7 @@
     move-result v0
 
     .line 77
-    invoke-static {p3, p4}, Lh2/a;->j(J)I
+    invoke-static {p3, p4}, LM0/a;->j(J)I
 
     .line 78
     .line 79
@@ -202,7 +202,7 @@
     move-result v1
 
     .line 81
-    invoke-static {p3, p4}, Lh2/a;->h(J)I
+    invoke-static {p3, p4}, LM0/a;->h(J)I
 
     .line 82
     .line 83
@@ -255,16 +255,16 @@
 
     .line 107
     .line 108
-    iget-object v1, p0, Landroidx/compose/ui/viewinterop/c;->b:Landroidx/compose/ui/node/e0;
+    iget-object v1, p0, Landroidx/compose/ui/viewinterop/c;->b:Landroidx/compose/ui/node/C;
 
     .line 109
     .line 110
-    invoke-direct {v0, p2, v1}, Landroidx/compose/ui/viewinterop/AndroidViewHolder$layoutNode$1$5$measure$2;-><init>(Landroidx/compose/ui/viewinterop/d;Landroidx/compose/ui/node/e0;)V
+    invoke-direct {v0, p2, v1}, Landroidx/compose/ui/viewinterop/AndroidViewHolder$layoutNode$1$5$measure$2;-><init>(Landroidx/compose/ui/viewinterop/d;Landroidx/compose/ui/node/C;)V
 
     .line 111
     .line 112
     .line 113
-    invoke-static {p1, p3, p4, v0}, Landroidx/compose/ui/layout/x;->i(Landroidx/compose/ui/layout/o0;IILzh/c;)Landroidx/compose/ui/layout/n0;
+    invoke-static {p1, p3, p4, v0}, Landroidx/compose/ui/layout/u;->i(Landroidx/compose/ui/layout/L;IILka/c;)Landroidx/compose/ui/layout/K;
 
     .line 114
     .line 115
@@ -275,7 +275,7 @@
     return-object p1
 .end method
 
-.method public final d(Landroidx/compose/ui/node/e1;Ljava/util/List;I)I
+.method public final b(Landroidx/compose/ui/layout/m;Ljava/util/List;I)I
     .locals 2
 
     .line 1
@@ -330,7 +330,7 @@
     return p1
 .end method
 
-.method public final f(Landroidx/compose/ui/node/e1;Ljava/util/List;I)I
+.method public final e(Landroidx/compose/ui/layout/m;Ljava/util/List;I)I
     .locals 1
 
     .line 1
@@ -385,7 +385,7 @@
     return p1
 .end method
 
-.method public final g(Landroidx/compose/ui/node/e1;Ljava/util/List;I)I
+.method public final g(Landroidx/compose/ui/layout/m;Ljava/util/List;I)I
     .locals 2
 
     .line 1
@@ -440,7 +440,7 @@
     return p1
 .end method
 
-.method public final h(Landroidx/compose/ui/node/e1;Ljava/util/List;I)I
+.method public final h(Landroidx/compose/ui/layout/m;Ljava/util/List;I)I
     .locals 1
 
     .line 1

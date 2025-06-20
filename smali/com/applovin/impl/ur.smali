@@ -228,9 +228,9 @@
 
     move-result-object v0
 
+    .line 17
     const-string v1, ""
 
-    .line 17
     invoke-virtual {v1, v0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
     move-result v2
@@ -286,9 +286,9 @@
 
     move-result-object p2
 
+    .line 24
     const-string v3, ";"
 
-    .line 24
     invoke-virtual {v3, p2}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
     move-result v3
@@ -297,10 +297,10 @@
 
     goto :goto_0
 
+    .line 25
     :cond_3
     const-string v3, "}"
 
-    .line 25
     invoke-virtual {v3, p2}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
     move-result p2
@@ -310,10 +310,10 @@
     .line 26
     invoke-virtual {p0, v1}, Lcom/applovin/impl/ah;->f(I)V
 
+    .line 27
     :goto_0
     const-string p0, "color"
 
-    .line 27
     invoke-virtual {p0, v0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
     move-result p0
@@ -329,10 +329,10 @@
 
     goto/16 :goto_2
 
+    .line 29
     :cond_4
     const-string p0, "background-color"
 
-    .line 29
     invoke-virtual {p0, v0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
     move-result p0
@@ -348,10 +348,10 @@
 
     goto/16 :goto_2
 
+    .line 31
     :cond_5
     const-string p0, "ruby-position"
 
-    .line 31
     invoke-virtual {p0, v0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
     move-result p0
@@ -360,9 +360,9 @@
 
     if-eqz p0, :cond_7
 
+    .line 32
     const-string p0, "over"
 
-    .line 32
     invoke-virtual {p0, v2}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
     move-result p0
@@ -374,10 +374,10 @@
 
     goto/16 :goto_2
 
+    .line 34
     :cond_6
     const-string p0, "under"
 
-    .line 34
     invoke-virtual {p0, v2}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
     move-result p0
@@ -391,19 +391,19 @@
 
     goto/16 :goto_2
 
+    .line 36
     :cond_7
     const-string p0, "text-combine-upright"
 
-    .line 36
     invoke-virtual {p0, v0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
     move-result p0
 
     if-eqz p0, :cond_a
 
+    .line 37
     const-string p0, "all"
 
-    .line 37
     invoke-virtual {p0, v2}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
     move-result p0
@@ -429,19 +429,19 @@
 
     goto :goto_2
 
+    .line 38
     :cond_a
     const-string p0, "text-decoration"
 
-    .line 38
     invoke-virtual {p0, v0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
     move-result p0
 
     if-eqz p0, :cond_b
 
+    .line 39
     const-string p0, "underline"
 
-    .line 39
     invoke-virtual {p0, v2}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
     move-result p0
@@ -453,10 +453,10 @@
 
     goto :goto_2
 
+    .line 41
     :cond_b
     const-string p0, "font-family"
 
-    .line 41
     invoke-virtual {p0, v0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
     move-result p0
@@ -468,19 +468,19 @@
 
     goto :goto_2
 
+    .line 43
     :cond_c
     const-string p0, "font-weight"
 
-    .line 43
     invoke-virtual {p0, v0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
     move-result p0
 
     if-eqz p0, :cond_d
 
+    .line 44
     const-string p0, "bold"
 
-    .line 44
     invoke-virtual {p0, v2}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
     move-result p0
@@ -492,19 +492,19 @@
 
     goto :goto_2
 
+    .line 46
     :cond_d
     const-string p0, "font-style"
 
-    .line 46
     invoke-virtual {p0, v0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
     move-result p0
 
     if-eqz p0, :cond_e
 
+    .line 47
     const-string p0, "italic"
 
-    .line 47
     invoke-virtual {p0, v2}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
     move-result p0
@@ -516,10 +516,10 @@
 
     goto :goto_2
 
+    .line 49
     :cond_e
     const-string p0, "font-size"
 
-    .line 49
     invoke-virtual {p0, v0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
     move-result p0
@@ -537,9 +537,9 @@
 .method private a(Lcom/applovin/impl/vr;Ljava/lang/String;)V
     .locals 6
 
+    .line 62
     const-string v0, ""
 
-    .line 62
     invoke-virtual {v0, p2}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
     move-result v0
@@ -564,9 +564,9 @@
 
     if-eq v0, v1, :cond_2
 
+    .line 64
     sget-object v4, Lcom/applovin/impl/ur;->c:Ljava/util/regex/Pattern;
 
-    .line 64
     invoke-virtual {p2, v0}, Ljava/lang/String;->substring(I)Ljava/lang/String;
 
     move-result-object v5
@@ -601,10 +601,10 @@
 
     move-result-object p2
 
+    .line 68
     :cond_2
     const-string v0, "\\."
 
-    .line 68
     invoke-static {p2, v0}, Lcom/applovin/impl/xp;->a(Ljava/lang/String;Ljava/lang/String;)[Ljava/lang/String;
 
     move-result-object p2
@@ -667,23 +667,27 @@
 .method private static a(Ljava/lang/String;Lcom/applovin/impl/vr;)V
     .locals 5
 
-    sget-object v0, Lcom/applovin/impl/ur;->d:Ljava/util/regex/Pattern;
+    const/4 v0, 0x1
+
+    const/4 v1, 0x2
 
     .line 52
+    sget-object v2, Lcom/applovin/impl/ur;->d:Ljava/util/regex/Pattern;
+
     invoke-static {p0}, Lcom/applovin/exoplayer2/common/base/Ascii;->toLowerCase(Ljava/lang/String;)Ljava/lang/String;
 
-    move-result-object v1
+    move-result-object v3
 
-    invoke-virtual {v0, v1}, Ljava/util/regex/Pattern;->matcher(Ljava/lang/CharSequence;)Ljava/util/regex/Matcher;
+    invoke-virtual {v2, v3}, Ljava/util/regex/Pattern;->matcher(Ljava/lang/CharSequence;)Ljava/util/regex/Matcher;
 
-    move-result-object v0
+    move-result-object v2
 
     .line 53
-    invoke-virtual {v0}, Ljava/util/regex/Matcher;->matches()Z
+    invoke-virtual {v2}, Ljava/util/regex/Matcher;->matches()Z
 
-    move-result v1
+    move-result v3
 
-    if-nez v1, :cond_0
+    if-nez v3, :cond_0
 
     .line 54
     new-instance p1, Ljava/lang/StringBuilder;
@@ -708,83 +712,79 @@
 
     return-void
 
-    :cond_0
-    const/4 p0, 0x2
-
     .line 55
-    invoke-virtual {v0, p0}, Ljava/util/regex/Matcher;->group(I)Ljava/lang/String;
+    :cond_0
+    invoke-virtual {v2, v1}, Ljava/util/regex/Matcher;->group(I)Ljava/lang/String;
 
-    move-result-object v1
+    move-result-object p0
 
-    invoke-static {v1}, Lcom/applovin/impl/b1;->a(Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-static {p0}, Lcom/applovin/impl/b1;->a(Ljava/lang/Object;)Ljava/lang/Object;
 
-    move-result-object v1
+    move-result-object p0
 
-    check-cast v1, Ljava/lang/String;
+    check-cast p0, Ljava/lang/String;
 
     .line 56
-    invoke-virtual {v1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+    invoke-virtual {p0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
-    invoke-virtual {v1}, Ljava/lang/String;->hashCode()I
+    const/4 v3, -0x1
 
-    move-result v2
+    invoke-virtual {p0}, Ljava/lang/String;->hashCode()I
 
-    const/4 v3, 0x1
+    move-result v4
 
-    const/4 v4, -0x1
-
-    sparse-switch v2, :sswitch_data_0
+    sparse-switch v4, :sswitch_data_0
 
     goto :goto_0
 
     :sswitch_0
-    const-string v2, "px"
+    const-string v4, "px"
 
-    invoke-virtual {v1, v2}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+    invoke-virtual {p0, v4}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
-    move-result v1
+    move-result p0
 
-    if-nez v1, :cond_1
+    if-nez p0, :cond_1
 
     goto :goto_0
 
     :cond_1
-    const/4 v4, 0x2
+    const/4 v3, 0x2
 
     goto :goto_0
 
     :sswitch_1
-    const-string v2, "em"
+    const-string v4, "em"
 
-    invoke-virtual {v1, v2}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+    invoke-virtual {p0, v4}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
-    move-result v1
+    move-result p0
 
-    if-nez v1, :cond_2
+    if-nez p0, :cond_2
 
     goto :goto_0
 
     :cond_2
-    const/4 v4, 0x1
+    const/4 v3, 0x1
 
     goto :goto_0
 
     :sswitch_2
-    const-string v2, "%"
+    const-string v4, "%"
 
-    invoke-virtual {v1, v2}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+    invoke-virtual {p0, v4}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
-    move-result v1
+    move-result p0
 
-    if-nez v1, :cond_3
+    if-nez p0, :cond_3
 
     goto :goto_0
 
     :cond_3
-    const/4 v4, 0x0
+    const/4 v3, 0x0
 
     :goto_0
-    packed-switch v4, :pswitch_data_0
+    packed-switch v3, :pswitch_data_0
 
     .line 57
     new-instance p0, Ljava/lang/IllegalStateException;
@@ -795,13 +795,13 @@
 
     .line 58
     :pswitch_0
-    invoke-virtual {p1, v3}, Lcom/applovin/impl/vr;->c(I)Lcom/applovin/impl/vr;
+    invoke-virtual {p1, v0}, Lcom/applovin/impl/vr;->c(I)Lcom/applovin/impl/vr;
 
     goto :goto_1
 
     .line 59
     :pswitch_1
-    invoke-virtual {p1, p0}, Lcom/applovin/impl/vr;->c(I)Lcom/applovin/impl/vr;
+    invoke-virtual {p1, v1}, Lcom/applovin/impl/vr;->c(I)Lcom/applovin/impl/vr;
 
     goto :goto_1
 
@@ -813,7 +813,7 @@
 
     .line 61
     :goto_1
-    invoke-virtual {v0, v3}, Ljava/util/regex/Matcher;->group(I)Ljava/lang/String;
+    invoke-virtual {v2, v0}, Ljava/util/regex/Matcher;->group(I)Ljava/lang/String;
 
     move-result-object p0
 
@@ -956,9 +956,9 @@
 
     move-result-object p1
 
+    .line 6
     const-string v0, ""
 
-    .line 6
     invoke-virtual {v0, p1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
     move-result v1
@@ -1062,10 +1062,10 @@
 
     return-object p0
 
+    .line 21
     :cond_0
     const-string v4, "}"
 
-    .line 21
     invoke-virtual {v4, v3}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
     move-result v4
@@ -1109,12 +1109,12 @@
 .method private static d(Lcom/applovin/impl/ah;)Ljava/lang/String;
     .locals 5
 
-    .line 13
+    .line 14
     invoke-virtual {p0}, Lcom/applovin/impl/ah;->d()I
 
     move-result v0
 
-    .line 14
+    .line 15
     invoke-virtual {p0}, Lcom/applovin/impl/ah;->e()I
 
     move-result v1
@@ -1129,7 +1129,7 @@
 
     if-nez v3, :cond_1
 
-    .line 15
+    .line 16
     invoke-virtual {p0}, Lcom/applovin/impl/ah;->c()[B
 
     move-result-object v3
@@ -1158,7 +1158,7 @@
     :cond_1
     add-int/lit8 v0, v0, -0x1
 
-    .line 16
+    .line 17
     invoke-virtual {p0}, Lcom/applovin/impl/ah;->d()I
 
     move-result v1
@@ -1201,9 +1201,9 @@
 
     move-result-object v0
 
+    .line 4
     const-string v2, "::cue"
 
-    .line 4
     invoke-virtual {v2, v0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
     move-result v0
@@ -1227,10 +1227,10 @@
 
     return-object v1
 
+    .line 7
     :cond_2
     const-string v3, "{"
 
-    .line 7
     invoke-virtual {v3, v2}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
     move-result v3
@@ -1240,21 +1240,22 @@
     .line 8
     invoke-virtual {p0, v0}, Lcom/applovin/impl/ah;->f(I)V
 
+    .line 9
     const-string p0, ""
 
     return-object p0
 
+    .line 10
     :cond_3
     const-string v0, "("
 
-    .line 9
     invoke-virtual {v0, v2}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
     move-result v0
 
     if-eqz v0, :cond_4
 
-    .line 10
+    .line 11
     invoke-static {p0}, Lcom/applovin/impl/ur;->d(Lcom/applovin/impl/ah;)Ljava/lang/String;
 
     move-result-object v0
@@ -1264,15 +1265,15 @@
     :cond_4
     move-object v0, v1
 
-    .line 11
+    .line 12
     :goto_0
     invoke-static {p0, p1}, Lcom/applovin/impl/ur;->b(Lcom/applovin/impl/ah;Ljava/lang/StringBuilder;)Ljava/lang/String;
 
     move-result-object p0
 
+    .line 13
     const-string p1, ")"
 
-    .line 12
     invoke-virtual {p1, p0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
     move-result p0
@@ -1385,11 +1386,11 @@
 .method public c(Lcom/applovin/impl/ah;)Ljava/util/List;
     .locals 6
 
+    .line 1
     iget-object v0, p0, Lcom/applovin/impl/ur;->b:Ljava/lang/StringBuilder;
 
     const/4 v1, 0x0
 
-    .line 1
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->setLength(I)V
 
     .line 2
@@ -1400,9 +1401,9 @@
     .line 3
     invoke-static {p1}, Lcom/applovin/impl/ur;->e(Lcom/applovin/impl/ah;)V
 
+    .line 4
     iget-object v2, p0, Lcom/applovin/impl/ur;->a:Lcom/applovin/impl/ah;
 
-    .line 4
     invoke-virtual {p1}, Lcom/applovin/impl/ah;->c()[B
 
     move-result-object v3
@@ -1413,9 +1414,9 @@
 
     invoke-virtual {v2, v3, p1}, Lcom/applovin/impl/ah;->a([BI)V
 
+    .line 5
     iget-object p1, p0, Lcom/applovin/impl/ur;->a:Lcom/applovin/impl/ah;
 
-    .line 5
     invoke-virtual {p1, v0}, Lcom/applovin/impl/ah;->f(I)V
 
     .line 6
@@ -1423,24 +1424,24 @@
 
     invoke-direct {p1}, Ljava/util/ArrayList;-><init>()V
 
+    .line 7
     :cond_0
     :goto_0
     iget-object v0, p0, Lcom/applovin/impl/ur;->a:Lcom/applovin/impl/ah;
 
     iget-object v2, p0, Lcom/applovin/impl/ur;->b:Ljava/lang/StringBuilder;
 
-    .line 7
     invoke-static {v0, v2}, Lcom/applovin/impl/ur;->d(Lcom/applovin/impl/ah;Ljava/lang/StringBuilder;)Ljava/lang/String;
 
     move-result-object v0
 
     if-eqz v0, :cond_6
 
+    .line 8
     iget-object v2, p0, Lcom/applovin/impl/ur;->a:Lcom/applovin/impl/ah;
 
     iget-object v3, p0, Lcom/applovin/impl/ur;->b:Ljava/lang/StringBuilder;
 
-    .line 8
     invoke-static {v2, v3}, Lcom/applovin/impl/ur;->b(Lcom/applovin/impl/ah;Ljava/lang/StringBuilder;)Ljava/lang/String;
 
     move-result-object v2
@@ -1473,18 +1474,18 @@
 
     if-nez v3, :cond_5
 
+    .line 11
     iget-object v0, p0, Lcom/applovin/impl/ur;->a:Lcom/applovin/impl/ah;
 
-    .line 11
     invoke-virtual {v0}, Lcom/applovin/impl/ah;->d()I
 
     move-result v0
 
+    .line 12
     iget-object v3, p0, Lcom/applovin/impl/ur;->a:Lcom/applovin/impl/ah;
 
     iget-object v5, p0, Lcom/applovin/impl/ur;->b:Ljava/lang/StringBuilder;
 
-    .line 12
     invoke-static {v3, v5}, Lcom/applovin/impl/ur;->b(Lcom/applovin/impl/ah;Ljava/lang/StringBuilder;)Ljava/lang/String;
 
     move-result-object v3
@@ -1512,16 +1513,16 @@
     :goto_3
     if-nez v4, :cond_4
 
+    .line 14
     iget-object v5, p0, Lcom/applovin/impl/ur;->a:Lcom/applovin/impl/ah;
 
-    .line 14
     invoke-virtual {v5, v0}, Lcom/applovin/impl/ah;->f(I)V
 
+    .line 15
     iget-object v0, p0, Lcom/applovin/impl/ur;->a:Lcom/applovin/impl/ah;
 
     iget-object v5, p0, Lcom/applovin/impl/ur;->b:Ljava/lang/StringBuilder;
 
-    .line 15
     invoke-static {v0, v2, v5}, Lcom/applovin/impl/ur;->a(Lcom/applovin/impl/ah;Lcom/applovin/impl/vr;Ljava/lang/StringBuilder;)V
 
     :cond_4

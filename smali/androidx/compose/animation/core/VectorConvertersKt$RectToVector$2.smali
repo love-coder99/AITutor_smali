@@ -3,14 +3,14 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lzh/c;
+.implements Lka/c;
 
 
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "Lkotlin/jvm/internal/Lambda;",
-        "Lzh/c;"
+        "Lka/c;"
     }
 .end annotation
 
@@ -19,11 +19,11 @@
         "\u0000\u000e\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0008\u0003\u0010\u0005\u001a\u00020\u00022\u0006\u0010\u0001\u001a\u00020\u0000H\n\u00a2\u0006\u0004\u0008\u0003\u0010\u0004"
     }
     d2 = {
-        "Landroidx/compose/animation/core/l;",
+        "Landroidx/compose/animation/core/k;",
         "it",
-        "Ln1/e;",
+        "Lr0/d;",
         "invoke",
-        "(Landroidx/compose/animation/core/l;)Ln1/e;",
+        "(Landroidx/compose/animation/core/k;)Lr0/d;",
         "<anonymous>"
     }
     k = 0x3
@@ -68,35 +68,35 @@
     .locals 0
 
     .line 1
-    check-cast p1, Landroidx/compose/animation/core/l;
+    check-cast p1, Landroidx/compose/animation/core/k;
 
-    invoke-virtual {p0, p1}, Landroidx/compose/animation/core/VectorConvertersKt$RectToVector$2;->invoke(Landroidx/compose/animation/core/l;)Ln1/e;
+    invoke-virtual {p0, p1}, Landroidx/compose/animation/core/VectorConvertersKt$RectToVector$2;->invoke(Landroidx/compose/animation/core/k;)Lr0/d;
 
     move-result-object p1
 
     return-object p1
 .end method
 
-.method public final invoke(Landroidx/compose/animation/core/l;)Ln1/e;
+.method public final invoke(Landroidx/compose/animation/core/k;)Lr0/d;
     .locals 4
 
     .line 2
-    new-instance v0, Ln1/e;
+    new-instance v0, Lr0/d;
 
     .line 3
-    iget v1, p1, Landroidx/compose/animation/core/l;->a:F
+    iget v1, p1, Landroidx/compose/animation/core/k;->a:F
 
     .line 4
-    iget v2, p1, Landroidx/compose/animation/core/l;->b:F
+    iget v2, p1, Landroidx/compose/animation/core/k;->b:F
 
     .line 5
-    iget v3, p1, Landroidx/compose/animation/core/l;->c:F
+    iget v3, p1, Landroidx/compose/animation/core/k;->c:F
 
     .line 6
-    iget p1, p1, Landroidx/compose/animation/core/l;->d:F
+    iget p1, p1, Landroidx/compose/animation/core/k;->d:F
 
     .line 7
-    invoke-direct {v0, v1, v2, v3, p1}, Ln1/e;-><init>(FFFF)V
+    invoke-direct {v0, v1, v2, v3, p1}, Lr0/d;-><init>(FFFF)V
 
     return-object v0
 .end method

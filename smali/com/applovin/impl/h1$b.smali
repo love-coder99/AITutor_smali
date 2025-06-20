@@ -59,15 +59,26 @@
 .method public a(IIIJI)V
     .locals 0
 
+    .line 1
     iput p1, p0, Lcom/applovin/impl/h1$b;->a:I
 
+    .line 2
+    .line 3
     iput p2, p0, Lcom/applovin/impl/h1$b;->b:I
 
+    .line 4
+    .line 5
     iput p3, p0, Lcom/applovin/impl/h1$b;->c:I
 
+    .line 6
+    .line 7
     iput-wide p4, p0, Lcom/applovin/impl/h1$b;->e:J
 
+    .line 8
+    .line 9
     iput p6, p0, Lcom/applovin/impl/h1$b;->f:I
 
+    .line 10
+    .line 11
     return-void
 .end method

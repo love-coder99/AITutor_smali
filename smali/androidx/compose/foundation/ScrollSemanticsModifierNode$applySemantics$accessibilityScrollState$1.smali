@@ -3,14 +3,14 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lzh/a;
+.implements Lka/a;
 
 
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "Lkotlin/jvm/internal/Lambda;",
-        "Lzh/a;"
+        "Lka/a;"
     }
 .end annotation
 
@@ -35,14 +35,14 @@
 
 
 # instance fields
-.field final synthetic this$0:Landroidx/compose/foundation/x0;
+.field final synthetic this$0:Landroidx/compose/foundation/W;
 
 
 # direct methods
-.method public constructor <init>(Landroidx/compose/foundation/x0;)V
+.method public constructor <init>(Landroidx/compose/foundation/W;)V
     .locals 0
 
-    iput-object p1, p0, Landroidx/compose/foundation/ScrollSemanticsModifierNode$applySemantics$accessibilityScrollState$1;->this$0:Landroidx/compose/foundation/x0;
+    iput-object p1, p0, Landroidx/compose/foundation/ScrollSemanticsModifierNode$applySemantics$accessibilityScrollState$1;->this$0:Landroidx/compose/foundation/W;
 
     const/4 p1, 0x0
 
@@ -56,18 +56,23 @@
 .method public final invoke()Ljava/lang/Float;
     .locals 1
 
-    iget-object v0, p0, Landroidx/compose/foundation/ScrollSemanticsModifierNode$applySemantics$accessibilityScrollState$1;->this$0:Landroidx/compose/foundation/x0;
-
-    .line 1
-    iget-object v0, v0, Landroidx/compose/foundation/x0;->p:Landroidx/compose/foundation/y0;
-
     .line 2
-    invoke-virtual {v0}, Landroidx/compose/foundation/y0;->f()I
+    iget-object v0, p0, Landroidx/compose/foundation/ScrollSemanticsModifierNode$applySemantics$accessibilityScrollState$1;->this$0:Landroidx/compose/foundation/W;
+
+    .line 3
+    iget-object v0, v0, Landroidx/compose/foundation/W;->p:Landroidx/compose/foundation/X;
+
+    .line 4
+    iget-object v0, v0, Landroidx/compose/foundation/X;->a:Landroidx/compose/runtime/ParcelableSnapshotMutableIntState;
+
+    .line 5
+    invoke-virtual {v0}, Landroidx/compose/runtime/ParcelableSnapshotMutableIntState;->k()I
 
     move-result v0
 
     int-to-float v0, v0
 
+    .line 6
     invoke-static {v0}, Ljava/lang/Float;->valueOf(F)Ljava/lang/Float;
 
     move-result-object v0
@@ -78,7 +83,7 @@
 .method public bridge synthetic invoke()Ljava/lang/Object;
     .locals 1
 
-    .line 3
+    .line 1
     invoke-virtual {p0}, Landroidx/compose/foundation/ScrollSemanticsModifierNode$applySemantics$accessibilityScrollState$1;->invoke()Ljava/lang/Float;
 
     move-result-object v0

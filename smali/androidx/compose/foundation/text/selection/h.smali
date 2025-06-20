@@ -94,32 +94,56 @@
 .method public final hashCode()I
     .locals 6
 
+    .line 1
     iget-object v0, p0, Landroidx/compose/foundation/text/selection/h;->a:Landroidx/compose/ui/text/style/ResolvedTextDirection;
 
+    .line 2
+    .line 3
     invoke-virtual {v0}, Ljava/lang/Object;->hashCode()I
 
+    .line 4
+    .line 5
+    .line 6
     move-result v0
 
+    .line 7
     mul-int/lit8 v0, v0, 0x1f
 
+    .line 8
+    .line 9
     iget v1, p0, Landroidx/compose/foundation/text/selection/h;->b:I
 
+    .line 10
+    .line 11
     add-int/2addr v0, v1
 
+    .line 12
     mul-int/lit8 v0, v0, 0x1f
 
+    .line 13
+    .line 14
     const/16 v1, 0x20
 
+    .line 15
+    .line 16
     iget-wide v2, p0, Landroidx/compose/foundation/text/selection/h;->c:J
 
+    .line 17
+    .line 18
     ushr-long v4, v2, v1
 
+    .line 19
+    .line 20
     xor-long v1, v2, v4
 
+    .line 21
+    .line 22
     long-to-int v2, v1
 
+    .line 23
     add-int/2addr v0, v2
 
+    .line 24
     return v0
 .end method
 

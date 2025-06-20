@@ -1,129 +1,168 @@
-.class public final Landroidx/paging/q;
+.class public final Landroidx/paging/Q;
 .super Ljava/lang/Object;
 .source "SourceFile"
 
+# interfaces
+.implements Lkotlinx/coroutines/flow/f;
+
 
 # instance fields
-.field public final a:I
+.field public final synthetic b:I
 
-.field public final b:Landroidx/paging/j2;
+.field public final synthetic c:I
+
+.field public final synthetic d:Lkotlinx/coroutines/flow/f;
 
 
 # direct methods
-.method public constructor <init>(ILandroidx/paging/j2;)V
+.method public synthetic constructor <init>(Lkotlinx/coroutines/flow/f;II)V
     .locals 0
 
     .line 1
+    iput p3, p0, Landroidx/paging/Q;->b:I
+
+    iput-object p1, p0, Landroidx/paging/Q;->d:Lkotlinx/coroutines/flow/f;
+
+    iput p2, p0, Landroidx/paging/Q;->c:I
+
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 2
-    .line 3
-    .line 4
-    iput p1, p0, Landroidx/paging/q;->a:I
-
-    .line 5
-    .line 6
-    iput-object p2, p0, Landroidx/paging/q;->b:Landroidx/paging/j2;
-
-    .line 7
-    .line 8
     return-void
 .end method
 
 
 # virtual methods
-.method public final equals(Ljava/lang/Object;)Z
-    .locals 4
+.method public final b(Lkotlinx/coroutines/flow/g;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
+    .locals 3
 
-    const/4 v0, 0x1
+    .line 1
+    iget v0, p0, Landroidx/paging/Q;->b:I
 
-    if-ne p0, p1, :cond_0
+    .line 2
+    .line 3
+    packed-switch v0, :pswitch_data_0
 
-    return v0
+    .line 4
+    .line 5
+    .line 6
+    new-instance v0, Lkotlin/jvm/internal/Ref$IntRef;
 
+    .line 7
+    .line 8
+    invoke-direct {v0}, Lkotlin/jvm/internal/Ref$IntRef;-><init>()V
+
+    .line 9
+    .line 10
+    .line 11
+    new-instance v1, Lkotlinx/coroutines/flow/p;
+
+    .line 12
+    .line 13
+    iget v2, p0, Landroidx/paging/Q;->c:I
+
+    .line 14
+    .line 15
+    invoke-direct {v1, v0, v2, p1}, Lkotlinx/coroutines/flow/p;-><init>(Lkotlin/jvm/internal/Ref$IntRef;ILkotlinx/coroutines/flow/g;)V
+
+    .line 16
+    .line 17
+    .line 18
+    iget-object p1, p0, Landroidx/paging/Q;->d:Lkotlinx/coroutines/flow/f;
+
+    .line 19
+    .line 20
+    check-cast p1, Lkotlinx/coroutines/flow/K;
+
+    .line 21
+    .line 22
+    invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    .line 23
+    .line 24
+    .line 25
+    invoke-static {p1, v1, p2}, Lkotlinx/coroutines/flow/K;->m(Lkotlinx/coroutines/flow/K;Lkotlinx/coroutines/flow/g;Lkotlin/coroutines/Continuation;)Lkotlin/coroutines/intrinsics/CoroutineSingletons;
+
+    .line 26
+    .line 27
+    .line 28
+    move-result-object p1
+
+    .line 29
+    sget-object p2, Lkotlin/coroutines/intrinsics/CoroutineSingletons;->COROUTINE_SUSPENDED:Lkotlin/coroutines/intrinsics/CoroutineSingletons;
+
+    .line 30
+    .line 31
+    if-ne p1, p2, :cond_0
+
+    .line 32
+    .line 33
+    goto :goto_0
+
+    .line 34
     :cond_0
-    instance-of v1, p1, Landroidx/paging/q;
+    sget-object p1, LX9/j;->a:LX9/j;
 
-    const/4 v2, 0x0
+    .line 35
+    .line 36
+    :goto_0
+    return-object p1
 
-    if-nez v1, :cond_1
+    .line 37
+    :pswitch_0
+    new-instance v0, Landroidx/paging/P;
 
-    return v2
+    .line 38
+    .line 39
+    iget v1, p0, Landroidx/paging/Q;->c:I
 
+    .line 40
+    .line 41
+    invoke-direct {v0, p1, v1}, Landroidx/paging/P;-><init>(Lkotlinx/coroutines/flow/g;I)V
+
+    .line 42
+    .line 43
+    .line 44
+    iget-object p1, p0, Landroidx/paging/Q;->d:Lkotlinx/coroutines/flow/f;
+
+    .line 45
+    .line 46
+    check-cast p1, Landroidx/paging/Q;
+
+    .line 47
+    .line 48
+    invoke-virtual {p1, v0, p2}, Landroidx/paging/Q;->b(Lkotlinx/coroutines/flow/g;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
+
+    .line 49
+    .line 50
+    .line 51
+    move-result-object p1
+
+    .line 52
+    sget-object p2, Lkotlin/coroutines/intrinsics/CoroutineSingletons;->COROUTINE_SUSPENDED:Lkotlin/coroutines/intrinsics/CoroutineSingletons;
+
+    .line 53
+    .line 54
+    if-ne p1, p2, :cond_1
+
+    .line 55
+    .line 56
+    goto :goto_1
+
+    .line 57
     :cond_1
-    check-cast p1, Landroidx/paging/q;
+    sget-object p1, LX9/j;->a:LX9/j;
 
-    iget v1, p1, Landroidx/paging/q;->a:I
+    .line 58
+    .line 59
+    :goto_1
+    return-object p1
 
-    iget v3, p0, Landroidx/paging/q;->a:I
+    .line 60
+    nop
 
-    if-eq v3, v1, :cond_2
-
-    return v2
-
-    :cond_2
-    iget-object v1, p0, Landroidx/paging/q;->b:Landroidx/paging/j2;
-
-    iget-object p1, p1, Landroidx/paging/q;->b:Landroidx/paging/j2;
-
-    invoke-static {v1, p1}, Lrb/h;->d(Ljava/lang/Object;Ljava/lang/Object;)Z
-
-    move-result p1
-
-    if-nez p1, :cond_3
-
-    return v2
-
-    :cond_3
-    return v0
-.end method
-
-.method public final hashCode()I
-    .locals 2
-
-    iget v0, p0, Landroidx/paging/q;->a:I
-
-    mul-int/lit8 v0, v0, 0x1f
-
-    iget-object v1, p0, Landroidx/paging/q;->b:Landroidx/paging/j2;
-
-    invoke-virtual {v1}, Landroidx/paging/j2;->hashCode()I
-
-    move-result v1
-
-    add-int/2addr v1, v0
-
-    return v1
-.end method
-
-.method public final toString()Ljava/lang/String;
-    .locals 2
-
-    new-instance v0, Ljava/lang/StringBuilder;
-
-    const-string v1, "GenerationalViewportHint(generationId="
-
-    invoke-direct {v0, v1}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
-
-    iget v1, p0, Landroidx/paging/q;->a:I
-
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
-
-    const-string v1, ", hint="
-
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    iget-object v1, p0, Landroidx/paging/q;->b:Landroidx/paging/j2;
-
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
-
-    const/16 v1, 0x29
-
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object v0
-
-    return-object v0
+    .line 61
+    :pswitch_data_0
+    .packed-switch 0x0
+        :pswitch_0
+    .end packed-switch
 .end method

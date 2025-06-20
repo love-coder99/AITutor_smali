@@ -3,12 +3,12 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lzh/c;
+.implements Lka/c;
 
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Landroidx/compose/foundation/text/TextFieldScrollKt$textFieldScrollable$2;->invoke(Landroidx/compose/ui/o;Landroidx/compose/runtime/l;I)Landroidx/compose/ui/o;
+    value = Landroidx/compose/foundation/text/TextFieldScrollKt$textFieldScrollable$2;->invoke(Landroidx/compose/ui/o;Landroidx/compose/runtime/j;I)Landroidx/compose/ui/o;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -19,7 +19,7 @@
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "Lkotlin/jvm/internal/Lambda;",
-        "Lzh/c;"
+        "Lka/c;"
     }
 .end annotation
 
@@ -45,14 +45,14 @@
 
 
 # instance fields
-.field final synthetic $scrollerPosition:Landroidx/compose/foundation/text/g0;
+.field final synthetic $scrollerPosition:Landroidx/compose/foundation/text/H;
 
 
 # direct methods
-.method public constructor <init>(Landroidx/compose/foundation/text/g0;)V
+.method public constructor <init>(Landroidx/compose/foundation/text/H;)V
     .locals 0
 
-    iput-object p1, p0, Landroidx/compose/foundation/text/TextFieldScrollKt$textFieldScrollable$2$scrollableState$1$1;->$scrollerPosition:Landroidx/compose/foundation/text/g0;
+    iput-object p1, p0, Landroidx/compose/foundation/text/TextFieldScrollKt$textFieldScrollable$2$scrollableState$1$1;->$scrollerPosition:Landroidx/compose/foundation/text/H;
 
     const/4 p1, 0x1
 
@@ -66,25 +66,27 @@
 .method public final invoke(F)Ljava/lang/Float;
     .locals 2
 
-    iget-object v0, p0, Landroidx/compose/foundation/text/TextFieldScrollKt$textFieldScrollable$2$scrollableState$1$1;->$scrollerPosition:Landroidx/compose/foundation/text/g0;
-
     .line 2
-    iget-object v0, v0, Landroidx/compose/foundation/text/g0;->a:Landroidx/compose/runtime/ParcelableSnapshotMutableFloatState;
+    iget-object v0, p0, Landroidx/compose/foundation/text/TextFieldScrollKt$textFieldScrollable$2$scrollableState$1$1;->$scrollerPosition:Landroidx/compose/foundation/text/H;
 
     .line 3
-    invoke-virtual {v0}, Landroidx/compose/runtime/n2;->k()F
+    iget-object v0, v0, Landroidx/compose/foundation/text/H;->a:Landroidx/compose/runtime/ParcelableSnapshotMutableFloatState;
+
+    .line 4
+    invoke-virtual {v0}, Landroidx/compose/runtime/ParcelableSnapshotMutableFloatState;->k()F
 
     move-result v0
 
     add-float/2addr v0, p1
 
-    iget-object v1, p0, Landroidx/compose/foundation/text/TextFieldScrollKt$textFieldScrollable$2$scrollableState$1$1;->$scrollerPosition:Landroidx/compose/foundation/text/g0;
-
-    .line 4
-    iget-object v1, v1, Landroidx/compose/foundation/text/g0;->b:Landroidx/compose/runtime/ParcelableSnapshotMutableFloatState;
-
     .line 5
-    invoke-virtual {v1}, Landroidx/compose/runtime/n2;->k()F
+    iget-object v1, p0, Landroidx/compose/foundation/text/TextFieldScrollKt$textFieldScrollable$2$scrollableState$1$1;->$scrollerPosition:Landroidx/compose/foundation/text/H;
+
+    .line 6
+    iget-object v1, v1, Landroidx/compose/foundation/text/H;->b:Landroidx/compose/runtime/ParcelableSnapshotMutableFloatState;
+
+    .line 7
+    invoke-virtual {v1}, Landroidx/compose/runtime/ParcelableSnapshotMutableFloatState;->k()F
 
     move-result v1
 
@@ -92,23 +94,25 @@
 
     if-lez v1, :cond_0
 
-    iget-object p1, p0, Landroidx/compose/foundation/text/TextFieldScrollKt$textFieldScrollable$2$scrollableState$1$1;->$scrollerPosition:Landroidx/compose/foundation/text/g0;
+    .line 8
+    iget-object p1, p0, Landroidx/compose/foundation/text/TextFieldScrollKt$textFieldScrollable$2$scrollableState$1$1;->$scrollerPosition:Landroidx/compose/foundation/text/H;
 
-    .line 6
-    iget-object p1, p1, Landroidx/compose/foundation/text/g0;->b:Landroidx/compose/runtime/ParcelableSnapshotMutableFloatState;
+    .line 9
+    iget-object p1, p1, Landroidx/compose/foundation/text/H;->b:Landroidx/compose/runtime/ParcelableSnapshotMutableFloatState;
 
-    .line 7
-    invoke-virtual {p1}, Landroidx/compose/runtime/n2;->k()F
+    .line 10
+    invoke-virtual {p1}, Landroidx/compose/runtime/ParcelableSnapshotMutableFloatState;->k()F
 
     move-result p1
 
-    iget-object v0, p0, Landroidx/compose/foundation/text/TextFieldScrollKt$textFieldScrollable$2$scrollableState$1$1;->$scrollerPosition:Landroidx/compose/foundation/text/g0;
+    .line 11
+    iget-object v0, p0, Landroidx/compose/foundation/text/TextFieldScrollKt$textFieldScrollable$2$scrollableState$1$1;->$scrollerPosition:Landroidx/compose/foundation/text/H;
 
-    .line 8
-    iget-object v0, v0, Landroidx/compose/foundation/text/g0;->a:Landroidx/compose/runtime/ParcelableSnapshotMutableFloatState;
+    .line 12
+    iget-object v0, v0, Landroidx/compose/foundation/text/H;->a:Landroidx/compose/runtime/ParcelableSnapshotMutableFloatState;
 
-    .line 9
-    invoke-virtual {v0}, Landroidx/compose/runtime/n2;->k()F
+    .line 13
+    invoke-virtual {v0}, Landroidx/compose/runtime/ParcelableSnapshotMutableFloatState;->k()F
 
     move-result v0
 
@@ -123,39 +127,41 @@
 
     if-gez v0, :cond_1
 
-    iget-object p1, p0, Landroidx/compose/foundation/text/TextFieldScrollKt$textFieldScrollable$2$scrollableState$1$1;->$scrollerPosition:Landroidx/compose/foundation/text/g0;
+    .line 14
+    iget-object p1, p0, Landroidx/compose/foundation/text/TextFieldScrollKt$textFieldScrollable$2$scrollableState$1$1;->$scrollerPosition:Landroidx/compose/foundation/text/H;
 
-    .line 10
-    iget-object p1, p1, Landroidx/compose/foundation/text/g0;->a:Landroidx/compose/runtime/ParcelableSnapshotMutableFloatState;
+    .line 15
+    iget-object p1, p1, Landroidx/compose/foundation/text/H;->a:Landroidx/compose/runtime/ParcelableSnapshotMutableFloatState;
 
-    .line 11
-    invoke-virtual {p1}, Landroidx/compose/runtime/n2;->k()F
+    .line 16
+    invoke-virtual {p1}, Landroidx/compose/runtime/ParcelableSnapshotMutableFloatState;->k()F
 
     move-result p1
 
     neg-float p1, p1
 
+    .line 17
     :cond_1
     :goto_0
-    iget-object v0, p0, Landroidx/compose/foundation/text/TextFieldScrollKt$textFieldScrollable$2$scrollableState$1$1;->$scrollerPosition:Landroidx/compose/foundation/text/g0;
+    iget-object v0, p0, Landroidx/compose/foundation/text/TextFieldScrollKt$textFieldScrollable$2$scrollableState$1$1;->$scrollerPosition:Landroidx/compose/foundation/text/H;
 
-    .line 12
-    iget-object v1, v0, Landroidx/compose/foundation/text/g0;->a:Landroidx/compose/runtime/ParcelableSnapshotMutableFloatState;
+    .line 18
+    iget-object v1, v0, Landroidx/compose/foundation/text/H;->a:Landroidx/compose/runtime/ParcelableSnapshotMutableFloatState;
 
-    .line 13
-    invoke-virtual {v1}, Landroidx/compose/runtime/n2;->k()F
+    .line 19
+    invoke-virtual {v1}, Landroidx/compose/runtime/ParcelableSnapshotMutableFloatState;->k()F
 
     move-result v1
 
     add-float/2addr v1, p1
 
-    .line 14
-    iget-object v0, v0, Landroidx/compose/foundation/text/g0;->a:Landroidx/compose/runtime/ParcelableSnapshotMutableFloatState;
+    .line 20
+    iget-object v0, v0, Landroidx/compose/foundation/text/H;->a:Landroidx/compose/runtime/ParcelableSnapshotMutableFloatState;
 
-    .line 15
-    invoke-virtual {v0, v1}, Landroidx/compose/runtime/n2;->l(F)V
+    .line 21
+    invoke-virtual {v0, v1}, Landroidx/compose/runtime/ParcelableSnapshotMutableFloatState;->l(F)V
 
-    .line 16
+    .line 22
     invoke-static {p1}, Ljava/lang/Float;->valueOf(F)Ljava/lang/Float;
 
     move-result-object p1

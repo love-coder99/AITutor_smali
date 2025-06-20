@@ -54,19 +54,22 @@
 
     const/4 p1, 0x0
 
+    .line 5
     iput p1, p0, Lcom/applovin/exoplayer2/ui/a;->c:I
 
     const p1, 0x3d5a511a    # 0.0533f
 
+    .line 6
     iput p1, p0, Lcom/applovin/exoplayer2/ui/a;->d:F
 
-    .line 5
+    .line 7
     sget-object p1, Lcom/applovin/impl/x2;->g:Lcom/applovin/impl/x2;
 
     iput-object p1, p0, Lcom/applovin/exoplayer2/ui/a;->f:Lcom/applovin/impl/x2;
 
     const p1, 0x3da3d70a    # 0.08f
 
+    .line 8
     iput p1, p0, Lcom/applovin/exoplayer2/ui/a;->g:F
 
     return-void
@@ -167,20 +170,25 @@
 .method public a(Ljava/util/List;Lcom/applovin/impl/x2;FIF)V
     .locals 0
 
+    .line 12
     iput-object p1, p0, Lcom/applovin/exoplayer2/ui/a;->b:Ljava/util/List;
 
+    .line 13
     iput-object p2, p0, Lcom/applovin/exoplayer2/ui/a;->f:Lcom/applovin/impl/x2;
 
+    .line 14
     iput p3, p0, Lcom/applovin/exoplayer2/ui/a;->d:F
 
+    .line 15
     iput p4, p0, Lcom/applovin/exoplayer2/ui/a;->c:I
 
+    .line 16
     iput p5, p0, Lcom/applovin/exoplayer2/ui/a;->g:F
 
+    .line 17
     :goto_0
     iget-object p2, p0, Lcom/applovin/exoplayer2/ui/a;->a:Ljava/util/List;
 
-    .line 12
     invoke-interface {p2}, Ljava/util/List;->size()I
 
     move-result p2
@@ -191,9 +199,9 @@
 
     if-ge p2, p3, :cond_0
 
+    .line 18
     iget-object p2, p0, Lcom/applovin/exoplayer2/ui/a;->a:Ljava/util/List;
 
-    .line 13
     new-instance p3, Lcom/applovin/exoplayer2/ui/g;
 
     invoke-virtual {p0}, Landroid/view/View;->getContext()Landroid/content/Context;
@@ -206,7 +214,7 @@
 
     goto :goto_0
 
-    .line 14
+    .line 19
     :cond_0
     invoke-virtual {p0}, Landroid/view/View;->invalidate()V
 

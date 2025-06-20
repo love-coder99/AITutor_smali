@@ -461,106 +461,199 @@
 .method private static synthetic a()[Lcom/applovin/impl/fq;
     .locals 3
 
+    .line 1
     const/16 v0, 0x10
 
+    .line 2
+    .line 3
     new-array v0, v0, [Lcom/applovin/impl/fq;
 
+    .line 4
+    .line 5
     sget-object v1, Lcom/applovin/impl/fq;->b:Lcom/applovin/impl/fq;
 
+    .line 6
+    .line 7
     const/4 v2, 0x0
 
+    .line 8
     aput-object v1, v0, v2
 
+    .line 9
+    .line 10
     sget-object v1, Lcom/applovin/impl/fq;->c:Lcom/applovin/impl/fq;
 
+    .line 11
+    .line 12
     const/4 v2, 0x1
 
+    .line 13
     aput-object v1, v0, v2
 
+    .line 14
+    .line 15
     sget-object v1, Lcom/applovin/impl/fq;->d:Lcom/applovin/impl/fq;
 
+    .line 16
+    .line 17
     const/4 v2, 0x2
 
+    .line 18
     aput-object v1, v0, v2
 
+    .line 19
+    .line 20
     sget-object v1, Lcom/applovin/impl/fq;->f:Lcom/applovin/impl/fq;
 
+    .line 21
+    .line 22
     const/4 v2, 0x3
 
+    .line 23
     aput-object v1, v0, v2
 
+    .line 24
+    .line 25
     sget-object v1, Lcom/applovin/impl/fq;->g:Lcom/applovin/impl/fq;
 
+    .line 26
+    .line 27
     const/4 v2, 0x4
 
+    .line 28
     aput-object v1, v0, v2
 
+    .line 29
+    .line 30
     sget-object v1, Lcom/applovin/impl/fq;->h:Lcom/applovin/impl/fq;
 
+    .line 31
+    .line 32
     const/4 v2, 0x5
 
+    .line 33
     aput-object v1, v0, v2
 
+    .line 34
+    .line 35
     sget-object v1, Lcom/applovin/impl/fq;->i:Lcom/applovin/impl/fq;
 
+    .line 36
+    .line 37
     const/4 v2, 0x6
 
+    .line 38
     aput-object v1, v0, v2
 
+    .line 39
+    .line 40
     sget-object v1, Lcom/applovin/impl/fq;->j:Lcom/applovin/impl/fq;
 
+    .line 41
+    .line 42
     const/4 v2, 0x7
 
+    .line 43
     aput-object v1, v0, v2
 
+    .line 44
+    .line 45
     sget-object v1, Lcom/applovin/impl/fq;->k:Lcom/applovin/impl/fq;
 
+    .line 46
+    .line 47
     const/16 v2, 0x8
 
+    .line 48
+    .line 49
     aput-object v1, v0, v2
 
+    .line 50
+    .line 51
     sget-object v1, Lcom/applovin/impl/fq;->l:Lcom/applovin/impl/fq;
 
+    .line 52
+    .line 53
     const/16 v2, 0x9
 
+    .line 54
+    .line 55
     aput-object v1, v0, v2
 
+    .line 56
+    .line 57
     sget-object v1, Lcom/applovin/impl/fq;->m:Lcom/applovin/impl/fq;
 
+    .line 58
+    .line 59
     const/16 v2, 0xa
 
+    .line 60
+    .line 61
     aput-object v1, v0, v2
 
+    .line 62
+    .line 63
     sget-object v1, Lcom/applovin/impl/fq;->n:Lcom/applovin/impl/fq;
 
+    .line 64
+    .line 65
     const/16 v2, 0xb
 
+    .line 66
+    .line 67
     aput-object v1, v0, v2
 
+    .line 68
+    .line 69
     sget-object v1, Lcom/applovin/impl/fq;->o:Lcom/applovin/impl/fq;
 
+    .line 70
+    .line 71
     const/16 v2, 0xc
 
+    .line 72
+    .line 73
     aput-object v1, v0, v2
 
+    .line 74
+    .line 75
     sget-object v1, Lcom/applovin/impl/fq;->p:Lcom/applovin/impl/fq;
 
+    .line 76
+    .line 77
     const/16 v2, 0xd
 
+    .line 78
+    .line 79
     aput-object v1, v0, v2
 
+    .line 80
+    .line 81
     sget-object v1, Lcom/applovin/impl/fq;->q:Lcom/applovin/impl/fq;
 
+    .line 82
+    .line 83
     const/16 v2, 0xe
 
+    .line 84
+    .line 85
     aput-object v1, v0, v2
 
+    .line 86
+    .line 87
     sget-object v1, Lcom/applovin/impl/fq;->r:Lcom/applovin/impl/fq;
 
+    .line 88
+    .line 89
     const/16 v2, 0xf
 
+    .line 90
+    .line 91
     aput-object v1, v0, v2
 
+    .line 92
+    .line 93
     return-object v0
 .end method
 
@@ -615,7 +708,10 @@
 .method public b()I
     .locals 1
 
+    .line 1
     iget v0, p0, Lcom/applovin/impl/fq;->a:I
 
+    .line 2
+    .line 3
     return v0
 .end method

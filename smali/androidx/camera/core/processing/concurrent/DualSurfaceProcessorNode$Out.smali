@@ -7,8 +7,8 @@
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "Ljava/util/HashMap<",
-        "Li0/a;",
-        "Lh0/s;",
+        "LN/a;",
+        "LM/o;",
         ">;"
     }
 .end annotation

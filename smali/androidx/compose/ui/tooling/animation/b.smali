@@ -4,7 +4,7 @@
 
 # interfaces
 .implements Landroidx/compose/animation/tooling/ComposeAnimation;
-.implements Landroidx/compose/ui/tooling/animation/s;
+.implements Landroidx/compose/ui/tooling/animation/n;
 
 
 # static fields
@@ -12,7 +12,7 @@
 
 
 # instance fields
-.field public final a:Landroidx/compose/animation/core/e1;
+.field public final a:Landroidx/compose/animation/core/Z;
 
 
 # direct methods
@@ -58,7 +58,7 @@
 
     .line 17
     .line 18
-    invoke-static {v4, v5}, Lrb/h;->d(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v4, v5}, Lkotlin/jvm/internal/h;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     .line 19
     .line 20
@@ -93,7 +93,7 @@
     return-void
 .end method
 
-.method public constructor <init>(Landroidx/compose/animation/core/e1;)V
+.method public constructor <init>(Landroidx/compose/animation/core/Z;)V
     .locals 0
 
     .line 1
@@ -102,7 +102,7 @@
     .line 2
     .line 3
     .line 4
-    iput-object p1, p0, Landroidx/compose/ui/tooling/animation/b;->a:Landroidx/compose/animation/core/e1;
+    iput-object p1, p0, Landroidx/compose/ui/tooling/animation/b;->a:Landroidx/compose/animation/core/Z;
 
     .line 5
     .line 6
@@ -115,11 +115,13 @@
 
 
 # virtual methods
-.method public final a()Landroidx/compose/animation/core/e1;
+.method public final a()Landroidx/compose/animation/core/Z;
     .locals 1
 
     .line 1
-    iget-object v0, p0, Landroidx/compose/ui/tooling/animation/b;->a:Landroidx/compose/animation/core/e1;
+    iget-object v0, p0, Landroidx/compose/ui/tooling/animation/b;->a:Landroidx/compose/animation/core/Z;
 
+    .line 2
+    .line 3
     return-object v0
 .end method

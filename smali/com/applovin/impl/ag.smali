@@ -85,9 +85,9 @@
 
     if-eqz p0, :cond_0
 
+    .line 2
     const-string v0, "networkInfo"
 
-    .line 2
     invoke-virtual {p0, v0}, Landroid/os/BaseBundle;->get(Ljava/lang/String;)Ljava/lang/Object;
 
     move-result-object p0
@@ -117,9 +117,9 @@
 .method public a(Lcom/applovin/impl/ag$a;)V
     .locals 1
 
+    .line 5
     iget-object v0, p0, Lcom/applovin/impl/ag;->a:Ljava/util/List;
 
-    .line 5
     invoke-interface {v0, p1}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
     return-void

@@ -3,14 +3,14 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lzh/a;
+.implements Lka/a;
 
 
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "Lkotlin/jvm/internal/Lambda;",
-        "Lzh/a;"
+        "Lka/a;"
     }
 .end annotation
 
@@ -19,9 +19,9 @@
         "\u0000\u0008\n\u0002\u0018\u0002\n\u0002\u0008\u0003\u0010\u0003\u001a\u00020\u0000H\n\u00a2\u0006\u0004\u0008\u0001\u0010\u0002"
     }
     d2 = {
-        "Landroidx/compose/foundation/pager/n;",
+        "Landroidx/compose/foundation/pager/k;",
         "invoke",
-        "()Landroidx/compose/foundation/pager/n;",
+        "()Landroidx/compose/foundation/pager/k;",
         "<anonymous>"
     }
     k = 0x3
@@ -34,32 +34,32 @@
 
 
 # instance fields
-.field final synthetic $intervalContentState:Landroidx/compose/runtime/d3;
+.field final synthetic $intervalContentState:Landroidx/compose/runtime/H0;
     .annotation system Ldalvik/annotation/Signature;
         value = {
-            "Landroidx/compose/runtime/d3;"
+            "Landroidx/compose/runtime/H0;"
         }
     .end annotation
 .end field
 
-.field final synthetic $state:Landroidx/compose/foundation/pager/u;
+.field final synthetic $state:Landroidx/compose/foundation/pager/o;
 
 
 # direct methods
-.method public constructor <init>(Landroidx/compose/runtime/d3;Landroidx/compose/foundation/pager/u;)V
+.method public constructor <init>(Landroidx/compose/runtime/H0;Landroidx/compose/foundation/pager/o;)V
     .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
-            "Landroidx/compose/runtime/d3;",
-            "Landroidx/compose/foundation/pager/u;",
+            "Landroidx/compose/runtime/H0;",
+            "Landroidx/compose/foundation/pager/o;",
             ")V"
         }
     .end annotation
 
-    iput-object p1, p0, Landroidx/compose/foundation/pager/LazyLayoutPagerKt$rememberPagerItemProviderLambda$1$itemProviderState$1;->$intervalContentState:Landroidx/compose/runtime/d3;
+    iput-object p1, p0, Landroidx/compose/foundation/pager/LazyLayoutPagerKt$rememberPagerItemProviderLambda$1$itemProviderState$1;->$intervalContentState:Landroidx/compose/runtime/H0;
 
-    iput-object p2, p0, Landroidx/compose/foundation/pager/LazyLayoutPagerKt$rememberPagerItemProviderLambda$1$itemProviderState$1;->$state:Landroidx/compose/foundation/pager/u;
+    iput-object p2, p0, Landroidx/compose/foundation/pager/LazyLayoutPagerKt$rememberPagerItemProviderLambda$1$itemProviderState$1;->$state:Landroidx/compose/foundation/pager/o;
 
     const/4 p1, 0x0
 
@@ -70,45 +70,49 @@
 
 
 # virtual methods
-.method public final invoke()Landroidx/compose/foundation/pager/n;
+.method public final invoke()Landroidx/compose/foundation/pager/k;
     .locals 4
 
-    iget-object v0, p0, Landroidx/compose/foundation/pager/LazyLayoutPagerKt$rememberPagerItemProviderLambda$1$itemProviderState$1;->$intervalContentState:Landroidx/compose/runtime/d3;
-
     .line 2
-    invoke-interface {v0}, Landroidx/compose/runtime/d3;->getValue()Ljava/lang/Object;
+    iget-object v0, p0, Landroidx/compose/foundation/pager/LazyLayoutPagerKt$rememberPagerItemProviderLambda$1$itemProviderState$1;->$intervalContentState:Landroidx/compose/runtime/H0;
+
+    invoke-interface {v0}, Landroidx/compose/runtime/H0;->getValue()Ljava/lang/Object;
 
     move-result-object v0
 
-    check-cast v0, Landroidx/compose/foundation/pager/l;
+    check-cast v0, Landroidx/compose/foundation/pager/j;
 
     .line 3
-    new-instance v1, Landroidx/compose/foundation/lazy/layout/t0;
+    new-instance v1, Landroidx/compose/foundation/lazy/layout/S;
 
-    iget-object v2, p0, Landroidx/compose/foundation/pager/LazyLayoutPagerKt$rememberPagerItemProviderLambda$1$itemProviderState$1;->$state:Landroidx/compose/foundation/pager/u;
+    iget-object v2, p0, Landroidx/compose/foundation/pager/LazyLayoutPagerKt$rememberPagerItemProviderLambda$1$itemProviderState$1;->$state:Landroidx/compose/foundation/pager/o;
 
     .line 4
-    iget-object v2, v2, Landroidx/compose/foundation/pager/u;->c:Landroidx/compose/foundation/pager/r;
+    iget-object v2, v2, Landroidx/compose/foundation/pager/o;->c:LM9/b0;
 
     .line 5
-    iget-object v2, v2, Landroidx/compose/foundation/pager/r;->f:Landroidx/compose/foundation/lazy/layout/i0;
+    iget-object v2, v2, LM9/b0;->i:Ljava/lang/Object;
+
+    check-cast v2, Landroidx/compose/foundation/lazy/layout/H;
 
     .line 6
-    invoke-virtual {v2}, Landroidx/compose/foundation/lazy/layout/i0;->getValue()Ljava/lang/Object;
+    invoke-virtual {v2}, Landroidx/compose/foundation/lazy/layout/H;->getValue()Ljava/lang/Object;
 
     move-result-object v2
 
-    check-cast v2, Lfi/g;
+    check-cast v2, Lqa/g;
 
     .line 7
-    invoke-direct {v1, v2, v0}, Landroidx/compose/foundation/lazy/layout/t0;-><init>(Lfi/g;Landroidx/compose/foundation/lazy/layout/p;)V
+    invoke-direct {v1, v2, v0}, Landroidx/compose/foundation/lazy/layout/S;-><init>(Lqa/g;Landroidx/compose/foundation/lazy/layout/r;)V
 
     .line 8
-    new-instance v2, Landroidx/compose/foundation/pager/n;
+    new-instance v2, Landroidx/compose/foundation/pager/k;
 
-    iget-object v3, p0, Landroidx/compose/foundation/pager/LazyLayoutPagerKt$rememberPagerItemProviderLambda$1$itemProviderState$1;->$state:Landroidx/compose/foundation/pager/u;
+    .line 9
+    iget-object v3, p0, Landroidx/compose/foundation/pager/LazyLayoutPagerKt$rememberPagerItemProviderLambda$1$itemProviderState$1;->$state:Landroidx/compose/foundation/pager/o;
 
-    invoke-direct {v2, v3, v0, v1}, Landroidx/compose/foundation/pager/n;-><init>(Landroidx/compose/foundation/pager/u;Landroidx/compose/foundation/pager/l;Landroidx/compose/foundation/lazy/layout/t0;)V
+    .line 10
+    invoke-direct {v2, v3, v0, v1}, Landroidx/compose/foundation/pager/k;-><init>(Landroidx/compose/foundation/pager/o;Landroidx/compose/foundation/pager/j;Landroidx/compose/foundation/lazy/layout/S;)V
 
     return-object v2
 .end method
@@ -117,7 +121,7 @@
     .locals 1
 
     .line 1
-    invoke-virtual {p0}, Landroidx/compose/foundation/pager/LazyLayoutPagerKt$rememberPagerItemProviderLambda$1$itemProviderState$1;->invoke()Landroidx/compose/foundation/pager/n;
+    invoke-virtual {p0}, Landroidx/compose/foundation/pager/LazyLayoutPagerKt$rememberPagerItemProviderLambda$1$itemProviderState$1;->invoke()Landroidx/compose/foundation/pager/k;
 
     move-result-object v0
 

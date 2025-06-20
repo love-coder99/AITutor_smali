@@ -157,18 +157,28 @@
 .method public hashCode()I
     .locals 4
 
+    .line 1
     iget-wide v0, p0, Lcom/applovin/impl/kj;->a:J
 
+    .line 2
+    .line 3
     long-to-int v1, v0
 
+    .line 4
     mul-int/lit8 v1, v1, 0x1f
 
+    .line 5
+    .line 6
     iget-wide v2, p0, Lcom/applovin/impl/kj;->b:J
 
+    .line 7
+    .line 8
     long-to-int v0, v2
 
+    .line 9
     add-int/2addr v1, v0
 
+    .line 10
     return v1
 .end method
 
@@ -215,7 +225,7 @@
 
     .line 21
     .line 22
-    invoke-static {v0, v1, v2, v3}, Landroid/support/v4/media/session/a;->G(Ljava/lang/StringBuilder;JLjava/lang/String;)Ljava/lang/String;
+    invoke-static {v1, v2, v3, v0}, LB/u;->q(JLjava/lang/String;Ljava/lang/StringBuilder;)Ljava/lang/String;
 
     .line 23
     .line 24

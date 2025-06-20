@@ -62,26 +62,30 @@
     .line 4
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
+    .line 5
     iput-object p1, p0, Lcom/applovin/impl/yl;->b:Ljava/lang/String;
 
+    .line 6
     iput-object p2, p0, Lcom/applovin/impl/yl;->a:Lcom/applovin/impl/sdk/j;
 
-    .line 5
+    .line 7
     invoke-virtual {p2}, Lcom/applovin/impl/sdk/j;->I()Lcom/applovin/impl/sdk/n;
 
     move-result-object p1
 
     iput-object p1, p0, Lcom/applovin/impl/yl;->c:Lcom/applovin/impl/sdk/n;
 
-    .line 6
+    .line 8
     invoke-static {}, Lcom/applovin/impl/sdk/j;->m()Landroid/content/Context;
 
     move-result-object p1
 
     iput-object p1, p0, Lcom/applovin/impl/yl;->d:Landroid/content/Context;
 
+    .line 9
     iput-boolean p3, p0, Lcom/applovin/impl/yl;->g:Z
 
+    .line 10
     iput-object p4, p0, Lcom/applovin/impl/yl;->f:Ljava/lang/String;
 
     return-void
@@ -99,7 +103,7 @@
 .method private synthetic a(Ljava/lang/Thread;J)V
     .locals 3
 
-    .line 5
+    .line 3
     invoke-virtual {p1}, Ljava/lang/Thread;->getState()Ljava/lang/Thread$State;
 
     move-result-object p1
@@ -114,26 +118,26 @@
 
     move-result-object p1
 
+    .line 4
     iget-object v0, p0, Lcom/applovin/impl/yl;->f:Ljava/lang/String;
 
-    .line 6
     invoke-static {v0}, Lcom/applovin/impl/sdk/utils/StringUtils;->isValidString(Ljava/lang/String;)Z
 
     move-result v0
 
     if-eqz v0, :cond_0
 
+    .line 5
     iget-object v0, p0, Lcom/applovin/impl/yl;->f:Ljava/lang/String;
 
     const-string v1, "details"
 
-    .line 7
     invoke-virtual {p1, v1, v0}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
+    .line 6
     :cond_0
     iget-object v0, p0, Lcom/applovin/impl/yl;->a:Lcom/applovin/impl/sdk/j;
 
-    .line 8
     invoke-virtual {v0}, Lcom/applovin/impl/sdk/j;->D()Lcom/applovin/impl/la;
 
     move-result-object v0
@@ -144,7 +148,7 @@
 
     invoke-virtual {v0, v1, v2, p1}, Lcom/applovin/impl/la;->a(Lcom/applovin/impl/ka;Ljava/lang/String;Ljava/util/Map;)V
 
-    .line 9
+    .line 7
     invoke-static {}, Lcom/applovin/impl/sdk/n;->a()Z
 
     move-result p1
@@ -197,7 +201,7 @@
 .method public a(Ljava/lang/String;)V
     .locals 0
 
-    .line 3
+    .line 8
     iput-object p1, p0, Lcom/applovin/impl/yl;->f:Ljava/lang/String;
 
     return-void
@@ -206,11 +210,11 @@
 .method public a(Ljava/lang/Throwable;)V
     .locals 2
 
+    .line 10
     iget-object v0, p0, Lcom/applovin/impl/yl;->b:Ljava/lang/String;
 
     const-string v1, "source"
 
-    .line 10
     invoke-static {v1, v0}, Lcom/applovin/impl/sdk/utils/CollectionUtils;->map(Ljava/lang/Object;Ljava/lang/Object;)Ljava/util/Map;
 
     move-result-object v0
@@ -224,9 +228,9 @@
 
     invoke-interface {v0, v1, p1}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
+    .line 12
     iget-object p1, p0, Lcom/applovin/impl/yl;->f:Ljava/lang/String;
 
-    .line 12
     invoke-static {p1}, Lcom/applovin/impl/sdk/utils/StringUtils;->emptyIfNull(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object p1
@@ -235,9 +239,9 @@
 
     invoke-interface {v0, v1, p1}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
+    .line 13
     iget-object p1, p0, Lcom/applovin/impl/yl;->a:Lcom/applovin/impl/sdk/j;
 
-    .line 13
     invoke-virtual {p1}, Lcom/applovin/impl/sdk/j;->D()Lcom/applovin/impl/la;
 
     move-result-object p1
@@ -252,7 +256,7 @@
 .method public a(Z)V
     .locals 0
 
-    .line 4
+    .line 9
     iput-boolean p1, p0, Lcom/applovin/impl/yl;->g:Z
 
     return-void
@@ -300,7 +304,7 @@
 
     move-result-object v2
 
-    new-instance v9, Lcom/applovin/impl/kw;
+    new-instance v9, Lcom/applovin/impl/B3;
 
     const/4 v8, 0x2
 
@@ -312,13 +316,13 @@
 
     move-wide v6, p2
 
-    invoke-direct/range {v3 .. v8}, Lcom/applovin/impl/kw;-><init>(Ljava/lang/Object;Ljava/lang/Object;JI)V
+    invoke-direct/range {v3 .. v8}, Lcom/applovin/impl/B3;-><init>(Ljava/lang/Object;Ljava/lang/Object;JI)V
 
     invoke-direct {v0, v1, v2, v9}, Lcom/applovin/impl/jn;-><init>(Lcom/applovin/impl/sdk/j;Ljava/lang/String;Ljava/lang/Runnable;)V
 
+    .line 3
     iget-object p1, p0, Lcom/applovin/impl/yl;->a:Lcom/applovin/impl/sdk/j;
 
-    .line 3
     invoke-virtual {p1}, Lcom/applovin/impl/sdk/j;->i0()Lcom/applovin/impl/tm;
 
     move-result-object p1
@@ -335,15 +339,21 @@
 .method public c()Ljava/lang/String;
     .locals 1
 
+    .line 1
     iget-object v0, p0, Lcom/applovin/impl/yl;->b:Ljava/lang/String;
 
+    .line 2
+    .line 3
     return-object v0
 .end method
 
 .method public d()Z
     .locals 1
 
+    .line 1
     iget-boolean v0, p0, Lcom/applovin/impl/yl;->g:Z
 
+    .line 2
+    .line 3
     return v0
 .end method

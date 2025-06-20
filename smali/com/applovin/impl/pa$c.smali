@@ -31,8 +31,10 @@
 
     invoke-direct {p0, p2}, Lcom/applovin/impl/i5;-><init>(I)V
 
+    .line 2
     iput-object p1, p0, Lcom/applovin/impl/pa$c;->b:Lcom/applovin/impl/k5;
 
+    .line 3
     iput p3, p0, Lcom/applovin/impl/pa$c;->c:I
 
     return-void
@@ -41,15 +43,17 @@
 .method public constructor <init>(Ljava/io/IOException;Lcom/applovin/impl/k5;II)V
     .locals 0
 
-    .line 2
+    .line 4
     invoke-static {p3, p4}, Lcom/applovin/impl/pa$c;->a(II)I
 
     move-result p3
 
     invoke-direct {p0, p1, p3}, Lcom/applovin/impl/i5;-><init>(Ljava/lang/Throwable;I)V
 
+    .line 5
     iput-object p2, p0, Lcom/applovin/impl/pa$c;->b:Lcom/applovin/impl/k5;
 
+    .line 6
     iput p4, p0, Lcom/applovin/impl/pa$c;->c:I
 
     return-void
@@ -58,15 +62,17 @@
 .method public constructor <init>(Ljava/lang/String;Lcom/applovin/impl/k5;II)V
     .locals 0
 
-    .line 3
+    .line 7
     invoke-static {p3, p4}, Lcom/applovin/impl/pa$c;->a(II)I
 
     move-result p3
 
     invoke-direct {p0, p1, p3}, Lcom/applovin/impl/i5;-><init>(Ljava/lang/String;I)V
 
+    .line 8
     iput-object p2, p0, Lcom/applovin/impl/pa$c;->b:Lcom/applovin/impl/k5;
 
+    .line 9
     iput p4, p0, Lcom/applovin/impl/pa$c;->c:I
 
     return-void
@@ -75,15 +81,17 @@
 .method public constructor <init>(Ljava/lang/String;Ljava/io/IOException;Lcom/applovin/impl/k5;II)V
     .locals 0
 
-    .line 4
+    .line 10
     invoke-static {p4, p5}, Lcom/applovin/impl/pa$c;->a(II)I
 
     move-result p4
 
     invoke-direct {p0, p1, p2, p4}, Lcom/applovin/impl/i5;-><init>(Ljava/lang/String;Ljava/lang/Throwable;I)V
 
+    .line 11
     iput-object p3, p0, Lcom/applovin/impl/pa$c;->b:Lcom/applovin/impl/k5;
 
+    .line 12
     iput p5, p0, Lcom/applovin/impl/pa$c;->c:I
 
     return-void

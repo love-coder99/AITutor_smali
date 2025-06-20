@@ -13,7 +13,7 @@
 .method public static a(JLjava/lang/String;)Ljava/lang/String;
     .locals 7
 
-    .line 1
+    .line 9
     :try_start_0
     new-instance v0, Ljava/io/File;
 
@@ -53,9 +53,9 @@
 
     invoke-direct {v0, v1, p0}, Ljava/io/File;-><init>(Ljava/lang/String;Ljava/lang/String;)V
 
+    .line 10
     const-string p0, "\n"
 
-    .line 2
     invoke-static {v0, p0}, Lcom/apm/insight/l/f;->a(Ljava/io/File;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object p0
@@ -67,7 +67,7 @@
     :catchall_0
     move-exception p0
 
-    .line 3
+    .line 11
     invoke-virtual {p0}, Ljava/lang/Throwable;->getMessage()Ljava/lang/String;
 
     move-result-object p0
@@ -78,7 +78,7 @@
 .method public static a()V
     .locals 6
 
-    .line 4
+    .line 12
     new-instance v0, Ljava/io/File;
 
     invoke-static {}, Lcom/apm/insight/e;->g()Landroid/content/Context;
@@ -93,7 +93,7 @@
 
     invoke-direct {v0, v1, v2}, Ljava/io/File;-><init>(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 5
+    .line 13
     invoke-virtual {v0}, Ljava/io/File;->list()[Ljava/lang/String;
 
     move-result-object v1
@@ -102,7 +102,7 @@
 
     return-void
 
-    .line 6
+    .line 14
     :cond_0
     array-length v2, v1
 
@@ -110,12 +110,12 @@
 
     if-le v2, v3, :cond_1
 
-    .line 7
+    .line 15
     invoke-static {v1}, Ljava/util/Arrays;->sort([Ljava/lang/Object;)V
 
     const/4 v2, 0x0
 
-    .line 8
+    .line 16
     :goto_0
     array-length v4, v1
 
@@ -123,7 +123,7 @@
 
     if-ge v2, v4, :cond_1
 
-    .line 9
+    .line 17
     new-instance v4, Ljava/io/File;
 
     aget-object v5, v1, v2
@@ -143,6 +143,7 @@
 .method public static a(J)V
     .locals 7
 
+    .line 1
     sget-wide v0, Lcom/apm/insight/runtime/b;->a:J
 
     sub-long v0, p0, v0
@@ -155,20 +156,22 @@
 
     return-void
 
+    .line 2
     :cond_0
     sput-wide p0, Lcom/apm/insight/runtime/b;->a:J
 
+    .line 3
     :try_start_0
     sget-object p0, Lcom/apm/insight/runtime/b;->b:Ljava/io/File;
 
     if-nez p0, :cond_1
 
-    .line 10
+    .line 4
     invoke-static {}, Ljava/lang/System;->currentTimeMillis()J
 
     move-result-wide p0
 
-    .line 11
+    .line 5
     new-instance v0, Ljava/io/File;
 
     invoke-static {}, Lcom/apm/insight/e;->g()Landroid/content/Context;
@@ -199,7 +202,7 @@
 
     invoke-virtual {v2, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    .line 12
+    .line 6
     invoke-static {}, Lcom/apm/insight/e;->f()Ljava/lang/String;
 
     move-result-object p0
@@ -214,10 +217,11 @@
 
     sput-object v0, Lcom/apm/insight/runtime/b;->b:Ljava/io/File;
 
+    .line 7
     :cond_1
     sget-object p0, Lcom/apm/insight/runtime/b;->b:Ljava/io/File;
 
-    .line 13
+    .line 8
     invoke-static {}, Ljava/lang/System;->currentTimeMillis()J
 
     move-result-wide v0

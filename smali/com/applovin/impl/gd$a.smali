@@ -77,11 +77,11 @@
     .line 1
     new-instance v8, Lcom/applovin/impl/gd$a;
 
-    const/4 v4, 0x0
-
     const/4 v6, 0x0
 
     const/4 v7, 0x0
+
+    const/4 v4, 0x0
 
     move-object v0, v8
 

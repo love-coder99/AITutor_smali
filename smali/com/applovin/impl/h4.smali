@@ -61,11 +61,11 @@
 
     if-nez p0, :cond_0
 
+    .line 2
     const-string p0, "AppLovinSdk"
 
     const-string v1, "Failed to get default Terms and Privacy Policy flow settings."
 
-    .line 2
     invoke-static {p0, v1}, Lcom/applovin/impl/sdk/n;->h(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 3
@@ -136,27 +136,27 @@
 
     move-result-object p0
 
+    .line 8
     sget-object v1, Ljava/lang/Boolean;->FALSE:Ljava/lang/Boolean;
 
     const-string v2, "consent_flow_enabled"
 
-    .line 8
     invoke-static {p0, v2, v1}, Lcom/applovin/impl/sdk/utils/JsonUtils;->getBoolean(Lorg/json/JSONObject;Ljava/lang/String;Ljava/lang/Boolean;)Ljava/lang/Boolean;
 
     move-result-object v1
 
+    .line 9
     const-string v2, "consent_flow_debug_user_geography"
 
     const-string v3, ""
 
-    .line 9
     invoke-static {p0, v2, v3}, Lcom/applovin/impl/sdk/utils/JsonUtils;->getString(Lorg/json/JSONObject;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v2
 
+    .line 10
     const-string v3, "consent_flow_terms_of_service"
 
-    .line 10
     invoke-static {p0, v3, v0}, Lcom/applovin/impl/sdk/utils/JsonUtils;->getString(Lorg/json/JSONObject;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v3
@@ -177,10 +177,10 @@
     :cond_2
     move-object v3, v0
 
+    .line 12
     :goto_1
     const-string v4, "consent_flow_privacy_policy"
 
-    .line 12
     invoke-static {p0, v4, v0}, Lcom/applovin/impl/sdk/utils/JsonUtils;->getString(Lorg/json/JSONObject;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object p0
@@ -216,36 +216,36 @@
 .method private static a(Ljava/lang/String;)Lcom/applovin/sdk/AppLovinSdkConfiguration$ConsentFlowUserGeography;
     .locals 1
 
+    .line 43
     const-string v0, "gdpr"
 
-    .line 41
     invoke-virtual {v0, p0}, Ljava/lang/String;->equalsIgnoreCase(Ljava/lang/String;)Z
 
     move-result v0
 
     if-eqz v0, :cond_0
 
-    .line 42
+    .line 44
     sget-object p0, Lcom/applovin/sdk/AppLovinSdkConfiguration$ConsentFlowUserGeography;->GDPR:Lcom/applovin/sdk/AppLovinSdkConfiguration$ConsentFlowUserGeography;
 
     return-object p0
 
+    .line 45
     :cond_0
     const-string v0, "other"
 
-    .line 43
     invoke-virtual {v0, p0}, Ljava/lang/String;->equalsIgnoreCase(Ljava/lang/String;)Z
 
     move-result p0
 
     if-eqz p0, :cond_1
 
-    .line 44
+    .line 46
     sget-object p0, Lcom/applovin/sdk/AppLovinSdkConfiguration$ConsentFlowUserGeography;->OTHER:Lcom/applovin/sdk/AppLovinSdkConfiguration$ConsentFlowUserGeography;
 
     return-object p0
 
-    .line 45
+    .line 47
     :cond_1
     sget-object p0, Lcom/applovin/sdk/AppLovinSdkConfiguration$ConsentFlowUserGeography;->UNKNOWN:Lcom/applovin/sdk/AppLovinSdkConfiguration$ConsentFlowUserGeography;
 
@@ -265,40 +265,40 @@
 
     invoke-direct {v1, p1}, Landroid/app/AlertDialog$Builder;-><init>(Landroid/content/Context;)V
 
+    .line 24
     const-string p1, "Missing Privacy Policy URL"
 
-    .line 24
     invoke-virtual {v1, p1}, Landroid/app/AlertDialog$Builder;->setTitle(Ljava/lang/CharSequence;)Landroid/app/AlertDialog$Builder;
 
     move-result-object p1
 
+    .line 25
     const-string v1, "You cannot use the AppLovin SDK\'s consent flow without defining a Privacy Policy URL"
 
-    .line 25
     invoke-virtual {p1, v1}, Landroid/app/AlertDialog$Builder;->setMessage(Ljava/lang/CharSequence;)Landroid/app/AlertDialog$Builder;
 
     move-result-object p1
 
-    new-instance v1, Lcom/applovin/impl/bu;
+    new-instance v1, Lcom/applovin/impl/U0;
 
-    invoke-direct {v1, p0, v0}, Lcom/applovin/impl/bu;-><init>(Lcom/applovin/impl/h4;Landroid/net/Uri;)V
-
-    const-string v2, "Go To Documentation"
+    invoke-direct {v1, p0, v0}, Lcom/applovin/impl/U0;-><init>(Lcom/applovin/impl/h4;Landroid/net/Uri;)V
 
     .line 26
+    const-string v2, "Go To Documentation"
+
     invoke-virtual {p1, v2, v1}, Landroid/app/AlertDialog$Builder;->setNeutralButton(Ljava/lang/CharSequence;Landroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
 
     move-result-object p1
 
-    new-instance v1, Lcom/applovin/impl/cu;
+    new-instance v1, Lcom/applovin/impl/V0;
 
     const/4 v2, 0x0
 
-    invoke-direct {v1, v0, v2}, Lcom/applovin/impl/cu;-><init>(Ljava/lang/Object;I)V
-
-    const-string v0, "DISMISS"
+    invoke-direct {v1, v0, v2}, Lcom/applovin/impl/V0;-><init>(Ljava/lang/Object;I)V
 
     .line 27
+    const-string v0, "DISMISS"
+
     invoke-virtual {p1, v0, v1}, Landroid/app/AlertDialog$Builder;->setNegativeButton(Ljava/lang/CharSequence;Landroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
 
     move-result-object p1
@@ -317,9 +317,9 @@
 .method private synthetic a(Landroid/app/Activity;Lcom/applovin/impl/h4$b;)V
     .locals 4
 
+    .line 36
     iget-object v0, p0, Lcom/applovin/impl/h4;->a:Lcom/applovin/impl/sdk/j;
 
-    .line 34
     invoke-virtual {v0}, Lcom/applovin/impl/sdk/j;->I()Lcom/applovin/impl/sdk/n;
 
     invoke-static {}, Lcom/applovin/impl/sdk/n;->a()Z
@@ -352,36 +352,36 @@
 
     invoke-virtual {v0, v2, v1}, Lcom/applovin/impl/sdk/n;->a(Ljava/lang/String;Ljava/lang/String;)V
 
+    .line 37
     :cond_0
     iget-object v0, p0, Lcom/applovin/impl/h4;->a:Lcom/applovin/impl/sdk/j;
 
-    .line 35
     invoke-virtual {v0}, Lcom/applovin/impl/sdk/j;->r0()Z
 
     move-result v0
 
     if-nez v0, :cond_1
 
+    .line 38
     iget-object v0, p0, Lcom/applovin/impl/h4;->a:Lcom/applovin/impl/sdk/j;
 
-    .line 36
     sget-object v1, Lcom/applovin/impl/uj;->o:Lcom/applovin/impl/uj;
 
     sget-object v2, Ljava/lang/Boolean;->TRUE:Ljava/lang/Boolean;
 
     invoke-virtual {v0, v1, v2}, Lcom/applovin/impl/sdk/j;->b(Lcom/applovin/impl/uj;Ljava/lang/Object;)V
 
+    .line 39
     :cond_1
     iget-object v0, p0, Lcom/applovin/impl/h4;->b:Lcom/applovin/impl/m4;
 
     iget-object v1, p0, Lcom/applovin/impl/h4;->c:Ljava/util/List;
 
-    .line 37
-    new-instance v2, Lcom/applovin/impl/ys;
+    new-instance v2, Lcom/applovin/impl/P;
 
     const/4 v3, 0x1
 
-    invoke-direct {v2, p0, v3, p2}, Lcom/applovin/impl/ys;-><init>(Ljava/lang/Object;ILjava/lang/Object;)V
+    invoke-direct {v2, p0, v3, p2}, Lcom/applovin/impl/P;-><init>(Ljava/lang/Object;ILjava/lang/Object;)V
 
     invoke-virtual {v0, v1, p1, v2}, Lcom/applovin/impl/m4;->a(Ljava/util/List;Landroid/app/Activity;Lcom/applovin/impl/h4$b;)V
 
@@ -391,7 +391,7 @@
 .method private a(Landroid/app/Activity;Ljava/lang/Runnable;)V
     .locals 1
 
-    .line 38
+    .line 40
     invoke-virtual {p0}, Lcom/applovin/impl/h4;->d()Lcom/applovin/impl/privacy/consentFlow/TermsAndPrivacyPolicyFlowSettingsImpl;
 
     move-result-object v0
@@ -402,18 +402,18 @@
 
     if-eqz v0, :cond_0
 
-    .line 39
+    .line 41
     invoke-interface {p2}, Ljava/lang/Runnable;->run()V
 
     return-void
 
-    .line 40
+    .line 42
     :cond_0
-    new-instance p2, Lcom/applovin/impl/ps;
+    new-instance p2, Lcom/applovin/impl/H;
 
     const/16 v0, 0x11
 
-    invoke-direct {p2, p0, v0, p1}, Lcom/applovin/impl/ps;-><init>(Ljava/lang/Object;ILjava/lang/Object;)V
+    invoke-direct {p2, p0, v0, p1}, Lcom/applovin/impl/H;-><init>(Ljava/lang/Object;ILjava/lang/Object;)V
 
     invoke-static {p2}, Lcom/applovin/sdk/AppLovinSdkUtils;->runOnUiThread(Ljava/lang/Runnable;)V
 
@@ -459,7 +459,7 @@
 .method private synthetic a(Lcom/applovin/impl/h4$a;)V
     .locals 2
 
-    .line 46
+    .line 48
     new-instance p1, Lcom/applovin/communicator/AppLovinCommunicatorMessage;
 
     new-instance v0, Landroid/os/Bundle;
@@ -470,7 +470,7 @@
 
     invoke-direct {p1, v0, v1, p0}, Lcom/applovin/communicator/AppLovinCommunicatorMessage;-><init>(Landroid/os/Bundle;Ljava/lang/String;Lcom/applovin/communicator/AppLovinCommunicatorPublisher;)V
 
-    .line 47
+    .line 49
     invoke-static {}, Lcom/applovin/impl/sdk/j;->m()Landroid/content/Context;
 
     move-result-object v0
@@ -500,20 +500,21 @@
 
     if-nez v0, :cond_0
 
+    .line 31
     iget-object v0, p0, Lcom/applovin/impl/h4;->a:Lcom/applovin/impl/sdk/j;
 
-    .line 31
     sget-object v2, Lcom/applovin/impl/uj;->o:Lcom/applovin/impl/uj;
 
     sget-object v3, Ljava/lang/Boolean;->FALSE:Ljava/lang/Boolean;
 
     invoke-virtual {v0, v2, v3}, Lcom/applovin/impl/sdk/j;->b(Lcom/applovin/impl/uj;Ljava/lang/Object;)V
 
+    .line 32
     iput-object v1, p0, Lcom/applovin/impl/h4;->c:Ljava/util/List;
 
     goto :goto_0
 
-    .line 32
+    .line 33
     :cond_0
     invoke-static {p2}, Lcom/applovin/impl/h4$a;->a(Lcom/applovin/impl/h4$a;)Lcom/applovin/impl/f4;
 
@@ -527,9 +528,10 @@
 
     if-eq v0, v2, :cond_1
 
+    .line 34
     iput-object v1, p0, Lcom/applovin/impl/h4;->c:Ljava/util/List;
 
-    .line 33
+    .line 35
     :cond_1
     :goto_0
     invoke-interface {p1, p2}, Lcom/applovin/impl/h4$b;->a(Lcom/applovin/impl/h4$a;)V
@@ -537,11 +539,11 @@
     return-void
 .end method
 
-.method public static synthetic a(Lcom/applovin/impl/h4;Lcom/applovin/impl/h4$b;Lcom/applovin/impl/h4$a;)V
+.method public static synthetic a(Lcom/applovin/impl/h4;Lcom/applovin/impl/h4$a;)V
     .locals 0
 
     .line 1
-    invoke-direct {p0, p1, p2}, Lcom/applovin/impl/h4;->a(Lcom/applovin/impl/h4$b;Lcom/applovin/impl/h4$a;)V
+    invoke-direct {p0, p1}, Lcom/applovin/impl/h4;->a(Lcom/applovin/impl/h4$a;)V
 
     return-void
 .end method
@@ -573,34 +575,7 @@
     throw p1
 .end method
 
-.method public static synthetic b(Lcom/applovin/impl/h4;Landroid/app/Activity;)V
-    .locals 0
-
-    .line 1
-    invoke-direct {p0, p1}, Lcom/applovin/impl/h4;->a(Landroid/app/Activity;)V
-
-    return-void
-.end method
-
-.method public static synthetic c(Landroid/net/Uri;Landroid/content/DialogInterface;I)V
-    .locals 0
-
-    .line 1
-    invoke-static {p0, p1, p2}, Lcom/applovin/impl/h4;->b(Landroid/net/Uri;Landroid/content/DialogInterface;I)V
-
-    return-void
-.end method
-
-.method public static synthetic d(Lcom/applovin/impl/h4;Lcom/applovin/impl/h4$a;)V
-    .locals 0
-
-    .line 1
-    invoke-direct {p0, p1}, Lcom/applovin/impl/h4;->a(Lcom/applovin/impl/h4$a;)V
-
-    return-void
-.end method
-
-.method public static synthetic e(Lcom/applovin/impl/h4;Landroid/net/Uri;Landroid/content/DialogInterface;I)V
+.method public static synthetic b(Lcom/applovin/impl/h4;Landroid/net/Uri;Landroid/content/DialogInterface;I)V
     .locals 0
 
     .line 1
@@ -609,11 +584,38 @@
     return-void
 .end method
 
-.method public static synthetic f(Lcom/applovin/impl/h4;Landroid/app/Activity;Lcom/applovin/impl/h4$b;)V
+.method public static synthetic c(Lcom/applovin/impl/h4;Landroid/app/Activity;Lcom/applovin/impl/h4$b;)V
     .locals 0
 
     .line 1
     invoke-direct {p0, p1, p2}, Lcom/applovin/impl/h4;->a(Landroid/app/Activity;Lcom/applovin/impl/h4$b;)V
+
+    return-void
+.end method
+
+.method public static synthetic d(Lcom/applovin/impl/h4;Lcom/applovin/impl/h4$b;Lcom/applovin/impl/h4$a;)V
+    .locals 0
+
+    .line 1
+    invoke-direct {p0, p1, p2}, Lcom/applovin/impl/h4;->a(Lcom/applovin/impl/h4$b;Lcom/applovin/impl/h4$a;)V
+
+    return-void
+.end method
+
+.method public static synthetic e(Lcom/applovin/impl/h4;Landroid/app/Activity;)V
+    .locals 0
+
+    .line 1
+    invoke-direct {p0, p1}, Lcom/applovin/impl/h4;->a(Landroid/app/Activity;)V
+
+    return-void
+.end method
+
+.method public static synthetic f(Landroid/net/Uri;Landroid/content/DialogInterface;I)V
+    .locals 0
+
+    .line 1
+    invoke-static {p0, p1, p2}, Lcom/applovin/impl/h4;->b(Landroid/net/Uri;Landroid/content/DialogInterface;I)V
 
     return-void
 .end method
@@ -630,9 +632,9 @@
 
     if-eqz v0, :cond_1
 
+    .line 16
     iget-object v0, p0, Lcom/applovin/impl/h4;->a:Lcom/applovin/impl/sdk/j;
 
-    .line 16
     invoke-virtual {v0}, Lcom/applovin/impl/sdk/j;->I()Lcom/applovin/impl/sdk/n;
 
     invoke-static {}, Lcom/applovin/impl/sdk/n;->a()Z
@@ -653,10 +655,10 @@
 
     invoke-virtual {v0, v1, v2}, Lcom/applovin/impl/sdk/n;->a(Ljava/lang/String;Ljava/lang/String;)V
 
+    .line 17
     :cond_0
     iget-object v0, p0, Lcom/applovin/impl/h4;->a:Lcom/applovin/impl/sdk/j;
 
-    .line 17
     invoke-static {v0}, Lcom/applovin/impl/g4;->c(Lcom/applovin/impl/sdk/j;)Ljava/util/List;
 
     move-result-object v0
@@ -695,9 +697,9 @@
 .method public b()Landroid/net/Uri;
     .locals 2
 
+    .line 2
     iget-object v0, p0, Lcom/applovin/impl/h4;->a:Lcom/applovin/impl/sdk/j;
 
-    .line 2
     invoke-virtual {v0}, Lcom/applovin/impl/sdk/j;->z0()Z
 
     move-result v0
@@ -711,10 +713,10 @@
     :cond_0
     sget-object v0, Lcom/applovin/impl/sj;->o6:Lcom/applovin/impl/sj;
 
+    .line 3
     :goto_0
     iget-object v1, p0, Lcom/applovin/impl/h4;->a:Lcom/applovin/impl/sdk/j;
 
-    .line 3
     invoke-virtual {v1, v0}, Lcom/applovin/impl/sdk/j;->a(Lcom/applovin/impl/sj;)Ljava/lang/Object;
 
     move-result-object v0
@@ -757,19 +759,19 @@
 
     return-void
 
+    .line 8
     :cond_0
     iget-object v0, p0, Lcom/applovin/impl/h4;->c:Ljava/util/List;
 
-    .line 8
     invoke-static {v0}, Lcom/applovin/impl/sdk/utils/CollectionUtils;->isEmpty(Ljava/util/Collection;)Z
 
     move-result v0
 
     if-eqz v0, :cond_1
 
+    .line 9
     iget-object p1, p0, Lcom/applovin/impl/h4;->a:Lcom/applovin/impl/sdk/j;
 
-    .line 9
     sget-object v0, Lcom/applovin/impl/uj;->o:Lcom/applovin/impl/uj;
 
     sget-object v1, Ljava/lang/Boolean;->FALSE:Ljava/lang/Boolean;
@@ -797,11 +799,11 @@
 
     .line 13
     :cond_1
-    new-instance v0, Lcom/applovin/impl/hx;
+    new-instance v0, Lcom/applovin/impl/Y3;
 
     const/4 v1, 0x7
 
-    invoke-direct {v0, p0, v1, p1, p2}, Lcom/applovin/impl/hx;-><init>(Ljava/lang/Object;ILjava/lang/Object;Ljava/lang/Object;)V
+    invoke-direct {v0, p0, v1, p1, p2}, Lcom/applovin/impl/Y3;-><init>(Ljava/lang/Object;ILjava/lang/Object;Ljava/lang/Object;)V
 
     invoke-direct {p0, p1, v0}, Lcom/applovin/impl/h4;->a(Landroid/app/Activity;Ljava/lang/Runnable;)V
 
@@ -844,11 +846,11 @@
 
     invoke-static {v2, v4, v3}, Lcom/applovin/impl/sdk/utils/JsonUtils;->putString(Lorg/json/JSONObject;Ljava/lang/String;Ljava/lang/String;)V
 
+    .line 7
     const-string v3, ""
 
     if-eqz v1, :cond_0
 
-    .line 7
     invoke-virtual {v1}, Landroid/net/Uri;->toString()Ljava/lang/String;
 
     move-result-object v1
@@ -881,9 +883,9 @@
 .method public d()Lcom/applovin/impl/privacy/consentFlow/TermsAndPrivacyPolicyFlowSettingsImpl;
     .locals 1
 
+    .line 2
     iget-object v0, p0, Lcom/applovin/impl/h4;->a:Lcom/applovin/impl/sdk/j;
 
-    .line 2
     invoke-virtual {v0}, Lcom/applovin/impl/sdk/j;->f0()Lcom/applovin/sdk/AppLovinSdkSettings;
 
     move-result-object v0
@@ -1006,8 +1008,11 @@
 .method public getCommunicatorId()Ljava/lang/String;
     .locals 1
 
+    .line 1
     const-string v0, "consent_flow_manager"
 
+    .line 2
+    .line 3
     return-object v0
 .end method
 
@@ -1325,7 +1330,7 @@
     move-result-object p1
 
     .line 63
-    new-instance v0, Lcom/applovin/impl/is;
+    new-instance v0, Lcom/applovin/impl/A;
 
     .line 64
     .line 65
@@ -1333,7 +1338,7 @@
 
     .line 66
     .line 67
-    invoke-direct {v0, p0, v1}, Lcom/applovin/impl/is;-><init>(Ljava/lang/Object;I)V
+    invoke-direct {v0, p0, v1}, Lcom/applovin/impl/A;-><init>(Ljava/lang/Object;I)V
 
     .line 68
     .line 69

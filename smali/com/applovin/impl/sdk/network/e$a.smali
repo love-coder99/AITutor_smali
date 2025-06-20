@@ -129,7 +129,7 @@
 .method public static synthetic b(Lcom/applovin/impl/sdk/network/e$a;)Z
     .locals 0
 
-    .line 4
+    .line 2
     iget-boolean p0, p0, Lcom/applovin/impl/sdk/network/e$a;->s:Z
 
     return p0
@@ -228,7 +228,7 @@
 .method public bridge synthetic b(I)Lcom/applovin/impl/sdk/network/a$a;
     .locals 0
 
-    .line 8
+    .line 6
     invoke-virtual {p0, p1}, Lcom/applovin/impl/sdk/network/e$a;->e(I)Lcom/applovin/impl/sdk/network/e$a;
 
     move-result-object p1
@@ -239,7 +239,7 @@
 .method public bridge synthetic b(Ljava/lang/String;)Lcom/applovin/impl/sdk/network/a$a;
     .locals 0
 
-    .line 5
+    .line 3
     invoke-virtual {p0, p1}, Lcom/applovin/impl/sdk/network/e$a;->f(Ljava/lang/String;)Lcom/applovin/impl/sdk/network/e$a;
 
     move-result-object p1
@@ -250,7 +250,7 @@
 .method public bridge synthetic b(Ljava/util/Map;)Lcom/applovin/impl/sdk/network/a$a;
     .locals 0
 
-    .line 7
+    .line 5
     invoke-virtual {p0, p1}, Lcom/applovin/impl/sdk/network/e$a;->d(Ljava/util/Map;)Lcom/applovin/impl/sdk/network/e$a;
 
     move-result-object p1
@@ -261,7 +261,7 @@
 .method public bridge synthetic b(Z)Lcom/applovin/impl/sdk/network/a$a;
     .locals 0
 
-    .line 6
+    .line 4
     invoke-virtual {p0, p1}, Lcom/applovin/impl/sdk/network/e$a;->i(Z)Lcom/applovin/impl/sdk/network/e$a;
 
     move-result-object p1
@@ -281,7 +281,7 @@
 .method public b(Ljava/lang/Object;)Lcom/applovin/impl/sdk/network/e$a;
     .locals 0
 
-    .line 2
+    .line 8
     iput-object p1, p0, Lcom/applovin/impl/sdk/network/a$a;->g:Ljava/lang/Object;
 
     return-object p0
@@ -290,7 +290,7 @@
 .method public b(Lorg/json/JSONObject;)Lcom/applovin/impl/sdk/network/e$a;
     .locals 0
 
-    .line 3
+    .line 7
     iput-object p1, p0, Lcom/applovin/impl/sdk/network/a$a;->f:Lorg/json/JSONObject;
 
     return-object p0
@@ -310,7 +310,7 @@
 .method public bridge synthetic c(I)Lcom/applovin/impl/sdk/network/a$a;
     .locals 0
 
-    .line 3
+    .line 2
     invoke-virtual {p0, p1}, Lcom/applovin/impl/sdk/network/e$a;->f(I)Lcom/applovin/impl/sdk/network/e$a;
 
     move-result-object p1
@@ -321,7 +321,7 @@
 .method public bridge synthetic c(Ljava/lang/String;)Lcom/applovin/impl/sdk/network/a$a;
     .locals 0
 
-    .line 2
+    .line 1
     invoke-virtual {p0, p1}, Lcom/applovin/impl/sdk/network/e$a;->g(Ljava/lang/String;)Lcom/applovin/impl/sdk/network/e$a;
 
     move-result-object p1
@@ -332,7 +332,7 @@
 .method public c(Ljava/util/Map;)Lcom/applovin/impl/sdk/network/e$a;
     .locals 0
 
-    .line 1
+    .line 3
     iput-object p1, p0, Lcom/applovin/impl/sdk/network/a$a;->e:Ljava/util/Map;
 
     return-object p0
@@ -341,7 +341,7 @@
 .method public d(I)Lcom/applovin/impl/sdk/network/e$a;
     .locals 0
 
-    .line 1
+    .line 3
     iput p1, p0, Lcom/applovin/impl/sdk/network/a$a;->h:I
 
     return-object p0
@@ -350,7 +350,7 @@
 .method public d(Ljava/lang/String;)Lcom/applovin/impl/sdk/network/e$a;
     .locals 0
 
-    .line 2
+    .line 1
     iput-object p1, p0, Lcom/applovin/impl/sdk/network/a$a;->c:Ljava/lang/String;
 
     return-object p0
@@ -359,7 +359,7 @@
 .method public d(Ljava/util/Map;)Lcom/applovin/impl/sdk/network/e$a;
     .locals 0
 
-    .line 3
+    .line 2
     iput-object p1, p0, Lcom/applovin/impl/sdk/network/a$a;->d:Ljava/util/Map;
 
     return-object p0
@@ -386,7 +386,7 @@
 .method public f(I)Lcom/applovin/impl/sdk/network/e$a;
     .locals 0
 
-    .line 1
+    .line 2
     iput p1, p0, Lcom/applovin/impl/sdk/network/a$a;->i:I
 
     return-object p0
@@ -395,7 +395,7 @@
 .method public f(Ljava/lang/String;)Lcom/applovin/impl/sdk/network/e$a;
     .locals 0
 
-    .line 2
+    .line 1
     iput-object p1, p0, Lcom/applovin/impl/sdk/network/a$a;->b:Ljava/lang/String;
 
     return-object p0
@@ -422,15 +422,21 @@
 .method public h(Z)Lcom/applovin/impl/sdk/network/e$a;
     .locals 0
 
+    .line 1
     iput-boolean p1, p0, Lcom/applovin/impl/sdk/network/e$a;->s:Z
 
+    .line 2
+    .line 3
     return-object p0
 .end method
 
 .method public i(Z)Lcom/applovin/impl/sdk/network/e$a;
     .locals 0
 
+    .line 1
     iput-boolean p1, p0, Lcom/applovin/impl/sdk/network/a$a;->p:Z
 
+    .line 2
+    .line 3
     return-object p0
 .end method

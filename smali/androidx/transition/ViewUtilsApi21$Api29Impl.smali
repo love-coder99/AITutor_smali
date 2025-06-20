@@ -31,7 +31,7 @@
     .locals 0
 
     .line 1
-    invoke-static {p0, p1}, Landroidx/core/view/r1;->v(Landroid/view/View;Landroid/graphics/Matrix;)V
+    invoke-static {p0, p1}, Landroidx/compose/ui/platform/v0;->o(Landroid/view/View;Landroid/graphics/Matrix;)V
 
     .line 2
     .line 3
@@ -43,7 +43,7 @@
     .locals 0
 
     .line 1
-    invoke-static {p0, p1}, Landroidx/compose/ui/graphics/layer/f;->j(Landroid/view/View;Landroid/graphics/Matrix;)V
+    invoke-static {p0, p1}, Landroidx/compose/ui/graphics/layer/e;->l(Landroid/view/View;Landroid/graphics/Matrix;)V
 
     .line 2
     .line 3
@@ -55,7 +55,7 @@
     .locals 0
 
     .line 1
-    invoke-static {p0, p1}, Landroidx/core/view/r1;->n(Landroid/view/View;Landroid/graphics/Matrix;)V
+    invoke-static {p0, p1}, Landroidx/compose/ui/platform/v0;->u(Landroid/view/View;Landroid/graphics/Matrix;)V
 
     .line 2
     .line 3

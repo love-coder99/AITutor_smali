@@ -1,237 +1,443 @@
-.class public abstract Landroidx/paging/f;
-.super Ljava/lang/Object;
+.class public final Landroidx/paging/F;
+.super Landroidx/paging/J;
 .source "SourceFile"
 
 
+# instance fields
+.field public final a:Landroidx/paging/LoadType;
+
+.field public final b:I
+
+.field public final c:I
+
+.field public final d:I
+
+
 # direct methods
-.method public static final a(Lkotlinx/coroutines/flow/h;Li4/a;)Lkotlinx/coroutines/flow/g0;
-    .locals 10
+.method public constructor <init>(Landroidx/paging/LoadType;III)V
+    .locals 0
 
     .line 1
-    new-instance v0, Landroidx/paging/CachedPagingDataKt$cachedIn$$inlined$simpleMapLatest$1;
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 2
     .line 3
-    const/4 v1, 0x0
-
     .line 4
-    invoke-direct {v0, v1, p1, v1}, Landroidx/paging/CachedPagingDataKt$cachedIn$$inlined$simpleMapLatest$1;-><init>(Lkotlin/coroutines/Continuation;Lkotlinx/coroutines/w;Landroidx/paging/a;)V
+    iput-object p1, p0, Landroidx/paging/F;->a:Landroidx/paging/LoadType;
 
     .line 5
     .line 6
+    iput p2, p0, Landroidx/paging/F;->b:I
+
     .line 7
-    sget-object v2, Landroidx/paging/p;->a:Ljava/lang/Object;
-
     .line 8
+    iput p3, p0, Landroidx/paging/F;->c:I
+
     .line 9
-    new-instance v2, Landroidx/paging/FlowExtKt$simpleTransformLatest$1;
-
     .line 10
-    .line 11
-    invoke-direct {v2, p0, v0, v1}, Landroidx/paging/FlowExtKt$simpleTransformLatest$1;-><init>(Lkotlinx/coroutines/flow/h;Lzh/f;Lkotlin/coroutines/Continuation;)V
+    iput p4, p0, Landroidx/paging/F;->d:I
 
+    .line 11
     .line 12
+    sget-object p2, Landroidx/paging/LoadType;->REFRESH:Landroidx/paging/LoadType;
+
     .line 13
     .line 14
-    invoke-static {v2}, Landroidx/paging/f;->b(Lzh/e;)Lkotlinx/coroutines/flow/h;
+    if-eq p1, p2, :cond_2
 
     .line 15
     .line 16
+    invoke-virtual {p0}, Landroidx/paging/F;->b()I
+
     .line 17
-    move-result-object p0
-
     .line 18
-    new-instance v0, Landroidx/paging/CachedPagingDataKt$cachedIn$2;
-
     .line 19
+    move-result p1
+
     .line 20
-    invoke-direct {v0, v1}, Landroidx/paging/CachedPagingDataKt$cachedIn$2;-><init>(Lkotlin/coroutines/Continuation;)V
+    if-lez p1, :cond_1
 
     .line 21
     .line 22
-    .line 23
-    new-instance v2, Landroidx/paging/FlowExtKt$simpleRunningReduce$1;
+    if-ltz p4, :cond_0
 
+    .line 23
     .line 24
+    return-void
+
     .line 25
-    invoke-direct {v2, p0, v0, v1}, Landroidx/paging/FlowExtKt$simpleRunningReduce$1;-><init>(Lkotlinx/coroutines/flow/h;Lzh/f;Lkotlin/coroutines/Continuation;)V
+    :cond_0
+    const-string p1, "Invalid placeholdersRemaining "
 
     .line 26
     .line 27
-    .line 28
-    new-instance p0, Lkotlinx/coroutines/flow/i0;
+    invoke-static {p4, p1}, Landroidx/appcompat/view/menu/F;->D(ILjava/lang/String;)Ljava/lang/String;
 
+    .line 28
     .line 29
     .line 30
-    invoke-direct {p0, v2}, Lkotlinx/coroutines/flow/i0;-><init>(Lzh/e;)V
+    move-result-object p1
 
     .line 31
+    new-instance p2, Ljava/lang/IllegalArgumentException;
+
     .line 32
     .line 33
-    new-instance v0, Landroidx/datastore/core/q;
+    invoke-virtual {p1}, Ljava/lang/Object;->toString()Ljava/lang/String;
 
     .line 34
     .line 35
-    const/4 v2, 0x1
-
     .line 36
-    invoke-direct {v0, p0, v2}, Landroidx/datastore/core/q;-><init>(Lkotlinx/coroutines/flow/h;I)V
+    move-result-object p1
 
     .line 37
+    invoke-direct {p2, p1}, Ljava/lang/IllegalArgumentException;-><init>(Ljava/lang/String;)V
+
     .line 38
     .line 39
-    new-instance p0, Landroidx/paging/CachedPagingDataKt$cachedIn$4;
-
     .line 40
+    throw p2
+
     .line 41
-    invoke-direct {p0, v1, v1}, Landroidx/paging/CachedPagingDataKt$cachedIn$4;-><init>(Landroidx/paging/a;Lkotlin/coroutines/Continuation;)V
+    :cond_1
+    new-instance p1, Ljava/lang/StringBuilder;
 
     .line 42
     .line 43
+    const-string p2, "Drop count must be > 0, but was "
+
     .line 44
-    new-instance v3, Lkotlinx/coroutines/flow/n;
-
     .line 45
-    .line 46
-    invoke-direct {v3, p0, v0}, Lkotlinx/coroutines/flow/n;-><init>(Lzh/e;Lkotlinx/coroutines/flow/h;)V
+    invoke-direct {p1, p2}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
 
+    .line 46
     .line 47
     .line 48
-    .line 49
-    new-instance p0, Landroidx/paging/CachedPagingDataKt$cachedIn$5;
+    invoke-virtual {p0}, Landroidx/paging/F;->b()I
 
+    .line 49
     .line 50
     .line 51
-    invoke-direct {p0, v1, v1}, Landroidx/paging/CachedPagingDataKt$cachedIn$5;-><init>(Landroidx/paging/a;Lkotlin/coroutines/Continuation;)V
+    move-result p2
 
     .line 52
+    invoke-virtual {p1, p2}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+
     .line 53
     .line 54
-    new-instance v0, Lkotlinx/coroutines/flow/m;
-
     .line 55
-    .line 56
-    invoke-direct {v0, v3, p0}, Lkotlinx/coroutines/flow/m;-><init>(Lkotlinx/coroutines/flow/h;Lzh/f;)V
+    invoke-virtual {p1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
+    .line 56
     .line 57
     .line 58
+    move-result-object p1
+
     .line 59
-    sget-object v8, Lkotlinx/coroutines/flow/o0;->b:Lkotlinx/coroutines/flow/s0;
+    new-instance p2, Ljava/lang/IllegalArgumentException;
 
     .line 60
     .line 61
-    invoke-static {v0}, Lkotlinx/coroutines/flow/j;->j(Lkotlinx/coroutines/flow/h;)Lfa/n;
+    invoke-virtual {p1}, Ljava/lang/Object;->toString()Ljava/lang/String;
 
     .line 62
     .line 63
     .line 64
-    move-result-object p0
+    move-result-object p1
 
     .line 65
-    iget v0, p0, Lfa/n;->a:I
+    invoke-direct {p2, p1}, Ljava/lang/IllegalArgumentException;-><init>(Ljava/lang/String;)V
 
     .line 66
     .line 67
-    iget-object v1, p0, Lfa/n;->c:Ljava/lang/Object;
-
     .line 68
+    throw p2
+
     .line 69
-    check-cast v1, Lkotlinx/coroutines/channels/BufferOverflow;
+    :cond_2
+    new-instance p1, Ljava/lang/IllegalArgumentException;
 
     .line 70
     .line 71
-    invoke-static {v2, v0, v1}, Lkotlinx/coroutines/flow/j;->a(IILkotlinx/coroutines/channels/BufferOverflow;)Lkotlinx/coroutines/flow/m0;
+    const-string p2, "Drop load type must be PREPEND or APPEND"
 
     .line 72
     .line 73
+    invoke-direct {p1, p2}, Ljava/lang/IllegalArgumentException;-><init>(Ljava/lang/String;)V
+
     .line 74
-    move-result-object v0
-
     .line 75
-    iget-object v1, p0, Lfa/n;->d:Ljava/lang/Object;
-
     .line 76
-    .line 77
-    move-object v5, v1
-
-    .line 78
-    check-cast v5, Lkotlin/coroutines/i;
-
-    .line 79
-    .line 80
-    iget-object p0, p0, Lfa/n;->b:Ljava/lang/Object;
-
-    .line 81
-    .line 82
-    move-object v6, p0
-
-    .line 83
-    check-cast v6, Lkotlinx/coroutines/flow/h;
-
-    .line 84
-    .line 85
-    sget-object v9, Lkotlinx/coroutines/flow/j;->a:Lv/a;
-
-    .line 86
-    .line 87
-    move-object v4, p1
-
-    .line 88
-    move-object v7, v0
-
-    .line 89
-    invoke-static/range {v4 .. v9}, Lkotlinx/coroutines/flow/j;->v(Lkotlinx/coroutines/w;Lkotlin/coroutines/i;Lkotlinx/coroutines/flow/h;Lkotlinx/coroutines/flow/e0;Lkotlinx/coroutines/flow/p0;Ljava/lang/Object;)Lkotlinx/coroutines/q1;
-
-    .line 90
-    .line 91
-    .line 92
-    new-instance p0, Lkotlinx/coroutines/flow/g0;
-
-    .line 93
-    .line 94
-    invoke-direct {p0, v0}, Lkotlinx/coroutines/flow/g0;-><init>(Lkotlinx/coroutines/flow/m0;)V
-
-    .line 95
-    .line 96
-    .line 97
-    return-object p0
+    throw p1
 .end method
 
-.method public static final b(Lzh/e;)Lkotlinx/coroutines/flow/h;
+
+# virtual methods
+.method public final b()I
     .locals 2
 
     .line 1
-    new-instance v0, Landroidx/paging/SimpleChannelFlowKt$simpleChannelFlow$1;
+    iget v0, p0, Landroidx/paging/F;->c:I
 
     .line 2
     .line 3
-    const/4 v1, 0x0
+    iget v1, p0, Landroidx/paging/F;->b:I
 
     .line 4
-    invoke-direct {v0, p0, v1}, Landroidx/paging/SimpleChannelFlowKt$simpleChannelFlow$1;-><init>(Lzh/e;Lkotlin/coroutines/Continuation;)V
-
     .line 5
+    sub-int/2addr v0, v1
+
+    .line 6
+    add-int/lit8 v0, v0, 0x1
+
+    .line 7
+    .line 8
+    return v0
+.end method
+
+.method public final equals(Ljava/lang/Object;)Z
+    .locals 4
+
+    const/4 v0, 0x1
+
+    if-ne p0, p1, :cond_0
+
+    return v0
+
+    :cond_0
+    instance-of v1, p1, Landroidx/paging/F;
+
+    const/4 v2, 0x0
+
+    if-nez v1, :cond_1
+
+    return v2
+
+    :cond_1
+    check-cast p1, Landroidx/paging/F;
+
+    iget-object v1, p1, Landroidx/paging/F;->a:Landroidx/paging/LoadType;
+
+    iget-object v3, p0, Landroidx/paging/F;->a:Landroidx/paging/LoadType;
+
+    if-eq v3, v1, :cond_2
+
+    return v2
+
+    :cond_2
+    iget v1, p0, Landroidx/paging/F;->b:I
+
+    iget v3, p1, Landroidx/paging/F;->b:I
+
+    if-eq v1, v3, :cond_3
+
+    return v2
+
+    :cond_3
+    iget v1, p0, Landroidx/paging/F;->c:I
+
+    iget v3, p1, Landroidx/paging/F;->c:I
+
+    if-eq v1, v3, :cond_4
+
+    return v2
+
+    :cond_4
+    iget v1, p0, Landroidx/paging/F;->d:I
+
+    iget p1, p1, Landroidx/paging/F;->d:I
+
+    if-eq v1, p1, :cond_5
+
+    return v2
+
+    :cond_5
+    return v0
+.end method
+
+.method public final hashCode()I
+    .locals 2
+
+    iget-object v0, p0, Landroidx/paging/F;->a:Landroidx/paging/LoadType;
+
+    invoke-virtual {v0}, Ljava/lang/Object;->hashCode()I
+
+    move-result v0
+
+    mul-int/lit8 v0, v0, 0x1f
+
+    iget v1, p0, Landroidx/paging/F;->b:I
+
+    add-int/2addr v0, v1
+
+    mul-int/lit8 v0, v0, 0x1f
+
+    iget v1, p0, Landroidx/paging/F;->c:I
+
+    add-int/2addr v0, v1
+
+    mul-int/lit8 v0, v0, 0x1f
+
+    iget v1, p0, Landroidx/paging/F;->d:I
+
+    add-int/2addr v0, v1
+
+    return v0
+.end method
+
+.method public final toString()Ljava/lang/String;
+    .locals 3
+
+    .line 1
+    sget-object v0, Landroidx/paging/E;->a:[I
+
+    .line 2
+    .line 3
+    iget-object v1, p0, Landroidx/paging/F;->a:Landroidx/paging/LoadType;
+
+    .line 4
+    .line 5
+    invoke-virtual {v1}, Ljava/lang/Enum;->ordinal()I
+
     .line 6
     .line 7
-    new-instance p0, Lkotlinx/coroutines/flow/i0;
-
     .line 8
+    move-result v1
+
     .line 9
-    invoke-direct {p0, v0}, Lkotlinx/coroutines/flow/i0;-><init>(Lzh/e;)V
+    aget v0, v0, v1
 
     .line 10
     .line 11
+    const/4 v1, 0x1
+
     .line 12
-    const/4 v0, -0x2
+    if-eq v0, v1, :cond_1
 
     .line 13
-    invoke-static {p0, v0}, Lkotlinx/coroutines/flow/j;->g(Lkotlinx/coroutines/flow/h;I)Lkotlinx/coroutines/flow/h;
-
     .line 14
-    .line 15
-    .line 16
-    move-result-object p0
+    const/4 v1, 0x2
 
+    .line 15
+    if-ne v0, v1, :cond_0
+
+    .line 16
     .line 17
-    return-object p0
+    const-string v0, "front"
+
+    .line 18
+    .line 19
+    goto :goto_0
+
+    .line 20
+    :cond_0
+    new-instance v0, Ljava/lang/IllegalArgumentException;
+
+    .line 21
+    .line 22
+    const-string v1, "Drop load type must be PREPEND or APPEND"
+
+    .line 23
+    .line 24
+    invoke-direct {v0, v1}, Ljava/lang/IllegalArgumentException;-><init>(Ljava/lang/String;)V
+
+    .line 25
+    .line 26
+    .line 27
+    throw v0
+
+    .line 28
+    :cond_1
+    const-string v0, "end"
+
+    .line 29
+    .line 30
+    :goto_0
+    const-string v1, "PageEvent.Drop from the "
+
+    .line 31
+    .line 32
+    const-string v2, " (\n                    |   minPageOffset: "
+
+    .line 33
+    .line 34
+    invoke-static {v1, v0, v2}, LB/u;->A(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 35
+    .line 36
+    .line 37
+    move-result-object v0
+
+    .line 38
+    iget v1, p0, Landroidx/paging/F;->b:I
+
+    .line 39
+    .line 40
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+
+    .line 41
+    .line 42
+    .line 43
+    const-string v1, "\n                    |   maxPageOffset: "
+
+    .line 44
+    .line 45
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 46
+    .line 47
+    .line 48
+    iget v1, p0, Landroidx/paging/F;->c:I
+
+    .line 49
+    .line 50
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+
+    .line 51
+    .line 52
+    .line 53
+    const-string v1, "\n                    |   placeholdersRemaining: "
+
+    .line 54
+    .line 55
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 56
+    .line 57
+    .line 58
+    iget v1, p0, Landroidx/paging/F;->d:I
+
+    .line 59
+    .line 60
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+
+    .line 61
+    .line 62
+    .line 63
+    const-string v1, "\n                    |)"
+
+    .line 64
+    .line 65
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 66
+    .line 67
+    .line 68
+    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    .line 69
+    .line 70
+    .line 71
+    move-result-object v0
+
+    .line 72
+    invoke-static {v0}, Lkotlin/text/n;->O(Ljava/lang/String;)Ljava/lang/String;
+
+    .line 73
+    .line 74
+    .line 75
+    move-result-object v0
+
+    .line 76
+    return-object v0
 .end method

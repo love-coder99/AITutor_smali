@@ -3,14 +3,14 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lzh/e;
+.implements Lka/e;
 
 
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "Lkotlin/jvm/internal/Lambda;",
-        "Lzh/e;"
+        "Lka/e;"
     }
 .end annotation
 
@@ -37,14 +37,14 @@
 
 
 # instance fields
-.field final synthetic $this_materializeImpl:Landroidx/compose/runtime/l;
+.field final synthetic $this_materializeImpl:Landroidx/compose/runtime/j;
 
 
 # direct methods
-.method public constructor <init>(Landroidx/compose/runtime/l;)V
+.method public constructor <init>(Landroidx/compose/runtime/j;)V
     .locals 0
 
-    iput-object p1, p0, Landroidx/compose/ui/ComposedModifierKt$materializeImpl$result$1;->$this_materializeImpl:Landroidx/compose/runtime/l;
+    iput-object p1, p0, Landroidx/compose/ui/ComposedModifierKt$materializeImpl$result$1;->$this_materializeImpl:Landroidx/compose/runtime/j;
 
     const/4 p1, 0x2
 
@@ -67,40 +67,43 @@
     check-cast p2, Landroidx/compose/ui/k;
 
     .line 4
-    iget-object p2, p2, Landroidx/compose/ui/k;->d:Lzh/f;
+    iget-object p2, p2, Landroidx/compose/ui/k;->c:Lkotlin/jvm/internal/Lambda;
 
     const/4 v0, 0x3
 
     .line 5
-    invoke-static {v0, p2}, Ljb/a;->g(ILjava/lang/Object;)V
+    invoke-static {v0, p2}, Lkotlin/jvm/internal/m;->d(ILjava/lang/Object;)V
 
-    sget-object v0, Landroidx/compose/ui/l;->c:Landroidx/compose/ui/l;
+    check-cast p2, Lka/f;
 
-    iget-object v1, p0, Landroidx/compose/ui/ComposedModifierKt$materializeImpl$result$1;->$this_materializeImpl:Landroidx/compose/runtime/l;
+    .line 6
+    sget-object v0, Landroidx/compose/ui/l;->a:Landroidx/compose/ui/l;
+
+    iget-object v1, p0, Landroidx/compose/ui/ComposedModifierKt$materializeImpl$result$1;->$this_materializeImpl:Landroidx/compose/runtime/j;
 
     const/4 v2, 0x0
 
-    .line 6
     invoke-static {v2}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
     move-result-object v2
 
-    invoke-interface {p2, v0, v1, v2}, Lzh/f;->invoke(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-interface {p2, v0, v1, v2}, Lka/f;->invoke(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object p2
 
     check-cast p2, Landroidx/compose/ui/o;
 
-    iget-object v0, p0, Landroidx/compose/ui/ComposedModifierKt$materializeImpl$result$1;->$this_materializeImpl:Landroidx/compose/runtime/l;
-
     .line 7
-    invoke-static {v0, p2}, Landroidx/compose/ui/a;->b(Landroidx/compose/runtime/l;Landroidx/compose/ui/o;)Landroidx/compose/ui/o;
+    iget-object v0, p0, Landroidx/compose/ui/ComposedModifierKt$materializeImpl$result$1;->$this_materializeImpl:Landroidx/compose/runtime/j;
+
+    .line 8
+    invoke-static {v0, p2}, Landroidx/compose/ui/a;->c(Landroidx/compose/runtime/j;Landroidx/compose/ui/o;)Landroidx/compose/ui/o;
 
     move-result-object p2
 
-    .line 8
+    .line 9
     :cond_0
-    invoke-interface {p1, p2}, Landroidx/compose/ui/o;->e(Landroidx/compose/ui/o;)Landroidx/compose/ui/o;
+    invoke-interface {p1, p2}, Landroidx/compose/ui/o;->g(Landroidx/compose/ui/o;)Landroidx/compose/ui/o;
 
     move-result-object p1
 

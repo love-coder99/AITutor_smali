@@ -1,20 +1,67 @@
-.class public final Landroidx/room/i;
+.class public abstract synthetic Landroidx/room/I;
 .super Ljava/lang/Object;
 .source "SourceFile"
 
-# interfaces
-.implements Landroidx/room/j;
+
+# static fields
+.field public static final synthetic a:[I
 
 
-# instance fields
-.field public b:Landroid/os/IBinder;
+# direct methods
+.method static constructor <clinit>()V
+    .locals 3
 
+    invoke-static {}, Landroidx/room/ObservedTableStates$ObserveOp;->values()[Landroidx/room/ObservedTableStates$ObserveOp;
 
-# virtual methods
-.method public final asBinder()Landroid/os/IBinder;
-    .locals 1
+    move-result-object v0
 
-    iget-object v0, p0, Landroidx/room/i;->b:Landroid/os/IBinder;
+    array-length v0, v0
 
-    return-object v0
+    new-array v0, v0, [I
+
+    :try_start_0
+    sget-object v1, Landroidx/room/ObservedTableStates$ObserveOp;->NO_OP:Landroidx/room/ObservedTableStates$ObserveOp;
+
+    invoke-virtual {v1}, Ljava/lang/Enum;->ordinal()I
+
+    move-result v1
+
+    const/4 v2, 0x1
+
+    aput v2, v0, v1
+    :try_end_0
+    .catch Ljava/lang/NoSuchFieldError; {:try_start_0 .. :try_end_0} :catch_0
+
+    :catch_0
+    :try_start_1
+    sget-object v1, Landroidx/room/ObservedTableStates$ObserveOp;->ADD:Landroidx/room/ObservedTableStates$ObserveOp;
+
+    invoke-virtual {v1}, Ljava/lang/Enum;->ordinal()I
+
+    move-result v1
+
+    const/4 v2, 0x2
+
+    aput v2, v0, v1
+    :try_end_1
+    .catch Ljava/lang/NoSuchFieldError; {:try_start_1 .. :try_end_1} :catch_1
+
+    :catch_1
+    :try_start_2
+    sget-object v1, Landroidx/room/ObservedTableStates$ObserveOp;->REMOVE:Landroidx/room/ObservedTableStates$ObserveOp;
+
+    invoke-virtual {v1}, Ljava/lang/Enum;->ordinal()I
+
+    move-result v1
+
+    const/4 v2, 0x3
+
+    aput v2, v0, v1
+    :try_end_2
+    .catch Ljava/lang/NoSuchFieldError; {:try_start_2 .. :try_end_2} :catch_2
+
+    :catch_2
+    sput-object v0, Landroidx/room/I;->a:[I
+
+    return-void
 .end method

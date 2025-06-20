@@ -3,14 +3,14 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lzh/c;
+.implements Lka/c;
 
 
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "Lkotlin/jvm/internal/Lambda;",
-        "Lzh/c;"
+        "Lka/c;"
     }
 .end annotation
 
@@ -37,14 +37,14 @@
 
 
 # instance fields
-.field final synthetic this$0:Landroidx/compose/foundation/lazy/layout/q0;
+.field final synthetic this$0:Landroidx/compose/foundation/lazy/layout/P;
 
 
 # direct methods
-.method public constructor <init>(Landroidx/compose/foundation/lazy/layout/q0;)V
+.method public constructor <init>(Landroidx/compose/foundation/lazy/layout/P;)V
     .locals 0
 
-    iput-object p1, p0, Landroidx/compose/foundation/lazy/layout/LazyLayoutSemanticsModifierNode$updateCachedSemanticsValues$3;->this$0:Landroidx/compose/foundation/lazy/layout/q0;
+    iput-object p1, p0, Landroidx/compose/foundation/lazy/layout/LazyLayoutSemanticsModifierNode$updateCachedSemanticsValues$3;->this$0:Landroidx/compose/foundation/lazy/layout/P;
 
     const/4 p1, 0x1
 
@@ -58,66 +58,69 @@
 .method public final invoke(I)Ljava/lang/Boolean;
     .locals 4
 
-    iget-object v0, p0, Landroidx/compose/foundation/lazy/layout/LazyLayoutSemanticsModifierNode$updateCachedSemanticsValues$3;->this$0:Landroidx/compose/foundation/lazy/layout/q0;
-
-    .line 1
-    iget-object v0, v0, Landroidx/compose/foundation/lazy/layout/q0;->p:Lzh/a;
-
     .line 2
-    invoke-interface {v0}, Lzh/a;->invoke()Ljava/lang/Object;
+    iget-object v0, p0, Landroidx/compose/foundation/lazy/layout/LazyLayoutSemanticsModifierNode$updateCachedSemanticsValues$3;->this$0:Landroidx/compose/foundation/lazy/layout/P;
+
+    .line 3
+    iget-object v0, v0, Landroidx/compose/foundation/lazy/layout/P;->p:Lra/m;
+
+    .line 4
+    invoke-interface {v0}, Lka/a;->invoke()Ljava/lang/Object;
 
     move-result-object v0
 
-    check-cast v0, Landroidx/compose/foundation/lazy/layout/a0;
+    check-cast v0, Landroidx/compose/foundation/lazy/layout/A;
 
     if-ltz p1, :cond_0
 
-    .line 3
-    invoke-interface {v0}, Landroidx/compose/foundation/lazy/layout/a0;->c()I
+    .line 5
+    invoke-interface {v0}, Landroidx/compose/foundation/lazy/layout/A;->b()I
 
     move-result v1
 
     if-ge p1, v1, :cond_0
 
-    iget-object v0, p0, Landroidx/compose/foundation/lazy/layout/LazyLayoutSemanticsModifierNode$updateCachedSemanticsValues$3;->this$0:Landroidx/compose/foundation/lazy/layout/q0;
+    .line 6
+    iget-object v0, p0, Landroidx/compose/foundation/lazy/layout/LazyLayoutSemanticsModifierNode$updateCachedSemanticsValues$3;->this$0:Landroidx/compose/foundation/lazy/layout/P;
 
-    .line 4
-    invoke-virtual {v0}, Landroidx/compose/ui/n;->o0()Lkotlinx/coroutines/w;
+    invoke-virtual {v0}, Landroidx/compose/ui/n;->m0()Lkotlinx/coroutines/u;
 
     move-result-object v0
 
     new-instance v1, Landroidx/compose/foundation/lazy/layout/LazyLayoutSemanticsModifierNode$updateCachedSemanticsValues$3$2;
 
-    iget-object v2, p0, Landroidx/compose/foundation/lazy/layout/LazyLayoutSemanticsModifierNode$updateCachedSemanticsValues$3;->this$0:Landroidx/compose/foundation/lazy/layout/q0;
+    iget-object v2, p0, Landroidx/compose/foundation/lazy/layout/LazyLayoutSemanticsModifierNode$updateCachedSemanticsValues$3;->this$0:Landroidx/compose/foundation/lazy/layout/P;
 
     const/4 v3, 0x0
 
-    invoke-direct {v1, v2, p1, v3}, Landroidx/compose/foundation/lazy/layout/LazyLayoutSemanticsModifierNode$updateCachedSemanticsValues$3$2;-><init>(Landroidx/compose/foundation/lazy/layout/q0;ILkotlin/coroutines/Continuation;)V
+    invoke-direct {v1, v2, p1, v3}, Landroidx/compose/foundation/lazy/layout/LazyLayoutSemanticsModifierNode$updateCachedSemanticsValues$3$2;-><init>(Landroidx/compose/foundation/lazy/layout/P;ILkotlin/coroutines/Continuation;)V
 
     const/4 p1, 0x3
 
-    invoke-static {v0, v3, v3, v1, p1}, Lf7/l;->D(Lkotlinx/coroutines/w;Lkotlin/coroutines/g;Lkotlinx/coroutines/CoroutineStart;Lzh/e;I)Lkotlinx/coroutines/q1;
+    invoke-static {v0, v3, v3, v1, p1}, Lkotlinx/coroutines/w;->w(Lkotlinx/coroutines/u;Lba/g;Lkotlinx/coroutines/CoroutineStart;Lka/e;I)Lkotlinx/coroutines/r0;
 
+    .line 7
     sget-object p1, Ljava/lang/Boolean;->TRUE:Ljava/lang/Boolean;
 
     return-object p1
 
+    .line 8
     :cond_0
     const-string v1, "Can\'t scroll to index "
 
     const-string v2, ", it is out of bounds [0, "
 
-    .line 5
-    invoke-static {v1, p1, v2}, Lj0/d;->q(Ljava/lang/String;ILjava/lang/String;)Ljava/lang/StringBuilder;
+    .line 9
+    invoke-static {p1, v1, v2}, LB/u;->y(ILjava/lang/String;Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object p1
 
-    .line 6
-    invoke-interface {v0}, Landroidx/compose/foundation/lazy/layout/a0;->c()I
+    .line 10
+    invoke-interface {v0}, Landroidx/compose/foundation/lazy/layout/A;->b()I
 
     move-result v0
 
-    .line 7
+    .line 11
     invoke-virtual {p1, v0}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
     const/16 v0, 0x29
@@ -128,7 +131,7 @@
 
     move-result-object p1
 
-    .line 8
+    .line 12
     new-instance v0, Ljava/lang/IllegalArgumentException;
 
     invoke-virtual {p1}, Ljava/lang/Object;->toString()Ljava/lang/String;
@@ -143,7 +146,7 @@
 .method public bridge synthetic invoke(Ljava/lang/Object;)Ljava/lang/Object;
     .locals 0
 
-    .line 13
+    .line 1
     check-cast p1, Ljava/lang/Number;
 
     invoke-virtual {p1}, Ljava/lang/Number;->intValue()I

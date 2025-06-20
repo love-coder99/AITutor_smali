@@ -32,18 +32,29 @@
 .method static constructor <clinit>()V
     .locals 1
 
+    .line 1
     const/4 v0, 0x3
 
+    .line 2
     new-array v0, v0, [B
 
+    .line 3
+    .line 4
     fill-array-data v0, :array_0
 
+    .line 5
+    .line 6
+    .line 7
     sput-object v0, Lcom/applovin/impl/ea$a;->e:[B
 
+    .line 8
+    .line 9
     return-void
 
+    .line 10
     nop
 
+    .line 11
     :array_0
     .array-data 1
         0x0t
@@ -77,13 +88,15 @@
 .method public a()V
     .locals 1
 
-    .line 1
     const/4 v0, 0x0
 
+    .line 13
     iput-boolean v0, p0, Lcom/applovin/impl/ea$a;->a:Z
 
+    .line 14
     iput v0, p0, Lcom/applovin/impl/ea$a;->b:I
 
+    .line 15
     iput v0, p0, Lcom/applovin/impl/ea$a;->c:I
 
     return-void
@@ -92,6 +105,7 @@
 .method public a([BII)V
     .locals 3
 
+    .line 1
     iget-boolean v0, p0, Lcom/applovin/impl/ea$a;->a:Z
 
     if-nez v0, :cond_0
@@ -101,9 +115,9 @@
     :cond_0
     sub-int/2addr p3, p2
 
+    .line 2
     iget-object v0, p0, Lcom/applovin/impl/ea$a;->d:[B
 
-    .line 2
     array-length v1, v0
 
     iget v2, p0, Lcom/applovin/impl/ea$a;->b:I
@@ -121,14 +135,15 @@
 
     iput-object v0, p0, Lcom/applovin/impl/ea$a;->d:[B
 
+    .line 4
     :cond_1
     iget-object v0, p0, Lcom/applovin/impl/ea$a;->d:[B
 
     iget v1, p0, Lcom/applovin/impl/ea$a;->b:I
 
-    .line 4
     invoke-static {p1, p2, v0, v1, p3}, Ljava/lang/System;->arraycopy(Ljava/lang/Object;ILjava/lang/Object;II)V
 
+    .line 5
     iget p1, p0, Lcom/applovin/impl/ea$a;->b:I
 
     add-int/2addr p1, p3
@@ -141,6 +156,7 @@
 .method public a(II)Z
     .locals 3
 
+    .line 6
     iget-boolean v0, p0, Lcom/applovin/impl/ea$a;->a:Z
 
     const/4 v1, 0x1
@@ -149,12 +165,14 @@
 
     if-eqz v0, :cond_1
 
+    .line 7
     iget v0, p0, Lcom/applovin/impl/ea$a;->b:I
 
     sub-int/2addr v0, p2
 
     iput v0, p0, Lcom/applovin/impl/ea$a;->b:I
 
+    .line 8
     iget p2, p0, Lcom/applovin/impl/ea$a;->c:I
 
     if-nez p2, :cond_0
@@ -163,10 +181,12 @@
 
     if-ne p1, p2, :cond_0
 
+    .line 9
     iput v0, p0, Lcom/applovin/impl/ea$a;->c:I
 
     goto :goto_0
 
+    .line 10
     :cond_0
     iput-boolean v2, p0, Lcom/applovin/impl/ea$a;->a:Z
 
@@ -177,13 +197,14 @@
 
     if-ne p1, p2, :cond_2
 
+    .line 11
     iput-boolean v1, p0, Lcom/applovin/impl/ea$a;->a:Z
 
+    .line 12
     :cond_2
     :goto_0
     sget-object p1, Lcom/applovin/impl/ea$a;->e:[B
 
-    .line 5
     array-length p2, p1
 
     invoke-virtual {p0, p1, v2, p2}, Lcom/applovin/impl/ea$a;->a([BII)V

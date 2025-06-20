@@ -51,6 +51,10 @@
 # direct methods
 .method public constructor <init>(Lcom/android/billingclient/api/BillingResult;Ljava/lang/String;)V
     .locals 0
+    .param p1    # Lcom/android/billingclient/api/BillingResult;
+        .annotation build Landroidx/annotation/RecentlyNonNull;
+        .end annotation
+    .end param
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -63,6 +67,24 @@
 
 .method public static synthetic copy$default(Lcom/android/billingclient/api/ConsumeResult;Lcom/android/billingclient/api/BillingResult;Ljava/lang/String;ILjava/lang/Object;)Lcom/android/billingclient/api/ConsumeResult;
     .locals 0
+    .param p0    # Lcom/android/billingclient/api/ConsumeResult;
+        .annotation build Landroidx/annotation/RecentlyNonNull;
+        .end annotation
+    .end param
+    .param p1    # Lcom/android/billingclient/api/BillingResult;
+        .annotation build Landroidx/annotation/RecentlyNonNull;
+        .end annotation
+    .end param
+    .param p2    # Ljava/lang/String;
+        .annotation build Landroidx/annotation/RecentlyNonNull;
+        .end annotation
+    .end param
+    .param p4    # Ljava/lang/Object;
+        .annotation build Landroidx/annotation/RecentlyNonNull;
+        .end annotation
+    .end param
+    .annotation build Landroidx/annotation/RecentlyNonNull;
+    .end annotation
 
     and-int/lit8 p4, p3, 0x1
 
@@ -97,6 +119,8 @@
 
 .method public final component2()Ljava/lang/String;
     .locals 1
+    .annotation build Landroidx/annotation/RecentlyNullable;
+    .end annotation
 
     iget-object v0, p0, Lcom/android/billingclient/api/ConsumeResult;->zzb:Ljava/lang/String;
 
@@ -105,6 +129,10 @@
 
 .method public final copy(Lcom/android/billingclient/api/BillingResult;Ljava/lang/String;)Lcom/android/billingclient/api/ConsumeResult;
     .locals 1
+    .param p1    # Lcom/android/billingclient/api/BillingResult;
+        .annotation build Landroidx/annotation/RecentlyNonNull;
+        .end annotation
+    .end param
 
     new-instance v0, Lcom/android/billingclient/api/ConsumeResult;
 
@@ -138,7 +166,7 @@
 
     iget-object v3, p1, Lcom/android/billingclient/api/ConsumeResult;->zza:Lcom/android/billingclient/api/BillingResult;
 
-    invoke-static {v1, v3}, Lrb/h;->d(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v1, v3}, Lkotlin/jvm/internal/h;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result v1
 
@@ -151,7 +179,7 @@
 
     iget-object p1, p1, Lcom/android/billingclient/api/ConsumeResult;->zzb:Ljava/lang/String;
 
-    invoke-static {v1, p1}, Lrb/h;->d(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v1, p1}, Lkotlin/jvm/internal/h;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result p1
 
@@ -173,6 +201,8 @@
 
 .method public final getPurchaseToken()Ljava/lang/String;
     .locals 1
+    .annotation build Landroidx/annotation/RecentlyNullable;
+    .end annotation
 
     iget-object v0, p0, Lcom/android/billingclient/api/ConsumeResult;->zzb:Ljava/lang/String;
 
@@ -252,7 +282,7 @@
 
     .line 21
     .line 22
-    invoke-static {v0, v1, v2}, Landroid/support/v4/media/session/a;->I(Ljava/lang/StringBuilder;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v0, v1, v2}, LB/u;->w(Ljava/lang/StringBuilder;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     .line 23
     .line 24

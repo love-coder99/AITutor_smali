@@ -24,23 +24,26 @@
 
 # direct methods
 .method public constructor <init>([B)V
-    .locals 0
+    .locals 1
 
     .line 1
-    invoke-direct {p0}, Landroidx/datastore/preferences/protobuf/ByteString$LeafByteString;-><init>()V
+    const/4 v0, 0x0
 
     .line 2
+    invoke-direct {p0, v0}, Landroidx/datastore/preferences/protobuf/ByteString$LeafByteString;-><init>(Landroidx/datastore/preferences/protobuf/f;)V
+
     .line 3
     .line 4
+    .line 5
     invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
-    .line 5
     .line 6
     .line 7
+    .line 8
     iput-object p1, p0, Landroidx/datastore/preferences/protobuf/ByteString$LiteralByteString;->bytes:[B
 
-    .line 8
     .line 9
+    .line 10
     return-void
 .end method
 
@@ -500,7 +503,7 @@
 
     .line 74
     .line 75
-    invoke-static {v1, p2, v2, p3, v2}, Landroid/support/v4/media/session/a;->L(Ljava/lang/String;ILjava/lang/String;ILjava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-static {p2, p3, v1, v2, v2}, Landroidx/appcompat/view/menu/F;->J(IILjava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     .line 76
     .line 77
@@ -639,14 +642,14 @@
     add-int/2addr v2, v0
 
     .line 12
-    sget-object v3, Landroidx/datastore/preferences/protobuf/k2;->a:Landroidx/datastore/preferences/protobuf/j2;
+    sget-object v3, Landroidx/datastore/preferences/protobuf/z0;->a:Landroidx/datastore/preferences/protobuf/y0;
 
     .line 13
     .line 14
     const/4 v4, 0x0
 
     .line 15
-    invoke-virtual {v3, v4, v0, v2, v1}, Landroidx/datastore/preferences/protobuf/j2;->W(III[B)I
+    invoke-virtual {v3, v4, v0, v2, v1}, Landroidx/datastore/preferences/protobuf/y0;->p(III[B)I
 
     .line 16
     .line 17
@@ -665,7 +668,7 @@
     return v4
 .end method
 
-.method public final newCodedInput()Landroidx/datastore/preferences/protobuf/q;
+.method public final newCodedInput()Landroidx/datastore/preferences/protobuf/r;
     .locals 4
 
     .line 1
@@ -692,7 +695,7 @@
     const/4 v3, 0x1
 
     .line 12
-    invoke-static {v0, v1, v2, v3}, Landroidx/datastore/preferences/protobuf/q;->e([BIIZ)Landroidx/datastore/preferences/protobuf/n;
+    invoke-static {v0, v1, v2, v3}, Landroidx/datastore/preferences/protobuf/r;->d([BIIZ)Landroidx/datastore/preferences/protobuf/n;
 
     .line 13
     .line 14
@@ -758,7 +761,7 @@
     add-int/2addr v1, p2
 
     .line 8
-    sget-object p2, Landroidx/datastore/preferences/protobuf/l0;->a:Ljava/nio/charset/Charset;
+    sget-object p2, Landroidx/datastore/preferences/protobuf/J;->a:Ljava/nio/charset/Charset;
 
     .line 9
     .line 10
@@ -818,11 +821,11 @@
     add-int/2addr p3, v0
 
     .line 9
-    sget-object v1, Landroidx/datastore/preferences/protobuf/k2;->a:Landroidx/datastore/preferences/protobuf/j2;
+    sget-object v1, Landroidx/datastore/preferences/protobuf/z0;->a:Landroidx/datastore/preferences/protobuf/y0;
 
     .line 10
     .line 11
-    invoke-virtual {v1, p1, v0, p3, p2}, Landroidx/datastore/preferences/protobuf/j2;->W(III[B)I
+    invoke-virtual {v1, p1, v0, p3, p2}, Landroidx/datastore/preferences/protobuf/y0;->p(III[B)I
 
     .line 12
     .line 13
@@ -942,7 +945,7 @@
     return-object v0
 .end method
 
-.method public final writeTo(Landroidx/datastore/preferences/protobuf/g;)V
+.method public final writeTo(Landroidx/datastore/preferences/protobuf/e;)V
     .locals 3
     .annotation system Ldalvik/annotation/Throws;
         value = {
@@ -950,9 +953,9 @@
         }
     .end annotation
 
+    .line 2
     iget-object v0, p0, Landroidx/datastore/preferences/protobuf/ByteString$LiteralByteString;->bytes:[B
 
-    .line 2
     invoke-virtual {p0}, Landroidx/datastore/preferences/protobuf/ByteString$LiteralByteString;->getOffsetIntoBytes()I
 
     move-result v1
@@ -961,7 +964,7 @@
 
     move-result v2
 
-    invoke-virtual {p1, v1, v2, v0}, Landroidx/datastore/preferences/protobuf/g;->a(II[B)V
+    invoke-virtual {p1, v1, v2, v0}, Landroidx/datastore/preferences/protobuf/e;->a(II[B)V
 
     return-void
 .end method

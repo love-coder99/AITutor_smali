@@ -20,14 +20,20 @@
 # direct methods
 .method public constructor <init>(Landroid/view/ViewGroup;)V
     .locals 1
+    .param p1    # Landroid/view/ViewGroup;
+        .annotation build Landroidx/annotation/NonNull;
+        .end annotation
+    .end param
 
     .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     const/4 v0, -0x1
 
+    .line 2
     iput v0, p0, Landroidx/transition/Scene;->mLayoutId:I
 
+    .line 3
     iput-object p1, p0, Landroidx/transition/Scene;->mSceneRoot:Landroid/view/ViewGroup;
 
     return-void
@@ -36,13 +42,16 @@
 .method private constructor <init>(Landroid/view/ViewGroup;ILandroid/content/Context;)V
     .locals 0
 
-    .line 2
+    .line 4
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
+    .line 5
     iput-object p3, p0, Landroidx/transition/Scene;->mContext:Landroid/content/Context;
 
+    .line 6
     iput-object p1, p0, Landroidx/transition/Scene;->mSceneRoot:Landroid/view/ViewGroup;
 
+    .line 7
     iput p2, p0, Landroidx/transition/Scene;->mLayoutId:I
 
     return-void
@@ -50,16 +59,27 @@
 
 .method public constructor <init>(Landroid/view/ViewGroup;Landroid/view/View;)V
     .locals 1
+    .param p1    # Landroid/view/ViewGroup;
+        .annotation build Landroidx/annotation/NonNull;
+        .end annotation
+    .end param
+    .param p2    # Landroid/view/View;
+        .annotation build Landroidx/annotation/NonNull;
+        .end annotation
+    .end param
 
-    .line 3
+    .line 8
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     const/4 v0, -0x1
 
+    .line 9
     iput v0, p0, Landroidx/transition/Scene;->mLayoutId:I
 
+    .line 10
     iput-object p1, p0, Landroidx/transition/Scene;->mSceneRoot:Landroid/view/ViewGroup;
 
+    .line 11
     iput-object p2, p0, Landroidx/transition/Scene;->mLayout:Landroid/view/View;
 
     return-void
@@ -67,6 +87,12 @@
 
 .method public static getCurrentScene(Landroid/view/ViewGroup;)Landroidx/transition/Scene;
     .locals 1
+    .param p0    # Landroid/view/ViewGroup;
+        .annotation build Landroidx/annotation/NonNull;
+        .end annotation
+    .end param
+    .annotation build Landroidx/annotation/Nullable;
+    .end annotation
 
     .line 1
     sget v0, Landroidx/transition/R$id;->transition_current_scene:I
@@ -90,6 +116,16 @@
 
 .method public static getSceneForLayout(Landroid/view/ViewGroup;ILandroid/content/Context;)Landroidx/transition/Scene;
     .locals 2
+    .param p0    # Landroid/view/ViewGroup;
+        .annotation build Landroidx/annotation/NonNull;
+        .end annotation
+    .end param
+    .param p2    # Landroid/content/Context;
+        .annotation build Landroidx/annotation/NonNull;
+        .end annotation
+    .end param
+    .annotation build Landroidx/annotation/NonNull;
+    .end annotation
 
     .line 1
     sget v0, Landroidx/transition/R$id;->transition_scene_layoutid_cache:I
@@ -170,6 +206,14 @@
 
 .method public static setCurrentScene(Landroid/view/ViewGroup;Landroidx/transition/Scene;)V
     .locals 1
+    .param p0    # Landroid/view/ViewGroup;
+        .annotation build Landroidx/annotation/NonNull;
+        .end annotation
+    .end param
+    .param p1    # Landroidx/transition/Scene;
+        .annotation build Landroidx/annotation/Nullable;
+        .end annotation
+    .end param
 
     .line 1
     sget v0, Landroidx/transition/R$id;->transition_current_scene:I
@@ -337,42 +381,69 @@
 
 .method public getSceneRoot()Landroid/view/ViewGroup;
     .locals 1
+    .annotation build Landroidx/annotation/NonNull;
+    .end annotation
 
+    .line 1
     iget-object v0, p0, Landroidx/transition/Scene;->mSceneRoot:Landroid/view/ViewGroup;
 
+    .line 2
+    .line 3
     return-object v0
 .end method
 
 .method public isCreatedFromLayoutResource()Z
     .locals 1
 
+    .line 1
     iget v0, p0, Landroidx/transition/Scene;->mLayoutId:I
 
+    .line 2
+    .line 3
     if-lez v0, :cond_0
 
+    .line 4
+    .line 5
     const/4 v0, 0x1
 
+    .line 6
     goto :goto_0
 
+    .line 7
     :cond_0
     const/4 v0, 0x0
 
+    .line 8
     :goto_0
     return v0
 .end method
 
 .method public setEnterAction(Ljava/lang/Runnable;)V
     .locals 0
+    .param p1    # Ljava/lang/Runnable;
+        .annotation build Landroidx/annotation/Nullable;
+        .end annotation
+    .end param
 
+    .line 1
     iput-object p1, p0, Landroidx/transition/Scene;->mEnterAction:Ljava/lang/Runnable;
 
+    .line 2
+    .line 3
     return-void
 .end method
 
 .method public setExitAction(Ljava/lang/Runnable;)V
     .locals 0
+    .param p1    # Ljava/lang/Runnable;
+        .annotation build Landroidx/annotation/Nullable;
+        .end annotation
+    .end param
 
+    .line 1
     iput-object p1, p0, Landroidx/transition/Scene;->mExitAction:Ljava/lang/Runnable;
 
+    .line 2
+    .line 3
     return-void
 .end method

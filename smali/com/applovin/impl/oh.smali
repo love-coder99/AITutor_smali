@@ -80,94 +80,164 @@
 .method public constructor <init>(Lcom/applovin/impl/fo;Lcom/applovin/impl/ae$a;JJILcom/applovin/impl/z7;ZLcom/applovin/impl/po;Lcom/applovin/impl/wo;Ljava/util/List;Lcom/applovin/impl/ae$a;ZILcom/applovin/impl/ph;JJJZZ)V
     .locals 3
 
+    .line 1
     move-object v0, p0
 
-    .line 1
+    .line 2
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
+    .line 3
+    .line 4
+    .line 5
     move-object v1, p1
 
+    .line 6
     iput-object v1, v0, Lcom/applovin/impl/oh;->a:Lcom/applovin/impl/fo;
 
+    .line 7
+    .line 8
     move-object v1, p2
 
+    .line 9
     iput-object v1, v0, Lcom/applovin/impl/oh;->b:Lcom/applovin/impl/ae$a;
 
+    .line 10
+    .line 11
     move-wide v1, p3
 
+    .line 12
     iput-wide v1, v0, Lcom/applovin/impl/oh;->c:J
 
+    .line 13
+    .line 14
     move-wide v1, p5
 
+    .line 15
     iput-wide v1, v0, Lcom/applovin/impl/oh;->d:J
 
+    .line 16
+    .line 17
     move v1, p7
 
+    .line 18
     iput v1, v0, Lcom/applovin/impl/oh;->e:I
 
+    .line 19
+    .line 20
     move-object v1, p8
 
+    .line 21
     iput-object v1, v0, Lcom/applovin/impl/oh;->f:Lcom/applovin/impl/z7;
 
+    .line 22
+    .line 23
     move v1, p9
 
+    .line 24
     iput-boolean v1, v0, Lcom/applovin/impl/oh;->g:Z
 
+    .line 25
+    .line 26
     move-object v1, p10
 
+    .line 27
     iput-object v1, v0, Lcom/applovin/impl/oh;->h:Lcom/applovin/impl/po;
 
+    .line 28
+    .line 29
     move-object v1, p11
 
+    .line 30
     iput-object v1, v0, Lcom/applovin/impl/oh;->i:Lcom/applovin/impl/wo;
 
+    .line 31
+    .line 32
     move-object v1, p12
 
+    .line 33
     iput-object v1, v0, Lcom/applovin/impl/oh;->j:Ljava/util/List;
 
+    .line 34
+    .line 35
     move-object/from16 v1, p13
 
+    .line 36
+    .line 37
     iput-object v1, v0, Lcom/applovin/impl/oh;->k:Lcom/applovin/impl/ae$a;
 
+    .line 38
+    .line 39
     move/from16 v1, p14
 
+    .line 40
+    .line 41
     iput-boolean v1, v0, Lcom/applovin/impl/oh;->l:Z
 
+    .line 42
+    .line 43
     move/from16 v1, p15
 
+    .line 44
+    .line 45
     iput v1, v0, Lcom/applovin/impl/oh;->m:I
 
+    .line 46
+    .line 47
     move-object/from16 v1, p16
 
+    .line 48
+    .line 49
     iput-object v1, v0, Lcom/applovin/impl/oh;->n:Lcom/applovin/impl/ph;
 
+    .line 50
+    .line 51
     move-wide/from16 v1, p17
 
+    .line 52
+    .line 53
     iput-wide v1, v0, Lcom/applovin/impl/oh;->q:J
 
+    .line 54
+    .line 55
     move-wide/from16 v1, p19
 
+    .line 56
+    .line 57
     iput-wide v1, v0, Lcom/applovin/impl/oh;->r:J
 
+    .line 58
+    .line 59
     move-wide/from16 v1, p21
 
+    .line 60
+    .line 61
     iput-wide v1, v0, Lcom/applovin/impl/oh;->s:J
 
+    .line 62
+    .line 63
     move/from16 v1, p23
 
+    .line 64
+    .line 65
     iput-boolean v1, v0, Lcom/applovin/impl/oh;->o:Z
 
+    .line 66
+    .line 67
     move/from16 v1, p24
 
+    .line 68
+    .line 69
     iput-boolean v1, v0, Lcom/applovin/impl/oh;->p:Z
 
+    .line 70
+    .line 71
     return-void
 .end method
 
 .method public static a()Lcom/applovin/impl/ae$a;
     .locals 1
 
-    .line 1
+    .line 3
     sget-object v0, Lcom/applovin/impl/oh;->t:Lcom/applovin/impl/ae$a;
 
     return-object v0
@@ -178,7 +248,7 @@
 
     move-object/from16 v11, p0
 
-    .line 2
+    .line 1
     new-instance v25, Lcom/applovin/impl/oh;
 
     move-object/from16 v0, v25
@@ -191,12 +261,16 @@
 
     sget-object v10, Lcom/applovin/impl/po;->d:Lcom/applovin/impl/po;
 
-    .line 3
+    .line 2
     invoke-static {}, Lcom/applovin/impl/db;->h()Lcom/applovin/impl/db;
 
     move-result-object v12
 
     sget-object v16, Lcom/applovin/impl/ph;->d:Lcom/applovin/impl/ph;
+
+    const/16 v23, 0x0
+
+    const/16 v24, 0x0
 
     const-wide v3, -0x7fffffffffffffffL    # -4.9E-324
 
@@ -217,10 +291,6 @@
     const-wide/16 v19, 0x0
 
     const-wide/16 v21, 0x0
-
-    const/16 v23, 0x0
-
-    const/16 v24, 0x0
 
     invoke-direct/range {v0 .. v24}, Lcom/applovin/impl/oh;-><init>(Lcom/applovin/impl/fo;Lcom/applovin/impl/ae$a;JJILcom/applovin/impl/z7;ZLcom/applovin/impl/po;Lcom/applovin/impl/wo;Ljava/util/List;Lcom/applovin/impl/ae$a;ZILcom/applovin/impl/ph;JJJZZ)V
 

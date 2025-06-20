@@ -1,113 +1,201 @@
-.class public abstract Landroidx/datastore/preferences/protobuf/d;
+.class public abstract synthetic Landroidx/datastore/preferences/protobuf/D;
 .super Ljava/lang/Object;
 .source "SourceFile"
 
 
 # static fields
-.field public static final a:Ljava/lang/Class;
+.field public static final synthetic a:[I
 
-.field public static final b:Z
+.field public static final synthetic b:[I
 
 
 # direct methods
 .method static constructor <clinit>()V
-    .locals 2
+    .locals 5
 
     .line 1
-    const-string v0, "libcore.io.Memory"
+    invoke-static {}, Landroidx/datastore/preferences/protobuf/JavaType;->values()[Landroidx/datastore/preferences/protobuf/JavaType;
 
     .line 2
     .line 3
-    const/4 v1, 0x0
-
     .line 4
-    :try_start_0
-    invoke-static {v0}, Ljava/lang/Class;->forName(Ljava/lang/String;)Ljava/lang/Class;
+    move-result-object v0
 
     .line 5
-    .line 6
-    .line 7
-    move-result-object v0
-    :try_end_0
-    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+    array-length v0, v0
 
+    .line 6
+    new-array v0, v0, [I
+
+    .line 7
     .line 8
-    goto :goto_0
+    sput-object v0, Landroidx/datastore/preferences/protobuf/D;->b:[I
 
     .line 9
-    :catchall_0
-    move-object v0, v1
-
     .line 10
-    :goto_0
-    sput-object v0, Landroidx/datastore/preferences/protobuf/d;->a:Ljava/lang/Class;
+    const/4 v1, 0x1
 
     .line 11
+    :try_start_0
+    sget-object v2, Landroidx/datastore/preferences/protobuf/JavaType;->BYTE_STRING:Landroidx/datastore/preferences/protobuf/JavaType;
+
     .line 12
-    const-string v0, "org.robolectric.Robolectric"
-
     .line 13
-    .line 14
-    :try_start_1
-    invoke-static {v0}, Ljava/lang/Class;->forName(Ljava/lang/String;)Ljava/lang/Class;
+    invoke-virtual {v2}, Ljava/lang/Enum;->ordinal()I
 
+    .line 14
     .line 15
     .line 16
+    move-result v2
+
     .line 17
-    move-result-object v1
-    :try_end_1
-    .catchall {:try_start_1 .. :try_end_1} :catchall_1
+    aput v1, v0, v2
+    :try_end_0
+    .catch Ljava/lang/NoSuchFieldError; {:try_start_0 .. :try_end_0} :catch_0
 
     .line 18
-    goto :goto_1
-
     .line 19
-    :catchall_1
-    nop
+    :catch_0
+    const/4 v0, 0x2
 
     .line 20
-    :goto_1
-    if-eqz v1, :cond_0
+    :try_start_1
+    sget-object v2, Landroidx/datastore/preferences/protobuf/D;->b:[I
 
     .line 21
     .line 22
-    const/4 v0, 0x1
+    sget-object v3, Landroidx/datastore/preferences/protobuf/JavaType;->MESSAGE:Landroidx/datastore/preferences/protobuf/JavaType;
 
     .line 23
-    goto :goto_2
-
     .line 24
-    :cond_0
-    const/4 v0, 0x0
+    invoke-virtual {v3}, Ljava/lang/Enum;->ordinal()I
 
     .line 25
-    :goto_2
-    sput-boolean v0, Landroidx/datastore/preferences/protobuf/d;->b:Z
-
     .line 26
     .line 27
+    move-result v3
+
+    .line 28
+    aput v0, v2, v3
+    :try_end_1
+    .catch Ljava/lang/NoSuchFieldError; {:try_start_1 .. :try_end_1} :catch_1
+
+    .line 29
+    .line 30
+    :catch_1
+    const/4 v2, 0x3
+
+    .line 31
+    :try_start_2
+    sget-object v3, Landroidx/datastore/preferences/protobuf/D;->b:[I
+
+    .line 32
+    .line 33
+    sget-object v4, Landroidx/datastore/preferences/protobuf/JavaType;->STRING:Landroidx/datastore/preferences/protobuf/JavaType;
+
+    .line 34
+    .line 35
+    invoke-virtual {v4}, Ljava/lang/Enum;->ordinal()I
+
+    .line 36
+    .line 37
+    .line 38
+    move-result v4
+
+    .line 39
+    aput v2, v3, v4
+    :try_end_2
+    .catch Ljava/lang/NoSuchFieldError; {:try_start_2 .. :try_end_2} :catch_2
+
+    .line 40
+    .line 41
+    :catch_2
+    invoke-static {}, Landroidx/datastore/preferences/protobuf/FieldType$Collection;->values()[Landroidx/datastore/preferences/protobuf/FieldType$Collection;
+
+    .line 42
+    .line 43
+    .line 44
+    move-result-object v3
+
+    .line 45
+    array-length v3, v3
+
+    .line 46
+    new-array v3, v3, [I
+
+    .line 47
+    .line 48
+    sput-object v3, Landroidx/datastore/preferences/protobuf/D;->a:[I
+
+    .line 49
+    .line 50
+    :try_start_3
+    sget-object v4, Landroidx/datastore/preferences/protobuf/FieldType$Collection;->MAP:Landroidx/datastore/preferences/protobuf/FieldType$Collection;
+
+    .line 51
+    .line 52
+    invoke-virtual {v4}, Ljava/lang/Enum;->ordinal()I
+
+    .line 53
+    .line 54
+    .line 55
+    move-result v4
+
+    .line 56
+    aput v1, v3, v4
+    :try_end_3
+    .catch Ljava/lang/NoSuchFieldError; {:try_start_3 .. :try_end_3} :catch_3
+
+    .line 57
+    .line 58
+    :catch_3
+    :try_start_4
+    sget-object v1, Landroidx/datastore/preferences/protobuf/D;->a:[I
+
+    .line 59
+    .line 60
+    sget-object v3, Landroidx/datastore/preferences/protobuf/FieldType$Collection;->VECTOR:Landroidx/datastore/preferences/protobuf/FieldType$Collection;
+
+    .line 61
+    .line 62
+    invoke-virtual {v3}, Ljava/lang/Enum;->ordinal()I
+
+    .line 63
+    .line 64
+    .line 65
+    move-result v3
+
+    .line 66
+    aput v0, v1, v3
+    :try_end_4
+    .catch Ljava/lang/NoSuchFieldError; {:try_start_4 .. :try_end_4} :catch_4
+
+    .line 67
+    .line 68
+    :catch_4
+    :try_start_5
+    sget-object v0, Landroidx/datastore/preferences/protobuf/D;->a:[I
+
+    .line 69
+    .line 70
+    sget-object v1, Landroidx/datastore/preferences/protobuf/FieldType$Collection;->SCALAR:Landroidx/datastore/preferences/protobuf/FieldType$Collection;
+
+    .line 71
+    .line 72
+    invoke-virtual {v1}, Ljava/lang/Enum;->ordinal()I
+
+    .line 73
+    .line 74
+    .line 75
+    move-result v1
+
+    .line 76
+    aput v2, v0, v1
+    :try_end_5
+    .catch Ljava/lang/NoSuchFieldError; {:try_start_5 .. :try_end_5} :catch_5
+
+    .line 77
+    .line 78
+    :catch_5
     return-void
-.end method
-
-.method public static a()Z
-    .locals 1
-
-    .line 1
-    sget-object v0, Landroidx/datastore/preferences/protobuf/d;->a:Ljava/lang/Class;
-
-    if-eqz v0, :cond_0
-
-    sget-boolean v0, Landroidx/datastore/preferences/protobuf/d;->b:Z
-
-    if-nez v0, :cond_0
-
-    const/4 v0, 0x1
-
-    goto :goto_0
-
-    :cond_0
-    const/4 v0, 0x0
-
-    :goto_0
-    return v0
 .end method

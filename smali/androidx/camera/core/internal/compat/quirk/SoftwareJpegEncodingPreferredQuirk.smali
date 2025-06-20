@@ -3,4 +3,4 @@
 .source "SourceFile"
 
 # interfaces
-.implements Landroidx/camera/core/impl/o1;
+.implements Landroidx/camera/core/impl/i0;

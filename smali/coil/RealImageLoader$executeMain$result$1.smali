@@ -3,25 +3,35 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lzh/e;
+.implements Lka/e;
 
 
 # annotations
+.annotation runtime Lca/c;
+    c = "coil.RealImageLoader$executeMain$result$1"
+    f = "RealImageLoader.kt"
+    l = {
+        0xbb
+    }
+    m = "invokeSuspend"
+.end annotation
+
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "Lkotlin/coroutines/jvm/internal/SuspendLambda;",
-        "Lzh/e;"
+        "Lka/e;"
     }
 .end annotation
 
 .annotation runtime Lkotlin/Metadata;
     d1 = {
-        "\u0000\n\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\u0010\u0002\u001a\u00020\u0001*\u00020\u0000H\u008a@"
+        "\u0000\u000c\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0008\u0002\u0010\u0002\u001a\u00020\u0001*\u00020\u0000H\u008a@\u00a2\u0006\u0004\u0008\u0002\u0010\u0003"
     }
     d2 = {
-        "Lkotlinx/coroutines/w;",
-        "Ln5/j;",
-        "<anonymous>"
+        "Lkotlinx/coroutines/u;",
+        "LH2/i;",
+        "<anonymous>",
+        "(Lkotlinx/coroutines/u;)LH2/i;"
     }
     k = 0x3
     mv = {
@@ -31,24 +41,15 @@
     }
 .end annotation
 
-.annotation runtime Lth/c;
-    c = "coil.RealImageLoader$executeMain$result$1"
-    f = "RealImageLoader.kt"
-    l = {
-        0xbb
-    }
-    m = "invokeSuspend"
-.end annotation
-
 
 # instance fields
-.field final synthetic $eventListener:Lcoil/e;
+.field final synthetic $eventListener:Lcoil/d;
 
 .field final synthetic $placeholderBitmap:Landroid/graphics/Bitmap;
 
-.field final synthetic $request:Ln5/i;
+.field final synthetic $request:LH2/h;
 
-.field final synthetic $size:Lo5/e;
+.field final synthetic $size:LI2/e;
 
 .field label:I
 
@@ -56,15 +57,15 @@
 
 
 # direct methods
-.method public constructor <init>(Ln5/i;Lcoil/i;Lo5/e;Lcoil/e;Landroid/graphics/Bitmap;Lkotlin/coroutines/Continuation;)V
+.method public constructor <init>(LH2/h;Lcoil/i;LI2/e;Lcoil/d;Landroid/graphics/Bitmap;Lkotlin/coroutines/Continuation;)V
     .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
-            "Ln5/i;",
+            "LH2/h;",
             "Lcoil/i;",
-            "Lo5/e;",
-            "Lcoil/e;",
+            "LI2/e;",
+            "Lcoil/d;",
             "Landroid/graphics/Bitmap;",
             "Lkotlin/coroutines/Continuation<",
             "-",
@@ -74,20 +75,34 @@
     .end annotation
 
     .line 1
-    iput-object p1, p0, Lcoil/RealImageLoader$executeMain$result$1;->$request:Ln5/i;
+    iput-object p1, p0, Lcoil/RealImageLoader$executeMain$result$1;->$request:LH2/h;
 
+    .line 2
+    .line 3
     iput-object p2, p0, Lcoil/RealImageLoader$executeMain$result$1;->this$0:Lcoil/i;
 
-    iput-object p3, p0, Lcoil/RealImageLoader$executeMain$result$1;->$size:Lo5/e;
+    .line 4
+    .line 5
+    iput-object p3, p0, Lcoil/RealImageLoader$executeMain$result$1;->$size:LI2/e;
 
-    iput-object p4, p0, Lcoil/RealImageLoader$executeMain$result$1;->$eventListener:Lcoil/e;
+    .line 6
+    .line 7
+    iput-object p4, p0, Lcoil/RealImageLoader$executeMain$result$1;->$eventListener:Lcoil/d;
 
+    .line 8
+    .line 9
     iput-object p5, p0, Lcoil/RealImageLoader$executeMain$result$1;->$placeholderBitmap:Landroid/graphics/Bitmap;
 
+    .line 10
+    .line 11
     const/4 p1, 0x2
 
+    .line 12
     invoke-direct {p0, p1, p6}, Lkotlin/coroutines/jvm/internal/SuspendLambda;-><init>(ILkotlin/coroutines/Continuation;)V
 
+    .line 13
+    .line 14
+    .line 15
     return-void
 .end method
 
@@ -102,20 +117,20 @@
             "Lkotlin/coroutines/Continuation<",
             "*>;)",
             "Lkotlin/coroutines/Continuation<",
-            "Lqh/r;",
+            "LX9/j;",
             ">;"
         }
     .end annotation
 
     new-instance p1, Lcoil/RealImageLoader$executeMain$result$1;
 
-    iget-object v1, p0, Lcoil/RealImageLoader$executeMain$result$1;->$request:Ln5/i;
+    iget-object v1, p0, Lcoil/RealImageLoader$executeMain$result$1;->$request:LH2/h;
 
     iget-object v2, p0, Lcoil/RealImageLoader$executeMain$result$1;->this$0:Lcoil/i;
 
-    iget-object v3, p0, Lcoil/RealImageLoader$executeMain$result$1;->$size:Lo5/e;
+    iget-object v3, p0, Lcoil/RealImageLoader$executeMain$result$1;->$size:LI2/e;
 
-    iget-object v4, p0, Lcoil/RealImageLoader$executeMain$result$1;->$eventListener:Lcoil/e;
+    iget-object v4, p0, Lcoil/RealImageLoader$executeMain$result$1;->$eventListener:Lcoil/d;
 
     iget-object v5, p0, Lcoil/RealImageLoader$executeMain$result$1;->$placeholderBitmap:Landroid/graphics/Bitmap;
 
@@ -123,7 +138,7 @@
 
     move-object v6, p2
 
-    invoke-direct/range {v0 .. v6}, Lcoil/RealImageLoader$executeMain$result$1;-><init>(Ln5/i;Lcoil/i;Lo5/e;Lcoil/e;Landroid/graphics/Bitmap;Lkotlin/coroutines/Continuation;)V
+    invoke-direct/range {v0 .. v6}, Lcoil/RealImageLoader$executeMain$result$1;-><init>(LH2/h;Lcoil/i;LI2/e;Lcoil/d;Landroid/graphics/Bitmap;Lkotlin/coroutines/Continuation;)V
 
     return-object p1
 .end method
@@ -132,26 +147,26 @@
     .locals 0
 
     .line 1
-    check-cast p1, Lkotlinx/coroutines/w;
+    check-cast p1, Lkotlinx/coroutines/u;
 
     check-cast p2, Lkotlin/coroutines/Continuation;
 
-    invoke-virtual {p0, p1, p2}, Lcoil/RealImageLoader$executeMain$result$1;->invoke(Lkotlinx/coroutines/w;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
+    invoke-virtual {p0, p1, p2}, Lcoil/RealImageLoader$executeMain$result$1;->invoke(Lkotlinx/coroutines/u;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
 
     move-result-object p1
 
     return-object p1
 .end method
 
-.method public final invoke(Lkotlinx/coroutines/w;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
+.method public final invoke(Lkotlinx/coroutines/u;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
     .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
-            "Lkotlinx/coroutines/w;",
+            "Lkotlinx/coroutines/u;",
             "Lkotlin/coroutines/Continuation<",
             "-",
-            "Ln5/j;",
+            "LH2/i;",
             ">;)",
             "Ljava/lang/Object;"
         }
@@ -164,7 +179,7 @@
 
     check-cast p1, Lcoil/RealImageLoader$executeMain$result$1;
 
-    sget-object p2, Lqh/r;->a:Lqh/r;
+    sget-object p2, LX9/j;->a:LX9/j;
 
     invoke-virtual {p1, p2}, Lcoil/RealImageLoader$executeMain$result$1;->invokeSuspend(Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -227,11 +242,11 @@
     .line 23
     .line 24
     .line 25
-    new-instance p1, Lcoil/intercept/e;
+    new-instance p1, Lcoil/intercept/d;
 
     .line 26
     .line 27
-    iget-object v1, p0, Lcoil/RealImageLoader$executeMain$result$1;->$request:Ln5/i;
+    iget-object v1, p0, Lcoil/RealImageLoader$executeMain$result$1;->$request:LH2/h;
 
     .line 28
     .line 29
@@ -243,39 +258,39 @@
 
     .line 32
     .line 33
-    const/4 v6, 0x0
+    iget-object v8, p0, Lcoil/RealImageLoader$executeMain$result$1;->$size:LI2/e;
 
     .line 34
-    iget-object v8, p0, Lcoil/RealImageLoader$executeMain$result$1;->$size:Lo5/e;
-
     .line 35
-    .line 36
-    iget-object v9, p0, Lcoil/RealImageLoader$executeMain$result$1;->$eventListener:Lcoil/e;
+    iget-object v9, p0, Lcoil/RealImageLoader$executeMain$result$1;->$eventListener:Lcoil/d;
 
+    .line 36
     .line 37
-    .line 38
     iget-object v3, p0, Lcoil/RealImageLoader$executeMain$result$1;->$placeholderBitmap:Landroid/graphics/Bitmap;
 
+    .line 38
     .line 39
-    .line 40
     if-eqz v3, :cond_2
 
+    .line 40
     .line 41
-    .line 42
     const/4 v10, 0x1
 
-    .line 43
+    .line 42
     goto :goto_0
 
-    .line 44
+    .line 43
     :cond_2
     const/4 v3, 0x0
 
-    .line 45
+    .line 44
     const/4 v10, 0x0
 
-    .line 46
+    .line 45
     :goto_0
+    const/4 v6, 0x0
+
+    .line 46
     move-object v3, p1
 
     .line 47
@@ -285,7 +300,7 @@
     move-object v7, v1
 
     .line 49
-    invoke-direct/range {v3 .. v10}, Lcoil/intercept/e;-><init>(Ln5/i;Ljava/util/List;ILn5/i;Lo5/e;Lcoil/e;Z)V
+    invoke-direct/range {v3 .. v10}, Lcoil/intercept/d;-><init>(LH2/h;Ljava/util/ArrayList;ILH2/h;LI2/e;Lcoil/d;Z)V
 
     .line 50
     .line 51
@@ -294,7 +309,7 @@
 
     .line 53
     .line 54
-    invoke-virtual {p1, v1, p0}, Lcoil/intercept/e;->b(Ln5/i;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
+    invoke-virtual {p1, v1, p0}, Lcoil/intercept/d;->b(LH2/h;Lkotlin/coroutines/jvm/internal/ContinuationImpl;)Ljava/lang/Object;
 
     .line 55
     .line 56

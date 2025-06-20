@@ -79,9 +79,9 @@
 
     if-nez p1, :cond_0
 
+    .line 3
     const-string v1, "none"
 
-    .line 3
     invoke-virtual {v0, v1}, Ljava/util/HashSet;->add(Ljava/lang/Object;)Z
 
     :cond_0
@@ -89,9 +89,9 @@
 
     if-ne p1, v1, :cond_1
 
+    .line 4
     const-string v1, "beginning"
 
-    .line 4
     invoke-virtual {v0, v1}, Ljava/util/HashSet;->add(Ljava/lang/Object;)Z
 
     :cond_1
@@ -99,9 +99,9 @@
 
     if-ne p1, v1, :cond_2
 
+    .line 5
     const-string v1, "middle"
 
-    .line 5
     invoke-virtual {v0, v1}, Ljava/util/HashSet;->add(Ljava/lang/Object;)Z
 
     :cond_2
@@ -109,9 +109,9 @@
 
     if-ne p1, v1, :cond_3
 
+    .line 6
     const-string p1, "end"
 
-    .line 6
     invoke-virtual {v0, p1}, Ljava/util/HashSet;->add(Ljava/lang/Object;)Z
 
     :cond_3

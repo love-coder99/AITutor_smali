@@ -3,14 +3,14 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lzh/c;
+.implements Lka/c;
 
 
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "Lkotlin/jvm/internal/Lambda;",
-        "Lzh/c;"
+        "Lka/c;"
     }
 .end annotation
 
@@ -19,10 +19,10 @@
         "\u0000\u000c\n\u0002\u0018\u0002\n\u0002\u0010\u000b\n\u0002\u0008\u0003\u0010\u0004\u001a\u0004\u0018\u00010\u0001*\u00020\u0000H\n\u00a2\u0006\u0004\u0008\u0002\u0010\u0003"
     }
     d2 = {
-        "Landroidx/compose/ui/layout/e;",
+        "Landroidx/compose/ui/layout/c;",
         "",
         "invoke",
-        "(Landroidx/compose/ui/layout/e;)Ljava/lang/Boolean;",
+        "(Landroidx/compose/ui/layout/c;)Ljava/lang/Boolean;",
         "<anonymous>"
     }
     k = 0x3
@@ -37,12 +37,12 @@
 # instance fields
 .field final synthetic $direction:I
 
-.field final synthetic $focusedItem:Ln1/e;
+.field final synthetic $focusedItem:Lr0/d;
 
-.field final synthetic $onFound:Lzh/c;
+.field final synthetic $onFound:Lka/c;
     .annotation system Ldalvik/annotation/Signature;
         value = {
-            "Lzh/c;"
+            "Lka/c;"
         }
     .end annotation
 .end field
@@ -51,15 +51,15 @@
 
 
 # direct methods
-.method public constructor <init>(Landroidx/compose/ui/focus/w;Ln1/e;ILzh/c;)V
+.method public constructor <init>(Landroidx/compose/ui/focus/w;Lr0/d;ILka/c;)V
     .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
             "Landroidx/compose/ui/focus/w;",
-            "Ln1/e;",
+            "Lr0/d;",
             "I",
-            "Lzh/c;",
+            "Lka/c;",
             ")V"
         }
     .end annotation
@@ -67,50 +67,59 @@
     .line 1
     iput-object p1, p0, Landroidx/compose/ui/focus/TwoDimensionalFocusSearchKt$generateAndSearchChildren$1;->$this_generateAndSearchChildren:Landroidx/compose/ui/focus/w;
 
-    iput-object p2, p0, Landroidx/compose/ui/focus/TwoDimensionalFocusSearchKt$generateAndSearchChildren$1;->$focusedItem:Ln1/e;
+    .line 2
+    .line 3
+    iput-object p2, p0, Landroidx/compose/ui/focus/TwoDimensionalFocusSearchKt$generateAndSearchChildren$1;->$focusedItem:Lr0/d;
 
+    .line 4
+    .line 5
     iput p3, p0, Landroidx/compose/ui/focus/TwoDimensionalFocusSearchKt$generateAndSearchChildren$1;->$direction:I
 
-    iput-object p4, p0, Landroidx/compose/ui/focus/TwoDimensionalFocusSearchKt$generateAndSearchChildren$1;->$onFound:Lzh/c;
+    .line 6
+    .line 7
+    iput-object p4, p0, Landroidx/compose/ui/focus/TwoDimensionalFocusSearchKt$generateAndSearchChildren$1;->$onFound:Lka/c;
 
+    .line 8
+    .line 9
     const/4 p1, 0x1
 
+    .line 10
     invoke-direct {p0, p1}, Lkotlin/jvm/internal/Lambda;-><init>(I)V
 
+    .line 11
+    .line 12
+    .line 13
     return-void
 .end method
 
 
 # virtual methods
-.method public final invoke(Landroidx/compose/ui/layout/e;)Ljava/lang/Boolean;
+.method public final invoke(Landroidx/compose/ui/layout/c;)Ljava/lang/Boolean;
     .locals 4
 
+    .line 2
     iget-object v0, p0, Landroidx/compose/ui/focus/TwoDimensionalFocusSearchKt$generateAndSearchChildren$1;->$this_generateAndSearchChildren:Landroidx/compose/ui/focus/w;
 
-    iget-object v1, p0, Landroidx/compose/ui/focus/TwoDimensionalFocusSearchKt$generateAndSearchChildren$1;->$focusedItem:Ln1/e;
+    iget-object v1, p0, Landroidx/compose/ui/focus/TwoDimensionalFocusSearchKt$generateAndSearchChildren$1;->$focusedItem:Lr0/d;
 
     iget v2, p0, Landroidx/compose/ui/focus/TwoDimensionalFocusSearchKt$generateAndSearchChildren$1;->$direction:I
 
-    iget-object v3, p0, Landroidx/compose/ui/focus/TwoDimensionalFocusSearchKt$generateAndSearchChildren$1;->$onFound:Lzh/c;
+    iget-object v3, p0, Landroidx/compose/ui/focus/TwoDimensionalFocusSearchKt$generateAndSearchChildren$1;->$onFound:Lka/c;
 
-    .line 1
-    invoke-static {v0, v1, v2, v3}, Landroidx/compose/ui/focus/a;->L(Landroidx/compose/ui/focus/w;Ln1/e;ILzh/c;)Z
+    .line 3
+    invoke-static {v0, v1, v2, v3}, Landroidx/compose/ui/focus/a;->L(Landroidx/compose/ui/focus/w;Lr0/d;ILka/c;)Z
 
     move-result v0
 
-    .line 2
+    .line 4
     invoke-static {v0}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
 
-    move-result-object v0
+    move-result-object v1
 
-    invoke-virtual {v0}, Ljava/lang/Boolean;->booleanValue()Z
+    if-nez v0, :cond_1
 
-    move-result v1
-
-    if-nez v1, :cond_1
-
-    .line 3
-    invoke-interface {p1}, Landroidx/compose/ui/layout/e;->a()Z
+    .line 5
+    invoke-interface {p1}, Landroidx/compose/ui/layout/c;->a()Z
 
     move-result p1
 
@@ -119,20 +128,20 @@
     goto :goto_0
 
     :cond_0
-    const/4 v0, 0x0
+    const/4 v1, 0x0
 
     :cond_1
     :goto_0
-    return-object v0
+    return-object v1
 .end method
 
 .method public bridge synthetic invoke(Ljava/lang/Object;)Ljava/lang/Object;
     .locals 0
 
-    .line 4
-    check-cast p1, Landroidx/compose/ui/layout/e;
+    .line 1
+    check-cast p1, Landroidx/compose/ui/layout/c;
 
-    invoke-virtual {p0, p1}, Landroidx/compose/ui/focus/TwoDimensionalFocusSearchKt$generateAndSearchChildren$1;->invoke(Landroidx/compose/ui/layout/e;)Ljava/lang/Boolean;
+    invoke-virtual {p0, p1}, Landroidx/compose/ui/focus/TwoDimensionalFocusSearchKt$generateAndSearchChildren$1;->invoke(Landroidx/compose/ui/layout/c;)Ljava/lang/Boolean;
 
     move-result-object p1
 

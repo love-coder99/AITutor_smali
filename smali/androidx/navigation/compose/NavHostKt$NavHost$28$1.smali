@@ -3,59 +3,60 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lzh/e;
+.implements Lka/e;
 
 
 # annotations
+.annotation runtime Lca/c;
+    c = "androidx.navigation.compose.NavHostKt$NavHost$28$1"
+    f = "NavHost.kt"
+    l = {
+        0x26c
+    }
+    m = "invokeSuspend"
+.end annotation
+
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "Lkotlin/coroutines/jvm/internal/SuspendLambda;",
-        "Lzh/e;"
+        "Lka/e;"
     }
 .end annotation
 
 .annotation runtime Lkotlin/Metadata;
     d1 = {
-        "\u0000\n\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\u0010\u0002\u001a\u00020\u0001*\u00020\u0000H\u008a@"
+        "\u0000\u000c\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0008\u0002\u0010\u0002\u001a\u00020\u0001*\u00020\u0000H\n\u00a2\u0006\u0004\u0008\u0002\u0010\u0003"
     }
     d2 = {
-        "Lkotlinx/coroutines/w;",
-        "Lqh/r;",
-        "<anonymous>"
+        "Lkotlinx/coroutines/u;",
+        "LX9/j;",
+        "<anonymous>",
+        "(Lkotlinx/coroutines/u;)V"
     }
     k = 0x3
     mv = {
-        0x1,
-        0x8,
+        0x2,
+        0x0,
         0x0
     }
 .end annotation
 
-.annotation runtime Lth/c;
-    c = "androidx.navigation.compose.NavHostKt$NavHost$28$1"
-    f = "NavHost.kt"
-    l = {
-        0x26d
-    }
-    m = "invokeSuspend"
-.end annotation
-
 
 # instance fields
-.field final synthetic $currentBackStack$delegate:Landroidx/compose/runtime/d3;
+.field final synthetic $currentBackStack$delegate:Landroidx/compose/runtime/H0;
     .annotation system Ldalvik/annotation/Signature;
         value = {
-            "Landroidx/compose/runtime/d3;"
+            "Landroidx/compose/runtime/H0;"
         }
     .end annotation
 .end field
 
-.field final synthetic $progress$delegate:Landroidx/compose/runtime/g1;
+.field final synthetic $progress$delegate:Landroidx/compose/runtime/X;
 
-.field final synthetic $transitionState:Landroidx/compose/animation/core/s0;
+.field final synthetic $transitionState:Landroidx/compose/animation/core/M;
     .annotation system Ldalvik/annotation/Signature;
         value = {
-            "Landroidx/compose/animation/core/s0;"
+            "Landroidx/compose/animation/core/M;"
         }
     .end annotation
 .end field
@@ -64,14 +65,14 @@
 
 
 # direct methods
-.method public constructor <init>(Landroidx/compose/animation/core/s0;Landroidx/compose/runtime/d3;Landroidx/compose/runtime/g1;Lkotlin/coroutines/Continuation;)V
+.method public constructor <init>(Landroidx/compose/animation/core/M;Landroidx/compose/runtime/H0;Landroidx/compose/runtime/X;Lkotlin/coroutines/Continuation;)V
     .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
-            "Landroidx/compose/animation/core/s0;",
-            "Landroidx/compose/runtime/d3;",
-            "Landroidx/compose/runtime/g1;",
+            "Landroidx/compose/animation/core/M;",
+            "Landroidx/compose/runtime/H0;",
+            "Landroidx/compose/runtime/X;",
             "Lkotlin/coroutines/Continuation<",
             "-",
             "Landroidx/navigation/compose/NavHostKt$NavHost$28$1;",
@@ -79,11 +80,11 @@
         }
     .end annotation
 
-    iput-object p1, p0, Landroidx/navigation/compose/NavHostKt$NavHost$28$1;->$transitionState:Landroidx/compose/animation/core/s0;
+    iput-object p1, p0, Landroidx/navigation/compose/NavHostKt$NavHost$28$1;->$transitionState:Landroidx/compose/animation/core/M;
 
-    iput-object p2, p0, Landroidx/navigation/compose/NavHostKt$NavHost$28$1;->$currentBackStack$delegate:Landroidx/compose/runtime/d3;
+    iput-object p2, p0, Landroidx/navigation/compose/NavHostKt$NavHost$28$1;->$currentBackStack$delegate:Landroidx/compose/runtime/H0;
 
-    iput-object p3, p0, Landroidx/navigation/compose/NavHostKt$NavHost$28$1;->$progress$delegate:Landroidx/compose/runtime/g1;
+    iput-object p3, p0, Landroidx/navigation/compose/NavHostKt$NavHost$28$1;->$progress$delegate:Landroidx/compose/runtime/X;
 
     const/4 p1, 0x2
 
@@ -103,20 +104,20 @@
             "Lkotlin/coroutines/Continuation<",
             "*>;)",
             "Lkotlin/coroutines/Continuation<",
-            "Lqh/r;",
+            "LX9/j;",
             ">;"
         }
     .end annotation
 
     new-instance p1, Landroidx/navigation/compose/NavHostKt$NavHost$28$1;
 
-    iget-object v0, p0, Landroidx/navigation/compose/NavHostKt$NavHost$28$1;->$transitionState:Landroidx/compose/animation/core/s0;
+    iget-object v0, p0, Landroidx/navigation/compose/NavHostKt$NavHost$28$1;->$transitionState:Landroidx/compose/animation/core/M;
 
-    iget-object v1, p0, Landroidx/navigation/compose/NavHostKt$NavHost$28$1;->$currentBackStack$delegate:Landroidx/compose/runtime/d3;
+    iget-object v1, p0, Landroidx/navigation/compose/NavHostKt$NavHost$28$1;->$currentBackStack$delegate:Landroidx/compose/runtime/H0;
 
-    iget-object v2, p0, Landroidx/navigation/compose/NavHostKt$NavHost$28$1;->$progress$delegate:Landroidx/compose/runtime/g1;
+    iget-object v2, p0, Landroidx/navigation/compose/NavHostKt$NavHost$28$1;->$progress$delegate:Landroidx/compose/runtime/X;
 
-    invoke-direct {p1, v0, v1, v2, p2}, Landroidx/navigation/compose/NavHostKt$NavHost$28$1;-><init>(Landroidx/compose/animation/core/s0;Landroidx/compose/runtime/d3;Landroidx/compose/runtime/g1;Lkotlin/coroutines/Continuation;)V
+    invoke-direct {p1, v0, v1, v2, p2}, Landroidx/navigation/compose/NavHostKt$NavHost$28$1;-><init>(Landroidx/compose/animation/core/M;Landroidx/compose/runtime/H0;Landroidx/compose/runtime/X;Lkotlin/coroutines/Continuation;)V
 
     return-object p1
 .end method
@@ -125,26 +126,26 @@
     .locals 0
 
     .line 1
-    check-cast p1, Lkotlinx/coroutines/w;
+    check-cast p1, Lkotlinx/coroutines/u;
 
     check-cast p2, Lkotlin/coroutines/Continuation;
 
-    invoke-virtual {p0, p1, p2}, Landroidx/navigation/compose/NavHostKt$NavHost$28$1;->invoke(Lkotlinx/coroutines/w;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
+    invoke-virtual {p0, p1, p2}, Landroidx/navigation/compose/NavHostKt$NavHost$28$1;->invoke(Lkotlinx/coroutines/u;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
 
     move-result-object p1
 
     return-object p1
 .end method
 
-.method public final invoke(Lkotlinx/coroutines/w;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
+.method public final invoke(Lkotlinx/coroutines/u;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
     .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
-            "Lkotlinx/coroutines/w;",
+            "Lkotlinx/coroutines/u;",
             "Lkotlin/coroutines/Continuation<",
             "-",
-            "Lqh/r;",
+            "LX9/j;",
             ">;)",
             "Ljava/lang/Object;"
         }
@@ -157,7 +158,7 @@
 
     check-cast p1, Landroidx/navigation/compose/NavHostKt$NavHost$28$1;
 
-    sget-object p2, Lqh/r;->a:Lqh/r;
+    sget-object p2, LX9/j;->a:LX9/j;
 
     invoke-virtual {p1, p2}, Landroidx/navigation/compose/NavHostKt$NavHost$28$1;->invokeSuspend(Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -220,11 +221,11 @@
     .line 23
     .line 24
     .line 25
-    iget-object p1, p0, Landroidx/navigation/compose/NavHostKt$NavHost$28$1;->$currentBackStack$delegate:Landroidx/compose/runtime/d3;
+    iget-object p1, p0, Landroidx/navigation/compose/NavHostKt$NavHost$28$1;->$currentBackStack$delegate:Landroidx/compose/runtime/H0;
 
     .line 26
     .line 27
-    invoke-interface {p1}, Landroidx/compose/runtime/d3;->getValue()Ljava/lang/Object;
+    invoke-interface {p1}, Landroidx/compose/runtime/H0;->getValue()Ljava/lang/Object;
 
     .line 28
     .line 29
@@ -236,11 +237,11 @@
 
     .line 32
     .line 33
-    iget-object v1, p0, Landroidx/navigation/compose/NavHostKt$NavHost$28$1;->$currentBackStack$delegate:Landroidx/compose/runtime/d3;
+    iget-object v1, p0, Landroidx/navigation/compose/NavHostKt$NavHost$28$1;->$currentBackStack$delegate:Landroidx/compose/runtime/H0;
 
     .line 34
     .line 35
-    invoke-interface {v1}, Landroidx/compose/runtime/d3;->getValue()Ljava/lang/Object;
+    invoke-interface {v1}, Landroidx/compose/runtime/H0;->getValue()Ljava/lang/Object;
 
     .line 36
     .line 37
@@ -272,23 +273,23 @@
     move-result-object p1
 
     .line 51
-    check-cast p1, Landroidx/navigation/l;
+    check-cast p1, LZ1/j;
 
     .line 52
     .line 53
-    iget-object v1, p0, Landroidx/navigation/compose/NavHostKt$NavHost$28$1;->$transitionState:Landroidx/compose/animation/core/s0;
+    iget-object v1, p0, Landroidx/navigation/compose/NavHostKt$NavHost$28$1;->$transitionState:Landroidx/compose/animation/core/M;
 
     .line 54
     .line 55
-    iget-object v3, p0, Landroidx/navigation/compose/NavHostKt$NavHost$28$1;->$progress$delegate:Landroidx/compose/runtime/g1;
+    iget-object v3, p0, Landroidx/navigation/compose/NavHostKt$NavHost$28$1;->$progress$delegate:Landroidx/compose/runtime/X;
 
     .line 56
     .line 57
-    check-cast v3, Landroidx/compose/runtime/n2;
+    check-cast v3, Landroidx/compose/runtime/ParcelableSnapshotMutableFloatState;
 
     .line 58
     .line 59
-    invoke-virtual {v3}, Landroidx/compose/runtime/n2;->k()F
+    invoke-virtual {v3}, Landroidx/compose/runtime/ParcelableSnapshotMutableFloatState;->k()F
 
     .line 60
     .line 61
@@ -300,7 +301,7 @@
 
     .line 64
     .line 65
-    invoke-virtual {v1, v3, p1, p0}, Landroidx/compose/animation/core/s0;->o(FLjava/lang/Object;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
+    invoke-virtual {v1, v3, p1, p0}, Landroidx/compose/animation/core/M;->n(FLjava/lang/Object;Lkotlin/coroutines/jvm/internal/SuspendLambda;)Ljava/lang/Object;
 
     .line 66
     .line 67
@@ -317,7 +318,7 @@
     .line 72
     :cond_2
     :goto_0
-    sget-object p1, Lqh/r;->a:Lqh/r;
+    sget-object p1, LX9/j;->a:LX9/j;
 
     .line 73
     .line 74

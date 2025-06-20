@@ -1,524 +1,368 @@
-.class public abstract Lc3/j;
-.super Landroid/app/Activity;
+.class public final Lc3/j;
+.super Ljava/lang/Object;
 .source "SourceFile"
 
 # interfaces
-.implements Landroidx/lifecycle/w;
-.implements Landroidx/core/view/n;
+.implements Lc3/l;
+.implements LT2/e;
+.implements Lcom/bumptech/glide/load/data/g;
 
 
 # instance fields
-.field private final extraDataMap:Landroidx/collection/n0;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "Landroidx/collection/n0;"
-        }
-    .end annotation
-.end field
-
-.field private final lifecycleRegistry:Landroidx/lifecycle/y;
+.field public final b:Ljava/nio/ByteBuffer;
 
 
 # direct methods
 .method public constructor <init>()V
-    .locals 2
+    .locals 1
 
     .line 1
-    invoke-direct {p0}, Landroid/app/Activity;-><init>()V
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    const/4 v0, 0x4
 
     .line 2
+    invoke-static {v0}, Ljava/nio/ByteBuffer;->allocate(I)Ljava/nio/ByteBuffer;
+
+    move-result-object v0
+
+    iput-object v0, p0, Lc3/j;->b:Ljava/nio/ByteBuffer;
+
+    return-void
+.end method
+
+.method public constructor <init>(ILjava/nio/ByteBuffer;)V
+    .locals 0
+
+    packed-switch p1, :pswitch_data_0
+
     .line 3
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
     .line 4
-    new-instance v0, Landroidx/collection/n0;
+    iput-object p2, p0, Lc3/j;->b:Ljava/nio/ByteBuffer;
 
     .line 5
+    sget-object p1, Ljava/nio/ByteOrder;->BIG_ENDIAN:Ljava/nio/ByteOrder;
+
+    invoke-virtual {p2, p1}, Ljava/nio/ByteBuffer;->order(Ljava/nio/ByteOrder;)Ljava/nio/ByteBuffer;
+
+    return-void
+
     .line 6
-    const/4 v1, 0x0
+    :pswitch_0
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 7
-    invoke-direct {v0, v1}, Landroidx/collection/n0;-><init>(I)V
+    iput-object p2, p0, Lc3/j;->b:Ljava/nio/ByteBuffer;
 
-    .line 8
-    .line 9
-    .line 10
-    iput-object v0, p0, Lc3/j;->extraDataMap:Landroidx/collection/n0;
-
-    .line 11
-    .line 12
-    new-instance v0, Landroidx/lifecycle/y;
-
-    .line 13
-    .line 14
-    const/4 v1, 0x1
-
-    .line 15
-    invoke-direct {v0, p0, v1}, Landroidx/lifecycle/y;-><init>(Landroidx/lifecycle/w;Z)V
-
-    .line 16
-    .line 17
-    .line 18
-    iput-object v0, p0, Lc3/j;->lifecycleRegistry:Landroidx/lifecycle/y;
-
-    .line 19
-    .line 20
     return-void
+
+    :pswitch_data_0
+    .packed-switch 0x2
+        :pswitch_0
+    .end packed-switch
 .end method
 
 
 # virtual methods
-.method public dispatchKeyEvent(Landroid/view/KeyEvent;)Z
+.method public a()V
+    .locals 0
+
+    .line 1
+    return-void
+.end method
+
+.method public b()Ljava/lang/Object;
     .locals 2
 
     .line 1
-    invoke-virtual {p0}, Landroid/app/Activity;->getWindow()Landroid/view/Window;
+    iget-object v0, p0, Lc3/j;->b:Ljava/nio/ByteBuffer;
 
     .line 2
     .line 3
-    .line 4
-    move-result-object v0
-
-    .line 5
-    invoke-virtual {v0}, Landroid/view/Window;->getDecorView()Landroid/view/View;
-
-    .line 6
-    .line 7
-    .line 8
-    move-result-object v0
-
-    .line 9
-    invoke-static {v0, p1}, Landroidx/core/view/b1;->a(Landroid/view/View;Landroid/view/KeyEvent;)Z
-
-    .line 10
-    .line 11
-    .line 12
-    move-result v1
-
-    .line 13
-    if-eqz v1, :cond_0
-
-    .line 14
-    .line 15
-    const/4 p1, 0x1
-
-    .line 16
-    goto :goto_0
-
-    .line 17
-    :cond_0
-    invoke-static {p0, v0, p0, p1}, Landroidx/core/view/b1;->b(Landroidx/core/view/n;Landroid/view/View;Landroid/view/Window$Callback;Landroid/view/KeyEvent;)Z
-
-    .line 18
-    .line 19
-    .line 20
-    move-result p1
-
-    .line 21
-    :goto_0
-    return p1
-.end method
-
-.method public dispatchKeyShortcutEvent(Landroid/view/KeyEvent;)Z
-    .locals 1
-
-    .line 1
-    invoke-virtual {p0}, Landroid/app/Activity;->getWindow()Landroid/view/Window;
-
-    .line 2
-    .line 3
-    .line 4
-    move-result-object v0
-
-    .line 5
-    invoke-virtual {v0}, Landroid/view/Window;->getDecorView()Landroid/view/View;
-
-    .line 6
-    .line 7
-    .line 8
-    move-result-object v0
-
-    .line 9
-    invoke-static {v0, p1}, Landroidx/core/view/b1;->a(Landroid/view/View;Landroid/view/KeyEvent;)Z
-
-    .line 10
-    .line 11
-    .line 12
-    move-result v0
-
-    .line 13
-    if-eqz v0, :cond_0
-
-    .line 14
-    .line 15
-    const/4 p1, 0x1
-
-    .line 16
-    goto :goto_0
-
-    .line 17
-    :cond_0
-    invoke-super {p0, p1}, Landroid/app/Activity;->dispatchKeyShortcutEvent(Landroid/view/KeyEvent;)Z
-
-    .line 18
-    .line 19
-    .line 20
-    move-result p1
-
-    .line 21
-    :goto_0
-    return p1
-.end method
-
-.method public getExtraData(Ljava/lang/Class;)Lc3/i;
-    .locals 1
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "<T:",
-            "Lc3/i;",
-            ">(",
-            "Ljava/lang/Class<",
-            "TT;>;)TT;"
-        }
-    .end annotation
-
-    .annotation runtime Lqh/a;
-    .end annotation
-
-    .line 1
-    iget-object v0, p0, Lc3/j;->extraDataMap:Landroidx/collection/n0;
-
-    .line 2
-    .line 3
-    invoke-virtual {v0, p1}, Landroidx/collection/n0;->get(Ljava/lang/Object;)Ljava/lang/Object;
+    const/4 v1, 0x0
 
     .line 4
+    invoke-virtual {v0, v1}, Ljava/nio/ByteBuffer;->position(I)Ljava/nio/Buffer;
+
     .line 5
     .line 6
-    move-result-object p1
-
     .line 7
-    invoke-static {p1}, Landroid/support/v4/media/session/a;->P(Ljava/lang/Object;)V
-
-    .line 8
-    .line 9
-    .line 10
-    const/4 p1, 0x0
-
-    .line 11
-    return-object p1
-.end method
-
-.method public getLifecycle()Landroidx/lifecycle/p;
-    .locals 1
-
-    .line 1
-    iget-object v0, p0, Lc3/j;->lifecycleRegistry:Landroidx/lifecycle/y;
-
     return-object v0
 .end method
 
-.method public onCreate(Landroid/os/Bundle;)V
-    .locals 0
-
-    .line 1
-    invoke-super {p0, p1}, Landroid/app/Activity;->onCreate(Landroid/os/Bundle;)V
-
-    .line 2
-    .line 3
-    .line 4
-    sget p1, Landroidx/lifecycle/t0;->c:I
-
-    .line 5
-    .line 6
-    invoke-static {p0}, Landroidx/compose/ui/text/input/q0;->i(Landroid/app/Activity;)V
-
-    .line 7
-    .line 8
-    .line 9
-    return-void
-.end method
-
-.method public onSaveInstanceState(Landroid/os/Bundle;)V
+.method public c()I
     .locals 2
 
     .line 1
-    iget-object v0, p0, Lc3/j;->lifecycleRegistry:Landroidx/lifecycle/y;
+    invoke-virtual {p0}, Lc3/j;->d()S
 
     .line 2
     .line 3
-    sget-object v1, Landroidx/lifecycle/Lifecycle$State;->CREATED:Landroidx/lifecycle/Lifecycle$State;
-
     .line 4
+    move-result v0
+
     .line 5
-    invoke-virtual {v0, v1}, Landroidx/lifecycle/y;->h(Landroidx/lifecycle/Lifecycle$State;)V
+    shl-int/lit8 v0, v0, 0x8
 
     .line 6
     .line 7
-    .line 8
-    invoke-super {p0, p1}, Landroid/app/Activity;->onSaveInstanceState(Landroid/os/Bundle;)V
+    invoke-virtual {p0}, Lc3/j;->d()S
 
+    .line 8
     .line 9
     .line 10
+    move-result v1
+
     .line 11
-    return-void
+    or-int/2addr v0, v1
+
+    .line 12
+    return v0
 .end method
 
-.method public putExtraData(Lc3/i;)V
-    .locals 0
-    .annotation runtime Lqh/a;
-    .end annotation
-
-    .line 1
-    const/4 p1, 0x0
-
-    throw p1
-.end method
-
-.method public final shouldDumpInternalState([Ljava/lang/String;)Z
+.method public d()S
     .locals 3
 
     .line 1
-    const/4 v0, 0x1
+    iget-object v0, p0, Lc3/j;->b:Ljava/nio/ByteBuffer;
 
     .line 2
-    const/4 v1, 0x0
-
     .line 3
-    if-eqz p1, :cond_5
+    invoke-virtual {v0}, Ljava/nio/Buffer;->remaining()I
 
     .line 4
     .line 5
-    array-length v2, p1
+    .line 6
+    move-result v1
+
+    .line 7
+    const/4 v2, 0x1
+
+    .line 8
+    if-lt v1, v2, :cond_0
+
+    .line 9
+    .line 10
+    invoke-virtual {v0}, Ljava/nio/ByteBuffer;->get()B
+
+    .line 11
+    .line 12
+    .line 13
+    move-result v0
+
+    .line 14
+    and-int/lit16 v0, v0, 0xff
+
+    .line 15
+    .line 16
+    int-to-short v0, v0
+
+    .line 17
+    return v0
+
+    .line 18
+    :cond_0
+    new-instance v0, Lcom/bumptech/glide/load/resource/bitmap/DefaultImageHeaderParser$Reader$EndOfFileException;
+
+    .line 19
+    .line 20
+    invoke-direct {v0}, Lcom/bumptech/glide/load/resource/bitmap/DefaultImageHeaderParser$Reader$EndOfFileException;-><init>()V
+
+    .line 21
+    .line 22
+    .line 23
+    throw v0
+.end method
+
+.method public f([BLjava/lang/Object;Ljava/security/MessageDigest;)V
+    .locals 2
+
+    .line 1
+    check-cast p2, Ljava/lang/Integer;
+
+    .line 2
+    .line 3
+    if-nez p2, :cond_0
+
+    .line 4
+    .line 5
+    goto :goto_0
 
     .line 6
-    if-nez v2, :cond_0
+    :cond_0
+    invoke-virtual {p3, p1}, Ljava/security/MessageDigest;->update([B)V
 
     .line 7
     .line 8
-    goto :goto_1
-
     .line 9
-    :cond_0
-    aget-object p1, p1, v1
+    iget-object p1, p0, Lc3/j;->b:Ljava/nio/ByteBuffer;
 
     .line 10
     .line 11
-    invoke-virtual {p1}, Ljava/lang/String;->hashCode()I
+    monitor-enter p1
 
     .line 12
+    :try_start_0
+    iget-object v0, p0, Lc3/j;->b:Ljava/nio/ByteBuffer;
+
     .line 13
     .line 14
-    move-result v2
+    const/4 v1, 0x0
 
     .line 15
-    sparse-switch v2, :sswitch_data_0
+    invoke-virtual {v0, v1}, Ljava/nio/ByteBuffer;->position(I)Ljava/nio/Buffer;
 
     .line 16
     .line 17
     .line 18
-    goto :goto_1
+    iget-object v0, p0, Lc3/j;->b:Ljava/nio/ByteBuffer;
 
     .line 19
-    :sswitch_0
-    const-string v2, "--autofill"
-
     .line 20
-    .line 21
-    invoke-virtual {p1, v2}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+    invoke-virtual {p2}, Ljava/lang/Integer;->intValue()I
 
+    .line 21
     .line 22
     .line 23
+    move-result p2
+
     .line 24
-    move-result p1
+    invoke-virtual {v0, p2}, Ljava/nio/ByteBuffer;->putInt(I)Ljava/nio/ByteBuffer;
 
     .line 25
-    if-nez p1, :cond_1
-
     .line 26
     .line 27
-    goto :goto_1
+    move-result-object p2
 
     .line 28
-    :cond_1
-    sget p1, Landroid/os/Build$VERSION;->SDK_INT:I
+    invoke-virtual {p2}, Ljava/nio/ByteBuffer;->array()[B
 
     .line 29
     .line 30
-    const/16 v2, 0x1a
-
     .line 31
+    move-result-object p2
+
     .line 32
-    if-lt p1, v2, :cond_5
+    invoke-virtual {p3, p2}, Ljava/security/MessageDigest;->update([B)V
 
     .line 33
     .line 34
-    :goto_0
-    const/4 v1, 0x1
-
     .line 35
-    goto :goto_1
+    monitor-exit p1
 
     .line 36
-    :sswitch_1
-    const-string v2, "--contentcapture"
+    :goto_0
+    return-void
 
     .line 37
+    :catchall_0
+    move-exception p2
+
     .line 38
-    invoke-virtual {p1, v2}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+    monitor-exit p1
+    :try_end_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
     .line 39
-    .line 40
-    .line 41
-    move-result p1
-
-    .line 42
-    if-nez p1, :cond_2
-
-    .line 43
-    .line 44
-    goto :goto_1
-
-    .line 45
-    :cond_2
-    sget p1, Landroid/os/Build$VERSION;->SDK_INT:I
-
-    .line 46
-    .line 47
-    const/16 v2, 0x1d
-
-    .line 48
-    .line 49
-    if-lt p1, v2, :cond_5
-
-    .line 50
-    .line 51
-    goto :goto_0
-
-    .line 52
-    :sswitch_2
-    const-string v2, "--list-dumpables"
-
-    .line 53
-    .line 54
-    invoke-virtual {p1, v2}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
-
-    .line 55
-    .line 56
-    .line 57
-    move-result p1
-
-    .line 58
-    if-nez p1, :cond_3
-
-    .line 59
-    .line 60
-    goto :goto_1
-
-    .line 61
-    :sswitch_3
-    const-string v2, "--dump-dumpable"
-
-    .line 62
-    .line 63
-    invoke-virtual {p1, v2}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
-
-    .line 64
-    .line 65
-    .line 66
-    move-result p1
-
-    .line 67
-    if-nez p1, :cond_3
-
-    .line 68
-    .line 69
-    goto :goto_1
-
-    .line 70
-    :cond_3
-    sget p1, Landroid/os/Build$VERSION;->SDK_INT:I
-
-    .line 71
-    .line 72
-    const/16 v2, 0x21
-
-    .line 73
-    .line 74
-    if-lt p1, v2, :cond_5
-
-    .line 75
-    .line 76
-    goto :goto_0
-
-    .line 77
-    :sswitch_4
-    const-string v2, "--translation"
-
-    .line 78
-    .line 79
-    invoke-virtual {p1, v2}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
-
-    .line 80
-    .line 81
-    .line 82
-    move-result p1
-
-    .line 83
-    if-nez p1, :cond_4
-
-    .line 84
-    .line 85
-    goto :goto_1
-
-    .line 86
-    :cond_4
-    sget p1, Landroid/os/Build$VERSION;->SDK_INT:I
-
-    .line 87
-    .line 88
-    const/16 v2, 0x1f
-
-    .line 89
-    .line 90
-    if-lt p1, v2, :cond_5
-
-    .line 91
-    .line 92
-    goto :goto_0
-
-    .line 93
-    :cond_5
-    :goto_1
-    xor-int/lit8 p1, v1, 0x1
-
-    .line 94
-    .line 95
-    return p1
-
-    .line 96
-    nop
-
-    .line 97
-    :sswitch_data_0
-    .sparse-switch
-        -0x2673d6ef -> :sswitch_4
-        0x5fd0f67 -> :sswitch_3
-        0x1c2b8816 -> :sswitch_2
-        0x4519f64d -> :sswitch_1
-        0x56b9c952 -> :sswitch_0
-    .end sparse-switch
+    throw p2
 .end method
 
-.method public superDispatchKeyEvent(Landroid/view/KeyEvent;)Z
-    .locals 0
+.method public g(I[B)I
+    .locals 2
 
     .line 1
-    invoke-super {p0, p1}, Landroid/app/Activity;->dispatchKeyEvent(Landroid/view/KeyEvent;)Z
+    iget-object v0, p0, Lc3/j;->b:Ljava/nio/ByteBuffer;
 
     .line 2
     .line 3
+    invoke-virtual {v0}, Ljava/nio/Buffer;->remaining()I
+
     .line 4
+    .line 5
+    .line 6
+    move-result v1
+
+    .line 7
+    invoke-static {p1, v1}, Ljava/lang/Math;->min(II)I
+
+    .line 8
+    .line 9
+    .line 10
     move-result p1
 
-    .line 5
+    .line 11
+    if-nez p1, :cond_0
+
+    .line 12
+    .line 13
+    const/4 p1, -0x1
+
+    .line 14
     return p1
+
+    .line 15
+    :cond_0
+    const/4 v1, 0x0
+
+    .line 16
+    invoke-virtual {v0, p2, v1, p1}, Ljava/nio/ByteBuffer;->get([BII)Ljava/nio/ByteBuffer;
+
+    .line 17
+    .line 18
+    .line 19
+    return p1
+.end method
+
+.method public skip(J)J
+    .locals 3
+
+    .line 1
+    iget-object v0, p0, Lc3/j;->b:Ljava/nio/ByteBuffer;
+
+    .line 2
+    .line 3
+    invoke-virtual {v0}, Ljava/nio/Buffer;->remaining()I
+
+    .line 4
+    .line 5
+    .line 6
+    move-result v1
+
+    .line 7
+    int-to-long v1, v1
+
+    .line 8
+    invoke-static {v1, v2, p1, p2}, Ljava/lang/Math;->min(JJ)J
+
+    .line 9
+    .line 10
+    .line 11
+    move-result-wide p1
+
+    .line 12
+    long-to-int p2, p1
+
+    .line 13
+    invoke-virtual {v0}, Ljava/nio/Buffer;->position()I
+
+    .line 14
+    .line 15
+    .line 16
+    move-result p1
+
+    .line 17
+    add-int/2addr p1, p2
+
+    .line 18
+    invoke-virtual {v0, p1}, Ljava/nio/ByteBuffer;->position(I)Ljava/nio/Buffer;
+
+    .line 19
+    .line 20
+    .line 21
+    int-to-long p1, p2
+
+    .line 22
+    return-wide p1
 .end method

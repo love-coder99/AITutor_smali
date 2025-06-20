@@ -3,7 +3,7 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lzh/c;
+.implements Lka/c;
 
 
 # annotations
@@ -19,7 +19,7 @@
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "Lkotlin/jvm/internal/Lambda;",
-        "Lzh/c;"
+        "Lka/c;"
     }
 .end annotation
 
@@ -28,11 +28,11 @@
         "\u0000\u000e\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0008\u0003\u0010\u0005\u001a\u00020\u00022\u0006\u0010\u0001\u001a\u00020\u0000H\n\u00a2\u0006\u0004\u0008\u0003\u0010\u0004"
     }
     d2 = {
-        "Landroidx/compose/ui/input/pointer/r;",
+        "Landroidx/compose/ui/input/pointer/n;",
         "upEvent",
-        "Lqh/r;",
+        "LX9/j;",
         "invoke",
-        "(Landroidx/compose/ui/input/pointer/r;)V",
+        "(Landroidx/compose/ui/input/pointer/n;)V",
         "<anonymous>"
     }
     k = 0x3
@@ -45,24 +45,32 @@
 
 
 # instance fields
-.field final synthetic $velocityTracker:Lu1/e;
+.field final synthetic $velocityTracker:Ly0/d;
 
 .field final synthetic this$0:Landroidx/compose/foundation/gestures/t;
 
 
 # direct methods
-.method public constructor <init>(Lu1/e;Landroidx/compose/foundation/gestures/t;)V
+.method public constructor <init>(Ly0/d;Landroidx/compose/foundation/gestures/t;)V
     .locals 0
 
     .line 1
-    iput-object p1, p0, Landroidx/compose/foundation/gestures/DragGestureNode$initializePointerInputNode$1$onDragEnd$1;->$velocityTracker:Lu1/e;
+    iput-object p1, p0, Landroidx/compose/foundation/gestures/DragGestureNode$initializePointerInputNode$1$onDragEnd$1;->$velocityTracker:Ly0/d;
 
+    .line 2
+    .line 3
     iput-object p2, p0, Landroidx/compose/foundation/gestures/DragGestureNode$initializePointerInputNode$1$onDragEnd$1;->this$0:Landroidx/compose/foundation/gestures/t;
 
+    .line 4
+    .line 5
     const/4 p1, 0x1
 
+    .line 6
     invoke-direct {p0, p1}, Lkotlin/jvm/internal/Lambda;-><init>(I)V
 
+    .line 7
+    .line 8
+    .line 9
     return-void
 .end method
 
@@ -72,52 +80,54 @@
     .locals 0
 
     .line 1
-    check-cast p1, Landroidx/compose/ui/input/pointer/r;
+    check-cast p1, Landroidx/compose/ui/input/pointer/n;
 
-    invoke-virtual {p0, p1}, Landroidx/compose/foundation/gestures/DragGestureNode$initializePointerInputNode$1$onDragEnd$1;->invoke(Landroidx/compose/ui/input/pointer/r;)V
+    invoke-virtual {p0, p1}, Landroidx/compose/foundation/gestures/DragGestureNode$initializePointerInputNode$1$onDragEnd$1;->invoke(Landroidx/compose/ui/input/pointer/n;)V
 
-    sget-object p1, Lqh/r;->a:Lqh/r;
+    sget-object p1, LX9/j;->a:LX9/j;
 
     return-object p1
 .end method
 
-.method public final invoke(Landroidx/compose/ui/input/pointer/r;)V
+.method public final invoke(Landroidx/compose/ui/input/pointer/n;)V
     .locals 7
 
-    iget-object v0, p0, Landroidx/compose/foundation/gestures/DragGestureNode$initializePointerInputNode$1$onDragEnd$1;->$velocityTracker:Lu1/e;
-
     .line 2
-    invoke-static {v0, p1}, Li7/g;->a(Lu1/e;Landroidx/compose/ui/input/pointer/r;)V
+    iget-object v0, p0, Landroidx/compose/foundation/gestures/DragGestureNode$initializePointerInputNode$1$onDragEnd$1;->$velocityTracker:Ly0/d;
 
-    iget-object p1, p0, Landroidx/compose/foundation/gestures/DragGestureNode$initializePointerInputNode$1$onDragEnd$1;->this$0:Landroidx/compose/foundation/gestures/t;
+    invoke-static {v0, p1}, Lcom/google/android/gms/internal/measurement/Q1;->e(Ly0/d;Landroidx/compose/ui/input/pointer/n;)V
 
     .line 3
-    sget-object v0, Landroidx/compose/ui/platform/i1;->q:Landroidx/compose/runtime/e3;
+    iget-object p1, p0, Landroidx/compose/foundation/gestures/DragGestureNode$initializePointerInputNode$1$onDragEnd$1;->this$0:Landroidx/compose/foundation/gestures/t;
 
     .line 4
-    invoke-static {p1, v0}, Lcom/google/android/play/core/appupdate/b;->s(Landroidx/compose/ui/node/i;Landroidx/compose/runtime/u1;)Ljava/lang/Object;
+    sget-object v0, Landroidx/compose/ui/platform/Z;->q:Landroidx/compose/runtime/I0;
+
+    .line 5
+    invoke-static {p1, v0}, Lma/a;->g(Landroidx/compose/ui/node/i;Landroidx/compose/runtime/j0;)Ljava/lang/Object;
 
     move-result-object p1
 
-    check-cast p1, Landroidx/compose/ui/platform/x2;
+    check-cast p1, Landroidx/compose/ui/platform/M0;
 
-    .line 5
-    invoke-interface {p1}, Landroidx/compose/ui/platform/x2;->f()F
+    .line 6
+    invoke-interface {p1}, Landroidx/compose/ui/platform/M0;->e()F
 
     move-result p1
 
-    iget-object v0, p0, Landroidx/compose/foundation/gestures/DragGestureNode$initializePointerInputNode$1$onDragEnd$1;->$velocityTracker:Lu1/e;
+    .line 7
+    iget-object v0, p0, Landroidx/compose/foundation/gestures/DragGestureNode$initializePointerInputNode$1$onDragEnd$1;->$velocityTracker:Ly0/d;
 
-    .line 6
-    invoke-static {p1, p1}, Ly/f;->c(FF)J
+    .line 8
+    invoke-static {p1, p1}, Ld5/a;->c(FF)J
 
     move-result-wide v1
 
-    .line 7
+    .line 9
     invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
-    .line 8
-    invoke-static {v1, v2}, Lh2/n;->b(J)F
+    .line 10
+    invoke-static {v1, v2}, LM0/n;->b(J)F
 
     move-result p1
 
@@ -129,7 +139,7 @@
 
     if-lez p1, :cond_3
 
-    invoke-static {v1, v2}, Lh2/n;->c(J)F
+    invoke-static {v1, v2}, LM0/n;->c(J)F
 
     move-result p1
 
@@ -137,79 +147,81 @@
 
     if-lez p1, :cond_3
 
-    .line 9
-    iget-object p1, v0, Lu1/e;->a:Lu1/d;
+    .line 11
+    iget-object p1, v0, Ly0/d;->a:Ly0/c;
 
-    invoke-static {v1, v2}, Lh2/n;->b(J)F
+    invoke-static {v1, v2}, LM0/n;->b(J)F
 
     move-result v5
 
-    invoke-virtual {p1, v5}, Lu1/d;->b(F)F
+    invoke-virtual {p1, v5}, Ly0/c;->b(F)F
 
     move-result p1
 
-    .line 10
-    iget-object v0, v0, Lu1/e;->b:Lu1/d;
+    .line 12
+    iget-object v0, v0, Ly0/d;->b:Ly0/c;
 
-    invoke-static {v1, v2}, Lh2/n;->c(J)F
+    invoke-static {v1, v2}, LM0/n;->c(J)F
 
     move-result v1
 
-    invoke-virtual {v0, v1}, Lu1/d;->b(F)F
+    invoke-virtual {v0, v1}, Ly0/c;->b(F)F
 
     move-result v0
 
-    .line 11
-    invoke-static {p1, v0}, Ly/f;->c(FF)J
+    .line 13
+    invoke-static {p1, v0}, Ld5/a;->c(FF)J
 
     move-result-wide v0
 
-    iget-object p1, p0, Landroidx/compose/foundation/gestures/DragGestureNode$initializePointerInputNode$1$onDragEnd$1;->$velocityTracker:Lu1/e;
-
-    .line 12
-    iget-object v2, p1, Lu1/e;->a:Lu1/d;
-
-    .line 13
-    iget-object v5, v2, Lu1/d;->d:[Lu1/a;
-
     .line 14
-    invoke-static {v5, v3}, Lkotlin/collections/o;->N([Ljava/lang/Object;Lv/a;)V
+    iget-object p1, p0, Landroidx/compose/foundation/gestures/DragGestureNode$initializePointerInputNode$1$onDragEnd$1;->$velocityTracker:Ly0/d;
+
+    .line 15
+    iget-object v2, p1, Ly0/d;->a:Ly0/c;
+
+    .line 16
+    iget-object v5, v2, Ly0/c;->d:[Ly0/a;
+
+    .line 17
+    invoke-static {v5, v3}, LY9/o;->P([Ljava/lang/Object;Lcom/google/android/gms/internal/consent_sdk/u;)V
 
     const/4 v5, 0x0
 
-    .line 15
-    iput v5, v2, Lu1/d;->e:I
-
-    .line 16
-    iget-object v2, p1, Lu1/e;->b:Lu1/d;
-
-    iget-object v6, v2, Lu1/d;->d:[Lu1/a;
-
-    .line 17
-    invoke-static {v6, v3}, Lkotlin/collections/o;->N([Ljava/lang/Object;Lv/a;)V
-
     .line 18
-    iput v5, v2, Lu1/d;->e:I
+    iput v5, v2, Ly0/c;->e:I
+
+    .line 19
+    iget-object v2, p1, Ly0/d;->b:Ly0/c;
+
+    iget-object v6, v2, Ly0/c;->d:[Ly0/a;
+
+    .line 20
+    invoke-static {v6, v3}, LY9/o;->P([Ljava/lang/Object;Lcom/google/android/gms/internal/consent_sdk/u;)V
+
+    .line 21
+    iput v5, v2, Ly0/c;->e:I
 
     const-wide/16 v2, 0x0
 
-    .line 19
-    iput-wide v2, p1, Lu1/e;->c:J
+    .line 22
+    iput-wide v2, p1, Ly0/d;->c:J
 
+    .line 23
     iget-object p1, p0, Landroidx/compose/foundation/gestures/DragGestureNode$initializePointerInputNode$1$onDragEnd$1;->this$0:Landroidx/compose/foundation/gestures/t;
 
-    .line 20
-    iget-object p1, p1, Landroidx/compose/foundation/gestures/t;->v:Lkotlinx/coroutines/channels/e;
+    .line 24
+    iget-object p1, p1, Landroidx/compose/foundation/gestures/t;->v:Lkotlinx/coroutines/channels/b;
 
     if-eqz p1, :cond_2
 
-    .line 21
+    .line 25
     new-instance v2, Landroidx/compose/foundation/gestures/q;
 
-    sget v3, Landroidx/compose/foundation/gestures/u;->a:I
+    sget-object v3, Landroidx/compose/foundation/gestures/v;->a:Lka/f;
 
-    .line 22
-    invoke-static {v0, v1}, Lh2/n;->b(J)F
+    .line 26
+    invoke-static {v0, v1}, LM0/n;->b(J)F
 
     move-result v3
 
@@ -224,12 +236,12 @@
     goto :goto_0
 
     :cond_0
-    invoke-static {v0, v1}, Lh2/n;->b(J)F
+    invoke-static {v0, v1}, LM0/n;->b(J)F
 
     move-result v3
 
     :goto_0
-    invoke-static {v0, v1}, Lh2/n;->c(J)F
+    invoke-static {v0, v1}, LM0/n;->c(J)F
 
     move-result v5
 
@@ -242,24 +254,24 @@
     goto :goto_1
 
     :cond_1
-    invoke-static {v0, v1}, Lh2/n;->c(J)F
+    invoke-static {v0, v1}, LM0/n;->c(J)F
 
     move-result v4
 
     :goto_1
-    invoke-static {v3, v4}, Ly/f;->c(FF)J
+    invoke-static {v3, v4}, Ld5/a;->c(FF)J
 
     move-result-wide v0
 
-    .line 23
+    .line 27
     invoke-direct {v2, v0, v1}, Landroidx/compose/foundation/gestures/q;-><init>(J)V
 
-    invoke-interface {p1, v2}, Lkotlinx/coroutines/channels/p;->o(Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-interface {p1, v2}, Lkotlinx/coroutines/channels/p;->l(Ljava/lang/Object;)Ljava/lang/Object;
 
     :cond_2
     return-void
 
-    .line 24
+    .line 28
     :cond_3
     new-instance p1, Ljava/lang/StringBuilder;
 
@@ -267,7 +279,7 @@
 
     invoke-direct {p1, v0}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
 
-    invoke-static {v1, v2}, Lh2/n;->f(J)Ljava/lang/String;
+    invoke-static {v1, v2}, LM0/n;->g(J)Ljava/lang/String;
 
     move-result-object v0
 
@@ -277,8 +289,8 @@
 
     move-result-object p1
 
-    .line 25
-    invoke-static {p1}, Lkotlinx/coroutines/y;->Q(Ljava/lang/String;)V
+    .line 29
+    invoke-static {p1}, LB/d;->t(Ljava/lang/String;)V
 
     throw v3
 .end method

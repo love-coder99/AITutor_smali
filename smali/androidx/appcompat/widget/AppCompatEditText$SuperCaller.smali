@@ -39,6 +39,8 @@
 # virtual methods
 .method public getTextClassifier()Landroid/view/textclassifier/TextClassifier;
     .locals 1
+    .annotation build Landroidx/annotation/Nullable;
+    .end annotation
 
     .line 1
     iget-object v0, p0, Landroidx/appcompat/widget/AppCompatEditText$SuperCaller;->this$0:Landroidx/appcompat/widget/AppCompatEditText;
